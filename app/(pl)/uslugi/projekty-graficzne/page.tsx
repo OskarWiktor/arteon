@@ -40,6 +40,7 @@ import {
 
 import Script from 'next/script';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import { siteUrl } from '@/utils/absoluteUrl';
 
 const SERVICES = [
   { name: 'Projekt wizytówki', path: '/uslugi/projekty-graficzne/projekt-wizytowki' },
@@ -59,17 +60,16 @@ const SERVICES = [
 ];
 
 function ItemListSchema() {
-  const base = 'https://www.arteonagency.pl';
   const json = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    '@id': `${base}/#projekty-graficzne-itemlist`,
+    '@id': `${siteUrl}/#projekty-graficzne-itemlist`,
     name: 'Projekty graficzne - oferta usług',
     itemListOrder: 'https://schema.org/ItemListOrderAscending',
     itemListElement: SERVICES.map((s, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: `${base}${s.path}`,
+      url: `${siteUrl}${s.path}`,
       name: s.name,
     })),
   };

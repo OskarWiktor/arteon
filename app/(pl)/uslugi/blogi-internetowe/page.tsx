@@ -48,11 +48,8 @@ export const metadata = {
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/blogi-internetowe',
     serviceName: 'Tworzenie blogów internetowych',
     description: 'Projektujemy i wdrażamy blogi, które przyciągają ruch z Google: przejrzysta struktura, wygodny edytor, kategorie i wsparcie w publikacji.',

@@ -4,7 +4,7 @@ import { useRef, useState } from 'react';
 import Button from '../ui/buttons/Button';
 import ToolAlert from '../ui/tools/ToolAlert';
 
-type ContactFormLocale = 'pl' | 'en' | 'de' | 'es' | 'fr' | 'pt';
+type ContactFormLocale = 'pl' | 'en' | 'de' | 'es' | 'fr' | 'pt' | 'it';
 
 const formUi = {
   pl: {
@@ -84,6 +84,19 @@ const formUi = {
     send: 'Enviar',
     error: 'Algo correu mal. Verifique os seus dados e tente novamente.',
     success: 'Mensagem enviada! Responderemos o mais brevemente possível.',
+  },
+  it: {
+    nameLabel: 'Nome completo',
+    namePlaceholder: 'Mario Rossi',
+    emailLabel: 'E-mail',
+    emailPlaceholder: 'mario.rossi@gmail.com',
+    subjectLabel: 'Oggetto',
+    subjectPlaceholder: 'es. Segnalazione bug | Suggerimento strumento | Domanda',
+    messageLabel: 'Messaggio',
+    messagePlaceholder: 'Descrivi la tua domanda o il tuo suggerimento...',
+    send: 'Invia',
+    error: 'Qualcosa è andato storto. Controlla i tuoi dati e riprova.',
+    success: 'Messaggio inviato! Risponderemo il prima possibile.',
   },
 } as const;
 

@@ -1,3 +1,6 @@
+import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
+import { ORG_NAME } from '@/lib/seo/schema';
+
 interface ServiceSchema {
   '@context': string;
   '@type': string;
@@ -26,10 +29,10 @@ interface ServiceSchema {
   };
 }
 
-export function buildServiceSchema(params: { baseUrl: string; path: string; serviceName: string; description: string; availableLanguages?: string[]; includeServiceChannel?: boolean }) {
-  const { baseUrl, path, serviceName, description, availableLanguages = ['pl'], includeServiceChannel = true } = params;
+export function buildServiceSchema(params: { path: string; serviceName: string; description: string; availableLanguages?: string[]; includeServiceChannel?: boolean }) {
+  const { path, serviceName, description, availableLanguages = ['pl'], includeServiceChannel = true } = params;
 
-  const url = `${baseUrl}${path}`;
+  const url = toAbsoluteUrl(path);
 
   const json: ServiceSchema = {
     '@context': 'https://schema.org',
@@ -40,9 +43,9 @@ export function buildServiceSchema(params: { baseUrl: string; path: string; serv
     description,
     provider: {
       '@type': 'Organization',
-      name: 'Arteon',
-      url: baseUrl,
-      sameAs: [baseUrl],
+      name: ORG_NAME,
+      url: siteUrl,
+      sameAs: [siteUrl],
     },
     areaServed: 'Worldwide',
     availableLanguage: availableLanguages,
@@ -57,7 +60,7 @@ export function buildServiceSchema(params: { baseUrl: string; path: string; serv
   if (includeServiceChannel) {
     json.availableChannel = {
       '@type': 'ServiceChannel',
-      serviceUrl: `${baseUrl}/kontakt`,
+      serviceUrl: toAbsoluteUrl('/kontakt'),
       availableLanguage: availableLanguages,
       description: 'Usługa świadczona zdalnie dla klientów polskojęzycznych na całym świecie.',
     };

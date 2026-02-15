@@ -34,11 +34,8 @@ export const metadata = {
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/marketing/pozycjonowanie-stron',
     serviceName: 'Pozycjonowanie stron',
     description: 'Stała współpraca SEO dla stron firmowych: strategia treści, uporządkowany on-page i bezpieczne linki. Raport co miesiąc i jasne priorytety.',

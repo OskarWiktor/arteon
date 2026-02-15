@@ -118,7 +118,7 @@ export const ui = {
     copy: 'Kopieren',
     generatedPalettes: 'Generierte Farbpaletten',
     colorReadError: 'Die Farbe konnte nicht gelesen werden. Stellen Sie sicher, dass Sie das Format verwenden',
-    example: 'z.\u00a0B.',
+    example: 'z. B.',
     enterValidColor: 'Geben Sie eine gültige HEX-Farbe ein, um Paletten zu generieren. Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.',
     palettes: {
       monochromatic: {
@@ -127,11 +127,11 @@ export const ui = {
       },
       analogous: {
         label: 'Analoge Palette',
-        description: 'Farben mit ähnlichen Farbtönen - von ca. -30° bis +30° um die Basisfarbe auf dem klassischen Farbkreis (z.\u00a0B. Itten).',
+        description: 'Farben mit ähnlichen Farbtönen - von ca. -30° bis +30° um die Basisfarbe auf dem klassischen Farbkreis (z. B. Itten).',
       },
       complementary: {
         label: 'Komplementärpalette',
-        description: 'Die Basisfarbe und ihr Komplement, um 180° auf dem Farbkreis verschoben - einer der grundlegenden Farbkontraste, beschrieben u.\u00a0a. von Johannes Itten.',
+        description: 'Die Basisfarbe und ihr Komplement, um 180° auf dem Farbkreis verschoben - einer der grundlegenden Farbkontraste, beschrieben u. a. von Johannes Itten.',
       },
       triadic: {
         label: 'Triadische Palette',
@@ -154,7 +154,7 @@ export const ui = {
       },
       materialTonal: {
         label: 'Tonale Palette (Material Design inspiriert)',
-        description: 'Mehrere Helligkeitsstufen eines Farbtons - variiertes L und moderates S, ähnlich den tonalen Bereichen aus den Material-Design-Richtlinien (z.\u00a0B. 50-900).',
+        description: 'Mehrere Helligkeitsstufen eines Farbtons - variiertes L und moderates S, ähnlich den tonalen Bereichen aus den Material-Design-Richtlinien (z. B. 50-900).',
       },
       appleMinimal: {
         label: 'Minimalistische Palette (Apple inspiriert)',
@@ -236,7 +236,7 @@ export const ui = {
       },
       analogous: {
         label: 'Palette analogue',
-        description: "Des couleurs de teintes proches, d'environ -30° à +30° autour de la couleur de base sur le cercle chromatique classique (ex.\u00a0: Itten).",
+        description: "Des couleurs de teintes proches, d'environ -30° à +30° autour de la couleur de base sur le cercle chromatique classique (ex. : Itten).",
       },
       complementary: {
         label: 'Palette complémentaire',
@@ -250,7 +250,7 @@ export const ui = {
       splitComplementary: {
         label: 'Palette complémentaire divisée',
         description:
-          "Une variante de la palette complémentaire\u00a0: au lieu d'un complément (180°), on utilise deux couleurs décalées d'environ ±30° du complément, réduisant la tension visuelle tout en conservant un fort contraste.",
+          "Une variante de la palette complémentaire : au lieu d'un complément (180°), on utilise deux couleurs décalées d'environ ±30° du complément, réduisant la tension visuelle tout en conservant un fort contraste.",
       },
       softPastel: {
         label: 'Palette pastel',
@@ -260,11 +260,11 @@ export const ui = {
       deepDark: {
         label: 'Palette sombre',
         description:
-          "La même teinte avec une saturation élevée (S) et une luminosité réduite (L) \u2013 un déplacement vers le bas sur l'axe de luminosité, produisant des couleurs profondes typiques du mode sombre et des accents intenses.",
+          "La même teinte avec une saturation élevée (S) et une luminosité réduite (L)  un déplacement vers le bas sur l'axe de luminosité, produisant des couleurs profondes typiques du mode sombre et des accents intenses.",
       },
       materialTonal: {
         label: 'Palette tonale (inspirée Material Design)',
-        description: "Plusieurs niveaux de luminosité d'une même teinte \u2013 L variée et S modérée, similaire aux plages tonales des directives Material Design (ex.\u00a0: 50-900).",
+        description: "Plusieurs niveaux de luminosité d'une même teinte  L variée et S modérée, similaire aux plages tonales des directives Material Design (ex. : 50-900).",
       },
       appleMinimal: {
         label: 'Palette minimaliste (inspirée Apple)',
@@ -315,15 +315,70 @@ export const ui = {
       deepDark: {
         label: 'Paleta escura',
         description:
-          'A mesma tonalidade com saturação elevada (S) e luminosidade reduzida (L) \u2013 um deslocamento para baixo no eixo de luminosidade, produzindo cores profundas típicas do modo escuro e acentos intensos.',
+          'A mesma tonalidade com saturação elevada (S) e luminosidade reduzida (L)  um deslocamento para baixo no eixo de luminosidade, produzindo cores profundas típicas do modo escuro e acentos intensos.',
       },
       materialTonal: {
         label: 'Paleta tonal (inspirada em Material Design)',
-        description: 'Vários níveis de luminosidade de uma mesma tonalidade \u2013 L variada e S moderada, semelhante às gamas tonais das diretrizes Material Design (ex.: 50-900).',
+        description: 'Vários níveis de luminosidade de uma mesma tonalidade  L variada e S moderada, semelhante às gamas tonais das diretrizes Material Design (ex.: 50-900).',
       },
       appleMinimal: {
         label: 'Paleta minimalista (inspirada em Apple)',
         description: 'Um acento de cor vivo e vários neutros muito claros e suaves, uma composição típica de interfaces com muito espaço branco e sombras subtis.',
+      },
+    },
+  },
+  it: {
+    selectBaseColor: 'Seleziona colore base',
+    updateColor: 'Aggiorna colore',
+    randomColor: 'Colore casuale',
+    currentBaseColor: 'Colore base attuale',
+    baseColorHelper: 'Tutte le palette sottostanti si basano su questo colore.',
+    colorPreview: 'Anteprima colore',
+    copied: 'Copiato',
+    copy: 'Copia',
+    generatedPalettes: 'Palette di colori generate',
+    colorReadError: 'Impossibile leggere il colore. Assicurati di usare il formato',
+    example: 'es.',
+    enterValidColor: 'Inserisci un colore HEX valido per generare le palette. Tutti i calcoli vengono eseguiti localmente nel tuo browser.',
+    palettes: {
+      monochromatic: {
+        label: 'Palette monocromatica',
+        description: 'Tutti i colori hanno la stessa tonalità (H) e variano principalmente in luminosità (L) nello spazio colore HSL.',
+      },
+      analogous: {
+        label: 'Palette analoga',
+        description: 'Colori con tonalità simili, da circa -30 a +30 intorno al colore base sulla ruota dei colori classica (es. Itten).',
+      },
+      complementary: {
+        label: 'Palette complementare',
+        description: 'Il colore base e il suo complemento spostato di 180 sulla ruota dei colori  uno dei contrasti fondamentali descritti da Johannes Itten.',
+      },
+      triadic: {
+        label: 'Palette triadica',
+        description: 'Tre tonalità separate da 120 sulla ruota dei colori (vertici di un triangolo equilatero)  una geometria spesso utilizzata nel branding e nei design ispirati al Bauhaus.',
+      },
+      splitComplementary: {
+        label: 'Palette complementare divisa',
+        description:
+          'Una variante della palette complementare: invece di un complemento (180), si usano due colori spostati di circa \u00b130 dal complemento, riducendo la tensione visiva ma mantenendo un forte contrasto.',
+      },
+      softPastel: {
+        label: 'Palette pastello',
+        description:
+          'La stessa tonalità con saturazione ridotta e luminosità aumentata  uno spostamento verso il centro e la parte alta dello spazio HSL che produce colori morbidi e \u201ccremosi\u201d.',
+      },
+      deepDark: {
+        label: 'Palette scura',
+        description:
+          'La stessa tonalità con alta saturazione (S) e luminosità ridotta (L)  uno spostamento verso il basso dell\u2019asse di luminosità, che produce colori profondi tipici della dark mode e degli accenti forti.',
+      },
+      materialTonal: {
+        label: 'Palette tonale (ispirata a Material Design)',
+        description: 'Diversi livelli di luminosità di una stessa tonalità  L variata e S moderata, simile alle gamme tonali delle linee guida Material Design (es. 50-900).',
+      },
+      appleMinimal: {
+        label: 'Palette minimalista (ispirata ad Apple)',
+        description: 'Un accento di colore vivace e diversi neutri molto chiari e delicati, una composizione tipica di interfacce con molto spazio bianco e ombre sottili.',
       },
     },
   },

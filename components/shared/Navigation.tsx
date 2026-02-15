@@ -81,6 +81,11 @@ export default function Navigation() {
                   linkText: 'ferramentas',
                   linkHref: getToolHref('emailSignature', locale),
                 },
+                it: {
+                  text: 'Aggiornamento del generatore di firma e-mail: scopri le nuove funzionalità',
+                  linkText: 'strumenti',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
               } satisfies Record<Locale, { text: string; linkText: string; linkHref: string }>
             )[locale],
           },

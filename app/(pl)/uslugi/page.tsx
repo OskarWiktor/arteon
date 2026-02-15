@@ -4,8 +4,7 @@ import Button from '@/components/ui/buttons/Button';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
-const siteUrl = 'https://www.arteonagency.pl';
-
+import { siteUrl } from '@/utils/absoluteUrl';
 const SERVICES = [
   { name: 'Strony WordPress', path: '/uslugi/tworzenie-stron-wordpress' },
   { name: 'Sklepy internetowe', path: '/uslugi/sklepy-internetowe' },

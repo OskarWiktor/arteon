@@ -58,27 +58,38 @@ export function getToolSoftwareSchema(opts: {
   name: string;
   alternateName?: string[];
   description: string;
+  applicationCategory?: string;
   applicationSubCategory?: string;
   featureList?: string[];
+  ogImage?: string;
 }) {
   const href = getToolHref(opts.toolKey, opts.locale);
+  const pageUrl = toAbsoluteUrl(href);
   return {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: opts.name,
     ...(opts.alternateName?.length ? { alternateName: opts.alternateName } : {}),
-    url: toAbsoluteUrl(href),
-    applicationCategory: 'UtilitiesApplication',
+    url: pageUrl,
+    applicationCategory: opts.applicationCategory || 'UtilitiesApplication',
     ...(opts.applicationSubCategory ? { applicationSubCategory: opts.applicationSubCategory } : {}),
     operatingSystem: 'Any',
     description: opts.description,
     inLanguage: LOCALE_CONFIG[opts.locale].lang,
     isAccessibleForFree: true,
     ...(opts.featureList?.length ? { featureList: opts.featureList } : {}),
+    ...(opts.ogImage ? { screenshot: toAbsoluteUrl(opts.ogImage) } : {}),
+    browserRequirements: 'Requires a modern web browser with JavaScript enabled',
+    permissions: 'none',
     offers: {
       '@type': 'Offer',
       price: 0,
-      priceCurrency: opts.locale === 'pl' ? 'PLN' : opts.locale === 'de' ? 'EUR' : opts.locale === 'es' ? 'EUR' : opts.locale === 'fr' ? 'EUR' : opts.locale === 'pt' ? 'EUR' : 'USD',
+      priceCurrency:
+        opts.locale === 'pl' ? 'PLN' : opts.locale === 'de' ? 'EUR' : opts.locale === 'es' ? 'EUR' : opts.locale === 'fr' ? 'EUR' : opts.locale === 'pt' ? 'EUR' : opts.locale === 'it' ? 'EUR' : 'USD',
+    },
+    potentialAction: {
+      '@type': 'UseAction',
+      target: pageUrl,
     },
     publisher: {
       '@type': 'Organization',
@@ -91,7 +102,7 @@ export function getToolSoftwareSchema(opts: {
 /**
  * Generate JSON-LD HowTo schema for a tool page.
  */
-export function getToolHowToSchema(opts: { toolKey: ToolItemKey; locale: Locale; name: string; description: string; totalTime?: string; steps: { name: string; text: string }[] }) {
+export function getToolHowToSchema(opts: { toolKey: ToolItemKey; locale: Locale; name: string; description: string; totalTime?: string; steps: { name: string; text: string }[]; ogImage?: string }) {
   const href = getToolHref(opts.toolKey, opts.locale);
   return {
     '@context': 'https://schema.org',
@@ -99,9 +110,12 @@ export function getToolHowToSchema(opts: { toolKey: ToolItemKey; locale: Locale;
     name: opts.name,
     description: opts.description,
     url: toAbsoluteUrl(href),
+    inLanguage: LOCALE_CONFIG[opts.locale].lang,
     totalTime: opts.totalTime ?? 'PT2M',
-    step: opts.steps.map((s) => ({
+    ...(opts.ogImage ? { image: toAbsoluteUrl(opts.ogImage) } : {}),
+    step: opts.steps.map((s, i) => ({
       '@type': 'HowToStep',
+      position: i + 1,
       name: s.name,
       text: s.text,
     })),
@@ -109,6 +123,35 @@ export function getToolHowToSchema(opts: { toolKey: ToolItemKey; locale: Locale;
       '@type': 'Organization',
       name: 'Arteon Agency',
       url: siteUrl,
+    },
+  };
+}
+
+/**
+ * Generate JSON-LD WebPage schema for a tool page.
+ */
+export function getToolWebPageSchema(opts: { locale: Locale; title: string; description: string; path: string; ogImage?: string; toolName: string }) {
+  const pageUrl = toAbsoluteUrl(opts.path);
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: opts.title,
+    description: opts.description,
+    url: pageUrl,
+    inLanguage: LOCALE_CONFIG[opts.locale].lang,
+    ...(opts.ogImage ? { primaryImageOfPage: { '@type': 'ImageObject', url: toAbsoluteUrl(opts.ogImage) } } : {}),
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'Arteon Agency',
+      url: siteUrl,
+    },
+    mainEntity: {
+      '@type': 'SoftwareApplication',
+      name: opts.toolName,
+    },
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', '.text-mid'],
     },
   };
 }

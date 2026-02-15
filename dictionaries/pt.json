@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "mainNavigation": "Navegação principal",
+    "logoAlt": "Arteon - logótipo da empresa",
+    "closeMenu": "Fechar menu",
+    "openMenu": "Abrir menu",
+    "closeToolsList": "Fechar lista de ferramentas",
+    "openToolsList": "Abrir lista de ferramentas",
+    "toolsLabel": "Ferramentas",
+    "mobileMenu": "Menu móvel",
+    "aboutLabel": "Sobre nós",
+    "contactLabel": "Contacto"
+  },
+  "footer": {
+    "copyright": "Todos os direitos reservados.",
+    "description": "Ferramentas online gratuitas para programadores web, designers e especialistas em marketing.",
+    "companyDataLabel": "Dados da empresa",
+    "toolsLabel": "Ferramentas",
+    "legalLabel": "Documentos legais",
+    "cookieSettingsLabel": "Definições de cookies"
+  },
+  "desktopOnly": {
+    "title": "Esta ferramenta funciona num ecrã maior",
+    "description": "Para utilizar esta ferramenta confortavelmente, abra-a num portátil, computador de secretária ou tablet em modo paisagem.",
+    "tipTitle": "Dica",
+    "tipText": "Se estiver a utilizar um tablet, mude para o modo paisagem\u00a0: quando a largura da janela for suficiente, a ferramenta carregará automaticamente."
+  },
+  "cookie": {
+    "title": "Cookies e privacidade",
+    "description": "Utilizamos cookies para o funcionamento do site, análise de tráfego e publicidade. Saiba mais na nossa",
+    "setPreferences": "Definir preferências",
+    "privacyPolicy": "Política de Privacidade",
+    "privacyPolicyHref": "/pt/politica-de-privacidade",
+    "reject": "Rejeitar tudo",
+    "settings": "Definições",
+    "accept": "Aceitar tudo",
+    "panelTitle": "Preferências de privacidade",
+    "panelDescription": "Definições de consentimento de processamento de dados.",
+    "categoriesLegend": "Categorias",
+    "essentialTitle": "Essenciais",
+    "essentialDescription": "O site não funciona sem eles. Não recolhem dados de marketing.",
+    "essentialStatus": "Sempre ativos",
+    "analyticsTitle": "Análise (GA4)",
+    "analyticsDescription": "Estatísticas de visitas. Ativa o Google Analytics 4 com o seu consentimento.",
+    "analyticsLabel": "Ativar análise GA4",
+    "adsTitle": "Publicidade (Google AdSense)",
+    "adsDescription": "Publicidade personalizada com base nos seus interesses.",
+    "adsLabel": "Ativar publicidade personalizada",
+    "changeDecision": "Pode alterar a sua decisão a qualquer momento",
+    "save": "Guardar"
+  },
+  "skipToContent": "Ir para o conteúdo",
+  "legal": [{ "key": "privacy", "href": "/pt/politica-de-privacidade", "label": "Política de Privacidade" }]
+}

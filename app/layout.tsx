@@ -12,6 +12,8 @@ import SkipToContent from '@/components/shared/SkipToContent';
 import FocusManager from '@/components/systems/FocusManager';
 import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
+import { getDictionary } from '@/lib/i18n/get-dictionary';
+import type { Locale } from '@/types/locale';
 
 import './globals.css';
 
@@ -98,7 +100,18 @@ const websiteJsonLd = {
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const headersList = await headers();
   const pathname = headersList.get('x-pathname') ?? '';
-  const lang = pathname.startsWith('/en') ? 'en' : pathname.startsWith('/de') ? 'de' : pathname.startsWith('/es') ? 'es' : pathname.startsWith('/fr') ? 'fr' : pathname.startsWith('/pt') ? 'pt' : 'pl';
+  const lang: Locale = pathname.startsWith('/en')
+    ? 'en'
+    : pathname.startsWith('/de')
+      ? 'de'
+      : pathname.startsWith('/es')
+        ? 'es'
+        : pathname.startsWith('/fr')
+          ? 'fr'
+          : pathname.startsWith('/pt')
+            ? 'pt'
+            : 'pl';
+  const dict = await getDictionary(lang);
 
   return (
     <html lang={lang} className={instrumentSans.variable}>
@@ -138,8 +151,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       </head>
 
       <body className="font-sans antialiased">
-        <CookieConsent locale={lang} />
-        <SkipToContent locale={lang} />
+        <CookieConsent translations={dict.cookie} />
+        <SkipToContent label={dict.skipToContent} />
 
         <Suspense fallback={null}>
           <FocusManager />

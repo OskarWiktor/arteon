@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "mainNavigation": "Nawigacja główna",
+    "logoAlt": "Arteon - logo firmy",
+    "closeMenu": "Zamknij menu",
+    "openMenu": "Otwórz menu",
+    "closeToolsList": "Zamknij listę narzędzi",
+    "openToolsList": "Otwórz listę narzędzi",
+    "toolsLabel": "Narzędzia",
+    "mobileMenu": "Menu mobilne"
+  },
+  "footer": {
+    "copyright": "Wszelkie prawa zastrzeżone.",
+    "description": "Realizujemy projekty dla polskich firm na całym świecie - z siedzibą w Małopolsce, w okolicach Krakowa.",
+    "companyDataLabel": "Dane firmy i lokalizacja",
+    "toolsLabel": "Narzędzia",
+    "legalLabel": "Dokumenty i ustawienia",
+    "cookieSettingsLabel": "Ustawienia plików cookie"
+  },
+  "desktopOnly": {
+    "title": "To narzędzie działa na większym ekranie",
+    "description": "Żeby wygodnie skorzystać z\u00a0tego narzędzia, otwórz je na laptopie, komputerze stacjonarnym lub tablecie w\u00a0poziomie.",
+    "tipTitle": "Podpowiedź",
+    "tipText": "Jeśli korzystasz z tabletu, przełącz go w\u00a0tryb poziomy - gdy szerokość okna będzie większa, narzędzie załaduje się automatycznie."
+  },
+  "cookie": {
+    "title": "Pliki cookie i prywatność",
+    "description": "Używamy plików cookie, aby strona działała prawidłowo, analizować ruch i wyświetlać reklamy. Więcej w naszej",
+    "setPreferences": "Ustaw preferencje",
+    "privacyPolicy": "Polityka prywatności",
+    "privacyPolicyHref": "/polityka-prywatnosci",
+    "reject": "Odrzuć wszystkie",
+    "settings": "Ustawienia",
+    "accept": "Akceptuj wszystkie",
+    "panelTitle": "Preferencje prywatności",
+    "panelDescription": "Ustawienia zgód na przetwarzanie danych.",
+    "categoriesLegend": "Kategorie",
+    "essentialTitle": "Niezbędne",
+    "essentialDescription": "Bez nich serwis nie działa. Nie zbierają danych do marketingu.",
+    "essentialStatus": "Zawsze aktywne",
+    "analyticsTitle": "Analityka (GA4)",
+    "analyticsDescription": "Statystyki odwiedzin. Włącza Google Analytics 4 po Twojej zgodzie.",
+    "analyticsLabel": "Włącz analitykę GA4",
+    "adsTitle": "Reklamy (Google AdSense)",
+    "adsDescription": "Personalizowane reklamy na podstawie Twoich zainteresowań.",
+    "adsLabel": "Włącz personalizowane reklamy",
+    "changeDecision": "W każdej chwili możesz zmienić decyzję",
+    "save": "Zapisz"
+  },
+  "skipToContent": "Przejdź do treści",
+  "legal": [
+    { "key": "regulamin", "href": "/regulamin", "label": "Regulamin świadczenia usług" },
+    { "key": "privacy", "href": "/polityka-prywatnosci", "label": "Polityka Prywatności" }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "toolKey": "favicon",
+  "locale": "pt",
+  "metadata": {
+    "title": "Gerador de favicon gratuito – crie favicon.ico num clique",
+    "description": "Crie favicon.ico e todos os tamanhos de favicon necessários a partir de uma única imagem. Compatível com navegadores e Lighthouse. Processamento local, sem registo.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
+    "path": "/pt/ferramentas/gerador-de-favicon-gratuito"
+  },
+  "hero": {
+    "title": "Gerador de favicon",
+    "description": "Crie a partir de uma única imagem favicon.ico e ícones PNG em todos os tamanhos necessários. Conforme aos requisitos dos navegadores e do Lighthouse – tudo é executado localmente no seu navegador.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/pt/ferramentas", "label": "Ferramentas" },
+    "third": { "href": "/pt/ferramentas/gerador-de-favicon-gratuito", "label": "Gerador de favicon" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Gerador de favicon online – favicon.ico e ícones PNG",
+      "alternateName": ["Criar um favicon online", "Gerador favicon.ico", "Gerador Apple Touch Icon", "Criar ícones PWA", "Favicon a partir de uma imagem"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "IconGenerator",
+      "description": "Gerador de favicon gratuito. favicon.ico e ícones PNG 16x16, 32x32, 180x180, 192x192 e 512x512. site.webmanifest opcional. Conforme ao Lighthouse.",
+      "featureList": [
+        "favicon.ico (16x16 + 32x32 combinados)",
+        "Ícones PNG: 16x16, 32x32, 180x180, 192x192, 512x512",
+        "Apple Touch Icon (180x180)",
+        "Ícones Android/PWA (192x192, 512x512)",
+        "site.webmanifest opcional",
+        "Transferência ZIP de todos os ficheiros",
+        "Execução local no navegador"
+      ]
+    },
+    "howTo": {
+      "name": "Como criar um favicon para o seu site",
+      "description": "Importe uma imagem e gere favicon.ico e ícones PNG em todos os tamanhos necessários – em conformidade com os requisitos dos navegadores e do Lighthouse.",
+      "steps": [
+        { "name": "Importar uma imagem", "text": "Importe uma imagem quadrada (pelo menos 512x512 px). Formatos suportados: PNG, JPG, WebP." },
+        { "name": "Escolher as opções", "text": "Selecione os tamanhos desejados e se um site.webmanifest deve ser gerado." },
+        { "name": "Transferir o ZIP", "text": "Transfira todos os ficheiros gerados num arquivo ZIP e adicione-os ao seu site." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Porque é que cada site precisa de um favicon?",
+      "html": "<p class=\"text-mid\">Um favicon é muito mais do que um pequeno ícone – é um elemento essencial da identidade da marca na web. Os navegadores apresentam-no no separador, os utilizadores veem-no nos favoritos e no histórico, e o Lighthouse verifica a sua presença como boa prática. Sem favicon, um site parece incompleto.</p><p class=\"text-mid mt-3\">Os sites modernos precisam de favicons em vários tamanhos: um favicon.ico para navegadores antigos, ícones PNG para navegadores de desktop, um Apple Touch Icon para dispositivos iOS e ícones maiores para instalações PWA no Android. Esta ferramenta gera todos os ficheiros necessários a partir de uma única imagem.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Como usar o gerador de favicon",
+      "description": "A geração demora apenas alguns segundos:",
+      "grid": "three",
+      "items": [
+        { "icon": "RiUploadLine", "title": "1. Importar uma imagem", "description": "Importe uma imagem quadrada (pelo menos 512x512 px). Formatos suportados: PNG, JPG, WebP." },
+        { "icon": "RiAppsLine", "title": "2. Escolher as opções", "description": "Selecione os tamanhos desejados e se um site.webmanifest deve ser gerado." },
+        { "icon": "RiDownloadLine", "title": "3. Transferir o ZIP", "description": "Transfira todos os ficheiros gerados num arquivo ZIP e adicione-os ao seu site." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Que ficheiros são gerados?",
+      "demoHtml": "<div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Ficheiro</th><th class=\"py-2 pr-4 font-semibold\">Tamanho</th><th class=\"py-2 font-semibold\">Utilização</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon.ico</td><td class=\"py-2 pr-4\">16x16 + 32x32</td><td class=\"text-primary-light0 py-2\">Separador do navegador (padrão)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-16x16.png</td><td class=\"py-2 pr-4\">16x16</td><td class=\"text-primary-light0 py-2\">Separador do navegador (pequeno)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-32x32.png</td><td class=\"py-2 pr-4\">32x32</td><td class=\"text-primary-light0 py-2\">Separador do navegador (Retina)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">apple-touch-icon.png</td><td class=\"py-2 pr-4\">180x180</td><td class=\"text-primary-light0 py-2\">Ecrã inicial iOS, Safari</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">android-chrome-192x192.png</td><td class=\"py-2 pr-4\">192x192</td><td class=\"text-primary-light0 py-2\">Android, instalação PWA</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">android-chrome-512x512.png</td><td class=\"py-2 pr-4\">512x512</td><td class=\"text-primary-light0 py-2\">Splashscreen PWA, resultados Google</td></tr><tr><td class=\"py-2 pr-4 font-medium\">site.webmanifest</td><td class=\"py-2 pr-4\">-</td><td class=\"text-primary-light0 py-2\">Configuração PWA (opcional)</td></tr></tbody></table></div>",
+      "html": "<p class=\"text-mid\">A ferramenta gera todos os ficheiros favicon exigidos pelos navegadores modernos e pelo Lighthouse. Cada ficheiro tem uma função específica:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>favicon.ico</strong> – o formato clássico, suportado por todos os navegadores. Contém 16x16 e 32x32 num único ficheiro.</li><li><strong>Apple Touch Icon</strong> – apresentado no ecrã inicial iOS quando um utilizador adiciona o site aos favoritos.</li><li><strong>Ícones PWA</strong> – para dispositivos Android e Progressive Web Apps. Utilizados na instalação no ecrã inicial.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Onde é apresentado o favicon?",
+      "description": "O favicon aparece em diferentes locais na web:",
+      "grid": "three",
+      "items": [
+        { "icon": "RiGlobalLine", "title": "Separadores do navegador", "description": "O favicon aparece junto ao título da página no separador – o local mais visível." },
+        { "icon": "RiBookmarkLine", "title": "Favoritos e histórico", "description": "Os navegadores utilizam o favicon na barra de favoritos e no histórico." },
+        { "icon": "RiSmartphoneLine", "title": "Ecrã inicial (móvel)", "description": "Quando um utilizador adiciona o site ao ecrã inicial, o Apple Touch Icon ou o ícone PWA é utilizado." },
+        { "icon": "RiSearchLine", "title": "Resultados Google", "description": "A Google apresenta o favicon junto ao URL nos resultados de pesquisa móveis." },
+        { "icon": "RiCodeLine", "title": "Auditoria Lighthouse", "description": "O Lighthouse verifica a presença de um favicon – é uma boa prática para o desempenho web." },
+        { "icon": "RiFileZipLine", "title": "Instalação PWA", "description": "Na instalação de uma PWA, os ícones 192x192 e 512x512 são utilizados como ícone da aplicação." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Como transferir os ficheiros gerados",
+      "description": "Após a geração dos ícones, tem várias opções de transferência:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFolderZipLine",
+          "title": "Transferir tudo em ZIP",
+          "description": "O botão Transferir tudo agrupa todos os ficheiros gerados num único arquivo ZIP. A opção mais prática quando precisa do conjunto completo de ícones."
+        },
+        {
+          "icon": "RiFileDownloadLine",
+          "title": "Transferir ficheiros individuais",
+          "description": "Cada ícone gerado tem o seu próprio botão de transferência: pode transferir um único ficheiro sem o conjunto completo. Útil quando precisa de atualizar apenas um tamanho."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTabs",
+      "title": "Onde e como adicionar um favicon",
+      "tabs": [
+        {
+          "title": "WordPress",
+          "icon": "RiWordpressLine",
+          "html": "<p class=\"text-mid mb-3\">A maioria dos temas WordPress possui uma opção integrada para configurar o ícone do site. Encontra-a no painel de administração:</p><p class=\"text-mid mb-3\"><strong>Aparência → Personalizar → Identidade do site → Ícone do site</strong></p><p class=\"text-light\">Importe o ficheiro 512x512: o WordPress gera automaticamente os tamanhos mais pequenos. Para controlo total sobre os ícones, também pode importar os ficheiros diretamente para o diretório raiz via FTP.</p>"
+        },
+        {
+          "title": "HTML",
+          "icon": "RiHtml5Line",
+          "html": "<p class=\"text-mid mb-3\">Coloque os ficheiros gerados no diretório raiz do seu site (onde está o index.html). Depois adicione as tags correspondentes na secção &lt;head&gt;:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">O código acima é um exemplo: adapte os caminhos à estrutura do seu site.</p>"
+        },
+        {
+          "title": "Next.js / React",
+          "icon": "RiReactjsLine",
+          "html": "<p class=\"text-mid mb-3\">No Next.js (App Router), coloque os ficheiros favicon no diretório <code>app/</code> ou <code>public/</code>:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> – reconhecido automaticamente pelo Next.js</li><li><code>app/apple-icon.png</code> – ícone Apple</li><li><code>public/</code> – ícones restantes (192x192, 512x512)</li></ul><p class=\"text-light\">Também pode configurar os ícones em <code>layout.tsx</code> através do objeto <code>metadata.icons</code>.</p>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Que imagem fonte funciona melhor?",
+      "description": "Um favicon é um gráfico muito pequeno, tão pequeno quanto 16x16 píxeis. Nem toda a imagem é adequada como fonte:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShapeLine",
+          "title": "Formas simples e símbolos legíveis",
+          "description": "Logótipos simples, letras individuais ou símbolos funcionam melhor. Evite gráficos complexos com muitos detalhes."
+        },
+        { "icon": "RiAspectRatioLine", "title": "Formato quadrado", "description": "Um favicon é quadrado. Se a imagem fonte tiver proporções diferentes de 1:1, será recortada ou esticada." },
+        { "icon": "RiZoomInLine", "title": "Tamanho suficientemente grande", "description": "Recomendamos uma imagem fonte de pelo menos 512x512 píxeis. Imagens mais pequenas serão ampliadas." },
+        { "icon": "RiImageLine", "title": "O formato SVG como fonte ideal", "description": "O SVG redimensiona-se sem perda de qualidade, portanto os ícones em todos os tamanhos serão nítidos." },
+        {
+          "icon": "RiContrastLine",
+          "title": "Cores com forte contraste",
+          "description": "Um favicon deve ser visível em diferentes fundos (separadores claros, modo escuro). Escolha cores que mantenham a legibilidade."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Opções de geração: o que faz cada uma?",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Fundo (transparente ou cor)</h3><p class=\"text-mid\">Por predefinição, o gerador mantém a transparência. Também pode escolher uma cor de fundo específica.</p></div><div><h3 class=\"h5 mb-2\">Gerar o manifest (site.webmanifest)</h3><p class=\"text-mid\">Ficheiro JSON para aplicações web (PWA). Se não está a criar uma PWA, esta opção não é necessária.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "O que torna este gerador de favicon especial",
+      "grid": "two",
+      "items": [
+        { "icon": "RiCodeLine", "title": "Conforme ao Lighthouse", "description": "Todos os tamanhos exigidos pelo Lighthouse e pelos navegadores modernos – gerados numa única etapa." },
+        { "icon": "RiDownloadLine", "title": "Todos os formatos numa única etapa", "description": "favicon.ico, ícones PNG e site.webmanifest opcional – tudo a partir de uma única imagem." },
+        { "icon": "RiImageLine", "title": "Suporte PNG, JPG e SVG", "description": "Pode utilizar o seu logótipo em qualquer formato. Se tiver um SVG, os ícones serão nítidos em todos os tamanhos." },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Pronto para o site e para PWA",
+          "description": "A ferramenta gera o ficheiro manifest.json para aplicações web. Abaixo encontra as instruções de integração dos ícones."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes sobre o gerador de favicon",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "O que é um favicon?",
+          "answer": "Um favicon é o pequeno ícone apresentado no separador do navegador junto ao título da página. Também aparece nos favoritos, no histórico, no ecrã inicial dos dispositivos móveis e nos resultados de pesquisa. Um favicon profissional reforça a identidade da marca e melhora o reconhecimento.",
+          "answerSchemaText": "Um pequeno ícone no separador do navegador, favoritos e ecrã inicial. Reforça a identidade da marca."
+        },
+        {
+          "question": "Que tamanhos a ferramenta gera?",
+          "answer": "A ferramenta gera favicon.ico (16x16 e 32x32 combinados) bem como ícones PNG em 16x16, 32x32, 180x180 (Apple Touch Icon), 192x192 e 512x512 (Android/PWA). Todos os tamanhos correspondem aos requisitos atuais dos navegadores e do Lighthouse.",
+          "answerSchemaText": "favicon.ico (16+32) + PNG: 16, 32, 180 (Apple), 192, 512 (PWA). Conforme ao Lighthouse."
+        },
+        {
+          "question": "Que formato de imagem devo utilizar?",
+          "answer": "Idealmente, uma imagem quadrada em PNG, JPG ou WebP com pelo menos 512x512 píxeis. A ferramenta redimensiona automaticamente a imagem para todos os tamanhos necessários. Quanto maior e mais detalhada a imagem fonte, melhor o resultado.",
+          "answerSchemaText": "Imagem quadrada (PNG/JPG/WebP) com pelo menos 512x512 px."
+        },
+        {
+          "question": "O site.webmanifest também é gerado?",
+          "answer": "Sim. Pode opcionalmente gerar um ficheiro site.webmanifest que referencia os ícones PWA (192x192 e 512x512). O ficheiro é incluído no arquivo ZIP com os ícones.",
+          "answerSchemaText": "Sim, opcionalmente. Referencia os ícones PWA e é incluído no ZIP."
+        },
+        {
+          "question": "As minhas imagens são enviadas para um servidor?",
+          "answer": "Não. Todo o processamento é feito localmente no seu navegador através da API Canvas. Os seus ficheiros nunca saem do seu computador e não são armazenados em lado nenhum.",
+          "answerSchemaText": "Não. Processamento local no navegador. Os ficheiros não saem do seu dispositivo."
+        },
+        {
+          "question": "O que é que o Lighthouse verifica em relação aos favicons?",
+          "answer": "O Lighthouse verifica se uma página possui um favicon válido. Espera no mínimo um ficheiro favicon.ico ou um elemento link rel icon. Verifica também a presença de um Apple Touch Icon (180x180) e de ícones PWA no site.webmanifest. Esta ferramenta gera todos os ficheiros necessários.",
+          "answerSchemaText": "O Lighthouse verifica favicon.ico, Apple Touch Icon e ícones PWA no manifest."
+        },
+        {
+          "question": "Como integrar os favicons no meu site?",
+          "answer": "Copie os ficheiros gerados para a raiz do seu site. Depois adicione os elementos link correspondentes na secção head. Abaixo da ferramenta, encontra um guia com o código HTML necessário.",
+          "answerSchemaText": "Copiar os ficheiros para a raiz e adicionar os elementos link no head."
+        },
+        {
+          "question": "Porque é que o favicon não muda depois de importar um novo ficheiro?",
+          "answer": "Os navegadores fazem cache agressivo dos favicons. Depois de importar um novo ícone, limpe a cache do navegador ou adicione um parâmetro de versão ao caminho do ficheiro (ex.: /favicon.ico?v=2). A alteração pode só ficar visível após algumas horas.",
+          "answerSchemaText": "Os navegadores fazem cache dos favicons. Limpe a cache ou adicione um parâmetro de versão."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Descubra outras ferramentas" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -38,6 +38,12 @@ const PRIVACY_META: Partial<Record<Locale, PrivacyPageMeta>> = {
     description:
       'Politique de confidentialité des outils en ligne gratuits d\u2019Arteon. Tous les fichiers sont traités localement dans votre navigateur. Découvrez comment nous gérons les cookies, les analyses (GA4) et la publicité (AdSense) conformément au RGPD.',
   },
+  it: {
+    slug: 'informativa-sulla-privacy',
+    title: 'Informativa sulla privacy – Arteon strumenti online gratuiti | GDPR',
+    description:
+      'Informativa sulla privacy degli strumenti online gratuiti di Arteon. Tutti i file vengono elaborati localmente nel tuo browser. Scopri come gestiamo cookie, analisi (GA4) e pubblicit\u00e0 (AdSense) in conformit\u00e0 con il GDPR.',
+  },
   pt: {
     slug: 'politica-de-privacidade',
     title: 'Política de Privacidade – Arteon ferramentas online gratuitas | RGPD',

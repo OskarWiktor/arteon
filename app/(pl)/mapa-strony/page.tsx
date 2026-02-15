@@ -5,21 +5,16 @@ import AppLink from '@/components/ui/Link';
 import type { Metadata } from 'next';
 import type { NavItem } from '@/types/sitemap';
 
-import blogData from '@/data/pl/blog.json';
+import { getAllArticlePreviews, getPrimaryCategorySlug } from '@/lib/blogDataService';
+import { slugify } from '@/utils/slugify';
+import { siteUrl } from '@/utils/absoluteUrl';
+import type { ArticlePreview } from '@/types/article';
 import projectsData from '@/data/pl/projects.json';
-
-const BASE_URL = 'https://www.arteonagency.pl';
 
 export const metadata: Metadata = {
   title: 'Mapa strony | Arteon',
   description: 'Mapa strony Arteon - przegląd najważniejszych sekcji i podstron: usługi, realizacje, blog, narzędzia, informacje.',
   alternates: { canonical: 'https://www.arteonagency.pl/mapa-strony' },
-};
-
-type Article = {
-  slug: string;
-  title: string;
-  category?: string | string[];
 };
 
 type Project = {
@@ -77,27 +72,12 @@ const portfolioItems: NavItem[] = ((projectsData as { projects: Project[] }).pro
   href: `/realizacje/${p.slug}`,
 }));
 
-function getArticleUrl(article: Article): string {
-  const categories = Array.isArray(article.category) ? article.category : article.category ? [article.category] : [];
-  const primaryCategory = categories[0] ?? 'Inne';
-  return `/edukacja/${slugifyCategory(primaryCategory)}/${article.slug}`;
-}
+const articlePreviews = getAllArticlePreviews();
+const blogCategories: NavItem[] = buildBlogCategoriesFromArticles(articlePreviews);
 
-function slugifyCategory(name: string): string {
-  return name
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)+/g, '');
-}
-
-const articles = (blogData as { articles: Article[] }).articles || [];
-const blogCategories: NavItem[] = buildBlogCategoriesFromArticles(articles);
-
-const blogArticleItems: NavItem[] = articles.map((a) => ({
+const blogArticleItems: NavItem[] = articlePreviews.map((a) => ({
   title: a.title,
-  href: getArticleUrl(a),
+  href: `/edukacja/${getPrimaryCategorySlug(a)}/${a.slug}`,
 }));
 
 const tools: NavItem[] = [
@@ -250,7 +230,7 @@ function NestedList({ items }: { items: NavItem[] }) {
 }
 
 function abs(url: string) {
-  return url.startsWith('http') ? url : `${BASE_URL}${url}`;
+  return url.startsWith('http') ? url : `${siteUrl}${url}`;
 }
 
 function toListElements(arr: NavItem[]) {
@@ -262,28 +242,27 @@ function toListElements(arr: NavItem[]) {
   }));
 }
 
-function buildBlogCategoriesFromArticles(articles: Article[]): NavItem[] {
+function buildBlogCategoriesFromArticles(articles: ArticlePreview[]): NavItem[] {
   const categoryMap = new Map<string, NavItem>();
 
   for (const article of articles) {
     const categories = Array.isArray(article.category) ? article.category : article.category ? [article.category] : ['Inne'];
 
     for (const catName of categories) {
-      const slug = slugifyCategory(catName);
-      const key = slug;
+      const catSlug = slugify(catName);
 
-      if (!categoryMap.has(key)) {
-        categoryMap.set(key, {
+      if (!categoryMap.has(catSlug)) {
+        categoryMap.set(catSlug, {
           title: catName,
-          href: `/edukacja/${slug}`,
+          href: `/edukacja/${catSlug}`,
           children: [],
         });
       }
 
-      const categoryItem = categoryMap.get(key)!;
+      const categoryItem = categoryMap.get(catSlug)!;
       categoryItem.children!.push({
         title: article.title,
-        href: getArticleUrl(article),
+        href: `/edukacja/${getPrimaryCategorySlug(article)}/${article.slug}`,
       });
     }
   }
@@ -313,49 +292,49 @@ function buildJsonLd({
     '@graph': [
       {
         '@type': 'WebPage',
-        '@id': `${BASE_URL}/mapa-strony`,
+        '@id': `${siteUrl}/mapa-strony`,
         name: 'Mapa strony',
-        url: `${BASE_URL}/mapa-strony`,
+        url: `${siteUrl}/mapa-strony`,
       },
       {
         '@type': 'SiteNavigationElement',
-        '@id': `${BASE_URL}/#nav-uslugi`,
+        '@id': `${siteUrl}/#nav-uslugi`,
         name: 'Usługi',
-        url: `${BASE_URL}/uslugi`,
+        url: `${siteUrl}/uslugi`,
       },
       {
         '@type': 'ItemList',
-        '@id': `${BASE_URL}/#sitemap-uslugi`,
+        '@id': `${siteUrl}/#sitemap-uslugi`,
         name: 'Mapa strony - Usługi',
         itemListElement: toListElements([...services, ...servicesChildren]),
       },
       {
         '@type': 'SiteNavigationElement',
-        '@id': `${BASE_URL}/#nav-edukacja`,
+        '@id': `${siteUrl}/#nav-edukacja`,
         name: 'Edukacja',
-        url: `${BASE_URL}/edukacja`,
+        url: `${siteUrl}/edukacja`,
       },
       {
         '@type': 'ItemList',
-        '@id': `${BASE_URL}/#sitemap-edukacja`,
+        '@id': `${siteUrl}/#sitemap-edukacja`,
         name: 'Mapa strony - Edukacja',
         itemListElement: toListElements([{ title: 'Edukacja', href: '/edukacja' }, ...blogCategories, ...blogArticleItems]),
       },
       {
         '@type': 'SiteNavigationElement',
-        '@id': `${BASE_URL}/#nav-narzedzia`,
+        '@id': `${siteUrl}/#nav-narzedzia`,
         name: 'Narzędzia',
-        url: `${BASE_URL}/narzedzia`,
+        url: `${siteUrl}/narzedzia`,
       },
       {
         '@type': 'ItemList',
-        '@id': `${BASE_URL}/#sitemap-narzedzia`,
+        '@id': `${siteUrl}/#sitemap-narzedzia`,
         name: 'Mapa strony - Narzędzia',
         itemListElement: toListElements([{ title: 'Narzędzia', href: '/narzedzia' }, ...tools]),
       },
       {
         '@type': 'ItemList',
-        '@id': `${BASE_URL}/#sitemap-realizacje`,
+        '@id': `${siteUrl}/#sitemap-realizacje`,
         name: 'Mapa strony - Realizacje',
         itemListElement:
           portfolioItems.length > 0
@@ -371,13 +350,13 @@ function buildJsonLd({
       },
       {
         '@type': 'ItemList',
-        '@id': `${BASE_URL}/#sitemap-informacje`,
+        '@id': `${siteUrl}/#sitemap-informacje`,
         name: 'Mapa strony - Informacje',
         itemListElement: toListElements(infoPages),
       },
       {
         '@type': 'BreadcrumbList',
-        '@id': `${BASE_URL}/#breadcrumbs`,
+        '@id': `${siteUrl}/#breadcrumbs`,
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Start', item: abs('/') },
           {

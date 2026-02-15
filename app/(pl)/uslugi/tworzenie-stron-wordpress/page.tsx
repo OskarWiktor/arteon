@@ -47,8 +47,6 @@ export const metadata = {
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 const FAQ_ITEMS = [
   {
     question: 'Ile kosztuje strona internetowa WordPress?',
@@ -102,7 +100,6 @@ const FAQ_ITEMS = [
 
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/tworzenie-stron-wordpress',
     serviceName: 'Tworzenie stron internetowych WordPress dla firm',
     description: 'Projektujemy i wdrażamy strony WordPress widoczne w Google. Elementor Pro w cenie, wydajność 90+/100 dla mobile, faktura po realizacji, brak ukrytych kosztów utrzymania.',

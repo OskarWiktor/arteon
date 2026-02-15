@@ -1,0 +1,254 @@
+{
+  "toolKey": "paletteExtractor",
+  "locale": "fr",
+  "metadata": {
+    "title": "Extracteur de couleurs d'image gratuit – palette de photos",
+    "description": "Importez une photo ou un logo et extrayez jusqu'à 12 couleurs dominantes avec codes HEX et RGB. Idéal pour l'UI, le branding et les réseaux sociaux. Sans inscription, sans limite.",
+    "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
+    "path": "/fr/outils/extracteur-de-couleurs-d-image"
+  },
+  "hero": {
+    "title": "Extracteur de couleurs d'image",
+    "description": "Importez une photo ou un logo et l'outil extraira les couleurs dominantes. Copiez les codes HEX en un clic – idéal pour l'UI, le branding et les réseaux sociaux.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/fr/outils", "label": "Outils" },
+    "third": { "href": "/fr/outils/extracteur-de-couleurs-d-image", "label": "Extracteur de couleurs" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Extracteur de couleurs d'image en ligne",
+      "alternateName": ["Palette de couleurs à partir d'une image", "Extracteur de couleurs dominantes", "Générateur de palette à partir d'une photo"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorExtractor",
+      "description": "Extracteur de couleurs gratuit. Importez une photo ou un logo et obtenez une palette de jusqu'à 12 couleurs dominantes (HEX et RGB). Exécution locale.",
+      "featureList": [
+        "Extraction de jusqu'à 12 couleurs dominantes",
+        "Codes HEX et RGB",
+        "Copie en un clic",
+        "Prise en charge PNG, JPG/JPEG, SVG",
+        "Exécution locale dans le navigateur",
+        "Sans inscription et sans limite"
+      ]
+    },
+    "howTo": {
+      "name": "Comment extraire les couleurs d'une image",
+      "description": "Importez une image et obtenez une palette de couleurs dominantes avec des codes HEX copiables.",
+      "steps": [
+        { "name": "Importer une image", "text": "Glissez-déposez une image ou sélectionnez un fichier PNG, JPG ou SVG." },
+        { "name": "Voir la palette", "text": "L'outil extrait automatiquement les couleurs dominantes de l'image." },
+        { "name": "Copier les codes", "text": "Cliquez sur Copier pour copier le code HEX d'une couleur dans le presse-papiers." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Extraire les couleurs dominantes d'une image",
+      "html": "<p class=\"text-mid\">L'extracteur de couleurs analyse votre image et identifie les couleurs dominantes. Le résultat est une palette de couleurs avec des codes HEX copiables en un clic – prête à être utilisée dans vos projets de design, votre site web ou vos publications sur les réseaux sociaux.</p><p class=\"text-mid mt-3\">L'outil est particulièrement utile pour créer une palette de marque à partir d'un logo, trouver les couleurs dominantes d'une photo pour un schéma de couleurs cohérent, ou simplement identifier les couleurs d'une image que vous aimez.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser l'extracteur",
+      "description": "L'extraction ne prend que quelques secondes :",
+      "grid": "three",
+      "items": [
+        { "icon": "RiUploadLine", "title": "1. Importer une image", "description": "Glissez-déposez une image ou sélectionnez un fichier PNG, JPG ou SVG." },
+        { "icon": "RiPaletteLine", "title": "2. Voir la palette", "description": "L'outil extrait automatiquement les couleurs dominantes de l'image." },
+        { "icon": "RiFileCopyLine", "title": "3. Copier les codes", "description": "Cliquez sur Copier pour copier le code HEX dans le presse-papiers." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Comment se présente une palette de couleurs extraite ?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Exemple de couleurs extraites d'une image de nature</p></div>",
+      "html": "<p class=\"text-mid mb-4\">Après l'import d'une image, l'extracteur affiche une liste de couleurs dominantes classées de la plus à la moins présente. Chaque couleur est accompagnée de son code HEX et de sa valeur RGB – prêts à être collés dans CSS, Figma ou toute application graphique.</p><p class=\"text-mid\">Le nombre de couleurs extraites dépend du contenu de l'image. Une photo de paysage produira une palette plus riche (8–12 couleurs), tandis qu'un logo simple à deux couleurs donnera moins d'éléments.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quelles images donnent les meilleurs résultats ?",
+      "description": "La qualité de la palette extraite dépend du type d'image importée :",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiImageLine",
+          "title": "Logos et graphiques à palette limitée",
+          "description": "Les images avec peu de couleurs clairement séparées donnent les résultats les plus précis : l'extracteur identifie chaque couleur avec exactitude."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Photos avec un sujet clair",
+          "description": "Les photos de produits, intérieurs ou paysages produisent également des palettes utiles, mais contiennent plus de nuances, y compris les couleurs d'ombres et de reflets."
+        },
+        {
+          "icon": "RiEraserLine",
+          "title": "Fichiers PNG à fond transparent",
+          "description": "Les pixels transparents sont automatiquement ignorés lors de l'analyse. Pour extraire les couleurs uniquement de l'objet (ex. : un logo), utilisez un PNG sans fond."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Images sans grand fond uni",
+          "description": "Lorsque le fond occupe la majeure partie de l'image, sa couleur domine les résultats. Avant d'importer, recadrez l'image sur la zone d'intérêt."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTimeline",
+      "title": "Comment fonctionne l'extraction de couleurs ?",
+      "description": "Après l'import du fichier, l'outil effectue plusieurs étapes en arrière-plan : toute l'analyse se fait localement dans le navigateur :",
+      "items": [
+        {
+          "icon": "RiZoomInLine",
+          "title": "Redimensionnement de l'image",
+          "description": "L'image est redimensionnée à environ 240 pixels de large. Cela accélère l'analyse même pour les très grandes photos, sans affecter la précision de détection des couleurs."
+        },
+        {
+          "icon": "RiGroupLine",
+          "title": "Regroupement des couleurs similaires",
+          "description": "Chaque pixel est analysé et les nuances similaires sont regroupées. Deux bleus presque identiques deviennent une seule couleur dans la palette."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Sélection des couleurs dominantes",
+          "description": "L'algorithme choisit les couleurs qui couvrent la plus grande surface de l'image. Le résultat est une liste de jusqu'à 12 couleurs classées de la plus à la moins dominante."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Omission des pixels transparents",
+          "description": "Dans les fichiers PNG à fond transparent, ces zones ne sont pas incluses dans l'analyse : l'extracteur examine uniquement les couleurs visibles. L'ensemble du processus prend généralement moins d'une seconde."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Résolution de problèmes de l'extracteur de couleurs",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBarChartLine",
+          "title": "L'extracteur a renvoyé moins de 12 couleurs",
+          "description": "Le nombre de couleurs extraites dépend du contenu de l'image. Un logo simple à deux couleurs donnera 2-3 résultats : c'est le comportement normal. L'outil n'ajoute pas de couleurs artificielles ; il extrait uniquement celles qui apparaissent réellement dans l'image."
+        },
+        {
+          "icon": "RiAlertLine",
+          "title": "Des couleurs inattendues sont apparues",
+          "description": "Il peut s'agir de couleurs d'ombres, de dégradés ou de reflets : les pixels dans ces zones ont des couleurs différentes de l'objet visible à première vue. Utiliser une image aux couleurs plus uniformes ou recadrer les zones sombres améliorera les résultats."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "La couleur de fond domine les résultats",
+          "description": "Lorsque le fond couvre plus de surface que l'objet, sa couleur apparaîtra en premier dans la liste. Solution : utilisez un PNG à fond transparent ou recadrez l'image pour que l'objet occupe plus d'espace."
+        },
+        {
+          "icon": "RiFileWarningLine",
+          "title": "Le fichier n'est pas accepté",
+          "description": "L'outil accepte uniquement les formats PNG, JPG et SVG. Les fichiers dans d'autres formats (GIF, TIFF, HEIC, PDF) nécessitent une conversion préalable."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Qu'est-ce qui rend cet extracteur spécial ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Analyse locale : l'image ne quitte jamais votre ordinateur",
+          "description": "Toute l'extraction de couleurs se fait dans le navigateur. L'image n'est envoyée à aucun serveur et les données sont supprimées de la mémoire à la fermeture de la page."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Jusqu'à 12 couleurs dominantes d'une image",
+          "description": "L'outil extrait jusqu'à 12 couleurs classées par dominance, suffisamment pour construire une palette complète pour un projet."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Trois formats d'image populaires",
+          "description": "Formats pris en charge : PNG, JPG et SVG. Les fichiers PNG à fond transparent donnent les meilleurs résultats car les pixels transparents sont automatiquement ignorés."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Codes HEX et RGB prêts à coller",
+          "description": "Chaque couleur extraite est accompagnée de son code HEX (ex. : #2C5F2D) et de sa valeur RGB. Le code peut être copié et collé directement dans CSS, Figma ou Photoshop."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Où utiliser les couleurs extraites d'une image ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Construction d'identité visuelle",
+          "description": "Importez une photo qui capture l'ambiance de la marque (un paysage, un intérieur, une photo de produit) et extrayez des couleurs comme point de départ pour une palette de branding."
+        },
+        {
+          "icon": "RiLayoutMasonryLine",
+          "title": "Visuels pour les réseaux sociaux",
+          "description": "Extrayez les couleurs d'une photo de produit et utilisez-les comme fonds ou accents. Les publications basées sur les couleurs d'une même source paraissent cohérentes sur le profil."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Harmoniser les couleurs avec un site web",
+          "description": "Extrayez les couleurs du logo et utilisez-les comme palette du site : couleur principale, couleur d'accent, tons de fond. Les codes HEX se collent directement dans le CSS."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Enrichir une palette existante",
+          "description": "Une couleur de base extraite peut être utilisée dans le <a href=\"/fr/outils/generateur-de-palettes-de-couleurs\">générateur de palettes de couleurs</a> pour créer un ensemble complet de couleurs harmonieuses basé sur la théorie des couleurs."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur l'extracteur de couleurs",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de couleurs l'outil extrait-il ?",
+          "answer": "L'outil extrait jusqu'à 12 couleurs dominantes de l'image. Le nombre exact dépend de la complexité de l'image – une photo avec peu de couleurs générera moins de résultats.",
+          "answerSchemaText": "Jusqu'à 12 couleurs dominantes, selon la complexité de l'image."
+        },
+        {
+          "question": "Quels formats d'image sont pris en charge ?",
+          "answer": "L'outil prend en charge les formats PNG, JPG/JPEG et SVG. Les autres formats ne sont pas pris en charge.",
+          "answerSchemaText": "PNG, JPG/JPEG et SVG."
+        },
+        {
+          "question": "Comment fonctionne l'extraction des couleurs ?",
+          "answer": "L'outil analyse les pixels de l'image et utilise un algorithme de regroupement pour identifier les couleurs dominantes. Le résultat est une palette représentant les couleurs les plus présentes dans l'image.",
+          "answerSchemaText": "Analyse des pixels et regroupement pour identifier les couleurs dominantes."
+        },
+        {
+          "question": "Mes images sont-elles envoyées à un serveur ?",
+          "answer": "Non. Tout le traitement s'effectue localement dans votre navigateur. Vos images ne quittent jamais votre ordinateur.",
+          "answerSchemaText": "Non. Traitement local dans le navigateur."
+        },
+        {
+          "question": "À quoi servent les couleurs extraites ?",
+          "answer": "Les couleurs extraites peuvent servir de base pour une palette de marque, un schéma de couleurs pour un site web, des publications sur les réseaux sociaux ou tout projet de design. Copiez les codes HEX et utilisez-les dans CSS, Figma, Adobe ou d'autres outils.",
+          "answerSchemaText": "Palette de marque, schéma de couleurs web, réseaux sociaux, design."
+        },
+        {
+          "question": "Puis-je copier toutes les couleurs de la palette en une seule fois ?",
+          "answer": "Actuellement, l'outil permet de copier les couleurs une par une – chaque couleur dispose d'un bouton qui copie le code HEX dans le presse-papiers. Le code copié peut être collé directement dans Figma, Photoshop, CSS ou toute autre application.",
+          "answerSchemaText": "Actuellement, les couleurs se copient une par une via le bouton à côté de chaque couleur."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Découvrir d'autres outils" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

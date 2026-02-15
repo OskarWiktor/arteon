@@ -35,11 +35,8 @@ export const metadata = {
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
     serviceName: 'Kupony rabatowe i vouchery',
     description: 'Projekt kuponów rabatowych i voucherów prezentowych: elegancka forma, pliki gotowe do druku oraz wersje cyfrowe.',

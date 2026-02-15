@@ -35,11 +35,8 @@ export const metadata = {
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
     serviceName: 'Szablony postów do mediów społecznościowych',
     description: 'Szablony postów do mediów społecznościowych: spójne z marką, łatwe do edycji. Gotowe zestawy + instrukcja użycia.',

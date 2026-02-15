@@ -34,11 +34,8 @@ export const metadata = {
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
     serviceName: 'Projekt identyfikacji wizualnej',
     description: 'Kompletna identyfikacja: logo, paleta, typografia i wzory. Podstawowa księga znaku i spójność we wszystkich kanałach.',

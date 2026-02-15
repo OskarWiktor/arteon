@@ -15,6 +15,7 @@ import Button from '@/components/ui/buttons/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Script from 'next/script';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import { siteUrl } from '@/utils/absoluteUrl';
 
 export const metadata = {
   title: 'Marketing internetowy - SEO, reklamy i komunikacja | Arteon',
@@ -30,7 +31,6 @@ export const metadata = {
 } as const;
 
 function ItemListSchema() {
-  const base = 'https://www.arteonagency.pl';
   const services = [
     { name: 'Audyt SEO', path: '/uslugi/marketing/audyt-seo' },
     { name: 'Optymalizacja SEO', path: '/uslugi/marketing/optymalizacja-seo' },
@@ -39,13 +39,13 @@ function ItemListSchema() {
   const json = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    '@id': `${base}/uslugi/marketing#itemlist`,
+    '@id': `${siteUrl}/uslugi/marketing#itemlist`,
     name: 'Usługi marketingowe - Arteon',
     itemListOrder: 'https://schema.org/ItemListOrderAscending',
     itemListElement: services.map((s, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: `${base}${s.path}`,
+      url: `${siteUrl}${s.path}`,
       name: s.name,
     })),
   };

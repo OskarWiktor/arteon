@@ -1,6 +1,7 @@
 import { OFFER_SECTIONS_PL, TOOLS_SECTIONS_PL, ABOUT_NAV_ITEMS_PL } from '@/components/shared/navigation-data/pl';
 import searchBlog from '@/data/pl/search-blog.json';
 import searchProjects from '@/data/pl/search-projects.json';
+import { slugify } from '@/utils/slugify';
 
 import type { SearchCategory, SearchItem } from '@/types/search';
 export type { SearchCategory, SearchItem } from '@/types/search';
@@ -126,7 +127,7 @@ function buildBlogIndex(): SearchItem[] {
   return (searchBlog as SearchBlogEntry[]).map((a) => ({
     title: a.t,
     description: a.e,
-    href: `/edukacja/${a.c.toLowerCase()}/${a.s}`,
+    href: `/edukacja/${slugify(a.c)}/${a.s}`,
     category: 'edukacja',
     categoryLabel: 'Edukacja',
     keywords: a.k,

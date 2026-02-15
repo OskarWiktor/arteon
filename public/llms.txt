@@ -1,0 +1,71 @@
+# Arteon Agency - Free Online Tools
+
+> Arteon Agency provides a suite of free, browser-based web tools for designers, developers, marketers, and content creators. All tools run locally in the browser — no data is sent to any server.
+
+## Tools
+
+### Word & Character Counter
+- URL: https://www.arteonagency.pl/en/tools/word-and-character-counter
+- Description: Count words, characters, paragraphs and estimate reading time. Evaluate text length for SEO — blog posts, product descriptions, service pages.
+- Features: Word count, character count (with/without spaces), paragraph count, reading time, text length evaluation for 6 page types.
+
+### WCAG Contrast Checker
+- URL: https://www.arteonagency.pl/en/tools/color-contrast-checker
+- Description: Check if text and background colors meet WCAG 2.1 accessibility standards. Calculates contrast ratio for AA and AAA compliance levels.
+- Features: Real-time contrast ratio calculation, WCAG AA/AAA pass/fail indicators, color picker, hex/RGB input, text preview on background.
+
+### Meta Title & Description Checker
+- URL: https://www.arteonagency.pl/en/tools/meta-title-and-description-checker
+- Description: Check character count and preview how your page appears in Google search results. Avoid truncated titles and descriptions in SERPs.
+- Features: Character counter for title and description, Google SERP preview (desktop and mobile), pixel width validation, real-time feedback.
+
+### Image Color Palette Extractor
+- URL: https://www.arteonagency.pl/en/tools/image-color-palette-extractor
+- Description: Upload a photo or logo and extract dominant colors. Copy color codes (HEX, RGB, HSL) with one click.
+- Features: Dominant color extraction from images, HEX/RGB/HSL color codes, one-click copy, supports JPG/PNG/WebP.
+
+### Color Palette Generator
+- URL: https://www.arteonagency.pl/en/tools/color-palette-generator
+- Description: Choose a base color and generate 9 harmonious palettes: monochromatic, complementary, triadic, analogous, split-complementary, and more.
+- Features: 9 palette types, HEX/RGB/HSL output, one-click copy, real-time preview, color theory based generation.
+
+### Favicon Generator
+- URL: https://www.arteonagency.pl/en/tools/free-favicon-generator
+- Description: Generate favicon.ico and PNG icons from a single image. Compliant with browser requirements and Lighthouse audits.
+- Features: Generate favicon.ico (16x16, 32x32, 48x48), PNG icons (192x192, 512x512), Apple Touch Icon (180x180), HTML meta tags, browser-based processing.
+
+### Email Signature Generator
+- URL: https://www.arteonagency.pl/en/tools/free-email-signature-generator
+- Description: Create a professional HTML email signature in minutes. 8 layouts, custom colors, social media icons, CTA button. Copy formatted HTML for Gmail or Outlook.
+- Features: 8 layouts, customizable colors and fonts, 12 social media platforms, CTA button, profile photo and company logo, disclaimer field, export/import settings.
+
+### QR Code Generator
+- URL: https://www.arteonagency.pl/en/tools/free-qr-code-generator
+- Description: Generate QR codes for URLs, vCards, text, email, and phone numbers. Download in PNG or SVG format.
+- Features: 5 content types (URL, vCard, text, email, phone), customizable colors, adjustable size, 4 error correction levels, PNG and SVG export.
+
+### JPG/PNG to WebP Converter
+- URL: https://www.arteonagency.pl/en/tools/jpg-png-to-webp-converter
+- Description: Convert JPG and PNG images to WebP format. Reduce file size by up to 35% without visible quality loss. Batch processing with ZIP download.
+- Features: JPG/PNG to WebP conversion, Smart Quality optimization, batch processing, ZIP download, adjustable quality (60-95%), local browser processing.
+
+### Online Image Editor
+- URL: https://www.arteonagency.pl/en/tools/online-image-editor
+- Description: Crop and resize images for social media and websites. Ready-made templates for Instagram, Facebook, LinkedIn. Export in PNG, JPG, WebP.
+- Features: Templates for Instagram/Facebook/LinkedIn/OG Image, 3 crop shapes (rectangle, square, circle), custom dimensions, zoom and position control, PNG/JPG/WebP export.
+
+## Available Languages
+- Polish (PL): https://www.arteonagency.pl/narzedzia
+- English (EN): https://www.arteonagency.pl/en/tools
+- German (DE): https://www.arteonagency.pl/de/werkzeuge
+- Spanish (ES): https://www.arteonagency.pl/es/herramientas
+- French (FR): https://www.arteonagency.pl/fr/outils
+- Portuguese (PT): https://www.arteonagency.pl/pt/ferramentas
+- Italian (IT): https://www.arteonagency.pl/it/strumenti
+
+## About
+Arteon Agency is a web development and design agency based in Poland. All tools are free, require no registration, and process data locally in the user's browser for maximum privacy.
+
+## Contact
+- Website: https://www.arteonagency.pl
+- Email: kontakt@arteonagency.pl

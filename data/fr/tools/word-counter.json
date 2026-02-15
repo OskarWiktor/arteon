@@ -1,0 +1,223 @@
+{
+  "toolKey": "wordCounter",
+  "locale": "fr",
+  "metadata": {
+    "title": "Compteur de mots et caractères gratuit – texte SEO",
+    "description": "Comptez mots, caractères, paragraphes et temps de lecture instantanément. Vérifiez la longueur optimale pour le SEO – blog, page produit, landing page. Sans inscription, sans limite.",
+    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "path": "/fr/outils/compteur-de-mots-et-caracteres"
+  },
+  "hero": {
+    "title": "Compteur de mots et caractères",
+    "description": "Comptez les mots, caractères, paragraphes et estimez le temps de lecture. Vérifiez si la longueur de votre texte est optimale pour le SEO – article de blog, page de service ou fiche produit.",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/fr/outils", "label": "Outils" },
+    "third": { "href": "/fr/outils/compteur-de-mots-et-caracteres", "label": "Compteur de mots" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Compteur de mots et caractères gratuit en ligne",
+      "alternateName": [
+        "Compteur de mots en ligne",
+        "Compteur de caractères",
+        "Vérificateur de longueur de texte SEO",
+        "Compteur de paragraphes",
+        "Outil de comptage de mots pour rédacteurs",
+        "Calculateur de temps de lecture",
+        "Compteur de mots SEO",
+        "Longueur optimale de texte pour article de blog"
+      ],
+      "applicationCategory": "DeveloperApplication",
+      "applicationSubCategory": "TextApplication",
+      "description": "Compteur de mots et caractères avec évaluation de la longueur. Vérifiez si la longueur convient pour une page d'accueil, un article de blog ou une fiche produit.",
+      "featureList": [
+        "Compteur de mots et caractères",
+        "Caractères avec et sans espaces",
+        "Compteur de paragraphes",
+        "Estimation du temps de lecture",
+        "Évaluation de la longueur par type de page",
+        "Copie du rapport",
+        "Exécution locale dans le navigateur"
+      ]
+    },
+    "howTo": {
+      "name": "Comment vérifier la longueur de texte pour le SEO",
+      "description": "Collez votre texte, sélectionnez le type de page et vérifiez si la longueur est optimale.",
+      "steps": [
+        { "name": "Coller le texte", "text": "Collez ou saisissez le texte que vous souhaitez analyser." },
+        { "name": "Sélectionner le type de page", "text": "Choisissez le type de page (article de blog, page de service, page d'accueil, etc.)." },
+        { "name": "Vérifier les résultats", "text": "Consultez le nombre de mots, caractères, paragraphes, temps de lecture et l'évaluation de la longueur." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Pourquoi la longueur du texte est importante pour le SEO ?",
+      "html": "<p class=\"text-mid\">La longueur du texte est l'un des facteurs qui influencent le classement dans les résultats de recherche. Les pages trop courtes peuvent être perçues comme manquant de profondeur, tandis que les pages excessivement longues sans structure claire peuvent décourager les lecteurs.</p><p class=\"text-mid mt-3\">Cet outil vous aide à vérifier si la longueur de votre texte correspond aux recommandations pour différents types de pages – articles de blog, pages de service, pages d'accueil et fiches produit. Il compte les mots, caractères, paragraphes et estime le temps de lecture.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le compteur",
+      "description": "L'analyse ne prend que quelques secondes :",
+      "grid": "three",
+      "items": [
+        { "icon": "RiFileTextLine", "title": "1. Coller le texte", "description": "Collez ou saisissez le texte que vous souhaitez analyser." },
+        { "icon": "RiBarChartLine", "title": "2. Choisir le type de page", "description": "Sélectionnez le type de page pour obtenir une évaluation de la longueur adaptée." },
+        { "icon": "RiFileCopyLine", "title": "3. Copier le rapport", "description": "Consultez les statistiques et copiez le rapport si nécessaire." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Ce que le compteur mesure : mots, caractères, temps de lecture",
+      "description": "Le compteur enregistre cinq métriques clés :",
+      "grid": "two",
+      "items": [
+        { "icon": "RiText", "title": "Mots", "description": "Nombre total de mots. C'est l'indicateur principal de la longueur du texte." },
+        {
+          "icon": "RiSpaceShipLine",
+          "title": "Caractères (avec espaces)",
+          "description": "Tous les caractères, espaces compris. Utile lorsqu'un CMS impose une limite de caractères (ex. : fiches sur les marketplaces)."
+        },
+        {
+          "icon": "RiHashtag",
+          "title": "Caractères (sans espaces)",
+          "description": "Uniquement lettres, chiffres et ponctuation. Parfois requis par les imprimeurs ou pour la facturation de traductions."
+        },
+        { "icon": "RiParagraph", "title": "Paragraphes", "description": "Combien de blocs de texte séparés par des lignes vides. Aide à évaluer si le texte est bien structuré." },
+        {
+          "icon": "RiTimeLine",
+          "title": "Temps de lecture",
+          "description": "Le calculateur de temps de lecture indique combien de minutes il faut pour lire le texte à une vitesse moyenne de 200 mots par minute."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Comment interpréter les résultats",
+      "subtitle": "États d'évaluation",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800\">Bonne longueur</span><span class=\"text-mid text-sm!\">Le texte se situe dans la plage recommandée</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800\">En dessous de la plage</span><span class=\"text-mid text-sm!\">Le texte est plus court que la moyenne</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-800\">Au-dessus de la plage</span><span class=\"text-mid text-sm!\">Le texte est plus long que la moyenne</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Progression</span><span class=\"text-mid\">1200 / 1200-3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">La barre de progression colorée et le statut vous aident à évaluer rapidement la longueur du texte :</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Bonne longueur</strong> (vert) – le texte se situe dans la plage approximative pour le type de page sélectionné.</li><li><strong class=\"text-warning-text\">En dessous de la plage</strong> (jaune) – le texte est plus court que la moyenne pour ce type de page. S'il répond à toutes les questions du lecteur, la longueur peut convenir.</li><li><strong class=\"text-error-text\">Au-dessus de la plage</strong> (rouge) – le texte est plus long que la moyenne. Si chaque paragraphe apporte une information nouvelle, la longueur est justifiée.</li></ul><p class=\"text-mid mt-4\">Les plages sont basées sur l'analyse de contenus bien positionnés dans les moteurs de recherche. Si le texte répond aux questions du lecteur, la longueur est adéquate quel que soit le résultat du compteur.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Combien de mots doit contenir un texte : longueur optimale pour le SEO",
+      "html": "<p class=\"text-mid mb-4\">Les plages ci-dessous sont basées sur l'analyse de contenus bien positionnés dans les moteurs de recherche. La longueur du texte en elle-même n'influence pas le positionnement sur Google : ce qui compte, c'est si le contenu répond aux questions du lecteur.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Type de page</th><th class=\"py-2 pr-4 font-semibold\">Plage</th><th class=\"py-2 font-semibold\">Quand plus court, quand plus long ?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Fiche produit</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 mots</td><td class=\"text-primary-light0 py-2 text-sm\">Produit simple (ex. : une tasse) : 80–150 mots. Équipement complexe (ex. : un ordinateur portable) : 300–400 mots, car les acheteurs ont davantage de questions.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Page de service</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1 500 mots</td><td class=\"text-primary-light0 py-2 text-sm\">Service local (ex. : plombier) : 500–700 mots. Service B2B avec processus et FAQ : 1 200–1 500 mots.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Page d'accueil</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1 000 mots</td><td class=\"text-primary-light0 py-2 text-sm\">La page d'accueil transmet la valeur principale et guide les visiteurs : le texte soutient la navigation, il ne remplace pas les sous-pages.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landing page</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2 500 mots</td><td class=\"text-primary-light0 py-2 text-sm\">Offre simple : 600–1 000 mots. Offre nécessitant d'expliquer le processus, les variantes et les objections : 1 500–2 500 mots.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Article de blog</td><td class=\"py-2 pr-4 whitespace-nowrap\">1 200–3 000 mots</td><td class=\"text-primary-light0 py-2 text-sm\">Réponse à une question simple : 1 200–1 800 mots. Sujet complexe avec de nombreux aspects : 2 000–3 000 mots.</td></tr><tr><td class=\"py-2 pr-4\">Guide</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 500–6 000 mots</td><td class=\"text-primary-light0 py-2 text-sm\">Sujet ciblé : 2 500–3 500 mots. Sujet large avec de nombreuses étapes et exemples : 4 000–6 000 mots.</td></tr></tbody></table></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Pour qui le compteur de mots en ligne est-il utile ?",
+      "description": "Un outil de comptage de mots pour les rédacteurs et bien plus : voici ceux qui utilisent le plus le compteur :",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiEditLine",
+          "title": "Rédacteurs et créateurs de contenu",
+          "description": "Vérifiez si le texte se situe dans la plage recommandée pour un type de page spécifique. Le compteur de mots SEO aide à évaluer si un article est suffisamment développé."
+        },
+        { "icon": "RiBloggerLine", "title": "Blogueurs", "description": "Contrôlez la longueur des articles pour maintenir la cohérence. Vérifiez le temps de lecture avant publication." },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "E-commerce",
+          "description": "Vérifiez les descriptions de produits par rapport aux limites de caractères des plateformes de vente (Amazon, eBay, Etsy)."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "Spécialistes SEO",
+          "description": "Évaluez si le contenu de la page a une longueur optimale par rapport à la concurrence. Analysez le rapport mots-sujet."
+        },
+        { "icon": "RiGraduationCapLine", "title": "Étudiants et universitaires", "description": "Vérifiez si un travail respecte la limite de mots ou de caractères requise." },
+        { "icon": "RiTranslate2", "title": "Traducteurs", "description": "Comptez les caractères sans espaces pour les devis de traduction (une unité de facturation standard)." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Limites de caractères sur les plateformes populaires",
+      "html": "<p class=\"text-mid mb-4\">Le compteur de caractères est utile pour créer du contenu sur des plateformes avec des restrictions de longueur :</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Plateforme / Élément</th><th class=\"py-2 pr-4 font-semibold\">Limite de caractères</th><th class=\"py-2 font-semibold\">Remarques</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – méta titre</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 caractères</td><td class=\"text-primary-light0 py-2 text-sm\">Les titres plus longs sont tronqués dans les résultats de recherche.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – méta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 caractères</td><td class=\"text-primary-light0 py-2 text-sm\">Description visible sous le lien dans les résultats de recherche.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon – titre de produit</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 caractères</td><td class=\"text-primary-light0 py-2 text-sm\">Titre concis avec les mots-clés les plus importants.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – publication</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 caractères</td><td class=\"text-primary-light0 py-2 text-sm\">Limite standard pour les utilisateurs réguliers.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn – publication</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 caractères</td><td class=\"text-primary-light0 py-2 text-sm\">Après ~210 caractères, le lien &laquo; voir plus &raquo; apparaît.</td></tr></tbody></table></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Qu'est-ce qui rend ce compteur spécial ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Six types de pages avec plages recommandées",
+          "description": "Fiche produit, page de service, page d'accueil, landing page, article de blog et guide : chaque type a ses propres plages basées sur l'analyse."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Traitement local dans le navigateur",
+          "description": "Votre texte n'est jamais envoyé à un serveur : toute l'analyse se fait localement sur votre appareil."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Évaluation de la longueur du texte",
+          "description": "Ne se limite pas à compter les mots : vous obtenez une indication sur l'adéquation de la longueur pour le type de page sélectionné."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "Plages basées sur le SEO",
+          "description": "Les longueurs recommandées sont basées sur l'analyse de contenus bien positionnés dans les moteurs de recherche."
+        },
+        { "icon": "RiTimerLine", "title": "Temps de lecture", "description": "Sachez immédiatement combien de minutes les lecteurs mettront à lire le texte." },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Copier le rapport",
+          "description": "Le bouton Copier le rapport copie un résumé avec toutes les statistiques et l'évaluation de longueur dans le presse-papiers."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur le compteur de mots",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quelle est la longueur idéale d'un article de blog ?",
+          "answer": "Pour le SEO, les articles de blog performants comptent généralement entre 1 500 et 3 000 mots. Les articles plus longs et approfondis tendent à mieux se classer dans les résultats de recherche, à condition que le contenu soit de qualité et réponde à l'intention de recherche.",
+          "answerSchemaText": "Généralement 1 500–3 000 mots pour le SEO. Le contenu de qualité est essentiel."
+        },
+        {
+          "question": "Quelle est la longueur idéale d'une page de service ?",
+          "answer": "Une page de service doit compter au minimum 800–1 500 mots pour fournir suffisamment d'informations aux utilisateurs et aux moteurs de recherche. Le contenu doit décrire clairement le service, ses avantages et inclure un appel à l'action.",
+          "answerSchemaText": "Minimum 800–1 500 mots. Description claire, avantages et appel à l'action."
+        },
+        {
+          "question": "Comment est calculé le temps de lecture ?",
+          "answer": "Le temps de lecture est estimé sur la base de 200–250 mots par minute, ce qui correspond à la vitesse de lecture moyenne d'un adulte. Le résultat est une approximation – la vitesse réelle dépend de la complexité du texte et du lecteur.",
+          "answerSchemaText": "Basé sur 200–250 mots/minute (vitesse de lecture moyenne)."
+        },
+        {
+          "question": "Mes données sont-elles envoyées à un serveur ?",
+          "answer": "Non. Tout le traitement s'effectue localement dans votre navigateur. Aucun texte n'est envoyé ni stocké.",
+          "answerSchemaText": "Non. Traitement local dans le navigateur."
+        },
+        {
+          "question": "L'outil fonctionne-t-il pour toutes les langues ?",
+          "answer": "Oui. Le compteur de mots fonctionne avec n'importe quelle langue utilisant des espaces comme séparateurs de mots – français, anglais, allemand, espagnol, polonais et bien d'autres.",
+          "answerSchemaText": "Oui, pour toutes les langues utilisant des espaces comme séparateurs."
+        },
+        {
+          "question": "Puis-je copier le rapport avec les statistiques ?",
+          "answer": "Oui. Sous les statistiques se trouve un bouton Copier le rapport – il copie un résumé avec le nombre de mots, caractères, paragraphes, le temps de lecture et l'évaluation de longueur dans le presse-papiers. Vous pouvez le coller dans un document ou l'envoyer à des collaborateurs.",
+          "answerSchemaText": "Oui. Cliquez sur Copier le rapport. Un résumé avec toutes les métriques est copié dans le presse-papiers."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Découvrir d'autres outils" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

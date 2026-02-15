@@ -32,11 +32,8 @@ export const metadata = {
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-katalogu',
     serviceName: 'Projekt katalogu',
     description: 'Katalog produktowy/usługowy: układ, typografia, infografiki i zdjęcia. Gotowe pliki do druku oraz PDF online.',

@@ -1,0 +1,220 @@
+{
+  "toolKey": "imageResize",
+  "locale": "fr",
+  "metadata": {
+    "title": "Éditeur d'images gratuit – recadrer et redimensionner",
+    "description": "Recadrez et redimensionnez vos images en quelques secondes. Modèles pour Instagram, Facebook, LinkedIn. Convertissez JPG en WebP. Avatars ronds. Sans inscription, sans limite.",
+    "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
+    "path": "/fr/outils/editeur-d-images-en-ligne"
+  },
+  "hero": {
+    "title": "Éditeur d'images en ligne",
+    "description": "Recadrez et redimensionnez vos images pour les réseaux sociaux, les sites web et les supports imprimés. Modèles prêts à l'emploi pour Instagram, Facebook et LinkedIn – ou saisissez vos propres dimensions.",
+    "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/fr/outils", "label": "Outils" },
+    "third": { "href": "/fr/outils/editeur-d-images-en-ligne", "label": "Éditeur d'images" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Éditeur d'images en ligne – recadrer et redimensionner",
+      "alternateName": [
+        "Recadrer des images en ligne",
+        "Redimensionner des images en ligne",
+        "Recadrer des images Instagram",
+        "Taille de couverture Facebook",
+        "Créer une bannière LinkedIn",
+        "Éditeur de photos en ligne gratuit",
+        "Recadrer une image pour les réseaux sociaux",
+        "Redimensionner une image OG"
+      ],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageEditor",
+      "description": "Recadrez et redimensionnez vos images pour les réseaux sociaux et les sites web. Modèles pour Instagram, Facebook, LinkedIn. Trois formes de recadrage, export en PNG, JPG, WebP.",
+      "featureList": [
+        "Modèles pour Instagram, Facebook, LinkedIn, OG Image",
+        "Trois formes de recadrage : rectangle, carré, cercle",
+        "Dimensions personnalisées en pixels",
+        "Contrôle du zoom et de la position",
+        "Export en PNG, JPG, WebP",
+        "Réglage de la qualité pour JPG et WebP",
+        "Exécution locale dans le navigateur"
+      ]
+    },
+    "howTo": {
+      "name": "Comment recadrer des images en ligne",
+      "description": "Recadrez des images pour les réseaux sociaux et les sites web. Utilisez des modèles prêts à l'emploi ou saisissez vos propres dimensions.",
+      "steps": [
+        { "name": "Importer une image", "text": "Glissez-déposez une image ou sélectionnez un fichier. Formats pris en charge : JPG, PNG, WebP." },
+        { "name": "Choisir le recadrage", "text": "Sélectionnez un modèle (ex. : Instagram Post, couverture Facebook) ou saisissez vos dimensions." },
+        { "name": "Ajuster le zoom et la position", "text": "Réglez le zoom et la position pour définir le cadrage souhaité." },
+        { "name": "Télécharger", "text": "Choisissez le format de sortie (PNG, JPG, WebP) et téléchargez l'image recadrée." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Recadrer vos images pour chaque plateforme",
+      "html": "<p class=\"text-mid\">Chaque plateforme a ses propres exigences en matière d'images – Instagram privilégie les images carrées ou verticales, Facebook a des dimensions de couverture spécifiques, LinkedIn attend des tailles de bannière précises. L'éditeur propose des modèles prêts à l'emploi pour tous les formats courants et permet également de saisir des dimensions personnalisées.</p><p class=\"text-mid mt-3\">L'outil fonctionne entièrement dans votre navigateur – aucune image n'est envoyée à un serveur. Vous pouvez ajuster le zoom et la position du cadrage et télécharger le résultat dans trois formats : PNG (sans perte, avec transparence), JPG (fichier plus léger, sans transparence) et WebP (compression optimale).</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser l'éditeur d'images",
+      "description": "Le recadrage ne prend que quelques secondes :",
+      "grid": "four",
+      "items": [
+        { "icon": "RiImageLine", "title": "1. Importer une image", "description": "Glissez-déposez une image ou sélectionnez un fichier. Formats pris en charge : JPG, PNG, WebP." },
+        { "icon": "RiCropLine", "title": "2. Choisir le recadrage", "description": "Sélectionnez un modèle prédéfini ou saisissez vos propres dimensions en pixels." },
+        { "icon": "RiZoomInLine", "title": "3. Ajuster", "description": "Réglez le zoom et la position pour définir le cadrage souhaité." },
+        { "icon": "RiDownloadLine", "title": "4. Télécharger", "description": "Choisissez le format de sortie (PNG, JPG, WebP) et téléchargez l'image recadrée." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Comment ajouter une image ?",
+      "html": "<p class=\"text-mid\">L'outil accepte les images aux formats JPG, PNG et WebP. Vous pouvez ajouter une image de deux façons :</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Glisser-déposer</strong> – prenez un fichier depuis un dossier sur votre ordinateur et déposez-le dans la zone prévue (zone avec le cadre en pointillés).</li><li><strong>Sélection depuis l'appareil</strong> – cliquez dans la zone d'ajout de fichier pour ouvrir la fenêtre de sélection.</li></ul><p class=\"text-mid mt-3\">Après l'ajout, l'outil lit automatiquement les dimensions originales de l'image et affiche un aperçu. Vous pouvez maintenant passer aux paramètres de recadrage.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Définir les dimensions cibles",
+      "html": "<p class=\"text-mid\">Dans l'onglet <strong>Dimensions en px</strong>, saisissez la largeur et la hauteur manuellement. L'option <strong>Conserver les proportions</strong> ajuste automatiquement la seconde dimension.</p><p class=\"text-mid mt-3\">Dans l'onglet <strong>Modèles</strong>, sélectionnez un format prédéfini (par ex. publication Instagram, couverture Facebook, image OG). L'outil règle automatiquement les dimensions en pixels.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Tailles d'image recommandées par plateforme",
+      "demoHtml": "<div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Plateforme</th><th class=\"py-2 pr-4 font-semibold\">Format</th><th class=\"py-2 font-semibold\">Taille (px)</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Publication (carré)</td><td class=\"py-2\">1080 × 1080</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2\">1080 × 1920</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Publication</td><td class=\"py-2\">1200 × 630</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Couverture</td><td class=\"py-2\">820 × 360</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Publication</td><td class=\"py-2\">1200 × 1200</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Bannière de profil</td><td class=\"py-2\">1584 × 396</td></tr><tr><td class=\"py-2 pr-4\">Site web</td><td class=\"py-2 pr-4\">Image OG</td><td class=\"py-2\">1200 × 630</td></tr></tbody></table></div>",
+      "html": "<p class=\"text-mid\">Chaque plateforme affiche les images dans des proportions et tailles spécifiques. Si une image ne répond pas aux exigences, elle est automatiquement recadrée ou déformée – souvent avec des résultats indésirables.</p><p class=\"text-mid mt-3\">L'éditeur propose des modèles prêts à l'emploi pour toutes les plateformes courantes. Sélectionnez simplement le modèle souhaité et l'outil règle automatiquement les dimensions.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Modèles par catégorie",
+      "description": "L'éditeur propose des modèles pour différents usages :",
+      "grid": "three",
+      "items": [
+        { "icon": "RiInstagramLine", "title": "Instagram", "description": "Publication (carré), portrait (4:5), story/reels (9:16). Toutes à la résolution recommandée." },
+        { "icon": "RiFacebookLine", "title": "Facebook", "description": "Publication (1200x630), couverture (820x360), image d'événement et plus." },
+        { "icon": "RiLinkedinLine", "title": "LinkedIn", "description": "Publication (1200x1200), bannière de profil (1584x396), couverture de page entreprise." },
+        { "icon": "RiGlobalLine", "title": "Site web", "description": "Image OG (1200x630), bannière hero, image d'article et dimensions personnalisées." },
+        { "icon": "RiArticleLine", "title": "Blog et articles", "description": "Images de prévisualisation, images d'article et miniatures dans les tailles courantes." },
+        { "icon": "RiUserLine", "title": "Avatars", "description": "Photos de profil carrées et rondes en différentes tailles." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Comment recadrer une image",
+      "html": "<p class=\"text-mid\">Après avoir défini les dimensions cibles, une zone de recadrage interactive apparaît dans l'aperçu. La partie lumineuse de l'image est la section qui sera enregistrée ; le reste est assombri.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Déplacer le recadrage</p><p class=\"text-mid mt-1\">Saisissez la zone lumineuse et faites-la glisser n'importe où sur l'image. Vous choisissez ainsi quelle section de la photo sera exportée.</p></div><div><p class=\"text-dark font-semibold\">Redimensionner via les poignées</p><p class=\"text-mid mt-1\">Aux coins de la zone de recadrage se trouvent de petits carrés (poignées). Les faire glisser modifie la taille du recadrage : vous pouvez l'agrandir ou le réduire tout en conservant les proportions choisies.</p></div><div><p class=\"text-dark font-semibold\">Zoom</p><p class=\"text-mid mt-1\">Dans l'onglet <strong>Zoom</strong>, un curseur permet d'ajuster le zoom (100-300 %). Une valeur plus élevée signifie que le recadrage couvre une section plus petite de l'image originale, utile pour recadrer un détail précis.</p></div><div><p class=\"text-dark font-semibold\">Contrôle de position précis</p><p class=\"text-mid mt-1\">Dans l'onglet <strong>Position</strong>, vous pouvez définir la position exacte du recadrage en pourcentages (0-100 % pour les axes X et Y). Les boutons de centrage permettent de positionner rapidement le recadrage au centre de l'image.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Formes de recadrage",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\">Rectangle</span><span class=\"inline-flex items-center rounded-full bg-blue-100 px-3 py-1.5 text-sm font-medium text-blue-800\">Carré</span><span class=\"inline-flex items-center rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\">Cercle</span></div></div>",
+      "html": "<p class=\"text-mid\">Dans l'onglet <strong>Formes de recadrage</strong>, choisissez la forme de l'image exportée : rectangle (avec les proportions sélectionnées), carré (force 1:1) ou cercle (avec fond transparent).</p><p class=\"text-mid mt-3\">La forme cercle crée un avatar rond avec un fond transparent en dehors du cercle. L'outil bascule automatiquement le format en PNG ou WebP, car le JPG ne prend pas en charge la transparence.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Grille 3x3 : à quoi sert-elle ?",
+      "html": "<p class=\"text-mid\">Une grille divisant l'image en 9 parties égales est visible dans la zone de recadrage. C'est une visualisation de la <strong>règle des tiers</strong>, l'un des principes fondamentaux de la composition photographique.</p><p class=\"text-mid mt-3\">La règle stipule que les éléments les plus importants d'une photo (visage, produit, point d'intérêt) doivent être placés aux intersections des lignes de la grille ou le long de celles-ci. Cette composition est plus dynamique et agréable à l'oeil que de placer le sujet exactement au centre.</p><p class=\"text-mid mt-3\">Dans l'onglet <strong>Couleur de grille</strong>, vous pouvez changer la couleur des lignes (vert, blanc, noir, rouge, jaune) pour que la grille soit clairement visible sur différentes images.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTabs",
+      "title": "Exportation : quel format choisir ?",
+      "tabs": [
+        {
+          "title": "JPG",
+          "icon": "RiImageLine",
+          "html": "<p class=\"text-mid mb-3\">Le format le plus populaire pour les photos. Bonne compression tout en conservant la qualité visuelle. Ne prend pas en charge la transparence : le fond sera toujours rempli d'une couleur.</p><p class=\"text-mid\">Un bon choix pour les photos de produits, portraits et la plupart des visuels de sites web. Le curseur de qualité (60-100 %) contrôle la compression.</p>"
+        },
+        {
+          "title": "PNG",
+          "icon": "RiFileImageLine",
+          "html": "<p class=\"text-mid mb-3\">Format sans perte : préserve la qualité complète, mais les fichiers sont plus volumineux. Prend en charge la transparence (nécessaire pour la forme cercle).</p><p class=\"text-mid\">Un bon choix pour les visuels avec texte, icônes et images nécessitant des bords nets.</p>"
+        },
+        {
+          "title": "WebP",
+          "icon": "RiCropLine",
+          "html": "<p class=\"text-mid mb-3\">Format moderne combinant les avantages du JPG et du PNG : fichiers légers, bonne qualité, prise en charge de la transparence. Compatible avec tous les navigateurs modernes.</p><p class=\"text-mid\">Recommandé pour les sites web : des fichiers plus petits signifient un chargement plus rapide.</p>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Proportions d'image : que signifient-elles ?",
+      "description": "Le rapport d'aspect est la relation entre la largeur et la hauteur d'une image. Il s'écrit sous forme de deux nombres séparés par deux-points :",
+      "grid": "two",
+      "items": [
+        { "icon": "RiLayoutGridLine", "title": "1:1 (carré)", "description": "La largeur est égale à la hauteur. Publication carrée Instagram, photos de profil, icônes." },
+        { "icon": "RiAspectRatioLine", "title": "4:5 (vertical)", "description": "Format légèrement vertical. Publication verticale Instagram : occupe plus d'espace dans le feed qu'un carré." },
+        {
+          "icon": "RiImageLine",
+          "title": "3:2 (classique)",
+          "description": "Proportions traditionnelles de la photographie argentique. De nombreux appareils numériques utilisent également ce format."
+        },
+        { "icon": "RiCropLine", "title": "16:9 (panoramique)", "description": "Format standard de la vidéo HD, des présentations et des moniteurs. YouTube, vidéo Facebook, bannières de sites web." },
+        {
+          "icon": "RiInstagramLine",
+          "title": "9:16 (vertical plein écran)",
+          "description": "16:9 inversé : format vertical qui remplit tout l'écran du téléphone. Instagram Stories, TikTok, YouTube Shorts."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur l'éditeur d'images",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quels formats d'image sont pris en charge ?",
+          "answer": "Vous pouvez importer des images JPG, PNG et WebP. Le format de sortie (PNG, JPG ou WebP) est choisi lors du téléchargement. Pour les recadrages en forme de cercle, PNG ou WebP est recommandé, car JPG ne gère pas la transparence.",
+          "answerSchemaText": "Entrée : JPG, PNG, WebP. Sortie : PNG, JPG, WebP (au choix)."
+        },
+        {
+          "question": "Quels modèles de taille sont disponibles ?",
+          "answer": "Modèles pour Instagram (carré 1080x1080, portrait 1080x1350, story/reels 1080x1920), Facebook (publication 1200x630, couverture 820x360), LinkedIn (publication 1200x1200, bannière 1584x396), OG Image (1200x630), image d'article, bannière de site, section hero et plus.",
+          "answerSchemaText": "Instagram, Facebook, LinkedIn, OG Image, image d'article, bannière de site et autres."
+        },
+        {
+          "question": "Puis-je créer des avatars ronds ?",
+          "answer": "Oui. L'éditeur prend en charge trois formes de recadrage : rectangle, carré et cercle. En forme de cercle, l'image est enregistrée avec un fond transparent (PNG ou WebP). Idéal pour les photos de profil et les avatars.",
+          "answerSchemaText": "Oui. Trois formes : rectangle, carré, cercle. Cercle = fond transparent."
+        },
+        {
+          "question": "Mes images sont-elles envoyées à un serveur ?",
+          "answer": "Non. Tout le traitement s'effectue localement dans votre navigateur via l'API Canvas. Vos images ne quittent jamais votre ordinateur et ne sont stockées nulle part.",
+          "answerSchemaText": "Non. Traitement local dans le navigateur. Les images ne quittent pas votre appareil."
+        },
+        {
+          "question": "Puis-je régler la qualité de l'image de sortie ?",
+          "answer": "Oui. Pour les formats de sortie JPG et WebP, vous pouvez régler le niveau de qualité. Des valeurs plus basses donnent des fichiers plus légers, mais avec une légère perte de qualité visible. Le PNG est enregistré sans perte.",
+          "answerSchemaText": "Oui. Réglage de la qualité pour JPG et WebP. PNG est sans perte."
+        },
+        {
+          "question": "Que se passe-t-il si mon image est plus petite que le modèle ?",
+          "answer": "L'éditeur redimensionne l'image à la taille cible. Si l'image originale est nettement plus petite que le modèle, le résultat peut apparaître flou. Pour de meilleurs résultats, utilisez une image au moins aussi grande que le modèle.",
+          "answerSchemaText": "L'image est redimensionnée. Pour une meilleure qualité, l'original doit être au moins aussi grand que le modèle."
+        },
+        {
+          "question": "Pourquoi le format JPG n'est-il pas disponible avec la forme cercle ?",
+          "answer": "Le format JPG ne prend pas en charge la transparence. La forme cercle nécessite un fond transparent en dehors du cercle, c'est pourquoi l'outil limite automatiquement le choix à PNG ou WebP – des formats avec canal alpha.",
+          "answerSchemaText": "JPG ne prend pas en charge la transparence. La forme cercle nécessite PNG ou WebP."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Découvrir d'autres outils" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

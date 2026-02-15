@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "mainNavigation": "Hauptnavigation",
+    "logoAlt": "Arteon - Firmenlogo",
+    "closeMenu": "Menü schließen",
+    "openMenu": "Menü öffnen",
+    "closeToolsList": "Werkzeugliste schließen",
+    "openToolsList": "Werkzeugliste öffnen",
+    "toolsLabel": "Werkzeuge",
+    "mobileMenu": "Mobiles Menü",
+    "aboutLabel": "Über uns",
+    "contactLabel": "Kontakt"
+  },
+  "footer": {
+    "copyright": "Alle Rechte vorbehalten.",
+    "description": "Kostenlose Online-Tools für Webentwickler, Designer und Marketer.",
+    "companyDataLabel": "Firmeninformationen",
+    "toolsLabel": "Werkzeuge",
+    "legalLabel": "Rechtliche Dokumente",
+    "cookieSettingsLabel": "Cookie-Einstellungen"
+  },
+  "desktopOnly": {
+    "title": "Dieses Tool funktioniert auf einem größeren Bildschirm",
+    "description": "Um dieses Tool komfortabel zu nutzen, öffnen Sie es auf einem Laptop, Desktop-Computer oder Tablet im Querformat.",
+    "tipTitle": "Tipp",
+    "tipText": "Falls Sie ein Tablet nutzen, drehen Sie es ins Querformat - sobald die Fensterbreite ausreicht, lädt das Tool automatisch."
+  },
+  "cookie": {
+    "title": "Cookies und Datenschutz",
+    "description": "Wir verwenden Cookies für den Betrieb der Website, Analysen und Werbung. Mehr dazu in unserer",
+    "setPreferences": "Einstellungen anpassen",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "privacyPolicyHref": "/de/datenschutzrichtlinie",
+    "reject": "Alle ablehnen",
+    "settings": "Einstellungen",
+    "accept": "Alle akzeptieren",
+    "panelTitle": "Datenschutzeinstellungen",
+    "panelDescription": "Einstellungen zur Datenverarbeitung.",
+    "categoriesLegend": "Kategorien",
+    "essentialTitle": "Erforderlich",
+    "essentialDescription": "Ohne diese funktioniert die Website nicht. Sie sammeln keine Marketingdaten.",
+    "essentialStatus": "Immer aktiv",
+    "analyticsTitle": "Analyse (GA4)",
+    "analyticsDescription": "Besuchsstatistiken. Aktiviert Google Analytics 4 mit Ihrer Zustimmung.",
+    "analyticsLabel": "GA4-Analyse aktivieren",
+    "adsTitle": "Werbung (Google AdSense)",
+    "adsDescription": "Personalisierte Werbung basierend auf Ihren Interessen.",
+    "adsLabel": "Personalisierte Werbung aktivieren",
+    "changeDecision": "Sie können Ihre Entscheidung jederzeit ändern",
+    "save": "Speichern"
+  },
+  "skipToContent": "Zum Inhalt springen",
+  "legal": [{ "key": "privacy", "href": "/de/datenschutzrichtlinie", "label": "Datenschutzrichtlinie" }]
+}

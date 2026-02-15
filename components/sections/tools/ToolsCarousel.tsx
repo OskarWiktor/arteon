@@ -109,6 +109,22 @@ const ui = {
       tools: '/pt/ferramentas',
     },
   },
+  it: {
+    defaultTitle: 'Strumenti online gratuiti',
+    seeAllTools: 'Vedi tutti gli strumenti',
+    carouselLabel: 'Carosello degli strumenti',
+    scrollLeft: 'Scorri a sinistra',
+    scrollRight: 'Scorri a destra',
+    carouselNavigation: 'Navigazione del carosello',
+    goToSlide: 'Vai alla diapositiva',
+    of: 'di',
+    slide: 'Diapositiva',
+    tool: 'Strumento',
+    openTool: 'Apri strumento',
+    urls: {
+      tools: '/it/strumenti',
+    },
+  },
 } as const satisfies Record<Locale, unknown>;
 
 type Props = {

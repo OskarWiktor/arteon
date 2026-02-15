@@ -4,9 +4,8 @@ import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import ArticlesList from '@/components/sections/blog/ArticlesList';
 import FilterBar from '@/components/sections/blog/FilterBar';
-import { getAllArticles, getCategoriesWithCount, getPrimaryCategorySlug } from '@/lib/blogDataService';
-
-const siteUrl = 'https://www.arteonagency.pl';
+import { getAllArticlePreviews, getCategoriesWithCount, getPrimaryCategorySlug } from '@/lib/blogDataService';
+import { siteUrl } from '@/utils/absoluteUrl';
 
 export const metadata: Metadata = {
   title: 'Edukacja - poradniki i wiedza | Arteon',
@@ -36,7 +35,7 @@ const schema = {
     '@type': 'ItemList',
     '@id': `${siteUrl}/edukacja#itemlist`,
     itemListOrder: 'https://schema.org/ItemListOrderAscending',
-    itemListElement: getAllArticles().map((a, i) => ({
+    itemListElement: getAllArticlePreviews().map((a, i) => ({
       '@type': 'ListItem',
       position: i + 1,
       url: `${siteUrl}/edukacja/${getPrimaryCategorySlug(a)}/${a.slug}`,

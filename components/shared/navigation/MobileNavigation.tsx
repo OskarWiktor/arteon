@@ -23,9 +23,9 @@ import { NavArrowDownSLine as RiArrowDownSLine } from '@/components/ui/icons/Nav
 // NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile media społecznościowe będą gotowe
 // import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 
-const closeLabel: Record<Locale, string> = { pl: 'Zamknij', en: 'Close', de: 'Schließen', es: 'Cerrar', fr: 'Fermer', pt: 'Fechar' };
-const servicesLabel: Record<Locale, string> = { pl: 'Usługi', en: 'Services', de: 'Dienstleistungen', es: 'Servicios', fr: 'Services', pt: 'Serviços' };
-const contactLabel: Record<Locale, string> = { pl: 'Skontaktuj się', en: 'Contact', de: 'Kontakt', es: 'Contacto', fr: 'Contact', pt: 'Contacto' };
+const closeLabel: Record<Locale, string> = { pl: 'Zamknij', en: 'Close', de: 'Schließen', es: 'Cerrar', fr: 'Fermer', pt: 'Fechar', it: 'Chiudi' };
+const servicesLabel: Record<Locale, string> = { pl: 'Usługi', en: 'Services', de: 'Dienstleistungen', es: 'Servicios', fr: 'Services', pt: 'Serviços', it: 'Servizi' };
+const contactLabel: Record<Locale, string> = { pl: 'Skontaktuj się', en: 'Contact', de: 'Kontakt', es: 'Contacto', fr: 'Contact', pt: 'Contacto', it: 'Contatto' };
 
 type SectionLink = { href: string; title: string; icon?: JSX.Element };
 type Section = {
@@ -587,7 +587,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
 
           <div className="mt-auto border-t border-neutral-200 pt-3">
             <div className="flex items-center justify-between">
-              <LanguageSwitcher />
+              <LanguageSwitcher openUp />
               {isPl && (
                 <Link
                   href={contactHref}

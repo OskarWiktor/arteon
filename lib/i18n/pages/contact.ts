@@ -156,6 +156,36 @@ const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
     },
   },
 
+  it: {
+    slug: 'contatto',
+    metadata: {
+      title: 'Contatto – Arteon strumenti online gratuiti | Supporto e suggerimenti',
+      description:
+        'Contatta il team Arteon. Segnala un bug, suggerisci un nuovo strumento o fai una domanda sui nostri strumenti gratuiti per immagini, SEO, colori e codici QR. Rispondiamo entro un giorno lavorativo.',
+    },
+    hero: {
+      title: 'Contatta il team Arteon',
+      description: 'Segnala un bug, suggerisci un nuovo strumento o fai una domanda \u2014 rispondiamo entro un giorno lavorativo',
+    },
+    intro: {
+      title: 'Hai una domanda o un suggerimento?',
+      textBefore: 'Siamo felici di ricevere il tuo feedback sui nostri strumenti. Se hai trovato un bug, hai un\u2019idea per un nuovo strumento o hai bisogno di aiuto \u2014 scrivici a',
+      textAfter: '. Rispondiamo entro un giorno lavorativo.',
+    },
+    formTitle: 'Inviaci un messaggio',
+    details: {
+      title: 'Dati di contatto',
+      emailLabel: 'E-mail',
+      hoursLabel: 'Orari',
+      hoursValue: 'Luned\u00ec \u2013 Venerd\u00ec: 8:00 \u2013 16:00 (CET)',
+    },
+    cta: {
+      title: 'Torna agli strumenti',
+      description: '10 strumenti online gratuiti per lavorare con immagini, testo e colori',
+      btnOne: 'Strumenti',
+    },
+  },
+
   pt: {
     slug: 'contacto',
     metadata: {

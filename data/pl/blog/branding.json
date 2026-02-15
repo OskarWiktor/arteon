@@ -1,0 +1,134 @@
+{
+  "articles": [
+    {
+      "slug": "jak-przygotowac-profesjonalna-stopke-mailowa",
+      "title": "Jak przygotować profesjonalną stopkę mailową?",
+      "excerpt": "Stopka mailowa to wizytówka w każdym e-mailu. Wyjaśniamy, co powinna zawierać, jakich błędów unikać i jak stworzyć podpis za pomocą generatora.",
+      "primaryCategory": "Branding",
+      "category": ["Grafika"],
+      "tags": ["stopka mailowa", "podpis e-mail", "email signature", "branding", "identyfikacja wizualna", "gmail", "outlook", "profesjonalny e-mail", "komunikacja firmowa"],
+      "seo": {
+        "title": "Jak przygotować profesjonalną stopkę mailową? - Arteon",
+        "description": "Firmowa stopka e-mail powinna zawierać dane kontaktowe i wyglądać profesjonalnie. Wyjaśniamy kluczowe elementy i typowe błędy.",
+        "canonical": "https://www.arteonagency.pl/edukacja/branding/jak-przygotowac-profesjonalna-stopke-mailowa"
+      },
+      "cover": "/assets/blog/jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy/jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy.webp",
+      "author": {
+        "name": "Arteon"
+      },
+      "datePublished": "2025-12-19",
+      "dateModified": "2026-02-09",
+      "readingTime": 10,
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<p>Wysyłasz e-mail do potencjalnego klienta. Piszesz świetną wiadomość, ale na końcu widnieje tylko Twoje imię. Odbiorca nie wie, kim jesteś, czym się zajmujesz ani jak się z Tobą skontaktować w inny sposób.</p><br/><p>Właśnie dlatego <strong>stopka mailowa</strong> (nazywana też podpisem e-mail lub po angielsku email signature) jest tak ważna. To taki mały blok informacji na końcu każdego e-maila, który mówi: cześć, jestem taki i taki, pracuję w takiej firmie, a tutaj masz moje dane kontaktowe.</p><br/><p>W tym poradniku pokażemy Ci:</p><br/><ul class='list-disc ml-5'><li>co powinna zawierać dobra stopka,</li><li>jakie błędy najczęściej popełniają firmy,</li><li>jak stworzyć swoją stopkę w kilka minut (za darmo!).</li></ul><br/><p>Nie musisz znać się na kodowaniu ani projektowaniu. Wszystko wyjaśnimy prostym językiem.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co to jest stopka mailowa i dlaczego warto ją mieć?</h2><p>Stopka mailowa to krótki blok tekstu (czasem z grafiką), który automatycznie pojawia się na końcu każdego e-maila, którego wysyłasz.</p><br/><p>Kiedy spotykasz kogoś na spotkaniu biznesowym, dajesz mu wizytówkę. W świecie e-maili rolę wizytówki pełni właśnie stopka.</p><br/><p><strong>Dlaczego to ważne?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Wyglądasz profesjonalnie</strong> - e-mail z dobrą stopką budzi większe zaufanie niż e-mail zakończony samym imieniem.</li><li><strong>Ułatwiasz kontakt</strong> - odbiorca od razu widzi Twój telefon, adres strony czy link do profilu LinkedIn.</li><li><strong>Budujesz rozpoznawalność marki</strong> - jeśli każdy pracownik firmy ma taką samą, spójną stopkę, firma wygląda na dobrze zorganizowaną.</li><li><strong>Oszczędzasz czas</strong> - nie musisz za każdym razem ręcznie wpisywać swoich danych.</li></ul>",
+          "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335"
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co powinna zawierać dobra stopka mailowa?</h2><p>Dobra stopka to taka, która daje odbiorcy wszystkie potrzebne informacje, ale nie przytłacza go ścianą tekstu. Oto elementy, które warto uwzględnić:</p><br/><h3 class='h5 mb-3 mt-4'>Elementy obowiązkowe (minimum)</h3><ul class='list-disc ml-5'><li><strong>Imię i nazwisko</strong> - żeby odbiorca wiedział, z kim rozmawia.</li><li><strong>Stanowisko</strong> - np. Specjalista ds. marketingu lub Właściciel. Dzięki temu odbiorca wie, jaką rolę pełnisz w firmie.</li><li><strong>Nazwa firmy</strong> - nawet jeśli piszesz z firmowego adresu, warto to powtórzyć.</li><li><strong>Telefon</strong> - bezpośredni numer, pod którym można Cię złapać.</li><li><strong>Adres e-mail</strong> - tak, wiem, że odbiorca już go ma (bo właśnie dostał od Ciebie e-mail), ale warto go powtórzyć dla wygody kopiowania.</li></ul><br/><h3 class='h5 mb-3 mt-4'>Elementy dodatkowe (warto rozważyć)</h3><ul class='list-disc ml-5'><li><strong>Adres strony internetowej</strong> - link do Twojej strony firmowej.</li><li><strong>Adres siedziby</strong> - szczególnie ważne dla firm lokalnych lub tych, które przyjmują klientów w biurze.</li><li><strong>Linki do mediów społecznościowych</strong> - LinkedIn, Facebook, Instagram - ale tylko te, które faktycznie prowadzisz i aktualizujesz.</li><li><strong>Logo firmy</strong> - małe logo wzmacnia rozpoznawalność marki.</li><li><strong>Przycisk CTA</strong> - czyli wezwanie do działania. Może to być przycisk Umów spotkanie lub Zobacz naszą ofertę. CTA to skrót od angielskiego Call To Action - dosłownie wezwanie do działania.</li></ul>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Czego unikać? Najczęstsze błędy w stopkach mailowych</h2><p>Widzieliśmy setki stopek firmowych i zauważyliśmy, że pewne błędy powtarzają się bardzo często. Oto one:</p><br/><h3 class='h5 mb-3 mt-4'>1. Za dużo informacji</h3><p>Stopka, która ma 15 linijek tekstu i 6 różnych linków, przytłacza odbiorcę. Nikt tego nie przeczyta. Lepiej mniej, ale konkretnie.</p><br/><h3 class='h5 mb-3 mt-4'>2. Nieaktualne dane</h3><p>Stary numer telefonu, nieistniejący adres strony lub stanowisko sprzed trzech lat. Regularnie sprawdzaj, czy Twoja stopka jest aktualna.</p><br/><h3 class='h5 mb-3 mt-4'>3. Brak spójności w firmie</h3><p>Każdy pracownik ma inną stopkę - różne fonty, kolory, układy. To wygląda nieprofesjonalnie. Warto ustalić jeden wzór dla całej firmy.</p><br/><h3 class='h5 mb-3 mt-4'>4. Za duże obrazki lub logo</h3><p>Ogromne logo, które waży 500KB, może powodować problemy z dostarczaniem e-maili i spowalniać ich ładowanie. Logo powinno być małe i lekkie.</p><br/><h3 class='h5 mb-3 mt-4'>5. Długie cytaty i sentencje</h3><p>Sukces to podróż, nie cel końcowy... - takie cytaty zajmują miejsce i odwracają uwagę od tego, co naprawdę ważne.</p><br/><h3 class='h5 mb-3 mt-4'>6. Brak formatowania</h3><p>Wszystko w jednej linijce, bez podziału na sekcje. Trudno się w tym połapać. Dobra stopka jest czytelna i uporządkowana.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak stworzyć stopkę mailową? Przewodnik krok po kroku</h2><p>Masz dwie opcje:</p><br/><p><strong>Opcja 1: Zrobić samemu w HTML</strong> - wymaga znajomości kodu i dużo czasu. Nie polecamy, chyba że lubisz się bawić w programowanie.</p><br/><p><strong>Opcja 2: Użyć naszego darmowego generatora</strong> - wpisujesz dane, wybierasz styl, dostajesz gotową stopkę do wklejenia. Zajmuje to dosłownie kilka minut.</p><br/><p>Pokażemy Ci, jak korzystać z naszego narzędzia. Jest naprawdę proste.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Instrukcja: jak stworzyć stopkę w generatorze Arteon</h2><p>Nasz <a class='inline-link' href='/narzedzia/darmowy-generator-stopki-mailowej'>darmowy generator stopki mailowej</a> działa w przeglądarce. Nie musisz niczego instalować ani zakładać konta.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 1: Otwórz generator</h3><p>Wejdź na stronę <a class='inline-link' href='/narzedzia/darmowy-generator-stopki-mailowej'>Generator stopki mailowej</a>. Zobaczysz edytor po lewej stronie i podgląd stopki po prawej.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 2: Wypełnij swoje dane</h3><p>W sekcji Dane wpisz:</p><ul class='list-disc ml-5'><li>Imię i nazwisko</li><li>Stanowisko</li><li>Nazwę firmy</li><li>Telefon</li><li>E-mail</li><li>Adres strony (jeśli masz)</li><li>Adres siedziby (opcjonalnie)</li></ul><br/><p>Na bieżąco widzisz, jak Twoja stopka wygląda w podglądzie po prawej stronie.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 3: Dodaj linki społecznościowe (opcjonalnie)</h3><p>W sekcji Social możesz wkleić linki do swoich profili: LinkedIn, Facebook, Instagram, YouTube, TikTok lub X (dawny Twitter). Pojawią się jako małe ikonki w stopce.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 4: Wybierz wygląd</h3><p>W sekcji Wygląd możesz:</p><ul class='list-disc ml-5'><li>Wybrać układ stopki (klasyczny, z paskiem akcentu, wyśrodkowany itp.)</li><li>Zmienić kolory (kolor akcentu, kolor tekstu)</li><li>Wybrać font i rozmiar tekstu</li><li>Włączyć lub wyłączyć separator (linia oddzielająca stopkę od treści e-maila)</li></ul><br/><h3 class='h5 mb-3 mt-4'>Krok 5: Dodaj przycisk CTA (opcjonalnie)</h3><p>W sekcji CTA możesz dodać przycisk z tekstem (np. Umów spotkanie) i linkiem. Przycisk pojawi się w stopce i będzie klikalny.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 6: Skopiuj stopkę</h3><p>Kiedy stopka wygląda tak, jak chcesz, kliknij przycisk Skopiuj stopkę. Stopka zostanie skopiowana do schowka (czyli do pamięci komputera) i będziesz mógł ją wkleić do swojego programu pocztowego.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335"
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak wkleić stopkę do Gmail?</h2><p>Gmail to jeden z najpopularniejszych programów do e-maili. Oto jak dodać do niego stopkę:</p><br/><p><strong>Krok 1:</strong> Otwórz Gmail i kliknij ikonę zębatki (ustawienia) w prawym górnym rogu.</p><br/><p><strong>Krok 2:</strong> Wybierz Zobacz wszystkie ustawienia.</p><br/><p><strong>Krok 3:</strong> W zakładce Ogólne przewiń w dół do sekcji Podpis.</p><br/><p><strong>Krok 4:</strong> Kliknij Utwórz nowy i nadaj mu nazwę (np. Podpis firmowy).</p><br/><p><strong>Krok 5:</strong> W polu tekstowym wklej skopiowaną stopkę (Ctrl+V na Windows lub Cmd+V na Mac).</p><br/><p><strong>Krok 6:</strong> Przewiń na sam dół strony i kliknij Zapisz zmiany.</p><br/><p>Od teraz Twoja stopka będzie automatycznie pojawiać się w każdym nowym e-mailu!</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak wkleić stopkę do Outlook?</h2><p>Outlook (zarówno wersja desktopowa, jak i webowa) również pozwala na dodanie stopki. Oto jak to zrobić:</p><br/><h3 class='h5 mb-3 mt-4'>Outlook w przeglądarce (Outlook.com)</h3><p><strong>Krok 1:</strong> Kliknij ikonę zębatki w prawym górnym rogu i wybierz Wyświetl wszystkie ustawienia programu Outlook.</p><br/><p><strong>Krok 2:</strong> Przejdź do: Poczta → Redagowanie i odpowiadanie.</p><br/><p><strong>Krok 3:</strong> W sekcji Podpis e-mail wklej skopiowaną stopkę.</p><br/><p><strong>Krok 4:</strong> Kliknij Zapisz.</p><br/><h3 class='h5 mb-3 mt-4'>Outlook na komputerze (wersja desktopowa)</h3><p><strong>Krok 1:</strong> Kliknij Plik → Opcje → Poczta → Podpisy.</p><br/><p><strong>Krok 2:</strong> Kliknij Nowy i nadaj podpisowi nazwę.</p><br/><p><strong>Krok 3:</strong> W polu edycji wklej skopiowaną stopkę.</p><br/><p><strong>Krok 4:</strong> Kliknij OK.</p><br/><p>Gotowe! Twoja stopka jest ustawiona.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Kilka wskazówek na koniec</h2><ul class='list-disc ml-5'><li><strong>Testuj przed wysłaniem</strong> - wyślij e-mail do siebie i sprawdź, czy stopka wygląda dobrze na komputerze i telefonie.</li><li><strong>Aktualizuj regularnie</strong> - zmienił się numer telefonu? Awansowałeś? Zaktualizuj stopkę.</li><li><strong>Ustal jeden wzór dla firmy</strong> - jeśli masz pracowników, zadbaj o to, żeby wszyscy używali takiego samego stylu stopki. To buduje spójny wizerunek.</li><li><strong>Nie dodawaj załączników do stopki</strong> - obrazki powinny być linkowane z serwera (tzw. URL), a nie wklejane jako załączniki. Nasz generator robi to automatycznie, jeśli podasz link do swojego logo.</li></ul>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Stopka mailowa a identyfikacja wizualna firmy</h2><p>Stopka mailowa to jeden z elementów <a class='inline-link' href='/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow'>identyfikacji wizualnej firmy</a>. Powinna być spójna z pozostałymi materiałami - wizytówkami, stroną internetową, profilami w mediach społecznościowych i materiałami drukowanymi.</p><br/><p><strong>Kolory i fonty</strong></p><br/><p>Użyj w stopce tych samych kolorów, co na <a class='inline-link' href='/uslugi/strony-internetowe'>stronie internetowej</a> i w materiałach firmowych. Jeśli główny kolor marki to granatowy - akcenty w stopce też powinny być granatowe. To buduje podświadomą rozpoznawalność. Jeśli nie masz jeszcze zdefiniowanych kolorów marki, pomocne mogą być narzędzia do <a class='inline-link' href='/narzedzia/generator-palet-kolorow'>generowania palet kolorów</a> lub <a class='inline-link' href='/narzedzia/ekstraktor-kolorow-z-obrazu'>ekstrakcji kolorów z istniejących materiałów</a>.</p><br/><p><strong>Logo w stopce</strong></p><br/><p>Logo w stopce powinno być takie samo jak na stronie i wizytówkach. Zalecany rozmiar to 100-150 pikseli szerokości. Większe logo przytłacza treść e-maila i może powodować problemy z wyświetlaniem w niektórych klientach pocztowych.</p><br/><p><strong>Spójność w całej firmie</strong></p><br/><p>W firmie z kilkoma pracownikami każda osoba powinna używać tego samego szablonu stopki - z tymi samymi kolorami, fontem i układem. Różnić się powinny tylko dane osobowe (imię, stanowisko, telefon). Jednolite stopki wzmacniają profesjonalny wizerunek firmy przy każdym wysłanym e-mailu.</p><br/><p><strong>Stopka jako narzędzie marketingowe</strong></p><br/><p>Stopka mailowa to jedno z najczęściej oglądanych miejsc w komunikacji firmowej. Średni pracownik biurowy wysyła kilkadziesiąt e-maili dziennie - każdy z nich to okazja do promowania firmy. Dobrze zaprojektowany przycisk CTA w stopce (np. Zobacz naszą ofertę lub Umów bezpłatną konsultację) może generować wartościowy ruch na stronie. Warto też rozważyć umieszczenie w stopce <a class='inline-link' href='/edukacja/grafika/kody-qr-w-materialach-reklamowych'>kodu QR</a> z wizytówką vCard, żeby odbiorca mógł szybko zapisać dane kontaktowe.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335"
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Stopka mailowa na różnych urządzeniach i w różnych programach</h2><p>Jeden z najczęstszych problemów ze stopkami mailowymi to różnice w wyświetlaniu między programami pocztowymi. To, co wygląda świetnie w Gmail na komputerze, może wyglądać zupełnie inaczej w Outlook na telefonie.</p><br/><p><strong>Dlaczego stopka wygląda inaczej w różnych programach?</strong></p><br/><p>Każdy program pocztowy (Gmail, Outlook, Apple Mail, Thunderbird) interpretuje kod HTML stopki na swój sposób. Niektóre usuwają style CSS, inne nie obsługują określonych elementów. To podobny problem jak z wyświetlaniem stron internetowych w różnych przeglądarkach.</p><br/><p><strong>Jak zminimalizować różnice?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Używaj prostego układu</strong> - im prostsza struktura stopki, tym lepiej wyświetla się wszędzie. Unikaj skomplikowanych tabel wielokolumnowych.</li><li><strong>Testuj na telefonie</strong> - ponad połowa e-maili jest otwierana na urządzeniach mobilnych. Wyślij testowy e-mail do siebie i sprawdź, jak stopka wygląda na ekranie telefonu.</li><li><strong>Ogranicz szerokość</strong> - stopka powinna mieć maksymalnie 600 pikseli szerokości. Szersza stopka może wymagać przewijania w poziomie na telefonie.</li><li><strong>Unikaj zbyt wielu obrazków</strong> - niektóre programy pocztowe domyślnie blokują obrazki. Upewnij się, że stopka jest czytelna nawet bez załadowanych grafik.</li><li><strong>Nie używaj fontów webowych</strong> - programy pocztowe nie ładują zewnętrznych fontów. Używaj bezpiecznych fontów systemowych: Arial, Helvetica, Georgia, Verdana.</li></ul><br/><p><strong>Stopka w wątkach e-mailowych</strong></p><br/><p>W długich wątkach e-mailowych (gdy odpisujesz kilka razy) stopka pojawia się przy każdej odpowiedzi. Zbyt rozbudowana stopka sprawia, że wątek staje się bardzo długi. Niektóre firmy stosują skróconą wersję stopki dla odpowiedzi (np. tylko imię, nazwisko i telefon) i pełną wersję dla nowych wiadomości. Gmail i Outlook umożliwiają ustawienie osobnych podpisów dla nowych wiadomości i odpowiedzi.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Podsumowanie</h2><p>Stopka mailowa to mały element, który robi dużą różnicę. Dzięki niej:</p><br/><ul class='list-disc ml-5'><li>wyglądasz profesjonalnie,</li><li>ułatwiasz kontakt,</li><li>budujesz rozpoznawalność marki,</li><li>oszczędzasz czas.</li></ul><br/><p>Stworzenie dobrej stopki nie musi być trudne ani czasochłonne. Nasz <a class='inline-link' href='/narzedzia/darmowy-generator-stopki-mailowej'>darmowy generator stopki mailowej</a> pozwala zrobić to w kilka minut - bez znajomości kodu, bez płacenia, bez zakładania konta.</p><br/><p>Wypróbuj i zobacz, jak łatwo to działa.</p>",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Stwórz swoją stopkę mailową w kilka minut",
+        "description": "Skorzystaj z naszego darmowego generatora. Wpisz dane, wybierz styl, skopiuj i wklej do Gmail lub Outlook. To naprawdę takie proste.",
+        "btnOne": "Otwórz generator stopki",
+        "btnOneLink": "/narzedzia/darmowy-generator-stopki-mailowej",
+        "btnTwo": "Zobacz ofertę identyfikacji wizualnej",
+        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
+        "backgroundImage": "/assets/blog/jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy/jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy.webp",
+        "overlay": "black"
+      },
+      "faq": [
+        {
+          "question": "Czy stopka mailowa jest obowiązkowa?",
+          "answer": "Prawnie nie jest obowiązkowa dla wszystkich firm, ale w praktyce bardzo warto ją mieć. W niektórych krajach i branżach (np. w Niemczech) firmy muszą umieszczać w e-mailach określone informacje prawne. Nawet jeśli prawo tego nie wymaga, profesjonalna stopka buduje zaufanie i ułatwia kontakt."
+        },
+        {
+          "question": "Czy mogę dodać logo do stopki?",
+          "answer": "Tak, możesz. W naszym generatorze podaj link do logo (adres URL obrazka w internecie). Logo powinno być małe - zalecamy rozmiar około 100-150 pikseli szerokości. Zbyt duże logo może powodować problemy z wyświetlaniem w niektórych programach pocztowych."
+        },
+        {
+          "question": "Dlaczego moja stopka wygląda inaczej w różnych programach pocztowych?",
+          "answer": "Każdy program pocztowy (Gmail, Outlook, Apple Mail) interpretuje kod HTML trochę inaczej. Dlatego stopka może wyglądać nieco inaczej w różnych programach. Nasz generator tworzy stopki w sposób maksymalnie kompatybilny, ale drobne różnice są normalne. Warto wysłać e-mail testowy do siebie i sprawdzić, jak stopka wygląda w praktyce."
+        },
+        {
+          "question": "Czy mogę mieć różne stopki dla różnych celów?",
+          "answer": "Tak, zarówno Gmail, jak i Outlook pozwalają na tworzenie wielu podpisów. Możesz mieć jeden formalny (do klientów) i jeden mniej formalny (do znajomych). Przy tworzeniu nowego e-maila wybierasz, którego podpisu chcesz użyć."
+        },
+        {
+          "question": "Jak często powinienem aktualizować stopkę?",
+          "answer": "Zawsze, gdy zmienia się coś istotnego: numer telefonu, stanowisko, adres firmy, strona internetowa. Warto też raz na kilka miesięcy sprawdzić, czy wszystkie linki działają i czy dane są aktualne."
+        },
+        {
+          "question": "Czy generator Arteon jest naprawdę darmowy?",
+          "answer": "Tak, nasz generator stopki mailowej jest całkowicie darmowy. Nie ma limitów, nie trzeba zakładać konta, nie ma ukrytych opłat. Tworzysz stopkę, kopiujesz i używasz - bez żadnych zobowiązań."
+        }
+      ]
+    }
+  ]
+}

@@ -20,8 +20,7 @@ import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import { getAllArticlePreviews } from '@/lib/blogDataService';
-
-const BASE = 'https://www.arteonagency.pl';
+import { siteUrl } from '@/utils/absoluteUrl';
 
 export const metadata = {
   title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
@@ -30,24 +29,23 @@ export const metadata = {
   openGraph: {
     title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
     description: 'Przeprowadź audyt SEO swojej witryny - przygotujemy plan, który sprawi, że Twoja witryna znajdzie się wyżej w wynikach wyszukiwarki Google.',
-    url: `${BASE}/uslugi/marketing/audyt-seo`,
+    url: `${siteUrl}/uslugi/marketing/audyt-seo`,
     siteName: 'Arteon',
     type: 'website',
-    images: [{ url: `${BASE}/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp`, width: 1200, height: 630 }],
-    //images: [{ url: `${BASE}/assets/og/audyt-seo.webp`, width: 1200, height: 630, alt: 'Audyt SEO - Arteon' }],
+    images: [{ url: `${siteUrl}/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp`, width: 1200, height: 630 }],
+    //images: [{ url: `${siteUrl}/assets/og/audyt-seo.webp`, width: 1200, height: 630, alt: 'Audyt SEO - Arteon' }],
   },
   //twitter: {
   //  card: 'summary_large_image',
   //  title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
   //  description:
   //    'Przeprowadź audyt SEO swojej witryny i sprawdź, co zrobić, aby wyświetlać się wyżej w Google.',
-  //  images: [`${BASE}/assets/og/audyt-seo.webp`],
+  //  images: [`${siteUrl}/assets/og/audyt-seo.webp`],
   //},
 } as const;
 
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/marketing/audyt-seo',
     serviceName: 'Audyt SEO',
     description: 'Audyt SEO dla stron i sklepów internetowych - analiza techniczna, treściowa i strukturalna strony z rekomendacjami działań.',

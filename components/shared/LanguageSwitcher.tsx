@@ -25,6 +25,7 @@ const switchTitle: Record<Locale, string> = {
   es: 'Cambiar a español',
   fr: 'Passer au français',
   pt: 'Mudar para português',
+  it: "Passa all'italiano",
 };
 
 const toggleLabel: Record<Locale, string> = {
@@ -34,6 +35,7 @@ const toggleLabel: Record<Locale, string> = {
   es: 'Cambiar idioma',
   fr: 'Changer de langue',
   pt: 'Alterar idioma',
+  it: 'Cambia lingua',
 };
 
 function getAlternateLinks(pathname: string, currentLocale: Locale): AlternateLink[] {
@@ -58,7 +60,7 @@ function getAlternateLinks(pathname: string, currentLocale: Locale): AlternateLi
   return links.sort((a, b) => a.label.localeCompare(b.label));
 }
 
-export default function LanguageSwitcher() {
+export default function LanguageSwitcher({ openUp = false }: { openUp?: boolean }) {
   const locale = useLocale();
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
@@ -93,7 +95,7 @@ export default function LanguageSwitcher() {
       </button>
 
       {isOpen && (
-        <div role="menu" className="absolute right-0 z-50 mt-1 min-w-[120px] rounded-lg border border-black/10 bg-white py-1 shadow-lg">
+        <div role="menu" className={`absolute right-0 z-50 min-w-[200px] rounded-lg border border-black/10 bg-white py-1 shadow-lg ${openUp ? 'bottom-full mb-1' : 'mt-1'}`}>
           {/* Current language */}
           <span role="menuitem" aria-current="true" className="flex w-full items-center gap-2 px-3 py-1.5 text-sm font-bold">
             {currentConfig.label} - {currentConfig.name}

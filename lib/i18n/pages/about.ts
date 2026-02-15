@@ -297,6 +297,73 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
     },
   },
 
+  it: {
+    slug: 'chi-siamo',
+    metadata: {
+      title: 'Chi siamo – Arteon | 10 strumenti online gratuiti per web, SEO e design',
+      description:
+        'Arteon \u00e8 un\u2019agenzia creativa che sviluppa strumenti gratuiti nel browser: convertitore WebP, generatore di favicon, verificatore di contrasto, generatore di codici QR e altro. Senza registrazione, senza upload \u2014 tutto funziona localmente.',
+    },
+    hero: {
+      title: 'Strumenti online gratuiti creati da un\u2019agenzia creativa',
+      description: '10 strumenti nel browser per immagini, SEO, colori, firme e-mail e codici QR \u2014 senza registrazione, senza upload, senza limiti',
+    },
+    whoWeAre: {
+      title: 'Chi siamo',
+      p1: 'Arteon \u00e8 un\u2019agenzia creativa polacca. Oltre al nostro lavoro commerciale, sviluppiamo e manteniamo una collezione crescente di strumenti online gratuiti pensati per imprenditori, creatori di siti web, designer, specialisti di marketing e chiunque lavori con contenuti digitali.',
+      p2: 'Ogni strumento che creiamo risolve un problema specifico e quotidiano: convertire immagini, verificare il contrasto dei colori, generare favicon, creare codici QR e molto altro. Il nostro obiettivo \u00e8 costruire un toolkit completo dove trovare tutto ci\u00f2 di cui hai bisogno in un unico posto \u2014 senza navigare tra decine di siti diversi.',
+    },
+    whyFree: {
+      title: 'Perch\u00e9 offriamo strumenti gratuiti',
+      items: [
+        { title: 'Senza registrazione, senza limiti', description: 'Ogni strumento funziona istantaneamente nel browser. Nessun account, nessun login, nessun pagamento.' },
+        {
+          title: 'Privacy prima di tutto',
+          description: 'I tuoi file non lasciano mai il tuo dispositivo. Tutta l\u2019elaborazione avviene localmente nel browser \u2014 non inviamo i tuoi dati a nessun server.',
+        },
+        {
+          title: 'Creati da esigenze reali',
+          description: 'Ogni strumento \u00e8 nato da un problema reale che abbiamo incontrato lavorando su progetti per clienti. Se ne avevamo bisogno noi, probabilmente ne hai bisogno anche tu.',
+        },
+        {
+          title: 'Finanziati dalla pubblicit\u00e0, gratuiti per te',
+          description:
+            'Utilizziamo banner Google AdSense per coprire i costi di sviluppo e hosting. Grazie ai ricavi pubblicitari, possiamo mantenere tutti gli strumenti gratuiti e continuare a crearne di nuovi.',
+        },
+      ],
+    },
+    ourTools: {
+      title: 'I nostri strumenti',
+      items: [
+        { title: 'Immagini e favicon', description: 'Convertitore WebP, editor di immagini online e generatore di favicon. 3 strumenti per il lavoro quotidiano con le immagini.' },
+        { title: 'Meta e SEO', description: 'Verificatore di meta titolo e descrizione pi\u00f9 un contatore di parole e caratteri per valutare la lunghezza del testo.' },
+        { title: 'E-mail e comunicazione', description: 'Generatore di firma e-mail HTML con codice pronto per Gmail e Outlook.' },
+        {
+          title: 'Colori e accessibilit\u00e0',
+          description: 'Verificatore di contrasto WCAG, estrattore di colori da immagine e generatore di palette di colori. 3 strumenti per lavorare con i colori.',
+        },
+        { title: 'Stampa e materiali', description: 'Generatore di codici QR per siti web, vCard, menu e volantini. Esportazione in PNG e SVG.' },
+      ],
+    },
+    whatsNext: {
+      title: 'Cosa ci aspetta',
+      text: 'Stiamo lavorando attivamente per ampliare il toolkit. Nuovi strumenti vengono aggiunti regolarmente in base ai feedback degli utenti e alla nostra esperienza. L\u2019obiettivo \u00e8 una piattaforma unica dove imprenditori, designer e sviluppatori abbiano accesso a ogni strumento essenziale \u2014 tutto in un posto, tutto gratis.',
+    },
+    privacy: {
+      title: 'Privacy e sicurezza',
+      textBefore:
+        'Rispettiamo la tua privacy. I file che carichi nei nostri strumenti vengono elaborati esclusivamente nel tuo browser e non vengono mai inviati a nessun server. Utilizziamo analisi (Google Analytics 4) e pubblicit\u00e0 (Google AdSense) solo dopo il tuo consenso tramite il banner dei cookie. Tutti i dettagli sono disponibili nella nostra',
+      linkLabel: 'Informativa sulla privacy',
+      textAfter: '.',
+    },
+    cta: {
+      title: 'Prova i nostri strumenti',
+      description: '10 strumenti online gratuiti \u2014 senza registrazione, senza limiti, senza upload di file su server',
+      btnOne: 'Vai agli strumenti',
+      btnTwo: 'Contatto',
+    },
+  },
+
   pt: {
     slug: 'sobre-nos',
     metadata: {

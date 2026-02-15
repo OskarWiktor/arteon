@@ -1,4 +1,4 @@
-import type { HeaderNavItem, AboutNavItem, OfferSection, LegalLinkPL } from '@/types/navigation';
+import type { HeaderNavItem, AboutNavItem, OfferSection } from '@/types/navigation';
 import type { ToolsSection } from '@/types/tools/common';
 export type { HeaderNavItemKey, HeaderNavItem, AboutItemKey, AboutNavItem, OfferSectionKey, OfferItemKey, OfferSectionItem, OfferSection, LegalLinkKey } from '@/types/navigation';
 export type { ToolsSectionKey, ToolItemKey, ToolSectionItem, ToolsSection } from '@/types/tools/common';
@@ -264,11 +264,4 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
       },
     ],
   },
-];
-
-export type LegalLink = LegalLinkPL;
-
-export const LEGAL_LINKS_PL: LegalLinkPL[] = [
-  { key: 'regulamin', href: '/regulamin', label: 'Regulamin świadczenia usług' },
-  { key: 'privacy', href: '/polityka-prywatnosci', label: 'Polityka Prywatności' },
 ];

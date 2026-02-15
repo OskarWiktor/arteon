@@ -36,11 +36,8 @@ export const metadata = {
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
     serviceName: 'Projekt odzieży firmowej',
     description: 'Nadruki na odzież (T-shirt, bluza, polo) spójne z marką. Pliki produkcyjne dla sitodruku/DTF.',

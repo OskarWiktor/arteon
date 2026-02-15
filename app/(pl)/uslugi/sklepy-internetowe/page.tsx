@@ -50,11 +50,8 @@ export const metadata = {
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/sklepy-internetowe',
     serviceName: 'Tworzenie sklepów internetowych',
     description: 'Budujemy sklepy online, które konwertują: szybkie karty produktu, prosty koszyk, płatności i wysyłki, analityka sprzedaży oraz SEO.',

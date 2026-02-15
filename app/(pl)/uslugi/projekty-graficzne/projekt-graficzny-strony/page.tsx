@@ -32,11 +32,8 @@ export const metadata = {
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-graficzny-strony',
     serviceName: 'Projekt graficzny strony',
     description: 'Makieta i projekt UI strony: czytelny layout, system komponentów, zgodność z WCAG i przygotowanie pod realizację.',

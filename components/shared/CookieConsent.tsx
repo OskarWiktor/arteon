@@ -11,136 +11,36 @@ import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { useRestoreFocus } from '@/hooks/useRestoreFocus';
 import { useTimeout } from '@/hooks/useTimeout';
 
-const ui = {
-  pl: {
-    title: 'Pliki cookie i prywatność',
-    description: 'Używamy plików cookie, aby strona działała prawidłowo, analizować ruch i wyświetlać reklamy. Więcej w naszej',
-    setPreferences: 'Ustaw preferencje',
-    privacyPolicy: 'Polityka prywatności',
-    privacyPolicyHref: '/polityka-prywatnosci',
-    reject: 'Odrzuć wszystkie',
-    settings: 'Ustawienia',
-    accept: 'Akceptuj wszystkie',
-    panelTitle: 'Preferencje prywatności',
-    panelDescription: 'Ustawienia zgód na przetwarzanie danych.',
-    categoriesLegend: 'Kategorie',
-    essentialTitle: 'Niezbędne',
-    essentialDescription: 'Bez nich serwis nie działa. Nie zbierają danych do marketingu.',
-    essentialStatus: 'Zawsze aktywne',
-    analyticsTitle: 'Analityka (GA4)',
-    analyticsDescription: 'Statystyki odwiedzin. Włącza Google Analytics 4 po Twojej zgodzie.',
-    analyticsLabel: 'Włącz analitykę GA4',
-    adsTitle: 'Reklamy (Google AdSense)',
-    adsDescription: 'Personalizowane reklamy na podstawie Twoich zainteresowań.',
-    adsLabel: 'Włącz personalizowane reklamy',
-    changeDecision: 'W każdej chwili możesz zmienić decyzję',
-    save: 'Zapisz',
-  },
-  en: {
-    title: 'Cookies and privacy',
-    description: 'We use cookies to keep the site running, analyse traffic, and show ads. Learn more in our',
-    setPreferences: 'Set preferences',
-    privacyPolicy: 'Privacy Policy',
-    privacyPolicyHref: '/en/privacy-policy',
-    reject: 'Reject all',
-    settings: 'Settings',
-    accept: 'Accept all',
-    panelTitle: 'Privacy preferences',
-    panelDescription: 'Data processing consent settings.',
-    categoriesLegend: 'Categories',
-    essentialTitle: 'Essential',
-    essentialDescription: 'The site cannot function without these. They do not collect marketing data.',
-    essentialStatus: 'Always active',
-    analyticsTitle: 'Analytics (GA4)',
-    analyticsDescription: 'Visit statistics. Enables Google Analytics 4 with your consent.',
-    analyticsLabel: 'Enable GA4 analytics',
-    adsTitle: 'Ads (Google AdSense)',
-    adsDescription: 'Personalized ads based on your interests.',
-    adsLabel: 'Enable personalized ads',
-    changeDecision: 'You can change your decision at any time',
-    save: 'Save',
-  },
-  de: {
-    title: 'Cookies und Datenschutz',
-    description: 'Wir verwenden Cookies für den Betrieb der Website, Analysen und Werbung. Mehr dazu in unserer',
-    setPreferences: 'Einstellungen anpassen',
-    privacyPolicy: 'Datenschutzrichtlinie',
-    privacyPolicyHref: '/de/datenschutzrichtlinie',
-    reject: 'Alle ablehnen',
-    settings: 'Einstellungen',
-    accept: 'Alle akzeptieren',
-    panelTitle: 'Datenschutzeinstellungen',
-    panelDescription: 'Einstellungen zur Datenverarbeitung.',
-    categoriesLegend: 'Kategorien',
-    essentialTitle: 'Erforderlich',
-    essentialDescription: 'Ohne diese funktioniert die Website nicht. Sie sammeln keine Marketingdaten.',
-    essentialStatus: 'Immer aktiv',
-    analyticsTitle: 'Analyse (GA4)',
-    analyticsDescription: 'Besuchsstatistiken. Aktiviert Google Analytics 4 mit Ihrer Zustimmung.',
-    analyticsLabel: 'GA4-Analyse aktivieren',
-    adsTitle: 'Werbung (Google AdSense)',
-    adsDescription: 'Personalisierte Werbung basierend auf Ihren Interessen.',
-    adsLabel: 'Personalisierte Werbung aktivieren',
-    changeDecision: 'Sie können Ihre Entscheidung jederzeit ändern',
-    save: 'Speichern',
-  },
-  es: {
-    title: 'Cookies y privacidad',
-    description: 'Utilizamos cookies para el funcionamiento del sitio, análisis de tráfico y publicidad. Más información en nuestra',
-    setPreferences: 'Configurar preferencias',
-    privacyPolicy: 'Política de privacidad',
-    privacyPolicyHref: '/es/politica-de-privacidad',
-    reject: 'Rechazar todo',
-    settings: 'Configuración',
-    accept: 'Aceptar todo',
-    panelTitle: 'Preferencias de privacidad',
-    panelDescription: 'Configuración de consentimiento de procesamiento de datos.',
-    categoriesLegend: 'Categorías',
-    essentialTitle: 'Esenciales',
-    essentialDescription: 'Sin ellas el sitio no funciona. No recopilan datos de marketing.',
-    essentialStatus: 'Siempre activas',
-    analyticsTitle: 'Análisis (GA4)',
-    analyticsDescription: 'Estadísticas de visitas. Activa Google Analytics 4 con su consentimiento.',
-    analyticsLabel: 'Activar análisis GA4',
-    adsTitle: 'Publicidad (Google AdSense)',
-    adsDescription: 'Publicidad personalizada según sus intereses.',
-    adsLabel: 'Activar publicidad personalizada',
-    changeDecision: 'Puede cambiar su decisión en cualquier momento',
-    save: 'Guardar',
-  },
-  fr: {
-    title: 'Cookies et confidentialité',
-    description: "Nous utilisons des cookies pour le fonctionnement du site, l'analyse du trafic et la publicité. En savoir plus dans notre",
-    setPreferences: 'Définir les préférences',
-    privacyPolicy: 'Politique de confidentialité',
-    privacyPolicyHref: '/fr/politique-de-confidentialite',
-    reject: 'Tout refuser',
-    settings: 'Paramètres',
-    accept: 'Tout accepter',
-    panelTitle: 'Préférences de confidentialité',
-    panelDescription: 'Paramètres de consentement au traitement des données.',
-    categoriesLegend: 'Catégories',
-    essentialTitle: 'Essentiels',
-    essentialDescription: 'Le site ne fonctionne pas sans eux. Ils ne collectent pas de données marketing.',
-    essentialStatus: 'Toujours actifs',
-    analyticsTitle: 'Analyse (GA4)',
-    analyticsDescription: 'Statistiques de visites. Active Google Analytics 4 avec votre consentement.',
-    analyticsLabel: "Activer l'analyse GA4",
-    adsTitle: 'Publicité (Google AdSense)',
-    adsDescription: "Publicité personnalisée selon vos centres d'intérêt.",
-    adsLabel: 'Activer la publicité personnalisée',
-    changeDecision: 'Vous pouvez modifier votre choix à tout moment',
-    save: 'Enregistrer',
-  },
-} as const;
+export type CookieConsentTranslations = {
+  title: string;
+  description: string;
+  setPreferences: string;
+  privacyPolicy: string;
+  privacyPolicyHref: string;
+  reject: string;
+  settings: string;
+  accept: string;
+  panelTitle: string;
+  panelDescription: string;
+  categoriesLegend: string;
+  essentialTitle: string;
+  essentialDescription: string;
+  essentialStatus: string;
+  analyticsTitle: string;
+  analyticsDescription: string;
+  analyticsLabel: string;
+  adsTitle: string;
+  adsDescription: string;
+  adsLabel: string;
+  changeDecision: string;
+  save: string;
+};
 
 function updateGtag(analytics: boolean, ads: boolean) {
   updateGtagConsent({ analytics, ads });
 }
 
-type ConsentLocale = keyof typeof ui;
-
-export default function CookieConsent({ locale = 'pl' }: { locale?: string }) {
+export default function CookieConsent({ translations: t }: { translations: CookieConsentTranslations }) {
   const [visible, setVisible] = useState(false);
   const [panel, setPanel] = useState(false);
   const [analyticsChoice, setAnalyticsChoice] = useState(false);
@@ -216,8 +116,6 @@ export default function CookieConsent({ locale = 'pl' }: { locale?: string }) {
   }
 
   if (!visible) return null;
-  const resolvedLocale: ConsentLocale = locale in ui ? (locale as ConsentLocale) : 'en';
-  const t = ui[resolvedLocale];
   const titleId = panel ? 'cookie-panel-title' : 'cookie-title';
   const descId = panel ? 'cookie-panel-desc' : 'cookie-desc';
 

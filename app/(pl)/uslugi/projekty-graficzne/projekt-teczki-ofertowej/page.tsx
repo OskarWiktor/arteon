@@ -35,11 +35,8 @@ export const metadata = {
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
     serviceName: 'Projekt teczki ofertowej',
     description: 'Teczka firmowa spójna z identyfikacją: estetyka i funkcja, poprawne spady oraz makiety pod druk.',

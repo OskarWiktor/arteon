@@ -19,8 +19,7 @@ import { RiSpeedFill, RiToolsLine, RiShieldCheckLine, RiDeviceLine, RiBarChart2F
 
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
-
-const BASE = 'https://www.arteonagency.pl';
+import { siteUrl } from '@/utils/absoluteUrl';
 
 export const metadata = {
   title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',
@@ -31,16 +30,15 @@ export const metadata = {
   openGraph: {
     title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',
     description: 'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 w PageSpeed. Szybsze ładowanie, lepsze Core Web Vitals.',
-    url: `${BASE}/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress`,
+    url: `${siteUrl}/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress`,
     type: 'website',
     siteName: 'Arteon',
-    images: [{ url: `${BASE}/assets/projects/arteon-baners-camper-albania-mockup.webp`, width: 1200, height: 630 }],
+    images: [{ url: `${siteUrl}/assets/projects/arteon-baners-camper-albania-mockup.webp`, width: 1200, height: 630 }],
   },
 } as const;
 
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
     serviceName: 'Optymalizacja strony WordPress',
     description: 'Optymalizacja stron WordPress z naciskiem na wydajność, stabilność i wersję mobilną. Strona zyskuje lepsze wyniki w testach szybkości i solidne podstawy pod SEO.',

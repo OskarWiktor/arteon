@@ -210,6 +210,50 @@ const PAGE_TYPES: Record<Locale, PageTypeConfig[]> = {
     },
     { key: 'guide', label: 'Guia / tutorial', minWords: 2500, maxWords: 6000, description: 'Um tratamento detalhado de um tema com muitos aspetos. O comprimento depende do âmbito do assunto.' },
   ],
+  it: [
+    {
+      key: 'product',
+      label: 'Descrizione prodotto',
+      minWords: 80,
+      maxWords: 400,
+      description: 'Pi\u00f9 il prodotto \u00e8 semplice, pi\u00f9 breve la descrizione. Prodotti complessi (es. elettronica) richiedono pi\u00f9 spiegazioni e specifiche.',
+    },
+    {
+      key: 'service',
+      label: 'Pagina servizio',
+      minWords: 500,
+      maxWords: 1500,
+      description: 'Un servizio locale semplice necessita di meno testo. Un\u2019offerta complessa con pi\u00f9 fasi e domande frequenti ne richiede di pi\u00f9.',
+    },
+    {
+      key: 'homepage',
+      label: 'Homepage',
+      minWords: 400,
+      maxWords: 1000,
+      description: 'La homepage indirizza i visitatori verso le sottopagine. Un messaggio chiaro e una struttura leggibile facilitano la navigazione.',
+    },
+    {
+      key: 'landing',
+      label: 'Landing page',
+      minWords: 600,
+      maxWords: 2500,
+      description: 'Offerte di prezzo pi\u00f9 elevato richiedono pi\u00f9 spiegazioni e costruzione della fiducia. Un\u2019offerta semplice pu\u00f2 essere pi\u00f9 breve.',
+    },
+    {
+      key: 'blog',
+      label: 'Articolo del blog',
+      minWords: 1200,
+      maxWords: 3000,
+      description: 'La lunghezza dipende dalla complessit\u00e0 dell\u2019argomento. Il testo deve rispondere alle domande del lettore in modo completo e concreto.',
+    },
+    {
+      key: 'guide',
+      label: 'Guida / tutorial',
+      minWords: 2500,
+      maxWords: 6000,
+      description: 'Un approfondimento dettagliato di un argomento con molteplici aspetti. La lunghezza dipende dall\u2019ampiezza del tema.',
+    },
+  ],
 };
 
 export function getPageTypes(locale: Locale): PageTypeConfig[] {
@@ -430,6 +474,32 @@ const EVAL_UI: Record<Locale, EvalUi> = {
       statusShort: '\u26a0\ufe0f Demasiado curto',
       statusLong: '\u26a0\ufe0f Demasiado longo',
       generatedBy: 'Gerado por: arteonagency.pl/pt/ferramentas/contador-de-palavras-e-caracteres',
+    },
+  },
+  it: {
+    wordsUnit: 'parole',
+    emptyMessage: 'Incolla o digita un testo per visualizzare l\u2019analisi.',
+    tooShort: (min, unit, missing) =>
+      `Il testo \u00e8 al di sotto del minimo approssimativo (${min} ${unit}). Se l\u2019argomento \u00e8 coperto, potrebbe essere sufficiente. Mancano circa ${missing} ${unit}.`,
+    tooLong: (excess, unit) => `Il testo supera il massimo approssimativo di ${excess} ${unit}. Se ogni frase aggiunge valore, la lunghezza \u00e8 giustificata.`,
+    idealInRange: 'La lunghezza rientra nell\u2019intervallo consigliato. Il valore per il lettore \u00e8 fondamentale: gli intervalli servono come riferimento.',
+    idealGoodLength: (label) => `Buona lunghezza per ${label.toLowerCase()}. Ogni paragrafo dovrebbe offrire valore concreto al lettore.`,
+    readingTime: (m) => (m === 1 ? '1 minuto' : `${m} minuti`),
+    report: {
+      title: '\ud83d\udcca RAPPORTO LUNGHEZZA TESTO',
+      pageType: 'Tipo di pagina',
+      range: 'Intervallo consigliato',
+      statistics: '\ud83d\udcdd STATISTICHE:',
+      words: 'Parole',
+      charsWithSpaces: 'Caratteri (con spazi)',
+      charsWithoutSpaces: 'Caratteri (senza spazi)',
+      paragraphs: 'Paragrafi',
+      readingTime: 'Tempo di lettura',
+      evaluation: '\ud83d\udcc8 VALUTAZIONE',
+      statusIdeal: '\u2705 Buona lunghezza',
+      statusShort: '\u26a0\ufe0f Troppo corto',
+      statusLong: '\u26a0\ufe0f Troppo lungo',
+      generatedBy: 'Generato da: arteonagency.pl/it/strumenti/contatore-di-parole-e-caratteri',
     },
   },
 };

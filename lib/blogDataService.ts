@@ -14,39 +14,40 @@
  * 4. ZAKAZ DOPISYWANIA: Żadnych nieprawdziwych/niesprawdzonych twierdzeń
  *
  * Przed dodaniem nowego artykułu sprawdź checklistę w INSTRUCTIONS.md
+ *
+ * ARCHITEKTURA DANYCH:
+ * - data/pl/blog/_index.json  — lekki indeks (~50 KB) z ArticlePreview[]
+ * - data/pl/blog/{cat}.json   — pełne artykuły per primaryCategory (lazy load)
+ * - data/pl/blog.json         — źródło prawdy (generuje split via scripts/split-blog.cjs)
  */
 
-import blogData from '@/data/pl/blog.json';
+import { readFileSync } from 'fs';
+import { join } from 'path';
+import blogIndex from '@/data/pl/blog/_index.json';
 import type { Article, ArticlePreview } from '@/types/article';
 import { getPrimaryCategorySlug as getPrimaryCategorySlugBase } from '@/utils/blogCategory';
 import { slugify } from '@/utils/slugify';
 
-interface BlogData {
-  articles: Article[];
-}
+const previews = blogIndex as ArticlePreview[];
 
-const articles = (blogData as BlogData).articles;
+const categoryCache = new Map<string, Article[]>();
 
-export function getAllArticles(): Article[] {
-  return articles;
+function loadCategory(categorySlug: string): Article[] {
+  if (categoryCache.has(categorySlug)) return categoryCache.get(categorySlug)!;
+
+  const filePath = join(process.cwd(), 'data', 'pl', 'blog', `${categorySlug}.json`);
+  const data = JSON.parse(readFileSync(filePath, 'utf8')) as { articles: Article[] };
+  categoryCache.set(categorySlug, data.articles);
+  return data.articles;
 }
 
 export function getAllArticlePreviews(): ArticlePreview[] {
-  return articles.map((a) => ({
-    slug: a.slug,
-    title: a.title,
-    excerpt: a.excerpt,
-    cover: a.cover,
-    primaryCategory: a.primaryCategory,
-    category: a.category,
-    readingTime: a.readingTime,
-    datePublished: a.datePublished,
-  }));
+  return previews;
 }
 
 export function getCategoriesWithCount() {
   const map = new Map<string, { label: string; slug: string; count: number }>();
-  for (const a of articles) {
+  for (const a of previews) {
     const allCats = [a.primaryCategory, ...(a.category || [])].filter(Boolean) as string[];
     const unique = Array.from(new Set(allCats.map((c) => slugify(c))));
     for (const slug of unique) {
@@ -58,10 +59,15 @@ export function getCategoriesWithCount() {
   return Array.from(map.values()).sort((a, b) => a.label.localeCompare(b.label));
 }
 
-export function getPrimaryCategorySlug(a: Article): string {
+export function getPrimaryCategorySlug(a: ArticlePreview): string {
   return getPrimaryCategorySlugBase(a);
 }
 
 export function findArticleBySlug(slug: string): Article | undefined {
+  const preview = previews.find((a) => a.slug === slug);
+  if (!preview) return undefined;
+
+  const categorySlug = getPrimaryCategorySlugBase(preview);
+  const articles = loadCategory(categorySlug);
   return articles.find((a) => a.slug === slug);
 }

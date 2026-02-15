@@ -111,7 +111,6 @@
         }
       ]
     },
-
     {
       "slug": "czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac",
       "title": "Czym jest kanibalizacja słów kluczowych i jak jej unikać?",
@@ -228,7 +227,7 @@
       "title": "Co to jest regulamin sklepu internetowego i co musi zawierać?",
       "excerpt": "Regulamin sklepu internetowego określa zasady korzystania ze sklepu i zawierania umów. Wyjaśniamy, jakie elementy musi zawierać zgodnie z polskim prawem i na co zwrócić uwagę przy jego tworzeniu lub aktualizacji w sklepie.",
       "primaryCategory": "Sklepy",
-      "category": ["Bezpieczenstwo"],
+      "category": ["Bezpieczeństwo"],
       "tags": ["regulamin", "sklep internetowy", "e-commerce", "prawo konsumenckie", "RODO", "prawa konsumenta"],
       "seo": {
         "title": "Co to jest regulamin sklepu internetowego i co musi zawierać? - Arteon",
@@ -359,7 +358,7 @@
       "title": "Co to jest newsletter i czy warto go prowadzić?",
       "excerpt": "Newsletter to regularna wiadomość e-mail wysyłana do osób, które wyraziły zgodę. Wyjaśniamy, jakie korzyści może przynieść firmie i na co zwrócić uwagę przy jego prowadzeniu oraz zbieraniu subskrybentów.",
       "primaryCategory": "Marketing",
-      "category": ["Tresci"],
+      "category": ["Treści"],
       "tags": ["newsletter", "e-mail marketing", "marketing", "komunikacja", "klienci", "sprzedaz"],
       "seo": {
         "title": "Co to jest newsletter i czy warto go prowadzić? - Arteon",
@@ -794,7 +793,7 @@
       "slug": "dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa",
       "title": "Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa?",
       "excerpt": "WordPress napędza ponad 40% stron na świecie, co czyni go częstym celem ataków. Wyjaśniamy, dlaczego aktualizacje są tak ważne, co się dzieje, gdy strona pozostaje nieaktualna i na co zwrócić uwagę przy utrzymaniu swojej witryny.",
-      "primaryCategory": "Bezpieczenstwo",
+      "primaryCategory": "Bezpieczeństwo",
       "category": ["Strony"],
       "tags": ["WordPress", "bezpieczenstwo", "aktualizacje", "strony internetowe", "wtyczki", "motywy", "hosting", "backup"],
       "seo": {

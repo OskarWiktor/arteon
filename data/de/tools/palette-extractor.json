@@ -1,0 +1,211 @@
+{
+  "toolKey": "paletteExtractor",
+  "locale": "de",
+  "metadata": {
+    "title": "Bild-Farbextraktor kostenlos – Palette aus Fotos",
+    "description": "Laden Sie ein Foto oder Logo hoch und extrahieren Sie bis zu 12 dominante Farben mit HEX- und RGB-Codes. Ideal für UI, Branding und Social Media. Ohne Anmeldung, ohne Limits.",
+    "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
+    "path": "/de/werkzeuge/bild-farbextraktor"
+  },
+  "hero": {
+    "title": "Bild-Farbextraktor",
+    "description": "Laden Sie ein Foto oder Logo hoch und das Tool extrahiert die dominanten Farben. Kopieren Sie HEX- und RGB-Codes mit einem einzigen Klick.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/de/werkzeuge", "label": "Werkzeuge" },
+    "third": { "href": "/de/werkzeuge/bild-farbextraktor", "label": "Bild-Farbextraktor" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Bild-Farbextraktor online - Farbpalette aus Bildern",
+      "alternateName": ["Farben aus Bildern extrahieren", "Online-Farbpaletten-Extraktor", "Dominante Farben aus einem Foto", "Farbcodes aus Bildern auslesen", "Farben aus Logo extrahieren"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorExtractor",
+      "description": "Kostenloser Online-Bild-Farbextraktor. Laden Sie ein Foto oder Logo hoch und erhalten Sie eine Palette von bis zu 12 dominanten Farben mit HEX- und RGB-Codes. Verarbeitung lokal im Browser.",
+      "featureList": [
+        "Extraktion von bis zu 12 dominanten Farben",
+        "HEX- und RGB-Codes für jede Farbe",
+        "Ein-Klick-Kopieren der Farbcodes",
+        "Unterstützung für JPG, PNG und WebP",
+        "Lokale Verarbeitung im Browser",
+        "Kostenlos, ohne Registrierung"
+      ]
+    },
+    "howTo": {
+      "name": "So extrahieren Sie Farben aus einem Bild",
+      "description": "Laden Sie ein Bild hoch und erhalten Sie eine Palette von bis zu 12 dominanten Farben mit HEX- und RGB-Codes.",
+      "steps": [
+        { "name": "Bild hochladen", "text": "Ziehen Sie ein Bild auf den markierten Bereich oder wählen Sie eine Datei von Ihrem Gerät aus. Unterstützt: JPG, PNG, WebP." },
+        { "name": "Palette ansehen", "text": "Das Tool extrahiert automatisch die dominanten Farben und zeigt sie als Farbpalette an." },
+        { "name": "Farbcodes kopieren", "text": "Klicken Sie auf eine Farbe, um den HEX- oder RGB-Code in die Zwischenablage zu kopieren." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Farben aus jedem Bild extrahieren",
+      "html": "<p class=\"text-mid\">Der Bild-Farbextraktor analysiert Ihr Bild und identifiziert die dominanten Farben. Das Ergebnis ist eine Palette mit HEX- und RGB-Codes, die Sie direkt in Ihrem Design, Ihrer Website oder Ihren Druckmaterialien verwenden können.</p><p class=\"text-mid mt-3\">Das Tool eignet sich für die Analyse von Fotos, Logos, Illustrationen und Screenshots. Laden Sie ein Bild hoch, und in wenigen Sekunden sehen Sie die wichtigsten Farben als übersichtliche Palette - mit kopierbaren Codes.</p><p class=\"text-mid mt-3\">Das Bild wird lokal in Ihrem Browser verarbeitet - es wird nicht an einen Server gesendet. Nach dem Schließen des Tabs werden alle Daten aus dem Speicher entfernt.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "So verwenden Sie den Farbextraktor",
+      "description": "Die Farbextraktion dauert nur wenige Sekunden:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Bild hochladen",
+          "description": "Ziehen Sie ein Bild auf den markierten Bereich oder wählen Sie eine Datei von Ihrem Gerät. Unterstützt: JPG, PNG, WebP."
+        },
+        { "icon": "RiPaletteLine", "title": "2. Palette ansehen", "description": "Das Tool extrahiert automatisch die dominanten Farben und zeigt sie als Farbpalette an." },
+        { "icon": "RiFileCopyLine", "title": "3. Codes kopieren", "description": "Klicken Sie auf eine Farbe, um den HEX- oder RGB-Code in die Zwischenablage zu kopieren." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Wie sieht eine extrahierte Farbpalette aus?",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex gap-1\"><div class=\"h-12 flex-1 rounded\" style=\"background-color: #2C3E50\"></div><div class=\"h-12 flex-1 rounded\" style=\"background-color: #E74C3C\"></div><div class=\"h-12 flex-1 rounded\" style=\"background-color: #ECF0F1\"></div><div class=\"h-12 flex-1 rounded\" style=\"background-color: #3498DB\"></div><div class=\"h-12 flex-1 rounded\" style=\"background-color: #F39C12\"></div></div><div class=\"flex gap-1 text-xs!\"><span class=\"text-light flex-1 text-center\">#2C3E50</span><span class=\"text-light flex-1 text-center\">#E74C3C</span><span class=\"text-light flex-1 text-center\">#ECF0F1</span><span class=\"text-light flex-1 text-center\">#3498DB</span><span class=\"text-light flex-1 text-center\">#F39C12</span></div></div>",
+      "html": "<p class=\"text-mid\">Das Tool zeigt die extrahierten Farben als Palette an. Jede Farbe wird mit dem prozentualen Anteil im Bild und den kopierbaren HEX- und RGB-Codes angezeigt. So erkennen Sie auf einen Blick, welche Farben das Bild dominieren.</p><p class=\"text-mid mt-3\">Klicken Sie auf eine beliebige Farbe, um den Code in die Zwischenablage zu kopieren. Die kopierten Codes können Sie direkt in CSS, Figma, Adobe oder anderen Design-Tools einfügen.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Welche Bilder liefern die besten Ergebnisse?",
+      "description": "Die Qualität der extrahierten Farben hängt vom Ausgangsbild ab:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiSunLine", "title": "Fotos mit kräftigen Farben", "description": "Landschaften, Sonnenuntergänge und Produktfotos liefern vielfältige und aussagekräftige Paletten." },
+        { "icon": "RiContrastLine", "title": "Logos und Markenbilder", "description": "Einfarbige Logos und Grafiken liefern weniger Farben, dafür aber präzisere Werte." },
+        { "icon": "RiFocusLine", "title": "Bilder mit klaren Farbflächen", "description": "Große, einheitliche Farbflächen liefern genauere Ergebnisse als feine Farbverläufe." },
+        { "icon": "RiShapeLine", "title": "Illustrationen", "description": "Flache Illustrationen und Infografiken haben klar definierte Farbpaletten, die das Tool gut erfasst." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTimeline",
+      "title": "Wie funktioniert die Farbextraktion?",
+      "description": "Nach dem Hochladen führt das Tool mehrere Schritte im Hintergrund aus - die gesamte Analyse findet lokal im Browser statt:",
+      "items": [
+        {
+          "icon": "RiZoomInLine",
+          "title": "Bildskalierung",
+          "description": "Das Bild wird auf ca. 240 Pixel Breite verkleinert. Das beschleunigt die Analyse auch bei großen Fotos, ohne die Farberkennung zu beeinträchtigen."
+        },
+        {
+          "icon": "RiGroupLine",
+          "title": "Ähnliche Farben gruppieren",
+          "description": "Jeder Pixel wird analysiert und ähnliche Farbtöne werden zusammengefasst. Zwei fast identische Blautöne werden zu einer Farbe in der Palette."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Dominante Farben auswählen",
+          "description": "Der Algorithmus wählt Farben, die die größte Fläche im Bild abdecken. Das Ergebnis ist eine Liste von bis zu 12 Farben, sortiert von dominant bis weniger häufig."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Transparente Pixel überspringen",
+          "description": "Bei PNG-Dateien mit transparentem Hintergrund werden diese Bereiche nicht analysiert - der Extraktor untersucht nur sichtbare Farben. Der gesamte Prozess dauert in der Regel unter einer Sekunde."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Fehlersuche beim Farbextraktor",
+      "description": "Falls die Ergebnisse nicht Ihren Erwartungen entsprechen:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Nur wenige Farben erkannt",
+          "description": "Das Bild enthält wahrscheinlich wenig Farbvielfalt. Versuchen Sie ein Bild mit mehr unterschiedlichen Farben."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "Unerwartete Farben in der Palette",
+          "description": "Hintergrundfarben, Schatten oder Reflexionen können als dominante Farben erkannt werden. Schneiden Sie unerwünschte Bildbereiche vor dem Hochladen zu."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "Bild wird nicht geladen",
+          "description": "Prüfen Sie, ob das Bild im JPG-, PNG- oder WebP-Format vorliegt. Bei sehr großen Bildern (über 4000×4000 px) kann die Verarbeitung etwas länger dauern."
+        },
+        {
+          "icon": "RiBrushLine",
+          "title": "Farben erscheinen zu ähnlich",
+          "description": "Bei Bildern mit feinen Farbverläufen (z. B. Himmel) liegen die extrahierten Farben oft nah beieinander — das entspricht der tatsächlichen Farbverteilung."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Wo können Sie extrahierte Farben verwenden?",
+      "description": "Die kopierten Farbcodes lassen sich in verschiedenen Kontexten einsetzen:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiGlobalLine", "title": "Webdesign", "description": "Farbschema für Ihre Website auf Basis eines Referenzbilds oder Fotos erstellen." },
+        { "icon": "RiShoppingBagLine", "title": "Markenidentität", "description": "Exakte Farben aus einem Logo ermitteln und konsistent in allen Materialien verwenden." },
+        { "icon": "RiSmartphoneLine", "title": "Social Media", "description": "Grafiken und Beiträge farblich an bestehende Fotos oder Kampagnenbilder anpassen." },
+        { "icon": "RiPaletteLine", "title": "Grafikdesign und Druck", "description": "Extrahierte Farben als Ausgangspunkt für Flyer, Poster und Präsentationen nutzen." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Was macht diesen Farbextraktor besonders?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiImageLine", "title": "Bis zu 12 Farben", "description": "Bis zu 12 dominante Farben für eine umfassende Farbanalyse." },
+        { "icon": "RiPantoneLine", "title": "HEX- und RGB-Codes", "description": "Jede Farbe mit kopierbaren HEX- und RGB-Werten - direkt einsetzbar in CSS und Design-Tools." },
+        { "icon": "RiInfinityLine", "title": "Keine Limits", "description": "Beliebig viele Bilder analysieren — ohne Registrierung und ohne Limits." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen zum Farbextraktor",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Wie viele Farben kann das Tool extrahieren?",
+          "answer": "Das Tool extrahiert bis zu 12 dominante Farben aus einem Bild. Die tatsächliche Anzahl hängt von der Farbvielfalt im Bild ab - ein Foto eines Sonnenuntergangs liefert mehr Farben als ein einfarbiges Logo.",
+          "answerSchemaText": "Bis zu 12 dominante Farben. Die Anzahl hängt von der Farbvielfalt im Bild ab."
+        },
+        {
+          "question": "Welche Bildformate werden unterstützt?",
+          "answer": "JPG, PNG und WebP. Das Bild wird lokal in Ihrem Browser verarbeitet und nie an einen Server gesendet. Nach dem Schließen des Tabs werden alle Daten aus dem Speicher entfernt.",
+          "answerSchemaText": "JPG, PNG und WebP. Verarbeitung lokal im Browser."
+        },
+        {
+          "question": "In welchen Formaten erhalte ich die Farbcodes?",
+          "answer": "Jede extrahierte Farbe wird mit HEX- und RGB-Werten angezeigt. Sie können die Codes mit einem Klick in die Zwischenablage kopieren und direkt in CSS, Figma oder Grafikprogrammen verwenden.",
+          "answerSchemaText": "HEX und RGB. Ein-Klick-Kopieren in die Zwischenablage."
+        },
+        {
+          "question": "Wofür ist der Farbextraktor nützlich?",
+          "answer": "Sie können damit Farbpaletten aus Fotos erstellen, Markenfarben in Logos identifizieren, passende Farben fürs Webdesign finden, die Farbstimmung von Bildern analysieren und konsistente Farbschemata für Print- und Digitalmedien entwickeln.",
+          "answerSchemaText": "Farbpaletten erstellen, Markenfarben identifizieren, Webdesign-Farben finden, Farbstimmung analysieren."
+        },
+        {
+          "question": "Warum extrahiert das Tool nur wenige Farben aus meinem Bild?",
+          "answer": "Wenn das Bild nur wenige unterschiedliche Farben enthält (z. B. ein einfarbiges Logo oder eine Grafik mit geringem Farbumfang), findet das Tool entsprechend weniger dominante Farben. Das ist erwartetes Verhalten - das Tool zeigt nur Farben an, die signifikant im Bild vertreten sind.",
+          "answerSchemaText": "Das Tool zeigt nur signifikant vertretene Farben an. Bilder mit wenig Farbvielfalt liefern weniger Ergebnisse."
+        },
+        {
+          "question": "Kann ich die Anzahl der extrahierten Farben selbst bestimmen?",
+          "answer": "Das Tool bestimmt die optimale Anzahl automatisch anhand der Farbvielfalt im Bild (bis zu 12 Farben). Eine manuelle Einstellung der Farbanzahl ist derzeit nicht verfügbar.",
+          "answerSchemaText": "Nein, das Tool bestimmt die optimale Anzahl automatisch (bis zu 12 Farben)."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Weitere Tools entdecken" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

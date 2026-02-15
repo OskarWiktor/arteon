@@ -184,6 +184,41 @@ export function getDefaultSignature(locale: Locale): SignatureConfig {
       avatarUrl: '',
     };
   }
+  if (locale === 'it') {
+    return {
+      fullName: 'Mario Rossi',
+      jobTitle: 'Sviluppatore Web',
+      company: 'Arteon Agency',
+      topLine: '',
+      nameTag: '',
+      email: 'mario.rossi@example.com',
+      phone: '+39 333 123 4567',
+      website: 'https://www.iltuosito.it',
+      address: 'Via Roma 1, 00100 Roma',
+      extraLine: 'Creo siti web veloci e funzionali.',
+      ctaLabel: 'Prenota consulenza gratuita',
+      ctaUrl: 'https://www.iltuosito.it',
+      cta2Label: '',
+      cta2Url: '',
+      socials: {
+        linkedin: 'https://www.linkedin.com/in/mariorossi',
+        instagram: '',
+        facebook: '',
+        tiktok: '',
+        youtube: '',
+        x: '',
+        github: '',
+        dribbble: '',
+        behance: '',
+        whatsapp: '',
+        telegram: '',
+        pinterest: '',
+      },
+      legalNote: 'Questo messaggio potrebbe contenere informazioni riservate. Se non sei il destinatario previsto, informa il mittente ed elimina questo messaggio.',
+      formalLine: '',
+      avatarUrl: '',
+    };
+  }
   if (locale === 'es') {
     return {
       fullName: 'Juan García',

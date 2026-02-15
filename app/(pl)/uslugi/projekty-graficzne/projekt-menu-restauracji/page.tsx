@@ -35,11 +35,8 @@ export const metadata = {
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-menu-restauracji',
     serviceName: 'Projekt menu restauracji',
     description: 'Projekt graficzny menu dla restauracji, kawiarni i barów - eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',

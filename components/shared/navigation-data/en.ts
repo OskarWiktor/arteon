@@ -12,7 +12,7 @@ import {
   NavSearchLine as RiSearchLine,
 } from '@/components/ui/icons/NavIcons';
 
-import type { HeaderNavItemEN, LegalLinkEN } from '@/types/navigation';
+import type { HeaderNavItemEN } from '@/types/navigation';
 import type { ToolsSectionEN } from '@/types/tools/common';
 export type { HeaderNavItemKeyEN, HeaderNavItemEN, LegalLinkEN } from '@/types/navigation';
 export type { ToolSectionItemEN, ToolsSectionEN } from '@/types/tools/common';
@@ -138,5 +138,3 @@ export const TOOLS_SECTIONS_EN: ToolsSectionEN[] = [
     ],
   },
 ];
-
-export const LEGAL_LINKS_EN: LegalLinkEN[] = [{ key: 'privacy', href: '/en/privacy-policy', label: 'Privacy Policy' }];

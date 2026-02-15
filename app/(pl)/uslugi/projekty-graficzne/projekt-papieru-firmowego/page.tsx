@@ -34,11 +34,8 @@ export const metadata = {
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-papieru-firmowego',
     serviceName: 'Projekt papieru firmowego',
     description: 'Papier firmowy i szablony korespondencji: układ zgodny z identyfikacją, wersje do druku i PDF/DOC.',

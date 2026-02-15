@@ -35,12 +35,10 @@ import Wrapper from '@/components/ui/Wrapper';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import { getAllArticlePreviews } from '@/lib/blogDataService';
-
-const BASE = 'https://www.arteonagency.pl';
+import { siteUrl } from '@/utils/absoluteUrl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/tworzenie-tresci',
     serviceName: 'Tworzenie treści',
     description: 'Treści dla stron, sklepów i blogów: oferty, artykuły, opisy produktów i microcopy - pod intencje użytkownika i SEO.',
@@ -62,9 +60,9 @@ export const metadata = {
   openGraph: {
     title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
     description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły blogowe, opisy produktów i treści na strony z redakcją pod SEO.',
-    url: `${BASE}/uslugi/tworzenie-tresci`,
+    url: `${siteUrl}/uslugi/tworzenie-tresci`,
     type: 'website',
-    images: [{ url: `${BASE}/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp`, width: 1200, height: 630 }],
+    images: [{ url: `${siteUrl}/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp`, width: 1200, height: 630 }],
   },
 } as const;
 

@@ -39,11 +39,8 @@ export const metadata = {
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
     serviceName: 'Projekt karty lojalnościowej',
     description: 'Projekt karty lojalnościowej dla salonów, kawiarni, butików i siłowni. Plik do druku + szablon cyfrowy.',

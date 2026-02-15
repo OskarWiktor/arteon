@@ -12,7 +12,7 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import CTABanner from '@/components/sections/CTABanner';
 
 import type { Article } from '@/types/article';
-import { getAllArticles, getAllArticlePreviews, findArticleBySlug, getPrimaryCategorySlug } from '@/lib/blogDataService';
+import { getAllArticlePreviews, findArticleBySlug, getPrimaryCategorySlug } from '@/lib/blogDataService';
 import { slugify } from '@/utils/slugify';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 import CodeBlock from '@/components/ui/CodeBlock';
@@ -279,7 +279,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
 }
 
 export async function generateStaticParams() {
-  const items = getAllArticles();
+  const items = getAllArticlePreviews();
   return items.flatMap((a) => {
     const cats = (a.category || []).map((c) => slugify(c));
     const uniqueCats = Array.from(new Set([getPrimaryCategorySlug(a), ...cats]));

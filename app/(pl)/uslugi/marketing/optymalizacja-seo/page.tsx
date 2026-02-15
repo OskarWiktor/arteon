@@ -34,11 +34,8 @@ export const metadata = {
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/marketing/optymalizacja-seo',
     serviceName: 'Optymalizacja SEO',
     description: 'Wdrożenia po audycie: poprawa szybkości strony, porządek w treściach i dodatkowe dane, które pomagają Google lepiej zrozumieć witrynę. Testy przed i po, mierzalne wyniki.',

@@ -1,0 +1,237 @@
+{
+  "toolKey": "jpgToWebp",
+  "locale": "de",
+  "metadata": {
+    "title": "JPG/PNG-zu-WebP-Konverter kostenlos – ohne Limits",
+    "description": "Reduzieren Sie die Bildgröße um bis zu 35 % ohne Qualitätsverlust. JPG/PNG zu WebP lokal konvertieren – Dateien verlassen Ihr Gerät nicht. Ohne Anmeldung, ohne Limits.",
+    "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
+    "path": "/de/werkzeuge/jpg-png-zu-webp-konverter"
+  },
+  "hero": {
+    "title": "JPG/PNG-zu-WebP-Konverter",
+    "description": "Konvertieren Sie JPG- und PNG-Bilder in das WebP-Format und reduzieren Sie die Dateigröße um bis zu 35 % ohne sichtbaren Qualitätsverlust. Alles läuft lokal in Ihrem Browser.",
+    "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/de/werkzeuge", "label": "Werkzeuge" },
+    "third": { "href": "/de/werkzeuge/jpg-png-zu-webp-konverter", "label": "JPG/PNG zu WebP" }
+  },
+  "schemas": {
+    "software": {
+      "name": "JPG- und PNG-zu-WebP-Konverter online - ohne Limits",
+      "alternateName": [
+        "WebP-Konverter online",
+        "JPG in WebP umwandeln",
+        "PNG in WebP konvertieren",
+        "Bilder in WebP umwandeln",
+        "WebP-Bildkomprimierung",
+        "Mehrere Bilder gleichzeitig in WebP umwandeln"
+      ],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Kostenloser Online-Konverter von JPG und PNG zu WebP. Reduzieren Sie die Dateigröße um bis zu 35 % ohne Qualitätsverlust. Stapelverarbeitung, automatische Optimierung, lokale Verarbeitung.",
+      "featureList": [
+        "JPG- und PNG-Dateien zu WebP konvertieren",
+        "Dateigröße um bis zu 35 % reduzieren",
+        "Einstellbare Qualität (60–95 %)",
+        "Automatische Optimierung bei größeren Ausgabedateien",
+        "Stapelverarbeitung mit ZIP-Download",
+        "Lokale Verarbeitung im Browser",
+        "Ohne Registrierung und ohne Limits"
+      ]
+    },
+    "howTo": {
+      "name": "So konvertieren Sie JPG/PNG-Bilder in WebP",
+      "description": "Konvertieren Sie JPG- und PNG-Bilder in das WebP-Format und reduzieren Sie die Dateigröße um bis zu 35 % ohne sichtbaren Qualitätsverlust.",
+      "steps": [
+        { "name": "Dateien hinzufügen", "text": "Ziehen Sie JPG- oder PNG-Dateien in den markierten Bereich oder klicken Sie, um Dateien von Ihrem Gerät auszuwählen." },
+        { "name": "Qualität einstellen", "text": "Wählen Sie die WebP-Qualität mit dem Schieberegler (Standard: 80 %). Das Tool optimiert die Dateigröße automatisch." },
+        { "name": "Konvertieren und herunterladen", "text": "Laden Sie die konvertierten Dateien einzeln oder als ZIP-Archiv herunter." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Warum JPG und PNG in WebP konvertieren?",
+      "html": "<p class=\"text-mid\">Das WebP-Format bietet bei gleicher visueller Qualität deutlich kleinere Dateien als JPG und PNG. Kleinere Bilddateien bedeuten schnellere Ladezeiten für Ihre Website, bessere Core Web Vitals und ein besseres Nutzererlebnis. Google empfiehlt WebP als bevorzugtes Format für Webbilder.</p><p class=\"text-mid mt-3\">Im Vergleich zu JPG liefert WebP bei gleicher Qualität durchschnittlich 25–35 % kleinere Dateien. Im Vergleich zu PNG kann die Einsparung bei verlustbehafteter Komprimierung noch höher ausfallen. WebP unterstützt sowohl verlustbehaftete als auch verlustfreie Komprimierung sowie Transparenz (Alphakanal).</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "So verwenden Sie den WebP-Konverter",
+      "description": "Die Konvertierung dauert nur wenige Sekunden:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "1. Dateien hinzufügen",
+          "description": "Ziehen Sie JPG- oder PNG-Dateien in den markierten Bereich oder klicken Sie, um Dateien von Ihrem Gerät auszuwählen."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "2. Qualität einstellen",
+          "description": "Wählen Sie die WebP-Qualität mit dem Schieberegler (Standard: 80 %). Das Tool optimiert die Dateigröße automatisch."
+        },
+        { "icon": "RiDownloadLine", "title": "3. Herunterladen", "description": "Laden Sie die konvertierten Dateien einzeln oder alle zusammen als ZIP-Archiv herunter." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Dateien zur Konvertierung hinzufügen",
+      "html": "<p class=\"text-mid\">Das Tool bietet zwei Möglichkeiten, Dateien hinzuzufügen:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Drag &amp; Drop</strong> – ziehen Sie Dateien aus einem Ordner auf Ihrem Computer und legen Sie sie im markierten Bereich ab. Sie können mehrere Dateien gleichzeitig ziehen.</li><li><strong>Auswahl vom Gerät</strong> – klicken Sie in den Bereich zum Hinzufügen von Dateien. Es öffnet sich ein Auswahldialog. Mit gedrückter Strg-Taste (oder Cmd auf Mac) können Sie mehrere Dateien gleichzeitig auswählen.</li></ul><p class=\"text-mid mt-3\">Das Tool akzeptiert nur JPG- und PNG-Dateien. Wenn Sie versehentlich eine Datei in einem anderen Format (z. B. GIF oder BMP) hinzufügen, wird sie automatisch übersprungen und Sie sehen eine Informationsmeldung.</p><p class=\"text-mid mt-3\"><strong>Datenschutz:</strong> Alle Dateien werden lokal im Browser verarbeitet. Sie werden nirgendwohin gesendet – sie gelangen auf keinen Server. Nach dem Schließen des Tabs oder Browsers werden die Dateien aus dem Speicher gelöscht.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "So interpretieren Sie die Ergebnisse",
+      "subtitle": "Konvertierungsstatus",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800\">Erfolgreich</span><span class=\"text-mid text-sm!\">Datei konvertiert - WebP ist kleiner als das Original</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800\">Optimiert</span><span class=\"text-mid text-sm!\">Qualität wurde automatisch gesenkt, damit WebP nicht größer als das Original ist</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-800\">Fehler</span><span class=\"text-mid text-sm!\">Die Datei konnte nicht konvertiert werden</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Für jede konvertierte Datei sehen Sie den Status und die Größenersparnis:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Originalgröße</strong> - Dateigröße der JPG- oder PNG-Eingabedatei.</li><li><strong>WebP-Größe</strong> - Dateigröße der konvertierten WebP-Datei.</li><li><strong>Ersparnis</strong> - prozentuale Größenreduzierung gegenüber dem Original.</li><li><strong>Status</strong> - zeigt, ob die Konvertierung erfolgreich war oder ob die Qualität automatisch angepasst wurde.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Qualitätseinstellungen - Empfehlungen",
+      "html": "<p class=\"text-mid mb-4\">Die optimale Qualitätsstufe hängt vom Verwendungszweck ab. Hier sind Richtwerte für verschiedene Anwendungsfälle:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Anwendung</th><th class=\"py-2 pr-4 font-semibold\">Qualität</th><th class=\"py-2 font-semibold\">Hinweis</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Produktfotos (E-Commerce)</td><td class=\"py-2 pr-4 whitespace-nowrap\">85–90 %</td><td class=\"text-primary-light0 py-2 text-sm\">Hohe Detailtreue für Produktbilder</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Blog-Bilder und Artikelfotos</td><td class=\"py-2 pr-4 whitespace-nowrap\">75–80 %</td><td class=\"text-primary-light0 py-2 text-sm\">Guter Kompromiss für die meisten Websites</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Hero-Banner und Hintergrundbilder</td><td class=\"py-2 pr-4 whitespace-nowrap\">70–80 %</td><td class=\"text-primary-light0 py-2 text-sm\">Große Bilder, bei denen Dateigröße wichtiger ist</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Thumbnails und Vorschaubilder</td><td class=\"py-2 pr-4 whitespace-nowrap\">65–75 %</td><td class=\"text-primary-light0 py-2 text-sm\">Kleine Bilder - Qualitätsverlust kaum sichtbar</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Icons und einfache Grafiken</td><td class=\"py-2 pr-4 whitespace-nowrap\">60–70 %</td><td class=\"text-primary-light0 py-2 text-sm\">Wenig Details, hohe Komprimierbarkeit</td></tr></tbody></table></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert Smart Quality?",
+      "html": "<p class=\"text-mid\">Smart Quality ist ein automatischer Optimierungsmechanismus, der sicherstellt, dass die konvertierte WebP-Datei nie größer als das Original ist. So funktioniert es:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>Das Tool konvertiert das Bild mit der von Ihnen eingestellten Qualität (z. B. 80 %).</li><li>Es prüft, ob die Ausgabedatei kleiner als das Original ist.</li><li>Falls sie größer ist, wird die Qualität automatisch gesenkt und ein neuer Versuch gestartet.</li><li>Der Vorgang wiederholt sich, bis die Ausgabedatei kleiner ist oder die Qualität unter ein sicheres Minimum fällt.</li></ol><p class=\"text-mid mt-3\">Das Tool wählt automatisch die optimalen Einstellungen. Wenn ein Bild bereits stark komprimiert ist (z. B. ein JPG mit 60 % Qualität), werden die Parameter automatisch angepasst, um dennoch eine Größenersparnis zu erzielen.</p><p class=\"text-mid mt-3\">Bei jeder Datei sehen Sie die Information &quot;Verwendete WebP-Qualität&quot; – das ist die tatsächlich angewandte Qualität nach eventueller Anpassung durch Smart Quality.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Wie lade ich die konvertierten Dateien herunter?",
+      "variant": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium text-white\" disabled>Konvertieren</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Alle herunterladen</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Als ZIP herunterladen</button></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled /><span class=\"text-mid pl-2 text-sm!\">CSV-Bericht in ZIP einschließen</span></div></div>",
+      "html": "<p class=\"text-mid\">Nach der Konvertierung stehen mehrere Download-Optionen zur Verfügung:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Herunterladen</strong> (bei jeder Datei) - lädt eine einzelne WebP-Datei herunter.</li><li><strong>Alle herunterladen</strong> - lädt alle Dateien nacheinander herunter.</li><li><strong>Als ZIP herunterladen</strong> - erstellt ein Archiv mit allen Dateien.</li></ul><p class=\"text-mid mt-3\"><strong>CSV-Bericht-Option:</strong> Fügen Sie einen Konvertierungsbericht dem ZIP-Archiv hinzu.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Einsparungsbericht – was zeigt er?",
+      "html": "<p class=\"text-mid\">Unter den Konvertierungsbuttons finden Sie eine Zusammenfassung mit Informationen zur Einsparung:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Gesamtgröße (Eingabe)</strong> – Summe der Größen aller Originaldateien.</li><li><strong>Gesamtgröße (nach Konvertierung)</strong> – Summe der Größen aller WebP-Dateien.</li><li><strong>Eingespart</strong> – wie viel Speicherplatz Sie durch die Konvertierung gewonnen haben (in KB/MB und Prozent).</li></ul><p class=\"text-mid mt-3\"><strong>Zusammenfassung kopieren:</strong> Der Button kopiert den Bericht als Text in die Zwischenablage. Sie können ihn in Notizen, E-Mails oder Dokumente einfügen – nützlich zur Dokumentation der Bildoptimierung.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Wie viel kann man durch die Konvertierung zu WebP sparen?",
+      "html": "<p class=\"text-mid mb-4\">Die Einsparungen hängen vom Bildtyp und der ursprünglichen Komprimierung ab. Hier sind Beispielwerte für typische Dateien:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">JPG-Foto (Kamera)</p><p class=\"text-light text-sm\">2,4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ersparnis: ~63 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">PNG-Grafik (Logo)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ersparnis: ~75 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktfoto</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ersparnis: ~63 %</p></div></div><p class=\"text-light mt-4 text-sm\">Die tatsächlichen Einsparungen können variieren. Der Konverter zeigt für jede Datei die genaue Größe vor und nach der Konvertierung sowie eine Zusammenfassung der Gesamtersparnis.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Häufige Probleme und Lösungen",
+      "description": "Falls die Ergebnisse nicht Ihren Erwartungen entsprechen:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "WebP-Datei ist kaum kleiner",
+          "description": "Bei bereits stark komprimierten JPG-Dateien oder einfachen PNG-Grafiken fällt die Einsparung durch WebP geringer aus. Versuchen Sie eine niedrigere Qualitätsstufe."
+        },
+        {
+          "icon": "RiAlertLine",
+          "title": "Sichtbarer Qualitätsverlust",
+          "description": "Erhöhen Sie die Qualitätsstufe. Bei Fotos werden Unterschiede unter 80 % oft sichtbar, besonders bei feinen Details und Text."
+        },
+        {
+          "icon": "RiCloseLine",
+          "title": "Datei wird nicht konvertiert",
+          "description": "Prüfen Sie, ob die Datei im JPG- oder PNG-Format vorliegt. Andere Formate (GIF, BMP, TIFF) werden nicht unterstützt."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "Transparenz geht verloren",
+          "description": "WebP unterstützt Transparenz. Falls sie fehlt, prüfen Sie, ob die Originaldatei tatsächlich einen Alphakanal hat."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Wo sollten Sie WebP einsetzen?",
+      "description": "WebP eignet sich für alle Bilder auf Ihrer Website:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiGlobalLine", "title": "Webseiten und Landingpages", "description": "Schnellere Ladezeiten, bessere Core Web Vitals und ein verbessertes Google-Ranking." },
+        { "icon": "RiShoppingBagLine", "title": "E-Commerce und Produktbilder", "description": "Hunderte Produktbilder in kleinerer Dateigröße — spürbar schnellere Kategorieseiten." },
+        { "icon": "RiArticleLine", "title": "Blogs und Content-Seiten", "description": "Artikelbilder in WebP laden schneller und reduzieren den Datenverbrauch für mobile Nutzer." },
+        { "icon": "RiImageLine", "title": "Portfolios und Galerien", "description": "Hochwertige Bilder mit deutlich reduzierter Dateigröße - ohne sichtbaren Qualitätsverlust." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Was macht diesen Konverter besonders?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Volle Privatsphäre", "description": "Alle Dateien werden lokal in Ihrem Browser verarbeitet. Nichts wird an einen Server gesendet." },
+        { "icon": "RiInfinityFill", "title": "Ohne Limits", "description": "Beliebig viele Dateien konvertieren — ohne Registrierung und ohne Einschränkungen." },
+        { "icon": "RiSpeedLine", "title": "Automatische Optimierung", "description": "Das Tool senkt die Qualität automatisch, wenn die Ausgabedatei größer als das Original wäre." },
+        { "icon": "RiStackLine", "title": "Stapelverarbeitung", "description": "Konvertieren Sie mehrere Dateien gleichzeitig und laden Sie alles als ZIP-Archiv herunter." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen zum WebP-Konverter",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Was ist das WebP-Format?",
+          "answer": "WebP ist ein von Google entwickeltes Bildformat, das eine bessere Komprimierung als JPG und PNG bietet. Bei gleicher visueller Qualität sind WebP-Dateien in der Regel 25–35 % kleiner. Das Format wird von allen modernen Browsern unterstützt (Chrome, Firefox, Safari, Edge).",
+          "answerSchemaText": "Ein von Google entwickeltes Bildformat mit 25–35 % kleinerer Dateigröße bei gleicher Qualität."
+        },
+        {
+          "question": "Werden meine Bilder an einen Server gesendet?",
+          "answer": "Nein. Die gesamte Konvertierung erfolgt lokal in Ihrem Browser mithilfe der Canvas API. Ihre Dateien verlassen nie Ihren Computer und werden nirgendwo gespeichert. Nach dem Schließen des Tabs werden alle Daten aus dem Speicher entfernt.",
+          "answerSchemaText": "Nein. Die Konvertierung erfolgt lokal im Browser. Dateien verlassen nicht Ihr Gerät."
+        },
+        {
+          "question": "Gibt es ein Limit für die Anzahl der Dateien?",
+          "answer": "Nein. Sie können beliebig viele Dateien konvertieren - ohne tägliche Limits, ohne Dateigrößenbeschränkungen und ohne Registrierung.",
+          "answerSchemaText": "Nein. Beliebig viele Dateien, ohne Limits."
+        },
+        {
+          "question": "Was passiert, wenn die WebP-Datei größer als das Original ist?",
+          "answer": "Das Tool senkt automatisch die Qualität schrittweise, wenn die Ausgabedatei größer als das Original wäre. So erhalten Sie immer eine Datei, die nicht größer als das Original ist - bei bestmöglicher Qualität.",
+          "answerSchemaText": "Das Tool senkt automatisch die Qualität, damit die Ausgabedatei nie größer als das Original ist."
+        },
+        {
+          "question": "Welche Qualitätseinstellung ist optimal?",
+          "answer": "80 % ist ein guter Kompromiss zwischen Dateigröße und Bildqualität für die meisten Websites. Für Fotos mit vielen Details können Sie 85–90 % verwenden, für einfache Grafiken und Icons reichen 65–70 %.",
+          "answerSchemaText": "80 % für die meisten Websites. Fotos: 85–90 %. Einfache Grafiken: 65–70 %."
+        },
+        {
+          "question": "Kann ich auch PNG-Dateien mit Transparenz konvertieren?",
+          "answer": "WebP unterstützt Transparenz (Alphakanal). Wenn Ihre PNG-Datei einen transparenten Hintergrund hat, bleibt die Transparenz in der WebP-Datei erhalten.",
+          "answerSchemaText": "Ja. WebP unterstützt Transparenz. Der Alphakanal bleibt erhalten."
+        },
+        {
+          "question": "Unterstützen alle Browser das WebP-Format?",
+          "answer": "Ja, alle modernen Browser unterstützen WebP: Chrome (ab Version 17), Firefox (ab 65), Safari (ab 14), Edge (ab 18). Nur der Internet Explorer unterstützt WebP nicht - er wird jedoch von Microsoft nicht mehr gewartet.",
+          "answerSchemaText": "Ja. Chrome, Firefox, Safari, Edge. Nur Internet Explorer nicht (veraltet)."
+        },
+        {
+          "question": "Kann ich auch andere Formate als JPG und PNG konvertieren?",
+          "answer": "Das Tool ist für die Formate JPG und PNG optimiert. Andere Formate (z. B. GIF, BMP, TIFF) werden beim Hinzufügen automatisch übersprungen.",
+          "answerSchemaText": "Nur JPG und PNG. Andere Formate werden automatisch übersprungen."
+        },
+        {
+          "question": "Was bedeutet die Meldung, dass die Datei größer als das Original ist?",
+          "answer": "Wenn Sie eine Warnung sehen, dass die Ausgabedatei größer als das Original ist, bedeutet das, dass das Originalbild bereits sehr stark komprimiert war. In diesem Fall bringt die Konvertierung zu WebP keine Einsparung – es ist besser, beim Originalformat zu bleiben oder eine niedrigere Qualitätsstufe zu versuchen.",
+          "answerSchemaText": "Das Originalbild war bereits stark komprimiert. Originalformat beibehalten oder niedrigere Qualität versuchen."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Weitere Tools entdecken" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "toolKey": "qrCode",
+  "locale": "it",
+  "metadata": {
+    "title": "Generatore di codici QR gratuito – PNG e SVG, senza registrazione",
+    "description": "Crea codici QR per siti web, vCard, menu o volantini in pochi secondi. Esportazione in PNG e SVG. Personalizza colori e dimensioni. Senza registrazione, senza limiti.",
+    "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
+    "path": "/it/strumenti/generatore-di-codici-qr-gratuito"
+  },
+  "hero": {
+    "title": "Generatore di codici QR",
+    "description": "Crea codici QR per siti web, vCard, menu o volantini. Personalizza i colori e la dimensione, poi scarica in PNG o SVG - tutto viene eseguito localmente nel tuo browser.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/it/strumenti", "label": "Strumenti" },
+    "third": { "href": "/it/strumenti/generatore-di-codici-qr-gratuito", "label": "Generatore QR" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Generatore di codici QR gratuito online - PNG e SVG",
+      "alternateName": [
+        "Generatore di codici QR online",
+        "Codice QR per sito web",
+        "Generatore di vCard QR",
+        "Codice QR per menu ristorante",
+        "Codice QR personalizzato",
+        "Creare un codice QR gratis",
+        "Codice QR per biglietto da visita",
+        "Codice QR per e-mail",
+        "Codice QR per telefono",
+        "Generatore di codici QR PNG e SVG",
+        "Codice QR personalizzabile con colori"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "QRCodeGenerator",
+      "description": "Generatore di codici QR gratuito. Crea codici QR per URL, vCard, testo, e-mail e telefono. Colori e dimensione personalizzabili. Esportazione in PNG e SVG.",
+      "featureList": [
+        "Codici QR per URL, vCard, testo, e-mail, telefono",
+        "Colori personalizzabili (primo piano e sfondo)",
+        "Dimensione regolabile",
+        "Esportazione in PNG e SVG",
+        "Esecuzione locale nel browser",
+        "Senza registrazione e senza limiti"
+      ]
+    },
+    "howTo": {
+      "name": "Come creare un codice QR",
+      "description": "Inserisci il contenuto (URL, vCard, testo), personalizza i colori e la dimensione, poi scarica il codice QR in PNG o SVG.",
+      "steps": [
+        { "name": "Scegliere il tipo di contenuto", "text": "Seleziona il tipo di codice QR: URL, vCard, testo, e-mail o telefono." },
+        { "name": "Inserire il contenuto", "text": "Inserisci l'URL, i dati di contatto o il testo che il codice QR deve contenere." },
+        { "name": "Personalizzare e scaricare", "text": "Regola i colori e la dimensione, poi scarica il codice QR in PNG o SVG." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Perché usare i codici QR?",
+      "html": "<p class=\"text-mid\">I codici QR sono diventati uno strumento essenziale per collegare il mondo fisico a quello digitale. Permettono agli utenti di accedere istantaneamente a un sito web, aggiungere dati di contatto alla rubrica o consultare un menu, semplicemente scansionando il codice con il telefono.</p><p class=\"text-mid mt-3\">Questo strumento genera codici QR per diversi tipi di contenuto: URL, vCard, testo, e-mail e telefono. Puoi personalizzare i colori e la dimensione, poi scaricare il codice in PNG (per il web) o SVG (per la stampa).</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Come usare il generatore",
+      "description": "La creazione di un codice QR richiede solo pochi secondi:",
+      "grid": "three",
+      "items": [
+        { "icon": "RiQrCodeLine", "title": "1. Scegli il tipo", "description": "Seleziona il tipo di contenuto: URL, vCard, testo, e-mail o telefono." },
+        { "icon": "RiSettings3Line", "title": "2. Inserisci e personalizza", "description": "Inserisci il contenuto, regola i colori e la dimensione del codice QR." },
+        { "icon": "RiDownloadLine", "title": "3. Scarica", "description": "Scarica il codice QR in PNG o SVG." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Tipi di codici QR",
+      "description": "Scegli il tipo di contenuto adatto alle tue esigenze:",
+      "grid": "three",
+      "items": [
+        { "icon": "RiGlobalLine", "title": "URL / Sito web", "description": "Reindirizza gli utenti al tuo sito, landing page o negozio online." },
+        { "icon": "RiContactsLine", "title": "vCard", "description": "Biglietto da visita digitale - la scansione aggiunge i tuoi dati ai contatti del telefono." },
+        { "icon": "RiFileTextLine", "title": "Testo", "description": "Testo libero - codice Wi-Fi, messaggio, istruzioni o qualsiasi altro testo breve." },
+        { "icon": "RiMailLine", "title": "E-mail", "description": "Apre l'app di posta con indirizzo, oggetto e corpo precompilati." },
+        { "icon": "RiPhoneLine", "title": "Telefono", "description": "Chiamata diretta - la scansione avvia una chiamata al numero indicato." },
+        { "icon": "RiPaletteLine", "title": "Personalizzazione", "description": "Colori di primo piano e sfondo liberamente configurabili." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "PNG o SVG - quale formato scegliere?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>PNG</strong> - immagine raster. Ideale per il web, le e-mail e le presentazioni.</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>SVG</strong> - immagine vettoriale. Ideale per la stampa (volantini, poster, biglietti da visita). qualità perfetta a qualsiasi dimensione.</span></div></div>",
+      "html": "<p class=\"text-mid\">La scelta del formato dipende dall'uso previsto:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>PNG</strong> - per il web, le e-mail e le presentazioni. Dimensione consigliata: 200-400 px.</li><li><strong>SVG</strong> - per la stampa. Ridimensionamento senza perdita di qualità, ideale per volantini, poster e biglietti da visita.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Applicazioni dei codici QR: biglietti da visita, volantini, menu",
+      "description": "I codici QR sono utilizzati in numerosi settori e scenari:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Biglietti da visita",
+          "description": "Un codice vCard su un biglietto da visita permette al destinatario di salvare il contatto con una sola scansione, senza digitazione manuale."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Menu di ristoranti",
+          "description": "Un codice QR sul tavolo rimanda al menu digitale. Una soluzione igienica molto diffusa dalla pandemia di COVID-19."
+        },
+        { "icon": "RiPrinterLine", "title": "Volantini e poster", "description": "Codice QR con link a una pagina prodotto, un modulo di iscrizione o un'offerta speciale." },
+        { "icon": "RiBuilding2Line", "title": "Confezioni prodotti", "description": "Link al manuale d'uso, alla scheda di garanzia o al sito del produttore." },
+        { "icon": "RiHospitalLine", "title": "Studi medici", "description": "Codici QR sulle tessere pazienti che rimandano al portale pazienti o al sistema di prenotazione appuntamenti." },
+        { "icon": "RiHome4Line", "title": "Immobiliare", "description": "Codici sui cartelli che rimandano all'annuncio completo con galleria foto e dettagli." },
+        { "icon": "RiTruckLine", "title": "Magazzini e logistica", "description": "Etichette QR per tracciare lotti di prodotti, posizioni di stoccaggio e cronologià delle spedizioni." },
+        { "icon": "RiShoppingCartLine", "title": "E-commerce", "description": "Codici sugli imballaggi che rimandano alle istruzioni di reso, alle recensioni o ai programmi fedelta." },
+        { "icon": "RiCalendarEventLine", "title": "Eventi e conferenze", "description": "Biglietti con codici QR per una verifica rapida all'ingresso." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Personalizzazione dell'aspetto del codice QR",
+      "variant": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Dimensione</span><span class=\"inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-neutral-800\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margine</span><span class=\"inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-neutral-800\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Colore del codice</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Colore di sfondo</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Il generatore ti permette di personalizzare diversi parametri che influenzano l'aspetto e la leggibilità del codice:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Dimensione (px)</strong> - dimensione del codice in pixel. Per la stampa standard (volantini, biglietti da visita), scegli 300-500 px. Per l'uso digitale, 150-200 px sono sufficienti.</li><li><strong>Margine</strong> - zona bianca attorno al codice necessaria per una scansione corretta. Il valore consigliato e 2-4. Un valore di 0 può ostacolare la scansione su sfondo scuro.</li><li><strong>Colore del codice QR</strong> - nero per impostazione predefinita (#000000). Puoi cambiarlo con qualsiasi colore scuro corrispondente alla tua identità visiva.</li><li><strong>Colore di sfondo</strong> - bianco per impostazione predefinita (#ffffff). Puoi cambiarlo con qualsiasi colore chiaro. Il generatore ti avvisera se il contrasto è troppo basso.</li></ul><p class=\"text-mid mt-3\"><strong>Consiglio:</strong> Mantieni un contrasto elevato tra il codice e lo sfondo (minimo 3:1). Un codice scuro su sfondo chiaro si scansiona più facilmente.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Livelli di correzione degli errori: L, M, Q, H",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Basso)</span><span class=\"inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-neutral-800\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Medio)</span><span class=\"inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Quartile)</span><span class=\"inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-neutral-800\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (Alto)</span><span class=\"inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-neutral-800\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">La correzione degli errori è un meccanismo che permette di leggere un codice QR anche quando una parte e danneggiata, sporca o coperta. Il generatore utilizza l'algoritmo Reed-Solomon, uno standard per i codici QR.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Basso) - 7%</strong> - ridondanza minima, il codice e più compatto. Da scegliere quando il codice verra utilizzato in condizioni ideali (schermo, stampa di alta qualità).</li><li><strong>M (Medio) - 15%</strong> - valore predefinito, buon equilibrio tra capacità e resistenza. Adatto alla maggior parte degli usi.</li><li><strong>Q (Quartile) - 25%</strong> - resistenza aumentata ai danni. Da scegliere per codici stampati su materiali soggetti a sporcarsi.</li><li><strong>H (Alto) - 30%</strong> - resistenza massima. Consigliato per supporti esterni, imballaggi e situazioni in cui il codice può essere parzialmente coperto (es.: logo al centro).</li></ul><p class=\"text-mid mt-3\"><strong>Nota:</strong> Un livello di correzione più elevato significa un codice più grande e complesso. Con grandi quantità di dati è il livello H, il codice può diventare molto denso.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs SVG: quale formato scegliere per la stampa?",
+      "plans": [
+        { "id": "png", "name": "PNG (raster)" },
+        { "id": "svg", "name": "SVG (vettoriale)", "highlighted": true }
+      ],
+      "features": [
+        { "name": "Siti web e social media", "values": { "png": true, "svg": true } },
+        { "name": "Volantini e biglietti da visita", "values": { "png": true, "svg": true } },
+        { "name": "Poster e striscioni (grande formato)", "values": { "png": false, "svg": true } },
+        { "name": "Ridimensionamento senza perdita di qualità", "values": { "png": false, "svg": true } },
+        { "name": "Modifica in software grafico", "values": { "png": false, "svg": true } },
+        { "name": "Dimensione file ridotta", "values": { "png": false, "svg": true } },
+        { "name": "Presentazioni", "values": { "png": true, "svg": true } }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Consigli per la stampa dei codici QR",
+      "description": "Per garantire la leggibilità del codice QR dopo la stampa, segui queste regole:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "Dimensione minima",
+          "description": "Il codice deve misurare almeno 2x2 cm per una scansione a breve distanza. più la distanza di scansione e grande, più il codice deve essere grande."
+        },
+        { "icon": "RiContrastLine", "title": "Contrasto", "description": "Codice scuro su sfondo chiaro. Evita colori pastello e basso contrasto." },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Margine attorno al codice",
+          "description": "Mantieni uno spazio vuoto attorno al codice. Non posizionare altri elementi grafici troppo vicini: il margine è essenziale per una scansione corretta."
+        },
+        { "icon": "RiEyeLine", "title": "Test", "description": "Prima della stampa in serie, testa il codice su diversi telefoni e in varie condizioni di illuminazione." },
+        { "icon": "RiShieldCheckLine", "title": "Livello di correzione", "description": "Per la stampa esterna e materiali soggetti a usura, scegli il livello Q o H." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Cosa rende speciale questo generatore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Generazione locale nel browser",
+          "description": "I dati inseriti nel generatore non vengono inviati a nessun server: tutta l'elaborazione avviene localmente sul tuo dispositivo."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "Cinque tipi di dati in un unico strumento",
+          "description": "URL, testo, biglietto da visita vCard, e-mail e telefono: ogni tipo genera un codice QR nello standard appropriato."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Personalizzazione dell'aspetto",
+          "description": "Colori del codice e dello sfondo, dimensione in pixel, margine e livello di correzione degli errori: ogni parametro e configurabile."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Quattro livelli di correzione degli errori",
+          "description": "L'algoritmo Reed-Solomon ti permette di scegliere la resistenza del codice ai danni: dal 7% (L) al 30% (H)."
+        },
+        { "icon": "RiEyeLine", "title": "Anteprima in tempo reale", "description": "Visualizza il risultato immediatamente dopo l'inserimento, senza cliccare su Genera." },
+        { "icon": "RiDownloadLine", "title": "Esportazione PNG e SVG", "description": "Scarica il codice nel formato adatto al tuo uso." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Domande frequenti sul generatore di codici QR",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quali tipi di codici QR posso creare?",
+          "answer": "Puoi creare codici QR per: URL di siti web (il tipo più comune), vCard (biglietto da visita digitale con nome, telefono, e-mail), testo libero, indirizzi e-mail (apertura dell'app di posta) e numeri di telefono (chiamata diretta).",
+          "answerSchemaText": "URL, vCard, testo, e-mail, telefono."
+        },
+        {
+          "question": "Quali formati di download sono disponibili?",
+          "answer": "Il codice QR può essere scaricato in PNG (immagine raster, ideale per il web e le presentazioni) e in SVG (immagine vettoriale, ideale per la stampa senza perdita di qualità a qualsiasi dimensione).",
+          "answerSchemaText": "PNG (raster, per il web) e SVG (vettoriale, per la stampa)."
+        },
+        {
+          "question": "Posso personalizzare i colori del codice QR?",
+          "answer": "Sì. Puoi modificare il colore di primo piano (i moduli) è il colore di sfondo del codice QR. Assicurati di mantenere un contrasto sufficiente affinche il codice resti leggibile dagli scanner.",
+          "answerSchemaText": "Sì. Colore di primo piano e di sfondo personalizzabili."
+        },
+        {
+          "question": "Quale dimensione del codice QR è consigliata?",
+          "answer": "Per il web, 200-400 pixel sono generalmente sufficienti. Per la stampa, usa il formato SVG o un PNG di almeno 600 pixel. Per volantini o poster, un codice QR di almeno 2 cm x 2 cm a 300 DPI è consigliato.",
+          "answerSchemaText": "Web: 200-400 px. Stampa: SVG o PNG 600 px+. Volantini: min. 2 cm x 2 cm a 300 DPI."
+        },
+        {
+          "question": "Cos'e una vCard in un codice QR?",
+          "answer": "Una vCard e un biglietto da visita digitale. Quando un utente scansiona il codice QR, i dati di contatto (nome, telefono, e-mail, azienda) si aggiungono direttamente ai contatti del telefono, senza digitazione manuale.",
+          "answerSchemaText": "Biglietto da visita digitale. La scansione aggiunge i dati direttamente ai contatti del telefono."
+        },
+        {
+          "question": "I miei dati vengono inviati a un server?",
+          "answer": "No. Il codice QR viene generato localmente nel tuo browser. Nessun dato viene inviato o memorizzato.",
+          "answerSchemaText": "No. Generazione locale nel browser."
+        },
+        {
+          "question": "Un codice QR generato con questo strumento scade?",
+          "answer": "No. Un codice QR statico (come quello generato da questo strumento) non scade. Il contenuto - ad es. un URL o dati del biglietto da visita - e codificato direttamente nel codice. Finche la pagina di destinazione esiste, il codice funzionera.",
+          "answerSchemaText": "No. I codici QR statici non scadono. Il contenuto e codificato direttamente nel codice."
+        },
+        {
+          "question": "In cosa si differenzia una vCard da un codice QR con testo?",
+          "answer": "Un codice QR vCard contiene dati di contatto in un formato standardizzato (nome, azienda, telefono, e-mail, indirizzo). Alla scansione, il telefono propone automaticamente di salvare il contatto nella rubrica. Un codice testo mostra i dati in testo semplice, senza salvataggio automatico.",
+          "answerSchemaText": "vCard = formato di contatto standardizzato con salvataggio automatico. Testo = solo testo semplice."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Scopri altri strumenti" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -32,11 +32,8 @@ export const metadata = {
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-logo',
     serviceName: 'Projekt logo',
     description: 'Znak marki z podstawową księgą znaku: warianty, siatka, wersje kolorystyczne. Pliki wektorowe gotowe do użycia.',

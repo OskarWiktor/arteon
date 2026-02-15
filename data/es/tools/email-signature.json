@@ -1,0 +1,287 @@
+{
+  "toolKey": "emailSignature",
+  "locale": "es",
+  "metadata": {
+    "title": "Generador de firma de correo gratis – HTML Gmail y Outlook",
+    "description": "Cree una firma de correo HTML profesional sin programar. Añada datos de contacto, logo, redes sociales y copie en Gmail u Outlook. Sin registro, sin límites.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
+    "path": "/es/herramientas/generador-de-firma-de-correo-gratuito"
+  },
+  "hero": {
+    "title": "Cree una firma de correo HTML profesional",
+    "description": "Construya una firma de correo profesional en minutos. Introduzca sus datos, elija colores y copie el código HTML listo en Gmail, Outlook o cualquier cliente de correo.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/es/herramientas", "label": "Herramientas" },
+    "third": { "href": "/es/herramientas/generador-de-firma-de-correo-gratuito", "label": "Generador de firma de correo" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Generador gratuito de firma de correo online",
+      "alternateName": ["Generador de firma de correo HTML", "Creador de firma de correo electrónico", "Generador de pie de email online"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "EmailSignatureGenerator",
+      "description": "Generador gratuito de firma de correo HTML. Añada datos de contacto, enlace CTA y perfiles de redes sociales, luego copie el código listo en Gmail, Outlook y otros clientes de correo.",
+      "featureList": [
+        "Datos de contacto (nombre, cargo, empresa)",
+        "Teléfono, correo electrónico y URL del sitio web",
+        "Logotipo o foto de perfil con opciones de forma y tamaño",
+        "Iconos de redes sociales (12 plataformas: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
+        "Colores personalizables (texto, acento, fondo)",
+        "Estilo de texto individual para cada elemento de la firma",
+        "Botón CTA con texto y enlace personalizados",
+        "Estilo de línea separadora (estilo, grosor, color)",
+        "Vista previa en vivo con cambio de fondo (claro, oscuro, cuadrícula)",
+        "Vista previa del código fuente HTML en modal",
+        "Copiar código HTML al portapapeles",
+        "Descargar firma como archivo HTML",
+        "Exportar e importar configuración como archivo JSON",
+        "Compatible con Gmail, Outlook, Apple Mail",
+        "Herramienta gratuita, sin registro"
+      ]
+    },
+    "howTo": {
+      "name": "Cómo usar el generador de firma de correo",
+      "description": "Cómo crear una firma de correo HTML profesional usando el generador gratuito de Arteon.",
+      "totalTime": "PT5M",
+      "steps": [
+        {
+          "name": "Elija un diseño de firma",
+          "text": "Seleccione uno de los ocho diseños disponibles: Estándar, Barra superior, Etiquetas a la izquierda, Centrado, Compacto, Dos columnas, Minimalista o Barra inferior."
+        },
+        {
+          "name": "Complete los datos de contacto",
+          "text": "En la pestaña Datos, introduzca su nombre, cargo, empresa, correo electrónico, teléfono y URL del sitio web. Opcionalmente añada un avatar o logotipo."
+        },
+        { "name": "Añada botones CTA", "text": "En la pestaña Botones, añada texto y URL para el botón principal. Opcionalmente añada un segundo botón de estilo contorno." },
+        {
+          "name": "Añada enlaces de redes sociales",
+          "text": "En la pestaña Redes sociales, pegue las URLs de sus perfiles. Plataformas compatibles: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram y Pinterest."
+        },
+        {
+          "name": "Personalice la apariencia",
+          "text": "En la pestaña Apariencia, elija un tema de color, fuente y tamaño de texto. En la pestaña Estilo de texto, cambie colores y tamaños de elementos individuales."
+        },
+        { "name": "Añada aviso legal y configure el separador", "text": "En la pestaña Aviso legal, introduzca el texto legal y configure la línea separadora." },
+        {
+          "name": "Previsualice y copie la firma",
+          "text": "La vista previa de la firma está disponible en fondo claro, oscuro o cuadrícula. El botón Copiar firma copia el código listo al portapapeles."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "¿Por qué tener una firma de correo profesional?",
+      "html": "<p class=\"text-mid\">Una firma de correo (también llamada pie de email) es un bloque de información al final de cada mensaje enviado. Contiene datos de contacto, cargo, nombre de la empresa y, a menudo, un enlace al sitio web o calendario de reuniones.</p><p class=\"text-mid mt-3\">El destinatario no tiene que buscar el número de teléfono en mensajes anteriores: todos los datos están disponibles de inmediato. Una firma de correo profesional también muestra que cuida los detalles y mantiene una imagen de empresa coherente en la correspondencia empresarial.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Cómo usar el generador de firma de correo",
+      "description": "Crear una firma de correo profesional tarda solo unos minutos:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Introduzca los datos", "description": "Complete su nombre, cargo, empresa y datos de contacto." },
+        { "title": "2. Personalice la apariencia", "description": "Elija un diseño, colores, añada un logotipo y enlaces de redes sociales." },
+        { "title": "3. Copie el código", "description": "El botón Copiar firma copia el código listo al portapapeles. Solo péguelo en Gmail, Outlook u otro cliente de correo." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Cómo rellenar los datos de la firma",
+      "html": "<p class=\"text-mid\">La pestaña <strong>Datos</strong> contiene todos los campos que puede rellenar. Solo dos son obligatorios: nombre y dirección de correo electrónico. Los campos restantes son opcionales y aparecerán en la firma solo cuando se rellenen.</p><h3 class=\"h5 mt-6 mb-3\">Campos en la pestaña Datos</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Línea sobre el nombre</strong> - texto adicional que se muestra encima del nombre. Puede introducir el nombre de la empresa, eslogan o lema.</li><li><strong>Avatar / logotipo (URL de imagen)</strong> - URL de una foto de perfil o logotipo de empresa. La imagen debe ser cuadrada (mín. 120×120 px) y accesible públicamente online. Después de pegar la URL, aparecen opciones adicionales: <strong>Forma del avatar</strong> (redondo, redondeado o cuadrado) y <strong>Tamaño del avatar</strong> (pequeño - 40 px, mediano - 56 px, grande - 72 px).</li><li><strong>Nombre completo</strong> - campo obligatorio. Introduzca su nombre completo.</li><li><strong>Etiqueta de nombre</strong> - texto corto junto al nombre, p. ej., pronombres o título abreviado.</li><li><strong>Cargo</strong> - su rol en la empresa, p. ej., Director de Ventas, Especialista en Marketing.</li><li><strong>Nombre de la empresa</strong> - el nombre de la organización que representa.</li><li><strong>Línea adicional</strong> - una breve descripción de lo que hace o lo que ofrece.</li><li><strong>Correo electrónico</strong> - campo obligatorio. Introduzca su dirección de correo empresarial.</li><li><strong>Teléfono</strong> - número de contacto. Cualquier formato, p. ej., +34 600 000 000.</li><li><strong>Sitio web</strong> - URL completa de su sitio web, empezando por https://.</li><li><strong>Dirección</strong> - dirección física de la empresa (calle, ciudad, código postal).</li><li><strong>Datos formales</strong> - NIF, número de licencia u otros datos requeridos en su sector.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Diseños de firma: ¿cuál elegir?",
+      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Diseño de firma</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800\">Estándar</span><span class=\"inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-neutral-800\">Barra de acento</span><span class=\"inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-neutral-800\">Barra superior</span><span class=\"inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-neutral-800\">Etiquetas izquierda</span><span class=\"inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-neutral-800\">Centrado</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">Juan García</p><p class=\"text-mid text-sm\">Desarrollador Web</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">juan@example.com</p><p class=\"text-mid\">+34 600 000 000</p></div></div></div>",
+      "html": "<p class=\"text-mid\">El generador ofrece ocho diseños predefinidos. Cada uno presenta la misma información de una forma diferente.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Estándar</strong> - diseño vertical clásico, se adapta a la mayoría de los casos.</li><li><strong>Barra superior</strong> - una barra horizontal separa la firma del contenido.</li><li><strong>Etiquetas a la izquierda</strong> - dos columnas: etiquetas y valores.</li><li><strong>Centrado</strong> - apariencia formal, contenido centrado.</li><li><strong>Compacto</strong> - todo en una línea, altura mínima.</li><li><strong>Dos columnas</strong> - datos a la izquierda, información de contacto a la derecha.</li><li><strong>Minimalista</strong> - solo la información más importante.</li><li><strong>Barra inferior</strong> - barra de color con contacto en la parte inferior de la firma.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Cómo añadir botones CTA",
+      "html": "<p class=\"text-mid\">Un botón CTA (llamada a la acción) es un elemento clicable que dirige al destinatario a una página elegida. Puede ser un enlace a un calendario de reuniones, formulario de contacto u oferta. El generador permite añadir dos botones CTA.</p><h3 class=\"h5 mt-6 mb-3\">Botón principal</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Abra la pestaña <strong>Botones</strong> en el editor.</li><li>En la sección <strong>Botón principal</strong>, introduzca el texto que verá el destinatario, p. ej., Agendar una consulta gratuita.</li><li>En el campo <strong>Enlace CTA</strong>, pegue la URL completa. La dirección debe empezar por https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Botón secundario</h3><p class=\"text-mid\">Puede añadir un segundo botón CTA en estilo contorno (fondo transparente con borde). Rellene los campos de la sección <strong>Botón secundario</strong> de la misma forma que para el botón principal.</p><h3 class=\"h5 mt-6 mb-3\">Redondeo de botones</h3><p class=\"text-mid\">En la parte inferior de la pestaña Botones encontrará la opción <strong>Redondeo de botones</strong>. Hay tres variantes disponibles: Ninguno (esquinas rectas), Ligero (ligeramente redondeado) o Completo (botón ovalado).</p><p class=\"text-mid mt-4\">Si deja ambos campos vacíos, el botón no aparecerá en la firma. Si solo rellena un campo, el botón tampoco será visible: se necesitan tanto el texto como el enlace.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Cómo añadir enlaces de redes sociales",
+      "html": "<p class=\"text-mid\">En la pestaña <strong>Redes sociales</strong> puede añadir enlaces a sus perfiles. El generador admite doce plataformas: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (antes Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram y Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Cómo hacerlo</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Abra la pestaña <strong>Redes sociales</strong> en el editor.</li><li>Junto a cada plataforma encontrará un campo de URL. Pegue el enlace completo a su perfil, p. ej., https://www.linkedin.com/in/superfil.</li><li>Rellene solo los campos que necesite. Los campos vacíos no aparecerán en la firma.</li></ol><h3 class=\"h5 mt-6 mb-3\">Iconos de redes sociales</h3><p class=\"text-mid\">En la parte inferior de la pestaña Redes sociales encontrará la opción <strong>Mostrar iconos junto a los nombres de servicios</strong>. Cuando está activada, los enlaces se muestran como iconos SVG en color en lugar de solo nombres.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Tamaño de icono</strong> - opciones: Pequeño (16 px), Mediano (20 px) o Grande (24 px).</li><li><strong>Color de icono</strong> - Colores de plataforma (colores predeterminados de cada plataforma), Color de acento (color de acento uniforme) o Color de texto.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Personalización de la apariencia",
+      "html": "<p class=\"text-mid\">En la pestaña <strong>Apariencia</strong> puede personalizar colores, fuente y otros elementos visuales de la firma.</p><h3 class=\"h5 mt-6 mb-3\">Temas de color</h3><p class=\"text-mid\">En la parte superior de la pestaña encontrará cinco temas predefinidos: Oscuro, Azul, Púrpura, Verde y Gris. Al hacer clic en un tema se establece automáticamente el color de acento y el color del texto. Es la forma más rápida de conseguir una firma con un aspecto coherente.</p><h3 class=\"h5 mt-6 mb-3\">Colores</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Color de acento</strong> - se usa en la barra lateral/superior, botón CTA y enlaces. Puede elegir cualquier color de la paleta.</li><li><strong>Color del texto</strong> - color de todo el texto de la firma (nombre, datos de contacto, aviso legal).</li><li><strong>Color de fondo</strong> - color de fondo de toda la firma. Blanco por defecto, pero puede cambiarlo.</li></ul><h3 class=\"h5 mt-6 mb-3\">Fuente y tamaño</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Fuente</strong> - opciones: Arial, Verdana, Tahoma, Trebuchet MS y Georgia. Todas son seguras para correo electrónico y se mostrarán correctamente para el destinatario.</li><li><strong>Tamaño del texto</strong> - tres opciones: Pequeño (12 px), Estándar (14 px) y Mayor (16 px).</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Aviso legal: cuándo añadirlo",
+      "html": "<p class=\"text-mid\">En la pestaña <strong>Aviso legal</strong> puede añadir texto legal que aparecerá en la parte inferior de la firma en fuente más pequeña.</p><h3 class=\"h5 mt-6 mb-3\">Cuándo añadir un aviso legal</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Correspondencia empresarial</strong> - aviso de confidencialidad y solicitud de eliminación en caso de entrega incorrecta.</li><li><strong>Requisitos sectoriales</strong> - algunos sectores (p. ej., legal, médico, financiero) requieren información específica en cada mensaje.</li><li><strong>RGPD</strong> - información sobre el tratamiento de datos personales, si la empresa es responsable del tratamiento.</li></ul><p class=\"text-mid mt-4\">Por defecto, el campo está relleno con un texto de confidencialidad de ejemplo. Puede editarlo, eliminarlo o reemplazarlo con su propio aviso legal. Si deja el campo vacío, no aparecerá ningún aviso en la firma.</p><h3 class=\"h5 mt-6 mb-3\">Línea separadora</h3><p class=\"text-mid\">Debajo del campo de texto encontrará la opción <strong>Mostrar divisor entre datos de contacto y aviso legal</strong>. Actívela para añadir una línea horizontal entre los datos de contacto y el aviso legal.</p><p class=\"text-mid mt-3\">Después de activar la línea, aparecen opciones de personalización adicionales:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Estilo de línea</strong> - opciones: solida, discontinua o punteada.</li><li><strong>Grosor de línea</strong> - tres opciones: 1 px, 2 px o 3 px.</li><li><strong>Color de línea</strong> - gris por defecto (#e5e7eb). Puede elegir cualquier color de la paleta o restaurar el predeterminado haciendo clic en el botón Predeterminado.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Estilo de texto: colores y tamaños de elementos individuales",
+      "html": "<p class=\"text-mid\">En la pestaña <strong>Estilo de texto</strong> puede personalizar individualmente el color y tamaño de fuente de cada elemento textual de la firma.</p><h3 class=\"h5 mt-6 mb-3\">Elementos disponibles</h3><p class=\"text-mid\">Solo se muestran los elementos que actualmente tienen datos rellenados. Para cada elemento puede configurar:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Nombre completo</strong> - se muestra por defecto en el color de acento.</li><li><strong>Cargo</strong> - su rol en la empresa.</li><li><strong>Empresa</strong> - nombre de la organización.</li><li><strong>Datos de contacto</strong> - correo electrónico, teléfono, sitio web (etiquetas).</li><li><strong>Redes sociales</strong> - enlaces a perfiles.</li><li><strong>Aviso legal</strong> - texto legal en la parte inferior de la firma.</li></ul><h3 class=\"h5 mt-6 mb-3\">Cómo cambiar el color</h3><p class=\"text-mid\">Junto a cada elemento encontrará una fila de opciones de color. Haga clic en un cuadrado de color para seleccionarlo. También puede añadir un color personalizado haciendo clic en el cuadrado de color con el signo más: elija un color y haga clic en Guardar. Los colores personalizados (hasta 8) se comparten entre todos los elementos.</p><p class=\"text-mid mt-3\">El botón con icono de reinicio restaura el color predeterminado del elemento.</p><h3 class=\"h5 mt-6 mb-3\">Cómo cambiar el tamaño</h3><p class=\"text-mid\">En la segunda línea encontrará el control de tamaño con botones - y +. El valor muestra el desplazamiento respecto al tamaño de fuente base (configurado en la pestaña Apariencia). Rango: de -4 a +4 píxeles.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Espaciado entre elementos",
+      "html": "<p class=\"text-mid\">En la pestaña <strong>Espaciado</strong> puede controlar con precisión las distancias entre los elementos individuales de la firma.</p><h3 class=\"h5 mt-6 mb-3\">Margen interno de la firma</h3><p class=\"text-mid\">En la parte superior de la pestaña encontrará la opción de margen interno, es decir, la distancia entre el contenido de la firma y sus bordes. Hay tres valores disponibles: 8 px (pequeño), 16 px (mediano) y 24 px (grande).</p><h3 class=\"h5 mt-6 mb-3\">Espaciado entre elementos</h3><p class=\"text-mid\">Debajo del margen encontrará controles para los elementos individuales de la firma. Cada control tiene botones + y - para aumentar o disminuir el espaciado. Solo se muestran las opciones de los elementos que actualmente están en la firma.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Después del nombre</strong> - espacio debajo de la línea del nombre.</li><li><strong>Después del cargo / empresa</strong> - espacio debajo de la línea del cargo y nombre de empresa.</li><li><strong>Después de la línea adicional</strong> - espacio debajo de la descripción (si está rellenada).</li><li><strong>Después de los datos de contacto</strong> - espacio debajo del correo, teléfono y sitio web.</li><li><strong>Después de las redes sociales</strong> - espacio debajo de los enlaces a perfiles.</li><li><strong>Después del botón CTA</strong> - espacio debajo del botón (si está activado).</li><li><strong>Antes del aviso legal</strong> - espacio encima del texto del aviso legal.</li></ul><p class=\"text-mid mt-4\">Si elimina los datos de un campo (p. ej., borra el teléfono), la opción de espaciado correspondiente desaparece automáticamente de la pestaña.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Autoguardado y reinicio de configuración",
+      "html": "<p class=\"text-mid\">El generador guarda automáticamente todas las configuraciones en la memoria del navegador (localStorage). Después de actualizar la página o volver a abrir la herramienta, los datos, diseño, colores y todas las demás opciones se restaurarán.</p><h3 class=\"h5 mt-6 mb-3\">Cómo funciona el autoguardado</h3><p class=\"text-mid\">Cada cambio (texto, color, diseño, espaciado) se guarda inmediatamente en la memoria del navegador. El guardado ocurre automáticamente en segundo plano, sin necesidad de hacer clic en ningún botón.</p><h3 class=\"h5 mt-6 mb-3\">Cómo reiniciar la configuración</h3><p class=\"text-mid\">Debajo de la vista previa de la firma encontrará el botón <strong>Reiniciar apariencia</strong>. Al hacer clic aparecerá una ventana de confirmación. Confirmar el reinicio restaurará todos los datos y configuraciones a los valores predeterminados. Esta operación no se puede deshacer.</p><h3 class=\"h5 mt-6 mb-3\">Exportar e importar configuración</h3><p class=\"text-mid\">Debajo de la vista previa de la firma encontrará dos botones adicionales: <strong>Exportar configuración</strong> e <strong>Importar configuración</strong>. La exportación guarda todos los datos, colores, diseño, espaciado y estilos de texto en un archivo JSON. La importación carga una configuración guardada previamente desde un archivo.</p><p class=\"text-mid mt-3\">Esta función es especialmente útil cuando quiere transferir la configuración de la firma entre ordenadores, compartir configuraciones con compañeros o mantener una copia de seguridad de sus ajustes antes de reiniciar.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Cómo copiar la firma en Gmail u Outlook",
+      "description": "Cuando la firma esté lista, solo faltan unos pasos para añadirla a su cliente de correo:",
+      "grid": "three",
+      "items": [
+        { "icon": "RiClipboardLine", "title": "1. Copie el código", "description": "El botón Copiar firma (Gmail / Outlook) copia la firma al portapapeles como HTML formateado, listo para pegar." },
+        {
+          "icon": "RiSettings3Line",
+          "title": "2. Abra la configuración de firma",
+          "description": "En Gmail: Configuración → Ver toda la configuración → Firma. En Outlook: Archivo → Opciones → Correo → Firmas."
+        },
+        {
+          "icon": "RiSaveLine",
+          "title": "3. Pegue y guarde",
+          "description": "En el campo de firma, use Ctrl+V (Windows) o Cmd+V (Mac). La firma aparecerá con todos los colores y formato. Guarde los cambios."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Vista previa de la firma y opciones de exportación",
+      "html": "<p class=\"text-mid\">El panel de vista previa se muestra a la derecha del editor y se actualiza automáticamente con cada cambio. La vista previa está fijada a la pantalla (sticky), por lo que permanece visible incluso mientras se desplaza por las opciones de edición.</p><h3 class=\"h5 mt-6 mb-3\">Cambio de fondo de la vista previa</h3><p class=\"text-mid\">Encima de la vista previa encontrará tres botones de cambio de fondo: <strong>Claro</strong> (fondo gris predeterminado), <strong>Oscuro</strong> (fondo oscuro, útil para comprobar la legibilidad en fondo oscuro) y <strong>Cuadrícula</strong> (patrón de cuadrícula, permite ver la transparencia y los bordes de la firma).</p><h3 class=\"h5 mt-6 mb-3\">Botones de acción</h3><p class=\"text-mid\">Debajo de la vista previa encontrará varios botones:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Copiar firma (Gmail / Outlook)</strong> - copia la firma como HTML formateado al portapapeles. Péguela directamente en la configuración de firma.</li><li><strong>Copiar código HTML</strong> - copia el código HTML sin formato al portapapeles. útil para pegar en un editor HTML o sistema CMS.</li><li><strong>Descargar como HTML</strong> - guarda el código de la firma como archivo .html en el disco. útil para archivar o compartir con un desarrollador.</li><li><strong>Mostrar código HTML</strong> - abre una ventana modal con el código fuente de la firma. Puede revisar el código y copiarlo directamente desde la ventana.</li><li><strong>Exportar configuración</strong> - guarda la configuración completa de la firma (datos, colores, diseño, espaciado, estilos) en un archivo JSON.</li><li><strong>Importar configuración</strong> - carga la configuración desde un archivo JSON. Todas las configuraciones se aplican automáticamente.</li><li><strong>Reiniciar apariencia</strong> - restaura todos los datos y configuraciones a los valores predeterminados (tras confirmación).</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "¿Para quién es el creador de firmas de correo?",
+      "description": "La herramienta de firma de correo es útil para cualquiera que envíe emails empresariales:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiBriefcaseLine", "title": "Emprendedores y freelancers", "description": "Una firma profesional en cada mensaje sin contratar a un diseñador." },
+        { "icon": "RiTeamLine", "title": "Equipos de empresa", "description": "Cada empleado crea su propia firma en el mismo estilo. Identidad coherente en toda la empresa." },
+        { "icon": "RiHandCoinLine", "title": "Representantes de ventas", "description": "Un botón CTA con enlace a un calendario u oferta aumenta las posibilidades de agendar una reunión." },
+        { "icon": "RiScales3Line", "title": "Abogados, contables, médicos", "description": "Posibilidad de añadir un aviso legal, número de licencia, NIF u otros datos requeridos en el sector." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "¿Qué hace especial a este generador de firma de correo HTML?",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ocho diseños de firma",
+          "description": "Estándar, barra superior, etiquetas a la izquierda, centrado, compacto, dos columnas, minimalista y barra inferior."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Autoguardado en el navegador",
+          "description": "Cada cambio se guarda automáticamente en la memoria del navegador. Después de actualizar la página, la firma sigue disponible."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Exportar e importar configuración",
+          "description": "La configuración completa de la firma puede exportarse como archivo JSON y compartirse con compañeros."
+        },
+        {
+          "icon": "RiAppsLine",
+          "title": "12 plataformas de redes sociales",
+          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram y Pinterest."
+        },
+        { "icon": "RiPaletteLine", "title": "Personalización avanzada", "description": "Forma y tamaño de avatar, estilo de línea, colores y tamaños de texto individuales." },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Múltiples opciones de exportación",
+          "description": "Copiar HTML, descargar archivo, vista previa del código fuente, exportación/importación de configuración JSON."
+        },
+        { "icon": "RiShieldCheckLine", "title": "Privacidad", "description": "Los datos no se envían a un servidor. El generador funciona completamente en el navegador." },
+        { "icon": "RiMailCheckLine", "title": "Compatibilidad", "description": "El código HTML generado funciona en Gmail, Outlook, Apple Mail y Thunderbird." },
+        { "icon": "RiEyeLine", "title": "Vista previa en vivo", "description": "Cada cambio es visible al instante en fondo claro, oscuro o cuadrícula." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes sobre el generador de firma de correo",
+      "items": [
+        {
+          "question": "¿La firma funciona en Gmail, Outlook y Apple Mail?",
+          "answer": "Sí. Las firmas generadas por el generador usan tablas HTML que se muestran correctamente en todos los clientes de correo populares: Gmail, Outlook (escritorio y web), Apple Mail, Thunderbird. El diseño se adapta a diferentes dispositivos, incluidos smartphones."
+        },
+        {
+          "question": "¿Puedo añadir un logotipo de empresa?",
+          "answer": "Sí. En la pestaña Datos, pegue la URL de una imagen (logotipo o foto de perfil). La imagen debe ser cuadrada (mín. 120×120 px) y accesible públicamente online. Después de pegar la URL, aparecerán opciones de forma (redondo, redondeado, cuadrado) y tamaño (40, 56 o 72 px)."
+        },
+        {
+          "question": "¿Cómo copio la firma en un cliente de correo?",
+          "answer": "El botón Copiar firma (Gmail / Outlook) debajo de la vista previa copia la firma al portapapeles como HTML formateado. En la configuración de firma de Gmail u Outlook, simplemente use Ctrl+V (Windows) o Cmd+V (Mac)."
+        },
+        {
+          "question": "¿Puedo usar el generador para crear firmas para todo un equipo?",
+          "answer": "Sí. El generador no requiere inicio de sesión ni registro. Cada persona del equipo puede abrir la herramienta, rellenar sus datos y copiar la firma lista. Para mantener la coherencia visual, acuerde configuraciones compartidas: mismo diseño, tema de color y fuente. También puede exportar la configuración como archivo JSON y compartirla con compañeros."
+        },
+        {
+          "question": "¿El botón de copiar está inactivo? ¿Por qué?",
+          "answer": "Para copiar la firma, rellene al menos dos campos: nombre y dirección de correo electrónico. Compruebe que ambos campos estén rellenados."
+        },
+        {
+          "question": "¿El avatar o logotipo no se muestra? ¿Qué hacer?",
+          "answer": "La imagen debe ser accesible públicamente online. La URL debe apuntar directamente a un archivo de imagen (terminando en .jpg, .png o .webp). Las imágenes de Google Drive o Dropbox requieren un enlace de compartir especial."
+        },
+        {
+          "question": "¿La firma se ve diferente para el destinatario? ¿Por qué?",
+          "answer": "Los diferentes clientes de correo (Gmail, Outlook, Apple Mail) pueden diferir ligeramente en cómo renderizan HTML. El generador usa estilos seguros que funcionan en la mayoría de los programas. Si ve diferencias grandes, asegúrese de pegar la firma usando Ctrl+V, no Pegar como texto sin formato."
+        },
+        {
+          "question": "¿El botón CTA no aparece? ¿Qué hacer?",
+          "answer": "El botón requiere ambos campos: texto y enlace. Compruebe que en la pestaña Botones ambos campos estén rellenados y la URL empiece por https://."
+        },
+        {
+          "question": "¿Cómo exportar o importar la configuración de la firma?",
+          "answer": "Debajo de la vista previa de la firma encontrará los botones Exportar configuración e Importar configuración. La exportación guarda la configuración completa (datos, colores, diseño, espaciado, estilos de texto) en un archivo JSON. La importación carga la configuración desde un archivo y aplica automáticamente todas las configuraciones."
+        },
+        {
+          "question": "¿Cómo ver el código fuente de la firma generada?",
+          "answer": "El botón Mostrar código HTML debajo de la vista previa de la firma abre una ventana modal con el código fuente HTML completo. Puede revisarlo y copiarlo directamente desde la ventana. Alternativamente, el botón Copiar código HTML copia el código al portapapeles, y Descargar como HTML lo guarda como archivo."
+        },
+        {
+          "question": "¿Puedo cambiar la forma y tamaño del avatar?",
+          "answer": "Sí. Después de pegar la URL de una imagen en la pestaña Datos, aparecerán opciones adicionales: Forma del avatar (redondo, redondeado, cuadrado) y Tamaño del avatar (pequeño - 40 px, mediano - 56 px, grande - 72 px). Las configuraciones se aplican en todos los diseños de firma."
+        },
+        {
+          "question": "¿Cómo cambiar el estilo de la línea separadora del aviso legal?",
+          "answer": "En la pestaña Aviso legal, active la opción Mostrar línea separadora. Aparecerán opciones adicionales: estilo de línea (sólida, discontinua, punteada), grosor (1-3 px) y color (gris predeterminado o cualquier color elegido de la paleta)."
+        },
+        {
+          "question": "¿Puedo añadir iconos personalizados de redes sociales?",
+          "answer": "El generador ofrece iconos SVG integrados para doce plataformas: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram y Pinterest. Active la opción Mostrar iconos en la pestaña Redes sociales. Puede elegir el tamaño de los iconos y su color (colores de plataforma, color de acento o color de texto)."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Explore otras herramientas" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

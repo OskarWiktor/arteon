@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { getAllArticles, getPrimaryCategorySlug } from '@/lib/blogDataService';
+import { getAllArticlePreviews, getPrimaryCategorySlug } from '@/lib/blogDataService';
 import { slugify } from '@/utils/slugify';
 
-const articles = getAllArticles();
+const articles = getAllArticlePreviews();
 
 export default function ArticlesList({ filterCategorySlug }: { filterCategorySlug?: string }) {
   const items = filterCategorySlug

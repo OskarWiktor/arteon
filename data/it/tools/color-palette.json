@@ -1,0 +1,195 @@
+{
+  "toolKey": "colorPalette",
+  "locale": "it",
+  "metadata": {
+    "title": "Generatore di palette di colori gratuito – 9 palette",
+    "description": "Genera 9 palette di colori da un colore: monocromatica, complementare, triadica, pastello, scura e altre. Codici HEX copiabili con un clic. Senza registrazione, senza limiti.",
+    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "path": "/it/strumenti/generatore-di-palette-di-colori"
+  },
+  "hero": {
+    "title": "Generatore di palette di colori",
+    "description": "Scegli un colore base e genera 9 palette armoniose. Monocromatica, complementare, triadica, pastello, scura e altre - tutti i calcoli vengono eseguiti localmente nel tuo browser.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/it/strumenti", "label": "Strumenti" },
+    "third": { "href": "/it/strumenti/generatore-di-palette-di-colori", "label": "Palette di colori" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Generatore di palette di colori online - 9 palette da un colore",
+      "alternateName": [
+        "Generatore di palette online",
+        "Schemi di colori da un colore",
+        "Generatore di colori complementari",
+        "Palette monocromatica",
+        "Creatore di palette di colori",
+        "Palette triadica online",
+        "Generatore di colori armoniosi"
+      ],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorPaletteGenerator",
+      "description": "Genera palette di colori da un singolo colore base. 9 tipi: monocromatica, analoga, complementare, triadica, complementare divisa, pastello, scura, tonale e minimalista.",
+      "featureList": [
+        "9 tipi di palette da un colore base",
+        "Monocromatica, analoga, complementare, triadica, complementare divisa",
+        "Palette pastello, scura, tonale e minimalista",
+        "Codici HEX copiabili con un clic",
+        "Calcoli basati sullo spazio colore HSL",
+        "Esecuzione locale nel browser"
+      ]
+    },
+    "howTo": {
+      "name": "Come generare palette di colori da un colore",
+      "description": "Scegli un colore base e ottieni 9 palette armoniose con codici HEX copiabili.",
+      "steps": [
+        { "name": "Scegliere il colore base", "text": "Inserisci un codice HEX o usa il selettore di colori per definire il colore base." },
+        { "name": "Visualizzare le palette", "text": "Lo strumento genera automaticamente 9 palette con diversi colori armoniosi ciascuna." },
+        { "name": "Copiare i codici HEX", "text": "Clicca su un colore per copiare il codice HEX negli appunti." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Generare palette da un singolo colore",
+      "html": "<p class=\"text-mid\">Il generatore di palette crea 9 palette diverse da un singolo colore base, basandosi sulla teoria dei colori. Ogni palette ha una composizione diversa - dalle variazioni monocromatiche ai colori complementari contrastanti.</p><p class=\"text-mid mt-3\">Tutti i calcoli si basano sullo spazio colore HSL (tonalità, Saturazione, luminosità). La tonalità determina il colore base, la saturazione l'intensita e la luminosità il carattere chiaro o scuro. Questo modello corrisponde alla percezione umana dei colori e si presta perfettamente alla generazione di palette.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Come usare il generatore",
+      "description": "La generazione richiede solo pochi secondi:",
+      "grid": "three",
+      "items": [
+        { "icon": "RiPaletteLine", "title": "1. Scegli il colore base", "description": "Inserisci un codice HEX o usa il selettore di colori." },
+        { "icon": "RiColorFilterLine", "title": "2. Visualizza le palette", "description": "Lo strumento genera automaticamente 9 palette con diversi colori armoniosi." },
+        { "icon": "RiFileCopyLine", "title": "3. Copia i codici HEX", "description": "Clicca su un colore per copiare il suo codice HEX. Usalo in CSS, Figma o altri strumenti." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "9 tipi di palette - quale si adatta al tuo progetto?",
+      "description": "Ogni palette ha un carattere diverso:",
+      "grid": "three",
+      "items": [
+        { "icon": "RiPaletteLine", "title": "Monocromatica", "description": "Variazioni di una tonalità in luminosità e saturazione. Elegante, armoniosa, professionale." },
+        { "icon": "RiColorFilterLine", "title": "Analoga", "description": "Colori vicini nel cerchio cromatico. Transizione morbida e naturale." },
+        { "icon": "RiContrastLine", "title": "Complementare", "description": "Colore base + colore opposto (180 gradi). Contrasto massimo per design dinamici." },
+        { "icon": "RiMagicLine", "title": "Triadica", "description": "Tre colori a 120 gradi di distanza. Equilibrata con forte contrasto visivo." },
+        { "icon": "RiSearchLine", "title": "Complementare divisa", "description": "Colore base + i due vicini del complementare. Contrasto più sottile." },
+        { "icon": "RiPaintBrushLine", "title": "Pastello", "description": "luminosità elevata, saturazione ridotta. Morbida, ariosa - ideale per design amichevoli." },
+        { "icon": "RiSettings3Line", "title": "Scura", "description": "luminosità bassa, toni profondi. Professionale - adatta alla modalita scura e ai brand premium." },
+        { "icon": "RiRefreshLine", "title": "Tonale (Material Design)", "description": "luminosità graduata su una stessa tonalità. Simile al sistema di colori di Google Material Design." },
+        { "icon": "RiInfinityLine", "title": "Minimalista (Apple)", "description": "Base neutra con un accento colorato. Pulita, moderna - ispirata allo stile Apple." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Come funziona lo spazio colore HSL",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">Esempio: HSL(210, 80%, 50%)</p><div class=\"mt-2 flex items-center gap-3\"><div class=\"h-10 w-10 rounded\" style=\"background-color: hsl(210, 80%, 50%)\"></div><div class=\"text-mid text-sm!\"><p>H = 210 gradi (tonalità blu)</p><p>S = 80% (intenso)</p><p>L = 50% (luminosità media)</p></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">Stessa tonalità, luminosità diversa</p><div class=\"mt-2 flex gap-1\"><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 90%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 70%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 50%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 30%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 10%)\"></div></div><p class=\"text-light mt-1 text-xs!\">L: 90% → 70% → 50% → 30% → 10%</p></div></div>",
+      "html": "<p class=\"text-mid\">Tutte le palette di questo strumento si basano sullo spazio colore HSL (tonalità, Saturazione, luminosità). A differenza di HEX o RGB, HSL descrive i colori come li percepiamo:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Hue (H)</strong> - la tonalità nel cerchio cromatico (0-360 gradi). 0 = rosso, 120 = verde, 240 = blu.</li><li><strong>Saturation (S)</strong> - l'intensita. 0% = grigio, 100% = colore completamente saturo.</li><li><strong>Lightness (L)</strong> - la luminosità. 0% = nero, 50% = colore normale, 100% = bianco.</li></ul><p class=\"text-mid mt-3\">Modificando selettivamente questi valori si ottengono palette armoniose. Le palette monocromatiche variano solo L, le analoghe solo H, e le complementari invertono H di 180 gradi.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Dove usare le palette generate?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "identità visiva del brand",
+          "description": "Seleziona colori complementari per un logo esistente o costruisci una palette di branding da zero, per biglietti da visita, cancelleria e materiali di marketing."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Siti web",
+          "description": "Definisci il colore principale, il colore accento e i toni di sfondo. I codici HEX copiati si incollano direttamente nei fogli di stile CSS o nella configurazione dei temi."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Interfacce di applicazioni",
+          "description": "La palette tonale fornisce varianti di luminosità di un colore: più chiare per gli sfondi, più scure per il testo, intermedie per i bordi e gli stati interattivi."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Visual per i social media",
+          "description": "Colori coerenti per le pubblicazioni, le storie e le copertine del profilo. Le palette analoghe o pastello funzionano bene per uno stile uniforme e riconoscibile."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Presentazioni e documenti",
+          "description": "Insiemi di colori armoniosi per diapositive, grafici e infografiche. Le palette monocromatiche o minimaliste mantengono l'ordine visivo."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Risoluzione dei problemi del generatore di palette",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Le palette non cambiano dopo l'inserimento di un colore",
+          "description": "Digitare semplicemente un codice HEX non genera automaticamente le palette: devi confermare la modifica con il pulsante Aggiorna colore. Solo dopo la conferma lo strumento ricalcola i 9 schemi."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Messaggio di formato non valido",
+          "description": "Il generatore accetta solo il formato HEX con # all'inizio, ad es. #FF5500. I formati senza # (ad es. FF5500) o in notazione RGB (ad es. rgb(255,85,0)) non sono supportati."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Formato HEX corto e completo",
+          "description": "Entrambi i formati sono supportati: completo #RRGGBB (ad es. #FF5500) e corto #RGB (ad es. #F50). Il generatore riconosce automaticamente entrambi e li elabora in modo identico."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Domande frequenti sul generatore di palette",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quante palette genera lo strumento?",
+          "answer": "Lo strumento genera 9 palette diverse da un singolo colore base: monocromatica, analoga, complementare, triadica, complementare divisa, pastello, scura, tonale (Material Design) e minimalista (stile Apple).",
+          "answerSchemaText": "9 palette: monocromatica, analoga, complementare, triadica, complementare divisa, pastello, scura, tonale, minimalista."
+        },
+        {
+          "question": "Cos'e una palette monocromatica?",
+          "answer": "Una palette monocromatica e composta da variazioni di una singola tonalità: tutti i colori condividono la stessa tonalità (H nel modello HSL) e variano solo in luminosità e saturazione. Queste palette sono armoniose e particolarmente adatte ai design professionali.",
+          "answerSchemaText": "Una palette di una singola tonalità con variazioni di luminosità e saturazione."
+        },
+        {
+          "question": "Cos'e una palette complementare?",
+          "answer": "Una palette complementare combina il colore base con il suo complementare: il colore opposto nel cerchio cromatico (spostamento di 180 gradi). Questo contrasto e uno dei principi fondamentali della teoria dei colori e produce un effetto vivace e dinamico.",
+          "answerSchemaText": "Il colore base è il colore opposto nel cerchio cromatico (180 gradi)."
+        },
+        {
+          "question": "Posso copiare i colori generati?",
+          "answer": "Sì. Clicca su un colore nella palette per copiare il suo codice HEX negli appunti. Usalo direttamente in CSS, Figma, Adobe o altri strumenti di design.",
+          "answerSchemaText": "Sì, clicca su un colore per copiare il codice HEX."
+        },
+        {
+          "question": "Cos'e lo spazio colore HSL?",
+          "answer": "HSL sta per Hue (tonalità), Saturation (saturazione) e Lightness (luminosità). A differenza di RGB, HSL descrive i colori come li percepiamo: la tonalità determina il colore base, la saturazione l'intensita, e la luminosità indica se il colore è chiaro o scuro. Tutte le palette di questo strumento si basano su calcoli HSL.",
+          "answerSchemaText": "HSL = tonalità, Saturazione, luminosità. Un modello di colore basato sulla percezione umana."
+        },
+        {
+          "question": "Qual è la differenza tra triadica e complementare divisa?",
+          "answer": "Una palette triadica utilizza tre colori equidistanti nel cerchio cromatico (120 gradi di distanza). Una palette complementare divisa utilizza, al posto del complementare diretto, i due vicini del complementare, producendo un contrasto più sottile.",
+          "answerSchemaText": "Triadica: 3 colori a 120 gradi. Complementare divisa: colore base + 2 vicini del complementare."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Scopri altri strumenti" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

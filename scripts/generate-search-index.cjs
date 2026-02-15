@@ -23,11 +23,7 @@ const searchBlog = blog.articles.map((a) => ({
   k: a.tags,
 }));
 
-fs.writeFileSync(
-  path.join(DATA_DIR, 'search-blog.json'),
-  JSON.stringify(searchBlog),
-  'utf8',
-);
+fs.writeFileSync(path.join(DATA_DIR, 'search-blog.json'), JSON.stringify(searchBlog), 'utf8');
 
 // --- Projects ---
 const projectsPath = path.join(DATA_DIR, 'projects.json');
@@ -40,14 +36,8 @@ const searchProjects = projects.projects.map((p) => ({
   k: p.category,
 }));
 
-fs.writeFileSync(
-  path.join(DATA_DIR, 'search-projects.json'),
-  JSON.stringify(searchProjects),
-  'utf8',
-);
+fs.writeFileSync(path.join(DATA_DIR, 'search-projects.json'), JSON.stringify(searchProjects), 'utf8');
 
 const blogSize = Buffer.byteLength(JSON.stringify(searchBlog));
 const projSize = Buffer.byteLength(JSON.stringify(searchProjects));
-console.log(
-  `[search-index] Generated search-blog.json (${(blogSize / 1024).toFixed(1)}KB) and search-projects.json (${(projSize / 1024).toFixed(1)}KB)`,
-);
+console.log(`[search-index] Generated search-blog.json (${(blogSize / 1024).toFixed(1)}KB) and search-projects.json (${(projSize / 1024).toFixed(1)}KB)`);

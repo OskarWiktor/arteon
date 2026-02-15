@@ -1,0 +1,237 @@
+{
+  "toolKey": "colorPalette",
+  "locale": "es",
+  "metadata": {
+    "title": "Generador de paletas de colores gratis – 9 paletas",
+    "description": "Genere 9 paletas de colores a partir de un color: monocromática, complementaria, triádica, pastel, oscura y más. Copie códigos HEX con un clic. Sin registro, sin límites.",
+    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "path": "/es/herramientas/generador-de-paletas-de-colores"
+  },
+  "hero": {
+    "title": "Generador de paletas de colores",
+    "description": "Introduzca un color base y la herramienta generará 9 paletas de colores armoniosas: monocromática, complementaria, triádica, pastel y más. Cada color se puede copiar con su código HEX.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/es/herramientas", "label": "Herramientas" },
+    "third": { "href": "/es/herramientas/generador-de-paletas-de-colores", "label": "Generador de paletas de colores" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Generador de paletas de colores",
+      "alternateName": ["Generador de esquemas de colores", "Generador de colores online", "Creador de paletas de colores", "Herramienta de combinación de colores", "Generador de armonía de colores"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorPaletteGenerator",
+      "description": "Generador gratuito de paletas de colores online. Introduzca un color HEX y la herramienta generará 9 esquemas: monocromático, análogo, complementario, triádico, complementario dividido, pastel, oscuro, tonal y minimalista. Cada color se puede copiar con su código HEX y valor HSL.",
+      "featureList": [
+        "Esquema monocromático - tonos de un solo color",
+        "Esquema análogo - colores vecinos en la rueda cromática",
+        "Esquema complementario - colores opuestos",
+        "Esquema triádico - 3 colores a intervalos iguales",
+        "Esquema complementario dividido - color base y 2 vecinos de su complementario",
+        "Paleta pastel - tonos claros y suaves",
+        "Paleta oscura - colores profundos para temas oscuros",
+        "Paleta tonal - escala de luminosidad de un tono",
+        "Paleta minimalista - acento fuerte con neutros claros",
+        "Color base en formato HEX",
+        "Selector de color para selección visual",
+        "Color inicial aleatorio",
+        "Copiar código HEX al portapapeles",
+        "Valor HSL mostrado junto a cada color",
+        "Procesamiento local en el navegador"
+      ]
+    },
+    "howTo": {
+      "name": "Cómo generar una paleta de colores a partir de un color base",
+      "description": "Cómo generar 9 paletas de colores a partir de un color base: monocromática, complementaria, triádica, pastel y más. Cada color se puede copiar con su código HEX.",
+      "steps": [
+        { "name": "Elija un color base", "text": "Introduzca un código HEX en el campo de texto o use el selector de color para elegir un color visualmente." },
+        { "name": "Confirme el color", "text": "Confirme el color seleccionado con el botón Actualizar color: la herramienta generará paletas basadas en su color base elegido." },
+        {
+          "name": "Explore las paletas",
+          "text": "La herramienta generará automáticamente 9 paletas diferentes: monocromática, análoga, complementaria, triádica, complementaria dividida, pastel, oscura, tonal y minimalista."
+        },
+        { "name": "Copie los colores", "text": "Junto a cada color encontrará un botón Copiar: el código HEX se copia al portapapeles del sistema." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "¿Por qué generar una paleta de colores?",
+      "html": "<p class=\"text-mid\">Una paleta de colores coherente es la base de todo proyecto visual, desde un sitio web, pasando por un logotipo, hasta materiales impresos. Seleccionar manualmente colores que funcionen juntos requiere conocimientos de teoría del color. El generador lo hace automáticamente: usted proporciona un color base (p. ej., el color de su logotipo) y la herramienta crea 9 conjuntos de colores basados en esquemas de armonía cromática probados.</p><p class=\"text-mid mt-3\">Cada color generado viene con su código HEX (p. ej., #4F6BF5) y valor HSL (tono, saturación, luminosidad). El código HEX se puede pegar directamente en CSS, Figma, Canva o cualquier aplicación gráfica.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Cómo usar el generador de paletas de colores",
+      "description": "Todo el proceso tarda solo unos segundos:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduzca el color base",
+          "description": "Escriba un código HEX (p. ej., #4F6BF5) en el campo de texto o elija un color desde el selector. También puede usar el botón Color aleatorio."
+        },
+        {
+          "title": "2. Confirme su elección",
+          "description": "Después de hacer clic en el botón Actualizar color, la herramienta generará automáticamente 9 paletas basadas en diferentes esquemas de armonía cromática."
+        },
+        { "title": "3. Copie los colores que necesite", "description": "Junto a cada color hay un botón Copiar: el código HEX va al portapapeles y puede pegarse directamente en su proyecto." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "¿Qué esquemas de color genera la herramienta?",
+      "description": "El generador crea 9 tipos de paleta, cada uno basado en un principio diferente de la teoría del color:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiStackLine",
+          "title": "Paleta monocromática",
+          "description": "Varios matices de un color, de claro a oscuro. Todos los colores tienen el mismo tono en la rueda cromática y solo difieren en luminosidad. Funciona bien en diseños elegantes y minimalistas donde la coherencia importa."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Paleta análoga",
+          "description": "Colores vecinos en la rueda cromática (desplazados unos 30° en ambas direcciones desde la base). Crean transiciones de color armoniosas y suaves. Ideal para proyectos que construyen una atmósfera cálida o fría."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Paleta complementaria",
+          "description": "El color base y el color opuesto en la rueda cromática (desplazamiento de 180°). Crea un fuerte contraste visual. útil donde un elemento necesita atraer la atención: botones, encabezados destacados, banners promocionales."
+        },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Paleta triádica",
+          "description": "Tres colores espaciados 120° en la rueda cromática, formando un triángulo equilátero. Una combinación vibrante y dinámica. Funciona bien en proyectos creativos: identidad de marca joven, materiales publicitarios, carteles."
+        },
+        {
+          "icon": "RiCursorLine",
+          "title": "Paleta complementaria dividida",
+          "description": "Una versión más suave de la paleta complementaria. En lugar de un color opuesto, usa dos colores desplazados unos 30° del complementario. Ofrece un contraste claro pero sin una tensión visual tan fuerte."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Paleta pastel",
+          "description": "El mismo tono con saturación reducida y luminosidad aumentada: colores suaves y delicados. Populares en cosmética, moda infantil e industria alimentaria. Combina bien con fondos claros y espacio en blanco."
+        },
+        {
+          "icon": "RiMoonLine",
+          "title": "Paleta oscura",
+          "description": "Color base con alta saturación y luminosidad reducida: colores profundos e intensos. útil para diseñar temas oscuros para sitios web y aplicaciones, así como materiales para marcas premium."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Paleta tonal",
+          "description": "Varios pasos de luminosidad de un tono, de muy claro a oscuro. Similar a las escalas tonales usadas en sistemas de diseño (p. ej., matices de 50 a 900). útil para construir interfaces donde el mismo color necesita variantes."
+        },
+        {
+          "icon": "RiContractLeftRightLine",
+          "title": "Paleta minimalista",
+          "description": "Un acento de color audaz y varios neutros muy claros y suaves. El resto de la paleta permanece atenuado. Funciona bien en interfaces modernas con mucho espacio en blanco: estilo típico de páginas de producto y landing pages."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "¿En qué se basa el generador de paletas de colores?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (tono)</span><span class=\"text-mid\">0°–360° en la rueda cromática</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturación)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (luminosidad)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">Todas las paletas se crean transformando matemáticamente el color base en el espacio de color HSL. HSL describe un color con tres valores: el tono (H) es la posición en la rueda cromática (0°-360°), la saturación (S) determina la intensidad del color y la luminosidad (L) indica lo claro u oscuro que es el color.</p><p class=\"text-mid mt-3\">Las paletas complementaria, triádica y complementaria dividida se basan en la geometría de la rueda cromática: los colores se colocan a intervalos angulares iguales, creando un equilibrio visual. Las paletas monocromática, pastel y oscura cambian solo la luminosidad y la saturación manteniendo el mismo tono.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Dónde usar las paletas de colores generadas",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Identidad visual de marca",
+          "description": "Seleccione colores complementarios para un logotipo existente o construya una paleta de branding desde cero, para tarjetas de visita, papelería y materiales de marketing."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Sitios web",
+          "description": "Establezca el color principal, el color de acento y los tonos de fondo. Los códigos HEX copiados se pegan directamente en hojas de estilo CSS o configuración de temas."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Interfaces de aplicaciones",
+          "description": "La paleta tonal proporciona variantes de luminosidad de un color: más claras para fondos, más oscuras para texto, intermedias para bordes y estados interactivos."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Gráficos para redes sociales",
+          "description": "Colores coherentes para publicaciones, historias y portadas de perfil. Las paletas análogas o pastel funcionan bien cuando se quiere un estilo uniforme y reconocible."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Presentaciones y documentos",
+          "description": "Conjuntos de colores armoniosos para diapositivas, gráficos e infografías. Las paletas monocromáticas o minimalistas mantienen el orden visual."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Solución de problemas del generador de paletas",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Las paletas no cambian después de introducir un color",
+          "description": "Simplemente escribir un código HEX no genera paletas automáticamente: necesita confirmar el cambio con el botón Actualizar color. Solo después de la confirmación la herramienta recalcula los 9 esquemas."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Mensaje de formato no válido",
+          "description": "El generador solo acepta formato HEX con # al principio, p. ej., #FF5500. Los formatos sin # (p. ej., FF5500) o en notación RGB (p. ej., rgb(255,85,0)) no son compatibles."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Formato HEX corto y completo",
+          "description": "Ambos formatos son compatibles: completo #RRGGBB (p. ej., #FF5500) y corto #RGB (p. ej., #F50). El generador reconoce automáticamente ambos y los trata de forma idéntica."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes sobre el generador de paletas de colores",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿En qué formato debe estar el color base?",
+          "answer": "El generador acepta colores en formato HEX, tanto corto (p. ej., #F50) como completo (p. ej., #FF5500). Junto al campo de texto encontrará un selector de color que le permite elegir un color visualmente. Las paletas generadas muestran el código HEX y el valor HSL de cada color.",
+          "answerSchemaText": "El generador acepta colores HEX (#RGB o #RRGGBB). Cada color generado tiene un código HEX y un valor HSL."
+        },
+        {
+          "question": "¿Cuántos colores contiene cada paleta?",
+          "answer": "Cada paleta contiene de 4 a 6 colores. El número depende del tipo de esquema: las paletas monocromáticas y tonales generan más matices (una escala de luminosidad de un tono), mientras que las paletas complementarias y triádicas se centran en menos colores contrastantes.",
+          "answerSchemaText": "Cada paleta contiene de 4 a 6 colores, dependiendo del tipo de esquema."
+        },
+        {
+          "question": "¿Qué es el espacio de color HSL y cómo se lee?",
+          "answer": "HSL es una forma de describir el color usando tres valores: H (tono, 0°-360° en la rueda cromática), S (saturación, 0%-100%) y L (luminosidad, 0%-100%). El generador muestra los valores HSL junto a cada color, lo que facilita entender cómo difieren los colores de la paleta; por ejemplo, una paleta monocromática cambia solo la luminosidad (L) manteniendo el mismo tono (H).",
+          "answerSchemaText": "HSL describe el color mediante tono (H), saturación (S) y luminosidad (L). El generador muestra estos valores junto a cada color."
+        },
+        {
+          "question": "¿Puedo usar las paletas generadas comercialmente?",
+          "answer": "Sí. Puede usar las paletas de colores generadas en cualquier proyecto, comercial y no comercial, sin restricciones de licencia.",
+          "answerSchemaText": "Sí, las paletas generadas pueden usarse sin restricciones en proyectos comerciales y no comerciales."
+        },
+        {
+          "question": "¿El generador de paletas de colores requiere inicio de sesión o pago?",
+          "answer": "El generador es completamente gratuito y no requiere inicio de sesión ni registro. Los colores se generan localmente en el navegador: no se envían datos a servidores externos.",
+          "answerSchemaText": "El generador es gratuito y no requiere inicio de sesión. Los colores se generan localmente en el navegador."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Explore otras herramientas" },
+    { "type": "gap", "size": "sm" }
+  ]
+}
