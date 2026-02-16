@@ -1,0 +1,402 @@
+{
+  "toolKey": "emailSignature",
+  "locale": "tr",
+  "metadata": {
+    "title": "Ücretsiz E-posta İmza Oluşturucu – Gmail ve Outlook İçin HTML",
+    "description": "Kodlama olmadan profesyonel HTML e-posta imzası oluşturun. İletişim bilgileri, logo, sosyal medya bağlantıları ekleyin ve Gmail veya Outlook'a kopyalayın. Kayıt gerektirmez, sınırsız.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
+    "path": "/tr/araclar/ucretsiz-e-posta-imza-olusturucu"
+  },
+  "hero": {
+    "title": "Profesyonel HTML e-posta imzası oluşturun",
+    "description": "Dakikalar içinde profesyonel bir e-posta imzası oluşturun. Bilgilerinizi girin, renkleri seçin ve hazır HTML kodunu Gmail, Outlook veya herhangi bir e-posta istemcisine kopyalayın.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/tr/araclar",
+      "label": "Araçlar"
+    },
+    "third": {
+      "href": "/tr/araclar/ucretsiz-e-posta-imza-olusturucu",
+      "label": "E-posta imza oluşturucu"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Ücretsiz e-posta imza oluşturucu",
+      "alternateName": ["HTML e-posta imza oluşturucu", "E-posta imzası oluşturucu", "E-posta alt bilgi oluşturucu"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "EmailSignatureGenerator",
+      "description": "Ücretsiz HTML e-posta imza oluşturucu. İletişim bilgileri, CTA bağlantısı ve sosyal medya profilleri ekleyin, ardından hazır kodu Gmail, Outlook ve diğer e-posta istemcilerine kopyalayın.",
+      "featureList": [
+        "İletişim bilgileri (ad, unvan, şirket)",
+        "Telefon, e-posta ve web sitesi URL'si",
+        "Şekil ve boyut seçenekleriyle logo veya profil fotoğrafı",
+        "Sosyal medya simgeleri (12 platform: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
+        "Özelleştirilebilir renkler (metin, vurgu, arka plan)",
+        "Her imza öğesi için bireysel metin stili",
+        "Özel metin ve bağlantılı CTA düğmesi",
+        "Ayırıcı çizgi stili (stil, kalınlık, renk)",
+        "Arka plan değiştirmeli canlı imza önizlemesi (açık, koyu, dama tahtası)",
+        "Modal'da HTML kaynak kodu önizlemesi",
+        "HTML kodunu panoya kopyala",
+        "İmzayı HTML dosyası olarak indir",
+        "Yapılandırmayı JSON dosyası olarak dışa/içe aktar",
+        "Gmail, Outlook, Apple Mail ile uyumlu",
+        "Ücretsiz araç, giriş gerektirmez"
+      ]
+    },
+    "howTo": {
+      "name": "E-posta imza oluşturucu nasıl kullanılır",
+      "description": "Ücretsiz Arteon oluşturucusu kullanarak profesyonel HTML e-posta imzası nasıl oluşturulur.",
+      "totalTime": "PT5M",
+      "steps": [
+        {
+          "name": "İmza düzeni seçin",
+          "text": "Sekiz mevcut düzenden birini seçin: Standart, Üst çubuk, Sol etiketler, Ortalanmış, Kompakt, İki sütun, Minimalist veya Alt çubuk."
+        },
+        {
+          "name": "İletişim bilgilerini doldurun",
+          "text": "Ayrıntılar sekmesinde adınızı, unvanınızı, şirketinizi, e-postanızı, telefonunuzu ve web sitesi URL'nizi girin. İsteğe bağlı olarak avatar veya logo ekleyin — resim URL'sini girdikten sonra şekil (yuvarlak, yuvarlatılmış, kare) ve boyut (40, 56 veya 72 px) seçebilirsiniz."
+        },
+        {
+          "name": "CTA düğmeleri ekleyin",
+          "text": "Düğmeler sekmesinde, ana düğme için metin ve URL ekleyin. İsteğe bağlı olarak çerçeve stilli ikinci bir düğme ekleyin ve düğme yuvarlatması seçin."
+        },
+        {
+          "name": "Sosyal medya bağlantıları ekleyin",
+          "text": "Sosyal Medya sekmesinde profillerinizin URL'lerini yapıştırın. Desteklenen platformlar: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram ve Pinterest."
+        },
+        {
+          "name": "Görünümü özelleştirin",
+          "text": "Görünüm sekmesinde renk teması, yazı tipi ve metin boyutu seçin. Metin Stili sekmesinde bireysel öğelerin renklerini ve boyutlarını değiştirin."
+        },
+        {
+          "name": "Yasal uyarı ekleyin ve ayırıcıyı yapılandırın",
+          "text": "Yasal Uyarı sekmesinde yasal metni girin ve ayırıcı çizgiyi yapılandırın — stil (düz, kesikli, noktalı), kalınlık (1–3 px) ve renk seçin."
+        },
+        {
+          "name": "Önizleyin ve imzayı kopyalayın",
+          "text": "İmza önizlemesi açık, koyu veya dama tahtası arka planında mevcuttur. İmzayı kopyala (Gmail / Outlook) düğmesi hazır kodu panoya kopyalar. Ayrıca mevcut: HTML kodunu kopyala, HTML olarak indir, HTML kodunu görüntüle ve yapılandırmayı JSON dosyası olarak dışa aktar."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Neden profesyonel e-posta imzası olmalı?",
+      "html": "<p class=\"text-mid\">E-posta imzası (e-posta alt bilgisi olarak da adlandırılır), gönderilen her mesajın sonundaki bilgi bloğudur. İletişim bilgileri, iş unvanı, şirket adı ve genellikle web sitesine veya toplantı takvimine bağlantı içerir.</p><p class=\"text-mid mt-3\">Alıcının önceki mesajlarda telefon numarasını aramasına gerek yoktur — tüm ayrıntılar kolayca erişilebilir. Profesyonel bir e-posta imzası ayrıca ayrıntılara dikkat ettiğinizi ve iş yazışmalarında tutarlı bir şirket imajı koruduğunuzu gösterir.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "E-posta imza oluşturucu nasıl kullanılır",
+      "description": "Profesyonel bir e-posta imzası oluşturmak sadece birkaç dakika sürer:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Bilgileri girin",
+          "description": "Adınızı, unvanınızı, şirketinizi ve iletişim bilgilerinizi doldurun."
+        },
+        {
+          "title": "2. Görünümü özelleştirin",
+          "description": "Düzen, renkler seçin, logo ve sosyal medya bağlantıları ekleyin."
+        },
+        {
+          "title": "3. Kodu kopyalayın",
+          "description": "İmzayı kopyala düğmesi hazır kodu panoya kopyalar. Gmail, Outlook veya başka bir e-posta istemcisine yapıştırmanız yeterli."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "İmza bilgileri nasıl doldurulur",
+      "html": "<p class=\"text-mid\"><strong>Ayrıntılar</strong> sekmesi doldurabileceğiniz tüm alanları içerir. Yalnızca ikisi zorunludur: ad ve e-posta adresi. Kalan alanlar isteğe bağlıdır ve yalnızca doldurulduğunda imzada görünür.</p><h3 class=\"h5 mt-6 mb-3\">Ayrıntılar sekmesindeki alanlar</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Ad üstü satır</strong> — adın üzerinde görüntülenen ek metin. Şirket adı, slogan veya motto girebilirsiniz.</li><li><strong>Avatar / logo (resim URL'si)</strong> — profil fotoğrafı veya şirket logosunun URL'si. Resim kare olmalı (min. 120×120 px) ve internet üzerinden herkese açık olmalıdır. URL'yi yapıştırdıktan sonra ek seçenekler görünür: <strong>Avatar şekli</strong> (yuvarlak, yuvarlatılmış veya kare) ve <strong>Avatar boyutu</strong> (küçük — 40 px, orta — 56 px, büyük — 72 px).</li><li><strong>Tam ad</strong> — zorunlu alan. Tam adınızı girin.</li><li><strong>Ad etiketi</strong> — adın yanındaki kısa metin, ör. zamirler veya kısaltılmış unvan.</li><li><strong>İş unvanı</strong> — şirketteki rolünüz, ör. Satış Müdürü, Pazarlama Uzmanı.</li><li><strong>Şirket adı</strong> — temsil ettiğiniz kuruluşun adı.</li><li><strong>Ek satır</strong> — ne yaptığınızın veya ne sunduğunuzun kısa açıklaması.</li><li><strong>E-posta</strong> — zorunlu alan. İş e-posta adresinizi girin.</li><li><strong>Telefon</strong> — iletişim numarası. Herhangi bir format, ör. +90 555 000 00 00.</li><li><strong>Web sitesi</strong> — web sitenizin tam URL'si, https:// ile başlayan.</li><li><strong>Adres</strong> — fiziksel şirket adresi (sokak, şehir, posta kodu).</li><li><strong>Resmi bilgiler</strong> — vergi numarası, lisans numarası veya sektörünüzde gerekli diğer bilgiler.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "İmza düzenleri — hangisini seçmeli?",
+      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">İmza düzeni</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standart</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Vurgu çubuğu</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Üst çubuk</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Sol etiketler</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Ortalanmış</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">Ahmet Yılmaz</p><p class=\"text-mid text-sm\">Web Geliştirici</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">ahmet@example.com</p><p class=\"text-mid\">+90 555 000 00 00</p></div></div></div>",
+      "html": "<p class=\"text-mid\">Oluşturucu sekiz hazır düzen sunar. Her biri aynı bilgiyi farklı bir şekilde sunar.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standart</strong> — klasik dikey düzen, çoğu kullanım durumuna uyar.</li><li><strong>Üst çubuk</strong> — yatay bir çubuk imzayı içerikten ayırır.</li><li><strong>Sol etiketler</strong> — iki sütun: etiketler ve değerler.</li><li><strong>Ortalanmış</strong> — resmi görünüm, içerik ortalanmış.</li><li><strong>Kompakt</strong> — her şey tek satırda, minimum yükseklik.</li><li><strong>İki sütun</strong> — solda ayrıntılar, sağda iletişim bilgileri.</li><li><strong>Minimalist</strong> — yalnızca en önemli bilgiler.</li><li><strong>Alt çubuk</strong> — imzanın altında iletişim içeren renkli çubuk.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "CTA düğmeleri nasıl eklenir",
+      "html": "<p class=\"text-mid\">CTA düğmesi (harekete geçirici mesaj), alıcıyı seçilen sayfaya yönlendiren tıklanabilir bir öğedir. Toplantı takvimine, iletişim formuna veya teklife bağlantı olabilir. Oluşturucu iki CTA düğmesi eklemeye izin verir.</p><h3 class=\"h5 mt-6 mb-3\">Ana düğme</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Editörde <strong>Düğmeler</strong> sekmesini açın.</li><li><strong>Ana düğme</strong> bölümünde, alıcının göreceği metni girin, ör. Ücretsiz danışma planlayın.</li><li><strong>CTA bağlantısı</strong> alanına tam URL'yi yapıştırın. Adres https:// ile başlamalıdır.</li></ol><h3 class=\"h5 mt-6 mb-3\">İkincil düğme</h3><p class=\"text-mid\">Çerçeve stilli (kenarlıklı şeffaf arka plan) ikinci bir CTA düğmesi ekleyebilirsiniz. <strong>İkincil düğme</strong> bölümündeki alanları ana düğmeyle aynı şekilde doldurun.</p><h3 class=\"h5 mt-6 mb-3\">Düğme yuvarlatma</h3><p class=\"text-mid\">Düğmeler sekmesinin altında <strong>Düğme yuvarlatma</strong> seçeneğini bulacaksınız. Üç varyant mevcuttur: Yok (keskin köşeler), Hafif (hafifçe yuvarlatılmış) veya Tam (oval düğme).</p><p class=\"text-mid mt-4\">Her iki alanı da boş bırakırsanız, düğme imzada görünmez. Yalnızca bir alanı doldurursanız, düğme de görünmez — hem metin hem de bağlantı gereklidir.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Sosyal medya bağlantıları nasıl eklenir",
+      "html": "<p class=\"text-mid\"><strong>Sosyal Medya</strong> sekmesinde profillerinize bağlantılar ekleyebilirsiniz. Oluşturucu on iki platformu destekler: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (eski adıyla Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram ve Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Nasıl yapılır</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Editörde <strong>Sosyal Medya</strong> sekmesini açın.</li><li>Her platformun yanında bir URL alanı bulacaksınız. Profilinizin tam bağlantısını yapıştırın, ör. https://www.linkedin.com/in/profiliniz.</li><li>Yalnızca ihtiyacınız olan alanları doldurun. Boş alanlar imzada görünmez.</li></ol><h3 class=\"h5 mt-6 mb-3\">Sosyal medya simgeleri</h3><p class=\"text-mid\">Sosyal Medya sekmesinin altında <strong>Hizmet adlarının yanında simgeleri göster</strong> seçeneğini bulacaksınız. Etkinleştirildiğinde, bağlantılar sadece adlar yerine renkli SVG simgeleri olarak görüntülenir.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Simge boyutu</strong> — seçenekler: Küçük (16 px), Orta (20 px) veya Büyük (24 px).</li><li><strong>Simge rengi</strong> — Platform renkleri (her platform için varsayılan renkler), Vurgu rengi (tek tip vurgu rengi) veya Metin rengi.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Görünüm özelleştirme",
+      "html": "<p class=\"text-mid\"><strong>Görünüm</strong> sekmesinde imzanın renklerini, yazı tipini ve diğer görsel öğelerini özelleştirebilirsiniz.</p><h3 class=\"h5 mt-6 mb-3\">Renk temaları</h3><p class=\"text-mid\">Sekmenin üstünde beş hazır tema bulacaksınız: Koyu, Mavi, Mor, Yeşil ve Gri. Bir temaya tıklamak otomatik olarak vurgu rengini ve metin rengini ayarlar. Tutarlı imza görünümü elde etmenin en hızlı yolu budur.</p><h3 class=\"h5 mt-6 mb-3\">Renkler</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Vurgu rengi</strong> — yan/üst çubukta, CTA düğmesinde ve bağlantılarda kullanılır. Paletten herhangi bir renk seçebilirsiniz.</li><li><strong>Metin rengi</strong> — imzadaki tüm metnin rengi (ad, iletişim bilgileri, yasal uyarı).</li><li><strong>Arka plan rengi</strong> — tüm imzanın arka plan rengi. Varsayılan olarak beyaz, ancak değiştirebilirsiniz.</li></ul><h3 class=\"h5 mt-6 mb-3\">Yazı tipi ve boyut</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Yazı tipi</strong> — seçenekler: Arial, Verdana, Tahoma, Trebuchet MS ve Georgia. Tümü e-posta güvenli ve alıcıda doğru görüntülenir.</li><li><strong>Metin boyutu</strong> — üç seçenek: Küçük (12 px), Standart (14 px) ve Büyük (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Ek ayarlar</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>İmza kenarlığı</strong> — herhangi bir kenar kombinasyonu (sol, sağ, üst, alt) seçerek imzaya kenarlık ekleyebilirsiniz. Tüm kenarları seçmek otomatik olarak tam kenarlık ayarlar. Kenarlık vurgu rengini kullanır.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Metin stili — bireysel öğelerin renkleri ve boyutları",
+      "html": "<p class=\"text-mid\"><strong>Metin Stili</strong> sekmesinde imzadaki her metin öğesinin rengini ve yazı tipi boyutunu bireysel olarak özelleştirebilirsiniz.</p><h3 class=\"h5 mt-6 mb-3\">Mevcut öğeler</h3><p class=\"text-mid\">Yalnızca imzada şu anda içeriği olan öğeler görünür. Her öğe için şunları ayarlayabilirsiniz:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Ad</strong> — varsayılan olarak vurgu renginde görüntülenir.</li><li><strong>İş unvanı</strong> — şirketteki rol.</li><li><strong>Şirket</strong> — kuruluş adı.</li><li><strong>İletişim bilgileri</strong> — e-posta, telefon, web sitesi (etiketler).</li><li><strong>Sosyal medya</strong> — profil bağlantıları.</li><li><strong>Yasal uyarı</strong> — imzanın altındaki yasal metin.</li></ul><h3 class=\"h5 mt-6 mb-3\">Renk nasıl değiştirilir</h3><p class=\"text-mid\">Her öğenin yanında bir renk seçenekleri satırı bulacaksınız. Seçmek için bir renk karesine tıklayın. Artı işaretli renkli kareye tıklayarak özel renk de ekleyebilirsiniz — bir renk seçin ve Kaydet'e tıklayın. Özel renkler (8'e kadar) tüm öğeler arasında paylaşılır.</p><p class=\"text-mid mt-3\">Sıfırlama simgesi düğmesi öğenin varsayılan rengini geri yükler.</p><h3 class=\"h5 mt-6 mb-3\">Boyut nasıl değiştirilir</h3><p class=\"text-mid\">İkinci satırda - ve + düğmeli bir boyut kontrolü bulacaksınız. Değer, temel yazı tipi boyutuna (Görünüm sekmesinde ayarlanan) göre farkı gösterir. Aralık: -4 ile +4 piksel arası.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Öğeler arası boşluk",
+      "html": "<p class=\"text-mid\"><strong>Boşluk</strong> sekmesinde bireysel imza öğeleri arasındaki mesafeleri hassas bir şekilde kontrol edebilirsiniz.</p><h3 class=\"h5 mt-6 mb-3\">İç imza dolgusu</h3><p class=\"text-mid\">Sekmenin üstünde iç dolgu seçeneğini bulacaksınız — imza içeriği ile kenarları arasındaki mesafe. Üç değer mevcuttur: 8 px (küçük), 16 px (orta) ve 24 px (büyük).</p><h3 class=\"h5 mt-6 mb-3\">Öğeler arası boşluk</h3><p class=\"text-mid\">Dolgunun altında bireysel imza öğeleri için kontroller bulacaksınız. Her kontrolde boşluğu artırmak veya azaltmak için + ve - düğmeleri vardır. Yalnızca şu anda imzada bulunan öğeler için seçenekler görünür.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Addan sonra</strong> — ad satırının altındaki boşluk.</li><li><strong>Unvan / şirketten sonra</strong> — unvan ve şirket adı satırının altındaki boşluk.</li><li><strong>Ek satırdan sonra</strong> — açıklamanın altındaki boşluk (doldurulmuşsa).</li><li><strong>İletişim bilgilerinden sonra</strong> — e-posta, telefon ve web sitesinin altındaki boşluk.</li><li><strong>Sosyal medyadan sonra</strong> — profil bağlantılarının altındaki boşluk.</li><li><strong>CTA düğmesinden sonra</strong> — düğmenin altındaki boşluk (etkinse).</li><li><strong>Yasal uyarıdan önce</strong> — yasal uyarı metninin üstündeki boşluk.</li></ul><p class=\"text-mid mt-4\">Bir alanı temizlerseniz (ör. telefon numarasını kaldırırsanız), ilgili boşluk seçeneği otomatik olarak sekmeden kaybolacaktır.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Yasal uyarı — ne zaman eklenmeli",
+      "html": "<p class=\"text-mid\"><strong>Yasal Uyarı</strong> sekmesinde imzanın altında daha küçük yazı tipiyle görünecek yasal metin ekleyebilirsiniz.</p><h3 class=\"h5 mt-6 mb-3\">Ne zaman yasal uyarı eklenmeli</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>İş yazışmaları</strong> — gizlilik bildirimi ve yanlış teslimat durumunda silme talebi.</li><li><strong>Sektör gereksinimleri</strong> — bazı sektörler (ör. hukuk, tıp, finans) her mesajda belirli bilgiler gerektirir.</li><li><strong>KVKK</strong> — şirket veri sorumlusuysa kişisel verilerin işlenmesi hakkında bilgi.</li></ul><p class=\"text-mid mt-4\">Varsayılan olarak alan örnek gizlilik metniyle doldurulmuştur. Düzenleyebilir, silebilir veya kendi yasal uyarınızla değiştirebilirsiniz. Alanı boş bırakırsanız, imzada yasal uyarı görünmez.</p><h3 class=\"h5 mt-6 mb-3\">Ayırıcı çizgi</h3><p class=\"text-mid\">Metin alanının altında <strong>İletişim bilgileri ile yasal uyarı arasında ayırıcı göster</strong> seçeneğini bulacaksınız. İletişim bilgileri ile yasal uyarı arasına yatay çizgi eklemek için etkinleştirin.</p><p class=\"text-mid mt-3\">Çizgiyi etkinleştirdikten sonra ek özelleştirme seçenekleri görünür:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Çizgi stili</strong> — seçenekler: düz, kesikli veya noktalı.</li><li><strong>Çizgi kalınlığı</strong> — üç seçenek: 1 px, 2 px veya 3 px.</li><li><strong>Çizgi rengi</strong> — varsayılan gri (#e5e7eb). Paletten herhangi bir renk seçebilir veya Varsayılan düğmesine tıklayarak varsayılanı geri yükleyebilirsiniz.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Otomatik kaydetme ve ayarları sıfırlama",
+      "html": "<p class=\"text-mid\">Oluşturucu tüm ayarları otomatik olarak tarayıcı belleğine (localStorage) kaydeder. Sayfayı yeniledikten veya aracı yeniden açtıktan sonra veriler, düzen, renkler ve diğer tüm seçenekler geri yüklenir.</p><h3 class=\"h5 mt-6 mb-3\">Otomatik kaydetme nasıl çalışır?</h3><p class=\"text-mid\">Her değişiklik (metin, renk, düzen, boşluk) hemen tarayıcı belleğine kaydedilir. Kaydetme arka planda otomatik olarak gerçekleşir — herhangi bir düğmeye tıklamadan.</p><h3 class=\"h5 mt-6 mb-3\">Ayarlar nasıl sıfırlanır</h3><p class=\"text-mid\">İmza önizlemesinin altında <strong>Görünümü sıfırla</strong> düğmesi bulacaksınız. Tıkladıktan sonra bir onay iletişim kutusu görünecektir. Sıfırlamayı onaylamak tüm verileri ve ayarları varsayılan değerlere geri yükler. Bu işlem geri alınamaz.</p><h3 class=\"h5 mt-6 mb-3\">Yapılandırmayı dışa ve içe aktarma</h3><p class=\"text-mid\">İmza önizlemesinin altında iki ek düğme bulacaksınız: <strong>Ayarları dışa aktar</strong> ve <strong>Ayarları içe aktar</strong>. Dışa aktarma tüm verileri, renkleri, düzeni, boşlukları ve metin stillerini bir JSON dosyasına kaydeder. İçe aktarma daha önce kaydedilmiş yapılandırmayı bir dosyadan yükler.</p><p class=\"text-mid mt-3\">Bu özellik özellikle imza yapılandırmasını bilgisayarlar arasında aktarmak, ayarları iş arkadaşlarıyla paylaşmak veya sıfırlamadan önce ayarlarınızın yedeğini tutmak istediğinizde yararlıdır.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "İmza Gmail veya Outlook'a nasıl kopyalanır",
+      "description": "İmza hazır olduğunda, e-posta istemcinize eklemek sadece birkaç adım sürer:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiClipboardLine",
+          "title": "1. Kodu kopyalayın",
+          "description": "İmzayı kopyala (Gmail / Outlook) düğmesi imzayı biçimlendirilmiş HTML olarak panoya kopyalar, yapıştırmaya hazır."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "2. İmza ayarlarını açın",
+          "description": "Gmail'de: Ayarlar → Tüm ayarları gör → İmza. Outlook'ta: Dosya → Seçenekler → Posta → İmzalar."
+        },
+        {
+          "icon": "RiSaveLine",
+          "title": "3. Yapıştırın ve kaydedin",
+          "description": "İmza alanında Ctrl+V (Windows) veya Cmd+V (Mac) kullanın. İmza tüm renkler ve biçimlendirmeyle görünecektir. Değişiklikleri kaydedin."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "İmza önizlemesi ve dışa aktarma seçenekleri",
+      "html": "<p class=\"text-mid\">Önizleme paneli editörün sağ tarafında görüntülenir ve her değişiklikle otomatik olarak güncellenir. Önizleme yapışkandır, bu nedenle düzenleme seçeneklerinde kaydırırken bile görünür kalır.</p><h3 class=\"h5 mt-6 mb-3\">Önizleme arka planını değiştirme</h3><p class=\"text-mid\">Önizlemenin üstünde üç arka plan değiştirme düğmesi bulacaksınız: <strong>Açık</strong> (varsayılan gri arka plan), <strong>Koyu</strong> (koyu arka plan, koyu arka planlarda okunabilirliği kontrol etmek için yararlı) ve <strong>Dama tahtası</strong> (dama tahtası deseni, şeffaflığı ve imza kenarlarını görmenizi sağlar).</p><h3 class=\"h5 mt-6 mb-3\">Eylem düğmeleri</h3><p class=\"text-mid\">Önizlemenin altında birkaç düğme bulacaksınız:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>İmzayı kopyala (Gmail / Outlook)</strong> — imzayı biçimlendirilmiş HTML olarak panoya kopyalar. Doğrudan imza ayarlarına yapıştırın.</li><li><strong>HTML kodunu kopyala</strong> — imzanın ham HTML kodunu panoya kopyalar. Kodu bir HTML editörüne veya CMS'ye yapıştırmak istediğinizde yararlı.</li><li><strong>HTML olarak indir</strong> — imza kodunu diske .html dosyası olarak kaydeder. Arşivleme veya bir geliştiriciyle paylaşma için yararlı.</li><li><strong>HTML kodunu görüntüle</strong> — imzanın tam HTML kaynak koduyla bir modal açar. Kodu inceleyebilir ve doğrudan modaldan kopyalayabilirsiniz.</li><li><strong>Ayarları dışa aktar</strong> — tam imza yapılandırmasını (veriler, renkler, düzen, boşluklar, stiller) bir JSON dosyasına kaydeder.</li><li><strong>Ayarları içe aktar</strong> — bir JSON dosyasından yapılandırma yükler. Tüm ayarlar otomatik olarak uygulanır.</li><li><strong>Görünümü sıfırla</strong> — tüm verileri ve ayarları varsayılan değerlere geri yükler (onaydan sonra).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "E-posta imza oluşturucu kimin için?",
+      "description": "E-posta imza aracı iş e-postaları gönderen herkes için yararlıdır:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBriefcaseLine",
+          "title": "Girişimciler ve serbest çalışanlar",
+          "description": "Tasarımcı tutmadan her mesajda profesyonel imza."
+        },
+        {
+          "icon": "RiTeamLine",
+          "title": "Şirket ekipleri",
+          "description": "Her çalışan aynı stilde kendi imzasını oluşturur. Tüm şirkette tutarlı kimlik."
+        },
+        {
+          "icon": "RiHandCoinLine",
+          "title": "Satış temsilcileri",
+          "description": "Takvime veya teklife bağlantılı CTA düğmesi toplantı ayarlama şansını artırır."
+        },
+        {
+          "icon": "RiScales3Line",
+          "title": "Avukatlar, muhasebeciler, doktorlar",
+          "description": "Yasal uyarı, lisans numarası, vergi numarası veya sektörde gerekli diğer bilgileri ekleme imkanı."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Bu HTML e-posta imza oluşturucuyu özel kılan nedir?",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Sekiz imza düzeni",
+          "description": "Standart, üst çubuk, sol etiketler, ortalanmış, kompakt, iki sütun, minimalist ve alt çubuk."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Tarayıcıda otomatik kaydetme",
+          "description": "Her değişiklik otomatik olarak tarayıcı belleğine kaydedilir. Sayfayı yeniledikten sonra imza kullanılabilir kalır."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Yapılandırmayı dışa ve içe aktarma",
+          "description": "Tam imza yapılandırması JSON dosyası olarak dışa aktarılabilir ve iş arkadaşlarıyla paylaşılabilir."
+        },
+        {
+          "icon": "RiAppsLine",
+          "title": "12 sosyal medya platformu",
+          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram ve Pinterest."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Gelişmiş özelleştirme",
+          "description": "Avatar şekli ve boyutu, çizgi stili, bireysel metin renkleri ve boyutları."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Çoklu dışa aktarma seçenekleri",
+          "description": "HTML kopyala, dosya indir, kaynak kodu önizlemesi, JSON yapılandırma dışa/içe aktarma."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Gizlilik",
+          "description": "Veriler sunucuya gönderilmez. Oluşturucu tamamen tarayıcıda çalışır."
+        },
+        {
+          "icon": "RiMailCheckLine",
+          "title": "Uyumluluk",
+          "description": "Oluşturulan HTML kodu Gmail, Outlook, Apple Mail ve Thunderbird'de çalışır."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Canlı önizleme",
+          "description": "Her değişiklik açık, koyu veya dama tahtası arka planında anında görünür."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "E-posta imza oluşturucu hakkında sıkça sorulan sorular",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "İmza Gmail, Outlook ve Apple Mail'de çalışır mı?",
+          "answer": "Evet. Oluşturucu tarafından oluşturulan imzalar, tüm popüler e-posta istemcilerinde doğru görüntülenen HTML tabloları kullanır: Gmail, Outlook (masaüstü ve web), Apple Mail, Thunderbird. Düzen, akıllı telefonlar dahil farklı cihazlara uyum sağlar."
+        },
+        {
+          "question": "Şirket logosu ekleyebilir miyim?",
+          "answer": "Evet. Ayrıntılar sekmesinde bir resmin URL'sini (logo veya profil fotoğrafı) yapıştırın. Resim kare olmalı (min. 120×120 px) ve internet üzerinden herkese açık olmalıdır. URL'yi yapıştırdıktan sonra şekil (yuvarlak, yuvarlatılmış, kare) ve boyut (40, 56 veya 72 px) seçenekleri görünecektir."
+        },
+        {
+          "question": "İmzayı e-posta istemcisine nasıl kopyalarım?",
+          "answer": "Önizlemenin altındaki İmzayı kopyala (Gmail / Outlook) düğmesi imzayı biçimlendirilmiş HTML olarak panoya kopyalar. Gmail veya Outlook imza ayarlarında sadece Ctrl+V (Windows) veya Cmd+V (Mac) kullanın."
+        },
+        {
+          "question": "Oluşturucuyu tüm ekip için imza oluşturmak üzere kullanabilir miyim?",
+          "answer": "Evet. Oluşturucu giriş veya kayıt gerektirmez. Ekipteki her kişi aracı açabilir, bilgilerini doldurabilir ve hazır imzayı kopyalayabilir. Görsel tutarlılığı korumak için ortak ayarlar üzerinde anlaşın: aynı düzen, renk teması ve yazı tipi. Yapılandırmayı JSON dosyası olarak dışa aktarabilir ve iş arkadaşlarıyla paylaşabilirsiniz — dosyayı içe aktarmaları ve yalnızca kişisel bilgilerini değiştirmeleri yeterli."
+        },
+        {
+          "question": "Özel sosyal medya simgeleri ekleyebilir miyim?",
+          "answer": "Oluşturucu on iki platform için yerleşik SVG simgeleri sunar: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram ve Pinterest. Sosyal Medya sekmesinde Simgeleri göster seçeneğini etkinleştirin. Simge boyutu ve rengini seçebilirsiniz (platform renkleri, vurgu rengi veya metin rengi)."
+        },
+        {
+          "question": "Kopyala düğmesi etkin değil — neden?",
+          "answer": "İmzayı kopyalamak için en az iki alanı doldurun: ad ve e-posta adresi. Her iki alanın da doldurulmuş olup olmadığını kontrol edin."
+        },
+        {
+          "question": "Avatar veya logo görüntülenmiyor — ne yapmalı?",
+          "answer": "Resim internet üzerinden herkese açık olmalıdır. URL doğrudan bir resim dosyasına işaret etmelidir (.jpg, .png veya .webp ile biten). Google Drive veya Dropbox'tan resimler özel bir paylaşım bağlantısı gerektirir."
+        },
+        {
+          "question": "İmza alıcıda farklı görünüyor — neden?",
+          "answer": "Farklı e-posta istemcileri (Gmail, Outlook, Apple Mail) HTML'yi işleme biçiminde biraz farklılık gösterebilir. Oluşturucu çoğu programda çalışan güvenli stiller kullanır. Büyük farklılıklar görüyorsanız, imzayı Düz metin olarak yapıştır değil Ctrl+V kullanarak yapıştırdığınızdan emin olun."
+        },
+        {
+          "question": "CTA düğmesi görünmüyor — ne yapmalı?",
+          "answer": "Düğme her iki alanı gerektirir: metin ve bağlantı. Düğmeler sekmesinde her iki alanın da doldurulduğunu ve URL'nin https:// ile başladığını kontrol edin."
+        },
+        {
+          "question": "İmza ayarları nasıl dışa veya içe aktarılır?",
+          "answer": "İmza önizlemesinin altında Ayarları dışa aktar ve Ayarları içe aktar düğmeleri bulacaksınız. Dışa aktarma tam yapılandırmayı (veriler, renkler, düzen, boşluklar, metin stilleri) bir JSON dosyasına kaydeder. İçe aktarma yapılandırmayı bir dosyadan yükler ve tüm ayarları otomatik olarak uygular."
+        },
+        {
+          "question": "Oluşturulan imzanın kaynak kodu nasıl görüntülenir?",
+          "answer": "İmza önizlemesinin altındaki HTML kodunu görüntüle düğmesi tam HTML kaynak koduyla bir modal açar. Kodu inceleyebilir ve doğrudan modaldan kopyalayabilirsiniz. Alternatif olarak, HTML kodunu kopyala düğmesi ham kodu panoya kopyalar ve HTML olarak indir dosya olarak kaydeder."
+        },
+        {
+          "question": "Avatar şeklini ve boyutunu değiştirebilir miyim?",
+          "answer": "Evet. Veri sekmesinde resim URL'sini yapıştırdıktan sonra ek seçenekler görünür: Avatar şekli (yuvarlak, yuvarlatılmış, kare) ve Avatar boyutu (küçük — 40 px, orta — 56 px, büyük — 72 px). Ayarlar tüm imza düzenlerinde uygulanır."
+        },
+        {
+          "question": "Ayırıcı çizgi stili nasıl değiştirilir?",
+          "answer": "Yasal Uyarı sekmesinde Ayırıcı çizgiyi göster seçeneğini etkinleştirin. Ek seçenekler görünecektir: çizgi stili (düz, kesikli, noktalı), kalınlık (1–3 px) ve renk (varsayılan gri veya paletten seçilen herhangi bir renk)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Diğer araçları keşfedin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

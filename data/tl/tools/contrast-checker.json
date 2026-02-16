@@ -1,0 +1,277 @@
+{
+  "toolKey": "contrastChecker",
+  "locale": "tl",
+  "metadata": {
+    "title": "Libreng Color Contrast Checker \u2013 WCAG 2.1 Compliance",
+    "description": "Suriin kung ang mga kulay ng teksto at background ay nababasa ayon sa WCAG 2.1. Mag-type ng HEX, RGB o HSL code, tingnan ang contrast ratio at gamitin ang auto-fix para makahanap ng accessible na kombinasyon. Walang registration.",
+    "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
+    "path": "/tl/mga-kasangkapan/tagasuri-ng-contrast-ng-kulay"
+  },
+  "hero": {
+    "title": "Tagasuri ng contrast at readability ng kulay",
+    "description": "Mag-type ng kulay ng teksto at background, at ipapakita ng tool kung sapat ang contrast. Ang mga kalkulasyon ay batay sa internasyonal na accessibility standard na WCAG 2.1, na tumutukoy ng minimum na halaga ng contrast para sa iba't ibang uri ng nilalaman.",
+    "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/tl/mga-kasangkapan", "label": "Mga kasangkapan" },
+    "third": { "href": "/tl/mga-kasangkapan/tagasuri-ng-contrast-ng-kulay", "label": "Tagasuri ng contrast ng kulay" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Tagasuri ng contrast at readability ng kulay",
+      "alternateName": [
+        "Tester ng readability ng kulay",
+        "Tagasuri ng contrast ng teksto at background",
+        "Tool sa pagsuri ng readability",
+        "Kalkulator ng contrast ng kulay",
+        "WCAG contrast tester",
+        "Tagasuri ng accessibility ng kulay",
+        "Nababasa ba ang mga kulay ko"
+      ],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "AccessibilityTool",
+      "description": "Suriin kung ang mga kulay ng teksto at background ay nababasa para sa lahat ng gumagamit. Kinakalkula ng tool ang contrast ratio ayon sa WCAG 2.1 at ipinapakita kung natutugunan ang mga kinakailangan sa accessibility.",
+      "featureList": [
+        "Kalkulasyon ng contrast ratio",
+        "Pagsuri ng WCAG 2.1 Level AA compliance",
+        "Pagsuri ng WCAG 2.1 Level AAA compliance",
+        "Pagsuri ng normal na teksto",
+        "Pagsuri ng malaking teksto at heading",
+        "Pagsuri ng icon at UI component",
+        "Suporta sa HEX color format",
+        "Suporta sa RGB at RGBA color format",
+        "Suporta sa HSL at HSLA color format",
+        "Color picker para sa visual na pagpili",
+        "Live na preview ng teksto",
+        "Awtomatikong feature ng pagmatch ng kulay",
+        "Lokal na pagproseso sa browser"
+      ]
+    },
+    "howTo": {
+      "name": "Paano suriin ang contrast at readability ng kulay",
+      "description": "Paano suriin ang readability ng kulay ng teksto at background ayon sa WCAG standard. Mag-type ng mga kulay, basahin ang contrast ratio, at gamitin ang awtomatikong feature ng pagmatch.",
+      "steps": [
+        { "name": "Pumili ng kulay ng teksto", "text": "Mag-type ng color code (hal. #333333) sa HEX, RGB, o HSL format \u2013 o pumili ng kulay mula sa color picker." },
+        { "name": "Pumili ng kulay ng background", "text": "Mag-type ng kulay ng background kung saan ipapakita ang teksto \u2013 maaari itong kulay ng seksyon, bloke, o buong pahina." },
+        { "name": "Basahin ang resulta", "text": "Ipapakita ng tool ang contrast ratio at kung ang mga kulay ay natutugunan ang mga kinakailangan ng AA/AAA." },
+        {
+          "name": "Ayusin ang mga kulay",
+          "text": "Kung masyadong mababa ang contrast, awtomatikong nagmumungkahi ang Match feature ng variant ng kulay ng teksto na natutugunan ang napiling WCAG threshold."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Bakit mahalaga ang readability ng kulay?",
+      "html": "<p class=\"text-mid\">Ang readability ay ang pagkakaiba ng luminance sa pagitan ng kulay ng teksto at kulay ng background. Kapag mas malaki ang pagkakaiba, mas madaling basahin ang teksto. Ang masyadong mababang contrast ay nagpapahirap sa pagbasa ng nilalaman \u2013 lalo na para sa mga taong may kapansanan sa paningin, matatanda, o sa mahirap na kondisyon ng ilaw (hal. sa telepono sa direktang sikat ng araw).</p><p class=\"text-mid mt-3\">Ayon sa <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">World Health Organization (WHO)</a>, humigit-kumulang 2.2 bilyon na tao sa buong mundo ang may anumang anyo ng kapansanan sa paningin. Bukod dito, milyon-milyon ang may color blindness (mga 8% ng mga lalaki at 0.5% ng mga babae), at marami pa ang nakakaranas ng pagbaba ng paningin dahil sa edad.</p><p class=\"text-mid mt-3\">Kinakalkula ng tool ang contrast ratio gamit ang formula na tinukoy sa <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Web Content Accessibility Guidelines)</a> \u2013 internasyonal na alituntunin sa digital accessibility. Ang resulta ay nagbibigay-daan sa objektibong pagsusuri kung sapat na ba ang readability ng mga kulay, anuman ang setting ng monitor o indibidwal na pananaw sa kulay.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Paano gamitin ang tagasuri ng contrast ng kulay",
+      "description": "Ang pagsuri ng readability ay tumatagal lang ng ilang segundo:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiPaletteLine",
+          "title": "1. Ilagay ang kulay ng teksto",
+          "description": "Mag-type ng color code (hal. #333333) sa HEX, RGB, o HSL format \u2013 o pumili ng kulay mula sa color picker."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "2. Ilagay ang kulay ng background",
+          "description": "Mag-type ng kulay ng background kung saan ipapakita ang teksto \u2013 maaari itong kulay ng seksyon, bloke, o buong pahina."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "3. Basahin ang resulta",
+          "description": "Kakalkulahin ng tool ang contrast ratio at ipapakita kung ang mga kulay ay natutugunan ang mga kinakailangan ng WCAG para sa normal na teksto, malaking teksto, at icon."
+        },
+        {
+          "icon": "RiEqualizerLine",
+          "title": "4. Ayusin ang mga kulay",
+          "description": "Kung masyadong mababa ang contrast, awtomatikong nagmumungkahi ang Match feature ng variant ng kulay na natutugunan ang napiling threshold."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTabs",
+      "title": "Anong mga format ng kulay ang sinusuportahan?",
+      "tabs": [
+        {
+          "title": "HEX",
+          "icon": "RiHashtag",
+          "html": "<div><p class=\"text-mid mb-3\">Hexadecimal na format \u2013 ang pinakakaraniwan sa web design. Nagsisimula sa <code class=\"rounded bg-black/5 px-1\">#</code> at naglalaman ng 3 o 6 na character (digit 0-9 at titik A-F).</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">#fff</code> \u2013 puti (shorthand)</li><li><code class=\"rounded bg-black/5 px-1\">#ffffff</code> \u2013 puti (buong anyo)</li><li><code class=\"rounded bg-black/5 px-1\">#1a73e8</code> \u2013 asul</li></ul></div>"
+        },
+        {
+          "title": "RGB / RGBA",
+          "icon": "RiPaletteLine",
+          "html": "<div><p class=\"text-mid mb-3\">Format na batay sa tatlong channel: Red, Green, Blue. Bawat channel ay tumatanggap ng halaga mula 0 hanggang 255. Ang RGBA variant ay nagdadagdag ng ikaapat na parameter \u2013 transparency (alpha) mula 0 hanggang 1.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">rgb(255, 255, 255)</code> \u2013 puti</li><li><code class=\"rounded bg-black/5 px-1\">rgba(0, 0, 0, 0.8)</code> \u2013 itim sa 80% opacity</li></ul></div>"
+        },
+        {
+          "title": "HSL / HSLA",
+          "icon": "RiEqualizerLine",
+          "html": "<div><p class=\"text-mid mb-3\">Format na batay sa Hue (0-360\u00b0), Saturation (0-100%), at Lightness (0-100%). Ang HSLA variant ay nagdadagdag ng transparency. Ang format na ito ay kapaki-pakinabang kapag gusto mong ayusin ang liwanag o saturation ng kulay.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">hsl(0, 0%, 100%)</code> \u2013 puti</li><li><code class=\"rounded bg-black/5 px-1\">hsla(217, 91%, 60%, 0.9)</code> \u2013 asul sa 90% opacity</li></ul></div>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Paano bigyang-kahulugan ang mga resulta ng readability test",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Contrast ratio</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Normal na teksto</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div><div class=\"rounded-lg border border-neutral-200 px-3 py-2\" style=\"color: var(--black3); background-color: var(--white)\"><p class=\"text-sm!\">Halimbawang normal na teksto</p></div></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Malaking teksto</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 3:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 4.5:1)</span></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Pagkatapos mag-type ng mga kulay, ipinapakita ng tool ang mga resulta sa tatlong seksyon:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normal na teksto</strong> \u2013 nangangailangan ng 4.5:1 contrast (AA) o 7:1 (AAA). Nalalapat sa teksto na mas mababa sa 18pt (24px) o mas mababa sa 14pt bold.</li><li><strong>Malaki / bold na teksto</strong> \u2013 nangangailangan ng 3:1 contrast (AA) o 4.5:1 (AAA). Nalalapat sa mga heading, button, at highlight.</li><li><strong>Mga icon</strong> \u2013 nangangailangan ng 3:1 contrast (AA). Nalalapat sa mga icon at graphical UI element na naghahatid ng impormasyon.</li></ul><p class=\"text-mid mt-3\"><strong>Berdeng indicator</strong> ay nangangahulugang natutugunan ang kinakailangan. <strong>Pulang indicator</strong> ay nangangahulugang masyadong mababa ang contrast at kailangang pagbutihin.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Ano ang ibig sabihin ng mga resulta ng readability test?",
+      "html": "<p class=\"text-mid mb-4\">Ipinapakita ng tool ang contrast ratio sa scale mula 1:1 (walang contrast) hanggang 21:1 (maximum na contrast \u2013 itim sa puti). Ang resulta ay inihahambing sa mga threshold na tinukoy sa WCAG standard:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normal na teksto</strong> \u2013 nangangailangan ng hindi bababa sa 4.5:1 para sa Level AA (minimum standard) o 7:1 para sa Level AAA (enhanced standard). Nalalapat sa teksto na mas mababa sa 18pt (24px) o mas mababa sa 14pt (18.5px) bold.</li><li><strong>Malaki / bold na teksto</strong> \u2013 nangangailangan ng hindi bababa sa 3:1 para sa Level AA o 4.5:1 para sa Level AAA. Nalalapat sa teksto mula 18pt (24px) o mula 14pt (18.5px) bold \u2013 mga heading, button, highlight.</li><li><strong>Mga icon at UI element</strong> \u2013 nangangailangan ng hindi bababa sa 3:1 para sa Level AA. Nalalapat sa mga icon, button, form field, at iba pang elemento ng interface na naghahatid ng impormasyon.</li></ul><p class=\"text-mid mt-3\"><strong>Level AA</strong> ang minimum na kinakailangan ng mga regulasyon sa digital accessibility sa maraming bansa, kabilang ang <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016L2102\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">EU Web Accessibility Directive</a>. <strong>Level AAA</strong> ay nagbibigay ng mas magandang readability ngunit hindi palaging praktikal na makamit para sa lahat ng elemento.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Awtomatikong pagmatch ng kulay sa mga kinakailangan ng WCAG",
+      "html": "<p class=\"text-mid mb-4\">Kung masyadong mababa ang contrast, hindi kailangan hanapin ang tamang kulay sa pamamagitan ng pagsubok. Awtomatikong hinahanap ng feature na <strong>Match</strong> ang variant ng kulay ng teksto na natutugunan ang napiling contrast threshold.</p><p class=\"text-mid mb-4\">Paano gumagana ang matching:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Piliin ang matching target mula sa listahan \u2013 hal. AA para sa normal na teksto o AAA para sa malaking teksto.</li><li>I-click ang button na Match.</li><li>Maghahanap ang tool sa mga lightness variant ng kulay ng teksto at magmumungkahi ng pinakamalapit na natutugunan ang mga kinakailangan.</li><li>Ang iminungkahing kulay ay maaaring kopyahin sa clipboard o agad na itakda bilang bagong kulay ng teksto.</li></ol><p class=\"text-mid mt-3\">Pinapanatili ng algorithm ang hue at saturation ng orihinal na kulay, binabago lang ang lightness. Ang iminungkahing kulay ay nananatiling consistent sa visual identity habang natutugunan ang accessibility standard.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Ano ang ibig sabihin ng AA at AAA level sa WCAG standard?",
+      "plans": [
+        { "id": "aa", "name": "Level AA (minimum)", "highlighted": true },
+        { "id": "aaa", "name": "Level AAA (enhanced)" }
+      ],
+      "features": [
+        { "name": "Normal na teksto \u2013 min. 4.5:1", "values": { "aa": true, "aaa": true } },
+        { "name": "Normal na teksto \u2013 min. 7:1", "values": { "aa": false, "aaa": true } },
+        { "name": "Malaki / bold na teksto \u2013 min. 3:1", "values": { "aa": true, "aaa": true } },
+        { "name": "Malaki / bold na teksto \u2013 min. 4.5:1", "values": { "aa": false, "aaa": true } },
+        { "name": "Mga icon at UI element \u2013 min. 3:1", "values": { "aa": true, "aaa": true } },
+        { "name": "Legal na kinakailangan (EU directive)", "values": { "aa": true, "aaa": false } },
+        { "name": "Inirerekomenda para sa pangunahing nilalaman", "values": { "aa": true, "aaa": true } }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Saan dapat suriin ang readability ng kulay?",
+      "description": "Mahalaga ang readability saanman kailangang magbasa ng teksto o makilala ang UI element:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Mga website",
+          "description": "Teksto sa mga pahina, button, link, form. Lalo na mahalaga para sa mga business site kung saan iba-iba ang edad at kakayahan sa paningin ng mga bisita."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Mga tindahan",
+          "description": "Mga presyo, Buy Now button, impormasyon ng produkto. Ang mababang readability ay maaaring mangahulugan ng nawawalang mga order."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Mga presentasyon",
+          "description": "Ang mga slide na ipinapakita sa pamamagitan ng projector ay kadalasang mas mahinang contrast kaysa sa monitor. Suriin ang mga kulay bago mag-present."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Mga poster at flyer",
+          "description": "Ang mga naka-print na materyales na tinitingnan sa iba't ibang kondisyon ng ilaw ay nangangailangan ng mataas na contrast."
+        },
+        { "icon": "RiSmartphoneLine", "title": "Mga mobile app", "description": "Ginagamit ang mga telepono sa maliwanag na sikat ng araw, sa gabi, at ng mga tao sa lahat ng edad." },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Mga menu ng restaurant",
+          "description": "Kadalasang naka-print sa may kulay na papel o may dekoratibong font \u2013 madaling magkaroon ng masyadong mababang contrast."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Readability ng kulay para sa mga gumagamit na may color blindness",
+      "html": "<p class=\"text-mid mb-4\">Ang color blindness ay nakakaapekto sa mga 8% ng mga lalaki at 0.5% ng mga babae. Ang mga taong may color blindness ay maaaring mahirapang makilala ang ilang pares ng kulay, kahit sapat ang luminance contrast.</p><p class=\"text-mid mb-4\">Mga pinakakaraniwang uri ng color blindness:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deuteranopia</strong> \u2013 kahirapan sa pagkilala ng berde at pula (pinakakaraniwang anyo)</li><li><strong>Protanopia</strong> \u2013 kahirapan sa pagtingin ng pula</li><li><strong>Tritanopia</strong> \u2013 kahirapan sa pagtingin ng asul at dilaw (bihira)</li></ul><p class=\"text-mid mt-3\">Sinusuri ng tool na ito ang luminance contrast, na mahalaga para sa lahat ng gumagamit. Gayunpaman, kapag nagdidisenyo, mahalaga ring iwasan ang mga problematikong kombinasyon ng kulay (hal. pulang teksto sa berdeng background) at huwag umasa lang sa kulay para maghatid ng impormasyon \u2013 gumamit din ng mga hugis, icon, at teksto.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Ano ang espesyal sa tagasuri ng contrast at readability na ito?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiEyeLine",
+          "title": "Objektibong pagsusuri batay sa mathematical formula",
+          "description": "Ang contrast ratio ay kinakalkula gamit ang WCAG formula \u2013 ang resulta ay hindi depende sa setting ng monitor o indibidwal na pananaw sa kulay."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pagsunod sa internasyonal na WCAG standard",
+          "description": "Ang mga resulta ay tumutugma sa mga kinakailangan ng WCAG 2.1, na bumubuo ng batayan ng mga regulasyon sa digital accessibility sa EU at maraming ibang bansa."
+        },
+        {
+          "icon": "RiMagicLine",
+          "title": "Awtomatikong pagmatch ng kulay sa threshold",
+          "description": "Hinahanap ng Match feature ang variant ng kulay ng teksto na natutugunan ang napiling contrast threshold \u2013 pinapanatili ang hue, binabago lang ang lightness."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Limang format ng kulay",
+          "description": "Mga sinusuportahang format: HEX, RGB, RGBA, HSL, at HSLA. Ang color code ay maaaring direktang i-paste mula sa Figma, Photoshop, o CSS stylesheet."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Tatlong uri ng nilalaman sa isang pagsuri",
+          "description": "Isang pagsuri ay nagpapakita ng resulta para sa normal na teksto, malaking teksto (heading, button), at icon \u2013 hindi kailangan suriin ang bawat uri nang hiwalay."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Mga madalas itanong tungkol sa tagasuri ng contrast ng kulay",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ano ang color contrast ratio?",
+          "answer": "Ang contrast ratio ay isang sukatan ng pagkakaiba ng luminance sa pagitan ng dalawang kulay. Ang scale ay mula 1:1 (walang pagkakaiba \u2013 hal. puting teksto sa puting background) hanggang 21:1 (maximum na pagkakaiba \u2013 itim na teksto sa puting background). Kapag mas mataas ang ratio, mas madaling makilala ang teksto mula sa background."
+        },
+        {
+          "question": "Anong contrast ang sapat ayon sa WCAG?",
+          "answer": "Para sa normal na teksto, ang minimum ay 4.5:1 (Level AA). Para sa malaking teksto \u2013 mga heading mula 18pt o bold na teksto mula 14pt \u2013 sapat ang 3:1. Para sa mga icon at UI component, kinakailangan din ang 3:1. Tinitiyak ng mga threshold na ito ang readability para sa karamihan ng gumagamit, kabilang ang mga may kapansanan sa paningin."
+        },
+        {
+          "question": "Mahalaga ba ang color contrast para sa mga gumagamit na may color blindness?",
+          "answer": "Sinusuri ng checker ang luminance contrast, na mahalaga para sa lahat ng gumagamit, kabilang ang mga may color blindness. Gayunpaman, ang color blindness ay isyu sa pananaw sa kulay, hindi isyu sa luminance \u2013 kaya bukod sa contrast, iwasan ang mga problematikong pares ng kulay (hal. pulang teksto sa berdeng background) at huwag umasa lang sa kulay para maghatid ng impormasyon."
+        },
+        {
+          "question": "Bakit hindi natutugunan ng kulay ko ang mga kinakailangan kahit malinaw ko itong nakikita?",
+          "answer": "Ang personal na pananaw sa kulay ay depende sa setting ng monitor, ilaw sa kwarto, at indibidwal na kakayahan sa paningin. Ang WCAG ay batay sa objektibong mathematical formula na isinasaalang-alang ang iba't ibang kapansanan sa paningin. Ang kulay na nababasa sa isang screen ay maaaring hindi nababasa sa iba o para sa ibang tao."
+        },
+        {
+          "question": "Kailangan ko bang matugunan ang AAA contrast level?",
+          "answer": "Hindi palagi. Ang Level AA (4.5:1 para sa normal na teksto) ang minimum na kinakailangan ng mga regulasyon sa accessibility sa European Union. Ang Level AAA (7:1) ay nagbibigay ng mas magandang readability ngunit mas mahirap makamit. Para sa kritikal na nilalaman \u2013 mga babala, instruksyon sa kaligtasan \u2013 isaalang-alang ang pag-abot sa AAA."
+        },
+        {
+          "question": "Ano ang WCAG standard?",
+          "answer": "Ang WCAG (Web Content Accessibility Guidelines) ay isang internasyonal na set ng mga alituntunin sa web accessibility na binuo ng W3C organization. Tinutukoy nito, bukod sa iba pa, ang minimum na halaga ng color contrast, istruktura ng heading, suporta sa keyboard, at iba pang kinakailangan na ginagawang accessible ang mga website sa mga taong may iba't ibang kapansanan."
+        },
+        {
+          "question": "Saan ko mahahanap ang mga color code mula sa website ko?",
+          "answer": "Sa browser (Chrome, Firefox, Edge) maaaring buksan ang developer tools (right-click > Inspect). Sa tab na Styles, makikita ang mga kulay na ginagamit sa pahina. Bilang alternatibo, ang mga browser extension tulad ng ColorZilla ay nagbibigay-daan na kunin ang kulay ng anumang elemento nang hindi hinahalukay ang code."
+        },
+        {
+          "question": "Anong mga pares ng kulay sa site ko ang dapat kong suriin muna?",
+          "answer": "Pinakamahalaga: teksto sa pangunahing background, teksto sa mga banner at may kulay na seksyon, mga button (kulay ng teksto at background ng button kaugnay ng background ng pahina), mga link, at icon. Bigyang-pansin ang mga elementong lumalabas sa iba't ibang background depende sa seksyon."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Tingnan ang iba pang libreng tool" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

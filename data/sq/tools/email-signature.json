@@ -1,0 +1,137 @@
+{
+  "toolKey": "emailSignature",
+  "locale": "sq",
+  "metadata": {
+    "title": "Gjenerues nënshkrimi email falas – HTML për Gmail dhe Outlook",
+    "description": "Krijoni një nënshkrim profesional HTML email pa softuer. Shtoni të dhëna kontakti, logo, lidhje rrjetesh sociale dhe kopjoni në Gmail ose Outlook. Pa regjistrim.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
+    "path": "/sq/mjetet/gjenerues-nenshkrimi-email-falas"
+  },
+  "hero": {
+    "title": "Krijoni një nënshkrim profesional HTML email",
+    "description": "Krijoni një nënshkrim profesional email në pak minuta. Shkruani të dhënat tuaja, zgjidhni ngjyrat dhe kopjoni kodin HTML të gatshëm në Gmail, Outlook ose klient tjetër email.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/sq/mjetet", "label": "Mjetet" },
+    "third": { "href": "/sq/mjetet/gjenerues-nenshkrimi-email-falas", "label": "Gjenerues nënshkrimi email" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Gjenerues nënshkrimi email falas",
+      "alternateName": ["Gjenerues nënshkrimi HTML email", "Gjenerues fundshënimi email"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "EmailSignatureGenerator",
+      "description": "Gjenerues falas i nënshkrimit HTML email. Shtoni të dhëna kontakti, buton CTA dhe profile rrjetesh sociale, pastaj kopjoni kodin e gatshëm në Gmail, Outlook dhe klientë të tjerë email.",
+      "featureList": [
+        "Të dhëna kontakti (emër, pozicion, kompani)",
+        "Telefon, email dhe URL ueb",
+        "Logo ose foto profili me zgjedhje forme dhe madhësie",
+        "Ikona rrjetesh sociale (12 platforma)",
+        "Ngjyra të personalizueshme (tekst, akcent, sfond)",
+        "Buton CTA me tekst dhe lidhje të personalizuar",
+        "Parashikim live i nënshkrimit",
+        "Kopjim kodi HTML në clipboard",
+        "Shkarkim nënshkrimi si skedar HTML",
+        "Eksportim dhe importim konfigurimi si skedar JSON",
+        "Pajtueshmëri me Gmail, Outlook, Apple Mail",
+        "Mjet falas, pa hyrje"
+      ]
+    },
+    "howTo": {
+      "name": "Si të përdorni gjeneruesin e nënshkrimit email",
+      "description": "Si të krijoni një nënshkrim profesional HTML email me mjetin falas të Arteon.",
+      "totalTime": "PT5M",
+      "steps": [
+        { "name": "Zgjidhni paraqitjen e nënshkrimit", "text": "Zgjidhni një nga tetë paraqitjet e disponueshme." },
+        { "name": "Plotësoni të dhënat e kontaktit", "text": "Në skedën Details shkruani emrin, pozicionin, kompaninë, emailin, telefonin dhe URL-në e uebit." },
+        { "name": "Shtoni butonin CTA", "text": "Në skedën Buttons shtoni tekstin dhe URL-në për butonin kryesor." },
+        { "name": "Shtoni lidhje rrjetesh sociale", "text": "Në skedën Social Media ngjitni URL-të e profileve tuaja." },
+        { "name": "Personalizoni pamjen", "text": "Në skedën Appearance zgjidhni temën e ngjyrave, fontin dhe madhësinë e tekstit." },
+        { "name": "Kontrolloni parashikimin dhe kopjoni nënshkrimin", "text": "Butoni Copy signature kopjon kodin e gatshëm në clipboard." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Pse keni nevojë për një nënshkrim profesional email?",
+      "html": "<p class=\"text-mid\">Nënshkrimi email (i njohur gjithashtu si fundshënimi email) është një bllok informacioni në fund të çdo mesazhi të dërguar. Përmban të dhëna kontakti, pozicionin e punës, emrin e kompanisë dhe shpesh një lidhje në faqen e internetit ose kalendarin e takimeve.</p><p class=\"text-mid mt-3\">Marrësi nuk ka nevojë të kërkojë numrin e telefonit në mesazhet e mëparshme – të gjitha të dhënat janë lehtësisht të disponueshme. Një nënshkrim profesional email tregon gjithashtu se kujdeseni për detajet dhe mbani një imazh konsistent të kompanisë në komunikimin e biznesit.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Si të përdorni gjeneruesin e nënshkrimit email",
+      "description": "Krijimi i një nënshkrimi profesional email zgjat vetëm pak minuta:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Shkruani të dhënat", "description": "Plotësoni emrin, pozicionin, kompaninë dhe të dhënat e kontaktit." },
+        { "title": "2. Personalizoni pamjen", "description": "Zgjidhni paraqitjen, ngjyrat, shtoni logon dhe lidhjet e rrjeteve sociale." },
+        { "title": "3. Kopjoni kodin", "description": "Butoni Copy signature kopjon kodin e gatshëm në clipboard. Thjesht ngjitni në Gmail, Outlook ose klient tjetër email." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Paraqitjet e nënshkrimit – cilën të zgjidhni?",
+      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Paraqitja e nënshkrimit</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div></div>",
+      "html": "<p class=\"text-mid\">Gjeneruesi ofron tetë paraqitje të paracaktuara. Secila prezanton të njëjtin informacion në një mënyrë tjetër.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> – paraqitje klasike vertikale, përshtatet për shumicën e rasteve të përdorimit.</li><li><strong>Top bar</strong> – vijë horizontale ndan nënshkrimin nga përmbajtja.</li><li><strong>Labels left</strong> – dy kolona: etiketa dhe vlera.</li><li><strong>Centered</strong> – pamje formale, përmbajtja në qendër.</li><li><strong>Compact</strong> – gjithçka në një rresht, lartësi minimale.</li><li><strong>Two columns</strong> – të dhënat majtas, kontaktet djathtas.</li><li><strong>Minimalist</strong> – vetëm informacioni bazë.</li><li><strong>Bottom bar</strong> – vijë me ngjyra me kontakte në fund të nënshkrimit.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Si të kopjoni nënshkrimin në Gmail ose Outlook",
+      "description": "Pasi nënshkrimi të jetë gati, nevojiten vetëm pak hapa për ta shtuar në klientin email:",
+      "grid": "three",
+      "items": [
+        { "icon": "RiClipboardLine", "title": "1. Kopjoni kodin", "description": "Butoni Copy signature kopjon nënshkrimin në clipboard si HTML i formatuar, gati për ngjitje." },
+        { "icon": "RiSettings3Line", "title": "2. Hapni cilësimet e nënshkrimit", "description": "Në Gmail: Settings > See all settings > Signature. Në Outlook: File > Options > Mail > Signatures." },
+        {
+          "icon": "RiSaveLine",
+          "title": "3. Ngjitni dhe ruani",
+          "description": "Në fushën e nënshkrimit përdorni Ctrl+V (Windows) ose Cmd+V (Mac). Nënshkrimi shfaqet me të gjitha ngjyrat dhe formatimin. Ruani ndryshimet."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Për kë është gjeneruesi i nënshkrimit email?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiBriefcaseLine", "title": "Sipërmarrës dhe freelancerë", "description": "Nënshkrim profesional në çdo mesazh pa pasur nevojë për dizajner grafik." },
+        { "icon": "RiTeamLine", "title": "Ekipet e kompanive", "description": "Çdo punonjës krijon nënshkrim në të njëjtin stil. Identitet konsistent në të gjithë kompaninë." },
+        { "icon": "RiHandCoinLine", "title": "Përfaqësuesit e shitjeve", "description": "Butoni CTA me lidhje në kalendar ose ofertë rrit mundësinë e rezervimit të takimeve." },
+        { "icon": "RiScales3Line", "title": "Avokatë, kontabilistë, mjekë", "description": "Mundësi për të shtuar klauzola ligjore, numra licence ose të dhëna të tjera të kërkuara në fushën." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Pyetjet më të shpeshta për gjeneruesin e nënshkrimit email",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "A funksionon nënshkrimi në Gmail, Outlook dhe Apple Mail?",
+          "answer": "Po. Nënshkrimi i gjeneruar nga mjeti përdor tabela HTML që shfaqen saktë në të gjithë klientët e njohur email: Gmail, Outlook (desktop dhe ueb), Apple Mail, Thunderbird."
+        },
+        {
+          "question": "A mund të shtoj logon e kompanisë?",
+          "answer": "Po. Në skedën Details ngjitni URL-në e imazhit (logo ose foto profili). Imazhi duhet të jetë katror (të paktën 120x120 px) dhe publikisht i disponueshëm në internet."
+        },
+        {
+          "question": "Si ta kopjoj nënshkrimin në klientin email?",
+          "answer": "Butoni Copy signature nën parashikimin kopjon nënshkrimin në clipboard si HTML i formatuar. Në cilësimet e nënshkrimit të Gmail ose Outlook thjesht përdorni Ctrl+V (Windows) ose Cmd+V (Mac)."
+        },
+        {
+          "question": "A mund ta përdor gjeneruesin për të krijuar nënshkrime për të gjithë ekipin?",
+          "answer": "Po. Gjeneruesi nuk kërkon hyrje apo regjistrim. Çdo anëtar i ekipit mund ta hapë mjetin, të plotësojë të dhënat e veta dhe të kopjojë nënshkrimin e gatshëm. Konfigurimi gjithashtu mund të eksportohet si skedar JSON dhe të ndahet me kolegët."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Zbuloni mjete të tjera" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

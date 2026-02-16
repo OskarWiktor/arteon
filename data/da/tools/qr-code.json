@@ -1,0 +1,196 @@
+{
+  "toolKey": "qrCode",
+  "locale": "da",
+  "metadata": {
+    "title": "Gratis QR-kode-generator – PNG og SVG, uden registrering",
+    "description": "Opret en QR-kode til en hjemmeside, vCard, menu eller flyer på få sekunder. Eksportér til PNG og SVG. Tilpas farver og størrelse. Uden registrering, uden begrænsninger.",
+    "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
+    "path": "/da/vaerktojer/gratis-qr-kode-generator"
+  },
+  "hero": {
+    "title": "QR-kode-generator – gratis, uden registrering",
+    "description": "Opret en QR-kode til en hjemmeside, vCard-visitkort, e-mail, telefon eller tekst. Tilpas farver, størrelse og fejlkorrektionsniveau, og download derefter en færdig PNG- eller SVG-fil.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/da/vaerktojer", "label": "Værktøjer" },
+    "third": { "href": "/da/vaerktojer/gratis-qr-kode-generator", "label": "Gratis QR-kode-generator" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Gratis QR-kode-generator",
+      "alternateName": ["QR-kodeskaber", "vCard QR-kodegenerator", "Gratis QR-generator", "QR-kodeværktøj"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "QRCodeGenerator",
+      "description": "Opret en QR-kode til en hjemmeside, visitkort, menu eller flyer. Vælg datatype, tilpas farver og størrelse, og download derefter en PNG- eller SVG-fil.",
+      "featureList": [
+        "QR-kode til URL (hjemmesider)",
+        "QR-kode til almindelig tekst",
+        "QR-kode vCard (kontaktoplysninger)",
+        "QR-kode til e-mail (adresse, emne, indhold)",
+        "QR-kode til telefonnummer",
+        "Tilpasselige farver for kode og baggrund",
+        "Valg af kodestørrelse i pixels",
+        "Eksport til PNG-format (raster)",
+        "Eksport til SVG-format (vektor)",
+        "Live forhåndsvisning af koden",
+        "Lokal behandling i browseren",
+        "Reed-Solomon fejlkorrektion"
+      ]
+    },
+    "howTo": {
+      "name": "Sådan bruger du den gratis QR-kode-generator",
+      "description": "Sådan opretter du en QR-kode til en hjemmeside, vCard-visitkort, e-mail eller telefon – fra valg af datatype til download af trykklar fil.",
+      "steps": [
+        { "name": "Vælg datatype", "text": "Bestem hvad QR-koden skal indeholde: URL, tekst, visitkort (vCard), e-mail eller telefonnummer." },
+        { "name": "Indtast data", "text": "Udfyld de relevante felter. For URL, indtast hjemmesideadressen; for vCard, indtast kontaktoplysninger." },
+        { "name": "Tilpas udseendet", "text": "Vælg størrelse, marginer, kode- og baggrundsfarve samt fejlkorrektionsniveau." },
+        { "name": "Download koden", "text": "Den færdige QR-kode kan downloades som en PNG-fil (til tryk og web) eller SVG (vektor, skalerbar uden kvalitetstab)." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Hvad er en QR-kode, og hvordan virker den?",
+      "html": "<p class=\"text-mid\">En QR-kode (Quick Response) er en todimensionel stregkode, der kan scannes med en mobiltelefons kamera. I modsætning til traditionelle stregkoder lagrer QR-koder data horisontalt og vertikalt, hvilket muliggør kodning af mere information – op til ca. 3.000 alfanumeriske tegn.</p><p class=\"text-mid mt-3\">QR-koden blev udviklet i 1994 af det japanske firma Denso Wave (en del af Toyota-koncernen) til sporing af bildele. I dag bruges QR-koder bredt inden for marketing, gæstfrihed, logistik og forretningskommunikation.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Sådan bruger du den gratis QR-kode-generator",
+      "description": "At oprette en QR-kode tager kun et par sekunder:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Vælg datatype", "description": "Vælg hvad du vil kode: URL, tekst, vCard-visitkort, e-mail eller telefonnummer." },
+        { "title": "2. Indtast data", "description": "Udfyld de relevante felter – hjemmesideadresse, kontaktoplysninger eller beskedindhold." },
+        { "title": "3. Download koden", "description": "Tilpas udseendet (farver, størrelse, marginer) og download som PNG eller SVG." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Typer af QR-koder – URL, vCard, e-mail, telefon, tekst",
+      "description": "Den gratis QR-kode-generator understøtter fem datatyper – hver nyttig i forskellige situationer:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiGlobalLine", "title": "URL", "description": "Link til en hjemmeside. Efter scanning åbner telefonen siden i browseren. Velegnet til visitkort, flyers og plakater." },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Tekst",
+          "description": "Enhver tekst op til 3.000 tegn. Efter scanning viser telefonen teksten på skærmen. Nyttig til rabatkuponer og korte instruktioner."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "vCard-visitkort",
+          "description": "Digitalt visitkort med kontaktoplysninger (navn, virksomhed, telefon, e-mail, adresse). Efter scanning tilbyder telefonen at gemme kontakten."
+        },
+        { "icon": "RiMailLine", "title": "E-mail", "description": "E-mailadresse med valgfrit emne og indhold. Efter scanning åbner telefonen e-mail-appen med udfyldt formular." },
+        { "icon": "RiPhoneLine", "title": "Telefon", "description": "Telefonnummer. Efter scanning tilbyder telefonen at foretage opkaldet. Nyttigt til hotlines og kundesupport." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Tekniske specifikationer for QR-koder",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kapacitet</span><span class=\"text-mid text-sm!\">op til 4.296 tegn</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Fejlkorrektion</span><span class=\"text-mid text-sm!\">7 % – 30 %</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Mindste trykstørrelse</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Mindste kontrast</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Marginer</span><span class=\"text-mid text-sm!\">min. 4 moduler</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">At kende de tekniske parametre hjælper med at oprette en QR-kode, der er læsbar under alle forhold:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Datakapacitet</strong> – en QR-kode kan rumme op til 7.089 cifre, 4.296 alfanumeriske tegn eller 2.953 bytes binære data.</li><li><strong>Reed-Solomon fejlkorrektion</strong> – matematisk algoritme, der muliggør læsning af koden selv ved delvis beskadigelse. Niveauer: L (7 %), M (15 %), Q (25 %), H (30 %).</li><li><strong>Marginer</strong> – hvidt område omkring koden nødvendigt for korrekt scanning. Anbefalet minimum er 4 moduler.</li><li><strong>Mindste trykstørrelse</strong> – under normale scanningsforhold bør koden være mindst 2×2 cm.</li><li><strong>Kontrast</strong> – kontrastforholdet mellem kode og baggrund bør være mindst 3:1.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Anvendelsesområder for QR-koder – visitkort, flyers, restaurantmenuer",
+      "description": "QR-koder har anvendelsesområder inden for mange brancher og situationer:",
+      "grid": "three",
+      "items": [
+        { "icon": "RiContactsBookLine", "title": "Visitkort", "description": "vCard-kode på visitkortet lader modtageren gemme kontakten med én enkelt scanning, uden manuelt at indtaste data." },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Restaurant- og cafémenuer",
+          "description": "QR-kode på bordet, der leder til en digital menu. Elegant løsning, der er blevet populær siden COVID-19-pandemien."
+        },
+        { "icon": "RiPrinterLine", "title": "Flyers og plakater", "description": "QR-kode med link til produktside, tilmeldingsformular eller specialtilbud." },
+        { "icon": "RiBuilding2Line", "title": "Produktemballage", "description": "Link til brugsanvisning, garantikort eller producentens hjemmeside." },
+        { "icon": "RiHospitalLine", "title": "Sundhedsinstitutioner", "description": "QR-kode på patientkort, der leder til patientportal eller tidsbestillingssystem." },
+        { "icon": "RiCalendarEventLine", "title": "Begivenheder og konferencer", "description": "Billetter med QR-kode til hurtig verifikation ved indgangen." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs SVG – hvilket format skal man vælge til tryk?",
+      "plans": [
+        { "id": "png", "name": "PNG (raster)" },
+        { "id": "svg", "name": "SVG (vektor)", "highlighted": true }
+      ],
+      "features": [
+        { "name": "Web og sociale medier", "values": { "png": true, "svg": true } },
+        { "name": "Flyers og visitkort", "values": { "png": true, "svg": true } },
+        { "name": "Plakater og bannere (stort format)", "values": { "png": false, "svg": true } },
+        { "name": "Skalering uden kvalitetstab", "values": { "png": false, "svg": true } },
+        { "name": "Redigering i grafisk applikation", "values": { "png": false, "svg": true } },
+        { "name": "Mindre filstørrelse", "values": { "png": false, "svg": true } },
+        { "name": "Præsentationer", "values": { "png": true, "svg": true } }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Hvad gør denne QR-kode-generator speciel?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiInfinityLine", "title": "Lokal generering i browseren", "description": "Data indtastet i generatoren sendes ikke til nogen server – al behandling sker på din enhed." },
+        { "icon": "RiLockLine", "title": "Fem datatyper i ét værktøj", "description": "URL, tekst, vCard-visitkort, e-mail og telefon – hver type genererer en QR-kode i den relevante standard." },
+        {
+          "icon": "RiStackLine",
+          "title": "Tilpasning af QR-kodens udseende",
+          "description": "Kode- og baggrundsfarve, størrelse i pixels, marginer og fejlkorrektionsniveau – hver parameter kan tilpasses."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Fire fejlkorrektionsniveauer",
+          "description": "Reed-Solomon-algoritmen lader dig vælge kodens modstandsdygtighed mod beskadigelse – fra 7 % (L) til 30 % (H)."
+        },
+        { "icon": "RiEyeLine", "title": "Live forhåndsvisning", "description": "Du ser resultatet øjeblikkeligt efter indtastning af data, uden at klikke på Generér." },
+        { "icon": "RiDownloadLine", "title": "Eksport af PNG og SVG", "description": "Download koden i det format, der passer til dit formål." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Ofte stillede spørgsmål om QR-kode-generatoren",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Udløber QR-koder genereret med dette værktøj?",
+          "answer": "Nej. Statiske QR-koder (som dem dette værktøj genererer) har ingen udløbsdato. Indholdet – f.eks. URL eller visitkortdata – kodes direkte i koden. Så længe destinationssiden eksisterer, vil koden virke.",
+          "answerSchemaText": "Nej. Statiske QR-koder har ingen udløbsdato. Indholdet kodes direkte i koden."
+        },
+        {
+          "question": "Kan jeg ændre URL'en i en eksisterende QR-kode?",
+          "answer": "For statiske QR-koder kan det kodede indhold ikke ændres – du skal oprette en ny kode med den nye adresse. Dynamiske QR-koder (redigerbare efter generering) kræver en ekstern betalt tjeneste.",
+          "answerSchemaText": "Nej, statiske QR-koder kan ikke redigeres. Opret en ny kode til en anden URL."
+        },
+        {
+          "question": "PNG eller SVG – hvilket QR-kode-format skal man vælge til tryk?",
+          "answer": "PNG fungerer til de fleste formål: web, sociale medier, tryk op til A4-størrelse. SVG er vektorbaseret – kan skaleres til enhver størrelse uden kvalitetstab, ideelt til bannere, skilte og store reklameformater.",
+          "answerSchemaText": "PNG til web og almindeligt tryk. SVG til store formater og skalering uden tab."
+        },
+        {
+          "question": "Hvilken størrelse QR-kode skal man vælge til visitkort?",
+          "answer": "Til trykt materiale (visitkort, flyers) bør koden være mindst 2×2 cm, optimalt 3×3 cm. I generatoren svarer dette til en opløsning på 300 px ved standard trykkvalitet (300 DPI).",
+          "answerSchemaText": "Mindst 2×2 cm (300 px ved 300 DPI). Optimalt 3×3 cm til visitkort."
+        },
+        {
+          "question": "Kan jeg bruge genererede QR-koder kommercielt?",
+          "answer": "Ja. Genererede QR-koder kan frit bruges i ethvert projekt – kommercielt og ikke-kommercielt, uden licensbegrænsninger.",
+          "answerSchemaText": "Ja, uden begrænsninger i kommercielle og ikke-kommercielle projekter."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Udforsk flere gratis værktøjer" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

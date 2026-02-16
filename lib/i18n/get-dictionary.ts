@@ -87,6 +87,19 @@ const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
   fr: () => import('@/dictionaries/fr.json').then((m) => DictionarySchema.parse(m.default)),
   pt: () => import('@/dictionaries/pt.json').then((m) => DictionarySchema.parse(m.default)),
   it: () => import('@/dictionaries/it.json').then((m) => DictionarySchema.parse(m.default)),
+  ro: () => import('@/dictionaries/ro.json').then((m) => DictionarySchema.parse(m.default)),
+  nl: () => import('@/dictionaries/nl.json').then((m) => DictionarySchema.parse(m.default)),
+  hu: () => import('@/dictionaries/hu.json').then((m) => DictionarySchema.parse(m.default)),
+  id: () => import('@/dictionaries/id.json').then((m) => DictionarySchema.parse(m.default)),
+  vi: () => import('@/dictionaries/vi.json').then((m) => DictionarySchema.parse(m.default)),
+  tr: () => import('@/dictionaries/tr.json').then((m) => DictionarySchema.parse(m.default)),
+  tl: () => import('@/dictionaries/tl.json').then((m) => DictionarySchema.parse(m.default)),
+  sw: () => import('@/dictionaries/sw.json').then((m) => DictionarySchema.parse(m.default)),
+  ms: () => import('@/dictionaries/ms.json').then((m) => DictionarySchema.parse(m.default)),
+  cs: () => import('@/dictionaries/cs.json').then((m) => DictionarySchema.parse(m.default)),
+  sv: () => import('@/dictionaries/sv.json').then((m) => DictionarySchema.parse(m.default)),
+  sq: () => import('@/dictionaries/sq.json').then((m) => DictionarySchema.parse(m.default)),
+  da: () => import('@/dictionaries/da.json').then((m) => DictionarySchema.parse(m.default)),
 };
 
 export async function getDictionary(locale: Locale): Promise<Dictionary> {

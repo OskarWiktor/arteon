@@ -1,0 +1,163 @@
+{
+  "toolKey": "favicon",
+  "locale": "cs",
+  "metadata": {
+    "title": "Gener\u00e1tor favicon zdarma \u2013 ICO a PNG z jednoho obr\u00e1zku",
+    "description": "Z jednoho obr\u00e1zku vygenerujte favicon.ico a PNG ikony v souladu s po\u017eadavky prohl\u00ed\u017ee\u010d\u016f a Lighthouse. Bez registrace, funguje v prohl\u00ed\u017ee\u010di.",
+    "ogImage": "/assets/tools/narzedzia-generator-favicon.webp",
+    "path": "/cs/nastroje/generator-favicon-zdarma"
+  },
+  "hero": {
+    "title": "Vygenerujte favicon.ico a PNG ikony z jednoho obr\u00e1zku",
+    "description": "Nahrajte obr\u00e1zek a n\u00e1stroj vygeneruje favicon.ico a kompletní sadu PNG ikon pot\u0159ebn\u00fdch pro prohl\u00ed\u017ee\u010de, mobilní za\u0159\u00edzen\u00ed a Lighthouse.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-favicon.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/cs/nastroje", "label": "N\u00e1stroje" },
+    "third": { "href": "/cs/nastroje/generator-favicon-zdarma", "label": "Gener\u00e1tor favicon" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Gener\u00e1tor favicon zdarma",
+      "alternateName": ["Gener\u00e1tor favicon.ico", "Gener\u00e1tor ikon pro web", "N\u00e1stroj na favicon", "Gener\u00e1tor favicon z obr\u00e1zku"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "FaviconGenerator",
+      "description": "Bezplatn\u00fd gener\u00e1tor favicon. Nahrajte jeden obr\u00e1zek a z\u00edskejte favicon.ico a kompletní sadu PNG ikon pro prohl\u00ed\u017ee\u010de, mobilní za\u0159\u00edzen\u00ed a PWA.",
+      "featureList": [
+        "Generov\u00e1n\u00ed favicon.ico (16\u00d716, 32\u00d732, 48\u00d748 px)",
+        "PNG ikony pro prohl\u00ed\u017ee\u010de (16\u00d716 a\u017e 512\u00d7512 px)",
+        "Apple Touch ikona (180\u00d7180 px)",
+        "Android/PWA ikony (192\u00d7192, 512\u00d7512 px)",
+        "Microsoft ikony (150\u00d7150, 310\u00d7310 px)",
+        "O\u0159ez a zm\u011bna velikosti zdrojov\u00e9ho obr\u00e1zku",
+        "N\u00e1hled v re\u00e1ln\u00e9m \u010dase",
+        "Sta\u017een\u00ed v\u0161ech ikon v ZIP",
+        "Lok\u00e1ln\u00ed zpracov\u00e1n\u00ed v prohl\u00ed\u017ee\u010di"
+      ]
+    },
+    "howTo": {
+      "name": "Jak vygenerovat favicon z obr\u00e1zku",
+      "description": "Jak vygenerovat favicon.ico a PNG ikony z jednoho obr\u00e1zku pro prohl\u00ed\u017ee\u010de a mobilní za\u0159\u00edzen\u00ed.",
+      "totalTime": "PT2M",
+      "steps": [
+        {
+          "name": "Nahrajte obr\u00e1zek",
+          "text": "P\u0159et\u00e1hn\u011bte soubor do vyzna\u010den\u00e9 oblasti nebo jej vyberte ze za\u0159\u00edzen\u00ed. Podporovan\u00e9 form\u00e1ty jsou JPG, PNG, SVG a WebP."
+        },
+        { "name": "O\u0159\u00edzn\u011bte obr\u00e1zek", "text": "Upravte oblast o\u0159ezu pro v\u00fdb\u011br vhodn\u00e9 \u010d\u00e1sti obr\u00e1zku pro favicon." },
+        { "name": "Zkontrolujte n\u00e1hled", "text": "Pod\u00edvejte se, jak favicon vypad\u00e1 v z\u00e1lo\u017ece prohl\u00ed\u017ee\u010de a v r\u016fzn\u00fdch velikostech." },
+        { "name": "St\u00e1hn\u011bte ikony", "text": "St\u00e1hn\u011bte favicon.ico a kompletní sadu PNG ikon v souboru ZIP." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Co je favicon a pro\u010d je d\u016fle\u017eit\u00e1?",
+      "html": "<p class=\"text-mid\">Favicon je mal\u00e1 ikona, kter\u00e1 se zobrazuje v z\u00e1lo\u017ece prohl\u00ed\u017ee\u010de, v seznamu z\u00e1lo\u017eek a na domovsk\u00e9 obrazovce telefonu. Je to jeden z prvn\u00edch prvk\u016f, kter\u00e9 u\u017eivatel uvid\u00ed \u2013 je\u0161t\u011b p\u0159ed na\u010dten\u00edm str\u00e1nky.</p><p class=\"text-mid mt-3\">Profesion\u00e1ln\u00ed favicon buduje rozpoznatelnost zna\u010dky a usnad\u0148uje u\u017eivateli naj\u00edt va\u0161i str\u00e1nku mezi mnoha otev\u0159en\u00fdmi z\u00e1lo\u017ekami. Absence favicon m\u016f\u017ee p\u016fsobit neprofesion\u00e1ln\u011b a sn\u00ed\u017eit d\u016fv\u011bru n\u00e1v\u0161t\u011bvn\u00edk\u016f.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Jak pou\u017e\u00edt gener\u00e1tor favicon",
+      "description": "Generov\u00e1n\u00ed favicon zabere jen n\u011bkolik minut:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Nahrajte obr\u00e1zek",
+          "description": "P\u0159et\u00e1hn\u011bte soubor do vyzna\u010den\u00e9 oblasti nebo jej vyberte ze za\u0159\u00edzen\u00ed. Nejl\u00e9pe se hod\u00ed \u010dtvercov\u00fd obr\u00e1zek."
+        },
+        {
+          "title": "2. O\u0159\u00edzn\u011bte a upravte",
+          "description": "Upravte oblast o\u0159ezu pro v\u00fdb\u011br vhodn\u00e9 \u010d\u00e1sti obr\u00e1zku. Pod\u00edvejte se, jak vypad\u00e1 v r\u016fzn\u00fdch velikostech."
+        },
+        {
+          "title": "3. St\u00e1hn\u011bte ikony",
+          "description": "St\u00e1hn\u011bte favicon.ico a kompletní sadu PNG ikon v souboru ZIP. V\u0161echny ikony jsou p\u0159ipraveny k pou\u017eit\u00ed."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Jak\u00e9 ikony gener\u00e1tor vytv\u00e1\u0159\u00ed?",
+      "description": "Gener\u00e1tor vytv\u00e1\u0159\u00ed kompletní sadu ikon pot\u0159ebn\u00fdch pro modern\u00ed prohl\u00ed\u017ee\u010de a za\u0159\u00edzen\u00ed:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "favicon.ico",
+          "description": "ICO soubor obsahuj\u00edc\u00ed t\u0159i velikosti (16\u00d716, 32\u00d732, 48\u00d748 px). Podporov\u00e1n v\u0161emi prohl\u00ed\u017ee\u010di, v\u010detn\u011b star\u0161\u00edch."
+        },
+        {
+          "icon": "RiChromeLine",
+          "title": "Ikony prohl\u00ed\u017ee\u010de (PNG)",
+          "description": "Sada PNG ikon pro modern\u00ed prohl\u00ed\u017ee\u010de: 16\u00d716, 32\u00d732, 48\u00d748, 96\u00d796 a 128\u00d7128 px."
+        },
+        {
+          "icon": "RiAppleLine",
+          "title": "Apple Touch Icon",
+          "description": "Ikona 180\u00d7180 px pro iOS za\u0159\u00edzen\u00ed (iPhone, iPad). Zobrazuje se na domovsk\u00e9 obrazovce po p\u0159id\u00e1n\u00ed str\u00e1nky."
+        },
+        { "icon": "RiAndroidLine", "title": "Android/PWA ikony", "description": "Ikony 192\u00d7192 a 512\u00d7512 px pro Progressive Web Apps a Android za\u0159\u00edzen\u00ed." },
+        { "icon": "RiWindowsLine", "title": "Microsoft ikony", "description": "Ikony 150\u00d7150 a 310\u00d7310 px pro Windows dla\u017edice a Microsoft Edge." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "\u010c\u00edm je tento gener\u00e1tor favicon v\u00fdjime\u010dn\u00fd?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Lok\u00e1ln\u00ed zpracov\u00e1n\u00ed v prohl\u00ed\u017ee\u010di",
+          "description": "Obr\u00e1zek se nenahr\u00e1v\u00e1 na \u017e\u00e1dn\u00fd server. Ve\u0161ker\u00e9 zpracov\u00e1n\u00ed prob\u00edh\u00e1 na va\u0161em za\u0159\u00edzen\u00ed."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Spln\u011bn\u00ed po\u017eadavk\u016f Lighthouse",
+          "description": "Generovan\u00e9 ikony spl\u0148uj\u00ed po\u017eadavky Google Lighthouse na velikost a form\u00e1t."
+        },
+        {
+          "icon": "RiDevicesLine",
+          "title": "Ikony pro v\u0161echna za\u0159\u00edzen\u00ed",
+          "description": "Jedna sada soubor\u016f pokryje v\u0161echny prohl\u00ed\u017ee\u010de, iOS, Android a Windows."
+        },
+        { "icon": "RiInfinityLine", "title": "Bez limit\u016f, bez registrace", "description": "Vygenerujte tolik favicon, kolik pot\u0159ebujete. Bez registrace, bez poplatk\u016f." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "\u010casto kladen\u00e9 ot\u00e1zky o gener\u00e1toru favicon",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Jak\u00fd obr\u00e1zek je nejlep\u0161\u00ed pro favicon?",
+          "answer": "\u010ctverccov\u00fd obr\u00e1zek (alespo\u0148 512\u00d7512 px) s jednoduch\u00fdm pozad\u00edm je nejlep\u0161\u00ed. Logo, inici\u00e1ly nebo jednoduch\u00e1 ikona d\u00e1vaj\u00ed nejlep\u0161\u00ed v\u00fdsledky. Obr\u00e1zky s mnoha detaily mohou vypadat \u0161patn\u011b v mal\u00e9 velikosti (16\u00d716 px).",
+          "answerSchemaText": "\u010ctverccov\u00fd obr\u00e1zek, alespo\u0148 512\u00d7512 px, s jednoduch\u00fdm pozad\u00edm. Logo nebo jednoduch\u00e1 ikona d\u00e1vaj\u00ed nejlep\u0161\u00ed v\u00fdsledky."
+        },
+        {
+          "question": "Jak\u00fd je rozd\u00edl mezi favicon.ico a PNG?",
+          "answer": "ICO soubor m\u016f\u017ee obsahovat n\u011bkolik velikost\u00ed v jednom souboru a je podporov\u00e1n v\u0161emi prohl\u00ed\u017ee\u010di, v\u010detn\u011b star\u0161\u00edch. PNG soubory maj\u00ed vy\u0161\u0161\u00ed kvalitu, ale vy\u017eaduj\u00ed samostatn\u00fd HTML tag pro ka\u017edou velikost. Doporu\u010duje se pou\u017e\u00edvat oboj\u00ed.",
+          "answerSchemaText": "ICO obsahuje n\u011bkolik velikost\u00ed v jednom souboru. PNG nab\u00edz\u00ed vy\u0161\u0161\u00ed kvalitu. Doporu\u010duje se pou\u017e\u00edvat oboj\u00ed."
+        },
+        {
+          "question": "Odes\u00edl\u00e1 se obr\u00e1zek na server?",
+          "answer": "Ne. Ve\u0161ker\u00e9 zpracov\u00e1n\u00ed prob\u00edh\u00e1 ve va\u0161em prohl\u00ed\u017ee\u010di. Obr\u00e1zek se neukl\u00e1d\u00e1 a neodes\u00edl\u00e1 nikam.",
+          "answerSchemaText": "Ne. Obr\u00e1zek se zpracov\u00e1v\u00e1 v prohl\u00ed\u017ee\u010di. Neodes\u00edl\u00e1 se na \u017e\u00e1dn\u00fd server."
+        },
+        {
+          "question": "Jak p\u0159idat favicon na web?",
+          "answer": "Umíst\u011bte soubory ikon do ko\u0159enov\u00e9 slo\u017eky webu a p\u0159idejte p\u0159\u00edslu\u0161n\u00e9 HTML tagy do sekce &lt;head&gt; str\u00e1nky. Sta\u017een\u00fd ZIP soubor obsahuje pokyny pro implementaci.",
+          "answerSchemaText": "Umíst\u011bte soubory ikon do ko\u0159enov\u00e9 slo\u017eky webu a p\u0159idejte HTML tagy do sekce head."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Objevte dal\u0161\u00ed n\u00e1stroje" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "toolKey": "metaCounter",
+  "locale": "sq",
+  "metadata": {
+    "title": "Kontrollues meta titull dhe përshkrim falas – Gjerësi në pikselë",
+    "description": "Kontrolloni gjatësinë e meta titullit dhe përshkrimit në karaktere dhe pikselë. Parashikimi Google SERP ju ndihmon të shmangni fragmentet e prera. Pa regjistrim, lokalisht në shfletues.",
+    "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+    "path": "/sq/mjetet/kontrollues-meta-titull-dhe-pershkrim"
+  },
+  "hero": {
+    "title": "Kontrolloni gjatësinë e titullit dhe përshkrimit të faqes në Google",
+    "description": "Shkruani titullin dhe përshkrimin dhe mjeti numëron karakteret, fjalët, gjerësinë në pikselë dhe tregon nëse gjatësia përputhet me praktikat e rekomanduara SEO.",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/sq/mjetet", "label": "Mjetet" },
+    "third": { "href": "/sq/mjetet/kontrollues-meta-titull-dhe-pershkrim", "label": "Kontrollues meta titull dhe përshkrim" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Kontrollues falas i gjatësisë së meta titullit dhe përshkrimit",
+      "alternateName": ["Kontrollues meta titull dhe përshkrim me parashikim Google", "Parashikim Google SERP", "Kontrollues gjerësie titulli SEO në pikselë"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "SEOTool",
+      "description": "Kontrollues falas i gjatësisë së meta titullit dhe përshkrimit. Kontrollon numrin e karaktereve, fjalëve dhe gjerësinë në pikselë. Tregon parashikimin e mënyrës se si titulli dhe përshkrimi shfaqen në rezultatet e kërkimit të Google.",
+      "featureList": [
+        "Numërues karakteresh për meta titullin",
+        "Numërues karakteresh për meta përshkrimin",
+        "Matje gjerësie në pikselë (ekuivalente me Google)",
+        "Numërues fjalësh për titullin dhe përshkrimin",
+        "Parashikim i rezultateve të kërkimit Google",
+        "Vlerësim gjatësie me kode ngjyrash (shumë e shkurtër / mirë / shumë e gjatë)",
+        "Paralajmërim kur titulli dhe përshkrimi priten",
+        "Rekomandim i gjatësisë optimale",
+        "Përpunim lokal në shfletues"
+      ]
+    },
+    "howTo": {
+      "name": "Si të kontrolloni gjatësinë e meta titullit dhe përshkrimit",
+      "description": "Kontrolloni gjatësinë e meta titullit dhe përshkrimit në pikselë dhe karaktere.",
+      "totalTime": "PT3M",
+      "steps": [
+        { "name": "Shkruani meta titullin", "text": "Ngjitni ose shkruani titullin e faqes në fushën Meta Title. Mjeti numëron automatikisht karakteret, fjalët dhe gjerësinë në pikselë." },
+        { "name": "Shkruani meta përshkrimin", "text": "Shtoni përshkrimin e faqes në fushën Meta Description. Do të shihni të njëjtat metrika." },
+        { "name": "Kontrolloni parashikimin Google", "text": "Shikoni si shfaqen titulli dhe përshkrimi në rezultatet e simuluara të kërkimit Google." },
+        { "name": "Rregulloni sipas rekomandimeve", "text": "Nëse statusi tregon Shumë e shkurtër ose Shumë e gjatë, rregulloni tekstin dhe ndiqni ndryshimet në kohë reale." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Çfarë janë meta titulli dhe meta përshkrimi?",
+      "html": "<p class=\"text-mid\">Meta titulli dhe meta përshkrimi janë dy tekste të shkurtra që përshkruajnë përmbajtjen e një faqeje interneti. Ato nuk shfaqen drejtpërdrejt në faqe, por dalin në rezultatet e kërkimit të Google si titulli (lidhja blu) dhe përshkrimi (teksti gri poshtë titullit).</p><p class=\"text-mid mt-3\">Meta etiketat e shkruara mirë funksionojnë si një reklamë për faqen tuaj në rezultatet e kërkimit – tërheqin vëmendjen dhe rrisin mundësinë e klikimit. Etiketat e shkruara keq ose të prera mund të dekurajojnë klikimin, edhe nëse vetë faqja është e vlefshme.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Si të përdorni kontrolluesin e meta titullit dhe përshkrimit",
+      "description": "Kontrolli i gjatësisë së meta etiketave zgjat një minutë:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiPencilLine",
+          "title": "1. Shkruani titullin e faqes",
+          "description": "Ngjitni ose shkruani meta titullin në fushën e parë. Mjeti tregon menjëherë tre metrika: numrin e karaktereve, fjalëve dhe gjerësinë në pikselë."
+        },
+        { "icon": "RiFileTextLine", "title": "2. Shkruani përshkrimin e faqes", "description": "Shtoni meta përshkrimin në fushën e dytë. Do të shihni të njëjtat metrika." },
+        {
+          "icon": "RiEyeLine",
+          "title": "3. Kontrolloni parashikimin",
+          "description": "Në të djathtë (desktop) ose poshtë (celular) shihni parashikimin e mënyrës se si titulli dhe përshkrimi shfaqen në rezultatet e kërkimit Google."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "4. Rregulloni sipas rekomandimeve",
+          "description": "Nëse statusi tregon Shumë e shkurtër ose Shumë e gjatë, rregulloni tekstin. Ndryshimet janë të dukshme menjëherë."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Sa karaktere duhet të ketë meta titulli dhe përshkrimi?",
+      "html": "<p class=\"text-mid mb-4\">Google pret titujt dhe përshkrimet që janë shumë të gjata. Më poshtë janë intervalet e rekomanduara që zvogëlojnë rrezikun e tekstit të prerë në rezultatet e kërkimit.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Elementi</th><th class=\"py-2 pr-4 font-semibold\">Karaktere</th><th class=\"py-2 pr-4 font-semibold\">Pikselë</th><th class=\"py-2 font-semibold\">Shënime</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta titull</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 karaktere</td><td class=\"py-2 pr-4 whitespace-nowrap\">deri ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Fjalët kyçe më të rëndësishme së pari. Marka në fund.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta përshkrim</td><td class=\"py-2 pr-4 whitespace-nowrap\">120–160 karaktere</td><td class=\"py-2 pr-4 whitespace-nowrap\">deri ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">Nxë 2–3 fjali të shkurtra. Përfundoni me një thirrje për veprim.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Këto janë vlera të përafërta – Google nuk publikon kufij të saktë dhe mund t'i rregullojë ato në varësi të pajisjes dhe kontekstit të kërkimit.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Për kë është kontrollues i meta etiketave?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Pronarët e faqeve dhe dyqaneve elektronike",
+          "description": "Kontrolloni që titujt dhe përshkrimet nuk priten në rezultatet e Google para se të publikoni një faqe ose produkt të ri."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "Specialistët SEO",
+          "description": "Testoni versione të ndryshme të titujve dhe përshkrimeve, kontrolloni parashikimin e rezultateve të kërkimit dhe verifikoni përputhjen me rekomandimet."
+        },
+        { "icon": "RiEditLine", "title": "Copywriterët", "description": "Shkruani tituj dhe përshkrime që përshtaten brenda kufijve dhe mbështesin klikimin." },
+        { "icon": "RiCodeLine", "title": "Zhvilluesit e uebit", "description": "Verifikoni meta etiketat para se faqja të kalojë në prodhim." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Pyetjet më të shpeshta për kontrolluesin e meta titullit dhe përshkrimit",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Pse mjeti tregon gjerësinë në pikselë dhe jo vetëm numrin e karaktereve?",
+          "answer": "Karaktere të ndryshme kanë gjerësi të ndryshme. Shkronja &quot;i&quot; zë shumë më pak hapësirë se &quot;m&quot; ose &quot;W&quot;. Google pret titujt dhe përshkrimet bazuar në gjerësinë në pikselë, jo numrin e karaktereve.",
+          "answerSchemaText": "Google pret bazuar në gjerësinë në pikselë, jo numrin e karaktereve. Karaktere të ndryshme kanë gjerësi të ndryshme."
+        },
+        {
+          "question": "A tregon Google gjithmonë meta titullin dhe përshkrimin tim?",
+          "answer": "Jo gjithmonë. Google mund të ndryshojë titullin ose përshkrimin e shfaqur nëse gjen diçka më të përshtatshme për pyetjen e kërkimit të përdoruesit. Meta etiketat e shkruara mirë rrisin mundësinë që Google t'i përdorë ato, por nuk ka garanci 100%.",
+          "answerSchemaText": "Jo gjithmonë. Google mund të ndryshojë titullin ose përshkrimin e shfaqur për t'u përshtatur më mirë me pyetjen e kërkimit."
+        },
+        {
+          "question": "Cila është gjatësia optimale e meta titullit dhe meta përshkrimit?",
+          "answer": "Meta titulli duhet të ketë rreth 50–60 karaktere (deri ~580 pikselë gjerësi). Meta përshkrimi funksionon më mirë me 120–160 karaktere (deri ~920 pikselë). Këto janë vlera të përafërta – Google nuk publikon kufij të saktë.",
+          "answerSchemaText": "Meta titull: 50–60 karaktere (~580px). Meta përshkrim: 120–160 karaktere (~920px). Vlera të përafërta."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Zbuloni mjete të tjera" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

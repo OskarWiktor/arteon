@@ -1,0 +1,132 @@
+{
+  "toolKey": "contrastChecker",
+  "locale": "da",
+  "metadata": {
+    "title": "Gratis farvekontrastkontrol – WCAG 2.1-overholdelse",
+    "description": "Kontrollér om dine tekst- og baggrundsfarver er læsbare ifølge WCAG 2.1. Indtast HEX-, RGB- eller HSL-kode, se kontrastforholdet og brug automatisk korrektion. Uden registrering.",
+    "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
+    "path": "/da/vaerktojer/farvekontrastkontrol"
+  },
+  "hero": {
+    "title": "Kontrol af farvekontrast og læsbarhed",
+    "description": "Indtast tekst- og baggrundsfarve, og værktøjet viser om kontrasten er tilstrækkelig. Beregningerne er baseret på den internationale tilgængelighedsstandard WCAG 2.1.",
+    "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/da/vaerktojer", "label": "Værktøjer" },
+    "third": { "href": "/da/vaerktojer/farvekontrastkontrol", "label": "Farvekontrastkontrol" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Kontrol af farvekontrast og læsbarhed",
+      "alternateName": ["Farvelæsbarhedstester", "Kontrastkontrol for tekst og baggrund", "Farvekontrastkalkulator", "WCAG-kontrasttester"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "AccessibilityTool",
+      "description": "Kontrollér om tekst- og baggrundsfarver er læsbare for alle brugere. Værktøjet beregner kontrastforholdet ifølge WCAG 2.1 og viser om det opfylder tilgængelighedskravene.",
+      "featureList": [
+        "Beregning af kontrastforhold",
+        "Kontrol af WCAG 2.1 Niveau AA-overholdelse",
+        "Kontrol af WCAG 2.1 Niveau AAA-overholdelse",
+        "Test af normal tekst",
+        "Test af stor tekst og overskrifter",
+        "Test af ikoner og UI-komponenter",
+        "Understøttelse af HEX, RGB, RGBA, HSL, HSLA-formater",
+        "Farvevælger til visuelt valg",
+        "Live forhåndsvisning af tekst",
+        "Automatisk farvetilpasningsfunktion",
+        "Lokal behandling i browseren"
+      ]
+    },
+    "howTo": {
+      "name": "Sådan kontrollerer du farvekontrast og læsbarhed",
+      "description": "Sådan kontrollerer du læsbarheden af tekst- og baggrundsfarver ifølge WCAG-standarden.",
+      "steps": [
+        { "name": "Vælg tekstfarve", "text": "Indtast en farvekode (f.eks. #333333) i HEX-, RGB- eller HSL-format – eller vælg en farve fra farvevælgeren." },
+        { "name": "Vælg baggrundsfarve", "text": "Indtast baggrundsfarven, hvor teksten vil blive vist." },
+        { "name": "Læs resultaterne", "text": "Værktøjet viser kontrastforholdet og om farverne opfylder AA/AAA-kravene." },
+        { "name": "Justér farverne", "text": "Hvis kontrasten er for lav, foreslår Match-funktionen automatisk en tekstfarvevariant, der opfylder den valgte WCAG-tærskel." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Hvorfor er farvelæsbarhed vigtig?",
+      "html": "<p class=\"text-mid\">Læsbarhed er forskellen i lysstyrke mellem tekstfarven og baggrundsfarven. Jo større forskel, jo lettere er det at læse teksten. For lav kontrast gør indholdet svært at læse – især for personer med synsnedsættelse, ældre eller under vanskelige lysforhold.</p><p class=\"text-mid mt-3\">Ifølge <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Verdenssundhedsorganisationen (WHO)</a> har ca. 2,2 milliarder mennesker i verden en eller anden form for synsnedsættelse.</p><p class=\"text-mid mt-3\">Værktøjet beregner kontrastforholdet med formlen defineret i <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1</a> – internationale retningslinjer for digital tilgængelighed.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Sådan bruger du farvekontrastkontrollen",
+      "description": "At kontrollere læsbarheden tager kun få sekunder:",
+      "grid": "four",
+      "items": [
+        { "icon": "RiPaletteLine", "title": "1. Indtast tekstfarve", "description": "Indtast en farvekode i HEX-, RGB- eller HSL-format – eller vælg en farve fra farvevælgeren." },
+        { "icon": "RiPaintBrushLine", "title": "2. Indtast baggrundsfarve", "description": "Indtast baggrundsfarven, hvor teksten vil blive vist." },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "3. Læs resultaterne",
+          "description": "Værktøjet beregner kontrastforholdet og viser om farverne opfylder WCAG-kravene for normal tekst, stor tekst og ikoner."
+        },
+        {
+          "icon": "RiEqualizerLine",
+          "title": "4. Justér farverne",
+          "description": "Hvis kontrasten er for lav, foreslår Match-funktionen automatisk en farvevariant, der opfylder den valgte tærskel."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Sådan fortolker du resultaterne af læsbarhedstesten",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Kontrastforhold</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Normal tekst</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Når farver er indtastet, viser værktøjet resultater i tre sektioner:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normal tekst</strong> – kræver kontrast 4.5:1 (AA) eller 7:1 (AAA). Gælder tekst under 18pt (24px) eller under 14pt fed.</li><li><strong>Stor tekst / fed</strong> – kræver kontrast 3:1 (AA) eller 4.5:1 (AAA). Gælder overskrifter, knapper og fremhævet tekst.</li><li><strong>Ikoner</strong> – kræver kontrast 3:1 (AA). Gælder ikoner og grafiske UI-elementer, der formidler information.</li></ul><p class=\"text-mid mt-3\"><strong>Grøn indikator</strong> betyder at kravet er opfyldt. <strong>Rød indikator</strong> betyder at kontrasten er for lav og skal korrigeres.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Hvad betyder niveauerne AA og AAA i WCAG-standarden?",
+      "plans": [
+        { "id": "aa", "name": "Niveau AA (minimum)", "highlighted": true },
+        { "id": "aaa", "name": "Niveau AAA (forbedret)" }
+      ],
+      "features": [
+        { "name": "Normal tekst – min. 4.5:1", "values": { "aa": true, "aaa": true } },
+        { "name": "Normal tekst – min. 7:1", "values": { "aa": false, "aaa": true } },
+        { "name": "Stor tekst / fed – min. 3:1", "values": { "aa": true, "aaa": true } },
+        { "name": "Stor tekst / fed – min. 4.5:1", "values": { "aa": false, "aaa": true } },
+        { "name": "Ikoner og UI-elementer – min. 3:1", "values": { "aa": true, "aaa": true } },
+        { "name": "Lovkrav (EU-direktiv)", "values": { "aa": true, "aaa": false } },
+        { "name": "Anbefales til hovedindhold", "values": { "aa": true, "aaa": true } }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Ofte stillede spørgsmål om farvekontrastkontrollen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hvad er et farvekontrastforhold?",
+          "answer": "Kontrastforholdet er et mål for lysstyrkeforskellen mellem to farver. Skalaen starter fra 1:1 (ingen forskel) til 21:1 (maksimal forskel – sort tekst på hvid baggrund). Jo højere forhold, jo lettere at skelne tekst fra baggrund."
+        },
+        {
+          "question": "Hvilken kontrast er tilstrækkelig ifølge WCAG?",
+          "answer": "For normal tekst er minimum 4.5:1 (Niveau AA). For stor tekst – overskrifter fra 18pt eller fed tekst fra 14pt – er 3:1 tilstrækkeligt. For ikoner og UI-komponenter kræves også 3:1."
+        },
+        {
+          "question": "Hvorfor opfylder mine farver ikke kravene, selvom jeg kan se dem godt?",
+          "answer": "Personlig farveopfattelse afhænger af skærmindstillinger, rumbelysning og individuel synsevne. WCAG er baseret på en objektiv matematisk formel, der tager hensyn til forskellige synsnedsættelser."
+        },
+        {
+          "question": "Skal jeg opfylde kontrastniveau AAA?",
+          "answer": "Ikke altid. Niveau AA (4.5:1 for normal tekst) er det minimum, der kræves af tilgængelighedsforskrifter i EU. Niveau AAA (7:1) giver bedre læsbarhed, men er sværere at opnå. For kritisk indhold – advarsler, sikkerhedsinstruktioner – overvej at opnå AAA."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Udforsk flere gratis værktøjer" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

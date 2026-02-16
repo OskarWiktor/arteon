@@ -1,0 +1,240 @@
+{
+  "toolKey": "colorPalette",
+  "locale": "tl",
+  "metadata": {
+    "title": "Libreng Generator ng Palette ng Kulay \u2013 9 Palette Mula sa Isang Kulay",
+    "description": "I-generate ang 9 color palette mula sa isang base color: monochromatic, complementary, triadic, pastel at iba pa. Kopyahin ang HEX code sa isang click. Walang registration, walang limitasyon.",
+    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "path": "/tl/mga-kasangkapan/generator-ng-palette-ng-kulay"
+  },
+  "hero": {
+    "title": "Generator ng palette ng kulay",
+    "description": "Mag-type ng isang base color, at ige-generate ng tool ang 9 magkakatugmang color palette: monochromatic, complementary, triadic, pastel, at iba pa. Bawat kulay ay maaaring kopyahin kasama ang HEX code.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/tl/mga-kasangkapan", "label": "Mga kasangkapan" },
+    "third": { "href": "/tl/mga-kasangkapan/generator-ng-palette-ng-kulay", "label": "Generator ng palette ng kulay" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Generator ng palette ng kulay",
+      "alternateName": ["Color scheme generator", "Color generator", "Color palette creator", "Color matching tool", "Color harmony generator"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorPaletteGenerator",
+      "description": "Libreng generator ng color palette. Mag-type ng isang HEX color at ige-generate ng tool ang 9 scheme: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, at minimalist. Bawat kulay ay maaaring kopyahin kasama ang HEX code at HSL value.",
+      "featureList": [
+        "Monochromatic scheme \u2013 mga shade ng isang kulay",
+        "Analogous scheme \u2013 magkakatabi na kulay sa color wheel",
+        "Complementary scheme \u2013 magkasalungat na kulay",
+        "Triadic scheme \u2013 3 kulay sa pantay na agwat",
+        "Split-complementary scheme \u2013 base color at 2 kapitbahay ng complement nito",
+        "Pastel palette \u2013 magaan, muted na shade",
+        "Dark palette \u2013 malalim na kulay para sa dark theme",
+        "Tonal palette \u2013 lightness scale ng isang hue",
+        "Minimalist palette \u2013 malakas na accent na may light neutral",
+        "Base color sa HEX format",
+        "Color picker para sa visual na pagpili",
+        "Random na starting color",
+        "Kopyahin ang HEX code sa clipboard",
+        "HSL value na ipinapakita sa tabi ng bawat kulay",
+        "Lokal na pagproseso sa browser"
+      ]
+    },
+    "howTo": {
+      "name": "Paano i-generate ang color palette mula sa isang base color",
+      "description": "Paano i-generate ang 9 color palette mula sa isang base color: monochromatic, complementary, triadic, pastel, at iba pa. Bawat kulay ay maaaring kopyahin kasama ang HEX code.",
+      "steps": [
+        { "name": "Pumili ng base color", "text": "Mag-type ng HEX code sa text field o gamitin ang color picker para pumili ng kulay nang visual." },
+        { "name": "Kumpirmahin ang kulay", "text": "Kumpirmahin ang napiling kulay gamit ang Update Color button \u2013 ige-generate ng tool ang mga palette batay sa napiling base color." },
+        {
+          "name": "Mag-browse ng mga palette",
+          "text": "Awtomatikong ige-generate ng tool ang 9 iba't ibang palette: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, at minimalist."
+        },
+        { "name": "Kopyahin ang mga kulay", "text": "Sa tabi ng bawat kulay makikita ang Copy button \u2013 ang HEX code ay makokopya sa system clipboard." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Bakit i-generate ang color palette?",
+      "html": "<p class=\"text-mid\">Ang consistent na color palette ang pundasyon ng bawat visual na proyekto \u2013 mula sa website, hanggang sa logo, hanggang sa mga naka-print na materyales. Ang manu-manong pagpili ng mga kulay na magkakasama ay nangangailangan ng kaalaman sa color theory. Ginagawa ito ng generator nang awtomatiko: magbibigay ka ng isang base color (hal. kulay ng logo), at gagawa ang tool ng 9 color set batay sa mga napatunayang color harmony scheme.</p><p class=\"text-mid mt-3\">Bawat na-generate na kulay ay may kasamang HEX code (hal. #4F6BF5) at HSL value (hue, saturation, lightness). Ang HEX code ay maaaring direktang i-paste sa CSS, Figma, Canva, o anumang graphics application.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Paano gamitin ang generator ng palette ng kulay",
+      "description": "Ang buong proseso ay tumatagal lang ng ilang segundo:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Ilagay ang base color",
+          "description": "Mag-type ng HEX code (hal. #4F6BF5) sa text field o pumili ng kulay mula sa color picker. Maaari ring gamitin ang Random Color button."
+        },
+        {
+          "title": "2. Kumpirmahin ang pagpili",
+          "description": "Pagkatapos i-click ang Update Color button, awtomatikong ige-generate ng tool ang 9 palette batay sa iba't ibang color harmony scheme."
+        },
+        {
+          "title": "3. Kopyahin ang mga kulay na kailangan",
+          "description": "Sa tabi ng bawat kulay ay may Copy button \u2013 ang HEX code ay pupunta sa clipboard at maaaring direktang i-paste sa proyekto."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Anong mga color scheme ang ginagawa ng tool?",
+      "description": "Gumagawa ang generator ng 9 uri ng palette \u2013 bawat isa ay batay sa ibang prinsipyo ng color theory:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiStackLine",
+          "title": "Monochromatic palette",
+          "description": "Ilang shade ng isang kulay \u2013 mula sa magaan hanggang sa madilim. Lahat ng kulay ay may parehong hue sa color wheel at nagkakaiba lang sa lightness. Gumagana nang maayos sa eleganteng, minimalist na disenyo kung saan mahalaga ang consistency."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Analogous palette",
+          "description": "Mga magkakatabi na kulay sa color wheel (inilipat ng mga 30\u00b0 sa parehong direksyon mula sa base). Gumagawa sila ng magkakatugmang, makinis na mga transition ng kulay. Maganda para sa mga proyektong nagtatayo ng mainit o malamig na kapaligiran."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Complementary palette",
+          "description": "Ang base color at ang kulay na magkasalungat sa color wheel (180\u00b0 shift). Gumagawa ng malakas na visual contrast. Kapaki-pakinabang kapag kailangang maakit ng elemento ang atensiyon \u2013 button, highlight na heading, promo banner."
+        },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Triadic palette",
+          "description": "Tatlong kulay na may pagitan ng 120\u00b0 sa color wheel \u2013 bumubuo ng equilateral triangle. Isang makulay, dynamic na kombinasyon. Gumagana nang maayos sa mga malikhaing proyekto: brand identity ng kabataan, advertising material, poster."
+        },
+        {
+          "icon": "RiCursorLine",
+          "title": "Split-complementary palette",
+          "description": "Mas mahinahong bersyon ng complementary palette. Sa halip na isang magkasalungat na kulay, gumagamit ng dalawang kulay na inilipat ng mga 30\u00b0 mula sa complement. Nagbibigay ng malinaw na contrast ngunit walang gaanong malakas na visual tension."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Pastel palette",
+          "description": "Parehong hue na may binawasang saturation at dinagdagang lightness \u2013 mga malambot, banayad na kulay. Sikat sa kosmetiko, pambatang fashion, at industriya ng pagkain. Magkakasama nang maayos sa light background at white space."
+        },
+        {
+          "icon": "RiMoonLine",
+          "title": "Dark palette",
+          "description": "Base color sa mataas na saturation at binawasang lightness \u2013 malalim, matinding kulay. Kapaki-pakinabang para sa pagdidisenyo ng dark theme para sa mga website at app, pati na rin mga materyales para sa premium brand."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Tonal palette",
+          "description": "Ilang hakbang ng lightness ng isang hue \u2013 mula sa napakagaan hanggang sa madilim. Katulad ng tonal scale na ginagamit sa mga design system (hal. shade mula 50 hanggang 900). Kapaki-pakinabang para sa pagtatayo ng interface kung saan kailangan ng variant ng parehong kulay."
+        },
+        {
+          "icon": "RiContractLeftRightLine",
+          "title": "Minimalist palette",
+          "description": "Isang bold na color accent at ilang napaka-light, malambot na neutral. Ang natitirang palette ay nananatiling muted. Gumagana nang maayos sa mga modernong interface na may maraming white space \u2013 karaniwang estilo ng product at landing page."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Saan batay ang generator ng color palette?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0\u00b0\u2013360\u00b0 sa color wheel</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%\u2013100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%\u2013100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">Lahat ng palette ay ginagawa sa pamamagitan ng mathematical na pagbabago ng base color sa HSL color space. Inilalarawan ng HSL ang kulay sa tatlong halaga: ang hue (H) ay ang posisyon sa color wheel (0\u00b0\u2013360\u00b0), ang saturation (S) ay tumutukoy sa intensity ng kulay, at ang lightness (L) \u2013 kung gaano kaliwanag o kadilim ang kulay.</p><p class=\"text-mid mt-3\">Ang complementary, triadic, at split-complementary palette ay batay sa geometry ng color wheel \u2013 inilalagay ang mga kulay sa pantay na angular na agwat, na gumagawa ng visual balance. Ang monochromatic, pastel, at dark palette ay nagbabago lang ng lightness at saturation habang pinapanatili ang parehong hue.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Saan gamitin ang na-generate na color palette",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Brand visual identity",
+          "description": "Pumili ng mga complementary na kulay para sa existing na logo o magtayo ng branding palette mula sa simula \u2013 para sa business card, stationery, at marketing material."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Mga website",
+          "description": "Itakda ang primary color, accent color, at background shade. Ang mga nakopyang HEX code ay direktang nape-paste sa CSS stylesheet o theme configuration."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Mga interface ng app",
+          "description": "Ang tonal palette ay nagbibigay ng lightness variant ng isang kulay \u2013 mas magaan para sa background, mas madilim para sa teksto, katamtaman para sa border at interactive state."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Mga social media graphic",
+          "description": "Consistent na kulay para sa mga post, story, at profile cover. Ang analogous o pastel palette ay gumagana nang maayos kapag gusto ng uniform, makikilalang estilo."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Mga presentasyon at dokumento",
+          "description": "Magkakatugmang color set para sa mga slide, chart, at infographic. Ang monochromatic o minimalist palette ay nagpapanatili ng visual order."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Pag-troubleshoot ng palette generator",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Hindi nagbabago ang mga palette pagkatapos mag-type ng kulay",
+          "description": "Ang simpleng pag-type ng HEX code ay hindi awtomatikong nage-generate ng mga palette \u2013 kailangan mong kumpirmahin ang pagbabago gamit ang Update Color button. Pagkatapos lang ng kumpirmasyon nire-recalculate ng tool ang lahat ng 9 scheme."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Mensahe ng invalid na format",
+          "description": "Tumatanggap lang ang generator ng HEX format na may # sa simula, hal. #FF5500. Ang mga format na walang # (hal. FF5500) o sa RGB notation (hal. rgb(255,85,0)) ay hindi sinusuportahan."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Maikli at buong HEX format",
+          "description": "Parehong format ay sinusuportahan: buong #RRGGBB (hal. #FF5500) at maikli #RGB (hal. #F50). Awtomatikong kinikilala ng generator ang dalawa at tinatrato nang magkapareho."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Mga madalas itanong tungkol sa generator ng palette ng kulay",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Anong format ang dapat ng base color?",
+          "answer": "Tumatanggap ang generator ng mga kulay sa HEX format \u2013 parehong maikli (hal. #F50) at buong (hal. #FF5500). Sa tabi ng text field makikita ang color picker na nagbibigay-daan na pumili ng kulay nang visual. Ang mga na-generate na palette ay nagpapakita ng HEX code at HSL value ng bawat kulay.",
+          "answerSchemaText": "Tumatanggap ang generator ng HEX color (#RGB o #RRGGBB). Bawat na-generate na kulay ay may HEX code at HSL value."
+        },
+        {
+          "question": "Ilan ang kulay sa bawat palette?",
+          "answer": "Bawat palette ay naglalaman ng 4 hanggang 6 kulay. Ang bilang ay depende sa uri ng scheme \u2013 ang monochromatic at tonal palette ay nage-generate ng mas maraming shade (lightness scale ng isang hue), habang ang complementary at triadic palette ay nakatuon sa mas kaunting magkakaibang kulay.",
+          "answerSchemaText": "Bawat palette ay naglalaman ng 4 hanggang 6 kulay, depende sa uri ng scheme."
+        },
+        {
+          "question": "Ano ang HSL color space at paano ito basahin?",
+          "answer": "Ang HSL ay isang paraan ng paglalarawan ng kulay gamit ang tatlong halaga: H (hue, 0\u00b0\u2013360\u00b0 sa color wheel), S (saturation, 0%\u2013100%), at L (lightness, 0%\u2013100%). Ipinapakita ng generator ang HSL value sa tabi ng bawat kulay, na nagpapadali sa pag-unawa kung paano nagkakaiba ang mga kulay sa palette \u2013 hal. ang monochromatic palette ay nagbabago lang ng lightness (L) habang pinapanatili ang parehong hue (H).",
+          "answerSchemaText": "Inilalarawan ng HSL ang kulay sa pamamagitan ng hue (H), saturation (S), at lightness (L). Ipinapakita ng generator ang mga halagang ito sa tabi ng bawat kulay."
+        },
+        {
+          "question": "Maaari ko bang gamitin ang na-generate na palette nang komersyal?",
+          "answer": "Oo. Maaaring gamitin ang na-generate na color palette sa anumang proyekto \u2013 komersyal at hindi komersyal, nang walang mga paghihigpit sa lisensya.",
+          "answerSchemaText": "Oo, ang na-generate na palette ay maaaring gamitin nang walang paghihigpit sa komersyal at hindi komersyal na proyekto."
+        },
+        {
+          "question": "Nangangailangan ba ng login o bayad ang generator ng color palette?",
+          "answer": "Ang generator ay ganap na libre at hindi nangangailangan ng login o registration. Ang mga kulay ay ginagawa nang lokal sa browser \u2013 walang data na ipinapadala sa mga panlabas na server.",
+          "answerSchemaText": "Ang generator ay libre, hindi nangangailangan ng login. Ang mga kulay ay ginagawa nang lokal sa browser."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Tingnan ang iba pang mga tool" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

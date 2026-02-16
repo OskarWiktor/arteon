@@ -1,0 +1,451 @@
+{
+  "toolKey": "qrCode",
+  "locale": "hu",
+  "metadata": {
+    "title": "Ingyenes QR-kód generátor – PNG és SVG, regisztráció nélkül",
+    "description": "Generáljon QR kódot bármilyen linkhez, szöveghez vagy névjegyhez. Töltse le PNG és SVG formátumban. Ingyenes, regisztráció nélkül, korlátlan használattal.",
+    "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
+    "path": "/hu/eszkozok/ingyenes-qr-kod-generator"
+  },
+  "hero": {
+    "title": "QR-kód generátor – Ingyenes, regisztráció nélkül",
+    "description": "Készítsen QR-kódot weboldalhoz, vCard névjegykártyához, e-mailhez, telefonhoz vagy szöveghez. Szabályozza a színeket, méretet és hibajavítási szintet, majd töltse le a kész PNG vagy SVG fájlt.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/ingyenes-qr-kod-generator",
+      "label": "QR-kód generátor"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Ingyenes QR-kód generátor online",
+      "alternateName": [
+        "QR-kód készítő online",
+        "vCard QR-kód generátor",
+        "Ingyenes QR generátor",
+        "QR-kód eszköz",
+        "Éttermi menü QR-kód generátor",
+        "QR-kód nyomtatáshoz PNG SVG",
+        "Elektronikus névjegykártya vCard generátor",
+        "QR-kód generátor regisztráció nélkül",
+        "Ingyenes QR-kód generátor korlátozás nélkül"
+      ],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "QRCodeGenerator",
+      "description": "Készítsen QR-kódot weboldalhoz, névjegykártyához, menühöz vagy szórólaphoz. Válassza ki az adattípust, szabályozza a színeket és méretet, majd töltse le a PNG vagy SVG fájlt.",
+      "featureList": [
+        "QR-kód URL-hez (weboldal)",
+        "QR-kód egyszerű szöveghez",
+        "vCard QR-kód (kapcsolattartási adatok)",
+        "QR-kód e-mailhez (cím, tárgy, szövegtörzs)",
+        "QR-kód telefonszámhoz",
+        "Testreszabható kód- és háttérszínek",
+        "Kódméret kiválasztása pixelben",
+        "Exportálás PNG formátumba (raszteres)",
+        "Exportálás SVG formátumba (vektoros)",
+        "Élő kód előnézet",
+        "Helyi feldolgozás a böngészőben",
+        "Reed-Solomon hibajavítás"
+      ]
+    },
+    "howTo": {
+      "name": "Hogyan használja az ingyenes QR-kód generátort",
+      "description": "Hogyan készítsen QR-kódot weboldalhoz, vCard névjegykártyához, e-mailhez vagy telefonhoz - az adattípus kiválasztásától a kész fájl letöltéséig.",
+      "steps": [
+        {
+          "name": "Válassza ki az adattípust",
+          "text": "Döntse el, mit tartalmazzon a QR-kód: URL-t, szöveget, névjegykártyát (vCard), e-mailt vagy telefonszámot."
+        },
+        {
+          "name": "Adja meg az adatokat",
+          "text": "Töltse ki a megfelelő mezőket. URL esetén adja meg a weboldal címét; vCard esetén adja meg a kapcsolattartási adatokat."
+        },
+        {
+          "name": "Szabályozza a megjelenést",
+          "text": "Válassza ki a méretet, a margót, a kód és háttér színeit és a hibajavítási szintet."
+        },
+        {
+          "name": "Töltse le a kódot",
+          "text": "A kész QR-kód letölthető PNG fájlként (nyomtatáshoz és webhez) vagy SVG-ként (vektoros, minőségvesztés nélkül skálázható)."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Mi az a QR-kód és hogyan működik?",
+      "html": "<p class=\"text-mid\">A QR-kód (Quick Response) egy kétdimenziós vonalkód, amely okostelefon kamerával olvasható. A hagyományos vonalkódokkal ellentétben a QR-kódok vízszintesen és függőlegesen egyaránt tárolnak adatokat, így lényegesen több információt kódolhatnak - közelítőleg 3000 alfanumerikus karakterig.</p><p class=\"text-mid mt-3\">A QR-kódot 1994-ben fejlesztette ki a japán Denso Wave cég (a Toyota csoport része) autóalkatrészek követésére. Ma a QR-kódokat széles körben használják a marketingben, a vendéglátásban, a logisztikában és az üzleti kommunikációban. Különös népszerűségre tettek szert a COVID-19 járvány idején, amikor az éttermek papír menüiket QR-kódokra cserélték.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan használja a QR-kód generátort",
+      "description": "QR-kód készítése mindössze néhány másodpercet vesz igénybe:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Válassza ki az adattípust",
+          "description": "Válassza ki, mit szeretné kódolni: URL-t, szöveget, vCard névjegykártyát, e-mailt vagy telefonszámot."
+        },
+        {
+          "title": "2. Adja meg az adatokat",
+          "description": "Töltse ki a megfelelő mezőket - weboldal címet, kapcsolattartási adatokat vagy üzenet tartalmát."
+        },
+        {
+          "title": "3. Töltse le a kódot",
+          "description": "Szabályozza a megjelenést (színek, méret, margó) és töltse le PNG vagy SVG formátumban."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "QR-kód típusok - URL, vCard, e-mail, telefon, szöveg",
+      "description": "Az ingyenes QR-kód generátor öt adattípust támogat - mindegyik különböző helyzetekben hasznos:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "URL",
+          "description": "Link egy weboldalra. Szkennélés után a telefon megnyitja az oldalt a böngészőben. Ideális névjegykártyákhoz, szórólapokhoz és plakátokhoz."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Szöveg",
+          "description": "Bármilyen szöveg 3000 karakterig. Szkennélés után a telefon megjeleníti a szöveget a képernyőn. Hasznos kedvezménykuponokhoz és rövid utasításokhoz."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "vCard névjegykártya",
+          "description": "Digitális névjegykártya kapcsolattartási adatokkal (név, cég, telefon, e-mail, cím). Szkennélés után a telefon felajánlja a névjegy mentését. Ideális professzionális névjegykártyákhoz."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail",
+          "description": "E-mail cím opcionális tárggyal és szövegtörzzsel. Szkennélés után a telefon megnyitja a levelezőalkalmazást előre kitöltött űrlappal."
+        },
+        {
+          "icon": "RiPhoneLine",
+          "title": "Telefon",
+          "description": "Telefonszám. Szkennélés után a telefon felajánlja a hívást. Hasznos forróvonalakhoz és ügyfélszolgálathoz."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "QR-kód műszaki specifikációk",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kapacitás</span><span class=\"text-mid text-sm!\">max. 4296 karakter</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Hibajavítás</span><span class=\"text-mid text-sm!\">7% – 30%</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Min. nyomtatási méret</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Min. kontraszt</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margó</span><span class=\"text-mid text-sm!\">min. 4 modul</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">A műszaki paraméterek ismerete segít olyan QR-kódokat létrehozni, amelyek minden körülmény között olvashatóak:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Adatkapacitás</strong> - egy QR-kód legfeljebb 7089 számjegyet, 4296 alfanumerikus karaktert vagy 2953 bájt bináris adatot tartalmazhat. A gyakorlatban ez bőven elegendő URL-ekhez és névjegykártyákhoz.</li><li><strong>Reed-Solomon hibajavítás</strong> - matematikai algoritmus, amely lehetővé teszi a kód olvasását még akkor is, ha annak egy része sérült vagy takarva van. Szintek: L (7%), M (15%), Q (25%), H (30%).</li><li><strong>Margó</strong> - a kód körüli fehér terület, amely szükséges a helyes szkennéléshez. Az ajánlott minimum 4 modul (kódegység).</li><li><strong>Minimális nyomtatási méret</strong> - standard szkennélési körülmények között a kódnak legalább 2×2 cm-esnek kell lennie. Nagyformátumú nyomtatáshoz (bannerek, óriásplakátok) megfelelően skálázza fel.</li><li><strong>Kontraszt</strong> - a kód és háttér közötti kontrasztaránynak legalább 3:1-nek kell lennie. A generátor automatikusan figyelmeztet, ha a kontraszt túl alacsony.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "QR-kód alkalmazások - névjegykártyák, szórólapok, éttermi menük",
+      "description": "A QR-kódok sok iparágban és helyzetben alkalmazhatók:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Névjegykártyák",
+          "description": "A névjegykártyán lévő vCard kód lehetővé teszi a címzett számára, hogy egyetlen szkennéléssel mentse a névjegyet, kézi adatbevitel nélkül."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Éttermi és kávézó menük",
+          "description": "Az asztalon elhelyezett QR-kód digitális menüre irányít. Higiénikus megoldás, amely a COVID-19 járvány óta vált népszerűvé."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Szórólapok és plakátok",
+          "description": "QR-kód linkkel a termékoldalra, regisztrációs űrlapra vagy különleges ajánlatra."
+        },
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Termékcsomagolás",
+          "description": "Link a használati útmutatóhoz, garanciajegyhez vagy a gyártó weboldalához."
+        },
+        {
+          "icon": "RiHospitalLine",
+          "title": "Orvosi rendelők",
+          "description": "QR-kódok betegkártyákon, amelyek a betegportálra vagy időpontfoglaló rendszerre mutatnak."
+        },
+        {
+          "icon": "RiHome4Line",
+          "title": "Ingatlan",
+          "description": "Kódok transzparenseken, amelyek a teljes hirdetésre mutatnak fotogalériával és részletekkel."
+        },
+        {
+          "icon": "RiTruckLine",
+          "title": "Raktárak és logisztika",
+          "description": "QR címkék terméksarzs követéséhez, raktári helyek és szállítási előzmények nyomon követéséhez."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "E-kereskedelem",
+          "description": "Kódok csomagolásokon, amelyek visszaküldési utasításokra, vásárlói véleményekre vagy hűségprogramokra mutatnak."
+        },
+        {
+          "icon": "RiCalendarEventLine",
+          "title": "Események és konferenciák",
+          "description": "QR-kódos jegyek gyors ellenőrzéshez a bejáratnál."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "QR-kód megjelenésének testreszabása",
+      "variant": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Méret</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margó</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kód színe</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Háttérszín</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">A generátor több paraméter testreszabását teszi lehetővé, amelyek befolyásolják a kód megjelenését és olvashatóságát:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Méret (px)</strong> - a kód mérete pixelben. Standard nyomtatáshoz (szórólapok, névjegykártyák) válasszon 300–500 px-t. Digitális használathoz 150–200 px elegendő.</li><li><strong>Margó</strong> - a kód körüli fehér terület, amely szükséges a helyes szkennéléshez. Az ajánlott érték 2–4. A 0 érték megnehezítheti a szkennélést sötét háttéren.</li><li><strong>QR-kód színe</strong> - alapértelmezésben fekete (#000000). Bármilyen sötét színre cserélhető, amely illik a vizuális identitáshoz.</li><li><strong>Háttérszín</strong> - alapértelmezésben fehér (#ffffff). Bármilyen világos színre cserélhető. A generátor figyelmeztet, ha a kontraszt túl alacsony.</li></ul><p class=\"text-mid mt-3\"><strong>Tipp:</strong> Tartson fenn magas kontrasztot a kód és a háttér között (minimum 3:1). A sötét kód világos háttéren a legkönnyebben szkennelhető.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Hibajavítási szintek - L, M, Q, H",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Alacsony)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Közepes)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Negyedes)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (Magas)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">A hibajavítás olyan mechanizmus, amely lehetővé teszi a QR-kód olvasását még akkor is, ha annak egy része sérült, piszkos vagy takarva van. A generátor a Reed-Solomon algoritmust használja, amely a QR-kódok szabványa.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Alacsony) - 7%</strong> - legkevesebb redundancia, a kód a legkompaktabb. Válassza, ha a kód ideális körülmények között kerül használatra (képernyő, minőségi nyomtatás).</li><li><strong>M (Közepes) - 15%</strong> - alapértelmezett érték, jó egyensúly kapacitás és ellenállóság között. A legtöbb alkalmazáshoz megfelelő.</li><li><strong>Q (Negyedes) - 25%</strong> - nagyobb ellenállóság a sérülésekkel szemben. Válassza, ha a kód piszkolódásra hajlamos anyagra kerül nyomtatásra.</li><li><strong>H (Magas) - 30%</strong> - legmagasabb ellenállóság. Ajánlott kültéri nyomtatott anyagokhoz, csomagolásokhoz és olyan helyzetekhez, ahol a kód részben takarva lehet (pl. logó a közepén).</li></ul><p class=\"text-mid mt-3\"><strong>Megjegyzés:</strong> A magasabb javítási szint nagyobb és összetettebb kódot jelent. Nagy adatmennyiség és H szint esetén a kód nagyon sűrűvé válhat.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs SVG - melyik formátumot válassza nyomtatáshoz?",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG (raszteres)"
+        },
+        {
+          "id": "svg",
+          "name": "SVG (vektoros)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Weboldalak és közösségi média",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Szórólapok és névjegykártyák",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Plakátok és bannerek (nagyformátum)",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Skálázás minőségvesztés nélkül",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Szerkesztés grafikus programban",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Kisebb fájlméret",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Prezentációk",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tippek QR-kódok nyomtatásához",
+      "description": "Annak érdekében, hogy a QR-kód nyomtatás után olvasható legyen, tartson be néhány szabályt:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "Minimális méret",
+          "description": "A kódnak legalább 2×2 cm-esnek kell lennie közeli szkennéléshez. Minél nagyobb a szkennélési távolság, annál nagyobbnak kell lennie a kódnak."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Kontraszt",
+          "description": "Sötét kód világos háttéren. Kerülje a pasztellszíneket és az alacsony kontrasztot."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Margó a kód körül",
+          "description": "Tartson üres területet a kód körül. Ne helyezzen más grafikus elemeket túl közel - a margó elengedhetetlen a helyes szkennéléshez."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Tesztelés",
+          "description": "Tömeges nyomtatás előtt tesztelje a kódot különböző telefonokon és különböző fényviszonyok között."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Javítási szint",
+          "description": "Kültéri nyomtatáshoz és sérülékenyre hajlamos anyagokhoz válassza a Q vagy H szintet."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt a QR-kód generátort?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Helyi generálás a böngészőben",
+          "description": "A generátorba bevitt adatok nem kerülnek semmilyen szerverre - minden feldolgozás helyben történik az Ön eszközén."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "Öt adattípus egyetlen eszközben",
+          "description": "URL, szöveg, vCard névjegykártya, e-mail és telefon - minden típus a megfelelő szabványban generál QR-kódot."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "QR-kód megjelenésének testreszabása",
+          "description": "Kód- és háttérszínek, méret pixelben, margó és hibajavítási szint - minden paraméter szabályozható."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Négy hibajavítási szint",
+          "description": "A Reed-Solomon algoritmus lehetővé teszi a kód sérülésekkel szembeni ellenállóságának megválasztását - 7%-tól (L) 30%-ig (H)."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Élő előnézet",
+          "description": "Az eredményt azonnal látja az adatok bevitele után, anélkül, hogy a \"Generálás\" gombra kattintana."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "PNG és SVG export",
+          "description": "Töltse le a kódot a felhasználási esetnek megfelelő formátumban."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések a QR-kód generátorról",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Lejár az ezzel az eszközzel készített QR-kód?",
+          "answer": "Nem. A statikus QR-kód (mint amilyet ez az eszköz generál) nem jár le. A tartalom - pl. egy URL vagy névjegyadatok - közvetlenül a kódba van kódolva. Amíg a céloldal létezik, a kód működik.",
+          "answerSchemaText": "Nem. A statikus QR-kódok nem járnak le. A tartalom közvetlenül a kódba van kódolva."
+        },
+        {
+          "question": "Megváltoztathatom az URL-t egy meglévő QR-kódban?",
+          "answer": "Statikus QR-kódnál nem változtathatja meg a kódolt tartalmat - új kódot kell generálnia új címmel. A dinamikus QR-kódok (generálás után szerkeszthetők) külső fizetős szolgáltatásokat igényelnek.",
+          "answerSchemaText": "Nem, a statikus QR-kódok nem szerkeszthetők. Generáljon új kódot más URL-hez."
+        },
+        {
+          "question": "PNG vagy SVG - melyik QR-kód formátumot válasszam nyomtatáshoz?",
+          "answer": "A PNG a legtöbb esetben megfelel: weboldalak, közösségi média, nyomtatás A4 méretig. Az SVG vektor alapú - bármilyen méretre skálázható minőségvesztés nélkül, így alkalmas bannerekhez, óriásplakátokhoz és nagy reklámformátumokhoz.",
+          "answerSchemaText": "PNG webhez és standard nyomtatáshoz. SVG nagyformátumhoz és veszteségmentes skálázáshoz."
+        },
+        {
+          "question": "Mekkora QR-kód méretet válasszak névjegykártyához?",
+          "answer": "Nyomtatott anyagokhoz (névjegykártyák, szórólapok) a kódnak legalább 2×2 cm-esnek, optimálisan 3×3 cm-esnek kell lennie. A generátorban ez 300 px felbontásnak felel meg standard nyomtatási minőségnél (300 DPI). Nagyobb formátumokhoz (plakátok, bannerek) válasszon nagyobb méretet vagy SVG formátumot.",
+          "answerSchemaText": "Legalább 2×2 cm (300 px 300 DPI-nél). Optimálisan 3×3 cm névjegykártyákhoz."
+        },
+        {
+          "question": "Hozzáadhatok logót a QR-kód közepéhez?",
+          "answer": "Ez az eszköz nem támogatja logó közvetlen hozzáadását. Azonban letöltheti a kódot SVG formátumban és ráhelyezheti a logót egy grafikus programban - ebben az esetben szükséges a magas hibajavítási szint (H) beállítása, hogy a kód olvasható maradjon a részleges takarás ellenére.",
+          "answerSchemaText": "Közvetlenül nem. Töltse le SVG-ben és adja hozzá a logót grafikus programban H hibajavítással."
+        },
+        {
+          "question": "Miért nem szkennelhető a QR-kódom nyomtatás után?",
+          "answer": "Leggyakoribb okok: túl alacsony kontraszt a kód és a háttér között, túl kis kódméret, hiányzó margó a kód körül, vagy nyomtatási sérülés. Próbálja meg növelni a méretet, javítani a kontrasztot és emelni a hibajavítási szintet (Q vagy H).",
+          "answerSchemaText": "Ellenőrizze a kontrasztot, méretet, margót és hibajavítási szintet."
+        },
+        {
+          "question": "Használhatom a generált QR-kódokat kereskedelmi célra?",
+          "answer": "Igen. A generált QR-kódok szabadon használhatók bármely projektben - kereskedelmi és nem kereskedelmi célra, licenckorlátozás nélkül.",
+          "answerSchemaText": "Igen, korlátozás nélkül kereskedelmi és nem kereskedelmi projektekben."
+        },
+        {
+          "question": "Mi a különbség a vCard névjegykártya és az egyszerű szöveges QR-kód között?",
+          "answer": "A vCard QR-kód szabványosított formátumban tartalmazza a kapcsolattartási adatokat (név, cég, telefon, e-mail, cím). Szkennélés után a telefon automatikusan felajánlja a névjegy mentését a címkönyvbe. A szöveges kód az adatokat egyszerű szövegként jeleníti meg - az automatikus mentés lehetősége nélkül.",
+          "answerSchemaText": "A vCard automatikusan menti a névjegyet. A szöveges QR csak szöveget jelenít meg."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Fedezzen fel további ingyenes eszközöket"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

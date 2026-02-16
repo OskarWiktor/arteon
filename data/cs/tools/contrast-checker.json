@@ -1,0 +1,128 @@
+{
+  "toolKey": "contrastChecker",
+  "locale": "cs",
+  "metadata": {
+    "title": "Kontrola kontrastu barev zdarma – Soulad s WCAG 2.1",
+    "description": "Zkontrolujte, zda jsou barvy textu a pozadí čitelné podle WCAG 2.1. Zadejte kód HEX, RGB nebo HSL, zobrazte poměr kontrastu a použijte automatickou opravu. Bez registrace.",
+    "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
+    "path": "/cs/nastroje/kontrola-kontrastu-barev"
+  },
+  "hero": {
+    "title": "Kontrola kontrastu a čitelnosti barev",
+    "description": "Zadejte barvu textu a pozadí a nástroj ukáže, zda je kontrast dostatečný. Výpočty jsou založeny na mezinárodním standardu přístupnosti WCAG 2.1.",
+    "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/cs/nastroje", "label": "Nástroje" },
+    "third": { "href": "/cs/nastroje/kontrola-kontrastu-barev", "label": "Kontrola kontrastu barev" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Kontrola kontrastu a čitelnosti barev",
+      "alternateName": ["Tester čitelnosti barev", "Kontrola kontrastu textu a pozadí", "Kalkulátor kontrastu barev", "Tester kontrastu WCAG"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "AccessibilityTool",
+      "description": "Zkontrolujte, zda jsou barvy textu a pozadí čitelné pro všechny uživatele. Nástroj vypočítá poměr kontrastu podle WCAG 2.1 a ukáže, zda splňuje požadavky přístupnosti.",
+      "featureList": [
+        "Výpočet poměru kontrastu",
+        "Kontrola souladu s WCAG 2.1 Úroveň AA",
+        "Kontrola souladu s WCAG 2.1 Úroveň AAA",
+        "Test běžného textu",
+        "Test velkého textu a nadpisů",
+        "Test ikon a UI komponent",
+        "Podpora formátu HEX, RGB, RGBA, HSL, HSLA",
+        "Výběr barev pomocí color pickeru",
+        "Živý náhled textu",
+        "Funkce automatického přizpůsobení barev",
+        "Lokální zpracování v prohlížeči"
+      ]
+    },
+    "howTo": {
+      "name": "Jak zkontrolovat kontrast a čitelnost barev",
+      "description": "Jak zkontrolovat čitelnost barev textu a pozadí podle standardu WCAG.",
+      "steps": [
+        { "name": "Vyberte barvu textu", "text": "Zadejte kód barvy (např. #333333) ve formátu HEX, RGB nebo HSL – nebo vyberte barvu z color pickeru." },
+        { "name": "Vyberte barvu pozadí", "text": "Zadejte barvu pozadí, na kterém bude text zobrazen." },
+        { "name": "Přečtěte si výsledky", "text": "Nástroj ukáže poměr kontrastu a zda barvy splňují požadavky AA/AAA." },
+        { "name": "Upravte barvy", "text": "Pokud je kontrast příliš nízký, funkce Match automaticky navrhne variantu barvy textu, která splňuje zvolený práh WCAG." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Proč je čitelnost barev důležitá?",
+      "html": "<p class=\"text-mid\">Čitelnost je rozdíl jasu mezi barvou textu a barvou pozadí. Čím větší rozdíl, tím snáze se text čte. Příliš nízký kontrast ztěžuje čtení obsahu – zejména pro osoby se zrakovým postižením, starší lidi nebo v obtížných světelných podmínkách.</p><p class=\"text-mid mt-3\">Podle <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Světové zdravotnické organizace (WHO)</a> má přibližně 2,2 miliardy lidí na světě nějakou formu zrakového postižení.</p><p class=\"text-mid mt-3\">Nástroj vypočítá poměr kontrastu pomocí vzorce definovaného v <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1</a> – mezinárodních pokynech pro digitální přístupnost.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Jak použít kontrolu kontrastu barev",
+      "description": "Kontrola čitelnosti zabere jen pár sekund:",
+      "grid": "four",
+      "items": [
+        { "icon": "RiPaletteLine", "title": "1. Zadejte barvu textu", "description": "Zadejte kód barvy ve formátu HEX, RGB nebo HSL – nebo vyberte barvu z color pickeru." },
+        { "icon": "RiPaintBrushLine", "title": "2. Zadejte barvu pozadí", "description": "Zadejte barvu pozadí, na kterém bude text zobrazen." },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "3. Přečtěte si výsledky",
+          "description": "Nástroj vypočítá poměr kontrastu a ukáže, zda barvy splňují požadavky WCAG pro běžný text, velký text a ikony."
+        },
+        { "icon": "RiEqualizerLine", "title": "4. Upravte barvy", "description": "Pokud je kontrast příliš nízký, funkce Match automaticky navrhne variantu barvy, která splňuje zvolený práh." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Jak interpretovat výsledky testu čitelnosti",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Poměr kontrastu</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Běžný text</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Po zadání barev nástroj zobrazí výsledky ve třech sekcích:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Běžný text</strong> – vyžaduje kontrast 4.5:1 (AA) nebo 7:1 (AAA). Platí pro text pod 18pt (24px) nebo pod 14pt bold.</li><li><strong>Velký text / bold</strong> – vyžaduje kontrast 3:1 (AA) nebo 4.5:1 (AAA). Platí pro nadpisy, tlačítka a zvýrazněný text.</li><li><strong>Ikony</strong> – vyžaduje kontrast 3:1 (AA). Platí pro ikony a grafické UI prvky nesoucí informaci.</li></ul><p class=\"text-mid mt-3\"><strong>Zelený indikátor</strong> znamená splnění požadavku. <strong>Červený indikátor</strong> znamená příliš nízký kontrast, který je třeba opravit.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Co znamenají úrovně AA a AAA ve standardu WCAG?",
+      "plans": [
+        { "id": "aa", "name": "Úroveň AA (minimum)", "highlighted": true },
+        { "id": "aaa", "name": "Úroveň AAA (rozšířená)" }
+      ],
+      "features": [
+        { "name": "Běžný text – min. 4.5:1", "values": { "aa": true, "aaa": true } },
+        { "name": "Běžný text – min. 7:1", "values": { "aa": false, "aaa": true } },
+        { "name": "Velký text / bold – min. 3:1", "values": { "aa": true, "aaa": true } },
+        { "name": "Velký text / bold – min. 4.5:1", "values": { "aa": false, "aaa": true } },
+        { "name": "Ikony a UI prvky – min. 3:1", "values": { "aa": true, "aaa": true } },
+        { "name": "Vyžadováno zákonem (směrnice EU)", "values": { "aa": true, "aaa": false } },
+        { "name": "Doporučeno pro hlavní obsah", "values": { "aa": true, "aaa": true } }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky o kontrole kontrastu barev",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Co je poměr kontrastu barev?",
+          "answer": "Poměr kontrastu je míra rozdílu jasu mezi dvěma barvami. Škála začíná od 1:1 (žádný rozdíl) do 21:1 (maximální rozdíl – černý text na bílém pozadí). Čím vyšší poměr, tím snáze se text odlišuje od pozadí."
+        },
+        {
+          "question": "Jaký kontrast je dostatečný podle WCAG?",
+          "answer": "Pro běžný text je minimum 4.5:1 (Úroveň AA). Pro velký text – nadpisy od 18pt nebo bold text od 14pt – stačí 3:1. Pro ikony a UI komponenty je také vyžadován poměr 3:1."
+        },
+        {
+          "question": "Proč moje barvy nesplňují požadavky, i když je vidím dobře?",
+          "answer": "Osobní vnímání barev závisí na nastavení monitoru, osvětlení místnosti a individuálních zrakových schopnostech. WCAG je založeno na objektivním matematickém vzorci, který zohledňuje různé zrakové postižení."
+        },
+        {
+          "question": "Musím splnit úroveň kontrastu AAA?",
+          "answer": "Ne vždy. Úroveň AA (4.5:1 pro běžný text) je minimum vyžadované předpisy o přístupnosti v EU. Úroveň AAA (7:1) poskytuje lepší čitelnost, ale je obtížnější ji dosáhnout. Pro kritický obsah – varování, bezpečnostní pokyny – zvažte dosažení AAA."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Objevte další bezplatné nástroje" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

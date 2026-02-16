@@ -1,0 +1,220 @@
+{
+  "toolKey": "paletteExtractor",
+  "locale": "ms",
+  "metadata": {
+    "title": "Pengekstrak Warna dari Imej Percuma \u2013 Palet dari Sebarang Foto",
+    "description": "Muat naik foto atau logo dan ekstrak sehingga 12 warna dominan dengan kod HEX dan RGB. Sesuai untuk UI, penjenamaan dan media sosial. Tanpa pendaftaran, tanpa had.",
+    "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
+    "path": "/ms/alatan/pengekstrak-warna-dari-imej"
+  },
+  "hero": {
+    "title": "Pengekstrak Warna dari Imej \u2013 Dapatkan Palet dari Sebarang Foto",
+    "description": "Muat naik foto, logo, atau grafik, dan alat akan mengekstrak sehingga 12 warna dominan dengan kod HEX dan RGB. Analisis berlaku secara tempatan dalam pelayar anda.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/ms/alatan", "label": "Alatan" },
+    "third": { "href": "/ms/alatan/pengekstrak-warna-dari-imej", "label": "Pengekstrak warna dari imej" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Pengekstrak warna dari imej \u2013 penjana palet percuma",
+      "alternateName": ["Ekstrak palet warna dari foto atau logo"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorExtractor",
+      "description": "Pengekstrak percuma warna dari imej. Muat naik foto, logo, atau grafik dan dapatkan palet sehingga 12 warna dominan dengan kod HEX dan RGB. Pemprosesan berlaku dalam pelayar \u2013 fail tidak dihantar ke pelayan.",
+      "featureList": [
+        "Pengekstrakan automatik sehingga 12 warna dominan",
+        "Analisis foto, logo, dan grafik vektor",
+        "Kod warna dalam format HEX dan RGB",
+        "Salin kod warna ke papan keratan",
+        "Sokongan fail PNG, JPG, dan SVG",
+        "Mengabaikan piksel lutsinar dalam fail PNG",
+        "Pemprosesan tempatan dalam pelayar \u2013 imej tidak dihantar ke pelayan"
+      ]
+    },
+    "howTo": {
+      "name": "Cara mengekstrak warna dari foto atau imej",
+      "description": "Cara mengekstrak warna dominan dari foto atau logo. Muat naik imej dalam format PNG, JPG, atau SVG, dan alat akan menjana palet sehingga 12 warna dengan kod HEX.",
+      "steps": [
+        { "name": "Muat naik imej", "text": "Seret fail ke kawasan yang ditetapkan atau pilih imej dari peranti anda. Format yang disokong ialah PNG, JPG, dan SVG." },
+        { "name": "Tunggu analisis", "text": "Alat akan menganalisis imej secara automatik dan mengekstrak warna dominan." },
+        { "name": "Salin warna", "text": "Di sebelah setiap warna terdapat butang salin \u2013 kod HEX disalin ke papan keratan sistem anda." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Mengapa mengekstrak warna dari imej?",
+      "html": "<p class=\"mb-4\">Setiap foto, logo, atau grafik mengandungi warna yang boleh dijadikan palet warna sedia ada. Pengekstrak menganalisis imej dan menunjukkan warna mana yang dominan \u2013 bersama kod HEX dan nilai RGB sedia untuk ditampal dalam projek anda.</p><p class=\"mb-4\">Secara praktik, ini bermakna daripada mencontohi warna secara manual dalam aplikasi grafik (piksel demi piksel), anda memuat naik satu imej dan mendapat senarai tersusun sehingga 12 warna. Ini berguna apabila memilih warna untuk laman web, mencipta grafik media sosial yang konsisten, atau membina identiti visual dari bahan sedia ada.</p><p>Semua analisis berlaku secara tempatan dalam pelayar \u2013 imej tidak dihantar ke mana-mana pelayan.</p>"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionSteps",
+      "title": "Cara menggunakan pengekstrak warna dari imej",
+      "description": "Keseluruhan proses mengambil masa beberapa saat sahaja:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Muat naik imej", "description": "Seret fail ke kawasan yang ditetapkan atau pilih dari peranti anda. Format yang disokong ialah PNG, JPG, dan SVG." },
+        { "title": "2. Tunggu analisis", "description": "Alat akan menganalisis imej secara automatik dan mengekstrak sehingga 12 warna dominan." },
+        {
+          "title": "3. Salin warna yang diperlukan",
+          "description": "Di sebelah setiap warna terdapat butang salin \u2013 kod HEX atau RGB pergi ke papan keratan dan boleh ditampal terus dalam projek anda."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Bagaimana rupa palet warna yang diekstrak?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Contoh warna yang diekstrak dari imej alam semula jadi</p></div>",
+      "html": "<p class=\"text-mid mb-4\">Selepas memuat naik imej, pengekstrak memaparkan senarai warna dominan yang disusun dari yang paling hingga paling kurang menonjol. Setiap warna menunjukkan kod HEX dan nilai RGB \u2013 sedia untuk ditampal dalam CSS, Figma, atau sebarang aplikasi grafik.</p><p class=\"text-mid\">Bilangan warna yang diekstrak bergantung pada kandungan imej. Foto landskap akan menghasilkan palet yang lebih kaya (8\u201312 warna), manakala logo dua warna yang ringkas akan memberikan item yang lebih sedikit.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Imej mana yang memberikan hasil terbaik?",
+      "description": "Kualiti palet yang diekstrak bergantung pada jenis imej yang dimuat naik:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiImageLine",
+          "title": "Logo dan grafik dengan palet terhad",
+          "description": "Imej dengan beberapa warna yang jelas terpisah memberikan keputusan paling tepat \u2013 pengekstrak mengenal pasti setiap warna dengan tepat."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Foto dengan subjek yang jelas",
+          "description": "Foto produk, dalaman, atau landskap juga menghasilkan palet yang berguna, tetapi mengandungi lebih banyak bayangan \u2013 termasuk warna bayang dan pantulan cahaya."
+        },
+        {
+          "icon": "RiEraserLine",
+          "title": "Fail PNG dengan latar belakang lutsinar",
+          "description": "Piksel lutsinar dilangkau secara automatik semasa analisis. Jika anda mahu mengekstrak warna dari objek sahaja (cth. logo), gunakan fail PNG tanpa latar belakang."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Imej tanpa latar belakang warna pepejal yang besar",
+          "description": "Apabila latar belakang meliputi lebih banyak kawasan daripada objek itu sendiri, warnanya mendominasi keputusan. Sebelum memuat naik, pertimbangkan untuk memotong imej ke kawasan yang diminati."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTimeline",
+      "title": "Bagaimana pengekstrakan warna dari imej berfungsi?",
+      "description": "Selepas memuat naik fail, alat melaksanakan beberapa langkah di latar belakang \u2013 semua analisis berlaku secara tempatan dalam pelayar:",
+      "items": [
+        {
+          "icon": "RiZoomInLine",
+          "title": "Pengubahan saiz imej",
+          "description": "Imej diubah saiz kepada kira-kira 240 piksel lebar. Ini mempercepatkan analisis walaupun untuk foto yang sangat besar, tanpa menjejaskan ketepatan pengesanan warna."
+        },
+        {
+          "icon": "RiGroupLine",
+          "title": "Mengumpulkan warna yang serupa",
+          "description": "Setiap piksel dianalisis, dan bayangan yang serupa dikumpulkan bersama. Dua biru yang hampir sama menjadi satu warna dalam palet."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Memilih warna dominan",
+          "description": "Algoritma memilih warna yang meliputi kawasan terbesar imej. Hasilnya ialah senarai sehingga 12 warna yang disusun dari yang paling hingga paling kurang menonjol."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Melangkau piksel lutsinar",
+          "description": "Dalam fail PNG dengan latar belakang lutsinar, kawasan tersebut tidak dimasukkan dalam analisis \u2013 pengekstrak memeriksa hanya warna yang kelihatan. Keseluruhan proses biasanya mengambil masa kurang dari satu saat."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Apa yang menjadikan pengekstrak warna dari imej ini istimewa?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Analisis tempatan \u2013 imej tidak meninggalkan komputer anda",
+          "description": "Semua pengekstrakan warna berlaku dalam pelayar. Imej tidak dihantar ke mana-mana pelayan, dan selepas menutup halaman, data dipadamkan dari memori."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Sehingga 12 warna dominan dari satu imej",
+          "description": "Alat mengekstrak sehingga 12 warna yang disusun dari paling menonjol \u2013 cukup untuk membina palet warna projek lengkap."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Tiga format imej popular",
+          "description": "Format yang disokong ialah PNG, JPG, dan SVG. Fail PNG dengan latar belakang lutsinar memberikan hasil terbaik kerana piksel lutsinar dilangkau secara automatik."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Kod HEX dan RGB sedia untuk ditampal",
+          "description": "Setiap warna yang diekstrak dilengkapi dengan kod HEX (cth. #2C5F2D) dan nilai RGB. Kod boleh disalin ke papan keratan dan ditampal terus dalam CSS, Figma, atau Photoshop."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Di mana menggunakan warna yang diekstrak dari imej",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Membina identiti visual",
+          "description": "Muat naik foto yang menangkap suasana jenama \u2013 landskap, dalaman restoran, foto produk \u2013 dan ekstrak warna sebagai titik permulaan untuk palet penjenamaan."
+        },
+        {
+          "icon": "RiLayoutMasonryLine",
+          "title": "Grafik media sosial",
+          "description": "Ekstrak warna dari foto produk dan gunakannya sebagai latar belakang atau aksen dalam grafik. Siaran berdasarkan warna dari sumber yang sama kelihatan konsisten."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Memadankan warna dengan laman web",
+          "description": "Ekstrak warna dari logo dan gunakannya sebagai palet warna laman web \u2013 warna utama, warna aksen, bayangan latar belakang. Kod HEX ditampal terus dalam CSS."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Memperluaskan palet sedia ada",
+          "description": "Warna asas yang diekstrak boleh digunakan dalam <a href=\"/ms/alatan/penjana-palet-warna\">penjana palet warna</a> untuk mencipta set lengkap warna harmoni berdasarkan teori warna."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Soalan lazim tentang pengekstrak warna dari imej",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Adakah pengekstrak warna dari imej memerlukan pendaftaran?",
+          "answer": "Tidak. Alat ini percuma sepenuhnya dan tidak memerlukan log masuk atau pendaftaran. Imej dianalisis secara tempatan dalam pelayar \u2013 tidak dihantar ke mana-mana pelayan. Selepas menutup halaman, semua data dipadamkan.",
+          "answerSchemaText": "Tidak. Alat ini percuma dan tidak memerlukan pendaftaran. Imej dianalisis secara tempatan dalam pelayar."
+        },
+        {
+          "question": "Bagaimana pengekstrak warna berbeza daripada penjana palet?",
+          "answer": "Pengekstrak menarik warna dari imej sedia ada \u2013 ia menganalisis foto dan menunjukkan warna mana yang dominan. Penjana palet warna berfungsi sebaliknya: anda memberikan satu warna asas, dan alat mencipta set harmoni berdasarkan teori warna. Kedua-dua alat saling melengkapi.",
+          "answerSchemaText": "Pengekstrak menarik warna dari imej. Penjana mencipta palet dari warna asas. Kedua-dua alat saling melengkapi."
+        },
+        {
+          "question": "Berapa banyak warna yang diekstrak pengekstrak dari satu imej?",
+          "answer": "Alat mengekstrak sehingga 12 warna dominan. Bilangan tepat bergantung pada kandungan imej \u2013 jika grafik hanya mempunyai dua warna (cth. logo ringkas), hasilnya akan mengandungi item yang lebih sedikit. Warna disusun dari yang paling hingga paling kurang menonjol.",
+          "answerSchemaText": "Sehingga 12 warna dominan, disusun dari yang paling hingga paling kurang menonjol."
+        },
+        {
+          "question": "Format imej apa yang disokong oleh pengekstrak warna?",
+          "answer": "Format yang disokong ialah PNG, JPG (JPEG), dan SVG. Fail PNG dengan latar belakang lutsinar memberikan keputusan yang lebih baik kerana piksel lutsinar dilangkau semasa analisis.",
+          "answerSchemaText": "PNG, JPG, dan SVG. PNG dengan latar belakang lutsinar memberikan hasil terbaik."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Terokai alatan lain" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

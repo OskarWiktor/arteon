@@ -1,0 +1,363 @@
+{
+  "toolKey": "imageResize",
+  "locale": "id",
+  "metadata": {
+    "title": "Editor Gambar Gratis – Potong, Ubah Ukuran & Konversi dalam Detik",
+    "description": "Ubah ukuran dan potong gambar dalam hitungan detik. Template siap pakai untuk Instagram, Facebook, LinkedIn. Konversi JPG ke WebP. Buat avatar bulat. Tanpa pendaftaran, tanpa batasan.",
+    "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
+    "path": "/id/alat/editor-gambar"
+  },
+  "hero": {
+    "title": "Editor gambar gratis — potong, ubah ukuran & konversi",
+    "description": "Ubah ukuran, potong, dan konversi gambar untuk Instagram, Facebook, dan LinkedIn. Format siap pakai, avatar bulat, ekspor ke JPG, PNG, dan WebP. Pemrosesan lokal di browser.",
+    "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/id/alat",
+      "label": "Alat"
+    },
+    "third": {
+      "href": "/id/alat/editor-gambar",
+      "label": "Editor gambar"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Editor gambar gratis",
+      "alternateName": [
+        "Pengubah ukuran gambar",
+        "Pemotong gambar",
+        "Alat ukuran gambar Instagram",
+        "Alat ukuran gambar Facebook",
+        "Konverter JPG ke WebP",
+        "Alat foto profil bulat",
+        "Kompresi gambar"
+      ],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageEditor",
+      "description": "Editor gambar gratis untuk mengubah ukuran, memotong, dan konversi format. Preset siap pakai untuk Instagram, Facebook, dan LinkedIn. Pembuatan avatar bulat. Ekspor ke JPG, PNG, dan WebP dengan kontrol kualitas. Pemrosesan lokal di browser.",
+      "featureList": [
+        "Ubah ukuran gambar ke dimensi apa pun",
+        "Potong dengan pemilihan area interaktif",
+        "Format Instagram siap pakai (posting persegi, posting potret, story, reels)",
+        "Format Facebook siap pakai (posting, cover halaman)",
+        "Format LinkedIn siap pakai (posting, banner profil)",
+        "Format web siap pakai (gambar OG, hero, banner, thumbnail)",
+        "Bentuk potongan: persegi panjang, persegi, lingkaran (avatar bulat)",
+        "Grid 3x3 (aturan sepertiga) dengan pemilihan warna",
+        "Zoom potongan 100–300%",
+        "Posisi potongan presisi (X, Y) dengan pemusatan",
+        "Konversi format: JPG, PNG, WebP",
+        "Kontrol kualitas kompresi 60–100%",
+        "Pemrosesan lokal di browser",
+        "Alat gratis, tanpa login"
+      ]
+    },
+    "howTo": {
+      "name": "Cara mengubah ukuran dan memotong gambar untuk media sosial",
+      "description": "Cara mengubah ukuran gambar untuk Instagram (1080x1080, 1080x1350, story), Facebook, LinkedIn, dan gambar OG. Konversi JPG ke WebP dan pembuatan avatar bulat.",
+      "steps": [
+        {
+          "name": "Tambahkan gambar",
+          "text": "Seret file ke area yang ditentukan atau pilih gambar dari perangkat Anda. Format yang didukung: JPG, PNG, WebP."
+        },
+        {
+          "name": "Pilih dimensi atau preset",
+          "text": "Masukkan dimensi target dalam piksel atau pilih format siap pakai (mis. posting Instagram, cover Facebook, gambar OG)."
+        },
+        {
+          "name": "Sesuaikan potongan",
+          "text": "Geser dan zoom gambar untuk memilih area terbaik. Area terang di pratinjau menunjukkan dengan tepat apa yang akan disimpan."
+        },
+        {
+          "name": "Pilih format dan unduh",
+          "text": "Pilih format file (JPG, PNG, atau WebP), atur kualitas kompresi, dan unduh gambar jadi."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Ubah ukuran gambar — potong, konversi, dan kompres dalam satu alat",
+      "html": "<p class=\"text-mid\">Editor gambar memungkinkan Anda dengan cepat menyesuaikan gambar ke dimensi tertentu. Anda dapat mengubah ukuran gambar ke dimensi piksel apa pun, memilih format siap pakai untuk media sosial, atau memotong bagian gambar dengan framing yang presisi.</p><p class=\"text-mid mt-3\">Selain mengubah ukuran, alat ini menawarkan konversi format (JPG, PNG, WebP), pembuatan avatar bulat, dan kontrol kualitas kompresi.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cara mengubah ukuran gambar",
+      "description": "Mengedit gambar hanya membutuhkan beberapa detik:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Tambahkan gambar",
+          "description": "Seret file ke area yang ditentukan atau pilih gambar dari perangkat Anda. Format yang didukung: JPG, PNG, WebP."
+        },
+        {
+          "title": "2. Atur dimensi",
+          "description": "Masukkan dimensi dalam piksel atau pilih format siap pakai (Instagram, Facebook, YouTube, LinkedIn, gambar OG)."
+        },
+        {
+          "title": "3. Unduh",
+          "description": "Sesuaikan potongan, pilih format file (JPG, PNG, WebP), atur kualitas, dan unduh gambar jadi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cara menambahkan gambar",
+      "html": "<p class=\"text-mid\">Alat menerima gambar dalam format JPG, PNG, dan WebP. Anda dapat menambahkan gambar dengan dua cara:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Seret dan lepas</strong> — ambil file dari folder di komputer Anda dan jatuhkan ke area unggah file (area dengan border putus-putus).</li><li><strong>Pilih dari perangkat</strong> — mengklik area unggah file membuka dialog pemilihan file.</li></ul><p class=\"text-mid mt-3\">Setelah menambahkan gambar, alat secara otomatis membaca dimensi aslinya dan menampilkan pratinjau. Anda sekarang dapat melanjutkan ke pengaturan potongan.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Atur dimensi target",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Dimensi dalam px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Format siap pakai</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Lebar (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly></div><div><label class=\"text-[14px]! font-medium\">Tinggi (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span>Pertahankan proporsi (dimensi kedua otomatis)</span></label></div></div>",
+      "html": "<p class=\"text-mid\">Di tab <strong>Dimensi dalam px</strong>, Anda memasukkan lebar dan tinggi secara manual. Opsi <strong>Pertahankan proporsi</strong> secara otomatis menyesuaikan dimensi kedua.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Dimensi gambar untuk Instagram, Facebook, dan LinkedIn",
+      "html": "<p class=\"text-mid mb-4\">Alat ini mencakup format siap pakai dengan dimensi optimal untuk platform paling populer:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform</th><th class=\"py-2 pr-4 font-semibold\">Format</th><th class=\"py-2 pr-4 font-semibold\">Dimensi (px)</th><th class=\"py-2 font-semibold\">Rasio</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Posting persegi</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Posting potret</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Posting</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Cover halaman</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Posting</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Banner profil</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">Gambar OG</td><td class=\"py-2 pr-4\">Berbagi tautan</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Dimensions in the table are recommended sizes for each platform. The tool automatically sets these dimensions when you select the appropriate format.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Format siap pakai — mana yang dipilih?",
+      "description": "Setiap format sesuai dengan persyaratan platform atau kasus penggunaan tertentu:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInstagramLine",
+          "title": "Instagram — posting persegi (1080×1080)",
+          "description": "Format posting Instagram standar. Rasio 1:1. Berfungsi baik di feed dan terlihat bagus di ponsel maupun desktop."
+        },
+        {
+          "icon": "RiInstagramLine",
+          "title": "Instagram — posting potret (1080×1350)",
+          "description": "Format posting vertikal (rasio 4:5). Menempati lebih banyak ruang di feed daripada persegi, yang dapat meningkatkan engagement."
+        },
+        {
+          "icon": "RiInstagramLine",
+          "title": "Instagram — story / reels (1080×1920)",
+          "description": "Format vertikal layar penuh (rasio 9:16). Digunakan di stories dan reels. Mengisi seluruh layar ponsel."
+        },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook — posting (1200×630)",
+          "description": "Format optimal untuk posting Facebook dan tautan yang dibagikan. Rasio mendekati 16:9."
+        },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook — cover halaman (820×360)",
+          "description": "Foto latar belakang untuk halaman bisnis Facebook. Format lebar panoramik — mungkin dipotong berbeda di berbagai perangkat."
+        },
+        {
+          "icon": "RiLinkedinLine",
+          "title": "LinkedIn — posting (1200×1200)",
+          "description": "Format persegi untuk posting LinkedIn. Terlihat bagus di feed dan di perangkat mobile."
+        },
+        {
+          "icon": "RiLinkedinLine",
+          "title": "LinkedIn — banner profil (1584×396)",
+          "description": "Gambar latar belakang untuk profil LinkedIn pribadi atau perusahaan. Format sangat lebar — pusatkan elemen kunci di potongan."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Gambar OG (1200×630)",
+          "description": "Grafik yang ditampilkan saat berbagi tautan di media sosial (Open Graph). Standar untuk Facebook, Twitter, LinkedIn, dan platform lainnya."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Grafik artikel (1600×900)",
+          "description": "Format lebar yang cocok untuk header artikel blog. Rasio 16:9 terlihat bagus di halaman yang banyak teks."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Banner situs web (1920×600)",
+          "description": "Format sangat lebar untuk banner situs web. Berfungsi sebagai latar belakang di bawah header atau di bagian penawaran."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Thumbnail artikel (800×600)",
+          "description": "Format lebih kecil untuk thumbnail di daftar artikel, carousel produk, atau pratinjau hasil pencarian."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Bagian hero (1920×1080)",
+          "description": "Format layar penuh Full HD. Digunakan sebagai latar belakang bagian utama di halaman beranda atau halaman penawaran."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cara memotong gambar",
+      "html": "<p class=\"text-mid\">Setelah mengatur dimensi target, area potongan interaktif muncul di pratinjau. Bagian terang gambar adalah bagian yang akan disimpan — sisanya diredupkan.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Menyeret potongan</p><p class=\"text-mid mt-1\">Ambil area terang dan seret ke bagian mana pun dari gambar. Dengan cara ini Anda memilih bagian mana dari foto yang akan diekspor.</p></div><div><p class=\"text-dark font-semibold\">Mengubah ukuran via handle</p><p class=\"text-mid mt-1\">Di sudut area potongan ada kotak kecil (handle). Menyeretnya mengubah ukuran potongan — Anda dapat memperbesar atau memperkecil sambil mempertahankan proporsi yang dipilih.</p></div><div><p class=\"text-dark font-semibold\">Zoom</p><p class=\"text-mid mt-1\">Di tab <strong>Zoom</strong> Anda akan menemukan slider untuk menyesuaikan zoom (100–300%). Nilai yang lebih tinggi berarti potongan mencakup bagian yang lebih kecil dari gambar asli — berguna saat Anda ingin memotong detail tertentu.</p></div><div><p class=\"text-dark font-semibold\">Kontrol posisi presisi</p><p class=\"text-mid mt-1\">Di tab <strong>Posisi</strong> Anda dapat mengatur posisi potongan yang tepat dalam persentase (0–100% untuk sumbu X dan Y). Tombol pemusatan memungkinkan Anda dengan cepat memposisikan potongan di tengah gambar.</p></div></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Bentuk potongan",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Persegi panjang</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Persegi</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Lingkaran</span></div></div>",
+      "html": "<p class=\"text-mid\">Di tab <strong>Bentuk Potongan</strong>, Anda memilih bentuk gambar yang diekspor: persegi panjang (dengan proporsi yang dipilih), persegi (memaksa 1:1), atau lingkaran (dengan latar belakang transparan).</p><p class=\"text-mid mt-3\">Bentuk lingkaran membuat avatar bulat dengan latar belakang transparan di luar lingkaran. Alat secara otomatis mengalihkan format ke PNG atau WebP, karena JPG tidak mendukung transparansi.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Grid 3×3 — untuk apa?",
+      "html": "<p class=\"text-mid\">Grid yang membagi gambar menjadi 9 bagian sama terlihat di area potongan. Ini adalah visualisasi <strong>aturan sepertiga</strong> — salah satu prinsip dasar komposisi fotografi.</p><p class=\"text-mid mt-3\">Aturan ini menyatakan bahwa elemen terpenting foto (wajah, produk, titik minat) harus ditempatkan di persimpangan garis grid atau sepanjang garis tersebut. Komposisi seperti ini lebih dinamis dan menyenangkan mata daripada menempatkan subjek tepat di tengah.</p><p class=\"text-mid mt-3\">Di tab <strong>Warna grid</strong> Anda dapat mengubah warna garis (hijau, putih, hitam, merah, kuning) agar grid terlihat jelas di berbagai gambar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTabs",
+      "title": "Ekspor — format mana yang dipilih?",
+      "tabs": [
+        {
+          "title": "JPG",
+          "icon": "RiImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Format paling populer untuk foto. Kompresi yang baik sambil mempertahankan kualitas visual. Tidak mendukung transparansi — latar belakang selalu diisi dengan warna.</p><p class=\"text-mid\">Pilihan yang baik untuk foto produk, potret, dan sebagian besar grafis situs web. Slider kualitas (60–100%) mengontrol kompresi.</p></div>"
+        },
+        {
+          "title": "PNG",
+          "icon": "RiFileImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Format tanpa kehilangan — mempertahankan kualitas penuh, tetapi file lebih besar. Mendukung transparansi (diperlukan untuk bentuk lingkaran).</p><p class=\"text-mid\">Pilihan yang baik untuk grafis dengan teks, ikon, dan gambar yang memerlukan tepi tajam.</p></div>"
+        },
+        {
+          "title": "WebP",
+          "icon": "RiCropLine",
+          "html": "<div><p class=\"text-mid mb-3\">Format modern yang menggabungkan keunggulan JPG dan PNG — file kecil, kualitas baik, dukungan transparansi. Didukung oleh semua browser modern.</p><p class=\"text-mid\">Direkomendasikan untuk situs web — file lebih kecil berarti pemuatan lebih cepat.</p></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Rasio aspek — apa artinya?",
+      "description": "Rasio aspek adalah hubungan antara lebar dan tinggi gambar. Ditulis sebagai dua angka yang dipisahkan titik dua:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "1:1 (persegi)",
+          "description": "Lebar sama dengan tinggi. Posting persegi Instagram, foto profil, ikon."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "4:5 (potret)",
+          "description": "Format sedikit vertikal. Posting potret Instagram — menempati lebih banyak ruang di feed daripada persegi."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "3:2 (klasik)",
+          "description": "Proporsi fotografi analog tradisional. Banyak kamera digital juga menggunakan format ini."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "16:9 (layar lebar)",
+          "description": "Format standar video HD, presentasi, dan monitor. YouTube, video Facebook, banner situs web."
+        },
+        {
+          "icon": "RiInstagramLine",
+          "title": "9:16 (vertikal layar penuh)",
+          "description": "Kebalikan dari 16:9 — format vertikal yang mengisi seluruh layar ponsel. Instagram Stories, TikTok, YouTube Shorts."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Pertanyaan yang sering diajukan tentang editor gambar",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Apakah editor dapat menangani gambar yang sangat besar?",
+          "answer": "Ya, meskipun pemrosesan mungkin lebih lambat untuk gambar di atas 4000×4000 piksel — ini tergantung pada kekuatan perangkat dan memori browser yang tersedia. Semua pemrosesan terjadi secara lokal, tanpa mengirim file ke server.",
+          "answerSchemaText": "Ya. Pemrosesan mungkin lebih lambat di atas 4000×4000 px. Semua pemrosesan bersifat lokal."
+        },
+        {
+          "question": "Format ekspor mana yang dipilih — JPG, PNG, atau WebP?",
+          "answer": "JPG adalah pilihan yang baik untuk foto dengan banyak warna dan gradien — file kecil dengan kualitas bagus. PNG mempertahankan kualitas tertinggi dan mendukung transparansi (mis. avatar bulat). WebP menggabungkan keunggulan keduanya — file kecil dengan kualitas tinggi dan dukungan transparansi.",
+          "answerSchemaText": "JPG untuk foto, PNG untuk transparansi, WebP menggabungkan file kecil dengan kualitas tinggi."
+        },
+        {
+          "question": "Bagaimana cara membuat foto profil bulat?",
+          "answer": "Di tab Bentuk Potongan, pilih opsi Lingkaran. Alat akan secara otomatis mengalihkan format ke PNG atau WebP (JPG tidak mendukung transparansi). Area di luar lingkaran akan transparan.",
+          "answerSchemaText": "Pilih Lingkaran di tab Bentuk Potongan. Area di luar lingkaran transparan."
+        },
+        {
+          "question": "Berapa dimensi gambar untuk Instagram?",
+          "answer": "Instagram mendukung tiga format utama: posting persegi (1080×1080 px, rasio 1:1), posting potret (1080×1350 px, rasio 4:5), dan story/reels (1080×1920 px, rasio 9:16). Alat ini memiliki format siap pakai untuk setiap dimensi tersebut.",
+          "answerSchemaText": "Posting persegi: 1080×1080 px, posting potret: 1080×1350 px, story/reels: 1080×1920 px."
+        },
+        {
+          "question": "Bagaimana cara kerja slider kualitas?",
+          "answer": "Slider kualitas (60–100%) mengontrol tingkat kompresi untuk format JPG dan WebP. Nilai yang lebih tinggi berarti kualitas gambar lebih baik tetapi ukuran file lebih besar. Untuk sebagian besar penggunaan media sosial, nilai optimal adalah 70–85%.",
+          "answerSchemaText": "Slider mengontrol kompresi JPG dan WebP. 70–85% optimal untuk media sosial."
+        },
+        {
+          "question": "Mengapa format JPG tidak tersedia dengan bentuk lingkaran?",
+          "answer": "Format JPG tidak mendukung transparansi. Bentuk lingkaran memerlukan latar belakang transparan di luar lingkaran, sehingga alat secara otomatis membatasi pilihan ke PNG atau WebP — format dengan alpha channel.",
+          "answerSchemaText": "JPG tidak mendukung transparansi. Bentuk lingkaran memerlukan PNG atau WebP."
+        },
+        {
+          "question": "Apa arti rasio aspek seperti 4:5 atau 16:9?",
+          "answer": "Rasio aspek mendefinisikan hubungan antara lebar dan tinggi gambar. Misalnya, 4:5 berarti lebarnya 4 bagian dan tingginya 5 bagian. 16:9 adalah rasio khas untuk film dan presentasi. Posting potret Instagram menggunakan 4:5, sementara story dan reels menggunakan 9:16.",
+          "answerSchemaText": "4:5 = lebar 4 bagian, tinggi 5 bagian. 16:9 = layar lebar standar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Jelajahi alat lainnya"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

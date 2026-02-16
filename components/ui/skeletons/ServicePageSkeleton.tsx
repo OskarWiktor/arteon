@@ -91,7 +91,7 @@ export default function ServicePageSkeleton() {
       <HeroBannerSkeleton />
       <BenefitBeltSkeleton />
       <BreadcrumbsSkeleton />
-      <div className="m-auto w-[94%] max-w-[1420px]">
+      <div className="m-auto w-[94%] max-w-[1420px] 2xl:max-w-none">
         <GapSkeleton variant="space" />
         <CarouselSkeleton variant="project" />
         <GapSkeleton variant="line" />

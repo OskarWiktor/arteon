@@ -8,7 +8,7 @@ export default function AboutPageSkeleton() {
   return (
     <>
       <HeroBannerSkeleton />
-      <div className="m-auto w-[94%] max-w-[1420px]">
+      <div className="m-auto w-[94%] max-w-[1420px] 2xl:max-w-none">
         <GapSkeleton variant="space" />
         <SectionInfoSkeleton />
         <GapSkeleton variant="line" />

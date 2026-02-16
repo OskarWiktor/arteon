@@ -1,0 +1,206 @@
+{
+  "toolKey": "contrastChecker",
+  "locale": "ms",
+  "metadata": {
+    "title": "Penyemak Kontras Warna Percuma \u2013 Pematuhan WCAG 2.1",
+    "description": "Semak sama ada warna teks dan latar belakang boleh dibaca mengikut WCAG 2.1. Masukkan kod HEX, RGB atau HSL, lihat nisbah kontras dan gunakan pembetulan automatik. Tanpa pendaftaran.",
+    "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
+    "path": "/ms/alatan/penyemak-kontras-warna"
+  },
+  "hero": {
+    "title": "Penyemak kontras dan kebolehbacaan warna",
+    "description": "Masukkan warna teks dan latar belakang, dan alat akan menunjukkan sama ada kontras mencukupi. Pengiraan berdasarkan standard kebolehcapaian antarabangsa WCAG 2.1.",
+    "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/ms/alatan", "label": "Alatan" },
+    "third": { "href": "/ms/alatan/penyemak-kontras-warna", "label": "Penyemak kontras warna" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Penyemak kontras dan kebolehbacaan warna",
+      "alternateName": [
+        "Penguji kebolehbacaan warna",
+        "Penyemak kontras teks dan latar belakang",
+        "Alat semak kebolehbacaan",
+        "Pengira kontras warna",
+        "Penguji kontras WCAG",
+        "Penyemak kebolehcapaian warna"
+      ],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "AccessibilityTool",
+      "description": "Semak sama ada warna teks dan latar belakang boleh dibaca untuk semua pengguna. Alat mengira nisbah kontras mengikut WCAG 2.1 dan menunjukkan sama ada memenuhi keperluan kebolehcapaian.",
+      "featureList": [
+        "Pengiraan nisbah kontras",
+        "Semakan pematuhan WCAG 2.1 Tahap AA",
+        "Semakan pematuhan WCAG 2.1 Tahap AAA",
+        "Ujian teks biasa",
+        "Ujian teks besar dan tajuk",
+        "Ujian ikon dan komponen UI",
+        "Sokongan format warna HEX",
+        "Sokongan format warna RGB dan RGBA",
+        "Sokongan format warna HSL dan HSLA",
+        "Pemilih warna untuk pemilihan visual",
+        "Pratonton langsung teks",
+        "Ciri padanan warna automatik",
+        "Pemprosesan tempatan dalam pelayar"
+      ]
+    },
+    "howTo": {
+      "name": "Cara menyemak kontras dan kebolehbacaan warna",
+      "description": "Cara menyemak kebolehbacaan warna teks dan latar belakang mengikut standard WCAG.",
+      "steps": [
+        { "name": "Pilih warna teks", "text": "Masukkan kod warna (cth. #333333) dalam format HEX, RGB, atau HSL \u2013 atau pilih warna dari pemilih warna." },
+        { "name": "Pilih warna latar belakang", "text": "Masukkan warna latar belakang di mana teks akan dipaparkan \u2013 boleh jadi warna seksyen, blok, atau halaman penuh." },
+        { "name": "Baca keputusan", "text": "Alat akan menunjukkan nisbah kontras dan sama ada warna memenuhi keperluan AA/AAA." },
+        { "name": "Laraskan warna", "text": "Jika kontras terlalu rendah, ciri Match secara automatik mencadangkan varian warna teks yang memenuhi ambang WCAG yang dipilih." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Mengapa kebolehbacaan warna penting?",
+      "html": "<p class=\"text-mid\">Kebolehbacaan ialah perbezaan kecerahan antara warna teks dan warna latar belakang. Semakin besar perbezaan, semakin mudah untuk membaca teks. Kontras yang terlalu rendah menjadikan kandungan sukar dibaca \u2013 terutamanya bagi orang dengan kecacatan penglihatan, warga emas, atau dalam keadaan pencahayaan yang sukar (cth. pada telefon di bawah cahaya matahari langsung).</p><p class=\"text-mid mt-3\">Menurut <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Pertubuhan Kesihatan Sedunia (WHO)</a>, kira-kira 2.2 bilion orang di seluruh dunia mempunyai beberapa bentuk kecacatan penglihatan. Selain itu, berjuta-juta orang mengalami buta warna (kira-kira 8% lelaki dan 0.5% wanita).</p><p class=\"text-mid mt-3\">Alat mengira nisbah kontras menggunakan formula yang dinyatakan dalam <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Web Content Accessibility Guidelines)</a> \u2013 garis panduan kebolehcapaian digital antarabangsa.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Cara menggunakan penyemak kontras warna",
+      "description": "Menyemak kebolehbacaan mengambil masa beberapa saat sahaja:",
+      "grid": "four",
+      "items": [
+        { "icon": "RiPaletteLine", "title": "1. Masukkan warna teks", "description": "Masukkan kod warna (cth. #333333) dalam format HEX, RGB, atau HSL \u2013 atau pilih warna dari pemilih warna." },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "2. Masukkan warna latar belakang",
+          "description": "Masukkan warna latar belakang di mana teks akan dipaparkan \u2013 boleh jadi warna seksyen, blok, atau halaman penuh."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "3. Baca keputusan",
+          "description": "Alat akan mengira nisbah kontras dan menunjukkan sama ada warna memenuhi keperluan WCAG untuk teks biasa, teks besar, dan ikon."
+        },
+        {
+          "icon": "RiEqualizerLine",
+          "title": "4. Laraskan warna",
+          "description": "Jika kontras terlalu rendah, ciri Match secara automatik mencadangkan varian warna yang memenuhi ambang yang dipilih."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTabs",
+      "title": "Format warna apa yang disokong?",
+      "tabs": [
+        {
+          "title": "HEX",
+          "icon": "RiHashtag",
+          "html": "<div><p class=\"text-mid mb-3\">Format heksadesimal \u2013 paling biasa dalam reka bentuk web. Bermula dengan <code class=\"rounded bg-black/5 px-1\">#</code> dan mengandungi 3 atau 6 aksara (digit 0-9 dan huruf A-F).</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">#fff</code> \u2013 putih (singkatan)</li><li><code class=\"rounded bg-black/5 px-1\">#ffffff</code> \u2013 putih (penuh)</li><li><code class=\"rounded bg-black/5 px-1\">#1a73e8</code> \u2013 biru</li></ul></div>"
+        },
+        {
+          "title": "RGB / RGBA",
+          "icon": "RiPaletteLine",
+          "html": "<div><p class=\"text-mid mb-3\">Format berdasarkan tiga saluran: Merah, Hijau, Biru. Setiap saluran menerima nilai dari 0 hingga 255. Varian RGBA menambah parameter keempat \u2013 ketelusan (alpha) dari 0 hingga 1.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">rgb(255, 255, 255)</code> \u2013 putih</li><li><code class=\"rounded bg-black/5 px-1\">rgba(0, 0, 0, 0.8)</code> \u2013 hitam pada 80% kelegapan</li></ul></div>"
+        },
+        {
+          "title": "HSL / HSLA",
+          "icon": "RiEqualizerLine",
+          "html": "<div><p class=\"text-mid mb-3\">Format berdasarkan Hue (0-360\u00b0), Saturation (0-100%), dan Lightness (0-100%). Varian HSLA menambah ketelusan.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">hsl(0, 0%, 100%)</code> \u2013 putih</li><li><code class=\"rounded bg-black/5 px-1\">hsla(217, 91%, 60%, 0.9)</code> \u2013 biru pada 90% kelegapan</li></ul></div>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Cara mentafsir keputusan ujian kebolehbacaan",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Nisbah kontras</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Teks biasa</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Selepas memasukkan warna, alat memaparkan keputusan dalam tiga seksyen:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Teks biasa</strong> \u2013 memerlukan kontras 4.5:1 (AA) atau 7:1 (AAA). Terpakai untuk teks di bawah 18pt (24px) atau di bawah 14pt bold.</li><li><strong>Teks besar / bold</strong> \u2013 memerlukan kontras 3:1 (AA) atau 4.5:1 (AAA). Terpakai untuk tajuk, butang, dan sorotan.</li><li><strong>Ikon</strong> \u2013 memerlukan kontras 3:1 (AA). Terpakai untuk ikon dan elemen UI grafik yang menyampaikan maklumat.</li></ul><p class=\"text-mid mt-3\"><strong>Penunjuk hijau</strong> bermaksud keperluan dipenuhi. <strong>Penunjuk merah</strong> bermaksud kontras terlalu rendah dan perlu diperbaiki.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Padanan warna automatik kepada keperluan WCAG",
+      "html": "<p class=\"text-mid mb-4\">Jika kontras terlalu rendah, anda tidak perlu mencari warna yang betul secara cuba-cuba. Ciri <strong>Match</strong> secara automatik mencari varian warna teks yang memenuhi ambang kontras yang dipilih.</p><p class=\"text-mid mb-4\">Cara padanan berfungsi:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Pilih sasaran padanan dari senarai \u2013 cth. AA untuk teks biasa atau AAA untuk teks besar.</li><li>Klik butang Match.</li><li>Alat akan mencari melalui varian kecerahan warna teks dan mencadangkan yang paling hampir yang memenuhi keperluan.</li><li>Warna yang dicadangkan boleh disalin ke papan keratan atau ditetapkan segera sebagai warna teks baharu.</li></ol><p class=\"text-mid mt-3\">Algoritma mengekalkan hue dan saturasi warna asal, mengubah hanya kecerahan. Warna yang dicadangkan kekal konsisten dengan identiti visual sambil memenuhi standard kebolehcapaian.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Apa maksud tahap AA dan AAA dalam standard WCAG?",
+      "plans": [
+        { "id": "aa", "name": "Tahap AA (minimum)", "highlighted": true },
+        { "id": "aaa", "name": "Tahap AAA (dipertingkat)" }
+      ],
+      "features": [
+        { "name": "Teks biasa \u2013 min. 4.5:1", "values": { "aa": true, "aaa": true } },
+        { "name": "Teks biasa \u2013 min. 7:1", "values": { "aa": false, "aaa": true } },
+        { "name": "Teks besar / bold \u2013 min. 3:1", "values": { "aa": true, "aaa": true } },
+        { "name": "Teks besar / bold \u2013 min. 4.5:1", "values": { "aa": false, "aaa": true } },
+        { "name": "Ikon dan elemen UI \u2013 min. 3:1", "values": { "aa": true, "aaa": true } },
+        { "name": "Diperlukan secara undang-undang (arahan EU)", "values": { "aa": true, "aaa": false } },
+        { "name": "Disyorkan untuk kandungan utama", "values": { "aa": true, "aaa": true } }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Apa yang menjadikan penyemak kontras ini istimewa?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiEyeLine",
+          "title": "Penilaian objektif berdasarkan formula matematik",
+          "description": "Nisbah kontras dikira menggunakan formula WCAG \u2013 keputusan tidak bergantung pada tetapan monitor atau persepsi warna individu."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pematuhan standard antarabangsa WCAG",
+          "description": "Keputusan sepadan dengan keperluan WCAG 2.1, yang menjadi asas peraturan kebolehcapaian digital di EU dan banyak negara lain."
+        },
+        {
+          "icon": "RiMagicLine",
+          "title": "Padanan warna automatik kepada ambang",
+          "description": "Ciri Match mencari varian warna teks yang memenuhi ambang kontras yang dipilih \u2013 mengekalkan hue, mengubah hanya kecerahan."
+        },
+        { "icon": "RiStackLine", "title": "Lima format warna", "description": "Format yang disokong: HEX, RGB, RGBA, HSL, dan HSLA. Kod warna boleh ditampal terus dari Figma, Photoshop, atau CSS." },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Tiga jenis kandungan dalam satu ujian",
+          "description": "Satu semakan menunjukkan keputusan untuk teks biasa, teks besar (tajuk, butang), dan ikon \u2013 tidak perlu menguji setiap jenis secara berasingan."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Soalan lazim tentang penyemak kontras warna",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Apa itu nisbah kontras warna?",
+          "answer": "Nisbah kontras ialah ukuran perbezaan kecerahan antara dua warna. Skala bermula dari 1:1 (tiada perbezaan \u2013 cth. teks putih pada latar belakang putih) hingga 21:1 (perbezaan maksimum \u2013 teks hitam pada latar belakang putih). Semakin tinggi nisbah, semakin mudah untuk membezakan teks dari latar belakang."
+        },
+        {
+          "question": "Kontras berapa yang mencukupi mengikut WCAG?",
+          "answer": "Untuk teks biasa, minimum ialah 4.5:1 (Tahap AA). Untuk teks besar \u2013 tajuk dari 18pt atau teks bold dari 14pt \u2013 3:1 mencukupi. Untuk ikon dan komponen UI, 3:1 juga diperlukan."
+        },
+        {
+          "question": "Mengapa warna saya tidak memenuhi keperluan walaupun saya boleh melihatnya dengan baik?",
+          "answer": "Persepsi warna peribadi bergantung pada tetapan monitor, pencahayaan bilik, dan keupayaan penglihatan individu. WCAG berdasarkan formula matematik objektif yang mengambil kira pelbagai kecacatan penglihatan. Warna yang boleh dibaca pada satu skrin mungkin tidak boleh dibaca pada yang lain atau oleh orang lain."
+        },
+        {
+          "question": "Adakah saya perlu memenuhi tahap kontras AAA?",
+          "answer": "Tidak sentiasa. Tahap AA (4.5:1 untuk teks biasa) ialah minimum yang diperlukan oleh peraturan kebolehcapaian di Kesatuan Eropah. Tahap AAA (7:1) memberikan kebolehbacaan yang lebih baik tetapi lebih sukar dicapai. Untuk kandungan kritikal \u2013 amaran, arahan keselamatan \u2013 pertimbangkan untuk mencapai AAA."
+        },
+        {
+          "question": "Apa itu standard WCAG?",
+          "answer": "WCAG (Web Content Accessibility Guidelines) ialah set antarabangsa garis panduan kebolehcapaian web yang dibangunkan oleh organisasi W3C. Ia mentakrifkan, antara lain, nilai minimum kontras warna, struktur tajuk, sokongan papan kekunci, dan keperluan lain."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Terokai alatan percuma lain" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

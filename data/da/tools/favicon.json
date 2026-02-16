@@ -1,0 +1,127 @@
+{
+  "toolKey": "favicon",
+  "locale": "da",
+  "metadata": {
+    "title": "Gratis favicon-generator – ICO og PNG fra ét billede",
+    "description": "Generér favicon.ico og PNG-ikoner fra et enkelt billede, i overensstemmelse med browser- og Lighthouse-krav. Uden registrering, fungerer i browseren.",
+    "ogImage": "/assets/tools/narzedzia-generator-favicon.webp",
+    "path": "/da/vaerktojer/gratis-favicon-generator"
+  },
+  "hero": {
+    "title": "Generér favicon.ico og PNG-ikoner fra ét billede",
+    "description": "Upload et billede, og værktøjet genererer favicon.ico og et komplet sæt PNG-ikoner til browsere, mobile enheder og Lighthouse.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-favicon.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/da/vaerktojer", "label": "Værktøjer" },
+    "third": { "href": "/da/vaerktojer/gratis-favicon-generator", "label": "Favicon-generator" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Gratis favicon-generator",
+      "alternateName": ["Favicon.ico-generator", "Webikongenerator", "Favicon-værktøj", "Favicon-generator fra billede"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "FaviconGenerator",
+      "description": "Gratis favicon-generator. Upload et billede og få favicon.ico og et komplet sæt PNG-ikoner til browsere, mobile enheder og PWA.",
+      "featureList": [
+        "Generering af favicon.ico (16×16, 32×32, 48×48 px)",
+        "PNG-ikoner til browsere (16×16 til 512×512 px)",
+        "Apple Touch Icon (180×180 px)",
+        "Android/PWA-ikoner (192×192, 512×512 px)",
+        "Microsoft-ikoner (150×150, 310×310 px)",
+        "Beskæring og størrelsesændring af kildebillede",
+        "Forhåndsvisning i realtid",
+        "Download af alle ikoner i ZIP",
+        "Lokal behandling i browseren"
+      ]
+    },
+    "howTo": {
+      "name": "Sådan genererer du favicon fra et billede",
+      "description": "Sådan genererer du favicon.ico og PNG-ikoner fra et billede til browsere og mobile enheder.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Upload billede", "text": "Træk og slip filen i det markerede område, eller vælg den fra din enhed. Understøttede formater er JPG, PNG, SVG og WebP." },
+        { "name": "Beskær billedet", "text": "Justér beskæringsområdet for at vælge den passende del af billedet til favicon." },
+        { "name": "Kontrollér forhåndsvisning", "text": "Se hvordan favicon ser ud i browserfanen og i forskellige størrelser." },
+        { "name": "Download ikoner", "text": "Download favicon.ico og det komplette sæt PNG-ikoner i en ZIP-fil." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Hvad er en favicon, og hvorfor er den vigtig?",
+      "html": "<p class=\"text-mid\">En favicon er et lille ikon, der vises i browserfanen, i bogmærkelisten og på telefonens startskærm. Det er et af de første elementer, brugeren ser – allerede inden siden er helt indlæst.</p><p class=\"text-mid mt-3\">En professionel favicon opbygger brandgenkendelse og gør det lettere for brugeren at finde din side blandt mange åbne faner. Mangel på favicon kan give et uprofessionelt indtryk og reducere besøgendes tillid.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Sådan bruger du favicon-generatoren",
+      "description": "At generere favicon tager kun et par minutter:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Upload billede", "description": "Træk og slip filen i det markerede område, eller vælg den fra din enhed. Et kvadratisk billede fungerer bedst." },
+        { "title": "2. Beskær og justér", "description": "Justér beskæringsområdet for at vælge den passende del af billedet. Se hvordan det ser ud i forskellige størrelser." },
+        { "title": "3. Download ikoner", "description": "Download favicon.ico og det komplette sæt PNG-ikoner i en ZIP-fil. Alle ikoner er klar til brug." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Hvilke ikoner opretter generatoren?",
+      "description": "Generatoren opretter et komplet sæt ikoner til moderne browsere og enheder:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiGlobalLine", "title": "favicon.ico", "description": "ICO-fil der indeholder tre størrelser (16×16, 32×32, 48×48 px). Understøttes af alle browsere, inklusive ældre." },
+        { "icon": "RiChromeLine", "title": "Browserikoner (PNG)", "description": "Sæt af PNG-ikoner til moderne browsere: 16×16, 32×32, 48×48, 96×96 og 128×128 px." },
+        { "icon": "RiAppleLine", "title": "Apple Touch Icon", "description": "Ikon 180×180 px til iOS-enheder (iPhone, iPad). Vises på startskærmen efter tilføjelse af siden." },
+        { "icon": "RiAndroidLine", "title": "Android/PWA-ikoner", "description": "Ikoner 192×192 og 512×512 px til Progressive Web Apps og Android-enheder." },
+        { "icon": "RiWindowsLine", "title": "Microsoft-ikoner", "description": "Ikoner 150×150 og 310×310 px til Windows-paneler og Microsoft Edge." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Hvad gør denne favicon-generator speciel?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Lokal behandling i browseren", "description": "Billedet uploades ikke til nogen server. Al behandling sker på din enhed." },
+        { "icon": "RiCheckboxCircleLine", "title": "Opfylder Lighthouse-krav", "description": "Genererede ikoner opfylder Google Lighthouse-kravene til størrelse og format." },
+        { "icon": "RiDevicesLine", "title": "Ikoner til alle enheder", "description": "Et sæt filer dækker alle browsere, iOS, Android og Windows." },
+        { "icon": "RiInfinityLine", "title": "Uden begrænsninger, uden registrering", "description": "Generér så mange favicons, du har brug for. Uden registrering, uden gebyrer." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Ofte stillede spørgsmål om favicon-generatoren",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hvilket billede er bedst til favicon?",
+          "answer": "Et kvadratisk billede (mindst 512×512 px) med enkel baggrund er bedst. Logoer, initialer eller enkle ikoner giver de bedste resultater. Billeder med mange detaljer kan se dårlige ud i lille størrelse (16×16 px).",
+          "answerSchemaText": "Et kvadratisk billede, mindst 512×512 px, med enkel baggrund. Logoer eller enkle ikoner giver bedst resultat."
+        },
+        {
+          "question": "Hvad er forskellen mellem favicon.ico og PNG?",
+          "answer": "ICO-filen kan indeholde flere størrelser i én fil og understøttes af alle browsere, inklusive ældre. PNG-filer har højere kvalitet, men kræver et separat HTML-tag for hver størrelse. Det anbefales at bruge begge.",
+          "answerSchemaText": "ICO indeholder flere størrelser i én fil. PNG tilbyder højere kvalitet. Det anbefales at bruge begge."
+        },
+        {
+          "question": "Sendes billedet til en server?",
+          "answer": "Nej. Al behandling sker i din browser. Billedet gemmes ikke og sendes ingen steder hen.",
+          "answerSchemaText": "Nej. Billedet behandles i browseren. Det sendes ikke til nogen server."
+        },
+        {
+          "question": "Hvordan tilføjer man favicon til hjemmesiden?",
+          "answer": "Placer ikonfilerne i hjemmesidens rodmappe og tilføj de passende HTML-tags i sidens &lt;head&gt;-sektion. Den downloadede ZIP-fil indeholder implementeringsinstruktioner.",
+          "answerSchemaText": "Placer ikonfilerne i rodmappen og tilføj HTML-tags i head-sektionen."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Udforsk flere værktøjer" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

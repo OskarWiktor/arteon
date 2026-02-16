@@ -1,0 +1,135 @@
+{
+  "toolKey": "wordCounter",
+  "locale": "sv",
+  "metadata": {
+    "title": "Gratis ord- & teckenräknare – Kontrollera textlängden för SEO",
+    "description": "Räkna ord, tecken, stycken och lästid omedelbart. Kontrollera optimal textlängd för SEO – blogginlägg, produktsida, landningssida. Utan registrering, utan begränsningar.",
+    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "path": "/sv/verktyg/ord-och-teckenraknare"
+  },
+  "hero": {
+    "title": "Ord- och teckenräknare med längdbedömning",
+    "description": "Klistra in text, välj sidtyp och verktyget visar antal ord, tecken, stycken och bedömer om längden passar den valda innehållstypen.",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/sv/verktyg", "label": "Verktyg" },
+    "third": { "href": "/sv/verktyg/ord-och-teckenraknare", "label": "Ord- & teckenräknare" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Gratis ord- och teckenräknare",
+      "alternateName": ["Ordräknare med textlängdsbedömning", "Teckenräknare", "Lästidskalkylator", "Ordräknare för SEO"],
+      "applicationSubCategory": "TextApplication",
+      "description": "Gratis ord- och teckenräknare. Kontrollerar antal ord, tecken, stycken och uppskattad lästid. Bedömer textlängden för olika sidtyper.",
+      "featureList": [
+        "Antal ord",
+        "Antal tecken med och utan mellanslag",
+        "Antal stycken",
+        "Uppskattad lästid",
+        "Längdbedömning för olika sidtyper",
+        "Rekommenderade intervall för: produktbeskrivning, tjänstesida, startsida, landningssida, blogginlägg, guide",
+        "Kopiera rapport till urklipp"
+      ]
+    },
+    "howTo": {
+      "name": "Hur man använder ord- och teckenräknaren",
+      "description": "Kontrollera textlängden och bedöm om den passar för en specifik sidtyp.",
+      "steps": [
+        { "name": "Välj sidtyp", "text": "Välj från listan vilken typ av sida du skriver för. Varje typ har ett eget rekommenderat ordintervall." },
+        { "name": "Klistra in text", "text": "Klistra in eller skriv text i textfältet. Verktyget räknar automatiskt ord, tecken, stycken och beräknar lästid." },
+        { "name": "Kontrollera bedömningen", "text": "Titta på den färgkodade indikatorn och statusen. Grönt innebär rätt längd, gult för kort, rött för lång." },
+        { "name": "Kopiera rapporten", "text": "Knappen Kopiera rapport kopierar en sammanfattning med alla statistik och längdbedömning till urklipp." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Gratis ordräknare – räkna och bedöm textlängden",
+      "html": "<p class=\"text-mid\">Detta verktyg låter dig snabbt kontrollera längden på valfri text. Klistra in innehåll och räknaren räknar ord, tecken och stycken. Du ser också hur många minuter det tar att läsa och om längden passar den valda sidtypen.</p><p class=\"text-mid mt-3\">Varje sidtyp tjänar ett annat syfte – en produktbeskrivning svarar på köparens frågor, ett blogginlägg utforskar ett ämne på djupet och en tjänstesida förklarar vad kunden får. Räknaren visar intervall för var och en av dessa typer baserat på analys av framgångsrikt innehåll.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Hur man använder ord- och teckenräknaren",
+      "description": "Att kontrollera textlängden tar mindre än en minut:",
+      "grid": "four",
+      "items": [
+        { "icon": "RiListCheck2", "title": "1. Välj sidtyp", "description": "Välj från listan vilken typ av sida du skriver för. Varje typ har ett eget rekommenderat ordintervall." },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Klistra in text",
+          "description": "Klistra in eller skriv text i det stora textfältet till höger. Verktyget räknar omedelbart ord, tecken, stycken och beräknar lästid."
+        },
+        { "icon": "RiBarChartLine", "title": "3. Kontrollera bedömningen", "description": "Titta på den färgkodade indikatorn och statusen. Grönt innebär rätt längd, gult för kort, rött för lång." },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Kopiera rapporten",
+          "description": "Knappen Kopiera rapport kopierar en sammanfattning med antal ord, tecken, stycken, lästid och längdbedömning till urklipp."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Vad räknaren mäter – ord, tecken, lästid",
+      "description": "Räknaren följer fem nyckeltal:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiText", "title": "Ord", "description": "Totalt antal ord. Huvudindikator för textlängd." },
+        { "icon": "RiSpaceShipLine", "title": "Tecken (med mellanslag)", "description": "Alla tecken inklusive mellanslag. Viktigt när CMS har teckengräns." },
+        { "icon": "RiHashtag", "title": "Tecken (utan mellanslag)", "description": "Endast bokstäver, siffror och symboler. Ibland krävs av tryckerier eller för översättningsfakturering." },
+        { "icon": "RiParagraph", "title": "Stycken", "description": "Antal textblock separerade av tomma rader. Hjälper bedöma om texten har bra struktur." },
+        { "icon": "RiTimeLine", "title": "Lästid", "description": "Lästidskalkylatorn visar hur många minuter det tar att läsa texten vid en genomsnittlig hastighet på 200 ord per minut." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Hur många ord bör texten ha – optimal längd för SEO",
+      "html": "<p class=\"text-mid mb-4\">Intervallen nedan är baserade på analys av innehåll som presterar bra i sökmotorer. Textlängden i sig påverkar inte positionen i Google – det som spelar roll är om innehållet svarar på läsarens frågor.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Sidtyp</th><th class=\"py-2 pr-4 font-semibold\">Intervall</th><th class=\"py-2 font-semibold\">När kortare, när längre?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Produktbeskrivning</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Enkel produkt – 80–150. Komplex utrustning – 300–400.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Tjänstesida</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Lokal tjänst – 500–700. B2B-tjänst med process och FAQ – 1 200–1 500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Startsida</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Startsidan presenterar nyckelvärde och leder besökare vidare.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landningssida</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Enkelt erbjudande – 600–1 000. Erbjudande som kräver förklaring – 1 500–2 500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blogginlägg</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Kort how-to – 1 200–1 500. Detaljerad guide – 2 500–3 000.</td></tr><tr><td class=\"py-2 pr-4\">Guide / pillar page</td><td class=\"py-2 pr-4 whitespace-nowrap\">3000–7000 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Komplett resurs som täcker ämnet från flera vinklar.</td></tr></tbody></table></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Vem är ordräknaren till för?",
+      "grid": "three",
+      "items": [
+        { "icon": "RiEditLine", "title": "Copywriters och innehållsskapare", "description": "Kontrollera om texten är inom rekommenderat intervall för en specifik sidtyp." },
+        { "icon": "RiBloggerLine", "title": "Bloggare", "description": "Följ artikellängden för konsekvens. Kontrollera lästiden innan publicering." },
+        { "icon": "RiShoppingBagLine", "title": "E-handlare", "description": "Verifiera produktbeskrivningar mot teckengränser på försäljningsplattformar." },
+        { "icon": "RiSearchLine", "title": "SEO-specialister", "description": "Bedöm om sidans innehåll har optimal längd jämfört med konkurrenterna." },
+        { "icon": "RiGraduationCapLine", "title": "Studenter och akademiker", "description": "Kontrollera om arbetet uppfyller det krävda ord- eller teckengränsen." },
+        { "icon": "RiTranslate2", "title": "Översättare", "description": "Räkna tecken utan mellanslag för översättningspriser." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor om ord- och teckenräknaren",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Påverkar textlängden positionen i Google?",
+          "answer": "Textlängden i sig är inte en rankingfaktor. Google bedömer om innehållet svarar på användarens frågor och om det är värdefullt för dem.",
+          "answerSchemaText": "Textlängden är inte en direkt rankingfaktor. Google bedömer innehållets värde för användaren."
+        },
+        {
+          "question": "Varför är ordintervallen så breda?",
+          "answer": "Samma sidtyp kan kräva olika längd beroende på ämnets komplexitet. En enkel produktbeskrivning är 80–150 ord. En beskrivning av en bärbar dator är 300–400 ord, eftersom köparen har fler frågor.",
+          "answerSchemaText": "Skillnaderna beror på ämnets komplexitet – en enkel produkt kräver färre ord än en komplex."
+        },
+        {
+          "question": "Hur fungerar lästidskalkylatorn?",
+          "answer": "Verktyget delar antalet ord med 200 – den genomsnittliga läshastigheten för vanlig text. Teknisk text läses långsammare. Resultatet är ett ungefärligt värde.",
+          "answerSchemaText": "Verktyget antar en genomsnittlig läshastighet på 200 ord per minut. Det är ett ungefärligt värde."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Utforska fler verktyg" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

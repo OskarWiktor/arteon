@@ -1,0 +1,199 @@
+{
+  "toolKey": "imageResize",
+  "locale": "cs",
+  "metadata": {
+    "title": "Editor obr\u00e1zk\u016f zdarma \u2013 O\u0159\u00edzn\u011bte a zm\u011b\u0148te velikost pro soci\u00e1ln\u00ed s\u00edt\u011b",
+    "description": "O\u0159\u00edzn\u011bte a zm\u011b\u0148te velikost obr\u00e1zk\u016f pro Instagram, Facebook, LinkedIn a dal\u0161\u00ed. Vyberte p\u0159ednastaven\u00fd form\u00e1t nebo zadejte vlastn\u00ed rozm\u011bry. Bez registrace, bez limit\u016f.",
+    "ogImage": "/assets/tools/narzedzia-edytor-zdjec-online.webp",
+    "path": "/cs/nastroje/editor-obrazku"
+  },
+  "hero": {
+    "title": "O\u0159\u00edzn\u011bte a zm\u011b\u0148te velikost obr\u00e1zku na libovoln\u00fd pom\u011br stran",
+    "description": "Nahrajte obr\u00e1zek, vyberte p\u0159ednastaven\u00fd form\u00e1t pro soci\u00e1ln\u00ed s\u00edt\u011b nebo zadejte vlastn\u00ed rozm\u011bry a st\u00e1hn\u011bte hotov\u00fd o\u0159\u00edzan\u00fd obr\u00e1zek.",
+    "backgroundImage": "/assets/tools/narzedzia-edytor-zdjec-online.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/cs/nastroje", "label": "N\u00e1stroje" },
+    "third": { "href": "/cs/nastroje/editor-obrazku", "label": "Editor obr\u00e1zk\u016f" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Editor obr\u00e1zk\u016f zdarma \u2013 o\u0159ez a zm\u011bna velikosti",
+      "alternateName": [
+        "N\u00e1stroj pro o\u0159ez obr\u00e1zk\u016f",
+        "Zm\u011bna velikosti obr\u00e1zk\u016f pro soci\u00e1ln\u00ed s\u00edt\u011b",
+        "Editor obr\u00e1zk\u016f pro Instagram a Facebook",
+        "O\u0159ez obr\u00e1zku na vlastn\u00ed pom\u011br stran"
+      ],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageEditor",
+      "description": "Bezplatn\u00fd editor obr\u00e1zk\u016f, kter\u00fd umo\u017e\u0148uje o\u0159\u00edznout a zm\u011bnit velikost obr\u00e1zk\u016f pro soci\u00e1ln\u00ed s\u00edt\u011b, weby a dal\u0161\u00ed \u00fa\u010dely. Vyberte p\u0159ednastaven\u00e9 form\u00e1ty nebo zadejte vlastn\u00ed rozm\u011bry.",
+      "featureList": [
+        "O\u0159ez obr\u00e1zku na vlastn\u00ed pom\u011br stran",
+        "P\u0159ednastaven\u00e9 form\u00e1ty pro Instagram, Facebook, LinkedIn, YouTube",
+        "Vlastn\u00ed rozm\u011bry \u0161\u00ed\u0159ky a v\u00fd\u0161ky",
+        "Oto\u010den\u00ed a p\u0159eklopetn\u00ed obr\u00e1zku",
+        "N\u00e1hled v re\u00e1ln\u00e9m \u010dase",
+        "Sta\u017een\u00ed jako PNG nebo JPG",
+        "Lok\u00e1ln\u00ed zpracov\u00e1n\u00ed v prohl\u00ed\u017ee\u010di"
+      ]
+    },
+    "howTo": {
+      "name": "Jak o\u0159\u00edznout a zm\u011bnit velikost obr\u00e1zku",
+      "description": "Jak o\u0159\u00edznout obr\u00e1zek na vlastn\u00ed pom\u011br stran a zm\u011bnit jeho velikost pro soci\u00e1ln\u00ed s\u00edt\u011b nebo web.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Nahrajte obr\u00e1zek", "text": "P\u0159et\u00e1hn\u011bte soubor do vyzna\u010den\u00e9 oblasti nebo jej vyberte ze za\u0159\u00edzen\u00ed." },
+        { "name": "Vyberte pom\u011br stran", "text": "Vyberte p\u0159ednastaven\u00fd form\u00e1t pro konkr\u00e9tn\u00ed platformu nebo zadejte vlastn\u00ed rozm\u011bry." },
+        {
+          "name": "Upravte oblast o\u0159ezu",
+          "text": "P\u0159esu\u0148te a zm\u011b\u0148te velikost r\u00e1me\u010dku o\u0159ezu pro v\u00fdb\u011br po\u017eadovan\u00e9 \u010d\u00e1sti obr\u00e1zku."
+        },
+        {
+          "name": "St\u00e1hn\u011bte v\u00fdsledek",
+          "text": "Klikn\u011bte na tla\u010d\u00edtko sta\u017een\u00ed pro z\u00edsk\u00e1n\u00ed o\u0159\u00edzan\u00e9ho obr\u00e1zku ve form\u00e1tu PNG nebo JPG."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Pro\u010d je d\u016fle\u017eit\u00e9 o\u0159\u00edznout obr\u00e1zek na spr\u00e1vn\u00fd pom\u011br stran?",
+      "html": "<p class=\"text-mid\">Ka\u017ed\u00e1 platforma m\u00e1 sv\u00e9 po\u017eadavky na rozm\u011bry obr\u00e1zk\u016f. Profilov\u00fd obr\u00e1zek na Instagramu je \u010dtverec (1:1), ob\u00e1lka Facebooku je \u0161irok\u00e1 (820\u00d7312 px) a n\u00e1hled na YouTube je 16:9. Nahr\u00e1n\u00ed obr\u00e1zku se \u0161patn\u00fdm pom\u011brem stran vede k automatick\u00e9mu o\u0159\u00edznut\u00ed \u2013 co\u017e \u010dasto odstran\u00ed d\u016fle\u017eitou \u010d\u00e1st obr\u00e1zku.</p><p class=\"text-mid mt-3\">Tento editor v\u00e1m umo\u017en\u00ed p\u0159ipravit obr\u00e1zek se spr\u00e1vn\u00fdm pom\u011brem stran p\u0159ed nahr\u00e1n\u00edm. Vyberte p\u0159ednastaven\u00fd form\u00e1t nebo zadejte vlastn\u00ed rozm\u011bry a z\u00edsk\u00e1te p\u0159esn\u011b o\u0159\u00edzan\u00fd obr\u00e1zek.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Jak pou\u017e\u00edt editor obr\u00e1zk\u016f",
+      "description": "O\u0159ez a zm\u011bna velikosti zabere jen n\u011bkolik minut:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Nahrajte obr\u00e1zek",
+          "description": "P\u0159et\u00e1hn\u011bte soubor do vyzna\u010den\u00e9 oblasti nebo jej vyberte ze za\u0159\u00edzen\u00ed. Podporovan\u00e9 form\u00e1ty jsou JPG, PNG a WebP."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "2. Vyberte pom\u011br stran",
+          "description": "Vyberte p\u0159ednastaven\u00fd form\u00e1t pro konkr\u00e9tn\u00ed platformu (Instagram, Facebook, LinkedIn, YouTube) nebo zadejte vlastn\u00ed rozm\u011bry \u0161\u00ed\u0159ky a v\u00fd\u0161ky."
+        },
+        {
+          "icon": "RiDragMoveLine",
+          "title": "3. Upravte oblast",
+          "description": "P\u0159esu\u0148te a zm\u011b\u0148te velikost r\u00e1me\u010dku o\u0159ezu. Obr\u00e1zek se zobrazuje v re\u00e1ln\u00e9m \u010dase, tak\u017ee vid\u00edte v\u00fdsledek okam\u017eit\u011b."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. St\u00e1hn\u011bte v\u00fdsledek",
+          "description": "Klikn\u011bte na tla\u010d\u00edtko sta\u017een\u00ed. O\u0159\u00edzan\u00fd obr\u00e1zek je dostupn\u00fd ve form\u00e1tu PNG nebo JPG."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "P\u0159ednastaven\u00e9 form\u00e1ty pro soci\u00e1ln\u00ed s\u00edt\u011b",
+      "description": "Editor nab\u00edz\u00ed p\u0159ednastaven\u00e9 form\u00e1ty pro nejpopul\u00e1rn\u011bj\u0161\u00ed platformy:",
+      "grid": "three",
+      "items": [
+        { "icon": "RiInstagramLine", "title": "Instagram", "description": "\u010ctverec (1:1), story a reels (9:16), na \u0161\u00ed\u0159ku (1.91:1), na v\u00fd\u0161ku (4:5)." },
+        { "icon": "RiFacebookLine", "title": "Facebook", "description": "Ob\u00e1lka (820\u00d7312), p\u0159\u00edsp\u011bvek (1200\u00d7630), story (1080\u00d71920), profilov\u00e1 fotka (1:1)." },
+        { "icon": "RiLinkedinLine", "title": "LinkedIn", "description": "Ob\u00e1lka (1584\u00d7396), p\u0159\u00edsp\u011bvek (1200\u00d71200), profilov\u00e1 fotka (1:1)." },
+        { "icon": "RiYoutubeLine", "title": "YouTube", "description": "N\u00e1hledov\u00fd obr\u00e1zek (1280\u00d7720), banner kan\u00e1lu (2560\u00d71440)." },
+        { "icon": "RiTwitterXLine", "title": "X (Twitter)", "description": "P\u0159\u00edsp\u011bvek (1600\u00d7900), hlavi\u010dka (1500\u00d7500), profilov\u00e1 fotka (1:1)." },
+        { "icon": "RiImageLine", "title": "Vlastn\u00ed", "description": "Zadejte libovolnou \u0161\u00ed\u0159ku a v\u00fd\u0161ku v pixelech nebo vyberte libovoln\u00fd pom\u011br stran." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kdo pot\u0159ebuje editor obr\u00e1zk\u016f?",
+      "description": "Tento n\u00e1stroj je u\u017eite\u010dn\u00fd pro ka\u017ed\u00e9ho, kdo pracuje s obr\u00e1zky:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiMegaphoneLine",
+          "title": "Spr\u00e1vci soci\u00e1ln\u00edch s\u00edt\u00ed",
+          "description": "P\u0159ipravte obr\u00e1zky se spr\u00e1vn\u00fdm pom\u011brem stran pro ka\u017edou platformu bez pot\u0159eby grafick\u00e9ho softwaru."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Majitel\u00e9 e-shop\u016f",
+          "description": "O\u0159\u00edzn\u011bte produktov\u00e9 fotky na stejn\u00fd pom\u011br stran pro profesion\u00e1ln\u00ed vzhled v kataloz\u00edch."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Blogge\u0159i",
+          "description": "P\u0159ipravte hlavi\u010dkov\u00e9 obr\u00e1zky a fotky do \u010dl\u00e1nk\u016f se spr\u00e1vn\u00fdm pom\u011brem stran."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Weboví v\u00fdvoj\u00e1\u0159i",
+          "description": "Rychle o\u0159\u00edzn\u011bte obr\u00e1zky na vlastn\u00ed rozm\u011bry bez otev\u00edr\u00e1n\u00ed grafick\u00e9ho softwaru."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "\u010c\u00edm je tento editor obr\u00e1zk\u016f v\u00fdjime\u010dn\u00fd?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Lok\u00e1ln\u00ed zpracov\u00e1n\u00ed v prohl\u00ed\u017ee\u010di",
+          "description": "Obr\u00e1zky se neodes\u00edlaj\u00ed na \u017e\u00e1dn\u00fd server. Ve\u0161ker\u00e9 zpracov\u00e1n\u00ed prob\u00edh\u00e1 na va\u0161em za\u0159\u00edzen\u00ed."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "P\u0159ednastaven\u00e9 form\u00e1ty pro soci\u00e1ln\u00ed s\u00edt\u011b",
+          "description": "Vyberte p\u0159ednastaven\u00fd form\u00e1t pro Instagram, Facebook, LinkedIn, YouTube nebo X \u2013 bez nutnosti pamatovat si rozm\u011bry."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "Vlastn\u00ed rozm\u011bry",
+          "description": "Zadejte libovolnou \u0161\u00ed\u0159ku a v\u00fd\u0161ku v pixelech nebo vyberte vlastn\u00ed pom\u011br stran."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "N\u00e1hled v re\u00e1ln\u00e9m \u010dase",
+          "description": "Zm\u011bny jsou vid\u011bt okam\u017eit\u011b \u2013 m\u016f\u017eete experimentovat, dokud nedos\u00e1hnete nejlep\u0161\u00edho v\u00fdsledku."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "\u010casto kladen\u00e9 ot\u00e1zky o editoru obr\u00e1zk\u016f",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Vy\u017eaduje editor registraci?",
+          "answer": "Ne. N\u00e1stroj je zcela zdarma a nevy\u017eaduje p\u0159ihl\u00e1\u0161en\u00ed ani registraci. Obr\u00e1zek se zpracov\u00e1v\u00e1 ve va\u0161em prohl\u00ed\u017ee\u010di \u2013 neodes\u00edl\u00e1 se na \u017e\u00e1dn\u00fd server.",
+          "answerSchemaText": "Ne. N\u00e1stroj je zdarma a nevy\u017eaduje registraci. Obr\u00e1zek se zpracov\u00e1v\u00e1 v prohl\u00ed\u017ee\u010di."
+        },
+        {
+          "question": "Jak\u00e9 form\u00e1ty obr\u00e1zk\u016f jsou podporov\u00e1ny?",
+          "answer": "Editor podporuje JPG, PNG a WebP. O\u0159\u00edzan\u00fd obr\u00e1zek lze st\u00e1hnout ve form\u00e1tu PNG nebo JPG.",
+          "answerSchemaText": "JPG, PNG a WebP. Sta\u017een\u00ed ve form\u00e1tu PNG nebo JPG."
+        },
+        {
+          "question": "Mohu zadat vlastn\u00ed rozm\u011bry v pixelech?",
+          "answer": "Ano. Krom\u011b p\u0159ednastaven\u00fdch form\u00e1t\u016f pro soci\u00e1ln\u00ed s\u00edt\u011b m\u016f\u017eete zadat libovolnou \u0161\u00ed\u0159ku a v\u00fd\u0161ku v pixelech nebo zvolit vlastn\u00ed pom\u011br stran pro o\u0159ez.",
+          "answerSchemaText": "Ano. M\u016f\u017eete zadat vlastn\u00ed rozm\u011bry v pixelech nebo vlastn\u00ed pom\u011br stran."
+        },
+        {
+          "question": "Odes\u00edl\u00e1 se obr\u00e1zek na server?",
+          "answer": "Ne. Ve\u0161ker\u00e9 zpracov\u00e1n\u00ed prob\u00edh\u00e1 ve va\u0161em prohl\u00ed\u017ee\u010di. Obr\u00e1zek se neukl\u00e1d\u00e1 a neodes\u00edl\u00e1 nikam. Po zav\u0159en\u00ed str\u00e1nky se ve\u0161ker\u00e1 data sma\u017eou z pam\u011bti.",
+          "answerSchemaText": "Ne. Obr\u00e1zek se zpracov\u00e1v\u00e1 v prohl\u00ed\u017ee\u010di. Neodes\u00edl\u00e1 se na \u017e\u00e1dn\u00fd server."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Objevte dal\u0161\u00ed n\u00e1stroje" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

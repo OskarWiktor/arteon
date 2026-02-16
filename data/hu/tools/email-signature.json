@@ -1,0 +1,402 @@
+{
+  "toolKey": "emailSignature",
+  "locale": "hu",
+  "metadata": {
+    "title": "Ingyenes e-mail aláírás generátor – HTML a Gmailhez",
+    "description": "Készítsen professzionális HTML e-mail aláírást programozás és kódolás nélkül. Adjon hozzá adatokat, logót és közösségi média linkeket. Ingyenes, fiók nélkül.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
+    "path": "/hu/eszkozok/ingyenes-email-alairas-generator"
+  },
+  "hero": {
+    "title": "Készítsen professzionális HTML e-mail aláírást",
+    "description": "Építsen professzionális e-mail aláírást percek alatt. Adja meg adatait, válasszon színeket, és másolja a kész HTML kódot a Gmailbe, Outlookba vagy bármely e-mail kliensbe.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/ingyenes-email-alairas-generator",
+      "label": "E-mail aláírás generátor"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Ingyenes e-mail aláírás generátor",
+      "alternateName": ["HTML e-mail aláírás generátor", "E-mail aláírás készítő", "E-mail lábléc generátor"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "EmailSignatureGenerator",
+      "description": "Ingyenes HTML e-mail aláírás generátor. Adjon hozzá kapcsolattartói adatokat, CTA linket és közösségi média profilokat, majd másolja a kész kódot a Gmailbe, Outlookba és más e-mail kliensekbe.",
+      "featureList": [
+        "Kapcsolattartói adatok (név, beosztás, cég)",
+        "Telefon, e-mail és weboldal URL",
+        "Logó vagy profilkép forma- és méretbeállításokkal",
+        "Közösségi média ikonok (12 platform: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
+        "Testreszabható színek (szöveg, kiemelés, háttér)",
+        "Egyedi szövegstílus minden aláírás elemhez",
+        "CTA gomb egyedi szöveggel és linkkel",
+        "Elválasztó vonal stílusa (stílus, vastagság, szín)",
+        "Élő aláírás előnézet háttérváltással (világos, sötét, sakktábla)",
+        "HTML forráskód előnézet modálban",
+        "HTML kód másolása vágólapra",
+        "Aláírás letöltése HTML fájlként",
+        "Konfiguráció exportálása és importálása JSON fájlként",
+        "Kompatibilis Gmail, Outlook, Apple Mail alkalmazásokkal",
+        "Ingyenes eszköz, bejelentkezés nélkül"
+      ]
+    },
+    "howTo": {
+      "name": "Hogyan használja az e-mail aláírás generátort",
+      "description": "Hogyan készítsen professzionális HTML e-mail aláírást az ingyenes Arteon generátorral.",
+      "totalTime": "PT5M",
+      "steps": [
+        {
+          "name": "Válasszon aláírás elrendezést",
+          "text": "Válasszon a nyolc elérhető elrendezés közül: Szabványos, Felső sáv, Címkék balra, Középre igazított, Kompakt, Két oszlop, Minimalista vagy Alsó sáv."
+        },
+        {
+          "name": "Töltse ki a kapcsolattartói adatokat",
+          "text": "Az Adatok fülben adja meg nevét, beosztását, cégét, e-mail címét, telefonszámát és weboldal URL-jét. Opcionálisan adjon hozzá avatart vagy logót - a kép URL megadása után választhat formát (kerek, lekérekített, négyzet) és méretet (40, 56 vagy 72 px)."
+        },
+        {
+          "name": "Adjon hozzá CTA gombokat",
+          "text": "A Gombok fülben adjon hozzá szöveget és URL-t a főgombhoz. Opcionálisan adjon hozzá második gombot outline stílussal és válassza ki a gombok lekérekítését."
+        },
+        {
+          "name": "Adjon hozzá közösségi média linkeket",
+          "text": "A Közösségi Média fülben illessze be a profiljai URL-jeit. Támogatott platformok: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram és Pinterest."
+        },
+        {
+          "name": "Szabályozza a megjelenést",
+          "text": "A Megjelenés fülben válasszon színtémát, betűtípust és szövegméretet. A Szövegstílus fülben változtassa meg az egyes elemek színeit és méreteit."
+        },
+        {
+          "name": "Adjon hozzá jogi nyilatkozatot és konfigurálja az elválasztót",
+          "text": "A Jogi nyilatkozat fülben adja meg a jogi szöveget és konfigurálja az elválasztó vonalat - válasszon stílust (folytonos, szaggatott, pontozott), vastagságot (1-3 px) és színt."
+        },
+        {
+          "name": "Előnézet és aláírás másolása",
+          "text": "Az aláírás előnézete világos, sötét vagy sakktábla háttéren érhető el. Az Aláírás másolása (Gmail / Outlook) gomb a kész kódot a vágólapra másolja. Szintén elérhető: HTML kód másolása, Letöltés HTML-ként, HTML kód megtekintése és konfiguráció exportálása JSON fájlként."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miért legyen professzionális e-mail aláírása?",
+      "html": "<p class=\"text-mid\">Az e-mail aláírás (más néven e-mail lábléc) egy információs blokk minden elküldött üzenet végén. Tartalmazza a kapcsolattartói adatokat, beosztást, cégnevet és gyakran egy linket a weboldalra vagy találkozónaptárra.</p><p class=\"text-mid mt-3\">A címzettnek nem kell a korábbi üzenetekben keresnie a telefonszámot - minden adat könnyen elérhető. A professzionális e-mail aláírás azt is mutatja, hogy odafigyel a részletekre és következetes cégképet tart fenn az üzleti levelezésben.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan használja az e-mail aláírás generátort",
+      "description": "Professzionális e-mail aláírás készítése mindössze néhány percet vesz igénybe:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Adja meg az adatokat",
+          "description": "Töltse ki a nevét, beosztását, cégét és elérhetőségeit."
+        },
+        {
+          "title": "2. Szabályozza a megjelenést",
+          "description": "Válasszon elrendezést, színeket, adjon hozzá logót és közösségi média linkeket."
+        },
+        {
+          "title": "3. Másolja a kódot",
+          "description": "Az Aláírás másolása gomb a kész kódot a vágólapra másolja. Egyszerűen illessze be a Gmailbe, Outlookba vagy más e-mail kliensbe."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hogyan töltse ki az aláírás adatait",
+      "html": "<p class=\"text-mid\">Az <strong>Adatok</strong> fül tartalmazza az összes kitölthető mezőt. Csak kettő kötelező: a név és az e-mail cím. A többi mező opcionális, és csak kitöltés esetén jelenik meg az aláírásban.</p><h3 class=\"h5 mt-6 mb-3\">Mezők az Adatok fülben</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Sor a név felett</strong> - kiegészítő szöveg a név felett. Megadhatja a cégnevet, szlogent vagy mottót.</li><li><strong>Avatar / logó (kép URL)</strong> - URL egy profilképhez vagy céglogóhoz. A képnek négyzetesnek kell lennie (min. 120×120 px) és nyilvánosan elérhetőnek. Az URL beillesztése után további beállítások jelennek meg: <strong>Avatar forma</strong> (kerek, lekérekített vagy négyzet) és <strong>Avatar méret</strong> (kicsi - 40 px, közepes - 56 px, nagy - 72 px).</li><li><strong>Teljes név</strong> - kötelező mező. Adja meg teljes nevét.</li><li><strong>Névcímke</strong> - rövid szöveg a név mellett, pl. névmások vagy rövidített cím.</li><li><strong>Beosztás</strong> - szerepe a cégben, pl. Értékesítési Vezető, Marketing Szakember.</li><li><strong>Cégnév</strong> - a képviselt szervezet neve.</li><li><strong>Kiegészítő sor</strong> - rövid leírás arról, mit csinál vagy mit kínál.</li><li><strong>E-mail</strong> - kötelező mező. Adja meg üzleti e-mail címét.</li><li><strong>Telefon</strong> - elérhetőségi szám. Bármilyen formátumban, pl. +36 1 234 5678.</li><li><strong>Weboldal</strong> - weboldalának teljes URL-je, https://-vel kezdődően.</li><li><strong>Cím</strong> - a cég fizikai címe (utca, város, irányítószám).</li><li><strong>Hivatalos adatok</strong> - adószám, engedélyszám vagy más, az iparágban megkövetelt adatok.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Aláírás elrendezések - melyiket válassza?",
+      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Aláírás elrendezés</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Szabványos</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Kiemelő sáv</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Felső sáv</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Címkék balra</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Középre igazított</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">Kovács János</p><p class=\"text-mid text-sm\">Webfejlesztő</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">janos@pelda.hu</p><p class=\"text-mid\">+36 1 234 5678</p></div></div></div>",
+      "html": "<p class=\"text-mid\">A generátor nyolc kész elrendezést kínál. Mindegyik ugyanazt az információt más módon mutatja be.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Szabványos</strong> - klasszikus függőleges elrendezés, a legtöbb esethez megfelelő.</li><li><strong>Felső sáv</strong> - vízszintes sáv választja el az aláírást a tartalomtol.</li><li><strong>Címkék balra</strong> - két oszlop: címkék és értékek.</li><li><strong>Középre igazított</strong> - formális megjelenés, középre igazított tartalom.</li><li><strong>Kompakt</strong> - minden egy sorban, minimális magasság.</li><li><strong>Két oszlop</strong> - adatok balra, elérhetőségek jobbra.</li><li><strong>Minimalista</strong> - csak a legfontosabb információk.</li><li><strong>Alsó sáv</strong> - színes sáv elérhetőségekkel az aláírás alján.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hogyan adjon hozzá CTA gombokat",
+      "html": "<p class=\"text-mid\">A CTA gomb (call-to-action) egy kattintható elem, amely a címzettet egy választott oldalra irányítja. Lehet link találkozónaptárhoz, kapcsolatfelvételi űrlaphoz vagy ajánlathoz. A generátor két CTA gomb hozzáadását teszi lehetővé.</p><h3 class=\"h5 mt-6 mb-3\">Főgomb</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Nyissa meg a <strong>Gombok</strong> fület a szerkesztőben.</li><li>A <strong>Főgomb</strong> részben adja meg a szöveget, amelyet a címzett látni fog, pl. Kérjen ingyenes konzultációt.</li><li>A <strong>CTA link</strong> mezőbe illessze be a teljes URL-t. A címnek https://-vel kell kezdődnie.</li></ol><h3 class=\"h5 mt-6 mb-3\">Másodlagos gomb</h3><p class=\"text-mid\">Hozzáadhat második CTA gombot outline stílussal (átlátszó háttér szegéllyel). Töltse ki a mezőket a <strong>Másodlagos gomb</strong> részben ugyanolyan módon, mint a főgombnál.</p><h3 class=\"h5 mt-6 mb-3\">Gomb lekérekítés</h3><p class=\"text-mid\">A Gombok fül alján találja a <strong>Gomb lekérekítés</strong> beállítást. Három változat érhető el: Nincs (éles sarkok), Enyhe (ennyhén lekérekített) vagy Teljes (ovális gomb).</p><p class=\"text-mid mt-4\">Ha mindkét mezőt üresen hagyja, a gomb nem jelenik meg az aláírásban. Ha csak egy mezőt tölt ki, a gomb sem lesz látható - szöveg és link egyaránt szükséges.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hogyan adjon hozzá közösségi média linkeket",
+      "html": "<p class=\"text-mid\">A <strong>Közösségi Média</strong> fülben linkeket adhat profiljaihóz. A generátor tizenkét platformot támogat: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (korábban Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram és Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Hogyan kell</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Nyissa meg a <strong>Közösségi Média</strong> fület a szerkesztőben.</li><li>Minden platform mellett URL mezőt talál. Illessze be a teljes linket a profiljához, pl. https://www.linkedin.com/in/azprofilja.</li><li>Csak a szükséges mezőket töltse ki. Az üres mezők nem jelennek meg az aláírásban.</li></ol><h3 class=\"h5 mt-6 mb-3\">Közösségi média ikonok</h3><p class=\"text-mid\">A Közösségi Média fül alján találja az <strong>Ikonok megjelenítése a szolgáltatásnevek mellett</strong> beállítást. Bekapcsolásakor a linkek színes SVG ikonokként jelennek meg nevek helyett.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Ikon méret</strong> - lehetőségek: Kicsi (16 px), Közepes (20 px) vagy Nagy (24 px).</li><li><strong>Ikon szín</strong> - Platform színek (alapértelmezett színek minden platformhoz), Kiemelő szín (egységes kiemelő szín) vagy Szövegszín.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Megjelenés testreszabása",
+      "html": "<p class=\"text-mid\">A <strong>Megjelenés</strong> fülben testreszabhatja a színeket, betűtípust és az aláírás más vizuális elemeit.</p><h3 class=\"h5 mt-6 mb-3\">Színtémák</h3><p class=\"text-mid\">A fül tetején öt kész témát talál: Sötét, Kék, Lila, Zöld és Szürke. Egy témára kattintva automatikusan beállítja a kiemelő színt és a szövegszínt. Ez a leggyorsabb mód a következetes aláírás megjelenés elérésére.</p><h3 class=\"h5 mt-6 mb-3\">Színek</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Kiemelő szín</strong> - az oldalsó/felső sávban, CTA gombban és linkekben használt. Bármely színt választhatja a palettából.</li><li><strong>Szövegszín</strong> - az aláírás összes szövegének színe (név, elérhetőségek, jogi nyilatkozat).</li><li><strong>Háttérszín</strong> - a teljes aláírás háttérszíne. Alapértelmezésben fehér, de megváltoztatható.</li></ul><h3 class=\"h5 mt-6 mb-3\">Betűtípus és méret</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Betűtípus</strong> - lehetőségek: Arial, Verdana, Tahoma, Trebuchet MS és Georgia. Mindegyik e-mail-biztonságos és helyesen jelenik meg a címzettnél.</li><li><strong>Szövegméret</strong> - három lehetőség: Kicsi (12 px), Szabványos (14 px) és Nagyobb (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">További beállítások</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Aláírás szegély</strong> - szegélyt adhat az aláíráshoz bármely oldalkombináció kiválasztásával (bal, jobb, felső, alsó). Az összes oldal kiválasztása automatikusan teljes szegélyt állít be. A szegély a kiemelő színt használja.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Szövegstílus - az egyes elemek színei és méretei",
+      "html": "<p class=\"text-mid\">A <strong>Szövegstílus</strong> fülben egyedileg testreszabhatja az aláírás minden szöveges elemének színét és betűméretét.</p><h3 class=\"h5 mt-6 mb-3\">Elérhető elemek</h3><p class=\"text-mid\">Csak azok az elemek láthatóak, amelyek jelenleg szerepelnek az aláírásban (ki vannak töltve). Minden elemhez beállíthatja:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Név</strong> - alapértelmezés szerint a kiemelő színben jelenik meg.</li><li><strong>Beosztás</strong> - szerepe a cégben.</li><li><strong>Cég</strong> - a szervezet neve.</li><li><strong>Kapcsolattartó adatok</strong> - e-mail, telefon, weboldal (címkék).</li><li><strong>Közösségi média</strong> - profil linkek.</li><li><strong>Jogi nyilatkozat</strong> - jogi szöveg az aláírás alján.</li></ul><h3 class=\"h5 mt-6 mb-3\">Hogyan változtassa meg a színt?</h3><p class=\"text-mid\">Minden elem mellett színválasztó lehetőségeket talál. Kattintson egy színes négyzetre a kiválasztásához. Egyedi színt is hozzáadhat a pluszjeles négyzetre kattintva - válasszon színt és kattintson a Mentés gombra. Az egyedi színek (maximum 8) megosztottak az összes elem között.</p><p class=\"text-mid mt-3\">A visszaállítás ikonnal ellátott gomb visszaállítja az elem alapértelmezett színét.</p><h3 class=\"h5 mt-6 mb-3\">Hogyan változtassa meg a méretet?</h3><p class=\"text-mid\">A második sorban méretszabályozót talál - és + gombokkal. Az érték az alap betűmérethez (a Megjelenés fülben beállított) viszonyított eltolást mutatja. Tartomány: -4-től +4 pixelig.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Elemek közötti távolságok",
+      "html": "<p class=\"text-mid\">A <strong>Távolságok</strong> fülben pontosan szabályozhatja az aláírás egyes elemei közötti távolságokat.</p><h3 class=\"h5 mt-6 mb-3\">Aláírás belső margója</h3><p class=\"text-mid\">A fül tetején található a belső margó beállítása - vagyis a távolság az aláírás tartalma és szélei között. Három érték közül választhat: 8 px (kicsi), 16 px (közepes) és 24 px (nagy).</p><h3 class=\"h5 mt-6 mb-3\">Elemek közötti távolságok</h3><p class=\"text-mid\">A margó alatt az egyes aláírás elemek szabályozóit találja. Minden szabályozóhoz + és - gombok tartoznak a távolság növeléséhez vagy csökkentéséhez. Csak az aktuálisan az aláírásban szereplő elemek beállításai láthatóak.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Név után</strong> - távolság a név sor alatt.</li><li><strong>Beosztás / cég után</strong> - távolság a beosztás és cégnév sor alatt.</li><li><strong>Kiegészítő sor után</strong> - távolság a leírás alatt (ha ki van töltve).</li><li><strong>Kapcsolattartó adatok után</strong> - távolság az e-mail, telefon és weboldal alatt.</li><li><strong>Közösségi média után</strong> - távolság a profil linkek alatt.</li><li><strong>CTA gomb után</strong> - távolság a gomb alatt (ha be van kapcsolva).</li><li><strong>Jogi nyilatkozat előtt</strong> - távolság a jogi szöveg felett.</li></ul><p class=\"text-mid mt-4\">Ha töröl adatot egy mezőből (pl. törli a telefont), a megfelelő távolság beállítás automatikusan eltűnik a fülről.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jogi nyilatkozat - mikor érdemes hozzáadni?",
+      "html": "<p class=\"text-mid\">A <strong>Jogi nyilatkozat</strong> fülben jogi szöveget adhat hozzá, amely az aláírás alján kisebb betűmérettel jelenik meg.</p><h3 class=\"h5 mt-6 mb-3\">Mikor érdemes jogi nyilatkozatot hozzáadni?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Üzleti levelezés</strong> - információ az üzenet bizalmasságáról és kérés a törlésre téves kézbesítés esetén.</li><li><strong>Iparági követelmények</strong> - egyes iparágak (pl. jogi, orvosi, pénzügyi) meghatározott információkat követelnek meg minden üzenetben.</li><li><strong>Adatvédelem (GDPR)</strong> - információ a személyes adatok kezeléséről, ha a cég adatkezelő.</li></ul><p class=\"text-mid mt-4\">Alapértelmezés szerint a mező egy példa bizalmassági szöveget tartalmaz. Szerkesztheti, törölheti vagy saját nyilatkozattal helyettesítheti. Ha a mezőt üresen hagyja, a jogi nyilatkozat nem jelenik meg az aláírásban.</p><h3 class=\"h5 mt-6 mb-3\">Elválasztó vonal</h3><p class=\"text-mid\">A szövegmező alatt található az <strong>Elválasztó vonal megjelenítése</strong> beállítás. Kapcsolja be egy vízszintes vonal hozzáadásához a kapcsolattartó adatok és a jogi nyilatkozat között.</p><p class=\"text-mid mt-3\">A vonal bekapcsolása után további testreszabási lehetőségek jelennek meg:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Vonal stílus</strong> - lehetőségek: folytonos (solid), szaggatott (dashed) vagy pontozott (dotted).</li><li><strong>Vonal vastagság</strong> - három lehetőség: 1 px, 2 px vagy 3 px.</li><li><strong>Vonal szín</strong> - alapértelmezés szerint szürke (#e5e7eb). Bármely színt választhatja a palettából, vagy visszaállíthatja az alapértelmezettet az Alapértelmezett gombbal.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Automatikus mentés és beállítások visszaállítása",
+      "html": "<p class=\"text-mid\">A generátor automatikusan elmenti az összes beállítást a böngésző memóriájában (localStorage). Az oldal frissítése vagy az eszköz újbóli megnyitása után az adatok, elrendezés, színek és minden más beállítás visszaáll.</p><h3 class=\"h5 mt-6 mb-3\">Hogyan működik az automatikus mentés?</h3><p class=\"text-mid\">Minden változás (szöveg, szín, elrendezés, távolságok) azonnal mentésre kerül a böngésző memóriájában. A mentés automatikusan történik a háttérben - gombok megnyomása nélkül.</p><h3 class=\"h5 mt-6 mb-3\">Hogyan állítsa vissza a beállításokat?</h3><p class=\"text-mid\">Az aláírás előnézete alatt található a <strong>Megjelenés visszaállítása</strong> gomb. Kattintás után egy megerősítő ablak jelenik meg. A visszaállítás jóváhagyása az összes adatot és beállítást az alapértelmezett értékekre állítja vissza (Kovács János példaadatai). Ez a művelet nem vonható vissza.</p><h3 class=\"h5 mt-6 mb-3\">Konfiguráció exportálása és importálása</h3><p class=\"text-mid\">Az aláírás előnézete alatt két további gombot talál: <strong>Beállítások exportálása</strong> és <strong>Beállítások importálása</strong>. Az exportálás az összes adatot, színt, elrendezést, távolságot és szövegstílust JSON fájlba menti. Az importálás lehetővé teszi egy korábban mentett konfiguráció betöltését fájlból.</p><p class=\"text-mid mt-3\">Ez a funkció különösen hasznos, ha az aláírás konfigurációját számítógépek között szeretné áthelyezni, megosztani a beállításokat kollégáival, vagy biztonsági másolatot készíteni a beállításairól visszaállítás előtt.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan másolja az aláírást a Gmailbe vagy Outlookba",
+      "description": "Amikor az aláírás kész, mindössze néhány lépés szükséges az e-mail klienshez való hozzáadáshoz:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiClipboardLine",
+          "title": "1. Másolja a kódot",
+          "description": "Az Aláírás másolása (Gmail / Outlook) gomb az aláírást formázott HTML-ként a vágólapra másolja, készen a beillesztésre."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "2. Nyissa meg az aláírás beállításokat",
+          "description": "Gmailben: Beállítások → Összes beállítás megtekintése → Aláírás. Outlookben: Fájl → Beállítások → Levelezés → Aláírások."
+        },
+        {
+          "icon": "RiSaveLine",
+          "title": "3. Illessze be és mentse",
+          "description": "Az aláírás mezőben használja a Ctrl+V (Windows) vagy Cmd+V (Mac) billentyűkombinációt. Az aláírás minden színnel és formázással megjelenik. Mentse a változtatásokat."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Aláírás előnézet és exportálási lehetőségek",
+      "html": "<p class=\"text-mid\">Az előnézeti panel a szerkesztő jobb oldalán jelenik meg, és minden változásnál automatikusan frissül. Az előnézet rögzített (sticky), így görgetés közben is látható marad.</p><h3 class=\"h5 mt-6 mb-3\">Előnézeti háttér váltása</h3><p class=\"text-mid\">Az előnézet felett három háttérváltó gombot talál: <strong>Világos</strong> (alapértelmezett szürke háttér), <strong>Sötét</strong> (sötét háttér, hasznos az olvashatóság ellenőrzéséhez sötét háttéren) és <strong>Sakktábla</strong> (sakktábla minta, lehetővé teszi az átlátszóság és az aláírás széleinek megtekintését).</p><h3 class=\"h5 mt-6 mb-3\">Művelet gombok</h3><p class=\"text-mid\">Az előnézet alatt több gombot talál:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Aláírás másolása (Gmail / Outlook)</strong> - az aláírást formázott HTML-ként a vágólapra másolja. Közvetlenül az aláírás beállításokba illesztheti.</li><li><strong>HTML kód másolása</strong> - a nyers HTML kódot a vágólapra másolja. Hasznos HTML szerkesztőbe vagy CMS rendszerbe való beillesztéshez.</li><li><strong>Letöltés HTML-ként</strong> - az aláírás kódját .html fájlként menti a lemezre. Hasznos archiváláshoz vagy fejlesztőnek való átadáshoz.</li><li><strong>HTML kód megtekintése</strong> - modális ablakot nyit az aláírás forráskódjával. Áttekintheti és közvetlenül az ablakból másolhatja a kódot.</li><li><strong>Beállítások exportálása</strong> - a teljes aláírás konfigurációt (adatok, színek, elrendezés, távolságok, stílusok) JSON fájlba menti.</li><li><strong>Beállítások importálása</strong> - konfigurációt tölt be JSON fájlból. Az összes beállítás automatikusan alkalmazásra kerül.</li><li><strong>Megjelenés visszaállítása</strong> - az összes adatot és beállítást az alapértelmezett értékekre állítja vissza (megerősítés után).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kinek szól az e-mail aláírás készítő?",
+      "description": "Az e-mail aláírás eszköz hasznos mindenkinek, aki üzleti e-maileket küld:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBriefcaseLine",
+          "title": "Vállalkozók és szabaduszók",
+          "description": "Professzionális aláírás minden üzenetben tervező alkalmazatlanása nélkül."
+        },
+        {
+          "icon": "RiTeamLine",
+          "title": "Céges csapatok",
+          "description": "Minden alkalmazott létrehozza saját aláírását azonos stílusban. Következetes arculat az egész cégen belül."
+        },
+        {
+          "icon": "RiHandCoinLine",
+          "title": "Értékesítési képviselők",
+          "description": "CTA gomb naptárra vagy ajánlatra mutató linkkel növeli a találkozó lefoglalásának esélyét."
+        },
+        {
+          "icon": "RiScales3Line",
+          "title": "Ügyvédek, könyvelők, orvosok",
+          "description": "Jogi nyilatkozat, engedélyszám, adószám vagy más, az iparágban megkövetelt adatok hozzáadásának lehetősége."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt a HTML e-mail aláírás generátort?",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Nyolc aláírás elrendezés",
+          "description": "Szabványos, felső sáv, címkék balra, középre igazított, kompakt, két oszlop, minimalista és alsó sáv."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Automatikus mentés a böngészőben",
+          "description": "Minden változás automatikusan mentődik a böngésző memóriájába. Az oldal frissítése után az aláírás elérhető marad."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Konfiguráció export és import",
+          "description": "A teljes aláírás konfiguráció JSON fájlként exportálható és megoszlató kollégákkal."
+        },
+        {
+          "icon": "RiAppsLine",
+          "title": "12 közösségi média platform",
+          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram és Pinterest."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Haladó testreszabás",
+          "description": "Avatar forma és méret, vonal stílus, egyedi szövegszínek és méretek."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Több export lehetőség",
+          "description": "HTML másolás, fájl letöltés, forráskód előnézet, JSON konfiguráció export/import."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Adatvédelem",
+          "description": "Adatok nem kerülnek szerverre. A generátor teljes egészében a böngészőben működik."
+        },
+        {
+          "icon": "RiMailCheckLine",
+          "title": "Kompatibilitás",
+          "description": "A generált HTML kód működik Gmailben, Outlookben, Apple Mailben és Thunderbirdben."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Élő előnézet",
+          "description": "Minden változás azonnal látható világos, sötét vagy sakktábla háttéren."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések az e-mail aláírás generátorról",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Az aláírás működik Gmailben, Outlookben és Apple Mailben?",
+          "answer": "Igen. A generátor által létrehozott aláírások HTML táblázatokat használnak, amelyek helyesen jelennek meg minden népszerű e-mail kliensben: Gmail, Outlook (asztali és webes), Apple Mail, Thunderbird. Az elrendezés alkalmazkodik különböző eszközökhöz, beleértve az okostelefonokat."
+        },
+        {
+          "question": "Hozzáadhatok céglogót?",
+          "answer": "Igen. Az Adatok fülben illessze be egy kép URL-jét (logó vagy profilkép). A képnek négyzetesnek kell lennie (min. 120×120 px) és nyilvánosan elérhetőnek. Az URL beillesztése után megjelennek a forma (kerek, lekérekített, négyzet) és méret (40, 56 vagy 72 px) beállítások."
+        },
+        {
+          "question": "Hogyan másolom az aláírást e-mail kliensbe?",
+          "answer": "Az előnézet alatti Aláírás másolása (Gmail / Outlook) gomb az aláírást formázott HTML-ként a vágólapra másolja. A Gmail vagy Outlook aláírás beállításokban egyszerűen használja a Ctrl+V (Windows) vagy Cmd+V (Mac) kombinációt."
+        },
+        {
+          "question": "Használhatom a generátort egész csapatnak?",
+          "answer": "Igen. A generátor nem igényel bejelentkezést vagy regisztrációt. A csapat minden tagja megnyithatja az eszközt, kitöltheti adatait és lemásolhatja a kész aláírást. A vizuális következetesség érdekében állapodjanak meg közös beállításokban: ugyanaz az elrendezés, színtéma és betűtípus. A konfigurációt JSON fájlként is exportálhatja és megoszthatja kollégáival - nekik csak importálniuk kell a fájlt és csak a személyes adataikat kell megváltoztatniuk."
+        },
+        {
+          "question": "Hozzáadhatok egyedi közösségi média ikonokat?",
+          "answer": "A generátor beépített SVG ikonokat kínál tizenkét platformhoz: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram és Pinterest. Kapcsolja be az Ikonok megjelenítése opciót a Közösségi Média fülben. Választhat ikon méretet és színt (platform színek, kiemelő szín vagy szövegszín)."
+        },
+        {
+          "question": "A másolás gomb inaktív - miért?",
+          "answer": "Az aláírás másolásához töltsön ki legalább két mezőt: név és e-mail cím. Ellenőrizze, hogy mindkét mező ki van-e töltve."
+        },
+        {
+          "question": "Az avatar vagy logó nem jelenik meg - mit tegyek?",
+          "answer": "A képnek nyilvánosan elérhetőnek kell lennie. Az URL-nek közvetlenül egy képfájlra kell mutatnia (.jpg, .png vagy .webp végződéssel). A Google Drive-ról vagy Dropboxról származó képek speciális megosztási linket igényelnek."
+        },
+        {
+          "question": "Az aláírás másképp néz ki a címzettnél - miért?",
+          "answer": "Különböző e-mail kliensek (Gmail, Outlook, Apple Mail) enyhén eltérően jeleníthetik meg a HTML-t. A generátor biztonságos stílusokat használ, amelyek a legtöbb programban működnek. Ha nagy különbségeket lát, győződjön meg róla, hogy Ctrl+V-vel illeszti be, nem Beillesztés formázás nélkül módban."
+        },
+        {
+          "question": "A CTA gomb nem jelenik meg - mit tegyek?",
+          "answer": "A gombhoz mindkét mező szükséges: szöveg és link. Ellenőrizze, hogy a Gombok fülben mindkét mező ki van töltve, és az URL https://-vel kezdődik."
+        },
+        {
+          "question": "Hogyan exportáljam vagy importáljam az aláírás beállításokat?",
+          "answer": "Az aláírás előnézete alatt találja a Beállítások exportálása és Beállítások importálása gombokat. Az exportálás a teljes konfigurációt (adatok, színek, elrendezés, távolságok, szövegstílusok) JSON fájlba menti. Az importálás betölti a konfigurációt fájlból és automatikusan alkalmazza az összes beállítást."
+        },
+        {
+          "question": "Hogyan tekintsem meg a generált aláírás forráskódját?",
+          "answer": "Az előnézet alatti HTML kód megtekintése gomb megnyit egy modált a teljes HTML forráskóddal. Áttekintheti és közvetlenül a modálból másolhatja a kódot. Alternatívaként a HTML kód másolása gomb a nyers kódot a vágólapra másolja, a Letöltés HTML-ként pedig fájlként menti."
+        },
+        {
+          "question": "Változtathatom az avatar formáját és méretét?",
+          "answer": "Igen. A kép URL beillesztése után az Adatok fülben további beállítások jelennek meg: Avatar forma (kerek, lekérekített, négyzet) és Avatar méret (kicsi - 40 px, közepes - 56 px, nagy - 72 px). A beállítások minden aláírás elrendezésben érvényesülnek."
+        },
+        {
+          "question": "Hogyan változtassam meg az elválasztó vonal stílusát?",
+          "answer": "A Jogi nyilatkozat fülben kapcsolja be az Elválasztó vonal megjelenítése opciót. További beállítások jelennek meg: vonal stílus (folytonos, szaggatott, pontozott), vastagság (1-3 px) és szín (alapértelmezésben szürke vagy bármely szín a palettából)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Fedezzen fel további eszközöket"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

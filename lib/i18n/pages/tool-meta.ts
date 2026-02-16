@@ -84,8 +84,30 @@ export function getToolSoftwareSchema(opts: {
     offers: {
       '@type': 'Offer',
       price: 0,
-      priceCurrency:
-        opts.locale === 'pl' ? 'PLN' : opts.locale === 'de' ? 'EUR' : opts.locale === 'es' ? 'EUR' : opts.locale === 'fr' ? 'EUR' : opts.locale === 'pt' ? 'EUR' : opts.locale === 'it' ? 'EUR' : 'USD',
+      priceCurrency: (() => {
+        const m: Record<string, string> = {
+          pl: 'PLN',
+          de: 'EUR',
+          es: 'EUR',
+          fr: 'EUR',
+          pt: 'EUR',
+          it: 'EUR',
+          ro: 'RON',
+          nl: 'EUR',
+          hu: 'HUF',
+          id: 'IDR',
+          vi: 'VND',
+          tr: 'TRY',
+          tl: 'PHP',
+          sw: 'TZS',
+          ms: 'MYR',
+          cs: 'CZK',
+          sv: 'SEK',
+          sq: 'ALL',
+          da: 'DKK',
+        };
+        return m[opts.locale] ?? 'USD';
+      })(),
     },
     potentialAction: {
       '@type': 'UseAction',

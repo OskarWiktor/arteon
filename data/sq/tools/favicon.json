@@ -1,0 +1,131 @@
+{
+  "toolKey": "favicon",
+  "locale": "sq",
+  "metadata": {
+    "title": "Gjenerues favicon falas – ICO dhe PNG nga një imazh",
+    "description": "Gjeneroni favicon.ico dhe ikona PNG nga një imazh i vetëm, në përputhje me kërkesat e shfletuesit dhe Lighthouse. Pa regjistrim, funksionon në shfletues.",
+    "ogImage": "/assets/tools/narzedzia-generator-favicon.webp",
+    "path": "/sq/mjetet/gjenerues-favicon-falas"
+  },
+  "hero": {
+    "title": "Gjeneroni favicon.ico dhe ikona PNG nga një imazh",
+    "description": "Ngarkoni një imazh dhe mjeti gjeneron favicon.ico dhe një grup të plotë ikonash PNG të nevojshme për shfletuesit, pajisjet mobile dhe Lighthouse.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-favicon.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/sq/mjetet", "label": "Mjetet" },
+    "third": { "href": "/sq/mjetet/gjenerues-favicon-falas", "label": "Gjenerues favicon" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Gjenerues favicon falas",
+      "alternateName": ["Gjenerues favicon.ico", "Gjenerues ikonash ueb", "Mjet favicon", "Gjenerues favicon nga imazhi"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "FaviconGenerator",
+      "description": "Gjenerues favicon falas. Ngarkoni një imazh dhe merrni favicon.ico dhe një grup të plotë ikonash PNG për shfletuesit, pajisjet mobile dhe PWA.",
+      "featureList": [
+        "Gjenerimi i favicon.ico (16×16, 32×32, 48×48 px)",
+        "Ikona PNG për shfletuesit (16×16 deri 512×512 px)",
+        "Apple Touch Icon (180×180 px)",
+        "Ikona Android/PWA (192×192, 512×512 px)",
+        "Ikona Microsoft (150×150, 310×310 px)",
+        "Prerje dhe ndryshim madhësie i imazhit burimor",
+        "Parashikim në kohë reale",
+        "Shkarkim i të gjitha ikonave në ZIP",
+        "Përpunim lokal në shfletues"
+      ]
+    },
+    "howTo": {
+      "name": "Si të gjeneroni favicon nga një imazh",
+      "description": "Si të gjeneroni favicon.ico dhe ikona PNG nga një imazh për shfletuesit dhe pajisjet mobile.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Ngarkoni imazhin", "text": "Tërhiqni dhe lëshoni skedarin në zonën e shënuar ose zgjidhni atë nga pajisja juaj. Formatet e mbështetura janë JPG, PNG, SVG dhe WebP." },
+        { "name": "Preni imazhin", "text": "Rregulloni zonën e prerjes për të zgjedhur pjesën e përshtatshme të imazhit për favicon." },
+        { "name": "Kontrolloni parashikimin", "text": "Shikoni si duket favicon në skedën e shfletuesit dhe në madhësi të ndryshme." },
+        { "name": "Shkarkoni ikonat", "text": "Shkarkoni favicon.ico dhe grupin e plotë të ikonave PNG në një skedar ZIP." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Çfarë është favicon dhe pse është e rëndësishme?",
+      "html": "<p class=\"text-mid\">Favicon është një ikonë e vogël që shfaqet në skedën e shfletuesit, në listën e faqeshënuesve dhe në ekranin fillestar të telefonit. Është një nga elementët e parë që përdoruesi sheh – edhe para se faqja të ngarkohet plotësisht.</p><p class=\"text-mid mt-3\">Një favicon profesionale ndërton njohjen e markës dhe e bën më të lehtë për përdoruesin të gjejë faqen tuaj midis shumë skedave të hapura. Mungesa e favicon mund të japë një përshtypje joprofesionale dhe të zvogëlojë besimin e vizitorëve.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Si të përdorni gjeneruesin e favicon",
+      "description": "Gjenerimi i favicon zgjat vetëm disa minuta:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Ngarkoni imazhin", "description": "Tërhiqni dhe lëshoni skedarin në zonën e shënuar ose zgjidhni atë nga pajisja juaj. Një imazh katror funksionon më mirë." },
+        { "title": "2. Preni dhe rregulloni", "description": "Rregulloni zonën e prerjes për të zgjedhur pjesën e përshtatshme. Shikoni si duket në madhësi të ndryshme." },
+        { "title": "3. Shkarkoni ikonat", "description": "Shkarkoni favicon.ico dhe grupin e plotë të ikonave PNG në një skedar ZIP. Të gjitha ikonat janë gati për përdorim." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Cilat ikona krijon gjeneruesi?",
+      "description": "Gjeneruesi krijon një grup të plotë ikonash të nevojshme për shfletuesit dhe pajisjet moderne:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "favicon.ico",
+          "description": "Skedar ICO që përmban tre madhësi (16×16, 32×32, 48×48 px). Mbështetet nga të gjithë shfletuesit, përfshirë ata më të vjetër."
+        },
+        { "icon": "RiChromeLine", "title": "Ikona shfletuesi (PNG)", "description": "Grup ikonash PNG për shfletuesit modernë: 16×16, 32×32, 48×48, 96×96 dhe 128×128 px." },
+        { "icon": "RiAppleLine", "title": "Apple Touch Icon", "description": "Ikonë 180×180 px për pajisjet iOS (iPhone, iPad). Shfaqet në ekranin fillestar pas shtimit të faqes." },
+        { "icon": "RiAndroidLine", "title": "Ikona Android/PWA", "description": "Ikona 192×192 dhe 512×512 px për Progressive Web Apps dhe pajisjet Android." },
+        { "icon": "RiWindowsLine", "title": "Ikona Microsoft", "description": "Ikona 150×150 dhe 310×310 px për panelet Windows dhe Microsoft Edge." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Çfarë e bën këtë gjenerues favicon të veçantë?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Përpunim lokal në shfletues", "description": "Imazhi nuk ngarkohet në asnjë server. I gjithë përpunimi bëhet në pajisjen tuaj." },
+        { "icon": "RiCheckboxCircleLine", "title": "Plotëson kërkesat e Lighthouse", "description": "Ikonat e gjeneruara plotësojnë kërkesat e Google Lighthouse për madhësinë dhe formatin." },
+        { "icon": "RiDevicesLine", "title": "Ikona për të gjitha pajisjet", "description": "Një grup skedarësh mbulon të gjithë shfletuesit, iOS, Android dhe Windows." },
+        { "icon": "RiInfinityLine", "title": "Pa kufizime, pa regjistrim", "description": "Gjeneroni aq favicon sa ju nevojiten. Pa regjistrim, pa pagesa." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Pyetjet më të shpeshta për gjeneruesin e favicon",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Cili imazh është më i miri për favicon?",
+          "answer": "Një imazh katror (të paktën 512×512 px) me sfond të thjeshtë është më i miri. Logot, inicialet ose ikonat e thjeshta japin rezultatet më të mira. Imazhet me shumë detaje mund të duken keq në madhësi të vogël (16×16 px).",
+          "answerSchemaText": "Një imazh katror, të paktën 512×512 px, me sfond të thjeshtë. Logot ose ikonat e thjeshta japin rezultatet më të mira."
+        },
+        {
+          "question": "Cila është ndryshimi midis favicon.ico dhe PNG?",
+          "answer": "Skedari ICO mund të përmbajë shumë madhësi në një skedar dhe mbështetet nga të gjithë shfletuesit, përfshirë ata më të vjetër. Skedarët PNG kanë cilësi më të lartë por kërkojnë një etiketë HTML të veçantë për çdo madhësi. Rekomandohet të përdorni të dyja.",
+          "answerSchemaText": "ICO përmban shumë madhësi në një skedar. PNG ofron cilësi më të lartë. Rekomandohet të përdorni të dyja."
+        },
+        {
+          "question": "A dërgohet imazhi në server?",
+          "answer": "Jo. I gjithë përpunimi bëhet në shfletuesin tuaj. Imazhi nuk ruhet dhe nuk dërgohet askund.",
+          "answerSchemaText": "Jo. Imazhi përpunohet në shfletues. Nuk dërgohet në asnjë server."
+        },
+        {
+          "question": "Si ta shtoni favicon në faqen e internetit?",
+          "answer": "Vendosni skedarët e ikonave në dosjen rrënjë të faqes dhe shtoni etiketat e përshtatshme HTML në seksionin &lt;head&gt; të faqes. Skedari ZIP i shkarkuar përmban udhëzime implementimi.",
+          "answerSchemaText": "Vendosni skedarët e ikonave në dosjen rrënjë dhe shtoni etiketat HTML në seksionin head."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Zbuloni mjete të tjera" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

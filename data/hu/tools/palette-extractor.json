@@ -1,0 +1,315 @@
+{
+  "toolKey": "paletteExtractor",
+  "locale": "hu",
+  "metadata": {
+    "title": "Ingyenes színkinyaró képből – Paletta bármely fényképből",
+    "description": "Nyerje ki a színpalettát bármely fényképből vagy képből. Kapjon HEX, RGB és HSL kódokat minden azonosított színhez. Ingyenes, regisztráció és korlát nélkül.",
+    "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
+    "path": "/hu/eszkozok/szinkinyero-kepbol"
+  },
+  "hero": {
+    "title": "Színkinyaró képből – Kapjon palettát bármely fényképből",
+    "description": "Töltsön fel egy fényképet, logót vagy grafikát, és az eszköz kinyeri akár 12 domináns színt HEX és RGB kódokkal. Az elemzés helyben történik a böngészőben.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/szinkinyero-kepbol",
+      "label": "Színkinyaró"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Színkinyaró képből online - ingyenes palettagenerátor",
+      "alternateName": ["Színpaletta kinyarése fényképből vagy logóból"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorExtractor",
+      "description": "Ingyenes online színkinyaró képből. Töltsön fel fényképet, logót vagy grafikát, és kapjon palettát akár 12 domináns színnel HEX és RGB kódokkal. A feldolgozás a böngészőben történik - a fájlok nem kerülnek szerverre.",
+      "featureList": [
+        "Akár 12 domináns szín automatikus kinyarése",
+        "Fényképek, logók és vektorgrafikák elemzése",
+        "Színkódok HEX és RGB formátumban",
+        "Színkód másolása vágólapra",
+        "PNG, JPG és SVG fájlok támogatása",
+        "Átlátszó pixelek figyelmen kívül hagyása PNG fájlokban",
+        "Helyi feldolgozás a böngészőben - a kép nem kerül szerverre"
+      ]
+    },
+    "howTo": {
+      "name": "Hogyan nyerjen ki színeket fényképből vagy képből",
+      "description": "Hogyan nyerje ki a domináns színeket fényképből vagy logóból. Töltsön fel képet PNG, JPG vagy SVG formátumban, és az eszköz palettát generál akár 12 színnel HEX kódokkal.",
+      "steps": [
+        {
+          "name": "Töltsön fel egy képet",
+          "text": "Húzzon egy fájlt a kijelölt területre, vagy válasszon képet az eszközéről. Támogatott formátumok: PNG, JPG és SVG."
+        },
+        {
+          "name": "Várja meg az elemzést",
+          "text": "Az eszköz automatikusan elemzi a képet és kinyeri a domináns színeket."
+        },
+        {
+          "name": "Másolja a színeket",
+          "text": "Minden szín mellett talál egy másolás gombot - a HEX kód a rendszer vágólapjára kerül."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miért érdemes színeket kinyerni egy képből?",
+      "html": "<p class=\"mb-4\">Minden fénykép, logó vagy grafika tartalmaz színeket, amelyek kész színpalettaként szolgálhatnak. A kinyaró elemzi a képet és megmutatja, mely színek dominálnak - HEX kódokkal és RGB értékekkel, amelyek készen állnak a projektbe illesztésre.</p><p class=\"mb-4\">A gyakorlatban ez azt jelenti, hogy ahelyett, hogy kézileg mintavenné a színeket egy grafikus alkalmazásban (pixelenként), feltölt egyetlen képet és kap egy rendezett listát akár 12 színről. Ez hasznos, ha színeket választ egy weboldalhoz, konzisztens közösségi média grafikákat készít, vagy vizuális identitást épít meglévő anyagokból.</p><p>Az egész elemzés helyben történik a böngészőben - a kép nem kerül semmilyen szerverre.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan használja a színkinyarót",
+      "description": "Az egész folyamat mindössze néhány másodpercet vesz igénybe:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Töltsön fel egy képet",
+          "description": "Húzzon egy fájlt a kijelölt területre, vagy válassza ki az eszközéről. Támogatott formátumok: PNG, JPG és SVG."
+        },
+        {
+          "title": "2. Várja meg az elemzést",
+          "description": "Az eszköz automatikusan elemzi a képet és kinyeri akár 12 domináns színt."
+        },
+        {
+          "title": "3. Másolja a szükséges színeket",
+          "description": "Minden szín mellett van egy másolás gomb - a HEX vagy RGB kód a vágólapra kerül és közvetlenül beilleszthető a projektbe."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Hogyan néz ki egy kinyert színpaletta?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Példa színek kinyerve egy természeti képből</p></div>",
+      "html": "<p class=\"text-mid mb-4\">A kép feltöltése után a kinyaró megjeleníti a domináns színek listáját a legkiemelkedőbbtől a legkevésbé kiemelkedőig rendezve. Minden szín mutatja a HEX kódját és RGB értékét - készen a CSS-be, Figmába vagy bármely grafikus alkalmazásba illesztésre.</p><p class=\"text-mid\">A kinyert színek száma a kép tartalmától függ. Egy tájkép gazdagabb palettát ad (8–12 szín), míg egy egyszerű kétszínű logó megfelelően kevesebb elemet eredményez.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mely képek adják a legjobb eredményeket?",
+      "description": "A kinyert paletta minősége a feltöltött kép típusától függ:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiImageLine",
+          "title": "Logók és korlátozott palettájú grafikák",
+          "description": "A néhány világosan elkülönített színnel rendelkező képek adják a legpontosabb eredményeket - a kinyaró pontosan azonosítja az egyes színeket."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Világos tárgyú fényképek",
+          "description": "A termék-, belsőépítészeti vagy tájképek szintén hasznos palettákat adnak, de több árnyalatot tartalmaznak - beleértve az árnyékszíneket és fényvisszaverődéseket."
+        },
+        {
+          "icon": "RiEraserLine",
+          "title": "Átlátszó hátterű PNG fájlok",
+          "description": "Az átlátszó pixelek automatikusan kimaradnak az elemzésből. Ha csak az objektumból szeretné kinyerni a színeket (pl. logó), használjon háttér nélküli PNG fájlt."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Nagy egyszínű háttér nélküli képek",
+          "description": "Amikor a háttér a kép területének nagy részét foglalja el, az színe dominálja az eredményeket. Feltöltés előtt fontolja meg a kép vágását az érdekes területre."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTimeline",
+      "title": "Hogyan működik a színkinyarés képből?",
+      "description": "A fájl feltöltése után az eszköz több lépést hajt végre a háttérben - az egész elemzés helyben történik a böngészőben:",
+      "items": [
+        {
+          "icon": "RiZoomInLine",
+          "title": "Kép átméretezése",
+          "description": "A kép kb. 240 pixel szélességűre kerül átméretezésre. Ez felgyorsítja az elemzést még nagyon nagy fényképek esetén is, anélkül, hogy befolyásolná a színészlelés pontosságát."
+        },
+        {
+          "icon": "RiGroupLine",
+          "title": "Hasonló színek csoportosítása",
+          "description": "Minden pixel elemzésre kerül, és a hasonló árnyalatok csoportba kerülnek. Két szinte azonos kék egyetlen színné válik a palettában."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Domináns színek kiválasztása",
+          "description": "Az algoritmus azokat a színeket választja, amelyek a kép legnagyobb területét fedik le. Az eredmény akár 12 szín listája, a legkiemelkedőbbtől rendezve."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Átlátszó pixelek kihagyása",
+          "description": "Átlátszó hátterű PNG fájlokban azok a területek nem kerülnek az elemzésbe - a kinyaró csak a látható színeket vizsgálja. Az egész folyamat általában kevesebb mint egy másodpercet vesz igénybe."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hibakeresés a színkinyaróban",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBarChartLine",
+          "title": "A kinyaró kevesebb mint 12 színt adott vissza",
+          "description": "A kinyert színek száma a kép tartalmától függ. Egy egyszerű kétszínű logó 2–3 eredményt ad - ez helyes viselkedés. Az eszköz nem ad hozzá mesterséges színeket; csak azokat nyeri ki, amelyek ténylegesen megjelennek a képben."
+        },
+        {
+          "icon": "RiAlertLine",
+          "title": "Váratlan színek jelentek meg a palettában",
+          "description": "Ezek lehetnek árnyék-, színátmenet- vagy fényvisszaverődés-színek - az ott lévő pixelek más színűek, mint az első ránézésre látható objektum. Egységesebb színű kép használata vagy a sötét területek levágása javítja az eredményeket."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "A háttérszín dominálja az eredményeket",
+          "description": "Ha a háttér nagyobb területet fed le, mint maga az objektum, a színe először jelenik meg a listában. Megoldás: használjon átlátszó hátterű PNG fájlt, vagy vágja le a képet úgy, hogy az objektum több helyet foglaljon el a keretben."
+        },
+        {
+          "icon": "RiFileWarningLine",
+          "title": "A fájlt nem fogadja el a kinyaró",
+          "description": "Az eszköz csak PNG, JPG és SVG formátumokat támogat. Más formátumú fájlok (GIF, TIFF, HEIC, PDF) előzetes konverziót igényelnek."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt a színkinyarót?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Helyi elemzés - a kép nem hagyja el a számítógépét",
+          "description": "Minden színkinyarés a böngészőben történik. A kép nem kerül semmilyen szerverre, és az oldal bezárása után az adatok törlődnek a memóriából."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Akár 12 domináns szín egyetlen képből",
+          "description": "Az eszköz akár 12 színt nyer ki a legkiemelkedőbbtől rendezve - elegendő egy teljes projekt-színpaletta felépítéséhez."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Három népszerű képformátum",
+          "description": "Támogatott formátumok: PNG, JPG és SVG. Az átlátszó hátterű PNG fájlok adják a legjobb eredményeket, mivel az átlátszó pixelek automatikusan kimaradnak."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Kész HEX és RGB kódok beillesztésre",
+          "description": "Minden kinyert szín tartalmazza a HEX kódját (pl. #2C5F2D) és RGB értékét. A kód a vágólapra másolható és közvetlenül beilleszthető CSS-be, Figmába vagy Photoshopba."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hol használja a képből kinyert színeket",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Vizuális identitás építése",
+          "description": "Töltsön fel egy fényképet, amely megragadja a márka hangualtát - tájképet, étterem belsőt, termékfényképet - és nyerje ki a színeket kiinduló pontként egy branding palettához."
+        },
+        {
+          "icon": "RiLayoutMasonryLine",
+          "title": "Közösségi média grafikák",
+          "description": "Nyerjen ki színeket egy termékfényképből, és használja őket hátterként vagy akcentusként grafikákban. Az ugyanabból a forrásból származó színekre épülő posztok konzisztensen néznek ki a profilon."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Színek illesztése weboldalhoz",
+          "description": "Nyerje ki a logó színeit és használja őket a weboldal színpalettájaként - elsődleges szín, akcentusszín, háttérárnyalatok. A HEX kódok közvetlenül beilleszthetők a CSS-be."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Meglévő paletta bővítése",
+          "description": "Egy kinyert alapszin felhasználható a <a href=\"/hu/eszkozok/szinpaletta-generator\">színpaletta generátorban</a> egy teljes harmonikus színkészlet létrehozásához a színelmélet alapján."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések a színkinyaróról",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Szükséges regisztráció a színkinyaróhoz?",
+          "answer": "Nem. Az eszköz teljesen ingyenes és nem igényel bejelentkezést vagy regisztrációt. A kép helyben kerül elemzésre a böngészőben - nem kerül semmilyen szerverre. Az oldal bezárása után minden adat törlődik.",
+          "answerSchemaText": "Nem. Az eszköz ingyenes és nem igényel regisztrációt. A kép helyben kerül elemzésre a böngészőben."
+        },
+        {
+          "question": "Miben különbözik a színkinyaró a palettagenerátortól?",
+          "answer": "A kinyaró meglévő képből húzza ki a színeket - elemzi a fényképet és megmutatja, mely színek dominálnak benne. A színpaletta generátor fordítva működik: Ön megad egy alapszint, és az eszköz harmonikus készleteket hoz létre a színelmélet alapján. A két eszköz kiegészíti egymást - kinyerhet egy színt a képből, majd használhatja alapként a palettagenerátorban.",
+          "answerSchemaText": "A kinyaró képből húzza ki a színeket. A generátor egy alapszinből hoz létre palettákat. A két eszköz kiegészíti egymást."
+        },
+        {
+          "question": "Hány színt nyer ki az eszköz egyetlen képből?",
+          "answer": "Az eszköz akár 12 domináns színt nyer ki. A pontos szám a kép tartalmától függ - ha egy grafikának csak két színe van (pl. egyszerű logó), az eredmény kevesebb elemet tartalmaz. A színek a legkiemelkedőbbtől a legkevésbé kiemelkedőig kerülnek rendezésre.",
+          "answerSchemaText": "Akár 12 domináns szín, a legkiemelkedőbbtől rendezve."
+        },
+        {
+          "question": "Milyen képformátumokat támogat a kinyaró?",
+          "answer": "Támogatott formátumok: PNG, JPG (JPEG) és SVG. Az átlátszó hátterű PNG fájlok jobb eredményeket adnak, mert az átlátszó pixelek kimaradnak az elemzésből - az eszköz az objektum színeire összpontosít.",
+          "answerSchemaText": "PNG, JPG és SVG. Az átlátszó hátterű PNG adja a legjobb eredményeket."
+        },
+        {
+          "question": "Milyen formátumban kapom a kinyert színkódokat?",
+          "answer": "Minden szín megjelenítésre kerül a HEX kódjával (pl. #2C5F2D) és RGB értékével (pl. rgb(44, 95, 45)). A kód a vágólapra másolható és közvetlenül beilleszthető CSS-be, Figmába, Photoshopba vagy bármely más grafikus alkalmazásba.",
+          "answerSchemaText": "HEX (pl. #2C5F2D) és RGB (pl. rgb(44, 95, 45)). Másolható vágólapra."
+        },
+        {
+          "question": "Másolhatom egyszerre az összes palettaszínt?",
+          "answer": "Jelenleg az eszköz lehetővé teszi a színek egyenkénti másolását - minden szín mellett van egy gomb, amely a HEX kódot a vágólapra másolja. A másolt kód azonnal beilleszthető Figmába, Photoshopba, CSS-be vagy bármely más alkalmazásba.",
+          "answerSchemaText": "A színek egyenként másolhatók a minden szín melletti másolás gombbal."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Fedezzen fel további eszközöket"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

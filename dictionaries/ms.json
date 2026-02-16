@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "mainNavigation": "Navigasi utama",
+    "logoAlt": "Arteon - logo syarikat",
+    "closeMenu": "Tutup menu",
+    "openMenu": "Buka menu",
+    "closeToolsList": "Tutup senarai alatan",
+    "openToolsList": "Buka senarai alatan",
+    "toolsLabel": "Alatan",
+    "mobileMenu": "Menu mudah alih",
+    "aboutLabel": "Tentang kami",
+    "contactLabel": "Hubungi kami"
+  },
+  "footer": {
+    "copyright": "Hak cipta terpelihara.",
+    "description": "Alatan percuma untuk pembangun web, pereka bentuk dan pemasar.",
+    "companyDataLabel": "Maklumat syarikat",
+    "toolsLabel": "Alatan",
+    "legalLabel": "Dokumen undang-undang",
+    "cookieSettingsLabel": "Tetapan kuki"
+  },
+  "desktopOnly": {
+    "title": "Alat ini berfungsi pada skrin yang lebih besar",
+    "description": "Untuk menggunakan alat ini dengan selesa, buka pada komputer riba, komputer meja, atau tablet dalam mod landskap.",
+    "tipTitle": "Petua",
+    "tipText": "Jika menggunakan tablet, tukar ke mod landskap — apabila lebar tetingkap mencukupi, alat akan dimuat secara automatik."
+  },
+  "cookie": {
+    "title": "Kuki dan privasi",
+    "description": "Kami menggunakan kuki untuk fungsi laman, analisis trafik dan paparan iklan. Ketahui lebih lanjut dalam",
+    "setPreferences": "Tetapkan pilihan",
+    "privacyPolicy": "Dasar privasi",
+    "privacyPolicyHref": "/ms/dasar-privasi",
+    "reject": "Tolak semua",
+    "settings": "Tetapan",
+    "accept": "Terima semua",
+    "panelTitle": "Pilihan privasi",
+    "panelDescription": "Tetapan persetujuan untuk pemprosesan data.",
+    "categoriesLegend": "Kategori",
+    "essentialTitle": "Penting",
+    "essentialDescription": "Laman tidak boleh berfungsi tanpa ini. Tidak mengumpul data pemasaran.",
+    "essentialStatus": "Sentiasa aktif",
+    "analyticsTitle": "Analitik (GA4)",
+    "analyticsDescription": "Statistik lawatan. Mengaktifkan Google Analytics 4 dengan persetujuan anda.",
+    "analyticsLabel": "Aktifkan analitik GA4",
+    "adsTitle": "Iklan (Google AdSense)",
+    "adsDescription": "Iklan diperibadikan berdasarkan minat anda.",
+    "adsLabel": "Aktifkan iklan diperibadikan",
+    "changeDecision": "Anda boleh menukar keputusan pada bila-bila masa",
+    "save": "Simpan"
+  },
+  "skipToContent": "Langkau ke kandungan",
+  "legal": [{ "key": "privacy", "href": "/ms/dasar-privasi", "label": "Dasar privasi" }]
+}

@@ -23,9 +23,72 @@ import { NavArrowDownSLine as RiArrowDownSLine } from '@/components/ui/icons/Nav
 // NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile media społecznościowe będą gotowe
 // import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 
-const closeLabel: Record<Locale, string> = { pl: 'Zamknij', en: 'Close', de: 'Schließen', es: 'Cerrar', fr: 'Fermer', pt: 'Fechar', it: 'Chiudi' };
-const servicesLabel: Record<Locale, string> = { pl: 'Usługi', en: 'Services', de: 'Dienstleistungen', es: 'Servicios', fr: 'Services', pt: 'Serviços', it: 'Servizi' };
-const contactLabel: Record<Locale, string> = { pl: 'Skontaktuj się', en: 'Contact', de: 'Kontakt', es: 'Contacto', fr: 'Contact', pt: 'Contacto', it: 'Contatto' };
+const closeLabel: Record<Locale, string> = {
+  pl: 'Zamknij',
+  en: 'Close',
+  de: 'Schließen',
+  es: 'Cerrar',
+  fr: 'Fermer',
+  pt: 'Fechar',
+  it: 'Chiudi',
+  ro: 'Închide',
+  nl: 'Sluiten',
+  hu: 'Bezárás',
+  id: 'Tutup',
+  vi: 'Đóng',
+  tr: 'Kapat',
+  tl: 'Isara',
+  sw: 'Funga',
+  ms: 'Tutup',
+  cs: 'Zav\u0159\u00edt',
+  sv: 'St\u00e4ng',
+  sq: 'Mbyll',
+  da: 'Luk',
+};
+const servicesLabel: Record<Locale, string> = {
+  pl: 'Usługi',
+  en: 'Services',
+  de: 'Dienstleistungen',
+  es: 'Servicios',
+  fr: 'Services',
+  pt: 'Serviços',
+  it: 'Servizi',
+  ro: 'Servicii',
+  nl: 'Diensten',
+  hu: 'Szolgáltatások',
+  id: 'Layanan',
+  vi: 'Dịch vụ',
+  tr: 'Hizmetler',
+  tl: 'Mga serbisyo',
+  sw: 'Huduma',
+  ms: 'Perkhidmatan',
+  cs: 'Slu\u017eby',
+  sv: 'Tj\u00e4nster',
+  sq: 'Sh\u00ebrbimet',
+  da: 'Tjenester',
+};
+const contactLabel: Record<Locale, string> = {
+  pl: 'Skontaktuj się',
+  en: 'Contact',
+  de: 'Kontakt',
+  es: 'Contacto',
+  fr: 'Contact',
+  pt: 'Contacto',
+  it: 'Contatto',
+  ro: 'Contact',
+  nl: 'Contact',
+  hu: 'Kapcsolat',
+  id: 'Kontak',
+  vi: 'Li\u00ean h\u1ec7',
+  tr: '\u0130leti\u015fim',
+  tl: 'Makipag-ugnayan',
+  sw: 'Wasiliana',
+  ms: 'Hubungi',
+  cs: 'Kontakt',
+  sv: 'Kontakt',
+  sq: 'Kontaktoni',
+  da: 'Kontakt',
+};
 
 type SectionLink = { href: string; title: string; icon?: JSX.Element };
 type Section = {
@@ -587,7 +650,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
 
           <div className="mt-auto border-t border-neutral-200 pt-3">
             <div className="flex items-center justify-between">
-              <LanguageSwitcher openUp />
+              <LanguageSwitcher variant="mobile" />
               {isPl && (
                 <Link
                   href={contactHref}

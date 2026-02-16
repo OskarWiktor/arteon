@@ -130,6 +130,13 @@ const LOCALE_TOOLS_BASE = {
   es: '/es/herramientas',
   fr: '/fr/outils',
   pt: '/pt/ferramentas',
+  it: '/it/strumenti',
+  ro: '/ro/instrumente',
+  nl: '/nl/tools',
+  hu: '/hu/eszkozok',
+  id: '/id/alat',
+  vi: '/vi/cong-cu',
+  tr: '/tr/araclar',
 };
 
 const TOOLS = [
@@ -140,8 +147,29 @@ const TOOLS = [
     es: 'convertidor-jpg-png-a-webp',
     fr: 'convertisseur-jpg-png-en-webp',
     pt: 'conversor-jpg-png-para-webp',
+    it: 'convertitore-jpg-png-in-webp',
+    ro: 'convertor-jpg-png-in-webp',
+    nl: 'jpg-png-naar-webp-converter',
+    hu: 'jpg-png-webp-konverter',
+    id: 'konverter-jpg-png-ke-webp',
+    vi: 'chuyen-doi-jpg-png-sang-webp',
+    tr: 'jpg-png-webp-donusturucu',
   },
-  { pl: 'edytor-zdjec-online', en: 'online-image-editor', de: 'online-bildeditor', es: 'editor-de-imagenes-en-linea', fr: 'editeur-d-images-en-ligne', pt: 'editor-de-imagens-online' },
+  {
+    pl: 'edytor-zdjec-online',
+    en: 'online-image-editor',
+    de: 'online-bildeditor',
+    es: 'editor-de-imagenes-en-linea',
+    fr: 'editeur-d-images-en-ligne',
+    pt: 'editor-de-imagens-online',
+    it: 'editor-di-immagini-online',
+    ro: 'editor-de-imagini',
+    nl: 'afbeeldingeneditor',
+    hu: 'kepszerkeszto',
+    id: 'editor-gambar',
+    vi: 'chinh-sua-hinh-anh',
+    tr: 'gorsel-duzenleyici',
+  },
   {
     pl: 'darmowy-generator-favicon-ico',
     en: 'free-favicon-generator',
@@ -149,6 +177,13 @@ const TOOLS = [
     es: 'generador-de-favicon-gratuito',
     fr: 'generateur-de-favicon-gratuit',
     pt: 'gerador-de-favicon-gratuito',
+    it: 'generatore-di-favicon-gratuito',
+    ro: 'generator-favicon-gratuit',
+    nl: 'gratis-favicon-generator',
+    hu: 'ingyenes-favicon-generator',
+    id: 'generator-favicon-gratis',
+    vi: 'tao-favicon-mien-phi',
+    tr: 'ucretsiz-favicon-olusturucu',
   },
   {
     pl: 'licznik-dlugosci-meta-title-i-description',
@@ -157,6 +192,13 @@ const TOOLS = [
     es: 'verificador-de-meta-titulo-y-descripcion',
     fr: 'verificateur-meta-titre-et-description',
     pt: 'verificador-de-meta-titulo-e-descricao',
+    it: 'verificatore-meta-titolo-e-descrizione',
+    ro: 'verificator-meta-titlu-si-descriere',
+    nl: 'meta-titel-beschrijving-checker',
+    hu: 'meta-cim-es-leiras-ellenorzo',
+    id: 'pemeriksa-meta-judul-dan-deskripsi',
+    vi: 'kiem-tra-meta-title-va-description',
+    tr: 'meta-baslik-ve-aciklama-kontrol',
   },
   {
     pl: 'licznik-slow-i-znakow',
@@ -165,6 +207,13 @@ const TOOLS = [
     es: 'contador-de-palabras-y-caracteres',
     fr: 'compteur-de-mots-et-caracteres',
     pt: 'contador-de-palavras-e-caracteres',
+    it: 'contatore-di-parole-e-caratteri',
+    ro: 'contor-cuvinte-si-caractere',
+    nl: 'woorden-en-tekenteller',
+    hu: 'szo-es-karakterszamlalo',
+    id: 'penghitung-kata-dan-karakter',
+    vi: 'dem-tu-va-ky-tu',
+    tr: 'kelime-ve-karakter-sayaci',
   },
   {
     pl: 'darmowy-generator-stopki-mailowej',
@@ -173,6 +222,13 @@ const TOOLS = [
     es: 'generador-de-firma-de-correo-gratuito',
     fr: 'generateur-de-signature-email-gratuit',
     pt: 'gerador-de-assinatura-de-email-gratuito',
+    it: 'generatore-di-firma-email-gratuito',
+    ro: 'generator-semnatura-email-gratuit',
+    nl: 'gratis-e-mailhandtekening-generator',
+    hu: 'ingyenes-email-alairas-generator',
+    id: 'generator-tanda-tangan-email-gratis',
+    vi: 'tao-chu-ky-email-mien-phi',
+    tr: 'ucretsiz-e-posta-imza-olusturucu',
   },
   {
     pl: 'kontrast-i-czytelnosc-kolorow',
@@ -181,6 +237,13 @@ const TOOLS = [
     es: 'comprobador-de-contraste-de-colores',
     fr: 'verificateur-de-contraste-des-couleurs',
     pt: 'verificador-de-contraste-de-cores',
+    it: 'verificatore-contrasto-colori',
+    ro: 'verificator-contrast-culori',
+    nl: 'kleurcontrast-checker',
+    hu: 'szinkontraszt-ellenorzo',
+    id: 'pemeriksa-kontras-warna',
+    vi: 'kiem-tra-do-tuong-phan-mau',
+    tr: 'renk-kontrast-kontrolu',
   },
   {
     pl: 'ekstraktor-kolorow-z-obrazu',
@@ -189,6 +252,13 @@ const TOOLS = [
     es: 'extractor-de-colores-de-imagen',
     fr: 'extracteur-de-couleurs-d-image',
     pt: 'extrator-de-cores-de-imagem',
+    it: 'estrattore-di-colori-da-immagine',
+    ro: 'extractor-culori-din-imagine',
+    nl: 'kleurextractor-uit-afbeelding',
+    hu: 'szinkinyero-kepbol',
+    id: 'ekstraktor-warna-dari-gambar',
+    vi: 'trich-xuat-mau-tu-hinh-anh',
+    tr: 'gorsel-renk-cikarici',
   },
   {
     pl: 'generator-palet-kolorow',
@@ -197,6 +267,13 @@ const TOOLS = [
     es: 'generador-de-paletas-de-colores',
     fr: 'generateur-de-palettes-de-couleurs',
     pt: 'gerador-de-paletas-de-cores',
+    it: 'generatore-di-palette-di-colori',
+    ro: 'generator-de-palete-de-culori',
+    nl: 'kleurpalettengenerator',
+    hu: 'szinpaletta-generator',
+    id: 'generator-palet-warna',
+    vi: 'tao-bang-mau',
+    tr: 'renk-paleti-olusturucu',
   },
   {
     pl: 'darmowy-generator-kodow-qr',
@@ -205,14 +282,60 @@ const TOOLS = [
     es: 'generador-de-codigos-qr-gratuito',
     fr: 'generateur-de-codes-qr-gratuit',
     pt: 'gerador-de-codigos-qr-gratuito',
+    it: 'generatore-di-codici-qr-gratuito',
+    ro: 'generator-coduri-qr-gratuit',
+    nl: 'gratis-qr-code-generator',
+    hu: 'ingyenes-qr-kod-generator',
+    id: 'generator-kode-qr-gratis',
+    vi: 'tao-ma-qr-mien-phi',
+    tr: 'ucretsiz-qr-kod-olusturucu',
   },
 ];
 
-// Non-tool multilingual pages (EN/DE/ES/FR only – PL has its own separate pages)
+// Non-tool multilingual pages (all locales except PL which has its own separate pages)
 const MULTILINGUAL_PAGES = [
-  { en: '/en/about', de: '/de/ueber-uns', es: '/es/sobre-nosotros', fr: '/fr/a-propos', pt: '/pt/sobre-nos' },
-  { en: '/en/contact', de: '/de/kontakt', es: '/es/contacto', fr: '/fr/contact', pt: '/pt/contacto' },
-  { en: '/en/privacy-policy', de: '/de/datenschutzrichtlinie', es: '/es/politica-de-privacidad', fr: '/fr/politique-de-confidentialite', pt: '/pt/politica-de-privacidade' },
+  {
+    en: '/en/about',
+    de: '/de/ueber-uns',
+    es: '/es/sobre-nosotros',
+    fr: '/fr/a-propos',
+    pt: '/pt/sobre-nos',
+    it: '/it/chi-siamo',
+    ro: '/ro/despre-noi',
+    nl: '/nl/over-ons',
+    hu: '/hu/rolunk',
+    id: '/id/tentang-kami',
+    vi: '/vi/ve-chung-toi',
+    tr: '/tr/hakkimizda',
+  },
+  {
+    en: '/en/contact',
+    de: '/de/kontakt',
+    es: '/es/contacto',
+    fr: '/fr/contact',
+    pt: '/pt/contacto',
+    it: '/it/contatto',
+    ro: '/ro/contact',
+    nl: '/nl/contact',
+    hu: '/hu/kapcsolat',
+    id: '/id/kontak',
+    vi: '/vi/lien-he',
+    tr: '/tr/iletisim',
+  },
+  {
+    en: '/en/privacy-policy',
+    de: '/de/datenschutzrichtlinie',
+    es: '/es/politica-de-privacidad',
+    fr: '/fr/politique-de-confidentialite',
+    pt: '/pt/politica-de-privacidade',
+    it: '/it/informativa-sulla-privacy',
+    ro: '/ro/politica-de-confidentialitate',
+    nl: '/nl/privacybeleid',
+    hu: '/hu/adatvedelmi-iranyelvek',
+    id: '/id/kebijakan-privasi',
+    vi: '/vi/chinh-sach-bao-mat',
+    tr: '/tr/gizlilik-politikasi',
+  },
 ];
 
 // Build a slug→tool lookup for every locale
@@ -225,7 +348,7 @@ for (const tool of TOOLS) {
 
 /** Return alternateRefs (all locales + x-default) for any sitemap loc, or [] if not multilingual */
 function getAlternateRefs(loc) {
-  const LOCALES = ['pl', 'en', 'de', 'es', 'fr', 'pt'];
+  const LOCALES = ['pl', 'en', 'de', 'es', 'fr', 'pt', 'it', 'ro', 'nl', 'hu', 'id', 'vi', 'tr'];
 
   // Tool index pages
   if (Object.values(LOCALE_TOOLS_BASE).includes(loc)) {
@@ -340,7 +463,18 @@ module.exports = {
       priority:
         loc === '/'
           ? 1.0
-          : loc.startsWith('/en/') || loc.startsWith('/de/') || loc.startsWith('/es/') || loc.startsWith('/fr/') || loc.startsWith('/pt/')
+          : loc.startsWith('/en/') ||
+              loc.startsWith('/de/') ||
+              loc.startsWith('/es/') ||
+              loc.startsWith('/fr/') ||
+              loc.startsWith('/pt/') ||
+              loc.startsWith('/it/') ||
+              loc.startsWith('/ro/') ||
+              loc.startsWith('/nl/') ||
+              loc.startsWith('/hu/') ||
+              loc.startsWith('/id/') ||
+              loc.startsWith('/vi/') ||
+              loc.startsWith('/tr/')
             ? 0.7
             : loc.startsWith('/uslugi/')
               ? 0.8
@@ -375,7 +509,18 @@ module.exports = {
       const priority =
         loc === '/'
           ? 1.0
-          : loc.startsWith('/en/') || loc.startsWith('/de/') || loc.startsWith('/es/') || loc.startsWith('/fr/') || loc.startsWith('/pt/')
+          : loc.startsWith('/en/') ||
+              loc.startsWith('/de/') ||
+              loc.startsWith('/es/') ||
+              loc.startsWith('/fr/') ||
+              loc.startsWith('/pt/') ||
+              loc.startsWith('/it/') ||
+              loc.startsWith('/ro/') ||
+              loc.startsWith('/nl/') ||
+              loc.startsWith('/hu/') ||
+              loc.startsWith('/id/') ||
+              loc.startsWith('/vi/') ||
+              loc.startsWith('/tr/')
             ? 0.7
             : loc.startsWith('/uslugi/')
               ? 0.8

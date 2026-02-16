@@ -1,0 +1,318 @@
+{
+  "toolKey": "wordCounter",
+  "locale": "ro",
+  "metadata": {
+    "title": "Contor gratuit de cuvinte și caractere – Analiză de text",
+    "description": "Numărați cuvintele, caracterele și propozițiile din orice text. Analizați timpul de citire și densitatea cuvintelor cheie pentru SEO. Gratuit, fără cont.",
+    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "path": "/ro/instrumente/contor-cuvinte-si-caractere"
+  },
+  "hero": {
+    "title": "Contor de cuvinte și caractere cu evaluarea lungimii",
+    "description": "Lipiți textul, selectați un tip de pagină, iar instrumentul va arăta numărul de cuvinte, caractere, paragrafe și va evalua dacă lungimea este potrivită pentru tipul de conținut selectat",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/contor-cuvinte-si-caractere",
+      "label": "Contor cuvinte și caractere"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Contor gratuit de cuvinte și caractere online",
+      "alternateName": [
+        "Contor de cuvinte cu evaluarea lungimii textului",
+        "Contor de caractere online",
+        "Instrument de numărare a cuvintelor pentru copywriteri",
+        "Calculator de timp de citire",
+        "Contor de cuvinte online",
+        "Verificați câte cuvinte are un text",
+        "Contor de cuvinte pentru SEO",
+        "Lungimea optimă a textului pentru un articol de blog"
+      ],
+      "applicationSubCategory": "TextApplication",
+      "description": "Contor gratuit de cuvinte și caractere. Verifică numărul de cuvinte, caractere, paragrafe și timpul estimat de citire. Evaluează lungimea textului pentru diferite tipuri de pagini: descriere produs, pagină serviciu, pagină principală, landing page, articol blog, ghid.",
+      "featureList": [
+        "Numărare cuvinte",
+        "Numărare caractere cu și fără spații",
+        "Numărare paragrafe",
+        "Timp estimat de citire",
+        "Evaluarea lungimii textului pentru diferite tipuri de pagini",
+        "Intervale recomandate pentru: descriere produs, pagină serviciu, pagină principală, landing page, articol blog, ghid",
+        "Copiere raport în clipboard"
+      ]
+    },
+    "howTo": {
+      "name": "Cum să folosiți contorul de cuvinte și caractere",
+      "description": "Verificați lungimea textului și evaluați dacă este potrivită pentru un anumit tip de pagină. Aflați câte cuvinte ar trebui să aibă o descriere de produs, o pagină de serviciu, un articol de blog sau un ghid.",
+      "steps": [
+        {
+          "name": "Selectați tipul de pagină",
+          "text": "Alegeți din meniul derulant pentru ce tip de pagină scrieți. Fiecare tip are intervale diferite de număr recomandat de cuvinte."
+        },
+        {
+          "name": "Lipiți textul",
+          "text": "Lipiți sau tastați textul în câmpul de text. Instrumentul va număra automat cuvintele, caracterele (cu și fără spații), paragrafele și va estima timpul de citire."
+        },
+        {
+          "name": "Verificați evaluarea",
+          "text": "Priviți bara de progres colorată și statusul. Verde înseamnă lungime bună, galben înseamnă prea scurt, roșu înseamnă prea lung."
+        },
+        {
+          "name": "Copiați raportul",
+          "text": "Butonul Copiere raport copiază un rezumat cu toate statisticile și evaluarea lungimii în clipboard."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Contor gratuit de cuvinte online - numărați și evaluați lungimea textului",
+      "html": "<p class=\"text-mid\">Acest instrument de numărare a cuvintelor vă permite să verificați rapid lungimea oricărui text. Lipiți conținutul și contorul va număra cuvintele, caracterele și paragrafele. Veți vedea și câte minute durează citirea și dacă lungimea se potrivește tipului de pagină selectat.</p><p class=\"text-mid mt-3\">Fiecare tip de pagină are un scop diferit - o descriere de produs răspunde la întrebările cumpărătorilor, un articol de blog acoperă un subiect în profunzime, iar o pagină de serviciu explică ce va primi clientul. Contorul arată intervale pentru fiecare tip, bazate pe analize ale conținutului care se clasează bine.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să folosiți contorul de cuvinte și caractere",
+      "description": "Verificarea lungimii textului durează mai puțin de un minut:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiListCheck2",
+          "title": "1. Selectați tipul de pagină",
+          "description": "Alegeți din meniul derulant pentru ce tip de pagină scrieți. Fiecare tip are intervale diferite de minim și maxim de cuvinte recomandate."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Lipiți textul",
+          "description": "Lipiți sau tastați textul în câmpul mare din dreapta. Instrumentul va număra imediat cuvintele, caracterele (cu și fără spații), paragrafele și va estima timpul de citire."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "3. Verificați evaluarea",
+          "description": "Priviți bara de progres colorată și statusul. Verde înseamnă lungime bună, galben înseamnă prea scurt, roșu înseamnă prea lung. Mai jos veți găsi un sfat util."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Copiați raportul",
+          "description": "Butonul Copiere raport copiază un rezumat cu numărul de cuvinte, caractere, paragrafe, timpul de citire și evaluarea lungimii în clipboard."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce măsoară contorul - cuvinte, caractere, timp de citire",
+      "description": "Contorul urmărește cinci metrici cheie:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiText",
+          "title": "Cuvinte",
+          "description": "Numărul total de cuvinte. Acesta este indicatorul principal al lungimii textului."
+        },
+        {
+          "icon": "RiSpaceShipLine",
+          "title": "Caractere (cu spații)",
+          "description": "Toate caracterele inclusiv spațiile. Util când un CMS are limită de caractere (ex. listinguri marketplace)."
+        },
+        {
+          "icon": "RiHashtag",
+          "title": "Caractere (fără spații)",
+          "description": "Doar litere, cifre și semne de punctuație. Uneori cerut de tipării sau pentru facturarea traducerilor."
+        },
+        {
+          "icon": "RiParagraph",
+          "title": "Paragrafe",
+          "description": "Câte blocuri de text separate de rânduri goale aveți. Ajută la evaluarea dacă textul este bine structurat."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Timp de citire",
+          "description": "Calculatorul de timp de citire arată câte minute durează citirea textului la o viteză medie de 200 de cuvinte pe minut."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Cum să interpretați rezultatele",
+      "subtitle": "Statusuri de evaluare",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">Lungime bună</span><span class=\"text-mid text-sm!\">Textul este în interval</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Sub interval</span><span class=\"text-mid text-sm!\">Textul este mai scurt decât tipicul</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Peste interval</span><span class=\"text-mid text-sm!\">Textul este mai lung decât tipicul</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Progres</span><span class=\"text-mid\">1200 / 1200–3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Bara de progres colorată și statusul vă ajută să evaluați rapid lungimea textului:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Lungime bună</strong> (verde) - textul se încadrează în intervalul aproximativ pentru tipul de pagină selectat.</li><li><strong class=\"text-warning-text\">Sub interval</strong> (galben) - textul este mai scurt decât tipicul pentru acest tip de pagină. Dacă răspunde la toate întrebările cititorului, lungimea poate fi în regulă.</li><li><strong class=\"text-error-text\">Peste interval</strong> (roșu) - textul este mai lung decât tipicul. Dacă fiecare paragraf adaugă informații noi, lungimea este justificată.</li></ul><p class=\"text-mid mt-4\">Intervalele sunt bazate pe analize ale conținutului care se clasează bine în motoarele de căutare. Dacă textul răspunde la întrebările cititorului, lungimea este potrivită indiferent de rezultatul contorului.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Câte cuvinte ar trebui să aibă un text - lungimea optimă pentru SEO",
+      "html": "<p class=\"text-mid mb-4\">Intervalele de mai jos sunt bazate pe analize ale conținutului care se clasează bine în motoarele de căutare. Lungimea textului în sine nu afectează clasamentul Google - ceea ce contează este dacă conținutul răspunde la întrebările cititorului.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Tip pagină</th><th class=\"py-2 pr-4 font-semibold\">Interval</th><th class=\"py-2 font-semibold\">Când mai scurt, când mai lung?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Descriere produs</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 cuvinte</td><td class=\"text-primary-light0 py-2 text-sm\">Produs simplu (ex. o cană) - 80–150 cuvinte. Echipament complex (ex. un laptop) - 300–400 cuvinte.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Pagină serviciu</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 cuvinte</td><td class=\"text-primary-light0 py-2 text-sm\">Serviciu local (ex. instalator) - 500–700 cuvinte. Serviciu B2B cu proces și FAQ - 1.200–1.500 cuvinte.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Pagină principală</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 cuvinte</td><td class=\"text-primary-light0 py-2 text-sm\">Pagina principală transmite valoarea principală și ghidează vizitatorii mai departe.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landing page</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 cuvinte</td><td class=\"text-primary-light0 py-2 text-sm\">Ofertă simplă - 600–1.000 cuvinte. Ofertă ce necesită explicații - 1.500–2.500 cuvinte.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Articol blog</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 cuvinte</td><td class=\"text-primary-light0 py-2 text-sm\">Răspuns scurt la o întrebare specifică - 1.200 cuvinte. Ghid detaliat - 2.500–3.000 cuvinte.</td></tr><tr><td class=\"py-2 pr-4\">Ghid / Tutorial</td><td class=\"py-2 pr-4 whitespace-nowrap\">2000–5000 cuvinte</td><td class=\"text-primary-light0 py-2 text-sm\">Ghid practic cu pași - 2.000–3.000 cuvinte. Ghid enciclopedic complet - 4.000–5.000 cuvinte.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Pentru cine este contorul de cuvinte?",
+      "description": "Un instrument de numărare a cuvintelor pentru copywriteri și nu numai - iată cine folosește contorul cel mai des:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiEditLine",
+          "title": "Copywriteri și creatori de conținut",
+          "description": "Verificați dacă textul se încadrează în intervalul recomandat pentru un anumit tip de pagină. Contorul SEO ajută la evaluarea dacă un articol este suficient de dezvoltat."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Bloggeri",
+          "description": "Monitorizați lungimea postărilor pentru a menține publicațiile consistente. Verificați timpul de citire înainte de publicare."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Proprietari de magazine online",
+          "description": "Verificați descrierile produselor față de limitele de caractere pe platformele de vânzare (Amazon, eBay, Etsy)."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "Specialiști SEO",
+          "description": "Evaluați dacă conținutul paginii are o lungime optimă comparativ cu concurenții."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Studenți și academicieni",
+          "description": "Verificați dacă o lucrare îndeplinește limita cerută de cuvinte sau caractere."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Traducători",
+          "description": "Numărați caracterele fără spații pentru cotarea traducerilor (o unitate standard de facturare)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Limite de caractere pe platformele populare",
+      "html": "<p class=\"text-mid mb-4\">Contorul de caractere este util când creați conținut pentru platforme cu restricții de lungime:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platformă / Element</th><th class=\"py-2 pr-4 font-semibold\">Limită caractere</th><th class=\"py-2 font-semibold\">Note</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 caractere</td><td class=\"text-primary-light0 py-2 text-sm\">Titlurile mai lungi sunt trunchiate în rezultatele căutării.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 caractere</td><td class=\"text-primary-light0 py-2 text-sm\">Descrierea vizibilă sub link în rezultatele căutării.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - titlu produs</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 caractere</td><td class=\"text-primary-light0 py-2 text-sm\">Titlu scurt, specific, cu cele mai importante cuvinte cheie.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - bullet points</td><td class=\"py-2 pr-4 whitespace-nowrap\">500 caractere fiecare</td><td class=\"text-primary-light0 py-2 text-sm\">Până la 5 puncte descriind caracteristicile cheie ale produsului.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) - postare</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 caractere</td><td class=\"text-primary-light0 py-2 text-sm\">Limita standard pentru utilizatorii obișnuiți.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn - postare</td><td class=\"py-2 pr-4 whitespace-nowrap\">3.000 caractere</td><td class=\"text-primary-light0 py-2 text-sm\">După ~210 caractere apare un link \"vezi mai mult\".</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face special acest contor de cuvinte și caractere?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Șase tipuri de pagini cu intervale recomandate",
+          "description": "Descriere produs, pagină serviciu, pagină principală, landing page, articol blog și ghid - fiecare tip are propriile intervale bazate pe analize."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Procesare locală în browser",
+          "description": "Textul dvs. nu este trimis niciodată la niciun server - toată analiza are loc local pe dispozitivul dvs."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Evaluarea lungimii textului",
+          "description": "Nu doar numărați cuvintele - primiți informații dacă lungimea este potrivită pentru tipul de pagină selectat."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "Intervale bazate pe SEO",
+          "description": "Lungimile recomandate sunt bazate pe analize ale conținutului care se clasează bine în motoarele de căutare."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Timp de citire",
+          "description": "Știți imediat câte minute le va lua cititorilor să parcurgă textul."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Copiere raport",
+          "description": "Butonul Copiere raport copiază un rezumat cu toate statisticile și evaluarea lungimii în clipboard."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente despre contorul de cuvinte și caractere",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Lungimea textului afectează clasamentul Google?",
+          "answer": "Lungimea textului în sine nu este un factor de clasare. Google evaluează dacă conținutul răspunde la întrebarea utilizatorului și este valoros pentru acesta. Un text mai scurt care răspunde cuprinzător la o întrebare se poate clasa bine - ceea ce contează este valoarea pentru cititor. Intervalele din acest instrument sunt bazate pe analize ale conținutului care se clasează bine în rezultatele căutării.",
+          "answerSchemaText": "Lungimea textului nu este un factor direct de clasare. Google evaluează valoarea conținutului pentru utilizator."
+        },
+        {
+          "question": "De ce sunt intervalele de cuvinte atât de largi?",
+          "answer": "Același tip de pagină poate necesita lungimi diferite în funcție de complexitatea subiectului. O descriere simplă de produs (ex. o cană) are 80–150 de cuvinte. O descriere de laptop are 300–400 de cuvinte deoarece cumpărătorii întreabă despre procesor, memorie, ecran și baterie.",
+          "answerSchemaText": "Diferența provine din complexitatea subiectului - un produs simplu necesită mai puține cuvinte decât unul complex."
+        },
+        {
+          "question": "Cum ar trebui să interpretez \"prea scurt\" sau \"prea lung\"?",
+          "answer": "Evaluarea arată unde se situează textul dvs. față de conținutul tipic de acel tip. Dacă textul este marcat \"prea scurt\" dar răspunde la toate întrebările cititorului - lungimea este în regulă. Dacă este \"prea lung\" dar fiecare paragraf adaugă informații noi - lungimea este justificată.",
+          "answerSchemaText": "Evaluarea arată unde se situează textul față de conținutul tipic. Dacă textul răspunde la întrebările cititorului, lungimea este potrivită."
+        },
+        {
+          "question": "Cum funcționează calculatorul de timp de citire?",
+          "answer": "Instrumentul împarte numărul de cuvinte la 200 - viteza medie de citire pentru text obișnuit. Textul tehnic sau pretențios (ex. documentație, termeni și condiții) va fi citit mai lent. Un articol ușor de lifestyle - mai repede. Rezultatul este o valoare aproximativă.",
+          "answerSchemaText": "Instrumentul presupune o viteză medie de citire de 200 de cuvinte pe minut. Aceasta este o valoare aproximativă pentru text obișnuit."
+        },
+        {
+          "question": "De unde provin intervalele recomandate?",
+          "answer": "Intervalele sunt bazate pe analize ale conținutului care se clasează bine în motoarele de căutare și pe cele mai bune practici de creare a conținutului. Sunt intenționat largi deoarece același tip de pagină poate necesita lungimi diferite în funcție de industrie, complexitatea subiectului și nevoile cititorului.",
+          "answerSchemaText": "Intervalele sunt bazate pe analize SEO și cele mai bune practici de creare a conținutului."
+        },
+        {
+          "question": "Pot copia raportul cu statisticile?",
+          "answer": "Da. Sub statistici veți găsi un buton Copiere raport - copiază un rezumat cu numărul de cuvinte, caractere, paragrafe, timpul de citire și evaluarea lungimii în clipboard. Îl puteți lipi într-un document sau trimite colaboratorilor.",
+          "answerSchemaText": "Da. Faceți clic pe butonul Copiere raport sub statistici. Un rezumat cu toate metricile și evaluarea va fi copiat în clipboard."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descoperiți alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

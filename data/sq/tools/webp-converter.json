@@ -1,0 +1,152 @@
+{
+  "toolKey": "jpgToWebp",
+  "locale": "sq",
+  "metadata": {
+    "title": "Konvertues JPG/PNG në WebP falas – Pa kufizime",
+    "description": "Zvogëloni madhësinë e imazheve pa humbur cilësinë. Konvertoni JPG dhe PNG në WebP dhe përshpejtoni faqen tuaj. Pa regjistrim, funksionon në shfletues.",
+    "ogImage": "/assets/tools/narzedzia-konwerter-jpg-png-na-webp.webp",
+    "path": "/sq/mjetet/konvertues-jpg-png-ne-webp"
+  },
+  "hero": {
+    "title": "Konvertoni imazhet në WebP – zvogëloni madhësinë pa humbur cilësinë",
+    "description": "Ngarkoni imazhe në format JPG ose PNG dhe mjeti do t'i konvertojë në WebP. Skedarë më të vegjël, e njëjta cilësi, faqe më e shpejtë.",
+    "backgroundImage": "/assets/tools/narzedzia-konwerter-jpg-png-na-webp.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/sq/mjetet", "label": "Mjetet" },
+    "third": { "href": "/sq/mjetet/konvertues-jpg-png-ne-webp", "label": "Konvertues JPG/PNG në WebP" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konvertues JPG/PNG në WebP falas",
+      "alternateName": ["Konvertues imazhesh në WebP", "Konvertues JPG në WebP", "Konvertues PNG në WebP"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konvertues falas i JPG dhe PNG në WebP. Zvogëloni madhësinë e imazheve deri në 90% pa humbje të dukshme të cilësisë. I gjithë përpunimi bëhet në shfletuesin tuaj – skedarët nuk dërgohen në asnjë server.",
+      "featureList": [
+        "Konvertimi i JPG në WebP",
+        "Konvertimi i PNG në WebP",
+        "Konvertimi i shumë imazheve njëherësh",
+        "Rregullues cilësie (0–100)",
+        "Krahasimi i madhësisë origjinale dhe WebP",
+        "Ngarkim me drag-and-drop ose zgjedhje skedari",
+        "Parashikim para dhe pas konvertimit",
+        "Shkarkim i çdo imazhi ose të gjithëve në ZIP",
+        "Përpunim lokal në shfletues"
+      ]
+    },
+    "howTo": {
+      "name": "Si të konvertoni JPG dhe PNG në WebP",
+      "description": "Si të konvertoni imazhe në format JPG dhe PNG në formatin WebP. Ngarkoni skedarët, rregulloni cilësinë dhe shkarkoni imazhet e konvertuara.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Ngarkoni imazhet", "text": "Tërhiqni dhe lëshoni skedarët në zonën e shënuar ose zgjidhni ata nga pajisja juaj. Formatet e mbështetura janë JPG dhe PNG." },
+        { "name": "Rregulloni cilësinë", "text": "Përdorni rregulluesin për të vendosur cilësinë e imazhit (0–100). Vlera më e lartë do të thotë cilësi më e mirë por skedar më i madh." },
+        { "name": "Shkarkoni imazhet e konvertuara", "text": "Klikoni butonin e shkarkimit pranë çdo imazhi ose shkarkoni të gjithë njëherësh në një skedar ZIP." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Çfarë është formati WebP dhe pse është i rëndësishëm?",
+      "html": "<p class=\"text-mid\">WebP është një format modern imazhi i zhvilluar nga Google që ofron kompresim më të mirë se JPG dhe PNG. Imazhet në WebP zënë më pak hapësirë – zakonisht 25–34% më pak se JPG dhe deri në 80% më pak se PNG – duke ruajtur cilësinë vizuale.</p><p class=\"text-mid mt-3\">Të gjithë shfletuesit kryesorë (Chrome, Firefox, Safari, Edge) mbështesin WebP. Përdorimi i këtij formati do të thotë ngarkim më i shpejtë i faqes, konsum më i ulët i të dhënave dhe rezultate më të mira të Core Web Vitals – gjë që ndikon drejtpërdrejt në pozicionimin në rezultatet e kërkimit të Google.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Si të përdorni konvertuesin JPG/PNG në WebP",
+      "description": "Konvertimi zgjat vetëm disa minuta:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Ngarkoni imazhet", "description": "Tërhiqni dhe lëshoni skedarët në zonën e shënuar ose zgjidhni ata nga pajisja juaj. Mund të ngarkoni shumë imazhe njëherësh." },
+        { "title": "2. Rregulloni cilësinë", "description": "Përdorni rregulluesin për të vendosur cilësinë e imazhit (0–100). Vlera më e ulët jep skedar më të vogël por cilësi më të ulët." },
+        { "title": "3. Shkarkoni rezultatin", "description": "Klikoni butonin e shkarkimit pranë çdo imazhi ose shkarkoni të gjithë njëherësh në një skedar ZIP." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Si të zgjidhni cilësinë e duhur për WebP",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Cilësia: 80</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">E rekomanduar</span></div><p class=\"text-mid text-sm!\">Raporti më i mirë ndërmjet cilësisë dhe madhësisë së skedarit. Përshtatshme për shumicën e imazheve në ueb dhe e-commerce.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Cilësia: 60–70</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Kompresim agresiv</span></div><p class=\"text-mid text-sm!\">Skedarë më të vegjël. Përshtatshme për miniatura, ikona dhe sfonde dekorative.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Cilësia: 90–100</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Cilësia më e lartë</span></div><p class=\"text-mid text-sm!\">Cilësi shumë e lartë, por skedarë më të mëdhenj. Përshtatshme për portfolio dhe imazhe kryesore të produkteve.</p></div></div>",
+      "html": "<p class=\"text-mid\">Cilësia përcakton raportin ndërmjet cilësisë vizuale dhe madhësisë së skedarit. Për shumicën e imazheve në ueb, vlera 75–85 jep rezultatet më të mira – ndryshimi i cilësisë nuk është i dukshëm për syrin dhe skedari mund të jetë 3–5 herë më i vogël se JPG origjinal.</p><p class=\"text-mid mt-3\">Për miniatura, ikona dhe sfonde dekorative mund ta ulni cilësinë në 60–70 pa humbur mprehësinë. Për imazhe portfolio ose imazhe kryesore të produkteve, vlera 90–95 ruan detajet.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kush ka nevojë për një konvertues WebP?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Pronarët e faqeve të internetit",
+          "description": "Imazhe më të vogla përshpejtojnë ngarkimin e faqes. Kjo përmirëson përvojën e përdoruesit dhe ndikon në pozicionimin në Google."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Pronarët e dyqaneve elektronike",
+          "description": "Shumë imazhe produktesh do të thotë shumë megabajt të dhëna. Konvertimi në WebP zvogëlon kohën e ngarkimit dhe konsumin e të dhënave."
+        },
+        { "icon": "RiBloggerLine", "title": "Blogjerët", "description": "Artikujt me shumë imazhe ngarkohen më ngadalë. WebP zvogëlon madhësinë e imazheve duke ruajtur cilësinë." },
+        { "icon": "RiCodeLine", "title": "Zhvilluesit e uebit", "description": "WebP është standardi modern për imazhet në ueb. Të gjithë shfletuesit kryesorë mbështesin këtë format." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Çfarë e bën këtë konvertues WebP të veçantë?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Përpunim lokal në shfletues",
+          "description": "Imazhet nuk dërgohen në asnjë server – i gjithë përpunimi bëhet në pajisjen tuaj. Privatësia juaj është e mbrojtur."
+        },
+        { "icon": "RiSpeedLine", "title": "Konvertim i menjëhershëm", "description": "Rezultatet shfaqen menjëherë – pa pritje në radhë dhe pa përpunim në server." },
+        { "icon": "RiInfinityLine", "title": "Pa kufizim imazhesh", "description": "Konvertoni aq imazhe sa ju nevojiten. Pa kufizim ditor apo sesioni." },
+        {
+          "icon": "RiScalesLine",
+          "title": "Rregullues cilësie i personalizueshëm",
+          "description": "Vendosni cilësinë (0–100) për çdo imazh dhe merrni raportin më të mirë ndërmjet madhësisë dhe cilësisë."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Pyetjet më të shpeshta për konvertuesin WebP",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Çfarë është formati WebP?",
+          "answer": "WebP është një format modern imazhi i zhvilluar nga Google. Ofron kompresim më të mirë se JPG (imazhe 25–34% më të vogla) dhe njëkohësisht mbështet transparencën (si PNG). Të gjithë shfletuesit kryesorë mbështesin WebP.",
+          "answerSchemaText": "WebP është një format imazhi nga Google me kompresim më të mirë se JPG. Mbështetet nga të gjithë shfletuesit kryesorë."
+        },
+        {
+          "question": "A e përkeqëson konvertimi në WebP cilësinë e imazhit?",
+          "answer": "Me cilësinë 75–85, ndryshimi nuk është i dukshëm për syrin. Kompresimi WebP është më efikas se JPG – me të njëjtën cilësi vizuale, skedari mund të jetë 3–5 herë më i vogël.",
+          "answerSchemaText": "Me cilësinë 75–85 ndryshimi nuk është i dukshëm. WebP ofron kompresim më efikas se JPG."
+        },
+        {
+          "question": "A dërgohen imazhet në server?",
+          "answer": "Jo. I gjithë përpunimi bëhet në shfletuesin tuaj – imazhet nuk dërgohen askund. Pas mbylljes së faqes, të dhënat fshihen nga kujtesa.",
+          "answerSchemaText": "Jo. Imazhet përpunohen në shfletues. Nuk dërgohen në asnjë server."
+        },
+        {
+          "question": "A ka kufizim për numrin e imazheve?",
+          "answer": "Jo. Mund të konvertoni aq imazhe sa ju nevojiten. Pa kufizim ditor apo sesioni.",
+          "answerSchemaText": "Jo. Nuk ka kufizim për numrin e imazheve që mund të konvertohen."
+        },
+        {
+          "question": "A e mbështesin të gjithë shfletuesit WebP?",
+          "answer": "Po. Të gjithë shfletuesit kryesorë – Chrome, Firefox, Safari (nga versioni 14) dhe Edge – mbështesin formatin WebP. Për shfletuesit më të vjetër rekomandohet të keni një kopje rezervë në JPG.",
+          "answerSchemaText": "Po. Chrome, Firefox, Safari 14+ dhe Edge të gjithë mbështesin WebP."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Zbuloni mjete të tjera" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

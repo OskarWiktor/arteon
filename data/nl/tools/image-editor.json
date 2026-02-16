@@ -1,0 +1,363 @@
+{
+  "toolKey": "imageResize",
+  "locale": "nl",
+  "metadata": {
+    "title": "Gratis afbeeldingseditor – Bijsnijden en converteren",
+    "description": "Snijd bij, wijzig het formaat en converteer afbeeldingen tussen JPG, PNG en WebP. Pas de kwaliteit en verhoudingen aan zonder software. Gratis, zonder account.",
+    "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
+    "path": "/nl/tools/afbeeldingeneditor"
+  },
+  "hero": {
+    "title": "Gratis afbeeldingeneditor – Bijsnijden, formaat wijzigen & converteren",
+    "description": "Wijzig het formaat, snij bij en converteer afbeeldingen voor Instagram, Facebook en LinkedIn. Kant-en-klare formaten, ronde avatars, export naar JPG, PNG en WebP. Lokale verwerking in de browser.",
+    "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/afbeeldingeneditor",
+      "label": "Afbeeldingeneditor"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Gratis afbeeldingeneditor",
+      "alternateName": [
+        "Afbeelding formaat wijzigen",
+        "Afbeelding bijsnijden",
+        "Instagram afbeeldingsformaat tool",
+        "Facebook afbeeldingsformaat tool",
+        "JPG naar WebP-converter",
+        "Rond profielfoto tool",
+        "Afbeelding compressie"
+      ],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageEditor",
+      "description": "Gratis afbeeldingeneditor voor formaat wijzigen, bijsnijden en formaatconversie. Kant-en-klare presets voor Instagram, Facebook en LinkedIn. Ronde avatar maken. Export naar JPG, PNG en WebP met kwaliteitscontrole. Lokale verwerking in de browser.",
+      "featureList": [
+        "Afbeeldingen naar elke afmeting schalen",
+        "Bijsnijden met interactieve gebiedsselectie",
+        "Kant-en-klare Instagram-formaten (vierkant, staand, story, reels)",
+        "Kant-en-klare Facebook-formaten (post, paginacover)",
+        "Kant-en-klare LinkedIn-formaten (post, profielbanner)",
+        "Kant-en-klare webformaten (OG-afbeelding, hero, banner, thumbnail)",
+        "Bijsnijdvormen: rechthoek, vierkant, cirkel (ronde avatar)",
+        "3x3-raster (regel van derden) met kleurselectie",
+        "Bijsnijdzoom 100–300%",
+        "Precieze bijsnijdpositie (X, Y) met centrering",
+        "Formaatconversie: JPG, PNG, WebP",
+        "Compressiekwaliteitscontrole 60–100%",
+        "Lokale verwerking in de browser",
+        "Gratis tool, geen login vereist"
+      ]
+    },
+    "howTo": {
+      "name": "Hoe een afbeelding bij te snijden en te schalen voor social media",
+      "description": "Hoe een afbeelding te schalen voor Instagram (1080x1080, 1080x1350, story), Facebook, LinkedIn en OG-afbeelding. JPG naar WebP-conversie en ronde avatar maken.",
+      "steps": [
+        {
+          "name": "Voeg een afbeelding toe",
+          "text": "Sleep een bestand naar het aangewezen gebied of selecteer een afbeelding van uw apparaat. Ondersteunde formaten: JPG, PNG, WebP."
+        },
+        {
+          "name": "Kies afmetingen of een preset",
+          "text": "Voer doelafmetingen in pixels in of selecteer een kant-en-klaar formaat (bijv. Instagram-post, Facebook-cover, OG-afbeelding)."
+        },
+        {
+          "name": "Pas het bijsnijden aan",
+          "text": "Verplaats en zoom de afbeelding om het beste gebied te selecteren. Het heldere gebied in de preview toont precies wat wordt opgeslagen."
+        },
+        {
+          "name": "Kies formaat en download",
+          "text": "Selecteer het bestandsformaat (JPG, PNG of WebP), stel de compressiekwaliteit in en download de afgewerkte afbeelding."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Afbeeldingen schalen - bijsnijden, converteren en comprimeren in één tool",
+      "html": "<p class=\"text-mid\">De afbeeldingeneditor laat u snel afbeeldingen aanpassen aan specifieke afmetingen. U kunt een afbeelding schalen naar elke pixelafmeting, een kant-en-klaar formaat voor social media selecteren, of een deel van de afbeelding bijsnijden met precieze kadrering.</p><p class=\"text-mid mt-3\">Naast schalen biedt de tool formaatconversie (JPG, PNG, WebP), ronde avatar-creatie en compressiekwaliteitscontrole.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hoe een afbeelding te schalen",
+      "description": "Een afbeelding bewerken duurt slechts enkele seconden:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Voeg een afbeelding toe",
+          "description": "Sleep een bestand naar het aangewezen gebied of selecteer een afbeelding van uw apparaat. Ondersteunde formaten: JPG, PNG, WebP."
+        },
+        {
+          "title": "2. Stel afmetingen in",
+          "description": "Voer afmetingen in pixels in of selecteer een kant-en-klaar formaat (Instagram, Facebook, YouTube, LinkedIn, OG-afbeelding)."
+        },
+        {
+          "title": "3. Download",
+          "description": "Pas het bijsnijden aan, kies het bestandsformaat (JPG, PNG, WebP), stel de kwaliteit in en download de afgewerkte afbeelding."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe een afbeelding toe te voegen",
+      "html": "<p class=\"text-mid\">De tool accepteert afbeeldingen in JPG-, PNG- en WebP-formaat. U kunt een afbeelding op twee manieren toevoegen:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Slepen en neerzetten</strong> - pak een bestand uit een map op uw computer en zet het neer op het uploadgebied (het gebied met een stippellijn).</li><li><strong>Selecteren van apparaat</strong> - klikken op het uploadgebied opent een bestandsselectiedialoog.</li></ul><p class=\"text-mid mt-3\">Na het toevoegen van een afbeelding leest de tool automatisch de originele afmetingen en toont een preview. U kunt nu doorgaan naar de bijsnijdinstellingen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Stel doelafmetingen in",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Afmetingen in px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Kant-en-klare formaten</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Breedte (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly></div><div><label class=\"text-[14px]! font-medium\">Hoogte (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span>Verhoudingen behouden (tweede afmeting automatisch)</span></label></div></div>",
+      "html": "<p class=\"text-mid\">In het tabblad <strong>Afmetingen in px</strong> voert u breedte en hoogte handmatig in. De optie <strong>Verhoudingen behouden</strong> past automatisch de tweede afmeting aan.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Afbeeldingsafmetingen voor Instagram, Facebook en LinkedIn",
+      "html": "<p class=\"text-mid mb-4\">De tool bevat kant-en-klare formaten met optimale afmetingen voor de populairste platforms:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform</th><th class=\"py-2 pr-4 font-semibold\">Formaat</th><th class=\"py-2 pr-4 font-semibold\">Afmetingen (px)</th><th class=\"py-2 font-semibold\">Verhouding</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Vierkante post</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Staande post</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Post</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Paginacover</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Post</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Profielbanner</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG-afbeelding</td><td class=\"py-2 pr-4\">Link delen</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kant-en-klare formaten - welke kiezen?",
+      "description": "Elk formaat correspondeert met specifieke platform- of gebruiksvereisten:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInstagramLine",
+          "title": "Instagram - vierkante post (1080×1080)",
+          "description": "Standaard Instagram-postformaat. 1:1-verhouding. Werkt goed in de feed en ziet er goed uit op zowel telefoon als desktop."
+        },
+        {
+          "icon": "RiInstagramLine",
+          "title": "Instagram - staande post (1080×1350)",
+          "description": "Verticaal postformaat (4:5-verhouding). Neemt meer ruimte in de feed dan een vierkant, wat de betrokkenheid kan verhogen."
+        },
+        {
+          "icon": "RiInstagramLine",
+          "title": "Instagram - story / reels (1080×1920)",
+          "description": "Verticaal volledig scherm formaat (9:16-verhouding). Gebruikt in stories en reels. Vult het hele telefoonscherm."
+        },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook - post (1200×630)",
+          "description": "Optimaal formaat voor Facebook-posts en gedeelde links. Verhouding dicht bij 16:9."
+        },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook - paginacover (820×360)",
+          "description": "Achtergrondfoto voor een Facebook-bedrijfspagina. Breed, panoramisch formaat - kan anders worden bijgesneden op verschillende apparaten."
+        },
+        {
+          "icon": "RiLinkedinLine",
+          "title": "LinkedIn - post (1200×1200)",
+          "description": "Vierkant formaat voor LinkedIn-posts. Ziet er goed uit in de feed en op mobiele apparaten."
+        },
+        {
+          "icon": "RiLinkedinLine",
+          "title": "LinkedIn - profielbanner (1584×396)",
+          "description": "Achtergrondafbeelding voor een persoonlijk of bedrijfs-LinkedIn-profiel. Zeer breed formaat - centreer het belangrijkste element in het bijsnijden."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "OG-afbeelding (1200×630)",
+          "description": "Afbeelding die wordt weergegeven bij het delen van een link op social media (Open Graph). Standaard voor Facebook, Twitter, LinkedIn en andere platforms."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Artikelafbeelding (1600×900)",
+          "description": "Breed formaat geschikt voor blogartikeltitels. 16:9-verhouding ziet er goed uit op tekstrijke pagina's."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Websitebanner (1920×600)",
+          "description": "Zeer breed formaat voor websitebanners. Werkt als achtergrond onder headers of in aanbiedingssecties."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Artikelthumbnail (800×600)",
+          "description": "Kleiner formaat voor thumbnails op artikellijsten, productcarrousels of zoekresultaatpreviews."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Hero-sectie (1920×1080)",
+          "description": "Full HD volledig scherm formaat. Gebruikt als achtergrond van de hoofdsectie op homepagina's of aanbiedingspagina's."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe een afbeelding bij te snijden",
+      "html": "<p class=\"text-mid\">Na het instellen van doelafmetingen verschijnt een interactief bijsnijdgebied op de preview. Het heldere deel van de afbeelding is het gedeelte dat wordt opgeslagen - de rest is gedimd.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Bijsnijdgebied verslepen</p><p class=\"text-mid mt-1\">Pak het heldere gebied en sleep het naar elk deel van de afbeelding. Zo kiest u welk deel van de foto wordt geëxporteerd.</p></div><div><p class=\"text-dark font-semibold\">Formaat wijzigen via handvatten</p><p class=\"text-mid mt-1\">In de hoeken van het bijsnijdgebied zijn kleine vierkantjes (handvatten). Door ze te slepen wijzigt u de grootte van het bijsnijden - u kunt vergroten of verkleinen met behoud van de gekozen verhoudingen.</p></div><div><p class=\"text-dark font-semibold\">Zoom</p><p class=\"text-mid mt-1\">In het tabblad <strong>Zoom</strong> vindt u een schuifregelaar om de zoom aan te passen (100–300%). Een hogere waarde betekent dat het bijsnijden een kleiner deel van de originele afbeelding bedekt - handig wanneer u een specifiek detail wilt uitsnijden.</p></div><div><p class=\"text-dark font-semibold\">Precieze positiecontrole</p><p class=\"text-mid mt-1\">In het tabblad <strong>Positie</strong> kunt u de exacte bijsnijdpositie in percentages instellen (0–100% voor X- en Y-assen). Centreerknoppen laten u snel het bijsnijden in het midden van de afbeelding positioneren.</p></div></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Bijsnijdvormen",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Rechthoek</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Vierkant</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Cirkel</span></div></div>",
+      "html": "<p class=\"text-mid\">In het tabblad <strong>Bijsnijdvormen</strong> kiest u de vorm van de geëxporteerde afbeelding: rechthoek (met geselecteerde verhoudingen), vierkant (forceert 1:1), of cirkel (met transparante achtergrond).</p><p class=\"text-mid mt-3\">De cirkelvorm maakt een ronde avatar met een transparante achtergrond buiten de cirkel. De tool schakelt automatisch het formaat over naar PNG of WebP, aangezien JPG geen transparantie ondersteunt.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "3×3-raster - waarvoor dient het?",
+      "html": "<p class=\"text-mid\">Een raster dat de afbeelding in 9 gelijke delen verdeelt is zichtbaar op het bijsnijdgebied. Dit is een visualisatie van de <strong>regel van derden</strong> - een van de fundamentele principes van fotografische compositie.</p><p class=\"text-mid mt-3\">De regel stelt dat de belangrijkste elementen van een foto (gezicht, product, interessepunt) op de kruispunten van de rasterlijnen of langs die lijnen moeten worden geplaatst. Zo'n compositie is dynamischer en visueel aantrekkelijker dan het onderwerp precies in het midden te plaatsen.</p><p class=\"text-mid mt-3\">In het tabblad <strong>Rasterkleur</strong> kunt u de lijnkleur wijzigen (groen, wit, zwart, rood, geel) zodat het raster duidelijk zichtbaar is op verschillende afbeeldingen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTabs",
+      "title": "Export - welk formaat kiezen?",
+      "tabs": [
+        {
+          "title": "JPG",
+          "icon": "RiImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Het populairste formaat voor foto's. Goede compressie met behoud van visuele kwaliteit. Ondersteunt geen transparantie - de achtergrond wordt altijd gevuld met een kleur.</p><p class=\"text-mid\">Een goede keuze voor productfoto's, portretten en de meeste websiteafbeeldingen. De kwaliteitsschuifregelaar (60–100%) regelt de compressie.</p></div>"
+        },
+        {
+          "title": "PNG",
+          "icon": "RiFileImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Verliesvrij formaat - behoudt volledige kwaliteit, maar bestanden zijn groter. Ondersteunt transparantie (vereist voor de cirkelvorm).</p><p class=\"text-mid\">Een goede keuze voor afbeeldingen met tekst, iconen en afbeeldingen die scherpe randen vereisen.</p></div>"
+        },
+        {
+          "title": "WebP",
+          "icon": "RiCropLine",
+          "html": "<div><p class=\"text-mid mb-3\">Modern formaat dat de voordelen van JPG en PNG combineert - kleine bestanden, goede kwaliteit, transparantie-ondersteuning. Ondersteund door alle moderne browsers.</p><p class=\"text-mid\">Aanbevolen voor websites - kleinere bestanden betekenen snellere laadtijden.</p></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Beeldverhoudingen - wat betekenen ze?",
+      "description": "De beeldverhouding is de relatie tussen de breedte en hoogte van een afbeelding. Geschreven als twee getallen gescheiden door een dubbele punt:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "1:1 (vierkant)",
+          "description": "Breedte is gelijk aan hoogte. Instagram vierkante post, profielfoto's, iconen."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "4:5 (staand)",
+          "description": "Licht verticaal formaat. Instagram staande post - neemt meer ruimte in de feed dan een vierkant."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "3:2 (klassiek)",
+          "description": "Traditionele analoge fotografieverhoudingen. Veel digitale camera's gebruiken ook dit formaat."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "16:9 (breedbeeld)",
+          "description": "Standaard HD-video, presentatie- en monitorformaat. YouTube, Facebook-video, websitebanners."
+        },
+        {
+          "icon": "RiInstagramLine",
+          "title": "9:16 (verticaal volledig scherm)",
+          "description": "Omgekeerd 16:9 - een verticaal formaat dat het hele telefoonscherm vult. Instagram Stories, TikTok, YouTube Shorts."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen over de afbeeldingeneditor",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kan de editor zeer grote afbeeldingen verwerken?",
+          "answer": "Ja, hoewel de verwerking langzamer kan zijn voor afbeeldingen boven 4000×4000 pixels - dit hangt af van de kracht van het apparaat en het beschikbare browsergeheugen. Alle verwerking vindt lokaal plaats, zonder bestanden naar een server te sturen.",
+          "answerSchemaText": "Ja. Verwerking kan langzamer zijn boven 4000×4000 px. Alle verwerking is lokaal."
+        },
+        {
+          "question": "Welk exportformaat kiezen - JPG, PNG of WebP?",
+          "answer": "JPG is een goede keuze voor foto's met veel kleuren en gradiënten - kleine bestanden met goede kwaliteit. PNG behoudt de hoogste kwaliteit en ondersteunt transparantie (bijv. ronde avatar). WebP combineert de voordelen van beide - kleine bestanden met hoge kwaliteit en transparantie-ondersteuning.",
+          "answerSchemaText": "JPG voor foto's, PNG voor transparantie, WebP combineert kleine bestanden met hoge kwaliteit."
+        },
+        {
+          "question": "Hoe maak ik een ronde profielfoto?",
+          "answer": "Selecteer in het tabblad Bijsnijdvormen de optie Cirkel. De tool schakelt automatisch het formaat over naar PNG of WebP (JPG ondersteunt geen transparantie). Het gebied buiten de cirkel wordt transparant.",
+          "answerSchemaText": "Selecteer Cirkel in het tabblad Bijsnijdvormen. Het gebied buiten de cirkel is transparant."
+        },
+        {
+          "question": "Wat zijn de afbeeldingsafmetingen voor Instagram?",
+          "answer": "Instagram ondersteunt drie hoofdformaten: vierkante post (1080×1080 px, 1:1-verhouding), staande post (1080×1350 px, 4:5-verhouding) en story/reels (1080×1920 px, 9:16-verhouding). De tool heeft kant-en-klare formaten voor elk van deze afmetingen.",
+          "answerSchemaText": "Vierkante post: 1080×1080 px, staande post: 1080×1350 px, story/reels: 1080×1920 px."
+        },
+        {
+          "question": "Hoe werkt de kwaliteitsschuifregelaar?",
+          "answer": "De kwaliteitsschuifregelaar (60–100%) regelt het compressieniveau voor JPG- en WebP-formaten. Een hogere waarde betekent betere beeldkwaliteit maar een groter bestand. Voor de meeste social media-toepassingen is de optimale waarde 70–85%.",
+          "answerSchemaText": "De schuifregelaar regelt JPG- en WebP-compressie. 70–85% is optimaal voor social media."
+        },
+        {
+          "question": "Waarom is JPG-formaat niet beschikbaar met de cirkelvorm?",
+          "answer": "JPG-formaat ondersteunt geen transparantie. De cirkelvorm vereist een transparante achtergrond buiten de cirkel, dus de tool beperkt automatisch de keuze tot PNG of WebP - formaten met een alfakanaal.",
+          "answerSchemaText": "JPG ondersteunt geen transparantie. Cirkelvorm vereist PNG of WebP."
+        },
+        {
+          "question": "Wat betekenen beeldverhoudingen zoals 4:5 of 16:9?",
+          "answer": "Beeldverhoudingen definiëren de relatie tussen de breedte en hoogte van een afbeelding. Bijvoorbeeld, 4:5 betekent dat de breedte 4 delen is en de hoogte 5 delen. 16:9 is de typische verhouding voor films en presentaties. Instagram staande post gebruikt 4:5, terwijl story en reels 9:16 gebruiken.",
+          "answerSchemaText": "4:5 = breedte 4 delen, hoogte 5 delen. 16:9 = standaard breedbeeld."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ontdek andere tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "toolKey": "favicon",
+  "locale": "sv",
+  "metadata": {
+    "title": "Gratis favicon-generator – ICO och PNG från en bild",
+    "description": "Generera favicon.ico och PNG-ikoner från en enda bild, i enlighet med webbläsar- och Lighthouse-krav. Utan registrering, fungerar i webbläsaren.",
+    "ogImage": "/assets/tools/narzedzia-generator-favicon.webp",
+    "path": "/sv/verktyg/gratis-favicon-generator"
+  },
+  "hero": {
+    "title": "Generera favicon.ico och PNG-ikoner från en bild",
+    "description": "Ladda upp en bild och verktyget genererar favicon.ico och en komplett uppsättning PNG-ikoner som behövs för webbläsare, mobila enheter och Lighthouse.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-favicon.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/sv/verktyg", "label": "Verktyg" },
+    "third": { "href": "/sv/verktyg/gratis-favicon-generator", "label": "Favicon-generator" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Gratis favicon-generator",
+      "alternateName": ["Favicon.ico-generator", "Webbikongenerator", "Favicon-verktyg", "Favicon-generator från bild"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "FaviconGenerator",
+      "description": "Gratis favicon-generator. Ladda upp en bild och få favicon.ico och en komplett uppsättning PNG-ikoner för webbläsare, mobila enheter och PWA.",
+      "featureList": [
+        "Generering av favicon.ico (16×16, 32×32, 48×48 px)",
+        "PNG-ikoner för webbläsare (16×16 till 512×512 px)",
+        "Apple Touch-ikon (180×180 px)",
+        "Android/PWA-ikoner (192×192, 512×512 px)",
+        "Microsoft-ikoner (150×150, 310×310 px)",
+        "Beskärning och storleksändring av källbild",
+        "Förhandsgranskning i realtid",
+        "Nedladdning av alla ikoner i ZIP",
+        "Lokal bearbetning i webbläsaren"
+      ]
+    },
+    "howTo": {
+      "name": "Hur man genererar favicon från en bild",
+      "description": "Hur man genererar favicon.ico och PNG-ikoner från en bild för webbläsare och mobila enheter.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Ladda upp bild", "text": "Dra och släpp filen i det markerade området eller välj den från din enhet. Stödda format är JPG, PNG, SVG och WebP." },
+        { "name": "Beskär bilden", "text": "Justera beskärningsområdet för att välja lämplig del av bilden för favicon." },
+        { "name": "Kontrollera förhandsgranskning", "text": "Se hur favicon ser ut i webbläsarfliken och i olika storlekar." },
+        { "name": "Ladda ner ikoner", "text": "Ladda ner favicon.ico och den kompletta uppsättningen PNG-ikoner i en ZIP-fil." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Vad är en favicon och varför är den viktig?",
+      "html": "<p class=\"text-mid\">En favicon är en liten ikon som visas i webbläsarfliken, i bokmärkeslistan och på telefonens startskärm. Det är ett av de första elementen som användaren ser – redan innan sidan laddats klart.</p><p class=\"text-mid mt-3\">En professionell favicon bygger varumärkesigenkänning och gör det enklare för användaren att hitta din sida bland många öppna flikar. Avsaknad av favicon kan ge ett oprofessionellt intryck och minska besökarnas förtroende.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Hur man använder favicon-generatorn",
+      "description": "Att generera favicon tar bara några minuter:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Ladda upp bild", "description": "Dra och släpp filen i det markerade området eller välj den från din enhet. En kvadratisk bild fungerar bäst." },
+        { "title": "2. Beskär och justera", "description": "Justera beskärningsområdet för att välja lämplig del av bilden. Se hur den ser ut i olika storlekar." },
+        { "title": "3. Ladda ner ikoner", "description": "Ladda ner favicon.ico och den kompletta uppsättningen PNG-ikoner i en ZIP-fil. Alla ikoner är redo att användas." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Vilka ikoner skapar generatorn?",
+      "description": "Generatorn skapar en komplett uppsättning ikoner som behövs för moderna webbläsare och enheter:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiGlobalLine", "title": "favicon.ico", "description": "ICO-fil som innehåller tre storlekar (16×16, 32×32, 48×48 px). Stöds av alla webbläsare, inklusive äldre." },
+        { "icon": "RiChromeLine", "title": "Webbläsarikoner (PNG)", "description": "Uppsättning PNG-ikoner för moderna webbläsare: 16×16, 32×32, 48×48, 96×96 och 128×128 px." },
+        { "icon": "RiAppleLine", "title": "Apple Touch Icon", "description": "Ikon 180×180 px för iOS-enheter (iPhone, iPad). Visas på startskärmen efter att sidan lagts till." },
+        { "icon": "RiAndroidLine", "title": "Android/PWA-ikoner", "description": "Ikoner 192×192 och 512×512 px för Progressive Web Apps och Android-enheter." },
+        { "icon": "RiWindowsLine", "title": "Microsoft-ikoner", "description": "Ikoner 150×150 och 310×310 px för Windows-paneler och Microsoft Edge." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Vad gör denna favicon-generator speciell?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Lokal bearbetning i webbläsaren", "description": "Bilden laddas inte upp till någon server. All bearbetning sker på din enhet." },
+        { "icon": "RiCheckboxCircleLine", "title": "Uppfyller Lighthouse-krav", "description": "Genererade ikoner uppfyller Google Lighthouse-kraven för storlek och format." },
+        { "icon": "RiDevicesLine", "title": "Ikoner för alla enheter", "description": "En uppsättning filer täcker alla webbläsare, iOS, Android och Windows." },
+        { "icon": "RiInfinityLine", "title": "Utan begränsningar, utan registrering", "description": "Generera så många faviconer du behöver. Utan registrering, utan avgifter." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor om favicon-generatorn",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Vilken bild är bäst för favicon?",
+          "answer": "En kvadratisk bild (minst 512×512 px) med enkel bakgrund är bäst. Logotyper, initialer eller enkla ikoner ger bäst resultat. Bilder med många detaljer kan se dåliga ut i liten storlek (16×16 px).",
+          "answerSchemaText": "En kvadratisk bild, minst 512×512 px, med enkel bakgrund. Logotyper eller enkla ikoner ger bäst resultat."
+        },
+        {
+          "question": "Vad är skillnaden mellan favicon.ico och PNG?",
+          "answer": "ICO-filen kan innehålla flera storlekar i en fil och stöds av alla webbläsare, inklusive äldre. PNG-filer har högre kvalitet men kräver en separat HTML-tagg för varje storlek. Det rekommenderas att använda båda.",
+          "answerSchemaText": "ICO innehåller flera storlekar i en fil. PNG erbjuder högre kvalitet. Det rekommenderas att använda båda."
+        },
+        {
+          "question": "Skickas bilden till en server?",
+          "answer": "Nej. All bearbetning sker i din webbläsare. Bilden sparas inte och skickas ingenstans.",
+          "answerSchemaText": "Nej. Bilden bearbetas i webbläsaren. Den skickas inte till någon server."
+        },
+        {
+          "question": "Hur lägger man till favicon på webbplatsen?",
+          "answer": "Placera ikonfilerna i webbplatsens rotmapp och lägg till lämpliga HTML-taggar i sidans &lt;head&gt;-sektion. Den nedladdade ZIP-filen innehåller implementeringsinstruktioner.",
+          "answerSchemaText": "Placera ikonfilerna i rotmappen och lägg till HTML-taggar i head-sektionen."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Utforska fler verktyg" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

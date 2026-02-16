@@ -1,0 +1,229 @@
+{
+  "toolKey": "colorPalette",
+  "locale": "sw",
+  "metadata": {
+    "title": "Kitengenezaji Paleti za Rangi Bure \u2013 Paleti 9 Kutoka Rangi Moja",
+    "description": "Tengeneza paleti 9 za rangi kutoka rangi moja ya msingi: monochromatic, nyongeza, triadic, pastel na zaidi. Nakili misimbo ya HEX kwa kubofya moja. Bila usajili, bila kikomo.",
+    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "path": "/sw/zana/kitengenezaji-paleti-za-rangi"
+  },
+  "hero": {
+    "title": "Kitengenezaji paleti za rangi",
+    "description": "Weka rangi moja ya msingi, na zana itatengeneza paleti 9 za rangi zinazosaidiana: monochromatic, nyongeza, triadic, pastel, na zaidi. Kila rangi inaweza kunakiliwa na msimbo wake wa HEX.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/sw/zana", "label": "Zana" },
+    "third": { "href": "/sw/zana/kitengenezaji-paleti-za-rangi", "label": "Kitengenezaji paleti za rangi" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Kitengenezaji paleti za rangi",
+      "alternateName": ["Kitengenezaji mpango wa rangi", "Kitengenezaji rangi", "Zana ya kulinganisha rangi", "Kitengenezaji usawa wa rangi"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorPaletteGenerator",
+      "description": "Kitengenezaji bure cha paleti za rangi. Weka rangi moja ya HEX na zana itatengeneza mipango 9: monochromatic, jirani, nyongeza, triadic, nyongeza iliyogawanywa, pastel, giza, toni, na minimalist. Kila rangi inaweza kunakiliwa na msimbo wake wa HEX na thamani ya HSL.",
+      "featureList": [
+        "Mpango wa monochromatic \u2013 vivuli vya rangi moja",
+        "Mpango wa jirani \u2013 rangi zinazopakana kwenye gurudumu la rangi",
+        "Mpango wa nyongeza \u2013 rangi zinazopingana",
+        "Mpango wa triadic \u2013 rangi 3 kwa vipindi sawa",
+        "Mpango wa nyongeza iliyogawanywa \u2013 rangi ya msingi na jirani 2 za nyongeza yake",
+        "Paleti ya pastel \u2013 vivuli vyepesi, vilivyopunguzwa",
+        "Paleti ya giza \u2013 rangi za kina kwa mandhari za giza",
+        "Paleti ya toni \u2013 kiwango cha mwanga wa rangi moja",
+        "Paleti ya minimalist \u2013 msisitizo mkali na rangi za upande zisizo na rangi",
+        "Rangi ya msingi kwa muundo wa HEX",
+        "Kichaguzi cha rangi kwa uchaguzi wa kuona",
+        "Rangi ya kuanzia ya nasibu",
+        "Nakili msimbo wa HEX kwenye ubao wa kunakili",
+        "Thamani ya HSL inayoonyeshwa karibu na kila rangi",
+        "Usindikaji wa ndani kwenye kivinjari"
+      ]
+    },
+    "howTo": {
+      "name": "Jinsi ya kutengeneza paleti ya rangi kutoka rangi moja ya msingi",
+      "description": "Jinsi ya kutengeneza paleti 9 za rangi kutoka rangi moja ya msingi: monochromatic, nyongeza, triadic, pastel, na zaidi.",
+      "steps": [
+        { "name": "Chagua rangi ya msingi", "text": "Weka msimbo wa HEX kwenye sehemu ya maandishi au tumia kichaguzi cha rangi kuchagua rangi kwa kuona." },
+        { "name": "Thibitisha rangi", "text": "Thibitisha rangi iliyochaguliwa na kitufe cha Update Color \u2013 zana itatengeneza paleti kulingana na rangi yako ya msingi." },
+        { "name": "Vinjari paleti", "text": "Zana itatengeneza kiotomatiki paleti 9 tofauti: monochromatic, jirani, nyongeza, triadic, nyongeza iliyogawanywa, pastel, giza, toni, na minimalist." },
+        { "name": "Nakili rangi", "text": "Karibu na kila rangi utapata kitufe cha Nakili \u2013 msimbo wa HEX unakiliwa kwenye ubao wa kunakili wa mfumo wako." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Kwa nini kutengeneza paleti ya rangi?",
+      "html": "<p class=\"text-mid\">Paleti thabiti ya rangi ni msingi wa kila mradi wa kuona \u2013 kutoka tovuti, kupitia nembo, hadi nyenzo zilizochapishwa. Kuchagua rangi kwa mikono zinazofanya kazi pamoja kunahitaji ujuzi wa nadharia ya rangi. Kitengenezaji kinafanya kiotomatiki: unatoa rangi moja ya msingi (mfano rangi ya nembo yako), na zana inatengeneza seti 9 za rangi kulingana na mipango iliyothibitishwa ya usawa wa rangi.</p><p class=\"text-mid mt-3\">Kila rangi iliyotengenezwa ina msimbo wake wa HEX (mfano #4F6BF5) na thamani ya HSL (hue, saturation, lightness). Msimbo wa HEX unaweza kubandikwa moja kwa moja kwenye CSS, Figma, Canva, au programu yoyote ya michoro.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Jinsi ya kutumia kitengenezaji cha paleti za rangi",
+      "description": "Mchakato mzima unachukua sekunde chache tu:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Weka rangi ya msingi",
+          "description": "Weka msimbo wa HEX (mfano #4F6BF5) kwenye sehemu ya maandishi au chagua rangi kutoka kichaguzi cha rangi. Unaweza pia kutumia kitufe cha Rangi ya Nasibu."
+        },
+        { "title": "2. Thibitisha uchaguzi wako", "description": "Baada ya kubofya kitufe cha Update Color, zana itatengeneza kiotomatiki paleti 9 kulingana na mipango tofauti ya usawa wa rangi." },
+        {
+          "title": "3. Nakili rangi unazohitaji",
+          "description": "Karibu na kila rangi kuna kitufe cha Nakili \u2013 msimbo wa HEX unakwenda kwenye ubao wa kunakili na unaweza kubandikwa moja kwa moja katika mradi wako."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Mipango gani ya rangi zana inatengeneza?",
+      "description": "Kitengenezaji kinatengeneza aina 9 za paleti \u2013 kila moja inategemea kanuni tofauti ya nadharia ya rangi:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiStackLine",
+          "title": "Paleti ya monochromatic",
+          "description": "Vivuli kadhaa vya rangi moja \u2013 kutoka nyepesi hadi nyeusi. Rangi zote zina hue sawa kwenye gurudumu la rangi na zinatofautiana kwa mwanga tu. Inafanya kazi vizuri katika miundo ya kifahari na ya minimalist."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Paleti ya jirani",
+          "description": "Rangi zinazopakana kwenye gurudumu la rangi (zimesogezwa takriban 30\u00b0 kwa pande zote kutoka msingi). Zinatengeneza mabadiliko ya rangi yanayosaidiana na laini. Inafaa kwa miradi inayojenga hali ya joto au baridi."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Paleti ya nyongeza",
+          "description": "Rangi ya msingi na rangi inayopingana kwenye gurudumu la rangi (msogeo wa 180\u00b0). Inatengeneza utofautishaji mkali wa kuona. Muhimu pale ambapo kipengele kinahitaji kuvutia umakini \u2013 vitufe, vichwa vilivyoangaziwa, bango za matangazo."
+        },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Paleti ya triadic",
+          "description": "Rangi tatu zilizo umbali wa 120\u00b0 kwenye gurudumu la rangi \u2013 zinaunda pembetatu sawa. Mchanganyiko wenye nguvu na unaobadilika. Inafanya kazi vizuri katika miradi ya ubunifu: utambulisho wa chapa vijana, nyenzo za matangazo."
+        },
+        {
+          "icon": "RiCursorLine",
+          "title": "Paleti ya nyongeza iliyogawanywa",
+          "description": "Toleo laini zaidi la paleti ya nyongeza. Badala ya rangi moja inayopingana, inatumia rangi mbili zilizosogezwa takriban 30\u00b0 kutoka nyongeza. Inatoa utofautishaji wazi lakini bila mvutano mkali wa kuona."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Paleti ya pastel",
+          "description": "Hue sawa yenye saturation iliyopunguzwa na mwanga ulioongezwa \u2013 rangi laini, za upole. Maarufu katika vipodozi, mitindo ya watoto, na sekta ya chakula."
+        },
+        {
+          "icon": "RiMoonLine",
+          "title": "Paleti ya giza",
+          "description": "Rangi ya msingi kwa saturation ya juu na mwanga uliopunguzwa \u2013 rangi za kina, kali. Muhimu kwa kuunda mandhari za giza za tovuti na programu, pamoja na nyenzo za chapa za hali ya juu."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Paleti ya toni",
+          "description": "Hatua kadhaa za mwanga wa rangi moja \u2013 kutoka nyepesi sana hadi nyeusi. Muhimu kwa kujenga miingiliano ambapo rangi hiyo hiyo inahitaji matoleo tofauti."
+        },
+        {
+          "icon": "RiContractLeftRightLine",
+          "title": "Paleti ya minimalist",
+          "description": "Msisitizo mmoja mkali wa rangi na rangi kadhaa nyepesi sana zisizo na rangi. Paleti nzima inabaki kuwa ya kimya. Inafanya kazi vizuri katika miingiliano ya kisasa yenye nafasi nyeupe nyingi."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Kitengenezaji cha paleti ya rangi kinategemea nini?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0\u00b0\u2013360\u00b0 kwenye gurudumu la rangi</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%\u2013100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%\u2013100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">Paleti zote zinaundwa kwa kubadilisha kihesabu rangi ya msingi katika nafasi ya rangi ya HSL. HSL inaelezea rangi kwa thamani tatu: hue (H) ni nafasi kwenye gurudumu la rangi (0\u00b0\u2013360\u00b0), saturation (S) inaamua nguvu ya rangi, na lightness (L) \u2013 jinsi rangi inavyokuwa nyepesi au nyeusi.</p><p class=\"text-mid mt-3\">Paleti za nyongeza, triadic, na nyongeza iliyogawanywa zinategemea jiometri ya gurudumu la rangi \u2013 rangi zinawekwa kwa vipindi sawa vya pembe, kutengeneza usawa wa kuona. Paleti za monochromatic, pastel, na giza zinabadilisha mwanga na saturation tu huku zikihifadhi hue sawa.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Wapi kutumia paleti za rangi zilizozalishwa",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Utambulisho wa kuona wa chapa",
+          "description": "Chagua rangi zinazosaidiana kwa nembo iliyopo au ujenga paleti ya chapa kutoka mwanzo \u2013 kwa kadi za biashara, stesheni, na nyenzo za masoko."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Tovuti",
+          "description": "Weka rangi kuu, msisitizo, na vivuli vya mandharinyuma. Misimbo ya HEX iliyonakiliwa inabandikwa moja kwa moja kwenye CSS au usanidi wa mandhari."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Miingiliano ya programu",
+          "description": "Paleti ya toni hutoa matoleo ya mwanga ya rangi moja \u2013 nyepesi kwa mandharinyuma, nyeusi kwa maandishi, ya kati kwa mipaka na hali za maingiliano."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Michoro ya mitandao ya kijamii",
+          "description": "Rangi thabiti kwa machapisho, hadithi, na jalada la wasifu. Paleti za jirani au pastel zinafanya kazi vizuri unapotaka mtindo thabiti, unaotambulika."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Mawasilisho na nyaraka",
+          "description": "Seti za rangi zinazosaidiana kwa slaidi, chati, na michoro ya habari. Paleti za monochromatic au minimalist zinahifadhi mpangilio wa kuona."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kutatua matatizo ya kitengenezaji cha paleti",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Paleti hazibadiliki baada ya kuweka rangi",
+          "description": "Kuandika tu msimbo wa HEX hakutengenezi paleti kiotomatiki \u2013 unahitaji kuthibitisha badiliko na kitufe cha Update Color. Baada ya kuthibitisha tu zana inahesabu upya mipango yote 9."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Ujumbe wa muundo batili",
+          "description": "Kitengenezaji kinakubali muundo wa HEX tu wenye # mwanzoni, mfano #FF5500. Miundo bila # (mfano FF5500) au kwa nukuu ya RGB (mfano rgb(255,85,0)) haiungwi mkono."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Muundo mfupi na kamili wa HEX",
+          "description": "Miundo yote miwili inaungwa mkono: kamili #RRGGBB (mfano #FF5500) na mfupi #RGB (mfano #F50). Kitengenezaji kinatambua zote mbili kiotomatiki."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Maswali yanayoulizwa mara kwa mara kuhusu kitengenezaji cha paleti za rangi",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Rangi ya msingi inapaswa kuwa kwa muundo gani?",
+          "answer": "Kitengenezaji kinakubali rangi kwa muundo wa HEX \u2013 mfupi (mfano #F50) na kamili (mfano #FF5500). Karibu na sehemu ya maandishi utapata kichaguzi cha rangi kinachokuwezesha kuchagua rangi kwa kuona. Paleti zinazotengenezwa zinaonyesha msimbo wa HEX na thamani ya HSL ya kila rangi.",
+          "answerSchemaText": "Kitengenezaji kinakubali rangi za HEX (#RGB au #RRGGBB). Kila rangi iliyotengenezwa ina msimbo wa HEX na thamani ya HSL."
+        },
+        {
+          "question": "Kila paleti ina rangi ngapi?",
+          "answer": "Kila paleti ina rangi 4 hadi 6. Idadi inategemea aina ya mpango \u2013 paleti za monochromatic na toni zinatengeneza vivuli zaidi, wakati paleti za nyongeza na triadic zinazingatia rangi chache zinazotofautiana.",
+          "answerSchemaText": "Kila paleti ina rangi 4 hadi 6, kulingana na aina ya mpango."
+        },
+        {
+          "question": "Je, ninaweza kutumia paleti zilizozalishwa kwa biashara?",
+          "answer": "Ndiyo. Unaweza kutumia paleti za rangi zilizozalishwa katika mradi wowote \u2013 wa biashara na usio wa biashara, bila vikwazo vya leseni.",
+          "answerSchemaText": "Ndiyo, paleti zilizozalishwa zinaweza kutumika bila vikwazo katika miradi ya biashara na isiyo ya biashara."
+        },
+        {
+          "question": "Je, kitengenezaji cha paleti ya rangi kinahitaji kuingia au malipo?",
+          "answer": "Kitengenezaji ni bure kabisa na hakihitaji kuingia au usajili. Rangi zinaundwa kwenye kivinjari \u2013 hakuna data inayotumwa kwenye seva za nje.",
+          "answerSchemaText": "Kitengenezaji ni bure, hakihitaji kuingia. Rangi zinaundwa kwenye kivinjari."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Gundua zana nyingine" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

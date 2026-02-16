@@ -1,0 +1,305 @@
+{
+  "toolKey": "metaCounter",
+  "locale": "ro",
+  "metadata": {
+    "title": "Verificator gratuit meta title și description – Pixeli",
+    "description": "Verificați lățimea în pixeli a meta title și meta description cu previzualizare Google în timp real. Optimizați fragmentele pentru motoarele de căutare.",
+    "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+    "path": "/ro/instrumente/verificator-lungime-meta-title-si-description"
+  },
+  "hero": {
+    "title": "Verificați lungimea titlului și descrierii paginii în Google",
+    "description": "Introduceți un titlu și o descriere, iar instrumentul va calcula numărul de caractere, cuvinte, lățimea în pixeli și va arăta dacă lungimea respectă cele mai bune practici SEO",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/verificator-lungime-meta-title-si-description",
+      "label": "Verificator meta title și description"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Verificator gratuit lungime meta title și description online",
+      "alternateName": [
+        "Verificator meta title și description cu previzualizare Google",
+        "Previzualizare snippet Google online",
+        "Verificare lungime titlu SEO în pixeli",
+        "Instrument verificare lungime meta tag-uri",
+        "Instrument previzualizare SERP Google",
+        "Câte caractere în meta description",
+        "Lungimea optimă a titlului și descrierii",
+        "Verificator meta tag-uri SEO"
+      ],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "SEOTool",
+      "description": "Verificator gratuit lungime meta title și description. Verifică numărul de caractere, cuvinte și lățimea în pixeli. Afișează o previzualizare a modului în care titlul și descrierea apar în rezultatele căutării Google.",
+      "featureList": [
+        "Contor caractere pentru meta title",
+        "Contor caractere pentru meta description",
+        "Măsurare lățime pixeli (compatibil Google)",
+        "Contor cuvinte pentru titlu și descriere",
+        "Previzualizare rezultate căutare Google",
+        "Evaluare lungime colorată (prea scurt / optim / prea lung)",
+        "Avertizare trunchere pentru titlu și descriere",
+        "Recomandări lungime optimă",
+        "Procesare locală în browser"
+      ]
+    },
+    "howTo": {
+      "name": "Cum să verificați lungimea meta title și description",
+      "description": "Verificați lungimea meta title și description în pixeli și caractere. Aflați câte caractere ar trebui să aibă un titlu (50–60) și o descriere (120–160) și cum să evitați trunchierea în Google.",
+      "totalTime": "PT3M",
+      "steps": [
+        {
+          "name": "Introduceți meta title",
+          "text": "Lipiți sau tastați titlul paginii în câmpul Meta title. Instrumentul va calcula automat numărul de caractere, cuvinte și lățimea în pixeli."
+        },
+        {
+          "name": "Introduceți meta description",
+          "text": "Adăugați descrierea paginii în câmpul Meta description. Veți vedea aceleași metrici. Câmpul este mai mare deoarece descrierile sunt mai lungi decât titlurile - puteți include 2–3 propoziții scurte."
+        },
+        {
+          "name": "Verificați previzualizarea Google",
+          "text": "Vedeți cum arată titlul și descrierea într-un rezultat simulat de căutare Google. Previzualizarea trunchiează automat textul așa cum ar face motorul de căutare."
+        },
+        {
+          "name": "Ajustați pe baza sfaturilor",
+          "text": "Dacă statusul arată Prea scurt sau Prea lung, ajustați textul și observați schimbările în timp real."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Ce sunt meta title și meta description?",
+      "html": "<p class=\"text-mid\">Meta title și meta description sunt două texte scurte care descriu conținutul unei pagini web. Nu sunt vizibile direct pe pagină, dar apar în rezultatele căutării Google ca titlu (link albastru) și descriere (text gri sub titlu).</p><p class=\"text-mid mt-3\">Meta tag-urile bine scrise funcționează ca o reclamă pentru pagina dvs. în rezultatele căutării - atrag atenția și cresc șansa de clic. Tag-urile slab scrise sau trunchiate pot descuraja clicurile, chiar dacă pagina în sine este valoroasă.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să folosiți verificatorul meta title și description",
+      "description": "Verificarea lungimii meta tag-urilor durează aproximativ un minut:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiPencilLine",
+          "title": "1. Introduceți titlul paginii",
+          "description": "Lipiți sau tastați meta title în primul câmp de text. Instrumentul va afișa imediat trei metrici: număr caractere, număr cuvinte și lățime în pixeli. Un status colorat va apărea lângă ele."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Introduceți descrierea paginii",
+          "description": "Adăugați meta description în al doilea câmp. Veți vedea aceleași metrici. Câmpul este mai mare deoarece descrierile sunt mai lungi decât titlurile - puteți include 2–3 propoziții scurte."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "3. Verificați previzualizarea",
+          "description": "În partea dreaptă (desktop) sau mai jos (mobil) veți vedea o previzualizare a modului în care titlul și descrierea arată în rezultatele căutării Google. Textul este trunchiat automat."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "4. Ajustați pe baza sfaturilor",
+          "description": "Dacă statusul arată Prea scurt sau Prea lung, ajustați textul. Schimbările sunt vizibile instant - puteți experimenta până obțineți lungimea și conținutul optim."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Câte caractere ar trebui să aibă meta title și description?",
+      "html": "<p class=\"text-mid mb-4\">Google trunchiează titlurile și descrierile care sunt prea lungi. Mai jos sunt intervalele recomandate care reduc riscul ca textul să fie tăiat în rezultatele căutării.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Element</th><th class=\"py-2 pr-4 font-semibold\">Caractere</th><th class=\"py-2 pr-4 font-semibold\">Pixeli</th><th class=\"py-2 font-semibold\">Note</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 caractere</td><td class=\"py-2 pr-4 whitespace-nowrap\">până la ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Puneți cuvintele cele mai importante la început. Numele brandului la sfârșit.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">120–160 caractere</td><td class=\"py-2 pr-4 whitespace-nowrap\">până la ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">Puteți include 2–3 propoziții scurte. Încheiați cu un îndemn la acțiune.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Acestea sunt valori aproximative - Google nu publică limite stricte și le poate ajusta în funcție de dispozitiv și contextul interogării.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Cum să interpretați rezultatele",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta title</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Caractere: <strong>52</strong></span><span class=\"text-mid\">Cuvinte: <strong>7</strong></span><span class=\"text-mid\">Pixeli: <strong>456px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Lungime bună</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta description</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Caractere: <strong>142</strong></span><span class=\"text-mid\">Cuvinte: <strong>21</strong></span><span class=\"text-mid\">Pixeli: <strong>812px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Lungime bună</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Instrumentul afișează trei metrici pentru fiecare câmp împreună cu o evaluare colorată a lungimii:</p><h3 class=\"h5 mt-6 mb-2\">Metrici</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Caractere</strong> - numărul total de caractere (inclusiv spații). Ușor de înțeles, dar mai puțin precis decât pixelii.</li><li><strong>Cuvinte</strong> - numărul de cuvinte. Util pentru o evaluare rapidă a lungimii.</li><li><strong>Lățime (px)</strong> - lățimea textului în pixeli. Aceasta este valoarea pe care Google o folosește efectiv când trunchiează.</li></ul><h3 class=\"h5 mt-6 mb-2\">Statusuri de evaluare</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Lungime bună</strong> (verde) - textul se încadrează în intervalul recomandat. Google ar trebui să îl afișeze integral.</li><li><strong class=\"text-warning-text\">Prea scurt</strong> (galben) - textul este foarte scurt. Aveți loc pentru mai multe informații care ar putea încuraja clicurile.</li><li><strong class=\"text-error-text\">Prea lung</strong> (roșu) - textul depășește intervalul recomandat. Google probabil îl va trunchia. Luați în considerare scurtarea.</li><li><strong class=\"text-light\">Fără date</strong> (gri) - câmpul este gol. Introduceți text pentru a vedea analiza.</li></ul><h3 class=\"h5 mt-6 mb-2\">Intervale recomandate</h3><p class=\"text-mid\"><strong>Meta title:</strong> 35–65 caractere sau 350–580 pixeli lățime. Puneți cuvintele cele mai importante la început.</p><p class=\"text-mid mt-2\"><strong>Meta description:</strong> 100–165 caractere sau 430–920 pixeli lățime. Puteți include 2–3 propoziții scurte.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "De ce lățimea în pixeli contează mai mult decât numărul de caractere",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">iiiiiiiiiiiiiiii (16 caractere)</p><div class=\"bg-success-icon mt-1 h-3 w-1/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~64px lățime</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">WWWWWWWWWWWWWWWW (16 caractere)</p><div class=\"bg-error-icon mt-1 h-3 w-3/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~256px lățime</p></div></div>",
+      "html": "<p class=\"text-mid\">Literele diferite au lățimi diferite. Comparați &quot;iiii&quot; și &quot;WWWW&quot; - ambele au 4 caractere, dar lățimea vizuală este complet diferită. Google măsoară lățimea textului în pixeli, nu în caractere.</p><p class=\"text-mid mt-3\">Aceasta înseamnă că un titlu cu multe litere înguste (i, l, t, f) poate fi mai lung decât un titlu cu litere late (W, M, O), în ciuda aceluiași număr de caractere. Instrumentul afișează ambele valori: numărul de caractere (mai ușor de înțeles) și lățimea în pixeli (mai precisă pentru Google).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Previzualizare snippet - ce arată?",
+      "html": "<p class=\"text-mid\">Previzualizarea snippet-ului simulează modul în care titlul și descrierea paginii dvs. arată în rezultatele căutării Google. Este o vizualizare aproximativă - aspectul real poate varia ușor în funcție de dispozitiv și browser.</p><h3 class=\"h5 mt-6 mb-2\">Elemente previzualizare</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> - adresa paginii afișată deasupra titlului. O puteți introduce în câmpul opțional pentru o previzualizare mai realistă.</li><li><strong>Titlu</strong> - titlul albastru. Dacă este prea lung, instrumentul îl trunchiează automat și adaugă puncte de suspensie.</li><li><strong>Descriere</strong> - textul gri de sub titlu. De asemenea trunchiat dacă depășește limita.</li></ul><h3 class=\"h5 mt-6 mb-2\">Ce nu arată previzualizarea</h3><p class=\"text-mid\">Previzualizarea nu include toate elementele pe care Google le poate adăuga la un rezultat: date, rating-uri cu stele, sitelink-uri sau rich snippets. Este o versiune simplificată concentrată pe lungimea textului.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Probleme comune și soluții",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "Titlul este prea lung",
+          "description": "Scurtați titlul păstrând cuvintele cele mai importante la început. Eliminați adjectivele precum &quot;cel mai bun&quot; sau &quot;profesional&quot; - rareori adaugă valoare. Plasați numele brandului la sfârșit după un separator."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Descrierea este prea scurtă",
+          "description": "Adăugați mai multe informații: ce va găsi utilizatorul pe pagină, ce beneficiu va obține, ce diferențiază oferta. Încheiați cu un îndemn la acțiune."
+        },
+        {
+          "icon": "RiRuler2Line",
+          "title": "Lățimea în pixeli diferă de așteptări",
+          "description": "Instrumentul măsoară lățimea folosind un font standard similar cu cel folosit de Google. Rezultatul poate varia ușor în funcție de browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Pentru cine este verificatorul de meta tag-uri?",
+      "description": "Verificatorul este util pentru oricine creează conținut web:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Proprietari de site-uri și magazine",
+          "description": "Verificați dacă titlurile și descrierile sunt trunchiate în rezultatele Google înainte de a publica o pagină sau produs nou."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "Specialiști SEO",
+          "description": "Testați diferite variante de titlu și descriere, verificați previzualizarea rezultatelor căutării și confirmați conformitatea cu ghidurile."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Copywriteri",
+          "description": "Scrieți titluri și descrieri care se încadrează în limite și încurajează clicurile."
+        },
+        {
+          "icon": "RiMegaphoneLine",
+          "title": "Marketeri",
+          "description": "Creați meta tag-uri pentru campanii și landing page-uri, optimizând rata de clic în rezultatele organice."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Dezvoltatori",
+          "description": "Verificați meta tag-urile înainte de a lansa o pagină în producție."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face special acest verificator meta title și description?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRuler2Line",
+          "title": "Măsurare în pixeli",
+          "description": "Nu numărăm doar caractere - măsurăm lățimea reală a textului așa cum face Google."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Previzualizare Google",
+          "description": "Vedeți cum arată titlul și descrierea în rezultatele căutării înainte de a publica pagina."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Evaluare colorată",
+          "description": "Știți instant dacă textul este prea scurt, optim sau prea lung."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Pixeli și caractere împreună",
+          "description": "Instrumentul afișează ambele valori simultan - puteți compara dacă titlul se încadrează atât în limita de caractere cât și de pixeli."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Titlu și descriere într-o singură vizualizare",
+          "description": "Verificați atât meta title cât și description simultan, fără a comuta între tab-uri."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente despre verificatorul meta title și description",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "De ce instrumentul arată lățimea în pixeli în loc de doar numărul de caractere?",
+          "answer": "Literele diferite au lățimi diferite. Litera &quot;i&quot; ocupă mult mai puțin spațiu decât &quot;m&quot; sau &quot;W&quot;. Google trunchiează titlurile și descrierile pe baza lățimii în pixeli, nu a numărului de caractere. Aceasta înseamnă că un text cu multe litere înguste poate fi mai lung decât un text cu litere late, chiar la același număr de caractere.",
+          "answerSchemaText": "Google trunchiează pe baza lățimii în pixeli, nu a numărului de caractere. Literele diferite au lățimi diferite."
+        },
+        {
+          "question": "Google afișează întotdeauna meta title și description?",
+          "answer": "Nu întotdeauna. Google poate schimba titlul sau descrierea afișată dacă consideră că altceva se potrivește mai bine interogării utilizatorului. Adesea extrage fragmente din conținutul paginii. Meta tag-urile bine scrise cresc șansa ca Google să le folosească, dar nu există garanție 100%.",
+          "answerSchemaText": "Nu întotdeauna. Google poate schimba titlul sau descrierea afișată pentru a se potrivi mai bine cu interogarea."
+        },
+        {
+          "question": "Care este lungimea optimă pentru meta title și meta description?",
+          "answer": "Meta title ar trebui să aibă aproximativ 50–60 caractere (până la ~580 pixeli lățime). Meta description funcționează cel mai bine la 120–160 caractere (până la ~920 pixeli). Acestea sunt valori aproximative - Google nu publică limite stricte și le poate ajusta.",
+          "answerSchemaText": "Meta title: 50–60 caractere (~580px). Meta description: 120–160 caractere (~920px). Valori aproximative."
+        },
+        {
+          "question": "Meta description afectează clasamentul paginii în Google?",
+          "answer": "Meta description nu este un factor direct de clasare - Google nu o folosește pentru a determina poziția paginii. Totuși, o descriere bună crește rata de clic din rezultatele căutării, iar un CTR mai mare poate afecta indirect clasamentul.",
+          "answerSchemaText": "Meta description nu este un factor direct de clasare, dar o descriere bună poate crește CTR-ul și afecta indirect clasamentul."
+        },
+        {
+          "question": "Ce ar trebui să fac dacă titlul meu este prea lung?",
+          "answer": "Scurtați titlul păstrând cuvintele cele mai importante la început. Eliminați cuvintele de umplere (ex. &quot;cel mai bun&quot;, &quot;profesional&quot;) și concentrați-vă pe valoarea specifică pentru utilizator. Dacă includeți un nume de brand, plasați-l la sfârșit după un separator.",
+          "answerSchemaText": "Scurtați titlul, păstrați cuvintele importante la început și mutați numele brandului la sfârșit."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descoperiți alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

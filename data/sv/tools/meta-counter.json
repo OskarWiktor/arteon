@@ -1,0 +1,148 @@
+{
+  "toolKey": "metaCounter",
+  "locale": "sv",
+  "metadata": {
+    "title": "Gratis meta-titel & beskrivningskontroll – Bredd i pixlar",
+    "description": "Kontrollera längden på meta-titel och beskrivning i tecken och pixlar. Google SERP-förhandsgranskning hjälper dig undvika avkortade utdrag. Utan registrering, lokalt i webbläsaren.",
+    "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+    "path": "/sv/verktyg/meta-titel-och-beskrivning-kontroll"
+  },
+  "hero": {
+    "title": "Kontrollera längden på sidans titel och beskrivning i Google",
+    "description": "Ange titel och beskrivning och verktyget räknar antal tecken, ord, bredd i pixlar och visar om längden överensstämmer med rekommenderade SEO-praxis.",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/sv/verktyg", "label": "Verktyg" },
+    "third": { "href": "/sv/verktyg/meta-titel-och-beskrivning-kontroll", "label": "Meta-titel & beskrivningskontroll" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Gratis kontroll av meta-titel och beskrivningslängd",
+      "alternateName": ["Meta-titel och beskrivningskontroll med Google-förhandsgranskning", "Google SERP-förhandsgranskning", "SEO-titelbreddskontroll i pixlar"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "SEOTool",
+      "description": "Gratis kontroll av meta-titel och beskrivningslängd. Kontrollerar antal tecken, ord och bredd i pixlar. Visar förhandsgranskning av hur titel och beskrivning visas i Googles sökresultat.",
+      "featureList": [
+        "Teckenräknare för meta-titel",
+        "Teckenräknare för meta-beskrivning",
+        "Breddmätning i pixlar (motsvarar Google)",
+        "Ordräknare för titel och beskrivning",
+        "Förhandsgranskning av Google-sökresultat",
+        "Färgkodad längdbedömning (för kort / bra / för lång)",
+        "Varning vid avkortning av titel och beskrivning",
+        "Rekommendation av optimal längd",
+        "Lokal bearbetning i webbläsaren"
+      ]
+    },
+    "howTo": {
+      "name": "Hur man kontrollerar längden på meta-titel och beskrivning",
+      "description": "Kontrollera längden på meta-titel och beskrivning i pixlar och tecken.",
+      "totalTime": "PT3M",
+      "steps": [
+        { "name": "Ange meta-titel", "text": "Klistra in eller skriv sidans titel i fältet Meta-titel. Verktyget räknar automatiskt antal tecken, ord och bredd i pixlar." },
+        { "name": "Ange meta-beskrivning", "text": "Lägg till sidans beskrivning i fältet Meta-beskrivning. Du ser samma mätvärden." },
+        { "name": "Kontrollera Google-förhandsgranskning", "text": "Se hur titel och beskrivning visas i simulerade Google-sökresultat." },
+        { "name": "Justera enligt rekommendationer", "text": "Om statusen visar För kort eller För lång, justera texten och följ ändringarna i realtid." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Vad är meta-titel och meta-beskrivning?",
+      "html": "<p class=\"text-mid\">Meta-titel och meta-beskrivning är två korta texter som beskriver innehållet på en webbsida. De visas inte direkt på sidan, utan dyker upp i Googles sökresultat som titel (blå länk) och beskrivning (grå text under titeln).</p><p class=\"text-mid mt-3\">Välskrivna meta-taggar fungerar som en annons för din sida i sökresultaten – de fångar uppmärksamhet och ökar sannolikheten för klick. Dåligt skrivna eller avkortade taggar kan avskräcka från att klicka, även om själva sidan är värdefull.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Hur man använder meta-titel och beskrivningskontrollen",
+      "description": "Att kontrollera längden på meta-taggar tar en minut:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiPencilLine",
+          "title": "1. Ange sidans titel",
+          "description": "Klistra in eller skriv meta-titeln i det första fältet. Verktyget visar omedelbart tre mätvärden: antal tecken, ord och bredd i pixlar."
+        },
+        { "icon": "RiFileTextLine", "title": "2. Ange sidans beskrivning", "description": "Lägg till meta-beskrivningen i det andra fältet. Du ser samma mätvärden." },
+        {
+          "icon": "RiEyeLine",
+          "title": "3. Kontrollera förhandsgranskning",
+          "description": "Till höger (desktop) eller nedanför (mobil) ser du en förhandsgranskning av hur titel och beskrivning visas i Googles sökresultat."
+        },
+        { "icon": "RiToolsLine", "title": "4. Justera enligt rekommendationer", "description": "Om statusen visar För kort eller För lång, justera texten. Ändringar syns omedelbart." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Hur många tecken bör meta-titel och beskrivning ha?",
+      "html": "<p class=\"text-mid mb-4\">Google avkortar titlar och beskrivningar som är för långa. Nedan finns rekommenderade intervall som minskar risken för avkortad text i sökresultaten.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Element</th><th class=\"py-2 pr-4 font-semibold\">Tecken</th><th class=\"py-2 pr-4 font-semibold\">Pixlar</th><th class=\"py-2 font-semibold\">Anmärkningar</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta-titel</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 tecken</td><td class=\"py-2 pr-4 whitespace-nowrap\">upp till ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Viktigaste nyckelorden först. Varumärke sist.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta-beskrivning</td><td class=\"py-2 pr-4 whitespace-nowrap\">120–160 tecken</td><td class=\"py-2 pr-4 whitespace-nowrap\">upp till ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">Ryms 2–3 korta meningar. Avsluta med en uppmaning till handling.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Dessa är ungefärliga värden – Google publicerar inte exakta gränser och kan justera dem beroende på enhet och sökkontexten.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Vem är meta-taggkontrollen till för?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Webbplats- och e-handelsägare",
+          "description": "Kontrollera att titlar och beskrivningar inte avkortas i Googles resultat innan du publicerar en ny sida eller produkt."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "SEO-specialister",
+          "description": "Testa olika versioner av titlar och beskrivningar, kontrollera sökresultatförhandsgranskning och verifiera efterlevnad av rekommendationer."
+        },
+        { "icon": "RiEditLine", "title": "Copywriters", "description": "Skriv titlar och beskrivningar som ryms inom gränserna och stöder klick." },
+        { "icon": "RiCodeLine", "title": "Webbutvecklare", "description": "Verifiera meta-taggar innan sidan sätts i produktion." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Vad gör denna meta-titel och beskrivningskontroll speciell?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiRuler2Line", "title": "Mätning i pixlar", "description": "Vi räknar inte bara tecken – vi mäter den faktiska textbredden precis som Google gör." },
+        { "icon": "RiEyeLine", "title": "Google-förhandsgranskning", "description": "Se hur titel och beskrivning visas i sökresultaten innan du publicerar sidan." },
+        { "icon": "RiCheckboxCircleLine", "title": "Färgkodad bedömning", "description": "Du ser omedelbart om texten är för kort, bra eller för lång." },
+        { "icon": "RiInfinityLine", "title": "Pixlar och teckenantal tillsammans", "description": "Verktyget visar båda värdena samtidigt – du kan jämföra om titeln ryms inom båda gränserna." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor om meta-titel och beskrivningskontrollen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Varför visar verktyget bredd i pixlar och inte bara teckenantal?",
+          "answer": "Olika tecken har olika bredd. Bokstaven &quot;i&quot; tar mycket mindre plats än &quot;m&quot; eller &quot;W&quot;. Google avkortar titlar och beskrivningar baserat på bredd i pixlar, inte teckenantal.",
+          "answerSchemaText": "Google avkortar baserat på bredd i pixlar, inte teckenantal. Olika tecken har olika bredd."
+        },
+        {
+          "question": "Visar Google alltid min meta-titel och beskrivning?",
+          "answer": "Inte alltid. Google kan ändra den visade titeln eller beskrivningen om den hittar något mer lämpligt för användarens sökfråga. Välskrivna meta-taggar ökar sannolikheten att Google använder dem, men det finns ingen 100% garanti.",
+          "answerSchemaText": "Inte alltid. Google kan ändra den visade titeln eller beskrivningen för att bättre matcha sökfrågan."
+        },
+        {
+          "question": "Vad är den optimala längden på meta-titel och meta-beskrivning?",
+          "answer": "Meta-titel bör ha ungefär 50–60 tecken (upp till ~580 pixlar bredd). Meta-beskrivning fungerar bäst vid 120–160 tecken (upp till ~920 pixlar). Dessa är ungefärliga värden – Google publicerar inte exakta gränser.",
+          "answerSchemaText": "Meta-titel: 50–60 tecken (~580px). Meta-beskrivning: 120–160 tecken (~920px). Ungefärliga värden."
+        },
+        {
+          "question": "Påverkar meta-beskrivningen sidans position i Google?",
+          "answer": "Meta-beskrivningen är inte en direkt rankingfaktor – Google använder den inte för att bestämma sidans position. Men en bra beskrivning ökar klickfrekvensen från sökresultaten, och högre CTR kan indirekt påverka positionen.",
+          "answerSchemaText": "Meta-beskrivningen är inte en direkt rankingfaktor, men en bra beskrivning kan öka CTR och indirekt påverka positionen."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Utforska fler verktyg" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

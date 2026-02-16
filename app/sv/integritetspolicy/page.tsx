@@ -1,0 +1,162 @@
+import TableOfContents from '@/components/sections/TableOfContent';
+import ButtonToTop from '@/components/ui/buttons/ButtonToTop';
+import Gap from '@/components/ui/Gap';
+import SectionInfo from '@/components/ui/sections/SectionInfo';
+import Wrapper from '@/components/ui/Wrapper';
+import { getPrivacyPageMeta, getPrivacyAlternates } from '@/lib/i18n/pages/privacy';
+import { toAbsoluteUrl } from '@/utils/absoluteUrl';
+
+const LOCALE = 'sv' as const;
+const meta = getPrivacyPageMeta(LOCALE)!;
+const alternates = getPrivacyAlternates(LOCALE);
+
+export const metadata = {
+  title: meta.title,
+  description: meta.description,
+  alternates,
+  openGraph: { title: meta.title, description: meta.description, url: toAbsoluteUrl('/sv/integritetspolicy'), type: 'website' },
+};
+
+export default function PrivacyPolicyPage() {
+  return (
+    <>
+      <Gap size="xs" />
+      <Wrapper as="article" id="article-root" itemScope itemType="https://schema.org/Article" className="flex flex-col-reverse gap-8 select-none lg:grid lg:grid-cols-[1fr_300px]">
+        <div>
+          <h1>Integritetspolicy</h1>
+          <p className="mt-2 text-sm opacity-70">
+            Version: <strong>13.02.2026</strong>
+          </p>
+          <Gap size="xs" />
+          <SectionInfo title="1. Personuppgiftsansvarig">
+            <p>Personuppgiftsansvarig ar Arteon, med sate i gmina Czernichow, Zagacie, ul. Jasminowa 36, 32-070, Polen.</p>
+            <p>
+              NIP: <strong>9442284430</strong>, REGON: <strong>528888241</strong>
+            </p>
+            <p>
+              Kontakt: <strong>kontakt@arteonagency.pl</strong>, tel.: <strong>+48 516 466 255</strong>.
+            </p>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="2. Omfattning av insamlade uppgifter">
+            <ul className="list-disc space-y-1 pl-6">
+              <li>uppgifter som skickas via kontaktformularet (fornamn, efternamn, e-post, meddelandeinnehall),</li>
+              <li>tekniska uppgifter som samlas in automatiskt (IP-adress, enhetsinformation, kakor),</li>
+              <li>analysdata fran Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics och Vercel Speed Insights,</li>
+              <li>analysdata fran Metricool (besoksstatistik, trafikkallor),</li>
+              <li>uppgifter som samlas in av Google AdSense for att visa annonser (annonsidentifierare, annonskakor, annonsinteraktionsdata),</li>
+              <li>serverloggar och sakerhetshandelser (t.ex. tidsstamplar, IP-adresser, forfragerubriker).</li>
+            </ul>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="3. Andamal och rattslig grund for behandling">
+            <ol className="list-decimal space-y-1 pl-6">
+              <li>
+                <strong>Kundkommunikation</strong> -- besvarande av fragor fran kontaktformularet (art. 6.1 b och f GDPR).
+              </li>
+              <li>
+                <strong>Marknadsforing och analys</strong> -- webbplatsstatistik, innehallsoptimering (art. 6.1 f GDPR).
+              </li>
+              <li>
+                <strong>Tillhandahallande av tjanster</strong> -- forberedelse av offerter, avtal, fakturor (art. 6.1 b GDPR).
+              </li>
+              <li>
+                <strong>Rattsliga skyldigheter</strong> -- t.ex. forvaring av bokforingsdokumentation (art. 6.1 c GDPR).
+              </li>
+              <li>
+                <strong>Sakerhet och ansprak</strong> -- logghantering, missbruksprevention, faststallande/verkstallande/forsvar av ansprak (art. 6.1 f GDPR).
+              </li>
+              <li>
+                <strong>Annonsvisning</strong> -- visning av intressebaserade annonser via Google AdSense (art. 6.1 a GDPR -- anvandarsamtycke som ges via kakbanner).
+              </li>
+            </ol>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="4. Kakor">
+            <p>Webbplatsen anvander kakor for foljande andamal:</p>
+            <ul className="list-disc space-y-1 pl-6">
+              <li>sakerstalla korrekt funktion av webbplatsen,</li>
+              <li>trafikanalys (Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics, Metricool),</li>
+              <li>marknadsforingsandamal,</li>
+              <li>visning av intressebaserade annonser (Google AdSense / DoubleClick).</li>
+            </ul>
+            <p>Google AdSense kan anvanda DoubleClick-kakor for att visa annonser baserat pa anvandarens tidigare besok pa var webbplats eller andra webbplatser.</p>
+            <p>
+              Du kan inaktivera personaliserade annonser i{' '}
+              <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" className="inline-link">
+                Google Ads-installningar
+              </a>{' '}
+              eller pa{' '}
+              <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer" className="inline-link">
+                aboutads.info
+              </a>
+              .
+            </p>
+            <p>Webbplatsen anvander Google Consent Mode v2. Det innebar att Googles analys- och annonsskript inte samlar in data forran anvandaren ger samtycke via kakbannern.</p>
+            <p>Du kan hantera kakor i webblasarens installningar. Att begransa kakor kan paverka vissa funktioner pa webbplatsen.</p>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="5. Mottagare av uppgifter">
+            <p>Uppgifter kan delas med enheter som stodar oss i att tillhandahalla tjanster, sasom:</p>
+            <ul className="list-disc space-y-1 pl-6">
+              <li>hosting-/applikationsleverantor (t.ex. Vercel),</li>
+              <li>leverantorer av analysverktyg (Google Ireland Ltd., Ahrefs Pte. Ltd., Vercel Inc., Metricool S.L.),</li>
+              <li>leverantor av annonstjanster (Google Ireland Ltd. -- Google AdSense),</li>
+              <li>redovisningsbyra, betalningsformedlare eller juridisk radgivare -- om nodvandigt.</li>
+            </ul>
+            <p>Alla mottagare behandlar uppgifter i enlighet med GDPR baserat pa lampliga avtal.</p>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="6. Personuppgiftsbitradesavtal (DPA)">
+            <p>Pa begaran uppratter vi personuppgiftsbitradesavtal (DPA) nar vi behandlar uppgifter for kundens rakning (t.ex. inom webbplatsunderhall, konfiguration av verktyg eller system).</p>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="7. Overforing av uppgifter utanfor EES">
+            <p>
+              Google och Vercel kan behandla uppgifter utanfor Europeiska ekonomiska samarbetsomradet. Lampliga rattsliga skyddsatgarder tillampas (inklusive standardavtalsklausuler godkanda av
+              Europeiska kommissionen) och, om mojligt, tekniska atgarder (pseudonymisering, minimering).
+            </p>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="8. Lagringstid for uppgifter">
+            <ul className="list-disc space-y-1 pl-6">
+              <li>Data fran kontaktformularet -- upp till 12 manader efter avslutad korrespondens.</li>
+              <li>Kunddata -- under den period som kravs enligt lag (bokforingsdokumentation).</li>
+              <li>Analysdata -- enligt Google Analytics policy (t.ex. 26 manader).</li>
+              <li>Loggar -- under den period som kravs for sakerhet och ansvarsskyldighet (vanligtvis upp till 12 manader, om inte foreskrifter anger annat).</li>
+            </ul>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="9. Dina rattigheter">
+            <p>Du har ratt att:</p>
+            <ul className="list-disc space-y-1 pl-6">
+              <li>fa tillgang till dina uppgifter och erhalla en kopia,</li>
+              <li>rattelse av uppgifter,</li>
+              <li>radering av uppgifter,</li>
+              <li>begransning av behandling,</li>
+              <li>dataportabilitet,</li>
+              <li>invandning mot behandling (inklusive marknadsforing),</li>
+              <li>lamna in klagomal till behorig tillsynsmyndighet (i Polen: Ordforanden for Byraan for skydd av personuppgifter, UODO).</li>
+            </ul>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="10. Frivilligt tillhandahallande av uppgifter">
+            <p>Tillhandahallande av personuppgifter ar frivilligt men nodvandigt for kontakt eller tillhandahallande av tjanster.</p>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="11. Sakerhetsatgarder">
+            <p>Vi tilllampar tekniska och organisatoriska atgarder for att skydda personuppgifter mot obehorig atkomst, forlust eller forstoring.</p>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="12. Andringar av policyn">
+            <p>Denna integritetspolicy kan uppdateras for att atersspegla forandringar i lagstiftning eller teknik. Den senaste versionen finns alltid tillganglig pa denna sida.</p>
+          </SectionInfo>
+          <Gap size="xs" />
+        </div>
+        <TableOfContents rootSelector="#article-root" size="large" />
+      </Wrapper>
+      <ButtonToTop />
+      <Gap />
+    </>
+  );
+}

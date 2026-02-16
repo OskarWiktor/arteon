@@ -1,0 +1,180 @@
+{
+  "toolKey": "emailSignature",
+  "locale": "ms",
+  "metadata": {
+    "title": "Penjana Tandatangan E-mel Percuma \u2013 HTML untuk Gmail dan Outlook",
+    "description": "Bina tandatangan e-mel HTML profesional tanpa perisian. Tambah butiran hubungan, logo, pautan media sosial dan salin ke Gmail atau Outlook. Tanpa pendaftaran.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
+    "path": "/ms/alatan/penjana-tandatangan-emel-percuma"
+  },
+  "hero": {
+    "title": "Bina tandatangan e-mel HTML profesional",
+    "description": "Buat tandatangan e-mel profesional dalam beberapa minit. Masukkan butiran anda, pilih warna, dan salin kod HTML sedia ada ke Gmail, Outlook, atau mana-mana klien e-mel.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/ms/alatan", "label": "Alatan" },
+    "third": { "href": "/ms/alatan/penjana-tandatangan-emel-percuma", "label": "Penjana tandatangan e-mel" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Penjana tandatangan e-mel percuma",
+      "alternateName": ["Penjana tandatangan HTML e-mel", "Penjana tandatangan e-mel", "Penjana footer e-mel"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "EmailSignatureGenerator",
+      "description": "Penjana percuma tandatangan HTML e-mel. Tambah butiran hubungan, butang CTA, dan profil media sosial, kemudian salin kod sedia ada ke Gmail, Outlook, dan klien e-mel lain.",
+      "featureList": [
+        "Butiran hubungan (nama, jawatan, syarikat)",
+        "Telefon, e-mel, dan URL laman web",
+        "Logo atau gambar profil dengan pilihan bentuk dan saiz",
+        "Ikon media sosial (12 platform)",
+        "Warna boleh diubah suai (teks, aksen, latar belakang)",
+        "Butang CTA dengan teks dan pautan tersuai",
+        "Pratonton langsung tandatangan",
+        "Salin kod HTML ke papan keratan",
+        "Muat turun tandatangan sebagai fail HTML",
+        "Eksport dan import konfigurasi sebagai fail JSON",
+        "Serasi dengan Gmail, Outlook, Apple Mail",
+        "Alat percuma, tiada log masuk diperlukan"
+      ]
+    },
+    "howTo": {
+      "name": "Cara menggunakan penjana tandatangan e-mel",
+      "description": "Cara membina tandatangan HTML e-mel profesional menggunakan penjana percuma Arteon.",
+      "totalTime": "PT5M",
+      "steps": [
+        {
+          "name": "Pilih susun atur tandatangan",
+          "text": "Pilih satu daripada lapan susun atur yang tersedia: Standard, Top bar, Labels left, Centered, Compact, Two columns, Minimalist, atau Bottom bar."
+        },
+        { "name": "Isi butiran hubungan", "text": "Dalam tab Details, masukkan nama, jawatan, syarikat, e-mel, telefon, dan URL laman web." },
+        { "name": "Tambah butang CTA", "text": "Dalam tab Buttons, tambah teks dan URL untuk butang utama." },
+        {
+          "name": "Tambah pautan media sosial",
+          "text": "Dalam tab Social Media, tampal URL profil anda. Platform yang disokong: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, dan Pinterest."
+        },
+        { "name": "Ubah suai penampilan", "text": "Dalam tab Appearance, pilih tema warna, fon, dan saiz teks." },
+        { "name": "Pratonton dan salin tandatangan", "text": "Butang Copy signature (Gmail / Outlook) menyalin kod sedia ada ke papan keratan." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Mengapa perlu tandatangan e-mel profesional?",
+      "html": "<p class=\"text-mid\">Tandatangan e-mel (juga dikenali sebagai footer e-mel) ialah blok maklumat di bahagian bawah setiap mesej yang dihantar. Ia mengandungi butiran hubungan, jawatan kerja, nama syarikat, dan sering kali pautan ke laman web atau kalendar mesyuarat.</p><p class=\"text-mid mt-3\">Penerima tidak perlu mencari nombor telefon dalam mesej sebelumnya \u2013 semua butiran boleh diakses dengan mudah. Tandatangan e-mel profesional juga menunjukkan bahawa anda mementingkan butiran dan mengekalkan imej syarikat yang konsisten dalam komunikasi perniagaan.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Cara menggunakan penjana tandatangan e-mel",
+      "description": "Membina tandatangan e-mel profesional mengambil masa beberapa minit sahaja:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Masukkan butiran", "description": "Isi nama, jawatan, syarikat, dan butiran hubungan anda." },
+        { "title": "2. Ubah suai penampilan", "description": "Pilih susun atur, warna, tambah logo, dan pautan media sosial." },
+        { "title": "3. Salin kod", "description": "Butang Copy signature menyalin kod sedia ada ke papan keratan. Tampal sahaja dalam Gmail, Outlook, atau klien e-mel lain." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Susun atur tandatangan \u2013 yang mana untuk dipilih?",
+      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Susun atur tandatangan</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">Ahmad Faiz</p><p class=\"text-mid text-sm\">Web Developer</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">ahmad@example.com</p><p class=\"text-mid\">+60 12 000 0000</p></div></div></div>",
+      "html": "<p class=\"text-mid\">Penjana menawarkan lapan susun atur sedia ada. Setiap satu menyampaikan maklumat yang sama dengan cara berbeza.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> \u2013 susun atur menegak biasa, sesuai untuk kebanyakan kegunaan.</li><li><strong>Top bar</strong> \u2013 bar mendatar memisahkan tandatangan dari kandungan.</li><li><strong>Labels left</strong> \u2013 dua lajur: label dan nilai.</li><li><strong>Centered</strong> \u2013 penampilan formal, kandungan dipusatkan.</li><li><strong>Compact</strong> \u2013 semua dalam satu baris, ketinggian minimum.</li><li><strong>Two columns</strong> \u2013 butiran di kiri, hubungan di kanan.</li><li><strong>Minimalist</strong> \u2013 maklumat penting sahaja.</li><li><strong>Bottom bar</strong> \u2013 bar berwarna dengan hubungan di bahagian bawah tandatangan.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Cara menyalin tandatangan ke Gmail atau Outlook",
+      "description": "Setelah tandatangan siap, mengambil beberapa langkah sahaja untuk menambahnya ke klien e-mel:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiClipboardLine",
+          "title": "1. Salin kod",
+          "description": "Butang Copy signature (Gmail / Outlook) menyalin tandatangan ke papan keratan sebagai HTML berformat, sedia untuk ditampal."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "2. Buka tetapan tandatangan",
+          "description": "Dalam Gmail: Settings \u2192 See all settings \u2192 Signature. Dalam Outlook: File \u2192 Options \u2192 Mail \u2192 Signatures."
+        },
+        {
+          "icon": "RiSaveLine",
+          "title": "3. Tampal dan simpan",
+          "description": "Dalam medan tandatangan, gunakan Ctrl+V (Windows) atau Cmd+V (Mac). Tandatangan akan muncul dengan semua warna dan pemformatan. Simpan perubahan."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Penjana tandatangan e-mel untuk siapa?",
+      "description": "Alat tandatangan e-mel berguna untuk sesiapa yang menghantar e-mel perniagaan:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiBriefcaseLine", "title": "Usahawan dan pekerja bebas", "description": "Tandatangan profesional dalam setiap mesej tanpa memerlukan pereka." },
+        { "icon": "RiTeamLine", "title": "Pasukan syarikat", "description": "Setiap pekerja membina tandatangan sendiri dengan gaya yang sama. Identiti konsisten di seluruh syarikat." },
+        { "icon": "RiHandCoinLine", "title": "Wakil jualan", "description": "Butang CTA dengan pautan kalendar atau tawaran meningkatkan kemungkinan menempah mesyuarat." },
+        { "icon": "RiScales3Line", "title": "Peguam, akauntan, doktor", "description": "Keupayaan menambah klausa undang-undang, nombor lesen, atau butiran lain yang diperlukan dalam industri." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Apa yang menjadikan penjana tandatangan e-mel ini istimewa?",
+      "grid": "three",
+      "items": [
+        { "icon": "RiInfinityLine", "title": "Lapan susun atur tandatangan", "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist, dan bottom bar." },
+        {
+          "icon": "RiUserLine",
+          "title": "Simpan automatik dalam pelayar",
+          "description": "Setiap perubahan disimpan secara automatik dalam memori pelayar. Selepas memuat semula halaman, tandatangan kekal tersedia."
+        },
+        { "icon": "RiTranslate2", "title": "Eksport dan import konfigurasi", "description": "Konfigurasi lengkap tandatangan boleh dieksport sebagai fail JSON dan dikongsi dengan rakan sekerja." },
+        {
+          "icon": "RiAppsLine",
+          "title": "12 platform media sosial",
+          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, dan Pinterest."
+        },
+        { "icon": "RiPaletteLine", "title": "Penyesuaian lanjutan", "description": "Bentuk dan saiz avatar, gaya garis, warna dan saiz teks tersuai." },
+        { "icon": "RiShieldCheckLine", "title": "Privasi", "description": "Data tidak dihantar ke pelayan. Penjana berfungsi sepenuhnya dalam pelayar." },
+        { "icon": "RiMailCheckLine", "title": "Keserasian", "description": "Kod HTML yang dijana berfungsi dalam Gmail, Outlook, Apple Mail, dan Thunderbird." },
+        { "icon": "RiEyeLine", "title": "Pratonton langsung", "description": "Setiap perubahan kelihatan serta-merta pada latar belakang terang, gelap, atau papan semak." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Soalan lazim tentang penjana tandatangan e-mel",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Adakah tandatangan berfungsi dalam Gmail, Outlook, dan Apple Mail?",
+          "answer": "Ya. Tandatangan yang dijana oleh penjana menggunakan jadual HTML yang dipaparkan dengan betul dalam semua klien e-mel popular: Gmail, Outlook (desktop dan web), Apple Mail, Thunderbird."
+        },
+        {
+          "question": "Bolehkah saya menambah logo syarikat?",
+          "answer": "Ya. Dalam tab Details, tampal URL imej (logo atau gambar profil). Imej perlu berbentuk segi empat sama (sekurang-kurangnya 120\u00d7120 px) dan boleh diakses secara awam dalam talian."
+        },
+        {
+          "question": "Cara menyalin tandatangan ke klien e-mel?",
+          "answer": "Butang Copy signature (Gmail / Outlook) di bawah pratonton menyalin tandatangan ke papan keratan sebagai HTML berformat. Dalam tetapan tandatangan Gmail atau Outlook, gunakan sahaja Ctrl+V (Windows) atau Cmd+V (Mac)."
+        },
+        {
+          "question": "Bolehkah saya menggunakan penjana untuk membuat tandatangan bagi seluruh pasukan?",
+          "answer": "Ya. Penjana tidak memerlukan log masuk atau pendaftaran. Setiap orang dalam pasukan boleh membuka alat, mengisi butiran mereka, dan menyalin tandatangan sedia ada. Anda juga boleh mengeksport konfigurasi sebagai fail JSON dan berkongsi dengan rakan sekerja."
+        },
+        {
+          "question": "Avatar atau logo tidak kelihatan \u2013 apa yang perlu dilakukan?",
+          "answer": "Imej mesti boleh diakses secara awam dalam talian. URL perlu menunjuk terus ke fail imej (berakhir dengan .jpg, .png, atau .webp). Imej dari Google Drive atau Dropbox memerlukan pautan perkongsian khas."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Terokai alatan lain" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

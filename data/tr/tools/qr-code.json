@@ -1,0 +1,451 @@
+{
+  "toolKey": "qrCode",
+  "locale": "tr",
+  "metadata": {
+    "title": "Ücretsiz QR Kod Oluşturucu – PNG ve SVG, Kayıt Gereksiz",
+    "description": "Web siteleri, vCard'lar, menüler veya el ilanları için saniyeler içinde QR kod oluşturun. PNG ve SVG olarak dışa aktarın. Renkleri ve boyutu özelleştirin. Kayıt gerektirmez, sınırsız.",
+    "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
+    "path": "/tr/araclar/ucretsiz-qr-kod-olusturucu"
+  },
+  "hero": {
+    "title": "QR kod oluşturucu — ücretsiz, kayıt gerektirmez",
+    "description": "Web sitesi, vCard kartvizit, e-posta, telefon veya metin için QR kod oluşturun. Renkleri, boyutu ve hata düzeltme seviyesini özelleştirin, ardından hazır PNG veya SVG dosyasını indirin.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/tr/araclar",
+      "label": "Araçlar"
+    },
+    "third": {
+      "href": "/tr/araclar/ucretsiz-qr-kod-olusturucu",
+      "label": "Ücretsiz QR kod oluşturucu"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Ücretsiz QR kod oluşturucu",
+      "alternateName": [
+        "QR kod oluşturma aracı",
+        "vCard QR kod oluşturucu",
+        "Ücretsiz QR oluşturucu",
+        "QR kod aracı",
+        "Restoran menüsü QR kod oluşturucu",
+        "Baskı için QR kod PNG SVG",
+        "Elektronik kartvizit vCard oluşturucu",
+        "Kayıt gerektirmeyen QR kod oluşturucu",
+        "Ücretsiz sınırsız QR kod oluşturucu"
+      ],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "QRCodeGenerator",
+      "description": "Web sitesi, kartvizit, menü veya el ilanı için QR kod oluşturun. Veri türünü seçin, renkleri ve boyutu özelleştirin, ardından PNG veya SVG dosyasını indirin.",
+      "featureList": [
+        "URL (web sitesi) için QR kod",
+        "Düz metin için QR kod",
+        "vCard QR kodu (iletişim bilgileri)",
+        "E-posta için QR kod (adres, konu, gövde)",
+        "Telefon numarası için QR kod",
+        "Özelleştirilebilir kod ve arka plan renkleri",
+        "Piksel cinsinden kod boyutu seçimi",
+        "PNG formatına dışa aktarma (raster)",
+        "SVG formatına dışa aktarma (vektör)",
+        "Canlı kod önizlemesi",
+        "Tarayıcıda yerel işleme",
+        "Reed-Solomon hata düzeltme"
+      ]
+    },
+    "howTo": {
+      "name": "Ücretsiz QR kod oluşturucu nasıl kullanılır",
+      "description": "Web sitesi, vCard kartvizit, e-posta veya telefon için QR kod nasıl oluşturulur — veri türü seçiminden baskıya hazır dosya indirmeye kadar.",
+      "steps": [
+        {
+          "name": "Veri türünü seçin",
+          "text": "QR kodun ne içermesi gerektiğine karar verin: URL, metin, kartvizit (vCard), e-posta veya telefon numarası."
+        },
+        {
+          "name": "Verileri girin",
+          "text": "Uygun alanları doldurun. URL için web sitesi adresini girin; vCard için iletişim bilgilerini sağlayın."
+        },
+        {
+          "name": "Görünümü özelleştirin",
+          "text": "Boyut, kenar boşluğu, kod ve arka plan renkleri ile hata düzeltme seviyesini seçin."
+        },
+        {
+          "name": "Kodu indirin",
+          "text": "Hazır QR kod PNG dosyası (baskı ve web için) veya SVG (vektör, kalite kaybı olmadan ölçeklenir) olarak indirilebilir."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "QR kod nedir ve nasıl çalışır?",
+      "html": "<p class=\"text-mid\">QR kod (Hızlı Yanıt), akıllı telefon kamerasıyla taranabilen iki boyutlu bir barkoddur. Geleneksel barkodlardan farklı olarak, QR kodlar verileri hem yatay hem de dikey olarak depolar, bu da önemli ölçüde daha fazla bilgi kodlamalarına olanak tanır — yaklaşık 3.000 alfanümerik karaktere kadar.</p><p class=\"text-mid mt-3\">QR kod, 1994 yılında Japon şirketi Denso Wave (Toyota grubunun parçası) tarafından araba parçalarını takip etmek için geliştirilmiştir. Bugün QR kodlar pazarlama, konaklama, lojistik ve iş iletişiminde yaygın olarak kullanılmaktadır. Özellikle COVID-19 pandemisi sırasında restoranların kağıt menüleri QR kodlarla değiştirmeye başlamasıyla popülerlik kazandılar.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ücretsiz QR kod oluşturucu nasıl kullanılır",
+      "description": "QR kod oluşturmak sadece birkaç saniye sürer:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Veri türünü seçin",
+          "description": "Ne kodlamak istediğinizi seçin: URL, metin, vCard kartvizit, e-posta veya telefon numarası."
+        },
+        {
+          "title": "2. Verileri girin",
+          "description": "Uygun alanları doldurun — web sitesi adresi, iletişim bilgileri veya mesaj içeriği."
+        },
+        {
+          "title": "3. Kodu indirin",
+          "description": "Görünümü özelleştirin (renkler, boyut, kenar boşluğu) ve PNG veya SVG olarak indirin."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "QR kod türleri — URL, vCard, e-posta, telefon, metin",
+      "description": "Ücretsiz QR kod oluşturucu beş veri türünü destekler — her biri farklı durumlarda yararlıdır:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "URL",
+          "description": "Bir web sitesine bağlantı. Taradıktan sonra telefon sayfayı tarayıcıda açar. Kartvizitler, el ilanları ve afişler için ideal."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Metin",
+          "description": "3.000 karaktere kadar herhangi bir metin. Taradıktan sonra telefon metni ekranda gösterir. İndirim kuponları ve kısa talimatlar için yararlı."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "vCard kartvizit",
+          "description": "İletişim verilerini (ad, şirket, telefon, e-posta, adres) içeren dijital kartvizit. Taradıktan sonra telefon kişiyi kaydetmeyi teklif eder. Profesyonel kartvizitler için ideal."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-posta",
+          "description": "İsteğe bağlı konu ve gövdeli bir e-posta adresi. Taradıktan sonra telefon önceden doldurulmuş formla posta uygulamasını açar."
+        },
+        {
+          "icon": "RiPhoneLine",
+          "title": "Telefon",
+          "description": "Bir telefon numarası. Taradıktan sonra telefon arama yapmayı teklif eder. Yardım hatları ve müşteri desteği için yararlı."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "QR kod teknik özellikleri",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kapasite</span><span class=\"text-mid text-sm!\">4.296 karaktere kadar</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Hata düzeltme</span><span class=\"text-mid text-sm!\">%7 – %30</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Min. baskı boyutu</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Min. kontrast</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kenar boşluğu</span><span class=\"text-mid text-sm!\">min. 4 modül</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Teknik parametreleri bilmek, tüm koşullarda okunabilir QR kodlar oluşturmaya yardımcı olur:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Veri kapasitesi</strong> — bir QR kod 7.089 rakam, 4.296 alfanümerik karakter veya 2.953 bayt ikili veri tutabilir. Pratikte bu, URL'ler ve kartvizitler için fazlasıyla yeterlidir.</li><li><strong>Reed-Solomon hata düzeltme</strong> — kodun bir kısmı hasar görmüş veya kapatılmış olsa bile okumayı sağlayan matematiksel algoritma. Seviyeler: L (%7), M (%15), Q (%25), H (%30).</li><li><strong>Kenar boşluğu</strong> — doğru tarama için gerekli olan kodun etrafındaki beyaz alan. Önerilen minimum 4 modüldür (kod birimleri).</li><li><strong>Minimum baskı boyutu</strong> — standart tarama koşulları için kod en az 2×2 cm olmalıdır. Büyük format baskı (bannerlar, billboardlar) için buna göre büyütün.</li><li><strong>Kontrast</strong> — kod ve arka plan arasındaki kontrast oranı en az 3:1 olmalıdır. Oluşturucu çok düşük kontrast hakkında otomatik olarak uyarır.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "QR kod uygulamaları — kartvizitler, el ilanları, restoran menüleri",
+      "description": "QR kodlar birçok sektör ve senaryoda kullanım alanı bulur:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Kartvizitler",
+          "description": "Kartvizit üzerindeki vCard kodu, alıcının tek bir taramayla kişiyi kaydetmesini sağlar, verileri manuel olarak yazmadan."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Restoran ve kafe menüleri",
+          "description": "Masadaki QR kod dijital menüye yönlendirir. COVID-19 pandemisinden bu yana popüler olan hijyenik bir çözüm."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "El ilanları ve afişler",
+          "description": "Ürün sayfasına, kayıt formuna veya özel teklife bağlantı içeren QR kod."
+        },
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Ürün ambalajı",
+          "description": "Kullanım kılavuzuna, garanti kartına veya üretici web sitesine bağlantı."
+        },
+        {
+          "icon": "RiHospitalLine",
+          "title": "Tıbbi ofisler",
+          "description": "Hasta portalına veya randevu alma sistemine bağlanan hasta kartlarındaki QR kodlar."
+        },
+        {
+          "icon": "RiHome4Line",
+          "title": "Gayrimenkul",
+          "description": "Fotoğraf galerisi ve ayrıntılarla birlikte tam ilana bağlanan bannerlardaki kodlar."
+        },
+        {
+          "icon": "RiTruckLine",
+          "title": "Depolar ve lojistik",
+          "description": "Ürün partilerini, depo konumlarını ve gönderi geçmişini takip etmek için QR etiketler."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "E-ticaret",
+          "description": "İade talimatlarına, müşteri yorumlarına veya sadakat programlarına bağlanan ambalaj üzerindeki kodlar."
+        },
+        {
+          "icon": "RiCalendarEventLine",
+          "title": "Etkinlikler ve konferanslar",
+          "description": "Girişte hızlı doğrulama için QR kodlu biletler."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "QR kod görünüm özelleştirme",
+      "variant": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Boyut</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kenar boşluğu</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kod rengi</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Arka plan rengi</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Oluşturucu, kodun görünümünü ve okunabilirliğini etkileyen birkaç parametreyi özelleştirmenize olanak tanır:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Boyut (px)</strong> — piksel cinsinden kod boyutu. Standart baskı (el ilanları, kartvizitler) için 300–500 px seçin. Dijital kullanım için 150–200 px yeterlidir.</li><li><strong>Kenar boşluğu</strong> — doğru tarama için gerekli olan kodun etrafındaki beyaz alan. Önerilen değer 2–4'tür. 0 değeri koyu arka planda taramayı zorlaştırabilir.</li><li><strong>QR kod rengi</strong> — varsayılan olarak siyah (#000000). Görsel kimliğinize uygun herhangi bir koyu renge değiştirebilirsiniz.</li><li><strong>Arka plan rengi</strong> — varsayılan olarak beyaz (#ffffff). Herhangi bir açık renge değiştirebilirsiniz. Kontrast çok düşükse oluşturucu uyarır.</li></ul><p class=\"text-mid mt-3\"><strong>İpucu:</strong> Kod ve arka plan arasında yüksek kontrast koruyun (minimum 3:1). Açık arka plan üzerinde koyu kod en kolay taranır.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Hata düzeltme seviyeleri — L, M, Q, H",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Düşük)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">%7</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Orta)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">%15</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Çeyrek)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">%25</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (Yüksek)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">%30</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Hata düzeltme, QR kodun bir kısmı hasar görmüş, kirli veya kapatılmış olsa bile okunmasını sağlayan bir mekanizmadır. Oluşturucu, QR kodlarda standart olan Reed-Solomon algoritmasını kullanır.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Düşük) — %7</strong> — en az fazlalık, kod en kompakt. Kod ideal koşullarda (ekran, yüksek kaliteli baskı) kullanılacağında seçin.</li><li><strong>M (Orta) — %15</strong> — varsayılan değer, kapasite ve dayanıklılık arasında iyi bir denge. Çoğu uygulama için uygun.</li><li><strong>Q (Çeyrek) — %25</strong> — hasara karşı daha fazla direnç. Kirlenmeye eğilimli malzemelere basılan kodlar için seçin.</li><li><strong>H (Yüksek) — %30</strong> — en yüksek dayanıklılık. Dış mekan baskı materyalleri, ambalajlar ve kodun kısmen kapatılabileceği durumlar (ör. merkezde bir logo) için önerilir.</li></ul><p class=\"text-mid mt-3\"><strong>Not:</strong> Daha yüksek düzeltme seviyesi, daha büyük ve daha karmaşık kod anlamına gelir. Büyük miktarda veri ve H seviyesiyle kod çok yoğun olabilir.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs SVG — baskı için hangi format seçilmeli?",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG (raster)"
+        },
+        {
+          "id": "svg",
+          "name": "SVG (vektör)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Web siteleri ve sosyal medya",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "El ilanları ve kartvizitler",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Afişler ve bannerlar (büyük format)",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Kalite kaybı olmadan ölçekleme",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Grafik programında düzenleme",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Daha küçük dosya boyutu",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Sunumlar",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "QR kod baskı ipuçları",
+      "description": "QR kodun baskı sonrası okunabilir olmasını sağlamak için birkaç kurala uyun:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "Minimum boyut",
+          "description": "Yakın mesafe tarama için kod en az 2×2 cm olmalıdır. Tarama mesafesi ne kadar büyükse, kod da o kadar büyük olmalıdır."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Kontrast",
+          "description": "Açık arka plan üzerinde koyu kod. Pastel renklerden ve düşük kontrasttan kaçının."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Kod etrafında kenar boşluğu",
+          "description": "Kodun etrafında boş alan bırakın. Diğer grafik öğeleri çok yakına yerleştirmeyin — kenar boşluğu doğru tarama için gereklidir."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Test etme",
+          "description": "Toplu baskıdan önce kodu farklı telefonlarda ve çeşitli aydınlatma koşullarında test edin."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Düzeltme seviyesi",
+          "description": "Dış mekan baskı ve hasara eğilimli malzemeler için Q veya H seviyesini seçin."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Bu QR kod oluşturucuyu özel kılan nedir?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Tarayıcıda yerel oluşturma",
+          "description": "Oluşturucuya girilen veriler hiçbir sunucuya gönderilmez — tüm işleme cihazınızda yerel olarak gerçekleşir."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "Tek araçta beş veri türü",
+          "description": "URL, metin, vCard kartvizit, e-posta ve telefon — her tür uygun standartta QR kod oluşturur."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "QR kod görünüm özelleştirme",
+          "description": "Kod ve arka plan renkleri, piksel cinsinden boyut, kenar boşluğu ve hata düzeltme seviyesi — her parametre özelleştirilebilir."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Dört hata düzeltme seviyesi",
+          "description": "Reed-Solomon algoritması, hasara karşı kod dayanıklılığını seçmenize olanak tanır — %7 (L) ile %30 (H) arası. Daha yüksek seviyeler, kirlenmeye eğilimli malzemelere baskı için yararlıdır."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Canlı önizleme",
+          "description": "Veri girdikten hemen sonra sonucu görürsünüz, &quot;Oluştur&quot; düğmesine tıklamadan."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "PNG ve SVG dışa aktarma",
+          "description": "Kodu kullanım durumunuza uygun formatta indirin."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "QR kod oluşturucu hakkında sıkça sorulan sorular",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Bu araçla oluşturulan QR kodun süresi doluyor mu?",
+          "answer": "Hayır. Statik QR kod (bu aracın oluşturduğu gibi) süresiz geçerlidir. İçerik — ör. URL veya kartvizit verileri — doğrudan kodda kodlanır. Hedef sayfa var olduğu sürece kod çalışacaktır.",
+          "answerSchemaText": "Hayır. Statik QR kodların süresi dolmaz. İçerik doğrudan kodda kodlanır."
+        },
+        {
+          "question": "Mevcut bir QR koddaki URL'yi değiştirebilir miyim?",
+          "answer": "Statik QR kodda kodlanmış içeriği değiştiremezsiniz — yeni adresle yeni bir kod oluşturmanız gerekir. Dinamik QR kodlar (oluşturulduktan sonra düzenlenebilir) harici ücretli hizmetler gerektirir.",
+          "answerSchemaText": "Hayır, statik QR kodlar düzenlenemez. Farklı URL için yeni bir kod oluşturun."
+        },
+        {
+          "question": "PNG mi SVG mi — baskı için hangi QR kod formatını seçmeliyim?",
+          "answer": "PNG çoğu kullanım durumu için çalışır: web siteleri, sosyal medya, A4 boyutuna kadar baskı. SVG vektör tabanlıdır — kalite kaybı olmadan herhangi bir boyuta ölçeklenebilir, bu da bannerlar, billboardlar ve büyük reklam formatları için uygun kılar.",
+          "answerSchemaText": "Web ve standart baskı için PNG. Büyük format ve kayıpsız ölçekleme için SVG."
+        },
+        {
+          "question": "Kartvizit için hangi QR kod boyutunu seçmeliyim?",
+          "answer": "Basılı materyaller (kartvizitler, el ilanları) için kod en az 2×2 cm, ideal olarak 3×3 cm olmalıdır. Oluşturucuda bu, standart baskı kalitesinde (300 DPI) 300 px çözünürlüğe karşılık gelir. Daha büyük formatlar (afişler, bannerlar) için daha büyük boyut veya SVG format seçin.",
+          "answerSchemaText": "En az 2×2 cm (300 DPI'da 300 px). Kartvizitler için ideal olarak 3×3 cm."
+        },
+        {
+          "question": "QR kodun merkezine logo ekleyebilir miyim?",
+          "answer": "Bu araç doğrudan logo eklemeyi desteklemez. Ancak kodu SVG formatında indirip bir grafik programında logo yerleştirebilirsiniz — bu durumda kısmen kapatılmasına rağmen kodun okunabilir kalması için yüksek hata düzeltme seviyesi (H) ayarlamak gereklidir.",
+          "answerSchemaText": "Doğrudan değil. SVG indirip H hata düzeltmesiyle grafik programında logo ekleyin."
+        },
+        {
+          "question": "QR kodum baskıdan sonra neden taranmıyor?",
+          "answer": "En yaygın nedenler: kod ve arka plan arasında çok düşük kontrast, çok küçük kod boyutu, kod etrafında kenar boşluğu olmaması veya baskı hasarı. Boyutu artırmayı, kontrastı iyileştirmeyi ve hata düzeltme seviyesini (Q veya H) yükseltmeyi deneyin.",
+          "answerSchemaText": "Kontrastı, boyutu, kenar boşluğunu ve hata düzeltme seviyesini kontrol edin."
+        },
+        {
+          "question": "Oluşturulan QR kodları ticari olarak kullanabilir miyim?",
+          "answer": "Evet. Oluşturulan QR kodlar herhangi bir projede — ticari ve ticari olmayan, lisans kısıtlaması olmadan serbestçe kullanılabilir.",
+          "answerSchemaText": "Evet, ticari ve ticari olmayan projelerde kısıtlama olmadan."
+        },
+        {
+          "question": "vCard kartvizit ile düz metin QR kod arasındaki fark nedir?",
+          "answer": "vCard QR kodu, iletişim verilerini standart bir formatta (ad, şirket, telefon, e-posta, adres) içerir. Taradıktan sonra telefon otomatik olarak kişiyi rehbere kaydetmeyi teklif eder. Metin kodu verileri düz metin olarak gösterir — otomatik kaydetme seçeneği olmadan.",
+          "answerSchemaText": "vCard kişiyi otomatik kaydeder. Metin QR sadece metni gösterir."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Diğer ücretsiz araçları keşfedin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

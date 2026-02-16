@@ -1,0 +1,190 @@
+{
+  "toolKey": "colorPalette",
+  "locale": "sv",
+  "metadata": {
+    "title": "Gratis färgpalettgenerator – 9 paletter från en färg",
+    "description": "Generera 9 färgpaletter från en grundfärg: monokromatisk, komplementär, triadisk, pastell och fler. Kopiera HEX-koder med ett klick. Utan registrering, utan begränsningar.",
+    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "path": "/sv/verktyg/fargpalettgenerator"
+  },
+  "hero": {
+    "title": "Färgpalettgenerator",
+    "description": "Ange en grundfärg och verktyget genererar 9 harmoniska färgpaletter: monokromatisk, komplementär, triadisk, pastell och fler. Varje färg kan kopieras med sin HEX-kod.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/sv/verktyg", "label": "Verktyg" },
+    "third": { "href": "/sv/verktyg/fargpalettgenerator", "label": "Färgpalettgenerator" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Färgpalettgenerator",
+      "alternateName": ["Färgschemagenerator", "Färggenerator", "Färgmatchningsverktyg", "Färgharmonigenerator"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorPaletteGenerator",
+      "description": "Gratis färgpalettgenerator. Ange en HEX-färg och verktyget genererar 9 scheman: monokromatiskt, angränsande, komplementärt, triadiskt, delat komplementärt, pastell, mörkt, tonalt och minimalistiskt.",
+      "featureList": [
+        "Monokromatiskt schema – nyanser av en färg",
+        "Angränsande schema – färger bredvid varandra på färghjulet",
+        "Komplementärt schema – motsatta färger",
+        "Triadiskt schema – 3 färger med jämna mellanrum",
+        "Delat komplementärt schema",
+        "Pastellpalett – mjuka, avsaturerade nyanser",
+        "Mörk palett – djupa färger för mörka teman",
+        "Tonal palett – ljusstyrkenivåer av en färg",
+        "Minimalistisk palett – stark accent och neutrala färger",
+        "Grundfärg i HEX-format",
+        "Färgväljare för visuellt val",
+        "Slumpmässig startfärg",
+        "Kopiera HEX-kod till urklipp",
+        "HSL-värde visas bredvid varje färg",
+        "Lokal bearbetning i webbläsaren"
+      ]
+    },
+    "howTo": {
+      "name": "Hur man genererar en färgpalett från en grundfärg",
+      "description": "Hur man genererar 9 färgpaletter från en grundfärg: monokromatisk, komplementär, triadisk, pastell och fler.",
+      "steps": [
+        { "name": "Välj grundfärg", "text": "Ange en HEX-kod i textfältet eller använd färgväljaren för visuellt val." },
+        { "name": "Bekräfta färgen", "text": "Bekräfta den valda färgen med knappen Update Color – verktyget genererar paletter baserat på din grundfärg." },
+        {
+          "name": "Bläddra genom paletter",
+          "text": "Verktyget genererar automatiskt 9 olika paletter: monokromatisk, angränsande, komplementär, triadisk, delat komplementär, pastell, mörk, tonal och minimalistisk."
+        },
+        { "name": "Kopiera färger", "text": "Bredvid varje färg finns en Kopiera-knapp – HEX-koden kopieras till systemets urklipp." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Varför generera en färgpalett?",
+      "html": "<p class=\"text-mid\">En konsekvent färgpalett är grunden för varje visuellt projekt – från webbplatser, via logotyper, till tryckt material. Att manuellt välja färger som fungerar tillsammans kräver kunskap om färgteori. Generatorn automatiserar denna process: du anger en grundfärg (t.ex. färgen på din logotyp) och verktyget genererar 9 uppsättningar färger baserade på beprövade färgharmonischeman.</p><p class=\"text-mid mt-3\">Varje genererad färg har sin HEX-kod (t.ex. #4F6BF5) och HSL-värde (hue, saturation, lightness). HEX-koden kan klistras in direkt i CSS, Figma, Canva eller valfri grafisk applikation.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Hur man använder färgpalettgeneratorn",
+      "description": "Hela processen tar bara några sekunder:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Ange grundfärg", "description": "Ange en HEX-kod (t.ex. #4F6BF5) i textfältet eller välj en färg från färgväljaren. Du kan också använda knappen Slumpmässig färg." },
+        { "title": "2. Bekräfta ditt val", "description": "Efter att du klickat på knappen Update Color genererar verktyget automatiskt 9 paletter baserade på olika färgharmonischeman." },
+        { "title": "3. Kopiera de färger du behöver", "description": "Bredvid varje färg finns en Kopiera-knapp – HEX-koden går till urklipp och kan klistras in direkt i ditt projekt." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Vilka färgscheman genererar verktyget?",
+      "description": "Generatorn skapar 9 typer av paletter – var och en baserad på en annan princip inom färgteorin:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiStackLine",
+          "title": "Monokromatisk palett",
+          "description": "Flera nyanser av en färg – från ljus till mörk. Alla färger har samma kulör på färghjulet och skiljer sig bara i ljusstyrka. Fungerar bra i eleganta och minimalistiska designs."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Angränsande palett",
+          "description": "Färger bredvid varandra på färghjulet (förskjutna ca 30° åt båda håll från basen). Skapar harmoniska och mjuka färgövergångar."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Komplementär palett",
+          "description": "Grundfärgen och den motsatta färgen på färghjulet (180° förskjutning). Skapar stark visuell kontrast. Användbart när element behöver fånga uppmärksamhet."
+        },
+        { "icon": "RiSparklingLine", "title": "Triadisk palett", "description": "Tre färger med 120° mellanrum på färghjulet – bildar en liksidig triangel. Dynamisk och mångsidig kombination." },
+        {
+          "icon": "RiCursorLine",
+          "title": "Delat komplementär palett",
+          "description": "Mildare version av den komplementära paletten. Istället för en motsatt färg används två färger förskjutna ca 30° från komplementet."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Pastellpalett",
+          "description": "Samma kulör med minskad mättnad och ökad ljusstyrka – mjuka, dämpade färger. Populärt inom kosmetik, barnmode och livsmedelssektorn."
+        },
+        {
+          "icon": "RiMoonLine",
+          "title": "Mörk palett",
+          "description": "Grundfärgen med hög mättnad och minskad ljusstyrka – djupa, kraftfulla färger. Användbart för mörka webbplatsteman och premium varumärkesmaterial."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Tonal palett",
+          "description": "Flera ljusstyrkenivåer av en färg – från mycket ljus till mörk. Användbart för att bygga gränssnitt där samma färg behöver olika varianter."
+        },
+        {
+          "icon": "RiContractLeftRightLine",
+          "title": "Minimalistisk palett",
+          "description": "En stark färgaccent och flera mycket ljusa neutrala färger. Hela paletten förblir lugn. Fungerar bra i moderna gränssnitt med mycket vitt utrymme."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Vad bygger färgpalettgeneratorn på?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° på färghjulet</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">Alla paletter skapas genom matematisk transformation av grundfärgen i HSL-färgrymden. HSL beskriver en färg med tre värden: hue (H) är positionen på färghjulet (0°–360°), saturation (S) bestämmer färgens styrka och lightness (L) – hur ljus eller mörk färgen är.</p><p class=\"text-mid mt-3\">Komplementära, triadiska och delade komplementära paletter baseras på färghjulets geometri – färger placeras med jämna vinkelintervall, vilket skapar visuell balans. Monokromatiska, pastell- och mörka paletter ändrar bara ljusstyrka och mättnad medan samma kulör bibehålls.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Var man kan använda genererade färgpaletter",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Varumärkets visuella identitet",
+          "description": "Välj harmoniska färger för en befintlig logotyp eller bygg en varumärkespalett från grunden – för visitkort, brevpapper och marknadsföringsmaterial."
+        },
+        { "icon": "RiGlobalLine", "title": "Webbplatser", "description": "Ställ in huvudfärg, accent och bakgrundsnyanser. Kopierade HEX-koder klistras in direkt i CSS eller temakonfiguration." },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Appgränssnitt",
+          "description": "Tonal palett ger ljusstyrkvarianter av en färg – ljusare för bakgrunder, mörkare för text, mellanliggande för kanter och interaktionstillstånd."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Grafik för sociala medier",
+          "description": "Konsekventa färger för inlägg, stories och profilomslag. Angränsande eller pastellpaletter fungerar bra när du vill ha en konsekvent, igenkännlig stil."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor om färgpalettgeneratorn",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "I vilket format ska grundfärgen vara?",
+          "answer": "Generatorn accepterar färger i HEX-format – förkortad (t.ex. #F50) och full (t.ex. #FF5500). Bredvid textfältet finns en färgväljare som låter dig välja färg visuellt. Genererade paletter visar HEX-kod och HSL-värde för varje färg.",
+          "answerSchemaText": "Generatorn accepterar HEX-färger (#RGB eller #RRGGBB). Varje genererad färg har HEX-kod och HSL-värde."
+        },
+        {
+          "question": "Hur många färger finns i varje palett?",
+          "answer": "Varje palett innehåller 4 till 6 färger. Antalet beror på schematypen – monokromatiska och tonala paletter genererar fler nyanser, medan komplementära och triadiska paletter fokuserar på färre kontrasterande färger.",
+          "answerSchemaText": "Varje palett innehåller 4 till 6 färger, beroende på schematypen."
+        },
+        {
+          "question": "Kan jag använda genererade paletter kommersiellt?",
+          "answer": "Ja. Du kan använda genererade färgpaletter i valfritt projekt – kommersiellt och icke-kommersiellt, utan licensbegränsningar.",
+          "answerSchemaText": "Ja, genererade paletter kan användas utan begränsningar i kommersiella och icke-kommersiella projekt."
+        },
+        {
+          "question": "Kräver färgpalettgeneratorn inloggning eller betalning?",
+          "answer": "Generatorn är helt gratis och kräver ingen inloggning eller registrering. Färger genereras lokalt i webbläsaren – ingen data skickas till externa servrar.",
+          "answerSchemaText": "Generatorn är gratis, kräver ingen inloggning. Färger genereras lokalt i webbläsaren."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Utforska fler verktyg" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

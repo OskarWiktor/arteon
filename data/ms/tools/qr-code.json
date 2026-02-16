@@ -1,0 +1,272 @@
+{
+  "toolKey": "qrCode",
+  "locale": "ms",
+  "metadata": {
+    "title": "Penjana Kod QR Percuma \u2013 PNG dan SVG, Tanpa Pendaftaran",
+    "description": "Cipta kod QR untuk laman web, vCard, menu atau risalah dalam beberapa saat. Eksport ke PNG dan SVG. Ubah suai warna dan saiz. Tanpa pendaftaran, tanpa had.",
+    "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
+    "path": "/ms/alatan/penjana-kod-qr-percuma"
+  },
+  "hero": {
+    "title": "Penjana Kod QR \u2013 Percuma, Tanpa Pendaftaran",
+    "description": "Cipta kod QR untuk laman web, kad perniagaan vCard, e-mel, telefon, atau teks. Ubah suai warna, saiz, dan tahap pembetulan ralat, kemudian muat turun fail PNG atau SVG sedia ada.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/ms/alatan", "label": "Alatan" },
+    "third": { "href": "/ms/alatan/penjana-kod-qr-percuma", "label": "Penjana kod QR percuma" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Penjana kod QR percuma",
+      "alternateName": [
+        "Pencipta kod QR",
+        "Penjana kod QR vCard",
+        "Penjana QR percuma",
+        "Alat kod QR",
+        "Penjana kod QR menu restoran",
+        "Kod QR untuk cetakan PNG SVG",
+        "Penjana kad perniagaan elektronik vCard",
+        "Penjana kod QR tanpa pendaftaran"
+      ],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "QRCodeGenerator",
+      "description": "Cipta kod QR untuk laman web, kad perniagaan, menu, atau risalah. Pilih jenis data, ubah suai warna dan saiz, kemudian muat turun fail PNG atau SVG.",
+      "featureList": [
+        "Kod QR untuk URL (laman web)",
+        "Kod QR untuk teks biasa",
+        "Kod QR vCard (butiran hubungan)",
+        "Kod QR untuk e-mel (alamat, subjek, isi)",
+        "Kod QR untuk nombor telefon",
+        "Warna kod dan latar belakang boleh diubah suai",
+        "Pilihan saiz kod dalam piksel",
+        "Eksport ke format PNG (raster)",
+        "Eksport ke format SVG (vektor)",
+        "Pratonton langsung kod",
+        "Pemprosesan tempatan dalam pelayar",
+        "Pembetulan ralat Reed-Solomon"
+      ]
+    },
+    "howTo": {
+      "name": "Cara menggunakan penjana kod QR percuma",
+      "description": "Cara mencipta kod QR untuk laman web, kad perniagaan vCard, e-mel, atau telefon \u2013 dari memilih jenis data hingga memuat turun fail sedia cetak.",
+      "steps": [
+        { "name": "Pilih jenis data", "text": "Tentukan apa yang kod QR perlu mengandungi: URL, teks, kad perniagaan (vCard), e-mel, atau nombor telefon." },
+        { "name": "Masukkan data", "text": "Isi medan yang sesuai. Untuk URL, masukkan alamat laman web; untuk vCard, berikan butiran hubungan." },
+        { "name": "Ubah suai penampilan", "text": "Pilih saiz, margin, warna kod dan latar belakang, dan tahap pembetulan ralat." },
+        { "name": "Muat turun kod", "text": "Kod QR sedia ada boleh dimuat turun sebagai fail PNG (untuk cetakan dan web) atau SVG (vektor, berskala tanpa kehilangan kualiti)." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Apa itu kod QR dan bagaimana ia berfungsi?",
+      "html": "<p class=\"text-mid\">Kod QR (Quick Response) ialah kod bar dua dimensi yang boleh diimbas menggunakan kamera telefon bimbit. Tidak seperti kod bar tradisional, kod QR menyimpan data secara mendatar dan menegak, membenarkan pengekodan lebih banyak maklumat \u2013 sehingga kira-kira 3,000 aksara alfanumerik.</p><p class=\"text-mid mt-3\">Kod QR dibangunkan pada tahun 1994 oleh syarikat Jepun Denso Wave (sebahagian daripada kumpulan Toyota) untuk mengesan bahagian kereta. Hari ini, kod QR digunakan secara meluas dalam pemasaran, hospitaliti, logistik, dan komunikasi perniagaan. Ia menjadi sangat popular semasa pandemik COVID-19, apabila restoran mula menggantikan menu kertas dengan kod QR.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Cara menggunakan penjana kod QR percuma",
+      "description": "Mencipta kod QR mengambil masa beberapa saat sahaja:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Pilih jenis data", "description": "Pilih apa yang anda mahu kodkan: URL, teks, kad perniagaan vCard, e-mel, atau nombor telefon." },
+        { "title": "2. Masukkan data", "description": "Isi medan yang sesuai \u2013 alamat laman web, butiran hubungan, atau isi mesej." },
+        { "title": "3. Muat turun kod", "description": "Ubah suai penampilan (warna, saiz, margin) dan muat turun sebagai PNG atau SVG." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Jenis kod QR \u2013 URL, vCard, e-mel, telefon, teks",
+      "description": "Penjana kod QR percuma menyokong lima jenis data \u2013 setiap satu berguna dalam situasi berbeza:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiGlobalLine", "title": "URL", "description": "Pautan ke laman web. Selepas mengimbas, telefon membuka halaman dalam pelayar. Sesuai untuk kad perniagaan, risalah, dan poster." },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Teks",
+          "description": "Sebarang teks sehingga 3,000 aksara. Selepas mengimbas, telefon memaparkan teks di skrin. Berguna untuk kupon diskaun dan arahan ringkas."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Kad perniagaan vCard",
+          "description": "Kad perniagaan digital dengan data hubungan (nama, syarikat, telefon, e-mel, alamat). Selepas mengimbas, telefon menawarkan untuk menyimpan kenalan. Sesuai untuk kad perniagaan profesional."
+        },
+        { "icon": "RiMailLine", "title": "E-mel", "description": "Alamat e-mel dengan subjek dan isi pilihan. Selepas mengimbas, telefon membuka aplikasi mel dengan borang yang telah diisi." },
+        {
+          "icon": "RiPhoneLine",
+          "title": "Telefon",
+          "description": "Nombor telefon. Selepas mengimbas, telefon menawarkan untuk membuat panggilan. Berguna untuk talian hotline dan sokongan pelanggan."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Spesifikasi teknikal kod QR",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kapasiti</span><span class=\"text-mid text-sm!\">sehingga 4,296 aksara</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Pembetulan ralat</span><span class=\"text-mid text-sm!\">7% \u2013 30%</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Saiz cetak minimum</span><span class=\"text-mid text-sm!\">2 \u00d7 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kontras minimum</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margin</span><span class=\"text-mid text-sm!\">min. 4 modul</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Mengetahui parameter teknikal membantu mencipta kod QR yang boleh dibaca dalam semua keadaan:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Kapasiti data</strong> \u2013 kod QR boleh memuatkan sehingga 7,089 digit, 4,296 aksara alfanumerik, atau 2,953 bait data binari. Secara praktik, ini lebih dari cukup untuk URL dan kad perniagaan.</li><li><strong>Pembetulan ralat Reed-Solomon</strong> \u2013 algoritma matematik yang membenarkan pembacaan kod walaupun sebahagiannya rosak atau tertutup. Tahap: L (7%), M (15%), Q (25%), H (30%).</li><li><strong>Margin</strong> \u2013 kawasan putih di sekeliling kod yang diperlukan untuk pengimbasan yang betul. Minimum yang disyorkan ialah 4 modul (unit kod).</li><li><strong>Saiz cetak minimum</strong> \u2013 untuk keadaan pengimbasan biasa, kod perlu sekurang-kurangnya 2\u00d72 cm. Untuk cetakan format besar (sepanduk, papan iklan), besarkan dengan sewajarnya.</li><li><strong>Kontras</strong> \u2013 nisbah kontras antara kod dan latar belakang perlu sekurang-kurangnya 3:1. Penjana memberi amaran secara automatik tentang kontras yang terlalu rendah.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kegunaan kod QR \u2013 kad perniagaan, risalah, menu restoran",
+      "description": "Kod QR mempunyai kegunaan dalam pelbagai industri dan situasi:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Kad perniagaan",
+          "description": "Kod vCard pada kad perniagaan membolehkan penerima menyimpan kenalan dengan satu imbasan, tanpa menaip data secara manual."
+        },
+        { "icon": "RiRestaurantLine", "title": "Menu restoran dan kafe", "description": "Kod QR di atas meja menghala ke menu digital. Penyelesaian yang kemas dan popular sejak pandemik COVID-19." },
+        { "icon": "RiPrinterLine", "title": "Risalah dan poster", "description": "Kod QR dengan pautan ke halaman produk, borang pendaftaran, atau tawaran istimewa." },
+        { "icon": "RiBuilding2Line", "title": "Pembungkusan produk", "description": "Pautan ke manual pengguna, kad jaminan, atau laman web pengeluar." },
+        { "icon": "RiHospitalLine", "title": "Klinik perubatan", "description": "Kod QR pada kad pesakit yang menghubungkan ke portal pesakit atau sistem tempahan temu janji." },
+        { "icon": "RiHome4Line", "title": "Hartanah", "description": "Kod pada sepanduk yang menghubungkan ke senarai lengkap dengan galeri foto dan butiran." },
+        { "icon": "RiTruckLine", "title": "Gudang dan logistik", "description": "Label QR untuk mengesan kumpulan produk, lokasi gudang, dan sejarah penghantaran." },
+        { "icon": "RiShoppingCartLine", "title": "E-dagang", "description": "Kod pada pembungkusan yang menghubungkan ke arahan pemulangan, ulasan pelanggan, atau program kesetiaan." },
+        { "icon": "RiCalendarEventLine", "title": "Acara dan persidangan", "description": "Tiket dengan kod QR untuk pengesahan pantas di pintu masuk." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Mengubah suai penampilan kod QR",
+      "variant": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Saiz</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margin</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Warna kod</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Warna latar belakang</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Penjana membolehkan anda mengubah suai beberapa parameter yang mempengaruhi penampilan dan kebolehbacaan kod:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Saiz (px)</strong> \u2013 dimensi kod dalam piksel. Untuk cetakan biasa (risalah, kad perniagaan) pilih 300\u2013500 px. Untuk kegunaan digital, 150\u2013200 px mencukupi.</li><li><strong>Margin</strong> \u2013 kawasan putih di sekeliling kod yang diperlukan untuk pengimbasan yang betul. Nilai yang disyorkan ialah 2\u20134. Nilai 0 boleh menyukarkan pengimbasan pada latar belakang gelap.</li><li><strong>Warna kod QR</strong> \u2013 hitam secara lalai (#000000). Boleh ditukar kepada sebarang warna gelap yang sepadan dengan identiti visual anda.</li><li><strong>Warna latar belakang</strong> \u2013 putih secara lalai (#ffffff). Boleh ditukar kepada sebarang warna terang. Penjana akan memberi amaran jika kontras terlalu rendah.</li></ul><p class=\"text-mid mt-3\"><strong>Tip:</strong> Kekalkan kontras tinggi antara kod dan latar belakang (sekurang-kurangnya 3:1). Kod gelap pada latar belakang terang paling mudah diimbas.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Tahap pembetulan ralat \u2013 L, M, Q, H",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Low)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Medium)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Quartile)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (High)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Pembetulan ralat ialah mekanisme yang membenarkan pembacaan kod QR walaupun sebahagiannya rosak, kotor, atau tertutup. Penjana menggunakan algoritma Reed-Solomon, standard dalam kod QR.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Low) \u2013 7%</strong> \u2013 redundansi paling sedikit, kod paling padat. Pilih apabila kod akan digunakan dalam keadaan ideal (skrin, cetakan berkualiti tinggi).</li><li><strong>M (Medium) \u2013 15%</strong> \u2013 nilai lalai, keseimbangan baik antara kapasiti dan ketahanan. Sesuai untuk kebanyakan kegunaan.</li><li><strong>Q (Quartile) \u2013 25%</strong> \u2013 rintangan lebih tinggi terhadap kerosakan. Pilih untuk kod yang dicetak pada bahan yang mudah kotor.</li><li><strong>H (High) \u2013 30%</strong> \u2013 ketahanan paling tinggi. Disyorkan untuk bahan cetakan luar, pembungkusan, dan situasi di mana kod mungkin sebahagiannya tertutup (cth. logo di tengah).</li></ul><p class=\"text-mid mt-3\"><strong>Nota:</strong> Tahap pembetulan lebih tinggi bermakna kod yang lebih besar dan kompleks. Dengan jumlah data yang besar dan tahap H, kod boleh menjadi sangat padat.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs SVG \u2013 format mana untuk dipilih bagi cetakan?",
+      "plans": [
+        { "id": "png", "name": "PNG (raster)" },
+        { "id": "svg", "name": "SVG (vektor)", "highlighted": true }
+      ],
+      "features": [
+        { "name": "Laman web dan media sosial", "values": { "png": true, "svg": true } },
+        { "name": "Risalah dan kad perniagaan", "values": { "png": true, "svg": true } },
+        { "name": "Poster dan sepanduk (format besar)", "values": { "png": false, "svg": true } },
+        { "name": "Penskalaan tanpa kehilangan kualiti", "values": { "png": false, "svg": true } },
+        { "name": "Penyuntingan dalam aplikasi grafik", "values": { "png": false, "svg": true } },
+        { "name": "Saiz fail lebih kecil", "values": { "png": false, "svg": true } },
+        { "name": "Pembentangan", "values": { "png": true, "svg": true } }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Petua mencetak kod QR",
+      "description": "Untuk memastikan kod QR boleh dibaca selepas dicetak, ikut beberapa peraturan:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "Saiz minimum",
+          "description": "Kod perlu sekurang-kurangnya 2\u00d72 cm untuk pengimbasan jarak dekat. Semakin jauh jarak pengimbasan, semakin besar kod perlu."
+        },
+        { "icon": "RiContrastLine", "title": "Kontras", "description": "Kod gelap pada latar belakang terang. Elakkan warna pastel dan kontras rendah." },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Margin di sekeliling kod",
+          "description": "Kekalkan ruang kosong di sekeliling kod. Jangan letak elemen grafik lain terlalu dekat \u2013 margin penting untuk pengimbasan yang betul."
+        },
+        { "icon": "RiEyeLine", "title": "Ujian", "description": "Sebelum cetakan pukal, uji kod pada telefon berbeza dan dalam keadaan pencahayaan berbeza." },
+        { "icon": "RiShieldCheckLine", "title": "Tahap pembetulan", "description": "Untuk cetakan luar dan bahan yang mudah rosak, pilih tahap Q atau H." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Apa yang menjadikan penjana kod QR ini istimewa?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Penjanaan tempatan dalam pelayar",
+          "description": "Data yang dimasukkan dalam penjana tidak dihantar ke mana-mana pelayan \u2013 semua pemprosesan berlaku pada peranti anda."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "Lima jenis data dalam satu alat",
+          "description": "URL, teks, kad perniagaan vCard, e-mel, dan telefon \u2013 setiap jenis menjana kod QR dalam standard yang sesuai."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Ubah suai penampilan kod QR",
+          "description": "Warna kod dan latar belakang, saiz dalam piksel, margin, dan tahap pembetulan ralat \u2013 setiap parameter boleh diubah suai."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Empat tahap pembetulan ralat",
+          "description": "Algoritma Reed-Solomon membolehkan anda memilih ketahanan kod terhadap kerosakan \u2013 dari 7% (L) hingga 30% (H)."
+        },
+        { "icon": "RiEyeLine", "title": "Pratonton langsung", "description": "Anda melihat hasil dengan segera selepas menaip data, tanpa mengklik &quot;Jana&quot;." },
+        { "icon": "RiDownloadLine", "title": "Eksport PNG dan SVG", "description": "Muat turun kod dalam format yang sesuai untuk kegunaan anda." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Soalan lazim tentang penjana kod QR",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Adakah kod QR yang dijana oleh alat ini tamat tempoh?",
+          "answer": "Tidak. Kod QR statik (seperti yang dihasilkan oleh alat ini) tidak tamat tempoh. Kandungan \u2013 cth. URL atau data kad perniagaan \u2013 dikodkan terus dalam kod. Selagi halaman sasaran wujud, kod akan berfungsi.",
+          "answerSchemaText": "Tidak. Kod QR statik tidak tamat tempoh. Kandungan dikodkan terus dalam kod."
+        },
+        {
+          "question": "Bolehkah saya menukar URL dalam kod QR sedia ada?",
+          "answer": "Untuk kod QR statik, kandungan yang dikodkan tidak boleh diubah \u2013 anda perlu mencipta kod baharu dengan alamat baharu. Kod QR dinamik (boleh diedit selepas dijana) memerlukan perkhidmatan luaran berbayar.",
+          "answerSchemaText": "Tidak, kod QR statik tidak boleh diedit. Cipta kod baharu untuk URL berbeza."
+        },
+        {
+          "question": "PNG atau SVG \u2013 format kod QR mana untuk dipilih bagi cetakan?",
+          "answer": "PNG berfungsi untuk kebanyakan kegunaan: laman web, media sosial, cetakan sehingga saiz A4. SVG berasaskan vektor \u2013 boleh diskalakan kepada sebarang saiz tanpa kehilangan kualiti, sesuai untuk sepanduk, papan iklan, dan format iklan besar.",
+          "answerSchemaText": "PNG untuk web dan cetakan biasa. SVG untuk format besar dan penskalaan tanpa kehilangan."
+        },
+        {
+          "question": "Saiz kod QR apa untuk dipilih bagi kad perniagaan?",
+          "answer": "Untuk bahan bercetak (kad perniagaan, risalah), kod perlu sekurang-kurangnya 2\u00d72 cm, optimum 3\u00d73 cm. Dalam penjana, ini bersamaan dengan resolusi 300 px pada kualiti cetakan standard (300 DPI). Untuk format lebih besar (poster, sepanduk), pilih saiz lebih besar atau format SVG.",
+          "answerSchemaText": "Sekurang-kurangnya 2\u00d72 cm (300 px pada 300 DPI). Optimum 3\u00d73 cm untuk kad perniagaan."
+        },
+        {
+          "question": "Bolehkah saya menambah logo di tengah kod QR?",
+          "answer": "Alat ini tidak menyokong penambahan logo secara langsung. Walau bagaimanapun, anda boleh memuat turun kod dalam format SVG dan meletakkan logo di atasnya dalam aplikasi grafik \u2013 dalam kes ini, penting untuk menetapkan tahap pembetulan ralat tinggi (H) supaya kod kekal boleh dibaca walaupun sebahagiannya tertutup.",
+          "answerSchemaText": "Tidak secara langsung. Muat turun SVG dan tambah logo dalam aplikasi grafik dengan pembetulan ralat H."
+        },
+        {
+          "question": "Mengapa kod QR saya tidak diimbas selepas dicetak?",
+          "answer": "Punca paling biasa: kontras terlalu rendah antara kod dan latar belakang, saiz kod terlalu kecil, tiada margin di sekeliling kod, atau kerosakan cetakan. Cuba besarkan saiz, tingkatkan kontras, dan naikkan tahap pembetulan ralat (Q atau H).",
+          "answerSchemaText": "Semak kontras, saiz, margin, dan tahap pembetulan ralat."
+        },
+        {
+          "question": "Bolehkah saya menggunakan kod QR yang dijana secara komersial?",
+          "answer": "Ya. Kod QR yang dijana boleh digunakan secara bebas dalam sebarang projek \u2013 komersial dan bukan komersial, tanpa sekatan lesen.",
+          "answerSchemaText": "Ya, tanpa sekatan dalam projek komersial dan bukan komersial."
+        },
+        {
+          "question": "Apa bezanya antara kad perniagaan vCard dan kod QR teks biasa?",
+          "answer": "Kod QR vCard mengandungi data hubungan dalam format standard (nama, syarikat, telefon, e-mel, alamat). Selepas mengimbas, telefon secara automatik menawarkan untuk menyimpan kenalan dalam buku alamat. Kod teks memaparkan data sebagai teks biasa \u2013 tanpa pilihan untuk menyimpannya secara automatik.",
+          "answerSchemaText": "vCard menyimpan kenalan secara automatik. Kod QR teks hanya memaparkan teks."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Terokai alatan percuma lain" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

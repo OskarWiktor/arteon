@@ -11,7 +11,7 @@ export default function ListPageSkeleton({ variant = 'article' }: ListPageSkelet
   return (
     <>
       <HeroBannerSkeleton />
-      <div className="m-auto w-[94%] max-w-[1420px]">
+      <div className="m-auto w-[94%] max-w-[1420px] 2xl:max-w-none">
         <GapSkeleton variant="space" />
         <CardGridSkeleton count={6} cols={3} variant={variant} />
         <GapSkeleton variant="space" />

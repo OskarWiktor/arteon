@@ -1,0 +1,149 @@
+{
+  "toolKey": "jpgToWebp",
+  "locale": "sw",
+  "metadata": {
+    "title": "Kibadilishaji JPG/PNG hadi WebP Bure \u2013 Bila Kikomo",
+    "description": "Punguza ukubwa wa faili za picha bila kupoteza ubora. Badilisha JPG na PNG kuwa WebP na uharakishe tovuti yako. Bila usajili, inafanya kazi kwenye kivinjari.",
+    "ogImage": "/assets/tools/narzedzia-konwerter-jpg-png-na-webp.webp",
+    "path": "/sw/zana/kibadilishaji-jpg-png-hadi-webp"
+  },
+  "hero": {
+    "title": "Badilisha picha kuwa WebP \u2013 punguza ukubwa bila kupoteza ubora",
+    "description": "Pakia picha za JPG au PNG, na zana itazibadilisha kuwa muundo wa WebP. Faili ndogo, ubora sawa, kupakia kwa kasi zaidi kwa tovuti yako.",
+    "backgroundImage": "/assets/tools/narzedzia-konwerter-jpg-png-na-webp.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/sw/zana", "label": "Zana" },
+    "third": { "href": "/sw/zana/kibadilishaji-jpg-png-hadi-webp", "label": "Kibadilishaji JPG/PNG hadi WebP" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Kibadilishaji JPG/PNG hadi WebP bure",
+      "alternateName": ["Kibadilishaji picha hadi WebP", "Kibadilishaji JPG hadi WebP", "Kibadilishaji PNG hadi WebP", "Zana ya kubadilisha picha kuwa WebP", "Kubadilisha picha bila kupoteza ubora"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Kibadilishaji bure cha JPG na PNG hadi WebP. Punguza ukubwa wa faili za picha hadi 90% bila kupoteza ubora unaoonekana. Usindikaji wote unafanyika kwenye kivinjari chako \u2013 faili hazitumwi kwenye seva.",
+      "featureList": [
+        "Kubadilisha JPG hadi WebP",
+        "Kubadilisha PNG hadi WebP",
+        "Kubadilisha picha nyingi kwa wakati mmoja",
+        "Kitelezi cha ubora (0\u2013100)",
+        "Kulinganisha ukubwa wa asili na wa WebP",
+        "Kupakia kwa kuburuta na kudondosha au kuchagua faili",
+        "Kuonyesha kabla na baada ya ubadilishaji",
+        "Kupakua kila picha au zote kwa pamoja katika ZIP",
+        "Usindikaji wa ndani kwenye kivinjari"
+      ]
+    },
+    "howTo": {
+      "name": "Jinsi ya kubadilisha JPG na PNG kuwa WebP",
+      "description": "Jinsi ya kubadilisha picha za JPG na PNG kuwa muundo wa WebP. Pakia faili, weka ubora, na upakue picha zilizobadilishwa.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Pakia picha", "text": "Buruta faili kwenye eneo lililowekwa au zichague kutoka kwenye kifaa chako. Miundo inayoungwa mkono ni JPG na PNG." },
+        { "name": "Weka ubora", "text": "Tumia kitelezi kubadilisha ubora wa picha (0\u2013100). Thamani ya juu ina maana ya ubora bora lakini faili kubwa zaidi." },
+        { "name": "Pakua picha zilizobadilishwa", "text": "Bofya kitufe cha pakua karibu na kila picha au pakua zote kwa pamoja katika faili ya ZIP." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Muundo wa WebP ni nini na kwa nini ni muhimu?",
+      "html": "<p class=\"text-mid\">WebP ni muundo wa kisasa wa picha uliotengenezwa na Google ambao hutoa ubano bora kuliko JPG na PNG. Picha katika WebP zinachukua nafasi ndogo ya diski \u2013 kawaida 25\u201334% ndogo kuliko JPG na hadi 80% ndogo kuliko PNG \u2013 huku zikihifadhi ubora unaoonekana.</p><p class=\"text-mid mt-3\">Vivinjari vyote vikuu (Chrome, Firefox, Safari, Edge) vinaunga mkono WebP. Kutumia muundo huu kunamaanisha kupakia haraka kwa ukurasa, matumizi kidogo ya data, na alama bora za Core Web Vitals \u2013 ambayo huathiri moja kwa moja nafasi katika matokeo ya utafutaji wa Google.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Jinsi ya kutumia kibadilishaji cha JPG/PNG hadi WebP",
+      "description": "Kubadilisha kunachukua dakika chache tu:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Pakia picha", "description": "Buruta faili kwenye eneo lililowekwa au zichague kutoka kwenye kifaa chako. Unaweza kupakia picha nyingi kwa wakati mmoja." },
+        { "title": "2. Weka ubora", "description": "Tumia kitelezi kubadilisha ubora wa picha (0\u2013100). Thamani ya chini ina maana ya faili ndogo lakini ubora wa chini." },
+        { "title": "3. Pakua matokeo", "description": "Bofya kitufe cha pakua karibu na kila picha au pakua zote kwa pamoja katika faili ya ZIP." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Jinsi ya kuchagua ubora unaofaa kwa WebP",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Ubora: 80</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Inapendekezwa</span></div><p class=\"text-mid text-sm!\">Uwiano bora kati ya ubora na ukubwa wa faili. Inafaa kwa picha nyingi za tovuti na duka.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Ubora: 60\u201370</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Ubano mkali</span></div><p class=\"text-mid text-sm!\">Faili ndogo zaidi. Inafaa kwa picha ndogo ndogo, ikoni, na mandharinyuma ya mapambo.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Ubora: 90\u2013100</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Ubora wa juu zaidi</span></div><p class=\"text-mid text-sm!\">Ubora wa juu sana, lakini faili kubwa zaidi. Inafaa kwa picha za portfolio na picha za bidhaa zinazohitajika.</p></div></div>",
+      "html": "<p class=\"text-mid\">Mpangilio wa ubora huamua uwiano kati ya ubora wa kuonekana na ukubwa wa faili. Kwa picha nyingi za tovuti, thamani ya 75\u201385 hutoa matokeo bora \u2013 tofauti ya ubora haionekani kwa jicho, na faili zinaweza kuwa ndogo mara 3\u20135 kuliko JPG ya asili.</p><p class=\"text-mid mt-3\">Kwa picha ndogo ndogo, ikoni, na mandharinyuma ya mapambo, unaweza kupunguza ubora hadi 60\u201370 bila kupoteza ubainifu. Kwa picha za portfolio au picha za bidhaa zinazohitajika, thamani ya 90\u201395 itahifadhi maelezo.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Nani anahitaji kibadilishaji cha WebP?",
+      "description": "Kubadilisha picha kuwa WebP ni muhimu kwa mtu yeyote anayetaka tovuti yenye kasi zaidi:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Wamiliki wa tovuti",
+          "description": "Picha ndogo zinafanya ukurasa upakiwe haraka zaidi. Hii inaboresha uzoefu wa mtumiaji na huathiri nafasi katika Google."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Maduka ya mtandaoni",
+          "description": "Picha nyingi za bidhaa zinamaanisha megabaiti nyingi za data. Kubadilisha kuwa WebP hupunguza muda wa kupakia na matumizi ya data."
+        },
+        { "icon": "RiBloggerLine", "title": "Waandishi wa blogu", "description": "Makala yenye picha nyingi hupakiwa polepole zaidi. WebP hupunguza ukubwa wa picha huku ikihifadhi ubora." },
+        { "icon": "RiCodeLine", "title": "Watengenezaji wa tovuti", "description": "WebP ni kiwango cha kisasa cha picha za tovuti. Vivinjari vyote vikuu vinaunga mkono muundo huu." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Ni nini kinachofanya kibadilishaji hiki cha WebP kuwa maalum?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Usindikaji wa ndani kwenye kivinjari",
+          "description": "Picha hazitumwi kwenye seva yoyote \u2013 uchakataji wote unafanyika kwenye kifaa chako. Faragha yako imelindwa."
+        },
+        { "icon": "RiSpeedLine", "title": "Ubadilishaji wa papo hapo", "description": "Matokeo yanapatikana mara moja \u2013 hakuna kusubiri kwenye foleni au usindikaji wa seva." },
+        { "icon": "RiInfinityLine", "title": "Bila kikomo cha picha", "description": "Badilisha picha nyingi kama unavyohitaji. Hakuna kikomo cha kila siku au kwa kila kipindi." },
+        { "icon": "RiScalesLine", "title": "Kitelezi cha ubora kinachoweza kubadilishwa", "description": "Weka ubora (0\u2013100) kwa kila picha ili kupata uwiano bora kati ya ukubwa na ubora." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Maswali yanayoulizwa mara kwa mara kuhusu kibadilishaji cha WebP",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Muundo wa WebP ni nini?",
+          "answer": "WebP ni muundo wa kisasa wa picha uliotengenezwa na Google. Hutoa ubano bora kuliko JPG (picha ndogo kwa 25\u201334%) huku ikiunga mkono uwazi (kama PNG). Vivinjari vyote vikuu vinaunga mkono WebP.",
+          "answerSchemaText": "WebP ni muundo wa picha wa Google wenye ubano bora kuliko JPG. Unaungwa mkono na vivinjari vyote vikuu."
+        },
+        {
+          "question": "Je, kubadilisha kuwa WebP kunapunguza ubora wa picha?",
+          "answer": "Kwa mpangilio wa ubora wa 75\u201385, tofauti haionekani kwa jicho. Ubano wa WebP ni bora zaidi kuliko JPG \u2013 kwa ubora sawa wa kuonekana, faili inaweza kuwa ndogo mara 3\u20135.",
+          "answerSchemaText": "Kwa ubora wa 75\u201385, tofauti haionekani. WebP hutoa ubano bora kuliko JPG."
+        },
+        {
+          "question": "Je, picha zinatumwa kwenye seva?",
+          "answer": "Hapana. Uchakataji wote unafanyika kwenye kivinjari chako \u2013 picha hazitumwi mahali popote. Baada ya kufunga ukurasa, data inafutwa kutoka kumbukumbu.",
+          "answerSchemaText": "Hapana. Picha zinachakatwa kwenye kivinjari. Hazitumwi kwenye seva yoyote."
+        },
+        {
+          "question": "Je, kuna kikomo cha idadi ya picha?",
+          "answer": "Hapana. Unaweza kubadilisha picha nyingi kama unavyohitaji. Hakuna kikomo cha kila siku au kwa kila kipindi.",
+          "answerSchemaText": "Hapana. Hakuna kikomo cha idadi ya picha za kubadilisha."
+        },
+        {
+          "question": "Je, WebP inaungwa mkono na vivinjari vyote?",
+          "answer": "Ndiyo. Vivinjari vyote vikuu \u2013 Chrome, Firefox, Safari (tangu toleo la 14), na Edge \u2013 vinaunga mkono muundo wa WebP. Kwa vivinjari vya zamani, inashauriwa kuhifadhi nakala ya JPG kama mbadala.",
+          "answerSchemaText": "Ndiyo. Chrome, Firefox, Safari 14+, na Edge zote zinaunga mkono WebP."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Gundua zana nyingine" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "toolKey": "imageResize",
+  "locale": "sw",
+  "metadata": {
+    "title": "Kihariri cha Picha Bure \u2013 Kata na Ubadilishe Ukubwa kwa Mitandao ya Kijamii",
+    "description": "Kata na ubadilishe ukubwa wa picha kwa Instagram, Facebook, LinkedIn na zaidi. Chagua muundo uliyokuwa tayari au weka vipimo maalum. Bila usajili, bila kikomo.",
+    "ogImage": "/assets/tools/narzedzia-edytor-zdjec-online.webp",
+    "path": "/sw/zana/kihariri-cha-picha"
+  },
+  "hero": {
+    "title": "Kata na ubadilishe ukubwa wa picha kwa uwiano wowote",
+    "description": "Pakia picha, chagua muundo uliokuwa tayari kwa mitandao ya kijamii au weka vipimo maalum, na upakue picha iliyokatwa tayari.",
+    "backgroundImage": "/assets/tools/narzedzia-edytor-zdjec-online.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/sw/zana", "label": "Zana" },
+    "third": { "href": "/sw/zana/kihariri-cha-picha", "label": "Kihariri cha picha" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Kihariri cha picha bure \u2013 kata na ubadilishe ukubwa",
+      "alternateName": ["Zana ya kukata picha", "Kubadilisha ukubwa wa picha kwa mitandao ya kijamii", "Kihariri cha picha kwa Instagram na Facebook", "Kukata picha kwa uwiano maalum"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageEditor",
+      "description": "Kihariri cha picha bure kinachokuwezesha kukata na kubadilisha ukubwa wa picha kwa mitandao ya kijamii, tovuti, na matumizi mengine. Chagua miundo iliyokuwa tayari au weka vipimo maalum.",
+      "featureList": [
+        "Kukata picha kwa uwiano maalum",
+        "Miundo iliyokuwa tayari kwa Instagram, Facebook, LinkedIn, YouTube",
+        "Vipimo maalum vya upana na urefu",
+        "Mzunguko na kugeuza picha",
+        "Kuonyesha kabla kwa wakati halisi",
+        "Pakua kama PNG au JPG",
+        "Usindikaji wa ndani kwenye kivinjari"
+      ]
+    },
+    "howTo": {
+      "name": "Jinsi ya kukata na kubadilisha ukubwa wa picha",
+      "description": "Jinsi ya kukata picha kwa uwiano maalum na kuibadilisha ukubwa kwa mitandao ya kijamii au tovuti.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Pakia picha", "text": "Buruta faili kwenye eneo lililowekwa au ichague kutoka kwenye kifaa chako." },
+        { "name": "Chagua uwiano", "text": "Chagua muundo uliokuwa tayari kwa jukwaa maalum au weka vipimo maalum." },
+        { "name": "Badilisha eneo la kukata", "text": "Sogeza na ubadilishe ukubwa wa fremu ya kukata ili kuchagua sehemu inayofaa ya picha." },
+        { "name": "Pakua matokeo", "text": "Bofya kitufe cha pakua ili kupata picha iliyokatwa kwa muundo wa PNG au JPG." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Kwa nini kukata picha kwa uwiano sahihi ni muhimu?",
+      "html": "<p class=\"text-mid\">Kila jukwaa la mtandaoni lina mahitaji yake ya vipimo vya picha. Picha ya profaili kwenye Instagram ni mraba (1:1), jalada la Facebook ni pana (820\u00d7312 px), na picha ndogo ya YouTube ni 16:9. Kupakia picha yenye uwiano usio sahihi husababisha kukatwa kiatomati \u2013 ambayo mara nyingi huondoa sehemu muhimu ya picha.</p><p class=\"text-mid mt-3\">Kihariri hiki kinakuwezesha kutayarisha picha kwa uwiano sahihi kabla ya kupakia. Chagua muundo uliokuwa tayari au weka vipimo maalum, na utapata picha iliyokatwa kwa usahihi.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Jinsi ya kutumia kihariri cha picha",
+      "description": "Kukata na kubadilisha ukubwa kunachukua dakika chache tu:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Pakia picha",
+          "description": "Buruta faili kwenye eneo lililowekwa au ichague kutoka kwenye kifaa chako. Miundo inayoungwa mkono ni JPG, PNG, na WebP."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "2. Chagua uwiano",
+          "description": "Chagua muundo uliokuwa tayari kwa jukwaa maalum (Instagram, Facebook, LinkedIn, YouTube) au weka vipimo maalum vya upana na urefu."
+        },
+        {
+          "icon": "RiDragMoveLine",
+          "title": "3. Badilisha eneo",
+          "description": "Sogeza na ubadilishe ukubwa wa fremu ya kukata. Picha inayoonyeshwa kwa wakati halisi ili uweze kuona matokeo mara moja."
+        },
+        { "icon": "RiDownloadLine", "title": "4. Pakua matokeo", "description": "Bofya kitufe cha pakua. Picha iliyokatwa inapatikana kwa muundo wa PNG au JPG." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Miundo iliyokuwa tayari kwa mitandao ya kijamii",
+      "description": "Kihariri kinatoa miundo iliyokuwa tayari kwa majukwaa maarufu zaidi:",
+      "grid": "three",
+      "items": [
+        { "icon": "RiInstagramLine", "title": "Instagram", "description": "Chapisho la mraba (1:1), hadithi na rili (9:16), mandhari (1.91:1), wima (4:5)." },
+        { "icon": "RiFacebookLine", "title": "Facebook", "description": "Jalada (820\u00d7312), chapisho (1200\u00d7630), hadithi (1080\u00d71920), picha ya profaili (1:1)." },
+        { "icon": "RiLinkedinLine", "title": "LinkedIn", "description": "Jalada (1584\u00d7396), chapisho (1200\u00d71200), picha ya profaili (1:1)." },
+        { "icon": "RiYoutubeLine", "title": "YouTube", "description": "Picha ndogo (1280\u00d7720), bango la chaneli (2560\u00d71440)." },
+        { "icon": "RiTwitterXLine", "title": "X (Twitter)", "description": "Chapisho (1600\u00d7900), kichwa (1500\u00d7500), picha ya profaili (1:1)." },
+        { "icon": "RiImageLine", "title": "Maalum", "description": "Weka upana na urefu wowote kwa piksel au uchague uwiano wowote." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Nani anahitaji kihariri cha picha?",
+      "description": "Zana hii ni muhimu kwa mtu yeyote anayefanya kazi na picha:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiMegaphoneLine", "title": "Wasimamizi wa mitandao ya kijamii", "description": "Tayarisha picha kwa uwiano sahihi kwa kila jukwaa bila kuhitaji programu ya michoro." },
+        { "icon": "RiShoppingBagLine", "title": "Wamiliki wa maduka", "description": "Kata picha za bidhaa kwa uwiano sawa kwa matokeo ya kitaalamu kwenye orodha." },
+        { "icon": "RiBloggerLine", "title": "Waandishi wa blogu", "description": "Tayarisha picha za kichwa na picha za makala kwa uwiano sahihi." },
+        { "icon": "RiCodeLine", "title": "Watengenezaji wa tovuti", "description": "Kata picha haraka kwa vipimo maalum bila kufungua programu ya michoro." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Ni nini kinachofanya kihariri hiki cha picha kuwa maalum?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Usindikaji wa ndani kwenye kivinjari", "description": "Picha hazitumwi kwenye seva yoyote. Uchakataji wote unafanyika kwenye kifaa chako." },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Miundo iliyokuwa tayari kwa mitandao ya kijamii",
+          "description": "Chagua muundo uliokuwa tayari kwa Instagram, Facebook, LinkedIn, YouTube, au X \u2013 bila kuhitaji kukumbuka vipimo."
+        },
+        { "icon": "RiSettings3Line", "title": "Vipimo maalum", "description": "Weka upana na urefu wowote kwa piksel au uchague uwiano maalum." },
+        { "icon": "RiEyeLine", "title": "Kuonyesha kwa wakati halisi", "description": "Mabadiliko yanaonekana mara moja \u2013 unaweza kujaribu hadi upate matokeo bora." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Maswali yanayoulizwa mara kwa mara kuhusu kihariri cha picha",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Je, kihariri kinahitaji usajili?",
+          "answer": "Hapana. Zana ni bure kabisa na haihitaji kuingia au usajili. Picha inachakatwa kwenye kivinjari chako \u2013 haitumwi kwenye seva yoyote.",
+          "answerSchemaText": "Hapana. Zana ni bure na haihitaji usajili. Picha inachakatwa kwenye kivinjari."
+        },
+        {
+          "question": "Je, miundo gani ya picha inaungwa mkono?",
+          "answer": "Kihariri kinaunga mkono JPG, PNG, na WebP. Picha iliyokatwa inaweza kupakuliwa kwa muundo wa PNG au JPG.",
+          "answerSchemaText": "JPG, PNG, na WebP. Pakua kwa muundo wa PNG au JPG."
+        },
+        {
+          "question": "Je, ninaweza kuweka vipimo maalum vya piksel?",
+          "answer": "Ndiyo. Mbali na miundo iliyokuwa tayari kwa mitandao ya kijamii, unaweza kuweka upana na urefu wowote kwa piksel au uchague uwiano maalum wa kukata.",
+          "answerSchemaText": "Ndiyo. Unaweza kuweka vipimo maalum vya piksel au uwiano maalum."
+        },
+        {
+          "question": "Je, picha inatumwa kwenye seva?",
+          "answer": "Hapana. Uchakataji wote unafanyika kwenye kivinjari chako. Picha haihifadhiwi na haitumwi mahali popote. Baada ya kufunga ukurasa, data yote inafutwa kutoka kumbukumbu.",
+          "answerSchemaText": "Hapana. Picha inachakatwa kwenye kivinjari. Haitumwi kwenye seva yoyote."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Gundua zana nyingine" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

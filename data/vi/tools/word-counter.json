@@ -1,0 +1,318 @@
+{
+  "toolKey": "wordCounter",
+  "locale": "vi",
+  "metadata": {
+    "title": "Đếm Từ & Ký Tự Miễn Phí – Kiểm Tra Độ Dài Văn Bản SEO",
+    "description": "Đếm từ, ký tự, đoạn văn và thời gian đọc ngay lập tức. Kiểm tra độ dài văn bản tối ưu cho SEO — bài blog, trang sản phẩm, trang đích. Không cần đăng ký, không giới hạn.",
+    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "path": "/vi/cong-cu/dem-tu-va-ky-tu"
+  },
+  "hero": {
+    "title": "Đếm từ và ký tự với đánh giá độ dài",
+    "description": "Dán văn bản, chọn loại trang, và công cụ sẽ hiển thị số từ, số ký tự, đoạn văn và đánh giá xem độ dài có phù hợp với loại nội dung đó không",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/vi/cong-cu",
+      "label": "Công cụ"
+    },
+    "third": {
+      "href": "/vi/cong-cu/dem-tu-va-ky-tu",
+      "label": "Đếm từ và ký tự"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Công cụ đếm từ và ký tự miễn phí",
+      "alternateName": [
+        "Đếm từ với đánh giá độ dài văn bản",
+        "Đếm ký tự trực tuyến",
+        "Công cụ đếm từ cho người viết nội dung",
+        "Tính thời gian đọc",
+        "Đếm từ trực tuyến",
+        "Kiểm tra văn bản có bao nhiêu từ",
+        "Đếm từ cho SEO",
+        "Độ dài văn bản tối ưu cho bài blog"
+      ],
+      "applicationSubCategory": "TextApplication",
+      "description": "Công cụ đếm từ và ký tự miễn phí. Kiểm tra số từ, ký tự, đoạn văn và thời gian đọc ước tính. Đánh giá độ dài văn bản cho các loại trang khác nhau: mô tả sản phẩm, trang dịch vụ, trang chủ, trang đích, bài blog, hướng dẫn.",
+      "featureList": [
+        "Đếm từ",
+        "Đếm ký tự có và không có dấu cách",
+        "Đếm đoạn văn",
+        "Ước tính thời gian đọc",
+        "Đánh giá độ dài văn bản cho các loại trang khác nhau",
+        "Phạm vi khuyến nghị cho: mô tả sản phẩm, trang dịch vụ, trang chủ, trang đích, bài blog, hướng dẫn",
+        "Sao chép báo cáo vào clipboard"
+      ]
+    },
+    "howTo": {
+      "name": "Cách sử dụng công cụ đếm từ và ký tự",
+      "description": "Kiểm tra độ dài văn bản và đánh giá xem có phù hợp với loại trang cụ thể không. Tìm hiểu mô tả sản phẩm, trang dịch vụ, bài blog hoặc hướng dẫn nên có bao nhiêu từ.",
+      "steps": [
+        {
+          "name": "Chọn loại trang",
+          "text": "Chọn từ menu thả xuống loại trang bạn đang viết. Mỗi loại có phạm vi số từ khuyến nghị khác nhau."
+        },
+        {
+          "name": "Dán văn bản",
+          "text": "Dán hoặc nhập văn bản vào trường văn bản. Công cụ sẽ tự động đếm từ, ký tự (có và không có dấu cách), đoạn văn và ước tính thời gian đọc."
+        },
+        {
+          "name": "Kiểm tra đánh giá",
+          "text": "Nhìn vào thanh tiến trình có mã màu và trạng thái. Xanh lá nghĩa là độ dài tốt, vàng nghĩa là quá ngắn, đỏ nghĩa là quá dài."
+        },
+        {
+          "name": "Sao chép báo cáo",
+          "text": "Nút Sao chép báo cáo sao chép tóm tắt với tất cả thống kê và đánh giá độ dài vào clipboard."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Đếm từ miễn phí — đếm và đánh giá độ dài văn bản",
+      "html": "<p class=\"text-mid\">Công cụ đếm từ này cho phép bạn nhanh chóng kiểm tra độ dài của bất kỳ văn bản nào. Dán nội dung và bộ đếm sẽ tính từ, ký tự và đoạn văn. Bạn cũng sẽ thấy mất bao nhiêu phút để đọc và liệu độ dài có phù hợp với loại trang bạn chọn không.</p><p class=\"text-mid mt-3\">Mỗi loại trang có mục đích khác nhau — mô tả sản phẩm trả lời câu hỏi của người mua, bài blog đi sâu vào chủ đề, và trang dịch vụ giải thích khách hàng sẽ nhận được gì. Bộ đếm hiển thị phạm vi cho từng loại dựa trên phân tích nội dung xếp hạng tốt.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cách sử dụng công cụ đếm từ và ký tự",
+      "description": "Kiểm tra độ dài văn bản mất chưa đầy một phút:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiListCheck2",
+          "title": "1. Chọn loại trang",
+          "description": "Chọn từ menu thả xuống loại trang bạn đang viết. Mỗi loại có số từ tối thiểu và tối đa khuyến nghị khác nhau."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Dán văn bản",
+          "description": "Dán hoặc nhập văn bản vào trường lớn bên phải. Công cụ sẽ ngay lập tức đếm từ, ký tự (có và không có dấu cách), đoạn văn và ước tính thời gian đọc."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "3. Kiểm tra đánh giá",
+          "description": "Nhìn vào thanh tiến trình có mã màu và trạng thái. Xanh lá nghĩa là độ dài tốt, vàng nghĩa là quá ngắn, đỏ nghĩa là quá dài. Bên dưới bạn sẽ tìm thấy gợi ý hữu ích."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Sao chép báo cáo",
+          "description": "Nút Sao chép báo cáo sao chép tóm tắt với số từ, số ký tự, đoạn văn, thời gian đọc và đánh giá độ dài vào clipboard."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Bộ đếm đo gì — từ, ký tự, thời gian đọc",
+      "description": "Bộ đếm theo dõi năm chỉ số chính:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiText",
+          "title": "Từ",
+          "description": "Tổng số từ. Đây là chỉ số chính về độ dài văn bản."
+        },
+        {
+          "icon": "RiSpaceShipLine",
+          "title": "Ký tự (có dấu cách)",
+          "description": "Tất cả ký tự bao gồm dấu cách. Hữu ích khi CMS có giới hạn ký tự (ví dụ: danh sách marketplace)."
+        },
+        {
+          "icon": "RiHashtag",
+          "title": "Ký tự (không dấu cách)",
+          "description": "Chỉ chữ cái, chữ số và dấu câu. Đôi khi cần cho nhà in hoặc tính giá dịch thuật."
+        },
+        {
+          "icon": "RiParagraph",
+          "title": "Đoạn văn",
+          "description": "Bao nhiêu khối văn bản được phân cách bằng dòng trống. Giúp đánh giá xem văn bản có cấu trúc tốt không."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Thời gian đọc",
+          "description": "Bộ tính thời gian đọc cho biết mất bao nhiêu phút để đọc văn bản với tốc độ trung bình 200 từ mỗi phút."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Cách đọc kết quả",
+      "subtitle": "Trạng thái đánh giá",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">Độ dài tốt</span><span class=\"text-mid text-sm!\">Văn bản nằm trong phạm vi</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Dưới phạm vi</span><span class=\"text-mid text-sm!\">Văn bản ngắn hơn thông thường</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Trên phạm vi</span><span class=\"text-mid text-sm!\">Văn bản dài hơn thông thường</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Tiến trình</span><span class=\"text-mid\">1200 / 1200–3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Thanh tiến trình có mã màu và trạng thái giúp bạn nhanh chóng đánh giá độ dài văn bản:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Độ dài tốt</strong> (xanh lá) — văn bản nằm trong phạm vi gần đúng cho loại trang đã chọn.</li><li><strong class=\"text-warning-text\">Dưới phạm vi</strong> (vàng) — văn bản ngắn hơn thông thường cho loại trang này. Nếu trả lời tất cả câu hỏi của người đọc, độ dài có thể ổn.</li><li><strong class=\"text-error-text\">Trên phạm vi</strong> (đỏ) — văn bản dài hơn thông thường. Nếu mỗi đoạn đều thêm thông tin mới, độ dài là hợp lý.</li></ul><p class=\"text-mid mt-4\">Các phạm vi dựa trên phân tích nội dung xếp hạng tốt trong công cụ tìm kiếm. Nếu văn bản trả lời câu hỏi của người đọc, độ dài phù hợp bất kể kết quả bộ đếm.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Văn bản nên có bao nhiêu từ — độ dài tối ưu cho SEO",
+      "html": "<p class=\"text-mid mb-4\">Các phạm vi dưới đây dựa trên phân tích nội dung xếp hạng tốt trong công cụ tìm kiếm. Bản thân độ dài văn bản không ảnh hưởng đến thứ hạng Google — điều quan trọng là nội dung có trả lời câu hỏi của người đọc không.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Loại trang</th><th class=\"py-2 pr-4 font-semibold\">Phạm vi</th><th class=\"py-2 font-semibold\">Khi nào ngắn hơn, khi nào dài hơn?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Mô tả sản phẩm</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 từ</td><td class=\"text-primary-light0 py-2 text-sm\">Sản phẩm đơn giản (ví dụ: cốc) — 80–150 từ. Thiết bị phức tạp (ví dụ: laptop) — 300–400 từ, vì người mua có nhiều câu hỏi hơn.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Trang dịch vụ</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 từ</td><td class=\"text-primary-light0 py-2 text-sm\">Dịch vụ địa phương (ví dụ: thợ sửa ống nước) — 500–700 từ. Dịch vụ B2B với quy trình và FAQ — 1.200–1.500 từ.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Trang chủ</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 từ</td><td class=\"text-primary-light0 py-2 text-sm\">Trang chủ truyền tải giá trị chính và hướng dẫn khách truy cập tiếp — văn bản hỗ trợ điều hướng, không thay thế trang con.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Trang đích</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 từ</td><td class=\"text-primary-light0 py-2 text-sm\">Ưu đãi đơn giản — 600–1.000 từ. Ưu đãi cần giải thích quy trình, biến thể và xử lý phản đối — 1.500–2.500 từ.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Bài blog</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 từ</td><td class=\"text-primary-light0 py-2 text-sm\">Answer to a simple question - 1,200–1,800 words. Complex topic with many aspects - 2,000–3,000 words.</td></tr><tr><td class=\"py-2 pr-4\">Guide</td><td class=\"py-2 pr-4 whitespace-nowrap\">2500–6000 words</td><td class=\"text-primary-light0 py-2 text-sm\">Narrow topic - 2,500–3,500 words. Broad topic with many steps and examples - 4,000–6,000 words.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Công cụ đếm từ dành cho ai?",
+      "description": "Công cụ đếm từ cho người viết nội dung và hơn thế nữa — đây là những người sử dụng bộ đếm nhiều nhất:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiEditLine",
+          "title": "Người viết nội dung và sáng tạo nội dung",
+          "description": "Kiểm tra xem văn bản có nằm trong phạm vi khuyến nghị cho loại trang cụ thể không. Bộ đếm từ SEO giúp đánh giá liệu bài viết đã phát triển đủ chưa."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Blogger",
+          "description": "Theo dõi độ dài bài viết để giữ các bài đăng nhất quán. Kiểm tra thời gian đọc trước khi xuất bản."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Chủ cửa hàng thương mại điện tử",
+          "description": "Xác minh mô tả sản phẩm so với giới hạn ký tự trên nền tảng bán hàng (Amazon, eBay, Etsy)."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "Chuyên gia SEO",
+          "description": "Đánh giá xem nội dung trang có độ dài tối ưu so với đối thủ không. Phân tích tỷ lệ từ trên chủ đề."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Sinh viên và học giả",
+          "description": "Kiểm tra xem bài luận có đáp ứng yêu cầu số từ hoặc ký tự không."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Dịch giả",
+          "description": "Đếm ký tự không dấu cách cho báo giá dịch thuật (đơn vị tính phí tiêu chuẩn)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Giới hạn ký tự trên các nền tảng phổ biến",
+      "html": "<p class=\"text-mid mb-4\">Bộ đếm ký tự hữu ích khi tạo nội dung cho các nền tảng có giới hạn độ dài:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Nền tảng / Thành phần</th><th class=\"py-2 pr-4 font-semibold\">Giới hạn ký tự</th><th class=\"py-2 font-semibold\">Ghi chú</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 ký tự</td><td class=\"text-primary-light0 py-2 text-sm\">Tiêu đề dài hơn bị cắt ngắn trong kết quả tìm kiếm.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 ký tự</td><td class=\"text-primary-light0 py-2 text-sm\">Mô tả hiển thị bên dưới liên kết trong kết quả tìm kiếm.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - tiêu đề sản phẩm</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 ký tự</td><td class=\"text-primary-light0 py-2 text-sm\">Tiêu đề ngắn, cụ thể với các từ khóa quan trọng nhất.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - bullet points</td><td class=\"py-2 pr-4 whitespace-nowrap\">500 ký tự mỗi mục</td><td class=\"text-primary-light0 py-2 text-sm\">Tối đa 5 bullet points mô tả các tính năng sản phẩm chính.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) - bài đăng</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 ký tự</td><td class=\"text-primary-light0 py-2 text-sm\">Giới hạn tiêu chuẩn cho người dùng thông thường.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn - bài đăng</td><td class=\"py-2 pr-4 whitespace-nowrap\">3.000 ký tự</td><td class=\"text-primary-light0 py-2 text-sm\">Sau ~210 ký tự xuất hiện liên kết &quot;xem thêm&quot;.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Điều gì làm cho công cụ đếm từ và ký tự này đặc biệt?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Sáu loại trang với phạm vi khuyến nghị",
+          "description": "Mô tả sản phẩm, trang dịch vụ, trang chủ, trang đích, bài blog và hướng dẫn — mỗi loại có phạm vi riêng dựa trên phân tích."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Xử lý cục bộ trong trình duyệt",
+          "description": "Văn bản của bạn không bao giờ được gửi đến máy chủ nào — tất cả phân tích diễn ra cục bộ trên thiết bị của bạn."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Đánh giá độ dài văn bản",
+          "description": "Bạn không chỉ đếm từ — bạn nhận được thông tin về việc độ dài có phù hợp với loại trang đã chọn không."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "Phạm vi dựa trên SEO",
+          "description": "Độ dài khuyến nghị dựa trên phân tích nội dung xếp hạng tốt trong công cụ tìm kiếm."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Thời gian đọc",
+          "description": "Bạn biết ngay mất bao nhiêu phút để người đọc xem hết văn bản."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Sao chép báo cáo",
+          "description": "Nút Sao chép báo cáo sao chép tóm tắt với tất cả thống kê và đánh giá độ dài vào clipboard."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Câu hỏi thường gặp về công cụ đếm từ và ký tự",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Độ dài văn bản có ảnh hưởng đến thứ hạng Google không?",
+          "answer": "Bản thân độ dài văn bản không phải là yếu tố xếp hạng. Google đánh giá xem nội dung có trả lời câu hỏi của người dùng và có giá trị cho họ không. Văn bản ngắn hơn nhưng trả lời toàn diện câu hỏi có thể xếp hạng tốt — điều quan trọng là giá trị cho người đọc. Các phạm vi trong công cụ này dựa trên phân tích nội dung xếp hạng tốt trong kết quả tìm kiếm.",
+          "answerSchemaText": "Độ dài văn bản không phải yếu tố xếp hạng trực tiếp. Google đánh giá giá trị nội dung cho người dùng."
+        },
+        {
+          "question": "Tại sao phạm vi từ rộng như vậy?",
+          "answer": "Cùng loại trang có thể cần độ dài khác nhau tùy thuộc vào độ phức tạp của chủ đề. Mô tả sản phẩm đơn giản (ví dụ: cốc) là 80–150 từ — chỉ chất liệu, dung tích và cách sử dụng. Mô tả laptop là 300–400 từ vì người mua hỏi về bộ xử lý, bộ nhớ, màn hình và pin. Tương tự với dịch vụ: trang thợ sửa ống nước địa phương là 500–700 từ, trong khi trang triển khai dịch vụ B2B toàn diện với các bước quy trình và FAQ là 1.200–1.500 từ.",
+          "answerSchemaText": "Sự khác biệt đến từ độ phức tạp của chủ đề — sản phẩm đơn giản cần ít từ hơn sản phẩm phức tạp."
+        },
+        {
+          "question": "Tôi nên hiểu \"quá ngắn\" hoặc \"quá dài\" như thế nào?",
+          "answer": "Đánh giá cho biết văn bản của bạn nằm ở đâu so với nội dung thông thường của loại đó. Nếu văn bản được đánh dấu \"quá ngắn\" nhưng trả lời tất cả câu hỏi của người đọc — độ dài ổn. Nếu \"quá dài\" nhưng mỗi đoạn đều thêm thông tin mới — độ dài là hợp lý.",
+          "answerSchemaText": "Đánh giá cho biết văn bản nằm ở đâu so với nội dung thông thường. Nếu văn bản trả lời câu hỏi của người đọc, độ dài phù hợp."
+        },
+        {
+          "question": "Bộ tính thời gian đọc hoạt động như thế nào?",
+          "answer": "Công cụ chia số từ cho 200 — tốc độ đọc trung bình cho văn bản thông thường. Văn bản kỹ thuật hoặc khó (ví dụ: tài liệu, điều khoản dịch vụ) sẽ được đọc chậm hơn. Bài viết lifestyle nhẹ nhàng — nhanh hơn. Kết quả là giá trị gần đúng giúp ước tính người đọc sẽ dành bao lâu cho văn bản.",
+          "answerSchemaText": "Công cụ giả định tốc độ đọc trung bình 200 từ mỗi phút. Đây là giá trị gần đúng cho văn bản thông thường."
+        },
+        {
+          "question": "Các phạm vi khuyến nghị đến từ đâu?",
+          "answer": "Các phạm vi dựa trên phân tích nội dung xếp hạng tốt trong công cụ tìm kiếm và các phương pháp tốt nhất về tạo nội dung. Chúng cố ý rộng vì cùng loại trang có thể cần độ dài khác nhau tùy thuộc vào ngành, độ phức tạp của chủ đề và nhu cầu của người đọc. Các phạm vi là điểm khởi đầu để đánh giá liệu văn bản có nằm trong phạm vi thông thường cho loại trang cụ thể không.",
+          "answerSchemaText": "Các phạm vi dựa trên phân tích SEO và các phương pháp tốt nhất về tạo nội dung."
+        },
+        {
+          "question": "Tôi có thể sao chép báo cáo với thống kê không?",
+          "answer": "Có. Bên dưới thống kê bạn sẽ tìm thấy nút Sao chép báo cáo — nó sao chép tóm tắt với số từ, số ký tự, đoạn văn, thời gian đọc và đánh giá độ dài vào clipboard. Bạn có thể dán vào tài liệu hoặc gửi cho đồng nghiệp.",
+          "answerSchemaText": "Có. Nhấp nút Sao chép báo cáo bên dưới thống kê. Tóm tắt với tất cả chỉ số và đánh giá sẽ được sao chép vào clipboard."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Khám phá các công cụ khác"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

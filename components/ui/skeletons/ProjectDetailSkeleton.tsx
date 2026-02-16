@@ -11,7 +11,7 @@ export default function ProjectDetailSkeleton() {
     <>
       <HeroBannerSkeleton />
       <BreadcrumbsSkeleton />
-      <div className="m-auto w-[94%] max-w-[1420px]">
+      <div className="m-auto w-[94%] max-w-[1420px] 2xl:max-w-none">
         <GapSkeleton variant="space" />
         <div className="flex flex-col-reverse gap-8 lg:grid lg:grid-cols-[1fr_300px]">
           <div className="space-y-6">

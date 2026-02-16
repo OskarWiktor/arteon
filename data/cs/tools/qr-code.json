@@ -1,0 +1,188 @@
+{
+  "toolKey": "qrCode",
+  "locale": "cs",
+  "metadata": {
+    "title": "Generátor QR kódu zdarma – PNG a SVG, bez registrace",
+    "description": "Vytvořte QR kód pro web, vCard, menu nebo leták během pár sekund. Export do PNG a SVG. Úprava barev a velikosti. Bez registrace, bez limitů.",
+    "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
+    "path": "/cs/nastroje/generator-qr-kodu-zdarma"
+  },
+  "hero": {
+    "title": "Generátor QR kódu – zdarma, bez registrace",
+    "description": "Vytvořte QR kód pro web, vizitku vCard, e-mail, telefon nebo text. Upravte barvy, velikost a úroveň korekce chyb, poté stáhněte hotový soubor PNG nebo SVG.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/cs/nastroje", "label": "Nástroje" },
+    "third": { "href": "/cs/nastroje/generator-qr-kodu-zdarma", "label": "Generátor QR kódu zdarma" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Generátor QR kódu zdarma",
+      "alternateName": ["Tvůrce QR kódů", "Generátor QR kódu vCard", "Bezplatný generátor QR", "Nástroj na QR kódy"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "QRCodeGenerator",
+      "description": "Vytvořte QR kód pro web, vizitky, menu nebo letáky. Vyberte typ dat, upravte barvy a velikost, poté stáhněte soubor PNG nebo SVG.",
+      "featureList": [
+        "QR kód pro URL (webové stránky)",
+        "QR kód pro prostý text",
+        "QR kód vCard (kontaktní údaje)",
+        "QR kód pro e-mail (adresa, předmět, obsah)",
+        "QR kód pro telefonní číslo",
+        "Přizpůsobitelné barvy kódu a pozadí",
+        "Volba velikosti kódu v pixelech",
+        "Export do formátu PNG (rastr)",
+        "Export do formátu SVG (vektor)",
+        "Živý náhled kódu",
+        "Lokální zpracování v prohlížeči",
+        "Korekce chyb Reed-Solomon"
+      ]
+    },
+    "howTo": {
+      "name": "Jak použít bezplatný generátor QR kódu",
+      "description": "Jak vytvořit QR kód pro web, vizitku vCard, e-mail nebo telefon – od výběru typu dat po stažení souboru připraveného k tisku.",
+      "steps": [
+        { "name": "Vyberte typ dat", "text": "Určete, co má QR kód obsahovat: URL, text, vizitku (vCard), e-mail nebo telefonní číslo." },
+        { "name": "Zadejte data", "text": "Vyplňte příslušná pole. Pro URL zadejte adresu webu; pro vCard uveďte kontaktní údaje." },
+        { "name": "Upravte vzhled", "text": "Vyberte velikost, okraje, barvu kódu a pozadí a úroveň korekce chyb." },
+        { "name": "Stáhněte kód", "text": "Hotový QR kód si stáhněte jako soubor PNG (pro tisk a web) nebo SVG (vektor, škálovatelný bez ztráty kvality)." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Co je QR kód a jak funguje?",
+      "html": "<p class=\"text-mid\">QR kód (Quick Response) je dvourozměrný čárový kód, který lze naskenovat kamerou mobilního telefonu. Na rozdíl od tradičních čárových kódů ukládá QR kód data horizontálně i vertikálně, což umožňuje zakódovat více informací – až přibližně 3 000 alfanumerických znaků.</p><p class=\"text-mid mt-3\">QR kód byl vyvinut v roce 1994 japonskou firmou Denso Wave (součást skupiny Toyota) pro sledování automobilových dílů. Dnes se QR kódy široce používají v marketingu, pohostinství, logistice a obchodní komunikaci.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Jak použít bezplatný generátor QR kódu",
+      "description": "Vytvoření QR kódu zabere jen pár sekund:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Vyberte typ dat", "description": "Vyberte, co chcete zakódovat: URL, text, vizitku vCard, e-mail nebo telefonní číslo." },
+        { "title": "2. Zadejte data", "description": "Vyplňte příslušná pole – adresu webu, kontaktní údaje nebo obsah zprávy." },
+        { "title": "3. Stáhněte kód", "description": "Upravte vzhled (barvy, velikost, okraje) a stáhněte jako PNG nebo SVG." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Typy QR kódů – URL, vCard, e-mail, telefon, text",
+      "description": "Bezplatný generátor QR kódu podporuje pět typů dat – každý užitečný v jiné situaci:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiGlobalLine", "title": "URL", "description": "Odkaz na webovou stránku. Po naskenování telefon otevře stránku v prohlížeči. Vhodné pro vizitky, letáky a plakáty." },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Text",
+          "description": "Jakýkoliv text do 3 000 znaků. Po naskenování telefon zobrazí text na obrazovce. Užitečné pro slevové kupóny a krátké instrukce."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Vizitka vCard",
+          "description": "Digitální vizitka s kontaktními údaji (jméno, firma, telefon, e-mail, adresa). Po naskenování telefon nabídne uložení kontaktu."
+        },
+        { "icon": "RiMailLine", "title": "E-mail", "description": "E-mailová adresa s volitelným předmětem a obsahem. Po naskenování telefon otevře poštovní aplikaci s předvyplněným formulářem." },
+        { "icon": "RiPhoneLine", "title": "Telefon", "description": "Telefonní číslo. Po naskenování telefon nabídne uskutečnění hovoru. Užitečné pro hotliny a zákaznickou podporu." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Technické specifikace QR kódu",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kapacita</span><span class=\"text-mid text-sm!\">až 4 296 znaků</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Korekce chyb</span><span class=\"text-mid text-sm!\">7 % – 30 %</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Minimální velikost tisku</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Minimální kontrast</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Okraje</span><span class=\"text-mid text-sm!\">min. 4 moduly</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Znalost technických parametrů pomáhá vytvořit QR kód čitelný ve všech podmínkách:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Kapacita dat</strong> – QR kód pojme až 7 089 číslic, 4 296 alfanumerických znaků nebo 2 953 bajtů binárních dat.</li><li><strong>Korekce chyb Reed-Solomon</strong> – matematický algoritmus umožňující čtení kódu i při částečném poškození. Úrovně: L (7 %), M (15 %), Q (25 %), H (30 %).</li><li><strong>Okraje</strong> – bílá oblast kolem kódu nutná pro správné skenování. Doporučené minimum je 4 moduly.</li><li><strong>Minimální velikost tisku</strong> – za běžných podmínek skenování musí mít kód alespoň 2×2 cm.</li><li><strong>Kontrast</strong> – poměr kontrastu mezi kódem a pozadím musí být alespoň 3:1.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Využití QR kódů – vizitky, letáky, restaurační menu",
+      "description": "QR kódy mají využití v mnoha odvětvích a situacích:",
+      "grid": "three",
+      "items": [
+        { "icon": "RiContactsBookLine", "title": "Vizitky", "description": "vCard kód na vizitce umožní příjemci uložit kontakt jedním skenem, bez ručního zadávání dat." },
+        { "icon": "RiRestaurantLine", "title": "Restaurační a kavárenské menu", "description": "QR kód na stole odkazuje na digitální menu. Elegantní řešení populární od pandemie COVID-19." },
+        { "icon": "RiPrinterLine", "title": "Letáky a plakáty", "description": "QR kód s odkazem na produktovou stránku, registrační formulář nebo speciální nabídku." },
+        { "icon": "RiBuilding2Line", "title": "Obal produktu", "description": "Odkaz na návod k použití, záruční list nebo web výrobce." },
+        { "icon": "RiHospitalLine", "title": "Zdravotnická zařízení", "description": "QR kód na kartě pacienta odkazující na pacientský portál nebo systém objednání termínu." },
+        { "icon": "RiCalendarEventLine", "title": "Události a konference", "description": "Vstupenky s QR kódem pro rychlou verifikaci u vstupu." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs SVG – jaký formát zvolit pro tisk?",
+      "plans": [
+        { "id": "png", "name": "PNG (rastr)" },
+        { "id": "svg", "name": "SVG (vektor)", "highlighted": true }
+      ],
+      "features": [
+        { "name": "Web a sociální sítě", "values": { "png": true, "svg": true } },
+        { "name": "Letáky a vizitky", "values": { "png": true, "svg": true } },
+        { "name": "Plakáty a bannery (velký formát)", "values": { "png": false, "svg": true } },
+        { "name": "Škálování bez ztráty kvality", "values": { "png": false, "svg": true } },
+        { "name": "Úpravy v grafické aplikaci", "values": { "png": false, "svg": true } },
+        { "name": "Menší velikost souboru", "values": { "png": false, "svg": true } },
+        { "name": "Prezentace", "values": { "png": true, "svg": true } }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Čím je tento generátor QR kódu výjimečný?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Lokální generování v prohlížeči",
+          "description": "Data zadaná do generátoru se neodesílají na žádný server – veškeré zpracování probíhá na vašem zařízení."
+        },
+        { "icon": "RiLockLine", "title": "Pět typů dat v jednom nástroji", "description": "URL, text, vizitka vCard, e-mail a telefon – každý typ generuje QR kód v příslušném standardu." },
+        { "icon": "RiStackLine", "title": "Úprava vzhledu QR kódu", "description": "Barva kódu a pozadí, velikost v pixelech, okraje a úroveň korekce chyb – každý parametr lze upravit." },
+        { "icon": "RiPaletteLine", "title": "Čtyři úrovně korekce chyb", "description": "Algoritmus Reed-Solomon umožňuje zvolit odolnost kódu proti poškození – od 7 % (L) do 30 % (H)." },
+        { "icon": "RiEyeLine", "title": "Živý náhled", "description": "Výsledek vidíte okamžitě po zadání dat, bez klikání na Generovat." },
+        { "icon": "RiDownloadLine", "title": "Export PNG a SVG", "description": "Stáhněte kód ve formátu vhodném pro vaše použití." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky o generátoru QR kódu",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Vyprší platnost QR kódu vygenerovaného tímto nástrojem?",
+          "answer": "Ne. Statické QR kódy (jako ty, které generuje tento nástroj) nemají datum expirace. Obsah – např. URL nebo data vizitky – je zakódován přímo v kódu. Dokud cílová stránka existuje, kód bude fungovat.",
+          "answerSchemaText": "Ne. Statické QR kódy nemají datum expirace. Obsah je zakódován přímo v kódu."
+        },
+        {
+          "question": "Mohu změnit URL v existujícím QR kódu?",
+          "answer": "U statického QR kódu nelze zakódovaný obsah změnit – musíte vytvořit nový kód s novou adresou. Dynamické QR kódy (editovatelné po vygenerování) vyžadují externí placenou službu.",
+          "answerSchemaText": "Ne, statické QR kódy nelze editovat. Vytvořte nový kód pro jinou URL."
+        },
+        {
+          "question": "PNG nebo SVG – jaký formát QR kódu zvolit pro tisk?",
+          "answer": "PNG funguje pro většinu použití: web, sociální sítě, tisk do formátu A4. SVG je vektorový – lze jej škálovat na libovolnou velikost bez ztráty kvality, ideální pro bannery, billboardy a velké reklamní formáty.",
+          "answerSchemaText": "PNG pro web a běžný tisk. SVG pro velké formáty a škálování bez ztráty."
+        },
+        {
+          "question": "Jakou velikost QR kódu zvolit pro vizitku?",
+          "answer": "Pro tištěné materiály (vizitky, letáky) by měl mít kód alespoň 2×2 cm, optimálně 3×3 cm. V generátoru to odpovídá rozlišení 300 px při standardní kvalitě tisku (300 DPI).",
+          "answerSchemaText": "Alespoň 2×2 cm (300 px při 300 DPI). Optimálně 3×3 cm pro vizitky."
+        },
+        {
+          "question": "Mohu použít vygenerovaný QR kód komerčně?",
+          "answer": "Ano. Vygenerované QR kódy lze volně používat v jakémkoliv projektu – komerčním i nekomerčním, bez licenčních omezení.",
+          "answerSchemaText": "Ano, bez omezení v komerčních i nekomerčních projektech."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Objevte další bezplatné nástroje" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

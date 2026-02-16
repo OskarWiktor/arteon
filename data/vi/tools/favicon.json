@@ -1,0 +1,334 @@
+{
+  "toolKey": "favicon",
+  "locale": "vi",
+  "metadata": {
+    "title": "Tạo Favicon Miễn Phí – Tạo favicon.ico Từ Bất Kỳ Ảnh Nào",
+    "description": "Tạo favicon.ico và bộ favicon hoàn chỉnh cho website từ một ảnh duy nhất. Tất cả kích thước cần thiết chỉ bằng một nhấp. Chạy cục bộ trong trình duyệt, không cần đăng ký.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
+    "path": "/vi/cong-cu/tao-favicon-mien-phi"
+  },
+  "hero": {
+    "title": "Tạo favicon — tạo favicon.ico miễn phí",
+    "description": "Tạo favicon.ico và bộ biểu tượng PNG hoàn chỉnh cho website từ một ảnh duy nhất. Tất cả xử lý diễn ra cục bộ trong trình duyệt.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/vi/cong-cu",
+      "label": "Công cụ"
+    },
+    "third": {
+      "href": "/vi/cong-cu/tao-favicon-mien-phi",
+      "label": "Tạo favicon miễn phí"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Công cụ tạo favicon — tạo biểu tượng miễn phí cho website",
+      "alternateName": ["Tạo favicon.ico và biểu tượng PNG"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "IconGenerator",
+      "description": "Công cụ tạo favicon miễn phí. Tạo favicon.ico và biểu tượng PNG 16x16, 32x32, 180x180, 192x192 và 512x512 không giới hạn và không gửi file đến máy chủ. Xử lý diễn ra cục bộ trong trình duyệt.",
+      "featureList": [
+        "Tạo favicon.ico (16x16, 32x32, 48x48 trong một file)",
+        "Tạo biểu tượng PNG 16x16 và 32x32",
+        "Tạo apple-touch-icon 180x180",
+        "Tạo biểu tượng PWA 192x192 và 512x512",
+        "Hỗ trợ ảnh nguồn PNG, JPG và SVG",
+        "Cấu hình màu nền",
+        "Tạo file manifest.json cho PWA",
+        "Tải tất cả file dạng ZIP",
+        "Tải file riêng lẻ",
+        "Tuân thủ Lighthouse",
+        "Xử lý trong trình duyệt (file không được gửi đến máy chủ)",
+        "Công cụ miễn phí, không cần đăng nhập"
+      ]
+    },
+    "howTo": {
+      "name": "Cách tạo favicon cho website",
+      "description": "Cách tạo favicon.ico và biểu tượng PNG (16x16, 32x32, 180x180, 512x512) từ một ảnh duy nhất. Những kích thước nào cần thiết và cách thêm favicon vào WordPress, HTML và Next.js.",
+      "steps": [
+        {
+          "name": "Thêm ảnh nguồn",
+          "text": "Kéo file vào vùng chỉ định hoặc chọn đồ họa từ thiết bị. Logo đơn giản hoặc biểu tượng ở định dạng PNG, JPG hoặc SVG phù hợp nhất."
+        },
+        {
+          "name": "Chọn kích thước biểu tượng",
+          "text": "Chọn kích thước biểu tượng bạn cần: favicon.ico (32x32), biểu tượng PNG (16x16, 32x32, 180x180, 192x192, 512x512)."
+        },
+        {
+          "name": "Cấu hình tùy chọn",
+          "text": "Đặt màu nền (hoặc giữ trong suốt), quyết định có tạo file manifest không, và có tự động tải file không."
+        },
+        {
+          "name": "Tạo và tải file",
+          "text": "Sau khi tạo, file có thể tải dạng ZIP hoặc từng biểu tượng riêng lẻ."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Favicon là gì và tại sao nên có?",
+      "html": "<p class=\"mb-4\">Favicon là biểu tượng nhỏ xuất hiện trên tab trình duyệt bên cạnh tiêu đề trang. Bạn cũng thấy nó trong bookmark, lịch sử duyệt web và trên màn hình chủ điện thoại khi ai đó thêm trang web làm phím tắt.</p><p class=\"mb-4\">Đồ họa nhỏ này phục vụ chức năng quan trọng — giúp người dùng nhanh chóng nhận ra trang web giữa nhiều tab đang mở. Khi ai đó mở hàng chục tab trong trình duyệt, favicon thường là yếu tố duy nhất có thể nhìn thấy để nhận diện trang.</p><p>Công cụ tạo bộ biểu tượng hoàn chỉnh: file favicon.ico cổ điển cho trình duyệt, biểu tượng PNG ở nhiều kích thước và apple-touch-icon cho thiết bị Apple. Nếu bạn xây dựng ứng dụng web (PWA), bạn cũng có thể tạo biểu tượng 192x192 và 512x512 cùng file manifest.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cách tạo favicon trong 3 bước",
+      "description": "Tạo favicon chỉ mất vài giây:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Thêm ảnh",
+          "description": "Kéo file vào vùng chỉ định hoặc chọn đồ họa từ thiết bị. Định dạng hỗ trợ: PNG, JPG, SVG. Kích thước khuyến nghị: tối thiểu 512×512 pixel."
+        },
+        {
+          "title": "2. Chọn kích thước",
+          "description": "Chọn kích thước biểu tượng bạn cần. Cho website thông thường: favicon.ico, 32×32 và 180×180. Cho PWA, thêm 192×192 và 512×512."
+        },
+        {
+          "title": "3. Tải file",
+          "description": "Sau khi tạo, tải tất cả file dạng ZIP hoặc từng biểu tượng riêng lẻ. Bên dưới công cụ bạn sẽ tìm thấy hướng dẫn cách thêm favicon vào trang."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Công cụ tạo những kích thước biểu tượng nào?",
+      "html": "<p class=\"mb-6\">Mỗi kích thước có công dụng riêng:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Định dạng cổ điển được tất cả trình duyệt nhận biết. Hiển thị trên tab trình duyệt.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">PNG 16×16 và 32×32</p><p class=\"text-mid text-sm\">Kích thước tiêu chuẩn cho trình duyệt hiện đại. Hiển thị trên tab và trong bookmark.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">PNG 180×180 (apple-touch-icon)</p><p class=\"text-mid text-sm\">Biểu tượng cho thiết bị Apple (iPhone, iPad). Hiển thị khi ai đó thêm trang vào màn hình chủ.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">PNG 192×192 và 512×512</p><p class=\"text-mid text-sm\">Biểu tượng cho ứng dụng web (PWA). Yêu cầu bởi manifest và sử dụng trong cửa hàng ứng dụng.</p></div></div><p class=\"text-light mt-6\">Nếu bạn không xây dựng PWA, bạn chỉ cần: favicon.ico, PNG 32×32 và PNG 180×180. Ba file này đáp ứng hầu hết trường hợp sử dụng.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Điều gì làm công cụ tạo favicon đặc biệt?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Quyền riêng tư — file không bao giờ rời máy tính",
+          "description": "Tất cả thao tác được thực hiện cục bộ trong trình duyệt. Ảnh không được gửi đến bất kỳ máy chủ nào. Sau khi đóng trang, tất cả dữ liệu được xóa."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bộ hoàn chỉnh tại một nơi",
+          "description": "Favicon.ico, biểu tượng PNG, apple-touch-icon, biểu tượng PWA và manifest — tất cả từ một ảnh, trong một công cụ."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Hỗ trợ PNG, JPG và SVG",
+          "description": "Bạn có thể sử dụng logo ở bất kỳ định dạng nào. Nếu bạn có SVG — biểu tượng sẽ sắc nét ở tất cả kích thước."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Sẵn sàng cho website và PWA",
+          "description": "Công cụ tạo file manifest.json cho ứng dụng web. Bên dưới bạn sẽ tìm thấy hướng dẫn tích hợp biểu tượng."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cách sử dụng công cụ tạo favicon",
+      "description": "Tạo favicon là vài bước đơn giản:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Thêm ảnh nguồn",
+          "description": "Kéo file vào vùng chỉ định hoặc chọn đồ họa từ thiết bị. Định dạng hỗ trợ: PNG, JPG, SVG. Logo đơn giản hoặc biểu tượng ít nhất 512×512 pixel phù hợp nhất."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "2. Chọn kích thước biểu tượng",
+          "description": "Chọn kích thước biểu tượng bạn cần. Bạn có thể chọn tất cả hoặc chỉ một số. Cho website thông thường: favicon.ico, 32×32 và 180×180."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "3. Cấu hình tùy chọn tạo",
+          "description": "Đặt tùy chọn bổ sung: nền (trong suốt hoặc màu đã chọn), manifest (file cấu hình PWA) và tự động tải."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Tạo và tải file",
+          "description": "Sau khi bắt đầu tạo, công cụ xử lý ảnh cục bộ — không gì được gửi đến máy chủ. Tải tất cả file dạng ZIP hoặc từng biểu tượng riêng."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Tùy chọn tạo — mỗi tùy chọn làm gì?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">Kích thước PNG</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">16×16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">32×32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">180×180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span class=\"text-mid text-sm!\">Nền trong suốt (PNG/ICO)</span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Nền (trong suốt hoặc màu)</h3><p class=\"text-mid\">Mặc định, công cụ giữ trong suốt. Bạn cũng có thể chọn màu nền cụ thể.</p></div><div><h3 class=\"h5 mb-2\">Tạo manifest (site.webmanifest)</h3><p class=\"text-mid\">File JSON cho ứng dụng web (PWA). Nếu bạn không xây dựng PWA, tùy chọn này không bắt buộc.</p></div></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cách tải file đã tạo",
+      "description": "Sau khi tạo biểu tượng, bạn có nhiều tùy chọn tải:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFolderZipLine",
+          "title": "Tải tất cả dạng ZIP",
+          "description": "Nút &quot;Tải tất cả&quot; đóng gói tất cả file đã tạo vào một file ZIP duy nhất. Đây là tùy chọn tiện lợi nhất khi bạn cần bộ biểu tượng đầy đủ."
+        },
+        {
+          "icon": "RiFileDownloadLine",
+          "title": "Tải file riêng lẻ",
+          "description": "Mỗi biểu tượng đã tạo có nút tải riêng — bạn có thể tải một file mà không cần tải toàn bộ. Hữu ích khi chỉ cần cập nhật một kích thước."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTabs",
+      "title": "Cách thêm favicon vào đâu và như thế nào",
+      "tabs": [
+        {
+          "title": "WordPress",
+          "icon": "RiWordpressLine",
+          "html": "<div><p class=\"text-mid mb-3\">Hầu hết theme WordPress có tùy chọn tích hợp để đặt biểu tượng trang. Bạn tìm thấy nó trong bảng quản trị:</p><p class=\"text-mid mb-3\"><strong>Giao diện → Tùy chỉnh → Nhận dạng trang → Biểu tượng trang</strong></p><p class=\"text-light\">Tải file 512×512 lên đó — WordPress sẽ tự động tạo các kích thước nhỏ hơn. Để kiểm soát đầy đủ biểu tượng, bạn cũng có thể tải file trực tiếp vào thư mục gốc qua FTP.</p></div>"
+        },
+        {
+          "title": "HTML",
+          "icon": "RiHtml5Line",
+          "html": "<div><p class=\"text-mid mb-3\">Đặt file đã tạo trong thư mục gốc của trang (nơi chứa index.html). Sau đó thêm các thẻ phù hợp trong phần &lt;head&gt;:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">Mã trên là ví dụ — điều chỉnh đường dẫn cho phù hợp với cấu trúc trang của bạn.</p></div>"
+        },
+        {
+          "title": "Next.js / React",
+          "icon": "RiReactjsLine",
+          "html": "<div><p class=\"text-mid mb-3\">Trong Next.js (App Router), đặt file favicon trong thư mục <code>app/</code> hoặc <code>public/</code>:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> — được Next.js tự động nhận biết</li><li><code>app/apple-icon.png</code> — biểu tượng Apple</li><li><code>public/</code> — các biểu tượng còn lại (192×192, 512×512)</li></ul><p class=\"text-light\">Bạn cũng có thể cấu hình biểu tượng trong <code>layout.tsx</code> qua đối tượng <code>metadata.icons</code>.</p></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ảnh nguồn nào phù hợp nhất?",
+      "description": "Favicon là đồ họa rất nhỏ — nhỏ tới 16×16 pixel. Không phải hình ảnh nào cũng phù hợp làm nguồn:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShapeLine",
+          "title": "Hình dạng đơn giản và ký hiệu dễ đọc",
+          "description": "Logo đơn giản, chữ cái đơn lẻ hoặc ký hiệu phù hợp nhất. Tránh đồ họa phức tạp với nhiều chi tiết."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Định dạng vuông",
+          "description": "Favicon là hình vuông. Nếu ảnh nguồn có tỷ lệ khác 1:1, nó sẽ bị cắt hoặc kéo giãn."
+        },
+        {
+          "icon": "RiZoomInLine",
+          "title": "Kích thước đủ lớn",
+          "description": "Chúng tôi khuyến nghị ảnh nguồn ít nhất 512×512 pixel. Ảnh nhỏ hơn sẽ bị phóng to."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Định dạng SVG là nguồn lý tưởng",
+          "description": "SVG phóng to mà không mất chất lượng, nên biểu tượng ở tất cả kích thước sẽ sắc nét."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Màu tương phản cao",
+          "description": "Favicon phải hiển thị rõ trên các nền khác nhau (tab sáng, chế độ tối). Chọn màu duy trì khả năng đọc."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Câu hỏi thường gặp về công cụ tạo favicon",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Ảnh nguồn nên có kích thước bao nhiêu để tạo favicon?",
+          "answer": "Kích thước khuyến nghị ít nhất 512×512 pixel ở định dạng vuông (1:1). Với nguồn như vậy, biểu tượng ở tất cả kích thước sẽ sắc nét và dễ đọc. Nếu bạn có logo ở định dạng SVG — hãy sử dụng nó, vì đồ họa vector phóng to mà không mất chất lượng.",
+          "answerSchemaText": "Ít nhất 512×512 px, vuông (1:1). SVG là lý tưởng vì phóng to không mất chất lượng."
+        },
+        {
+          "question": "Tôi có thể chỉ tạo favicon.ico mà không cần các biểu tượng khác không?",
+          "answer": "Có. Trước khi tạo, bạn có thể chọn chính xác kích thước nào cần — ví dụ: chỉ favicon.ico hoặc chỉ các kích thước PNG đã chọn.",
+          "answerSchemaText": "Có, bạn có thể chọn từng kích thước riêng trước khi tạo."
+        },
+        {
+          "question": "Công cụ tạo favicon hỗ trợ định dạng ảnh nào?",
+          "answer": "Công cụ chấp nhận ảnh ở định dạng PNG, JPG và SVG. Đầu ra là file favicon.ico và biểu tượng PNG ở các kích thước đã chọn, sẵn sàng tải lên website.",
+          "answerSchemaText": "Đầu vào: PNG, JPG, SVG. Đầu ra: favicon.ico và biểu tượng PNG."
+        },
+        {
+          "question": "Favicon có ảnh hưởng đến xếp hạng tìm kiếm Google không?",
+          "answer": "Không trực tiếp — favicon không phải yếu tố xếp hạng. Tuy nhiên, nó gián tiếp ảnh hưởng đến nhận diện thương hiệu: trang web có biểu tượng chuyên nghiệp dễ nhận biết hơn giữa nhiều tab đang mở, có thể chuyển thành tỷ lệ nhấp chuột cao hơn trong kết quả tìm kiếm.",
+          "answerSchemaText": "Không trực tiếp. Gián tiếp cải thiện nhận diện thương hiệu và tỷ lệ nhấp chuột."
+        },
+        {
+          "question": "Kích thước biểu tượng nào cần thiết cho website thông thường?",
+          "answer": "Cho website điển hình, ba file là đủ: favicon.ico (32×32), biểu tượng PNG 32×32 và apple-touch-icon 180×180. Nếu trang nên hoạt động như ứng dụng web (PWA), bạn cũng cần biểu tượng 192×192 và 512×512 cùng file manifest.",
+          "answerSchemaText": "favicon.ico, PNG 32×32 và apple-touch-icon 180×180. Cho PWA thêm 192×192 và 512×512."
+        },
+        {
+          "question": "File site.webmanifest là gì và khi nào cần?",
+          "answer": "Đây là file cấu hình cho ứng dụng web (PWA) chứa thông tin về biểu tượng, tên và màu sắc của ứng dụng. Cần thiết khi trang nên hoạt động như ứng dụng được thêm vào màn hình chủ điện thoại. Cho website thông thường, không cần thiết.",
+          "answerSchemaText": "File cấu hình PWA. Cần thiết cho ứng dụng màn hình chủ, không cần cho website thông thường."
+        },
+        {
+          "question": "Favicon hiển thị giống nhau trên tất cả trình duyệt không?",
+          "answer": "Hầu hết trình duyệt hiện đại (Chrome, Firefox, Edge, Safari) nhận biết file favicon.ico và biểu tượng PNG. Sự khác biệt có thể xảy ra ở kích thước biểu tượng hiển thị — Chrome ưu tiên PNG 32×32, trong khi Safari trên iOS sử dụng apple-touch-icon 180×180. Để tương thích tốt nhất, chúng tôi khuyến nghị tạo bộ kích thước đầy đủ.",
+          "answerSchemaText": "Hầu hết có. Tạo bộ kích thước đầy đủ để tương thích tốt nhất."
+        },
+        {
+          "question": "Tại sao favicon không thay đổi sau khi tải file mới lên?",
+          "answer": "Trình duyệt cache favicon rất mạnh. Sau khi tải biểu tượng mới lên, hãy thử xóa cache trình duyệt hoặc thêm tham số phiên bản vào đường dẫn file (ví dụ: /favicon.ico?v=2). Thay đổi có thể mất vài giờ để hiển thị.",
+          "answerSchemaText": "Trình duyệt cache favicon rất mạnh. Xóa cache hoặc thêm tham số phiên bản."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Khám phá các công cụ khác"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

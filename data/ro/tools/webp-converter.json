@@ -1,0 +1,325 @@
+{
+  "toolKey": "jpgToWebp",
+  "locale": "ro",
+  "metadata": {
+    "title": "Convertor gratuit JPG/PNG în WebP – Fără limite, fără upload",
+    "description": "Convertiți imagini JPG și PNG în format WebP fără limită de fișiere. Alegeți nivelul de calitate, descărcați totul ca arhivă ZIP. Gratuit, fără înregistrare.",
+    "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
+    "path": "/ro/instrumente/convertor-jpg-png-in-webp"
+  },
+  "hero": {
+    "title": "Convertor JPG/PNG în WebP – Gratuit, fără limite",
+    "description": "Reduceți dimensiunea fișierelor de imagine cu până la 35% fără pierderi de calitate. Adăugați fișiere, alegeți nivelul de calitate și descărcați imaginile în format WebP. Toată conversia are loc local în browser.",
+    "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-jpg-png-in-webp",
+      "label": "Convertor JPG/PNG în WebP"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertor JPG și PNG în WebP - gratuit, fără limite",
+      "alternateName": ["Convertor JPG în WebP și PNG în WebP"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convertor gratuit JPG și PNG în WebP. Reduceți dimensiunea fișierelor de imagine cu până la 35%, îmbunătățiți viteza de încărcare și scorurile Core Web Vitals. Conversia are loc în browser - fișierele nu sunt trimise la un server.",
+      "featureList": [
+        "Conversie JPG în WebP",
+        "Conversie PNG în WebP",
+        "Ajustarea nivelului de calitate (1–100%)",
+        "Conversie în lot a mai multor fișiere",
+        "Previzualizare dimensiune înainte și după conversie",
+        "Descărcare individuală a fișierelor",
+        "Descărcare toate fișierele ca ZIP",
+        "Procesare locală în browser (fișierele nu sunt trimise la un server)"
+      ]
+    },
+    "howTo": {
+      "name": "Cum să convertiți JPG și PNG în WebP",
+      "description": "Cum să convertiți imagini JPG și PNG în format WebP. Setări de calitate (60–95%), mecanism Smart Quality și descărcarea fișierelor convertite ca ZIP.",
+      "steps": [
+        {
+          "name": "Adăugați fișiere pentru conversie",
+          "text": "Trageți imagini JPG sau PNG în zona desemnată sau selectați fișiere de pe dispozitiv. Puteți adăuga mai multe fișiere simultan."
+        },
+        {
+          "name": "Setați nivelul de calitate",
+          "text": "Alegeți calitatea fișierului WebP de ieșire folosind glisorul (60–95%). Valoarea implicită de 80% este un echilibru bun între calitate și dimensiune."
+        },
+        {
+          "name": "Porniți conversia",
+          "text": "După pornirea conversiei, instrumentul va procesa toate fișierele din coadă și va aplica automat Smart Quality."
+        },
+        {
+          "name": "Descărcați fișierele convertite",
+          "text": "Fișierele convertite pot fi descărcate individual sau toate simultan ca arhivă ZIP."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Ce este WebP și de ce să convertiți imaginile?",
+      "html": "<p class=\"mb-4\">WebP este un format de imagine creat de Google care permite reducerea dimensiunii fișierelor de imagine cu până la 25–35% comparativ cu JPG și PNG - menținând o calitate vizuală comparabilă. Fișiere mai mici înseamnă încărcare mai rapidă a paginilor, ceea ce se traduce în experiență mai bună pentru utilizator și scoruri mai mari în <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"mb-4\">Formatul WebP este suportat de toate browserele moderne: Chrome, Firefox, Safari (de la versiunea 14) și Edge. Dacă aveți un site web, magazin sau blog, conversia imaginilor în WebP este una dintre cele mai simple modalități de a îmbunătăți performanța site-ului.</p><p>Convertorul suportă atât fotografii JPG cât și grafice PNG (inclusiv cele cu transparență). Puteți converti orice număr de fișiere simultan - toate sunt procesate local în browser, fără a fi trimise la un server.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să convertiți imaginile în WebP",
+      "description": "Conversia în WebP durează doar câteva secunde:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Adăugați fișiere",
+          "description": "Trageți imagini JPG sau PNG în zona desemnată sau selectați fișiere de pe dispozitiv. Puteți adăuga orice număr de fișiere simultan."
+        },
+        {
+          "title": "2. Setați calitatea",
+          "description": "Alegeți nivelul de calitate (implicit 80%). O valoare mai mică înseamnă un fișier mai mic. Pentru majoritatea cazurilor, 80% este setarea optimă."
+        },
+        {
+          "title": "3. Descărcați WebP",
+          "description": "După conversie, descărcați fișierele individual sau ca arhivă ZIP. Fiecare fișier afișează informații despre spațiul economisit."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cum să adăugați fișiere pentru conversie",
+      "html": "<p class=\"text-mid\">Instrumentul oferă două moduri de a adăuga fișiere:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Tragere și plasare</strong> - luați fișierele dintr-un folder de pe computer și plasați-le în zona marcată &quot;Trageți și plasați imaginile aici&quot;. Puteți trage mai multe fișiere simultan.</li><li><strong>Selectare de pe dispozitiv</strong> - făcând clic pe zona de încărcare se deschide un dialog de selecție. Ținând apăsat Ctrl (sau Cmd pe Mac) puteți selecta mai multe fișiere simultan.</li></ul><p class=\"text-mid mt-3\">Instrumentul acceptă doar fișiere JPG și PNG. Dacă adăugați accidental un fișier într-un alt format (ex. GIF sau BMP), acesta va fi omis automat și veți vedea un mesaj informativ.</p><p class=\"text-mid mt-3\"><strong>Confidențialitate:</strong> Toate fișierele sunt procesate local în browser. Nu sunt trimise nicăieri - nu ajung pe niciun server. După închiderea tab-ului sau browserului, fișierele sunt eliminate din memorie.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Ce înseamnă statusurile fișierelor?",
+      "html": "<p class=\"text-mid\">Fiecare fișier din coadă are unul din patru statusuri care indică progresul conversiei:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">În așteptare</span><p class=\"text-mid\">Fișierul este în coadă și așteaptă să fie procesat. Conversia nu a început încă.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Se procesează…</span><p class=\"text-mid\">Fișierul este în curs de conversie. Pentru majoritatea imaginilor aceasta durează o fracțiune de secundă, dar fișierele foarte mari pot dura câteva secunde.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Finalizat</span><p class=\"text-mid\">Conversia s-a finalizat cu succes. Fișierul WebP este gata de descărcare. Lângă status veți vedea și dimensiunea înainte și după conversie.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Eroare</span><p class=\"text-mid\">Ceva nu a funcționat în timpul conversiei. Poate fi un fișier sursă corupt sau o problemă de memorie a browserului cu imagini foarte mari. Butonul &quot;Reîncearcă&quot; permite încercarea din nou.</p></div></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cum funcționează Smart Quality?",
+      "html": "<p class=\"text-mid\">Smart Quality este un mecanism de optimizare automată care asigură că fișierul WebP de ieșire nu este niciodată mai mare decât originalul. Funcționează astfel:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>Instrumentul convertește imaginea la calitatea setată de dvs. (ex. 80%).</li><li>Verifică dacă fișierul rezultat este mai mic decât originalul.</li><li>Dacă este mai mare, reduce automat calitatea și încearcă din nou.</li><li>Procesul se repetă până când fișierul de ieșire este mai mic sau calitatea scade sub un minim sigur.</li></ol><p class=\"text-mid mt-3\">Instrumentul selectează automat setările optime. Dacă aveți o imagine deja puternic comprimată (ex. un JPG la 60% calitate), parametrii vor fi ajustați automat pentru a obține totuși economii de dimensiune.</p><p class=\"text-mid mt-3\">Lângă fiecare fișier veți vedea &quot;Calitate WebP utilizată&quot; - aceasta este calitatea efectiv aplicată după orice ajustare Smart Quality.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Setări de calitate - ce să alegeți?",
+      "demoHtml": "<div class=\"space-y-4\"><div><p class=\"text-dark mb-2 text-sm! font-medium uppercase\">Setare calitate</p><div class=\"flex items-center\"><input type=\"range\" min=\"60\" max=\"95\" value=\"80\" class=\"flex-1\" disabled><span class=\"text-mid w-12 text-right text-sm!\">80%</span></div><span class=\"text-light mt-1 block text-xs\">Valoare mai mare = calitate mai bună, fișier mai mare</span></div><div class=\"flex items-center\"><input type=\"checkbox\" checked class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Descărcare automată după conversie</span></div><div class=\"ml-6 flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Descărcare individuală</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Descărcare ca ZIP</span></div></div>",
+      "html": "<p class=\"text-mid\">Glisorul de calitate vă permite să setați o valoare de la 60% la 95%. O valoare mai mare înseamnă calitate mai bună a imaginii dar și dimensiune mai mare a fișierului.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (implicit)</strong> - un echilibru bun pentru majoritatea cazurilor de utilizare.</li><li><strong>85–90%</strong> - pentru fotografii de produs și portofolii foto.</li><li><strong>60–70%</strong> - când minimizarea dimensiunii fișierului este prioritatea.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Cum să descărcați fișierele convertite",
+      "variant": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-medium text-white\">Convertire</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Descarcă toate</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Descarcă ca ZIP</span></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Include raport CSV în ZIP</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Dimensiune intrare: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Dimensiune după conversie: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">Economisit: <strong class=\"text-success-icon\">1.5 MB (~63%)</strong></p></div></div>",
+      "html": "<p class=\"text-mid\">După finalizarea conversiei, aveți mai multe opțiuni de descărcare:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Descarcă</strong> (lângă fiecare fișier) - descarcă un singur fișier WebP.</li><li><strong>Descarcă toate</strong> - descarcă toate fișierele unul câte unul.</li><li><strong>Descarcă ca ZIP</strong> - creează o arhivă cu toate fișierele.</li></ul><p class=\"text-mid mt-3\"><strong>Opțiune raport CSV:</strong> Include un raport sumar al conversiei în arhiva ZIP.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Raport de economii - ce arată?",
+      "html": "<p class=\"text-mid\">Sub butoanele de conversie veți găsi un sumar cu informații despre economii:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Dimensiune totală intrare</strong> - suma dimensiunilor tuturor fișierelor originale.</li><li><strong>Dimensiune totală după conversie</strong> - suma dimensiunilor tuturor fișierelor WebP.</li><li><strong>Economisit</strong> - cât spațiu ați câștigat prin conversie (în KB/MB și procent).</li></ul><p class=\"text-mid mt-3\"><strong>Copiere sumar:</strong> Butonul copiază raportul în clipboard în format text. Puteți lipi în notițe, emailuri sau documente - util pentru documentarea optimizării imaginilor.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cât puteți economisi prin conversia în WebP?",
+      "html": "<p class=\"mb-4\">Economiile depind de tipul imaginii și compresia originală. Mai jos sunt rezultate exemplu pentru fișiere tipice:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fotografie JPG (cameră)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economii: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Grafică PNG (logo)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economii: ~75%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fotografie produs</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economii: ~63%</p></div></div><p class=\"text-light mt-4 text-sm\">Economiile reale pot varia. Convertorul arată dimensiunea exactă înainte și după conversie pentru fiecare fișier, precum și un sumar al economiilor totale.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face special acest convertor JPG/PNG în WebP?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate completă",
+          "description": "Fișierele nu părăsesc niciodată computerul. Conversia are loc în browser - nimic nu este trimis la un server. După închiderea paginii, datele sunt eliminate."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Conversie în lot a mai multor fișiere",
+          "description": "Convertiți orice număr de imagini simultan. Toate fișierele sunt procesate secvențial, iar rezultatele sunt disponibile pentru descărcare individual sau ca arhivă ZIP."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Smart Quality",
+          "description": "Instrumentul ajustează automat calitatea astfel încât fișierul de ieșire să fie întotdeauna mai mic decât originalul. Nu trebuie să căutați manual setările optime."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Descărcare ca ZIP",
+          "description": "Descărcați fișierele convertite individual sau toate simultan ca arhivă ZIP. Opțional, puteți include un raport CSV cu un sumar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Lucruri de reținut",
+      "description": "Câteva sfaturi pentru a evita problemele în timpul conversiei:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Fișiere foarte mari",
+          "description": "Conversia imaginilor peste 4000×4000 pixeli poate fi mai lentă și poate solicita browserul. Dacă procesați multe fișiere mari, luați în considerare împărțirea lor în loturi."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Imagini deja comprimate",
+          "description": "Dacă JPG-ul original a fost salvat la calitate foarte scăzută, conversia în WebP poate să nu aducă economii mari. În cazuri extreme, fișierul WebP poate fi chiar mai mare - Smart Quality va reduce automat calitatea."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Format PNG cu transparență",
+          "description": "WebP suportă transparența, astfel încât fișierele PNG cu canal alpha vor fi convertite corect. Cu toate acestea, economiile de dimensiune pentru PNG-uri cu transparență pot fi mai mici decât pentru fotografii JPG obișnuite."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Compatibilitate browser",
+          "description": "Toate browserele moderne (Chrome, Firefox, Safari 14+, Edge) suportă WebP. Dacă site-ul trebuie să funcționeze pe browsere mai vechi, puteți folosi tag-ul &lt;picture&gt; cu o sursă alternativă JPG/PNG."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Când merită să convertiți imaginile în WebP?",
+      "description": "Conversia în WebP aduce beneficii în aproape orice caz în care imaginile sunt afișate într-un browser:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Site-uri de afaceri",
+          "description": "Încărcarea mai rapidă îmbunătățește prima impresie și reduce rata de abandon."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Magazine online",
+          "description": "Fotografiile de produs sunt adesea cele mai mari fișiere de pe o pagină; optimizarea lor accelerează întregul magazin."
+        },
+        {
+          "icon": "RiArticleLine",
+          "title": "Bloguri și portaluri",
+          "description": "Articolele cu multe fotografii se încarcă semnificativ mai repede."
+        },
+        {
+          "icon": "RiCameraLine",
+          "title": "Portofolii foto",
+          "description": "La 85–90% calitate, diferența vizuală este imperceptibilă, iar fișierele sunt mai mici."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Aplicații web (PWA)",
+          "description": "Resurse mai mici înseamnă performanță mai rapidă, mai ales pe dispozitive mobile."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente despre convertorul WebP",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ce este WebP și cum diferă de JPG?",
+          "answer": "WebP este un format de imagine creat de Google care combină avantajele JPG (fișiere foto mici) și PNG (transparență). Fișierele WebP sunt în medie cu 25–35% mai mici decât JPG la calitate vizuală comparabilă. Toate browserele moderne (Chrome, Firefox, Safari, Edge) suportă WebP.",
+          "answerSchemaText": "WebP este un format de imagine Google, cu 25–35% mai mic decât JPG. Toate browserele moderne îl suportă."
+        },
+        {
+          "question": "WebP suportă transparența ca PNG?",
+          "answer": "Da. WebP suportă canalul alpha (transparență) - fișierele PNG cu fundal transparent vor fi convertite corect. Cu toate acestea, economiile de dimensiune pentru PNG-uri cu transparență pot fi mai mici decât pentru fotografii JPG obișnuite.",
+          "answerSchemaText": "Da, WebP suportă transparența alpha. Fișierele PNG cu fundal transparent se convertesc corect."
+        },
+        {
+          "question": "Ce nivel de calitate ar trebui să aleg?",
+          "answer": "Pentru majoritatea cazurilor (site-uri, magazine, bloguri), calitatea de 80% oferă un echilibru bun între dimensiunea fișierului și aspect. Pentru fotografii de produs sau portofolii, puteți alege 85–90%. Valorile sub 70% vor reduce semnificativ dimensiunea, dar pot introduce artefacte vizibile.",
+          "answerSchemaText": "80% pentru majoritatea utilizărilor. 85–90% pentru fotografii de produs. Sub 70% pentru compresie maximă."
+        },
+        {
+          "question": "Cât spațiu pot economisi?",
+          "answer": "Economiile tipice sunt de 25–35% comparativ cu JPG. De exemplu, o fotografie JPG de 500 KB după conversia în WebP va fi de aproximativ 325–375 KB. Pentru PNG, economiile pot fi și mai mari - până la 50–70%.",
+          "answerSchemaText": "25–35% pentru JPG, până la 50–70% pentru PNG."
+        },
+        {
+          "question": "Pot converti mai multe fișiere simultan?",
+          "answer": "Da. Puteți adăuga orice număr de fișiere simultan - nu există limită. Toate vor fi convertite, iar le puteți descărca individual sau ca arhivă ZIP.",
+          "answerSchemaText": "Da, conversie în lot nelimitată cu descărcare ZIP."
+        },
+        {
+          "question": "Ce este Smart Quality?",
+          "answer": "Smart Quality este un mecanism automat de ajustare a calității care asigură că fișierul WebP de ieșire nu este niciodată mai mare decât originalul. Dacă conversia ar rezulta într-un fișier mai mare (ceea ce se poate întâmpla cu imagini deja puternic comprimate), instrumentul reduce automat calitatea până când ieșirea este mai mică.",
+          "answerSchemaText": "Ajustare automată a calității care asigură că fișierul de ieșire este întotdeauna mai mic decât originalul."
+        },
+        {
+          "question": "WebP accelerează un site web?",
+          "answer": "Da. Fișiere de imagine mai mici înseamnă încărcare mai rapidă a paginilor. Aceasta impactează direct metrica LCP (Largest Contentful Paint) din Core Web Vitals - unul dintre factorii de clasare ai Google. Instrumente precum PageSpeed Insights recomandă adesea conversia imaginilor în WebP.",
+          "answerSchemaText": "Da, fișiere mai mici îmbunătățesc LCP și scorurile Core Web Vitals."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descoperiți alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

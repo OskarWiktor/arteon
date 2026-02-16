@@ -1,0 +1,180 @@
+{
+  "toolKey": "emailSignature",
+  "locale": "sw",
+  "metadata": {
+    "title": "Kitengenezaji Saini Barua Pepe Bure \u2013 HTML kwa Gmail na Outlook",
+    "description": "Tengeneza saini ya barua pepe ya kitaalamu ya HTML bila programu. Ongeza maelezo ya mawasiliano, nembo, viungo vya mitandao ya kijamii na unakili kwenye Gmail au Outlook. Bila usajili.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
+    "path": "/sw/zana/kitengenezaji-saini-barua-pepe-bure"
+  },
+  "hero": {
+    "title": "Tengeneza saini ya barua pepe ya kitaalamu ya HTML",
+    "description": "Jenga saini ya barua pepe ya kitaalamu kwa dakika chache. Weka maelezo yako, chagua rangi, na unakili msimbo wa HTML uliokuwa tayari kwenye Gmail, Outlook, au programu yoyote ya barua pepe.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/sw/zana", "label": "Zana" },
+    "third": { "href": "/sw/zana/kitengenezaji-saini-barua-pepe-bure", "label": "Kitengenezaji saini barua pepe" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Kitengenezaji saini barua pepe bure",
+      "alternateName": ["Kitengenezaji saini ya HTML ya barua pepe", "Kitengenezaji saini ya barua pepe", "Kitengenezaji kijachini cha barua pepe"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "EmailSignatureGenerator",
+      "description": "Kitengenezaji bure cha saini ya HTML ya barua pepe. Ongeza maelezo ya mawasiliano, kiungo cha CTA, na wasifu wa mitandao ya kijamii, kisha unakili msimbo uliokuwa tayari kwenye Gmail, Outlook, na programu nyingine za barua pepe.",
+      "featureList": [
+        "Maelezo ya mawasiliano (jina, cheo, kampuni)",
+        "Simu, barua pepe, na URL ya tovuti",
+        "Nembo au picha ya wasifu na chaguzi za umbo na ukubwa",
+        "Ikoni za mitandao ya kijamii (majukwaa 12)",
+        "Rangi zinazoweza kubadilishwa (maandishi, msisitizo, mandharinyuma)",
+        "Kitufe cha CTA chenye maandishi na kiungo maalum",
+        "Onyesho la moja kwa moja la saini",
+        "Nakili msimbo wa HTML kwenye ubao wa kunakili",
+        "Pakua saini kama faili ya HTML",
+        "Hamisha na leta usanidi kama faili ya JSON",
+        "Inaendana na Gmail, Outlook, Apple Mail",
+        "Zana bure, hakuna kuingia kunachohitajika"
+      ]
+    },
+    "howTo": {
+      "name": "Jinsi ya kutumia kitengenezaji cha saini ya barua pepe",
+      "description": "Jinsi ya kutengeneza saini ya kitaalamu ya HTML ya barua pepe kwa kutumia kitengenezaji bure cha Arteon.",
+      "totalTime": "PT5M",
+      "steps": [
+        { "name": "Chagua mpangilio wa saini", "text": "Chagua moja ya mipangilio minane inayopatikana: Standard, Top bar, Labels left, Centered, Compact, Two columns, Minimalist, au Bottom bar." },
+        { "name": "Jaza maelezo ya mawasiliano", "text": "Kwenye kichupo cha Details, weka jina lako, cheo, kampuni, barua pepe, simu, na URL ya tovuti." },
+        { "name": "Ongeza vitufe vya CTA", "text": "Kwenye kichupo cha Buttons, ongeza maandishi na URL kwa kitufe kikuu." },
+        {
+          "name": "Ongeza viungo vya mitandao ya kijamii",
+          "text": "Kwenye kichupo cha Social Media, bandika URL za wasifu wako. Majukwaa yanayoungwa mkono: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, na Pinterest."
+        },
+        { "name": "Badilisha mwonekano", "text": "Kwenye kichupo cha Appearance, chagua mandhari ya rangi, fonti, na ukubwa wa maandishi." },
+        { "name": "Onyesha na unakili saini", "text": "Kitufe cha Copy signature (Gmail / Outlook) kunakili msimbo uliokuwa tayari kwenye ubao wa kunakili." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Kwa nini kuwa na saini ya kitaalamu ya barua pepe?",
+      "html": "<p class=\"text-mid\">Saini ya barua pepe (pia inaitwa kijachini cha barua pepe) ni kipande cha habari mwishoni mwa kila ujumbe unaotumwa. Ina maelezo ya mawasiliano, cheo cha kazi, jina la kampuni, na mara nyingi kiungo cha tovuti au kalenda ya mikutano.</p><p class=\"text-mid mt-3\">Mpokeaji hahitaji kutafuta nambari ya simu katika ujumbe uliotangulia \u2013 maelezo yote yanapatikana kwa urahisi. Saini ya kitaalamu ya barua pepe pia inaonyesha kuwa unajali maelezo na kudumisha taswira thabiti ya kampuni katika mawasiliano ya biashara.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Jinsi ya kutumia kitengenezaji cha saini ya barua pepe",
+      "description": "Kutengeneza saini ya kitaalamu ya barua pepe kunachukua dakika chache tu:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Weka maelezo", "description": "Jaza jina lako, cheo, kampuni, na maelezo ya mawasiliano." },
+        { "title": "2. Badilisha mwonekano", "description": "Chagua mpangilio, rangi, ongeza nembo, na viungo vya mitandao ya kijamii." },
+        {
+          "title": "3. Nakili msimbo",
+          "description": "Kitufe cha Copy signature kunakili msimbo uliokuwa tayari kwenye ubao wa kunakili. Bandika tu kwenye Gmail, Outlook, au programu nyingine ya barua pepe."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Mipangilio ya saini \u2013 ipi kuchagua?",
+      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Mpangilio wa saini</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">Amina Juma</p><p class=\"text-mid text-sm\">Web Developer</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">amina@example.com</p><p class=\"text-mid\">+255 712 000 000</p></div></div></div>",
+      "html": "<p class=\"text-mid\">Kitengenezaji kinatoa mipangilio minane iliyokuwa tayari. Kila moja inawasilisha habari sawa kwa njia tofauti.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> \u2013 mpangilio wa kawaida wa wima, unafaa kwa matumizi mengi.</li><li><strong>Top bar</strong> \u2013 mwambaa wa usawa unatenganisha saini na maudhui.</li><li><strong>Labels left</strong> \u2013 safu mbili: lebo na thamani.</li><li><strong>Centered</strong> \u2013 mwonekano rasmi, maudhui yaliyowekwa katikati.</li><li><strong>Compact</strong> \u2013 kila kitu katika mstari mmoja, urefu wa chini.</li><li><strong>Two columns</strong> \u2013 maelezo upande wa kushoto, mawasiliano upande wa kulia.</li><li><strong>Minimalist</strong> \u2013 habari muhimu tu.</li><li><strong>Bottom bar</strong> \u2013 mwambaa wenye rangi na mawasiliano chini ya saini.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Jinsi ya kunakili saini kwenye Gmail au Outlook",
+      "description": "Saini ikisha tayari, inachukua hatua chache tu kuiongeza kwenye programu ya barua pepe:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiClipboardLine",
+          "title": "1. Nakili msimbo",
+          "description": "Kitufe cha Copy signature (Gmail / Outlook) kunakili saini kwenye ubao wa kunakili kama HTML iliyoumbizwa, tayari kubandika."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "2. Fungua mipangilio ya saini",
+          "description": "Kwenye Gmail: Settings \u2192 See all settings \u2192 Signature. Kwenye Outlook: File \u2192 Options \u2192 Mail \u2192 Signatures."
+        },
+        {
+          "icon": "RiSaveLine",
+          "title": "3. Bandika na uhifadhi",
+          "description": "Kwenye sehemu ya saini, tumia Ctrl+V (Windows) au Cmd+V (Mac). Saini itaonekana na rangi zote na uumbizaji. Hifadhi mabadiliko."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kitengenezaji cha saini ya barua pepe ni kwa nani?",
+      "description": "Zana ya saini ya barua pepe ni muhimu kwa mtu yeyote anayetuma barua pepe za biashara:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiBriefcaseLine", "title": "Wajasiriamali na waajiriwa binafsi", "description": "Saini ya kitaalamu katika kila ujumbe bila kuhitaji mbuni." },
+        { "icon": "RiTeamLine", "title": "Timu za kampuni", "description": "Kila mfanyakazi anatengeneza saini yake mwenyewe kwa mtindo sawa. Utambulisho thabiti katika kampuni nzima." },
+        { "icon": "RiHandCoinLine", "title": "Wawakilishi wa mauzo", "description": "Kitufe cha CTA chenye kiungo cha kalenda au ofa huongeza uwezekano wa kupanga mkutano." },
+        { "icon": "RiScales3Line", "title": "Mawakili, wahasibu, madaktari", "description": "Uwezo wa kuongeza kanuni ya kisheria, nambari ya leseni, au maelezo mengine yanayohitajika katika sekta." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Ni nini kinachofanya kitengenezaji hiki cha saini ya barua pepe kuwa maalum?",
+      "grid": "three",
+      "items": [
+        { "icon": "RiInfinityLine", "title": "Mipangilio minane ya saini", "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist, na bottom bar." },
+        {
+          "icon": "RiUserLine",
+          "title": "Kuhifadhi kiotomatiki kwenye kivinjari",
+          "description": "Kila badiliko linahifadhiwa kiotomatiki kwenye kumbukumbu ya kivinjari. Baada ya kuburudisha ukurasa, saini inabaki kupatikana."
+        },
+        { "icon": "RiTranslate2", "title": "Hamisha na leta usanidi", "description": "Usanidi kamili wa saini unaweza kuhamishwa kama faili ya JSON na kushirikiwa na wenzako." },
+        {
+          "icon": "RiAppsLine",
+          "title": "Majukwaa 12 ya mitandao ya kijamii",
+          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, na Pinterest."
+        },
+        { "icon": "RiPaletteLine", "title": "Ubinafsishaji wa hali ya juu", "description": "Umbo na ukubwa wa avatar, mtindo wa mstari, rangi na ukubwa wa kibinafsi wa maandishi." },
+        { "icon": "RiShieldCheckLine", "title": "Faragha", "description": "Data haitumwi kwenye seva. Kitengenezaji kinafanya kazi kabisa kwenye kivinjari." },
+        { "icon": "RiMailCheckLine", "title": "Upatano", "description": "Msimbo wa HTML uliotengenezwa unafanya kazi kwenye Gmail, Outlook, Apple Mail, na Thunderbird." },
+        { "icon": "RiEyeLine", "title": "Onyesho la moja kwa moja", "description": "Kila badiliko linaonekana papo hapo kwenye mandharinyuma ya mwanga, giza, au ubao wa kuangalia." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Maswali yanayoulizwa mara kwa mara kuhusu kitengenezaji cha saini ya barua pepe",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Je, saini inafanya kazi kwenye Gmail, Outlook, na Apple Mail?",
+          "answer": "Ndiyo. Saini zilizozalishwa na kitengenezaji hutumia meza za HTML zinazoonyeshwa kwa usahihi kwenye programu zote maarufu za barua pepe: Gmail, Outlook (desktop na wavuti), Apple Mail, Thunderbird."
+        },
+        {
+          "question": "Je, ninaweza kuongeza nembo ya kampuni?",
+          "answer": "Ndiyo. Kwenye kichupo cha Details, bandika URL ya picha (nembo au picha ya wasifu). Picha inapaswa kuwa ya mraba (angalau 120\u00d7120 px) na ipatikane hadharani mtandaoni."
+        },
+        {
+          "question": "Jinsi ya kunakili saini kwenye programu ya barua pepe?",
+          "answer": "Kitufe cha Copy signature (Gmail / Outlook) chini ya onyesho kunakili saini kwenye ubao wa kunakili kama HTML iliyoumbizwa. Kwenye mipangilio ya saini ya Gmail au Outlook, tumia tu Ctrl+V (Windows) au Cmd+V (Mac)."
+        },
+        {
+          "question": "Je, ninaweza kutumia kitengenezaji kutengeneza saini kwa timu nzima?",
+          "answer": "Ndiyo. Kitengenezaji hakihitaji kuingia au usajili. Kila mtu katika timu anaweza kufungua zana, kujaza maelezo yake, na kunakili saini iliyokuwa tayari. Unaweza pia kuhamisha usanidi kama faili ya JSON na kuishiriki na wenzako."
+        },
+        {
+          "question": "Avatar au nembo haionekani \u2013 nini cha kufanya?",
+          "answer": "Picha lazima ipatikane hadharani mtandaoni. URL inapaswa kuelekeza moja kwa moja kwenye faili ya picha (inayoishia na .jpg, .png, au .webp). Picha kutoka Google Drive au Dropbox zinahitaji kiungo maalum cha kushiriki."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Gundua zana nyingine" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

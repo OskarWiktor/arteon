@@ -1,0 +1,334 @@
+{
+  "toolKey": "favicon",
+  "locale": "id",
+  "metadata": {
+    "title": "Generator Favicon Gratis – Buat favicon.ico Dari Gambar Apa Pun",
+    "description": "Buat favicon.ico dan set favicon lengkap untuk situs web Anda dari satu gambar. Semua ukuran yang diperlukan dalam satu klik. Berjalan secara lokal di browser Anda, tanpa pendaftaran.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
+    "path": "/id/alat/generator-favicon-gratis"
+  },
+  "hero": {
+    "title": "Generator favicon — buat favicon.ico gratis",
+    "description": "Hasilkan favicon.ico dan set lengkap ikon PNG untuk situs web Anda dari satu gambar. Semua pemrosesan terjadi secara lokal di browser.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/id/alat",
+      "label": "Alat"
+    },
+    "third": {
+      "href": "/id/alat/generator-favicon-gratis",
+      "label": "Generator favicon"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Generator favicon gratis untuk situs web",
+      "alternateName": ["Generator favicon.ico dan ikon PNG"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "IconGenerator",
+      "description": "Generator favicon gratis. Buat favicon.ico dan ikon PNG 16x16, 32x32, 180x180, 192x192, dan 512x512 tanpa batasan dan tanpa mengirim file ke server. Pemrosesan terjadi secara lokal di browser.",
+      "featureList": [
+        "Hasilkan favicon.ico (16x16, 32x32, 48x48 dalam satu file)",
+        "Hasilkan ikon PNG 16x16 dan 32x32",
+        "Hasilkan apple-touch-icon 180x180",
+        "Hasilkan ikon PWA 192x192 dan 512x512",
+        "Dukungan gambar sumber PNG, JPG, dan SVG",
+        "Konfigurasi warna latar belakang",
+        "Hasilkan file manifest.json untuk PWA",
+        "Unduh semua file sebagai ZIP",
+        "Unduh file individual",
+        "Kepatuhan Lighthouse",
+        "Pemrosesan di browser (file tidak dikirim ke server)",
+        "Alat gratis, tanpa login"
+      ]
+    },
+    "howTo": {
+      "name": "Cara membuat favicon untuk situs web",
+      "description": "Cara menghasilkan favicon.ico dan ikon PNG (16x16, 32x32, 180x180, 512x512) dari satu gambar. Ukuran apa yang diperlukan dan cara menambahkan favicon ke WordPress, HTML, dan Next.js.",
+      "steps": [
+        {
+          "name": "Tambahkan gambar sumber",
+          "text": "Seret file ke area yang ditentukan atau pilih grafik dari perangkat Anda. Logo atau ikon sederhana dalam format PNG, JPG, atau SVG paling cocok."
+        },
+        {
+          "name": "Pilih ukuran ikon",
+          "text": "Pilih ukuran ikon yang Anda butuhkan: favicon.ico (32x32), ikon PNG (16x16, 32x32, 180x180, 192x192, 512x512)."
+        },
+        {
+          "name": "Konfigurasikan opsi",
+          "text": "Atur warna latar belakang (atau pertahankan transparan), putuskan apakah akan menghasilkan file manifest, dan apakah file harus diunduh otomatis."
+        },
+        {
+          "name": "Hasilkan dan unduh file",
+          "text": "Setelah pembuatan, file dapat diunduh sebagai arsip ZIP atau setiap ikon secara individual."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Apa itu favicon dan mengapa Anda harus memilikinya?",
+      "html": "<p class=\"mb-4\">Favicon adalah ikon kecil yang muncul di tab browser di samping judul halaman. Anda juga melihatnya di bookmark, riwayat penjelajahan, dan di layar beranda ponsel saat seseorang menambahkan situs sebagai pintasan.</p><p class=\"mb-4\">Grafik kecil ini memiliki fungsi penting — membantu pengguna dengan cepat mengenali situs di antara banyak tab yang terbuka. Ketika seseorang memiliki belasan tab terbuka di browser, favicon sering menjadi satu-satunya elemen yang terlihat untuk mengidentifikasi situs.</p><p>Generator membuat set ikon lengkap: file favicon.ico klasik untuk browser, ikon PNG dalam berbagai ukuran, dan apple-touch-icon untuk perangkat Apple. Jika Anda membangun aplikasi web (PWA), Anda juga dapat menghasilkan ikon 192x192 dan 512x512 beserta file manifest.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cara membuat favicon dalam 3 langkah",
+      "description": "Membuat favicon hanya membutuhkan beberapa detik:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Tambahkan gambar",
+          "description": "Seret file ke area yang ditentukan atau pilih grafik dari perangkat Anda. Format yang didukung: PNG, JPG, SVG. Ukuran yang direkomendasikan: min. 512×512 piksel."
+        },
+        {
+          "title": "2. Pilih ukuran",
+          "description": "Pilih ukuran ikon yang Anda butuhkan. Untuk situs web biasa: favicon.ico, 32×32, dan 180×180. Untuk PWA, tambahkan 192×192 dan 512×512."
+        },
+        {
+          "title": "3. Unduh file",
+          "description": "Setelah membuat, unduh semua file sebagai ZIP atau setiap ikon secara individual. Di bawah alat Anda akan menemukan petunjuk cara menambahkan favicon ke situs Anda."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Ukuran ikon apa yang dihasilkan alat ini?",
+      "html": "<p class=\"mb-6\">Setiap ukuran memiliki kegunaannya:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Format klasik yang dikenali oleh semua browser. Ditampilkan di tab browser.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16×16 dan 32×32 PNG</p><p class=\"text-mid text-sm\">Ukuran standar untuk browser modern. Ditampilkan di tab dan di bookmark.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180×180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Ikon untuk perangkat Apple (iPhone, iPad). Ditampilkan saat seseorang menambahkan situs ke layar beranda.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192×192 dan 512×512 PNG</p><p class=\"text-mid text-sm\">Ikon untuk aplikasi web (PWA). Diperlukan oleh manifest dan digunakan di toko aplikasi.</p></div></div><p class=\"text-light mt-6\">Jika Anda tidak membangun PWA, Anda hanya memerlukan: favicon.ico, PNG 32×32, dan PNG 180×180. Tiga file ini mencakup sebagian besar kasus penggunaan.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Apa yang membuat generator favicon ini istimewa?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privasi — file tidak pernah meninggalkan komputer Anda",
+          "description": "Semua operasi dilakukan secara lokal di browser. Gambar tidak dikirim ke server mana pun. Setelah menutup halaman, semua data dihapus."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Set lengkap dalam satu tempat",
+          "description": "Favicon.ico, ikon PNG, apple-touch-icon, ikon PWA, dan manifest — semua dari satu gambar, dalam satu alat."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Dukungan PNG, JPG, dan SVG",
+          "description": "Anda dapat menggunakan logo dalam format apa pun. Jika Anda memiliki SVG — ikon akan tajam di semua ukuran."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Siap untuk situs web dan penggunaan PWA",
+          "description": "Alat menghasilkan file manifest.json untuk aplikasi web. Di bawah Anda akan menemukan petunjuk untuk mengintegrasikan ikon."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cara menggunakan generator favicon",
+      "description": "Membuat favicon hanya beberapa langkah sederhana:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Tambahkan gambar sumber",
+          "description": "Seret file ke area yang ditentukan atau pilih grafik dari perangkat Anda. Format yang didukung: PNG, JPG, SVG. Logo atau ikon sederhana minimal 512×512 piksel paling cocok."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "2. Pilih ukuran ikon",
+          "description": "Pilih ukuran ikon mana yang Anda butuhkan. Anda dapat memilih semua atau hanya beberapa. Untuk situs web biasa: favicon.ico, 32×32, dan 180×180."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "3. Konfigurasikan opsi pembuatan",
+          "description": "Atur opsi tambahan: latar belakang (transparan atau warna pilihan), manifest (file konfigurasi PWA), dan unduh otomatis."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Hasilkan dan unduh file",
+          "description": "Setelah memulai pembuatan, alat memproses gambar secara lokal — tidak ada yang dikirim ke server. Unduh semua file sebagai arsip ZIP atau ikon individual secara terpisah."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Opsi pembuatan — apa fungsi masing-masing?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">Ukuran PNG</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">16×16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">32×32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">180×180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span class=\"text-mid text-sm!\">Latar belakang transparan (PNG/ICO)</span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Latar belakang (transparan atau warna)</h3><p class=\"text-mid\">Secara default, generator mempertahankan transparansi. Anda juga dapat memilih warna latar belakang tertentu.</p></div><div><h3 class=\"h5 mb-2\">Hasilkan manifest (site.webmanifest)</h3><p class=\"text-mid\">File JSON untuk aplikasi web (PWA). Jika Anda tidak membangun PWA, opsi ini tidak diperlukan.</p></div></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cara mengunduh file yang dihasilkan",
+      "description": "Setelah membuat ikon, Anda memiliki beberapa opsi unduhan:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFolderZipLine",
+          "title": "Unduh semua sebagai ZIP",
+          "description": "Tombol &quot;Unduh semua&quot; mengemas semua file yang dihasilkan ke dalam satu arsip ZIP. Ini adalah opsi paling nyaman saat Anda membutuhkan set ikon lengkap."
+        },
+        {
+          "icon": "RiFileDownloadLine",
+          "title": "Unduh file individual",
+          "description": "Setiap ikon yang dihasilkan memiliki tombol unduh sendiri — Anda dapat mengunduh satu file tanpa mengunduh seluruh set. Berguna saat hanya satu ukuran yang perlu diperbarui."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTabs",
+      "title": "Di mana dan cara menambahkan favicon",
+      "tabs": [
+        {
+          "title": "WordPress",
+          "icon": "RiWordpressLine",
+          "html": "<div><p class=\"text-mid mb-3\">Sebagian besar tema WordPress memiliki opsi bawaan untuk mengatur ikon situs. Anda akan menemukannya di panel admin:</p><p class=\"text-mid mb-3\"><strong>Appearance → Customize → Site Identity → Site Icon</strong></p><p class=\"text-light\">Unggah file 512×512 di sana — WordPress akan secara otomatis menghasilkan ukuran lebih kecil. Untuk kontrol penuh atas ikon, Anda juga dapat mengunggah file langsung ke direktori root melalui FTP.</p></div>"
+        },
+        {
+          "title": "HTML",
+          "icon": "RiHtml5Line",
+          "html": "<div><p class=\"text-mid mb-3\">Letakkan file yang dihasilkan di direktori root situs Anda (tempat index.html berada). Kemudian tambahkan tag yang sesuai di bagian &lt;head&gt;:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">Kode di atas adalah contoh — sesuaikan path agar cocok dengan struktur situs Anda.</p></div>"
+        },
+        {
+          "title": "Next.js / React",
+          "icon": "RiReactjsLine",
+          "html": "<div><p class=\"text-mid mb-3\">Di Next.js (App Router), letakkan file favicon di direktori <code>app/</code> atau <code>public/</code>:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> — dikenali secara otomatis oleh Next.js</li><li><code>app/apple-icon.png</code> — ikon Apple</li><li><code>public/</code> — ikon lainnya (192×192, 512×512)</li></ul><p class=\"text-light\">Anda juga dapat mengonfigurasi ikon di <code>layout.tsx</code> melalui objek <code>metadata.icons</code>.</p></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Gambar sumber apa yang paling cocok?",
+      "description": "Favicon adalah grafik yang sangat kecil — sekecil 16×16 piksel. Tidak setiap gambar cocok sebagai sumber:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShapeLine",
+          "title": "Bentuk sederhana dan simbol yang mudah dibaca",
+          "description": "Logo sederhana, huruf tunggal, atau simbol paling cocok. Hindari grafik kompleks dengan banyak detail."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Format persegi",
+          "description": "Favicon berbentuk persegi. Jika gambar sumber memiliki rasio selain 1:1, gambar akan dipotong atau diregangkan."
+        },
+        {
+          "icon": "RiZoomInLine",
+          "title": "Ukuran yang cukup besar",
+          "description": "Kami merekomendasikan gambar sumber minimal 512×512 piksel. Gambar yang lebih kecil akan diperbesar."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Format SVG sebagai sumber ideal",
+          "description": "SVG dapat diskalakan tanpa kehilangan kualitas, sehingga ikon di semua ukuran akan tajam."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Warna berkontras tinggi",
+          "description": "Favicon harus terlihat di berbagai latar belakang (tab terang, mode gelap). Pilih warna yang mempertahankan keterbacaan."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Pertanyaan yang sering diajukan tentang generator favicon",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Berapa ukuran gambar sumber untuk membuat favicon?",
+          "answer": "Ukuran yang direkomendasikan minimal 512×512 piksel dalam format persegi (1:1). Dengan sumber seperti ini, ikon di semua ukuran akan tajam dan dapat dibaca. Jika Anda memiliki logo dalam format SVG — gunakan itu, karena grafik vektor dapat diskalakan tanpa kehilangan kualitas.",
+          "answerSchemaText": "Minimal 512×512 px, persegi (1:1). SVG ideal karena dapat diskalakan tanpa kehilangan kualitas."
+        },
+        {
+          "question": "Bisakah saya hanya menghasilkan favicon.ico tanpa ikon lainnya?",
+          "answer": "Ya. Sebelum membuat, Anda dapat memilih dengan tepat ukuran mana yang Anda butuhkan — mis. hanya favicon.ico atau hanya ukuran PNG yang dipilih.",
+          "answerSchemaText": "Ya, Anda dapat memilih ukuran individual sebelum membuat."
+        },
+        {
+          "question": "Format gambar apa yang didukung generator favicon?",
+          "answer": "Generator menerima gambar dalam format PNG, JPG, dan SVG. Sebagai output, ia menghasilkan file favicon.ico dan ikon PNG dalam ukuran yang dipilih, siap diunggah ke situs web Anda.",
+          "answerSchemaText": "Input: PNG, JPG, SVG. Output: favicon.ico dan ikon PNG."
+        },
+        {
+          "question": "Apakah favicon mempengaruhi peringkat pencarian Google?",
+          "answer": "Tidak secara langsung — favicon bukan faktor peringkat. Namun, secara tidak langsung mempengaruhi pengenalan merek: situs dengan ikon profesional lebih mudah diidentifikasi di antara banyak tab yang terbuka, yang dapat meningkatkan rasio klik-tayang di hasil pencarian.",
+          "answerSchemaText": "Tidak secara langsung. Secara tidak langsung meningkatkan pengenalan merek dan rasio klik-tayang."
+        },
+        {
+          "question": "Ukuran ikon mana yang penting untuk situs web biasa?",
+          "answer": "Untuk situs web biasa, tiga file sudah cukup: favicon.ico (32×32), ikon PNG 32×32, dan apple-touch-icon 180×180. Jika situs harus berfungsi sebagai aplikasi web (PWA), Anda juga memerlukan ikon 192×192 dan 512×512 ditambah file manifest.",
+          "answerSchemaText": "favicon.ico, PNG 32×32, dan apple-touch-icon 180×180. Untuk PWA tambahkan 192×192 dan 512×512."
+        },
+        {
+          "question": "Apa itu file site.webmanifest dan kapan dibutuhkan?",
+          "answer": "Ini adalah file konfigurasi untuk aplikasi web (PWA) yang berisi informasi tentang ikon, nama, dan warna aplikasi. Diperlukan ketika situs harus berfungsi sebagai aplikasi yang ditambahkan ke layar beranda ponsel. Untuk situs web biasa, ini tidak diperlukan.",
+          "answerSchemaText": "File konfigurasi PWA. Diperlukan untuk aplikasi layar beranda, tidak diperlukan untuk situs web biasa."
+        },
+        {
+          "question": "Apakah favicon ditampilkan sama di semua browser?",
+          "answer": "Sebagian besar browser modern (Chrome, Firefox, Edge, Safari) mengenali file favicon.ico dan ikon PNG. Perbedaan mungkin terjadi pada ukuran ikon yang ditampilkan — Chrome lebih memilih PNG 32×32, sementara Safari di iOS menggunakan apple-touch-icon 180×180. Untuk kompatibilitas terbaik, kami merekomendasikan menghasilkan set ukuran lengkap.",
+          "answerSchemaText": "Sebagian besar ya. Hasilkan set ukuran lengkap untuk kompatibilitas terbaik."
+        },
+        {
+          "question": "Mengapa favicon tidak berubah setelah mengunggah file baru?",
+          "answer": "Browser secara agresif meng-cache favicon. Setelah mengunggah ikon baru, coba bersihkan cache browser atau tambahkan parameter versi ke path file (mis. /favicon.ico?v=2). Perubahan mungkin memerlukan beberapa jam untuk terlihat.",
+          "answerSchemaText": "Browser meng-cache favicon secara agresif. Bersihkan cache atau tambahkan parameter versi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Jelajahi alat lainnya"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

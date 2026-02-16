@@ -1,0 +1,285 @@
+{
+  "toolKey": "colorPalette",
+  "locale": "vi",
+  "metadata": {
+    "title": "Tạo Bảng Màu Miễn Phí – 9 Bảng Màu Từ Một Màu",
+    "description": "Tạo 9 bảng màu từ một màu cơ sở: đơn sắc, bổ sung, tam giác, pastel và nhiều hơn. Sao chép mã HEX chỉ bằng một nhấp. Không cần đăng ký, không giới hạn.",
+    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "path": "/vi/cong-cu/tao-bang-mau"
+  },
+  "hero": {
+    "title": "Công cụ tạo bảng màu",
+    "description": "Nhập một màu cơ sở, công cụ sẽ tạo 9 bảng màu hài hòa: đơn sắc, bổ sung, tam giác, pastel và nhiều hơn. Mỗi màu có thể sao chép cùng mã HEX.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/vi/cong-cu",
+      "label": "Công cụ"
+    },
+    "third": {
+      "href": "/vi/cong-cu/tao-bang-mau",
+      "label": "Tạo bảng màu"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Công cụ tạo bảng màu",
+      "alternateName": ["Tạo phối màu", "Công cụ tạo màu", "Tạo bảng phối màu", "Công cụ khớp màu", "Bảng màu miễn phí", "Tạo hài hòa màu sắc"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorPaletteGenerator",
+      "description": "Công cụ tạo bảng màu miễn phí. Nhập một màu HEX và công cụ sẽ tạo 9 phối màu: đơn sắc, tương tự, bổ sung, tam giác, bổ sung tách, pastel, tối, tông màu và tối giản. Mỗi màu có thể sao chép cùng mã HEX và giá trị HSL.",
+      "featureList": [
+        "Phối màu đơn sắc — sắc thái của một màu",
+        "Phối màu tương tự — màu lân cận trên vòng màu",
+        "Phối màu bổ sung — màu đối diện",
+        "Phối màu tam giác — 3 màu cách đều",
+        "Phối màu bổ sung tách — màu cơ sở và 2 lân cận của màu bổ sung",
+        "Bảng màu pastel — sắc thái nhẹ, dịu",
+        "Bảng màu tối — màu sâu cho giao diện tối",
+        "Bảng màu tông — thang độ sáng của một sắc độ",
+        "Bảng màu tối giản — điểm nhấn mạnh với trung tính sáng",
+        "Màu cơ sở ở định dạng HEX",
+        "Bộ chọn màu trực quan",
+        "Màu ngẫu nhiên ban đầu",
+        "Sao chép mã HEX vào clipboard",
+        "Giá trị HSL hiển thị bên cạnh mỗi màu",
+        "Xử lý cục bộ trong trình duyệt"
+      ]
+    },
+    "howTo": {
+      "name": "Cách tạo bảng màu từ một màu cơ sở",
+      "description": "Cách tạo 9 bảng màu từ một màu cơ sở: đơn sắc, bổ sung, tam giác, pastel và nhiều hơn. Mỗi màu có thể sao chép cùng mã HEX.",
+      "steps": [
+        {
+          "name": "Chọn màu cơ sở",
+          "text": "Nhập mã HEX vào trường văn bản hoặc sử dụng bộ chọn màu để chọn màu trực quan."
+        },
+        {
+          "name": "Xác nhận màu",
+          "text": "Xác nhận màu đã chọn bằng nút Cập nhật Màu — công cụ sẽ tạo bảng màu dựa trên màu cơ sở bạn chọn."
+        },
+        {
+          "name": "Duyệt bảng màu",
+          "text": "Công cụ sẽ tự động tạo 9 bảng màu khác nhau: đơn sắc, tương tự, bổ sung, tam giác, bổ sung tách, pastel, tối, tông màu và tối giản."
+        },
+        {
+          "name": "Sao chép màu",
+          "text": "Bên cạnh mỗi màu bạn sẽ tìm thấy nút Sao chép — mã HEX được sao chép vào clipboard hệ thống."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Tại sao cần tạo bảng màu?",
+      "html": "<p class=\"text-mid\">Bảng màu nhất quán là nền tảng của mọi dự án hình ảnh — từ website, qua logo, đến vật liệu in. Chọn thủ công các màu phối hợp với nhau đòi hỏi kiến thức về lý thuyết màu sắc. Công cụ tạo thực hiện tự động: bạn cung cấp một màu cơ sở (ví dụ: màu logo), và công cụ tạo 9 bộ màu dựa trên các phối màu hài hòa đã được chứng minh.</p><p class=\"text-mid mt-3\">Mỗi màu được tạo đi kèm mã HEX (ví dụ: #4F6BF5) và giá trị HSL (sắc độ, bão hòa, độ sáng). Mã HEX có thể dán trực tiếp vào CSS, Figma, Canva hoặc bất kỳ ứng dụng đồ họa nào.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cách sử dụng công cụ tạo bảng màu",
+      "description": "Toàn bộ quá trình chỉ mất vài giây:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Nhập màu cơ sở",
+          "description": "Nhập mã HEX (ví dụ: #4F6BF5) vào trường văn bản hoặc chọn màu từ bộ chọn màu. Bạn cũng có thể sử dụng nút Màu Ngẫu Nhiên."
+        },
+        {
+          "title": "2. Xác nhận lựa chọn",
+          "description": "Sau khi nhấp nút Cập nhật Màu, công cụ sẽ tự động tạo 9 bảng màu dựa trên các phối màu hài hòa khác nhau."
+        },
+        {
+          "title": "3. Sao chép màu bạn cần",
+          "description": "Bên cạnh mỗi màu có nút Sao chép — mã HEX được sao chép vào clipboard và có thể dán trực tiếp vào dự án."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Công cụ tạo những phối màu nào?",
+      "description": "Công cụ tạo 9 loại bảng màu — mỗi loại dựa trên nguyên tắc lý thuyết màu khác nhau:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiStackLine",
+          "title": "Bảng màu đơn sắc",
+          "description": "Nhiều sắc thái của một màu — từ sáng đến tối. Tất cả màu có cùng sắc độ trên vòng màu và chỉ khác về độ sáng. Phù hợp cho thiết kế thanh lịch, tối giản nơi tính nhất quán quan trọng."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Bảng màu tương tự",
+          "description": "Các màu lân cận trên vòng màu (dịch khoảng 30° theo cả hai hướng từ cơ sở). Chúng tạo ra chuyển tiếp màu hài hòa, mượt mà. Tuyệt vời cho các dự án xây dựng không khí ấm hoặc lạnh."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Bảng màu bổ sung",
+          "description": "Màu cơ sở và màu đối diện trên vòng màu (dịch 180°). Tạo tương phản thị giác mạnh. Hữu ích khi thành phần cần thu hút sự chú ý — nút bấm, tiêu đề nổi bật, banner khuyến mãi."
+        },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Bảng màu tam giác",
+          "description": "Ba màu cách nhau 120° trên vòng màu — tạo thành tam giác đều. Tổ hợp sống động, năng động. Phù hợp cho dự án sáng tạo: nhận diện thương hiệu trẻ, tài liệu quảng cáo, áp phích."
+        },
+        {
+          "icon": "RiCursorLine",
+          "title": "Bảng màu bổ sung tách",
+          "description": "Phiên bản nhẹ hơn của bảng màu bổ sung. Thay vì một màu đối diện, sử dụng hai màu dịch khoảng 30° từ màu bổ sung. Cho tương phản rõ ràng nhưng không căng thẳng thị giác mạnh."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Bảng màu pastel",
+          "description": "Cùng sắc độ với bão hòa giảm và độ sáng tăng — màu mềm, dịu nhẹ. Phổ biến trong mỹ phẩm, thời trang trẻ em và ngành thực phẩm. Kết hợp tốt với nền sáng và khoảng trắng."
+        },
+        {
+          "icon": "RiMoonLine",
+          "title": "Bảng màu tối",
+          "description": "Màu cơ sở ở bão hòa cao và độ sáng giảm — màu sâu, đậm. Hữu ích cho thiết kế giao diện tối cho website và ứng dụng, cũng như tài liệu cho thương hiệu cao cấp."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Bảng màu tông",
+          "description": "Nhiều bước độ sáng của một sắc độ — từ rất sáng đến tối. Tương tự thang tông dùng trong hệ thống thiết kế (ví dụ: sắc thái từ 50 đến 900). Hữu ích cho xây dựng giao diện cần biến thể của cùng một màu."
+        },
+        {
+          "icon": "RiContractLeftRightLine",
+          "title": "Bảng màu tối giản",
+          "description": "Một điểm nhấn màu mạnh và nhiều trung tính rất sáng, dịu. Phần còn lại của bảng màu giữ mềm. Phù hợp cho giao diện hiện đại với nhiều khoảng trắng — phong cách trang sản phẩm và landing page điển hình."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Công cụ tạo bảng màu dựa trên gì?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (sắc độ)</span><span class=\"text-mid\">0°–360° trên vòng màu</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (bão hòa)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (độ sáng)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">Tất cả bảng màu được tạo bằng cách biến đổi toán học màu cơ sở trong không gian màu HSL. HSL mô tả màu bằng ba giá trị: sắc độ (H) là vị trí trên vòng màu (0°–360°), bão hòa (S) xác định cường độ màu, và độ sáng (L) — màu sáng hay tối như thế nào.</p><p class=\"text-mid mt-3\">Bảng màu bổ sung, tam giác và bổ sung tách dựa trên hình học vòng màu — các màu được đặt ở khoảng góc bằng nhau, tạo cân bằng thị giác. Bảng màu đơn sắc, pastel và tối chỉ thay đổi độ sáng và bão hòa trong khi giữ nguyên sắc độ.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Sử dụng bảng màu đã tạo ở đâu",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Nhận diện thương hiệu",
+          "description": "Chọn màu bổ sung cho logo hiện có hoặc xây dựng bảng màu thương hiệu từ đầu — cho danh thiếp, văn phòng phẩm và tài liệu marketing."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Website",
+          "description": "Xác lập màu chính, màu nhấn và sắc thái nền. Mã HEX đã sao chép dán thẳng vào stylesheet CSS hoặc cấu hình theme."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Giao diện ứng dụng",
+          "description": "Bảng màu tông cung cấp biến thể độ sáng của một màu — sáng hơn cho nền, tối hơn cho văn bản, trung bình cho viền và trạng thái tương tác."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Đồ họa mạng xã hội",
+          "description": "Màu nhất quán cho bài đăng, story và ảnh bìa. Bảng màu tương tự hoặc pastel phù hợp khi muốn phong cách đồng nhất, dễ nhận biết."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Thuyết trình và tài liệu",
+          "description": "Bộ màu hài hòa cho slide, biểu đồ và infographic. Bảng màu đơn sắc hoặc tối giản duy trì trật tự thị giác."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Xử lý sự cố công cụ tạo bảng màu",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Bảng màu không thay đổi sau khi nhập màu",
+          "description": "Chỉ nhập mã HEX không tự động tạo bảng màu — bạn cần xác nhận thay đổi bằng nút Cập nhật Màu. Chỉ sau khi xác nhận, công cụ mới tính lại tất cả 9 phối màu."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Thông báo định dạng không hợp lệ",
+          "description": "Công cụ chỉ chấp nhận định dạng HEX với # ở đầu, ví dụ: #FF5500. Định dạng không có # (ví dụ: FF5500) hoặc ký hiệu RGB (ví dụ: rgb(255,85,0)) không được hỗ trợ."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Định dạng HEX ngắn và đầy đủ",
+          "description": "Cả hai định dạng đều được hỗ trợ: đầy đủ #RRGGBB (ví dụ: #FF5500) và ngắn #RGB (ví dụ: #F50). Công cụ tự động nhận biết cả hai và xử lý giống nhau."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Câu hỏi thường gặp về công cụ tạo bảng màu",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Màu cơ sở nên ở định dạng nào?",
+          "answer": "Công cụ chấp nhận màu ở định dạng HEX — cả ngắn (ví dụ: #F50) và đầy đủ (ví dụ: #FF5500). Bên cạnh trường văn bản bạn sẽ tìm thấy bộ chọn màu cho phép chọn màu trực quan. Bảng màu đã tạo hiển thị mã HEX và giá trị HSL của mỗi màu.",
+          "answerSchemaText": "Công cụ chấp nhận màu HEX (#RGB hoặc #RRGGBB). Mỗi màu đã tạo có mã HEX và giá trị HSL."
+        },
+        {
+          "question": "Mỗi bảng màu chứa bao nhiêu màu?",
+          "answer": "Mỗi bảng màu chứa 4 đến 6 màu. Số lượng phụ thuộc vào loại phối màu — bảng đơn sắc và tông tạo nhiều sắc thái hơn (thang độ sáng của một sắc độ), trong khi bảng bổ sung và tam giác tập trung vào ít màu tương phản hơn.",
+          "answerSchemaText": "Mỗi bảng màu chứa 4 đến 6 màu, tùy thuộc vào loại phối màu."
+        },
+        {
+          "question": "Không gian màu HSL là gì và đọc như thế nào?",
+          "answer": "HSL là cách mô tả màu bằng ba giá trị: H (sắc độ, 0°–360° trên vòng màu), S (bão hòa, 0%–100%) và L (độ sáng, 0%–100%). Công cụ hiển thị giá trị HSL bên cạnh mỗi màu, giúp dễ hiểu các màu trong bảng khác nhau như thế nào — ví dụ: bảng đơn sắc chỉ thay đổi độ sáng (L) trong khi giữ nguyên sắc độ (H).",
+          "answerSchemaText": "HSL mô tả màu qua sắc độ (H), bão hòa (S) và độ sáng (L). Công cụ hiển thị các giá trị này bên cạnh mỗi màu."
+        },
+        {
+          "question": "Tôi có thể sử dụng bảng màu đã tạo cho mục đích thương mại không?",
+          "answer": "Có. Bạn có thể sử dụng bảng màu đã tạo trong bất kỳ dự án nào — thương mại và phi thương mại, không có hạn chế bản quyền.",
+          "answerSchemaText": "Có, bảng màu đã tạo có thể sử dụng không hạn chế trong các dự án thương mại và phi thương mại."
+        },
+        {
+          "question": "Công cụ tạo bảng màu có yêu cầu đăng nhập hoặc thanh toán không?",
+          "answer": "Công cụ hoàn toàn miễn phí và không yêu cầu đăng nhập hoặc đăng ký. Các màu được tạo cục bộ trong trình duyệt — không có dữ liệu nào được gửi đến máy chủ bên ngoài.",
+          "answerSchemaText": "Công cụ miễn phí, không yêu cầu đăng nhập. Các màu được tạo cục bộ trong trình duyệt."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Khám phá các công cụ khác"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

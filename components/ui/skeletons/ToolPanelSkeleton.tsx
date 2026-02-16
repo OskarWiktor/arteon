@@ -248,7 +248,7 @@ interface ToolPanelSkeletonProps {
 
 export default function ToolPanelSkeleton({ variant = 'default' }: ToolPanelSkeletonProps) {
   return (
-    <div className="mx-auto w-[94%] max-w-[1420px]">
+    <div className="mx-auto w-[94%] max-w-[1420px] 2xl:max-w-none">
       <AdBannerShimmer />
 
       {variant === 'default' && <DefaultPanel />}

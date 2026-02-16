@@ -1,0 +1,234 @@
+{
+  "toolKey": "colorPalette",
+  "locale": "nl",
+  "metadata": {
+    "title": "Gratis kleurpalettengenerator \u2013 9 paletten uit \u00e9\u00e9n kleur",
+    "description": "Genereer 9 kleurpaletten uit \u00e9\u00e9n basiskleur: monochromatisch, complementair, triadisch, pastel en meer. Kopieer HEX-codes met \u00e9\u00e9n klik. Zonder registratie.",
+    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "path": "/nl/tools/kleurpalettengenerator"
+  },
+  "hero": {
+    "title": "Kleurpalettengenerator",
+    "description": "Voer \u00e9\u00e9n basiskleur in en de tool genereert 9 harmonieuze kleurpaletten: monochromatisch, complementair, triadisch, pastel en meer. Elke kleur kan worden gekopieerd met zijn HEX-code.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/nl/tools", "label": "Tools" },
+    "third": { "href": "/nl/tools/kleurpalettengenerator", "label": "Kleurpalettengenerator" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Kleurpalettengenerator",
+      "alternateName": ["Kleurschema generator", "Online kleurgenerator", "Kleurpalet maker", "Kleurafstemmingstool", "Kleurpalet online", "Kleurharmonie generator"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorPaletteGenerator",
+      "description": "Gratis online kleurpalettengenerator. Voer \u00e9\u00e9n HEX-kleur in en de tool genereert 9 schema's: monochromatisch, analoog, complementair, triadisch, split-complementair, pastel, donker, tonaal en minimalistisch. Elke kleur kan worden gekopieerd met zijn HEX-code en HSL-waarde.",
+      "featureList": [
+        "Monochromatisch schema \u2013 tinten van \u00e9\u00e9n kleur",
+        "Analoog schema \u2013 naburige kleuren op het kleurenwiel",
+        "Complementair schema \u2013 tegenovergestelde kleuren",
+        "Triadisch schema \u2013 3 kleuren op gelijke afstanden",
+        "Split-complementair schema \u2013 basiskleur en 2 buren van het complement",
+        "Pastelpalet \u2013 lichte, gedempte tinten",
+        "Donker palet \u2013 diepe kleuren voor donkere thema's",
+        "Tonaal palet \u2013 lichtschaal van \u00e9\u00e9n tint",
+        "Minimalistisch palet \u2013 sterk accent met lichte neutralen",
+        "Basiskleur in HEX-formaat",
+        "Kleurkiezer voor visuele selectie",
+        "Willekeurige startkleur",
+        "HEX-code kopi\u00ebren naar klembord",
+        "HSL-waarde weergegeven naast elke kleur",
+        "Lokale verwerking in de browser"
+      ]
+    },
+    "howTo": {
+      "name": "Hoe een kleurpalet te genereren uit \u00e9\u00e9n basiskleur",
+      "description": "Hoe 9 kleurpaletten te genereren uit \u00e9\u00e9n basiskleur: monochromatisch, complementair, triadisch, pastel en meer. Elke kleur kan worden gekopieerd met zijn HEX-code.",
+      "steps": [
+        { "name": "Kies een basiskleur", "text": "Voer een HEX-code in het tekstveld in of gebruik de kleurkiezer om visueel een kleur te selecteren." },
+        { "name": "Bevestig uw keuze", "text": "Bevestig de geselecteerde kleur met de knop Kleur bijwerken \u2013 de tool genereert paletten op basis van uw gekozen basiskleur." },
+        {
+          "name": "Bekijk de paletten",
+          "text": "De tool genereert automatisch 9 verschillende paletten: monochromatisch, analoog, complementair, triadisch, split-complementair, pastel, donker, tonaal en minimalistisch."
+        },
+        { "name": "Kopieer kleuren", "text": "Naast elke kleur vindt u een Kopieer-knop \u2013 de HEX-code wordt naar uw systeemklembord gekopieerd." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Waarom een kleurpalet genereren?",
+      "html": "<p class=\"text-mid\">Een consistent kleurpalet is de basis van elk visueel project \u2013 van een website, via een logo, tot drukwerk. Het handmatig selecteren van kleuren die goed samenwerken vereist kennis van kleurentheorie. De generator doet dit automatisch: u geeft \u00e9\u00e9n basiskleur op (bijv. uw logkleur) en de tool cre\u00ebert 9 kleurensets op basis van bewezen kleurharmonieschema's.</p><p class=\"text-mid mt-3\">Elke gegenereerde kleur komt met zijn HEX-code (bijv. #4F6BF5) en HSL-waarde (tint, verzadiging, lichtheid). De HEX-code kan direct worden geplakt in CSS, Figma, Canva of een grafische applicatie.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Hoe de kleurpalettengenerator te gebruiken",
+      "description": "Het hele proces duurt slechts enkele seconden:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Voer de basiskleur in",
+          "description": "Typ een HEX-code (bijv. #4F6BF5) in het tekstveld of kies een kleur uit de kleurkiezer. U kunt ook de knop Willekeurige kleur gebruiken."
+        },
+        { "title": "2. Bevestig uw keuze", "description": "Na het klikken op Kleur bijwerken genereert de tool automatisch 9 paletten op basis van verschillende kleurharmonieschema's." },
+        { "title": "3. Kopieer de gewenste kleuren", "description": "Naast elke kleur is een Kopieer-knop \u2013 de HEX-code gaat naar het klembord en kan direct in uw project worden geplakt." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Welke kleurschema's genereert de tool?",
+      "description": "De generator cre\u00ebert 9 palettypen \u2013 elk gebaseerd op een ander principe uit de kleurentheorie:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiStackLine",
+          "title": "Monochromatisch palet",
+          "description": "Meerdere tinten van \u00e9\u00e9n kleur \u2013 van licht tot donker. Alle kleuren hebben dezelfde tint op het kleurenwiel en verschillen alleen in lichtheid. Werkt goed in elegante, minimalistische ontwerpen."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Analoog palet",
+          "description": "Naburige kleuren op het kleurenwiel (ca. 30\u00b0 verschoven in beide richtingen). Ze cre\u00ebren harmonieuze, vloeiende kleurovergangen. Uitstekend voor projecten die een warme of koele sfeer opbouwen."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Complementair palet",
+          "description": "De basiskleur en de tegenovergestelde kleur op het kleurenwiel (180\u00b0 verschuiving). Cre\u00ebert sterk visueel contrast. Nuttig waar een element de aandacht moet trekken \u2013 knoppen, gemarkeerde koppen, promobanners."
+        },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Triadisch palet",
+          "description": "Drie kleuren op 120\u00b0 afstand op het kleurenwiel \u2013 een gelijkzijdige driehoek vormend. Een levendige, dynamische combinatie. Werkt goed in creatieve projecten: jonge merkidentiteit, reclamemateriaal, posters."
+        },
+        {
+          "icon": "RiCursorLine",
+          "title": "Split-complementair palet",
+          "description": "Een zachtere versie van het complementaire palet. In plaats van \u00e9\u00e9n tegenovergestelde kleur gebruikt het twee kleuren ca. 30\u00b0 verschoven van het complement. Geeft duidelijk contrast maar zonder zo sterke visuele spanning."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Pastelpalet",
+          "description": "Dezelfde tint met verminderde verzadiging en verhoogde lichtheid \u2013 zachte, milde kleuren. Populair in cosmetica, kindermode en de voedingsindustrie. Past goed bij een lichte achtergrond en witruimte."
+        },
+        {
+          "icon": "RiMoonLine",
+          "title": "Donker palet",
+          "description": "Basiskleur bij hoge verzadiging en verminderde lichtheid \u2013 diepe, intense kleuren. Nuttig voor het ontwerpen van donkere thema's voor websites en apps, en materialen voor premiummerken."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Tonaal palet",
+          "description": "Meerdere lichtheidsstappen van \u00e9\u00e9n tint \u2013 van zeer licht tot donker. Vergelijkbaar met toonschalen in designsystemen (bijv. tinten van 50 tot 900). Nuttig voor het bouwen van interfaces waar dezelfde kleur varianten nodig heeft."
+        },
+        {
+          "icon": "RiContractLeftRightLine",
+          "title": "Minimalistisch palet",
+          "description": "E\u00e9n vetgedrukt kleuraccent en meerdere zeer lichte, zachte neutralen. De rest van het palet blijft gedempt. Werkt goed in moderne interfaces met veel witruimte \u2013 typische product- en landingspaginastijl."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Waarop is de palettengenerator gebaseerd?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (tint)</span><span class=\"text-mid\">0\u00b0\u2013360\u00b0 op het kleurenwiel</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (verzadiging)</span><span class=\"text-mid\">0%\u2013100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lichtheid)</span><span class=\"text-mid\">0%\u2013100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">Alle paletten worden gecre\u00eberd door wiskundige transformatie van de basiskleur in de HSL-kleurruimte. HSL beschrijft een kleur met drie waarden: tint (H) is de positie op het kleurenwiel (0\u00b0\u2013360\u00b0), verzadiging (S) bepaalt de kleurintensiteit, en lichtheid (L) \u2013 hoe licht of donker de kleur is.</p><p class=\"text-mid mt-3\">De complementaire, triadische en split-complementaire paletten zijn gebaseerd op de geometrie van het kleurenwiel \u2013 kleuren worden op gelijke hoekafstanden geplaatst, wat visueel evenwicht cre\u00ebert. De monochromatische, pastel- en donkere paletten veranderen alleen lichtheid en verzadiging terwijl dezelfde tint behouden blijft.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Waar de gegenereerde paletten te gebruiken",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Visuele merkidentiteit",
+          "description": "Selecteer complementaire kleuren voor een bestaand logo of bouw een brandingpalet vanaf nul \u2013 voor visitekaartjes, briefpapier en marketingmateriaal."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Websites",
+          "description": "Stel de primaire kleur, accentkleur en achtergrondtinten vast. Gekopieerde HEX-codes plakken direct in CSS-stylesheets of themaconfiguratie."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "App-interfaces",
+          "description": "Het tonale palet biedt lichtheidsvarianten van \u00e9\u00e9n kleur \u2013 lichter voor achtergronden, donkerder voor tekst, tussenliggend voor randen en interactieve staten."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Social media-afbeeldingen",
+          "description": "Consistente kleuren voor posts, stories en profielcovers. Analoge of pastelpaletten werken goed als u een uniforme, herkenbare stijl wilt."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Presentaties en documenten",
+          "description": "Harmonieuze kleurensets voor dia's, grafieken en infographics. Monochromatische of minimalistische paletten behouden visuele orde."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Problemen oplossen met de palettengenerator",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Paletten veranderen niet na invoer van kleur",
+          "description": "Het simpelweg typen van een HEX-code genereert niet automatisch paletten \u2013 u moet de wijziging bevestigen met de knop Kleur bijwerken. Pas na bevestiging herberekent de tool alle 9 schema's."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Melding ongeldig formaat",
+          "description": "De generator accepteert alleen HEX-formaat met een # aan het begin, bijv. #FF5500. Formaten zonder # (bijv. FF5500) of in RGB-notatie (bijv. rgb(255,85,0)) worden niet ondersteund."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Kort en volledig HEX-formaat",
+          "description": "Beide formaten worden ondersteund: volledig #RRGGBB (bijv. #FF5500) en kort #RGB (bijv. #F50). De generator herkent beide automatisch en behandelt ze identiek."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen over de kleurpalettengenerator",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "In welk formaat moet de basiskleur zijn?",
+          "answer": "De generator accepteert kleuren in HEX-formaat \u2013 zowel kort (bijv. #F50) als volledig (bijv. #FF5500). Naast het tekstveld vindt u een kleurkiezer waarmee u visueel een kleur kunt kiezen. Gegenereerde paletten tonen de HEX-code en HSL-waarde van elke kleur.",
+          "answerSchemaText": "De generator accepteert HEX-kleuren (#RGB of #RRGGBB). Elke gegenereerde kleur heeft een HEX-code en HSL-waarde."
+        },
+        {
+          "question": "Hoeveel kleuren bevat elk palet?",
+          "answer": "Elk palet bevat 4 tot 6 kleuren. Het aantal hangt af van het schematype \u2013 monochromatische en tonale paletten genereren meer tinten (een lichtschaal van \u00e9\u00e9n tint), terwijl complementaire en triadische paletten zich richten op minder contrasterende kleuren.",
+          "answerSchemaText": "Elk palet bevat 4 tot 6 kleuren, afhankelijk van het schematype."
+        },
+        {
+          "question": "Wat is de HSL-kleurruimte en hoe lees je die?",
+          "answer": "HSL is een manier om kleur te beschrijven met drie waarden: H (tint, 0\u00b0\u2013360\u00b0 op het kleurenwiel), S (verzadiging, 0%\u2013100%) en L (lichtheid, 0%\u2013100%). De generator toont HSL-waarden naast elke kleur, waardoor het makkelijker wordt om te begrijpen hoe de kleuren in het palet van elkaar verschillen.",
+          "answerSchemaText": "HSL beschrijft kleur via tint (H), verzadiging (S) en lichtheid (L). De generator toont deze waarden naast elke kleur."
+        },
+        {
+          "question": "Kan ik de gegenereerde paletten commercieel gebruiken?",
+          "answer": "Ja. U kunt de gegenereerde kleurpaletten gebruiken in elk project \u2013 commercieel en niet-commercieel, zonder licentiebeperkingen.",
+          "answerSchemaText": "Ja, gegenereerde paletten kunnen zonder beperkingen worden gebruikt in commerci\u00eble en niet-commerci\u00eble projecten."
+        },
+        {
+          "question": "Vereist de generator login of betaling?",
+          "answer": "De generator is volledig gratis en vereist geen login of registratie. Kleuren worden lokaal in de browser gegenereerd \u2013 er worden geen gegevens naar externe servers gestuurd.",
+          "answerSchemaText": "De generator is gratis, vereist geen login. Kleuren worden lokaal in de browser gegenereerd."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Ontdek andere tools" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

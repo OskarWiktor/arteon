@@ -8,7 +8,7 @@ export default function ArticlePageSkeleton() {
     <>
       <HeroBannerSkeleton />
       <BreadcrumbsSkeleton />
-      <div className="m-auto w-[94%] max-w-[1420px]">
+      <div className="m-auto w-[94%] max-w-[1420px] 2xl:max-w-none">
         <GapSkeleton variant="line" />
         <article className="mx-auto max-w-3xl space-y-4">
           <Shimmer className="h-8 w-4/5 !rounded-md" />

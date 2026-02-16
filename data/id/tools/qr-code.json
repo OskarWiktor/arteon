@@ -1,0 +1,451 @@
+{
+  "toolKey": "qrCode",
+  "locale": "id",
+  "metadata": {
+    "title": "Generator Kode QR Gratis – PNG & SVG, Tanpa Daftar",
+    "description": "Buat kode QR untuk situs web, vCard, menu atau brosur dalam hitungan detik. Ekspor sebagai PNG & SVG. Sesuaikan warna dan ukuran. Tanpa pendaftaran, tanpa batasan.",
+    "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
+    "path": "/id/alat/generator-kode-qr-gratis"
+  },
+  "hero": {
+    "title": "Generator Kode QR — Gratis, Tanpa Pendaftaran",
+    "description": "Buat kode QR untuk situs web, kartu nama vCard, email, telepon, atau teks. Sesuaikan warna, ukuran, dan level koreksi kesalahan, lalu unduh file PNG atau SVG yang sudah jadi.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/id/alat",
+      "label": "Alat"
+    },
+    "third": {
+      "href": "/id/alat/generator-kode-qr-gratis",
+      "label": "Generator kode QR gratis"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Generator kode QR gratis",
+      "alternateName": [
+        "Pembuat kode QR gratis",
+        "Generator kode QR vCard",
+        "Generator QR gratis",
+        "Alat kode QR",
+        "Generator kode QR menu restoran",
+        "Kode QR untuk cetak PNG SVG",
+        "Generator kartu nama elektronik vCard",
+        "Generator kode QR tanpa registrasi",
+        "Generator kode QR gratis tanpa batasan"
+      ],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "QRCodeGenerator",
+      "description": "Buat kode QR untuk situs web, kartu nama, menu, atau brosur. Pilih jenis data, sesuaikan warna dan ukuran, lalu unduh file PNG atau SVG.",
+      "featureList": [
+        "Kode QR untuk URL (situs web)",
+        "Kode QR untuk teks biasa",
+        "Kode QR vCard (detail kontak)",
+        "Kode QR untuk email (alamat, subjek, isi)",
+        "Kode QR untuk nomor telepon",
+        "Warna kode dan latar belakang yang dapat disesuaikan",
+        "Pilihan ukuran kode dalam piksel",
+        "Ekspor ke format PNG (raster)",
+        "Ekspor ke format SVG (vektor)",
+        "Pratinjau kode secara langsung",
+        "Pemrosesan lokal di browser",
+        "Koreksi kesalahan Reed-Solomon"
+      ]
+    },
+    "howTo": {
+      "name": "Cara menggunakan generator kode QR gratis",
+      "description": "Cara membuat kode QR untuk situs web, kartu nama vCard, email, atau telepon — dari memilih jenis data hingga mengunduh file siap cetak.",
+      "steps": [
+        {
+          "name": "Pilih jenis data",
+          "text": "Tentukan apa yang harus dikandung kode QR: URL, teks, kartu nama (vCard), email, atau nomor telepon."
+        },
+        {
+          "name": "Masukkan data",
+          "text": "Isi kolom yang sesuai. Untuk URL, masukkan alamat situs web; untuk vCard, berikan detail kontak."
+        },
+        {
+          "name": "Sesuaikan tampilan",
+          "text": "Pilih ukuran, margin, warna kode dan latar belakang, serta level koreksi kesalahan."
+        },
+        {
+          "name": "Unduh kode",
+          "text": "Kode QR yang sudah jadi dapat diunduh sebagai file PNG (untuk cetak dan web) atau SVG (vektor, skala tanpa kehilangan kualitas)."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Apa itu kode QR dan bagaimana cara kerjanya?",
+      "html": "<p class=\"text-mid\">Kode QR (Quick Response) adalah barcode dua dimensi yang dapat dipindai dengan kamera smartphone. Berbeda dengan barcode tradisional, kode QR menyimpan data secara horizontal dan vertikal, memungkinkan mereka mengkodekan lebih banyak informasi — hingga sekitar 3.000 karakter alfanumerik.</p><p class=\"text-mid mt-3\">Kode QR dikembangkan pada tahun 1994 oleh perusahaan Jepang Denso Wave (bagian dari grup Toyota) untuk melacak komponen mobil. Saat ini, kode QR banyak digunakan dalam pemasaran, perhotelan, logistik, dan komunikasi bisnis. Kode QR menjadi sangat populer selama pandemi COVID-19, ketika restoran mulai mengganti menu kertas dengan kode QR.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cara menggunakan generator kode QR gratis",
+      "description": "Membuat kode QR hanya membutuhkan beberapa detik:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Pilih jenis data",
+          "description": "Pilih apa yang ingin Anda kodekan: URL, teks, kartu nama vCard, email, atau nomor telepon."
+        },
+        {
+          "title": "2. Masukkan data",
+          "description": "Isi kolom yang sesuai — alamat situs web, detail kontak, atau isi pesan."
+        },
+        {
+          "title": "3. Unduh kode",
+          "description": "Sesuaikan tampilan (warna, ukuran, margin) dan unduh sebagai PNG atau SVG."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jenis kode QR — URL, vCard, email, telepon, teks",
+      "description": "Generator kode QR gratis mendukung lima jenis data — masing-masing berguna dalam situasi berbeda:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "URL",
+          "description": "Tautan ke situs web. Setelah dipindai, telepon membuka halaman di browser. Ideal untuk kartu nama, brosur, dan poster."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Teks",
+          "description": "Teks apa pun hingga 3.000 karakter. Setelah dipindai, telepon menampilkan teks di layar. Berguna untuk kupon diskon dan instruksi singkat."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Kartu nama vCard",
+          "description": "Kartu nama digital dengan data kontak (nama, perusahaan, telepon, email, alamat). Setelah dipindai, telepon menawarkan untuk menyimpan kontak. Ideal untuk kartu nama profesional."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email",
+          "description": "Alamat email dengan subjek dan isi opsional. Setelah dipindai, telepon membuka aplikasi email dengan formulir yang sudah diisi."
+        },
+        {
+          "icon": "RiPhoneLine",
+          "title": "Telepon",
+          "description": "Nomor telepon. Setelah dipindai, telepon menawarkan untuk melakukan panggilan. Berguna untuk hotline dan layanan pelanggan."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Spesifikasi teknis kode QR",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kapasitas</span><span class=\"text-mid text-sm!\">hingga 4.296 karakter</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Koreksi kesalahan</span><span class=\"text-mid text-sm!\">7% – 30%</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Ukuran cetak min.</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kontras min.</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margin</span><span class=\"text-mid text-sm!\">min. 4 modul</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Mengetahui parameter teknis membantu membuat kode QR yang dapat dibaca dalam semua kondisi:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Kapasitas data</strong> — kode QR dapat menampung hingga 7.089 digit, 4.296 karakter alfanumerik, atau 2.953 byte data biner. Dalam praktiknya, ini lebih dari cukup untuk URL dan kartu nama.</li><li><strong>Koreksi kesalahan Reed-Solomon</strong> — algoritma matematika yang memungkinkan membaca kode bahkan ketika sebagian rusak atau terhalang. Level: L (7%), M (15%), Q (25%), H (30%).</li><li><strong>Margin</strong> — area putih di sekitar kode yang diperlukan untuk pemindaian yang benar. Minimum yang direkomendasikan adalah 4 modul (unit kode).</li><li><strong>Ukuran cetak minimum</strong> — untuk kondisi pemindaian standar, kode harus berukuran minimal 2×2 cm. Untuk cetak format besar (banner, billboard), perbesar sesuai kebutuhan.</li><li><strong>Kontras</strong> — rasio kontras antara kode dan latar belakang harus minimal 3:1. Generator secara otomatis memperingatkan tentang kontras yang terlalu rendah.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Penerapan kode QR — kartu nama, brosur, menu restoran",
+      "description": "Kode QR digunakan di banyak industri dan skenario:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Kartu nama",
+          "description": "Kode vCard di kartu nama memungkinkan penerima menyimpan kontak dengan satu kali pindai, tanpa mengetik data secara manual."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Menu restoran dan kafe",
+          "description": "Kode QR di meja mengarahkan ke menu digital. Solusi higienis yang populer sejak pandemi COVID-19."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Brosur dan poster",
+          "description": "Kode QR dengan tautan ke halaman produk, formulir pendaftaran, atau penawaran khusus."
+        },
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Kemasan produk",
+          "description": "Tautan ke panduan pengguna, kartu garansi, atau situs web produsen."
+        },
+        {
+          "icon": "RiHospitalLine",
+          "title": "Praktik medis",
+          "description": "Kode QR pada kartu pasien yang menautkan ke portal pasien atau sistem pemesanan janji temu."
+        },
+        {
+          "icon": "RiHome4Line",
+          "title": "Real estate",
+          "description": "Kode di banner yang menautkan ke daftar lengkap dengan galeri foto dan detail."
+        },
+        {
+          "icon": "RiTruckLine",
+          "title": "Gudang dan logistik",
+          "description": "Label QR untuk melacak batch produk, lokasi gudang, dan riwayat pengiriman."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "E-commerce",
+          "description": "Kode pada kemasan yang menautkan ke instruksi pengembalian, ulasan pelanggan, atau program loyalitas."
+        },
+        {
+          "icon": "RiCalendarEventLine",
+          "title": "Acara dan konferensi",
+          "description": "Tiket dengan kode QR untuk verifikasi cepat di pintu masuk."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Kustomisasi tampilan kode QR",
+      "variant": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Ukuran</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margin</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Warna kode</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Warna latar</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Generator memungkinkan Anda menyesuaikan beberapa parameter yang mempengaruhi tampilan dan keterbacaan kode:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Ukuran (px)</strong> — dimensi kode dalam piksel. Untuk cetak standar (brosur, kartu nama) pilih 300–500 px. Untuk penggunaan digital, 150–200 px sudah cukup.</li><li><strong>Margin</strong> — area putih di sekitar kode yang diperlukan untuk pemindaian yang benar. Nilai yang direkomendasikan adalah 2–4. Nilai 0 dapat menyulitkan pemindaian pada latar gelap.</li><li><strong>Warna kode QR</strong> — hitam secara default (#000000). Anda dapat mengubahnya ke warna gelap apa pun yang sesuai dengan identitas visual Anda.</li><li><strong>Warna latar belakang</strong> — putih secara default (#ffffff). Anda dapat mengubahnya ke warna terang apa pun. Generator akan memperingatkan jika kontras terlalu rendah.</li></ul><p class=\"text-mid mt-3\"><strong>Tips:</strong> Pertahankan kontras tinggi antara kode dan latar belakang (minimum 3:1). Kode gelap pada latar terang paling mudah dipindai.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Level koreksi kesalahan — L, M, Q, H",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Low)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Medium)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Quartile)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (High)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Koreksi kesalahan adalah mekanisme yang memungkinkan membaca kode QR bahkan ketika sebagian rusak, kotor, atau terhalang. Generator menggunakan algoritma Reed-Solomon, standar dalam kode QR.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Low) — 7%</strong> — redundansi paling sedikit, kode paling kompak. Pilih ketika kode akan digunakan dalam kondisi ideal (layar, cetak berkualitas tinggi).</li><li><strong>M (Medium) — 15%</strong> — nilai default, keseimbangan yang baik antara kapasitas dan ketahanan. Cocok untuk sebagian besar aplikasi.</li><li><strong>Q (Quartile) — 25%</strong> — ketahanan lebih besar terhadap kerusakan. Pilih untuk kode yang dicetak pada material yang rentan kotor.</li><li><strong>H (High) — 30%</strong> — ketahanan tertinggi. Direkomendasikan untuk bahan cetak luar ruangan, kemasan, dan situasi di mana kode mungkin sebagian terhalang (mis. logo di tengah).</li></ul><p class=\"text-mid mt-3\"><strong>Catatan:</strong> Level koreksi yang lebih tinggi berarti kode yang lebih besar dan lebih kompleks. Dengan data yang banyak dan level H, kode bisa menjadi sangat padat.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs SVG — format mana yang dipilih untuk cetak?",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG (raster)"
+        },
+        {
+          "id": "svg",
+          "name": "SVG (vektor)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Situs web dan media sosial",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Brosur dan kartu nama",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Poster dan banner (format besar)",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Skala tanpa kehilangan kualitas",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Pengeditan di program grafis",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Ukuran file lebih kecil",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Presentasi",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips mencetak kode QR",
+      "description": "Untuk memastikan kode QR dapat dibaca setelah dicetak, ikuti beberapa aturan:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "Ukuran minimum",
+          "description": "Kode harus berukuran minimal 2×2 cm untuk pemindaian jarak dekat. Semakin jauh jarak pemindaian, semakin besar kode yang diperlukan."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Kontras",
+          "description": "Kode gelap pada latar terang. Hindari warna pastel dan kontras rendah."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Margin di sekitar kode",
+          "description": "Pertahankan ruang kosong di sekitar kode. Jangan tempatkan elemen grafis lain terlalu dekat — margin penting untuk pemindaian yang benar."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Pengujian",
+          "description": "Sebelum cetak massal, uji kode pada telepon berbeda dan dalam berbagai kondisi pencahayaan."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Level koreksi",
+          "description": "Untuk cetak luar ruangan dan material yang rentan rusak, pilih level Q atau H."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Apa yang membuat generator kode QR ini istimewa?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Pembuatan lokal di browser",
+          "description": "Data yang dimasukkan ke generator tidak dikirim ke server mana pun — semua pemrosesan terjadi secara lokal di perangkat Anda."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "Lima jenis data dalam satu alat",
+          "description": "URL, teks, kartu nama vCard, email, dan telepon — setiap jenis menghasilkan kode QR dalam standar yang sesuai."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Kustomisasi tampilan kode QR",
+          "description": "Warna kode dan latar belakang, ukuran dalam piksel, margin, dan level koreksi kesalahan — setiap parameter dapat disesuaikan."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Empat level koreksi kesalahan",
+          "description": "Algoritma Reed-Solomon memungkinkan Anda memilih ketahanan kode terhadap kerusakan — dari 7% (L) hingga 30% (H). Level lebih tinggi berguna untuk cetak pada material yang rentan kotor."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Pratinjau langsung",
+          "description": "Anda melihat hasilnya segera setelah memasukkan data, tanpa mengklik &quot;Buat&quot;."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Ekspor PNG dan SVG",
+          "description": "Unduh kode dalam format yang sesuai dengan kebutuhan Anda."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Pertanyaan yang sering diajukan tentang generator kode QR",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Apakah kode QR yang dibuat dengan alat ini kedaluwarsa?",
+          "answer": "Tidak. Kode QR statis (seperti yang dihasilkan alat ini) tidak kedaluwarsa. Konten — mis. URL atau data kartu nama — dikodekan langsung dalam kode. Selama halaman target ada, kode akan berfungsi.",
+          "answerSchemaText": "Tidak. Kode QR statis tidak kedaluwarsa. Konten dikodekan langsung dalam kode."
+        },
+        {
+          "question": "Bisakah saya mengubah URL di kode QR yang sudah ada?",
+          "answer": "Dengan kode QR statis, Anda tidak dapat mengubah konten yang dikodekan — Anda perlu membuat kode baru dengan alamat baru. Kode QR dinamis (dapat diedit setelah dibuat) memerlukan layanan berbayar eksternal.",
+          "answerSchemaText": "Tidak, kode QR statis tidak dapat diedit. Buat kode baru untuk URL yang berbeda."
+        },
+        {
+          "question": "PNG atau SVG — format kode QR mana yang harus dipilih untuk cetak?",
+          "answer": "PNG cocok untuk sebagian besar kebutuhan: situs web, media sosial, cetak hingga ukuran A4. SVG berbasis vektor — dapat diskalakan ke ukuran apa pun tanpa kehilangan kualitas, sehingga cocok untuk banner, billboard, dan format iklan besar.",
+          "answerSchemaText": "PNG untuk web dan cetak standar. SVG untuk format besar dan skala tanpa kehilangan."
+        },
+        {
+          "question": "Ukuran kode QR berapa yang harus saya pilih untuk kartu nama?",
+          "answer": "Untuk bahan cetak (kartu nama, brosur), kode harus berukuran minimal 2×2 cm, optimalnya 3×3 cm. Dalam generator, ini sesuai dengan resolusi 300 px pada kualitas cetak standar (300 DPI). Untuk format lebih besar (poster, banner), pilih ukuran lebih besar atau format SVG.",
+          "answerSchemaText": "Minimal 2×2 cm (300 px pada 300 DPI). Optimalnya 3×3 cm untuk kartu nama."
+        },
+        {
+          "question": "Bisakah saya menambahkan logo di tengah kode QR?",
+          "answer": "Alat ini tidak mendukung penambahan logo secara langsung. Namun, Anda dapat mengunduh kode dalam format SVG dan menambahkan logo di program grafis — dalam hal ini, perlu mengatur level koreksi kesalahan tinggi (H) agar kode tetap dapat dibaca meskipun sebagian terhalang.",
+          "answerSchemaText": "Tidak secara langsung. Unduh SVG dan tambahkan logo di program grafis dengan koreksi kesalahan H."
+        },
+        {
+          "question": "Mengapa kode QR saya tidak dapat dipindai setelah dicetak?",
+          "answer": "Penyebab paling umum: kontras terlalu rendah antara kode dan latar belakang, ukuran kode terlalu kecil, tidak ada margin di sekitar kode, atau kerusakan cetak. Coba perbesar ukuran, tingkatkan kontras, dan naikkan level koreksi kesalahan (Q atau H).",
+          "answerSchemaText": "Periksa kontras, ukuran, margin, dan level koreksi kesalahan."
+        },
+        {
+          "question": "Bisakah saya menggunakan kode QR yang dihasilkan secara komersial?",
+          "answer": "Ya. Kode QR yang dihasilkan dapat digunakan secara bebas di proyek apa pun — komersial dan non-komersial, tanpa batasan lisensi.",
+          "answerSchemaText": "Ya, tanpa batasan di proyek komersial dan non-komersial."
+        },
+        {
+          "question": "Apa perbedaan antara kartu nama vCard dan kode QR teks biasa?",
+          "answer": "Kode QR vCard berisi data kontak dalam format terstandarisasi (nama, perusahaan, telepon, email, alamat). Setelah dipindai, telepon secara otomatis menawarkan untuk menyimpan kontak di buku alamat. Kode teks menampilkan data sebagai teks biasa — tanpa opsi untuk menyimpannya secara otomatis.",
+          "answerSchemaText": "vCard menyimpan kontak secara otomatis. QR teks hanya menampilkan teks."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Jelajahi alat gratis lainnya"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,451 @@
+{
+  "toolKey": "qrCode",
+  "locale": "ro",
+  "metadata": {
+    "title": "Generator gratuit coduri QR – Descărcați PNG și SVG",
+    "description": "Creați coduri QR pentru site-uri web, vCard, meniuri sau pliante în câteva secunde. Export PNG și SVG. Personalizați culorile și dimensiunea. Fără înregistrare.",
+    "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
+    "path": "/ro/instrumente/generator-coduri-qr-gratuit"
+  },
+  "hero": {
+    "title": "Generator de coduri QR – Gratuit, fără înregistrare",
+    "description": "Creați un cod QR pentru un site web, carte de vizită vCard, email, telefon sau text. Personalizați culorile, dimensiunea și nivelul de corecție a erorilor, apoi descărcați fișierul PNG sau SVG.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/generator-coduri-qr-gratuit",
+      "label": "Generator coduri QR"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Generator gratuit de coduri QR online",
+      "alternateName": [
+        "Creator de coduri QR online",
+        "Generator de coduri QR vCard",
+        "Generator QR gratuit",
+        "Instrument cod QR",
+        "Generator cod QR pentru meniuri restaurant",
+        "Cod QR pentru tipărire PNG SVG",
+        "Generator carte de vizită electronică vCard",
+        "Generator cod QR fără înregistrare",
+        "Generator gratuit coduri QR fără limite"
+      ],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "QRCodeGenerator",
+      "description": "Creați un cod QR pentru un site web, carte de vizită, meniu sau pliant. Alegeți tipul de date, personalizați culorile și dimensiunea, apoi descărcați fișierul PNG sau SVG.",
+      "featureList": [
+        "Cod QR pentru URL (site web)",
+        "Cod QR pentru text simplu",
+        "Cod QR vCard (date de contact)",
+        "Cod QR pentru email (adresă, subiect, conținut)",
+        "Cod QR pentru număr de telefon",
+        "Culori personalizabile pentru cod și fundal",
+        "Selectare dimensiune cod în pixeli",
+        "Export în format PNG (raster)",
+        "Export în format SVG (vector)",
+        "Previzualizare cod în timp real",
+        "Procesare locală în browser",
+        "Corecție erori Reed-Solomon"
+      ]
+    },
+    "howTo": {
+      "name": "Cum să folosiți generatorul gratuit de coduri QR",
+      "description": "Cum să creați un cod QR pentru un site web, carte de vizită vCard, email sau telefon - de la alegerea tipului de date până la descărcarea fișierului gata de tipărit.",
+      "steps": [
+        {
+          "name": "Alegeți tipul de date",
+          "text": "Decideți ce ar trebui să conțină codul QR: URL, text, carte de vizită (vCard), email sau număr de telefon."
+        },
+        {
+          "name": "Introduceți datele",
+          "text": "Completați câmpurile corespunzătoare. Pentru URL, introduceți adresa site-ului; pentru vCard, furnizați datele de contact."
+        },
+        {
+          "name": "Personalizați aspectul",
+          "text": "Alegeți dimensiunea, marginea, culorile codului și fundalului și nivelul de corecție a erorilor."
+        },
+        {
+          "name": "Descărcați codul",
+          "text": "Codul QR gata poate fi descărcat ca fișier PNG (pentru tipărire și web) sau SVG (vector, se scalează fără pierderea calității)."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Ce este un cod QR și cum funcționează?",
+      "html": "<p class=\"text-mid\">Un cod QR (Quick Response) este un cod de bare bidimensional care poate fi scanat cu camera unui smartphone. Spre deosebire de codurile de bare tradiționale, codurile QR stochează date atât orizontal cât și vertical, permițându-le să codifice semnificativ mai multe informații - până la aproximativ 3.000 de caractere alfanumerice.</p><p class=\"text-mid mt-3\">Codul QR a fost dezvoltat în 1994 de compania japoneză Denso Wave (parte a grupului Toyota) pentru urmărirea pieselor auto. Astăzi, codurile QR sunt utilizate pe scară largă în marketing, ospitalitate, logistică și comunicare de afaceri. Au căpătat o popularitate deosebită în timpul pandemiei COVID-19, când restaurantele au început să înlocuiască meniurile de hârtie cu coduri QR.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să folosiți generatorul de coduri QR",
+      "description": "Crearea unui cod QR durează doar câteva secunde:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Alegeți tipul de date",
+          "description": "Selectați ce doriți să codificați: URL, text, carte de vizită vCard, email sau număr de telefon."
+        },
+        {
+          "title": "2. Introduceți datele",
+          "description": "Completați câmpurile corespunzătoare - adresa site-ului, datele de contact sau conținutul mesajului."
+        },
+        {
+          "title": "3. Descărcați codul",
+          "description": "Personalizați aspectul (culori, dimensiune, margine) și descărcați ca PNG sau SVG."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tipuri de coduri QR - URL, vCard, email, telefon, text",
+      "description": "Generatorul gratuit de coduri QR acceptă cinci tipuri de date - fiecare util în situații diferite:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "URL",
+          "description": "Un link către un site web. După scanare, telefonul deschide pagina în browser. Ideal pentru cărți de vizită, pliante și postere."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Text",
+          "description": "Orice text până la 3.000 de caractere. După scanare, telefonul afișează textul pe ecran. Util pentru cupoane de reducere și instrucțiuni scurte."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Carte de vizită vCard",
+          "description": "O carte de vizită digitală cu date de contact (nume, companie, telefon, email, adresă). După scanare, telefonul oferă salvarea contactului. Ideal pentru cărți de vizită profesionale."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email",
+          "description": "O adresă de email cu subiect și conținut opțional. După scanare, telefonul deschide aplicația de email cu formularul pre-completat."
+        },
+        {
+          "icon": "RiPhoneLine",
+          "title": "Telefon",
+          "description": "Un număr de telefon. După scanare, telefonul oferă efectuarea apelului. Util pentru linii telefonice și suport clienți."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Specificații tehnice ale codului QR",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Capacitate</span><span class=\"text-mid text-sm!\">până la 4.296 caractere</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Corecție erori</span><span class=\"text-mid text-sm!\">7% – 30%</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Dimensiune min. tipărire</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Contrast min.</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margine</span><span class=\"text-mid text-sm!\">min. 4 module</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Cunoașterea parametrilor tehnici ajută la crearea codurilor QR care sunt lizibile în toate condițiile:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Capacitate date</strong> - un cod QR poate stoca până la 7.089 cifre, 4.296 caractere alfanumerice sau 2.953 byteți de date binare. În practică, aceasta este mai mult decât suficient pentru URL-uri și cărți de vizită.</li><li><strong>Corecție erori Reed-Solomon</strong> - un algoritm matematic care permite citirea codului chiar și când o parte a acestuia este deteriorată sau acoperită. Niveluri: L (7%), M (15%), Q (25%), H (30%).</li><li><strong>Margine</strong> - zona albă din jurul codului necesară pentru scanarea corecta. Minimul recomandat este de 4 module (unități de cod).</li><li><strong>Dimensiune minimă tipărire</strong> - pentru condiții standard de scanare, codul trebuie să aibă cel puțin 2×2 cm. Pentru tipărire în format mare (bannere, panouri), scalează corespunzător.</li><li><strong>Contrast</strong> - raportul de contrast dintre cod și fundal trebuie să fie cel puțin 3:1. Generatorul avertizează automat dacă contrastul este prea scăzut.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Aplicații ale codurilor QR - cărți de vizită, pliante, meniuri restaurant",
+      "description": "Codurile QR își găsesc utilizarea în multe industrii și scenarii:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Cărți de vizită",
+          "description": "Un cod vCard pe cartea de vizită permite destinatarului să salveze contactul cu o singură scanare, fără a tasta manual datele."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Meniuri de restaurant și cafenea",
+          "description": "Un cod QR pe masă direcționează către meniul digital. O soluție igienică populară din timpul pandemiei COVID-19."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Pliante și postere",
+          "description": "Cod QR cu link către pagina produsului, formular de înregistrare sau ofertă specială."
+        },
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Ambalaje produse",
+          "description": "Link către manualul de utilizare, certificatul de garanție sau site-ul producătorului."
+        },
+        {
+          "icon": "RiHospitalLine",
+          "title": "Cabinete medicale",
+          "description": "Coduri QR pe cardurile pacienților care leagă la portalul pacientului sau sistemul de programare."
+        },
+        {
+          "icon": "RiHome4Line",
+          "title": "Imobiliare",
+          "description": "Coduri pe bannere care leagă la anunțul complet cu galerie foto și detalii."
+        },
+        {
+          "icon": "RiTruckLine",
+          "title": "Depozite și logistică",
+          "description": "Etichete QR pentru urmărirea loturilor de produse, locațiilor din depozit și istoricului de expediere."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "E-commerce",
+          "description": "Coduri pe ambalaje care leagă la instrucțiuni de retur, recenzii clienți sau programe de fidelitate."
+        },
+        {
+          "icon": "RiCalendarEventLine",
+          "title": "Evenimente și conferințe",
+          "description": "Bilete cu coduri QR pentru verificare rapidă la intrare."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Personalizarea aspectului codului QR",
+      "variant": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Dimensiune</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margine</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Culoare cod</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Culoare fundal</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Generatorul vă permite să personalizați mai mulți parametri care afectează aspectul și lizibilitatea codului:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Dimensiune (px)</strong> - dimensiunea codului în pixeli. Pentru tipărire standard (pliante, cărți de vizită) alegeți 300–500 px. Pentru uz digital, 150–200 px este suficient.</li><li><strong>Margine</strong> - zona albă din jurul codului necesară pentru scanarea corecta. Valoarea recomandată este 2–4. O valoare de 0 poate îngreuna scanarea pe un fundal închis.</li><li><strong>Culoare cod QR</strong> - implicit negru (#000000). Poate fi schimbată în orice culoare închisă potrivită identității vizuale.</li><li><strong>Culoare fundal</strong> - implicit alb (#ffffff). Poate fi schimbată în orice culoare deschisă. Generatorul va avertiza dacă contrastul este prea scăzut.</li></ul><p class=\"text-mid mt-3\"><strong>Sfat:</strong> Mențineți un contrast ridicat între cod și fundal (minimum 3:1). Un cod închis pe un fundal deschis se scanează cel mai ușor.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Niveluri de corecție a erorilor - L, M, Q, H",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Scăzut)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Mediu)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Sfert)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (Ridicat)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Corecția erorilor este un mecanism care permite citirea unui cod QR chiar și când o parte a acestuia este deteriorată, murdară sau acoperită. Generatorul folosește algoritmul Reed-Solomon, standard în codurile QR.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Scăzut) - 7%</strong> - cea mai mică redundanță, codul este cel mai compact. Alegeți când codul va fi folosit în condiții ideale (ecran, tipărire de calitate).</li><li><strong>M (Mediu) - 15%</strong> - valoare implicită, un echilibru bun între capacitate și rezistență. Potrivit pentru majoritatea aplicațiilor.</li><li><strong>Q (Sfert) - 25%</strong> - rezistență mai mare la deteriorare. Alegeți pentru coduri tipărite pe materiale predispuse la murdărire.</li><li><strong>H (Ridicat) - 30%</strong> - cea mai mare rezistență. Recomandat pentru materiale tipărite în exterior, ambalaje și situații în care codul poate fi parțial acoperit (ex. un logo în centru).</li></ul><p class=\"text-mid mt-3\"><strong>Notă:</strong> Un nivel mai mare de corecție înseamnă un cod mai mare și mai complex. Cu cantități mari de date și nivelul H, codul poate deveni foarte dens.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs SVG - ce format să alegeți pentru tipărire?",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG (raster)"
+        },
+        {
+          "id": "svg",
+          "name": "SVG (vector)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Site-uri web și social media",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Pliante și cărți de vizită",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Postere și bannere (format mare)",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Scalare fără pierdere de calitate",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Editare în program grafic",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Dimensiune fișier mai mică",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Prezentări",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Sfaturi pentru tipărirea codurilor QR",
+      "description": "Pentru a vă asigura că codul QR este lizibil după tipărire, urmați câteva reguli:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "Dimensiune minimă",
+          "description": "Codul trebuie să aibă cel puțin 2×2 cm pentru scanare de aproape. Cu cât distanța de scanare este mai mare, cu atât codul trebuie să fie mai mare."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Contrast",
+          "description": "Cod închis pe fundal deschis. Evitați culorile pastel și contrastul scăzut."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Margine în jurul codului",
+          "description": "Mențineți spațiu liber în jurul codului. Nu plasați alte elemente grafice prea aproape - marginea este esențială pentru scanarea corecta."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Testare",
+          "description": "Înainte de tipărirea în masă, testați codul pe diferite telefoane și în diverse condiții de iluminare."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Nivel de corecție",
+          "description": "Pentru tipărire în exterior și materiale predispuse la deteriorare, alegeți nivelul Q sau H."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face special acest generator de coduri QR?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Generare locală în browser",
+          "description": "Datele introduse în generator nu sunt trimise la niciun server - toată procesarea are loc local pe dispozitivul dvs."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "Cinci tipuri de date într-un singur instrument",
+          "description": "URL, text, carte de vizită vCard, email și telefon - fiecare tip generează un cod QR în standardul corespunzător."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Personalizarea aspectului codului QR",
+          "description": "Culori cod și fundal, dimensiune în pixeli, margine și nivel de corecție a erorilor - fiecare parametru poate fi personalizat."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Patru niveluri de corecție a erorilor",
+          "description": "Algoritmul Reed-Solomon vă permite să alegeți rezistența codului la deteriorare - de la 7% (L) la 30% (H)."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Previzualizare în timp real",
+          "description": "Vedeți rezultatul imediat după introducerea datelor, fără a face clic pe \"Generează\"."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Export PNG și SVG",
+          "description": "Descărcați codul în formatul potrivit pentru cazul dvs. de utilizare."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente despre generatorul de coduri QR",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Un cod QR generat cu acest instrument expiră?",
+          "answer": "Nu. Un cod QR static (ca cel generat de acest instrument) nu expiră. Conținutul - ex. un URL sau datele cărții de vizită - este codificat direct în cod. Atât timp cât pagina țintă există, codul va funcționa.",
+          "answerSchemaText": "Nu. Codurile QR statice nu expiră. Conținutul este codificat direct în cod."
+        },
+        {
+          "question": "Pot schimba URL-ul într-un cod QR existent?",
+          "answer": "Cu un cod QR static, nu puteți schimba conținutul codificat - trebuie să generați un cod nou cu o adresă nouă. Codurile QR dinamice (editabile după generare) necesită servicii externe plătite.",
+          "answerSchemaText": "Nu, codurile QR statice nu pot fi editate. Generați un cod nou pentru un URL diferit."
+        },
+        {
+          "question": "PNG sau SVG - ce format de cod QR să aleg pentru tipărire?",
+          "answer": "PNG funcționează pentru majoritatea cazurilor: site-uri web, social media, tipărire până la dimensiunea A4. SVG este bazat pe vectori - poate fi scalat la orice dimensiune fără pierderea calității, ceea ce îl face potrivit pentru bannere, panouri și formate publicitare mari.",
+          "answerSchemaText": "PNG pentru web și tipărire standard. SVG pentru format mare și scalare fără pierderi."
+        },
+        {
+          "question": "Ce dimensiune de cod QR să aleg pentru o carte de vizită?",
+          "answer": "Pentru materiale tipărite (cărți de vizită, pliante), codul trebuie să aibă cel puțin 2×2 cm, optim 3×3 cm. În generator, aceasta corespunde unei rezoluții de 300 px la calitate standard de tipărire (300 DPI). Pentru formate mai mari (postere, bannere), alegeți o dimensiune mai mare sau formatul SVG.",
+          "answerSchemaText": "Cel puțin 2×2 cm (300 px la 300 DPI). Optim 3×3 cm pentru cărți de vizită."
+        },
+        {
+          "question": "Pot adăuga un logo în centrul codului QR?",
+          "answer": "Acest instrument nu acceptă adăugarea directă a unui logo. Totuși, puteți descărca codul în format SVG și suprapune un logo într-un program grafic - în acest caz, este necesar să setați un nivel ridicat de corecție a erorilor (H) pentru ca codul să rămână lizibil în ciuda acoperirii parțiale.",
+          "answerSchemaText": "Nu direct. Descărcați SVG și adăugați un logo într-un program grafic cu corecție erori H."
+        },
+        {
+          "question": "De ce nu se scanează codul meu QR după tipărire?",
+          "answer": "Cele mai frecvente cauze: contrast prea scăzut între cod și fundal, dimensiune prea mică a codului, lipsă margine în jurul codului sau deteriorare la tipărire. Încercați să măriți dimensiunea, să îmbunătățiți contrastul și să ridicați nivelul de corecție a erorilor (Q sau H).",
+          "answerSchemaText": "Verificați contrastul, dimensiunea, marginea și nivelul de corecție a erorilor."
+        },
+        {
+          "question": "Pot folosi codurile QR generate comercial?",
+          "answer": "Da. Codurile QR generate pot fi folosite liber în orice proiect - comercial și necomercial, fără restricții de licențiere.",
+          "answerSchemaText": "Da, fără restricții în proiecte comerciale și necomerciale."
+        },
+        {
+          "question": "Care este diferența dintre o carte de vizită vCard și un cod QR text simplu?",
+          "answer": "Un cod QR vCard conține date de contact într-un format standardizat (nume, companie, telefon, email, adresă). După scanare, telefonul oferă automat salvarea contactului în agenda telefonului. Un cod text afișează datele ca text simplu - fără opțiunea de salvare automată.",
+          "answerSchemaText": "vCard salvează contactul automat. Codul QR text doar afișează textul."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descoperiți alte instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

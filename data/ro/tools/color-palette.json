@@ -1,0 +1,292 @@
+{
+  "toolKey": "colorPalette",
+  "locale": "ro",
+  "metadata": {
+    "title": "Generator gratuit de palete de culori – Dintr-o culoare",
+    "description": "Generați nouă palete armonioase pornind de la o singură culoare de bază. Copiați cu ușurință codurile HEX, RGB și HSL ale fiecărei nuanțe. Fără înregistrare.",
+    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "path": "/ro/instrumente/generator-de-palete-de-culori"
+  },
+  "hero": {
+    "title": "Generator de palete de culori",
+    "description": "Introduceți o culoare de bază, iar instrumentul va genera 9 palete armonioase: monocromatică, complementară, triadică, pastel și altele. Fiecare culoare poate fi copiată cu codul HEX.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/generator-de-palete-de-culori",
+      "label": "Generator palete culori"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Generator de palete de culori",
+      "alternateName": [
+        "Generator de scheme de culori",
+        "Generator de culori online",
+        "Creator de palete de culori",
+        "Instrument de potrivire culori",
+        "Palete de culori online",
+        "Generator de armonie a culorilor"
+      ],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorPaletteGenerator",
+      "description": "Generator gratuit de palete de culori online. Introduceți o culoare HEX și instrumentul va genera 9 scheme: monocromatică, analogică, complementară, triadică, split-complementară, pastel, întunecata, tonală și minimalistă. Fiecare culoare poate fi copiată cu codul HEX și valoarea HSL.",
+      "featureList": [
+        "Schemă monocromatică – nuanțe ale unei singure culori",
+        "Schemă analogică – culori vecine pe roata culorilor",
+        "Schemă complementară – culori opuse",
+        "Schemă triadică – 3 culori la intervale egale",
+        "Schemă split-complementară – culoarea de bază și 2 vecini ai complementului",
+        "Paletă pastel – nuanțe deschise, atenuate",
+        "Paletă întunecata – culori profunde pentru teme dark",
+        "Paletă tonală – scară de luminozitate a unei nuanțe",
+        "Paletă minimalistă – accent puternic cu neutre deschise",
+        "Culoare de bază în format HEX",
+        "Selector de culori pentru selecție vizuală",
+        "Culoare de pornire aleatorie",
+        "Copiere cod HEX în clipboard",
+        "Valoare HSL afișată lângă fiecare culoare",
+        "Procesare locală în browser"
+      ]
+    },
+    "howTo": {
+      "name": "Cum să generați o paletă de culori dintr-o culoare de bază",
+      "description": "Cum să generați 9 palete de culori dintr-o culoare de bază: monocromatică, complementară, triadică, pastel și altele. Fiecare culoare poate fi copiată cu codul HEX.",
+      "steps": [
+        {
+          "name": "Alegeți o culoare de bază",
+          "text": "Introduceți un cod HEX în câmpul de text sau folosiți selectorul de culori pentru a alege vizual o culoare."
+        },
+        {
+          "name": "Confirmați alegerea",
+          "text": "Confirmați culoarea selectată cu butonul Actualizează culoarea – instrumentul va genera palete bazate pe culoarea aleasă."
+        },
+        {
+          "name": "Răsfoiți paletele",
+          "text": "Instrumentul va genera automat 9 palete diferite: monocromatică, analogică, complementară, triadică, split-complementară, pastel, întunecata, tonală și minimalistă."
+        },
+        {
+          "name": "Copiați culorile",
+          "text": "Lângă fiecare culoare veți găsi un buton Copiere – codul HEX este copiat în clipboard-ul sistemului."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "De ce să generați o paletă de culori?",
+      "html": "<p class=\"text-mid\">O paletă de culori consecventă este baza oricărui proiect vizual – de la un site web, la un logo, la materiale tipărite. Selectarea manuală a culorilor care funcționează împreună necesită cunoștințe de teoria culorilor. Generatorul face acest lucru automat: furnizați o culoare de bază (ex. culoarea logo-ului), iar instrumentul creează 9 seturi de culori bazate pe scheme dovedite de armonie a culorilor.</p><p class=\"text-mid mt-3\">Fiecare culoare generată vine cu codul HEX (ex. #4F6BF5) și valoarea HSL (nuanță, saturație, luminozitate). Codul HEX poate fi lipit direct în CSS, Figma, Canva sau orice aplicație grafică.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să folosiți generatorul de palete",
+      "description": "Întregul proces durează doar câteva secunde:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduceți culoarea de bază",
+          "description": "Tastați un cod HEX (ex. #4F6BF5) în câmpul de text sau alegeți o culoare din selectorul de culori. Puteți folosi și butonul Culoare aleatorie."
+        },
+        {
+          "title": "2. Confirmați alegerea",
+          "description": "După clic pe butonul Actualizează culoarea, instrumentul va genera automat 9 palete bazate pe diferite scheme de armonie a culorilor."
+        },
+        {
+          "title": "3. Copiați culorile necesare",
+          "description": "Lângă fiecare culoare există un buton Copiere – codul HEX merge în clipboard și poate fi lipit direct în proiectul dvs."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce scheme de culori generează instrumentul?",
+      "description": "Generatorul creează 9 tipuri de palete – fiecare bazată pe un principiu diferit al teoriei culorilor:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiStackLine",
+          "title": "Paletă monocromatică",
+          "description": "Mai multe nuanțe ale unei singure culori – de la deschis la închis. Toate culorile au aceeași nuanță pe roata culorilor și diferă doar prin luminozitate. Funcționează bine în designuri elegante și minimaliste."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Paletă analogică",
+          "description": "Culori vecine pe roata culorilor (deplasate cu ~30° în ambele direcții de la bază). Creează tranziții armonioase. Excelentă pentru proiecte care construiesc o atmosferă caldă sau rece."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Paletă complementară",
+          "description": "Culoarea de bază și culoarea opusă pe roata culorilor (deplasare 180°). Creează contrast vizual puternic. Utilă unde un element trebuie să atragă atenția – butoane, titluri evidențiate, bannere promo."
+        },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Paletă triadică",
+          "description": "Trei culori spațiate la 120° pe roata culorilor – formând un triunghi echilateral. O combinație vibrantă, dinamică. Funcționează bine în proiecte creative: identitate de brand tineresc, materiale publicitare, postere."
+        },
+        {
+          "icon": "RiCursorLine",
+          "title": "Paletă split-complementară",
+          "description": "O versiune mai blajină a paletei complementare. În loc de o culoare opusă, folosește două culori deplasate cu ~30° de complement. Oferă contrast clar fără o tensiune vizuală la fel de puternică."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Paletă pastel",
+          "description": "Aceeași nuanță cu saturație redusă și luminozitate crescută – culori delicate, blânde. Populară în cosmetice, moda pentru copii și industria alimentară. Se potrivește bine cu un fundal deschis."
+        },
+        {
+          "icon": "RiMoonLine",
+          "title": "Paletă întunecata",
+          "description": "Culoarea de bază la saturație ridicată și luminozitate redusă – culori profunde, intense. Utilă pentru designul temelor dark pentru site-uri și aplicații, precum și materiale pentru branduri premium."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Paletă tonală",
+          "description": "Mai mulți pași de luminozitate ai unei singure nuanțe – de la foarte deschis la închis. Similară scărilor tonale din sistemele de design (ex. nuanțe de la 50 la 900). Utilă pentru construirea interfețelor unde aceeași culoare are nevoie de variante."
+        },
+        {
+          "icon": "RiContractLeftRightLine",
+          "title": "Paletă minimalistă",
+          "description": "Un accent de culoare îndrăzneț și mai multe neutre foarte deschise. Restul paletei rămâne atenuat. Funcționează bine în interfețe moderne cu mult spațiu alb – stilul tipic de landing page."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Pe ce se bazează generatorul de palete?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (nuanță)</span><span class=\"text-mid\">0°–360° pe roata culorilor</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturație)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (luminozitate)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">Toate paletele sunt create prin transformarea matematică a culorii de bază în spațiul de culoare HSL. HSL descrie o culoare cu trei valori: nuanța (H) este poziția pe roata culorilor (0°–360°), saturația (S) determină intensitatea culorii, iar luminozitatea (L) – cât de deschisă sau închisă este culoarea.</p><p class=\"text-mid mt-3\">Paletele complementară, triadică și split-complementară se bazează pe geometria roții culorilor – culorile sunt plasate la intervale unghiulare egale, creând echilibru vizual. Paletele monocromatică, pastel și întunecata schimbă doar luminozitatea și saturația păstrând aceeași nuanță.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Unde să folosiți paletele generate",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Identitate vizuală de brand",
+          "description": "Selectați culori complementare pentru un logo existent sau construiți o paletă de branding de la zero – pentru cărți de vizită, papetărie și materiale de marketing."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Site-uri web",
+          "description": "Stabiliți culoarea primară, culoarea de accent și nuanțele de fundal. Codurile HEX copiate se lipesc direct în fișierele CSS sau configurația temei."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Interfețe de aplicații",
+          "description": "Paleta tonală oferă variante de luminozitate ale unei culori – mai deschise pentru fundaluri, mai închise pentru text, intermediare pentru borduri și stări interactive."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Grafice pentru social media",
+          "description": "Culori consistente pentru posturi, stories și coperti de profil. Paletele analogice sau pastel funcționează bine când doriți un stil uniform și recognoscibil."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Prezentări și documente",
+          "description": "Seturi armonioase de culori pentru slide-uri, grafice și infografice. Paletele monocromatice sau minimaliste mențin ordinea vizuală."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Depanarea generatorului de palete",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Paletele nu se schimbă după introducerea culorii",
+          "description": "Simpla tastare a unui cod HEX nu generează automat paletele – trebuie să confirmați schimbarea cu butonul Actualizează culoarea. Doar după confirmare instrumentul recalculează toate cele 9 scheme."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Mesaj de format invalid",
+          "description": "Generatorul acceptă doar formatul HEX cu # la început, ex. #FF5500. Formatele fără # (ex. FF5500) sau în notație RGB (ex. rgb(255,85,0)) nu sunt acceptate."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Format HEX scurt și complet",
+          "description": "Ambele formate sunt acceptate: complet #RRGGBB (ex. #FF5500) și scurt #RGB (ex. #F50). Generatorul le recunoaște automat și le tratează identic."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente despre generatorul de palete",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "În ce format trebuie să fie culoarea de bază?",
+          "answer": "Generatorul acceptă culori în format HEX – atât scurt (ex. #F50) cât și complet (ex. #FF5500). Lângă câmpul de text veți găsi un selector de culori care vă permite să alegeți vizual o culoare. Paletele generate afișează codul HEX și valoarea HSL a fiecărei culori.",
+          "answerSchemaText": "Generatorul acceptă culori HEX (#RGB sau #RRGGBB). Fiecare culoare generată are cod HEX și valoare HSL."
+        },
+        {
+          "question": "Câte culori conține fiecare paletă?",
+          "answer": "Fiecare paletă conține 4 până la 6 culori. Numărul depinde de tipul schemei – paletele monocromatice și tonale generează mai multe nuanțe (o scară de luminozitate a unei singure nuanțe), în timp ce paletele complementare și triadice se concentrează pe mai puține culori contrastante.",
+          "answerSchemaText": "Fiecare paletă conține 4 până la 6 culori, în funcție de tipul schemei."
+        },
+        {
+          "question": "Ce este spațiul de culoare HSL și cum se citește?",
+          "answer": "HSL este o modalitate de a descrie culoarea folosind trei valori: H (nuanță, 0°–360° pe roata culorilor), S (saturație, 0%–100%) și L (luminozitate, 0%–100%). Generatorul afișează valorile HSL lângă fiecare culoare, facilitând înțelegerea modului în care culorile din paletă diferă.",
+          "answerSchemaText": "HSL descrie culoarea prin nuanță (H), saturație (S) și luminozitate (L). Generatorul afișează aceste valori lângă fiecare culoare."
+        },
+        {
+          "question": "Pot folosi paletele generate comercial?",
+          "answer": "Da. Puteți folosi paletele de culori generate în orice proiect – comercial și necomercial, fără restricții de licențiere.",
+          "answerSchemaText": "Da, paletele generate pot fi folosite fără restricții în proiecte comerciale și necomerciale."
+        },
+        {
+          "question": "Generatorul necesită autentificare sau plată?",
+          "answer": "Generatorul este complet gratuit și nu necesită autentificare sau înregistrare. Culorile sunt generate local în browser – nicio dată nu este trimisă la servere externe.",
+          "answerSchemaText": "Generatorul este gratuit, nu necesită autentificare. Culorile sunt generate local în browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descoperiți alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

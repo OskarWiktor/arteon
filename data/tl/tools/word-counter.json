@@ -1,0 +1,258 @@
+{
+  "toolKey": "wordCounter",
+  "locale": "tl",
+  "metadata": {
+    "title": "Libreng Tagabilang ng Salita at Character \u2013 Suriin ang Haba ng Teksto para sa SEO",
+    "description": "Bilangin ang mga salita, character, talata at oras ng pagbasa nang agaran. Suriin ang optimal na haba ng teksto para sa SEO \u2013 blog post, product page, landing page. Walang registration, walang limitasyon.",
+    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "path": "/tl/mga-kasangkapan/tagabilang-ng-salita-at-character"
+  },
+  "hero": {
+    "title": "Tagabilang ng salita at character na may pagsusuri ng haba",
+    "description": "I-paste ang teksto, pumili ng uri ng pahina, at ipapakita ng tool ang bilang ng salita, character, talata, at susuriin kung angkop ang haba para sa uri ng nilalaman na iyon.",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/tl/mga-kasangkapan", "label": "Mga kasangkapan" },
+    "third": { "href": "/tl/mga-kasangkapan/tagabilang-ng-salita-at-character", "label": "Tagabilang ng salita at character" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Libreng tagabilang ng salita at character",
+      "alternateName": [
+        "Tagabilang ng salita na may pagsusuri ng haba ng teksto",
+        "Character counter",
+        "Word counting tool para sa copywriter",
+        "Kalkulator ng oras ng pagbasa",
+        "Tagabilang ng salita",
+        "Suriin kung ilan ang salita sa teksto",
+        "Tagabilang ng salita para sa SEO",
+        "Optimal na haba ng teksto para sa blog post"
+      ],
+      "applicationSubCategory": "TextApplication",
+      "description": "Libreng tagabilang ng salita at character. Sinusuri ang bilang ng salita, character, talata, at tinatayang oras ng pagbasa. Sinusuri ang haba ng teksto para sa iba't ibang uri ng pahina: product description, service page, homepage, landing page, blog post, gabay.",
+      "featureList": [
+        "Bilang ng salita",
+        "Bilang ng character na may at walang espasyo",
+        "Bilang ng talata",
+        "Tinatayang oras ng pagbasa",
+        "Pagsusuri ng haba ng teksto para sa iba't ibang uri ng pahina",
+        "Mga inirerekomendang saklaw para sa: product description, service page, homepage, landing page, blog post, gabay",
+        "Kopyahin ang report sa clipboard"
+      ]
+    },
+    "howTo": {
+      "name": "Paano gamitin ang tagabilang ng salita at character",
+      "description": "Suriin ang haba ng teksto at i-evaluate kung angkop ito para sa partikular na uri ng pahina. Alamin kung ilan ang salita na dapat sa product description, service page, blog post, o gabay.",
+      "steps": [
+        { "name": "Pumili ng uri ng pahina", "text": "Pumili mula sa dropdown kung anong uri ng pahina ang sinusulatan. Bawat uri ay may iba't ibang inirerekomendang saklaw ng bilang ng salita." },
+        {
+          "name": "I-paste ang teksto",
+          "text": "I-paste o i-type ang teksto sa text field. Awtomatikong bibilangin ng tool ang mga salita, character (may at walang espasyo), talata, at tatantiyahin ang oras ng pagbasa."
+        },
+        {
+          "name": "Suriin ang pagsusuri",
+          "text": "Tingnan ang may kulay na progress bar at status. Ang berde ay nangangahulugang magandang haba, dilaw ay masyadong maikli, pula ay masyadong mahaba."
+        },
+        { "name": "Kopyahin ang report", "text": "Kinokopya ng button na Kopyahin ang Report ang summary na may lahat ng istatistika at pagsusuri ng haba sa clipboard." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Libreng tagabilang ng salita \u2013 bilangin at suriin ang haba ng teksto",
+      "html": "<p class=\"text-mid\">Ang tool na ito para sa pagbibilang ng salita ay nagbibigay-daan sa mabilis na pagsuri ng haba ng anumang teksto. I-paste ang nilalaman at bibilangin ng counter ang mga salita, character, at talata. Makikita rin kung ilang minuto ang kailangan para basahin at kung ang haba ay angkop para sa uri ng pahina na pipiliin.</p><p class=\"text-mid mt-3\">Bawat uri ng pahina ay may iba't ibang layunin \u2013 ang product description ay sumasagot sa mga tanong ng mamimili, ang blog post ay sumasaklaw sa isang paksa nang malalim, at ang service page ay nagpapaliwanag kung ano ang matatanggap ng kliyente. Ipinapakita ng counter ang mga saklaw para sa bawat isa sa mga uri na ito batay sa mga pagsusuri ng nilalamang maganda ang ranggo.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Paano gamitin ang tagabilang ng salita at character",
+      "description": "Ang pagsuri ng haba ng teksto ay tumatagal ng wala pang isang minuto:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiListCheck2",
+          "title": "1. Pumili ng uri ng pahina",
+          "description": "Pumili mula sa dropdown kung anong uri ng pahina ang sinusulatan. Bawat uri ay may iba't ibang inirerekomendang minimum at maximum na bilang ng salita."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. I-paste ang teksto",
+          "description": "I-paste o i-type ang teksto sa malaking field sa kanan. Agad na bibilangin ng tool ang mga salita, character (may at walang espasyo), talata, at tatantiyahin ang oras ng pagbasa."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "3. Suriin ang pagsusuri",
+          "description": "Tingnan ang may kulay na progress bar at status. Ang berde ay nangangahulugang magandang haba, dilaw ay masyadong maikli, pula ay masyadong mahaba. Sa ibaba makikita ang kapaki-pakinabang na tip."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Kopyahin ang report",
+          "description": "Kinokopya ng button na Kopyahin ang Report ang summary na may bilang ng salita, character, talata, oras ng pagbasa, at pagsusuri ng haba sa clipboard."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Ano ang sinusukat ng counter \u2013 mga salita, character, oras ng pagbasa",
+      "description": "Sinusubaybayan ng counter ang limang pangunahing sukatan:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiText", "title": "Mga salita", "description": "Kabuuang bilang ng salita. Ito ang pangunahing tagapagpahiwatig ng haba ng teksto." },
+        {
+          "icon": "RiSpaceShipLine",
+          "title": "Mga character (may espasyo)",
+          "description": "Lahat ng character kasama ang mga espasyo. Kapaki-pakinabang kapag may character limit ang CMS (hal. mga listahan sa marketplace)."
+        },
+        {
+          "icon": "RiHashtag",
+          "title": "Mga character (walang espasyo)",
+          "description": "Mga titik, digit, at bantas lang. Minsan kinakailangan ng mga palimbagan o para sa pagsingil ng pagsasalin."
+        },
+        {
+          "icon": "RiParagraph",
+          "title": "Mga talata",
+          "description": "Ilan ang mga bloke ng teksto na pinaghihiwalay ng mga blankong linya. Tumutulong suriin kung maayos ang istruktura ng teksto."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Oras ng pagbasa",
+          "description": "Ipinapakita ng kalkulator ng oras ng pagbasa kung ilang minuto ang kailangan para basahin ang teksto sa average na bilis na 200 salita bawat minuto."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Paano bigyang-kahulugan ang mga resulta",
+      "subtitle": "Mga status ng pagsusuri",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">Magandang haba</span><span class=\"text-mid text-sm!\">Ang teksto ay nasa loob ng saklaw</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Mas mababa sa saklaw</span><span class=\"text-mid text-sm!\">Ang teksto ay mas maikli kaysa sa karaniwan</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Mas mataas sa saklaw</span><span class=\"text-mid text-sm!\">Ang teksto ay mas mahaba kaysa sa karaniwan</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Progreso</span><span class=\"text-mid\">1200 / 1200\u20133000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Ang may kulay na progress bar at status ay tumutulong mabilis na suriin ang haba ng teksto:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Magandang haba</strong> (berde) \u2013 ang teksto ay nasa loob ng tinatayang saklaw para sa napiling uri ng pahina.</li><li><strong class=\"text-warning-text\">Mas mababa sa saklaw</strong> (dilaw) \u2013 ang teksto ay mas maikli kaysa sa karaniwan para sa uri ng pahinang ito. Kung sinasagot nito ang lahat ng tanong ng mambabasa, maaaring maayos ang haba.</li><li><strong class=\"text-error-text\">Mas mataas sa saklaw</strong> (pula) \u2013 ang teksto ay mas mahaba kaysa sa karaniwan. Kung bawat talata ay nagdadagdag ng bagong impormasyon, makatwiran ang haba.</li></ul><p class=\"text-mid mt-4\">Ang mga saklaw ay batay sa mga pagsusuri ng nilalamang maganda ang ranggo sa mga search engine. Kung sinasagot ng teksto ang mga tanong ng mambabasa, angkop ang haba anuman ang resulta ng counter.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Ilan ang salita na dapat sa teksto \u2013 optimal na haba para sa SEO",
+      "html": "<p class=\"text-mid mb-4\">Ang mga saklaw sa ibaba ay batay sa mga pagsusuri ng nilalamang maganda ang ranggo sa mga search engine. Ang haba ng teksto mismo ay hindi nakakaapekto sa Google ranking \u2013 ang mahalaga ay kung sinasagot ng nilalaman ang mga tanong ng mambabasa.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Uri ng pahina</th><th class=\"py-2 pr-4 font-semibold\">Saklaw</th><th class=\"py-2 font-semibold\">Kailan mas maikli, kailan mas mahaba?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Product description</td><td class=\"py-2 pr-4 whitespace-nowrap\">80\u2013400 salita</td><td class=\"text-primary-light0 py-2 text-sm\">Simpleng produkto (hal. tasa) \u2013 80\u2013150 salita. Komplikadong kagamitan (hal. laptop) \u2013 300\u2013400 salita, dahil mas maraming tanong ang mamimili.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Service page</td><td class=\"py-2 pr-4 whitespace-nowrap\">500\u20131500 salita</td><td class=\"text-primary-light0 py-2 text-sm\">Lokal na serbisyo (hal. tubero) \u2013 500\u2013700 salita. B2B serbisyo na may proseso at FAQ \u2013 1,200\u20131,500 salita.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Homepage</td><td class=\"py-2 pr-4 whitespace-nowrap\">400\u20131000 salita</td><td class=\"text-primary-light0 py-2 text-sm\">Ang homepage ay naghahatid ng pangunahing halaga at gumagabay sa mga bisita \u2013 ang teksto ay sumusuporta sa navigation, hindi para palitan ang mga subpage.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landing page</td><td class=\"py-2 pr-4 whitespace-nowrap\">600\u20132500 salita</td><td class=\"text-primary-light0 py-2 text-sm\">Simpleng alok \u2013 600\u20131,000 salita. Alok na nangangailangan ng paliwanag ng proseso, variant, at paghawak ng pagtutol \u2013 1,500\u20132,500 salita.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blog post</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200\u20133000 salita</td><td class=\"text-primary-light0 py-2 text-sm\">Maikling how-to \u2013 1,200\u20131,500 salita. Komprehensibong gabay o pagsusuri \u2013 2,500\u20133,000 salita.</td></tr><tr><td class=\"py-2 pr-4\">Gabay / pillar page</td><td class=\"py-2 pr-4 whitespace-nowrap\">3000\u20137000 salita</td><td class=\"text-primary-light0 py-2 text-sm\">Isang komprehensibong mapagkukunan na sumasaklaw sa paksa mula sa maraming anggulo. Nag-link sa mga detalyadong subpage.</td></tr></tbody></table></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Para kanino ang tagabilang ng salita?",
+      "description": "Tool sa pagbibilang ng salita para sa mga copywriter at higit pa \u2013 narito kung sino ang pinakamadalas gumagamit ng counter:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiEditLine",
+          "title": "Mga copywriter at content creator",
+          "description": "Suriin kung ang teksto ay nasa loob ng inirerekomendang saklaw para sa partikular na uri ng pahina. Ang SEO word counter ay tumutulong suriin kung sapat na ba ang pagkakabuo ng artikulo."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Mga blogger",
+          "description": "Subaybayan ang haba ng post para panatilihing consistent ang mga publikasyon. Suriin ang oras ng pagbasa bago mag-publish."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Mga may-ari ng tindahan",
+          "description": "I-verify ang mga product description laban sa character limit sa mga selling platform (Amazon, eBay, Etsy)."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "Mga SEO specialist",
+          "description": "I-evaluate kung ang nilalaman ng pahina ay may optimal na haba kumpara sa mga kakumpitensya. Suriin ang ratio ng salita sa paksa."
+        },
+        { "icon": "RiGraduationCapLine", "title": "Mga estudyante at akademiko", "description": "Suriin kung natutugunan ng papel ang kinakailangang limitasyon sa salita o character." },
+        {
+          "icon": "RiTranslate2",
+          "title": "Mga tagapagsalin",
+          "description": "Bilangin ang mga character na walang espasyo para sa mga quotation ng pagsasalin (isang karaniwang yunit ng pagsingil)."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Mga character limit sa mga sikat na platform",
+      "html": "<p class=\"text-mid mb-4\">Ang character counter ay kapaki-pakinabang kapag gumagawa ng nilalaman para sa mga platform na may mga limitasyon sa haba:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform / Elemento</th><th class=\"py-2 pr-4 font-semibold\">Character limit</th><th class=\"py-2 font-semibold\">Mga tala</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google \u2013 meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50\u201360 character</td><td class=\"text-primary-light0 py-2 text-sm\">Ang mas mahabang titulo ay pinaputol sa search results.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google \u2013 meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150\u2013160 character</td><td class=\"text-primary-light0 py-2 text-sm\">Ang description na nakikita sa ibaba ng link sa search results.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon \u2013 product title</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 character</td><td class=\"text-primary-light0 py-2 text-sm\">Maikli, partikular na titulo na may pinakamahalagang keyword.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon \u2013 bullet point</td><td class=\"py-2 pr-4 whitespace-nowrap\">500 character bawat isa</td><td class=\"text-primary-light0 py-2 text-sm\">Hanggang 5 bullet point na naglalarawan ng mga pangunahing katangian ng produkto.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) \u2013 post</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 character</td><td class=\"text-primary-light0 py-2 text-sm\">Karaniwang limitasyon para sa mga regular na gumagamit.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn \u2013 post</td><td class=\"py-2 pr-4 whitespace-nowrap\">3,000 character</td><td class=\"text-primary-light0 py-2 text-sm\">Pagkatapos ng ~210 character lumilitaw ang link na &quot;tingnan pa&quot;.</td></tr></tbody></table></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Ano ang espesyal sa tagabilang ng salita at character na ito?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Anim na uri ng pahina na may inirerekomendang saklaw",
+          "description": "Product description, service page, homepage, landing page, blog post, at gabay \u2013 bawat uri ay may sariling saklaw batay sa mga pagsusuri."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Lokal na pagproseso sa browser",
+          "description": "Hindi kailanman ipinapadala ang teksto sa anumang server \u2013 lahat ng pagsusuri ay nangyayari nang lokal sa device."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Pagsusuri ng haba ng teksto",
+          "description": "Hindi lang bibilangin ang mga salita \u2013 makakakuha ng impormasyon kung angkop ang haba para sa napiling uri ng pahina."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "Mga saklaw na batay sa SEO",
+          "description": "Ang mga inirerekomendang haba ay batay sa mga pagsusuri ng nilalamang maganda ang ranggo sa mga search engine."
+        },
+        { "icon": "RiTimerLine", "title": "Oras ng pagbasa", "description": "Agad na malalaman kung ilang minuto ang kailangan ng mga mambabasa para basahin ang teksto." },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Kopyahin ang report",
+          "description": "Kinokopya ng button na Kopyahin ang Report ang summary na may lahat ng istatistika at pagsusuri ng haba sa clipboard."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Mga madalas itanong tungkol sa tagabilang ng salita at character",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Nakakaapekto ba ang haba ng teksto sa Google ranking?",
+          "answer": "Ang haba ng teksto mismo ay hindi ranking factor. Sinusuri ng Google kung sinasagot ng nilalaman ang tanong ng gumagamit at kung mahalaga ito sa kanila. Ang mas maikling teksto na komprehensibong sumasagot sa tanong ay maaaring magranggo nang maayos \u2013 ang mahalaga ay ang halaga para sa mambabasa. Ang mga saklaw sa tool na ito ay batay sa mga pagsusuri ng nilalamang maganda ang ranggo sa search results.",
+          "answerSchemaText": "Ang haba ng teksto ay hindi direktang ranking factor. Sinusuri ng Google ang halaga ng nilalaman para sa gumagamit."
+        },
+        {
+          "question": "Bakit napakalawak ng mga saklaw ng salita?",
+          "answer": "Ang parehong uri ng pahina ay maaaring mangailangan ng iba't ibang haba depende sa pagiging kumplikado ng paksa. Ang simpleng product description (hal. tasa) ay 80\u2013150 salita \u2013 materyal, kapasidad, at gamit lang. Ang description ng laptop ay 300\u2013400 salita dahil nagtatanong ang mga mamimili tungkol sa processor, memorya, screen, at baterya.",
+          "answerSchemaText": "Ang pagkakaiba ay nagmumula sa pagiging kumplikado ng paksa \u2013 ang simpleng produkto ay nangangailangan ng mas kaunting salita kaysa sa kumplikado."
+        },
+        {
+          "question": "Paano ko bibigyang-kahulugan ang \"masyadong maikli\" o \"masyadong mahaba\"?",
+          "answer": "Ipinapakita ng pagsusuri kung nasaan ang teksto kumpara sa karaniwang nilalaman ng uri na iyon. Kung ang teksto ay minarkahan na \"masyadong maikli\" ngunit sinasagot nito ang lahat ng tanong ng mambabasa \u2013 maayos ang haba. Kung \"masyadong mahaba\" ito ngunit bawat talata ay nagdadagdag ng bagong impormasyon \u2013 makatwiran ang haba.",
+          "answerSchemaText": "Ipinapakita ng pagsusuri kung nasaan ang teksto kumpara sa karaniwang nilalaman. Kung sinasagot ng teksto ang mga tanong ng mambabasa, angkop ang haba."
+        },
+        {
+          "question": "Paano gumagana ang kalkulator ng oras ng pagbasa?",
+          "answer": "Hinahati ng tool ang bilang ng salita sa 200 \u2013 ang average na bilis ng pagbasa para sa karaniwang teksto. Ang teknikal o mahirap na teksto (hal. dokumentasyon, terms of service) ay mas mabagal basahin. Ang magaan na lifestyle na artikulo \u2013 mas mabilis. Ang resulta ay tinatayang halaga na tumutulong tantiyahin kung gaano katagal ang gagamitin ng mambabasa sa teksto.",
+          "answerSchemaText": "Ang tool ay gumagamit ng average na bilis ng pagbasa na 200 salita bawat minuto. Ito ay tinatayang halaga para sa karaniwang teksto."
+        },
+        {
+          "question": "Saan nagmumula ang mga inirerekomendang saklaw?",
+          "answer": "Ang mga saklaw ay batay sa mga pagsusuri ng nilalamang maganda ang ranggo sa mga search engine at sa mga pinakamahusay na kasanayan sa paggawa ng nilalaman. Sinadya itong gawin na malawak dahil ang parehong uri ng pahina ay maaaring mangailangan ng iba't ibang haba depende sa industriya, pagiging kumplikado ng paksa, at mga pangangailangan ng mambabasa.",
+          "answerSchemaText": "Ang mga saklaw ay batay sa mga pagsusuri ng SEO at pinakamahusay na kasanayan sa paggawa ng nilalaman."
+        },
+        {
+          "question": "Maaari ko bang kopyahin ang report na may mga istatistika?",
+          "answer": "Oo. Sa ibaba ng mga istatistika makikita ang button na Kopyahin ang Report \u2013 kinokopya nito ang summary na may bilang ng salita, character, talata, oras ng pagbasa, at pagsusuri ng haba sa clipboard. Maaari itong i-paste sa dokumento o ipadala sa mga kasamahan.",
+          "answerSchemaText": "Oo. I-click ang button na Kopyahin ang Report sa ibaba ng mga istatistika. Ang summary na may lahat ng sukatan at pagsusuri ay makokopya sa clipboard."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Tingnan ang iba pang mga tool" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

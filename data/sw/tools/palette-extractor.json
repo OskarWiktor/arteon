@@ -1,0 +1,220 @@
+{
+  "toolKey": "paletteExtractor",
+  "locale": "sw",
+  "metadata": {
+    "title": "Kitoa Rangi Kutoka Picha Bure \u2013 Paleti Kutoka Picha Yoyote",
+    "description": "Pakia picha au nembo na utoe hadi rangi 12 kuu zenye misimbo ya HEX na RGB. Inafaa kwa UI, chapa na mitandao ya kijamii. Bila usajili, bila kikomo.",
+    "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
+    "path": "/sw/zana/kitoa-rangi-kutoka-picha"
+  },
+  "hero": {
+    "title": "Kitoa Rangi Kutoka Picha \u2013 Pata Paleti Kutoka Picha Yoyote",
+    "description": "Pakia picha, nembo, au michoro, na zana itatoa hadi rangi 12 kuu zenye misimbo ya HEX na RGB. Uchambuzi unafanyika kwenye kivinjari chako.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/sw/zana", "label": "Zana" },
+    "third": { "href": "/sw/zana/kitoa-rangi-kutoka-picha", "label": "Kitoa rangi kutoka picha" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Kitoa rangi kutoka picha \u2013 kitengenezaji paleti bure",
+      "alternateName": ["Toa paleti ya rangi kutoka picha au nembo"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorExtractor",
+      "description": "Kitoa bure cha rangi kutoka picha. Pakia picha, nembo, au michoro na upate paleti ya hadi rangi 12 kuu zenye misimbo ya HEX na RGB. Usindikaji unafanyika kwenye kivinjari \u2013 faili hazitumwi kwenye seva.",
+      "featureList": [
+        "Kutoa kiotomatiki hadi rangi 12 kuu",
+        "Uchambuzi wa picha, nembo, na michoro ya vekta",
+        "Misimbo ya rangi kwa muundo wa HEX na RGB",
+        "Nakili msimbo wa rangi kwenye ubao wa kunakili",
+        "Msaada wa faili za PNG, JPG, na SVG",
+        "Kupuuza pikseli za uwazi katika faili za PNG",
+        "Usindikaji wa ndani kwenye kivinjari \u2013 picha haitumwi kwenye seva"
+      ]
+    },
+    "howTo": {
+      "name": "Jinsi ya kutoa rangi kutoka picha au mchoro",
+      "description": "Jinsi ya kutoa rangi kuu kutoka picha au nembo. Pakia mchoro kwa muundo wa PNG, JPG, au SVG, na zana itatengeneza paleti ya hadi rangi 12 zenye misimbo ya HEX.",
+      "steps": [
+        { "name": "Pakia mchoro", "text": "Buruta faili kwenye eneo lililowekwa au chagua mchoro kutoka kwenye kifaa chako. Miundo inayoungwa mkono ni PNG, JPG, na SVG." },
+        { "name": "Subiri uchambuzi", "text": "Zana itachambua kiotomatiki mchoro na kutoa rangi kuu." },
+        { "name": "Nakili rangi", "text": "Karibu na kila rangi utapata kitufe cha kunakili \u2013 msimbo wa HEX unakiliwa kwenye ubao wa kunakili wa mfumo wako." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Kwa nini kutoa rangi kutoka picha?",
+      "html": "<p class=\"mb-4\">Kila picha, nembo, au michoro ina rangi ambazo zinaweza kutumika kama paleti ya rangi iliyokuwa tayari. Kitoa huchambua mchoro na kuonyesha rangi zipi zinazotawala \u2013 pamoja na misimbo ya HEX na thamani za RGB tayari kubandika katika mradi wako.</p><p class=\"mb-4\">Kwa vitendo, hii inamaanisha kwamba badala ya kuchunguza rangi kwa mikono katika programu ya michoro (pikseli kwa pikseli), unapakia mchoro mmoja na kupata orodha iliyopangwa ya hadi rangi 12. Hii ni muhimu wakati wa kuchagua rangi kwa tovuti, kutengeneza michoro thabiti ya mitandao ya kijamii, au kujenga utambulisho wa kuona kutoka nyenzo zilizopo.</p><p>Uchambuzi wote unafanyika kwenye kivinjari \u2013 picha haitumwi kwenye seva yoyote.</p>"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionSteps",
+      "title": "Jinsi ya kutumia kitoa rangi kutoka picha",
+      "description": "Mchakato mzima unachukua sekunde chache tu:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Pakia mchoro", "description": "Buruta faili kwenye eneo lililowekwa au ichague kutoka kwenye kifaa chako. Miundo inayoungwa mkono ni PNG, JPG, na SVG." },
+        { "title": "2. Subiri uchambuzi", "description": "Zana itachambua kiotomatiki mchoro na kutoa hadi rangi 12 kuu." },
+        {
+          "title": "3. Nakili rangi unazohitaji",
+          "description": "Karibu na kila rangi kuna kitufe cha kunakili \u2013 msimbo wa HEX au RGB unakwenda kwenye ubao wa kunakili na unaweza kubandikwa moja kwa moja katika mradi wako."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Paleti ya rangi iliyotolewa inaonekanaje?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Mfano wa rangi zilizotolewa kutoka picha ya mazingira</p></div>",
+      "html": "<p class=\"text-mid mb-4\">Baada ya kupakia mchoro, kitoa kinaonyesha orodha ya rangi kuu zilizopangwa kutoka zinazotawala zaidi hadi zisizotawala. Kila rangi inaonyesha msimbo wake wa HEX na thamani ya RGB \u2013 tayari kubandika kwenye CSS, Figma, au programu yoyote ya michoro.</p><p class=\"text-mid\">Idadi ya rangi zilizotolewa inategemea maudhui ya mchoro. Picha ya mazingira itatoa paleti tajiri zaidi (rangi 8\u201312), wakati nembo rahisi yenye rangi mbili itatoa vitu vichache.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Picha gani zinatoa matokeo bora?",
+      "description": "Ubora wa paleti iliyotolewa unategemea aina ya mchoro uliopakiwa:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiImageLine",
+          "title": "Nembo na michoro yenye paleti ndogo",
+          "description": "Michoro yenye rangi chache zilizotengwa wazi inatoa matokeo sahihi zaidi \u2013 kitoa kinatambua kwa usahihi kila rangi."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Picha zenye mada wazi",
+          "description": "Picha za bidhaa, ndani, au mazingira pia zinatoa paleti muhimu, lakini zina vivuli zaidi \u2013 ikiwemo rangi za kivuli na mwangaza."
+        },
+        {
+          "icon": "RiEraserLine",
+          "title": "Faili za PNG zenye mandharinyuma ya uwazi",
+          "description": "Pikseli za uwazi zinapuuzwa kiotomatiki wakati wa uchambuzi. Ukitaka kutoa rangi kutoka kitu pekee (mfano nembo), tumia faili ya PNG bila mandharinyuma."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Michoro bila mandharinyuma kubwa ya rangi moja",
+          "description": "Mandharinyuma inapochukua eneo kubwa zaidi ya mchoro, rangi yake inatawala matokeo. Kabla ya kupakia, zingatia kukata mchoro hadi eneo la kupendeza."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTimeline",
+      "title": "Kutoa rangi kutoka picha kunafanya kazi vipi?",
+      "description": "Baada ya kupakia faili, zana inafanya hatua kadhaa nyuma \u2013 uchambuzi wote unafanyika kwenye kivinjari:",
+      "items": [
+        {
+          "icon": "RiZoomInLine",
+          "title": "Kubadilisha ukubwa wa mchoro",
+          "description": "Mchoro unabadilishwa ukubwa hadi takriban pikseli 240 upana. Hii inaharakisha uchambuzi hata kwa picha kubwa sana, bila kuathiri usahihi wa kutambua rangi."
+        },
+        {
+          "icon": "RiGroupLine",
+          "title": "Kupanga rangi zinazofanana",
+          "description": "Kila pikseli inachambuliwa, na vivuli vinavyofanana vinapangwa pamoja. Bluu mbili karibu sawa zinakuwa rangi moja katika paleti."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Kuchagua rangi kuu",
+          "description": "Algorithm inachagua rangi zinazofunika eneo kubwa zaidi la mchoro. Matokeo ni orodha ya hadi rangi 12 zilizopangwa kutoka zinazotawala zaidi."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Kupuuza pikseli za uwazi",
+          "description": "Katika faili za PNG zenye mandharinyuma ya uwazi, maeneo hayo hayajumuishwi katika uchambuzi \u2013 kitoa kinachunguza rangi zinazoonekana tu. Mchakato mzima kwa kawaida huchukua chini ya sekunde moja."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Ni nini kinachofanya kitoa hiki cha rangi kutoka picha kuwa maalum?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Uchambuzi wa ndani \u2013 picha haiondoki kwenye kompyuta yako",
+          "description": "Kutoa rangi kote kunafanyika kwenye kivinjari. Picha haitumwi kwenye seva yoyote, na baada ya kufunga ukurasa, data inafutwa kutoka kumbukumbu."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Hadi rangi 12 kuu kutoka mchoro mmoja",
+          "description": "Zana inatoa hadi rangi 12 zilizopangwa kutoka zinazotawala zaidi \u2013 inatosha kujenga paleti kamili ya mradi."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Miundo mitatu maarufu ya picha",
+          "description": "Miundo inayoungwa mkono ni PNG, JPG, na SVG. Faili za PNG zenye mandharinyuma ya uwazi zinatoa matokeo bora zaidi."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Misimbo ya HEX na RGB tayari kubandika",
+          "description": "Kila rangi iliyotolewa ina msimbo wake wa HEX (mfano #2C5F2D) na thamani ya RGB. Msimbo unaweza kunakiliwa kwenye ubao wa kunakili na kubandikwa moja kwa moja kwenye CSS, Figma, au Photoshop."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Wapi kutumia rangi zilizotolewa kutoka picha",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Kujenga utambulisho wa kuona",
+          "description": "Pakia picha inayonasa hali ya chapa \u2013 mazingira, ndani ya mkahawa, picha ya bidhaa \u2013 na utoe rangi kama msingi wa paleti ya chapa."
+        },
+        {
+          "icon": "RiLayoutMasonryLine",
+          "title": "Michoro ya mitandao ya kijamii",
+          "description": "Toa rangi kutoka picha ya bidhaa na uzitumie kama mandharinyuma au msisitizo katika michoro. Machapisho yaliyotegemea rangi kutoka chanzo kimoja yanaonekana thabiti."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Kulinganisha rangi na tovuti",
+          "description": "Toa rangi kutoka nembo na uzitumie kama paleti ya rangi ya tovuti \u2013 rangi kuu, msisitizo, vivuli vya mandharinyuma. Misimbo ya HEX inabandikwa moja kwa moja kwenye CSS."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Kupanua paleti iliyopo",
+          "description": "Rangi ya msingi iliyotolewa inaweza kutumika katika <a href=\"/sw/zana/kitengenezaji-paleti-za-rangi\">kitengenezaji paleti za rangi</a> kutengeneza seti kamili ya rangi zinazosaidiana kulingana na nadharia ya rangi."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Maswali yanayoulizwa mara kwa mara kuhusu kitoa rangi kutoka picha",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Je, kitoa rangi kutoka picha kinahitaji usajili?",
+          "answer": "Hapana. Zana ni bure kabisa na haihitaji kuingia au usajili. Picha inachambuliwa kwenye kivinjari \u2013 haitumwi kwenye seva yoyote. Baada ya kufunga ukurasa, data yote inafutwa.",
+          "answerSchemaText": "Hapana. Zana ni bure na haihitaji usajili. Picha inachambuliwa kwenye kivinjari."
+        },
+        {
+          "question": "Kitoa rangi kinatofautianaje na kitengenezaji paleti?",
+          "answer": "Kitoa kinachukua rangi kutoka mchoro uliyopo \u2013 kinachambua picha na kuonyesha rangi zipi zinazotawala. Kitengenezaji paleti ya rangi kinafanya kazi kinyume: unatoa rangi moja ya msingi, na zana inatengeneza seti zinazosaidiana kulingana na nadharia ya rangi. Zana zote mbili zinasaidiana.",
+          "answerSchemaText": "Kitoa kinachukua rangi kutoka mchoro. Kitengenezaji kinatengeneza paleti kutoka rangi ya msingi. Zana zote mbili zinasaidiana."
+        },
+        {
+          "question": "Rangi ngapi kitoa kinachukua kutoka mchoro mmoja?",
+          "answer": "Zana inatoa hadi rangi 12 kuu. Idadi halisi inategemea maudhui ya mchoro \u2013 ikiwa michoro ina rangi mbili tu (mfano nembo rahisi), matokeo yatakuwa na vitu vichache. Rangi zimepangwa kutoka zinazotawala zaidi hadi zisizotawala.",
+          "answerSchemaText": "Hadi rangi 12 kuu, zilizopangwa kutoka zinazotawala zaidi hadi zisizotawala."
+        },
+        {
+          "question": "Miundo gani ya picha kitoa rangi kinaiunga mkono?",
+          "answer": "Miundo inayoungwa mkono ni PNG, JPG (JPEG), na SVG. Faili za PNG zenye mandharinyuma ya uwazi zinatoa matokeo bora kwa sababu pikseli za uwazi zinapuuzwa wakati wa uchambuzi.",
+          "answerSchemaText": "PNG, JPG, na SVG. PNG yenye mandharinyuma ya uwazi inatoa matokeo bora."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Gundua zana nyingine" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

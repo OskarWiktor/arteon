@@ -9,7 +9,7 @@ export default function FaqPageSkeleton() {
     <>
       <HeroBannerSkeleton />
       <BreadcrumbsSkeleton />
-      <div className="m-auto w-[94%] max-w-[1420px]">
+      <div className="m-auto w-[94%] max-w-[1420px] 2xl:max-w-none">
         <GapSkeleton variant="space" />
         <FaqSkeleton count={8} />
         <GapSkeleton variant="space" />

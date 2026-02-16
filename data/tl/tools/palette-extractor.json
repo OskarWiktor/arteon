@@ -1,0 +1,258 @@
+{
+  "toolKey": "paletteExtractor",
+  "locale": "tl",
+  "metadata": {
+    "title": "Libreng Image Color Extractor \u2013 Palette Mula sa Anumang Litrato",
+    "description": "Mag-upload ng litrato o logo at kunin ang hanggang 12 nangingibabaw na kulay na may HEX at RGB code. Perpekto para sa UI, branding at social media. Walang registration, walang limitasyon.",
+    "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
+    "path": "/tl/mga-kasangkapan/tagakuha-ng-kulay-mula-sa-larawan"
+  },
+  "hero": {
+    "title": "Tagakuha ng Kulay mula sa Larawan \u2013 Kumuha ng Palette Mula sa Anumang Litrato",
+    "description": "Mag-upload ng litrato, logo, o graphic, at kukuhanin ng tool ang hanggang 12 nangingibabaw na kulay na may HEX at RGB code. Ang pagsusuri ay nangyayari nang lokal sa browser.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/tl/mga-kasangkapan", "label": "Mga kasangkapan" },
+    "third": { "href": "/tl/mga-kasangkapan/tagakuha-ng-kulay-mula-sa-larawan", "label": "Tagakuha ng kulay mula sa larawan" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Tagakuha ng kulay mula sa larawan \u2013 libreng palette generator",
+      "alternateName": ["Kumuha ng color palette mula sa litrato o logo"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorExtractor",
+      "description": "Libreng tagakuha ng kulay mula sa larawan. Mag-upload ng litrato, logo, o graphic at kumuha ng palette na may hanggang 12 nangingibabaw na kulay na may HEX at RGB code. Ang pagproseso ay nangyayari sa browser \u2013 hindi ipinapadala ang mga file sa server.",
+      "featureList": [
+        "Awtomatikong pagkuha ng hanggang 12 nangingibabaw na kulay",
+        "Pagsusuri ng mga litrato, logo, at vector graphic",
+        "Mga color code sa HEX at RGB format",
+        "Kopyahin ang color code sa clipboard",
+        "Suporta sa PNG, JPG, at SVG file",
+        "Nile-skip ang mga transparent na pixel sa PNG file",
+        "Lokal na pagproseso sa browser \u2013 hindi ipinapadala ang larawan sa server"
+      ]
+    },
+    "howTo": {
+      "name": "Paano kumuha ng mga kulay mula sa litrato o larawan",
+      "description": "Paano kumuha ng nangingibabaw na kulay mula sa litrato o logo. Mag-upload ng larawan sa PNG, JPG, o SVG format, at ige-generate ng tool ang palette na may hanggang 12 kulay na may HEX code.",
+      "steps": [
+        { "name": "Mag-upload ng larawan", "text": "I-drag ang file sa itinalagang lugar o pumili ng larawan mula sa device. Mga sinusuportahang format ay PNG, JPG, at SVG." },
+        { "name": "Maghintay ng pagsusuri", "text": "Awtomatikong susuriin ng tool ang larawan at kukunin ang mga nangingibabaw na kulay." },
+        { "name": "Kopyahin ang mga kulay", "text": "Sa tabi ng bawat kulay makikita ang copy button \u2013 ang HEX code ay makokopya sa system clipboard." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Bakit kumuha ng mga kulay mula sa larawan?",
+      "html": "<p class=\"mb-4\">Bawat litrato, logo, o graphic ay naglalaman ng mga kulay na maaaring magsilbing handa nang color palette. Sinusuri ng extractor ang larawan at ipinapakita kung aling mga kulay ang nangingibabaw \u2013 kasama ang HEX code at RGB value na handa nang i-paste sa proyekto.</p><p class=\"mb-4\">Sa praktika, ibig sabihin nito na sa halip na manu-manong mag-sample ng mga kulay sa graphics application (pixel by pixel), mag-upload lang ng isang larawan at makakuha ng organisadong listahan ng hanggang 12 kulay. Kapaki-pakinabang ito kapag pumipili ng mga kulay para sa website, gumagawa ng consistent na social media graphic, o nagtatayo ng visual identity mula sa existing na materyales.</p><p>Lahat ng pagsusuri ay nangyayari nang lokal sa browser \u2013 hindi ipinapadala ang larawan sa anumang server.</p>"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionSteps",
+      "title": "Paano gamitin ang tagakuha ng kulay mula sa larawan",
+      "description": "Ang buong proseso ay tumatagal lang ng ilang segundo:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Mag-upload ng larawan", "description": "I-drag ang file sa itinalagang lugar o piliin mula sa device. Mga sinusuportahang format ay PNG, JPG, at SVG." },
+        { "title": "2. Maghintay ng pagsusuri", "description": "Awtomatikong susuriin ng tool ang larawan at kukunin ang hanggang 12 nangingibabaw na kulay." },
+        {
+          "title": "3. Kopyahin ang mga kulay na kailangan",
+          "description": "Sa tabi ng bawat kulay ay may copy button \u2013 ang HEX o RGB code ay pupunta sa clipboard at maaaring direktang i-paste sa proyekto."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Ano ang hitsura ng nakuha na color palette?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Halimbawang mga kulay na nakuha mula sa larawan ng kalikasan</p></div>",
+      "html": "<p class=\"text-mid mb-4\">Pagkatapos mag-upload ng larawan, ipinapakita ng extractor ang listahan ng nangingibabaw na kulay na inayos mula sa pinaka- hanggang sa pinakamababang prominensya. Bawat kulay ay nagpapakita ng HEX code at RGB value \u2013 handa nang i-paste sa CSS, Figma, o anumang graphics application.</p><p class=\"text-mid\">Ang bilang ng nakuhang kulay ay depende sa nilalaman ng larawan. Ang landscape na litrato ay magpo-produce ng mas mayamang palette (8\u201312 kulay), habang ang simpleng dalawang kulay na logo ay magbibigay ng mas kaunting item.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Aling mga larawan ang nagbibigay ng pinakamainam na resulta?",
+      "description": "Ang kalidad ng nakuhang palette ay depende sa uri ng na-upload na larawan:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiImageLine",
+          "title": "Mga logo at graphic na may limitadong palette",
+          "description": "Ang mga larawan na may ilang malinaw na magkahiwalay na kulay ay nagbibigay ng pinaka-tumpak na resulta \u2013 tumpak na kinilala ng extractor ang bawat kulay."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Mga litrato na may malinaw na subject",
+          "description": "Ang mga litrato ng produkto, interior, o landscape ay nagpo-produce din ng kapaki-pakinabang na palette, ngunit naglalaman sila ng mas maraming shade \u2013 kasama ang mga kulay ng anino at reflection ng ilaw."
+        },
+        {
+          "icon": "RiEraserLine",
+          "title": "Mga PNG file na may transparent na background",
+          "description": "Ang mga transparent na pixel ay awtomatikong nile-skip sa pagsusuri. Kung gusto mong kumuha ng mga kulay lang mula sa object (hal. logo), gumamit ng PNG file na walang background."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Mga larawan na walang malaking solid-color na background",
+          "description": "Kapag ang background ay mas malaking lugar kaysa sa object mismo, nangingibabaw ang kulay nito sa mga resulta. Bago mag-upload, isaalang-alang ang pag-crop ng larawan sa lugar ng interes."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTimeline",
+      "title": "Paano gumagana ang pagkuha ng kulay mula sa larawan?",
+      "description": "Pagkatapos mag-upload ng file, nagsasagawa ang tool ng ilang hakbang sa background \u2013 lahat ng pagsusuri ay nangyayari nang lokal sa browser:",
+      "items": [
+        {
+          "icon": "RiZoomInLine",
+          "title": "Pag-scale ng larawan",
+          "description": "Nire-resize ang larawan sa mga 240 pixel ang lapad. Pinapabilis nito ang pagsusuri kahit para sa napakalaking litrato, nang hindi naaapektuhan ang katumpakan ng pagdetect ng kulay."
+        },
+        {
+          "icon": "RiGroupLine",
+          "title": "Pag-grupo ng magkatulad na kulay",
+          "description": "Bawat pixel ay sinusuri, at ang magkatulad na shade ay pinagsasama-sama. Ang dalawang halos magkaparehong asul ay nagiging isang kulay sa palette."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Pagpili ng nangingibabaw na kulay",
+          "description": "Pinipili ng algorithm ang mga kulay na sumasaklaw sa pinakamalaking lugar ng larawan. Ang resulta ay isang listahan ng hanggang 12 kulay na inayos mula sa pinaka- hanggang sa pinakamababang prominensya."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Paglaktaw sa mga transparent na pixel",
+          "description": "Sa mga PNG file na may transparent na background, ang mga lugar na iyon ay hindi kasama sa pagsusuri \u2013 sinusuri lang ng extractor ang mga nakikitang kulay. Ang buong proseso ay karaniwang tumatagal ng wala pang isang segundo."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Pag-troubleshoot ng color extractor",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBarChartLine",
+          "title": "Nagbalik ang extractor ng mas kaunti sa 12 kulay",
+          "description": "Ang bilang ng nakuhang kulay ay depende sa nilalaman ng larawan. Ang simpleng dalawang kulay na logo ay magbibigay ng 2\u20133 resulta \u2013 ito ay tamang gawi. Hindi nagdadagdag ang tool ng artipisyal na kulay; kinukuha lang nito ang mga aktwal na lumalabas sa larawan."
+        },
+        {
+          "icon": "RiAlertLine",
+          "title": "Hindi inaasahang kulay ang lumabas sa palette",
+          "description": "Maaaring mga kulay ng anino, gradient, o reflection ng ilaw ang mga ito \u2013 ang mga pixel sa mga lugar na iyon ay may ibang kulay kaysa sa object na nakikita sa unang tingin. Ang paggamit ng larawan na may mas uniform na kulay o pag-crop ng madilim na lugar ay magpapabuti ng mga resulta."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Nangingibabaw ang kulay ng background sa mga resulta",
+          "description": "Kapag mas malaking lugar ang saklaw ng background kaysa sa object mismo, unang lalabas ang kulay nito sa listahan. Solusyon: gumamit ng PNG file na may transparent na background o i-crop ang larawan para mas malaking bahagi ng frame ang saklaw ng object."
+        },
+        {
+          "icon": "RiFileWarningLine",
+          "title": "Hindi tinatanggap ang file ng extractor",
+          "description": "Sinusuportahan lang ng tool ang PNG, JPG, at SVG format. Ang mga file sa ibang format (GIF, TIFF, HEIC, PDF) ay nangangailangan ng pag-convert muna."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Ano ang espesyal sa tagakuha ng kulay mula sa larawan na ito?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Lokal na pagsusuri \u2013 hindi umaalis ang larawan sa computer",
+          "description": "Lahat ng pagkuha ng kulay ay nangyayari sa browser. Hindi ipinapadala ang larawan sa anumang server, at pagkatapos isara ang pahina, tinanggal ang data mula sa memorya."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Hanggang 12 nangingibabaw na kulay mula sa isang larawan",
+          "description": "Kumukuha ang tool ng hanggang 12 kulay na inayos mula sa pinakamataas na prominensya \u2013 sapat para magtayo ng kumpletong color palette ng proyekto."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Tatlong sikat na format ng larawan",
+          "description": "Mga sinusuportahang format ay PNG, JPG, at SVG. Ang mga PNG file na may transparent na background ang nagbibigay ng pinakamainam na resulta dahil awtomatikong nile-skip ang mga transparent na pixel."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Handa nang HEX at RGB code na i-paste",
+          "description": "Bawat nakuhang kulay ay may kasamang HEX code (hal. #2C5F2D) at RGB value. Ang code ay maaaring kopyahin sa clipboard at direktang i-paste sa CSS, Figma, o Photoshop."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Saan gamitin ang mga kulay na nakuha mula sa larawan",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Pagtatayo ng visual identity",
+          "description": "Mag-upload ng litrato na kumukuha sa mood ng brand \u2013 landscape, interior ng restaurant, litrato ng produkto \u2013 at kumuha ng mga kulay bilang panimula para sa branding palette."
+        },
+        {
+          "icon": "RiLayoutMasonryLine",
+          "title": "Mga social media graphic",
+          "description": "Kumuha ng mga kulay mula sa litrato ng produkto at gamitin bilang background o accent sa mga graphic. Ang mga post na batay sa mga kulay mula sa parehong source ay mukhang consistent sa profile."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Pagmatch ng mga kulay sa website",
+          "description": "Kumuha ng mga kulay mula sa logo at gamitin bilang color palette ng website \u2013 primary color, accent color, background shade. Ang mga HEX code ay direktang nape-paste sa CSS."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Pagpalawak ng existing na palette",
+          "description": "Ang nakuhang base color ay maaaring gamitin sa <a href=\"/tl/mga-kasangkapan/generator-ng-palette-ng-kulay\">generator ng palette ng kulay</a> para gumawa ng buong set ng magkakatugmang kulay batay sa color theory."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Mga madalas itanong tungkol sa tagakuha ng kulay mula sa larawan",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Nangangailangan ba ng registration ang tagakuha ng kulay mula sa larawan?",
+          "answer": "Hindi. Ang tool ay ganap na libre at hindi nangangailangan ng login o registration. Ang larawan ay sinusuri nang lokal sa browser \u2013 hindi ito ipinapadala sa anumang server. Pagkatapos isara ang pahina, lahat ng data ay tinanggal.",
+          "answerSchemaText": "Hindi. Ang tool ay libre at hindi nangangailangan ng registration. Ang larawan ay sinusuri nang lokal sa browser."
+        },
+        {
+          "question": "Paano naiiba ang color extractor sa palette generator?",
+          "answer": "Kinukuha ng extractor ang mga kulay mula sa existing na larawan \u2013 sinusuri nito ang litrato at ipinapakita kung aling mga kulay ang nangingibabaw. Ang color palette generator ay gumagana sa kabaligtaran: nagbibigay ka ng isang base color, at gumagawa ang tool ng magkakatugmang set batay sa color theory. Magkasama ang dalawang tool \u2013 maaaring kumuha ng kulay mula sa larawan at pagkatapos gamitin bilang base sa palette generator.",
+          "answerSchemaText": "Kinukuha ng extractor ang mga kulay mula sa larawan. Gumagawa ng palette ang generator mula sa base color. Magkasama ang dalawang tool."
+        },
+        {
+          "question": "Ilang kulay ang kinukuha ng extractor mula sa isang larawan?",
+          "answer": "Kumukuha ang tool ng hanggang 12 nangingibabaw na kulay. Ang eksaktong bilang ay depende sa nilalaman ng larawan \u2013 kung ang graphic ay may dalawang kulay lang (hal. simpleng logo), ang resulta ay maglalaman ng mas kaunting item. Ang mga kulay ay inayos mula sa pinaka- hanggang sa pinakamababang prominensya.",
+          "answerSchemaText": "Hanggang 12 nangingibabaw na kulay, inayos mula sa pinaka- hanggang sa pinakamababang prominensya."
+        },
+        {
+          "question": "Anong mga format ng larawan ang sinusuportahan ng color extractor?",
+          "answer": "Mga sinusuportahang format ay PNG, JPG (JPEG), at SVG. Ang mga PNG file na may transparent na background ang nagbibigay ng mas magandang resulta dahil nile-skip ang mga transparent na pixel sa pagsusuri \u2013 nakatuon ang tool sa mga kulay ng object mismo.",
+          "answerSchemaText": "PNG, JPG, at SVG. Ang PNG na may transparent na background ang nagbibigay ng pinakamainam na resulta."
+        },
+        {
+          "question": "Sa anong format ko makukuha ang mga nakuhang color code?",
+          "answer": "Bawat kulay ay ipinapakita kasama ang HEX code (hal. #2C5F2D) at RGB value (hal. rgb(44, 95, 45)). Ang code ay maaaring kopyahin sa clipboard at direktang i-paste sa CSS, Figma, Photoshop, o anumang ibang graphics application.",
+          "answerSchemaText": "HEX (hal. #2C5F2D) at RGB (hal. rgb(44, 95, 45)). Maaaring kopyahin sa clipboard."
+        },
+        {
+          "question": "Maaari ko bang kopyahin lahat ng kulay ng palette nang sabay?",
+          "answer": "Sa kasalukuyan, pinapayagan ng tool ang pagkopya ng mga kulay nang isa-isa \u2013 sa tabi ng bawat kulay ay may button na kumokopya ng HEX code sa clipboard. Ang nakopyang code ay maaaring agad na i-paste sa Figma, Photoshop, CSS, o anumang ibang application.",
+          "answerSchemaText": "Kinokopya ang mga kulay nang isa-isa gamit ang copy button sa tabi ng bawat kulay."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Tingnan ang iba pang mga tool" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

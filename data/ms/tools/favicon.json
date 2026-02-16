@@ -1,0 +1,131 @@
+{
+  "toolKey": "favicon",
+  "locale": "ms",
+  "metadata": {
+    "title": "Penjana Favicon Percuma \u2013 ICO dan PNG daripada Satu Imej",
+    "description": "Jana favicon.ico dan ikon PNG daripada satu imej. Mematuhi keperluan pelayar dan Lighthouse. Tanpa pendaftaran, berfungsi dalam pelayar.",
+    "ogImage": "/assets/tools/narzedzia-generator-favicon.webp",
+    "path": "/ms/alatan/penjana-favicon-percuma"
+  },
+  "hero": {
+    "title": "Jana favicon.ico dan ikon PNG daripada satu imej",
+    "description": "Muat naik imej dan alat akan menjana favicon.ico serta set lengkap ikon PNG yang diperlukan oleh pelayar, peranti mudah alih, dan Lighthouse.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-favicon.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/ms/alatan", "label": "Alatan" },
+    "third": { "href": "/ms/alatan/penjana-favicon-percuma", "label": "Penjana favicon" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Penjana favicon percuma",
+      "alternateName": ["Penjana favicon.ico", "Penjana ikon laman web", "Alat favicon", "Penjana favicon daripada imej"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "FaviconGenerator",
+      "description": "Penjana favicon percuma. Muat naik satu imej dan dapatkan favicon.ico serta set lengkap ikon PNG untuk pelayar, peranti mudah alih, dan PWA.",
+      "featureList": [
+        "Menjana favicon.ico (16\u00d716, 32\u00d732, 48\u00d748 px)",
+        "Ikon PNG untuk pelayar (16\u00d716 hingga 512\u00d7512 px)",
+        "Ikon Apple Touch (180\u00d7180 px)",
+        "Ikon Android/PWA (192\u00d7192, 512\u00d7512 px)",
+        "Ikon Microsoft (150\u00d7150, 310\u00d7310 px)",
+        "Potong dan ubah saiz imej sumber",
+        "Pratonton masa nyata",
+        "Muat turun semua ikon dalam ZIP",
+        "Pemprosesan tempatan dalam pelayar"
+      ]
+    },
+    "howTo": {
+      "name": "Cara menjana favicon daripada imej",
+      "description": "Cara menjana favicon.ico dan ikon PNG daripada satu imej untuk pelayar dan peranti mudah alih.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Muat naik imej", "text": "Seret fail ke kawasan yang ditetapkan atau pilih dari peranti anda. Format yang disokong ialah JPG, PNG, SVG, dan WebP." },
+        { "name": "Potong imej", "text": "Laraskan kawasan potongan untuk memilih bahagian imej yang sesuai untuk favicon." },
+        { "name": "Pratonton", "text": "Lihat bagaimana favicon kelihatan dalam tab pelayar dan dalam pelbagai saiz." },
+        { "name": "Muat turun ikon", "text": "Muat turun favicon.ico dan set lengkap ikon PNG dalam fail ZIP." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Apa itu favicon dan mengapa ia penting?",
+      "html": "<p class=\"text-mid\">Favicon ialah ikon kecil yang kelihatan dalam tab pelayar, dalam senarai penanda halaman, dan pada skrin utama telefon. Ia merupakan salah satu elemen pertama yang dilihat pengguna \u2013 sebelum halaman dimuat sepenuhnya.</p><p class=\"text-mid mt-3\">Favicon yang profesional membina pengiktirafan jenama dan memudahkan pengguna mencari halaman anda di antara banyak tab yang dibuka. Ketiadaan favicon boleh kelihatan tidak profesional dan mengurangkan kepercayaan pelawat.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Cara menggunakan penjana favicon",
+      "description": "Menjana favicon mengambil masa beberapa minit sahaja:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Muat naik imej", "description": "Seret fail ke kawasan yang ditetapkan atau pilih dari peranti anda. Imej segi empat sama paling sesuai." },
+        { "title": "2. Potong dan laraskan", "description": "Laraskan kawasan potongan untuk memilih bahagian imej yang sesuai. Lihat bagaimana ia kelihatan dalam pelbagai saiz." },
+        { "title": "3. Muat turun ikon", "description": "Muat turun favicon.ico dan set lengkap ikon PNG dalam fail ZIP. Semua ikon sedia untuk digunakan." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Ikon apa yang dijana oleh penjana?",
+      "description": "Penjana menghasilkan set lengkap ikon yang diperlukan oleh pelayar dan peranti moden:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "favicon.ico",
+          "description": "Fail ICO yang mengandungi tiga saiz (16\u00d716, 32\u00d732, 48\u00d748 px). Disokong oleh semua pelayar, termasuk yang lama."
+        },
+        { "icon": "RiChromeLine", "title": "Ikon pelayar (PNG)", "description": "Set ikon PNG untuk pelayar moden: 16\u00d716, 32\u00d732, 48\u00d748, 96\u00d796, dan 128\u00d7128 px." },
+        { "icon": "RiAppleLine", "title": "Apple Touch Icon", "description": "Ikon 180\u00d7180 px untuk peranti iOS (iPhone, iPad). Kelihatan pada skrin utama selepas menambah halaman." },
+        { "icon": "RiAndroidLine", "title": "Ikon Android/PWA", "description": "Ikon 192\u00d7192 dan 512\u00d7512 px untuk Progressive Web Apps dan peranti Android." },
+        { "icon": "RiWindowsLine", "title": "Ikon Microsoft", "description": "Ikon 150\u00d7150 dan 310\u00d7310 px untuk jubin Windows dan Microsoft Edge." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Apa yang menjadikan penjana favicon ini istimewa?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Pemprosesan tempatan dalam pelayar", "description": "Imej tidak dimuat naik ke mana-mana pelayan. Semua pemprosesan berlaku pada peranti anda." },
+        { "icon": "RiCheckboxCircleLine", "title": "Mematuhi keperluan Lighthouse", "description": "Ikon yang dijana mematuhi keperluan Google Lighthouse dari segi saiz dan format." },
+        { "icon": "RiDevicesLine", "title": "Ikon untuk semua peranti", "description": "Satu set fail meliputi semua pelayar, iOS, Android, dan Windows." },
+        { "icon": "RiInfinityLine", "title": "Tanpa had, tanpa pendaftaran", "description": "Jana seberapa banyak favicon yang diperlukan. Tanpa pendaftaran, tanpa bayaran." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Soalan lazim tentang penjana favicon",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Imej apa yang paling sesuai untuk favicon?",
+          "answer": "Imej segi empat sama (sekurang-kurangnya 512\u00d7512 px) dengan latar belakang ringkas paling sesuai. Logo, huruf pertama, atau ikon ringkas memberikan hasil terbaik. Imej dengan banyak butiran mungkin kelihatan buruk pada saiz kecil (16\u00d716 px).",
+          "answerSchemaText": "Imej segi empat sama, sekurang-kurangnya 512\u00d7512 px, dengan latar belakang ringkas. Logo atau ikon ringkas memberikan hasil terbaik."
+        },
+        {
+          "question": "Apa bezanya antara favicon.ico dan PNG?",
+          "answer": "Fail ICO boleh mengandungi beberapa saiz dalam satu fail dan disokong oleh semua pelayar, termasuk yang lama. Fail PNG mempunyai kualiti lebih tinggi tetapi memerlukan tag HTML berasingan untuk setiap saiz. Disyorkan untuk menggunakan kedua-duanya.",
+          "answerSchemaText": "ICO mengandungi beberapa saiz dalam satu fail. PNG menawarkan kualiti lebih baik. Disyorkan menggunakan kedua-duanya."
+        },
+        {
+          "question": "Adakah imej dihantar ke pelayan?",
+          "answer": "Tidak. Semua pemprosesan berlaku dalam pelayar anda. Imej tidak disimpan dan tidak dihantar ke mana-mana.",
+          "answerSchemaText": "Tidak. Imej diproses dalam pelayar. Tidak dihantar ke mana-mana pelayan."
+        },
+        {
+          "question": "Bagaimana cara menambah favicon ke laman web?",
+          "answer": "Letakkan fail ikon dalam folder akar laman web dan tambah tag HTML yang sesuai dalam bahagian &lt;head&gt; halaman. Fail ZIP yang dimuat turun termasuk arahan pelaksanaan.",
+          "answerSchemaText": "Letakkan fail ikon dalam folder akar laman web dan tambah tag HTML dalam bahagian head."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Terokai alatan lain" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

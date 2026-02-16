@@ -1,0 +1,285 @@
+{
+  "toolKey": "colorPalette",
+  "locale": "id",
+  "metadata": {
+    "title": "Generator Palet Warna Gratis – 9 Palet Dari Satu Warna",
+    "description": "Hasilkan 9 palet warna dari satu warna dasar: monokromatik, komplementer, triadik, pastel dan lainnya. Salin kode HEX dalam satu klik. Tanpa pendaftaran, tanpa batasan.",
+    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "path": "/id/alat/generator-palet-warna"
+  },
+  "hero": {
+    "title": "Generator palet warna",
+    "description": "Masukkan satu warna dasar, dan alat akan menghasilkan 9 palet warna harmonis: monokromatik, komplementer, triadik, pastel, dan lainnya. Setiap warna dapat disalin dengan kode HEX-nya.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/id/alat",
+      "label": "Alat"
+    },
+    "third": {
+      "href": "/id/alat/generator-palet-warna",
+      "label": "Generator palet warna"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Generator palet warna gratis",
+      "alternateName": ["Generator skema warna", "Generator warna gratis", "Pembuat palet warna", "Alat pencocokan warna", "Palet warna gratis", "Generator harmoni warna"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorPaletteGenerator",
+      "description": "Generator palet warna gratis. Masukkan satu warna HEX dan alat akan menghasilkan 9 skema: monokromatik, analogus, komplementer, triadik, split-komplementer, pastel, gelap, tonal, dan minimalis. Setiap warna dapat disalin dengan kode HEX dan nilai HSL-nya.",
+      "featureList": [
+        "Skema monokromatik — nuansa satu warna",
+        "Skema analogus — warna bersebelahan di roda warna",
+        "Skema komplementer — warna berlawanan",
+        "Skema triadik — 3 warna dengan jarak sama",
+        "Skema split-komplementer — warna dasar dan 2 tetangga komplemennya",
+        "Palet pastel — nuansa terang dan lembut",
+        "Palet gelap — warna dalam untuk tema gelap",
+        "Palet tonal — skala kecerahan satu hue",
+        "Palet minimalis — aksen kuat dengan netral terang",
+        "Warna dasar dalam format HEX",
+        "Color picker untuk pemilihan visual",
+        "Warna awal acak",
+        "Salin kode HEX ke clipboard",
+        "Nilai HSL ditampilkan di samping setiap warna",
+        "Pemrosesan lokal di browser"
+      ]
+    },
+    "howTo": {
+      "name": "Cara menghasilkan palet warna dari satu warna dasar",
+      "description": "Cara menghasilkan 9 palet warna dari satu warna dasar: monokromatik, komplementer, triadik, pastel, dan lainnya. Setiap warna dapat disalin dengan kode HEX-nya.",
+      "steps": [
+        {
+          "name": "Pilih warna dasar",
+          "text": "Masukkan kode HEX di kolom teks atau gunakan color picker untuk memilih warna secara visual."
+        },
+        {
+          "name": "Konfirmasi warna",
+          "text": "Konfirmasi warna yang dipilih dengan tombol Perbarui Warna — alat akan menghasilkan palet berdasarkan warna dasar yang Anda pilih."
+        },
+        {
+          "name": "Jelajahi palet",
+          "text": "Alat akan secara otomatis menghasilkan 9 palet berbeda: monokromatik, analogus, komplementer, triadik, split-komplementer, pastel, gelap, tonal, dan minimalis."
+        },
+        {
+          "name": "Salin warna",
+          "text": "Di samping setiap warna Anda akan menemukan tombol Salin — kode HEX disalin ke clipboard sistem Anda."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Mengapa membuat palet warna?",
+      "html": "<p class=\"text-mid\">Palet warna yang konsisten adalah fondasi setiap proyek visual — dari situs web, melalui logo, hingga bahan cetak. Memilih warna secara manual yang cocok satu sama lain memerlukan pengetahuan teori warna. Generator melakukannya secara otomatis: Anda memberikan satu warna dasar (mis. warna logo Anda), dan alat membuat 9 set warna berdasarkan skema harmoni warna yang terbukti.</p><p class=\"text-mid mt-3\">Setiap warna yang dihasilkan disertai kode HEX (mis. #4F6BF5) dan nilai HSL (hue, saturasi, kecerahan). Kode HEX dapat ditempel langsung ke CSS, Figma, Canva, atau aplikasi grafis apa pun.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cara menggunakan generator palet warna",
+      "description": "Seluruh proses hanya membutuhkan beberapa detik:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Masukkan warna dasar",
+          "description": "Ketik kode HEX (mis. #4F6BF5) di kolom teks atau pilih warna dari color picker. Anda juga bisa menggunakan tombol Warna Acak."
+        },
+        {
+          "title": "2. Konfirmasi pilihan Anda",
+          "description": "Setelah mengklik tombol Perbarui Warna, alat akan secara otomatis menghasilkan 9 palet berdasarkan skema harmoni warna yang berbeda."
+        },
+        {
+          "title": "3. Salin warna yang Anda butuhkan",
+          "description": "Di samping setiap warna ada tombol Salin — kode HEX masuk ke clipboard dan dapat ditempel langsung ke proyek Anda."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Skema warna apa yang dihasilkan alat ini?",
+      "description": "Generator membuat 9 jenis palet — masing-masing berdasarkan prinsip teori warna yang berbeda:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiStackLine",
+          "title": "Palet monokromatik",
+          "description": "Beberapa nuansa satu warna — dari terang ke gelap. Semua warna memiliki hue yang sama di roda warna dan hanya berbeda kecerahan. Cocok untuk desain elegan dan minimalis yang mengutamakan konsistensi."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Palet analogus",
+          "description": "Warna bersebelahan di roda warna (bergeser sekitar 30° ke kedua arah dari dasar). Mereka menciptakan transisi warna yang harmonis dan halus. Cocok untuk proyek yang membangun suasana hangat atau sejuk."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Palet komplementer",
+          "description": "Warna dasar dan warna yang berlawanan di roda warna (pergeseran 180°). Menciptakan kontras visual yang kuat. Berguna saat elemen perlu menarik perhatian — tombol, heading yang disorot, banner promo."
+        },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Palet triadik",
+          "description": "Tiga warna dengan jarak 120° di roda warna — membentuk segitiga sama sisi. Kombinasi yang cerah dan dinamis. Cocok untuk proyek kreatif: identitas merek muda, materi iklan, poster."
+        },
+        {
+          "icon": "RiCursorLine",
+          "title": "Palet split-komplementer",
+          "description": "Versi lebih lembut dari palet komplementer. Alih-alih satu warna berlawanan, ia menggunakan dua warna yang bergeser sekitar 30° dari komplemen. Memberikan kontras jelas tetapi tanpa ketegangan visual yang terlalu kuat."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Palet pastel",
+          "description": "Hue yang sama dengan saturasi berkurang dan kecerahan meningkat — warna lembut dan halus. Populer di kosmetik, fashion anak-anak, dan industri makanan. Cocok dengan latar terang dan white space."
+        },
+        {
+          "icon": "RiMoonLine",
+          "title": "Palet gelap",
+          "description": "Warna dasar pada saturasi tinggi dan kecerahan berkurang — warna dalam dan intens. Berguna untuk mendesain tema gelap untuk situs web dan aplikasi, serta materi untuk merek premium."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Palet tonal",
+          "description": "Beberapa langkah kecerahan dari satu hue — dari sangat terang hingga gelap. Mirip dengan skala tonal yang digunakan dalam sistem desain (mis. nuansa dari 50 hingga 900). Berguna untuk membangun antarmuka di mana warna yang sama membutuhkan varian."
+        },
+        {
+          "icon": "RiContractLeftRightLine",
+          "title": "Palet minimalis",
+          "description": "Satu aksen warna bold dan beberapa netral terang yang sangat lembut. Sisa palet tetap redup. Cocok untuk antarmuka modern dengan banyak white space — gaya khas halaman produk dan landing page."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Apa dasar generator palet warna ini?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° di roda warna</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturasi)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (kecerahan)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">Semua palet dibuat dengan mentransformasi warna dasar secara matematis di ruang warna HSL. HSL mendeskripsikan warna dengan tiga nilai: hue (H) adalah posisi di roda warna (0°–360°), saturasi (S) menentukan intensitas warna, dan kecerahan (L) — seberapa terang atau gelap warna tersebut.</p><p class=\"text-mid mt-3\">Palet komplementer, triadik, dan split-komplementer didasarkan pada geometri roda warna — warna ditempatkan pada interval sudut yang sama, menciptakan keseimbangan visual. Palet monokromatik, pastel, dan gelap hanya mengubah kecerahan dan saturasi sambil mempertahankan hue yang sama.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Di mana menggunakan palet warna yang dihasilkan",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Identitas visual merek",
+          "description": "Pilih warna pelengkap untuk logo yang sudah ada atau bangun palet branding dari awal — untuk kartu nama, alat tulis, dan materi pemasaran."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Situs web",
+          "description": "Tetapkan warna utama, warna aksen, dan nuansa latar belakang. Kode HEX yang disalin dapat langsung ditempel ke stylesheet CSS atau konfigurasi tema."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Antarmuka aplikasi",
+          "description": "Palet tonal menyediakan varian kecerahan satu warna — lebih terang untuk latar belakang, lebih gelap untuk teks, menengah untuk border dan status interaktif."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Grafis media sosial",
+          "description": "Warna konsisten untuk posting, stories, dan cover profil. Palet analogus atau pastel cocok saat Anda menginginkan gaya yang seragam dan mudah dikenali."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Presentasi dan dokumen",
+          "description": "Set warna harmonis untuk slide, grafik, dan infografis. Palet monokromatik atau minimalis menjaga ketertiban visual."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Pemecahan masalah generator palet",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Palet tidak berubah setelah memasukkan warna",
+          "description": "Hanya mengetik kode HEX tidak secara otomatis menghasilkan palet — Anda perlu mengonfirmasi perubahan dengan tombol Perbarui Warna. Hanya setelah konfirmasi alat menghitung ulang semua 9 skema."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Pesan format tidak valid",
+          "description": "Generator hanya menerima format HEX dengan # di awal, mis. #FF5500. Format tanpa # (mis. FF5500) atau dalam notasi RGB (mis. rgb(255,85,0)) tidak didukung."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Format HEX pendek dan lengkap",
+          "description": "Kedua format didukung: lengkap #RRGGBB (mis. #FF5500) dan pendek #RGB (mis. #F50). Generator secara otomatis mengenali keduanya dan memperlakukannya secara identik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Pertanyaan yang sering diajukan tentang generator palet warna",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Format apa yang harus digunakan untuk warna dasar?",
+          "answer": "Generator menerima warna dalam format HEX — baik pendek (mis. #F50) maupun lengkap (mis. #FF5500). Di samping kolom teks Anda akan menemukan color picker yang memungkinkan Anda memilih warna secara visual. Palet yang dihasilkan menampilkan kode HEX dan nilai HSL setiap warna.",
+          "answerSchemaText": "Generator menerima warna HEX (#RGB atau #RRGGBB). Setiap warna yang dihasilkan memiliki kode HEX dan nilai HSL."
+        },
+        {
+          "question": "Berapa warna yang ada di setiap palet?",
+          "answer": "Setiap palet berisi 4 hingga 6 warna. Jumlahnya tergantung pada jenis skema — palet monokromatik dan tonal menghasilkan lebih banyak nuansa (skala kecerahan satu hue), sementara palet komplementer dan triadik berfokus pada lebih sedikit warna kontras.",
+          "answerSchemaText": "Setiap palet berisi 4 hingga 6 warna, tergantung jenis skema."
+        },
+        {
+          "question": "Apa itu ruang warna HSL dan bagaimana membacanya?",
+          "answer": "HSL adalah cara mendeskripsikan warna menggunakan tiga nilai: H (hue, 0°–360° di roda warna), S (saturasi, 0%–100%), dan L (kecerahan, 0%–100%). Generator menampilkan nilai HSL di samping setiap warna, memudahkan untuk memahami bagaimana warna dalam palet berbeda — mis. palet monokromatik hanya mengubah kecerahan (L) sambil mempertahankan hue (H) yang sama.",
+          "answerSchemaText": "HSL mendeskripsikan warna melalui hue (H), saturasi (S), dan kecerahan (L). Generator menampilkan nilai ini di samping setiap warna."
+        },
+        {
+          "question": "Bisakah saya menggunakan palet yang dihasilkan secara komersial?",
+          "answer": "Ya. Anda dapat menggunakan palet warna yang dihasilkan dalam proyek apa pun — komersial maupun non-komersial, tanpa batasan lisensi.",
+          "answerSchemaText": "Ya, palet yang dihasilkan dapat digunakan tanpa batasan dalam proyek komersial dan non-komersial."
+        },
+        {
+          "question": "Apakah generator palet warna memerlukan login atau pembayaran?",
+          "answer": "Generator sepenuhnya gratis dan tidak memerlukan login atau pendaftaran. Warna dihasilkan secara lokal di browser — tidak ada data yang dikirim ke server eksternal.",
+          "answerSchemaText": "Generator gratis, tidak memerlukan login. Warna dihasilkan secara lokal di browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Jelajahi alat lainnya"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

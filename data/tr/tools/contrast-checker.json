@@ -1,0 +1,396 @@
+{
+  "toolKey": "contrastChecker",
+  "locale": "tr",
+  "metadata": {
+    "title": "Ücretsiz Renk Kontrast Kontrolü – WCAG 2.1 Uyumluluğu",
+    "description": "Metin ve arka plan renklerinizin WCAG 2.1'e göre okunabilir olup olmadığını kontrol edin. HEX, RGB veya HSL kodlarını girin, kontrast oranını görün ve erişilebilir kombinasyonlar bulmak için otomatik düzeltme kullanın.",
+    "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
+    "path": "/tr/araclar/renk-kontrast-kontrolu"
+  },
+  "hero": {
+    "title": "Renk kontrastı ve okunabilirlik kontrolü",
+    "description": "Metin ve arka plan rengi girin, araç kontrastın yeterli olup olmadığını gösterecektir. Hesaplamalar, farklı içerik türleri için minimum kontrast değerlerini tanımlayan uluslararası erişilebilirlik standardı WCAG 2.1'e dayanmaktadır.",
+    "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/tr/araclar",
+      "label": "Araçlar"
+    },
+    "third": {
+      "href": "/tr/araclar/renk-kontrast-kontrolu",
+      "label": "Renk kontrast kontrolü"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Renk kontrastı ve okunabilirlik kontrolü",
+      "alternateName": [
+        "Renk okunabilirlik testi",
+        "Metin ve arka plan kontrast kontrolü",
+        "Okunabilirlik kontrol aracı",
+        "Renk kontrast hesaplayıcı",
+        "WCAG kontrast testi",
+        "Renk erişilebilirlik kontrolü",
+        "Renklerim okunabilir mi"
+      ],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "AccessibilityTool",
+      "description": "Metin ve arka plan renklerinin tüm kullanıcılar için okunabilir olup olmadığını kontrol edin. Araç, WCAG 2.1'e göre kontrast oranını hesaplar ve erişilebilirlik gereksinimlerini karşılayıp karşılamadığınızı gösterir.",
+      "featureList": [
+        "Kontrast oranı hesaplama",
+        "WCAG 2.1 Seviye AA uyumluluk kontrolü",
+        "WCAG 2.1 Seviye AAA uyumluluk kontrolü",
+        "Normal metin testi",
+        "Büyük metin ve başlık testi",
+        "Simge ve UI bileşen testi",
+        "HEX renk formatı desteği",
+        "RGB ve RGBA renk formatı desteği",
+        "HSL ve HSLA renk formatı desteği",
+        "Görsel seçim için renk seçici",
+        "Canlı metin önizlemesi",
+        "Otomatik renk eşleştirme özelliği",
+        "Tarayıcıda yerel işleme"
+      ]
+    },
+    "howTo": {
+      "name": "Renk kontrastı ve okunabilirlik nasıl kontrol edilir",
+      "description": "WCAG standardına göre metin ve arka plan renk okunabilirliği nasıl kontrol edilir. Renkleri girin, kontrast oranını okuyun ve otomatik eşleştirme özelliğini kullanın.",
+      "steps": [
+        {
+          "name": "Metin rengini seçin",
+          "text": "HEX, RGB veya HSL formatında bir renk kodu girin (ör. #333333) — veya renk seçiciden bir renk seçin."
+        },
+        {
+          "name": "Arka plan rengini seçin",
+          "text": "Metnin görüntüleneceği arka plan rengini girin — bu bir bölüm, blok veya sayfa arka plan rengi olabilir."
+        },
+        {
+          "name": "Sonucu okuyun",
+          "text": "Araç kontrast oranını ve renklerin AA/AAA gereksinimlerini karşılayıp karşılamadığını gösterecektir."
+        },
+        {
+          "name": "Renkleri ayarlayın",
+          "text": "Kontrast çok düşükse, Eşleştir özelliği otomatik olarak seçilen WCAG eşiğini karşılayan bir metin renk varyantı önerir."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Renk okunabilirliği neden önemlidir?",
+      "html": "<p class=\"text-mid\">Okunabilirlik, metin rengi ile arka plan rengi arasındaki parlaklık farkıdır. Fark ne kadar büyükse, metni okumak o kadar kolaydır. Çok düşük kontrast içeriğin okunmasını zorlaştırır — özellikle görme bozukluğu olan kişiler, yaşlılar veya zor aydınlatma koşullarında (ör. doğrudan güneş ışığında telefonda).</p><p class=\"text-mid mt-3\"><a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Dünya Sağlık Örgütü'ne (WHO)</a> göre, dünya genelinde yaklaşık 2,2 milyar insan bir tür görme bozukluğuna sahiptir. Ayrıca milyonlarca kişi renk körlüğüne sahiptir (erkeklerin yaklaşık %8'i ve kadınların %0,5'i) ve daha fazlası yaşa bağlı görme kaybı yaşamaktadır.</p><p class=\"text-mid mt-3\">Araç, kontrast oranını <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Web İçerik Erişilebilirlik Yönergeleri)</a>'nde belirtilen formülü kullanarak hesaplar — uluslararası dijital erişilebilirlik yönergeleri. Sonuç, monitör ayarlarından veya bireysel renk algısından bağımsız olarak renklerin yeterince okunabilir olup olmadığının nesnel bir değerlendirmesini sağlar.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Renk kontrast kontrolü nasıl kullanılır",
+      "description": "Okunabilirliği kontrol etmek sadece birkaç saniye sürer:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiPaletteLine",
+          "title": "1. Metin rengini girin",
+          "description": "HEX, RGB veya HSL formatında bir renk kodu yazın (ör. #333333) — veya renk seçiciden bir renk seçin."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "2. Arka plan rengini girin",
+          "description": "Metnin görüntüleneceği arka plan rengini girin — bu bir bölüm, blok veya tam sayfa arka planı olabilir."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "3. Sonucu okuyun",
+          "description": "Araç kontrast oranını hesaplayacak ve renklerin normal metin, büyük metin ve simgeler için WCAG gereksinimlerini karşılayıp karşılamadığını gösterecektir."
+        },
+        {
+          "icon": "RiEqualizerLine",
+          "title": "4. Renkleri ayarlayın",
+          "description": "Kontrast çok düşükse, Eşleştir özelliği otomatik olarak seçilen eşiği karşılayan bir renk varyantı önerir."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTabs",
+      "title": "Hangi renk formatları destekleniyor?",
+      "tabs": [
+        {
+          "title": "HEX",
+          "icon": "RiHashtag",
+          "html": "<div><p class=\"text-mid mb-3\">Onaltılık format — web tasarımında en yaygın olanı. <code class=\"rounded bg-black/5 px-1\">#</code> ile başlar ve 3 veya 6 karakter (0-9 rakamları ve A-F harfleri) içerir.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">#fff</code> — beyaz (kısaltma)</li><li><code class=\"rounded bg-black/5 px-1\">#ffffff</code> — beyaz (tam form)</li><li><code class=\"rounded bg-black/5 px-1\">#1a73e8</code> — mavi</li></ul></div>"
+        },
+        {
+          "title": "RGB / RGBA",
+          "icon": "RiPaletteLine",
+          "html": "<div><p class=\"text-mid mb-3\">Üç kanala dayalı format: Kırmızı, Yeşil, Mavi. Her kanal 0 ile 255 arasında bir değer alır. RGBA varyantı dördüncü bir parametre ekler — 0 ile 1 arasında şeffaflık (alpha).</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">rgb(255, 255, 255)</code> — beyaz</li><li><code class=\"rounded bg-black/5 px-1\">rgba(0, 0, 0, 0.8)</code> — %80 opaklıkta siyah</li></ul></div>"
+        },
+        {
+          "title": "HSL / HSLA",
+          "icon": "RiEqualizerLine",
+          "html": "<div><p class=\"text-mid mb-3\">Ton (0-360°), Doygunluk (0-100%) ve Açıklık (0-100%)'a dayalı format. HSLA varyantı şeffaflık ekler. Bu format, bir rengin parlaklığını veya doygunluğunu ayarlamak istediğinizde yararlıdır.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">hsl(0, 0%, 100%)</code> — beyaz</li><li><code class=\"rounded bg-black/5 px-1\">hsla(217, 91%, 60%, 0.9)</code> — %90 opaklıkta mavi</li></ul></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Okunabilirlik testi sonuçları nasıl yorumlanır",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Kontrast oranı</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Normal metin</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div><div class=\"rounded-lg border border-neutral-200 px-3 py-2\" style=\"color: var(--black3); background-color: var(--white)\"><p class=\"text-sm!\">Örnek normal metin</p></div></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Büyük metin</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 3:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 4.5:1)</span></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Renkleri girdikten sonra araç sonuçları üç bölümde gösterir:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normal metin</strong> — 4.5:1 kontrast (AA) veya 7:1 (AAA) gerektirir. 18pt (24px) altı veya 14pt kalın altı metinlere uygulanır.</li><li><strong>Büyük / kalın metin</strong> — 3:1 kontrast (AA) veya 4.5:1 (AAA) gerektirir. Başlıklar, düğmeler ve vurgulara uygulanır.</li><li><strong>Simgeler</strong> — 3:1 kontrast (AA) gerektirir. Bilgi ileten simgelere ve grafiksel UI öğelerine uygulanır.</li></ul><p class=\"text-mid mt-3\"><strong>Yeşil gösterge</strong> gereksinimin karşılandığı anlamına gelir. <strong>Kırmızı gösterge</strong> kontrastın çok düşük olduğu ve iyileştirilmesi gerektiği anlamına gelir.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Okunabilirlik testi sonuçları ne anlama geliyor?",
+      "html": "<p class=\"text-mid mb-4\">Araç, kontrast oranını 1:1 (kontrast yok) ile 21:1 (maksimum kontrast — beyaz üzerine siyah) arasında bir ölçekte gösterir. Sonuç, WCAG standardında tanımlanan eşiklerle karşılaştırılır:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normal metin</strong> — Seviye AA (minimum standart) için en az 4.5:1 veya Seviye AAA (gelişmiş standart) için 7:1 gerektirir. 18pt (24px) altı veya 14pt (18.5px) kalın altı metinlere uygulanır.</li><li><strong>Büyük / kalın metin</strong> — Seviye AA için en az 3:1 veya Seviye AAA için 4.5:1 gerektirir. 18pt (24px) veya 14pt (18.5px) kalından itibaren metinlere uygulanır — başlıklar, düğmeler, vurgular.</li><li><strong>Simgeler ve UI öğeleri</strong> — Seviye AA için en az 3:1 gerektirir. Bilgi ileten simgelere, düğmelere, form alanlarına ve diğer arayüz öğelerine uygulanır.</li></ul><p class=\"text-mid mt-3\"><strong>Seviye AA</strong>, <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016L2102\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">AB Web Erişilebilirlik Yönergesi</a> dahil birçok ülkedeki dijital erişilebilirlik düzenlemelerinin gerektirdiği minimumdur. <strong>Seviye AAA</strong> daha iyi okunabilirlik sağlar ancak tüm öğeler için her zaman pratik değildir.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "WCAG gereksinimlerine otomatik renk eşleştirme",
+      "html": "<p class=\"text-mid mb-4\">Kontrast çok düşükse, deneme yanılma yoluyla doğru rengi aramanız gerekmez. <strong>Eşleştir</strong> özelliği otomatik olarak seçilen kontrast eşiğini karşılayan bir metin renk varyantı bulur.</p><p class=\"text-mid mb-4\">Eşleştirme nasıl çalışır:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Listeden eşleştirme hedefini seçin — ör. normal metin için AA veya büyük metin için AAA.</li><li>Eşleştir düğmesine tıklayın.</li><li>Araç, metin renginin açıklık varyantlarını arayacak ve gereksinimleri karşılayan en yakın olanı önerecektir.</li><li>Önerilen renk panoya kopyalanabilir veya hemen yeni metin rengi olarak ayarlanabilir.</li></ol><p class=\"text-mid mt-3\">Algoritma, orijinal rengin tonunu ve doygunluğunu korur, yalnızca açıklığı değiştirir. Önerilen renk, erişilebilirlik standardını karşılarken görsel kimlikle tutarlı kalır.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "WCAG standardında AA ve AAA seviyeleri ne anlama geliyor?",
+      "plans": [
+        {
+          "id": "aa",
+          "name": "Seviye AA (minimum)",
+          "highlighted": true
+        },
+        {
+          "id": "aaa",
+          "name": "Seviye AAA (gelişmiş)"
+        }
+      ],
+      "features": [
+        {
+          "name": "Normal metin — min. 4.5:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Normal metin — min. 7:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Büyük / kalın metin — min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Büyük / kalın metin — min. 4.5:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Simgeler ve UI öğeleri — min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Yasal olarak zorunlu (AB yönergesi)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Anahtar içerik için önerilen",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kontrast kontrolü sorun giderme",
+      "html": "<h3 class=\"h5 mb-2\">Renk formatı hata mesajı görüyorum</h3><p class=\"text-mid mb-4\">Renk formatını kontrol edin. HEX kodu <code class=\"rounded bg-black/5 px-1\">#</code> ile başlamalı ve 3 veya 6 karakter içermelidir (ör. <code class=\"rounded bg-black/5 px-1\">#fff</code> veya <code class=\"rounded bg-black/5 px-1\">#ffffff</code>). RGB formatı için değerlerin virgülle ayrıldığından ve 0-255 aralığında olduğundan emin olun.</p><h3 class=\"h5 mb-2\">Eşleştir özelliği uygun renk bulamıyor</h3><p class=\"text-mid mb-4\">Arka plan ve metin aynı tonda benzer parlaklığa sahip olduğunda, algoritma tonu değiştirmeden gereksinimleri karşılayan bir varyant bulamayabilir. Bu durumda arka plan rengini değiştirmeyi veya tamamen farklı bir metin rengi seçmeyi düşünün.</p><h3 class=\"h5 mb-2\">Renk seçicideki renk girilen kodla eşleşmiyor</h3><p class=\"text-mid\">Tarayıcıdaki renk seçici yalnızca şeffaflıksız HEX formatını destekler. RGBA veya HSLA formatında şeffaflıklı bir renk girerseniz, seçici yalnızca renk kısmını (alpha olmadan) gösterecektir. Kontrast hesaplamaları yine de şeffaflığı dikkate alır.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Renk okunabilirliğini nerede kontrol etmeli?",
+      "description": "Okunabilirlik, birinin metin okuması veya bir UI öğesini tanıması gereken her yerde önemlidir:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Web siteleri",
+          "description": "Sayfalardaki metin, düğmeler, bağlantılar, formlar. Özellikle ziyaretçilerin farklı yaş ve görme yeteneklerine sahip olduğu iş siteleri için önemli."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "E-ticaret mağazaları",
+          "description": "Fiyatlar, Satın Al düğmeleri, ürün bilgileri. Düşük okunabilirlik kayıp siparişler anlamına gelebilir."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Sunumlar",
+          "description": "Projektörle görüntülenen slaytlar genellikle monitörden daha zayıf kontrasta sahiptir. Sunmadan önce renkleri kontrol edin."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Afişler ve el ilanları",
+          "description": "Çeşitli aydınlatma koşullarında görüntülenen basılı materyaller yüksek kontrast gerektirir."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Mobil uygulamalar",
+          "description": "Telefonlar parlak güneş ışığında, gece ve her yaştan insanlar tarafından kullanılır."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Restoran menüleri",
+          "description": "Genellikle renkli kağıda veya dekoratif yazı tipleriyle basılır — çok düşük kontrasta düşmek kolaydır."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Renk körü kullanıcılar için renk okunabilirliği",
+      "html": "<p class=\"text-mid mb-4\">Renk körlüğü erkeklerin yaklaşık %8'ini ve kadınların %0,5'ini etkiler. Renk körlüğü olan kişiler, parlaklık kontrastı yeterli olsa bile belirli renk çiftlerini ayırt etmekte güçlük çekebilir.</p><p class=\"text-mid mb-4\">En yaygın renk körlüğü türleri:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deuteranopi</strong> — yeşil ve kırmızıyı ayırt etme güçlüğü (en yaygın form)</li><li><strong>Protanopi</strong> — kırmızıyı görme güçlüğü</li><li><strong>Tritanopi</strong> — mavi ve sarıyı görme güçlüğü (nadir)</li></ul><p class=\"text-mid mt-3\">Bu araç, tüm kullanıcılar için önemli olan parlaklık kontrastını kontrol eder. Ancak tasarım yaparken sorunlu renk kombinasyonlarından (ör. yeşil arka plan üzerinde kırmızı metin) kaçınmak ve bilgi iletmek için yalnızca renge güvenmemek — şekiller, simgeler ve metin de kullanmak önemlidir.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Bu kontrast ve okunabilirlik kontrolünü özel kılan nedir?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiEyeLine",
+          "title": "Matematiksel formüle dayalı nesnel değerlendirme",
+          "description": "Kontrast oranı WCAG formülü kullanılarak hesaplanır — sonuç monitör ayarlarına veya bireysel renk algısına bağlı değildir."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Uluslararası WCAG standardına uyumluluk",
+          "description": "Sonuçlar, AB ve birçok ülkede dijital erişilebilirlik düzenlemelerinin temelini oluşturan WCAG 2.1 gereksinimlerini karşılar."
+        },
+        {
+          "icon": "RiMagicLine",
+          "title": "Eşiğe otomatik renk eşleştirme",
+          "description": "Eşleştir özelliği, seçilen kontrast eşiğini karşılayan bir metin renk varyantı bulur — tonu korur, yalnızca açıklığı değiştirir."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Beş renk formatı",
+          "description": "Desteklenen formatlar: HEX, RGB, RGBA, HSL ve HSLA. Renk kodu doğrudan Figma, Photoshop veya CSS stilinden yapıştırılabilir."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Tek testte üç içerik türü",
+          "description": "Tek bir kontrol normal metin, büyük metin (başlıklar, düğmeler) ve simgeler için sonucu gösterir — her türü ayrı ayrı test etmeye gerek yoktur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Renk kontrast kontrolü hakkında sıkça sorulan sorular",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Renk kontrast oranı nedir?",
+          "answer": "Kontrast oranı, iki renk arasındaki parlaklık farkının bir ölçüsüdür. Ölçek 1:1 (fark yok — ör. beyaz arka plan üzerinde beyaz metin) ile 21:1 (maksimum fark — beyaz arka plan üzerinde siyah metin) arasındadır. Oran ne kadar yüksekse, metni arka plandan ayırt etmek o kadar kolaydır."
+        },
+        {
+          "question": "WCAG'a göre yeterli kontrast nedir?",
+          "answer": "Normal metin için minimum 4.5:1 (Seviye AA). Büyük metin — 18pt'den itibaren başlıklar veya 14pt'den itibaren kalın metin — için 3:1 yeterlidir. Simgeler ve UI bileşenleri için de 3:1 gereklidir. Bu eşikler, görme bozukluğu olanlar dahil çoğu kullanıcı için okunabilirliği sağlar."
+        },
+        {
+          "question": "Renk kontrastı renk körü kullanıcılar için önemli mi?",
+          "answer": "Kontrol aracı, renk körlüğü olanlar dahil tüm kullanıcılar için önemli olan parlaklık kontrastını test eder. Ancak renk körlüğü bir renk algılama sorunu, parlaklık sorunu değildir — bu nedenle kontrasta ek olarak sorunlu renk çiftlerinden (ör. yeşil arka plan üzerinde kırmızı metin) kaçının ve bilgi iletmek için yalnızca renge güvenmeyin."
+        },
+        {
+          "question": "Rengim gayet iyi görünmesine rağmen neden gereksinimleri karşılamıyor?",
+          "answer": "Kişisel renk algısı monitör ayarlarına, oda aydınlatmasına ve bireysel görme yeteneklerine bağlıdır. WCAG, çeşitli görme bozukluklarını hesaba katan nesnel bir matematiksel formüle dayanır. Bir ekranda okunabilir bir renk, başka bir ekranda veya farklı bir kişi için okunabilir olmayabilir."
+        },
+        {
+          "question": "AAA kontrast seviyesini karşılamam gerekiyor mu?",
+          "answer": "Her zaman değil. Seviye AA (normal metin için 4.5:1), Avrupa Birliği'ndeki erişilebilirlik düzenlemelerinin gerektirdiği minimumdur. Seviye AAA (7:1) daha iyi okunabilirlik sağlar ancak ulaşması daha zordur. Kritik içerik — uyarılar, güvenlik talimatları — için AAA'yı hedeflemeyi düşünün."
+        },
+        {
+          "question": "WCAG standardı nedir?",
+          "answer": "WCAG (Web İçerik Erişilebilirlik Yönergeleri), W3C kuruluşu tarafından geliştirilen uluslararası bir web erişilebilirlik yönergeleri setidir. Diğer şeylerin yanı sıra minimum renk kontrast değerlerini, başlık yapısını, klavye desteğini ve web sitelerini çeşitli engelleri olan kişiler için erişilebilir kılan diğer gereksinimleri tanımlar."
+        },
+        {
+          "question": "Web sitemden renk kodlarını nereden bulabilirim?",
+          "answer": "Tarayıcıda (Chrome, Firefox, Edge) geliştirici araçlarını açabilirsiniz (sağ tık > İncele). Stiller sekmesinde sayfada kullanılan renkleri görebilirsiniz. Alternatif olarak, ColorZilla gibi tarayıcı eklentileri koda girmeden herhangi bir öğenin rengini seçmenize olanak tanır."
+        },
+        {
+          "question": "Sitemdeki hangi renk çiftlerini önce kontrol etmeliyim?",
+          "answer": "En önemli: ana arka plan üzerindeki metin, banner ve renkli bölümlerdeki metin, düğmeler (metin rengi ve düğme arka planının sayfa arka planına göre), bağlantılar ve simgeler. Bölüme göre farklı arka planlarda görünen öğelere özellikle dikkat edin."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Diğer ücretsiz araçları keşfedin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

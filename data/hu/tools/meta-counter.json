@@ -1,0 +1,305 @@
+{
+  "toolKey": "metaCounter",
+  "locale": "hu",
+  "metadata": {
+    "title": "Ingyenes meta title és description ellenőrző – Pixelek",
+    "description": "Ellenőrizze a meta title és description hosszát karakterekben és pixelekben. A Google SERP előnézet segít elkerülni a levágott snippeteket. Regisztráció nélkül.",
+    "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+    "path": "/hu/eszkozok/meta-title-description-hossz-ellenorzo"
+  },
+  "hero": {
+    "title": "Ellenőrizze az oldalcím és leírás hosszát a Google-ben",
+    "description": "Adjon meg egy címet és leírást, és az eszköz kiszámítja a karakterszámot, szószámot, pixelszélességet, és megmutatja, hogy a hossz megfelel-e a SEO bevalt gyakorlatoknak",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/meta-title-description-hossz-ellenorzo",
+      "label": "Meta title és description ellenőrző"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Ingyenes meta title és description hossz ellenőrző online",
+      "alternateName": [
+        "Meta title és description ellenőrző Google előnézettel",
+        "Google snippet előnézet online",
+        "SEO címhossz ellenőrzés pixelben",
+        "Meta tag hossz ellenőrző eszköz",
+        "Google SERP előnézet eszköz",
+        "Hány karakter legyen a meta descriptionben",
+        "Optimális cím és leírás hossz",
+        "SEO meta tag ellenőrző"
+      ],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "SEOTool",
+      "description": "Ingyenes meta title és description hossz ellenőrző. Ellenőrzi a karakterszámot, szószámot és pixelszélességet. Megjeleníti, hogyan jelenik meg a cím és leírás a Google keresési eredményekben.",
+      "featureList": [
+        "Karakterszámláló meta title-hoz",
+        "Karakterszámláló meta descriptionhöz",
+        "Pixelszélesség mérés (Google-kompatibilis)",
+        "Szószámláló címhez és leíráshoz",
+        "Google keresési eredmények előnézete",
+        "Színkódolt hosszértékelés (túl rövid / optimális / túl hosszú)",
+        "Levágási figyelmeztetés címhez és leíráshoz",
+        "Optimális hossz ajánlások",
+        "Helyi feldolgozás a böngészőben"
+      ]
+    },
+    "howTo": {
+      "name": "Hogyan ellenőrizze a meta title és description hosszát",
+      "description": "Ellenőrizze a meta title és description hosszát pixelben és karakterben. Tudja meg, hány karakteresnek kell lennie egy címnek (50–60) és leírásnak (120–160), és hogyan kerülje el a levágást a Google-ben.",
+      "totalTime": "PT3M",
+      "steps": [
+        {
+          "name": "Adja meg a meta title-t",
+          "text": "Illessze be vagy gépelje az oldalcímet a Meta title mezőbe. Az eszköz automatikusan kiszámítja a karakterszámot, szószámot és pixelszélességet."
+        },
+        {
+          "name": "Adja meg a meta descriptiont",
+          "text": "Adja hozzá az oldal leírását a Meta description mezőben. Ugyanazokat a metrikákat fogja látni. A mező nagyobb, mert a leírások hosszabbak a címeknél - 2–3 rövid mondat fér el benne."
+        },
+        {
+          "name": "Ellenőrizze a Google előnézetet",
+          "text": "Lássa, hogyan néz ki a cím és leírás egy szimulált Google keresési eredményben. Az előnézet automatikusan levágja a szöveget, ahogy a keresőmotor tenné."
+        },
+        {
+          "name": "Módosítson a tippek alapján",
+          "text": "Ha az állapot Túl rövid vagy Túl hosszú, módosítsa a szöveget és figyelje a változásokat valós időben."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Mi az a meta title és meta description?",
+      "html": "<p class=\"text-mid\">A meta title és meta description két rövid szöveg, amely leírja egy weboldal tartalmát. Nem láthatók közvetlenül az oldalon, de megjelennek a Google keresési eredményekben címként (kék link) és leírásként (szürke szöveg a cím alatt).</p><p class=\"text-mid mt-3\">A jól megírt meta tagek reklámként működnek az oldalához a keresési eredményekben - felkeltik a figyelmet és növelik a kattintás esélyét. A rosszul megírt vagy levágott tagek elriaszthatják a kattintásokat, még ha maga az oldal értékes is.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan használja a meta title és description ellenőrzőt",
+      "description": "A meta tag hossz ellenőrzése kb. egy percet vesz igénybe:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiPencilLine",
+          "title": "1. Adja meg az oldalcímet",
+          "description": "Illessze be vagy gépelje a meta title-t az első szövegmezőbe. Az eszköz azonnal három metrikát mutat: karakterszám, szószám és pixelszélesség. Mellettuk színes állapot jelenik meg."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Adja meg az oldal leírását",
+          "description": "Adja hozzá a meta descriptiont a második mezőben. Ugyanazokat a metrikákat látja. A mező nagyobb, mert a leírások hosszabbak - 2–3 rövid mondat fér el benne."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "3. Ellenőrizze az előnézetet",
+          "description": "A jobb oldalon (asztali) vagy alul (mobil) látja az előnézetet, amely megmutatja, hogyan néz ki a cím és leírás a Google keresési eredményekben. A szöveg automatikusan levágásra kerül."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "4. Módosítson a tippek alapján",
+          "description": "Ha az állapot Túl rövid vagy Túl hosszú, módosítsa a szöveget. A változások azonnal láthatók - kísérletezhet, amíg megtalálja az optimális hosszt és tartalmat."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hány karakter legyen a meta title és description?",
+      "html": "<p class=\"text-mid mb-4\">A Google levágja a túl hosszú címeket és leírásokat. Alább találja az ajánlott tartományokat, amelyek csökkentik a szöveg levágásának kockázatát a keresési eredményekben.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Elem</th><th class=\"py-2 pr-4 font-semibold\">Karakterek</th><th class=\"py-2 pr-4 font-semibold\">Pixelek</th><th class=\"py-2 font-semibold\">Megjegyzések</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 karakter</td><td class=\"py-2 pr-4 whitespace-nowrap\">max ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">A legfontosabb szavakat tegye az elejére. Márkanév a végére.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">120–160 karakter</td><td class=\"py-2 pr-4 whitespace-nowrap\">max ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">2–3 rövid mondat fér el benne. Zárja felszólítással.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Ezek megközelítő értékek - a Google nem tesz közzé szigorú korlátokat, és az eszköz és lekérdezési kontextustól függően módosíthatja azokat.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Hogyan értelmezze az eredményeket",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta title</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Karakterek: <strong>52</strong></span><span class=\"text-mid\">Szavak: <strong>7</strong></span><span class=\"text-mid\">Pixelek: <strong>456px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Jó hossz</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta description</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Karakterek: <strong>142</strong></span><span class=\"text-mid\">Szavak: <strong>21</strong></span><span class=\"text-mid\">Pixelek: <strong>812px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Jó hossz</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Az eszköz három metrikát mutat minden mezőhöz színkódolt hosszértékeléssel:</p><h3 class=\"h5 mt-6 mb-2\">Metrikák</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Karakterek</strong> - összes karakter (szóközökkel). Könnyen érthető, de kevésbé pontos mint a pixelek.</li><li><strong>Szavak</strong> - szószám. Hasznos a hossz gyors felméréséhez.</li><li><strong>Szélesség (px)</strong> - szövegszélesség pixelben. Ezt az értéket használja a Google ténylegesen a levágásnál.</li></ul><h3 class=\"h5 mt-6 mb-2\">Értékelési állapotok</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Jó hossz</strong> (zöld) - a szöveg az ajánlott tartományon belül van. A Google teljes egészében megjeleníti.</li><li><strong class=\"text-warning-text\">Túl rövid</strong> (sárga) - a szöveg nagyon rövid. Van hely több információnak, ami ösztönözheti a kattintásokat.</li><li><strong class=\"text-error-text\">Túl hosszú</strong> (piros) - a szöveg meghaladja az ajánlott tartományt. A Google valószínűleg levágja. Fontolja meg a rövidítést.</li><li><strong class=\"text-light\">Nincs adat</strong> (szürke) - a mező üres. Írjon be szöveget az elemzés megtekintéséhez.</li></ul><h3 class=\"h5 mt-6 mb-2\">Ajánlott tartományok</h3><p class=\"text-mid\"><strong>Meta title:</strong> 35–65 karakter vagy 350–580 pixel szélesség. A legfontosabb szavakat tegye az elejére.</p><p class=\"text-mid mt-2\"><strong>Meta description:</strong> 100–165 karakter vagy 430–920 pixel szélesség. 2–3 rövid mondat fér el benne.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Miért fontosabb a pixelszélesség mint a karakterszám",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">iiiiiiiiiiiiiiii (16 karakter)</p><div class=\"bg-success-icon mt-1 h-3 w-1/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~64px széles</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">WWWWWWWWWWWWWWWW (16 karakter)</p><div class=\"bg-error-icon mt-1 h-3 w-3/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~256px széles</p></div></div>",
+      "html": "<p class=\"text-mid\">Különböző betűk különböző szélességűek. Hasonlítsa össze az &quot;iiii&quot; és &quot;WWWW&quot; párt - mindkettő 4 karakter, de a vizuális szélesség teljesen más. A Google pixelben méri a szöveg szélességét, nem karakterben.</p><p class=\"text-mid mt-3\">Ez azt jelenti, hogy egy sok keskeny betűt (i, l, t, f) tartalmazó cím hosszabb lehet, mint egy széles betűs (W, M, O) cím, ugyanúgy karakterszám mellett. Az eszköz mindkét értéket mutatja: karakterszámot (könnyebben érthető) és pixelszélességet (pontosabb a Google számára).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Snippet előnézet - mit mutat?",
+      "html": "<p class=\"text-mid\">A snippet előnézet szimulálja, hogyan néz ki az oldal címe és leírása a Google keresési eredményekben. Ez egy megközelítő vizualizáció - a tényleges megjelenés kissé változhat az eszköztől és böngészőtől függően.</p><h3 class=\"h5 mt-6 mb-2\">Előnézet elemei</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> - az oldalcím a cím felett megjelenítve. Megadhatja az opcionális mezőben a realisztikusabb előnézetért.</li><li><strong>Cím</strong> - a kék fejléc. Ha túl hosszú, az eszköz automatikusan levágja és három pontot ad hozzá.</li><li><strong>Leírás</strong> - a szürke szöveg a cím alatt. Szintén levágásra kerül, ha meghaladja a korlátot.</li></ul><h3 class=\"h5 mt-6 mb-2\">Mit nem mutat az előnézet</h3><p class=\"text-mid\">Az előnézet nem tartalmazza az összes elemet, amelyet a Google hozzáadhat egy eredményhez: dátumok, csillagértékelések, sitelinkek vagy rich snippetek. Ez egy egyszerűsített változat, amely a szöveghosszra összpontosít.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Gyakori problémák és megoldások",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "A cím túl hosszú",
+          "description": "Rövidítse a címet, és tartsa a legfontosabb szavakat az elején. Távolítsa el az olyan mellékneveket, mint &quot;legjobb&quot; vagy &quot;professzionális&quot; - ritkán adnak értéket. A márkanév kerüljön a végére elválasztó után."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "A leírás túl rövid",
+          "description": "Adjon hozzá több információt: mit talál a felhasználó az oldalon, milyen előnyt kap, mi különbözteti meg az ajánlatot. Zárja felszólítással."
+        },
+        {
+          "icon": "RiRuler2Line",
+          "title": "A pixelszélesség eltér a várttól",
+          "description": "Az eszköz a Google által használthoz hasonló szabványos betűtípussal méri a szélességet. Az eredmény enyhén változhat a böngészőtől függően."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kinek szól a meta tag ellenőrző?",
+      "description": "A meta tag ellenőrző hasznos mindenkinek, aki webtartalmat készít:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Weboldal- és bolt-tulajdonosok",
+          "description": "Ellenőrizze, hogy a címek és leírások levágásra kerülnek-e a Google eredményekben új oldal vagy termék közzététele előtt."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "SEO specialisták",
+          "description": "Teszteljen különböző cím- és leírásváltozatokat, ellenőrizze a keresési eredmények előnézetét és igazolja az irányelveknek való megfelelést."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Szövegírók",
+          "description": "Írjon címeket és leírásokat, amelyek a korlátokon belül maradnak és ösztönzik a kattintásokat."
+        },
+        {
+          "icon": "RiMegaphoneLine",
+          "title": "Marketingesek",
+          "description": "Készítsen meta tageket kampányokhoz és landing page-ekhez, optimalizálva a kattintási arányt az organikus eredményekben."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Fejlesztők",
+          "description": "Ellenőrizze a meta tageket, mielőtt élesbe állítana egy oldalt."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt a meta title és description ellenőrzőt?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRuler2Line",
+          "title": "Pixelmérés",
+          "description": "Nem csak karaktereket számolunk - a tényleges szövegszélességet mérjük, ahogy a Google teszi."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Google előnézet",
+          "description": "Lássa, hogyan néz ki a cím és leírás a keresési eredményekben az oldal közzététele előtt."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Színkódolt értékelés",
+          "description": "Azonnal tudja, hogy a szöveg túl rövid, optimális vagy túl hosszú."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Pixelek és karakterek egyben",
+          "description": "Az eszköz mindkét értéket egyszerre mutatja - összehasonlíthatja, hogy a cím befér-e mind a karakter-, mind a pixelkorlátba."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Cím és leírás egy nézetben",
+          "description": "Ellenőrizze a meta title-t és descriptiont egyszerre, fülek közötti váltás nélkül."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések a meta title és description ellenőrzőről",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Miért mutat az eszköz pixelszélességet a karakterszám helyett?",
+          "answer": "Különböző betűk különböző szélességűek. Az &quot;i&quot; betű sokkal kevesebb helyet foglal, mint az &quot;m&quot; vagy &quot;W&quot;. A Google pixelszélesség alapján vágja le a címeket és leírásokat, nem karakterszám alapján. Ez azt jelenti, hogy sok keskeny betűt tartalmazó szöveg hosszabb lehet, mint a széles betűs szöveg, ugyanúgy karakterszám mellett.",
+          "answerSchemaText": "A Google pixelszélesség alapján vág, nem karakterszám alapján. Különböző betűknek különböző szélességük van."
+        },
+        {
+          "question": "A Google mindig megjeleníti a meta title-t és descriptiont?",
+          "answer": "Nem mindig. A Google megváltoztathatja a megjelenített címet vagy leírást, ha jobbnak tart valamit a felhasználó lekérdezéséhez. Gyakran húz ki részleteket az oldal tartalmából. A jól megírt meta tagek növelik az esélyt, hogy a Google használja őket, de 100%-os garancia nincs.",
+          "answerSchemaText": "Nem mindig. A Google megváltoztathatja a megjelenített címet vagy leírást, hogy jobban illeszkedjen a lekérdezéshez."
+        },
+        {
+          "question": "Mi az optimális meta title és meta description hossz?",
+          "answer": "A meta title kb. 50–60 karakter legyen (max ~580 pixel szélesség). A meta description 120–160 karakternél működik a legjobban (max ~920 pixel). Ezek megközelítő értékek - a Google nem tesz közzé szigorú korlátokat és módosíthatja azokat.",
+          "answerSchemaText": "Meta title: 50–60 karakter (~580px). Meta description: 120–160 karakter (~920px). Megközelítő értékek."
+        },
+        {
+          "question": "A meta description befolyásolja az oldal rangsorolását a Google-ben?",
+          "answer": "A meta description nem közvetlen rangsorolási tényező - a Google nem használja az oldal pozíciójának meghatározásához. Azonban egy jó leírás növeli a kattintási arányt a keresési eredményekből, és a magasabb CTR közvetetten befolyásolhatja a rangsorolást.",
+          "answerSchemaText": "A meta description nem közvetlen rangsorolási tényező, de egy jó leírás növelheti a CTR-t és közvetetten befolyásolhatja a rangsorolást."
+        },
+        {
+          "question": "Mit tegyek, ha a címem túl hosszú?",
+          "answer": "Rövidítse a címet, és tartsa a legfontosabb szavakat az elején. Távolítsa el a töltékszavakat (pl. &quot;legjobb&quot;, &quot;professzionális&quot;) és összpontosítson a felhasználó számára nyújtott konkrét értékre. Ha márkanév szerepel benne, tegye a végére elválasztó után.",
+          "answerSchemaText": "Rövidítse a címet, tartsa a fontos szavakat az elején, és helyezze a márkanév a végére."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Fedezzen fel további eszközöket"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

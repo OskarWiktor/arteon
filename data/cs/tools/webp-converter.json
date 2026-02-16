@@ -1,0 +1,193 @@
+{
+  "toolKey": "jpgToWebp",
+  "locale": "cs",
+  "metadata": {
+    "title": "Konvertor JPG/PNG na WebP zdarma \u2013 Bez limit\u016f",
+    "description": "Zmen\u0161ete velikost obr\u00e1zk\u016f bez ztr\u00e1ty kvality. P\u0159eve\u010fte JPG a PNG do WebP a zrychl\u011bte sv\u016fj web. Bez registrace, funguje v prohl\u00ed\u017ee\u010di.",
+    "ogImage": "/assets/tools/narzedzia-konwerter-jpg-png-na-webp.webp",
+    "path": "/cs/nastroje/konvertor-jpg-png-na-webp"
+  },
+  "hero": {
+    "title": "P\u0159eve\u010fte obr\u00e1zky do WebP \u2013 zmen\u0161ete velikost bez ztr\u00e1ty kvality",
+    "description": "Nahrajte obr\u00e1zky ve form\u00e1tu JPG nebo PNG a n\u00e1stroj je p\u0159evede do form\u00e1tu WebP. Men\u0161\u00ed soubory, stejn\u00e1 kvalita, rychlej\u0161\u00ed na\u010d\u00edt\u00e1n\u00ed webu.",
+    "backgroundImage": "/assets/tools/narzedzia-konwerter-jpg-png-na-webp.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/cs/nastroje", "label": "N\u00e1stroje" },
+    "third": { "href": "/cs/nastroje/konvertor-jpg-png-na-webp", "label": "Konvertor JPG/PNG na WebP" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konvertor JPG/PNG na WebP zdarma",
+      "alternateName": [
+        "Konvertor obr\u00e1zk\u016f na WebP",
+        "Konvertor JPG na WebP",
+        "Konvertor PNG na WebP",
+        "N\u00e1stroj pro p\u0159evod obr\u00e1zk\u016f do WebP",
+        "P\u0159evod obr\u00e1zk\u016f bez ztr\u00e1ty kvality"
+      ],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Bezplatn\u00fd konvertor JPG a PNG na WebP. Zmen\u0161ete velikost obr\u00e1zkov\u00fdch soubor\u016f a\u017e o 90 % bez viditeln\u00e9 ztr\u00e1ty kvality. Ve\u0161ker\u00e9 zpracov\u00e1n\u00ed prob\u00edh\u00e1 ve va\u0161em prohl\u00ed\u017ee\u010di \u2013 soubory se neodes\u00edlaj\u00ed na server.",
+      "featureList": [
+        "P\u0159evod JPG na WebP",
+        "P\u0159evod PNG na WebP",
+        "D\u00e1vkov\u00fd p\u0159evod v\u00edce obr\u00e1zk\u016f najednou",
+        "Posuvn\u00edk kvality (0\u2013100)",
+        "Porovn\u00e1n\u00ed p\u016fvodn\u00ed a WebP velikosti",
+        "Nahr\u00e1v\u00e1n\u00ed p\u0159eta\u017een\u00edm nebo v\u00fdb\u011brem soubor\u016f",
+        "N\u00e1hled p\u0159ed a po konverzi",
+        "Sta\u017een\u00ed ka\u017ed\u00e9ho obr\u00e1zku nebo v\u0161ech v ZIP",
+        "Lok\u00e1ln\u00ed zpracov\u00e1n\u00ed v prohl\u00ed\u017ee\u010di"
+      ]
+    },
+    "howTo": {
+      "name": "Jak p\u0159ev\u00e9st JPG a PNG na WebP",
+      "description": "Jak p\u0159ev\u00e9st obr\u00e1zky JPG a PNG do form\u00e1tu WebP. Nahrajte soubory, nastavte kvalitu a st\u00e1hn\u011bte p\u0159eveden\u00e9 obr\u00e1zky.",
+      "totalTime": "PT2M",
+      "steps": [
+        {
+          "name": "Nahrajte obr\u00e1zky",
+          "text": "P\u0159et\u00e1hn\u011bte soubory do vyzna\u010den\u00e9 oblasti nebo je vyberte ze za\u0159\u00edzen\u00ed. Podporovan\u00e9 form\u00e1ty jsou JPG a PNG."
+        },
+        {
+          "name": "Nastavte kvalitu",
+          "text": "Pomoc\u00ed posuvn\u00edku upravte kvalitu obr\u00e1zku (0\u2013100). Vy\u0161\u0161\u00ed hodnota znamen\u00e1 lep\u0161\u00ed kvalitu, ale v\u011bt\u0161\u00ed soubor."
+        },
+        {
+          "name": "St\u00e1hn\u011bte p\u0159eveden\u00e9 obr\u00e1zky",
+          "text": "Klikn\u011bte na tla\u010d\u00edtko sta\u017een\u00ed u ka\u017ed\u00e9ho obr\u00e1zku nebo st\u00e1hn\u011bte v\u0161e najednou v souboru ZIP."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Co je form\u00e1t WebP a pro\u010d je d\u016fle\u017eit\u00fd?",
+      "html": "<p class=\"text-mid\">WebP je modern\u00ed obr\u00e1zkov\u00fd form\u00e1t vyvinut\u00fd spole\u010dnost\u00ed Google, kter\u00fd nab\u00edz\u00ed lep\u0161\u00ed kompresi ne\u017e JPG a PNG. Obr\u00e1zky ve WebP zab\u00edraj\u00ed m\u00e9n\u011b m\u00edsta na disku \u2013 obvykle o 25\u201334 % m\u00e9n\u011b ne\u017e JPG a a\u017e o 80 % m\u00e9n\u011b ne\u017e PNG \u2013 p\u0159i zachov\u00e1n\u00ed vizu\u00e1ln\u00ed kvality.</p><p class=\"text-mid mt-3\">V\u0161echny hlavn\u00ed prohl\u00ed\u017ee\u010de (Chrome, Firefox, Safari, Edge) podporuj\u00ed WebP. Pou\u017eit\u00ed tohoto form\u00e1tu znamen\u00e1 rychlej\u0161\u00ed na\u010d\u00edt\u00e1n\u00ed str\u00e1nek, ni\u017e\u0161\u00ed spot\u0159ebu dat a lep\u0161\u00ed sk\u00f3re Core Web Vitals \u2013 co\u017e p\u0159\u00edmo ovliv\u0148uje pozici ve v\u00fdsledc\u00edch vyhled\u00e1v\u00e1n\u00ed Google.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Jak pou\u017e\u00edt konvertor JPG/PNG na WebP",
+      "description": "Konverze zabere jen n\u011bkolik minut:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Nahrajte obr\u00e1zky",
+          "description": "P\u0159et\u00e1hn\u011bte soubory do vyzna\u010den\u00e9 oblasti nebo je vyberte ze za\u0159\u00edzen\u00ed. M\u016f\u017eete nahr\u00e1t v\u00edce obr\u00e1zk\u016f najednou."
+        },
+        {
+          "title": "2. Nastavte kvalitu",
+          "description": "Pomoc\u00ed posuvn\u00edku upravte kvalitu obr\u00e1zku (0\u2013100). Ni\u017e\u0161\u00ed hodnota znamen\u00e1 men\u0161\u00ed soubor, ale ni\u017e\u0161\u00ed kvalitu."
+        },
+        {
+          "title": "3. St\u00e1hn\u011bte v\u00fdsledek",
+          "description": "Klikn\u011bte na tla\u010d\u00edtko sta\u017een\u00ed u ka\u017ed\u00e9ho obr\u00e1zku nebo st\u00e1hn\u011bte v\u0161e najednou v souboru ZIP."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Jak zvolit spr\u00e1vnou kvalitu pro WebP",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kvalita: 80</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Doporu\u010deno</span></div><p class=\"text-mid text-sm!\">Nejlep\u0161\u00ed pom\u011br kvality a velikosti souboru. Vhodn\u00e9 pro v\u011bt\u0161inu obr\u00e1zk\u016f na webu a v e-shopu.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kvalita: 60\u201370</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Agresivn\u00ed komprese</span></div><p class=\"text-mid text-sm!\">Men\u0161\u00ed soubory. Vhodn\u00e9 pro miniatury, ikony a dekorativn\u00ed pozad\u00ed.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kvalita: 90\u2013100</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Nejvy\u0161\u0161\u00ed kvalita</span></div><p class=\"text-mid text-sm!\">Velmi vysok\u00e1 kvalita, ale v\u011bt\u0161\u00ed soubory. Vhodn\u00e9 pro portfolia a kl\u00ed\u010dov\u00e9 produktov\u00e9 fotografie.</p></div></div>",
+      "html": "<p class=\"text-mid\">Nastaven\u00ed kvality ur\u010duje pom\u011br mezi vizu\u00e1ln\u00ed kvalitou a velikost\u00ed souboru. Pro v\u011bt\u0161inu obr\u00e1zk\u016f na webu hodnota 75\u201385 p\u0159in\u00e1\u0161\u00ed nejlep\u0161\u00ed v\u00fdsledky \u2013 rozd\u00edl v kvalit\u011b nen\u00ed okem viditeln\u00fd a soubor m\u016f\u017ee b\u00fdt 3\u20135\u00d7 men\u0161\u00ed ne\u017e p\u016fvodn\u00ed JPG.</p><p class=\"text-mid mt-3\">Pro miniatury, ikony a dekorativn\u00ed pozad\u00ed m\u016f\u017eete kvalitu sn\u00ed\u017eit na 60\u201370 bez ztr\u00e1ty ostrosti. Pro portfoliov\u00e9 fotografie nebo kl\u00ed\u010dov\u00e9 produktov\u00e9 sn\u00edmky hodnota 90\u201395 zachov\u00e1 detaily.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kdo pot\u0159ebuje konvertor WebP?",
+      "description": "P\u0159evod obr\u00e1zk\u016f do WebP je d\u016fle\u017eit\u00fd pro ka\u017ed\u00e9ho, kdo chce rychlej\u0161\u00ed web:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Majitel\u00e9 web\u016f",
+          "description": "Men\u0161\u00ed obr\u00e1zky zrychluj\u00ed na\u010d\u00edt\u00e1n\u00ed str\u00e1nek. To zlep\u0161uje u\u017eivatelsk\u00fd z\u00e1\u017eitek a ovliv\u0148uje pozici v Google."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "E-shopy",
+          "description": "Mnoho produktov\u00fdch fotek znamen\u00e1 mnoho megabajt\u016f dat. P\u0159evod do WebP sni\u017euje dobu na\u010d\u00edt\u00e1n\u00ed a spot\u0159ebu dat."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Blogge\u0159i",
+          "description": "\u010cl\u00e1nky s mno\u017estv\u00edm obr\u00e1zk\u016f se na\u010d\u00edtaj\u00ed pomaleji. WebP sni\u017euje velikost obr\u00e1zk\u016f p\u0159i zachov\u00e1n\u00ed kvality."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Weboví v\u00fdvoj\u00e1\u0159i",
+          "description": "WebP je modern\u00ed standard pro webov\u00e9 obr\u00e1zky. V\u0161echny hlavn\u00ed prohl\u00ed\u017ee\u010de tento form\u00e1t podporuj\u00ed."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "\u010c\u00edm je tento konvertor WebP v\u00fdjime\u010dn\u00fd?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Lok\u00e1ln\u00ed zpracov\u00e1n\u00ed v prohl\u00ed\u017ee\u010di",
+          "description": "Obr\u00e1zky se neodes\u00edlaj\u00ed na \u017e\u00e1dn\u00fd server \u2013 ve\u0161ker\u00e9 zpracov\u00e1n\u00ed prob\u00edh\u00e1 na va\u0161em za\u0159\u00edzen\u00ed. Va\u0161e soukrom\u00ed je chr\u00e1n\u011bno."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Okam\u017eit\u00e1 konverze",
+          "description": "V\u00fdsledky z\u00edsk\u00e1te ihned \u2013 \u017e\u00e1dn\u00e9 \u010dek\u00e1n\u00ed ve front\u011b ani zpracov\u00e1n\u00ed na serveru."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Bez limitu obr\u00e1zk\u016f",
+          "description": "P\u0159eve\u010fte tolik obr\u00e1zk\u016f, kolik pot\u0159ebujete. \u017d\u00e1dn\u00fd denn\u00ed ani session limit."
+        },
+        {
+          "icon": "RiScalesLine",
+          "title": "Nastaviteln\u00fd posuvn\u00edk kvality",
+          "description": "Nastavte kvalitu (0\u2013100) pro ka\u017ed\u00fd obr\u00e1zek a z\u00edskejte nejlep\u0161\u00ed pom\u011br velikosti a kvality."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "\u010casto kladen\u00e9 ot\u00e1zky o konvertoru WebP",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Co je form\u00e1t WebP?",
+          "answer": "WebP je modern\u00ed obr\u00e1zkov\u00fd form\u00e1t vyvinut\u00fd spole\u010dnost\u00ed Google. Nab\u00edz\u00ed lep\u0161\u00ed kompresi ne\u017e JPG (obr\u00e1zky men\u0161\u00ed o 25\u201334 %) a z\u00e1rove\u0148 podporuje pr\u016fhlednost (jako PNG). V\u0161echny hlavn\u00ed prohl\u00ed\u017ee\u010de WebP podporuj\u00ed.",
+          "answerSchemaText": "WebP je obr\u00e1zkov\u00fd form\u00e1t od Google s lep\u0161\u00ed kompres\u00ed ne\u017e JPG. Podporuj\u00ed ho v\u0161echny hlavn\u00ed prohl\u00ed\u017ee\u010de."
+        },
+        {
+          "question": "Sn\u00ed\u017e\u00ed p\u0159evod do WebP kvalitu obr\u00e1zku?",
+          "answer": "P\u0159i nastaven\u00ed kvality 75\u201385 nen\u00ed rozd\u00edl okem viditeln\u00fd. Komprese WebP je efektivn\u011bj\u0161\u00ed ne\u017e JPG \u2013 p\u0159i stejn\u00e9 vizu\u00e1ln\u00ed kvalit\u011b m\u016f\u017ee b\u00fdt soubor 3\u20135\u00d7 men\u0161\u00ed.",
+          "answerSchemaText": "P\u0159i kvalit\u011b 75\u201385 nen\u00ed rozd\u00edl viditeln\u00fd. WebP nab\u00edz\u00ed efektivn\u011bj\u0161\u00ed kompresi ne\u017e JPG."
+        },
+        {
+          "question": "Odes\u00edlaj\u00ed se obr\u00e1zky na server?",
+          "answer": "Ne. Ve\u0161ker\u00e9 zpracov\u00e1n\u00ed prob\u00edh\u00e1 ve va\u0161em prohl\u00ed\u017ee\u010di \u2013 obr\u00e1zky se nikam neodes\u00edlaj\u00ed. Po zav\u0159en\u00ed str\u00e1nky se data sma\u017eou z pam\u011bti.",
+          "answerSchemaText": "Ne. Obr\u00e1zky se zpracov\u00e1vaj\u00ed v prohl\u00ed\u017ee\u010di. Neodes\u00edlaj\u00ed se na \u017e\u00e1dn\u00fd server."
+        },
+        {
+          "question": "Existuje limit po\u010dtu obr\u00e1zk\u016f?",
+          "answer": "Ne. M\u016f\u017eete p\u0159ev\u00e9st tolik obr\u00e1zk\u016f, kolik pot\u0159ebujete. \u017d\u00e1dn\u00fd denn\u00ed ani session limit.",
+          "answerSchemaText": "Ne. Neexistuje \u017e\u00e1dn\u00fd limit po\u010dtu obr\u00e1zk\u016f k p\u0159evodu."
+        },
+        {
+          "question": "Podporuj\u00ed v\u0161echny prohl\u00ed\u017ee\u010de WebP?",
+          "answer": "Ano. V\u0161echny hlavn\u00ed prohl\u00ed\u017ee\u010de \u2013 Chrome, Firefox, Safari (od verze 14) a Edge \u2013 podporuj\u00ed form\u00e1t WebP. Pro star\u0161\u00ed prohl\u00ed\u017ee\u010de se doporu\u010duje m\u00edt z\u00e1lo\u017en\u00ed kopii v JPG.",
+          "answerSchemaText": "Ano. Chrome, Firefox, Safari 14+ a Edge v\u0161echny podporuj\u00ed WebP."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Objevte dal\u0161\u00ed n\u00e1stroje" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

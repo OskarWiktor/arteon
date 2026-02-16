@@ -1,0 +1,185 @@
+{
+  "toolKey": "paletteExtractor",
+  "locale": "sv",
+  "metadata": {
+    "title": "Gratis färgextraktor från bild – Palett från valfritt foto",
+    "description": "Ladda upp ett foto eller en logotyp och extrahera upp till 12 dominerande färger med HEX- och RGB-koder. Passar för UI, varumärke och sociala medier. Utan registrering, utan begränsningar.",
+    "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
+    "path": "/sv/verktyg/fargextraktor-fran-bild"
+  },
+  "hero": {
+    "title": "Färgextraktor från bild – hämta palett från valfritt foto",
+    "description": "Ladda upp ett foto, en logotyp eller grafik och verktyget extraherar upp till 12 dominerande färger med HEX- och RGB-koder. Analysen sker lokalt i din webbläsare.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/sv/verktyg", "label": "Verktyg" },
+    "third": { "href": "/sv/verktyg/fargextraktor-fran-bild", "label": "Färgextraktor från bild" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Färgextraktor från bild – gratis palettgenerator",
+      "alternateName": ["Extrahera färgpalett från foto eller logotyp"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorExtractor",
+      "description": "Gratis färgextraktor från bild. Ladda upp ett foto, en logotyp eller grafik och få en palett med upp till 12 dominerande färger med HEX- och RGB-koder. Bearbetningen sker i webbläsaren – filer skickas inte till någon server.",
+      "featureList": [
+        "Automatisk extraktion av upp till 12 dominerande färger",
+        "Analys av foton, logotyper och vektorgrafik",
+        "Färgkoder i HEX- och RGB-format",
+        "Kopiera färgkod till urklipp",
+        "Stöd för PNG-, JPG- och SVG-filer",
+        "Ignorerar transparenta pixlar i PNG-filer",
+        "Lokal bearbetning i webbläsaren – bilden skickas inte till server"
+      ]
+    },
+    "howTo": {
+      "name": "Hur man extraherar färger från ett foto eller en bild",
+      "description": "Hur man extraherar dominerande färger från ett foto eller en logotyp. Ladda upp en bild i PNG-, JPG- eller SVG-format och verktyget genererar en palett med upp till 12 färger med HEX-koder.",
+      "steps": [
+        { "name": "Ladda upp bild", "text": "Dra och släpp filen i det markerade området eller välj en bild från din enhet. Stödda format är PNG, JPG och SVG." },
+        { "name": "Vänta på analysen", "text": "Verktyget analyserar automatiskt bilden och extraherar dominerande färger." },
+        { "name": "Kopiera färger", "text": "Bredvid varje färg finns en kopieringsknapp – HEX-koden kopieras till systemets urklipp." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Varför extrahera färger från en bild?",
+      "html": "<p class=\"mb-4\">Varje foto, logotyp eller grafik innehåller färger som kan användas som en färdig färgpalett. Extraktorn analyserar bilden och visar vilka färger som dominerar – tillsammans med HEX-koder och RGB-värden redo att klistras in i ditt projekt.</p><p class=\"mb-4\">I praktiken innebär detta att istället för att manuellt plocka färger i ett grafikprogram (pixel för pixel), laddar du upp en bild och får en ordnad lista med upp till 12 färger. Detta är användbart vid val av färger för en webbplats, skapande av konsekvent grafik för sociala medier eller uppbyggnad av visuell identitet från befintligt material.</p><p>All analys sker lokalt i webbläsaren – bilden skickas inte till någon server.</p>"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionSteps",
+      "title": "Hur man använder färgextraktorn från bild",
+      "description": "Hela processen tar bara några sekunder:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Ladda upp bild", "description": "Dra och släpp filen i det markerade området eller välj den från din enhet. Stödda format är PNG, JPG och SVG." },
+        { "title": "2. Vänta på analysen", "description": "Verktyget analyserar automatiskt bilden och extraherar upp till 12 dominerande färger." },
+        { "title": "3. Kopiera de färger du behöver", "description": "Bredvid varje färg finns en kopieringsknapp – HEX- eller RGB-koden går till urklipp och kan klistras in direkt i ditt projekt." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Hur ser en extraherad färgpalett ut?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Exempel på färger extraherade från ett landskapsfoto</p></div>",
+      "html": "<p class=\"text-mid mb-4\">Efter uppladdning av bild visar extraktorn en lista med dominerande färger sorterade från mest till minst framträdande. Varje färg visar sin HEX-kod och RGB-värde – redo att klistra in i CSS, Figma eller valfri grafisk applikation.</p><p class=\"text-mid\">Antalet extraherade färger beror på bildens innehåll. Ett landskapsfoto ger en rikare palett (8–12 färger), medan en enkel tvåfärgslogotyp ger färre objekt.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Vilka bilder ger bäst resultat?",
+      "description": "Kvaliteten på den extraherade paletten beror på typen av uppladdad bild:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiImageLine",
+          "title": "Logotyper och grafik med begränsad palett",
+          "description": "Bilder med några tydligt separerade färger ger de mest exakta resultaten – extraktorn identifierar varje färg exakt."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Foton med tydligt motiv",
+          "description": "Produktfoton, interiörer eller landskap ger också användbara paletter, men innehåller fler nyanser – inklusive skugg- och reflexfärger."
+        },
+        {
+          "icon": "RiEraserLine",
+          "title": "PNG-filer med transparent bakgrund",
+          "description": "Transparenta pixlar hoppas automatiskt över under analysen. Om du vill extrahera färger bara från objektet (t.ex. logotyp), använd en PNG-fil utan bakgrund."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Bilder utan stor enfärgad bakgrund",
+          "description": "När bakgrunden tar upp mer yta än själva objektet dominerar dess färg resultaten. Innan uppladdning, överväg att beskära bilden till det intressanta området."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Vad gör denna färgextraktor speciell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Lokal analys – bilden lämnar inte din dator",
+          "description": "All färgextraktion sker i webbläsaren. Bilden skickas inte till någon server och efter att sidan stängs raderas data från minnet."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Upp till 12 dominerande färger från en bild",
+          "description": "Verktyget extraherar upp till 12 färger sorterade från mest framträdande – tillräckligt för att bygga en komplett projektfärgpalett."
+        },
+        { "icon": "RiFileImageLine", "title": "Tre populära bildformat", "description": "Stödda format är PNG, JPG och SVG. PNG-filer med transparent bakgrund ger bäst resultat." },
+        {
+          "icon": "RiGlobalLine",
+          "title": "HEX- och RGB-koder redo att klistra in",
+          "description": "Varje extraherad färg har sin HEX-kod (t.ex. #2C5F2D) och RGB-värde. Koden kan kopieras till urklipp och klistras in direkt i CSS, Figma eller Photoshop."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Var man kan använda extraherade färger från bild",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Bygga visuell identitet",
+          "description": "Ladda upp ett foto som fångar varumärkets stämning och extrahera färger som utgångspunkt för varumärkets färgpalett."
+        },
+        {
+          "icon": "RiLayoutMasonryLine",
+          "title": "Grafik för sociala medier",
+          "description": "Extrahera färger från produktfoton och använd dem som bakgrunder eller accenter i grafik. Inlägg baserade på färger från samma källa ser konsekventa ut."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Matcha färger med webbplatsen",
+          "description": "Extrahera färger från logotypen och använd dem som webbplatsens färgpalett – huvudfärg, accentfärg, bakgrundsnyanser. HEX-koder klistras in direkt i CSS."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Utöka befintlig palett",
+          "description": "Extraherad grundfärg kan användas i <a href=\"/sv/verktyg/fargpalettgenerator\">färgpalettgeneratorn</a> för att skapa en komplett uppsättning harmoniska färger baserat på färgteori."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor om färgextraktorn från bild",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kräver färgextraktorn registrering?",
+          "answer": "Nej. Verktyget är helt gratis och kräver ingen inloggning eller registrering. Bilden analyseras lokalt i webbläsaren – den skickas inte till någon server.",
+          "answerSchemaText": "Nej. Verktyget är gratis och kräver ingen registrering. Bilden analyseras lokalt i webbläsaren."
+        },
+        {
+          "question": "Hur skiljer sig färgextraktorn från en palettgenerator?",
+          "answer": "Extraktorn hämtar färger från en befintlig bild – den analyserar ett foto och visar vilka färger som dominerar. Färgpalettgeneratorn fungerar tvärtom: du anger en grundfärg och verktyget skapar harmoniska uppsättningar baserade på färgteori. Båda verktygen kompletterar varandra.",
+          "answerSchemaText": "Extraktorn hämtar färger från en bild. Generatorn skapar en palett från en grundfärg. Båda verktygen kompletterar varandra."
+        },
+        {
+          "question": "Hur många färger extraherar extraktorn från en bild?",
+          "answer": "Verktyget extraherar upp till 12 dominerande färger. Det exakta antalet beror på bildens innehåll – om grafiken bara har två färger (t.ex. en enkel logotyp), kommer resultaten att innehålla färre objekt.",
+          "answerSchemaText": "Upp till 12 dominerande färger, sorterade från mest till minst framträdande."
+        },
+        {
+          "question": "Vilka bildformat stöder färgextraktorn?",
+          "answer": "Stödda format är PNG, JPG (JPEG) och SVG. PNG-filer med transparent bakgrund ger bättre resultat eftersom transparenta pixlar hoppas över under analysen.",
+          "answerSchemaText": "PNG, JPG och SVG. PNG med transparent bakgrund ger bäst resultat."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Utforska fler verktyg" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "toolKey": "wordCounter",
+  "locale": "sw",
+  "metadata": {
+    "title": "Kihesabuji Maneno na Herufi Bure \u2013 Angalia Urefu wa Maandishi kwa SEO",
+    "description": "Hesabu maneno, herufi, aya na muda wa kusoma papo hapo. Angalia urefu bora wa maandishi kwa SEO \u2013 chapisho la blogu, ukurasa wa bidhaa, ukurasa wa kutua. Bila usajili, bila kikomo.",
+    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "path": "/sw/zana/kihesabuji-maneno-na-herufi"
+  },
+  "hero": {
+    "title": "Kihesabuji maneno na herufi na tathmini ya urefu",
+    "description": "Bandika maandishi yako, chagua aina ya ukurasa, na zana itaonyesha idadi ya maneno, herufi, aya, na kutathmini kama urefu unafaa kwa aina hiyo ya maudhui.",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/sw/zana", "label": "Zana" },
+    "third": { "href": "/sw/zana/kihesabuji-maneno-na-herufi", "label": "Kihesabuji maneno na herufi" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Kihesabuji maneno na herufi bure",
+      "alternateName": [
+        "Kihesabuji maneno na tathmini ya urefu wa maandishi",
+        "Kihesabuji herufi",
+        "Zana ya kuhesabu maneno kwa waandishi",
+        "Kikokotoo cha muda wa kusoma",
+        "Kihesabuji maneno kwa SEO",
+        "Urefu bora wa maandishi kwa chapisho la blogu"
+      ],
+      "applicationSubCategory": "TextApplication",
+      "description": "Kihesabuji bure cha maneno na herufi. Huangalia idadi ya maneno, herufi, aya, na muda wa kusoma unaokadiriwa. Hutathmini urefu wa maandishi kwa aina tofauti za ukurasa: maelezo ya bidhaa, ukurasa wa huduma, ukurasa wa nyumbani, ukurasa wa kutua, chapisho la blogu, mwongozo.",
+      "featureList": [
+        "Idadi ya maneno",
+        "Idadi ya herufi zenye na zisizo na nafasi",
+        "Idadi ya aya",
+        "Muda wa kusoma unaokadiriwa",
+        "Tathmini ya urefu wa maandishi kwa aina tofauti za ukurasa",
+        "Viwango vinavyopendekezwa kwa: maelezo ya bidhaa, ukurasa wa huduma, ukurasa wa nyumbani, ukurasa wa kutua, chapisho la blogu, mwongozo",
+        "Nakili ripoti kwenye ubao wa kunakili"
+      ]
+    },
+    "howTo": {
+      "name": "Jinsi ya kutumia kihesabuji maneno na herufi",
+      "description": "Angalia urefu wa maandishi yako na utathmini kama yanafaa kwa aina maalum ya ukurasa.",
+      "steps": [
+        { "name": "Chagua aina ya ukurasa", "text": "Chagua kutoka kwenye orodha unayoandikia aina gani ya ukurasa. Kila aina ina viwango tofauti vinavyopendekezwa vya idadi ya maneno." },
+        { "name": "Bandika maandishi yako", "text": "Bandika au uandike maandishi kwenye sehemu ya maandishi. Zana itahesabu kiotomatiki maneno, herufi, aya, na kukokotoa muda wa kusoma." },
+        { "name": "Angalia tathmini", "text": "Angalia mwambaa wa maendeleo wenye rangi na hali. Kijani inamaanisha urefu mzuri, njano inamaanisha fupi sana, nyekundu inamaanisha ndefu sana." },
+        { "name": "Nakili ripoti", "text": "Kitufe cha Nakili Ripoti kunakili muhtasari wenye takwimu zote na tathmini ya urefu kwenye ubao wa kunakili." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Kihesabuji bure cha maneno \u2013 hesabu na utathmini urefu wa maandishi",
+      "html": "<p class=\"text-mid\">Zana hii ya kuhesabu maneno inakuwezesha kuangalia haraka urefu wa maandishi yoyote. Bandika maudhui yako na kihesabuji kitahesabu maneno, herufi, na aya. Utaona pia dakika ngapi inachukua kusoma na kama urefu unafaa kwa aina ya ukurasa unayochagua.</p><p class=\"text-mid mt-3\">Kila aina ya ukurasa ina madhumuni tofauti \u2013 maelezo ya bidhaa hujibu maswali ya mnunuzi, chapisho la blogu linashughulikia mada kwa kina, na ukurasa wa huduma unaeleza mteja atapata nini. Kihesabuji kinaonyesha viwango kwa kila moja ya aina hizi kulingana na uchambuzi wa maudhui yanayoshika nafasi nzuri.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Jinsi ya kutumia kihesabuji maneno na herufi",
+      "description": "Kuangalia urefu wa maandishi kunachukua chini ya dakika moja:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiListCheck2",
+          "title": "1. Chagua aina ya ukurasa",
+          "description": "Chagua kutoka kwenye orodha unayoandikia aina gani ya ukurasa. Kila aina ina viwango tofauti vinavyopendekezwa vya idadi ya maneno."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Bandika maandishi yako",
+          "description": "Bandika au uandike maandishi kwenye sehemu kubwa upande wa kulia. Zana itahesabu mara moja maneno, herufi (zenye na zisizo na nafasi), aya, na kukokotoa muda wa kusoma."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "3. Angalia tathmini",
+          "description": "Angalia mwambaa wa maendeleo wenye rangi na hali. Kijani inamaanisha urefu mzuri, njano inamaanisha fupi sana, nyekundu inamaanisha ndefu sana."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Nakili ripoti",
+          "description": "Kitufe cha Nakili Ripoti kunakili muhtasari wenye idadi ya maneno, herufi, aya, muda wa kusoma, na tathmini ya urefu kwenye ubao wa kunakili."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kihesabuji kinapima nini \u2013 maneno, herufi, muda wa kusoma",
+      "description": "Kihesabuji kinafuatilia vipimo vitano muhimu:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiText", "title": "Maneno", "description": "Idadi ya jumla ya maneno. Hii ndiyo kiashiria kikuu cha urefu wa maandishi." },
+        { "icon": "RiSpaceShipLine", "title": "Herufi (zenye nafasi)", "description": "Herufi zote ikiwa ni pamoja na nafasi. Muhimu wakati CMS ina kikomo cha herufi (mfano orodha za soko)." },
+        { "icon": "RiHashtag", "title": "Herufi (zisizo na nafasi)", "description": "Herufi, nambari, na alama tu. Wakati mwingine zinahitajika na mashine za kuchapisha au kwa ankara za tafsiri." },
+        { "icon": "RiParagraph", "title": "Aya", "description": "Idadi ya vitalu vya maandishi vilivyotenganishwa na mistari tupu. Husaidia kutathmini kama maandishi yana muundo mzuri." },
+        {
+          "icon": "RiTimeLine",
+          "title": "Muda wa kusoma",
+          "description": "Kikokotoo cha muda wa kusoma kinaonyesha dakika ngapi inachukua kusoma maandishi kwa kasi ya wastani ya maneno 200 kwa dakika."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Jinsi ya kutafsiri matokeo",
+      "subtitle": "Hali za tathmini",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">Urefu mzuri</span><span class=\"text-mid text-sm!\">Maandishi yako ndani ya kiwango</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Chini ya kiwango</span><span class=\"text-mid text-sm!\">Maandishi ni mafupi kuliko kawaida</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Juu ya kiwango</span><span class=\"text-mid text-sm!\">Maandishi ni marefu kuliko kawaida</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Maendeleo</span><span class=\"text-mid\">1200 / 1200\u20133000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Mwambaa wa maendeleo wenye rangi na hali husaidia kutathmini haraka urefu wa maandishi:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Urefu mzuri</strong> (kijani) \u2013 maandishi yako ndani ya kiwango cha makadirio kwa aina ya ukurasa iliyochaguliwa.</li><li><strong class=\"text-warning-text\">Chini ya kiwango</strong> (njano) \u2013 maandishi ni mafupi kuliko kawaida kwa aina hii ya ukurasa. Ikiwa yanajibu maswali yote ya msomaji, urefu unaweza kuwa sawa.</li><li><strong class=\"text-error-text\">Juu ya kiwango</strong> (nyekundu) \u2013 maandishi ni marefu kuliko kawaida. Ikiwa kila aya inaongeza habari mpya, urefu unahalalishwa.</li></ul><p class=\"text-mid mt-4\">Viwango vinategemea uchambuzi wa maudhui yanayoshika nafasi nzuri kwenye injini za utafutaji. Ikiwa maandishi yanajibu maswali ya msomaji, urefu unafaa bila kujali matokeo ya kihesabuji.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Maandishi yanapaswa kuwa na maneno mangapi \u2013 urefu bora kwa SEO",
+      "html": "<p class=\"text-mid mb-4\">Viwango vilivyo hapa chini vinategemea uchambuzi wa maudhui yanayoshika nafasi nzuri kwenye injini za utafutaji. Urefu wa maandishi peke yake hauathiri nafasi kwenye Google \u2013 kinachohusika ni kama maudhui yanajibu maswali ya msomaji.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Aina ya ukurasa</th><th class=\"py-2 pr-4 font-semibold\">Kiwango</th><th class=\"py-2 font-semibold\">Lini mafupi, lini marefu?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Maelezo ya bidhaa</td><td class=\"py-2 pr-4 whitespace-nowrap\">Maneno 80\u2013400</td><td class=\"text-primary-light0 py-2 text-sm\">Bidhaa rahisi (mfano kikombe) \u2013 maneno 80\u2013150. Vifaa ngumu (mfano laptop) \u2013 maneno 300\u2013400.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Ukurasa wa huduma</td><td class=\"py-2 pr-4 whitespace-nowrap\">Maneno 500\u20131500</td><td class=\"text-primary-light0 py-2 text-sm\">Huduma ya ndani (mfano fundi bomba) \u2013 maneno 500\u2013700. Huduma ya B2B yenye mchakato na FAQ \u2013 maneno 1,200\u20131,500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Ukurasa wa nyumbani</td><td class=\"py-2 pr-4 whitespace-nowrap\">Maneno 400\u20131000</td><td class=\"text-primary-light0 py-2 text-sm\">Ukurasa wa nyumbani unawasilisha thamani kuu na kuongoza wageni zaidi \u2013 maandishi yanasaidia urambazaji.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Ukurasa wa kutua</td><td class=\"py-2 pr-4 whitespace-nowrap\">Maneno 600\u20132500</td><td class=\"text-primary-light0 py-2 text-sm\">Ofa rahisi \u2013 maneno 600\u20131,000. Ofa inayohitaji maelezo ya mchakato \u2013 maneno 1,500\u20132,500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Chapisho la blogu</td><td class=\"py-2 pr-4 whitespace-nowrap\">Maneno 1200\u20133000</td><td class=\"text-primary-light0 py-2 text-sm\">How-to fupi \u2013 maneno 1,200\u20131,500. Mwongozo wa kina \u2013 maneno 2,500\u20133,000.</td></tr><tr><td class=\"py-2 pr-4\">Mwongozo / pillar page</td><td class=\"py-2 pr-4 whitespace-nowrap\">Maneno 3000\u20137000</td><td class=\"text-primary-light0 py-2 text-sm\">Rasilimali kamili inayoshughulikia mada kutoka pembe nyingi. Inaunganisha kwenye kurasa ndogo za kina.</td></tr></tbody></table></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kihesabuji cha maneno ni kwa nani?",
+      "description": "Zana ya kuhesabu maneno kwa waandishi na zaidi \u2013 hapa ni nani anayetumia kihesabuji zaidi:",
+      "grid": "three",
+      "items": [
+        { "icon": "RiEditLine", "title": "Waandishi na watengenezaji wa maudhui", "description": "Angalia kama maandishi yako ndani ya kiwango kinachopendekezwa kwa aina maalum ya ukurasa." },
+        { "icon": "RiBloggerLine", "title": "Wanablogu", "description": "Fuatilia urefu wa machapisho ili kudumisha uthabiti wa machapisho. Angalia muda wa kusoma kabla ya kuchapisha." },
+        { "icon": "RiShoppingBagLine", "title": "Wamiliki wa maduka", "description": "Thibitisha maelezo ya bidhaa dhidi ya vikomo vya herufi kwenye majukwaa ya kuuza (Amazon, eBay, Etsy)." },
+        { "icon": "RiSearchLine", "title": "Wataalamu wa SEO", "description": "Tathmini kama maudhui ya ukurasa yana urefu bora ikilinganishwa na washindani." },
+        { "icon": "RiGraduationCapLine", "title": "Wanafunzi na wasomi", "description": "Angalia kama karatasi inakidhi kikomo kinachohitajika cha maneno au herufi." },
+        { "icon": "RiTranslate2", "title": "Watafsiri", "description": "Hesabu herufi zisizo na nafasi kwa bei za tafsiri (kitengo cha kawaida cha malipo)." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Ni nini kinachofanya kihesabuji hiki cha maneno na herufi kuwa maalum?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Aina sita za ukurasa zenye viwango vinavyopendekezwa",
+          "description": "Maelezo ya bidhaa, ukurasa wa huduma, ukurasa wa nyumbani, ukurasa wa kutua, chapisho la blogu, na mwongozo \u2013 kila aina ina viwango vyake."
+        },
+        { "icon": "RiUserLine", "title": "Usindikaji wa ndani kwenye kivinjari", "description": "Maandishi yako hayatumwi kwenye seva yoyote \u2013 uchambuzi wote unafanyika kwenye kifaa chako." },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Tathmini ya urefu wa maandishi",
+          "description": "Hatuhesabu maneno tu \u2013 unapata habari kama urefu unafaa kwa aina ya ukurasa iliyochaguliwa."
+        },
+        { "icon": "RiBarChartLine", "title": "Viwango vilivyotegemea SEO", "description": "Urefu unaopendekeza unategemea uchambuzi wa maudhui yanayoshika nafasi nzuri kwenye injini za utafutaji." },
+        { "icon": "RiTimerLine", "title": "Muda wa kusoma", "description": "Jua mara moja dakika ngapi itachukua wasomaji kupitia maandishi." },
+        { "icon": "RiFileCopyLine", "title": "Nakili ripoti", "description": "Kitufe cha Nakili Ripoti kunakili muhtasari wenye takwimu zote na tathmini ya urefu kwenye ubao wa kunakili." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Maswali yanayoulizwa mara kwa mara kuhusu kihesabuji cha maneno na herufi",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Je, urefu wa maandishi unaathiri nafasi kwenye Google?",
+          "answer": "Urefu wa maandishi peke yake si sababu ya nafasi. Google hutathmini kama maudhui yanajibu swali la mtumiaji na kama yana thamani kwao. Maandishi mafupi yanayojibu swali kwa ukamilifu yanaweza kushika nafasi nzuri \u2013 kinachohusika ni thamani kwa msomaji.",
+          "answerSchemaText": "Urefu wa maandishi si sababu ya moja kwa moja ya nafasi. Google hutathmini thamani ya maudhui kwa mtumiaji."
+        },
+        {
+          "question": "Kwa nini viwango vya maneno ni pana sana?",
+          "answer": "Aina moja ya ukurasa inaweza kuhitaji urefu tofauti kulingana na ugumu wa mada. Maelezo ya bidhaa rahisi (mfano kikombe) ni maneno 80\u2013150. Maelezo ya laptop ni maneno 300\u2013400 kwa sababu wanunuzi wana maswali zaidi.",
+          "answerSchemaText": "Tofauti inatoka kwa ugumu wa mada \u2013 bidhaa rahisi inahitaji maneno machache kuliko ngumu."
+        },
+        {
+          "question": "Kikokotoo cha muda wa kusoma kinafanya kazi vipi?",
+          "answer": "Zana hugawanya idadi ya maneno kwa 200 \u2013 kasi ya wastani ya kusoma kwa maandishi ya kawaida. Maandishi ya kiufundi yanasomwa polepole zaidi. Makala nyepesi ya mtindo wa maisha \u2013 haraka zaidi. Matokeo ni thamani ya makadirio.",
+          "answerSchemaText": "Zana inachukulia kasi ya wastani ya kusoma ya maneno 200 kwa dakika. Hii ni thamani ya makadirio."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Gundua zana nyingine" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

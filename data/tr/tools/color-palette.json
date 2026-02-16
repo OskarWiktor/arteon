@@ -1,0 +1,285 @@
+{
+  "toolKey": "colorPalette",
+  "locale": "tr",
+  "metadata": {
+    "title": "Ücretsiz Renk Paleti Oluşturucu – Tek Renkten 9 Palet",
+    "description": "Tek bir temel renkten 9 renk paleti oluşturun: monokromatik, tamamlayıcı, üçlü, pastel ve daha fazlası. HEX kodlarını tek tıkla kopyalayın. Kayıt gerektirmez, sınırsız.",
+    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "path": "/tr/araclar/renk-paleti-olusturucu"
+  },
+  "hero": {
+    "title": "Renk paleti oluşturucu",
+    "description": "Tek bir temel renk girin, araç 9 uyumlu renk paleti oluşturacaktır: monokromatik, tamamlayıcı, üçlü, pastel ve daha fazlası. Her renk HEX koduyla kopyalanabilir.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/tr/araclar",
+      "label": "Araçlar"
+    },
+    "third": {
+      "href": "/tr/araclar/renk-paleti-olusturucu",
+      "label": "Renk paleti oluşturucu"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Renk paleti oluşturucu",
+      "alternateName": ["Renk şeması oluşturucu", "Renk paleti oluşturma aracı", "Renk eşleştirme aracı", "Renk uyumu oluşturucu", "Renk kombinasyonu oluşturucu", "Renk şeması aracı"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorPaletteGenerator",
+      "description": "Ücretsiz renk paleti oluşturucu. Bir HEX renk girin ve araç 9 şema oluşturacaktır: monokromatik, analog, tamamlayıcı, üçlü, bölünmüş tamamlayıcı, pastel, koyu, tonal ve minimalist. Her renk HEX kodu ve HSL değeriyle kopyalanabilir.",
+      "featureList": [
+        "Monokromatik şema — tek rengin tonları",
+        "Analog şema — renk çarkında komşu renkler",
+        "Tamamlayıcı şema — karşıt renkler",
+        "Üçlü şema — eşit aralıklarda 3 renk",
+        "Bölünmüş tamamlayıcı şema — temel renk ve tamamlayıcısının 2 komşusu",
+        "Pastel palet — açık, yumuşak tonlar",
+        "Koyu palet — koyu temalar için derin renkler",
+        "Tonal palet — tek tonun açıklık skalası",
+        "Minimalist palet — açık nötrlerle güçlü vurgu",
+        "HEX formatında temel renk",
+        "Görsel seçim için renk seçici",
+        "Rastgele başlangıç rengi",
+        "HEX kodunu panoya kopyalama",
+        "Her rengin yanında HSL değeri görüntüleme",
+        "Tarayıcıda yerel işleme"
+      ]
+    },
+    "howTo": {
+      "name": "Tek temel renkten renk paleti nasıl oluşturulur",
+      "description": "Tek bir temel renkten 9 renk paleti nasıl oluşturulur: monokromatik, tamamlayıcı, üçlü, pastel ve daha fazlası. Her renk HEX koduyla kopyalanabilir.",
+      "steps": [
+        {
+          "name": "Temel rengi seçin",
+          "text": "Metin alanına HEX kodu girin veya görsel olarak renk seçmek için renk seçiciyi kullanın."
+        },
+        {
+          "name": "Rengi onaylayın",
+          "text": "Seçilen rengi Rengi Güncelle düğmesiyle onaylayın — araç seçtiğiniz temel renge göre paletler oluşturacaktır."
+        },
+        {
+          "name": "Paletleri inceleyin",
+          "text": "Araç otomatik olarak 9 farklı palet oluşturacaktır: monokromatik, analog, tamamlayıcı, üçlü, bölünmüş tamamlayıcı, pastel, koyu, tonal ve minimalist."
+        },
+        {
+          "name": "Renkleri kopyalayın",
+          "text": "Her rengin yanında bir Kopyala düğmesi bulacaksınız — HEX kodu sistem panonuza kopyalanır."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Neden renk paleti oluşturulmalı?",
+      "html": "<p class=\"text-mid\">Tutarlı bir renk paleti her görsel projenin temelidir — web sitesinden, logoya, basılı materyallere kadar. Birbiriyle uyumlu renkleri manuel olarak seçmek renk teorisi bilgisi gerektirir. Oluşturucu bunu otomatik yapar: bir temel renk sağlarsınız (ör. logo renginiz) ve araç kanıtlanmış renk uyumu şemalarına dayalı 9 renk seti oluşturur.</p><p class=\"text-mid mt-3\">Oluşturulan her renk HEX kodu (ör. #4F6BF5) ve HSL değeri (ton, doygunluk, açıklık) ile birlikte gelir. HEX kodu doğrudan CSS, Figma, Canva veya herhangi bir grafik uygulamasına yapıştırılabilir.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Renk paleti oluşturucu nasıl kullanılır",
+      "description": "Tüm süreç sadece birkaç saniye sürer:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Temel rengi girin",
+          "description": "Metin alanına HEX kodu yazın (ör. #4F6BF5) veya renk seçiciden bir renk seçin. Rastgele Renk düğmesini de kullanabilirsiniz."
+        },
+        {
+          "title": "2. Seçiminizi onaylayın",
+          "description": "Rengi Güncelle düğmesine tıkladıktan sonra araç farklı renk uyumu şemalarına dayalı 9 paleti otomatik olarak oluşturacaktır."
+        },
+        {
+          "title": "3. İhtiyacınız olan renkleri kopyalayın",
+          "description": "Her rengin yanında bir Kopyala düğmesi var — HEX kodu panoya kopyalanır ve doğrudan projenize yapıştırılabilir."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Araç hangi renk şemalarını oluşturur?",
+      "description": "Oluşturucu 9 palet türü oluşturur — her biri farklı bir renk teorisi ilkesine dayanır:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiStackLine",
+          "title": "Monokromatik palet",
+          "description": "Tek rengin birkaç tonu — açıktan koyuya. Tüm renkler renk çarkında aynı tona sahiptir ve yalnızca açıklıkta farklılık gösterir. Tutarlılığın önemli olduğu zarif, minimalist tasarımlarda iyi çalışır."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Analog palet",
+          "description": "Renk çarkında komşu renkler (temelden her iki yönde yaklaşık 30° kaydırılmış). Uyumlu, yumuşak renk geçişleri oluşturur. Sıcak veya soğuk atmosfer oluşturan projeler için harika."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Tamamlayıcı palet",
+          "description": "Temel renk ve renk çarkında karşısındaki renk (180° kayma). Güçlü görsel kontrast oluşturur. Bir öğenin dikkat çekmesi gereken yerlerde yararlı — düğmeler, vurgulanan başlıklar, promosyon bannerları."
+        },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Üçlü palet",
+          "description": "Renk çarkında 120° aralıklarla yerleştirilmiş üç renk — eşkenar üçgen oluşturur. Canlı, dinamik bir kombinasyon. Yaratıcı projelerde iyi çalışır: genç marka kimliği, reklam materyalleri, afişler."
+        },
+        {
+          "icon": "RiCursorLine",
+          "title": "Bölünmüş tamamlayıcı palet",
+          "description": "Tamamlayıcı paletin daha yumuşak versiyonu. Tek karşıt renk yerine, tamamlayıcıdan yaklaşık 30° kaydırılmış iki renk kullanır. Net kontrast verir ancak güçlü görsel gerilim olmadan."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Pastel palet",
+          "description": "Azaltılmış doygunluk ve artırılmış açıklıkla aynı ton — yumuşak, nazik renkler. Kozmetik, çocuk modası ve yiyecek sektöründe popüler. Açık arka plan ve beyaz alanla iyi eşleşir."
+        },
+        {
+          "icon": "RiMoonLine",
+          "title": "Koyu palet",
+          "description": "Yüksek doygunluk ve azaltılmış açıklıkta temel renk — derin, yoğun renkler. Web siteleri ve uygulamalar için koyu temalar tasarlamak ve premium markalar için materyaller için yararlı."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Tonal palet",
+          "description": "Tek tonun birkaç açıklık adımı — çok açıktan koyuya. Tasarım sistemlerinde kullanılan tonal skalalara benzer (ör. 50'den 900'e tonlar). Aynı rengin varyantlara ihtiyaç duyduğu arayüzler oluşturmak için yararlı."
+        },
+        {
+          "icon": "RiContractLeftRightLine",
+          "title": "Minimalist palet",
+          "description": "Tek cesur renk vurgusu ve birkaç çok açık, yumuşak nötr. Paletin geri kalanı sessiz kalır. Çok beyaz alanlı modern arayüzlerde iyi çalışır — tipik ürün ve açılış sayfası stili."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Renk paleti oluşturucu neye dayanır?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (ton)</span><span class=\"text-mid\">Renk çarkında 0°–360°</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (doygunluk)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (açıklık)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">Tüm paletler, temel rengin HSL renk uzayında matematiksel dönüşümüyle oluşturulur. HSL bir rengi üç değerle tanımlar: ton (H) renk çarkındaki konum (0°–360°), doygunluk (S) renk yoğunluğunu belirler ve açıklık (L) — rengin ne kadar parlak veya koyu olduğunu.</p><p class=\"text-mid mt-3\">Tamamlayıcı, üçlü ve bölünmüş tamamlayıcı paletler renk çarkı geometrisine dayanır — renkler eşit açısal aralıklara yerleştirilir, görsel denge oluşturur. Monokromatik, pastel ve koyu paletler aynı tonu koruyarak yalnızca açıklık ve doygunluğu değiştirir.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Oluşturulan renk paletleri nerede kullanılır",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Marka görsel kimliği",
+          "description": "Mevcut logo için tamamlayıcı renkler seçin veya sıfırdan marka paleti oluşturun — kartvizitler, kırtasiye ve pazarlama materyalleri için."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Web siteleri",
+          "description": "Birincil rengi, vurgu rengini ve arka plan tonlarını belirleyin. Kopyalanan HEX kodları doğrudan CSS stillerine veya tema yapılandırmasına yapıştırılır."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Uygulama arayüzleri",
+          "description": "Tonal palet tek rengin açıklık varyantlarını sağlar — arka planlar için daha açık, metin için daha koyu, kenarlıklar ve etkileşimli durumlar için ara tonlar."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Sosyal medya grafikleri",
+          "description": "Gönderiler, hikayeler ve profil kapakları için tutarlı renkler. Tekdüze, tanınabilir stil istediğinizde analog veya pastel paletler iyi çalışır."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Sunumlar ve belgeler",
+          "description": "Slaytlar, grafikler ve infografikler için uyumlu renk setleri. Monokromatik veya minimalist paletler görsel düzeni korur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Palet oluşturucu sorun giderme",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Renk girdikten sonra paletler değişmiyor",
+          "description": "Sadece HEX kodu yazmak paletleri otomatik oluşturmaz — değişikliği Rengi Güncelle düğmesiyle onaylamanız gerekir. Yalnızca onaydan sonra araç 9 şemanın tümünü yeniden hesaplar."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Geçersiz format mesajı",
+          "description": "Oluşturucu yalnızca başında # olan HEX formatını kabul eder, ör. #FF5500. # olmadan formatlar (ör. FF5500) veya RGB gösteriminde (ör. rgb(255,85,0)) desteklenmez."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Kısa ve tam HEX formatı",
+          "description": "Her iki format da desteklenir: tam #RRGGBB (ör. #FF5500) ve kısa #RGB (ör. #F50). Oluşturucu her ikisini de otomatik olarak tanır ve aynı şekilde işler."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Renk paleti oluşturucu hakkında sıkça sorulan sorular",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Temel renk hangi formatta olmalı?",
+          "answer": "Oluşturucu HEX formatında renkleri kabul eder — hem kısa (ör. #F50) hem de tam (ör. #FF5500). Metin alanının yanında görsel olarak renk seçmenize olanak tanıyan bir renk seçici bulacaksınız. Oluşturulan paletler her rengin HEX kodunu ve HSL değerini gösterir.",
+          "answerSchemaText": "Oluşturucu HEX renklerini (#RGB veya #RRGGBB) kabul eder. Oluşturulan her rengin HEX kodu ve HSL değeri vardır."
+        },
+        {
+          "question": "Her palet kaç renk içerir?",
+          "answer": "Her palet 4 ile 6 renk içerir. Sayı şema türüne bağlıdır — monokromatik ve tonal paletler daha fazla ton üretir (tek tonun açıklık skalası), tamamlayıcı ve üçlü paletler ise daha az kontrastlı renge odaklanır.",
+          "answerSchemaText": "Her palet şema türüne bağlı olarak 4 ile 6 renk içerir."
+        },
+        {
+          "question": "HSL renk uzayı nedir ve nasıl okunur?",
+          "answer": "HSL, bir rengi üç değerle tanımlamanın bir yoludur: H (ton, renk çarkında 0°–360°), S (doygunluk, 0%–100%) ve L (açıklık, 0%–100%). Oluşturucu her rengin yanında HSL değerlerini gösterir, paletteki renklerin nasıl farklı olduğunu anlamayı kolaylaştırır — ör. monokromatik palet aynı tonu (H) korurken yalnızca açıklığı (L) değiştirir.",
+          "answerSchemaText": "HSL rengi ton (H), doygunluk (S) ve açıklık (L) ile tanımlar. Oluşturucu bu değerleri her rengin yanında gösterir."
+        },
+        {
+          "question": "Oluşturulan paletleri ticari olarak kullanabilir miyim?",
+          "answer": "Evet. Oluşturulan renk paletlerini herhangi bir projede — ticari ve ticari olmayan, lisans kısıtlaması olmadan kullanabilirsiniz.",
+          "answerSchemaText": "Evet, oluşturulan paletler ticari ve ticari olmayan projelerde kısıtlama olmadan kullanılabilir."
+        },
+        {
+          "question": "Renk paleti oluşturucu giriş veya ödeme gerektiriyor mu?",
+          "answer": "Oluşturucu tamamen ücretsizdir ve giriş veya kayıt gerektirmez. Renkler tarayıcıda yerel olarak oluşturulur — hiçbir veri harici sunuculara gönderilmez.",
+          "answerSchemaText": "Oluşturucu ücretsizdir, giriş gerektirmez. Renkler tarayıcıda yerel olarak oluşturulur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Diğer araçları keşfedin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

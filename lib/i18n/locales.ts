@@ -8,8 +8,42 @@ import esDict from '@/dictionaries/es.json';
 import frDict from '@/dictionaries/fr.json';
 import ptDict from '@/dictionaries/pt.json';
 import itDict from '@/dictionaries/it.json';
+import roDict from '@/dictionaries/ro.json';
+import nlDict from '@/dictionaries/nl.json';
+import huDict from '@/dictionaries/hu.json';
+import idDict from '@/dictionaries/id.json';
+import viDict from '@/dictionaries/vi.json';
+import trDict from '@/dictionaries/tr.json';
+import tlDict from '@/dictionaries/tl.json';
+import swDict from '@/dictionaries/sw.json';
+import msDict from '@/dictionaries/ms.json';
+import csDict from '@/dictionaries/cs.json';
+import svDict from '@/dictionaries/sv.json';
+import sqDict from '@/dictionaries/sq.json';
+import daDict from '@/dictionaries/da.json';
 
-const dicts = { pl: plDict, en: enDict, de: deDict, es: esDict, fr: frDict, pt: ptDict, it: itDict } as const;
+const dicts = {
+  pl: plDict,
+  en: enDict,
+  de: deDict,
+  es: esDict,
+  fr: frDict,
+  pt: ptDict,
+  it: itDict,
+  ro: roDict,
+  nl: nlDict,
+  hu: huDict,
+  id: idDict,
+  vi: viDict,
+  tr: trDict,
+  tl: tlDict,
+  sw: swDict,
+  ms: msDict,
+  cs: csDict,
+  sv: svDict,
+  sq: sqDict,
+  da: daDict,
+} as const;
 
 export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
   pl: {
@@ -85,6 +119,149 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/it/chi-siamo',
     contactHref: '/it/contatto',
     privacyHref: '/it/informativa-sulla-privacy',
+  },
+  ro: {
+    lang: 'ro',
+    hreflang: 'ro',
+    label: 'RO',
+    name: 'Română',
+    toolsBasePath: '/ro/instrumente',
+    toolsIndexHref: '/ro/instrumente',
+    aboutHref: '/ro/despre-noi',
+    contactHref: '/ro/contact',
+    privacyHref: '/ro/politica-de-confidentialitate',
+  },
+  nl: {
+    lang: 'nl',
+    hreflang: 'nl',
+    label: 'NL',
+    name: 'Nederlands',
+    toolsBasePath: '/nl/tools',
+    toolsIndexHref: '/nl/tools',
+    aboutHref: '/nl/over-ons',
+    contactHref: '/nl/contact',
+    privacyHref: '/nl/privacybeleid',
+  },
+  hu: {
+    lang: 'hu',
+    hreflang: 'hu',
+    label: 'HU',
+    name: 'Magyar',
+    toolsBasePath: '/hu/eszkozok',
+    toolsIndexHref: '/hu/eszkozok',
+    aboutHref: '/hu/rolunk',
+    contactHref: '/hu/kapcsolat',
+    privacyHref: '/hu/adatvedelmi-iranyelvek',
+  },
+  id: {
+    lang: 'id',
+    hreflang: 'id',
+    label: 'ID',
+    name: 'Bahasa Indonesia',
+    toolsBasePath: '/id/alat',
+    toolsIndexHref: '/id/alat',
+    aboutHref: '/id/tentang-kami',
+    contactHref: '/id/kontak',
+    privacyHref: '/id/kebijakan-privasi',
+  },
+  vi: {
+    lang: 'vi',
+    hreflang: 'vi',
+    label: 'VI',
+    name: 'Tiếng Việt',
+    toolsBasePath: '/vi/cong-cu',
+    toolsIndexHref: '/vi/cong-cu',
+    aboutHref: '/vi/ve-chung-toi',
+    contactHref: '/vi/lien-he',
+    privacyHref: '/vi/chinh-sach-bao-mat',
+  },
+  tr: {
+    lang: 'tr',
+    hreflang: 'tr',
+    label: 'TR',
+    name: 'Türkçe',
+    toolsBasePath: '/tr/araclar',
+    toolsIndexHref: '/tr/araclar',
+    aboutHref: '/tr/hakkimizda',
+    contactHref: '/tr/iletisim',
+    privacyHref: '/tr/gizlilik-politikasi',
+  },
+  tl: {
+    lang: 'tl',
+    hreflang: 'tl',
+    label: 'TL',
+    name: 'Filipino',
+    toolsBasePath: '/tl/mga-kasangkapan',
+    toolsIndexHref: '/tl/mga-kasangkapan',
+    aboutHref: '/tl/tungkol-sa-amin',
+    contactHref: '/tl/makipag-ugnayan',
+    privacyHref: '/tl/patakaran-sa-privacy',
+  },
+  sw: {
+    lang: 'sw',
+    hreflang: 'sw',
+    label: 'SW',
+    name: 'Kiswahili',
+    toolsBasePath: '/sw/zana',
+    toolsIndexHref: '/sw/zana',
+    aboutHref: '/sw/kuhusu-sisi',
+    contactHref: '/sw/wasiliana-nasi',
+    privacyHref: '/sw/sera-ya-faragha',
+  },
+  ms: {
+    lang: 'ms',
+    hreflang: 'ms',
+    label: 'MS',
+    name: 'Bahasa Melayu',
+    toolsBasePath: '/ms/alatan',
+    toolsIndexHref: '/ms/alatan',
+    aboutHref: '/ms/tentang-kami',
+    contactHref: '/ms/hubungi-kami',
+    privacyHref: '/ms/dasar-privasi',
+  },
+  cs: {
+    lang: 'cs',
+    hreflang: 'cs',
+    label: 'CS',
+    name: 'Čeština',
+    toolsBasePath: '/cs/nastroje',
+    toolsIndexHref: '/cs/nastroje',
+    aboutHref: '/cs/o-nas',
+    contactHref: '/cs/kontakt',
+    privacyHref: '/cs/zasady-ochrany-soukromi',
+  },
+  sv: {
+    lang: 'sv',
+    hreflang: 'sv',
+    label: 'SV',
+    name: 'Svenska',
+    toolsBasePath: '/sv/verktyg',
+    toolsIndexHref: '/sv/verktyg',
+    aboutHref: '/sv/om-oss',
+    contactHref: '/sv/kontakt',
+    privacyHref: '/sv/integritetspolicy',
+  },
+  sq: {
+    lang: 'sq',
+    hreflang: 'sq',
+    label: 'SQ',
+    name: 'Shqip',
+    toolsBasePath: '/sq/mjetet',
+    toolsIndexHref: '/sq/mjetet',
+    aboutHref: '/sq/rreth-nesh',
+    contactHref: '/sq/kontakti',
+    privacyHref: '/sq/politika-e-privatesise',
+  },
+  da: {
+    lang: 'da',
+    hreflang: 'da',
+    label: 'DA',
+    name: 'Dansk',
+    toolsBasePath: '/da/vaerktojer',
+    toolsIndexHref: '/da/vaerktojer',
+    aboutHref: '/da/om-os',
+    contactHref: '/da/kontakt',
+    privacyHref: '/da/privatlivspolitik',
   },
 };
 

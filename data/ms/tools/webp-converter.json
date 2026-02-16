@@ -1,0 +1,153 @@
+{
+  "toolKey": "jpgToWebp",
+  "locale": "ms",
+  "metadata": {
+    "title": "Penukar JPG/PNG ke WebP Percuma \u2013 Tanpa Had",
+    "description": "Kurangkan saiz fail imej tanpa kehilangan kualiti. Tukar JPG dan PNG kepada WebP dan percepatkan laman web anda. Tanpa pendaftaran, berfungsi dalam pelayar.",
+    "ogImage": "/assets/tools/narzedzia-konwerter-jpg-png-na-webp.webp",
+    "path": "/ms/alatan/penukar-jpg-png-ke-webp"
+  },
+  "hero": {
+    "title": "Tukar imej kepada WebP \u2013 kurangkan saiz tanpa kehilangan kualiti",
+    "description": "Muat naik imej JPG atau PNG, dan alat akan menukarnya kepada format WebP. Fail lebih kecil, kualiti sama, pemuatan laman web lebih pantas.",
+    "backgroundImage": "/assets/tools/narzedzia-konwerter-jpg-png-na-webp.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/ms/alatan", "label": "Alatan" },
+    "third": { "href": "/ms/alatan/penukar-jpg-png-ke-webp", "label": "Penukar JPG/PNG ke WebP" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Penukar JPG/PNG ke WebP percuma",
+      "alternateName": ["Penukar imej ke WebP", "Penukar JPG ke WebP", "Penukar PNG ke WebP", "Alat penukaran imej kepada WebP", "Tukar imej tanpa kehilangan kualiti"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Penukar percuma JPG dan PNG kepada WebP. Kurangkan saiz fail imej sehingga 90% tanpa kehilangan kualiti yang ketara. Semua pemprosesan berlaku dalam pelayar anda \u2013 fail tidak dihantar ke pelayan.",
+      "featureList": [
+        "Tukar JPG kepada WebP",
+        "Tukar PNG kepada WebP",
+        "Tukar berbilang imej sekaligus",
+        "Peluncur kualiti (0\u2013100)",
+        "Perbandingan saiz asal dan WebP",
+        "Muat naik dengan seret dan lepas atau pilih fail",
+        "Pratonton sebelum dan selepas penukaran",
+        "Muat turun setiap imej atau semua dalam ZIP",
+        "Pemprosesan tempatan dalam pelayar"
+      ]
+    },
+    "howTo": {
+      "name": "Cara menukar JPG dan PNG kepada WebP",
+      "description": "Cara menukar imej JPG dan PNG kepada format WebP. Muat naik fail, tetapkan kualiti, dan muat turun imej yang ditukar.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Muat naik imej", "text": "Seret fail ke kawasan yang ditetapkan atau pilih dari peranti anda. Format yang disokong ialah JPG dan PNG." },
+        { "name": "Tetapkan kualiti", "text": "Gunakan peluncur untuk melaraskan kualiti imej (0\u2013100). Nilai lebih tinggi bermaksud kualiti lebih baik tetapi fail lebih besar." },
+        { "name": "Muat turun imej yang ditukar", "text": "Klik butang muat turun di sebelah setiap imej atau muat turun semua sekali dalam fail ZIP." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Apa itu format WebP dan mengapa ia penting?",
+      "html": "<p class=\"text-mid\">WebP ialah format imej moden yang dibangunkan oleh Google yang menawarkan pemampatan lebih baik daripada JPG dan PNG. Imej dalam WebP mengambil ruang cakera yang kurang \u2013 biasanya 25\u201334% lebih kecil daripada JPG dan sehingga 80% lebih kecil daripada PNG \u2013 sambil mengekalkan kualiti visual.</p><p class=\"text-mid mt-3\">Semua pelayar utama (Chrome, Firefox, Safari, Edge) menyokong WebP. Menggunakan format ini bermakna pemuatan halaman lebih pantas, penggunaan data lebih rendah, dan skor Core Web Vitals yang lebih baik \u2013 yang secara langsung mempengaruhi kedudukan dalam hasil carian Google.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Cara menggunakan penukar JPG/PNG ke WebP",
+      "description": "Penukaran mengambil masa beberapa minit sahaja:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Muat naik imej", "description": "Seret fail ke kawasan yang ditetapkan atau pilih dari peranti anda. Anda boleh memuat naik berbilang imej sekaligus." },
+        { "title": "2. Tetapkan kualiti", "description": "Gunakan peluncur untuk melaraskan kualiti imej (0\u2013100). Nilai lebih rendah bermakna fail lebih kecil tetapi kualiti lebih rendah." },
+        { "title": "3. Muat turun hasil", "description": "Klik butang muat turun di sebelah setiap imej atau muat turun semua sekali dalam fail ZIP." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Cara memilih kualiti yang sesuai untuk WebP",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kualiti: 80</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Disyorkan</span></div><p class=\"text-mid text-sm!\">Nisbah terbaik antara kualiti dan saiz fail. Sesuai untuk kebanyakan imej laman web dan kedai.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kualiti: 60\u201370</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Pemampatan agresif</span></div><p class=\"text-mid text-sm!\">Fail lebih kecil. Sesuai untuk imej kecil, ikon, dan latar belakang hiasan.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kualiti: 90\u2013100</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Kualiti tertinggi</span></div><p class=\"text-mid text-sm!\">Kualiti sangat tinggi, tetapi fail lebih besar. Sesuai untuk portfolio dan foto produk yang kritikal.</p></div></div>",
+      "html": "<p class=\"text-mid\">Tetapan kualiti menentukan nisbah antara kualiti visual dan saiz fail. Untuk kebanyakan imej laman web, nilai 75\u201385 memberikan hasil terbaik \u2013 perbezaan kualiti tidak kelihatan pada mata, dan fail boleh menjadi 3\u20135 kali lebih kecil daripada JPG asal.</p><p class=\"text-mid mt-3\">Untuk imej kecil, ikon, dan latar belakang hiasan, anda boleh mengurangkan kualiti kepada 60\u201370 tanpa kehilangan ketajaman. Untuk foto portfolio atau foto produk yang kritikal, nilai 90\u201395 akan mengekalkan butiran.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Siapa yang memerlukan penukar WebP?",
+      "description": "Menukar imej kepada WebP penting untuk sesiapa yang mahukan laman web lebih pantas:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Pemilik laman web",
+          "description": "Imej lebih kecil menjadikan halaman dimuatkan lebih pantas. Ini meningkatkan pengalaman pengguna dan mempengaruhi kedudukan dalam Google."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Kedai dalam talian",
+          "description": "Banyak foto produk bermakna banyak megabait data. Menukar kepada WebP mengurangkan masa pemuatan dan penggunaan data."
+        },
+        { "icon": "RiBloggerLine", "title": "Penulis blog", "description": "Artikel dengan banyak imej dimuatkan lebih perlahan. WebP mengurangkan saiz imej sambil mengekalkan kualiti." },
+        { "icon": "RiCodeLine", "title": "Pembangun web", "description": "WebP ialah standard moden untuk imej web. Semua pelayar utama menyokong format ini." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Apa yang menjadikan penukar WebP ini istimewa?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pemprosesan tempatan dalam pelayar",
+          "description": "Imej tidak dihantar ke mana-mana pelayan \u2013 semua pemprosesan berlaku pada peranti anda. Privasi anda dilindungi."
+        },
+        { "icon": "RiSpeedLine", "title": "Penukaran serta-merta", "description": "Hasil diperolehi serta-merta \u2013 tiada menunggu dalam barisan atau pemprosesan pelayan." },
+        { "icon": "RiInfinityLine", "title": "Tanpa had imej", "description": "Tukar seberapa banyak imej yang anda perlukan. Tiada had harian atau setiap sesi." },
+        {
+          "icon": "RiScalesLine",
+          "title": "Peluncur kualiti yang boleh dilaras",
+          "description": "Tetapkan kualiti (0\u2013100) untuk setiap imej bagi mendapatkan nisbah terbaik antara saiz dan kualiti."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Soalan lazim tentang penukar WebP",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Apa itu format WebP?",
+          "answer": "WebP ialah format imej moden yang dibangunkan oleh Google. Ia menawarkan pemampatan lebih baik daripada JPG (imej lebih kecil sebanyak 25\u201334%) sambil menyokong ketelusan (seperti PNG). Semua pelayar utama menyokong WebP.",
+          "answerSchemaText": "WebP ialah format imej Google dengan pemampatan lebih baik daripada JPG. Disokong oleh semua pelayar utama."
+        },
+        {
+          "question": "Adakah penukaran kepada WebP mengurangkan kualiti imej?",
+          "answer": "Pada tetapan kualiti 75\u201385, perbezaan tidak kelihatan pada mata. Pemampatan WebP lebih cekap daripada JPG \u2013 pada kualiti visual yang sama, fail boleh menjadi 3\u20135 kali lebih kecil.",
+          "answerSchemaText": "Pada kualiti 75\u201385, perbezaan tidak kelihatan. WebP menawarkan pemampatan lebih cekap daripada JPG."
+        },
+        {
+          "question": "Adakah imej dihantar ke pelayan?",
+          "answer": "Tidak. Semua pemprosesan berlaku dalam pelayar anda \u2013 imej tidak dihantar ke mana-mana. Selepas menutup halaman, data dipadamkan dari memori.",
+          "answerSchemaText": "Tidak. Imej diproses dalam pelayar. Tidak dihantar ke mana-mana pelayan."
+        },
+        {
+          "question": "Adakah terdapat had bilangan imej?",
+          "answer": "Tidak. Anda boleh menukar seberapa banyak imej yang diperlukan. Tiada had harian atau setiap sesi.",
+          "answerSchemaText": "Tidak. Tiada had bilangan imej untuk ditukar."
+        },
+        {
+          "question": "Adakah WebP disokong oleh semua pelayar?",
+          "answer": "Ya. Semua pelayar utama \u2013 Chrome, Firefox, Safari (sejak versi 14), dan Edge \u2013 menyokong format WebP. Untuk pelayar lama, disyorkan untuk menyimpan salinan JPG sebagai alternatif.",
+          "answerSchemaText": "Ya. Chrome, Firefox, Safari 14+, dan Edge semua menyokong WebP."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Terokai alatan lain" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

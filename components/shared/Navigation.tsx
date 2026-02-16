@@ -86,6 +86,71 @@ export default function Navigation() {
                   linkText: 'strumenti',
                   linkHref: getToolHref('emailSignature', locale),
                 },
+                ro: {
+                  text: 'Actualizare generator de semn\u0103tur\u0103 e-mail \u2013 descoperi\u021bi noile func\u021bii',
+                  linkText: 'instrumente',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                nl: {
+                  text: 'Update e-mailhandtekening generator - ontdek de nieuwe functies',
+                  linkText: 'tools',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                hu: {
+                  text: 'E-mail al\u00e1\u00edr\u00e1s gener\u00e1tor friss\u00edt\u00e9s \u2013 fedezze fel az \u00faj funkci\u00f3kat',
+                  linkText: 'eszk\u00f6z\u00f6k',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                id: {
+                  text: 'Pembaruan generator tanda tangan email - temukan fitur baru',
+                  linkText: 'alat',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                vi: {
+                  text: 'Cập nhật trình tạo chữ ký email – khám phá tính năng mới',
+                  linkText: 'công cụ',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                tr: {
+                  text: 'E-posta imza oluşturucu güncellendi – yeni özellikleri keşfedin',
+                  linkText: 'araçlar',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                tl: {
+                  text: 'Na-update ang generator ng email signature \u2013 tingnan ang mga bagong feature',
+                  linkText: 'mga tool',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                sw: {
+                  text: 'Kizalishi cha saini ya barua pepe kimesasishwa \u2013 gundua vipengele vipya',
+                  linkText: 'zana',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                ms: {
+                  text: 'Penjana tandatangan e-mel dikemas kini \u2013 lihat ciri baharu',
+                  linkText: 'alatan',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                cs: {
+                  text: 'Aktualizace gener\u00e1toru e-mailov\u00e9ho podpisu \u2013 objevte nov\u00e9 funkce',
+                  linkText: 'n\u00e1stroje',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                sv: {
+                  text: 'E-postsignatur-generatorn \u00e4r uppdaterad \u2013 uppt\u00e4ck nya funktioner',
+                  linkText: 'verktyg',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                sq: {
+                  text: 'Gjeneruesi i firm\u00ebs s\u00eb email-it u p\u00ebrdit\u00ebsua \u2013 zbuloni funksionet e reja',
+                  linkText: 'mjetet',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                da: {
+                  text: 'E-mail signatur generator opdateret \u2013 opdag nye funktioner',
+                  linkText: 'v\u00e6rkt\u00f8jer',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
               } satisfies Record<Locale, { text: string; linkText: string; linkHref: string }>
             )[locale],
           },
@@ -116,11 +181,11 @@ export default function Navigation() {
               #MadeWithNext.js
             </a>
 
-            <LanguageSwitcher />
+            <LanguageSwitcher variant="desktop" />
           </div>
 
           <div className="flex items-center gap-1 lg:hidden">
-            <LanguageSwitcher />
+            <LanguageSwitcher variant="mobile" />
             {isPl && (
               <button
                 type="button"

@@ -1,0 +1,139 @@
+{
+  "toolKey": "favicon",
+  "locale": "sw",
+  "metadata": {
+    "title": "Kitengenezaji Favicon Bure \u2013 ICO na PNG kutoka Picha Moja",
+    "description": "Tengeneza favicon.ico na ikoni za PNG kutoka picha moja. Inakidhi mahitaji ya vivinjari na Lighthouse. Bila usajili, inafanya kazi kwenye kivinjari.",
+    "ogImage": "/assets/tools/narzedzia-generator-favicon.webp",
+    "path": "/sw/zana/kitengenezaji-favicon-bure"
+  },
+  "hero": {
+    "title": "Tengeneza favicon.ico na ikoni za PNG kutoka picha moja",
+    "description": "Pakia picha na zana itatengeneza favicon.ico na seti kamili ya ikoni za PNG zinazohitajika na vivinjari, vifaa vya rununu, na Lighthouse.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-favicon.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/sw/zana", "label": "Zana" },
+    "third": { "href": "/sw/zana/kitengenezaji-favicon-bure", "label": "Kitengenezaji favicon" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Kitengenezaji favicon bure",
+      "alternateName": ["Kitengenezaji favicon.ico", "Kitengenezaji ikoni za tovuti", "Zana ya favicon", "Kitengenezaji favicon kutoka picha"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "FaviconGenerator",
+      "description": "Kitengenezaji favicon bure. Pakia picha moja na upate favicon.ico na seti kamili ya ikoni za PNG kwa vivinjari, vifaa vya rununu, na PWA.",
+      "featureList": [
+        "Kutengeneza favicon.ico (16\u00d716, 32\u00d732, 48\u00d748 px)",
+        "Ikoni za PNG kwa vivinjari (16\u00d716 hadi 512\u00d7512 px)",
+        "Ikoni za Apple Touch (180\u00d7180 px)",
+        "Ikoni za Android/PWA (192\u00d7192, 512\u00d7512 px)",
+        "Ikoni za Microsoft (150\u00d7150, 310\u00d7310 px)",
+        "Kukata na kubadilisha ukubwa wa picha chanzo",
+        "Kuonyesha kabla kwa wakati halisi",
+        "Pakua ikoni zote kwa pamoja katika ZIP",
+        "Usindikaji wa ndani kwenye kivinjari"
+      ]
+    },
+    "howTo": {
+      "name": "Jinsi ya kutengeneza favicon kutoka picha",
+      "description": "Jinsi ya kutengeneza favicon.ico na ikoni za PNG kutoka picha moja kwa vivinjari na vifaa vya rununu.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Pakia picha", "text": "Buruta faili kwenye eneo lililowekwa au ichague kutoka kwenye kifaa chako. Miundo inayoungwa mkono ni JPG, PNG, SVG, na WebP." },
+        { "name": "Kata picha", "text": "Badilisha eneo la kukata ili kuchagua sehemu inayofaa ya picha kwa favicon." },
+        { "name": "Onyesha kabla", "text": "Angalia jinsi favicon inavyoonekana katika kichupo cha kivinjari na katika ukubwa mbalimbali." },
+        { "name": "Pakua ikoni", "text": "Pakua favicon.ico na seti kamili ya ikoni za PNG katika faili ya ZIP." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Favicon ni nini na kwa nini ni muhimu?",
+      "html": "<p class=\"text-mid\">Favicon ni ikoni ndogo inayoonekana katika kichupo cha kivinjari, kwenye orodha ya alamisho, na kwenye skrini ya nyumbani ya simu. Ni mojawapo ya vitu vya kwanza ambavyo mtumiaji anaona \u2013 hata kabla ya ukurasa kupakia.</p><p class=\"text-mid mt-3\">Favicon ya kitaalamu inajenga utambuzi wa chapa na inafanya iwe rahisi kupata ukurasa wako kati ya vichupo vingi vilivyofunguliwa. Kukosekana kwa favicon kunaweza kuonekana kuwa si cha kitaalamu na kupunguza imani ya wageni.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Jinsi ya kutumia kitengenezaji cha favicon",
+      "description": "Kutengeneza favicon kunachukua dakika chache tu:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Pakia picha", "description": "Buruta faili kwenye eneo lililowekwa au ichague kutoka kwenye kifaa chako. Picha ya mraba inayofaa zaidi." },
+        { "title": "2. Kata na ubadilishe", "description": "Badilisha eneo la kukata ili kuchagua sehemu inayofaa ya picha. Angalia jinsi inavyoonekana katika ukubwa mbalimbali." },
+        { "title": "3. Pakua ikoni", "description": "Pakua favicon.ico na seti kamili ya ikoni za PNG katika faili ya ZIP. Ikoni zote ziko tayari kwa matumizi." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Ikoni gani zinauzwa na kitengenezaji?",
+      "description": "Kitengenezaji hutengeneza seti kamili ya ikoni zinazohitajika na vivinjari na vifaa vya kisasa:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "favicon.ico",
+          "description": "Faili ya ICO inayojumuisha ukubwa tatu (16\u00d716, 32\u00d732, 48\u00d748 px). Inaungwa mkono na vivinjari vyote, ikiwa ni pamoja na vya zamani."
+        },
+        {
+          "icon": "RiChromeLine",
+          "title": "Ikoni za kivinjari (PNG)",
+          "description": "Seti ya ikoni za PNG kwa vivinjari vya kisasa: 16\u00d716, 32\u00d732, 48\u00d748, 96\u00d796, na 128\u00d7128 px."
+        },
+        {
+          "icon": "RiAppleLine",
+          "title": "Apple Touch Icon",
+          "description": "Ikoni ya 180\u00d7180 px kwa vifaa vya iOS (iPhone, iPad). Inaonekana kwenye skrini ya nyumbani baada ya kuongeza ukurasa."
+        },
+        { "icon": "RiAndroidLine", "title": "Ikoni za Android/PWA", "description": "Ikoni za 192\u00d7192 na 512\u00d7512 px kwa Progressive Web Apps na vifaa vya Android." },
+        { "icon": "RiWindowsLine", "title": "Ikoni za Microsoft", "description": "Ikoni za 150\u00d7150 na 310\u00d7310 px kwa vigae vya Windows na Microsoft Edge." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Ni nini kinachofanya kitengenezaji hiki cha favicon kuwa maalum?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Usindikaji wa ndani kwenye kivinjari", "description": "Picha haipakiwi kwenye seva yoyote. Uchakataji wote unafanyika kwenye kifaa chako." },
+        { "icon": "RiCheckboxCircleLine", "title": "Inakidhi mahitaji ya Lighthouse", "description": "Ikoni zinazotengenezwa zinakidhi mahitaji ya Google Lighthouse kwa ukubwa na muundo." },
+        { "icon": "RiDevicesLine", "title": "Ikoni kwa vifaa vyote", "description": "Seti moja ya faili inafunika vivinjari vyote, iOS, Android, na Windows." },
+        { "icon": "RiInfinityLine", "title": "Bila kikomo, bila usajili", "description": "Tengeneza favicon nyingi kama unavyohitaji. Hakuna usajili, hakuna malipo." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Maswali yanayoulizwa mara kwa mara kuhusu kitengenezaji cha favicon",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Picha gani inafaa zaidi kwa favicon?",
+          "answer": "Picha ya mraba (angalau 512\u00d7512 px) yenye mandharinyuma rahisi inafaa zaidi. Nembo, herufi za kwanza, au ikoni rahisi hutoa matokeo bora. Picha zilizo na maelezo mengi zinaweza kuonekana vibaya katika ukubwa mdogo (16\u00d716 px).",
+          "answerSchemaText": "Picha ya mraba, angalau 512\u00d7512 px, yenye mandharinyuma rahisi. Nembo au ikoni rahisi hutoa matokeo bora."
+        },
+        {
+          "question": "Tofauti kati ya favicon.ico na PNG ni nini?",
+          "answer": "Faili ya ICO inaweza kujumuisha ukubwa kadhaa katika faili moja na inaungwa mkono na vivinjari vyote, ikiwa ni pamoja na vya zamani. Faili za PNG ni za ubora wa juu zaidi lakini zinahitaji tag tofauti ya HTML kwa kila ukubwa. Inashauriwa kutumia zote mbili.",
+          "answerSchemaText": "ICO inajumuisha ukubwa kadhaa katika faili moja. PNG hutoa ubora bora. Inashauriwa kutumia zote mbili."
+        },
+        {
+          "question": "Je, picha inatumwa kwenye seva?",
+          "answer": "Hapana. Uchakataji wote unafanyika kwenye kivinjari chako. Picha haihifadhiwi na haitumwi mahali popote.",
+          "answerSchemaText": "Hapana. Picha inachakatwa kwenye kivinjari. Haitumwi kwenye seva yoyote."
+        },
+        {
+          "question": "Jinsi ya kuongeza favicon kwenye tovuti?",
+          "answer": "Weka faili za ikoni katika folda ya mzizi wa tovuti na uongeze tag za HTML zinazofaa katika sehemu ya &lt;head&gt; ya ukurasa. Faili ya ZIP iliyopakuliwa inajumuisha maelekezo ya utekelezaji.",
+          "answerSchemaText": "Weka faili za ikoni katika folda ya mzizi wa tovuti na uongeze tag za HTML katika sehemu ya head."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Gundua zana nyingine" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "toolKey": "favicon",
+  "locale": "nl",
+  "metadata": {
+    "title": "Gratis favicon-generator – Favicon.ico van elke foto",
+    "description": "Maak een favicon.ico van elke JPG-, PNG- of WebP-afbeelding. Upload het bestand, pas het bijsnijdkader aan en download uw favicon direct. Zonder registratie.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
+    "path": "/nl/tools/gratis-favicon-generator"
+  },
+  "hero": {
+    "title": "Favicon-generator – Maak gratis favicon.ico",
+    "description": "Genereer favicon.ico en een complete set PNG-pictogrammen voor uw website vanuit één afbeelding. Alle verwerking vindt lokaal in de browser plaats.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/gratis-favicon-generator",
+      "label": "Favicon-generator"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Favicon-generator - gratis pictogrammaker voor websites",
+      "alternateName": ["Favicon.ico en PNG-pictogramgenerator"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "IconGenerator",
+      "description": "Gratis favicon-generator. Maak favicon.ico en PNG-pictogrammen 16x16, 32x32, 180x180, 192x192 en 512x512 zonder limieten en zonder bestanden naar een server te sturen. Verwerking vindt lokaal in de browser plaats.",
+      "featureList": [
+        "Genereer favicon.ico (16x16, 32x32, 48x48 in één bestand)",
+        "Genereer PNG-pictogrammen 16x16 en 32x32",
+        "Genereer apple-touch-icon 180x180",
+        "Genereer PWA-pictogrammen 192x192 en 512x512",
+        "Ondersteuning voor PNG-, JPG- en SVG-bronafbeeldingen",
+        "Achtergrondkleurconfiguratie",
+        "Genereer manifest.json-bestand voor PWA",
+        "Download alle bestanden als ZIP",
+        "Download individuele bestanden",
+        "Lighthouse-conformiteit",
+        "Browserverwerking (bestanden worden niet naar een server gestuurd)",
+        "Gratis tool, geen login vereist"
+      ]
+    },
+    "howTo": {
+      "name": "Hoe een favicon voor een website te maken",
+      "description": "Hoe favicon.ico en PNG-pictogrammen (16x16, 32x32, 180x180, 512x512) te genereren vanuit één afbeelding. Welke formaten nodig zijn en hoe favicon toe te voegen aan WordPress, HTML en Next.js.",
+      "steps": [
+        {
+          "name": "Voeg een bronafbeelding toe",
+          "text": "Sleep een bestand naar het aangewezen gebied of selecteer een afbeelding van uw apparaat. Een eenvoudig logo of pictogram in PNG-, JPG- of SVG-formaat werkt het beste."
+        },
+        {
+          "name": "Kies pictogramformaten",
+          "text": "Selecteer welke pictogramformaten u nodig heeft: favicon.ico (32x32), PNG-pictogrammen (16x16, 32x32, 180x180, 192x192, 512x512)."
+        },
+        {
+          "name": "Configureer opties",
+          "text": "Stel de achtergrondkleur in (of houd transparant), beslis of u een manifestbestand wilt genereren en of bestanden automatisch moeten downloaden."
+        },
+        {
+          "name": "Genereer en download bestanden",
+          "text": "Na het genereren kunnen bestanden als ZIP-archief of elk pictogram apart worden gedownload."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wat is een favicon en waarom zou u er een moeten hebben?",
+      "html": "<p class=\"mb-4\">Een favicon is een klein pictogram dat op het browsertabblad verschijnt naast de paginatitel. U ziet het ook in bladwijzers, browsegeschiedenis en op het startscherm van de telefoon wanneer iemand de site als snelkoppeling toevoegt.</p><p class=\"mb-4\">Deze kleine afbeelding vervult een belangrijke functie - het helpt gebruikers een site snel te herkennen tussen vele open tabbladen. Wanneer iemand een dozijn tabbladen open heeft in de browser, is het favicon vaak het enige zichtbare element dat de site identificeert.</p><p>De generator maakt een complete pictogrammenset: een klassiek favicon.ico-bestand voor browsers, PNG-pictogrammen in verschillende formaten en een apple-touch-icon voor Apple-apparaten. Als u een webapp (PWA) bouwt, kunt u ook 192x192- en 512x512-pictogrammen genereren samen met een manifestbestand.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hoe een favicon te maken in 3 stappen",
+      "description": "Het genereren van een favicon duurt slechts enkele seconden:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Voeg een afbeelding toe",
+          "description": "Sleep een bestand naar het aangewezen gebied of selecteer een afbeelding van uw apparaat. Ondersteunde formaten: PNG, JPG, SVG. Aanbevolen formaat: min. 512×512 pixels."
+        },
+        {
+          "title": "2. Kies formaten",
+          "description": "Selecteer de pictogramformaten die u nodig heeft. Voor een reguliere website: favicon.ico, 32×32 en 180×180. Voor PWA voegt u 192×192 en 512×512 toe."
+        },
+        {
+          "title": "3. Download bestanden",
+          "description": "Na het genereren downloadt u alle bestanden als ZIP of elk pictogram apart. Onder de tool vindt u instructies over hoe u het favicon aan uw site toevoegt."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Welke pictogramformaten genereert de tool?",
+      "html": "<p class=\"mb-6\">Elk formaat heeft zijn toepassing:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Klassiek formaat herkend door alle browsers. Verschijnt op het browsertabblad.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16×16 en 32×32 PNG</p><p class=\"text-mid text-sm\">Standaardformaten voor moderne browsers. Verschijnen op tabbladen en in bladwijzers.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180×180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Pictogram voor Apple-apparaten (iPhone, iPad). Verschijnt wanneer iemand de site aan het startscherm toevoegt.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192×192 en 512×512 PNG</p><p class=\"text-mid text-sm\">Pictogrammen voor webapps (PWA). Vereist door het manifest en gebruikt in app stores.</p></div></div><p class=\"text-light mt-6\">Als u geen PWA bouwt, heeft u alleen nodig: favicon.ico, 32×32 PNG en 180×180 PNG. Deze drie bestanden dekken de meeste toepassingen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wat maakt de favicon-generator bijzonder?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy - bestanden verlaten uw computer niet",
+          "description": "Alle bewerkingen worden lokaal in de browser uitgevoerd. De afbeelding wordt niet naar een server gestuurd. Na het sluiten van de pagina worden alle gegevens gewist."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Complete set op één plek",
+          "description": "Favicon.ico, PNG-pictogrammen, apple-touch-icon, PWA-pictogrammen en manifest - alles vanuit één afbeelding, in één tool."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "PNG-, JPG- en SVG-ondersteuning",
+          "description": "U kunt een logo in elk formaat gebruiken. Als u SVG heeft - pictogrammen zullen scherp zijn in alle formaten."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Klaar voor website en PWA",
+          "description": "De tool genereert een manifest.json-bestand voor webapps. Hieronder vindt u instructies voor integratie."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hoe de favicon-generator te gebruiken",
+      "description": "Het genereren van een favicon bestaat uit een paar eenvoudige stappen:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Voeg bronafbeelding toe",
+          "description": "Sleep een bestand naar het aangewezen gebied of selecteer een afbeelding van uw apparaat. Ondersteunde formaten: PNG, JPG, SVG. Een eenvoudig logo of pictogram van minimaal 512×512 pixels werkt het beste."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "2. Kies pictogramformaten",
+          "description": "Selecteer welke pictogramformaten u nodig heeft. U kunt alles selecteren of slechts enkele. Voor een reguliere website: favicon.ico, 32×32 en 180×180."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "3. Configureer generatieopties",
+          "description": "Stel extra opties in: achtergrond (transparant of gekozen kleur), manifest (PWA-configuratiebestand) en automatisch downloaden."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Genereer en download bestanden",
+          "description": "Na het starten van de generatie verwerkt de tool de afbeelding lokaal - niets wordt naar een server gestuurd. Download alle bestanden als ZIP-archief of individuele pictogrammen apart."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Generatieopties - wat doet elke optie?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">PNG-formaten</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">16×16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">32×32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">180×180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span class=\"text-mid text-sm!\">Transparante achtergrond (PNG/ICO)</span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Achtergrond (transparant of kleur)</h3><p class=\"text-mid\">Standaard behoudt de generator transparantie. U kunt ook een specifieke achtergrondkleur kiezen.</p></div><div><h3 class=\"h5 mb-2\">Genereer manifest (site.webmanifest)</h3><p class=\"text-mid\">Een JSON-bestand voor webapps (PWA). Als u geen PWA bouwt, is deze optie niet nodig.</p></div></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hoe gegenereerde bestanden te downloaden",
+      "description": "Na het genereren van pictogrammen heeft u meerdere downloadopties:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFolderZipLine",
+          "title": "Download alles als ZIP",
+          "description": "De knop &quot;Download alles&quot; pakt alle gegenereerde bestanden in een enkel ZIP-archief. Dit is de handigste optie wanneer u de complete pictogrammenset nodig heeft."
+        },
+        {
+          "icon": "RiFileDownloadLine",
+          "title": "Download individuele bestanden",
+          "description": "Elk gegenereerd pictogram heeft een eigen downloadknop - u kunt een enkel bestand downloaden zonder de hele set te downloaden. Handig wanneer slechts één formaat moet worden bijgewerkt."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTabs",
+      "title": "Waar en hoe een favicon toe te voegen",
+      "tabs": [
+        {
+          "title": "WordPress",
+          "icon": "RiWordpressLine",
+          "html": "<div><p class=\"text-mid mb-3\">De meeste WordPress-thema's hebben een ingebouwde optie voor het instellen van het sitepictogram. U vindt het in het beheerpaneel:</p><p class=\"text-mid mb-3\"><strong>Weergave → Customizer → Site-identiteit → Sitepictogram</strong></p><p class=\"text-light\">Upload daar het 512×512-bestand - WordPress genereert automatisch kleinere formaten. Voor volledige controle over pictogrammen kunt u bestanden ook rechtstreeks naar de hoofdmap uploaden via FTP.</p></div>"
+        },
+        {
+          "title": "HTML",
+          "icon": "RiHtml5Line",
+          "html": "<div><p class=\"text-mid mb-3\">Plaats de gegenereerde bestanden in de hoofdmap van uw site (waar index.html staat). Voeg vervolgens de juiste tags toe in de &lt;head&gt;-sectie:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">De bovenstaande code is een voorbeeld — pas de paden aan zodat ze overeenkomen met uw sitestructuur.</p></div>"
+        },
+        {
+          "title": "Next.js / React",
+          "icon": "RiReactjsLine",
+          "html": "<div><p class=\"text-mid mb-3\">In Next.js (App Router) plaatst u faviconbestanden in de <code>app/</code> of <code>public/</code> map:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> - automatisch herkend door Next.js</li><li><code>app/apple-icon.png</code> - Apple-pictogram</li><li><code>public/</code> - overige pictogrammen (192×192, 512×512)</li></ul><p class=\"text-light\">U kunt pictogrammen ook configureren in <code>layout.tsx</code> via het <code>metadata.icons</code>-object.</p></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Welke bronafbeelding werkt het beste?",
+      "description": "Een favicon is een zeer kleine afbeelding - slechts 16×16 pixels. Niet elke afbeelding werkt goed als bron:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShapeLine",
+          "title": "Eenvoudige vormen en leesbare symbolen",
+          "description": "Eenvoudige logo's, enkele letters of symbolen werken het beste. Vermijd complexe afbeeldingen met veel details."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Vierkant formaat",
+          "description": "Een favicon is vierkant. Als de bronafbeelding een andere verhouding dan 1:1 heeft, wordt deze bijgesneden of uitgerekt."
+        },
+        {
+          "icon": "RiZoomInLine",
+          "title": "Groot genoeg formaat",
+          "description": "We raden een bronafbeelding van minimaal 512×512 pixels aan. Kleinere afbeeldingen worden opgeschaald."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "SVG-formaat als ideale bron",
+          "description": "SVG schaalt zonder kwaliteitsverlies, dus pictogrammen in alle formaten zullen scherp zijn."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Kleuren met hoog contrast",
+          "description": "Een favicon moet zichtbaar zijn op verschillende achtergronden (lichte tabbladen, donkere modus). Kies kleuren die leesbaar blijven."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen over de favicon-generator",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Welk formaat moet de bronafbeelding hebben voor het genereren van favicons?",
+          "answer": "Het aanbevolen formaat is minimaal 512×512 pixels in vierkant formaat (1:1). Met zo'n bron zullen pictogrammen in alle formaten scherp en leesbaar zijn. Als u een logo in SVG-formaat heeft - gebruik dat, want vectorafbeeldingen schalen zonder kwaliteitsverlies.",
+          "answerSchemaText": "Minimaal 512×512 px, vierkant (1:1). SVG is ideaal omdat het schaalt zonder kwaliteitsverlies."
+        },
+        {
+          "question": "Kan ik alleen favicon.ico genereren zonder de andere pictogrammen?",
+          "answer": "Ja. Voor het genereren kunt u precies selecteren welke formaten u nodig heeft - bijv. alleen favicon.ico of alleen bepaalde PNG-formaten.",
+          "answerSchemaText": "Ja, u kunt individuele formaten selecteren voor het genereren."
+        },
+        {
+          "question": "Welke afbeeldingsformaten ondersteunt de favicon-generator?",
+          "answer": "De generator accepteert afbeeldingen in PNG-, JPG- en SVG-formaat. Als uitvoer genereert het een favicon.ico-bestand en PNG-pictogrammen in geselecteerde formaten, klaar om naar uw website te uploaden.",
+          "answerSchemaText": "Invoer: PNG, JPG, SVG. Uitvoer: favicon.ico en PNG-pictogrammen."
+        },
+        {
+          "question": "Beïnvloedt een favicon de Google-zoekpositie?",
+          "answer": "Niet direct - favicon is geen rankingfactor. Het beïnvloedt echter indirect de merkherkenning: een site met een professioneel pictogram is makkelijker te identificeren tussen vele open tabbladen, wat zich kan vertalen in een hogere klikfrequentie in zoekresultaten.",
+          "answerSchemaText": "Niet direct. Verbetert indirect merkherkenning en klikfrequentie."
+        },
+        {
+          "question": "Welke pictogramformaten zijn essentieel voor een reguliere website?",
+          "answer": "Voor een typische website zijn drie bestanden voldoende: favicon.ico (32×32), een 32×32 PNG-pictogram en apple-touch-icon 180×180. Als de site als webapp (PWA) moet werken, heeft u ook 192×192- en 512×512-pictogrammen plus een manifestbestand nodig.",
+          "answerSchemaText": "favicon.ico, 32×32 PNG en apple-touch-icon 180×180. Voor PWA voeg 192×192 en 512×512 toe."
+        },
+        {
+          "question": "Wat is een site.webmanifest-bestand en wanneer is het nodig?",
+          "answer": "Het is een configuratiebestand voor webapps (PWA) dat informatie bevat over het pictogram, de naam en kleuren van de applicatie. Het is vereist wanneer de site als app op het startscherm van de telefoon moet werken. Voor reguliere websites is het niet nodig.",
+          "answerSchemaText": "PWA-configuratiebestand. Vereist voor startscherm-apps, niet nodig voor reguliere websites."
+        },
+        {
+          "question": "Wordt het favicon in alle browsers hetzelfde weergegeven?",
+          "answer": "De meeste moderne browsers (Chrome, Firefox, Edge, Safari) herkennen het favicon.ico-bestand en PNG-pictogrammen. Verschillen kunnen optreden in het weergegeven pictogramformaat - Chrome geeft de voorkeur aan PNG 32×32, terwijl Safari op iOS apple-touch-icon 180×180 gebruikt. Voor de beste compatibiliteit raden we aan de complete set formaten te genereren.",
+          "answerSchemaText": "Grotendeels ja. Genereer de complete set formaten voor de beste compatibiliteit."
+        },
+        {
+          "question": "Waarom verandert het favicon niet na het uploaden van een nieuw bestand?",
+          "answer": "Browsers cachen favicons agressief. Na het uploaden van een nieuw pictogram, probeer de browsercache te wissen of een versieparameter aan het bestandspad toe te voegen (bijv. /favicon.ico?v=2). De wijziging kan enkele uren duren voordat deze zichtbaar wordt.",
+          "answerSchemaText": "Browsers cachen favicons agressief. Wis de cache of voeg een versieparameter toe."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ontdek andere tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

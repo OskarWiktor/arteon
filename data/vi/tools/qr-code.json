@@ -1,0 +1,451 @@
+{
+  "toolKey": "qrCode",
+  "locale": "vi",
+  "metadata": {
+    "title": "Tạo Mã QR Miễn Phí – PNG & SVG, Không Cần Đăng Ký",
+    "description": "Tạo mã QR cho website, vCard, menu hoặc tờ rơi trong vài giây. Xuất dưới dạng PNG & SVG. Tùy chỉnh màu sắc và kích thước. Không cần đăng ký, không giới hạn.",
+    "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
+    "path": "/vi/cong-cu/tao-ma-qr-mien-phi"
+  },
+  "hero": {
+    "title": "Tạo mã QR — miễn phí, không cần đăng ký",
+    "description": "Tạo mã QR cho website, danh thiếp vCard, email, điện thoại hoặc văn bản. Tùy chỉnh màu sắc, kích thước và mức sửa lỗi, sau đó tải file PNG hoặc SVG sẵn sàng.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/vi/cong-cu",
+      "label": "Công cụ"
+    },
+    "third": {
+      "href": "/vi/cong-cu/tao-ma-qr-mien-phi",
+      "label": "Tạo mã QR miễn phí"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Công cụ tạo mã QR miễn phí",
+      "alternateName": [
+        "Tạo mã QR trực tuyến",
+        "Tạo mã QR vCard",
+        "Tạo mã QR miễn phí",
+        "Công cụ mã QR",
+        "Tạo mã QR menu nhà hàng",
+        "Mã QR cho in ấn PNG SVG",
+        "Tạo danh thiếp điện tử vCard",
+        "Tạo mã QR không cần đăng ký",
+        "Tạo mã QR miễn phí không giới hạn"
+      ],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "QRCodeGenerator",
+      "description": "Tạo mã QR cho website, danh thiếp, menu hoặc tờ rơi. Chọn loại dữ liệu, tùy chỉnh màu sắc và kích thước, sau đó tải file PNG hoặc SVG.",
+      "featureList": [
+        "Mã QR cho URL (website)",
+        "Mã QR cho văn bản thuần",
+        "Mã QR vCard (thông tin liên hệ)",
+        "Mã QR cho email (địa chỉ, chủ đề, nội dung)",
+        "Mã QR cho số điện thoại",
+        "Màu mã và nền tùy chỉnh",
+        "Chọn kích thước mã theo pixel",
+        "Xuất sang định dạng PNG (raster)",
+        "Xuất sang định dạng SVG (vector)",
+        "Xem trước mã trực tiếp",
+        "Xử lý cục bộ trong trình duyệt",
+        "Sửa lỗi Reed-Solomon"
+      ]
+    },
+    "howTo": {
+      "name": "Cách sử dụng công cụ tạo mã QR miễn phí",
+      "description": "Cách tạo mã QR cho website, danh thiếp vCard, email hoặc điện thoại — từ chọn loại dữ liệu đến tải file sẵn sàng để in.",
+      "steps": [
+        {
+          "name": "Chọn loại dữ liệu",
+          "text": "Quyết định mã QR nên chứa gì: URL, văn bản, danh thiếp (vCard), email hoặc số điện thoại."
+        },
+        {
+          "name": "Nhập dữ liệu",
+          "text": "Điền các trường phù hợp. Với URL, nhập địa chỉ website; với vCard, cung cấp thông tin liên hệ."
+        },
+        {
+          "name": "Tùy chỉnh giao diện",
+          "text": "Chọn kích thước, lề, màu mã và nền, và mức sửa lỗi."
+        },
+        {
+          "name": "Tải mã",
+          "text": "Mã QR sẵn sàng có thể tải dưới dạng file PNG (cho in ấn và web) hoặc SVG (vector, phóng to không mất chất lượng)."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Mã QR là gì và hoạt động như thế nào?",
+      "html": "<p class=\"text-mid\">Mã QR (Quick Response) là mã vạch hai chiều có thể quét bằng camera điện thoại thông minh. Khác với mã vạch truyền thống, mã QR lưu trữ dữ liệu theo cả chiều ngang và dọc, cho phép mã hóa nhiều thông tin hơn đáng kể — lên đến khoảng 3.000 ký tự chữ và số.</p><p class=\"text-mid mt-3\">Mã QR được phát triển năm 1994 bởi công ty Nhật Bản Denso Wave (thuộc tập đoàn Toyota) để theo dõi phụ tùng ô tô. Ngày nay, mã QR được sử dụng rộng rãi trong marketing, nhà hàng khách sạn, logistics và giao tiếp kinh doanh. Chúng đặc biệt phổ biến trong đại dịch COVID-19, khi các nhà hàng bắt đầu thay thế menu giấy bằng mã QR.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cách sử dụng công cụ tạo mã QR miễn phí",
+      "description": "Tạo mã QR chỉ mất vài giây:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Chọn loại dữ liệu",
+          "description": "Chọn những gì bạn muốn mã hóa: URL, văn bản, danh thiếp vCard, email hoặc số điện thoại."
+        },
+        {
+          "title": "2. Nhập dữ liệu",
+          "description": "Điền các trường phù hợp — địa chỉ website, thông tin liên hệ hoặc nội dung tin nhắn."
+        },
+        {
+          "title": "3. Tải mã",
+          "description": "Tùy chỉnh giao diện (màu sắc, kích thước, lề) và tải dưới dạng PNG hoặc SVG."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Các loại mã QR — URL, vCard, email, điện thoại, văn bản",
+      "description": "Công cụ tạo mã QR miễn phí hỗ trợ năm loại dữ liệu — mỗi loại hữu ích trong tình huống khác nhau:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "URL",
+          "description": "Liên kết đến website. Sau khi quét, điện thoại mở trang trong trình duyệt. Lý tưởng cho danh thiếp, tờ rơi và áp phích."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Văn bản",
+          "description": "Bất kỳ văn bản nào lên đến 3.000 ký tự. Sau khi quét, điện thoại hiển thị văn bản trên màn hình. Hữu ích cho phiếu giảm giá và hướng dẫn ngắn."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Danh thiếp vCard",
+          "description": "Danh thiếp kỹ thuật số với dữ liệu liên hệ (tên, công ty, điện thoại, email, địa chỉ). Sau khi quét, điện thoại đề xuất lưu liên hệ. Lý tưởng cho danh thiếp chuyên nghiệp."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email",
+          "description": "Địa chỉ email với chủ đề và nội dung tùy chọn. Sau khi quét, điện thoại mở ứng dụng email với biểu mẫu đã điền sẵn."
+        },
+        {
+          "icon": "RiPhoneLine",
+          "title": "Điện thoại",
+          "description": "Số điện thoại. Sau khi quét, điện thoại đề xuất gọi. Hữu ích cho đường dây nóng và hỗ trợ khách hàng."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Thông số kỹ thuật mã QR",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Dung lượng</span><span class=\"text-mid text-sm!\">tối đa 4.296 ký tự</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Sửa lỗi</span><span class=\"text-mid text-sm!\">7% – 30%</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kích thước in tối thiểu</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Độ tương phản tối thiểu</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Lề</span><span class=\"text-mid text-sm!\">tối thiểu 4 module</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Hiểu các thông số kỹ thuật giúp tạo mã QR có thể đọc được trong mọi điều kiện:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Dung lượng dữ liệu</strong> — mã QR có thể chứa tối đa 7.089 chữ số, 4.296 ký tự chữ và số, hoặc 2.953 byte dữ liệu nhị phân. Trong thực tế, điều này quá đủ cho URL và danh thiếp.</li><li><strong>Sửa lỗi Reed-Solomon</strong> — thuật toán toán học cho phép đọc mã ngay cả khi một phần bị hư hỏng hoặc che khuất. Các mức: L (7%), M (15%), Q (25%), H (30%).</li><li><strong>Lề</strong> — vùng trắng xung quanh mã cần thiết để quét đúng. Tối thiểu khuyến nghị là 4 module (đơn vị mã).</li><li><strong>Kích thước in tối thiểu</strong> — trong điều kiện quét tiêu chuẩn, mã nên ít nhất 2×2 cm. Với in khổ lớn (banner, biển quảng cáo), hãy phóng to tương ứng.</li><li><strong>Độ tương phản</strong> — tỷ lệ tương phản giữa mã và nền nên ít nhất 3:1. Công cụ tạo tự động cảnh báo nếu độ tương phản quá thấp.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ứng dụng mã QR — danh thiếp, tờ rơi, menu nhà hàng",
+      "description": "Mã QR được sử dụng trong nhiều ngành và tình huống:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Danh thiếp",
+          "description": "Mã vCard trên danh thiếp cho phép người nhận lưu liên hệ chỉ bằng một lần quét, không cần nhập dữ liệu thủ công."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Menu nhà hàng và quán cà phê",
+          "description": "Mã QR trên bàn dẫn đến menu kỹ thuật số. Giải pháp vệ sinh phổ biến từ đại dịch COVID-19."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Tờ rơi và áp phích",
+          "description": "Mã QR với liên kết đến trang sản phẩm, biểu mẫu đăng ký hoặc ưu đãi đặc biệt."
+        },
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Bao bì sản phẩm",
+          "description": "Liên kết đến hướng dẫn sử dụng, phiếu bảo hành hoặc website nhà sản xuất."
+        },
+        {
+          "icon": "RiHospitalLine",
+          "title": "Phòng khám y tế",
+          "description": "Mã QR trên thẻ bệnh nhân liên kết đến cổng bệnh nhân hoặc hệ thống đặt lịch hẹn."
+        },
+        {
+          "icon": "RiHome4Line",
+          "title": "Bất động sản",
+          "description": "Mã trên banner liên kết đến tin đăng đầy đủ với thư viện ảnh và chi tiết."
+        },
+        {
+          "icon": "RiTruckLine",
+          "title": "Kho bãi và logistics",
+          "description": "Nhãn QR để theo dõi lô hàng, vị trí kho và lịch sử vận chuyển."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Thương mại điện tử",
+          "description": "Mã trên bao bì liên kết đến hướng dẫn đổi trả, đánh giá khách hàng hoặc chương trình khách hàng thân thiết."
+        },
+        {
+          "icon": "RiCalendarEventLine",
+          "title": "Sự kiện và hội nghị",
+          "description": "Vé với mã QR để xác minh nhanh tại cửa vào."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Tùy chỉnh giao diện mã QR",
+      "variant": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kích thước</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Lề</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Màu mã</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Màu nền</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Công cụ tạo cho phép bạn tùy chỉnh nhiều thông số ảnh hưởng đến giao diện và khả năng đọc của mã:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Kích thước (px)</strong> — kích thước mã tính bằng pixel. Với in ấn tiêu chuẩn (tờ rơi, danh thiếp) chọn 300–500 px. Với sử dụng kỹ thuật số, 150–200 px là đủ.</li><li><strong>Lề</strong> — vùng trắng xung quanh mã cần thiết để quét đúng. Giá trị khuyến nghị là 2–4. Giá trị 0 có thể gây khó quét trên nền tối.</li><li><strong>Màu mã QR</strong> — đen mặc định (#000000). Bạn có thể đổi sang bất kỳ màu tối nào phù hợp với nhận diện thương hiệu.</li><li><strong>Màu nền</strong> — trắng mặc định (#ffffff). Bạn có thể đổi sang bất kỳ màu sáng nào. Công cụ sẽ cảnh báo nếu độ tương phản quá thấp.</li></ul><p class=\"text-mid mt-3\"><strong>Mẹo:</strong> Duy trì độ tương phản cao giữa mã và nền (tối thiểu 3:1). Mã tối trên nền sáng dễ quét nhất.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Mức sửa lỗi — L, M, Q, H",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Low)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Medium)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Quartile)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (High)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Sửa lỗi là cơ chế cho phép đọc mã QR ngay cả khi một phần bị hư hỏng, bẩn hoặc che khuất. Công cụ tạo sử dụng thuật toán Reed-Solomon, tiêu chuẩn trong mã QR.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Low) — 7%</strong> — ít dư thừa nhất, mã nhỏ gọn nhất. Chọn khi mã sử dụng trong điều kiện lý tưởng (màn hình, in chất lượng cao).</li><li><strong>M (Medium) — 15%</strong> — giá trị mặc định, cân bằng tốt giữa dung lượng và khả năng phục hồi. Phù hợp cho hầu hết ứng dụng.</li><li><strong>Q (Quartile) — 25%</strong> — khả năng chống hư hỏng cao hơn. Chọn cho mã in trên vật liệu dễ bẩn.</li><li><strong>H (High) — 30%</strong> — khả năng phục hồi cao nhất. Khuyến nghị cho vật liệu in ngoài trời, bao bì và tình huống mã có thể bị che khuất một phần (ví dụ: logo ở giữa).</li></ul><p class=\"text-mid mt-3\"><strong>Lưu ý:</strong> Mức sửa lỗi cao hơn nghĩa là mã lớn hơn và phức tạp hơn. Với lượng dữ liệu lớn và mức H, mã có thể trở nên rất dày đặc.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs SVG — chọn định dạng nào để in?",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG (raster)"
+        },
+        {
+          "id": "svg",
+          "name": "SVG (vector)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Website và mạng xã hội",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Tờ rơi và danh thiếp",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Áp phích và banner (khổ lớn)",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Phóng to không mất chất lượng",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Chỉnh sửa trong phần mềm đồ họa",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Kích thước file nhỏ hơn",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Thuyết trình",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mẹo in mã QR",
+      "description": "Để đảm bảo mã QR có thể đọc được sau khi in, hãy tuân theo một số quy tắc:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "Kích thước tối thiểu",
+          "description": "Mã nên ít nhất 2×2 cm để quét gần. Khoảng cách quét càng xa, mã càng phải lớn."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Độ tương phản",
+          "description": "Mã tối trên nền sáng. Tránh màu pastel và độ tương phản thấp."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Lề xung quanh mã",
+          "description": "Giữ khoảng trống xung quanh mã. Không đặt các yếu tố đồ họa khác quá gần — lề rất cần thiết để quét đúng."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Kiểm tra",
+          "description": "Trước khi in hàng loạt, hãy kiểm tra mã trên các điện thoại khác nhau và trong các điều kiện ánh sáng khác nhau."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Mức sửa lỗi",
+          "description": "Với in ngoài trời và vật liệu dễ hư hỏng, chọn mức Q hoặc H."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Điều gì làm cho công cụ tạo mã QR này đặc biệt?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Tạo cục bộ trong trình duyệt",
+          "description": "Dữ liệu nhập vào công cụ không được gửi đến máy chủ nào — tất cả xử lý diễn ra cục bộ trên thiết bị của bạn."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "Năm loại dữ liệu trong một công cụ",
+          "description": "URL, văn bản, danh thiếp vCard, email và điện thoại — mỗi loại tạo mã QR theo tiêu chuẩn phù hợp."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Tùy chỉnh giao diện mã QR",
+          "description": "Màu mã và nền, kích thước pixel, lề và mức sửa lỗi — mọi thông số đều có thể tùy chỉnh."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Bốn mức sửa lỗi",
+          "description": "Thuật toán Reed-Solomon cho phép bạn chọn khả năng chống hư hỏng của mã — từ 7% (L) đến 30% (H). Mức cao hữu ích cho in trên vật liệu dễ bẩn."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Xem trước trực tiếp",
+          "description": "Bạn thấy kết quả ngay sau khi nhập dữ liệu, không cần nhấp &quot;Tạo&quot;."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Xuất PNG và SVG",
+          "description": "Tải mã ở định dạng phù hợp với trường hợp sử dụng của bạn."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Câu hỏi thường gặp về công cụ tạo mã QR",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Mã QR được tạo bởi công cụ này có hết hạn không?",
+          "answer": "Không. Mã QR tĩnh (như mã được tạo bởi công cụ này) không hết hạn. Nội dung — ví dụ: URL hoặc dữ liệu danh thiếp — được mã hóa trực tiếp trong mã. Miễn là trang đích còn tồn tại, mã sẽ hoạt động.",
+          "answerSchemaText": "Không. Mã QR tĩnh không hết hạn. Nội dung được mã hóa trực tiếp trong mã."
+        },
+        {
+          "question": "Tôi có thể thay đổi URL trong mã QR hiện có không?",
+          "answer": "Với mã QR tĩnh, bạn không thể thay đổi nội dung đã mã hóa — bạn cần tạo mã mới với địa chỉ mới. Mã QR động (có thể chỉnh sửa sau khi tạo) yêu cầu dịch vụ bên ngoài có phí.",
+          "answerSchemaText": "Không, mã QR tĩnh không thể chỉnh sửa. Tạo mã mới cho URL khác."
+        },
+        {
+          "question": "PNG hay SVG — nên chọn định dạng mã QR nào để in?",
+          "answer": "PNG phù hợp cho hầu hết trường hợp: website, mạng xã hội, in đến khổ A4. SVG là vector — có thể phóng to bất kỳ kích thước nào mà không mất chất lượng, phù hợp cho banner, biển quảng cáo và khổ quảng cáo lớn.",
+          "answerSchemaText": "PNG cho web và in tiêu chuẩn. SVG cho khổ lớn và phóng to không mất chất lượng."
+        },
+        {
+          "question": "Nên chọn kích thước mã QR nào cho danh thiếp?",
+          "answer": "Với vật liệu in (danh thiếp, tờ rơi), mã nên ít nhất 2×2 cm, tối ưu 3×3 cm. Trong công cụ tạo, điều này tương ứng với độ phân giải 300 px ở chất lượng in tiêu chuẩn (300 DPI). Với khổ lớn hơn (áp phích, banner), chọn kích thước lớn hơn hoặc định dạng SVG.",
+          "answerSchemaText": "Ít nhất 2×2 cm (300 px ở 300 DPI). Tối ưu 3×3 cm cho danh thiếp."
+        },
+        {
+          "question": "Tôi có thể thêm logo vào giữa mã QR không?",
+          "answer": "Công cụ này không hỗ trợ thêm logo trực tiếp. Tuy nhiên, bạn có thể tải mã ở định dạng SVG và chồng logo trong phần mềm đồ họa — trong trường hợp đó, cần thiết lập mức sửa lỗi cao (H) để mã vẫn đọc được dù bị che khuất một phần.",
+          "answerSchemaText": "Không trực tiếp. Tải SVG và thêm logo trong phần mềm đồ họa với sửa lỗi H."
+        },
+        {
+          "question": "Tại sao mã QR của tôi không quét được sau khi in?",
+          "answer": "Nguyên nhân phổ biến nhất: độ tương phản quá thấp giữa mã và nền, kích thước mã quá nhỏ, không có lề xung quanh mã, hoặc hư hỏng do in. Thử tăng kích thước, cải thiện độ tương phản và nâng mức sửa lỗi (Q hoặc H).",
+          "answerSchemaText": "Kiểm tra độ tương phản, kích thước, lề và mức sửa lỗi."
+        },
+        {
+          "question": "Tôi có thể sử dụng mã QR được tạo cho mục đích thương mại không?",
+          "answer": "Có. Mã QR được tạo có thể sử dụng tự do trong bất kỳ dự án nào — thương mại và phi thương mại, không có hạn chế bản quyền.",
+          "answerSchemaText": "Có, không hạn chế trong các dự án thương mại và phi thương mại."
+        },
+        {
+          "question": "Sự khác biệt giữa danh thiếp vCard và mã QR văn bản thuần là gì?",
+          "answer": "Mã QR vCard chứa dữ liệu liên hệ ở định dạng chuẩn hóa (tên, công ty, điện thoại, email, địa chỉ). Sau khi quét, điện thoại tự động đề xuất lưu liên hệ vào danh bạ. Mã văn bản hiển thị dữ liệu dưới dạng văn bản thuần — không có tùy chọn lưu tự động.",
+          "answerSchemaText": "vCard lưu liên hệ tự động. Mã QR văn bản chỉ hiển thị văn bản."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Khám phá các công cụ miễn phí khác"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}
