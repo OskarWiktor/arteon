@@ -2,44 +2,44 @@
   "toolKey": "paletteExtractor",
   "locale": "bg",
   "metadata": {
-    "title": "Free Image Color Extractor – Palette From Any Photo",
-    "description": "Upload a photo or logo and extract up to 12 dominant colors with HEX and RGB codes. Perfect for UI, branding and social media. No signup, no limits.",
+    "title": "Безплатен екстрактор на цветове от изображение – Палитра от всяка снимка",
+    "description": "Качете снимка или лого и извлечете до 12 доминантни цвята с HEX и RGB кодове. Идеално за UI, брандинг и социални мрежи. Без регистрация.",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/bg/instrumenti/ekstraktor-na-tsvetove-ot-izobrazhenie"
   },
   "hero": {
-    "title": "Image Color Extractor – Get a Palette From Any Photo",
-    "description": "Upload a photo, logo, or graphic, and the tool will extract up to 12 dominant colors with HEX and RGB codes. Analysis happens locally in your browser.",
+    "title": "Екстрактор на цветове от изображение – Получете палитра от всяка снимка",
+    "description": "Качете снимка, лого или графика и инструментът ще извлече до 12 доминантни цвята с HEX и RGB кодове. Анализът се извършва локално в браузъра.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/bg/instrumenti", "label": "Tools" },
-    "third": { "href": "/bg/instrumenti/ekstraktor-na-tsvetove-ot-izobrazhenie", "label": "Image color extractor" }
+    "second": { "href": "/bg/instrumenti", "label": "Инструменти" },
+    "third": { "href": "/bg/instrumenti/ekstraktor-na-tsvetove-ot-izobrazhenie", "label": "Екстрактор на цветове от изображение" }
   },
   "schemas": {
     "software": {
-      "name": "Image color extractor online - free palette generator",
-      "alternateName": ["Extract color palette from a photo or logo"],
+      "name": "Онлайн екстрактор на цветове от изображение – безплатен генератор на палитри",
+      "alternateName": ["Извличане на цветова палитра от снимка или лого"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
-      "description": "Free online image color extractor. Upload a photo, logo, or graphic and get a palette of up to 12 dominant colors with HEX and RGB codes. Processing happens in the browser - files are not sent to a server.",
+      "description": "Безплатен онлайн екстрактор на цветове. Качете снимка, лого или графика и получете палитра от до 12 доминантни цвята с HEX и RGB кодове. Обработката се извършва в браузъра – файловете не се изпращат на сървър.",
       "featureList": [
-        "Automatic extraction of up to 12 dominant colors",
-        "Analysis of photos, logos, and vector graphics",
-        "Color codes in HEX and RGB format",
-        "Copy color code to clipboard",
-        "Support for PNG, JPG, and SVG files",
-        "Ignores transparent pixels in PNG files",
-        "Local processing in the browser - image is not sent to a server"
+        "Автоматично извличане на до 12 доминантни цвята",
+        "Анализ на снимки, логотипи и векторни графики",
+        "Цветови кодове във формат HEX и RGB",
+        "Копиране на цветов код в клипборда",
+        "Поддръжка на PNG, JPG и SVG файлове",
+        "Игнорира прозрачни пиксели в PNG файлове",
+        "Локална обработка в браузъра – изображението не се изпраща на сървър"
       ]
     },
     "howTo": {
-      "name": "How to extract colors from a photo or image",
-      "description": "How to extract dominant colors from a photo or logo. Upload an image in PNG, JPG, or SVG format, and the tool will generate a palette of up to 12 colors with HEX codes.",
+      "name": "Как да извлечете цветове от снимка или изображение",
+      "description": "Как да извлечете доминантни цветове от снимка или лого. Качете изображение във формат PNG, JPG или SVG и инструментът ще генерира палитра от до 12 цвята с HEX кодове.",
       "steps": [
-        { "name": "Upload an image", "text": "Drag a file onto the designated area or select an image from your device. Supported formats are PNG, JPG, and SVG." },
-        { "name": "Wait for analysis", "text": "The tool will automatically analyze the image and extract dominant colors." },
-        { "name": "Copy colors", "text": "Next to each color you will find a copy button - the HEX code is copied to your system clipboard." }
+        { "name": "Качете изображение", "text": "Плъзнете файл върху обозначената зона или изберете изображение от устройството си. Поддържаните формати са PNG, JPG и SVG." },
+        { "name": "Изчакайте анализа", "text": "Инструментът автоматично ще анализира изображението и ще извлече доминантните цветове." },
+        { "name": "Копирайте цветовете", "text": "До всеки цвят ще намерите бутон за копиране – HEX кодът се копира в системния клипборд." }
       ]
     }
   },
@@ -47,209 +47,209 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Why extract colors from an image?",
-      "html": "<p class=\"mb-4\">Every photo, logo, or graphic contains colors that can serve as a ready-made color palette. The extractor analyzes the image and shows which colors dominate - along with HEX codes and RGB values ready to paste into your project.</p><p class=\"mb-4\">In practice, this means that instead of manually sampling colors in a graphics application (pixel by pixel), you upload one image and get an organized list of up to 12 colors. This is useful when selecting colors for a website, creating consistent social media graphics, or building a visual identity from existing material.</p><p>All analysis happens locally in the browser - the image is not sent to any server.</p>"
+      "title": "Защо да извличате цветове от изображение?",
+      "html": "<p class=\"mb-4\">Всяка снимка, лого или графика съдържа цветове, които могат да послужат като готова цветова палитра. Екстракторът анализира изображението и показва кои цветове доминират – заедно с HEX кодове и RGB стойности, готови за поставяне в проекта ви.</p><p class=\"mb-4\">На практика това означава, че вместо ръчно да извличате цветове в графично приложение (пиксел по пиксел), качвате едно изображение и получавате организиран списък от до 12 цвята. Това е полезно при избор на цветове за уебсайт, създаване на последователни графики за социални мрежи или изграждане на визуална идентичност от съществуващ материал.</p><p>Целият анализ се извършва локално в браузъра – изображението не се изпраща на никакъв сървър.</p>"
     },
     { "type": "gap", "size": "xs" },
     {
       "type": "sectionSteps",
-      "title": "How to use the image color extractor",
-      "description": "The whole process takes just a few seconds:",
+      "title": "Как да използвате екстрактора на цветове",
+      "description": "Целият процес отнема само няколко секунди:",
       "grid": "three",
       "items": [
-        { "title": "1. Upload an image", "description": "Drag a file onto the designated area or select it from your device. Supported formats are PNG, JPG, and SVG." },
-        { "title": "2. Wait for analysis", "description": "The tool will automatically analyze the image and extract up to 12 dominant colors." },
-        { "title": "3. Copy the colors you need", "description": "Next to each color there is a copy button - the HEX or RGB code goes to the clipboard and can be pasted directly into your project." }
+        { "title": "1. Качете изображение", "description": "Плъзнете файл върху обозначената зона или го изберете от устройството си. Поддържаните формати са PNG, JPG и SVG." },
+        { "title": "2. Изчакайте анализа", "description": "Инструментът автоматично ще анализира изображението и ще извлече до 12 доминантни цвята." },
+        { "title": "3. Копирайте нужните цветове", "description": "До всеки цвят има бутон за копиране – HEX или RGB кодът отива в клипборда и може да се постави директно в проекта ви." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "What does an extracted color palette look like?",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Example colors extracted from a nature image</p></div>",
-      "html": "<p class=\"text-mid mb-4\">After uploading an image, the extractor displays a list of dominant colors sorted from most to least prominent. Each color shows its HEX code and RGB value - ready to paste into CSS, Figma, or any graphics application.</p><p class=\"text-mid\">The number of extracted colors depends on the image content. A landscape photo will produce a richer palette (8–12 colors), while a simple two-color logo will yield correspondingly fewer items.</p>"
+      "title": "Как изглежда извлечена цветова палитра?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Примерни цветове, извлечени от изображение на природа</p></div>",
+      "html": "<p class=\"text-mid mb-4\">След качване на изображение екстракторът показва списък с доминантни цветове, сортирани от най-изявен до най-слабо изявен. Всеки цвят показва своя HEX код и RGB стойност – готови за поставяне в CSS, Figma или всяко графично приложение.</p><p class=\"text-mid\">Броят на извлечените цветове зависи от съдържанието на изображението. Пейзажна снимка ще даде по-богата палитра (8–12 цвята), докато просто двуцветно лого ще даде съответно по-малко елементи.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Which images give the best results in the color extractor?",
-      "description": "The quality of the extracted palette depends on the type of uploaded image:",
+      "title": "Кои изображения дават най-добри резултати в екстрактора на цветове?",
+      "description": "Качеството на извлечената палитра зависи от типа на каченото изображение:",
       "grid": "two",
       "items": [
         {
           "icon": "RiImageLine",
-          "title": "Logos and graphics with a limited palette",
-          "description": "Images with a few clearly separated colors give the most precise results - the extractor accurately identifies each color."
+          "title": "Логотипи и графики с ограничена палитра",
+          "description": "Изображения с няколко ясно разделени цвята дават най-прецизни резултати – екстракторът точно идентифицира всеки цвят."
         },
         {
           "icon": "RiSearchEyeLine",
-          "title": "Photos with a clear subject",
-          "description": "Product, interior, or landscape photos also produce useful palettes, but they contain more shades - including shadow colors and light reflections."
+          "title": "Снимки с ясен обект",
+          "description": "Продуктови, интериорни или пейзажни снимки също дават полезни палитри, но съдържат повече нюанси – включително цветове на сенки и отражения на светлина."
         },
         {
           "icon": "RiEraserLine",
-          "title": "PNG files with transparent backgrounds",
-          "description": "Transparent pixels are automatically skipped during analysis. If you want to extract colors only from the object (e.g., a logo), use a PNG file without a background."
+          "title": "PNG файлове с прозрачен фон",
+          "description": "Прозрачните пиксели автоматично се пропускат при анализа. Ако искате да извлечете цветове само от обекта (напр. лого), използвайте PNG файл без фон."
         },
         {
           "icon": "RiCropLine",
-          "title": "Images without a large solid-color background",
-          "description": "When the background takes up most of the image area, its color dominates the results. Before uploading, consider cropping the image to the area of interest."
+          "title": "Изображения без голям едноцветен фон",
+          "description": "Когато фонът заема по-голямата част от площта на изображението, неговият цвят доминира в резултатите. Преди качване помислете за изрязване на изображението до интересуващата ви зона."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionTimeline",
-      "title": "How does image color extraction work?",
-      "description": "After uploading a file, the tool performs several steps in the background - all analysis happens locally in the browser:",
+      "title": "Как работи извличането на цветове от изображение?",
+      "description": "След качване на файл инструментът извършва няколко стъпки на заден план – целият анализ се извършва локално в браузъра:",
       "items": [
         {
           "icon": "RiZoomInLine",
-          "title": "Image scaling",
-          "description": "The image is resized to about 240 pixels wide. This speeds up analysis even for very large photos, without affecting color detection accuracy."
+          "title": "Мащабиране на изображението",
+          "description": "Изображението се преоразмерява до около 240 пиксела ширина. Това ускорява анализа дори за много големи снимки, без да се засяга точността на разпознаване на цветовете."
         },
         {
           "icon": "RiGroupLine",
-          "title": "Grouping similar colors",
-          "description": "Each pixel is analyzed, and similar shades are grouped together. Two nearly identical blues become one color in the palette."
+          "title": "Групиране на подобни цветове",
+          "description": "Всеки пиксел се анализира и подобните нюанси се групират заедно. Два почти идентични сини цвята стават един цвят в палитрата."
         },
         {
           "icon": "RiStarLine",
-          "title": "Selecting dominant colors",
-          "description": "The algorithm picks colors that cover the largest area of the image. The result is a list of up to 12 colors sorted from most to least prominent."
+          "title": "Избор на доминантни цветове",
+          "description": "Алгоритъмът избира цветове, които покриват най-голяма площ от изображението. Резултатът е списък от до 12 цвята, сортирани от най-изявен до най-слабо изявен."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Skipping transparent pixels",
-          "description": "In PNG files with transparent backgrounds, those areas are not included in the analysis - the extractor examines only visible colors. The entire process typically takes under a second."
+          "title": "Пропускане на прозрачни пиксели",
+          "description": "В PNG файлове с прозрачен фон тези области не се включват в анализа – екстракторът разглежда само видимите цветове. Целият процес обикновено отнема по-малко от секунда."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Troubleshooting the color extractor",
+      "title": "Отстраняване на проблеми с екстрактора на цветове",
       "grid": "two",
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "Extractor returned fewer than 12 colors",
-          "description": "The number of extracted colors depends on the image content. A simple two-color logo will give 2–3 results - this is correct behavior. The tool does not add artificial colors; it only extracts those that actually appear in the image."
+          "title": "Екстракторът върна по-малко от 12 цвята",
+          "description": "Броят на извлечените цветове зависи от съдържанието на изображението. Просто двуцветно лого ще даде 2–3 резултата – това е правилно поведение. Инструментът не добавя изкуствени цветове; извлича само тези, които реално присъстват в изображението."
         },
         {
           "icon": "RiAlertLine",
-          "title": "Unexpected colors appeared in the palette",
-          "description": "These may be shadow, gradient, or light reflection colors - pixels in those areas have different colors than the object visible at first glance. Using an image with more uniform colors or cropping dark areas will improve results."
+          "title": "В палитрата се появиха неочаквани цветове",
+          "description": "Това може да са цветове от сенки, градиенти или отражения на светлина – пикселите в тези зони имат различни цветове от видимия на пръв поглед обект. Използването на изображение с по-еднородни цветове или изрязването на тъмни зони ще подобри резултатите."
         },
         {
           "icon": "RiErrorWarningLine",
-          "title": "Background color dominates the results",
-          "description": "When the background covers more area than the object itself, its color will appear first on the list. Solution: use a PNG file with a transparent background or crop the image so the object takes up more of the frame."
+          "title": "Цветът на фона доминира в резултатите",
+          "description": "Когато фонът покрива повече площ от самия обект, неговият цвят ще се появи пръв в списъка. Решение: използвайте PNG файл с прозрачен фон или изрежете изображението, така че обектът да заема повече от кадъра."
         },
         {
           "icon": "RiFileWarningLine",
-          "title": "File is not accepted by the extractor",
-          "description": "The tool only supports PNG, JPG, and SVG formats. Files in other formats (GIF, TIFF, HEIC, PDF) require prior conversion."
+          "title": "Файлът не се приема от екстрактора",
+          "description": "Инструментът поддържа само PNG, JPG и SVG формати. Файлове в други формати (GIF, TIFF, HEIC, PDF) изискват предварително конвертиране."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "What makes this image color extractor special?",
+      "title": "Какво прави този екстрактор на цветове специален?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Local analysis - the image never leaves your computer",
-          "description": "All color extraction happens in the browser. The image is not sent to any server, and after closing the page, data is removed from memory."
+          "title": "Локален анализ – изображението не напуска компютъра ви",
+          "description": "Цялото извличане на цветове се извършва в браузъра. Изображението не се изпраща на никакъв сървър и след затваряне на страницата данните се премахват от паметта."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Up to 12 dominant colors from one image",
-          "description": "The tool extracts up to 12 colors sorted from most prominent - enough to build a complete project color palette."
+          "title": "До 12 доминантни цвята от едно изображение",
+          "description": "Инструментът извлича до 12 цвята, сортирани от най-изявен – достатъчно за изграждане на пълна цветова палитра за проект."
         },
         {
           "icon": "RiFileImageLine",
-          "title": "Three popular image formats",
-          "description": "Supported formats are PNG, JPG, and SVG. PNG files with transparent backgrounds give the best results because transparent pixels are automatically skipped."
+          "title": "Три популярни формата на изображения",
+          "description": "Поддържаните формати са PNG, JPG и SVG. PNG файловете с прозрачен фон дават най-добри резултати, защото прозрачните пиксели автоматично се пропускат."
         },
         {
           "icon": "RiGlobalLine",
-          "title": "Ready HEX and RGB codes to paste",
-          "description": "Each extracted color comes with its HEX code (e.g., #2C5F2D) and RGB value. The code can be copied to the clipboard and pasted directly into CSS, Figma, or Photoshop."
+          "title": "Готови HEX и RGB кодове за поставяне",
+          "description": "Всеки извлечен цвят идва с HEX код (напр. #2C5F2D) и RGB стойност. Кодът може да се копира в клипборда и да се постави директно в CSS, Figma или Photoshop."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Where to use colors extracted from an image",
+      "title": "Къде да използвате цветове, извлечени от изображение",
       "grid": "two",
       "items": [
         {
           "icon": "RiBrushLine",
-          "title": "Building visual identity",
-          "description": "Upload a photo that captures the mood of the brand - a landscape, a restaurant interior, a product photo - and extract colors as a starting point for a branding palette."
+          "title": "Изграждане на визуална идентичност",
+          "description": "Качете снимка, която улавя настроението на бранда – пейзаж, интериор на ресторант, продуктова снимка – и извлечете цветове като отправна точка за палитра за брандинг."
         },
         {
           "icon": "RiLayoutMasonryLine",
-          "title": "Social media graphics",
-          "description": "Extract colors from a product photo and use them as backgrounds or accents in graphics. Posts based on colors from the same source look consistent on the profile."
+          "title": "Графики за социални мрежи",
+          "description": "Извлечете цветове от продуктова снимка и ги използвайте като фонове или акценти в графики. Публикации, базирани на цветове от един и същ източник, изглеждат последователно в профила."
         },
         {
           "icon": "RiPaintBrushLine",
-          "title": "Matching colors to a website",
-          "description": "Extract colors from the logo and use them as the website color palette - primary color, accent color, background shades. HEX codes paste straight into CSS."
+          "title": "Съчетаване на цветове с уебсайт",
+          "description": "Извлечете цветове от логото и ги използвайте като цветова палитра на уебсайта – основен цвят, акцентен цвят, нюанси на фона. HEX кодовете се поставят директно в CSS."
         },
         {
           "icon": "RiSearchEyeLine",
-          "title": "Expanding an existing palette",
-          "description": "An extracted base color can be used in the <a href=\"/bg/instrumenti/color-palette-generator\">color palette generator</a> to create a full set of harmonious colors based on color theory."
+          "title": "Разширяване на съществуваща палитра",
+          "description": "Извлечен базов цвят може да се използва в <a href=\"/bg/instrumenti/color-palette-generator\">генератора на цветови палитри</a> за създаване на пълен набор от хармонични цветове, базирани на теория на цветовете."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the image color extractor",
+      "title": "Често задавани въпроси за екстрактора на цветове от изображение",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Does the image color extractor require registration?",
-          "answer": "No. The tool is completely free and requires no login or registration. The image is analyzed locally in the browser - it is not sent to any server. After closing the page, all data is removed.",
-          "answerSchemaText": "No. The tool is free and does not require registration. The image is analyzed locally in the browser."
+          "question": "Екстракторът на цветове изисква ли регистрация?",
+          "answer": "Не. Инструментът е напълно безплатен и не изисква вход или регистрация. Изображението се анализира локално в браузъра – не се изпраща на никакъв сървър. След затваряне на страницата всички данни се премахват.",
+          "answerSchemaText": "Не. Инструментът е безплатен и не изисква регистрация. Изображението се анализира локално в браузъра."
         },
         {
-          "question": "How is the color extractor different from a palette generator?",
-          "answer": "The extractor pulls colors from an existing image - it analyzes a photo and shows which colors dominate in it. A color palette generator works the other way: you provide one base color, and the tool creates harmonious sets based on color theory. Both tools complement each other - you can extract a color from an image and then use it as a base in the palette generator.",
-          "answerSchemaText": "The extractor pulls colors from an image. The generator creates palettes from a base color. Both tools complement each other."
+          "question": "Каква е разликата между екстрактора на цветове и генератора на палитри?",
+          "answer": "Екстракторът извлича цветове от съществуващо изображение – анализира снимка и показва кои цветове доминират в нея. Генераторът на цветови палитри работи по обратния начин: вие задавате един базов цвят, а инструментът създава хармонични набори, базирани на теория на цветовете. Двата инструмента се допълват – можете да извлечете цвят от изображение и след това да го използвате като база в генератора на палитри.",
+          "answerSchemaText": "Екстракторът извлича цветове от изображение. Генераторът създава палитри от базов цвят. Двата инструмента се допълват."
         },
         {
-          "question": "How many colors does the extractor pull from one image?",
-          "answer": "The tool extracts up to 12 dominant colors. The exact number depends on the image content - if a graphic has only two colors (e.g., a simple logo), the result will contain fewer items. Colors are sorted from most to least prominent.",
-          "answerSchemaText": "Up to 12 dominant colors, sorted from the most to least prominent."
+          "question": "Колко цвята извлича екстракторът от едно изображение?",
+          "answer": "Инструментът извлича до 12 доминантни цвята. Точният брой зависи от съдържанието на изображението – ако графиката има само два цвята (напр. просто лого), резултатът ще съдържа по-малко елементи. Цветовете са сортирани от най-изявен до най-слабо изявен.",
+          "answerSchemaText": "До 12 доминантни цвята, сортирани от най-изявен до най-слабо изявен."
         },
         {
-          "question": "What image formats does the color extractor support?",
-          "answer": "Supported formats are PNG, JPG (JPEG), and SVG. PNG files with transparent backgrounds give better results because transparent pixels are skipped during analysis - the tool focuses on the colors of the object itself.",
-          "answerSchemaText": "PNG, JPG, and SVG. PNG with transparent background gives the best results."
+          "question": "Какви формати на изображения поддържа екстракторът на цветове?",
+          "answer": "Поддържаните формати са PNG, JPG (JPEG) и SVG. PNG файловете с прозрачен фон дават по-добри резултати, защото прозрачните пиксели се пропускат при анализа – инструментът се фокусира върху цветовете на самия обект.",
+          "answerSchemaText": "PNG, JPG и SVG. PNG с прозрачен фон дава най-добри резултати."
         },
         {
-          "question": "In what format do I get the extracted color codes?",
-          "answer": "Each color is displayed with its HEX code (e.g., #2C5F2D) and RGB value (e.g., rgb(44, 95, 45)). The code can be copied to the clipboard and pasted directly into CSS, Figma, Photoshop, or any other graphics application.",
-          "answerSchemaText": "HEX (e.g., #2C5F2D) and RGB (e.g., rgb(44, 95, 45)). Copyable to clipboard."
+          "question": "В какъв формат получавам извлечените цветови кодове?",
+          "answer": "Всеки цвят се показва с HEX код (напр. #2C5F2D) и RGB стойност (напр. rgb(44, 95, 45)). Кодът може да се копира в клипборда и да се постави директно в CSS, Figma, Photoshop или всяко друго графично приложение.",
+          "answerSchemaText": "HEX (напр. #2C5F2D) и RGB (напр. rgb(44, 95, 45)). Може да се копира в клипборда."
         },
         {
-          "question": "Can I copy all palette colors at once?",
-          "answer": "Currently the tool allows copying colors individually - next to each color there is a button that copies the HEX code to the clipboard. The copied code can be immediately pasted into Figma, Photoshop, CSS, or any other application.",
-          "answerSchemaText": "Colors are copied individually via the copy button next to each color."
+          "question": "Мога ли да копирам всички цветове от палитрата наведнъж?",
+          "answer": "В момента инструментът позволява копиране на цветовете поединично – до всеки цвят има бутон, който копира HEX кода в клипборда. Копираният код може веднага да се постави във Figma, Photoshop, CSS или всяко друго приложение.",
+          "answerSchemaText": "Цветовете се копират поединично чрез бутона за копиране до всеки цвят."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
+    { "type": "toolsCarousel", "title": "Разгледайте другите инструменти" },
     { "type": "gap", "size": "sm" }
   ]
 }

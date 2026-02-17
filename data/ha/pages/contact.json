@@ -1,28 +1,28 @@
 {
-  "slug": "contact",
+  "slug": "tuntube-mu",
   "metadata": {
-    "title": "Contact Arteon – Free Online Tools Support & Feedback",
-    "description": "Get in touch with the Arteon team. Report a bug, suggest a new tool, or ask a question about our free online tools for images, SEO, colors and QR codes. We respond within one business day."
+    "title": "Tuntubi Arteon – Tallafi da ra'ayoyi kan kayan aiki kyauta",
+    "description": "Tuntubi kungiyar Arteon. Ka ba da rahoton matsala, ka ba da shawarar sabon kayan aiki ko ka yi tambaya game da kayan aikinmu kyauta don hotuna, SEO, launuka da lambobin QR. Muna amsa cikin ranar aiki guda."
   },
   "hero": {
-    "title": "Get in touch with the Arteon team",
-    "description": "Report a bug, suggest a new tool, or ask a question — we respond within one business day"
+    "title": "Tuntubi kungiyar Arteon",
+    "description": "Ba da rahoton matsala, ba da shawarar sabon kayan aiki ko yi tambaya — muna amsa cikin ranar aiki guda"
   },
   "intro": {
-    "title": "Have a question or suggestion?",
-    "textBefore": "We are happy to hear your feedback about our tools. If you found a bug, have an idea for a new tool, or need help — write to us at",
-    "textAfter": ". We respond within one business day."
+    "title": "Kana da tambaya ko shawara?",
+    "textBefore": "Muna farin ciki da jin ra'ayoyinku game da kayan aikinmu. Idan ka sami matsala, kana da ra'ayi don sabon kayan aiki ko kana bukatar taimako — rubuta mana a",
+    "textAfter": ". Muna amsa cikin ranar aiki guda."
   },
-  "formTitle": "Send us a message",
+  "formTitle": "Aika mana sako",
   "details": {
-    "title": "Contact details",
-    "emailLabel": "Email",
-    "hoursLabel": "Business hours",
-    "hoursValue": "Monday – Friday: 8:00 – 16:00 (CET)"
+    "title": "Bayanan tuntubarmu",
+    "emailLabel": "Imel",
+    "hoursLabel": "Lokacin aiki",
+    "hoursValue": "Litinin – Jumma'a: 8:00 – 16:00 (CET)"
   },
   "cta": {
-    "title": "Back to tools",
-    "description": "10 free online tools for working with images, text, and colors",
-    "btnOne": "Tools"
+    "title": "Komawa zuwa kayan aiki",
+    "description": "Kayan aiki 10 kyauta don aiki da hotuna, rubutu da launuka",
+    "btnOne": "Kayan aiki"
   }
 }

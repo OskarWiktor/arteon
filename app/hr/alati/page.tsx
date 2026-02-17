@@ -137,7 +137,7 @@ const faqItems = [
   { question: 'Koliko koštaju alati?', answer: 'Ništa. Svi alati su potpuno besplatni, bez pretplata i skrivenih naknada.' },
   { question: 'Šalju li se moje datoteke na poslužitelj?', answer: 'Ne. Svi alati rade izravno u pregledniku. Datoteke nikada ne napuštaju vaše računalo i nigdje se ne pohranjuju.' },
   { question: 'Trebam li račun?', answer: 'Ne. Alate možete koristiti odmah bez prijave ili registracije.' },
-  { question: 'Postoje li ograničenja korištenja?', answer: 'Ne. Koristite bez ograničenja \u2013 bez dnevnog limita, bez limita datoteka, bez limita konverzija.' },
+  { question: 'Postoje li ograničenja korištenja?', answer: 'Ne. Koristite bez ograničenja – bez dnevnog limita, bez limita datoteka, bez limita konverzija.' },
   {
     question: 'Za što su alati namijenjeni?',
     answer:
@@ -151,7 +151,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Besplatni alati"
-        description="Pretvarač slika, generator favicona, brojač riječi, alati za boje i QR kodovi. Bez registracije, bez ograničenja \u2013 sve radi u pregledniku."
+        description="Pretvarač slika, generator favicona, brojač riječi, alati za boje i QR kodovi. Bez registracije, bez ograničenja – sve radi u pregledniku."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -187,7 +187,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Izrežite sliku za društvene mreže ili web stranicu. Odaberite gotov format ili unesite prilagođene dimenzije \u2013 preuzmite u PNG, JPG ili WebP formatu.</p>
+                  <p>Izrežite sliku za društvene mreže ili web stranicu. Odaberite gotov format ili unesite prilagođene dimenzije – preuzmite u PNG, JPG ili WebP formatu.</p>
                   <div className="mt-4">
                     <Button arrow link="/hr/alati/urednik-slika">
                       Otvori alat
@@ -204,7 +204,7 @@ export default function ToolsIndexPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Izradite <strong>favicon.ico</strong> i PNG ikone 180x180, 192x192 i 512x512 iz jedne slike \u2013 u skladu sa zahtjevima preglednika i Lighthousea.
+                    Izradite <strong>favicon.ico</strong> i PNG ikone 180x180, 192x192 i 512x512 iz jedne slike – u skladu sa zahtjevima preglednika i Lighthousea.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/hr/alati/besplatni-generator-favicona">
@@ -229,7 +229,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Provjerite broj znakova i riječi te širinu u pikselima \u2013 s Google pregledom. Izbjegnite skraćene naslove i opise u rezultatima pretraživanja.</p>
+                  <p>Provjerite broj znakova i riječi te širinu u pikselima – s Google pregledom. Izbjegnite skraćene naslove i opise u rezultatima pretraživanja.</p>
                   <div className="mt-4">
                     <Button arrow link="/hr/alati/provjera-meta-naslova-i-opisa">
                       Otvori alat
@@ -295,7 +295,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Izradite QR kod za web stranicu, vCard posjetnicu, jelovnik restorana ili letak. Izvoz u PNG i SVG \u2013 bez prijave, bez ograničenja.</p>
+                  <p>Izradite QR kod za web stranicu, vCard posjetnicu, jelovnik restorana ili letak. Izvoz u PNG i SVG – bez prijave, bez ograničenja.</p>
                   <div className="mt-4">
                     <Button arrow link="/hr/alati/besplatni-generator-qr-kodova">
                       Otvori alat
@@ -338,7 +338,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Prenesite fotografiju ili logo \u2013 alat će izdvojiti dominantne boje. Kopirajte HEX kodove jednim klikom i koristite ih bilo gdje.</p>
+                  <p>Prenesite fotografiju ili logo – alat će izdvojiti dominantne boje. Kopirajte HEX kodove jednim klikom i koristite ih bilo gdje.</p>
                   <div className="mt-4">
                     <Button arrow link="/hr/alati/izdvajanje-boja-iz-slike">
                       Otvori alat
@@ -368,10 +368,9 @@ export default function ToolsIndexPage() {
         <Gap variant="line" />
         <SectionInfo title="Što su Arteonovi alati?">
           <p className="mb-4">
-            10 besplatnih alata za pripremu materijala za web stranice, društvene mreže i tiskovine \u2013 WebP pretvarač, generator favicona, brojač riječi, ekstraktor boja, generator paleta i QR
-            kodovi.
+            10 besplatnih alata za pripremu materijala za web stranice, društvene mreže i tiskovine – WebP pretvarač, generator favicona, brojač riječi, ekstraktor boja, generator paleta i QR kodovi.
           </p>
-          <p>Svi alati rade u pregledniku \u2013 datoteke se nikada ne šalju na poslužitelj. Koristite bez registracije i bez ograničenja.</p>
+          <p>Svi alati rade u pregledniku – datoteke se nikada ne šalju na poslužitelj. Koristite bez registracije i bez ograničenja.</p>
         </SectionInfo>
         <Gap variant="line" />
         <SectionSteps
@@ -381,15 +380,15 @@ export default function ToolsIndexPage() {
             {
               icon: <RiShieldCheckLine className="h-6 w-6" />,
               title: 'Potpuna privatnost',
-              description: 'Svi alati obrađuju datoteke lokalno u pregledniku. Ništa se ne šalje na poslužitelj \u2013 podaci nestaju kada zatvorite karticu.',
+              description: 'Svi alati obrađuju datoteke lokalno u pregledniku. Ništa se ne šalje na poslužitelj – podaci nestaju kada zatvorite karticu.',
             },
             {
               icon: <RiInfinityFill className="h-6 w-6" />,
               title: 'Bez ograničenja korištenja',
-              description: 'Koristite bez ograničenja \u2013 bez dnevnog limita, bez limita datoteka, bez limita konverzija. Koliko god puta trebate.',
+              description: 'Koristite bez ograničenja – bez dnevnog limita, bez limita datoteka, bez limita konverzija. Koliko god puta trebate.',
             },
             { icon: <RiLockLine className="h-6 w-6" />, title: 'Bez registracije', description: 'Račun nije potreban. Otvorite alat, koristite ga, gotovo.' },
-            { icon: <RiGlobalLine className="h-6 w-6" />, title: 'Dostupno na hrvatskom', description: 'Svi alati dostupni su na hrvatskom jeziku \u2013 sučelje, upute i obavijesti.' },
+            { icon: <RiGlobalLine className="h-6 w-6" />, title: 'Dostupno na hrvatskom', description: 'Svi alati dostupni su na hrvatskom jeziku – sučelje, upute i obavijesti.' },
           ]}
         />
         <Gap variant="line" />

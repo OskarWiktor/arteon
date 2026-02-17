@@ -1,78 +1,78 @@
 {
-  "slug": "about",
+  "slug": "game-da-mu",
   "metadata": {
-    "title": "About Arteon – 10 Free Online Tools for Web, SEO & Design",
-    "description": "Arteon is a creative agency building free browser-based tools: WebP converter, favicon generator, color contrast checker, QR code maker and more. No sign-up, no upload — everything runs locally."
+    "title": "Game da Arteon – Kayan aiki 10 kyauta don yanar gizo, SEO da zane",
+    "description": "Arteon hukumar kirkire ce da ke gina kayan aiki kyauta na browser: mai canza WebP, mai samar da favicon, mai gwada bambancin launuka, mai samar da lambar QR da sauransu. Ba sai ka yi rajista ba, ba sai ka loda ba — komai yana aiki a cikin na'urar ka."
   },
   "hero": {
-    "title": "Free online tools built by a creative agency",
-    "description": "10 browser-based tools for images, SEO, colors, email signatures and QR codes — no registration, no file uploads, no limits"
+    "title": "Kayan aiki kyauta da hukumar kirkire ta gina",
+    "description": "Kayan aiki 10 na browser don hotuna, SEO, launuka, sa hannun imel da lambobin QR — ba sai ka yi rajista ba, ba sai ka loda fayil ba, ba iyaka"
   },
   "whoWeAre": {
-    "title": "Who we are",
-    "p1": "Arteon is a Polish creative agency. Beyond our commercial work, we build and maintain a growing collection of free online tools designed for business owners, website creators, designers, marketers, and anyone who works with digital content.",
-    "p2": "Every tool we create solves a specific, everyday problem: converting images, checking color contrast, generating favicons, creating QR codes, and more. Our goal is to build a comprehensive toolkit where you can find everything you need in one place — without switching between dozens of different websites."
+    "title": "Su wane ne mu",
+    "p1": "Arteon hukumar kirkire ce ta Poland. Bayan aikin kasuwancinmu, muna gina kuma muna kula da tarin kayan aiki kyauta da ke karuwa don masu kasuwanci, masu kirkiran shafukan yanar gizo, masu zane, masu talla da duk wanda ke aiki da abun ciki na dijital.",
+    "p2": "Kowace kayan aiki da muka kirkira tana magance matsala ta musamman ta yau da kullun: canza hotuna, gwada bambancin launuka, samar da favicon, kirkiran lambobin QR da sauransu. Manufarmu ita ce mu gina kayan aiki cikakku inda za ka sami komai da kake bukata a wuri guda — ba tare da canza tsakanin shafukan yanar gizo da yawa ba."
   },
   "whyFree": {
-    "title": "Why we offer free tools",
+    "title": "Me ya sa muke bayar da kayan aiki kyauta",
     "items": [
       {
-        "title": "No registration, no limits",
-        "description": "Every tool works instantly in your browser. No account required, no login, no payment."
+        "title": "Ba rajista, ba iyaka",
+        "description": "Kowace kayan aiki tana aiki nan take a cikin browser dinka. Ba a bukatar asusu, shiga ko biya."
       },
       {
-        "title": "Privacy first",
-        "description": "Your files never leave your device. All processing happens locally in your browser — we do not send your data to any server."
+        "title": "Sirri da farko",
+        "description": "Fayilolinka ba sa barin na'urar ka sam. Duk aiwatarwa tana faruwa a cikin browser — ba ma aika bayananku zuwa kowace uwar garke."
       },
       {
-        "title": "Built from real needs",
-        "description": "Each tool was born from a real problem we encountered while working on client projects. If we needed it, chances are you do too."
+        "title": "An gina su daga bukatu na gaske",
+        "description": "Kowace kayan aiki ta fito daga matsala ta gaske da muka fuskanta yayin aiki akan ayyukan abokan ciniki. Idan mun bukace shi, mai yiwuwa kai ma kana bukatar shi."
       },
       {
-        "title": "Funded by ads, free for you",
-        "description": "We use Google AdSense banners to cover the costs of development and hosting. Thanks to ad revenue, we can keep all tools free and continue building new ones."
+        "title": "Tallace-tallace na biyan kudin, kyauta a gare ka",
+        "description": "Muna amfani da banners na Google AdSense don rufe kudin cigaba da hosting. Godiya ga kudin shiga daga tallace-tallace, duk kayan aiki suna kyauta."
       }
     ]
   },
   "ourTools": {
-    "title": "Our tools",
+    "title": "Kayan aikinmu",
     "items": [
       {
-        "title": "Images & favicons",
-        "description": "WebP converter, online image editor, and favicon generator. 3 tools for everyday image work."
+        "title": "Hotuna da favicon",
+        "description": "Mai canza WebP, mai gyara hotuna da mai samar da favicon. Kayan aiki 3 don aikin hotuna na yau da kullun."
       },
       {
-        "title": "Meta & SEO",
-        "description": "Meta title and description checker plus a word and character counter to evaluate text length."
+        "title": "Meta da SEO",
+        "description": "Mai gwada taken meta da bayanin tare da mai kidaya kalmomi da haruffa don tantance tsawon rubutu."
       },
       {
-        "title": "Email & communication",
-        "description": "HTML email signature generator with ready code for Gmail and Outlook."
+        "title": "Imel da sadarwa",
+        "description": "Mai samar da sa hannun imel na HTML tare da lambar da ta shirya don Gmail da Outlook."
       },
       {
-        "title": "Colors & accessibility",
-        "description": "WCAG contrast checker, image color extractor, and color palette generator. 3 tools for working with color."
+        "title": "Launuka da samun dama",
+        "description": "Mai gwada bambancin WCAG, mai fitar da launuka daga hoto da mai samar da fayafayan launuka. Kayan aiki 3 don aiki da launi."
       },
       {
-        "title": "Print & materials",
-        "description": "QR code generator for websites, vCards, menus, and flyers. Export to PNG and SVG."
+        "title": "Bugu da kayan aiki",
+        "description": "Mai samar da lambar QR don shafukan yanar gizo, vCard, menu da takardun talla. Fitarwa zuwa PNG da SVG."
       }
     ]
   },
   "whatsNext": {
-    "title": "What's next",
-    "text": "We are actively working on expanding the toolkit. New tools are added regularly based on user feedback and our own experience. The goal is a single platform where business owners, designers, and developers have access to every essential tool — all in one place, all for free."
+    "title": "Me ke gaba",
+    "text": "Muna aiki sosai don fadada kayan aikin. Ana kara sababbin kayan aiki akai-akai bisa shawarwarin masu amfani da kwarewarmu. Manufar ita ce dandali guda daya inda masu kasuwanci, masu zane da masu haɓakawa za su sami damar samun kowace kayan aiki da ake bukata — duka a wuri guda, duka kyauta."
   },
   "privacy": {
-    "title": "Privacy and security",
-    "textBefore": "We respect your privacy. Files you upload to our tools are processed exclusively in your browser and are never sent to any server. We use analytics (Google Analytics 4) and advertising (Google AdSense) only after you give consent via the cookie banner. Full details are available in our",
-    "linkLabel": "Privacy Policy",
-    "textAfter": "."
+    "title": "Sirri da tsaro",
+    "textBefore": "Muna girmama sirrin ka. Fayilolin da ka loda zuwa kayan aikinmu ana sarrafa su ne kawai a cikin browser dinka kuma ba a taba aika su zuwa kowace uwar garke ba. Muna amfani da nazari (Google Analytics 4) da tallace-tallace (Google AdSense) ne kawai bayan ka ba da izini ta hanyar sanarwar kukis. Cikakkun bayanai suna samuwa a cikin",
+    "linkLabel": "Manufar Sirri",
+    "textAfter": " namu."
   },
   "cta": {
-    "title": "Try our tools",
-    "description": "10 free online tools — no registration, no limits, no file uploads to servers",
-    "btnOne": "Go to tools",
-    "btnTwo": "Contact"
+    "title": "Gwada kayan aikinmu",
+    "description": "Kayan aiki 10 kyauta — ba rajista, ba iyaka, ba loda fayil zuwa uwar garke",
+    "btnOne": "Zuwa kayan aiki",
+    "btnTwo": "Tuntube mu"
   }
 }

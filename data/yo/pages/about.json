@@ -1,78 +1,78 @@
 {
-  "slug": "about",
+  "slug": "nipa-wa",
   "metadata": {
-    "title": "About Arteon – 10 Free Online Tools for Web, SEO & Design",
-    "description": "Arteon is a creative agency building free browser-based tools: WebP converter, favicon generator, color contrast checker, QR code maker and more. No sign-up, no upload — everything runs locally."
+    "title": "Nípa Arteon – Irinṣẹ́ 10 ọ̀fẹ́ fún ayélujára, SEO àti àpẹẹrẹ",
+    "description": "Arteon jẹ́ ilé-iṣẹ́ ẹ̀dá tó ń ṣe irinṣẹ́ ọ̀fẹ́ fún aṣàwákiri: olùyípadà WebP, olùpilẹ̀ṣẹ̀ favicon, àyẹ̀wò ìyàtọ̀ àwọ̀, olùṣẹ̀dá kóòdù QR àti púpọ̀ síi. Láì forúkọ sílẹ̀, láìsí ìgbékalẹ̀ — gbogbo rẹ̀ ń ṣiṣẹ́ lórí ẹ̀rọ rẹ."
   },
   "hero": {
-    "title": "Free online tools built by a creative agency",
-    "description": "10 browser-based tools for images, SEO, colors, email signatures and QR codes — no registration, no file uploads, no limits"
+    "title": "Àwọn irinṣẹ́ ọ̀fẹ́ tí ilé-iṣẹ́ ẹ̀dá ṣe",
+    "description": "Irinṣẹ́ 10 fún aṣàwákiri fún àwọn àwòrán, SEO, àwọ̀, ìbúwọ́lù ímeèlì àti kóòdù QR — láì forúkọ sílẹ̀, láìsí ìgbékalẹ̀ fáìlì, láìsí ìdíwọ́n"
   },
   "whoWeAre": {
-    "title": "Who we are",
-    "p1": "Arteon is a Polish creative agency. Beyond our commercial work, we build and maintain a growing collection of free online tools designed for business owners, website creators, designers, marketers, and anyone who works with digital content.",
-    "p2": "Every tool we create solves a specific, everyday problem: converting images, checking color contrast, generating favicons, creating QR codes, and more. Our goal is to build a comprehensive toolkit where you can find everything you need in one place — without switching between dozens of different websites."
+    "title": "Ta ni àwa",
+    "p1": "Arteon jẹ́ ilé-iṣẹ́ ẹ̀dá ti Poland. Yàtọ̀ sí iṣẹ́ tita wa, a ń ṣe àti tọ́jú àkójọpọ̀ irinṣẹ́ ọ̀fẹ́ tó ń dàgbà fún àwọn oníṣòwò, olùṣẹ̀dá ojú-ìwé ayélujára, olùṣàpẹẹrẹ, olùpolówó àti ẹnikẹ́ni tó ń bá àkóónú oni-nọ́mbà ṣiṣẹ́.",
+    "p2": "Irinṣẹ́ kọ̀ọ̀kan tí a ṣe ń yanjú ìṣòro pàtó ojoojúmọ́: yíyípadà àwòrán, àyẹ̀wò ìyàtọ̀ àwọ̀, ṣíṣẹ̀dá favicon, ṣíṣẹ̀dá kóòdù QR àti púpọ̀ síi. Ètò wa ni láti ṣe àkójọpọ̀ irinṣẹ́ tó pé níbi tí o lè rí ohun gbogbo tó nílò ní ibi kan — láì yípadà láàárín ọ̀pọ̀ ojú-ìwé ayélujára."
   },
   "whyFree": {
-    "title": "Why we offer free tools",
+    "title": "Kí nìdí tí a fi ń pèsè irinṣẹ́ ọ̀fẹ́",
     "items": [
       {
-        "title": "No registration, no limits",
-        "description": "Every tool works instantly in your browser. No account required, no login, no payment."
+        "title": "Láì forúkọ sílẹ̀, láìsí ìdíwọ́n",
+        "description": "Irinṣẹ́ kọ̀ọ̀kan ń ṣiṣẹ́ lẹ́sẹ̀kẹsẹ̀ nínú aṣàwákiri rẹ. Kò nílò àkáǹtì, ìwọlé tàbí ìsanwó."
       },
       {
-        "title": "Privacy first",
-        "description": "Your files never leave your device. All processing happens locally in your browser — we do not send your data to any server."
+        "title": "Àṣírí ni àkọ́kọ́",
+        "description": "Àwọn fáìlì rẹ kò kúrò lórí ẹ̀rọ rẹ rárá. Gbogbo ìṣiṣẹ́ ń wáyé ní àdúgbò nínú aṣàwákiri — a kò fi dátà rẹ ránṣẹ́ sí ẹ̀rọ ìṣẹ́ kankan."
       },
       {
-        "title": "Built from real needs",
-        "description": "Each tool was born from a real problem we encountered while working on client projects. If we needed it, chances are you do too."
+        "title": "A ṣe é láti inú àìní gidi",
+        "description": "Irinṣẹ́ kọ̀ọ̀kan bí láti ìṣòro gidi tí a bá pàdé nígbà tí a ń ṣiṣẹ́ lórí iṣẹ́ àwọn alábarò. Tí ó bá ti nílò fún wa, ó ṣeéṣe kó nílò fún ẹ pẹ̀lú."
       },
       {
-        "title": "Funded by ads, free for you",
-        "description": "We use Google AdSense banners to cover the costs of development and hosting. Thanks to ad revenue, we can keep all tools free and continue building new ones."
+        "title": "Ìpolówó ń sanwó, ọ̀fẹ́ fún ọ",
+        "description": "A ń lo àwọn àkíyèsí Google AdSense láti bo iye owó ìdàgbàsókè àti ìgbàlejì. Nítorí owó tó ń wọlé láti ìpolówó, gbogbo irinṣẹ́ wà lọ́fẹ̀ẹ́."
       }
     ]
   },
   "ourTools": {
-    "title": "Our tools",
+    "title": "Àwọn irinṣẹ́ wa",
     "items": [
       {
-        "title": "Images & favicons",
-        "description": "WebP converter, online image editor, and favicon generator. 3 tools for everyday image work."
+        "title": "Àwọn àwòrán àti favicon",
+        "description": "Olùyípadà WebP, olùṣàtúnṣe àwòrán àti olùpilẹ̀ṣẹ̀ favicon. Irinṣẹ́ 3 fún iṣẹ́ ojoojúmọ́ pẹ̀lú àwòrán."
       },
       {
-        "title": "Meta & SEO",
-        "description": "Meta title and description checker plus a word and character counter to evaluate text length."
+        "title": "Meta àti SEO",
+        "description": "Àyẹ̀wò àkọlé meta àti àpèjúwe pẹ̀lú olùka ọ̀rọ̀ àti ohun kíkọ fún ṣíṣe ìgbéléwọ̀n gígùn ọ̀rọ̀."
       },
       {
-        "title": "Email & communication",
-        "description": "HTML email signature generator with ready code for Gmail and Outlook."
+        "title": "Ímeèlì àti ìbánisọ̀rọ̀",
+        "description": "Olùpilẹ̀ṣẹ̀ ìbúwọ́lù ímeèlì HTML pẹ̀lú kóòdù tó ṣetán fún Gmail àti Outlook."
       },
       {
-        "title": "Colors & accessibility",
-        "description": "WCAG contrast checker, image color extractor, and color palette generator. 3 tools for working with color."
+        "title": "Àwọ̀ àti ìráyèsí",
+        "description": "Àyẹ̀wò ìyàtọ̀ WCAG, ìsẹ̀jade àwọ̀ láti àwòrán àti olùṣẹ̀dá pálẹ́ẹ̀tì àwọ̀. Irinṣẹ́ 3 fún iṣẹ́ pẹ̀lú àwọ̀."
       },
       {
-        "title": "Print & materials",
-        "description": "QR code generator for websites, vCards, menus, and flyers. Export to PNG and SVG."
+        "title": "Ìtẹ̀wé àti ohun èlò",
+        "description": "Olùṣẹ̀dá kóòdù QR fún ojú-ìwé ayélujára, vCard, àkójọ oúnjẹ àti ìwé ìpolówó. Ìgbéjáde sí PNG àti SVG."
       }
     ]
   },
   "whatsNext": {
-    "title": "What's next",
-    "text": "We are actively working on expanding the toolkit. New tools are added regularly based on user feedback and our own experience. The goal is a single platform where business owners, designers, and developers have access to every essential tool — all in one place, all for free."
+    "title": "Kí ni ó ń bọ̀",
+    "text": "A ń ṣiṣẹ́ lọ́wọ́ láti fẹ̀ àkójọpọ̀ irinṣẹ́ sí i. A ń fi irinṣẹ́ tuntun kún ní ìgbà gbogbo dá lórí èsì àwọn olùlò àti ìrírí tiwa. Ètò náà ni pẹpẹ kan ṣoṣo níbi tí àwọn oníṣòwò, olùṣàpẹẹrẹ àti olùpilẹ̀ṣẹ̀ lè rí gbogbo irinṣẹ́ pàtàkì — gbogbo rẹ̀ ní ibi kan, gbogbo rẹ̀ lọ́fẹ̀ẹ́."
   },
   "privacy": {
-    "title": "Privacy and security",
-    "textBefore": "We respect your privacy. Files you upload to our tools are processed exclusively in your browser and are never sent to any server. We use analytics (Google Analytics 4) and advertising (Google AdSense) only after you give consent via the cookie banner. Full details are available in our",
-    "linkLabel": "Privacy Policy",
-    "textAfter": "."
+    "title": "Àṣírí àti àbò",
+    "textBefore": "A bọ̀wọ̀ fún àṣírí rẹ. Àwọn fáìlì tí o gbé kalẹ̀ sí irinṣẹ́ wa ni a ṣe ìṣiṣẹ́ wọn nínú aṣàwákiri rẹ nìkan, a kò sì fi ránṣẹ́ sí ẹ̀rọ ìṣẹ́ kankan. A ń lo àtúpalẹ̀ (Google Analytics 4) àti ìpolówó (Google AdSense) lẹ́yìn tí o bá ti fún wa ní àṣẹ nípasẹ̀ àkíyèsí kúkì. Ẹ̀ kà àlàyé kíkún nínú",
+    "linkLabel": "Ìlànà Àṣírí",
+    "textAfter": " wa."
   },
   "cta": {
-    "title": "Try our tools",
-    "description": "10 free online tools — no registration, no limits, no file uploads to servers",
-    "btnOne": "Go to tools",
-    "btnTwo": "Contact"
+    "title": "Dán irinṣẹ́ wa wò",
+    "description": "Irinṣẹ́ 10 ọ̀fẹ́ — láì forúkọ sílẹ̀, láìsí ìdíwọ́n, láìsí ìgbékalẹ̀ fáìlì sí ẹ̀rọ ìṣẹ́",
+    "btnOne": "Lọ sí irinṣẹ́",
+    "btnTwo": "Kàn sí wa"
   }
 }

@@ -144,7 +144,7 @@ const faqItems = [
   { question: 'Kiek kainuoja įrankiai?', answer: 'Nieko. Visi įrankiai yra visiškai nemokami, be prenumeratų ir paslėptų mokesčių.' },
   { question: 'Ar mano failai siunčiami į serverį?', answer: 'Ne. Visi įrankiai veikia tiesiogiai naršyklėje. Failai niekada nepalieka jūsų kompiuterio ir niekur nesaugomi.' },
   { question: 'Ar reikia paskyros?', answer: 'Ne. Įrankius galite naudoti iš karto be prisijungimo ar registracijos.' },
-  { question: 'Ar yra naudojimo apribojimai?', answer: 'Ne. Naudokite be apribojimų \u2013 be dienos limito, be failų limito, be konversijų limito.' },
+  { question: 'Ar yra naudojimo apribojimai?', answer: 'Ne. Naudokite be apribojimų – be dienos limito, be failų limito, be konversijų limito.' },
   {
     question: 'Kam skirti įrankiai?',
     answer:
@@ -158,7 +158,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Nemokami įrankiai"
-        description="Vaizdų konverteris, favicon generatorius, žodžių skaitiklis, spalvų įrankiai ir QR kodai. Be registracijos, be apribojimų \u2013 viskas veikia naršyklėje."
+        description="Vaizdų konverteris, favicon generatorius, žodžių skaitiklis, spalvų įrankiai ir QR kodai. Be registracijos, be apribojimų – viskas veikia naršyklėje."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -194,7 +194,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Apkirpkite vaizdą socialiniams tinklams ar svetainei. Pasirinkite gatavą formatą arba įveskite pasirinktinius matmenis \u2013 atsisiųskite PNG, JPG arba WebP formatu.</p>
+                  <p>Apkirpkite vaizdą socialiniams tinklams ar svetainei. Pasirinkite gatavą formatą arba įveskite pasirinktinius matmenis – atsisiųskite PNG, JPG arba WebP formatu.</p>
                   <div className="mt-4">
                     <Button arrow link="/lt/irankiai/vaizdu-redaktorius">
                       Atidaryti įrankį
@@ -211,7 +211,7 @@ export default function ToolsIndexPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Sukurkite <strong>favicon.ico</strong> ir PNG piktogramas 180x180, 192x192 ir 512x512 iš vieno vaizdo \u2013 atitinkančias naršyklės ir Lighthouse reikalavimus.
+                    Sukurkite <strong>favicon.ico</strong> ir PNG piktogramas 180x180, 192x192 ir 512x512 iš vieno vaizdo – atitinkančias naršyklės ir Lighthouse reikalavimus.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/lt/irankiai/nemokamas-favicon-generatorius">
@@ -236,7 +236,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Patikrinkite simbolių ir žodžių skaičių bei pikselių plotį \u2013 su Google peržiūra. Išvenkite sutrumpintų pavadinimų ir aprašymų paieškos rezultatuose.</p>
+                  <p>Patikrinkite simbolių ir žodžių skaičių bei pikselių plotį – su Google peržiūra. Išvenkite sutrumpintų pavadinimų ir aprašymų paieškos rezultatuose.</p>
                   <div className="mt-4">
                     <Button arrow link="/lt/irankiai/meta-pavadinimo-ir-aprasymo-tikrintuvas">
                       Atidaryti įrankį
@@ -305,7 +305,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Sukurkite QR kodą svetainei, vCard vizitinei kortelei, restorano meniu ar skrajutei. Eksportuokite į PNG ir SVG \u2013 be prisijungimo, be apribojimų.</p>
+                  <p>Sukurkite QR kodą svetainei, vCard vizitinei kortelei, restorano meniu ar skrajutei. Eksportuokite į PNG ir SVG – be prisijungimo, be apribojimų.</p>
                   <div className="mt-4">
                     <Button arrow link="/lt/irankiai/nemokamas-qr-kodo-generatorius">
                       Atidaryti įrankį
@@ -348,7 +348,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Įkelkite nuotrauką arba logotipą \u2013 įrankis išrinks dominuojančias spalvas. Nukopijuokite HEX kodus vienu paspaudimu ir naudokite juos bet kur.</p>
+                  <p>Įkelkite nuotrauką arba logotipą – įrankis išrinks dominuojančias spalvas. Nukopijuokite HEX kodus vienu paspaudimu ir naudokite juos bet kur.</p>
                   <div className="mt-4">
                     <Button arrow link="/lt/irankiai/spalvu-isrinkimas-is-vaizdo">
                       Atidaryti įrankį
@@ -380,10 +380,10 @@ export default function ToolsIndexPage() {
         <Gap variant="line" />
         <SectionInfo title="Kas yra Arteon įrankiai?">
           <p className="mb-4">
-            10 nemokamų įrankių medžiagai paruošti svetainėms, socialiniams tinklams ir spaudai \u2013 WebP konverteris, favicon generatorius, žodžių skaitiklis, spalvų išrinkimas, paletių
-            generatorius ir QR kodai.
+            10 nemokamų įrankių medžiagai paruošti svetainėms, socialiniams tinklams ir spaudai – WebP konverteris, favicon generatorius, žodžių skaitiklis, spalvų išrinkimas, paletių generatorius ir
+            QR kodai.
           </p>
-          <p>Visi įrankiai veikia naršyklėje \u2013 failai niekada nesiunčiami į serverį. Naudokite be registracijos ir be apribojimų.</p>
+          <p>Visi įrankiai veikia naršyklėje – failai niekada nesiunčiami į serverį. Naudokite be registracijos ir be apribojimų.</p>
         </SectionInfo>
         <Gap variant="line" />
         <SectionSteps
@@ -393,15 +393,15 @@ export default function ToolsIndexPage() {
             {
               icon: <RiShieldCheckLine className="h-6 w-6" />,
               title: 'Visiškas privatumas',
-              description: 'Visi įrankiai apdoroja failus lokaliai naršyklėje. Niekas nesiunčiama į serverį \u2013 duomenys dingsta uždarius skirtuką.',
+              description: 'Visi įrankiai apdoroja failus lokaliai naršyklėje. Niekas nesiunčiama į serverį – duomenys dingsta uždarius skirtuką.',
             },
             {
               icon: <RiInfinityFill className="h-6 w-6" />,
               title: 'Be naudojimo apribojimų',
-              description: 'Naudokite be apribojimų \u2013 be dienos limito, be failų limito, be konversijų limito. Kiek kartų reikia.',
+              description: 'Naudokite be apribojimų – be dienos limito, be failų limito, be konversijų limito. Kiek kartų reikia.',
             },
             { icon: <RiLockLine className="h-6 w-6" />, title: 'Be registracijos', description: 'Paskyros nereikia. Atidarykite įrankį, naudokite, baigta.' },
-            { icon: <RiGlobalLine className="h-6 w-6" />, title: 'Prieinama lietuvių kalba', description: 'Visi įrankiai prieinami lietuvių kalba \u2013 sąsaja, instrukcijos ir pranešimai.' },
+            { icon: <RiGlobalLine className="h-6 w-6" />, title: 'Prieinama lietuvių kalba', description: 'Visi įrankiai prieinami lietuvių kalba – sąsaja, instrukcijos ir pranešimai.' },
           ]}
         />
         <Gap variant="line" />

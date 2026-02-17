@@ -1,28 +1,28 @@
 {
-  "slug": "contact",
+  "slug": "epikoinonia",
   "metadata": {
-    "title": "Contact Arteon – Free Online Tools Support & Feedback",
-    "description": "Get in touch with the Arteon team. Report a bug, suggest a new tool, or ask a question about our free online tools for images, SEO, colors and QR codes. We respond within one business day."
+    "title": "Επικοινωνία με Arteon – Υποστήριξη & σχόλια για δωρεάν εργαλεία",
+    "description": "Επικοινωνήστε με την ομάδα Arteon. Αναφέρετε ένα σφάλμα, προτείνετε ένα νέο εργαλείο ή κάντε μια ερώτηση για τα δωρεάν εργαλεία μας για εικόνες, SEO, χρώματα και κωδικούς QR. Απαντάμε εντός μίας εργάσιμης ημέρας."
   },
   "hero": {
-    "title": "Get in touch with the Arteon team",
-    "description": "Report a bug, suggest a new tool, or ask a question — we respond within one business day"
+    "title": "Επικοινωνήστε με την ομάδα Arteon",
+    "description": "Αναφέρετε ένα σφάλμα, προτείνετε ένα νέο εργαλείο ή κάντε μια ερώτηση — απαντάμε εντός μίας εργάσιμης ημέρας"
   },
   "intro": {
-    "title": "Have a question or suggestion?",
-    "textBefore": "We are happy to hear your feedback about our tools. If you found a bug, have an idea for a new tool, or need help — write to us at",
-    "textAfter": ". We respond within one business day."
+    "title": "Έχετε ερώτηση ή πρόταση;",
+    "textBefore": "Θα χαρούμε να ακούσουμε τα σχόλιά σας για τα εργαλεία μας. Αν βρήκατε σφάλμα, έχετε ιδέα για νέο εργαλείο ή χρειάζεστε βοήθεια — γράψτε μας στο",
+    "textAfter": ". Απαντάμε εντός μίας εργάσιμης ημέρας."
   },
-  "formTitle": "Send us a message",
+  "formTitle": "Στείλτε μας μήνυμα",
   "details": {
-    "title": "Contact details",
+    "title": "Στοιχεία επικοινωνίας",
     "emailLabel": "Email",
-    "hoursLabel": "Business hours",
-    "hoursValue": "Monday – Friday: 8:00 – 16:00 (CET)"
+    "hoursLabel": "Ώρες εργασίας",
+    "hoursValue": "Δευτέρα – Παρασκευή: 8:00 – 16:00 (CET)"
   },
   "cta": {
-    "title": "Back to tools",
-    "description": "10 free online tools for working with images, text, and colors",
-    "btnOne": "Tools"
+    "title": "Πίσω στα εργαλεία",
+    "description": "10 δωρεάν εργαλεία για εργασία με εικόνες, κείμενο και χρώματα",
+    "btnOne": "Εργαλεία"
   }
 }

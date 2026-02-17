@@ -1,78 +1,78 @@
 {
-  "slug": "about",
+  "slug": "sxetika-me-emas",
   "metadata": {
-    "title": "About Arteon – 10 Free Online Tools for Web, SEO & Design",
-    "description": "Arteon is a creative agency building free browser-based tools: WebP converter, favicon generator, color contrast checker, QR code maker and more. No sign-up, no upload — everything runs locally."
+    "title": "Σχετικά με το Arteon – 10 δωρεάν εργαλεία για web, SEO & σχεδιασμό",
+    "description": "Το Arteon είναι ένα δημιουργικό γραφείο που κατασκευάζει δωρεάν εργαλεία browser: μετατροπέας WebP, δημιουργία favicon, έλεγχος αντίθεσης χρωμάτων, δημιουργία QR κωδικών και άλλα. Χωρίς εγγραφή, χωρίς μεταφόρτωση — όλα εκτελούνται τοπικά."
   },
   "hero": {
-    "title": "Free online tools built by a creative agency",
-    "description": "10 browser-based tools for images, SEO, colors, email signatures and QR codes — no registration, no file uploads, no limits"
+    "title": "Δωρεάν εργαλεία από ένα δημιουργικό γραφείο",
+    "description": "10 εργαλεία browser για εικόνες, SEO, χρώματα, υπογραφές email και κωδικούς QR — χωρίς εγγραφή, χωρίς μεταφόρτωση αρχείων, χωρίς όρια"
   },
   "whoWeAre": {
-    "title": "Who we are",
-    "p1": "Arteon is a Polish creative agency. Beyond our commercial work, we build and maintain a growing collection of free online tools designed for business owners, website creators, designers, marketers, and anyone who works with digital content.",
-    "p2": "Every tool we create solves a specific, everyday problem: converting images, checking color contrast, generating favicons, creating QR codes, and more. Our goal is to build a comprehensive toolkit where you can find everything you need in one place — without switching between dozens of different websites."
+    "title": "Ποιοι είμαστε",
+    "p1": "Το Arteon είναι ένα πολωνικό δημιουργικό γραφείο. Πέρα από την εμπορική μας δραστηριότητα, κατασκευάζουμε και συντηρούμε μια αυξανόμενη συλλογή δωρεάν εργαλείων για ιδιοκτήτες επιχειρήσεων, δημιουργούς ιστοσελίδων, σχεδιαστές, marketers και όποιον εργάζεται με ψηφιακό περιεχόμενο.",
+    "p2": "Κάθε εργαλείο που δημιουργούμε λύνει ένα συγκεκριμένο, καθημερινό πρόβλημα: μετατροπή εικόνων, έλεγχος αντίθεσης χρωμάτων, δημιουργία favicon, κατασκευή κωδικών QR και άλλα. Στόχος μας είναι να φτιάξουμε μια ολοκληρωμένη εργαλειοθήκη όπου μπορείτε να βρείτε ό,τι χρειάζεστε σε ένα μέρος — χωρίς εναλλαγή μεταξύ δεκάδων διαφορετικών ιστοσελίδων."
   },
   "whyFree": {
-    "title": "Why we offer free tools",
+    "title": "Γιατί προσφέρουμε δωρεάν εργαλεία",
     "items": [
       {
-        "title": "No registration, no limits",
-        "description": "Every tool works instantly in your browser. No account required, no login, no payment."
+        "title": "Χωρίς εγγραφή, χωρίς όρια",
+        "description": "Κάθε εργαλείο λειτουργεί αμέσως στον browser σας. Δεν απαιτείται λογαριασμός, σύνδεση ή πληρωμή."
       },
       {
-        "title": "Privacy first",
-        "description": "Your files never leave your device. All processing happens locally in your browser — we do not send your data to any server."
+        "title": "Απόρρητο πρώτα",
+        "description": "Τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Όλη η επεξεργασία γίνεται τοπικά στον browser — δεν στέλνουμε τα δεδομένα σας σε κανέναν server."
       },
       {
-        "title": "Built from real needs",
-        "description": "Each tool was born from a real problem we encountered while working on client projects. If we needed it, chances are you do too."
+        "title": "Φτιαγμένα από πραγματικές ανάγκες",
+        "description": "Κάθε εργαλείο γεννήθηκε από ένα πραγματικό πρόβλημα που αντιμετωπίσαμε δουλεύοντας σε πελατειακά έργα. Αν το χρειαστήκαμε εμείς, πιθανόν θα το χρειαστείτε κι εσείς."
       },
       {
-        "title": "Funded by ads, free for you",
-        "description": "We use Google AdSense banners to cover the costs of development and hosting. Thanks to ad revenue, we can keep all tools free and continue building new ones."
+        "title": "Χρηματοδοτούνται από διαφημίσεις, δωρεάν για εσάς",
+        "description": "Χρησιμοποιούμε banners Google AdSense για να καλύψουμε τα έξοδα ανάπτυξης και φιλοξενίας. Χάρη στα έσοδα από διαφημίσεις, όλα τα εργαλεία παραμένουν δωρεάν."
       }
     ]
   },
   "ourTools": {
-    "title": "Our tools",
+    "title": "Τα εργαλεία μας",
     "items": [
       {
-        "title": "Images & favicons",
-        "description": "WebP converter, online image editor, and favicon generator. 3 tools for everyday image work."
+        "title": "Εικόνες & favicon",
+        "description": "Μετατροπέας WebP, επεξεργαστής εικόνων και δημιουργός favicon. 3 εργαλεία για καθημερινή εργασία με εικόνες."
       },
       {
         "title": "Meta & SEO",
-        "description": "Meta title and description checker plus a word and character counter to evaluate text length."
+        "description": "Έλεγχος meta τίτλου και περιγραφής συν μετρητής λέξεων και χαρακτήρων για αξιολόγηση μήκους κειμένου."
       },
       {
-        "title": "Email & communication",
-        "description": "HTML email signature generator with ready code for Gmail and Outlook."
+        "title": "Email & επικοινωνία",
+        "description": "Δημιουργός υπογραφής email HTML με έτοιμο κώδικα για Gmail και Outlook."
       },
       {
-        "title": "Colors & accessibility",
-        "description": "WCAG contrast checker, image color extractor, and color palette generator. 3 tools for working with color."
+        "title": "Χρώματα & προσβασιμότητα",
+        "description": "Έλεγχος αντίθεσης WCAG, εξαγωγή χρωμάτων από εικόνα και δημιουργός παλετών χρωμάτων. 3 εργαλεία για εργασία με χρώμα."
       },
       {
-        "title": "Print & materials",
-        "description": "QR code generator for websites, vCards, menus, and flyers. Export to PNG and SVG."
+        "title": "Εκτύπωση & υλικά",
+        "description": "Δημιουργός κωδικών QR για ιστοσελίδες, vCard, μενού και φυλλάδια. Εξαγωγή σε PNG και SVG."
       }
     ]
   },
   "whatsNext": {
-    "title": "What's next",
-    "text": "We are actively working on expanding the toolkit. New tools are added regularly based on user feedback and our own experience. The goal is a single platform where business owners, designers, and developers have access to every essential tool — all in one place, all for free."
+    "title": "Τι ακολουθεί",
+    "text": "Εργαζόμαστε ενεργά για την επέκταση της εργαλειοθήκης. Νέα εργαλεία προστίθενται τακτικά βάσει σχολίων χρηστών και της δικής μας εμπειρίας. Ο στόχος είναι μια ενιαία πλατφόρμα όπου ιδιοκτήτες επιχειρήσεων, σχεδιαστές και προγραμματιστές θα έχουν πρόσβαση σε κάθε απαραίτητο εργαλείο — όλα σε ένα μέρος, όλα δωρεάν."
   },
   "privacy": {
-    "title": "Privacy and security",
-    "textBefore": "We respect your privacy. Files you upload to our tools are processed exclusively in your browser and are never sent to any server. We use analytics (Google Analytics 4) and advertising (Google AdSense) only after you give consent via the cookie banner. Full details are available in our",
-    "linkLabel": "Privacy Policy",
+    "title": "Απόρρητο και ασφάλεια",
+    "textBefore": "Σεβόμαστε το απόρρητό σας. Τα αρχεία που ανεβάζετε στα εργαλεία μας επεξεργάζονται αποκλειστικά στον browser σας και δεν αποστέλλονται ποτέ σε server. Χρησιμοποιούμε αναλυτικά (Google Analytics 4) και διαφημίσεις (Google AdSense) μόνο μετά τη συγκατάθεσή σας μέσω του banner cookies. Πλήρεις λεπτομέρειες στην",
+    "linkLabel": "Πολιτική Απορρήτου",
     "textAfter": "."
   },
   "cta": {
-    "title": "Try our tools",
-    "description": "10 free online tools — no registration, no limits, no file uploads to servers",
-    "btnOne": "Go to tools",
-    "btnTwo": "Contact"
+    "title": "Δοκιμάστε τα εργαλεία μας",
+    "description": "10 δωρεάν εργαλεία — χωρίς εγγραφή, χωρίς όρια, χωρίς μεταφόρτωση αρχείων σε server",
+    "btnOne": "Στα εργαλεία",
+    "btnTwo": "Επικοινωνία"
   }
 }

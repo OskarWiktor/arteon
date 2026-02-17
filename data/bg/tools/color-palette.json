@@ -2,56 +2,63 @@
   "toolKey": "colorPalette",
   "locale": "bg",
   "metadata": {
-    "title": "Free Color Palette Generator – 9 Palettes From One Color",
-    "description": "Generate 9 color palettes from one base color: monochromatic, complementary, triadic, pastel and more. Copy HEX codes in one click. No signup, no limits.",
+    "title": "Безплатен генератор на цветови палитри – 9 палитри от един цвят",
+    "description": "Генерирайте 9 цветови палитри от един базов цвят: монохроматична, комплементарна, триадична, пастелна и други. Копирайте HEX кодове с едно кликване. Без регистрация, без ограничения.",
     "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
     "path": "/bg/instrumenti/generator-na-tsvetovi-palitri"
   },
   "hero": {
-    "title": "Color palette generator",
-    "description": "Enter one base color, and the tool will generate 9 harmonious color palettes: monochromatic, complementary, triadic, pastel, and more. Each color can be copied with its HEX code.",
+    "title": "Генератор на цветови палитри",
+    "description": "Въведете един базов цвят и инструментът ще генерира 9 хармонични цветови палитри: монохроматична, комплементарна, триадична, пастелна и други. Всеки цвят може да бъде копиран с HEX кода си.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/bg/instrumenti", "label": "Tools" },
-    "third": { "href": "/bg/instrumenti/generator-na-tsvetovi-palitri", "label": "Color palette generator" }
+    "second": { "href": "/bg/instrumenti", "label": "Инструменти" },
+    "third": { "href": "/bg/instrumenti/generator-na-tsvetovi-palitri", "label": "Генератор на цветови палитри" }
   },
   "schemas": {
     "software": {
-      "name": "Color palette generator",
-      "alternateName": ["Color scheme generator", "Online color generator", "Color palette creator", "Color matching tool", "Color palette online", "Color harmony generator"],
+      "name": "Генератор на цветови палитри",
+      "alternateName": [
+        "Генератор на цветови схеми",
+        "Генератор на палитри",
+        "Създаване на цветова палитра",
+        "Инструмент за съчетаване на цветове",
+        "Генератор на цветова хармония",
+        "Безплатен генератор на палитри"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Free online color palette generator. Enter one HEX color and the tool will generate 9 schemes: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, and minimalist. Each color can be copied with its HEX code and HSL value.",
+      "description": "Безплатен генератор на цветови палитри. Въведете един HEX цвят и инструментът ще генерира 9 схеми: монохроматична, аналогова, комплементарна, триадична, разделено-комплементарна, пастелна, тъмна, тонална и минималистична. Всеки цвят може да бъде копиран с HEX кода и HSL стойността си.",
       "featureList": [
-        "Monochromatic scheme - shades of one color",
-        "Analogous scheme - neighboring colors on the color wheel",
-        "Complementary scheme - opposite colors",
-        "Triadic scheme - 3 colors at equal intervals",
-        "Split-complementary scheme - base color and 2 neighbors of its complement",
-        "Pastel palette - light, muted shades",
-        "Dark palette - deep colors for dark themes",
-        "Tonal palette - lightness scale of one hue",
-        "Minimalist palette - strong accent with light neutrals",
-        "Base color in HEX format",
-        "Color picker for visual selection",
-        "Random starting color",
-        "Copy HEX code to clipboard",
-        "HSL value displayed alongside each color",
-        "Local processing in the browser"
+        "Монохроматична схема – нюанси на един цвят",
+        "Аналогова схема – съседни цветове на цветовото колело",
+        "Комплементарна схема – противоположни цветове",
+        "Триадична схема – 3 цвята на равни интервали",
+        "Разделено-комплементарна схема – базов цвят и 2 съседа на допълнителния",
+        "Пастелна палитра – светли, приглушени нюанси",
+        "Тъмна палитра – дълбоки цветове за тъмни теми",
+        "Тонална палитра – скала на яркост на един нюанс",
+        "Минималистична палитра – силен акцент с леки неутрали",
+        "Базов цвят в HEX формат",
+        "Избор на цвят с визуален селектор",
+        "Произволен начален цвят",
+        "Копиране на HEX код в клипборда",
+        "HSL стойност показана до всеки цвят",
+        "Локална обработка в браузъра"
       ]
     },
     "howTo": {
-      "name": "How to generate a color palette from one base color",
-      "description": "How to generate 9 color palettes from one base color: monochromatic, complementary, triadic, pastel, and more. Each color can be copied with its HEX code.",
+      "name": "Как да генерирате цветова палитра от един базов цвят",
+      "description": "Как да генерирате 9 цветови палитри от един базов цвят: монохроматична, комплементарна, триадична, пастелна и други. Всеки цвят може да бъде копиран с HEX кода си.",
       "steps": [
-        { "name": "Choose a base color", "text": "Enter a HEX code in the text field or use the color picker to select a color visually." },
-        { "name": "Confirm the color", "text": "Confirm the selected color with the Update Color button - the tool will generate palettes based on your chosen base color." },
+        { "name": "Изберете базов цвят", "text": "Въведете HEX код в текстовото поле или използвайте визуалния селектор за избор на цвят." },
+        { "name": "Потвърдете цвета", "text": "Потвърдете избрания цвят с бутона Актуализиране на цвета – инструментът ще генерира палитри на базата на избрания цвят." },
         {
-          "name": "Browse the palettes",
-          "text": "The tool will automatically generate 9 different palettes: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, and minimalist."
+          "name": "Разгледайте палитрите",
+          "text": "Инструментът автоматично ще генерира 9 различни палитри: монохроматична, аналогова, комплементарна, триадична, разделено-комплементарна, пастелна, тъмна, тонална и минималистична."
         },
-        { "name": "Copy colors", "text": "Next to each color you will find a Copy button - the HEX code is copied to your system clipboard." }
+        { "name": "Копирайте цветовете", "text": "До всеки цвят ще намерите бутон Копиране – HEX кодът се копира в клипборда на системата." }
       ]
     }
   },
@@ -59,173 +66,179 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Why generate a color palette?",
-      "html": "<p class=\"text-mid\">A consistent color palette is the foundation of every visual project - from a website, through a logo, to printed materials. Manually selecting colors that work together requires knowledge of color theory. The generator does it automatically: you provide one base color (e.g., your logo color), and the tool creates 9 color sets based on proven color harmony schemes.</p><p class=\"text-mid mt-3\">Each generated color comes with its HEX code (e.g., #4F6BF5) and HSL value (hue, saturation, lightness). The HEX code can be pasted directly into CSS, Figma, Canva, or any graphics application.</p>"
+      "title": "Защо да генерирате цветова палитра?",
+      "html": "<p class=\"text-mid\">Последователната цветова палитра е основата на всеки визуален проект – от уебсайт, през лого, до печатни материали. Ръчният подбор на цветове, които работят заедно, изисква познания по теория на цветовете. Генераторът го прави автоматично: предоставяте един базов цвят (напр. цвета на логото) и инструментът създава 9 цветови набора, базирани на доказани схеми за цветова хармония.</p><p class=\"text-mid mt-3\">Всеки генериран цвят идва с HEX код (напр. #4F6BF5) и HSL стойност (нюанс, наситеност, яркост). HEX кодът може да бъде поставен директно в CSS, Figma, Canva или всяко графично приложение.</p>"
     },
     { "type": "gap", "size": "sm" },
     {
       "type": "sectionSteps",
-      "title": "How to use the color palette generator",
-      "description": "The whole process takes just a few seconds:",
+      "title": "Как да използвате генератора на цветови палитри",
+      "description": "Целият процес отнема само няколко секунди:",
       "grid": "three",
       "items": [
-        { "title": "1. Enter the base color", "description": "Type a HEX code (e.g., #4F6BF5) in the text field or pick a color from the color picker. You can also use the Random Color button." },
-        { "title": "2. Confirm your choice", "description": "After clicking the Update Color button, the tool will automatically generate 9 palettes based on different color harmony schemes." },
-        { "title": "3. Copy the colors you need", "description": "Next to each color there is a Copy button - the HEX code goes to the clipboard and can be pasted directly into your project." }
+        {
+          "title": "1. Въведете базовия цвят",
+          "description": "Напишете HEX код (напр. #4F6BF5) в текстовото поле или изберете цвят от визуалния селектор. Можете също да използвате бутона Произволен цвят."
+        },
+        {
+          "title": "2. Потвърдете избора си",
+          "description": "След натискане на бутона Актуализиране на цвета, инструментът автоматично ще генерира 9 палитри, базирани на различни схеми за цветова хармония."
+        },
+        { "title": "3. Копирайте нужните цветове", "description": "До всеки цвят има бутон Копиране – HEX кодът отива в клипборда и може да бъде поставен директно в проекта ви." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "What color schemes does the tool generate?",
-      "description": "The generator creates 9 palette types - each based on a different color theory principle:",
+      "title": "Какви цветови схеми генерира инструментът?",
+      "description": "Генераторът създава 9 типа палитри – всяка базирана на различен принцип от теорията на цветовете:",
       "grid": "two",
       "items": [
         {
           "icon": "RiStackLine",
-          "title": "Monochromatic palette",
-          "description": "Several shades of one color - from light to dark. All colors have the same hue on the color wheel and differ only in lightness. Works well in elegant, minimalist designs where consistency matters."
+          "title": "Монохроматична палитра",
+          "description": "Няколко нюанса на един цвят – от светъл до тъмен. Всички цветове имат един и същ тон на цветовото колело и се различават само по яркост. Работи добре в елегантни, минималистични дизайни, където последователността е важна."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Analogous palette",
-          "description": "Neighboring colors on the color wheel (shifted about 30° in both directions from the base). They create harmonious, smooth color transitions. Great for projects that build a warm or cool atmosphere."
+          "title": "Аналогова палитра",
+          "description": "Съседни цветове на цветовото колело (изместени около 30° в двете посоки от базовия). Създават хармонични, плавни цветови преходи. Чудесни за проекти, които изграждат топла или хладна атмосфера."
         },
         {
           "icon": "RiLayoutGridLine",
-          "title": "Complementary palette",
-          "description": "The base color and the color opposite on the color wheel (180° shift). Creates strong visual contrast. Useful where an element needs to attract attention - buttons, highlighted headings, promo banners."
+          "title": "Комплементарна палитра",
+          "description": "Базовият цвят и противоположният на цветовото колело (180° изместване). Създава силен визуален контраст. Полезна, когато елемент трябва да привлече внимание – бутони, подчертани заглавия, промо банери."
         },
         {
           "icon": "RiSparklingLine",
-          "title": "Triadic palette",
-          "description": "Three colors spaced 120° apart on the color wheel - forming an equilateral triangle. A vibrant, dynamic combination. Works well in creative projects: young brand identity, advertising materials, posters."
+          "title": "Триадична палитра",
+          "description": "Три цвята, отстоящи на 120° на цветовото колело – образуващи равностранен триъгълник. Ярка, динамична комбинация. Работи добре в креативни проекти: млада марка, рекламни материали, плакати."
         },
         {
           "icon": "RiCursorLine",
-          "title": "Split-complementary palette",
-          "description": "A softer version of the complementary palette. Instead of one opposite color, it uses two colors shifted about 30° from the complement. Gives clear contrast but without as strong visual tension."
+          "title": "Разделено-комплементарна палитра",
+          "description": "По-мека версия на комплементарната палитра. Вместо един противоположен цвят, използва два цвята, изместени около 30° от допълнителния. Дава ясен контраст, но без толкова силно визуално напрежение."
         },
         {
           "icon": "RiDropLine",
-          "title": "Pastel palette",
-          "description": "The same hue with reduced saturation and increased lightness - soft, gentle colors. Popular in cosmetics, children's fashion, and food industry. Pairs well with a light background and white space."
+          "title": "Пастелна палитра",
+          "description": "Същият тон с намалена наситеност и увеличена яркост – меки, нежни цветове. Популярна в козметиката, детската мода и хранителната индустрия. Съчетава се добре със светъл фон и бяло пространство."
         },
         {
           "icon": "RiMoonLine",
-          "title": "Dark palette",
-          "description": "Base color at high saturation and reduced lightness - deep, intense colors. Useful for designing dark themes for websites and apps, as well as materials for premium brands."
+          "title": "Тъмна палитра",
+          "description": "Базов цвят с висока наситеност и намалена яркост – дълбоки, наситени цветове. Полезна за проектиране на тъмни теми за уебсайтове и приложения, както и материали за премиум марки."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Tonal palette",
-          "description": "Several lightness steps of one hue - from very light to dark. Similar to tonal scales used in design systems (e.g., shades from 50 to 900). Useful for building interfaces where the same color needs variants."
+          "title": "Тонална палитра",
+          "description": "Няколко стъпки на яркост на един нюанс – от много светъл до тъмен. Подобна на тоналните скали, използвани в дизайн системи (напр. нюанси от 50 до 900). Полезна за изграждане на интерфейси, където един цвят се нуждае от варианти."
         },
         {
           "icon": "RiContractLeftRightLine",
-          "title": "Minimalist palette",
-          "description": "One bold color accent and several very light, soft neutrals. The rest of the palette stays muted. Works well in modern interfaces with lots of white space - typical product and landing page style."
+          "title": "Минималистична палитра",
+          "description": "Един ярък цветен акцент и няколко много светли, меки неутрали. Останалата част от палитрата остава приглушена. Работи добре в модерни интерфейси с много бяло пространство – типичен стил за продуктови и целеви страници."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "What is the color palette generator based on?",
-      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° on the color wheel</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
-      "html": "<p class=\"text-mid\">All palettes are created by mathematically transforming the base color in HSL color space. HSL describes a color with three values: hue (H) is the position on the color wheel (0°–360°), saturation (S) determines color intensity, and lightness (L) - how bright or dark the color is.</p><p class=\"text-mid mt-3\">The complementary, triadic, and split-complementary palettes are based on color wheel geometry - colors are placed at equal angular intervals, creating visual balance. The monochromatic, pastel, and dark palettes change only lightness and saturation while keeping the same hue.</p>"
+      "title": "На какво се базира генераторът на цветови палитри?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (нюанс)</span><span class=\"text-mid\">0°–360° на цветовото колело</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (наситеност)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (яркост)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">Всички палитри се създават чрез математическо трансформиране на базовия цвят в HSL цветово пространство. HSL описва цвят с три стойности: нюанс (H) е позицията на цветовото колело (0°–360°), наситеност (S) определя интензивността на цвета, а яркост (L) – колко светъл или тъмен е цветът.</p><p class=\"text-mid mt-3\">Комплементарните, триадичните и разделено-комплементарните палитри се базират на геометрията на цветовото колело – цветовете се поставят на равни ъглови интервали, създавайки визуален баланс. Монохроматичните, пастелните и тъмните палитри променят само яркостта и наситеността, запазвайки същия нюанс.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Where to use the generated color palettes",
+      "title": "Къде да използвате генерираните цветови палитри",
       "grid": "two",
       "items": [
         {
           "icon": "RiBrushLine",
-          "title": "Brand visual identity",
-          "description": "Select complementary colors for an existing logo or build a branding palette from scratch - for business cards, stationery, and marketing materials."
+          "title": "Визуална идентичност на марката",
+          "description": "Изберете допълващи цветове за съществуващо лого или изградете брандинг палитра от нулата – за визитки, канцеларски материали и маркетингови материали."
         },
         {
           "icon": "RiGlobalLine",
-          "title": "Websites",
-          "description": "Establish the primary color, accent color, and background shades. Copied HEX codes paste straight into CSS stylesheets or theme configuration."
+          "title": "Уебсайтове",
+          "description": "Определете основния цвят, акцентния цвят и нюансите на фона. Копираните HEX кодове се поставят директно в CSS стилове или конфигурация на тема."
         },
         {
           "icon": "RiSmartphoneLine",
-          "title": "App interfaces",
-          "description": "The tonal palette provides lightness variants of one color - lighter for backgrounds, darker for text, intermediate for borders and interactive states."
+          "title": "Интерфейси на приложения",
+          "description": "Тоналната палитра предоставя варианти на яркост на един цвят – по-светли за фонове, по-тъмни за текст, междинни за рамки и интерактивни състояния."
         },
         {
           "icon": "RiImageLine",
-          "title": "Social media graphics",
-          "description": "Consistent colors for posts, stories, and profile covers. Analogous or pastel palettes work well when you want a uniform, recognizable style."
+          "title": "Графики за социални мрежи",
+          "description": "Последователни цветове за публикации, истории и корици на профили. Аналоговите или пастелните палитри работят добре, когато искате единен, разпознаваем стил."
         },
         {
           "icon": "RiSlideshowLine",
-          "title": "Presentations and documents",
-          "description": "Harmonious color sets for slides, charts, and infographics. Monochromatic or minimalist palettes maintain visual order."
+          "title": "Презентации и документи",
+          "description": "Хармонични цветови набори за слайдове, диаграми и инфографики. Монохроматичните или минималистичните палитри поддържат визуален ред."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Troubleshooting the palette generator",
+      "title": "Отстраняване на проблеми с генератора на палитри",
       "grid": "two",
       "items": [
         {
           "icon": "RiRefreshLine",
-          "title": "Palettes don't change after entering a color",
-          "description": "Simply typing a HEX code does not automatically generate palettes - you need to confirm the change with the Update Color button. Only after confirmation does the tool recalculate all 9 schemes."
+          "title": "Палитрите не се променят след въвеждане на цвят",
+          "description": "Простото въвеждане на HEX код не генерира автоматично палитри – трябва да потвърдите промяната с бутона Актуализиране на цвета. Едва след потвърждението инструментът преизчислява всичките 9 схеми."
         },
         {
           "icon": "RiErrorWarningLine",
-          "title": "Invalid format message",
-          "description": "The generator only accepts HEX format with a # at the beginning, e.g., #FF5500. Formats without # (e.g., FF5500) or in RGB notation (e.g., rgb(255,85,0)) are not supported."
+          "title": "Съобщение за невалиден формат",
+          "description": "Генераторът приема само HEX формат с # в началото, напр. #FF5500. Формати без # (напр. FF5500) или в RGB нотация (напр. rgb(255,85,0)) не се поддържат."
         },
         {
           "icon": "RiCodeLine",
-          "title": "Short and full HEX format",
-          "description": "Both formats are supported: full #RRGGBB (e.g., #FF5500) and short #RGB (e.g., #F50). The generator automatically recognizes both and treats them identically."
+          "title": "Кратък и пълен HEX формат",
+          "description": "И двата формата се поддържат: пълен #RRGGBB (напр. #FF5500) и кратък #RGB (напр. #F50). Генераторът автоматично разпознава и двата и ги третира идентично."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the color palette generator",
+      "title": "Често задавани въпроси за генератора на цветови палитри",
       "openByDefault": 1,
       "items": [
         {
-          "question": "What format should the base color be in?",
-          "answer": "The generator accepts colors in HEX format - both short (e.g., #F50) and full (e.g., #FF5500). Next to the text field you will find a color picker that lets you choose a color visually. Generated palettes show the HEX code and HSL value of each color.",
-          "answerSchemaText": "The generator accepts HEX colors (#RGB or #RRGGBB). Each generated color has a HEX code and HSL value."
+          "question": "В какъв формат трябва да бъде базовият цвят?",
+          "answer": "Генераторът приема цветове в HEX формат – както кратък (напр. #F50), така и пълен (напр. #FF5500). До текстовото поле ще намерите визуален селектор за избор на цвят. Генерираните палитри показват HEX кода и HSL стойността на всеки цвят.",
+          "answerSchemaText": "Генераторът приема HEX цветове (#RGB или #RRGGBB). Всеки генериран цвят има HEX код и HSL стойност."
         },
         {
-          "question": "How many colors does each palette contain?",
-          "answer": "Each palette contains 4 to 6 colors. The number depends on the scheme type - monochromatic and tonal palettes generate more shades (a lightness scale of one hue), while complementary and triadic palettes focus on fewer contrasting colors.",
-          "answerSchemaText": "Each palette contains 4 to 6 colors, depending on the scheme type."
+          "question": "Колко цвята съдържа всяка палитра?",
+          "answer": "Всяка палитра съдържа от 4 до 6 цвята. Броят зависи от типа на схемата – монохроматичните и тоналните палитри генерират повече нюанси (скала на яркост на един нюанс), докато комплементарните и триадичните палитри се фокусират върху по-малко контрастни цветове.",
+          "answerSchemaText": "Всяка палитра съдържа от 4 до 6 цвята, в зависимост от типа на схемата."
         },
         {
-          "question": "What is the HSL color space and how to read it?",
-          "answer": "HSL is a way of describing color using three values: H (hue, 0°–360° on the color wheel), S (saturation, 0%–100%), and L (lightness, 0%–100%). The generator displays HSL values alongside each color, making it easier to understand how the colors in the palette differ - e.g., a monochromatic palette changes only lightness (L) while keeping the same hue (H).",
-          "answerSchemaText": "HSL describes color via hue (H), saturation (S), and lightness (L). The generator displays these values alongside each color."
+          "question": "Какво е HSL цветовото пространство и как да го четем?",
+          "answer": "HSL е начин за описване на цвят с три стойности: H (нюанс, 0°–360° на цветовото колело), S (наситеност, 0%–100%) и L (яркост, 0%–100%). Генераторът показва HSL стойностите до всеки цвят, улеснявайки разбирането как цветовете в палитрата се различават – напр. монохроматичната палитра променя само яркостта (L), запазвайки същия нюанс (H).",
+          "answerSchemaText": "HSL описва цвят чрез нюанс (H), наситеност (S) и яркост (L). Генераторът показва тези стойности до всеки цвят."
         },
         {
-          "question": "Can I use the generated palettes commercially?",
-          "answer": "Yes. You can use the generated color palettes in any project - commercial and non-commercial, without licensing restrictions.",
-          "answerSchemaText": "Yes, generated palettes can be used without restrictions in commercial and non-commercial projects."
+          "question": "Мога ли да използвам генерираните палитри комерсиално?",
+          "answer": "Да. Можете да използвате генерираните цветови палитри във всеки проект – комерсиален и некомерсиален, без лицензионни ограничения.",
+          "answerSchemaText": "Да, генерираните палитри могат да се използват без ограничения в комерсиални и некомерсиални проекти."
         },
         {
-          "question": "Does the color palette generator require login or payment?",
-          "answer": "The generator is completely free and requires no login or registration. Colors are generated locally in the browser - no data is sent to external servers.",
-          "answerSchemaText": "The generator is free, requires no login. Colors are generated locally in the browser."
+          "question": "Генераторът на цветови палитри изисква ли вход или плащане?",
+          "answer": "Генераторът е напълно безплатен и не изисква вход или регистрация. Цветовете се генерират локално в браузъра – никакви данни не се изпращат към външни сървъри.",
+          "answerSchemaText": "Генераторът е безплатен, не изисква вход. Цветовете се генерират локално в браузъра."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
+    { "type": "toolsCarousel", "title": "Разгледайте други инструменти" },
     { "type": "gap", "size": "sm" }
   ]
 }

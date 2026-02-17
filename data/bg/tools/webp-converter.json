@@ -2,46 +2,49 @@
   "toolKey": "jpgToWebp",
   "locale": "bg",
   "metadata": {
-    "title": "Free JPG/PNG to WebP Converter – No Limits, No Upload",
-    "description": "Reduce image size by up to 35% without quality loss. JPG and PNG to WebP conversion runs locally – files never leave your device. No signup, no limits.",
+    "title": "Безплатен конвертор JPG/PNG към WebP – Без ограничения, без качване",
+    "description": "Намалете размера на изображенията с до 35% без загуба на качество. Конверсията от JPG и PNG към WebP се извършва локално – файловете не напускат устройството ви.",
     "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
     "path": "/bg/instrumenti/konvertor-jpg-png-v-webp"
   },
   "hero": {
-    "title": "JPG/PNG to WebP Converter – Free, No Limits",
-    "description": "Reduce image file size by up to 35% without losing quality. Add files, choose quality level, and download images in WebP format. All conversion happens locally in the browser.",
+    "title": "Конвертор JPG/PNG към WebP – Безплатен, без ограничения",
+    "description": "Намалете размера на файловете с изображения с до 35% без загуба на качество. Добавете файлове, изберете ниво на качество и изтеглете изображения във формат WebP. Цялата конверсия се извършва локално в браузъра.",
     "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/bg/instrumenti", "label": "Tools" },
-    "third": { "href": "/bg/instrumenti/konvertor-jpg-png-v-webp", "label": "JPG/PNG to WebP converter" }
+    "second": { "href": "/bg/instrumenti", "label": "Инструменти" },
+    "third": { "href": "/bg/instrumenti/konvertor-jpg-png-v-webp", "label": "Конвертор JPG/PNG към WebP" }
   },
   "schemas": {
     "software": {
-      "name": "JPG and PNG to WebP converter online - free, no limits",
-      "alternateName": ["JPG to WebP and PNG to WebP converter"],
+      "name": "Онлайн конвертор на JPG и PNG към WebP – безплатен, без ограничения",
+      "alternateName": ["Конвертор на JPG към WebP и PNG към WebP"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Free online JPG and PNG to WebP converter. Reduce image file size by up to 35%, improve page load speed and Core Web Vitals scores. Conversion happens in the browser - files are not sent to a server.",
+      "description": "Безплатен онлайн конвертор на JPG и PNG към WebP. Намалете размера на файловете с изображения с до 35%, подобрете скоростта на зареждане на страниците и резултатите в Core Web Vitals. Конверсията се извършва в браузъра – файловете не се изпращат на сървър.",
       "featureList": [
-        "JPG to WebP conversion",
-        "PNG to WebP conversion",
-        "Quality level adjustment (1–100%)",
-        "Batch conversion of multiple files",
-        "Size preview before and after conversion",
-        "Individual file download",
-        "Download all files as ZIP",
-        "Local processing in the browser (files are not sent to a server)"
+        "Конверсия от JPG към WebP",
+        "Конверсия от PNG към WebP",
+        "Настройка на нивото на качество (1–100%)",
+        "Пакетна конверсия на множество файлове",
+        "Преглед на размера преди и след конверсия",
+        "Индивидуално изтегляне на файлове",
+        "Изтегляне на всички файлове като ZIP",
+        "Локална обработка в браузъра (файловете не се изпращат на сървър)"
       ]
     },
     "howTo": {
-      "name": "How to convert JPG and PNG to WebP online",
-      "description": "How to convert JPG and PNG images to WebP format. Quality settings (60–95%), Smart Quality mechanism, and downloading converted files as ZIP.",
+      "name": "Как да конвертирате JPG и PNG към WebP онлайн",
+      "description": "Как да конвертирате JPG и PNG изображения във формат WebP. Настройки на качеството (60–95%), механизъм Smart Quality и изтегляне на конвертирани файлове като ZIP.",
       "steps": [
-        { "name": "Add files for conversion", "text": "Drag JPG or PNG images onto the designated area or select files from your device. You can add multiple files at once." },
-        { "name": "Set quality level", "text": "Choose the output WebP file quality using the slider (60–95%). The default value of 80% is a good balance between quality and size." },
-        { "name": "Start conversion", "text": "After starting conversion, the tool will process all files in the queue and automatically apply Smart Quality." },
-        { "name": "Download converted files", "text": "Converted files can be downloaded individually or all at once as a ZIP archive." }
+        {
+          "name": "Добавете файлове за конверсия",
+          "text": "Плъзнете JPG или PNG изображения върху обозначената зона или изберете файлове от устройството си. Можете да добавите множество файлове наведнъж."
+        },
+        { "name": "Задайте ниво на качество", "text": "Изберете качеството на изходния WebP файл с плъзгача (60–95%). Стойността по подразбиране от 80% е добър баланс между качество и размер." },
+        { "name": "Стартирайте конверсията", "text": "След стартиране на конверсията инструментът ще обработи всички файлове в опашката и автоматично ще приложи Smart Quality." },
+        { "name": "Изтеглете конвертираните файлове", "text": "Конвертираните файлове могат да се изтеглят поединично или всички наведнъж като ZIP архив." }
       ]
     }
   },
@@ -49,26 +52,32 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "What is WebP and why convert images?",
-      "html": "<p class=\"mb-4\">WebP is an image format created by Google that allows reducing image file sizes by up to 25–35% compared to JPG and PNG - while maintaining comparable visual quality. Smaller files mean faster page loading, which translates to better user experience and higher scores in <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"mb-4\">The WebP format is supported by all modern browsers: Chrome, Firefox, Safari (from version 14), and Edge. If you run a website, online store, or blog, converting images to WebP is one of the simplest ways to improve site performance.</p><p>The converter supports both JPG photos and PNG graphics (including those with transparency). You can convert any number of files at once - all are processed locally in the browser, without being sent to a server.</p>"
+      "title": "Какво е WebP и защо да конвертирате изображения?",
+      "html": "<p class=\"mb-4\">WebP е формат за изображения, създаден от Google, който позволява намаляване на размера на файловете с изображения с до 25–35% в сравнение с JPG и PNG – при запазване на сравнимо визуално качество. По-малките файлове означават по-бързо зареждане на страниците, което се превежда в по-добро потребителско изживяване и по-високи резултати в <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"mb-4\">Форматът WebP се поддържа от всички модерни браузъри: Chrome, Firefox, Safari (от версия 14) и Edge. Ако управлявате уебсайт, онлайн магазин или блог, конвертирането на изображения към WebP е един от най-простите начини за подобряване на производителността на сайта.</p><p>Конверторът поддържа както JPG снимки, така и PNG графики (включително тези с прозрачност). Можете да конвертирате произволен брой файлове наведнъж – всички се обработват локално в браузъра, без да се изпращат на сървър.</p>"
     },
     { "type": "gap", "size": "xs" },
     {
       "type": "sectionSteps",
-      "title": "How to convert images to WebP",
-      "description": "Converting to WebP takes just a few seconds:",
+      "title": "Как да конвертирате изображения към WebP",
+      "description": "Конверсията към WebP отнема само няколко секунди:",
       "grid": "three",
       "items": [
-        { "title": "1. Add files", "description": "Drag JPG or PNG images onto the designated area or select files from your device. You can add any number of files at once." },
-        { "title": "2. Set quality", "description": "Choose the quality level (default 80%). A lower value means a smaller file. For most use cases, 80% is the optimal setting." },
-        { "title": "3. Download WebP", "description": "After conversion, download files individually or as a ZIP archive. Each file shows information about the space saved." }
+        {
+          "title": "1. Добавете файлове",
+          "description": "Плъзнете JPG или PNG изображения върху обозначената зона или изберете файлове от устройството си. Можете да добавите произволен брой файлове наведнъж."
+        },
+        {
+          "title": "2. Задайте качество",
+          "description": "Изберете нивото на качество (по подразбиране 80%). По-ниска стойност означава по-малък файл. За повечето случаи 80% е оптималната настройка."
+        },
+        { "title": "3. Изтеглете WebP", "description": "След конверсията изтеглете файловете поединично или като ZIP архив. Всеки файл показва информация за спестеното пространство." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to add files for conversion",
-      "html": "<p class=\"text-mid\">The tool offers two ways to add files:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Drag and drop</strong> - grab files from a folder on your computer and drop them onto the area labeled &quot;Drag and drop images here&quot;. You can drag multiple files at once.</li><li><strong>Select from device</strong> - clicking the file upload area opens a selection dialog. Holding Ctrl (or Cmd on Mac) lets you select multiple files at once.</li></ul><p class=\"text-mid mt-3\">The tool only accepts JPG and PNG files. If you accidentally add a file in another format (e.g., GIF or BMP), it will be automatically skipped and you will see an informational message.</p><p class=\"text-mid mt-3\"><strong>Privacy:</strong> All files are processed locally in the browser. They are not sent anywhere - they do not go to any server. After closing the tab or browser, files are removed from memory.</p>"
+      "title": "Как да добавите файлове за конверсия",
+      "html": "<p class=\"text-mid\">Инструментът предлага два начина за добавяне на файлове:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Плъзгане и пускане</strong> – хванете файлове от папка на компютъра си и ги пуснете върху зоната с надпис &quot;Плъзнете и пуснете изображения тук&quot;. Можете да плъзнете множество файлове наведнъж.</li><li><strong>Избор от устройство</strong> – кликването върху зоната за качване отваря диалог за избор. Задържането на Ctrl (или Cmd на Mac) позволява избор на множество файлове наведнъж.</li></ul><p class=\"text-mid mt-3\">Инструментът приема само JPG и PNG файлове. Ако случайно добавите файл в друг формат (напр. GIF или BMP), той ще бъде автоматично пропуснат и ще видите информационно съобщение.</p><p class=\"text-mid mt-3\"><strong>Поверителност:</strong> Всички файлове се обработват локално в браузъра. Те не се изпращат никъде – не отиват на никакъв сървър. След затваряне на раздела или браузъра файловете се премахват от паметта.</p>"
     },
     { "type": "gap", "variant": "line" },
     {

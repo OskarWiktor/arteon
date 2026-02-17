@@ -59,7 +59,7 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 1,
-        name: 'JPG/PNG\u2013WebP-muunnin',
+        name: 'JPG/PNG–WebP-muunnin',
         url: toAbsoluteUrl('/fi/tyokalut/jpg-png-webp-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -137,7 +137,7 @@ const faqItems = [
   { question: 'Mitä työkalut maksavat?', answer: 'Ei mitään. Kaikki työkalut ovat ilmaisia, ilman tilauksia ja piilotettuja maksuja.' },
   { question: 'Lähetetäänkö tiedostoni palvelimelle?', answer: 'Ei. Kaikki työkalut toimivat kokonaan selaimessa. Tiedostot eivät koskaan poistu tietokoneeltasi eikä niitä tallenneta minnekään.' },
   { question: 'Tarvitsenko tilin?', answer: 'Et. Voit käyttää niitä heti ilman kirjautumista tai tilin luomista.' },
-  { question: 'Onko käyttörajoja?', answer: 'Ei. Käytä ilman rajoituksia \u2013 ei päivittäistä rajaa, ei tiedostorajaa, ei muunnosrajaa.' },
+  { question: 'Onko käyttörajoja?', answer: 'Ei. Käytä ilman rajoituksia – ei päivittäistä rajaa, ei tiedostorajaa, ei muunnosrajaa.' },
   {
     question: 'Mihin työkalut ovat tarkoitettu?',
     answer:
@@ -154,7 +154,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Ilmaiset työkalut"
-        description="Kuvamuunnin, favicon-generaattori, tekstilaskuri, värivälineet ja QR-koodi. Ilman rekisteröitymistä, ilman rajoituksia \u2013 kaikki toimii selaimessa."
+        description="Kuvamuunnin, favicon-generaattori, tekstilaskuri, värivälineet ja QR-koodi. Ilman rekisteröitymistä, ilman rajoituksia – kaikki toimii selaimessa."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -167,7 +167,7 @@ export default function ToolsIndexPage() {
           items={[
             {
               icon: <RiImageEditLine className="h-8 w-8" />,
-              title: 'JPG/PNG\u2013WebP-muunnin',
+              title: 'JPG/PNG–WebP-muunnin',
               topImageAlt: 'JPG/PNG WebP-muunnin Arteon',
               topImageSrc: '/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
               description: (
@@ -190,7 +190,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Rajaa kuva täydellisesti sosiaalista mediaa tai verkkosivustoa varten. Valitse valmis muoto tai syötä omat pikselikoot \u2013 lataa PNG-, JPG- tai WebP-muodossa.</p>
+                  <p>Rajaa kuva täydellisesti sosiaalista mediaa tai verkkosivustoa varten. Valitse valmis muoto tai syötä omat pikselikoot – lataa PNG-, JPG- tai WebP-muodossa.</p>
                   <div className="mt-4">
                     <Button arrow link="/fi/tyokalut/kuvaeditori">
                       Avaa työkalu
@@ -207,7 +207,7 @@ export default function ToolsIndexPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Luo <strong>favicon.ico</strong> ja PNG-kuvakkeet 180x180, 192x192 ja 512x512 yhdestä kuvasta \u2013 selain- ja Lighthouse-vaatimusten mukaisesti.
+                    Luo <strong>favicon.ico</strong> ja PNG-kuvakkeet 180x180, 192x192 ja 512x512 yhdestä kuvasta – selain- ja Lighthouse-vaatimusten mukaisesti.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/fi/tyokalut/ilmainen-favicon-generaattori">
@@ -232,7 +232,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Tarkista merkkien ja sanojen määrä sekä pikselileveys \u2013 Google-esikatselulla. Vältä katkenneet otsikot ja kuvaukset hakutuloksissa.</p>
+                  <p>Tarkista merkkien ja sanojen määrä sekä pikselileveys – Google-esikatselulla. Vältä katkenneet otsikot ja kuvaukset hakutuloksissa.</p>
                   <div className="mt-4">
                     <Button arrow link="/fi/tyokalut/meta-otsikko-ja-kuvaus-tarkistus">
                       Avaa työkalu
@@ -296,7 +296,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Luo QR-koodi verkkosivulle, vCard-käyntikortille, ravintolan ruokalistalle tai esitteelle. Vie PNG- ja SVG-muotoon \u2013 ilman kirjautumista, ilman rajoituksia.</p>
+                  <p>Luo QR-koodi verkkosivulle, vCard-käyntikortille, ravintolan ruokalistalle tai esitteelle. Vie PNG- ja SVG-muotoon – ilman kirjautumista, ilman rajoituksia.</p>
                   <div className="mt-4">
                     <Button arrow link="/fi/tyokalut/ilmainen-qr-koodi-generaattori">
                       Avaa työkalu
@@ -339,7 +339,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Lataa valokuva tai logo \u2013 työkalu poimii hallitsevat värit. Kopioi HEX-koodit yhdellä napsautuksella ja käytä niitä missä tahansa.</p>
+                  <p>Lataa valokuva tai logo – työkalu poimii hallitsevat värit. Kopioi HEX-koodit yhdellä napsautuksella ja käytä niitä missä tahansa.</p>
                   <div className="mt-4">
                     <Button arrow link="/fi/tyokalut/varien-poiminta-kuvasta">
                       Avaa työkalu
@@ -369,10 +369,10 @@ export default function ToolsIndexPage() {
         <Gap variant="line" />
         <SectionInfo title="Mitä Arteonin työkalut ovat?">
           <p className="mb-4">
-            10 ilmaista työkalua materiaalien valmisteluun verkkosivuille, sosiaaliseen mediaan ja painotuotteisiin \u2013 WebP-muunnin, favicon-generaattori, tekstilaskuri, värien poiminta, palettien
+            10 ilmaista työkalua materiaalien valmisteluun verkkosivuille, sosiaaliseen mediaan ja painotuotteisiin – WebP-muunnin, favicon-generaattori, tekstilaskuri, värien poiminta, palettien
             generaattori ja QR-koodi.
           </p>
-          <p>Kaikki työkalut toimivat selaimessa \u2013 tiedostoja ei koskaan lähetetä palvelimelle. Käytä ilman rekisteröitymistä ja ilman rajoituksia.</p>
+          <p>Kaikki työkalut toimivat selaimessa – tiedostoja ei koskaan lähetetä palvelimelle. Käytä ilman rekisteröitymistä ja ilman rajoituksia.</p>
         </SectionInfo>
         <Gap variant="line" />
         <SectionSteps
@@ -382,15 +382,15 @@ export default function ToolsIndexPage() {
             {
               icon: <RiShieldCheckLine className="h-6 w-6" />,
               title: 'Täysi yksityisyys',
-              description: 'Kaikki työkalut käsittelevät tiedostot paikallisesti selaimessa. Mitään ei lähetetä palvelimelle \u2013 tiedot katoavat, kun suljet välilehden.',
+              description: 'Kaikki työkalut käsittelevät tiedostot paikallisesti selaimessa. Mitään ei lähetetä palvelimelle – tiedot katoavat, kun suljet välilehden.',
             },
             {
               icon: <RiInfinityFill className="h-6 w-6" />,
               title: 'Ilman käyttörajoja',
-              description: 'Käytä ilman rajoituksia \u2013 ei päivittäistä rajaa, ei tiedostorajaa, ei muunnosrajaa. Niin monta kertaa kuin tarvitset.',
+              description: 'Käytä ilman rajoituksia – ei päivittäistä rajaa, ei tiedostorajaa, ei muunnosrajaa. Niin monta kertaa kuin tarvitset.',
             },
             { icon: <RiLockLine className="h-6 w-6" />, title: 'Ilman rekisteröitymistä', description: 'Tiliä ei tarvita. Avaa työkalu, käytä sitä, valmis.' },
-            { icon: <RiGlobalLine className="h-6 w-6" />, title: 'Saatavilla suomeksi', description: 'Kaikki työkalut ovat saatavilla suomeksi \u2013 käyttöliittymä, ohjeet ja ilmoitukset.' },
+            { icon: <RiGlobalLine className="h-6 w-6" />, title: 'Saatavilla suomeksi', description: 'Kaikki työkalut ovat saatavilla suomeksi – käyttöliittymä, ohjeet ja ilmoitukset.' },
           ]}
         />
         <Gap variant="line" />

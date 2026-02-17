@@ -1,78 +1,78 @@
 {
-  "slug": "about",
+  "slug": "oor-ons",
   "metadata": {
-    "title": "About Arteon – 10 Free Online Tools for Web, SEO & Design",
-    "description": "Arteon is a creative agency building free browser-based tools: WebP converter, favicon generator, color contrast checker, QR code maker and more. No sign-up, no upload — everything runs locally."
+    "title": "Oor Arteon – 10 gratis gereedskap vir web, SEO & ontwerp",
+    "description": "Arteon is 'n kreatiewe agentskap wat gratis blaaier-gebaseerde gereedskap bou: WebP-omskakelaar, favicon-generator, kleurkontras-nagaaier, QR-kode-maker en meer. Geen registrasie, geen oplaai — alles werk plaaslik."
   },
   "hero": {
-    "title": "Free online tools built by a creative agency",
-    "description": "10 browser-based tools for images, SEO, colors, email signatures and QR codes — no registration, no file uploads, no limits"
+    "title": "Gratis gereedskap gebou deur 'n kreatiewe agentskap",
+    "description": "10 blaaier-gebaseerde gereedskap vir beelde, SEO, kleure, e-poshandtekeninge en QR-kodes — geen registrasie, geen lêeroplaai, geen beperkings"
   },
   "whoWeAre": {
-    "title": "Who we are",
-    "p1": "Arteon is a Polish creative agency. Beyond our commercial work, we build and maintain a growing collection of free online tools designed for business owners, website creators, designers, marketers, and anyone who works with digital content.",
-    "p2": "Every tool we create solves a specific, everyday problem: converting images, checking color contrast, generating favicons, creating QR codes, and more. Our goal is to build a comprehensive toolkit where you can find everything you need in one place — without switching between dozens of different websites."
+    "title": "Wie ons is",
+    "p1": "Arteon is 'n Poolse kreatiewe agentskap. Bo en behalwe ons kommersiële werk, bou en onderhou ons 'n groeiende versameling gratis gereedskap vir sake-eienaars, webwerf-skeppers, ontwerpers, bemarkers en enigiemand wat met digitale inhoud werk.",
+    "p2": "Elke gereedskap wat ons skep, los 'n spesifieke, alledaagse probleem op: beelde omskakel, kleurkontras nagaan, favicons genereer, QR-kodes skep en meer. Ons doel is om 'n omvattende gereedskapset te bou waar jy alles wat jy nodig het op een plek kan vind — sonder om tussen dosyne verskillende webwerwe te wissel."
   },
   "whyFree": {
-    "title": "Why we offer free tools",
+    "title": "Waarom ons gratis gereedskap aanbied",
     "items": [
       {
-        "title": "No registration, no limits",
-        "description": "Every tool works instantly in your browser. No account required, no login, no payment."
+        "title": "Geen registrasie, geen beperkings",
+        "description": "Elke gereedskap werk onmiddellik in jou blaaier. Geen rekening, aanmelding of betaling nodig nie."
       },
       {
-        "title": "Privacy first",
-        "description": "Your files never leave your device. All processing happens locally in your browser — we do not send your data to any server."
+        "title": "Privaatheid eerste",
+        "description": "Jou lêers verlaat nooit jou toestel nie. Alle verwerking gebeur plaaslik in jou blaaier — ons stuur jou data nie na enige bediener nie."
       },
       {
-        "title": "Built from real needs",
-        "description": "Each tool was born from a real problem we encountered while working on client projects. If we needed it, chances are you do too."
+        "title": "Gebou uit werklike behoeftes",
+        "description": "Elke gereedskap is gebore uit 'n werklike probleem wat ons teëgekom het terwyl ons aan kliëntprojekte gewerk het. As ons dit nodig gehad het, is die kanse goed dat jy dit ook nodig het."
       },
       {
-        "title": "Funded by ads, free for you",
-        "description": "We use Google AdSense banners to cover the costs of development and hosting. Thanks to ad revenue, we can keep all tools free and continue building new ones."
+        "title": "Gefinansier deur advertensies, gratis vir jou",
+        "description": "Ons gebruik Google AdSense-baniere om die koste van ontwikkeling en hosting te dek. Danksy advertensie-inkomste bly alle gereedskap gratis."
       }
     ]
   },
   "ourTools": {
-    "title": "Our tools",
+    "title": "Ons gereedskap",
     "items": [
       {
-        "title": "Images & favicons",
-        "description": "WebP converter, online image editor, and favicon generator. 3 tools for everyday image work."
+        "title": "Beelde & favicons",
+        "description": "WebP-omskakelaar, beeldredigeerder en favicon-generator. 3 gereedskap vir alledaagse beeldwerk."
       },
       {
         "title": "Meta & SEO",
-        "description": "Meta title and description checker plus a word and character counter to evaluate text length."
+        "description": "Meta-titel en -beskrywing nagaaier plus 'n woord- en karakterteller om tekslengte te evalueer."
       },
       {
-        "title": "Email & communication",
-        "description": "HTML email signature generator with ready code for Gmail and Outlook."
+        "title": "E-pos & kommunikasie",
+        "description": "HTML e-poshandtekening-generator met klaargemaakte kode vir Gmail en Outlook."
       },
       {
-        "title": "Colors & accessibility",
-        "description": "WCAG contrast checker, image color extractor, and color palette generator. 3 tools for working with color."
+        "title": "Kleure & toeganklikheid",
+        "description": "WCAG-kontras-nagaaier, beeldkleur-onttrekker en kleurpaletgenerator. 3 gereedskap vir werk met kleur."
       },
       {
-        "title": "Print & materials",
-        "description": "QR code generator for websites, vCards, menus, and flyers. Export to PNG and SVG."
+        "title": "Druk & materiaal",
+        "description": "QR-kode-generator vir webwerwe, vCards, spyskaarte en vlugskrifte. Voer uit na PNG en SVG."
       }
     ]
   },
   "whatsNext": {
-    "title": "What's next",
-    "text": "We are actively working on expanding the toolkit. New tools are added regularly based on user feedback and our own experience. The goal is a single platform where business owners, designers, and developers have access to every essential tool — all in one place, all for free."
+    "title": "Wat volgende",
+    "text": "Ons werk aktief aan die uitbreiding van die gereedskapset. Nuwe gereedskap word gereeld bygevoeg op grond van gebruikerterugvoer en ons eie ervaring. Die doel is 'n enkele platform waar sake-eienaars, ontwerpers en ontwikkelaars toegang het tot elke noodsaaklike gereedskap — alles op een plek, alles gratis."
   },
   "privacy": {
-    "title": "Privacy and security",
-    "textBefore": "We respect your privacy. Files you upload to our tools are processed exclusively in your browser and are never sent to any server. We use analytics (Google Analytics 4) and advertising (Google AdSense) only after you give consent via the cookie banner. Full details are available in our",
-    "linkLabel": "Privacy Policy",
+    "title": "Privaatheid en sekuriteit",
+    "textBefore": "Ons respekteer jou privaatheid. Lêers wat jy na ons gereedskap oplaai, word uitsluitlik in jou blaaier verwerk en word nooit na 'n bediener gestuur nie. Ons gebruik analitika (Google Analytics 4) en advertensies (Google AdSense) slegs nadat jy toestemming gee via die koekie-banier. Volledige besonderhede is beskikbaar in ons",
+    "linkLabel": "Privaatheidsbeleid",
     "textAfter": "."
   },
   "cta": {
-    "title": "Try our tools",
-    "description": "10 free online tools — no registration, no limits, no file uploads to servers",
-    "btnOne": "Go to tools",
-    "btnTwo": "Contact"
+    "title": "Probeer ons gereedskap",
+    "description": "10 gratis gereedskap — geen registrasie, geen beperkings, geen lêeroplaai na bedieners",
+    "btnOne": "Na gereedskap",
+    "btnTwo": "Kontak"
   }
 }

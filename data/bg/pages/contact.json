@@ -1,28 +1,28 @@
 {
-  "slug": "contact",
+  "slug": "kontakt",
   "metadata": {
-    "title": "Contact Arteon – Free Online Tools Support & Feedback",
-    "description": "Get in touch with the Arteon team. Report a bug, suggest a new tool, or ask a question about our free online tools for images, SEO, colors and QR codes. We respond within one business day."
+    "title": "Контакт с Arteon – Поддръжка и обратна връзка за безплатни инструменти",
+    "description": "Свържете се с екипа на Arteon. Съобщете за грешка, предложете нов инструмент или задайте въпрос за нашите безплатни инструменти за изображения, SEO, цветове и QR кодове. Отговаряме в рамките на един работен ден."
   },
   "hero": {
-    "title": "Get in touch with the Arteon team",
-    "description": "Report a bug, suggest a new tool, or ask a question — we respond within one business day"
+    "title": "Свържете се с екипа на Arteon",
+    "description": "Съобщете за грешка, предложете нов инструмент или задайте въпрос — отговаряме в рамките на един работен ден"
   },
   "intro": {
-    "title": "Have a question or suggestion?",
-    "textBefore": "We are happy to hear your feedback about our tools. If you found a bug, have an idea for a new tool, or need help — write to us at",
-    "textAfter": ". We respond within one business day."
+    "title": "Имате въпрос или предложение?",
+    "textBefore": "Ще се радваме да чуем мнението ви за инструментите ни. Ако сте открили грешка, имате идея за нов инструмент или се нуждаете от помощ — пишете ни на",
+    "textAfter": ". Отговаряме в рамките на един работен ден."
   },
-  "formTitle": "Send us a message",
+  "formTitle": "Изпратете ни съобщение",
   "details": {
-    "title": "Contact details",
-    "emailLabel": "Email",
-    "hoursLabel": "Business hours",
-    "hoursValue": "Monday – Friday: 8:00 – 16:00 (CET)"
+    "title": "Данни за контакт",
+    "emailLabel": "Имейл",
+    "hoursLabel": "Работно време",
+    "hoursValue": "Понеделник – Петък: 8:00 – 16:00 (CET)"
   },
   "cta": {
-    "title": "Back to tools",
-    "description": "10 free online tools for working with images, text, and colors",
-    "btnOne": "Tools"
+    "title": "Обратно към инструментите",
+    "description": "10 безплатни инструмента за работа с изображения, текст и цветове",
+    "btnOne": "Инструменти"
   }
 }

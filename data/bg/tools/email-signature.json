@@ -2,68 +2,74 @@
   "toolKey": "emailSignature",
   "locale": "bg",
   "metadata": {
-    "title": "Free Email Signature Generator – HTML for Gmail & Outlook",
-    "description": "Create a professional HTML email signature without coding. Add contact details, logo, social media links and copy to Gmail or Outlook. No signup, no limits.",
+    "title": "Безплатен генератор на подпис за имейл – HTML за Gmail и Outlook",
+    "description": "Създайте професионален HTML подпис за имейл без програмиране. Добавете данни за контакт, лого, връзки към социални мрежи и копирайте в Gmail или Outlook. Без регистрация, без ограничения.",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
     "path": "/bg/instrumenti/bezplaten-generator-na-podpis-za-email"
   },
   "hero": {
-    "title": "Create a professional HTML email signature",
-    "description": "Build a professional email signature in minutes. Enter your details, choose colors, and copy the ready HTML code into Gmail, Outlook, or any email client.",
+    "title": "Създайте професионален HTML подпис за имейл",
+    "description": "Създайте професионален подпис за имейл за минути. Въведете данните си, изберете цветове и копирайте готовия HTML код в Gmail, Outlook или друг пощенски клиент.",
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/bg/instrumenti", "label": "Tools" },
-    "third": { "href": "/bg/instrumenti/bezplaten-generator-na-podpis-za-email", "label": "Email signature generator" }
+    "second": { "href": "/bg/instrumenti", "label": "Инструменти" },
+    "third": { "href": "/bg/instrumenti/bezplaten-generator-na-podpis-za-email", "label": "Генератор на подпис за имейл" }
   },
   "schemas": {
     "software": {
-      "name": "Free email signature generator online",
-      "alternateName": ["HTML email signature generator", "Email signature creator", "Email footer generator online"],
+      "name": "Безплатен генератор на подпис за имейл",
+      "alternateName": ["HTML генератор на подпис", "Създаване на подпис за имейл", "Генератор на футър за имейл"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Free HTML email signature generator. Add contact details, CTA link, and social media profiles, then copy the ready code into Gmail, Outlook, and other email clients.",
+      "description": "Безплатен HTML генератор на подпис за имейл. Добавете данни за контакт, CTA връзка и профили в социални мрежи, след което копирайте готовия код в Gmail, Outlook и други пощенски клиенти.",
       "featureList": [
-        "Contact details (name, title, company)",
-        "Phone, email, and website URL",
-        "Logo or profile picture with shape and size options",
-        "Social media icons (12 platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
-        "Customizable colors (text, accent, background)",
-        "Individual text style for each signature element",
-        "CTA button with custom text and link",
-        "Separator line styling (style, thickness, color)",
-        "Live signature preview with background switching (light, dark, checkerboard)",
-        "HTML source code preview in modal",
-        "Copy HTML code to clipboard",
-        "Download signature as HTML file",
-        "Export and import configuration as JSON file",
-        "Compatible with Gmail, Outlook, Apple Mail",
-        "Free tool, no login required"
+        "Данни за контакт (име, длъжност, фирма)",
+        "Телефон, имейл и URL на уебсайт",
+        "Лого или профилна снимка с опции за форма и размер",
+        "Икони на социални мрежи (12 платформи: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
+        "Настройваеми цветове (текст, акцент, фон)",
+        "Индивидуален стил на текста за всеки елемент",
+        "CTA бутон с персонализиран текст и връзка",
+        "Стилизация на разделителна линия (стил, дебелина, цвят)",
+        "Преглед на подписа на живо с превключване на фон (светъл, тъмен, шахматна дъска)",
+        "Преглед на HTML изходен код в модален прозорец",
+        "Копиране на HTML код в клипборда",
+        "Изтегляне на подписа като HTML файл",
+        "Експорт и импорт на конфигурация като JSON файл",
+        "Съвместим с Gmail, Outlook, Apple Mail",
+        "Безплатен инструмент, без вход"
       ]
     },
     "howTo": {
-      "name": "How to use the email signature generator",
-      "description": "How to create a professional HTML email signature using the free Arteon generator.",
+      "name": "Как да използвате генератора на подпис за имейл",
+      "description": "Как да създадете професионален HTML подпис за имейл с безплатния генератор на Arteon.",
       "totalTime": "PT5M",
       "steps": [
-        { "name": "Choose a signature layout", "text": "Select one of eight available layouts: Standard, Top bar, Labels left, Centered, Compact, Two columns, Minimalist, or Bottom bar." },
         {
-          "name": "Fill in contact details",
-          "text": "In the Details tab, enter your name, title, company, email, phone, and website URL. Optionally add an avatar or logo - after entering the image URL, you can choose shape (round, rounded, square) and size (40, 56, or 72 px)."
-        },
-        { "name": "Add CTA buttons", "text": "In the Buttons tab, add text and URL for the main button. Optionally add a second outline-style button and choose button rounding." },
-        {
-          "name": "Add social media links",
-          "text": "In the Social Media tab, paste URLs to your profiles. Supported platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest."
-        },
-        { "name": "Customize appearance", "text": "In the Appearance tab, choose a color theme, font, and text size. In the Text Style tab, change colors and sizes of individual elements." },
-        {
-          "name": "Add disclaimer and configure separator",
-          "text": "In the Disclaimer / Legal tab, enter legal text and configure the separator line - choose style (solid, dashed, dotted), thickness (1–3 px), and color."
+          "name": "Изберете оформление на подписа",
+          "text": "Изберете едно от осемте налични оформления: Стандартно, Горна лента, Етикети вляво, Центрирано, Компактно, Две колони, Минималистично или Долна лента."
         },
         {
-          "name": "Preview and copy signature",
-          "text": "The signature preview is available on light, dark, or checkerboard background. The Copy signature (Gmail / Outlook) button copies the ready code to clipboard. Also available: Copy HTML code, Download as HTML, View HTML code, and export configuration as JSON file."
+          "name": "Попълнете данните за контакт",
+          "text": "В раздела Данни въведете име, длъжност, фирма, имейл, телефон и URL на уебсайта. По желание добавете аватар или лого – след въвеждане на URL на изображението можете да изберете форма (кръгла, заоблена, квадратна) и размер (40, 56 или 72 px)."
+        },
+        { "name": "Добавете CTA бутони", "text": "В раздела Бутони добавете текст и URL за основния бутон. По желание добавете втори бутон в стил outline и изберете заобляне на бутона." },
+        {
+          "name": "Добавете връзки към социални мрежи",
+          "text": "В раздела Социални мрежи поставете URL адресите към профилите си. Поддържани платформи: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram и Pinterest."
+        },
+        {
+          "name": "Настройте външния вид",
+          "text": "В раздела Външен вид изберете цветова тема, шрифт и размер на текста. В раздела Стил на текста променете цветовете и размерите на отделните елементи."
+        },
+        {
+          "name": "Добавете правна информация и настройте разделител",
+          "text": "В раздела Правна информация въведете правен текст и настройте разделителната линия – изберете стил (плътна, щрихована, пунктирана), дебелина (1–3 px) и цвят."
+        },
+        {
+          "name": "Прегледайте и копирайте подписа",
+          "text": "Прегледът на подписа е наличен на светъл, тъмен или шахматен фон. Бутонът Копиране на подписа (Gmail / Outlook) копира готовия код в клипборда. Също налични: Копиране на HTML код, Изтегляне като HTML, Преглед на HTML код и експорт на конфигурацията като JSON файл."
         }
       ]
     }
@@ -72,191 +78,203 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Why have a professional email signature?",
-      "html": "<p class=\"text-mid\">An email signature (also called an email footer) is a block of information at the end of every sent message. It contains contact details, job title, company name, and often a link to the website or meeting calendar.</p><p class=\"text-mid mt-3\">The recipient does not have to search for the phone number in previous messages - all details are readily available. A professional email signature also shows that you pay attention to details and maintain a consistent company image in business correspondence.</p>"
+      "title": "Защо е нужен професионален подпис за имейл?",
+      "html": "<p class=\"text-mid\">Подписът за имейл (наричан също футър) е блок с информация в края на всяко изпратено съобщение. Съдържа данни за контакт, длъжност, име на фирмата и често връзка към уебсайта или календар за срещи.</p><p class=\"text-mid mt-3\">Получателят не трябва да търси телефонния номер в предишни съобщения – всички данни са лесно достъпни. Професионалният подпис за имейл също показва, че обръщате внимание на детайлите и поддържате последователен фирмен имидж в деловата кореспонденция.</p>"
     },
     { "type": "gap", "size": "sm" },
     {
       "type": "sectionSteps",
-      "title": "How to use the email signature generator",
-      "description": "Creating a professional email signature takes just a few minutes:",
+      "title": "Как да използвате генератора на подпис за имейл",
+      "description": "Създаването на професионален подпис за имейл отнема само няколко минути:",
       "grid": "three",
       "items": [
-        { "title": "1. Enter details", "description": "Fill in your name, title, company, and contact details." },
-        { "title": "2. Customize appearance", "description": "Choose a layout, colors, add a logo, and social media links." },
-        { "title": "3. Copy the code", "description": "The Copy signature button copies the ready code to clipboard. Just paste it in Gmail, Outlook, or another email client." }
+        { "title": "1. Въведете данните", "description": "Попълнете име, длъжност, фирма и данни за контакт." },
+        { "title": "2. Настройте външния вид", "description": "Изберете оформление, цветове, добавете лого и връзки към социални мрежи." },
+        { "title": "3. Копирайте кода", "description": "Бутонът Копиране на подписа копира готовия код в клипборда. Просто го поставете в Gmail, Outlook или друг пощенски клиент." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to fill in signature details",
-      "html": "<p class=\"text-mid\">The <strong>Details</strong> tab contains all the fields you can fill in. Only two are required: name and email address. The remaining fields are optional and will appear in the signature only when filled in.</p><h3 class=\"h5 mt-6 mb-3\">Fields in the Details tab</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Line above name</strong> - additional text displayed above the name. You can enter the company name, tagline, or slogan.</li><li><strong>Avatar / logo (image URL)</strong> - URL to a profile photo or company logo. The image should be square (min. 120×120 px) and publicly accessible online. After pasting the URL, additional options appear: <strong>Avatar shape</strong> (round, rounded, or square) and <strong>Avatar size</strong> (small - 40 px, medium - 56 px, large - 72 px).</li><li><strong>Full name</strong> - required field. Enter your full name.</li><li><strong>Name tag</strong> - short text next to the name, e.g., pronouns or abbreviated title.</li><li><strong>Job title</strong> - your role in the company, e.g., Sales Manager, Marketing Specialist.</li><li><strong>Company name</strong> - the name of the organization you represent.</li><li><strong>Additional line</strong> - a short description of what you do or what you offer.</li><li><strong>Email</strong> - required field. Enter your business email address.</li><li><strong>Phone</strong> - contact number. Any format, e.g., +1 555 000 000.</li><li><strong>Website</strong> - full URL of your website, starting with https://.</li><li><strong>Address</strong> - physical company address (street, city, postal code).</li><li><strong>Formal details</strong> - tax ID, license number, or other details required in your industry.</li></ul>"
+      "title": "Как да попълните данните в подписа",
+      "html": "<p class=\"text-mid\">Разделът <strong>Данни</strong> съдържа всички полета, които можете да попълните. Само две са задължителни: име и имейл адрес. Останалите полета са незадължителни и ще се появят в подписа само когато са попълнени.</p><h3 class=\"h5 mt-6 mb-3\">Полета в раздела Данни</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Ред над името</strong> – допълнителен текст, показван над името. Можете да въведете име на фирма, таглайн или слоган.</li><li><strong>Аватар / лого (URL на изображение)</strong> – URL към профилна снимка или фирмено лого. Изображението трябва да е квадратно (мин. 120×120 px) и публично достъпно. След поставяне на URL се появяват допълнителни опции: <strong>Форма на аватара</strong> (кръгла, заоблена или квадратна) и <strong>Размер на аватара</strong> (малък – 40 px, среден – 56 px, голям – 72 px).</li><li><strong>Пълно име</strong> – задължително поле. Въведете пълното си име.</li><li><strong>Етикет към името</strong> – кратък текст до името, напр. съкратена титла.</li><li><strong>Длъжност</strong> – ролята ви във фирмата, напр. Мениджър продажби, Маркетинг специалист.</li><li><strong>Име на фирмата</strong> – названието на организацията, която представлявате.</li><li><strong>Допълнителен ред</strong> – кратко описание на това, което правите или предлагате.</li><li><strong>Имейл</strong> – задължително поле. Въведете служебния си имейл адрес.</li><li><strong>Телефон</strong> – номер за контакт. Във всякакъв формат, напр. +359 888 000 000.</li><li><strong>Уебсайт</strong> – пълен URL на уебсайта ви, започващ с https://.</li><li><strong>Адрес</strong> – физически адрес на фирмата (улица, град, пощенски код).</li><li><strong>Официални данни</strong> – ЕИК, номер на лиценз или други данни, изисквани във вашата индустрия.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "Signature layouts - which to choose?",
-      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Signature layout</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">John Smith</p><p class=\"text-mid text-sm\">Web Developer</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">john@example.com</p><p class=\"text-mid\">+1 555 000 000</p></div></div></div>",
-      "html": "<p class=\"text-mid\">The generator offers eight ready-made layouts. Each presents the same information in a different way.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> - classic vertical layout, fits most use cases.</li><li><strong>Top bar</strong> - a horizontal bar separates the signature from the content.</li><li><strong>Labels left</strong> - two columns: labels and values.</li><li><strong>Centered</strong> - formal appearance, content centered.</li><li><strong>Compact</strong> - everything in one line, minimal height.</li><li><strong>Two columns</strong> - details on the left, contact info on the right.</li><li><strong>Minimalist</strong> - only the most important information.</li><li><strong>Bottom bar</strong> - colored bar with contact at the bottom of the signature.</li></ul>"
+      "title": "Оформления на подписа – кое да изберете?",
+      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Оформление на подписа</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Стандартно</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Акцентна лента</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Горна лента</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Етикети вляво</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Центрирано</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">John Smith</p><p class=\"text-mid text-sm\">Web Developer</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">john@example.com</p><p class=\"text-mid\">+1 555 000 000</p></div></div></div>",
+      "html": "<p class=\"text-mid\">Генераторът предлага осем готови оформления. Всяко представя една и съща информация по различен начин.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Стандартно</strong> – класическо вертикално оформление, подходящо за повечето случаи.</li><li><strong>Горна лента</strong> – хоризонтална лента разделя подписа от съдържанието.</li><li><strong>Етикети вляво</strong> – две колони: етикети и стойности.</li><li><strong>Центрирано</strong> – официален вид, съдържанието е центрирано.</li><li><strong>Компактно</strong> – всичко на един ред, минимална височина.</li><li><strong>Две колони</strong> – данни вляво, контакти вдясно.</li><li><strong>Минималистично</strong> – само най-важната информация.</li><li><strong>Долна лента</strong> – цветна лента с контакти в дъното на подписа.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to add CTA buttons",
-      "html": "<p class=\"text-mid\">A CTA button (call-to-action) is a clickable element that directs the recipient to a chosen page. It can be a link to a meeting calendar, contact form, or offer. The generator allows adding two CTA buttons.</p><h3 class=\"h5 mt-6 mb-3\">Main button</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Open the <strong>Buttons</strong> tab in the editor.</li><li>In the <strong>Main button</strong> section, enter the text the recipient will see, e.g., Schedule a free consultation.</li><li>In the <strong>CTA link</strong> field, paste the full URL. The address must start with https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Secondary button</h3><p class=\"text-mid\">You can add a second CTA button in outline style (transparent background with border). Fill in the fields in the <strong>Secondary button</strong> section the same way as for the main button.</p><h3 class=\"h5 mt-6 mb-3\">Button rounding</h3><p class=\"text-mid\">At the bottom of the Buttons tab you will find the <strong>Button rounding</strong> option. Three variants are available: None (sharp corners), Slight (slightly rounded), or Full (oval button).</p><p class=\"text-mid mt-4\">If you leave both fields empty, the button will not appear in the signature. If you fill in only one field, the button will also not be visible - both text and link are needed.</p>"
+      "title": "Как да добавите CTA бутони",
+      "html": "<p class=\"text-mid\">CTA бутонът (call-to-action) е кликваем елемент, който насочва получателя към избрана страница. Това може да е връзка към календар за срещи, форма за контакт или оферта. Генераторът позволява добавяне на два CTA бутона.</p><h3 class=\"h5 mt-6 mb-3\">Основен бутон</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Отворете раздела <strong>Бутони</strong> в редактора.</li><li>В секцията <strong>Основен бутон</strong> въведете текста, който получателят ще види, напр. Запишете безплатна консултация.</li><li>В полето <strong>CTA връзка</strong> поставете пълния URL. Адресът трябва да започва с https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Вторичен бутон</h3><p class=\"text-mid\">Можете да добавите втори CTA бутон в стил outline (прозрачен фон с рамка). Попълнете полетата в секцията <strong>Вторичен бутон</strong> по същия начин като за основния.</p><h3 class=\"h5 mt-6 mb-3\">Заобляне на бутона</h3><p class=\"text-mid\">В дъното на раздела Бутони ще намерите опцията <strong>Заобляне на бутона</strong>. Налични са три варианта: Без (остри ъгли), Леко (леко заоблено) или Пълно (овален бутон).</p><p class=\"text-mid mt-4\">Ако оставите и двете полета празни, бутонът няма да се появи в подписа. Ако попълните само едно поле, бутонът също няма да е видим – необходими са и текст, и връзка.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to add social media links",
-      "html": "<p class=\"text-mid\">In the <strong>Social Media</strong> tab you can add links to your profiles. The generator supports twelve platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (formerly Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">How to do it</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Open the <strong>Social Media</strong> tab in the editor.</li><li>Next to each platform you will find a URL field. Paste the full link to your profile, e.g., https://www.linkedin.com/in/yourprofile.</li><li>Fill in only the fields you need. Empty fields will not appear in the signature.</li></ol><h3 class=\"h5 mt-6 mb-3\">Social media icons</h3><p class=\"text-mid\">At the bottom of the Social Media tab you will find the <strong>Show icons next to service names</strong> option. When enabled, links will display as colored SVG icons instead of just names.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Icon size</strong> - options: Small (16 px), Medium (20 px), or Large (24 px).</li><li><strong>Icon color</strong> - Platform colors (default colors for each platform), Accent color (uniform accent color), or Text color.</li></ul>"
+      "title": "Как да добавите връзки към социални мрежи",
+      "html": "<p class=\"text-mid\">В раздела <strong>Социални мрежи</strong> можете да добавите връзки към профилите си. Генераторът поддържа дванадесет платформи: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (преди Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram и Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Как да го направите</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Отворете раздела <strong>Социални мрежи</strong> в редактора.</li><li>До всяка платформа ще намерите поле за URL. Поставете пълната връзка към профила, напр. https://www.linkedin.com/in/yourprofile.</li><li>Попълнете само полетата, които са ви нужни. Празните полета няма да се появят в подписа.</li></ol><h3 class=\"h5 mt-6 mb-3\">Икони на социални мрежи</h3><p class=\"text-mid\">В дъното на раздела Социални мрежи ще намерите опцията <strong>Покажи икони до имената на услугите</strong>. Когато е включена, връзките ще се показват като цветни SVG икони вместо само имена.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Размер на иконите</strong> – опции: Малък (16 px), Среден (20 px) или Голям (24 px).</li><li><strong>Цвят на иконите</strong> – Цветове на платформата (цветове по подразбиране за всяка платформа), Акцентен цвят (единен акцентен цвят) или Цвят на текста.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Appearance customization",
-      "html": "<p class=\"text-mid\">In the <strong>Appearance</strong> tab you can customize colors, font, and other visual elements of the signature.</p><h3 class=\"h5 mt-6 mb-3\">Color themes</h3><p class=\"text-mid\">At the top of the tab you will find five ready-made themes: Dark, Blue, Purple, Green, and Gray. Clicking a theme automatically sets the accent color and text color. This is the quickest way to achieve a consistent signature look.</p><h3 class=\"h5 mt-6 mb-3\">Colors</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Accent color</strong> - used in the side/top bar, CTA button, and links. You can choose any color from the palette.</li><li><strong>Text color</strong> - color of all text in the signature (name, contact details, disclaimer).</li><li><strong>Background color</strong> - background color of the entire signature. White by default, but you can change it.</li></ul><h3 class=\"h5 mt-6 mb-3\">Font and size</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Font</strong> - options: Arial, Verdana, Tahoma, Trebuchet MS, and Georgia. All are email-safe and will display correctly for the recipient.</li><li><strong>Text size</strong> - three options: Small (12 px), Standard (14 px), and Larger (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Additional settings</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Signature border</strong> - you can add a border to the signature by selecting any combination of sides (left, right, top, bottom). Selecting all sides automatically sets a full border. The border uses the accent color.</li></ul>"
+      "title": "Настройка на външния вид",
+      "html": "<p class=\"text-mid\">В раздела <strong>Външен вид</strong> можете да настроите цветове, шрифт и други визуални елементи на подписа.</p><h3 class=\"h5 mt-6 mb-3\">Цветови теми</h3><p class=\"text-mid\">В горната част на раздела ще намерите пет готови теми: Тъмна, Синя, Лилава, Зелена и Сива. Кликването върху тема автоматично задава акцентния цвят и цвета на текста. Това е най-бързият начин да постигнете последователен вид на подписа.</p><h3 class=\"h5 mt-6 mb-3\">Цветове</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Акцентен цвят</strong> – използва се в страничната/горната лента, CTA бутона и връзките. Можете да изберете всеки цвят от палитрата.</li><li><strong>Цвят на текста</strong> – цвятът на всички текстове в подписа (име, данни за контакт, правна информация).</li><li><strong>Цвят на фона</strong> – фонов цвят на целия подпис. Бял по подразбиране, но можете да го промените.</li></ul><h3 class=\"h5 mt-6 mb-3\">Шрифт и размер</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Шрифт</strong> – опции: Arial, Verdana, Tahoma, Trebuchet MS и Georgia. Всички са безопасни за имейл и ще се покажат правилно при получателя.</li><li><strong>Размер на текста</strong> – три опции: Малък (12 px), Стандартен (14 px) и По-голям (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Допълнителни настройки</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Рамка на подписа</strong> – можете да добавите рамка към подписа, избирайки която и да е комбинация от страни (ляво, дясно, горе, долу). Избирането на всички страни автоматично задава пълна рамка. Рамката използва акцентния цвят.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Text style - colors and sizes of individual elements",
-      "html": "<p class=\"text-mid\">In the <strong>Text Style</strong> tab you can individually customize the color and font size for each text element in the signature.</p><h3 class=\"h5 mt-6 mb-3\">Available elements</h3><p class=\"text-mid\">Only elements that currently have content in the signature are visible. For each element you can set:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Name</strong> - displayed in accent color by default.</li><li><strong>Job title</strong> - role in the company.</li><li><strong>Company</strong> - organization name.</li><li><strong>Contact details</strong> - email, phone, website (labels).</li><li><strong>Social media</strong> - profile links.</li><li><strong>Legal disclaimer</strong> - legal text at the bottom of the signature.</li></ul><h3 class=\"h5 mt-6 mb-3\">How to change color</h3><p class=\"text-mid\">Next to each element you will find a row of color options. Click a color square to select it. You can also add a custom color by clicking the colored square with a plus - choose a color and click Save. Custom colors (up to 8) are shared between all elements.</p><p class=\"text-mid mt-3\">The reset icon button restores the default color of the element.</p><h3 class=\"h5 mt-6 mb-3\">How to change size</h3><p class=\"text-mid\">In the second row you will find a size control with - and + buttons. The value shows the offset relative to the base font size (set in the Appearance tab). Range: from -4 to +4 pixels.</p>"
+      "title": "Стил на текста – цветове и размери на отделните елементи",
+      "html": "<p class=\"text-mid\">В раздела <strong>Стил на текста</strong> можете индивидуално да настроите цвета и размера на шрифта за всеки текстов елемент в подписа.</p><h3 class=\"h5 mt-6 mb-3\">Налични елементи</h3><p class=\"text-mid\">Видими са само елементите, които в момента имат съдържание в подписа. За всеки елемент можете да зададете:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Име</strong> – показва се в акцентен цвят по подразбиране.</li><li><strong>Длъжност</strong> – ролята във фирмата.</li><li><strong>Фирма</strong> – име на организацията.</li><li><strong>Данни за контакт</strong> – имейл, телефон, уебсайт (етикети).</li><li><strong>Социални мрежи</strong> – връзки към профили.</li><li><strong>Правна информация</strong> – правен текст в дъното на подписа.</li></ul><h3 class=\"h5 mt-6 mb-3\">Как да промените цвета</h3><p class=\"text-mid\">До всеки елемент ще намерите ред с цветови опции. Кликнете върху цветно квадратче, за да го изберете. Можете също да добавите персонализиран цвят, като кликнете върху цветното квадратче с плюс – изберете цвят и кликнете Запази. Персонализираните цветове (до 8) са общи за всички елементи.</p><p class=\"text-mid mt-3\">Бутонът за нулиране възстановява цвета по подразбиране на елемента.</p><h3 class=\"h5 mt-6 mb-3\">Как да промените размера</h3><p class=\"text-mid\">На втория ред ще намерите контрола за размер с бутони - и +. Стойността показва отместването спрямо базовия размер на шрифта (зададен в раздела Външен вид). Диапазон: от -4 до +4 пиксела.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Spacing between elements",
-      "html": "<p class=\"text-mid\">In the <strong>Spacing</strong> tab you can precisely control the distances between individual signature elements.</p><h3 class=\"h5 mt-6 mb-3\">Inner signature padding</h3><p class=\"text-mid\">At the top of the tab you will find the inner padding option - the distance between the signature content and its edges. Three values are available: 8 px (small), 16 px (medium), and 24 px (large).</p><h3 class=\"h5 mt-6 mb-3\">Spacing between elements</h3><p class=\"text-mid\">Below the padding you will find controls for individual signature elements. Each control has + and - buttons to increase or decrease the spacing. Only options for elements currently in the signature are visible.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>After name</strong> - spacing below the name line.</li><li><strong>After title / company</strong> - spacing below the title and company name line.</li><li><strong>After additional line</strong> - spacing below the description (if filled in).</li><li><strong>After contact details</strong> - spacing below email, phone, and website.</li><li><strong>After social media</strong> - spacing below profile links.</li><li><strong>After CTA button</strong> - spacing below the button (if enabled).</li><li><strong>Before disclaimer</strong> - spacing above the legal disclaimer text.</li></ul><p class=\"text-mid mt-4\">If you clear a field (e.g., remove the phone number), the corresponding spacing option will automatically disappear from the tab.</p>"
+      "title": "Разстояния между елементите",
+      "html": "<p class=\"text-mid\">В раздела <strong>Разстояния</strong> можете точно да контролирате разстоянията между отделните елементи на подписа.</p><h3 class=\"h5 mt-6 mb-3\">Вътрешно подпълване на подписа</h3><p class=\"text-mid\">В горната част на раздела ще намерите опцията за вътрешно подпълване – разстоянието между съдържанието на подписа и краищата му. Налични са три стойности: 8 px (малко), 16 px (средно) и 24 px (голямо).</p><h3 class=\"h5 mt-6 mb-3\">Разстояния между елементите</h3><p class=\"text-mid\">Под подпълването ще намерите контроли за отделните елементи на подписа. Всеки контрол има бутони + и - за увеличаване или намаляване на разстоянието. Видими са само опциите за елементи, които в момента са в подписа.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>След името</strong> – разстояние под реда с името.</li><li><strong>След длъжност / фирма</strong> – разстояние под реда с длъжността и името на фирмата.</li><li><strong>След допълнителен ред</strong> – разстояние под описанието (ако е попълнено).</li><li><strong>След данните за контакт</strong> – разстояние под имейл, телефон и уебсайт.</li><li><strong>След социалните мрежи</strong> – разстояние под връзките към профили.</li><li><strong>След CTA бутона</strong> – разстояние под бутона (ако е включен).</li><li><strong>Преди правната информация</strong> – разстояние над правния текст.</li></ul><p class=\"text-mid mt-4\">Ако изчистите поле (напр. премахнете телефонния номер), съответната опция за разстояние автоматично ще изчезне от раздела.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Legal disclaimer - when to add it",
-      "html": "<p class=\"text-mid\">In the <strong>Disclaimer / Legal</strong> tab you can add legal text that will appear at the bottom of the signature in smaller font.</p><h3 class=\"h5 mt-6 mb-3\">When to add a disclaimer</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Business correspondence</strong> - confidentiality notice and request to delete in case of incorrect delivery.</li><li><strong>Industry requirements</strong> - some industries (e.g., legal, medical, financial) require specific information in every message.</li><li><strong>GDPR</strong> - information about personal data processing, if the company is a data controller.</li></ul><p class=\"text-mid mt-4\">By default, the field is filled with a sample confidentiality text. You can edit, delete, or replace it with your own disclaimer. If you leave the field empty, no disclaimer will appear in the signature.</p><h3 class=\"h5 mt-6 mb-3\">Separator line</h3><p class=\"text-mid\">Below the text field you will find the <strong>Show divider between contact details and disclaimer</strong> option. Enable it to add a horizontal line between contact details and the legal disclaimer.</p><p class=\"text-mid mt-3\">After enabling the line, additional customization options appear:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Line style</strong> - options: solid, dashed, or dotted.</li><li><strong>Line thickness</strong> - three options: 1 px, 2 px, or 3 px.</li><li><strong>Line color</strong> - default gray (#e5e7eb). You can choose any color from the palette or restore the default by clicking the Default button.</li></ul>"
+      "title": "Правна информация – кога да я добавите",
+      "html": "<p class=\"text-mid\">В раздела <strong>Правна информация</strong> можете да добавите правен текст, който ще се появи в дъното на подписа с по-малък шрифт.</p><h3 class=\"h5 mt-6 mb-3\">Кога да добавите правна информация</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Делова кореспонденция</strong> – уведомление за конфиденциалност и молба за изтриване при неправилна доставка.</li><li><strong>Индустриални изисквания</strong> – някои индустрии (напр. правна, медицинска, финансова) изискват конкретна информация във всяко съобщение.</li><li><strong>GDPR</strong> – информация за обработка на лични данни, ако фирмата е администратор на данни.</li></ul><p class=\"text-mid mt-4\">По подразбиране полето е попълнено с примерен текст за конфиденциалност. Можете да го редактирате, изтриете или замените със собствена правна информация. Ако оставите полето празно, правна информация няма да се появи в подписа.</p><h3 class=\"h5 mt-6 mb-3\">Разделителна линия</h3><p class=\"text-mid\">Под текстовото поле ще намерите опцията <strong>Покажи разделител между данните за контакт и правната информация</strong>. Включете я, за да добавите хоризонтална линия между данните за контакт и правната информация.</p><p class=\"text-mid mt-3\">След включване на линията се появяват допълнителни опции за настройка:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Стил на линията</strong> – опции: плътна, щрихована или пунктирана.</li><li><strong>Дебелина на линията</strong> – три опции: 1 px, 2 px или 3 px.</li><li><strong>Цвят на линията</strong> – сиво по подразбиране (#e5e7eb). Можете да изберете всеки цвят от палитрата или да възстановите стойността по подразбиране с бутона По подразбиране.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Auto-save and resetting settings",
-      "html": "<p class=\"text-mid\">The generator automatically saves all settings in browser memory (localStorage). After refreshing the page or reopening the tool, data, layout, colors, and all other options will be restored.</p><h3 class=\"h5 mt-6 mb-3\">How does auto-save work?</h3><p class=\"text-mid\">Every change (text, color, layout, spacing) is immediately saved in browser memory. Saving happens automatically in the background - without clicking any buttons.</p><h3 class=\"h5 mt-6 mb-3\">How to reset settings</h3><p class=\"text-mid\">Below the signature preview you will find a <strong>Reset appearance</strong> button. After clicking, a confirmation dialog will appear. Confirming the reset will restore all data and settings to default values. This operation cannot be undone.</p><h3 class=\"h5 mt-6 mb-3\">Export and import configuration</h3><p class=\"text-mid\">Below the signature preview you will find two additional buttons: <strong>Export settings</strong> and <strong>Import settings</strong>. Export saves all data, colors, layout, spacing, and text styles to a JSON file. Import loads a previously saved configuration from a file.</p><p class=\"text-mid mt-3\">This feature is especially useful when you want to transfer the signature configuration between computers, share settings with colleagues, or keep a backup of your settings before a reset.</p>"
+      "title": "Автоматично запазване и нулиране на настройките",
+      "html": "<p class=\"text-mid\">Генераторът автоматично запазва всички настройки в паметта на браузъра (localStorage). След опресняване на страницата или повторно отваряне на инструмента, данните, оформлението, цветовете и всички други опции ще бъдат възстановени.</p><h3 class=\"h5 mt-6 mb-3\">Как работи автоматичното запазване?</h3><p class=\"text-mid\">Всяка промяна (текст, цвят, оформление, разстояния) се запазва незабавно в паметта на браузъра. Запазването става автоматично във фонов режим – без натискане на бутони.</p><h3 class=\"h5 mt-6 mb-3\">Как да нулирате настройките</h3><p class=\"text-mid\">Под прегледа на подписа ще намерите бутон <strong>Нулиране на външния вид</strong>. След кликване ще се появи диалогов прозорец за потвърждение. Потвърждаването ще възстанови всички данни и настройки до стойностите по подразбиране. Тази операция не може да бъде отменена.</p><h3 class=\"h5 mt-6 mb-3\">Експорт и импорт на конфигурация</h3><p class=\"text-mid\">Под прегледа на подписа ще намерите два допълнителни бутона: <strong>Експорт на настройки</strong> и <strong>Импорт на настройки</strong>. Експортът запазва всички данни, цветове, оформление, разстояния и стилове на текста в JSON файл. Импортът зарежда предварително запазена конфигурация от файл.</p><p class=\"text-mid mt-3\">Тази функция е особено полезна, когато искате да прехвърлите конфигурацията на подписа между компютри, да споделите настройки с колеги или да запазите резервно копие преди нулиране.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "How to copy the signature to Gmail or Outlook",
-      "description": "When the signature is ready, it only takes a few steps to add it to your email client:",
+      "title": "Как да копирате подписа в Gmail или Outlook",
+      "description": "Когато подписът е готов, са нужни само няколко стъпки, за да го добавите към пощенския клиент:",
       "grid": "three",
       "items": [
-        { "icon": "RiClipboardLine", "title": "1. Copy the code", "description": "The Copy signature (Gmail / Outlook) button copies the signature to clipboard as formatted HTML, ready to paste." },
-        { "icon": "RiSettings3Line", "title": "2. Open signature settings", "description": "In Gmail: Settings → See all settings → Signature. In Outlook: File → Options → Mail → Signatures." },
+        {
+          "icon": "RiClipboardLine",
+          "title": "1. Копирайте кода",
+          "description": "Бутонът Копиране на подписа (Gmail / Outlook) копира подписа в клипборда като форматиран HTML, готов за поставяне."
+        },
+        { "icon": "RiSettings3Line", "title": "2. Отворете настройките за подпис", "description": "В Gmail: Настройки → Всички настройки → Подпис. В Outlook: Файл → Опции → Поща → Подписи." },
         {
           "icon": "RiSaveLine",
-          "title": "3. Paste and save",
-          "description": "In the signature field, use Ctrl+V (Windows) or Cmd+V (Mac). The signature will appear with all colors and formatting. Save changes."
+          "title": "3. Поставете и запазете",
+          "description": "В полето за подпис използвайте Ctrl+V (Windows) или Cmd+V (Mac). Подписът ще се появи с всички цветове и форматиране. Запазете промените."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Signature preview and export options",
-      "html": "<p class=\"text-mid\">The preview panel displays on the right side of the editor and automatically updates with every change. The preview is sticky, so it remains visible even while scrolling through editing options.</p><h3 class=\"h5 mt-6 mb-3\">Switching preview background</h3><p class=\"text-mid\">Above the preview you will find three background change buttons: <strong>Light</strong> (default gray background), <strong>Dark</strong> (dark background, useful for checking readability on dark backgrounds), and <strong>Checkerboard</strong> (checkerboard pattern, lets you see transparency and signature edges).</p><h3 class=\"h5 mt-6 mb-3\">Action buttons</h3><p class=\"text-mid\">Below the preview you will find several buttons:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Copy signature (Gmail / Outlook)</strong> - copies the signature to clipboard as formatted HTML. Paste it directly in signature settings.</li><li><strong>Copy HTML code</strong> - copies the raw HTML code of the signature to clipboard. Useful when you want to paste code in an HTML editor or CMS.</li><li><strong>Download as HTML</strong> - saves the signature code as an .html file to disk. Useful for archiving or sharing with a developer.</li><li><strong>View HTML code</strong> - opens a modal with the full HTML source code of the signature. You can review the code and copy it directly from the modal.</li><li><strong>Export settings</strong> - saves the full signature configuration (data, colors, layout, spacing, styles) to a JSON file.</li><li><strong>Import settings</strong> - loads a configuration from a JSON file. All settings will be automatically applied.</li><li><strong>Reset appearance</strong> - restores all data and settings to default values (after confirmation).</li></ul>"
+      "title": "Преглед на подписа и опции за експорт",
+      "html": "<p class=\"text-mid\">Панелът за преглед се показва от дясната страна на редактора и се актуализира автоматично при всяка промяна. Прегледът е фиксиран, така че остава видим дори при превъртане през опциите за редактиране.</p><h3 class=\"h5 mt-6 mb-3\">Превключване на фона на прегледа</h3><p class=\"text-mid\">Над прегледа ще намерите три бутона за смяна на фона: <strong>Светъл</strong> (сив фон по подразбиране), <strong>Тъмен</strong> (тъмен фон, полезен за проверка на четимостта на тъмни фонове) и <strong>Шахматна дъска</strong> (шахматен шаблон, позволява да видите прозрачността и краищата на подписа).</p><h3 class=\"h5 mt-6 mb-3\">Бутони за действия</h3><p class=\"text-mid\">Под прегледа ще намерите няколко бутона:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Копиране на подписа (Gmail / Outlook)</strong> – копира подписа в клипборда като форматиран HTML. Поставете го директно в настройките за подпис.</li><li><strong>Копиране на HTML код</strong> – копира суровия HTML код на подписа в клипборда. Полезно, когато искате да поставите кода в HTML редактор или CMS.</li><li><strong>Изтегляне като HTML</strong> – запазва кода на подписа като .html файл на диска. Полезно за архивиране или споделяне с разработчик.</li><li><strong>Преглед на HTML код</strong> – отваря модален прозорец с пълния HTML изходен код на подписа. Можете да прегледате кода и да го копирате директно от модалния прозорец.</li><li><strong>Експорт на настройки</strong> – запазва пълната конфигурация (данни, цветове, оформление, разстояния, стилове) в JSON файл.</li><li><strong>Импорт на настройки</strong> – зарежда конфигурация от JSON файл. Всички настройки ще бъдат приложени автоматично.</li><li><strong>Нулиране на външния вид</strong> – възстановява всички данни и настройки до стойностите по подразбиране (след потвърждение).</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Who is the email signature creator for?",
-      "description": "The email signature tool is useful for anyone who sends business emails:",
+      "title": "За кого е предназначен генераторът на подпис за имейл?",
+      "description": "Инструментът за подпис на имейл е полезен за всеки, който изпраща делови имейли:",
       "grid": "two",
       "items": [
-        { "icon": "RiBriefcaseLine", "title": "Entrepreneurs and freelancers", "description": "A professional signature in every message without hiring a designer." },
-        { "icon": "RiTeamLine", "title": "Company teams", "description": "Each employee creates their own signature in the same style. Consistent identity across the entire company." },
-        { "icon": "RiHandCoinLine", "title": "Sales representatives", "description": "A CTA button with a link to a calendar or offer increases the chances of booking a meeting." },
-        { "icon": "RiScales3Line", "title": "Lawyers, accountants, doctors", "description": "Ability to add a legal disclaimer, license number, tax ID, or other details required in the industry." }
+        { "icon": "RiBriefcaseLine", "title": "Предприемачи и фрилансъри", "description": "Професионален подпис във всяко съобщение без наемане на дизайнер." },
+        { "icon": "RiTeamLine", "title": "Фирмени екипи", "description": "Всеки служител създава собствен подпис в един и същ стил. Последователна идентичност в цялата фирма." },
+        { "icon": "RiHandCoinLine", "title": "Търговски представители", "description": "CTA бутон с връзка към календар или оферта увеличава шансовете за уговаряне на среща." },
+        {
+          "icon": "RiScales3Line",
+          "title": "Адвокати, счетоводители, лекари",
+          "description": "Възможност за добавяне на правна информация, номер на лиценз, ЕИК или други данни, изисквани във вашата индустрия."
+        }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "What makes this HTML email signature generator special?",
+      "title": "Какво прави този HTML генератор на подпис за имейл специален?",
       "grid": "three",
       "items": [
-        { "icon": "RiInfinityLine", "title": "Eight signature layouts", "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist, and bottom bar." },
-        { "icon": "RiUserLine", "title": "Auto-save in browser", "description": "Every change is automatically saved in browser memory. After refreshing the page, the signature remains available." },
-        { "icon": "RiTranslate2", "title": "Export and import configuration", "description": "The full signature configuration can be exported as a JSON file and shared with colleagues." },
+        { "icon": "RiInfinityLine", "title": "Осем оформления на подписа", "description": "Стандартно, горна лента, етикети вляво, центрирано, компактно, две колони, минималистично и долна лента." },
+        {
+          "icon": "RiUserLine",
+          "title": "Автоматично запазване в браузъра",
+          "description": "Всяка промяна се запазва автоматично в паметта на браузъра. След опресняване на страницата подписът остава наличен."
+        },
+        { "icon": "RiTranslate2", "title": "Експорт и импорт на конфигурация", "description": "Пълната конфигурация на подписа може да бъде експортирана като JSON файл и споделена с колеги." },
         {
           "icon": "RiAppsLine",
-          "title": "12 social media platforms",
-          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest."
+          "title": "12 платформи за социални мрежи",
+          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram и Pinterest."
         },
-        { "icon": "RiPaletteLine", "title": "Advanced customization", "description": "Avatar shape and size, line styling, individual text colors and sizes." },
-        { "icon": "RiFileCodeLine", "title": "Multiple export options", "description": "Copy HTML, download file, source code preview, JSON configuration export/import." },
-        { "icon": "RiShieldCheckLine", "title": "Privacy", "description": "Data is not sent to a server. The generator works entirely in the browser." },
-        { "icon": "RiMailCheckLine", "title": "Compatibility", "description": "Generated HTML code works in Gmail, Outlook, Apple Mail, and Thunderbird." },
-        { "icon": "RiEyeLine", "title": "Live preview", "description": "Every change is instantly visible on light, dark, or checkerboard background." }
+        { "icon": "RiPaletteLine", "title": "Разширена настройка", "description": "Форма и размер на аватара, стилизация на линии, индивидуални цветове и размери на текста." },
+        { "icon": "RiFileCodeLine", "title": "Множество опции за експорт", "description": "Копиране на HTML, изтегляне на файл, преглед на изходен код, експорт/импорт на JSON конфигурация." },
+        { "icon": "RiShieldCheckLine", "title": "Поверителност", "description": "Данните не се изпращат до сървър. Генераторът работи изцяло в браузъра." },
+        { "icon": "RiMailCheckLine", "title": "Съвместимост", "description": "Генерираният HTML код работи в Gmail, Outlook, Apple Mail и Thunderbird." },
+        { "icon": "RiEyeLine", "title": "Преглед на живо", "description": "Всяка промяна е мигновено видима на светъл, тъмен или шахматен фон." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the email signature generator",
+      "title": "Често задавани въпроси за генератора на подпис за имейл",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Does the signature work in Gmail, Outlook, and Apple Mail?",
-          "answer": "Yes. Signatures generated by the generator use HTML tables that display correctly in all popular email clients: Gmail, Outlook (desktop and web), Apple Mail, Thunderbird. The layout adapts to different devices, including smartphones."
+          "question": "Подписът работи ли в Gmail, Outlook и Apple Mail?",
+          "answer": "Да. Подписите, генерирани от инструмента, използват HTML таблици, които се показват правилно във всички популярни пощенски клиенти: Gmail, Outlook (десктоп и уеб), Apple Mail, Thunderbird. Оформлението се адаптира към различни устройства, включително смартфони."
         },
         {
-          "question": "Can I add a company logo?",
-          "answer": "Yes. In the Details tab, paste the URL of an image (logo or profile photo). The image should be square (min. 120×120 px) and publicly accessible online. After pasting the URL, options for shape (round, rounded, square) and size (40, 56, or 72 px) will appear."
+          "question": "Мога ли да добавя фирмено лого?",
+          "answer": "Да. В раздела Данни поставете URL на изображение (лого или профилна снимка). Изображението трябва да е квадратно (мин. 120×120 px) и публично достъпно в интернет. След поставяне на URL ще се появят опции за форма (кръгла, заоблена, квадратна) и размер (40, 56 или 72 px)."
         },
         {
-          "question": "How do I copy the signature to an email client?",
-          "answer": "The Copy signature (Gmail / Outlook) button below the preview copies the signature to clipboard as formatted HTML. In Gmail or Outlook signature settings, just use Ctrl+V (Windows) or Cmd+V (Mac)."
+          "question": "Как да копирам подписа в пощенски клиент?",
+          "answer": "Бутонът Копиране на подписа (Gmail / Outlook) под прегледа копира подписа в клипборда като форматиран HTML. В настройките за подпис на Gmail или Outlook просто използвайте Ctrl+V (Windows) или Cmd+V (Mac)."
         },
         {
-          "question": "Can I use the generator to create signatures for an entire team?",
-          "answer": "Yes. The generator does not require login or registration. Each person on the team can open the tool, fill in their details, and copy the ready signature. To maintain visual consistency, agree on shared settings: the same layout, color theme, and font. You can also export the configuration as a JSON file and share it with colleagues - they just need to import the file and change only their personal details."
+          "question": "Мога ли да използвам генератора за създаване на подписи за цял екип?",
+          "answer": "Да. Генераторът не изисква вход или регистрация. Всеки член на екипа може да отвори инструмента, да попълни данните си и да копира готовия подпис. За да поддържате визуална последователност, уговорете общи настройки: едно и също оформление, цветова тема и шрифт. Можете също да експортирате конфигурацията като JSON файл и да я споделите с колегите – те просто трябва да импортират файла и да променят само личните си данни."
         },
         {
-          "question": "Can I add custom social media icons?",
-          "answer": "The generator offers built-in SVG icons for twelve platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest. Enable the Show icons option in the Social Media tab. You can choose icon size and color (platform colors, accent color, or text color)."
+          "question": "Мога ли да добавя персонализирани икони за социални мрежи?",
+          "answer": "Генераторът предлага вградени SVG икони за дванадесет платформи: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram и Pinterest. Включете опцията Покажи икони в раздела Социални мрежи. Можете да изберете размер и цвят на иконите (цветове на платформата, акцентен цвят или цвят на текста)."
         },
-        { "question": "The copy button is inactive - why?", "answer": "To copy the signature, fill in at least two fields: name and email address. Check that both fields are filled in." },
+        { "question": "Бутонът за копиране е неактивен – защо?", "answer": "За да копирате подписа, попълнете поне две полета: име и имейл адрес. Проверете дали и двете полета са попълнени." },
         {
-          "question": "Avatar or logo is not displaying - what to do?",
-          "answer": "The image must be publicly accessible online. The URL should point directly to an image file (ending in .jpg, .png, or .webp). Images from Google Drive or Dropbox require a special sharing link."
-        },
-        {
-          "question": "The signature looks different for the recipient - why?",
-          "answer": "Different email clients (Gmail, Outlook, Apple Mail) may slightly differ in how they render HTML. The generator uses safe styles that work in most programs. If you see major differences, make sure you are pasting the signature using Ctrl+V, not Paste as plain text."
+          "question": "Аватарът или логото не се показва – какво да направя?",
+          "answer": "Изображението трябва да е публично достъпно в интернет. URL адресът трябва да сочи директно към файл с изображение (завършващ на .jpg, .png или .webp). Изображенията от Google Drive или Dropbox изискват специална връзка за споделяне."
         },
         {
-          "question": "CTA button is not appearing - what to do?",
-          "answer": "The button requires both fields: text and link. Check that in the Buttons tab both fields are filled in and the URL starts with https://."
+          "question": "Подписът изглежда различно при получателя – защо?",
+          "answer": "Различните пощенски клиенти (Gmail, Outlook, Apple Mail) може леко да се различават в начина, по който показват HTML. Генераторът използва безопасни стилове, които работят в повечето програми. Ако забележите значителни разлики, уверете се, че поставяте подписа с Ctrl+V, а не с Поставяне като обикновен текст."
         },
         {
-          "question": "How to export or import signature settings?",
-          "answer": "Below the signature preview you will find Export settings and Import settings buttons. Export saves the full configuration (data, colors, layout, spacing, text styles) to a JSON file. Import loads the configuration from a file and automatically applies all settings."
+          "question": "CTA бутонът не се показва – какво да направя?",
+          "answer": "Бутонът изисква и двете полета: текст и връзка. Проверете дали в раздела Бутони и двете полета са попълнени и URL адресът започва с https://."
         },
         {
-          "question": "How to view the source code of the generated signature?",
-          "answer": "The View HTML code button below the signature preview opens a modal with the full HTML source code. You can review and copy the code directly from the modal. Alternatively, the Copy HTML code button copies the raw code to clipboard, and Download as HTML saves it as a file."
+          "question": "Как да експортирам или импортирам настройките на подписа?",
+          "answer": "Под прегледа на подписа ще намерите бутоните Експорт на настройки и Импорт на настройки. Експортът запазва пълната конфигурация (данни, цветове, оформление, разстояния, стилове на текста) в JSON файл. Импортът зарежда конфигурацията от файл и автоматично прилага всички настройки."
         },
         {
-          "question": "Can I change the avatar shape and size?",
-          "answer": "Yes. After pasting the image URL in the Data tab, additional options appear: Avatar shape (round, rounded, square) and Avatar size (small - 40 px, medium - 56 px, large - 72 px). Settings are applied in all signature layouts."
+          "question": "Как да видя изходния код на генерирания подпис?",
+          "answer": "Бутонът Преглед на HTML код под прегледа на подписа отваря модален прозорец с пълния HTML изходен код. Можете да прегледате и копирате кода директно от прозореца. Алтернативно, бутонът Копиране на HTML код копира суровия код в клипборда, а Изтегляне като HTML го запазва като файл."
         },
         {
-          "question": "How to change the separator line style?",
-          "answer": "In the Disclaimer / Legal tab, enable the Show separator line option. Additional options will appear: line style (solid, dashed, dotted), thickness (1–3 px), and color (default gray or any color chosen from the palette)."
+          "question": "Мога ли да променя формата и размера на аватара?",
+          "answer": "Да. След поставяне на URL на изображение в раздела Данни се появяват допълнителни опции: Форма на аватара (кръгла, заоблена, квадратна) и Размер на аватара (малък – 40 px, среден – 56 px, голям – 72 px). Настройките се прилагат във всички оформления на подписа."
+        },
+        {
+          "question": "Как да променя стила на разделителната линия?",
+          "answer": "В раздела Правна информация включете опцията Покажи разделителна линия. Ще се появят допълнителни опции: стил на линията (плътна, щрихована, пунктирана), дебелина (1–3 px) и цвят (сив по подразбиране или произволен цвят, избран от палитрата)."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
+    { "type": "toolsCarousel", "title": "Разгледайте другите инструменти" },
     { "type": "gap", "size": "sm" }
   ]
 }

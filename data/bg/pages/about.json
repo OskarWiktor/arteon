@@ -1,78 +1,78 @@
 {
-  "slug": "about",
+  "slug": "za-nas",
   "metadata": {
-    "title": "About Arteon – 10 Free Online Tools for Web, SEO & Design",
-    "description": "Arteon is a creative agency building free browser-based tools: WebP converter, favicon generator, color contrast checker, QR code maker and more. No sign-up, no upload — everything runs locally."
+    "title": "За Arteon – 10 безплатни инструмента за уеб, SEO и дизайн",
+    "description": "Arteon е креативна агенция, която създава безплатни браузърни инструменти: WebP конвертор, генератор на favicon, проверка на контраст, генератор на QR код и други. Без регистрация, без качване — всичко работи локално."
   },
   "hero": {
-    "title": "Free online tools built by a creative agency",
-    "description": "10 browser-based tools for images, SEO, colors, email signatures and QR codes — no registration, no file uploads, no limits"
+    "title": "Безплатни инструменти, създадени от креативна агенция",
+    "description": "10 браузърни инструмента за изображения, SEO, цветове, имейл подписи и QR кодове — без регистрация, без качване на файлове, без ограничения"
   },
   "whoWeAre": {
-    "title": "Who we are",
-    "p1": "Arteon is a Polish creative agency. Beyond our commercial work, we build and maintain a growing collection of free online tools designed for business owners, website creators, designers, marketers, and anyone who works with digital content.",
-    "p2": "Every tool we create solves a specific, everyday problem: converting images, checking color contrast, generating favicons, creating QR codes, and more. Our goal is to build a comprehensive toolkit where you can find everything you need in one place — without switching between dozens of different websites."
+    "title": "Кои сме ние",
+    "p1": "Arteon е полска креативна агенция. Освен комерсиалната си дейност, ние създаваме и поддържаме нарастваща колекция от безплатни инструменти, предназначени за собственици на бизнес, създатели на уебсайтове, дизайнери, маркетолози и всеки, който работи с дигитално съдържание.",
+    "p2": "Всеки инструмент, който създаваме, решава конкретен, ежедневен проблем: конвертиране на изображения, проверка на цветови контраст, генериране на favicon, създаване на QR кодове и други. Целта ни е да изградим комплексен набор от инструменти, където можете да намерите всичко необходимо на едно място — без да превключвате между десетки различни сайтове."
   },
   "whyFree": {
-    "title": "Why we offer free tools",
+    "title": "Защо предлагаме безплатни инструменти",
     "items": [
       {
-        "title": "No registration, no limits",
-        "description": "Every tool works instantly in your browser. No account required, no login, no payment."
+        "title": "Без регистрация, без ограничения",
+        "description": "Всеки инструмент работи мигновено в браузъра. Не е необходим акаунт, вход или плащане."
       },
       {
-        "title": "Privacy first",
-        "description": "Your files never leave your device. All processing happens locally in your browser — we do not send your data to any server."
+        "title": "Поверителност на първо място",
+        "description": "Файловете ви никога не напускат устройството ви. Цялата обработка се извършва локално в браузъра — не изпращаме данните ви на никакъв сървър."
       },
       {
-        "title": "Built from real needs",
-        "description": "Each tool was born from a real problem we encountered while working on client projects. If we needed it, chances are you do too."
+        "title": "Създадени от реални нужди",
+        "description": "Всеки инструмент е роден от реален проблем, с който сме се сблъскали при работа по клиентски проекти. Ако на нас ни е трябвал, вероятно и на вас ще ви потрябва."
       },
       {
-        "title": "Funded by ads, free for you",
-        "description": "We use Google AdSense banners to cover the costs of development and hosting. Thanks to ad revenue, we can keep all tools free and continue building new ones."
+        "title": "Финансирани от реклами, безплатни за вас",
+        "description": "Използваме банери на Google AdSense, за да покрием разходите за разработка и хостинг. Благодарение на приходите от реклами, всички инструменти остават безплатни."
       }
     ]
   },
   "ourTools": {
-    "title": "Our tools",
+    "title": "Нашите инструменти",
     "items": [
       {
-        "title": "Images & favicons",
-        "description": "WebP converter, online image editor, and favicon generator. 3 tools for everyday image work."
+        "title": "Изображения и favicon",
+        "description": "WebP конвертор, редактор на изображения и генератор на favicon. 3 инструмента за ежедневна работа с изображения."
       },
       {
-        "title": "Meta & SEO",
-        "description": "Meta title and description checker plus a word and character counter to evaluate text length."
+        "title": "Meta и SEO",
+        "description": "Проверка на meta заглавие и описание плюс брояч на думи и символи за оценка на дължината на текста."
       },
       {
-        "title": "Email & communication",
-        "description": "HTML email signature generator with ready code for Gmail and Outlook."
+        "title": "Имейл и комуникация",
+        "description": "Генератор на HTML подпис за имейл с готов код за Gmail и Outlook."
       },
       {
-        "title": "Colors & accessibility",
-        "description": "WCAG contrast checker, image color extractor, and color palette generator. 3 tools for working with color."
+        "title": "Цветове и достъпност",
+        "description": "Проверка на контраст по WCAG, екстрактор на цветове от изображение и генератор на цветови палитри. 3 инструмента за работа с цвят."
       },
       {
-        "title": "Print & materials",
-        "description": "QR code generator for websites, vCards, menus, and flyers. Export to PNG and SVG."
+        "title": "Печат и материали",
+        "description": "Генератор на QR кодове за уебсайтове, vCard визитки, менюта и флаери. Експорт в PNG и SVG."
       }
     ]
   },
   "whatsNext": {
-    "title": "What's next",
-    "text": "We are actively working on expanding the toolkit. New tools are added regularly based on user feedback and our own experience. The goal is a single platform where business owners, designers, and developers have access to every essential tool — all in one place, all for free."
+    "title": "Какво предстои",
+    "text": "Активно работим по разширяването на набора от инструменти. Нови инструменти се добавят редовно въз основа на обратна връзка от потребителите и собствения ни опит. Целта е единна платформа, където собственици на бизнес, дизайнери и разработчици имат достъп до всеки необходим инструмент — всичко на едно място, всичко безплатно."
   },
   "privacy": {
-    "title": "Privacy and security",
-    "textBefore": "We respect your privacy. Files you upload to our tools are processed exclusively in your browser and are never sent to any server. We use analytics (Google Analytics 4) and advertising (Google AdSense) only after you give consent via the cookie banner. Full details are available in our",
-    "linkLabel": "Privacy Policy",
+    "title": "Поверителност и сигурност",
+    "textBefore": "Уважаваме поверителността ви. Файловете, които качвате в нашите инструменти, се обработват изключително в браузъра и никога не се изпращат на сървър. Използваме аналитика (Google Analytics 4) и реклами (Google AdSense) само след съгласието ви чрез банера за бисквитки. Пълни подробности ще намерите в нашата",
+    "linkLabel": "Политика за поверителност",
     "textAfter": "."
   },
   "cta": {
-    "title": "Try our tools",
-    "description": "10 free online tools — no registration, no limits, no file uploads to servers",
-    "btnOne": "Go to tools",
-    "btnTwo": "Contact"
+    "title": "Изпробвайте инструментите",
+    "description": "10 безплатни инструмента — без регистрация, без ограничения, без качване на файлове на сървър",
+    "btnOne": "Към инструментите",
+    "btnTwo": "Контакт"
   }
 }

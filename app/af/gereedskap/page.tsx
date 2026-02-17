@@ -135,15 +135,15 @@ const schema = {
 
 const faqItems = [
   { question: 'Hoeveel kos die gereedskap?', answer: 'Niks. Alle gereedskap is heeltemal gratis, sonder intekening en verborge koste.' },
-  { question: "Word my l\u00eaers na 'n bediener gestuur?", answer: 'Nee. Alle gereedskap werk direk in die blaaier. L\u00eaers verlaat nooit jou toestel nie en word nêrens gestoor nie.' },
+  { question: "Word my lêers na 'n bediener gestuur?", answer: 'Nee. Alle gereedskap werk direk in die blaaier. Lêers verlaat nooit jou toestel nie en word nêrens gestoor nie.' },
   { question: "Het ek 'n rekening nodig?", answer: 'Nee. Jy kan die gereedskap dadelik gebruik sonder om aan te meld of te registreer.' },
-  { question: 'Is daar gebruikslimiete?', answer: 'Nee. Gebruik sonder beperkings \u2013 geen daaglikse limiet, geen l\u00eaerlimiet, geen omskakelingslimiet nie.' },
+  { question: 'Is daar gebruikslimiete?', answer: 'Nee. Gebruik sonder beperkings – geen daaglikse limiet, geen lêerlimiet, geen omskakelingslimiet nie.' },
   {
     question: 'Waarvoor is die gereedskap bedoel?',
     answer:
       'Dit help om materiaal voor te berei vir webwerwe, sosiale media en drukwerk: beelde optimaliseer, favicons skep, tekslengte nagaan, QR-kodes genereer, kleure kies en leesbaarheid nagaan.',
   },
-  { question: "Werk die gereedskap op 'n selfoon?", answer: "Ja, maar sommige gereedskap (WebP-omskakelaar, favicon-generator) werk beter op 'n rekenaar omdat hulle groter l\u00eaers verwerk." },
+  { question: "Werk die gereedskap op 'n selfoon?", answer: "Ja, maar sommige gereedskap (WebP-omskakelaar, favicon-generator) werk beter op 'n rekenaar omdat hulle groter lêers verwerk." },
 ];
 
 export default function ToolsIndexPage() {
@@ -151,7 +151,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Gratis gereedskap"
-        description="Beelomskakelaar, favicon-generator, woordteller, kleurgereedskap en QR-kodes. Sonder registrasie, sonder beperkings \u2013 alles werk in die blaaier."
+        description="Beelomskakelaar, favicon-generator, woordteller, kleurgereedskap en QR-kodes. Sonder registrasie, sonder beperkings – alles werk in die blaaier."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -170,7 +170,7 @@ export default function ToolsIndexPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Skakel JPG- en PNG-beelde om na <strong>WebP</strong>-formaat en verminder l\u00eaergrootte. Vinniger bladsylading.
+                    Skakel JPG- en PNG-beelde om na <strong>WebP</strong>-formaat en verminder lêergrootte. Vinniger bladsylading.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/af/gereedskap/jpg-png-na-webp-omskakelaar">
@@ -187,7 +187,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Sny jou beeld vir sosiale media of webwerf. Kies \'n voorafbepaalde formaat of voer pasgemaakte afmetings in \u2013 laai af in PNG, JPG of WebP.</p>
+                  <p>Sny jou beeld vir sosiale media of webwerf. Kies \'n voorafbepaalde formaat of voer pasgemaakte afmetings in – laai af in PNG, JPG of WebP.</p>
                   <div className="mt-4">
                     <Button arrow link="/af/gereedskap/beeldredigeerder">
                       Maak oop
@@ -204,7 +204,7 @@ export default function ToolsIndexPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Skep <strong>favicon.ico</strong> en PNG-ikone van 180x180, 192x192 en 512x512 vanaf een beeld \u2013 volgens blaaier- en Lighthouse-vereistes.
+                    Skep <strong>favicon.ico</strong> en PNG-ikone van 180x180, 192x192 en 512x512 vanaf een beeld – volgens blaaier- en Lighthouse-vereistes.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/af/gereedskap/gratis-favicon-generator">
@@ -229,7 +229,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Gaan die aantal karakters en woorde asook die breedte in piksels na \u2013 met Google-voorskou. Vermy afgeknipte titels en beskrywings in soekresultate.</p>
+                  <p>Gaan die aantal karakters en woorde asook die breedte in piksels na – met Google-voorskou. Vermy afgeknipte titels en beskrywings in soekresultate.</p>
                   <div className="mt-4">
                     <Button arrow link="/af/gereedskap/meta-titel-en-beskrywing-nagaaier">
                       Maak oop
@@ -269,7 +269,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Skep \'n professionele e-poshandtekening binne minute. Voer jou besonderhede in, kies kleure en kopieer die voltooide HTML-kode na Gmail, Outlook of \'n ander kli\u00ebnt.</p>
+                  <p>Skep \'n professionele e-poshandtekening binne minute. Voer jou besonderhede in, kies kleure en kopieer die voltooide HTML-kode na Gmail, Outlook of \'n ander kliënt.</p>
                   <div className="mt-4">
                     <Button arrow link="/af/gereedskap/gratis-e-pos-handtekening-generator">
                       Maak oop
@@ -293,7 +293,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Skep \'n QR-kode vir \'n webwerf, vCard, restaurantspyskaart of vlugskrif. Voer uit na PNG en SVG \u2013 sonder registrasie, sonder beperkings.</p>
+                  <p>Skep \'n QR-kode vir \'n webwerf, vCard, restaurantspyskaart of vlugskrif. Voer uit na PNG en SVG – sonder registrasie, sonder beperkings.</p>
                   <div className="mt-4">
                     <Button arrow link="/af/gereedskap/gratis-qr-kode-generator">
                       Maak oop
@@ -336,7 +336,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Laai \'n foto of logo op \u2013 die gereedskap sal die dominante kleure onttrek. Kopieer HEX-kodes met een klik en gebruik dit oral.</p>
+                  <p>Laai \'n foto of logo op – die gereedskap sal die dominante kleure onttrek. Kopieer HEX-kodes met een klik en gebruik dit oral.</p>
                   <div className="mt-4">
                     <Button arrow link="/af/gereedskap/kleur-onttrekker-uit-beeld">
                       Maak oop
@@ -366,10 +366,9 @@ export default function ToolsIndexPage() {
         <Gap variant="line" />
         <SectionInfo title="Wat is Arteon-gereedskap?">
           <p className="mb-4">
-            10 gratis gereedskap om materiaal voor te berei vir webwerwe, sosiale media en drukwerk \u2013 WebP-omskakelaar, favicon-generator, woordteller, kleuronttrekking, paletgenerator en
-            QR-kodes.
+            10 gratis gereedskap om materiaal voor te berei vir webwerwe, sosiale media en drukwerk – WebP-omskakelaar, favicon-generator, woordteller, kleuronttrekking, paletgenerator en QR-kodes.
           </p>
-          <p>Alle gereedskap werk in die blaaier \u2013 l\u00eaers word nooit na \'n bediener gestuur nie. Gebruik sonder registrasie en sonder beperkings.</p>
+          <p>Alle gereedskap werk in die blaaier – lêers word nooit na \'n bediener gestuur nie. Gebruik sonder registrasie en sonder beperkings.</p>
         </SectionInfo>
         <Gap variant="line" />
         <SectionSteps
@@ -379,18 +378,18 @@ export default function ToolsIndexPage() {
             {
               icon: <RiShieldCheckLine className="h-6 w-6" />,
               title: 'Volledige privaatheid',
-              description: "Alle gereedskap verwerk l\u00eaers plaaslik in die blaaier. Niks word na 'n bediener gestuur nie \u2013 data verdwyn wanneer jy die oortjie sluit.",
+              description: "Alle gereedskap verwerk lêers plaaslik in die blaaier. Niks word na 'n bediener gestuur nie – data verdwyn wanneer jy die oortjie sluit.",
             },
             {
               icon: <RiInfinityFill className="h-6 w-6" />,
               title: 'Geen gebruikslimiete',
-              description: 'Gebruik sonder beperkings \u2013 geen daaglikse limiet, geen l\u00eaerlimiet, geen omskakelingslimiet nie. So dikwels as jy nodig het.',
+              description: 'Gebruik sonder beperkings – geen daaglikse limiet, geen lêerlimiet, geen omskakelingslimiet nie. So dikwels as jy nodig het.',
             },
             { icon: <RiLockLine className="h-6 w-6" />, title: 'Geen registrasie', description: "'n Rekening is nie nodig nie. Maak die gereedskap oop, gebruik dit, klaar." },
             {
               icon: <RiGlobalLine className="h-6 w-6" />,
               title: 'Beskikbaar in Afrikaans',
-              description: 'Alle gereedskap is beskikbaar in Afrikaans \u2013 koppelvlak, instruksies en kennisgewings.',
+              description: 'Alle gereedskap is beskikbaar in Afrikaans – koppelvlak, instruksies en kennisgewings.',
             },
           ]}
         />

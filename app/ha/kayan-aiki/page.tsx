@@ -27,11 +27,11 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
   title: 'Kayan aiki na kyauta | Hotuna, SEO, launuka, favicon',
-  description: 'Kayan aiki 10 na kyauta: mai canza WebP, mai samar da favicon, mai \u0199idaya kalmomi, fitar launuka da lambobin QR. Don shafukan yanar gizo da kafofin watsa labarai.',
+  description: 'Kayan aiki 10 na kyauta: mai canza WebP, mai samar da favicon, mai ƙidaya kalmomi, fitar launuka da lambobin QR. Don shafukan yanar gizo da kafofin watsa labarai.',
   alternates: getToolsIndexAlternates('ha'),
   openGraph: {
     title: 'Kayan aiki na kyauta | Hotuna, SEO, launuka, favicon',
-    description: 'Kayan aiki 10 na kyauta: mai canza WebP, mai samar da favicon, mai \u0199idaya kalmomi, fitar launuka da lambobin QR. Don shafukan yanar gizo da kafofin watsa labarai.',
+    description: 'Kayan aiki 10 na kyauta: mai canza WebP, mai samar da favicon, mai ƙidaya kalmomi, fitar launuka da lambobin QR. Don shafukan yanar gizo da kafofin watsa labarai.',
     url: toAbsoluteUrl('/ha/kayan-aiki'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -84,7 +84,7 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 5,
-        name: '\u0198idaya kalmomi da haruffa',
+        name: 'Ƙidaya kalmomi da haruffa',
         url: toAbsoluteUrl('/ha/kayan-aiki/kidaya-kalmomi-da-haruffa'),
         applicationCategory: 'DeveloperApplication',
         operatingSystem: 'Any',
@@ -134,17 +134,17 @@ const schema = {
 };
 
 const faqItems = [
-  { question: 'Nawa ne kayan aikin ke kashewa?', answer: 'Komai. Duk kayan aikin kyauta ne gaba \u0257aya, ba tare da biyan kudin wata-wata ko \u0199aruwar kudi ba.' },
+  { question: 'Nawa ne kayan aikin ke kashewa?', answer: 'Komai. Duk kayan aikin kyauta ne gaba ɗaya, ba tare da biyan kudin wata-wata ko ƙaruwar kudi ba.' },
   {
     question: 'Ana aika fayilolina zuwa sabar?',
-    answer: 'A\u2019a. Duk kayan aikin suna aiki kai tsaye a cikin mai bincike. Fayiloli ba sa ta\u0253a na\u2019urar ku kuma ba a adana su ko\u2019ina.',
+    answer: 'A’a. Duk kayan aikin suna aiki kai tsaye a cikin mai bincike. Fayiloli ba sa taɓa na’urar ku kuma ba a adana su ko’ina.',
   },
-  { question: 'Ina bukatar asusu?', answer: 'A\u2019a. Kuna iya amfani da kayan aikin nan da nan ba tare da shiga ko rajista ba.' },
-  { question: 'Akwai iyakar amfani?', answer: 'A\u2019a. Yi amfani ba tare da iyaka ba \u2013 babu iyakar yau da kullun, babu iyakar fayiloli, babu iyakar canjawa.' },
+  { question: 'Ina bukatar asusu?', answer: 'A’a. Kuna iya amfani da kayan aikin nan da nan ba tare da shiga ko rajista ba.' },
+  { question: 'Akwai iyakar amfani?', answer: 'A’a. Yi amfani ba tare da iyaka ba – babu iyakar yau da kullun, babu iyakar fayiloli, babu iyakar canjawa.' },
   {
     question: 'Don me ake amfani da kayan aikin?',
     answer:
-      'Suna taimakawa wajen shirya kayan aiki don shafukan yanar gizo, kafofin watsa labarai da bugu: inganta hotuna, samar da favicon, tantance tsawon rubutu, samar da lambobin QR, za\u0253en launuka da tantance saukin karantawa.',
+      'Suna taimakawa wajen shirya kayan aiki don shafukan yanar gizo, kafofin watsa labarai da bugu: inganta hotuna, samar da favicon, tantance tsawon rubutu, samar da lambobin QR, zaɓen launuka da tantance saukin karantawa.',
   },
   { question: 'Kayan aikin suna aiki a wayar hannu?', answer: 'Eh, amma wasu kayan aiki (mai canza WebP, mai samar da favicon) sun fi aiki da kyau a kwamfuta, domin suna sarrafa manyan fayiloli.' },
 ];
@@ -154,7 +154,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Kayan aiki na kyauta"
-        description="Mai canza hotuna, mai samar da favicon, mai \u0199idaya kalmomi, kayan aikin launuka da lambobin QR. Ba tare da rajista ba, ba tare da iyaka ba \u2013 duka suna aiki a cikin mai bincike."
+        description="Mai canza hotuna, mai samar da favicon, mai ƙidaya kalmomi, kayan aikin launuka da lambobin QR. Ba tare da rajista ba, ba tare da iyaka ba – duka suna aiki a cikin mai bincike."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -177,7 +177,7 @@ export default function ToolsIndexPage() {
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/ha/kayan-aiki/mai-canza-jpg-png-zuwa-webp">
-                      Bu\u0257e kayan aiki
+                      Buɗe kayan aiki
                     </Button>
                   </div>
                 </div>
@@ -190,10 +190,10 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Yanke hoton ku don kafofin watsa labarai ko shafin yanar gizo. Za\u0253i tsarin da aka riga aka saita ko shigar da ma\u2019aunin ku \u2013 zazzage a cikin PNG, JPG ko WebP.</p>
+                  <p>Yanke hoton ku don kafofin watsa labarai ko shafin yanar gizo. Zaɓi tsarin da aka riga aka saita ko shigar da ma’aunin ku – zazzage a cikin PNG, JPG ko WebP.</p>
                   <div className="mt-4">
                     <Button arrow link="/ha/kayan-aiki/editan-hoto">
-                      Bu\u0257e kayan aiki
+                      Buɗe kayan aiki
                     </Button>
                   </div>
                 </div>
@@ -207,11 +207,11 @@ export default function ToolsIndexPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Samar da <strong>favicon.ico</strong> da guntuwar PNG 180x180, 192x192 da 512x512 daga hoto guda \u2013 bisa ka\u2019idojin masu bincike da Lighthouse.
+                    Samar da <strong>favicon.ico</strong> da guntuwar PNG 180x180, 192x192 da 512x512 daga hoto guda – bisa ka’idojin masu bincike da Lighthouse.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/ha/kayan-aiki/samar-da-favicon-kyauta">
-                      Bu\u0257e kayan aiki
+                      Buɗe kayan aiki
                     </Button>
                   </div>
                 </div>
@@ -232,10 +232,10 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Duba adadin haruffa da kalmomi tare da fa\u0257in pixel \u2013 da ganin Google. Guji yanke take da bayanai a sakamakon bincike.</p>
+                  <p>Duba adadin haruffa da kalmomi tare da faɗin pixel – da ganin Google. Guji yanke take da bayanai a sakamakon bincike.</p>
                   <div className="mt-4">
                     <Button arrow link="/ha/kayan-aiki/tantance-meta-take-da-bayani">
-                      Bu\u0257e kayan aiki
+                      Buɗe kayan aiki
                     </Button>
                   </div>
                 </div>
@@ -243,15 +243,15 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiArticleLine className="h-8 w-8" />,
-              title: '\u0198idaya kalmomi da haruffa',
-              topImageAlt: '\u0198idaya kalmomi da haruffa Arteon',
+              title: 'Ƙidaya kalmomi da haruffa',
+              topImageAlt: 'Ƙidaya kalmomi da haruffa Arteon',
               topImageSrc: '/assets/tools/narzedzia-licznik-slow-i-znakow.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Duba tsawon rubutu kuma tantance ko ya dace da babban shafi, shafin ayyuka, labarin blog ko bayanin kaya. Yana \u0199idaya kalmomi, haruffa, sakin layi da lokacin karatu.</p>
+                  <p>Duba tsawon rubutu kuma tantance ko ya dace da babban shafi, shafin ayyuka, labarin blog ko bayanin kaya. Yana ƙidaya kalmomi, haruffa, sakin layi da lokacin karatu.</p>
                   <div className="mt-4">
                     <Button arrow link="/ha/kayan-aiki/kidaya-kalmomi-da-haruffa">
-                      Bu\u0257e kayan aiki
+                      Buɗe kayan aiki
                     </Button>
                   </div>
                 </div>
@@ -262,7 +262,7 @@ export default function ToolsIndexPage() {
         <Gap size="sm" />
         <SectionSteps
           title="Imel da sadarwa"
-          description="Kayan aiki don sadarwar imel na \u0199wararru da kama-karya na gani guda."
+          description="Kayan aiki don sadarwar imel na ƙwararru da kama-karya na gani guda."
           grid="three"
           items={[
             {
@@ -272,13 +272,10 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>
-                    Samar da sa hannun imel na \u0199wararru a cikin \u0199ananan mintuna. Shigar da bayananku, za\u0253i launuka kuma kwafi lambar HTML da aka gama zuwa Gmail, Outlook ko wata
-                    manhaja.
-                  </p>
+                  <p>Samar da sa hannun imel na ƙwararru a cikin ƙananan mintuna. Shigar da bayananku, zaɓi launuka kuma kwafi lambar HTML da aka gama zuwa Gmail, Outlook ko wata manhaja.</p>
                   <div className="mt-4">
                     <Button arrow link="/ha/kayan-aiki/samar-da-sa-hannu-imel-kyauta">
-                      Bu\u0257e kayan aiki
+                      Buɗe kayan aiki
                     </Button>
                   </div>
                 </div>
@@ -299,10 +296,10 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Samar da lambar QR don shafin yanar gizo, vCard, jerin abincin gidan abinci ko handbil. Fitar a cikin PNG da SVG \u2013 ba tare da rajista ba, ba tare da iyaka ba.</p>
+                  <p>Samar da lambar QR don shafin yanar gizo, vCard, jerin abincin gidan abinci ko handbil. Fitar a cikin PNG da SVG – ba tare da rajista ba, ba tare da iyaka ba.</p>
                   <div className="mt-4">
                     <Button arrow link="/ha/kayan-aiki/samar-da-lambar-qr-kyauta">
-                      Bu\u0257e kayan aiki
+                      Buɗe kayan aiki
                     </Button>
                   </div>
                 </div>
@@ -312,8 +309,8 @@ export default function ToolsIndexPage() {
         />
         <Gap size="sm" />
         <SectionSteps
-          title="Launuka da samu\u0257auki"
-          description="Kayan aiki don aiki da launuka, bambanci da samu\u0257aukin WCAG."
+          title="Launuka da samuɗauki"
+          description="Kayan aiki don aiki da launuka, bambanci da samuɗaukin WCAG."
           grid="three"
           items={[
             {
@@ -324,12 +321,12 @@ export default function ToolsIndexPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Duba ko launukan rubutu da bango suna da saukin karantawa. Shigar da lambobin launi, duba rabon bambanci bisa ka\u2019idar <strong>WCAG</strong> kuma yi amfani da aikin{' '}
+                    Duba ko launukan rubutu da bango suna da saukin karantawa. Shigar da lambobin launi, duba rabon bambanci bisa ka’idar <strong>WCAG</strong> kuma yi amfani da aikin{' '}
                     <strong>Match</strong> don gyara ta atomatik.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/ha/kayan-aiki/tantance-bambancin-launuka">
-                      Bu\u0257e kayan aiki
+                      Buɗe kayan aiki
                     </Button>
                   </div>
                 </div>
@@ -342,10 +339,10 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>\u0181ulla hoto ko alama \u2013 kayan aikin zai fitar da manyan launuka. Kwafi lambobin HEX da danna guda \u0257aya kuma yi amfani da su ko\u2019ina.</p>
+                  <p>Ɓulla hoto ko alama – kayan aikin zai fitar da manyan launuka. Kwafi lambobin HEX da danna guda ɗaya kuma yi amfani da su ko’ina.</p>
                   <div className="mt-4">
                     <Button arrow link="/ha/kayan-aiki/fitar-launuka-daga-hoto">
-                      Bu\u0257e kayan aiki
+                      Buɗe kayan aiki
                     </Button>
                   </div>
                 </div>
@@ -358,10 +355,10 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Za\u0253i launin tushe kuma samar da fayafai 9: na launi guda, na cike juna, na uku, mai haske, mai duhu da sauransu. Kwafi lambobin HEX da danna guda \u0257aya.</p>
+                  <p>Zaɓi launin tushe kuma samar da fayafai 9: na launi guda, na cike juna, na uku, mai haske, mai duhu da sauransu. Kwafi lambobin HEX da danna guda ɗaya.</p>
                   <div className="mt-4">
                     <Button arrow link="/ha/kayan-aiki/samar-da-fayafayan-launuka">
-                      Bu\u0257e kayan aiki
+                      Buɗe kayan aiki
                     </Button>
                   </div>
                 </div>
@@ -372,10 +369,10 @@ export default function ToolsIndexPage() {
         <Gap variant="line" />
         <SectionInfo title="Menene kayan aikin Arteon?">
           <p className="mb-4">
-            Kayan aiki 10 na kyauta don shirya kayan aiki don shafukan yanar gizo, kafofin watsa labarai da bugu \u2013 mai canza WebP, mai samar da favicon, mai \u0199idaya kalmomi, fitar launuka,
-            mai samar da fayafai da lambobin QR.
+            Kayan aiki 10 na kyauta don shirya kayan aiki don shafukan yanar gizo, kafofin watsa labarai da bugu – mai canza WebP, mai samar da favicon, mai ƙidaya kalmomi, fitar launuka, mai samar da
+            fayafai da lambobin QR.
           </p>
-          <p>Duk kayan aikin suna aiki a cikin mai bincike \u2013 ba a ta\u0253a fayiloli zuwa sabar ba. Yi amfani ba tare da rajista ba kuma ba tare da iyaka ba.</p>
+          <p>Duk kayan aikin suna aiki a cikin mai bincike – ba a taɓa fayiloli zuwa sabar ba. Yi amfani ba tare da rajista ba kuma ba tare da iyaka ba.</p>
         </SectionInfo>
         <Gap variant="line" />
         <SectionSteps
@@ -385,15 +382,15 @@ export default function ToolsIndexPage() {
             {
               icon: <RiShieldCheckLine className="h-6 w-6" />,
               title: 'Cikakken sirri',
-              description: 'Duk kayan aikin suna sarrafa fayiloli a wurin a cikin mai bincike. Ba a aika komai zuwa sabar ba \u2013 bayanai sun \u0253ace lokacin da kuka rufe shafin.',
+              description: 'Duk kayan aikin suna sarrafa fayiloli a wurin a cikin mai bincike. Ba a aika komai zuwa sabar ba – bayanai sun ɓace lokacin da kuka rufe shafin.',
             },
             {
               icon: <RiInfinityFill className="h-6 w-6" />,
               title: 'Babu iyakar amfani',
-              description: 'Yi amfani ba tare da iyaka ba \u2013 babu iyakar yau da kullun, babu iyakar fayiloli, babu iyakar canjawa. Sau nawa kuke bukata.',
+              description: 'Yi amfani ba tare da iyaka ba – babu iyakar yau da kullun, babu iyakar fayiloli, babu iyakar canjawa. Sau nawa kuke bukata.',
             },
-            { icon: <RiLockLine className="h-6 w-6" />, title: 'Babu rajista', description: 'Ba a bukatar asusu ba. Bu\u0257e kayan aiki, yi amfani, an gama.' },
-            { icon: <RiGlobalLine className="h-6 w-6" />, title: 'Ana samun sa a Hausa', description: 'Duk kayan aikin suna samuwa a Hausa \u2013 fuska, umarni da sanarwa.' },
+            { icon: <RiLockLine className="h-6 w-6" />, title: 'Babu rajista', description: 'Ba a bukatar asusu ba. Buɗe kayan aiki, yi amfani, an gama.' },
+            { icon: <RiGlobalLine className="h-6 w-6" />, title: 'Ana samun sa a Hausa', description: 'Duk kayan aikin suna samuwa a Hausa – fuska, umarni da sanarwa.' },
           ]}
         />
         <Gap variant="line" />

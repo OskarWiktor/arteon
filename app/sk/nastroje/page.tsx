@@ -137,7 +137,7 @@ const faqItems = [
   { question: 'Koľko stoja nástroje?', answer: 'Nič. Všetky nástroje sú úplne bezplatné, bez predplatného a skrytých poplatkov.' },
   { question: 'Odosielajú sa moje súbory na server?', answer: 'Nie. Všetky nástroje fungujú priamo v prehliadači. Súbory nikdy neopúšťajú váš počítač a nie sú nikam ukladané.' },
   { question: 'Potrebujem účet?', answer: 'Nie. Nástroje môžete používať okamžite bez prihlásenia alebo registrácie.' },
-  { question: 'Existujú obmedzenia používania?', answer: 'Nie. Používajte bez obmedzení \u2013 bez denného limitu, bez limitu súborov, bez limitu konverzií.' },
+  { question: 'Existujú obmedzenia používania?', answer: 'Nie. Používajte bez obmedzení – bez denného limitu, bez limitu súborov, bez limitu konverzií.' },
   {
     question: 'Na čo sú nástroje určené?',
     answer:
@@ -151,7 +151,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Bezplatné nástroje"
-        description="Konvertor obrázkov, generátor favicon, počítadlo slov, farebné nástroje a QR kódy. Bez registrácie, bez obmedzení \u2013 všetko funguje v prehliadači."
+        description="Konvertor obrázkov, generátor favicon, počítadlo slov, farebné nástroje a QR kódy. Bez registrácie, bez obmedzení – všetko funguje v prehliadači."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -187,7 +187,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Orezajte obrázok pre sociálne siete alebo webovú stránku. Vyberte prednastavený formát alebo zadajte vlastné rozmery \u2013 stiahnite vo formáte PNG, JPG alebo WebP.</p>
+                  <p>Orezajte obrázok pre sociálne siete alebo webovú stránku. Vyberte prednastavený formát alebo zadajte vlastné rozmery – stiahnite vo formáte PNG, JPG alebo WebP.</p>
                   <div className="mt-4">
                     <Button arrow link="/sk/nastroje/editor-obrazkov">
                       Otvoriť nástroj
@@ -204,7 +204,7 @@ export default function ToolsIndexPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Vytvorte <strong>favicon.ico</strong> a PNG ikony 180x180, 192x192 a 512x512 z jedného obrázka \u2013 v súlade s požiadavkami prehliadačov a Lighthouse.
+                    Vytvorte <strong>favicon.ico</strong> a PNG ikony 180x180, 192x192 a 512x512 z jedného obrázka – v súlade s požiadavkami prehliadačov a Lighthouse.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/sk/nastroje/generator-favicon-zadarmo">
@@ -229,7 +229,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Skontrolujte počet znakov a slov a šírku v pixeloch \u2013 s Google náhľadom. Vyhnite sa skráteným titulkom a popisom vo výsledkoch vyhľadávania.</p>
+                  <p>Skontrolujte počet znakov a slov a šírku v pixeloch – s Google náhľadom. Vyhnite sa skráteným titulkom a popisom vo výsledkoch vyhľadávania.</p>
                   <div className="mt-4">
                     <Button arrow link="/sk/nastroje/kontrola-meta-titulku-a-popisu">
                       Otvoriť nástroj
@@ -293,7 +293,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Vytvorte QR kód pre webovú stránku, vCard vizitku, jedálny lístok reštaurácie alebo leták. Export do PNG a SVG \u2013 bez prihlásenia, bez obmedzení.</p>
+                  <p>Vytvorte QR kód pre webovú stránku, vCard vizitku, jedálny lístok reštaurácie alebo leták. Export do PNG a SVG – bez prihlásenia, bez obmedzení.</p>
                   <div className="mt-4">
                     <Button arrow link="/sk/nastroje/generator-qr-kodov-zadarmo">
                       Otvoriť nástroj
@@ -336,7 +336,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Nahrajte fotku alebo logo \u2013 nástroj extrahuje dominantné farby. Skopírujte HEX kódy jedným kliknutím a použite ich kdekoľvek.</p>
+                  <p>Nahrajte fotku alebo logo – nástroj extrahuje dominantné farby. Skopírujte HEX kódy jedným kliknutím a použite ich kdekoľvek.</p>
                   <div className="mt-4">
                     <Button arrow link="/sk/nastroje/extraktor-farieb-z-obrazka">
                       Otvoriť nástroj
@@ -366,10 +366,10 @@ export default function ToolsIndexPage() {
         <Gap variant="line" />
         <SectionInfo title="Čo sú nástroje Arteon?">
           <p className="mb-4">
-            10 bezplatných nástrojov na prípravu materiálov pre webové stránky, sociálne siete a tlačoviny \u2013 WebP konvertor, generátor favicon, počítadlo slov, extraktor farieb, generátor palét a
-            QR kódy.
+            10 bezplatných nástrojov na prípravu materiálov pre webové stránky, sociálne siete a tlačoviny – WebP konvertor, generátor favicon, počítadlo slov, extraktor farieb, generátor palét a QR
+            kódy.
           </p>
-          <p>Všetky nástroje fungujú v prehliadači \u2013 súbory sa nikdy neodosielajú na server. Používajte bez registrácie a bez obmedzení.</p>
+          <p>Všetky nástroje fungujú v prehliadači – súbory sa nikdy neodosielajú na server. Používajte bez registrácie a bez obmedzení.</p>
         </SectionInfo>
         <Gap variant="line" />
         <SectionSteps
@@ -379,15 +379,15 @@ export default function ToolsIndexPage() {
             {
               icon: <RiShieldCheckLine className="h-6 w-6" />,
               title: 'Plné súkromie',
-              description: 'Všetky nástroje spracúvajú súbory lokálne v prehliadači. Nič sa neodosiela na server \u2013 údaje zmiznú po zatvorení karty.',
+              description: 'Všetky nástroje spracúvajú súbory lokálne v prehliadači. Nič sa neodosiela na server – údaje zmiznú po zatvorení karty.',
             },
             {
               icon: <RiInfinityFill className="h-6 w-6" />,
               title: 'Bez obmedzení používania',
-              description: 'Používajte bez obmedzení \u2013 bez denného limitu, bez limitu súborov, bez limitu konverzií. Koľkokrát potrebujete.',
+              description: 'Používajte bez obmedzení – bez denného limitu, bez limitu súborov, bez limitu konverzií. Koľkokrát potrebujete.',
             },
             { icon: <RiLockLine className="h-6 w-6" />, title: 'Bez registrácie', description: 'Účet nie je potrebný. Otvorte nástroj, použite ho, hotovo.' },
-            { icon: <RiGlobalLine className="h-6 w-6" />, title: 'Dostupné v slovenčine', description: 'Všetky nástroje sú dostupné v slovenčine \u2013 rozhranie, pokyny aj oznámenia.' },
+            { icon: <RiGlobalLine className="h-6 w-6" />, title: 'Dostupné v slovenčine', description: 'Všetky nástroje sú dostupné v slovenčine – rozhranie, pokyny aj oznámenia.' },
           ]}
         />
         <Gap variant="line" />

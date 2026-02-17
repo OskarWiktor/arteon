@@ -144,7 +144,7 @@ const faqItems = [
   { question: 'Колко струват инструментите?', answer: 'Нищо. Всички инструменти са напълно безплатни, без абонаменти и скрити такси.' },
   { question: 'Файловете ми изпращат ли се на сървър?', answer: 'Не. Всички инструменти работят директно в браузъра. Файловете никога не напускат устройството ви и не се съхраняват никъде.' },
   { question: 'Нужен ли ми е акаунт?', answer: 'Не. Можете да използвате инструментите веднага без вход или регистрация.' },
-  { question: 'Има ли ограничения за използване?', answer: 'Не. Използвайте без ограничения \u2013 без дневен лимит, без лимит на файлове, без лимит на конверсии.' },
+  { question: 'Има ли ограничения за използване?', answer: 'Не. Използвайте без ограничения – без дневен лимит, без лимит на файлове, без лимит на конверсии.' },
   {
     question: 'За какво служат инструментите?',
     answer:
@@ -161,7 +161,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Безплатни инструменти"
-        description="Конвертор на изображения, генератор на favicon, брояч на думи, цветови инструменти и QR кодове. Без регистрация, без ограничения \u2013 всичко работи в браузъра."
+        description="Конвертор на изображения, генератор на favicon, брояч на думи, цветови инструменти и QR кодове. Без регистрация, без ограничения – всичко работи в браузъра."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -197,7 +197,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Изрежете изображението за социални мрежи или уебсайт. Изберете предварително зададен формат или въведете персонализирани размери \u2013 изтеглете в PNG, JPG или WebP.</p>
+                  <p>Изрежете изображението за социални мрежи или уебсайт. Изберете предварително зададен формат или въведете персонализирани размери – изтеглете в PNG, JPG или WebP.</p>
                   <div className="mt-4">
                     <Button arrow link="/bg/instrumenti/redaktor-na-izobrazhenia">
                       Отвори инструмент
@@ -214,7 +214,7 @@ export default function ToolsIndexPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Създайте <strong>favicon.ico</strong> и PNG икони 180x180, 192x192 и 512x512 от едно изображение \u2013 в съответствие с изискванията на браузърите и Lighthouse.
+                    Създайте <strong>favicon.ico</strong> и PNG икони 180x180, 192x192 и 512x512 от едно изображение – в съответствие с изискванията на браузърите и Lighthouse.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/bg/instrumenti/bezplaten-generator-na-favicon">
@@ -239,7 +239,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Проверете броя на символите и думите, както и ширината в пиксели \u2013 с Google визуализация. Избегнете отрязани заглавия и описания в резултатите от търсене.</p>
+                  <p>Проверете броя на символите и думите, както и ширината в пиксели – с Google визуализация. Избегнете отрязани заглавия и описания в резултатите от търсене.</p>
                   <div className="mt-4">
                     <Button arrow link="/bg/instrumenti/proverka-na-meta-zaglavie-i-opisanie">
                       Отвори инструмент
@@ -306,7 +306,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Създайте QR код за уебсайт, vCard визитка, меню на ресторант или листовка. Експорт в PNG и SVG \u2013 без регистрация, без ограничения.</p>
+                  <p>Създайте QR код за уебсайт, vCard визитка, меню на ресторант или листовка. Експорт в PNG и SVG – без регистрация, без ограничения.</p>
                   <div className="mt-4">
                     <Button arrow link="/bg/instrumenti/bezplaten-generator-na-qr-kod">
                       Отвори инструмент
@@ -349,7 +349,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Качете снимка или лого \u2013 инструментът ще извлече доминиращите цветове. Копирайте HEX кодове с едно кликване и ги използвайте навсякъде.</p>
+                  <p>Качете снимка или лого – инструментът ще извлече доминиращите цветове. Копирайте HEX кодове с едно кликване и ги използвайте навсякъде.</p>
                   <div className="mt-4">
                     <Button arrow link="/bg/instrumenti/ekstraktor-na-tsvetove-ot-izobrazhenie">
                       Отвори инструмент
@@ -379,10 +379,10 @@ export default function ToolsIndexPage() {
         <Gap variant="line" />
         <SectionInfo title="Какво представляват инструментите на Arteon?">
           <p className="mb-4">
-            10 безплатни инструмента за подготовка на материали за уебсайтове, социални мрежи и печат \u2013 WebP конвертор, генератор на favicon, брояч на думи, извличане на цветове, генератор на
-            палитри и QR кодове.
+            10 безплатни инструмента за подготовка на материали за уебсайтове, социални мрежи и печат – WebP конвертор, генератор на favicon, брояч на думи, извличане на цветове, генератор на палитри
+            и QR кодове.
           </p>
-          <p>Всички инструменти работят в браузъра \u2013 файловете никога не се изпращат на сървър. Използвайте без регистрация и без ограничения.</p>
+          <p>Всички инструменти работят в браузъра – файловете никога не се изпращат на сървър. Използвайте без регистрация и без ограничения.</p>
         </SectionInfo>
         <Gap variant="line" />
         <SectionSteps
@@ -392,15 +392,15 @@ export default function ToolsIndexPage() {
             {
               icon: <RiShieldCheckLine className="h-6 w-6" />,
               title: 'Пълна поверителност',
-              description: 'Всички инструменти обработват файлове локално в браузъра. Нищо не се изпраща на сървър \u2013 данните изчезват, когато затворите раздела.',
+              description: 'Всички инструменти обработват файлове локално в браузъра. Нищо не се изпраща на сървър – данните изчезват, когато затворите раздела.',
             },
             {
               icon: <RiInfinityFill className="h-6 w-6" />,
               title: 'Без ограничения',
-              description: 'Използвайте без ограничения \u2013 без дневен лимит, без лимит на файлове, без лимит на конверсии. Колкото пъти е необходимо.',
+              description: 'Използвайте без ограничения – без дневен лимит, без лимит на файлове, без лимит на конверсии. Колкото пъти е необходимо.',
             },
             { icon: <RiLockLine className="h-6 w-6" />, title: 'Без регистрация', description: 'Акаунт не е необходим. Отворете инструмента, използвайте го, готово.' },
-            { icon: <RiGlobalLine className="h-6 w-6" />, title: 'На български', description: 'Всички инструменти са налични на български \u2013 интерфейс, инструкции и известия.' },
+            { icon: <RiGlobalLine className="h-6 w-6" />, title: 'На български', description: 'Всички инструменти са налични на български – интерфейс, инструкции и известия.' },
           ]}
         />
         <Gap variant="line" />

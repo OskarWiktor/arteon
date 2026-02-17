@@ -1,28 +1,28 @@
 {
-  "slug": "contact",
+  "slug": "kan-si-wa",
   "metadata": {
-    "title": "Contact Arteon – Free Online Tools Support & Feedback",
-    "description": "Get in touch with the Arteon team. Report a bug, suggest a new tool, or ask a question about our free online tools for images, SEO, colors and QR codes. We respond within one business day."
+    "title": "Kàn sí Arteon – Ìtìlẹ́yìn àti èsì lórí irinṣẹ́ ọ̀fẹ́",
+    "description": "Bá ẹgbẹ́ Arteon sọ̀rọ̀. Ṣe ìròyìn àṣìṣe, dábàá irinṣẹ́ tuntun tàbí béèrè ìbéèrè nípa irinṣẹ́ ọ̀fẹ́ wa fún àwòrán, SEO, àwọ̀ àti kóòdù QR. A máa dáhùn láàárín ọjọ́ iṣẹ́ kan."
   },
   "hero": {
-    "title": "Get in touch with the Arteon team",
-    "description": "Report a bug, suggest a new tool, or ask a question — we respond within one business day"
+    "title": "Bá ẹgbẹ́ Arteon sọ̀rọ̀",
+    "description": "Ṣe ìròyìn àṣìṣe, dábàá irinṣẹ́ tuntun tàbí béèrè ìbéèrè — a máa dáhùn láàárín ọjọ́ iṣẹ́ kan"
   },
   "intro": {
-    "title": "Have a question or suggestion?",
-    "textBefore": "We are happy to hear your feedback about our tools. If you found a bug, have an idea for a new tool, or need help — write to us at",
-    "textAfter": ". We respond within one business day."
+    "title": "Ṣé o ní ìbéèrè tàbí àbá?",
+    "textBefore": "A ń dúpẹ́ láti gbọ́ èsì rẹ nípa irinṣẹ́ wa. Tí o bá rí àṣìṣe, ní ìrò fún irinṣẹ́ tuntun tàbí nílò ìrànlọ́wọ́ — kọ sí wa ní",
+    "textAfter": ". A máa dáhùn láàárín ọjọ́ iṣẹ́ kan."
   },
-  "formTitle": "Send us a message",
+  "formTitle": "Fi ìfiránṣẹ́ ránṣẹ́ sí wa",
   "details": {
-    "title": "Contact details",
-    "emailLabel": "Email",
-    "hoursLabel": "Business hours",
-    "hoursValue": "Monday – Friday: 8:00 – 16:00 (CET)"
+    "title": "Àlàyé ìkànsí",
+    "emailLabel": "Ímeèlì",
+    "hoursLabel": "Àwọn wákàtí iṣẹ́",
+    "hoursValue": "Ọjọ́ Ajé – Ọjọ́ Ẹtì: 8:00 – 16:00 (CET)"
   },
   "cta": {
-    "title": "Back to tools",
-    "description": "10 free online tools for working with images, text, and colors",
-    "btnOne": "Tools"
+    "title": "Padà sí irinṣẹ́",
+    "description": "Irinṣẹ́ 10 ọ̀fẹ́ fún iṣẹ́ pẹ̀lú àwòrán, ọ̀rọ̀ àti àwọ̀",
+    "btnOne": "Irinṣẹ́"
   }
 }
