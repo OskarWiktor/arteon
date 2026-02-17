@@ -70,7 +70,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Podsumowanie</h2><p>Błąd 404 oznacza, że strona pod danym adresem nie istnieje. Może to być wynik usunięcia strony, zmiany adresu lub literówki.</p><br/><p><strong>Co warto zapamiętać:</strong></p><ul class='list-disc ml-5 mb-4'><li>Błędy 404 znajdziesz w Google Search Console (Indeksowanie → Strony → Nie znaleziono)</li><li>Nie każdy błąd wymaga reakcji - sprawdź, skąd pochodzi link i czy strona miała wartość</li><li>Jeśli usunięta strona miała linki z innych witryn, ustaw przekierowanie 301</li><li>Soft 404 (kod 200 dla nieistniejącej strony) to osobny problem - serwer powinien zwracać kod 404</li><li>Strona błędu 404 powinna pomagać użytkownikowi wrócić do właściwych treści</li></ul><br/><p><a class='inline-link' href='/uslugi/strony-internetowe'>Tworzymy strony internetowe</a> z poprawnie skonfigurowaną obsługą błędów i przekierowań. <a class='inline-link' href='/kontakt'>Skontaktuj się z nami</a>, jeśli potrzebujesz pomocy.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Podsumowanie</h2><p>Błąd 404 oznacza, że strona pod danym adresem nie istnieje. Może to być wynik usunięcia strony, zmiany adresu lub literówki.</p><br/><p><strong>Co warto zapamiętać:</strong></p><ul class='list-disc ml-5 mb-4'><li>Błędy 404 znajdziesz w Google Search Console (Indeksowanie → Strony → Nie znaleziono)</li><li>Nie każdy błąd wymaga reakcji - sprawdź, skąd pochodzi link i czy strona miała wartość</li><li>Jeśli usunięta strona miała linki z innych witryn, ustaw przekierowanie 301</li><li>Soft 404 (kod 200 dla nieistniejącej strony) to osobny problem - serwer powinien zwracać kod 404</li><li>Strona błędu 404 powinna pomagać użytkownikowi wrócić do właściwych treści</li></ul><br/><p><a class='inline-link' href='/uslugi/tworzenie-stron-wordpress'>Tworzymy strony internetowe</a> z poprawnie skonfigurowaną obsługą błędów i przekierowań. <a class='inline-link' href='/kontakt'>Skontaktuj się z nami</a>, jeśli potrzebujesz pomocy.</p>",
           "breakAfter": true
         }
       ],
@@ -78,7 +78,7 @@
         "title": "Potrzebujesz pomocy z konfiguracją witryny?",
         "description": "Tworzymy strony internetowe z poprawnie skonfigurowaną obsługą błędów, przekierowań i strukturą URL.",
         "btnOne": "Sprawdź ofertę stron internetowych",
-        "btnOneLink": "/uslugi/strony-internetowe",
+        "btnOneLink": "/uslugi/tworzenie-stron-wordpress",
         "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/czym-jest-strona-bledu-404-i-dlaczego-warto-ja-zaprojektowac/czym-jest-strona-bledu-404-i-dlaczego-warto-ja-zaprojektowac.webp",
@@ -190,7 +190,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Podsumowanie</h2><p>Sprawdzenie strony przed publikacją to inwestycja czasu, która zapobiega wielu problemom. Kilka godzin poświęconych na weryfikację może zaoszczędzić tygodnie naprawiania błędów i utraconych zapytań od klientów.</p><br/><p><strong>Najważniejsze obszary do sprawdzenia:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Treści i meta dane</strong> - unikalne tytuły i opisy dla każdej podstrony, brak literówek, aktualne dane kontaktowe</li><li><strong>Funkcjonalność</strong> - działające formularze, poprawne linki, responsywne menu</li><li><strong>Wydajność</strong> - zoptymalizowane zdjęcia, szybkie ładowanie na urządzeniach mobilnych</li><li><strong>SEO techniczne</strong> - poprawny robots.txt, sitemap, certyfikat SSL, czytelne adresy URL</li><li><strong>Kwestie prawne</strong> - polityka prywatności, informacja o cookies, dane firmy</li></ul><br/><p>W Arteon <a class='inline-link' href='/uslugi/strony-internetowe'>tworzymy strony internetowe</a> i <a class='inline-link' href='/uslugi/sklepy-internetowe'>sklepy internetowe</a> od podstaw, z pełną weryfikacją przed publikacją. Jeśli masz już stronę i potrzebujesz pomocy z jej optymalizacją lub poprawkami, również możemy pomóc. <a class='inline-link' href='/kontakt'>Skontaktuj się z nami</a>.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Podsumowanie</h2><p>Sprawdzenie strony przed publikacją to inwestycja czasu, która zapobiega wielu problemom. Kilka godzin poświęconych na weryfikację może zaoszczędzić tygodnie naprawiania błędów i utraconych zapytań od klientów.</p><br/><p><strong>Najważniejsze obszary do sprawdzenia:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Treści i meta dane</strong> - unikalne tytuły i opisy dla każdej podstrony, brak literówek, aktualne dane kontaktowe</li><li><strong>Funkcjonalność</strong> - działające formularze, poprawne linki, responsywne menu</li><li><strong>Wydajność</strong> - zoptymalizowane zdjęcia, szybkie ładowanie na urządzeniach mobilnych</li><li><strong>SEO techniczne</strong> - poprawny robots.txt, sitemap, certyfikat SSL, czytelne adresy URL</li><li><strong>Kwestie prawne</strong> - polityka prywatności, informacja o cookies, dane firmy</li></ul><br/><p>W Arteon <a class='inline-link' href='/uslugi/tworzenie-stron-wordpress'>tworzymy strony internetowe</a> i <a class='inline-link' href='/uslugi/sklepy-internetowe'>sklepy internetowe</a> od podstaw, z pełną weryfikacją przed publikacją. Jeśli masz już stronę i potrzebujesz pomocy z jej optymalizacją lub poprawkami, również możemy pomóc. <a class='inline-link' href='/kontakt'>Skontaktuj się z nami</a>.</p>",
           "breakAfter": true
         }
       ],
@@ -198,7 +198,7 @@
         "title": "Potrzebujesz profesjonalnej strony internetowej?",
         "description": "Tworzymy strony, które działają sprawnie od pierwszego dnia. Pełna weryfikacja przed publikacją w cenie usługi.",
         "btnOne": "Strony internetowe",
-        "btnOneLink": "/uslugi/strony-internetowe",
+        "btnOneLink": "/uslugi/tworzenie-stron-wordpress",
         "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/co-sprawdzic-przed-uruchomieniem-strony/co-sprawdzic-przed-uruchomieniem-strony.webp",
@@ -301,7 +301,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Podsumowanie</h2><p>Domena i hosting to fundament każdej strony internetowej. Domena to adres, pod którym klienci znajdą firmę w internecie. Hosting to miejsce, gdzie strona jest przechowywana i z którego jest serwowana użytkownikom.</p><br/><p><strong>Co warto zapamiętać:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Domena powinna być krótka i prosta</strong> - łatwa do zapamiętania i wpisania</li><li><strong>Dla polskich firm .pl jest naturalnym wyborem</strong> - kojarzy się z lokalnymi usługami</li><li><strong>Hosting wpływa na szybkość strony</strong> - wolna strona odstrasza klientów</li><li><strong>Sprawdź uptime i wsparcie</strong> - dostępność 99,9% i pomoc 24/7 to standard</li><li><strong>Nie zapomnij o SSL</strong> - szyfrowanie jest dziś wymagane</li><li><strong>Odnawiaj domenę na czas</strong> - inaczej możesz ją stracić</li></ul><br/><p>Jeśli planujesz <a class='inline-link' href='/uslugi/strony-internetowe'>stworzenie strony internetowej</a> lub <a class='inline-link' href='/uslugi/sklepy-internetowe'>sklepu internetowego</a>, możemy pomóc Ci również z wyborem i konfiguracją domeny oraz hostingu. <a class='inline-link' href='/kontakt'>Skontaktuj się z nami</a>, żeby omówić szczegóły.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Podsumowanie</h2><p>Domena i hosting to fundament każdej strony internetowej. Domena to adres, pod którym klienci znajdą firmę w internecie. Hosting to miejsce, gdzie strona jest przechowywana i z którego jest serwowana użytkownikom.</p><br/><p><strong>Co warto zapamiętać:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Domena powinna być krótka i prosta</strong> - łatwa do zapamiętania i wpisania</li><li><strong>Dla polskich firm .pl jest naturalnym wyborem</strong> - kojarzy się z lokalnymi usługami</li><li><strong>Hosting wpływa na szybkość strony</strong> - wolna strona odstrasza klientów</li><li><strong>Sprawdź uptime i wsparcie</strong> - dostępność 99,9% i pomoc 24/7 to standard</li><li><strong>Nie zapomnij o SSL</strong> - szyfrowanie jest dziś wymagane</li><li><strong>Odnawiaj domenę na czas</strong> - inaczej możesz ją stracić</li></ul><br/><p>Jeśli planujesz <a class='inline-link' href='/uslugi/tworzenie-stron-wordpress'>stworzenie strony internetowej</a> lub <a class='inline-link' href='/uslugi/sklepy-internetowe'>sklepu internetowego</a>, możemy pomóc Ci również z wyborem i konfiguracją domeny oraz hostingu. <a class='inline-link' href='/kontakt'>Skontaktuj się z nami</a>, żeby omówić szczegóły.</p>",
           "breakAfter": true
         }
       ],
@@ -309,7 +309,7 @@
         "title": "Planujesz stronę internetową?",
         "description": "Pomożemy Ci od podstaw - od wyboru domeny i hostingu, przez projekt, po wdrożenie. Wszystko w jednym miejscu.",
         "btnOne": "Strony internetowe",
-        "btnOneLink": "/uslugi/strony-internetowe",
+        "btnOneLink": "/uslugi/tworzenie-stron-wordpress",
         "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/jak-wybrac-domene-i-hosting-dla-strony-firmowej/jak-wybrac-domene-i-hosting-dla-strony-firmowej.webp",

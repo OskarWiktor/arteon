@@ -3,7 +3,7 @@
   "locale": "pl",
   "metadata": {
     "title": "Generator favicon za darmo – stwórz favicon.ico z obrazu",
-    "description": "Stwórz favicon.ico i kompletny zestaw favicon dla swojej strony z jednego obrazu. Wszystkie wymagane rozmiary w jednym kliknięciu. Przetwarzanie lokalne w przeglądarce, bez rejestracji.",
+    "description": "Stwórz favicon.ico i kompletny zestaw favicon dla swojej strony z jednego obrazu. Wszystkie wymagane rozmiary w jednym kliknięciu.",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
     "path": "/narzedzia/darmowy-generator-favicon-ico"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/narzedzia", "label": "Narzędzia" },
-    "third": { "href": "/narzedzia/darmowy-generator-favicon-ico", "label": "Generator favicon" }
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/darmowy-generator-favicon-ico",
+      "label": "Generator favicon"
+    }
   },
   "schemas": {
     "software": {
@@ -41,42 +47,72 @@
       "name": "Jak stworzyć favicon dla strony internetowej",
       "description": "Jak wygenerować favicon.ico i ikony PNG (16x16, 32x32, 180x180, 512x512) z jednego obrazu. Jakie rozmiary są potrzebne i jak wgrać favicon do WordPress, HTML i Next.js.",
       "steps": [
-        { "name": "Dodaj obraz źródłowy", "text": "Przeciągnij plik na wyznaczone pole lub wybierz grafikę z dysku. Najlepiej sprawdza się proste logo lub ikona w formacie PNG, JPG lub SVG." },
-        { "name": "Wybierz rozmiary ikon", "text": "Zaznacz, które rozmiary ikon potrzebujesz: favicon.ico (32x32), ikony PNG (16x16, 32x32, 180x180, 192x192, 512x512)." },
-        { "name": "Skonfiguruj opcje", "text": "Ustaw kolor tła (lub pozostaw przezroczyste), zdecyduj czy chcesz wygenerować plik manifest i czy pliki mają się pobrać automatycznie." },
-        { "name": "Wygeneruj i pobierz pliki", "text": "Po wygenerowaniu pliki można pobrać jako archiwum ZIP lub każdą ikonę pojedynczo." }
+        {
+          "name": "Dodaj obraz źródłowy",
+          "text": "Przeciągnij plik na wyznaczone pole lub wybierz grafikę z dysku. Najlepiej sprawdza się proste logo lub ikona w formacie PNG, JPG lub SVG."
+        },
+        {
+          "name": "Wybierz rozmiary ikon",
+          "text": "Zaznacz, które rozmiary ikon potrzebujesz: favicon.ico (32x32), ikony PNG (16x16, 32x32, 180x180, 192x192, 512x512)."
+        },
+        {
+          "name": "Skonfiguruj opcje",
+          "text": "Ustaw kolor tła (lub pozostaw przezroczyste), zdecyduj czy chcesz wygenerować plik manifest i czy pliki mają się pobrać automatycznie."
+        },
+        {
+          "name": "Wygeneruj i pobierz pliki",
+          "text": "Po wygenerowaniu pliki można pobrać jako archiwum ZIP lub każdą ikonę pojedynczo."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Co to jest favicon i dlaczego warto go mieć?",
       "html": "<p class=\"text-mid mb-4\">Favicon to mała ikona, która pojawia się na karcie przeglądarki obok tytułu strony. Widzisz ją też w zakładkach, historii przeglądania i na ekranie głównym telefonu, gdy ktoś doda stronę jako skrót.</p><p class=\"text-mid mb-4\">Ta niepozorna grafika pełni ważną funkcję - pomaga użytkownikom szybko rozpoznać stronę wśród wielu otwartych kart. Gdy ktoś ma kilkanaście kart w przeglądarce, favicon jest często jedynym widocznym elementem identyfikującym stronę.</p><p class=\"text-mid\">Generator tworzy kompletny zestaw ikon: klasyczny plik favicon.ico dla przeglądarek, ikony PNG w różnych rozmiarach oraz apple-touch-icon dla urządzeń Apple. Jeśli tworzysz aplikację webową (PWA), możesz też wygenerować ikony 192x192 i 512x512 wraz z plikiem manifest.</p>"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak stworzyć favicon w 3 krokach",
       "description": "Generowanie favicon zajmuje kilka sekund:",
       "grid": "three",
       "items": [
-        { "title": "1. Dodaj obraz", "description": "Przeciągnij plik na wyznaczone pole lub wybierz grafikę z dysku. Obsługiwane formaty: PNG, JPG, SVG. Zalecany rozmiar: min. 512x512 pikseli." },
-        { "title": "2. Wybierz rozmiary", "description": "Zaznacz potrzebne rozmiary ikon. Dla zwykłej strony wystarczą: favicon.ico, 32x32 i 180x180. Dla PWA dodaj też 192x192 i 512x512." },
+        {
+          "title": "1. Dodaj obraz",
+          "description": "Przeciągnij plik na wyznaczone pole lub wybierz grafikę z dysku. Obsługiwane formaty: PNG, JPG, SVG. Zalecany rozmiar: min. 512x512 pikseli."
+        },
+        {
+          "title": "2. Wybierz rozmiary",
+          "description": "Zaznacz potrzebne rozmiary ikon. Dla zwykłej strony wystarczą: favicon.ico, 32x32 i 180x180. Dla PWA dodaj też 192x192 i 512x512."
+        },
         {
           "title": "3. Pobierz pliki",
           "description": "Po wygenerowaniu pobierz wszystkie pliki jako ZIP lub każdą ikonę osobno. Poniżej narzędzia znajdziesz instrukcję, jak wgrać favicon na stronę."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Jakie rozmiary ikon generuje narzędzie?",
       "html": "<p class=\"text-mid mb-6\">Każdy rozmiar ma swoje zastosowanie:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32x32)</p><p class=\"text-mid text-sm\">Klasyczny format rozpoznawany przez wszystkie przeglądarki. Wyświetla się na karcie przeglądarki.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16x16 i 32x32 PNG</p><p class=\"text-mid text-sm\">Standardowe rozmiary dla nowoczesnych przeglądarek. Wyświetlają się na kartach i w zakładkach.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180x180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Ikona dla urządzeń Apple (iPhone, iPad). Wyświetla się, gdy ktoś doda stronę do ekranu głównego.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192x192 i 512x512 PNG</p><p class=\"text-mid text-sm\">Ikony dla aplikacji webowych (PWA). Wymagane przez manifest i używane w sklepach z aplikacjami.</p></div></div><p class=\"text-light mt-6\">Jeśli nie tworzysz PWA, wystarczą Ci: favicon.ico, 32x32 PNG i 180x180 PNG. Te trzy pliki pokryją większość przypadków użycia.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Co wyróżnia generator favicon?",
@@ -92,7 +128,11 @@
           "title": "Kompletny zestaw w jednym miejscu",
           "description": "Favicon.ico, ikony PNG, apple-touch-icon, ikony PWA i manifest - wszystko z jednego obrazu, w jednym narzędziu."
         },
-        { "icon": "RiImageLine", "title": "Obsługa PNG, JPG i SVG", "description": "Możesz użyć logo w dowolnym formacie. Jeśli masz SVG - ikony będą ostre we wszystkich rozmiarach." },
+        {
+          "icon": "RiImageLine",
+          "title": "Obsługa PNG, JPG i SVG",
+          "description": "Możesz użyć logo w dowolnym formacie. Jeśli masz SVG - ikony będą ostre we wszystkich rozmiarach."
+        },
         {
           "icon": "RiSmartphoneLine",
           "title": "Gotowe do użycia na stronie i w PWA",
@@ -100,7 +140,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak korzystać z generatora favicon?",
@@ -129,14 +172,20 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Opcje generowania - co robi każda z nich?",
       "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">Rozmiary PNG</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">16x16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">32x32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">180x180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Przezroczyste tło (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Kolor tła:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
       "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Tło (przezroczyste lub kolor)</h3><p class=\"text-mid\">Domyślnie generator zachowuje przezroczystość. Możesz też wybrać konkretny kolor tła.</p></div><div><h3 class=\"h5 mb-2\">Generuj manifest (site.webmanifest)</h3><p class=\"text-mid\">Plik JSON dla aplikacji webowych (PWA). Jeśli nie tworzysz PWA, ta opcja nie jest wymagana.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak pobrać wygenerowane pliki?",
@@ -155,7 +204,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Gdzie i jak wgrać favicon?",
@@ -177,7 +229,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Jaki obraz źródłowy działa najlepiej?",
@@ -189,13 +244,32 @@
           "title": "Proste kształty i czytelne symbole",
           "description": "Najlepiej sprawdzają się proste logotypy, pojedyncze litery lub symbole. Unikaj złożonych grafik z wieloma detalami."
         },
-        { "icon": "RiAspectRatioLine", "title": "Kwadratowy format", "description": "Favicon jest kwadratowy. Jeśli źródłowy obraz ma proporcje inne niż 1:1, zostanie przycięty lub rozciągnięty." },
-        { "icon": "RiZoomInLine", "title": "Wystarczająco duży rozmiar", "description": "Zalecamy obraz źródłowy o wymiarach co najmniej 512x512 pikseli. Mniejsze obrazy będą skalowane w górę." },
-        { "icon": "RiImageLine", "title": "Format SVG jako idealne źródło", "description": "SVG skaluje się bez utraty jakości, więc ikony we wszystkich rozmiarach będą ostre." },
-        { "icon": "RiContrastLine", "title": "Kontrastowe kolory", "description": "Favicon musi być widoczny na różnych tłach (jasne karty, ciemny tryb). Wybierz kolory, które zachowują czytelność." }
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Kwadratowy format",
+          "description": "Favicon jest kwadratowy. Jeśli źródłowy obraz ma proporcje inne niż 1:1, zostanie przycięty lub rozciągnięty."
+        },
+        {
+          "icon": "RiZoomInLine",
+          "title": "Wystarczająco duży rozmiar",
+          "description": "Zalecamy obraz źródłowy o wymiarach co najmniej 512x512 pikseli. Mniejsze obrazy będą skalowane w górę."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Format SVG jako idealne źródło",
+          "description": "SVG skaluje się bez utraty jakości, więc ikony we wszystkich rozmiarach będą ostre."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Kontrastowe kolory",
+          "description": "Favicon musi być widoczny na różnych tłach (jasne karty, ciemny tryb). Wybierz kolory, które zachowują czytelność."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Najczęściej zadawane pytania dotyczące generatora favicon",
@@ -235,9 +309,18 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ],
   "cta": {
     "title": "Potrzebujesz pomocy przy tworzeniu strony?",
@@ -245,7 +328,7 @@
     "btnOne": "Skontaktuj się z nami",
     "btnOneLink": "/kontakt",
     "btnTwo": "Sprawdź ofertę stron internetowych",
-    "btnTwoLink": "/uslugi/strony-internetowe",
+    "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
     "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
     "overlay": "black"
   }

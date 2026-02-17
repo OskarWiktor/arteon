@@ -44,6 +44,12 @@ const closeLabel: Record<Locale, string> = {
   sv: 'St\u00e4ng',
   sq: 'Mbyll',
   da: 'Luk',
+  no: 'Lukk',
+  fi: 'Sulje',
+  sk: 'Zatvori\u0165',
+  hr: 'Zatvori',
+  lt: 'U\u017edaryti',
+  sl: 'Zapri',
 };
 const servicesLabel: Record<Locale, string> = {
   pl: 'Usługi',
@@ -66,6 +72,12 @@ const servicesLabel: Record<Locale, string> = {
   sv: 'Tj\u00e4nster',
   sq: 'Sh\u00ebrbimet',
   da: 'Tjenester',
+  no: 'Tjenester',
+  fi: 'Palvelut',
+  sk: 'Slu\u017eby',
+  hr: 'Usluge',
+  lt: 'Paslaugos',
+  sl: 'Storitve',
 };
 const contactLabel: Record<Locale, string> = {
   pl: 'Skontaktuj się',
@@ -88,6 +100,12 @@ const contactLabel: Record<Locale, string> = {
   sv: 'Kontakt',
   sq: 'Kontaktoni',
   da: 'Kontakt',
+  no: 'Kontakt',
+  fi: 'Yhteystiedot',
+  sk: 'Kontakt',
+  hr: 'Kontakt',
+  lt: 'Kontaktai',
+  sl: 'Kontakt',
 };
 
 type SectionLink = { href: string; title: string; icon?: JSX.Element };
@@ -148,7 +166,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
     : [];
 
   const MOBILE_TOOL_KEYS: ToolSectionLink['href'][] = isPl
-    ? ['/narzedzia/licznik-dlugosci-meta-title-i-description', '/narzedzia/tester-kontrastu-kolorow-wcag', '/narzedzia/ekstraktor-kolorow-z-obrazu', '/narzedzia/generator-schematow-kolorow']
+    ? ['/narzedzia/licznik-dlugosci-meta-title-i-description', '/narzedzia/kontrast-i-czytelnosc-kolorow', '/narzedzia/ekstraktor-kolorow-z-obrazu', '/narzedzia/generator-palet-kolorow']
     : [];
 
   const TOOLS_SECTIONS_MOBILE: ToolSection[] = isPl

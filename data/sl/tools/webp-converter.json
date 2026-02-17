@@ -1,0 +1,144 @@
+{
+  "toolKey": "jpgToWebp",
+  "locale": "sl",
+  "metadata": {
+    "title": "Brezplačni pretvornik JPG/PNG v WebP – Brez omejitev",
+    "description": "Zmanjšajte velikost slik brez izgube kakovosti. Pretvorite JPG in PNG v format WebP in pospešite svojo spletno stran. Brez registracije, deluje v brskalniku.",
+    "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
+    "path": "/sl/orodja/pretvornik-jpg-png-v-webp"
+  },
+  "hero": {
+    "title": "Pretvorite slike v format WebP – zmanjšajte velikost brez izgube kakovosti",
+    "description": "Naložite slike v formatu JPG ali PNG, orodje pa jih pretvori v format WebP. Manjše datoteke, enaka kakovost, hitrejša spletna stran.",
+    "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/sl/orodja", "label": "Orodja" },
+    "third": { "href": "/sl/orodja/pretvornik-jpg-png-v-webp", "label": "Pretvornik JPG/PNG v WebP" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Brezplačni pretvornik JPG/PNG v WebP",
+      "alternateName": ["Pretvornik slik v WebP", "JPG v WebP pretvornik", "PNG v WebP pretvornik"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Brezplačni pretvornik JPG in PNG v format WebP. Zmanjšajte velikost slik do 90 % brez vidne izgube kakovosti. Vsa obdelava poteka v brskalniku – datoteke se ne pošiljajo na strežnik.",
+      "featureList": [
+        "Pretvorba JPG v format WebP",
+        "Pretvorba PNG v format WebP",
+        "Skupinska pretvorba več slik hkrati",
+        "Regulator kakovosti (0–100)",
+        "Primerjava izvirne in WebP velikosti",
+        "Nalaganje z vlečenjem ali izbiro datoteke",
+        "Predogled pred in po pretvorbi",
+        "Prenos vsake slike ali vseh kot ZIP",
+        "Lokalna obdelava v brskalniku"
+      ]
+    },
+    "howTo": {
+      "name": "Kako pretvoriti slike JPG in PNG v format WebP",
+      "description": "Kako pretvoriti slike JPG in PNG v format WebP. Naložite datoteke, prilagodite kakovost in prenesite pretvorjene slike.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Naložite slike", "text": "Povlecite in spustite datoteke v označeno območje ali jih izberite z naprave. Podprta formata sta JPG in PNG." },
+        { "name": "Prilagodite kakovost", "text": "Uporabite regulator za prilagoditev kakovosti slike (0–100). Višja vrednost pomeni boljšo kakovost, vendar večjo datoteko." },
+        { "name": "Prenesite pretvorjene slike", "text": "Kliknite gumb za prenos pri vsaki sliki ali prenesite vse hkrati kot ZIP datoteko." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Kaj je format WebP in zakaj je pomemben?",
+      "html": "<p class=\"text-mid\">WebP je moderan format slik, ki ga je razvil Google in ponuja boljšo kompresijo kot JPG in PNG. Slike v formatu WebP zavzamejo manj prostora – tipično 25–34 % manj kot JPG in do 80 % manj kot PNG – ob ohranjanju vizualne kakovosti.</p><p class=\"text-mid mt-3\">Vsi glavni brskalniki (Chrome, Firefox, Safari, Edge) podpirajo format WebP. Uporaba tega formata pomeni hitrejše nalaganje strani, manjši prenos podatkov in boljši rezultat Core Web Vitals – kar neposredno vpliva na položaj v Google rezultatih iskanja.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Kako uporabljati pretvornik JPG/PNG v WebP",
+      "description": "Pretvorba traja le nekaj minut:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Naložite slike", "description": "Povlecite in spustite datoteke v označeno območje ali jih izberite z naprave. Naložite lahko več slik hkrati." },
+        { "title": "2. Prilagodite kakovost", "description": "Uporabite regulator za prilagoditev kakovosti slike (0–100). Nižja vrednost ustvari manjšo datoteko, vendar z nižjo kakovostjo." },
+        { "title": "3. Prenesite rezultat", "description": "Kliknite gumb za prenos pri vsaki sliki ali prenesite vse hkrati kot ZIP datoteko." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Kako izbrati pravo kakovost za WebP",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kakovost: 80</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Priporočeno</span></div><p class=\"text-mid text-sm!\">Najboljše razmerje kakovosti in velikosti datoteke. Primerno za večino spletnih in e-commerce slik.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kakovost: 60–70</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Agresivna kompresija</span></div><p class=\"text-mid text-sm!\">Manjše datoteke. Primerno za minijature, ikone in dekorativna ozadja.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kakovost: 90–100</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Najvišja kakovost</span></div><p class=\"text-mid text-sm!\">Zelo visoka kakovost, vendar večje datoteke. Primerno za portfolije in glavne produktne slike.</p></div></div>",
+      "html": "<p class=\"text-mid\">Nastavitev kakovosti določa razmerje med vizualno kakovostjo in velikostjo datoteke. Za večino spletnih slik vrednost 75–85 daje najboljše rezultate – razlika v kakovosti ni vidna s prostim očesom, datoteka pa je lahko 3–5-krat manjša od izvirnega JPG.</p><p class=\"text-mid mt-3\">Za minijature, ikone in dekorativna ozadja lahko znižate kakovost na 60–70 brez izgube ostrine. Za portfolio slike ali glavne produktne fotografije vrednost 90–95 ohrani podrobnosti.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kdo potrebuje WebP pretvornik?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiGlobalLine", "title": "Lastniki spletnih strani", "description": "Manjše slike pospešijo nalaganje strani. To izboljša uporabniško izkušnjo in vpliva na položaj v Googlu." },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Lastniki spletnih trgovin",
+          "description": "Veliko produktnih slik pomeni veliko megabajtov podatkov. Pretvorba v WebP zmanjša čas nalaganja in prenos podatkov."
+        },
+        { "icon": "RiBloggerLine", "title": "Blogerji", "description": "Članki z veliko slikami se nalagajo počasneje. WebP zmanjša velikost slik ob ohranjanju kakovosti." },
+        { "icon": "RiCodeLine", "title": "Spletni razvijalci", "description": "WebP je moderan standard za spletne slike. Vsi glavni brskalniki podpirajo ta format." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Po čem je ta WebP pretvornik poseben?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Lokalna obdelava v brskalniku",
+          "description": "Slike se ne pošiljajo na strežnik – vsa obdelava poteka na vaši napravi. Vaša zasebnost je zaščitena."
+        },
+        { "icon": "RiSpeedLine", "title": "Takojšnja pretvorba", "description": "Rezultati se prikažejo takoj – brez čakanja v vrsti in brez obdelave na strežniku." },
+        { "icon": "RiInfinityLine", "title": "Brez omejitve števila slik", "description": "Pretvorite toliko slik, kolikor potrebujete. Brez dnevne ali sejne omejitve." },
+        { "icon": "RiScalesLine", "title": "Prilagodljiv regulator kakovosti", "description": "Prilagodite kakovost (0–100) za vsako sliko in dobite najboljše razmerje velikosti in kakovosti." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Pogosta vprašanja o WebP pretvorniku",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kaj je format WebP?",
+          "answer": "WebP je moderan format slik, ki ga je razvil Google. Ponuja boljšo kompresijo kot JPG (slike 25–34 % manjše) in hkrati podpira prosojnost (kot PNG). Vsi glavni brskalniki podpirajo format WebP.",
+          "answerSchemaText": "WebP je Googlov format slik z boljšo kompresijo kot JPG. Vsi glavni brskalniki ga podpirajo."
+        },
+        {
+          "question": "Ali pretvorba v WebP poslabša kakovost slike?",
+          "answer": "Z nastavitvijo kakovosti 75–85 razlika ni vidna s prostim očesom. WebP kompresija je učinkovitejša kot JPG – z enako vizualno kakovostjo je datoteka lahko 3–5-krat manjša.",
+          "answerSchemaText": "S kakovostjo 75–85 razlika ni vidna. WebP ponuja učinkovitejšo kompresijo kot JPG."
+        },
+        {
+          "question": "Ali se slike pošiljajo na strežnik?",
+          "answer": "Ne. Vsa obdelava poteka v vašem brskalniku – slike se ne pošiljajo nikamor. Po zaprtju strani se podatki izbrišejo iz pomnilnika.",
+          "answerSchemaText": "Ne. Slike se obdelujejo v brskalniku. Ne pošiljajo se na strežnik."
+        },
+        {
+          "question": "Ali obstaja omejitev števila slik?",
+          "answer": "Ne. Pretvorite lahko toliko slik, kolikor potrebujete. Brez dnevne ali sejne omejitve.",
+          "answerSchemaText": "Ne. Za število pretvorjenih slik ni omejitve."
+        },
+        {
+          "question": "Ali vsi brskalniki podpirajo format WebP?",
+          "answer": "Da. Vsi glavni brskalniki – Chrome, Firefox, Safari (od različice 14) in Edge – podpirajo format WebP. Za starejše brskalnike se priporoča rezervna različica v formatu JPG.",
+          "answerSchemaText": "Da. Chrome, Firefox, Safari 14+ in Edge vsi podpirajo format WebP."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Oglejte si druga orodja" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

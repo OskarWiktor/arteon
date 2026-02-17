@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Kitengenezaji Favicon Bure \u2013 ICO na PNG kutoka Picha Moja",
     "description": "Tengeneza favicon.ico na ikoni za PNG kutoka picha moja. Inakidhi mahitaji ya vivinjari na Lighthouse. Bila usajili, inafanya kazi kwenye kivinjari.",
-    "ogImage": "/assets/tools/narzedzia-generator-favicon.webp",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
     "path": "/sw/zana/kitengenezaji-favicon-bure"
   },
   "hero": {
     "title": "Tengeneza favicon.ico na ikoni za PNG kutoka picha moja",
     "description": "Pakia picha na zana itatengeneza favicon.ico na seti kamili ya ikoni za PNG zinazohitajika na vivinjari, vifaa vya rununu, na Lighthouse.",
-    "backgroundImage": "/assets/tools/narzedzia-generator-favicon.webp"
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
   "breadcrumbs": {
     "second": { "href": "/sw/zana", "label": "Zana" },

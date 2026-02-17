@@ -27,11 +27,11 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
   title: 'Zana za bure | Picha, SEO, rangi, favicon',
-  description: 'Zana 10 za bure: kibadilishaji WebP, kitengenezaji favicon, kihesabuji maandishi, kitoa rangi, na msimbo QR. Kwa tovuti, mitandao ya kijamii, na uchapishaji. Bila usajili.',
+  description: 'Zana 10 za bure: kibadilishaji WebP, kitengenezaji favicon, kihesabuji maandishi, kitoa rangi, na msimbo QR. Kwa tovuti na mitandao ya kijamii.',
   alternates: getToolsIndexAlternates('sw'),
   openGraph: {
     title: 'Zana za bure | Picha, SEO, rangi, favicon',
-    description: 'Zana 10 za bure: kibadilishaji WebP, kitengenezaji favicon, kihesabuji maandishi, kitoa rangi, na msimbo QR. Kwa tovuti, mitandao ya kijamii, na uchapishaji. Bila usajili.',
+    description: 'Zana 10 za bure: kibadilishaji WebP, kitengenezaji favicon, kihesabuji maandishi, kitoa rangi, na msimbo QR. Kwa tovuti na mitandao ya kijamii.',
     url: toAbsoluteUrl('/sw/zana'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -42,7 +42,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Zana za bure',
-  description: 'Zana 10 za bure: kibadilishaji WebP, kitengenezaji favicon, kihesabuji maandishi, kitoa rangi, na msimbo QR. Kwa tovuti, mitandao ya kijamii, na uchapishaji. Bila usajili.',
+  description: 'Zana 10 za bure: kibadilishaji WebP, kitengenezaji favicon, kihesabuji maandishi, kitoa rangi, na msimbo QR. Kwa tovuti na mitandao ya kijamii.',
   url: toAbsoluteUrl('/sw/zana'),
   inLanguage: 'sw',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },

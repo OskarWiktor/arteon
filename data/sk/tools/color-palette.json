@@ -1,0 +1,249 @@
+{
+  "toolKey": "colorPalette",
+  "locale": "sk",
+  "metadata": {
+    "title": "Bezplatný generátor farebných paliet – 9 paliet z jednej farby",
+    "description": "Vytvorte 9 farebných paliet zo základnej farby: monochromatická, komplementárna, triadická, pastelová a ďalšie. Kopírujte HEX kódy jedným kliknutím.",
+    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "path": "/sk/nastroje/generator-farebnych-paliet"
+  },
+  "hero": {
+    "title": "Generátor farebných paliet",
+    "description": "Zadajte základnú farbu a nástroj vytvorí 9 harmonických farebných paliet: monochromatickú, komplementárnu, triadickú, pastelovú a ďalšie. Každú farbu je možné skopírovať s jej HEX kódom.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sk/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/sk/nastroje/generator-farebnych-paliet",
+      "label": "Generátor farebných paliet"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Generátor farebných paliet",
+      "alternateName": ["Generátor farebných schém", "Generátor farieb", "Nástroj na ladenie farieb", "Generátor farebnej harmónie"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorPaletteGenerator",
+      "description": "Bezplatný generátor farebných paliet. Zadajte HEX farbu a nástroj vytvorí 9 schém: monochromatickú, analogickú, komplementárnu, triadickú, rozdelenú komplementárnu, pastelovú, tmavú, tónovú a minimalistickú.",
+      "featureList": [
+        "Monochromatická schéma – odtiene jednej farby",
+        "Analogická schéma – susedné farby na farebnom kruhu",
+        "Komplementárna schéma – protiľahlé farby",
+        "Triadická schéma – 3 farby v rovnakých rozostupoch",
+        "Rozdelená komplementárna schéma",
+        "Pastelová paleta – jemné, tlmené odtiene",
+        "Tmavá paleta – hlboké farby pre tmavé témy",
+        "Tónová paleta – úrovne jasu jednej farby",
+        "Minimalistická paleta – výrazný akcent a neutrálne farby",
+        "Základná farba vo formáte HEX",
+        "Výber farieb na vizuálny výber",
+        "Náhodná počiatočná farba",
+        "Kopírovanie HEX kódu do schránky",
+        "HSL hodnota zobrazená pri každej farbe",
+        "Lokálne spracovanie v prehliadači"
+      ]
+    },
+    "howTo": {
+      "name": "Ako vytvoriť farebnú paletu zo základnej farby",
+      "description": "Ako vytvoriť 9 farebných paliet zo základnej farby: monochromatickú, komplementárnu, triadickú, pastelovú a ďalšie.",
+      "steps": [
+        {
+          "name": "Vyberte základnú farbu",
+          "text": "Zadajte HEX kód do textového poľa alebo použite výber farieb na vizuálny výber."
+        },
+        {
+          "name": "Potvrďte farbu",
+          "text": "Potvrďte vybranú farbu tlačidlom Update Color – nástroj vytvorí palety z vašej základnej farby."
+        },
+        {
+          "name": "Prezrite si palety",
+          "text": "Nástroj automaticky vytvorí 9 rôznych paliet: monochromatickú, analogickú, komplementárnu, triadickú, rozdelenú komplementárnu, pastelovú, tmavú, tónovú a minimalistickú."
+        },
+        {
+          "name": "Skopírujte farby",
+          "text": "Pri každej farbe je tlačidlo Kopírovať – HEX kód sa skopíruje do systémovej schránky."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Prečo vytvárať farebnú paletu?",
+      "html": "<p class=\"text-mid\">Jednotná farebná paleta je základom každého vizuálneho projektu – od webových stránok cez logá po tlačoviny. Manuálny výber kompatibilných farieb vyžaduje znalosť teórie farieb. Generátor tento proces automatizuje: zadáte základnú farbu (napr. farbu loga) a nástroj vytvorí 9 farebných sád na základe overených schém farebnej harmónie.</p><p class=\"text-mid mt-3\">Každá vytvorená farba má svoj HEX kód (napr. #4F6BF5) a HSL hodnotu (hue, saturation, lightness). HEX kód je možné vložiť priamo do CSS, Figmy, Canvy alebo akejkoľvek grafickej aplikácie.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ako používať generátor farebných paliet",
+      "description": "Celý proces trvá len niekoľko sekúnd:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Zadajte základnú farbu",
+          "description": "Zadajte HEX kód (napr. #4F6BF5) do textového poľa alebo vyberte farbu z výberu farieb. Môžete tiež použiť tlačidlo Náhodná farba."
+        },
+        {
+          "title": "2. Potvrďte výber",
+          "description": "Kliknutím na tlačidlo Update Color nástroj automaticky vytvorí 9 paliet s rôznymi schémami farebnej harmónie."
+        },
+        {
+          "title": "3. Skopírujte potrebné farby",
+          "description": "Pri každej farbe je tlačidlo Kopírovať – HEX kód sa skopíruje do schránky a je možné ho vložiť priamo do projektu."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Aké farebné schémy nástroj vytvára?",
+      "description": "Generátor vytvára 9 typov paliet – každá je založená na inom princípe teórie farieb:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiStackLine",
+          "title": "Monochromatická paleta",
+          "description": "Niekoľko odtieňov jednej farby – od svetlej po tmavú. Všetky farby majú rovnaký odtieň na farebnom kruhu a líšia sa len jasom. Funguje dobre v elegantnom a minimalistickom dizajne."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Analogická paleta",
+          "description": "Susedné farby na farebnom kruhu (posunuté o cca 30° na obe strany od základnej farby). Vytvára harmonické a jemné farebné prechody."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Komplementárna paleta",
+          "description": "Základná farba a protiľahlá farba na farebnom kruhu (posun o 180°). Vytvára silný vizuálny kontrast. Užitočná, keď má prvok upútať pozornosť."
+        },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Triadická paleta",
+          "description": "Tri farby v rozostupoch po 120° na farebnom kruhu – tvoria rovnostranný trojuholník. Dynamická a všestranná kombinácia."
+        },
+        {
+          "icon": "RiCursorLine",
+          "title": "Rozdelená komplementárna paleta",
+          "description": "Miernejšia verzia komplementárnej palety. Namiesto jednej protiľahlej farby sa používajú dve farby posunuté o cca 30° od komplementu."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Pastelová paleta",
+          "description": "Rovnaký odtieň so zníženou sýtosťou a zvýšeným jasom – jemné, tlmené farby. Obľúbená v kozmetike, detskej móde a gastronómii."
+        },
+        {
+          "icon": "RiMoonLine",
+          "title": "Tmavá paleta",
+          "description": "Základná farba s vysokou sýtosťou a zníženým jasom – hlboké, výrazné farby. Užitočná pre tmavé témy webových stránok a prémiové brandingové materiály."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Tónová paleta",
+          "description": "Niekoľko úrovní jasu jednej farby – od veľmi svetlej po tmavú. Užitočná pri tvorbe používateľských rozhraní, kde rovnaká farba potrebuje rôzne varianty."
+        },
+        {
+          "icon": "RiContractLeftRightLine",
+          "title": "Minimalistická paleta",
+          "description": "Jeden výrazný farebný akcent a niekoľko veľmi svetlých neutrálnych farieb. Celá paleta zostáva pokojná. Funguje dobre v moderných rozhraniach s veľkým množstvom bieleho priestoru."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Na čom je generátor farebných paliet založený?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° na farebnom kruhu</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">Všetky palety sa vytvárajú matematickou transformáciou základnej farby vo farebnom priestore HSL. HSL popisuje farbu tromi hodnotami: hue (H) je pozícia na farebnom kruhu (0°–360°), saturation (S) určuje intenzitu farby a lightness (L) – ako svetlá alebo tmavá farba je.</p><p class=\"text-mid mt-3\">Komplementárne, triadické a rozdelené komplementárne palety sú založené na geometrii farebného kruhu – farby sú umiestnené v rovnomerných uhlových rozostupoch, čo vytvára vizuálnu rovnováhu. Monochromatické, pastelové a tmavé palety menia len jas a sýtosť pri zachovaní rovnakého odtieňa.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kde je možné vytvorené farebné palety použiť",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Vizuálna identita značky",
+          "description": "Vyberte harmonické farby k existujúcemu logu alebo vybudujte farebnú paletu značky od základov – pre vizitky, hlavičkové papiere a marketingové materiály."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Webové stránky",
+          "description": "Nastavte hlavnú farbu, akcent a odtiene pozadia. Skopírované HEX kódy vložíte priamo do CSS alebo nastavení témy."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Používateľské rozhrania aplikácií",
+          "description": "Tónová paleta ponúka varianty jasu jednej farby – svetlejšie pre pozadia, tmavšie pre text, stredné odtiene pre okraje a interaktívne stavy."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Grafika pre sociálne médiá",
+          "description": "Jednotné farby pre príspevky, stories a profilové obálky. Analogické alebo pastelové palety fungujú dobre, keď chcete jednotný, rozpoznateľný štýl."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky o generátore farebných paliet",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "V akom formáte treba zadať základnú farbu?",
+          "answer": "Generátor prijíma farby vo formáte HEX – skrátené (napr. #F50) aj úplné (napr. #FF5500). Vedľa textového poľa je výber farieb, ktorým je možné farbu vybrať vizuálne. Vytvorené palety zobrazujú HEX kód a HSL hodnotu pre každú farbu.",
+          "answerSchemaText": "Generátor prijíma HEX farby (#RGB alebo #RRGGBB). Každá vytvorená farba má HEX kód a HSL hodnotu."
+        },
+        {
+          "question": "Koľko farieb obsahuje každá paleta?",
+          "answer": "Každá paleta obsahuje 4–6 farieb. Počet závisí od typu schémy – monochromatické a tónové palety vytvárajú viac odtieňov, zatiaľ čo komplementárne a triadické palety sa zameriavajú na menej kontrastných farieb.",
+          "answerSchemaText": "Každá paleta obsahuje 4–6 farieb v závislosti od typu schémy."
+        },
+        {
+          "question": "Môžem vytvorené palety používať na komerčné účely?",
+          "answer": "Áno. Vytvorené farebné palety môžete používať v akomkoľvek projekte – komerčnom aj nekomerčnom, bez licenčných obmedzení.",
+          "answerSchemaText": "Áno, vytvorené palety je možné používať bez obmedzení v komerčných aj nekomerčných projektoch."
+        },
+        {
+          "question": "Vyžaduje generátor farebných paliet prihlásenie alebo platbu?",
+          "answer": "Generátor je úplne bezplatný a nevyžaduje prihlásenie ani registráciu. Farby sa vytvárajú lokálne v prehliadači – žiadne údaje sa neodosielajú na externé servery.",
+          "answerSchemaText": "Generátor je bezplatný a nevyžaduje prihlásenie. Farby sa vytvárajú lokálne v prehliadači."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Pozrite si ďalšie nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

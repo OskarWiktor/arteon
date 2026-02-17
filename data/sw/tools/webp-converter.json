@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Kibadilishaji JPG/PNG hadi WebP Bure \u2013 Bila Kikomo",
     "description": "Punguza ukubwa wa faili za picha bila kupoteza ubora. Badilisha JPG na PNG kuwa WebP na uharakishe tovuti yako. Bila usajili, inafanya kazi kwenye kivinjari.",
-    "ogImage": "/assets/tools/narzedzia-konwerter-jpg-png-na-webp.webp",
+    "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
     "path": "/sw/zana/kibadilishaji-jpg-png-hadi-webp"
   },
   "hero": {
     "title": "Badilisha picha kuwa WebP \u2013 punguza ukubwa bila kupoteza ubora",
     "description": "Pakia picha za JPG au PNG, na zana itazibadilisha kuwa muundo wa WebP. Faili ndogo, ubora sawa, kupakia kwa kasi zaidi kwa tovuti yako.",
-    "backgroundImage": "/assets/tools/narzedzia-konwerter-jpg-png-na-webp.webp"
+    "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
   "breadcrumbs": {
     "second": { "href": "/sw/zana", "label": "Zana" },

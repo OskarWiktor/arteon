@@ -3,7 +3,7 @@
   "locale": "it",
   "metadata": {
     "title": "Editor di immagini gratuito – ritaglia e ridimensiona",
-    "description": "Ritaglia e ridimensiona le immagini in pochi secondi. Modelli per Instagram, Facebook, LinkedIn. Converti JPG in WebP. Avatar rotondi. Senza registrazione, senza limiti.",
+    "description": "Ritaglia e ridimensiona le immagini in pochi secondi. Modelli per Instagram, Facebook, LinkedIn. Converti JPG in WebP. Avatar rotondi. Senza registrazione,",
     "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
     "path": "/it/strumenti/editor-di-immagini-online"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/it/strumenti", "label": "Strumenti" },
-    "third": { "href": "/it/strumenti/editor-di-immagini-online", "label": "Editor di immagini" }
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/editor-di-immagini-online",
+      "label": "Editor di immagini"
+    }
   },
   "schemas": {
     "software": {
@@ -37,87 +43,169 @@
       "name": "Come ritagliare immagini online",
       "description": "Ritaglia immagini per i social media e i siti web. Usa modelli pronti all'uso o inserisci le tue dimensioni personalizzate.",
       "steps": [
-        { "name": "Caricare un'immagine", "text": "Trascina e rilascia un'immagine o seleziona un file. Formati supportati: JPG, PNG, WebP." },
-        { "name": "Scegliere il ritaglio", "text": "Seleziona un modello (es.: Post Instagram, copertina Facebook) o inserisci le tue dimensioni." },
-        { "name": "Regolare zoom e posizione", "text": "Regola lo zoom e la posizione per definire l'inquadratura desiderata." },
-        { "name": "Scaricare", "text": "Scegli il formato di output (PNG, JPG, WebP) e scarica l'immagine ritagliata." }
+        {
+          "name": "Caricare un'immagine",
+          "text": "Trascina e rilascia un'immagine o seleziona un file. Formati supportati: JPG, PNG, WebP."
+        },
+        {
+          "name": "Scegliere il ritaglio",
+          "text": "Seleziona un modello (es.: Post Instagram, copertina Facebook) o inserisci le tue dimensioni."
+        },
+        {
+          "name": "Regolare zoom e posizione",
+          "text": "Regola lo zoom e la posizione per definire l'inquadratura desiderata."
+        },
+        {
+          "name": "Scaricare",
+          "text": "Scegli il formato di output (PNG, JPG, WebP) e scarica l'immagine ritagliata."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Ritaglia le tue immagini per ogni piattaforma",
       "html": "<p class=\"text-mid\">Ogni piattaforma ha le proprie esigenze in termini di immagini: Instagram predilige le immagini quadrate o verticali, Facebook ha dimensioni di copertina specifiche, LinkedIn richiede dimensioni di banner precise. L'editor offre modelli pronti all'uso per tutti i formati comuni e permette anche di inserire dimensioni personalizzate.</p><p class=\"text-mid mt-3\">Lo strumento funziona interamente nel tuo browser: nessuna immagine viene inviata a un server. Puoi regolare lo zoom e la posizione del ritaglio e scaricare il risultato in tre formati: PNG (senza perdita, con trasparenza), JPG (file più leggero, senza trasparenza) e WebP (compressione ottimale).</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Come usare l'editor di immagini",
       "description": "Il ritaglio richiede solo pochi secondi:",
       "grid": "four",
       "items": [
-        { "icon": "RiImageLine", "title": "1. Carica un'immagine", "description": "Trascina e rilascia un'immagine o seleziona un file. Formati supportati: JPG, PNG, WebP." },
-        { "icon": "RiCropLine", "title": "2. Scegli il ritaglio", "description": "Seleziona un modello predefinito o inserisci le tue dimensioni in pixel." },
-        { "icon": "RiZoomInLine", "title": "3. Regola", "description": "Regola lo zoom e la posizione per definire l'inquadratura desiderata." },
-        { "icon": "RiDownloadLine", "title": "4. Scarica", "description": "Scegli il formato di output (PNG, JPG, WebP) e scarica l'immagine ritagliata." }
+        {
+          "icon": "RiImageLine",
+          "title": "1. Carica un'immagine",
+          "description": "Trascina e rilascia un'immagine o seleziona un file. Formati supportati: JPG, PNG, WebP."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "2. Scegli il ritaglio",
+          "description": "Seleziona un modello predefinito o inserisci le tue dimensioni in pixel."
+        },
+        {
+          "icon": "RiZoomInLine",
+          "title": "3. Regola",
+          "description": "Regola lo zoom e la posizione per definire l'inquadratura desiderata."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Scarica",
+          "description": "Scegli il formato di output (PNG, JPG, WebP) e scarica l'immagine ritagliata."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Come aggiungere un'immagine?",
       "html": "<p class=\"text-mid\">Lo strumento accetta immagini nei formati JPG, PNG e WebP. Puoi aggiungere un'immagine in due modi:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Trascinamento</strong> - prendi un file da una cartella sul tuo computer e rilascialo nella zona prevista (zona con il bordo tratteggiato).</li><li><strong>Selezione dal dispositivo</strong> - clicca nella zona di aggiunta file per aprire la finestra di selezione.</li></ul><p class=\"text-mid mt-3\">Dopo l'aggiunta, lo strumento legge automaticamente le dimensioni originali dell'immagine e mostra un'anteprima. Puoi ora procedere con le impostazioni di ritaglio.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Definire le dimensioni target",
       "html": "<p class=\"text-mid\">Nella scheda <strong>Dimensioni in px</strong>, inserisci larghezza è altezza manualmente. L'opzione <strong>Mantieni proporzioni</strong> regola automaticamente la seconda dimensione.</p><p class=\"text-mid mt-3\">Nella scheda <strong>Modelli</strong>, seleziona un formato predefinito (ad es. post Instagram, copertina Facebook, immagine OG). Lo strumento imposta automaticamente le dimensioni in pixel.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Dimensioni immagine consigliate per piattaforma",
       "demoHtml": "<div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Piattaforma</th><th class=\"py-2 pr-4 font-semibold\">Formato</th><th class=\"py-2 font-semibold\">Dimensione (px)</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Post (quadrato)</td><td class=\"py-2\">1080 x 1080</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2\">1080 x 1920</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Post</td><td class=\"py-2\">1200 x 630</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Copertina</td><td class=\"py-2\">820 x 360</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Post</td><td class=\"py-2\">1200 x 1200</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Banner del profilo</td><td class=\"py-2\">1584 x 396</td></tr><tr><td class=\"py-2 pr-4\">Sito web</td><td class=\"py-2 pr-4\">Immagine OG</td><td class=\"py-2\">1200 x 630</td></tr></tbody></table></div>",
       "html": "<p class=\"text-mid\">Ogni piattaforma mostra le immagini in proporzioni e dimensioni specifiche. Se un'immagine non soddisfa i requisiti, viene automaticamente ritagliata o deformata, spesso con risultati indesiderati.</p><p class=\"text-mid mt-3\">L'editor offre modelli pronti per tutte le piattaforme comuni. Seleziona semplicemente il modello desiderato e lo strumento imposta automaticamente le dimensioni.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Modelli per categoria",
       "description": "L'editor offre modelli per diversi usi:",
       "grid": "three",
       "items": [
-        { "icon": "RiInstagramLine", "title": "Instagram", "description": "Post (quadrato), ritratto (4:5), story/reels (9:16). Tutti alla risoluzione consigliata." },
-        { "icon": "RiFacebookLine", "title": "Facebook", "description": "Post (1200x630), copertina (820x360), immagine evento e altro." },
-        { "icon": "RiLinkedinLine", "title": "LinkedIn", "description": "Post (1200x1200), banner del profilo (1584x396), copertina pagina aziendale." },
-        { "icon": "RiGlobalLine", "title": "Sito web", "description": "Immagine OG (1200x630), banner hero, immagine articolo e dimensioni personalizzate." },
-        { "icon": "RiArticleLine", "title": "Blog e articoli", "description": "Immagini di anteprima, immagini articolo e miniature nelle dimensioni comuni." },
-        { "icon": "RiUserLine", "title": "Avatar", "description": "Foto profilo quadrate e rotonde in diverse dimensioni." }
+        {
+          "icon": "RiInstagramLine",
+          "title": "Instagram",
+          "description": "Post (quadrato), ritratto (4:5), story/reels (9:16). Tutti alla risoluzione consigliata."
+        },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook",
+          "description": "Post (1200x630), copertina (820x360), immagine evento e altro."
+        },
+        {
+          "icon": "RiLinkedinLine",
+          "title": "LinkedIn",
+          "description": "Post (1200x1200), banner del profilo (1584x396), copertina pagina aziendale."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Sito web",
+          "description": "Immagine OG (1200x630), banner hero, immagine articolo e dimensioni personalizzate."
+        },
+        {
+          "icon": "RiArticleLine",
+          "title": "Blog e articoli",
+          "description": "Immagini di anteprima, immagini articolo e miniature nelle dimensioni comuni."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Avatar",
+          "description": "Foto profilo quadrate e rotonde in diverse dimensioni."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Come ritagliare un'immagine",
       "html": "<p class=\"text-mid\">Dopo aver definito le dimensioni target, nell'anteprima appare una zona di ritaglio interattiva. La parte luminosa dell'immagine e la sezione che verra salvata; il resto e oscurato.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Spostare il ritaglio</p><p class=\"text-mid mt-1\">Afferra la zona luminosa e trascinala in qualsiasi punto dell'immagine. In questo modo scegli quale sezione della foto verra esportata.</p></div><div><p class=\"text-dark font-semibold\">Ridimensionare tramite le maniglie</p><p class=\"text-mid mt-1\">Agli angoli della zona di ritaglio si trovano piccoli quadrati (maniglie). Trascinandoli si modifica la dimensione del ritaglio: puoi ingrandirlo o ridurlo mantenendo le proporzioni scelte.</p></div><div><p class=\"text-dark font-semibold\">Zoom</p><p class=\"text-mid mt-1\">Nella scheda <strong>Zoom</strong>, un cursore permette di regolare lo zoom (100-300%). Un valore più alto significa che il ritaglio copre una sezione più piccola dell'immagine originale, utile per ritagliare un dettaglio preciso.</p></div><div><p class=\"text-dark font-semibold\">Controllo di posizione preciso</p><p class=\"text-mid mt-1\">Nella scheda <strong>Posizione</strong>, puoi definire la posizione esatta del ritaglio in percentuali (0-100% per gli assi X e Y). I pulsanti di centratura permettono di posizionare rapidamente il ritaglio al centro dell'immagine.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Forme di ritaglio",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\">Rettangolo</span><span class=\"inline-flex items-center rounded-full bg-blue-100 px-3 py-1.5 text-sm font-medium text-blue-800\">Quadrato</span><span class=\"inline-flex items-center rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\">Cerchio</span></div></div>",
       "html": "<p class=\"text-mid\">Nella scheda <strong>Forme di ritaglio</strong>, scegli la forma dell'immagine esportata: rettangolo (con le proporzioni selezionate), quadrato (forza 1:1) o cerchio (con sfondo trasparente).</p><p class=\"text-mid mt-3\">La forma cerchio crea un avatar rotondo con sfondo trasparente al di fuori del cerchio. Lo strumento passa automaticamente al formato PNG o WebP, poiche il JPG non supporta la trasparenza.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Griglia 3x3: a cosa serve?",
       "html": "<p class=\"text-mid\">Nella zona di ritaglio è visibile una griglia che divide l'immagine in 9 parti uguali. È una visualizzazione della <strong>regola dei terzi</strong>, uno dei principi fondamentali della composizione fotografica.</p><p class=\"text-mid mt-3\">La regola stabilisce che gli elementi più importanti di una foto (viso, prodotto, punto di interesse) devono essere posizionati alle intersezioni delle linee della griglia o lungo di esse. Questa composizione e più dinamica e gradevole alla vista rispetto al posizionamento del soggetto esattamente al centro.</p><p class=\"text-mid mt-3\">Nella scheda <strong>Colore griglia</strong>, puoi cambiare il colore delle linee (verde, bianco, nero, rosso, giallo) affinche la griglia sia chiaramente visibile su immagini diverse.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Esportazione: quale formato scegliere?",
@@ -139,17 +227,36 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Proporzioni dell'immagine: cosa significano?",
       "description": "Il rapporto d'aspetto è la relazione tra larghezza è altezza di un'immagine. Si scrive come due numeri separati da due punti:",
       "grid": "two",
       "items": [
-        { "icon": "RiLayoutGridLine", "title": "1:1 (quadrato)", "description": "La larghezza è uguale all'altezza. Post quadrato Instagram, foto profilo, icone." },
-        { "icon": "RiAspectRatioLine", "title": "4:5 (verticale)", "description": "Formato leggermente verticale. Post verticale Instagram: occupa più spazio nel feed rispetto a un quadrato." },
-        { "icon": "RiImageLine", "title": "3:2 (classico)", "description": "Proporzioni tradizionali della fotografia analogica. Molte fotocamere digitali utilizzano anche questo formato." },
-        { "icon": "RiCropLine", "title": "16:9 (panoramico)", "description": "Formato standard del video HD, delle presentazioni e dei monitor. YouTube, video Facebook, banner di siti web." },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "1:1 (quadrato)",
+          "description": "La larghezza è uguale all'altezza. Post quadrato Instagram, foto profilo, icone."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "4:5 (verticale)",
+          "description": "Formato leggermente verticale. Post verticale Instagram: occupa più spazio nel feed rispetto a un quadrato."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "3:2 (classico)",
+          "description": "Proporzioni tradizionali della fotografia analogica. Molte fotocamere digitali utilizzano anche questo formato."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "16:9 (panoramico)",
+          "description": "Formato standard del video HD, delle presentazioni e dei monitor. YouTube, video Facebook, banner di siti web."
+        },
         {
           "icon": "RiInstagramLine",
           "title": "9:16 (verticale a schermo intero)",
@@ -157,7 +264,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Domande frequenti sull'editor di immagini",
@@ -200,8 +310,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Scopri altri strumenti" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Scopri altri strumenti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

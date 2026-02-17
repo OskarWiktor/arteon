@@ -1,0 +1,231 @@
+{
+  "toolKey": "contrastChecker",
+  "locale": "sl",
+  "metadata": {
+    "title": "Brezplačno preverjanje kontrasta barv – Skladnost z WCAG 2.1",
+    "description": "Preverite, ali sta barvi besedila in ozadja berljivi po WCAG 2.1. Vnesite HEX, RGB ali HSL kodo, poglejte razmerje kontrasta in uporabite samodejni popravek.",
+    "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
+    "path": "/sl/orodja/preverjanje-kontrasta-barv"
+  },
+  "hero": {
+    "title": "Preverjanje kontrasta barv in berljivosti",
+    "description": "Vnesite barvo besedila in ozadja, orodje pa bo pokazalo, ali je kontrast zadosten. Izračuni temeljijo na mednarodnem standardu dostopnosti WCAG 2.1.",
+    "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sl/orodja",
+      "label": "Orodja"
+    },
+    "third": {
+      "href": "/sl/orodja/preverjanje-kontrasta-barv",
+      "label": "Preverjanje kontrasta barv"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Preverjanje kontrasta barv in berljivosti",
+      "alternateName": ["Tester berljivosti barv", "Preverjanje kontrasta besedila in ozadja", "Kalkulator kontrasta barv", "WCAG tester kontrasta"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "AccessibilityTool",
+      "description": "Preverite, ali sta barvi besedila in ozadja berljivi za vse uporabnike. Orodje izračuna razmerje kontrasta po WCAG 2.1 in pokaže, ali izpolnjuje zahteve dostopnosti.",
+      "featureList": [
+        "Izračun razmerja kontrasta",
+        "Preverjanje skladnosti z WCAG 2.1 raven AA",
+        "Preverjanje skladnosti z WCAG 2.1 raven AAA",
+        "Test navadnega besedila",
+        "Test velikega besedila in naslovov",
+        "Test ikon in komponent uporabniškega vmesnika",
+        "Podpora za formate HEX, RGB, RGBA, HSL in HSLA",
+        "Izbirnik barv za vizualni izbor",
+        "Predogled besedila v realnem času",
+        "Funkcija samodejne prilagoditve barv",
+        "Lokalna obdelava v brskalniku"
+      ]
+    },
+    "howTo": {
+      "name": "Kako preveriti kontrast barv in berljivost",
+      "description": "Kako preveriti berljivost barv besedila in ozadja po standardu WCAG.",
+      "steps": [
+        {
+          "name": "Izberite barvo besedila",
+          "text": "Vnesite kodo barve (npr. #333333) v formatu HEX, RGB ali HSL – ali izberite barvo iz izbirnika barv."
+        },
+        {
+          "name": "Izberite barvo ozadja",
+          "text": "Vnesite barvo ozadja, na katerem bo prikazano besedilo."
+        },
+        {
+          "name": "Preberite rezultate",
+          "text": "Orodje prikazuje razmerje kontrasta in ali barve izpolnjujejo zahteve AA/AAA."
+        },
+        {
+          "name": "Prilagodite barve",
+          "text": "Če je kontrast prenizek, funkcija Match samodejno predlaga različico barve besedila, ki izpolnjuje izbrani prag WCAG."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Zakaj je berljivost barv pomembna?",
+      "html": "<p class=\"text-mid\">Berljivost je razlika v svetlosti med barvo besedila in barvo ozadja. Večja kot je razlika, lažje je brati besedilo. Prenizek kontrast naredi vsebino težko berljivo – zlasti za osebe z okvarami vida, starejše ljudi ali v zahtevnih svetlobnih pogojih.</p><p class=\"text-mid mt-3\">Po podatkih <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Svetovne zdravstvene organizacije (WHO)</a> ima približno 2,2 milijarde ljudi na svetu neko obliko okvare vida.</p><p class=\"text-mid mt-3\">Orodje izračuna razmerje kontrasta po formuli, definirani v standardu <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1</a> – mednarodnih smernicah za digitalno dostopnost.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kako uporabljati preverjanje kontrasta barv",
+      "description": "Preverjanje berljivosti traja le nekaj sekund:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiPaletteLine",
+          "title": "1. Vnesite barvo besedila",
+          "description": "Vnesite kodo barve v formatu HEX, RGB ali HSL – ali izberite barvo iz izbirnika barv."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "2. Vnesite barvo ozadja",
+          "description": "Vnesite barvo ozadja, na katerem bo prikazano besedilo."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "3. Preberite rezultate",
+          "description": "Orodje izračuna razmerje kontrasta in pokaže, ali barve izpolnjujejo zahteve WCAG za navadno besedilo, veliko besedilo in ikone."
+        },
+        {
+          "icon": "RiEqualizerLine",
+          "title": "4. Prilagodite barve",
+          "description": "Če je kontrast prenizek, funkcija Match samodejno predlaga različico barve, ki izpolnjuje izbrani prag."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Kako interpretirati rezultate testa berljivosti",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Razmerje kontrasta</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Navadno besedilo</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Po vnosu barv orodje prikazuje rezultate v treh delih:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Navadno besedilo</strong> – zahteva kontrast 4.5:1 (AA) ali 7:1 (AAA). Velja za besedilo manjše od 18pt (24px) ali manjše od 14pt krepko.</li><li><strong>Veliko besedilo / krepko</strong> – zahteva kontrast 3:1 (AA) ali 4.5:1 (AAA). Velja za naslove, gumbe in poudarjeno besedilo.</li><li><strong>Ikone</strong> – zahteva kontrast 3:1 (AA). Velja za ikone in grafične elemente vmesnika, ki prenašajo informacije.</li></ul><p class=\"text-mid mt-3\"><strong>Zelena oznaka</strong> pomeni, da je zahteva izpolnjena. <strong>Rdeča oznaka</strong> pomeni, da je kontrast prenizek in je potreben popravek.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Kaj pomenita ravni AA in AAA v standardu WCAG?",
+      "plans": [
+        {
+          "id": "aa",
+          "name": "Raven AA (minimum)",
+          "highlighted": true
+        },
+        {
+          "id": "aaa",
+          "name": "Raven AAA (izboljšana)"
+        }
+      ],
+      "features": [
+        {
+          "name": "Navadno besedilo – min. 4.5:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Navadno besedilo – min. 7:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Veliko besedilo / krepko – min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Veliko besedilo / krepko – min. 4.5:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Ikone in elementi vmesnika – min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Zakonska zahteva (direktiva EU)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Priporočeno za glavno vsebino",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Pogosta vprašanja o preverjanju kontrasta barv",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kaj je razmerje kontrasta barv?",
+          "answer": "Razmerje kontrasta je merilo razlike v svetlosti med dvema barvama. Lestvica se začne pri 1:1 (ni razlike) in konča pri 21:1 (največja možna razlika – črno besedilo na belem ozadju). Večje kot je razmerje, lažje je ločiti besedilo od ozadja."
+        },
+        {
+          "question": "Kolikšen kontrast je zadosten po WCAG?",
+          "answer": "Za navadno besedilo je minimalni kontrast 4.5:1 (raven AA). Za veliko besedilo – naslove od 18pt ali krepko od 14pt – zadostuje 3:1. Za ikone in komponente uporabniškega vmesnika se prav tako zahteva 3:1."
+        },
+        {
+          "question": "Zakaj moje barve ne izpolnjujejo zahtev, čeprav jih dobro vidim?",
+          "answer": "Osebno zaznavanje barv je odvisno od nastavitev monitorja, osvetlitve prostora in individualnega vida. WCAG temelji na objektivni matematični formuli, ki upošteva različne okvare vida."
+        },
+        {
+          "question": "Ali moram doseči raven kontrasta AAA?",
+          "answer": "Ne vedno. Raven AA (4.5:1 za navadno besedilo) je minimalna zahteva po predpisih EU o dostopnosti. Raven AAA (7:1) zagotavlja boljšo berljivost, vendar jo je težje doseči. Za kritično vsebino – opozorila, varnostna navodila – je smiselno stremeti k ravni AAA."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Oglejte si druga brezplačna orodja"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

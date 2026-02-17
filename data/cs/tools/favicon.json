@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Gener\u00e1tor favicon zdarma \u2013 ICO a PNG z jednoho obr\u00e1zku",
     "description": "Z jednoho obr\u00e1zku vygenerujte favicon.ico a PNG ikony v souladu s po\u017eadavky prohl\u00ed\u017ee\u010d\u016f a Lighthouse. Bez registrace, funguje v prohl\u00ed\u017ee\u010di.",
-    "ogImage": "/assets/tools/narzedzia-generator-favicon.webp",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
     "path": "/cs/nastroje/generator-favicon-zdarma"
   },
   "hero": {
     "title": "Vygenerujte favicon.ico a PNG ikony z jednoho obr\u00e1zku",
     "description": "Nahrajte obr\u00e1zek a n\u00e1stroj vygeneruje favicon.ico a kompletní sadu PNG ikon pot\u0159ebn\u00fdch pro prohl\u00ed\u017ee\u010de, mobilní za\u0159\u00edzen\u00ed a Lighthouse.",
-    "backgroundImage": "/assets/tools/narzedzia-generator-favicon.webp"
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
   "breadcrumbs": {
     "second": { "href": "/cs/nastroje", "label": "N\u00e1stroje" },

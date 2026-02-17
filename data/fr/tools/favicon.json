@@ -3,7 +3,7 @@
   "locale": "fr",
   "metadata": {
     "title": "Générateur de favicon gratuit – créez favicon.ico en un clic",
-    "description": "Créez favicon.ico et toutes les tailles de favicon requises à partir d'une seule image. Compatible navigateurs et Lighthouse. Traitement local, sans inscription.",
+    "description": "Créez favicon.ico et toutes les tailles de favicon requises à partir d'une seule image. Compatible navigateurs et Lighthouse. Traitement local,",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
     "path": "/fr/outils/generateur-de-favicon-gratuit"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/fr/outils", "label": "Outils" },
-    "third": { "href": "/fr/outils/generateur-de-favicon-gratuit", "label": "Générateur de favicon" }
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/generateur-de-favicon-gratuit",
+      "label": "Générateur de favicon"
+    }
   },
   "schemas": {
     "software": {
@@ -37,58 +43,114 @@
       "name": "Comment créer un favicon pour votre site web",
       "description": "Importez une image et générez favicon.ico et des icônes PNG dans toutes les tailles requises – conforme aux exigences des navigateurs et de Lighthouse.",
       "steps": [
-        { "name": "Importer une image", "text": "Importez une image carrée (au moins 512x512 px). Formats pris en charge : PNG, JPG, WebP." },
-        { "name": "Choisir les options", "text": "Sélectionnez les tailles souhaitées et si un site.webmanifest doit être généré." },
-        { "name": "Télécharger le ZIP", "text": "Téléchargez tous les fichiers générés dans une archive ZIP et ajoutez-les à votre site." }
+        {
+          "name": "Importer une image",
+          "text": "Importez une image carrée (au moins 512x512 px). Formats pris en charge : PNG, JPG, WebP."
+        },
+        {
+          "name": "Choisir les options",
+          "text": "Sélectionnez les tailles souhaitées et si un site.webmanifest doit être généré."
+        },
+        {
+          "name": "Télécharger le ZIP",
+          "text": "Téléchargez tous les fichiers générés dans une archive ZIP et ajoutez-les à votre site."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Pourquoi chaque site a besoin d'un favicon ?",
       "html": "<p class=\"text-mid\">Un favicon est bien plus qu'une petite icône – c'est un élément essentiel de l'identité de marque sur le web. Les navigateurs l'affichent dans l'onglet, les utilisateurs le voient dans les favoris et l'historique, et Lighthouse vérifie sa présence comme bonne pratique. Sans favicon, un site paraît incomplet.</p><p class=\"text-mid mt-3\">Les sites modernes ont besoin de favicons en plusieurs tailles : un favicon.ico pour les anciens navigateurs, des icônes PNG pour les navigateurs de bureau, un Apple Touch Icon pour les appareils iOS et des icônes plus grandes pour les installations PWA sur Android. Cet outil génère tous les fichiers requis à partir d'une seule image.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Comment utiliser le générateur de favicon",
       "description": "La génération ne prend que quelques secondes :",
       "grid": "three",
       "items": [
-        { "icon": "RiUploadLine", "title": "1. Importer une image", "description": "Importez une image carrée (au moins 512x512 px). Formats pris en charge : PNG, JPG, WebP." },
-        { "icon": "RiAppsLine", "title": "2. Choisir les options", "description": "Sélectionnez les tailles souhaitées et si un site.webmanifest doit être généré." },
-        { "icon": "RiDownloadLine", "title": "3. Télécharger le ZIP", "description": "Téléchargez tous les fichiers générés dans une archive ZIP et ajoutez-les à votre site." }
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Importer une image",
+          "description": "Importez une image carrée (au moins 512x512 px). Formats pris en charge : PNG, JPG, WebP."
+        },
+        {
+          "icon": "RiAppsLine",
+          "title": "2. Choisir les options",
+          "description": "Sélectionnez les tailles souhaitées et si un site.webmanifest doit être généré."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "3. Télécharger le ZIP",
+          "description": "Téléchargez tous les fichiers générés dans une archive ZIP et ajoutez-les à votre site."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Quels fichiers sont générés ?",
       "demoHtml": "<div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Fichier</th><th class=\"py-2 pr-4 font-semibold\">Taille</th><th class=\"py-2 font-semibold\">Utilisation</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon.ico</td><td class=\"py-2 pr-4\">16x16 + 32x32</td><td class=\"text-primary-light0 py-2\">Onglet du navigateur (standard)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-16x16.png</td><td class=\"py-2 pr-4\">16x16</td><td class=\"text-primary-light0 py-2\">Onglet du navigateur (petit)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-32x32.png</td><td class=\"py-2 pr-4\">32x32</td><td class=\"text-primary-light0 py-2\">Onglet du navigateur (Retina)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">apple-touch-icon.png</td><td class=\"py-2 pr-4\">180x180</td><td class=\"text-primary-light0 py-2\">Écran d'accueil iOS, Safari</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">android-chrome-192x192.png</td><td class=\"py-2 pr-4\">192x192</td><td class=\"text-primary-light0 py-2\">Android, installation PWA</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">android-chrome-512x512.png</td><td class=\"py-2 pr-4\">512x512</td><td class=\"text-primary-light0 py-2\">Splashscreen PWA, résultats Google</td></tr><tr><td class=\"py-2 pr-4 font-medium\">site.webmanifest</td><td class=\"py-2 pr-4\">-</td><td class=\"text-primary-light0 py-2\">Configuration PWA (optionnel)</td></tr></tbody></table></div>",
       "html": "<p class=\"text-mid\">L'outil génère tous les fichiers favicon exigés par les navigateurs modernes et Lighthouse. Chaque fichier a un rôle spécifique :</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>favicon.ico</strong> – le format classique, pris en charge par tous les navigateurs. Contient 16x16 et 32x32 dans un seul fichier.</li><li><strong>Apple Touch Icon</strong> – affiché sur l'écran d'accueil iOS lorsqu'un utilisateur ajoute le site en favori.</li><li><strong>Icônes PWA</strong> – pour les appareils Android et les Progressive Web Apps. Utilisées lors de l'installation sur l'écran d'accueil.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Où le favicon est-il affiché ?",
       "description": "Le favicon apparaît à différents endroits sur le web :",
       "grid": "three",
       "items": [
-        { "icon": "RiGlobalLine", "title": "Onglets du navigateur", "description": "Le favicon apparaît à côté du titre de la page dans l'onglet – l'endroit le plus visible." },
-        { "icon": "RiBookmarkLine", "title": "Favoris et historique", "description": "Les navigateurs utilisent le favicon dans la barre de favoris et dans l'historique." },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Onglets du navigateur",
+          "description": "Le favicon apparaît à côté du titre de la page dans l'onglet – l'endroit le plus visible."
+        },
+        {
+          "icon": "RiBookmarkLine",
+          "title": "Favoris et historique",
+          "description": "Les navigateurs utilisent le favicon dans la barre de favoris et dans l'historique."
+        },
         {
           "icon": "RiSmartphoneLine",
           "title": "Écran d'accueil (mobile)",
           "description": "Lorsqu'un utilisateur ajoute le site à son écran d'accueil, l'Apple Touch Icon ou l'icône PWA est utilisé."
         },
-        { "icon": "RiSearchLine", "title": "Résultats Google", "description": "Google affiche le favicon à côté de l'URL dans les résultats de recherche mobiles." },
-        { "icon": "RiCodeLine", "title": "Audit Lighthouse", "description": "Lighthouse vérifie la présence d'un favicon – c'est une bonne pratique pour les performances web." },
-        { "icon": "RiFileZipLine", "title": "Installation PWA", "description": "Lors de l'installation d'une PWA, les icônes 192x192 et 512x512 sont utilisées comme icône d'application." }
+        {
+          "icon": "RiSearchLine",
+          "title": "Résultats Google",
+          "description": "Google affiche le favicon à côté de l'URL dans les résultats de recherche mobiles."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Audit Lighthouse",
+          "description": "Lighthouse vérifie la présence d'un favicon – c'est une bonne pratique pour les performances web."
+        },
+        {
+          "icon": "RiFileZipLine",
+          "title": "Installation PWA",
+          "description": "Lors de l'installation d'une PWA, les icônes 192x192 et 512x512 sont utilisées comme icône d'application."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Comment télécharger les fichiers générés",
@@ -107,7 +169,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Où et comment ajouter un favicon",
@@ -129,7 +194,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Quelle image source fonctionne le mieux ?",
@@ -141,9 +209,21 @@
           "title": "Formes simples et symboles lisibles",
           "description": "Les logos simples, lettres individuelles ou symboles fonctionnent le mieux. Évitez les graphiques complexes avec beaucoup de détails."
         },
-        { "icon": "RiAspectRatioLine", "title": "Format carré", "description": "Un favicon est carré. Si l'image source a des proportions différentes de 1:1, elle sera recadrée ou étirée." },
-        { "icon": "RiZoomInLine", "title": "Taille suffisamment grande", "description": "Nous recommandons une image source d'au moins 512x512 pixels. Les images plus petites seront agrandies." },
-        { "icon": "RiImageLine", "title": "Le format SVG comme source idéale", "description": "Le SVG se redimensionne sans perte de qualité, donc les icônes à toutes les tailles seront nettes." },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Format carré",
+          "description": "Un favicon est carré. Si l'image source a des proportions différentes de 1:1, elle sera recadrée ou étirée."
+        },
+        {
+          "icon": "RiZoomInLine",
+          "title": "Taille suffisamment grande",
+          "description": "Nous recommandons une image source d'au moins 512x512 pixels. Les images plus petites seront agrandies."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Le format SVG comme source idéale",
+          "description": "Le SVG se redimensionne sans perte de qualité, donc les icônes à toutes les tailles seront nettes."
+        },
         {
           "icon": "RiContrastLine",
           "title": "Couleurs à fort contraste",
@@ -151,20 +231,34 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Options de génération : que fait chacune ?",
       "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Fond (transparent ou couleur)</h3><p class=\"text-mid\">Par défaut, le générateur conserve la transparence. Vous pouvez aussi choisir une couleur de fond spécifique.</p></div><div><h3 class=\"h5 mb-2\">Générer le manifest (site.webmanifest)</h3><p class=\"text-mid\">Fichier JSON pour les applications web (PWA). Si vous ne créez pas de PWA, cette option n'est pas nécessaire.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Ce qui rend ce générateur de favicon spécial",
       "grid": "two",
       "items": [
-        { "icon": "RiCodeLine", "title": "Conforme Lighthouse", "description": "Toutes les tailles exigées par Lighthouse et les navigateurs modernes – générées en une seule étape." },
-        { "icon": "RiDownloadLine", "title": "Tous les formats en une seule étape", "description": "favicon.ico, icônes PNG et site.webmanifest en option – tout à partir d'une seule image." },
+        {
+          "icon": "RiCodeLine",
+          "title": "Conforme Lighthouse",
+          "description": "Toutes les tailles exigées par Lighthouse et les navigateurs modernes – générées en une seule étape."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Tous les formats en une seule étape",
+          "description": "favicon.ico, icônes PNG et site.webmanifest en option – tout à partir d'une seule image."
+        },
         {
           "icon": "RiImageLine",
           "title": "Prise en charge PNG, JPG et SVG",
@@ -177,7 +271,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Questions fréquentes sur le générateur de favicon",
@@ -225,8 +322,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Découvrir d'autres outils" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Découvrir d'autres outils"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

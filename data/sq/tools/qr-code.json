@@ -3,7 +3,7 @@
   "locale": "sq",
   "metadata": {
     "title": "Gjenerues kodi QR falas – PNG dhe SVG, pa regjistrim",
-    "description": "Krijoni një kod QR për faqe interneti, vCard, menu ose fletushkë brenda pak sekondash. Eksportoni në PNG dhe SVG. Personalizoni ngjyrat dhe madhësinë. Pa regjistrim, pa kufizime.",
+    "description": "Krijoni një kod QR për faqe interneti, vCard, menu ose fletushkë brenda pak sekondash. Eksportoni në PNG dhe SVG. Personalizoni ngjyrat dhe madhësinë.",
     "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
     "path": "/sq/mjetet/gjenerues-kodi-qr-falas"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/sq/mjetet", "label": "Mjetet" },
-    "third": { "href": "/sq/mjetet/gjenerues-kodi-qr-falas", "label": "Gjenerues kodi QR falas" }
+    "second": {
+      "href": "/sq/mjetet",
+      "label": "Mjetet"
+    },
+    "third": {
+      "href": "/sq/mjetet/gjenerues-kodi-qr-falas",
+      "label": "Gjenerues kodi QR falas"
+    }
   },
   "schemas": {
     "software": {
@@ -42,33 +48,63 @@
       "name": "Si të përdorni gjeneruesin falas të kodeve QR",
       "description": "Si të krijoni një kod QR për faqe interneti, kartëvizitë vCard, email ose telefon – nga zgjedhja e llojit të të dhënave deri te shkarkimi i skedarit gati për shtypje.",
       "steps": [
-        { "name": "Zgjidhni llojin e të dhënave", "text": "Vendosni çfarë do të përmbajë kodi QR: URL, tekst, kartëvizitë (vCard), email ose numër telefoni." },
-        { "name": "Shkruani të dhënat", "text": "Plotësoni fushat përkatëse. Për URL, shkruani adresën e faqes; për vCard, shkruani të dhënat e kontaktit." },
-        { "name": "Personalizoni pamjen", "text": "Zgjidhni madhësinë, margjinat, ngjyrën e kodit dhe sfondit dhe nivelin e korrigjimit të gabimeve." },
-        { "name": "Shkarkoni kodin", "text": "Kodin QR të gatshëm mund ta shkarkoni si skedar PNG (për shtypje dhe ueb) ose SVG (vektor, i shkallëzueshëm pa humbje cilësie)." }
+        {
+          "name": "Zgjidhni llojin e të dhënave",
+          "text": "Vendosni çfarë do të përmbajë kodi QR: URL, tekst, kartëvizitë (vCard), email ose numër telefoni."
+        },
+        {
+          "name": "Shkruani të dhënat",
+          "text": "Plotësoni fushat përkatëse. Për URL, shkruani adresën e faqes; për vCard, shkruani të dhënat e kontaktit."
+        },
+        {
+          "name": "Personalizoni pamjen",
+          "text": "Zgjidhni madhësinë, margjinat, ngjyrën e kodit dhe sfondit dhe nivelin e korrigjimit të gabimeve."
+        },
+        {
+          "name": "Shkarkoni kodin",
+          "text": "Kodin QR të gatshëm mund ta shkarkoni si skedar PNG (për shtypje dhe ueb) ose SVG (vektor, i shkallëzueshëm pa humbje cilësie)."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Çfarë është kodi QR dhe si funksionon?",
       "html": "<p class=\"text-mid\">Kodi QR (Quick Response) është barkod dydimensional që mund të skanohet me kamerën e telefonit celular. Ndryshe nga barkodet tradicionale, kodi QR ruan të dhëna horizontalisht dhe vertikalisht, gjë që mundëson kodimin e më shumë informacionit – deri në rreth 3 000 karaktere alfanumerike.</p><p class=\"text-mid mt-3\">Kodi QR u zhvillua në vitin 1994 nga kompania japoneze Denso Wave (pjesë e grupit Toyota) për gjurmimin e pjesëve të automobilave. Sot kodet QR përdoren gjerësisht në marketing, hoteleri, logjistikë dhe komunikim biznesi.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Si të përdorni gjeneruesin falas të kodeve QR",
       "description": "Krijimi i një kodi QR zgjat vetëm pak sekonda:",
       "grid": "three",
       "items": [
-        { "title": "1. Zgjidhni llojin e të dhënave", "description": "Zgjidhni çfarë doni të kodoni: URL, tekst, kartëvizitë vCard, email ose numër telefoni." },
-        { "title": "2. Shkruani të dhënat", "description": "Plotësoni fushat përkatëse – adresën e faqes, të dhënat e kontaktit ose përmbajtjen e mesazhit." },
-        { "title": "3. Shkarkoni kodin", "description": "Personalizoni pamjen (ngjyrat, madhësinë, margjinat) dhe shkarkoni si PNG ose SVG." }
+        {
+          "title": "1. Zgjidhni llojin e të dhënave",
+          "description": "Zgjidhni çfarë doni të kodoni: URL, tekst, kartëvizitë vCard, email ose numër telefoni."
+        },
+        {
+          "title": "2. Shkruani të dhënat",
+          "description": "Plotësoni fushat përkatëse – adresën e faqes, të dhënat e kontaktit ose përmbajtjen e mesazhit."
+        },
+        {
+          "title": "3. Shkarkoni kodin",
+          "description": "Personalizoni pamjen (ngjyrat, madhësinë, margjinat) dhe shkarkoni si PNG ose SVG."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Llojet e kodeve QR – URL, vCard, email, telefon, tekst",
@@ -90,18 +126,32 @@
           "title": "Kartëvizitë vCard",
           "description": "Kartëvizitë dixhitale me të dhëna kontakti (emër, kompani, telefon, email, adresë). Pas skanimit telefoni ofron ruajtjen e kontaktit."
         },
-        { "icon": "RiMailLine", "title": "Email", "description": "Adresë email me subjekt dhe përmbajtje opsionale. Pas skanimit telefoni hap aplikacionin e postës me formularin e plotësuar." },
-        { "icon": "RiPhoneLine", "title": "Telefon", "description": "Numër telefoni. Pas skanimit telefoni ofron kryerjen e thirrjes. E dobishme për linja ndihmese dhe mbështetje klientësh." }
+        {
+          "icon": "RiMailLine",
+          "title": "Email",
+          "description": "Adresë email me subjekt dhe përmbajtje opsionale. Pas skanimit telefoni hap aplikacionin e postës me formularin e plotësuar."
+        },
+        {
+          "icon": "RiPhoneLine",
+          "title": "Telefon",
+          "description": "Numër telefoni. Pas skanimit telefoni ofron kryerjen e thirrjes. E dobishme për linja ndihmese dhe mbështetje klientësh."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Specifikimet teknike të kodeve QR",
       "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kapaciteti</span><span class=\"text-mid text-sm!\">deri në 4 296 karaktere</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Korrigjim gabimesh</span><span class=\"text-mid text-sm!\">7 % – 30 %</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Madhësia minimale e shtypjes</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kontrasti minimal</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margjinat</span><span class=\"text-mid text-sm!\">min. 4 module</span></div></div>",
       "html": "<p class=\"text-mid mb-4\">Njohja e parametrave teknikë ndihmon në krijimin e kodit QR të lexueshëm në të gjitha kushtet:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Kapaciteti i të dhënave</strong> – kodi QR mund të mbajë deri në 7 089 shifra, 4 296 karaktere alfanumerike ose 2 953 bajt të dhëna binare.</li><li><strong>Korrigjimi i gabimeve Reed-Solomon</strong> – algoritëm matematik që mundëson leximin e kodit edhe kur është pjesërisht i dëmtuar. Nivele: L (7 %), M (15 %), Q (25 %), H (30 %).</li><li><strong>Margjinat</strong> – zona e bardhë rreth kodit e nevojshme për skanim të saktë. Minimumi i rekomanduar është 4 module.</li><li><strong>Madhësia minimale e shtypjes</strong> – në kushte normale skanimi kodi duhet të ketë të paktën 2×2 cm.</li><li><strong>Kontrasti</strong> – raporti i kontrastit midis kodit dhe sfondit duhet të jetë të paktën 3:1.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Përdorimet e kodeve QR – kartëvizita, fletushka, menu restorantesh",
@@ -118,31 +168,102 @@
           "title": "Menu restorantesh dhe kafenesh",
           "description": "Kodi QR në tavolinë që drejton te menuja dixhitale. Zgjidhje elegante e popullarizuar që nga pandemia COVID-19."
         },
-        { "icon": "RiPrinterLine", "title": "Fletushka dhe postera", "description": "Kodi QR me lidhje në faqen e produktit, formularin e regjistrimit ose ofertën speciale." },
-        { "icon": "RiBuilding2Line", "title": "Paketimi i produktit", "description": "Lidhje në udhëzimet e përdorimit, kartën e garancisë ose faqen e prodhuesit." },
-        { "icon": "RiHospitalLine", "title": "Institucionet shëndetësore", "description": "Kodi QR në kartën e pacientit që drejton te portali i pacientit ose sistemi i rezervimit të termineve." },
-        { "icon": "RiCalendarEventLine", "title": "Ngjarje dhe konferenca", "description": "Bileta me kod QR për verifikim të shpejtë në hyrje." }
+        {
+          "icon": "RiPrinterLine",
+          "title": "Fletushka dhe postera",
+          "description": "Kodi QR me lidhje në faqen e produktit, formularin e regjistrimit ose ofertën speciale."
+        },
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Paketimi i produktit",
+          "description": "Lidhje në udhëzimet e përdorimit, kartën e garancisë ose faqen e prodhuesit."
+        },
+        {
+          "icon": "RiHospitalLine",
+          "title": "Institucionet shëndetësore",
+          "description": "Kodi QR në kartën e pacientit që drejton te portali i pacientit ose sistemi i rezervimit të termineve."
+        },
+        {
+          "icon": "RiCalendarEventLine",
+          "title": "Ngjarje dhe konferenca",
+          "description": "Bileta me kod QR për verifikim të shpejtë në hyrje."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionFeatureComparison",
       "title": "PNG vs SVG – cilin format të zgjidhni për shtypje?",
       "plans": [
-        { "id": "png", "name": "PNG (raster)" },
-        { "id": "svg", "name": "SVG (vektor)", "highlighted": true }
+        {
+          "id": "png",
+          "name": "PNG (raster)"
+        },
+        {
+          "id": "svg",
+          "name": "SVG (vektor)",
+          "highlighted": true
+        }
       ],
       "features": [
-        { "name": "Ueb dhe rrjete sociale", "values": { "png": true, "svg": true } },
-        { "name": "Fletushka dhe kartëvizita", "values": { "png": true, "svg": true } },
-        { "name": "Postera dhe banera (format i madh)", "values": { "png": false, "svg": true } },
-        { "name": "Shkallëzim pa humbje cilësie", "values": { "png": false, "svg": true } },
-        { "name": "Redaktim në aplikacion grafik", "values": { "png": false, "svg": true } },
-        { "name": "Madhësi skedari më e vogël", "values": { "png": false, "svg": true } },
-        { "name": "Prezantime", "values": { "png": true, "svg": true } }
+        {
+          "name": "Ueb dhe rrjete sociale",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Fletushka dhe kartëvizita",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Postera dhe banera (format i madh)",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Shkallëzim pa humbje cilësie",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Redaktim në aplikacion grafik",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Madhësi skedari më e vogël",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Prezantime",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Çfarë e bën këtë gjenerues kodesh QR të veçantë?",
@@ -153,7 +274,11 @@
           "title": "Gjenerim lokal në shfletues",
           "description": "Të dhënat e shkruara në gjenerues nuk dërgohen në asnjë server – i gjithë përpunimi bëhet në pajisjen tuaj."
         },
-        { "icon": "RiLockLine", "title": "Pesë lloje të dhënash në një mjet", "description": "URL, tekst, kartëvizitë vCard, email dhe telefon – çdo lloj gjeneron kod QR në standardin përkatës." },
+        {
+          "icon": "RiLockLine",
+          "title": "Pesë lloje të dhënash në një mjet",
+          "description": "URL, tekst, kartëvizitë vCard, email dhe telefon – çdo lloj gjeneron kod QR në standardin përkatës."
+        },
         {
           "icon": "RiStackLine",
           "title": "Personalizim i pamjes së kodit QR",
@@ -164,11 +289,22 @@
           "title": "Katër nivele korrigjimi gabimesh",
           "description": "Algoritmi Reed-Solomon ju lejon të zgjidhni rezistencën e kodit ndaj dëmtimeve – nga 7 % (L) deri në 30 % (H)."
         },
-        { "icon": "RiEyeLine", "title": "Parashikim live", "description": "Rezultatin e shihni menjëherë pas shkrimit të të dhënave, pa klikuar Gjenero." },
-        { "icon": "RiDownloadLine", "title": "Eksport PNG dhe SVG", "description": "Shkarkoni kodin në formatin e përshtatshëm për përdorimin tuaj." }
+        {
+          "icon": "RiEyeLine",
+          "title": "Parashikim live",
+          "description": "Rezultatin e shihni menjëherë pas shkrimit të të dhënave, pa klikuar Gjenero."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Eksport PNG dhe SVG",
+          "description": "Shkarkoni kodin në formatin e përshtatshëm për përdorimin tuaj."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Pyetjet më të shpeshta për gjeneruesin e kodeve QR",
@@ -201,8 +337,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Zbuloni mjete të tjera falas" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Zbuloni mjete të tjera falas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

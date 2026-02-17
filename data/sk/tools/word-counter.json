@@ -1,0 +1,232 @@
+{
+  "toolKey": "wordCounter",
+  "locale": "sk",
+  "metadata": {
+    "title": "Bezplatné počítadlo slov a znakov – Skontrolujte dĺžku textu pre SEO",
+    "description": "Spočítajte slová, znaky, odseky a čas čítania okamžite. Skontrolujte optimálnu dĺžku textu pre SEO – blogový článok, produktová stránka, pristávacia stránka.",
+    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "path": "/sk/nastroje/pocitadlo-slov-a-znakov"
+  },
+  "hero": {
+    "title": "Počítadlo slov a znakov s hodnotením dĺžky",
+    "description": "Vložte text, vyberte typ stránky a nástroj ukáže počet slov, znakov a odsekov a zhodnotí, či dĺžka zodpovedá vybranému typu obsahu.",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sk/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/sk/nastroje/pocitadlo-slov-a-znakov",
+      "label": "Počítadlo slov a znakov"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Bezplatné počítadlo slov a znakov",
+      "alternateName": ["Počítadlo slov s hodnotením dĺžky", "Počítadlo znakov", "Kalkulačka času čítania", "Počítadlo slov pre SEO"],
+      "applicationSubCategory": "TextApplication",
+      "description": "Bezplatné počítadlo slov a znakov. Kontroluje počet slov, znakov, odsekov a odhadovaný čas čítania. Hodnotí dĺžku textu pre rôzne typy stránok.",
+      "featureList": [
+        "Počet slov",
+        "Počet znakov s medzerami a bez nich",
+        "Počet odsekov",
+        "Odhadovaný čas čítania",
+        "Hodnotenie dĺžky pre rôzne typy stránok",
+        "Odporúčané rozsahy: popis produktu, stránka služby, úvodná stránka, pristávacia stránka, blogový článok, sprievodca",
+        "Kopírovanie správy do schránky"
+      ]
+    },
+    "howTo": {
+      "name": "Ako používať počítadlo slov a znakov",
+      "description": "Skontrolujte dĺžku textu a zhodnoťte, či sa hodí pre konkrétny typ stránky.",
+      "steps": [
+        {
+          "name": "Vyberte typ stránky",
+          "text": "Vyberte zo zoznamu, pre aký typ stránky píšete. Každý typ má svoj odporúčaný rozsah počtu slov."
+        },
+        {
+          "name": "Vložte text",
+          "text": "Vložte alebo napíšte text do textového poľa. Nástroj automaticky spočíta slová, znaky, odseky a odhadne čas čítania."
+        },
+        {
+          "name": "Skontrolujte hodnotenie",
+          "text": "Pozrite sa na farebne kódovaný ukazovateľ a stav. Zelená znamená vhodnú dĺžku, žltá príliš krátky text, červená príliš dlhý."
+        },
+        {
+          "name": "Skopírujte správu",
+          "text": "Tlačidlo Kopírovať správu skopíruje súhrn všetkých štatistík a hodnotenia dĺžky do schránky."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Bezplatné počítadlo slov – spočítajte a zhodnoťte dĺžku textu",
+      "html": "<p class=\"text-mid\">Tento nástroj umožňuje rýchlo skontrolovať dĺžku akéhokoľvek textu. Vložte obsah a počítadlo spočíta slová, znaky a odseky. Uvidíte tiež, koľko minút trvá čítanie a či dĺžka zodpovedá vybranému typu stránky.</p><p class=\"text-mid mt-3\">Každý typ stránky slúži inému účelu – popis produktu odpovedá na otázky kupujúceho, blogový článok sa hlbšie venuje téme a stránka služby hovorí, čo zákazník získa. Počítadlo zobrazuje pre každý typ rozsahy založené na analýze úspešného obsahu.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ako používať počítadlo slov a znakov",
+      "description": "Kontrola dĺžky textu trvá menej ako minútu:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiListCheck2",
+          "title": "1. Vyberte typ stránky",
+          "description": "Vyberte zo zoznamu, pre aký typ stránky píšete. Každý typ má svoj odporúčaný rozsah počtu slov."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Vložte text",
+          "description": "Vložte alebo napíšte text do veľkého textového poľa vpravo. Nástroj okamžite spočíta slová, znaky, odseky a odhadne čas čítania."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "3. Skontrolujte hodnotenie",
+          "description": "Pozrite sa na farebne kódovaný ukazovateľ a stav. Zelená znamená vhodnú dĺžku, žltá príliš krátky text, červená príliš dlhý."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Skopírujte správu",
+          "description": "Tlačidlo Kopírovať správu skopíruje súhrn počtu slov, znakov a odsekov, času čítania a hodnotenia dĺžky do schránky."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čo počítadlo meria – slová, znaky, čas čítania",
+      "description": "Počítadlo sleduje päť ukazovateľov:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiText",
+          "title": "Slová",
+          "description": "Celkový počet slov. Hlavný ukazovateľ dĺžky textu."
+        },
+        {
+          "icon": "RiSpaceShipLine",
+          "title": "Znaky (s medzerami)",
+          "description": "Všetky znaky vrátane medzier. Dôležité, keď CMS má limit znakov."
+        },
+        {
+          "icon": "RiHashtag",
+          "title": "Znaky (bez medzier)",
+          "description": "Iba písmená, čísla a symboly. Niekedy vyžadované tlačiarňami alebo pri fakturácii prekladov."
+        },
+        {
+          "icon": "RiParagraph",
+          "title": "Odseky",
+          "description": "Počet textových blokov oddelených prázdnymi riadkami. Pomáha posúdiť, či má text dobrú štruktúru."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Čas čítania",
+          "description": "Kalkulačka času čítania ukazuje, koľko minút trvá prečítanie textu pri priemernej rýchlosti 200 slov za minútu."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Koľko slov by mal text obsahovať – optimálna dĺžka pre SEO",
+      "html": "<p class=\"text-mid mb-4\">Nižšie uvedené rozsahy sú založené na analýze obsahu, ktorý si dobre vedie vo vyhľadávačoch. Samotná dĺžka textu neovplyvňuje pozíciu v Google – rozhodujúce je, či obsah odpovedá na otázku čitateľa.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Typ stránky</th><th class=\"py-2 pr-4 font-semibold\">Rozsah</th><th class=\"py-2 font-semibold\">Kedy kratší, kedy dlhší?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Popis produktu</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 slov</td><td class=\"text-primary-light0 py-2 text-sm\">Jednoduchý produkt – 80–150. Zložité zariadenie – 300–400.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Stránka služby</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 slov</td><td class=\"text-primary-light0 py-2 text-sm\">Lokálna služba – 500–700. B2B služba s procesom a FAQ – 1 200–1 500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Úvodná stránka</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 slov</td><td class=\"text-primary-light0 py-2 text-sm\">Úvodná stránka predstavuje kľúčovú hodnotu a usmerňuje návštevníka ďalej.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Pristávacia stránka</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 slov</td><td class=\"text-primary-light0 py-2 text-sm\">Jednoduchá ponuka – 600–1 000. Ponuka vyžadujúca vysvetlenie – 1 500–2 500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blogový článok</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 slov</td><td class=\"text-primary-light0 py-2 text-sm\">Krátky návod – 1 200–1 500. Podrobný sprievodca – 2 500–3 000.</td></tr><tr><td class=\"py-2 pr-4\">Sprievodca / návod</td><td class=\"py-2 pr-4 whitespace-nowrap\">2500–6000 slov</td><td class=\"text-primary-light0 py-2 text-sm\">Téma s mnohými aspektmi vyžaduje viac priestoru. Dĺžka závisí od rozsahu.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kto môže profitovať z počítadla slov?",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiEditLine",
+          "title": "Copywriteri a tvorcovia obsahu",
+          "description": "Skontrolujte, či je text v odporúčanom rozsahu pre konkrétny typ stránky."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Blogeri",
+          "description": "Sledujte dĺžku článkov kvôli konzistencii. Skontrolujte čas čítania pred publikovaním."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Prevádzkovatelia e-shopov",
+          "description": "Skontrolujte popisy produktov voči limitom znakov predajných platforiem."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "SEO špecialisti",
+          "description": "Zhodnoťte, či je dĺžka obsahu stránky optimálna v porovnaní s konkurenciou."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Študenti a výskumníci",
+          "description": "Skontrolujte, či práca spĺňa požadovaný počet slov alebo znakov."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Prekladatelia",
+          "description": "Spočítajte znaky bez medzier na účely fakturácie prekladov."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky o počítadle slov a znakov",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ovplyvňuje dĺžka textu pozíciu v Google?",
+          "answer": "Samotná dĺžka textu nie je faktorom hodnotenia. Google hodnotí, či obsah odpovedá na otázku používateľa a či je pre neho hodnotný.",
+          "answerSchemaText": "Dĺžka textu nie je priamym faktorom hodnotenia. Google hodnotí hodnotu obsahu pre používateľa."
+        },
+        {
+          "question": "Prečo sú rozsahy počtu slov také široké?",
+          "answer": "Ten istý typ stránky môže vyžadovať rôznu dĺžku v závislosti od zložitosti témy. Jednoduchý popis produktu má 80–150 slov. Popis notebooku má 300–400 slov, pretože kupujúci má viac otázok.",
+          "answerSchemaText": "Rozdiely sú spôsobené zložitosťou témy – jednoduchý produkt vyžaduje menej slov ako zložitý."
+        },
+        {
+          "question": "Ako funguje kalkulačka času čítania?",
+          "answer": "Nástroj delí počet slov číslom 200 – priemernou rýchlosťou čítania bežného textu. Technický text sa číta pomalšie. Výsledok je orientačná hodnota.",
+          "answerSchemaText": "Nástroj predpokladá priemernú rýchlosť čítania 200 slov za minútu. Je to orientačná hodnota."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Pozrite si ďalšie nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

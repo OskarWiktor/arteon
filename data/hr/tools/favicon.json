@@ -1,0 +1,127 @@
+{
+  "toolKey": "favicon",
+  "locale": "hr",
+  "metadata": {
+    "title": "Besplatni generator favicona – ICO i PNG iz jedne slike",
+    "description": "Izradite favicon.ico i PNG ikone iz jedne slike u skladu sa zahtjevima preglednika i Lighthousea. Bez registracije, radi u pregledniku.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
+    "path": "/hr/alati/besplatni-generator-favicona"
+  },
+  "hero": {
+    "title": "Izradite favicon.ico i PNG ikone iz jedne slike",
+    "description": "Učitajte sliku, a alat će izraditi favicon.ico datoteku i potpuni set PNG ikona za preglednike, mobilne uređaje i Lighthouse.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/hr/alati", "label": "Alati" },
+    "third": { "href": "/hr/alati/besplatni-generator-favicona", "label": "Generator favicona" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Besplatni generator favicona",
+      "alternateName": ["Generator favicon.ico", "Generator web ikona", "Alat za favicon", "Generator favicona iz slike"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "FaviconGenerator",
+      "description": "Besplatni generator favicona. Učitajte sliku i dobijte favicon.ico datoteku i potpuni set PNG ikona za preglednike, mobilne uređaje i PWA.",
+      "featureList": [
+        "Izrada favicon.ico datoteke (16×16, 32×32, 48×48 px)",
+        "PNG ikone za preglednike (16×16–512×512 px)",
+        "Apple Touch Icon (180×180 px)",
+        "Android/PWA ikone (192×192, 512×512 px)",
+        "Microsoft ikone (150×150, 310×310 px)",
+        "Obrezivanje i promjena veličine izvorne slike",
+        "Pregled u stvarnom vremenu",
+        "Preuzimanje svih ikona kao ZIP datoteka",
+        "Lokalna obrada u pregledniku"
+      ]
+    },
+    "howTo": {
+      "name": "Kako izraditi favicon iz slike",
+      "description": "Kako izraditi favicon.ico i PNG ikone iz slike za preglednike i mobilne uređaje.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Učitajte sliku", "text": "Povucite i ispustite datoteku u označeno područje ili je odaberite s uređaja. Podržani formati su JPG, PNG, SVG i WebP." },
+        { "name": "Obrežite sliku", "text": "Prilagodite područje obrezivanja i odaberite odgovarajući dio slike za favicon." },
+        { "name": "Provjerite pregled", "text": "Pogledajte kako favicon izgleda na kartici preglednika i u različitim veličinama." },
+        { "name": "Preuzmite ikone", "text": "Preuzmite favicon.ico i potpuni set PNG ikona kao ZIP datoteku." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Što je favicon i zašto je važan?",
+      "html": "<p class=\"text-mid\">Favicon je mala ikona koja se prikazuje na kartici preglednika, u traci oznaka i na početnom zaslonu telefona. To je jedan od prvih elemenata koje korisnik vidi – još prije potpunog učitavanja stranice.</p><p class=\"text-mid mt-3\">Profesionalni favicon gradi prepoznatljivost brenda i pomaže korisniku pronaći stranicu među mnogim otvorenim karticama. Nedostatak favicona može ostaviti neprofesionalan dojam i smanjiti povjerenje posjetitelja.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Kako koristiti generator favicona",
+      "description": "Izrada favicona traje samo nekoliko minuta:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Učitajte sliku", "description": "Povucite i ispustite datoteku u označeno područje ili je odaberite s uređaja. Kvadratna slika daje najbolje rezultate." },
+        { "title": "2. Obrežite i prilagodite", "description": "Prilagodite područje obrezivanja i odaberite odgovarajući dio slike. Pogledajte kako izgleda u različitim veličinama." },
+        { "title": "3. Preuzmite ikone", "description": "Preuzmite favicon.ico i potpuni set PNG ikona kao ZIP datoteku. Sve ikone su spremne za korištenje." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Koje ikone generator izrađuje?",
+      "description": "Generator izrađuje potpuni set ikona za moderne preglednike i uređaje:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiGlobalLine", "title": "favicon.ico", "description": "ICO datoteka koja sadrži tri veličine (16×16, 32×32, 48×48 px). Podržana svim preglednicima, uključujući starije." },
+        { "icon": "RiChromeLine", "title": "Ikone za preglednike (PNG)", "description": "Set PNG ikona za moderne preglednike: 16×16, 32×32, 48×48, 96×96 i 128×128 px." },
+        { "icon": "RiAppleLine", "title": "Apple Touch Icon", "description": "Ikona 180×180 px za iOS uređaje (iPhone, iPad). Prikazuje se na početnom zaslonu nakon dodavanja stranice." },
+        { "icon": "RiAndroidLine", "title": "Android/PWA ikone", "description": "Ikone 192×192 i 512×512 px za Progressive Web Apps i Android uređaje." },
+        { "icon": "RiWindowsLine", "title": "Microsoft ikone", "description": "Ikone 150×150 i 310×310 px za Windows pločice i Microsoft Edge." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Po čemu je ovaj generator favicona poseban?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Lokalna obrada u pregledniku", "description": "Slika se ne učitava na poslužitelj. Sva obrada odvija se na vašem uređaju." },
+        { "icon": "RiCheckboxCircleLine", "title": "Ispunjava zahtjeve Lighthousea", "description": "Izrađene ikone ispunjavaju zahtjeve Google Lighthousea za veličinu i format." },
+        { "icon": "RiDevicesLine", "title": "Ikone za sve uređaje", "description": "Jedan set datoteka pokriva sve preglednike, iOS, Android i Windows." },
+        { "icon": "RiInfinityLine", "title": "Bez ograničenja, bez registracije", "description": "Izradite koliko god favicona trebate. Bez registracije, bez naknada." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Često postavljana pitanja o generatoru favicona",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Koja slika je najbolja za favicon?",
+          "answer": "Kvadratna slika (najmanje 512×512 px) s jednostavnom pozadinom je najbolja. Logotipi, inicijali ili jednostavne ikone daju najbolje rezultate. Slike s mnogo detalja mogu loše izgledati u maloj veličini (16×16 px).",
+          "answerSchemaText": "Kvadratna slika, najmanje 512×512 px, s jednostavnom pozadinom. Logotipi ili jednostavne ikone daju najbolji rezultat."
+        },
+        {
+          "question": "Koja je razlika između favicon.ico i PNG?",
+          "answer": "ICO datoteka može sadržavati više veličina u jednoj datoteci i podržana je svim preglednicima, uključujući starije. PNG datoteke nude višu kvalitetu, ali zahtijevaju zasebnu HTML oznaku za svaku veličinu. Preporučuje se korištenje oba formata.",
+          "answerSchemaText": "ICO sadrži više veličina u jednoj datoteci. PNG nudi višu kvalitetu. Preporučuje se korištenje oba."
+        },
+        {
+          "question": "Šalje li se slika na poslužitelj?",
+          "answer": "Ne. Sva obrada odvija se u vašem pregledniku. Slika se ne pohranjuje niti šalje nigdje.",
+          "answerSchemaText": "Ne. Slika se obrađuje u pregledniku. Ne šalje se na poslužitelj."
+        },
+        {
+          "question": "Kako dodati favicon na web stranicu?",
+          "answer": "Postavite datoteke ikona u korijenski direktorij web stranice i dodajte odgovarajuće HTML oznake u &lt;head&gt; odjeljak stranice. Preuzeta ZIP datoteka sadrži upute za implementaciju.",
+          "answerSchemaText": "Postavite datoteke ikona u korijenski direktorij i dodajte HTML oznake u head odjeljak."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Pogledajte ostale alate" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -83,6 +83,30 @@ const ui = {
     home: 'Forside',
     ariaLabel: 'navigation',
   },
+  no: {
+    home: 'Forside',
+    ariaLabel: 'navigasjon',
+  },
+  fi: {
+    home: 'Etusivu',
+    ariaLabel: 'navigaatio',
+  },
+  sk: {
+    home: '\u00davodn\u00e1 str\u00e1nka',
+    ariaLabel: 'navig\u00e1cia',
+  },
+  hr: {
+    home: 'Po\u010detna',
+    ariaLabel: 'navigacija',
+  },
+  lt: {
+    home: 'Pradinis puslapis',
+    ariaLabel: 'navigacija',
+  },
+  sl: {
+    home: 'Za\u010detna stran',
+    ariaLabel: 'navigacija',
+  },
 } as const;
 
 import type { Crumb, BreadcrumbsProps } from '@/types/ui';
@@ -94,7 +118,7 @@ function absoluteUrl(siteUrl: string, href: string) {
   return href.startsWith('http') ? href : `${siteUrl}${href}`;
 }
 
-export default function Breadcrumbs({ second, third, fourth, className = '', includeJsonLd = false, siteUrl = DEFAULT_SITE, locale = 'pl' }: BreadcrumbsProps) {
+export default function Breadcrumbs({ second, third, fourth, className = '', includeJsonLd = false, siteUrl = DEFAULT_SITE, size = 'default', locale = 'pl' }: BreadcrumbsProps) {
   const t = ui[locale];
   const items: Crumb[] = [{ href: '/', label: t.home }, second, third, ...(fourth ? [fourth] : [])];
 
@@ -113,7 +137,7 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
 
   return (
     <Wrapper>
-      <nav aria-label={t.ariaLabel} className={`py-6 ${className}`}>
+      <nav aria-label={t.ariaLabel} className={`${size === 'compact' ? 'flex items-center justify-center py-3' : 'py-6'} ${className}`}>
         <nav className="flex flex-wrap items-center gap-2 text-sm">
           <AppLink href="/" variant="default" display="inline" aria-label={t.home} className="shrink-0">
             <RiHomeLine className="text-medium text-primary-mid h-4 w-4" />

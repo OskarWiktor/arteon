@@ -23,6 +23,7 @@ export const metadata = {
     description: 'Polityka prywatności strony Arteon - dowiedz się w jaki sposób chronimy Twoje dane osobowe i z jakich narzędzi analitycznych korzystamy',
     url: toAbsoluteUrl('/polityka-prywatnosci'),
     type: 'website',
+    images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
   },
 };
 

@@ -1259,6 +1259,418 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
       btnTwo: 'Contacto',
     },
   },
+
+  no: {
+    slug: 'om-oss',
+    metadata: {
+      title: 'Om Arteon – 10 gratis nettverktøy for web, SEO og design',
+      description:
+        'Arteon er et kreativt byrå som utvikler gratis nettleserbaserte verktøy: WebP-konverterer, favicon-generator, fargekontrastsjekker, QR-kode-generator og mer. Uten registrering, uten opplasting — alt kjøres lokalt.',
+    },
+    hero: {
+      title: 'Gratis nettverktøy laget av et kreativt byrå',
+      description: '10 nettleserbaserte verktøy for bilder, SEO, farger, e-postsignaturer og QR-koder — uten registrering, uten filopplasting, uten begrensninger',
+    },
+    whoWeAre: {
+      title: 'Hvem vi er',
+      p1: 'Arteon er et polsk kreativt byrå. I tillegg til vårt kommersielle arbeid utvikler og vedlikeholder vi en voksende samling gratis nettverktøy designet for bedriftseiere, nettstedsutviklere, designere, markedsførere og alle som jobber med digitalt innhold.',
+      p2: 'Hvert verktøy vi lager løser et spesifikt, dagligdags problem: konvertere bilder, sjekke fargekontrast, generere faviconer, lage QR-koder og mer. Målet vårt er å bygge et komplett verktøysett der du finner alt du trenger på ett sted — uten å bytte mellom titalls forskjellige nettsider.',
+    },
+    whyFree: {
+      title: 'Hvorfor vi tilbyr gratis verktøy',
+      items: [
+        { title: 'Uten registrering, uten begrensninger', description: 'Hvert verktøy fungerer umiddelbart i nettleseren din. Ingen konto, ingen innlogging, ingen betaling.' },
+        { title: 'Personvern først', description: 'Filene dine forlater aldri enheten din. All behandling skjer lokalt i nettleseren — vi sender ikke dataene dine til noen server.' },
+        {
+          title: 'Bygget fra reelle behov',
+          description: 'Hvert verktøy ble til fra et reelt problem vi støtte på mens vi jobbet med kundeprosjekter. Hvis vi trengte det, er sjansen stor for at du også gjør det.',
+        },
+        {
+          title: 'Finansiert av annonser, gratis for deg',
+          description: 'Vi bruker Google AdSense-bannere for å dekke kostnadene for utvikling og hosting. Takket være annonseinntekter kan vi holde alle verktøy gratis og fortsette å bygge nye.',
+        },
+      ],
+    },
+    ourTools: {
+      title: 'Våre verktøy',
+      items: [
+        { title: 'Bilder og faviconer', description: 'WebP-konverterer, bilderedigerer og favicon-generator. 3 verktøy for daglig bildearbeid.' },
+        { title: 'Meta og SEO', description: 'Meta-tittel- og beskrivelsessjekker pluss en ord- og tegnteller for å vurdere tekstlengden.' },
+        { title: 'E-post og kommunikasjon', description: 'HTML e-postsignatur-generator med ferdig kode for Gmail og Outlook.' },
+        { title: 'Farger og tilgjengelighet', description: 'WCAG-kontrastsjekker, fargeutrekker fra bilde og fargepalettgenerator. 3 verktøy for å jobbe med farger.' },
+        { title: 'Trykk og materialer', description: 'QR-kode-generator for nettsider, vCard, menyer og flygeblad. Eksport til PNG og SVG.' },
+      ],
+    },
+    whatsNext: {
+      title: 'Hva som kommer',
+      text: 'Vi jobber aktivt med å utvide verktøysettet. Nye verktøy legges til jevnlig basert på tilbakemeldinger fra brukere og vår egen erfaring. Målet er én plattform der bedriftseiere, designere og utviklere har tilgang til hvert viktig verktøy — alt på ett sted, alt gratis.',
+    },
+    privacy: {
+      title: 'Personvern og sikkerhet',
+      textBefore:
+        'Vi respekterer personvernet ditt. Filer du laster opp til verktøyene våre behandles utelukkende i nettleseren din og sendes aldri til noen server. Vi bruker analyse (Google Analytics 4) og annonsering (Google AdSense) kun etter ditt samtykke via informasjonskapsel-banneret. Alle detaljer finner du i vår',
+      linkLabel: 'Personvernpolicy',
+      textAfter: '.',
+    },
+    cta: {
+      title: 'Prøv verktøyene våre',
+      description: '10 gratis nettverktøy — uten registrering, uten begrensninger, uten filopplasting til servere',
+      btnOne: 'Gå til verktøy',
+      btnTwo: 'Kontakt',
+    },
+  },
+
+  fi: {
+    slug: 'tietoa-meista',
+    metadata: {
+      title: 'Tietoa Arteonista \u2013 10 ilmaista verkkoty\u00f6kalua webille, SEO:lle ja suunnittelulle',
+      description:
+        'Arteon on luova toimisto, joka kehitt\u00e4\u00e4 ilmaisia selainpohjaisia ty\u00f6kaluja: WebP-muunnin, favicon-generaattori, v\u00e4rikontrastin tarkistus, QR-koodigeneraattori ja paljon muuta. Ilman rekister\u00f6itymist\u00e4, ilman l\u00e4hetyst\u00e4 \u2013 kaikki toimii paikallisesti.',
+    },
+    hero: {
+      title: 'Ilmaiset verkkoty\u00f6kalut luovalta toimistolta',
+      description:
+        '10 selainpohjaista ty\u00f6kalua kuville, SEO:lle, v\u00e4reille, s\u00e4hk\u00f6postiallekirjoituksille ja QR-koodeille \u2013 ilman rekister\u00f6itymist\u00e4, ilman tiedostojen l\u00e4hetyst\u00e4, ilman rajoituksia',
+    },
+    whoWeAre: {
+      title: 'Keitä olemme',
+      p1: 'Arteon on puolalainen luova toimisto. Kaupallisen ty\u00f6mme lis\u00e4ksi kehit\u00e4mme ja yll\u00e4pid\u00e4mme kasvavaa kokoelmaa ilmaisia verkkoty\u00f6kaluja, jotka on suunniteltu yritt\u00e4jille, verkkokehitt\u00e4jille, suunnittelijoille, markkinoijille ja kaikille, jotka ty\u00f6skentelev\u00e4t digitaalisen sis\u00e4ll\u00f6n parissa.',
+      p2: 'Jokainen ty\u00f6kalu ratkaisee tietyn, p\u00e4ivitt\u00e4isen ongelman: kuvien muuntaminen, v\u00e4rikontrastin tarkistaminen, faviconien luominen, QR-koodien generointi ja paljon muuta. Tavoitteenamme on rakentaa t\u00e4ydellinen ty\u00f6kalupaketti, josta l\u00f6yd\u00e4t kaiken tarvitsemasi yhdest\u00e4 paikasta \u2013 ilman kymmenien eri sivustojen v\u00e4lill\u00e4 vaihtamista.',
+    },
+    whyFree: {
+      title: 'Miksi tarjoamme ilmaisia ty\u00f6kaluja',
+      items: [
+        {
+          title: 'Ilman rekister\u00f6itymist\u00e4, ilman rajoituksia',
+          description: 'Jokainen ty\u00f6kalu toimii v\u00e4litt\u00f6m\u00e4sti selaimessasi. Ei tili\u00e4, ei kirjautumista, ei maksuja.',
+        },
+        {
+          title: 'Yksityisyys ensin',
+          description:
+            'Tiedostosi eiv\u00e4t koskaan poistu laitteeltasi. Kaikki k\u00e4sittely tapahtuu paikallisesti selaimessa \u2013 emme l\u00e4het\u00e4 tietojasi millekk\u00e4\u00e4n palvelimelle.',
+        },
+        {
+          title: 'Rakennettu todellisista tarpeista',
+          description:
+            'Jokainen ty\u00f6kalu syntyi todellisesta ongelmasta, johon t\u00f6rm\u00e4simme asiakasprojekteissa. Jos me tarvitsimme sit\u00e4, on todenn\u00e4k\u00f6ist\u00e4, ett\u00e4 sin\u00e4kin tarvitset.',
+        },
+        {
+          title: 'Mainosrahoitteinen, sinulle ilmainen',
+          description:
+            'K\u00e4yt\u00e4mme Google AdSense -bannereita kehitys- ja yll\u00e4pitokulujen kattamiseksi. Mainostulojen ansiosta voimme pit\u00e4\u00e4 kaikki ty\u00f6kalut ilmaisina ja jatkaa uusien rakentamista.',
+        },
+      ],
+    },
+    ourTools: {
+      title: 'Ty\u00f6kalumme',
+      items: [
+        { title: 'Kuvat ja faviconit', description: 'WebP-muunnin, kuvaeditori ja favicon-generaattori. 3 ty\u00f6kalua p\u00e4ivitt\u00e4iseen kuvaty\u00f6h\u00f6n.' },
+        { title: 'Meta ja SEO', description: 'Meta-otsikon ja -kuvauksen tarkistus sek\u00e4 sana- ja merkkilaskuri tekstin pituuden arviointiin.' },
+        { title: 'S\u00e4hk\u00f6posti ja viestint\u00e4', description: 'HTML-s\u00e4hk\u00f6postiallekirjoitusgeneraattori valmiilla koodilla Gmailiin ja Outlookiin.' },
+        {
+          title: 'V\u00e4rit ja saavutettavuus',
+          description: 'WCAG-kontrastin tarkistus, v\u00e4rien poiminta kuvasta ja v\u00e4ripalettien generaattori. 3 ty\u00f6kalua v\u00e4rien k\u00e4sittelyyn.',
+        },
+        { title: 'Painotuotteet ja materiaalit', description: 'QR-koodigeneraattori verkkosivuille, vCard-korteille, ruokalistoille ja esitteille. Vienti PNG- ja SVG-muodossa.' },
+      ],
+    },
+    whatsNext: {
+      title: 'Mit\u00e4 on tulossa',
+      text: 'Ty\u00f6skentelemme aktiivisesti ty\u00f6kaluvalikoiman laajentamiseksi. Uusia ty\u00f6kaluja lis\u00e4t\u00e4\u00e4n s\u00e4\u00e4nn\u00f6llisesti k\u00e4ytt\u00e4j\u00e4palautteen ja oman kokemuksemme perusteella. Tavoitteena on yksi alusta, josta yritt\u00e4j\u00e4t, suunnittelijat ja kehitt\u00e4j\u00e4t l\u00f6yt\u00e4v\u00e4t jokaisen t\u00e4rke\u00e4n ty\u00f6kalun \u2013 kaiken yhdest\u00e4 paikasta, kaiken ilmaiseksi.',
+    },
+    privacy: {
+      title: 'Yksityisyys ja turvallisuus',
+      textBefore:
+        'Kunnioitamme yksityisyytt\u00e4si. Ty\u00f6kaluihimme lataamasi tiedostot k\u00e4sitell\u00e4\u00e4n yksinomaan selaimessasi eik\u00e4 niit\u00e4 l\u00e4hetet\u00e4 millekk\u00e4\u00e4n palvelimelle. K\u00e4yt\u00e4mme analytiikkaa (Google Analytics 4) ja mainontaa (Google AdSense) vain suostumuksellasi ev\u00e4stebannerin kautta. Kaikki yksityiskohdat l\u00f6yd\u00e4t',
+      linkLabel: 'Tietosuojak\u00e4yt\u00e4nn\u00f6st\u00e4mme',
+      textAfter: '.',
+    },
+    cta: {
+      title: 'Kokeile ty\u00f6kalujamme',
+      description: '10 ilmaista verkkoty\u00f6kalua \u2013 ilman rekister\u00f6itymist\u00e4, ilman rajoituksia, ilman tiedostojen l\u00e4hetyst\u00e4 palvelimille',
+      btnOne: 'Siirry ty\u00f6kaluihin',
+      btnTwo: 'Ota yhteytt\u00e4',
+    },
+  },
+
+  sk: {
+    slug: 'o-nas',
+    metadata: {
+      title: 'O Arteon \u2013 10 bezplatn\u00fdch n\u00e1strojov pre web, SEO a dizajn',
+      description:
+        'Arteon je kreat\u00edvna agent\u00fara, ktor\u00e1 vyv\u00edja bezplatn\u00e9 n\u00e1stroje v prehliada\u010di: konvertor WebP, gener\u00e1tor favicon, kontrola kontrastu farieb, gener\u00e1tor QR k\u00f3dov a \u010fal\u0161ie. Bez registr\u00e1cie, bez nahr\u00e1vania \u2014 v\u0161etko be\u017e\u00ed lok\u00e1lne.',
+    },
+    hero: {
+      title: 'Bezplatn\u00e9 n\u00e1stroje od kreat\u00edvnej agent\u00fary',
+      description:
+        '10 n\u00e1strojov v prehliada\u010di pre obr\u00e1zky, SEO, farby, e-mailov\u00e9 podpisy a QR k\u00f3dy \u2014 bez registr\u00e1cie, bez nahr\u00e1vania s\u00faborov, bez obmedzenia',
+    },
+    whoWeAre: {
+      title: 'Kto sme',
+      p1: 'Arteon je po\u013esk\u00e1 kreat\u00edvna agent\u00fara. Okrem na\u0161ej komer\u010dnej pr\u00e1ce vyv\u00edjame a udr\u017eiavame rast\u00facu zbierku bezplatn\u00fdch n\u00e1strojov ur\u010den\u00fdch pre podnikate\u013eov, tv\u00f3rcov web\u00fdch str\u00e1nok, dizajn\u00e9rov, market\u00e9rov a ka\u017ed\u00e9ho, kto pracuje s digit\u00e1lnym obsahom.',
+      p2: 'Ka\u017ed\u00fd n\u00e1stroj, ktor\u00fd vytv\u00e1rame, rie\u0161i konkr\u00e9tny ka\u017edodenn\u00fd probl\u00e9m: konverzia obr\u00e1zkov, kontrola kontrastu farieb, generovanie favicon, vytv\u00e1ranie QR k\u00f3dov a \u010fal\u0161ie. Na\u0161\u00edm cie\u013eom je vybudova\u0165 komplexn\u00fa sadu n\u00e1strojov, kde n\u00e1jdete v\u0161etko potrebn\u00e9 na jednom mieste \u2014 bez prep\u00ednania medzi desiatkami r\u00f4znych webov.',
+    },
+    whyFree: {
+      title: 'Pre\u010do pon\u00fakame bezplatn\u00e9 n\u00e1stroje',
+      items: [
+        {
+          title: 'Bez registr\u00e1cie, bez obmedzenia',
+          description: 'Ka\u017ed\u00fd n\u00e1stroj funguje okam\u017eite v prehliada\u010di. \u017diadny \u00fa\u010det, \u017eiadne prihlasovanie, \u017eiadna platba.',
+        },
+        {
+          title: 'S\u00fakromie na prvom mieste',
+          description:
+            'Va\u0161e s\u00fabory nikdy neopustia va\u0161e zariadenie. V\u0161etko spracovanie prebieha lok\u00e1lne v prehliada\u010di \u2014 va\u0161e d\u00e1ta neposielame na \u017eiadny server.',
+        },
+        {
+          title: 'Vznikli zo skuto\u010dn\u00fdch potrieb',
+          description:
+            'Ka\u017ed\u00fd n\u00e1stroj vznikol zo skuto\u010dn\u00e9ho probl\u00e9mu, na ktor\u00fd sme narazili pri pr\u00e1ci na projektoch klientov. Ak sme to potrebovali my, pravdepodobne to potrebujete aj vy.',
+        },
+        {
+          title: 'Financovan\u00e9 reklamou, pre v\u00e1s zadarmo',
+          description:
+            'Pou\u017e\u00edvame bannery Google AdSense na pokrytie n\u00e1kladov na v\u00fdvoj a hosting. V\u010faka pr\u00edjmom z reklamy m\u00f4\u017eeme v\u0161etky n\u00e1stroje udr\u017eiava\u0165 zadarmo a na\u010falej vyv\u00edja\u0165 nov\u00e9.',
+        },
+      ],
+    },
+    ourTools: {
+      title: 'Na\u0161e n\u00e1stroje',
+      items: [
+        { title: 'Obr\u00e1zky a favicony', description: 'Konvertor WebP, editor obr\u00e1zkov a gener\u00e1tor favicon. 3 n\u00e1stroje pre ka\u017edodenn\u00fa pr\u00e1cu s obr\u00e1zkami.' },
+        { title: 'Meta a SEO', description: 'Kontrola meta titulku a popisu plus po\u010d\u00edtadlo slov a znakov na hodnotenie d\u013a\u017eky textu.' },
+        { title: 'E-mail a komunik\u00e1cia', description: 'Gener\u00e1tor HTML e-mailov\u00e9ho podpisu s hotov\u00fdm k\u00f3dom pre Gmail a Outlook.' },
+        {
+          title: 'Farby a pr\u00edstupnos\u0165',
+          description: 'Kontrola kontrastu WCAG, extraktor farieb z obr\u00e1zka a gener\u00e1tor farebn\u00fdch pal\u00e9t. 3 n\u00e1stroje pre pr\u00e1cu s farbami.',
+        },
+        { title: 'Tla\u010d a materi\u00e1ly', description: 'Gener\u00e1tor QR k\u00f3dov pre weby, vCard, jed\u00e1lne l\u00edstky a let\u00e1ky. Export do PNG a SVG.' },
+      ],
+    },
+    whatsNext: {
+      title: '\u010co n\u00e1s \u010dak\u00e1',
+      text: 'Akt\u00edvne pracujeme na roz\u0161irovan\u00ed sady n\u00e1strojov. Nov\u00e9 n\u00e1stroje prid\u00e1vame pravidelne na z\u00e1klade sp\u00e4tnej v\u00e4zby pou\u017e\u00edvate\u013eov a vlastn\u00fdch sk\u00fasen\u00e9st\u00ed. Cie\u013eom je jedin\u00e1 platforma, kde podnikatelia, dizajn\u00e9ri a v\u00fdvoj\u00e1ri maj\u00fa pr\u00edstup ku ka\u017ed\u00e9mu d\u00f4le\u017eit\u00e9mu n\u00e1stroju \u2014 v\u0161etko na jednom mieste, v\u0161etko zadarmo.',
+    },
+    privacy: {
+      title: 'S\u00fakromie a bezpe\u010dnos\u0165',
+      textBefore:
+        'Re\u0161pektujeme va\u0161e s\u00fakromie. S\u00fabory, ktor\u00e9 nahr\u00e1vate do na\u0161ich n\u00e1strojov, sa sprac\u00favaj\u00fa v\u00fdhradne vo va\u0161om prehliada\u010di a nikdy sa neodosielajú na server. Analytiku (Google Analytics 4) a reklamu (Google AdSense) pou\u017e\u00edvame a\u017e po va\u0161om s\u00fahlase prostredn\u00edctvom cookie li\u0161ty. V\u0161etky podrobnosti n\u00e1jdete v na\u0161ich',
+      linkLabel: 'Z\u00e1sadách ochrany s\u00fakromia',
+      textAfter: '.',
+    },
+    cta: {
+      title: 'Vysk\u00fa\u0161ajte na\u0161e n\u00e1stroje',
+      description: '10 bezplatn\u00fdch n\u00e1strojov \u2014 bez registr\u00e1cie, bez obmedzenia, bez nahr\u00e1vania s\u00faborov na server',
+      btnOne: 'Prejs\u0165 na n\u00e1stroje',
+      btnTwo: 'Kontakt',
+    },
+  },
+
+  hr: {
+    slug: 'o-nama',
+    metadata: {
+      title: 'O Arteonu \u2013 10 besplatnih alata za web, SEO i dizajn',
+      description:
+        'Arteon je kreativna agencija koja razvija besplatne alate u pregledniku: WebP konverter, generator favicona, provjera kontrasta boja, generator QR kodova i vi\u0161e. Bez registracije, bez uploada \u2014 sve radi lokalno.',
+    },
+    hero: {
+      title: 'Besplatni alati od kreativne agencije',
+      description: '10 alata u pregledniku za slike, SEO, boje, potpise e-po\u0161te i QR kodove \u2014 bez registracije, bez uploada datoteka, bez ograni\u010denja',
+    },
+    whoWeAre: {
+      title: 'Tko smo',
+      p1: 'Arteon je poljska kreativna agencija. Osim na\u0161eg komercijalnog rada, razvijamo i odr\u017eavamo rastu\u0107u kolekciju besplatnih alata namijenjenih vlasnicima tvrtki, kreatorima web stranica, dizajnerima, marketin\u0161kim stru\u010dnjacima i svima koji rade s digitalnim sadr\u017eajem.',
+      p2: 'Svaki alat koji stvaramo rje\u0161ava specifi\u010dan svakodnevni problem: konverzija slika, provjera kontrasta boja, generiranje favicona, izrada QR kodova i vi\u0161e. Na\u0161 cilj je izgraditi sveobuhvatan set alata gdje mo\u017eete prona\u0107i sve \u0161to trebate na jednom mjestu \u2014 bez prebacivanja izme\u0111u desetaka razli\u010ditih stranica.',
+    },
+    whyFree: {
+      title: 'Za\u0161to nudimo besplatne alate',
+      items: [
+        {
+          title: 'Bez registracije, bez ograni\u010denja',
+          description: 'Svaki alat radi odmah u pregledniku. Bez ra\u010duna, bez prijave, bez pla\u0107anja.',
+        },
+        {
+          title: 'Privatnost na prvom mjestu',
+          description: 'Va\u0161e datoteke nikada ne napu\u0161taju va\u0161 ure\u0111aj. Sva obrada odvija se lokalno u pregledniku \u2014 va\u0161e podatke ne \u0161aljemo ni na jedan server.',
+        },
+        {
+          title: 'Nastali iz stvarnih potreba',
+          description: 'Svaki alat nastao je iz stvarnog problema na koji smo nai\u0161li rade\u0107i na projektima klijenata. Ako smo to trebali mi, vjerojatno trebate i vi.',
+        },
+        {
+          title: 'Financirano reklamama, besplatno za vas',
+          description:
+            'Koristimo Google AdSense bannere za pokrivanje tro\u0161kova razvoja i hostinga. Zahvaljuju\u0107i prihodima od reklama, mo\u017eemo sve alate dr\u017eati besplatnima i nastaviti razvijati nove.',
+        },
+      ],
+    },
+    ourTools: {
+      title: 'Na\u0161i alati',
+      items: [
+        { title: 'Slike i faviconi', description: 'WebP konverter, ure\u0111iva\u010d slika i generator favicona. 3 alata za svakodnevni rad sa slikama.' },
+        { title: 'Meta i SEO', description: 'Provjera meta naslova i opisa plus broja\u010d rije\u010di i znakova za procjenu duljine teksta.' },
+        { title: 'E-po\u0161ta i komunikacija', description: 'Generator HTML potpisa e-po\u0161te s gotovim kodom za Gmail i Outlook.' },
+        { title: 'Boje i pristupa\u010dnost', description: 'WCAG provjera kontrasta, ekstraktor boja iz slike i generator paleta boja. 3 alata za rad s bojama.' },
+        { title: 'Tisak i materijali', description: 'Generator QR kodova za web stranice, vCard, jelovnike i letke. Izvoz u PNG i SVG.' },
+      ],
+    },
+    whatsNext: {
+      title: '\u0160to slijedi',
+      text: 'Aktivno radimo na pro\u0161irenju seta alata. Novi alati se dodaju redovito na temelju povratnih informacija korisnika i na\u0161eg vlastitog iskustva. Cilj je jedna platforma gdje vlasnici tvrtki, dizajneri i programeri imaju pristup svakom bitnom alatu \u2014 sve na jednom mjestu, sve besplatno.',
+    },
+    privacy: {
+      title: 'Privatnost i sigurnost',
+      textBefore:
+        'Po\u0161tujemo va\u0161u privatnost. Datoteke koje u\u010ditavate u na\u0161e alate obra\u0111uju se isklju\u010divo u va\u0161em pregledniku i nikada se ne \u0161alju na server. Analitiku (Google Analytics 4) i ogla\u0161avanje (Google AdSense) koristimo tek nakon va\u0161eg pristanka putem bannera za kola\u010di\u0107e. Svi detalji dostupni su u na\u0161im',
+      linkLabel: 'Pravilima privatnosti',
+      textAfter: '.',
+    },
+    cta: {
+      title: 'Isprobajte na\u0161e alate',
+      description: '10 besplatnih alata \u2014 bez registracije, bez ograni\u010denja, bez uploada datoteka na server',
+      btnOne: 'Idi na alate',
+      btnTwo: 'Kontakt',
+    },
+  },
+
+  lt: {
+    slug: 'apie-mus',
+    metadata: {
+      title: 'Apie Arteon \u2013 10 nemokam\u0173 \u012franki\u0173 \u017einiatinkliui, SEO ir dizainui',
+      description:
+        'Arteon yra k\u016brybinė agent\u016bra, kurianti nemokamus nar\u0161ykl\u0117s \u012frankius: WebP konverter\u012f, favicon generatori\u0173, spalv\u0173 kontrasto tikrintuvę, QR kod\u0173 generatori\u0173 ir daugiau. Be registracijos, be \u012fk\u0117limo \u2014 viskas veikia lokaliai.',
+    },
+    hero: {
+      title: 'Nemokami \u012frankiai i\u0161 k\u016brybinės agent\u016bros',
+      description:
+        '10 nar\u0161ykl\u0117s \u012franki\u0173 vaizdams, SEO, spalvoms, el. pa\u0161to para\u0161ams ir QR kodams \u2014 be registracijos, be fail\u0173 \u012fk\u0117limo, be apribojim\u0173',
+    },
+    whoWeAre: {
+      title: 'Kas mes',
+      p1: 'Arteon yra lenk\u0173 k\u016brybinė agent\u016bra. Be komercinio darbo, mes kuriame ir pri\u017ei\u016brime augančią nemokam\u0173 \u012franki\u0173 kolekcij\u0105, skirt\u0105 verslo savininkams, svetaini\u0173 k\u016br\u0117jams, dizaineriams, rinkodaros specialistams ir visiems, dirbantiems su skaitmeniniu turiniu.',
+      p2: 'Kiekvienas m\u016bs\u0173 \u012frankis sprend\u017eia konkret\u0173 kasdien\u012f u\u017edavin\u012f: vaizd\u0173 konvertavim\u0105, spalv\u0173 kontrasto tikrinim\u0105, favicon generavim\u0105, QR kod\u0173 k\u016brim\u0105 ir daugiau. M\u016bs\u0173 tikslas \u2013 sukurti i\u0161sam\u0173 \u012franki\u0173 rinkin\u012f, kuriame rasite visk\u0105, ko reikia, vienoje vietoje \u2014 nesijunginėjant tarp de\u0161im\u010di\u0173 skirtingų svetaini\u0173.',
+    },
+    whyFree: {
+      title: 'Kodėl si\u016blome nemokamus \u012frankius',
+      items: [
+        {
+          title: 'Be registracijos, be apribojimų',
+          description: 'Kiekvienas \u012frankis veikia i\u0161 karto nar\u0161yklėje. Be paskyros, be prisijungimo, be mokėjimo.',
+        },
+        {
+          title: 'Privatumas pirmiausia',
+          description:
+            'J\u016bs\u0173 failai niekada nepalieka \u012frenginio. Visas apdorojimas vyksta lokaliai nar\u0161yklėje \u2014 j\u016bs\u0173 duomen\u0173 nesiun\u010diame \u012f jok\u012f server\u012f.',
+        },
+        {
+          title: 'Sukurti i\u0161 tikr\u0173 poreiki\u0173',
+          description: 'Kiekvienas \u012frankis gimė i\u0161 tikros problemos, su kuria susid\u016brėme dirbdami su klient\u0173 projektais. Jei mums to reikėjo, tikėtina, kad jums taip pat.',
+        },
+        {
+          title: 'Finansuojami reklamos, jums nemokamai',
+          description:
+            'Naudojame Google AdSense banerius, kad padengtume k\u016brimo ir talpinimo i\u0161laidas. Dėl reklamos pajam\u0173 galime visus \u012frankius i\u0161laikyti nemokamus ir toliau kurti naujus.',
+        },
+      ],
+    },
+    ourTools: {
+      title: 'M\u016bs\u0173 \u012frankiai',
+      items: [
+        { title: 'Vaizdai ir favicon', description: 'WebP konverteris, vaizd\u0173 redaktorius ir favicon generatorius. 3 \u012frankiai kasdieniam darbui su vaizdais.' },
+        { title: 'Meta ir SEO', description: 'Meta pavadinimo ir apra\u0161ymo tikrintuvas bei \u017eod\u017ei\u0173 ir simboli\u0173 skaičiuokl\u0117 teksto ilgiui \u012fvertinti.' },
+        { title: 'El. pa\u0161tas ir komunikacija', description: 'HTML el. pa\u0161to para\u0161o generatorius su paruoštu kodu Gmail ir Outlook.' },
+        {
+          title: 'Spalvos ir prieinamumas',
+          description: 'WCAG kontrasto tikrintuvas, spalv\u0173 i\u0161traukiklis i\u0161 vaizdo ir spalv\u0173 palečių generatorius. 3 \u012frankiai darbui su spalvomis.',
+        },
+        { title: 'Spauda ir med\u017eiaga', description: 'QR kod\u0173 generatorius svetainėms, vCard, meniu ir skrajutėms. Eksportas \u012f PNG ir SVG.' },
+      ],
+    },
+    whatsNext: {
+      title: 'Kas toliau',
+      text: 'Aktyviai dirbame plesdami \u012franki\u0173 rinkin\u012f. Nauji \u012frankiai pridedami reguliariai pagal naudotoj\u0173 atsiliepimus ir m\u016bs\u0173 pati\u0119 patirt\u012f. Tikslas \u2013 viena platforma, kurioje verslo savininkai, dizaineriai ir k\u016brėjai turi prieig\u0105 prie kiekvieno svarbaus \u012frankio \u2014 viskas vienoje vietoje, viskas nemokamai.',
+    },
+    privacy: {
+      title: 'Privatumas ir saugumas',
+      textBefore:
+        'Gerbiame j\u016bs\u0173 privatumą. Failai, kuriuos \u012fkeliate \u012f m\u016bs\u0173 \u012frankius, apdorojami i\u0161skirtinai j\u016bs\u0173 nar\u0161yklėje ir niekada nesiun\u010diami \u012f server\u012f. Analitik\u0105 (Google Analytics 4) ir reklamą (Google AdSense) naudojame tik gavę j\u016bs\u0173 sutikim\u0105 per slapuk\u0173 juost\u0105. Vi\u0161i detaliai pateikiami m\u016bs\u0173',
+      linkLabel: 'Privatumo politikoje',
+      textAfter: '.',
+    },
+    cta: {
+      title: 'I\u0161bandykite m\u016bs\u0173 \u012frankius',
+      description: '10 nemokam\u0173 \u012franki\u0173 \u2014 be registracijos, be apribojim\u0173, be fail\u0173 \u012fk\u0117limo \u012f serverius',
+      btnOne: 'Eiti \u012f \u012frankius',
+      btnTwo: 'Kontaktai',
+    },
+  },
+
+  sl: {
+    slug: 'o-nas',
+    metadata: {
+      title: 'O Arteonu \u2013 10 brezpla\u010dnih orodij za splet, SEO in oblikovanje',
+      description:
+        'Arteon je ustvarjalna agencija, ki razvija brezpla\u010dna orodja v brskalniku: pretvornik WebP, generator favicon, preverjalnik barvnega kontrasta, generator QR kod in ve\u010d. Brez registracije, brez nalaganja \u2014 vse deluje lokalno.',
+    },
+    hero: {
+      title: 'Brezpla\u010dna orodja ustvarjalne agencije',
+      description: '10 orodij v brskalniku za slike, SEO, barve, e-po\u0161tne podpise in QR kode \u2014 brez registracije, brez nalaganja datotek, brez omejitev',
+    },
+    whoWeAre: {
+      title: 'Kdo smo',
+      p1: 'Arteon je poljska ustvarjalna agencija. Poleg na\u0161ega komercialnega dela razvijamo in vzdr\u017eujemo rasto\u010do zbirko brezpla\u010dnih orodij, namenjenih lastnikom podjetij, ustvarjalcem spletnih strani, oblikovalcem, tr\u017enikom in vsem, ki delajo z digitalno vsebino.',
+      p2: 'Vsako orodje, ki ga ustvarimo, re\u0161uje dolo\u010den vsakdanji problem: pretvarjanje slik, preverjanje barvnega kontrasta, generiranje faviconov, ustvarjanje QR kod in ve\u010d. Na\u0161 cilj je zgraditi celovit nabor orodij, kjer najdete vse, kar potrebujete, na enem mestu \u2014 brez preklapljanja med desetinami razli\u010dnih spletnih strani.',
+    },
+    whyFree: {
+      title: 'Zakaj ponujamo brezpla\u010dna orodja',
+      items: [
+        {
+          title: 'Brez registracije, brez omejitev',
+          description: 'Vsako orodje deluje takoj v brskalniku. Brez ra\u010duna, brez prijave, brez pla\u010dila.',
+        },
+        {
+          title: 'Zasebnost na prvem mestu',
+          description: 'Va\u0161e datoteke nikoli ne zapustijo va\u0161e naprave. Vsa obdelava poteka lokalno v brskalniku \u2014 va\u0161ih podatkov ne po\u0161iljamo na noben stre\u017enik.',
+        },
+        {
+          title: 'Ustvarjeno iz dejanskih potreb',
+          description: 'Vsako orodje je nastalo iz resničnega problema, na katerega smo naleteli pri delu na projektih strank. Če smo ga potrebovali mi, ga verjetno potrebujete tudi vi.',
+        },
+        {
+          title: 'Financirano z oglasi, za vas brezpla\u010dno',
+          description:
+            'Uporabljamo pasice Google AdSense za pokritje stro\u0161kov razvoja in gostovanja. Zahvaljujo\u010d prihodkom od ogla\u0161evanja lahko vsa orodja ohranjamo brezpla\u010dna in nadaljujemo z razvojem novih.',
+        },
+      ],
+    },
+    ourTools: {
+      title: 'Na\u0161a orodja',
+      items: [
+        { title: 'Slike in faviconi', description: 'Pretvornik WebP, urejevalnik slik in generator favicon. 3 orodja za vsakodnevno delo s slikami.' },
+        { title: 'Meta in SEO', description: 'Preverjalnik meta naslova in opisa ter \u0161tevec besed in znakov za oceno dol\u017eine besedila.' },
+        { title: 'E-po\u0161ta in komunikacija', description: 'Generator HTML e-po\u0161tnega podpisa s pripravljeno kodo za Gmail in Outlook.' },
+        { title: 'Barve in dostopnost', description: 'WCAG preverjalnik kontrasta, izlu\u0161\u010devalnik barv iz slike in generator barvnih palet. 3 orodja za delo z barvami.' },
+        { title: 'Tisk in materiali', description: 'Generator QR kod za spletne strani, vCard, jelovnike in letake. Izvoz v PNG in SVG.' },
+      ],
+    },
+    whatsNext: {
+      title: 'Kaj sledi',
+      text: 'Aktivno delamo na \u0161iritvi nabora orodij. Nova orodja dodajamo redno na podlagi povratnih informacij uporabnikov in na\u0161ih lastnih izku\u0161enj. Cilj je ena platforma, kjer imajo lastniki podjetij, oblikovalci in razvijalci dostop do vsakega pomembnega orodja \u2014 vse na enem mestu, vse brezpla\u010dno.',
+    },
+    privacy: {
+      title: 'Zasebnost in varnost',
+      textBefore:
+        'Spo\u0161tujemo va\u0161o zasebnost. Datoteke, ki jih nalo\u017eite v na\u0161a orodja, se obdelujejo izklju\u010dno v va\u0161em brskalniku in se nikoli ne po\u0161iljajo na stre\u017enik. Analitiko (Google Analytics 4) in ogla\u0161evanje (Google AdSense) uporabljamo \u0161ele po va\u0161em soglasju prek pasice pi\u0161kotkov. Vsi podrobnosti so na voljo v na\u0161i',
+      linkLabel: 'Politiki zasebnosti',
+      textAfter: '.',
+    },
+    cta: {
+      title: 'Preizkusite na\u0161a orodja',
+      description: '10 brezpla\u010dnih orodij \u2014 brez registracije, brez omejitev, brez nalaganja datotek na stre\u017enike',
+      btnOne: 'Pojdi na orodja',
+      btnTwo: 'Kontakt',
+    },
+  },
 };
 
 // ---------------------------------------------------------------------------

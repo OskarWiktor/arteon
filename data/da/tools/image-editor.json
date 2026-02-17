@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Gratis billedredigering – Beskær og tilpas til sociale medier",
     "description": "Beskær og tilpas billeder til Instagram, Facebook, LinkedIn og mere. Vælg et færdigt format eller indtast egne mål. Uden registrering, uden begrænsninger.",
-    "ogImage": "/assets/tools/narzedzia-edytor-zdjec-online.webp",
+    "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
     "path": "/da/vaerktojer/billedrediger"
   },
   "hero": {
     "title": "Beskær og tilpas billeder til ethvert billedformat",
     "description": "Upload et billede, vælg et færdigt format til sociale medier eller indtast egne mål, og download det beskårne billede.",
-    "backgroundImage": "/assets/tools/narzedzia-edytor-zdjec-online.webp"
+    "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
   "breadcrumbs": {
     "second": { "href": "/da/vaerktojer", "label": "Værktøjer" },

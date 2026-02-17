@@ -3,7 +3,7 @@
   "locale": "pl",
   "metadata": {
     "title": "Konwerter JPG/PNG na WebP za darmo – bez limitu plików",
-    "description": "Zmniejsz wagę zdjęć nawet o 35% bez utraty jakości. Konwersja JPG i PNG na WebP odbywa się lokalnie – pliki nie opuszczają Twojego urządzenia. Bez rejestracji, bez limitu.",
+    "description": "Zmniejsz wagę zdjęć nawet o 35% bez utraty jakości. Konwersja JPG i PNG na WebP odbywa się lokalnie – pliki nie opuszczają Twojego urządzenia. Bez rejestracji,",
     "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
     "path": "/narzedzia/jpg-png-na-webp-bez-limitu"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/narzedzia", "label": "Narzędzia" },
-    "third": { "href": "/narzedzia/jpg-png-na-webp-bez-limitu", "label": "Konwerter JPG/PNG na WebP" }
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/jpg-png-na-webp-bez-limitu",
+      "label": "Konwerter JPG/PNG na WebP"
+    }
   },
   "schemas": {
     "software": {
@@ -38,58 +44,100 @@
       "name": "Jak zamienić JPG i PNG na WebP online",
       "description": "Jak przekonwertować obrazy JPG i PNG na format WebP. Ustawienie jakości (60-95%), mechanizm Smart Quality i pobieranie przekonwertowanych plików jako ZIP.",
       "steps": [
-        { "name": "Dodaj pliki do konwersji", "text": "Przeciągnij obrazy JPG lub PNG na wyznaczone pole albo wybierz pliki z dysku. Można dodać wiele plików naraz." },
-        { "name": "Ustaw poziom jakości", "text": "Wybierz jakość wynikowego pliku WebP za pomocą suwaka (60-95%). Domyślna wartość 80% to dobry kompromis między jakością a rozmiarem." },
-        { "name": "Uruchom konwersję", "text": "Po uruchomieniu konwersji narzędzie przetworzy wszystkie pliki w kolejce i automatycznie zastosuje Smart Quality." },
-        { "name": "Pobierz przekonwertowane pliki", "text": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jako archiwum ZIP." }
+        {
+          "name": "Dodaj pliki do konwersji",
+          "text": "Przeciągnij obrazy JPG lub PNG na wyznaczone pole albo wybierz pliki z dysku. Można dodać wiele plików naraz."
+        },
+        {
+          "name": "Ustaw poziom jakości",
+          "text": "Wybierz jakość wynikowego pliku WebP za pomocą suwaka (60-95%). Domyślna wartość 80% to dobry kompromis między jakością a rozmiarem."
+        },
+        {
+          "name": "Uruchom konwersję",
+          "text": "Po uruchomieniu konwersji narzędzie przetworzy wszystkie pliki w kolejce i automatycznie zastosuje Smart Quality."
+        },
+        {
+          "name": "Pobierz przekonwertowane pliki",
+          "text": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jako archiwum ZIP."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Co to jest WebP i dlaczego warto konwertować obrazy?",
       "html": "<p class=\"text-mid mb-4\">WebP to format obrazów stworzony przez Google, który pozwala zmniejszyć rozmiar plików graficznych nawet o 25-35% w porównaniu z JPG i PNG - przy zachowaniu porównywalnej jakości wizualnej. Mniejsze pliki oznaczają szybsze ładowanie strony, co przekłada się na lepsze doświadczenie użytkowników i wyższe wyniki w <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"text-mid mb-4\">Format WebP jest wspierany przez wszystkie nowoczesne przeglądarki: Chrome, Firefox, Safari (od wersji 14) i Edge. Jeśli prowadzisz stronę internetową, sklep online lub bloga, konwersja obrazów do WebP to jeden z najprostszych sposobów na poprawę wydajności witryny.</p><p class=\"text-mid\">Konwerter obsługuje zarówno zdjęcia JPG, jak i grafiki PNG (w tym te z przezroczystością). Możesz przekonwertować dowolną liczbę plików naraz - wszystkie zostaną przetworzone lokalnie w przeglądarce, bez wysyłania na serwer.</p>"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak przekonwertować zdjęcia na WebP?",
       "description": "Konwersja na WebP zajmuje kilka sekund:",
       "grid": "three",
       "items": [
-        { "title": "1. Dodaj pliki", "description": "Przeciągnij zdjęcia JPG lub PNG na wyznaczone pole albo wybierz pliki z dysku. Można dodać dowolną liczbę plików naraz." },
-        { "title": "2. Ustaw jakość", "description": "Wybierz poziom jakości (domyślnie 80%). Niższa wartość oznacza mniejszy plik. Dla większości zastosowań 80% to optymalne ustawienie." },
-        { "title": "3. Pobierz WebP", "description": "Po konwersji pobierz pliki pojedynczo lub jako archiwum ZIP. Przy każdym pliku widoczna jest informacja o zaoszczędzonym miejscu." }
+        {
+          "title": "1. Dodaj pliki",
+          "description": "Przeciągnij zdjęcia JPG lub PNG na wyznaczone pole albo wybierz pliki z dysku. Można dodać dowolną liczbę plików naraz."
+        },
+        {
+          "title": "2. Ustaw jakość",
+          "description": "Wybierz poziom jakości (domyślnie 80%). Niższa wartość oznacza mniejszy plik. Dla większości zastosowań 80% to optymalne ustawienie."
+        },
+        {
+          "title": "3. Pobierz WebP",
+          "description": "Po konwersji pobierz pliki pojedynczo lub jako archiwum ZIP. Przy każdym pliku widoczna jest informacja o zaoszczędzonym miejscu."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Jak dodać pliki do konwersji?",
       "html": "<p class=\"text-mid\">Narzędzie oferuje dwa sposoby dodawania plików:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Przeciągnij i upuść</strong> - chwyć pliki z folderu na komputerze i upuść je na obszar z napisem &quot;Przeciągnij i upuść obrazy tutaj&quot;. Możesz przeciągnąć wiele plików naraz.</li><li><strong>Wybór z dysku</strong> - po kliknięciu w pole do dodania plików otworzy się okno wyboru. Przytrzymanie Ctrl (lub Cmd na Mac) pozwala wybrać kilka plików jednocześnie.</li></ul><p class=\"text-mid mt-3\">Narzędzie akceptuje tylko pliki JPG i PNG. Jeśli przypadkowo dodasz plik w innym formacie (np. GIF lub BMP), zostanie on automatycznie pominięty i zobaczysz komunikat informacyjny.</p><p class=\"text-mid mt-3\"><strong>Prywatność:</strong> Wszystkie pliki są przetwarzane lokalnie w przeglądarce. Nie są nigdzie wysyłane - nie trafiają na żaden serwer. Po zamknięciu karty lub przeglądarki pliki zostają usunięte z pamięci.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Co oznaczają statusy plików?",
       "html": "<p class=\"text-mid\">Każdy plik w kolejce ma jeden z czterech statusów, które informują o postępie konwersji:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Oczekuje</span><p class=\"text-mid\">Plik jest w kolejce i czeka na przetworzenie. Konwersja jeszcze się nie rozpoczęła.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Przetwarzanie...</span><p class=\"text-mid\">Plik jest w trakcie konwersji. Dla większości obrazów trwa to ułamek sekundy, ale bardzo duże pliki mogą wymagać kilku sekund.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Gotowe</span><p class=\"text-mid\">Konwersja zakończyła się pomyślnie. Plik WebP jest gotowy do pobrania. Przy statusie zobaczysz też informację o rozmiarze przed i po konwersji.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Błąd</span><p class=\"text-mid\">Coś poszło nie tak podczas konwersji. Może to być uszkodzony plik źródłowy lub problem z pamięcią przeglądarki przy bardzo dużych obrazach. Przycisk &quot;Konwertuj ponownie&quot; pozwala powtórzyć próbę.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Jak działa Smart Quality?",
       "html": "<p class=\"text-mid\">Smart Quality to automatyczny mechanizm optymalizacji, który zapewnia, że wynikowy plik WebP nigdy nie będzie większy od oryginału. Działa to w następujący sposób:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>Narzędzie konwertuje obraz z ustawioną przez Ciebie jakością (np. 80%).</li><li>Sprawdza, czy wynikowy plik jest mniejszy od oryginału.</li><li>Jeśli jest większy, automatycznie obniża jakość i próbuje ponownie.</li><li>Proces powtarza się, aż wynikowy plik będzie mniejszy lub jakość spadnie poniżej bezpiecznego minimum.</li></ol><p class=\"text-mid mt-3\">Narzędzie automatycznie dobiera optymalne ustawienia. Jeśli masz obraz, który jest już mocno skompresowany (np. JPG o jakości 60%), parametry zostaną automatycznie dostosowane, aby nadal osiągnąć oszczędność rozmiaru.</p><p class=\"text-mid mt-3\">Przy każdym pliku zobaczysz informację &quot;Użyta jakość WebP&quot; - to faktyczna jakość zastosowana po ewentualnym dostosowaniu przez Smart Quality.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Ustawienia jakości - co wybrać?",
       "demoHtml": "<div class=\"space-y-4\"><div><p class=\"text-dark mb-2 text-sm! font-medium uppercase\">Ustaw jakość</p><div class=\"flex items-center\"><input type=\"range\" min=\"60\" max=\"95\" value=\"80\" class=\"flex-1\" disabled /><span class=\"text-mid w-12 text-right text-sm!\">80%</span></div><span class=\"text-light mt-1 block text-xs\">Wyższa wartość = lepsza jakość, większy plik</span></div><div class=\"flex items-center\"><input type=\"checkbox\" checked class=\"h-4 w-4 rounded border-neutral-300\" disabled /><span class=\"text-mid pl-2 text-sm!\">Automatycznie pobierz po konwersji</span></div><div class=\"ml-6 flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">Pobierz osobno</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Pobierz jako ZIP</span></div></div>",
       "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (domyślne)</strong> - dobry kompromis dla większości zastosowań.</li><li><strong>85-90%</strong> - dla zdjęć produktowych, portfolio fotograficznych.</li><li><strong>60-70%</strong> - gdy priorytetem jest minimalizacja rozmiaru.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Jak pobrać przekonwertowane pliki?",
@@ -97,19 +145,28 @@
       "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium text-white\" disabled>Konwertuj</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Pobierz wszystkie</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Pobierz jako ZIP</button></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled /><span class=\"text-mid pl-2 text-sm!\">Dołącz raport CSV do ZIP</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Rozmiar wejściowy: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Rozmiar po konwersji: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">Zaoszczędzono: <strong class=\"text-success-icon\">1.5 MB (~63%)</strong></p></div></div>",
       "html": "<p class=\"text-mid\">Po zakończeniu konwersji masz kilka opcji pobierania:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Pobierz</strong> (przy każdym pliku) - pobiera pojedynczy plik WebP.</li><li><strong>Pobierz wszystkie</strong> - pobiera wszystkie pliki jeden po drugim.</li><li><strong>Pobierz jako ZIP</strong> - tworzy archiwum ze wszystkimi plikami.</li></ul><p class=\"text-mid mt-3\"><strong>Opcja raportu CSV:</strong> Dołącz raport z podsumowaniem konwersji do archiwum ZIP.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Raport oszczędności - co pokazuje?",
       "html": "<p class=\"text-mid\">Pod przyciskami konwersji znajduje się podsumowanie z informacjami o oszczędności:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Łączny rozmiar wejściowy</strong> - suma rozmiarów wszystkich oryginalnych plików.</li><li><strong>Łączny rozmiar po konwersji</strong> - suma rozmiarów wszystkich plików WebP.</li><li><strong>Zaoszczędzono</strong> - ile miejsca zyskałeś dzięki konwersji (w KB/MB i procentach).</li></ul><p class=\"text-mid mt-3\"><strong>Skopiuj podsumowanie:</strong> Przycisk przenosi raport do schowka w formacie tekstowym. Można go wkleić do notatek, e-maila lub dokumentu - przydatne przy dokumentowaniu optymalizacji grafik.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Ile można zaoszczędzić konwertując na WebP?",
       "html": "<p class=\"text-mid mb-4\">Oszczędności zależą od rodzaju obrazu i jego oryginalnej kompresji. Poniżej przykładowe wyniki dla typowych plików:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Zdjęcie JPG (aparat)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczędność: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Grafika PNG (logo)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczędność: ~75%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Zdjęcie produktowe</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczędność: ~63%</p></div></div><p class=\"text-light mt-4 text-sm\">Rzeczywiste oszczędności mogą się różnić. Konwerter pokazuje dokładny rozmiar przed i po konwersji dla każdego pliku, a także podsumowanie łącznych oszczędności.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Co wyróżnia konwerter JPG i PNG na WebP?",
@@ -137,7 +194,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Na co zwrócić uwagę?",
@@ -166,7 +226,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Kiedy warto konwertować obrazy na WebP?",
@@ -175,14 +238,37 @@
       "btnOne": "Jak optymalizować zdjęcia na stronę",
       "btnOneLink": "/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp",
       "items": [
-        { "icon": "RiBuilding2Line", "title": "Strony firmowe i wizytówki", "description": "Szybsze ładowanie poprawia pierwsze wrażenie i zmniejsza współczynnik odrzuceń." },
-        { "icon": "RiShoppingCartLine", "title": "Sklepy internetowe", "description": "Zdjęcia produktowe to często największe pliki na stronie; ich optymalizacja przyspiesza cały sklep." },
-        { "icon": "RiArticleLine", "title": "Blogi i portale", "description": "Artykuły z wieloma zdjęciami ładują się znacznie szybciej." },
-        { "icon": "RiCameraLine", "title": "Portfolio fotograficzne", "description": "Przy jakości 85-90% różnica wizualna jest niezauważalna, a pliki są mniejsze." },
-        { "icon": "RiSmartphoneLine", "title": "Aplikacje webowe (PWA)", "description": "Mniejsze zasoby oznaczają szybsze działanie, szczególnie na urządzeniach mobilnych." }
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Strony firmowe i wizytówki",
+          "description": "Szybsze ładowanie poprawia pierwsze wrażenie i zmniejsza współczynnik odrzuceń."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Sklepy internetowe",
+          "description": "Zdjęcia produktowe to często największe pliki na stronie; ich optymalizacja przyspiesza cały sklep."
+        },
+        {
+          "icon": "RiArticleLine",
+          "title": "Blogi i portale",
+          "description": "Artykuły z wieloma zdjęciami ładują się znacznie szybciej."
+        },
+        {
+          "icon": "RiCameraLine",
+          "title": "Portfolio fotograficzne",
+          "description": "Przy jakości 85-90% różnica wizualna jest niezauważalna, a pliki są mniejsze."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Aplikacje webowe (PWA)",
+          "description": "Mniejsze zasoby oznaczają szybsze działanie, szczególnie na urządzeniach mobilnych."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Najczęściej zadawane pytania dotyczące konwertera zdjęć na WebP",
@@ -226,9 +312,18 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ],
   "cta": {
     "title": "Potrzebujesz pełnej optymalizacji strony?",

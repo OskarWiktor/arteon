@@ -151,6 +151,36 @@ export default function Navigation() {
                   linkText: 'v\u00e6rkt\u00f8jer',
                   linkHref: getToolHref('emailSignature', locale),
                 },
+                no: {
+                  text: 'E-postsignatur-generatoren er oppdatert \u2013 oppdag nye funksjoner',
+                  linkText: 'verkt\u00f8y',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                fi: {
+                  text: 'S\u00e4hk\u00f6postiallekirjoitusgeneraattori p\u00e4ivitetty \u2013 tutustu uusiin ominaisuuksiin',
+                  linkText: 'ty\u00f6kalut',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                sk: {
+                  text: 'Gener\u00e1tor e-mailov\u00e9ho podpisu aktualizovan\u00fd \u2013 objavte nov\u00e9 funkcie',
+                  linkText: 'n\u00e1stroje',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                hr: {
+                  text: 'Generator e-mail potpisa a\u017euriran \u2013 otkrijte nove funkcije',
+                  linkText: 'alati',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                lt: {
+                  text: 'El. pa\u0161to para\u0161o generatorius atnaujintas \u2013 atraskite naujas funkcijas',
+                  linkText: '\u012frankiai',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                sl: {
+                  text: 'Generator e-po\u0161tnega podpisa posodobljen \u2013 odkrijte nove funkcije',
+                  linkText: 'orodja',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
               } satisfies Record<Locale, { text: string; linkText: string; linkHref: string }>
             )[locale],
           },

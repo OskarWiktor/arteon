@@ -3,7 +3,7 @@
   "locale": "pl",
   "metadata": {
     "title": "Ekstraktor kolorów z obrazu za darmo – paleta ze zdjęcia",
-    "description": "Wgraj zdjęcie lub logo i pobierz paletę do 12 dominujących kolorów z kodami HEX i RGB. Idealne do UI, brandingu i mediów społecznościowych. Bez rejestracji, bez limitu.",
+    "description": "Wgraj zdjęcie lub logo i pobierz paletę do 12 dominujących kolorów z kodami HEX i RGB. Idealne do UI, brandingu i mediów społecznościowych. Bez rejestracji,",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/narzedzia/ekstraktor-kolorow-z-obrazu"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/narzedzia", "label": "Narzędzia" },
-    "third": { "href": "/narzedzia/ekstraktor-kolorow-z-obrazu", "label": "Ekstraktor kolorów z obrazu" }
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/ekstraktor-kolorow-z-obrazu",
+      "label": "Ekstraktor kolorów z obrazu"
+    }
   },
   "schemas": {
     "software": {
@@ -36,39 +42,69 @@
       "name": "Jak wyciągnąć kolory ze zdjęcia lub obrazu",
       "description": "Jak wyciągnąć dominujące kolory ze zdjęcia lub logo. Wgraj obraz w formacie PNG, JPG lub SVG, a narzędzie wygeneruje paletę do 12 kolorów z kodami HEX.",
       "steps": [
-        { "name": "Dodaj obraz", "text": "Przeciągnij plik na wyznaczone pole lub wybierz obraz z dysku. Obsługiwane formaty to PNG, JPG i SVG." },
-        { "name": "Poczekaj na analizę", "text": "Narzędzie automatycznie przeanalizuje obraz i wyciągnie z niego dominujące kolory." },
-        { "name": "Skopiuj kolory", "text": "Przy każdym kolorze znajdziesz przycisk kopiowania – kod HEX trafi do schowka systemowego." }
+        {
+          "name": "Dodaj obraz",
+          "text": "Przeciągnij plik na wyznaczone pole lub wybierz obraz z dysku. Obsługiwane formaty to PNG, JPG i SVG."
+        },
+        {
+          "name": "Poczekaj na analizę",
+          "text": "Narzędzie automatycznie przeanalizuje obraz i wyciągnie z niego dominujące kolory."
+        },
+        {
+          "name": "Skopiuj kolory",
+          "text": "Przy każdym kolorze znajdziesz przycisk kopiowania – kod HEX trafi do schowka systemowego."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Po co wyciągać kolory z obrazu?",
       "html": "<p class=\"text-mid mb-4\">Każde zdjęcie, logo czy grafika zawiera barwy, które można wykorzystać jako gotową paletę kolorów. Ekstraktor analizuje obraz i pokazuje, które kolory na nim dominują - wraz z kodami HEX i wartościami RGB gotowymi do wklejenia w projekt.</p><p class=\"text-mid mb-4\">W praktyce oznacza to, że zamiast ręcznie próbkować kolory w programie graficznym (pixel po pikselu), wgrywasz jedno zdjęcie i dostajesz uporządkowaną listę do 12 barw. To przydaje się przy dobieraniu kolorów do strony internetowej, tworzeniu spójnych grafik do mediów społecznościowych lub budowaniu identyfikacji wizualnej na podstawie istniejącego materiału.</p><p class=\"text-mid\">Cała analiza odbywa się lokalnie w przeglądarce - obraz nie jest wysyłany na żaden serwer.</p>"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak korzystać z ekstraktora kolorów z obrazu?",
       "description": "Cały proces zajmuje kilka sekund:",
       "grid": "three",
       "items": [
-        { "title": "1. Wgraj obraz", "description": "Przeciągnij plik na wyznaczone pole lub wybierz go z dysku. Obsługiwane formaty to PNG, JPG i SVG." },
-        { "title": "2. Poczekaj na analizę", "description": "Narzędzie automatycznie przeanalizuje obraz i wyciągnie z niego do 12 dominujących kolorów." },
-        { "title": "3. Skopiuj potrzebne kolory", "description": "Przy każdym kolorze znajduje się przycisk kopiowania - kod HEX lub RGB trafia do schowka i można go od razu wkleić w projekt." }
+        {
+          "title": "1. Wgraj obraz",
+          "description": "Przeciągnij plik na wyznaczone pole lub wybierz go z dysku. Obsługiwane formaty to PNG, JPG i SVG."
+        },
+        {
+          "title": "2. Poczekaj na analizę",
+          "description": "Narzędzie automatycznie przeanalizuje obraz i wyciągnie z niego do 12 dominujących kolorów."
+        },
+        {
+          "title": "3. Skopiuj potrzebne kolory",
+          "description": "Przy każdym kolorze znajduje się przycisk kopiowania - kod HEX lub RGB trafia do schowka i można go od razu wkleić w projekt."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Jak wygląda paleta kolorów z obrazu?",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Przykładowe kolory wyciągnięte z obrazu natury</p></div>",
       "html": "<p class=\"text-mid mb-4\">Po wgraniu obrazu ekstraktor wyświetla listę dominujących barw posortowanych od najczęściej występującej. Przy każdym kolorze widoczny jest kod HEX i wartość RGB - gotowe do wklejenia w CSS, Figmę lub dowolny program graficzny.</p><p class=\"text-mid\">Liczba wyciągniętych kolorów zależy od zawartości obrazu. Zdjęcie krajobrazowe da bogatszą paletę (8–12 barw), a proste logo w dwóch kolorach - odpowiednio mniej pozycji.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Jakie obrazy dają najlepsze wyniki w ekstraktorze kolorów?",
@@ -97,7 +133,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTimeline",
       "title": "Jak działa ekstrakcja kolorów z obrazu?",
@@ -125,7 +164,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Rozwiązywanie problemów z ekstraktorem kolorów",
@@ -153,7 +195,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Co wyróżnia ekstraktor kolorów z obrazu?",
@@ -181,7 +226,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Gdzie wykorzystać kolory wyciągnięte z obrazu?",
@@ -209,7 +257,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Najczęściej zadawane pytania dotyczące ekstraktora kolorów z obrazu",
@@ -241,9 +292,18 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ],
   "cta": {
     "title": "Potrzebujesz spójnej identyfikacji wizualnej?",

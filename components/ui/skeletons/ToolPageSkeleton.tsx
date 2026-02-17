@@ -10,7 +10,7 @@ interface ToolPageSkeletonProps {
 export default function ToolPageSkeleton({ variant = 'default' }: ToolPageSkeletonProps) {
   return (
     <>
-      <HeroBannerSkeleton />
+      <HeroBannerSkeleton size="tools" />
       <BreadcrumbsSkeleton />
       <ToolPanelSkeleton variant={variant} />
       <ContentSkeleton />

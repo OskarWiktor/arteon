@@ -1,0 +1,168 @@
+import TableOfContents from '@/components/sections/TableOfContent';
+import ButtonToTop from '@/components/ui/buttons/ButtonToTop';
+import Gap from '@/components/ui/Gap';
+import SectionInfo from '@/components/ui/sections/SectionInfo';
+import Wrapper from '@/components/ui/Wrapper';
+import { getPrivacyPageMeta, getPrivacyAlternates } from '@/lib/i18n/pages/privacy';
+import { toAbsoluteUrl } from '@/utils/absoluteUrl';
+
+const LOCALE = 'no' as const;
+const meta = getPrivacyPageMeta(LOCALE)!;
+const alternates = getPrivacyAlternates(LOCALE);
+
+export const metadata = {
+  title: meta.title,
+  description: meta.description,
+  alternates,
+  openGraph: {
+    title: meta.title,
+    description: meta.description,
+    url: toAbsoluteUrl('/no/personvernpolicy'),
+    type: 'website',
+    images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
+  },
+};
+
+export default function PrivacyPolicyPage() {
+  return (
+    <>
+      <Gap size="xs" />
+      <Wrapper as="article" id="article-root" itemScope itemType="https://schema.org/Article" className="flex flex-col-reverse gap-8 select-none lg:grid lg:grid-cols-[1fr_300px]">
+        <div>
+          <h1>Personvernpolicy</h1>
+          <p className="mt-2 text-sm opacity-70">
+            Versjon: <strong>13.02.2026</strong>
+          </p>
+          <Gap size="xs" />
+          <SectionInfo title="1. Behandlingsansvarlig">
+            <p>Behandlingsansvarlig for personopplysninger er Arteon med hovedkontor i gmina Czernichow, Zagacie, ul. Jasminowa 36, 32-070, Polen.</p>
+            <p>
+              NIP: <strong>9442284430</strong>, REGON: <strong>528888241</strong>
+            </p>
+            <p>
+              Kontakt: <strong>kontakt@arteonagency.pl</strong>, tlf.: <strong>+48 516 466 255</strong>.
+            </p>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="2. Omfang av innsamlede data">
+            <ul className="list-disc space-y-1 pl-6">
+              <li>data sendt via kontaktskjemaet (fornavn, etternavn, e-post, meldingsinnhold),</li>
+              <li>tekniske data samlet inn automatisk (IP-adresse, enhetsinformasjon, informasjonskapsler),</li>
+              <li>analysedata fra Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics og Vercel Speed Insights,</li>
+              <li>analysedata fra Metricool (besoksstatistikk, trafikkkilder),</li>
+              <li>data samlet inn av Google AdSense for visning av annonser (annonseidentifikatorer, annonseinformasjonskapsler, annonseinteraksjonsdata),</li>
+              <li>serverloggfiler og sikkerhetshendelser (f.eks. tidsstempler, IP-adresser, foresporselsoverskrifter).</li>
+            </ul>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="3. Formal og rettsgrunnlag for behandling">
+            <ol className="list-decimal space-y-1 pl-6">
+              <li>
+                <strong>Kundekommunikasjon</strong> — besvarelse av henvendelser fra kontaktskjemaet (art. 6 nr. 1 bokstav b) og f) GDPR).
+              </li>
+              <li>
+                <strong>Markedsforing og analyse</strong> — nettstedsstatistikk, innholdsoptimalisering (art. 6 nr. 1 bokstav f) GDPR).
+              </li>
+              <li>
+                <strong>Levering av tjenester</strong> — utarbeidelse av tilbud, kontrakter, fakturaer (art. 6 nr. 1 bokstav b) GDPR).
+              </li>
+              <li>
+                <strong>Rettslige forpliktelser</strong> — f.eks. oppbevaring av regnskapsdokumentasjon (art. 6 nr. 1 bokstav c) GDPR).
+              </li>
+              <li>
+                <strong>Sikkerhet og krav</strong> — logghandtering, forebygging av misbruk, fastsettelse/handheving/forsvar av krav (art. 6 nr. 1 bokstav f) GDPR).
+              </li>
+              <li>
+                <strong>Annonsevisning</strong> — visning av interessebaserte annonser via Google AdSense (art. 6 nr. 1 bokstav a) GDPR — brukersamtykke gitt via informasjonskapsel-banner).
+              </li>
+            </ol>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="4. Informasjonskapsler">
+            <p>Nettstedet bruker informasjonskapsler til folgende formal:</p>
+            <ul className="list-disc space-y-1 pl-6">
+              <li>sikring av korrekt funksjon av nettstedet,</li>
+              <li>trafikkanalyse (Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics, Metricool),</li>
+              <li>markedsforingsformaal,</li>
+              <li>visning av interessebaserte annonser (Google AdSense / DoubleClick).</li>
+            </ul>
+            <p>Google AdSense kan bruke DoubleClick-informasjonskapsler for aa vise annonser basert paa brukerens tidligere besok paa vaart nettsted eller andre nettsteder.</p>
+            <p>
+              Du kan deaktivere personaliserte annonser i{' '}
+              <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" className="inline-link">
+                Google Ads-innstillinger
+              </a>{' '}
+              eller paa{' '}
+              <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer" className="inline-link">
+                aboutads.info
+              </a>
+              .
+            </p>
+            <p>Nettstedet bruker Google Consent Mode v2. Det betyr at Googles analyse- og annonseskript ikke samler inn data for brukeren gir samtykke via informasjonskapsel-banneret.</p>
+            <p>Du kan administrere informasjonskapsler i nettleserens innstillinger. Begrensning av informasjonskapsler kan paavirke visse funksjoner paa nettstedet.</p>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="5. Mottakere av data">
+            <p>Data kan deles med enheter som stotter oss i aa levere tjenester, slik som:</p>
+            <ul className="list-disc space-y-1 pl-6">
+              <li>hosting-/applikasjonsleverandor (f.eks. Vercel),</li>
+              <li>leverandorer av analyseverktoy (Google Ireland Ltd., Ahrefs Pte. Ltd., Vercel Inc., Metricool S.L.),</li>
+              <li>leverandor av annonsetjenester (Google Ireland Ltd. — Google AdSense),</li>
+              <li>revisjonsfirma, betalingsformidler eller juridisk raadgiver — om nodvendig.</li>
+            </ul>
+            <p>Alle mottakere behandler data i samsvar med GDPR basert paa passende avtaler.</p>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="6. Databehandleravtale (DPA)">
+            <p>Paa forespørsel inngaar vi databehandleravtale (DPA) naar vi behandler data paa vegne av kunden (f.eks. innenfor nettstedsvedlikehold, konfigurasjon av verktoy eller systemer).</p>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="7. Overforing av data utenfor EOES">
+            <p>
+              Google og Vercel kan behandle data utenfor Det europeiske okonomiske samarbeidsomraadet. Passende juridiske beskyttelsestiltak benyttes (herunder standardkontraktsbestemmelser godkjent
+              av EU-kommisjonen) og, der det er mulig, tekniske tiltak (pseudonymisering, minimering).
+            </p>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="8. Oppbevaringsperiode for data">
+            <ul className="list-disc space-y-1 pl-6">
+              <li>Data fra kontaktskjemaet — opptil 12 maaneder etter avslutning av korrespondansen.</li>
+              <li>Kundedata — i den perioden som kreves ved lov (regnskapsdokumentasjon).</li>
+              <li>Analysedata — i henhold til Google Analytics-retningslinjer (f.eks. 26 maaneder).</li>
+              <li>Loggfiler — i den perioden som er nodvendig for sikkerhet og ansvarlighet (typisk opptil 12 maaneder, med mindre regler foreskriver annet).</li>
+            </ul>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="9. Dine rettigheter">
+            <p>Du har rett til aa:</p>
+            <ul className="list-disc space-y-1 pl-6">
+              <li>faa tilgang til dine data og faa en kopi,</li>
+              <li>retting av data,</li>
+              <li>sletting av data,</li>
+              <li>begrensning av behandling,</li>
+              <li>dataportabilitet,</li>
+              <li>innsigelse mot behandling (herunder markedsforing),</li>
+              <li>klage til relevant tilsynsmyndighet (i Polen: Lederen for Kontoret for beskyttelse av personopplysninger, UODO).</li>
+            </ul>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="10. Frivillig avgivelse av data">
+            <p>Avgivelse av personopplysninger er frivillig, men nodvendig for kontakt eller levering av tjenester.</p>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="11. Sikkerhetstiltak">
+            <p>Vi implementerer tekniske og organisatoriske tiltak for aa beskytte personopplysninger mot uautorisert tilgang, tap eller odeleggelse.</p>
+          </SectionInfo>
+          <Gap variant="line" size="sm" />
+          <SectionInfo title="12. Endringer i policyen">
+            <p>Denne personvernpolicyen kan oppdateres for aa gjenspeile endringer i lovgivning eller teknologi. Den nyeste versjonen er alltid tilgjengelig paa denne siden.</p>
+          </SectionInfo>
+          <Gap size="xs" />
+        </div>
+        <TableOfContents rootSelector="#article-root" size="large" />
+      </Wrapper>
+      <ButtonToTop />
+      <Gap />
+    </>
+  );
+}

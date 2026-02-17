@@ -27,12 +27,11 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
   title: 'Instrumente online gratuite | Imagini, SEO, culori, favicon',
-  description: '10 instrumente online gratuite: convertor WebP, generator favicon, contor de text, extractor de culori și coduri QR. Pentru site-uri web, social media și tipărire. Fără înregistrare.',
+  description: '10 instrumente gratuite: convertor WebP, generator favicon, contor de text, extractor de culori și coduri QR. Pentru site-uri web și social media.',
   alternates: getToolsIndexAlternates('ro'),
   openGraph: {
     title: 'Instrumente online gratuite | Imagini, SEO, culori, favicon',
-    description:
-      '10 instrumente online gratuite: convertor WebP, generator favicon, contor de text, extractor de culori și coduri QR. Pentru site-uri web, social media și tipărire. Fără înregistrare.',
+    description: '10 instrumente gratuite: convertor WebP, generator favicon, contor de text, extractor de culori și coduri QR. Pentru site-uri web și social media.',
     url: toAbsoluteUrl('/ro/instrumente'),
     type: 'website',
     images: [
@@ -49,7 +48,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Instrumente online gratuite',
-  description: '10 instrumente online gratuite: convertor WebP, generator favicon, contor de text, extractor de culori și coduri QR. Pentru site-uri web, social media și tipărire. Fără înregistrare.',
+  description: '10 instrumente gratuite: convertor WebP, generator favicon, contor de text, extractor de culori și coduri QR. Pentru site-uri web și social media.',
   url: toAbsoluteUrl('/ro/instrumente'),
   inLanguage: 'ro',
   isPartOf: {

@@ -3,7 +3,7 @@
   "locale": "da",
   "metadata": {
     "title": "Gratis farveudtrækker fra billede – Palet fra ethvert foto",
-    "description": "Upload et foto eller logo og udtræk op til 12 dominerende farver med HEX- og RGB-koder. Velegnet til UI, branding og sociale medier. Uden registrering, uden begrænsninger.",
+    "description": "Upload et foto eller logo og udtræk op til 12 dominerende farver med HEX- og RGB-koder. Velegnet til UI, branding og sociale medier. Uden registrering,",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/da/vaerktojer/farveudtraekker-fra-billede"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/da/vaerktojer", "label": "Værktøjer" },
-    "third": { "href": "/da/vaerktojer/farveudtraekker-fra-billede", "label": "Farveudtrækker fra billede" }
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/farveudtraekker-fra-billede",
+      "label": "Farveudtrækker fra billede"
+    }
   },
   "schemas": {
     "software": {
@@ -37,39 +43,69 @@
       "name": "Sådan udtrækker du farver fra et foto eller billede",
       "description": "Sådan udtrækker du dominerende farver fra et foto eller logo. Upload et billede i PNG-, JPG- eller SVG-format, og værktøjet genererer en palet med op til 12 farver med HEX-koder.",
       "steps": [
-        { "name": "Upload billede", "text": "Træk og slip filen i det markerede område, eller vælg et billede fra din enhed. Understøttede formater er PNG, JPG og SVG." },
-        { "name": "Vent på analysen", "text": "Værktøjet analyserer automatisk billedet og udtrækker dominerende farver." },
-        { "name": "Kopiér farver", "text": "Ved hver farve er der en kopiérknap – HEX-koden kopieres til systemets udklipsholder." }
+        {
+          "name": "Upload billede",
+          "text": "Træk og slip filen i det markerede område, eller vælg et billede fra din enhed. Understøttede formater er PNG, JPG og SVG."
+        },
+        {
+          "name": "Vent på analysen",
+          "text": "Værktøjet analyserer automatisk billedet og udtrækker dominerende farver."
+        },
+        {
+          "name": "Kopiér farver",
+          "text": "Ved hver farve er der en kopiérknap – HEX-koden kopieres til systemets udklipsholder."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Hvorfor udtrække farver fra et billede?",
       "html": "<p class=\"mb-4\">Ethvert foto, logo eller grafik indeholder farver, der kan bruges som en færdig farvepalet. Udtrækeren analyserer billedet og viser hvilke farver der dominerer – sammen med HEX-koder og RGB-værdier klar til indsættelse i dit projekt.</p><p class=\"mb-4\">I praksis betyder det, at i stedet for manuelt at plukke farver i et grafikprogram (pixel for pixel), uploader du ét billede og får en ordnet liste med op til 12 farver. Det er nyttigt ved valg af farver til en hjemmeside, skabelse af konsekvent grafik til sociale medier eller opbygning af visuel identitet fra eksisterende materialer.</p><p>Al analyse sker lokalt i browseren – billedet sendes ikke til nogen server.</p>"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Sådan bruger du farveudtrækeren fra billede",
       "description": "Hele processen tager kun et par sekunder:",
       "grid": "three",
       "items": [
-        { "title": "1. Upload billede", "description": "Træk og slip filen i det markerede område, eller vælg den fra din enhed. Understøttede formater er PNG, JPG og SVG." },
-        { "title": "2. Vent på analysen", "description": "Værktøjet analyserer automatisk billedet og udtrækker op til 12 dominerende farver." },
-        { "title": "3. Kopiér de farver du har brug for", "description": "Ved hver farve er der en kopiérknap – HEX- eller RGB-koden går til udklipsholder og kan indsættes direkte i dit projekt." }
+        {
+          "title": "1. Upload billede",
+          "description": "Træk og slip filen i det markerede område, eller vælg den fra din enhed. Understøttede formater er PNG, JPG og SVG."
+        },
+        {
+          "title": "2. Vent på analysen",
+          "description": "Værktøjet analyserer automatisk billedet og udtrækker op til 12 dominerende farver."
+        },
+        {
+          "title": "3. Kopiér de farver du har brug for",
+          "description": "Ved hver farve er der en kopiérknap – HEX- eller RGB-koden går til udklipsholder og kan indsættes direkte i dit projekt."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Hvordan ser en udtrukket farvepalet ud?",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Eksempel på farver udtrukket fra et landskabsfoto</p></div>",
       "html": "<p class=\"text-mid mb-4\">Efter upload af billede viser udtrækeren en liste med dominerende farver sorteret fra mest til mindst fremtrædende. Hver farve viser sin HEX-kode og RGB-værdi – klar til indsættelse i CSS, Figma eller enhver grafisk applikation.</p><p class=\"text-mid\">Antallet af udtrukne farver afhænger af billedets indhold. Et landskabsfoto giver en rigere palet (8–12 farver), mens et simpelt tofarvs logo giver færre elementer.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hvilke billeder giver de bedste resultater?",
@@ -98,7 +134,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hvad gør denne farveudtrækker speciel?",
@@ -126,13 +165,20 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hvor kan man bruge udtrukne farver fra billede",
       "grid": "two",
       "items": [
-        { "icon": "RiBrushLine", "title": "Opbyg visuel identitet", "description": "Upload et foto der fanger brandets stemning og udtræk farver som udgangspunkt for brandets farvepalet." },
+        {
+          "icon": "RiBrushLine",
+          "title": "Opbyg visuel identitet",
+          "description": "Upload et foto der fanger brandets stemning og udtræk farver som udgangspunkt for brandets farvepalet."
+        },
         {
           "icon": "RiLayoutMasonryLine",
           "title": "Grafik til sociale medier",
@@ -150,7 +196,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om farveudtrækeren fra billede",
@@ -178,8 +227,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Udforsk flere værktøjer" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Udforsk flere værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

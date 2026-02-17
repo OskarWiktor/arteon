@@ -298,7 +298,7 @@ export default function OfferDesignCorporateApparelPage() {
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/strony-internetowe',
+              btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Projekt papieru firmowego',

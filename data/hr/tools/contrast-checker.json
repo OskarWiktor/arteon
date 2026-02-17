@@ -1,0 +1,231 @@
+{
+  "toolKey": "contrastChecker",
+  "locale": "hr",
+  "metadata": {
+    "title": "Besplatna provjera kontrasta boja – Usklađenost s WCAG 2.1",
+    "description": "Provjerite jesu li boje teksta i pozadine čitljive prema WCAG 2.1. Unesite HEX, RGB ili HSL kod, pogledajte omjer kontrasta i koristite automatsku korekciju.",
+    "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
+    "path": "/hr/alati/provjera-kontrasta-boja"
+  },
+  "hero": {
+    "title": "Provjera kontrasta boja i čitljivosti",
+    "description": "Unesite boju teksta i pozadine, a alat će pokazati je li kontrast dovoljan. Izračuni se temelje na međunarodnom standardu pristupačnosti WCAG 2.1.",
+    "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hr/alati",
+      "label": "Alati"
+    },
+    "third": {
+      "href": "/hr/alati/provjera-kontrasta-boja",
+      "label": "Provjera kontrasta boja"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Provjera kontrasta boja i čitljivosti",
+      "alternateName": ["Tester čitljivosti boja", "Provjera kontrasta teksta i pozadine", "Kalkulator kontrasta boja", "WCAG tester kontrasta"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "AccessibilityTool",
+      "description": "Provjerite jesu li boje teksta i pozadine čitljive za sve korisnike. Alat izračunava omjer kontrasta prema WCAG 2.1 i pokazuje ispunjava li zahtjeve pristupačnosti.",
+      "featureList": [
+        "Izračun omjera kontrasta",
+        "Provjera usklađenosti s WCAG 2.1 razinom AA",
+        "Provjera usklađenosti s WCAG 2.1 razinom AAA",
+        "Test normalnog teksta",
+        "Test velikog teksta i naslova",
+        "Test ikona i komponenti korisničkog sučelja",
+        "Podrška za HEX, RGB, RGBA, HSL i HSLA formate",
+        "Birač boja za vizualni odabir",
+        "Pregled teksta u stvarnom vremenu",
+        "Funkcija automatskog prilagođavanja boja",
+        "Lokalna obrada u pregledniku"
+      ]
+    },
+    "howTo": {
+      "name": "Kako provjeriti kontrast boja i čitljivost",
+      "description": "Kako provjeriti čitljivost boja teksta i pozadine prema WCAG standardu.",
+      "steps": [
+        {
+          "name": "Odaberite boju teksta",
+          "text": "Unesite kod boje (npr. #333333) u HEX, RGB ili HSL formatu – ili odaberite boju iz birača boja."
+        },
+        {
+          "name": "Odaberite boju pozadine",
+          "text": "Unesite boju pozadine na kojoj će tekst biti prikazan."
+        },
+        {
+          "name": "Pročitajte rezultate",
+          "text": "Alat prikazuje omjer kontrasta i ispunjavaju li boje AA/AAA zahtjeve."
+        },
+        {
+          "name": "Prilagodite boje",
+          "text": "Ako je kontrast prenizak, funkcija Match automatski predlaže varijantu boje teksta koja ispunjava odabrani WCAG prag."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Zašto je čitljivost boja važna?",
+      "html": "<p class=\"text-mid\">Čitljivost je razlika u svjetlini između boje teksta i boje pozadine. Što je veća razlika, lakše je čitati tekst. Prenizak kontrast čini sadržaj teško čitljivim – posebno za osobe s oštećenjem vida, starije osobe ili u teškim uvjetima osvjetljenja.</p><p class=\"text-mid mt-3\">Prema <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Svjetskoj zdravstvenoj organizaciji (WHO)</a>, oko 2,2 milijarde ljudi u svijetu ima neki oblik oštećenja vida.</p><p class=\"text-mid mt-3\">Alat izračunava omjer kontrasta prema formuli definiranoj u standardu <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1</a> – međunarodnim smjernicama za digitalnu pristupačnost.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kako koristiti provjeru kontrasta boja",
+      "description": "Provjera čitljivosti traje samo nekoliko sekundi:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiPaletteLine",
+          "title": "1. Unesite boju teksta",
+          "description": "Unesite kod boje u HEX, RGB ili HSL formatu – ili odaberite boju iz birača boja."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "2. Unesite boju pozadine",
+          "description": "Unesite boju pozadine na kojoj će tekst biti prikazan."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "3. Pročitajte rezultate",
+          "description": "Alat izračunava omjer kontrasta i pokazuje ispunjavaju li boje WCAG zahtjeve za normalni tekst, veliki tekst i ikone."
+        },
+        {
+          "icon": "RiEqualizerLine",
+          "title": "4. Prilagodite boje",
+          "description": "Ako je kontrast prenizak, funkcija Match automatski predlaže varijantu boje koja ispunjava odabrani prag."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Kako interpretirati rezultate testa čitljivosti",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Omjer kontrasta</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Normalni tekst</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Nakon unosa boja alat prikazuje rezultate u tri dijela:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normalni tekst</strong> – zahtijeva kontrast 4.5:1 (AA) ili 7:1 (AAA). Odnosi se na tekst manji od 18pt (24px) ili manji od 14pt podebljani.</li><li><strong>Veliki tekst / podebljani</strong> – zahtijeva kontrast 3:1 (AA) ili 4.5:1 (AAA). Odnosi se na naslove, gumbe i istaknuti tekst.</li><li><strong>Ikone</strong> – zahtijeva kontrast 3:1 (AA). Odnosi se na ikone i grafičke elemente korisničkog sučelja koji prenose informacije.</li></ul><p class=\"text-mid mt-3\"><strong>Zelena oznaka</strong> znači da je zahtjev ispunjen. <strong>Crvena oznaka</strong> znači da je kontrast prenizak i potrebna je korekcija.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Što znače razine AA i AAA u WCAG standardu?",
+      "plans": [
+        {
+          "id": "aa",
+          "name": "Razina AA (minimum)",
+          "highlighted": true
+        },
+        {
+          "id": "aaa",
+          "name": "Razina AAA (poboljšana)"
+        }
+      ],
+      "features": [
+        {
+          "name": "Normalni tekst – min. 4.5:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Normalni tekst – min. 7:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Veliki tekst / podebljani – min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Veliki tekst / podebljani – min. 4.5:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Ikone i elementi sučelja – min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Zakonski zahtjev (EU direktiva)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Preporučeno za glavni sadržaj",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Često postavljana pitanja o provjeri kontrasta boja",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Što je omjer kontrasta boja?",
+          "answer": "Omjer kontrasta je mjera razlike u svjetlini između dviju boja. Ljestvica počinje od 1:1 (nema razlike) i završava na 21:1 (najveća moguća razlika – crni tekst na bijeloj pozadini). Što je veći omjer, lakše je razlikovati tekst od pozadine."
+        },
+        {
+          "question": "Koji kontrast je dovoljan prema WCAG-u?",
+          "answer": "Za normalni tekst minimalni kontrast je 4.5:1 (razina AA). Za veliki tekst – naslove od 18pt ili podebljani od 14pt – dovoljan je 3:1. Za ikone i komponente korisničkog sučelja također se zahtijeva 3:1."
+        },
+        {
+          "question": "Zašto moje boje ne ispunjavaju zahtjeve, iako ih dobro vidim?",
+          "answer": "Osobna percepcija boja ovisi o postavkama monitora, osvjetljenju prostorije i individualnom vidu. WCAG se temelji na objektivnoj matematičkoj formuli koja uzima u obzir različita oštećenja vida."
+        },
+        {
+          "question": "Moram li postići razinu kontrasta AAA?",
+          "answer": "Ne uvijek. Razina AA (4.5:1 za normalni tekst) je minimalni zahtjev prema EU propisima o pristupačnosti. Razina AAA (7:1) pruža bolju čitljivost, ali ju je teže postići. Za kritični sadržaj – upozorenja, sigurnosne upute – vrijedi težiti razini AAA."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Pogledajte ostale besplatne alate"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

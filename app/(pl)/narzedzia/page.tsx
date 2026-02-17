@@ -29,11 +29,11 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
   title: 'Darmowe narzędzia online | Obrazy, SEO, kolory, favicon',
-  description: '10 darmowych narzędzi online: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, mediów społecznościowych i druku. Bez rejestracji.',
+  description: '10 darmowych narzędzi: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, social media i druku. Bez rejestracji.',
   alternates: getToolsIndexAlternates('pl'),
   openGraph: {
     title: 'Darmowe narzędzia online | Obrazy, SEO, kolory, favicon',
-    description: '10 darmowych narzędzi online: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, mediów społecznościowych i druku. Bez rejestracji.',
+    description: '10 darmowych narzędzi: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, social media i druku. Bez rejestracji.',
     url: toAbsoluteUrl('/narzedzia'),
     type: 'website',
     images: [
@@ -50,7 +50,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Darmowe narzędzia online',
-  description: '10 darmowych narzędzi online: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, mediów społecznościowych i druku. Bez rejestracji.',
+  description: '10 darmowych narzędzi: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, social media i druku. Bez rejestracji.',
   url: toAbsoluteUrl('/narzedzia'),
   inLanguage: 'pl-PL',
   isPartOf: {

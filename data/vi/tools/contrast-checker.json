@@ -3,7 +3,7 @@
   "locale": "vi",
   "metadata": {
     "title": "Kiểm Tra Độ Tương Phản Màu Miễn Phí – Tuân Thủ WCAG 2.1",
-    "description": "Kiểm tra xem màu văn bản và nền có dễ đọc theo WCAG 2.1 không. Nhập mã HEX, RGB hoặc HSL, xem tỷ lệ tương phản và sử dụng tự động sửa để tìm tổ hợp dễ tiếp cận. Không cần đăng ký.",
+    "description": "Kiểm tra xem màu văn bản và nền có dễ đọc theo WCAG 2.1 không. Nhập mã HEX, RGB hoặc HSL, xem tỷ lệ tương phản và sử dụng tự động sửa để tìm tổ hợp dễ tiếp cận.",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/vi/cong-cu/kiem-tra-do-tuong-phan-mau"
   },

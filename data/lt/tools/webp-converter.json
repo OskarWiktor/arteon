@@ -1,0 +1,148 @@
+{
+  "toolKey": "jpgToWebp",
+  "locale": "lt",
+  "metadata": {
+    "title": "Nemokamas JPG/PNG konverteris į WebP – Be apribojimų",
+    "description": "Sumažinkite paveikslėlių dydį neprarandant kokybės. Konvertuokite JPG ir PNG į WebP formatą ir pagreitinkite savo svetainę. Be registracijos, veikia naršyklėje.",
+    "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
+    "path": "/lt/irankiai/konverteris-jpg-png-i-webp"
+  },
+  "hero": {
+    "title": "Konvertuokite paveikslėlius į WebP formatą – sumažinkite dydį neprarandant kokybės",
+    "description": "Įkelkite paveikslėlius JPG arba PNG formatu, o įrankis juos konvertuos į WebP formatą. Mažesni failai, ta pati kokybė, greitesnė svetainė.",
+    "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/lt/irankiai", "label": "Įrankiai" },
+    "third": { "href": "/lt/irankiai/konverteris-jpg-png-i-webp", "label": "JPG/PNG konverteris į WebP" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Nemokamas JPG/PNG konverteris į WebP",
+      "alternateName": ["Paveikslėlių konverteris į WebP", "JPG į WebP konverteris", "PNG į WebP konverteris"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Nemokamas JPG ir PNG konverteris į WebP formatą. Sumažinkite paveikslėlių dydį iki 90 % be matomo kokybės praradimo. Visas apdorojimas vyksta naršyklėje – failai nesiunčiami į serverį.",
+      "featureList": [
+        "JPG konvertavimas į WebP formatą",
+        "PNG konvertavimas į WebP formatą",
+        "Paketinis kelių paveikslėlių konvertavimas vienu metu",
+        "Kokybės reguliatorius (0–100)",
+        "Originalaus ir WebP dydžio palyginimas",
+        "Įkėlimas vilkimu arba failo pasirinkimu",
+        "Peržiūra prieš ir po konvertavimo",
+        "Kiekvieno paveikslėlio atsisiuntimas arba visų kaip ZIP",
+        "Vietinis apdorojimas naršyklėje"
+      ]
+    },
+    "howTo": {
+      "name": "Kaip konvertuoti JPG ir PNG paveikslėlius į WebP formatą",
+      "description": "Kaip konvertuoti JPG ir PNG paveikslėlius į WebP formatą. Įkelkite failus, pritaikykite kokybę ir atsisiųskite konvertuotus paveikslėlius.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Įkelkite paveikslėlius", "text": "Vilkite ir numeskite failus į pažymėtą sritį arba pasirinkite juos iš įrenginio. Palaikomi formatai: JPG ir PNG." },
+        { "name": "Pritaikykite kokybę", "text": "Naudokite reguliatorių paveikslėlio kokybei pritaikyti (0–100). Aukštesnė reikšmė reiškia geresnę kokybę, bet didesnį failą." },
+        { "name": "Atsisiųskite konvertuotus paveikslėlius", "text": "Paspauskite atsisiuntimo mygtuką prie kiekvieno paveikslėlio arba atsisiųskite visus iš karto kaip ZIP failą." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Kas yra WebP formatas ir kodėl jis svarbus?",
+      "html": "<p class=\"text-mid\">WebP yra modernus paveikslėlių formatas, sukurtas Google, kuris siūlo geresnę kompresiją nei JPG ir PNG. WebP paveikslėliai užima mažiau vietos – tipiškai 25–34 % mažiau nei JPG ir iki 80 % mažiau nei PNG – išlaikant vizualinę kokybę.</p><p class=\"text-mid mt-3\">Visos pagrindinės naršyklės (Chrome, Firefox, Safari, Edge) palaiko WebP formatą. Šio formato naudojimas reiškia greitesnį puslapio įkėlimą, mažesnį duomenų perdavimą ir geresnį Core Web Vitals rezultatą – kas tiesiogiai veikia poziciją Google paieškos rezultatuose.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Kaip naudoti JPG/PNG konverterį į WebP",
+      "description": "Konvertavimas trunka tik kelias minutes:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Įkelkite paveikslėlius", "description": "Vilkite ir numeskite failus į pažymėtą sritį arba pasirinkite juos iš įrenginio. Galite įkelti kelis paveikslėlius vienu metu." },
+        { "title": "2. Pritaikykite kokybę", "description": "Naudokite reguliatorių paveikslėlio kokybei pritaikyti (0–100). Žemesnė reikšmė sukuria mažesnį failą, bet su žemesne kokybe." },
+        { "title": "3. Atsisiųskite rezultatą", "description": "Paspauskite atsisiuntimo mygtuką prie kiekvieno paveikslėlio arba atsisiųskite visus iš karto kaip ZIP failą." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Kaip pasirinkti tinkamą kokybę WebP formatui",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kokybė: 80</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Rekomenduojama</span></div><p class=\"text-mid text-sm!\">Geriausias kokybės ir failo dydžio santykis. Tinka daugumai internetinių ir e. parduotuvės paveikslėlių.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kokybė: 60–70</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Agresyvi kompresija</span></div><p class=\"text-mid text-sm!\">Mažesni failai. Tinka miniatiūroms, piktogramoms ir dekoratyviniams fonams.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kokybė: 90–100</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Aukščiausia kokybė</span></div><p class=\"text-mid text-sm!\">Labai aukšta kokybė, bet didesni failai. Tinka portfeliams ir pagrindiniams produktų paveikslėliams.</p></div></div>",
+      "html": "<p class=\"text-mid\">Kokybės nustatymas nustato santykį tarp vizualinės kokybės ir failo dydžio. Daugumai internetinių paveikslėlių reikšmė 75–85 duoda geriausius rezultatus – kokybės skirtumas nėra matomas plika akimi, o failas gali būti 3–5 kartus mažesnis nei originalus JPG.</p><p class=\"text-mid mt-3\">Miniatiūroms, piktogramoms ir dekoratyviniams fonams galite sumažinti kokybę iki 60–70 neprarandant aštrumo. Portfelio paveikslėliams ar pagrindiniams produktų nuotraukoms reikšmė 90–95 išlaiko detales.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kam reikia WebP konverterio?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiGlobalLine", "title": "Svetainių savininkai", "description": "Mažesni paveikslėliai pagreitina puslapio įkėlimą. Tai pagerina vartotojo patirtį ir veikia poziciją Google." },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "E. parduotuvių savininkai",
+          "description": "Daug produktų paveikslėlių reiškia daug megabaitų duomenų. Konvertavimas į WebP sumažina įkėlimo laiką ir duomenų perdavimą."
+        },
+        { "icon": "RiBloggerLine", "title": "Tinklaraštininkai", "description": "Straipsniai su daug paveikslėlių kraunasi lėčiau. WebP sumažina paveikslėlių dydį išlaikant kokybę." },
+        { "icon": "RiCodeLine", "title": "Interneto kūrėjai", "description": "WebP yra modernus internetinių paveikslėlių standartas. Visos pagrindinės naršyklės palaiko šį formatą." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kuo šis WebP konverteris ypatingas?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Vietinis apdorojimas naršyklėje",
+          "description": "Paveikslėliai nesiunčiami į serverį – visas apdorojimas vyksta jūsų įrenginyje. Jūsų privatumas apsaugotas."
+        },
+        { "icon": "RiSpeedLine", "title": "Momentinis konvertavimas", "description": "Rezultatai rodomi iškart – be laukimo eilėje ir be apdorojimo serveryje." },
+        { "icon": "RiInfinityLine", "title": "Be paveikslėlių limito", "description": "Konvertuokite tiek paveikslėlių, kiek reikia. Be dienos ar sesijos limito." },
+        {
+          "icon": "RiScalesLine",
+          "title": "Reguliuojamas kokybės reguliatorius",
+          "description": "Pritaikykite kokybę (0–100) kiekvienam paveikslėliui ir gaukite geriausią dydžio ir kokybės santykį."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Dažnai užduodami klausimai apie WebP konverterį",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kas yra WebP formatas?",
+          "answer": "WebP yra modernus paveikslėlių formatas, sukurtas Google. Siūlo geresnę kompresiją nei JPG (paveikslėliai 25–34 % mažesni) ir tuo pat metu palaiko skaidrumą (kaip PNG). Visos pagrindinės naršyklės palaiko WebP formatą.",
+          "answerSchemaText": "WebP yra Google paveikslėlių formatas su geresne kompresija nei JPG. Visos pagrindinės naršyklės jį palaiko."
+        },
+        {
+          "question": "Ar konvertavimas į WebP pablogina paveikslėlio kokybę?",
+          "answer": "Su kokybės nustatymu 75–85 skirtumas nėra matomas plika akimi. WebP kompresija yra efektyvesnė nei JPG – su ta pačia vizualine kokybe failas gali būti 3–5 kartus mažesnis.",
+          "answerSchemaText": "Su kokybe 75–85 skirtumas nėra matomas. WebP siūlo efektyvesnę kompresiją nei JPG."
+        },
+        {
+          "question": "Ar paveikslėliai siunčiami į serverį?",
+          "answer": "Ne. Visas apdorojimas vyksta jūsų naršyklėje – paveikslėliai nesiunčiami niekur. Uždarius puslapį duomenys ištrinami iš atminties.",
+          "answerSchemaText": "Ne. Paveikslėliai apdorojami naršyklėje. Nesiunčiami į serverį."
+        },
+        {
+          "question": "Ar yra paveikslėlių skaičiaus limitas?",
+          "answer": "Ne. Galite konvertuoti tiek paveikslėlių, kiek reikia. Be dienos ar sesijos limito.",
+          "answerSchemaText": "Ne. Konvertuojamų paveikslėlių skaičiui limito nėra."
+        },
+        {
+          "question": "Ar visos naršyklės palaiko WebP formatą?",
+          "answer": "Taip. Visos pagrindinės naršyklės – Chrome, Firefox, Safari (nuo 14 versijos) ir Edge – palaiko WebP formatą. Senesnėms naršyklėms rekomenduojama atsarginė versija JPG formatu.",
+          "answerSchemaText": "Taip. Chrome, Firefox, Safari 14+ ir Edge visos palaiko WebP formatą."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Peržiūrėkite kitus įrankius" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

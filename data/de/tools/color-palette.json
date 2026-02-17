@@ -3,7 +3,7 @@
   "locale": "de",
   "metadata": {
     "title": "Farbpaletten-Generator kostenlos – 9 Paletten aus 1 Farbe",
-    "description": "Generieren Sie 9 Farbpaletten aus einer Farbe: monochromatisch, komplementär, triadisch, Pastell, dunkel und mehr. HEX-Codes mit einem Klick kopieren. Ohne Anmeldung, ohne Limits.",
+    "description": "Generieren Sie 9 Farbpaletten aus einer Farbe: monochromatisch, komplementär, triadisch, Pastell, dunkel und mehr. HEX-Codes mit einem Klick kopieren.",
     "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
     "path": "/de/werkzeuge/farbpaletten-generator"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/de/werkzeuge", "label": "Werkzeuge" },
-    "third": { "href": "/de/werkzeuge/farbpaletten-generator", "label": "Farbpaletten-Generator" }
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/farbpaletten-generator",
+      "label": "Farbpaletten-Generator"
+    }
   },
   "schemas": {
     "software": {
@@ -43,82 +49,192 @@
       "name": "So generieren Sie Farbpaletten aus einer Farbe",
       "description": "Wählen Sie eine Basisfarbe und erhalten Sie 9 harmonische Farbpaletten mit kopierbaren HEX-Codes.",
       "steps": [
-        { "name": "Basisfarbe wählen", "text": "Geben Sie einen HEX-Farbcode ein oder verwenden Sie die Farbauswahl, um eine Basisfarbe festzulegen." },
-        { "name": "Paletten ansehen", "text": "Das Tool generiert automatisch 9 Paletten mit jeweils mehreren harmonischen Farben." },
-        { "name": "HEX-Codes kopieren", "text": "Klicken Sie auf eine Farbe, um den HEX-Code in die Zwischenablage zu kopieren." }
+        {
+          "name": "Basisfarbe wählen",
+          "text": "Geben Sie einen HEX-Farbcode ein oder verwenden Sie die Farbauswahl, um eine Basisfarbe festzulegen."
+        },
+        {
+          "name": "Paletten ansehen",
+          "text": "Das Tool generiert automatisch 9 Paletten mit jeweils mehreren harmonischen Farben."
+        },
+        {
+          "name": "HEX-Codes kopieren",
+          "text": "Klicken Sie auf eine Farbe, um den HEX-Code in die Zwischenablage zu kopieren."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Farbpaletten aus einer einzigen Farbe generieren",
       "html": "<p class=\"text-mid\">Der Farbpaletten-Generator erstellt aus einer einzigen Basisfarbe 9 verschiedene Farbpaletten auf Grundlage der Farbtheorie. Jede Palette hat eine andere Zusammensetzung - von monochromatischen Variationen bis hin zu kontrastierenden Komplementärfarben.</p><p class=\"text-mid mt-3\">Alle Berechnungen basieren auf dem HSL-Farbraum (Hue, Saturation, Lightness). Der Farbton bestimmt die Grundfarbe, die Sättigung die Intensität und die Helligkeit, wie hell oder dunkel die Farbe erscheint. Dieses Modell entspricht der menschlichen Farbwahrnehmung und eignet sich hervorragend für die Palettengenerierung.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "So verwenden Sie den Paletten-Generator",
       "description": "Die Palettengenerierung dauert nur wenige Sekunden:",
       "grid": "three",
       "items": [
-        { "icon": "RiPaletteLine", "title": "1. Basisfarbe wählen", "description": "Geben Sie einen HEX-Farbcode ein oder verwenden Sie die Farbauswahl, um eine Basisfarbe festzulegen." },
-        { "icon": "RiColorFilterLine", "title": "2. Paletten ansehen", "description": "Das Tool generiert automatisch 9 Paletten mit jeweils mehreren harmonischen Farben." },
-        { "icon": "RiFileCopyLine", "title": "3. HEX-Codes kopieren", "description": "Klicken Sie auf eine Farbe, um den HEX-Code zu kopieren. Verwenden Sie ihn in CSS, Figma oder anderen Tools." }
+        {
+          "icon": "RiPaletteLine",
+          "title": "1. Basisfarbe wählen",
+          "description": "Geben Sie einen HEX-Farbcode ein oder verwenden Sie die Farbauswahl, um eine Basisfarbe festzulegen."
+        },
+        {
+          "icon": "RiColorFilterLine",
+          "title": "2. Paletten ansehen",
+          "description": "Das Tool generiert automatisch 9 Paletten mit jeweils mehreren harmonischen Farben."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "3. HEX-Codes kopieren",
+          "description": "Klicken Sie auf eine Farbe, um den HEX-Code zu kopieren. Verwenden Sie ihn in CSS, Figma oder anderen Tools."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "9 Palettentypen - welche passt zu Ihrem Projekt?",
       "description": "Jede Palette hat einen anderen Charakter und eignet sich für unterschiedliche Anwendungen:",
       "grid": "three",
       "items": [
-        { "icon": "RiPaletteLine", "title": "Monochromatisch", "description": "Variationen eines Farbtons in Helligkeit und Sättigung. Elegant, harmonisch, professionell." },
-        { "icon": "RiColorFilterLine", "title": "Analog", "description": "Benachbarte Farben auf dem Farbkreis. Sanfter, natürlicher Übergang ohne harten Kontrast." },
-        { "icon": "RiContrastLine", "title": "Komplementär", "description": "Basisfarbe + gegenüberliegende Farbe (180°). Maximaler Kontrast für dynamische, lebhafte Designs." },
-        { "icon": "RiMagicLine", "title": "Triadisch", "description": "Drei Farben im gleichmäßigen 120°-Abstand. Ausgewogen mit starkem visuellen Kontrast." },
-        { "icon": "RiSearchLine", "title": "Split-komplementär", "description": "Basisfarbe + die zwei Nachbarn des Komplements. Subtilerer Kontrast als rein komplementär." },
-        { "icon": "RiPaintBrushLine", "title": "Pastell", "description": "Hohe Helligkeit, reduzierte Sättigung. Weich, luftig - ideal für freundliche und feminine Designs." },
-        { "icon": "RiSettings3Line", "title": "Dunkel", "description": "Geringe Helligkeit, tiefe Töne. Professionell, ernst - geeignet für Dark-Mode-Designs und Premium-Marken." },
-        { "icon": "RiRefreshLine", "title": "Tonal (Material Design)", "description": "Abgestufte Helligkeit bei gleichem Farbton. Ähnelt dem Farbsystem von Google Material Design." },
-        { "icon": "RiInfinityLine", "title": "Minimalistisch (Apple)", "description": "Neutrale Basis mit einem farbigen Akzent. Sauber, modern - inspiriert vom Apple-Designstil." }
+        {
+          "icon": "RiPaletteLine",
+          "title": "Monochromatisch",
+          "description": "Variationen eines Farbtons in Helligkeit und Sättigung. Elegant, harmonisch, professionell."
+        },
+        {
+          "icon": "RiColorFilterLine",
+          "title": "Analog",
+          "description": "Benachbarte Farben auf dem Farbkreis. Sanfter, natürlicher Übergang ohne harten Kontrast."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Komplementär",
+          "description": "Basisfarbe + gegenüberliegende Farbe (180°). Maximaler Kontrast für dynamische, lebhafte Designs."
+        },
+        {
+          "icon": "RiMagicLine",
+          "title": "Triadisch",
+          "description": "Drei Farben im gleichmäßigen 120°-Abstand. Ausgewogen mit starkem visuellen Kontrast."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "Split-komplementär",
+          "description": "Basisfarbe + die zwei Nachbarn des Komplements. Subtilerer Kontrast als rein komplementär."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Pastell",
+          "description": "Hohe Helligkeit, reduzierte Sättigung. Weich, luftig - ideal für freundliche und feminine Designs."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "Dunkel",
+          "description": "Geringe Helligkeit, tiefe Töne. Professionell, ernst - geeignet für Dark-Mode-Designs und Premium-Marken."
+        },
+        {
+          "icon": "RiRefreshLine",
+          "title": "Tonal (Material Design)",
+          "description": "Abgestufte Helligkeit bei gleichem Farbton. Ähnelt dem Farbsystem von Google Material Design."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Minimalistisch (Apple)",
+          "description": "Neutrale Basis mit einem farbigen Akzent. Sauber, modern - inspiriert vom Apple-Designstil."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Wie der HSL-Farbraum funktioniert",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">Beispiel: HSL(210, 80%, 50%)</p><div class=\"mt-2 flex items-center gap-3\"><div class=\"h-10 w-10 rounded\" style=\"background-color: hsl(210, 80%, 50%)\"></div><div class=\"text-mid text-sm!\"><p>H = 210° (Blauton)</p><p>S = 80% (kräftig)</p><p>L = 50% (mittlere Helligkeit)</p></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">Gleicher Farbton, andere Helligkeit</p><div class=\"mt-2 flex gap-1\"><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 90%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 70%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 50%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 30%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 10%)\"></div></div><p class=\"text-light mt-1 text-xs!\">L: 90% → 70% → 50% → 30% → 10%</p></div></div>",
       "html": "<p class=\"text-mid\">Alle Paletten in diesem Tool basieren auf dem HSL-Farbraum (Hue, Saturation, Lightness). Im Gegensatz zu HEX oder RGB beschreibt HSL Farben so, wie wir sie wahrnehmen:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Hue (H)</strong> - der Farbton auf dem Farbkreis (0°–360°). 0° = Rot, 120° = Grün, 240° = Blau.</li><li><strong>Saturation (S)</strong> - die Sättigung. 0% = Grau, 100% = volle Farbintensität.</li><li><strong>Lightness (L)</strong> - die Helligkeit. 0% = Schwarz, 50% = Normalfarbe, 100% = Weiß.</li></ul><p class=\"text-mid mt-3\">Durch gezielte Änderung einzelner Werte lassen sich harmonische Paletten erzeugen. Monochromatische Paletten ändern nur L, analoge nur H, und komplementäre spiegeln H um 180°.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Wo können Sie die Paletten einsetzen?",
       "description": "Die generierten Farbpaletten eignen sich für verschiedene Anwendungsbereiche:",
       "grid": "two",
       "items": [
-        { "icon": "RiGlobalLine", "title": "Webdesign", "description": "Konsistentes Farbschema für Ihre Website — Hintergrund, Text, Akzente und Schaltflächen." },
-        { "icon": "RiShoppingBagLine", "title": "Markenidentität", "description": "Aus einer Primärfarbe eine vollständige Markenpalette ableiten — für Print, Web und Social Media." },
-        { "icon": "RiSmartphoneLine", "title": "App-Design", "description": "Farbsystem für Ihre App erstellen — von der Navigation bis zu Benachrichtigungen." },
-        { "icon": "RiPaintBrushLine", "title": "Grafikdesign", "description": "Paletten als Ausgangspunkt für Poster, Flyer, Präsentationen und Infografiken nutzen." }
+        {
+          "icon": "RiGlobalLine",
+          "title": "Webdesign",
+          "description": "Konsistentes Farbschema für Ihre Website — Hintergrund, Text, Akzente und Schaltflächen."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Markenidentität",
+          "description": "Aus einer Primärfarbe eine vollständige Markenpalette ableiten — für Print, Web und Social Media."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "App-Design",
+          "description": "Farbsystem für Ihre App erstellen — von der Navigation bis zu Benachrichtigungen."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Grafikdesign",
+          "description": "Paletten als Ausgangspunkt für Poster, Flyer, Präsentationen und Infografiken nutzen."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Was macht diesen Paletten-Generator besonders?",
       "grid": "two",
       "items": [
-        { "icon": "RiContrastLine", "title": "9 Palettentypen", "description": "Monochromatisch, analog, komplementär, triadisch, split-komplementär, Pastell, dunkel, tonal und minimalistisch." },
-        { "icon": "RiMagicLine", "title": "Basierend auf Farbtheorie", "description": "Alle Paletten folgen den Prinzipien der Farbtheorie - Farbkreis, HSL-Farbraum und bewährte Farbschemata." },
-        { "icon": "RiUserLine", "title": "Lokale Verarbeitung", "description": "Alle Berechnungen finden im Browser statt. Keine Daten werden an einen Server gesendet." },
-        { "icon": "RiInfinityLine", "title": "Ohne Limits", "description": "Beliebig viele Paletten generieren — ohne Registrierung und ohne Einschränkungen." }
+        {
+          "icon": "RiContrastLine",
+          "title": "9 Palettentypen",
+          "description": "Monochromatisch, analog, komplementär, triadisch, split-komplementär, Pastell, dunkel, tonal und minimalistisch."
+        },
+        {
+          "icon": "RiMagicLine",
+          "title": "Basierend auf Farbtheorie",
+          "description": "Alle Paletten folgen den Prinzipien der Farbtheorie - Farbkreis, HSL-Farbraum und bewährte Farbschemata."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Lokale Verarbeitung",
+          "description": "Alle Berechnungen finden im Browser statt. Keine Daten werden an einen Server gesendet."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ohne Limits",
+          "description": "Beliebig viele Paletten generieren — ohne Registrierung und ohne Einschränkungen."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Häufig gestellte Fragen zum Farbpaletten-Generator",
@@ -156,8 +272,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Weitere Tools entdecken" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere Tools entdecken"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

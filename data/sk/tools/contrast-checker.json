@@ -1,0 +1,231 @@
+{
+  "toolKey": "contrastChecker",
+  "locale": "sk",
+  "metadata": {
+    "title": "Bezplatná kontrola farebného kontrastu – súlad s WCAG 2.1",
+    "description": "Skontrolujte, či sú farby textu a pozadia čitateľné podľa WCAG 2.1. Zadajte HEX, RGB alebo HSL kód, pozrite si kontrastný pomer a použite automatickú korekciu.",
+    "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
+    "path": "/sk/nastroje/kontrola-farebneho-kontrastu"
+  },
+  "hero": {
+    "title": "Kontrola farebného kontrastu a čitateľnosti",
+    "description": "Zadajte farbu textu a pozadia a nástroj ukáže, či je kontrast dostatočný. Výpočty sú založené na medzinárodnom štandarde prístupnosti WCAG 2.1.",
+    "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sk/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/sk/nastroje/kontrola-farebneho-kontrastu",
+      "label": "Kontrola farebného kontrastu"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Kontrola farebného kontrastu a čitateľnosti",
+      "alternateName": ["Tester čitateľnosti farieb", "Kontrola kontrastu textu a pozadia", "Kalkulačka farebného kontrastu", "WCAG tester kontrastu"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "AccessibilityTool",
+      "description": "Skontrolujte, či sú farby textu a pozadia čitateľné pre všetkých používateľov. Nástroj vypočíta kontrastný pomer podľa WCAG 2.1 a ukáže, či spĺňa požiadavky na prístupnosť.",
+      "featureList": [
+        "Výpočet kontrastného pomeru",
+        "Kontrola súladu s WCAG 2.1 úrovňou AA",
+        "Kontrola súladu s WCAG 2.1 úrovňou AAA",
+        "Test bežného textu",
+        "Test veľkého textu a nadpisov",
+        "Test ikon a prvkov používateľského rozhrania",
+        "Podpora formátov HEX, RGB, RGBA, HSL a HSLA",
+        "Výber farieb na vizuálny výber",
+        "Náhľad textu v reálnom čase",
+        "Funkcia automatického prispôsobenia farieb",
+        "Lokálne spracovanie v prehliadači"
+      ]
+    },
+    "howTo": {
+      "name": "Ako skontrolovať farebný kontrast a čitateľnosť",
+      "description": "Ako overiť čitateľnosť farieb textu a pozadia podľa štandardu WCAG.",
+      "steps": [
+        {
+          "name": "Vyberte farbu textu",
+          "text": "Zadajte farebný kód (napr. #333333) vo formáte HEX, RGB alebo HSL – alebo vyberte farbu z výberu farieb."
+        },
+        {
+          "name": "Vyberte farbu pozadia",
+          "text": "Zadajte farbu pozadia, na ktorom bude text zobrazený."
+        },
+        {
+          "name": "Prečítajte si výsledky",
+          "text": "Nástroj ukáže kontrastný pomer a či farby spĺňajú požiadavky AA/AAA."
+        },
+        {
+          "name": "Upravte farby",
+          "text": "Ak je kontrast príliš nízky, funkcia Match automaticky navrhne variant farby textu, ktorý spĺňa zvolený prah WCAG."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Prečo je čitateľnosť farieb dôležitá?",
+      "html": "<p class=\"text-mid\">Čitateľnosť je rozdiel jasu medzi farbou textu a farbou pozadia. Čím väčší rozdiel, tým je text ľahšie čitateľný. Príliš nízky kontrast robí obsah ťažko čitateľným – najmä pre osoby so zrakovým postihnutím, starších ľudí alebo v ťažkých svetelných podmienkach.</p><p class=\"text-mid mt-3\">Podľa <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Svetovej zdravotníckej organizácie (WHO)</a> má približne 2,2 miliardy ľudí na svete nejakú formu zrakového postihnutia.</p><p class=\"text-mid mt-3\">Nástroj počíta kontrastný pomer podľa vzorca definovaného v štandarde <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1</a> – medzinárodných pokynoch pre digitálnu prístupnosť.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ako používať kontrolu farebného kontrastu",
+      "description": "Kontrola čitateľnosti trvá len niekoľko sekúnd:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiPaletteLine",
+          "title": "1. Zadajte farbu textu",
+          "description": "Zadajte farebný kód vo formáte HEX, RGB alebo HSL – alebo vyberte farbu z výberu farieb."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "2. Zadajte farbu pozadia",
+          "description": "Zadajte farbu pozadia, na ktorom bude text zobrazený."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "3. Prečítajte si výsledky",
+          "description": "Nástroj vypočíta kontrastný pomer a ukáže, či farby spĺňajú požiadavky WCAG pre bežný text, veľký text a ikony."
+        },
+        {
+          "icon": "RiEqualizerLine",
+          "title": "4. Upravte farby",
+          "description": "Ak je kontrast príliš nízky, funkcia Match automaticky navrhne variant farby, ktorý spĺňa zvolený prah."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Ako interpretovať výsledky testu čitateľnosti",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Kontrastný pomer</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Bežný text</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Po zadaní farieb nástroj zobrazí výsledky v troch častiach:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Bežný text</strong> – vyžaduje kontrast 4.5:1 (AA) alebo 7:1 (AAA). Platí pre text menší ako 18pt (24px) alebo menší ako 14pt tučný.</li><li><strong>Veľký text / tučný</strong> – vyžaduje kontrast 3:1 (AA) alebo 4.5:1 (AAA). Platí pre nadpisy, tlačidlá a zvýraznený text.</li><li><strong>Ikony</strong> – vyžaduje kontrast 3:1 (AA). Platí pre ikony a grafické prvky používateľského rozhrania, ktoré prenášajú informácie.</li></ul><p class=\"text-mid mt-3\"><strong>Zelená značka</strong> znamená, že požiadavka je splnená. <strong>Červená značka</strong> znamená, že kontrast je príliš nízky a je potrebná korekcia.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Čo znamenajú úrovne AA a AAA v štandarde WCAG?",
+      "plans": [
+        {
+          "id": "aa",
+          "name": "Úroveň AA (minimum)",
+          "highlighted": true
+        },
+        {
+          "id": "aaa",
+          "name": "Úroveň AAA (vylepšená)"
+        }
+      ],
+      "features": [
+        {
+          "name": "Bežný text – min. 4.5:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Bežný text – min. 7:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Veľký text / tučný – min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Veľký text / tučný – min. 4.5:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Ikony a prvky rozhrania – min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Zákonná požiadavka (smernica EÚ)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Odporúčané pre hlavný obsah",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky o kontrole farebného kontrastu",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Čo je kontrastný pomer farieb?",
+          "answer": "Kontrastný pomer je miera rozdielu jasu medzi dvoma farbami. Stupnica začína na 1:1 (žiadny rozdiel) a končí na 21:1 (najväčší možný rozdiel – čierny text na bielom pozadí). Čím vyšší pomer, tým ľahšie je odlíšiť text od pozadia."
+        },
+        {
+          "question": "Aký kontrast je dostatočný podľa WCAG?",
+          "answer": "Pre bežný text je minimálny kontrast 4.5:1 (úroveň AA). Pre veľký text – nadpisy od 18pt alebo tučný od 14pt – stačí 3:1. Pre ikony a prvky používateľského rozhrania sa tiež vyžaduje 3:1."
+        },
+        {
+          "question": "Prečo moje farby nespĺňajú požiadavky, aj keď ich vidím dobre?",
+          "answer": "Osobné vnímanie farieb závisí od nastavení monitora, osvetlenia miestnosti a individuálneho zraku. WCAG je založený na objektívnom matematickom vzorci, ktorý zohľadňuje rôzne zrakové postihnutia."
+        },
+        {
+          "question": "Musím dosiahnuť úroveň kontrastu AAA?",
+          "answer": "Nie vždy. Úroveň AA (4.5:1 pre bežný text) je minimálnou požiadavkou podľa predpisov EÚ o prístupnosti. Úroveň AAA (7:1) poskytuje lepšiu čitateľnosť, ale je ťažšie dosiahnuteľná. Pre kritický obsah – varovania, bezpečnostné pokyny – sa oplatí usilovať o úroveň AAA."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Pozrite si ďalšie bezplatné nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "toolKey": "qrCode",
+  "locale": "lt",
+  "metadata": {
+    "title": "Nemokamas QR kodų generatorius – PNG ir SVG, be registracijos",
+    "description": "Sukurkite QR kodą svetainei, vCard vizitinei kortelei, meniu ar skrajutei per kelias sekundes. Eksportas į PNG ir SVG. Spalvų ir dydžio pritaikymas.",
+    "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
+    "path": "/lt/irankiai/nemokamas-qr-kodu-generatorius"
+  },
+  "hero": {
+    "title": "QR kodų generatorius – nemokamai, be registracijos",
+    "description": "Sukurkite QR kodą svetainei, vCard vizitinei kortelei, el. paštui, telefono numeriui ar tekstui. Pritaikykite spalvas, dydį ir klaidų korekcijos lygį, tada atsisiųskite paruoštą PNG arba SVG failą.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/lt/irankiai",
+      "label": "Įrankiai"
+    },
+    "third": {
+      "href": "/lt/irankiai/nemokamas-qr-kodu-generatorius",
+      "label": "Nemokamas QR kodų generatorius"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Nemokamas QR kodų generatorius",
+      "alternateName": ["Sukurti QR kodą", "vCard QR generatorius", "Nemokamas QR generatorius", "QR kodų įrankis"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "QRCodeGenerator",
+      "description": "Sukurkite QR kodą svetainei, vizitinei kortelei, meniu ar skrajutei. Pasirinkite duomenų tipą, pritaikykite spalvas ir dydį, tada atsisiųskite PNG arba SVG failą.",
+      "featureList": [
+        "QR kodas URL adresui (svetainėms)",
+        "QR kodas paprastam tekstui",
+        "QR kodas vCard (kontaktiniai duomenys)",
+        "QR kodas el. paštui (adresas, tema, turinys)",
+        "QR kodas telefono numeriui",
+        "Pritaikomos kodo ir fono spalvos",
+        "Kodo dydžio pasirinkimas pikseliais",
+        "Eksportas į PNG formatą (rastrinį)",
+        "Eksportas į SVG formatą (vektorinį)",
+        "Kodo peržiūra realiuoju laiku",
+        "Vietinis apdorojimas naršyklėje",
+        "Reed-Solomon klaidų korekcija"
+      ]
+    },
+    "howTo": {
+      "name": "Kaip naudoti nemokamą QR kodų generatorių",
+      "description": "Kaip sukurti QR kodą svetainei, vCard vizitinei kortelei, el. paštui ar telefono numeriui – nuo duomenų tipo pasirinkimo iki paruošto failo atsisiuntimo spausdinimui.",
+      "steps": [
+        {
+          "name": "Pasirinkite duomenų tipą",
+          "text": "Nuspręskite, ką QR kodas turi saugoti: URL, tekstą, vizitinę kortelę (vCard), el. paštą ar telefono numerį."
+        },
+        {
+          "name": "Įveskite duomenis",
+          "text": "Užpildykite atitinkamus laukus. URL atveju įveskite svetainės adresą; vCard atveju įveskite kontaktinius duomenis."
+        },
+        {
+          "name": "Pritaikykite išvaizdą",
+          "text": "Pasirinkite dydį, paraštes, kodo ir fono spalvas bei klaidų korekcijos lygį."
+        },
+        {
+          "name": "Atsisiųskite kodą",
+          "text": "Paruoštą QR kodą galite atsisiųsti kaip PNG failą (spausdinimui ir internetui) arba SVG failą (vektorinis, keičiamas be kokybės praradimo)."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kas yra QR kodas ir kaip jis veikia?",
+      "html": "<p class=\"text-mid\">QR kodas (Quick Response) yra dvimatis brūkšninis kodas, kurį galima nuskaityti išmaniojo telefono kamera. Skirtingai nuo tradicinių brūkšninių kodų, QR kodai saugo duomenis ir horizontaliai, ir vertikaliai, todėl gali užkoduoti žymiai daugiau informacijos – iki maždaug 3 000 raidinių-skaitinių simbolių.</p><p class=\"text-mid mt-3\">QR kodą 1994 metais sukūrė Japonijos bendrovė Denso Wave (Toyota grupės dalis) automobilių dalių sekimui. Šiandien QR kodai plačiai naudojami rinkodaroje, viešajame maitinime, logistikoje ir verslo komunikacijoje.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kaip naudoti nemokamą QR kodų generatorių?",
+      "description": "QR kodo sukūrimas trunka tik kelias sekundes:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Pasirinkite duomenų tipą",
+          "description": "Pasirinkite, ką norite užkoduoti: URL adresą, tekstą, vCard vizitinę kortelę, el. paštą ar telefono numerį."
+        },
+        {
+          "title": "2. Įveskite duomenis",
+          "description": "Užpildykite atitinkamus laukus – svetainės adresą, kontaktinius duomenis ar žinutės turinį."
+        },
+        {
+          "title": "3. Atsisiųskite kodą",
+          "description": "Pritaikykite išvaizdą (spalvas, dydį, paraštes) ir atsisiųskite PNG arba SVG formatu."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "QR kodų tipai – URL, vCard, el. paštas, telefonas, tekstas",
+      "description": "Nemokamas QR kodų generatorius palaiko penkis duomenų tipus – kiekvienas naudingas skirtingose situacijose:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "URL",
+          "description": "Nuoroda į svetainę. Nuskenavus telefonas atidaro puslapį naršyklėje. Tinka vizitinėms kortelėms, skrajutėms ir plakatams."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Tekstas",
+          "description": "Bet koks tekstas iki 3 000 simbolių. Nuskenavus telefonas rodo tekstą ekrane. Naudinga nuolaidoms ir trumpoms instrukcijoms."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "vCard vizitinė kortelė",
+          "description": "Skaitmeninė vizitinė kortelė su kontaktiniais duomenimis (vardas, įmonė, telefonas, el. paštas, adresas). Nuskenavus telefonas siūlo išsaugoti kontaktą."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "El. paštas",
+          "description": "El. pašto adresas su pasirenkama tema ir turiniu. Nuskenavus telefonas atidaro el. pašto programą su užpildyta forma."
+        },
+        {
+          "icon": "RiPhoneLine",
+          "title": "Telefonas",
+          "description": "Telefono numeris. Nuskenavus telefonas siūlo paskambinti numeriu. Naudinga klientų aptarnavimui."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "QR kodų techninės specifikacijos",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Talpa</span><span class=\"text-mid text-sm!\">iki 4 296 simbolių</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Klaidų korekcija</span><span class=\"text-mid text-sm!\">7 % – 30 %</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Minimalus spausdinimo dydis</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Minimalus kontrastas</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Paraštės</span><span class=\"text-mid text-sm!\">min. 4 moduliai</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Techninių specifikacijų žinojimas padeda sukurti QR kodą, kuris bus įskaitomas visomis sąlygomis:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Duomenų talpa</strong> – QR kodas gali saugoti iki 7 089 skaitmenų, 4 296 raidinių-skaitinių simbolių arba 2 953 baitus dvejetainių duomenų.</li><li><strong>Reed-Solomon klaidų korekcija</strong> – matematinis algoritmas, leidžiantis nuskaityti kodą net po dalinio pažeidimo. Lygiai: L (7 %), M (15 %), Q (25 %), H (30 %).</li><li><strong>Paraštės</strong> – balta zona aplink kodą, būtina tinkamam nuskaitymui. Rekomenduojamas minimumas – 4 moduliai.</li><li><strong>Minimalus spausdinimo dydis</strong> – įprastomis nuskaitymo sąlygomis kodas turėtų būti bent 2×2 cm.</li><li><strong>Kontrastas</strong> – kontrasto santykis tarp kodo ir fono turėtų būti bent 3:1.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "QR kodų pritaikymai – vizitinės kortelės, skrajutės, restoranų meniu",
+      "description": "QR kodai turi pritaikymą daugelyje pramonės šakų ir situacijų:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Vizitinės kortelės",
+          "description": "vCard kodas vizitinėje kortelėje leidžia išsaugoti kontaktą vienu nuskaitymu, be rankinio duomenų įvedimo."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Restoranų ir kavinių meniu",
+          "description": "QR kodas ant stalo, nukreipiantis į skaitmeninį meniu. Elegantiškas sprendimas, paplitęs po COVID-19 pandemijos."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Skrajutės ir plakatai",
+          "description": "QR kodas su nuoroda į produkto puslapį, registracijos formą ar specialų pasiūlymą."
+        },
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Produktų pakuotės",
+          "description": "Nuoroda į naudojimo instrukciją, garantinį lapą ar gamintojo svetainę."
+        },
+        {
+          "icon": "RiHospitalLine",
+          "title": "Sveikatos priežiūros įstaigos",
+          "description": "QR kodas paciento kortelėje, nukreipiantis į pacientų portalą ar vizitų registracijos sistemą."
+        },
+        {
+          "icon": "RiCalendarEventLine",
+          "title": "Renginiai ir konferencijos",
+          "description": "Bilietai su QR kodu greitam įėjimo patikrinimui."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PNG ir SVG – kurį formatą pasirinkti spausdinimui?",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG (rastrinis)"
+        },
+        {
+          "id": "svg",
+          "name": "SVG (vektorinis)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Internetas ir socialiniai tinklai",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Skrajutės ir vizitinės kortelės",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Plakatai ir baneriai (didelis formatas)",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Mastelio keitimas be kokybės praradimo",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Redagavimas grafikos programoje",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Mažesnis failo dydis",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Prezentacijos",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kuo šis QR kodų generatorius ypatingas?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Vietinis kūrimas naršyklėje",
+          "description": "Generatoriuje įvesti duomenys nesiunčiami į serverį – visas apdorojimas vyksta jūsų įrenginyje."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "Penki duomenų tipai viename įrankyje",
+          "description": "URL, tekstas, vCard vizitinė kortelė, el. paštas ir telefonas – kiekvienas tipas sukuria QR kodą atitinkamu standartu."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "QR kodo išvaizdos pritaikymas",
+          "description": "Kodo ir fono spalva, dydis pikseliais, paraštės ir klaidų korekcijos lygis – kiekvieną parametrą galima pritaikyti."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Keturi klaidų korekcijos lygiai",
+          "description": "Reed-Solomon algoritmas leidžia pasirinkti kodo atsparumą pažeidimams – nuo 7 % (L) iki 30 % (H)."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Peržiūra realiuoju laiku",
+          "description": "Rezultatą matote iškart po duomenų įvedimo, nespaudžiant mygtuko Generuoti."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "PNG ir SVG eksportas",
+          "description": "Atsisiųskite kodą jūsų paskirtimi tinkamu formatu."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Dažnai užduodami klausimai apie QR kodų generatorių",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ar šiuo įrankiu sukurti QR kodai turi ribotą galiojimo laiką?",
+          "answer": "Ne. Statiniai QR kodai (kuriuos šis įrankis kuria) neturi galiojimo datos. Turinys – pvz., URL ar vizitinės kortelės duomenys – užkoduojamas tiesiogiai kode. Kol paskirties puslapis egzistuoja, kodas veiks.",
+          "answerSchemaText": "Ne. Statiniai QR kodai neturi riboto galiojimo laiko. Turinys užkoduojamas tiesiogiai kode."
+        },
+        {
+          "question": "Ar galiu pakeisti URL adresą esamame QR kode?",
+          "answer": "Statiniame QR kode užkoduoto turinio pakeisti negalima – reikia sukurti naują kodą su nauju adresu. Dinaminiai QR kodai (kuriuos galima redaguoti po sukūrimo) reikalauja išorinės mokamos paslaugos.",
+          "answerSchemaText": "Ne, statinių QR kodų redaguoti negalima. Sukurkite naują kodą su kitu URL adresu."
+        },
+        {
+          "question": "PNG ar SVG – kurį QR kodo formatą pasirinkti spausdinimui?",
+          "answer": "PNG pakanka daugumai paskirtčių: internetui, socialiniams tinklams, spausdinimui iki A4 formato. SVG yra vektorinis – jį galima padidinti iki bet kokio dydžio be kokybės praradimo, idealus baneriams, iškaboms ir dideliems reklaminiams formatams.",
+          "answerSchemaText": "PNG internetui ir įprastam spausdinimui. SVG dideliems formatams ir mastelio keitimui be kokybės praradimo."
+        },
+        {
+          "question": "Kokį QR kodo dydį pasirinkti vizitinei kortelei?",
+          "answer": "Spausdintai medžiagai (vizitinėms kortelėms, skrajutėms) kodas turėtų būti bent 2×2 cm, optimaliai 3×3 cm. Generatoriuje tai atitinka 300 px rezoliuciją standartinei spausdinimo kokybei (300 DPI).",
+          "answerSchemaText": "Bent 2×2 cm (300 px esant 300 DPI). Optimaliai 3×3 cm vizitinėms kortelėms."
+        },
+        {
+          "question": "Ar galiu sukurtus QR kodus naudoti komerciniais tikslais?",
+          "answer": "Taip. Sukurtus QR kodus galite laisvai naudoti bet kuriame projekte – komerciniame ir nekomerciniame, be licencinių apribojimų.",
+          "answerSchemaText": "Taip, be apribojimų komerciniuose ir nekomerciniuose projektuose."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Peržiūrėkite kitus nemokamus įrankius"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

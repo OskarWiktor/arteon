@@ -16,7 +16,7 @@ function getItems() {
             <li>Bezpłatne szkolenie PDF z obsługi strony</li>
           </ul>
           <div className="mt-auto">
-            <Button arrow link="/uslugi/strony-internetowe">
+            <Button arrow link="/uslugi/tworzenie-stron-wordpress">
               Sprawdź ofertę
             </Button>
           </div>

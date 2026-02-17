@@ -21,6 +21,12 @@ import csDict from '@/dictionaries/cs.json';
 import svDict from '@/dictionaries/sv.json';
 import sqDict from '@/dictionaries/sq.json';
 import daDict from '@/dictionaries/da.json';
+import noDict from '@/dictionaries/no.json';
+import fiDict from '@/dictionaries/fi.json';
+import skDict from '@/dictionaries/sk.json';
+import hrDict from '@/dictionaries/hr.json';
+import ltDict from '@/dictionaries/lt.json';
+import slDict from '@/dictionaries/sl.json';
 
 const dicts = {
   pl: plDict,
@@ -43,6 +49,12 @@ const dicts = {
   sv: svDict,
   sq: sqDict,
   da: daDict,
+  no: noDict,
+  fi: fiDict,
+  sk: skDict,
+  hr: hrDict,
+  lt: ltDict,
+  sl: slDict,
 } as const;
 
 export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
@@ -262,6 +274,72 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/da/om-os',
     contactHref: '/da/kontakt',
     privacyHref: '/da/privatlivspolitik',
+  },
+  no: {
+    lang: 'no',
+    hreflang: 'no',
+    label: 'NO',
+    name: 'Norsk',
+    toolsBasePath: '/no/verktoy',
+    toolsIndexHref: '/no/verktoy',
+    aboutHref: '/no/om-oss',
+    contactHref: '/no/kontakt',
+    privacyHref: '/no/personvernpolicy',
+  },
+  fi: {
+    lang: 'fi',
+    hreflang: 'fi',
+    label: 'FI',
+    name: 'Suomi',
+    toolsBasePath: '/fi/tyokalut',
+    toolsIndexHref: '/fi/tyokalut',
+    aboutHref: '/fi/tietoa-meista',
+    contactHref: '/fi/yhteystiedot',
+    privacyHref: '/fi/tietosuojakaytanto',
+  },
+  sk: {
+    lang: 'sk',
+    hreflang: 'sk',
+    label: 'SK',
+    name: 'Slovenčina',
+    toolsBasePath: '/sk/nastroje',
+    toolsIndexHref: '/sk/nastroje',
+    aboutHref: '/sk/o-nas',
+    contactHref: '/sk/kontakt',
+    privacyHref: '/sk/zasady-ochrany-osobnych-udajov',
+  },
+  hr: {
+    lang: 'hr',
+    hreflang: 'hr',
+    label: 'HR',
+    name: 'Hrvatski',
+    toolsBasePath: '/hr/alati',
+    toolsIndexHref: '/hr/alati',
+    aboutHref: '/hr/o-nama',
+    contactHref: '/hr/kontakt',
+    privacyHref: '/hr/pravila-privatnosti',
+  },
+  lt: {
+    lang: 'lt',
+    hreflang: 'lt',
+    label: 'LT',
+    name: 'Lietuvių',
+    toolsBasePath: '/lt/irankiai',
+    toolsIndexHref: '/lt/irankiai',
+    aboutHref: '/lt/apie-mus',
+    contactHref: '/lt/kontaktai',
+    privacyHref: '/lt/privatumo-politika',
+  },
+  sl: {
+    lang: 'sl',
+    hreflang: 'sl',
+    label: 'SL',
+    name: 'Slovenščina',
+    toolsBasePath: '/sl/orodja',
+    toolsIndexHref: '/sl/orodja',
+    aboutHref: '/sl/o-nas',
+    contactHref: '/sl/kontakt',
+    privacyHref: '/sl/pravilnik-o-zasebnosti',
   },
 };
 

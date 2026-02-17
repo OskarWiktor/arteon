@@ -4,7 +4,33 @@ import { useRef, useState } from 'react';
 import Button from '../ui/buttons/Button';
 import ToolAlert from '../ui/tools/ToolAlert';
 
-type ContactFormLocale = 'pl' | 'en' | 'de' | 'es' | 'fr' | 'pt' | 'it' | 'ro' | 'nl' | 'hu' | 'id' | 'vi' | 'tr' | 'tl' | 'sw' | 'ms' | 'cs' | 'sv' | 'sq' | 'da';
+type ContactFormLocale =
+  | 'pl'
+  | 'en'
+  | 'de'
+  | 'es'
+  | 'fr'
+  | 'pt'
+  | 'it'
+  | 'ro'
+  | 'nl'
+  | 'hu'
+  | 'id'
+  | 'vi'
+  | 'tr'
+  | 'tl'
+  | 'sw'
+  | 'ms'
+  | 'cs'
+  | 'sv'
+  | 'sq'
+  | 'da'
+  | 'no'
+  | 'fi'
+  | 'sk'
+  | 'hr'
+  | 'lt'
+  | 'sl';
 
 const formUi = {
   pl: {
@@ -266,6 +292,84 @@ const formUi = {
     send: 'Send',
     error: 'Noget gik galt. Tjek dine data og pr\u00f8v igen.',
     success: 'Besked sendt! Vi svarer hurtigst muligt.',
+  },
+  no: {
+    nameLabel: 'Fullt navn',
+    namePlaceholder: 'Ola Nordmann',
+    emailLabel: 'E-post',
+    emailPlaceholder: 'ola.nordmann@gmail.com',
+    subjectLabel: 'Emne',
+    subjectPlaceholder: 'f.eks. Feilrapport | Verkt\u00f8yforslag | Sp\u00f8rsm\u00e5l',
+    messageLabel: 'Melding',
+    messagePlaceholder: 'Beskriv sp\u00f8rsm\u00e5let eller forslaget ditt...',
+    send: 'Send',
+    error: 'Noe gikk galt. Sjekk dataene dine og pr\u00f8v igjen.',
+    success: 'Melding sendt! Vi svarer s\u00e5 raskt som mulig.',
+  },
+  fi: {
+    nameLabel: 'Koko nimi',
+    namePlaceholder: 'Matti Meik\u00e4l\u00e4inen',
+    emailLabel: 'S\u00e4hk\u00f6posti',
+    emailPlaceholder: 'matti.meikalainen@gmail.com',
+    subjectLabel: 'Aihe',
+    subjectPlaceholder: 'esim. Virheraportti | Ty\u00f6kaluehdotus | Kysymys',
+    messageLabel: 'Viesti',
+    messagePlaceholder: 'Kuvaile kysymyksesi tai ehdotuksesi...',
+    send: 'L\u00e4het\u00e4',
+    error: 'Jokin meni pieleen. Tarkista tietosi ja yrit\u00e4 uudelleen.',
+    success: 'Viesti l\u00e4hetetty! Vastaamme mahdollisimman pian.',
+  },
+  sk: {
+    nameLabel: 'Meno a priezvisko',
+    namePlaceholder: 'J\u00e1n Nov\u00e1k',
+    emailLabel: 'E-mail',
+    emailPlaceholder: 'jan.novak@gmail.com',
+    subjectLabel: 'Predmet',
+    subjectPlaceholder: 'napr. Hl\u00e1senie chyby | N\u00e1vrh n\u00e1stroja | Ot\u00e1zka',
+    messageLabel: 'Spr\u00e1va',
+    messagePlaceholder: 'Pop\u00ed\u0161te svoju ot\u00e1zku alebo n\u00e1vrh...',
+    send: 'Odosla\u0165',
+    error: 'Nie\u010do sa pokazilo. Skontrolujte \u00fadaje a sk\u00faste to znova.',
+    success: 'Spr\u00e1va odoslan\u00e1! Odpov\u00edme \u010do najsk\u00f4r.',
+  },
+  hr: {
+    nameLabel: 'Ime i prezime',
+    namePlaceholder: 'Ivan Horvat',
+    emailLabel: 'E-po\u0161ta',
+    emailPlaceholder: 'ivan.horvat@gmail.com',
+    subjectLabel: 'Predmet',
+    subjectPlaceholder: 'npr. Prijava gre\u0161ke | Prijedlog alata | Pitanje',
+    messageLabel: 'Poruka',
+    messagePlaceholder: 'Opi\u0161ite svoje pitanje ili prijedlog...',
+    send: 'Po\u0161alji',
+    error: 'Ne\u0161to je po\u0161lo po krivu. Provjerite podatke i poku\u0161ajte ponovo.',
+    success: 'Poruka poslana! Odgovorit \u0107emo \u0161to je prije mogu\u0107e.',
+  },
+  lt: {
+    nameLabel: 'Vardas ir pavard\u0117',
+    namePlaceholder: 'Jonas Kazlauskas',
+    emailLabel: 'El. pa\u0161tas',
+    emailPlaceholder: 'jonas.kazlauskas@gmail.com',
+    subjectLabel: 'Tema',
+    subjectPlaceholder: 'pvz. Klaidos ataskaita | \u012erankio pasi\u016blymas | Klausimas',
+    messageLabel: 'Prane\u0161imas',
+    messagePlaceholder: 'Apra\u0161ykite savo klausim\u0105 ar pasi\u016blym\u0105...',
+    send: 'Si\u0173sti',
+    error: 'Ka\u017ekas nutiko ne taip. Patikrinkite duomenis ir bandykite dar kart\u0105.',
+    success: 'Prane\u0161imas i\u0161si\u0173stas! Atsakysime kuo grei\u010diau.',
+  },
+  sl: {
+    nameLabel: 'Ime in priimek',
+    namePlaceholder: 'Janez Novak',
+    emailLabel: 'E-po\u0161ta',
+    emailPlaceholder: 'janez.novak@gmail.com',
+    subjectLabel: 'Zadeva',
+    subjectPlaceholder: 'npr. Prijava napake | Predlog orodja | Vpra\u0161anje',
+    messageLabel: 'Sporo\u010dilo',
+    messagePlaceholder: 'Opi\u0161ite svoje vpra\u0161anje ali predlog...',
+    send: 'Po\u0161lji',
+    error: 'Nekaj je \u0161lo narobe. Preverite podatke in poskusite znova.',
+    success: 'Sporo\u010dilo poslano! Odgovorili bomo v najkraj\u0161em mo\u017enem \u010dasu.',
   },
 } as const;
 

@@ -3,7 +3,7 @@
   "locale": "sv",
   "metadata": {
     "title": "Gratis e-postsignatur-generator – HTML för Gmail och Outlook",
-    "description": "Skapa en professionell HTML e-postsignatur utan programvara. Lägg till kontaktuppgifter, logotyp, sociala medier-länkar och kopiera till Gmail eller Outlook. Utan registrering.",
+    "description": "Skapa en professionell HTML e-postsignatur utan programvara. Lägg till kontaktuppgifter, logotyp, sociala medier-länkar och kopiera till Gmail eller Outlook.",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
     "path": "/sv/verktyg/gratis-e-postsignatur-generator"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/sv/verktyg", "label": "Verktyg" },
-    "third": { "href": "/sv/verktyg/gratis-e-postsignatur-generator", "label": "E-postsignatur-generator" }
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/gratis-e-postsignatur-generator",
+      "label": "E-postsignatur-generator"
+    }
   },
   "schemas": {
     "software": {
@@ -43,50 +49,97 @@
       "description": "Hur man skapar en professionell HTML e-postsignatur med Arteons gratisverktyg.",
       "totalTime": "PT5M",
       "steps": [
-        { "name": "Välj signaturlayout", "text": "Välj en av åtta tillgängliga layouter." },
-        { "name": "Fyll i kontaktuppgifter", "text": "I fliken Details anger du namn, befattning, företag, e-post, telefon och webbadress." },
-        { "name": "Lägg till CTA-knapp", "text": "I fliken Buttons lägger du till text och URL för huvudknappen." },
-        { "name": "Lägg till sociala medier-länkar", "text": "I fliken Social Media klistrar du in URL:er till dina profiler." },
-        { "name": "Anpassa utseendet", "text": "I fliken Appearance väljer du färgtema, typsnitt och textstorlek." },
-        { "name": "Kontrollera förhandsgranskning och kopiera signatur", "text": "Knappen Copy signature kopierar den färdiga koden till urklipp." }
+        {
+          "name": "Välj signaturlayout",
+          "text": "Välj en av åtta tillgängliga layouter."
+        },
+        {
+          "name": "Fyll i kontaktuppgifter",
+          "text": "I fliken Details anger du namn, befattning, företag, e-post, telefon och webbadress."
+        },
+        {
+          "name": "Lägg till CTA-knapp",
+          "text": "I fliken Buttons lägger du till text och URL för huvudknappen."
+        },
+        {
+          "name": "Lägg till sociala medier-länkar",
+          "text": "I fliken Social Media klistrar du in URL:er till dina profiler."
+        },
+        {
+          "name": "Anpassa utseendet",
+          "text": "I fliken Appearance väljer du färgtema, typsnitt och textstorlek."
+        },
+        {
+          "name": "Kontrollera förhandsgranskning och kopiera signatur",
+          "text": "Knappen Copy signature kopierar den färdiga koden till urklipp."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Varför behöver du en professionell e-postsignatur?",
       "html": "<p class=\"text-mid\">E-postsignaturen (även kallad e-postsidfot) är ett informationsblock i slutet av varje skickat meddelande. Den innehåller kontaktuppgifter, befattning, företagsnamn och ofta en länk till webbplatsen eller bokningskalendern.</p><p class=\"text-mid mt-3\">Mottagaren behöver inte leta efter telefonnumret i tidigare meddelanden – alla uppgifter är lättillgängliga. En professionell e-postsignatur visar också att du bryr dig om detaljer och upprätthåller en konsekvent företagsimage i affärskommunikationen.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Hur man använder e-postsignatur-generatorn",
       "description": "Att skapa en professionell e-postsignatur tar bara några minuter:",
       "grid": "three",
       "items": [
-        { "title": "1. Ange uppgifter", "description": "Fyll i namn, befattning, företag och kontaktuppgifter." },
-        { "title": "2. Anpassa utseendet", "description": "Välj layout, färger, lägg till logotyp och sociala medier-länkar." },
-        { "title": "3. Kopiera koden", "description": "Knappen Copy signature kopierar den färdiga koden till urklipp. Klistra bara in i Gmail, Outlook eller annan e-postklient." }
+        {
+          "title": "1. Ange uppgifter",
+          "description": "Fyll i namn, befattning, företag och kontaktuppgifter."
+        },
+        {
+          "title": "2. Anpassa utseendet",
+          "description": "Välj layout, färger, lägg till logotyp och sociala medier-länkar."
+        },
+        {
+          "title": "3. Kopiera koden",
+          "description": "Knappen Copy signature kopierar den färdiga koden till urklipp. Klistra bara in i Gmail, Outlook eller annan e-postklient."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Signaturlayouter – vilken ska du välja?",
       "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Signaturlayout</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div></div>",
       "html": "<p class=\"text-mid\">Generatorn erbjuder åtta fördefinierade layouter. Var och en presenterar samma information på ett annat sätt.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> – klassisk vertikal layout, passar de flesta användningsfall.</li><li><strong>Top bar</strong> – horisontell linje separerar signaturen från innehållet.</li><li><strong>Labels left</strong> – två kolumner: etiketter och värden.</li><li><strong>Centered</strong> – formellt utseende, innehåll centrerat.</li><li><strong>Compact</strong> – allt på en rad, minimal höjd.</li><li><strong>Two columns</strong> – uppgifter till vänster, kontakter till höger.</li><li><strong>Minimalist</strong> – bara grundläggande information.</li><li><strong>Bottom bar</strong> – färgad linje med kontakter längst ner i signaturen.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hur man kopierar signaturen till Gmail eller Outlook",
       "description": "Efter att signaturen är klar behövs bara några steg för att lägga till den i e-postklienten:",
       "grid": "three",
       "items": [
-        { "icon": "RiClipboardLine", "title": "1. Kopiera koden", "description": "Knappen Copy signature kopierar signaturen till urklipp som formaterad HTML, redo att klistra in." },
-        { "icon": "RiSettings3Line", "title": "2. Öppna signaturinställningar", "description": "I Gmail: Settings > See all settings > Signature. I Outlook: File > Options > Mail > Signatures." },
+        {
+          "icon": "RiClipboardLine",
+          "title": "1. Kopiera koden",
+          "description": "Knappen Copy signature kopierar signaturen till urklipp som formaterad HTML, redo att klistra in."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "2. Öppna signaturinställningar",
+          "description": "I Gmail: Settings > See all settings > Signature. I Outlook: File > Options > Mail > Signatures."
+        },
         {
           "icon": "RiSaveLine",
           "title": "3. Klistra in och spara",
@@ -94,19 +147,41 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Vem är e-postsignatur-generatorn till för?",
       "grid": "two",
       "items": [
-        { "icon": "RiBriefcaseLine", "title": "Företagare och frilansare", "description": "Professionell signatur i varje meddelande utan behov av grafisk designer." },
-        { "icon": "RiTeamLine", "title": "Företagsteam", "description": "Varje anställd skapar en signatur i samma stil. Konsekvent identitet i hela företaget." },
-        { "icon": "RiHandCoinLine", "title": "Säljare", "description": "CTA-knapp med länk till kalender eller erbjudande ökar sannolikheten för bokade möten." },
-        { "icon": "RiScales3Line", "title": "Jurister, revisorer, läkare", "description": "Möjlighet att lägga till juridiska klausuler, licensnummer eller andra uppgifter som krävs i branschen." }
+        {
+          "icon": "RiBriefcaseLine",
+          "title": "Företagare och frilansare",
+          "description": "Professionell signatur i varje meddelande utan behov av grafisk designer."
+        },
+        {
+          "icon": "RiTeamLine",
+          "title": "Företagsteam",
+          "description": "Varje anställd skapar en signatur i samma stil. Konsekvent identitet i hela företaget."
+        },
+        {
+          "icon": "RiHandCoinLine",
+          "title": "Säljare",
+          "description": "CTA-knapp med länk till kalender eller erbjudande ökar sannolikheten för bokade möten."
+        },
+        {
+          "icon": "RiScales3Line",
+          "title": "Jurister, revisorer, läkare",
+          "description": "Möjlighet att lägga till juridiska klausuler, licensnummer eller andra uppgifter som krävs i branschen."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Vanliga frågor om e-postsignatur-generatorn",
@@ -130,8 +205,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Utforska fler verktyg" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforska fler verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

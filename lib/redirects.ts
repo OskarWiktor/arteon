@@ -125,6 +125,14 @@ export const TOOLS_REDIRECTS: Record<string, string> = {
 };
 
 /**
+ * Redirecty dla norweskich i litewskich narzędzi (poprawki literówek w slugach, 2026-02-16)
+ */
+export const NO_LT_TOOLS_REDIRECTS: Record<string, string> = {
+  '/no/verktoy/fargeuttrrekker-fra-bilde': '/no/verktoy/fargeutrekker-fra-bilde',
+  '/lt/irankiai/nemokamas-el-paraso-paraso-generatorius': '/lt/irankiai/nemokamas-el-pasto-paraso-generatorius',
+};
+
+/**
  * Redirecty dla niemieckich narzędzi (zmiana /de/tools/ → /de/werkzeuge/) (2026-02-12)
  */
 export const DE_TOOLS_REDIRECTS: Record<string, string> = {
@@ -160,6 +168,7 @@ export const ALL_STATIC_REDIRECTS: Record<string, string> = {
   ...PROJECT_REDIRECTS,
   ...EDUCATION_REDIRECTS,
   ...TOOLS_REDIRECTS,
+  ...NO_LT_TOOLS_REDIRECTS,
   ...DE_TOOLS_REDIRECTS,
   ...SERVICES_REDIRECTS,
 };

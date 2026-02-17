@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Konvertues JPG/PNG në WebP falas – Pa kufizime",
     "description": "Zvogëloni madhësinë e imazheve pa humbur cilësinë. Konvertoni JPG dhe PNG në WebP dhe përshpejtoni faqen tuaj. Pa regjistrim, funksionon në shfletues.",
-    "ogImage": "/assets/tools/narzedzia-konwerter-jpg-png-na-webp.webp",
+    "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
     "path": "/sq/mjetet/konvertues-jpg-png-ne-webp"
   },
   "hero": {
     "title": "Konvertoni imazhet në WebP – zvogëloni madhësinë pa humbur cilësinë",
     "description": "Ngarkoni imazhe në format JPG ose PNG dhe mjeti do t'i konvertojë në WebP. Skedarë më të vegjël, e njëjta cilësi, faqe më e shpejtë.",
-    "backgroundImage": "/assets/tools/narzedzia-konwerter-jpg-png-na-webp.webp"
+    "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
   "breadcrumbs": {
     "second": { "href": "/sq/mjetet", "label": "Mjetet" },

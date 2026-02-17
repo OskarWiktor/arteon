@@ -1,0 +1,221 @@
+{
+  "toolKey": "emailSignature",
+  "locale": "sl",
+  "metadata": {
+    "title": "Brezplačni generator e-poštnega podpisa – HTML za Gmail in Outlook",
+    "description": "Ustvarite profesionalni HTML e-poštni podpis brez programske opreme. Dodajte kontaktne podatke, logotip,",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
+    "path": "/sl/orodja/brezplacni-generator-e-postnega-podpisa"
+  },
+  "hero": {
+    "title": "Ustvarite profesionalni HTML e-poštni podpis",
+    "description": "Ustvarite profesionalni e-poštni podpis v nekaj minutah. Vnesite svoje podatke, izberite barve in kopirajte pripravljeno HTML kodo v Gmail, Outlook ali drug e-poštni odjemalec.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sl/orodja",
+      "label": "Orodja"
+    },
+    "third": {
+      "href": "/sl/orodja/brezplacni-generator-e-postnega-podpisa",
+      "label": "Generator e-poštnega podpisa"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Brezplačni generator e-poštnega podpisa",
+      "alternateName": ["HTML generator e-poštnega podpisa", "Generator noge e-pošte"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "EmailSignatureGenerator",
+      "description": "Brezplačni generator HTML e-poštnega podpisa. Dodajte kontaktne podatke, CTA gumb in profile družbenih omrežij, nato kopirajte pripravljeno kodo v Gmail, Outlook in druge e-poštne odjemalce.",
+      "featureList": [
+        "Kontaktni podatki (ime, naziv, podjetje)",
+        "Telefon, e-pošta in spletni naslov",
+        "Logotip ali profilna slika z izbiro oblike in velikosti",
+        "Ikone družbenih omrežij (12 platform)",
+        "Prilagodljive barve (besedilo, poudarek, ozadje)",
+        "CTA gumb z lastnim besedilom in povezavo",
+        "Predogled podpisa v realnem času",
+        "Kopiranje HTML kode v odložišče",
+        "Prenos podpisa kot HTML datoteka",
+        "Izvoz in uvoz nastavitev kot JSON datoteka",
+        "Združljivost z Gmailom, Outlookom in Apple Mailom",
+        "Brezplačno orodje, brez prijave"
+      ]
+    },
+    "howTo": {
+      "name": "Kako uporabljati generator e-poštnega podpisa",
+      "description": "Kako ustvariti profesionalni HTML e-poštni podpis z brezplačnim orodjem Arteon.",
+      "totalTime": "PT5M",
+      "steps": [
+        {
+          "name": "Izberite postavitev podpisa",
+          "text": "Izberite eno od osmih razpoložljivih postavitev."
+        },
+        {
+          "name": "Izpolnite kontaktne podatke",
+          "text": "Na zavihku Details vnesite ime, naziv, podjetje, e-pošto, telefon in spletni naslov."
+        },
+        {
+          "name": "Dodajte CTA gumb",
+          "text": "Na zavihku Buttons dodajte besedilo in URL glavnega gumba."
+        },
+        {
+          "name": "Dodajte povezave do družbenih omrežij",
+          "text": "Na zavihku Social Media vnesite URL naslove svojih profilov."
+        },
+        {
+          "name": "Prilagodite videz",
+          "text": "Na zavihku Appearance izberite barvno temo, vrsto pisave in velikost besedila."
+        },
+        {
+          "name": "Preverite predogled in kopirajte podpis",
+          "text": "Gumb Copy signature kopira pripravljeno kodo v odložišče."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Zakaj potrebujete profesionalni e-poštni podpis?",
+      "html": "<p class=\"text-mid\">E-poštni podpis (imenovan tudi noga e-pošte) je blok informacij na dnu vsakega poslanega sporočila. Vsebuje kontaktne podatke, naziv, ime podjetja in pogosto povezavo do spletne strani ali koledarja za naročanje terminov.</p><p class=\"text-mid mt-3\">Prejemniku ni treba iskati telefonske številke v prejšnjih sporočilih – vse informacije so enostavno dostopne. Profesionalni e-poštni podpis tudi pokaže, da ste pozorni na podrobnosti in vzdržujete enoten korporativni imidž v poslovni komunikaciji.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kako uporabljati generator e-poštnega podpisa",
+      "description": "Ustvarjanje profesionalnega e-poštnega podpisa traja le nekaj minut:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Vnesite podatke",
+          "description": "Izpolnite ime, naziv, podjetje in kontaktne podatke."
+        },
+        {
+          "title": "2. Prilagodite videz",
+          "description": "Izberite postavitev, barve, dodajte logotip in povezave do družbenih omrežij."
+        },
+        {
+          "title": "3. Kopirajte kodo",
+          "description": "Gumb Copy signature kopira pripravljeno kodo v odložišče. Prilepite jo v Gmail, Outlook ali drug e-poštni odjemalec."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Postavitve podpisa – katero bi izbrali?",
+      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Postavitev podpisa</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div></div>",
+      "html": "<p class=\"text-mid\">Generator ponuja osem vnaprej določenih postavitev. Vsaka postavitev prikazuje enake informacije na drugačen način.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> – klasična navpična postavitev, primerna za večino situacij.</li><li><strong>Top bar</strong> – vodoravna linija loči podpis od vsebine.</li><li><strong>Labels left</strong> – dva stolpca: oznake in vrednosti.</li><li><strong>Centered</strong> – formalen videz, vsebina sredinjena.</li><li><strong>Compact</strong> – vse v eni vrstici, minimalna višina.</li><li><strong>Two columns</strong> – podatki levo, kontaktne informacije desno.</li><li><strong>Minimalist</strong> – samo osnovne informacije.</li><li><strong>Bottom bar</strong> – barvna vrstica s kontaktnimi podatki na dnu podpisa.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kako kopirati podpis v Gmail ali Outlook",
+      "description": "Po dokončanju podpisa njegovo dodajanje v e-poštni odjemalec zahteva le nekaj korakov:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiClipboardLine",
+          "title": "1. Kopirajte kodo",
+          "description": "Gumb Copy signature kopira podpis v odložišče kot formatirano HTML, pripravljeno za lepljenje."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "2. Odprite nastavitve podpisa",
+          "description": "V Gmailu: Settings > See all settings > Signature. V Outlooku: File > Options > Mail > Signatures."
+        },
+        {
+          "icon": "RiSaveLine",
+          "title": "3. Prilepite in shranite",
+          "description": "V polju podpisa uporabite Ctrl+V (Windows) ali Cmd+V (Mac). Podpis se prikaže z vsemi barvami in oblikovanjem. Shranite spremembe."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Komu je namenjen generator e-poštnega podpisa?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBriefcaseLine",
+          "title": "Podjetniki in samostojni delavci",
+          "description": "Profesionalni podpis v vsakem sporočilu brez potrebe po grafičnem oblikovalcu."
+        },
+        {
+          "icon": "RiTeamLine",
+          "title": "Korporativne ekipe",
+          "description": "Vsak zaposleni ustvari podpis v enakem slogu. Enoten identiteta v celotnem podjetju."
+        },
+        {
+          "icon": "RiHandCoinLine",
+          "title": "Prodajalci",
+          "description": "CTA gumb s povezavo do koledarja ali ponudbe poveča verjetnost dogovorjenih sestankov."
+        },
+        {
+          "icon": "RiScales3Line",
+          "title": "Odvetniki, računovodje, zdravniki",
+          "description": "Možnost dodajanja pravnih opomb, licenčnih informacij ali drugih poklicnih podatkov."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Pogosta vprašanja o generatorju e-poštnega podpisa",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ali podpis deluje v Gmailu, Outlooku in Apple Mailu?",
+          "answer": "Da. Podpis, ustvarjen z orodjem, uporablja HTML tabele, ki se pravilno prikazujejo v vseh priljubljenih e-poštnih odjemalcih: Gmail, Outlook (namizni in spletni), Apple Mail, Thunderbird."
+        },
+        {
+          "question": "Ali lahko dodam logotip podjetja?",
+          "answer": "Da. Na zavihku Details vnesite URL slike (logotip ali profilna slika). Slika naj bo kvadratna (vsaj 120x120 px) in javno dostopna na internetu."
+        },
+        {
+          "question": "Kako se podpis kopira v e-poštni odjemalec?",
+          "answer": "Gumb Copy signature pod predogledom kopira podpis v odložišče kot formatirano HTML. V nastavitvah podpisa Gmaila ali Outlooka uporabite Ctrl+V (Windows) ali Cmd+V (Mac)."
+        },
+        {
+          "question": "Ali lahko generator uporabim za ustvarjanje podpisov za celotno ekipo?",
+          "answer": "Da. Generator ne zahteva prijave niti registracije. Vsak član ekipe lahko odpre orodje, izpolni svoje podatke in kopira pripravljen podpis. Nastavitve je mogoče tudi izvoziti kot JSON datoteko in deliti s kolegi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Oglejte si druga orodja"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

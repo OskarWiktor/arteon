@@ -27,11 +27,11 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
   title: 'Ferramentas online gratuitas | Imagens, SEO, cores, favicon',
-  description: '10 ferramentas online gratuitas: conversor WebP, gerador de favicon, contador de texto, extrator de cores e códigos QR. Para sites, redes sociais e impressão. Sem registo.',
+  description: '10 ferramentas gratuitas: conversor WebP, gerador de favicon, contador de texto, extrator de cores e códigos QR. Para sites e redes sociais.',
   alternates: getToolsIndexAlternates('pt'),
   openGraph: {
     title: 'Ferramentas online gratuitas | Imagens, SEO, cores, favicon',
-    description: '10 ferramentas online gratuitas: conversor WebP, gerador de favicon, contador de texto, extrator de cores e códigos QR. Para sites, redes sociais e impressão. Sem registo.',
+    description: '10 ferramentas gratuitas: conversor WebP, gerador de favicon, contador de texto, extrator de cores e códigos QR. Para sites e redes sociais.',
     url: toAbsoluteUrl('/pt/ferramentas'),
     type: 'website',
     images: [
@@ -48,7 +48,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Ferramentas online gratuitas',
-  description: '10 ferramentas online gratuitas: conversor WebP, gerador de favicon, contador de texto, extrator de cores e códigos QR. Para sites, redes sociais e impressão. Sem registo.',
+  description: '10 ferramentas gratuitas: conversor WebP, gerador de favicon, contador de texto, extrator de cores e códigos QR. Para sites e redes sociais.',
   url: toAbsoluteUrl('/pt/ferramentas'),
   inLanguage: 'pt',
   isPartOf: {

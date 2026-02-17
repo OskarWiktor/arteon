@@ -1,0 +1,231 @@
+{
+  "toolKey": "contrastChecker",
+  "locale": "fi",
+  "metadata": {
+    "title": "Ilmainen värikontrastin tarkistus – WCAG 2.1 -yhteensopivuus",
+    "description": "Tarkista, ovatko teksti- ja taustavärisi luettavia WCAG 2.1:n mukaan. Syötä HEX-, RGB- tai HSL-koodi, katso kontrastisuhde ja käytä automaattista korjausta.",
+    "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
+    "path": "/fi/tyokalut/varikontrasti-tarkistus"
+  },
+  "hero": {
+    "title": "Värikontrastin ja luettavuuden tarkistus",
+    "description": "Syötä tekstin ja taustan väri, ja työkalu näyttää, onko kontrasti riittävä. Laskelmat perustuvat kansainväliseen saavutettavuusstandardiin WCAG 2.1.",
+    "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/varikontrasti-tarkistus",
+      "label": "Värikontrastin tarkistus"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Värikontrastin ja luettavuuden tarkistus",
+      "alternateName": ["Värien luettavuustesteri", "Tekstin ja taustan kontrastin tarkistus", "Värikontrastilaskin", "WCAG-kontrastin testeri"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "AccessibilityTool",
+      "description": "Tarkista, ovatko teksti- ja taustavärit luettavia kaikille käyttäjille. Työkalu laskee kontrastisuhteen WCAG 2.1:n mukaan ja näyttää, täyttääkö se saavutettavuusvaatimukset.",
+      "featureList": [
+        "Kontrastisuhteen laskenta",
+        "WCAG 2.1 -tason AA yhteensopivuuden tarkistus",
+        "WCAG 2.1 -tason AAA yhteensopivuuden tarkistus",
+        "Normaalin tekstin testi",
+        "Suuren tekstin ja otsikoiden testi",
+        "Kuvakkeiden ja käyttöliittymäkomponenttien testi",
+        "Tuki HEX-, RGB-, RGBA-, HSL- ja HSLA-muodoille",
+        "Värinvalitsin visuaaliseen valintaan",
+        "Reaaliaikainen tekstin esikatselu",
+        "Automaattinen värin sovitustoiminto",
+        "Paikallinen käsittely selaimessa"
+      ]
+    },
+    "howTo": {
+      "name": "Näin tarkistat värikontrastin ja luettavuuden",
+      "description": "Näin tarkistat teksti- ja taustavärien luettavuuden WCAG-standardin mukaan.",
+      "steps": [
+        {
+          "name": "Valitse tekstin väri",
+          "text": "Syötä värikoodi (esim. #333333) HEX-, RGB- tai HSL-muodossa – tai valitse väri värinvalitsimesta."
+        },
+        {
+          "name": "Valitse taustaväri",
+          "text": "Syötä taustaväri, jolla teksti näytetään."
+        },
+        {
+          "name": "Lue tulokset",
+          "text": "Työkalu näyttää kontrastisuhteen ja sen, täyttävätkö värit AA/AAA-vaatimukset."
+        },
+        {
+          "name": "Säädä värejä",
+          "text": "Jos kontrasti on liian matala, Match-toiminto ehdottaa automaattisesti tekstivärivarianttia, joka täyttää valitun WCAG-kynnyksen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miksi värien luettavuus on tärkeää?",
+      "html": "<p class=\"text-mid\">Luettavuus on tekstivärin ja taustavärin välinen kirkkausero. Mitä suurempi ero, sitä helpompi teksti on lukea. Liian matala kontrasti tekee sisällöstä vaikeasti luettavaa – erityisesti henkilöille, joilla on näkövamma, ikääntyneille tai vaikeissa valaistusolosuhteissa.</p><p class=\"text-mid mt-3\"><a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Maailman terveysjärjestön (WHO)</a> mukaan noin 2,2 miljardilla ihmisellä maailmassa on jonkinlainen näkövamma.</p><p class=\"text-mid mt-3\">Työkalu laskee kontrastisuhteen <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1</a> -standardissa määritellyllä kaavalla – kansainvälisillä digitaalisen saavutettavuuden ohjeilla.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Näin käytät värikontrastin tarkistusta",
+      "description": "Luettavuuden tarkistaminen kestää vain muutaman sekunnin:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiPaletteLine",
+          "title": "1. Syötä tekstin väri",
+          "description": "Syötä värikoodi HEX-, RGB- tai HSL-muodossa – tai valitse väri värinvalitsimesta."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "2. Syötä taustaväri",
+          "description": "Syötä taustaväri, jolla teksti näytetään."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "3. Lue tulokset",
+          "description": "Työkalu laskee kontrastisuhteen ja näyttää, täyttävätkö värit WCAG-vaatimukset normaalille tekstille, suurelle tekstille ja kuvakkeille."
+        },
+        {
+          "icon": "RiEqualizerLine",
+          "title": "4. Säädä värejä",
+          "description": "Jos kontrasti on liian matala, Match-toiminto ehdottaa automaattisesti värivarianttia, joka täyttää valitun kynnyksen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Näin tulkitset luettavuustestin tulokset",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Kontrastisuhde</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Normaali teksti</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Kun värit on syötetty, työkalu näyttää tulokset kolmessa osassa:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normaali teksti</strong> – vaatii kontrastin 4.5:1 (AA) tai 7:1 (AAA). Koskee tekstiä alle 18pt (24px) tai alle 14pt lihavoitua.</li><li><strong>Suuri teksti / lihavoitu</strong> – vaatii kontrastin 3:1 (AA) tai 4.5:1 (AAA). Koskee otsikoita, painikkeita ja korostettua tekstiä.</li><li><strong>Kuvakkeet</strong> – vaatii kontrastin 3:1 (AA). Koskee kuvakkeita ja graafisia käyttöliittymäelementtejä, jotka välittävät tietoa.</li></ul><p class=\"text-mid mt-3\"><strong>Vihreä merkki</strong> tarkoittaa, että vaatimus täyttyy. <strong>Punainen merkki</strong> tarkoittaa, että kontrasti on liian matala ja se on korjattava.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Mitä tasot AA ja AAA tarkoittavat WCAG-standardissa?",
+      "plans": [
+        {
+          "id": "aa",
+          "name": "Taso AA (vähimmäistaso)",
+          "highlighted": true
+        },
+        {
+          "id": "aaa",
+          "name": "Taso AAA (parannettu)"
+        }
+      ],
+      "features": [
+        {
+          "name": "Normaali teksti – min. 4.5:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Normaali teksti – min. 7:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Suuri teksti / lihavoitu – min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Suuri teksti / lihavoitu – min. 4.5:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Kuvakkeet ja käyttöliittymäelementit – min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Lakisääteinen vaatimus (EU-direktiivi)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Suositellaan pääsisällölle",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset värikontrastin tarkistuksesta",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Mikä on värikontrastisuhde?",
+          "answer": "Kontrastisuhde on kahden värin välisen kirkkauseron mitta. Asteikko alkaa 1:1:stä (ei eroa) ja päättyy 21:1:een (suurin mahdollinen ero – musta teksti valkoisella taustalla). Mitä korkeampi suhde, sitä helpompi on erottaa teksti taustasta."
+        },
+        {
+          "question": "Mikä kontrasti on riittävä WCAG:n mukaan?",
+          "answer": "Normaalille tekstille vähimmäiskontrasti on 4.5:1 (taso AA). Suurelle tekstille – otsikoille 18pt:stä tai lihavoidulle 14pt:stä – riittää 3:1. Kuvakkeille ja käyttöliittymäkomponenteille vaaditaan myös 3:1."
+        },
+        {
+          "question": "Miksi värini eivät täytä vaatimuksia, vaikka näen ne hyvin?",
+          "answer": "Henkilökohtainen värien havaitseminen riippuu näytön asetuksista, huoneen valaistuksesta ja yksilöllisestä näkökyvystä. WCAG perustuu objektiiviseen matemaattiseen kaavaan, joka ottaa huomioon erilaiset näkövammat."
+        },
+        {
+          "question": "Pitääkö saavuttaa kontastitaso AAA?",
+          "answer": "Ei aina. Taso AA (4.5:1 normaalille tekstille) on vähimmäisvaatimus EU:n saavutettavuussäädösten mukaan. Taso AAA (7:1) tarjoaa paremman luettavuuden, mutta on vaikeampi saavuttaa. Kriittiselle sisällölle – varoitukset, turvallisuusohjeet – kannattaa pyrkiä AAA-tasoon."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tutustu muihin ilmaisiin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

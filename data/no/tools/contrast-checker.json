@@ -1,0 +1,231 @@
+{
+  "toolKey": "contrastChecker",
+  "locale": "no",
+  "metadata": {
+    "title": "Gratis fargekontrastsjekker – WCAG 2.1-samsvar",
+    "description": "Sjekk om tekst- og bakgrunnsfargene dine er lesbare i henhold til WCAG 2.1. Skriv inn HEX-, RGB- eller HSL-kode,",
+    "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
+    "path": "/no/verktoy/fargekontrastsjekker"
+  },
+  "hero": {
+    "title": "Kontroll av fargekontrast og lesbarhet",
+    "description": "Skriv inn tekst- og bakgrunnsfarge, og verktøyet viser om kontrasten er tilstrekkelig. Beregningene er basert på den internasjonale tilgjengelighetsstandarden WCAG 2.1.",
+    "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/fargekontrastsjekker",
+      "label": "Fargekontrastsjekker"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Kontroll av fargekontrast og lesbarhet",
+      "alternateName": ["Fargelesbarhetstester", "Kontrastkontroll for tekst og bakgrunn", "Fargekontrastkalkulator", "WCAG-kontrasttester"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "AccessibilityTool",
+      "description": "Sjekk om tekst- og bakgrunnsfarger er lesbare for alle brukere. Verktøyet beregner kontrastforholdet i henhold til WCAG 2.1 og viser om det oppfyller tilgjengelighetskravene.",
+      "featureList": [
+        "Beregning av kontrastforhold",
+        "Kontroll av WCAG 2.1 Nivå AA-samsvar",
+        "Kontroll av WCAG 2.1 Nivå AAA-samsvar",
+        "Test av normal tekst",
+        "Test av stor tekst og overskrifter",
+        "Test av ikoner og UI-komponenter",
+        "Støtte for HEX, RGB, RGBA, HSL, HSLA-formater",
+        "Fargevelger for visuelt valg",
+        "Live forhåndsvisning av tekst",
+        "Automatisk fargetilpasningsfunksjon",
+        "Lokal behandling i nettleseren"
+      ]
+    },
+    "howTo": {
+      "name": "Slik sjekker du fargekontrast og lesbarhet",
+      "description": "Slik sjekker du lesbarheten av tekst- og bakgrunnsfarger i henhold til WCAG-standarden.",
+      "steps": [
+        {
+          "name": "Velg tekstfarge",
+          "text": "Skriv inn en fargekode (f.eks. #333333) i HEX-, RGB- eller HSL-format – eller velg en farge fra fargevelgeren."
+        },
+        {
+          "name": "Velg bakgrunnsfarge",
+          "text": "Skriv inn bakgrunnsfargen der teksten skal vises."
+        },
+        {
+          "name": "Les resultatene",
+          "text": "Verktøyet viser kontrastforholdet og om fargene oppfyller AA/AAA-kravene."
+        },
+        {
+          "name": "Juster fargene",
+          "text": "Hvis kontrasten er for lav, foreslår Match-funksjonen automatisk en tekstfargevariant som oppfyller den valgte WCAG-terskelen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvorfor er fargelesbarhet viktig?",
+      "html": "<p class=\"text-mid\">Lesbarhet er forskjellen i lysstyrke mellom tekstfargen og bakgrunnsfargen. Jo større forskjell, jo lettere er det å lese teksten. For lav kontrast gjør innholdet vanskelig å lese – spesielt for personer med synshemming, eldre eller under vanskelige lysforhold.</p><p class=\"text-mid mt-3\">Ifølge <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Verdens helseorganisasjon (WHO)</a> har ca. 2,2 milliarder mennesker i verden en eller annen form for synshemming.</p><p class=\"text-mid mt-3\">Verktøyet beregner kontrastforholdet med formelen definert i <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1</a> – internasjonale retningslinjer for digital tilgjengelighet.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Slik bruker du fargekontrastsjekkeren",
+      "description": "Å sjekke lesbarheten tar bare noen sekunder:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiPaletteLine",
+          "title": "1. Skriv inn tekstfarge",
+          "description": "Skriv inn en fargekode i HEX-, RGB- eller HSL-format – eller velg en farge fra fargevelgeren."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "2. Skriv inn bakgrunnsfarge",
+          "description": "Skriv inn bakgrunnsfargen der teksten skal vises."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "3. Les resultatene",
+          "description": "Verktøyet beregner kontrastforholdet og viser om fargene oppfyller WCAG-kravene for normal tekst, stor tekst og ikoner."
+        },
+        {
+          "icon": "RiEqualizerLine",
+          "title": "4. Juster fargene",
+          "description": "Hvis kontrasten er for lav, foreslår Match-funksjonen automatisk en fargevariant som oppfyller den valgte terskelen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Slik tolker du resultatene av lesbarhetstesten",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Kontrastforhold</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Normal tekst</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Når farger er skrevet inn, viser verktøyet resultater i tre seksjoner:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normal tekst</strong> – krever kontrast 4.5:1 (AA) eller 7:1 (AAA). Gjelder tekst under 18pt (24px) eller under 14pt fet.</li><li><strong>Stor tekst / fet</strong> – krever kontrast 3:1 (AA) eller 4.5:1 (AAA). Gjelder overskrifter, knapper og uthevet tekst.</li><li><strong>Ikoner</strong> – krever kontrast 3:1 (AA). Gjelder ikoner og grafiske UI-elementer som formidler informasjon.</li></ul><p class=\"text-mid mt-3\"><strong>Grønn indikator</strong> betyr at kravet er oppfylt. <strong>Rød indikator</strong> betyr at kontrasten er for lav og må korrigeres.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Hva betyr nivåene AA og AAA i WCAG-standarden?",
+      "plans": [
+        {
+          "id": "aa",
+          "name": "Nivå AA (minimum)",
+          "highlighted": true
+        },
+        {
+          "id": "aaa",
+          "name": "Nivå AAA (forbedret)"
+        }
+      ],
+      "features": [
+        {
+          "name": "Normal tekst – min. 4.5:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Normal tekst – min. 7:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Stor tekst / fet – min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Stor tekst / fet – min. 4.5:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Ikoner og UI-elementer – min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Lovkrav (EU-direktiv)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Anbefales for hovedinnhold",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte spørsmål om fargekontrastsjekkeren",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hva er et fargekontrastforhold?",
+          "answer": "Kontrastforholdet er et mål på lysstyrkeforskjellen mellom to farger. Skalaen starter fra 1:1 (ingen forskjell) til 21:1 (maksimal forskjell – svart tekst på hvit bakgrunn). Jo høyere forhold, jo lettere å skille tekst fra bakgrunn."
+        },
+        {
+          "question": "Hvilken kontrast er tilstrekkelig i henhold til WCAG?",
+          "answer": "For normal tekst er minimum 4.5:1 (Nivå AA). For stor tekst – overskrifter fra 18pt eller fet tekst fra 14pt – er 3:1 tilstrekkelig. For ikoner og UI-komponenter kreves også 3:1."
+        },
+        {
+          "question": "Hvorfor oppfyller ikke fargene mine kravene, selv om jeg kan se dem godt?",
+          "answer": "Personlig fargeoppfatning avhenger av skjerminnstillinger, rombelysning og individuell synsevne. WCAG er basert på en objektiv matematisk formel som tar hensyn til ulike synshemminger."
+        },
+        {
+          "question": "Må jeg oppfylle kontrastnivå AAA?",
+          "answer": "Ikke alltid. Nivå AA (4.5:1 for normal tekst) er minimumskravet i henhold til tilgjengelighetsforskrifter i EU. Nivå AAA (7:1) gir bedre lesbarhet, men er vanskeligere å oppnå. For kritisk innhold – advarsler, sikkerhetsinstruksjoner – bør du vurdere å oppnå AAA."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforsk flere gratis verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -570,6 +570,35 @@ const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
     },
   },
 
+  no: {
+    slug: 'kontakt',
+    metadata: {
+      title: 'Kontakt – Arteon gratis verktøy | Støtte og tilbakemelding',
+      description: 'Kontakt Arteon-teamet. Rapporter en feil, foreslå et nytt verktøy eller still et spørsmål om våre gratis verktøy for bilder, SEO, farger og QR-koder. Vi svarer innen én virkedag.',
+    },
+    hero: {
+      title: 'Kontakt Arteon-teamet',
+      description: 'Rapporter en feil, foreslå et nytt verktøy eller still et spørsmål — vi svarer innen én virkedag',
+    },
+    intro: {
+      title: 'Har du et spørsmål eller et forslag?',
+      textBefore: 'Vi hører gjerne din tilbakemelding om verktøyene våre. Hvis du har funnet en feil, har en idé til et nytt verktøy eller trenger hjelp — skriv til oss på',
+      textAfter: '. Vi svarer innen én virkedag.',
+    },
+    formTitle: 'Send oss en melding',
+    details: {
+      title: 'Kontaktinformasjon',
+      emailLabel: 'E-post',
+      hoursLabel: 'Åpningstider',
+      hoursValue: 'Mandag – Fredag: 8:00 – 16:00 (CET)',
+    },
+    cta: {
+      title: 'Tilbake til verktøyene',
+      description: '10 gratis verktøy for å jobbe med bilder, tekst og farger',
+      btnOne: 'Verktøy',
+    },
+  },
+
   pt: {
     slug: 'contacto',
     metadata: {
@@ -597,6 +626,159 @@ const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
       title: 'Voltar às ferramentas',
       description: '10 ferramentas online gratuitas para trabalhar com imagens, texto e cores',
       btnOne: 'Ferramentas',
+    },
+  },
+
+  fi: {
+    slug: 'yhteystiedot',
+    metadata: {
+      title: 'Yhteystiedot \u2013 Arteon ilmaiset ty\u00f6kalut | Tuki ja palaute',
+      description:
+        'Ota yhteytt\u00e4 Arteon-tiimiin. Ilmoita virheest\u00e4, ehdota uutta ty\u00f6kalua tai kysy meilt\u00e4 ilmaisista kuva-, SEO-, v\u00e4ri- ja QR-koodity\u00f6kaluistamme. Vastaamme yhden arkip\u00e4iv\u00e4n kuluessa.',
+    },
+    hero: {
+      title: 'Ota yhteytt\u00e4 Arteon-tiimiin',
+      description: 'Ilmoita virheest\u00e4, ehdota uutta ty\u00f6kalua tai kysy kysymys \u2013 vastaamme yhden arkip\u00e4iv\u00e4n kuluessa',
+    },
+    intro: {
+      title: 'Onko sinulla kysymys tai ehdotus?',
+      textBefore: 'Kuulemme mielell\u00e4mme palautetta ty\u00f6kaluistamme. Jos l\u00f6ysit virheen, sinulla on idea uudesta ty\u00f6kalusta tai tarvitset apua \u2013 kirjoita meille osoitteeseen',
+      textAfter: '. Vastaamme yhden arkip\u00e4iv\u00e4n kuluessa.',
+    },
+    formTitle: 'L\u00e4het\u00e4 meille viesti',
+    details: {
+      title: 'Yhteystiedot',
+      emailLabel: 'S\u00e4hk\u00f6posti',
+      hoursLabel: 'Aukioloajat',
+      hoursValue: 'Maanantai \u2013 Perjantai: 8:00 \u2013 16:00 (CET)',
+    },
+    cta: {
+      title: 'Takaisin ty\u00f6kaluihin',
+      description: '10 ilmaista ty\u00f6kalua kuvien, tekstin ja v\u00e4rien k\u00e4sittelyyn',
+      btnOne: 'Ty\u00f6kalut',
+    },
+  },
+
+  sk: {
+    slug: 'kontakt',
+    metadata: {
+      title: 'Kontakt \u2013 Arteon bezplatn\u00e9 n\u00e1stroje | Podpora a sp\u00e4tn\u00e1 v\u00e4zba',
+      description:
+        'Kontaktujte t\u00edm Arteon. Nahl\u00e1ste chybu, navrhnite nov\u00fd n\u00e1stroj alebo polo\u017ete ot\u00e1zku o na\u0161ich bezplatn\u00fdch n\u00e1strojoch pre obr\u00e1zky, SEO, farby a QR k\u00f3dy. Odpoved\u00e1me do jedn\u00e9ho pracovn\u00e9ho d\u0148a.',
+    },
+    hero: {
+      title: 'Kontaktujte t\u00edm Arteon',
+      description: 'Nahl\u00e1ste chybu, navrhnite nov\u00fd n\u00e1stroj alebo polo\u017ete ot\u00e1zku \u2014 odpoved\u00e1me do jedn\u00e9ho pracovn\u00e9ho d\u0148a',
+    },
+    intro: {
+      title: 'M\u00e1te ot\u00e1zku alebo n\u00e1vrh?',
+      textBefore:
+        'Radi si vypo\u010dujeme va\u0161u sp\u00e4tn\u00fa v\u00e4zbu k na\u0161im n\u00e1strojom. Ak ste na\u0161li chybu, m\u00e1te n\u00e1pad na nov\u00fd n\u00e1stroj alebo potrebujete pomoc \u2014 nap\u00ed\u0161te n\u00e1m na',
+      textAfter: '. Odpoved\u00e1me do jedn\u00e9ho pracovn\u00e9ho d\u0148a.',
+    },
+    formTitle: 'Po\u0161lite n\u00e1m spr\u00e1vu',
+    details: {
+      title: 'Kontaktn\u00e9 \u00fadaje',
+      emailLabel: 'E-mail',
+      hoursLabel: 'Pracovn\u00e1 doba',
+      hoursValue: 'Pondelok \u2013 Piatok: 8:00 \u2013 16:00 (CET)',
+    },
+    cta: {
+      title: 'Sp\u00e4\u0165 na n\u00e1stroje',
+      description: '10 bezplatn\u00fdch n\u00e1strojov pre pr\u00e1cu s obr\u00e1zkami, textom a farbami',
+      btnOne: 'N\u00e1stroje',
+    },
+  },
+
+  hr: {
+    slug: 'kontakt',
+    metadata: {
+      title: 'Kontakt \u2013 Arteon besplatni alati | Podr\u0161ka i povratne informacije',
+      description:
+        'Kontaktirajte tim Arteon. Prijavite gre\u0161ku, predlo\u017eite novi alat ili postavite pitanje o na\u0161im besplatnim alatima za slike, SEO, boje i QR kodove. Odgovaramo u roku jednog radnog dana.',
+    },
+    hero: {
+      title: 'Kontaktirajte tim Arteon',
+      description: 'Prijavite gre\u0161ku, predlo\u017eite novi alat ili postavite pitanje \u2014 odgovaramo u roku jednog radnog dana',
+    },
+    intro: {
+      title: 'Imate pitanje ili prijedlog?',
+      textBefore: 'Rado \u010dujemo va\u0161e povratne informacije o na\u0161im alatima. Ako ste prona\u0161li gre\u0161ku, imate ideju za novi alat ili trebate pomo\u0107 \u2014 pi\u0161ite nam na',
+      textAfter: '. Odgovaramo u roku jednog radnog dana.',
+    },
+    formTitle: 'Po\u0161aljite nam poruku',
+    details: {
+      title: 'Kontakt podaci',
+      emailLabel: 'E-po\u0161ta',
+      hoursLabel: 'Radno vrijeme',
+      hoursValue: 'Ponedjeljak \u2013 Petak: 8:00 \u2013 16:00 (CET)',
+    },
+    cta: {
+      title: 'Natrag na alate',
+      description: '10 besplatnih alata za rad sa slikama, tekstom i bojama',
+      btnOne: 'Alati',
+    },
+  },
+
+  lt: {
+    slug: 'kontaktai',
+    metadata: {
+      title: 'Kontaktai \u2013 Arteon nemokami \u012frankiai | Palaikymas ir atsiliepimai',
+      description:
+        'Susisiekite su Arteon komanda. Prane\u0161kite apie klaid\u0105, pasi\u016blykite nauj\u0105 \u012frank\u012f arba u\u017eduokite klausim\u0105 apie m\u016bs\u0173 nemokamus vaizd\u0173, SEO, spalv\u0173 ir QR kod\u0173 \u012frankius. Atsakome per vien\u0105 darbo dien\u0105.',
+    },
+    hero: {
+      title: 'Susisiekite su Arteon komanda',
+      description: 'Prane\u0161kite apie klaid\u0105, pasi\u016blykite nauj\u0105 \u012frank\u012f arba u\u017eduokite klausim\u0105 \u2014 atsakome per vien\u0105 darbo dien\u0105',
+    },
+    intro: {
+      title: 'Turite klausim\u0105 ar pasi\u016blym\u0105?',
+      textBefore:
+        'Mielai i\u0161girsite j\u016bs\u0173 atsiliepimus apie m\u016bs\u0173 \u012frankius. Jei radote klaid\u0105, turite id\u0117j\u0105 naujam \u012frankiui arba reikia pagalbos \u2014 ra\u0161ykite mums adresu',
+      textAfter: '. Atsakome per vien\u0105 darbo dien\u0105.',
+    },
+    formTitle: 'Atsi\u0173skite mums \u017einut\u0119',
+    details: {
+      title: 'Kontaktin\u0117 informacija',
+      emailLabel: 'El. pa\u0161tas',
+      hoursLabel: 'Darbo valandos',
+      hoursValue: 'Pirmadienis \u2013 Penktadienis: 8:00 \u2013 16:00 (CET)',
+    },
+    cta: {
+      title: 'Gr\u012f\u017eti prie \u012franki\u0173',
+      description: '10 nemokam\u0173 \u012franki\u0173 darbui su vaizdais, tekstu ir spalvomis',
+      btnOne: '\u012erankiai',
+    },
+  },
+
+  sl: {
+    slug: 'kontakt',
+    metadata: {
+      title: 'Kontakt \u2013 Arteon brezpla\u010dna orodja | Podpora in povratne informacije',
+      description:
+        'Stopite v stik z ekipo Arteon. Prijavite napako, predlagajte novo orodje ali postavite vpra\u0161anje o na\u0161ih brezpla\u010dnih orodjih za slike, SEO, barve in QR kode. Odgovorimo v enem delovnem dnevu.',
+    },
+    hero: {
+      title: 'Stopite v stik z ekipo Arteon',
+      description: 'Prijavite napako, predlagajte novo orodje ali postavite vpra\u0161anje \u2014 odgovorimo v enem delovnem dnevu',
+    },
+    intro: {
+      title: 'Imate vpra\u0161anje ali predlog?',
+      textBefore:
+        'Z veseljem sli\u0161imo va\u0161e povratne informacije o na\u0161ih orodjih. \u010ce ste na\u0161li napako, imate idejo za novo orodje ali potrebujete pomo\u010d \u2014 pi\u0161ite nam na',
+      textAfter: '. Odgovorimo v enem delovnem dnevu.',
+    },
+    formTitle: 'Po\u0161ljite nam sporo\u010dilo',
+    details: {
+      title: 'Kontaktni podatki',
+      emailLabel: 'E-po\u0161ta',
+      hoursLabel: 'Delovni \u010das',
+      hoursValue: 'Ponedeljek \u2013 Petek: 8:00 \u2013 16:00 (CET)',
+    },
+    cta: {
+      title: 'Nazaj na orodja',
+      description: '10 brezpla\u010dnih orodij za delo s slikami, besedilom in barvami',
+      btnOne: 'Orodja',
     },
   },
 };

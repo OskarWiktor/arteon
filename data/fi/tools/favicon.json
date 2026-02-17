@@ -1,0 +1,127 @@
+{
+  "toolKey": "favicon",
+  "locale": "fi",
+  "metadata": {
+    "title": "Ilmainen favicon-generaattori – ICO ja PNG yhdestä kuvasta",
+    "description": "Luo favicon.ico ja PNG-kuvakkeet yhdestä kuvasta selain- ja Lighthouse-vaatimusten mukaisesti. Ilman rekisteröitymistä, toimii selaimessa.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
+    "path": "/fi/tyokalut/ilmainen-favicon-generaattori"
+  },
+  "hero": {
+    "title": "Luo favicon.ico ja PNG-kuvakkeet yhdestä kuvasta",
+    "description": "Lataa kuva, ja työkalu luo favicon.ico-tiedoston ja täydellisen PNG-kuvakesarjan selaimille, mobiililaitteille ja Lighthouselle.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/fi/tyokalut", "label": "Työkalut" },
+    "third": { "href": "/fi/tyokalut/ilmainen-favicon-generaattori", "label": "Favicon-generaattori" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Ilmainen favicon-generaattori",
+      "alternateName": ["Favicon.ico-generaattori", "Verkkokuvakegeneraattori", "Favicon-työkalu", "Favicon-generaattori kuvasta"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "FaviconGenerator",
+      "description": "Ilmainen favicon-generaattori. Lataa kuva ja saat favicon.ico-tiedoston ja täydellisen PNG-kuvakesarjan selaimille, mobiililaitteille ja PWA:lle.",
+      "featureList": [
+        "Favicon.ico-tiedoston luonti (16×16, 32×32, 48×48 px)",
+        "PNG-kuvakkeet selaimille (16×16–512×512 px)",
+        "Apple Touch Icon (180×180 px)",
+        "Android/PWA-kuvakkeet (192×192, 512×512 px)",
+        "Microsoft-kuvakkeet (150×150, 310×310 px)",
+        "Lähdekuvan rajaus ja koon muuttaminen",
+        "Reaaliaikainen esikatselu",
+        "Kaikkien kuvakkeiden lataus ZIP-tiedostona",
+        "Paikallinen käsittely selaimessa"
+      ]
+    },
+    "howTo": {
+      "name": "Näin luot faviconin kuvasta",
+      "description": "Näin luot favicon.ico- ja PNG-kuvakkeet kuvasta selaimille ja mobiililaitteille.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Lataa kuva", "text": "Vedä ja pudota tiedosto merkittyyn alueeseen tai valitse se laitteeltasi. Tuetut muodot ovat JPG, PNG, SVG ja WebP." },
+        { "name": "Rajaa kuva", "text": "Säädä rajausaluetta valitaksesi kuvan sopivan osan faviconiksi." },
+        { "name": "Tarkista esikatselu", "text": "Katso, miltä favicon näyttää selaimen välilehdessä ja eri ko'oissa." },
+        { "name": "Lataa kuvakkeet", "text": "Lataa favicon.ico ja täydellinen PNG-kuvakesarja ZIP-tiedostona." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Mikä on favicon ja miksi se on tärkeä?",
+      "html": "<p class=\"text-mid\">Favicon on pieni kuvake, joka näkyy selaimen välilehdessä, kirjanmerkkipalkkissa ja puhelimen aloitusnäytöllä. Se on yksi ensimmäisistä elementeistä, jotka käyttäjä näkee – jo ennen sivun täydellistä latautumista.</p><p class=\"text-mid mt-3\">Ammattimainen favicon rakentaa brändin tunnistettavuutta ja helpottaa käyttäjää löytämään sivun monien avoimien välilehtien joukosta. Faviconin puuttuminen voi antaa epäammattimaisen vaikutelman ja vähentää kävijöiden luottamusta.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Näin käytät favicon-generaattoria",
+      "description": "Faviconin luominen kestää vain muutaman minuutin:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Lataa kuva", "description": "Vedä ja pudota tiedosto merkittyyn alueeseen tai valitse se laitteeltasi. Neliömäinen kuva toimii parhaiten." },
+        { "title": "2. Rajaa ja säädä", "description": "Säädä rajausaluetta valitaksesi kuvan sopivan osan. Katso, miltä se näyttää eri ko'oissa." },
+        { "title": "3. Lataa kuvakkeet", "description": "Lataa favicon.ico ja täydellinen PNG-kuvakesarja ZIP-tiedostona. Kaikki kuvakkeet ovat valmiita käytettäviksi." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Mitkä kuvakkeet generaattori luo?",
+      "description": "Generaattori luo täydellisen kuvakesarjan nykyaikaisille selaimille ja laitteille:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiGlobalLine", "title": "favicon.ico", "description": "ICO-tiedosto, joka sisältää kolme kokoa (16×16, 32×32, 48×48 px). Kaikki selaimet tukevat, mukaan lukien vanhemmat." },
+        { "icon": "RiChromeLine", "title": "Selainkuvakkeet (PNG)", "description": "PNG-kuvakesarja nykyaikaisille selaimille: 16×16, 32×32, 48×48, 96×96 ja 128×128 px." },
+        { "icon": "RiAppleLine", "title": "Apple Touch Icon", "description": "Kuvake 180×180 px iOS-laitteille (iPhone, iPad). Näkyy aloitusnäytöllä sivun lisäämisen jälkeen." },
+        { "icon": "RiAndroidLine", "title": "Android/PWA-kuvakkeet", "description": "Kuvakkeet 192×192 ja 512×512 px Progressive Web Appseille ja Android-laitteille." },
+        { "icon": "RiWindowsLine", "title": "Microsoft-kuvakkeet", "description": "Kuvakkeet 150×150 ja 310×310 px Windows-ruuduille ja Microsoft Edgelle." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä favicon-generaattorista erityisen?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Paikallinen käsittely selaimessa", "description": "Kuvaa ei ladata palvelimelle. Kaikki käsittely tapahtuu laitteellasi." },
+        { "icon": "RiCheckboxCircleLine", "title": "Täyttää Lighthouse-vaatimukset", "description": "Luodut kuvakkeet täyttävät Google Lighthosen koko- ja muotovaatimukset." },
+        { "icon": "RiDevicesLine", "title": "Kuvakkeet kaikille laitteille", "description": "Yksi tiedostosarja kattaa kaikki selaimet, iOS:n, Androidin ja Windowsin." },
+        { "icon": "RiInfinityLine", "title": "Ilman rajoituksia, ilman rekisteröitymistä", "description": "Luo niin monta faviconia kuin tarvitset. Ilman rekisteröitymistä, ilman maksuja." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset favicon-generaattorista",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Mikä kuva on paras faviconiksi?",
+          "answer": "Neliömäinen kuva (vähintään 512×512 px) yksinkertaisella taustalla on paras. Logot, nimikirjaimet tai yksinkertaiset kuvakkeet tuottavat parhaat tulokset. Paljon yksityiskohtia sisältävät kuvat voivat näyttää huonoilta pienessä koossa (16×16 px).",
+          "answerSchemaText": "Neliömäinen kuva, vähintään 512×512 px, yksinkertaisella taustalla. Logot tai yksinkertaiset kuvakkeet tuottavat parhaan tuloksen."
+        },
+        {
+          "question": "Mikä on ero favicon.ico:n ja PNG:n välillä?",
+          "answer": "ICO-tiedosto voi sisältää useita kokoja yhdessä tiedostossa, ja kaikki selaimet tukevat sitä, mukaan lukien vanhemmat. PNG-tiedostot tarjoavat korkeamman laadun, mutta vaativat erillisen HTML-tunnisteen jokaiselle koolle. Molempien käyttöä suositellaan.",
+          "answerSchemaText": "ICO sisältää useita kokoja yhdessä tiedostossa. PNG tarjoaa korkeamman laadun. Molempien käyttöä suositellaan."
+        },
+        {
+          "question": "Lähetetäänkö kuva palvelimelle?",
+          "answer": "Ei. Kaikki käsittely tapahtuu selaimessasi. Kuvaa ei tallenneta eikä lähetetä mihinkään.",
+          "answerSchemaText": "Ei. Kuva käsitellään selaimessa. Sitä ei lähetetä palvelimelle."
+        },
+        {
+          "question": "Miten favicon lisätään verkkosivulle?",
+          "answer": "Sijoita kuvaketiedostot verkkosivuston juurikansioon ja lisää asianmukaiset HTML-tunnisteet sivun &lt;head&gt;-osioon. Ladattu ZIP-tiedosto sisältää käyttöönotto-ohjeet.",
+          "answerSchemaText": "Sijoita kuvaketiedostot juurikansioon ja lisää HTML-tunnisteet head-osioon."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Tutustu muihin työkaluihin" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "toolKey": "imageResize",
+  "locale": "fi",
+  "metadata": {
+    "title": "Ilmainen kuvaeditori – Rajaa ja sovita sosiaaliseen mediaan",
+    "description": "Rajaa ja sovita kuvat Instagramiin, Facebookiin, LinkedIniin ja muihin. Valitse valmis muoto tai syötä omat mitat. Ilman rekisteröitymistä, ilman rajoituksia.",
+    "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
+    "path": "/fi/tyokalut/kuvaeditori"
+  },
+  "hero": {
+    "title": "Rajaa ja sovita kuvat mihin tahansa kuvamuotoon",
+    "description": "Lataa kuva, valitse valmis muoto sosiaaliseen mediaan tai syötä omat mitat ja lataa rajattu kuva.",
+    "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/fi/tyokalut", "label": "Työkalut" },
+    "third": { "href": "/fi/tyokalut/kuvaeditori", "label": "Kuvaeditori" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Ilmainen kuvaeditori – rajaus ja koon muuttaminen",
+      "alternateName": ["Kuvan rajaustyökalu", "Kuvien koon muuttaminen sosiaaliseen mediaan"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageEditor",
+      "description": "Ilmainen kuvaeditori, jolla voit rajata ja muuttaa kuvien kokoa sosiaaliseen mediaan, verkkosivuille ja muihin tarkoituksiin.",
+      "featureList": [
+        "Kuvan rajaus mihin tahansa kuvasuhteeseen",
+        "Valmiit muodot Instagramille, Facebookille, LinkedInille, YouTubelle",
+        "Omat mitat leveyteenä ja korkeutena",
+        "Kuvan kierto ja peilaus",
+        "Reaaliaikainen esikatselu",
+        "Lataus PNG- tai JPG-muodossa",
+        "Paikallinen käsittely selaimessa"
+      ]
+    },
+    "howTo": {
+      "name": "Näin rajaat ja muutat kuvan kokoa",
+      "description": "Näin rajaat kuvan mihin tahansa kuvasuhteeseen ja muutat kokoa sosiaaliseen mediaan tai verkkoon.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Lataa kuva", "text": "Vedä ja pudota tiedosto merkittyyn alueeseen tai valitse se laitteeltasi." },
+        { "name": "Valitse kuvamuoto", "text": "Valitse valmis muoto tietylle alustalle tai syötä omat mitat." },
+        { "name": "Säädä rajausaluetta", "text": "Siirrä ja muuta rajauskehyksen kokoa valitaksesi kuvan halutun osan." },
+        { "name": "Lataa tulos", "text": "Napsauta latauspainiketta saadaksesi rajatun kuvan PNG- tai JPG-muodossa." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Miksi kuvien rajaaminen oikeaan kuvasuhteeseen on tärkeää?",
+      "html": "<p class=\"text-mid\">Jokaisella alustalla on omat vaatimuksensa kuvan mitoille. Instagramin profiilikuva on neliö (1:1), Facebookin kansikuva on leveä (820×312 px) ja YouTuben pikkukuva on 16:9. Väärän kuvasuhteen kuvan lataaminen johtaa automaattiseen rajaukseen – joka usein poistaa kuvan tärkeän osan.</p><p class=\"text-mid mt-3\">Tämä editori mahdollistaa kuvan valmistelun oikealla kuvasuhteella ennen latausta. Valitse valmis muoto tai syötä omat mitat ja saat tarkasti rajatun kuvan.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Näin käytät kuvaeditooria",
+      "description": "Rajaus ja koon muuttaminen kestää vain muutaman minuutin:",
+      "grid": "four",
+      "items": [
+        { "icon": "RiUploadLine", "title": "1. Lataa kuva", "description": "Vedä ja pudota tiedosto merkittyyn alueeseen tai valitse se laitteeltasi. Tuetut muodot ovat JPG, PNG ja WebP." },
+        { "icon": "RiCropLine", "title": "2. Valitse kuvamuoto", "description": "Valitse valmis muoto tietylle alustalle (Instagram, Facebook, LinkedIn, YouTube) tai syötä omat mitat." },
+        { "icon": "RiDragMoveLine", "title": "3. Säädä aluetta", "description": "Siirrä ja muuta rajauskehyksen kokoa. Kuva näkyy reaaliajassa, joten näet tuloksen heti." },
+        { "icon": "RiDownloadLine", "title": "4. Lataa tulos", "description": "Napsauta latauspainiketta. Rajattu kuva on saatavilla PNG- tai JPG-muodossa." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Valmiit muodot sosiaaliseen mediaan",
+      "description": "Editori tarjoaa valmiit muodot suosituimmille alustoille:",
+      "grid": "three",
+      "items": [
+        { "icon": "RiInstagramLine", "title": "Instagram", "description": "Neliö (1:1), tarina ja reels (9:16), vaakasuora (1.91:1), pystysuora (4:5)." },
+        { "icon": "RiFacebookLine", "title": "Facebook", "description": "Kansikuva (820×312), julkaisu (1200×630), tarina (1080×1920), profiilikuva (1:1)." },
+        { "icon": "RiLinkedinLine", "title": "LinkedIn", "description": "Kansikuva (1584×396), julkaisu (1200×1200), profiilikuva (1:1)." },
+        { "icon": "RiYoutubeLine", "title": "YouTube", "description": "Pikkukuva (1280×720), kanavabanneri (2560×1440)." },
+        { "icon": "RiTwitterXLine", "title": "X (Twitter)", "description": "Julkaisu (1600×900), otsikkokuva (1500×500), profiilikuva (1:1)." },
+        { "icon": "RiImageLine", "title": "Mukautettu", "description": "Syötä mikä tahansa leveys ja korkeus pikseleinä tai valitse vapaa kuvasuhde." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kuka tarvitsee kuvaeditooria?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiMegaphoneLine", "title": "Sosiaalisen median vastaavat", "description": "Valmistele kuvat oikealla kuvasuhteella jokaiselle alustalle ilman grafiikkaohjelmistoa." },
+        { "icon": "RiShoppingBagLine", "title": "Verkkokaupan omistajat", "description": "Rajaa tuotekuvat samaan kuvasuhteeseen ammattimaisen ulkoasun saamiseksi luetteloihin." },
+        { "icon": "RiBloggerLine", "title": "Bloggaajat", "description": "Valmistele otsikkokuvat ja artikkelikuvat oikealla kuvasuhteella." },
+        { "icon": "RiCodeLine", "title": "Verkkokehittäjät", "description": "Rajaa kuvat nopeasti omiin mittoihin ilman grafiikkaohjelmiston avaamista." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset kuvaeditorista",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Vaatiiko editori rekisteröitymisen?",
+          "answer": "Ei. Työkalu on täysin ilmainen eikä vaadi kirjautumista tai rekisteröitymistä. Kuva käsitellään selaimessasi – sitä ei lähetetä palvelimelle.",
+          "answerSchemaText": "Ei. Työkalu on ilmainen eikä vaadi rekisteröitymistä. Kuva käsitellään selaimessa."
+        },
+        {
+          "question": "Mitkä kuvamuodot ovat tuettuja?",
+          "answer": "Editori tukee JPG-, PNG- ja WebP-muotoja. Rajatun kuvan voi ladata PNG- tai JPG-muodossa.",
+          "answerSchemaText": "JPG, PNG ja WebP. Lataus PNG- tai JPG-muodossa."
+        },
+        {
+          "question": "Voinko syöttää omat mitat pikseleinä?",
+          "answer": "Kyllä. Valmiiden sosiaalisen median muotojen lisäksi voit syöttää minkä tahansa leveyden ja korkeuden pikseleinä tai valita mukautetun kuvasuhteen rajausta varten.",
+          "answerSchemaText": "Kyllä. Voit syöttää omat mitat pikseleinä tai mukautetun kuvasuhteen."
+        },
+        {
+          "question": "Lähetetäänkö kuva palvelimelle?",
+          "answer": "Ei. Kaikki käsittely tapahtuu selaimessasi. Kuvaa ei tallenneta eikä lähetetä mihinkään. Sivun sulkemisen jälkeen kaikki tiedot poistetaan muistista.",
+          "answerSchemaText": "Ei. Kuva käsitellään selaimessa. Sitä ei lähetetä palvelimelle."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Tutustu muihin työkaluihin" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

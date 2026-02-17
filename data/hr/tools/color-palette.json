@@ -1,0 +1,249 @@
+{
+  "toolKey": "colorPalette",
+  "locale": "hr",
+  "metadata": {
+    "title": "Besplatni generator paleta boja – 9 paleta iz jedne boje",
+    "description": "Izradite 9 paleta boja iz osnovne boje: monokromatska, komplementarna, trijadna, pastelna i druge. Kopirajte HEX kodove jednim klikom. Bez registracije,",
+    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "path": "/hr/alati/generator-paleta-boja"
+  },
+  "hero": {
+    "title": "Generator paleta boja",
+    "description": "Unesite osnovnu boju, a alat će izraditi 9 harmoničnih paleta boja: monokromatsku, komplementarnu, trijadnu, pastelnu i druge. Svaku boju možete kopirati s njenim HEX kodom.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hr/alati",
+      "label": "Alati"
+    },
+    "third": {
+      "href": "/hr/alati/generator-paleta-boja",
+      "label": "Generator paleta boja"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Generator paleta boja",
+      "alternateName": ["Generator shema boja", "Generator boja", "Alat za usklađivanje boja", "Generator harmonije boja"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorPaletteGenerator",
+      "description": "Besplatni generator paleta boja. Unesite HEX boju, a alat izrađuje 9 shema: monokromatsku, analognu, komplementarnu, trijadnu, podijeljenu komplementarnu, pastelnu, tamnu, tonalnu i minimalističku.",
+      "featureList": [
+        "Monokromatska shema – nijanse jedne boje",
+        "Analogna shema – susjedne boje na kotaču boja",
+        "Komplementarna shema – suprotne boje",
+        "Trijadna shema – 3 boje u jednakim razmacima",
+        "Podijeljena komplementarna shema",
+        "Pastelna paleta – nježne, prigušene nijanse",
+        "Tamna paleta – duboke boje za tamne teme",
+        "Tonalna paleta – razine svjetline jedne boje",
+        "Minimalistička paleta – snažan naglasak i neutralne boje",
+        "Osnovna boja u HEX formatu",
+        "Birač boja za vizualni odabir",
+        "Nasumična početna boja",
+        "Kopiranje HEX koda u međuspremnik",
+        "HSL vrijednost prikazana uz svaku boju",
+        "Lokalna obrada u pregledniku"
+      ]
+    },
+    "howTo": {
+      "name": "Kako izraditi paletu boja iz osnovne boje",
+      "description": "Kako izraditi 9 paleta boja iz osnovne boje: monokromatsku, komplementarnu, trijadnu, pastelnu i druge.",
+      "steps": [
+        {
+          "name": "Odaberite osnovnu boju",
+          "text": "Unesite HEX kod u tekstualno polje ili koristite birač boja za vizualni odabir."
+        },
+        {
+          "name": "Potvrdite boju",
+          "text": "Potvrdite odabranu boju gumbom Update Color – alat izrađuje palete iz vaše osnovne boje."
+        },
+        {
+          "name": "Pregledajte palete",
+          "text": "Alat automatski izrađuje 9 različitih paleta: monokromatsku, analognu, komplementarnu, trijadnu, podijeljenu komplementarnu, pastelnu, tamnu, tonalnu i minimalističku."
+        },
+        {
+          "name": "Kopirajte boje",
+          "text": "Uz svaku boju nalazi se gumb Kopiraj – HEX kod kopira se u sistemski međuspremnik."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Zašto izrađivati paletu boja?",
+      "html": "<p class=\"text-mid\">Jedinstvena paleta boja temelj je svakog vizualnog projekta – od web stranica preko logotipa do tiskovina. Ručni odabir kompatibilnih boja zahtijeva poznavanje teorije boja. Generator automatizira taj proces: unesete osnovnu boju (npr. boju logotipa), a alat izrađuje 9 setova boja na temelju provjerenih shema harmonije boja.</p><p class=\"text-mid mt-3\">Svaka izrađena boja ima svoj HEX kod (npr. #4F6BF5) i HSL vrijednost (hue, saturation, lightness). HEX kod može se izravno zalijepiti u CSS, Figmu, Canvu ili bilo koju grafičku aplikaciju.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kako koristiti generator paleta boja",
+      "description": "Cijeli proces traje samo nekoliko sekundi:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Unesite osnovnu boju",
+          "description": "Unesite HEX kod (npr. #4F6BF5) u tekstualno polje ili odaberite boju iz birača boja. Možete također koristiti gumb Nasumična boja."
+        },
+        {
+          "title": "2. Potvrdite odabir",
+          "description": "Klikom na gumb Update Color alat automatski izrađuje 9 paleta s različitim shemama harmonije boja."
+        },
+        {
+          "title": "3. Kopirajte potrebne boje",
+          "description": "Uz svaku boju nalazi se gumb Kopiraj – HEX kod kopira se u međuspremnik i može se izravno zalijepiti u projekt."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Koje sheme boja alat izrađuje?",
+      "description": "Generator izrađuje 9 vrsta paleta – svaka se temelji na drugom principu teorije boja:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiStackLine",
+          "title": "Monokromatska paleta",
+          "description": "Nekoliko nijansi jedne boje – od svijetle do tamne. Sve boje imaju isti ton na kotaču boja i razlikuju se samo u svjetlini. Dobro funkcionira u elegantnom i minimalističkom dizajnu."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Analogna paleta",
+          "description": "Susjedne boje na kotaču boja (pomaknute za oko 30° na obje strane od osnovne boje). Stvara harmonične i nježne prijelaze boja."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Komplementarna paleta",
+          "description": "Osnovna boja i suprotna boja na kotaču boja (pomak od 180°). Stvara snažan vizualni kontrast. Korisno kada element treba privući pozornost."
+        },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Trijadna paleta",
+          "description": "Tri boje u razmacima od 120° na kotaču boja – tvore jednakostranični trokut. Dinamična i svestrana kombinacija."
+        },
+        {
+          "icon": "RiCursorLine",
+          "title": "Podijeljena komplementarna paleta",
+          "description": "Blaža verzija komplementarne palete. Umjesto jedne suprotne boje koriste se dvije boje pomaknute za oko 30° od komplementa."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Pastelna paleta",
+          "description": "Isti ton sa smanjenom zasićenošću i povećanom svjetlinom – nježne, prigušene boje. Popularna u kozmetici, dječjoj modi i ugostiteljstvu."
+        },
+        {
+          "icon": "RiMoonLine",
+          "title": "Tamna paleta",
+          "description": "Osnovna boja s visokom zasićenošću i smanjenom svjetlinom – duboke, snažne boje. Korisno za tamne teme web stranica i premium brendiranih materijala."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Tonalna paleta",
+          "description": "Nekoliko razina svjetline jedne boje – od vrlo svijetle do tamne. Korisno pri izradi korisničkih sučelja kada ista boja treba različite varijante."
+        },
+        {
+          "icon": "RiContractLeftRightLine",
+          "title": "Minimalistička paleta",
+          "description": "Jedan snažan naglasak boje i nekoliko vrlo svijetlih neutralnih boja. Cijela paleta ostaje smirena. Dobro funkcionira u modernim sučeljima s puno bijelog prostora."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Na čemu se temelji generator paleta boja?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° na kotaču boja</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">Sve palete izrađuju se matematičkom transformacijom osnovne boje u HSL prostoru boja. HSL opisuje boju trima vrijednostima: hue (H) je pozicija na kotaču boja (0°–360°), saturation (S) određuje intenzitet boje, a lightness (L) – koliko je boja svijetla ili tamna.</p><p class=\"text-mid mt-3\">Komplementarne, trijadne i podijeljene komplementarne palete temelje se na geometriji kotača boja – boje su raspoređene u jednakim kutnim razmacima, što stvara vizualnu ravnotežu. Monokromatske, pastelne i tamne palete mijenjaju samo svjetlinu i zasićenost zadržavajući isti ton.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Gdje se mogu koristiti izrađene palete boja",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Vizualni identitet brenda",
+          "description": "Odaberite harmonične boje uz postojeći logotip ili izgradite paletu boja brenda od temelja – za posjetnice, memorandume i marketinške materijale."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Web stranice",
+          "description": "Postavite glavnu boju, naglasak i nijanse pozadine. Kopirani HEX kodovi lijepe se izravno u CSS ili postavke teme."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Korisnička sučelja aplikacija",
+          "description": "Tonalna paleta nudi varijante svjetline jedne boje – svjetlije za pozadine, tamnije za tekst, srednje nijanse za rubove i interaktivna stanja."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Grafika za društvene mreže",
+          "description": "Jedinstvene boje za objave, priče i naslovne slike profila. Analogne ili pastelne palete dobro funkcioniraju kada želite ujednačen, prepoznatljiv stil."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Često postavljana pitanja o generatoru paleta boja",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "U kojem formatu treba unijeti osnovnu boju?",
+          "answer": "Generator prihvaća boje u HEX formatu – skraćene (npr. #F50) i pune (npr. #FF5500). Uz tekstualno polje nalazi se birač boja kojim se boja može odabrati vizualno. Izrađene palete prikazuju HEX kod i HSL vrijednost za svaku boju.",
+          "answerSchemaText": "Generator prihvaća HEX boje (#RGB ili #RRGGBB). Svaka izrađena boja ima HEX kod i HSL vrijednost."
+        },
+        {
+          "question": "Koliko boja sadrži svaka paleta?",
+          "answer": "Svaka paleta sadrži 4–6 boja. Broj ovisi o vrsti sheme – monokromatske i tonalne palete stvaraju više nijansi, dok se komplementarne i trijadne palete usredotočuju na manje kontrastnih boja.",
+          "answerSchemaText": "Svaka paleta sadrži 4–6 boja ovisno o vrsti sheme."
+        },
+        {
+          "question": "Mogu li izrađene palete koristiti u komercijalne svrhe?",
+          "answer": "Da. Izrađene palete boja možete koristiti u bilo kojem projektu – komercijalnom i nekomercijalnom, bez licencnih ograničenja.",
+          "answerSchemaText": "Da, izrađene palete mogu se koristiti bez ograničenja u komercijalnim i nekomercijalnim projektima."
+        },
+        {
+          "question": "Zahtijeva li generator paleta boja prijavu ili plaćanje?",
+          "answer": "Generator je potpuno besplatan i ne zahtijeva prijavu ni registraciju. Boje se izrađuju lokalno u pregledniku – podaci se ne šalju na eksterne poslužitelje.",
+          "answerSchemaText": "Generator je besplatan i ne zahtijeva prijavu. Boje se izrađuju lokalno u pregledniku."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Pogledajte ostale alate"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

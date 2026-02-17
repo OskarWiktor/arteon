@@ -3,7 +3,7 @@
   "locale": "sq",
   "metadata": {
     "title": "Nxjerrës ngjyrash nga imazhi falas – Paletë nga çdo foto",
-    "description": "Ngarkoni një foto ose logo dhe nxirrni deri në 12 ngjyra dominuese me kode HEX dhe RGB. Përshtatshme për UI, branding dhe rrjete sociale. Pa regjistrim, pa kufizime.",
+    "description": "Ngarkoni një foto ose logo dhe nxirrni deri në 12 ngjyra dominuese me kode HEX dhe RGB. Përshtatshme për UI, branding dhe rrjete sociale. Pa regjistrim,",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/sq/mjetet/nxjerres-ngjyrash-nga-imazhi"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/sq/mjetet", "label": "Mjetet" },
-    "third": { "href": "/sq/mjetet/nxjerres-ngjyrash-nga-imazhi", "label": "Nxjerrës ngjyrash nga imazhi" }
+    "second": {
+      "href": "/sq/mjetet",
+      "label": "Mjetet"
+    },
+    "third": {
+      "href": "/sq/mjetet/nxjerres-ngjyrash-nga-imazhi",
+      "label": "Nxjerrës ngjyrash nga imazhi"
+    }
   },
   "schemas": {
     "software": {
@@ -37,39 +43,69 @@
       "name": "Si të nxirrni ngjyra nga një foto ose imazh",
       "description": "Si të nxirrni ngjyrat dominuese nga një foto ose logo. Ngarkoni një imazh në format PNG, JPG ose SVG dhe mjeti gjeneron paletë me deri në 12 ngjyra me kode HEX.",
       "steps": [
-        { "name": "Ngarkoni imazhin", "text": "Tërhiqni dhe lëshoni skedarin në zonën e shënuar ose zgjidhni një imazh nga pajisja juaj. Formatet e mbështetura janë PNG, JPG dhe SVG." },
-        { "name": "Prisni analizën", "text": "Mjeti analizon automatikisht imazhin dhe nxjerr ngjyrat dominuese." },
-        { "name": "Kopjoni ngjyrat", "text": "Pranë çdo ngjyre ka buton kopjimi – kodi HEX kopjohet në clipboard-in e sistemit tuaj." }
+        {
+          "name": "Ngarkoni imazhin",
+          "text": "Tërhiqni dhe lëshoni skedarin në zonën e shënuar ose zgjidhni një imazh nga pajisja juaj. Formatet e mbështetura janë PNG, JPG dhe SVG."
+        },
+        {
+          "name": "Prisni analizën",
+          "text": "Mjeti analizon automatikisht imazhin dhe nxjerr ngjyrat dominuese."
+        },
+        {
+          "name": "Kopjoni ngjyrat",
+          "text": "Pranë çdo ngjyre ka buton kopjimi – kodi HEX kopjohet në clipboard-in e sistemit tuaj."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Pse të nxirrni ngjyra nga një imazh?",
       "html": "<p class=\"mb-4\">Çdo foto, logo ose grafikë përmban ngjyra që mund të shërbejnë si paletë e gatshme ngjyrash. Nxjerrësi analizon imazhin dhe tregon cilat ngjyra dominojnë – së bashku me kodet HEX dhe vlerat RGB gati për ngjitje në projektin tuaj.</p><p class=\"mb-4\">Në praktikë kjo do të thotë se në vend që të zgjidhni manualisht ngjyra në një program grafik (piksel pas pikseli), ngarkoni një imazh dhe merrni listë të organizuar me deri në 12 ngjyra. Kjo është e dobishme kur zgjidhni ngjyra për ueb, krijoni grafikë konsistente për rrjetet sociale ose ndërtoni identitet vizual nga materialet ekzistuese.</p><p>E gjithë analiza bëhet lokalisht në shfletues – imazhi nuk dërgohet në asnjë server.</p>"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Si të përdorni nxjerrësin e ngjyrave nga imazhi",
       "description": "I gjithë procesi zgjat vetëm pak sekonda:",
       "grid": "three",
       "items": [
-        { "title": "1. Ngarkoni imazhin", "description": "Tërhiqni dhe lëshoni skedarin në zonën e shënuar ose zgjidhni atë nga pajisja juaj. Formatet e mbështetura janë PNG, JPG dhe SVG." },
-        { "title": "2. Prisni analizën", "description": "Mjeti analizon automatikisht imazhin dhe nxjerr deri në 12 ngjyra dominuese." },
-        { "title": "3. Kopjoni ngjyrat që ju nevojiten", "description": "Pranë çdo ngjyre ka buton kopjimi – kodi HEX ose RGB shkon në clipboard dhe mund ta ngjitni drejtpërdrejt në projekt." }
+        {
+          "title": "1. Ngarkoni imazhin",
+          "description": "Tërhiqni dhe lëshoni skedarin në zonën e shënuar ose zgjidhni atë nga pajisja juaj. Formatet e mbështetura janë PNG, JPG dhe SVG."
+        },
+        {
+          "title": "2. Prisni analizën",
+          "description": "Mjeti analizon automatikisht imazhin dhe nxjerr deri në 12 ngjyra dominuese."
+        },
+        {
+          "title": "3. Kopjoni ngjyrat që ju nevojiten",
+          "description": "Pranë çdo ngjyre ka buton kopjimi – kodi HEX ose RGB shkon në clipboard dhe mund ta ngjitni drejtpërdrejt në projekt."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Si duket një paletë e nxjerrur ngjyrash?",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Shembull ngjyrash të nxjerra nga një foto peizazhi</p></div>",
       "html": "<p class=\"text-mid mb-4\">Pas ngarkimit të imazhit, nxjerrësi tregon listë me ngjyra dominuese të renditura nga më e spikatura në më pak të spikaturën. Çdo ngjyrë tregon kodin e saj HEX dhe vlerën RGB – gati për ngjitje në CSS, Figma ose çdo aplikacion grafik.</p><p class=\"text-mid\">Numri i ngjyrave të nxjerra varet nga përmbajtja e imazhit. Një foto peizazhi jep paletë më të pasur (8–12 ngjyra), ndërsa një logo e thjeshtë dyngjyrëshe jep më pak artikuj.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Cilat imazhe japin rezultatet më të mira?",
@@ -98,7 +134,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Çfarë e bën këtë nxjerrës ngjyrash të veçantë?",
@@ -126,7 +165,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Ku mund të përdorni ngjyrat e nxjerra nga imazhi",
@@ -154,7 +196,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Pyetjet më të shpeshta për nxjerrësin e ngjyrave nga imazhi",
@@ -182,8 +227,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Zbuloni mjete të tjera" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Zbuloni mjete të tjera"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

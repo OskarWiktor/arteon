@@ -3,7 +3,7 @@
   "locale": "sq",
   "metadata": {
     "title": "Numërues fjalësh dhe karakteresh falas – Kontrolloni gjatësinë e tekstit për SEO",
-    "description": "Numëroni fjalët, karakteret, paragrafët dhe kohën e leximit menjëherë. Kontrolloni gjatësinë optimale të tekstit për SEO – artikull blogu, faqe produkti, landing page. Pa regjistrim.",
+    "description": "Numëroni fjalët, karakteret, paragrafët dhe kohën e leximit menjëherë. Kontrolloni gjatësinë optimale të tekstit për SEO – artikull blogu, faqe produkti,",
     "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
     "path": "/sq/mjetet/numerues-fjalesh-dhe-karakteresh"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/sq/mjetet", "label": "Mjetet" },
-    "third": { "href": "/sq/mjetet/numerues-fjalesh-dhe-karakteresh", "label": "Numërues fjalësh dhe karakteresh" }
+    "second": {
+      "href": "/sq/mjetet",
+      "label": "Mjetet"
+    },
+    "third": {
+      "href": "/sq/mjetet/numerues-fjalesh-dhe-karakteresh",
+      "label": "Numërues fjalësh dhe karakteresh"
+    }
   },
   "schemas": {
     "software": {
@@ -36,21 +42,39 @@
       "name": "Si të përdorni numëruesin e fjalëve dhe karaktereve",
       "description": "Kontrolloni gjatësinë e tekstit dhe vlerësoni nëse përshtatet për një lloj specifik faqeje.",
       "steps": [
-        { "name": "Zgjidhni llojin e faqes", "text": "Zgjidhni nga lista për cilin lloj faqeje po shkruani. Çdo lloj ka intervalin e vet të rekomanduar të numrit të fjalëve." },
-        { "name": "Ngjitni tekstin", "text": "Ngjitni ose shkruani tekstin në fushën e tekstit. Mjeti numëron automatikisht fjalët, karakteret, paragrafët dhe llogarit kohën e leximit." },
-        { "name": "Kontrolloni vlerësimin", "text": "Shikoni treguesin me ngjyra dhe statusin. E gjelbër do të thotë gjatësi e duhur, e verdhë shumë e shkurtër, e kuqe shumë e gjatë." },
-        { "name": "Kopjoni raportin", "text": "Butoni Kopjo raportin kopjon një përmbledhje me të gjitha statistikat dhe vlerësimin e gjatësisë në clipboard." }
+        {
+          "name": "Zgjidhni llojin e faqes",
+          "text": "Zgjidhni nga lista për cilin lloj faqeje po shkruani. Çdo lloj ka intervalin e vet të rekomanduar të numrit të fjalëve."
+        },
+        {
+          "name": "Ngjitni tekstin",
+          "text": "Ngjitni ose shkruani tekstin në fushën e tekstit. Mjeti numëron automatikisht fjalët, karakteret, paragrafët dhe llogarit kohën e leximit."
+        },
+        {
+          "name": "Kontrolloni vlerësimin",
+          "text": "Shikoni treguesin me ngjyra dhe statusin. E gjelbër do të thotë gjatësi e duhur, e verdhë shumë e shkurtër, e kuqe shumë e gjatë."
+        },
+        {
+          "name": "Kopjoni raportin",
+          "text": "Butoni Kopjo raportin kopjon një përmbledhje me të gjitha statistikat dhe vlerësimin e gjatësisë në clipboard."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Numërues fjalësh falas – numëroni dhe vlerësoni gjatësinë e tekstit",
       "html": "<p class=\"text-mid\">Ky mjet ju lejon të kontrolloni shpejt gjatësinë e çdo teksti. Ngjitni përmbajtjen dhe numëruesi numëron fjalët, karakteret dhe paragrafët. Do të shihni gjithashtu sa minuta zgjat leximi dhe nëse gjatësia përputhet me llojin e zgjedhur të faqes.</p><p class=\"text-mid mt-3\">Çdo lloj faqeje shërben një qëllim tjetër – një përshkrim produkti përgjigjet pyetjeve të blerësit, një artikull blogu trajton një temë thellësisht dhe një faqe shërbimesh shpjegon çfarë merr klienti. Numëruesi tregon intervale për secilin nga këto lloje bazuar në analizën e përmbajtjes së suksesshme.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Si të përdorni numëruesin e fjalëve dhe karaktereve",
@@ -79,41 +103,97 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Çfarë mat numëruesi – fjalë, karaktere, kohë leximi",
       "description": "Numëruesi ndjek pesë metrika kyçe:",
       "grid": "two",
       "items": [
-        { "icon": "RiText", "title": "Fjalë", "description": "Numri total i fjalëve. Treguesi kryesor i gjatësisë së tekstit." },
-        { "icon": "RiSpaceShipLine", "title": "Karaktere (me hapësira)", "description": "Të gjitha karakteret përfshirë hapësirat. E rëndësishme kur CMS ka kufizim karakteresh." },
-        { "icon": "RiHashtag", "title": "Karaktere (pa hapësira)", "description": "Vetëm shkronjat, numrat dhe simbolet. Ndonjëherë kërkohet nga shtypshkronjat ose për faturimin e përkthimeve." },
-        { "icon": "RiParagraph", "title": "Paragrafë", "description": "Numri i blloqeve teksti të ndara nga rreshta bosh. Ndihmon në vlerësimin nëse teksti ka strukturë të mirë." },
-        { "icon": "RiTimeLine", "title": "Koha e leximit", "description": "Kalkulatori i kohës së leximit tregon sa minuta zgjat leximi i tekstit me shpejtësi mesatare 200 fjalë në minutë." }
+        {
+          "icon": "RiText",
+          "title": "Fjalë",
+          "description": "Numri total i fjalëve. Treguesi kryesor i gjatësisë së tekstit."
+        },
+        {
+          "icon": "RiSpaceShipLine",
+          "title": "Karaktere (me hapësira)",
+          "description": "Të gjitha karakteret përfshirë hapësirat. E rëndësishme kur CMS ka kufizim karakteresh."
+        },
+        {
+          "icon": "RiHashtag",
+          "title": "Karaktere (pa hapësira)",
+          "description": "Vetëm shkronjat, numrat dhe simbolet. Ndonjëherë kërkohet nga shtypshkronjat ose për faturimin e përkthimeve."
+        },
+        {
+          "icon": "RiParagraph",
+          "title": "Paragrafë",
+          "description": "Numri i blloqeve teksti të ndara nga rreshta bosh. Ndihmon në vlerësimin nëse teksti ka strukturë të mirë."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Koha e leximit",
+          "description": "Kalkulatori i kohës së leximit tregon sa minuta zgjat leximi i tekstit me shpejtësi mesatare 200 fjalë në minutë."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Sa fjalë duhet të ketë teksti – gjatësia optimale për SEO",
       "html": "<p class=\"text-mid mb-4\">Intervalet më poshtë bazohen në analizën e përmbajtjes që performon mirë në motorët e kërkimit. Gjatësia e tekstit në vetvete nuk ndikon në pozicionimin në Google – ajo që ka rëndësi është nëse përmbajtja përgjigjet pyetjeve të lexuesit.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Lloji i faqes</th><th class=\"py-2 pr-4 font-semibold\">Intervali</th><th class=\"py-2 font-semibold\">Kur më e shkurtër, kur më e gjatë?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Përshkrim produkti</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 fjalë</td><td class=\"text-primary-light0 py-2 text-sm\">Produkt i thjeshtë – 80–150. Pajisje e ndërlikuar – 300–400.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Faqe shërbimesh</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 fjalë</td><td class=\"text-primary-light0 py-2 text-sm\">Shërbim lokal – 500–700. Shërbim B2B me proces dhe FAQ – 1 200–1 500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Faqe kryesore</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 fjalë</td><td class=\"text-primary-light0 py-2 text-sm\">Faqja kryesore prezanton vlerën kyçe dhe drejton vizitorët më tej.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landing page</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 fjalë</td><td class=\"text-primary-light0 py-2 text-sm\">Ofertë e thjeshtë – 600–1 000. Ofertë që kërkon shpjegim – 1 500–2 500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Artikull blogu</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 fjalë</td><td class=\"text-primary-light0 py-2 text-sm\">How-to i shkurtër – 1 200–1 500. Udhëzues i detajuar – 2 500–3 000.</td></tr><tr><td class=\"py-2 pr-4\">Udhëzues / pillar page</td><td class=\"py-2 pr-4 whitespace-nowrap\">3000–7000 fjalë</td><td class=\"text-primary-light0 py-2 text-sm\">Burim i plotë që mbulon temën nga shumë këndvështrime.</td></tr></tbody></table></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Për kë është numëruesi i fjalëve?",
       "grid": "three",
       "items": [
-        { "icon": "RiEditLine", "title": "Copywriterë dhe krijues përmbajtje", "description": "Kontrolloni nëse teksti është brenda intervalit të rekomanduar për një lloj specifik faqeje." },
-        { "icon": "RiBloggerLine", "title": "Blogjerë", "description": "Ndiqni gjatësinë e artikujve për konsistencë. Kontrolloni kohën e leximit para publikimit." },
-        { "icon": "RiShoppingBagLine", "title": "Pronarë dyqanesh elektronike", "description": "Verifikoni përshkrimet e produkteve kundër kufizimeve të karaktereve në platformat e shitjes." },
-        { "icon": "RiSearchLine", "title": "Specialistë SEO", "description": "Vlerësoni nëse përmbajtja e faqes ka gjatësi optimale krahasuar me konkurrencën." },
-        { "icon": "RiGraduationCapLine", "title": "Studentë dhe akademikë", "description": "Kontrolloni nëse puna plotëson kufizimin e kërkuar të fjalëve ose karaktereve." },
-        { "icon": "RiTranslate2", "title": "Përkthyes", "description": "Numëroni karakteret pa hapësira për çmimet e përkthimeve." }
+        {
+          "icon": "RiEditLine",
+          "title": "Copywriterë dhe krijues përmbajtje",
+          "description": "Kontrolloni nëse teksti është brenda intervalit të rekomanduar për një lloj specifik faqeje."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Blogjerë",
+          "description": "Ndiqni gjatësinë e artikujve për konsistencë. Kontrolloni kohën e leximit para publikimit."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Pronarë dyqanesh elektronike",
+          "description": "Verifikoni përshkrimet e produkteve kundër kufizimeve të karaktereve në platformat e shitjes."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "Specialistë SEO",
+          "description": "Vlerësoni nëse përmbajtja e faqes ka gjatësi optimale krahasuar me konkurrencën."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Studentë dhe akademikë",
+          "description": "Kontrolloni nëse puna plotëson kufizimin e kërkuar të fjalëve ose karaktereve."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Përkthyes",
+          "description": "Numëroni karakteret pa hapësira për çmimet e përkthimeve."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Pyetjet më të shpeshta për numëruesin e fjalëve dhe karaktereve",
@@ -136,8 +216,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Zbuloni mjete të tjera" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Zbuloni mjete të tjera"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

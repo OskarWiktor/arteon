@@ -1,0 +1,353 @@
+{
+  "toolKey": "qrCode",
+  "locale": "hr",
+  "metadata": {
+    "title": "Besplatni generator QR kodova – PNG i SVG, bez registracije",
+    "description": "Izradite QR kod za web stranicu, vCard posjetnicu, jelovnik ili letak u nekoliko sekundi. Izvoz u PNG i SVG. Prilagodba boja i veličine. Bez registracije,",
+    "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
+    "path": "/hr/alati/besplatni-generator-qr-kodova"
+  },
+  "hero": {
+    "title": "Generator QR kodova – besplatno, bez registracije",
+    "description": "Izradite QR kod za web stranicu, vCard posjetnicu, e-poštu, telefonski broj ili tekst. Prilagodite boje, veličinu i razinu korekcije grešaka, a zatim preuzmite gotovu PNG ili SVG datoteku.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hr/alati",
+      "label": "Alati"
+    },
+    "third": {
+      "href": "/hr/alati/besplatni-generator-qr-kodova",
+      "label": "Besplatni generator QR kodova"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Besplatni generator QR kodova",
+      "alternateName": ["Izradi QR kod", "vCard QR generator", "Besplatni QR generator", "Alat za QR kodove"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "QRCodeGenerator",
+      "description": "Izradite QR kod za web stranicu, posjetnicu, jelovnik ili letak. Odaberite vrstu podataka, prilagodite boje i veličinu, a zatim preuzmite PNG ili SVG datoteku.",
+      "featureList": [
+        "QR kod za URL adresu (web stranice)",
+        "QR kod za obični tekst",
+        "QR kod vCard (kontaktni podaci)",
+        "QR kod za e-poštu (adresa, predmet, sadržaj)",
+        "QR kod za telefonski broj",
+        "Prilagodljive boje koda i pozadine",
+        "Odabir veličine koda u pikselima",
+        "Izvoz u PNG format (raster)",
+        "Izvoz u SVG format (vektor)",
+        "Pregled koda u stvarnom vremenu",
+        "Lokalna obrada u pregledniku",
+        "Reed-Solomon korekcija grešaka"
+      ]
+    },
+    "howTo": {
+      "name": "Kako koristiti besplatni generator QR kodova",
+      "description": "Kako izraditi QR kod za web stranicu, vCard posjetnicu, e-poštu ili telefonski broj – od odabira vrste podataka do preuzimanja gotove datoteke za tisak.",
+      "steps": [
+        {
+          "name": "Odaberite vrstu podataka",
+          "text": "Odlučite što QR kod treba sadržavati: URL, tekst, posjetnicu (vCard), e-poštu ili telefonski broj."
+        },
+        {
+          "name": "Unesite podatke",
+          "text": "Ispunite odgovarajuća polja. Za URL unesite web adresu; za vCard unesite kontaktne podatke."
+        },
+        {
+          "name": "Prilagodite izgled",
+          "text": "Odaberite veličinu, margine, boje koda i pozadine te razinu korekcije grešaka."
+        },
+        {
+          "name": "Preuzmite kod",
+          "text": "Gotovi QR kod možete preuzeti kao PNG datoteku (za tisak i web) ili SVG datoteku (vektor za skaliranje bez gubitka kvalitete)."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Što je QR kod i kako funkcionira?",
+      "html": "<p class=\"text-mid\">QR kod (Quick Response) je dvodimenzionalni barkod koji se može skenirati kamerom pametnog telefona. Za razliku od tradicionalnih barkodova, QR kodovi pohranjuju podatke i vodoravno i okomito, što omogućuje kodiranje znatno više informacija – do otprilike 3 000 alfanumeričkih znakova.</p><p class=\"text-mid mt-3\">QR kod razvila je 1994. godine japanska tvrtka Denso Wave (dio grupe Toyota) za praćenje automobilskih dijelova. Danas se QR kodovi široko koriste u marketingu, ugostiteljstvu, logistici i poslovnoj komunikaciji.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kako koristiti besplatni generator QR kodova?",
+      "description": "Izrada QR koda traje samo nekoliko sekundi:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Odaberite vrstu podataka",
+          "description": "Odaberite što želite kodirati: URL adresu, tekst, vCard posjetnicu, e-poštu ili telefonski broj."
+        },
+        {
+          "title": "2. Unesite podatke",
+          "description": "Ispunite odgovarajuća polja – web adresu, kontaktne podatke ili sadržaj poruke."
+        },
+        {
+          "title": "3. Preuzmite kod",
+          "description": "Prilagodite izgled (boje, veličinu, margine) i preuzmite u PNG ili SVG formatu."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Vrste QR kodova – URL, vCard, e-pošta, telefon, tekst",
+      "description": "Besplatni generator QR kodova podržava pet vrsta podataka – svaka je korisna u različitim situacijama:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "URL",
+          "description": "Poveznica na web stranicu. Nakon skeniranja telefon otvara stranicu u pregledniku. Pogodno za posjetnice, letke i plakate."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Tekst",
+          "description": "Bilo koji tekst do 3 000 znakova. Nakon skeniranja telefon prikazuje tekst na zaslonu. Korisno za popuste i kratke upute."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "vCard posjetnica",
+          "description": "Digitalna posjetnica s kontaktnim podacima (ime, tvrtka, telefon, e-pošta, adresa). Nakon skeniranja telefon nudi spremanje kontakta."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-pošta",
+          "description": "Adresa e-pošte s opcionalnim predmetom i sadržajem. Nakon skeniranja telefon otvara aplikaciju za e-poštu s ispunjenim obrascem."
+        },
+        {
+          "icon": "RiPhoneLine",
+          "title": "Telefon",
+          "description": "Telefonski broj. Nakon skeniranja telefon nudi pozivanje broja. Korisno za korisničku podršku."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Tehničke specifikacije QR kodova",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kapacitet</span><span class=\"text-mid text-sm!\">do 4 296 znakova</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Korekcija grešaka</span><span class=\"text-mid text-sm!\">7 % – 30 %</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Minimalna veličina tiska</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Minimalni kontrast</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margine</span><span class=\"text-mid text-sm!\">min. 4 modula</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Poznavanje tehničkih specifikacija pomaže u izradi QR koda koji je čitljiv u svim uvjetima:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Kapacitet podataka</strong> – QR kod može sadržavati do 7 089 znamenki, 4 296 alfanumeričkih znakova ili 2 953 bajta binarnih podataka.</li><li><strong>Reed-Solomon korekcija grešaka</strong> – matematički algoritam koji omogućuje čitanje koda i nakon djelomičnog oštećenja. Razine: L (7 %), M (15 %), Q (25 %), H (30 %).</li><li><strong>Margine</strong> – bijelo područje oko koda potrebno za ispravno skeniranje. Preporučeni minimum je 4 modula.</li><li><strong>Minimalna veličina tiska</strong> – u normalnim uvjetima skeniranja kod bi trebao biti najmanje 2×2 cm.</li><li><strong>Kontrast</strong> – omjer kontrasta između koda i pozadine trebao bi biti najmanje 3:1.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Primjene QR kodova – posjetnice, letci, jelovnici restorana",
+      "description": "QR kodovi imaju primjenu u mnogim industrijama i situacijama:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Posjetnice",
+          "description": "vCard kod na posjetnici omogućuje spremanje kontakta jednim skeniranjem, bez ručnog unosa podataka."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Jelovnici restorana i kafića",
+          "description": "QR kod na stolu koji vodi do digitalnog jelovnika. Elegantno rješenje koje se proširilo nakon pandemije COVID-19."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Letci i plakati",
+          "description": "QR kod s poveznicom na stranicu proizvoda, obrazac za prijavu ili posebnu ponudu."
+        },
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Ambalaža proizvoda",
+          "description": "Poveznica na upute za uporabu, jamstveni list ili web stranicu proizvođača."
+        },
+        {
+          "icon": "RiHospitalLine",
+          "title": "Zdravstvene ustanove",
+          "description": "QR kod na kartici pacijenta koji vodi do portala za pacijente ili sustava za naručivanje termina."
+        },
+        {
+          "icon": "RiCalendarEventLine",
+          "title": "Događaji i konferencije",
+          "description": "Ulaznice s QR kodom za brzu provjeru ulaza."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs SVG – koji format odabrati za tisak?",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG (raster)"
+        },
+        {
+          "id": "svg",
+          "name": "SVG (vektor)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Web i društvene mreže",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Letci i posjetnice",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Plakati i banneri (veliki format)",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Skaliranje bez gubitka kvalitete",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Uređivanje u grafičkoj aplikaciji",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Manja veličina datoteke",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Prezentacije",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Po čemu je ovaj generator QR kodova poseban?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Lokalna izrada u pregledniku",
+          "description": "Podaci uneseni u generator ne šalju se na poslužitelj – sva obrada odvija se na vašem uređaju."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "Pet vrsta podataka u jednom alatu",
+          "description": "URL, tekst, vCard posjetnica, e-pošta i telefon – svaka vrsta stvara QR kod u odgovarajućem standardu."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Prilagodba izgleda QR koda",
+          "description": "Boja koda i pozadine, veličina u pikselima, margine i razina korekcije grešaka – svaki parametar može se prilagoditi."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Četiri razine korekcije grešaka",
+          "description": "Reed-Solomon algoritam omogućuje odabir otpornosti koda na oštećenja – od 7 % (L) do 30 % (H)."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Pregled u stvarnom vremenu",
+          "description": "Rezultat vidite odmah nakon unosa podataka, bez pritiskanja gumba Generiraj."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Izvoz PNG i SVG",
+          "description": "Preuzmite kod u formatu prikladnom za vašu namjenu."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Često postavljana pitanja o generatoru QR kodova",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Imaju li QR kodovi izrađeni ovim alatom ograničeno trajanje?",
+          "answer": "Ne. Statički QR kodovi (koje ovaj alat izrađuje) nemaju datum isteka. Sadržaj – npr. URL ili podaci posjetnice – kodira se izravno u kod. Sve dok odredišna stranica postoji, kod će funkcionirati.",
+          "answerSchemaText": "Ne. Statički QR kodovi nemaju ograničeno trajanje. Sadržaj se kodira izravno u kod."
+        },
+        {
+          "question": "Mogu li promijeniti URL adresu u postojećem QR kodu?",
+          "answer": "U statičkom QR kodu nije moguće promijeniti kodirani sadržaj – morate izraditi novi kod s novom adresom. Dinamički QR kodovi (koji se mogu uređivati nakon izrade) zahtijevaju vanjsku plaćenu uslugu.",
+          "answerSchemaText": "Ne, statičke QR kodove nije moguće uređivati. Izradite novi kod s drugom URL adresom."
+        },
+        {
+          "question": "PNG ili SVG – koji format QR koda odabrati za tisak?",
+          "answer": "PNG je dovoljan za većinu namjena: web, društvene mreže, tisak do formata A4. SVG je vektorski – može se skalirati na bilo koju veličinu bez gubitka kvalitete, idealan za bannere, natpise i velike reklamne formate.",
+          "answerSchemaText": "PNG za web i uobičajeni tisak. SVG za velike formate i skaliranje bez gubitka kvalitete."
+        },
+        {
+          "question": "Koju veličinu QR koda odabrati za posjetnicu?",
+          "answer": "Za tiskani materijal (posjetnice, letci) kod bi trebao biti najmanje 2×2 cm, optimalno 3×3 cm. U generatoru to odgovara rezoluciji od 300 px pri standardnoj kvaliteti tiska (300 DPI).",
+          "answerSchemaText": "Najmanje 2×2 cm (300 px pri 300 DPI). Optimalno 3×3 cm za posjetnice."
+        },
+        {
+          "question": "Mogu li izrađene QR kodove koristiti u komercijalne svrhe?",
+          "answer": "Da. Izrađene QR kodove možete slobodno koristiti u bilo kojem projektu – komercijalnom i nekomercijalnom, bez licencnih ograničenja.",
+          "answerSchemaText": "Da, bez ograničenja u komercijalnim i nekomercijalnim projektima."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Pogledajte ostale besplatne alate"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

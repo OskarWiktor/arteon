@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Konvertor JPG/PNG na WebP zdarma \u2013 Bez limit\u016f",
     "description": "Zmen\u0161ete velikost obr\u00e1zk\u016f bez ztr\u00e1ty kvality. P\u0159eve\u010fte JPG a PNG do WebP a zrychl\u011bte sv\u016fj web. Bez registrace, funguje v prohl\u00ed\u017ee\u010di.",
-    "ogImage": "/assets/tools/narzedzia-konwerter-jpg-png-na-webp.webp",
+    "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
     "path": "/cs/nastroje/konvertor-jpg-png-na-webp"
   },
   "hero": {
     "title": "P\u0159eve\u010fte obr\u00e1zky do WebP \u2013 zmen\u0161ete velikost bez ztr\u00e1ty kvality",
     "description": "Nahrajte obr\u00e1zky ve form\u00e1tu JPG nebo PNG a n\u00e1stroj je p\u0159evede do form\u00e1tu WebP. Men\u0161\u00ed soubory, stejn\u00e1 kvalita, rychlej\u0161\u00ed na\u010d\u00edt\u00e1n\u00ed webu.",
-    "backgroundImage": "/assets/tools/narzedzia-konwerter-jpg-png-na-webp.webp"
+    "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
   "breadcrumbs": {
     "second": { "href": "/cs/nastroje", "label": "N\u00e1stroje" },

@@ -1,0 +1,249 @@
+{
+  "toolKey": "colorPalette",
+  "locale": "lt",
+  "metadata": {
+    "title": "Nemokamas spalvų paletių generatorius – 9 paletės iš vienos spalvos",
+    "description": "Sukurkite 9 spalvų paletes iš bazinės spalvos: monochromatinę, komplementarią, triadinę, pastelinę ir kitas. Kopijuokite HEX kodus vienu paspaudimu.",
+    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "path": "/lt/irankiai/spalvu-paleciu-generatorius"
+  },
+  "hero": {
+    "title": "Spalvų paletių generatorius",
+    "description": "Įveskite bazinę spalvą, o įrankis sukurs 9 harmoningas spalvų paletes: monochromatinę, komplementarią, triadinę, pastelinę ir kitas. Kiekvieną spalvą galima kopijuoti su jos HEX kodu.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/lt/irankiai",
+      "label": "Įrankiai"
+    },
+    "third": {
+      "href": "/lt/irankiai/spalvu-paleciu-generatorius",
+      "label": "Spalvų paletių generatorius"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Spalvų paletių generatorius",
+      "alternateName": ["Spalvų schemų generatorius", "Spalvų generatorius", "Spalvų derinimo įrankis", "Spalvų harmonijos generatorius"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorPaletteGenerator",
+      "description": "Nemokamas spalvų paletių generatorius. Įveskite HEX spalvą, o įrankis sukurs 9 schemas: monochromatinę, analoginę, komplementarią, triadinę, padalintą komplementarią, pastelinę, tamsią, toninę ir minimalistinę.",
+      "featureList": [
+        "Monochromatinė schema – vienos spalvos atspalviai",
+        "Analoginė schema – gretimos spalvos spalvų rate",
+        "Komplementari schema – priešingos spalvos",
+        "Triadinė schema – 3 spalvos vienodais intervalais",
+        "Padalinta komplementari schema",
+        "Pastelinė paletė – švelnūs, prislopinti atspalviai",
+        "Tamsi paletė – gilios spalvos tamsioms temoms",
+        "Toninė paletė – vienos spalvos šviesumo lygiai",
+        "Minimalistinė paletė – ryškus akcentas ir neutralios spalvos",
+        "Bazinė spalva HEX formatu",
+        "Spalvų rinkiklis vizualiniam pasirinkimui",
+        "Atsitiktinė pradinė spalva",
+        "HEX kodo kopijavimas į iškarpinę",
+        "HSL reikšmė rodoma prie kiekvienos spalvos",
+        "Vietinis apdorojimas naršyklėje"
+      ]
+    },
+    "howTo": {
+      "name": "Kaip sukurti spalvų paletę iš bazinės spalvos",
+      "description": "Kaip sukurti 9 spalvų paletes iš bazinės spalvos: monochromatinę, komplementarią, triadinę, pastelinę ir kitas.",
+      "steps": [
+        {
+          "name": "Pasirinkite bazinę spalvą",
+          "text": "Įveskite HEX kodą į tekstinį lauką arba naudokite spalvų rinkiklį vizualiniam pasirinkimui."
+        },
+        {
+          "name": "Patvirtinkite spalvą",
+          "text": "Patvirtinkite pasirinktą spalvą mygtuku Update Color – įrankis sukurs paletes iš jūsų bazinės spalvos."
+        },
+        {
+          "name": "Peržiūrėkite paletes",
+          "text": "Įrankis automatiškai sukuria 9 skirtingas paletes: monochromatinę, analoginę, komplementarią, triadinę, padalintą komplementarią, pastelinę, tamsią, toninę ir minimalistinę."
+        },
+        {
+          "name": "Kopijuokite spalvas",
+          "text": "Prie kiekvienos spalvos yra mygtukas Kopijuoti – HEX kodas nukopijuojamas į sistemos iškarpinę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kodėl kurti spalvų paletę?",
+      "html": "<p class=\"text-mid\">Vieninga spalvų paletė yra kiekvieno vizualinio projekto pagrindas – nuo svetainių per logotipus iki spaudinių. Rankinis suderinamų spalvų pasirinkimas reikalauja spalvų teorijos žinių. Generatorius automatizuoja šį procesą: įvedate bazinę spalvą (pvz., logotipo spalvą), o įrankis sukuria 9 spalvų rinkinius, pagrįstus patikrintomis spalvų harmonijos schemomis.</p><p class=\"text-mid mt-3\">Kiekviena sukurta spalva turi savo HEX kodą (pvz., #4F6BF5) ir HSL reikšmę (hue, saturation, lightness). HEX kodą galima tiesiogiai įklijuoti į CSS, Figma, Canva ar bet kurią grafikos programą.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kaip naudoti spalvų paletių generatorių",
+      "description": "Visas procesas trunka tik kelias sekundes:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Įveskite bazinę spalvą",
+          "description": "Įveskite HEX kodą (pvz., #4F6BF5) į tekstinį lauką arba pasirinkite spalvą iš spalvų rinkiklio. Taip pat galite naudoti mygtuką Atsitiktinė spalva."
+        },
+        {
+          "title": "2. Patvirtinkite pasirinkimą",
+          "description": "Paspaudę mygtuką Update Color, įrankis automatiškai sukuria 9 paletes su skirtingomis spalvų harmonijos schemomis."
+        },
+        {
+          "title": "3. Kopijuokite reikiamas spalvas",
+          "description": "Prie kiekvienos spalvos yra mygtukas Kopijuoti – HEX kodas nukopijuojamas į iškarpinę ir gali būti tiesiogiai įklijuotas į projektą."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kokias spalvų schemas įrankis kuria?",
+      "description": "Generatorius kuria 9 tipų paletes – kiekviena pagrįsta skirtingu spalvų teorijos principu:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiStackLine",
+          "title": "Monochromatinė paletė",
+          "description": "Keli vienos spalvos atspalviai – nuo šviesaus iki tamsaus. Visos spalvos turi tą patį toną spalvų rate ir skiriasi tik šviesumu. Gerai veikia elegantiškame ir minimalistiniame dizaine."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Analoginė paletė",
+          "description": "Gretimos spalvos spalvų rate (pastumiamos apie 30° į abi puses nuo bazinės spalvos). Kuria harmoningus ir švelnias spalvų perėjimus."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Komplementari paletė",
+          "description": "Bazinė spalva ir priešinga spalva spalvų rate (180° poslinkis). Kuria stiprų vizualinį kontrastą. Naudinga, kai elementas turi patraukti dėmesį."
+        },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Triadinė paletė",
+          "description": "Trys spalvos 120° intervalais spalvų rate – sudaro lygiakraštį trikampį. Dinamiška ir universali kombinacija."
+        },
+        {
+          "icon": "RiCursorLine",
+          "title": "Padalinta komplementari paletė",
+          "description": "Švelnesnė komplementarios paletės versija. Vietoj vienos priešingos spalvos naudojamos dvi spalvos, pastumiamos apie 30° nuo komplemento."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Pastelinė paletė",
+          "description": "Tas pats tonas su sumažintu sodrumu ir padidinta šviesa – švelnios, prislopintos spalvos. Populiari kosmetikoje, vaikų madoje ir viešajame maitinime."
+        },
+        {
+          "icon": "RiMoonLine",
+          "title": "Tamsi paletė",
+          "description": "Bazinė spalva su aukštu sodrumu ir sumažinta šviesa – gilios, ryškios spalvos. Naudinga tamsioms svetainių temoms ir aukščiausios klasės prekės ženklo medžiagai."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Toninė paletė",
+          "description": "Keli vienos spalvos šviesumo lygiai – nuo labai šviesaus iki tamsaus. Naudinga kuriant vartotojo sąsajas, kai tai pačiai spalvai reikia skirtingų variantų."
+        },
+        {
+          "icon": "RiContractLeftRightLine",
+          "title": "Minimalistinė paletė",
+          "description": "Vienas ryškus spalvinis akcentas ir kelios labai šviesios neutralios spalvos. Visa paletė lieka rami. Gerai veikia moderniose sąsajose su dideliu baltos erdvės kiekiu."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Kuo pagrįstas spalvų paletių generatorius?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° spalvų rate</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">Visos paletės kuriamos matematine bazinės spalvos transformacija HSL spalvų erdvėje. HSL aprašo spalvą trimis reikšmėmis: hue (H) – pozicija spalvų rate (0°–360°), saturation (S) – spalvos intensyvumas, ir lightness (L) – kiek spalva šviesi ar tamsi.</p><p class=\"text-mid mt-3\">Komplementarios, triadinės ir padalintos komplementarios paletės pagrįstos spalvų rato geometrija – spalvos išdėstytos vienodais kampiniais intervalais, kas sukuria vizualinę pusiausvyrą. Monochromatinės, pastelinės ir tamsios paletės keičia tik šviesumą ir sodrumą, išlaikydamos tą patį toną.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kur galima panaudoti sukurtas spalvų paletes",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Prekės ženklo vizualinis identitetas",
+          "description": "Pasirinkite harmoningas spalvas prie esamo logotipo arba sukurkite prekės ženklo spalvų paletę nuo nulio – vizitinėms kortelėms, firminiams blankams ir rinkodaros medžiagai."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Svetainės",
+          "description": "Nustatykite pagrindinę spalvą, akcentą ir fono atspalvius. Nukopijuoti HEX kodai įklijuojami tiesiai į CSS ar temos nustatymus."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Programėlių vartotojo sąsajos",
+          "description": "Toninė paletė siūlo vienos spalvos šviesumo variantus – šviesesnius fonams, tamsesnius tekstui, vidutinius atspalvius rėmeliams ir interaktyvioms būsenoms."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Grafika socialiniams tinklams",
+          "description": "Vieningos spalvos įrašams, istorijoms ir profilio viršeliams. Analoginės ar pastelinės paletės gerai veikia, kai norite vieningo, atpažįstamo stiliaus."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Dažnai užduodami klausimai apie spalvų paletių generatorių",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kokiu formatu reikia įvesti bazinę spalvą?",
+          "answer": "Generatorius priima spalvas HEX formatu – sutrumpintas (pvz., #F50) ir pilnas (pvz., #FF5500). Šalia tekstinio lauko yra spalvų rinkiklis, kuriuo galima spalvą pasirinkti vizualiai. Sukurtos paletės rodo HEX kodą ir HSL reikšmę kiekvienai spalvai.",
+          "answerSchemaText": "Generatorius priima HEX spalvas (#RGB arba #RRGGBB). Kiekviena sukurta spalva turi HEX kodą ir HSL reikšmę."
+        },
+        {
+          "question": "Kiek spalvų yra kiekvienoje paletėje?",
+          "answer": "Kiekviena paletė turi 4–6 spalvas. Skaičius priklauso nuo schemos tipo – monochromatinės ir toninės paletės kuria daugiau atspalvių, o komplementarios ir triadinės paletės orientuojasi į mažiau kontrastingų spalvų.",
+          "answerSchemaText": "Kiekviena paletė turi 4–6 spalvas, priklausomai nuo schemos tipo."
+        },
+        {
+          "question": "Ar galiu sukurtas paletes naudoti komerciniais tikslais?",
+          "answer": "Taip. Sukurtas spalvų paletes galite naudoti bet kuriame projekte – komerciniame ir nekomerciniame, be licencinių apribojimų.",
+          "answerSchemaText": "Taip, sukurtas paletes galima naudoti be apribojimų komerciniuose ir nekomerciniuose projektuose."
+        },
+        {
+          "question": "Ar spalvų paletių generatorius reikalauja prisijungimo ar mokėjimo?",
+          "answer": "Generatorius yra visiškai nemokamas ir nereikalauja prisijungimo nei registracijos. Spalvos kuriamos lokaliai naršyklėje – jokie duomenys nesiunčiami į išorinius serverius.",
+          "answerSchemaText": "Generatorius nemokamas ir nereikalauja prisijungimo. Spalvos kuriamos lokaliai naršyklėje."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Peržiūrėkite kitus įrankius"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

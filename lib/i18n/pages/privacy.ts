@@ -121,11 +121,47 @@ const PRIVACY_META: Partial<Record<Locale, PrivacyPageMeta>> = {
     description:
       'Privatlivspolitik for Arteons gratis v\u00e6rkt\u00f8jer. Alle filer behandles lokalt i din browser. L\u00e6s hvordan vi h\u00e5ndterer cookies, analyse (GA4) og annoncering (AdSense) i overensstemmelse med GDPR.',
   },
+  no: {
+    slug: 'personvernpolicy',
+    title: 'Personvernpolicy – Arteon gratis verktøy | Databeskyttelse og GDPR',
+    description:
+      'Personvernpolicy for Arteons gratis verktøy. Alle filer behandles lokalt i nettleseren din. Les hvordan vi håndterer informasjonskapsler, analyse (GA4) og annonsering (AdSense) i samsvar med GDPR.',
+  },
   pt: {
     slug: 'politica-de-privacidade',
     title: 'Política de Privacidade – Arteon ferramentas online gratuitas | RGPD',
     description:
       'Política de privacidade das ferramentas online gratuitas da Arteon. Todos os ficheiros são processados localmente no seu navegador. Saiba como gerimos cookies, análises (GA4) e publicidade (AdSense) em conformidade com o RGPD.',
+  },
+  fi: {
+    slug: 'tietosuojakaytanto',
+    title: 'Tietosuojak\u00e4yt\u00e4nt\u00f6 \u2013 Arteon ilmaiset ty\u00f6kalut | Tietosuoja ja GDPR',
+    description:
+      'Arteonin ilmaisten ty\u00f6kalujen tietosuojak\u00e4yt\u00e4nt\u00f6. Kaikki tiedostot k\u00e4sitell\u00e4\u00e4n paikallisesti selaimessasi. Lue, miten k\u00e4sittelemme ev\u00e4steit\u00e4, analytiikkaa (GA4) ja mainontaa (AdSense) GDPR:n mukaisesti.',
+  },
+  sk: {
+    slug: 'zasady-ochrany-osobnych-udajov',
+    title: 'Z\u00e1sady ochrany s\u00fakromia \u2013 Arteon bezplatn\u00e9 n\u00e1stroje | Ochrana \u00fadajov a GDPR',
+    description:
+      'Z\u00e1sady ochrany s\u00fakromia pre bezplatn\u00e9 n\u00e1stroje Arteon. V\u0161etky s\u00fabory sa sprac\u00favaj\u00fa lok\u00e1lne vo va\u0161om prehliada\u010di. Zistite, ako naklad\u00e1me s cookies, analytikou (GA4) a reklamou (AdSense) v s\u00falade s GDPR.',
+  },
+  hr: {
+    slug: 'pravila-privatnosti',
+    title: 'Pravila privatnosti \u2013 Arteon besplatni alati | Za\u0161tita podataka i GDPR',
+    description:
+      'Pravila privatnosti za besplatne alate Arteon. Sve datoteke se obra\u0111uju lokalno u va\u0161em pregledniku. Saznajte kako upravljamo kola\u010di\u0107ima, analitikom (GA4) i ogla\u0161avanjem (AdSense) u skladu s GDPR-om.',
+  },
+  lt: {
+    slug: 'privatumo-politika',
+    title: 'Privatumo politika \u2013 Arteon nemokami \u012frankiai | Duomen\u0173 apsauga ir BDAR',
+    description:
+      'Arteon nemokam\u0173 \u012franki\u0173 privatumo politika. Visi failai apdorojami lokaliai j\u016bs\u0173 nar\u0161ykl\u0117je. Su\u017einokite, kaip tvarkome slapukus, analitik\u0105 (GA4) ir reklam\u0105 (AdSense) pagal BDAR.',
+  },
+  sl: {
+    slug: 'pravilnik-o-zasebnosti',
+    title: 'Politika zasebnosti \u2013 Arteon brezpla\u010dna orodja | Varstvo podatkov in GDPR',
+    description:
+      'Politika zasebnosti za brezpla\u010dna orodja Arteon. Vse datoteke se obdelujejo lokalno v va\u0161em brskalniku. Preberite, kako upravljamo s pi\u0161kotki, analitiko (GA4) in ogla\u0161evanjem (AdSense) v skladu z GDPR.',
   },
 };
 

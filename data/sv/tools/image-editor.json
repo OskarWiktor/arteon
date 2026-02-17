@@ -3,18 +3,24 @@
   "locale": "sv",
   "metadata": {
     "title": "Gratis bildredigerare – Beskär och ändra storlek för sociala medier",
-    "description": "Beskär och ändra storlek på bilder för Instagram, Facebook, LinkedIn och mer. Välj ett färdigt format eller ange egna mått. Utan registrering, utan begränsningar.",
-    "ogImage": "/assets/tools/narzedzia-edytor-zdjec-online.webp",
+    "description": "Beskär och ändra storlek på bilder för Instagram, Facebook, LinkedIn och mer. Välj ett färdigt format eller ange egna mått. Utan registrering,",
+    "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
     "path": "/sv/verktyg/bildredigerare"
   },
   "hero": {
     "title": "Beskär och ändra storlek på bilder till valfritt bildförhållande",
     "description": "Ladda upp en bild, välj ett färdigt format för sociala medier eller ange egna mått och ladda ner den färdiga beskurna bilden.",
-    "backgroundImage": "/assets/tools/narzedzia-edytor-zdjec-online.webp"
+    "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/sv/verktyg", "label": "Verktyg" },
-    "third": { "href": "/sv/verktyg/bildredigerare", "label": "Bildredigerare" }
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/bildredigerare",
+      "label": "Bildredigerare"
+    }
   },
   "schemas": {
     "software": {
@@ -38,77 +44,175 @@
       "description": "Hur man beskär en bild till valfritt bildförhållande och ändrar dess storlek för sociala medier eller webben.",
       "totalTime": "PT2M",
       "steps": [
-        { "name": "Ladda upp bild", "text": "Dra och släpp filen i det markerade området eller välj den från din enhet." },
-        { "name": "Välj bildförhållande", "text": "Välj ett färdigt format för en specifik plattform eller ange egna mått." },
-        { "name": "Justera beskärningsområdet", "text": "Flytta och ändra storlek på beskärningsramen för att välja önskad del av bilden." },
-        { "name": "Ladda ner resultatet", "text": "Klicka på nedladdningsknappen för att få den beskurna bilden i PNG- eller JPG-format." }
+        {
+          "name": "Ladda upp bild",
+          "text": "Dra och släpp filen i det markerade området eller välj den från din enhet."
+        },
+        {
+          "name": "Välj bildförhållande",
+          "text": "Välj ett färdigt format för en specifik plattform eller ange egna mått."
+        },
+        {
+          "name": "Justera beskärningsområdet",
+          "text": "Flytta och ändra storlek på beskärningsramen för att välja önskad del av bilden."
+        },
+        {
+          "name": "Ladda ner resultatet",
+          "text": "Klicka på nedladdningsknappen för att få den beskurna bilden i PNG- eller JPG-format."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Varför är det viktigt att beskära bilder till rätt bildförhållande?",
       "html": "<p class=\"text-mid\">Varje plattform har sina egna krav på bildmått. En profilbild på Instagram är kvadratisk (1:1), ett Facebook-omslag är brett (820×312 px) och en YouTube-miniatyrbild är 16:9. Att ladda upp en bild med fel bildförhållande leder till automatisk beskärning – som ofta tar bort en viktig del av bilden.</p><p class=\"text-mid mt-3\">Denna redigerare låter dig förbereda en bild med rätt bildförhållande innan uppladdning. Välj ett färdigt format eller ange egna mått och få en exakt beskuren bild.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Hur man använder bildredigeraren",
       "description": "Beskärning och storleksändring tar bara några minuter:",
       "grid": "four",
       "items": [
-        { "icon": "RiUploadLine", "title": "1. Ladda upp bild", "description": "Dra och släpp filen i det markerade området eller välj den från din enhet. Stödda format är JPG, PNG och WebP." },
-        { "icon": "RiCropLine", "title": "2. Välj bildförhållande", "description": "Välj ett färdigt format för en specifik plattform (Instagram, Facebook, LinkedIn, YouTube) eller ange egna mått." },
-        { "icon": "RiDragMoveLine", "title": "3. Justera området", "description": "Flytta och ändra storlek på beskärningsramen. Bilden visas i realtid, så du ser resultatet omedelbart." },
-        { "icon": "RiDownloadLine", "title": "4. Ladda ner resultatet", "description": "Klicka på nedladdningsknappen. Den beskurna bilden finns tillgänglig i PNG- eller JPG-format." }
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Ladda upp bild",
+          "description": "Dra och släpp filen i det markerade området eller välj den från din enhet. Stödda format är JPG, PNG och WebP."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "2. Välj bildförhållande",
+          "description": "Välj ett färdigt format för en specifik plattform (Instagram, Facebook, LinkedIn, YouTube) eller ange egna mått."
+        },
+        {
+          "icon": "RiDragMoveLine",
+          "title": "3. Justera området",
+          "description": "Flytta och ändra storlek på beskärningsramen. Bilden visas i realtid, så du ser resultatet omedelbart."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Ladda ner resultatet",
+          "description": "Klicka på nedladdningsknappen. Den beskurna bilden finns tillgänglig i PNG- eller JPG-format."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Färdiga format för sociala medier",
       "description": "Redigeraren erbjuder färdiga format för de populäraste plattformarna:",
       "grid": "three",
       "items": [
-        { "icon": "RiInstagramLine", "title": "Instagram", "description": "Kvadrat (1:1), story och reels (9:16), liggande (1.91:1), stående (4:5)." },
-        { "icon": "RiFacebookLine", "title": "Facebook", "description": "Omslag (820×312), inlägg (1200×630), story (1080×1920), profilbild (1:1)." },
-        { "icon": "RiLinkedinLine", "title": "LinkedIn", "description": "Omslag (1584×396), inlägg (1200×1200), profilbild (1:1)." },
-        { "icon": "RiYoutubeLine", "title": "YouTube", "description": "Miniatyrbild (1280×720), kanalbanner (2560×1440)." },
-        { "icon": "RiTwitterXLine", "title": "X (Twitter)", "description": "Inlägg (1600×900), header (1500×500), profilbild (1:1)." },
-        { "icon": "RiImageLine", "title": "Eget", "description": "Ange valfri bredd och höjd i pixlar eller välj valfritt bildförhållande." }
+        {
+          "icon": "RiInstagramLine",
+          "title": "Instagram",
+          "description": "Kvadrat (1:1), story och reels (9:16), liggande (1.91:1), stående (4:5)."
+        },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook",
+          "description": "Omslag (820×312), inlägg (1200×630), story (1080×1920), profilbild (1:1)."
+        },
+        {
+          "icon": "RiLinkedinLine",
+          "title": "LinkedIn",
+          "description": "Omslag (1584×396), inlägg (1200×1200), profilbild (1:1)."
+        },
+        {
+          "icon": "RiYoutubeLine",
+          "title": "YouTube",
+          "description": "Miniatyrbild (1280×720), kanalbanner (2560×1440)."
+        },
+        {
+          "icon": "RiTwitterXLine",
+          "title": "X (Twitter)",
+          "description": "Inlägg (1600×900), header (1500×500), profilbild (1:1)."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Eget",
+          "description": "Ange valfri bredd och höjd i pixlar eller välj valfritt bildförhållande."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Vem behöver en bildredigerare?",
       "grid": "two",
       "items": [
-        { "icon": "RiMegaphoneLine", "title": "Sociala medier-ansvariga", "description": "Förbered bilder med rätt bildförhållande för varje plattform utan att behöva grafisk programvara." },
-        { "icon": "RiShoppingBagLine", "title": "E-handlare", "description": "Beskär produktbilder till samma bildförhållande för ett professionellt utseende i katalogerna." },
-        { "icon": "RiBloggerLine", "title": "Bloggare", "description": "Förbered rubrikbilder och foton till artiklar med rätt bildförhållande." },
-        { "icon": "RiCodeLine", "title": "Webbutvecklare", "description": "Beskär bilder snabbt till egna mått utan att öppna grafisk programvara." }
+        {
+          "icon": "RiMegaphoneLine",
+          "title": "Sociala medier-ansvariga",
+          "description": "Förbered bilder med rätt bildförhållande för varje plattform utan att behöva grafisk programvara."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "E-handlare",
+          "description": "Beskär produktbilder till samma bildförhållande för ett professionellt utseende i katalogerna."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Bloggare",
+          "description": "Förbered rubrikbilder och foton till artiklar med rätt bildförhållande."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Webbutvecklare",
+          "description": "Beskär bilder snabbt till egna mått utan att öppna grafisk programvara."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Vad gör denna bildredigerare speciell?",
       "grid": "two",
       "items": [
-        { "icon": "RiShieldCheckLine", "title": "Lokal bearbetning i webbläsaren", "description": "Bilder skickas inte till någon server. All bearbetning sker på din enhet." },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Lokal bearbetning i webbläsaren",
+          "description": "Bilder skickas inte till någon server. All bearbetning sker på din enhet."
+        },
         {
           "icon": "RiLayoutGridLine",
           "title": "Färdiga format för sociala medier",
           "description": "Välj ett färdigt format för Instagram, Facebook, LinkedIn, YouTube eller X – utan att behöva komma ihåg mått."
         },
-        { "icon": "RiSettings3Line", "title": "Egna mått", "description": "Ange valfri bredd och höjd i pixlar eller välj ett eget bildförhållande." },
-        { "icon": "RiEyeLine", "title": "Förhandsgranskning i realtid", "description": "Ändringar syns omedelbart – du kan experimentera tills du uppnår bästa resultat." }
+        {
+          "icon": "RiSettings3Line",
+          "title": "Egna mått",
+          "description": "Ange valfri bredd och höjd i pixlar eller välj ett eget bildförhållande."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Förhandsgranskning i realtid",
+          "description": "Ändringar syns omedelbart – du kan experimentera tills du uppnår bästa resultat."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Vanliga frågor om bildredigeraren",
@@ -136,8 +240,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Utforska fler verktyg" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforska fler verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

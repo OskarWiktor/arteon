@@ -313,7 +313,7 @@ export default function OfferDesignLoyaltyCardPage() {
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/strony-internetowe',
+              btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
           ]}
         />

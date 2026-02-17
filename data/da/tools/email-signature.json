@@ -3,7 +3,7 @@
   "locale": "da",
   "metadata": {
     "title": "Gratis e-mail-signatur-generator – HTML til Gmail og Outlook",
-    "description": "Opret en professionel HTML e-mail-signatur uden software. Tilføj kontaktoplysninger, logo, sociale medie-links og kopiér til Gmail eller Outlook. Uden registrering.",
+    "description": "Opret en professionel HTML e-mail-signatur uden software. Tilføj kontaktoplysninger, logo, sociale medie-links og kopiér til Gmail eller Outlook.",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
     "path": "/da/vaerktojer/gratis-e-mail-signatur-generator"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/da/vaerktojer", "label": "Værktøjer" },
-    "third": { "href": "/da/vaerktojer/gratis-e-mail-signatur-generator", "label": "E-mail-signatur-generator" }
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/gratis-e-mail-signatur-generator",
+      "label": "E-mail-signatur-generator"
+    }
   },
   "schemas": {
     "software": {
@@ -43,50 +49,97 @@
       "description": "Sådan opretter du en professionel HTML e-mail-signatur med Arteons gratis værktøj.",
       "totalTime": "PT5M",
       "steps": [
-        { "name": "Vælg signaturlayout", "text": "Vælg et af otte tilgængelige layouts." },
-        { "name": "Udfyld kontaktoplysninger", "text": "I fanen Details indtaster du navn, stilling, virksomhed, e-mail, telefon og webadresse." },
-        { "name": "Tilføj CTA-knap", "text": "I fanen Buttons tilføjer du tekst og URL til hovedknappen." },
-        { "name": "Tilføj sociale medie-links", "text": "I fanen Social Media indsætter du URL'er til dine profiler." },
-        { "name": "Tilpas udseendet", "text": "I fanen Appearance vælger du farvetema, skrifttype og tekststørrelse." },
-        { "name": "Kontrollér forhåndsvisning og kopiér signatur", "text": "Knappen Copy signature kopierer den færdige kode til udklipsholder." }
+        {
+          "name": "Vælg signaturlayout",
+          "text": "Vælg et af otte tilgængelige layouts."
+        },
+        {
+          "name": "Udfyld kontaktoplysninger",
+          "text": "I fanen Details indtaster du navn, stilling, virksomhed, e-mail, telefon og webadresse."
+        },
+        {
+          "name": "Tilføj CTA-knap",
+          "text": "I fanen Buttons tilføjer du tekst og URL til hovedknappen."
+        },
+        {
+          "name": "Tilføj sociale medie-links",
+          "text": "I fanen Social Media indsætter du URL'er til dine profiler."
+        },
+        {
+          "name": "Tilpas udseendet",
+          "text": "I fanen Appearance vælger du farvetema, skrifttype og tekststørrelse."
+        },
+        {
+          "name": "Kontrollér forhåndsvisning og kopiér signatur",
+          "text": "Knappen Copy signature kopierer den færdige kode til udklipsholder."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Hvorfor har du brug for en professionel e-mail-signatur?",
       "html": "<p class=\"text-mid\">E-mail-signaturen (også kaldet e-mail-sidefod) er en informationsblok i bunden af hver sendt besked. Den indeholder kontaktoplysninger, stilling, virksomhedsnavn og ofte et link til hjemmesiden eller bookingkalenderen.</p><p class=\"text-mid mt-3\">Modtageren behøver ikke lede efter telefonnummeret i tidligere beskeder – alle oplysninger er let tilgængelige. En professionel e-mail-signatur viser også at du går op i detaljer og opretholder et konsekvent virksomhedsimage i forretningskommunikationen.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Sådan bruger du e-mail-signatur-generatoren",
       "description": "At oprette en professionel e-mail-signatur tager kun få minutter:",
       "grid": "three",
       "items": [
-        { "title": "1. Indtast oplysninger", "description": "Udfyld navn, stilling, virksomhed og kontaktoplysninger." },
-        { "title": "2. Tilpas udseendet", "description": "Vælg layout, farver, tilføj logo og sociale medie-links." },
-        { "title": "3. Kopiér koden", "description": "Knappen Copy signature kopierer den færdige kode til udklipsholder. Indsæt bare i Gmail, Outlook eller en anden e-mail-klient." }
+        {
+          "title": "1. Indtast oplysninger",
+          "description": "Udfyld navn, stilling, virksomhed og kontaktoplysninger."
+        },
+        {
+          "title": "2. Tilpas udseendet",
+          "description": "Vælg layout, farver, tilføj logo og sociale medie-links."
+        },
+        {
+          "title": "3. Kopiér koden",
+          "description": "Knappen Copy signature kopierer den færdige kode til udklipsholder. Indsæt bare i Gmail, Outlook eller en anden e-mail-klient."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Signaturlayouts – hvilket skal du vælge?",
       "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Signaturlayout</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div></div>",
       "html": "<p class=\"text-mid\">Generatoren tilbyder otte foruddefinerede layouts. Hvert layout præsenterer de samme oplysninger på en anden måde.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> – klassisk vertikalt layout, passer til de fleste brugsscenarier.</li><li><strong>Top bar</strong> – vandret linje adskiller signaturen fra indholdet.</li><li><strong>Labels left</strong> – to kolonner: etiketter og værdier.</li><li><strong>Centered</strong> – formelt udseende, indhold centreret.</li><li><strong>Compact</strong> – alt på én linje, minimal højde.</li><li><strong>Two columns</strong> – oplysninger til venstre, kontakter til højre.</li><li><strong>Minimalist</strong> – kun grundlæggende oplysninger.</li><li><strong>Bottom bar</strong> – farvet linje med kontakter i bunden af signaturen.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Sådan kopierer du signaturen til Gmail eller Outlook",
       "description": "Når signaturen er færdig, kræves der kun et par trin for at tilføje den til e-mail-klienten:",
       "grid": "three",
       "items": [
-        { "icon": "RiClipboardLine", "title": "1. Kopiér koden", "description": "Knappen Copy signature kopierer signaturen til udklipsholder som formateret HTML, klar til indsættelse." },
-        { "icon": "RiSettings3Line", "title": "2. Åbn signaturindstillinger", "description": "I Gmail: Settings > See all settings > Signature. I Outlook: File > Options > Mail > Signatures." },
+        {
+          "icon": "RiClipboardLine",
+          "title": "1. Kopiér koden",
+          "description": "Knappen Copy signature kopierer signaturen til udklipsholder som formateret HTML, klar til indsættelse."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "2. Åbn signaturindstillinger",
+          "description": "I Gmail: Settings > See all settings > Signature. I Outlook: File > Options > Mail > Signatures."
+        },
         {
           "icon": "RiSaveLine",
           "title": "3. Indsæt og gem",
@@ -94,19 +147,41 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hvem er e-mail-signatur-generatoren til?",
       "grid": "two",
       "items": [
-        { "icon": "RiBriefcaseLine", "title": "Virksomhedsejere og freelancere", "description": "Professionel signatur i hver besked uden behov for grafisk designer." },
-        { "icon": "RiTeamLine", "title": "Virksomhedsteams", "description": "Hver medarbejder opretter en signatur i samme stil. Konsekvent identitet i hele virksomheden." },
-        { "icon": "RiHandCoinLine", "title": "Sælgere", "description": "CTA-knap med link til kalender eller tilbud øger sandsynligheden for bookede møder." },
-        { "icon": "RiScales3Line", "title": "Advokater, revisorer, læger", "description": "Mulighed for at tilføje juridiske klausuler, licensnumre eller andre branchespecifikke oplysninger." }
+        {
+          "icon": "RiBriefcaseLine",
+          "title": "Virksomhedsejere og freelancere",
+          "description": "Professionel signatur i hver besked uden behov for grafisk designer."
+        },
+        {
+          "icon": "RiTeamLine",
+          "title": "Virksomhedsteams",
+          "description": "Hver medarbejder opretter en signatur i samme stil. Konsekvent identitet i hele virksomheden."
+        },
+        {
+          "icon": "RiHandCoinLine",
+          "title": "Sælgere",
+          "description": "CTA-knap med link til kalender eller tilbud øger sandsynligheden for bookede møder."
+        },
+        {
+          "icon": "RiScales3Line",
+          "title": "Advokater, revisorer, læger",
+          "description": "Mulighed for at tilføje juridiske klausuler, licensnumre eller andre branchespecifikke oplysninger."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om e-mail-signatur-generatoren",
@@ -130,8 +205,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Udforsk flere værktøjer" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Udforsk flere værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

@@ -27,13 +27,11 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
   title: 'Strumenti online gratuiti | Immagini, SEO, colori, favicon',
-  description:
-    '10 strumenti online gratuiti: convertitore WebP, generatore di favicon, contatore di testo, estrattore di colori e codici QR. Per siti web, social media e stampa. Senza registrazione.',
+  description: '10 strumenti gratuiti: convertitore WebP, generatore di favicon, contatore di testo, estrattore di colori e codici QR. Per siti web e social media.',
   alternates: getToolsIndexAlternates('it'),
   openGraph: {
     title: 'Strumenti online gratuiti | Immagini, SEO, colori, favicon',
-    description:
-      '10 strumenti online gratuiti: convertitore WebP, generatore di favicon, contatore di testo, estrattore di colori e codici QR. Per siti web, social media e stampa. Senza registrazione.',
+    description: '10 strumenti gratuiti: convertitore WebP, generatore di favicon, contatore di testo, estrattore di colori e codici QR. Per siti web e social media.',
     url: toAbsoluteUrl('/it/strumenti'),
     type: 'website',
     images: [
@@ -50,8 +48,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Strumenti online gratuiti',
-  description:
-    '10 strumenti online gratuiti: convertitore WebP, generatore di favicon, contatore di testo, estrattore di colori e codici QR. Per siti web, social media e stampa. Senza registrazione.',
+  description: '10 strumenti gratuiti: convertitore WebP, generatore di favicon, contatore di testo, estrattore di colori e codici QR. Per siti web e social media.',
   url: toAbsoluteUrl('/it/strumenti'),
   inLanguage: 'it',
   isPartOf: {

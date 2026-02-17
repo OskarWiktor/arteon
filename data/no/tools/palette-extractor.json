@@ -1,0 +1,243 @@
+{
+  "toolKey": "paletteExtractor",
+  "locale": "no",
+  "metadata": {
+    "title": "Gratis fargeutrekker fra bilde – Palett fra ethvert foto",
+    "description": "Last opp et foto eller logo og trekk ut opptil 12 dominerende farger med HEX- og RGB-koder. Egnet for UI, merkevarebygging og sosiale medier. Uten registrering,",
+    "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
+    "path": "/no/verktoy/fargeutrekker-fra-bilde"
+  },
+  "hero": {
+    "title": "Fargeutrekker fra bilde – hent palett fra ethvert foto",
+    "description": "Last opp et foto, logo eller grafikk, og verktøyet trekker ut opptil 12 dominerende farger med HEX- og RGB-koder. Analysen skjer lokalt i nettleseren din.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/fargeutrekker-fra-bilde",
+      "label": "Fargeutrekker fra bilde"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Fargeutrekker fra bilde – gratis palettgenerator",
+      "alternateName": ["Trekk ut fargepalett fra foto eller logo"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorExtractor",
+      "description": "Gratis fargeutrekker fra bilde. Last opp et foto, logo eller grafikk og få en palett med opptil 12 dominerende farger med HEX- og RGB-koder. Behandlingen skjer i nettleseren – filer sendes ikke til noen server.",
+      "featureList": [
+        "Automatisk uttrekking av opptil 12 dominerende farger",
+        "Analyse av bilder, logoer og vektorgrafikk",
+        "Fargekoder i HEX- og RGB-format",
+        "Kopier fargekode til utklippstavle",
+        "Støtte for PNG-, JPG- og SVG-filer",
+        "Ignorerer gjennomsiktige piksler i PNG-filer",
+        "Lokal behandling i nettleseren – bildet sendes ikke til server"
+      ]
+    },
+    "howTo": {
+      "name": "Slik trekker du ut farger fra et foto eller bilde",
+      "description": "Slik trekker du ut dominerende farger fra et foto eller logo. Last opp et bilde i PNG-, JPG- eller SVG-format, og verktøyet genererer en palett med opptil 12 farger med HEX-koder.",
+      "steps": [
+        {
+          "name": "Last opp bilde",
+          "text": "Dra og slipp filen i det markerte området, eller velg et bilde fra enheten din. Støttede formater er PNG, JPG og SVG."
+        },
+        {
+          "name": "Vent på analysen",
+          "text": "Verktøyet analyserer automatisk bildet og trekker ut dominerende farger."
+        },
+        {
+          "name": "Kopier farger",
+          "text": "Ved hver farge er det en kopierknapp – HEX-koden kopieres til systemets utklippstavle."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvorfor trekke ut farger fra et bilde?",
+      "html": "<p class=\"mb-4\">Ethvert foto, logo eller grafikk inneholder farger som kan brukes som en ferdig fargepalett. Uttrekkeren analyserer bildet og viser hvilke farger som dominerer – sammen med HEX-koder og RGB-verdier klare til innsetting i prosjektet ditt.</p><p class=\"mb-4\">I praksis betyr det at i stedet for manuelt å plukke farger i et grafikkprogram (piksel for piksel), laster du opp ett bilde og får en ordnet liste med opptil 12 farger. Det er nyttig ved valg av farger til en nettside, skaping av konsekvent grafikk for sosiale medier eller bygging av visuell identitet fra eksisterende materialer.</p><p>All analyse skjer lokalt i nettleseren – bildet sendes ikke til noen server.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Slik bruker du fargeutrekkeren fra bilde",
+      "description": "Hele prosessen tar bare noen sekunder:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Last opp bilde",
+          "description": "Dra og slipp filen i det markerte området, eller velg den fra enheten din. Støttede formater er PNG, JPG og SVG."
+        },
+        {
+          "title": "2. Vent på analysen",
+          "description": "Verktøyet analyserer automatisk bildet og trekker ut opptil 12 dominerende farger."
+        },
+        {
+          "title": "3. Kopier fargene du trenger",
+          "description": "Ved hver farge er det en kopierknapp – HEX- eller RGB-koden går til utklippstavlen og kan limes inn direkte i prosjektet ditt."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Hvordan ser en uttrukket fargepalett ut?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Eksempel på farger uttrukket fra et landskapsfoto</p></div>",
+      "html": "<p class=\"text-mid mb-4\">Etter opplasting av bilde viser uttrekkeren en liste med dominerende farger sortert fra mest til minst fremtredende. Hver farge viser sin HEX-kode og RGB-verdi – klar til innsetting i CSS, Figma eller enhver grafisk applikasjon.</p><p class=\"text-mid\">Antallet uttrukne farger avhenger av bildets innhold. Et landskapsfoto gir en rikere palett (8–12 farger), mens en enkel tofarge-logo gir færre elementer.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvilke bilder gir de beste resultatene?",
+      "description": "Kvaliteten på den uttrukne paletten avhenger av typen opplastet bilde:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiImageLine",
+          "title": "Logoer og grafikk med begrenset palett",
+          "description": "Bilder med noen tydelig atskilte farger gir de mest nøyaktige resultatene – uttrekkeren identifiserer presist hver farge."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Bilder med tydelig motiv",
+          "description": "Produktbilder, interiører eller landskap gir også nyttige paletter, men inneholder flere nyanser – inkludert skygge- og refleksfarger."
+        },
+        {
+          "icon": "RiEraserLine",
+          "title": "PNG-filer med gjennomsiktig bakgrunn",
+          "description": "Gjennomsiktige piksler hoppes automatisk over under analysen. Hvis du vil trekke ut farger bare fra objektet (f.eks. logo), bruk en PNG-fil uten bakgrunn."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Bilder uten stor ensfarget bakgrunn",
+          "description": "Når bakgrunnen fyller mer enn selve objektet, dominerer fargen dens resultater. Før opplasting, vurder å beskjære bildet til det interessante området."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hva gjør denne fargeutrekkeren spesiell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Lokal analyse – bildet forlater ikke datamaskinen din",
+          "description": "All fargeutrekking skjer i nettleseren. Bildet sendes ikke til noen server, og når siden lukkes, slettes data fra minnet."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Opptil 12 dominerende farger fra ett bilde",
+          "description": "Verktøyet trekker ut opptil 12 farger sortert fra mest fremtredende – nok til å bygge en komplett prosjektfargepalett."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Tre populære bildeformater",
+          "description": "Støttede formater er PNG, JPG og SVG. PNG-filer med gjennomsiktig bakgrunn gir de beste resultatene."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "HEX- og RGB-koder klare til innsetting",
+          "description": "Hver uttrukket farge har sin HEX-kode (f.eks. #2C5F2D) og RGB-verdi. Koden kan kopieres til utklippstavlen og limes inn direkte i CSS, Figma eller Photoshop."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvor kan man bruke uttrukne farger fra bilde",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Bygg visuell identitet",
+          "description": "Last opp et foto som fanger merkevarens stemning og trekk ut farger som utgangspunkt for merkevarens fargepalett."
+        },
+        {
+          "icon": "RiLayoutMasonryLine",
+          "title": "Grafikk for sosiale medier",
+          "description": "Trekk ut farger fra produktbilder og bruk dem som bakgrunner eller aksenter i grafikk. Innlegg basert på farger fra samme kilde ser konsekvente ut."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Match farger med nettsiden",
+          "description": "Trekk ut farger fra logoen og bruk dem som nettsidens fargepalett – hovedfarge, aksentfarge, bakgrunnsnyanser. HEX-koder limes inn direkte i CSS."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Utvid eksisterende palett",
+          "description": "Uttrukket grunnfarge kan brukes i <a href=\"/no/verktoy/fargepalettgenerator\">fargepalettgeneratoren</a> for å skape et komplett sett med harmoniske farger basert på fargeteori."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte spørsmål om fargeutrekkeren fra bilde",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Krever fargeutrekkeren registrering?",
+          "answer": "Nei. Verktøyet er helt gratis og krever ingen innlogging eller registrering. Bildet analyseres lokalt i nettleseren – det sendes ikke til noen server.",
+          "answerSchemaText": "Nei. Verktøyet er gratis og krever ingen registrering. Bildet analyseres lokalt i nettleseren."
+        },
+        {
+          "question": "Hvordan skiller fargeutrekkeren seg fra en palettgenerator?",
+          "answer": "Uttrekkeren henter farger fra et eksisterende bilde – den analyserer et foto og viser hvilke farger som dominerer. Fargepalettgeneratoren fungerer omvendt: du angir en grunnfarge, og verktøyet skaper harmoniske sett basert på fargeteori. Begge verktøyene utfyller hverandre.",
+          "answerSchemaText": "Uttrekkeren henter farger fra et bilde. Generatoren skaper en palett fra en grunnfarge. Begge verktøyene utfyller hverandre."
+        },
+        {
+          "question": "Hvor mange farger trekker uttrekkeren ut fra ett bilde?",
+          "answer": "Verktøyet trekker ut opptil 12 dominerende farger. Det nøyaktige antallet avhenger av bildets innhold – hvis grafikken bare har to farger (f.eks. en enkel logo), vil resultatene inneholde færre elementer.",
+          "answerSchemaText": "Opptil 12 dominerende farger, sortert fra mest til minst fremtredende."
+        },
+        {
+          "question": "Hvilke bildeformater støtter fargeutrekkeren?",
+          "answer": "Støttede formater er PNG, JPG (JPEG) og SVG. PNG-filer med gjennomsiktig bakgrunn gir bedre resultater fordi gjennomsiktige piksler hoppes over under analysen.",
+          "answerSchemaText": "PNG, JPG og SVG. PNG med gjennomsiktig bakgrunn gir de beste resultatene."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforsk flere verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

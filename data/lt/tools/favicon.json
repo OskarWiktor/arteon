@@ -1,0 +1,127 @@
+{
+  "toolKey": "favicon",
+  "locale": "lt",
+  "metadata": {
+    "title": "Nemokamas favicon generatorius – ICO ir PNG iš vieno paveikslėlio",
+    "description": "Sukurkite favicon.ico ir PNG piktogramas iš vieno paveikslėlio pagal naršyklių ir Lighthouse reikalavimus. Be registracijos, veikia naršyklėje.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
+    "path": "/lt/irankiai/nemokamas-favicon-generatorius"
+  },
+  "hero": {
+    "title": "Sukurkite favicon.ico ir PNG piktogramas iš vieno paveikslėlio",
+    "description": "Įkelkite paveikslėlį, o įrankis sukurs favicon.ico failą ir pilną PNG piktogramų rinkinį naršyklėms, mobiliesiems įrenginiams ir Lighthouse.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/lt/irankiai", "label": "Įrankiai" },
+    "third": { "href": "/lt/irankiai/nemokamas-favicon-generatorius", "label": "Favicon generatorius" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Nemokamas favicon generatorius",
+      "alternateName": ["Favicon.ico generatorius", "Žiniatinklio piktogramų generatorius", "Favicon įrankis", "Favicon generatorius iš paveikslėlio"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "FaviconGenerator",
+      "description": "Nemokamas favicon generatorius. Įkelkite paveikslėlį ir gaukite favicon.ico failą ir pilną PNG piktogramų rinkinį naršyklėms, mobiliesiems įrenginiams ir PWA.",
+      "featureList": [
+        "Favicon.ico failo sukūrimas (16×16, 32×32, 48×48 px)",
+        "PNG piktogramos naršyklėms (16×16–512×512 px)",
+        "Apple Touch Icon (180×180 px)",
+        "Android/PWA piktogramos (192×192, 512×512 px)",
+        "Microsoft piktogramos (150×150, 310×310 px)",
+        "Šaltinio paveikslėlio apkarpymas ir dydžio keitimas",
+        "Peržiūra realiuoju laiku",
+        "Visų piktogramų atsisiuntimas kaip ZIP failas",
+        "Vietinis apdorojimas naršyklėje"
+      ]
+    },
+    "howTo": {
+      "name": "Kaip sukurti favicon iš paveikslėlio",
+      "description": "Kaip sukurti favicon.ico ir PNG piktogramas iš paveikslėlio naršyklėms ir mobiliesiems įrenginiams.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Įkelkite paveikslėlį", "text": "Vilkite ir numeskite failą į pažymėtą sritį arba pasirinkite jį iš įrenginio. Palaikomi formatai: JPG, PNG, SVG ir WebP." },
+        { "name": "Apkarpykite paveikslėlį", "text": "Pritaikykite apkarpymo sritį ir pasirinkite tinkamą paveikslėlio dalį favicon." },
+        { "name": "Patikrinkite peržiūrą", "text": "Pažiūrėkite, kaip favicon atrodo naršyklės kortelėje ir skirtinguose dydžiuose." },
+        { "name": "Atsisiųskite piktogramas", "text": "Atsisiųskite favicon.ico ir pilną PNG piktogramų rinkinį kaip ZIP failą." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Kas yra favicon ir kodėl jis svarbus?",
+      "html": "<p class=\"text-mid\">Favicon yra maža piktograma, rodoma naršyklės kortelėje, žymeklių juostoje ir telefono pradiniame ekrane. Tai vienas pirmųjų elementų, kuriuos vartotojas mato – dar prieš pilną puslapio įkėlimą.</p><p class=\"text-mid mt-3\">Profesionalus favicon kuria prekės ženklo atpažįstamumą ir padeda vartotojui rasti puslapį tarp daugelio atidarytų kortelių. Favicon nebuvimas gali palikti neprofesionalų įspūdį ir sumažinti lankytojų pasitikėjimą.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Kaip naudoti favicon generatorių",
+      "description": "Favicon sukūrimas trunka tik kelias minutes:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Įkelkite paveikslėlį", "description": "Vilkite ir numeskite failą į pažymėtą sritį arba pasirinkite jį iš įrenginio. Kvadratinis paveikslėlis veikia geriausiai." },
+        { "title": "2. Apkarpykite ir pritaikykite", "description": "Pritaikykite apkarpymo sritį ir pasirinkite tinkamą paveikslėlio dalį. Pažiūrėkite, kaip atrodo skirtinguose dydžiuose." },
+        { "title": "3. Atsisiųskite piktogramas", "description": "Atsisiųskite favicon.ico ir pilną PNG piktogramų rinkinį kaip ZIP failą. Visos piktogramos paruoštos naudoti." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kokias piktogramas generatorius sukuria?",
+      "description": "Generatorius sukuria pilną piktogramų rinkinį šiuolaikinėms naršyklėms ir įrenginiams:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiGlobalLine", "title": "favicon.ico", "description": "ICO failas su trimis dydžiais (16×16, 32×32, 48×48 px). Palaikomas visų naršyklių, įskaitant senesnes." },
+        { "icon": "RiChromeLine", "title": "Naršyklių piktogramos (PNG)", "description": "PNG piktogramų rinkinys šiuolaikinėms naršyklėms: 16×16, 32×32, 48×48, 96×96 ir 128×128 px." },
+        { "icon": "RiAppleLine", "title": "Apple Touch Icon", "description": "Piktograma 180×180 px iOS įrenginiams (iPhone, iPad). Rodoma pradiniame ekrane pridėjus puslapį." },
+        { "icon": "RiAndroidLine", "title": "Android/PWA piktogramos", "description": "Piktogramos 192×192 ir 512×512 px Progressive Web Apps ir Android įrenginiams." },
+        { "icon": "RiWindowsLine", "title": "Microsoft piktogramos", "description": "Piktogramos 150×150 ir 310×310 px Windows plytelėms ir Microsoft Edge." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kuo šis favicon generatorius ypatingas?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Vietinis apdorojimas naršyklėje", "description": "Paveikslėlis neįkeliamas į serverį. Visas apdorojimas vyksta jūsų įrenginyje." },
+        { "icon": "RiCheckboxCircleLine", "title": "Atitinka Lighthouse reikalavimus", "description": "Sukurtos piktogramos atitinka Google Lighthouse dydžio ir formato reikalavimus." },
+        { "icon": "RiDevicesLine", "title": "Piktogramos visiems įrenginiams", "description": "Vienas failų rinkinys apima visas naršykles, iOS, Android ir Windows." },
+        { "icon": "RiInfinityLine", "title": "Be apribojimų, be registracijos", "description": "Sukurkite tiek favicon, kiek reikia. Be registracijos, be mokesčių." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Dažnai užduodami klausimai apie favicon generatorių",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Koks paveikslėlis geriausiai tinka favicon?",
+          "answer": "Kvadratinis paveikslėlis (bent 512×512 px) su paprastu fonu yra geriausias. Logotipai, inicialai ar paprastos piktogramos duoda geriausius rezultatus. Paveikslėliai su daug detalių gali blogai atrodyti mažame dydyje (16×16 px).",
+          "answerSchemaText": "Kvadratinis paveikslėlis, bent 512×512 px, su paprastu fonu. Logotipai ar paprastos piktogramos duoda geriausią rezultatą."
+        },
+        {
+          "question": "Koks skirtumas tarp favicon.ico ir PNG?",
+          "answer": "ICO failas gali turėti kelis dydžius viename faile ir yra palaikomas visų naršyklių, įskaitant senesnes. PNG failai siūlo aukštesnę kokybę, bet reikalauja atskiros HTML žymės kiekvienam dydžiui. Rekomenduojama naudoti abu formatus.",
+          "answerSchemaText": "ICO turi kelis dydžius viename faile. PNG siūlo aukštesnę kokybę. Rekomenduojama naudoti abu."
+        },
+        {
+          "question": "Ar paveikslėlis siunčiamas į serverį?",
+          "answer": "Ne. Visas apdorojimas vyksta jūsų naršyklėje. Paveikslėlis nesaugomas ir nesiunčiamas niekur.",
+          "answerSchemaText": "Ne. Paveikslėlis apdorojamas naršyklėje. Nesiunčiamas į serverį."
+        },
+        {
+          "question": "Kaip pridėti favicon prie svetainės?",
+          "answer": "Padėkite piktogramų failus į svetainės šakninį katalogą ir pridėkite atitinkamas HTML žymes į puslapio &lt;head&gt; sekciją. Atsisiųstame ZIP faile yra diegimo instrukcijos.",
+          "answerSchemaText": "Padėkite piktogramų failus į šakninį katalogą ir pridėkite HTML žymes į head sekciją."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Peržiūrėkite kitus įrankius" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

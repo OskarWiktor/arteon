@@ -1,0 +1,148 @@
+{
+  "toolKey": "jpgToWebp",
+  "locale": "sk",
+  "metadata": {
+    "title": "Bezplatný konvertor JPG/PNG do WebP – Bez limitov",
+    "description": "Zmenšite veľkosť obrázkov bez straty kvality. Konvertujte JPG a PNG do formátu WebP a zrýchlite svoju webovú stránku. Bez registrácie, funguje v prehliadači.",
+    "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
+    "path": "/sk/nastroje/konvertor-jpg-png-do-webp"
+  },
+  "hero": {
+    "title": "Konvertujte obrázky do formátu WebP – zmenšite veľkosť bez straty kvality",
+    "description": "Nahrajte obrázky vo formáte JPG alebo PNG a nástroj ich konvertuje do formátu WebP. Menšie súbory, rovnaká kvalita, rýchlejšia webová stránka.",
+    "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/sk/nastroje", "label": "Nástroje" },
+    "third": { "href": "/sk/nastroje/konvertor-jpg-png-do-webp", "label": "Konvertor JPG/PNG do WebP" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Bezplatný konvertor JPG/PNG do WebP",
+      "alternateName": ["Konvertor obrázkov do WebP", "JPG do WebP konvertor", "PNG do WebP konvertor"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Bezplatný konvertor JPG a PNG do formátu WebP. Zmenšite veľkosť obrázkov až o 90 % bez viditeľnej straty kvality. Celé spracovanie prebieha v prehliadači – súbory sa neodosielajú na server.",
+      "featureList": [
+        "Konverzia JPG do formátu WebP",
+        "Konverzia PNG do formátu WebP",
+        "Hromadná konverzia viacerých obrázkov naraz",
+        "Regulátor kvality (0–100)",
+        "Porovnanie pôvodnej a WebP veľkosti",
+        "Nahrávanie presunutím alebo výberom súboru",
+        "Náhľad pred a po konverzii",
+        "Stiahnutie každého obrázka alebo všetkých ako ZIP",
+        "Lokálne spracovanie v prehliadači"
+      ]
+    },
+    "howTo": {
+      "name": "Ako konvertovať obrázky JPG a PNG do formátu WebP",
+      "description": "Ako konvertovať obrázky JPG a PNG do formátu WebP. Nahrajte súbory, upravte kvalitu a stiahnite konvertované obrázky.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Nahrajte obrázky", "text": "Presuňte súbory do označenej oblasti alebo ich vyberte zo zariadenia. Podporované formáty sú JPG a PNG." },
+        { "name": "Upravte kvalitu", "text": "Pomocou regulátora upravte kvalitu obrázka (0–100). Vyššia hodnota znamená lepšiu kvalitu, ale väčší súbor." },
+        { "name": "Stiahnite konvertované obrázky", "text": "Kliknite na tlačidlo stiahnutia pri každom obrázku alebo stiahnite všetky naraz ako ZIP súbor." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Čo je formát WebP a prečo je dôležitý?",
+      "html": "<p class=\"text-mid\">WebP je moderný formát obrázkov vyvinutý spoločnosťou Google, ktorý ponúka lepšiu kompresiu ako JPG a PNG. Obrázky vo formáte WebP zaberajú menej miesta – typicky o 25–34 % menej ako JPG a až o 80 % menej ako PNG – pri zachovaní vizuálnej kvality.</p><p class=\"text-mid mt-3\">Všetky hlavné prehliadače (Chrome, Firefox, Safari, Edge) podporujú formát WebP. Použitie tohto formátu znamená rýchlejšie načítanie stránky, menší prenos dát a lepšie skóre Core Web Vitals – čo priamo ovplyvňuje pozíciu vo výsledkoch vyhľadávania Google.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Ako používať konvertor JPG/PNG do WebP",
+      "description": "Konverzia trvá len niekoľko minút:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Nahrajte obrázky", "description": "Presuňte súbory do označenej oblasti alebo ich vyberte zo zariadenia. Môžete nahrať viacero obrázkov naraz." },
+        { "title": "2. Upravte kvalitu", "description": "Pomocou regulátora upravte kvalitu obrázka (0–100). Nižšia hodnota vytvorí menší súbor, ale s nižšou kvalitou." },
+        { "title": "3. Stiahnite výsledok", "description": "Kliknite na tlačidlo stiahnutia pri každom obrázku alebo stiahnite všetky naraz ako ZIP súbor." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Ako vybrať správnu kvalitu pre WebP",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kvalita: 80</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Odporúčané</span></div><p class=\"text-mid text-sm!\">Najlepší pomer kvality a veľkosti súboru. Vhodné pre väčšinu webových a e-shopových obrázkov.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kvalita: 60–70</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Agresívna kompresia</span></div><p class=\"text-mid text-sm!\">Menšie súbory. Vhodné pre miniatúry, ikony a dekoratívne pozadia.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kvalita: 90–100</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Najvyššia kvalita</span></div><p class=\"text-mid text-sm!\">Veľmi vysoká kvalita, ale väčšie súbory. Vhodné pre portfóliá a hlavné produktové obrázky.</p></div></div>",
+      "html": "<p class=\"text-mid\">Nastavenie kvality určuje pomer medzi vizuálnou kvalitou a veľkosťou súboru. Pre väčšinu webových obrázkov hodnota 75–85 dáva najlepšie výsledky – rozdiel v kvalite nie je viditeľný voľným okom a súbor môže byť 3–5-krát menší ako pôvodný JPG.</p><p class=\"text-mid mt-3\">Pre miniatúry, ikony a dekoratívne pozadia môžete znížiť kvalitu na 60–70 bez straty ostrosti. Pre portfóliové obrázky alebo hlavné produktové fotografie hodnota 90–95 zachová detaily.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kto potrebuje konvertor WebP?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Majitelia webových stránok",
+          "description": "Menšie obrázky zrýchľujú načítanie stránky. To zlepšuje používateľský zážitok a ovplyvňuje pozíciu v Google."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Majitelia e-shopov",
+          "description": "Veľa produktových obrázkov znamená veľa megabajtov dát. Konverzia do WebP znižuje čas načítania a prenos dát."
+        },
+        { "icon": "RiBloggerLine", "title": "Blogeri", "description": "Články s mnohými obrázkami sa načítavajú pomalšie. WebP zmenšuje veľkosť obrázkov pri zachovaní kvality." },
+        { "icon": "RiCodeLine", "title": "Weboví vývojári", "description": "WebP je moderný štandard pre webové obrázky. Všetky hlavné prehliadače tento formát podporujú." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Čím je tento konvertor WebP výnimočný?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Lokálne spracovanie v prehliadači",
+          "description": "Obrázky sa neodosielajú na server – celé spracovanie prebieha vo vašom zariadení. Vaše súkromie je chránené."
+        },
+        { "icon": "RiSpeedLine", "title": "Okamžitá konverzia", "description": "Výsledky sa zobrazujú ihneď – bez čakania vo fronte a bez spracovania na serveri." },
+        { "icon": "RiInfinityLine", "title": "Bez limitu obrázkov", "description": "Konvertujte toľko obrázkov, koľko potrebujete. Bez denného ani relačného limitu." },
+        { "icon": "RiScalesLine", "title": "Nastaviteľný regulátor kvality", "description": "Upravte kvalitu (0–100) pre každý obrázok a získajte najlepší pomer veľkosti a kvality." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky o konvertore WebP",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Čo je formát WebP?",
+          "answer": "WebP je moderný formát obrázkov vyvinutý spoločnosťou Google. Ponúka lepšiu kompresiu ako JPG (obrázky o 25–34 % menšie) a zároveň podporuje priehľadnosť (ako PNG). Všetky hlavné prehliadače podporujú formát WebP.",
+          "answerSchemaText": "WebP je formát obrázkov od Google s lepšou kompresiou ako JPG. Všetky hlavné prehliadače ho podporujú."
+        },
+        {
+          "question": "Zhorší konverzia do WebP kvalitu obrázka?",
+          "answer": "Pri nastavení kvality 75–85 rozdiel nie je viditeľný voľným okom. Kompresia WebP je efektívnejšia ako JPG – pri rovnakej vizuálnej kvalite môže byť súbor 3–5-krát menší.",
+          "answerSchemaText": "Pri kvalite 75–85 rozdiel nie je viditeľný. WebP ponúka efektívnejšiu kompresiu ako JPG."
+        },
+        {
+          "question": "Odosielajú sa obrázky na server?",
+          "answer": "Nie. Celé spracovanie prebieha vo vašom prehliadači – obrázky sa neodosielajú nikam. Po zatvorení stránky sa údaje vymažú z pamäte.",
+          "answerSchemaText": "Nie. Obrázky sa spracovávajú v prehliadači. Neodosielajú sa na server."
+        },
+        {
+          "question": "Existuje limit na počet obrázkov?",
+          "answer": "Nie. Môžete konvertovať toľko obrázkov, koľko potrebujete. Bez denného ani relačného limitu.",
+          "answerSchemaText": "Nie. Na počet konvertovaných obrázkov nie je žiadny limit."
+        },
+        {
+          "question": "Podporujú všetky prehliadače formát WebP?",
+          "answer": "Áno. Všetky hlavné prehliadače – Chrome, Firefox, Safari (od verzie 14) a Edge – podporujú formát WebP. Pre staršie prehliadače sa odporúča záložná verzia vo formáte JPG.",
+          "answerSchemaText": "Áno. Chrome, Firefox, Safari 14+ a Edge všetky podporujú formát WebP."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Pozrite si ďalšie nástroje" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

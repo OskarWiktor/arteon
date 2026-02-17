@@ -3,7 +3,7 @@
   "locale": "da",
   "metadata": {
     "title": "Gratis farvepaletgenerator – 9 paletter fra én farve",
-    "description": "Generér 9 farvepaletter fra én grundfarve: monokromatisk, komplementær, triadisk, pastel og flere. Kopiér HEX-koder med ét klik. Uden registrering, uden begrænsninger.",
+    "description": "Generér 9 farvepaletter fra én grundfarve: monokromatisk, komplementær, triadisk, pastel og flere. Kopiér HEX-koder med ét klik. Uden registrering,",
     "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
     "path": "/da/vaerktojer/farvepaletgenerator"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/da/vaerktojer", "label": "Værktøjer" },
-    "third": { "href": "/da/vaerktojer/farvepaletgenerator", "label": "Farvepaletgenerator" }
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/farvepaletgenerator",
+      "label": "Farvepaletgenerator"
+    }
   },
   "schemas": {
     "software": {
@@ -45,36 +51,63 @@
       "name": "Sådan genererer du en farvepalet fra én grundfarve",
       "description": "Sådan genererer du 9 farvepaletter fra én grundfarve: monokromatisk, komplementær, triadisk, pastel og flere.",
       "steps": [
-        { "name": "Vælg grundfarve", "text": "Indtast en HEX-kode i tekstfeltet, eller brug farvevælgeren til visuelt valg." },
-        { "name": "Bekræft farven", "text": "Bekræft den valgte farve med knappen Update Color – værktøjet genererer paletter baseret på din grundfarve." },
+        {
+          "name": "Vælg grundfarve",
+          "text": "Indtast en HEX-kode i tekstfeltet, eller brug farvevælgeren til visuelt valg."
+        },
+        {
+          "name": "Bekræft farven",
+          "text": "Bekræft den valgte farve med knappen Update Color – værktøjet genererer paletter baseret på din grundfarve."
+        },
         {
           "name": "Gennemse paletterne",
           "text": "Værktøjet genererer automatisk 9 forskellige paletter: monokromatisk, tilstødende, komplementær, triadisk, splittet komplementær, pastel, mørk, tonal og minimalistisk."
         },
-        { "name": "Kopiér farver", "text": "Ved hver farve er der en Kopiér-knap – HEX-koden kopieres til systemets udklipsholder." }
+        {
+          "name": "Kopiér farver",
+          "text": "Ved hver farve er der en Kopiér-knap – HEX-koden kopieres til systemets udklipsholder."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Hvorfor generere en farvepalet?",
       "html": "<p class=\"text-mid\">En konsekvent farvepalet er grundlaget for ethvert visuelt projekt – fra hjemmesider, via logoer, til trykt materiale. Manuel udvælgelse af farver, der fungerer sammen, kræver viden om farveteori. Generatoren automatiserer denne proces: du angiver én grundfarve (f.eks. farven på dit logo), og værktøjet genererer 9 sæt farver baseret på gennemprøvede farveharmoniskemaer.</p><p class=\"text-mid mt-3\">Hver genereret farve har sin HEX-kode (f.eks. #4F6BF5) og HSL-værdi (hue, saturation, lightness). HEX-koden kan indsættes direkte i CSS, Figma, Canva eller enhver grafisk applikation.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Sådan bruger du farvepaletgeneratoren",
       "description": "Hele processen tager kun et par sekunder:",
       "grid": "three",
       "items": [
-        { "title": "1. Indtast grundfarve", "description": "Indtast en HEX-kode (f.eks. #4F6BF5) i tekstfeltet, eller vælg en farve fra farvevælgeren. Du kan også bruge knappen Tilfældig farve." },
-        { "title": "2. Bekræft dit valg", "description": "Når du klikker på knappen Update Color, genererer værktøjet automatisk 9 paletter baseret på forskellige farveharmoniskemaer." },
-        { "title": "3. Kopiér de farver du har brug for", "description": "Ved hver farve er der en Kopiér-knap – HEX-koden går til udklipsholder og kan indsættes direkte i dit projekt." }
+        {
+          "title": "1. Indtast grundfarve",
+          "description": "Indtast en HEX-kode (f.eks. #4F6BF5) i tekstfeltet, eller vælg en farve fra farvevælgeren. Du kan også bruge knappen Tilfældig farve."
+        },
+        {
+          "title": "2. Bekræft dit valg",
+          "description": "Når du klikker på knappen Update Color, genererer værktøjet automatisk 9 paletter baseret på forskellige farveharmoniskemaer."
+        },
+        {
+          "title": "3. Kopiér de farver du har brug for",
+          "description": "Ved hver farve er der en Kopiér-knap – HEX-koden går til udklipsholder og kan indsættes direkte i dit projekt."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hvilke farveskemaer genererer værktøjet?",
@@ -96,7 +129,11 @@
           "title": "Komplementær palet",
           "description": "Grundfarven og den modsatte farve på farvehjulet (180° forskydning). Skaber stærk visuel kontrast. Nyttigt hvor et element skal tiltrække opmærksomhed."
         },
-        { "icon": "RiSparklingLine", "title": "Triadisk palet", "description": "Tre farver med 120° mellemrum på farvehjulet – danner en ligesidet trekant. Dynamisk og alsidig kombination." },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Triadisk palet",
+          "description": "Tre farver med 120° mellemrum på farvehjulet – danner en ligesidet trekant. Dynamisk og alsidig kombination."
+        },
         {
           "icon": "RiCursorLine",
           "title": "Splittet komplementær palet",
@@ -124,14 +161,20 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Hvad bygger farvepaletgeneratoren på?",
       "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° på farvehjulet</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
       "html": "<p class=\"text-mid\">Alle paletter skabes gennem matematisk transformation af grundfarven i HSL-farverummet. HSL beskriver en farve med tre værdier: hue (H) er positionen på farvehjulet (0°–360°), saturation (S) bestemmer farvens styrke, og lightness (L) – hvor lys eller mørk farven er.</p><p class=\"text-mid mt-3\">Komplementære, triadiske og splittede komplementære paletter er baseret på farvehjulets geometri – farver placeres med lige vinkelintervaller, hvilket skaber visuel balance. Monokromatiske, pastel- og mørke paletter ændrer kun lysstyrke og mætning, mens samme kulør bibeholdes.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hvor kan man bruge genererede farvepaletter",
@@ -142,7 +185,11 @@
           "title": "Brandets visuelle identitet",
           "description": "Vælg harmoniske farver til et eksisterende logo, eller byg en brand-farvepalet fra bunden – til visitkort, brevpapir og marketingmaterialer."
         },
-        { "icon": "RiGlobalLine", "title": "Hjemmesider", "description": "Indstil hovedfarve, accent og baggrundsnuancer. Kopierede HEX-koder indsættes direkte i CSS eller temakonfiguration." },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Hjemmesider",
+          "description": "Indstil hovedfarve, accent og baggrundsnuancer. Kopierede HEX-koder indsættes direkte i CSS eller temakonfiguration."
+        },
         {
           "icon": "RiSmartphoneLine",
           "title": "App-interfaces",
@@ -155,7 +202,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om farvepaletgeneratoren",
@@ -183,8 +233,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Udforsk flere værktøjer" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Udforsk flere værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

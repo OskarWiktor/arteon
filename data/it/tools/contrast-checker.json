@@ -3,7 +3,7 @@
   "locale": "it",
   "metadata": {
     "title": "Verificatore di contrasto colori gratuito – WCAG 2.1",
-    "description": "Verifica la leggibilità dei colori di testo e sfondo secondo WCAG 2.1. Rapporto di contrasto, valutazione AA/AAA e correzione automatica dei colori. Senza registrazione, senza limiti.",
+    "description": "Verifica la leggibilità dei colori di testo e sfondo secondo WCAG 2.1. Rapporto di contrasto, valutazione AA/AAA e correzione automatica dei colori.",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/it/strumenti/verificatore-contrasto-colori"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/it/strumenti", "label": "Strumenti" },
-    "third": { "href": "/it/strumenti/verificatore-contrasto-colori", "label": "Contrasto colori" }
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/verificatore-contrasto-colori",
+      "label": "Contrasto colori"
+    }
   },
   "schemas": {
     "software": {
@@ -46,33 +52,66 @@
       "description": "Verifica la leggibilità dei colori del testo e dello sfondo secondo lo standard WCAG. Inserisci i colori, consulta il rapporto di contrasto e utilizza l'adattamento automatico.",
       "totalTime": "PT1M",
       "steps": [
-        { "name": "Scegliere il colore del testo", "text": "Inserisci il codice colore del testo (es. #333333) in formato HEX, RGB o HSL, oppure utilizza il selettore di colori." },
-        { "name": "Scegliere il colore di sfondo", "text": "Inserisci il colore di sfondo su cui verrà visualizzato il testo – sezione, blocco o pagina intera." },
-        { "name": "Verificare il risultato", "text": "Lo strumento mostra il rapporto di contrasto e indica se soddisfi i requisiti AA/AAA." },
-        { "name": "Adattare i colori", "text": "Se il contrasto è insufficiente, la funzione Adatta propone automaticamente una variante di colore conforme alla soglia WCAG scelta." }
+        {
+          "name": "Scegliere il colore del testo",
+          "text": "Inserisci il codice colore del testo (es. #333333) in formato HEX, RGB o HSL, oppure utilizza il selettore di colori."
+        },
+        {
+          "name": "Scegliere il colore di sfondo",
+          "text": "Inserisci il colore di sfondo su cui verrà visualizzato il testo – sezione, blocco o pagina intera."
+        },
+        {
+          "name": "Verificare il risultato",
+          "text": "Lo strumento mostra il rapporto di contrasto e indica se soddisfi i requisiti AA/AAA."
+        },
+        {
+          "name": "Adattare i colori",
+          "text": "Se il contrasto è insufficiente, la funzione Adatta propone automaticamente una variante di colore conforme alla soglia WCAG scelta."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Perché il contrasto dei colori è importante?",
       "html": "<p class=\"text-mid\">Un contrasto insufficiente tra il testo e lo sfondo rende il contenuto difficile da leggere, in particolare per le persone ipovedenti, gli utenti anziani o chi consulta il tuo sito su uno schermo al sole. Le linee guida WCAG 2.1 definiscono soglie minime di contrasto per garantire l'accessibilità.</p><p class=\"text-mid mt-3\">Questo strumento calcola il rapporto di contrasto tra due colori, valuta la conformità WCAG (AA e AAA) per il testo normale, il testo grande e le icone, e propone una funzione di adattamento automatico per trovare colori conformi.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Come usare il verificatore",
       "description": "La verifica è istantanea:",
       "grid": "three",
       "items": [
-        { "icon": "RiPaletteLine", "title": "1. Inserisci i colori", "description": "Inserisci il colore del testo è il colore dello sfondo in HEX, RGB o HSL." },
-        { "icon": "RiEyeLine", "title": "2. Verifica il contrasto", "description": "Consulta il rapporto di contrasto e la conformità WCAG AA/AAA." },
-        { "icon": "RiMagicLine", "title": "3. Adatta se necessario", "description": "Usa la funzione di adattamento per trovare un colore conforme automaticamente." }
+        {
+          "icon": "RiPaletteLine",
+          "title": "1. Inserisci i colori",
+          "description": "Inserisci il colore del testo è il colore dello sfondo in HEX, RGB o HSL."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "2. Verifica il contrasto",
+          "description": "Consulta il rapporto di contrasto e la conformità WCAG AA/AAA."
+        },
+        {
+          "icon": "RiMagicLine",
+          "title": "3. Adatta se necessario",
+          "description": "Usa la funzione di adattamento per trovare un colore conforme automaticamente."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Quali formati di colore sono supportati?",
@@ -94,50 +133,117 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Livelli di conformità WCAG",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800\">AA</span><span class=\"text-mid text-sm!\">Testo normale: min. 4,5:1 — Testo grande: min. 3:1 — Icone: min. 3:1</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800\">AAA</span><span class=\"text-mid text-sm!\">Testo normale: min. 7:1 — Testo grande: min. 4,5:1</span></div></div>",
       "html": "<p class=\"text-mid\">Le WCAG 2.1 definiscono due livelli di conformità per il contrasto dei colori:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>AA (consigliato)</strong> - il livello minimo per la maggior parte dei siti web. Garantisce una leggibilità sufficiente.</li><li><strong>AAA (ottimale)</strong> - il livello più elevato. Consigliato per i siti destinati a persone ipovedenti.</li><li><strong>Testo grande</strong> - testo di almeno 18px (o 14px in grassetto). Le soglie sono più basse Perché le lettere grandi sono naturalmente più leggibili.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Cosa significano i risultati del test di leggibilità?",
       "html": "<p class=\"text-mid mb-4\">Lo strumento mostra il rapporto di contrasto su una scala da 1:1 (nessun contrasto) a 21:1 (contrasto massimo - nero su bianco). Il risultato viene confrontato con le soglie definite nello standard WCAG:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Testo normale</strong> - richiede almeno 4,5:1 per il livello AA (standard minimo) o 7:1 per il livello AAA (standard avanzato). Si applica al testo inferiore a 18pt (24px) o inferiore a 14pt (18,5px) in grassetto.</li><li><strong>Testo grande / grassetto</strong> - richiede almeno 3:1 per il livello AA o 4,5:1 per il livello AAA. Si applica al testo a partire da 18pt (24px) o da 14pt (18,5px) in grassetto: titoli, pulsanti, evidenziazioni.</li><li><strong>Icone ed elementi di interfaccia</strong> - richiedono almeno 3:1 per il livello AA. Si applica a icone, pulsanti, campi modulo e altri elementi di interfaccia che trasmettono informazioni.</li></ul><p class=\"text-mid mt-3\"><strong>Il livello AA</strong> e il minimo richiesto dalle normative di accessibilità digitale in molti paesi, inclusa la <a href=\"https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32016L2102\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">direttiva europea sull'accessibilità dei siti web</a>. <strong>Il livello AAA</strong> offre una leggibilità migliore, ma non è sempre realizzabile per tutti gli elementi.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Adattamento automatico dei colori ai requisiti WCAG",
       "html": "<p class=\"text-mid mb-4\">Se il contrasto è troppo basso, la funzione <strong>Adatta</strong> trova automaticamente una variante di colore del testo conforme alla soglia di contrasto selezionata.</p><p class=\"text-mid mb-4\">Come funziona l'adattamento:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Seleziona l'obiettivo di adattamento dalla lista, ad es. AA per testo normale o AAA per testo grande.</li><li>Clicca sul pulsante Adatta.</li><li>Lo strumento cerca tra le varianti di luminosità del colore del testo e suggerisce quella più vicina conforme ai requisiti.</li><li>Il colore suggerito può essere copiato negli appunti o impostato immediatamente come nuovo colore del testo.</li></ol><p class=\"text-mid mt-3\">L'algoritmo preserva la tonalità e la saturazione del colore originale, modificando solo la luminosità. Il colore suggerito resta coerente con l'identità visiva rispettando lo standard di accessibilità.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionFeatureComparison",
       "title": "Cosa significano i livelli AA e AAA nello standard WCAG?",
       "plans": [
-        { "id": "aa", "name": "Livello AA (minimo)", "highlighted": true },
-        { "id": "aaa", "name": "Livello AAA (avanzato)" }
+        {
+          "id": "aa",
+          "name": "Livello AA (minimo)",
+          "highlighted": true
+        },
+        {
+          "id": "aaa",
+          "name": "Livello AAA (avanzato)"
+        }
       ],
       "features": [
-        { "name": "Testo normale - min. 4,5:1", "values": { "aa": true, "aaa": true } },
-        { "name": "Testo normale - min. 7:1", "values": { "aa": false, "aaa": true } },
-        { "name": "Testo grande / grassetto - min. 3:1", "values": { "aa": true, "aaa": true } },
-        { "name": "Testo grande / grassetto - min. 4,5:1", "values": { "aa": false, "aaa": true } },
-        { "name": "Icone ed elementi di interfaccia - min. 3:1", "values": { "aa": true, "aaa": true } },
-        { "name": "Legalmente obbligatorio (direttiva UE)", "values": { "aa": true, "aaa": false } },
-        { "name": "Consigliato per contenuti essenziali", "values": { "aa": true, "aaa": true } }
+        {
+          "name": "Testo normale - min. 4,5:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Testo normale - min. 7:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Testo grande / grassetto - min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Testo grande / grassetto - min. 4,5:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Icone ed elementi di interfaccia - min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Legalmente obbligatorio (direttiva UE)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Consigliato per contenuti essenziali",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Risoluzione dei problemi del verificatore di contrasto",
       "html": "<h3 class=\"h5 mb-2\">Messaggio di errore formato colore</h3><p class=\"text-mid mb-4\">Verifica il formato del colore. Un codice HEX deve iniziare con <code class=\"rounded bg-black/5 px-1\">#</code> e contenere 3 o 6 caratteri (ad es. <code class=\"rounded bg-black/5 px-1\">#fff</code> o <code class=\"rounded bg-black/5 px-1\">#ffffff</code>). Per il formato RGB, verifica che i valori siano separati da virgole e compresi tra 0 e 255.</p><h3 class=\"h5 mb-2\">La funzione Adatta non trova un colore appropriato</h3><p class=\"text-mid mb-4\">Quando lo sfondo e il testo hanno una luminosità simile nella stessa tonalità, l'algoritmo potrebbe non trovare una variante conforme ai requisiti senza cambiare la tonalità. In questo caso, prova a modificare il colore dello sfondo o a scegliere un colore del testo completamente diverso.</p><h3 class=\"h5 mb-2\">Il colore nel selettore non corrisponde al codice inserito</h3><p class=\"text-mid\">Il selettore di colori del browser supporta solo il formato HEX senza trasparenza. Se inserisci un colore in formato RGBA o HSLA con trasparenza, il selettore mostrera solo la parte colorata (senza alfa). I calcoli del contrasto continuano a considerare la trasparenza.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Dove verificare la leggibilità dei colori?",
@@ -149,24 +255,46 @@
           "title": "Siti web",
           "description": "Testo delle pagine, pulsanti, link, moduli. Particolarmente importante per i siti aziendali i cui visitatori hanno eta e capacità visive diverse."
         },
-        { "icon": "RiShoppingCartLine", "title": "Negozi online", "description": "Prezzi, pulsanti Acquista, informazioni prodotto. Una leggibilità scarsa può significare ordini persi." },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Negozi online",
+          "description": "Prezzi, pulsanti Acquista, informazioni prodotto. Una leggibilità scarsa può significare ordini persi."
+        },
         {
           "icon": "RiSlideshowLine",
           "title": "Presentazioni",
           "description": "Le diapositive proiettate hanno spesso un contrasto più basso rispetto a un monitor. Verifica i colori prima di presentare."
         },
-        { "icon": "RiPrinterLine", "title": "Poster e volantini", "description": "I materiali stampati visti in condizioni di illuminazione variabili richiedono un contrasto elevato." },
-        { "icon": "RiSmartphoneLine", "title": "Applicazioni mobili", "description": "I telefoni vengono usati al sole, di notte e da persone di tutte le eta." },
-        { "icon": "RiRestaurantLine", "title": "Menu di ristoranti", "description": "Spesso stampati su carta colorata o con font decorativi: e facile ottenere un contrasto troppo basso." }
+        {
+          "icon": "RiPrinterLine",
+          "title": "Poster e volantini",
+          "description": "I materiali stampati visti in condizioni di illuminazione variabili richiedono un contrasto elevato."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Applicazioni mobili",
+          "description": "I telefoni vengono usati al sole, di notte e da persone di tutte le eta."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Menu di ristoranti",
+          "description": "Spesso stampati su carta colorata o con font decorativi: e facile ottenere un contrasto troppo basso."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "leggibilità dei colori per le persone daltoniche",
       "html": "<p class=\"text-mid mb-4\">Il daltonismo è un disturbo della percezione dei colori che colpisce circa l'8% degli uomini e lo 0,5% delle donne. Le persone daltoniche possono avere difficolta a distinguere alcune coppie di colori, anche se il contrasto di luminosità è sufficiente.</p><p class=\"text-mid mb-4\">Tipi più comuni di daltonismo:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deuteranopia</strong> - difficolta a distinguere il verde dal rosso (forma più comune)</li><li><strong>Protanopia</strong> - difficolta a percepire il rosso</li><li><strong>Tritanopia</strong> - difficolta a percepire il blu e il giallo (raro)</li></ul><p class=\"text-mid mt-3\">Questo strumento verifica il contrasto di luminosità, che è importante per tutti gli utenti. Tuttavia, durante la progettazione, e bene evitare combinazioni di colori problematiche (ad es. testo rosso su sfondo verde) e non affidarsi esclusivamente al colore per trasmettere informazioni: usa anche forme, icone e testo.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Cosa rende speciale questo verificatore?",
@@ -199,7 +327,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Domande frequenti sul verificatore di contrasto",
@@ -247,8 +378,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Scopri altri strumenti" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Scopri altri strumenti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

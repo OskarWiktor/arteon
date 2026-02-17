@@ -27,11 +27,11 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
   title: 'Free online tools | Images, SEO, colors, favicon',
-  description: '10 free online tools: WebP converter, favicon generator, text counter, color extractor, and QR codes. For websites, social media, and print. No registration required.',
+  description: '10 free tools: WebP converter, favicon generator, text counter, color extractor, and QR codes. For websites, social media, and print. No signup required.',
   alternates: getToolsIndexAlternates('en'),
   openGraph: {
     title: 'Free online tools | Images, SEO, colors, favicon',
-    description: '10 free online tools: WebP converter, favicon generator, text counter, color extractor, and QR codes. For websites, social media, and print. No registration required.',
+    description: '10 free tools: WebP converter, favicon generator, text counter, color extractor, and QR codes. For websites, social media, and print. No signup required.',
     url: toAbsoluteUrl('/en/tools'),
     type: 'website',
     images: [
@@ -48,7 +48,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Free online tools',
-  description: '10 free online tools: WebP converter, favicon generator, text counter, color extractor, and QR codes. For websites, social media, and print. No registration required.',
+  description: '10 free tools: WebP converter, favicon generator, text counter, color extractor, and QR codes. For websites, social media, and print. No signup required.',
   url: toAbsoluteUrl('/en/tools'),
   inLanguage: 'en',
   isPartOf: {

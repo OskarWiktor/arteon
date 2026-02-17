@@ -1,0 +1,225 @@
+{
+  "toolKey": "imageResize",
+  "locale": "lt",
+  "metadata": {
+    "title": "Nemokamas paveikslėlių redaktorius – Apkarpymas ir pritaikymas socialiniams tinklams",
+    "description": "Apkarpykite ir pritaikykite paveikslėlius Instagram, Facebook, LinkedIn ir kitiems. Pasirinkite paruoštą formatą arba įveskite savo matmenis. Be registracijos,",
+    "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
+    "path": "/lt/irankiai/paveiksleliu-redaktorius"
+  },
+  "hero": {
+    "title": "Apkarpykite ir pritaikykite paveikslėlius bet kuriam formatui",
+    "description": "Įkelkite paveikslėlį, pasirinkite paruoštą formatą socialiniams tinklams arba įveskite savo matmenis ir atsisiųskite apkarpytą paveikslėlį.",
+    "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/lt/irankiai",
+      "label": "Įrankiai"
+    },
+    "third": {
+      "href": "/lt/irankiai/paveiksleliu-redaktorius",
+      "label": "Paveikslėlių redaktorius"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Nemokamas paveikslėlių redaktorius – apkarpymas ir dydžio keitimas",
+      "alternateName": ["Paveikslėlių apkarpymo įrankis", "Paveikslėlių dydžio keitimas socialiniams tinklams"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageEditor",
+      "description": "Nemokamas paveikslėlių redaktorius apkarpymui ir dydžio keitimui socialiniams tinklams, svetainėms ir kitoms reikmėms.",
+      "featureList": [
+        "Paveikslėlio apkarpymas bet kokiu kraštinių santykiu",
+        "Paruošti formatai Instagram, Facebook, LinkedIn, YouTube",
+        "Savi matmenys kaip plotis ir aukštis",
+        "Paveikslėlio pasukimas ir veidrodinis atspindys",
+        "Peržiūra realiuoju laiku",
+        "Atsisiuntimas PNG arba JPG formatu",
+        "Vietinis apdorojimas naršyklėje"
+      ]
+    },
+    "howTo": {
+      "name": "Kaip apkarpyti ir pakeisti paveikslėlio dydį",
+      "description": "Kaip apkarpyti paveikslėlį bet kokiu kraštinių santykiu ir pakeisti dydį socialiniams tinklams ar internetui.",
+      "totalTime": "PT2M",
+      "steps": [
+        {
+          "name": "Įkelkite paveikslėlį",
+          "text": "Vilkite ir numeskite failą į pažymėtą sritį arba pasirinkite jį iš įrenginio."
+        },
+        {
+          "name": "Pasirinkite formatą",
+          "text": "Pasirinkite paruoštą formatą konkrečiai platformai arba įveskite savo matmenis."
+        },
+        {
+          "name": "Pritaikykite apkarpymo sritį",
+          "text": "Perkelkite ir pakeiskite apkarpymo rėmelio dydį, kad pasirinktumėte norimą paveikslėlio dalį."
+        },
+        {
+          "name": "Atsisiųskite rezultatą",
+          "text": "Paspauskite atsisiuntimo mygtuką ir gaukite apkarpytą paveikslėlį PNG arba JPG formatu."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kodėl svarbu apkarpyti paveikslėlius tinkamu kraštinių santykiu?",
+      "html": "<p class=\"text-mid\">Kiekviena platforma turi savus reikalavimus paveikslėlių matmenims. Instagram profilio nuotrauka yra kvadratinė (1:1), Facebook viršelio nuotrauka yra plati (820×312 px), o YouTube miniatiūra yra 16:9. Paveikslėlio su netinkamu kraštinių santykiu įkėlimas veda prie automatinio apkarpymo – kuris dažnai pašalina svarbią paveikslėlio dalį.</p><p class=\"text-mid mt-3\">Šis redaktorius leidžia paruošti paveikslėlį su tinkamu kraštinių santykiu prieš įkėlimą. Pasirinkite paruoštą formatą arba įveskite savo matmenis ir gaukite tiksliai apkarpytą paveikslėlį.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kaip naudoti paveikslėlių redaktorių",
+      "description": "Apkarpymas ir dydžio keitimas trunka tik kelias minutes:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Įkelkite paveikslėlį",
+          "description": "Vilkite ir numeskite failą į pažymėtą sritį arba pasirinkite jį iš įrenginio. Palaikomi formatai: JPG, PNG ir WebP."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "2. Pasirinkite formatą",
+          "description": "Pasirinkite paruoštą formatą konkrečiai platformai (Instagram, Facebook, LinkedIn, YouTube) arba įveskite savo matmenis."
+        },
+        {
+          "icon": "RiDragMoveLine",
+          "title": "3. Pritaikykite sritį",
+          "description": "Perkelkite ir pakeiskite apkarpymo rėmelio dydį. Paveikslėlis rodomas realiuoju laiku, todėl rezultatą matote iškart."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Atsisiųskite rezultatą",
+          "description": "Paspauskite atsisiuntimo mygtuką. Apkarpytas paveikslėlis prieinamas PNG arba JPG formatu."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Paruošti formatai socialiniams tinklams",
+      "description": "Redaktorius siūlo paruoštus formatus populiariausioms platformoms:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiInstagramLine",
+          "title": "Instagram",
+          "description": "Kvadratas (1:1), istorija ir reels (9:16), horizontalus (1.91:1), vertikalus (4:5)."
+        },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook",
+          "description": "Viršelio nuotrauka (820×312), įrašas (1200×630), istorija (1080×1920), profilio nuotrauka (1:1)."
+        },
+        {
+          "icon": "RiLinkedinLine",
+          "title": "LinkedIn",
+          "description": "Viršelio nuotrauka (1584×396), įrašas (1200×1200), profilio nuotrauka (1:1)."
+        },
+        {
+          "icon": "RiYoutubeLine",
+          "title": "YouTube",
+          "description": "Miniatiūra (1280×720), kanalo baneris (2560×1440)."
+        },
+        {
+          "icon": "RiTwitterXLine",
+          "title": "X (Twitter)",
+          "description": "Įrašas (1600×900), antraštės nuotrauka (1500×500), profilio nuotrauka (1:1)."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Pasirinktinis",
+          "description": "Įveskite bet kokį plotį ir aukštį pikseliais arba pasirinkite laisvą kraštinių santykį apkarpymui."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kam reikia paveikslėlių redaktoriaus?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiMegaphoneLine",
+          "title": "Socialinių tinklų valdytojai",
+          "description": "Paruoškite paveikslėlius su tinkamu kraštinių santykiu kiekvienai platformai be grafikos programinės įrangos."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "E. parduotuvių savininkai",
+          "description": "Apkarpykite produktų nuotraukas vienodu kraštinių santykiu profesionaliam katalogo išvaizdai."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Tinklaraštininkai",
+          "description": "Paruoškite antraščių ir straipsnių paveikslėlius su tinkamu kraštinių santykiu."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Interneto kūrėjai",
+          "description": "Greitai apkarpykite paveikslėlius savais matmenimis be grafikos programinės įrangos atidarymo."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Dažnai užduodami klausimai apie paveikslėlių redaktorių",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ar redaktorius reikalauja registracijos?",
+          "answer": "Ne. Įrankis yra visiškai nemokamas ir nereikalauja prisijungimo nei registracijos. Paveikslėlis apdorojamas jūsų naršyklėje – nesiunčiamas į serverį.",
+          "answerSchemaText": "Ne. Įrankis nemokamas ir nereikalauja registracijos. Paveikslėlis apdorojamas naršyklėje."
+        },
+        {
+          "question": "Kokie paveikslėlių formatai palaikomi?",
+          "answer": "Redaktorius palaiko JPG, PNG ir WebP formatus. Apkarpytą paveikslėlį galima atsisiųsti PNG arba JPG formatu.",
+          "answerSchemaText": "JPG, PNG ir WebP. Atsisiuntimas PNG arba JPG formatu."
+        },
+        {
+          "question": "Ar galiu įvesti savo matmenis pikseliais?",
+          "answer": "Taip. Be paruoštų socialinių tinklų formatų galite įvesti bet kokį plotį ir aukštį pikseliais arba pasirinkti pasirinktinį kraštinių santykį apkarpymui.",
+          "answerSchemaText": "Taip. Galite įvesti savo matmenis pikseliais arba pasirinktinį kraštinių santykį."
+        },
+        {
+          "question": "Ar paveikslėlis siunčiamas į serverį?",
+          "answer": "Ne. Visas apdorojimas vyksta jūsų naršyklėje. Paveikslėlis nesaugomas ir nesiunčiamas niekur. Uždarius puslapį visi duomenys ištrinami iš atminties.",
+          "answerSchemaText": "Ne. Paveikslėlis apdorojamas naršyklėje. Nesiunčiamas į serverį."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Peržiūrėkite kitus įrankius"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

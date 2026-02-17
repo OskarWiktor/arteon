@@ -1,0 +1,189 @@
+{
+  "toolKey": "metaCounter",
+  "locale": "fi",
+  "metadata": {
+    "title": "Ilmainen meta-otsikon ja -kuvauksen tarkistus – Leveys pikseleinä",
+    "description": "Tarkista meta-otsikon ja -kuvauksen pituus merkkeinä ja pikseleinä. Googlen hakutulosesikatselu auttaa välttämään katkenneita pätkien. Ilman rekisteröitymistä,",
+    "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+    "path": "/fi/tyokalut/meta-otsikko-ja-kuvaus-tarkistus"
+  },
+  "hero": {
+    "title": "Tarkista sivun otsikon ja kuvauksen pituus Googlessa",
+    "description": "Syötä otsikko ja kuvaus, ja työkalu laskee merkkien ja sanojen määrän, leveyden pikseleinä ja näyttää, onko pituus suositeltujen SEO-käytäntöjen mukainen.",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/meta-otsikko-ja-kuvaus-tarkistus",
+      "label": "Meta-otsikon ja -kuvauksen tarkistus"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Ilmainen meta-otsikon ja -kuvauksen pituuden tarkistus",
+      "alternateName": ["Meta-otsikon ja -kuvauksen tarkistus Google-esikatselulla", "Google SERP -esikatselu", "SEO-otsikon leveyden tarkistus pikseleinä"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "SEOTool",
+      "description": "Ilmainen meta-otsikon ja -kuvauksen pituuden tarkistus. Tarkistaa merkkien ja sanojen määrän sekä leveyden pikseleinä. Näyttää esikatselun siitä, miten otsikko ja kuvaus näkyvät Googlen hakutuloksissa.",
+      "featureList": [
+        "Meta-otsikon merkkilaskuri",
+        "Meta-kuvauksen merkkilaskuri",
+        "Leveyden mittaus pikseleinä (vastaa Googlea)",
+        "Otsikon ja kuvauksen sanalaskuri",
+        "Googlen hakutulosten esikatselu",
+        "Värikoodattu pituusarvio (liian lyhyt / hyvä / liian pitkä)",
+        "Varoitus otsikon ja kuvauksen katkaisusta",
+        "Optimaalisen pituuden suositus",
+        "Paikallinen käsittely selaimessa"
+      ]
+    },
+    "howTo": {
+      "name": "Näin tarkistat meta-otsikon ja -kuvauksen pituuden",
+      "description": "Tarkista meta-otsikon ja -kuvauksen pituus pikseleinä ja merkkeinä.",
+      "totalTime": "PT3M",
+      "steps": [
+        {
+          "name": "Syötä meta-otsikko",
+          "text": "Liitä tai kirjoita sivun otsikko Meta Title -kenttään. Työkalu laskee automaattisesti merkkien ja sanojen määrän sekä leveyden pikseleinä."
+        },
+        {
+          "name": "Syötä meta-kuvaus",
+          "text": "Lisää sivun kuvaus Meta Description -kenttään. Näet samat mittaustulokset."
+        },
+        {
+          "name": "Tarkista Google-esikatselu",
+          "text": "Katso, miltä otsikko ja kuvaus näyttävät simuloiduissa Googlen hakutuloksissa."
+        },
+        {
+          "name": "Säädä suositusten mukaan",
+          "text": "Jos tila näyttää Liian lyhyt tai Liian pitkä, muokkaa tekstiä ja seuraa muutoksia reaaliajassa."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Mitä ovat meta-otsikko ja meta-kuvaus?",
+      "html": "<p class=\"text-mid\">Meta-otsikko ja meta-kuvaus ovat kaksi lyhyttä tekstiä, jotka kuvaavat verkkosivun sisältöä. Ne eivät näy suoraan sivulla, mutta näkyvät Googlen hakutuloksissa otsikkona (sininen linkki) ja kuvauksena (harmaa teksti otsikon alla).</p><p class=\"text-mid mt-3\">Hyvin kirjoitetut meta-tunnisteet toimivat sivun mainoksena hakutuloksissa – ne herättävät huomion ja lisäävät klikkauksen todennäköisyyttä. Huonosti kirjoitetut tai katkaistut tunnisteet voivat karkottaa klikkaajat, vaikka itse sivu olisi arvokas.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Näin käytät meta-otsikon ja -kuvauksen tarkistusta",
+      "description": "Meta-tunnisteiden pituuden tarkistaminen kestää minuutin:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiPencilLine",
+          "title": "1. Syötä sivun otsikko",
+          "description": "Liitä tai kirjoita meta-otsikko ensimmäiseen kenttään. Työkalu näyttää välittömästi kolme mittaustulosta: merkkien ja sanojen määrä sekä leveys pikseleinä."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Syötä sivun kuvaus",
+          "description": "Lisää meta-kuvaus toiseen kenttään. Näet samat mittaustulokset."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "3. Tarkista esikatselu",
+          "description": "Oikealla (työpöytä) tai alla (mobiili) näet esikatselun siitä, miltä otsikko ja kuvaus näyttävät Googlen hakutuloksissa."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "4. Säädä suositusten mukaan",
+          "description": "Jos tila näyttää Liian lyhyt tai Liian pitkä, muokkaa tekstiä. Muutokset näkyvät välittömästi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kuinka monta merkkiä meta-otsikossa ja -kuvauksessa pitäisi olla?",
+      "html": "<p class=\"text-mid mb-4\">Google katkaisee liian pitkät otsikot ja kuvaukset. Alla on suositellut vaihteluvälit, jotka vähentävät katkaistun tekstin riskia hakutuloksissa.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Elementti</th><th class=\"py-2 pr-4 font-semibold\">Merkit</th><th class=\"py-2 pr-4 font-semibold\">Pikselit</th><th class=\"py-2 font-semibold\">Huomautukset</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta-otsikko</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 merkkiä</td><td class=\"py-2 pr-4 whitespace-nowrap\">enintään ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Tärkein avainsana ensin. Brändi viimeisenä.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta-kuvaus</td><td class=\"py-2 pr-4 whitespace-nowrap\">120–160 merkkiä</td><td class=\"py-2 pr-4 whitespace-nowrap\">enintään ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">Tilaa 2–3 lyhyelle lauseelle. Päätä toimintakehotukseen.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Nämä ovat likimmääräisiä arvoja – Google ei julkaise tarkkoja rajoja ja voi muuttaa niitä laitteen ja hakukontekstin mukaan.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kenelle meta-tunnisteen tarkistus on tarkoitettu?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Verkkosivuston ja verkkokaupan omistajat",
+          "description": "Tarkista, etteivät otsikot ja kuvaukset katkea Googlen tuloksissa ennen uuden sivun tai tuotteen julkaisua."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "SEO-asiantuntijat",
+          "description": "Testaa eri versioita otsikoista ja kuvauksista, tarkista hakutulosten esikatselu ja vahvista suositusten noudattaminen."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Tekstinkirjoittajat",
+          "description": "Kirjoita otsikot ja kuvaukset, jotka mahtuvat rajoihin ja tukevat klikkaamista."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Verkkokehittäjät",
+          "description": "Vahvista meta-tunnisteet ennen sivun vientiä tuotantoon."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset meta-otsikon ja -kuvauksen tarkistuksesta",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Miksi työkalu näyttää leveyden pikseleinä eikä vain merkkien määrää?",
+          "answer": "Eri merkeillä on eri leveys. Kirjain &quot;i&quot; vie paljon vähemmän tilaa kuin &quot;m&quot; tai &quot;W&quot;. Google katkaisee otsikot ja kuvaukset pikselileveyden, ei merkkien määrän perusteella.",
+          "answerSchemaText": "Google katkaisee pikselileveyden, ei merkkien määrän perusteella. Eri merkeillä on eri leveys."
+        },
+        {
+          "question": "Näyttääkö Google aina meta-otsikon ja -kuvauksen?",
+          "answer": "Ei aina. Google voi muuttaa näytettyä otsikkoa tai kuvausta, jos se löytää jotain paremmin käyttäjän hakua vastaavaa. Hyvin kirjoitetut meta-tunnisteet lisäävät todennäköisyyttä, että Google käyttää niitä, mutta 100 % takuuta ei ole.",
+          "answerSchemaText": "Ei aina. Google voi muuttaa näytettyä otsikkoa tai kuvausta hakua paremmin vastaavaksi."
+        },
+        {
+          "question": "Mikä on meta-otsikon ja meta-kuvauksen optimaalinen pituus?",
+          "answer": "Meta-otsikon tulisi olla noin 50–60 merkkiä (enintään ~580 pikseliä leveydeltään). Meta-kuvaus toimii parhaiten 120–160 merkillä (enintään ~920 pikseliä). Nämä ovat likimmääräisiä arvoja – Google ei julkaise tarkkoja rajoja.",
+          "answerSchemaText": "Meta-otsikko: 50–60 merkkiä (~580px). Meta-kuvaus: 120–160 merkkiä (~920px). Likimmääräisiä arvoja."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tutustu muihin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

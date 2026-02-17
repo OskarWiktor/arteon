@@ -295,7 +295,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
               size: 'medium',
               backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
               btnLabel: 'Zobacz ofertę',
-              btnLink: '/uslugi/strony-internetowe',
+              btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Projekt logo',

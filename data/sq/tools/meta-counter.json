@@ -3,7 +3,7 @@
   "locale": "sq",
   "metadata": {
     "title": "Kontrollues meta titull dhe përshkrim falas – Gjerësi në pikselë",
-    "description": "Kontrolloni gjatësinë e meta titullit dhe përshkrimit në karaktere dhe pikselë. Parashikimi Google SERP ju ndihmon të shmangni fragmentet e prera. Pa regjistrim, lokalisht në shfletues.",
+    "description": "Kontrolloni gjatësinë e meta titullit dhe përshkrimit në karaktere dhe pikselë. Parashikimi Google SERP ju ndihmon të shmangni fragmentet e prera.",
     "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
     "path": "/sq/mjetet/kontrollues-meta-titull-dhe-pershkrim"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/sq/mjetet", "label": "Mjetet" },
-    "third": { "href": "/sq/mjetet/kontrollues-meta-titull-dhe-pershkrim", "label": "Kontrollues meta titull dhe përshkrim" }
+    "second": {
+      "href": "/sq/mjetet",
+      "label": "Mjetet"
+    },
+    "third": {
+      "href": "/sq/mjetet/kontrollues-meta-titull-dhe-pershkrim",
+      "label": "Kontrollues meta titull dhe përshkrim"
+    }
   },
   "schemas": {
     "software": {
@@ -40,21 +46,39 @@
       "description": "Kontrolloni gjatësinë e meta titullit dhe përshkrimit në pikselë dhe karaktere.",
       "totalTime": "PT3M",
       "steps": [
-        { "name": "Shkruani meta titullin", "text": "Ngjitni ose shkruani titullin e faqes në fushën Meta Title. Mjeti numëron automatikisht karakteret, fjalët dhe gjerësinë në pikselë." },
-        { "name": "Shkruani meta përshkrimin", "text": "Shtoni përshkrimin e faqes në fushën Meta Description. Do të shihni të njëjtat metrika." },
-        { "name": "Kontrolloni parashikimin Google", "text": "Shikoni si shfaqen titulli dhe përshkrimi në rezultatet e simuluara të kërkimit Google." },
-        { "name": "Rregulloni sipas rekomandimeve", "text": "Nëse statusi tregon Shumë e shkurtër ose Shumë e gjatë, rregulloni tekstin dhe ndiqni ndryshimet në kohë reale." }
+        {
+          "name": "Shkruani meta titullin",
+          "text": "Ngjitni ose shkruani titullin e faqes në fushën Meta Title. Mjeti numëron automatikisht karakteret, fjalët dhe gjerësinë në pikselë."
+        },
+        {
+          "name": "Shkruani meta përshkrimin",
+          "text": "Shtoni përshkrimin e faqes në fushën Meta Description. Do të shihni të njëjtat metrika."
+        },
+        {
+          "name": "Kontrolloni parashikimin Google",
+          "text": "Shikoni si shfaqen titulli dhe përshkrimi në rezultatet e simuluara të kërkimit Google."
+        },
+        {
+          "name": "Rregulloni sipas rekomandimeve",
+          "text": "Nëse statusi tregon Shumë e shkurtër ose Shumë e gjatë, rregulloni tekstin dhe ndiqni ndryshimet në kohë reale."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Çfarë janë meta titulli dhe meta përshkrimi?",
       "html": "<p class=\"text-mid\">Meta titulli dhe meta përshkrimi janë dy tekste të shkurtra që përshkruajnë përmbajtjen e një faqeje interneti. Ato nuk shfaqen drejtpërdrejt në faqe, por dalin në rezultatet e kërkimit të Google si titulli (lidhja blu) dhe përshkrimi (teksti gri poshtë titullit).</p><p class=\"text-mid mt-3\">Meta etiketat e shkruara mirë funksionojnë si një reklamë për faqen tuaj në rezultatet e kërkimit – tërheqin vëmendjen dhe rrisin mundësinë e klikimit. Etiketat e shkruara keq ose të prera mund të dekurajojnë klikimin, edhe nëse vetë faqja është e vlefshme.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Si të përdorni kontrolluesin e meta titullit dhe përshkrimit",
@@ -66,7 +90,11 @@
           "title": "1. Shkruani titullin e faqes",
           "description": "Ngjitni ose shkruani meta titullin në fushën e parë. Mjeti tregon menjëherë tre metrika: numrin e karaktereve, fjalëve dhe gjerësinë në pikselë."
         },
-        { "icon": "RiFileTextLine", "title": "2. Shkruani përshkrimin e faqes", "description": "Shtoni meta përshkrimin në fushën e dytë. Do të shihni të njëjtat metrika." },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Shkruani përshkrimin e faqes",
+          "description": "Shtoni meta përshkrimin në fushën e dytë. Do të shihni të njëjtat metrika."
+        },
         {
           "icon": "RiEyeLine",
           "title": "3. Kontrolloni parashikimin",
@@ -79,13 +107,19 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Sa karaktere duhet të ketë meta titulli dhe përshkrimi?",
       "html": "<p class=\"text-mid mb-4\">Google pret titujt dhe përshkrimet që janë shumë të gjata. Më poshtë janë intervalet e rekomanduara që zvogëlojnë rrezikun e tekstit të prerë në rezultatet e kërkimit.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Elementi</th><th class=\"py-2 pr-4 font-semibold\">Karaktere</th><th class=\"py-2 pr-4 font-semibold\">Pikselë</th><th class=\"py-2 font-semibold\">Shënime</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta titull</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 karaktere</td><td class=\"py-2 pr-4 whitespace-nowrap\">deri ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Fjalët kyçe më të rëndësishme së pari. Marka në fund.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta përshkrim</td><td class=\"py-2 pr-4 whitespace-nowrap\">120–160 karaktere</td><td class=\"py-2 pr-4 whitespace-nowrap\">deri ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">Nxë 2–3 fjali të shkurtra. Përfundoni me një thirrje për veprim.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Këto janë vlera të përafërta – Google nuk publikon kufij të saktë dhe mund t'i rregullojë ato në varësi të pajisjes dhe kontekstit të kërkimit.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Për kë është kontrollues i meta etiketave?",
@@ -101,11 +135,22 @@
           "title": "Specialistët SEO",
           "description": "Testoni versione të ndryshme të titujve dhe përshkrimeve, kontrolloni parashikimin e rezultateve të kërkimit dhe verifikoni përputhjen me rekomandimet."
         },
-        { "icon": "RiEditLine", "title": "Copywriterët", "description": "Shkruani tituj dhe përshkrime që përshtaten brenda kufijve dhe mbështesin klikimin." },
-        { "icon": "RiCodeLine", "title": "Zhvilluesit e uebit", "description": "Verifikoni meta etiketat para se faqja të kalojë në prodhim." }
+        {
+          "icon": "RiEditLine",
+          "title": "Copywriterët",
+          "description": "Shkruani tituj dhe përshkrime që përshtaten brenda kufijve dhe mbështesin klikimin."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Zhvilluesit e uebit",
+          "description": "Verifikoni meta etiketat para se faqja të kalojë në prodhim."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Pyetjet më të shpeshta për kontrolluesin e meta titullit dhe përshkrimit",
@@ -128,8 +173,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Zbuloni mjete të tjera" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Zbuloni mjete të tjera"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

@@ -27,11 +27,11 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
   title: 'Libreng mga kasangkapan | Larawan, SEO, kulay, favicon',
-  description: '10 libreng kasangkapan: WebP converter, favicon generator, text counter, color extractor, at QR code. Para sa website, social media, at print. Walang registration.',
+  description: '10 libreng kasangkapan: WebP converter, favicon generator, text counter, color extractor, at QR code. Para sa website at social media.',
   alternates: getToolsIndexAlternates('tl'),
   openGraph: {
     title: 'Libreng mga kasangkapan | Larawan, SEO, kulay, favicon',
-    description: '10 libreng kasangkapan: WebP converter, favicon generator, text counter, color extractor, at QR code. Para sa website, social media, at print. Walang registration.',
+    description: '10 libreng kasangkapan: WebP converter, favicon generator, text counter, color extractor, at QR code. Para sa website at social media.',
     url: toAbsoluteUrl('/tl/mga-kasangkapan'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -42,7 +42,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Libreng mga kasangkapan',
-  description: '10 libreng kasangkapan: WebP converter, favicon generator, text counter, color extractor, at QR code. Para sa website, social media, at print. Walang registration.',
+  description: '10 libreng kasangkapan: WebP converter, favicon generator, text counter, color extractor, at QR code. Para sa website at social media.',
   url: toAbsoluteUrl('/tl/mga-kasangkapan'),
   inLanguage: 'tl',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },

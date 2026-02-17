@@ -105,6 +105,12 @@ export function getToolSoftwareSchema(opts: {
           sv: 'SEK',
           sq: 'ALL',
           da: 'DKK',
+          no: 'NOK',
+          fi: 'EUR',
+          sk: 'EUR',
+          hr: 'EUR',
+          lt: 'EUR',
+          sl: 'EUR',
         };
         return m[opts.locale] ?? 'USD';
       })(),

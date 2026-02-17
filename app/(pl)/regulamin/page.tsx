@@ -14,6 +14,7 @@ export const metadata = {
     description: 'Zasady współpracy, płatności, prawa autorskie, reklamacje i wsparcie - regulamin świadczenia usług Arteon.',
     url: toAbsoluteUrl('/regulamin'),
     type: 'website',
+    images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
   },
 };
 

@@ -1,0 +1,249 @@
+{
+  "toolKey": "colorPalette",
+  "locale": "fi",
+  "metadata": {
+    "title": "Ilmainen väripalettien generaattori – 9 palettia yhdestä väristä",
+    "description": "Luo 9 väripalettia perusväristä: monokromaattinen, komplementaarinen, triadinen, pastelli ja muita. Kopioi HEX-koodit yhdellä napsautuksella.",
+    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "path": "/fi/tyokalut/varipaletti-generaattori"
+  },
+  "hero": {
+    "title": "Väripalettien generaattori",
+    "description": "Syötä perusväri, ja työkalu luo 9 harmonista väripalettia: monokromaattinen, komplementaarinen, triadinen, pastelli ja muita. Jokainen väri voidaan kopioida HEX-koodillaan.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/varipaletti-generaattori",
+      "label": "Väripalettien generaattori"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Väripalettien generaattori",
+      "alternateName": ["Väriskeemojen generaattori", "Värigeneraattori", "Värien sovitustyökalu", "Väriharmonian generaattori"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorPaletteGenerator",
+      "description": "Ilmainen väripalettien generaattori. Syötä HEX-väri, ja työkalu luo 9 skeemaa: monokromaattinen, analoginen, komplementaarinen, triadinen, jaettu komplementaarinen, pastelli, tumma, tonaalinen ja minimalistinen.",
+      "featureList": [
+        "Monokromaattinen skeema – yhden värin sävyjä",
+        "Analoginen skeema – väripyörällä vierekkiset värit",
+        "Komplementaarinen skeema – vastakkaiset värit",
+        "Triadinen skeema – 3 väriä tasavälein",
+        "Jaettu komplementaarinen skeema",
+        "Pastellipaletti – pehmeät, himmennetyt sävyt",
+        "Tumma paletti – syvät värit tummiin teemoihin",
+        "Tonaalinen paletti – yhden värin kirkkaustasoja",
+        "Minimalistinen paletti – voimakas korostus ja neutraalit värit",
+        "Perusväri HEX-muodossa",
+        "Värinvalitsin visuaaliseen valintaan",
+        "Satunnainen aloitusväri",
+        "Kopioi HEX-koodi leikepöydälle",
+        "HSL-arvo näkyy jokaisessa värissä",
+        "Paikallinen käsittely selaimessa"
+      ]
+    },
+    "howTo": {
+      "name": "Näin luot väripaletin perusväristä",
+      "description": "Näin luot 9 väripalettia perusväristä: monokromaattinen, komplementaarinen, triadinen, pastelli ja muita.",
+      "steps": [
+        {
+          "name": "Valitse perusväri",
+          "text": "Syötä HEX-koodi tekstikenttään tai käytä värinvalitsinta visuaaliseen valintaan."
+        },
+        {
+          "name": "Vahvista väri",
+          "text": "Vahvista valittu väri Update Color -painikkeella – työkalu luo paletit perusväristäsi."
+        },
+        {
+          "name": "Selaa paletteja",
+          "text": "Työkalu luo automaattisesti 9 erilaista palettia: monokromaattinen, analoginen, komplementaarinen, triadinen, jaettu komplementaarinen, pastelli, tumma, tonaalinen ja minimalistinen."
+        },
+        {
+          "name": "Kopioi värit",
+          "text": "Jokaisen värin vieressä on Kopioi-painike – HEX-koodi kopioituu järjestelmän leikepöydälle."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miksi luoda väripaletti?",
+      "html": "<p class=\"text-mid\">Yhtenäinen väripaletti on jokaisen visuaalisen projektin perusta – verkkosivuista logoihin ja painotuotteisiin. Yhteensopivien värien manuaalinen valinta vaatii väriteorian tuntemusta. Generaattori automatisoi tämän prosessin: syötät perusvärin (esim. logon värin), ja työkalu luo 9 värisarjaa hyväksi havaituilla väriharmoniaskeemoilla.</p><p class=\"text-mid mt-3\">Jokaisella luodulla värillä on oma HEX-koodinsa (esim. #4F6BF5) ja HSL-arvo (hue, saturation, lightness). HEX-koodi voidaan liittää suoraan CSS:ään, Figmaan, Canvaan tai mihin tahansa grafiikkasovellukseen.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Näin käytät väripalettien generaattoria",
+      "description": "Koko prosessi kestää vain muutaman sekunnin:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Syötä perusväri",
+          "description": "Syötä HEX-koodi (esim. #4F6BF5) tekstikenttään tai valitse väri värinvalitsimesta. Voit myös käyttää Satunnainen väri -painiketta."
+        },
+        {
+          "title": "2. Vahvista valintasi",
+          "description": "Update Color -painiketta napsauttamalla työkalu luo automaattisesti 9 palettia eri väriharmoniaskeemoilla."
+        },
+        {
+          "title": "3. Kopioi tarvitsemasi värit",
+          "description": "Jokaisen värin vieressä on Kopioi-painike – HEX-koodi kopioituu leikepöydälle ja voidaan liittää suoraan projektiin."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mitkä väriskeemoja työkalu luo?",
+      "description": "Generaattori luo 9 tyyppistä palettia – kukin perustuu eri väriteorian periaatteeseen:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiStackLine",
+          "title": "Monokromaattinen paletti",
+          "description": "Useita yhden värin sävyjä – vaaleasta tummaan. Kaikilla väreillä on sama sävy väripyörällä, ja ne eroavat vain kirkkaudessa. Toimii hyvin elegantissa ja minimalistisessa muotoilussa."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Analoginen paletti",
+          "description": "Väripyörällä vierekkäiset värit (siirrettynä n. 30° molemmille puolille perusväristä). Luo harmonisia ja pehmeäitä värisiirtymiä."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Komplementaarinen paletti",
+          "description": "Perusväri ja vastakkainen väri väripyörällä (180° siirtymä). Luo voimakkaan visuaalisen kontrastin. Hyödyllinen, kun elementin tulee herättää huomiota."
+        },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Triadinen paletti",
+          "description": "Kolme väriä 120° välein väripyörällä – muodostavat tasasivuisen kolmion. Dynaaminen ja monipuolinen yhdistelmä."
+        },
+        {
+          "icon": "RiCursorLine",
+          "title": "Jaettu komplementaarinen paletti",
+          "description": "Pehmeämpi versio komplementaarisesta paletista. Yhden vastakkaisen värin sijaan käytetään kahta väriä, jotka on siirretty n. 30° komplementista."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Pastellipaletti",
+          "description": "Sama sävy vähennetyllä kylläisyydellä ja lisätyllä kirkkaudella – pehmeät, hillityt värit. Suosittu kosmetiikassa, lastenmuodissa ja ravintola-alalla."
+        },
+        {
+          "icon": "RiMoonLine",
+          "title": "Tumma paletti",
+          "description": "Perusväri korkealla kylläisyydellä ja vähennetyllä kirkkaudella – syvät, voimakkaat värit. Hyödyllinen tummiin verkkosivuteemoihin ja premium-brändimateriaaleihin."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Tonaalinen paletti",
+          "description": "Useita kirkkaustasoja yhdestä väristä – hyvin vaaleasta tummaan. Hyödyllinen käyttöliittymien rakentamiseen, kun sama väri tarvitsee eri variantteja."
+        },
+        {
+          "icon": "RiContractLeftRightLine",
+          "title": "Minimalistinen paletti",
+          "description": "Yksi voimakas värikorostus ja useita hyvin vaaleita neutraaleja värejä. Koko paletti pysyy rauhallisena. Toimii hyvin modernissa käyttöliittymissä, joissa on paljon valkoista tilaa."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Mihin väripalettien generaattori perustuu?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° väripyörällä</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">Kaikki paletit luodaan perusvärin matemaattisella muunnoksella HSL-väriavaruudessa. HSL kuvaa väriä kolmella arvolla: hue (H) on sijainti väripyörällä (0°–360°), saturation (S) määrittää värin voimakkuuden ja lightness (L) – kuinka vaalea tai tumma väri on.</p><p class=\"text-mid mt-3\">Komplementaariset, triadiset ja jaetut komplementaariset paletit perustuvat väripyörän geometriaan – värit sijoitetaan tasaisilla kulmaväleillä, mikä luo visuaalisen tasapainon. Monokromaattiset, pastelli- ja tummat paletit muuttavat vain kirkkautta ja kylläisyyttä säilyttäen saman sävyn.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Missä luotuja väripaletteja voi käyttää",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Brändin visuaalinen identiteetti",
+          "description": "Valitse harmoniset värit olemassa olevaan logoon tai rakenna brändin väripaletti alusta alkaen – käyntikortteihin, kirjelomakkeisiin ja markkinointimateriaaleihin."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Verkkosivustot",
+          "description": "Aseta pääväri, korostus ja taustan sävyt. Kopioidut HEX-koodit liitetään suoraan CSS:ään tai teeman määrityksiin."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Sovellusten käyttöliittymät",
+          "description": "Tonaalinen paletti tarjoaa kirkkauden variantteja yhdestä väristä – vaaleampia taustoille, tummempia tekstille, keskisävyjä reunoille ja vuorovaikutustiloille."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Sosiaalisen median grafiikka",
+          "description": "Yhtenäiset värit julkaisuihin, tarinoihin ja profiilikansiin. Analogiset tai pastellipaletit toimivat hyvin, kun halutaan yhtenäinen, tunnistettava tyyli."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset väripalettien generaattorista",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Missä muodossa perusväri pitää syöttää?",
+          "answer": "Generaattori hyväksyy värit HEX-muodossa – lyhennettynä (esim. #F50) ja täydellisinä (esim. #FF5500). Tekstikentän vieressä on värinvalitsin, jolla värin voi valita visuaalisesti. Luodut paletit näyttävät HEX-koodin ja HSL-arvon jokaiselle värille.",
+          "answerSchemaText": "Generaattori hyväksyy HEX-värit (#RGB tai #RRGGBB). Jokaisella luodulla värillä on HEX-koodi ja HSL-arvo."
+        },
+        {
+          "question": "Kuinka monta väriä jokaisessa paletissa on?",
+          "answer": "Jokainen paletti sisältää 4–6 väriä. Määrä riippuu skeematyypistä – monokromaattiset ja tonaaliset paletit luovat enemmän sävyjä, kun taas komplementaariset ja triadiset paletit keskittyvät harvempiin kontrastivareihin.",
+          "answerSchemaText": "Jokainen paletti sisältää 4–6 väriä skeematyypistä riippuen."
+        },
+        {
+          "question": "Voinko käyttää luotuja paletteja kaupallisesti?",
+          "answer": "Kyllä. Luotuja väripaletteja voi käyttää missä tahansa projektissa – kaupallisessa ja ei-kaupallisessa, ilman lisenssirajoituksia.",
+          "answerSchemaText": "Kyllä, luotuja paletteja voi käyttää rajoituksetta kaupallisissa ja ei-kaupallisissa projekteissa."
+        },
+        {
+          "question": "Vaatiiko väripalettien generaattori kirjautumisen tai maksun?",
+          "answer": "Generaattori on täysin ilmainen eikä vaadi kirjautumista tai rekisteröitymistä. Värit luodaan paikallisesti selaimessa – tietoja ei lähetetä ulkoisille palvelimille.",
+          "answerSchemaText": "Generaattori on ilmainen eikä vaadi kirjautumista. Värit luodaan paikallisesti selaimessa."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tutustu muihin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

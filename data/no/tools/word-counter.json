@@ -1,0 +1,232 @@
+{
+  "toolKey": "wordCounter",
+  "locale": "no",
+  "metadata": {
+    "title": "Gratis ord- og tegnteller – Sjekk tekstlengde for SEO",
+    "description": "Tell ord, tegn, avsnitt og lesetid umiddelbart. Sjekk optimal tekstlengde for SEO – blogginnlegg, produktside, landingsside. Uten registrering,",
+    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "path": "/no/verktoy/ord-og-tegnteller"
+  },
+  "hero": {
+    "title": "Ord- og tegnteller med lengdevurdering",
+    "description": "Lim inn tekst, velg sidetype, og verktøyet viser antall ord, tegn, avsnitt og vurderer om lengden passer til den valgte innholdstypen.",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/ord-og-tegnteller",
+      "label": "Ord- og tegnteller"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Gratis ord- og tegnteller",
+      "alternateName": ["Ordteller med tekstlengdevurdering", "Tegnteller", "Lesetidskalkulator", "Ordteller for SEO"],
+      "applicationSubCategory": "TextApplication",
+      "description": "Gratis ord- og tegnteller. Sjekker antall ord, tegn, avsnitt og estimert lesetid. Vurderer tekstlengden for forskjellige sidetyper.",
+      "featureList": [
+        "Antall ord",
+        "Antall tegn med og uten mellomrom",
+        "Antall avsnitt",
+        "Estimert lesetid",
+        "Lengdevurdering for forskjellige sidetyper",
+        "Anbefalte intervaller for: produktbeskrivelse, tjenesteside, forside, landingsside, blogginnlegg, guide",
+        "Kopier rapport til utklippstavle"
+      ]
+    },
+    "howTo": {
+      "name": "Slik bruker du ord- og tegntelleren",
+      "description": "Sjekk tekstlengden og vurder om den passer til en bestemt sidetype.",
+      "steps": [
+        {
+          "name": "Velg sidetype",
+          "text": "Velg fra listen hvilken type side du skriver for. Hver type har sitt eget anbefalte ordintervall."
+        },
+        {
+          "name": "Lim inn tekst",
+          "text": "Lim inn eller skriv tekst i tekstfeltet. Verktøyet teller automatisk ord, tegn, avsnitt og beregner lesetid."
+        },
+        {
+          "name": "Sjekk vurderingen",
+          "text": "Se på den fargekodede indikatoren og status. Grønn betyr riktig lengde, gul for kort, rød for lang."
+        },
+        {
+          "name": "Kopier rapporten",
+          "text": "Knappen Kopier rapport kopierer en sammenfatning med all statistikk og lengdevurdering til utklippstavlen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Gratis ordteller – tell og vurder tekstlengden",
+      "html": "<p class=\"text-mid\">Dette verktøyet lar deg raskt sjekke lengden på en hvilken som helst tekst. Lim inn innhold, og telleren teller ord, tegn og avsnitt. Du ser også hvor mange minutter det tar å lese og om lengden passer til den valgte sidetypen.</p><p class=\"text-mid mt-3\">Hver sidetype tjener et annet formål – en produktbeskrivelse besvarer kjøperens spørsmål, et blogginnlegg utforsker et emne i dybden, og en tjenesteside forklarer hva kunden får. Telleren viser intervaller for hver av disse typene basert på analyse av vellykket innhold.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Slik bruker du ord- og tegntelleren",
+      "description": "Å sjekke tekstlengden tar under ett minutt:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiListCheck2",
+          "title": "1. Velg sidetype",
+          "description": "Velg fra listen hvilken type side du skriver for. Hver type har sitt eget anbefalte ordintervall."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Lim inn tekst",
+          "description": "Lim inn eller skriv tekst i det store tekstfeltet til høyre. Verktøyet teller umiddelbart ord, tegn, avsnitt og beregner lesetid."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "3. Sjekk vurderingen",
+          "description": "Se på den fargekodede indikatoren og status. Grønn betyr riktig lengde, gul for kort, rød for lang."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Kopier rapporten",
+          "description": "Knappen Kopier rapport kopierer en sammenfatning med antall ord, tegn, avsnitt, lesetid og lengdevurdering til utklippstavlen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hva telleren måler – ord, tegn, lesetid",
+      "description": "Telleren følger fem nøkkeltall:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiText",
+          "title": "Ord",
+          "description": "Totalt antall ord. Hovedindikator for tekstlengde."
+        },
+        {
+          "icon": "RiSpaceShipLine",
+          "title": "Tegn (med mellomrom)",
+          "description": "Alle tegn inkludert mellomrom. Viktig når CMS har tegngrense."
+        },
+        {
+          "icon": "RiHashtag",
+          "title": "Tegn (uten mellomrom)",
+          "description": "Bare bokstaver, tall og symboler. Noen ganger krevd av trykkerier eller for oversettelsesfakturering."
+        },
+        {
+          "icon": "RiParagraph",
+          "title": "Avsnitt",
+          "description": "Antall tekstblokker atskilt av tomme linjer. Hjelper med å vurdere om teksten har god struktur."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Lesetid",
+          "description": "Lesetidskalkulatoren viser hvor mange minutter det tar å lese teksten ved en gjennomsnittlig hastighet på 200 ord per minutt."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvor mange ord bør teksten ha – optimal lengde for SEO",
+      "html": "<p class=\"text-mid mb-4\">Intervallene nedenfor er basert på analyse av innhold som gjør det bra i søkemotorer. Tekstlengden i seg selv påvirker ikke plasseringen i Google – det som teller er om innholdet besvarer leserens spørsmål.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Sidetype</th><th class=\"py-2 pr-4 font-semibold\">Intervall</th><th class=\"py-2 font-semibold\">Når kortere, når lengre?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Produktbeskrivelse</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Enkelt produkt – 80–150. Komplekst utstyr – 300–400.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Tjenesteside</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Lokal tjeneste – 500–700. B2B-tjeneste med prosess og FAQ – 1 200–1 500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Forside</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Forsiden presenterer nøkkelverdi og leder besøkende videre.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landingsside</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Enkelt tilbud – 600–1 000. Tilbud som krever forklaring – 1 500–2 500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blogginnlegg</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Kort how-to – 1 200–1 500. Detaljert guide – 2 500–3 000.</td></tr><tr><td class=\"py-2 pr-4\">Guide / pillar page</td><td class=\"py-2 pr-4 whitespace-nowrap\">3000–7000 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Komplet ressource der dekker emnet fra flere vinkler.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvem er ordtelleren for?",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiEditLine",
+          "title": "Tekstforfattere og innholdsprodusenter",
+          "description": "Sjekk om teksten er innenfor det anbefalte intervallet for en bestemt sidetype."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Bloggere",
+          "description": "Følg artikkellengden for konsistens. Sjekk lesetiden før publisering."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Nettbutikkeiere",
+          "description": "Verifiser produktbeskrivelser mot tegngrenser på salgsplattformer."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "SEO-spesialister",
+          "description": "Vurder om sidens innhold har optimal lengde sammenlignet med konkurrentene."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Studenter og akademikere",
+          "description": "Sjekk om oppgaven oppfyller det krevde ord- eller tegnkravet."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Oversettere",
+          "description": "Tell tegn uten mellomrom for oversettelsespriser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte spørsmål om ord- og tegntelleren",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Påvirker tekstlengden plasseringen i Google?",
+          "answer": "Tekstlengden i seg selv er ikke en rangeringsfaktor. Google vurderer om innholdet besvarer brukerens spørsmål og om det er verdifullt for dem.",
+          "answerSchemaText": "Tekstlengden er ikke en direkte rangeringsfaktor. Google vurderer innholdets verdi for brukeren."
+        },
+        {
+          "question": "Hvorfor er ordintervallene så brede?",
+          "answer": "Samme sidetype kan kreve forskjellige lengder avhengig av emnets kompleksitet. En enkel produktbeskrivelse er 80–150 ord. En beskrivelse av en bærbar PC er 300–400 ord, fordi kjøperen har flere spørsmål.",
+          "answerSchemaText": "Forskjellene skyldes emnets kompleksitet – et enkelt produkt krever færre ord enn et komplekst."
+        },
+        {
+          "question": "Hvordan fungerer lesetidskalkulatoren?",
+          "answer": "Verktøyet deler antall ord med 200 – den gjennomsnittlige lesehastigheten for normal tekst. Teknisk tekst leses saktere. Resultatet er en omtrentlig verdi.",
+          "answerSchemaText": "Verktøyet antar en gjennomsnittlig lesehastighet på 200 ord per minutt. Det er en omtrentlig verdi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforsk flere verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

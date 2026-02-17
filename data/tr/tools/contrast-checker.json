@@ -3,7 +3,7 @@
   "locale": "tr",
   "metadata": {
     "title": "Ücretsiz Renk Kontrast Kontrolü – WCAG 2.1 Uyumluluğu",
-    "description": "Metin ve arka plan renklerinizin WCAG 2.1'e göre okunabilir olup olmadığını kontrol edin. HEX, RGB veya HSL kodlarını girin, kontrast oranını görün ve erişilebilir kombinasyonlar bulmak için otomatik düzeltme kullanın.",
+    "description": "Metin ve arka plan renklerinizin WCAG 2.1'e göre okunabilir olup olmadığını kontrol edin. HEX, RGB veya HSL kodlarını girin,",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/tr/araclar/renk-kontrast-kontrolu"
   },

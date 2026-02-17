@@ -1,0 +1,353 @@
+{
+  "toolKey": "qrCode",
+  "locale": "fi",
+  "metadata": {
+    "title": "Ilmainen QR-koodigeneraattori – PNG ja SVG, ilman rekisteröitymistä",
+    "description": "Luo QR-koodi verkkosivulle, vCard-kortille, ruokalistalle tai esitteelle muutamassa sekunnissa. Vie PNG- ja SVG-muotoon. Mukauta värejä ja kokoa.",
+    "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
+    "path": "/fi/tyokalut/ilmainen-qr-koodi-generaattori"
+  },
+  "hero": {
+    "title": "QR-koodigeneraattori – ilmainen, ilman rekisteröitymistä",
+    "description": "Luo QR-koodi verkkosivulle, vCard-käyntikortille, sähköpostille, puhelinnumerolle tai tekstille. Mukauta värejä, kokoa ja virheenkorjaustasoa ja lataa sitten valmis PNG- tai SVG-tiedosto.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/ilmainen-qr-koodi-generaattori",
+      "label": "Ilmainen QR-koodigeneraattori"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Ilmainen QR-koodigeneraattori",
+      "alternateName": ["QR-koodin luoja", "vCard QR-koodigeneraattori", "Ilmainen QR-generaattori", "QR-koodityökalu"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "QRCodeGenerator",
+      "description": "Luo QR-koodi verkkosivulle, käyntikortille, ruokalistalle tai esitteelle. Valitse tietotyyppi, mukauta värejä ja kokoa ja lataa sitten PNG- tai SVG-tiedosto.",
+      "featureList": [
+        "QR-koodi URL-osoitteelle (verkkosivut)",
+        "QR-koodi tavalliselle tekstille",
+        "QR-koodi vCard (yhteystiedot)",
+        "QR-koodi sähköpostille (osoite, aihe, sisältö)",
+        "QR-koodi puhelinnumerolle",
+        "Mukautettavat värit koodille ja taustalle",
+        "Koodin koon valinta pikseleinä",
+        "Vienti PNG-muotoon (rasteri)",
+        "Vienti SVG-muotoon (vektori)",
+        "Koodin reaaliaikainen esikatselu",
+        "Paikallinen käsittely selaimessa",
+        "Reed-Solomon-virheenkorjaus"
+      ]
+    },
+    "howTo": {
+      "name": "Näin käytät ilmaista QR-koodigeneraattoria",
+      "description": "Näin luot QR-koodin verkkosivulle, vCard-käyntikortille, sähköpostille tai puhelinumerolle – tietotyypin valinnasta tulostusvalmiiseen tiedoston lataukseen.",
+      "steps": [
+        {
+          "name": "Valitse tietotyyppi",
+          "text": "Päätä, mitä QR-koodin tulee sisältää: URL, teksti, käyntikortti (vCard), sähköposti tai puhelinnumero."
+        },
+        {
+          "name": "Syötä tiedot",
+          "text": "Täytä asiaankuuluvat kentät. URL:lle syötä verkko-osoite; vCard:ille syötä yhteystiedot."
+        },
+        {
+          "name": "Mukauta ulkoasua",
+          "text": "Valitse koko, marginaalit, koodin ja taustan väri sekä virheenkorjaustaso."
+        },
+        {
+          "name": "Lataa koodi",
+          "text": "Valmis QR-koodi voidaan ladata PNG-tiedostona (painoon ja verkkoon) tai SVG-tiedostona (vektori, skaalattava ilman laadun heikkenemistä)."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Mikä on QR-koodi ja miten se toimii?",
+      "html": "<p class=\"text-mid\">QR-koodi (Quick Response) on kaksiulotteinen viivakoodi, joka voidaan skannata puhelimen kameralla. Toisin kuin perinteiset viivakoodit, QR-koodit tallentavat tietoa sekä vaaka- että pystysuunnassa, mikä mahdollistaa enemmän tiedon koodaamisen – jopa n. 3 000 aakkosnumeerista merkkiä.</p><p class=\"text-mid mt-3\">QR-koodin kehitti vuonna 1994 japanilainen Denso Wave (osa Toyota-konsernia) autonosien seurantaan. Nykyään QR-koodeja käytetään laajasti markkinoinnissa, ravintola-alalla, logistiikassa ja yritysviestinnässä.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Näin käytät ilmaista QR-koodigeneraattoria",
+      "description": "QR-koodin luominen kestää vain muutaman sekunnin:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Valitse tietotyyppi",
+          "description": "Valitse, mitä haluat koodata: URL, teksti, vCard-käyntikortti, sähköposti tai puhelinnumero."
+        },
+        {
+          "title": "2. Syötä tiedot",
+          "description": "Täytä asiaankuuluvat kentät – verkko-osoite, yhteystiedot tai viestin sisältö."
+        },
+        {
+          "title": "3. Lataa koodi",
+          "description": "Mukauta ulkoasua (värit, koko, marginaalit) ja lataa PNG- tai SVG-muodossa."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "QR-koodityypit – URL, vCard, sähköposti, puhelin, teksti",
+      "description": "Ilmainen QR-koodigeneraattori tukee viittä tietotyyppiä – kukin hyödyllinen eri tilanteissa:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "URL",
+          "description": "Linkki verkkosivulle. Skannauksen jälkeen puhelin avaa sivun selaimessa. Sopii käyntikortteihin, esitteisiin ja julisteisiin."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Teksti",
+          "description": "Mikä tahansa teksti enintään 3 000 merkkiä. Skannauksen jälkeen puhelin näyttää tekstin näytöllä. Hyödyllinen alennuskupongeille ja lyhyille ohjeille."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "vCard-käyntikortti",
+          "description": "Digitaalinen käyntikortti yhteystiedoilla (nimi, yritys, puhelin, sähköposti, osoite). Skannauksen jälkeen puhelin tarjoaa yhteystiedon tallentamista."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Sähköposti",
+          "description": "Sähköpostiosoite valinnaisella aiheella ja sisällöllä. Skannauksen jälkeen puhelin avaa sähköpostisovelluksen täytetyllä lomakkeella."
+        },
+        {
+          "icon": "RiPhoneLine",
+          "title": "Puhelin",
+          "description": "Puhelinnumero. Skannauksen jälkeen puhelin tarjoaa numeron soittamista. Hyödyllinen asiakaspalveluun ja tukeen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "QR-koodien tekniset ominaisuudet",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kapasiteetti</span><span class=\"text-mid text-sm!\">enintään 4 296 merkkiä</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Virheenkorjaus</span><span class=\"text-mid text-sm!\">7 % – 30 %</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Pienin tulostuskoko</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Pienin kontrasti</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Marginaalit</span><span class=\"text-mid text-sm!\">väh. 4 moduulia</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Teknisten ominaisuuksien tunteminen auttaa luomaan QR-koodin, joka on luettavissa kaikissa olosuhteissa:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tietokapasiteetti</strong> – QR-koodi voi sisältää jopa 7 089 numeroa, 4 296 aakkosnumeerista merkkiä tai 2 953 tavua binääridataa.</li><li><strong>Reed-Solomon-virheenkorjaus</strong> – matemaattinen algoritmi, joka mahdollistaa koodin lukemisen osittaisen vaurion jälkeenkin. Tasot: L (7 %), M (15 %), Q (25 %), H (30 %).</li><li><strong>Marginaalit</strong> – koodin ympärillä oleva valkoinen alue, joka tarvitaan oikeaan skannaukseen. Suositeltava vähimmäismäärä on 4 moduulia.</li><li><strong>Pienin tulostuskoko</strong> – normaaleissa skannausolosuhteissa koodin tulee olla vähintään 2×2 cm.</li><li><strong>Kontrasti</strong> – koodin ja taustan välisen kontrastisuhteen tulee olla vähintään 3:1.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "QR-koodien käyttökohteet – käyntikortit, esitteet, ravintoloiden ruokalistat",
+      "description": "QR-koodeilla on käyttökohteita monilla aloilla ja tilanteissa:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Käyntikortit",
+          "description": "vCard-koodi käyntikortissa mahdollistaa yhteystiedon tallentamisen yhdellä skannauksella, ilman manuaalista tietojen syöttämistä."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Ravintoloiden ja kahviloiden ruokalistat",
+          "description": "QR-koodi pöydällä, joka ohjaa digitaaliseen ruokalistaan. Tyylikäs ratkaisu, joka on yleistynyt COVID-19-pandemian jälkeen."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Esitteet ja julisteet",
+          "description": "QR-koodi linkillä tuotesivulle, ilmoittautumislomakkeeseen tai erikoistarjoukseen."
+        },
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Tuotepakkaukset",
+          "description": "Linkki käyttöohjeeseen, takuukorttiin tai valmistajan verkkosivulle."
+        },
+        {
+          "icon": "RiHospitalLine",
+          "title": "Terveydenhuollon laitokset",
+          "description": "QR-koodi potilaskortissa, joka ohjaa potilasportaaliin tai ajanvarausjärjestelmään."
+        },
+        {
+          "icon": "RiCalendarEventLine",
+          "title": "Tapahtumat ja konferenssit",
+          "description": "Liput QR-koodilla nopeaa sisäänpääsyn varmistamista varten."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs SVG – mikä muoto kannattaa valita painoon?",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG (rasteri)"
+        },
+        {
+          "id": "svg",
+          "name": "SVG (vektori)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Verkko ja sosiaalinen media",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Esitteet ja käyntikortit",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Julisteet ja bannerit (suuri koko)",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Skaalaus ilman laadun heikkenemistä",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Muokkaus grafiikkasovelluksessa",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Pienempi tiedostokoko",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Esitykset",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä QR-koodigeneraattorista erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Paikallinen luonti selaimessa",
+          "description": "Generaattoriin syötettyjä tietoja ei lähetetä palvelimelle – kaikki käsittely tapahtuu laitteellasi."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "Viisi tietotyyppiä yhdessä työkalussa",
+          "description": "URL, teksti, vCard-käyntikortti, sähköposti ja puhelin – jokainen tyyppi luo QR-koodin asiaankuuluvassa standardissa."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "QR-koodin ulkoasun mukauttaminen",
+          "description": "Koodin ja taustan väri, koko pikseleinä, marginaalit ja virheenkorjaustaso – jokaista parametria voi mukauttaa."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Neljä virheenkorjaustasoa",
+          "description": "Reed-Solomon-algoritmi mahdollistaa koodin vauriokestävyyden valinnan – 7 %:sta (L) 30 %:iin (H)."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Reaaliaikainen esikatselu",
+          "description": "Näet tuloksen välittömästi tietojen syöttämisen jälkeen, ilman Luo-painikkeen painamista."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "PNG- ja SVG-vienti",
+          "description": "Lataa koodi käyttötarkoitukseesi sopivassa muodossa."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset QR-koodigeneraattorista",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Vanhenevatko tällä työkalulla luodut QR-koodit?",
+          "answer": "Eivät. Staattisilla QR-koodeilla (joita tämä työkalu luo) ei ole vanhenemisaikaa. Sisältö – esim. URL tai käyntikorttitiedot – koodataan suoraan koodiin. Niin kauan kuin kohdesivu on olemassa, koodi toimii.",
+          "answerSchemaText": "Eivät. Staattisilla QR-koodeilla ei ole vanhenemisaikaa. Sisältö koodataan suoraan koodiin."
+        },
+        {
+          "question": "Voinko muuttaa URL-osoitteen olemassa olevassa QR-koodissa?",
+          "answer": "Staattisissa QR-koodeissa koodattua sisältöä ei voi muuttaa – sinun on luotava uusi koodi uudella osoitteella. Dynaamiset QR-koodit (muokattavissa luomisen jälkeen) vaativat ulkoisen maksullisen palvelun.",
+          "answerSchemaText": "Ei, staattisia QR-koodeja ei voi muokata. Luo uusi koodi eri URL-osoitteella."
+        },
+        {
+          "question": "PNG vai SVG – mikä QR-koodimuoto kannattaa valita painoon?",
+          "answer": "PNG toimii useimpiin tarkoituksiin: verkko, sosiaalinen media, paino A4-kokoon asti. SVG on vektoripohjainen – se voidaan skaalata mihin tahansa kokoon ilman laadun heikkenemistä, ihanteellinen bannereille, kylteille ja suurille mainosmuodoille.",
+          "answerSchemaText": "PNG verkkoon ja tavalliseen painoon. SVG suurille muodoille ja skaalaukseen ilman laadun heikkenemistä."
+        },
+        {
+          "question": "Minkä kokoinen QR-koodi kannattaa valita käyntikorttiin?",
+          "answer": "Painettuun materiaaliin (käyntikortit, esitteet) koodin tulee olla vähintään 2×2 cm, optimaalisesti 3×3 cm. Generaattorissa tämä vastaa 300 px:n resoluutiota normaalilla painolaadulla (300 DPI).",
+          "answerSchemaText": "Vähintään 2×2 cm (300 px 300 DPI:llä). Optimaalisesti 3×3 cm käyntikortteihin."
+        },
+        {
+          "question": "Voinko käyttää luotuja QR-koodeja kaupallisesti?",
+          "answer": "Kyllä. Luotuja QR-koodeja voi vapaasti käyttää missä tahansa projektissa – kaupallisessa ja ei-kaupallisessa, ilman lisenssirajoituksia.",
+          "answerSchemaText": "Kyllä, ilman rajoituksia kaupallisissa ja ei-kaupallisissa projekteissa."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tutustu muihin ilmaisiin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

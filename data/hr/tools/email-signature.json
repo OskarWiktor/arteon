@@ -1,0 +1,221 @@
+{
+  "toolKey": "emailSignature",
+  "locale": "hr",
+  "metadata": {
+    "title": "Besplatni generator potpisa e-pošte – HTML za Gmail i Outlook",
+    "description": "Izradite profesionalni HTML potpis e-pošte bez softvera. Dodajte kontaktne podatke, logotip, poveznice na društvene mreže i kopirajte u Gmail ili Outlook.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
+    "path": "/hr/alati/besplatni-generator-potpisa-e-poste"
+  },
+  "hero": {
+    "title": "Izradite profesionalni HTML potpis e-pošte",
+    "description": "Izradite profesionalni potpis e-pošte u nekoliko minuta. Unesite svoje podatke, odaberite boje i kopirajte gotovi HTML kod u Gmail, Outlook ili drugi klijent e-pošte.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hr/alati",
+      "label": "Alati"
+    },
+    "third": {
+      "href": "/hr/alati/besplatni-generator-potpisa-e-poste",
+      "label": "Generator potpisa e-pošte"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Besplatni generator potpisa e-pošte",
+      "alternateName": ["HTML generator potpisa e-pošte", "Generator podnožja e-pošte"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "EmailSignatureGenerator",
+      "description": "Besplatni generator HTML potpisa e-pošte. Dodajte kontaktne podatke, CTA gumb i profile društvenih mreža, zatim kopirajte gotovi kod u Gmail, Outlook i druge klijente e-pošte.",
+      "featureList": [
+        "Kontaktni podaci (ime, titula, tvrtka)",
+        "Telefon, e-pošta i web adresa",
+        "Logotip ili profilna slika s odabirom oblika i veličine",
+        "Ikone društvenih mreža (12 platformi)",
+        "Prilagodljive boje (tekst, naglasak, pozadina)",
+        "CTA gumb s vlastitim tekstom i poveznicom",
+        "Pregled potpisa u stvarnom vremenu",
+        "Kopiranje HTML koda u međuspremnik",
+        "Preuzimanje potpisa kao HTML datoteka",
+        "Izvoz i uvoz postavki kao JSON datoteka",
+        "Kompatibilnost s Gmailom, Outlookom i Apple Mailom",
+        "Besplatan alat, bez prijave"
+      ]
+    },
+    "howTo": {
+      "name": "Kako koristiti generator potpisa e-pošte",
+      "description": "Kako izraditi profesionalni HTML potpis e-pošte pomoću besplatnog Arteon alata.",
+      "totalTime": "PT5M",
+      "steps": [
+        {
+          "name": "Odaberite raspored potpisa",
+          "text": "Odaberite jedan od osam dostupnih rasporeda."
+        },
+        {
+          "name": "Ispunite kontaktne podatke",
+          "text": "Na kartici Details unesite ime, titulu, tvrtku, e-poštu, telefon i web adresu."
+        },
+        {
+          "name": "Dodajte CTA gumb",
+          "text": "Na kartici Buttons dodajte tekst i URL glavnog gumba."
+        },
+        {
+          "name": "Dodajte poveznice na društvene mreže",
+          "text": "Na kartici Social Media unesite URL adrese svojih profila."
+        },
+        {
+          "name": "Prilagodite izgled",
+          "text": "Na kartici Appearance odaberite temu boja, vrstu pisma i veličinu teksta."
+        },
+        {
+          "name": "Provjerite pregled i kopirajte potpis",
+          "text": "Gumb Copy signature kopira gotovi kod u međuspremnik."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Zašto trebate profesionalni potpis e-pošte?",
+      "html": "<p class=\"text-mid\">Potpis e-pošte (naziva se i podnožje e-pošte) je blok informacija na dnu svake poslane poruke. Sadrži kontaktne podatke, titulu, naziv tvrtke i često poveznicu na web stranicu ili kalendar za zakazivanje termina.</p><p class=\"text-mid mt-3\">Primatelj ne mora tražiti telefonski broj u prethodnim porukama – sve informacije su lako dostupne. Profesionalni potpis e-pošte također pokazuje da obraćate pozornost na detalje i održavate ujednačen korporativni imidž u poslovnoj komunikaciji.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kako koristiti generator potpisa e-pošte",
+      "description": "Izrada profesionalnog potpisa e-pošte traje samo nekoliko minuta:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Unesite podatke",
+          "description": "Ispunite ime, titulu, tvrtku i kontaktne podatke."
+        },
+        {
+          "title": "2. Prilagodite izgled",
+          "description": "Odaberite raspored, boje, dodajte logotip i poveznice na društvene mreže."
+        },
+        {
+          "title": "3. Kopirajte kod",
+          "description": "Gumb Copy signature kopira gotovi kod u međuspremnik. Zalijepite ga u Gmail, Outlook ili drugi klijent e-pošte."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Rasporedi potpisa – koji biste odabrali?",
+      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Raspored potpisa</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div></div>",
+      "html": "<p class=\"text-mid\">Generator nudi osam unaprijed definiranih rasporeda. Svaki raspored prikazuje iste informacije na drugačiji način.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> – klasičan okomiti raspored, pogodan za većinu situacija.</li><li><strong>Top bar</strong> – vodoravna linija odvaja potpis od sadržaja.</li><li><strong>Labels left</strong> – dva stupca: oznake i vrijednosti.</li><li><strong>Centered</strong> – formalan izgled, sadržaj centriran.</li><li><strong>Compact</strong> – sve u jednom retku, minimalna visina.</li><li><strong>Two columns</strong> – podaci lijevo, kontaktne informacije desno.</li><li><strong>Minimalist</strong> – samo osnovne informacije.</li><li><strong>Bottom bar</strong> – obojeni redak s kontaktnim podacima na dnu potpisa.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kako kopirati potpis u Gmail ili Outlook",
+      "description": "Nakon dovršetka potpisa, njegovo dodavanje u klijent e-pošte zahtijeva samo nekoliko koraka:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiClipboardLine",
+          "title": "1. Kopirajte kod",
+          "description": "Gumb Copy signature kopira potpis u međuspremnik kao formatirani HTML, spreman za lijepljenje."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "2. Otvorite postavke potpisa",
+          "description": "U Gmailu: Settings > See all settings > Signature. U Outlooku: File > Options > Mail > Signatures."
+        },
+        {
+          "icon": "RiSaveLine",
+          "title": "3. Zalijepite i spremite",
+          "description": "U polju potpisa koristite Ctrl+V (Windows) ili Cmd+V (Mac). Potpis se prikazuje sa svim bojama i formatiranjem. Spremite promjene."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kome je namijenjen generator potpisa e-pošte?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBriefcaseLine",
+          "title": "Poduzetnici i freelanceri",
+          "description": "Profesionalni potpis u svakoj poruci bez potrebe za grafičkim dizajnerom."
+        },
+        {
+          "icon": "RiTeamLine",
+          "title": "Korporativni timovi",
+          "description": "Svaki zaposlenik izrađuje potpis u istom stilu. Ujednačen identitet u cijeloj tvrtki."
+        },
+        {
+          "icon": "RiHandCoinLine",
+          "title": "Prodavači",
+          "description": "CTA gumb s poveznicom na kalendar ili ponudu povećava vjerojatnost dogovorenih sastanaka."
+        },
+        {
+          "icon": "RiScales3Line",
+          "title": "Odvjetnici, računovođe, liječnici",
+          "description": "Mogućnost dodavanja pravnih napomena, licencnih informacija ili drugih strukovnih podataka."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Često postavljana pitanja o generatoru potpisa e-pošte",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Funkcionira li potpis u Gmailu, Outlooku i Apple Mailu?",
+          "answer": "Da. Potpis izrađen alatom koristi HTML tablice koje se ispravno prikazuju u svim popularnim klijentima e-pošte: Gmail, Outlook (desktop i web), Apple Mail, Thunderbird."
+        },
+        {
+          "question": "Mogu li dodati logotip tvrtke?",
+          "answer": "Da. Na kartici Details unesite URL slike (logotip ili profilna slika). Slika bi trebala biti kvadratna (najmanje 120x120 px) i javno dostupna na internetu."
+        },
+        {
+          "question": "Kako se potpis kopira u klijent e-pošte?",
+          "answer": "Gumb Copy signature ispod pregleda kopira potpis u međuspremnik kao formatirani HTML. U postavkama potpisa Gmaila ili Outlooka koristite Ctrl+V (Windows) ili Cmd+V (Mac)."
+        },
+        {
+          "question": "Mogu li generator koristiti za izradu potpisa za cijeli tim?",
+          "answer": "Da. Generator ne zahtijeva prijavu ni registraciju. Svaki član tima može otvoriti alat, ispuniti svoje podatke i kopirati gotovi potpis. Postavke se mogu i izvesti kao JSON datoteka i podijeliti s kolegama."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Pogledajte ostale alate"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

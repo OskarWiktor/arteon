@@ -3,7 +3,7 @@
   "locale": "es",
   "metadata": {
     "title": "Generador de favicon gratis – cree favicon.ico al instante",
-    "description": "Cree favicon.ico y todos los tamaños de favicon necesarios a partir de una sola imagen. Compatible con navegadores y Lighthouse. Procesamiento local, sin registro.",
+    "description": "Cree favicon.ico y todos los tamaños de favicon necesarios a partir de una sola imagen. Compatible con navegadores y Lighthouse. Procesamiento local,",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
     "path": "/es/herramientas/generador-de-favicon-gratuito"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/es/herramientas", "label": "Herramientas" },
-    "third": { "href": "/es/herramientas/generador-de-favicon-gratuito", "label": "Generador de favicon" }
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/generador-de-favicon-gratuito",
+      "label": "Generador de favicon"
+    }
   },
   "schemas": {
     "software": {
@@ -46,23 +52,35 @@
           "name": "Añada una imagen fuente",
           "text": "Arrastre un archivo sobre el área designada o seleccione un gráfico desde su dispositivo. Un logotipo simple o icono en formato PNG, JPG o SVG funciona mejor."
         },
-        { "name": "Elija los tamaños de icono", "text": "Seleccione qué tamaños de icono necesita: favicon.ico (32x32), iconos PNG (16x16, 32x32, 180x180, 192x192, 512x512)." },
+        {
+          "name": "Elija los tamaños de icono",
+          "text": "Seleccione qué tamaños de icono necesita: favicon.ico (32x32), iconos PNG (16x16, 32x32, 180x180, 192x192, 512x512)."
+        },
         {
           "name": "Configure las opciones",
           "text": "Establezca el color de fondo (o mantenga transparente), decida si generar un archivo manifest y si los archivos deben descargarse automáticamente."
         },
-        { "name": "Genere y descargue los archivos", "text": "Después de la generación, los archivos pueden descargarse como archivo ZIP o cada icono individualmente." }
+        {
+          "name": "Genere y descargue los archivos",
+          "text": "Después de la generación, los archivos pueden descargarse como archivo ZIP o cada icono individualmente."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "¿Qué es un favicon y por qué debería tener uno?",
       "html": "<p class=\"text-mid mb-4\">Un favicon es un pequeño icono que aparece en la pestaña del navegador junto al título de la página. También lo ve en los marcadores, el historial de navegación y en la pantalla de inicio del teléfono cuando alguien añade el sitio como acceso directo.</p><p class=\"text-mid mb-4\">Este pequeño gráfico cumple una función importante: ayuda a los usuarios a reconocer rápidamente un sitio entre muchas pestañas abiertas. Cuando alguien tiene una docena de pestañas abiertas en el navegador, el favicon suele ser el único elemento visible que identifica el sitio.</p><p class=\"text-mid\">El generador crea un conjunto completo de iconos: un archivo favicon.ico clásico para navegadores, iconos PNG en varios tamaños y un apple-touch-icon para dispositivos Apple. Si está construyendo una aplicación web (PWA), también puede generar iconos de 192x192 y 512x512 junto con un archivo manifest.</p>"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Cómo crear un favicon en 3 pasos",
@@ -73,20 +91,29 @@
           "title": "1. Añada una imagen",
           "description": "Arrastre un archivo sobre el área designada o seleccione un gráfico desde su dispositivo. Formatos admitidos: PNG, JPG, SVG. Tamaño recomendado: mín. 512×512 píxeles."
         },
-        { "title": "2. Elija los tamaños", "description": "Seleccione los tamaños de icono que necesita. Para un sitio web normal: favicon.ico, 32×32 y 180×180. Para PWA, añada 192×192 y 512×512." },
+        {
+          "title": "2. Elija los tamaños",
+          "description": "Seleccione los tamaños de icono que necesita. Para un sitio web normal: favicon.ico, 32×32 y 180×180. Para PWA, añada 192×192 y 512×512."
+        },
         {
           "title": "3. Descargue los archivos",
           "description": "Después de generar, descargue todos los archivos como ZIP o cada icono individualmente. Debajo de la herramienta encontrará instrucciones para añadir el favicon a su sitio."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "¿Qué tamaños de icono genera la herramienta?",
       "html": "<p class=\"text-mid mb-6\">Cada tamaño tiene su uso:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Formato clásico reconocido por todos los navegadores. Se muestra en la pestaña del navegador.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">PNG 16×16 y 32×32</p><p class=\"text-mid text-sm\">Tamaños estándar para navegadores modernos. Se muestran en pestañas y marcadores.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">PNG 180×180 (apple-touch-icon)</p><p class=\"text-mid text-sm\">Icono para dispositivos Apple (iPhone, iPad). Se muestra cuando alguien añade el sitio a su pantalla de inicio.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">PNG 192×192 y 512×512</p><p class=\"text-mid text-sm\">Iconos para aplicaciones web (PWA). Requeridos por el manifest y usados en tiendas de aplicaciones.</p></div></div><p class=\"text-light mt-6\">Si no está construyendo una PWA, solo necesita: favicon.ico, PNG 32×32 y PNG 180×180. Estos tres archivos cubren la mayoría de los casos de uso.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "¿Qué hace especial al generador de favicon?",
@@ -102,7 +129,11 @@
           "title": "Conjunto completo en un solo lugar",
           "description": "Favicon.ico, iconos PNG, apple-touch-icon, iconos PWA y manifest: todo desde una imagen, en una herramienta."
         },
-        { "icon": "RiImageLine", "title": "Soporte de PNG, JPG y SVG", "description": "Puede usar un logotipo en cualquier formato. Si tiene SVG, los iconos serán nítidos en todos los tamaños." },
+        {
+          "icon": "RiImageLine",
+          "title": "Soporte de PNG, JPG y SVG",
+          "description": "Puede usar un logotipo en cualquier formato. Si tiene SVG, los iconos serán nítidos en todos los tamaños."
+        },
         {
           "icon": "RiSmartphoneLine",
           "title": "Listo para sitio web y PWA",
@@ -110,7 +141,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Cómo usar el generador de favicon",
@@ -139,14 +173,20 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Opciones de generación: ¿qué hace cada una?",
       "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">Tamaños PNG</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800\">16×16</span><span class=\"inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800\">32×32</span><span class=\"inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-neutral-800\">180×180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span class=\"text-mid text-sm!\">Fondo transparente (PNG/ICO)</span></div></div></div>",
       "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Fondo (transparente o color)</h3><p class=\"text-mid\">Por defecto, el generador preserva la transparencia. También puede elegir un color de fondo específico.</p></div><div><h3 class=\"h5 mb-2\">Generar manifest (site.webmanifest)</h3><p class=\"text-mid\">Un archivo JSON para aplicaciones web (PWA). Si no está construyendo una PWA, esta opción no es necesaria.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Cómo descargar los archivos generados",
@@ -165,7 +205,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Dónde y cómo añadir un favicon",
@@ -187,7 +230,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "¿Qué imagen fuente funciona mejor?",
@@ -199,9 +245,21 @@
           "title": "Formas simples y símbolos legibles",
           "description": "Los logotipos simples, letras individuales o símbolos funcionan mejor. Evite gráficos complejos con muchos detalles."
         },
-        { "icon": "RiAspectRatioLine", "title": "Formato cuadrado", "description": "Un favicon es cuadrado. Si la imagen fuente tiene una proporción distinta de 1:1, se recortará o estirará." },
-        { "icon": "RiZoomInLine", "title": "Tamaño suficientemente grande", "description": "Recomendamos una imagen fuente de al menos 512×512 píxeles. Las imágenes más pequeñas se ampliarán." },
-        { "icon": "RiImageLine", "title": "Formato SVG como fuente ideal", "description": "SVG se escala sin pérdida de calidad, por lo que los iconos en todos los tamaños serán nítidos." },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Formato cuadrado",
+          "description": "Un favicon es cuadrado. Si la imagen fuente tiene una proporción distinta de 1:1, se recortará o estirará."
+        },
+        {
+          "icon": "RiZoomInLine",
+          "title": "Tamaño suficientemente grande",
+          "description": "Recomendamos una imagen fuente de al menos 512×512 píxeles. Las imágenes más pequeñas se ampliarán."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Formato SVG como fuente ideal",
+          "description": "SVG se escala sin pérdida de calidad, por lo que los iconos en todos los tamaños serán nítidos."
+        },
         {
           "icon": "RiContrastLine",
           "title": "Colores de alto contraste",
@@ -209,7 +267,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Preguntas frecuentes sobre el generador de favicon",
@@ -257,8 +318,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore otras herramientas" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore otras herramientas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

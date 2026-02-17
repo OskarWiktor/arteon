@@ -14,7 +14,13 @@ export const metadata = {
   title: meta.title,
   description: meta.description,
   alternates,
-  openGraph: { title: meta.title, description: meta.description, url: toAbsoluteUrl('/tl/patakaran-sa-privacy'), type: 'website' },
+  openGraph: {
+    title: meta.title,
+    description: meta.description,
+    url: toAbsoluteUrl('/tl/patakaran-sa-privacy'),
+    type: 'website',
+    images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
+  },
 };
 
 export default function PrivacyPolicyPage() {

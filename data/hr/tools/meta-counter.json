@@ -1,0 +1,189 @@
+{
+  "toolKey": "metaCounter",
+  "locale": "hr",
+  "metadata": {
+    "title": "Besplatna provjera meta naslova i opisa – Širina u pikselima",
+    "description": "Provjerite duljinu meta naslova i opisa u znakovima i pikselima. Pregled u Google rezultatima pomaže izbjeći odrezane isječke. Bez registracije,",
+    "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+    "path": "/hr/alati/provjera-meta-naslova-i-opisa"
+  },
+  "hero": {
+    "title": "Provjerite duljinu naslova i opisa u Googleu",
+    "description": "Unesite naslov i opis stranice, a alat će izračunati broj znakova i riječi, širinu u pikselima i pokazati odgovara li duljina preporučenim SEO praksama.",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hr/alati",
+      "label": "Alati"
+    },
+    "third": {
+      "href": "/hr/alati/provjera-meta-naslova-i-opisa",
+      "label": "Provjera meta naslova i opisa"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Besplatna provjera duljine meta naslova i opisa",
+      "alternateName": ["Provjera meta naslova i opisa s Google pregledom", "Google SERP pregled", "Provjera širine SEO naslova u pikselima"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "SEOTool",
+      "description": "Besplatna provjera duljine meta naslova i opisa. Provjerava broj znakova i riječi te širinu u pikselima. Prikazuje pregled kako naslov i opis izgledaju u Google rezultatima pretraživanja.",
+      "featureList": [
+        "Brojač znakova meta naslova",
+        "Brojač znakova meta opisa",
+        "Mjerenje širine u pikselima (odgovara Googleu)",
+        "Brojač riječi u naslovu i opisu",
+        "Pregled Google rezultata pretraživanja",
+        "Ocjena duljine u boji (prekratko / dobro / predugo)",
+        "Upozorenje na odrezivanje naslova i opisa",
+        "Preporuka optimalne duljine",
+        "Lokalna obrada u pregledniku"
+      ]
+    },
+    "howTo": {
+      "name": "Kako provjeriti duljinu meta naslova i opisa",
+      "description": "Provjerite duljinu meta naslova i opisa u pikselima i znakovima.",
+      "totalTime": "PT3M",
+      "steps": [
+        {
+          "name": "Unesite meta naslov",
+          "text": "Zalijepite ili upišite naslov stranice u polje Meta Title. Alat automatski izračunava broj znakova i riječi te širinu u pikselima."
+        },
+        {
+          "name": "Unesite meta opis",
+          "text": "Dodajte opis stranice u polje Meta Description. Vidjet ćete iste rezultate mjerenja."
+        },
+        {
+          "name": "Provjerite Google pregled",
+          "text": "Pogledajte kako naslov i opis izgledaju u simuliranim Google rezultatima pretraživanja."
+        },
+        {
+          "name": "Prilagodite prema preporukama",
+          "text": "Ako status pokazuje Prekratko ili Predugo, uredite tekst i pratite promjene u stvarnom vremenu."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Što su meta naslov i meta opis?",
+      "html": "<p class=\"text-mid\">Meta naslov i meta opis dva su kratka teksta koji opisuju sadržaj web stranice. Ne prikazuju se izravno na stranici, ali se pojavljuju u Google rezultatima pretraživanja kao naslov (plava poveznica) i opis (sivi tekst ispod naslova).</p><p class=\"text-mid mt-3\">Dobro napisane meta oznake funkcioniraju kao oglas stranice u rezultatima pretraživanja – privlače pozornost i povećavaju vjerojatnost klika. Loše napisane ili odrezane oznake mogu odbiti korisnike od klika, čak i ako je sama stranica vrijedna.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kako koristiti provjeru meta naslova i opisa",
+      "description": "Provjera duljine meta oznaka traje minutu:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiPencilLine",
+          "title": "1. Unesite naslov stranice",
+          "description": "Zalijepite ili upišite meta naslov u prvo polje. Alat odmah prikazuje tri rezultata mjerenja: broj znakova i riječi te širinu u pikselima."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Unesite opis stranice",
+          "description": "Dodajte meta opis u drugo polje. Vidjet ćete iste rezultate mjerenja."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "3. Provjerite pregled",
+          "description": "Desno (na računalu) ili ispod (na mobitelu) vidjet ćete pregled kako naslov i opis izgledaju u Google rezultatima pretraživanja."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "4. Prilagodite prema preporukama",
+          "description": "Ako status pokazuje Prekratko ili Predugo, uredite tekst. Promjene se prikazuju odmah."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Koliko znakova trebaju imati meta naslov i opis?",
+      "html": "<p class=\"text-mid mb-4\">Google odrezuje preduge naslove i opise. Ispod su preporučeni rasponi koji smanjuju rizik od odrezanog teksta u rezultatima pretraživanja.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Element</th><th class=\"py-2 pr-4 font-semibold\">Znakovi</th><th class=\"py-2 pr-4 font-semibold\">Pikseli</th><th class=\"py-2 font-semibold\">Napomene</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta naslov</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 znakova</td><td class=\"py-2 pr-4 whitespace-nowrap\">maks. ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Najvažnija ključna riječ na početak. Brend na kraj.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta opis</td><td class=\"py-2 pr-4 whitespace-nowrap\">120–160 znakova</td><td class=\"py-2 pr-4 whitespace-nowrap\">maks. ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">Prostor za 2–3 kratke rečenice. Završite pozivom na akciju.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Ovo su približne vrijednosti – Google ne objavljuje točne limite i može ih mijenjati ovisno o uređaju i kontekstu pretraživanja.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kome je namijenjena provjera meta oznaka?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Vlasnici web stranica i web trgovina",
+          "description": "Provjerite da se naslovi i opisi ne odrezuju u Google rezultatima prije objave nove stranice ili proizvoda."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "SEO stručnjaci",
+          "description": "Testirajte različite verzije naslova i opisa, provjerite pregled rezultata pretraživanja i potvrdite usklađenost s preporukama."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Copywriteri",
+          "description": "Pišite naslove i opise koji stanu u ograničenja i potiču klik."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Web programeri",
+          "description": "Potvrdite meta oznake prije pokretanja stranice u produkciju."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Često postavljana pitanja o provjeri meta naslova i opisa",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Zašto alat prikazuje širinu u pikselima, a ne samo broj znakova?",
+          "answer": "Različiti znakovi imaju različitu širinu. Slovo &quot;i&quot; zauzima znatno manje prostora od &quot;m&quot; ili &quot;W&quot;. Google odrezuje naslove i opise prema širini u pikselima, ne prema broju znakova.",
+          "answerSchemaText": "Google odrezuje prema širini u pikselima, ne prema broju znakova. Različiti znakovi imaju različitu širinu."
+        },
+        {
+          "question": "Prikazuje li Google uvijek meta naslov i opis?",
+          "answer": "Ne uvijek. Google može promijeniti prikazani naslov ili opis ako pronađe nešto bolje odgovarajuće korisnikovom upitu. Dobro napisane meta oznake povećavaju vjerojatnost da će ih Google koristiti, ali 100% jamstva nema.",
+          "answerSchemaText": "Ne uvijek. Google može promijeniti prikazani naslov ili opis kako bi bolje odgovarao upitu."
+        },
+        {
+          "question": "Koja je optimalna duljina meta naslova i meta opisa?",
+          "answer": "Meta naslov trebao bi imati oko 50–60 znakova (najviše ~580 piksela širine). Meta opis najbolje funkcionira s 120–160 znakova (najviše ~920 piksela). Ovo su približne vrijednosti – Google ne objavljuje točne limite.",
+          "answerSchemaText": "Meta naslov: 50–60 znakova (~580px). Meta opis: 120–160 znakova (~920px). Približne vrijednosti."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Pogledajte ostale alate"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

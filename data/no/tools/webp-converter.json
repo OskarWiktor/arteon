@@ -1,0 +1,144 @@
+{
+  "toolKey": "jpgToWebp",
+  "locale": "no",
+  "metadata": {
+    "title": "Gratis JPG/PNG til WebP-konverterer – Uten begrensninger",
+    "description": "Reduser bildestørrelsen uten kvalitetstap. Konverter JPG og PNG til WebP og gjør nettsiden raskere. Uten registrering, kjører i nettleseren.",
+    "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
+    "path": "/no/verktoy/jpg-png-til-webp-konverterer"
+  },
+  "hero": {
+    "title": "Konverter bilder til WebP – reduser størrelsen uten kvalitetstap",
+    "description": "Last opp bilder i JPG- eller PNG-format, og verktøyet konverterer dem til WebP. Mindre filer, samme kvalitet, raskere nettside.",
+    "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/no/verktoy", "label": "Verktøy" },
+    "third": { "href": "/no/verktoy/jpg-png-til-webp-konverterer", "label": "JPG/PNG til WebP-konverterer" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Gratis JPG/PNG til WebP-konverterer",
+      "alternateName": ["Bildekonverterer til WebP", "JPG til WebP-konverterer", "PNG til WebP-konverterer"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Gratis konverterer for JPG og PNG til WebP. Reduser bildestørrelsen med opptil 90 % uten synlig kvalitetstap. All behandling skjer i nettleseren – filer sendes ikke til noen server.",
+      "featureList": [
+        "Konvertering av JPG til WebP",
+        "Konvertering av PNG til WebP",
+        "Batchkonvertering av flere bilder samtidig",
+        "Kvalitetsregulator (0–100)",
+        "Sammenligning av original- og WebP-størrelse",
+        "Opplasting via dra-og-slipp eller filvalg",
+        "Forhåndsvisning før og etter konvertering",
+        "Nedlasting av hvert bilde eller alle i ZIP",
+        "Lokal behandling i nettleseren"
+      ]
+    },
+    "howTo": {
+      "name": "Slik konverterer du JPG og PNG til WebP",
+      "description": "Slik konverterer du bilder i JPG og PNG til WebP-format. Last opp filer, still inn kvaliteten og last ned de konverterte bildene.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Last opp bilder", "text": "Dra og slipp filer i det markerte området, eller velg dem fra enheten din. Støttede formater er JPG og PNG." },
+        { "name": "Still inn kvalitet", "text": "Bruk regulatoren til å justere bildekvaliteten (0–100). Høyere verdi betyr bedre kvalitet, men større fil." },
+        { "name": "Last ned konverterte bilder", "text": "Klikk på nedlastingsknappen ved hvert bilde, eller last ned alle på en gang i en ZIP-fil." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Hva er WebP-formatet, og hvorfor er det viktig?",
+      "html": "<p class=\"text-mid\">WebP er et moderne bildeformat utviklet av Google som tilbyr bedre komprimering enn JPG og PNG. Bilder i WebP tar mindre plass – typisk 25–34 % mindre enn JPG og opptil 80 % mindre enn PNG – med bevart visuell kvalitet.</p><p class=\"text-mid mt-3\">Alle store nettlesere (Chrome, Firefox, Safari, Edge) støtter WebP. Bruk av dette formatet betyr raskere sidelasting, lavere dataforbruk og bedre Core Web Vitals-score – noe som direkte påvirker plasseringen i Googles søkeresultater.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Slik bruker du JPG/PNG til WebP-konvertereren",
+      "description": "Konverteringen tar bare noen minutter:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Last opp bilder", "description": "Dra og slipp filer i det markerte området, eller velg dem fra enheten din. Du kan laste opp flere bilder samtidig." },
+        { "title": "2. Still inn kvalitet", "description": "Bruk regulatoren til å justere bildekvaliteten (0–100). Lavere verdi gir mindre fil, men lavere kvalitet." },
+        { "title": "3. Last ned resultatet", "description": "Klikk på nedlastingsknappen ved hvert bilde, eller last ned alle på en gang i en ZIP-fil." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Slik velger du riktig kvalitet for WebP",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kvalitet: 80</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Anbefalt</span></div><p class=\"text-mid text-sm!\">Beste forhold mellom kvalitet og filstørrelse. Passer for de fleste bilder på nett og i netthandel.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kvalitet: 60–70</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Aggressiv komprimering</span></div><p class=\"text-mid text-sm!\">Mindre filer. Passer for miniatyrbilder, ikoner og dekorative bakgrunner.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kvalitet: 90–100</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Høyeste kvalitet</span></div><p class=\"text-mid text-sm!\">Svært høy kvalitet, men større filer. Passer for porteføljer og nøkkelbilder av produkter.</p></div></div>",
+      "html": "<p class=\"text-mid\">Kvalitetsinnstillingen bestemmer forholdet mellom visuell kvalitet og filstørrelse. For de fleste nettbilder gir verdien 75–85 de beste resultatene – kvalitetsforskjellen er ikke synlig for øyet, og filen kan være 3–5 ganger mindre enn den originale JPG.</p><p class=\"text-mid mt-3\">For miniatyrbilder, ikoner og dekorative bakgrunner kan du senke kvaliteten til 60–70 uten å miste skarphet. For porteføljebilder eller nøkkelbilder av produkter bevarer verdien 90–95 detaljene.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Hvem trenger en WebP-konverterer?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiGlobalLine", "title": "Nettstedseiere", "description": "Mindre bilder gjør sidelastingen raskere. Det forbedrer brukeropplevelsen og påvirker plasseringen i Google." },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Netthandelseiere",
+          "description": "Mange produktbilder betyr mange megabyte med data. Konvertering til WebP reduserer lastetiden og dataforbruket."
+        },
+        { "icon": "RiBloggerLine", "title": "Bloggere", "description": "Artikler med mange bilder lastes saktere. WebP reduserer bildestørrelsen med bevart kvalitet." },
+        { "icon": "RiCodeLine", "title": "Webutviklere", "description": "WebP er den moderne standarden for nettbilder. Alle store nettlesere støtter dette formatet." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Hva gjør denne WebP-konvertereren spesiell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Lokal behandling i nettleseren",
+          "description": "Bilder sendes ikke til noen server – all behandling skjer på enheten din. Personvernet ditt er beskyttet."
+        },
+        { "icon": "RiSpeedLine", "title": "Umiddelbar konvertering", "description": "Resultatene vises med en gang – ingen ventetid i kø og ingen serverbehandling." },
+        { "icon": "RiInfinityLine", "title": "Ingen bildegrense", "description": "Konverter så mange bilder du trenger. Ingen daglig grense eller øktgrense." },
+        { "icon": "RiScalesLine", "title": "Justerbar kvalitetsregulator", "description": "Still inn kvaliteten (0–100) for hvert bilde og få det beste forholdet mellom størrelse og kvalitet." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Ofte stilte spørsmål om WebP-konvertereren",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hva er WebP-formatet?",
+          "answer": "WebP er et moderne bildeformat utviklet av Google. Det tilbyr bedre komprimering enn JPG (bilder 25–34 % mindre) og støtter samtidig gjennomsiktighet (som PNG). Alle store nettlesere støtter WebP.",
+          "answerSchemaText": "WebP er et bildeformat fra Google med bedre komprimering enn JPG. Støttes av alle store nettlesere."
+        },
+        {
+          "question": "Forringer konvertering til WebP bildekvaliteten?",
+          "answer": "Ved kvalitetsinnstillingen 75–85 er forskjellen ikke synlig for øyet. WebP-komprimering er mer effektiv enn JPG – ved samme visuelle kvalitet kan filen være 3–5 ganger mindre.",
+          "answerSchemaText": "Ved kvalitet 75–85 er forskjellen ikke synlig. WebP tilbyr mer effektiv komprimering enn JPG."
+        },
+        {
+          "question": "Sendes bilder til en server?",
+          "answer": "Nei. All behandling skjer i nettleseren din – bilder sendes ingen steder. Når siden lukkes, slettes data fra minnet.",
+          "answerSchemaText": "Nei. Bilder behandles i nettleseren. De sendes ikke til noen server."
+        },
+        {
+          "question": "Er det en grense for antall bilder?",
+          "answer": "Nei. Du kan konvertere så mange bilder du trenger. Ingen daglig grense eller øktgrense.",
+          "answerSchemaText": "Nei. Det er ingen grense for antall bilder som kan konverteres."
+        },
+        {
+          "question": "Støtter alle nettlesere WebP?",
+          "answer": "Ja. Alle store nettlesere – Chrome, Firefox, Safari (fra versjon 14) og Edge – støtter WebP-formatet. For eldre nettlesere anbefales det å ha en reservekopi i JPG.",
+          "answerSchemaText": "Ja. Chrome, Firefox, Safari 14+ og Edge støtter alle WebP."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Utforsk flere verktøy" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

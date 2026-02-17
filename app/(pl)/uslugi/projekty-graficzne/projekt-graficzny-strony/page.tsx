@@ -302,7 +302,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
               size: 'large',
               backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
               btnLabel: 'Zobacz ofertę',
-              btnLink: '/uslugi/strony-internetowe',
+              btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Sklepy internetowe',

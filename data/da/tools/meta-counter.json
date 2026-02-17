@@ -3,7 +3,7 @@
   "locale": "da",
   "metadata": {
     "title": "Gratis meta-titel & beskrivelseskontrol – Bredde i pixels",
-    "description": "Kontrollér længden af meta-titel og beskrivelse i tegn og pixels. Google SERP-forhåndsvisning hjælper dig med at undgå afkortede uddrag. Uden registrering, lokalt i browseren.",
+    "description": "Kontrollér længden af meta-titel og beskrivelse i tegn og pixels. Google SERP-forhåndsvisning hjælper dig med at undgå afkortede uddrag. Uden registrering,",
     "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
     "path": "/da/vaerktojer/meta-titel-og-beskrivelse-kontrol"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/da/vaerktojer", "label": "Værktøjer" },
-    "third": { "href": "/da/vaerktojer/meta-titel-og-beskrivelse-kontrol", "label": "Meta-titel & beskrivelseskontrol" }
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/meta-titel-og-beskrivelse-kontrol",
+      "label": "Meta-titel & beskrivelseskontrol"
+    }
   },
   "schemas": {
     "software": {
@@ -40,21 +46,39 @@
       "description": "Kontrollér længden af meta-titel og beskrivelse i pixels og tegn.",
       "totalTime": "PT3M",
       "steps": [
-        { "name": "Indtast meta-titel", "text": "Indsæt eller skriv sidens titel i feltet Meta Title. Værktøjet tæller automatisk antal tegn, ord og bredde i pixels." },
-        { "name": "Indtast meta-beskrivelse", "text": "Tilføj sidens beskrivelse i feltet Meta Description. Du ser de samme målinger." },
-        { "name": "Kontrollér Google-forhåndsvisning", "text": "Se hvordan titel og beskrivelse vises i simulerede Google-søgeresultater." },
-        { "name": "Justér efter anbefalinger", "text": "Hvis status viser For kort eller For lang, justér teksten og følg ændringerne i realtid." }
+        {
+          "name": "Indtast meta-titel",
+          "text": "Indsæt eller skriv sidens titel i feltet Meta Title. Værktøjet tæller automatisk antal tegn, ord og bredde i pixels."
+        },
+        {
+          "name": "Indtast meta-beskrivelse",
+          "text": "Tilføj sidens beskrivelse i feltet Meta Description. Du ser de samme målinger."
+        },
+        {
+          "name": "Kontrollér Google-forhåndsvisning",
+          "text": "Se hvordan titel og beskrivelse vises i simulerede Google-søgeresultater."
+        },
+        {
+          "name": "Justér efter anbefalinger",
+          "text": "Hvis status viser For kort eller For lang, justér teksten og følg ændringerne i realtid."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Hvad er meta-titel og meta-beskrivelse?",
       "html": "<p class=\"text-mid\">Meta-titel og meta-beskrivelse er to korte tekster, der beskriver indholdet på en webside. De vises ikke direkte på siden, men dukker op i Googles søgeresultater som titlen (blåt link) og beskrivelsen (grå tekst under titlen).</p><p class=\"text-mid mt-3\">Velskrevne meta-tags fungerer som en annonce for din side i søgeresultaterne – de fanger opmærksomhed og øger sandsynligheden for klik. Dårligt skrevne eller afkortede tags kan afskrække fra at klikke, selv om selve siden er værdifuld.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Sådan bruger du meta-titel og beskrivelseskontrollen",
@@ -66,22 +90,36 @@
           "title": "1. Indtast sidens titel",
           "description": "Indsæt eller skriv meta-titlen i det første felt. Værktøjet viser øjeblikkeligt tre målinger: antal tegn, ord og bredde i pixels."
         },
-        { "icon": "RiFileTextLine", "title": "2. Indtast sidens beskrivelse", "description": "Tilføj meta-beskrivelsen i det andet felt. Du ser de samme målinger." },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Indtast sidens beskrivelse",
+          "description": "Tilføj meta-beskrivelsen i det andet felt. Du ser de samme målinger."
+        },
         {
           "icon": "RiEyeLine",
           "title": "3. Kontrollér forhåndsvisning",
           "description": "Til højre (desktop) eller nedenunder (mobil) ser du en forhåndsvisning af hvordan titel og beskrivelse vises i Googles søgeresultater."
         },
-        { "icon": "RiToolsLine", "title": "4. Justér efter anbefalinger", "description": "Hvis status viser For kort eller For lang, justér teksten. Ændringer ses øjeblikkeligt." }
+        {
+          "icon": "RiToolsLine",
+          "title": "4. Justér efter anbefalinger",
+          "description": "Hvis status viser For kort eller For lang, justér teksten. Ændringer ses øjeblikkeligt."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Hvor mange tegn bør meta-titel og beskrivelse have?",
       "html": "<p class=\"text-mid mb-4\">Google afkorter titler og beskrivelser, der er for lange. Nedenfor er anbefalede intervaller, der reducerer risikoen for afkortet tekst i søgeresultaterne.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Element</th><th class=\"py-2 pr-4 font-semibold\">Tegn</th><th class=\"py-2 pr-4 font-semibold\">Pixels</th><th class=\"py-2 font-semibold\">Bemærkninger</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta-titel</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 tegn</td><td class=\"py-2 pr-4 whitespace-nowrap\">op til ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Vigtigste nøgleord først. Brand sidst.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta-beskrivelse</td><td class=\"py-2 pr-4 whitespace-nowrap\">120–160 tegn</td><td class=\"py-2 pr-4 whitespace-nowrap\">op til ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">Plads til 2–3 korte sætninger. Afslut med en opfordring til handling.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Disse er omtrentlige værdier – Google offentliggør ikke nøjagtige grænser og kan justere dem afhængigt af enhed og søgekontekst.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hvem er meta-tag-kontrollen til?",
@@ -97,11 +135,22 @@
           "title": "SEO-specialister",
           "description": "Test forskellige versioner af titler og beskrivelser, kontrollér søgeresultatforhåndsvisning og verificér overholdelse af anbefalinger."
         },
-        { "icon": "RiEditLine", "title": "Tekstforfattere", "description": "Skriv titler og beskrivelser, der passer inden for grænserne og understøtter klik." },
-        { "icon": "RiCodeLine", "title": "Webudviklere", "description": "Verificér meta-tags inden siden sættes i produktion." }
+        {
+          "icon": "RiEditLine",
+          "title": "Tekstforfattere",
+          "description": "Skriv titler og beskrivelser, der passer inden for grænserne og understøtter klik."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Webudviklere",
+          "description": "Verificér meta-tags inden siden sættes i produktion."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om meta-titel og beskrivelseskontrollen",
@@ -124,8 +173,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Udforsk flere værktøjer" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Udforsk flere værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

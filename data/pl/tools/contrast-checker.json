@@ -3,7 +3,7 @@
   "locale": "pl",
   "metadata": {
     "title": "Tester kontrastu kolorów WCAG – sprawdź czytelność tekstu",
-    "description": "Sprawdź czy kolory tekstu i tła są czytelne według WCAG 2.1. Wpisz kody HEX, RGB lub HSL, zobacz współczynnik kontrastu i użyj automatycznej korekty. Bez rejestracji.",
+    "description": "Sprawdź czy kolory tekstu i tła są czytelne według WCAG 2.1. Wpisz kody HEX, RGB lub HSL, zobacz współczynnik kontrastu i użyj automatycznej korekty.",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/narzedzia/kontrast-i-czytelnosc-kolorow"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/narzedzia", "label": "Narzędzia" },
-    "third": { "href": "/narzedzia/kontrast-i-czytelnosc-kolorow", "label": "Kontrast i czytelność kolorów" }
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/kontrast-i-czytelnosc-kolorow",
+      "label": "Kontrast i czytelność kolorów"
+    }
   },
   "schemas": {
     "software": {
@@ -50,38 +56,71 @@
       "name": "Jak sprawdzić kontrast i czytelność kolorów online",
       "description": "Jak sprawdzić czytelność kolorów tekstu i tła według standardu WCAG. Podaj kolory, odczytaj współczynnik kontrastu i skorzystaj z funkcji automatycznego dopasowania.",
       "steps": [
-        { "name": "Wybierz kolor tekstu", "text": "Podaj kod koloru tekstu (np. #333333) w formacie HEX, RGB lub HSL - albo wybierz barwę z próbnika kolorów." },
-        { "name": "Wybierz kolor tła", "text": "Podaj kolor tła, na którym będzie wyświetlany tekst - może to być kolor sekcji, bloku lub całej strony." },
-        { "name": "Sprawdź wynik", "text": "Narzędzie pokaże współczynnik kontrastu i czy spełniasz wymagania AA/AAA." },
-        { "name": "Dostosuj kolory", "text": "Jeśli kontrast jest za niski, funkcja Dopasuj automatycznie zaproponuje wariant koloru tekstu spełniający wybrany próg WCAG." }
+        {
+          "name": "Wybierz kolor tekstu",
+          "text": "Podaj kod koloru tekstu (np. #333333) w formacie HEX, RGB lub HSL - albo wybierz barwę z próbnika kolorów."
+        },
+        {
+          "name": "Wybierz kolor tła",
+          "text": "Podaj kolor tła, na którym będzie wyświetlany tekst - może to być kolor sekcji, bloku lub całej strony."
+        },
+        {
+          "name": "Sprawdź wynik",
+          "text": "Narzędzie pokaże współczynnik kontrastu i czy spełniasz wymagania AA/AAA."
+        },
+        {
+          "name": "Dostosuj kolory",
+          "text": "Jeśli kontrast jest za niski, funkcja Dopasuj automatycznie zaproponuje wariant koloru tekstu spełniający wybrany próg WCAG."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Dlaczego czytelność kolorów ma znaczenie?",
       "html": "<p class=\"text-mid\">Czytelność to różnica jasności między kolorem tekstu a kolorem tła. Im większa ta różnica, tym łatwiej odczytać tekst. Zbyt niski kontrast sprawia, że treść staje się trudna do przeczytania - szczególnie dla osób z wadami wzroku, osób starszych lub w trudnych warunkach oświetleniowych (np. na telefonie w pełnym słońcu).</p><p class=\"text-mid mt-3\">Według <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Światowej Organizacji Zdrowia (WHO)</a>, około 2,2 miliarda ludzi na świecie ma różne formy zaburzeń widzenia. Do tego dochodzą miliony osób z daltonizmem (około 8% mężczyzn i 0,5% kobiet) oraz osoby, których wzrok osłabł z wiekiem.</p><p class=\"text-mid mt-3\">Narzędzie oblicza współczynnik kontrastu według wzoru określonego w standardzie <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Web Content Accessibility Guidelines)</a> - międzynarodowych wytycznych dostępności cyfrowej. Wynik pozwala obiektywnie ocenić, czy kolory są wystarczająco czytelne, niezależnie od ustawień monitora czy indywidualnego postrzegania barw.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak korzystać z testera kontrastu kolorów?",
       "description": "Sprawdzenie czytelności zajmuje kilka sekund:",
       "grid": "four",
       "items": [
-        { "icon": "RiPaletteLine", "title": "1. Podaj kolor tekstu", "description": "Wpisz kod koloru (np. #333333) w formacie HEX, RGB lub HSL - albo wybierz barwę z próbnika kolorów." },
-        { "icon": "RiPaintBrushLine", "title": "2. Podaj kolor tła", "description": "Wprowadź kolor tła, na którym będzie wyświetlany tekst - może to być kolor sekcji, bloku lub całej strony." },
+        {
+          "icon": "RiPaletteLine",
+          "title": "1. Podaj kolor tekstu",
+          "description": "Wpisz kod koloru (np. #333333) w formacie HEX, RGB lub HSL - albo wybierz barwę z próbnika kolorów."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "2. Podaj kolor tła",
+          "description": "Wprowadź kolor tła, na którym będzie wyświetlany tekst - może to być kolor sekcji, bloku lub całej strony."
+        },
         {
           "icon": "RiCheckboxCircleLine",
           "title": "3. Odczytaj wynik",
           "description": "Narzędzie obliczy współczynnik kontrastu i pokaże, czy kolory spełniają wymagania WCAG dla tekstu zwykłego, dużego i ikon."
         },
-        { "icon": "RiEqualizerLine", "title": "4. Dopasuj kolory", "description": "Jeśli kontrast jest za niski, funkcja Dopasuj automatycznie zaproponuje wariant koloru spełniający wybrany próg." }
+        {
+          "icon": "RiEqualizerLine",
+          "title": "4. Dopasuj kolory",
+          "description": "Jeśli kontrast jest za niski, funkcja Dopasuj automatycznie zaproponuje wariant koloru spełniający wybrany próg."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Jakie formaty kolorów są obsługiwane?",
@@ -103,50 +142,117 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Jak interpretować wyniki testu czytelności?",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Współczynnik kontrastu</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Tekst zwykły</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">AAA (min. 7:1)</span></div></div><div class=\"rounded-lg border border-neutral-200 px-3 py-2\" style=\"color: var(--black3); background-color: var(--white)\"><p class=\"text-sm!\">Przykładowy tekst zwykły</p></div></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Tekst duży</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">AA (min. 3:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">AAA (min. 4.5:1)</span></div></div></div></div>",
       "html": "<p class=\"text-mid mb-4\">Po wprowadzeniu kolorów narzędzie wyświetla wyniki w trzech sekcjach:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tekst zwykły</strong> - wymaga kontrastu 4.5:1 (AA) lub 7:1 (AAA). Dotyczy tekstu poniżej 18pt (24px) lub poniżej 14pt pogrubionego.</li><li><strong>Tekst duży / pogrubiony</strong> - wymaga kontrastu 3:1 (AA) lub 4.5:1 (AAA). Dotyczy nagłówków, przycisków, wyróżnień.</li><li><strong>Ikona</strong> - wymaga kontrastu 3:1 (AA). Dotyczy ikon i elementów graficznych interfejsu.</li></ul><p class=\"text-mid mt-3\"><strong>Zielony znacznik</strong> oznacza spełniony wymóg. <strong>Czerwony znacznik</strong> oznacza, że kontrast jest za niski i wymaga poprawy.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Co oznaczają wyniki testu czytelności?",
       "html": "<p class=\"text-mid mb-4\">Narzędzie pokazuje współczynnik kontrastu w skali od 1:1 (brak kontrastu) do 21:1 (maksymalny kontrast - czarny na białym). Wynik porównywany jest z progami określonymi w standardzie WCAG:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tekst zwykły</strong> - wymaga kontrastu co najmniej 4.5:1 dla poziomu AA (standard minimalny) lub 7:1 dla poziomu AAA (standard rozszerzony). Dotyczy tekstu o rozmiarze poniżej 18pt (24px) lub poniżej 14pt (18.5px) pogrubionego.</li><li><strong>Tekst duży / pogrubiony</strong> - wymaga kontrastu co najmniej 3:1 dla poziomu AA lub 4.5:1 dla poziomu AAA. Dotyczy tekstu od 18pt (24px) lub od 14pt (18.5px) pogrubionego - nagłówki, przyciski, wyróżnienia.</li><li><strong>Ikony i elementy graficzne</strong> - wymagają kontrastu co najmniej 3:1 dla poziomu AA. Dotyczy ikon, przycisków, pól formularzy i innych elementów interfejsu, które przekazują informację.</li></ul><p class=\"text-mid mt-3\"><strong>Poziom AA</strong> to minimum wymagane przez przepisy dotyczące dostępności cyfrowej w wielu krajach, w tym w <a href=\"https://eur-lex.europa.eu/legal-content/PL/TXT/?uri=CELEX:32016L2102\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">dyrektywie UE o dostępności stron internetowych</a>. <strong>Poziom AAA</strong> zapewnia lepszą czytelność, ale nie zawsze jest praktyczny do osiągnięcia dla wszystkich elementów.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Automatyczne dopasowanie koloru do wymagań WCAG",
       "html": "<p class=\"text-mid mb-4\">Jeśli kontrast jest za niski, nie trzeba szukać odpowiedniego koloru metodą prób i błędów. Funkcja <strong>Dopasuj</strong> automatycznie znajduje wariant koloru tekstu, który spełnia wybrany próg kontrastu.</p><p class=\"text-mid mb-4\">Jak działa dopasowanie:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Wybierz cel dopasowania z listy - np. AA dla tekstu zwykłego lub AAA dla tekstu dużego.</li><li>Uruchom funkcję przyciskiem Dopasuj.</li><li>Narzędzie przeszuka warianty jasności koloru tekstu i zaproponuje najbliższy spełniający wymagania.</li><li>Zaproponowany kolor można skopiować do schowka lub od razu ustawić jako nowy kolor tekstu.</li></ol><p class=\"text-mid mt-3\">Algorytm zachowuje odcień i nasycenie oryginalnego koloru, zmieniając wyłącznie jasność. Proponowana barwa pozostaje więc spójna z identyfikacją wizualną, a jednocześnie spełnia standard dostępności.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionFeatureComparison",
       "title": "Co oznaczają poziomy AA i AAA w standardzie WCAG?",
       "plans": [
-        { "id": "aa", "name": "Poziom AA (minimalny)", "highlighted": true },
-        { "id": "aaa", "name": "Poziom AAA (rozszerzony)" }
+        {
+          "id": "aa",
+          "name": "Poziom AA (minimalny)",
+          "highlighted": true
+        },
+        {
+          "id": "aaa",
+          "name": "Poziom AAA (rozszerzony)"
+        }
       ],
       "features": [
-        { "name": "Tekst zwykły - min. 4.5:1", "values": { "aa": true, "aaa": true } },
-        { "name": "Tekst zwykły - min. 7:1", "values": { "aa": false, "aaa": true } },
-        { "name": "Tekst duży / pogrubiony - min. 3:1", "values": { "aa": true, "aaa": true } },
-        { "name": "Tekst duży / pogrubiony - min. 4.5:1", "values": { "aa": false, "aaa": true } },
-        { "name": "Ikony i elementy interfejsu - min. 3:1", "values": { "aa": true, "aaa": true } },
-        { "name": "Wymagany prawnie (dyrektywa UE)", "values": { "aa": true, "aaa": false } },
-        { "name": "Zalecany dla kluczowych treści", "values": { "aa": true, "aaa": true } }
+        {
+          "name": "Tekst zwykły - min. 4.5:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Tekst zwykły - min. 7:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Tekst duży / pogrubiony - min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Tekst duży / pogrubiony - min. 4.5:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Ikony i elementy interfejsu - min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Wymagany prawnie (dyrektywa UE)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Zalecany dla kluczowych treści",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Rozwiązywanie problemów z testerem kontrastu kolorów",
       "html": "<h3 class=\"h5 mb-2\">Widzę komunikat o błędzie formatu koloru</h3><p class=\"text-mid mb-4\">Sprawdź format koloru. Kod HEX powinien zaczynać się od <code class=\"rounded bg-black/5 px-1\">#</code> i zawierać 3 lub 6 znaków (np. <code class=\"rounded bg-black/5 px-1\">#fff</code> lub <code class=\"rounded bg-black/5 px-1\">#ffffff</code>). Dla formatu RGB sprawdź, czy wartości są oddzielone przecinkami i mieszczą się w zakresie 0-255.</p><h3 class=\"h5 mb-2\">Funkcja Dopasuj nie znajduje odpowiedniego koloru</h3><p class=\"text-mid mb-4\">Gdy tło i tekst mają zbliżoną jasność w tym samym odcieniu, algorytm może nie znaleźć wariantu spełniającego wymagania bez zmiany odcienia. W takim przypadku rozważ zmianę koloru tła lub wybór zupełnie innego koloru tekstu.</p><h3 class=\"h5 mb-2\">Kolor w próbniku nie odpowiada wpisanemu kodowi</h3><p class=\"text-mid\">Próbnik kolorów w przeglądarce obsługuje tylko format HEX bez przezroczystości. Jeśli wpiszesz kolor w formacie RGBA lub HSLA z przezroczystością, próbnik pokaże tylko część kolorową (bez alpha). Obliczenia kontrastu nadal uwzględniają przezroczystość.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Gdzie warto sprawdzać czytelność kolorów?",
@@ -158,24 +264,46 @@
           "title": "Strony internetowe",
           "description": "Tekst na stronach, przyciski, linki, formularze. Szczególnie ważne dla stron firmowych, gdzie odwiedzający mają różny wiek i różne możliwości wzrokowe."
         },
-        { "icon": "RiShoppingCartLine", "title": "Sklepy internetowe", "description": "Ceny, przyciski Kup teraz, informacje o produkcie. Niska czytelność może oznaczać utracone zamówienia." },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Sklepy internetowe",
+          "description": "Ceny, przyciski Kup teraz, informacje o produkcie. Niska czytelność może oznaczać utracone zamówienia."
+        },
         {
           "icon": "RiSlideshowLine",
           "title": "Prezentacje",
           "description": "Slajdy wyświetlane z projektora często mają słabszy kontrast niż na monitorze. Warto sprawdzić kolory przed prezentacją."
         },
-        { "icon": "RiPrinterLine", "title": "Plakaty i ulotki", "description": "Materiały drukowane oglądane w różnych warunkach oświetleniowych wymagają wysokiego kontrastu." },
-        { "icon": "RiSmartphoneLine", "title": "Aplikacje mobilne", "description": "Telefony są używane w pełnym słońcu, w nocy, przez osoby w różnym wieku." },
-        { "icon": "RiRestaurantLine", "title": "Menu restauracji", "description": "Często drukowane na kolorowym papierze lub z ozdobnymi czcionkami - łatwo o zbyt niski kontrast." }
+        {
+          "icon": "RiPrinterLine",
+          "title": "Plakaty i ulotki",
+          "description": "Materiały drukowane oglądane w różnych warunkach oświetleniowych wymagają wysokiego kontrastu."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Aplikacje mobilne",
+          "description": "Telefony są używane w pełnym słońcu, w nocy, przez osoby w różnym wieku."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Menu restauracji",
+          "description": "Często drukowane na kolorowym papierze lub z ozdobnymi czcionkami - łatwo o zbyt niski kontrast."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Czytelność kolorów dla osób z daltonizmem",
       "html": "<p class=\"text-mid mb-4\">Daltonizm (ślepota barw) to zaburzenie widzenia kolorów, które dotyczy około 8% mężczyzn i 0,5% kobiet. Osoby z daltonizmem mogą mieć trudności z rozróżnieniem niektórych par kolorów, nawet jeśli kontrast jasności jest wystarczający.</p><p class=\"text-mid mb-4\">Najczęstsze typy daltonizmu:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deuteranopia</strong> - trudności z rozróżnieniem zieleni i czerwieni (najczęstsza forma)</li><li><strong>Protanopia</strong> - trudności z widzeniem czerwieni</li><li><strong>Tritanopia</strong> - trudności z widzeniem niebieskiego i żółtego (rzadka)</li></ul><p class=\"text-mid mt-3\">To narzędzie sprawdza kontrast jasności, który jest ważny dla wszystkich użytkowników. Jednak przy projektowaniu warto dodatkowo unikać problematycznych kombinacji kolorów (np. czerwony tekst na zielonym tle) i nie polegać wyłącznie na kolorze do przekazywania informacji - używaj też kształtów, ikon, tekstu.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Co wyróżnia tester kontrastu i czytelności kolorów?",
@@ -213,7 +341,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Najczęstsze pytania dotyczące testera kontrastu i czytelności kolorów",
@@ -253,15 +384,24 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Sprawdź inne darmowe narzędzia online" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne darmowe narzędzia online"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ],
   "cta": {
     "title": "Potrzebujesz strony zgodnej ze standardami dostępności?",
     "description": "Tworzymy strony internetowe z myślą o wszystkich użytkownikach - odpowiedni kontrast kolorów, czytelna typografia, logiczna struktura. Skontaktuj się z nami.",
     "btnOne": "Sprawdź ofertę stron internetowych",
-    "btnOneLink": "/uslugi/strony-internetowe",
+    "btnOneLink": "/uslugi/tworzenie-stron-wordpress",
     "btnTwo": "Skontaktuj się z nami",
     "btnTwoLink": "/kontakt",
     "backgroundImage": "/assets/arteon-logo-on-mockup.webp",

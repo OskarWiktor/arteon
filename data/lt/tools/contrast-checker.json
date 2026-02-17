@@ -1,0 +1,231 @@
+{
+  "toolKey": "contrastChecker",
+  "locale": "lt",
+  "metadata": {
+    "title": "Nemokamas spalvų kontrasto tikrintuvas – WCAG 2.1 atitiktis",
+    "description": "Patikrinkite, ar teksto ir fono spalvos yra įskaitomos pagal WCAG 2.1. Įveskite HEX, RGB arba HSL kodą,",
+    "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
+    "path": "/lt/irankiai/spalvu-kontrasto-tikrintuvas"
+  },
+  "hero": {
+    "title": "Spalvų kontrasto ir įskaitomumo tikrintuvas",
+    "description": "Įveskite teksto ir fono spalvą, o įrankis parodys, ar kontrastas yra pakankamas. Skaičiavimai pagrįsti tarptautiniu prieinamumo standartu WCAG 2.1.",
+    "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/lt/irankiai",
+      "label": "Įrankiai"
+    },
+    "third": {
+      "href": "/lt/irankiai/spalvu-kontrasto-tikrintuvas",
+      "label": "Spalvų kontrasto tikrintuvas"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Spalvų kontrasto ir įskaitomumo tikrintuvas",
+      "alternateName": ["Spalvų įskaitomumo testas", "Teksto ir fono kontrasto tikrinimas", "Spalvų kontrasto skaičiuoklė", "WCAG kontrasto testas"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "AccessibilityTool",
+      "description": "Patikrinkite, ar teksto ir fono spalvos yra įskaitomos visiems vartotojams. Įrankis apskaičiuoja kontrasto santykį pagal WCAG 2.1 ir parodo, ar atitinka prieinamumo reikalavimus.",
+      "featureList": [
+        "Kontrasto santykio skaičiavimas",
+        "WCAG 2.1 AA lygio atitikties tikrinimas",
+        "WCAG 2.1 AAA lygio atitikties tikrinimas",
+        "Įprasto teksto testas",
+        "Didelio teksto ir antraščių testas",
+        "Piktogramų ir sąsajos komponentų testas",
+        "HEX, RGB, RGBA, HSL ir HSLA formatų palaikymas",
+        "Spalvų rinkiklis vizualiniam pasirinkimui",
+        "Teksto peržiūra realiuoju laiku",
+        "Automatinio spalvų pritaikymo funkcija",
+        "Vietinis apdorojimas naršyklėje"
+      ]
+    },
+    "howTo": {
+      "name": "Kaip patikrinti spalvų kontrastą ir įskaitomumą",
+      "description": "Kaip patikrinti teksto ir fono spalvų įskaitomumą pagal WCAG standartą.",
+      "steps": [
+        {
+          "name": "Pasirinkite teksto spalvą",
+          "text": "Įveskite spalvos kodą (pvz., #333333) HEX, RGB arba HSL formatu – arba pasirinkite spalvą iš spalvų rinkiklio."
+        },
+        {
+          "name": "Pasirinkite fono spalvą",
+          "text": "Įveskite fono spalvą, ant kurios bus rodomas tekstas."
+        },
+        {
+          "name": "Perskaitykite rezultatus",
+          "text": "Įrankis rodo kontrasto santykį ir ar spalvos atitinka AA/AAA reikalavimus."
+        },
+        {
+          "name": "Pritaikykite spalvas",
+          "text": "Jei kontrastas per žemas, funkcija Match automatiškai pasiūlo teksto spalvos variantą, atitinkantį pasirinktą WCAG ribą."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kodėl spalvų įskaitomumas yra svarbus?",
+      "html": "<p class=\"text-mid\">Įskaitomumas yra šviesumo skirtumas tarp teksto spalvos ir fono spalvos. Kuo didesnis skirtumas, tuo lengviau skaityti tekstą. Per žemas kontrastas daro turinį sunkiai skaitomą – ypač žmonėms su regos sutrikimais, vyresniems žmonėms ar sudėtingomis apšvietimo sąlygomis.</p><p class=\"text-mid mt-3\">Pagal <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Pasaulio sveikatos organizaciją (PSO)</a>, apie 2,2 milijardo žmonių pasaulyje turi kokią nors regos sutrikimo formą.</p><p class=\"text-mid mt-3\">Įrankis apskaičiuoja kontrasto santykį pagal formulę, apibrėžtą standarte <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1</a> – tarptautinėse skaitmeninio prieinamumo gairėse.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kaip naudoti spalvų kontrasto tikrintuvą",
+      "description": "Įskaitomumo tikrinimas trunka tik kelias sekundes:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiPaletteLine",
+          "title": "1. Įveskite teksto spalvą",
+          "description": "Įveskite spalvos kodą HEX, RGB arba HSL formatu – arba pasirinkite spalvą iš spalvų rinkiklio."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "2. Įveskite fono spalvą",
+          "description": "Įveskite fono spalvą, ant kurios bus rodomas tekstas."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "3. Perskaitykite rezultatus",
+          "description": "Įrankis apskaičiuoja kontrasto santykį ir parodo, ar spalvos atitinka WCAG reikalavimus įprastam tekstui, dideliam tekstui ir piktogramoms."
+        },
+        {
+          "icon": "RiEqualizerLine",
+          "title": "4. Pritaikykite spalvas",
+          "description": "Jei kontrastas per žemas, funkcija Match automatiškai pasiūlo spalvos variantą, atitinkantį pasirinktą ribą."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Kaip interpretuoti įskaitomumo testo rezultatus",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Kontrasto santykis</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Įprastas tekstas</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Įvedus spalvas įrankis rodo rezultatus trijose dalyse:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Įprastas tekstas</strong> – reikalauja kontrasto 4.5:1 (AA) arba 7:1 (AAA). Taikoma tekstui mažesniam nei 18pt (24px) arba mažesniam nei 14pt paryškintam.</li><li><strong>Didelis tekstas / paryškintas</strong> – reikalauja kontrasto 3:1 (AA) arba 4.5:1 (AAA). Taikoma antraštėms, mygtukams ir paryškintam tekstui.</li><li><strong>Piktogramos</strong> – reikalauja kontrasto 3:1 (AA). Taikoma piktogramoms ir grafiniams sąsajos elementams, perduodantiems informaciją.</li></ul><p class=\"text-mid mt-3\"><strong>Žalia žymė</strong> reiškia, kad reikalavimas įvykdytas. <strong>Raudona žymė</strong> reiškia, kad kontrastas per žemas ir reikalinga korekcija.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Ką reiškia AA ir AAA lygiai WCAG standarte?",
+      "plans": [
+        {
+          "id": "aa",
+          "name": "AA lygis (minimumas)",
+          "highlighted": true
+        },
+        {
+          "id": "aaa",
+          "name": "AAA lygis (pagerintas)"
+        }
+      ],
+      "features": [
+        {
+          "name": "Įprastas tekstas – min. 4.5:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Įprastas tekstas – min. 7:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Didelis tekstas / paryškintas – min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Didelis tekstas / paryškintas – min. 4.5:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Piktogramos ir sąsajos elementai – min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Teisinis reikalavimas (ES direktyva)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Rekomenduojama pagrindiniam turiniui",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Dažnai užduodami klausimai apie spalvų kontrasto tikrintuvą",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kas yra spalvų kontrasto santykis?",
+          "answer": "Kontrasto santykis yra šviesumo skirtumo tarp dviejų spalvų matas. Skalė prasideda nuo 1:1 (nėra skirtumo) ir baigiasi ties 21:1 (didžiausias įmanomas skirtumas – juodas tekstas ant balto fono). Kuo didesnis santykis, tuo lengviau atskirti tekstą nuo fono."
+        },
+        {
+          "question": "Koks kontrastas yra pakankamas pagal WCAG?",
+          "answer": "Įprastam tekstui minimalus kontrastas yra 4.5:1 (AA lygis). Dideliam tekstui – antraštėms nuo 18pt arba paryškintam nuo 14pt – pakanka 3:1. Piktogramoms ir sąsajos komponentams taip pat reikalaujama 3:1."
+        },
+        {
+          "question": "Kodėl mano spalvos neatitinka reikalavimų, nors jas gerai matau?",
+          "answer": "Asmeninis spalvų suvokimas priklauso nuo monitoriaus nustatymų, kambario apšvietimo ir individualios regos. WCAG remiasi objektyvia matematine formule, kuri atsižvelgia į įvairius regos sutrikimus."
+        },
+        {
+          "question": "Ar būtina pasiekti AAA kontrasto lygį?",
+          "answer": "Ne visada. AA lygis (4.5:1 įprastam tekstui) yra minimalus reikalavimas pagal ES prieinamumo taisykles. AAA lygis (7:1) užtikrina geresnį įskaitomumą, tačiau jį sunkiau pasiekti. Kritiniam turiniui – įspėjimams, saugumo instrukcijoms – verta siekti AAA lygio."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Peržiūrėkite kitus nemokamus įrankius"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

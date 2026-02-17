@@ -3,7 +3,7 @@
   "locale": "sq",
   "metadata": {
     "title": "Gjenerues paletash ngjyrash falas – 9 paleta nga një ngjyrë",
-    "description": "Gjeneroni 9 paleta ngjyrash nga një ngjyrë bazë: monokromatike, komplementare, triadike, pastel dhe më shumë. Kopjoni kodet HEX me një klikim. Pa regjistrim, pa kufizime.",
+    "description": "Gjeneroni 9 paleta ngjyrash nga një ngjyrë bazë: monokromatike, komplementare, triadike, pastel dhe më shumë. Kopjoni kodet HEX me një klikim. Pa regjistrim,",
     "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
     "path": "/sq/mjetet/gjenerues-paletash-ngjyrash"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/sq/mjetet", "label": "Mjetet" },
-    "third": { "href": "/sq/mjetet/gjenerues-paletash-ngjyrash", "label": "Gjenerues paletash ngjyrash" }
+    "second": {
+      "href": "/sq/mjetet",
+      "label": "Mjetet"
+    },
+    "third": {
+      "href": "/sq/mjetet/gjenerues-paletash-ngjyrash",
+      "label": "Gjenerues paletash ngjyrash"
+    }
   },
   "schemas": {
     "software": {
@@ -45,24 +51,39 @@
       "name": "Si të gjeneroni paletë ngjyrash nga një ngjyrë bazë",
       "description": "Si të gjeneroni 9 paleta ngjyrash nga një ngjyrë bazë: monokromatike, komplementare, triadike, pastel dhe më shumë.",
       "steps": [
-        { "name": "Zgjidhni ngjyrën bazë", "text": "Shkruani kodin HEX në fushën e tekstit ose përdorni zgjedhësin e ngjyrave për zgjedhje vizuale." },
-        { "name": "Konfirmoni ngjyrën", "text": "Konfirmoni ngjyrën e zgjedhur me butonin Update Color – mjeti gjeneron paletat bazuar në ngjyrën tuaj bazë." },
+        {
+          "name": "Zgjidhni ngjyrën bazë",
+          "text": "Shkruani kodin HEX në fushën e tekstit ose përdorni zgjedhësin e ngjyrave për zgjedhje vizuale."
+        },
+        {
+          "name": "Konfirmoni ngjyrën",
+          "text": "Konfirmoni ngjyrën e zgjedhur me butonin Update Color – mjeti gjeneron paletat bazuar në ngjyrën tuaj bazë."
+        },
         {
           "name": "Shfletoni paletat",
           "text": "Mjeti gjeneron automatikisht 9 paleta të ndryshme: monokromatike, fqinje, komplementare, triadike, komplementare e ndarë, pastel, e errët, tonale dhe minimaliste."
         },
-        { "name": "Kopjoni ngjyrat", "text": "Pranë çdo ngjyre ka buton Kopjo – kodi HEX kopjohet në clipboard-in e sistemit tuaj." }
+        {
+          "name": "Kopjoni ngjyrat",
+          "text": "Pranë çdo ngjyre ka buton Kopjo – kodi HEX kopjohet në clipboard-in e sistemit tuaj."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Pse të gjeneroni paletë ngjyrash?",
       "html": "<p class=\"text-mid\">Paleta konsistente e ngjyrave është baza e çdo projekti vizual – nga faqet e internetit, përmes logove, deri te materialet e shtypura. Zgjedhja manuale e ngjyrave që funksionojnë së bashku kërkon njohuri të teorisë së ngjyrave. Gjeneruesi automatizon këtë proces: shkruani një ngjyrë bazë (p.sh. ngjyrën e logos) dhe mjeti gjeneron 9 grupe ngjyrash bazuar në skema të provuara harmonie ngjyrash.</p><p class=\"text-mid mt-3\">Çdo ngjyrë e gjeneruar ka kodin e saj HEX (p.sh. #4F6BF5) dhe vlerën HSL (hue, saturation, lightness). Kodi HEX mund të ngjitet drejtpërdrejt në CSS, Figma, Canva ose çdo aplikacion grafik.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Si të përdorni gjeneruesin e paletave të ngjyrave",
@@ -73,11 +94,20 @@
           "title": "1. Shkruani ngjyrën bazë",
           "description": "Shkruani kodin HEX (p.sh. #4F6BF5) në fushën e tekstit ose zgjidhni ngjyrën nga zgjedhësi. Mund të përdorni gjithashtu butonin Ngjyrë e rastësishme."
         },
-        { "title": "2. Konfirmoni zgjedhjen tuaj", "description": "Pas klikimit të butonit Update Color, mjeti gjeneron automatikisht 9 paleta bazuar në skema të ndryshme harmonie ngjyrash." },
-        { "title": "3. Kopjoni ngjyrat që ju nevojiten", "description": "Pranë çdo ngjyre ka buton Kopjo – kodi HEX shkon në clipboard dhe mund ta ngjitni drejtpërdrejt në projekt." }
+        {
+          "title": "2. Konfirmoni zgjedhjen tuaj",
+          "description": "Pas klikimit të butonit Update Color, mjeti gjeneron automatikisht 9 paleta bazuar në skema të ndryshme harmonie ngjyrash."
+        },
+        {
+          "title": "3. Kopjoni ngjyrat që ju nevojiten",
+          "description": "Pranë çdo ngjyre ka buton Kopjo – kodi HEX shkon në clipboard dhe mund ta ngjitni drejtpërdrejt në projekt."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Cilat skema ngjyrash gjeneron mjeti?",
@@ -131,14 +161,20 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Në çfarë bazohet gjeneruesi i paletave të ngjyrave?",
       "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° në rrethin e ngjyrave</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
       "html": "<p class=\"text-mid\">Të gjitha paletat krijohen përmes transformimit matematik të ngjyrës bazë në hapësirën e ngjyrave HSL. HSL përshkruan një ngjyrë me tre vlera: hue (H) është pozicioni në rrethin e ngjyrave (0°–360°), saturation (S) përcakton forcën e ngjyrës dhe lightness (L) – sa e lehtë ose e errët është ngjyra.</p><p class=\"text-mid mt-3\">Paletat komplementare, triadike dhe komplementare të ndara bazohen në gjeometrinë e rrethit të ngjyrave – ngjyrat vendosen në intervale të barabarta këndi, duke krijuar ekuilibër vizual. Paletat monokromatike, pastel dhe të errëta ndryshojnë vetëm ndriçimin dhe saturimin duke ruajtur të njëjtin ton.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Ku mund të përdorni paletat e gjeneruara të ngjyrave",
@@ -166,7 +202,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Pyetjet më të shpeshta për gjeneruesin e paletave të ngjyrave",
@@ -194,8 +233,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Zbuloni mjete të tjera" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Zbuloni mjete të tjera"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

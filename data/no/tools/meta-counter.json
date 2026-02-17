@@ -1,0 +1,189 @@
+{
+  "toolKey": "metaCounter",
+  "locale": "no",
+  "metadata": {
+    "title": "Gratis meta-tittel- og beskrivelsessjekker – Bredde i piksler",
+    "description": "Sjekk lengden på meta-tittel og beskrivelse i tegn og piksler. Google SERP-forhåndsvisning hjelper deg å unngå avkortede utdrag. Uten registrering,",
+    "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+    "path": "/no/verktoy/meta-tittel-og-beskrivelse-sjekker"
+  },
+  "hero": {
+    "title": "Sjekk lengden på sidens tittel og beskrivelse i Google",
+    "description": "Skriv inn tittel og beskrivelse, og verktøyet teller antall tegn, ord, bredde i piksler og viser om lengden er i samsvar med anbefalte SEO-praksiser.",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/meta-tittel-og-beskrivelse-sjekker",
+      "label": "Meta-tittel- og beskrivelsessjekker"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Gratis sjekk av meta-tittel- og beskrivelseslengde",
+      "alternateName": ["Meta-tittel- og beskrivelsessjekker med Google-forhåndsvisning", "Google SERP-forhåndsvisning", "SEO-tittelbreddesjekk i piksler"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "SEOTool",
+      "description": "Gratis sjekk av meta-tittel- og beskrivelseslengde. Sjekker antall tegn, ord og bredde i piksler. Viser forhåndsvisning av hvordan tittel og beskrivelse vises i Googles søkeresultater.",
+      "featureList": [
+        "Tegnteller for meta-tittel",
+        "Tegnteller for meta-beskrivelse",
+        "Breddemåling i piksler (tilsvarer Google)",
+        "Ordteller for tittel og beskrivelse",
+        "Forhåndsvisning av Google-søkeresultater",
+        "Fargekodet lengdevurdering (for kort / god / for lang)",
+        "Advarsel ved avkorting av tittel og beskrivelse",
+        "Anbefaling av optimal lengde",
+        "Lokal behandling i nettleseren"
+      ]
+    },
+    "howTo": {
+      "name": "Slik sjekker du lengden på meta-tittel og beskrivelse",
+      "description": "Sjekk lengden på meta-tittel og beskrivelse i piksler og tegn.",
+      "totalTime": "PT3M",
+      "steps": [
+        {
+          "name": "Skriv inn meta-tittel",
+          "text": "Lim inn eller skriv sidens tittel i feltet Meta Title. Verktøyet teller automatisk antall tegn, ord og bredde i piksler."
+        },
+        {
+          "name": "Skriv inn meta-beskrivelse",
+          "text": "Legg til sidens beskrivelse i feltet Meta Description. Du ser de samme målingene."
+        },
+        {
+          "name": "Sjekk Google-forhåndsvisning",
+          "text": "Se hvordan tittel og beskrivelse vises i simulerte Google-søkeresultater."
+        },
+        {
+          "name": "Juster etter anbefalinger",
+          "text": "Hvis status viser For kort eller For lang, juster teksten og følg endringene i sanntid."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hva er meta-tittel og meta-beskrivelse?",
+      "html": "<p class=\"text-mid\">Meta-tittel og meta-beskrivelse er to korte tekster som beskriver innholdet på en nettside. De vises ikke direkte på siden, men dukker opp i Googles søkeresultater som tittelen (blå lenke) og beskrivelsen (grå tekst under tittelen).</p><p class=\"text-mid mt-3\">Velskrevne meta-tagger fungerer som en annonse for siden din i søkeresultatene – de fanger oppmerksomhet og øker sannsynligheten for klikk. Dårlig skrevne eller avkortede tagger kan avskrekke fra å klikke, selv om selve siden er verdifull.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Slik bruker du meta-tittel- og beskrivelsessjekkerern",
+      "description": "Å sjekke lengden på meta-tagger tar ett minutt:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiPencilLine",
+          "title": "1. Skriv inn sidens tittel",
+          "description": "Lim inn eller skriv meta-tittelen i det første feltet. Verktøyet viser umiddelbart tre målinger: antall tegn, ord og bredde i piksler."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Skriv inn sidens beskrivelse",
+          "description": "Legg til meta-beskrivelsen i det andre feltet. Du ser de samme målingene."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "3. Sjekk forhåndsvisning",
+          "description": "Til høyre (desktop) eller nedenfor (mobil) ser du en forhåndsvisning av hvordan tittel og beskrivelse vises i Googles søkeresultater."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "4. Juster etter anbefalinger",
+          "description": "Hvis status viser For kort eller For lang, juster teksten. Endringer ses umiddelbart."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvor mange tegn bør meta-tittel og beskrivelse ha?",
+      "html": "<p class=\"text-mid mb-4\">Google avkorter titler og beskrivelser som er for lange. Nedenfor er anbefalte intervaller som reduserer risikoen for avkortet tekst i søkeresultatene.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Element</th><th class=\"py-2 pr-4 font-semibold\">Tegn</th><th class=\"py-2 pr-4 font-semibold\">Piksler</th><th class=\"py-2 font-semibold\">Merknader</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta-tittel</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 tegn</td><td class=\"py-2 pr-4 whitespace-nowrap\">opptil ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Viktigste nøkkelord først. Merkevare sist.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta-beskrivelse</td><td class=\"py-2 pr-4 whitespace-nowrap\">120–160 tegn</td><td class=\"py-2 pr-4 whitespace-nowrap\">opptil ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">Plass til 2–3 korte setninger. Avslutt med en oppfordring til handling.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Disse er omtrentlige verdier – Google offentliggjør ikke nøyaktige grenser og kan justere dem avhengig av enhet og søkekontekst.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvem er meta-tag-sjekkerern for?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Nettsted- og netthandelseiere",
+          "description": "Sjekk at titler og beskrivelser ikke avkortes i Googles resultater før du publiserer en ny side eller et produkt."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "SEO-spesialister",
+          "description": "Test forskjellige versjoner av titler og beskrivelser, sjekk søkeresultatforhåndsvisning og verifiser samsvar med anbefalinger."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Tekstforfattere",
+          "description": "Skriv titler og beskrivelser som passer innenfor grensene og støtter klikk."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Webutviklere",
+          "description": "Verifiser meta-tagger før siden settes i produksjon."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte spørsmål om meta-tittel- og beskrivelsessjekkerern",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hvorfor viser verktøyet bredde i piksler og ikke bare antall tegn?",
+          "answer": "Forskjellige tegn har forskjellig bredde. Bokstaven &quot;i&quot; tar mye mindre plass enn &quot;m&quot; eller &quot;W&quot;. Google avkorter titler og beskrivelser basert på bredde i piksler, ikke antall tegn.",
+          "answerSchemaText": "Google avkorter basert på bredde i piksler, ikke antall tegn. Forskjellige tegn har forskjellig bredde."
+        },
+        {
+          "question": "Viser Google alltid min meta-tittel og beskrivelse?",
+          "answer": "Ikke alltid. Google kan endre den viste tittelen eller beskrivelsen hvis den finner noe mer passende for brukerens søk. Velskrevne meta-tagger øker sannsynligheten for at Google bruker dem, men det er ingen 100 % garanti.",
+          "answerSchemaText": "Ikke alltid. Google kan endre den viste tittelen eller beskrivelsen for bedre å matche søket."
+        },
+        {
+          "question": "Hva er den optimale lengden på meta-tittel og meta-beskrivelse?",
+          "answer": "Meta-tittel bør ha ca. 50–60 tegn (opptil ~580 piksler bredde). Meta-beskrivelse fungerer best ved 120–160 tegn (opptil ~920 piksler). Disse er omtrentlige verdier – Google offentliggjør ikke nøyaktige grenser.",
+          "answerSchemaText": "Meta-tittel: 50–60 tegn (~580px). Meta-beskrivelse: 120–160 tegn (~920px). Omtrentlige verdier."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforsk flere verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

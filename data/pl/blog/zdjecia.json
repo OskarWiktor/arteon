@@ -22,7 +22,7 @@
       "contentBlocks": [
         {
           "type": "richtext",
-          "html": "<p>Pewnie widzisz to codziennie, ale możesz nie zwracać na to uwagi. Otwórz przeglądarkę i popatrz na zakładki - przy każdej stronie jest mała ikonka. To właśnie <span data-tooltip='Favicon (favorites icon) to mała ikona wyświetlana w zakładce przeglądarki, na liście ulubionych i w wynikach wyszukiwania.'>favicon</span>.</p><br/><p>Favicon to taka wizualna wizytówka Twojej <a class='inline-link' href='/uslugi/strony-internetowe'>strony internetowej</a> w przeglądarce. Pojawia się w zakładkach, na liście ulubionych, w historii przeglądania, a nawet w wynikach wyszukiwania Google na urządzeniach mobilnych.</p><br/><p>Brzmi prosto? W teorii tak. W praktyce wielu właścicieli stron ma z tym problem - favicon nie wyświetla się prawidłowo, <span data-tooltip='Lighthouse to narzędzie Google do audytu stron internetowych pod kątem wydajności, dostępności i SEO.'>Lighthouse</span> zgłasza błędy, a na telefonie zamiast ładnej ikonki pojawia się szary kwadrat.</p><br/><p>W tym artykule wyjaśniamy: czym dokładnie jest favicon i dlaczego jest ważny, jakie pliki są potrzebne, jak uniknąć typowych błędów, oraz jak stworzyć cały zestaw w kilka minut za darmo za pomocą naszego <a class='inline-link' href='/narzedzia/darmowy-generator-favicon-ico'>generatora favicon</a>.</p>",
+          "html": "<p>Pewnie widzisz to codziennie, ale możesz nie zwracać na to uwagi. Otwórz przeglądarkę i popatrz na zakładki - przy każdej stronie jest mała ikonka. To właśnie <span data-tooltip='Favicon (favorites icon) to mała ikona wyświetlana w zakładce przeglądarki, na liście ulubionych i w wynikach wyszukiwania.'>favicon</span>.</p><br/><p>Favicon to taka wizualna wizytówka Twojej <a class='inline-link' href='/uslugi/tworzenie-stron-wordpress'>strony internetowej</a> w przeglądarce. Pojawia się w zakładkach, na liście ulubionych, w historii przeglądania, a nawet w wynikach wyszukiwania Google na urządzeniach mobilnych.</p><br/><p>Brzmi prosto? W teorii tak. W praktyce wielu właścicieli stron ma z tym problem - favicon nie wyświetla się prawidłowo, <span data-tooltip='Lighthouse to narzędzie Google do audytu stron internetowych pod kątem wydajności, dostępności i SEO.'>Lighthouse</span> zgłasza błędy, a na telefonie zamiast ładnej ikonki pojawia się szary kwadrat.</p><br/><p>W tym artykule wyjaśniamy: czym dokładnie jest favicon i dlaczego jest ważny, jakie pliki są potrzebne, jak uniknąć typowych błędów, oraz jak stworzyć cały zestaw w kilka minut za darmo za pomocą naszego <a class='inline-link' href='/narzedzia/darmowy-generator-favicon-ico'>generatora favicon</a>.</p>",
           "breakAfter": true
         },
         {
@@ -85,7 +85,7 @@
         "btnOne": "Otwórz generator favicon",
         "btnOneLink": "/narzedzia/darmowy-generator-favicon-ico",
         "btnTwo": "Zobacz ofertę stron internetowych",
-        "btnTwoLink": "/uslugi/strony-internetowe",
+        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
         "backgroundImage": "/assets/blog/favicon-i-ikony-strony-co-przygotowac/favicon-i-ikony-strony-co-przygotowac.webp",
         "overlay": "black"
       },
@@ -149,7 +149,7 @@
       "contentBlocks": [
         {
           "type": "richtext",
-          "html": "<p>Zdjęcia i grafiki potrafią ważyć więcej niż cała reszta strony razem wzięta. Na przeciętnej <a class='inline-link' href='/uslugi/strony-internetowe'>stronie internetowej</a> obrazy stanowią 50-70% całkowitej wagi. Jeśli nie zadbasz o ich format, rozmiar i kompresję, strona będzie wczytywać się wolno, wynik w PageSpeed będzie niższy, a użytkownik zamknie stronę nie sprawdzając oferty.</p><br/><p>W tym artykule wyjaśniamy szczegółowo: jak działają różne formaty obrazów (JPEG, PNG, SVG, WebP, AVIF) i kiedy który wybrać, jak dobrać rozmiar zdjęcia do layoutu strony, jak działa kompresja stratna i bezstratna, czym są srcset i lazy loading, oraz jak optymalizować zdjęcia pod kątem SEO.</p>",
+          "html": "<p>Zdjęcia i grafiki potrafią ważyć więcej niż cała reszta strony razem wzięta. Na przeciętnej <a class='inline-link' href='/uslugi/tworzenie-stron-wordpress'>stronie internetowej</a> obrazy stanowią 50-70% całkowitej wagi. Jeśli nie zadbasz o ich format, rozmiar i kompresję, strona będzie wczytywać się wolno, wynik w PageSpeed będzie niższy, a użytkownik zamknie stronę nie sprawdzając oferty.</p><br/><p>W tym artykule wyjaśniamy szczegółowo: jak działają różne formaty obrazów (JPEG, PNG, SVG, WebP, AVIF) i kiedy który wybrać, jak dobrać rozmiar zdjęcia do layoutu strony, jak działa kompresja stratna i bezstratna, czym są srcset i lazy loading, oraz jak optymalizować zdjęcia pod kątem SEO.</p>",
           "breakAfter": true
         },
         {

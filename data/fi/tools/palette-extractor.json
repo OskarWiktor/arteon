@@ -1,0 +1,243 @@
+{
+  "toolKey": "paletteExtractor",
+  "locale": "fi",
+  "metadata": {
+    "title": "Ilmainen värien poiminta kuvasta – Paletti mistä tahansa valokuvasta",
+    "description": "Lataa valokuva tai logo ja poimi jopa 12 hallitsevaa väriä HEX- ja RGB-koodeilla. Sopii käyttöliittymäsuunnitteluun, brändäykseen ja sosiaaliseen mediaan.",
+    "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
+    "path": "/fi/tyokalut/varien-poiminta-kuvasta"
+  },
+  "hero": {
+    "title": "Värien poiminta kuvasta – poimi paletti mistä tahansa valokuvasta",
+    "description": "Lataa valokuva, logo tai grafiikka, ja työkalu poimii jopa 12 hallitsevaa väriä HEX- ja RGB-koodeilla. Analyysi tapahtuu paikallisesti selaimessasi.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/varien-poiminta-kuvasta",
+      "label": "Värien poiminta kuvasta"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Värien poiminta kuvasta – ilmainen palettigeneraattori",
+      "alternateName": ["Poimi väripaletti valokuvasta tai logosta"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorExtractor",
+      "description": "Ilmainen värien poiminta kuvasta. Lataa valokuva, logo tai grafiikka ja saat paletin, jossa on jopa 12 hallitsevaa väriä HEX- ja RGB-koodeilla. Käsittely tapahtuu selaimessa – tiedostoja ei lähetetä palvelimelle.",
+      "featureList": [
+        "Automaattinen jopa 12 hallitsevan värin poiminta",
+        "Kuvien, logojen ja vektorigrafiikan analyysi",
+        "Värikoodit HEX- ja RGB-muodossa",
+        "Kopioi värikoodi leikepöydälle",
+        "Tuki PNG-, JPG- ja SVG-tiedostoille",
+        "Ohittaa läpinäkyvät pikselit PNG-tiedostoissa",
+        "Paikallinen käsittely selaimessa – kuvaa ei lähetetä palvelimelle"
+      ]
+    },
+    "howTo": {
+      "name": "Näin poimit värejä valokuvasta tai kuvasta",
+      "description": "Näin poimit hallitsevat värit valokuvasta tai logosta. Lataa kuva PNG-, JPG- tai SVG-muodossa, ja työkalu luo paletin, jossa on jopa 12 väriä HEX-koodeilla.",
+      "steps": [
+        {
+          "name": "Lataa kuva",
+          "text": "Vedä ja pudota tiedosto merkittyyn alueeseen tai valitse kuva laitteeltasi. Tuetut muodot ovat PNG, JPG ja SVG."
+        },
+        {
+          "name": "Odota analyysiä",
+          "text": "Työkalu analysoi kuvan automaattisesti ja poimii hallitsevat värit."
+        },
+        {
+          "name": "Kopioi värit",
+          "text": "Jokaisen värin vieressä on kopiointipainike – HEX-koodi kopioituu järjestelmän leikepöydälle."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miksi poimia värejä kuvasta?",
+      "html": "<p class=\"mb-4\">Jokainen valokuva, logo tai grafiikka sisältää värejä, joita voi käyttää valmiina väripalettina. Poimija analysoi kuvan ja näyttää, mitkä värit hallitsevat – yhdessä HEX-koodien ja RGB-arvojen kanssa, valmiina liitettäväksi projektiin.</p><p class=\"mb-4\">Käytännössä tämä tarkoittaa, että sen sijaan, että poimit värejä manuaalisesti grafiikkaohjelmassa (pikseli pikseliltä), lataat yhden kuvan ja saat järjestetyn listan jopa 12 väristä. Tämä on hyödyllistä verkkosivuston värien valinnassa, yhtenäisen sosiaalisen median grafiikan luomisessa tai visuaalisen identiteetin rakentamisessa olemassa olevista materiaaleista.</p><p>Kaikki analyysi tapahtuu paikallisesti selaimessa – kuvaa ei lähetetä palvelimelle.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Näin käytät värien poimintaa kuvasta",
+      "description": "Koko prosessi kestää vain muutaman sekunnin:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Lataa kuva",
+          "description": "Vedä ja pudota tiedosto merkittyyn alueeseen tai valitse se laitteeltasi. Tuetut muodot ovat PNG, JPG ja SVG."
+        },
+        {
+          "title": "2. Odota analyysiä",
+          "description": "Työkalu analysoi kuvan automaattisesti ja poimii jopa 12 hallitsevaa väriä."
+        },
+        {
+          "title": "3. Kopioi tarvitsemasi värit",
+          "description": "Jokaisen värin vieressä on kopiointipainike – HEX- tai RGB-koodi kopioituu leikepöydälle ja voidaan liittää suoraan projektiin."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Miltä poimittu väripaletti näyttää?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Esimerkki maisemavalokuvasta poimituista väreistä</p></div>",
+      "html": "<p class=\"text-mid mb-4\">Kuvan lataamisen jälkeen poimija näyttää luettelon hallitsevista väreistä järjestettynä eniten esiintyvästä vähiten esiintyvään. Jokainen väri näyttää HEX-koodinsa ja RGB-arvonsa – valmiina liitettäväksi CSS:ään, Figmaan tai mihin tahansa grafiikkasovellukseen.</p><p class=\"text-mid\">Poimittujen värien määrä riippuu kuvan sisällöstä. Maisemavalokuva tuottaa rikkaamman paletin (8–12 väriä), kun taas yksinkertainen kaksivärinen logo tuottaa vähemmän elementtejä.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mitkä kuvat tuottavat parhaat tulokset?",
+      "description": "Poimitun paletin laatu riippuu ladatun kuvan tyypistä:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiImageLine",
+          "title": "Logot ja grafiikka rajoitetulla paletilla",
+          "description": "Kuvat, joissa on muutama selkeästi erottuva väri, tuottavat tarkimmat tulokset – poimija tunnistaa jokaisen värin tarkasti."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Kuvat, joissa on selkeä aihe",
+          "description": "Tuotekuvat, sisustuskuvat tai maisemat tuottavat myös hyödyllisiä paletteja, mutta sisältävät enemmän sävyjä – mukaan lukien varjo- ja heijastusvärit."
+        },
+        {
+          "icon": "RiEraserLine",
+          "title": "PNG-tiedostot läpinäkyvällä taustalla",
+          "description": "Läpinäkyvät pikselit ohitetaan automaattisesti analyysin aikana. Jos haluat poimia värejä vain kohteesta (esim. logosta), käytä PNG-tiedostoa ilman taustaa."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Kuvat ilman suurta yksivärista taustaa",
+          "description": "Kun tausta täyttää enemmän kuin itse kohde, sen väri hallitsee tuloksia. Ennen lataamista harkitse kuvan rajaamista kiinnostavaan alueeseen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä värien poimijasta erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Paikallinen analyysi – kuva ei poistu tietokoneeltasi",
+          "description": "Kaikki värien poiminta tapahtuu selaimessa. Kuvaa ei lähetetä palvelimelle, ja sivun sulkemisen jälkeen tiedot poistetaan muistista."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Jopa 12 hallitsevaa väriä yhdestä kuvasta",
+          "description": "Työkalu poimii jopa 12 väriä järjestettynä eniten esiintyvästä – riittävästi kattavan projektin väripaletin rakentamiseen."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Kolme suosittua kuvamuotoa",
+          "description": "Tuetut muodot ovat PNG, JPG ja SVG. PNG-tiedostot läpinäkyvällä taustalla tuottavat parhaat tulokset."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "HEX- ja RGB-koodit valmiina liitettäväksi",
+          "description": "Jokaisella poimitulla värillä on oma HEX-koodinsa (esim. #2C5F2D) ja RGB-arvo. Koodi voidaan kopioida leikepöydälle ja liittää suoraan CSS:ään, Figmaan tai Photoshopiin."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Missä poimitut värit ovat hyödyllisiä",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Rakenna visuaalinen identiteetti",
+          "description": "Lataa valokuva, joka vangitsee brändin tunnelman, ja poimi värit brändin väripaletin lähtökohdaksi."
+        },
+        {
+          "icon": "RiLayoutMasonryLine",
+          "title": "Sosiaalisen median grafiikka",
+          "description": "Poimi värit tuotekuvista ja käytä niitä taustoina tai korostuksina grafiikassa. Samasta lähteestä poimittuihin väreihin perustuvat julkaisut näyttävät yhtenäisiltä."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Sovita värit verkkosivustoon",
+          "description": "Poimi värit logosta ja käytä niitä verkkosivuston väripalettina – pääväri, korostusväri, taustan sävyt. HEX-koodit liitetään suoraan CSS:ään."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Laajenna olemassa olevaa palettia",
+          "description": "Poimittu perusväri voidaan käyttää <a href=\"/fi/tyokalut/varipaletti-generaattori\">väripalettien generaattorissa</a> luomaan täydellinen harmonisten värien sarja väriteorian perusteella."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset värien poiminnasta kuvasta",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Vaatiiko värien poimija rekisteröitymisen?",
+          "answer": "Ei. Työkalu on täysin ilmainen eikä vaadi kirjautumista tai rekisteröitymistä. Kuva analysoidaan paikallisesti selaimessa – sitä ei lähetetä palvelimelle.",
+          "answerSchemaText": "Ei. Työkalu on ilmainen eikä vaadi rekisteröitymistä. Kuva analysoidaan paikallisesti selaimessa."
+        },
+        {
+          "question": "Miten värien poimija eroaa palettigeneraattorista?",
+          "answer": "Poimija hakee värejä olemassa olevasta kuvasta – se analysoi valokuvan ja näyttää, mitkä värit hallitsevat. Väripalettien generaattori toimii päinvastoin: syötät perusvärin, ja työkalu luo harmonisia sarjoja väriteorian perusteella. Molemmat työkalut täydentävät toisiaan.",
+          "answerSchemaText": "Poimija hakee värejä kuvasta. Generaattori luo paletin perusväristä. Molemmat työkalut täydentävät toisiaan."
+        },
+        {
+          "question": "Kuinka monta väriä poimija poimii yhdestä kuvasta?",
+          "answer": "Työkalu poimii jopa 12 hallitsevaa väriä. Tarkka määrä riippuu kuvan sisällöstä – jos grafiikassa on vain kaksi väriä (esim. yksinkertainen logo), tulokset sisältävät vähemmän elementtejä.",
+          "answerSchemaText": "Jopa 12 hallitsevaa väriä, järjestettynä eniten esiintyvästä vähiten esiintyvään."
+        },
+        {
+          "question": "Mitä kuvamuotoja värien poimija tukee?",
+          "answer": "Tuetut muodot ovat PNG, JPG (JPEG) ja SVG. PNG-tiedostot läpinäkyvällä taustalla tuottavat parempia tuloksia, koska läpinäkyvät pikselit ohitetaan analyysin aikana.",
+          "answerSchemaText": "PNG, JPG ja SVG. Läpinäkyvä tausta PNG-muodossa tuottaa parhaat tulokset."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tutustu muihin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

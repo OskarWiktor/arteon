@@ -38,6 +38,7 @@ interface HeroBannerProps {
   emitImageMicrodata?: boolean;
   variant?: 'left' | 'center' | 'right';
   overlay?: 'none' | 'black' | 'white';
+  size?: 'default' | 'tools';
   contentMaxWidthClass?: string;
 }
 
@@ -62,18 +63,20 @@ export default function HeroBanner({
   emitImageMicrodata = false,
   variant = 'left',
   overlay = 'none',
+  size = 'default',
 }: HeroBannerProps) {
-  const hasBg = Boolean(backgroundImage);
+  const isTools = size === 'tools';
+  const hasBg = isTools ? false : Boolean(backgroundImage);
 
-  const isDarkOverlay = overlay === 'black';
+  const isDarkOverlay = isTools ? false : overlay === 'black';
 
   const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/80' : '';
 
   const toneTextClass = isDarkOverlay ? 'text-white' : 'text-dark';
   const toneMutedClass = isDarkOverlay ? 'text-white' : 'text-dark opacity-80';
 
-  const baseBg = overlay === 'black' ? 'bg-black' : 'bg-white';
-  const contentBgClass = overlay === 'black' ? 'bg-black/60' : overlay === 'white' ? 'bg-white/50' : '';
+  const baseBg = isTools ? 'bg-transparent' : overlay === 'black' ? 'bg-black' : 'bg-white';
+  const contentBgClass = isTools ? '' : overlay === 'black' ? 'bg-black/60' : overlay === 'white' ? 'bg-white/50' : '';
 
   const textAlign = variant === 'center' ? 'text-left md:text-center' : variant === 'right' ? 'text-right' : 'text-left';
 
@@ -96,14 +99,20 @@ export default function HeroBanner({
         id="hero"
         aria-labelledby="hero-title"
         aria-describedby={description ? 'hero-description' : undefined}
-        className={`relative ${baseBg} flex h-auto min-h-[400px] items-center overflow-hidden py-10 md:min-h-[440px] md:py-0 lg:min-h-[460px]`}
+        className={
+          isTools
+            ? `relative ${baseBg} flex h-auto items-center overflow-hidden pt-4 pb-2 md:pt-7`
+            : `relative ${baseBg} flex h-auto min-h-[400px] items-center overflow-hidden py-10 md:min-h-[440px] md:py-0 lg:min-h-[460px]`
+        }
       >
         {hasBg && backgroundImage && (
           <Image src={backgroundImage} alt={computedBackgroundAlt} fill priority sizes="100vw" className="object-cover object-center" itemProp={emitImageMicrodata ? 'image' : undefined} />
         )}
         {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
         <Wrapper className="relative flex h-auto items-center">
-          <div className={`max-w-[100vw] md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-5 pt-4 md:p-7 ${contentBgClass} hyphens-auto`}>
+          <div
+            className={`max-w-[100vw] ${isTools ? 'text-center md:w-[100%]' : 'md:max-w-[65%]'} ${contentAnchor} ${textAlign} ${toneTextClass} ${isTools ? '' : 'rounded-2xl p-5 pt-4 md:p-7'} ${contentBgClass} hyphens-auto`}
+          >
             {subtitle && (
               <Eyebrow variant="hero" className={` ${toneMutedClass}`}>
                 {subtitle}
@@ -123,12 +132,12 @@ export default function HeroBanner({
               </nav>
             )}
             {title && (
-              <h1 id="hero-title" className="text-wrap:pretty text-wrap">
+              <h1 id="hero-title" className={`text-wrap:pretty text-wrap ${isTools ? 'h4 text-center' : ''}`}>
                 {title}
               </h1>
             )}
             {description && (
-              <p id="hero-description" className={`text-wrap:pretty mt-3 text-base leading-relaxed md:mt-5 ${isDarkOverlay ? 'text-white' : 'text-dark opacity-80'}`}>
+              <p id="hero-description" className={`text-wrap:pretty ${isTools ? 'mt-2 text-center md:mt-3' : 'mt-3 md:mt-5'} text-base leading-relaxed ${isDarkOverlay ? 'text-white' : 'text-mid'}`}>
                 {description}
               </p>
             )}

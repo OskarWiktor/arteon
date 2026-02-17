@@ -1,0 +1,232 @@
+{
+  "toolKey": "wordCounter",
+  "locale": "fi",
+  "metadata": {
+    "title": "Ilmainen sana- ja merkkilaskuri – Tarkista tekstin pituus SEO:ta varten",
+    "description": "Laske sanat, merkit, kappaleet ja lukuaika välittömästi. Tarkista optimaalinen tekstin pituus SEO:ta varten – blogikirjoitus, tuotesivu, laskeutumissivu.",
+    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "path": "/fi/tyokalut/sana-ja-merkkilaskuri"
+  },
+  "hero": {
+    "title": "Sana- ja merkkilaskuri pituusarviolla",
+    "description": "Liitä teksti, valitse sivutyyppi, ja työkalu näyttää sanojen, merkkien ja kappaleiden lukumäärän sekä arvioi, vastaako pituus valittua sisältötyyppiä.",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/sana-ja-merkkilaskuri",
+      "label": "Sana- ja merkkilaskuri"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Ilmainen sana- ja merkkilaskuri",
+      "alternateName": ["Sanalaskuri pituusarviolla", "Merkkilaskuri", "Lukuaikalaskin", "Sanalaskuri SEO:ta varten"],
+      "applicationSubCategory": "TextApplication",
+      "description": "Ilmainen sana- ja merkkilaskuri. Tarkistaa sanojen, merkkien, kappaleiden ja arvioidun lukuajan. Arvioi tekstin pituuden eri sivutyypeille.",
+      "featureList": [
+        "Sanojen lukumäärä",
+        "Merkkien lukumäärä välilyönneillä ja ilman",
+        "Kappaleiden lukumäärä",
+        "Arvioitu lukuaika",
+        "Pituusarvio eri sivutyypeille",
+        "Suositellut vaihteluvälit: tuotekuvaus, palvelusivu, etusivu, laskeutumissivu, blogikirjoitus, opas",
+        "Kopioi raportti leikepöydälle"
+      ]
+    },
+    "howTo": {
+      "name": "Näin käytät sana- ja merkkilaskuria",
+      "description": "Tarkista tekstin pituus ja arvioi, sopiiko se tiettyyn sivutyyppiin.",
+      "steps": [
+        {
+          "name": "Valitse sivutyyppi",
+          "text": "Valitse luettelosta, mille sivutyypille kirjoitat. Jokaisella tyypillä on oma suositeltu sanamäärävälinsä."
+        },
+        {
+          "name": "Liitä teksti",
+          "text": "Liitä tai kirjoita teksti tekstikenttään. Työkalu laskee automaattisesti sanat, merkit, kappaleet ja arvioi lukuajan."
+        },
+        {
+          "name": "Tarkista arvio",
+          "text": "Katso värikoodattua mittaria ja tilaa. Vihreä tarkoittaa sopivaa pituutta, keltainen liian lyhyttä, punainen liian pitkää."
+        },
+        {
+          "name": "Kopioi raportti",
+          "text": "Kopioi raportti -painike kopioi yhteenvedon kaikista tilastoista ja pituusarviosta leikepöydälle."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Ilmainen sanalaskuri – laske ja arvioi tekstin pituus",
+      "html": "<p class=\"text-mid\">Tämä työkalu mahdollistaa minkä tahansa tekstin pituuden nopean tarkistamisen. Liitä sisältö, ja laskuri laskee sanat, merkit ja kappaleet. Näet myös, kuinka monta minuuttia lukeminen kestää ja sopiiko pituus valittuun sivutyyppiin.</p><p class=\"text-mid mt-3\">Jokainen sivutyyppi palvelee eri tarkoitusta – tuotekuvaus vastaa ostajan kysymyksiin, blogikirjoitus käsittelee aihetta syvällisesti ja palvelusivu kertoo, mitä asiakas saa. Laskuri näyttää kullekin tyypille vaihteluvälit, jotka perustuvat menestyneen sisällön analyysiin.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Näin käytät sana- ja merkkilaskuria",
+      "description": "Tekstin pituuden tarkistaminen kestää alle minuutin:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiListCheck2",
+          "title": "1. Valitse sivutyyppi",
+          "description": "Valitse luettelosta, mille sivutyypille kirjoitat. Jokaisella tyypillä on oma suositeltu sanamääräväli."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Liitä teksti",
+          "description": "Liitä tai kirjoita teksti suureen tekstikenttään oikealla. Työkalu laskee välittömästi sanat, merkit, kappaleet ja arvioi lukuajan."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "3. Tarkista arvio",
+          "description": "Katso värikoodattua mittaria ja tilaa. Vihreä tarkoittaa sopivaa pituutta, keltainen liian lyhyttä, punainen liian pitkää."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Kopioi raportti",
+          "description": "Kopioi raportti -painike kopioi yhteenvedon sanojen, merkkien ja kappaleiden lukumäärästä, lukuajasta ja pituusarviosta leikepöydälle."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mitä laskuri mittaa – sanat, merkit, lukuaika",
+      "description": "Laskuri seuraa viittä tunnuslukua:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiText",
+          "title": "Sanat",
+          "description": "Sanojen kokonaismäärä. Tekstin pituuden pääindikaattori."
+        },
+        {
+          "icon": "RiSpaceShipLine",
+          "title": "Merkit (välilyönneillä)",
+          "description": "Kaikki merkit välilyönnit mukaan lukien. Tärkeä, kun sisällönhallintajärjestelmässä on merkkiraja."
+        },
+        {
+          "icon": "RiHashtag",
+          "title": "Merkit (ilman välilyöntejä)",
+          "description": "Vain kirjaimet, numerot ja symbolit. Joskus painotalojen tai käännöslaskutuksen vaatima."
+        },
+        {
+          "icon": "RiParagraph",
+          "title": "Kappaleet",
+          "description": "Tyhjillä riveillä erotettujen tekstilohkojen lukumäärä. Auttaa arvioimaan, onko tekstin rakenne hyvä."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Lukuaika",
+          "description": "Lukuaikalaskin näyttää, kuinka monta minuuttia tekstin lukeminen kestää keskimääräisellä 200 sanan minuuttinopeudella."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kuinka monta sanaa tekstissä pitäisi olla – optimaalinen pituus SEO:ta varten",
+      "html": "<p class=\"text-mid mb-4\">Alla olevat vaihteluvälit perustuvat hakukoneissa hyvin menestyvän sisällön analyysiin. Tekstin pituus itsessään ei vaikuta Google-sijoitukseen – ratkaisevaa on, vastaako sisältö lukijan kysymykseen.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Sivutyyppi</th><th class=\"py-2 pr-4 font-semibold\">Vaihteluväli</th><th class=\"py-2 font-semibold\">Milloin lyhyempi, milloin pidempi?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Tuotekuvaus</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 sanaa</td><td class=\"text-primary-light0 py-2 text-sm\">Yksinkertainen tuote – 80–150. Monimutkainen laite – 300–400.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Palvelusivu</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 sanaa</td><td class=\"text-primary-light0 py-2 text-sm\">Paikallinen palvelu – 500–700. B2B-palvelu prosessilla ja UKK:lla – 1 200–1 500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Etusivu</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 sanaa</td><td class=\"text-primary-light0 py-2 text-sm\">Etusivu esittelee avainarvon ja ohjaa kävijän eteenpäin.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Laskeutumissivu</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 sanaa</td><td class=\"text-primary-light0 py-2 text-sm\">Yksinkertainen tarjous – 600–1 000. Selitystä vaativa tarjous – 1 500–2 500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blogikirjoitus</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 sanaa</td><td class=\"text-primary-light0 py-2 text-sm\">Lyhyt ohje – 1 200–1 500. Yksityiskohtainen opas – 2 500–3 000.</td></tr><tr><td class=\"py-2 pr-4\">Opas / pillar page</td><td class=\"py-2 pr-4 whitespace-nowrap\">3000–7000 sanaa</td><td class=\"text-primary-light0 py-2 text-sm\">Kokoaa kaiken aiheesta yhteen paikkaan. Toimii sisältöpohjana.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kuka voi hyötyä sanalaskurista?",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiEditLine",
+          "title": "Tekstinkirjoittajat ja sisällöntuottajat",
+          "description": "Tarkista, onko teksti suositellun vaihteluvälin sisällä tiettyyn sivutyyppiin."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Bloggaajat",
+          "description": "Seuraa artikkelien pituutta johdonmukaisuuden vuoksi. Tarkista lukuaika ennen julkaisua."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Verkkokauppiaat",
+          "description": "Tarkista tuotekuvaukset myyntialustojen merkkirajoituksia vasten."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "SEO-asiantuntijat",
+          "description": "Arvioi, onko sivun sisällön pituus optimaalinen kilpailijoihin nähden."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Opiskelijat ja tutkijat",
+          "description": "Tarkista, täyttääkö työ vaaditun sana- tai merkkimäärän."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Kääntäjät",
+          "description": "Laske merkit ilman välilyöntejä käännöshinnoittelua varten."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset sana- ja merkkilaskurista",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Vaikuttaako tekstin pituus Google-sijoitukseen?",
+          "answer": "Tekstin pituus itsessään ei ole sijoitustekijä. Google arvioi, vastaako sisältö käyttäjän kysymykseen ja onko se hänelle arvokasta.",
+          "answerSchemaText": "Tekstin pituus ei ole suora sijoitustekijä. Google arvioi sisällön arvoa käyttäjälle."
+        },
+        {
+          "question": "Miksi sanamäärävälit ovat niin laajat?",
+          "answer": "Sama sivutyyppi voi vaatia eri pituuksia aiheen monimutkaisuudesta riippuen. Yksinkertainen tuotekuvaus on 80–150 sanaa. Kannettavan tietokoneen kuvaus on 300–400 sanaa, koska ostajalla on enemmän kysymyksiä.",
+          "answerSchemaText": "Erot johtuvat aiheen monimutkaisuudesta – yksinkertainen tuote vaatii vähemmän sanoja kuin monimutkainen."
+        },
+        {
+          "question": "Miten lukuaikalaskin toimii?",
+          "answer": "Työkalu jakaa sanamäärän 200:lla – tavallisen tekstin keskimääräisellä lukunopeudella. Teknistä tekstiä luetaan hitaammin. Tulos on likimääräinen arvo.",
+          "answerSchemaText": "Työkalu olettaa keskimääräisen lukunopeuden olevan 200 sanaa minuutissa. Se on likimääräinen arvo."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tutustu muihin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

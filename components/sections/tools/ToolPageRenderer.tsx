@@ -23,9 +23,11 @@ import AdSense from '@/components/ui/AdSense';
 
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 import { getToolAlternates, getToolSoftwareSchema, getToolHowToSchema, getToolWebPageSchema } from '@/lib/i18n/pages/tool-meta';
+import { getToolHref } from '@/lib/i18n/tool-registry';
 import { getToolIcon } from '@/lib/tools/icon-registry';
 
 export function generateToolMetadata(data: ToolPageData): Metadata {
+  const canonicalPath = getToolHref(data.toolKey as ToolItemKey, data.locale as Locale);
   return {
     title: data.metadata.title,
     description: data.metadata.description,
@@ -40,7 +42,7 @@ export function generateToolMetadata(data: ToolPageData): Metadata {
     openGraph: {
       title: data.metadata.title,
       description: data.metadata.description,
-      url: toAbsoluteUrl(data.metadata.path),
+      url: toAbsoluteUrl(canonicalPath),
       type: 'website',
       images: [{ url: toAbsoluteUrl(data.metadata.ogImage), width: 1200, height: 630 }],
     },
@@ -169,9 +171,9 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
       <Script id={`ld-json-${data.toolKey}-software-${data.locale}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
       <Script id={`ld-json-${data.toolKey}-howto-${data.locale}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
-      <HeroBanner title={data.hero.title} description={data.hero.description} overlay="black" backgroundImage={data.hero.backgroundImage} />
+      <HeroBanner title={data.hero.title} description={data.hero.description} overlay="black" backgroundImage={data.hero.backgroundImage} size="tools" />
 
-      <Breadcrumbs second={data.breadcrumbs.second} third={data.breadcrumbs.third} includeJsonLd locale={data.locale} />
+      <Breadcrumbs second={data.breadcrumbs.second} third={data.breadcrumbs.third} includeJsonLd size="compact" locale={data.locale} />
 
       <ToolEditorLayout>
         <AdSense variant="tool-banner" className="my-3" />

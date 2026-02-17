@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Gratis favicon-generator – ICO och PNG från en bild",
     "description": "Generera favicon.ico och PNG-ikoner från en enda bild, i enlighet med webbläsar- och Lighthouse-krav. Utan registrering, fungerar i webbläsaren.",
-    "ogImage": "/assets/tools/narzedzia-generator-favicon.webp",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
     "path": "/sv/verktyg/gratis-favicon-generator"
   },
   "hero": {
     "title": "Generera favicon.ico och PNG-ikoner från en bild",
     "description": "Ladda upp en bild och verktyget genererar favicon.ico och en komplett uppsättning PNG-ikoner som behövs för webbläsare, mobila enheter och Lighthouse.",
-    "backgroundImage": "/assets/tools/narzedzia-generator-favicon.webp"
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
   "breadcrumbs": {
     "second": { "href": "/sv/verktyg", "label": "Verktyg" },

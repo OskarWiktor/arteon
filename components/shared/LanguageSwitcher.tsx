@@ -43,6 +43,12 @@ const switchTitle: Record<Locale, string> = {
   sv: 'Byt till svenska',
   sq: 'Kalo n\u00eb shqip',
   da: 'Skift til dansk',
+  no: 'Bytt til norsk',
+  fi: 'Vaihda suomeksi',
+  sk: 'Prepnúť na slovenčinu',
+  hr: 'Prebaci na hrvatski',
+  lt: 'Perjungti į lietuvių',
+  sl: 'Preklopi na slovenščino',
 };
 
 const toggleLabel: Record<Locale, string> = {
@@ -66,6 +72,12 @@ const toggleLabel: Record<Locale, string> = {
   sv: '\u00c4ndra spr\u00e5k',
   sq: 'Ndrysho gjuh\u00ebn',
   da: 'Skift sprog',
+  no: 'Bytt spr\u00e5k',
+  fi: 'Vaihda kieltä',
+  sk: 'Zmeni\u0165 jazyk',
+  hr: 'Promijeni jezik',
+  lt: 'Pakeisti kalb\u0105',
+  sl: 'Spremeni jezik',
 };
 
 const chooseLabel: Record<Locale, string> = {
@@ -89,6 +101,12 @@ const chooseLabel: Record<Locale, string> = {
   sv: 'V\u00e4lj spr\u00e5k',
   sq: 'Zgjidh gjuh\u00ebn',
   da: 'V\u00e6lg sprog',
+  no: 'Velg spr\u00e5k',
+  fi: 'Valitse kieli',
+  sk: 'Vyberte jazyk',
+  hr: 'Odaberite jezik',
+  lt: 'Pasirinkite kalb\u0105',
+  sl: 'Izberite jezik',
 };
 
 const popularLabel: Record<Locale, string> = {
@@ -112,6 +130,12 @@ const popularLabel: Record<Locale, string> = {
   sv: 'Popul\u00e4ra',
   sq: 'T\u00eb njohura',
   da: 'Popul\u00e6re',
+  no: 'Popul\u00e6re',
+  fi: 'Suositut',
+  sk: 'Ob\u013e\u00faben\u00e9',
+  hr: 'Popularni',
+  lt: 'Populiar\u016bs',
+  sl: 'Priljubljeni',
 };
 
 const otherLabel: Record<Locale, string> = {
@@ -135,6 +159,12 @@ const otherLabel: Record<Locale, string> = {
   sv: '\u00d6vriga',
   sq: 'T\u00eb tjera',
   da: 'Andre',
+  no: 'Andre',
+  fi: 'Muut',
+  sk: 'Ostatn\u00e9',
+  hr: 'Ostali',
+  lt: 'Kiti',
+  sl: 'Ostali',
 };
 
 const closeModalLabel: Record<Locale, string> = {
@@ -158,6 +188,12 @@ const closeModalLabel: Record<Locale, string> = {
   sv: 'St\u00e4ng',
   sq: 'Mbyll',
   da: 'Luk',
+  no: 'Lukk',
+  fi: 'Sulje',
+  sk: 'Zavrie\u0165',
+  hr: 'Zatvori',
+  lt: 'U\u017edaryti',
+  sl: 'Zapri',
 };
 
 const POPULAR_LOCALES: Locale[] = ['pl', 'en', 'de', 'es', 'fr', 'pt', 'it'];
@@ -247,7 +283,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
   const popularSorted = [...popular].sort((a, b) => a.name.localeCompare(b.name));
   const otherSorted = [...other].sort((a, b) => a.name.localeCompare(b.name));
   const popularCols = splitIntoColumns(popularSorted, 2);
-  const otherCols = splitIntoColumns(otherSorted, 3);
+  const otherCols = splitIntoColumns(otherSorted, 4);
 
   const linkItem = (link: AlternateLink) => (
     <Link
@@ -296,7 +332,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
               style={{ top: headerBottom }}
             >
               <Wrapper>
-                <div className="grid grid-cols-6 gap-0">
+                <div className="grid grid-cols-7 gap-0">
                   {/* Column 1: Current language */}
                   <div className="border-primary-light border-r pr-4">
                     <div className="text-primary flex items-center gap-3 rounded-xl bg-white px-4 py-3">
@@ -323,7 +359,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
                     </>
                   )}
 
-                  {/* Columns 4-5-6: Other languages (alphabetical, top-to-bottom) */}
+                  {/* Columns 4-5-6-7: Other languages (alphabetical, top-to-bottom) */}
                   {otherSorted.length > 0 && (
                     <>
                       <div className="pl-6">
@@ -335,6 +371,9 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
                       </div>
                       <div className="pt-5">
                         <div className="flex flex-col">{otherCols[2].map(linkItem)}</div>
+                      </div>
+                      <div className="pt-5">
+                        <div className="flex flex-col">{otherCols[3].map(linkItem)}</div>
                       </div>
                     </>
                   )}

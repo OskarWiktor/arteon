@@ -3,7 +3,7 @@
   "locale": "pt",
   "metadata": {
     "title": "Conversor JPG/PNG para WebP gratuito – sem limites",
-    "description": "Reduza o tamanho das imagens até 35% sem perda de qualidade. Conversão JPG/PNG para WebP local – os ficheiros nunca saem do seu dispositivo. Sem registo, sem limites.",
+    "description": "Reduza o tamanho das imagens até 35% sem perda de qualidade. Conversão JPG/PNG para WebP local – os ficheiros nunca saem do seu dispositivo. Sem registo,",
     "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
     "path": "/pt/ferramentas/conversor-jpg-png-para-webp"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/pt/ferramentas", "label": "Ferramentas" },
-    "third": { "href": "/pt/ferramentas/conversor-jpg-png-para-webp", "label": "JPG/PNG para WebP" }
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-jpg-png-para-webp",
+      "label": "JPG/PNG para WebP"
+    }
   },
   "schemas": {
     "software": {
@@ -37,20 +43,35 @@
       "name": "Como converter imagens JPG/PNG para WebP",
       "description": "Converta imagens JPG e PNG para o formato WebP e reduza o tamanho dos ficheiros até 35% sem perda de qualidade visível.",
       "steps": [
-        { "name": "Adicionar ficheiros", "text": "Arraste e largue ficheiros JPG ou PNG na zona prevista ou clique para selecionar ficheiros." },
-        { "name": "Ajustar a qualidade", "text": "Escolha a qualidade WebP com o cursor (predefinição: 80%). A ferramenta otimiza automaticamente o tamanho." },
-        { "name": "Converter e transferir", "text": "Transfira os ficheiros convertidos individualmente ou como arquivo ZIP." }
+        {
+          "name": "Adicionar ficheiros",
+          "text": "Arraste e largue ficheiros JPG ou PNG na zona prevista ou clique para selecionar ficheiros."
+        },
+        {
+          "name": "Ajustar a qualidade",
+          "text": "Escolha a qualidade WebP com o cursor (predefinição: 80%). A ferramenta otimiza automaticamente o tamanho."
+        },
+        {
+          "name": "Converter e transferir",
+          "text": "Transfira os ficheiros convertidos individualmente ou como arquivo ZIP."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Porquê converter JPG e PNG para WebP?",
       "html": "<p class=\"text-mid\">O formato WebP oferece ficheiros significativamente mais leves do que JPG e PNG com qualidade visual equivalente. Imagens mais leves significam tempos de carregamento mais rápidos para o seu site, melhores Core Web Vitals e melhor experiência do utilizador. A Google recomenda WebP como formato preferencial para imagens web.</p><p class=\"text-mid mt-3\">Em comparação com JPG, o WebP produz ficheiros em média 25 a 35% mais leves com qualidade igual. Em comparação com PNG, a poupança pode ser ainda maior em compressão com perdas. O WebP suporta compressão com e sem perdas, bem como transparência (canal alfa).</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Como usar o conversor WebP",
@@ -67,16 +88,26 @@
           "title": "2. Ajustar a qualidade",
           "description": "Escolha a qualidade WebP com o cursor (predefinição: 80%). A ferramenta otimiza automaticamente o tamanho do ficheiro."
         },
-        { "icon": "RiDownloadLine", "title": "3. Transferir", "description": "Transfira os ficheiros convertidos individualmente ou todos juntos num arquivo ZIP." }
+        {
+          "icon": "RiDownloadLine",
+          "title": "3. Transferir",
+          "description": "Transfira os ficheiros convertidos individualmente ou todos juntos num arquivo ZIP."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Como adicionar ficheiros para converter",
       "html": "<p class=\"text-mid\">A ferramenta oferece dois métodos para adicionar ficheiros:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Arrastar e largar</strong> – pegue nos ficheiros de uma pasta no seu computador e largue-os na zona prevista. Pode arrastar vários ficheiros de uma vez.</li><li><strong>Seleção a partir do dispositivo</strong> – clique na zona de adição de ficheiros para abrir a janela de seleção. Mantenha a tecla Ctrl (ou Cmd no Mac) para selecionar vários ficheiros ao mesmo tempo.</li></ul><p class=\"text-mid mt-3\">A ferramenta aceita apenas ficheiros JPG e PNG. Se adicionar acidentalmente um ficheiro noutro formato (ex.: GIF ou BMP), será automaticamente ignorado e surgirá uma mensagem informativa.</p><p class=\"text-mid mt-3\"><strong>Privacidade:</strong> Todos os ficheiros são processados localmente no navegador. Não são enviados para lado nenhum – não passam por nenhum servidor. Ao fechar o separador ou o navegador, os ficheiros são eliminados da memória.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Como interpretar os resultados",
@@ -84,19 +115,28 @@
       "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800\">Sucesso</span><span class=\"text-mid text-sm!\">Ficheiro convertido – WebP é mais leve que o original</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800\">Otimizado</span><span class=\"text-mid text-sm!\">A qualidade foi reduzida automaticamente para que o WebP não seja maior que o original</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-800\">Erro</span><span class=\"text-mid text-sm!\">Não foi possível converter o ficheiro</span></div></div>",
       "html": "<p class=\"text-mid mb-4\">Para cada ficheiro convertido, vê o estado e a poupança de tamanho:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tamanho original</strong> – peso do ficheiro JPG ou PNG de entrada.</li><li><strong>Tamanho WebP</strong> – peso do ficheiro WebP convertido.</li><li><strong>Poupança</strong> – percentagem de redução em relação ao original.</li><li><strong>Estado</strong> – indica se a conversão foi bem-sucedida ou se a qualidade foi ajustada automaticamente.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Definições de qualidade – recomendações",
       "html": "<p class=\"text-mid mb-4\">O nível de qualidade ideal depende da utilização. Eis referências para diferentes casos:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Utilização</th><th class=\"py-2 pr-4 font-semibold\">Qualidade</th><th class=\"py-2 font-semibold\">Nota</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Fotos de produtos (e-commerce)</td><td class=\"py-2 pr-4 whitespace-nowrap\">85–90%</td><td class=\"text-primary-light0 py-2 text-sm\">Alta fidelidade de detalhes</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Imagens de artigos de blog</td><td class=\"py-2 pr-4 whitespace-nowrap\">75–80%</td><td class=\"text-primary-light0 py-2 text-sm\">Bom compromisso para a maioria dos sites</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Banners hero e fundos</td><td class=\"py-2 pr-4 whitespace-nowrap\">70–80%</td><td class=\"text-primary-light0 py-2 text-sm\">Imagens grandes onde o peso importa mais</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Miniaturas e pré-visualizações</td><td class=\"py-2 pr-4 whitespace-nowrap\">65–75%</td><td class=\"text-primary-light0 py-2 text-sm\">Imagens pequenas – perda de qualidade pouco visível</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Ícones e gráficos simples</td><td class=\"py-2 pr-4 whitespace-nowrap\">60–70%</td><td class=\"text-primary-light0 py-2 text-sm\">Poucos detalhes, alta compressibilidade</td></tr></tbody></table></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Como funciona a Smart Quality?",
       "html": "<p class=\"text-mid\">Smart Quality é um mecanismo de otimização automática que garante que o ficheiro WebP convertido nunca será maior que o original. Funciona assim:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>A ferramenta converte a imagem com a qualidade que definiu (ex.: 80 %).</li><li>Verifica se o ficheiro de saída é mais leve que o original.</li><li>Se for maior, a qualidade é automaticamente reduzida e uma nova tentativa é iniciada.</li><li>O processo repete-se até que o ficheiro de saída seja mais leve ou que a qualidade desça abaixo de um mínimo seguro.</li></ol><p class=\"text-mid mt-3\">A ferramenta escolhe automaticamente os parâmetros ideais. Se uma imagem já estiver muito comprimida (ex.: um JPG a 60 % de qualidade), os parâmetros serão automaticamente ajustados para conseguir mesmo assim uma redução de tamanho.</p><p class=\"text-mid mt-3\">Para cada ficheiro, verá a indicação &quot;Qualidade WebP utilizada&quot; – é a qualidade efetivamente aplicada após um eventual ajuste pela Smart Quality.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Como transferir os ficheiros convertidos?",
@@ -104,19 +144,28 @@
       "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium text-white\" disabled>Converter</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Transferir todos</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Transferir como ZIP</button></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled /><span class=\"text-mid pl-2 text-sm!\">Incluir relatório CSV no ZIP</span></div></div>",
       "html": "<p class=\"text-mid\">Após a conversão, tem várias opções de transferência:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Transferir</strong> (para cada ficheiro) - transfere um ficheiro WebP individual.</li><li><strong>Transferir todos</strong> - transfere todos os ficheiros um por um.</li><li><strong>Transferir como ZIP</strong> - cria um arquivo com todos os ficheiros.</li></ul><p class=\"text-mid mt-3\"><strong>Opção relatório CSV:</strong> Inclua um relatório resumido da conversão no arquivo ZIP.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Relatório de poupanças – o que mostra?",
       "html": "<p class=\"text-mid\">Abaixo dos botões de conversão, encontra um resumo com as informações sobre as poupanças:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Tamanho total (entrada)</strong> – soma dos tamanhos de todos os ficheiros originais.</li><li><strong>Tamanho total (após conversão)</strong> – soma dos tamanhos de todos os ficheiros WebP.</li><li><strong>Poupado</strong> – quanto espaço ganhou com a conversão (em KB/MB e em percentagem).</li></ul><p class=\"text-mid mt-3\"><strong>Copiar resumo:</strong> O botão copia o relatório para a área de transferência em formato de texto. Pode colá-lo em notas, um e-mail ou um documento – útil para documentar a otimização de imagens.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Quanto se pode poupar convertendo para WebP?",
       "html": "<p class=\"text-mid mb-4\">As poupanças dependem do tipo de imagem e da sua compressão original. Eis exemplos para ficheiros típicos:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto JPG (câmara)</p><p class=\"text-light text-sm\">2,4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Poupança: ~63 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Gráfico PNG (logótipo)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Poupança: ~75 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto de produto</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Poupança: ~63 %</p></div></div><p class=\"text-light mt-4 text-sm\">As poupanças reais podem variar. O conversor mostra o tamanho exato antes e depois da conversão para cada ficheiro, bem como um resumo das poupanças totais.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Problemas comuns e soluções",
@@ -133,7 +182,11 @@
           "title": "Perda de qualidade visível",
           "description": "Aumente a qualidade. Para fotos, as diferenças tornam-se frequentemente visíveis abaixo de 80%, especialmente em detalhes finos e texto."
         },
-        { "icon": "RiCloseLine", "title": "O ficheiro não converte", "description": "Verifique se o ficheiro está no formato JPG ou PNG. Os outros formatos (GIF, BMP, TIFF) não são suportados." },
+        {
+          "icon": "RiCloseLine",
+          "title": "O ficheiro não converte",
+          "description": "Verifique se o ficheiro está no formato JPG ou PNG. Os outros formatos (GIF, BMP, TIFF) não são suportados."
+        },
         {
           "icon": "RiSettings3Line",
           "title": "A transparência foi perdida",
@@ -141,32 +194,73 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Onde usar WebP?",
       "description": "WebP é adequado para todas as imagens do seu site:",
       "grid": "two",
       "items": [
-        { "icon": "RiGlobalLine", "title": "Sites e landing pages", "description": "Tempos de carregamento mais rápidos, melhores Core Web Vitals e melhor posicionamento no Google." },
-        { "icon": "RiShoppingBagLine", "title": "E-commerce e fotos de produtos", "description": "Centenas de fotos de produtos mais leves – páginas de categoria significativamente mais rápidas." },
-        { "icon": "RiArticleLine", "title": "Blogs e páginas de conteúdo", "description": "As imagens de artigos em WebP carregam mais rápido e reduzem o consumo de dados em dispositivos móveis." },
-        { "icon": "RiImageLine", "title": "Portfólios e galerias", "description": "Imagens de alta qualidade com peso significativamente reduzido – sem perda de qualidade visível." }
+        {
+          "icon": "RiGlobalLine",
+          "title": "Sites e landing pages",
+          "description": "Tempos de carregamento mais rápidos, melhores Core Web Vitals e melhor posicionamento no Google."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "E-commerce e fotos de produtos",
+          "description": "Centenas de fotos de produtos mais leves – páginas de categoria significativamente mais rápidas."
+        },
+        {
+          "icon": "RiArticleLine",
+          "title": "Blogs e páginas de conteúdo",
+          "description": "As imagens de artigos em WebP carregam mais rápido e reduzem o consumo de dados em dispositivos móveis."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Portfólios e galerias",
+          "description": "Imagens de alta qualidade com peso significativamente reduzido – sem perda de qualidade visível."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "O que torna este conversor especial?",
       "grid": "two",
       "items": [
-        { "icon": "RiShieldCheckLine", "title": "Privacidade total", "description": "Todos os ficheiros são processados localmente no seu navegador. Nada é enviado para um servidor." },
-        { "icon": "RiInfinityFill", "title": "Sem limites", "description": "Converta quantos ficheiros quiser – sem registo e sem restrições." },
-        { "icon": "RiSpeedLine", "title": "Otimização automática", "description": "A ferramenta reduz automaticamente a qualidade se o ficheiro de saída for maior que o original." },
-        { "icon": "RiStackLine", "title": "Processamento em lote", "description": "Converta vários ficheiros ao mesmo tempo e transfira tudo num arquivo ZIP." }
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidade total",
+          "description": "Todos os ficheiros são processados localmente no seu navegador. Nada é enviado para um servidor."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Sem limites",
+          "description": "Converta quantos ficheiros quiser – sem registo e sem restrições."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Otimização automática",
+          "description": "A ferramenta reduz automaticamente a qualidade se o ficheiro de saída for maior que o original."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Processamento em lote",
+          "description": "Converta vários ficheiros ao mesmo tempo e transfira tudo num arquivo ZIP."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Perguntas frequentes sobre o conversor WebP",
@@ -219,8 +313,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Descubra outras ferramentas" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descubra outras ferramentas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

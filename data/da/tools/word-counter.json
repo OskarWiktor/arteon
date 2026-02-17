@@ -3,7 +3,7 @@
   "locale": "da",
   "metadata": {
     "title": "Gratis ord- & tegntæller – Kontrollér tekstlængde til SEO",
-    "description": "Tæl ord, tegn, afsnit og læsetid øjeblikkeligt. Kontrollér optimal tekstlængde til SEO – blogindlæg, produktside, landingsside. Uden registrering, uden begrænsninger.",
+    "description": "Tæl ord, tegn, afsnit og læsetid øjeblikkeligt. Kontrollér optimal tekstlængde til SEO – blogindlæg, produktside, landingsside. Uden registrering,",
     "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
     "path": "/da/vaerktojer/ord-og-tegntaeller"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/da/vaerktojer", "label": "Værktøjer" },
-    "third": { "href": "/da/vaerktojer/ord-og-tegntaeller", "label": "Ord- & tegntæller" }
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/ord-og-tegntaeller",
+      "label": "Ord- & tegntæller"
+    }
   },
   "schemas": {
     "software": {
@@ -36,34 +42,60 @@
       "name": "Sådan bruger du ord- og tegntælleren",
       "description": "Kontrollér tekstlængden og vurdér om den passer til en specifik sidetype.",
       "steps": [
-        { "name": "Vælg sidetype", "text": "Vælg fra listen, hvilken type side du skriver til. Hver type har sit eget anbefalede ordinterval." },
-        { "name": "Indsæt tekst", "text": "Indsæt eller skriv tekst i tekstfeltet. Værktøjet tæller automatisk ord, tegn, afsnit og beregner læsetid." },
-        { "name": "Kontrollér vurderingen", "text": "Se på den farvekodede indikator og status. Grøn betyder rigtig længde, gul for kort, rød for lang." },
-        { "name": "Kopiér rapporten", "text": "Knappen Kopiér rapport kopierer en sammenfatning med alle statistikker og længdevurdering til udklipsholder." }
+        {
+          "name": "Vælg sidetype",
+          "text": "Vælg fra listen, hvilken type side du skriver til. Hver type har sit eget anbefalede ordinterval."
+        },
+        {
+          "name": "Indsæt tekst",
+          "text": "Indsæt eller skriv tekst i tekstfeltet. Værktøjet tæller automatisk ord, tegn, afsnit og beregner læsetid."
+        },
+        {
+          "name": "Kontrollér vurderingen",
+          "text": "Se på den farvekodede indikator og status. Grøn betyder rigtig længde, gul for kort, rød for lang."
+        },
+        {
+          "name": "Kopiér rapporten",
+          "text": "Knappen Kopiér rapport kopierer en sammenfatning med alle statistikker og længdevurdering til udklipsholder."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Gratis ordtæller – tæl og vurdér tekstlængden",
       "html": "<p class=\"text-mid\">Dette værktøj lader dig hurtigt kontrollere længden af enhver tekst. Indsæt indhold, og tælleren tæller ord, tegn og afsnit. Du ser også hvor mange minutter det tager at læse og om længden passer til den valgte sidetype.</p><p class=\"text-mid mt-3\">Hver sidetype tjener et andet formål – en produktbeskrivelse besvarer køberens spørgsmål, et blogindlæg udforsker et emne i dybden, og en serviceside forklarer hvad kunden får. Tælleren viser intervaller for hver af disse typer baseret på analyse af vellykket indhold.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Sådan bruger du ord- og tegntælleren",
       "description": "At kontrollere tekstlængden tager mindre end et minut:",
       "grid": "four",
       "items": [
-        { "icon": "RiListCheck2", "title": "1. Vælg sidetype", "description": "Vælg fra listen, hvilken type side du skriver til. Hver type har sit eget anbefalede ordinterval." },
+        {
+          "icon": "RiListCheck2",
+          "title": "1. Vælg sidetype",
+          "description": "Vælg fra listen, hvilken type side du skriver til. Hver type har sit eget anbefalede ordinterval."
+        },
         {
           "icon": "RiFileTextLine",
           "title": "2. Indsæt tekst",
           "description": "Indsæt eller skriv tekst i det store tekstfelt til højre. Værktøjet tæller øjeblikkeligt ord, tegn, afsnit og beregner læsetid."
         },
-        { "icon": "RiBarChartLine", "title": "3. Kontrollér vurderingen", "description": "Se på den farvekodede indikator og status. Grøn betyder rigtig længde, gul for kort, rød for lang." },
+        {
+          "icon": "RiBarChartLine",
+          "title": "3. Kontrollér vurderingen",
+          "description": "Se på den farvekodede indikator og status. Grøn betyder rigtig længde, gul for kort, rød for lang."
+        },
         {
           "icon": "RiFileCopyLine",
           "title": "4. Kopiér rapporten",
@@ -71,41 +103,97 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hvad tælleren måler – ord, tegn, læsetid",
       "description": "Tælleren følger fem nøgletal:",
       "grid": "two",
       "items": [
-        { "icon": "RiText", "title": "Ord", "description": "Samlet antal ord. Hovedindikator for tekstlængde." },
-        { "icon": "RiSpaceShipLine", "title": "Tegn (med mellemrum)", "description": "Alle tegn inklusive mellemrum. Vigtigt når CMS har tegngrænse." },
-        { "icon": "RiHashtag", "title": "Tegn (uden mellemrum)", "description": "Kun bogstaver, tal og symboler. Nogle gange krævet af trykkerier eller til oversættelsesfakturering." },
-        { "icon": "RiParagraph", "title": "Afsnit", "description": "Antal tekstblokke adskilt af tomme linjer. Hjælper med at vurdere om teksten har god struktur." },
-        { "icon": "RiTimeLine", "title": "Læsetid", "description": "Læsetidskalkulatoren viser hvor mange minutter det tager at læse teksten ved en gennemsnitlig hastighed på 200 ord per minut." }
+        {
+          "icon": "RiText",
+          "title": "Ord",
+          "description": "Samlet antal ord. Hovedindikator for tekstlængde."
+        },
+        {
+          "icon": "RiSpaceShipLine",
+          "title": "Tegn (med mellemrum)",
+          "description": "Alle tegn inklusive mellemrum. Vigtigt når CMS har tegngrænse."
+        },
+        {
+          "icon": "RiHashtag",
+          "title": "Tegn (uden mellemrum)",
+          "description": "Kun bogstaver, tal og symboler. Nogle gange krævet af trykkerier eller til oversættelsesfakturering."
+        },
+        {
+          "icon": "RiParagraph",
+          "title": "Afsnit",
+          "description": "Antal tekstblokke adskilt af tomme linjer. Hjælper med at vurdere om teksten har god struktur."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Læsetid",
+          "description": "Læsetidskalkulatoren viser hvor mange minutter det tager at læse teksten ved en gennemsnitlig hastighed på 200 ord per minut."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Hvor mange ord bør teksten have – optimal længde til SEO",
       "html": "<p class=\"text-mid mb-4\">Intervallerne nedenfor er baseret på analyse af indhold, der klarer sig godt i søgemaskiner. Tekstlængden i sig selv påvirker ikke placeringen i Google – det der tæller er om indholdet besvarer læserens spørgsmål.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Sidetype</th><th class=\"py-2 pr-4 font-semibold\">Interval</th><th class=\"py-2 font-semibold\">Hvornår kortere, hvornår længere?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Produktbeskrivelse</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Simpelt produkt – 80–150. Komplekst udstyr – 300–400.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Serviceside</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Lokal service – 500–700. B2B-service med proces og FAQ – 1 200–1 500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Forside</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Forsiden præsenterer nøgleværdi og leder besøgende videre.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landingsside</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Simpelt tilbud – 600–1 000. Tilbud der kræver forklaring – 1 500–2 500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blogindlæg</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Kort how-to – 1 200–1 500. Detaljeret guide – 2 500–3 000.</td></tr><tr><td class=\"py-2 pr-4\">Guide / pillar page</td><td class=\"py-2 pr-4 whitespace-nowrap\">3000–7000 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Komplet ressource der dækker emnet fra flere vinkler.</td></tr></tbody></table></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hvem er ordtælleren til?",
       "grid": "three",
       "items": [
-        { "icon": "RiEditLine", "title": "Tekstforfattere og indholdsproducenter", "description": "Kontrollér om teksten er inden for det anbefalede interval for en specifik sidetype." },
-        { "icon": "RiBloggerLine", "title": "Bloggere", "description": "Følg artikellængden for konsistens. Kontrollér læsetiden inden publicering." },
-        { "icon": "RiShoppingBagLine", "title": "E-handelsejere", "description": "Verificér produktbeskrivelser mod tegngrænser på salgsplatforme." },
-        { "icon": "RiSearchLine", "title": "SEO-specialister", "description": "Vurdér om sidens indhold har optimal længde sammenlignet med konkurrenterne." },
-        { "icon": "RiGraduationCapLine", "title": "Studerende og akademikere", "description": "Kontrollér om opgaven opfylder det krævede ord- eller tegnkrav." },
-        { "icon": "RiTranslate2", "title": "Oversættere", "description": "Tæl tegn uden mellemrum til oversættelsespriser." }
+        {
+          "icon": "RiEditLine",
+          "title": "Tekstforfattere og indholdsproducenter",
+          "description": "Kontrollér om teksten er inden for det anbefalede interval for en specifik sidetype."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Bloggere",
+          "description": "Følg artikellængden for konsistens. Kontrollér læsetiden inden publicering."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "E-handelsejere",
+          "description": "Verificér produktbeskrivelser mod tegngrænser på salgsplatforme."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "SEO-specialister",
+          "description": "Vurdér om sidens indhold har optimal længde sammenlignet med konkurrenterne."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Studerende og akademikere",
+          "description": "Kontrollér om opgaven opfylder det krævede ord- eller tegnkrav."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Oversættere",
+          "description": "Tæl tegn uden mellemrum til oversættelsespriser."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om ord- og tegntælleren",
@@ -128,8 +216,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Udforsk flere værktøjer" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Udforsk flere værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

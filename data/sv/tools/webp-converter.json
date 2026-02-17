@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Gratis JPG/PNG till WebP-konverterare – Utan begränsningar",
     "description": "Minska bildstorleken utan kvalitetsförlust. Konvertera JPG och PNG till WebP och snabba upp din webbplats. Utan registrering, fungerar i webbläsaren.",
-    "ogImage": "/assets/tools/narzedzia-konwerter-jpg-png-na-webp.webp",
+    "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
     "path": "/sv/verktyg/jpg-png-till-webp-konverterare"
   },
   "hero": {
     "title": "Konvertera bilder till WebP – minska storleken utan kvalitetsförlust",
     "description": "Ladda upp bilder i JPG- eller PNG-format och verktyget konverterar dem till WebP. Mindre filer, samma kvalitet, snabbare webbplats.",
-    "backgroundImage": "/assets/tools/narzedzia-konwerter-jpg-png-na-webp.webp"
+    "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
   "breadcrumbs": {
     "second": { "href": "/sv/verktyg", "label": "Verktyg" },

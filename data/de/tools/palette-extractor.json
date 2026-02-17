@@ -3,7 +3,7 @@
   "locale": "de",
   "metadata": {
     "title": "Bild-Farbextraktor kostenlos – Palette aus Fotos",
-    "description": "Laden Sie ein Foto oder Logo hoch und extrahieren Sie bis zu 12 dominante Farben mit HEX- und RGB-Codes. Ideal für UI, Branding und Social Media. Ohne Anmeldung, ohne Limits.",
+    "description": "Laden Sie ein Foto oder Logo hoch und extrahieren Sie bis zu 12 dominante Farben mit HEX- und RGB-Codes. Ideal für UI, Branding und Social Media.",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/de/werkzeuge/bild-farbextraktor"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/de/werkzeuge", "label": "Werkzeuge" },
-    "third": { "href": "/de/werkzeuge/bild-farbextraktor", "label": "Bild-Farbextraktor" }
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/bild-farbextraktor",
+      "label": "Bild-Farbextraktor"
+    }
   },
   "schemas": {
     "software": {
@@ -36,20 +42,35 @@
       "name": "So extrahieren Sie Farben aus einem Bild",
       "description": "Laden Sie ein Bild hoch und erhalten Sie eine Palette von bis zu 12 dominanten Farben mit HEX- und RGB-Codes.",
       "steps": [
-        { "name": "Bild hochladen", "text": "Ziehen Sie ein Bild auf den markierten Bereich oder wählen Sie eine Datei von Ihrem Gerät aus. Unterstützt: JPG, PNG, WebP." },
-        { "name": "Palette ansehen", "text": "Das Tool extrahiert automatisch die dominanten Farben und zeigt sie als Farbpalette an." },
-        { "name": "Farbcodes kopieren", "text": "Klicken Sie auf eine Farbe, um den HEX- oder RGB-Code in die Zwischenablage zu kopieren." }
+        {
+          "name": "Bild hochladen",
+          "text": "Ziehen Sie ein Bild auf den markierten Bereich oder wählen Sie eine Datei von Ihrem Gerät aus. Unterstützt: JPG, PNG, WebP."
+        },
+        {
+          "name": "Palette ansehen",
+          "text": "Das Tool extrahiert automatisch die dominanten Farben und zeigt sie als Farbpalette an."
+        },
+        {
+          "name": "Farbcodes kopieren",
+          "text": "Klicken Sie auf eine Farbe, um den HEX- oder RGB-Code in die Zwischenablage zu kopieren."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Farben aus jedem Bild extrahieren",
       "html": "<p class=\"text-mid\">Der Bild-Farbextraktor analysiert Ihr Bild und identifiziert die dominanten Farben. Das Ergebnis ist eine Palette mit HEX- und RGB-Codes, die Sie direkt in Ihrem Design, Ihrer Website oder Ihren Druckmaterialien verwenden können.</p><p class=\"text-mid mt-3\">Das Tool eignet sich für die Analyse von Fotos, Logos, Illustrationen und Screenshots. Laden Sie ein Bild hoch, und in wenigen Sekunden sehen Sie die wichtigsten Farben als übersichtliche Palette - mit kopierbaren Codes.</p><p class=\"text-mid mt-3\">Das Bild wird lokal in Ihrem Browser verarbeitet - es wird nicht an einen Server gesendet. Nach dem Schließen des Tabs werden alle Daten aus dem Speicher entfernt.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "So verwenden Sie den Farbextraktor",
@@ -61,31 +82,64 @@
           "title": "1. Bild hochladen",
           "description": "Ziehen Sie ein Bild auf den markierten Bereich oder wählen Sie eine Datei von Ihrem Gerät. Unterstützt: JPG, PNG, WebP."
         },
-        { "icon": "RiPaletteLine", "title": "2. Palette ansehen", "description": "Das Tool extrahiert automatisch die dominanten Farben und zeigt sie als Farbpalette an." },
-        { "icon": "RiFileCopyLine", "title": "3. Codes kopieren", "description": "Klicken Sie auf eine Farbe, um den HEX- oder RGB-Code in die Zwischenablage zu kopieren." }
+        {
+          "icon": "RiPaletteLine",
+          "title": "2. Palette ansehen",
+          "description": "Das Tool extrahiert automatisch die dominanten Farben und zeigt sie als Farbpalette an."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "3. Codes kopieren",
+          "description": "Klicken Sie auf eine Farbe, um den HEX- oder RGB-Code in die Zwischenablage zu kopieren."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Wie sieht eine extrahierte Farbpalette aus?",
       "demoHtml": "<div class=\"space-y-2\"><div class=\"flex gap-1\"><div class=\"h-12 flex-1 rounded\" style=\"background-color: #2C3E50\"></div><div class=\"h-12 flex-1 rounded\" style=\"background-color: #E74C3C\"></div><div class=\"h-12 flex-1 rounded\" style=\"background-color: #ECF0F1\"></div><div class=\"h-12 flex-1 rounded\" style=\"background-color: #3498DB\"></div><div class=\"h-12 flex-1 rounded\" style=\"background-color: #F39C12\"></div></div><div class=\"flex gap-1 text-xs!\"><span class=\"text-light flex-1 text-center\">#2C3E50</span><span class=\"text-light flex-1 text-center\">#E74C3C</span><span class=\"text-light flex-1 text-center\">#ECF0F1</span><span class=\"text-light flex-1 text-center\">#3498DB</span><span class=\"text-light flex-1 text-center\">#F39C12</span></div></div>",
       "html": "<p class=\"text-mid\">Das Tool zeigt die extrahierten Farben als Palette an. Jede Farbe wird mit dem prozentualen Anteil im Bild und den kopierbaren HEX- und RGB-Codes angezeigt. So erkennen Sie auf einen Blick, welche Farben das Bild dominieren.</p><p class=\"text-mid mt-3\">Klicken Sie auf eine beliebige Farbe, um den Code in die Zwischenablage zu kopieren. Die kopierten Codes können Sie direkt in CSS, Figma, Adobe oder anderen Design-Tools einfügen.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Welche Bilder liefern die besten Ergebnisse?",
       "description": "Die Qualität der extrahierten Farben hängt vom Ausgangsbild ab:",
       "grid": "two",
       "items": [
-        { "icon": "RiSunLine", "title": "Fotos mit kräftigen Farben", "description": "Landschaften, Sonnenuntergänge und Produktfotos liefern vielfältige und aussagekräftige Paletten." },
-        { "icon": "RiContrastLine", "title": "Logos und Markenbilder", "description": "Einfarbige Logos und Grafiken liefern weniger Farben, dafür aber präzisere Werte." },
-        { "icon": "RiFocusLine", "title": "Bilder mit klaren Farbflächen", "description": "Große, einheitliche Farbflächen liefern genauere Ergebnisse als feine Farbverläufe." },
-        { "icon": "RiShapeLine", "title": "Illustrationen", "description": "Flache Illustrationen und Infografiken haben klar definierte Farbpaletten, die das Tool gut erfasst." }
+        {
+          "icon": "RiSunLine",
+          "title": "Fotos mit kräftigen Farben",
+          "description": "Landschaften, Sonnenuntergänge und Produktfotos liefern vielfältige und aussagekräftige Paletten."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Logos und Markenbilder",
+          "description": "Einfarbige Logos und Grafiken liefern weniger Farben, dafür aber präzisere Werte."
+        },
+        {
+          "icon": "RiFocusLine",
+          "title": "Bilder mit klaren Farbflächen",
+          "description": "Große, einheitliche Farbflächen liefern genauere Ergebnisse als feine Farbverläufe."
+        },
+        {
+          "icon": "RiShapeLine",
+          "title": "Illustrationen",
+          "description": "Flache Illustrationen und Infografiken haben klar definierte Farbpaletten, die das Tool gut erfasst."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTimeline",
       "title": "Wie funktioniert die Farbextraktion?",
@@ -113,7 +167,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Fehlersuche beim Farbextraktor",
@@ -142,31 +199,68 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Wo können Sie extrahierte Farben verwenden?",
       "description": "Die kopierten Farbcodes lassen sich in verschiedenen Kontexten einsetzen:",
       "grid": "two",
       "items": [
-        { "icon": "RiGlobalLine", "title": "Webdesign", "description": "Farbschema für Ihre Website auf Basis eines Referenzbilds oder Fotos erstellen." },
-        { "icon": "RiShoppingBagLine", "title": "Markenidentität", "description": "Exakte Farben aus einem Logo ermitteln und konsistent in allen Materialien verwenden." },
-        { "icon": "RiSmartphoneLine", "title": "Social Media", "description": "Grafiken und Beiträge farblich an bestehende Fotos oder Kampagnenbilder anpassen." },
-        { "icon": "RiPaletteLine", "title": "Grafikdesign und Druck", "description": "Extrahierte Farben als Ausgangspunkt für Flyer, Poster und Präsentationen nutzen." }
+        {
+          "icon": "RiGlobalLine",
+          "title": "Webdesign",
+          "description": "Farbschema für Ihre Website auf Basis eines Referenzbilds oder Fotos erstellen."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Markenidentität",
+          "description": "Exakte Farben aus einem Logo ermitteln und konsistent in allen Materialien verwenden."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Social Media",
+          "description": "Grafiken und Beiträge farblich an bestehende Fotos oder Kampagnenbilder anpassen."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Grafikdesign und Druck",
+          "description": "Extrahierte Farben als Ausgangspunkt für Flyer, Poster und Präsentationen nutzen."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Was macht diesen Farbextraktor besonders?",
       "grid": "two",
       "items": [
-        { "icon": "RiImageLine", "title": "Bis zu 12 Farben", "description": "Bis zu 12 dominante Farben für eine umfassende Farbanalyse." },
-        { "icon": "RiPantoneLine", "title": "HEX- und RGB-Codes", "description": "Jede Farbe mit kopierbaren HEX- und RGB-Werten - direkt einsetzbar in CSS und Design-Tools." },
-        { "icon": "RiInfinityLine", "title": "Keine Limits", "description": "Beliebig viele Bilder analysieren — ohne Registrierung und ohne Limits." }
+        {
+          "icon": "RiImageLine",
+          "title": "Bis zu 12 Farben",
+          "description": "Bis zu 12 dominante Farben für eine umfassende Farbanalyse."
+        },
+        {
+          "icon": "RiPantoneLine",
+          "title": "HEX- und RGB-Codes",
+          "description": "Jede Farbe mit kopierbaren HEX- und RGB-Werten - direkt einsetzbar in CSS und Design-Tools."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Keine Limits",
+          "description": "Beliebig viele Bilder analysieren — ohne Registrierung und ohne Limits."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Häufig gestellte Fragen zum Farbextraktor",
@@ -204,8 +298,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Weitere Tools entdecken" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere Tools entdecken"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

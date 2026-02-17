@@ -3,7 +3,7 @@
   "locale": "pt",
   "metadata": {
     "title": "Contador de palavras e caracteres gratuito – texto SEO",
-    "description": "Conte palavras, caracteres, parágrafos e tempo de leitura instantaneamente. Verifique o comprimento ideal para SEO – blog, página de produto, landing page. Sem registo, sem limites.",
+    "description": "Conte palavras, caracteres, parágrafos e tempo de leitura instantaneamente. Verifique o comprimento ideal para SEO – blog, página de produto, landing page.",
     "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
     "path": "/pt/ferramentas/contador-de-palavras-e-caracteres"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/pt/ferramentas", "label": "Ferramentas" },
-    "third": { "href": "/pt/ferramentas/contador-de-palavras-e-caracteres", "label": "Contador de palavras" }
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/contador-de-palavras-e-caracteres",
+      "label": "Contador de palavras"
+    }
   },
   "schemas": {
     "software": {
@@ -46,46 +52,88 @@
       "name": "Como verificar o comprimento de texto para SEO",
       "description": "Cole o seu texto, selecione o tipo de página e verifique se o comprimento é o ideal.",
       "steps": [
-        { "name": "Colar o texto", "text": "Cole ou introduza o texto que pretende analisar." },
-        { "name": "Selecionar o tipo de página", "text": "Escolha o tipo de página (artigo de blog, página de serviço, página inicial, etc.)." },
-        { "name": "Verificar os resultados", "text": "Consulte o número de palavras, caracteres, parágrafos, tempo de leitura e avaliação do comprimento." }
+        {
+          "name": "Colar o texto",
+          "text": "Cole ou introduza o texto que pretende analisar."
+        },
+        {
+          "name": "Selecionar o tipo de página",
+          "text": "Escolha o tipo de página (artigo de blog, página de serviço, página inicial, etc.)."
+        },
+        {
+          "name": "Verificar os resultados",
+          "text": "Consulte o número de palavras, caracteres, parágrafos, tempo de leitura e avaliação do comprimento."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Porque é que o comprimento do texto é importante para SEO?",
       "html": "<p class=\"text-mid\">O comprimento do texto é um dos fatores que influenciam a classificação nos resultados de pesquisa. As páginas demasiado curtas podem ser percecionadas como falta de profundidade, enquanto as páginas excessivamente longas sem estrutura clara podem desencorajar os leitores.</p><p class=\"text-mid mt-3\">Esta ferramenta ajuda a verificar se o comprimento do seu texto corresponde às recomendações para diferentes tipos de páginas – artigos de blog, páginas de serviço, páginas iniciais e fichas de produto. Conta as palavras, caracteres, parágrafos e estima o tempo de leitura.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Como usar o contador",
       "description": "A análise demora apenas alguns segundos:",
       "grid": "three",
       "items": [
-        { "icon": "RiFileTextLine", "title": "1. Colar o texto", "description": "Cole ou introduza o texto que pretende analisar." },
-        { "icon": "RiBarChartLine", "title": "2. Escolher o tipo de página", "description": "Selecione o tipo de página para obter uma avaliação do comprimento adequada." },
-        { "icon": "RiFileCopyLine", "title": "3. Copiar o relatório", "description": "Consulte as estatísticas e copie o relatório se necessário." }
+        {
+          "icon": "RiFileTextLine",
+          "title": "1. Colar o texto",
+          "description": "Cole ou introduza o texto que pretende analisar."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "2. Escolher o tipo de página",
+          "description": "Selecione o tipo de página para obter uma avaliação do comprimento adequada."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "3. Copiar o relatório",
+          "description": "Consulte as estatísticas e copie o relatório se necessário."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "O que o contador mede: palavras, caracteres, tempo de leitura",
       "description": "O contador regista cinco métricas-chave:",
       "grid": "two",
       "items": [
-        { "icon": "RiText", "title": "Palavras", "description": "Número total de palavras. É o indicador principal do comprimento do texto." },
+        {
+          "icon": "RiText",
+          "title": "Palavras",
+          "description": "Número total de palavras. É o indicador principal do comprimento do texto."
+        },
         {
           "icon": "RiSpaceShipLine",
           "title": "Caracteres (com espaços)",
           "description": "Todos os caracteres, incluindo espaços. Útil quando um CMS impõe um limite de caracteres (ex.: fichas em marketplaces)."
         },
-        { "icon": "RiHashtag", "title": "Caracteres (sem espaços)", "description": "Apenas letras, números e pontuação. Por vezes exigido por gráficas ou para orçamentos de tradução." },
-        { "icon": "RiParagraph", "title": "Parágrafos", "description": "Quantos blocos de texto separados por linhas em branco. Ajuda a avaliar se o texto está bem estruturado." },
+        {
+          "icon": "RiHashtag",
+          "title": "Caracteres (sem espaços)",
+          "description": "Apenas letras, números e pontuação. Por vezes exigido por gráficas ou para orçamentos de tradução."
+        },
+        {
+          "icon": "RiParagraph",
+          "title": "Parágrafos",
+          "description": "Quantos blocos de texto separados por linhas em branco. Ajuda a avaliar se o texto está bem estruturado."
+        },
         {
           "icon": "RiTimeLine",
           "title": "Tempo de leitura",
@@ -93,7 +141,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Como interpretar os resultados",
@@ -101,13 +152,19 @@
       "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800\">Bom comprimento</span><span class=\"text-mid text-sm!\">O texto situa-se no intervalo recomendado</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800\">Abaixo do intervalo</span><span class=\"text-mid text-sm!\">O texto é mais curto do que a média</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-800\">Acima do intervalo</span><span class=\"text-mid text-sm!\">O texto é mais longo do que a média</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Progresso</span><span class=\"text-mid\">1200 / 1200-3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
       "html": "<p class=\"text-mid mb-4\">A barra de progresso colorida e o estado ajudam a avaliar rapidamente o comprimento do texto:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Bom comprimento</strong> (verde) – o texto situa-se no intervalo aproximado para o tipo de página selecionado.</li><li><strong class=\"text-warning-text\">Abaixo do intervalo</strong> (amarelo) – o texto é mais curto do que a média para este tipo de página. Se responder a todas as perguntas do leitor, o comprimento pode ser adequado.</li><li><strong class=\"text-error-text\">Acima do intervalo</strong> (vermelho) – o texto é mais longo do que a média. Se cada parágrafo traz informação nova, o comprimento é justificado.</li></ul><p class=\"text-mid mt-4\">Os intervalos são baseados na análise de conteúdos bem posicionados nos motores de pesquisa. Se o texto responde às perguntas do leitor, o comprimento é adequado independentemente do resultado do contador.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Quantas palavras deve ter um texto: comprimento ideal para SEO",
       "html": "<p class=\"text-mid mb-4\">Os intervalos abaixo são baseados na análise de conteúdos bem posicionados nos motores de pesquisa. O comprimento do texto por si só não influencia o posicionamento no Google: o que importa é se o conteúdo responde às perguntas do leitor.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Tipo de página</th><th class=\"py-2 pr-4 font-semibold\">Intervalo</th><th class=\"py-2 font-semibold\">Quando mais curto, quando mais longo?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Ficha de produto</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 palavras</td><td class=\"text-primary-light0 py-2 text-sm\">Produto simples (ex.: uma caneca): 80–150 palavras. Equipamento complexo (ex.: um portátil): 300–400 palavras, pois os compradores têm mais perguntas.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Página de serviço</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1 500 palavras</td><td class=\"text-primary-light0 py-2 text-sm\">Serviço local (ex.: canalizador): 500–700 palavras. Serviço B2B com processo e FAQ: 1 200–1 500 palavras.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Página inicial</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1 000 palavras</td><td class=\"text-primary-light0 py-2 text-sm\">A página inicial transmite o valor principal e orienta os visitantes: o texto apoia a navegação, não substitui as subpáginas.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landing page</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2 500 palavras</td><td class=\"text-primary-light0 py-2 text-sm\">Oferta simples: 600–1 000 palavras. Oferta que necessita de explicar o processo, variantes e objeções: 1 500–2 500 palavras.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Artigo de blog</td><td class=\"py-2 pr-4 whitespace-nowrap\">1 200–3 000 palavras</td><td class=\"text-primary-light0 py-2 text-sm\">Resposta a uma questão simples: 1 200–1 800 palavras. Tema complexo com muitos aspetos: 2 000–3 000 palavras.</td></tr><tr><td class=\"py-2 pr-4\">Guia</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 500–6 000 palavras</td><td class=\"text-primary-light0 py-2 text-sm\">Tema específico: 2 500–3 500 palavras. Tema amplo com muitas etapas e exemplos: 4 000–6 000 palavras.</td></tr></tbody></table></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Para quem é útil o contador de palavras online?",
@@ -119,24 +176,46 @@
           "title": "Redatores e criadores de conteúdo",
           "description": "Verifique se o texto se situa no intervalo recomendado para um tipo de página específico. O contador de palavras SEO ajuda a avaliar se um artigo está suficientemente desenvolvido."
         },
-        { "icon": "RiBloggerLine", "title": "Bloggers", "description": "Controle o comprimento dos artigos para manter a coerência. Verifique o tempo de leitura antes da publicação." },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Bloggers",
+          "description": "Controle o comprimento dos artigos para manter a coerência. Verifique o tempo de leitura antes da publicação."
+        },
         {
           "icon": "RiShoppingBagLine",
           "title": "E-commerce",
           "description": "Verifique as descrições de produtos em relação aos limites de caracteres das plataformas de venda (Amazon, eBay, Etsy)."
         },
-        { "icon": "RiSearchLine", "title": "Especialistas SEO", "description": "Avalie se o conteúdo da página tem um comprimento ideal em relação à concorrência. Analise a relação palavras-tema." },
-        { "icon": "RiGraduationCapLine", "title": "Estudantes e académicos", "description": "Verifique se um trabalho respeita o limite de palavras ou caracteres exigido." },
-        { "icon": "RiTranslate2", "title": "Tradutores", "description": "Conte os caracteres sem espaços para orçamentos de tradução (uma unidade de faturação standard)." }
+        {
+          "icon": "RiSearchLine",
+          "title": "Especialistas SEO",
+          "description": "Avalie se o conteúdo da página tem um comprimento ideal em relação à concorrência. Analise a relação palavras-tema."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Estudantes e académicos",
+          "description": "Verifique se um trabalho respeita o limite de palavras ou caracteres exigido."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Tradutores",
+          "description": "Conte os caracteres sem espaços para orçamentos de tradução (uma unidade de faturação standard)."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Limites de caracteres nas plataformas populares",
       "html": "<p class=\"text-mid mb-4\">O contador de caracteres é útil para criar conteúdo em plataformas com restrições de comprimento:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Plataforma / Elemento</th><th class=\"py-2 pr-4 font-semibold\">Limite de caracteres</th><th class=\"py-2 font-semibold\">Observações</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta título</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Os títulos mais longos são truncados nos resultados de pesquisa.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta descrição</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Descrição visível sob o link nos resultados de pesquisa.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon – título de produto</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Título conciso com as palavras-chave mais importantes.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – publicação</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Limite padrão para utilizadores regulares.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn – publicação</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Após ~210 caracteres, o link ver mais aparece.</td></tr></tbody></table></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "O que torna este contador especial?",
@@ -147,7 +226,11 @@
           "title": "Seis tipos de páginas com intervalos recomendados",
           "description": "Ficha de produto, página de serviço, página inicial, landing page, artigo de blog e guia: cada tipo tem os seus próprios intervalos baseados na análise."
         },
-        { "icon": "RiUserLine", "title": "Processamento local no navegador", "description": "O seu texto nunca é enviado para um servidor: toda a análise é feita localmente no seu dispositivo." },
+        {
+          "icon": "RiUserLine",
+          "title": "Processamento local no navegador",
+          "description": "O seu texto nunca é enviado para um servidor: toda a análise é feita localmente no seu dispositivo."
+        },
         {
           "icon": "RiCheckboxCircleLine",
           "title": "Avaliação do comprimento do texto",
@@ -158,7 +241,11 @@
           "title": "Intervalos baseados em SEO",
           "description": "Os comprimentos recomendados são baseados na análise de conteúdos bem posicionados nos motores de pesquisa."
         },
-        { "icon": "RiTimerLine", "title": "Tempo de leitura", "description": "Saiba imediatamente quantos minutos os leitores demorarão a ler o texto." },
+        {
+          "icon": "RiTimerLine",
+          "title": "Tempo de leitura",
+          "description": "Saiba imediatamente quantos minutos os leitores demorarão a ler o texto."
+        },
         {
           "icon": "RiFileCopyLine",
           "title": "Copiar o relatório",
@@ -166,7 +253,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Perguntas frequentes sobre o contador de palavras",
@@ -204,8 +294,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Descubra outras ferramentas" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descubra outras ferramentas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

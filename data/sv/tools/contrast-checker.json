@@ -3,7 +3,7 @@
   "locale": "sv",
   "metadata": {
     "title": "Gratis färgkontrastkontroll – WCAG 2.1-efterlevnad",
-    "description": "Kontrollera om dina text- och bakgrundsfärger är läsbara enligt WCAG 2.1. Ange HEX-, RGB- eller HSL-kod, se kontrastförhållandet och använd automatisk korrigering. Utan registrering.",
+    "description": "Kontrollera om dina text- och bakgrundsfärger är läsbara enligt WCAG 2.1. Ange HEX-, RGB- eller HSL-kod,",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/sv/verktyg/fargkontrastkontroll"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/sv/verktyg", "label": "Verktyg" },
-    "third": { "href": "/sv/verktyg/fargkontrastkontroll", "label": "Färgkontrastkontroll" }
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/fargkontrastkontroll",
+      "label": "Färgkontrastkontroll"
+    }
   },
   "schemas": {
     "software": {
@@ -41,63 +47,151 @@
       "name": "Hur man kontrollerar färgkontrast och läsbarhet",
       "description": "Hur man kontrollerar läsbarheten av text- och bakgrundsfärger enligt WCAG-standarden.",
       "steps": [
-        { "name": "Välj textfärg", "text": "Ange en färgkod (t.ex. #333333) i HEX-, RGB- eller HSL-format – eller välj en färg från färgväljaren." },
-        { "name": "Välj bakgrundsfärg", "text": "Ange bakgrundsfärgen där texten kommer att visas." },
-        { "name": "Läs resultaten", "text": "Verktyget visar kontrastförhållandet och om färgerna uppfyller AA/AAA-kraven." },
-        { "name": "Justera färgerna", "text": "Om kontrasten är för låg, föreslår Match-funktionen automatiskt en textfärgsvariant som uppfyller den valda WCAG-tröskeln." }
+        {
+          "name": "Välj textfärg",
+          "text": "Ange en färgkod (t.ex. #333333) i HEX-, RGB- eller HSL-format – eller välj en färg från färgväljaren."
+        },
+        {
+          "name": "Välj bakgrundsfärg",
+          "text": "Ange bakgrundsfärgen där texten kommer att visas."
+        },
+        {
+          "name": "Läs resultaten",
+          "text": "Verktyget visar kontrastförhållandet och om färgerna uppfyller AA/AAA-kraven."
+        },
+        {
+          "name": "Justera färgerna",
+          "text": "Om kontrasten är för låg, föreslår Match-funktionen automatiskt en textfärgsvariant som uppfyller den valda WCAG-tröskeln."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Varför är färgläsbarhet viktig?",
       "html": "<p class=\"text-mid\">Läsbarhet är skillnaden i ljusstyrka mellan textfärgen och bakgrundsfärgen. Ju större skillnad, desto lättare är det att läsa texten. För låg kontrast gör innehållet svårt att läsa – särskilt för personer med synnedsättning, äldre eller under svåra ljusförhållanden.</p><p class=\"text-mid mt-3\">Enligt <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Världshälsoorganisationen (WHO)</a> har cirka 2,2 miljarder människor i världen någon form av synnedsättning.</p><p class=\"text-mid mt-3\">Verktyget beräknar kontrastförhållandet med formeln definierad i <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1</a> – internationella riktlinjer för digital tillgänglighet.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Hur man använder färgkontrastkontrollen",
       "description": "Att kontrollera läsbarheten tar bara några sekunder:",
       "grid": "four",
       "items": [
-        { "icon": "RiPaletteLine", "title": "1. Ange textfärg", "description": "Ange en färgkod i HEX-, RGB- eller HSL-format – eller välj en färg från färgväljaren." },
-        { "icon": "RiPaintBrushLine", "title": "2. Ange bakgrundsfärg", "description": "Ange bakgrundsfärgen där texten kommer att visas." },
+        {
+          "icon": "RiPaletteLine",
+          "title": "1. Ange textfärg",
+          "description": "Ange en färgkod i HEX-, RGB- eller HSL-format – eller välj en färg från färgväljaren."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "2. Ange bakgrundsfärg",
+          "description": "Ange bakgrundsfärgen där texten kommer att visas."
+        },
         {
           "icon": "RiCheckboxCircleLine",
           "title": "3. Läs resultaten",
           "description": "Verktyget beräknar kontrastförhållandet och visar om färgerna uppfyller WCAG-kraven för vanlig text, stor text och ikoner."
         },
-        { "icon": "RiEqualizerLine", "title": "4. Justera färgerna", "description": "Om kontrasten är för låg, föreslår Match-funktionen automatiskt en färgvariant som uppfyller den valda tröskeln." }
+        {
+          "icon": "RiEqualizerLine",
+          "title": "4. Justera färgerna",
+          "description": "Om kontrasten är för låg, föreslår Match-funktionen automatiskt en färgvariant som uppfyller den valda tröskeln."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Hur man tolkar läsbarhetstestresultaten",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Kontrastförhållande</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Vanlig text</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div></div></div>",
       "html": "<p class=\"text-mid mb-4\">Efter att färger angetts visar verktyget resultat i tre sektioner:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Vanlig text</strong> – kräver kontrast 4.5:1 (AA) eller 7:1 (AAA). Gäller text under 18pt (24px) eller under 14pt bold.</li><li><strong>Stor text / bold</strong> – kräver kontrast 3:1 (AA) eller 4.5:1 (AAA). Gäller rubriker, knappar och markerad text.</li><li><strong>Ikoner</strong> – kräver kontrast 3:1 (AA). Gäller ikoner och grafiska UI-element som förmedlar information.</li></ul><p class=\"text-mid mt-3\"><strong>Grön indikator</strong> innebär att kravet är uppfyllt. <strong>Röd indikator</strong> innebär att kontrasten är för låg och behöver korrigeras.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionFeatureComparison",
       "title": "Vad betyder nivåerna AA och AAA i WCAG-standarden?",
       "plans": [
-        { "id": "aa", "name": "Nivå AA (minimum)", "highlighted": true },
-        { "id": "aaa", "name": "Nivå AAA (förbättrad)" }
+        {
+          "id": "aa",
+          "name": "Nivå AA (minimum)",
+          "highlighted": true
+        },
+        {
+          "id": "aaa",
+          "name": "Nivå AAA (förbättrad)"
+        }
       ],
       "features": [
-        { "name": "Vanlig text – min. 4.5:1", "values": { "aa": true, "aaa": true } },
-        { "name": "Vanlig text – min. 7:1", "values": { "aa": false, "aaa": true } },
-        { "name": "Stor text / bold – min. 3:1", "values": { "aa": true, "aaa": true } },
-        { "name": "Stor text / bold – min. 4.5:1", "values": { "aa": false, "aaa": true } },
-        { "name": "Ikoner och UI-element – min. 3:1", "values": { "aa": true, "aaa": true } },
-        { "name": "Lagstadgat krav (EU-direktiv)", "values": { "aa": true, "aaa": false } },
-        { "name": "Rekommenderas för huvudinnehåll", "values": { "aa": true, "aaa": true } }
+        {
+          "name": "Vanlig text – min. 4.5:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Vanlig text – min. 7:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Stor text / bold – min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Stor text / bold – min. 4.5:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Ikoner och UI-element – min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Lagstadgat krav (EU-direktiv)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Rekommenderas för huvudinnehåll",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Vanliga frågor om färgkontrastkontrollen",
@@ -121,8 +215,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Utforska fler gratisverktyg" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforska fler gratisverktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

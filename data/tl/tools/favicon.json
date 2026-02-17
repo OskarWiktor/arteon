@@ -2,23 +2,29 @@
   "toolKey": "favicon",
   "locale": "tl",
   "metadata": {
-    "title": "Libreng Favicon Generator \u2013 Gumawa ng favicon.ico Mula sa Anumang Larawan",
-    "description": "Gumawa ng favicon.ico at kumpletong set ng favicon para sa website mula sa isang larawan. Lahat ng kinakailangang sukat sa isang click. Lokal sa browser, walang registration.",
+    "title": "Libreng Favicon Generator – Gumawa ng favicon.ico Mula sa Anumang Larawan",
+    "description": "Gumawa ng favicon.ico at kumpletong set ng favicon para sa website mula sa isang larawan. Lahat ng kinakailangang sukat sa isang click. Lokal sa browser,",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
     "path": "/tl/mga-kasangkapan/libreng-favicon-generator"
   },
   "hero": {
-    "title": "Favicon Generator \u2013 Gumawa ng favicon.ico nang Libre",
+    "title": "Favicon Generator – Gumawa ng favicon.ico nang Libre",
     "description": "I-generate ang favicon.ico at kumpletong set ng PNG icon para sa website mula sa isang larawan. Lahat ng pagproseso ay nangyayari nang lokal sa browser.",
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/tl/mga-kasangkapan", "label": "Mga kasangkapan" },
-    "third": { "href": "/tl/mga-kasangkapan/libreng-favicon-generator", "label": "Favicon generator" }
+    "second": {
+      "href": "/tl/mga-kasangkapan",
+      "label": "Mga kasangkapan"
+    },
+    "third": {
+      "href": "/tl/mga-kasangkapan/libreng-favicon-generator",
+      "label": "Favicon generator"
+    }
   },
   "schemas": {
     "software": {
-      "name": "Favicon generator \u2013 libreng icon creator para sa mga website",
+      "name": "Favicon generator – libreng icon creator para sa mga website",
       "alternateName": ["Favicon.ico at PNG icon generator"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "IconGenerator",
@@ -46,23 +52,35 @@
           "name": "Magdagdag ng source image",
           "text": "I-drag ang file sa itinalagang lugar o pumili ng graphic mula sa device. Ang simpleng logo o icon sa PNG, JPG, o SVG format ang pinakamainam."
         },
-        { "name": "Pumili ng mga sukat ng icon", "text": "Piliin kung aling mga sukat ng icon ang kailangan: favicon.ico (32x32), PNG icon (16x16, 32x32, 180x180, 192x192, 512x512)." },
+        {
+          "name": "Pumili ng mga sukat ng icon",
+          "text": "Piliin kung aling mga sukat ng icon ang kailangan: favicon.ico (32x32), PNG icon (16x16, 32x32, 180x180, 192x192, 512x512)."
+        },
         {
           "name": "I-configure ang mga opsyon",
           "text": "Itakda ang kulay ng background (o panatilihing transparent), magpasya kung i-generate ang manifest file, at kung awtomatikong ida-download ang mga file."
         },
-        { "name": "I-generate at i-download ang mga file", "text": "Pagkatapos ng generation, maaaring i-download ang mga file bilang ZIP archive o bawat icon nang isa-isa." }
+        {
+          "name": "I-generate at i-download ang mga file",
+          "text": "Pagkatapos ng generation, maaaring i-download ang mga file bilang ZIP archive o bawat icon nang isa-isa."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Ano ang favicon at bakit kailangan ito?",
-      "html": "<p class=\"mb-4\">Ang favicon ay isang maliit na icon na lumalabas sa tab ng browser sa tabi ng titulo ng pahina. Makikita rin ito sa mga bookmark, kasaysayan ng pag-browse, at sa home screen ng telepono kapag may nagdagdag ng site bilang shortcut.</p><p class=\"mb-4\">Ang maliit na graphic na ito ay may mahalagang function \u2013 tinutulungan nito ang mga gumagamit na mabilis na makilala ang site sa maraming bukas na tab. Kapag may isang dosenang tab na bukas sa browser, ang favicon ay kadalasang tanging nakikitang elemento na nagpapakilala sa site.</p><p>Gumagawa ang generator ng kumpletong set ng icon: klasikong favicon.ico file para sa mga browser, PNG icon sa iba't ibang sukat, at apple-touch-icon para sa mga Apple device. Kung nagtatayo ka ng web app (PWA), maaari mo ring i-generate ang 192x192 at 512x512 icon kasama ang manifest file.</p>"
+      "html": "<p class=\"mb-4\">Ang favicon ay isang maliit na icon na lumalabas sa tab ng browser sa tabi ng titulo ng pahina. Makikita rin ito sa mga bookmark, kasaysayan ng pag-browse, at sa home screen ng telepono kapag may nagdagdag ng site bilang shortcut.</p><p class=\"mb-4\">Ang maliit na graphic na ito ay may mahalagang function – tinutulungan nito ang mga gumagamit na mabilis na makilala ang site sa maraming bukas na tab. Kapag may isang dosenang tab na bukas sa browser, ang favicon ay kadalasang tanging nakikitang elemento na nagpapakilala sa site.</p><p>Gumagawa ang generator ng kumpletong set ng icon: klasikong favicon.ico file para sa mga browser, PNG icon sa iba't ibang sukat, at apple-touch-icon para sa mga Apple device. Kung nagtatayo ka ng web app (PWA), maaari mo ring i-generate ang 192x192 at 512x512 icon kasama ang manifest file.</p>"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Paano gumawa ng favicon sa 3 hakbang",
@@ -71,11 +89,11 @@
       "items": [
         {
           "title": "1. Magdagdag ng larawan",
-          "description": "I-drag ang file sa itinalagang lugar o pumili ng graphic mula sa device. Mga sinusuportahang format: PNG, JPG, SVG. Inirerekomendang sukat: min. 512\u00d7512 pixel."
+          "description": "I-drag ang file sa itinalagang lugar o pumili ng graphic mula sa device. Mga sinusuportahang format: PNG, JPG, SVG. Inirerekomendang sukat: min. 512×512 pixel."
         },
         {
           "title": "2. Pumili ng mga sukat",
-          "description": "Piliin ang mga sukat ng icon na kailangan. Para sa regular na website: favicon.ico, 32\u00d732, at 180\u00d7180. Para sa PWA, idagdag ang 192\u00d7192 at 512\u00d7512."
+          "description": "Piliin ang mga sukat ng icon na kailangan. Para sa regular na website: favicon.ico, 32×32, at 180×180. Para sa PWA, idagdag ang 192×192 at 512×512."
         },
         {
           "title": "3. I-download ang mga file",
@@ -83,13 +101,19 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Anong mga sukat ng icon ang ginagawa ng tool?",
-      "html": "<p class=\"mb-6\">Bawat sukat ay may gamit:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32\u00d732)</p><p class=\"text-mid text-sm\">Klasikong format na kinikilala ng lahat ng browser. Ipinapakita sa tab ng browser.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16\u00d716 at 32\u00d732 PNG</p><p class=\"text-mid text-sm\">Karaniwang sukat para sa mga modernong browser. Ipinapakita sa mga tab at bookmark.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180\u00d7180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Icon para sa mga Apple device (iPhone, iPad). Ipinapakita kapag may nagdagdag ng site sa home screen.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192\u00d7192 at 512\u00d7512 PNG</p><p class=\"text-mid text-sm\">Mga icon para sa web app (PWA). Kinakailangan ng manifest at ginagamit sa mga app store.</p></div></div><p class=\"text-light mt-6\">Kung hindi ka nagtatayo ng PWA, kailangan lang: favicon.ico, 32\u00d732 PNG, at 180\u00d7180 PNG. Ang tatlong file na ito ang sumasaklaw sa karamihan ng gamit.</p>"
+      "html": "<p class=\"mb-6\">Bawat sukat ay may gamit:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Klasikong format na kinikilala ng lahat ng browser. Ipinapakita sa tab ng browser.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16×16 at 32×32 PNG</p><p class=\"text-mid text-sm\">Karaniwang sukat para sa mga modernong browser. Ipinapakita sa mga tab at bookmark.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180×180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Icon para sa mga Apple device (iPhone, iPad). Ipinapakita kapag may nagdagdag ng site sa home screen.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192×192 at 512×512 PNG</p><p class=\"text-mid text-sm\">Mga icon para sa web app (PWA). Kinakailangan ng manifest at ginagamit sa mga app store.</p></div></div><p class=\"text-light mt-6\">Kung hindi ka nagtatayo ng PWA, kailangan lang: favicon.ico, 32×32 PNG, at 180×180 PNG. Ang tatlong file na ito ang sumasaklaw sa karamihan ng gamit.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Ano ang espesyal sa favicon generator?",
@@ -97,18 +121,18 @@
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy \u2013 hindi umaalis ang mga file sa computer",
+          "title": "Privacy – hindi umaalis ang mga file sa computer",
           "description": "Lahat ng operasyon ay isinasagawa nang lokal sa browser. Hindi ipinapadala ang larawan sa anumang server. Pagkatapos isara ang pahina, lahat ng data ay tinanggal."
         },
         {
           "icon": "RiDownloadLine",
           "title": "Kumpletong set sa isang lugar",
-          "description": "Favicon.ico, PNG icon, apple-touch-icon, PWA icon, at manifest \u2013 lahat mula sa isang larawan, sa isang tool."
+          "description": "Favicon.ico, PNG icon, apple-touch-icon, PWA icon, at manifest – lahat mula sa isang larawan, sa isang tool."
         },
         {
           "icon": "RiImageLine",
           "title": "Suporta sa PNG, JPG, at SVG",
-          "description": "Maaaring gumamit ng logo sa anumang format. Kung mayroon kang SVG \u2013 ang mga icon ay magiging malinaw sa lahat ng sukat."
+          "description": "Maaaring gumamit ng logo sa anumang format. Kung mayroon kang SVG – ang mga icon ay magiging malinaw sa lahat ng sukat."
         },
         {
           "icon": "RiSmartphoneLine",
@@ -117,7 +141,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Paano gamitin ang favicon generator",
@@ -127,12 +154,12 @@
         {
           "icon": "RiUploadLine",
           "title": "1. Magdagdag ng source image",
-          "description": "I-drag ang file sa itinalagang lugar o pumili ng graphic mula sa device. Mga sinusuportahang format: PNG, JPG, SVG. Ang simpleng logo o icon na hindi bababa sa 512\u00d7512 pixel ang pinakamainam."
+          "description": "I-drag ang file sa itinalagang lugar o pumili ng graphic mula sa device. Mga sinusuportahang format: PNG, JPG, SVG. Ang simpleng logo o icon na hindi bababa sa 512×512 pixel ang pinakamainam."
         },
         {
           "icon": "RiLayoutGridLine",
           "title": "2. Pumili ng mga sukat ng icon",
-          "description": "Piliin kung aling mga sukat ng icon ang kailangan. Maaaring piliin lahat o ilang lang. Para sa regular na website: favicon.ico, 32\u00d732, at 180\u00d7180."
+          "description": "Piliin kung aling mga sukat ng icon ang kailangan. Maaaring piliin lahat o ilang lang. Para sa regular na website: favicon.ico, 32×32, at 180×180."
         },
         {
           "icon": "RiSettings3Line",
@@ -142,18 +169,24 @@
         {
           "icon": "RiDownloadLine",
           "title": "4. I-generate at i-download ang mga file",
-          "description": "Pagkatapos simulan ang generation, lokal na pinoproseso ng tool ang larawan \u2013 walang ipinapadala sa server. I-download lahat ng file bilang ZIP archive o indibidwal na icon nang hiwalay."
+          "description": "Pagkatapos simulan ang generation, lokal na pinoproseso ng tool ang larawan – walang ipinapadala sa server. I-download lahat ng file bilang ZIP archive o indibidwal na icon nang hiwalay."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
-      "title": "Mga opsyon ng generation \u2013 ano ang ginagawa ng bawat isa?",
-      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">Mga sukat ng PNG</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">16\u00d716</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">32\u00d732</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">180\u00d7180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span class=\"text-mid text-sm!\">Transparent na background (PNG/ICO)</span></div></div></div>",
+      "title": "Mga opsyon ng generation – ano ang ginagawa ng bawat isa?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">Mga sukat ng PNG</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">16×16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">32×32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">180×180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span class=\"text-mid text-sm!\">Transparent na background (PNG/ICO)</span></div></div></div>",
       "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Background (transparent o kulay)</h3><p class=\"text-mid\">Bilang default, pinapanatili ng generator ang transparency. Maaari ring pumili ng partikular na kulay ng background.</p></div><div><h3 class=\"h5 mb-2\">I-generate ang manifest (site.webmanifest)</h3><p class=\"text-mid\">Isang JSON file para sa mga web app (PWA). Kung hindi ka nagtatayo ng PWA, hindi kailangan ang opsyon na ito.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Paano i-download ang mga na-generate na file",
@@ -168,11 +201,14 @@
         {
           "icon": "RiFileDownloadLine",
           "title": "I-download ang indibidwal na file",
-          "description": "Bawat na-generate na icon ay may sariling download button \u2013 maaaring i-download ang isang file nang hindi dina-download ang buong set. Kapaki-pakinabang kapag isang sukat lang ang kailangang i-update."
+          "description": "Bawat na-generate na icon ay may sariling download button – maaaring i-download ang isang file nang hindi dina-download ang buong set. Kapaki-pakinabang kapag isang sukat lang ang kailangang i-update."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Saan at paano idagdag ang favicon",
@@ -180,25 +216,28 @@
         {
           "title": "WordPress",
           "icon": "RiWordpressLine",
-          "html": "<div><p class=\"text-mid mb-3\">Karamihan ng WordPress theme ay may built-in na opsyon para sa pagtatakda ng site icon. Makikita ito sa admin panel:</p><p class=\"text-mid mb-3\"><strong>Appearance \u2192 Customize \u2192 Site Identity \u2192 Site Icon</strong></p><p class=\"text-light\">I-upload doon ang 512\u00d7512 file \u2013 awtomatikong ige-generate ng WordPress ang mas maliliit na sukat. Para sa buong kontrol sa mga icon, maaari ring i-upload ang mga file nang direkta sa root directory gamit ang FTP.</p></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Karamihan ng WordPress theme ay may built-in na opsyon para sa pagtatakda ng site icon. Makikita ito sa admin panel:</p><p class=\"text-mid mb-3\"><strong>Appearance → Customize → Site Identity → Site Icon</strong></p><p class=\"text-light\">I-upload doon ang 512×512 file – awtomatikong ige-generate ng WordPress ang mas maliliit na sukat. Para sa buong kontrol sa mga icon, maaari ring i-upload ang mga file nang direkta sa root directory gamit ang FTP.</p></div>"
         },
         {
           "title": "HTML",
           "icon": "RiHtml5Line",
-          "html": "<div><p class=\"text-mid mb-3\">Ilagay ang mga na-generate na file sa root directory ng site (kung nasaan ang index.html). Pagkatapos idagdag ang mga naaangkop na tag sa &lt;head&gt; section:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">Ang code sa itaas ay halimbawa \u2014 ayusin ang mga path upang tumugma sa istruktura ng site.</p></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Ilagay ang mga na-generate na file sa root directory ng site (kung nasaan ang index.html). Pagkatapos idagdag ang mga naaangkop na tag sa &lt;head&gt; section:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">Ang code sa itaas ay halimbawa — ayusin ang mga path upang tumugma sa istruktura ng site.</p></div>"
         },
         {
           "title": "Next.js / React",
           "icon": "RiReactjsLine",
-          "html": "<div><p class=\"text-mid mb-3\">Sa Next.js (App Router), ilagay ang mga favicon file sa <code>app/</code> o <code>public/</code> directory:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> \u2013 awtomatikong kinikilala ng Next.js</li><li><code>app/apple-icon.png</code> \u2013 Apple icon</li><li><code>public/</code> \u2013 natitirang icon (192\u00d7192, 512\u00d7512)</li></ul><p class=\"text-light\">Maaari ring i-configure ang mga icon sa <code>layout.tsx</code> gamit ang <code>metadata.icons</code> object.</p></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Sa Next.js (App Router), ilagay ang mga favicon file sa <code>app/</code> o <code>public/</code> directory:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> – awtomatikong kinikilala ng Next.js</li><li><code>app/apple-icon.png</code> – Apple icon</li><li><code>public/</code> – natitirang icon (192×192, 512×512)</li></ul><p class=\"text-light\">Maaari ring i-configure ang mga icon sa <code>layout.tsx</code> gamit ang <code>metadata.icons</code> object.</p></div>"
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Anong source image ang pinakamainam?",
-      "description": "Ang favicon ay napakaliling graphic \u2013 kasing liit ng 16\u00d716 pixel. Hindi lahat ng larawan ay gumagana nang maayos bilang source:",
+      "description": "Ang favicon ay napakaliling graphic – kasing liit ng 16×16 pixel. Hindi lahat ng larawan ay gumagana nang maayos bilang source:",
       "grid": "two",
       "items": [
         {
@@ -206,8 +245,16 @@
           "title": "Mga simpleng hugis at nababasang simbolo",
           "description": "Ang mga simpleng logo, isang titik, o simbolo ang pinakamainam. Iwasan ang mga komplikadong graphic na may maraming detalye."
         },
-        { "icon": "RiAspectRatioLine", "title": "Square na format", "description": "Ang favicon ay square. Kung ang source image ay may ratio na hindi 1:1, ito ay iki-crop o ite-stretch." },
-        { "icon": "RiZoomInLine", "title": "Sapat na sukat", "description": "Inirerekomenda ang source image na hindi bababa sa 512\u00d7512 pixel. Ang mas maliliit na larawan ay ie-scale up." },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Square na format",
+          "description": "Ang favicon ay square. Kung ang source image ay may ratio na hindi 1:1, ito ay iki-crop o ite-stretch."
+        },
+        {
+          "icon": "RiZoomInLine",
+          "title": "Sapat na sukat",
+          "description": "Inirerekomenda ang source image na hindi bababa sa 512×512 pixel. Ang mas maliliit na larawan ay ie-scale up."
+        },
         {
           "icon": "RiImageLine",
           "title": "SVG format bilang ideal na source",
@@ -220,7 +267,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Mga madalas itanong tungkol sa favicon generator",
@@ -228,12 +278,12 @@
       "items": [
         {
           "question": "Anong sukat ang dapat ng source image para sa pag-generate ng favicon?",
-          "answer": "Ang inirerekomendang sukat ay hindi bababa sa 512\u00d7512 pixel sa square format (1:1). Sa ganitong source, ang mga icon sa lahat ng sukat ay magiging malinaw at nababasa. Kung mayroon kang logo sa SVG format \u2013 gamitin ito, dahil ang vector graphic ay nag-scale nang walang pagkawala ng kalidad.",
-          "answerSchemaText": "Hindi bababa sa 512\u00d7512 px, square (1:1). Ang SVG ay ideal dahil nag-scale nang walang pagkawala ng kalidad."
+          "answer": "Ang inirerekomendang sukat ay hindi bababa sa 512×512 pixel sa square format (1:1). Sa ganitong source, ang mga icon sa lahat ng sukat ay magiging malinaw at nababasa. Kung mayroon kang logo sa SVG format – gamitin ito, dahil ang vector graphic ay nag-scale nang walang pagkawala ng kalidad.",
+          "answerSchemaText": "Hindi bababa sa 512×512 px, square (1:1). Ang SVG ay ideal dahil nag-scale nang walang pagkawala ng kalidad."
         },
         {
           "question": "Maaari bang i-generate lang ang favicon.ico nang wala ang ibang icon?",
-          "answer": "Oo. Bago i-generate, maaaring piliin nang eksakto kung aling mga sukat ang kailangan \u2013 hal. favicon.ico lang o ilang napiling PNG sukat lang.",
+          "answer": "Oo. Bago i-generate, maaaring piliin nang eksakto kung aling mga sukat ang kailangan – hal. favicon.ico lang o ilang napiling PNG sukat lang.",
           "answerSchemaText": "Oo, maaaring pumili ng indibidwal na sukat bago i-generate."
         },
         {
@@ -243,13 +293,13 @@
         },
         {
           "question": "Nakakaapekto ba ang favicon sa ranking sa Google search?",
-          "answer": "Hindi direkta \u2013 ang favicon ay hindi ranking factor. Gayunpaman, hindi direktang nakakaapekto ito sa brand recognition: ang site na may propesyonal na icon ay mas madaling makilala sa maraming bukas na tab, na maaaring magreresulta sa mas mataas na click-through rate sa search result.",
+          "answer": "Hindi direkta – ang favicon ay hindi ranking factor. Gayunpaman, hindi direktang nakakaapekto ito sa brand recognition: ang site na may propesyonal na icon ay mas madaling makilala sa maraming bukas na tab, na maaaring magreresulta sa mas mataas na click-through rate sa search result.",
           "answerSchemaText": "Hindi direkta. Hindi direktang nagpapabuti ng brand recognition at click-through rate."
         },
         {
           "question": "Aling mga sukat ng icon ang kailangan para sa regular na website?",
-          "answer": "Para sa karaniwang website, sapat na ang tatlong file: favicon.ico (32\u00d732), 32\u00d732 PNG icon, at apple-touch-icon 180\u00d7180. Kung ang site ay dapat gumana bilang web app (PWA), kailangan din ang 192\u00d7192 at 512\u00d7512 icon kasama ang manifest file.",
-          "answerSchemaText": "favicon.ico, 32\u00d732 PNG, at apple-touch-icon 180\u00d7180. Para sa PWA idagdag ang 192\u00d7192 at 512\u00d7512."
+          "answer": "Para sa karaniwang website, sapat na ang tatlong file: favicon.ico (32×32), 32×32 PNG icon, at apple-touch-icon 180×180. Kung ang site ay dapat gumana bilang web app (PWA), kailangan din ang 192×192 at 512×512 icon kasama ang manifest file.",
+          "answerSchemaText": "favicon.ico, 32×32 PNG, at apple-touch-icon 180×180. Para sa PWA idagdag ang 192×192 at 512×512."
         },
         {
           "question": "Ano ang site.webmanifest file at kailan ito kailangan?",
@@ -258,7 +308,7 @@
         },
         {
           "question": "Pareho ba ang pagpapakita ng favicon sa lahat ng browser?",
-          "answer": "Karamihan ng modernong browser (Chrome, Firefox, Edge, Safari) ay kinikilala ang favicon.ico file at PNG icon. Ang mga pagkakaiba ay maaaring mangyari sa ipinakitang sukat ng icon \u2013 mas gusto ng Chrome ang PNG 32\u00d732, habang ang Safari sa iOS ay gumagamit ng apple-touch-icon 180\u00d7180. Para sa pinakamainam na compatibility, inirerekomenda ang pag-generate ng buong set ng sukat.",
+          "answer": "Karamihan ng modernong browser (Chrome, Firefox, Edge, Safari) ay kinikilala ang favicon.ico file at PNG icon. Ang mga pagkakaiba ay maaaring mangyari sa ipinakitang sukat ng icon – mas gusto ng Chrome ang PNG 32×32, habang ang Safari sa iOS ay gumagamit ng apple-touch-icon 180×180. Para sa pinakamainam na compatibility, inirerekomenda ang pag-generate ng buong set ng sukat.",
           "answerSchemaText": "Halos pareho. I-generate ang buong set ng sukat para sa pinakamainam na compatibility."
         },
         {
@@ -268,8 +318,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Tingnan ang iba pang mga tool" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tingnan ang iba pang mga tool"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

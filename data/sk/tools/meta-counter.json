@@ -1,0 +1,189 @@
+{
+  "toolKey": "metaCounter",
+  "locale": "sk",
+  "metadata": {
+    "title": "Bezplatná kontrola meta title a description – Šírka v pixeloch",
+    "description": "Skontrolujte dĺžku meta title a description v znakoch a pixeloch. Náhľad vo výsledkoch Google pomáha vyhnúť sa orezaným úryvkom. Bez registrácie,",
+    "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+    "path": "/sk/nastroje/kontrola-meta-title-a-description"
+  },
+  "hero": {
+    "title": "Skontrolujte dĺžku title a description v Google",
+    "description": "Zadajte nadpis a popis stránky a nástroj vypočíta počet znakov a slov, šírku v pixeloch a ukáže, či dĺžka zodpovedá odporúčaným SEO postupom.",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sk/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/sk/nastroje/kontrola-meta-title-a-description",
+      "label": "Kontrola meta title a description"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Bezplatná kontrola dĺžky meta title a description",
+      "alternateName": ["Kontrola meta title a description s náhľadom Google", "Google SERP náhľad", "Kontrola šírky SEO nadpisu v pixeloch"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "SEOTool",
+      "description": "Bezplatná kontrola dĺžky meta title a description. Kontroluje počet znakov a slov a šírku v pixeloch. Zobrazuje náhľad toho, ako sa nadpis a popis zobrazia vo výsledkoch vyhľadávania Google.",
+      "featureList": [
+        "Počítadlo znakov meta title",
+        "Počítadlo znakov meta description",
+        "Meranie šírky v pixeloch (zodpovedá Google)",
+        "Počítadlo slov v title a description",
+        "Náhľad výsledkov vyhľadávania Google",
+        "Farebne kódované hodnotenie dĺžky (príliš krátke / dobré / príliš dlhé)",
+        "Upozornenie na orezanie title a description",
+        "Odporúčanie optimálnej dĺžky",
+        "Lokálne spracovanie v prehliadači"
+      ]
+    },
+    "howTo": {
+      "name": "Ako skontrolovať dĺžku meta title a description",
+      "description": "Skontrolujte dĺžku meta title a description v pixeloch a znakoch.",
+      "totalTime": "PT3M",
+      "steps": [
+        {
+          "name": "Zadajte meta title",
+          "text": "Vložte alebo napíšte nadpis stránky do poľa Meta Title. Nástroj automaticky vypočíta počet znakov a slov a šírku v pixeloch."
+        },
+        {
+          "name": "Zadajte meta description",
+          "text": "Pridajte popis stránky do poľa Meta Description. Uvidíte rovnaké výsledky merania."
+        },
+        {
+          "name": "Skontrolujte náhľad Google",
+          "text": "Pozrite sa, ako nadpis a popis vyzerajú v simulovaných výsledkoch vyhľadávania Google."
+        },
+        {
+          "name": "Upravte podľa odporúčaní",
+          "text": "Ak stav ukazuje Príliš krátke alebo Príliš dlhé, upravte text a sledujte zmeny v reálnom čase."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Čo sú meta title a meta description?",
+      "html": "<p class=\"text-mid\">Meta title a meta description sú dva krátke texty, ktoré opisujú obsah webovej stránky. Nezobrazujú sa priamo na stránke, ale objavujú sa vo výsledkoch vyhľadávania Google ako nadpis (modrý odkaz) a popis (sivý text pod nadpisom).</p><p class=\"text-mid mt-3\">Dobre napísané meta značky fungujú ako reklama stránky vo výsledkoch vyhľadávania – priťahujú pozornosť a zvyšujú pravdepodobnosť kliknutia. Zle napísané alebo orezané značky môžu odradiť používateľov od kliknutia, aj keď samotná stránka je hodnotná.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ako používať kontrolu meta title a description",
+      "description": "Kontrola dĺžky meta značiek trvá minútu:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiPencilLine",
+          "title": "1. Zadajte nadpis stránky",
+          "description": "Vložte alebo napíšte meta title do prvého poľa. Nástroj okamžite zobrazí tri výsledky merania: počet znakov a slov a šírku v pixeloch."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Zadajte popis stránky",
+          "description": "Pridajte meta description do druhého poľa. Uvidíte rovnaké výsledky merania."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "3. Skontrolujte náhľad",
+          "description": "Vpravo (na počítači) alebo nižšie (na mobile) uvidíte náhľad toho, ako nadpis a popis vyzerajú vo výsledkoch vyhľadávania Google."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "4. Upravte podľa odporúčaní",
+          "description": "Ak stav ukazuje Príliš krátke alebo Príliš dlhé, upravte text. Zmeny sa zobrazia okamžite."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Koľko znakov by mal mať meta title a description?",
+      "html": "<p class=\"text-mid mb-4\">Google orezáva príliš dlhé nadpisy a popisy. Nižšie sú odporúčané rozsahy, ktoré znižujú riziko orezaného textu vo výsledkoch vyhľadávania.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Prvok</th><th class=\"py-2 pr-4 font-semibold\">Znaky</th><th class=\"py-2 pr-4 font-semibold\">Pixely</th><th class=\"py-2 font-semibold\">Poznámky</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 znakov</td><td class=\"py-2 pr-4 whitespace-nowrap\">max ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Najdôležitejšie kľúčové slovo na začiatok. Značku na koniec.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">120–160 znakov</td><td class=\"py-2 pr-4 whitespace-nowrap\">max ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">Priestor pre 2–3 krátke vety. Ukončite výzvou k akcii.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Toto sú približné hodnoty – Google nezverejňuje presné limity a môže ich meniť podľa zariadenia a kontextu vyhľadávania.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Pre koho je kontrola meta značiek určená?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Majitelia webových stránok a e-shopov",
+          "description": "Skontrolujte, či sa nadpisy a popisy neorezávajú vo výsledkoch Google pred publikovaním novej stránky alebo produktu."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "SEO špecialisti",
+          "description": "Testujte rôzne verzie nadpisov a popisov, kontrolujte náhľad výsledkov vyhľadávania a overte súlad s odporúčaniami."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Copywriteri",
+          "description": "Píšte nadpisy a popisy, ktoré sa zmestia do limitov a podporujú kliknutie."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Weboví vývojári",
+          "description": "Overte meta značky pred nasadením stránky do produkcie."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky o kontrole meta title a description",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Prečo nástroj zobrazuje šírku v pixeloch a nielen počet znakov?",
+          "answer": "Rôzne znaky majú rôznu šírku. Písmeno &quot;i&quot; zaberá oveľa menej miesta ako &quot;m&quot; alebo &quot;W&quot;. Google orezáva nadpisy a popisy podľa šírky v pixeloch, nie podľa počtu znakov.",
+          "answerSchemaText": "Google orezáva podľa šírky v pixeloch, nie podľa počtu znakov. Rôzne znaky majú rôznu šírku."
+        },
+        {
+          "question": "Zobrazí Google vždy meta title a description?",
+          "answer": "Nie vždy. Google môže zmeniť zobrazený nadpis alebo popis, ak nájde niečo lepšie zodpovedajúce vyhľadávaniu používateľa. Dobre napísané meta značky zvyšujú pravdepodobnosť, že ich Google použije, ale 100% záruka neexistuje.",
+          "answerSchemaText": "Nie vždy. Google môže zmeniť zobrazený nadpis alebo popis tak, aby lepšie zodpovedal vyhľadávaniu."
+        },
+        {
+          "question": "Aká je optimálna dĺžka meta title a meta description?",
+          "answer": "Meta title by mal mať približne 50–60 znakov (maximálne ~580 pixelov šírky). Meta description funguje najlepšie pri 120–160 znakoch (maximálne ~920 pixelov). Toto sú približné hodnoty – Google nezverejňuje presné limity.",
+          "answerSchemaText": "Meta title: 50–60 znakov (~580px). Meta description: 120–160 znakov (~920px). Približné hodnoty."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Pozrite si ďalšie nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -27,11 +27,11 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
   title: 'Ingyenes online eszközök | Képek, SEO, színek, favicon',
-  description: '10 ingyenes online eszköz: WebP konverter, favicon generátor, szövegszámláló, színkinyerő és QR-kódok. Weboldalakhoz, közösségi médiához és nyomtatáshoz. Regisztráció nélkül.',
+  description: '10 ingyenes eszköz: WebP konverter, favicon generátor, szövegszámláló, színkinyerő és QR-kódok. Weboldalakhoz és közösségi médiához. Regisztráció nélkül.',
   alternates: getToolsIndexAlternates('hu'),
   openGraph: {
     title: 'Ingyenes online eszközök | Képek, SEO, színek, favicon',
-    description: '10 ingyenes online eszköz: WebP konverter, favicon generátor, szövegszámláló, színkinyerő és QR-kódok. Weboldalakhoz, közösségi médiához és nyomtatáshoz. Regisztráció nélkül.',
+    description: '10 ingyenes eszköz: WebP konverter, favicon generátor, szövegszámláló, színkinyerő és QR-kódok. Weboldalakhoz és közösségi médiához. Regisztráció nélkül.',
     url: toAbsoluteUrl('/hu/eszkozok'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -42,7 +42,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Ingyenes online eszközök',
-  description: '10 ingyenes online eszköz: WebP konverter, favicon generátor, szövegszámláló, színkinyerő és QR-kódok. Weboldalakhoz, közösségi médiához és nyomtatáshoz. Regisztráció nélkül.',
+  description: '10 ingyenes eszköz: WebP konverter, favicon generátor, szövegszámláló, színkinyerő és QR-kódok. Weboldalakhoz és közösségi médiához. Regisztráció nélkül.',
   url: toAbsoluteUrl('/hu/eszkozok'),
   inLanguage: 'hu',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },

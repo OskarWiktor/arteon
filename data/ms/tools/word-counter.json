@@ -2,8 +2,8 @@
   "toolKey": "wordCounter",
   "locale": "ms",
   "metadata": {
-    "title": "Pengira Perkataan dan Aksara Percuma \u2013 Semak Panjang Teks untuk SEO",
-    "description": "Kira perkataan, aksara, perenggan dan masa membaca serta-merta. Semak panjang teks optimum untuk SEO \u2013 artikel blog, halaman produk, halaman pendaratan. Tanpa pendaftaran, tanpa had.",
+    "title": "Pengira Perkataan dan Aksara Percuma – Semak Panjang Teks untuk SEO",
+    "description": "Kira perkataan, aksara, perenggan dan masa membaca serta-merta. Semak panjang teks optimum untuk SEO – artikel blog, halaman produk, halaman pendaratan.",
     "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
     "path": "/ms/alatan/pengira-perkataan-dan-aksara"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/ms/alatan", "label": "Alatan" },
-    "third": { "href": "/ms/alatan/pengira-perkataan-dan-aksara", "label": "Pengira perkataan dan aksara" }
+    "second": {
+      "href": "/ms/alatan",
+      "label": "Alatan"
+    },
+    "third": {
+      "href": "/ms/alatan/pengira-perkataan-dan-aksara",
+      "label": "Pengira perkataan dan aksara"
+    }
   },
   "schemas": {
     "software": {
@@ -36,21 +42,39 @@
       "name": "Cara menggunakan pengira perkataan dan aksara",
       "description": "Semak panjang teks anda dan nilainya sama ada sesuai untuk jenis halaman tertentu.",
       "steps": [
-        { "name": "Pilih jenis halaman", "text": "Pilih dari senarai jenis halaman yang anda tulis. Setiap jenis mempunyai julat bilangan perkataan yang disyorkan berbeza." },
-        { "name": "Tampal teks anda", "text": "Tampal atau taip teks dalam kawasan teks. Alat akan mengira secara automatik perkataan, aksara, perenggan, dan mengira masa membaca." },
-        { "name": "Semak penilaian", "text": "Lihat bar kemajuan berwarna dan status. Hijau bermaksud panjang baik, kuning bermaksud terlalu pendek, merah bermaksud terlalu panjang." },
-        { "name": "Salin laporan", "text": "Butang Salin Laporan menyalin ringkasan dengan semua statistik dan penilaian panjang ke papan keratan." }
+        {
+          "name": "Pilih jenis halaman",
+          "text": "Pilih dari senarai jenis halaman yang anda tulis. Setiap jenis mempunyai julat bilangan perkataan yang disyorkan berbeza."
+        },
+        {
+          "name": "Tampal teks anda",
+          "text": "Tampal atau taip teks dalam kawasan teks. Alat akan mengira secara automatik perkataan, aksara, perenggan, dan mengira masa membaca."
+        },
+        {
+          "name": "Semak penilaian",
+          "text": "Lihat bar kemajuan berwarna dan status. Hijau bermaksud panjang baik, kuning bermaksud terlalu pendek, merah bermaksud terlalu panjang."
+        },
+        {
+          "name": "Salin laporan",
+          "text": "Butang Salin Laporan menyalin ringkasan dengan semua statistik dan penilaian panjang ke papan keratan."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
-      "title": "Pengira perkataan percuma \u2013 kira dan nilai panjang teks",
-      "html": "<p class=\"text-mid\">Alat pengira perkataan ini membolehkan anda menyemak dengan pantas panjang sebarang teks. Tampal kandungan anda dan pengira akan mengira perkataan, aksara, dan perenggan. Anda juga akan melihat berapa minit masa membaca dan sama ada panjang sesuai untuk jenis halaman yang dipilih.</p><p class=\"text-mid mt-3\">Setiap jenis halaman mempunyai tujuan berbeza \u2013 penerangan produk menjawab soalan pembeli, artikel blog membincangkan topik secara mendalam, dan halaman perkhidmatan menerangkan apa yang pelanggan akan dapat. Pengira menunjukkan julat untuk setiap jenis ini berdasarkan analisis kandungan yang berprestasi baik.</p>"
+      "title": "Pengira perkataan percuma – kira dan nilai panjang teks",
+      "html": "<p class=\"text-mid\">Alat pengira perkataan ini membolehkan anda menyemak dengan pantas panjang sebarang teks. Tampal kandungan anda dan pengira akan mengira perkataan, aksara, dan perenggan. Anda juga akan melihat berapa minit masa membaca dan sama ada panjang sesuai untuk jenis halaman yang dipilih.</p><p class=\"text-mid mt-3\">Setiap jenis halaman mempunyai tujuan berbeza – penerangan produk menjawab soalan pembeli, artikel blog membincangkan topik secara mendalam, dan halaman perkhidmatan menerangkan apa yang pelanggan akan dapat. Pengira menunjukkan julat untuk setiap jenis ini berdasarkan analisis kandungan yang berprestasi baik.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Cara menggunakan pengira perkataan dan aksara",
@@ -79,50 +103,109 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
-      "title": "Apa yang diukur oleh pengira \u2013 perkataan, aksara, masa membaca",
+      "title": "Apa yang diukur oleh pengira – perkataan, aksara, masa membaca",
       "description": "Pengira memantau lima metrik penting:",
       "grid": "two",
       "items": [
-        { "icon": "RiText", "title": "Perkataan", "description": "Jumlah bilangan perkataan. Ini ialah penunjuk utama panjang teks." },
-        { "icon": "RiSpaceShipLine", "title": "Aksara (dengan ruang)", "description": "Semua aksara termasuk ruang. Penting apabila CMS mempunyai had aksara (cth. senarai pasaran)." },
-        { "icon": "RiHashtag", "title": "Aksara (tanpa ruang)", "description": "Huruf, nombor, dan simbol sahaja. Kadangkala diperlukan oleh mesin cetak atau untuk invois terjemahan." },
-        { "icon": "RiParagraph", "title": "Perenggan", "description": "Bilangan blok teks yang dipisahkan oleh baris kosong. Membantu menilai sama ada teks mempunyai struktur yang baik." },
-        { "icon": "RiTimeLine", "title": "Masa membaca", "description": "Pengira masa membaca menunjukkan berapa minit yang diperlukan untuk membaca teks pada kelajuan purata 200 perkataan seminit." }
+        {
+          "icon": "RiText",
+          "title": "Perkataan",
+          "description": "Jumlah bilangan perkataan. Ini ialah penunjuk utama panjang teks."
+        },
+        {
+          "icon": "RiSpaceShipLine",
+          "title": "Aksara (dengan ruang)",
+          "description": "Semua aksara termasuk ruang. Penting apabila CMS mempunyai had aksara (cth. senarai pasaran)."
+        },
+        {
+          "icon": "RiHashtag",
+          "title": "Aksara (tanpa ruang)",
+          "description": "Huruf, nombor, dan simbol sahaja. Kadangkala diperlukan oleh mesin cetak atau untuk invois terjemahan."
+        },
+        {
+          "icon": "RiParagraph",
+          "title": "Perenggan",
+          "description": "Bilangan blok teks yang dipisahkan oleh baris kosong. Membantu menilai sama ada teks mempunyai struktur yang baik."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Masa membaca",
+          "description": "Pengira masa membaca menunjukkan berapa minit yang diperlukan untuk membaca teks pada kelajuan purata 200 perkataan seminit."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Cara mentafsir keputusan",
       "subtitle": "Status penilaian",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">Panjang baik</span><span class=\"text-mid text-sm!\">Teks anda dalam julat</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Di bawah julat</span><span class=\"text-mid text-sm!\">Teks lebih pendek daripada biasa</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Di atas julat</span><span class=\"text-mid text-sm!\">Teks lebih panjang daripada biasa</span></div></div>",
-      "html": "<p class=\"text-mid mb-4\">Bar kemajuan berwarna dan status membantu menilai dengan pantas panjang teks:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Panjang baik</strong> (hijau) \u2013 teks berada dalam julat anggaran untuk jenis halaman yang dipilih.</li><li><strong class=\"text-warning-text\">Di bawah julat</strong> (kuning) \u2013 teks lebih pendek daripada biasa untuk jenis halaman ini. Jika ia menjawab semua soalan pembaca, panjang mungkin sesuai.</li><li><strong class=\"text-error-text\">Di atas julat</strong> (merah) \u2013 teks lebih panjang daripada biasa. Jika setiap perenggan menambah maklumat baharu, panjang mungkin wajar.</li></ul><p class=\"text-mid mt-4\">Julat berdasarkan analisis kandungan yang berprestasi baik dalam enjin carian. Jika teks menjawab soalan pembaca, panjang sesuai tanpa mengira keputusan pengira.</p>"
+      "html": "<p class=\"text-mid mb-4\">Bar kemajuan berwarna dan status membantu menilai dengan pantas panjang teks:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Panjang baik</strong> (hijau) – teks berada dalam julat anggaran untuk jenis halaman yang dipilih.</li><li><strong class=\"text-warning-text\">Di bawah julat</strong> (kuning) – teks lebih pendek daripada biasa untuk jenis halaman ini. Jika ia menjawab semua soalan pembaca, panjang mungkin sesuai.</li><li><strong class=\"text-error-text\">Di atas julat</strong> (merah) – teks lebih panjang daripada biasa. Jika setiap perenggan menambah maklumat baharu, panjang mungkin wajar.</li></ul><p class=\"text-mid mt-4\">Julat berdasarkan analisis kandungan yang berprestasi baik dalam enjin carian. Jika teks menjawab soalan pembaca, panjang sesuai tanpa mengira keputusan pengira.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
-      "title": "Berapa perkataan teks perlu ada \u2013 panjang optimum untuk SEO",
-      "html": "<p class=\"text-mid mb-4\">Julat di bawah berdasarkan analisis kandungan yang berprestasi baik dalam enjin carian. Panjang teks sahaja tidak mempengaruhi kedudukan di Google \u2013 yang penting ialah sama ada kandungan menjawab soalan pembaca.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Jenis halaman</th><th class=\"py-2 pr-4 font-semibold\">Julat</th><th class=\"py-2 font-semibold\">Bila pendek, bila panjang?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Penerangan produk</td><td class=\"py-2 pr-4 whitespace-nowrap\">80\u2013400 perkataan</td><td class=\"text-primary-light0 py-2 text-sm\">Produk ringkas (cth. cawan) \u2013 80\u2013150. Peranti kompleks (cth. komputer riba) \u2013 300\u2013400.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Halaman perkhidmatan</td><td class=\"py-2 pr-4 whitespace-nowrap\">500\u20131500 perkataan</td><td class=\"text-primary-light0 py-2 text-sm\">Perkhidmatan tempatan (cth. tukang paip) \u2013 500\u2013700. Perkhidmatan B2B dengan proses dan FAQ \u2013 1,200\u20131,500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Halaman utama</td><td class=\"py-2 pr-4 whitespace-nowrap\">400\u20131000 perkataan</td><td class=\"text-primary-light0 py-2 text-sm\">Halaman utama menyampaikan nilai utama dan membimbing pelawat lebih jauh \u2013 teks membantu navigasi.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Halaman pendaratan</td><td class=\"py-2 pr-4 whitespace-nowrap\">600\u20132500 perkataan</td><td class=\"text-primary-light0 py-2 text-sm\">Tawaran ringkas \u2013 600\u20131,000. Tawaran memerlukan penjelasan proses \u2013 1,500\u20132,500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Artikel blog</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200\u20133000 perkataan</td><td class=\"text-primary-light0 py-2 text-sm\">How-to pendek \u2013 1,200\u20131,500. Panduan mendalam \u2013 2,500\u20133,000.</td></tr><tr><td class=\"py-2 pr-4\">Panduan / pillar page</td><td class=\"py-2 pr-4 whitespace-nowrap\">3000\u20137000 perkataan</td><td class=\"text-primary-light0 py-2 text-sm\">Sumber lengkap yang meliputi topik dari pelbagai sudut. Dipautkan ke subhalaman terperinci.</td></tr></tbody></table></div>"
+      "title": "Berapa perkataan teks perlu ada – panjang optimum untuk SEO",
+      "html": "<p class=\"text-mid mb-4\">Julat di bawah berdasarkan analisis kandungan yang berprestasi baik dalam enjin carian. Panjang teks sahaja tidak mempengaruhi kedudukan di Google – yang penting ialah sama ada kandungan menjawab soalan pembaca.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Jenis halaman</th><th class=\"py-2 pr-4 font-semibold\">Julat</th><th class=\"py-2 font-semibold\">Bila pendek, bila panjang?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Penerangan produk</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 perkataan</td><td class=\"text-primary-light0 py-2 text-sm\">Produk ringkas (cth. cawan) – 80–150. Peranti kompleks (cth. komputer riba) – 300–400.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Halaman perkhidmatan</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 perkataan</td><td class=\"text-primary-light0 py-2 text-sm\">Perkhidmatan tempatan (cth. tukang paip) – 500–700. Perkhidmatan B2B dengan proses dan FAQ – 1,200–1,500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Halaman utama</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 perkataan</td><td class=\"text-primary-light0 py-2 text-sm\">Halaman utama menyampaikan nilai utama dan membimbing pelawat lebih jauh – teks membantu navigasi.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Halaman pendaratan</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 perkataan</td><td class=\"text-primary-light0 py-2 text-sm\">Tawaran ringkas – 600–1,000. Tawaran memerlukan penjelasan proses – 1,500–2,500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Artikel blog</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 perkataan</td><td class=\"text-primary-light0 py-2 text-sm\">How-to pendek – 1,200–1,500. Panduan mendalam – 2,500–3,000.</td></tr><tr><td class=\"py-2 pr-4\">Panduan / pillar page</td><td class=\"py-2 pr-4 whitespace-nowrap\">3000–7000 perkataan</td><td class=\"text-primary-light0 py-2 text-sm\">Sumber lengkap yang meliputi topik dari pelbagai sudut. Dipautkan ke subhalaman terperinci.</td></tr></tbody></table></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Pengira perkataan untuk siapa?",
-      "description": "Alat pengira perkataan untuk penulis dan seterusnya \u2013 siapa yang paling kerap menggunakan pengira:",
+      "description": "Alat pengira perkataan untuk penulis dan seterusnya – siapa yang paling kerap menggunakan pengira:",
       "grid": "three",
       "items": [
-        { "icon": "RiEditLine", "title": "Penulis dan pencipta kandungan", "description": "Semak sama ada teks berada dalam julat yang disyorkan untuk jenis halaman tertentu." },
-        { "icon": "RiBloggerLine", "title": "Penulis blog", "description": "Pantau panjang siaran untuk mengekalkan konsistensi. Semak masa membaca sebelum menerbitkan." },
-        { "icon": "RiShoppingBagLine", "title": "Pemilik kedai", "description": "Sahkan penerangan produk terhadap had aksara pada platform jualan (Amazon, eBay, Etsy)." },
-        { "icon": "RiSearchLine", "title": "Pakar SEO", "description": "Nilai sama ada kandungan halaman mempunyai panjang optimum berbanding pesaing." },
-        { "icon": "RiGraduationCapLine", "title": "Pelajar dan ahli akademik", "description": "Semak sama ada kertas memenuhi had perkataan atau aksara yang diperlukan." },
-        { "icon": "RiTranslate2", "title": "Penterjemah", "description": "Kira aksara tanpa ruang untuk harga terjemahan (unit bayaran standard)." }
+        {
+          "icon": "RiEditLine",
+          "title": "Penulis dan pencipta kandungan",
+          "description": "Semak sama ada teks berada dalam julat yang disyorkan untuk jenis halaman tertentu."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Penulis blog",
+          "description": "Pantau panjang siaran untuk mengekalkan konsistensi. Semak masa membaca sebelum menerbitkan."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Pemilik kedai",
+          "description": "Sahkan penerangan produk terhadap had aksara pada platform jualan (Amazon, eBay, Etsy)."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "Pakar SEO",
+          "description": "Nilai sama ada kandungan halaman mempunyai panjang optimum berbanding pesaing."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Pelajar dan ahli akademik",
+          "description": "Semak sama ada kertas memenuhi had perkataan atau aksara yang diperlukan."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Penterjemah",
+          "description": "Kira aksara tanpa ruang untuk harga terjemahan (unit bayaran standard)."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Apa yang menjadikan pengira perkataan dan aksara ini istimewa?",
@@ -131,20 +214,39 @@
         {
           "icon": "RiInfinityLine",
           "title": "Enam jenis halaman dengan julat yang disyorkan",
-          "description": "Penerangan produk, halaman perkhidmatan, halaman utama, halaman pendaratan, artikel blog, dan panduan \u2013 setiap jenis mempunyai julatnya sendiri."
+          "description": "Penerangan produk, halaman perkhidmatan, halaman utama, halaman pendaratan, artikel blog, dan panduan – setiap jenis mempunyai julatnya sendiri."
         },
-        { "icon": "RiUserLine", "title": "Pemprosesan tempatan dalam pelayar", "description": "Teks anda tidak dihantar ke mana-mana pelayan \u2013 semua analisis berlaku pada peranti anda." },
+        {
+          "icon": "RiUserLine",
+          "title": "Pemprosesan tempatan dalam pelayar",
+          "description": "Teks anda tidak dihantar ke mana-mana pelayan – semua analisis berlaku pada peranti anda."
+        },
         {
           "icon": "RiCheckboxCircleLine",
           "title": "Penilaian panjang teks",
-          "description": "Kami bukan sahaja mengira perkataan \u2013 anda mendapat maklumat sama ada panjang sesuai untuk jenis halaman yang dipilih."
+          "description": "Kami bukan sahaja mengira perkataan – anda mendapat maklumat sama ada panjang sesuai untuk jenis halaman yang dipilih."
         },
-        { "icon": "RiBarChartLine", "title": "Julat berasaskan SEO", "description": "Panjang yang disyorkan berdasarkan analisis kandungan yang berprestasi baik dalam enjin carian." },
-        { "icon": "RiTimerLine", "title": "Masa membaca", "description": "Ketahui serta-merta berapa minit yang diperlukan pembaca untuk membaca teks." },
-        { "icon": "RiFileCopyLine", "title": "Salin laporan", "description": "Butang Salin Laporan menyalin ringkasan dengan semua statistik dan penilaian panjang ke papan keratan." }
+        {
+          "icon": "RiBarChartLine",
+          "title": "Julat berasaskan SEO",
+          "description": "Panjang yang disyorkan berdasarkan analisis kandungan yang berprestasi baik dalam enjin carian."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Masa membaca",
+          "description": "Ketahui serta-merta berapa minit yang diperlukan pembaca untuk membaca teks."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Salin laporan",
+          "description": "Butang Salin Laporan menyalin ringkasan dengan semua statistik dan penilaian panjang ke papan keratan."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Soalan lazim tentang pengira perkataan dan aksara",
@@ -152,23 +254,32 @@
       "items": [
         {
           "question": "Adakah panjang teks mempengaruhi kedudukan di Google?",
-          "answer": "Panjang teks sahaja bukan faktor kedudukan. Google menilai sama ada kandungan menjawab soalan pengguna dan sama ada ia bernilai kepada mereka. Teks pendek yang menjawab soalan sepenuhnya boleh mendapat kedudukan yang baik \u2013 yang penting ialah nilai kepada pembaca.",
+          "answer": "Panjang teks sahaja bukan faktor kedudukan. Google menilai sama ada kandungan menjawab soalan pengguna dan sama ada ia bernilai kepada mereka. Teks pendek yang menjawab soalan sepenuhnya boleh mendapat kedudukan yang baik – yang penting ialah nilai kepada pembaca.",
           "answerSchemaText": "Panjang teks bukan faktor kedudukan langsung. Google menilai nilai kandungan kepada pengguna."
         },
         {
           "question": "Mengapa julat perkataan begitu luas?",
-          "answer": "Jenis halaman yang sama mungkin memerlukan panjang berbeza bergantung pada kerumitan topik. Penerangan produk ringkas (cth. cawan) ialah 80\u2013150 perkataan. Penerangan komputer riba ialah 300\u2013400 perkataan kerana pembeli mempunyai lebih banyak soalan.",
-          "answerSchemaText": "Perbezaan datang dari kerumitan topik \u2013 produk ringkas memerlukan lebih sedikit perkataan daripada yang kompleks."
+          "answer": "Jenis halaman yang sama mungkin memerlukan panjang berbeza bergantung pada kerumitan topik. Penerangan produk ringkas (cth. cawan) ialah 80–150 perkataan. Penerangan komputer riba ialah 300–400 perkataan kerana pembeli mempunyai lebih banyak soalan.",
+          "answerSchemaText": "Perbezaan datang dari kerumitan topik – produk ringkas memerlukan lebih sedikit perkataan daripada yang kompleks."
         },
         {
           "question": "Bagaimana pengira masa membaca berfungsi?",
-          "answer": "Alat membahagikan bilangan perkataan dengan 200 \u2013 kelajuan membaca purata untuk teks biasa. Teks teknikal dibaca lebih perlahan. Artikel gaya hidup ringan \u2013 lebih pantas. Hasilnya ialah nilai anggaran.",
+          "answer": "Alat membahagikan bilangan perkataan dengan 200 – kelajuan membaca purata untuk teks biasa. Teks teknikal dibaca lebih perlahan. Artikel gaya hidup ringan – lebih pantas. Hasilnya ialah nilai anggaran.",
           "answerSchemaText": "Alat mengandaikan kelajuan membaca purata 200 perkataan seminit. Ini ialah nilai anggaran."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Terokai alatan lain" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Terokai alatan lain"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

@@ -1,0 +1,249 @@
+{
+  "toolKey": "colorPalette",
+  "locale": "no",
+  "metadata": {
+    "title": "Gratis fargepalettgenerator – 9 paletter fra en farge",
+    "description": "Generer 9 fargepaletter fra en grunnfarge: monokromatisk, komplementær, triadisk, pastell og flere. Kopier HEX-koder med ett klikk. Uten registrering,",
+    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "path": "/no/verktoy/fargepalettgenerator"
+  },
+  "hero": {
+    "title": "Fargepalettgenerator",
+    "description": "Skriv inn en grunnfarge, og verktøyet genererer 9 harmoniske fargepaletter: monokromatisk, komplementær, triadisk, pastell og flere. Hver farge kan kopieres med sin HEX-kode.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/fargepalettgenerator",
+      "label": "Fargepalettgenerator"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Fargepalettgenerator",
+      "alternateName": ["Fargeskemagenerator", "Fargegenerator", "Fargetilpassingsverktøy", "Fargeharmonigenerator"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorPaletteGenerator",
+      "description": "Gratis fargepalettgenerator. Skriv inn en HEX-farge, og verktøyet genererer 9 skjemaer: monokromatisk, tilstøtende, komplementær, triadisk, splittet komplementær, pastell, mørk, tonal og minimalistisk.",
+      "featureList": [
+        "Monokromatisk skjema – nyanser av en farge",
+        "Tilstøtende skjema – farger ved siden av hverandre på fargehjulet",
+        "Komplementært skjema – motstående farger",
+        "Triadisk skjema – 3 farger med lik avstand",
+        "Splittet komplementært skjema",
+        "Pastellpalett – myke, desaturerte nyanser",
+        "Mørk palett – dype farger for mørke temaer",
+        "Tonal palett – lysstyrkenivåer av en farge",
+        "Minimalistisk palett – sterk aksent og nøytrale farger",
+        "Grunnfarge i HEX-format",
+        "Fargevelger for visuelt valg",
+        "Tilfeldig startfarge",
+        "Kopier HEX-kode til utklippstavle",
+        "HSL-verdi vist ved hver farge",
+        "Lokal behandling i nettleseren"
+      ]
+    },
+    "howTo": {
+      "name": "Slik genererer du en fargepalett fra en grunnfarge",
+      "description": "Slik genererer du 9 fargepaletter fra en grunnfarge: monokromatisk, komplementær, triadisk, pastell og flere.",
+      "steps": [
+        {
+          "name": "Velg grunnfarge",
+          "text": "Skriv inn en HEX-kode i tekstfeltet, eller bruk fargevelgeren for visuelt valg."
+        },
+        {
+          "name": "Bekreft fargen",
+          "text": "Bekreft den valgte fargen med knappen Update Color – verktøyet genererer paletter basert på grunnfargen din."
+        },
+        {
+          "name": "Bla gjennom palettene",
+          "text": "Verktøyet genererer automatisk 9 forskjellige paletter: monokromatisk, tilstøtende, komplementær, triadisk, splittet komplementær, pastell, mørk, tonal og minimalistisk."
+        },
+        {
+          "name": "Kopier farger",
+          "text": "Ved hver farge er det en Kopier-knapp – HEX-koden kopieres til systemets utklippstavle."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvorfor generere en fargepalett?",
+      "html": "<p class=\"text-mid\">En konsekvent fargepalett er grunnlaget for ethvert visuelt prosjekt – fra nettsider, via logoer, til trykt materiale. Manuelt utvalg av farger som fungerer sammen krever kunnskap om fargeteori. Generatoren automatiserer denne prosessen: du angir en grunnfarge (f.eks. fargen på logoen din), og verktøyet genererer 9 sett med farger basert på velprøvde fargeharmoniskjemaer.</p><p class=\"text-mid mt-3\">Hver generert farge har sin HEX-kode (f.eks. #4F6BF5) og HSL-verdi (hue, saturation, lightness). HEX-koden kan limes inn direkte i CSS, Figma, Canva eller enhver grafisk applikasjon.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Slik bruker du fargepalettgeneratoren",
+      "description": "Hele prosessen tar bare noen sekunder:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Skriv inn grunnfarge",
+          "description": "Skriv inn en HEX-kode (f.eks. #4F6BF5) i tekstfeltet, eller velg en farge fra fargevelgeren. Du kan også bruke knappen Tilfeldig farge."
+        },
+        {
+          "title": "2. Bekreft valget ditt",
+          "description": "Når du klikker på knappen Update Color, genererer verktøyet automatisk 9 paletter basert på forskjellige fargeharmoniskjemaer."
+        },
+        {
+          "title": "3. Kopier fargene du trenger",
+          "description": "Ved hver farge er det en Kopier-knapp – HEX-koden går til utklippstavlen og kan limes inn direkte i prosjektet ditt."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvilke fargeskjemaer genererer verktøyet?",
+      "description": "Generatoren skaper 9 typer paletter – hver basert på et annet prinsipp innen fargeteorien:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiStackLine",
+          "title": "Monokromatisk palett",
+          "description": "Flere nyanser av en farge – fra lys til mørk. Alle farger har samme kulør på fargehjulet og skiller seg bare i lysstyrke. Fungerer godt i elegante og minimalistiske design."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Tilstøtende palett",
+          "description": "Farger ved siden av hverandre på fargehjulet (forskjøvet ca. 30° til begge sider fra basen). Skaper harmoniske og myke fargeoverganger."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Komplementær palett",
+          "description": "Grunnfargen og den motstående fargen på fargehjulet (180° forskyvning). Skaper sterk visuell kontrast. Nyttig der et element skal tiltrekke oppmerksomhet."
+        },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Triadisk palett",
+          "description": "Tre farger med 120° mellomrom på fargehjulet – danner en likesidet trekant. Dynamisk og allsidig kombinasjon."
+        },
+        {
+          "icon": "RiCursorLine",
+          "title": "Splittet komplementær palett",
+          "description": "Mildere versjon av den komplementære paletten. I stedet for en motstående farge brukes to farger forskjøvet ca. 30° fra komplementet."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Pastellpalett",
+          "description": "Samme kulør med redusert metning og økt lysstyrke – myke, dempede farger. Populært innen kosmetikk, barnemote og matsektoren."
+        },
+        {
+          "icon": "RiMoonLine",
+          "title": "Mørk palett",
+          "description": "Grunnfargen med høy metning og redusert lysstyrke – dype, kraftfulle farger. Nyttig for mørke nettsitetemaer og premium merkevare-materialer."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Tonal palett",
+          "description": "Flere lysstyrkenivåer av en farge – fra veldig lys til mørk. Nyttig for å bygge grensesnitt der samme farge trenger forskjellige varianter."
+        },
+        {
+          "icon": "RiContractLeftRightLine",
+          "title": "Minimalistisk palett",
+          "description": "En sterk fargeaksent og flere veldig lyse nøytrale farger. Hele paletten forblir rolig. Fungerer godt i moderne grensesnitt med mye hvitt rom."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Hva bygger fargepalettgeneratoren på?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° på fargehjulet</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">Alle paletter skapes gjennom matematisk transformasjon av grunnfargen i HSL-fargerommet. HSL beskriver en farge med tre verdier: hue (H) er posisjonen på fargehjulet (0°–360°), saturation (S) bestemmer fargens styrke, og lightness (L) – hvor lys eller mørk fargen er.</p><p class=\"text-mid mt-3\">Komplementære, triadiske og splittede komplementære paletter er basert på fargehjulets geometri – farger plasseres med like vinkelintervaller, noe som skaper visuell balanse. Monokromatiske, pastell- og mørke paletter endrer bare lysstyrke og metning, mens samme kulør beholdes.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvor kan man bruke genererte fargepaletter",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Merkevarens visuelle identitet",
+          "description": "Velg harmoniske farger til en eksisterende logo, eller bygg en merkevare-fargepalett fra bunnen – for visittkort, brevpapir og markedsføringsmaterialer."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Nettsider",
+          "description": "Still inn hovedfarge, aksent og bakgrunnsnyanser. Kopierte HEX-koder limes inn direkte i CSS eller temakonfigurasjon."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "App-grensesnitt",
+          "description": "Tonal palett gir lysstyrke-varianter av en farge – lysere for bakgrunner, mørkere for tekst, mellomtoner for kanter og interaksjonstilstander."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Grafikk for sosiale medier",
+          "description": "Konsekvente farger for innlegg, stories og profilcovere. Tilstøtende eller pastellpaletter fungerer godt når du ønsker en konsekvent, gjenkjennelig stil."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte spørsmål om fargepalettgeneratoren",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "I hvilket format skal grunnfargen være?",
+          "answer": "Generatoren godtar farger i HEX-format – forkortet (f.eks. #F50) og fullt (f.eks. #FF5500). Ved tekstfeltet er det en fargevelger som lar deg velge farge visuelt. Genererte paletter viser HEX-kode og HSL-verdi for hver farge.",
+          "answerSchemaText": "Generatoren godtar HEX-farger (#RGB eller #RRGGBB). Hver generert farge har HEX-kode og HSL-verdi."
+        },
+        {
+          "question": "Hvor mange farger er det i hver palett?",
+          "answer": "Hver palett inneholder 4 til 6 farger. Antallet avhenger av skjematypen – monokromatiske og tonale paletter genererer flere nyanser, mens komplementære og triadiske paletter fokuserer på færre kontrasterende farger.",
+          "answerSchemaText": "Hver palett inneholder 4 til 6 farger, avhengig av skjematypen."
+        },
+        {
+          "question": "Kan jeg bruke genererte paletter kommersielt?",
+          "answer": "Ja. Du kan bruke genererte fargepaletter i ethvert prosjekt – kommersielt og ikke-kommersielt, uten lisens-begrensninger.",
+          "answerSchemaText": "Ja, genererte paletter kan brukes uten begrensninger i kommersielle og ikke-kommersielle prosjekter."
+        },
+        {
+          "question": "Krever fargepalettgeneratoren innlogging eller betaling?",
+          "answer": "Generatoren er helt gratis og krever ingen innlogging eller registrering. Farger genereres lokalt i nettleseren – ingen data sendes til eksterne servere.",
+          "answerSchemaText": "Generatoren er gratis, krever ingen innlogging. Farger genereres lokalt i nettleseren."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforsk flere verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

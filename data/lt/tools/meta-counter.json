@@ -1,0 +1,189 @@
+{
+  "toolKey": "metaCounter",
+  "locale": "lt",
+  "metadata": {
+    "title": "Nemokamas meta pavadinimo ir aprašymo tikrintuvas – Plotis pikseliais",
+    "description": "Patikrinkite meta pavadinimo ir aprašymo ilgį simboliais ir pikseliais. Google rezultatų peržiūra padeda išvengti nukirptų fragmentų. Be registracijos,",
+    "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+    "path": "/lt/irankiai/meta-pavadinimo-ir-aprasymo-tikrintuvas"
+  },
+  "hero": {
+    "title": "Patikrinkite pavadinimo ir aprašymo ilgį Google paieškoje",
+    "description": "Įveskite puslapio pavadinimą ir aprašymą, o įrankis apskaičiuos simbolių ir žodžių skaičių, plotį pikseliais ir parodys, ar ilgis atitinka rekomenduojamas SEO praktikas.",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/lt/irankiai",
+      "label": "Įrankiai"
+    },
+    "third": {
+      "href": "/lt/irankiai/meta-pavadinimo-ir-aprasymo-tikrintuvas",
+      "label": "Meta pavadinimo ir aprašymo tikrintuvas"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Nemokamas meta pavadinimo ir aprašymo ilgio tikrintuvas",
+      "alternateName": ["Meta pavadinimo ir aprašymo tikrintuvas su Google peržiūra", "Google SERP peržiūra", "SEO pavadinimo pločio tikrinimas pikseliais"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "SEOTool",
+      "description": "Nemokamas meta pavadinimo ir aprašymo ilgio tikrintuvas. Tikrina simbolių ir žodžių skaičių bei plotį pikseliais. Rodo peržiūrą, kaip pavadinimas ir aprašymas atrodo Google paieškos rezultatuose.",
+      "featureList": [
+        "Meta pavadinimo simbolių skaitiklis",
+        "Meta aprašymo simbolių skaitiklis",
+        "Pločio matavimas pikseliais (atitinka Google)",
+        "Pavadinimo ir aprašymo žodžių skaitiklis",
+        "Google paieškos rezultatų peržiūra",
+        "Spalvomis koduotas ilgio vertinimas (per trumpas / geras / per ilgas)",
+        "Įspėjimas apie pavadinimo ir aprašymo nukirtimą",
+        "Optimalaus ilgio rekomendacija",
+        "Vietinis apdorojimas naršyklėje"
+      ]
+    },
+    "howTo": {
+      "name": "Kaip patikrinti meta pavadinimo ir aprašymo ilgį",
+      "description": "Patikrinkite meta pavadinimo ir aprašymo ilgį pikseliais ir simboliais.",
+      "totalTime": "PT3M",
+      "steps": [
+        {
+          "name": "Įveskite meta pavadinimą",
+          "text": "Įklijuokite arba įrašykite puslapio pavadinimą į Meta Title lauką. Įrankis automatiškai apskaičiuoja simbolių ir žodžių skaičių bei plotį pikseliais."
+        },
+        {
+          "name": "Įveskite meta aprašymą",
+          "text": "Pridėkite puslapio aprašymą į Meta Description lauką. Matysite tuos pačius matavimo rezultatus."
+        },
+        {
+          "name": "Patikrinkite Google peržiūrą",
+          "text": "Pažiūrėkite, kaip pavadinimas ir aprašymas atrodo imituotuose Google paieškos rezultatuose."
+        },
+        {
+          "name": "Pritaikykite pagal rekomendacijas",
+          "text": "Jei būsena rodo Per trumpas arba Per ilgas, redaguokite tekstą ir stebėkite pakeitimus realiuoju laiku."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kas yra meta pavadinimas ir meta aprašymas?",
+      "html": "<p class=\"text-mid\">Meta pavadinimas ir meta aprašymas yra du trumpi tekstai, aprašantys tinklalapio turinį. Jie nerodomi tiesiogiai puslapyje, bet pasirodo Google paieškos rezultatuose kaip pavadinimas (mėlyna nuoroda) ir aprašymas (pilkas tekstas po pavadinimu).</p><p class=\"text-mid mt-3\">Gerai parašytos meta žymės veikia kaip puslapio reklama paieškos rezultatuose – patraukia dėmesį ir padidina paspaudimo tikimybę. Blogai parašytos ar nukirptos žymės gali atbaidyti vartotojus nuo paspaudimo, net jei pats puslapis yra vertingas.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kaip naudoti meta pavadinimo ir aprašymo tikrintuvą",
+      "description": "Meta žymių ilgio tikrinimas trunka minutę:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiPencilLine",
+          "title": "1. Įveskite puslapio pavadinimą",
+          "description": "Įklijuokite arba įrašykite meta pavadinimą į pirmą lauką. Įrankis iškart rodo tris matavimo rezultatus: simbolių ir žodžių skaičių bei plotį pikseliais."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Įveskite puslapio aprašymą",
+          "description": "Pridėkite meta aprašymą į antrą lauką. Matysite tuos pačius matavimo rezultatus."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "3. Patikrinkite peržiūrą",
+          "description": "Dešinėje (kompiuteryje) arba žemiau (telefone) matysite peržiūrą, kaip pavadinimas ir aprašymas atrodo Google paieškos rezultatuose."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "4. Pritaikykite pagal rekomendacijas",
+          "description": "Jei būsena rodo Per trumpas arba Per ilgas, redaguokite tekstą. Pakeitimai rodomi iškart."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kiek simbolių turėtų turėti meta pavadinimas ir aprašymas?",
+      "html": "<p class=\"text-mid mb-4\">Google nukerpa per ilgus pavadinimus ir aprašymus. Žemiau pateikiami rekomenduojami diapazonai, mažinantys nukirpto teksto riziką paieškos rezultatuose.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Elementas</th><th class=\"py-2 pr-4 font-semibold\">Simboliai</th><th class=\"py-2 pr-4 font-semibold\">Pikseliai</th><th class=\"py-2 font-semibold\">Pastabos</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta pavadinimas</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 simbolių</td><td class=\"py-2 pr-4 whitespace-nowrap\">maks. ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Svarbiausią raktažodį – į pradžią. Prekės ženklą – į pabaigą.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta aprašymas</td><td class=\"py-2 pr-4 whitespace-nowrap\">120–160 simbolių</td><td class=\"py-2 pr-4 whitespace-nowrap\">maks. ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">Vieta 2–3 trumpiems sakiniams. Užbaikite raginimų veikti.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Tai apytikslės reikšmės – Google neskelbia tikslių limitų ir gali juos keisti priklausomai nuo įrenginio ir paieškos konteksto.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kam skirtas meta žymių tikrintuvas?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Svetainių ir e. parduotuvių savininkai",
+          "description": "Patikrinkite, ar pavadinimai ir aprašymai nenukirpti Google rezultatuose prieš publikuojant naują puslapį ar produktą."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "SEO specialistai",
+          "description": "Testuokite skirtingas pavadinimų ir aprašymų versijas, tikrinkite paieškos rezultatų peržiūrą ir patvirtinkite atitiktį rekomendacijoms."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Tekstų kūrėjai",
+          "description": "Rašykite pavadinimus ir aprašymus, kurie telpa į limitus ir skatina paspaudimą."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Interneto kūrėjai",
+          "description": "Patvirtinkite meta žymes prieš paleidžiant puslapį į produkciją."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Dažnai užduodami klausimai apie meta pavadinimo ir aprašymo tikrintuvą",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kodėl įrankis rodo plotį pikseliais, o ne tik simbolių skaičių?",
+          "answer": "Skirtingi simboliai turi skirtingą plotį. Raidė &quot;i&quot; užima žymiai mažiau vietos nei &quot;m&quot; ar &quot;W&quot;. Google nukerpa pavadinimus ir aprašymus pagal plotį pikseliais, ne pagal simbolių skaičių.",
+          "answerSchemaText": "Google nukerpa pagal plotį pikseliais, ne pagal simbolių skaičių. Skirtingi simboliai turi skirtingą plotį."
+        },
+        {
+          "question": "Ar Google visada rodo meta pavadinimą ir aprašymą?",
+          "answer": "Ne visada. Google gali pakeisti rodomą pavadinimą ar aprašymą, jei randa kažką geriau atitinkančio vartotojo užklausą. Gerai parašytos meta žymės padidina tikimybę, kad Google jas naudos, bet 100% garantijos nėra.",
+          "answerSchemaText": "Ne visada. Google gali pakeisti rodomą pavadinimą ar aprašymą, kad geriau atitiktų užklausą."
+        },
+        {
+          "question": "Koks optimalus meta pavadinimo ir meta aprašymo ilgis?",
+          "answer": "Meta pavadinimas turėtų būti apie 50–60 simbolių (daugiausiai ~580 pikselių pločio). Meta aprašymas geriausiai veikia su 120–160 simbolių (daugiausiai ~920 pikselių). Tai apytikslės reikšmės – Google neskelbia tikslių limitų.",
+          "answerSchemaText": "Meta pavadinimas: 50–60 simbolių (~580px). Meta aprašymas: 120–160 simbolių (~920px). Apytikslės reikšmės."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Peržiūrėkite kitus įrankius"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

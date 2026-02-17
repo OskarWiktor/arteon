@@ -27,11 +27,11 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
   title: 'Ücretsiz çevrimiçi araçlar | Görseller, SEO, renkler, favicon',
-  description: '10 ücretsiz çevrimiçi araç: WebP dönüştürücü, favicon oluşturucu, metin sayacı, renk çıkarıcı ve QR kodları. Web siteleri, sosyal medya ve baskı için. Kayıt gerekmez.',
+  description: '10 ücretsiz araç: WebP dönüştürücü, favicon oluşturucu, metin sayacı, renk çıkarıcı ve QR kodları. Web siteleri, sosyal medya ve baskı için.',
   alternates: getToolsIndexAlternates('tr'),
   openGraph: {
     title: 'Ücretsiz çevrimiçi araçlar | Görseller, SEO, renkler, favicon',
-    description: '10 ücretsiz çevrimiçi araç: WebP dönüştürücü, favicon oluşturucu, metin sayacı, renk çıkarıcı ve QR kodları. Web siteleri, sosyal medya ve baskı için. Kayıt gerekmez.',
+    description: '10 ücretsiz araç: WebP dönüştürücü, favicon oluşturucu, metin sayacı, renk çıkarıcı ve QR kodları. Web siteleri, sosyal medya ve baskı için.',
     url: toAbsoluteUrl('/tr/araclar'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -42,7 +42,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Ücretsiz çevrimiçi araçlar',
-  description: '10 ücretsiz çevrimiçi araç: WebP dönüştürücü, favicon oluşturucu, metin sayacı, renk çıkarıcı ve QR kodları. Web siteleri, sosyal medya ve baskı için. Kayıt gerekmez.',
+  description: '10 ücretsiz araç: WebP dönüştürücü, favicon oluşturucu, metin sayacı, renk çıkarıcı ve QR kodları. Web siteleri, sosyal medya ve baskı için.',
   url: toAbsoluteUrl('/tr/araclar'),
   inLanguage: 'tr',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },

@@ -1,0 +1,221 @@
+{
+  "toolKey": "emailSignature",
+  "locale": "lt",
+  "metadata": {
+    "title": "Nemokamas el. pašto parašo generatorius – HTML Gmail ir Outlook",
+    "description": "Sukurkite profesionalų HTML el. pašto parašą be programinės įrangos. Pridėkite kontaktinius duomenis, logotipą,",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
+    "path": "/lt/irankiai/nemokamas-el-pasto-paraso-generatorius"
+  },
+  "hero": {
+    "title": "Sukurkite profesionalų HTML el. pašto parašą",
+    "description": "Sukurkite profesionalų el. pašto parašą per kelias minutes. Įveskite savo duomenis, pasirinkite spalvas ir nukopijuokite paruoštą HTML kodą į Gmail, Outlook ar kitą el. pašto klientą.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/lt/irankiai",
+      "label": "Įrankiai"
+    },
+    "third": {
+      "href": "/lt/irankiai/nemokamas-el-pasto-paraso-generatorius",
+      "label": "El. pašto parašo generatorius"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Nemokamas el. pašto parašo generatorius",
+      "alternateName": ["HTML el. pašto parašo generatorius", "El. pašto poraštės generatorius"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "EmailSignatureGenerator",
+      "description": "Nemokamas HTML el. pašto parašo generatorius. Pridėkite kontaktinius duomenis, CTA mygtuką ir socialinių tinklų profilius, tada nukopijuokite paruoštą kodą į Gmail, Outlook ir kitus el. pašto klientus.",
+      "featureList": [
+        "Kontaktiniai duomenys (vardas, pareigos, įmonė)",
+        "Telefonas, el. paštas ir svetainės adresas",
+        "Logotipas arba profilio nuotrauka su formos ir dydžio pasirinkimu",
+        "Socialinių tinklų piktogramos (12 platformų)",
+        "Pritaikomos spalvos (tekstas, akcentas, fonas)",
+        "CTA mygtukas su savo tekstu ir nuoroda",
+        "Parašo peržiūra realiuoju laiku",
+        "HTML kodo kopijavimas į iškarpinę",
+        "Parašo atsisiuntimas kaip HTML failas",
+        "Nustatymų eksportas ir importas kaip JSON failas",
+        "Suderinamumas su Gmail, Outlook ir Apple Mail",
+        "Nemokamas įrankis, be prisijungimo"
+      ]
+    },
+    "howTo": {
+      "name": "Kaip naudoti el. pašto parašo generatorių",
+      "description": "Kaip sukurti profesionalų HTML el. pašto parašą naudojant nemokamą Arteon įrankį.",
+      "totalTime": "PT5M",
+      "steps": [
+        {
+          "name": "Pasirinkite parašo išdėstymą",
+          "text": "Pasirinkite vieną iš aštuonių galimų išdėstymų."
+        },
+        {
+          "name": "Užpildykite kontaktinius duomenis",
+          "text": "Kortelėje Details įveskite vardą, pareigas, įmonę, el. paštą, telefoną ir svetainės adresą."
+        },
+        {
+          "name": "Pridėkite CTA mygtuką",
+          "text": "Kortelėje Buttons pridėkite pagrindinio mygtuko tekstą ir URL."
+        },
+        {
+          "name": "Pridėkite socialinių tinklų nuorodas",
+          "text": "Kortelėje Social Media įveskite savo profilių URL adresus."
+        },
+        {
+          "name": "Pritaikykite išvaizdą",
+          "text": "Kortelėje Appearance pasirinkite spalvų temą, šrifto tipą ir teksto dydį."
+        },
+        {
+          "name": "Patikrinkite peržiūrą ir nukopijuokite parašą",
+          "text": "Mygtukas Copy signature nukopijuoja paruoštą kodą į iškarpinę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kodėl reikia profesionalaus el. pašto parašo?",
+      "html": "<p class=\"text-mid\">El. pašto parašas (dar vadinamas el. pašto porašte) yra informacijos blokas kiekvienos išsiųstos žinutės apačioje. Jame yra kontaktiniai duomenys, pareigos, įmonės pavadinimas ir dažnai nuoroda į svetainę ar vizitų registracijos kalendorių.</p><p class=\"text-mid mt-3\">Gavėjui nereikia ieškoti telefono numerio ankstesnėse žinutėse – visa informacija lengvai prieinama. Profesionalus el. pašto parašas taip pat parodo, kad kreipiate dėmesį į detales ir palaikote vieningą įmonės įvaizdį verslo komunikacijoje.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kaip naudoti el. pašto parašo generatorių",
+      "description": "Profesionalaus el. pašto parašo sukūrimas trunka tik kelias minutes:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Įveskite duomenis",
+          "description": "Užpildykite vardą, pareigas, įmonę ir kontaktinius duomenis."
+        },
+        {
+          "title": "2. Pritaikykite išvaizdą",
+          "description": "Pasirinkite išdėstymą, spalvas, pridėkite logotipą ir socialinių tinklų nuorodas."
+        },
+        {
+          "title": "3. Nukopijuokite kodą",
+          "description": "Mygtukas Copy signature nukopijuoja paruoštą kodą į iškarpinę. Įklijuokite jį į Gmail, Outlook ar kitą el. pašto klientą."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Parašo išdėstymai – kurį pasirinktumėte?",
+      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Parašo išdėstymas</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div></div>",
+      "html": "<p class=\"text-mid\">Generatorius siūlo aštuonis iš anksto nustatytus išdėstymus. Kiekvienas išdėstymas pateikia tą pačią informaciją skirtingu būdu.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> – klasikinis vertikalus išdėstymas, tinkantis daugumai situacijų.</li><li><strong>Top bar</strong> – horizontali linija atskiria parašą nuo turinio.</li><li><strong>Labels left</strong> – du stulpeliai: žymės ir reikšmės.</li><li><strong>Centered</strong> – formalus išvaizda, turinys centruotas.</li><li><strong>Compact</strong> – viskas vienoje eilutėje, minimalus aukštis.</li><li><strong>Two columns</strong> – duomenys kairėje, kontaktinė informacija dešinėje.</li><li><strong>Minimalist</strong> – tik pagrindinė informacija.</li><li><strong>Bottom bar</strong> – spalvota eilutė su kontaktiniais duomenimis parašo apačioje.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kaip nukopijuoti parašą į Gmail ar Outlook",
+      "description": "Baigus parašą, jo pridėjimas prie el. pašto kliento reikalauja tik kelių žingsnių:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiClipboardLine",
+          "title": "1. Nukopijuokite kodą",
+          "description": "Mygtukas Copy signature nukopijuoja parašą į iškarpinę kaip formatuotą HTML, paruoštą įklijavimui."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "2. Atidarykite parašo nustatymus",
+          "description": "Gmail: Settings > See all settings > Signature. Outlook: File > Options > Mail > Signatures."
+        },
+        {
+          "icon": "RiSaveLine",
+          "title": "3. Įklijuokite ir išsaugokite",
+          "description": "Parašo lauke naudokite Ctrl+V (Windows) arba Cmd+V (Mac). Parašas rodomas su visomis spalvomis ir formatavimu. Išsaugokite pakeitimus."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kam skirtas el. pašto parašo generatorius?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBriefcaseLine",
+          "title": "Verslininkai ir laisvai samdomi",
+          "description": "Profesionalus parašas kiekvienoje žinutėje be grafikos dizainerio poreikio."
+        },
+        {
+          "icon": "RiTeamLine",
+          "title": "Įmonių komandos",
+          "description": "Kiekvienas darbuotojas sukuria parašą tuo pačiu stiliumi. Vieningas identitetas visoje įmonėje."
+        },
+        {
+          "icon": "RiHandCoinLine",
+          "title": "Pardavėjai",
+          "description": "CTA mygtukas su nuoroda į kalendorių ar pasiūlymą padidina sutartų susitikimų tikimybę."
+        },
+        {
+          "icon": "RiScales3Line",
+          "title": "Teisininkai, buhalteriai, gydytojai",
+          "description": "Galimybė pridėti teisines pastabas, licencijų informaciją ar kitus profesinius duomenis."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Dažnai užduodami klausimai apie el. pašto parašo generatorių",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ar parašas veikia Gmail, Outlook ir Apple Mail?",
+          "answer": "Taip. Įrankio sukurtas parašas naudoja HTML lenteles, kurios teisingai rodomos visuose populiariuose el. pašto klientuose: Gmail, Outlook (darbalaukio ir žiniatinklio), Apple Mail, Thunderbird."
+        },
+        {
+          "question": "Ar galiu pridėti įmonės logotipą?",
+          "answer": "Taip. Kortelėje Details įveskite paveikslėlio URL (logotipą ar profilio nuotrauką). Paveikslėlis turėtų būti kvadratinis (bent 120x120 px) ir viešai prieinamas internete."
+        },
+        {
+          "question": "Kaip parašas nukopijuojamas į el. pašto klientą?",
+          "answer": "Mygtukas Copy signature po peržiūra nukopijuoja parašą į iškarpinę kaip formatuotą HTML. Gmail ar Outlook parašo nustatymuose naudokite Ctrl+V (Windows) arba Cmd+V (Mac)."
+        },
+        {
+          "question": "Ar galiu generatorių naudoti visai komandai parašams sukurti?",
+          "answer": "Taip. Generatorius nereikalauja prisijungimo nei registracijos. Kiekvienas komandos narys gali atidaryti įrankį, užpildyti savo duomenis ir nukopijuoti paruoštą parašą. Nustatymus taip pat galima eksportuoti kaip JSON failą ir pasidalinti su kolegomis."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Peržiūrėkite kitus įrankius"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

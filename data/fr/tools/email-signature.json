@@ -3,7 +3,7 @@
   "locale": "fr",
   "metadata": {
     "title": "Générateur de signature e-mail gratuit – HTML Gmail et Outlook",
-    "description": "Créez une signature e-mail HTML professionnelle sans coder. Ajoutez coordonnées, logo, réseaux sociaux et copiez dans Gmail ou Outlook. Sans inscription, sans limite.",
+    "description": "Créez une signature e-mail HTML professionnelle sans coder. Ajoutez coordonnées, logo, réseaux sociaux et copiez dans Gmail ou Outlook. Sans inscription,",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
     "path": "/fr/outils/generateur-de-signature-email-gratuit"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/fr/outils", "label": "Outils" },
-    "third": { "href": "/fr/outils/generateur-de-signature-email-gratuit", "label": "Signature e-mail" }
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/generateur-de-signature-email-gratuit",
+      "label": "Signature e-mail"
+    }
   },
   "schemas": {
     "software": {
@@ -39,62 +45,133 @@
       "name": "Comment créer une signature e-mail professionnelle",
       "description": "Créez une signature e-mail HTML avec vos coordonnées, liens de réseaux sociaux et bouton CTA. Copiez le code dans Gmail ou Outlook.",
       "steps": [
-        { "name": "Saisir les coordonnées", "text": "Renseignez nom, poste, entreprise, téléphone, e-mail et site web." },
-        { "name": "Choisir la mise en page et le design", "text": "Sélectionnez l'une des 8 mises en page et personnalisez les couleurs, la police et les espacements." },
-        { "name": "Ajouter réseaux sociaux et CTA", "text": "Ajoutez optionnellement des liens de réseaux sociaux et un bouton CTA." },
-        { "name": "Copier la signature", "text": "Copiez la signature en texte formaté (pour Gmail/Outlook) ou en code HTML." }
+        {
+          "name": "Saisir les coordonnées",
+          "text": "Renseignez nom, poste, entreprise, téléphone, e-mail et site web."
+        },
+        {
+          "name": "Choisir la mise en page et le design",
+          "text": "Sélectionnez l'une des 8 mises en page et personnalisez les couleurs, la police et les espacements."
+        },
+        {
+          "name": "Ajouter réseaux sociaux et CTA",
+          "text": "Ajoutez optionnellement des liens de réseaux sociaux et un bouton CTA."
+        },
+        {
+          "name": "Copier la signature",
+          "text": "Copiez la signature en texte formaté (pour Gmail/Outlook) ou en code HTML."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Pourquoi une signature e-mail professionnelle ?",
       "html": "<p class=\"text-mid\">Une signature e-mail est bien plus que de simples coordonnées en bas d'un message. Elle contient votre nom, votre poste, votre entreprise, vos coordonnées et éventuellement un lien CTA ou des profils de réseaux sociaux. Une signature cohérente et professionnelle renforce l'image de marque dans chaque e-mail envoyé.</p><p class=\"text-mid mt-3\">En moyenne, un employé de bureau envoie 30 à 40 e-mails par jour. Chacun de ces e-mails est une occasion de présenter votre marque, de placer un lien CTA et de donner au destinataire un accès direct à vos profils de réseaux sociaux. Avec cet outil, créez une signature à la hauteur de ces exigences.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Comment utiliser le générateur de signature",
       "description": "La création d'une signature prend moins de 5 minutes :",
       "grid": "four",
       "items": [
-        { "icon": "RiMailLine", "title": "1. Saisir les données", "description": "Renseignez nom, poste, entreprise, coordonnées et optionnellement des liens de réseaux sociaux." },
+        {
+          "icon": "RiMailLine",
+          "title": "1. Saisir les données",
+          "description": "Renseignez nom, poste, entreprise, coordonnées et optionnellement des liens de réseaux sociaux."
+        },
         {
           "icon": "RiPaletteLine",
           "title": "2. Personnaliser le design",
           "description": "Choisissez la mise en page, le schéma de couleurs, la police et ajustez les espacements et styles de texte."
         },
-        { "icon": "RiLinksLine", "title": "3. CTA et réseaux sociaux", "description": "Ajoutez optionnellement un lien d'action et des profils de réseaux sociaux." },
-        { "icon": "RiFileCopyLine", "title": "4. Copier", "description": "Copiez la signature et collez-la dans Gmail, Outlook ou tout autre client." }
+        {
+          "icon": "RiLinksLine",
+          "title": "3. CTA et réseaux sociaux",
+          "description": "Ajoutez optionnellement un lien d'action et des profils de réseaux sociaux."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Copier",
+          "description": "Copiez la signature et collez-la dans Gmail, Outlook ou tout autre client."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "8 mises en page – laquelle vous convient ?",
       "description": "Chaque mise en page organise les éléments différemment :",
       "grid": "four",
       "items": [
-        { "icon": "RiLayoutLine", "title": "Standard", "description": "Disposition classique avec photo de profil à gauche et coordonnées à droite." },
-        { "icon": "RiLayoutLine", "title": "Barre supérieure", "description": "Barre de couleur en haut avec nom et poste, coordonnées en dessous." },
-        { "icon": "RiLayoutLine", "title": "Labels à gauche", "description": "Labels (téléphone, e-mail, site web) à gauche, valeurs à droite." },
-        { "icon": "RiLayoutLine", "title": "Centré", "description": "Tous les éléments centrés – idéal pour les secteurs créatifs." },
-        { "icon": "RiLayoutLine", "title": "Compact", "description": "Gain de place – toutes les informations en quelques lignes." },
-        { "icon": "RiLayoutLine", "title": "Deux colonnes", "description": "Photo et nom à gauche, coordonnées et réseaux sociaux à droite." },
-        { "icon": "RiLayoutLine", "title": "Minimaliste", "description": "Réduit à l'essentiel – nom, poste et un lien." },
-        { "icon": "RiLayoutLine", "title": "Barre inférieure", "description": "Coordonnées en haut, barre de couleur avec CTA et réseaux sociaux en bas." }
+        {
+          "icon": "RiLayoutLine",
+          "title": "Standard",
+          "description": "Disposition classique avec photo de profil à gauche et coordonnées à droite."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Barre supérieure",
+          "description": "Barre de couleur en haut avec nom et poste, coordonnées en dessous."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Labels à gauche",
+          "description": "Labels (téléphone, e-mail, site web) à gauche, valeurs à droite."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Centré",
+          "description": "Tous les éléments centrés – idéal pour les secteurs créatifs."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Compact",
+          "description": "Gain de place – toutes les informations en quelques lignes."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Deux colonnes",
+          "description": "Photo et nom à gauche, coordonnées et réseaux sociaux à droite."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Minimaliste",
+          "description": "Réduit à l'essentiel – nom, poste et un lien."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Barre inférieure",
+          "description": "Coordonnées en haut, barre de couleur avec CTA et réseaux sociaux en bas."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Que peut contenir la signature ?",
       "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Données personnelles</strong> – nom, poste, entreprise, service</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Coordonnées</strong> – téléphone, e-mail, site web, adresse postale</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Images</strong> – photo de profil et/ou logo d'entreprise (URL)</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Réseaux sociaux</strong> – 12 plateformes avec icônes automatiques</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Lien CTA</strong> – bouton d'action (par ex. Prendre rendez-vous)</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Disclaimer</strong> – mention légale / information RGPD</span></div></div>",
       "html": "<p class=\"text-mid mb-4\">Le générateur offre de nombreuses options de personnalisation pour tous les éléments d'une signature e-mail professionnelle :</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Données personnelles</strong> – nom, poste, entreprise et service.</li><li><strong>Coordonnées</strong> – téléphone, e-mail, site web et adresse postale.</li><li><strong>Éléments visuels</strong> – photo de profil, logo, schéma de couleurs et police.</li><li><strong>Réseaux sociaux</strong> – liens vers 12 plateformes avec icônes générées automatiquement.</li><li><strong>Bouton CTA</strong> – lien d'action optionnel avec texte et URL personnalisés.</li><li><strong>Disclaimer</strong> – mention légale en petite taille en bas de la signature.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Options de design en détail",
@@ -106,7 +183,11 @@
           "title": "Schéma de couleurs",
           "description": "Couleur principale et couleur de texte librement configurables. Influence les séparateurs, liens et icônes de réseaux sociaux."
         },
-        { "icon": "RiFontSize", "title": "Police et taille", "description": "Choisissez parmi plusieurs polices et ajustez la taille pour le nom, le poste et les coordonnées." },
+        {
+          "icon": "RiFontSize",
+          "title": "Police et taille",
+          "description": "Choisissez parmi plusieurs polices et ajustez la taille pour le nom, le poste et les coordonnées."
+        },
         {
           "icon": "RiSettings3Line",
           "title": "Espacements et styles",
@@ -114,55 +195,82 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Comment remplir les données de la signature",
       "html": "<p class=\"text-mid\">Dans l'onglet <strong>Données</strong>, vous trouverez tous les champs à remplir. Seuls deux sont obligatoires : nom et adresse e-mail. Les autres champs sont optionnels et n'apparaîtront dans la signature que s'ils sont remplis.</p><h3 class=\"h5 mt-6 mb-3\">Champs de l'onglet Données</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Ligne au-dessus du nom</strong> – texte supplémentaire affiché au-dessus du nom. Vous pouvez y inscrire le nom de l'entreprise, un slogan ou une accroche.</li><li><strong>Avatar / logo (URL de l'image)</strong> – URL d'une photo de profil ou d'un logo d'entreprise. L'image doit être carrée (min. 120x120 px) et accessible publiquement en ligne. Après avoir collé l'URL, des options supplémentaires apparaissent : <strong>Forme de l'avatar</strong> (rond, arrondi ou carré) et <strong>Taille de l'avatar</strong> (petit – 40 px, moyen – 56 px, grand – 72 px).</li><li><strong>Nom complet</strong> – champ obligatoire. Saisissez votre nom complet.</li><li><strong>Tag à côté du nom</strong> – texte court à côté du nom, par ex. pronoms ou titre abrégé.</li><li><strong>Poste</strong> – votre rôle dans l'entreprise, par ex. Directeur commercial, Spécialiste marketing.</li><li><strong>Nom de l'entreprise</strong> – le nom de l'organisation que vous représentez.</li><li><strong>Ligne supplémentaire</strong> – une brève description de votre activité ou de votre offre.</li><li><strong>E-mail</strong> – champ obligatoire. Saisissez votre adresse e-mail professionnelle.</li><li><strong>Téléphone</strong> – numéro de contact. Format libre, par ex. +33 6 00 00 00 00.</li><li><strong>Site web</strong> – URL complète de votre site, commençant par https://.</li><li><strong>Adresse</strong> – adresse physique de l'entreprise (rue, ville, code postal).</li><li><strong>Données légales</strong> – SIRET, numéro de licence ou autres données requises par votre secteur.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Comment ajouter des boutons CTA",
       "html": "<p class=\"text-mid\">Un bouton CTA (appel à l'action) est un élément cliquable qui redirige le destinataire vers une page de votre choix. Il peut s'agir d'un lien vers un calendrier de rendez-vous, un formulaire de contact ou une offre. Le générateur permet d'ajouter deux boutons CTA.</p><h3 class=\"h5 mt-6 mb-3\">Bouton principal</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Ouvrez l'onglet <strong>Boutons</strong> dans l'éditeur.</li><li>Dans la section <strong>Bouton principal</strong>, saisissez le texte que verra le destinataire, par ex. Prendre rendez-vous.</li><li>Dans le champ <strong>Lien CTA</strong>, collez l'URL complète. L'adresse doit commencer par https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Bouton secondaire</h3><p class=\"text-mid\">Vous pouvez ajouter un second bouton CTA en style outline (fond transparent avec bordure). Remplissez les champs de la section <strong>Bouton secondaire</strong> de la même manière que pour le bouton principal.</p><h3 class=\"h5 mt-6 mb-3\">Arrondi des boutons</h3><p class=\"text-mid\">En bas de l'onglet Boutons, vous trouverez l'option <strong>Arrondi des boutons</strong>. Trois variantes sont disponibles : Aucun (coins droits), Léger (légèrement arrondi) ou Complet (bouton ovale).</p><p class=\"text-mid mt-4\">Si vous laissez les deux champs vides, le bouton n'apparaîtra pas dans la signature. Si vous ne remplissez qu'un seul champ, le bouton ne sera pas non plus visible – les deux sont nécessaires : texte et lien.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Comment ajouter les liens de réseaux sociaux",
       "html": "<p class=\"text-mid\">Dans l'onglet <strong>Réseaux sociaux</strong>, vous pouvez ajouter des liens vers vos profils. Le générateur prend en charge douze plateformes : LinkedIn, Instagram, Facebook, TikTok, YouTube, X (anciennement Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram et Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Comment faire</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Ouvrez l'onglet <strong>Réseaux sociaux</strong> dans l'éditeur.</li><li>À côté de chaque plateforme, vous trouverez un champ URL. Collez le lien complet vers votre profil, par ex. https://www.linkedin.com/in/monprofil.</li><li>Remplissez uniquement les champs nécessaires. Les champs vides n'apparaîtront pas dans la signature.</li></ol><h3 class=\"h5 mt-6 mb-3\">Icônes de réseaux sociaux</h3><p class=\"text-mid\">En bas de l'onglet Réseaux sociaux, vous trouverez l'option <strong>Afficher les icônes à côté des noms de services</strong>. Lorsqu'elle est activée, les liens s'affichent sous forme d'icônes SVG en couleur au lieu de simples noms.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Taille d'icône</strong> – options : Petit (16 px), Moyen (20 px) ou Grand (24 px).</li><li><strong>Couleur d'icône</strong> – Couleurs de plateforme (couleurs par défaut), Couleur d'accent (couleur d'accent uniforme) ou Couleur du texte.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Mention légale : quand l'ajouter",
       "html": "<p class=\"text-mid\">Dans l'onglet <strong>Mention légale</strong>, vous pouvez ajouter un texte juridique qui apparaîtra en bas de la signature en police réduite.</p><h3 class=\"h5 mt-6 mb-3\">Quand ajouter une mention légale</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Correspondance professionnelle</strong> – avis de confidentialité et demande de suppression en cas d'envoi erroné.</li><li><strong>Exigences sectorielles</strong> – certains secteurs (ex. : juridique, médical, financier) requièrent des informations spécifiques dans chaque message.</li><li><strong>RGPD</strong> – information sur le traitement des données personnelles, si l'entreprise est responsable du traitement.</li></ul><p class=\"text-mid mt-4\">Par défaut, le champ est pré-rempli avec un texte de confidentialité d'exemple. Vous pouvez le modifier, le supprimer ou le remplacer par votre propre mention. Si le champ est vide, aucune mention n'apparaîtra dans la signature.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Personnalisation de l'apparence",
       "html": "<p class=\"text-mid\">Dans l'onglet <strong>Apparence</strong>, vous pouvez personnaliser les couleurs, la police et d'autres éléments visuels de la signature.</p><h3 class=\"h5 mt-6 mb-3\">Thèmes de couleurs</h3><p class=\"text-mid\">En haut de l'onglet, vous trouverez cinq thèmes prédéfinis : Sombre, Bleu, Violet, Vert et Gris. Un clic sur un thème définit automatiquement la couleur d'accent et la couleur du texte. C'est le moyen le plus rapide d'obtenir une signature cohérente.</p><h3 class=\"h5 mt-6 mb-3\">Couleurs</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Couleur d'accent</strong> – utilisée pour la barre latérale/supérieure, le bouton CTA et les liens. Vous pouvez choisir n'importe quelle couleur de la palette.</li><li><strong>Couleur du texte</strong> – couleur de tous les textes de la signature (nom, coordonnées, mention légale).</li><li><strong>Couleur de fond</strong> – couleur de fond de toute la signature. Blanc par défaut, mais modifiable.</li></ul><h3 class=\"h5 mt-6 mb-3\">Police et taille</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Police</strong> – choix : Arial, Verdana, Tahoma, Trebuchet MS et Georgia. Toutes sont compatibles avec les clients de messagerie et s'afficheront correctement chez le destinataire.</li><li><strong>Taille du texte</strong> – trois options : Petit (12 px), Standard (14 px) et Plus grand (16 px).</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Style de texte : couleurs et tailles des éléments individuels",
       "html": "<p class=\"text-mid\">Dans l'onglet <strong>Style de texte</strong>, vous pouvez personnaliser individuellement la couleur et la taille de police de chaque élément textuel de la signature.</p><h3 class=\"h5 mt-6 mb-3\">Éléments disponibles</h3><p class=\"text-mid\">Seuls les éléments contenant des données sont affichés. Pour chaque élément, vous pouvez configurer :</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Nom complet</strong> – affiché par défaut dans la couleur d'accent.</li><li><strong>Poste</strong> – votre rôle dans l'entreprise.</li><li><strong>Entreprise</strong> – nom de l'organisation.</li><li><strong>Coordonnées</strong> – e-mail, téléphone, site web (labels).</li><li><strong>Réseaux sociaux</strong> – liens vers les profils.</li><li><strong>Mention légale</strong> – texte juridique en bas de la signature.</li></ul><h3 class=\"h5 mt-6 mb-3\">Comment changer la couleur</h3><p class=\"text-mid\">À côté de chaque élément, vous trouverez une rangée d'options de couleur. Cliquez sur un carré de couleur pour le sélectionner. Vous pouvez également ajouter une couleur personnalisée en cliquant sur le carré avec le signe plus : choisissez une couleur et cliquez sur Enregistrer. Les couleurs personnalisées (jusqu'à 8) sont partagées entre tous les éléments.</p><p class=\"text-mid mt-3\">Le bouton avec l'icône de réinitialisation restaure la couleur par défaut de l'élément.</p><h3 class=\"h5 mt-6 mb-3\">Comment changer la taille</h3><p class=\"text-mid\">Sur la deuxième ligne, vous trouverez le contrôle de taille avec les boutons - et +. La valeur indique le décalage par rapport à la taille de police de base (définie dans l'onglet Apparence). Plage : de -4 à +4 pixels.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Espacements entre les éléments",
       "html": "<p class=\"text-mid\">Dans l'onglet <strong>Espacements</strong>, vous pouvez contrôler précisément les distances entre les éléments individuels de la signature.</p><h3 class=\"h5 mt-6 mb-3\">Marge intérieure de la signature</h3><p class=\"text-mid\">En haut de l'onglet, vous trouverez l'option de marge intérieure – c'est-à-dire la distance entre le contenu de la signature et ses bords. Trois valeurs sont disponibles : 8 px (petit), 16 px (moyen) et 24 px (grand).</p><h3 class=\"h5 mt-6 mb-3\">Espacements entre les éléments</h3><p class=\"text-mid\">En dessous de la marge, vous trouverez des contrôles pour les éléments individuels de la signature. Chaque contrôle a des boutons + et - pour augmenter ou diminuer l'espacement. Seules les options des éléments actuellement présents dans la signature sont affichées.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Après le nom</strong> – espace sous la ligne du nom.</li><li><strong>Après le poste / l'entreprise</strong> – espace sous la ligne du poste et du nom d'entreprise.</li><li><strong>Après la ligne supplémentaire</strong> – espace sous la description (si remplie).</li><li><strong>Après les coordonnées</strong> – espace sous l'e-mail, le téléphone et le site web.</li><li><strong>Après les réseaux sociaux</strong> – espace sous les liens vers les profils.</li><li><strong>Après le bouton CTA</strong> – espace sous le bouton (si activé).</li><li><strong>Avant la mention légale</strong> – espace au-dessus du texte juridique.</li></ul><p class=\"text-mid mt-4\">Si vous supprimez les données d'un champ (par ex. effacez le téléphone), l'option d'espacement correspondante disparaît automatiquement de l'onglet.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Sauvegarde automatique et réinitialisation",
       "html": "<p class=\"text-mid\">Le générateur enregistre automatiquement tous les paramètres dans la mémoire du navigateur (localStorage). Après actualisation de la page ou réouverture de l'outil, les données, la mise en page, les couleurs et toutes les autres options seront restaurées.</p><h3 class=\"h5 mt-6 mb-3\">Comment fonctionne la sauvegarde automatique</h3><p class=\"text-mid\">Chaque modification (texte, couleur, mise en page, espacement) est immédiatement enregistrée dans la mémoire du navigateur. La sauvegarde se fait automatiquement en arrière-plan, sans cliquer sur aucun bouton.</p><h3 class=\"h5 mt-6 mb-3\">Comment réinitialiser les paramètres</h3><p class=\"text-mid\">Sous l'aperçu de la signature, vous trouverez le bouton <strong>Réinitialiser l'apparence</strong>. Un clic ouvre une fenêtre de confirmation. Confirmer la réinitialisation restaure toutes les données et paramètres aux valeurs par défaut. Cette opération est irréversible.</p><h3 class=\"h5 mt-6 mb-3\">Exporter et importer la configuration</h3><p class=\"text-mid\">Sous l'aperçu de la signature, vous trouverez deux boutons supplémentaires : <strong>Exporter les paramètres</strong> et <strong>Importer les paramètres</strong>. L'export enregistre toutes les données, couleurs, mise en page, espacements et styles de texte dans un fichier JSON. L'import charge une configuration précédemment enregistrée depuis un fichier.</p><p class=\"text-mid mt-3\">Cette fonction est particulièrement utile pour transférer la configuration de la signature entre ordinateurs, partager les paramètres avec des collègues ou conserver une sauvegarde de vos réglages avant une réinitialisation.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Comment copier la signature dans Gmail ou Outlook",
@@ -186,22 +294,40 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Aperçu de la signature et options d'export",
       "html": "<p class=\"text-mid\">Le panneau d'aperçu s'affiche à droite de l'éditeur et se met à jour automatiquement à chaque modification. L'aperçu est fixé à l'écran (sticky) et reste visible même lors du défilement des options d'édition.</p><h3 class=\"h5 mt-6 mb-3\">Changement de fond de l'aperçu</h3><p class=\"text-mid\">Au-dessus de l'aperçu, vous trouverez trois boutons de changement de fond : <strong>Clair</strong> (fond gris par défaut), <strong>Sombre</strong> (fond sombre, utile pour vérifier la lisibilité sur fond foncé) et <strong>Grille</strong> (motif en grille, permet de voir la transparence et les bords de la signature).</p><h3 class=\"h5 mt-6 mb-3\">Boutons d'action</h3><p class=\"text-mid\">Sous l'aperçu, vous trouverez plusieurs boutons :</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Copier la signature (Gmail / Outlook)</strong> – copie la signature en HTML formaté dans le presse-papiers. Collez-la directement dans les paramètres de signature.</li><li><strong>Copier le code HTML</strong> – copie le code HTML brut dans le presse-papiers. Utile pour le coller dans un éditeur HTML ou un CMS.</li><li><strong>Télécharger en HTML</strong> – enregistre le code de la signature en fichier .html sur le disque. Utile pour l'archivage ou le partage avec un développeur.</li><li><strong>Afficher le code HTML</strong> – ouvre une fenêtre modale avec le code source de la signature. Vous pouvez le consulter et le copier directement depuis la fenêtre.</li><li><strong>Exporter les paramètres</strong> – enregistre la configuration complète de la signature (données, couleurs, mise en page, espacements, styles) en fichier JSON.</li><li><strong>Importer les paramètres</strong> – charge la configuration depuis un fichier JSON. Tous les paramètres sont appliqués automatiquement.</li><li><strong>Réinitialiser l'apparence</strong> – restaure toutes les données et paramètres aux valeurs par défaut (après confirmation).</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Pour qui le générateur de signature est-il utile ?",
       "description": "L'outil est utile pour quiconque envoie des e-mails professionnels :",
       "grid": "two",
       "items": [
-        { "icon": "RiBriefcaseLine", "title": "Entrepreneurs et freelances", "description": "Une signature professionnelle dans chaque message sans faire appel à un designer." },
-        { "icon": "RiTeamLine", "title": "Équipes d'entreprise", "description": "Chaque employé crée sa propre signature dans le même style. Identité cohérente dans toute l'entreprise." },
-        { "icon": "RiHandCoinLine", "title": "Commerciaux", "description": "Un bouton CTA avec lien vers un calendrier ou une offre augmente les chances de décrocher un rendez-vous." },
+        {
+          "icon": "RiBriefcaseLine",
+          "title": "Entrepreneurs et freelances",
+          "description": "Une signature professionnelle dans chaque message sans faire appel à un designer."
+        },
+        {
+          "icon": "RiTeamLine",
+          "title": "Équipes d'entreprise",
+          "description": "Chaque employé crée sa propre signature dans le même style. Identité cohérente dans toute l'entreprise."
+        },
+        {
+          "icon": "RiHandCoinLine",
+          "title": "Commerciaux",
+          "description": "Un bouton CTA avec lien vers un calendrier ou une offre augmente les chances de décrocher un rendez-vous."
+        },
         {
           "icon": "RiScales3Line",
           "title": "Avocats, comptables, médecins",
@@ -209,32 +335,66 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Qu'est-ce qui rend ce générateur spécial ?",
       "grid": "three",
       "items": [
-        { "icon": "RiInfinityLine", "title": "Huit mises en page", "description": "Standard, Barre supérieure, Labels à gauche, Centré, Compact, Deux colonnes, Minimaliste et Barre inférieure." },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Huit mises en page",
+          "description": "Standard, Barre supérieure, Labels à gauche, Centré, Compact, Deux colonnes, Minimaliste et Barre inférieure."
+        },
         {
           "icon": "RiUserLine",
           "title": "Sauvegarde automatique dans le navigateur",
           "description": "Chaque modification est automatiquement enregistrée dans la mémoire du navigateur. Après actualisation, la signature reste disponible."
         },
-        { "icon": "RiTranslate2", "title": "Exporter et importer la configuration", "description": "La configuration complète peut être exportée en fichier JSON et partagée avec des collègues." },
+        {
+          "icon": "RiTranslate2",
+          "title": "Exporter et importer la configuration",
+          "description": "La configuration complète peut être exportée en fichier JSON et partagée avec des collègues."
+        },
         {
           "icon": "RiAppsLine",
           "title": "12 plateformes de réseaux sociaux",
           "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram et Pinterest."
         },
-        { "icon": "RiPaletteLine", "title": "Personnalisation avancée", "description": "Forme et taille de l'avatar, style de ligne, couleurs et tailles de texte individuelles." },
-        { "icon": "RiFileCodeLine", "title": "Multiples options d'export", "description": "Copier le HTML, télécharger le fichier, aperçu du code source, export/import de la configuration JSON." },
-        { "icon": "RiShieldCheckLine", "title": "Confidentialité", "description": "Les données ne sont envoyées à aucun serveur. Le générateur fonctionne entièrement dans le navigateur." },
-        { "icon": "RiMailCheckLine", "title": "Compatibilité", "description": "Le code HTML généré fonctionne dans Gmail, Outlook, Apple Mail et Thunderbird." },
-        { "icon": "RiEyeLine", "title": "Aperçu en direct", "description": "Chaque modification est visible instantanément sur fond clair, foncé ou grille." }
+        {
+          "icon": "RiPaletteLine",
+          "title": "Personnalisation avancée",
+          "description": "Forme et taille de l'avatar, style de ligne, couleurs et tailles de texte individuelles."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Multiples options d'export",
+          "description": "Copier le HTML, télécharger le fichier, aperçu du code source, export/import de la configuration JSON."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité",
+          "description": "Les données ne sont envoyées à aucun serveur. Le générateur fonctionne entièrement dans le navigateur."
+        },
+        {
+          "icon": "RiMailCheckLine",
+          "title": "Compatibilité",
+          "description": "Le code HTML généré fonctionne dans Gmail, Outlook, Apple Mail et Thunderbird."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Aperçu en direct",
+          "description": "Chaque modification est visible instantanément sur fond clair, foncé ou grille."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Questions fréquentes sur le générateur de signature e-mail",
@@ -307,8 +467,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Découvrir d'autres outils" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Découvrir d'autres outils"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

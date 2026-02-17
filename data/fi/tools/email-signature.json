@@ -1,0 +1,221 @@
+{
+  "toolKey": "emailSignature",
+  "locale": "fi",
+  "metadata": {
+    "title": "Ilmainen sähköpostiallekirjoitusgeneraattori – HTML Gmailiin ja Outlookiin",
+    "description": "Luo ammattimainen HTML-sähköpostiallekirjoitus ilman ohjelmistoa. Lisää yhteystiedot, logo, sosiaalisen median linkit ja kopioi Gmailiin tai Outlookiin.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
+    "path": "/fi/tyokalut/ilmainen-sahkopostiallekirjoitus-generaattori"
+  },
+  "hero": {
+    "title": "Luo ammattimainen HTML-sähköpostiallekirjoitus",
+    "description": "Luo ammattimainen sähköpostiallekirjoitus muutamassa minuutissa. Syötä tietosi, valitse värit ja kopioi valmis HTML-koodi Gmailiin, Outlookiin tai muuhun sähköpostiohjelmaan.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/ilmainen-sahkopostiallekirjoitus-generaattori",
+      "label": "Sähköpostiallekirjoitusgeneraattori"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Ilmainen sähköpostiallekirjoitusgeneraattori",
+      "alternateName": ["HTML-sähköpostiallekirjoitusgeneraattori", "Sähköpostin alatunnisteen generaattori"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "EmailSignatureGenerator",
+      "description": "Ilmainen HTML-sähköpostiallekirjoitusgeneraattori. Lisää yhteystiedot, CTA-painike ja sosiaalisen median profiilit, kopioi sitten valmis koodi Gmailiin, Outlookiin ja muihin sähköpostiohjelmiin.",
+      "featureList": [
+        "Yhteystiedot (nimi, titteli, yritys)",
+        "Puhelin, sähköposti ja verkko-osoite",
+        "Logo tai profiilikuva muodon ja koon valinnalla",
+        "Sosiaalisen median kuvakkeet (12 alustaa)",
+        "Mukautettavat värit (teksti, korostus, tausta)",
+        "CTA-painike omalla tekstillä ja linkillä",
+        "Allekirjoituksen reaaliaikainen esikatselu",
+        "Kopioi HTML-koodi leikepöydälle",
+        "Lataa allekirjoitus HTML-tiedostona",
+        "Vie ja tuo määritykset JSON-tiedostona",
+        "Yhteensopivuus Gmailin, Outlookin ja Apple Mailin kanssa",
+        "Ilmainen työkalu, ilman kirjautumista"
+      ]
+    },
+    "howTo": {
+      "name": "Näin käytät sähköpostiallekirjoitusgeneraattoria",
+      "description": "Näin luot ammattimaisen HTML-sähköpostiallekirjoituksen Arteonin ilmaisella työkalulla.",
+      "totalTime": "PT5M",
+      "steps": [
+        {
+          "name": "Valitse allekirjoituksen asettelu",
+          "text": "Valitse yksi kahdeksasta käytettävissä olevasta asettelusta."
+        },
+        {
+          "name": "Täytä yhteystiedot",
+          "text": "Details-välilehdellä syötä nimi, titteli, yritys, sähköposti, puhelin ja verkko-osoite."
+        },
+        {
+          "name": "Lisää CTA-painike",
+          "text": "Buttons-välilehdellä lisää pääpainikkeen teksti ja URL."
+        },
+        {
+          "name": "Lisää sosiaalisen median linkit",
+          "text": "Social Media -välilehdellä syötä profiiliesi URL-osoitteet."
+        },
+        {
+          "name": "Mukauta ulkoasua",
+          "text": "Appearance-välilehdellä valitse väriteema, kirjasintyyppi ja tekstikoko."
+        },
+        {
+          "name": "Tarkista esikatselu ja kopioi allekirjoitus",
+          "text": "Copy signature -painike kopioi valmiin koodin leikepöydälle."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miksi tarvitset ammattimaisen sähköpostiallekirjoituksen?",
+      "html": "<p class=\"text-mid\">Sähköpostiallekirjoitus (kutsutaan myös sähköpostin alatunnisteeksi) on tietolohko jokaisen lähetetyn viestin alareunassa. Se sisältää yhteystiedot, tittelin, yrityksen nimen ja usein linkin verkkosivulle tai ajanvarauskalenteriin.</p><p class=\"text-mid mt-3\">Vastaanottajan ei tarvitse etsiä puhelinnumeroa aiemmista viesteistä – kaikki tiedot ovat helposti saatavilla. Ammattimainen sähköpostiallekirjoitus osoittaa myös, että kiinnität huomiota yksityiskohtiin ja ylläpidät yhtenäistä yritysimago liikeviestinnässä.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Näin käytät sähköpostiallekirjoitusgeneraattoria",
+      "description": "Ammattimaisen sähköpostiallekirjoituksen luominen kestää vain muutaman minuutin:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Syötä tiedot",
+          "description": "Täytä nimi, titteli, yritys ja yhteystiedot."
+        },
+        {
+          "title": "2. Mukauta ulkoasua",
+          "description": "Valitse asettelu, värit, lisää logo ja sosiaalisen median linkit."
+        },
+        {
+          "title": "3. Kopioi koodi",
+          "description": "Copy signature -painike kopioi valmiin koodin leikepöydälle. Liitä se Gmailiin, Outlookiin tai muuhun sähköpostiohjelmaan."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Allekirjoituksen asettelut – minkä valitsisit?",
+      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Allekirjoituksen asettelu</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div></div>",
+      "html": "<p class=\"text-mid\">Generaattori tarjoaa kahdeksan esimääritettyä asettelua. Jokainen asettelu esittää samat tiedot eri tavalla.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> – klassinen pystyasettelu, sopii useimpiin käyttötilanteisiin.</li><li><strong>Top bar</strong> – vaakasuora viiva erottaa allekirjoituksen sisällöstä.</li><li><strong>Labels left</strong> – kaksi saraketta: tunnisteet ja arvot.</li><li><strong>Centered</strong> – muodollinen ulkoasu, sisältö keskitetty.</li><li><strong>Compact</strong> – kaikki yhdellä rivillä, minimaalinen korkeus.</li><li><strong>Two columns</strong> – tiedot vasemmalla, yhteystiedot oikealla.</li><li><strong>Minimalist</strong> – vain perustiedot.</li><li><strong>Bottom bar</strong> – värillinen rivi yhteystiedoilla allekirjoituksen alareunassa.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Näin kopioit allekirjoituksen Gmailiin tai Outlookiin",
+      "description": "Kun allekirjoitus on valmis, sen lisääminen sähköpostiohjelmaan vaatii vain muutaman vaiheen:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiClipboardLine",
+          "title": "1. Kopioi koodi",
+          "description": "Copy signature -painike kopioi allekirjoituksen leikepöydälle muotoiltuna HTML:nä, valmiina liitettäväksi."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "2. Avaa allekirjoitusasetukset",
+          "description": "Gmailissa: Settings > See all settings > Signature. Outlookissa: File > Options > Mail > Signatures."
+        },
+        {
+          "icon": "RiSaveLine",
+          "title": "3. Liitä ja tallenna",
+          "description": "Käytä allekirjoituskentässä Ctrl+V (Windows) tai Cmd+V (Mac). Allekirjoitus näkyy kaikkine väreineen ja muotoiluineen. Tallenna muutokset."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kenelle sähköpostiallekirjoitusgeneraattori on tarkoitettu?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBriefcaseLine",
+          "title": "Yrittäjät ja freelancerit",
+          "description": "Ammattimainen allekirjoitus jokaisessa viestissä ilman graafisen suunnittelijan tarvetta."
+        },
+        {
+          "icon": "RiTeamLine",
+          "title": "Yritystiimit",
+          "description": "Jokainen työntekijä luo allekirjoituksen samalla tyylillä. Yhtenäinen identiteetti koko yrityksessä."
+        },
+        {
+          "icon": "RiHandCoinLine",
+          "title": "Myyjat",
+          "description": "CTA-painike linkillä kalenteriin tai tarjoukseen lisää varattujen tapaamisten todennäköisyyttä."
+        },
+        {
+          "icon": "RiScales3Line",
+          "title": "Lakimiehet, tilintarkastajat, lääkärit",
+          "description": "Mahdollisuus lisätä oikeudellisia lausekkeita, lisenssitietoja tai muita toimialakohtaisia tietoja."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset sähköpostiallekirjoitusgeneraattorista",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Toimiiko allekirjoitus Gmailissa, Outlookissa ja Apple Mailissa?",
+          "answer": "Kyllä. Työkalun luoma allekirjoitus käyttää HTML-taulukoita, jotka näkyvät oikein kaikissa suosituissa sähköpostiohjelmissa: Gmail, Outlook (työpöytä ja verkko), Apple Mail, Thunderbird."
+        },
+        {
+          "question": "Voinko lisätä yrityksen logon?",
+          "answer": "Kyllä. Details-välilehdellä syötä kuvan URL (logo tai profiilikuva). Kuvan tulee olla neliömäinen (vähintään 120x120 px) ja julkisesti saatavilla internetissä."
+        },
+        {
+          "question": "Miten allekirjoitus kopioidaan sähköpostiohjelmaan?",
+          "answer": "Esikatselun alla oleva Copy signature -painike kopioi allekirjoituksen leikepöydälle muotoiltuna HTML:nä. Gmailin tai Outlookin allekirjoitusasetuksissa käytä Ctrl+V (Windows) tai Cmd+V (Mac)."
+        },
+        {
+          "question": "Voinko käyttää generaattoria koko tiimin allekirjoitusten luomiseen?",
+          "answer": "Kyllä. Generaattori ei vaadi kirjautumista tai rekisteröitymistä. Jokainen tiimin jäsen voi avata työkalun, täyttää omat tietonsa ja kopioida valmiin allekirjoituksen. Määritykset voidaan myös viedä JSON-tiedostona ja jakaa kollegoille."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tutustu muihin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

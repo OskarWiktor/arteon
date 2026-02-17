@@ -15,6 +15,7 @@ export const metadata = {
     description: data.metadata.description,
     url: toAbsoluteUrl('/sq/rreth-nesh'),
     type: 'website',
+    images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
   },
 };
 

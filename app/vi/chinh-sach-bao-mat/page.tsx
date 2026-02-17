@@ -19,6 +19,7 @@ export const metadata = {
     description: meta.description,
     url: toAbsoluteUrl('/vi/chinh-sach-bao-mat'),
     type: 'website',
+    images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
   },
 };
 

@@ -3,7 +3,7 @@
   "locale": "es",
   "metadata": {
     "title": "Editor de imágenes gratis – recortar y redimensionar",
-    "description": "Redimensione y recorte imágenes en segundos. Plantillas para Instagram, Facebook, LinkedIn. Convierta JPG a WebP. Avatares circulares. Sin registro, sin límites.",
+    "description": "Redimensione y recorte imágenes en segundos. Plantillas para Instagram, Facebook, LinkedIn. Convierta JPG a WebP. Avatares circulares. Sin registro,",
     "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
     "path": "/es/herramientas/editor-de-imagenes-en-linea"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/es/herramientas", "label": "Herramientas" },
-    "third": { "href": "/es/herramientas/editor-de-imagenes-en-linea", "label": "Editor de imágenes online" }
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/editor-de-imagenes-en-linea",
+      "label": "Editor de imágenes online"
+    }
   },
   "schemas": {
     "software": {
@@ -52,55 +58,91 @@
       "name": "Cómo redimensionar y recortar una imagen para redes sociales",
       "description": "Cómo redimensionar una imagen para Instagram (1080x1080, 1080x1350, story), Facebook, LinkedIn e imagen OG. Conversión de JPG a WebP y creación de avatares circulares.",
       "steps": [
-        { "name": "Añada una imagen", "text": "Arrastre un archivo sobre el área designada o seleccione una imagen desde su dispositivo. Formatos admitidos: JPG, PNG, WebP." },
+        {
+          "name": "Añada una imagen",
+          "text": "Arrastre un archivo sobre el área designada o seleccione una imagen desde su dispositivo. Formatos admitidos: JPG, PNG, WebP."
+        },
         {
           "name": "Elija dimensiones o un formato predefinido",
           "text": "Introduzca las dimensiones objetivo en píxeles o seleccione un formato predefinido (p. ej., post de Instagram, portada de Facebook, imagen OG)."
         },
-        { "name": "Ajuste el recorte", "text": "Mueva y amplíe la imagen para seleccionar la mejor área. El área brillante en la vista previa muestra exactamente lo que se guardará." },
-        { "name": "Elija formato y descargue", "text": "Seleccione el formato de archivo (JPG, PNG o WebP), configure la calidad de compresión y descargue la imagen terminada." }
+        {
+          "name": "Ajuste el recorte",
+          "text": "Mueva y amplíe la imagen para seleccionar la mejor área. El área brillante en la vista previa muestra exactamente lo que se guardará."
+        },
+        {
+          "name": "Elija formato y descargue",
+          "text": "Seleccione el formato de archivo (JPG, PNG o WebP), configure la calidad de compresión y descargue la imagen terminada."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Redimensione imágenes online: recorte, convierta y comprima en una sola herramienta",
       "html": "<p class=\"text-mid\">El editor de imágenes online le permite adaptar rápidamente las imágenes a dimensiones específicas. Puede redimensionar una imagen a cualquier dimensión en píxeles, seleccionar un formato predefinido para redes sociales o recortar una sección de la imagen con un encuadre preciso.</p><p class=\"text-mid mt-3\">Además de redimensionar, la herramienta ofrece conversión de formato (JPG, PNG, WebP), creación de avatares circulares y control de calidad de compresión.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Cómo redimensionar una imagen online",
       "description": "Editar una imagen tarda solo unos segundos:",
       "grid": "three",
       "items": [
-        { "title": "1. Añada una imagen", "description": "Arrastre un archivo sobre el área designada o seleccione una imagen desde su dispositivo. Formatos admitidos: JPG, PNG, WebP." },
-        { "title": "2. Configure las dimensiones", "description": "Introduzca las dimensiones en píxeles o seleccione un formato predefinido (Instagram, Facebook, YouTube, LinkedIn, imagen OG)." },
-        { "title": "3. Descargue", "description": "Ajuste el recorte, elija el formato de archivo (JPG, PNG, WebP), configure la calidad y descargue la imagen terminada." }
+        {
+          "title": "1. Añada una imagen",
+          "description": "Arrastre un archivo sobre el área designada o seleccione una imagen desde su dispositivo. Formatos admitidos: JPG, PNG, WebP."
+        },
+        {
+          "title": "2. Configure las dimensiones",
+          "description": "Introduzca las dimensiones en píxeles o seleccione un formato predefinido (Instagram, Facebook, YouTube, LinkedIn, imagen OG)."
+        },
+        {
+          "title": "3. Descargue",
+          "description": "Ajuste el recorte, elija el formato de archivo (JPG, PNG, WebP), configure la calidad y descargue la imagen terminada."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Cómo añadir una imagen",
       "html": "<p class=\"text-mid\">La herramienta acepta imágenes en formatos JPG, PNG y WebP. Puede añadir una imagen de dos formas:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Arrastrar y soltar</strong> - tome un archivo de una carpeta de su ordenador y suéltelo sobre el área de carga (el área con borde discontinuo).</li><li><strong>Seleccionar desde el dispositivo</strong> - al hacer clic en el área de carga se abre un diálogo de selección de archivos.</li></ul><p class=\"text-mid mt-3\">Después de añadir una imagen, la herramienta lee automáticamente sus dimensiones originales y muestra una vista previa. Ahora puede proceder a la configuración de recorte.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Configurar las dimensiones objetivo",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Dimensiones en px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Formatos predefinidos</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Ancho (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly></div><div><label class=\"text-[14px]! font-medium\">Alto (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span>Mantener proporciones (segunda dimensión automática)</span></label></div></div>",
       "html": "<p class=\"text-mid\">En la pestaña <strong>Dimensiones en px</strong>, introduce el ancho y el alto manualmente. La opción <strong>Mantener proporciones</strong> ajusta automáticamente la segunda dimensión.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Dimensiones de imagen para Instagram, Facebook y LinkedIn",
       "html": "<p class=\"text-mid mb-4\">La herramienta incluye formatos predefinidos con dimensiones óptimas para las plataformas más populares:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Plataforma</th><th class=\"py-2 pr-4 font-semibold\">Formato</th><th class=\"py-2 pr-4 font-semibold\">Dimensiones (px)</th><th class=\"py-2 font-semibold\">Proporción</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Post cuadrado</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Post vertical</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Post</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Portada de página</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Post</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Banner de perfil</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">Imagen OG</td><td class=\"py-2 pr-4\">Compartir enlace</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Las dimensiones de la tabla son tamaños recomendados para cada plataforma. La herramienta configura automáticamente estas dimensiones cuando selecciona el formato correspondiente.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Formatos predefinidos: ¿cuál elegir?",
@@ -122,13 +164,21 @@
           "title": "Instagram - story / reels (1080×1920)",
           "description": "Formato vertical a pantalla completa (proporción 9:16). Se usa en stories y reels. Llena toda la pantalla del teléfono."
         },
-        { "icon": "RiFacebookLine", "title": "Facebook - post (1200×630)", "description": "Formato óptimo para posts y enlaces compartidos en Facebook. Proporción cercana a 16:9." },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook - post (1200×630)",
+          "description": "Formato óptimo para posts y enlaces compartidos en Facebook. Proporción cercana a 16:9."
+        },
         {
           "icon": "RiFacebookLine",
           "title": "Facebook - portada de página (820×360)",
           "description": "Foto de fondo para una página empresarial de Facebook. Formato panorámico ancho; puede recortarse de manera diferente en distintos dispositivos."
         },
-        { "icon": "RiLinkedinLine", "title": "LinkedIn - post (1200×1200)", "description": "Formato cuadrado para posts de LinkedIn. Se ve bien en el feed y en dispositivos móviles." },
+        {
+          "icon": "RiLinkedinLine",
+          "title": "LinkedIn - post (1200×1200)",
+          "description": "Formato cuadrado para posts de LinkedIn. Se ve bien en el feed y en dispositivos móviles."
+        },
         {
           "icon": "RiLinkedinLine",
           "title": "LinkedIn - banner de perfil (1584×396)",
@@ -161,26 +211,38 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Cómo recortar una imagen",
       "html": "<p class=\"text-mid\">Después de configurar las dimensiones objetivo, aparece un área de recorte interactiva en la vista previa. La parte brillante de la imagen es la sección que se guardará; el resto está atenuado.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Arrastrar el recorte</p><p class=\"text-mid mt-1\">Agarre el área brillante y arrástrela a cualquier parte de la imagen. Así elige qué sección de la foto se exportará.</p></div><div><p class=\"text-dark font-semibold\">Redimensionar mediante tiradores</p><p class=\"text-mid mt-1\">En las esquinas del área de recorte hay pequeños cuadrados (tiradores). Arrastrarlos cambia el tamaño del recorte: puede ampliarlo o reducirlo manteniendo las proporciones elegidas.</p></div><div><p class=\"text-dark font-semibold\">Zoom</p><p class=\"text-mid mt-1\">En la pestaña <strong>Zoom</strong> encontrará un deslizador para ajustar el zoom (100-300%). Un valor más alto significa que el recorte cubre una sección más pequeña de la imagen original, útil cuando quiere recortar un detalle específico.</p></div><div><p class=\"text-dark font-semibold\">Control de posición preciso</p><p class=\"text-mid mt-1\">En la pestaña <strong>Posición</strong> puede establecer la posición exacta del recorte en porcentajes (0-100% para los ejes X e Y). Los botones de centrado le permiten posicionar rápidamente el recorte en el centro de la imagen.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Formas de recorte",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-neutral-800\">Rectángulo</span><span class=\"inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800\">Cuadrado</span><span class=\"inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-neutral-800\">Círculo</span></div></div>",
       "html": "<p class=\"text-mid\">En la pestaña <strong>Formas de recorte</strong>, elige la forma de la imagen exportada: rectángulo (con las proporciones seleccionadas), cuadrado (fuerza 1:1) o círculo (con fondo transparente).</p><p class=\"text-mid mt-3\">La forma de círculo crea un avatar redondo con fondo transparente fuera del círculo. La herramienta cambia automáticamente el formato a PNG o WebP, ya que JPG no admite transparencia.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Cuadrícula 3×3: ¿para qué sirve?",
       "html": "<p class=\"text-mid\">Una cuadrícula que divide la imagen en 9 partes iguales es visible en el área de recorte. Es una visualización de la <strong>regla de los tercios</strong>, uno de los principios fundamentales de la composición fotográfica.</p><p class=\"text-mid mt-3\">La regla establece que los elementos más importantes de una foto (rostro, producto, punto de interés) deben colocarse en las intersecciones de las líneas de la cuadrícula o a lo largo de ellas. Esta composición es más dinámica y agradable a la vista que colocar el sujeto exactamente en el centro.</p><p class=\"text-mid mt-3\">En la pestaña <strong>Color de cuadrícula</strong> puede cambiar el color de las líneas (verde, blanco, negro, rojo, amarillo) para que la cuadrícula sea claramente visible en diferentes imágenes.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Exportación: ¿qué formato elegir?",
@@ -202,17 +264,36 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Proporciones de aspecto: ¿qué significan?",
       "description": "La proporción de aspecto es la relación entre el ancho y el alto de una imagen. Se escribe como dos números separados por dos puntos:",
       "grid": "two",
       "items": [
-        { "icon": "RiLayoutGridLine", "title": "1:1 (cuadrado)", "description": "El ancho es igual al alto. Post cuadrado de Instagram, fotos de perfil, iconos." },
-        { "icon": "RiAspectRatioLine", "title": "4:5 (vertical)", "description": "Formato ligeramente vertical. Post vertical de Instagram: ocupa más espacio en el feed que un cuadrado." },
-        { "icon": "RiImageLine", "title": "3:2 (clásico)", "description": "Proporciones tradicionales de la fotografía analógica. Muchas cámaras digitales también usan este formato." },
-        { "icon": "RiCropLine", "title": "16:9 (panorámico)", "description": "Formato estándar de vídeo HD, presentaciones y monitores. YouTube, vídeo de Facebook, banners de sitios web." },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "1:1 (cuadrado)",
+          "description": "El ancho es igual al alto. Post cuadrado de Instagram, fotos de perfil, iconos."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "4:5 (vertical)",
+          "description": "Formato ligeramente vertical. Post vertical de Instagram: ocupa más espacio en el feed que un cuadrado."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "3:2 (clásico)",
+          "description": "Proporciones tradicionales de la fotografía analógica. Muchas cámaras digitales también usan este formato."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "16:9 (panorámico)",
+          "description": "Formato estándar de vídeo HD, presentaciones y monitores. YouTube, vídeo de Facebook, banners de sitios web."
+        },
         {
           "icon": "RiInstagramLine",
           "title": "9:16 (vertical a pantalla completa)",
@@ -220,7 +301,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Preguntas frecuentes sobre el editor de imágenes",
@@ -263,8 +347,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore otras herramientas" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore otras herramientas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

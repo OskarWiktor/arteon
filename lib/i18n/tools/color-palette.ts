@@ -1098,4 +1098,333 @@ export const ui = {
       },
     },
   },
+  no: {
+    selectBaseColor: 'Velg grunnfarge',
+    updateColor: 'Oppdater farge',
+    randomColor: 'Tilfeldig farge',
+    currentBaseColor: 'Nåværende grunnfarge',
+    baseColorHelper: 'Alle paletter nedenfor er basert på denne fargen.',
+    colorPreview: 'Fargeforhåndsvisning',
+    copied: 'Kopiert',
+    copy: 'Kopier',
+    generatedPalettes: 'Genererte fargepaletter',
+    colorReadError: 'Kunne ikke lese fargen. Sørg for at du bruker formatet',
+    example: 'f.eks.',
+    enterValidColor: 'Skriv inn en gyldig HEX-farge for å generere paletter. Alle beregninger gjøres lokalt i nettleseren din.',
+    palettes: {
+      monochromatic: {
+        label: 'Monokromatisk palett',
+        description: 'Alle farger har samme kulør (H), skiller seg primært i lysstyrke (L) i HSL-fargerommet.',
+      },
+      analogous: {
+        label: 'Tilstøtende palett',
+        description: 'Farger med lignende kulør \u2013 fra ca. -30\u00b0 til +30\u00b0 rundt grunnfargen på det klassiske fargehjulet (f.eks. Itten).',
+      },
+      complementary: {
+        label: 'Komplementær palett',
+        description: 'Grunnfargen og dens komplement forskjøvet 180\u00b0 på fargehjulet \u2013 en av de grunnleggende fargekontrastene beskrevet av Johannes Itten.',
+      },
+      triadic: {
+        label: 'Triadisk palett',
+        description: 'Tre kulører med 120\u00b0 avstand på fargehjulet (hjørner av en likesidet trekant) \u2013 geometri som ofte brukes innen merkevarebygging og Bauhaus-inspirert design.',
+      },
+      splitComplementary: {
+        label: 'Splittet komplementær palett',
+        description:
+          'En variasjon av den komplementære paletten \u2013 i stedet for ett komplement (180\u00b0) brukes to farger forskjøvet ca. \u00b130\u00b0 fra komplementet, noe som reduserer visuell spenning og bevarer sterk kontrast.',
+      },
+      softPastel: {
+        label: 'Pastellpalett',
+        description: 'Samme kulør med redusert metning og økt lysstyrke \u2013 forskyvning mot midten og toppen av HSL-rommet, noe som gir myke, \u201dkremaktige\u201d farger.',
+      },
+      deepDark: {
+        label: 'Mørk palett',
+        description: 'Samme kulør med høy metning (S) og lav lysstyrke (L) \u2013 forskyvning nedover på lysstyrkeaksen, noe som gir dype farger typiske for mørk modus og sterke aksenter.',
+      },
+      materialTonal: {
+        label: 'Tonal palett (inspirert av Material Design)',
+        description: 'Flere lysstyrketrinn av en kulør \u2013 varierende L og moderat S, tilsvarende de tonale intervallene i Material Designs retningslinjer (f.eks. 50\u2013900).',
+      },
+      appleMinimal: {
+        label: 'Minimalistisk palett (inspirert av Apple)',
+        description: 'En markant fargeaksent og mange veldig lyse, myke nøytrale toner \u2013 layout typisk for grensesnitt med mye hvitt rom og subtile skygger.',
+      },
+    },
+  },
+  fi: {
+    selectBaseColor: 'Valitse perusv\u00e4ri',
+    updateColor: 'P\u00e4ivit\u00e4 v\u00e4ri',
+    randomColor: 'Satunnainen v\u00e4ri',
+    currentBaseColor: 'Nykyinen perusv\u00e4ri',
+    baseColorHelper: 'Kaikki alla olevat paletit perustuvat t\u00e4h\u00e4n v\u00e4riin.',
+    colorPreview: 'V\u00e4rin esikatselu',
+    copied: 'Kopioitu',
+    copy: 'Kopioi',
+    generatedPalettes: 'Luodut v\u00e4ripaletit',
+    colorReadError: 'V\u00e4ri\u00e4 ei voitu lukea. Varmista, ett\u00e4 k\u00e4yt\u00e4t muotoa',
+    example: 'esim.',
+    enterValidColor: 'Sy\u00f6t\u00e4 kelvollinen HEX-v\u00e4ri luodaksesi paletit. Kaikki laskelmat tehd\u00e4\u00e4n paikallisesti selaimessasi.',
+    palettes: {
+      monochromatic: {
+        label: 'Monokromaattinen paletti',
+        description: 'Kaikilla v\u00e4reill\u00e4 on sama s\u00e4vy (H), ja ne eroavat p\u00e4\u00e4asiassa valoisuudessa (L) HSL-v\u00e4riavaruudessa.',
+      },
+      analogous: {
+        label: 'Analoginen paletti',
+        description: 'V\u00e4rit, joilla on samankaltainen s\u00e4vy \u2013 noin -30\u00b0\u2013+30\u00b0 perusv\u00e4rist\u00e4 klassisella v\u00e4ripy\u00f6r\u00e4ll\u00e4 (esim. Itten).',
+      },
+      complementary: {
+        label: 'Komplementaarinen paletti',
+        description: 'Perusv\u00e4ri ja sen komplementti 180\u00b0 p\u00e4\u00e4ss\u00e4 v\u00e4ripy\u00f6r\u00e4ll\u00e4 \u2013 yksi Johannes Ittenin kuvaamista perusv\u00e4rikontrasteista.',
+      },
+      triadic: {
+        label: 'Triadinen paletti',
+        description:
+          'Kolme s\u00e4vy\u00e4 120\u00b0 v\u00e4lein v\u00e4ripy\u00f6r\u00e4ll\u00e4 (tasasivuisen kolmion k\u00e4rjet) \u2013 geometria, jota k\u00e4ytet\u00e4\u00e4n usein br\u00e4nd\u00e4yksess\u00e4 ja Bauhaus-henkisess\u00e4 suunnittelussa.',
+      },
+      splitComplementary: {
+        label: 'Jaettu komplementaarinen paletti',
+        description:
+          'Komplementaaripalatin muunnelma \u2013 yhden komplementin (180\u00b0) sijaan k\u00e4ytet\u00e4\u00e4n kahta v\u00e4ri\u00e4 n. \u00b130\u00b0 komplementista, mik\u00e4 v\u00e4hent\u00e4\u00e4 visuaalista j\u00e4nnitteit\u00e4 s\u00e4ilytt\u00e4en vahvan kontrastin.',
+      },
+      softPastel: {
+        label: 'Pastellipaletti',
+        description:
+          'Sama s\u00e4vy v\u00e4hennetyll\u00e4 kyll\u00e4isyydell\u00e4 ja lis\u00e4tyll\u00e4 valoisuudella \u2013 siirtym\u00e4 HSL-avaruuden keskelle ja yl\u00f6sp\u00e4in, mik\u00e4 tuottaa pehmeit\u00e4, \u201dkrem\u00e4\u201d v\u00e4rej\u00e4.',
+      },
+      deepDark: {
+        label: 'Tumma paletti',
+        description:
+          'Sama s\u00e4vy korkealla kyll\u00e4isyydell\u00e4 (S) ja matalalla valoisuudella (L) \u2013 siirtym\u00e4 alas valoisuusakselilla, mik\u00e4 tuottaa syvi\u00e4 v\u00e4rej\u00e4 tyypillisi\u00e4 tummalle tilalle ja voimakkaille aksenteille.',
+      },
+      materialTonal: {
+        label: 'Tonaalinen paletti (Material Design -henkinen)',
+        description:
+          'Useita valoisuusasteita yhdest\u00e4 s\u00e4vyst\u00e4 \u2013 vaihteleva L ja maltillinen S, vastaten Material Designin ohjeistuksen tonaalisia v\u00e4lej\u00e4 (esim. 50\u2013900).',
+      },
+      appleMinimal: {
+        label: 'Minimalistinen paletti (Apple-henkinen)',
+        description:
+          'N\u00e4kyv\u00e4 v\u00e4riaksentti ja useita hyvin vaaleita, pehmeit\u00e4 neutraaleja s\u00e4vyj\u00e4 \u2013 asettelu tyypillinen k\u00e4ytt\u00f6liittymille, joissa on paljon valkoista tilaa ja hienovaraisia varjoja.',
+      },
+    },
+  },
+  sk: {
+    selectBaseColor: 'Vyberte z\u00e1kladn\u00fa farbu',
+    updateColor: 'Aktualizova\u0165 farbu',
+    randomColor: 'N\u00e1hodn\u00e1 farba',
+    currentBaseColor: 'Aktu\u00e1lna z\u00e1kladn\u00e1 farba',
+    baseColorHelper: 'V\u0161etky palety ni\u017e\u0161ie s\u00fa zalo\u017een\u00e9 na tejto farbe.',
+    colorPreview: 'N\u00e1h\u013ead farby',
+    copied: 'Skop\u00edrovan\u00e9',
+    copy: 'Kop\u00edrova\u0165',
+    generatedPalettes: 'Vygenerovan\u00e9 farebn\u00e9 palety',
+    colorReadError: 'Farbu sa nepodarilo pre\u010d\u00edta\u0165. Uistite sa, \u017ee pou\u017e\u00edvate form\u00e1t',
+    example: 'napr.',
+    enterValidColor: 'Zadajte platn\u00fa farbu HEX na vytvorenie pal\u00e9t. V\u0161etky v\u00fdpo\u010dty prebiehaj\u00fa lok\u00e1lne vo va\u0161om prehliada\u010di.',
+    palettes: {
+      monochromatic: {
+        label: 'Monochromatick\u00e1 paleta',
+        description: 'V\u0161etky farby maj\u00fa rovnak\u00fd odtie\u0148 (H) a l\u00ed\u0161ia sa hlavne v svetlosti (L) v priestore HSL.',
+      },
+      analogous: {
+        label: 'Analogick\u00e1 paleta',
+        description: 'Farby s podobn\u00fdm odtie\u0148om \u2013 pribli\u017ene -30\u00b0 a\u017e +30\u00b0 od z\u00e1kladnej farby na klasickom farebnom kruhu (napr. Itten).',
+      },
+      complementary: {
+        label: 'Komplement\u00e1rna paleta',
+        description: 'Z\u00e1kladn\u00e1 farba a jej komplement 180\u00b0 na farebnom kruhu \u2013 jeden zo z\u00e1kladn\u00fdch farebn\u00fdch kontrastov pod\u013ea Johannesa Ittena.',
+      },
+      triadic: {
+        label: 'Triadick\u00e1 paleta',
+        description:
+          'Tri odtiene rozlo\u017een\u00e9 po 120\u00b0 na farebnom kruhu (vrcholy rovnostrann\u00e9ho troj\u00faholn\u00edka) \u2013 geometria \u010dasto pou\u017e\u00edvan\u00e1 v brandingu a dizajne v duchu Bauhausu.',
+      },
+      splitComplementary: {
+        label: 'Rozdelen\u00e1 komplement\u00e1rna paleta',
+        description:
+          'Variant komplement\u00e1rnej palety \u2013 namiesto jedn\u00e9ho komplementu (180\u00b0) sa pou\u017e\u00edvaj\u00fa dve farby pribli\u017ene \u00b130\u00b0 od komplementu, \u010do zni\u017euje vizu\u00e1lne nap\u00e4tie pri zachovan\u00ed siln\u00e9ho kontrastu.',
+      },
+      softPastel: {
+        label: 'Pastelov\u00e1 paleta',
+        description:
+          'Rovnak\u00fd odtie\u0148 so zn\u00ed\u017eenou s\u00fdtos\u0165ou a zv\u00fd\u0161enou svetlos\u0165ou \u2013 posun v priestore HSL smerom k stredu a nahor, \u010do vytv\u00e1ra jemn\u00e9, \u201ekr\u00e9mov\u00e9\u201c farby.',
+      },
+      deepDark: {
+        label: 'Tmav\u00e1 paleta',
+        description:
+          'Rovnak\u00fd odtie\u0148 s vysokou s\u00fdtos\u0165ou (S) a n\u00edzkou svetlos\u0165ou (L) \u2013 posun nadol po osi svetlosti, \u010do vytv\u00e1ra hlbok\u00e9 farby typick\u00e9 pre tmav\u00fd re\u017eim a v\u00fdrazn\u00e9 akcenty.',
+      },
+      materialTonal: {
+        label: 'Ton\u00e1lna paleta (Material Design)',
+        description: 'Viacero stup\u0148ov svetlosti z jedn\u00e9ho odtie\u0148a \u2013 meniace sa L a mierna S, zrkadlenie ton\u00e1lnych intervalov pod\u013ea Material Designu (napr. 50\u2013900).',
+      },
+      appleMinimal: {
+        label: 'Minimalistick\u00e1 paleta (Apple)',
+        description:
+          'V\u00fdrazn\u00fd farebn\u00fd akcent a nieko\u013eko ve\u013emi svetl\u00fdch, jemn\u00fdch neutr\u00e1lnych odtie\u0148ov \u2013 rozlo\u017eenie typick\u00e9 pre rozhrania s ve\u013ek\u00fdm bielym priestorom a jemn\u00fdmi tie\u0148mi.',
+      },
+    },
+  },
+  hr: {
+    selectBaseColor: 'Odaberite osnovnu boju',
+    updateColor: 'Ažuriraj boju',
+    randomColor: 'Nasumična boja',
+    currentBaseColor: 'Trenutna osnovna boja',
+    baseColorHelper: 'Sve palete u nastavku temelje se na ovoj boji.',
+    colorPreview: 'Pregled boje',
+    copied: 'Kopirano',
+    copy: 'Kopiraj',
+    generatedPalettes: 'Generirane palete boja',
+    colorReadError: 'Boju nije mogu\u0107e pro\u010ditati. Provjerite koristite li format',
+    example: 'npr.',
+    enterValidColor: 'Unesite valjanu HEX boju za generiranje paleta. Svi izra\u010duni obavljaju se lokalno u va\u0161em pregledniku.',
+    palettes: {
+      monochromatic: {
+        label: 'Monokromatska paleta',
+        description: 'Sve boje imaju isti ton (H) i razlikuju se uglavnom u svjetlini (L) u HSL prostoru.',
+      },
+      analogous: {
+        label: 'Analogna paleta',
+        description: 'Boje sli\u010dnog tona \u2013 pribli\u017eno -30\u00b0 do +30\u00b0 od osnovne boje na klasi\u010dnom krugu boja (npr. Itten).',
+      },
+      complementary: {
+        label: 'Komplementarna paleta',
+        description: 'Osnovna boja i njezin komplement na 180\u00b0 kruga boja \u2013 jedan od temeljnih kontrasta boja prema Johannesu Ittenu.',
+      },
+      triadic: {
+        label: 'Trijadska paleta',
+        description: 'Tri tona razmaknuta po 120\u00b0 na krugu boja (vrhovi jednakostra\u010dnog trokuta) \u2013 geometrija \u010desto kori\u0161tena u brendiranju i Bauhaus dizajnu.',
+      },
+      splitComplementary: {
+        label: 'Podijeljena komplementarna paleta',
+        description:
+          'Varijanta komplementarne palete \u2013 umjesto jednog komplementa (180\u00b0) koriste se dvije boje pribli\u017eno \u00b130\u00b0 od komplementa, \u0161to smanjuje vizualnu napetost zadr\u017eavaju\u0107i jak kontrast.',
+      },
+      softPastel: {
+        label: 'Pastelna paleta',
+        description:
+          'Isti ton sa smanjenom zasi\u0107eno\u0161\u0107u i pove\u0107anom svjetlinom \u2013 pomak u HSL prostoru prema sredini i gore, \u0161to stvara mekane, \u201ekremaste\u201c boje.',
+      },
+      deepDark: {
+        label: 'Tamna paleta',
+        description:
+          'Isti ton s visokom zasi\u0107eno\u0161\u0107u (S) i niskom svjetlinom (L) \u2013 pomak niz os svjetline, \u0161to stvara duboke boje tipi\u010dne za tamni na\u010din rada i sna\u017ene akcente.',
+      },
+      materialTonal: {
+        label: 'Tonalna paleta (Material Design)',
+        description: 'Vi\u0161e stupnjeva svjetline iz jednog tona \u2013 promjenjivo L i umjereno S, odra\u017eavaju\u0107i tonalne intervale prema Material Designu (npr. 50\u2013900).',
+      },
+      appleMinimal: {
+        label: 'Minimalistička paleta (Apple)',
+        description: 'Izražena akcentna boja i nekoliko vrlo svijetlih, mekih neutralnih tonova \u2013 raspored tipi\u010dan za su\u010delja s puno bijelog prostora i suptilnih sjena.',
+      },
+    },
+  },
+  lt: {
+    selectBaseColor: 'Pasirinkite bazin\u0119 spalv\u0105',
+    updateColor: 'Atnaujinti spalv\u0105',
+    randomColor: 'Atsitiktin\u0117 spalva',
+    currentBaseColor: 'Dabartinė bazinė spalva',
+    baseColorHelper: 'Visos žemiau esančios paletės paremtos šia spalva.',
+    colorPreview: 'Spalvos peržiūra',
+    copied: 'Nukopijuota',
+    copy: 'Kopijuoti',
+    generatedPalettes: 'Sugeneruotos spalvų paletės',
+    colorReadError: 'Nepavyko nuskaityti spalvos. \u012esitikinkite, kad naudojate format\u0105',
+    example: 'pvz.',
+    enterValidColor: 'Įveskite galiojančią HEX spalvą paletėms generuoti. Visi skaičiavimai atliekami lokaliai jūsų naršyklėje.',
+    palettes: {
+      monochromatic: {
+        label: 'Monochromatinė paletė',
+        description: 'Visos spalvos turi tą patį atspalvį (H) ir skiriasi daugiausia ryškumu (L) HSL erdvėje.',
+      },
+      analogous: {
+        label: 'Analoginė paletė',
+        description: 'Panašaus atspalvio spalvos \u2013 maždaug -30\u00b0 iki +30\u00b0 nuo bazinės spalvos klasikiniame spalvų rate (pvz. Itten).',
+      },
+      complementary: {
+        label: 'Komplementarinė paletė',
+        description: 'Bazinė spalva ir jos komplementas 180\u00b0 spalvų rate \u2013 vienas iš pagrindinių spalvų kontrastų pagal Johannesą Itteną.',
+      },
+      triadic: {
+        label: 'Triadinė paletė',
+        description: 'Trys atspalviai kas 120\u00b0 spalvų rate (lygiakraščio trikampio viršūnės) \u2013 geometrija dažnai naudojama prekės ženkle ir Bauhaus dizaine.',
+      },
+      splitComplementary: {
+        label: 'Padalinta komplementarinė paletė',
+        description:
+          'Komplementarinės paletės variantas \u2013 vietoj vieno komplemento (180\u00b0) naudojamos dvi spalvos maždaug \u00b130\u00b0 nuo komplemento, kas sumažina vizualinę įtampą išlaikant stiprų kontrastą.',
+      },
+      softPastel: {
+        label: 'Pastelinė paletė',
+        description: 'Tas pats atspalvis su sumažintu sodrumu ir padidintu ryškumu \u2013 poslinkis HSL erdvėje link centro ir aukštyn, sukuriantis švelnius, \u201ekreminius\u201c tonus.',
+      },
+      deepDark: {
+        label: 'Tamsi paletė',
+        description: 'Tas pats atspalvis su dideliu sodrumu (S) ir mažu ryškumu (L) \u2013 poslinkis žemyn ryškumo ašimi, sukuriantis gilias spalvas, būdingas tamsiam režimui ir ryškiems akcentams.',
+      },
+      materialTonal: {
+        label: 'Toninė paletė (Material Design)',
+        description: 'Keli ryškumo laipsniai iš vieno atspalvio \u2013 kintantis L ir saikingas S, atspindintis toninius intervalus pagal Material Design (pvz. 50\u2013900).',
+      },
+      appleMinimal: {
+        label: 'Minimalistinė paletė (Apple)',
+        description: 'Ryškus spalvinis akcentas ir keletas labai šviesių, švelnių neutralių tonų \u2013 išdėstymas būdingas sąsajoms su dideliu baltu plotu ir subtiliais šešėliais.',
+      },
+    },
+  },
+  sl: {
+    selectBaseColor: 'Izberite osnovno barvo',
+    updateColor: 'Posodobi barvo',
+    randomColor: 'Naključna barva',
+    currentBaseColor: 'Trenutna osnovna barva',
+    baseColorHelper: 'Vse spodnje palete temeljijo na tej barvi.',
+    colorPreview: 'Predogled barve',
+    copied: 'Kopirano',
+    copy: 'Kopiraj',
+    generatedPalettes: 'Ustvarjene barvne palete',
+    colorReadError: 'Barve ni mogoče prebrati. Prepričajte se, da uporabljate format',
+    example: 'npr.',
+    enterValidColor: 'Vnesite veljavno HEX barvo za ustvarjanje palet. Vsi izračuni potekajo lokalno v vašem brskalniku.',
+    palettes: {
+      monochromatic: {
+        label: 'Monokromatska paleta',
+        description: 'Vse barve imajo enak odtenek (H) in se razlikujejo predvsem v svetlosti (L) v prostoru HSL.',
+      },
+      analogous: {
+        label: 'Analogna paleta',
+        description: 'Barve s podobnim odtenkom \u2013 približno -30\u00b0 do +30\u00b0 od osnovne barve na klasičnem barvnem krogu (npr. Itten).',
+      },
+      complementary: {
+        label: 'Komplementarna paleta',
+        description: 'Osnovna barva in njen komplement na 180\u00b0 barvnega kroga \u2013 eden temeljnih barvnih kontrastov po Johannesu Ittenu.',
+      },
+      triadic: {
+        label: 'Triadska paleta',
+        description: 'Trije odtenki na 120\u00b0 razmika na barvnem krogu (oglišča enakostraničnega trikotnika) \u2013 geometrija pogosto uporabljena v blagovni znamki in Bauhaus oblikovanju.',
+      },
+      splitComplementary: {
+        label: 'Razdeljena komplementarna paleta',
+        description:
+          'Različica komplementarne palete \u2013 namesto enega komplementa (180\u00b0) se uporabljata dve barvi približno \u00b130\u00b0 od komplementa, kar zmanjša vizualno napetost ob ohranjanju močnega kontrasta.',
+      },
+      softPastel: {
+        label: 'Pastelna paleta',
+        description: 'Enak odtenek z zmanjšano nasičenostjo in povečano svetlostjo \u2013 premik v prostoru HSL proti sredini in navzgor, kar ustvari mehke, \u201ekremaste\u201c barve.',
+      },
+      deepDark: {
+        label: 'Temna paleta',
+        description: 'Enak odtenek z visoko nasičenostjo (S) in nizko svetlostjo (L) \u2013 premik navzdol po osi svetlosti, kar ustvari globoke barve značilne za temni način in močne poudarke.',
+      },
+      materialTonal: {
+        label: 'Tonalna paleta (Material Design)',
+        description: 'Več stopenj svetlosti iz enega odtenka \u2013 spreminjajoč L in zmeren S, ki odražata tonalne intervale po Material Designu (npr. 50\u2013900).',
+      },
+      appleMinimal: {
+        label: 'Minimalistična paleta (Apple)',
+        description: 'Izrazit barvni poudarek in več zelo svetlih, mehkih nevtralnih odtenkov \u2013 razporeditev značilna za vmesnike z veliko belega prostora in subtilnimi sencami.',
+      },
+    },
+  },
 } as const satisfies Record<Locale, unknown>;

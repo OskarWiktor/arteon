@@ -3,7 +3,7 @@
   "locale": "cs",
   "metadata": {
     "title": "Generátor barevných palet zdarma – 9 palet z jedné barvy",
-    "description": "Vygenerujte 9 barevných palet z jedné základní barvy: monochromatickou, komplementární, triádickou, pastelovou a další. Zkopírujte kódy HEX jedním klikem. Bez registrace, bez limitů.",
+    "description": "Vygenerujte 9 barevných palet z jedné základní barvy: monochromatickou, komplementární, triádickou, pastelovou a další. Zkopírujte kódy HEX jedním klikem.",
     "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
     "path": "/cs/nastroje/generator-barevnych-palet"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/cs/nastroje", "label": "Nástroje" },
-    "third": { "href": "/cs/nastroje/generator-barevnych-palet", "label": "Generátor barevných palet" }
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/generator-barevnych-palet",
+      "label": "Generátor barevných palet"
+    }
   },
   "schemas": {
     "software": {
@@ -45,36 +51,63 @@
       "name": "Jak vygenerovat barevnou paletu z jedné základní barvy",
       "description": "Jak vygenerovat 9 barevných palet z jedné základní barvy: monochromatickou, komplementární, triádickou, pastelovou a další.",
       "steps": [
-        { "name": "Vyberte základní barvu", "text": "Zadejte kód HEX do textového pole nebo použijte color picker pro vizuální výběr barvy." },
-        { "name": "Potvrďte barvu", "text": "Potvrďte vybranou barvu tlačítkem Update Color – nástroj vygeneruje palety na základě vaší základní barvy." },
+        {
+          "name": "Vyberte základní barvu",
+          "text": "Zadejte kód HEX do textového pole nebo použijte color picker pro vizuální výběr barvy."
+        },
+        {
+          "name": "Potvrďte barvu",
+          "text": "Potvrďte vybranou barvu tlačítkem Update Color – nástroj vygeneruje palety na základě vaší základní barvy."
+        },
         {
           "name": "Prohlédněte si palety",
           "text": "Nástroj automaticky vygeneruje 9 různých palet: monochromatickou, sousedící, komplementární, triádickou, dělenou komplementární, pastelovou, tmavou, tónovou a minimalistickou."
         },
-        { "name": "Zkopírujte barvy", "text": "U každé barvy najdete tlačítko Kopírovat – kód HEX se zkopíruje do schránky vašeho systému." }
+        {
+          "name": "Zkopírujte barvy",
+          "text": "U každé barvy najdete tlačítko Kopírovat – kód HEX se zkopíruje do schránky vašeho systému."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Proč generovat barevnou paletu?",
       "html": "<p class=\"text-mid\">Konzistentní barevná paleta je základem každého vizuálního projektu – od webu přes logo po tiskové materiály. Ruční výběr barev, které spolu fungují, vyžaduje znalost teorie barev. Generátor tento proces automatizuje: zadáte jednu základní barvu (např. barvu vašeho loga) a nástroj vygeneruje 9 sad barev na základě ověřených schémat barevné harmonie.</p><p class=\"text-mid mt-3\">Každá vygenerovaná barva má svůj kód HEX (např. #4F6BF5) a hodnotu HSL (hue, saturation, lightness). Kód HEX lze vložit přímo do CSS, Figma, Canva nebo jakékoliv grafické aplikace.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak použít generátor barevných palet",
       "description": "Celý proces zabere jen pár sekund:",
       "grid": "three",
       "items": [
-        { "title": "1. Zadejte základní barvu", "description": "Zadejte kód HEX (např. #4F6BF5) do textového pole nebo vyberte barvu z color pickeru. Můžete také použít tlačítko Náhodná barva." },
-        { "title": "2. Potvrďte svůj výběr", "description": "Po kliknutí na tlačítko Update Color nástroj automaticky vygeneruje 9 palet na základě různých schémat barevné harmonie." },
-        { "title": "3. Zkopírujte potřebné barvy", "description": "U každé barvy je tlačítko Kopírovat – kód HEX jde do schránky a můžete jej vložit přímo do projektu." }
+        {
+          "title": "1. Zadejte základní barvu",
+          "description": "Zadejte kód HEX (např. #4F6BF5) do textového pole nebo vyberte barvu z color pickeru. Můžete také použít tlačítko Náhodná barva."
+        },
+        {
+          "title": "2. Potvrďte svůj výběr",
+          "description": "Po kliknutí na tlačítko Update Color nástroj automaticky vygeneruje 9 palet na základě různých schémat barevné harmonie."
+        },
+        {
+          "title": "3. Zkopírujte potřebné barvy",
+          "description": "U každé barvy je tlačítko Kopírovat – kód HEX jde do schránky a můžete jej vložit přímo do projektu."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Jaká barevná schémata nástroj generuje?",
@@ -96,7 +129,11 @@
           "title": "Komplementární paleta",
           "description": "Základní barva a protilehlá barva na barevném kruhu (posun o 180°). Vytváří silný vizuální kontrast. Užitečné tam, kde prvek musí přitáhnout pozornost."
         },
-        { "icon": "RiSparklingLine", "title": "Triádická paleta", "description": "Tři barvy vzdálené 120° na barevném kruhu – tvoří rovnostranný trojúhelník. Dynamická a všestranná kombinace." },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Triádická paleta",
+          "description": "Tři barvy vzdálené 120° na barevném kruhu – tvoří rovnostranný trojúhelník. Dynamická a všestranná kombinace."
+        },
         {
           "icon": "RiCursorLine",
           "title": "Dělená komplementární paleta",
@@ -124,14 +161,20 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Na čem je generátor barevných palet založen?",
       "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° na barevném kruhu</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
       "html": "<p class=\"text-mid\">Všechny palety vznikají matematickou transformací základní barvy v barevném prostoru HSL. HSL popisuje barvu třemi hodnotami: hue (H) je pozice na barevném kruhu (0°–360°), saturation (S) určuje sílu barvy a lightness (L) – jak světlá nebo tmavá barva je.</p><p class=\"text-mid mt-3\">Komplementární, triádické a dělené komplementární palety jsou založeny na geometrii barevného kruhu – barvy jsou umístěny v rovnoměrných úhlových intervalech, čímž vytváří vizuální rovnováhu. Monochromatické, pastelové a tmavé palety mění pouze jas a saturaci při zachování stejného odstínu.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Kde využít vygenerované barevné palety",
@@ -142,7 +185,11 @@
           "title": "Vizuální identita značky",
           "description": "Vyberte harmonické barvy pro existující logo nebo vytvořte barevnou paletu značky od nuly – pro vizitky, tiskoviny a marketingové materiály."
         },
-        { "icon": "RiGlobalLine", "title": "Weby", "description": "Nastavte hlavní barvu, akcent a odstíny pozadí. Zkopírované kódy HEX se vkládají přímo do CSS nebo konfigurace motivu." },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Weby",
+          "description": "Nastavte hlavní barvu, akcent a odstíny pozadí. Zkopírované kódy HEX se vkládají přímo do CSS nebo konfigurace motivu."
+        },
         {
           "icon": "RiSmartphoneLine",
           "title": "Rozhraní aplikací",
@@ -155,7 +202,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Často kladené otázky o generátoru barevných palet",
@@ -183,8 +233,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Objevte další nástroje" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Objevte další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

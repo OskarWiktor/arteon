@@ -1,0 +1,232 @@
+{
+  "toolKey": "wordCounter",
+  "locale": "sl",
+  "metadata": {
+    "title": "Brezplačni števec besed in znakov – Preverite dolžino besedila za SEO",
+    "description": "Preštejte besede, znake, odstavke in čas branja v trenutku. Preverite optimalno dolžino besedila za SEO – blog članek, stran izdelka, pristajalna stran.",
+    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "path": "/sl/orodja/stevec-besed-in-znakov"
+  },
+  "hero": {
+    "title": "Števec besed in znakov z oceno dolžine",
+    "description": "Prilepite besedilo, izberite vrsto strani, orodje pa bo prikazalo število besed, znakov in odstavkov ter ocenilo, ali dolžina ustreza izbrani vrsti vsebine.",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sl/orodja",
+      "label": "Orodja"
+    },
+    "third": {
+      "href": "/sl/orodja/stevec-besed-in-znakov",
+      "label": "Števec besed in znakov"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Brezplačni števec besed in znakov",
+      "alternateName": ["Števec besed z oceno dolžine", "Števec znakov", "Kalkulator časa branja", "Števec besed za SEO"],
+      "applicationSubCategory": "TextApplication",
+      "description": "Brezplačni števec besed in znakov. Preverja število besed, znakov, odstavkov in predvideni čas branja. Ocenjuje dolžino besedila za različne vrste strani.",
+      "featureList": [
+        "Število besed",
+        "Število znakov s presledki in brez njih",
+        "Število odstavkov",
+        "Predvideni čas branja",
+        "Ocena dolžine za različne vrste strani",
+        "Priporočeni razponi: opis izdelka, stran storitve, začetna stran, pristajalna stran, blog članek, vodič",
+        "Kopiranje poročila v odložišče"
+      ]
+    },
+    "howTo": {
+      "name": "Kako uporabljati števec besed in znakov",
+      "description": "Preverite dolžino besedila in ocenite, ali ustreza določeni vrsti strani.",
+      "steps": [
+        {
+          "name": "Izberite vrsto strani",
+          "text": "Izberite s seznama, za katero vrsto strani pišete. Vsaka vrsta ima svoj priporočeni razpon števila besed."
+        },
+        {
+          "name": "Prilepite besedilo",
+          "text": "Prilepite ali vtipkajte besedilo v besedilno polje. Orodje samodejno prešteje besede, znake, odstavke in oceni čas branja."
+        },
+        {
+          "name": "Preverite oceno",
+          "text": "Poglejte barvni kazalnik in status. Zelena pomeni primerno dolžino, rumena prekratko besedilo, rdeča predolgo."
+        },
+        {
+          "name": "Kopirajte poročilo",
+          "text": "Gumb Kopiraj poročilo kopira povzetek vseh statistik in ocene dolžine v odložišče."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Brezplačni števec besed – preštejte in ocenite dolžino besedila",
+      "html": "<p class=\"text-mid\">To orodje omogoča hitro preverjanje dolžine katerega koli besedila. Prilepite vsebino, števec pa prešteje besede, znake in odstavke. Videli boste tudi, koliko minut traja branje in ali dolžina ustreza izbrani vrsti strani.</p><p class=\"text-mid mt-3\">Vsaka vrsta strani služi drugemu namenu – opis izdelka odgovarja na vprašanja kupca, blog članek poglobljeno obravnava temo, stran storitve pa pove, kaj stranka dobi. Števec prikazuje za vsako vrsto razpone, temelječe na analizi uspešne vsebine.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kako uporabljati števec besed in znakov",
+      "description": "Preverjanje dolžine besedila traja manj kot minuto:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiListCheck2",
+          "title": "1. Izberite vrsto strani",
+          "description": "Izberite s seznama, za katero vrsto strani pišete. Vsaka vrsta ima svoj priporočeni razpon števila besed."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Prilepite besedilo",
+          "description": "Prilepite ali vtipkajte besedilo v veliko besedilno polje desno. Orodje takoj prešteje besede, znake, odstavke in oceni čas branja."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "3. Preverite oceno",
+          "description": "Poglejte barvni kazalnik in status. Zelena pomeni primerno dolžino, rumena prekratko besedilo, rdeča predolgo."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Kopirajte poročilo",
+          "description": "Gumb Kopiraj poročilo kopira povzetek števila besed, znakov in odstavkov, časa branja in ocene dolžine v odložišče."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kaj števec meri – besede, znaki, čas branja",
+      "description": "Števec sledi petim kazalnikom:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiText",
+          "title": "Besede",
+          "description": "Skupno število besed. Glavni kazalnik dolžine besedila."
+        },
+        {
+          "icon": "RiSpaceShipLine",
+          "title": "Znaki (s presledki)",
+          "description": "Vsi znaki, vključno s presledki. Pomembno, ko ima CMS omejitev znakov."
+        },
+        {
+          "icon": "RiHashtag",
+          "title": "Znaki (brez presledkov)",
+          "description": "Samo črke, številke in simboli. Včasih potrebno za tiskarne ali obračun prevodov."
+        },
+        {
+          "icon": "RiParagraph",
+          "title": "Odstavki",
+          "description": "Število besedilnih blokov, ločenih s praznimi vrsticami. Pomaga oceniti, ali ima besedilo dobro strukturo."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Čas branja",
+          "description": "Kalkulator časa branja pokaže, koliko minut traja branje besedila pri povprečni hitrosti 200 besed na minuto."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Koliko besed mora imeti besedilo – optimalna dolžina za SEO",
+      "html": "<p class=\"text-mid mb-4\">Spodnji razponi temeljijo na analizi vsebine, ki se dobro uvršča v iskalnikih. Sama dolžina besedila ne vpliva na položaj v Googlu – ključno je, ali vsebina odgovori na vprašanje bralca.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Vrsta strani</th><th class=\"py-2 pr-4 font-semibold\">Razpon</th><th class=\"py-2 font-semibold\">Kdaj krajše, kdaj daljše?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Opis izdelka</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 besed</td><td class=\"text-primary-light0 py-2 text-sm\">Preprost izdelek – 80–150. Kompleksna naprava – 300–400.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Stran storitve</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 besed</td><td class=\"text-primary-light0 py-2 text-sm\">Lokalna storitev – 500–700. B2B storitev s procesom in FAQ – 1 200–1 500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Začetna stran</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 besed</td><td class=\"text-primary-light0 py-2 text-sm\">Začetna stran predstavi ključno vrednost in usmeri obiskovalca naprej.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Pristajalna stran</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 besed</td><td class=\"text-primary-light0 py-2 text-sm\">Preprosta ponudba – 600–1 000. Ponudba, ki zahteva razlago – 1 500–2 500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blog članek</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 besed</td><td class=\"text-primary-light0 py-2 text-sm\">Kratek vodič – 1 200–1 500. Podroben vodič – 2 500–3 000.</td></tr><tr><td class=\"py-2 pr-4\">Vodič / vadnica</td><td class=\"py-2 pr-4 whitespace-nowrap\">2500–6000 besed</td><td class=\"text-primary-light0 py-2 text-sm\">Tema z mnogimi vidiki zahteva več prostora. Dolžina je odvisna od obsega.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Komu koristi števec besed?",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiEditLine",
+          "title": "Besedilopisci in ustvarjalci vsebin",
+          "description": "Preverite, ali je besedilo v priporočenem razponu za določeno vrsto strani."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Blogerji",
+          "description": "Spremljajte dolžino člankov za doslednost. Preverite čas branja pred objavo."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Lastniki spletnih trgovin",
+          "description": "Preverite opise izdelkov glede na omejitve znakov prodajnih platform."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "SEO strokovnjaki",
+          "description": "Ocenite, ali je dolžina vsebine strani optimalna v primerjavi s konkurenco."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Študenti in raziskovalci",
+          "description": "Preverite, ali delo izpolnjuje zahtevano število besed ali znakov."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Prevajalci",
+          "description": "Preštejte znake brez presledkov za obračun prevodov."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Pogosta vprašanja o števcu besed in znakov",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ali dolžina besedila vpliva na položaj v Googlu?",
+          "answer": "Sama dolžina besedila ni dejavnik razvrščanja. Google ocenjuje, ali vsebina odgovori na vprašanje uporabnika in ali mu je vredna.",
+          "answerSchemaText": "Dolžina besedila ni neposredni dejavnik razvrščanja. Google ocenjuje vrednost vsebine za uporabnika."
+        },
+        {
+          "question": "Zakaj so razponi števila besed tako široki?",
+          "answer": "Ista vrsta strani lahko zahteva različne dolžine glede na zahtevnost teme. Preprost opis izdelka ima 80–150 besed. Opis prenosnega računalnika ima 300–400 besed, ker ima kupec več vprašanj.",
+          "answerSchemaText": "Razlike povzroča zahtevnost teme – preprost izdelek zahteva manj besed kot kompleksen."
+        },
+        {
+          "question": "Kako deluje kalkulator časa branja?",
+          "answer": "Orodje deli število besed z 200 – povprečno hitrostjo branja običajnega besedila. Tehnično besedilo se bere počasneje. Rezultat je približna vrednost.",
+          "answerSchemaText": "Orodje predpostavlja povprečno hitrost branja 200 besed na minuto. To je približna vrednost."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Oglejte si druga orodja"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

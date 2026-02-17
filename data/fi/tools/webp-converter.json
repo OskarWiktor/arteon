@@ -1,0 +1,148 @@
+{
+  "toolKey": "jpgToWebp",
+  "locale": "fi",
+  "metadata": {
+    "title": "Ilmainen JPG/PNG WebP-muunnin – Ilman rajoituksia",
+    "description": "Pienennä kuvakokoa laadun heikkenemättä. Muunna JPG ja PNG WebP-muotoon ja nopeuta verkkosivustoasi. Ilman rekisteröitymistä, toimii selaimessa.",
+    "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
+    "path": "/fi/tyokalut/jpg-png-webp-muunnin"
+  },
+  "hero": {
+    "title": "Muunna kuvat WebP-muotoon – pienennä kokoa laadun heikkenemättä",
+    "description": "Lataa kuvia JPG- tai PNG-muodossa, ja työkalu muuntaa ne WebP-muotoon. Pienemmät tiedostot, sama laatu, nopeampi verkkosivusto.",
+    "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/fi/tyokalut", "label": "Työkalut" },
+    "third": { "href": "/fi/tyokalut/jpg-png-webp-muunnin", "label": "JPG/PNG WebP-muunnin" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Ilmainen JPG/PNG WebP-muunnin",
+      "alternateName": ["Kuvamuunnin WebP-muotoon", "JPG WebP-muunnin", "PNG WebP-muunnin"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Ilmainen JPG- ja PNG-muunnin WebP-muotoon. Pienennä kuvakokoa jopa 90 % ilman näkyvää laadun heikkenemistä. Kaikki käsittely tapahtuu selaimessa – tiedostoja ei lähetetä palvelimelle.",
+      "featureList": [
+        "JPG:n muuntaminen WebP-muotoon",
+        "PNG:n muuntaminen WebP-muotoon",
+        "Useiden kuvien erämuuntaminen samanaikaisesti",
+        "Laadunsäädin (0–100)",
+        "Alkuperäisen ja WebP-koon vertailu",
+        "Lataus vedä-ja-pudota-toiminnolla tai tiedoston valinnalla",
+        "Esikatselu ennen ja jälkeen muuntamisen",
+        "Jokaisen kuvan lataus tai kaikki ZIP-tiedostona",
+        "Paikallinen käsittely selaimessa"
+      ]
+    },
+    "howTo": {
+      "name": "Näin muunnat JPG- ja PNG-kuvat WebP-muotoon",
+      "description": "Näin muunnat JPG- ja PNG-kuvat WebP-muotoon. Lataa tiedostot, säädä laatua ja lataa muunnetut kuvat.",
+      "totalTime": "PT2M",
+      "steps": [
+        { "name": "Lataa kuvat", "text": "Vedä ja pudota tiedostot merkittyyn alueeseen tai valitse ne laitteeltasi. Tuetut muodot ovat JPG ja PNG." },
+        { "name": "Säädä laatua", "text": "Käytä säädintä kuvanlaadun säätämiseen (0–100). Korkeampi arvo tarkoittaa parempaa laatua, mutta suurempaa tiedostoa." },
+        { "name": "Lataa muunnetut kuvat", "text": "Napsauta kunkin kuvan latauspainiketta tai lataa kaikki kerralla ZIP-tiedostona." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Mikä on WebP-muoto ja miksi se on tärkeä?",
+      "html": "<p class=\"text-mid\">WebP on Googlen kehittämä moderni kuvamuoto, joka tarjoaa paremman pakkauksen kuin JPG ja PNG. WebP-kuvat vievät vähemmän tilaa – tyypillisesti 25–34 % vähemmän kuin JPG ja jopa 80 % vähemmän kuin PNG – visuaalisen laadun säilyessä.</p><p class=\"text-mid mt-3\">Kaikki suuret selaimet (Chrome, Firefox, Safari, Edge) tukevat WebP-muotoa. Tämän muodon käyttö tarkoittaa nopeampaa sivun latautumista, vähäisempää tiedonsiirtoa ja parempaa Core Web Vitals -pistemäärää – mikä vaikuttaa suoraan sijoitukseen Googlen hakutuloksissa.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Näin käytät JPG/PNG WebP-muunninta",
+      "description": "Muuntaminen kestää vain muutaman minuutin:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Lataa kuvat", "description": "Vedä ja pudota tiedostot merkittyyn alueeseen tai valitse ne laitteeltasi. Voit ladata useita kuvia samanaikaisesti." },
+        { "title": "2. Säädä laatua", "description": "Käytä säädintä kuvanlaadun säätämiseen (0–100). Matalampi arvo tuottaa pienemmän tiedoston, mutta heikomman laadun." },
+        { "title": "3. Lataa tulos", "description": "Napsauta kunkin kuvan latauspainiketta tai lataa kaikki kerralla ZIP-tiedostona." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Näin valitset oikean laadun WebP-muotoon",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Laatu: 80</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Suositeltu</span></div><p class=\"text-mid text-sm!\">Paras suhde laadun ja tiedostokoon välillä. Sopii useimpiin verkko- ja verkkokauppakuviin.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Laatu: 60–70</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Aggressiivinen pakkaus</span></div><p class=\"text-mid text-sm!\">Pienemmät tiedostot. Sopii pikkukuville, kuvakkeille ja koristetaustoille.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Laatu: 90–100</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Korkein laatu</span></div><p class=\"text-mid text-sm!\">Erittäin korkea laatu, mutta suuremmat tiedostot. Sopii portfolioihin ja tuotteiden pääkuviin.</p></div></div>",
+      "html": "<p class=\"text-mid\">Laatuasetus määrittää visuaalisen laadun ja tiedostokoon välisen suhteen. Useimmille verkkokuville arvo 75–85 tuottaa parhaat tulokset – laatuero ei ole silmälle näkyvä, ja tiedosto voi olla 3–5 kertaa pienempi kuin alkuperäinen JPG.</p><p class=\"text-mid mt-3\">Pikkukuville, kuvakkeille ja koristetaustoille voit laskea laadun 60–70:een menettämättä terävyyttä. Portfoliokuville tai tuotteiden pääkuville arvo 90–95 säilyttää yksityiskohdat.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kuka tarvitsee WebP-muunninta?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Verkkosivuston omistajat",
+          "description": "Pienemmät kuvat nopeuttavat sivun latautumista. Se parantaa käyttäjäkokemusta ja vaikuttaa Google-sijoitukseen."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Verkkokaupan omistajat",
+          "description": "Monet tuotekuvat tarkoittavat monta megatavua dataa. WebP-muotoon muuntaminen vähentää latausaikaa ja tiedonsiirtoa."
+        },
+        { "icon": "RiBloggerLine", "title": "Bloggaajat", "description": "Paljon kuvia sisältävät artikkelit latautuvat hitaammin. WebP pienentää kuvakokoa laadun säilyessä." },
+        { "icon": "RiCodeLine", "title": "Verkkokehittäjät", "description": "WebP on moderni standardi verkkokuville. Kaikki suuret selaimet tukevat tätä muotoa." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä WebP-muuntimesta erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Paikallinen käsittely selaimessa",
+          "description": "Kuvia ei lähetetä palvelimelle – kaikki käsittely tapahtuu laitteellasi. Yksityisyytesi on suojattu."
+        },
+        { "icon": "RiSpeedLine", "title": "Välitön muuntaminen", "description": "Tulokset näkyvät heti – ei jonottamista eikä palvelimella käsittelyä." },
+        { "icon": "RiInfinityLine", "title": "Ei kuvarajaa", "description": "Muunna niin monta kuvaa kuin tarvitset. Ei päivä- tai istuntorajaa." },
+        { "icon": "RiScalesLine", "title": "Säädettävä laadunsäädin", "description": "Säädä laatua (0–100) jokaiselle kuvalle ja saat parhaan suhteen koon ja laadun välillä." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset WebP-muuntimesta",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Mikä on WebP-muoto?",
+          "answer": "WebP on Googlen kehittämä moderni kuvamuoto. Se tarjoaa paremman pakkauksen kuin JPG (kuvat 25–34 % pienempiä) ja tukee samalla läpinäkyvyyttä (kuten PNG). Kaikki suuret selaimet tukevat WebP-muotoa.",
+          "answerSchemaText": "WebP on Googlen kuvamuoto, jossa on parempi pakkaus kuin JPG:ssä. Kaikki suuret selaimet tukevat."
+        },
+        {
+          "question": "Heikentääkö WebP-muotoon muuntaminen kuvanlaatua?",
+          "answer": "Laatuasetuksella 75–85 ero ei ole silmälle näkyvä. WebP-pakkaus on tehokkaampaa kuin JPG – samalla visuaalisella laadulla tiedosto voi olla 3–5 kertaa pienempi.",
+          "answerSchemaText": "Laadulla 75–85 ero ei ole näkyvä. WebP tarjoaa tehokkaampaa pakkausta kuin JPG."
+        },
+        {
+          "question": "Lähetetäänkö kuvia palvelimelle?",
+          "answer": "Ei. Kaikki käsittely tapahtuu selaimessasi – kuvia ei lähetetä mihinkään. Sivun sulkemisen jälkeen tiedot poistetaan muistista.",
+          "answerSchemaText": "Ei. Kuvat käsitellään selaimessa. Niitä ei lähetetä palvelimelle."
+        },
+        {
+          "question": "Onko kuvien määrälle rajaa?",
+          "answer": "Ei. Voit muuntaa niin monta kuvaa kuin tarvitset. Ei päivä- tai istuntorajaa.",
+          "answerSchemaText": "Ei. Muunnettavien kuvien määrälle ei ole rajaa."
+        },
+        {
+          "question": "Tukevatko kaikki selaimet WebP-muotoa?",
+          "answer": "Kyllä. Kaikki suuret selaimet – Chrome, Firefox, Safari (versiosta 14 alkaen) ja Edge – tukevat WebP-muotoa. Vanhemmille selaimille suositellaan varakopiota JPG-muodossa.",
+          "answerSchemaText": "Kyllä. Chrome, Firefox, Safari 14+ ja Edge tukevat kaikki WebP-muotoa."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Tutustu muihin työkaluihin" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

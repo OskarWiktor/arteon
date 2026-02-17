@@ -3,7 +3,7 @@
   "locale": "de",
   "metadata": {
     "title": "Favicon-Generator kostenlos – favicon.ico aus einem Bild",
-    "description": "Erstellen Sie favicon.ico und alle erforderlichen Favicon-Größen aus einem einzigen Bild. Browser- und Lighthouse-konform. Lokale Verarbeitung im Browser, ohne Anmeldung.",
+    "description": "Erstellen Sie favicon.ico und alle erforderlichen Favicon-Größen aus einem einzigen Bild. Browser- und Lighthouse-konform. Lokale Verarbeitung im Browser,",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
     "path": "/de/werkzeuge/kostenloser-favicon-generator"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/de/werkzeuge", "label": "Werkzeuge" },
-    "third": { "href": "/de/werkzeuge/kostenloser-favicon-generator", "label": "Favicon-Generator" }
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/kostenloser-favicon-generator",
+      "label": "Favicon-Generator"
+    }
   },
   "schemas": {
     "software": {
@@ -37,58 +43,114 @@
       "name": "So erstellen Sie ein Favicon für Ihre Website",
       "description": "Laden Sie ein Bild hoch und generieren Sie favicon.ico und PNG-Symbole in allen erforderlichen Größen - konform mit Browser- und Lighthouse-Anforderungen.",
       "steps": [
-        { "name": "Bild hochladen", "text": "Laden Sie ein quadratisches Bild hoch (mindestens 512x512 px). Unterstützt: PNG, JPG, WebP." },
-        { "name": "Optionen wählen", "text": "Wählen Sie die gewünschten Größen und ob ein site.webmanifest generiert werden soll." },
-        { "name": "ZIP herunterladen", "text": "Laden Sie alle generierten Dateien als ZIP-Archiv herunter und fügen Sie sie Ihrer Website hinzu." }
+        {
+          "name": "Bild hochladen",
+          "text": "Laden Sie ein quadratisches Bild hoch (mindestens 512x512 px). Unterstützt: PNG, JPG, WebP."
+        },
+        {
+          "name": "Optionen wählen",
+          "text": "Wählen Sie die gewünschten Größen und ob ein site.webmanifest generiert werden soll."
+        },
+        {
+          "name": "ZIP herunterladen",
+          "text": "Laden Sie alle generierten Dateien als ZIP-Archiv herunter und fügen Sie sie Ihrer Website hinzu."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Warum braucht jede Website ein Favicon?",
       "html": "<p class=\"text-mid\">Ein Favicon ist mehr als ein kleines Symbol - es ist ein wesentlicher Teil der Markenidentität im Web. Browser zeigen es im Tab an, Nutzer sehen es in Lesezeichen und im Verlauf, und Lighthouse prüft seine Präsenz als Best Practice. Ohne Favicon wirkt eine Website unvollständig.</p><p class=\"text-mid mt-3\">Moderne Websites benötigen Favicons in mehreren Größen: ein favicon.ico für ältere Browser, PNG-Symbole für Desktop-Browser, ein Apple Touch Icon für iOS-Geräte und größere Symbole für PWA-Installationen auf Android. Dieses Tool generiert alle erforderlichen Dateien aus einem einzigen Bild.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "So verwenden Sie den Favicon-Generator",
       "description": "Die Favicon-Generierung dauert nur wenige Sekunden:",
       "grid": "three",
       "items": [
-        { "icon": "RiUploadLine", "title": "1. Bild hochladen", "description": "Laden Sie ein quadratisches Bild hoch (mindestens 512x512 px). Unterstützt: PNG, JPG, WebP." },
-        { "icon": "RiAppsLine", "title": "2. Optionen wählen", "description": "Wählen Sie die gewünschten Größen und ob ein site.webmanifest generiert werden soll." },
-        { "icon": "RiDownloadLine", "title": "3. ZIP herunterladen", "description": "Laden Sie alle generierten Dateien als ZIP-Archiv herunter und fügen Sie sie Ihrer Website hinzu." }
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Bild hochladen",
+          "description": "Laden Sie ein quadratisches Bild hoch (mindestens 512x512 px). Unterstützt: PNG, JPG, WebP."
+        },
+        {
+          "icon": "RiAppsLine",
+          "title": "2. Optionen wählen",
+          "description": "Wählen Sie die gewünschten Größen und ob ein site.webmanifest generiert werden soll."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "3. ZIP herunterladen",
+          "description": "Laden Sie alle generierten Dateien als ZIP-Archiv herunter und fügen Sie sie Ihrer Website hinzu."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Welche Dateien werden generiert?",
       "demoHtml": "<div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Datei</th><th class=\"py-2 pr-4 font-semibold\">Größe</th><th class=\"py-2 font-semibold\">Verwendung</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon.ico</td><td class=\"py-2 pr-4\">16×16 + 32×32</td><td class=\"text-primary-light0 py-2\">Browser-Tab (Standard)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-16x16.png</td><td class=\"py-2 pr-4\">16×16</td><td class=\"text-primary-light0 py-2\">Browser-Tab (kleine Darstellung)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-32x32.png</td><td class=\"py-2 pr-4\">32×32</td><td class=\"text-primary-light0 py-2\">Browser-Tab (Retina)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">apple-touch-icon.png</td><td class=\"py-2 pr-4\">180×180</td><td class=\"text-primary-light0 py-2\">iOS-Startbildschirm, Safari</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">android-chrome-192x192.png</td><td class=\"py-2 pr-4\">192×192</td><td class=\"text-primary-light0 py-2\">Android, PWA-Installation</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">android-chrome-512x512.png</td><td class=\"py-2 pr-4\">512×512</td><td class=\"text-primary-light0 py-2\">PWA-Splashscreen, Google-Suchergebnisse</td></tr><tr><td class=\"py-2 pr-4 font-medium\">site.webmanifest</td><td class=\"py-2 pr-4\">-</td><td class=\"text-primary-light0 py-2\">PWA-Konfiguration (optional)</td></tr></tbody></table></div>",
       "html": "<p class=\"text-mid\">Das Tool generiert alle Favicon-Dateien, die von modernen Browsern und Lighthouse gefordert werden. Jede Datei hat eine bestimmte Rolle:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>favicon.ico</strong> - das klassische Format, das von allen Browsern unterstützt wird. Enthält 16×16 und 32×32 in einer Datei.</li><li><strong>Apple Touch Icon</strong> - wird auf dem iOS-Startbildschirm angezeigt, wenn ein Nutzer die Website als Lesezeichen hinzufügt.</li><li><strong>PWA-Symbole</strong> - für Android-Geräte und Progressive Web Apps. Werden bei der Installation auf dem Startbildschirm verwendet.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Wo wird das Favicon angezeigt?",
       "description": "Das Favicon erscheint an verschiedenen Stellen im Web:",
       "grid": "three",
       "items": [
-        { "icon": "RiGlobalLine", "title": "Browser-Tabs", "description": "Das Favicon erscheint neben dem Seitentitel im Browser-Tab - der sichtbarste Ort." },
-        { "icon": "RiBookmarkLine", "title": "Lesezeichen und Verlauf", "description": "Browser verwenden das Favicon in der Lesezeichenleiste und im Browserverlauf." },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Browser-Tabs",
+          "description": "Das Favicon erscheint neben dem Seitentitel im Browser-Tab - der sichtbarste Ort."
+        },
+        {
+          "icon": "RiBookmarkLine",
+          "title": "Lesezeichen und Verlauf",
+          "description": "Browser verwenden das Favicon in der Lesezeichenleiste und im Browserverlauf."
+        },
         {
           "icon": "RiSmartphoneLine",
           "title": "Startbildschirm (mobil)",
           "description": "Wenn ein Nutzer die Website zum Startbildschirm hinzufügt, wird das Apple Touch Icon oder PWA-Symbol verwendet."
         },
-        { "icon": "RiSearchLine", "title": "Google-Suchergebnisse", "description": "Google zeigt das Favicon neben der URL in den mobilen Suchergebnissen an." },
-        { "icon": "RiCodeLine", "title": "Lighthouse-Audit", "description": "Lighthouse prüft, ob ein Favicon vorhanden ist - es ist eine Best Practice für Web Performance." },
-        { "icon": "RiFileZipLine", "title": "PWA-Installation", "description": "Bei der Installation einer PWA werden die 192×192- und 512×512-Symbole als App-Icon verwendet." }
+        {
+          "icon": "RiSearchLine",
+          "title": "Google-Suchergebnisse",
+          "description": "Google zeigt das Favicon neben der URL in den mobilen Suchergebnissen an."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Lighthouse-Audit",
+          "description": "Lighthouse prüft, ob ein Favicon vorhanden ist - es ist eine Best Practice für Web Performance."
+        },
+        {
+          "icon": "RiFileZipLine",
+          "title": "PWA-Installation",
+          "description": "Bei der Installation einer PWA werden die 192×192- und 512×512-Symbole als App-Icon verwendet."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Wie laden Sie die generierten Dateien herunter?",
@@ -107,25 +169,50 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Welches Quellbild eignet sich am besten?",
       "html": "<p class=\"text-mid mb-4\">Ein Favicon ist eine sehr kleine Grafik – teilweise nur 16×16 Pixel. Daher eignet sich nicht jedes Bild als Quelle:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Einfache Formen und lesbare Symbole</strong> – schlichte Logos, einzelne Buchstaben oder Symbole funktionieren am besten. Vermeiden Sie komplexe Grafiken mit vielen Details.</li><li><strong>Quadratisches Format</strong> – ein Favicon ist quadratisch. Bilder mit anderen Proportionen als 1:1 werden zugeschnitten oder verzerrt.</li><li><strong>Ausreichende Größe</strong> – wir empfehlen ein Quellbild von mindestens 512×512 Pixeln. Kleinere Bilder werden hochskaliert.</li><li><strong>SVG als ideale Quelle</strong> – SVG skaliert verlustfrei, sodass Icons in allen Größen scharf sind.</li><li><strong>Kontrastreiche Farben</strong> – ein Favicon muss auf verschiedenen Hintergründen sichtbar sein (helle Tabs, Dark Mode). Wählen Sie Farben, die die Lesbarkeit bewahren.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Was macht diesen Favicon-Generator besonders?",
       "grid": "two",
       "items": [
-        { "icon": "RiCheckboxCircleLine", "title": "Lighthouse-konform", "description": "Alle Größen, die Lighthouse und moderne Browser verlangen — in einem Schritt generiert." },
-        { "icon": "RiShieldCheckLine", "title": "Volle Privatsphäre", "description": "Alle Dateien werden lokal in Ihrem Browser verarbeitet - nichts wird an einen Server gesendet." },
-        { "icon": "RiAppsLine", "title": "Alle Formate in einem Schritt", "description": "favicon.ico, PNG-Symbole und optional site.webmanifest - alles aus einem einzigen Bild." },
-        { "icon": "RiInfinityLine", "title": "Ohne Limits", "description": "Favicons generieren — ohne Registrierung und ohne Einschränkungen." }
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Lighthouse-konform",
+          "description": "Alle Größen, die Lighthouse und moderne Browser verlangen — in einem Schritt generiert."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volle Privatsphäre",
+          "description": "Alle Dateien werden lokal in Ihrem Browser verarbeitet - nichts wird an einen Server gesendet."
+        },
+        {
+          "icon": "RiAppsLine",
+          "title": "Alle Formate in einem Schritt",
+          "description": "favicon.ico, PNG-Symbole und optional site.webmanifest - alles aus einem einzigen Bild."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ohne Limits",
+          "description": "Favicons generieren — ohne Registrierung und ohne Einschränkungen."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Häufig gestellte Fragen zum Favicon-Generator",
@@ -173,8 +260,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Weitere Tools entdecken" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere Tools entdecken"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

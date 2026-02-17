@@ -2,8 +2,8 @@
   "toolKey": "metaCounter",
   "locale": "ms",
   "metadata": {
-    "title": "Penyemak Meta Tajuk dan Penerangan Percuma \u2013 Lebar Piksel",
-    "description": "Semak panjang meta tajuk dan penerangan dalam aksara dan piksel. Pratonton Google SERP membantu mengelak coretan terpotong. Tanpa pendaftaran, tempatan dalam pelayar.",
+    "title": "Penyemak Meta Tajuk dan Penerangan Percuma – Lebar Piksel",
+    "description": "Semak panjang meta tajuk dan penerangan dalam aksara dan piksel. Pratonton Google SERP membantu mengelak coretan terpotong. Tanpa pendaftaran,",
     "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
     "path": "/ms/alatan/penyemak-meta-tajuk-dan-penerangan"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/ms/alatan", "label": "Alatan" },
-    "third": { "href": "/ms/alatan/penyemak-meta-tajuk-dan-penerangan", "label": "Penyemak meta tajuk dan penerangan" }
+    "second": {
+      "href": "/ms/alatan",
+      "label": "Alatan"
+    },
+    "third": {
+      "href": "/ms/alatan/penyemak-meta-tajuk-dan-penerangan",
+      "label": "Penyemak meta tajuk dan penerangan"
+    }
   },
   "schemas": {
     "software": {
@@ -43,27 +49,42 @@
     },
     "howTo": {
       "name": "Cara menyemak panjang meta tajuk dan penerangan",
-      "description": "Semak panjang meta tajuk dan penerangan dalam piksel dan aksara. Ketahui berapa aksara tajuk (50\u201360) dan penerangan (120\u2013160) yang perlu dan cara mengelak pemotongan di Google.",
+      "description": "Semak panjang meta tajuk dan penerangan dalam piksel dan aksara. Ketahui berapa aksara tajuk (50–60) dan penerangan (120–160) yang perlu dan cara mengelak pemotongan di Google.",
       "totalTime": "PT3M",
       "steps": [
-        { "name": "Masukkan meta tajuk", "text": "Tampal atau taip tajuk halaman dalam medan Meta tajuk. Alat akan mengira secara automatik bilangan aksara, perkataan, dan lebar piksel." },
-        { "name": "Masukkan meta penerangan", "text": "Tambah penerangan halaman dalam medan Meta penerangan. Anda akan melihat ukuran yang sama." },
+        {
+          "name": "Masukkan meta tajuk",
+          "text": "Tampal atau taip tajuk halaman dalam medan Meta tajuk. Alat akan mengira secara automatik bilangan aksara, perkataan, dan lebar piksel."
+        },
+        {
+          "name": "Masukkan meta penerangan",
+          "text": "Tambah penerangan halaman dalam medan Meta penerangan. Anda akan melihat ukuran yang sama."
+        },
         {
           "name": "Semak pratonton Google",
           "text": "Lihat bagaimana tajuk dan penerangan kelihatan dalam hasil carian Google yang disimulasikan. Pratonton memotong teks secara automatik seperti enjin carian."
         },
-        { "name": "Laraskan mengikut petunjuk", "text": "Jika status menunjukkan Terlalu pendek atau Terlalu panjang, laraskan teks dan semak perubahan dalam masa nyata." }
+        {
+          "name": "Laraskan mengikut petunjuk",
+          "text": "Jika status menunjukkan Terlalu pendek atau Terlalu panjang, laraskan teks dan semak perubahan dalam masa nyata."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Apa itu meta tajuk dan meta penerangan?",
-      "html": "<p class=\"text-mid\">Meta tajuk dan meta penerangan ialah dua teks pendek yang menerangkan kandungan halaman web. Ia tidak kelihatan secara langsung pada halaman tetapi muncul dalam hasil carian Google sebagai tajuk (pautan biru) dan penerangan (teks kelabu di bawah tajuk).</p><p class=\"text-mid mt-3\">Meta tag yang ditulis dengan baik berfungsi seperti iklan untuk halaman anda dalam hasil carian \u2013 ia menarik perhatian dan meningkatkan kemungkinan klik. Tag yang ditulis dengan buruk atau terpotong boleh menghalang klik, walaupun halaman itu sendiri bernilai.</p>"
+      "html": "<p class=\"text-mid\">Meta tajuk dan meta penerangan ialah dua teks pendek yang menerangkan kandungan halaman web. Ia tidak kelihatan secara langsung pada halaman tetapi muncul dalam hasil carian Google sebagai tajuk (pautan biru) dan penerangan (teks kelabu di bawah tajuk).</p><p class=\"text-mid mt-3\">Meta tag yang ditulis dengan baik berfungsi seperti iklan untuk halaman anda dalam hasil carian – ia menarik perhatian dan meningkatkan kemungkinan klik. Tag yang ditulis dengan buruk atau terpotong boleh menghalang klik, walaupun halaman itu sendiri bernilai.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Cara menggunakan penyemak meta tajuk dan penerangan",
@@ -92,20 +113,29 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Berapa aksara meta tajuk dan penerangan perlu ada?",
-      "html": "<p class=\"text-mid mb-4\">Google memotong tajuk dan penerangan yang terlalu panjang. Berikut ialah julat yang disyorkan yang mengurangkan risiko teks terpotong dalam hasil carian.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Elemen</th><th class=\"py-2 pr-4 font-semibold\">Aksara</th><th class=\"py-2 pr-4 font-semibold\">Piksel</th><th class=\"py-2 font-semibold\">Nota</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta tajuk</td><td class=\"py-2 pr-4 whitespace-nowrap\">50\u201360 aksara</td><td class=\"py-2 pr-4 whitespace-nowrap\">sehingga ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Letakkan kata kunci paling penting di hadapan. Nama jenama di belakang.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta penerangan</td><td class=\"py-2 pr-4 whitespace-nowrap\">120\u2013160 aksara</td><td class=\"py-2 pr-4 whitespace-nowrap\">sehingga ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">Anda boleh memasukkan 2\u20133 ayat pendek. Akhiri dengan seruan bertindak.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Ini adalah nilai anggaran \u2013 Google tidak menerbitkan had yang ketat dan mungkin melaraskannya bergantung pada peranti dan konteks pertanyaan.</p>"
+      "html": "<p class=\"text-mid mb-4\">Google memotong tajuk dan penerangan yang terlalu panjang. Berikut ialah julat yang disyorkan yang mengurangkan risiko teks terpotong dalam hasil carian.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Elemen</th><th class=\"py-2 pr-4 font-semibold\">Aksara</th><th class=\"py-2 pr-4 font-semibold\">Piksel</th><th class=\"py-2 font-semibold\">Nota</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta tajuk</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 aksara</td><td class=\"py-2 pr-4 whitespace-nowrap\">sehingga ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Letakkan kata kunci paling penting di hadapan. Nama jenama di belakang.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta penerangan</td><td class=\"py-2 pr-4 whitespace-nowrap\">120–160 aksara</td><td class=\"py-2 pr-4 whitespace-nowrap\">sehingga ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">Anda boleh memasukkan 2–3 ayat pendek. Akhiri dengan seruan bertindak.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Ini adalah nilai anggaran – Google tidak menerbitkan had yang ketat dan mungkin melaraskannya bergantung pada peranti dan konteks pertanyaan.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Cara mentafsir keputusan",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta tajuk</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Aksara: <strong>52</strong></span><span class=\"text-mid\">Perkataan: <strong>7</strong></span><span class=\"text-mid\">Piksel: <strong>456px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Panjang baik</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta penerangan</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Aksara: <strong>142</strong></span><span class=\"text-mid\">Perkataan: <strong>21</strong></span><span class=\"text-mid\">Piksel: <strong>812px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Panjang baik</span></div></div>",
-      "html": "<p class=\"text-mid mb-4\">Alat menunjukkan tiga ukuran untuk setiap medan bersama penilaian panjang berwarna:</p><h3 class=\"h5 mt-6 mb-2\">Ukuran</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Aksara</strong> \u2013 jumlah aksara (termasuk ruang). Mudah difahami tetapi kurang tepat daripada piksel.</li><li><strong>Perkataan</strong> \u2013 bilangan perkataan. Berguna untuk penilaian pantas panjang.</li><li><strong>Lebar (px)</strong> \u2013 lebar teks dalam piksel. Ini ialah nilai yang Google sebenarnya gunakan semasa memotong.</li></ul><h3 class=\"h5 mt-6 mb-2\">Status penilaian</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Panjang baik</strong> (hijau) \u2013 teks berada dalam julat yang disyorkan. Google sepatutnya memaparkannya sepenuhnya.</li><li><strong class=\"text-warning-text\">Terlalu pendek</strong> (kuning) \u2013 teks terlalu pendek. Ada ruang untuk butiran lanjut yang boleh menggalakkan klik.</li><li><strong class=\"text-error-text\">Terlalu panjang</strong> (merah) \u2013 teks melebihi julat yang disyorkan. Google mungkin memotongnya. Pertimbangkan untuk memendekkan.</li><li><strong class=\"text-light\">Tiada data</strong> (kelabu) \u2013 medan kosong. Masukkan teks untuk melihat analisis.</li></ul>"
+      "html": "<p class=\"text-mid mb-4\">Alat menunjukkan tiga ukuran untuk setiap medan bersama penilaian panjang berwarna:</p><h3 class=\"h5 mt-6 mb-2\">Ukuran</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Aksara</strong> – jumlah aksara (termasuk ruang). Mudah difahami tetapi kurang tepat daripada piksel.</li><li><strong>Perkataan</strong> – bilangan perkataan. Berguna untuk penilaian pantas panjang.</li><li><strong>Lebar (px)</strong> – lebar teks dalam piksel. Ini ialah nilai yang Google sebenarnya gunakan semasa memotong.</li></ul><h3 class=\"h5 mt-6 mb-2\">Status penilaian</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Panjang baik</strong> (hijau) – teks berada dalam julat yang disyorkan. Google sepatutnya memaparkannya sepenuhnya.</li><li><strong class=\"text-warning-text\">Terlalu pendek</strong> (kuning) – teks terlalu pendek. Ada ruang untuk butiran lanjut yang boleh menggalakkan klik.</li><li><strong class=\"text-error-text\">Terlalu panjang</strong> (merah) – teks melebihi julat yang disyorkan. Google mungkin memotongnya. Pertimbangkan untuk memendekkan.</li><li><strong class=\"text-light\">Tiada data</strong> (kelabu) – medan kosong. Masukkan teks untuk melihat analisis.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Penyemak meta tag untuk siapa?",
@@ -117,29 +147,63 @@
           "title": "Pemilik laman web dan kedai",
           "description": "Semak sama ada tajuk dan penerangan terpotong dalam hasil Google sebelum menerbitkan halaman atau produk baharu."
         },
-        { "icon": "RiSearchLine", "title": "Pakar SEO", "description": "Uji versi berbeza tajuk dan penerangan, semak pratonton hasil carian, dan sahkan pematuhan garis panduan." },
-        { "icon": "RiEditLine", "title": "Penulis salinan", "description": "Tulis tajuk dan penerangan yang muat dalam had dan menggalakkan klik." },
-        { "icon": "RiCodeLine", "title": "Pembangun web", "description": "Sahkan meta tag sebelum menggunakan halaman ke pengeluaran." }
+        {
+          "icon": "RiSearchLine",
+          "title": "Pakar SEO",
+          "description": "Uji versi berbeza tajuk dan penerangan, semak pratonton hasil carian, dan sahkan pematuhan garis panduan."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Penulis salinan",
+          "description": "Tulis tajuk dan penerangan yang muat dalam had dan menggalakkan klik."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Pembangun web",
+          "description": "Sahkan meta tag sebelum menggunakan halaman ke pengeluaran."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Apa yang menjadikan penyemak meta tajuk dan penerangan ini istimewa?",
       "grid": "two",
       "items": [
-        { "icon": "RiRuler2Line", "title": "Ukuran piksel", "description": "Kami bukan sahaja mengira aksara \u2013 kami mengukur lebar sebenar teks seperti yang Google lakukan." },
-        { "icon": "RiEyeLine", "title": "Pratonton Google", "description": "Lihat bagaimana tajuk dan penerangan kelihatan dalam hasil carian sebelum menerbitkan halaman." },
-        { "icon": "RiCheckboxCircleLine", "title": "Penilaian berwarna", "description": "Ketahui serta-merta sama ada teks terlalu pendek, baik, atau terlalu panjang." },
+        {
+          "icon": "RiRuler2Line",
+          "title": "Ukuran piksel",
+          "description": "Kami bukan sahaja mengira aksara – kami mengukur lebar sebenar teks seperti yang Google lakukan."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Pratonton Google",
+          "description": "Lihat bagaimana tajuk dan penerangan kelihatan dalam hasil carian sebelum menerbitkan halaman."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Penilaian berwarna",
+          "description": "Ketahui serta-merta sama ada teks terlalu pendek, baik, atau terlalu panjang."
+        },
         {
           "icon": "RiInfinityLine",
           "title": "Piksel dan bilangan aksara bersama",
-          "description": "Alat menunjukkan kedua-dua nilai sekaligus \u2013 anda boleh membandingkan sama ada tajuk muat dalam kedua-dua had."
+          "description": "Alat menunjukkan kedua-dua nilai sekaligus – anda boleh membandingkan sama ada tajuk muat dalam kedua-dua had."
         },
-        { "icon": "RiUserLine", "title": "Tajuk dan penerangan dalam satu paparan", "description": "Semak meta tajuk dan penerangan pada masa yang sama, tanpa bertukar tab." }
+        {
+          "icon": "RiUserLine",
+          "title": "Tajuk dan penerangan dalam satu paparan",
+          "description": "Semak meta tajuk dan penerangan pada masa yang sama, tanpa bertukar tab."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Soalan lazim tentang penyemak meta tajuk dan penerangan",
@@ -157,18 +221,27 @@
         },
         {
           "question": "Berapakah panjang optimum meta tajuk dan meta penerangan?",
-          "answer": "Meta tajuk sepatutnya kira-kira 50\u201360 aksara (sehingga ~580 piksel lebar). Meta penerangan berfungsi paling baik pada 120\u2013160 aksara (sehingga ~920 piksel). Ini adalah nilai anggaran \u2013 Google tidak menerbitkan had yang ketat.",
-          "answerSchemaText": "Meta tajuk: 50\u201360 aksara (~580px). Meta penerangan: 120\u2013160 aksara (~920px). Nilai anggaran."
+          "answer": "Meta tajuk sepatutnya kira-kira 50–60 aksara (sehingga ~580 piksel lebar). Meta penerangan berfungsi paling baik pada 120–160 aksara (sehingga ~920 piksel). Ini adalah nilai anggaran – Google tidak menerbitkan had yang ketat.",
+          "answerSchemaText": "Meta tajuk: 50–60 aksara (~580px). Meta penerangan: 120–160 aksara (~920px). Nilai anggaran."
         },
         {
           "question": "Adakah meta penerangan mempengaruhi kedudukan halaman di Google?",
-          "answer": "Meta penerangan bukan faktor kedudukan langsung \u2013 Google tidak menggunakannya untuk menentukan kedudukan halaman. Walau bagaimanapun, penerangan yang baik meningkatkan kadar klik lalu daripada hasil carian, dan CTR yang lebih tinggi boleh mempengaruhi kedudukan secara tidak langsung.",
+          "answer": "Meta penerangan bukan faktor kedudukan langsung – Google tidak menggunakannya untuk menentukan kedudukan halaman. Walau bagaimanapun, penerangan yang baik meningkatkan kadar klik lalu daripada hasil carian, dan CTR yang lebih tinggi boleh mempengaruhi kedudukan secara tidak langsung.",
           "answerSchemaText": "Meta penerangan bukan faktor kedudukan langsung, tetapi penerangan yang baik boleh meningkatkan CTR dan mempengaruhi kedudukan secara tidak langsung."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Terokai alatan lain" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Terokai alatan lain"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

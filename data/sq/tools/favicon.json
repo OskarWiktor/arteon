@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Gjenerues favicon falas – ICO dhe PNG nga një imazh",
     "description": "Gjeneroni favicon.ico dhe ikona PNG nga një imazh i vetëm, në përputhje me kërkesat e shfletuesit dhe Lighthouse. Pa regjistrim, funksionon në shfletues.",
-    "ogImage": "/assets/tools/narzedzia-generator-favicon.webp",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
     "path": "/sq/mjetet/gjenerues-favicon-falas"
   },
   "hero": {
     "title": "Gjeneroni favicon.ico dhe ikona PNG nga një imazh",
     "description": "Ngarkoni një imazh dhe mjeti gjeneron favicon.ico dhe një grup të plotë ikonash PNG të nevojshme për shfletuesit, pajisjet mobile dhe Lighthouse.",
-    "backgroundImage": "/assets/tools/narzedzia-generator-favicon.webp"
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
   "breadcrumbs": {
     "second": { "href": "/sq/mjetet", "label": "Mjetet" },

@@ -3,7 +3,7 @@
   "locale": "sq",
   "metadata": {
     "title": "Kontrollues kontrasti ngjyrash falas – Përputhje WCAG 2.1",
-    "description": "Kontrolloni nëse ngjyrat e tekstit dhe sfondit janë të lexueshme sipas WCAG 2.1. Shkruani kodin HEX, RGB ose HSL, shikoni raportin e kontrastit dhe përdorni korrigjimin automatik. Pa regjistrim.",
+    "description": "Kontrolloni nëse ngjyrat e tekstit dhe sfondit janë të lexueshme sipas WCAG 2.1. Shkruani kodin HEX, RGB ose HSL,",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/sq/mjetet/kontrollues-kontrasti-ngjyrave"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/sq/mjetet", "label": "Mjetet" },
-    "third": { "href": "/sq/mjetet/kontrollues-kontrasti-ngjyrave", "label": "Kontrollues kontrasti ngjyrave" }
+    "second": {
+      "href": "/sq/mjetet",
+      "label": "Mjetet"
+    },
+    "third": {
+      "href": "/sq/mjetet/kontrollues-kontrasti-ngjyrave",
+      "label": "Kontrollues kontrasti ngjyrave"
+    }
   },
   "schemas": {
     "software": {
@@ -41,29 +47,55 @@
       "name": "Si të kontrolloni kontrastin dhe lexueshmërinë e ngjyrave",
       "description": "Si të kontrolloni lexueshmërinë e ngjyrave të tekstit dhe sfondit sipas standardit WCAG.",
       "steps": [
-        { "name": "Zgjidhni ngjyrën e tekstit", "text": "Shkruani kodin e ngjyrës (p.sh. #333333) në format HEX, RGB ose HSL – ose zgjidhni ngjyrën nga zgjedhësi i ngjyrave." },
-        { "name": "Zgjidhni ngjyrën e sfondit", "text": "Shkruani ngjyrën e sfondit ku do të shfaqet teksti." },
-        { "name": "Lexoni rezultatet", "text": "Mjeti tregon raportin e kontrastit dhe nëse ngjyrat plotësojnë kërkesat AA/AAA." },
-        { "name": "Rregulloni ngjyrat", "text": "Nëse kontrasti është shumë i ulët, funksioni Match sugjeron automatikisht një variant të ngjyrës së tekstit që plotëson pragun e zgjedhur WCAG." }
+        {
+          "name": "Zgjidhni ngjyrën e tekstit",
+          "text": "Shkruani kodin e ngjyrës (p.sh. #333333) në format HEX, RGB ose HSL – ose zgjidhni ngjyrën nga zgjedhësi i ngjyrave."
+        },
+        {
+          "name": "Zgjidhni ngjyrën e sfondit",
+          "text": "Shkruani ngjyrën e sfondit ku do të shfaqet teksti."
+        },
+        {
+          "name": "Lexoni rezultatet",
+          "text": "Mjeti tregon raportin e kontrastit dhe nëse ngjyrat plotësojnë kërkesat AA/AAA."
+        },
+        {
+          "name": "Rregulloni ngjyrat",
+          "text": "Nëse kontrasti është shumë i ulët, funksioni Match sugjeron automatikisht një variant të ngjyrës së tekstit që plotëson pragun e zgjedhur WCAG."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Pse është e rëndësishme lexueshmëria e ngjyrave?",
       "html": "<p class=\"text-mid\">Lexueshmëria është ndryshimi i ndriçimit midis ngjyrës së tekstit dhe ngjyrës së sfondit. Sa më i madh ndryshimi, aq më lehtë lexohet teksti. Kontrasti shumë i ulët e bën përmbajtjen të vështirë për t'u lexuar – veçanërisht për personat me paaftësi shikimi, të moshuarit ose në kushte të vështira drite.</p><p class=\"text-mid mt-3\">Sipas <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Organizatës Botërore të Shëndetësisë (OBSH)</a> rreth 2.2 miliardë njerëz në botë kanë ndonjë formë të paaftësisë së shikimit.</p><p class=\"text-mid mt-3\">Mjeti llogarit raportin e kontrastit duke përdorur formulën e përcaktuar në <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1</a> – udhëzime ndërkombëtare për aksesibilitetin digjital.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Si të përdorni kontrolluesin e kontrastit të ngjyrave",
       "description": "Kontrolli i lexueshmërisë zgjat vetëm pak sekonda:",
       "grid": "four",
       "items": [
-        { "icon": "RiPaletteLine", "title": "1. Shkruani ngjyrën e tekstit", "description": "Shkruani kodin e ngjyrës në format HEX, RGB ose HSL – ose zgjidhni ngjyrën nga zgjedhësi." },
-        { "icon": "RiPaintBrushLine", "title": "2. Shkruani ngjyrën e sfondit", "description": "Shkruani ngjyrën e sfondit ku do të shfaqet teksti." },
+        {
+          "icon": "RiPaletteLine",
+          "title": "1. Shkruani ngjyrën e tekstit",
+          "description": "Shkruani kodin e ngjyrës në format HEX, RGB ose HSL – ose zgjidhni ngjyrën nga zgjedhësi."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "2. Shkruani ngjyrën e sfondit",
+          "description": "Shkruani ngjyrën e sfondit ku do të shfaqet teksti."
+        },
         {
           "icon": "RiCheckboxCircleLine",
           "title": "3. Lexoni rezultatet",
@@ -76,32 +108,90 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Si të interpretoni rezultatet e testit të lexueshmërisë",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Raporti i kontrastit</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Tekst normal</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div></div></div>",
       "html": "<p class=\"text-mid mb-4\">Pasi të shkruani ngjyrat, mjeti tregon rezultate në tre seksione:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tekst normal</strong> – kërkon kontrast 4.5:1 (AA) ose 7:1 (AAA). Vlen për tekst nën 18pt (24px) ose nën 14pt bold.</li><li><strong>Tekst i madh / bold</strong> – kërkon kontrast 3:1 (AA) ose 4.5:1 (AAA). Vlen për tituj, butona dhe tekst të theksuar.</li><li><strong>Ikona</strong> – kërkon kontrast 3:1 (AA). Vlen për ikona dhe elemente grafike UI që mbajnë informacion.</li></ul><p class=\"text-mid mt-3\"><strong>Treguesi i gjelbër</strong> do të thotë se kërkesa është plotësuar. <strong>Treguesi i kuq</strong> do të thotë se kontrasti është shumë i ulët dhe duhet korrigjuar.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionFeatureComparison",
       "title": "Çfarë do të thonë nivelet AA dhe AAA në standardin WCAG?",
       "plans": [
-        { "id": "aa", "name": "Niveli AA (minimum)", "highlighted": true },
-        { "id": "aaa", "name": "Niveli AAA (i zgjeruar)" }
+        {
+          "id": "aa",
+          "name": "Niveli AA (minimum)",
+          "highlighted": true
+        },
+        {
+          "id": "aaa",
+          "name": "Niveli AAA (i zgjeruar)"
+        }
       ],
       "features": [
-        { "name": "Tekst normal – min. 4.5:1", "values": { "aa": true, "aaa": true } },
-        { "name": "Tekst normal – min. 7:1", "values": { "aa": false, "aaa": true } },
-        { "name": "Tekst i madh / bold – min. 3:1", "values": { "aa": true, "aaa": true } },
-        { "name": "Tekst i madh / bold – min. 4.5:1", "values": { "aa": false, "aaa": true } },
-        { "name": "Ikona dhe elemente UI – min. 3:1", "values": { "aa": true, "aaa": true } },
-        { "name": "Kërkesë ligjore (direktiva BE)", "values": { "aa": true, "aaa": false } },
-        { "name": "Rekomandohet për përmbajtjen kryesore", "values": { "aa": true, "aaa": true } }
+        {
+          "name": "Tekst normal – min. 4.5:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Tekst normal – min. 7:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Tekst i madh / bold – min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Tekst i madh / bold – min. 4.5:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Ikona dhe elemente UI – min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Kërkesë ligjore (direktiva BE)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Rekomandohet për përmbajtjen kryesore",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Pyetjet më të shpeshta për kontrolluesin e kontrastit të ngjyrave",
@@ -125,8 +215,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Zbuloni mjete të tjera falas" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Zbuloni mjete të tjera falas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

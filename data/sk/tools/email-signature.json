@@ -1,0 +1,221 @@
+{
+  "toolKey": "emailSignature",
+  "locale": "sk",
+  "metadata": {
+    "title": "Bezplatný generátor e-mailového podpisu – HTML pre Gmail a Outlook",
+    "description": "Vytvorte profesionálny HTML e-mailový podpis bez softvéru. Pridajte kontaktné údaje, logo, odkazy na sociálne médiá a skopírujte do Gmailu alebo Outlooku.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
+    "path": "/sk/nastroje/bezplatny-generator-emailoveho-podpisu"
+  },
+  "hero": {
+    "title": "Vytvorte profesionálny HTML e-mailový podpis",
+    "description": "Vytvorte profesionálny e-mailový podpis za niekoľko minút. Zadajte svoje údaje, vyberte farby a skopírujte hotový HTML kód do Gmailu, Outlooku alebo iného e-mailového klienta.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sk/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/sk/nastroje/bezplatny-generator-emailoveho-podpisu",
+      "label": "Generátor e-mailového podpisu"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Bezplatný generátor e-mailového podpisu",
+      "alternateName": ["HTML generátor e-mailového podpisu", "Generátor pätičky e-mailu"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "EmailSignatureGenerator",
+      "description": "Bezplatný generátor HTML e-mailového podpisu. Pridajte kontaktné údaje, CTA tlačidlo a profily sociálnych médií, potom skopírujte hotový kód do Gmailu, Outlooku a iných e-mailových klientov.",
+      "featureList": [
+        "Kontaktné údaje (meno, pozícia, firma)",
+        "Telefón, e-mail a webová adresa",
+        "Logo alebo profilová fotka s výberom tvaru a veľkosti",
+        "Ikony sociálnych médií (12 platforiem)",
+        "Prispôsobiteľné farby (text, akcent, pozadie)",
+        "CTA tlačidlo s vlastným textom a odkazom",
+        "Náhľad podpisu v reálnom čase",
+        "Kopírovanie HTML kódu do schránky",
+        "Stiahnutie podpisu ako HTML súbor",
+        "Export a import nastavení ako JSON súbor",
+        "Kompatibilita s Gmailom, Outlookom a Apple Mailom",
+        "Bezplatný nástroj, bez prihlásenia"
+      ]
+    },
+    "howTo": {
+      "name": "Ako používať generátor e-mailového podpisu",
+      "description": "Ako vytvoriť profesionálny HTML e-mailový podpis pomocou bezplatného nástroja Arteon.",
+      "totalTime": "PT5M",
+      "steps": [
+        {
+          "name": "Vyberte rozloženie podpisu",
+          "text": "Vyberte jedno z ôsmich dostupných rozložení."
+        },
+        {
+          "name": "Vyplňte kontaktné údaje",
+          "text": "Na karte Details zadajte meno, pozíciu, firmu, e-mail, telefón a webovú adresu."
+        },
+        {
+          "name": "Pridajte CTA tlačidlo",
+          "text": "Na karte Buttons pridajte text a URL hlavného tlačidla."
+        },
+        {
+          "name": "Pridajte odkazy na sociálne médiá",
+          "text": "Na karte Social Media zadajte URL adresy svojich profilov."
+        },
+        {
+          "name": "Prispôsobte vzhľad",
+          "text": "Na karte Appearance vyberte farebnú tému, typ písma a veľkosť textu."
+        },
+        {
+          "name": "Skontrolujte náhľad a skopírujte podpis",
+          "text": "Tlačidlo Copy signature skopíruje hotový kód do schránky."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Prečo potrebujete profesionálny e-mailový podpis?",
+      "html": "<p class=\"text-mid\">E-mailový podpis (nazývaný aj pätička e-mailu) je blok informácií na konci každej odoslanej správy. Obsahuje kontaktné údaje, pozíciu, názov firmy a často odkaz na webovú stránku alebo rezervačný kalendár.</p><p class=\"text-mid mt-3\">Príjemca nemusí hľadať telefónne číslo v predchádzajúcich správach – všetky informácie sú ľahko dostupné. Profesionálny e-mailový podpis tiež ukazuje, že dbáte na detaily a udržiavate jednotný firemný image v obchodnej komunikácii.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ako používať generátor e-mailového podpisu",
+      "description": "Vytvorenie profesionálneho e-mailového podpisu trvá len niekoľko minút:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Zadajte údaje",
+          "description": "Vyplňte meno, pozíciu, firmu a kontaktné údaje."
+        },
+        {
+          "title": "2. Prispôsobte vzhľad",
+          "description": "Vyberte rozloženie, farby, pridajte logo a odkazy na sociálne médiá."
+        },
+        {
+          "title": "3. Skopírujte kód",
+          "description": "Tlačidlo Copy signature skopíruje hotový kód do schránky. Vložte ho do Gmailu, Outlooku alebo iného e-mailového klienta."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Rozloženia podpisu – ktoré si vyberiete?",
+      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Rozloženie podpisu</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div></div>",
+      "html": "<p class=\"text-mid\">Generátor ponúka osem prednastavených rozložení. Každé rozloženie prezentuje rovnaké informácie iným spôsobom.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> – klasické vertikálne rozloženie, vhodné pre väčšinu situácií.</li><li><strong>Top bar</strong> – horizontálna čiara oddeľuje podpis od obsahu.</li><li><strong>Labels left</strong> – dva stĺpce: popisky a hodnoty.</li><li><strong>Centered</strong> – formálny vzhľad, obsah vycentrovaný.</li><li><strong>Compact</strong> – všetko na jednom riadku, minimálna výška.</li><li><strong>Two columns</strong> – údaje vľavo, kontaktné informácie vpravo.</li><li><strong>Minimalist</strong> – iba základné informácie.</li><li><strong>Bottom bar</strong> – farebný riadok s kontaktnými údajmi v spodnej časti podpisu.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ako skopírovať podpis do Gmailu alebo Outlooku",
+      "description": "Po dokončení podpisu jeho pridanie do e-mailového klienta vyžaduje len niekoľko krokov:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiClipboardLine",
+          "title": "1. Skopírujte kód",
+          "description": "Tlačidlo Copy signature skopíruje podpis do schránky ako formátovaný HTML, pripravený na vloženie."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "2. Otvorte nastavenia podpisu",
+          "description": "V Gmaile: Settings > See all settings > Signature. V Outlooku: File > Options > Mail > Signatures."
+        },
+        {
+          "icon": "RiSaveLine",
+          "title": "3. Vložte a uložte",
+          "description": "V poli podpisu použite Ctrl+V (Windows) alebo Cmd+V (Mac). Podpis sa zobrazí so všetkými farbami a formátovaním. Uložte zmeny."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Pre koho je generátor e-mailového podpisu určený?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBriefcaseLine",
+          "title": "Podnikatelia a freelanceri",
+          "description": "Profesionálny podpis v každej správe bez potreby grafického dizajnéra."
+        },
+        {
+          "icon": "RiTeamLine",
+          "title": "Firemné tímy",
+          "description": "Každý zamestnanec si vytvorí podpis v rovnakom štýle. Jednotná identita v celej firme."
+        },
+        {
+          "icon": "RiHandCoinLine",
+          "title": "Obchodníci",
+          "description": "CTA tlačidlo s odkazom na kalendár alebo ponuku zvyšuje pravdepodobnosť dohodnutých stretnutí."
+        },
+        {
+          "icon": "RiScales3Line",
+          "title": "Právnici, účtovníci, lekári",
+          "description": "Možnosť pridať právne doložky, licenčné informácie alebo iné odborové údaje."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky o generátore e-mailového podpisu",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Funguje podpis v Gmaile, Outlooku a Apple Maile?",
+          "answer": "Áno. Podpis vytvorený nástrojom používa HTML tabuľky, ktoré sa správne zobrazujú vo všetkých populárnych e-mailových klientoch: Gmail, Outlook (desktopový aj webový), Apple Mail, Thunderbird."
+        },
+        {
+          "question": "Môžem pridať firemné logo?",
+          "answer": "Áno. Na karte Details zadajte URL obrázka (logo alebo profilovú fotku). Obrázok by mal byť štvorcový (minimálne 120x120 px) a verejne dostupný na internete."
+        },
+        {
+          "question": "Ako sa podpis skopíruje do e-mailového klienta?",
+          "answer": "Tlačidlo Copy signature pod náhľadom skopíruje podpis do schránky ako formátovaný HTML. V nastaveniach podpisu Gmailu alebo Outlooku použite Ctrl+V (Windows) alebo Cmd+V (Mac)."
+        },
+        {
+          "question": "Môžem generátor použiť na vytvorenie podpisov pre celý tím?",
+          "answer": "Áno. Generátor nevyžaduje prihlásenie ani registráciu. Každý člen tímu môže otvoriť nástroj, vyplniť svoje údaje a skopírovať hotový podpis. Nastavenia je možné tiež exportovať ako JSON súbor a zdieľať s kolegami."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Pozrite si ďalšie nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}
