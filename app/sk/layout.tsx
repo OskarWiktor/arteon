@@ -1,17 +1,5 @@
-import Footer from '@/components/shared/Footer';
-import Navigation from '@/components/shared/Navigation';
-import { LocaleProvider } from '@/lib/LocaleContext';
+import LocaleLayout from '@/components/shared/LocaleLayout';
 
-export default function Layout({ children }: { children: React.ReactNode }) {
-  return (
-    <LocaleProvider value="sk">
-      <Navigation />
-
-      <main id="main-content" tabIndex={-1}>
-        {children}
-      </main>
-
-      <Footer />
-    </LocaleProvider>
-  );
+export default function SkLayout({ children }: { children: React.ReactNode }) {
+  return <LocaleLayout locale="sk">{children}</LocaleLayout>;
 }

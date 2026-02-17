@@ -1,17 +1,5 @@
-import Footer from '@/components/shared/Footer';
-import Navigation from '@/components/shared/Navigation';
-import { LocaleProvider } from '@/lib/LocaleContext';
+import LocaleLayout from '@/components/shared/LocaleLayout';
 
 export default function PlLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <LocaleProvider value="pl">
-      <Navigation />
-
-      <main id="main-content" tabIndex={-1}>
-        {children}
-      </main>
-
-      <Footer />
-    </LocaleProvider>
-  );
+  return <LocaleLayout locale="pl">{children}</LocaleLayout>;
 }

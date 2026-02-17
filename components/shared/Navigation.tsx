@@ -5,16 +5,15 @@ import dynamic from 'next/dynamic';
 import { NavMenuLine as RiMenuLine, NavCloseLine as RiCloseLine, NavSearchLine as RiSearchLine, NavMailSettingsLine as RiMailSettingsLine } from '@/components/ui/icons/NavIcons';
 import Image from 'next/image';
 
-import MobileNavigation from './navigation/MobileNavigation';
-import DesktopNavigation from './navigation/DesktopNavigation';
+const MobileNavigation = dynamic(() => import('./navigation/MobileNavigation'), { ssr: false });
+const DesktopNavigation = dynamic(() => import('./navigation/DesktopNavigation'), { ssr: false });
 import Wrapper from '@/components/ui/Wrapper';
 import IconButton from '@/components/ui/buttons/IconButton';
 import Link from 'next/link';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import SectionInfoBanner from '../ui/sections/SectionInfoBanner';
 import LanguageSwitcher from '@/components/shared/LanguageSwitcher';
-import { useLocale } from '@/lib/LocaleContext';
-import { NAVIGATION_UI, LOCALE_CONFIG, INFO_BANNER_UI } from '@/lib/i18n/locales';
+import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import { getToolHref } from '@/lib/i18n/tool-registry';
 
 const SearchDialog = dynamic(() => import('@/components/ui/SearchDialog'), { ssr: false });
@@ -22,8 +21,9 @@ const SearchDialog = dynamic(() => import('@/components/ui/SearchDialog'), { ssr
 export default function Navigation() {
   const locale = useLocale();
   const isPl = locale === 'pl';
-  const t = NAVIGATION_UI[locale];
-  const localeConfig = LOCALE_CONFIG[locale];
+  const dict = useDictionary();
+  const t = dict.nav;
+  const localeConfig = useLocaleConfig();
   const [isOpen, setIsOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
@@ -49,8 +49,8 @@ export default function Navigation() {
         items={[
           {
             icon: <RiMailSettingsLine className="h-4 w-4" aria-hidden="true" />,
-            text: INFO_BANNER_UI[locale].text,
-            linkText: INFO_BANNER_UI[locale].linkText,
+            text: dict.infoBanner.text,
+            linkText: dict.infoBanner.linkText,
             linkHref: locale === 'pl' ? '/narzedzia/darmowy-generator-stopki-mailowej' : getToolHref('emailSignature', locale),
           },
         ]}

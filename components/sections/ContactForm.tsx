@@ -3,7 +3,7 @@
 import { useRef, useState } from 'react';
 import Button from '../ui/buttons/Button';
 import ToolAlert from '../ui/tools/ToolAlert';
-import { CONTACT_FORM_UI } from '@/lib/i18n/locales';
+import { useDictionary } from '@/lib/LocaleContext';
 import type { Locale } from '@/types/locale';
 
 type ContactFormProps = {
@@ -16,8 +16,8 @@ type ContactFormProps = {
   locale?: Locale;
 };
 
-export default function ContactForm({ title, description, defaultSubject, action = 'https://formspree.io/f/xldnokbw', messagePlaceholder, noSection, locale = 'pl' }: ContactFormProps) {
-  const t = CONTACT_FORM_UI[locale];
+export default function ContactForm({ title, description, defaultSubject, action = 'https://formspree.io/f/xldnokbw', messagePlaceholder, noSection, locale: _locale = 'pl' }: ContactFormProps) {
+  const t = useDictionary().contactForm;
   const [formStatus, setFormStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const formRef = useRef<HTMLFormElement>(null);
 

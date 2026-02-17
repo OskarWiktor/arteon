@@ -6,9 +6,9 @@ import { usePathname } from 'next/navigation';
 import { createPortal } from 'react-dom';
 import { NavTranslate2 as RiTranslate2, NavCloseLine as RiCloseLine, NavArrowDownSLine as RiArrowDownSLine } from '@/components/ui/icons/NavIcons';
 import Wrapper from '@/components/ui/Wrapper';
-import { useLocale, type Locale } from '@/lib/LocaleContext';
+import { useLocale, useDictionary, useLocaleConfig, type Locale } from '@/lib/LocaleContext';
 import { getAlternateToolHref } from '@/lib/i18n/tool-registry';
-import { SUPPORTED_LOCALES, LOCALE_CONFIG, LANGUAGE_SWITCHER_UI } from '@/lib/i18n/locales';
+import { SUPPORTED_LOCALES, LOCALE_CONFIG } from '@/lib/i18n/locale-config';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useScrollLock } from '@/hooks/useScrollLock';
@@ -44,14 +44,13 @@ function getAlternateLinks(pathname: string, currentLocale: Locale): AlternateLi
     if (!href) continue;
 
     const config = LOCALE_CONFIG[targetLocale];
-    const switcherUi = LANGUAGE_SWITCHER_UI[targetLocale];
     links.push({
       locale: targetLocale,
       href,
       label: config.label,
       hreflang: config.hreflang,
       name: config.name,
-      title: switcherUi?.switchTitle ?? `Switch to ${config.name}`,
+      title: `Switch to ${config.name}`,
     });
   }
 
@@ -69,7 +68,8 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
   const panelRef = useRef<HTMLDivElement>(null);
 
   const links = getAlternateLinks(pathname, locale);
-  const t = LANGUAGE_SWITCHER_UI[locale];
+  const t = useDictionary().languageSwitcher;
+  const currentConfig = useLocaleConfig();
 
   useEffect(() => setMounted(true), []);
 
@@ -98,8 +98,6 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
   useScrollLock(variant === 'mobile' && isOpen);
 
   if (links.length === 0) return null;
-
-  const currentConfig = LOCALE_CONFIG[locale];
   const popular = links.filter((l) => POPULAR_LOCALES.includes(l.locale));
   const other = links.filter((l) => !POPULAR_LOCALES.includes(l.locale));
 

@@ -7,9 +7,8 @@ import Image from 'next/image';
 // NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile media społecznościowe będą gotowe
 // import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
-import { useLocale } from '@/lib/LocaleContext';
+import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import { getToolsList } from '@/lib/i18n/tool-registry';
-import { getLegalLinks, FOOTER_UI, LOCALE_CONFIG } from '@/lib/i18n/locales';
 
 const ORG = {
   name: 'Arteon',
@@ -107,15 +106,15 @@ const toolsLinks = [
 export default function Footer() {
   const locale = useLocale();
   const isPl = locale === 'pl';
-  const ft = FOOTER_UI[locale];
-  const localeConfig = LOCALE_CONFIG[locale];
+  const ft = useDictionary().footer;
+  const localeConfig = useLocaleConfig();
   const midGfx = Math.ceil(offerLinksThree.length / 2);
   const gfxLeft = offerLinksThree.slice(0, midGfx);
   const gfxRight = offerLinksThree.slice(midGfx);
 
   // For PL: use hardcoded toolsLinks; for other locales: generate from registry
   const localeToolsLinks = isPl ? toolsLinks : getToolsList(locale).map((tool) => ({ href: tool.href, label: tool.title }));
-  const localeLegalLinks = getLegalLinks(locale);
+  const localeLegalLinks = useDictionary().legal;
 
   const midTools = Math.ceil(localeToolsLinks.length / 2);
   const toolsLeft = localeToolsLinks.slice(0, midTools);

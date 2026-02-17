@@ -7,9 +7,8 @@ import { createPortal } from 'react-dom';
 import Wrapper from '@/components/ui/Wrapper';
 import AppLink from '@/components/ui/Link';
 import { ABOUT_NAV_ITEMS_PL, DESKTOP_NAV_ITEMS_PL, OFFER_SECTIONS_PL, type OfferSectionKey } from '@/components/shared/navigation-data/pl';
-import { useLocale } from '@/lib/LocaleContext';
+import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import { getToolsSections, type ToolsSectionKey } from '@/lib/i18n/tool-registry';
-import { NAVIGATION_UI, LOCALE_CONFIG } from '@/lib/i18n/locales';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useMenuKeyboardNavigation } from '@/hooks/useMenuKeyboardNavigation';
@@ -25,8 +24,8 @@ const plUi = {
 export default function DesktopNavigation() {
   const locale = useLocale();
   const isPl = locale === 'pl';
-  const t = NAVIGATION_UI[locale];
-  const localeConfig = LOCALE_CONFIG[locale];
+  const t = useDictionary().nav;
+  const localeConfig = useLocaleConfig();
   const toolsSections = getToolsSections(locale);
   const pathname = usePathname();
   const [isOfferOpen, setIsOfferOpen] = useState(false);

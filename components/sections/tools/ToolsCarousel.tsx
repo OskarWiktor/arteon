@@ -2,9 +2,8 @@
 
 import { useMemo, useRef } from 'react';
 
-import { useLocale } from '@/lib/LocaleContext';
+import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import { getToolsSections } from '@/lib/i18n/tool-registry';
-import { TOOLS_CAROUSEL_UI, LOCALE_CONFIG } from '@/lib/i18n/locales';
 import { CarouselDots } from '@/components/ui/carousel/CarouselDots';
 import { CarouselNavButtons } from '@/components/ui/carousel/CarouselNavButtons';
 import { CarouselCard } from '@/components/ui/carousel/CarouselCard';
@@ -21,8 +20,8 @@ type Props = {
 
 export default function ToolsCarousel({ max = 10, title, subtitle }: Props) {
   const locale = useLocale();
-  const t = TOOLS_CAROUSEL_UI[locale];
-  const toolsHref = LOCALE_CONFIG[locale].toolsIndexHref;
+  const t = useDictionary().toolsCarousel;
+  const toolsHref = useLocaleConfig().toolsIndexHref;
   const displayTitle = title ?? t.defaultTitle;
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLElement>(null);

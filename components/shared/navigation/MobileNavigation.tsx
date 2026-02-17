@@ -9,9 +9,8 @@ import IconText from '../../ui/IconText';
 // NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile media społecznościowe będą gotowe
 // import SocialIconLink from '../../ui/SocialIconLink';
 import { ABOUT_NAV_ITEMS_PL, MOBILE_NAV_ITEMS_PL, OFFER_SECTIONS_PL } from '@/components/shared/navigation-data/pl';
-import { useLocale } from '@/lib/LocaleContext';
+import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import { getToolsSections } from '@/lib/i18n/tool-registry';
-import { getLegalLinks, NAVIGATION_UI, LOCALE_CONFIG, MOBILE_NAV_UI } from '@/lib/i18n/locales';
 import LanguageSwitcher from '@/components/shared/LanguageSwitcher';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
@@ -48,10 +47,12 @@ function Portal({ children }: { children: React.ReactNode }) {
 export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (val: boolean) => void }) {
   const locale = useLocale();
   const isPl = locale === 'pl';
-  const navUi = NAVIGATION_UI[locale];
-  const localeConfig = LOCALE_CONFIG[locale];
+  const dict = useDictionary();
+  const navUi = dict.nav;
+  const mobileNavUi = dict.mobileNav;
+  const localeConfig = useLocaleConfig();
   const toolsSections = getToolsSections(locale);
-  const legalLinks = getLegalLinks(locale);
+  const legalLinks = dict.legal;
   const pathname = usePathname();
   const panelRef = useRef<HTMLDivElement>(null);
   const NAV = isPl ? MOBILE_NAV_ITEMS_PL : [];
@@ -240,14 +241,14 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
       >
         <div className="flex items-center justify-end px-4 pt-3">
           <button onClick={() => setIsOpen(false)} className="ring-primary rounded px-3 pt-1 ring-offset-2 outline-none focus-visible:ring-2">
-            <span className="text-light text-sm font-medium">{MOBILE_NAV_UI[locale]?.close ?? 'Close'}</span>
+            <span className="text-light text-sm font-medium">{mobileNavUi.close}</span>
           </button>
         </div>
 
         <div className="flex h-[calc(100dvh-49px)] flex-col overflow-y-auto px-4 py-3">
           {isPl && (
             <Eyebrow variant="dynamic" className="px-3 pb-1 text-xs tracking-wider">
-              {MOBILE_NAV_UI[locale]?.services ?? 'Services'}
+              {mobileNavUi.services}
             </Eyebrow>
           )}
 
@@ -466,7 +467,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     pathname.startsWith(contactHref) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
                   }`}
                 >
-                  {contactNav?.label ?? MOBILE_NAV_UI[locale]?.contact ?? 'Contact'}
+                  {contactNav?.label ?? mobileNavUi.contact}
                 </Link>
               ) : null}
             </div>
@@ -590,7 +591,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   onClick={() => setIsOpen(false)}
                   className="bg-primary focus-visible:ring-primary rounded-2xl px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-offset-2"
                 >
-                  {MOBILE_NAV_UI[locale]?.contact ?? 'Contact'}
+                  {mobileNavUi.contact}
                 </Link>
               )}
             </div>
