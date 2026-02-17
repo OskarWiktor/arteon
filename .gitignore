@@ -44,5 +44,3 @@ next-env.d.ts
 /data/pl/search-blog.json
 /data/pl/search-projects.json
 
-# generated sitemap cache (postbuild, served by route handlers)
-/.sitemap-cache

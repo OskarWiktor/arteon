@@ -71,6 +71,20 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   trailingSlash: false,
   poweredByHeader: false,
+  experimental: {
+    optimizePackageImports: [
+      'react-icons/ri',
+      'react-icons/si',
+      'react-icons/fa',
+      'react-icons/fa6',
+      'react-icons/md',
+      'react-icons/io5',
+      'react-icons/bs',
+      'react-icons/hi2',
+      'react-icons/lu',
+      'framer-motion',
+    ],
+  },
   images: {
     formats: ['image/avif', 'image/webp'],
   },
@@ -83,6 +97,14 @@ const nextConfig: NextConfig = {
       {
         source: '/fonts/:path*',
         headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+      },
+      {
+        source: '/sitemap.xml',
+        headers: [{ key: 'Content-Type', value: 'application/xml; charset=utf-8' }],
+      },
+      {
+        source: '/sitemap-0.xml',
+        headers: [{ key: 'Content-Type', value: 'application/xml; charset=utf-8' }],
       },
     ];
 
@@ -101,10 +123,6 @@ const nextConfig: NextConfig = {
           },
           ...staticCacheHeaders,
         ];
-  },
-  outputFileTracingIncludes: {
-    '/sitemap.xml': ['./.sitemap-cache/sitemap.xml'],
-    '/sitemap-0.xml': ['./.sitemap-cache/sitemap-0.xml'],
   },
   webpack(config, { dev }) {
     if (!dev && config.cache) {
