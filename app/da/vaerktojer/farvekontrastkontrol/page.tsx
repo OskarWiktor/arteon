@@ -1,4 +1,3 @@
-import WcagContrastChecker from '@/components/sections/tools/WcagContrastChecker';
 import ToolPageRenderer, { generateToolMetadata } from '@/components/sections/tools/ToolPageRenderer';
 import data from '@/data/da/tools/contrast-checker.json';
 import type { ToolPageData } from '@/types/tool-page';
@@ -9,5 +8,5 @@ const pageData = data as unknown as ToolPageData;
 export const metadata: Metadata = generateToolMetadata(pageData);
 
 export default function Page() {
-  return <ToolPageRenderer data={pageData} tool={<WcagContrastChecker />} />;
+  return <ToolPageRenderer data={pageData} />;
 }

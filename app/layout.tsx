@@ -7,13 +7,13 @@ import { Suspense } from 'react';
 
 import { headers } from 'next/headers';
 
-import CookieConsent from '@/components/shared/CookieConsent';
+import LazyCookieConsent from '@/components/shared/LazyCookieConsent';
 import SkipToContent from '@/components/shared/SkipToContent';
 import FocusManager from '@/components/systems/FocusManager';
 import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 import { getDictionary } from '@/lib/i18n/get-dictionary';
-import { SUPPORTED_LOCALES } from '@/lib/i18n/locales';
+import { SUPPORTED_LOCALES } from '@/lib/i18n/locale-config';
 import type { Locale } from '@/types/locale';
 
 import './globals.css';
@@ -142,7 +142,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       </head>
 
       <body className="font-sans antialiased">
-        <CookieConsent translations={dict.cookie} />
+        <LazyCookieConsent translations={dict.cookie} />
         <SkipToContent label={dict.skipToContent} />
 
         <Suspense fallback={null}>

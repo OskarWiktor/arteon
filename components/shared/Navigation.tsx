@@ -5,8 +5,13 @@ import dynamic from 'next/dynamic';
 import { NavMenuLine as RiMenuLine, NavCloseLine as RiCloseLine, NavSearchLine as RiSearchLine, NavMailSettingsLine as RiMailSettingsLine } from '@/components/ui/icons/NavIcons';
 import Image from 'next/image';
 
+import { DesktopNavSkeleton } from '@/components/ui/skeletons/NavSkeleton';
+
 const MobileNavigation = dynamic(() => import('./navigation/MobileNavigation'), { ssr: false });
-const DesktopNavigation = dynamic(() => import('./navigation/DesktopNavigation'), { ssr: false });
+const DesktopNavigation = dynamic(() => import('./navigation/DesktopNavigation'), {
+  ssr: false,
+  loading: () => <DesktopNavSkeleton />,
+});
 import Wrapper from '@/components/ui/Wrapper';
 import IconButton from '@/components/ui/buttons/IconButton';
 import Link from 'next/link';

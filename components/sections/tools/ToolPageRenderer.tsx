@@ -8,7 +8,8 @@ import type { ToolItemKey } from '@/types/tools/common';
 import HeroBanner from '@/components/sections/HeroBanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import CTABanner from '@/components/sections/CTABanner';
-import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
+import DynamicToolRenderer from '@/components/sections/tools/DynamicToolRenderer';
+import LazyToolsCarousel from '@/components/sections/tools/LazyToolsCarousel';
 import FaqPanels from '@/components/ui/FaqPanels';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
@@ -121,7 +122,7 @@ function renderBlock(block: ToolContentBlock, idx: number, pageUrl: string): Rea
       );
 
     case 'toolsCarousel':
-      return <ToolsCarousel key={`carousel-${idx}`} title={block.title} />;
+      return <LazyToolsCarousel key={`carousel-${idx}`} title={block.title} />;
 
     default:
       return null;
@@ -130,7 +131,7 @@ function renderBlock(block: ToolContentBlock, idx: number, pageUrl: string): Rea
 
 interface ToolPageRendererProps {
   data: ToolPageData;
-  tool: ReactNode;
+  tool?: ReactNode;
 }
 
 export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) {
@@ -179,7 +180,7 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
 
       <ToolEditorLayout>
         <AdSense variant="tool-banner" className="my-3" />
-        {tool}
+        {tool ?? <DynamicToolRenderer toolKey={data.toolKey} />}
       </ToolEditorLayout>
 
       <Wrapper>
