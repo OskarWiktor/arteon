@@ -1,0 +1,28 @@
+{
+  "slug": "contact",
+  "metadata": {
+    "title": "Contact – Arteon instrumente gratuite | Suport și feedback",
+    "description": "Contactați echipa Arteon. Raportați un bug, sugerați un instrument nou sau puneți o întrebare despre instrumentele noastre gratuite pentru imagini, SEO, culori și coduri QR. Răspundem în maximum o zi lucrătoare."
+  },
+  "hero": {
+    "title": "Contactați echipa Arteon",
+    "description": "Raportați un bug, sugerați un instrument nou sau puneți o întrebare — răspundem în maximum o zi lucrătoare"
+  },
+  "intro": {
+    "title": "Aveți o întrebare sau o sugestie?",
+    "textBefore": "Ne bucurăm să primim feedback-ul dvs. despre instrumentele noastre. Dacă ați găsit un bug, aveți o idee pentru un instrument nou sau aveți nevoie de ajutor — scrieți-ne la",
+    "textAfter": ". Răspundem în maximum o zi lucrătoare."
+  },
+  "formTitle": "Trimiteți-ne un mesaj",
+  "details": {
+    "title": "Date de contact",
+    "emailLabel": "E-mail",
+    "hoursLabel": "Program de lucru",
+    "hoursValue": "Luni – Vineri: 8:00 – 16:00 (CET)"
+  },
+  "cta": {
+    "title": "Înapoi la instrumente",
+    "description": "10 instrumente gratuite pentru lucrul cu imagini, text și culori",
+    "btnOne": "Instrumente"
+  }
+}

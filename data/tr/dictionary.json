@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "mainNavigation": "Ana navigasyon",
+    "logoAlt": "Arteon - şirket logosu",
+    "closeMenu": "Menüyü kapat",
+    "openMenu": "Menüyü aç",
+    "closeToolsList": "Araç listesini kapat",
+    "openToolsList": "Araç listesini aç",
+    "toolsLabel": "Araçlar",
+    "mobileMenu": "Mobil menü",
+    "aboutLabel": "Hakkımızda",
+    "contactLabel": "İletişim"
+  },
+  "footer": {
+    "copyright": "Tüm hakları saklıdır.",
+    "description": "Web geliştiriciler, tasarımcılar ve pazarlamacılar için ücretsiz araçlar.",
+    "companyDataLabel": "Şirket bilgileri",
+    "toolsLabel": "Araçlar",
+    "legalLabel": "Yasal belgeler",
+    "cookieSettingsLabel": "Çerez ayarları"
+  },
+  "desktopOnly": {
+    "title": "Bu araç daha büyük bir ekranda çalışıyor",
+    "description": "Bu aracı rahatça kullanmak için bir dizüstü bilgisayar, masaüstü bilgisayar veya yatay modda tablet üzerinde açın.",
+    "tipTitle": "İpucu",
+    "tipText": "Tablet kullanıyorsanız, yatay moda geçin — pencere genişliği yeterince büyük olduğunda araç otomatik olarak yüklenecektir."
+  },
+  "cookie": {
+    "title": "Çerezler ve gizlilik",
+    "description": "Site işlevselliği, trafik analizi ve reklam gösterimi için çerezler kullanıyoruz. Daha fazla bilgi için",
+    "setPreferences": "Tercihleri ayarla",
+    "privacyPolicy": "Gizlilik politikası",
+    "privacyPolicyHref": "/tr/gizlilik-politikasi",
+    "reject": "Tümünü reddet",
+    "settings": "Ayarlar",
+    "accept": "Tümünü kabul et",
+    "panelTitle": "Gizlilik tercihleri",
+    "panelDescription": "Veri işleme için onay ayarları.",
+    "categoriesLegend": "Kategoriler",
+    "essentialTitle": "Zorunlu",
+    "essentialDescription": "Site bunlar olmadan çalışmaz. Pazarlama verisi toplamaz.",
+    "essentialStatus": "Her zaman aktif",
+    "analyticsTitle": "Analitik (GA4)",
+    "analyticsDescription": "Ziyaret istatistikleri. Onayınızla Google Analytics 4 etkinleştirilir.",
+    "analyticsLabel": "GA4 analitiği etkinleştir",
+    "adsTitle": "Reklamlar (Google AdSense)",
+    "adsDescription": "İlgi alanlarınıza dayalı kişiselleştirilmiş reklamlar.",
+    "adsLabel": "Kişiselleştirilmiş reklamları etkinleştir",
+    "changeDecision": "Kararınızı istediğiniz zaman değiştirebilirsiniz",
+    "save": "Kaydet"
+  },
+  "skipToContent": "İçeriğe atla",
+  "legal": [
+    {
+      "key": "privacy",
+      "href": "/tr/gizlilik-politikasi",
+      "label": "Gizlilik politikası"
+    }
+  ],
+  "breadcrumbs": {
+    "home": "Ana sayfa",
+    "ariaLabel": "navigasyon"
+  },
+  "contactForm": {
+    "nameLabel": "Ad soyad",
+    "namePlaceholder": "Ahmet Yılmaz",
+    "emailLabel": "E-posta",
+    "emailPlaceholder": "ahmet.yilmaz@gmail.com",
+    "subjectLabel": "Konu",
+    "subjectPlaceholder": "örn. Hata raporu | Araç önerisi | Soru",
+    "messageLabel": "Mesaj",
+    "messagePlaceholder": "Sorunuzu veya önerinizi açıklayın...",
+    "send": "Gönder",
+    "error": "Bir hata oluştu. Verilerinizi kontrol edin ve tekrar deneyin.",
+    "success": "Mesaj gönderildi! En kısa sürede yanıt vereceğiz."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Ücretsiz araçlar",
+    "seeAllTools": "Tüm araçları gör",
+    "carouselLabel": "Araç karuseli",
+    "scrollLeft": "Sola kaydır",
+    "scrollRight": "Sağa kaydır",
+    "carouselNavigation": "Karusel navigasyonu",
+    "goToSlide": "Slayta git",
+    "of": "/",
+    "slide": "Slayt",
+    "tool": "Araç",
+    "openTool": "Aracı aç"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Türkçeye geç",
+    "toggleLabel": "Dil değiştir",
+    "chooseLabel": "Dil seçin",
+    "popularLabel": "Popüler",
+    "otherLabel": "Diğer",
+    "closeModalLabel": "Kapat"
+  },
+  "mobileNav": {
+    "close": "Kapat",
+    "services": "Hizmetler",
+    "contact": "İletişim"
+  },
+  "infoBanner": {
+    "text": "E-posta imza oluşturucu güncellendi – yeni özellikleri keşfedin",
+    "linkText": "araçlar"
+  }
+}

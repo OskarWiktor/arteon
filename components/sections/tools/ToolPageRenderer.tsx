@@ -26,6 +26,8 @@ import { getToolAlternates, getToolSoftwareSchema, getToolHowToSchema, getToolWe
 import { getToolHref } from '@/lib/i18n/tool-registry';
 import { getToolIcon } from '@/lib/tools/icon-registry';
 
+const AD_AFTER_BLOCK_INDEX = 2;
+
 export function generateToolMetadata(data: ToolPageData): Metadata {
   const canonicalPath = getToolHref(data.toolKey as ToolItemKey, data.locale as Locale);
   return {
@@ -180,7 +182,22 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
         {tool}
       </ToolEditorLayout>
 
-      <Wrapper>{data.contentBlocks.map((block, idx) => renderBlock(block, idx, pageUrl))}</Wrapper>
+      <Wrapper>
+        {data.contentBlocks.map((block, idx) => {
+          const node = renderBlock(block, idx, pageUrl);
+          if (idx === AD_AFTER_BLOCK_INDEX) {
+            return (
+              <div key={`wrap-${idx}`}>
+                {node}
+                <div className="not-prose my-8">
+                  <AdSense variant="in-article" />
+                </div>
+              </div>
+            );
+          }
+          return node;
+        })}
+      </Wrapper>
 
       {data.cta && (
         <CTABanner

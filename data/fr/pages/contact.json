@@ -1,0 +1,28 @@
+{
+  "slug": "contact",
+  "metadata": {
+    "title": "Contact – Arteon outils en ligne gratuits | Support et suggestions",
+    "description": "Contactez l’équipe Arteon. Signalez un bug, suggérez un nouvel outil ou posez une question sur nos outils gratuits pour les images, le SEO, les couleurs et les codes QR. Réponse sous un jour ouvrable."
+  },
+  "hero": {
+    "title": "Contactez l’équipe Arteon",
+    "description": "Signalez un bug, suggérez un nouvel outil ou posez une question — nous répondons sous un jour ouvrable"
+  },
+  "intro": {
+    "title": "Une question ou une suggestion ?",
+    "textBefore": "Nous sommes ravis de recevoir vos retours sur nos outils. Si vous avez trouvé un bug, avez une idée pour un nouvel outil ou avez besoin d'aide — écrivez-nous à",
+    "textAfter": ". Nous répondons sous un jour ouvrable."
+  },
+  "formTitle": "Envoyez-nous un message",
+  "details": {
+    "title": "Coordonnées",
+    "emailLabel": "E-mail",
+    "hoursLabel": "Horaires",
+    "hoursValue": "Lundi – Vendredi : 8h00 – 16h00 (CET)"
+  },
+  "cta": {
+    "title": "Retour aux outils",
+    "description": "10 outils en ligne gratuits pour travailler avec les images, le texte et les couleurs",
+    "btnOne": "Outils"
+  }
+}

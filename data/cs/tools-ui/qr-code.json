@@ -1,0 +1,47 @@
+{
+  "dataType": "Typ dat",
+  "types": {
+    "url": "URL adresa",
+    "text": "Text",
+    "vcard": "Vizitka (vCard)",
+    "email": "E-mail",
+    "phone": "Telefon"
+  },
+  "urlPlaceholder": "https://www.vase-stranka.cz",
+  "textPlaceholder": "Zadejte libovolný text...",
+  "phonePlaceholder": "+420 123 456 789",
+  "size": "Velikost (px)",
+  "margin": "Okraj (klidná zóna)",
+  "qrColor": "Barva QR kódu",
+  "bgColor": "Barva pozadí",
+  "errorCorrection": "Úroveň korekce chyb",
+  "errorCorrectionLevels": {
+    "L": "L – Nízká (7 %)",
+    "M": "M – Střední (15 %)",
+    "Q": "Q – Vysoká (25 %)",
+    "H": "H – Maximální (30 %)"
+  },
+  "preview": "Náhled QR kódu",
+  "downloadPng": "Stáhnout PNG",
+  "downloadSvg": "Stáhnout SVG",
+  "contrastWarning": "Kontrast mezi barvami je příliš nízký. QR kód může být obtížně čitelný.",
+  "contrastRatio": "Kontrastní poměr",
+  "recommended": "Doporučené minimum: 3:1",
+  "enterData": "Zadejte data pro vygenerování QR kódu.",
+  "vcard": {
+    "firstName": "Jméno",
+    "lastName": "Příjmení",
+    "organization": "Firma (volitelné)",
+    "title": "Pozice (volitelné)",
+    "phone": "Telefon (volitelné)",
+    "email": "E-mail (volitelné)",
+    "website": "Webová stránka (volitelné)",
+    "address": "Adresa (volitelné)"
+  },
+  "email": {
+    "to": "E-mailová adresa",
+    "subject": "Předmět (volitelné)",
+    "body": "Obsah (volitelné)"
+  },
+  "printTip": "Pro tiskové materiály doporučujeme velikost min. 300 px a úroveň korekce H."
+}

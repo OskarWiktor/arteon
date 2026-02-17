@@ -7,7 +7,7 @@ export type { AdVariant, AdSenseProps } from '@/types/ui';
 const AD_CLIENT = 'ca-pub-7845947936813012';
 
 const PRESETS = {
-  'tool-banner': { slot: '7551147298', width: 728, height: 90 },
+  'tool-banner': { slot: '7551147298' },
   'in-article': { slot: '9459125335' },
   autorelaxed: { slot: '4600483034' },
   vertical: { slot: '7442268796' },
@@ -37,10 +37,9 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
   }, []);
 
   if (variant === 'tool-banner') {
-    const { width, height } = PRESETS['tool-banner'];
     return (
       <div className={`flex justify-center ${className}`}>
-        <ins ref={adRef} className="adsbygoogle" style={{ display: 'inline-block', width: `${width}px`, height: `${height}px` }} data-ad-client={AD_CLIENT} data-ad-slot={slot} />
+        <ins ref={adRef} className="adsbygoogle" style={{ display: 'block' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} data-ad-format="auto" data-full-width-responsive="true" />
       </div>
     );
   }

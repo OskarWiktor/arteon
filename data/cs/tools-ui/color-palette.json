@@ -1,0 +1,52 @@
+{
+  "selectBaseColor": "Vyberte základní barvu",
+  "updateColor": "Aktualizovat barvu",
+  "randomColor": "Náhodná barva",
+  "currentBaseColor": "Aktuální základní barva",
+  "baseColorHelper": "Všechny palety níže vycházejí z této barvy.",
+  "colorPreview": "Náhled barvy",
+  "copied": "Zkopírováno",
+  "copy": "Zkopírovat",
+  "generatedPalettes": "Vygenerované barevné palety",
+  "colorReadError": "Nepodařilo se přečíst barvu. Ujistěte se, že používáte formát",
+  "example": "např.",
+  "enterValidColor": "Zadejte platnou barvu HEX pro vygenerování palet. Všechny výpočty probíhají lokálně ve vašem prohlížeči.",
+  "palettes": {
+    "monochromatic": {
+      "label": "Monochromatická paleta",
+      "description": "Všechny barvy mají stejný odstín (H), liší se hlavně v světlosti (L) v barevném prostoru HSL."
+    },
+    "analogous": {
+      "label": "Analogická paleta",
+      "description": "Barvy s blízkým odstínem – od cca -30° do +30° kolem základní barvy na klasickém barevném kole (např. Itten)."
+    },
+    "complementary": {
+      "label": "Komplementární paleta",
+      "description": "Základní barva a její doplněk posunutý o 180° na barevném kole – jeden ze základních barevných kontrastů popsaných Johannesem Ittenem."
+    },
+    "triadic": {
+      "label": "Triadická paleta",
+      "description": "Tři odstíny vzdálené o 120° na barevném kole (vrcholy rovnostranného trojúhelníku) – geometrie často využívaná v brandingu a návrzích inspirovaných Bauhausem."
+    },
+    "splitComplementary": {
+      "label": "Split-komplementární paleta",
+      "description": "Variace komplementární palety – místo jednoho doplněku (180°) se používají dvě barvy posunuté o cca ±30° od doplněku, co snižuje vizuální napětí při zachování silného kontrastu."
+    },
+    "softPastel": {
+      "label": "Pastelová paleta",
+      "description": "Stejný odstín se sníženou saturací a zvýšenou světlostí – posun ke středu a horní části prostoru HSL, který dává měkké, „krémové“ barvy."
+    },
+    "deepDark": {
+      "label": "Tmavá paleta",
+      "description": "Stejný odstín s vysokou saturací (S) a sníženou světlostí (L) – posun dolů na ose světlosti, který dává hluboké barvy typické pro tmavý režim a výrazné akcenty."
+    },
+    "materialTonal": {
+      "label": "Tonální paleta (inspirováno Material Design)",
+      "description": "Několik stupňů světlosti jednoho odstínu – proměnlivé L a umírněné S, blízké tonálním rozsahům v doporučeních Material Design (např. 50–900)."
+    },
+    "appleMinimal": {
+      "label": "Minimalistická paleta (inspirováno Apple)",
+      "description": "Jeden výrazný barevný akcent a řada velmi světlých, jemných neutrálních tónů – rozvržení typické pro rozhraní s velkým množstvím bílého prostoru a jemnými stíny."
+    }
+  }
+}

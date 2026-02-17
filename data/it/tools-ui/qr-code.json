@@ -1,0 +1,47 @@
+{
+  "dataType": "Tipo di dati",
+  "types": {
+    "url": "Indirizzo URL",
+    "text": "Testo",
+    "vcard": "Biglietto da visita (vCard)",
+    "email": "E-mail",
+    "phone": "Telefono"
+  },
+  "urlPlaceholder": "https://www.il-tuo-sito.it",
+  "textPlaceholder": "Inserisci un testo...",
+  "phonePlaceholder": "+39 333 123 4567",
+  "size": "Dimensione (px)",
+  "margin": "Margine (quiet zone)",
+  "qrColor": "Colore codice QR",
+  "bgColor": "Colore sfondo",
+  "errorCorrection": "Livello di correzione errori",
+  "errorCorrectionLevels": {
+    "L": "L  Basso (7 %)",
+    "M": "M  Medio (15 %)",
+    "Q": "Q  Alto (25 %)",
+    "H": "H  Massimo (30 %)"
+  },
+  "preview": "Anteprima codice QR",
+  "downloadPng": "Scarica PNG",
+  "downloadSvg": "Scarica SVG",
+  "contrastWarning": "Il contrasto tra i colori è troppo basso. Il codice QR potrebbe essere difficile da scansionare.",
+  "contrastRatio": "Rapporto di contrasto",
+  "recommended": "Minimo consigliato: 3:1",
+  "enterData": "Inserisci dati per generare un codice QR.",
+  "vcard": {
+    "firstName": "Nome",
+    "lastName": "Cognome",
+    "organization": "Azienda (opzionale)",
+    "title": "Ruolo (opzionale)",
+    "phone": "Telefono (opzionale)",
+    "email": "E-mail (opzionale)",
+    "website": "Sito web (opzionale)",
+    "address": "Indirizzo (opzionale)"
+  },
+  "email": {
+    "to": "Indirizzo e-mail",
+    "subject": "Oggetto (opzionale)",
+    "body": "Messaggio (opzionale)"
+  },
+  "printTip": "Per materiali stampati, consigliamo una dimensione minima di 300 px e un livello di correzione errori H."
+}

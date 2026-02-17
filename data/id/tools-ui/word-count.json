@@ -1,0 +1,23 @@
+{
+  "pasteText": "Tempel atau ketik teks",
+  "textPlaceholder": "Tempel teks yang ingin Anda analisis di sini...",
+  "pageType": "Jenis halaman",
+  "pageTypeHelper": "Pilih jenis halaman yang sedang Anda tulis. Setiap jenis memiliki rekomendasi panjang yang berbeda.",
+  "words": "Kata",
+  "charsWithSpaces": "Karakter (dengan spasi)",
+  "charsWithoutSpaces": "Karakter (tanpa spasi)",
+  "paragraphs": "Paragraf",
+  "readingTime": "Waktu baca",
+  "lengthEvaluation": "Evaluasi panjang",
+  "recommendedRange": "Rentang yang direkomendasikan",
+  "copyReport": "Salin laporan",
+  "copied": "Disalin",
+  "statistics": "Statistik teks",
+  "noText": "Tidak ada teks",
+  "empty": "Ketik teks untuk melihat statistik.",
+  "tooShort": "Terlalu pendek",
+  "tooLong": "Terlalu panjang",
+  "ideal": "Panjang baik",
+  "analysisFor": "Analisis untuk",
+  "wordsUnit": "kata"
+}

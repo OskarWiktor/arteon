@@ -1,0 +1,28 @@
+{
+  "slug": "kontakt",
+  "metadata": {
+    "title": "Kontakt – Arteon gratis verktøy | Støtte og tilbakemelding",
+    "description": "Kontakt Arteon-teamet. Rapporter en feil, foreslå et nytt verktøy eller still et spørsmål om våre gratis verktøy for bilder, SEO, farger og QR-koder. Vi svarer innen én virkedag."
+  },
+  "hero": {
+    "title": "Kontakt Arteon-teamet",
+    "description": "Rapporter en feil, foreslå et nytt verktøy eller still et spørsmål — vi svarer innen én virkedag"
+  },
+  "intro": {
+    "title": "Har du et spørsmål eller et forslag?",
+    "textBefore": "Vi hører gjerne din tilbakemelding om verktøyene våre. Hvis du har funnet en feil, har en idé til et nytt verktøy eller trenger hjelp — skriv til oss på",
+    "textAfter": ". Vi svarer innen én virkedag."
+  },
+  "formTitle": "Send oss en melding",
+  "details": {
+    "title": "Kontaktinformasjon",
+    "emailLabel": "E-post",
+    "hoursLabel": "Åpningstider",
+    "hoursValue": "Mandag – Fredag: 8:00 – 16:00 (CET)"
+  },
+  "cta": {
+    "title": "Tilbake til verktøyene",
+    "description": "10 gratis verktøy for å jobbe med bilder, tekst og farger",
+    "btnOne": "Verktøy"
+  }
+}

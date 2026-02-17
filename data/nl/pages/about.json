@@ -1,0 +1,78 @@
+{
+  "slug": "over-ons",
+  "metadata": {
+    "title": "Over Arteon – 10 gratis online tools voor web, SEO & design",
+    "description": "Arteon is een creatief bureau dat gratis browsertools bouwt: WebP-converter, favicon-generator, kleurcontrast-checker, QR-code generator en meer. Zonder registratie, zonder upload — alles draait lokaal."
+  },
+  "hero": {
+    "title": "Gratis online tools gemaakt door een creatief bureau",
+    "description": "10 browsertools voor afbeeldingen, SEO, kleuren, e-mailhandtekeningen en QR-codes — zonder registratie, zonder bestandsuploads, zonder limieten"
+  },
+  "whoWeAre": {
+    "title": "Wie wij zijn",
+    "p1": "Arteon is een Pools creatief bureau. Naast ons commerciële werk bouwen en onderhouden we een groeiende collectie gratis online tools voor ondernemers, websitebouwers, ontwerpers, marketeers en iedereen die met digitale content werkt.",
+    "p2": "Elke tool die we maken lost een specifiek, alledaags probleem op: afbeeldingen converteren, kleurcontrast controleren, favicons genereren, QR-codes maken en meer. Ons doel is een compleet pakket tools te bouwen waar u alles vindt wat u nodig heeft op één plek — zonder te schakelen tussen tientallen verschillende websites."
+  },
+  "whyFree": {
+    "title": "Waarom wij gratis tools aanbieden",
+    "items": [
+      {
+        "title": "Zonder registratie, zonder limieten",
+        "description": "Elke tool werkt direct in uw browser. Geen account, geen login, geen betaling."
+      },
+      {
+        "title": "Privacy voorop",
+        "description": "Uw bestanden verlaten nooit uw apparaat. Alle verwerking gebeurt lokaal in uw browser — wij sturen uw gegevens niet naar een server."
+      },
+      {
+        "title": "Gemaakt vanuit echte behoeften",
+        "description": "Elke tool is ontstaan uit een echt probleem dat we tegenkwamen bij het werken aan klantprojecten. Als wij het nodig hadden, heeft u het waarschijnlijk ook nodig."
+      },
+      {
+        "title": "Gefinancierd door advertenties, gratis voor u",
+        "description": "We gebruiken Google AdSense-banners om de kosten van ontwikkeling en hosting te dekken. Dankzij advertentie-inkomsten kunnen we alle tools gratis houden en nieuwe blijven maken."
+      }
+    ]
+  },
+  "ourTools": {
+    "title": "Onze tools",
+    "items": [
+      {
+        "title": "Afbeeldingen & favicons",
+        "description": "WebP-converter, online afbeeldingeneditor en favicon-generator. 3 tools voor dagelijks beeldwerk."
+      },
+      {
+        "title": "Meta & SEO",
+        "description": "Meta-titel en beschrijving checker plus een woorden- en tekenteller om de tekstlengte te beoordelen."
+      },
+      {
+        "title": "E-mail & communicatie",
+        "description": "HTML e-mailhandtekening generator met kant-en-klare code voor Gmail en Outlook."
+      },
+      {
+        "title": "Kleuren & toegankelijkheid",
+        "description": "WCAG-contrastchecker, kleurextractor uit afbeeldingen en kleurpalettengenerator. 3 tools voor kleurwerk."
+      },
+      {
+        "title": "Drukwerk & materialen",
+        "description": "QR-code generator voor websites, vCards, menu’s en flyers. Export naar PNG en SVG."
+      }
+    ]
+  },
+  "whatsNext": {
+    "title": "Wat komt er nog",
+    "text": "We werken actief aan het uitbreiden van het toolpakket. Nieuwe tools worden regelmatig toegevoegd op basis van gebruikersfeedback en onze eigen ervaring. Het doel is één platform waar ondernemers, ontwerpers en ontwikkelaars toegang hebben tot elke essentiële tool — alles op één plek, alles gratis."
+  },
+  "privacy": {
+    "title": "Privacy en veiligheid",
+    "textBefore": "Wij respecteren uw privacy. Bestanden die u in onze tools uploadt worden uitsluitend in uw browser verwerkt en worden nooit naar een server gestuurd. Wij gebruiken analyses (Google Analytics 4) en advertenties (Google AdSense) alleen na uw toestemming via de cookiebanner. Alle details vindt u in ons",
+    "linkLabel": "Privacybeleid",
+    "textAfter": "."
+  },
+  "cta": {
+    "title": "Probeer onze tools",
+    "description": "10 gratis online tools — zonder registratie, zonder limieten, zonder bestandsuploads naar servers",
+    "btnOne": "Naar de tools",
+    "btnTwo": "Contact"
+  }
+}

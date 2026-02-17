@@ -1,0 +1,78 @@
+{
+  "slug": "tentang-kami",
+  "metadata": {
+    "title": "Tentang Arteon – 10 Alat Percuma untuk Web, SEO & Reka Bentuk",
+    "description": "Arteon ialah agensi kreatif yang membina alat pelayar percuma: penukar WebP, penjana favicon, penyemak kontras warna, penjana kod QR dan banyak lagi. Tanpa pendaftaran, tanpa muat naik — semua berjalan secara tempatan."
+  },
+  "hero": {
+    "title": "Alat percuma yang dibina oleh agensi kreatif",
+    "description": "10 alat pelayar untuk imej, SEO, warna, tandatangan e-mel dan kod QR — tanpa pendaftaran, tanpa muat naik fail, tanpa had"
+  },
+  "whoWeAre": {
+    "title": "Siapa kami",
+    "p1": "Arteon ialah agensi kreatif dari Poland. Selain kerja komersial, kami membina dan menyelenggara koleksi alat percuma yang semakin berkembang untuk pemilik perniagaan, pembina laman web, pereka, pakar pemasaran dan sesiapa yang bekerja dengan kandungan digital.",
+    "p2": "Setiap alat yang kami bina menyelesaikan masalah harian yang khusus: menukar imej, menyemak kontras warna, menjana favicon, mencipta kod QR dan banyak lagi. Matlamat kami ialah membina set alat yang lengkap di mana anda boleh menemui semua yang diperlukan di satu tempat — tanpa bertukar antara berpuluh-puluh laman web berbeza."
+  },
+  "whyFree": {
+    "title": "Mengapa kami menawarkan alat percuma",
+    "items": [
+      {
+        "title": "Tanpa pendaftaran, tanpa had",
+        "description": "Setiap alat berfungsi serta-merta dalam pelayar anda. Tanpa akaun, tanpa log masuk, tanpa bayaran."
+      },
+      {
+        "title": "Privasi diutamakan",
+        "description": "Fail anda tidak pernah meninggalkan peranti anda. Semua pemprosesan berlaku secara tempatan dalam pelayar — kami tidak menghantar data anda ke mana-mana pelayan."
+      },
+      {
+        "title": "Dibina daripada keperluan sebenar",
+        "description": "Setiap alat lahir daripada masalah sebenar yang kami hadapi semasa mengerjakan projek pelanggan. Jika kami memerlukannya, kemungkinan besar anda juga."
+      },
+      {
+        "title": "Dibiayai iklan, percuma untuk anda",
+        "description": "Kami menggunakan sepanduk Google AdSense untuk menampung kos pembangunan dan pengehosan. Berkat hasil iklan, kami boleh mengekalkan semua alat percuma dan terus membina yang baharu."
+      }
+    ]
+  },
+  "ourTools": {
+    "title": "Alat kami",
+    "items": [
+      {
+        "title": "Imej & favicon",
+        "description": "Penukar WebP, editor imej dan penjana favicon. 3 alat untuk kerja imej harian."
+      },
+      {
+        "title": "Meta & SEO",
+        "description": "Penyemak meta title dan description serta pengira perkataan dan aksara untuk menilai panjang teks."
+      },
+      {
+        "title": "E-mel & komunikasi",
+        "description": "Penjana tandatangan e-mel HTML dengan kod siap untuk Gmail dan Outlook."
+      },
+      {
+        "title": "Warna & kebolehcapaian",
+        "description": "Penyemak kontras WCAG, pengekstrak warna imej dan penjana palet warna. 3 alat untuk bekerja dengan warna."
+      },
+      {
+        "title": "Cetakan & bahan",
+        "description": "Penjana kod QR untuk laman web, vCard, menu dan risalah. Eksport ke PNG dan SVG."
+      }
+    ]
+  },
+  "whatsNext": {
+    "title": "Apa yang seterusnya",
+    "text": "Kami aktif berusaha mengembangkan set alat. Alat baharu ditambah secara berkala berdasarkan maklum balas pengguna dan pengalaman kami sendiri. Matlamatnya ialah satu platform di mana pemilik perniagaan, pereka dan pembangun mempunyai akses kepada setiap alat penting — semuanya di satu tempat, semuanya percuma."
+  },
+  "privacy": {
+    "title": "Privasi dan keselamatan",
+    "textBefore": "Kami menghormati privasi anda. Fail yang anda muat naik ke alat kami diproses secara eksklusif dalam pelayar anda dan tidak pernah dihantar ke mana-mana pelayan. Kami menggunakan analitik (Google Analytics 4) dan pengiklanan (Google AdSense) hanya selepas anda memberi persetujuan melalui sepanduk kuki. Butiran penuh boleh didapati dalam",
+    "linkLabel": "Dasar Privasi",
+    "textAfter": " kami."
+  },
+  "cta": {
+    "title": "Cuba alat kami",
+    "description": "10 alat percuma — tanpa pendaftaran, tanpa had, tanpa muat naik fail ke pelayan",
+    "btnOne": "Pergi ke alat",
+    "btnTwo": "Hubungi"
+  }
+}

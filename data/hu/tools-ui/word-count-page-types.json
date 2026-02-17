@@ -1,0 +1,44 @@
+[
+  {
+    "key": "product",
+    "label": "Termleiras",
+    "minWords": 80,
+    "maxWords": 400,
+    "description": "Minel egyszerubb a termek, annal rovidebb a leiras. Az osszetett termekek (pl. elektronika) tobb magyarazatot es specifikaciot igenyelnek."
+  },
+  {
+    "key": "service",
+    "label": "Szolgaltatas oldal",
+    "minWords": 500,
+    "maxWords": 1500,
+    "description": "Egy egyszeru helyi szolgaltatas kevesebb szot igenyel. Egy osszetett ajanlat tobb lepcsofokkal es ugyfelkerdesekkel tobbet."
+  },
+  {
+    "key": "homepage",
+    "label": "Fooldal",
+    "minWords": 400,
+    "maxWords": 1000,
+    "description": "A fooldal az aloldalakra iranyitja a latogatokat. Az egyertelmu uzenet es az olvashato szerkezet megkonnyiti a navigaciot."
+  },
+  {
+    "key": "landing",
+    "label": "Ajanlati oldal",
+    "minWords": 600,
+    "maxWords": 2500,
+    "description": "A dragabb ajanlatok tobb magyarazatot es bizalomepitesi elemet igenyelnek. Egy egyszeru ajanlat rovidebb is lehet."
+  },
+  {
+    "key": "blog",
+    "label": "Blog cikk",
+    "minWords": 1200,
+    "maxWords": 3000,
+    "description": "A hossz a tema osszetettsegetol fugg. A szovegnek kimerritoen es konkretan kell valaszolnia az olvaso kerdeseire."
+  },
+  {
+    "key": "guide",
+    "label": "Utmutato",
+    "minWords": 2500,
+    "maxWords": 6000,
+    "description": "Egy tema reszletes kidolgozasa tobb szempontbol. A hossz a tema terjedelmetol fugg."
+  }
+]

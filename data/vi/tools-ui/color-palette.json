@@ -1,0 +1,52 @@
+{
+  "selectBaseColor": "Chọn màu cơ sở",
+  "updateColor": "Cập nhật màu",
+  "randomColor": "Màu ngẫu nhiên",
+  "currentBaseColor": "Màu cơ sở hiện tại",
+  "baseColorHelper": "Tất cả bảng màu bên dưới dựa trên màu này.",
+  "colorPreview": "Xem trước màu",
+  "copied": "Đã sao chép",
+  "copy": "Sao chép",
+  "generatedPalettes": "Bảng màu đã tạo",
+  "colorReadError": "Không thể đọc màu. Hãy đảm bảo bạn sử dụng định dạng",
+  "example": "ví dụ",
+  "enterValidColor": "Nhập màu HEX hợp lệ để tạo bảng màu. Tất cả tính toán được thực hiện cục bộ trong trình duyệt của bạn.",
+  "palettes": {
+    "monochromatic": {
+      "label": "Bảng màu đơn sắc",
+      "description": "Tất cả màu có cùng sắc độ (H), khác nhau chủ yếu về độ sáng (L) trong không gian màu HSL."
+    },
+    "analogous": {
+      "label": "Bảng màu tương tự",
+      "description": "Các màu có sắc độ tương tự – từ khoảng -30° đến +30° quanh màu cơ sở trên bánh xe màu cổ điển (ví dụ Itten)."
+    },
+    "complementary": {
+      "label": "Bảng màu bổ sung",
+      "description": "Màu cơ sở và màu bổ sung dịch chuyển 180° trên bánh xe màu – một trong những đối lập màu cơ bản được mô tả bởi Johannes Itten."
+    },
+    "triadic": {
+      "label": "Bảng màu bộ ba",
+      "description": "Ba sắc độ cách nhau 120° trên bánh xe màu (đỉnh của tam giác đều) – hình học thường dùng trong branding và thiết kế phong cách Bauhaus."
+    },
+    "splitComplementary": {
+      "label": "Bảng màu bổ sung chia tách",
+      "description": "Biến thể của bảng màu bổ sung – thay vì một màu bổ sung (180°), hai màu dịch chuyển khoảng ±30° từ màu bổ sung được sử dụng, giảm căng thẳng thị giác nhưng vẫn giữ được độ tương phản mạnh."
+    },
+    "softPastel": {
+      "label": "Bảng màu pastel",
+      "description": "Cùng sắc độ với độ bão hòa giảm và độ sáng tăng – dịch chuyển về giữa và đỉnh của không gian HSL, tạo ra màu mềm, \"kem\"."
+    },
+    "deepDark": {
+      "label": "Bảng màu tối",
+      "description": "Cùng sắc độ với độ bão hòa cao (S) và độ sáng thấp (L) – dịch chuyển xuống trên trục độ sáng, tạo ra màu sâu đặc trưng cho chế độ tối và điểm nhấn mạnh."
+    },
+    "materialTonal": {
+      "label": "Bảng màu sắc độ (lấy cảm hứng Material Design)",
+      "description": "Nhiều mức độ sáng của một sắc độ – L biến đổi và S vừa phải, tương tự phạm vi sắc độ trong hướng dẫn Material Design (ví dụ 50-900)."
+    },
+    "appleMinimal": {
+      "label": "Bảng màu tối giản (lấy cảm hứng Apple)",
+      "description": "Một điểm nhấn màu nổi bật và nhiều tông trung tính rất sáng, nhẹ nhàng – bố cục đặc trưng của giao diện với nhiều khoảng trắng và bóng đổ tinh tế."
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "selectBaseColor": "Pilih warna dasar",
+  "updateColor": "Perbarui warna",
+  "randomColor": "Warna acak",
+  "currentBaseColor": "Warna dasar saat ini",
+  "baseColorHelper": "Semua palet di bawah didasarkan pada warna ini.",
+  "colorPreview": "Pratinjau warna",
+  "copied": "Disalin",
+  "copy": "Salin",
+  "generatedPalettes": "Palet warna yang dihasilkan",
+  "colorReadError": "Tidak dapat membaca warna. Pastikan Anda menggunakan format",
+  "example": "mis.",
+  "enterValidColor": "Masukkan warna HEX yang valid untuk menghasilkan palet. Semua perhitungan dilakukan secara lokal di browser Anda.",
+  "palettes": {
+    "monochromatic": {
+      "label": "Palet monokromatik",
+      "description": "Semua warna memiliki hue (H) yang sama, berbeda terutama dalam kecerahan (L) di ruang warna HSL."
+    },
+    "analogous": {
+      "label": "Palet analogus",
+      "description": "Warna dengan hue serupa – dari sekitar -30° hingga +30° di sekitar warna dasar pada roda warna klasik (mis. Itten)."
+    },
+    "complementary": {
+      "label": "Palet komplementer",
+      "description": "Warna dasar dan komplementernya yang digeser 180° pada roda warna – salah satu kontras warna fundamental yang dijelaskan oleh Johannes Itten."
+    },
+    "triadic": {
+      "label": "Palet triadik",
+      "description": "Tiga hue berjarak 120° pada roda warna (titik sudut segitiga sama sisi) – geometri yang sering digunakan dalam branding dan desain bergaya Bauhaus."
+    },
+    "splitComplementary": {
+      "label": "Palet split-komplementer",
+      "description": "Variasi palet komplementer – alih-alih satu komplemen (180°), dua warna yang digeser sekitar ±30° dari komplemen digunakan, mengurangi ketegangan visual sambil mempertahankan kontras kuat."
+    },
+    "softPastel": {
+      "label": "Palet pastel",
+      "description": "Hue yang sama dengan saturasi berkurang dan kecerahan meningkat – pergeseran ke tengah dan atas ruang HSL, menghasilkan warna lembut dan \"krem\"."
+    },
+    "deepDark": {
+      "label": "Palet gelap",
+      "description": "Hue yang sama dengan saturasi tinggi (S) dan kecerahan rendah (L) – pergeseran ke bawah pada sumbu kecerahan, menghasilkan warna dalam khas mode gelap dan aksen berani."
+    },
+    "materialTonal": {
+      "label": "Palet tonal (terinspirasi Material Design)",
+      "description": "Beberapa tingkat kecerahan dari satu hue – L bervariasi dan S moderat, mirip rentang tonal dari pedoman Material Design (mis. 50-900)."
+    },
+    "appleMinimal": {
+      "label": "Palet minimalis (terinspirasi Apple)",
+      "description": "Satu aksen warna mencolok dan beberapa netral sangat terang dan lembut – tata letak khas antarmuka dengan banyak ruang putih dan bayangan halus."
+    }
+  }
+}

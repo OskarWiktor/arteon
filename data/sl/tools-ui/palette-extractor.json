@@ -1,0 +1,18 @@
+{
+  "unsupportedFormatsOnly": "Ta datoteka ni podprta. Naložite PNG, JPG/JPEG ali SVG.",
+  "unexpectedError": "Slike ni mogoče analizirati. Poskusite znova ali uporabite drugo datoteko.",
+  "addImageLabel": "Dodaj sliko",
+  "dragDropImage": "Povlecite sliko sem",
+  "clickToSelect": "ali kliknite za izbiro datoteke",
+  "supportedFormats": "Podprto: PNG, JPG/JPEG, SVG",
+  "preview": "Predogled in paleta",
+  "addImageToStart": "Naložite sliko in orodje bo prikazalo prevladujoče barve. Kopirajte vsako kodo z enim klikom – odlično za UI, blagovno znamko in družbena omrežja.",
+  "processing": "Analiziram sliko in ustvarjam paleto…",
+  "colorPreview": "Predogled barve",
+  "copy": "Kopiraj",
+  "copied": "Kopirano",
+  "empty": "Prevladujočih barv ni bilo mogoče zaznati. Poskusite z drugo sliko.",
+  "selectedFile": "Izbrana datoteka:",
+  "copyHint": "Kliknite «Kopiraj» za kopiranje barvne kode.",
+  "previewAlt": "Predogled"
+}

@@ -3,7 +3,7 @@
   "locale": "sv",
   "metadata": {
     "title": "Gratis färgkontrastkontroll – WCAG 2.1-efterlevnad",
-    "description": "Kontrollera om dina text- och bakgrundsfärger är läsbara enligt WCAG 2.1. Ange HEX-, RGB- eller HSL-kod,",
+    "description": "Kontrollera om dina text- och bakgrundsfärger är läsbara enligt WCAG 2.1. Ange HEX-, RGB- eller HSL-kod, se kontrastförhållandet och använd automatisk korrigering.",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/sv/verktyg/fargkontrastkontroll"
   },

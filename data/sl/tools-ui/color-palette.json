@@ -1,0 +1,52 @@
+{
+  "selectBaseColor": "Izberite osnovno barvo",
+  "updateColor": "Posodobi barvo",
+  "randomColor": "Naključna barva",
+  "currentBaseColor": "Trenutna osnovna barva",
+  "baseColorHelper": "Vse spodnje palete temeljijo na tej barvi.",
+  "colorPreview": "Predogled barve",
+  "copied": "Kopirano",
+  "copy": "Kopiraj",
+  "generatedPalettes": "Ustvarjene barvne palete",
+  "colorReadError": "Barve ni mogoče prebrati. Prepričajte se, da uporabljate format",
+  "example": "npr.",
+  "enterValidColor": "Vnesite veljavno HEX barvo za ustvarjanje palet. Vsi izračuni potekajo lokalno v vašem brskalniku.",
+  "palettes": {
+    "monochromatic": {
+      "label": "Monokromatska paleta",
+      "description": "Vse barve imajo enak odtenek (H) in se razlikujejo predvsem v svetlosti (L) v prostoru HSL."
+    },
+    "analogous": {
+      "label": "Analogna paleta",
+      "description": "Barve s podobnim odtenkom – približno -30° do +30° od osnovne barve na klasičnem barvnem krogu (npr. Itten)."
+    },
+    "complementary": {
+      "label": "Komplementarna paleta",
+      "description": "Osnovna barva in njen komplement na 180° barvnega kroga – eden temeljnih barvnih kontrastov po Johannesu Ittenu."
+    },
+    "triadic": {
+      "label": "Triadska paleta",
+      "description": "Trije odtenki na 120° razmika na barvnem krogu (oglišča enakostraničnega trikotnika) – geometrija pogosto uporabljena v blagovni znamki in Bauhaus oblikovanju."
+    },
+    "splitComplementary": {
+      "label": "Razdeljena komplementarna paleta",
+      "description": "Različica komplementarne palete – namesto enega komplementa (180°) se uporabljata dve barvi približno ±30° od komplementa, kar zmanjša vizualno napetost ob ohranjanju močnega kontrasta."
+    },
+    "softPastel": {
+      "label": "Pastelna paleta",
+      "description": "Enak odtenek z zmanjšano nasičenostjo in povečano svetlostjo – premik v prostoru HSL proti sredini in navzgor, kar ustvari mehke, „kremaste“ barve."
+    },
+    "deepDark": {
+      "label": "Temna paleta",
+      "description": "Enak odtenek z visoko nasičenostjo (S) in nizko svetlostjo (L) – premik navzdol po osi svetlosti, kar ustvari globoke barve značilne za temni način in močne poudarke."
+    },
+    "materialTonal": {
+      "label": "Tonalna paleta (Material Design)",
+      "description": "Več stopenj svetlosti iz enega odtenka – spreminjajoč L in zmeren S, ki odražata tonalne intervale po Material Designu (npr. 50–900)."
+    },
+    "appleMinimal": {
+      "label": "Minimalistična paleta (Apple)",
+      "description": "Izrazit barvni poudarek in več zelo svetlih, mehkih nevtralnih odtenkov – razporeditev značilna za vmesnike z veliko belega prostora in subtilnimi sencami."
+    }
+  }
+}

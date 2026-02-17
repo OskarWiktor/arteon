@@ -1,0 +1,47 @@
+{
+  "dataType": "Gegevenstype",
+  "types": {
+    "url": "URL-adres",
+    "text": "Tekst",
+    "vcard": "Visitekaartje (vCard)",
+    "email": "E-mail",
+    "phone": "Telefoon"
+  },
+  "urlPlaceholder": "https://www.uw-website.nl",
+  "textPlaceholder": "Voer een tekst in...",
+  "phonePlaceholder": "+31 6 12345678",
+  "size": "Grootte (px)",
+  "margin": "Marge (stille zone)",
+  "qrColor": "QR-codekleur",
+  "bgColor": "Achtergrondkleur",
+  "errorCorrection": "Foutcorrectieniveau",
+  "errorCorrectionLevels": {
+    "L": "L - Laag (7%)",
+    "M": "M - Gemiddeld (15%)",
+    "Q": "Q - Hoog (25%)",
+    "H": "H - Maximum (30%)"
+  },
+  "preview": "QR-code voorbeeld",
+  "downloadPng": "PNG downloaden",
+  "downloadSvg": "SVG downloaden",
+  "contrastWarning": "Het contrast tussen de kleuren is te laag. De QR-code kan moeilijk te scannen zijn.",
+  "contrastRatio": "Contrastverhouding",
+  "recommended": "Aanbevolen minimum: 3:1",
+  "enterData": "Voer gegevens in om een QR-code te genereren.",
+  "vcard": {
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "organization": "Bedrijf (optioneel)",
+    "title": "Functie (optioneel)",
+    "phone": "Telefoon (optioneel)",
+    "email": "E-mail (optioneel)",
+    "website": "Website (optioneel)",
+    "address": "Adres (optioneel)"
+  },
+  "email": {
+    "to": "E-mailadres",
+    "subject": "Onderwerp (optioneel)",
+    "body": "Bericht (optioneel)"
+  },
+  "printTip": "Voor drukwerk raden wij een minimale grootte van 300px en foutcorrectieniveau H aan."
+}

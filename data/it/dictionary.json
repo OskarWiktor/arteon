@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "mainNavigation": "Navigazione principale",
+    "logoAlt": "Arteon - logo dell'azienda",
+    "closeMenu": "Chiudi menu",
+    "openMenu": "Apri menu",
+    "closeToolsList": "Chiudi elenco strumenti",
+    "openToolsList": "Apri elenco strumenti",
+    "toolsLabel": "Strumenti",
+    "mobileMenu": "Menu mobile",
+    "aboutLabel": "Chi siamo",
+    "contactLabel": "Contatto"
+  },
+  "footer": {
+    "copyright": "Tutti i diritti riservati.",
+    "description": "Strumenti online gratuiti per sviluppatori web, designer e specialisti di marketing.",
+    "companyDataLabel": "Dati aziendali",
+    "toolsLabel": "Strumenti",
+    "legalLabel": "Documenti legali",
+    "cookieSettingsLabel": "Impostazioni cookie"
+  },
+  "desktopOnly": {
+    "title": "Questo strumento funziona su uno schermo più grande",
+    "description": "Per utilizzare comodamente questo strumento, aprilo su un laptop, un computer desktop o un tablet in modalità orizzontale.",
+    "tipTitle": "Suggerimento",
+    "tipText": "Se utilizzi un tablet, passa alla modalità orizzontale: quando la larghezza della finestra sarà sufficiente, lo strumento si caricherà automaticamente."
+  },
+  "cookie": {
+    "title": "Cookie e privacy",
+    "description": "Utilizziamo cookie per il funzionamento del sito, l'analisi del traffico e la pubblicità. Maggiori informazioni nella nostra",
+    "setPreferences": "Imposta preferenze",
+    "privacyPolicy": "Informativa sulla privacy",
+    "privacyPolicyHref": "/it/informativa-sulla-privacy",
+    "reject": "Rifiuta tutto",
+    "settings": "Impostazioni",
+    "accept": "Accetta tutto",
+    "panelTitle": "Preferenze sulla privacy",
+    "panelDescription": "Impostazioni per il consenso al trattamento dei dati.",
+    "categoriesLegend": "Categorie",
+    "essentialTitle": "Essenziali",
+    "essentialDescription": "Il sito non funziona senza di essi. Non raccolgono dati di marketing.",
+    "essentialStatus": "Sempre attivi",
+    "analyticsTitle": "Analisi (GA4)",
+    "analyticsDescription": "Statistiche sulle visite. Attiva Google Analytics 4 con il tuo consenso.",
+    "analyticsLabel": "Attiva analisi GA4",
+    "adsTitle": "Pubblicità (Google AdSense)",
+    "adsDescription": "Pubblicità personalizzata in base ai tuoi interessi.",
+    "adsLabel": "Attiva pubblicità personalizzata",
+    "changeDecision": "Puoi modificare la tua scelta in qualsiasi momento",
+    "save": "Salva"
+  },
+  "skipToContent": "Vai al contenuto",
+  "legal": [
+    {
+      "key": "privacy",
+      "href": "/it/informativa-sulla-privacy",
+      "label": "Informativa sulla privacy"
+    }
+  ],
+  "breadcrumbs": {
+    "home": "Home",
+    "ariaLabel": "briciole di pane"
+  },
+  "contactForm": {
+    "nameLabel": "Nome completo",
+    "namePlaceholder": "Mario Rossi",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "mario.rossi@gmail.com",
+    "subjectLabel": "Oggetto",
+    "subjectPlaceholder": "es. Segnalazione bug | Suggerimento strumento | Domanda",
+    "messageLabel": "Messaggio",
+    "messagePlaceholder": "Descrivi la tua domanda o il tuo suggerimento...",
+    "send": "Invia",
+    "error": "Qualcosa è andato storto. Controlla i tuoi dati e riprova.",
+    "success": "Messaggio inviato! Risponderemo il prima possibile."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Strumenti online gratuiti",
+    "seeAllTools": "Vedi tutti gli strumenti",
+    "carouselLabel": "Carosello degli strumenti",
+    "scrollLeft": "Scorri a sinistra",
+    "scrollRight": "Scorri a destra",
+    "carouselNavigation": "Navigazione del carosello",
+    "goToSlide": "Vai alla diapositiva",
+    "of": "di",
+    "slide": "Diapositiva",
+    "tool": "Strumento",
+    "openTool": "Apri strumento"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Passa all'italiano",
+    "toggleLabel": "Cambia lingua",
+    "chooseLabel": "Scegli lingua",
+    "popularLabel": "Popolari",
+    "otherLabel": "Altre",
+    "closeModalLabel": "Chiudi"
+  },
+  "mobileNav": {
+    "close": "Chiudi",
+    "services": "Servizi",
+    "contact": "Contatto"
+  },
+  "infoBanner": {
+    "text": "Aggiornamento del generatore di firma e-mail: scopri le nuove funzionalità",
+    "linkText": "strumenti"
+  }
+}

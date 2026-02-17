@@ -1,0 +1,78 @@
+{
+  "slug": "om-oss",
+  "metadata": {
+    "title": "Om Arteon – 10 gratis nettverktøy for web, SEO og design",
+    "description": "Arteon er et kreativt byrå som utvikler gratis nettleserbaserte verktøy: WebP-konverterer, favicon-generator, fargekontrastsjekker, QR-kode-generator og mer. Uten registrering, uten opplasting — alt kjøres lokalt."
+  },
+  "hero": {
+    "title": "Gratis nettverktøy laget av et kreativt byrå",
+    "description": "10 nettleserbaserte verktøy for bilder, SEO, farger, e-postsignaturer og QR-koder — uten registrering, uten filopplasting, uten begrensninger"
+  },
+  "whoWeAre": {
+    "title": "Hvem vi er",
+    "p1": "Arteon er et polsk kreativt byrå. I tillegg til vårt kommersielle arbeid utvikler og vedlikeholder vi en voksende samling gratis nettverktøy designet for bedriftseiere, nettstedsutviklere, designere, markedsførere og alle som jobber med digitalt innhold.",
+    "p2": "Hvert verktøy vi lager løser et spesifikt, dagligdags problem: konvertere bilder, sjekke fargekontrast, generere faviconer, lage QR-koder og mer. Målet vårt er å bygge et komplett verktøysett der du finner alt du trenger på ett sted — uten å bytte mellom titalls forskjellige nettsider."
+  },
+  "whyFree": {
+    "title": "Hvorfor vi tilbyr gratis verktøy",
+    "items": [
+      {
+        "title": "Uten registrering, uten begrensninger",
+        "description": "Hvert verktøy fungerer umiddelbart i nettleseren din. Ingen konto, ingen innlogging, ingen betaling."
+      },
+      {
+        "title": "Personvern først",
+        "description": "Filene dine forlater aldri enheten din. All behandling skjer lokalt i nettleseren — vi sender ikke dataene dine til noen server."
+      },
+      {
+        "title": "Bygget fra reelle behov",
+        "description": "Hvert verktøy ble til fra et reelt problem vi støtte på mens vi jobbet med kundeprosjekter. Hvis vi trengte det, er sjansen stor for at du også gjør det."
+      },
+      {
+        "title": "Finansiert av annonser, gratis for deg",
+        "description": "Vi bruker Google AdSense-bannere for å dekke kostnadene for utvikling og hosting. Takket være annonseinntekter kan vi holde alle verktøy gratis og fortsette å bygge nye."
+      }
+    ]
+  },
+  "ourTools": {
+    "title": "Våre verktøy",
+    "items": [
+      {
+        "title": "Bilder og faviconer",
+        "description": "WebP-konverterer, bilderedigerer og favicon-generator. 3 verktøy for daglig bildearbeid."
+      },
+      {
+        "title": "Meta og SEO",
+        "description": "Meta-tittel- og beskrivelsessjekker pluss en ord- og tegnteller for å vurdere tekstlengden."
+      },
+      {
+        "title": "E-post og kommunikasjon",
+        "description": "HTML e-postsignatur-generator med ferdig kode for Gmail og Outlook."
+      },
+      {
+        "title": "Farger og tilgjengelighet",
+        "description": "WCAG-kontrastsjekker, fargeutrekker fra bilde og fargepalettgenerator. 3 verktøy for å jobbe med farger."
+      },
+      {
+        "title": "Trykk og materialer",
+        "description": "QR-kode-generator for nettsider, vCard, menyer og flygeblad. Eksport til PNG og SVG."
+      }
+    ]
+  },
+  "whatsNext": {
+    "title": "Hva som kommer",
+    "text": "Vi jobber aktivt med å utvide verktøysettet. Nye verktøy legges til jevnlig basert på tilbakemeldinger fra brukere og vår egen erfaring. Målet er én plattform der bedriftseiere, designere og utviklere har tilgang til hvert viktig verktøy — alt på ett sted, alt gratis."
+  },
+  "privacy": {
+    "title": "Personvern og sikkerhet",
+    "textBefore": "Vi respekterer personvernet ditt. Filer du laster opp til verktøyene våre behandles utelukkende i nettleseren din og sendes aldri til noen server. Vi bruker analyse (Google Analytics 4) og annonsering (Google AdSense) kun etter ditt samtykke via informasjonskapsel-banneret. Alle detaljer finner du i vår",
+    "linkLabel": "Personvernpolicy",
+    "textAfter": "."
+  },
+  "cta": {
+    "title": "Prøv verktøyene våre",
+    "description": "10 gratis nettverktøy — uten registrering, uten begrensninger, uten filopplasting til servere",
+    "btnOne": "Gå til verktøy",
+    "btnTwo": "Kontakt"
+  }
+}

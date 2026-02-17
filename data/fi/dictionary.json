@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "mainNavigation": "Päänavigaatio",
+    "logoAlt": "Arteon - yrityksen logo",
+    "closeMenu": "Sulje valikko",
+    "openMenu": "Avaa valikko",
+    "closeToolsList": "Sulje työkalulista",
+    "openToolsList": "Avaa työkalulista",
+    "toolsLabel": "Työkalut",
+    "mobileMenu": "Mobiilivalikko",
+    "aboutLabel": "Tietoa meistä",
+    "contactLabel": "Yhteystiedot"
+  },
+  "footer": {
+    "copyright": "Kaikki oikeudet pidätetään.",
+    "description": "Ilmaisia työkaluja web-kehittäjille, suunnittelijoille ja markkinoijille.",
+    "companyDataLabel": "Yritystiedot",
+    "toolsLabel": "Työkalut",
+    "legalLabel": "Oikeudelliset asiakirjat",
+    "cookieSettingsLabel": "Evästeasetukset"
+  },
+  "desktopOnly": {
+    "title": "Tämä työkalu toimii suuremmalla näytöllä",
+    "description": "Käytä tätä työkalua mukavasti avaamalla se kannettavalla tietokoneella, pöytäkoneella tai tabletilla vaakatilassa.",
+    "tipTitle": "Vinkki",
+    "tipText": "Jos käytät tablettia, vaihda vaakatilaan – kun ikkunan leveys on riittävä, työkalu latautuu automaattisesti."
+  },
+  "cookie": {
+    "title": "Evästeet ja tietosuoja",
+    "description": "Käytämme evästeitä sivuston toiminnallisuuteen, liikenteen analysointiin ja mainosten näyttämiseen. Lue lisää",
+    "setPreferences": "Määritä asetukset",
+    "privacyPolicy": "Tietosuojakäytäntö",
+    "privacyPolicyHref": "/fi/tietosuojakaytanto",
+    "reject": "Hylkää kaikki",
+    "settings": "Asetukset",
+    "accept": "Hyväksy kaikki",
+    "panelTitle": "Tietosuoja-asetukset",
+    "panelDescription": "Tietojenkäsittelyn suostumusasetukset.",
+    "categoriesLegend": "Kategoriat",
+    "essentialTitle": "Välttämättömät",
+    "essentialDescription": "Sivusto ei toimi ilman näitä. Ei kerää markkinointitietoja.",
+    "essentialStatus": "Aina aktiivinen",
+    "analyticsTitle": "Analytiikka (GA4)",
+    "analyticsDescription": "Vierailutilastot. Ottaa käyttöön Google Analytics 4:n suostumuksellasi.",
+    "analyticsLabel": "Ota GA4-analytiikka käyttöön",
+    "adsTitle": "Mainokset (Google AdSense)",
+    "adsDescription": "Personoidut mainokset kiinnostustesi perusteella.",
+    "adsLabel": "Ota personoidut mainokset käyttöön",
+    "changeDecision": "Voit muuttaa päätöstäsi milloin tahansa",
+    "save": "Tallenna"
+  },
+  "skipToContent": "Siirry sisältöön",
+  "legal": [
+    {
+      "key": "privacy",
+      "href": "/fi/tietosuojakaytanto",
+      "label": "Tietosuojakäytäntö"
+    }
+  ],
+  "breadcrumbs": {
+    "home": "Etusivu",
+    "ariaLabel": "navigaatio"
+  },
+  "contactForm": {
+    "nameLabel": "Koko nimi",
+    "namePlaceholder": "Matti Meikäläinen",
+    "emailLabel": "Sähköposti",
+    "emailPlaceholder": "matti.meikalainen@gmail.com",
+    "subjectLabel": "Aihe",
+    "subjectPlaceholder": "esim. Virheraportti | Työkaluehdotus | Kysymys",
+    "messageLabel": "Viesti",
+    "messagePlaceholder": "Kuvaile kysymyksesi tai ehdotuksesi...",
+    "send": "Lähetä",
+    "error": "Jokin meni pieleen. Tarkista tietosi ja yritä uudelleen.",
+    "success": "Viesti lähetetty! Vastaamme mahdollisimman pian."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Ilmaiset työkalut",
+    "seeAllTools": "Näytä kaikki työkalut",
+    "carouselLabel": "Työkalukaruselli",
+    "scrollLeft": "Vieritä vasemmalle",
+    "scrollRight": "Vieritä oikealle",
+    "carouselNavigation": "Karusellinavigaatio",
+    "goToSlide": "Siirry diaan",
+    "of": "/",
+    "slide": "Dia",
+    "tool": "Työkalu",
+    "openTool": "Avaa työkalu"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Vaihda suomeksi",
+    "toggleLabel": "Vaihda kieltä",
+    "chooseLabel": "Valitse kieli",
+    "popularLabel": "Suositut",
+    "otherLabel": "Muut",
+    "closeModalLabel": "Sulje"
+  },
+  "mobileNav": {
+    "close": "Sulje",
+    "services": "Palvelut",
+    "contact": "Yhteystiedot"
+  },
+  "infoBanner": {
+    "text": "Sähköpostiallekirjoitusgeneraattori päivitetty – tutustu uusiin ominaisuuksiin",
+    "linkText": "työkalut"
+  }
+}

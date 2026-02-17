@@ -1,0 +1,23 @@
+{
+  "pasteText": "Cole ou escreva texto",
+  "textPlaceholder": "Cole aqui o texto que pretende analisar...",
+  "pageType": "Tipo de página",
+  "pageTypeHelper": "Selecione o tipo de página para o qual está a escrever. Cada tipo tem recomendações de comprimento diferentes.",
+  "words": "Palavras",
+  "charsWithSpaces": "Caracteres (com espaços)",
+  "charsWithoutSpaces": "Caracteres (sem espaços)",
+  "paragraphs": "Parágrafos",
+  "readingTime": "Tempo de leitura",
+  "lengthEvaluation": "Avaliação do comprimento",
+  "recommendedRange": "Intervalo recomendado",
+  "copyReport": "Copiar relatório",
+  "copied": "Copiado",
+  "statistics": "Estatísticas do texto",
+  "noText": "Sem texto",
+  "empty": "Escreva um texto para ver as estatísticas.",
+  "tooShort": "Demasiado curto",
+  "tooLong": "Demasiado longo",
+  "ideal": "Bom comprimento",
+  "analysisFor": "Análise para",
+  "wordsUnit": "palavras"
+}

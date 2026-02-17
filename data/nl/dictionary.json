@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "mainNavigation": "Hoofdnavigatie",
+    "logoAlt": "Arteon - bedrijfslogo",
+    "closeMenu": "Menu sluiten",
+    "openMenu": "Menu openen",
+    "closeToolsList": "Toollijst sluiten",
+    "openToolsList": "Toollijst openen",
+    "toolsLabel": "Tools",
+    "mobileMenu": "Mobiel menu",
+    "aboutLabel": "Over ons",
+    "contactLabel": "Contact"
+  },
+  "footer": {
+    "copyright": "Alle rechten voorbehouden.",
+    "description": "Gratis tools voor webontwikkelaars, ontwerpers en marketeers.",
+    "companyDataLabel": "Bedrijfsgegevens",
+    "toolsLabel": "Tools",
+    "legalLabel": "Juridische documenten",
+    "cookieSettingsLabel": "Cookie-instellingen"
+  },
+  "desktopOnly": {
+    "title": "Deze tool werkt op een groter scherm",
+    "description": "Om deze tool comfortabel te gebruiken, open het op een laptop, desktopcomputer of tablet in landschapsmodus.",
+    "tipTitle": "Tip",
+    "tipText": "Als u een tablet gebruikt, schakel deze dan over naar landschapsmodus - wanneer de vensterbreedte groot genoeg is, wordt de tool automatisch geladen."
+  },
+  "cookie": {
+    "title": "Cookies en privacy",
+    "description": "We gebruiken cookies om de site draaiende te houden, verkeer te analyseren en advertenties te tonen. Meer informatie in ons",
+    "setPreferences": "Voorkeuren instellen",
+    "privacyPolicy": "Privacybeleid",
+    "privacyPolicyHref": "/nl/privacybeleid",
+    "reject": "Alles weigeren",
+    "settings": "Instellingen",
+    "accept": "Alles accepteren",
+    "panelTitle": "Privacyvoorkeuren",
+    "panelDescription": "Instellingen voor toestemming gegevensverwerking.",
+    "categoriesLegend": "Categorieën",
+    "essentialTitle": "Essentieel",
+    "essentialDescription": "De site kan niet functioneren zonder deze. Ze verzamelen geen marketinggegevens.",
+    "essentialStatus": "Altijd actief",
+    "analyticsTitle": "Analyse (GA4)",
+    "analyticsDescription": "Bezoekstatistieken. Schakelt Google Analytics 4 in met uw toestemming.",
+    "analyticsLabel": "GA4-analyse inschakelen",
+    "adsTitle": "Advertenties (Google AdSense)",
+    "adsDescription": "Gepersonaliseerde advertenties op basis van uw interesses.",
+    "adsLabel": "Gepersonaliseerde advertenties inschakelen",
+    "changeDecision": "U kunt uw beslissing op elk moment wijzigen",
+    "save": "Opslaan"
+  },
+  "skipToContent": "Ga naar inhoud",
+  "legal": [
+    {
+      "key": "privacy",
+      "href": "/nl/privacybeleid",
+      "label": "Privacybeleid"
+    }
+  ],
+  "breadcrumbs": {
+    "home": "Home",
+    "ariaLabel": "kruimelpad"
+  },
+  "contactForm": {
+    "nameLabel": "Volledige naam",
+    "namePlaceholder": "Jan de Vries",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "jan.devries@gmail.com",
+    "subjectLabel": "Onderwerp",
+    "subjectPlaceholder": "bijv. Bugrapport | Tool-suggestie | Vraag",
+    "messageLabel": "Bericht",
+    "messagePlaceholder": "Beschrijf uw vraag of suggestie...",
+    "send": "Verzenden",
+    "error": "Er is iets misgegaan. Controleer uw gegevens en probeer het opnieuw.",
+    "success": "Bericht verzonden! We reageren zo snel mogelijk."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Gratis tools",
+    "seeAllTools": "Bekijk alle tools",
+    "carouselLabel": "Tools-carrousel",
+    "scrollLeft": "Naar links scrollen",
+    "scrollRight": "Naar rechts scrollen",
+    "carouselNavigation": "Carrouselnavigatie",
+    "goToSlide": "Ga naar slide",
+    "of": "van",
+    "slide": "Slide",
+    "tool": "Tool",
+    "openTool": "Open tool"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Schakel naar Nederlands",
+    "toggleLabel": "Taal wijzigen",
+    "chooseLabel": "Kies taal",
+    "popularLabel": "Populair",
+    "otherLabel": "Overig",
+    "closeModalLabel": "Sluiten"
+  },
+  "mobileNav": {
+    "close": "Sluiten",
+    "services": "Diensten",
+    "contact": "Contact"
+  },
+  "infoBanner": {
+    "text": "Update e-mailhandtekening generator - ontdek de nieuwe functies",
+    "linkText": "tools"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "slug": "o-nama",
+  "metadata": {
+    "title": "O Arteonu – 10 besplatnih alata za web, SEO i dizajn",
+    "description": "Arteon je kreativna agencija koja razvija besplatne alate u pregledniku: WebP konverter, generator favicona, provjera kontrasta boja, generator QR kodova i više. Bez registracije, bez uploada — sve radi lokalno."
+  },
+  "hero": {
+    "title": "Besplatni alati od kreativne agencije",
+    "description": "10 alata u pregledniku za slike, SEO, boje, potpise e-pošte i QR kodove — bez registracije, bez uploada datoteka, bez ograničenja"
+  },
+  "whoWeAre": {
+    "title": "Tko smo",
+    "p1": "Arteon je poljska kreativna agencija. Osim našeg komercijalnog rada, razvijamo i održavamo rastuću kolekciju besplatnih alata namijenjenih vlasnicima tvrtki, kreatorima web stranica, dizajnerima, marketinškim stručnjacima i svima koji rade s digitalnim sadržajem.",
+    "p2": "Svaki alat koji stvaramo rješava specifičan svakodnevni problem: konverzija slika, provjera kontrasta boja, generiranje favicona, izrada QR kodova i više. Naš cilj je izgraditi sveobuhvatan set alata gdje možete pronaći sve što trebate na jednom mjestu — bez prebacivanja između desetaka različitih stranica."
+  },
+  "whyFree": {
+    "title": "Zašto nudimo besplatne alate",
+    "items": [
+      {
+        "title": "Bez registracije, bez ograničenja",
+        "description": "Svaki alat radi odmah u pregledniku. Bez računa, bez prijave, bez plaćanja."
+      },
+      {
+        "title": "Privatnost na prvom mjestu",
+        "description": "Vaše datoteke nikada ne napuštaju vaš uređaj. Sva obrada odvija se lokalno u pregledniku — vaše podatke ne šaljemo ni na jedan server."
+      },
+      {
+        "title": "Nastali iz stvarnih potreba",
+        "description": "Svaki alat nastao je iz stvarnog problema na koji smo naišli radeći na projektima klijenata. Ako smo to trebali mi, vjerojatno trebate i vi."
+      },
+      {
+        "title": "Financirano reklamama, besplatno za vas",
+        "description": "Koristimo Google AdSense bannere za pokrivanje troškova razvoja i hostinga. Zahvaljujući prihodima od reklama, možemo sve alate držati besplatnima i nastaviti razvijati nove."
+      }
+    ]
+  },
+  "ourTools": {
+    "title": "Naši alati",
+    "items": [
+      {
+        "title": "Slike i faviconi",
+        "description": "WebP konverter, uređivač slika i generator favicona. 3 alata za svakodnevni rad sa slikama."
+      },
+      {
+        "title": "Meta i SEO",
+        "description": "Provjera meta naslova i opisa plus brojač riječi i znakova za procjenu duljine teksta."
+      },
+      {
+        "title": "E-pošta i komunikacija",
+        "description": "Generator HTML potpisa e-pošte s gotovim kodom za Gmail i Outlook."
+      },
+      {
+        "title": "Boje i pristupačnost",
+        "description": "WCAG provjera kontrasta, ekstraktor boja iz slike i generator paleta boja. 3 alata za rad s bojama."
+      },
+      {
+        "title": "Tisak i materijali",
+        "description": "Generator QR kodova za web stranice, vCard, jelovnike i letke. Izvoz u PNG i SVG."
+      }
+    ]
+  },
+  "whatsNext": {
+    "title": "Što slijedi",
+    "text": "Aktivno radimo na proširenju seta alata. Novi alati se dodaju redovito na temelju povratnih informacija korisnika i našeg vlastitog iskustva. Cilj je jedna platforma gdje vlasnici tvrtki, dizajneri i programeri imaju pristup svakom bitnom alatu — sve na jednom mjestu, sve besplatno."
+  },
+  "privacy": {
+    "title": "Privatnost i sigurnost",
+    "textBefore": "Poštujemo vašu privatnost. Datoteke koje učitavate u naše alate obrađuju se isključivo u vašem pregledniku i nikada se ne šalju na server. Analitiku (Google Analytics 4) i oglašavanje (Google AdSense) koristimo tek nakon vašeg pristanka putem bannera za kolačiće. Svi detalji dostupni su u našim",
+    "linkLabel": "Pravilima privatnosti",
+    "textAfter": "."
+  },
+  "cta": {
+    "title": "Isprobajte naše alate",
+    "description": "10 besplatnih alata — bez registracije, bez ograničenja, bez uploada datoteka na server",
+    "btnOne": "Idi na alate",
+    "btnTwo": "Kontakt"
+  }
+}

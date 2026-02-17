@@ -1,0 +1,78 @@
+{
+  "slug": "sobre-nos",
+  "metadata": {
+    "title": "Sobre a Arteon – 10 ferramentas online gratuitas para web, SEO e design",
+    "description": "A Arteon é uma agência criativa que desenvolve ferramentas gratuitas no navegador: conversor WebP, gerador de favicon, verificador de contraste, gerador de códigos QR e mais. Sem registo, sem envio de ficheiros — tudo funciona localmente."
+  },
+  "hero": {
+    "title": "Ferramentas online gratuitas criadas por uma agência criativa",
+    "description": "10 ferramentas no navegador para imagens, SEO, cores, assinaturas de e-mail e códigos QR — sem registo, sem envio de ficheiros, sem limites"
+  },
+  "whoWeAre": {
+    "title": "Quem somos",
+    "p1": "A Arteon é uma agência criativa polaca. Para além do nosso trabalho comercial, desenvolvemos e mantemos uma coleção crescente de ferramentas online gratuitas destinadas a proprietários de negócios, criadores de sites, designers, especialistas em marketing e qualquer pessoa que trabalhe com conteúdo digital.",
+    "p2": "Cada ferramenta que criamos resolve um problema específico e quotidiano: converter imagens, verificar o contraste de cores, gerar favicons, criar códigos QR e muito mais. O nosso objetivo é construir um conjunto completo de ferramentas onde possa encontrar tudo o que precisa num só lugar — sem navegar entre dezenas de sites diferentes."
+  },
+  "whyFree": {
+    "title": "Porque oferecemos ferramentas gratuitas",
+    "items": [
+      {
+        "title": "Sem registo, sem limites",
+        "description": "Cada ferramenta funciona instantaneamente no seu navegador. Sem conta, sem login, sem pagamento."
+      },
+      {
+        "title": "Privacidade em primeiro lugar",
+        "description": "Os seus ficheiros nunca saem do seu dispositivo. Todo o processamento é feito localmente no seu navegador — não enviamos os seus dados para nenhum servidor."
+      },
+      {
+        "title": "Criadas a partir de necessidades reais",
+        "description": "Cada ferramenta nasceu de um problema real que encontrámos ao trabalhar em projetos de clientes. Se nós precisámos, é provável que você também precise."
+      },
+      {
+        "title": "Financiadas por publicidade, gratuitas para si",
+        "description": "Utilizamos banners do Google AdSense para cobrir os custos de desenvolvimento e alojamento. Graças às receitas publicitárias, podemos manter todas as ferramentas gratuitas e continuar a criar novas."
+      }
+    ]
+  },
+  "ourTools": {
+    "title": "As nossas ferramentas",
+    "items": [
+      {
+        "title": "Imagens e favicons",
+        "description": "Conversor WebP, editor de imagens online e gerador de favicon. 3 ferramentas para o trabalho diário com imagens."
+      },
+      {
+        "title": "Meta e SEO",
+        "description": "Verificador de meta título e descrição mais um contador de palavras e caracteres para avaliar o comprimento do texto."
+      },
+      {
+        "title": "E-mail e comunicação",
+        "description": "Gerador de assinatura de e-mail HTML com código pronto para Gmail e Outlook."
+      },
+      {
+        "title": "Cores e acessibilidade",
+        "description": "Verificador de contraste WCAG, extrator de cores de imagem e gerador de paletas de cores. 3 ferramentas para trabalhar com cor."
+      },
+      {
+        "title": "Impressão e materiais",
+        "description": "Gerador de códigos QR para sites, vCards, menus e folhetos. Exportação em PNG e SVG."
+      }
+    ]
+  },
+  "whatsNext": {
+    "title": "O que vem a seguir",
+    "text": "Estamos a trabalhar ativamente na expansão do conjunto de ferramentas. Novas ferramentas são adicionadas regularmente com base no feedback dos utilizadores e na nossa própria experiência. O objetivo é uma plataforma única onde proprietários de negócios, designers e programadores tenham acesso a cada ferramenta essencial — tudo num só lugar, tudo grátis."
+  },
+  "privacy": {
+    "title": "Privacidade e segurança",
+    "textBefore": "Respeitamos a sua privacidade. Os ficheiros que carrega nas nossas ferramentas são processados exclusivamente no seu navegador e nunca são enviados para nenhum servidor. Utilizamos análises (Google Analytics 4) e publicidade (Google AdSense) apenas após o seu consentimento através do banner de cookies. Todos os detalhes estão disponíveis na nossa",
+    "linkLabel": "Política de Privacidade",
+    "textAfter": "."
+  },
+  "cta": {
+    "title": "Experimente as nossas ferramentas",
+    "description": "10 ferramentas online gratuitas — sem registo, sem limites, sem envio de ficheiros para servidores",
+    "btnOne": "Ver ferramentas",
+    "btnTwo": "Contacto"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "kontakt",
+  "metadata": {
+    "title": "Kontakt – Arteon bezplatné nástroje | Podpora a spätná väzba",
+    "description": "Kontaktujte tím Arteon. Nahláste chybu, navrhnite nový nástroj alebo položte otázku o našich bezplatných nástrojoch pre obrázky, SEO, farby a QR kódy. Odpovedáme do jedného pracovného dňa."
+  },
+  "hero": {
+    "title": "Kontaktujte tím Arteon",
+    "description": "Nahláste chybu, navrhnite nový nástroj alebo položte otázku — odpovedáme do jedného pracovného dňa"
+  },
+  "intro": {
+    "title": "Máte otázku alebo návrh?",
+    "textBefore": "Radi si vypočujeme vašu spätnú väzbu k našim nástrojom. Ak ste našli chybu, máte nápad na nový nástroj alebo potrebujete pomoc — napíšte nám na",
+    "textAfter": ". Odpovedáme do jedného pracovného dňa."
+  },
+  "formTitle": "Pošlite nám správu",
+  "details": {
+    "title": "Kontaktné údaje",
+    "emailLabel": "E-mail",
+    "hoursLabel": "Pracovná doba",
+    "hoursValue": "Pondelok – Piatok: 8:00 – 16:00 (CET)"
+  },
+  "cta": {
+    "title": "Späť na nástroje",
+    "description": "10 bezplatných nástrojov pre prácu s obrázkami, textom a farbami",
+    "btnOne": "Nástroje"
+  }
+}

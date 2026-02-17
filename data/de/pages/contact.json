@@ -1,0 +1,28 @@
+{
+  "slug": "kontakt",
+  "metadata": {
+    "title": "Kontakt – Arteon kostenlose Online-Tools | Support & Feedback",
+    "description": "Nehmen Sie Kontakt mit dem Arteon-Team auf. Melden Sie einen Fehler, schlagen Sie ein neues Tool vor oder stellen Sie eine Frage zu unseren kostenlosen Online-Tools für Bilder, SEO, Farben und QR-Codes. Antwort innerhalb eines Werktags."
+  },
+  "hero": {
+    "title": "Kontakt zum Arteon-Team aufnehmen",
+    "description": "Fehler melden, neues Tool vorschlagen oder eine Frage stellen — wir antworten innerhalb eines Werktags"
+  },
+  "intro": {
+    "title": "Frage oder Vorschlag?",
+    "textBefore": "Wir freuen uns über Ihr Feedback zu unseren Tools. Wenn Sie einen Fehler gefunden haben, eine Idee für ein neues Tool haben oder Hilfe benötigen — schreiben Sie uns an",
+    "textAfter": ". Wir antworten innerhalb eines Werktags."
+  },
+  "formTitle": "Nachricht senden",
+  "details": {
+    "title": "Kontaktdaten",
+    "emailLabel": "E-Mail",
+    "hoursLabel": "Geschäftszeiten",
+    "hoursValue": "Montag – Freitag: 8:00 – 16:00 (MEZ)"
+  },
+  "cta": {
+    "title": "Zurück zu den Tools",
+    "description": "10 kostenlose Online-Tools für die Arbeit mit Bildern, Text und Farben",
+    "btnOne": "Werkzeuge"
+  }
+}

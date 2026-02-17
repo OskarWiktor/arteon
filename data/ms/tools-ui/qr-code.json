@@ -1,0 +1,47 @@
+{
+  "dataType": "Jenis data",
+  "types": {
+    "url": "Alamat URL",
+    "text": "Teks",
+    "vcard": "Kad perniagaan (vCard)",
+    "email": "E-mel",
+    "phone": "Telefon"
+  },
+  "urlPlaceholder": "https://www.laman-anda.my",
+  "textPlaceholder": "Taip sebarang teks...",
+  "phonePlaceholder": "+60 12 345 6789",
+  "size": "Saiz (px)",
+  "margin": "Margin (zon senyap)",
+  "qrColor": "Warna kod QR",
+  "bgColor": "Warna latar belakang",
+  "errorCorrection": "Tahap pembetulan ralat",
+  "errorCorrectionLevels": {
+    "L": "L – Rendah (7%)",
+    "M": "M – Sederhana (15%)",
+    "Q": "Q – Tinggi (25%)",
+    "H": "H – Maksimum (30%)"
+  },
+  "preview": "Pratonton kod QR",
+  "downloadPng": "Muat turun PNG",
+  "downloadSvg": "Muat turun SVG",
+  "contrastWarning": "Kontras antara warna terlalu rendah. Kod QR mungkin sukar diimbas.",
+  "contrastRatio": "Nisbah kontras",
+  "recommended": "Minimum yang disyorkan: 3:1",
+  "enterData": "Masukkan data untuk menjana kod QR.",
+  "vcard": {
+    "firstName": "Nama pertama",
+    "lastName": "Nama keluarga",
+    "organization": "Syarikat (pilihan)",
+    "title": "Jawatan (pilihan)",
+    "phone": "Telefon (pilihan)",
+    "email": "E-mel (pilihan)",
+    "website": "Laman web (pilihan)",
+    "address": "Alamat (pilihan)"
+  },
+  "email": {
+    "to": "Alamat e-mel",
+    "subject": "Subjek (pilihan)",
+    "body": "Kandungan (pilihan)"
+  },
+  "printTip": "Untuk bahan cetak, kami mengesyorkan saiz minimum 300px dan tahap pembetulan H."
+}

@@ -1,0 +1,47 @@
+{
+  "dataType": "Datatype",
+  "types": {
+    "url": "URL-adresse",
+    "text": "Tekst",
+    "vcard": "Visitkort (vCard)",
+    "email": "E-mail",
+    "phone": "Telefon"
+  },
+  "urlPlaceholder": "https://www.din-side.dk",
+  "textPlaceholder": "Skriv en vilkårlig tekst...",
+  "phonePlaceholder": "+45 12 34 56 78",
+  "size": "Størrelse (px)",
+  "margin": "Margin (stille zone)",
+  "qrColor": "QR-kodefarve",
+  "bgColor": "Baggrundsfarve",
+  "errorCorrection": "Fejlkorrektionsniveau",
+  "errorCorrectionLevels": {
+    "L": "L – Lav (7 %)",
+    "M": "M – Mellem (15 %)",
+    "Q": "Q – Høj (25 %)",
+    "H": "H – Maksimal (30 %)"
+  },
+  "preview": "Forhåndsvisning af QR-kode",
+  "downloadPng": "Download PNG",
+  "downloadSvg": "Download SVG",
+  "contrastWarning": "Kontrasten mellem farverne er for lav. QR-koden kan være svær at scanne.",
+  "contrastRatio": "Kontrastforhold",
+  "recommended": "Anbefalet minimum: 3:1",
+  "enterData": "Indtast data for at generere en QR-kode.",
+  "vcard": {
+    "firstName": "Fornavn",
+    "lastName": "Efternavn",
+    "organization": "Virksomhed (valgfrit)",
+    "title": "Titel (valgfrit)",
+    "phone": "Telefon (valgfrit)",
+    "email": "E-mail (valgfrit)",
+    "website": "Hjemmeside (valgfrit)",
+    "address": "Adresse (valgfrit)"
+  },
+  "email": {
+    "to": "E-mailadresse",
+    "subject": "Emne (valgfrit)",
+    "body": "Indhold (valgfrit)"
+  },
+  "printTip": "Til trykt materiale anbefaler vi en størrelse på mindst 300 px og fejlkorrektionsniveau H."
+}

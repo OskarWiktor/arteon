@@ -1,0 +1,44 @@
+[
+  {
+    "key": "product",
+    "label": "Deskripsi produk",
+    "minWords": 80,
+    "maxWords": 400,
+    "description": "Semakin sederhana produknya, semakin pendek deskripsinya. Produk kompleks (mis. elektronik) memerlukan penjelasan dan spesifikasi lebih banyak."
+  },
+  {
+    "key": "service",
+    "label": "Halaman layanan",
+    "minWords": 500,
+    "maxWords": 1500,
+    "description": "Layanan lokal sederhana memerlukan lebih sedikit kata. Penawaran kompleks dengan banyak tahapan dan pertanyaan klien memerlukan lebih banyak."
+  },
+  {
+    "key": "homepage",
+    "label": "Halaman utama",
+    "minWords": 400,
+    "maxWords": 1000,
+    "description": "Halaman utama mengarahkan pengunjung ke subhalaman. Pesan yang jelas dan struktur yang mudah dibaca memudahkan navigasi."
+  },
+  {
+    "key": "landing",
+    "label": "Halaman penawaran",
+    "minWords": 600,
+    "maxWords": 2500,
+    "description": "Penawaran dengan harga lebih tinggi memerlukan lebih banyak penjelasan dan pembangunan kepercayaan. Penawaran sederhana bisa lebih pendek."
+  },
+  {
+    "key": "blog",
+    "label": "Artikel blog",
+    "minWords": 1200,
+    "maxWords": 3000,
+    "description": "Panjangnya tergantung pada kompleksitas topik. Teks harus menjawab pertanyaan pembaca secara lengkap dan konkret."
+  },
+  {
+    "key": "guide",
+    "label": "Panduan / tutorial",
+    "minWords": 2500,
+    "maxWords": 6000,
+    "description": "Pembahasan detail suatu topik dengan berbagai aspek. Panjangnya tergantung pada cakupan tema."
+  }
+]

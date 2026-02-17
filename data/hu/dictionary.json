@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "mainNavigation": "Fő navigáció",
+    "logoAlt": "Arteon - céglogó",
+    "closeMenu": "Menü bezárása",
+    "openMenu": "Menü megnyitása",
+    "closeToolsList": "Eszközlista bezárása",
+    "openToolsList": "Eszközlista megnyitása",
+    "toolsLabel": "Eszközök",
+    "mobileMenu": "Mobil menü",
+    "aboutLabel": "Rólunk",
+    "contactLabel": "Kapcsolat"
+  },
+  "footer": {
+    "copyright": "Minden jog fenntartva.",
+    "description": "Ingyenes eszközök webfejlesztőknek, tervezőknek és marketingeseknek.",
+    "companyDataLabel": "Céginformáció",
+    "toolsLabel": "Eszközök",
+    "legalLabel": "Jogi dokumentumok",
+    "cookieSettingsLabel": "Cookie-beállítások"
+  },
+  "desktopOnly": {
+    "title": "Ez az eszköz nagyobb képernyőn működik",
+    "description": "Az eszköz kényelmes használatához nyissa meg laptopon, asztali számítógépen vagy táblagépen fekvő módban.",
+    "tipTitle": "Tipp",
+    "tipText": "Ha táblagépet használ, váltson fekvő módra - ha az ablak szélessége elég nagy, az eszköz automatikusan betöltődik."
+  },
+  "cookie": {
+    "title": "Cookie-k és adatvédelem",
+    "description": "Cookie-kat használunk a weboldal működtetéséhez, a forgalom elemzéséhez és hirdetések megjelenítéséhez. Tudjon meg többet a",
+    "setPreferences": "Beállítások megadása",
+    "privacyPolicy": "Adatvédelmi irányelvek",
+    "privacyPolicyHref": "/hu/adatvedelmi-iranyelvek",
+    "reject": "Összes elutasítása",
+    "settings": "Beállítások",
+    "accept": "Összes elfogadása",
+    "panelTitle": "Adatvédelmi beállítások",
+    "panelDescription": "Adatfeldolgozási hozzájárulás beállításai.",
+    "categoriesLegend": "Kategóriák",
+    "essentialTitle": "Alapvető",
+    "essentialDescription": "A weboldal nem működhet ezek nélkül. Nem gyűjtenek marketing adatokat.",
+    "essentialStatus": "Mindig aktív",
+    "analyticsTitle": "Elemzés (GA4)",
+    "analyticsDescription": "Látogatási statisztikák. Az Ön hozzájárulásával engedélyezi a Google Analytics 4-et.",
+    "analyticsLabel": "GA4 elemzés engedélyezése",
+    "adsTitle": "Hirdetések (Google AdSense)",
+    "adsDescription": "Személyre szabott hirdetések az érdeklődési köre alapján.",
+    "adsLabel": "Személyre szabott hirdetések engedélyezése",
+    "changeDecision": "Döntését bármikor megváltoztathatja",
+    "save": "Mentés"
+  },
+  "skipToContent": "Ugrás a tartalomhoz",
+  "legal": [
+    {
+      "key": "privacy",
+      "href": "/hu/adatvedelmi-iranyelvek",
+      "label": "Adatvédelmi irányelvek"
+    }
+  ],
+  "breadcrumbs": {
+    "home": "Főoldal",
+    "ariaLabel": "útmutató"
+  },
+  "contactForm": {
+    "nameLabel": "Teljes nev",
+    "namePlaceholder": "Kovacs Janos",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "kovacs.janos@gmail.com",
+    "subjectLabel": "Targy",
+    "subjectPlaceholder": "pl. Hibajelentes | Eszkoz javaslat | Kerdes",
+    "messageLabel": "Uzenet",
+    "messagePlaceholder": "Irja le kerdeset vagy javaslatat...",
+    "send": "Kuldes",
+    "error": "Valami hiba tortent. Ellenorizze az adatokat es probalkozzon ujra.",
+    "success": "Uzenet elkuldve! A leheto leghamarabb valaszolunk."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Ingyenes eszközök",
+    "seeAllTools": "Összes eszköz megtekintése",
+    "carouselLabel": "Eszköz karuszell",
+    "scrollLeft": "Görgetés balra",
+    "scrollRight": "Görgetés jobbra",
+    "carouselNavigation": "Karuszell navigáció",
+    "goToSlide": "Ugrás a diához",
+    "of": "/",
+    "slide": "Dia",
+    "tool": "Eszköz",
+    "openTool": "Eszköz megnyitása"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Váltás magyarra",
+    "toggleLabel": "Nyelv váltás",
+    "chooseLabel": "Nyelv választása",
+    "popularLabel": "Népszerű",
+    "otherLabel": "Egyéb",
+    "closeModalLabel": "Bezárás"
+  },
+  "mobileNav": {
+    "close": "Bezárás",
+    "services": "Szolgáltatások",
+    "contact": "Kapcsolat"
+  },
+  "infoBanner": {
+    "text": "E-mail aláírás generátor frissítés – fedezze fel az új funkciókat",
+    "linkText": "eszközök"
+  }
+}

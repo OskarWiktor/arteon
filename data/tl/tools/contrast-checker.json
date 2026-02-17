@@ -3,7 +3,7 @@
   "locale": "tl",
   "metadata": {
     "title": "Libreng Color Contrast Checker – WCAG 2.1 Compliance",
-    "description": "Suriin kung ang mga kulay ng teksto at background ay nababasa ayon sa WCAG 2.1. Mag-type ng HEX, RGB o HSL code,",
+    "description": "Suriin kung ang mga kulay ng teksto at background ay nababasa ayon sa WCAG 2.1. Mag-type ng HEX, RGB o HSL code, tingnan ang contrast ratio at gamitin ang auto-fix.",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/tl/mga-kasangkapan/tagasuri-ng-contrast-ng-kulay"
   },

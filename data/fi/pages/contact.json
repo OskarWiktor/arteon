@@ -1,0 +1,28 @@
+{
+  "slug": "yhteystiedot",
+  "metadata": {
+    "title": "Yhteystiedot – Arteon ilmaiset työkalut | Tuki ja palaute",
+    "description": "Ota yhteyttä Arteon-tiimiin. Ilmoita virheestä, ehdota uutta työkalua tai kysy meiltä ilmaisista kuva-, SEO-, väri- ja QR-koodityökaluistamme. Vastaamme yhden arkipäivän kuluessa."
+  },
+  "hero": {
+    "title": "Ota yhteyttä Arteon-tiimiin",
+    "description": "Ilmoita virheestä, ehdota uutta työkalua tai kysy kysymys – vastaamme yhden arkipäivän kuluessa"
+  },
+  "intro": {
+    "title": "Onko sinulla kysymys tai ehdotus?",
+    "textBefore": "Kuulemme mielellämme palautetta työkaluistamme. Jos löysit virheen, sinulla on idea uudesta työkalusta tai tarvitset apua – kirjoita meille osoitteeseen",
+    "textAfter": ". Vastaamme yhden arkipäivän kuluessa."
+  },
+  "formTitle": "Lähetä meille viesti",
+  "details": {
+    "title": "Yhteystiedot",
+    "emailLabel": "Sähköposti",
+    "hoursLabel": "Aukioloajat",
+    "hoursValue": "Maanantai – Perjantai: 8:00 – 16:00 (CET)"
+  },
+  "cta": {
+    "title": "Takaisin työkaluihin",
+    "description": "10 ilmaista työkalua kuvien, tekstin ja värien käsittelyyn",
+    "btnOne": "Työkalut"
+  }
+}

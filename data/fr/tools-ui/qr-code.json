@@ -1,0 +1,47 @@
+{
+  "dataType": "Type de données",
+  "types": {
+    "url": "Adresse URL",
+    "text": "Texte",
+    "vcard": "Carte de visite (vCard)",
+    "email": "E-mail",
+    "phone": "Téléphone"
+  },
+  "urlPlaceholder": "https://www.votre-site.fr",
+  "textPlaceholder": "Saisissez un texte...",
+  "phonePlaceholder": "+33 6 12 34 56 78",
+  "size": "Taille (px)",
+  "margin": "Marge (zone de silence)",
+  "qrColor": "Couleur du code QR",
+  "bgColor": "Couleur d'arrière-plan",
+  "errorCorrection": "Niveau de correction d'erreurs",
+  "errorCorrectionLevels": {
+    "L": "L  Faible (7 %)",
+    "M": "M  Moyen (15 %)",
+    "Q": "Q  Élevé (25 %)",
+    "H": "H  Maximum (30 %)"
+  },
+  "preview": "Aperçu du code QR",
+  "downloadPng": "Télécharger PNG",
+  "downloadSvg": "Télécharger SVG",
+  "contrastWarning": "Le contraste entre les couleurs est trop faible. Le code QR peut être difficile à scanner.",
+  "contrastRatio": "Rapport de contraste",
+  "recommended": "Minimum recommandé : 3:1",
+  "enterData": "Saisissez des données pour générer un code QR.",
+  "vcard": {
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "organization": "Entreprise (facultatif)",
+    "title": "Poste (facultatif)",
+    "phone": "Téléphone (facultatif)",
+    "email": "E-mail (facultatif)",
+    "website": "Site web (facultatif)",
+    "address": "Adresse (facultatif)"
+  },
+  "email": {
+    "to": "Adresse e-mail",
+    "subject": "Objet (facultatif)",
+    "body": "Message (facultatif)"
+  },
+  "printTip": "Pour les supports imprimés, nous recommandons une taille minimale de 300 px et un niveau de correction d'erreurs H."
+}

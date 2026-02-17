@@ -1,0 +1,23 @@
+{
+  "pasteText": "Wklej lub wpisz tekst",
+  "textPlaceholder": "Wklej tutaj tekst, który chcesz przeanalizować...",
+  "pageType": "Typ strony",
+  "pageTypeHelper": "Wybierz typ strony, dla której piszesz tekst. Każdy typ ma inne zalecenia dotyczące długości.",
+  "words": "Słowa",
+  "charsWithSpaces": "Znaki (ze spacjami)",
+  "charsWithoutSpaces": "Znaki (bez spacji)",
+  "paragraphs": "Akapity",
+  "readingTime": "Czas czytania",
+  "lengthEvaluation": "Ocena długości",
+  "recommendedRange": "Zalecany zakres",
+  "copyReport": "Kopiuj raport",
+  "copied": "Skopiowano",
+  "statistics": "Statystyki tekstu",
+  "noText": "Brak tekstu",
+  "empty": "Wpisz tekst, aby zobaczyć statystyki.",
+  "tooShort": "Za krótki",
+  "tooLong": "Za długi",
+  "ideal": "Dobra długość",
+  "analysisFor": "Analiza dla",
+  "wordsUnit": "słów"
+}

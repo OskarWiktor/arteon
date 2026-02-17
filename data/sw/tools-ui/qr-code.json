@@ -1,0 +1,47 @@
+{
+  "dataType": "Aina ya data",
+  "types": {
+    "url": "Anwani ya URL",
+    "text": "Maandishi",
+    "vcard": "Kadi ya biashara (vCard)",
+    "email": "Barua pepe",
+    "phone": "Simu"
+  },
+  "urlPlaceholder": "https://www.tovuti-yako.co.ke",
+  "textPlaceholder": "Andika maandishi yoyote...",
+  "phonePlaceholder": "+254 712 345 678",
+  "size": "Ukubwa (px)",
+  "margin": "Ukingo (eneo tulivu)",
+  "qrColor": "Rangi ya msimbo QR",
+  "bgColor": "Rangi ya mandharinyuma",
+  "errorCorrection": "Kiwango cha marekebisho ya hitilafu",
+  "errorCorrectionLevels": {
+    "L": "L – Chini (7%)",
+    "M": "M – Wastani (15%)",
+    "Q": "Q – Juu (25%)",
+    "H": "H – Kiwango cha juu (30%)"
+  },
+  "preview": "Hakiki ya msimbo QR",
+  "downloadPng": "Pakua PNG",
+  "downloadSvg": "Pakua SVG",
+  "contrastWarning": "Tofauti kati ya rangi ni ndogo sana. Msimbo QR unaweza kuwa mgumu kusomwa.",
+  "contrastRatio": "Uwiano wa tofauti",
+  "recommended": "Kiwango cha chini kinachopendekezwa: 3:1",
+  "enterData": "Ingiza data ili kuunda msimbo QR.",
+  "vcard": {
+    "firstName": "Jina la kwanza",
+    "lastName": "Jina la mwisho",
+    "organization": "Kampuni (hiari)",
+    "title": "Cheo (hiari)",
+    "phone": "Simu (hiari)",
+    "email": "Barua pepe (hiari)",
+    "website": "Tovuti (hiari)",
+    "address": "Anwani (hiari)"
+  },
+  "email": {
+    "to": "Anwani ya barua pepe",
+    "subject": "Mada (hiari)",
+    "body": "Maudhui (hiari)"
+  },
+  "printTip": "Kwa vifaa vilivyochapishwa, tunapendekeza ukubwa wa angalau 300px na kiwango cha marekebisho H."
+}

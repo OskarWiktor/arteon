@@ -1,0 +1,28 @@
+{
+  "slug": "iletisim",
+  "metadata": {
+    "title": "Arteon İletişim – Ücretsiz Araçlar Destek & Geri Bildirim",
+    "description": "Arteon ekibiyle iletişime geçin. Bir hata bildirin, yeni bir araç önerin veya görsel, SEO, renk ve QR kod araçlarımız hakkında soru sorun. Bir iş günü içinde yanıt veriyoruz."
+  },
+  "hero": {
+    "title": "Arteon ekibiyle iletişime geçin",
+    "description": "Hata bildirin, yeni araç önerin veya soru sorun — bir iş günü içinde yanıt veriyoruz"
+  },
+  "intro": {
+    "title": "Sorunuz veya öneriniz mi var?",
+    "textBefore": "Araçlarımız hakkındaki geri bildirimlerinizi duymaktan mutluluk duyarız. Bir hata bulduysanız, yeni bir araç fikriniz varsa veya yardıma ihtiyacınız varsa — bize yazın:",
+    "textAfter": ". Bir iş günü içinde yanıt veriyoruz."
+  },
+  "formTitle": "Bize mesaj gönderin",
+  "details": {
+    "title": "İletişim bilgileri",
+    "emailLabel": "E-posta",
+    "hoursLabel": "Çalışma saatleri",
+    "hoursValue": "Pazartesi – Cuma: 8:00 – 16:00 (CET)"
+  },
+  "cta": {
+    "title": "Araçlara dön",
+    "description": "Görsel, metin ve renklerle çalışmak için 10 ücretsiz araç",
+    "btnOne": "Araçlar"
+  }
+}

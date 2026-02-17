@@ -1,0 +1,47 @@
+{
+  "dataType": "Typ danych",
+  "types": {
+    "url": "Adres URL",
+    "text": "Tekst",
+    "vcard": "Wizytówka (vCard)",
+    "email": "E-mail",
+    "phone": "Telefon"
+  },
+  "urlPlaceholder": "https://www.twoja-strona.pl",
+  "textPlaceholder": "Wpisz dowolny tekst...",
+  "phonePlaceholder": "+48 123 456 789",
+  "size": "Rozmiar (px)",
+  "margin": "Margines (quiet zone)",
+  "qrColor": "Kolor kodu QR",
+  "bgColor": "Kolor tła",
+  "errorCorrection": "Poziom korekcji błędów",
+  "errorCorrectionLevels": {
+    "L": "L - Niski (7%)",
+    "M": "M - Średni (15%)",
+    "Q": "Q - Wysoki (25%)",
+    "H": "H - Maksymalny (30%)"
+  },
+  "preview": "Podgląd kodu QR",
+  "downloadPng": "Pobierz PNG",
+  "downloadSvg": "Pobierz SVG",
+  "contrastWarning": "Kontrast między kolorami jest zbyt niski. Kod QR może być trudny do zeskanowania.",
+  "contrastRatio": "Współczynnik kontrastu",
+  "recommended": "Zalecane minimum: 3:1",
+  "enterData": "Wpisz dane, aby wygenerować kod QR.",
+  "vcard": {
+    "firstName": "Imię",
+    "lastName": "Nazwisko",
+    "organization": "Firma (opcjonalnie)",
+    "title": "Stanowisko (opcjonalnie)",
+    "phone": "Telefon (opcjonalnie)",
+    "email": "E-mail (opcjonalnie)",
+    "website": "Strona WWW (opcjonalnie)",
+    "address": "Adres (opcjonalnie)"
+  },
+  "email": {
+    "to": "Adres e-mail",
+    "subject": "Temat (opcjonalnie)",
+    "body": "Treść (opcjonalnie)"
+  },
+  "printTip": "Dla materiałów drukowanych zalecamy rozmiar min. 300px i poziom korekcji H."
+}

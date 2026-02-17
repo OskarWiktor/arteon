@@ -1,0 +1,23 @@
+{
+  "pasteText": "Prilepite ali vnesite besedilo",
+  "textPlaceholder": "Prilepite besedilo, ki ga želite analizirati...",
+  "pageType": "Vrsta strani",
+  "pageTypeHelper": "Izberite vrsto strani, za katero pišete. Vsaka vrsta ima drugačna priporočila za dolžino.",
+  "words": "Besede",
+  "charsWithSpaces": "Znaki (s presledki)",
+  "charsWithoutSpaces": "Znaki (brez presledkov)",
+  "paragraphs": "Odstavki",
+  "readingTime": "Čas branja",
+  "lengthEvaluation": "Ocena dolžine",
+  "recommendedRange": "Priporočen razpon",
+  "copyReport": "Kopiraj poročilo",
+  "copied": "Kopirano",
+  "statistics": "Statistika besedila",
+  "noText": "Ni besedila",
+  "empty": "Vnesite besedilo za prikaz statistike.",
+  "tooShort": "Prekratko",
+  "tooLong": "Predolgo",
+  "ideal": "Dobra dolžina",
+  "analysisFor": "Analiza za",
+  "wordsUnit": "besed"
+}

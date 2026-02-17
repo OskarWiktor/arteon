@@ -1,0 +1,78 @@
+{
+  "slug": "om-os",
+  "metadata": {
+    "title": "Om Arteon – 10 gratis værktøjer til web, SEO og design",
+    "description": "Arteon er et kreativt bureau, der bygger gratis browserbaserede værktøjer: WebP-konverter, favicon-generator, farvekontrastchecker, QR-kodegenerator og mere. Uden tilmelding, uden upload — alt kører lokalt."
+  },
+  "hero": {
+    "title": "Gratis værktøjer fra et kreativt bureau",
+    "description": "10 browserværktøjer til billeder, SEO, farver, e-mailsignaturer og QR-koder — uden tilmelding, uden filupload, uden begrænsninger"
+  },
+  "whoWeAre": {
+    "title": "Hvem vi er",
+    "p1": "Arteon er et polsk kreativt bureau. Ud over vores kommercielle arbejde bygger og vedligeholder vi en voksende samling gratis værktøjer designet til virksomhedsejere, webskabere, designere, marketingfolk og alle, der arbejder med digitalt indhold.",
+    "p2": "Hvert værktøj, vi skaber, løser et specifikt hverdagsproblem: konvertering af billeder, kontrol af farvekontrast, generering af favicons, oprettelse af QR-koder og mere. Vores mål er at bygge en komplet værktøjskasse, hvor du finder alt, hvad du har brug for ét sted — uden at skifte mellem snesevis af forskellige websteder."
+  },
+  "whyFree": {
+    "title": "Hvorfor vi tilbyder gratis værktøjer",
+    "items": [
+      {
+        "title": "Uden tilmelding, uden begrænsninger",
+        "description": "Hvert værktøj virker med det samme i din browser. Ingen konto, ingen login, ingen betaling."
+      },
+      {
+        "title": "Privatliv først",
+        "description": "Dine filer forlader aldrig din enhed. Al behandling sker lokalt i browseren — vi sender ikke dine data til nogen server."
+      },
+      {
+        "title": "Skabt ud fra reelle behov",
+        "description": "Hvert værktøj er født af et reelt problem, vi stødte på, da vi arbejdede med kundeprojekter. Hvis vi havde brug for det, har du sandsynligvis også."
+      },
+      {
+        "title": "Finansieret af annoncer, gratis for dig",
+        "description": "Vi bruger Google AdSense-bannere til at dække udviklings- og hostingomkostninger. Takket være annonceindtægter kan vi holde alle værktøjer gratis og fortsætte med at bygge nye."
+      }
+    ]
+  },
+  "ourTools": {
+    "title": "Vores værktøjer",
+    "items": [
+      {
+        "title": "Billeder & favicons",
+        "description": "WebP-konverter, billedredigering og favicongenerator. 3 værktøjer til dagligt billedarbejde."
+      },
+      {
+        "title": "Meta & SEO",
+        "description": "Meta-titel og beskrivelseskontrol samt en ord- og tegntæller til vurdering af tekstlængde."
+      },
+      {
+        "title": "E-mail & kommunikation",
+        "description": "HTML-e-mailsignaturgenerator med færdig kode til Gmail og Outlook."
+      },
+      {
+        "title": "Farver & tilgængelighed",
+        "description": "WCAG-kontrastchecker, farveudtrækker fra billeder og farvepaletgenerator. 3 værktøjer til farvearbejde."
+      },
+      {
+        "title": "Tryk & materialer",
+        "description": "QR-kodegenerator til websteder, vCards, menuer og foldere. Eksport til PNG og SVG."
+      }
+    ]
+  },
+  "whatsNext": {
+    "title": "Hvad der kommer",
+    "text": "Vi arbejder aktivt på at udvide værktøjskassen. Nye værktøjer tilføjes regelmæssigt baseret på brugerfeedback og vores egen erfaring. Målet er én platform, hvor virksomhedsejere, designere og udviklere har adgang til hvert vigtigt værktøj — alt ét sted, alt gratis."
+  },
+  "privacy": {
+    "title": "Privatliv og sikkerhed",
+    "textBefore": "Vi respekterer dit privatliv. Filer, du uploader til vores værktøjer, behandles udelukkende i din browser og sendes aldrig til nogen server. Vi bruger analyse (Google Analytics 4) og annoncering (Google AdSense) kun efter dit samtykke via cookiebanneret. Alle detaljer findes i vores",
+    "linkLabel": "Privatlivspolitik",
+    "textAfter": "."
+  },
+  "cta": {
+    "title": "Prøv vores værktøjer",
+    "description": "10 gratis værktøjer — uden tilmelding, uden begrænsninger, uden filupload til servere",
+    "btnOne": "Gå til værktøjerne",
+    "btnTwo": "Kontakt"
+  }
+}

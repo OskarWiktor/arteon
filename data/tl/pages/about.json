@@ -1,0 +1,78 @@
+{
+  "slug": "tungkol-sa-amin",
+  "metadata": {
+    "title": "Tungkol sa Arteon – 10 Libreng Tool para sa Web, SEO at Disenyo",
+    "description": "Ang Arteon ay isang creative agency na gumagawa ng libreng browser-based na mga tool: WebP converter, favicon generator, color contrast checker, QR code maker at marami pa. Walang registration, walang upload — lahat ay lokal na tumatakbo."
+  },
+  "hero": {
+    "title": "Mga libreng tool mula sa isang creative agency",
+    "description": "10 browser-based na tool para sa mga larawan, SEO, kulay, email signature at QR code — walang registration, walang pag-upload ng file, walang limitasyon"
+  },
+  "whoWeAre": {
+    "title": "Sino kami",
+    "p1": "Ang Arteon ay isang Polish creative agency. Bukod sa aming komersyal na trabaho, gumagawa at nagpapanatili kami ng lumalaking koleksyon ng mga libreng tool na dinisenyo para sa mga may-ari ng negosyo, web creator, designer, marketer, at sinumang nagtatrabaho sa digital na nilalaman.",
+    "p2": "Bawat tool na ginagawa namin ay lumutas ng isang tiyak na pang-araw-araw na problema: pag-convert ng mga larawan, pag-check ng color contrast, pag-generate ng favicon, paggawa ng QR code, at marami pa. Ang layunin namin ay bumuo ng komprehensibong toolkit kung saan mahahanap mo ang lahat ng kailangan mo sa isang lugar — nang hindi lumilipat sa dosena-dosenang iba’t ibang website."
+  },
+  "whyFree": {
+    "title": "Bakit nag-aalok kami ng mga libreng tool",
+    "items": [
+      {
+        "title": "Walang registration, walang limitasyon",
+        "description": "Bawat tool ay gumagana agad sa browser mo. Walang account, walang login, walang bayad."
+      },
+      {
+        "title": "Privacy muna",
+        "description": "Hindi umaalis ang mga file mo sa device mo. Lahat ng pagproseso ay lokal sa browser — hindi namin ipinapadala ang datos mo sa anumang server."
+      },
+      {
+        "title": "Gawa mula sa tunay na pangangailangan",
+        "description": "Bawat tool ay ipinanganak mula sa tunay na problemang naranasan namin habang nagtatrabaho sa mga proyekto ng kliyente. Kung kailangan namin ito, malamang na kailangan mo rin."
+      },
+      {
+        "title": "Pinopondohan ng ads, libre para sa iyo",
+        "description": "Gumagamit kami ng Google AdSense banner para masakop ang gastos sa development at hosting. Salamat sa kita mula sa ads, mananatiling libre ang lahat ng tool at patuloy kaming gagawa ng bago."
+      }
+    ]
+  },
+  "ourTools": {
+    "title": "Ang aming mga tool",
+    "items": [
+      {
+        "title": "Mga larawan at favicon",
+        "description": "WebP converter, image editor, at favicon generator. 3 tool para sa pang-araw-araw na pagtatrabaho sa larawan."
+      },
+      {
+        "title": "Meta at SEO",
+        "description": "Meta title at description checker kasama ang word at character counter para suriin ang haba ng teksto."
+      },
+      {
+        "title": "Email at komunikasyon",
+        "description": "HTML email signature generator na may handa nang code para sa Gmail at Outlook."
+      },
+      {
+        "title": "Kulay at accessibility",
+        "description": "WCAG contrast checker, image color extractor, at color palette generator. 3 tool para sa pagtatrabaho sa kulay."
+      },
+      {
+        "title": "Print at materyales",
+        "description": "QR code generator para sa website, vCard, menu, at flyer. I-export sa PNG at SVG."
+      }
+    ]
+  },
+  "whatsNext": {
+    "title": "Ano ang susunod",
+    "text": "Aktibo kaming nagtatrabaho sa pagpapalawak ng toolkit. Ang mga bagong tool ay regular na idinaragdag batay sa feedback ng mga gumagamit at sarili naming karanasan. Ang layunin ay isang plataporma kung saan ang mga may-ari ng negosyo, designer, at developer ay may access sa bawat mahalagang tool — lahat sa isang lugar, lahat libre."
+  },
+  "privacy": {
+    "title": "Privacy at seguridad",
+    "textBefore": "Nirerespeto namin ang privacy mo. Ang mga file na ina-upload mo sa aming mga tool ay pinoproseso lamang sa browser mo at hindi kailanman ipinapadala sa anumang server. Gumagamit kami ng analytics (Google Analytics 4) at advertising (Google AdSense) lamang pagkatapos mong magbigay ng pahintulot sa pamamagitan ng cookie banner. Ang buong detalye ay makikita sa aming",
+    "linkLabel": "Patakaran sa Privacy",
+    "textAfter": "."
+  },
+  "cta": {
+    "title": "Subukan ang aming mga tool",
+    "description": "10 libreng tool — walang registration, walang limitasyon, walang pag-upload ng file sa server",
+    "btnOne": "Pumunta sa mga tool",
+    "btnTwo": "Makipag-ugnayan"
+  }
+}

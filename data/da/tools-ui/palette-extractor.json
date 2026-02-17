@@ -1,0 +1,18 @@
+{
+  "unsupportedFormatsOnly": "Denne fil understøttes ikke. Upload PNG, JPG/JPEG eller SVG.",
+  "unexpectedError": "Kunne ikke analysere billedet. Prøv igen eller brug en anden fil.",
+  "addImageLabel": "Tilføj billede",
+  "dragDropImage": "Træk og slip et billede her",
+  "clickToSelect": "eller klik for at vælge en fil",
+  "supportedFormats": "Understøttet: PNG, JPG/JPEG, SVG",
+  "preview": "Forhåndsvisning og palet",
+  "addImageToStart": "Upload et billede, og værktøjet viser de dominerende farver. Kopiér hver kode med ét klik – perfekt til UI, branding og sociale medier.",
+  "processing": "Analyserer billede og opretter palet…",
+  "colorPreview": "Farveforhåndsvisning",
+  "copy": "Kopiér",
+  "copied": "Kopieret",
+  "empty": "Kunne ikke registrere dominerende farver. Prøv et andet billede.",
+  "selectedFile": "Valgt fil:",
+  "copyHint": "Klik på «Kopiér» for at kopiere farvekoden.",
+  "previewAlt": "Forhåndsvisning"
+}

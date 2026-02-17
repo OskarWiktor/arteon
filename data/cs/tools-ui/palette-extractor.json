@@ -1,0 +1,18 @@
+{
+  "unsupportedFormatsOnly": "Tento soubor není podporován. Nahrajte PNG, JPG/JPEG nebo SVG.",
+  "unexpectedError": "Nepodařilo se analyzovat obrázek. Zkuste to znovu nebo použijte jiný soubor.",
+  "addImageLabel": "Přidat obrázek",
+  "dragDropImage": "Přetáhněte obrázek sem",
+  "clickToSelect": "nebo klikněte pro výběr souboru",
+  "supportedFormats": "Podporované: PNG, JPG/JPEG, SVG",
+  "preview": "Náhled a paleta",
+  "addImageToStart": "Nahrajte obrázek a nástroj zobrazí jeho dominantní barvy. Každý kód zkopírujete jedním kliknutím – ideální pro UI, branding a sociální sítě.",
+  "processing": "Analyzuji obrázek a vytvářím paletu…",
+  "colorPreview": "Náhled barvy",
+  "copy": "Zkopírovat",
+  "copied": "Zkopírováno",
+  "empty": "Nepodařilo se rozpoznat dominantní barvy. Zkuste jiný obrázek.",
+  "selectedFile": "Vybraný soubor:",
+  "copyHint": "Klikněte na «Zkopírovat» pro zkopírování kódu barvy.",
+  "previewAlt": "Náhled"
+}

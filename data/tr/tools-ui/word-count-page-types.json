@@ -1,0 +1,44 @@
+[
+  {
+    "key": "product",
+    "label": "Ürün açıklaması",
+    "minWords": 80,
+    "maxWords": 400,
+    "description": "Ürün ne kadar basit olursa, açıklama o kadar kısa olur. Karmaşık ürünler (örn. elektronik) daha fazla açıklama ve teknik özellik gerektirir."
+  },
+  {
+    "key": "service",
+    "label": "Hizmet sayfası",
+    "minWords": 500,
+    "maxWords": 1500,
+    "description": "Basit bir yerel hizmet daha az kelime gerektirir. Birden fazla aşaması ve müşteri sorusu olan karmaşık bir teklif daha fazla gerektirir."
+  },
+  {
+    "key": "homepage",
+    "label": "Ana sayfa",
+    "minWords": 400,
+    "maxWords": 1000,
+    "description": "Ana sayfa ziyaretçileri alt sayfalara yönlendirir. Net bir mesaj ve okunabilir bir yapı navigasyonu kolaylaştırır."
+  },
+  {
+    "key": "landing",
+    "label": "Teklif sayfası",
+    "minWords": 600,
+    "maxWords": 2500,
+    "description": "Daha pahalı talepler daha fazla açıklama ve güven inşası gerektirir. Basit bir teklif daha kısa olabilir."
+  },
+  {
+    "key": "blog",
+    "label": "Blog yazısı",
+    "minWords": 1200,
+    "maxWords": 3000,
+    "description": "Uzunluk konunun karmaşıklığına bağlıdır. Metin, okuyucunun sorularını kapsamlı ve somut bir şekilde yanıtlamalıdır."
+  },
+  {
+    "key": "guide",
+    "label": "Rehber / kılavuz",
+    "minWords": 2500,
+    "maxWords": 6000,
+    "description": "Bir konunun birden fazla yönüyle ayrıntılı incelenmesi. Uzunluk temanın kapsamına bağlıdır."
+  }
+]

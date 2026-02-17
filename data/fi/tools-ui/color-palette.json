@@ -1,0 +1,52 @@
+{
+  "selectBaseColor": "Valitse perusväri",
+  "updateColor": "Päivitä väri",
+  "randomColor": "Satunnainen väri",
+  "currentBaseColor": "Nykyinen perusväri",
+  "baseColorHelper": "Kaikki alla olevat paletit perustuvat tähän väriin.",
+  "colorPreview": "Värin esikatselu",
+  "copied": "Kopioitu",
+  "copy": "Kopioi",
+  "generatedPalettes": "Luodut väripaletit",
+  "colorReadError": "Väriä ei voitu lukea. Varmista, että käytät muotoa",
+  "example": "esim.",
+  "enterValidColor": "Syötä kelvollinen HEX-väri luodaksesi paletit. Kaikki laskelmat tehdään paikallisesti selaimessasi.",
+  "palettes": {
+    "monochromatic": {
+      "label": "Monokromaattinen paletti",
+      "description": "Kaikilla väreillä on sama sävy (H), ja ne eroavat pääasiassa valoisuudessa (L) HSL-väriavaruudessa."
+    },
+    "analogous": {
+      "label": "Analoginen paletti",
+      "description": "Värit, joilla on samankaltainen sävy – noin -30°–+30° perusväristä klassisella väripyörällä (esim. Itten)."
+    },
+    "complementary": {
+      "label": "Komplementaarinen paletti",
+      "description": "Perusväri ja sen komplementti 180° päässä väripyörällä – yksi Johannes Ittenin kuvaamista perusvärikontrasteista."
+    },
+    "triadic": {
+      "label": "Triadinen paletti",
+      "description": "Kolme sävyä 120° välein väripyörällä (tasasivuisen kolmion kärjet) – geometria, jota käytetään usein brändäyksessä ja Bauhaus-henkisessä suunnittelussa."
+    },
+    "splitComplementary": {
+      "label": "Jaettu komplementaarinen paletti",
+      "description": "Komplementaaripalatin muunnelma – yhden komplementin (180°) sijaan käytetään kahta väriä n. ±30° komplementista, mikä vähentää visuaalista jännitteitä säilyttäen vahvan kontrastin."
+    },
+    "softPastel": {
+      "label": "Pastellipaletti",
+      "description": "Sama sävy vähennetyllä kylläisyydellä ja lisätyllä valoisuudella – siirtymä HSL-avaruuden keskelle ja ylöspäin, mikä tuottaa pehmeitä, ”kremä” värejä."
+    },
+    "deepDark": {
+      "label": "Tumma paletti",
+      "description": "Sama sävy korkealla kylläisyydellä (S) ja matalalla valoisuudella (L) – siirtymä alas valoisuusakselilla, mikä tuottaa syviä värejä tyypillisiä tummalle tilalle ja voimakkaille aksenteille."
+    },
+    "materialTonal": {
+      "label": "Tonaalinen paletti (Material Design -henkinen)",
+      "description": "Useita valoisuusasteita yhdestä sävystä – vaihteleva L ja maltillinen S, vastaten Material Designin ohjeistuksen tonaalisia välejä (esim. 50–900)."
+    },
+    "appleMinimal": {
+      "label": "Minimalistinen paletti (Apple-henkinen)",
+      "description": "Näkyvä väriaksentti ja useita hyvin vaaleita, pehmeitä neutraaleja sävyjä – asettelu tyypillinen käyttöliittymille, joissa on paljon valkoista tilaa ja hienovaraisia varjoja."
+    }
+  }
+}

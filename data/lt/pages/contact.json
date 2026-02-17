@@ -1,0 +1,28 @@
+{
+  "slug": "kontaktai",
+  "metadata": {
+    "title": "Kontaktai – Arteon nemokami įrankiai | Palaikymas ir atsiliepimai",
+    "description": "Susisiekite su Arteon komanda. Praneškite apie klaidą, pasiūlykite naują įrankį arba užduokite klausimą apie mūsų nemokamus vaizdų, SEO, spalvų ir QR kodų įrankius. Atsakome per vieną darbo dieną."
+  },
+  "hero": {
+    "title": "Susisiekite su Arteon komanda",
+    "description": "Praneškite apie klaidą, pasiūlykite naują įrankį arba užduokite klausimą — atsakome per vieną darbo dieną"
+  },
+  "intro": {
+    "title": "Turite klausimą ar pasiūlymą?",
+    "textBefore": "Mielai išgirsite jūsų atsiliepimus apie mūsų įrankius. Jei radote klaidą, turite idėją naujam įrankiui arba reikia pagalbos — rašykite mums adresu",
+    "textAfter": ". Atsakome per vieną darbo dieną."
+  },
+  "formTitle": "Atsiųskite mums žinutę",
+  "details": {
+    "title": "Kontaktinė informacija",
+    "emailLabel": "El. paštas",
+    "hoursLabel": "Darbo valandos",
+    "hoursValue": "Pirmadienis – Penktadienis: 8:00 – 16:00 (CET)"
+  },
+  "cta": {
+    "title": "Grįžti prie įrankių",
+    "description": "10 nemokamų įrankių darbui su vaizdais, tekstu ir spalvomis",
+    "btnOne": "Įrankiai"
+  }
+}

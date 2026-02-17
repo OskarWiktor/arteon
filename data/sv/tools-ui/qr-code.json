@@ -1,0 +1,47 @@
+{
+  "dataType": "Datatyp",
+  "types": {
+    "url": "URL-adress",
+    "text": "Text",
+    "vcard": "Visitkort (vCard)",
+    "email": "E-post",
+    "phone": "Telefon"
+  },
+  "urlPlaceholder": "https://www.din-sida.se",
+  "textPlaceholder": "Skriv valfri text...",
+  "phonePlaceholder": "+46 70 123 45 67",
+  "size": "Storlek (px)",
+  "margin": "Marginal (tyst zon)",
+  "qrColor": "QR-kodfärg",
+  "bgColor": "Bakgrundsfärg",
+  "errorCorrection": "Felkorrigeringsnivå",
+  "errorCorrectionLevels": {
+    "L": "L – Låg (7 %)",
+    "M": "M – Medel (15 %)",
+    "Q": "Q – Hög (25 %)",
+    "H": "H – Maximal (30 %)"
+  },
+  "preview": "Förhandsgranskning av QR-kod",
+  "downloadPng": "Ladda ner PNG",
+  "downloadSvg": "Ladda ner SVG",
+  "contrastWarning": "Kontrasten mellan färgerna är för låg. QR-koden kan vara svår att skanna.",
+  "contrastRatio": "Kontrastförhållande",
+  "recommended": "Rekommenderat minimum: 3:1",
+  "enterData": "Ange data för att generera en QR-kod.",
+  "vcard": {
+    "firstName": "Förnamn",
+    "lastName": "Efternamn",
+    "organization": "Företag (valfritt)",
+    "title": "Titel (valfritt)",
+    "phone": "Telefon (valfritt)",
+    "email": "E-post (valfritt)",
+    "website": "Webbplats (valfritt)",
+    "address": "Adress (valfritt)"
+  },
+  "email": {
+    "to": "E-postadress",
+    "subject": "Ämne (valfritt)",
+    "body": "Innehåll (valfritt)"
+  },
+  "printTip": "För tryckt material rekommenderar vi minst 300 px och felkorrigeringsnivå H."
+}

@@ -3,7 +3,7 @@
   "locale": "id",
   "metadata": {
     "title": "Pemeriksa Kontras Warna Gratis – Kepatuhan WCAG 2.1",
-    "description": "Periksa apakah warna teks dan latar belakang Anda dapat dibaca sesuai WCAG 2.1. Masukkan kode HEX, RGB atau HSL,",
+    "description": "Periksa apakah warna teks dan latar belakang Anda dapat dibaca sesuai WCAG 2.1. Masukkan kode HEX, RGB atau HSL, lihat rasio kontras dan gunakan koreksi otomatis.",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/id/alat/pemeriksa-kontras-warna"
   },

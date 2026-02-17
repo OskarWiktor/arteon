@@ -1,0 +1,52 @@
+{
+  "selectBaseColor": "Vyberte základnú farbu",
+  "updateColor": "Aktualizovať farbu",
+  "randomColor": "Náhodná farba",
+  "currentBaseColor": "Aktuálna základná farba",
+  "baseColorHelper": "Všetky palety nižšie sú založené na tejto farbe.",
+  "colorPreview": "Náhľad farby",
+  "copied": "Skopírované",
+  "copy": "Kopírovať",
+  "generatedPalettes": "Vygenerované farebné palety",
+  "colorReadError": "Farbu sa nepodarilo prečítať. Uistite sa, že používate formát",
+  "example": "napr.",
+  "enterValidColor": "Zadajte platnú farbu HEX na vytvorenie palét. Všetky výpočty prebiehajú lokálne vo vašom prehliadači.",
+  "palettes": {
+    "monochromatic": {
+      "label": "Monochromatická paleta",
+      "description": "Všetky farby majú rovnaký odtieň (H) a líšia sa hlavne v svetlosti (L) v priestore HSL."
+    },
+    "analogous": {
+      "label": "Analogická paleta",
+      "description": "Farby s podobným odtieňom – približne -30° až +30° od základnej farby na klasickom farebnom kruhu (napr. Itten)."
+    },
+    "complementary": {
+      "label": "Komplementárna paleta",
+      "description": "Základná farba a jej komplement 180° na farebnom kruhu – jeden zo základných farebných kontrastov podľa Johannesa Ittena."
+    },
+    "triadic": {
+      "label": "Triadická paleta",
+      "description": "Tri odtiene rozložené po 120° na farebnom kruhu (vrcholy rovnostranného trojúholníka) – geometria často používaná v brandingu a dizajne v duchu Bauhausu."
+    },
+    "splitComplementary": {
+      "label": "Rozdelená komplementárna paleta",
+      "description": "Variant komplementárnej palety – namiesto jedného komplementu (180°) sa používajú dve farby približne ±30° od komplementu, čo znižuje vizuálne napätie pri zachovaní silného kontrastu."
+    },
+    "softPastel": {
+      "label": "Pastelová paleta",
+      "description": "Rovnaký odtieň so zníženou sýtosťou a zvýšenou svetlosťou – posun v priestore HSL smerom k stredu a nahor, čo vytvára jemné, „krémové“ farby."
+    },
+    "deepDark": {
+      "label": "Tmavá paleta",
+      "description": "Rovnaký odtieň s vysokou sýtosťou (S) a nízkou svetlosťou (L) – posun nadol po osi svetlosti, čo vytvára hlboké farby typické pre tmavý režim a výrazné akcenty."
+    },
+    "materialTonal": {
+      "label": "Tonálna paleta (Material Design)",
+      "description": "Viacero stupňov svetlosti z jedného odtieňa – meniace sa L a mierna S, zrkadlenie tonálnych intervalov podľa Material Designu (napr. 50–900)."
+    },
+    "appleMinimal": {
+      "label": "Minimalistická paleta (Apple)",
+      "description": "Výrazný farebný akcent a niekoľko veľmi svetlých, jemných neutrálnych odtieňov – rozloženie typické pre rozhrania s veľkým bielym priestorom a jemnými tieňmi."
+    }
+  }
+}

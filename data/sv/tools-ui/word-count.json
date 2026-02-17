@@ -1,0 +1,23 @@
+{
+  "pasteText": "Klistra in eller skriv text",
+  "textPlaceholder": "Klistra in texten du vill analysera här...",
+  "pageType": "Sidtyp",
+  "pageTypeHelper": "Välj den sidtyp du skriver för. Varje typ har olika längdrekommendationer.",
+  "words": "Ord",
+  "charsWithSpaces": "Tecken (med mellanslag)",
+  "charsWithoutSpaces": "Tecken (utan mellanslag)",
+  "paragraphs": "Stycken",
+  "readingTime": "Lästid",
+  "lengthEvaluation": "Längduvärdering",
+  "recommendedRange": "Rekommenderat intervall",
+  "copyReport": "Kopiera rapport",
+  "copied": "Kopierad",
+  "statistics": "Textstatistik",
+  "noText": "Ingen text",
+  "empty": "Skriv text för att se statistik.",
+  "tooShort": "För kort",
+  "tooLong": "För lång",
+  "ideal": "Bra längd",
+  "analysisFor": "Analys för",
+  "wordsUnit": "ord"
+}

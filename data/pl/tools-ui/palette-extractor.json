@@ -1,0 +1,18 @@
+{
+  "unsupportedFormatsOnly": "Ten plik nie jest obsługiwany. Wgraj PNG, JPG/JPEG lub SVG.",
+  "unexpectedError": "Nie udało się przeanalizować obrazu. Spróbuj ponownie lub użyj innego pliku.",
+  "addImageLabel": "Dodaj obraz",
+  "dragDropImage": "Przeciągnij i upuść obraz tutaj",
+  "clickToSelect": "lub kliknij, aby wybrać plik z dysku",
+  "supportedFormats": "Obsługiwane: PNG, JPG/JPEG, SVG",
+  "preview": "Podgląd i paleta",
+  "addImageToStart": "Wgraj obraz, a narzędzie pokaże jego dominujące kolory. Każdy kod skopiujesz jednym kliknięciem - idealne do UI, brandingu i social mediów.",
+  "processing": "Analizuję obraz i tworzę paletę…",
+  "colorPreview": "Podgląd koloru",
+  "copy": "Kopiuj",
+  "copied": "Skopiowano",
+  "empty": "Nie udało się wykryć dominujących kolorów. Spróbuj innego obrazu.",
+  "selectedFile": "Wybrany plik:",
+  "copyHint": "Kliknij „Kopiuj\", aby skopiować kod koloru.",
+  "previewAlt": "Podgląd"
+}

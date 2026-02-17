@@ -1,0 +1,78 @@
+{
+  "slug": "gioi-thieu",
+  "metadata": {
+    "title": "Về Arteon – 10 Công Cụ Miễn Phí cho Web, SEO & Thiết Kế",
+    "description": "Arteon là một agency sáng tạo xây dựng các công cụ miễn phí trên trình duyệt: chuyển đổi WebP, tạo favicon, kiểm tra độ tương phản màu, tạo mã QR và nhiều hơn. Không đăng ký, không tải lên — mọi thứ chạy cục bộ."
+  },
+  "hero": {
+    "title": "Công cụ miễn phí được xây dựng bởi agency sáng tạo",
+    "description": "10 công cụ trình duyệt cho hình ảnh, SEO, màu sắc, chữ ký email và mã QR — không đăng ký, không tải file, không giới hạn"
+  },
+  "whoWeAre": {
+    "title": "Chúng tôi là ai",
+    "p1": "Arteon là agency sáng tạo đến từ Ba Lan. Ngoài công việc thương mại, chúng tôi xây dựng và duy trì bộ sưu tập công cụ miễn phí ngày càng lớn, dành cho chủ doanh nghiệp, nhà tạo web, designer, marketer và bất kỳ ai làm việc với nội dung số.",
+    "p2": "Mỗi công cụ chúng tôi tạo giải quyết một vấn đề cụ thể hàng ngày: chuyển đổi hình ảnh, kiểm tra độ tương phản, tạo favicon, tạo mã QR và nhiều hơn. Mục tiêu là xây dựng bộ công cụ toàn diện nơi bạn tìm được mọi thứ cần thiết ở một nơi — không cần chuyển đổi giữa hàng chục trang web."
+  },
+  "whyFree": {
+    "title": "Tại sao chúng tôi cung cấp công cụ miễn phí",
+    "items": [
+      {
+        "title": "Không đăng ký, không giới hạn",
+        "description": "Mọi công cụ hoạt động ngay trên trình duyệt. Không cần tài khoản, đăng nhập hay thanh toán."
+      },
+      {
+        "title": "Quyền riêng tư là ưu tiên",
+        "description": "File của bạn không bao giờ rời khỏi thiết bị. Mọi xử lý diễn ra cục bộ trên trình duyệt — chúng tôi không gửi dữ liệu đến bất kỳ server nào."
+      },
+      {
+        "title": "Xây dựng từ nhu cầu thực",
+        "description": "Mỗi công cụ ra đời từ vấn đề thực tế chúng tôi gặp khi làm dự án khách hàng. Nếu chúng tôi cần, có thể bạn cũng vậy."
+      },
+      {
+        "title": "Tài trợ bởi quảng cáo, miễn phí cho bạn",
+        "description": "Chúng tôi sử dụng banner Google AdSense để trang trải chi phí phát triển và hosting. Nhờ doanh thu quảng cáo, chúng tôi giữ tất cả công cụ miễn phí và tiếp tục xây dựng cái mới."
+      }
+    ]
+  },
+  "ourTools": {
+    "title": "Công cụ của chúng tôi",
+    "items": [
+      {
+        "title": "Hình ảnh & favicon",
+        "description": "Chuyển đổi WebP, chỉnh sửa hình ảnh và tạo favicon. 3 công cụ cho công việc hình ảnh hàng ngày."
+      },
+      {
+        "title": "Meta & SEO",
+        "description": "Kiểm tra meta title và description cùng bộ đếm từ và ký tự để đánh giá độ dài văn bản."
+      },
+      {
+        "title": "Email & giao tiếp",
+        "description": "Tạo chữ ký email HTML với mã sẵn sàng cho Gmail và Outlook."
+      },
+      {
+        "title": "Màu sắc & trợ năng",
+        "description": "Kiểm tra tương phản WCAG, trích xuất màu từ hình ảnh và tạo bảng màu. 3 công cụ làm việc với màu."
+      },
+      {
+        "title": "In ấn & tài liệu",
+        "description": "Tạo mã QR cho trang web, vCard, thực đơn và tờ rơi. Xuất ra PNG và SVG."
+      }
+    ]
+  },
+  "whatsNext": {
+    "title": "Tiếp theo là gì",
+    "text": "Chúng tôi đang tích cực mở rộng bộ công cụ. Công cụ mới được thêm thường xuyên dựa trên góp ý của người dùng và kinh nghiệm của chúng tôi. Mục tiêu là nền tảng duy nhất nơi chủ doanh nghiệp, designer và lập trình viên có quyền truy cập mọi công cụ thiết yếu — tất cả ở một nơi, tất cả miễn phí."
+  },
+  "privacy": {
+    "title": "Quyền riêng tư và bảo mật",
+    "textBefore": "Chúng tôi tôn trọng quyền riêng tư của bạn. File bạn tải lên công cụ được xử lý hoàn toàn trong trình duyệt và không bao giờ gửi đến server. Chúng tôi sử dụng phân tích (Google Analytics 4) và quảng cáo (Google AdSense) chỉ sau khi bạn đồng ý qua banner cookie. Chi tiết đầy đủ có trong",
+    "linkLabel": "Chính Sách Bảo Mật",
+    "textAfter": " của chúng tôi."
+  },
+  "cta": {
+    "title": "Thử công cụ của chúng tôi",
+    "description": "10 công cụ miễn phí — không đăng ký, không giới hạn, không tải file lên server",
+    "btnOne": "Đến công cụ",
+    "btnTwo": "Liên hệ"
+  }
+}

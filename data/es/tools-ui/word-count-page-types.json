@@ -1,0 +1,44 @@
+[
+  {
+    "key": "product",
+    "label": "Descripción de producto",
+    "minWords": 80,
+    "maxWords": 400,
+    "description": "Cuanto más sencillo el producto, más corta la descripción. Productos complejos (p. ej. electrónica) requieren más explicaciones y especificaciones."
+  },
+  {
+    "key": "service",
+    "label": "Página de servicio",
+    "minWords": 500,
+    "maxWords": 1500,
+    "description": "Un servicio local sencillo necesita menos texto. Una oferta compleja con varias etapas y preguntas frecuentes requiere más."
+  },
+  {
+    "key": "homepage",
+    "label": "Página de inicio",
+    "minWords": 400,
+    "maxWords": 1000,
+    "description": "La página de inicio dirige a los visitantes a las subpáginas. Un mensaje claro y una estructura legible facilitan la navegación."
+  },
+  {
+    "key": "landing",
+    "label": "Landing page",
+    "minWords": 600,
+    "maxWords": 2500,
+    "description": "Las ofertas de mayor precio requieren más explicación y generación de confianza. Una oferta sencilla puede ser más corta."
+  },
+  {
+    "key": "blog",
+    "label": "Artículo de blog",
+    "minWords": 1200,
+    "maxWords": 3000,
+    "description": "La extensión depende de la complejidad del tema. El texto debe responder a las preguntas del lector de forma completa y concreta."
+  },
+  {
+    "key": "guide",
+    "label": "Guía / tutorial",
+    "minWords": 2500,
+    "maxWords": 6000,
+    "description": "Un tratamiento detallado de un tema con muchos aspectos. La extensión depende del alcance del asunto."
+  }
+]

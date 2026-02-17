@@ -1,0 +1,18 @@
+{
+  "unsupportedFormatsOnly": "Faili hii haihimiliwi. Pakia PNG, JPG/JPEG au SVG.",
+  "unexpectedError": "Imeshindwa kuchambua picha. Jaribu tena au tumia faili nyingine.",
+  "addImageLabel": "Ongeza picha",
+  "dragDropImage": "Buruta na udondoshe picha hapa",
+  "clickToSelect": "au bofya kuchagua faili",
+  "supportedFormats": "Zinazokubaliwa: PNG, JPG/JPEG, SVG",
+  "preview": "Hakiki na palette",
+  "addImageToStart": "Pakia picha na chombo kitaonyesha rangi kuu. Nakili kila msimbo kwa kubofya mara moja – bora kwa UI, chapa, na mitandao ya kijamii.",
+  "processing": "Inachambua picha na kuunda palette…",
+  "colorPreview": "Hakiki ya rangi",
+  "copy": "Nakili",
+  "copied": "Imenakiliwa",
+  "empty": "Haikuweza kugundua rangi kuu. Jaribu picha nyingine.",
+  "selectedFile": "Faili iliyochaguliwa:",
+  "copyHint": "Bofya «Nakili» kunakili msimbo wa rangi.",
+  "previewAlt": "Hakiki"
+}

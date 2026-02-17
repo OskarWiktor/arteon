@@ -1,0 +1,47 @@
+{
+  "dataType": "Uri ng datos",
+  "types": {
+    "url": "URL address",
+    "text": "Teksto",
+    "vcard": "Business card (vCard)",
+    "email": "E-mail",
+    "phone": "Telepono"
+  },
+  "urlPlaceholder": "https://www.iyong-site.ph",
+  "textPlaceholder": "Mag-type ng kahit anong teksto...",
+  "phonePlaceholder": "+63 912 345 6789",
+  "size": "Sukat (px)",
+  "margin": "Margin (quiet zone)",
+  "qrColor": "Kulay ng QR code",
+  "bgColor": "Kulay ng background",
+  "errorCorrection": "Antas ng error correction",
+  "errorCorrectionLevels": {
+    "L": "L – Mababa (7%)",
+    "M": "M – Katamtaman (15%)",
+    "Q": "Q – Mataas (25%)",
+    "H": "H – Pinakamataas (30%)"
+  },
+  "preview": "Preview ng QR code",
+  "downloadPng": "I-download PNG",
+  "downloadSvg": "I-download SVG",
+  "contrastWarning": "Masyadong mababa ang contrast sa pagitan ng mga kulay. Maaaring mahirap i-scan ang QR code.",
+  "contrastRatio": "Contrast ratio",
+  "recommended": "Inirerekomendang minimum: 3:1",
+  "enterData": "Maglagay ng datos para gumawa ng QR code.",
+  "vcard": {
+    "firstName": "Pangalan",
+    "lastName": "Apelyido",
+    "organization": "Kompanya (opsyonal)",
+    "title": "Posisyon (opsyonal)",
+    "phone": "Telepono (opsyonal)",
+    "email": "E-mail (opsyonal)",
+    "website": "Website (opsyonal)",
+    "address": "Address (opsyonal)"
+  },
+  "email": {
+    "to": "E-mail address",
+    "subject": "Paksa (opsyonal)",
+    "body": "Nilalaman (opsyonal)"
+  },
+  "printTip": "Para sa mga naka-print na materyales, inirerekomenda ang min. 300px na sukat at H error correction level."
+}

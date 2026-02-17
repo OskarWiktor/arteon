@@ -1,0 +1,23 @@
+{
+  "pasteText": "Plak of typ tekst",
+  "textPlaceholder": "Plak hier de tekst die u wilt analyseren...",
+  "pageType": "Paginatype",
+  "pageTypeHelper": "Selecteer het paginatype waarvoor u schrijft. Elk type heeft andere lengte-aanbevelingen.",
+  "words": "Woorden",
+  "charsWithSpaces": "Tekens (met spaties)",
+  "charsWithoutSpaces": "Tekens (zonder spaties)",
+  "paragraphs": "Alinea's",
+  "readingTime": "Leestijd",
+  "lengthEvaluation": "Lengtebeoordeling",
+  "recommendedRange": "Aanbevolen bereik",
+  "copyReport": "Rapport kopiëren",
+  "copied": "Gekopieerd",
+  "statistics": "Tekststatistieken",
+  "noText": "Geen tekst",
+  "empty": "Typ tekst om statistieken te zien.",
+  "tooShort": "Te kort",
+  "tooLong": "Te lang",
+  "ideal": "Goede lengte",
+  "analysisFor": "Analyse voor",
+  "wordsUnit": "woorden"
+}

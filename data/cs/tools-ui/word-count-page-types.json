@@ -1,0 +1,44 @@
+[
+  {
+    "key": "product",
+    "label": "Popis produktu",
+    "minWords": 80,
+    "maxWords": 400,
+    "description": "Čím jednodušší produkt, tím kratší popis. Složité produkty (např. elektronika) vyžadují více vysvětlení a specifikací."
+  },
+  {
+    "key": "service",
+    "label": "Stránka služby",
+    "minWords": 500,
+    "maxWords": 1500,
+    "description": "Jednoduchá lokální služba vyžaduje méně slov. Složitá nabídka s více fázemi a dotazy klientů vyžaduje více."
+  },
+  {
+    "key": "homepage",
+    "label": "Úvod",
+    "minWords": 400,
+    "maxWords": 1000,
+    "description": "Úvodní stránka směruje návštěvníky na podstránky. Jasná zpráva a přehledná struktura usnadňují navigaci."
+  },
+  {
+    "key": "landing",
+    "label": "Nabídková stránka",
+    "minWords": 600,
+    "maxWords": 2500,
+    "description": "Dražší nabídky vyžadují více vysvětlení a budování důvěry. Jednoduchá nabídka může být kratší."
+  },
+  {
+    "key": "blog",
+    "label": "Článek na blogu",
+    "minWords": 1200,
+    "maxWords": 3000,
+    "description": "Délka závisí na složitosti tématu. Text by měl odpovídat na otázky čtenáře důkladně a konkrétně."
+  },
+  {
+    "key": "guide",
+    "label": "Průvodce / návod",
+    "minWords": 2500,
+    "maxWords": 6000,
+    "description": "Podrobné zpracování tématu s mnoha aspekty. Délka závisí na rozsahu tématu."
+  }
+]

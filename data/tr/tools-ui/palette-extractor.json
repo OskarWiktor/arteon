@@ -1,0 +1,18 @@
+{
+  "unsupportedFormatsOnly": "Bu dosya desteklenmiyor. PNG, JPG/JPEG veya SVG yükleyin.",
+  "unexpectedError": "Görsel analiz edilemedi. Tekrar deneyin veya farklı bir dosya kullanın.",
+  "addImageLabel": "Görsel ekle",
+  "dragDropImage": "Görseli buraya sürükleyip bırakın",
+  "clickToSelect": "veya dosya seçmek için tıklayın",
+  "supportedFormats": "Desteklenen: PNG, JPG/JPEG, SVG",
+  "preview": "Önizleme ve palet",
+  "addImageToStart": "Bir görsel yükleyin ve araç baskın renkleri gösterecektir. Her kodu tek tıkla kopyalayın – UI, marka kimliği ve sosyal medya için ideal.",
+  "processing": "Görsel analiz ediliyor ve palet oluşturuluyor…",
+  "colorPreview": "Renk önizleme",
+  "copy": "Kopyala",
+  "copied": "Kopyalandı",
+  "empty": "Baskın renkler tespit edilemedi. Farklı bir görsel deneyin.",
+  "selectedFile": "Seçilen dosya:",
+  "copyHint": "Renk kodunu kopyalamak için «Kopyala» düğmesine tıklayın.",
+  "previewAlt": "Önizleme"
+}

@@ -1,0 +1,52 @@
+{
+  "selectBaseColor": "Selectați culoarea de bază",
+  "updateColor": "Actualizați culoarea",
+  "randomColor": "Culoare aleatorie",
+  "currentBaseColor": "Culoarea de bază actuală",
+  "baseColorHelper": "Toate paletele de mai jos se bazează pe această culoare.",
+  "colorPreview": "Previzualizare culoare",
+  "copied": "Copiat",
+  "copy": "Copiază",
+  "generatedPalettes": "Palete de culori generate",
+  "colorReadError": "Nu s-a putut citi culoarea. Asigurați-vă că utilizați formatul",
+  "example": "ex.",
+  "enterValidColor": "Introduceți o culoare HEX validă pentru a genera palete. Toate calculele sunt efectuate local în browser.",
+  "palettes": {
+    "monochromatic": {
+      "label": "Paletă monocromatică",
+      "description": "Toate culorile au aceeași nuanță (H) și variază în principal în luminozitate (L) în spațiul de culoare HSL."
+    },
+    "analogous": {
+      "label": "Paletă analogă",
+      "description": "Culori cu nuanțe similare, de la aproximativ -30 la +30 în jurul culorii de bază pe roata de culori clasică (ex. Itten)."
+    },
+    "complementary": {
+      "label": "Paletă complementară",
+      "description": "Culoarea de bază și complementul său deplasat cu 180 pe roata de culori – unul dintre contrastele fundamentale descrise de Johannes Itten."
+    },
+    "triadic": {
+      "label": "Paletă triadică",
+      "description": "Trei nuanțe separate la 120 pe roata de culori (vârfurile unui triunghi echilateral) – o geometrie folosită frecvent în branding și design inspirat de Bauhaus."
+    },
+    "splitComplementary": {
+      "label": "Paletă complementară divizată",
+      "description": "O variantă a paletei complementare: în loc de un complement (180), se folosesc două culori deplasate cu aproximativ ±30 față de complement, reducând tensiunea vizuală dar menținând un contrast puternic."
+    },
+    "softPastel": {
+      "label": "Paletă pastel",
+      "description": "Aceeași nuanță cu saturație redusă și luminozitate crescută – o deplasare spre centrul și partea superioară a spațiului HSL care produce culori moi și “cremoase”."
+    },
+    "deepDark": {
+      "label": "Paletă întunecată",
+      "description": "Aceeași nuanță cu saturație ridicată (S) și luminozitate redusă (L) – o deplasare spre partea inferioară a axei de luminozitate, care produce culori profunde tipice modului întunecat și accentelor puternice."
+    },
+    "materialTonal": {
+      "label": "Paletă tonală (inspirată de Material Design)",
+      "description": "Diferite niveluri de luminozitate ale aceleiași nuanțe – L variată și S moderată, similară cu gamele tonale din ghidurile Material Design (ex. 50-900)."
+    },
+    "appleMinimal": {
+      "label": "Paletă minimalistă (inspirată de Apple)",
+      "description": "Un accent de culoare viu și mai multe nuanțe neutre foarte deschise și delicate, o compoziție tipică interfețelor cu mult spațiu alb și umbre subtile."
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "pasteText": "Illessze be vagy írja be a szöveget",
+  "textPlaceholder": "Illessze be ide az elemezni kívánt szöveget...",
+  "pageType": "Oldaltípus",
+  "pageTypeHelper": "Válassza ki az oldaltípust, amelyhez ír. Minden típusnak más hosszúsági ajánlásai vannak.",
+  "words": "Szavak",
+  "charsWithSpaces": "Karakterek (szóközökkel)",
+  "charsWithoutSpaces": "Karakterek (szóközök nélkül)",
+  "paragraphs": "Bekezdések",
+  "readingTime": "Olvasási idő",
+  "lengthEvaluation": "Hosszúság értékelése",
+  "recommendedRange": "Ajánlott tartomány",
+  "copyReport": "Jelentés másolása",
+  "copied": "Másolva",
+  "statistics": "Szövegstatisztikák",
+  "noText": "Nincs szöveg",
+  "empty": "Írjon be szöveget a statisztikák megtekintéséhez.",
+  "tooShort": "Túl rövid",
+  "tooLong": "Túl hosszú",
+  "ideal": "Jó hosszúság",
+  "analysisFor": "Elemzés:",
+  "wordsUnit": "szó"
+}

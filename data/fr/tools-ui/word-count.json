@@ -1,0 +1,23 @@
+{
+  "pasteText": "Collez ou saisissez du texte",
+  "textPlaceholder": "Collez ici le texte que vous souhaitez analyser...",
+  "pageType": "Type de page",
+  "pageTypeHelper": "Sélectionnez le type de page pour lequel vous écrivez. Chaque type a des recommandations de longueur différentes.",
+  "words": "Mots",
+  "charsWithSpaces": "Caractères (avec espaces)",
+  "charsWithoutSpaces": "Caractères (sans espaces)",
+  "paragraphs": "Paragraphes",
+  "readingTime": "Temps de lecture",
+  "lengthEvaluation": "Évaluation de la longueur",
+  "recommendedRange": "Plage recommandée",
+  "copyReport": "Copier le rapport",
+  "copied": "Copié",
+  "statistics": "Statistiques du texte",
+  "noText": "Aucun texte",
+  "empty": "Saisissez un texte pour voir les statistiques.",
+  "tooShort": "Trop court",
+  "tooLong": "Trop long",
+  "ideal": "Bonne longueur",
+  "analysisFor": "Analyse pour",
+  "wordsUnit": "mots"
+}

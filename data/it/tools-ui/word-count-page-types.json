@@ -1,0 +1,44 @@
+[
+  {
+    "key": "product",
+    "label": "Descrizione prodotto",
+    "minWords": 80,
+    "maxWords": 400,
+    "description": "Più il prodotto è semplice, più breve la descrizione. Prodotti complessi (es. elettronica) richiedono più spiegazioni e specifiche."
+  },
+  {
+    "key": "service",
+    "label": "Pagina servizio",
+    "minWords": 500,
+    "maxWords": 1500,
+    "description": "Un servizio locale semplice necessita di meno testo. Un’offerta complessa con più fasi e domande frequenti ne richiede di più."
+  },
+  {
+    "key": "homepage",
+    "label": "Homepage",
+    "minWords": 400,
+    "maxWords": 1000,
+    "description": "La homepage indirizza i visitatori verso le sottopagine. Un messaggio chiaro e una struttura leggibile facilitano la navigazione."
+  },
+  {
+    "key": "landing",
+    "label": "Landing page",
+    "minWords": 600,
+    "maxWords": 2500,
+    "description": "Offerte di prezzo più elevato richiedono più spiegazioni e costruzione della fiducia. Un’offerta semplice può essere più breve."
+  },
+  {
+    "key": "blog",
+    "label": "Articolo del blog",
+    "minWords": 1200,
+    "maxWords": 3000,
+    "description": "La lunghezza dipende dalla complessità dell’argomento. Il testo deve rispondere alle domande del lettore in modo completo e concreto."
+  },
+  {
+    "key": "guide",
+    "label": "Guida / tutorial",
+    "minWords": 2500,
+    "maxWords": 6000,
+    "description": "Un approfondimento dettagliato di un argomento con molteplici aspetti. La lunghezza dipende dall’ampiezza del tema."
+  }
+]

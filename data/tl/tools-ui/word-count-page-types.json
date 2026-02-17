@@ -1,0 +1,44 @@
+[
+  {
+    "key": "product",
+    "label": "Paglalarawan ng produkto",
+    "minWords": 80,
+    "maxWords": 400,
+    "description": "Kung mas simple ang produkto, mas maikli ang paglalarawan. Ang mga komplikadong produkto (hal. electronics) ay nangangailangan ng mas maraming paliwanag at detalye."
+  },
+  {
+    "key": "service",
+    "label": "Pahina ng serbisyo",
+    "minWords": 500,
+    "maxWords": 1500,
+    "description": "Ang simpleng lokal na serbisyo ay nangangailangan ng mas kaunting salita. Ang komplikadong alok na may maraming yugto ay nangangailangan ng mas marami."
+  },
+  {
+    "key": "homepage",
+    "label": "Homepage",
+    "minWords": 400,
+    "maxWords": 1000,
+    "description": "Ang homepage ay nagdidirekta sa mga subpage. Malinaw na mensahe at maayos na istraktura ang nagpapadali ng pag-navigate."
+  },
+  {
+    "key": "landing",
+    "label": "Landing page",
+    "minWords": 600,
+    "maxWords": 2500,
+    "description": "Ang mas mahal na alok ay nangangailangan ng mas maraming paliwanag at pagbuo ng tiwala. Ang simpleng alok ay maaaring mas maikli."
+  },
+  {
+    "key": "blog",
+    "label": "Artikulo sa blog",
+    "minWords": 1200,
+    "maxWords": 3000,
+    "description": "Ang haba ay depende sa komplikasyon ng paksa. Dapat sagutin ng teksto ang mga tanong ng mambabasa nang buo at konkretong paraan."
+  },
+  {
+    "key": "guide",
+    "label": "Gabay / tutorial",
+    "minWords": 2500,
+    "maxWords": 6000,
+    "description": "Detalyadong pagtalakay ng isang paksa na may maraming aspekto. Ang haba ay depende sa saklaw ng paksa."
+  }
+]

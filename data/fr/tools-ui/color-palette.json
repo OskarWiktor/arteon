@@ -1,0 +1,52 @@
+{
+  "selectBaseColor": "Sélectionner la couleur de base",
+  "updateColor": "Mettre à jour la couleur",
+  "randomColor": "Couleur aléatoire",
+  "currentBaseColor": "Couleur de base actuelle",
+  "baseColorHelper": "Toutes les palettes ci-dessous reposent sur cette couleur.",
+  "colorPreview": "Aperçu de la couleur",
+  "copied": "Copié",
+  "copy": "Copier",
+  "generatedPalettes": "Palettes de couleurs générées",
+  "colorReadError": "Impossible de lire la couleur. Assurez-vous d'utiliser le format",
+  "example": "ex.",
+  "enterValidColor": "Saisissez une couleur HEX valide pour générer les palettes. Tous les calculs sont effectués localement dans votre navigateur.",
+  "palettes": {
+    "monochromatic": {
+      "label": "Palette monochromatique",
+      "description": "Toutes les couleurs partagent la même teinte (H) et varient principalement en luminosité (L) dans l'espace colorimétrique HSL."
+    },
+    "analogous": {
+      "label": "Palette analogue",
+      "description": "Des couleurs de teintes proches, d'environ -30° à +30° autour de la couleur de base sur le cercle chromatique classique (ex. : Itten)."
+    },
+    "complementary": {
+      "label": "Palette complémentaire",
+      "description": "La couleur de base et son complément décalé de 180° sur le cercle chromatique, l'un des contrastes fondamentaux décrits par Johannes Itten."
+    },
+    "triadic": {
+      "label": "Palette triadique",
+      "description": "Trois teintes séparées de 120° sur le cercle chromatique (sommets d'un triangle équilatéral), une géométrie fréquemment utilisée en branding et dans les designs inspirés du Bauhaus."
+    },
+    "splitComplementary": {
+      "label": "Palette complémentaire divisée",
+      "description": "Une variante de la palette complémentaire : au lieu d'un complément (180°), on utilise deux couleurs décalées d'environ ±30° du complément, réduisant la tension visuelle tout en conservant un fort contraste."
+    },
+    "softPastel": {
+      "label": "Palette pastel",
+      "description": "La même teinte avec une saturation réduite et une luminosité augmentée, un déplacement vers le centre et le haut de l'espace HSL qui produit des couleurs douces et \"crémeuses\"."
+    },
+    "deepDark": {
+      "label": "Palette sombre",
+      "description": "La même teinte avec une saturation élevée (S) et une luminosité réduite (L)  un déplacement vers le bas sur l'axe de luminosité, produisant des couleurs profondes typiques du mode sombre et des accents intenses."
+    },
+    "materialTonal": {
+      "label": "Palette tonale (inspirée Material Design)",
+      "description": "Plusieurs niveaux de luminosité d'une même teinte  L variée et S modérée, similaire aux plages tonales des directives Material Design (ex. : 50-900)."
+    },
+    "appleMinimal": {
+      "label": "Palette minimaliste (inspirée Apple)",
+      "description": "Un accent de couleur vif et plusieurs neutres très clairs et doux, un agencement typique des interfaces avec beaucoup d'espace blanc et des ombres subtiles."
+    }
+  }
+}

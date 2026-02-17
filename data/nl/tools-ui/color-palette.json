@@ -1,0 +1,52 @@
+{
+  "selectBaseColor": "Selecteer basiskleur",
+  "updateColor": "Kleur bijwerken",
+  "randomColor": "Willekeurige kleur",
+  "currentBaseColor": "Huidige basiskleur",
+  "baseColorHelper": "Alle onderstaande paletten zijn gebaseerd op deze kleur.",
+  "colorPreview": "Kleurvoorbeeld",
+  "copied": "Gekopieerd",
+  "copy": "Kopiëren",
+  "generatedPalettes": "Gegenereerde kleurpaletten",
+  "colorReadError": "Kan de kleur niet lezen. Zorg ervoor dat u het formaat gebruikt",
+  "example": "bijv.",
+  "enterValidColor": "Voer een geldige HEX-kleur in om paletten te genereren. Alle berekeningen worden lokaal in uw browser uitgevoerd.",
+  "palettes": {
+    "monochromatic": {
+      "label": "Monochromatisch palet",
+      "description": "Alle kleuren hebben dezelfde tint (H) en variëren voornamelijk in helderheid (L) in de HSL-kleurruimte."
+    },
+    "analogous": {
+      "label": "Analoog palet",
+      "description": "Kleuren met vergelijkbare tinten, van ongeveer -30 tot +30 rond de basiskleur op het klassieke kleurenwiel (bijv. Itten)."
+    },
+    "complementary": {
+      "label": "Complementair palet",
+      "description": "De basiskleur en het complement verschoven met 180 op het kleurenwiel – een van de fundamentele contrasten beschreven door Johannes Itten."
+    },
+    "triadic": {
+      "label": "Triadisch palet",
+      "description": "Drie tinten gescheiden door 120 op het kleurenwiel (hoekpunten van een gelijkzijdige driehoek) – een geometrie die vaak wordt gebruikt in branding en Bauhaus-geïnspireerd design."
+    },
+    "splitComplementary": {
+      "label": "Gesplitst complementair palet",
+      "description": "Een variant van het complementaire palet: in plaats van één complement (180), worden twee kleuren gebruikt die ongeveer ±30 van het complement zijn verschoven, waardoor de visuele spanning wordt verminderd maar een sterk contrast behouden blijft."
+    },
+    "softPastel": {
+      "label": "Pastelpalet",
+      "description": "Dezelfde tint met verminderde verzadiging en verhoogde helderheid – een verschuiving naar het midden en de bovenkant van de HSL-ruimte die zachte, “cremige” kleuren oplevert."
+    },
+    "deepDark": {
+      "label": "Donker palet",
+      "description": "Dezelfde tint met hoge verzadiging (S) en verminderde helderheid (L) – een verschuiving naar de onderkant van de helderheidas, die diepe kleuren oplevert typisch voor dark mode en sterke accenten."
+    },
+    "materialTonal": {
+      "label": "Tonaal palet (geïnspireerd door Material Design)",
+      "description": "Verschillende helderheidsniveaus van dezelfde tint – gevarieerde L en gematigde S, vergelijkbaar met de tonale bereiken van de Material Design-richtlijnen (bijv. 50-900)."
+    },
+    "appleMinimal": {
+      "label": "Minimalistisch palet (geïnspireerd door Apple)",
+      "description": "Een levendig kleuraccent en meerdere zeer lichte en zachte neutrale tinten, een compositie typisch voor interfaces met veel witruimte en subtiele schaduwen."
+    }
+  }
+}

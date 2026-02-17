@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "mainNavigation": "Glavna navigacija",
+    "logoAlt": "Arteon - logo tvrtke",
+    "closeMenu": "Zatvori izbornik",
+    "openMenu": "Otvori izbornik",
+    "closeToolsList": "Zatvori popis alata",
+    "openToolsList": "Otvori popis alata",
+    "toolsLabel": "Alati",
+    "mobileMenu": "Mobilni izbornik",
+    "aboutLabel": "O nama",
+    "contactLabel": "Kontakt"
+  },
+  "footer": {
+    "copyright": "Sva prava pridržana.",
+    "description": "Besplatni alati za web programere, dizajnere i marketingaše.",
+    "companyDataLabel": "Podaci o tvrtki",
+    "toolsLabel": "Alati",
+    "legalLabel": "Pravni dokumenti",
+    "cookieSettingsLabel": "Postavke kolačića"
+  },
+  "desktopOnly": {
+    "title": "Ovaj alat radi na većem zaslonu",
+    "description": "Za udobno korištenje ovog alata otvorite ga na prijenosnom računalu, stolnom računalu ili tabletu u pejzažnom načinu.",
+    "tipTitle": "Savjet",
+    "tipText": "Ako koristite tablet, prebacite se na pejzažni način – kada prozor bude dovoljno širok, alat će se automatski učitati."
+  },
+  "cookie": {
+    "title": "Kolačići i privatnost",
+    "description": "Koristimo kolačiće za funkcioniranje stranice, analizu prometa i prikazivanje oglasa. Saznajte više",
+    "setPreferences": "Postavi postavke",
+    "privacyPolicy": "Pravila privatnosti",
+    "privacyPolicyHref": "/hr/pravila-privatnosti",
+    "reject": "Odbij sve",
+    "settings": "Postavke",
+    "accept": "Prihvati sve",
+    "panelTitle": "Postavke privatnosti",
+    "panelDescription": "Postavke suglasnosti za obradu podataka.",
+    "categoriesLegend": "Kategorije",
+    "essentialTitle": "Neophodni",
+    "essentialDescription": "Stranica ne funkcionira bez njih. Ne prikupljaju marketinške podatke.",
+    "essentialStatus": "Uvijek aktivni",
+    "analyticsTitle": "Analitika (GA4)",
+    "analyticsDescription": "Statistika posjeta. Aktivira Google Analytics 4 uz vašu suglasnost.",
+    "analyticsLabel": "Omogući GA4 analitiku",
+    "adsTitle": "Oglasi (Google AdSense)",
+    "adsDescription": "Personalizirani oglasi na temelju vaših interesa.",
+    "adsLabel": "Omogući personalizirane oglase",
+    "changeDecision": "Svoju odluku možete promijeniti u bilo kojem trenutku",
+    "save": "Spremi"
+  },
+  "skipToContent": "Preskoči na sadržaj",
+  "legal": [
+    {
+      "key": "privacy",
+      "href": "/hr/pravila-privatnosti",
+      "label": "Pravila privatnosti"
+    }
+  ],
+  "breadcrumbs": {
+    "home": "Početna",
+    "ariaLabel": "navigacija"
+  },
+  "contactForm": {
+    "nameLabel": "Ime i prezime",
+    "namePlaceholder": "Ivan Horvat",
+    "emailLabel": "E-pošta",
+    "emailPlaceholder": "ivan.horvat@gmail.com",
+    "subjectLabel": "Predmet",
+    "subjectPlaceholder": "npr. Prijava greške | Prijedlog alata | Pitanje",
+    "messageLabel": "Poruka",
+    "messagePlaceholder": "Opišite svoje pitanje ili prijedlog...",
+    "send": "Pošalji",
+    "error": "Nešto je pošlo po krivu. Provjerite podatke i pokušajte ponovo.",
+    "success": "Poruka poslana! Odgovorit ćemo što je prije moguće."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Besplatni alati",
+    "seeAllTools": "Prikaži sve alate",
+    "carouselLabel": "Karusel alata",
+    "scrollLeft": "Pomakni lijevo",
+    "scrollRight": "Pomakni desno",
+    "carouselNavigation": "Navigacija karusela",
+    "goToSlide": "Idi na slajd",
+    "of": "od",
+    "slide": "Slajd",
+    "tool": "Alat",
+    "openTool": "Otvori alat"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Prebaci na hrvatski",
+    "toggleLabel": "Promijeni jezik",
+    "chooseLabel": "Odaberite jezik",
+    "popularLabel": "Popularni",
+    "otherLabel": "Ostali",
+    "closeModalLabel": "Zatvori"
+  },
+  "mobileNav": {
+    "close": "Zatvori",
+    "services": "Usluge",
+    "contact": "Kontakt"
+  },
+  "infoBanner": {
+    "text": "Generator e-mail potpisa ažuriran – otkrijte nove funkcije",
+    "linkText": "alati"
+  }
+}

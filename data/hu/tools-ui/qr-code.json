@@ -1,0 +1,47 @@
+{
+  "dataType": "Adattípus",
+  "types": {
+    "url": "URL-cím",
+    "text": "Szöveg",
+    "vcard": "Névjegykártya (vCard)",
+    "email": "E-mail",
+    "phone": "Telefon"
+  },
+  "urlPlaceholder": "https://www.az-on-weboldala.hu",
+  "textPlaceholder": "Írjon be bármilyen szöveget...",
+  "phonePlaceholder": "+36 30 123 4567",
+  "size": "Méret (px)",
+  "margin": "Margó (csendes zóna)",
+  "qrColor": "QR-kód színe",
+  "bgColor": "Háttérszín",
+  "errorCorrection": "Hibajavítási szint",
+  "errorCorrectionLevels": {
+    "L": "L - Alacsony (7%)",
+    "M": "M - Közepes (15%)",
+    "Q": "Q - Magas (25%)",
+    "H": "H - Maximum (30%)"
+  },
+  "preview": "QR-kód előnézet",
+  "downloadPng": "PNG letöltése",
+  "downloadSvg": "SVG letöltése",
+  "contrastWarning": "A színek közötti kontraszt túl alacsony. A QR-kód nehezen beolvasható lehet.",
+  "contrastRatio": "Kontrasztarány",
+  "recommended": "Ajánlott minimum: 3:1",
+  "enterData": "Adjon meg adatokat a QR-kód generálásához.",
+  "vcard": {
+    "firstName": "Keresztnév",
+    "lastName": "Vezetéknév",
+    "organization": "Cég (opcionális)",
+    "title": "Beosztás (opcionális)",
+    "phone": "Telefon (opcionális)",
+    "email": "E-mail (opcionális)",
+    "website": "Weboldal (opcionális)",
+    "address": "Cím (opcionális)"
+  },
+  "email": {
+    "to": "E-mail cím",
+    "subject": "Tárgy (opcionális)",
+    "body": "Üzenet (opcionális)"
+  },
+  "printTip": "Nyomtatott anyagokhoz legalább 300px méretet és H hibajavítási szintet ajánlunk."
+}

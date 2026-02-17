@@ -1,0 +1,23 @@
+{
+  "pasteText": "Indsæt eller skriv tekst",
+  "textPlaceholder": "Indsæt den tekst, du vil analysere, her...",
+  "pageType": "Sidetype",
+  "pageTypeHelper": "Vælg den sidetype, du skriver til. Hver type har forskellige anbefalinger for længde.",
+  "words": "Ord",
+  "charsWithSpaces": "Tegn (med mellemrum)",
+  "charsWithoutSpaces": "Tegn (uden mellemrum)",
+  "paragraphs": "Afsnit",
+  "readingTime": "Læsetid",
+  "lengthEvaluation": "Længdevurdering",
+  "recommendedRange": "Anbefalet interval",
+  "copyReport": "Kopiér rapport",
+  "copied": "Kopieret",
+  "statistics": "Tekststatistik",
+  "noText": "Ingen tekst",
+  "empty": "Skriv tekst for at se statistik.",
+  "tooShort": "For kort",
+  "tooLong": "For lang",
+  "ideal": "God længde",
+  "analysisFor": "Analyse for",
+  "wordsUnit": "ord"
+}

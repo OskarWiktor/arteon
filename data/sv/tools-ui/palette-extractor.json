@@ -1,0 +1,18 @@
+{
+  "unsupportedFormatsOnly": "Den här filen stöds inte. Ladda upp PNG, JPG/JPEG eller SVG.",
+  "unexpectedError": "Kunde inte analysera bilden. Försök igen eller använd en annan fil.",
+  "addImageLabel": "Lägg till bild",
+  "dragDropImage": "Dra och släpp en bild här",
+  "clickToSelect": "eller klicka för att välja en fil",
+  "supportedFormats": "Stöds: PNG, JPG/JPEG, SVG",
+  "preview": "Förhandsgranskning och palett",
+  "addImageToStart": "Ladda upp en bild så visar verktyget de dominerande färgerna. Kopiera varje kod med ett klick – perfekt för UI, varumärke och sociala medier.",
+  "processing": "Analyserar bilden och skapar palett…",
+  "colorPreview": "Färgförhandsgranskning",
+  "copy": "Kopiera",
+  "copied": "Kopierad",
+  "empty": "Kunde inte identifiera dominerande färger. Prova en annan bild.",
+  "selectedFile": "Vald fil:",
+  "copyHint": "Klicka på «Kopiera» för att kopiera färgkoden.",
+  "previewAlt": "Förhandsgranskning"
+}

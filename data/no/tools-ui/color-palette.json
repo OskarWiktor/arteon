@@ -1,0 +1,52 @@
+{
+  "selectBaseColor": "Velg grunnfarge",
+  "updateColor": "Oppdater farge",
+  "randomColor": "Tilfeldig farge",
+  "currentBaseColor": "Nåværende grunnfarge",
+  "baseColorHelper": "Alle paletter nedenfor er basert på denne fargen.",
+  "colorPreview": "Fargeforhåndsvisning",
+  "copied": "Kopiert",
+  "copy": "Kopier",
+  "generatedPalettes": "Genererte fargepaletter",
+  "colorReadError": "Kunne ikke lese fargen. Sørg for at du bruker formatet",
+  "example": "f.eks.",
+  "enterValidColor": "Skriv inn en gyldig HEX-farge for å generere paletter. Alle beregninger gjøres lokalt i nettleseren din.",
+  "palettes": {
+    "monochromatic": {
+      "label": "Monokromatisk palett",
+      "description": "Alle farger har samme kulør (H), skiller seg primært i lysstyrke (L) i HSL-fargerommet."
+    },
+    "analogous": {
+      "label": "Tilstøtende palett",
+      "description": "Farger med lignende kulør – fra ca. -30° til +30° rundt grunnfargen på det klassiske fargehjulet (f.eks. Itten)."
+    },
+    "complementary": {
+      "label": "Komplementær palett",
+      "description": "Grunnfargen og dens komplement forskjøvet 180° på fargehjulet – en av de grunnleggende fargekontrastene beskrevet av Johannes Itten."
+    },
+    "triadic": {
+      "label": "Triadisk palett",
+      "description": "Tre kulører med 120° avstand på fargehjulet (hjørner av en likesidet trekant) – geometri som ofte brukes innen merkevarebygging og Bauhaus-inspirert design."
+    },
+    "splitComplementary": {
+      "label": "Splittet komplementær palett",
+      "description": "En variasjon av den komplementære paletten – i stedet for ett komplement (180°) brukes to farger forskjøvet ca. ±30° fra komplementet, noe som reduserer visuell spenning og bevarer sterk kontrast."
+    },
+    "softPastel": {
+      "label": "Pastellpalett",
+      "description": "Samme kulør med redusert metning og økt lysstyrke – forskyvning mot midten og toppen av HSL-rommet, noe som gir myke, ”kremaktige” farger."
+    },
+    "deepDark": {
+      "label": "Mørk palett",
+      "description": "Samme kulør med høy metning (S) og lav lysstyrke (L) – forskyvning nedover på lysstyrkeaksen, noe som gir dype farger typiske for mørk modus og sterke aksenter."
+    },
+    "materialTonal": {
+      "label": "Tonal palett (inspirert av Material Design)",
+      "description": "Flere lysstyrketrinn av en kulør – varierende L og moderat S, tilsvarende de tonale intervallene i Material Designs retningslinjer (f.eks. 50–900)."
+    },
+    "appleMinimal": {
+      "label": "Minimalistisk palett (inspirert av Apple)",
+      "description": "En markant fargeaksent og mange veldig lyse, myke nøytrale toner – layout typisk for grensesnitt med mye hvitt rom og subtile skygger."
+    }
+  }
+}

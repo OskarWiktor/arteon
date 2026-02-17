@@ -1,0 +1,23 @@
+{
+  "pasteText": "Lipiți sau tastați textul",
+  "textPlaceholder": "Lipiți aici textul pe care doriți să-l analizați...",
+  "pageType": "Tip de pagină",
+  "pageTypeHelper": "Selectați tipul de pagină pentru care scrieți. Fiecare tip are recomandări diferite privind lungimea.",
+  "words": "Cuvinte",
+  "charsWithSpaces": "Caractere (cu spații)",
+  "charsWithoutSpaces": "Caractere (fără spații)",
+  "paragraphs": "Paragrafe",
+  "readingTime": "Timp de citire",
+  "lengthEvaluation": "Evaluare lungime",
+  "recommendedRange": "Interval recomandat",
+  "copyReport": "Copiați raportul",
+  "copied": "Copiat",
+  "statistics": "Statistici text",
+  "noText": "Fără text",
+  "empty": "Introduceți text pentru a vedea statisticile.",
+  "tooShort": "Prea scurt",
+  "tooLong": "Prea lung",
+  "ideal": "Lungime bună",
+  "analysisFor": "Analiză pentru",
+  "wordsUnit": "cuvinte"
+}

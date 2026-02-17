@@ -1,0 +1,44 @@
+[
+  {
+    "key": "product",
+    "label": "Descrição de produto",
+    "minWords": 80,
+    "maxWords": 400,
+    "description": "Quanto mais simples o produto, mais curta a descrição. Produtos complexos (ex.: eletrónica) exigem mais explicações e especificações."
+  },
+  {
+    "key": "service",
+    "label": "Página de serviço",
+    "minWords": 500,
+    "maxWords": 1500,
+    "description": "Um serviço local simples necessita de menos texto. Uma oferta complexa com várias etapas e perguntas frequentes exige mais."
+  },
+  {
+    "key": "homepage",
+    "label": "Página inicial",
+    "minWords": 400,
+    "maxWords": 1000,
+    "description": "A página inicial direciona os visitantes para as subpáginas. Uma mensagem clara e uma estrutura legível facilitam a navegação."
+  },
+  {
+    "key": "landing",
+    "label": "Landing page",
+    "minWords": 600,
+    "maxWords": 2500,
+    "description": "Ofertas de preço mais elevado exigem mais explicação e construção de confiança. Uma oferta simples pode ser mais curta."
+  },
+  {
+    "key": "blog",
+    "label": "Artigo de blog",
+    "minWords": 1200,
+    "maxWords": 3000,
+    "description": "O comprimento depende da complexidade do tema. O texto deve responder às perguntas do leitor de forma completa e concreta."
+  },
+  {
+    "key": "guide",
+    "label": "Guia / tutorial",
+    "minWords": 2500,
+    "maxWords": 6000,
+    "description": "Um tratamento detalhado de um tema com muitos aspetos. O comprimento depende do âmbito do assunto."
+  }
+]

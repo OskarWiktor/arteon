@@ -1,0 +1,18 @@
+{
+  "unsupportedFormatsOnly": "Questo file non è supportato. Carica un file PNG, JPG/JPEG o SVG.",
+  "unexpectedError": "Impossibile analizzare l'immagine. Riprova o usa un file diverso.",
+  "addImageLabel": "Aggiungi immagine",
+  "dragDropImage": "Trascina e rilascia un'immagine qui",
+  "clickToSelect": "oppure clicca per selezionare un file",
+  "supportedFormats": "Supportati: PNG, JPG/JPEG, SVG",
+  "preview": "Anteprima e palette",
+  "addImageToStart": "Carica un'immagine e lo strumento mostrerà i suoi colori dominanti. Copia ogni codice con un solo clic  ideale per UI, branding e social media.",
+  "processing": "Analisi dell'immagine e creazione della palette…",
+  "colorPreview": "Anteprima colore",
+  "copy": "Copia",
+  "copied": "Copiato",
+  "empty": "Nessun colore dominante rilevato. Prova con un'altra immagine.",
+  "selectedFile": "File selezionato:",
+  "copyHint": "Clicca su «Copia» per copiare il codice colore.",
+  "previewAlt": "Anteprima"
+}

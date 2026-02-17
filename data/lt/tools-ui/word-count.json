@@ -1,0 +1,23 @@
+{
+  "pasteText": "Įklijuokite arba įveskite tekstą",
+  "textPlaceholder": "Įklijuokite čia tekstą, kurį norite analizuoti...",
+  "pageType": "Puslapio tipas",
+  "pageTypeHelper": "Pasirinkite puslapio tipą, kuriam rašote. Kiekvienas tipas turi skirtingas ilgio rekomendacijas.",
+  "words": "Žodžiai",
+  "charsWithSpaces": "Simboliai (su tarpais)",
+  "charsWithoutSpaces": "Simboliai (be tarpų)",
+  "paragraphs": "Pastraipos",
+  "readingTime": "Skaitymo laikas",
+  "lengthEvaluation": "Ilgio vertinimas",
+  "recommendedRange": "Rekomenduojamas intervalas",
+  "copyReport": "Kopijuoti ataskaitą",
+  "copied": "Nukopijuota",
+  "statistics": "Teksto statistika",
+  "noText": "Nėra teksto",
+  "empty": "Įveskite tekstą, kad pamatytumėte statistiką.",
+  "tooShort": "Per trumpas",
+  "tooLong": "Per ilgas",
+  "ideal": "Geras ilgis",
+  "analysisFor": "Analizė:",
+  "wordsUnit": "žodžių"
+}

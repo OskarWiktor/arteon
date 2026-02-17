@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "mainNavigation": "Navigare principală",
+    "logoAlt": "Arteon - logo companie",
+    "closeMenu": "Închide meniul",
+    "openMenu": "Deschide meniul",
+    "closeToolsList": "Închide lista de instrumente",
+    "openToolsList": "Deschide lista de instrumente",
+    "toolsLabel": "Instrumente",
+    "mobileMenu": "Meniu mobil",
+    "aboutLabel": "Despre noi",
+    "contactLabel": "Contact"
+  },
+  "footer": {
+    "copyright": "Toate drepturile rezervate.",
+    "description": "Instrumente gratuite pentru dezvoltatori web, designeri și marketeri.",
+    "companyDataLabel": "Date companie",
+    "toolsLabel": "Instrumente",
+    "legalLabel": "Documente legale",
+    "cookieSettingsLabel": "Setări cookie-uri"
+  },
+  "desktopOnly": {
+    "title": "Acest instrument funcționează pe un ecran mai mare",
+    "description": "Pentru a utiliza acest instrument confortabil, deschideți-l pe un laptop, computer desktop sau tabletă în modul peisaj.",
+    "tipTitle": "Sfat",
+    "tipText": "Dacă utilizați o tabletă, comutați-o în modul peisaj - când lățimea ferestrei este suficient de mare, instrumentul se va încărca automat."
+  },
+  "cookie": {
+    "title": "Cookie-uri și confidențialitate",
+    "description": "Folosim cookie-uri pentru funcționarea site-ului, analiza traficului și afișarea reclamelor. Aflați mai multe în",
+    "setPreferences": "Setează preferințele",
+    "privacyPolicy": "Politica de confidențialitate",
+    "privacyPolicyHref": "/ro/politica-de-confidentialitate",
+    "reject": "Respinge tot",
+    "settings": "Setări",
+    "accept": "Acceptă tot",
+    "panelTitle": "Preferințe de confidențialitate",
+    "panelDescription": "Setări privind consimțământul pentru prelucrarea datelor.",
+    "categoriesLegend": "Categorii",
+    "essentialTitle": "Esențiale",
+    "essentialDescription": "Site-ul nu poate funcționa fără acestea. Nu colectează date de marketing.",
+    "essentialStatus": "Întotdeauna activ",
+    "analyticsTitle": "Analiză (GA4)",
+    "analyticsDescription": "Statistici de vizitare. Activează Google Analytics 4 cu consimțământul dvs.",
+    "analyticsLabel": "Activează analiza GA4",
+    "adsTitle": "Reclame (Google AdSense)",
+    "adsDescription": "Reclame personalizate bazate pe interesele dvs.",
+    "adsLabel": "Activează reclamele personalizate",
+    "changeDecision": "Puteți schimba decizia în orice moment",
+    "save": "Salvează"
+  },
+  "skipToContent": "Salt la conținut",
+  "legal": [
+    {
+      "key": "privacy",
+      "href": "/ro/politica-de-confidentialitate",
+      "label": "Politica de confidențialitate"
+    }
+  ],
+  "breadcrumbs": {
+    "home": "Acasă",
+    "ariaLabel": "navigare"
+  },
+  "contactForm": {
+    "nameLabel": "Nume complet",
+    "namePlaceholder": "Ion Popescu",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "ion.popescu@gmail.com",
+    "subjectLabel": "Subiect",
+    "subjectPlaceholder": "ex. Raport eroare | Sugestie instrument | Intrebare",
+    "messageLabel": "Mesaj",
+    "messagePlaceholder": "Descrieti intrebarea sau sugestia dvs...",
+    "send": "Trimite",
+    "error": "Ceva nu a functionat. Verificati datele si incercati din nou.",
+    "success": "Mesaj trimis! Vom raspunde cat mai curand posibil."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Instrumente gratuite",
+    "seeAllTools": "Vezi toate instrumentele",
+    "carouselLabel": "Carusel de instrumente",
+    "scrollLeft": "Derulează la stânga",
+    "scrollRight": "Derulează la dreapta",
+    "carouselNavigation": "Navigare carusel",
+    "goToSlide": "Mergi la slide-ul",
+    "of": "din",
+    "slide": "Slide",
+    "tool": "Instrument",
+    "openTool": "Deschide instrumentul"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Schimbă în română",
+    "toggleLabel": "Schimbă limba",
+    "chooseLabel": "Alege limba",
+    "popularLabel": "Populare",
+    "otherLabel": "Altele",
+    "closeModalLabel": "Închide"
+  },
+  "mobileNav": {
+    "close": "Închide",
+    "services": "Servicii",
+    "contact": "Contact"
+  },
+  "infoBanner": {
+    "text": "Actualizare generator de semnătură e-mail – descoperiți noile funcții",
+    "linkText": "instrumente"
+  }
+}

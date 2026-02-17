@@ -1,0 +1,52 @@
+{
+  "selectBaseColor": "Wybierz kolor bazowy",
+  "updateColor": "Zaktualizuj kolor",
+  "randomColor": "Losowy kolor",
+  "currentBaseColor": "Aktualny kolor bazowy",
+  "baseColorHelper": "Na tym kolorze opierają się wszystkie palety poniżej.",
+  "colorPreview": "Podgląd koloru",
+  "copied": "Skopiowano",
+  "copy": "Kopiuj",
+  "generatedPalettes": "Wygenerowane palety kolorów",
+  "colorReadError": "Nie udało się odczytać koloru. Upewnij się, że używasz formatu",
+  "example": "np.",
+  "enterValidColor": "Wpisz poprawny kolor HEX, aby wygenerować palety. Wszystkie obliczenia są wykonywane lokalnie w Twojej przeglądarce.",
+  "palettes": {
+    "monochromatic": {
+      "label": "Paleta monochromatyczna",
+      "description": "Wszystkie kolory mają ten sam odcień (H), a różnią się głównie jasnością (L) w przestrzeni HSL."
+    },
+    "analogous": {
+      "label": "Paleta analogiczna",
+      "description": "Kolory o zbliżonym odcieniu - tutaj od ok. -30° do +30° wokół koloru bazowego na klasycznym kole barw (np. Ittena)."
+    },
+    "complementary": {
+      "label": "Paleta komplementarna",
+      "description": "Kolor bazowy i jego dopełnienie przesunięte o 180° na kole barw - jeden z podstawowych kontrastów barwnych opisanych m.in. przez Johannesa Ittena."
+    },
+    "triadic": {
+      "label": "Paleta triadyczna",
+      "description": "Trzy odcienie oddalone od siebie o 120° na kole barw (wierzchołki trójkąta równobocznego) - geometria często wykorzystywana w brandingu i projektach inspirowanych Bauhausem."
+    },
+    "splitComplementary": {
+      "label": "Paleta split-complementary",
+      "description": "Odmiana palety komplementarnej - zamiast jednego dopełnienia (180°) używamy dwóch kolorów przesuniętych o ok. ±30° od dopełnienia, co zmniejsza napięcie wizualne przy zachowaniu silnego kontrastu."
+    },
+    "softPastel": {
+      "label": "Paleta pastelowa",
+      "description": "Ten sam odcień z obniżonym nasyceniem i podniesioną jasnością - przesunięcie w stronę środka i górnej części przestrzeni HSL, które daje miękkie, „kremowe\" kolory."
+    },
+    "deepDark": {
+      "label": "Paleta ciemna",
+      "description": "Ta sama barwa przy wysokim nasyceniu (S) i obniżonej jasności (L) - przesunięcie w dół osi lightness, które daje głębokie kolory typowe dla dark mode i mocnych akcentów."
+    },
+    "materialTonal": {
+      "label": "Paleta tonalna (inspirowana Material Design)",
+      "description": "Kilka kroków jasności jednego odcienia - zróżnicowane L i umiarkowane S, zbliżone do tonalnych zakresów znanych z wytycznych Material Design (np. 50-900)."
+    },
+    "appleMinimal": {
+      "label": "Paleta minimalistyczna (inspirowana Apple)",
+      "description": "Jeden mocny akcent kolorystyczny i kilka bardzo jasnych, miękkich neutrali - układ typowy dla interfejsów z dużą ilością bieli i subtelnych cieni."
+    }
+  }
+}

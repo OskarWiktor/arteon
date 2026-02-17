@@ -1,0 +1,18 @@
+{
+  "unsupportedFormatsOnly": "Hindi sinusuportahan ang file na ito. Mag-upload ng PNG, JPG/JPEG o SVG.",
+  "unexpectedError": "Hindi nasuri ang larawan. Subukan muli o gumamit ng ibang file.",
+  "addImageLabel": "Magdagdag ng larawan",
+  "dragDropImage": "I-drag at i-drop ang larawan dito",
+  "clickToSelect": "o mag-click para pumili ng file",
+  "supportedFormats": "Sinusuportahan: PNG, JPG/JPEG, SVG",
+  "preview": "Preview at palette",
+  "addImageToStart": "Mag-upload ng larawan at ipapakita ng tool ang mga dominanteng kulay. Kopyahin ang bawat code sa isang click – perpekto para sa UI, branding, at social media.",
+  "processing": "Sinusuri ang larawan at gumagawa ng palette…",
+  "colorPreview": "Preview ng kulay",
+  "copy": "Kopyahin",
+  "copied": "Nakopya na",
+  "empty": "Hindi nakita ang mga dominanteng kulay. Subukan ang ibang larawan.",
+  "selectedFile": "Napiling file:",
+  "copyHint": "I-click ang «Kopyahin» para kopyahin ang color code.",
+  "previewAlt": "Preview"
+}

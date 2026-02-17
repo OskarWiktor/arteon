@@ -1,0 +1,78 @@
+{
+  "slug": "apie-mus",
+  "metadata": {
+    "title": "Apie Arteon – 10 nemokamų įrankių žiniatinkliui, SEO ir dizainui",
+    "description": "Arteon yra kūrybinė agentūra, kurianti nemokamus naršyklės įrankius: WebP konverterį, favicon generatorių, spalvų kontrasto tikrintuvę, QR kodų generatorių ir daugiau. Be registracijos, be įkėlimo — viskas veikia lokaliai."
+  },
+  "hero": {
+    "title": "Nemokami įrankiai iš kūrybinės agentūros",
+    "description": "10 naršyklės įrankių vaizdams, SEO, spalvoms, el. pašto parašams ir QR kodams — be registracijos, be failų įkėlimo, be apribojimų"
+  },
+  "whoWeAre": {
+    "title": "Kas mes",
+    "p1": "Arteon yra lenkų kūrybinė agentūra. Be komercinio darbo, mes kuriame ir prižiūrime augančią nemokamų įrankių kolekciją, skirtą verslo savininkams, svetainių kūrėjams, dizaineriams, rinkodaros specialistams ir visiems, dirbantiems su skaitmeniniu turiniu.",
+    "p2": "Kiekvienas mūsų įrankis sprendžia konkretų kasdienį uždavinį: vaizdų konvertavimą, spalvų kontrasto tikrinimą, favicon generavimą, QR kodų kūrimą ir daugiau. Mūsų tikslas – sukurti išsamų įrankių rinkinį, kuriame rasite viską, ko reikia, vienoje vietoje — nesijunginėjant tarp dešimčių skirtingų svetainių."
+  },
+  "whyFree": {
+    "title": "Kodėl siūlome nemokamus įrankius",
+    "items": [
+      {
+        "title": "Be registracijos, be apribojimų",
+        "description": "Kiekvienas įrankis veikia iš karto naršyklėje. Be paskyros, be prisijungimo, be mokėjimo."
+      },
+      {
+        "title": "Privatumas pirmiausia",
+        "description": "Jūsų failai niekada nepalieka įrenginio. Visas apdorojimas vyksta lokaliai naršyklėje — jūsų duomenų nesiunčiame į jokį serverį."
+      },
+      {
+        "title": "Sukurti iš tikrų poreikių",
+        "description": "Kiekvienas įrankis gimė iš tikros problemos, su kuria susidūrėme dirbdami su klientų projektais. Jei mums to reikėjo, tikėtina, kad jums taip pat."
+      },
+      {
+        "title": "Finansuojami reklamos, jums nemokamai",
+        "description": "Naudojame Google AdSense banerius, kad padengtume kūrimo ir talpinimo išlaidas. Dėl reklamos pajamų galime visus įrankius išlaikyti nemokamus ir toliau kurti naujus."
+      }
+    ]
+  },
+  "ourTools": {
+    "title": "Mūsų įrankiai",
+    "items": [
+      {
+        "title": "Vaizdai ir favicon",
+        "description": "WebP konverteris, vaizdų redaktorius ir favicon generatorius. 3 įrankiai kasdieniam darbui su vaizdais."
+      },
+      {
+        "title": "Meta ir SEO",
+        "description": "Meta pavadinimo ir aprašymo tikrintuvas bei žodžių ir simbolių skaičiuoklė teksto ilgiui įvertinti."
+      },
+      {
+        "title": "El. paštas ir komunikacija",
+        "description": "HTML el. pašto parašo generatorius su paruoštu kodu Gmail ir Outlook."
+      },
+      {
+        "title": "Spalvos ir prieinamumas",
+        "description": "WCAG kontrasto tikrintuvas, spalvų ištraukiklis iš vaizdo ir spalvų palečių generatorius. 3 įrankiai darbui su spalvomis."
+      },
+      {
+        "title": "Spauda ir medžiaga",
+        "description": "QR kodų generatorius svetainėms, vCard, meniu ir skrajutėms. Eksportas į PNG ir SVG."
+      }
+    ]
+  },
+  "whatsNext": {
+    "title": "Kas toliau",
+    "text": "Aktyviai dirbame plesdami įrankių rinkinį. Nauji įrankiai pridedami reguliariai pagal naudotojų atsiliepimus ir mūsų patię patirtį. Tikslas – viena platforma, kurioje verslo savininkai, dizaineriai ir kūrėjai turi prieigą prie kiekvieno svarbaus įrankio — viskas vienoje vietoje, viskas nemokamai."
+  },
+  "privacy": {
+    "title": "Privatumas ir saugumas",
+    "textBefore": "Gerbiame jūsų privatumą. Failai, kuriuos įkeliate į mūsų įrankius, apdorojami išskirtinai jūsų naršyklėje ir niekada nesiunčiami į serverį. Analitiką (Google Analytics 4) ir reklamą (Google AdSense) naudojame tik gavę jūsų sutikimą per slapukų juostą. Viši detaliai pateikiami mūsų",
+    "linkLabel": "Privatumo politikoje",
+    "textAfter": "."
+  },
+  "cta": {
+    "title": "Išbandykite mūsų įrankius",
+    "description": "10 nemokamų įrankių — be registracijos, be apribojimų, be failų įkėlimo į serverius",
+    "btnOne": "Eiti į įrankius",
+    "btnTwo": "Kontaktai"
+  }
+}

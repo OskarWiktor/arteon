@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "mainNavigation": "Pangunahing nabigasyon",
+    "logoAlt": "Arteon - logo ng kumpanya",
+    "closeMenu": "Isara ang menu",
+    "openMenu": "Buksan ang menu",
+    "closeToolsList": "Isara ang listahan ng mga kasangkapan",
+    "openToolsList": "Buksan ang listahan ng mga kasangkapan",
+    "toolsLabel": "Mga Kasangkapan",
+    "mobileMenu": "Mobile menu",
+    "aboutLabel": "Tungkol sa amin",
+    "contactLabel": "Makipag-ugnayan"
+  },
+  "footer": {
+    "copyright": "Lahat ng karapatan ay nakalaan.",
+    "description": "Libreng mga kasangkapan para sa mga web developer, designer, at marketer.",
+    "companyDataLabel": "Impormasyon ng kumpanya",
+    "toolsLabel": "Mga Kasangkapan",
+    "legalLabel": "Legal na dokumento",
+    "cookieSettingsLabel": "Mga setting ng cookie"
+  },
+  "desktopOnly": {
+    "title": "Gumagana ang kasangkapang ito sa mas malaking screen",
+    "description": "Para magamit nang komportable ang kasangkapang ito, buksan ito sa laptop, desktop computer, o tablet sa landscape mode.",
+    "tipTitle": "Tip",
+    "tipText": "Kung gumagamit ng tablet, ilipat sa landscape mode — kapag sapat na ang lapad ng window, awtomatikong maglo-load ang kasangkapan."
+  },
+  "cookie": {
+    "title": "Mga cookie at privacy",
+    "description": "Gumagamit kami ng mga cookie para sa functionality ng site, pag-aanalisa ng trapiko, at pagpapakita ng mga ad. Matuto pa sa",
+    "setPreferences": "Itakda ang mga kagustuhan",
+    "privacyPolicy": "Patakaran sa privacy",
+    "privacyPolicyHref": "/tl/patakaran-sa-privacy",
+    "reject": "Tanggihan lahat",
+    "settings": "Mga setting",
+    "accept": "Tanggapin lahat",
+    "panelTitle": "Mga kagustuhan sa privacy",
+    "panelDescription": "Mga setting ng pahintulot para sa pagproseso ng data.",
+    "categoriesLegend": "Mga kategorya",
+    "essentialTitle": "Kinakailangan",
+    "essentialDescription": "Hindi gagana ang site nang wala ang mga ito. Hindi nangongolekta ng marketing data.",
+    "essentialStatus": "Palaging aktibo",
+    "analyticsTitle": "Analytics (GA4)",
+    "analyticsDescription": "Mga istatistika ng pagbisita. Ina-enable ang Google Analytics 4 sa iyong pahintulot.",
+    "analyticsLabel": "I-enable ang GA4 analytics",
+    "adsTitle": "Mga ad (Google AdSense)",
+    "adsDescription": "Personalized na mga ad batay sa iyong mga interes.",
+    "adsLabel": "I-enable ang personalized na mga ad",
+    "changeDecision": "Maaari mong baguhin ang iyong desisyon anumang oras",
+    "save": "I-save"
+  },
+  "skipToContent": "Lumipat sa nilalaman",
+  "legal": [
+    {
+      "key": "privacy",
+      "href": "/tl/patakaran-sa-privacy",
+      "label": "Patakaran sa privacy"
+    }
+  ],
+  "breadcrumbs": {
+    "home": "Home",
+    "ariaLabel": "nabigasyon"
+  },
+  "contactForm": {
+    "nameLabel": "Buong pangalan",
+    "namePlaceholder": "Juan dela Cruz",
+    "emailLabel": "Email",
+    "emailPlaceholder": "juan.delacruz@gmail.com",
+    "subjectLabel": "Paksa",
+    "subjectPlaceholder": "hal. Ulat ng bug | Mungkahi ng tool | Tanong",
+    "messageLabel": "Mensahe",
+    "messagePlaceholder": "Ilarawan ang iyong tanong o mungkahi...",
+    "send": "Ipadala",
+    "error": "May nangyaring mali. Suriin ang iyong data at subukan ulit.",
+    "success": "Naipadala na ang mensahe! Sasagutin ka namin sa lalong madaling panahon."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Mga libreng tool",
+    "seeAllTools": "Tingnan lahat ng tool",
+    "carouselLabel": "Carousel ng mga tool",
+    "scrollLeft": "I-scroll pakaliwa",
+    "scrollRight": "I-scroll pakanan",
+    "carouselNavigation": "Nabigasyon ng carousel",
+    "goToSlide": "Pumunta sa slide",
+    "of": "ng",
+    "slide": "Slide",
+    "tool": "Tool",
+    "openTool": "Buksan ang tool"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Lumipat sa Filipino",
+    "toggleLabel": "Palitan ang wika",
+    "chooseLabel": "Pumili ng wika",
+    "popularLabel": "Sikat",
+    "otherLabel": "Iba pa",
+    "closeModalLabel": "Isara"
+  },
+  "mobileNav": {
+    "close": "Isara",
+    "services": "Mga serbisyo",
+    "contact": "Makipag-ugnayan"
+  },
+  "infoBanner": {
+    "text": "Na-update ang generator ng email signature – tingnan ang mga bagong feature",
+    "linkText": "mga tool"
+  }
+}

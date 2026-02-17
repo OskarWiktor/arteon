@@ -1,0 +1,52 @@
+{
+  "selectBaseColor": "Seleziona colore base",
+  "updateColor": "Aggiorna colore",
+  "randomColor": "Colore casuale",
+  "currentBaseColor": "Colore base attuale",
+  "baseColorHelper": "Tutte le palette sottostanti si basano su questo colore.",
+  "colorPreview": "Anteprima colore",
+  "copied": "Copiato",
+  "copy": "Copia",
+  "generatedPalettes": "Palette di colori generate",
+  "colorReadError": "Impossibile leggere il colore. Assicurati di usare il formato",
+  "example": "es.",
+  "enterValidColor": "Inserisci un colore HEX valido per generare le palette. Tutti i calcoli vengono eseguiti localmente nel tuo browser.",
+  "palettes": {
+    "monochromatic": {
+      "label": "Palette monocromatica",
+      "description": "Tutti i colori hanno la stessa tonalità (H) e variano principalmente in luminosità (L) nello spazio colore HSL."
+    },
+    "analogous": {
+      "label": "Palette analoga",
+      "description": "Colori con tonalità simili, da circa -30 a +30 intorno al colore base sulla ruota dei colori classica (es. Itten)."
+    },
+    "complementary": {
+      "label": "Palette complementare",
+      "description": "Il colore base e il suo complemento spostato di 180 sulla ruota dei colori  uno dei contrasti fondamentali descritti da Johannes Itten."
+    },
+    "triadic": {
+      "label": "Palette triadica",
+      "description": "Tre tonalità separate da 120 sulla ruota dei colori (vertici di un triangolo equilatero)  una geometria spesso utilizzata nel branding e nei design ispirati al Bauhaus."
+    },
+    "splitComplementary": {
+      "label": "Palette complementare divisa",
+      "description": "Una variante della palette complementare: invece di un complemento (180), si usano due colori spostati di circa ±30 dal complemento, riducendo la tensione visiva ma mantenendo un forte contrasto."
+    },
+    "softPastel": {
+      "label": "Palette pastello",
+      "description": "La stessa tonalità con saturazione ridotta e luminosità aumentata  uno spostamento verso il centro e la parte alta dello spazio HSL che produce colori morbidi e “cremosi”."
+    },
+    "deepDark": {
+      "label": "Palette scura",
+      "description": "La stessa tonalità con alta saturazione (S) e luminosità ridotta (L)  uno spostamento verso il basso dell’asse di luminosità, che produce colori profondi tipici della dark mode e degli accenti forti."
+    },
+    "materialTonal": {
+      "label": "Palette tonale (ispirata a Material Design)",
+      "description": "Diversi livelli di luminosità di una stessa tonalità  L variata e S moderata, simile alle gamme tonali delle linee guida Material Design (es. 50-900)."
+    },
+    "appleMinimal": {
+      "label": "Palette minimalista (ispirata ad Apple)",
+      "description": "Un accento di colore vivace e diversi neutri molto chiari e delicati, una composizione tipica di interfacce con molto spazio bianco e ombre sottili."
+    }
+  }
+}

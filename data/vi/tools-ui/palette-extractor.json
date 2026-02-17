@@ -1,0 +1,18 @@
+{
+  "unsupportedFormatsOnly": "File này không được hỗ trợ. Tải lên PNG, JPG/JPEG hoặc SVG.",
+  "unexpectedError": "Không thể phân tích hình ảnh. Thử lại hoặc sử dụng file khác.",
+  "addImageLabel": "Thêm hình ảnh",
+  "dragDropImage": "Kéo và thả hình ảnh vào đây",
+  "clickToSelect": "hoặc nhấn để chọn file từ thiết bị",
+  "supportedFormats": "Hỗ trợ: PNG, JPG/JPEG, SVG",
+  "preview": "Xem trước và bảng màu",
+  "addImageToStart": "Tải lên hình ảnh và công cụ sẽ hiển thị các màu chủ đạo. Sao chép từng mã với một lần nhấn – hoàn hảo cho UI, branding và mạng xã hội.",
+  "processing": "Phân tích hình ảnh và tạo bảng màu…",
+  "colorPreview": "Xem trước màu",
+  "copy": "Sao chép",
+  "copied": "Đã sao chép",
+  "empty": "Không thể phát hiện màu chủ đạo. Thử hình ảnh khác.",
+  "selectedFile": "File đã chọn:",
+  "copyHint": "Nhấn «Sao chép» để sao chép mã màu.",
+  "previewAlt": "Xem trước"
+}

@@ -1,0 +1,47 @@
+{
+  "dataType": "Tietotyyppi",
+  "types": {
+    "url": "URL-osoite",
+    "text": "Teksti",
+    "vcard": "Käyntikortti (vCard)",
+    "email": "Sähköposti",
+    "phone": "Puhelin"
+  },
+  "urlPlaceholder": "https://www.sivustosi.fi",
+  "textPlaceholder": "Kirjoita vapaamuotoinen teksti...",
+  "phonePlaceholder": "+358 40 123 4567",
+  "size": "Koko (px)",
+  "margin": "Marginaali (hiljainen alue)",
+  "qrColor": "QR-koodin väri",
+  "bgColor": "Taustan väri",
+  "errorCorrection": "Virheenkorjaustaso",
+  "errorCorrectionLevels": {
+    "L": "L – Matala (7 %)",
+    "M": "M – Keskitaso (15 %)",
+    "Q": "Q – Korkea (25 %)",
+    "H": "H – Maksimi (30 %)"
+  },
+  "preview": "QR-koodin esikatselu",
+  "downloadPng": "Lataa PNG",
+  "downloadSvg": "Lataa SVG",
+  "contrastWarning": "Värien kontrasti on liian matala. QR-koodin skannaus voi olla vaikeaa.",
+  "contrastRatio": "Kontrastisuhde",
+  "recommended": "Suositeltu minimi: 3:1",
+  "enterData": "Syötä tiedot luodaksesi QR-koodin.",
+  "vcard": {
+    "firstName": "Etunimi",
+    "lastName": "Sukunimi",
+    "organization": "Yritys (valinnainen)",
+    "title": "Titteli (valinnainen)",
+    "phone": "Puhelin (valinnainen)",
+    "email": "Sähköposti (valinnainen)",
+    "website": "Verkkosivusto (valinnainen)",
+    "address": "Osoite (valinnainen)"
+  },
+  "email": {
+    "to": "Sähköpostiosoite",
+    "subject": "Aihe (valinnainen)",
+    "body": "Sisältö (valinnainen)"
+  },
+  "printTip": "Painettavalle materiaalille suosittelemme vähintään 300 px:n kokoa ja virheenkorjaustasoa H."
+}

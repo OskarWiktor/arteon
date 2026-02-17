@@ -8,7 +8,7 @@ import { NavTranslate2 as RiTranslate2, NavCloseLine as RiCloseLine, NavArrowDow
 import Wrapper from '@/components/ui/Wrapper';
 import { useLocale, type Locale } from '@/lib/LocaleContext';
 import { getAlternateToolHref } from '@/lib/i18n/tool-registry';
-import { SUPPORTED_LOCALES, LOCALE_CONFIG } from '@/lib/i18n/locales';
+import { SUPPORTED_LOCALES, LOCALE_CONFIG, LANGUAGE_SWITCHER_UI } from '@/lib/i18n/locales';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useScrollLock } from '@/hooks/useScrollLock';
@@ -20,180 +20,6 @@ type AlternateLink = {
   hreflang: string;
   title: string;
   name: string;
-};
-
-const switchTitle: Record<Locale, string> = {
-  pl: 'Przejdź na polski',
-  en: 'Switch to English',
-  de: 'Auf Deutsch wechseln',
-  es: 'Cambiar a español',
-  fr: 'Passer au français',
-  pt: 'Mudar para português',
-  it: "Passa all'italiano",
-  ro: 'Schimbă în română',
-  nl: 'Schakel naar Nederlands',
-  hu: 'Váltás magyarra',
-  id: 'Beralih ke Bahasa Indonesia',
-  vi: 'Chuyển sang tiếng Việt',
-  tr: 'Türkçeye geç',
-  tl: 'Lumipat sa Filipino',
-  sw: 'Badili kwa Kiswahili',
-  ms: 'Tukar ke Bahasa Melayu',
-  cs: 'P\u0159epnout na \u010de\u0161tinu',
-  sv: 'Byt till svenska',
-  sq: 'Kalo n\u00eb shqip',
-  da: 'Skift til dansk',
-  no: 'Bytt til norsk',
-  fi: 'Vaihda suomeksi',
-  sk: 'Prepnúť na slovenčinu',
-  hr: 'Prebaci na hrvatski',
-  lt: 'Perjungti į lietuvių',
-  sl: 'Preklopi na slovenščino',
-};
-
-const toggleLabel: Record<Locale, string> = {
-  pl: 'Zmień język',
-  en: 'Change language',
-  de: 'Sprache ändern',
-  es: 'Cambiar idioma',
-  fr: 'Changer de langue',
-  pt: 'Alterar idioma',
-  it: 'Cambia lingua',
-  ro: 'Schimbă limba',
-  nl: 'Taal wijzigen',
-  hu: 'Nyelv váltás',
-  id: 'Ubah bahasa',
-  vi: 'Đổi ngôn ngữ',
-  tr: 'Dil değiştir',
-  tl: 'Palitan ang wika',
-  sw: 'Badilisha lugha',
-  ms: 'Tukar bahasa',
-  cs: 'Zm\u011bnit jazyk',
-  sv: '\u00c4ndra spr\u00e5k',
-  sq: 'Ndrysho gjuh\u00ebn',
-  da: 'Skift sprog',
-  no: 'Bytt spr\u00e5k',
-  fi: 'Vaihda kieltä',
-  sk: 'Zmeni\u0165 jazyk',
-  hr: 'Promijeni jezik',
-  lt: 'Pakeisti kalb\u0105',
-  sl: 'Spremeni jezik',
-};
-
-const chooseLabel: Record<Locale, string> = {
-  pl: 'Wybierz język',
-  en: 'Choose language',
-  de: 'Sprache wählen',
-  es: 'Elegir idioma',
-  fr: 'Choisir la langue',
-  pt: 'Escolher idioma',
-  it: 'Scegli lingua',
-  ro: 'Alege limba',
-  nl: 'Kies taal',
-  hu: 'Nyelv választása',
-  id: 'Pilih bahasa',
-  vi: 'Chọn ngôn ngữ',
-  tr: 'Dil seçin',
-  tl: 'Pumili ng wika',
-  sw: 'Chagua lugha',
-  ms: 'Pilih bahasa',
-  cs: 'Zvolte jazyk',
-  sv: 'V\u00e4lj spr\u00e5k',
-  sq: 'Zgjidh gjuh\u00ebn',
-  da: 'V\u00e6lg sprog',
-  no: 'Velg spr\u00e5k',
-  fi: 'Valitse kieli',
-  sk: 'Vyberte jazyk',
-  hr: 'Odaberite jezik',
-  lt: 'Pasirinkite kalb\u0105',
-  sl: 'Izberite jezik',
-};
-
-const popularLabel: Record<Locale, string> = {
-  pl: 'Popularne',
-  en: 'Popular',
-  de: 'Beliebt',
-  es: 'Popular',
-  fr: 'Populaire',
-  pt: 'Popular',
-  it: 'Popolari',
-  ro: 'Populare',
-  nl: 'Populair',
-  hu: 'Népszerű',
-  id: 'Populer',
-  vi: 'Phổ biến',
-  tr: 'Pop\u00fcler',
-  tl: 'Sikat',
-  sw: 'Maarufu',
-  ms: 'Popular',
-  cs: 'Obl\u00edben\u00e9',
-  sv: 'Popul\u00e4ra',
-  sq: 'T\u00eb njohura',
-  da: 'Popul\u00e6re',
-  no: 'Popul\u00e6re',
-  fi: 'Suositut',
-  sk: 'Ob\u013e\u00faben\u00e9',
-  hr: 'Popularni',
-  lt: 'Populiar\u016bs',
-  sl: 'Priljubljeni',
-};
-
-const otherLabel: Record<Locale, string> = {
-  pl: 'Inne',
-  en: 'Other',
-  de: 'Andere',
-  es: 'Otros',
-  fr: 'Autres',
-  pt: 'Outros',
-  it: 'Altre',
-  ro: 'Altele',
-  nl: 'Overig',
-  hu: 'Egyéb',
-  id: 'Lainnya',
-  vi: 'Khác',
-  tr: 'Di\u011fer',
-  tl: 'Iba pa',
-  sw: 'Nyingine',
-  ms: 'Lain-lain',
-  cs: 'Ostatn\u00ed',
-  sv: '\u00d6vriga',
-  sq: 'T\u00eb tjera',
-  da: 'Andre',
-  no: 'Andre',
-  fi: 'Muut',
-  sk: 'Ostatn\u00e9',
-  hr: 'Ostali',
-  lt: 'Kiti',
-  sl: 'Ostali',
-};
-
-const closeModalLabel: Record<Locale, string> = {
-  pl: 'Zamknij',
-  en: 'Close',
-  de: 'Schließen',
-  es: 'Cerrar',
-  fr: 'Fermer',
-  pt: 'Fechar',
-  it: 'Chiudi',
-  ro: 'Închide',
-  nl: 'Sluiten',
-  hu: 'Bezárás',
-  id: 'Tutup',
-  vi: 'Đóng',
-  tr: 'Kapat',
-  tl: 'Isara',
-  sw: 'Funga',
-  ms: 'Tutup',
-  cs: 'Zav\u0159\u00edt',
-  sv: 'St\u00e4ng',
-  sq: 'Mbyll',
-  da: 'Luk',
-  no: 'Lukk',
-  fi: 'Sulje',
-  sk: 'Zavrie\u0165',
-  hr: 'Zatvori',
-  lt: 'U\u017edaryti',
-  sl: 'Zapri',
 };
 
 const POPULAR_LOCALES: Locale[] = ['pl', 'en', 'de', 'es', 'fr', 'pt', 'it'];
@@ -218,13 +44,14 @@ function getAlternateLinks(pathname: string, currentLocale: Locale): AlternateLi
     if (!href) continue;
 
     const config = LOCALE_CONFIG[targetLocale];
+    const switcherUi = LANGUAGE_SWITCHER_UI[targetLocale];
     links.push({
       locale: targetLocale,
       href,
       label: config.label,
       hreflang: config.hreflang,
       name: config.name,
-      title: switchTitle[targetLocale] ?? `Switch to ${config.name}`,
+      title: switcherUi?.switchTitle ?? `Switch to ${config.name}`,
     });
   }
 
@@ -242,6 +69,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
   const panelRef = useRef<HTMLDivElement>(null);
 
   const links = getAlternateLinks(pathname, locale);
+  const t = LANGUAGE_SWITCHER_UI[locale];
 
   useEffect(() => setMounted(true), []);
 
@@ -311,7 +139,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
             onClick={() => setIsOpen((p) => !p)}
             aria-haspopup="menu"
             aria-expanded={isOpen}
-            aria-label={toggleLabel[locale] ?? 'Change language'}
+            aria-label={t.toggleLabel}
             className="text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 items-center gap-1.5 rounded-lg px-2 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           >
             <RiTranslate2 className="h-5 w-5" aria-hidden="true" />
@@ -338,7 +166,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
                     <div className="text-primary flex items-center gap-3 rounded-xl bg-white px-4 py-3">
                       <RiTranslate2 className="h-5 w-5 shrink-0" aria-hidden="true" />
                       <div>
-                        <div className="text-dark text-sm font-medium">{chooseLabel[locale]}</div>
+                        <div className="text-dark text-sm font-medium">{t.chooseLabel}</div>
                         <div className="text-light text-xs">
                           {currentConfig.label} — {currentConfig.name}
                         </div>
@@ -350,7 +178,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
                   {popularSorted.length > 0 && (
                     <>
                       <div className="pl-6">
-                        <span className="text-light mb-2 block px-3 text-[11px] font-semibold tracking-wider uppercase">{popularLabel[locale]}</span>
+                        <span className="text-light mb-2 block px-3 text-[11px] font-semibold tracking-wider uppercase">{t.popularLabel}</span>
                         <div className="flex flex-col">{popularCols[0].map(linkItem)}</div>
                       </div>
                       <div className="border-primary-light border-r pt-5 pr-4">
@@ -363,7 +191,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
                   {otherSorted.length > 0 && (
                     <>
                       <div className="pl-6">
-                        <span className="text-light mb-2 block px-3 text-[11px] font-semibold tracking-wider uppercase">{otherLabel[locale]}</span>
+                        <span className="text-light mb-2 block px-3 text-[11px] font-semibold tracking-wider uppercase">{t.otherLabel}</span>
                         <div className="flex flex-col">{otherCols[0].map(linkItem)}</div>
                       </div>
                       <div className="pt-5">
@@ -396,7 +224,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
           onClick={() => setIsOpen((p) => !p)}
           aria-haspopup="dialog"
           aria-expanded={isOpen}
-          aria-label={toggleLabel[locale] ?? 'Change language'}
+          aria-label={t.toggleLabel}
           className="text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 items-center gap-1.5 rounded-lg px-2 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
         >
           <RiTranslate2 className="h-5 w-5" aria-hidden="true" />
@@ -416,17 +244,17 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
               ref={panelRef}
               role="dialog"
               aria-modal="true"
-              aria-label={chooseLabel[locale]}
+              aria-label={t.chooseLabel}
               className="animate-dropdown-in fixed inset-x-4 top-1/2 z-[1101] max-h-[80dvh] -translate-y-1/2 overflow-y-auto rounded-2xl bg-white p-5 shadow-2xl sm:inset-x-auto sm:left-1/2 sm:w-[420px] sm:-translate-x-1/2"
             >
               {/* Header */}
               <div className="mb-4 flex items-center justify-between">
-                <h2 className="text-dark text-base font-semibold">{chooseLabel[locale]}</h2>
+                <h2 className="text-dark text-base font-semibold">{t.chooseLabel}</h2>
                 <button
                   type="button"
                   onClick={close}
                   className="text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 w-8 items-center justify-center rounded-lg transition focus:outline-none focus-visible:ring-2"
-                  aria-label={closeModalLabel[locale]}
+                  aria-label={t.closeModalLabel}
                 >
                   <RiCloseLine className="h-5 w-5" aria-hidden="true" />
                 </button>
@@ -444,7 +272,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
               <div className="grid grid-cols-2 gap-x-2">
                 {popular.length > 0 && (
                   <div>
-                    <span className="text-light mb-1.5 block px-2 text-[10px] font-semibold tracking-wider uppercase">{popularLabel[locale]}</span>
+                    <span className="text-light mb-1.5 block px-2 text-[10px] font-semibold tracking-wider uppercase">{t.popularLabel}</span>
                     <div className="flex flex-col">
                       {popular.map((link) => (
                         <Link
@@ -465,7 +293,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
 
                 {other.length > 0 && (
                   <div>
-                    <span className="text-light mb-1.5 block px-2 text-[10px] font-semibold tracking-wider uppercase">{otherLabel[locale]}</span>
+                    <span className="text-light mb-1.5 block px-2 text-[10px] font-semibold tracking-wider uppercase">{t.otherLabel}</span>
                     <div className="flex flex-col">
                       {other.map((link) => (
                         <Link

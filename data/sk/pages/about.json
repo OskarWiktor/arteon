@@ -1,0 +1,78 @@
+{
+  "slug": "o-nas",
+  "metadata": {
+    "title": "O Arteon – 10 bezplatných nástrojov pre web, SEO a dizajn",
+    "description": "Arteon je kreatívna agentúra, ktorá vyvíja bezplatné nástroje v prehliadači: konvertor WebP, generátor favicon, kontrola kontrastu farieb, generátor QR kódov a ďalšie. Bez registrácie, bez nahrávania — všetko beží lokálne."
+  },
+  "hero": {
+    "title": "Bezplatné nástroje od kreatívnej agentúry",
+    "description": "10 nástrojov v prehliadači pre obrázky, SEO, farby, e-mailové podpisy a QR kódy — bez registrácie, bez nahrávania súborov, bez obmedzenia"
+  },
+  "whoWeAre": {
+    "title": "Kto sme",
+    "p1": "Arteon je poľská kreatívna agentúra. Okrem našej komerčnej práce vyvíjame a udržiavame rastúcu zbierku bezplatných nástrojov určených pre podnikateľov, tvórcov webých stránok, dizajnérov, marketérov a každého, kto pracuje s digitálnym obsahom.",
+    "p2": "Každý nástroj, ktorý vytvárame, rieši konkrétny každodenný problém: konverzia obrázkov, kontrola kontrastu farieb, generovanie favicon, vytváranie QR kódov a ďalšie. Naším cieľom je vybudovať komplexnú sadu nástrojov, kde nájdete všetko potrebné na jednom mieste — bez prepínania medzi desiatkami rôznych webov."
+  },
+  "whyFree": {
+    "title": "Prečo ponúkame bezplatné nástroje",
+    "items": [
+      {
+        "title": "Bez registrácie, bez obmedzenia",
+        "description": "Každý nástroj funguje okamžite v prehliadači. Žiadny účet, žiadne prihlasovanie, žiadna platba."
+      },
+      {
+        "title": "Súkromie na prvom mieste",
+        "description": "Vaše súbory nikdy neopustia vaše zariadenie. Všetko spracovanie prebieha lokálne v prehliadači — vaše dáta neposielame na žiadny server."
+      },
+      {
+        "title": "Vznikli zo skutočných potrieb",
+        "description": "Každý nástroj vznikol zo skutočného problému, na ktorý sme narazili pri práci na projektoch klientov. Ak sme to potrebovali my, pravdepodobne to potrebujete aj vy."
+      },
+      {
+        "title": "Financované reklamou, pre vás zadarmo",
+        "description": "Používame bannery Google AdSense na pokrytie nákladov na vývoj a hosting. Vďaka príjmom z reklamy môžeme všetky nástroje udržiavať zadarmo a naďalej vyvíjať nové."
+      }
+    ]
+  },
+  "ourTools": {
+    "title": "Naše nástroje",
+    "items": [
+      {
+        "title": "Obrázky a favicony",
+        "description": "Konvertor WebP, editor obrázkov a generátor favicon. 3 nástroje pre každodennú prácu s obrázkami."
+      },
+      {
+        "title": "Meta a SEO",
+        "description": "Kontrola meta titulku a popisu plus počítadlo slov a znakov na hodnotenie dĺžky textu."
+      },
+      {
+        "title": "E-mail a komunikácia",
+        "description": "Generátor HTML e-mailového podpisu s hotovým kódom pre Gmail a Outlook."
+      },
+      {
+        "title": "Farby a prístupnosť",
+        "description": "Kontrola kontrastu WCAG, extraktor farieb z obrázka a generátor farebných palét. 3 nástroje pre prácu s farbami."
+      },
+      {
+        "title": "Tlač a materiály",
+        "description": "Generátor QR kódov pre weby, vCard, jedálne lístky a letáky. Export do PNG a SVG."
+      }
+    ]
+  },
+  "whatsNext": {
+    "title": "Čo nás čaká",
+    "text": "Aktívne pracujeme na rozširovaní sady nástrojov. Nové nástroje pridávame pravidelne na základe spätnej väzby používateľov a vlastných skúsenéstí. Cieľom je jediná platforma, kde podnikatelia, dizajnéri a vývojári majú prístup ku každému dôležitému nástroju — všetko na jednom mieste, všetko zadarmo."
+  },
+  "privacy": {
+    "title": "Súkromie a bezpečnosť",
+    "textBefore": "Rešpektujeme vaše súkromie. Súbory, ktoré nahrávate do našich nástrojov, sa spracúvajú výhradne vo vašom prehliadači a nikdy sa neodosielajú na server. Analytiku (Google Analytics 4) a reklamu (Google AdSense) používame až po vašom súhlase prostredníctvom cookie lišty. Všetky podrobnosti nájdete v našich",
+    "linkLabel": "Zásadách ochrany súkromia",
+    "textAfter": "."
+  },
+  "cta": {
+    "title": "Vyskúšajte naše nástroje",
+    "description": "10 bezplatných nástrojov — bez registrácie, bez obmedzenia, bez nahrávania súborov na server",
+    "btnOne": "Prejsť na nástroje",
+    "btnTwo": "Kontakt"
+  }
+}

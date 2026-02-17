@@ -1,0 +1,47 @@
+{
+  "dataType": "Tipo de datos",
+  "types": {
+    "url": "Dirección URL",
+    "text": "Texto",
+    "vcard": "Tarjeta de visita (vCard)",
+    "email": "Correo electrónico",
+    "phone": "Teléfono"
+  },
+  "urlPlaceholder": "https://www.su-sitio-web.com",
+  "textPlaceholder": "Escriba cualquier texto...",
+  "phonePlaceholder": "+34 612 345 678",
+  "size": "Tamaño (px)",
+  "margin": "Margen (zona de silencio)",
+  "qrColor": "Color del código QR",
+  "bgColor": "Color de fondo",
+  "errorCorrection": "Nivel de corrección de errores",
+  "errorCorrectionLevels": {
+    "L": "L - Bajo (7%)",
+    "M": "M - Medio (15%)",
+    "Q": "Q - Alto (25%)",
+    "H": "H - Máximo (30%)"
+  },
+  "preview": "Vista previa del código QR",
+  "downloadPng": "Descargar PNG",
+  "downloadSvg": "Descargar SVG",
+  "contrastWarning": "El contraste entre los colores es demasiado bajo. El código QR puede ser difícil de escanear.",
+  "contrastRatio": "Relación de contraste",
+  "recommended": "Mínimo recomendado: 3:1",
+  "enterData": "Introduzca datos para generar un código QR.",
+  "vcard": {
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "organization": "Empresa (opcional)",
+    "title": "Cargo (opcional)",
+    "phone": "Teléfono (opcional)",
+    "email": "Correo electrónico (opcional)",
+    "website": "Sitio web (opcional)",
+    "address": "Dirección (opcional)"
+  },
+  "email": {
+    "to": "Dirección de correo",
+    "subject": "Asunto (opcional)",
+    "body": "Cuerpo (opcional)"
+  },
+  "printTip": "Para materiales impresos, recomendamos un tamaño mínimo de 300px y nivel de corrección de errores H."
+}

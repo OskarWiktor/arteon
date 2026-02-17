@@ -1,0 +1,23 @@
+{
+  "pasteText": "Liitä tai kirjoita teksti",
+  "textPlaceholder": "Liitä analysoitava teksti tähän...",
+  "pageType": "Sivutyyppi",
+  "pageTypeHelper": "Valitse sivutyyppi, jolle kirjoitat. Jokaisella tyypillä on eri pituussuositukset.",
+  "words": "Sanat",
+  "charsWithSpaces": "Merkit (välilyönnein)",
+  "charsWithoutSpaces": "Merkit (ilman välilyöntejä)",
+  "paragraphs": "Kappaleet",
+  "readingTime": "Lukuaika",
+  "lengthEvaluation": "Pituusarvio",
+  "recommendedRange": "Suositeltu väli",
+  "copyReport": "Kopioi raportti",
+  "copied": "Kopioitu",
+  "statistics": "Tekstin tilastot",
+  "noText": "Ei tekstiä",
+  "empty": "Kirjoita tekstiä nähdäksesi tilastot.",
+  "tooShort": "Liian lyhyt",
+  "tooLong": "Liian pitkä",
+  "ideal": "Hyvä pituus",
+  "analysisFor": "Analyysi:",
+  "wordsUnit": "sanaa"
+}

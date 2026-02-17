@@ -1,0 +1,28 @@
+{
+  "slug": "contact",
+  "metadata": {
+    "title": "Contact – Arteon gratis online tools | Ondersteuning & feedback",
+    "description": "Neem contact op met het Arteon-team. Meld een bug, stel een nieuwe tool voor of stel een vraag over onze gratis online tools voor afbeeldingen, SEO, kleuren en QR-codes. Wij reageren binnen één werkdag."
+  },
+  "hero": {
+    "title": "Neem contact op met het Arteon-team",
+    "description": "Meld een bug, stel een nieuwe tool voor of stel een vraag — wij reageren binnen één werkdag"
+  },
+  "intro": {
+    "title": "Heeft u een vraag of suggestie?",
+    "textBefore": "We horen graag uw feedback over onze tools. Als u een bug heeft gevonden, een idee heeft voor een nieuwe tool of hulp nodig heeft — schrijf ons op",
+    "textAfter": ". Wij reageren binnen één werkdag."
+  },
+  "formTitle": "Stuur ons een bericht",
+  "details": {
+    "title": "Contactgegevens",
+    "emailLabel": "E-mail",
+    "hoursLabel": "Openingstijden",
+    "hoursValue": "Maandag – Vrijdag: 8:00 – 16:00 (CET)"
+  },
+  "cta": {
+    "title": "Terug naar de tools",
+    "description": "10 gratis online tools voor het werken met afbeeldingen, tekst en kleuren",
+    "btnOne": "Tools"
+  }
+}

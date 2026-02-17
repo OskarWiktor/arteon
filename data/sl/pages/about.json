@@ -1,0 +1,78 @@
+{
+  "slug": "o-nas",
+  "metadata": {
+    "title": "O Arteonu – 10 brezplačnih orodij za splet, SEO in oblikovanje",
+    "description": "Arteon je ustvarjalna agencija, ki razvija brezplačna orodja v brskalniku: pretvornik WebP, generator favicon, preverjalnik barvnega kontrasta, generator QR kod in več. Brez registracije, brez nalaganja — vse deluje lokalno."
+  },
+  "hero": {
+    "title": "Brezplačna orodja ustvarjalne agencije",
+    "description": "10 orodij v brskalniku za slike, SEO, barve, e-poštne podpise in QR kode — brez registracije, brez nalaganja datotek, brez omejitev"
+  },
+  "whoWeAre": {
+    "title": "Kdo smo",
+    "p1": "Arteon je poljska ustvarjalna agencija. Poleg našega komercialnega dela razvijamo in vzdržujemo rastočo zbirko brezplačnih orodij, namenjenih lastnikom podjetij, ustvarjalcem spletnih strani, oblikovalcem, tržnikom in vsem, ki delajo z digitalno vsebino.",
+    "p2": "Vsako orodje, ki ga ustvarimo, rešuje določen vsakdanji problem: pretvarjanje slik, preverjanje barvnega kontrasta, generiranje faviconov, ustvarjanje QR kod in več. Naš cilj je zgraditi celovit nabor orodij, kjer najdete vse, kar potrebujete, na enem mestu — brez preklapljanja med desetinami različnih spletnih strani."
+  },
+  "whyFree": {
+    "title": "Zakaj ponujamo brezplačna orodja",
+    "items": [
+      {
+        "title": "Brez registracije, brez omejitev",
+        "description": "Vsako orodje deluje takoj v brskalniku. Brez računa, brez prijave, brez plačila."
+      },
+      {
+        "title": "Zasebnost na prvem mestu",
+        "description": "Vaše datoteke nikoli ne zapustijo vaše naprave. Vsa obdelava poteka lokalno v brskalniku — vaših podatkov ne pošiljamo na noben strežnik."
+      },
+      {
+        "title": "Ustvarjeno iz dejanskih potreb",
+        "description": "Vsako orodje je nastalo iz resničnega problema, na katerega smo naleteli pri delu na projektih strank. Če smo ga potrebovali mi, ga verjetno potrebujete tudi vi."
+      },
+      {
+        "title": "Financirano z oglasi, za vas brezplačno",
+        "description": "Uporabljamo pasice Google AdSense za pokritje stroškov razvoja in gostovanja. Zahvaljujoč prihodkom od oglaševanja lahko vsa orodja ohranjamo brezplačna in nadaljujemo z razvojem novih."
+      }
+    ]
+  },
+  "ourTools": {
+    "title": "Naša orodja",
+    "items": [
+      {
+        "title": "Slike in faviconi",
+        "description": "Pretvornik WebP, urejevalnik slik in generator favicon. 3 orodja za vsakodnevno delo s slikami."
+      },
+      {
+        "title": "Meta in SEO",
+        "description": "Preverjalnik meta naslova in opisa ter števec besed in znakov za oceno dolžine besedila."
+      },
+      {
+        "title": "E-pošta in komunikacija",
+        "description": "Generator HTML e-poštnega podpisa s pripravljeno kodo za Gmail in Outlook."
+      },
+      {
+        "title": "Barve in dostopnost",
+        "description": "WCAG preverjalnik kontrasta, izluščevalnik barv iz slike in generator barvnih palet. 3 orodja za delo z barvami."
+      },
+      {
+        "title": "Tisk in materiali",
+        "description": "Generator QR kod za spletne strani, vCard, jelovnike in letake. Izvoz v PNG in SVG."
+      }
+    ]
+  },
+  "whatsNext": {
+    "title": "Kaj sledi",
+    "text": "Aktivno delamo na širitvi nabora orodij. Nova orodja dodajamo redno na podlagi povratnih informacij uporabnikov in naših lastnih izkušenj. Cilj je ena platforma, kjer imajo lastniki podjetij, oblikovalci in razvijalci dostop do vsakega pomembnega orodja — vse na enem mestu, vse brezplačno."
+  },
+  "privacy": {
+    "title": "Zasebnost in varnost",
+    "textBefore": "Spoštujemo vašo zasebnost. Datoteke, ki jih naložite v naša orodja, se obdelujejo izključno v vašem brskalniku in se nikoli ne pošiljajo na strežnik. Analitiko (Google Analytics 4) in oglaševanje (Google AdSense) uporabljamo šele po vašem soglasju prek pasice piškotkov. Vsi podrobnosti so na voljo v naši",
+    "linkLabel": "Politiki zasebnosti",
+    "textAfter": "."
+  },
+  "cta": {
+    "title": "Preizkusite naša orodja",
+    "description": "10 brezplačnih orodij — brez registracije, brez omejitev, brez nalaganja datotek na strežnike",
+    "btnOne": "Pojdi na orodja",
+    "btnTwo": "Kontakt"
+  }
+}

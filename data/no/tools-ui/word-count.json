@@ -1,0 +1,23 @@
+{
+  "pasteText": "Lim inn eller skriv tekst",
+  "textPlaceholder": "Lim inn teksten du vil analysere her...",
+  "pageType": "Sidetype",
+  "pageTypeHelper": "Velg sidetypen du skriver for. Hver type har forskjellige anbefalinger for lengde.",
+  "words": "Ord",
+  "charsWithSpaces": "Tegn (med mellomrom)",
+  "charsWithoutSpaces": "Tegn (uten mellomrom)",
+  "paragraphs": "Avsnitt",
+  "readingTime": "Lesetid",
+  "lengthEvaluation": "Lengdevurdering",
+  "recommendedRange": "Anbefalt intervall",
+  "copyReport": "Kopier rapport",
+  "copied": "Kopiert",
+  "statistics": "Tekststatistikk",
+  "noText": "Ingen tekst",
+  "empty": "Skriv tekst for å se statistikk.",
+  "tooShort": "For kort",
+  "tooLong": "For lang",
+  "ideal": "God lengde",
+  "analysisFor": "Analyse for",
+  "wordsUnit": "ord"
+}

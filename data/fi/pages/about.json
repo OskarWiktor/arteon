@@ -1,0 +1,78 @@
+{
+  "slug": "tietoa-meista",
+  "metadata": {
+    "title": "Tietoa Arteonista – 10 ilmaista verkkotyökalua webille, SEO:lle ja suunnittelulle",
+    "description": "Arteon on luova toimisto, joka kehittää ilmaisia selainpohjaisia työkaluja: WebP-muunnin, favicon-generaattori, värikontrastin tarkistus, QR-koodigeneraattori ja paljon muuta. Ilman rekisteröitymistä, ilman lähetystä – kaikki toimii paikallisesti."
+  },
+  "hero": {
+    "title": "Ilmaiset verkkotyökalut luovalta toimistolta",
+    "description": "10 selainpohjaista työkalua kuville, SEO:lle, väreille, sähköpostiallekirjoituksille ja QR-koodeille – ilman rekisteröitymistä, ilman tiedostojen lähetystä, ilman rajoituksia"
+  },
+  "whoWeAre": {
+    "title": "Keitä olemme",
+    "p1": "Arteon on puolalainen luova toimisto. Kaupallisen työmme lisäksi kehitämme ja ylläpidämme kasvavaa kokoelmaa ilmaisia verkkotyökaluja, jotka on suunniteltu yrittäjille, verkkokehittäjille, suunnittelijoille, markkinoijille ja kaikille, jotka työskentelevät digitaalisen sisällön parissa.",
+    "p2": "Jokainen työkalu ratkaisee tietyn, päivittäisen ongelman: kuvien muuntaminen, värikontrastin tarkistaminen, faviconien luominen, QR-koodien generointi ja paljon muuta. Tavoitteenamme on rakentaa täydellinen työkalupaketti, josta löydät kaiken tarvitsemasi yhdestä paikasta – ilman kymmenien eri sivustojen välillä vaihtamista."
+  },
+  "whyFree": {
+    "title": "Miksi tarjoamme ilmaisia työkaluja",
+    "items": [
+      {
+        "title": "Ilman rekisteröitymistä, ilman rajoituksia",
+        "description": "Jokainen työkalu toimii välittömästi selaimessasi. Ei tiliä, ei kirjautumista, ei maksuja."
+      },
+      {
+        "title": "Yksityisyys ensin",
+        "description": "Tiedostosi eivät koskaan poistu laitteeltasi. Kaikki käsittely tapahtuu paikallisesti selaimessa – emme lähetä tietojasi millekkään palvelimelle."
+      },
+      {
+        "title": "Rakennettu todellisista tarpeista",
+        "description": "Jokainen työkalu syntyi todellisesta ongelmasta, johon törmäsimme asiakasprojekteissa. Jos me tarvitsimme sitä, on todennäköistä, että sinäkin tarvitset."
+      },
+      {
+        "title": "Mainosrahoitteinen, sinulle ilmainen",
+        "description": "Käytämme Google AdSense -bannereita kehitys- ja ylläpitokulujen kattamiseksi. Mainostulojen ansiosta voimme pitää kaikki työkalut ilmaisina ja jatkaa uusien rakentamista."
+      }
+    ]
+  },
+  "ourTools": {
+    "title": "Työkalumme",
+    "items": [
+      {
+        "title": "Kuvat ja faviconit",
+        "description": "WebP-muunnin, kuvaeditori ja favicon-generaattori. 3 työkalua päivittäiseen kuvatyöhön."
+      },
+      {
+        "title": "Meta ja SEO",
+        "description": "Meta-otsikon ja -kuvauksen tarkistus sekä sana- ja merkkilaskuri tekstin pituuden arviointiin."
+      },
+      {
+        "title": "Sähköposti ja viestintä",
+        "description": "HTML-sähköpostiallekirjoitusgeneraattori valmiilla koodilla Gmailiin ja Outlookiin."
+      },
+      {
+        "title": "Värit ja saavutettavuus",
+        "description": "WCAG-kontrastin tarkistus, värien poiminta kuvasta ja väripalettien generaattori. 3 työkalua värien käsittelyyn."
+      },
+      {
+        "title": "Painotuotteet ja materiaalit",
+        "description": "QR-koodigeneraattori verkkosivuille, vCard-korteille, ruokalistoille ja esitteille. Vienti PNG- ja SVG-muodossa."
+      }
+    ]
+  },
+  "whatsNext": {
+    "title": "Mitä on tulossa",
+    "text": "Työskentelemme aktiivisesti työkaluvalikoiman laajentamiseksi. Uusia työkaluja lisätään säännöllisesti käyttäjäpalautteen ja oman kokemuksemme perusteella. Tavoitteena on yksi alusta, josta yrittäjät, suunnittelijat ja kehittäjät löytävät jokaisen tärkeän työkalun – kaiken yhdestä paikasta, kaiken ilmaiseksi."
+  },
+  "privacy": {
+    "title": "Yksityisyys ja turvallisuus",
+    "textBefore": "Kunnioitamme yksityisyyttäsi. Työkaluihimme lataamasi tiedostot käsitellään yksinomaan selaimessasi eikä niitä lähetetä millekkään palvelimelle. Käytämme analytiikkaa (Google Analytics 4) ja mainontaa (Google AdSense) vain suostumuksellasi evästebannerin kautta. Kaikki yksityiskohdat löydät",
+    "linkLabel": "Tietosuojakäytännöstämme",
+    "textAfter": "."
+  },
+  "cta": {
+    "title": "Kokeile työkalujamme",
+    "description": "10 ilmaista verkkotyökalua – ilman rekisteröitymistä, ilman rajoituksia, ilman tiedostojen lähetystä palvelimille",
+    "btnOne": "Siirry työkaluihin",
+    "btnTwo": "Ota yhteyttä"
+  }
+}

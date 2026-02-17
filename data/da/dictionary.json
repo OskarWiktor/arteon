@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "mainNavigation": "Hovednavigation",
+    "logoAlt": "Arteon - virksomhedslogo",
+    "closeMenu": "Luk menuen",
+    "openMenu": "Åbn menuen",
+    "closeToolsList": "Luk værktøjslisten",
+    "openToolsList": "Åbn værktøjslisten",
+    "toolsLabel": "Værktøjer",
+    "mobileMenu": "Mobilmenu",
+    "aboutLabel": "Om os",
+    "contactLabel": "Kontakt"
+  },
+  "footer": {
+    "copyright": "Alle rettigheder forbeholdes.",
+    "description": "Gratis værktøjer til webudviklere, designere og marketingfolk.",
+    "companyDataLabel": "Virksomhedsoplysninger",
+    "toolsLabel": "Værktøjer",
+    "legalLabel": "Juridiske dokumenter",
+    "cookieSettingsLabel": "Cookie-indstillinger"
+  },
+  "desktopOnly": {
+    "title": "Dette værktøj fungerer på en større skærm",
+    "description": "For at bruge dette værktøj komfortabelt skal du åbne det på en bærbar computer, stationær computer eller tablet i liggende tilstand.",
+    "tipTitle": "Tip",
+    "tipText": "Hvis du bruger en tablet, skift til liggende tilstand — når vinduesbredden er tilstrækkelig, indlæses værktøjet automatisk."
+  },
+  "cookie": {
+    "title": "Cookies og privatliv",
+    "description": "Vi bruger cookies til webstedets funktionalitet, trafikanalyse og annoncevisning. Læs mere i",
+    "setPreferences": "Angiv præferencer",
+    "privacyPolicy": "Privatlivspolitik",
+    "privacyPolicyHref": "/da/privatlivspolitik",
+    "reject": "Afvis alle",
+    "settings": "Indstillinger",
+    "accept": "Acceptér alle",
+    "panelTitle": "Privatlivsindstillinger",
+    "panelDescription": "Samtykkeindstillinger for databehandling.",
+    "categoriesLegend": "Kategorier",
+    "essentialTitle": "Nødvendige",
+    "essentialDescription": "Webstedet kan ikke fungere uden disse. Indsamler ikke markedsføringsdata.",
+    "essentialStatus": "Altid aktiv",
+    "analyticsTitle": "Analyse (GA4)",
+    "analyticsDescription": "Besøgsstatistik. Aktiverer Google Analytics 4 med dit samtykke.",
+    "analyticsLabel": "Aktivér GA4-analyse",
+    "adsTitle": "Annoncer (Google AdSense)",
+    "adsDescription": "Personlige annoncer baseret på dine interesser.",
+    "adsLabel": "Aktivér personlige annoncer",
+    "changeDecision": "Du kan ændre din beslutning når som helst",
+    "save": "Gem"
+  },
+  "skipToContent": "Gå til indhold",
+  "legal": [
+    {
+      "key": "privacy",
+      "href": "/da/privatlivspolitik",
+      "label": "Privatlivspolitik"
+    }
+  ],
+  "breadcrumbs": {
+    "home": "Forside",
+    "ariaLabel": "navigation"
+  },
+  "contactForm": {
+    "nameLabel": "Fulde navn",
+    "namePlaceholder": "Lars Nielsen",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "lars.nielsen@gmail.com",
+    "subjectLabel": "Emne",
+    "subjectPlaceholder": "f.eks. Fejlrapport | Værktøjsforslag | Spørgsmål",
+    "messageLabel": "Besked",
+    "messagePlaceholder": "Beskriv dit spørgsmål eller forslag...",
+    "send": "Send",
+    "error": "Noget gik galt. Tjek dine data og prøv igen.",
+    "success": "Besked sendt! Vi svarer hurtigst muligt."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Gratis værktøjer",
+    "seeAllTools": "Se alle værktøjer",
+    "carouselLabel": "Værktøjskarrusel",
+    "scrollLeft": "Scroll til venstre",
+    "scrollRight": "Scroll til højre",
+    "carouselNavigation": "Karruselnavigation",
+    "goToSlide": "Gå til slide",
+    "of": "af",
+    "slide": "Slide",
+    "tool": "Værktøj",
+    "openTool": "Åbn værktøj"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Skift til dansk",
+    "toggleLabel": "Skift sprog",
+    "chooseLabel": "Vælg sprog",
+    "popularLabel": "Populære",
+    "otherLabel": "Andre",
+    "closeModalLabel": "Luk"
+  },
+  "mobileNav": {
+    "close": "Luk",
+    "services": "Tjenester",
+    "contact": "Kontakt"
+  },
+  "infoBanner": {
+    "text": "E-mail signatur generator opdateret – opdag nye funktioner",
+    "linkText": "værktøjer"
+  }
+}

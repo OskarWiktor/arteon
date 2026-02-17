@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "mainNavigation": "Glavna navigacija",
+    "logoAlt": "Arteon - logotip podjetja",
+    "closeMenu": "Zapri meni",
+    "openMenu": "Odpri meni",
+    "closeToolsList": "Zapri seznam orodij",
+    "openToolsList": "Odpri seznam orodij",
+    "toolsLabel": "Orodja",
+    "mobileMenu": "Mobilni meni",
+    "aboutLabel": "O nas",
+    "contactLabel": "Kontakt"
+  },
+  "footer": {
+    "copyright": "Vse pravice pridržane.",
+    "description": "Brezplačna orodja za spletne razvijalce, oblikovalce in tržnike.",
+    "companyDataLabel": "Podatki o podjetju",
+    "toolsLabel": "Orodja",
+    "legalLabel": "Pravni dokumenti",
+    "cookieSettingsLabel": "Nastavitve piškotkov"
+  },
+  "desktopOnly": {
+    "title": "To orodje deluje na večjem zaslonu",
+    "description": "Za udobno uporabo tega orodja ga odprite na prenosniku, namiznem računalniku ali tablici v ležečem načinu.",
+    "tipTitle": "Namig",
+    "tipText": "Če uporabljate tablico, preklopite na ležeči način – ko bo okno dovolj široko, se bo orodje samodejno naložilo."
+  },
+  "cookie": {
+    "title": "Piškotki in zasebnost",
+    "description": "Uporabljamo piškotke za delovanje spletnega mesta, analizo prometa in prikazovanje oglasov. Več informacij",
+    "setPreferences": "Nastavi nastavitve",
+    "privacyPolicy": "Pravilnik o zasebnosti",
+    "privacyPolicyHref": "/sl/pravilnik-o-zasebnosti",
+    "reject": "Zavrni vse",
+    "settings": "Nastavitve",
+    "accept": "Sprejmi vse",
+    "panelTitle": "Nastavitve zasebnosti",
+    "panelDescription": "Nastavitve soglasja za obdelavo podatkov.",
+    "categoriesLegend": "Kategorije",
+    "essentialTitle": "Nujni",
+    "essentialDescription": "Spletno mesto brez njih ne deluje. Ne zbirajo trženjskih podatkov.",
+    "essentialStatus": "Vedno aktivni",
+    "analyticsTitle": "Analitika (GA4)",
+    "analyticsDescription": "Statistika obiskov. Omogoči Google Analytics 4 z vašim soglasjem.",
+    "analyticsLabel": "Omogoči GA4 analitiko",
+    "adsTitle": "Oglasi (Google AdSense)",
+    "adsDescription": "Prilagojeni oglasi na podlagi vaših interesov.",
+    "adsLabel": "Omogoči prilagojene oglase",
+    "changeDecision": "Svojo odločitev lahko kadar koli spremenite",
+    "save": "Shrani"
+  },
+  "skipToContent": "Preskoči na vsebino",
+  "legal": [
+    {
+      "key": "privacy",
+      "href": "/sl/pravilnik-o-zasebnosti",
+      "label": "Pravilnik o zasebnosti"
+    }
+  ],
+  "breadcrumbs": {
+    "home": "Začetna stran",
+    "ariaLabel": "navigacija"
+  },
+  "contactForm": {
+    "nameLabel": "Ime in priimek",
+    "namePlaceholder": "Janez Novak",
+    "emailLabel": "E-pošta",
+    "emailPlaceholder": "janez.novak@gmail.com",
+    "subjectLabel": "Zadeva",
+    "subjectPlaceholder": "npr. Prijava napake | Predlog orodja | Vprašanje",
+    "messageLabel": "Sporočilo",
+    "messagePlaceholder": "Opišite svoje vprašanje ali predlog...",
+    "send": "Pošlji",
+    "error": "Nekaj je šlo narobe. Preverite podatke in poskusite znova.",
+    "success": "Sporočilo poslano! Odgovorili bomo v najkrajšem možnem času."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Brezplačna orodja",
+    "seeAllTools": "Prikaži vsa orodja",
+    "carouselLabel": "Vrtiljak orodij",
+    "scrollLeft": "Pomakni levo",
+    "scrollRight": "Pomakni desno",
+    "carouselNavigation": "Navigacija vrtiljaka",
+    "goToSlide": "Pojdi na diapozitiv",
+    "of": "od",
+    "slide": "Diapozitiv",
+    "tool": "Orodje",
+    "openTool": "Odpri orodje"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Preklopi na slovenščino",
+    "toggleLabel": "Spremeni jezik",
+    "chooseLabel": "Izberite jezik",
+    "popularLabel": "Priljubljeni",
+    "otherLabel": "Ostali",
+    "closeModalLabel": "Zapri"
+  },
+  "mobileNav": {
+    "close": "Zapri",
+    "services": "Storitve",
+    "contact": "Kontakt"
+  },
+  "infoBanner": {
+    "text": "Generator e-poštnega podpisa posodobljen – odkrijte nove funkcije",
+    "linkText": "orodja"
+  }
+}

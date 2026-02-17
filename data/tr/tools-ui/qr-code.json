@@ -1,0 +1,47 @@
+{
+  "dataType": "Veri türü",
+  "types": {
+    "url": "URL adresi",
+    "text": "Metin",
+    "vcard": "Kartvizit (vCard)",
+    "email": "E-posta",
+    "phone": "Telefon"
+  },
+  "urlPlaceholder": "https://www.siteniz.com",
+  "textPlaceholder": "Herhangi bir metin girin...",
+  "phonePlaceholder": "+90 532 123 4567",
+  "size": "Boyut (px)",
+  "margin": "Kenar boşluğu (sessiz bölge)",
+  "qrColor": "QR kod rengi",
+  "bgColor": "Arka plan rengi",
+  "errorCorrection": "Hata düzeltme seviyesi",
+  "errorCorrectionLevels": {
+    "L": "L - Düşük (7%)",
+    "M": "M - Orta (15%)",
+    "Q": "Q - Yüksek (25%)",
+    "H": "H - Maksimum (30%)"
+  },
+  "preview": "QR kod önizlemesi",
+  "downloadPng": "PNG indir",
+  "downloadSvg": "SVG indir",
+  "contrastWarning": "Renkler arasındaki kontrast çok düşük. QR kod taranması zor olabilir.",
+  "contrastRatio": "Kontrast oranı",
+  "recommended": "Önerilen minimum: 3:1",
+  "enterData": "QR kod oluşturmak için veri girin.",
+  "vcard": {
+    "firstName": "Ad",
+    "lastName": "Soyad",
+    "organization": "Şirket (isteğe bağlı)",
+    "title": "Ünvan (isteğe bağlı)",
+    "phone": "Telefon (isteğe bağlı)",
+    "email": "E-posta (isteğe bağlı)",
+    "website": "Web sitesi (isteğe bağlı)",
+    "address": "Adres (isteğe bağlı)"
+  },
+  "email": {
+    "to": "E-posta adresi",
+    "subject": "Konu (isteğe bağlı)",
+    "body": "İçerik (isteğe bağlı)"
+  },
+  "printTip": "Basılı materyaller için en az 300px boyut ve H hata düzeltme seviyesi öneriyoruz."
+}

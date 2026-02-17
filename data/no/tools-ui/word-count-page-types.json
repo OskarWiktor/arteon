@@ -1,0 +1,44 @@
+[
+  {
+    "key": "product",
+    "label": "Produktbeskrivelse",
+    "minWords": 80,
+    "maxWords": 400,
+    "description": "Jo enklere produktet, desto kortere beskrivelsen. Komplekse produkter (f.eks. elektronikk) krever flere forklaringer og spesifikasjoner."
+  },
+  {
+    "key": "service",
+    "label": "Tjenesteside",
+    "minWords": 500,
+    "maxWords": 1500,
+    "description": "En enkel lokal tjeneste krever færre ord. Et komplekst tilbud med flere trinn krever mer."
+  },
+  {
+    "key": "homepage",
+    "label": "Forside",
+    "minWords": 400,
+    "maxWords": 1000,
+    "description": "Forsiden leder besøkende til undersider. Et klart budskap og lesbar struktur gjør navigasjonen enklere."
+  },
+  {
+    "key": "landing",
+    "label": "Landingsside",
+    "minWords": 600,
+    "maxWords": 2500,
+    "description": "Dyrere tilbud krever mer forklaring og tillitsbygging. Et enkelt tilbud kan være kortere."
+  },
+  {
+    "key": "blog",
+    "label": "Blogginnlegg",
+    "minWords": 1200,
+    "maxWords": 3000,
+    "description": "Lengden avhenger av emnets kompleksitet. Teksten bør besvare leserens spørsmål grundig og konkret."
+  },
+  {
+    "key": "guide",
+    "label": "Guide / veiledning",
+    "minWords": 2500,
+    "maxWords": 6000,
+    "description": "En detaljert gjennomgang av et emne med mange aspekter. Lengden avhenger av emnets omfang."
+  }
+]

@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "mainNavigation": "Điều hướng chính",
+    "logoAlt": "Arteon - logo công ty",
+    "closeMenu": "Đóng menu",
+    "openMenu": "Mở menu",
+    "closeToolsList": "Đóng danh sách công cụ",
+    "openToolsList": "Mở danh sách công cụ",
+    "toolsLabel": "Công cụ",
+    "mobileMenu": "Menu di động",
+    "aboutLabel": "Về chúng tôi",
+    "contactLabel": "Liên hệ"
+  },
+  "footer": {
+    "copyright": "Bản quyền được bảo lưu.",
+    "description": "Công cụ miễn phí cho nhà phát triển web, nhà thiết kế và nhà tiếp thị.",
+    "companyDataLabel": "Thông tin công ty",
+    "toolsLabel": "Công cụ",
+    "legalLabel": "Tài liệu pháp lý",
+    "cookieSettingsLabel": "Cài đặt cookie"
+  },
+  "desktopOnly": {
+    "title": "Công cụ này hoạt động trên màn hình lớn hơn",
+    "description": "Để sử dụng công cụ này thoải mái, hãy mở trên laptop, máy tính để bàn hoặc máy tính bảng ở chế độ ngang.",
+    "tipTitle": "Mẹo",
+    "tipText": "Nếu bạn đang dùng máy tính bảng, hãy chuyển sang chế độ ngang - khi chiều rộng cửa sổ đủ lớn, công cụ sẽ tự động tải."
+  },
+  "cookie": {
+    "title": "Cookie và quyền riêng tư",
+    "description": "Chúng tôi sử dụng cookie cho chức năng trang web, phân tích lưu lượng và hiển thị quảng cáo. Tìm hiểu thêm tại",
+    "setPreferences": "Đặt tùy chọn",
+    "privacyPolicy": "Chính sách bảo mật",
+    "privacyPolicyHref": "/vi/chinh-sach-bao-mat",
+    "reject": "Từ chối tất cả",
+    "settings": "Cài đặt",
+    "accept": "Chấp nhận tất cả",
+    "panelTitle": "Tùy chọn quyền riêng tư",
+    "panelDescription": "Cài đặt đồng ý cho việc xử lý dữ liệu.",
+    "categoriesLegend": "Danh mục",
+    "essentialTitle": "Thiết yếu",
+    "essentialDescription": "Trang web không thể hoạt động nếu không có những cookie này. Không thu thập dữ liệu tiếp thị.",
+    "essentialStatus": "Luôn hoạt động",
+    "analyticsTitle": "Phân tích (GA4)",
+    "analyticsDescription": "Thống kê lượt truy cập. Kích hoạt Google Analytics 4 với sự đồng ý của bạn.",
+    "analyticsLabel": "Kích hoạt phân tích GA4",
+    "adsTitle": "Quảng cáo (Google AdSense)",
+    "adsDescription": "Quảng cáo được cá nhân hóa dựa trên sở thích của bạn.",
+    "adsLabel": "Kích hoạt quảng cáo cá nhân hóa",
+    "changeDecision": "Bạn có thể thay đổi quyết định bất cứ lúc nào",
+    "save": "Lưu"
+  },
+  "skipToContent": "Chuyển đến nội dung",
+  "legal": [
+    {
+      "key": "privacy",
+      "href": "/vi/chinh-sach-bao-mat",
+      "label": "Chính sách bảo mật"
+    }
+  ],
+  "breadcrumbs": {
+    "home": "Trang chủ",
+    "ariaLabel": "điều hướng"
+  },
+  "contactForm": {
+    "nameLabel": "Họ và tên",
+    "namePlaceholder": "Nguyễn Văn A",
+    "emailLabel": "Email",
+    "emailPlaceholder": "nguyenvana@gmail.com",
+    "subjectLabel": "Chủ đề",
+    "subjectPlaceholder": "vd. Báo lỗi | Gợi ý công cụ | Câu hỏi",
+    "messageLabel": "Tin nhắn",
+    "messagePlaceholder": "Mô tả câu hỏi hoặc gợi ý của bạn...",
+    "send": "Gửi",
+    "error": "Đã xảy ra lỗi. Vui lòng kiểm tra dữ liệu và thử lại.",
+    "success": "Tin nhắn đã gửi! Chúng tôi sẽ phản hồi sớm nhất có thể."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Công cụ miễn phí",
+    "seeAllTools": "Xem tất cả công cụ",
+    "carouselLabel": "Carousel công cụ",
+    "scrollLeft": "Cuộn sang trái",
+    "scrollRight": "Cuộn sang phải",
+    "carouselNavigation": "Điều hướng carousel",
+    "goToSlide": "Đến slide",
+    "of": "/",
+    "slide": "Slide",
+    "tool": "Công cụ",
+    "openTool": "Mở công cụ"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Chuyển sang tiếng Việt",
+    "toggleLabel": "Đổi ngôn ngữ",
+    "chooseLabel": "Chọn ngôn ngữ",
+    "popularLabel": "Phổ biến",
+    "otherLabel": "Khác",
+    "closeModalLabel": "Đóng"
+  },
+  "mobileNav": {
+    "close": "Đóng",
+    "services": "Dịch vụ",
+    "contact": "Liên hệ"
+  },
+  "infoBanner": {
+    "text": "Cập nhật trình tạo chữ ký email – khám phá tính năng mới",
+    "linkText": "công cụ"
+  }
+}

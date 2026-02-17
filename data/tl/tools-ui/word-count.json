@@ -1,0 +1,23 @@
+{
+  "pasteText": "I-paste o i-type ang teksto",
+  "textPlaceholder": "I-paste dito ang teksto na gusto mong suriin...",
+  "pageType": "Uri ng pahina",
+  "pageTypeHelper": "Piliin ang uri ng pahina na sinusulatan mo. Bawat uri ay may magkaibang rekomendasyon sa haba.",
+  "words": "Mga salita",
+  "charsWithSpaces": "Mga character (may espasyo)",
+  "charsWithoutSpaces": "Mga character (walang espasyo)",
+  "paragraphs": "Mga talata",
+  "readingTime": "Oras ng pagbasa",
+  "lengthEvaluation": "Pagsusuri ng haba",
+  "recommendedRange": "Inirerekomendang saklaw",
+  "copyReport": "Kopyahin ang ulat",
+  "copied": "Nakopya na",
+  "statistics": "Mga istatistika ng teksto",
+  "noText": "Walang teksto",
+  "empty": "Mag-type ng teksto para makita ang mga istatistika.",
+  "tooShort": "Masyadong maikli",
+  "tooLong": "Masyadong mahaba",
+  "ideal": "Magandang haba",
+  "analysisFor": "Pagsusuri para sa",
+  "wordsUnit": "mga salita"
+}

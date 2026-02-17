@@ -1,0 +1,18 @@
+{
+  "unsupportedFormatsOnly": "Diese Datei wird nicht unterstützt. Laden Sie eine PNG-, JPG/JPEG- oder SVG-Datei hoch.",
+  "unexpectedError": "Das Bild konnte nicht analysiert werden. Versuchen Sie es erneut oder verwenden Sie eine andere Datei.",
+  "addImageLabel": "Bild hinzufügen",
+  "dragDropImage": "Bild hierher ziehen und ablegen",
+  "clickToSelect": "oder klicken, um eine Datei auszuwählen",
+  "supportedFormats": "Unterstützt: PNG, JPG/JPEG, SVG",
+  "preview": "Vorschau und Palette",
+  "addImageToStart": "Laden Sie ein Bild hoch und das Tool zeigt die dominanten Farben an. Kopieren Sie jeden Farbcode mit einem Klick - ideal für UI, Branding und Social Media.",
+  "processing": "Bild wird analysiert und Palette erstellt…",
+  "colorPreview": "Farbvorschau",
+  "copy": "Kopieren",
+  "copied": "Kopiert",
+  "empty": "Es konnten keine dominanten Farben erkannt werden. Versuchen Sie ein anderes Bild.",
+  "selectedFile": "Ausgewählte Datei:",
+  "copyHint": "Klicken Sie auf „Kopieren\", um den Farbcode zu kopieren.",
+  "previewAlt": "Vorschau"
+}

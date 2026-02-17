@@ -1,32 +1,33 @@
 import type { Locale, LocaleConfig, LegalLink, NavigationUi, FooterUi, DesktopOnlyUi } from '@/types/locale';
 export type { LocaleConfig, LegalLink, NavigationUi, FooterUi, DesktopOnlyUi } from '@/types/locale';
+import type { BreadcrumbsDictionary, ContactFormDictionary, ToolsCarouselDictionary, LanguageSwitcherDictionary, MobileNavDictionary, InfoBannerDictionary } from '@/lib/i18n/get-dictionary';
 
-import plDict from '@/dictionaries/pl.json';
-import enDict from '@/dictionaries/en.json';
-import deDict from '@/dictionaries/de.json';
-import esDict from '@/dictionaries/es.json';
-import frDict from '@/dictionaries/fr.json';
-import ptDict from '@/dictionaries/pt.json';
-import itDict from '@/dictionaries/it.json';
-import roDict from '@/dictionaries/ro.json';
-import nlDict from '@/dictionaries/nl.json';
-import huDict from '@/dictionaries/hu.json';
-import idDict from '@/dictionaries/id.json';
-import viDict from '@/dictionaries/vi.json';
-import trDict from '@/dictionaries/tr.json';
-import tlDict from '@/dictionaries/tl.json';
-import swDict from '@/dictionaries/sw.json';
-import msDict from '@/dictionaries/ms.json';
-import csDict from '@/dictionaries/cs.json';
-import svDict from '@/dictionaries/sv.json';
-import sqDict from '@/dictionaries/sq.json';
-import daDict from '@/dictionaries/da.json';
-import noDict from '@/dictionaries/no.json';
-import fiDict from '@/dictionaries/fi.json';
-import skDict from '@/dictionaries/sk.json';
-import hrDict from '@/dictionaries/hr.json';
-import ltDict from '@/dictionaries/lt.json';
-import slDict from '@/dictionaries/sl.json';
+import plDict from '@/data/pl/dictionary.json';
+import enDict from '@/data/en/dictionary.json';
+import deDict from '@/data/de/dictionary.json';
+import esDict from '@/data/es/dictionary.json';
+import frDict from '@/data/fr/dictionary.json';
+import ptDict from '@/data/pt/dictionary.json';
+import itDict from '@/data/it/dictionary.json';
+import roDict from '@/data/ro/dictionary.json';
+import nlDict from '@/data/nl/dictionary.json';
+import huDict from '@/data/hu/dictionary.json';
+import idDict from '@/data/id/dictionary.json';
+import viDict from '@/data/vi/dictionary.json';
+import trDict from '@/data/tr/dictionary.json';
+import tlDict from '@/data/tl/dictionary.json';
+import swDict from '@/data/sw/dictionary.json';
+import msDict from '@/data/ms/dictionary.json';
+import csDict from '@/data/cs/dictionary.json';
+import svDict from '@/data/sv/dictionary.json';
+import sqDict from '@/data/sq/dictionary.json';
+import daDict from '@/data/da/dictionary.json';
+import noDict from '@/data/no/dictionary.json';
+import fiDict from '@/data/fi/dictionary.json';
+import skDict from '@/data/sk/dictionary.json';
+import hrDict from '@/data/hr/dictionary.json';
+import ltDict from '@/data/lt/dictionary.json';
+import slDict from '@/data/sl/dictionary.json';
 
 const dicts = {
   pl: plDict,
@@ -350,7 +351,7 @@ export function getLocaleConfig(locale: Locale): LocaleConfig {
 }
 
 // ---------------------------------------------------------------------------
-// Re-exports from centralized dictionaries (dictionaries/*.json)
+// Re-exports from centralized dictionaries (data/{locale}/dictionary.json)
 // ---------------------------------------------------------------------------
 
 export const LEGAL_LINKS: Record<Locale, LegalLink[]> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.legal])) as Record<Locale, LegalLink[]>;
@@ -364,3 +365,18 @@ export const NAVIGATION_UI: Record<Locale, NavigationUi> = Object.fromEntries(Ob
 export const FOOTER_UI: Record<Locale, FooterUi> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.footer])) as Record<Locale, FooterUi>;
 
 export const DESKTOP_ONLY_UI: Record<Locale, DesktopOnlyUi> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.desktopOnly])) as Record<Locale, DesktopOnlyUi>;
+
+export const BREADCRUMBS_UI: Record<Locale, BreadcrumbsDictionary> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.breadcrumbs])) as Record<Locale, BreadcrumbsDictionary>;
+
+export const CONTACT_FORM_UI: Record<Locale, ContactFormDictionary> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.contactForm])) as Record<Locale, ContactFormDictionary>;
+
+export const TOOLS_CAROUSEL_UI: Record<Locale, ToolsCarouselDictionary> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.toolsCarousel])) as Record<Locale, ToolsCarouselDictionary>;
+
+export const LANGUAGE_SWITCHER_UI: Record<Locale, LanguageSwitcherDictionary> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.languageSwitcher])) as Record<
+  Locale,
+  LanguageSwitcherDictionary
+>;
+
+export const MOBILE_NAV_UI: Record<Locale, MobileNavDictionary> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.mobileNav])) as Record<Locale, MobileNavDictionary>;
+
+export const INFO_BANNER_UI: Record<Locale, InfoBannerDictionary> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.infoBanner])) as Record<Locale, InfoBannerDictionary>;

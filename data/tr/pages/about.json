@@ -1,0 +1,78 @@
+{
+  "slug": "hakkimizda",
+  "metadata": {
+    "title": "Arteon Hakkında – Web, SEO & Tasarım için 10 Ücretsiz Araç",
+    "description": "Arteon, tarayıcı tabanlı ücretsiz araçlar geliştiren bir yaratıcı ajanstır: WebP dönüştürücü, favicon oluşturucu, renk kontrast denetçisi, QR kod yapıcı ve daha fazlası. Kayıt yok, yükleme yok — her şey yerel olarak çalışır."
+  },
+  "hero": {
+    "title": "Yaratıcı bir ajans tarafından geliştirilen ücretsiz araçlar",
+    "description": "Görseller, SEO, renkler, e-posta imzaları ve QR kodlar için 10 tarayıcı tabanlı araç — kayıt yok, dosya yükleme yok, sınır yok"
+  },
+  "whoWeAre": {
+    "title": "Biz kimiz",
+    "p1": "Arteon, Polonya merkezli bir yaratıcı ajanstır. Ticari çalışmalarımızın yanı sıra, iş sahipleri, web geliştiriciler, tasarımcılar, pazarlamacılar ve dijital içerikle çalışan herkes için tasarlanmış ücretsiz araçlardan oluşan büyüyen bir koleksiyon oluşturuyor ve sürdürüyoruz.",
+    "p2": "Oluşturduğumuz her araç belirli, günlük bir sorunu çözer: görsel dönüştürme, renk kontrastı kontrolü, favicon oluşturma, QR kod üretme ve daha fazlası. Hedefimiz, ihtiyacınız olan her şeyi tek bir yerde bulabileceğiniz kapsamlı bir araç seti oluşturmak — onlarca farklı site arasında geçiş yapmadan."
+  },
+  "whyFree": {
+    "title": "Neden ücretsiz araçlar sunuyoruz",
+    "items": [
+      {
+        "title": "Kayıt yok, sınır yok",
+        "description": "Her araç tarayıcınızda anında çalışır. Hesap, giriş veya ödeme gerekmez."
+      },
+      {
+        "title": "Gizlilik öncelikli",
+        "description": "Dosyalarınız cihazınızdan asla ayrılmaz. Tüm işleme tarayıcınızda yerel olarak gerçekleşir — verilerinizi hiçbir sunucuya göndermeyiz."
+      },
+      {
+        "title": "Gerçek ihtiyaçlardan doğdu",
+        "description": "Her araç, müşteri projelerinde karşılaştığımız gerçek bir sorundan doğdu. Bizim ihtiyacımız varsa, muhtemelen sizin de vardır."
+      },
+      {
+        "title": "Reklamlarla finanse ediliyor, sizin için ücretsiz",
+        "description": "Geliştirme ve barındırma maliyetlerini karşılamak için Google AdSense bannerı kullanıyoruz. Reklam geliri sayesinde tüm araçları ücretsiz tutabilir ve yenilerini geliştirmeye devam edebiliriz."
+      }
+    ]
+  },
+  "ourTools": {
+    "title": "Araçlarımız",
+    "items": [
+      {
+        "title": "Görseller & favicon",
+        "description": "WebP dönüştürücü, görsel düzenleyici ve favicon oluşturucu. Günlük görsel çalışması için 3 araç."
+      },
+      {
+        "title": "Meta & SEO",
+        "description": "Meta başlık ve açıklama denetçisi ile metin uzunluğunu değerlendirmek için kelime ve karakter sayacı."
+      },
+      {
+        "title": "E-posta & iletişim",
+        "description": "Gmail ve Outlook için hazır kodlu HTML e-posta imzası oluşturucu."
+      },
+      {
+        "title": "Renkler & erişilebilirlik",
+        "description": "WCAG kontrast denetçisi, görselden renk çıkarıcı ve renk paleti oluşturucu. Renkle çalışmak için 3 araç."
+      },
+      {
+        "title": "Baskı & materyaller",
+        "description": "Web siteleri, vCard’lar, menüler ve el ilanları için QR kod oluşturucu. PNG ve SVG olarak dışa aktarım."
+      }
+    ]
+  },
+  "whatsNext": {
+    "title": "Sırada ne var",
+    "text": "Araç setini genişletmek için aktif olarak çalışıyoruz. Kullanıcı geri bildirimleri ve kendi deneyimimize dayanarak düzenli olarak yeni araçlar ekleniyor. Hedef, iş sahiplerinin, tasarımcıların ve geliştiricilerin her temel araca erişebildiği tek bir platform — hepsi bir yerde, hepsi ücretsiz."
+  },
+  "privacy": {
+    "title": "Gizlilik ve güvenlik",
+    "textBefore": "Gizliliğinize saygı duyuyoruz. Araçlarımıza yüklediğiniz dosyalar yalnızca tarayıcınızda işlenir ve hiçbir sunucuya gönderilmez. Analiz (Google Analytics 4) ve reklamcılığı (Google AdSense) yalnızca çerez bannerı aracılığıyla onay verdikten sonra kullanırız. Tüm ayrıntılar",
+    "linkLabel": "Gizlilik Politikamızda",
+    "textAfter": " mevcuttur."
+  },
+  "cta": {
+    "title": "Araçlarımızı deneyin",
+    "description": "10 ücretsiz araç — kayıt yok, sınır yok, sunucuya dosya yükleme yok",
+    "btnOne": "Araçlara git",
+    "btnTwo": "İletişim"
+  }
+}

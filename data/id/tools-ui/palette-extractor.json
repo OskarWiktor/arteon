@@ -1,0 +1,18 @@
+{
+  "unsupportedFormatsOnly": "File ini tidak didukung. Unggah PNG, JPG/JPEG atau SVG.",
+  "unexpectedError": "Gagal menganalisis gambar. Coba lagi atau gunakan file lain.",
+  "addImageLabel": "Tambah gambar",
+  "dragDropImage": "Seret dan lepas gambar di sini",
+  "clickToSelect": "atau klik untuk memilih file dari perangkat Anda",
+  "supportedFormats": "Didukung: PNG, JPG/JPEG, SVG",
+  "preview": "Pratinjau dan palet",
+  "addImageToStart": "Unggah gambar dan alat ini akan menampilkan warna dominannya. Salin setiap kode dengan satu klik – sempurna untuk UI, branding, dan media sosial.",
+  "processing": "Menganalisis gambar dan membuat palet…",
+  "colorPreview": "Pratinjau warna",
+  "copy": "Salin",
+  "copied": "Disalin",
+  "empty": "Tidak dapat mendeteksi warna dominan. Coba gambar lain.",
+  "selectedFile": "File dipilih:",
+  "copyHint": "Klik «Salin» untuk menyalin kode warna.",
+  "previewAlt": "Pratinjau"
+}

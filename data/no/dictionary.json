@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "mainNavigation": "Hovednavigasjon",
+    "logoAlt": "Arteon - firmalogo",
+    "closeMenu": "Lukk menyen",
+    "openMenu": "Åpne menyen",
+    "closeToolsList": "Lukk verktøylisten",
+    "openToolsList": "Åpne verktøylisten",
+    "toolsLabel": "Verktøy",
+    "mobileMenu": "Mobilmeny",
+    "aboutLabel": "Om oss",
+    "contactLabel": "Kontakt"
+  },
+  "footer": {
+    "copyright": "Alle rettigheter forbeholdt.",
+    "description": "Gratis verktøy for webutviklere, designere og markedsførere.",
+    "companyDataLabel": "Firmainformasjon",
+    "toolsLabel": "Verktøy",
+    "legalLabel": "Juridiske dokumenter",
+    "cookieSettingsLabel": "Innstillinger for informasjonskapsler"
+  },
+  "desktopOnly": {
+    "title": "Dette verktøyet fungerer på en større skjerm",
+    "description": "For å bruke dette verktøyet komfortabelt, åpne det på en bærbar datamaskin, stasjonær datamaskin eller nettbrett i liggende modus.",
+    "tipTitle": "Tips",
+    "tipText": "Hvis du bruker et nettbrett, bytt til liggende modus — når vindusbredden er tilstrekkelig, lastes verktøyet automatisk."
+  },
+  "cookie": {
+    "title": "Informasjonskapsler og personvern",
+    "description": "Vi bruker informasjonskapsler for nettstedets funksjonalitet, trafikkanalyse og annonsevisning. Les mer i",
+    "setPreferences": "Angi preferanser",
+    "privacyPolicy": "Personvernpolicy",
+    "privacyPolicyHref": "/no/personvernpolicy",
+    "reject": "Avvis alle",
+    "settings": "Innstillinger",
+    "accept": "Godta alle",
+    "panelTitle": "Personverninnstillinger",
+    "panelDescription": "Samtykkeinnstillinger for databehandling.",
+    "categoriesLegend": "Kategorier",
+    "essentialTitle": "Nødvendige",
+    "essentialDescription": "Nettstedet kan ikke fungere uten disse. Samler ikke inn markedsføringsdata.",
+    "essentialStatus": "Alltid aktiv",
+    "analyticsTitle": "Analyse (GA4)",
+    "analyticsDescription": "Besøksstatistikk. Aktiverer Google Analytics 4 med ditt samtykke.",
+    "analyticsLabel": "Aktiver GA4-analyse",
+    "adsTitle": "Annonser (Google AdSense)",
+    "adsDescription": "Personlige annonser basert på dine interesser.",
+    "adsLabel": "Aktiver personlige annonser",
+    "changeDecision": "Du kan endre din beslutning når som helst",
+    "save": "Lagre"
+  },
+  "skipToContent": "Gå til innhold",
+  "legal": [
+    {
+      "key": "privacy",
+      "href": "/no/personvernpolicy",
+      "label": "Personvernpolicy"
+    }
+  ],
+  "breadcrumbs": {
+    "home": "Forside",
+    "ariaLabel": "navigasjon"
+  },
+  "contactForm": {
+    "nameLabel": "Fullt navn",
+    "namePlaceholder": "Ola Nordmann",
+    "emailLabel": "E-post",
+    "emailPlaceholder": "ola.nordmann@gmail.com",
+    "subjectLabel": "Emne",
+    "subjectPlaceholder": "f.eks. Feilrapport | Verktøyforslag | Spørsmål",
+    "messageLabel": "Melding",
+    "messagePlaceholder": "Beskriv spørsmålet eller forslaget ditt...",
+    "send": "Send",
+    "error": "Noe gikk galt. Sjekk dataene dine og prøv igjen.",
+    "success": "Melding sendt! Vi svarer så raskt som mulig."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Gratis verktøy",
+    "seeAllTools": "Se alle verktøy",
+    "carouselLabel": "Verktøykarusell",
+    "scrollLeft": "Bla til venstre",
+    "scrollRight": "Bla til høyre",
+    "carouselNavigation": "Karusellnavigasjon",
+    "goToSlide": "Gå til lysbilde",
+    "of": "av",
+    "slide": "Lysbilde",
+    "tool": "Verktøy",
+    "openTool": "Åpne verktøy"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Bytt til norsk",
+    "toggleLabel": "Bytt språk",
+    "chooseLabel": "Velg språk",
+    "popularLabel": "Populære",
+    "otherLabel": "Andre",
+    "closeModalLabel": "Lukk"
+  },
+  "mobileNav": {
+    "close": "Lukk",
+    "services": "Tjenester",
+    "contact": "Kontakt"
+  },
+  "infoBanner": {
+    "text": "E-postsignatur-generatoren er oppdatert – oppdag nye funksjoner",
+    "linkText": "verktøy"
+  }
+}

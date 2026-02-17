@@ -9,9 +9,9 @@ import IconText from '../../ui/IconText';
 // NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile media społecznościowe będą gotowe
 // import SocialIconLink from '../../ui/SocialIconLink';
 import { ABOUT_NAV_ITEMS_PL, MOBILE_NAV_ITEMS_PL, OFFER_SECTIONS_PL } from '@/components/shared/navigation-data/pl';
-import { useLocale, type Locale } from '@/lib/LocaleContext';
+import { useLocale } from '@/lib/LocaleContext';
 import { getToolsSections } from '@/lib/i18n/tool-registry';
-import { getLegalLinks, NAVIGATION_UI, LOCALE_CONFIG } from '@/lib/i18n/locales';
+import { getLegalLinks, NAVIGATION_UI, LOCALE_CONFIG, MOBILE_NAV_UI } from '@/lib/i18n/locales';
 import LanguageSwitcher from '@/components/shared/LanguageSwitcher';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
@@ -22,91 +22,6 @@ import { useTimeout } from '@/hooks/useTimeout';
 import { NavArrowDownSLine as RiArrowDownSLine } from '@/components/ui/icons/NavIcons';
 // NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile media społecznościowe będą gotowe
 // import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
-
-const closeLabel: Record<Locale, string> = {
-  pl: 'Zamknij',
-  en: 'Close',
-  de: 'Schließen',
-  es: 'Cerrar',
-  fr: 'Fermer',
-  pt: 'Fechar',
-  it: 'Chiudi',
-  ro: 'Închide',
-  nl: 'Sluiten',
-  hu: 'Bezárás',
-  id: 'Tutup',
-  vi: 'Đóng',
-  tr: 'Kapat',
-  tl: 'Isara',
-  sw: 'Funga',
-  ms: 'Tutup',
-  cs: 'Zav\u0159\u00edt',
-  sv: 'St\u00e4ng',
-  sq: 'Mbyll',
-  da: 'Luk',
-  no: 'Lukk',
-  fi: 'Sulje',
-  sk: 'Zatvori\u0165',
-  hr: 'Zatvori',
-  lt: 'U\u017edaryti',
-  sl: 'Zapri',
-};
-const servicesLabel: Record<Locale, string> = {
-  pl: 'Usługi',
-  en: 'Services',
-  de: 'Dienstleistungen',
-  es: 'Servicios',
-  fr: 'Services',
-  pt: 'Serviços',
-  it: 'Servizi',
-  ro: 'Servicii',
-  nl: 'Diensten',
-  hu: 'Szolgáltatások',
-  id: 'Layanan',
-  vi: 'Dịch vụ',
-  tr: 'Hizmetler',
-  tl: 'Mga serbisyo',
-  sw: 'Huduma',
-  ms: 'Perkhidmatan',
-  cs: 'Slu\u017eby',
-  sv: 'Tj\u00e4nster',
-  sq: 'Sh\u00ebrbimet',
-  da: 'Tjenester',
-  no: 'Tjenester',
-  fi: 'Palvelut',
-  sk: 'Slu\u017eby',
-  hr: 'Usluge',
-  lt: 'Paslaugos',
-  sl: 'Storitve',
-};
-const contactLabel: Record<Locale, string> = {
-  pl: 'Skontaktuj się',
-  en: 'Contact',
-  de: 'Kontakt',
-  es: 'Contacto',
-  fr: 'Contact',
-  pt: 'Contacto',
-  it: 'Contatto',
-  ro: 'Contact',
-  nl: 'Contact',
-  hu: 'Kapcsolat',
-  id: 'Kontak',
-  vi: 'Li\u00ean h\u1ec7',
-  tr: '\u0130leti\u015fim',
-  tl: 'Makipag-ugnayan',
-  sw: 'Wasiliana',
-  ms: 'Hubungi',
-  cs: 'Kontakt',
-  sv: 'Kontakt',
-  sq: 'Kontaktoni',
-  da: 'Kontakt',
-  no: 'Kontakt',
-  fi: 'Yhteystiedot',
-  sk: 'Kontakt',
-  hr: 'Kontakt',
-  lt: 'Kontaktai',
-  sl: 'Kontakt',
-};
 
 type SectionLink = { href: string; title: string; icon?: JSX.Element };
 type Section = {
@@ -325,14 +240,14 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
       >
         <div className="flex items-center justify-end px-4 pt-3">
           <button onClick={() => setIsOpen(false)} className="ring-primary rounded px-3 pt-1 ring-offset-2 outline-none focus-visible:ring-2">
-            <span className="text-light text-sm font-medium">{closeLabel[locale] ?? 'Close'}</span>
+            <span className="text-light text-sm font-medium">{MOBILE_NAV_UI[locale]?.close ?? 'Close'}</span>
           </button>
         </div>
 
         <div className="flex h-[calc(100dvh-49px)] flex-col overflow-y-auto px-4 py-3">
           {isPl && (
             <Eyebrow variant="dynamic" className="px-3 pb-1 text-xs tracking-wider">
-              {servicesLabel[locale] ?? 'Services'}
+              {MOBILE_NAV_UI[locale]?.services ?? 'Services'}
             </Eyebrow>
           )}
 
@@ -551,7 +466,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     pathname.startsWith(contactHref) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
                   }`}
                 >
-                  {contactNav?.label ?? contactLabel[locale] ?? 'Contact'}
+                  {contactNav?.label ?? MOBILE_NAV_UI[locale]?.contact ?? 'Contact'}
                 </Link>
               ) : null}
             </div>
@@ -675,7 +590,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   onClick={() => setIsOpen(false)}
                   className="bg-primary focus-visible:ring-primary rounded-2xl px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-offset-2"
                 >
-                  {contactLabel[locale] ?? 'Contact'}
+                  {MOBILE_NAV_UI[locale]?.contact ?? 'Contact'}
                 </Link>
               )}
             </div>

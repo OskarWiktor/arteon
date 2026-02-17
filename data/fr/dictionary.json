@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "mainNavigation": "Navigation principale",
+    "logoAlt": "Arteon - logo de l'entreprise",
+    "closeMenu": "Fermer le menu",
+    "openMenu": "Ouvrir le menu",
+    "closeToolsList": "Fermer la liste des outils",
+    "openToolsList": "Ouvrir la liste des outils",
+    "toolsLabel": "Outils",
+    "mobileMenu": "Menu mobile",
+    "aboutLabel": "À propos",
+    "contactLabel": "Contact"
+  },
+  "footer": {
+    "copyright": "Tous droits réservés.",
+    "description": "Outils en ligne gratuits pour développeurs web, designers et spécialistes du marketing.",
+    "companyDataLabel": "Informations sur l'entreprise",
+    "toolsLabel": "Outils",
+    "legalLabel": "Documents juridiques",
+    "cookieSettingsLabel": "Paramètres des cookies"
+  },
+  "desktopOnly": {
+    "title": "Cet outil fonctionne sur un écran plus grand",
+    "description": "Pour utiliser cet outil confortablement, ouvrez-le sur un ordinateur portable, un ordinateur de bureau ou une tablette en mode paysage.",
+    "tipTitle": "Conseil",
+    "tipText": "Si vous utilisez une tablette, passez en mode paysage : lorsque la largeur de la fenêtre sera suffisante, l'outil se chargera automatiquement."
+  },
+  "cookie": {
+    "title": "Cookies et confidentialité",
+    "description": "Nous utilisons des cookies pour le fonctionnement du site, l'analyse du trafic et la publicité. En savoir plus dans notre",
+    "setPreferences": "Définir les préférences",
+    "privacyPolicy": "Politique de confidentialité",
+    "privacyPolicyHref": "/fr/politique-de-confidentialite",
+    "reject": "Tout refuser",
+    "settings": "Paramètres",
+    "accept": "Tout accepter",
+    "panelTitle": "Préférences de confidentialité",
+    "panelDescription": "Paramètres de consentement au traitement des données.",
+    "categoriesLegend": "Catégories",
+    "essentialTitle": "Essentiels",
+    "essentialDescription": "Le site ne fonctionne pas sans eux. Ils ne collectent pas de données marketing.",
+    "essentialStatus": "Toujours actifs",
+    "analyticsTitle": "Analyse (GA4)",
+    "analyticsDescription": "Statistiques de visites. Active Google Analytics 4 avec votre consentement.",
+    "analyticsLabel": "Activer l'analyse GA4",
+    "adsTitle": "Publicité (Google AdSense)",
+    "adsDescription": "Publicité personnalisée selon vos centres d'intérêt.",
+    "adsLabel": "Activer la publicité personnalisée",
+    "changeDecision": "Vous pouvez modifier votre choix à tout moment",
+    "save": "Enregistrer"
+  },
+  "skipToContent": "Aller au contenu",
+  "legal": [
+    {
+      "key": "privacy",
+      "href": "/fr/politique-de-confidentialite",
+      "label": "Politique de confidentialité"
+    }
+  ],
+  "breadcrumbs": {
+    "home": "Accueil",
+    "ariaLabel": "fil d'Ariane"
+  },
+  "contactForm": {
+    "nameLabel": "Nom complet",
+    "namePlaceholder": "Jean Dupont",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "jean.dupont@gmail.com",
+    "subjectLabel": "Sujet",
+    "subjectPlaceholder": "ex. Rapport de bug | Suggestion d’outil | Question",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Décrivez votre question ou suggestion...",
+    "send": "Envoyer",
+    "error": "Une erreur s’est produite. Vérifiez vos données et réessayez.",
+    "success": "Message envoyé ! Nous répondrons dès que possible."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Outils en ligne gratuits",
+    "seeAllTools": "Voir tous les outils",
+    "carouselLabel": "Carrousel d'outils",
+    "scrollLeft": "Défiler vers la gauche",
+    "scrollRight": "Défiler vers la droite",
+    "carouselNavigation": "Navigation du carrousel",
+    "goToSlide": "Aller à la diapositive",
+    "of": "sur",
+    "slide": "Diapositive",
+    "tool": "Outil",
+    "openTool": "Ouvrir l'outil"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Passer au français",
+    "toggleLabel": "Changer de langue",
+    "chooseLabel": "Choisir la langue",
+    "popularLabel": "Populaire",
+    "otherLabel": "Autres",
+    "closeModalLabel": "Fermer"
+  },
+  "mobileNav": {
+    "close": "Fermer",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "infoBanner": {
+    "text": "Mise à jour du générateur de signature e-mail : découvrez les nouvelles fonctionnalités",
+    "linkText": "outils"
+  }
+}

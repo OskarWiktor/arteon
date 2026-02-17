@@ -1,0 +1,78 @@
+{
+  "slug": "a-propos",
+  "metadata": {
+    "title": "À propos d’Arteon – 10 outils en ligne gratuits pour le web, le SEO et le design",
+    "description": "Arteon est une agence créative qui développe des outils gratuits dans le navigateur : convertisseur WebP, générateur de favicon, vérificateur de contraste, générateur de codes QR et plus. Sans inscription, sans envoi de fichiers — tout fonctionne localement."
+  },
+  "hero": {
+    "title": "Outils en ligne gratuits conçus par une agence créative",
+    "description": "10 outils dans le navigateur pour les images, le SEO, les couleurs, les signatures e-mail et les codes QR — sans inscription, sans envoi de fichiers, sans limites"
+  },
+  "whoWeAre": {
+    "title": "Qui sommes-nous",
+    "p1": "Arteon est une agence créative polonaise. En plus de notre travail commercial, nous développons et maintenons une collection grandissante d'outils en ligne gratuits destinés aux propriétaires d'entreprises, créateurs de sites web, designers, spécialistes du marketing et toute personne travaillant avec du contenu numérique.",
+    "p2": "Chaque outil que nous créons résout un problème concret et quotidien : convertir des images, vérifier le contraste des couleurs, générer des favicons, créer des codes QR et bien plus. Notre objectif est de construire une boîte à outils complète où vous trouverez tout ce dont vous avez besoin en un seul endroit — sans naviguer entre des dizaines de sites différents."
+  },
+  "whyFree": {
+    "title": "Pourquoi nous proposons des outils gratuits",
+    "items": [
+      {
+        "title": "Sans inscription, sans limites",
+        "description": "Chaque outil fonctionne instantanément dans votre navigateur. Pas de compte, pas de connexion, pas de paiement."
+      },
+      {
+        "title": "Confidentialité avant tout",
+        "description": "Vos fichiers ne quittent jamais votre appareil. Tout le traitement se fait localement dans votre navigateur — nous n'envoyons vos données à aucun serveur."
+      },
+      {
+        "title": "Créés à partir de besoins réels",
+        "description": "Chaque outil est né d'un problème réel que nous avons rencontré en travaillant sur des projets clients. Si nous en avions besoin, vous aussi probablement."
+      },
+      {
+        "title": "Financés par la publicité, gratuits pour vous",
+        "description": "Nous utilisons des bannières Google AdSense pour couvrir les coûts de développement et d'hébergement. Grâce aux revenus publicitaires, nous pouvons garder tous les outils gratuits et continuer à en créer de nouveaux."
+      }
+    ]
+  },
+  "ourTools": {
+    "title": "Nos outils",
+    "items": [
+      {
+        "title": "Images et favicons",
+        "description": "Convertisseur WebP, éditeur d'images en ligne et générateur de favicon. 3 outils pour le travail quotidien avec les images."
+      },
+      {
+        "title": "Méta et SEO",
+        "description": "Vérificateur de méta titre et description plus un compteur de mots et caractères pour évaluer la longueur du texte."
+      },
+      {
+        "title": "E-mail et communication",
+        "description": "Générateur de signature e-mail HTML avec code prêt à l'emploi pour Gmail et Outlook."
+      },
+      {
+        "title": "Couleurs et accessibilité",
+        "description": "Vérificateur de contraste WCAG, extracteur de couleurs d'image et générateur de palettes de couleurs. 3 outils pour travailler avec la couleur."
+      },
+      {
+        "title": "Impression et supports",
+        "description": "Générateur de codes QR pour sites web, vCards, menus et dépliants. Export en PNG et SVG."
+      }
+    ]
+  },
+  "whatsNext": {
+    "title": "Et ensuite",
+    "text": "Nous travaillons activement à l'élargissement de la boîte à outils. De nouveaux outils sont ajoutés régulièrement en fonction des retours des utilisateurs et de notre propre expérience. L'objectif est une plateforme unique où propriétaires d'entreprises, designers et développeurs ont accès à chaque outil essentiel — tout en un lieu, tout gratuitement."
+  },
+  "privacy": {
+    "title": "Confidentialité et sécurité",
+    "textBefore": "Nous respectons votre vie privée. Les fichiers que vous importez dans nos outils sont traités exclusivement dans votre navigateur et ne sont jamais envoyés à un serveur. Nous utilisons des analyses (Google Analytics 4) et de la publicité (Google AdSense) uniquement après votre consentement via la bannière de cookies. Tous les détails sont disponibles dans notre",
+    "linkLabel": "Politique de confidentialité",
+    "textAfter": "."
+  },
+  "cta": {
+    "title": "Essayez nos outils",
+    "description": "10 outils en ligne gratuits — sans inscription, sans limites, sans envoi de fichiers sur des serveurs",
+    "btnOne": "Voir les outils",
+    "btnTwo": "Contact"
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "key": "product",
+    "label": "Produktbeskrivning",
+    "minWords": 80,
+    "maxWords": 400,
+    "description": "Ju enklare produkten, desto kortare beskrivningen. Komplexa produkter (t.ex. elektronik) kräver fler förklaringar och specifikationer."
+  },
+  {
+    "key": "service",
+    "label": "Tjänstesida",
+    "minWords": 500,
+    "maxWords": 1500,
+    "description": "En enkel lokal tjänst behöver färre ord. Ett komplext erbjudande med flera steg kräver mer."
+  },
+  {
+    "key": "homepage",
+    "label": "Startsida",
+    "minWords": 400,
+    "maxWords": 1000,
+    "description": "Startsidan vägleder besökare till undersidor. Ett tydligt budskap och läsbar struktur underlättar navigeringen."
+  },
+  {
+    "key": "landing",
+    "label": "Landningssida",
+    "minWords": 600,
+    "maxWords": 2500,
+    "description": "Dyrare erbjudanden kräver mer förklaring och förtroendebyggande. Enkla erbjudanden kan vara kortare."
+  },
+  {
+    "key": "blog",
+    "label": "Blogginlägg",
+    "minWords": 1200,
+    "maxWords": 3000,
+    "description": "Längden beror på ämnets komplexitet. Texten bör besvara läsarens frågor grundligt och konkret."
+  },
+  {
+    "key": "guide",
+    "label": "Guide / handledning",
+    "minWords": 2500,
+    "maxWords": 6000,
+    "description": "En detaljerad behandling av ett ämne med många aspekter. Längden beror på ämnets omfattning."
+  }
+]

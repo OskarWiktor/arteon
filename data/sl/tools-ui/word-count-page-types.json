@@ -1,0 +1,44 @@
+[
+  {
+    "key": "product",
+    "label": "Opis izdelka",
+    "minWords": 80,
+    "maxWords": 400,
+    "description": "Čim enostavnejši je izdelek, tem krajši je opis. Kompleksni izdelki (npr. elektronika) zahtevajo več pojasnil in tehničnih podatkov."
+  },
+  {
+    "key": "service",
+    "label": "Stran storitve",
+    "minWords": 500,
+    "maxWords": 1500,
+    "description": "Enostavna lokalna storitev zahteva manj besed. Večfazna ponudba zahteva več."
+  },
+  {
+    "key": "homepage",
+    "label": "Začetna stran",
+    "minWords": 400,
+    "maxWords": 1000,
+    "description": "Začetna stran usmerja obiskovalce na podstrani. Jasno sporočilo in berljiva struktura olajšata navigacijo."
+  },
+  {
+    "key": "landing",
+    "label": "Pristajalna stran",
+    "minWords": 600,
+    "maxWords": 2500,
+    "description": "Dražja ponudba zahteva več pojasnil in gradnje zaupanja. Enostavna ponudba je lahko krajša."
+  },
+  {
+    "key": "blog",
+    "label": "Blog objava",
+    "minWords": 1200,
+    "maxWords": 3000,
+    "description": "Dolžina je odvisna od zahtevnosti teme. Besedilo naj bi temeljito in konkretno odgovorilo na vprašanja bralca."
+  },
+  {
+    "key": "guide",
+    "label": "Vodnik / navodila",
+    "minWords": 2500,
+    "maxWords": 6000,
+    "description": "Podroben pregled teme z več vidikov. Dolžina je odvisna od obsega teme."
+  }
+]

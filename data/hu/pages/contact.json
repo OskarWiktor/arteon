@@ -1,0 +1,28 @@
+{
+  "slug": "kapcsolat",
+  "metadata": {
+    "title": "Kapcsolat – Arteon ingyenes online eszközök | Támogatás és visszajelzés",
+    "description": "Lépjen kapcsolatba az Arteon csapatával. Jelentsen hibát, javasoljon új eszközt vagy tegyen fel kérdést ingyenes online eszközeinkről képekhez, SEO-hoz, színekhez és QR-kódokhoz. Egy munkanapon belül válaszolunk."
+  },
+  "hero": {
+    "title": "Lépjen kapcsolatba az Arteon csapatával",
+    "description": "Jelentsen hibát, javasoljon új eszközt vagy tegyen fel kérdést — egy munkanapon belül válaszolunk"
+  },
+  "intro": {
+    "title": "Van kérdése vagy javaslata?",
+    "textBefore": "Örömmel fogadjuk visszajelzését eszközeinkről. Ha hibát talált, ötlete van új eszközre vagy segítségre van szüksége — írjon nekünk a",
+    "textAfter": " címre. Egy munkanapon belül válaszolunk."
+  },
+  "formTitle": "Küldjön nekünk üzenetet",
+  "details": {
+    "title": "Elérhetőségek",
+    "emailLabel": "E-mail",
+    "hoursLabel": "Ügyfélfogadási idő",
+    "hoursValue": "Hétfő – Péntek: 8:00 – 16:00 (CET)"
+  },
+  "cta": {
+    "title": "Vissza az eszközökhöz",
+    "description": "10 ingyenes online eszköz képekhez, szövegekhez és színekhez",
+    "btnOne": "Eszközök"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "slug": "rolunk",
+  "metadata": {
+    "title": "Az Arteonról – 10 ingyenes online eszköz webhez, SEO-hoz és designhoz",
+    "description": "Az Arteon egy kreatív ügynökség, amely ingyenes böngészőalapú eszközöket fejleszt: WebP konverter, favicon generátor, színkontraszt ellenőrző, QR-kód generátor és még sok más. Regisztráció és feltöltés nélkül — minden helyben fut."
+  },
+  "hero": {
+    "title": "Ingyenes online eszközök egy kreatív ügynökségtől",
+    "description": "10 böngészőalapú eszköz képekhez, SEO-hoz, színekhez, e-mail aláírásokhoz és QR-kódokhoz — regisztráció, fájlfeltöltés és korlátozás nélkül"
+  },
+  "whoWeAre": {
+    "title": "Kik vagyunk",
+    "p1": "Az Arteon egy lengyel kreatív ügynökség. Kereskedelmi munkánk mellett egy bővülő gyűjteményt fejlesztünk és tartunk karban ingyenes online eszközökből, amelyeket vállalkozástulajdonosoknak, weboldal-készítőknek, designereknek, marketingeseknek és mindenkinek terveztünk, aki digitális tartalommal dolgozik.",
+    "p2": "Minden általunk létrehozott eszköz egy konkrét, mindennapi problémát old meg: képek konvertálása, színkontraszt ellenőrzése, faviconok generálása, QR-kódok létrehozása és sok más. Célunk egy átfogó eszköztár építése, ahol mindent megtalál egy helyen — anélkül, hogy tucatnyi különböző webhely között kellene váltogatnia."
+  },
+  "whyFree": {
+    "title": "Miért kínálunk ingyenes eszközöket",
+    "items": [
+      {
+        "title": "Regisztráció és korlátozás nélkül",
+        "description": "Minden eszköz azonnal működik a böngészőjében. Nincs fiók, nincs bejelentkezés, nincs fizetés."
+      },
+      {
+        "title": "Adatvédelem az első helyen",
+        "description": "Fájljai soha nem hagyják el az eszközét. Minden feldolgozás helyben történik a böngészőben — nem küldjk az adatait semmilyen szerverre."
+      },
+      {
+        "title": "Valós igényekből született",
+        "description": "Minden eszköz egy valós problémából született, amellyel ügyfélprojekteken dolgozva találkoztunk. Ha nekünk szükségünk volt rá, valószínűleg Önnek is."
+      },
+      {
+        "title": "Hirdetésekből finanszírozott, Önnek ingyenes",
+        "description": "Google AdSense bannereket használunk a fejlesztési és tárhely-költségek fedezésére. A hirdetési bevételeknek köszönhetően minden eszközt ingyenesen tudunk tartani és továbbiakat fejleszteni."
+      }
+    ]
+  },
+  "ourTools": {
+    "title": "Eszközeink",
+    "items": [
+      {
+        "title": "Képek és faviconok",
+        "description": "WebP konverter, képszerkesztő és favicon generátor. 3 eszköz a mindennapi képmunkához."
+      },
+      {
+        "title": "Meta és SEO",
+        "description": "Meta cím és leírás ellenőrző plusz szó- és karakterszámláló a szöveghossz értékeléséhez."
+      },
+      {
+        "title": "E-mail és kommunikáció",
+        "description": "HTML e-mail aláírás generátor kész kóddal Gmailhez és Outlookhoz."
+      },
+      {
+        "title": "Színek és akadálymentesség",
+        "description": "WCAG kontraszt ellenőrző, kép színkinyerő és színpaletta generátor. 3 eszköz a színekkel való munkához."
+      },
+      {
+        "title": "Nyomtatás és anyagok",
+        "description": "QR-kód generátor weboldalakhoz, vCard-okhoz, menükhöz és szórólapokhoz. Exportálás PNG és SVG formátumban."
+      }
+    ]
+  },
+  "whatsNext": {
+    "title": "Mi következik",
+    "text": "Aktívan dolgozunk az eszköztár bővítésén. Új eszközöket rendszeresen adunk hozzá a felhasználói visszajelzések és saját tapasztalataink alapján. A cél egyetlen platform, ahol a vállalkozástulajdonosok, designerek és fejlesztők minden lényeges eszközhöz hozzáférnek — minden egy helyen, minden ingyen."
+  },
+  "privacy": {
+    "title": "Adatvédelem és biztonság",
+    "textBefore": "Tiszteletben tartjuk a magánéletét. Az eszközeinkbe feltöltött fájlokat kizárólag a böngészőjében dolgozzuk fel, és soha nem küldjk szerverre. Analitikát (Google Analytics 4) és hirdetéseket (Google AdSense) csak az Ön cookie-banneren adott hozzájárulása után használunk. A teljes részletek az",
+    "linkLabel": "Adatvédelmi irányelvek",
+    "textAfter": " oldalon találhatók."
+  },
+  "cta": {
+    "title": "Próbálja ki eszközeinket",
+    "description": "10 ingyenes online eszköz — regisztráció, korlátozás és szerverre feltöltés nélkül",
+    "btnOne": "Eszközök megtekintése",
+    "btnTwo": "Kapcsolat"
+  }
+}

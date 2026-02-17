@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "mainNavigation": "Navegación principal",
+    "logoAlt": "Arteon - logotipo de la empresa",
+    "closeMenu": "Cerrar menú",
+    "openMenu": "Abrir menú",
+    "closeToolsList": "Cerrar lista de herramientas",
+    "openToolsList": "Abrir lista de herramientas",
+    "toolsLabel": "Herramientas",
+    "mobileMenu": "Menú móvil",
+    "aboutLabel": "Sobre nosotros",
+    "contactLabel": "Contacto"
+  },
+  "footer": {
+    "copyright": "Todos los derechos reservados.",
+    "description": "Herramientas en línea gratuitas para desarrolladores web, diseñadores y especialistas en marketing.",
+    "companyDataLabel": "Datos de la empresa",
+    "toolsLabel": "Herramientas",
+    "legalLabel": "Documentos legales",
+    "cookieSettingsLabel": "Configuración de cookies"
+  },
+  "desktopOnly": {
+    "title": "Esta herramienta funciona en una pantalla más grande",
+    "description": "Para usar esta herramienta cómodamente, ábrala en un portátil, ordenador de escritorio o tableta en modo horizontal.",
+    "tipTitle": "Consejo",
+    "tipText": "Si usa una tableta, gírela a modo horizontal: cuando el ancho de la ventana sea suficiente, la herramienta se cargará automáticamente."
+  },
+  "cookie": {
+    "title": "Cookies y privacidad",
+    "description": "Utilizamos cookies para el funcionamiento del sitio, análisis de tráfico y publicidad. Más información en nuestra",
+    "setPreferences": "Configurar preferencias",
+    "privacyPolicy": "Política de privacidad",
+    "privacyPolicyHref": "/es/politica-de-privacidad",
+    "reject": "Rechazar todo",
+    "settings": "Configuración",
+    "accept": "Aceptar todo",
+    "panelTitle": "Preferencias de privacidad",
+    "panelDescription": "Configuración de consentimiento de procesamiento de datos.",
+    "categoriesLegend": "Categorías",
+    "essentialTitle": "Esenciales",
+    "essentialDescription": "Sin ellas el sitio no funciona. No recopilan datos de marketing.",
+    "essentialStatus": "Siempre activas",
+    "analyticsTitle": "Análisis (GA4)",
+    "analyticsDescription": "Estadísticas de visitas. Activa Google Analytics 4 con su consentimiento.",
+    "analyticsLabel": "Activar análisis GA4",
+    "adsTitle": "Publicidad (Google AdSense)",
+    "adsDescription": "Publicidad personalizada según sus intereses.",
+    "adsLabel": "Activar publicidad personalizada",
+    "changeDecision": "Puede cambiar su decisión en cualquier momento",
+    "save": "Guardar"
+  },
+  "skipToContent": "Ir al contenido",
+  "legal": [
+    {
+      "key": "privacy",
+      "href": "/es/politica-de-privacidad",
+      "label": "Política de privacidad"
+    }
+  ],
+  "breadcrumbs": {
+    "home": "Inicio",
+    "ariaLabel": "migas de pan"
+  },
+  "contactForm": {
+    "nameLabel": "Nombre completo",
+    "namePlaceholder": "Juan García",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "juan.garcia@gmail.com",
+    "subjectLabel": "Asunto",
+    "subjectPlaceholder": "p. ej. Informe de error | Sugerencia de herramienta | Pregunta",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Describa su pregunta o sugerencia...",
+    "send": "Enviar",
+    "error": "Algo salió mal. Verifique sus datos e inténtelo de nuevo.",
+    "success": "¡Mensaje enviado! Responderemos lo antes posible."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Herramientas en línea gratuitas",
+    "seeAllTools": "Ver todas las herramientas",
+    "carouselLabel": "Carrusel de herramientas",
+    "scrollLeft": "Desplazar a la izquierda",
+    "scrollRight": "Desplazar a la derecha",
+    "carouselNavigation": "Navegación del carrusel",
+    "goToSlide": "Ir a la diapositiva",
+    "of": "de",
+    "slide": "Diapositiva",
+    "tool": "Herramienta",
+    "openTool": "Abrir herramienta"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Cambiar a español",
+    "toggleLabel": "Cambiar idioma",
+    "chooseLabel": "Elegir idioma",
+    "popularLabel": "Popular",
+    "otherLabel": "Otros",
+    "closeModalLabel": "Cerrar"
+  },
+  "mobileNav": {
+    "close": "Cerrar",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "infoBanner": {
+    "text": "Actualización del generador de firmas de correo: descubra las nuevas funciones",
+    "linkText": "herramientas"
+  }
+}

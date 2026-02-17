@@ -1,0 +1,52 @@
+{
+  "selectBaseColor": "Basisfarbe auswählen",
+  "updateColor": "Farbe aktualisieren",
+  "randomColor": "Zufällige Farbe",
+  "currentBaseColor": "Aktuelle Basisfarbe",
+  "baseColorHelper": "Alle unten stehenden Paletten basieren auf dieser Farbe.",
+  "colorPreview": "Farbvorschau",
+  "copied": "Kopiert",
+  "copy": "Kopieren",
+  "generatedPalettes": "Generierte Farbpaletten",
+  "colorReadError": "Die Farbe konnte nicht gelesen werden. Stellen Sie sicher, dass Sie das Format verwenden",
+  "example": "z. B.",
+  "enterValidColor": "Geben Sie eine gültige HEX-Farbe ein, um Paletten zu generieren. Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.",
+  "palettes": {
+    "monochromatic": {
+      "label": "Monochromatische Palette",
+      "description": "Alle Farben haben denselben Farbton (H) und unterscheiden sich hauptsächlich in der Helligkeit (L) im HSL-Farbraum."
+    },
+    "analogous": {
+      "label": "Analoge Palette",
+      "description": "Farben mit ähnlichen Farbtönen - von ca. -30° bis +30° um die Basisfarbe auf dem klassischen Farbkreis (z. B. Itten)."
+    },
+    "complementary": {
+      "label": "Komplementärpalette",
+      "description": "Die Basisfarbe und ihr Komplement, um 180° auf dem Farbkreis verschoben - einer der grundlegenden Farbkontraste, beschrieben u. a. von Johannes Itten."
+    },
+    "triadic": {
+      "label": "Triadische Palette",
+      "description": "Drei Farbtöne im Abstand von 120° auf dem Farbkreis (Eckpunkte eines gleichseitigen Dreiecks) - eine Geometrie, die häufig im Branding und Bauhaus-inspirierten Designs verwendet wird."
+    },
+    "splitComplementary": {
+      "label": "Split-Komplementärpalette",
+      "description": "Eine Variante der Komplementärpalette - anstelle eines Komplements (180°) werden zwei Farben verwendet, die ca. ±30° vom Komplement verschoben sind, was die visuelle Spannung reduziert und gleichzeitig starken Kontrast beibehält."
+    },
+    "softPastel": {
+      "label": "Pastellpalette",
+      "description": "Derselbe Farbton mit reduzierter Sättigung und erhöhter Helligkeit - eine Verschiebung zur Mitte und zum oberen Bereich des HSL-Raums, die weiche, „cremige\" Farben erzeugt."
+    },
+    "deepDark": {
+      "label": "Dunkle Palette",
+      "description": "Derselbe Farbton mit hoher Sättigung (S) und reduzierter Helligkeit (L) - eine Verschiebung nach unten auf der Helligkeitsachse, die tiefe Farben erzeugt, typisch für Dark Mode und kräftige Akzente."
+    },
+    "materialTonal": {
+      "label": "Tonale Palette (Material Design inspiriert)",
+      "description": "Mehrere Helligkeitsstufen eines Farbtons - variiertes L und moderates S, ähnlich den tonalen Bereichen aus den Material-Design-Richtlinien (z. B. 50-900)."
+    },
+    "appleMinimal": {
+      "label": "Minimalistische Palette (Apple inspiriert)",
+      "description": "Ein kräftiger Farbakzent und mehrere sehr helle, weiche Neutraltöne - ein Layout, typisch für Oberflächen mit viel Weißraum und dezenten Schatten."
+    }
+  }
+}

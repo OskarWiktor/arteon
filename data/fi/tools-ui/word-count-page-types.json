@@ -1,0 +1,44 @@
+[
+  {
+    "key": "product",
+    "label": "Tuotekuvaus",
+    "minWords": 80,
+    "maxWords": 400,
+    "description": "Mitä yksinkertaisempi tuote, sitä lyhyempi kuvaus. Monimutkaiset tuotteet (esim. elektroniikka) vaativat enemmän selityksiä ja teknisiä tietoja."
+  },
+  {
+    "key": "service",
+    "label": "Palvelusivu",
+    "minWords": 500,
+    "maxWords": 1500,
+    "description": "Yksinkertainen paikallinen palvelu vaatii vähemmän sanoja. Monivaiheinen tarjous vaatii enemmän."
+  },
+  {
+    "key": "homepage",
+    "label": "Etusivu",
+    "minWords": 400,
+    "maxWords": 1000,
+    "description": "Etusivu ohjaa kävijöitä alasivuille. Selkeä viesti ja luettava rakenne helpottavat navigointia."
+  },
+  {
+    "key": "landing",
+    "label": "Laskeutumissivu",
+    "minWords": 600,
+    "maxWords": 2500,
+    "description": "Kalliimpi tarjous vaatii enemmän selitystä ja luottamuksen rakentamista. Yksinkertainen tarjous voi olla lyhyempi."
+  },
+  {
+    "key": "blog",
+    "label": "Blogikirjoitus",
+    "minWords": 1200,
+    "maxWords": 3000,
+    "description": "Pituus riippuu aiheen monimutkaisuudesta. Tekstin tulisi vastata lukijan kysymyksiin perusteellisesti ja konkreettisesti."
+  },
+  {
+    "key": "guide",
+    "label": "Opas / ohje",
+    "minWords": 2500,
+    "maxWords": 6000,
+    "description": "Yksityiskohtainen katsaus aiheeseen, jossa on monia näkökulmia. Pituus riippuu aiheen laajuudesta."
+  }
+]

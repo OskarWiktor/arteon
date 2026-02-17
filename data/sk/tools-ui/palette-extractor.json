@@ -1,0 +1,18 @@
+{
+  "unsupportedFormatsOnly": "Tento súbor nie je podporovaný. Nahrajte PNG, JPG/JPEG alebo SVG.",
+  "unexpectedError": "Obrázok sa nepodarilo analyzovať. Skúste to znova alebo použite iný súbor.",
+  "addImageLabel": "Pridať obrázok",
+  "dragDropImage": "Presuňte obrázok sem",
+  "clickToSelect": "alebo kliknite na výber súboru",
+  "supportedFormats": "Podporované: PNG, JPG/JPEG, SVG",
+  "preview": "Náhľad a paleta",
+  "addImageToStart": "Nahrajte obrázok a nástroj zobrazí dominantné farby. Skopírujte každý kód jedným kliknutím – ideálne pre UI, branding a sociálne siete.",
+  "processing": "Analyzujem obrázok a vytváram paletu…",
+  "colorPreview": "Náhľad farby",
+  "copy": "Kopírovať",
+  "copied": "Skopírované",
+  "empty": "Dominantné farby sa nepodarilo zistiť. Skúste iný obrázok.",
+  "selectedFile": "Vybraný súbor:",
+  "copyHint": "Kliknite na «Kopírovať» na skopírovanie kódu farby.",
+  "previewAlt": "Náhľad"
+}

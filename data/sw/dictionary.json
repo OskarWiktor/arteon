@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "mainNavigation": "Urambazaji mkuu",
+    "logoAlt": "Arteon - nembo ya kampuni",
+    "closeMenu": "Funga menyu",
+    "openMenu": "Fungua menyu",
+    "closeToolsList": "Funga orodha ya zana",
+    "openToolsList": "Fungua orodha ya zana",
+    "toolsLabel": "Zana",
+    "mobileMenu": "Menyu ya simu",
+    "aboutLabel": "Kuhusu sisi",
+    "contactLabel": "Wasiliana nasi"
+  },
+  "footer": {
+    "copyright": "Haki zote zimehifadhiwa.",
+    "description": "Zana za bure kwa waendelezaji wavuti, wabunifu, na wataalam wa masoko.",
+    "companyDataLabel": "Taarifa za kampuni",
+    "toolsLabel": "Zana",
+    "legalLabel": "Nyaraka za kisheria",
+    "cookieSettingsLabel": "Mipangilio ya vidakuzi"
+  },
+  "desktopOnly": {
+    "title": "Zana hii inafanya kazi kwenye skrini kubwa zaidi",
+    "description": "Ili kutumia zana hii kwa urahisi, ifungue kwenye kompyuta ndogo, kompyuta ya mezani, au kompyuta kibao katika hali ya mlalo.",
+    "tipTitle": "Kidokezo",
+    "tipText": "Ikiwa unatumia kompyuta kibao, badilisha hali ya mlalo — zana itapakia moja kwa moja ukubwa wa dirisha unapotosha."
+  },
+  "cookie": {
+    "title": "Vidakuzi na faragha",
+    "description": "Tunatumia vidakuzi kwa utendaji wa tovuti, uchambuzi wa trafiki, na kuonyesha matangazo. Jifunze zaidi katika",
+    "setPreferences": "Weka mapendeleo",
+    "privacyPolicy": "Sera ya faragha",
+    "privacyPolicyHref": "/sw/sera-ya-faragha",
+    "reject": "Kataa yote",
+    "settings": "Mipangilio",
+    "accept": "Kubali yote",
+    "panelTitle": "Mapendeleo ya faragha",
+    "panelDescription": "Mipangilio ya idhini ya uchakataji wa data.",
+    "categoriesLegend": "Kategoria",
+    "essentialTitle": "Muhimu",
+    "essentialDescription": "Tovuti haiwezi kufanya kazi bila hizi. Hazikusanyi data ya masoko.",
+    "essentialStatus": "Hai kila wakati",
+    "analyticsTitle": "Uchambuzi (GA4)",
+    "analyticsDescription": "Takwimu za kutembelea. Inawezesha Google Analytics 4 kwa idhini yako.",
+    "analyticsLabel": "Wezesha uchambuzi wa GA4",
+    "adsTitle": "Matangazo (Google AdSense)",
+    "adsDescription": "Matangazo yaliyobinafsishwa kulingana na mapendeleo yako.",
+    "adsLabel": "Wezesha matangazo yaliyobinafsishwa",
+    "changeDecision": "Unaweza kubadilisha uamuzi wako wakati wowote",
+    "save": "Hifadhi"
+  },
+  "skipToContent": "Ruka hadi maudhui",
+  "legal": [
+    {
+      "key": "privacy",
+      "href": "/sw/sera-ya-faragha",
+      "label": "Sera ya faragha"
+    }
+  ],
+  "breadcrumbs": {
+    "home": "Nyumbani",
+    "ariaLabel": "urambazaji"
+  },
+  "contactForm": {
+    "nameLabel": "Jina kamili",
+    "namePlaceholder": "Juma Hassan",
+    "emailLabel": "Barua pepe",
+    "emailPlaceholder": "juma.hassan@gmail.com",
+    "subjectLabel": "Mada",
+    "subjectPlaceholder": "k.m. Ripoti ya hitilafu | Pendekezo la zana | Swali",
+    "messageLabel": "Ujumbe",
+    "messagePlaceholder": "Eleza swali au pendekezo lako...",
+    "send": "Tuma",
+    "error": "Kuna kitu kimekwenda vibaya. Angalia data yako na ujaribu tena.",
+    "success": "Ujumbe umetumwa! Tutajibu haraka iwezekanavyo."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Zana za bure",
+    "seeAllTools": "Tazama zana zote",
+    "carouselLabel": "Carousel ya zana",
+    "scrollLeft": "Sogeza kushoto",
+    "scrollRight": "Sogeza kulia",
+    "carouselNavigation": "Urambazaji wa carousel",
+    "goToSlide": "Nenda slaidi",
+    "of": "ya",
+    "slide": "Slaidi",
+    "tool": "Zana",
+    "openTool": "Fungua zana"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Badili kwa Kiswahili",
+    "toggleLabel": "Badilisha lugha",
+    "chooseLabel": "Chagua lugha",
+    "popularLabel": "Maarufu",
+    "otherLabel": "Nyingine",
+    "closeModalLabel": "Funga"
+  },
+  "mobileNav": {
+    "close": "Funga",
+    "services": "Huduma",
+    "contact": "Wasiliana"
+  },
+  "infoBanner": {
+    "text": "Kizalishi cha saini ya barua pepe kimesasishwa – gundua vipengele vipya",
+    "linkText": "zana"
+  }
+}

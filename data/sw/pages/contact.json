@@ -1,0 +1,28 @@
+{
+  "slug": "wasiliana-nasi",
+  "metadata": {
+    "title": "Wasiliana na Arteon – Msaada na Maoni ya Zana za Bure",
+    "description": "Wasiliana na timu ya Arteon. Ripoti hitilafu, pendekeza zana mpya, au uliza swali kuhusu zana zetu za bure za picha, SEO, rangi na misimbo QR. Tunajibu ndani ya siku moja ya kazi."
+  },
+  "hero": {
+    "title": "Wasiliana na timu ya Arteon",
+    "description": "Ripoti hitilafu, pendekeza zana mpya, au uliza swali — tunajibu ndani ya siku moja ya kazi"
+  },
+  "intro": {
+    "title": "Una swali au pendekezo?",
+    "textBefore": "Tunafuraha kusikia maoni yako kuhusu zana zetu. Ukipata hitilafu, ukiwa na wazo la zana mpya, au ukihitaji msaada — tuandikie kwa",
+    "textAfter": ". Tunajibu ndani ya siku moja ya kazi."
+  },
+  "formTitle": "Tutumie ujumbe",
+  "details": {
+    "title": "Maelezo ya mawasiliano",
+    "emailLabel": "Barua pepe",
+    "hoursLabel": "Saa za kazi",
+    "hoursValue": "Jumatatu – Ijumaa: 8:00 – 16:00 (CET)"
+  },
+  "cta": {
+    "title": "Rudi kwenye zana",
+    "description": "Zana 10 za bure za kufanya kazi na picha, maandishi na rangi",
+    "btnOne": "Zana"
+  }
+}

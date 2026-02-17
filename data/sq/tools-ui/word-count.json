@@ -1,0 +1,23 @@
+{
+  "pasteText": "Ngjitni ose shkruani tekst",
+  "textPlaceholder": "Ngjitni këtu tekstin që doni të analizoni...",
+  "pageType": "Lloji i faqes",
+  "pageTypeHelper": "Zgjidhni llojin e faqes për të cilën po shkruani. Secili lloj ka rekomandime të ndryshme për gjatësinë.",
+  "words": "Fjalë",
+  "charsWithSpaces": "Karaktere (me hapësira)",
+  "charsWithoutSpaces": "Karaktere (pa hapësira)",
+  "paragraphs": "Paragrafë",
+  "readingTime": "Koha e leximit",
+  "lengthEvaluation": "Vlerësimi i gjatësisë",
+  "recommendedRange": "Gama e rekomanduar",
+  "copyReport": "Kopjoni raportin",
+  "copied": "U kopjua",
+  "statistics": "Statistikat e tekstit",
+  "noText": "Nuk ka tekst",
+  "empty": "Shkruani tekst për të parë statistikat.",
+  "tooShort": "Shumë i shkurtër",
+  "tooLong": "Shumë i gjatë",
+  "ideal": "Gjatësi e mirë",
+  "analysisFor": "Analiza për",
+  "wordsUnit": "fjalë"
+}

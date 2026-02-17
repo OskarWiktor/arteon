@@ -1,113 +1,7 @@
 import Wrapper from '../ui/Wrapper';
 import AppLink from '../ui/Link';
 import { RiHomeLine } from 'react-icons/ri';
-
-const ui = {
-  pl: {
-    home: 'Strona główna',
-    ariaLabel: 'okruszki',
-  },
-  en: {
-    home: 'Home',
-    ariaLabel: 'breadcrumbs',
-  },
-  de: {
-    home: 'Startseite',
-    ariaLabel: 'Brotkrümel',
-  },
-  es: {
-    home: 'Inicio',
-    ariaLabel: 'migas de pan',
-  },
-  fr: {
-    home: 'Accueil',
-    ariaLabel: "fil d'Ariane",
-  },
-  pt: {
-    home: 'Início',
-    ariaLabel: 'migalhas de pão',
-  },
-  it: {
-    home: 'Home',
-    ariaLabel: 'briciole di pane',
-  },
-  ro: {
-    home: 'Acasă',
-    ariaLabel: 'navigare',
-  },
-  nl: {
-    home: 'Home',
-    ariaLabel: 'kruimelpad',
-  },
-  hu: {
-    home: 'Főoldal',
-    ariaLabel: 'útmutató',
-  },
-  id: {
-    home: 'Beranda',
-    ariaLabel: 'navigasi',
-  },
-  vi: {
-    home: 'Trang chủ',
-    ariaLabel: 'điều hướng',
-  },
-  tr: {
-    home: 'Ana sayfa',
-    ariaLabel: 'navigasyon',
-  },
-  tl: {
-    home: 'Home',
-    ariaLabel: 'nabigasyon',
-  },
-  sw: {
-    home: 'Nyumbani',
-    ariaLabel: 'urambazaji',
-  },
-  ms: {
-    home: 'Laman utama',
-    ariaLabel: 'navigasi',
-  },
-  cs: {
-    home: '\u00davodn\u00ed str\u00e1nka',
-    ariaLabel: 'navigace',
-  },
-  sv: {
-    home: 'Startsida',
-    ariaLabel: 'navigering',
-  },
-  sq: {
-    home: 'Faqja kryesore',
-    ariaLabel: 'navigimi',
-  },
-  da: {
-    home: 'Forside',
-    ariaLabel: 'navigation',
-  },
-  no: {
-    home: 'Forside',
-    ariaLabel: 'navigasjon',
-  },
-  fi: {
-    home: 'Etusivu',
-    ariaLabel: 'navigaatio',
-  },
-  sk: {
-    home: '\u00davodn\u00e1 str\u00e1nka',
-    ariaLabel: 'navig\u00e1cia',
-  },
-  hr: {
-    home: 'Po\u010detna',
-    ariaLabel: 'navigacija',
-  },
-  lt: {
-    home: 'Pradinis puslapis',
-    ariaLabel: 'navigacija',
-  },
-  sl: {
-    home: 'Za\u010detna stran',
-    ariaLabel: 'navigacija',
-  },
-} as const;
+import { BREADCRUMBS_UI } from '@/lib/i18n/locales';
 
 import type { Crumb, BreadcrumbsProps } from '@/types/ui';
 export type { Crumb, BreadcrumbsProps } from '@/types/ui';
@@ -119,7 +13,7 @@ function absoluteUrl(siteUrl: string, href: string) {
 }
 
 export default function Breadcrumbs({ second, third, fourth, className = '', includeJsonLd = false, siteUrl = DEFAULT_SITE, size = 'default', locale = 'pl' }: BreadcrumbsProps) {
-  const t = ui[locale];
+  const t = BREADCRUMBS_UI[locale];
   const items: Crumb[] = [{ href: '/', label: t.home }, second, third, ...(fourth ? [fourth] : [])];
 
   const jsonLd = includeJsonLd
