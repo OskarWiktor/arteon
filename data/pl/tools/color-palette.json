@@ -2,7 +2,7 @@
   "toolKey": "colorPalette",
   "locale": "pl",
   "metadata": {
-    "title": "Darmowy generator palet kolorów - 9 schematów z jednego koloru",
+    "title": "Darmowy generator palet kolorów – 9 schematów",
     "description": "Wygeneruj 9 palet kolorów z jednego koloru: monochromatyczną, komplementarną, triadyczną, pastelową i inne. Skopiuj kody HEX jednym kliknięciem.",
     "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
     "path": "/narzedzia/generator-palet-kolorow"

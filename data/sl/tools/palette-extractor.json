@@ -2,7 +2,7 @@
   "toolKey": "paletteExtractor",
   "locale": "sl",
   "metadata": {
-    "title": "Brezplačno izvlečenje barv iz slike – Paleta iz katere koli fotografije",
+    "title": "Brezplačno izvlečenje barv iz slike – Paleta",
     "description": "Naložite fotografijo ali logotip in izvlecite do 12 prevladujočih barv s HEX in RGB kodami. Primerno za UI dizajn, blagovno znamko in družbena omrežja.",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/sl/orodja/izvlecenje-barv-iz-slike"

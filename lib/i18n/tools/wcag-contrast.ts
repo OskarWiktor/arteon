@@ -26,5 +26,10 @@ import sk from '@/data/sk/tools-ui/wcag-contrast.json';
 import hr from '@/data/hr/tools-ui/wcag-contrast.json';
 import lt from '@/data/lt/tools-ui/wcag-contrast.json';
 import sl from '@/data/sl/tools-ui/wcag-contrast.json';
+import el from '@/data/el/tools-ui/wcag-contrast.json';
+import bg from '@/data/bg/tools-ui/wcag-contrast.json';
+import ha from '@/data/ha/tools-ui/wcag-contrast.json';
+import yo from '@/data/yo/tools-ui/wcag-contrast.json';
+import af from '@/data/af/tools-ui/wcag-contrast.json';
 
-export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, id, vi, tr, tl, sw, ms, cs, sv, sq, da, no, fi, sk, hr, lt, sl } as const satisfies Record<Locale, unknown>;
+export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, id, vi, tr, tl, sw, ms, cs, sv, sq, da, no, fi, sk, hr, lt, sl, el, bg, ha, yo, af } as const satisfies Record<Locale, unknown>;

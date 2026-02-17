@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import type { Locale } from '@/types/locale';
 
 // ---------------------------------------------------------------------------
 // Badge
@@ -85,7 +86,7 @@ export type BreadcrumbsProps = {
   includeJsonLd?: boolean;
   siteUrl?: string;
   size?: 'default' | 'compact';
-  locale?: 'pl' | 'en' | 'de' | 'es' | 'fr' | 'pt' | 'it' | 'ro' | 'nl' | 'hu' | 'id' | 'vi' | 'tr' | 'tl' | 'sw' | 'ms' | 'cs' | 'sv' | 'sq' | 'da' | 'no' | 'fi' | 'sk' | 'hr' | 'lt' | 'sl';
+  locale?: Locale;
 };
 
 // ---------------------------------------------------------------------------

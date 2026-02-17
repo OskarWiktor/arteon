@@ -26,7 +26,12 @@ import sk from '@/data/sk/tools-ui/image-resize-editor.json';
 import hr from '@/data/hr/tools-ui/image-resize-editor.json';
 import lt from '@/data/lt/tools-ui/image-resize-editor.json';
 import sl from '@/data/sl/tools-ui/image-resize-editor.json';
+import el from '@/data/el/tools-ui/image-resize-editor.json';
+import bg from '@/data/bg/tools-ui/image-resize-editor.json';
+import ha from '@/data/ha/tools-ui/image-resize-editor.json';
+import yo from '@/data/yo/tools-ui/image-resize-editor.json';
+import af from '@/data/af/tools-ui/image-resize-editor.json';
 
-export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, id, vi, tr, tl, sw, ms, cs, sv, sq, da, no, fi, sk, hr, lt, sl } as const satisfies Record<Locale, unknown>;
+export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, id, vi, tr, tl, sw, ms, cs, sv, sq, da, no, fi, sk, hr, lt, sl, el, bg, ha, yo, af } as const satisfies Record<Locale, unknown>;
 
 export type UiLocale = (typeof ui)[Locale];

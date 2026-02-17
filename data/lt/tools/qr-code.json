@@ -2,7 +2,7 @@
   "toolKey": "qrCode",
   "locale": "lt",
   "metadata": {
-    "title": "Nemokamas QR kodų generatorius – PNG ir SVG, be registracijos",
+    "title": "Nemokamas QR kodų generatorius – PNG ir SVG",
     "description": "Sukurkite QR kodą svetainei, vCard vizitinei kortelei, meniu ar skrajutei per kelias sekundes. Eksportas į PNG ir SVG. Spalvų ir dydžio pritaikymas.",
     "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
     "path": "/lt/irankiai/nemokamas-qr-kodu-generatorius"

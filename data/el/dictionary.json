@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "mainNavigation": "Κύρια πλοήγηση",
+    "logoAlt": "Arteon – λογότυπο εταιρείας",
+    "closeMenu": "Κλείσιμο μενού",
+    "openMenu": "Άνοιγμα μενού",
+    "closeToolsList": "Κλείσιμο λίστας εργαλείων",
+    "openToolsList": "Άνοιγμα λίστας εργαλείων",
+    "toolsLabel": "Εργαλεία",
+    "mobileMenu": "Μενού κινητού",
+    "aboutLabel": "Σχετικά",
+    "contactLabel": "Επικοινωνία"
+  },
+  "footer": {
+    "copyright": "Με επιφύλαξη παντός δικαιώματος.",
+    "description": "Δωρεάν εργαλεία για προγραμματιστές, σχεδιαστές και επαγγελματίες μάρκετινγκ.",
+    "companyDataLabel": "Στοιχεία εταιρείας",
+    "toolsLabel": "Εργαλεία",
+    "legalLabel": "Νομικά έγγραφα",
+    "cookieSettingsLabel": "Ρυθμίσεις cookies"
+  },
+  "desktopOnly": {
+    "title": "Αυτό το εργαλείο λειτουργεί σε μεγαλύτερη οθόνη",
+    "description": "Για άνετη χρήση, ανοίξτε αυτό το εργαλείο σε φορητό υπολογιστή, επιτραπέζιο ή tablet σε οριζόντια θέση.",
+    "tipTitle": "Συμβουλή",
+    "tipText": "Αν χρησιμοποιείτε tablet, γυρίστε το σε οριζόντια θέση – όταν το πλάτος του παραθύρου είναι αρκετά μεγάλο, το εργαλείο θα φορτωθεί αυτόματα."
+  },
+  "cookie": {
+    "title": "Cookies και απόρρητο",
+    "description": "Χρησιμοποιούμε cookies για τη λειτουργία του ιστότοπου, ανάλυση επισκεψιμότητας και προβολή διαφημίσεων. Μάθετε περισσότερα στην",
+    "setPreferences": "Ορισμός προτιμήσεων",
+    "privacyPolicy": "Πολιτική απορρήτου",
+    "privacyPolicyHref": "/el/politiki-aporritou",
+    "reject": "Απόρριψη όλων",
+    "settings": "Ρυθμίσεις",
+    "accept": "Αποδοχή όλων",
+    "panelTitle": "Προτιμήσεις απορρήτου",
+    "panelDescription": "Ρυθμίσεις συγκατάθεσης επεξεργασίας δεδομένων.",
+    "categoriesLegend": "Κατηγορίες",
+    "essentialTitle": "Απαραίτητα",
+    "essentialDescription": "Ο ιστότοπος δεν μπορεί να λειτουργήσει χωρίς αυτά. Δεν συλλέγουν δεδομένα μάρκετινγκ.",
+    "essentialStatus": "Πάντα ενεργά",
+    "analyticsTitle": "Αναλυτικά (GA4)",
+    "analyticsDescription": "Στατιστικά επισκέψεων. Ενεργοποιεί το Google Analytics 4 με τη συγκατάθεσή σας.",
+    "analyticsLabel": "Ενεργοποίηση αναλυτικών GA4",
+    "adsTitle": "Διαφημίσεις (Google AdSense)",
+    "adsDescription": "Εξατομικευμένες διαφημίσεις βάσει ενδιαφερόντων.",
+    "adsLabel": "Ενεργοποίηση εξατομικευμένων διαφημίσεων",
+    "changeDecision": "Μπορείτε να αλλάξετε την απόφασή σας ανά πάσα στιγμή",
+    "save": "Αποθήκευση"
+  },
+  "skipToContent": "Μετάβαση στο περιεχόμενο",
+  "legal": [{ "key": "privacy", "href": "/el/politiki-aporritou", "label": "Πολιτική απορρήτου" }],
+  "breadcrumbs": { "home": "Αρχική", "ariaLabel": "πλοήγηση breadcrumbs" },
+  "contactForm": {
+    "nameLabel": "Ονοματεπώνυμο",
+    "namePlaceholder": "Γιάννης Παπαδόπουλος",
+    "emailLabel": "Email",
+    "emailPlaceholder": "giannis@example.com",
+    "subjectLabel": "Θέμα",
+    "subjectPlaceholder": "π.χ. Αναφορά σφάλματος | Πρόταση εργαλείου | Ερώτηση",
+    "messageLabel": "Μήνυμα",
+    "messagePlaceholder": "Περιγράψτε την ερώτηση ή πρότασή σας...",
+    "send": "Αποστολή",
+    "error": "Κάτι πήγε στραβά. Ελέγξτε τα στοιχεία σας και δοκιμάστε ξανά.",
+    "success": "Το μήνυμα στάλθηκε! Θα σας απαντήσουμε το συντομότερο δυνατό."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Δωρεάν εργαλεία",
+    "seeAllTools": "Δείτε όλα τα εργαλεία",
+    "carouselLabel": "Καρουζέλ εργαλείων",
+    "scrollLeft": "Κύλιση αριστερά",
+    "scrollRight": "Κύλιση δεξιά",
+    "carouselNavigation": "Πλοήγηση καρουζέλ",
+    "goToSlide": "Μετάβαση στη διαφάνεια",
+    "of": "από",
+    "slide": "Διαφάνεια",
+    "tool": "Εργαλείο",
+    "openTool": "Άνοιγμα εργαλείου"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Αλλαγή σε Ελληνικά",
+    "toggleLabel": "Αλλαγή γλώσσας",
+    "chooseLabel": "Επιλέξτε γλώσσα",
+    "popularLabel": "Δημοφιλείς",
+    "otherLabel": "Άλλες",
+    "closeModalLabel": "Κλείσιμο"
+  },
+  "mobileNav": { "close": "Κλείσιμο", "services": "Υπηρεσίες", "contact": "Επικοινωνία" },
+  "infoBanner": {
+    "text": "Ενημέρωση δημιουργίας υπογραφής email – δείτε τις νέες δυνατότητες",
+    "linkText": "εργαλεία"
+  }
+}

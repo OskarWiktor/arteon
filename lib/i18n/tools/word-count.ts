@@ -26,5 +26,10 @@ import sk from '@/data/sk/tools-ui/word-count.json';
 import hr from '@/data/hr/tools-ui/word-count.json';
 import lt from '@/data/lt/tools-ui/word-count.json';
 import sl from '@/data/sl/tools-ui/word-count.json';
+import el from '@/data/el/tools-ui/word-count.json';
+import bg from '@/data/bg/tools-ui/word-count.json';
+import ha from '@/data/ha/tools-ui/word-count.json';
+import yo from '@/data/yo/tools-ui/word-count.json';
+import af from '@/data/af/tools-ui/word-count.json';
 
-export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, id, vi, tr, tl, sw, ms, cs, sv, sq, da, no, fi, sk, hr, lt, sl } as const satisfies Record<Locale, unknown>;
+export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, id, vi, tr, tl, sw, ms, cs, sv, sq, da, no, fi, sk, hr, lt, sl, el, bg, ha, yo, af } as const satisfies Record<Locale, unknown>;

@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "mainNavigation": "Основна навигация",
+    "logoAlt": "Arteon – фирмено лого",
+    "closeMenu": "Затваряне на менюто",
+    "openMenu": "Отваряне на менюто",
+    "closeToolsList": "Затваряне на списъка с инструменти",
+    "openToolsList": "Отваряне на списъка с инструменти",
+    "toolsLabel": "Инструменти",
+    "mobileMenu": "Мобилно меню",
+    "aboutLabel": "За нас",
+    "contactLabel": "Контакт"
+  },
+  "footer": {
+    "copyright": "Всички права запазени.",
+    "description": "Безплатни инструменти за уеб разработчици, дизайнери и маркетинг специалисти.",
+    "companyDataLabel": "Фирмени данни",
+    "toolsLabel": "Инструменти",
+    "legalLabel": "Правни документи",
+    "cookieSettingsLabel": "Настройки на бисквитките"
+  },
+  "desktopOnly": {
+    "title": "Този инструмент работи на по-голям екран",
+    "description": "За удобна работа отворете този инструмент на лаптоп, настолен компютър или таблет в хоризонтален режим.",
+    "tipTitle": "Съвет",
+    "tipText": "Ако използвате таблет, завъртете го хоризонтално – когато ширината на прозореца е достатъчна, инструментът ще се зареди автоматично."
+  },
+  "cookie": {
+    "title": "Бисквитки и поверителност",
+    "description": "Използваме бисквитки за работата на сайта, анализ на трафика и показване на реклами. Научете повече в нашата",
+    "setPreferences": "Задаване на предпочитания",
+    "privacyPolicy": "Политика за поверителност",
+    "privacyPolicyHref": "/bg/politika-za-poveritelnost",
+    "reject": "Отхвърляне на всички",
+    "settings": "Настройки",
+    "accept": "Приемане на всички",
+    "panelTitle": "Предпочитания за поверителност",
+    "panelDescription": "Настройки за съгласие за обработка на данни.",
+    "categoriesLegend": "Категории",
+    "essentialTitle": "Необходими",
+    "essentialDescription": "Сайтът не може да функционира без тях. Те не събират маркетингови данни.",
+    "essentialStatus": "Винаги активни",
+    "analyticsTitle": "Анализи (GA4)",
+    "analyticsDescription": "Статистика на посещенията. Активира Google Analytics 4 с вашето съгласие.",
+    "analyticsLabel": "Активиране на GA4 анализи",
+    "adsTitle": "Реклами (Google AdSense)",
+    "adsDescription": "Персонализирани реклами, базирани на вашите интереси.",
+    "adsLabel": "Активиране на персонализирани реклами",
+    "changeDecision": "Можете да промените решението си по всяко време",
+    "save": "Запазване"
+  },
+  "skipToContent": "Преминаване към съдържанието",
+  "legal": [{ "key": "privacy", "href": "/bg/politika-za-poveritelnost", "label": "Политика за поверителност" }],
+  "breadcrumbs": { "home": "Начало", "ariaLabel": "навигация breadcrumbs" },
+  "contactForm": {
+    "nameLabel": "Пълно име",
+    "namePlaceholder": "Иван Петров",
+    "emailLabel": "Имейл",
+    "emailPlaceholder": "ivan.petrov@example.com",
+    "subjectLabel": "Тема",
+    "subjectPlaceholder": "напр. Доклад за грешка | Предложение за инструмент | Въпрос",
+    "messageLabel": "Съобщение",
+    "messagePlaceholder": "Опишете вашия въпрос или предложение...",
+    "send": "Изпращане",
+    "error": "Нещо се обърка. Моля, проверете данните си и опитайте отново.",
+    "success": "Съобщението е изпратено! Ще ви отговорим възможно най-скоро."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Безплатни инструменти",
+    "seeAllTools": "Вижте всички инструменти",
+    "carouselLabel": "Въртележка с инструменти",
+    "scrollLeft": "Превъртане наляво",
+    "scrollRight": "Превъртане надясно",
+    "carouselNavigation": "Навигация на въртележката",
+    "goToSlide": "Отиване на слайд",
+    "of": "от",
+    "slide": "Слайд",
+    "tool": "Инструмент",
+    "openTool": "Отваряне на инструмент"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Превключване на български",
+    "toggleLabel": "Промяна на езика",
+    "chooseLabel": "Изберете език",
+    "popularLabel": "Популярни",
+    "otherLabel": "Други",
+    "closeModalLabel": "Затваряне"
+  },
+  "mobileNav": { "close": "Затваряне", "services": "Услуги", "contact": "Контакт" },
+  "infoBanner": {
+    "text": "Актуализация на генератора за подпис на имейл – вижте новите функции",
+    "linkText": "инструменти"
+  }
+}

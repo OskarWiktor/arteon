@@ -32,6 +32,11 @@ import skPt from '@/data/sk/tools-ui/word-count-page-types.json';
 import hrPt from '@/data/hr/tools-ui/word-count-page-types.json';
 import ltPt from '@/data/lt/tools-ui/word-count-page-types.json';
 import slPt from '@/data/sl/tools-ui/word-count-page-types.json';
+import elPt from '@/data/el/tools-ui/word-count-page-types.json';
+import bgPt from '@/data/bg/tools-ui/word-count-page-types.json';
+import haPt from '@/data/ha/tools-ui/word-count-page-types.json';
+import yoPt from '@/data/yo/tools-ui/word-count-page-types.json';
+import afPt from '@/data/af/tools-ui/word-count-page-types.json';
 
 const PAGE_TYPES: Record<Locale, PageTypeConfig[]> = {
   pl: plPt as PageTypeConfig[],
@@ -60,6 +65,11 @@ const PAGE_TYPES: Record<Locale, PageTypeConfig[]> = {
   hr: hrPt as PageTypeConfig[],
   lt: ltPt as PageTypeConfig[],
   sl: slPt as PageTypeConfig[],
+  el: elPt as PageTypeConfig[],
+  bg: bgPt as PageTypeConfig[],
+  ha: haPt as PageTypeConfig[],
+  yo: yoPt as PageTypeConfig[],
+  af: afPt as PageTypeConfig[],
 };
 
 export function getPageTypes(locale: Locale): PageTypeConfig[] {
@@ -795,6 +805,145 @@ const EVAL_UI: Record<Locale, EvalUi> = {
       statusShort: '\u26a0\ufe0f Prekratko',
       statusLong: '\u26a0\ufe0f Predolgo',
       generatedBy: 'Ustvarjeno: arteonagency.pl/sl/orodja/stevec-besed-in-znakov',
+    },
+  },
+  el: {
+    wordsUnit: '\u03bb\u03ad\u03be\u03b5\u03b9\u03c2',
+    emptyMessage:
+      '\u0395\u03c0\u03b9\u03ba\u03bf\u03bb\u03bb\u03ae\u03c3\u03c4\u03b5 \u03ae \u03c0\u03bb\u03b7\u03ba\u03c4\u03c1\u03bf\u03bb\u03bf\u03b3\u03ae\u03c3\u03c4\u03b5 \u03ba\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03b3\u03b9\u03b1 \u03bd\u03b1 \u03b4\u03b5\u03af\u03c4\u03b5 \u03c4\u03b7\u03bd \u03b1\u03bd\u03ac\u03bb\u03c5\u03c3\u03b7.',
+    tooShort: (min, unit, missing) =>
+      `\u03a4\u03bf \u03ba\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03b5\u03af\u03bd\u03b1\u03b9 \u03ba\u03ac\u03c4\u03c9 \u03b1\u03c0\u03cc \u03c4\u03bf \u03ba\u03b1\u03c4\u03ac \u03c0\u03c1\u03bf\u03c3\u03ad\u03b3\u03b3\u03b9\u03c3\u03b7 \u03b5\u03bb\u03ac\u03c7\u03b9\u03c3\u03c4\u03bf (${min} ${unit}). \u0391\u03bd \u03c4\u03bf \u03b8\u03ad\u03bc\u03b1 \u03ba\u03b1\u03bb\u03cd\u03c0\u03c4\u03b5\u03c4\u03b1\u03b9 \u2013 \u03bc\u03c0\u03bf\u03c1\u03b5\u03af \u03bd\u03b1 \u03b1\u03c1\u03ba\u03b5\u03af. \u039b\u03b5\u03af\u03c0\u03bf\u03c5\u03bd \u03c0\u03b5\u03c1\u03af\u03c0\u03bf\u03c5 ${missing} ${unit}.`,
+    tooLong: (excess, unit) =>
+      `\u03a4\u03bf \u03ba\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03c5\u03c0\u03b5\u03c1\u03b2\u03b1\u03af\u03bd\u03b5\u03b9 \u03c4\u03bf \u03ba\u03b1\u03c4\u03ac \u03c0\u03c1\u03bf\u03c3\u03ad\u03b3\u03b3\u03b9\u03c3\u03b7 \u03bc\u03ad\u03b3\u03b9\u03c3\u03c4\u03bf \u03ba\u03b1\u03c4\u03ac ${excess} ${unit}. \u0391\u03bd \u03ba\u03ac\u03b8\u03b5 \u03c0\u03c1\u03cc\u03c4\u03b1\u03c3\u03b7 \u03c0\u03c1\u03bf\u03c3\u03b8\u03ad\u03c4\u03b5\u03b9 \u03b1\u03be\u03af\u03b1 \u2013 \u03c4\u03bf \u03bc\u03ae\u03ba\u03bf\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03b4\u03b9\u03ba\u03b1\u03b9\u03bf\u03bb\u03bf\u03b3\u03b7\u03bc\u03ad\u03bd\u03bf.`,
+    idealInRange:
+      '\u03a4\u03bf \u03bc\u03ae\u03ba\u03bf\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03b5\u03bd\u03c4\u03cc\u03c2 \u03c4\u03bf\u03c5 \u03c3\u03c5\u03bd\u03b9\u03c3\u03c4\u03ce\u03bc\u03b5\u03bd\u03bf\u03c5 \u03b5\u03cd\u03c1\u03bf\u03c5\u03c2. \u0397 \u03b1\u03be\u03af\u03b1 \u03b3\u03b9\u03b1 \u03c4\u03bf\u03bd \u03b1\u03bd\u03b1\u03b3\u03bd\u03ce\u03c3\u03c4\u03b7 \u03b5\u03af\u03bd\u03b1\u03b9 \u03ba\u03bb\u03b5\u03b9\u03b4\u03af.',
+    idealGoodLength: (label) =>
+      `\u039a\u03b1\u03bb\u03cc \u03bc\u03ae\u03ba\u03bf\u03c2 \u03b3\u03b9\u03b1 ${label.toLowerCase()}. \u039a\u03ac\u03b8\u03b5 \u03c0\u03b1\u03c1\u03ac\u03b3\u03c1\u03b1\u03c6\u03bf\u03c2 \u03c0\u03c1\u03ad\u03c0\u03b5\u03b9 \u03bd\u03b1 \u03c0\u03c1\u03bf\u03c3\u03c6\u03ad\u03c1\u03b5\u03b9 \u03c3\u03c5\u03b3\u03ba\u03b5\u03ba\u03c1\u03b9\u03bc\u03ad\u03bd\u03b7 \u03b1\u03be\u03af\u03b1.`,
+    readingTime: (m) => (m === 1 ? '1 \u03bb\u03b5\u03c0\u03c4\u03cc' : `${m} \u03bb\u03b5\u03c0\u03c4\u03ac`),
+    report: {
+      title: '\ud83d\udcca \u0391\u039d\u0391\u03a6\u039f\u03a1\u0391 \u039c\u0397\u039a\u039f\u03a5\u03a3 \u039a\u0395\u0399\u039c\u0395\u039d\u039f\u03a5',
+      pageType: '\u03a4\u03cd\u03c0\u03bf\u03c2 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1\u03c2',
+      range: '\u03a3\u03c5\u03bd\u03b9\u03c3\u03c4\u03ce\u03bc\u03b5\u03bd\u03bf \u03b5\u03cd\u03c1\u03bf\u03c2',
+      statistics: '\ud83d\udcdd \u03a3\u03a4\u0391\u03a4\u0399\u03a3\u03a4\u0399\u039a\u0391:',
+      words: '\u039b\u03ad\u03be\u03b5\u03b9\u03c2',
+      charsWithSpaces: '\u03a7\u03b1\u03c1\u03b1\u03ba\u03c4\u03ae\u03c1\u03b5\u03c2 (\u03bc\u03b5 \u03ba\u03b5\u03bd\u03ac)',
+      charsWithoutSpaces: '\u03a7\u03b1\u03c1\u03b1\u03ba\u03c4\u03ae\u03c1\u03b5\u03c2 (\u03c7\u03c9\u03c1\u03af\u03c2 \u03ba\u03b5\u03bd\u03ac)',
+      paragraphs: '\u03a0\u03b1\u03c1\u03ac\u03b3\u03c1\u03b1\u03c6\u03bf\u03b9',
+      readingTime: '\u03a7\u03c1\u03cc\u03bd\u03bf\u03c2 \u03b1\u03bd\u03ac\u03b3\u03bd\u03c9\u03c3\u03b7\u03c2',
+      evaluation: '\ud83d\udcc8 \u0391\u039e\u0399\u039f\u039b\u039f\u0393\u0397\u03a3\u0397',
+      statusIdeal: '\u2705 \u039a\u03b1\u03bb\u03cc \u03bc\u03ae\u03ba\u03bf\u03c2',
+      statusShort: '\u26a0\ufe0f \u03a0\u03bf\u03bb\u03cd \u03ba\u03bf\u03bd\u03c4\u03cc',
+      statusLong: '\u26a0\ufe0f \u03a0\u03bf\u03bb\u03cd \u03bc\u03b1\u03ba\u03c1\u03cd',
+      generatedBy: '\u0394\u03b7\u03bc\u03b9\u03bf\u03c5\u03c1\u03b3\u03ae\u03b8\u03b7\u03ba\u03b5 \u03b1\u03c0\u03cc: arteonagency.pl/el/ergaleia/metritis-lexeon-kai-charaktiron',
+    },
+  },
+  bg: {
+    wordsUnit: '\u0434\u0443\u043c\u0438',
+    emptyMessage:
+      '\u041f\u043e\u0441\u0442\u0430\u0432\u0435\u0442\u0435 \u0438\u043b\u0438 \u0432\u044a\u0432\u0435\u0434\u0435\u0442\u0435 \u0442\u0435\u043a\u0441\u0442, \u0437\u0430 \u0434\u0430 \u0432\u0438\u0434\u0438\u0442\u0435 \u0430\u043d\u0430\u043b\u0438\u0437\u0430.',
+    tooShort: (min, unit, missing) =>
+      `\u0422\u0435\u043a\u0441\u0442\u044a\u0442 \u0435 \u043f\u043e\u0434 \u043f\u0440\u0438\u0431\u043b\u0438\u0437\u0438\u0442\u0435\u043b\u043d\u0438\u044f \u043c\u0438\u043d\u0438\u043c\u0443\u043c (${min} ${unit}). \u0410\u043a\u043e \u0442\u0435\u043c\u0430\u0442\u0430 \u0435 \u043f\u043e\u043a\u0440\u0438\u0442\u0430 \u2013 \u043c\u043e\u0436\u0435 \u0434\u0430 \u0435 \u0434\u043e\u0441\u0442\u0430\u0442\u044a\u0447\u043d\u043e. \u041b\u0438\u043f\u0441\u0432\u0430\u0442 \u043e\u043a\u043e\u043b\u043e ${missing} ${unit}.`,
+    tooLong: (excess, unit) =>
+      `\u0422\u0435\u043a\u0441\u0442\u044a\u0442 \u043f\u0440\u0435\u0432\u0438\u0448\u0430\u0432\u0430 \u043f\u0440\u0438\u0431\u043b\u0438\u0437\u0438\u0442\u0435\u043b\u043d\u0438\u044f \u043c\u0430\u043a\u0441\u0438\u043c\u0443\u043c \u0441 ${excess} ${unit}. \u0410\u043a\u043e \u0432\u0441\u044f\u043a\u043e \u0438\u0437\u0440\u0435\u0447\u0435\u043d\u0438\u0435 \u043d\u043e\u0441\u0438 \u0441\u0442\u043e\u0439\u043d\u043e\u0441\u0442 \u2013 \u0434\u044a\u043b\u0436\u0438\u043d\u0430\u0442\u0430 \u0435 \u043e\u043f\u0440\u0430\u0432\u0434\u0430\u043d\u0430.`,
+    idealInRange:
+      '\u0414\u044a\u043b\u0436\u0438\u043d\u0430\u0442\u0430 \u0435 \u0432 \u043f\u0440\u0435\u043f\u043e\u0440\u044a\u0447\u0438\u0442\u0435\u043b\u043d\u0438\u044f \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d. \u0421\u0442\u043e\u0439\u043d\u043e\u0441\u0442\u0442\u0430 \u0437\u0430 \u0447\u0438\u0442\u0430\u0442\u0435\u043b\u044f \u0435 \u043a\u043b\u044e\u0447\u043e\u0432\u0430.',
+    idealGoodLength: (label) =>
+      `\u0414\u043e\u0431\u0440\u0430 \u0434\u044a\u043b\u0436\u0438\u043d\u0430 \u0437\u0430 ${label.toLowerCase()}. \u0412\u0441\u0435\u043a\u0438 \u0430\u0431\u0437\u0430\u0446 \u0442\u0440\u044f\u0431\u0432\u0430 \u0434\u0430 \u043d\u043e\u0441\u0438 \u043a\u043e\u043d\u043a\u0440\u0435\u0442\u043d\u0430 \u0441\u0442\u043e\u0439\u043d\u043e\u0441\u0442.`,
+    readingTime: (m) => (m === 1 ? '1 \u043c\u0438\u043d\u0443\u0442\u0430' : `${m} \u043c\u0438\u043d\u0443\u0442\u0438`),
+    report: {
+      title: '\ud83d\udcca \u0414\u041e\u041a\u041b\u0410\u0414 \u0417\u0410 \u0414\u042a\u041b\u0416\u0418\u041d\u0410 \u041d\u0410 \u0422\u0415\u041a\u0421\u0422\u0410',
+      pageType: '\u0422\u0438\u043f \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430',
+      range: '\u041f\u0440\u0435\u043f\u043e\u0440\u044a\u0447\u0438\u0442\u0435\u043b\u0435\u043d \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d',
+      statistics: '\ud83d\udcdd \u0421\u0422\u0410\u0422\u0418\u0421\u0422\u0418\u041a\u0410:',
+      words: '\u0414\u0443\u043c\u0438',
+      charsWithSpaces: '\u0417\u043d\u0430\u0446\u0438 (\u0441 \u0438\u043d\u0442\u0435\u0440\u0432\u0430\u043b\u0438)',
+      charsWithoutSpaces: '\u0417\u043d\u0430\u0446\u0438 (\u0431\u0435\u0437 \u0438\u043d\u0442\u0435\u0440\u0432\u0430\u043b\u0438)',
+      paragraphs: '\u0410\u0431\u0437\u0430\u0446\u0438',
+      readingTime: '\u0412\u0440\u0435\u043c\u0435 \u0437\u0430 \u0447\u0435\u0442\u0435\u043d\u0435',
+      evaluation: '\ud83d\udcc8 \u041e\u0426\u0415\u041d\u041a\u0410',
+      statusIdeal: '\u2705 \u0414\u043e\u0431\u0440\u0430 \u0434\u044a\u043b\u0436\u0438\u043d\u0430',
+      statusShort: '\u26a0\ufe0f \u041f\u0440\u0435\u043a\u0430\u043b\u0435\u043d\u043e \u043a\u044a\u0441\u043e',
+      statusLong: '\u26a0\ufe0f \u041f\u0440\u0435\u043a\u0430\u043b\u0435\u043d\u043e \u0434\u044a\u043b\u0433\u043e',
+      generatedBy: '\u0413\u0435\u043d\u0435\u0440\u0438\u0440\u0430\u043d\u043e \u043e\u0442: arteonagency.pl/bg/instrumenti/broiach-na-dumi-i-simvoli',
+    },
+  },
+  ha: {
+    wordsUnit: 'kalmomi',
+    emptyMessage: 'Manna ko rubuta rubutu don ganin nazari.',
+    tooShort: (min, unit, missing) => `Rubutu yana kasa da mafi karancin da ake tsammani (${min} ${unit}). Idan an rufe batun \u2013 watakila ya isa. Akwai ragi kusan ${missing} ${unit}.`,
+    tooLong: (excess, unit) => `Rubutu ya wuce mafi girman da ake tsammani da ${excess} ${unit}. Idan kowace jimla tana da daraja \u2013 tsawon yana da hujja.`,
+    idealInRange: 'Tsawon yana cikin kewayon da aka ba da shawarar. Darajar ga mai karatu ita ce mabudin.',
+    idealGoodLength: (label) => `Kyakkyawan tsawo don ${label.toLowerCase()}. Kowace sakin layi ya kamata ta ba da wata daraja ga mai karatu.`,
+    readingTime: (m) => (m === 1 ? 'Minti 1' : `Mintuna ${m}`),
+    report: {
+      title: '\ud83d\udcca RAHOTON TSAWON RUBUTU',
+      pageType: "Nau'in shafi",
+      range: 'Kewayon da aka ba da shawarar',
+      statistics: '\ud83d\udcdd KIDIDDIGA:',
+      words: 'Kalmomi',
+      charsWithSpaces: 'Haruffa (tare da sarari)',
+      charsWithoutSpaces: 'Haruffa (ba tare da sarari ba)',
+      paragraphs: 'Sakin layi',
+      readingTime: 'Lokacin karatu',
+      evaluation: '\ud83d\udcc8 KIMANTAWA',
+      statusIdeal: '\u2705 Kyakkyawan tsawo',
+      statusShort: '\u26a0\ufe0f Gajere sosai',
+      statusLong: '\u26a0\ufe0f Doguwa sosai',
+      generatedBy: 'An samar da shi: arteonagency.pl/ha/kayan-aiki/kidaya-kalmomi-da-haruffa',
+    },
+  },
+  yo: {
+    wordsUnit: '\u1ecdr\u1ecd',
+    emptyMessage: 'L\u00e8 tabi t\u1eb9 \u1ecdr\u1ecd lati ri \u00e0t\u00fap\u00e0l\u1eb9\u0300.',
+    tooShort: (min, unit, missing) =>
+      `\u1ecdr\u1ecd k\u00f9r\u00fa j\u00f9 \u00ecw\u1ecdnt\u00fan\u00ecw\u1ecdns\u00ec t\u00ed a \u015b\u00e0y\u1eb9\u0300w\u00f2 (${min} ${unit}). T\u00ed \u00e0k\u00f3r\u00ed b\u00e1 t\u00ed b\u00f2 \u2013 \u00f3 l\u00e8 t\u00f3. \u00d3 k\u00f9 n\u00ed\u00eckan ${missing} ${unit}.`,
+    tooLong: (excess, unit) =>
+      `\u1ecdr\u1ecd p\u1ecd j\u00f9 \u00ecw\u1ecdnt\u00fan\u00ecw\u1ecdns\u00ec n\u00ed ${excess} ${unit}. T\u00ed gb\u00f3gb\u00f3 gb\u00f3l\u00f3h\u00f9n b\u00e1 \u00fan \u00ecy\u00ed \u2013 g\u00edg\u00f9n n\u00e1\u00e0 t\u1ecd\u0301.`,
+    idealInRange:
+      'G\u00edg\u00f9n w\u00e0 l\u00e1\u00e0r\u00ecn \u00ecw\u1ecdnt\u00fan\u00ecw\u1ecdns\u00ec t\u00ed a \u015b\u00e0b\u00e0. \u00ccy\u00ed f\u00fan ol\u00f9k\u00e0 ni p\u00e0t\u00e0k\u00ec.',
+    idealGoodLength: (label) =>
+      `G\u00edg\u00f9n t\u00f3 d\u00e1ra f\u00fan ${label.toLowerCase()}. Gb\u00f3gb\u00f3 \u00ec\u00fap\u00ecn y\u1eb9 k\u00ed \u00f3 m\u00fa \u00ecy\u00ed w\u00e1 f\u00fan ol\u00f9k\u00e0.`,
+    readingTime: (m) => (m === 1 ? '\u00ccs\u1eb9\u0301j\u00fa 1' : `\u00ccs\u1eb9\u0301j\u00fa ${m}`),
+    report: {
+      title: '\ud83d\udcca \u00ccJ\u00c1B\u1ecc\u0300 G\u00cdG\u00d9N \u1eccR\u1ecc',
+      pageType: 'Ir\u00fa oj\u00fa-\u00ecw\u00e9',
+      range: '\u00ccw\u1ecdnt\u00fan\u00ecw\u1ecdns\u00ec t\u00ed a \u015b\u00e0b\u00e0',
+      statistics: '\ud83d\udcdd \u00ccD\u00cdY\u00c9L\u00c9:',
+      words: '\u1eccr\u1ecd',
+      charsWithSpaces: 'L\u1eb9\u0301t\u00e0 (\u00e0ti \u00e0l\u00e0f\u00f3)',
+      charsWithoutSpaces: 'L\u1eb9\u0301t\u00e0 (l\u00e1\u00ecl\u00e1\u00ec \u00e0l\u00e0f\u00f3)',
+      paragraphs: '\u00ccpin',
+      readingTime: '\u00c0k\u00f3k\u00f2 k\u00edk\u00e0',
+      evaluation: '\ud83d\udcc8 \u00c0Y\u1eb8\u0300W\u00d2',
+      statusIdeal: '\u2705 G\u00edg\u00f9n t\u00f3 d\u00e1ra',
+      statusShort: '\u26a0\ufe0f K\u00far\u00fa j\u00f9',
+      statusLong: '\u26a0\ufe0f Gun j\u00f9',
+      generatedBy: '\u1e62\u00e8d\u00e1 n\u00edp\u0430s\u1eb9\u0300: arteonagency.pl/yo/awon-irinse/oluka-oro-ati-ohun-kikoo',
+    },
+  },
+  af: {
+    wordsUnit: 'woorde',
+    emptyMessage: 'Plak of tik teks om die ontleding te sien.',
+    tooShort: (min, unit, missing) => `Teks is onder die benaderde minimum (${min} ${unit}). As die onderwerp gedek is \u2013 kan dit genoeg wees. Ongeveer ${missing} ${unit} kort.`,
+    tooLong: (excess, unit) => `Teks oorskry die benaderde maksimum met ${excess} ${unit}. As elke sin waarde toevoeg \u2013 is die lengte geregverdig.`,
+    idealInRange: 'Lengte is binne die aanbevole reeks. Waarde vir die leser is die sleutel.',
+    idealGoodLength: (label) => `Goeie lengte vir ${label.toLowerCase()}. Elke paragraaf behoort konkrete waarde vir die leser te bied.`,
+    readingTime: (m) => (m === 1 ? '1 minuut' : `${m} minute`),
+    report: {
+      title: '\ud83d\udcca TEKSLENGTEVERSLAG',
+      pageType: 'Bladsytipe',
+      range: 'Aanbevole reeks',
+      statistics: '\ud83d\udcdd STATISTIEKE:',
+      words: 'Woorde',
+      charsWithSpaces: 'Karakters (met spasies)',
+      charsWithoutSpaces: 'Karakters (sonder spasies)',
+      paragraphs: 'Paragrawe',
+      readingTime: 'Leestyd',
+      evaluation: '\ud83d\udcc8 EVALUERING',
+      statusIdeal: '\u2705 Goeie lengte',
+      statusShort: '\u26a0\ufe0f Te kort',
+      statusLong: '\u26a0\ufe0f Te lank',
+      generatedBy: 'Gegenereer deur: arteonagency.pl/af/gereedskap/woord-en-karakter-teller',
     },
   },
 };

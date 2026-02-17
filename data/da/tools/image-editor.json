@@ -2,7 +2,7 @@
   "toolKey": "imageResize",
   "locale": "da",
   "metadata": {
-    "title": "Gratis billedredigering – Beskær og tilpas til sociale medier",
+    "title": "Gratis billedredigering – Beskær til sociale medier",
     "description": "Beskær og tilpas billeder til Instagram, Facebook, LinkedIn og mere. Vælg et færdigt format eller indtast egne mål. Uden registrering, uden begrænsninger.",
     "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
     "path": "/da/vaerktojer/billedrediger"
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/da/vaerktojer", "label": "Værktøjer" },
-    "third": { "href": "/da/vaerktojer/billedrediger", "label": "Billedredigering" }
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/billedrediger",
+      "label": "Billedredigering"
+    }
   },
   "schemas": {
     "software": {
@@ -38,61 +44,144 @@
       "description": "Sådan beskærer du et billede til ethvert billedformat og ændrer dets størrelse til sociale medier eller web.",
       "totalTime": "PT2M",
       "steps": [
-        { "name": "Upload billede", "text": "Træk og slip filen i det markerede område, eller vælg den fra din enhed." },
-        { "name": "Vælg billedformat", "text": "Vælg et færdigt format til en specifik platform, eller indtast egne mål." },
-        { "name": "Justér beskæringsområdet", "text": "Flyt og ændr størrelsen på beskæringsrammen for at vælge den ønskede del af billedet." },
-        { "name": "Download resultatet", "text": "Klik på download-knappen for at få det beskårne billede i PNG- eller JPG-format." }
+        {
+          "name": "Upload billede",
+          "text": "Træk og slip filen i det markerede område, eller vælg den fra din enhed."
+        },
+        {
+          "name": "Vælg billedformat",
+          "text": "Vælg et færdigt format til en specifik platform, eller indtast egne mål."
+        },
+        {
+          "name": "Justér beskæringsområdet",
+          "text": "Flyt og ændr størrelsen på beskæringsrammen for at vælge den ønskede del af billedet."
+        },
+        {
+          "name": "Download resultatet",
+          "text": "Klik på download-knappen for at få det beskårne billede i PNG- eller JPG-format."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Hvorfor er det vigtigt at beskære billeder til det rigtige billedformat?",
       "html": "<p class=\"text-mid\">Hver platform har sine egne krav til billedmål. Et profilbillede på Instagram er kvadratisk (1:1), et Facebook-cover er bredt (820×312 px), og et YouTube-thumbnail er 16:9. Upload af et billede med forkert billedformat fører til automatisk beskæring – som ofte fjerner en vigtig del af billedet.</p><p class=\"text-mid mt-3\">Denne redigering lader dig forberede et billede med det rigtige billedformat inden upload. Vælg et færdigt format eller indtast egne mål og få et nøjagtigt beskåret billede.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Sådan bruger du billedredigeringen",
       "description": "Beskæring og størrelsesændring tager kun et par minutter:",
       "grid": "four",
       "items": [
-        { "icon": "RiUploadLine", "title": "1. Upload billede", "description": "Træk og slip filen i det markerede område, eller vælg den fra din enhed. Understøttede formater er JPG, PNG og WebP." },
-        { "icon": "RiCropLine", "title": "2. Vælg billedformat", "description": "Vælg et færdigt format til en specifik platform (Instagram, Facebook, LinkedIn, YouTube) eller indtast egne mål." },
-        { "icon": "RiDragMoveLine", "title": "3. Justér området", "description": "Flyt og ændr størrelsen på beskæringsrammen. Billedet vises i realtid, så du ser resultatet med det samme." },
-        { "icon": "RiDownloadLine", "title": "4. Download resultatet", "description": "Klik på download-knappen. Det beskårne billede er tilgængeligt i PNG- eller JPG-format." }
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Upload billede",
+          "description": "Træk og slip filen i det markerede område, eller vælg den fra din enhed. Understøttede formater er JPG, PNG og WebP."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "2. Vælg billedformat",
+          "description": "Vælg et færdigt format til en specifik platform (Instagram, Facebook, LinkedIn, YouTube) eller indtast egne mål."
+        },
+        {
+          "icon": "RiDragMoveLine",
+          "title": "3. Justér området",
+          "description": "Flyt og ændr størrelsen på beskæringsrammen. Billedet vises i realtid, så du ser resultatet med det samme."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Download resultatet",
+          "description": "Klik på download-knappen. Det beskårne billede er tilgængeligt i PNG- eller JPG-format."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Færdige formater til sociale medier",
       "description": "Redigeringen tilbyder færdige formater til de mest populære platforme:",
       "grid": "three",
       "items": [
-        { "icon": "RiInstagramLine", "title": "Instagram", "description": "Kvadrat (1:1), story og reels (9:16), landskab (1.91:1), portræt (4:5)." },
-        { "icon": "RiFacebookLine", "title": "Facebook", "description": "Cover (820×312), opslag (1200×630), story (1080×1920), profilbillede (1:1)." },
-        { "icon": "RiLinkedinLine", "title": "LinkedIn", "description": "Cover (1584×396), opslag (1200×1200), profilbillede (1:1)." },
-        { "icon": "RiYoutubeLine", "title": "YouTube", "description": "Thumbnail (1280×720), kanalbanner (2560×1440)." },
-        { "icon": "RiTwitterXLine", "title": "X (Twitter)", "description": "Opslag (1600×900), header (1500×500), profilbillede (1:1)." },
-        { "icon": "RiImageLine", "title": "Brugerdefineret", "description": "Indtast enhver bredde og højde i pixels, eller vælg ethvert billedformat." }
+        {
+          "icon": "RiInstagramLine",
+          "title": "Instagram",
+          "description": "Kvadrat (1:1), story og reels (9:16), landskab (1.91:1), portræt (4:5)."
+        },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook",
+          "description": "Cover (820×312), opslag (1200×630), story (1080×1920), profilbillede (1:1)."
+        },
+        {
+          "icon": "RiLinkedinLine",
+          "title": "LinkedIn",
+          "description": "Cover (1584×396), opslag (1200×1200), profilbillede (1:1)."
+        },
+        {
+          "icon": "RiYoutubeLine",
+          "title": "YouTube",
+          "description": "Thumbnail (1280×720), kanalbanner (2560×1440)."
+        },
+        {
+          "icon": "RiTwitterXLine",
+          "title": "X (Twitter)",
+          "description": "Opslag (1600×900), header (1500×500), profilbillede (1:1)."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Brugerdefineret",
+          "description": "Indtast enhver bredde og højde i pixels, eller vælg ethvert billedformat."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hvem har brug for en billedredigering?",
       "grid": "two",
       "items": [
-        { "icon": "RiMegaphoneLine", "title": "Sociale medie-ansvarlige", "description": "Forbered billeder med det rigtige billedformat til hver platform uden at have brug for grafisk software." },
-        { "icon": "RiShoppingBagLine", "title": "E-handelsejere", "description": "Beskær produktbilleder til det samme billedformat for et professionelt udseende i katalogerne." },
-        { "icon": "RiBloggerLine", "title": "Bloggere", "description": "Forbered headerbilleder og fotos til artikler med det rigtige billedformat." },
-        { "icon": "RiCodeLine", "title": "Webudviklere", "description": "Beskær hurtigt billeder til egne mål uden at åbne grafisk software." }
+        {
+          "icon": "RiMegaphoneLine",
+          "title": "Sociale medie-ansvarlige",
+          "description": "Forbered billeder med det rigtige billedformat til hver platform uden at have brug for grafisk software."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "E-handelsejere",
+          "description": "Beskær produktbilleder til det samme billedformat for et professionelt udseende i katalogerne."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Bloggere",
+          "description": "Forbered headerbilleder og fotos til artikler med det rigtige billedformat."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Webudviklere",
+          "description": "Beskær hurtigt billeder til egne mål uden at åbne grafisk software."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om billedredigeringen",
@@ -120,8 +209,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Udforsk flere værktøjer" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Udforsk flere værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

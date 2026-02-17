@@ -26,5 +26,10 @@ import sk from '@/data/sk/tools-ui/qr-code.json';
 import hr from '@/data/hr/tools-ui/qr-code.json';
 import lt from '@/data/lt/tools-ui/qr-code.json';
 import sl from '@/data/sl/tools-ui/qr-code.json';
+import el from '@/data/el/tools-ui/qr-code.json';
+import bg from '@/data/bg/tools-ui/qr-code.json';
+import ha from '@/data/ha/tools-ui/qr-code.json';
+import yo from '@/data/yo/tools-ui/qr-code.json';
+import af from '@/data/af/tools-ui/qr-code.json';
 
-export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, id, vi, tr, tl, sw, ms, cs, sv, sq, da, no, fi, sk, hr, lt, sl } as const satisfies Record<Locale, unknown>;
+export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, id, vi, tr, tl, sw, ms, cs, sv, sq, da, no, fi, sk, hr, lt, sl, el, bg, ha, yo, af } as const satisfies Record<Locale, unknown>;

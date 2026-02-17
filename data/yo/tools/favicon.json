@@ -1,0 +1,334 @@
+{
+  "toolKey": "favicon",
+  "locale": "yo",
+  "metadata": {
+    "title": "Free Favicon Generator – Create favicon.ico From Any Image",
+    "description": "Create favicon.ico and a complete favicon set for your website from a single image. All required sizes in one click. Runs locally in your browser.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
+    "path": "/yo/awon-irinse/olupilese-favicon-ofe"
+  },
+  "hero": {
+    "title": "Favicon Generator – Create favicon.ico for Free",
+    "description": "Generate favicon.ico and a complete set of PNG icons for your website from a single image. All processing happens locally in the browser.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/yo/awon-irinse",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/yo/awon-irinse/olupilese-favicon-ofe",
+      "label": "Favicon generator"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Favicon generator online - free icon creator for websites",
+      "alternateName": ["Favicon.ico and PNG icon generator"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "IconGenerator",
+      "description": "Free online favicon generator. Create favicon.ico and PNG icons 16x16, 32x32, 180x180, 192x192, and 512x512 without limits and without sending files to a server. Processing happens locally in the browser.",
+      "featureList": [
+        "Generate favicon.ico (16x16, 32x32, 48x48 in one file)",
+        "Generate PNG icons 16x16 and 32x32",
+        "Generate apple-touch-icon 180x180",
+        "Generate PWA icons 192x192 and 512x512",
+        "Support for PNG, JPG, and SVG source images",
+        "Background color configuration",
+        "Generate manifest.json file for PWA",
+        "Download all files as ZIP",
+        "Download individual files",
+        "Lighthouse compliance",
+        "Browser-based processing (files are not sent to a server)",
+        "Free tool, no login required"
+      ]
+    },
+    "howTo": {
+      "name": "How to create a favicon for a website",
+      "description": "How to generate favicon.ico and PNG icons (16x16, 32x32, 180x180, 512x512) from a single image. What sizes are needed and how to add favicon to WordPress, HTML, and Next.js.",
+      "steps": [
+        {
+          "name": "Add a source image",
+          "text": "Drag a file onto the designated area or select a graphic from your device. A simple logo or icon in PNG, JPG, or SVG format works best."
+        },
+        {
+          "name": "Choose icon sizes",
+          "text": "Select which icon sizes you need: favicon.ico (32x32), PNG icons (16x16, 32x32, 180x180, 192x192, 512x512)."
+        },
+        {
+          "name": "Configure options",
+          "text": "Set the background color (or keep transparent), decide whether to generate a manifest file, and whether files should auto-download."
+        },
+        {
+          "name": "Generate and download files",
+          "text": "After generation, files can be downloaded as a ZIP archive or each icon individually."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What is a favicon and why should you have one?",
+      "html": "<p class=\"mb-4\">A favicon is a small icon that appears on the browser tab next to the page title. You also see it in bookmarks, browsing history, and on the phone home screen when someone adds the site as a shortcut.</p><p class=\"mb-4\">This small graphic serves an important function - it helps users quickly recognize a site among many open tabs. When someone has a dozen tabs open in the browser, the favicon is often the only visible element identifying the site.</p><p>The generator creates a complete icon set: a classic favicon.ico file for browsers, PNG icons in various sizes, and an apple-touch-icon for Apple devices. If you are building a web app (PWA), you can also generate 192x192 and 512x512 icons along with a manifest file.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to create a favicon in 3 steps",
+      "description": "Generating a favicon takes just a few seconds:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Add an image",
+          "description": "Drag a file onto the designated area or select a graphic from your device. Supported formats: PNG, JPG, SVG. Recommended size: min. 512×512 pixels."
+        },
+        {
+          "title": "2. Choose sizes",
+          "description": "Select the icon sizes you need. For a regular website: favicon.ico, 32×32, and 180×180. For PWA, add 192×192 and 512×512."
+        },
+        {
+          "title": "3. Download files",
+          "description": "After generating, download all files as a ZIP or each icon individually. Below the tool you will find instructions on how to add the favicon to your site."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What icon sizes does the tool generate?",
+      "html": "<p class=\"mb-6\">Each size has its use:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Classic format recognized by all browsers. Displays on the browser tab.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16×16 and 32×32 PNG</p><p class=\"text-mid text-sm\">Standard sizes for modern browsers. Display on tabs and in bookmarks.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180×180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Icon for Apple devices (iPhone, iPad). Displays when someone adds the site to their home screen.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192×192 and 512×512 PNG</p><p class=\"text-mid text-sm\">Icons for web apps (PWA). Required by the manifest and used in app stores.</p></div></div><p class=\"text-light mt-6\">If you are not building a PWA, you only need: favicon.ico, 32×32 PNG, and 180×180 PNG. These three files cover most use cases.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes the favicon generator special?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy - files never leave your computer",
+          "description": "All operations are performed locally in the browser. The image is not sent to any server. After closing the page, all data is cleared."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Complete set in one place",
+          "description": "Favicon.ico, PNG icons, apple-touch-icon, PWA icons, and manifest - all from one image, in one tool."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "PNG, JPG, and SVG support",
+          "description": "You can use a logo in any format. If you have SVG - icons will be sharp in all sizes."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Ready for website and PWA use",
+          "description": "The tool generates a manifest.json file for web apps. Below you will find instructions for integrating the icons."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to use the favicon generator",
+      "description": "Generating a favicon is a few simple steps:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Add source image",
+          "description": "Drag a file onto the designated area or select a graphic from your device. Supported formats: PNG, JPG, SVG. A simple logo or icon at least 512×512 pixels works best."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "2. Choose icon sizes",
+          "description": "Select which icon sizes you need. You can select all or only some. For a regular website: favicon.ico, 32×32, and 180×180."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "3. Configure generation options",
+          "description": "Set additional options: background (transparent or chosen color), manifest (PWA configuration file), and auto-download."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Generate and download files",
+          "description": "After starting generation, the tool processes the image locally - nothing is sent to a server. Download all files as a ZIP archive or individual icons separately."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Generation options - what does each one do?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">PNG sizes</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">16×16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">32×32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">180×180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span class=\"text-mid text-sm!\">Transparent background (PNG/ICO)</span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Background (transparent or color)</h3><p class=\"text-mid\">By default, the generator preserves transparency. You can also choose a specific background color.</p></div><div><h3 class=\"h5 mb-2\">Generate manifest (site.webmanifest)</h3><p class=\"text-mid\">A JSON file for web apps (PWA). If you are not building a PWA, this option is not required.</p></div></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to download generated files",
+      "description": "After generating icons, you have several download options:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFolderZipLine",
+          "title": "Download all as ZIP",
+          "description": "The &quot;Download all&quot; button packs all generated files into a single ZIP archive. This is the most convenient option when you need the full icon set."
+        },
+        {
+          "icon": "RiFileDownloadLine",
+          "title": "Download individual files",
+          "description": "Each generated icon has its own download button - you can download a single file without downloading the entire set. Useful when only one size needs updating."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTabs",
+      "title": "Where and how to add a favicon",
+      "tabs": [
+        {
+          "title": "WordPress",
+          "icon": "RiWordpressLine",
+          "html": "<div><p class=\"text-mid mb-3\">Most WordPress themes have a built-in option for setting the site icon. You will find it in the admin panel:</p><p class=\"text-mid mb-3\"><strong>Appearance → Customize → Site Identity → Site Icon</strong></p><p class=\"text-light\">Upload the 512×512 file there - WordPress will automatically generate smaller sizes. For full control over icons, you can also upload files directly to the root directory via FTP.</p></div>"
+        },
+        {
+          "title": "HTML",
+          "icon": "RiHtml5Line",
+          "html": "<div><p class=\"text-mid mb-3\">Place the generated files in the root directory of your site (where index.html is). Then add the appropriate tags in the &lt;head&gt; section:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">The code above is an example — adjust the paths to match your site structure.</p></div>"
+        },
+        {
+          "title": "Next.js / React",
+          "icon": "RiReactjsLine",
+          "html": "<div><p class=\"text-mid mb-3\">In Next.js (App Router), place favicon files in the <code>app/</code> or <code>public/</code> directory:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> - automatically recognized by Next.js</li><li><code>app/apple-icon.png</code> - Apple icon</li><li><code>public/</code> - remaining icons (192×192, 512×512)</li></ul><p class=\"text-light\">You can also configure icons in <code>layout.tsx</code> via the <code>metadata.icons</code> object.</p></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What source image works best?",
+      "description": "A favicon is a very small graphic - as small as 16×16 pixels. Not every image works well as a source:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShapeLine",
+          "title": "Simple shapes and readable symbols",
+          "description": "Simple logos, single letters, or symbols work best. Avoid complex graphics with many details."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Square format",
+          "description": "A favicon is square. If the source image has a ratio other than 1:1, it will be cropped or stretched."
+        },
+        {
+          "icon": "RiZoomInLine",
+          "title": "Large enough size",
+          "description": "We recommend a source image of at least 512×512 pixels. Smaller images will be scaled up."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "SVG format as ideal source",
+          "description": "SVG scales without quality loss, so icons in all sizes will be sharp."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "High-contrast colors",
+          "description": "A favicon must be visible on different backgrounds (light tabs, dark mode). Choose colors that maintain readability."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about the favicon generator",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "What size should the source image be for generating favicons?",
+          "answer": "The recommended size is at least 512×512 pixels in square format (1:1). With such a source, icons in all sizes will be sharp and readable. If you have a logo in SVG format - use it, as vector graphics scale without quality loss.",
+          "answerSchemaText": "At least 512×512 px, square (1:1). SVG is ideal as it scales without quality loss."
+        },
+        {
+          "question": "Can I generate only favicon.ico without the other icons?",
+          "answer": "Yes. Before generating, you can select exactly which sizes you need - e.g., only favicon.ico or only selected PNG sizes.",
+          "answerSchemaText": "Yes, you can select individual sizes before generating."
+        },
+        {
+          "question": "What image formats does the favicon generator support?",
+          "answer": "The generator accepts images in PNG, JPG, and SVG formats. As output, it generates a favicon.ico file and PNG icons in selected sizes, ready to upload to your website.",
+          "answerSchemaText": "Input: PNG, JPG, SVG. Output: favicon.ico and PNG icons."
+        },
+        {
+          "question": "Does a favicon affect Google search ranking?",
+          "answer": "Not directly - favicon is not a ranking factor. However, it indirectly affects brand recognition: a site with a professional icon is more easily identifiable among many open tabs, which may translate to a higher click-through rate in search results.",
+          "answerSchemaText": "Not directly. Indirectly improves brand recognition and click-through rate."
+        },
+        {
+          "question": "Which icon sizes are essential for a regular website?",
+          "answer": "For a typical website, three files are sufficient: favicon.ico (32×32), a 32×32 PNG icon, and apple-touch-icon 180×180. If the site should work as a web app (PWA), you also need 192×192 and 512×512 icons plus a manifest file.",
+          "answerSchemaText": "favicon.ico, 32×32 PNG, and apple-touch-icon 180×180. For PWA add 192×192 and 512×512."
+        },
+        {
+          "question": "What is a site.webmanifest file and when is it needed?",
+          "answer": "It is a configuration file for web apps (PWA) that contains information about the icon, name, and colors of the application. It is required when the site should work as an app added to the phone home screen. For regular websites, it is not necessary.",
+          "answerSchemaText": "PWA configuration file. Required for home screen apps, not needed for regular websites."
+        },
+        {
+          "question": "Does the favicon display the same in all browsers?",
+          "answer": "Most modern browsers (Chrome, Firefox, Edge, Safari) recognize the favicon.ico file and PNG icons. Differences may occur in the displayed icon size - Chrome prefers PNG 32×32, while Safari on iOS uses apple-touch-icon 180×180. For best compatibility, we recommend generating the full set of sizes.",
+          "answerSchemaText": "Mostly yes. Generate the full set of sizes for best compatibility."
+        },
+        {
+          "question": "Why doesn't the favicon change after uploading a new file?",
+          "answer": "Browsers aggressively cache favicons. After uploading a new icon, try clearing the browser cache or adding a version parameter to the file path (e.g., /favicon.ico?v=2). The change may take several hours to become visible.",
+          "answerSchemaText": "Browsers cache favicons aggressively. Clear cache or add a version parameter."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore other tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

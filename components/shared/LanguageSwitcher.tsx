@@ -110,8 +110,9 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
 
   const popularSorted = [...popular].sort((a, b) => a.name.localeCompare(b.name));
   const otherSorted = [...other].sort((a, b) => a.name.localeCompare(b.name));
-  const popularCols = splitIntoColumns(popularSorted, 2);
-  const otherCols = splitIntoColumns(otherSorted, 4);
+  const otherCols = splitIntoColumns(otherSorted, 5);
+  const popularMobileCols = splitIntoColumns(popularSorted, 2);
+  const otherMobileCols = splitIntoColumns(otherSorted, 2);
 
   const linkItem = (link: AlternateLink) => (
     <Link
@@ -174,35 +175,41 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
                     </div>
                   </div>
 
-                  {/* Columns 2-3: Popular languages (alphabetical, top-to-bottom) */}
+                  {/* Column 2: Popular languages (single column) */}
                   {popularSorted.length > 0 && (
-                    <>
-                      <div className="pl-6">
-                        <span className="text-light mb-2 block px-3 text-[11px] font-semibold tracking-wider uppercase">{t.popularLabel}</span>
-                        <div className="flex flex-col">{popularCols[0].map(linkItem)}</div>
-                      </div>
-                      <div className="border-primary-light border-r pt-5 pr-4">
-                        <div className="flex flex-col">{popularCols[1].map(linkItem)}</div>
-                      </div>
-                    </>
+                    <div className="border-primary-light border-r pr-4 pl-6">
+                      <span className="text-light mb-2 block px-3 text-[11px] font-semibold tracking-wider uppercase">{t.popularLabel}</span>
+                      <div className="flex flex-col">{popularSorted.map(linkItem)}</div>
+                    </div>
                   )}
 
-                  {/* Columns 4-5-6-7: Other languages (alphabetical, top-to-bottom) */}
+                  {/* Columns 3-7: Other languages (5 columns, alphabetical top-to-bottom) */}
                   {otherSorted.length > 0 && (
                     <>
                       <div className="pl-6">
                         <span className="text-light mb-2 block px-3 text-[11px] font-semibold tracking-wider uppercase">{t.otherLabel}</span>
                         <div className="flex flex-col">{otherCols[0].map(linkItem)}</div>
                       </div>
-                      <div className="pt-5">
-                        <div className="flex flex-col">{otherCols[1].map(linkItem)}</div>
-                      </div>
-                      <div className="pt-5">
-                        <div className="flex flex-col">{otherCols[2].map(linkItem)}</div>
-                      </div>
-                      <div className="pt-5">
-                        <div className="flex flex-col">{otherCols[3].map(linkItem)}</div>
-                      </div>
+                      {otherCols[1]?.length > 0 && (
+                        <div className="pt-5">
+                          <div className="flex flex-col">{otherCols[1].map(linkItem)}</div>
+                        </div>
+                      )}
+                      {otherCols[2]?.length > 0 && (
+                        <div className="pt-5">
+                          <div className="flex flex-col">{otherCols[2].map(linkItem)}</div>
+                        </div>
+                      )}
+                      {otherCols[3]?.length > 0 && (
+                        <div className="pt-5">
+                          <div className="flex flex-col">{otherCols[3].map(linkItem)}</div>
+                        </div>
+                      )}
+                      {otherCols[4]?.length > 0 && (
+                        <div className="pt-5">
+                          <div className="flex flex-col">{otherCols[4].map(linkItem)}</div>
+                        </div>
+                      )}
                     </>
                   )}
                 </div>
@@ -268,13 +275,13 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
                 </span>
               </div>
 
-              {/* Two columns */}
-              <div className="grid grid-cols-2 gap-x-2">
-                {popular.length > 0 && (
-                  <div>
-                    <span className="text-light mb-1.5 block px-2 text-[10px] font-semibold tracking-wider uppercase">{t.popularLabel}</span>
+              {/* Popular languages — top, 2 columns */}
+              {popularSorted.length > 0 && (
+                <>
+                  <span className="text-light mb-1.5 block px-2 text-[10px] font-semibold tracking-wider uppercase">{t.popularLabel}</span>
+                  <div className="mb-3 grid grid-cols-2 gap-x-2">
                     <div className="flex flex-col">
-                      {popular.map((link) => (
+                      {popularMobileCols[0].map((link) => (
                         <Link
                           key={link.locale}
                           href={link.href}
@@ -288,14 +295,34 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
                         </Link>
                       ))}
                     </div>
+                    {popularMobileCols[1]?.length > 0 && (
+                      <div className="flex flex-col">
+                        {popularMobileCols[1].map((link) => (
+                          <Link
+                            key={link.locale}
+                            href={link.href}
+                            hrefLang={link.hreflang}
+                            title={link.title}
+                            onClick={close}
+                            className="text-dark flex items-center gap-2 rounded-lg px-2 py-2 text-[13px] transition hover:bg-neutral-100"
+                          >
+                            <span className="text-light w-5 text-center text-[11px] font-semibold uppercase">{link.label}</span>
+                            <span>{link.name}</span>
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                   </div>
-                )}
+                </>
+              )}
 
-                {other.length > 0 && (
-                  <div>
-                    <span className="text-light mb-1.5 block px-2 text-[10px] font-semibold tracking-wider uppercase">{t.otherLabel}</span>
+              {/* Other languages — below, 2 columns */}
+              {otherSorted.length > 0 && (
+                <>
+                  <span className="text-light mb-1.5 block px-2 text-[10px] font-semibold tracking-wider uppercase">{t.otherLabel}</span>
+                  <div className="grid grid-cols-2 gap-x-2">
                     <div className="flex flex-col">
-                      {other.map((link) => (
+                      {otherMobileCols[0].map((link) => (
                         <Link
                           key={link.locale}
                           href={link.href}
@@ -309,9 +336,26 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
                         </Link>
                       ))}
                     </div>
+                    {otherMobileCols[1]?.length > 0 && (
+                      <div className="flex flex-col">
+                        {otherMobileCols[1].map((link) => (
+                          <Link
+                            key={link.locale}
+                            href={link.href}
+                            hrefLang={link.hreflang}
+                            title={link.title}
+                            onClick={close}
+                            className="text-dark flex items-center gap-2 rounded-lg px-2 py-2 text-[13px] transition hover:bg-neutral-100"
+                          >
+                            <span className="text-light w-5 text-center text-[11px] font-semibold uppercase">{link.label}</span>
+                            <span>{link.name}</span>
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                   </div>
-                )}
-              </div>
+                </>
+              )}
             </div>
           </>,
           document.body,

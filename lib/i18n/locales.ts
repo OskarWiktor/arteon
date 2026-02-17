@@ -28,6 +28,11 @@ import skDict from '@/data/sk/dictionary.json';
 import hrDict from '@/data/hr/dictionary.json';
 import ltDict from '@/data/lt/dictionary.json';
 import slDict from '@/data/sl/dictionary.json';
+import elDict from '@/data/el/dictionary.json';
+import bgDict from '@/data/bg/dictionary.json';
+import haDict from '@/data/ha/dictionary.json';
+import yoDict from '@/data/yo/dictionary.json';
+import afDict from '@/data/af/dictionary.json';
 
 const dicts = {
   pl: plDict,
@@ -56,6 +61,11 @@ const dicts = {
   hr: hrDict,
   lt: ltDict,
   sl: slDict,
+  el: elDict,
+  bg: bgDict,
+  ha: haDict,
+  yo: yoDict,
+  af: afDict,
 } as const;
 
 export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
@@ -341,6 +351,61 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/sl/o-nas',
     contactHref: '/sl/kontakt',
     privacyHref: '/sl/pravilnik-o-zasebnosti',
+  },
+  el: {
+    lang: 'el',
+    hreflang: 'el',
+    label: 'EL',
+    name: 'Ελληνικά',
+    toolsBasePath: '/el/ergaleia',
+    toolsIndexHref: '/el/ergaleia',
+    aboutHref: '/el/sxetika-me-emas',
+    contactHref: '/el/epikoinonia',
+    privacyHref: '/el/politiki-aporritou',
+  },
+  bg: {
+    lang: 'bg',
+    hreflang: 'bg',
+    label: 'BG',
+    name: 'Български',
+    toolsBasePath: '/bg/instrumenti',
+    toolsIndexHref: '/bg/instrumenti',
+    aboutHref: '/bg/za-nas',
+    contactHref: '/bg/kontakt',
+    privacyHref: '/bg/politika-za-poveritelnost',
+  },
+  ha: {
+    lang: 'ha',
+    hreflang: 'ha',
+    label: 'HA',
+    name: 'Hausa',
+    toolsBasePath: '/ha/kayan-aiki',
+    toolsIndexHref: '/ha/kayan-aiki',
+    aboutHref: '/ha/game-da-mu',
+    contactHref: '/ha/tuntube-mu',
+    privacyHref: '/ha/manufar-sirri',
+  },
+  yo: {
+    lang: 'yo',
+    hreflang: 'yo',
+    label: 'YO',
+    name: 'Yorùbá',
+    toolsBasePath: '/yo/awon-irinse',
+    toolsIndexHref: '/yo/awon-irinse',
+    aboutHref: '/yo/nipa-wa',
+    contactHref: '/yo/kan-si-wa',
+    privacyHref: '/yo/ilana-asiri',
+  },
+  af: {
+    lang: 'af',
+    hreflang: 'af',
+    label: 'AF',
+    name: 'Afrikaans',
+    toolsBasePath: '/af/gereedskap',
+    toolsIndexHref: '/af/gereedskap',
+    aboutHref: '/af/oor-ons',
+    contactHref: '/af/kontak',
+    privacyHref: '/af/privaatheidsbeleid',
   },
 };
 

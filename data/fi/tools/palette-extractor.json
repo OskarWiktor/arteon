@@ -2,7 +2,7 @@
   "toolKey": "paletteExtractor",
   "locale": "fi",
   "metadata": {
-    "title": "Ilmainen värien poiminta kuvasta – Paletti mistä tahansa valokuvasta",
+    "title": "Ilmainen värien poiminta kuvasta – Väripaletti",
     "description": "Lataa valokuva tai logo ja poimi jopa 12 hallitsevaa väriä HEX- ja RGB-koodeilla. Sopii käyttöliittymäsuunnitteluun, brändäykseen ja sosiaaliseen mediaan.",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/fi/tyokalut/varien-poiminta-kuvasta"

@@ -2,7 +2,7 @@
   "toolKey": "qrCode",
   "locale": "fi",
   "metadata": {
-    "title": "Ilmainen QR-koodigeneraattori – PNG ja SVG, ilman rekisteröitymistä",
+    "title": "Ilmainen QR-koodigeneraattori – PNG ja SVG",
     "description": "Luo QR-koodi verkkosivulle, vCard-kortille, ruokalistalle tai esitteelle muutamassa sekunnissa. Vie PNG- ja SVG-muotoon. Mukauta värejä ja kokoa.",
     "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
     "path": "/fi/tyokalut/ilmainen-qr-koodi-generaattori"

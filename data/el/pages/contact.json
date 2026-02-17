@@ -1,0 +1,28 @@
+{
+  "slug": "contact",
+  "metadata": {
+    "title": "Contact Arteon – Free Online Tools Support & Feedback",
+    "description": "Get in touch with the Arteon team. Report a bug, suggest a new tool, or ask a question about our free online tools for images, SEO, colors and QR codes. We respond within one business day."
+  },
+  "hero": {
+    "title": "Get in touch with the Arteon team",
+    "description": "Report a bug, suggest a new tool, or ask a question — we respond within one business day"
+  },
+  "intro": {
+    "title": "Have a question or suggestion?",
+    "textBefore": "We are happy to hear your feedback about our tools. If you found a bug, have an idea for a new tool, or need help — write to us at",
+    "textAfter": ". We respond within one business day."
+  },
+  "formTitle": "Send us a message",
+  "details": {
+    "title": "Contact details",
+    "emailLabel": "Email",
+    "hoursLabel": "Business hours",
+    "hoursValue": "Monday – Friday: 8:00 – 16:00 (CET)"
+  },
+  "cta": {
+    "title": "Back to tools",
+    "description": "10 free online tools for working with images, text, and colors",
+    "btnOne": "Tools"
+  }
+}

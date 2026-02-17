@@ -84,6 +84,14 @@ const nextConfig: NextConfig = {
         source: '/fonts/:path*',
         headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
       },
+      {
+        source: '/sitemap.xml',
+        headers: [{ key: 'Content-Type', value: 'application/xml; charset=utf-8' }],
+      },
+      {
+        source: '/sitemap-0.xml',
+        headers: [{ key: 'Content-Type', value: 'application/xml; charset=utf-8' }],
+      },
     ];
 
     return IS_PROD

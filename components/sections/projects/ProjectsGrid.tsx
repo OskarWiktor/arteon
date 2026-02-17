@@ -24,7 +24,7 @@ export default function ProjectsGrid({ projects, selectedCategories }: Props) {
 
   return (
     <section className="w-full">
-      <div className="grid auto-rows-max grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="grid auto-rows-max grid-cols-1 gap-8 md:grid-cols-3">
         {filteredProjects.map((project, i) => (
           <div key={project.slug} className="animate-fade-in" style={{ animationDelay: `${i * 0.1}s` }}>
             <ProjectCard project={project} />

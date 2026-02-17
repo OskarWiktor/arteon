@@ -2,7 +2,7 @@
   "toolKey": "paletteExtractor",
   "locale": "lt",
   "metadata": {
-    "title": "Nemokamas spalvų ištraukimas iš paveikslėlio – Paletė iš bet kurios nuotraukos",
+    "title": "Nemokamas spalvų ištraukimas iš paveikslėlio",
     "description": "Įkelkite nuotrauką ar logotipą ir ištraukite iki 12 dominuojančių spalvų su HEX ir RGB kodais. Tinka UI dizainui, prekės ženklui ir socialiniams tinklams.",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/lt/irankiai/spalvu-istraukimas-is-paveikslelio"

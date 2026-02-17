@@ -2,7 +2,7 @@
   "toolKey": "paletteExtractor",
   "locale": "ms",
   "metadata": {
-    "title": "Pengekstrak Warna dari Imej Percuma – Palet dari Sebarang Foto",
+    "title": "Pengekstrak Warna dari Imej Percuma – Palet",
     "description": "Muat naik foto atau logo dan ekstrak sehingga 12 warna dominan dengan kod HEX dan RGB. Sesuai untuk UI, penjenamaan dan media sosial. Tanpa pendaftaran.",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/ms/alatan/pengekstrak-warna-dari-imej"

@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "mainNavigation": "Babban kewayawa",
+    "logoAlt": "Arteon \u2013 alamar kamfani",
+    "closeMenu": "Rufe menu",
+    "openMenu": "Bu\u0257e menu",
+    "closeToolsList": "Rufe jerin kayan aiki",
+    "openToolsList": "Bu\u0257e jerin kayan aiki",
+    "toolsLabel": "Kayan aiki",
+    "mobileMenu": "Menu na wayar hannu",
+    "aboutLabel": "Game da mu",
+    "contactLabel": "Tuntu\u0253e mu"
+  },
+  "footer": {
+    "copyright": "An kiyaye duk ha\u0199\u0199o\u0199i.",
+    "description": "Kayan aiki na kyauta don masu ha\u0253aka yanar gizo, masu zane-zane, da \u0199wararrun tallace-tallace.",
+    "companyDataLabel": "Bayanan kamfani",
+    "toolsLabel": "Kayan aiki",
+    "legalLabel": "Takardun doka",
+    "cookieSettingsLabel": "Saitunan kukis"
+  },
+  "desktopOnly": {
+    "title": "Wannan kayan aiki yana aiki a kan babban allo",
+    "description": "Don amfani da shi cikin sau\u0199i, bu\u0257e wannan kayan aiki a kan kwamfutar tafi-da-gidanka, kwamfutar tebur, ko na\u2019ura mai kwakwalwa a yanayin kwance.",
+    "tipTitle": "Shawarar",
+    "tipText": "Idan kana amfani da na\u2019ura mai kwakwalwa, juya ta zuwa yanayin kwance \u2013 idan fa\u0257in tagar ya isa, kayan aiki zai yi aiki ta atomatik."
+  },
+  "cookie": {
+    "title": "Kukis da sirri",
+    "description": "Muna amfani da kukis don gudanar da shafin, nazarin zirga-zirga, da nuna tallace-tallace. \u0198arin bayani a cikin",
+    "setPreferences": "Saita za\u0253u\u0253\u0253uka",
+    "privacyPolicy": "Manufar sirri",
+    "privacyPolicyHref": "/ha/manufar-sirri",
+    "reject": "\u0198i duka",
+    "settings": "Saituna",
+    "accept": "Kar\u0253a duka",
+    "panelTitle": "Za\u0253u\u0253\u0253ukan sirri",
+    "panelDescription": "Saitunan yarjejeniyar sarrafa bayanai.",
+    "categoriesLegend": "Rukunoni",
+    "essentialTitle": "Mahimmanci",
+    "essentialDescription": "Shafin ba zai iya aiki ba tare da wa\u0257annan. Ba sa tattara bayanan tallace-tallace.",
+    "essentialStatus": "Kullum suna aiki",
+    "analyticsTitle": "Nazari (GA4)",
+    "analyticsDescription": "\u0198ididdiga na ziyarce-ziyarce. Yana kunna Google Analytics 4 da yarjejeniyar ku.",
+    "analyticsLabel": "Kunna nazarin GA4",
+    "adsTitle": "Tallace-tallace (Google AdSense)",
+    "adsDescription": "Tallace-tallace na musamman bisa sha\u2019awarku.",
+    "adsLabel": "Kunna tallace-tallace na musamman",
+    "changeDecision": "Kuna iya canza shawarar ku a kowane lokaci",
+    "save": "Ajiye"
+  },
+  "skipToContent": "Tsallake zuwa abun ciki",
+  "legal": [{ "key": "privacy", "href": "/ha/manufar-sirri", "label": "Manufar sirri" }],
+  "breadcrumbs": { "home": "Gida", "ariaLabel": "kewayawa breadcrumbs" },
+  "contactForm": {
+    "nameLabel": "Cikakken suna",
+    "namePlaceholder": "Abdullahi Musa",
+    "emailLabel": "Imel",
+    "emailPlaceholder": "abdullahi@example.com",
+    "subjectLabel": "Batu",
+    "subjectPlaceholder": "misali Rahoton kuskure | Shawarar kayan aiki | Tambaya",
+    "messageLabel": "Sa\u0199o",
+    "messagePlaceholder": "Bayyana tambayar ku ko shawarar ku...",
+    "send": "Aika",
+    "error": "Wani abu bai yi daidai ba. Da fatan za a duba bayanan ku kuma a sake gwadawa.",
+    "success": "An aika sa\u0199on! Za mu amsa da wuri-wuri."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Kayan aiki na kyauta",
+    "seeAllTools": "Duba duk kayan aiki",
+    "carouselLabel": "Juyawar kayan aiki",
+    "scrollLeft": "Gusa hagu",
+    "scrollRight": "Gusa dama",
+    "carouselNavigation": "Kewayawan juyawa",
+    "goToSlide": "Je zuwa faifai",
+    "of": "daga",
+    "slide": "Faifai",
+    "tool": "Kayan aiki",
+    "openTool": "Bu\u0257e kayan aiki"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Canza zuwa Hausa",
+    "toggleLabel": "Canza harshe",
+    "chooseLabel": "Za\u0253i harshe",
+    "popularLabel": "Shahararru",
+    "otherLabel": "Wasu",
+    "closeModalLabel": "Rufe"
+  },
+  "mobileNav": { "close": "Rufe", "services": "Ayyuka", "contact": "Tuntu\u0253e mu" },
+  "infoBanner": {
+    "text": "Sabuntawar mai \u0199ir\u0199ira sa hannun imel \u2013 duba sabbin damar",
+    "linkText": "kayan aiki"
+  }
+}

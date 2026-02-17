@@ -171,6 +171,11 @@ const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
   hr: () => import('@/data/hr/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   lt: () => import('@/data/lt/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   sl: () => import('@/data/sl/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
+  el: () => import('@/data/el/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
+  bg: () => import('@/data/bg/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
+  ha: () => import('@/data/ha/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
+  yo: () => import('@/data/yo/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
+  af: () => import('@/data/af/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
 };
 
 export async function getDictionary(locale: Locale): Promise<Dictionary> {

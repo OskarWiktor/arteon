@@ -2,7 +2,7 @@
   "toolKey": "imageResize",
   "locale": "sw",
   "metadata": {
-    "title": "Kihariri cha Picha Bure \u2013 Kata na Ubadilishe Ukubwa kwa Mitandao ya Kijamii",
+    "title": "Kihariri cha Picha Bure – Kata na Ubadilishe Ukubwa",
     "description": "Kata na ubadilishe ukubwa wa picha kwa Instagram, Facebook, LinkedIn na zaidi. Chagua muundo uliyokuwa tayari au weka vipimo maalum. Bila usajili, bila kikomo.",
     "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
     "path": "/sw/zana/kihariri-cha-picha"
@@ -13,12 +13,18 @@
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/sw/zana", "label": "Zana" },
-    "third": { "href": "/sw/zana/kihariri-cha-picha", "label": "Kihariri cha picha" }
+    "second": {
+      "href": "/sw/zana",
+      "label": "Zana"
+    },
+    "third": {
+      "href": "/sw/zana/kihariri-cha-picha",
+      "label": "Kihariri cha picha"
+    }
   },
   "schemas": {
     "software": {
-      "name": "Kihariri cha picha bure \u2013 kata na ubadilishe ukubwa",
+      "name": "Kihariri cha picha bure – kata na ubadilishe ukubwa",
       "alternateName": ["Zana ya kukata picha", "Kubadilisha ukubwa wa picha kwa mitandao ya kijamii", "Kihariri cha picha kwa Instagram na Facebook", "Kukata picha kwa uwiano maalum"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
@@ -38,21 +44,39 @@
       "description": "Jinsi ya kukata picha kwa uwiano maalum na kuibadilisha ukubwa kwa mitandao ya kijamii au tovuti.",
       "totalTime": "PT2M",
       "steps": [
-        { "name": "Pakia picha", "text": "Buruta faili kwenye eneo lililowekwa au ichague kutoka kwenye kifaa chako." },
-        { "name": "Chagua uwiano", "text": "Chagua muundo uliokuwa tayari kwa jukwaa maalum au weka vipimo maalum." },
-        { "name": "Badilisha eneo la kukata", "text": "Sogeza na ubadilishe ukubwa wa fremu ya kukata ili kuchagua sehemu inayofaa ya picha." },
-        { "name": "Pakua matokeo", "text": "Bofya kitufe cha pakua ili kupata picha iliyokatwa kwa muundo wa PNG au JPG." }
+        {
+          "name": "Pakia picha",
+          "text": "Buruta faili kwenye eneo lililowekwa au ichague kutoka kwenye kifaa chako."
+        },
+        {
+          "name": "Chagua uwiano",
+          "text": "Chagua muundo uliokuwa tayari kwa jukwaa maalum au weka vipimo maalum."
+        },
+        {
+          "name": "Badilisha eneo la kukata",
+          "text": "Sogeza na ubadilishe ukubwa wa fremu ya kukata ili kuchagua sehemu inayofaa ya picha."
+        },
+        {
+          "name": "Pakua matokeo",
+          "text": "Bofya kitufe cha pakua ili kupata picha iliyokatwa kwa muundo wa PNG au JPG."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Kwa nini kukata picha kwa uwiano sahihi ni muhimu?",
-      "html": "<p class=\"text-mid\">Kila jukwaa la mtandaoni lina mahitaji yake ya vipimo vya picha. Picha ya profaili kwenye Instagram ni mraba (1:1), jalada la Facebook ni pana (820\u00d7312 px), na picha ndogo ya YouTube ni 16:9. Kupakia picha yenye uwiano usio sahihi husababisha kukatwa kiatomati \u2013 ambayo mara nyingi huondoa sehemu muhimu ya picha.</p><p class=\"text-mid mt-3\">Kihariri hiki kinakuwezesha kutayarisha picha kwa uwiano sahihi kabla ya kupakia. Chagua muundo uliokuwa tayari au weka vipimo maalum, na utapata picha iliyokatwa kwa usahihi.</p>"
+      "html": "<p class=\"text-mid\">Kila jukwaa la mtandaoni lina mahitaji yake ya vipimo vya picha. Picha ya profaili kwenye Instagram ni mraba (1:1), jalada la Facebook ni pana (820×312 px), na picha ndogo ya YouTube ni 16:9. Kupakia picha yenye uwiano usio sahihi husababisha kukatwa kiatomati – ambayo mara nyingi huondoa sehemu muhimu ya picha.</p><p class=\"text-mid mt-3\">Kihariri hiki kinakuwezesha kutayarisha picha kwa uwiano sahihi kabla ya kupakia. Chagua muundo uliokuwa tayari au weka vipimo maalum, na utapata picha iliyokatwa kwa usahihi.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Jinsi ya kutumia kihariri cha picha",
@@ -74,54 +98,122 @@
           "title": "3. Badilisha eneo",
           "description": "Sogeza na ubadilishe ukubwa wa fremu ya kukata. Picha inayoonyeshwa kwa wakati halisi ili uweze kuona matokeo mara moja."
         },
-        { "icon": "RiDownloadLine", "title": "4. Pakua matokeo", "description": "Bofya kitufe cha pakua. Picha iliyokatwa inapatikana kwa muundo wa PNG au JPG." }
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Pakua matokeo",
+          "description": "Bofya kitufe cha pakua. Picha iliyokatwa inapatikana kwa muundo wa PNG au JPG."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Miundo iliyokuwa tayari kwa mitandao ya kijamii",
       "description": "Kihariri kinatoa miundo iliyokuwa tayari kwa majukwaa maarufu zaidi:",
       "grid": "three",
       "items": [
-        { "icon": "RiInstagramLine", "title": "Instagram", "description": "Chapisho la mraba (1:1), hadithi na rili (9:16), mandhari (1.91:1), wima (4:5)." },
-        { "icon": "RiFacebookLine", "title": "Facebook", "description": "Jalada (820\u00d7312), chapisho (1200\u00d7630), hadithi (1080\u00d71920), picha ya profaili (1:1)." },
-        { "icon": "RiLinkedinLine", "title": "LinkedIn", "description": "Jalada (1584\u00d7396), chapisho (1200\u00d71200), picha ya profaili (1:1)." },
-        { "icon": "RiYoutubeLine", "title": "YouTube", "description": "Picha ndogo (1280\u00d7720), bango la chaneli (2560\u00d71440)." },
-        { "icon": "RiTwitterXLine", "title": "X (Twitter)", "description": "Chapisho (1600\u00d7900), kichwa (1500\u00d7500), picha ya profaili (1:1)." },
-        { "icon": "RiImageLine", "title": "Maalum", "description": "Weka upana na urefu wowote kwa piksel au uchague uwiano wowote." }
+        {
+          "icon": "RiInstagramLine",
+          "title": "Instagram",
+          "description": "Chapisho la mraba (1:1), hadithi na rili (9:16), mandhari (1.91:1), wima (4:5)."
+        },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook",
+          "description": "Jalada (820×312), chapisho (1200×630), hadithi (1080×1920), picha ya profaili (1:1)."
+        },
+        {
+          "icon": "RiLinkedinLine",
+          "title": "LinkedIn",
+          "description": "Jalada (1584×396), chapisho (1200×1200), picha ya profaili (1:1)."
+        },
+        {
+          "icon": "RiYoutubeLine",
+          "title": "YouTube",
+          "description": "Picha ndogo (1280×720), bango la chaneli (2560×1440)."
+        },
+        {
+          "icon": "RiTwitterXLine",
+          "title": "X (Twitter)",
+          "description": "Chapisho (1600×900), kichwa (1500×500), picha ya profaili (1:1)."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Maalum",
+          "description": "Weka upana na urefu wowote kwa piksel au uchague uwiano wowote."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Nani anahitaji kihariri cha picha?",
       "description": "Zana hii ni muhimu kwa mtu yeyote anayefanya kazi na picha:",
       "grid": "two",
       "items": [
-        { "icon": "RiMegaphoneLine", "title": "Wasimamizi wa mitandao ya kijamii", "description": "Tayarisha picha kwa uwiano sahihi kwa kila jukwaa bila kuhitaji programu ya michoro." },
-        { "icon": "RiShoppingBagLine", "title": "Wamiliki wa maduka", "description": "Kata picha za bidhaa kwa uwiano sawa kwa matokeo ya kitaalamu kwenye orodha." },
-        { "icon": "RiBloggerLine", "title": "Waandishi wa blogu", "description": "Tayarisha picha za kichwa na picha za makala kwa uwiano sahihi." },
-        { "icon": "RiCodeLine", "title": "Watengenezaji wa tovuti", "description": "Kata picha haraka kwa vipimo maalum bila kufungua programu ya michoro." }
+        {
+          "icon": "RiMegaphoneLine",
+          "title": "Wasimamizi wa mitandao ya kijamii",
+          "description": "Tayarisha picha kwa uwiano sahihi kwa kila jukwaa bila kuhitaji programu ya michoro."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Wamiliki wa maduka",
+          "description": "Kata picha za bidhaa kwa uwiano sawa kwa matokeo ya kitaalamu kwenye orodha."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Waandishi wa blogu",
+          "description": "Tayarisha picha za kichwa na picha za makala kwa uwiano sahihi."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Watengenezaji wa tovuti",
+          "description": "Kata picha haraka kwa vipimo maalum bila kufungua programu ya michoro."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Ni nini kinachofanya kihariri hiki cha picha kuwa maalum?",
       "grid": "two",
       "items": [
-        { "icon": "RiShieldCheckLine", "title": "Usindikaji wa ndani kwenye kivinjari", "description": "Picha hazitumwi kwenye seva yoyote. Uchakataji wote unafanyika kwenye kifaa chako." },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Usindikaji wa ndani kwenye kivinjari",
+          "description": "Picha hazitumwi kwenye seva yoyote. Uchakataji wote unafanyika kwenye kifaa chako."
+        },
         {
           "icon": "RiLayoutGridLine",
           "title": "Miundo iliyokuwa tayari kwa mitandao ya kijamii",
-          "description": "Chagua muundo uliokuwa tayari kwa Instagram, Facebook, LinkedIn, YouTube, au X \u2013 bila kuhitaji kukumbuka vipimo."
+          "description": "Chagua muundo uliokuwa tayari kwa Instagram, Facebook, LinkedIn, YouTube, au X – bila kuhitaji kukumbuka vipimo."
         },
-        { "icon": "RiSettings3Line", "title": "Vipimo maalum", "description": "Weka upana na urefu wowote kwa piksel au uchague uwiano maalum." },
-        { "icon": "RiEyeLine", "title": "Kuonyesha kwa wakati halisi", "description": "Mabadiliko yanaonekana mara moja \u2013 unaweza kujaribu hadi upate matokeo bora." }
+        {
+          "icon": "RiSettings3Line",
+          "title": "Vipimo maalum",
+          "description": "Weka upana na urefu wowote kwa piksel au uchague uwiano maalum."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Kuonyesha kwa wakati halisi",
+          "description": "Mabadiliko yanaonekana mara moja – unaweza kujaribu hadi upate matokeo bora."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Maswali yanayoulizwa mara kwa mara kuhusu kihariri cha picha",
@@ -129,7 +221,7 @@
       "items": [
         {
           "question": "Je, kihariri kinahitaji usajili?",
-          "answer": "Hapana. Zana ni bure kabisa na haihitaji kuingia au usajili. Picha inachakatwa kwenye kivinjari chako \u2013 haitumwi kwenye seva yoyote.",
+          "answer": "Hapana. Zana ni bure kabisa na haihitaji kuingia au usajili. Picha inachakatwa kwenye kivinjari chako – haitumwi kwenye seva yoyote.",
           "answerSchemaText": "Hapana. Zana ni bure na haihitaji usajili. Picha inachakatwa kwenye kivinjari."
         },
         {
@@ -149,8 +241,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Gundua zana nyingine" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Gundua zana nyingine"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

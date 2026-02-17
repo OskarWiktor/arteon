@@ -60,6 +60,11 @@ import sk from '@/data/sk/pages/contact.json';
 import hr from '@/data/hr/pages/contact.json';
 import lt from '@/data/lt/pages/contact.json';
 import sl from '@/data/sl/pages/contact.json';
+import el from '@/data/el/pages/contact.json';
+import bg from '@/data/bg/pages/contact.json';
+import ha from '@/data/ha/pages/contact.json';
+import yo from '@/data/yo/pages/contact.json';
+import af from '@/data/af/pages/contact.json';
 
 const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
   en,
@@ -87,6 +92,11 @@ const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
   hr,
   lt,
   sl,
+  el,
+  bg,
+  ha,
+  yo,
+  af,
 };
 
 // ---------------------------------------------------------------------------

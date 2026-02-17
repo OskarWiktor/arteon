@@ -2,7 +2,7 @@
   "toolKey": "imageResize",
   "locale": "ms",
   "metadata": {
-    "title": "Editor Imej Percuma \u2013 Potong dan Ubah Saiz untuk Media Sosial",
+    "title": "Editor Imej Percuma – Potong dan Ubah Saiz Cepat",
     "description": "Potong dan ubah saiz imej untuk Instagram, Facebook, LinkedIn dan lain-lain. Pilih format sedia ada atau masukkan dimensi tersuai. Tanpa pendaftaran, tanpa had.",
     "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
     "path": "/ms/alatan/editor-imej"
@@ -13,12 +13,18 @@
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/ms/alatan", "label": "Alatan" },
-    "third": { "href": "/ms/alatan/editor-imej", "label": "Editor imej" }
+    "second": {
+      "href": "/ms/alatan",
+      "label": "Alatan"
+    },
+    "third": {
+      "href": "/ms/alatan/editor-imej",
+      "label": "Editor imej"
+    }
   },
   "schemas": {
     "software": {
-      "name": "Editor imej percuma \u2013 potong dan ubah saiz",
+      "name": "Editor imej percuma – potong dan ubah saiz",
       "alternateName": ["Alat pemotong imej", "Ubah saiz imej untuk media sosial", "Editor imej untuk Instagram dan Facebook", "Potong imej kepada nisbah aspek tersuai"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
@@ -38,28 +44,50 @@
       "description": "Cara memotong imej kepada nisbah aspek tersuai dan mengubah saiznya untuk media sosial atau laman web.",
       "totalTime": "PT2M",
       "steps": [
-        { "name": "Muat naik imej", "text": "Seret fail ke kawasan yang ditetapkan atau pilih dari peranti anda." },
-        { "name": "Pilih nisbah aspek", "text": "Pilih format sedia ada untuk platform tertentu atau masukkan dimensi tersuai." },
-        { "name": "Laraskan kawasan potongan", "text": "Gerakkan dan ubah saiz bingkai potongan untuk memilih bahagian imej yang diingini." },
-        { "name": "Muat turun hasil", "text": "Klik butang muat turun untuk mendapatkan imej yang dipotong dalam format PNG atau JPG." }
+        {
+          "name": "Muat naik imej",
+          "text": "Seret fail ke kawasan yang ditetapkan atau pilih dari peranti anda."
+        },
+        {
+          "name": "Pilih nisbah aspek",
+          "text": "Pilih format sedia ada untuk platform tertentu atau masukkan dimensi tersuai."
+        },
+        {
+          "name": "Laraskan kawasan potongan",
+          "text": "Gerakkan dan ubah saiz bingkai potongan untuk memilih bahagian imej yang diingini."
+        },
+        {
+          "name": "Muat turun hasil",
+          "text": "Klik butang muat turun untuk mendapatkan imej yang dipotong dalam format PNG atau JPG."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Mengapa penting memotong imej kepada nisbah aspek yang betul?",
-      "html": "<p class=\"text-mid\">Setiap platform dalam talian mempunyai keperluan dimensi imej tersendiri. Gambar profil Instagram ialah segi empat sama (1:1), muka depan Facebook ialah lebar (820\u00d7312 px), dan imej kecil YouTube ialah 16:9. Memuat naik imej dengan nisbah aspek yang salah menyebabkan pemotongan automatik \u2013 yang sering membuang bahagian penting imej.</p><p class=\"text-mid mt-3\">Editor ini membolehkan anda menyediakan imej dengan nisbah aspek yang betul sebelum memuat naik. Pilih format sedia ada atau masukkan dimensi tersuai, dan anda akan mendapat imej yang dipotong dengan tepat.</p>"
+      "html": "<p class=\"text-mid\">Setiap platform dalam talian mempunyai keperluan dimensi imej tersendiri. Gambar profil Instagram ialah segi empat sama (1:1), muka depan Facebook ialah lebar (820×312 px), dan imej kecil YouTube ialah 16:9. Memuat naik imej dengan nisbah aspek yang salah menyebabkan pemotongan automatik – yang sering membuang bahagian penting imej.</p><p class=\"text-mid mt-3\">Editor ini membolehkan anda menyediakan imej dengan nisbah aspek yang betul sebelum memuat naik. Pilih format sedia ada atau masukkan dimensi tersuai, dan anda akan mendapat imej yang dipotong dengan tepat.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Cara menggunakan editor imej",
       "description": "Memotong dan mengubah saiz mengambil masa beberapa minit sahaja:",
       "grid": "four",
       "items": [
-        { "icon": "RiUploadLine", "title": "1. Muat naik imej", "description": "Seret fail ke kawasan yang ditetapkan atau pilih dari peranti anda. Format yang disokong ialah JPG, PNG, dan WebP." },
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Muat naik imej",
+          "description": "Seret fail ke kawasan yang ditetapkan atau pilih dari peranti anda. Format yang disokong ialah JPG, PNG, dan WebP."
+        },
         {
           "icon": "RiCropLine",
           "title": "2. Pilih nisbah aspek",
@@ -70,54 +98,122 @@
           "title": "3. Laraskan kawasan",
           "description": "Gerakkan dan ubah saiz bingkai potongan. Imej dipaparkan dalam masa nyata supaya anda boleh melihat hasil dengan segera."
         },
-        { "icon": "RiDownloadLine", "title": "4. Muat turun hasil", "description": "Klik butang muat turun. Imej yang dipotong tersedia dalam format PNG atau JPG." }
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Muat turun hasil",
+          "description": "Klik butang muat turun. Imej yang dipotong tersedia dalam format PNG atau JPG."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Format sedia ada untuk media sosial",
       "description": "Editor menawarkan format sedia ada untuk platform paling popular:",
       "grid": "three",
       "items": [
-        { "icon": "RiInstagramLine", "title": "Instagram", "description": "Siaran segi empat sama (1:1), cerita dan reels (9:16), landskap (1.91:1), potret (4:5)." },
-        { "icon": "RiFacebookLine", "title": "Facebook", "description": "Muka depan (820\u00d7312), siaran (1200\u00d7630), cerita (1080\u00d71920), gambar profil (1:1)." },
-        { "icon": "RiLinkedinLine", "title": "LinkedIn", "description": "Muka depan (1584\u00d7396), siaran (1200\u00d71200), gambar profil (1:1)." },
-        { "icon": "RiYoutubeLine", "title": "YouTube", "description": "Imej kecil (1280\u00d7720), sepanduk saluran (2560\u00d71440)." },
-        { "icon": "RiTwitterXLine", "title": "X (Twitter)", "description": "Siaran (1600\u00d7900), pengepala (1500\u00d7500), gambar profil (1:1)." },
-        { "icon": "RiImageLine", "title": "Tersuai", "description": "Masukkan sebarang lebar dan tinggi dalam piksel atau pilih sebarang nisbah aspek." }
+        {
+          "icon": "RiInstagramLine",
+          "title": "Instagram",
+          "description": "Siaran segi empat sama (1:1), cerita dan reels (9:16), landskap (1.91:1), potret (4:5)."
+        },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook",
+          "description": "Muka depan (820×312), siaran (1200×630), cerita (1080×1920), gambar profil (1:1)."
+        },
+        {
+          "icon": "RiLinkedinLine",
+          "title": "LinkedIn",
+          "description": "Muka depan (1584×396), siaran (1200×1200), gambar profil (1:1)."
+        },
+        {
+          "icon": "RiYoutubeLine",
+          "title": "YouTube",
+          "description": "Imej kecil (1280×720), sepanduk saluran (2560×1440)."
+        },
+        {
+          "icon": "RiTwitterXLine",
+          "title": "X (Twitter)",
+          "description": "Siaran (1600×900), pengepala (1500×500), gambar profil (1:1)."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Tersuai",
+          "description": "Masukkan sebarang lebar dan tinggi dalam piksel atau pilih sebarang nisbah aspek."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Siapa yang memerlukan editor imej?",
       "description": "Alat ini berguna untuk sesiapa yang bekerja dengan imej:",
       "grid": "two",
       "items": [
-        { "icon": "RiMegaphoneLine", "title": "Pengurus media sosial", "description": "Sediakan imej dengan nisbah aspek yang betul untuk setiap platform tanpa memerlukan perisian grafik." },
-        { "icon": "RiShoppingBagLine", "title": "Pemilik kedai", "description": "Potong foto produk kepada nisbah aspek yang sama untuk paparan profesional dalam senarai." },
-        { "icon": "RiBloggerLine", "title": "Penulis blog", "description": "Sediakan imej pengepala dan imej artikel dengan nisbah aspek yang betul." },
-        { "icon": "RiCodeLine", "title": "Pembangun web", "description": "Potong imej dengan pantas kepada dimensi tersuai tanpa membuka perisian grafik." }
+        {
+          "icon": "RiMegaphoneLine",
+          "title": "Pengurus media sosial",
+          "description": "Sediakan imej dengan nisbah aspek yang betul untuk setiap platform tanpa memerlukan perisian grafik."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Pemilik kedai",
+          "description": "Potong foto produk kepada nisbah aspek yang sama untuk paparan profesional dalam senarai."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Penulis blog",
+          "description": "Sediakan imej pengepala dan imej artikel dengan nisbah aspek yang betul."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Pembangun web",
+          "description": "Potong imej dengan pantas kepada dimensi tersuai tanpa membuka perisian grafik."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Apa yang menjadikan editor imej ini istimewa?",
       "grid": "two",
       "items": [
-        { "icon": "RiShieldCheckLine", "title": "Pemprosesan tempatan dalam pelayar", "description": "Imej tidak dihantar ke mana-mana pelayan. Semua pemprosesan berlaku pada peranti anda." },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pemprosesan tempatan dalam pelayar",
+          "description": "Imej tidak dihantar ke mana-mana pelayan. Semua pemprosesan berlaku pada peranti anda."
+        },
         {
           "icon": "RiLayoutGridLine",
           "title": "Format sedia ada untuk media sosial",
-          "description": "Pilih format sedia ada untuk Instagram, Facebook, LinkedIn, YouTube, atau X \u2013 tanpa perlu mengingati dimensi."
+          "description": "Pilih format sedia ada untuk Instagram, Facebook, LinkedIn, YouTube, atau X – tanpa perlu mengingati dimensi."
         },
-        { "icon": "RiSettings3Line", "title": "Dimensi tersuai", "description": "Masukkan sebarang lebar dan tinggi dalam piksel atau pilih nisbah aspek tersuai." },
-        { "icon": "RiEyeLine", "title": "Pratonton masa nyata", "description": "Perubahan kelihatan dengan segera \u2013 anda boleh mencuba sehingga mendapat hasil terbaik." }
+        {
+          "icon": "RiSettings3Line",
+          "title": "Dimensi tersuai",
+          "description": "Masukkan sebarang lebar dan tinggi dalam piksel atau pilih nisbah aspek tersuai."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Pratonton masa nyata",
+          "description": "Perubahan kelihatan dengan segera – anda boleh mencuba sehingga mendapat hasil terbaik."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Soalan lazim tentang editor imej",
@@ -125,7 +221,7 @@
       "items": [
         {
           "question": "Adakah editor memerlukan pendaftaran?",
-          "answer": "Tidak. Alat ini percuma sepenuhnya dan tidak memerlukan log masuk atau pendaftaran. Imej diproses dalam pelayar anda \u2013 tidak dihantar ke mana-mana pelayan.",
+          "answer": "Tidak. Alat ini percuma sepenuhnya dan tidak memerlukan log masuk atau pendaftaran. Imej diproses dalam pelayar anda – tidak dihantar ke mana-mana pelayan.",
           "answerSchemaText": "Tidak. Alat ini percuma dan tidak memerlukan pendaftaran. Imej diproses dalam pelayar."
         },
         {
@@ -145,8 +241,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Terokai alatan lain" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Terokai alatan lain"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "pasteText": "Paste or type text",
+  "textPlaceholder": "Paste the text you want to analyze here...",
+  "pageType": "Page type",
+  "pageTypeHelper": "Select the page type you are writing for. Each type has different length recommendations.",
+  "words": "Words",
+  "charsWithSpaces": "Characters (with spaces)",
+  "charsWithoutSpaces": "Characters (without spaces)",
+  "paragraphs": "Paragraphs",
+  "readingTime": "Reading time",
+  "lengthEvaluation": "Length evaluation",
+  "recommendedRange": "Recommended range",
+  "copyReport": "Copy report",
+  "copied": "Copied",
+  "statistics": "Text statistics",
+  "noText": "No text",
+  "empty": "Type text to see statistics.",
+  "tooShort": "Too short",
+  "tooLong": "Too long",
+  "ideal": "Good length",
+  "analysisFor": "Analysis for",
+  "wordsUnit": "words"
+}

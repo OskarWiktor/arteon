@@ -24,7 +24,12 @@ export type Locale =
   | 'sk'
   | 'hr'
   | 'lt'
-  | 'sl';
+  | 'sl'
+  | 'el'
+  | 'bg'
+  | 'ha'
+  | 'yo'
+  | 'af';
 
 export type LocaleConfig = {
   lang: string;

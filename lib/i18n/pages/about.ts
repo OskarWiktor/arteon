@@ -72,6 +72,11 @@ import sk from '@/data/sk/pages/about.json';
 import hr from '@/data/hr/pages/about.json';
 import lt from '@/data/lt/pages/about.json';
 import sl from '@/data/sl/pages/about.json';
+import el from '@/data/el/pages/about.json';
+import bg from '@/data/bg/pages/about.json';
+import ha from '@/data/ha/pages/about.json';
+import yo from '@/data/yo/pages/about.json';
+import af from '@/data/af/pages/about.json';
 
 const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
   en,
@@ -99,6 +104,11 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
   hr,
   lt,
   sl,
+  el,
+  bg,
+  ha,
+  yo,
+  af,
 };
 
 // ---------------------------------------------------------------------------

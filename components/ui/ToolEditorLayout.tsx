@@ -21,7 +21,7 @@ export default function ToolEditorLayout({ children }: ToolEditorLayoutProps) {
         </div>
         <div className="col-start-3">{children}</div>
         <div className="col-start-4">
-          <AdSense variant="autorelaxed" />
+          <AdSense variant="vertical" />
         </div>
       </div>
     );
@@ -38,11 +38,5 @@ export default function ToolEditorLayout({ children }: ToolEditorLayoutProps) {
     );
   }
 
-  return (
-    <div className="mx-auto w-[94%] max-w-[1420px]">
-      <AdSense variant="vertical" className="mb-3" />
-      {children}
-      <AdSense variant="autorelaxed" className="mt-3" />
-    </div>
-  );
+  return <div className="mx-auto w-[94%] max-w-[1420px]">{children}</div>;
 }

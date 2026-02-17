@@ -38,6 +38,11 @@ import sk from '@/data/sk/pages/privacy.json';
 import hr from '@/data/hr/pages/privacy.json';
 import lt from '@/data/lt/pages/privacy.json';
 import sl from '@/data/sl/pages/privacy.json';
+import el from '@/data/el/pages/privacy.json';
+import bg from '@/data/bg/pages/privacy.json';
+import ha from '@/data/ha/pages/privacy.json';
+import yo from '@/data/yo/pages/privacy.json';
+import af from '@/data/af/pages/privacy.json';
 
 const PRIVACY_META: Partial<Record<Locale, PrivacyPageMeta>> = {
   en,
@@ -65,6 +70,11 @@ const PRIVACY_META: Partial<Record<Locale, PrivacyPageMeta>> = {
   hr,
   lt,
   sl,
+  el,
+  bg,
+  ha,
+  yo,
+  af,
 };
 
 // ---------------------------------------------------------------------------

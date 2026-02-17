@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "mainNavigation": "Àtọ̀nà àkọ́kọ́",
+    "logoAlt": "Arteon – àmì ilé-iṣẹ́",
+    "closeMenu": "Pa àkójọ",
+    "openMenu": "Ṣí àkójọ",
+    "closeToolsList": "Pa àtòjọ àwọn irinṣẹ́",
+    "openToolsList": "Ṣí àtòjọ àwọn irinṣẹ́",
+    "toolsLabel": "Àwọn irinṣẹ́",
+    "mobileMenu": "Àkójọ fóònù",
+    "aboutLabel": "Nípa wa",
+    "contactLabel": "Kàn sí wa"
+  },
+  "footer": {
+    "copyright": "Gbogbo ẹ̀tọ́ ni a ní pamọ́.",
+    "description": "Àwọn irinṣẹ́ ọ̀fẹ́ fún àwọn olùgbékalẹ̀ ayélujára, olùṣàpẹẹrẹ, àti àwọn ọ̀gá títa.",
+    "companyDataLabel": "Àlàyé ilé-iṣẹ́",
+    "toolsLabel": "Àwọn irinṣẹ́",
+    "legalLabel": "Àwọn ìwé òfin",
+    "cookieSettingsLabel": "Ètò kúkì"
+  },
+  "desktopOnly": {
+    "title": "Irinṣẹ́ yìí ṣiṣẹ́ lórí ojú ibòjú ńlá",
+    "description": "Fún lílò rẹ̀ lọ́nà ìtura, ṣí irinṣẹ́ yìí lórí kọ̀ǹpútà agbéléwọlé, kọ̀ǹpútà orí tábìlì, tàbí tábùlẹ́ẹ̀tì ní ipò ìpàlẹ̀.",
+    "tipTitle": "Ìmọ̀ràn",
+    "tipText": "Tí o bá ń lo tábùlẹ́ẹ̀tì, yí padà sí ipò ìpàlẹ̀ – nígbà tí ìbú fèrèsé bá tó, irinṣẹ́ náà máa gbé fúnra rẹ̀."
+  },
+  "cookie": {
+    "title": "Kúkì àti àṣírí",
+    "description": "A ń lo kúkì láti jẹ́ kí ojú-ìwé náà ṣiṣẹ́, ṣe àyẹ̀wò ìṣàwákiri, àti ṣàfihàn ìpolówó. Kà síi ní",
+    "setPreferences": "Ṣètò àṣàyàn",
+    "privacyPolicy": "Ìlànà àṣírí",
+    "privacyPolicyHref": "/yo/ilana-asiri",
+    "reject": "Kọ̀ gbogbo rẹ̀",
+    "settings": "Ètò",
+    "accept": "Gba gbogbo rẹ̀",
+    "panelTitle": "Àṣàyàn àṣírí",
+    "panelDescription": "Ètò ìfohùnsí fún ṣíṣe àmúlò dátà.",
+    "categoriesLegend": "Àwọn ẹ̀ka",
+    "essentialTitle": "Pàtàkì",
+    "essentialDescription": "Ojú-ìwé kò lè ṣiṣẹ́ láìsí àwọn wọ̀nyí. Wọn kò kó dátà títa.",
+    "essentialStatus": "Máa ń ṣiṣẹ́ nígbà gbogbo",
+    "analyticsTitle": "Àtúpalẹ̀ (GA4)",
+    "analyticsDescription": "Àkọsílẹ̀ àwọn ìbẹ̀wò. Ó mú Google Analytics 4 ṣiṣẹ́ pẹ̀lú ìgbàláàyè rẹ.",
+    "analyticsLabel": "Mú àtúpalẹ̀ GA4 ṣiṣẹ́",
+    "adsTitle": "Ìpolówó (Google AdSense)",
+    "adsDescription": "Ìpolówó tó bá ìfẹ́ rẹ mu.",
+    "adsLabel": "Mú ìpolówó àdáni ṣiṣẹ́",
+    "changeDecision": "O lè yí ìpinnu rẹ padà nígbàkígbà",
+    "save": "Fipamọ́"
+  },
+  "skipToContent": "Fò lọ sí àkóónú",
+  "legal": [{ "key": "privacy", "href": "/yo/ilana-asiri", "label": "Ìlànà àṣírí" }],
+  "breadcrumbs": { "home": "Ilé", "ariaLabel": "àtọ̀nà breadcrumbs" },
+  "contactForm": {
+    "nameLabel": "Orúkọ kíkún",
+    "namePlaceholder": "Adélékè Olúwafẹ́mi",
+    "emailLabel": "Ímeèlì",
+    "emailPlaceholder": "adeleke@example.com",
+    "subjectLabel": "Kókó ọ̀rọ̀",
+    "subjectPlaceholder": "àpẹẹrẹ Ìròyìn àṣìṣe | Àbá irinṣẹ́ | Ìbéèrè",
+    "messageLabel": "Ìfiránṣẹ́",
+    "messagePlaceholder": "Ṣàlàyé ìbéèrè tàbí àbá rẹ...",
+    "send": "Fi ránṣẹ́",
+    "error": "Nǹkan kan kò lọ dáadáa. Jọ̀wọ́ yẹ dátà rẹ wò kí o sì tún gbìyànjú.",
+    "success": "A ti fi ìfiránṣẹ́ ránṣẹ́! A ó dáhùn ní kíákíá."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Àwọn irinṣẹ́ ọ̀fẹ́",
+    "seeAllTools": "Wo gbogbo àwọn irinṣẹ́",
+    "carouselLabel": "Àyíká àwọn irinṣẹ́",
+    "scrollLeft": "Yí sí apá òsì",
+    "scrollRight": "Yí sí apá ọ̀tún",
+    "carouselNavigation": "Àtọ̀nà àyíká",
+    "goToSlide": "Lọ sí ìwé",
+    "of": "nínú",
+    "slide": "Ìwé",
+    "tool": "Irinṣẹ́",
+    "openTool": "Ṣí irinṣẹ́"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Yí padà sí Yorùbá",
+    "toggleLabel": "Yí èdè padà",
+    "chooseLabel": "Yan èdè",
+    "popularLabel": "Olókìkí",
+    "otherLabel": "Àwọn mìíràn",
+    "closeModalLabel": "Pa"
+  },
+  "mobileNav": { "close": "Pa", "services": "Àwọn iṣẹ́", "contact": "Kàn sí wa" },
+  "infoBanner": {
+    "text": "Ìmúdójúìwọ̀n olùpilẹ̀ṣẹ̀ ìbuwọ́lù ímeèlì – wo àwọn ẹ̀yà tuntun",
+    "linkText": "àwọn irinṣẹ́"
+  }
+}

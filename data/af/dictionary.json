@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "mainNavigation": "Hoofnavigasie",
+    "logoAlt": "Arteon – maatskappylogo",
+    "closeMenu": "Sluit kieslys",
+    "openMenu": "Maak kieslys oop",
+    "closeToolsList": "Sluit gereedskapslys",
+    "openToolsList": "Maak gereedskapslys oop",
+    "toolsLabel": "Gereedskap",
+    "mobileMenu": "Selfoonkieslys",
+    "aboutLabel": "Oor ons",
+    "contactLabel": "Kontak"
+  },
+  "footer": {
+    "copyright": "Alle regte voorbehou.",
+    "description": "Gratis gereedskap vir webontwikkelaars, ontwerpers en bemarkingspesialiste.",
+    "companyDataLabel": "Maatskappyinligting",
+    "toolsLabel": "Gereedskap",
+    "legalLabel": "Regsdokumente",
+    "cookieSettingsLabel": "Koekie-instellings"
+  },
+  "desktopOnly": {
+    "title": "Hierdie gereedskap werk op 'n groter skerm",
+    "description": "Vir gemaklike gebruik, maak hierdie gereedskap oop op 'n skootrekenaar, tafelrekenaar of tablet in landskapmodus.",
+    "tipTitle": "Wenk",
+    "tipText": "As jy 'n tablet gebruik, draai dit na landskapmodus – wanneer die vensterwydte groot genoeg is, sal die gereedskap outomaties laai."
+  },
+  "cookie": {
+    "title": "Koekies en privaatheid",
+    "description": "Ons gebruik koekies om die werf te laat werk, verkeer te ontleed en advertensies te wys. Lees meer in ons",
+    "setPreferences": "Stel voorkeure",
+    "privacyPolicy": "Privaatheidsbeleid",
+    "privacyPolicyHref": "/af/privaatheidsbeleid",
+    "reject": "Wys alles af",
+    "settings": "Instellings",
+    "accept": "Aanvaar alles",
+    "panelTitle": "Privaatheidsvoorkeure",
+    "panelDescription": "Toestemmingsinstellings vir dataverwerking.",
+    "categoriesLegend": "Kategorieë",
+    "essentialTitle": "Noodsaaklik",
+    "essentialDescription": "Die werf kan nie daarsonder werk nie. Hulle versamel nie bemarkingsdata nie.",
+    "essentialStatus": "Altyd aktief",
+    "analyticsTitle": "Ontleding (GA4)",
+    "analyticsDescription": "Besoekstatistieke. Aktiveer Google Analytics 4 met jou toestemming.",
+    "analyticsLabel": "Aktiveer GA4-ontleding",
+    "adsTitle": "Advertensies (Google AdSense)",
+    "adsDescription": "Gepersonaliseerde advertensies gebaseer op jou belangstellings.",
+    "adsLabel": "Aktiveer gepersonaliseerde advertensies",
+    "changeDecision": "Jy kan jou besluit enige tyd verander",
+    "save": "Stoor"
+  },
+  "skipToContent": "Spring na inhoud",
+  "legal": [{ "key": "privacy", "href": "/af/privaatheidsbeleid", "label": "Privaatheidsbeleid" }],
+  "breadcrumbs": { "home": "Tuis", "ariaLabel": "breadcrumbs-navigasie" },
+  "contactForm": {
+    "nameLabel": "Volle naam",
+    "namePlaceholder": "Johan van der Merwe",
+    "emailLabel": "E-pos",
+    "emailPlaceholder": "johan@example.com",
+    "subjectLabel": "Onderwerp",
+    "subjectPlaceholder": "bv. Foutverslag | Gereedskapvoorstel | Vraag",
+    "messageLabel": "Boodskap",
+    "messagePlaceholder": "Beskryf jou vraag of voorstel...",
+    "send": "Stuur",
+    "error": "Iets het verkeerd geloop. Kyk asseblief jou data na en probeer weer.",
+    "success": "Boodskap gestuur! Ons sal so gou moontlik antwoord."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Gratis gereedskap",
+    "seeAllTools": "Sien alle gereedskap",
+    "carouselLabel": "Gereedskapkarrousel",
+    "scrollLeft": "Blaai links",
+    "scrollRight": "Blaai regs",
+    "carouselNavigation": "Karrouselnavigasie",
+    "goToSlide": "Gaan na skyfie",
+    "of": "van",
+    "slide": "Skyfie",
+    "tool": "Gereedskap",
+    "openTool": "Maak gereedskap oop"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Skakel na Afrikaans",
+    "toggleLabel": "Verander taal",
+    "chooseLabel": "Kies taal",
+    "popularLabel": "Gewild",
+    "otherLabel": "Ander",
+    "closeModalLabel": "Sluit"
+  },
+  "mobileNav": { "close": "Sluit", "services": "Dienste", "contact": "Kontak" },
+  "infoBanner": {
+    "text": "E-poshandtekeninggenerator-opdatering – kyk na nuwe kenmerke",
+    "linkText": "gereedskap"
+  }
+}
