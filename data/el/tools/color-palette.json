@@ -2,56 +2,56 @@
   "toolKey": "colorPalette",
   "locale": "el",
   "metadata": {
-    "title": "Free Color Palette Generator – 9 Palettes From One Color",
-    "description": "Generate 9 color palettes from one base color: monochromatic, complementary, triadic, pastel and more. Copy HEX codes in one click. No signup, no limits.",
+    "title": "Δωρεάν Δημιουργός Παλετών Χρωμάτων – 9 Παλέτες Από Ένα Χρώμα",
+    "description": "Δημιουργήστε 9 παλέτες χρωμάτων από ένα βασικό χρώμα: μονοχρωματική, συμπληρωματική, τριαδική, παστέλ και άλλες. Αντιγράψτε κωδικούς HEX με ένα κλικ. Χωρίς εγγραφή, χωρίς όρια.",
     "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
     "path": "/el/ergaleia/dimiourgia-paletas-chromaton"
   },
   "hero": {
-    "title": "Color palette generator",
-    "description": "Enter one base color, and the tool will generate 9 harmonious color palettes: monochromatic, complementary, triadic, pastel, and more. Each color can be copied with its HEX code.",
+    "title": "Δημιουργός παλετών χρωμάτων",
+    "description": "Εισάγετε ένα βασικό χρώμα και το εργαλείο θα δημιουργήσει 9 αρμονικές παλέτες χρωμάτων: μονοχρωματική, συμπληρωματική, τριαδική, παστέλ και άλλες. Κάθε χρώμα μπορεί να αντιγραφεί με τον κωδικό HEX του.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/el/ergaleia", "label": "Tools" },
-    "third": { "href": "/el/ergaleia/dimiourgia-paletas-chromaton", "label": "Color palette generator" }
+    "second": { "href": "/el/ergaleia", "label": "Εργαλεία" },
+    "third": { "href": "/el/ergaleia/dimiourgia-paletas-chromaton", "label": "Δημιουργός παλετών χρωμάτων" }
   },
   "schemas": {
     "software": {
-      "name": "Color palette generator",
-      "alternateName": ["Color scheme generator", "Online color generator", "Color palette creator", "Color matching tool", "Color palette online", "Color harmony generator"],
+      "name": "Δημιουργός παλετών χρωμάτων",
+      "alternateName": ["Δημιουργός χρωματικών σχημάτων", "Δημιουργός χρωμάτων", "Δημιουργός παλέτας χρωμάτων", "Εργαλείο αντιστοίχισης χρωμάτων", "Παλέτα χρωμάτων", "Δημιουργός χρωματικής αρμονίας"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Free online color palette generator. Enter one HEX color and the tool will generate 9 schemes: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, and minimalist. Each color can be copied with its HEX code and HSL value.",
+      "description": "Δωρεάν δημιουργός παλετών χρωμάτων. Εισάγετε ένα χρώμα HEX και το εργαλείο θα δημιουργήσει 9 σχήματα: μονοχρωματικό, ανάλογο, συμπληρωματικό, τριαδικό, διαιρεμένο-συμπληρωματικό, παστέλ, σκοτεινό, τονικό και μινιμαλιστικό. Κάθε χρώμα μπορεί να αντιγραφεί με τον κωδικό HEX και την τιμή HSL.",
       "featureList": [
-        "Monochromatic scheme - shades of one color",
-        "Analogous scheme - neighboring colors on the color wheel",
-        "Complementary scheme - opposite colors",
-        "Triadic scheme - 3 colors at equal intervals",
-        "Split-complementary scheme - base color and 2 neighbors of its complement",
-        "Pastel palette - light, muted shades",
-        "Dark palette - deep colors for dark themes",
-        "Tonal palette - lightness scale of one hue",
-        "Minimalist palette - strong accent with light neutrals",
-        "Base color in HEX format",
-        "Color picker for visual selection",
-        "Random starting color",
-        "Copy HEX code to clipboard",
-        "HSL value displayed alongside each color",
-        "Local processing in the browser"
+        "Μονοχρωματικό σχήμα - αποχρώσεις ενός χρώματος",
+        "Ανάλογο σχήμα - γειτονικά χρώματα στον χρωματικό κύκλο",
+        "Συμπληρωματικό σχήμα - αντίθετα χρώματα",
+        "Τριαδικό σχήμα - 3 χρώματα σε ίσα διαστήματα",
+        "Διαιρεμένο-συμπληρωματικό σχήμα - βασικό χρώμα και 2 γείτονες του συμπληρωματικού",
+        "Παστέλ παλέτα - ανοιχτές, απαλές αποχρώσεις",
+        "Σκοτεινή παλέτα - βαθιά χρώματα για σκοτεινά θέματα",
+        "Τονική παλέτα - κλίμακα φωτεινότητας μιας απόχρωσης",
+        "Μινιμαλιστική παλέτα - έντονη πινελιά με ανοιχτά ουδέτερα",
+        "Βασικό χρώμα σε μορφή HEX",
+        "Επιλογέας χρωμάτων για οπτική επιλογή",
+        "Τυχαίο αρχικό χρώμα",
+        "Αντιγραφή κωδικού HEX στο πρόχειρο",
+        "Τιμή HSL δίπλα σε κάθε χρώμα",
+        "Τοπική επεξεργασία στον browser"
       ]
     },
     "howTo": {
-      "name": "How to generate a color palette from one base color",
-      "description": "How to generate 9 color palettes from one base color: monochromatic, complementary, triadic, pastel, and more. Each color can be copied with its HEX code.",
+      "name": "Πώς να δημιουργήσετε παλέτα χρωμάτων από ένα βασικό χρώμα",
+      "description": "Πώς να δημιουργήσετε 9 παλέτες χρωμάτων από ένα βασικό χρώμα: μονοχρωματική, συμπληρωματική, τριαδική, παστέλ και άλλες. Κάθε χρώμα μπορεί να αντιγραφεί με τον κωδικό HEX του.",
       "steps": [
-        { "name": "Choose a base color", "text": "Enter a HEX code in the text field or use the color picker to select a color visually." },
-        { "name": "Confirm the color", "text": "Confirm the selected color with the Update Color button - the tool will generate palettes based on your chosen base color." },
+        { "name": "Επιλέξτε βασικό χρώμα", "text": "Εισάγετε κωδικό HEX στο πεδίο κειμένου ή χρησιμοποιήστε τον επιλογέα χρωμάτων για οπτική επιλογή." },
+        { "name": "Επιβεβαιώστε το χρώμα", "text": "Επιβεβαιώστε το επιλεγμένο χρώμα με το κουμπί Ενημέρωση Χρώματος - το εργαλείο θα δημιουργήσει παλέτες με βάση το επιλεγμένο χρώμα." },
         {
-          "name": "Browse the palettes",
-          "text": "The tool will automatically generate 9 different palettes: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, and minimalist."
+          "name": "Περιηγηθείτε στις παλέτες",
+          "text": "Το εργαλείο θα δημιουργήσει αυτόματα 9 διαφορετικές παλέτες: μονοχρωματική, ανάλογη, συμπληρωματική, τριαδική, διαιρεμένη-συμπληρωματική, παστέλ, σκοτεινή, τονική και μινιμαλιστική."
         },
-        { "name": "Copy colors", "text": "Next to each color you will find a Copy button - the HEX code is copied to your system clipboard." }
+        { "name": "Αντιγράψτε χρώματα", "text": "Δίπλα σε κάθε χρώμα θα βρείτε κουμπί Αντιγραφή - ο κωδικός HEX αντιγράφεται στο πρόχειρο του συστήματός σας." }
       ]
     }
   },

@@ -2,70 +2,70 @@
   "toolKey": "wordCounter",
   "locale": "bg",
   "metadata": {
-    "title": "Free Word & Character Counter – Check Text Length for SEO",
-    "description": "Count words, characters, paragraphs and reading time instantly. Check optimal text length for SEO – blog posts, product pages, landing pages. No signup.",
+    "title": "Безплатен брояч на думи и символи – Проверете дължината на текста за SEO",
+    "description": "Пребройте думи, символи, абзаци и време за четене мигновено. Проверете оптималната дължина на текста за SEO – блог статии, продуктови страници, целеви страници. Без регистрация.",
     "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
     "path": "/bg/instrumenti/broiach-na-dumi-i-simvoli"
   },
   "hero": {
-    "title": "Word and character counter with length evaluation",
-    "description": "Paste your text, select a page type, and the tool will show word count, character count, paragraphs, and evaluate whether the length is appropriate for that type of content",
+    "title": "Брояч на думи и символи с оценка на дължината",
+    "description": "Поставете текста си, изберете тип страница и инструментът ще покаже броя думи, символи, абзаци и ще оцени дали дължината е подходяща за този вид съдържание",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
     "second": {
       "href": "/bg/instrumenti",
-      "label": "Tools"
+      "label": "Инструменти"
     },
     "third": {
       "href": "/bg/instrumenti/broiach-na-dumi-i-simvoli",
-      "label": "Word and character counter"
+      "label": "Брояч на думи и символи"
     }
   },
   "schemas": {
     "software": {
-      "name": "Free word and character counter online",
+      "name": "Безплатен брояч на думи и символи",
       "alternateName": [
-        "Word counter with text length evaluation",
-        "Online character counter",
-        "Word counting tool for copywriters",
-        "Reading time calculator",
-        "Online word counter",
-        "Check how many words a text has",
-        "Word counter for SEO",
-        "Optimal text length for a blog post"
+        "Брояч на думи с оценка на дължината на текста",
+        "Брояч на символи",
+        "Инструмент за броене на думи за копирайтъри",
+        "Калкулатор на време за четене",
+        "Брояч на думи",
+        "Проверете колко думи има текстът",
+        "Брояч на думи за SEO",
+        "Оптимална дължина на текста за блог статия"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter. Checks word count, characters, paragraphs, and estimated reading time. Evaluates text length for different page types: product description, service page, homepage, landing page, blog post, guide.",
+      "description": "Безплатен брояч на думи и символи. Проверява брой думи, символи, абзаци и приблизително време за четене. Оценява дължината на текста за различни видове страници: продуктово описание, страница за услуга, начална страница, целева страница, блог статия, ръководство.",
       "featureList": [
-        "Word count",
-        "Character count with and without spaces",
-        "Paragraph count",
-        "Estimated reading time",
-        "Text length evaluation for different page types",
-        "Recommended ranges for: product description, service page, homepage, landing page, blog post, guide",
-        "Copy report to clipboard"
+        "Брой думи",
+        "Брой символи със и без интервали",
+        "Брой абзаци",
+        "Приблизително време за четене",
+        "Оценка на дължината на текста за различни видове страници",
+        "Препоръчителни диапазони за: продуктово описание, страница за услуга, начална страница, целева страница, блог статия, ръководство",
+        "Копиране на отчет в клипборда"
       ]
     },
     "howTo": {
-      "name": "How to use the word and character counter",
-      "description": "Check the length of your text and evaluate whether it is appropriate for a specific page type. Learn how many words a product description, service page, blog post, or guide should have.",
+      "name": "Как да използвате брояча на думи и символи",
+      "description": "Проверете дължината на текста си и оценете дали е подходяща за конкретен вид страница. Научете колко думи трябва да има продуктово описание, страница за услуга, блог статия или ръководство.",
       "steps": [
         {
-          "name": "Select a page type",
-          "text": "Choose from the dropdown what type of page you are writing for. Each type has different recommended word count ranges."
+          "name": "Изберете тип страница",
+          "text": "Изберете от падащото меню за какъв вид страница пишете. Всеки вид има различни препоръчителни диапазони на брой думи."
         },
         {
-          "name": "Paste your text",
-          "text": "Paste or type text into the text field. The tool will automatically count words, characters (with and without spaces), paragraphs, and estimate reading time."
+          "name": "Поставете текста си",
+          "text": "Поставете или напишете текст в текстовото поле. Инструментът автоматично ще преброи думите, символите (със и без интервали), абзаците и ще изчисли приблизителното време за четене."
         },
         {
-          "name": "Check the evaluation",
-          "text": "Look at the colored progress bar and status. Green means good length, yellow means too short, red means too long."
+          "name": "Проверете оценката",
+          "text": "Вижте цветната лента за напредък и статуса. Зелено означава добра дължина, жълто означава твърде кратко, червено означава твърде дълго."
         },
         {
-          "name": "Copy the report",
-          "text": "The Copy Report button copies a summary with all statistics and the length evaluation to your clipboard."
+          "name": "Копирайте отчета",
+          "text": "Бутонът Копиране на отчет копира обобщение с всички статистики и оценката на дължината в клипборда."
         }
       ]
     }
@@ -77,8 +77,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Free word counter online - count and evaluate text length",
-      "html": "<p class=\"text-mid\">This word counting tool lets you quickly check the length of any text. Paste your content and the counter will tally words, characters, and paragraphs. You will also see how many minutes it takes to read and whether the length fits the page type you select.</p><p class=\"text-mid mt-3\">Every page type has a different purpose - a product description answers buyer questions, a blog post covers a topic in depth, and a service page explains what the client will receive. The counter shows ranges for each of these types based on analyses of content that ranks well.</p>"
+      "title": "Безплатен брояч на думи – преброете и оценете дължината на текста",
+      "html": "<p class=\"text-mid\">Този инструмент за броене на думи позволява бързо да проверите дължината на всякакъв текст. Поставете съдържанието си и броячът ще изчисли думи, символи и абзаци. Ще видите също колко минути отнема четенето и дали дължината съответства на избрания вид страница.</p><p class=\"text-mid mt-3\">Всеки вид страница има различна цел – продуктовото описание отговаря на въпросите на купувача, блог статията обхваща тема в дълбочина, а страницата за услуга обяснява какво ще получи клиентът. Броячът показва диапазони за всеки от тези видове, базирани на анализи на съдържание, което се класира добре.</p>"
     },
     {
       "type": "gap",
@@ -86,29 +86,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "How to use the word and character counter",
-      "description": "Checking text length takes less than a minute:",
+      "title": "Как да използвате брояча на думи и символи",
+      "description": "Проверката на дължината на текста отнема по-малко от минута:",
       "grid": "four",
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "1. Select page type",
-          "description": "Choose from the dropdown what type of page you are writing for. Each type has different recommended minimum and maximum word counts."
+          "title": "1. Изберете тип страница",
+          "description": "Изберете от падащото меню за какъв вид страница пишете. Всеки вид има различни препоръчителни минимални и максимални бройки думи."
         },
         {
           "icon": "RiFileTextLine",
-          "title": "2. Paste your text",
-          "description": "Paste or type text into the large field on the right. The tool will immediately count words, characters (with and without spaces), paragraphs, and estimate reading time."
+          "title": "2. Поставете текста си",
+          "description": "Поставете или напишете текст в голямото поле вдясно. Инструментът незабавно ще преброи думите, символите (със и без интервали), абзаците и ще изчисли приблизителното време за четене."
         },
         {
           "icon": "RiBarChartLine",
-          "title": "3. Check the evaluation",
-          "description": "Look at the colored progress bar and status. Green means good length, yellow means too short, red means too long. Below you will find a helpful tip."
+          "title": "3. Проверете оценката",
+          "description": "Вижте цветната лента за напредък и статуса. Зелено означава добра дължина, жълто означава твърде кратко, червено означава твърде дълго. По-долу ще намерите полезен съвет."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Copy the report",
-          "description": "The Copy Report button copies a summary with word count, character count, paragraphs, reading time, and length evaluation to your clipboard."
+          "title": "4. Копирайте отчета",
+          "description": "Бутонът Копиране на отчет копира обобщение с брой думи, брой символи, абзаци, време за четене и оценка на дължината в клипборда."
         }
       ]
     },
@@ -118,34 +118,34 @@
     },
     {
       "type": "sectionSteps",
-      "title": "What the counter measures - words, characters, reading time",
-      "description": "The counter tracks five key metrics:",
+      "title": "Какво измерва броячът – думи, символи, време за четене",
+      "description": "Броячът проследява пет ключови показателя:",
       "grid": "two",
       "items": [
         {
           "icon": "RiText",
-          "title": "Words",
-          "description": "Total word count. This is the primary indicator of text length."
+          "title": "Думи",
+          "description": "Общ брой думи. Това е основният показател за дължина на текста."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Characters (with spaces)",
-          "description": "All characters including spaces. Useful when a CMS has a character limit (e.g., marketplace listings)."
+          "title": "Символи (с интервали)",
+          "description": "Всички символи включително интервалите. Полезно, когато CMS системата има ограничение за символи (напр. обяви в маркетплейс)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Characters (without spaces)",
-          "description": "Only letters, digits, and punctuation. Sometimes required by print shops or for translation billing."
+          "title": "Символи (без интервали)",
+          "description": "Само букви, цифри и пунктуация. Понякога се изисква от печатници или за фактуриране на преводи."
         },
         {
           "icon": "RiParagraph",
-          "title": "Paragraphs",
-          "description": "How many text blocks separated by blank lines you have. Helps assess whether the text is well structured."
+          "title": "Абзаци",
+          "description": "Колко текстови блока, разделени с празни редове, имате. Помага да оцените дали текстът е добре структуриран."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Reading time",
-          "description": "The reading time calculator shows how many minutes it takes to read the text at an average speed of 200 words per minute."
+          "title": "Време за четене",
+          "description": "Калкулаторът на време за четене показва колко минути отнема четенето на текста при средна скорост от 200 думи на минута."
         }
       ]
     },
@@ -155,10 +155,10 @@
     },
     {
       "type": "sectionDemo",
-      "title": "How to interpret the results",
-      "subtitle": "Evaluation statuses",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">Good length</span><span class=\"text-mid text-sm!\">Text is within range</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Below range</span><span class=\"text-mid text-sm!\">Text is shorter than typical</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Above range</span><span class=\"text-mid text-sm!\">Text is longer than typical</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Progress</span><span class=\"text-mid\">1200 / 1200–3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
-      "html": "<p class=\"text-mid mb-4\">The colored progress bar and status help you quickly assess text length:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Good length</strong> (green) - the text falls within the approximate range for the selected page type.</li><li><strong class=\"text-warning-text\">Below range</strong> (yellow) - the text is shorter than typical for this page type. If it answers all of the reader's questions, the length may be fine.</li><li><strong class=\"text-error-text\">Above range</strong> (red) - the text is longer than typical. If every paragraph adds new information, the length is justified.</li></ul><p class=\"text-mid mt-4\">The ranges are based on analyses of content that ranks well in search engines. If the text answers the reader's questions, the length is appropriate regardless of the counter result.</p>"
+      "title": "Как да интерпретирате резултатите",
+      "subtitle": "Статуси на оценката",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">Добра дължина</span><span class=\"text-mid text-sm!\">Текстът е в диапазона</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Под диапазона</span><span class=\"text-mid text-sm!\">Текстът е по-кратък от типичното</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Над диапазона</span><span class=\"text-mid text-sm!\">Текстът е по-дълъг от типичното</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Напредък</span><span class=\"text-mid\">1200 / 1200–3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Цветната лента за напредък и статусът помагат бързо да оцените дължината на текста:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Добра дължина</strong> (зелено) – текстът попада в приблизителния диапазон за избрания вид страница.</li><li><strong class=\"text-warning-text\">Под диапазона</strong> (жълто) – текстът е по-кратък от типичното за този вид страница. Ако отговаря на всички въпроси на читателя, дължината може да е достатъчна.</li><li><strong class=\"text-error-text\">Над диапазона</strong> (червено) – текстът е по-дълъг от типичното. Ако всеки абзац добавя нова информация, дължината е оправдана.</li></ul><p class=\"text-mid mt-4\">Диапазоните са базирани на анализи на съдържание, което се класира добре в търсачките. Ако текстът отговаря на въпросите на читателя, дължината е подходяща независимо от резултата на брояча.</p>"
     },
     {
       "type": "gap",
@@ -166,8 +166,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "How many words should a text have - optimal length for SEO",
-      "html": "<p class=\"text-mid mb-4\">The ranges below are based on analyses of content that ranks well in search engines. Text length itself does not affect Google rankings - what matters is whether the content answers the reader's questions.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Page type</th><th class=\"py-2 pr-4 font-semibold\">Range</th><th class=\"py-2 font-semibold\">When shorter, when longer?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Product description</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 words</td><td class=\"text-primary-light0 py-2 text-sm\">Simple product (e.g., a mug) - 80–150 words. Complex equipment (e.g., a laptop) - 300–400 words, because buyers have more questions.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Service page</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 words</td><td class=\"text-primary-light0 py-2 text-sm\">Local service (e.g., plumber) - 500–700 words. B2B service with process and FAQ - 1,200–1,500 words.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Homepage</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 words</td><td class=\"text-primary-light0 py-2 text-sm\">The homepage conveys the main value and guides visitors further - the text supports navigation, not to replace subpages.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landing page</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 words</td><td class=\"text-primary-light0 py-2 text-sm\">Simple offer - 600–1,000 words. Offer requiring explanation of process, variants, and objection handling - 1,500–2,500 words.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blog post</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 words</td><td class=\"text-primary-light0 py-2 text-sm\">Answer to a simple question - 1,200–1,800 words. Complex topic with many aspects - 2,000–3,000 words.</td></tr><tr><td class=\"py-2 pr-4\">Guide</td><td class=\"py-2 pr-4 whitespace-nowrap\">2500–6000 words</td><td class=\"text-primary-light0 py-2 text-sm\">Narrow topic - 2,500–3,500 words. Broad topic with many steps and examples - 4,000–6,000 words.</td></tr></tbody></table></div>"
+      "title": "Колко думи трябва да има текстът – оптимална дължина за SEO",
+      "html": "<p class=\"text-mid mb-4\">Диапазоните по-долу са базирани на анализи на съдържание, което се класира добре в търсачките. Самата дължина на текста не влияе на класирането в Google – важното е дали съдържанието отговаря на въпросите на читателя.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Вид страница</th><th class=\"py-2 pr-4 font-semibold\">Диапазон</th><th class=\"py-2 font-semibold\">Кога по-кратко, кога по-дълго?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Продуктово описание</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 думи</td><td class=\"text-primary-light0 py-2 text-sm\">Прост продукт (напр. чаша) – 80–150 думи. Сложно оборудване (напр. лаптоп) – 300–400 думи, защото купувачите имат повече въпроси.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Страница за услуга</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 думи</td><td class=\"text-primary-light0 py-2 text-sm\">Локална услуга (напр. водопроводчик) – 500–700 думи. B2B услуга с процес и FAQ – 1200–1500 думи.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Начална страница</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 думи</td><td class=\"text-primary-light0 py-2 text-sm\">Началната страница предава основната стойност и насочва посетителите напред – текстът подпомага навигацията, а не заменя подстраниците.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Целева страница</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 думи</td><td class=\"text-primary-light0 py-2 text-sm\">Проста оферта – 600–1000 думи. Оферта, изискваща обяснение на процес, варианти и отговори на възражения – 1500–2500 думи.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Блог статия</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 думи</td><td class=\"text-primary-light0 py-2 text-sm\">Отговор на прост въпрос – 1200–1800 думи. Сложна тема с много аспекти – 2000–3000 думи.</td></tr><tr><td class=\"py-2 pr-4\">Ръководство</td><td class=\"py-2 pr-4 whitespace-nowrap\">2500–6000 думи</td><td class=\"text-primary-light0 py-2 text-sm\">Тясна тема – 2500–3500 думи. Широка тема с много стъпки и примери – 4000–6000 думи.</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -175,39 +175,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Who is the online word counter for?",
-      "description": "A word counting tool for copywriters and beyond - here is who uses the counter most:",
+      "title": "За кого е предназначен броячът на думи?",
+      "description": "Инструмент за броене на думи за копирайтъри и не само – ето кой използва брояча най-често:",
       "grid": "three",
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Copywriters and content creators",
-          "description": "Check whether the text falls within the recommended range for a specific page type. The SEO word counter helps evaluate whether an article is developed enough."
+          "title": "Копирайтъри и създатели на съдържание",
+          "description": "Проверете дали текстът попада в препоръчителния диапазон за конкретен вид страница. SEO броячът на думи помага да оцените дали статията е достатъчно развита."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Bloggers",
-          "description": "Monitor post length to keep publications consistent. Check reading time before publishing."
+          "title": "Блогъри",
+          "description": "Следете дължината на публикациите за последователност. Проверете времето за четене преди публикуване."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "E-commerce store owners",
-          "description": "Verify product descriptions against character limits on selling platforms (Amazon, eBay, Etsy)."
+          "title": "Собственици на онлайн магазини",
+          "description": "Проверете продуктовите описания спрямо ограниченията за символи на платформите за продажби (Amazon, eBay, Etsy)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO specialists",
-          "description": "Evaluate whether page content has an optimal length compared to competitors. Analyze the word-to-topic ratio."
+          "title": "SEO специалисти",
+          "description": "Оценете дали съдържанието на страницата има оптимална дължина в сравнение с конкурентите. Анализирайте съотношението думи-към-тема."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Students and academics",
-          "description": "Check whether a paper meets the required word or character limit."
+          "title": "Студенти и академици",
+          "description": "Проверете дали работата отговаря на изискваното ограничение за думи или символи."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Translators",
-          "description": "Count characters without spaces for translation quotes (a standard billing unit)."
+          "title": "Преводачи",
+          "description": "Пребройте символи без интервали за оферти за превод (стандартна единица за фактуриране)."
         }
       ]
     },
@@ -217,8 +217,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Character limits on popular platforms",
-      "html": "<p class=\"text-mid mb-4\">The character counter is useful when creating content for platforms with length restrictions:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform / Element</th><th class=\"py-2 pr-4 font-semibold\">Character limit</th><th class=\"py-2 font-semibold\">Notes</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 characters</td><td class=\"text-primary-light0 py-2 text-sm\">Longer titles are truncated in search results.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 characters</td><td class=\"text-primary-light0 py-2 text-sm\">The description visible below the link in search results.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - product title</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 characters</td><td class=\"text-primary-light0 py-2 text-sm\">Short, specific title with the most important keywords.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - bullet points</td><td class=\"py-2 pr-4 whitespace-nowrap\">500 characters each</td><td class=\"text-primary-light0 py-2 text-sm\">Up to 5 bullet points describing key product features.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) - post</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 characters</td><td class=\"text-primary-light0 py-2 text-sm\">Standard limit for regular users.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn - post</td><td class=\"py-2 pr-4 whitespace-nowrap\">3,000 characters</td><td class=\"text-primary-light0 py-2 text-sm\">After ~210 characters a &quot;see more&quot; link appears.</td></tr></tbody></table></div>"
+      "title": "Ограничения за символи в популярните платформи",
+      "html": "<p class=\"text-mid mb-4\">Броячът на символи е полезен при създаване на съдържание за платформи с ограничения на дължината:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Платформа / Елемент</th><th class=\"py-2 pr-4 font-semibold\">Ограничение</th><th class=\"py-2 font-semibold\">Бележки</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – мета заглавие</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 символа</td><td class=\"text-primary-light0 py-2 text-sm\">По-дългите заглавия се отрязват в резултатите от търсене.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – мета описание</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 символа</td><td class=\"text-primary-light0 py-2 text-sm\">Описанието, видимо под линка в резултатите от търсене.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon – заглавие на продукт</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 символа</td><td class=\"text-primary-light0 py-2 text-sm\">Кратко, конкретно заглавие с най-важните ключови думи.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon – точки с характеристики</td><td class=\"py-2 pr-4 whitespace-nowrap\">500 символа всяка</td><td class=\"text-primary-light0 py-2 text-sm\">До 5 точки, описващи ключовите характеристики на продукта.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – публикация</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 символа</td><td class=\"text-primary-light0 py-2 text-sm\">Стандартно ограничение за обикновени потребители.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn – публикация</td><td class=\"py-2 pr-4 whitespace-nowrap\">3000 символа</td><td class=\"text-primary-light0 py-2 text-sm\">След ~210 символа се появява линк &quot;виж още&quot;.</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -226,38 +226,38 @@
     },
     {
       "type": "sectionSteps",
-      "title": "What makes this word and character counter special?",
+      "title": "Какво прави този брояч на думи и символи специален?",
       "grid": "two",
       "items": [
         {
           "icon": "RiInfinityLine",
-          "title": "Six page types with recommended ranges",
-          "description": "Product description, service page, homepage, landing page, blog post, and guide - each type has its own ranges based on analyses."
+          "title": "Шест вида страници с препоръчителни диапазони",
+          "description": "Продуктово описание, страница за услуга, начална страница, целева страница, блог статия и ръководство – всеки вид има собствени диапазони, базирани на анализи."
         },
         {
           "icon": "RiUserLine",
-          "title": "Local processing in the browser",
-          "description": "Your text is never sent to any server - all analysis happens locally on your device."
+          "title": "Локална обработка в браузъра",
+          "description": "Текстът ви никога не се изпраща на никакъв сървър – цялата обработка се извършва локално на вашето устройство."
         },
         {
           "icon": "RiCheckboxCircleLine",
-          "title": "Text length evaluation",
-          "description": "You don't just count words - you get information on whether the length is appropriate for the selected page type."
+          "title": "Оценка на дължината на текста",
+          "description": "Не само броите думи – получавате информация дали дължината е подходяща за избрания вид страница."
         },
         {
           "icon": "RiBarChartLine",
-          "title": "SEO-based ranges",
-          "description": "Recommended lengths are based on analyses of content that ranks well in search engines."
+          "title": "Диапазони, базирани на SEO",
+          "description": "Препоръчителните дължини са базирани на анализи на съдържание, което се класира добре в търсачките."
         },
         {
           "icon": "RiTimerLine",
-          "title": "Reading time",
-          "description": "You immediately know how many minutes it will take readers to go through the text."
+          "title": "Време за четене",
+          "description": "Незабавно знаете колко минути ще отнеме на читателите да прочетат текста."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Copy report",
-          "description": "The Copy Report button copies a summary with all statistics and the length evaluation to your clipboard."
+          "title": "Копиране на отчет",
+          "description": "Бутонът Копиране на отчет копира обобщение с всички статистики и оценката на дължината в клипборда."
         }
       ]
     },
@@ -267,38 +267,38 @@
     },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the word and character counter",
+      "title": "Често задавани въпроси за брояча на думи и символи",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Does text length affect Google rankings?",
-          "answer": "Text length by itself is not a ranking factor. Google evaluates whether the content answers the user's question and is valuable to them. Shorter text that comprehensively answers a question can rank well - what matters is value for the reader. The ranges in this tool are based on analyses of content that ranks well in search results.",
-          "answerSchemaText": "Text length is not a direct ranking factor. Google evaluates the value of content for the user."
+          "question": "Дължината на текста влияе ли на класирането в Google?",
+          "answer": "Дължината на текста сама по себе си не е фактор за класиране. Google оценява дали съдържанието отговаря на въпроса на потребителя и дали е ценно за него. По-кратък текст, който изчерпателно отговаря на въпрос, може да се класира добре – важното е стойността за читателя. Диапазоните в този инструмент са базирани на анализи на съдържание, което се класира добре в резултатите от търсене.",
+          "answerSchemaText": "Дължината на текста не е пряк фактор за класиране. Google оценява стойността на съдържанието за потребителя."
         },
         {
-          "question": "Why are the word ranges so broad?",
-          "answer": "The same page type may require different lengths depending on topic complexity. A simple product description (e.g., a mug) is 80–150 words - just material, capacity, and use case. A laptop description is 300–400 words because buyers ask about the processor, memory, screen, and battery. Similarly with services: a local plumber's page is 500–700 words, while a comprehensive B2B service implementation page with process steps and FAQ is 1,200–1,500 words.",
-          "answerSchemaText": "The difference comes from topic complexity - a simple product needs fewer words than a complex one."
+          "question": "Защо диапазоните на думите са толкова широки?",
+          "answer": "Един и същ вид страница може да изисква различни дължини в зависимост от сложността на темата. Просто продуктово описание (напр. чаша) е 80–150 думи – само материал, обем и приложение. Описание на лаптоп е 300–400 думи, защото купувачите питат за процесор, памет, екран и батерия. По същия начин с услугите: страница на локален водопроводчик е 500–700 думи, докато изчерпателна B2B страница за внедряване на услуга със стъпки на процеса и FAQ е 1200–1500 думи.",
+          "answerSchemaText": "Разликата идва от сложността на темата – прост продукт изисква по-малко думи от сложен."
         },
         {
-          "question": "How should I interpret \"too short\" or \"too long\"?",
-          "answer": "The evaluation shows where your text falls relative to typical content of that type. If the text is marked \"too short\" but answers all of the reader's questions - the length is fine. If it is \"too long\" but every paragraph adds new information - the length is justified.",
-          "answerSchemaText": "The evaluation shows where the text falls relative to typical content. If the text answers the reader's questions, the length is appropriate."
+          "question": "Как да интерпретирам \"твърде кратко\" или \"твърде дълго\"?",
+          "answer": "Оценката показва къде попада текстът ви спрямо типичното съдържание от този вид. Ако текстът е отбелязан като \"твърде кратък\", но отговаря на всички въпроси на читателя – дължината е достатъчна. Ако е \"твърде дълъг\", но всеки абзац добавя нова информация – дължината е оправдана.",
+          "answerSchemaText": "Оценката показва къде попада текстът спрямо типичното съдържание. Ако текстът отговаря на въпросите на читателя, дължината е подходяща."
         },
         {
-          "question": "How does the reading time calculator work?",
-          "answer": "The tool divides the word count by 200 - the average reading speed for typical text. Technical or demanding text (e.g., documentation, terms of service) will be read slower. A light lifestyle article - faster. The result is an approximate value that helps estimate how long a reader will spend with the text.",
-          "answerSchemaText": "The tool assumes an average reading speed of 200 words per minute. This is an approximate value for typical text."
+          "question": "Как работи калкулаторът на време за четене?",
+          "answer": "Инструментът разделя броя думи на 200 – средната скорост на четене за типичен текст. Технически или сложен текст (напр. документация, общи условия) ще се чете по-бавно. Лека лайфстайл статия – по-бързо. Резултатът е приблизителна стойност, която помага да оцените колко време ще прекара читателят с текста.",
+          "answerSchemaText": "Инструментът приема средна скорост на четене от 200 думи на минута. Това е приблизителна стойност за типичен текст."
         },
         {
-          "question": "Where do the recommended ranges come from?",
-          "answer": "The ranges are based on analyses of content that ranks well in search engines and on content creation best practices. They are intentionally broad because the same page type may require different lengths depending on industry, topic complexity, and reader needs. The ranges serve as a starting point for evaluating whether text falls within a typical range for a specific page type.",
-          "answerSchemaText": "The ranges are based on SEO analyses and content creation best practices."
+          "question": "Откъде идват препоръчителните диапазони?",
+          "answer": "Диапазоните са базирани на анализи на съдържание, което се класира добре в търсачките, и на най-добри практики за създаване на съдържание. Нарочно са широки, защото един и същ вид страница може да изисква различни дължини в зависимост от индустрията, сложността на темата и нуждите на читателя. Диапазоните служат като отправна точка за оценка дали текстът попада в типичен диапазон за конкретен вид страница.",
+          "answerSchemaText": "Диапазоните са базирани на SEO анализи и най-добри практики за създаване на съдържание."
         },
         {
-          "question": "Can I copy the report with statistics?",
-          "answer": "Yes. Below the statistics you will find a Copy Report button - it copies a summary with word count, character count, paragraphs, reading time, and length evaluation to your clipboard. You can paste it into a document or send it to collaborators.",
-          "answerSchemaText": "Yes. Click the Copy Report button below the statistics. A summary with all metrics and evaluation will be copied to your clipboard."
+          "question": "Мога ли да копирам отчета със статистиките?",
+          "answer": "Да. Под статистиките ще намерите бутон Копиране на отчет – той копира обобщение с брой думи, брой символи, абзаци, време за четене и оценка на дължината в клипборда. Можете да го поставите в документ или да го изпратите на колеги.",
+          "answerSchemaText": "Да. Кликнете бутона Копиране на отчет под статистиките. Обобщение с всички показатели и оценка ще бъде копирано в клипборда."
         }
       ]
     },
@@ -308,7 +308,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Explore other tools"
+      "title": "Разгледайте другите инструменти"
     },
     {
       "type": "gap",
