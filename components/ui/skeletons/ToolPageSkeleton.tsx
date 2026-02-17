@@ -11,7 +11,7 @@ export default function ToolPageSkeleton({ variant = 'default' }: ToolPageSkelet
   return (
     <>
       <HeroBannerSkeleton size="tools" />
-      <BreadcrumbsSkeleton />
+      <BreadcrumbsSkeleton size="compact" />
       <ToolPanelSkeleton variant={variant} />
       <ContentSkeleton />
     </>

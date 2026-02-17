@@ -1,5 +1,4 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+import { NextResponse, type NextRequest } from 'next/server';
 import { ALL_STATIC_REDIRECTS } from './lib/redirects';
 
 const CANONICAL_HOST = 'www.arteonagency.pl';
@@ -200,9 +199,15 @@ export function middleware(request: NextRequest) {
 
   const response = NextResponse.next();
   response.headers.set('x-pathname', url.pathname);
+
+  // Ensure sitemap XML files are served with correct Content-Type
+  if (url.pathname.endsWith('.xml')) {
+    response.headers.set('Content-Type', 'application/xml; charset=utf-8');
+  }
+
   return response;
 }
 
 export const config = {
-  matcher: ['/((?!_next/static|_next/image|favicon\\.ico|sitemap.*\\.xml|robots\\.txt|assets/|fonts/).*)'],
+  matcher: ['/((?!_next/static|_next/image|favicon\\.ico|robots\\.txt|assets/|fonts/).*)'],
 };

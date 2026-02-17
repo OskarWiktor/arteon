@@ -593,3 +593,22 @@ xml = xml.replace(/<url>([\s\S]*?)<\/url>/g, (match, inner) => {
 
 fs.writeFileSync(sitemapPath, xml, 'utf8');
 console.log(`[hreflang] Injected hreflang into ${injected} URLs in sitemap-0.xml`);
+
+// ---------------------------------------------------------------------------
+// Move sitemap files from public/ to .sitemap-cache/ so they are served
+// exclusively by route handlers (app/sitemap.xml/route.ts) with correct
+// Content-Type: application/xml. Leaving them in public/ causes Vercel CDN
+// to serve them as static files with text/plain Content-Type.
+// ---------------------------------------------------------------------------
+const cacheDir = path.join(__dirname, '..', '.sitemap-cache');
+if (!fs.existsSync(cacheDir)) fs.mkdirSync(cacheDir, { recursive: true });
+
+const sitemapIndex = path.join(__dirname, '..', 'public', 'sitemap.xml');
+if (fs.existsSync(sitemapIndex)) {
+  fs.copyFileSync(sitemapIndex, path.join(cacheDir, 'sitemap.xml'));
+  fs.unlinkSync(sitemapIndex);
+}
+fs.copyFileSync(sitemapPath, path.join(cacheDir, 'sitemap-0.xml'));
+fs.unlinkSync(sitemapPath);
+
+console.log('[hreflang] Moved sitemap files to .sitemap-cache/ for route handler serving');

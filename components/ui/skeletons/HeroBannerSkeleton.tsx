@@ -7,12 +7,12 @@ interface HeroBannerSkeletonProps {
 export default function HeroBannerSkeleton({ size = 'default' }: HeroBannerSkeletonProps) {
   if (size === 'tools') {
     return (
-      <div className="relative flex items-center overflow-hidden bg-white pt-4 pb-5 md:py-7">
+      <div className="relative flex items-center overflow-hidden pt-4 pb-2 md:pt-7">
         <div className="m-auto w-[94%] max-w-[1420px] 2xl:max-w-none">
-          <div className="max-w-[100vw] hyphens-auto">
-            <Shimmer className="mb-2 h-7 w-full md:w-3/5" />
-            <Shimmer className="mb-1 h-4 w-full md:w-2/4" />
-            <Shimmer className="h-4 w-2/3 md:w-1/3" />
+          <div className="flex max-w-[100vw] flex-col items-center md:w-full">
+            <Shimmer className="mb-2 h-7 w-4/5 md:w-2/5" />
+            <Shimmer className="mb-1 h-4 w-full md:w-3/5" />
+            <Shimmer className="h-4 w-2/3 md:w-2/5" />
           </div>
         </div>
       </div>

@@ -5,7 +5,11 @@ export type ToolPanelVariant = 'default' | 'word-count' | 'image-editor' | 'colo
 /* ── Reusable inner blocks ────────────────────────────────────── */
 
 function AdBannerShimmer() {
-  return <Shimmer className="my-3 h-[90px] w-full !rounded-2xl !bg-neutral-50" />;
+  return (
+    <div className="my-3 flex justify-center">
+      <Shimmer className="h-[90px] w-full max-w-[728px] !rounded-2xl !bg-neutral-50" />
+    </div>
+  );
 }
 
 function SectionBox({ children, className = '' }: { children: React.ReactNode; className?: string }) {
