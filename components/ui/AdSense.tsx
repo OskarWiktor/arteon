@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { AdSenseProps } from '@/types/ui';
 export type { AdVariant, AdSenseProps } from '@/types/ui';
 
@@ -21,10 +21,25 @@ declare global {
 
 export default function AdSense({ variant, adSlot, className = '' }: AdSenseProps) {
   const pushed = useRef(false);
+  const [mounted, setMounted] = useState(false);
   const preset = PRESETS[variant];
   const slot = adSlot || preset.slot;
 
+  /*
+   * tool-banner has fixed dimensions (728×90) — Google's script can auto-scan
+   * and fill it from SSR HTML. All other variants (fluid / auto) MUST be
+   * rendered client-side only so the <ins> isn't in the DOM when the script
+   * loads and auto-scans. Fluid ads need an explicit push() to trigger sizing;
+   * if the script auto-marks them first, the later push is ignored → 0 height.
+   */
+  const clientOnly = variant !== 'tool-banner';
+
   useEffect(() => {
+    if (clientOnly) setMounted(true);
+  }, [clientOnly]);
+
+  useEffect(() => {
+    if (clientOnly && !mounted) return;
     if (pushed.current) return;
     const id = requestAnimationFrame(() => {
       try {
@@ -35,12 +50,11 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
       }
     });
     return () => cancelAnimationFrame(id);
-  }, []);
+  }, [mounted, clientOnly]);
 
   /* ----------------------------------------------------------------
-   * tool-top-banner-test — fixed 728×90 leaderboard
+   * tool-banner — fixed 728×90 leaderboard (SSR-safe)
    * Google code: display:inline-block;width:728px;height:90px
-   * No data-ad-format, no data-full-width-responsive
    * --------------------------------------------------------------- */
   if (variant === 'tool-banner') {
     return (
@@ -50,23 +64,23 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
     );
   }
 
+  if (!mounted) return <div className={className} />;
+
   /* ----------------------------------------------------------------
-   * in-article — fluid ad inside article/tool content
-   * MUST match Google's exact in-article code: data-ad-layout="in-article"
-   * + data-ad-format="fluid" (slot 9459125335 is an In-article unit)
+   * in-article — fluid ad inside article/tool content (client-only)
+   * Matches Google's exact code: data-ad-layout="in-article",
+   * data-ad-format="fluid" (slot 9459125335 = In-article unit)
    * --------------------------------------------------------------- */
   if (variant === 'in-article') {
     return (
       <div className={className}>
-        <ins className="adsbygoogle" style={{ display: 'block', textAlign: 'center' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} data-ad-layout="in-article" data-ad-format="fluid" />
+        <ins className="adsbygoogle" style={{ display: 'block', textAlign: 'center' }} data-ad-layout="in-article" data-ad-format="fluid" data-ad-client={AD_CLIENT} data-ad-slot={slot} />
       </div>
     );
   }
 
   /* ----------------------------------------------------------------
-   * autorelaxed — matched content / multiplex
-   * Google code: display:block
-   * data-ad-format="autorelaxed"
+   * autorelaxed — matched content / multiplex (client-only)
    * --------------------------------------------------------------- */
   if (variant === 'autorelaxed') {
     return (
@@ -77,8 +91,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
   }
 
   /* ----------------------------------------------------------------
-   * vertical — responsive ad for side columns (160px)
-   * data-ad-format="auto", NO data-full-width-responsive (stays in column)
+   * vertical — responsive ad for side columns (client-only)
    * --------------------------------------------------------------- */
   return (
     <div className={className}>
