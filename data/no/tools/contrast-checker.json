@@ -113,10 +113,53 @@
       "variant": "line"
     },
     {
+      "type": "sectionTabs",
+      "title": "Hvilke fargeformater støttes?",
+      "tabs": [
+        {
+          "title": "HEX",
+          "icon": "RiHashtag",
+          "html": "<div><p class=\"text-mid mb-3\">Heksadesimalt format – det mest populære innen webdesign. Begynner med tegnet <code class=\"rounded bg-black/5 px-1\">#</code> og inneholder 3 eller 6 tegn (sifre 0-9 og bokstaver A-F).</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">#fff</code> – hvit (forkortet form)</li><li><code class=\"rounded bg-black/5 px-1\">#ffffff</code> – hvit (full form)</li><li><code class=\"rounded bg-black/5 px-1\">#1a73e8</code> – blå</li></ul></div>"
+        },
+        {
+          "title": "RGB / RGBA",
+          "icon": "RiPaletteLine",
+          "html": "<div><p class=\"text-mid mb-3\">Format basert på tre kanaler: rød (Red), grønn (Green), blå (Blue). Hver kanal godtar en verdi fra 0 til 255. RGBA-varianten legger til en fjerde parameter – gjennomsiktighet (alpha) fra 0 til 1.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">rgb(255, 255, 255)</code> – hvit</li><li><code class=\"rounded bg-black/5 px-1\">rgba(0, 0, 0, 0.8)</code> – svart med 80% dekning</li></ul></div>"
+        },
+        {
+          "title": "HSL / HSLA",
+          "icon": "RiEqualizerLine",
+          "html": "<div><p class=\"text-mid mb-3\">Format basert på nyanse (Hue, 0-360°), metning (Saturation, 0-100%) og lyshet (Lightness, 0-100%). HSLA-varianten legger til gjennomsiktighet. Dette formatet er nyttig når du vil justere lysheten eller metningen til en farge.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">hsl(0, 0%, 100%)</code> – hvit</li><li><code class=\"rounded bg-black/5 px-1\">hsla(217, 91%, 60%, 0.9)</code> – blå med 90% dekning</li></ul></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionDemo",
       "title": "Slik tolker du resultatene av lesbarhetstesten",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Kontrastforhold</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Normal tekst</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div></div></div>",
       "html": "<p class=\"text-mid mb-4\">Når farger er skrevet inn, viser verktøyet resultater i tre seksjoner:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normal tekst</strong> – krever kontrast 4.5:1 (AA) eller 7:1 (AAA). Gjelder tekst under 18pt (24px) eller under 14pt fet.</li><li><strong>Stor tekst / fet</strong> – krever kontrast 3:1 (AA) eller 4.5:1 (AAA). Gjelder overskrifter, knapper og uthevet tekst.</li><li><strong>Ikoner</strong> – krever kontrast 3:1 (AA). Gjelder ikoner og grafiske UI-elementer som formidler informasjon.</li></ul><p class=\"text-mid mt-3\"><strong>Grønn indikator</strong> betyr at kravet er oppfylt. <strong>Rød indikator</strong> betyr at kontrasten er for lav og må korrigeres.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hva betyr resultatene av lesbarhetstesten?",
+      "html": "<p class=\"text-mid mb-4\">Verktøyet viser kontrastforholdet på en skala fra 1:1 (ingen kontrast) til 21:1 (maksimal kontrast – svart tekst på hvit bakgrunn). Resultatet sammenlignes med terskler definert i WCAG-standarden:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normal tekst</strong> – krever kontrast minst 4.5:1 for nivå AA (minimumsstandard) eller 7:1 for nivå AAA (utvidet standard). Gjelder tekst under 18pt (24px) eller under 14pt (18.5px) fet.</li><li><strong>Stor tekst / fet</strong> – krever kontrast minst 3:1 for nivå AA eller 4.5:1 for nivå AAA. Gjelder tekst fra 18pt (24px) eller fra 14pt (18.5px) fet – overskrifter, knapper, uthevelser.</li><li><strong>Ikoner og grafiske elementer</strong> – krever kontrast minst 3:1 for nivå AA. Gjelder ikoner, knapper, skjemafelt og andre UI-elementer som formidler informasjon.</li></ul><p class=\"text-mid mt-3\"><strong>Nivå AA</strong> er minimum krevd av tilgjengelighetslovgivning i mange land, inkludert <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016L2102\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">EUs webtilgjengelighetsdirektiv</a>. <strong>Nivå AAA</strong> gir bedre lesbarhet, men er ikke alltid praktisk oppnåelig for alle elementer.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Automatisk fargetilpasning til WCAG-krav",
+      "html": "<p class=\"text-mid mb-4\">Hvis kontrasten er for lav, trenger du ikke lete etter riktig farge ved prøving og feiling. Funksjonen <strong>Match</strong> finner automatisk en variant av tekstfargen som oppfyller den valgte kontrastterskelen.</p><p class=\"text-mid mb-4\">Slik fungerer tilpasningen:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Velg tilpasningsmålet fra listen – f.eks. AA for normal tekst eller AAA for stor tekst.</li><li>Start funksjonen med Match-knappen.</li><li>Verktøyet søker gjennom lyshets-varianter av tekstfargen og foreslår den nærmeste som oppfyller kravene.</li><li>Den foreslåtte fargekoden kan kopieres til utklippstavlen eller umiddelbart settes som ny tekstfarge.</li></ol><p class=\"text-mid mt-3\">Algoritmen bevarer nyansen og metningen til den originale fargen og endrer kun lysheten. Den foreslåtte fargen forblir dermed konsistent med den visuelle identiteten og oppfyller samtidig tilgjengelighetsstandarden.</p>"
     },
     {
       "type": "gap",
@@ -185,6 +228,107 @@
             "aa": true,
             "aaa": true
           }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Feilsøking av fargekontrasttesteren",
+      "html": "<h3 class=\"h5 mb-2\">Jeg ser en feilmelding om fargeformat</h3><p class=\"text-mid mb-4\">Sjekk fargeformatet. HEX-kode skal starte med <code class=\"rounded bg-black/5 px-1\">#</code> og inneholde 3 eller 6 tegn (f.eks. <code class=\"rounded bg-black/5 px-1\">#fff</code> eller <code class=\"rounded bg-black/5 px-1\">#ffffff</code>). For RGB-format sjekk at verdiene er atskilt med komma og ligger i intervallet 0-255.</p><h3 class=\"h5 mb-2\">Match-funksjonen finner ikke en passende farge</h3><p class=\"text-mid mb-4\">Når bakgrunn og tekst har lignende lyshet i samme nyanse, kan algoritmen muligens ikke finne en variant som oppfyller kravene uten å endre nyansen. I så fall bør du vurdere å endre bakgrunnsfargen eller velge en helt annen tekstfarge.</p><h3 class=\"h5 mb-2\">Fargen i velgeren matcher ikke den inntastede koden</h3><p class=\"text-mid\">Nettleserens fargevelger støtter kun HEX-format uten gjennomsiktighet. Hvis du taster inn en farge i RGBA- eller HSLA-format med gjennomsiktighet, viser velgeren kun fargedelen (uten alpha). Kontrastberegningene tar likevel hensyn til gjennomsiktigheten.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvor er det verdt å sjekke fargelesbarhet?",
+      "description": "Lesbarhet er viktig overalt hvor noen må lese tekst eller gjenkjenne et grensesnittelement:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Nettsider",
+          "description": "Tekst på sider, knapper, lenker, skjemaer. Spesielt viktig for bedriftssider, hvor besøkende har ulik alder og ulike synsmuligheter."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Nettbutikker",
+          "description": "Priser, Kjøp nå-knapper, produktinformasjon. Lav lesbarhet kan bety tapte bestillinger."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Presentasjoner",
+          "description": "Lysbilder vist fra en projektor har ofte svakere kontrast enn på en skjerm. Det er verdt å sjekke fargene før presentasjonen."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Plakater og flyers",
+          "description": "Trykte materialer sett under ulike lysforhold krever høy kontrast."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Mobilapper",
+          "description": "Telefoner brukes i fullt sollys, om natten, av mennesker i alle aldre."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Restaurantmenyer",
+          "description": "Ofte trykt på farget papir eller med dekorative skrifttyper – det er lett å ende opp med for lav kontrast."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Fargelesbarhet for fargeblinde",
+      "html": "<p class=\"text-mid mb-4\">Fargeblindhet er en forstyrrelse av fargesynet som rammer ca. 8% av menn og 0,5% av kvinner. Fargeblinde personer kan ha vanskeligheter med å skille visse fargepar, selv når lyshetskontrasten er tilstrekkelig.</p><p class=\"text-mid mb-4\">De vanligste typene fargeblindhet:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deuteranopi</strong> – vanskeligheter med å skille grønn og rød (den vanligste formen)</li><li><strong>Protanopi</strong> – vanskeligheter med å se rød</li><li><strong>Tritanopi</strong> – vanskeligheter med å se blå og gul (sjelden)</li></ul><p class=\"text-mid mt-3\">Dette verktøyet sjekker lyshetskontrast, som er viktig for alle brukere. Ved design bør du imidlertid i tillegg unngå problematiske fargekombinasjoner (f.eks. rød tekst på grønn bakgrunn) og ikke utelukkende stole på farge for å formidle informasjon – bruk også former, ikoner og tekst.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hva kjennetegner fargekontrasttesteren?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiEyeLine",
+          "title": "Objektiv vurdering basert på matematisk formel",
+          "description": "Kontrastforholdet beregnes etter formelen fra WCAG-retningslinjer – resultatet avhenger ikke av skjerminnstillinger eller individuell fargeoppfatning."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Samsvar med internasjonal WCAG-standard",
+          "description": "Resultatene svarer til kravene i WCAG 2.1, som er grunnlaget for tilgjengelighetslovgivning i EU og mange andre land."
+        },
+        {
+          "icon": "RiMagicLine",
+          "title": "Automatisk fargetilpasning til terskel",
+          "description": "Match-funksjonen finner en variant av tekstfargen som oppfyller den valgte kontrastterskelen – bevarer nyansen, endrer kun lysheten."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Fem fargeformater",
+          "description": "Støttede formater: HEX, RGB, RGBA, HSL og HSLA. Fargekoden kan limes inn direkte fra Figma, Photoshop eller CSS-stilark."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Tre innholdstyper i én test",
+          "description": "Én sjekk viser resultatet for normal tekst, stor tekst (overskrifter, knapper) og ikoner – du trenger ikke teste hver type separat."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Live tekstforhåndsvisning",
+          "description": "Endring av tekst- eller bakgrunnsfarge oppdaterer straks forhåndsvisningen – du ser hvordan teksten ser ut på den valgte bakgrunnen, allerede før implementering."
         }
       ]
     },

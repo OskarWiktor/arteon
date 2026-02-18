@@ -139,6 +139,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionTimeline",
+      "title": "Miten värien poiminta kuvasta toimii?",
+      "description": "Tiedoston lataamisen jälkeen työkalu suorittaa useita vaiheita taustalla – koko analyysi tapahtuu paikallisesti selaimessa:",
+      "items": [
+        {
+          "icon": "RiZoomInLine",
+          "title": "Kuvan skaalaus",
+          "description": "Kuva pienennetään noin 240 pikselin levyiseksi. Tämä nopeuttaa analyysiä myös erittäin suurille kuville ilman vaikutusta värien tunnistuksen tarkkuuteen."
+        },
+        {
+          "icon": "RiGroupLine",
+          "title": "Samankaltaisten sävyjen ryhmittely",
+          "description": "Jokainen pikseli analysoidaan ja läheiset sävyt yhdistetään ryhmiksi. Kaksi lähes identtistä sinistä sävyä yhdistyvät yhdeksi väriksi paletissa."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Hallitsevien värien valinta",
+          "description": "Algoritmi valitsee värit, jotka peittävät kuvan suurimman pinta-alan. Tuloksena on enintään 12 värin lista järjestettynä yleisimmästä."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Läpinäkyvien pikselien ohitus",
+          "description": "PNG-tiedostoissa, joissa on läpinäkyvä tausta, näitä alueita ei oteta huomioon – poimija analysoi ainoastaan näkyvät värit. Koko prosessi kestää yleensä alle sekunnin."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Värien poimijan vianmääritys",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBarChartLine",
+          "title": "Poimija löysi alle 12 väriä",
+          "description": "Poimittujen värien määrä riippuu kuvan sisällöstä. Yksinkertainen kaksivärilogo antaa 2–3 tulosta – tämä on normaalia toimintaa. Työkalu ei lisää keinotekoisia värejä, vaan poimii vain kuvassa todellisuudessa esiintyvät."
+        },
+        {
+          "icon": "RiAlertLine",
+          "title": "Paletissa on odottamattomia värejä",
+          "description": "Ne voivat olla varjojen, liukuvärien tai valon heijastusten värejä – näiden alueiden pikselit ovat eri väriä kuin ensisilmäyksellä näkyvä kohde. Tasaisempivärisemmän kuvan käyttö tai tummien alueiden rajaus parantaa tuloksia."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Taustaväri hallitsee tuloksia",
+          "description": "Kun tausta peittää suuremman alueen kuin itse kohde, sen väri näkyy ensimmäisenä listalla. Ratkaisu: käytä PNG-tiedostoa läpinäkyvällä taustalla tai rajaa kuva niin, että kohde peittää suuremman osan."
+        },
+        {
+          "icon": "RiFileWarningLine",
+          "title": "Tiedostoa ei hyväksytä poimijassa",
+          "description": "Työkalu tukee ainoastaan PNG-, JPG- ja SVG-muotoja. Muissa muodoissa olevat tiedostot (GIF, TIFF, HEIC, PDF) vaativat muunnoksen ensin."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Mikä tekee tästä värien poimijasta erityisen?",
       "grid": "two",

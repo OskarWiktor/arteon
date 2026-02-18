@@ -115,10 +115,64 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kaip užpildyti parašo duomenis?",
+      "html": "<p class=\"text-mid\">Skirtuke <strong>Duomenys</strong> rasite visus laukus, kuriuos galite užpildyti. Privalomi tik du: vardas ir pavardė bei el. pašto adresas. Kiti laukai neprivalomi ir paraše bus rodomi tik juos užpildžius.</p><h3 class=\"h5 mt-6 mb-3\">Duomenų skirtuko laukai</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Eilutė virš vardo</strong> – papildomas tekstas virš vardo. Galite įrašyti įmonės pavadinimą, šūkį ar motto.</li><li><strong>Avataras / logotipas (paveikslėlio URL)</strong> – profilio nuotraukos arba įmonės logotipo URL adresas. Paveikslėlis turėtų būti kvadratinis (min. 120×120 px) ir viešai prieinamas.</li><li><strong>Vardas ir pavardė</strong> – privalomas laukas.</li><li><strong>Žyma prie vardo</strong> – trumpas tekstas šalia vardo, pvz., įvardžiai ar sutrumpinta pareigybė.</li><li><strong>Pareigos</strong> – vaidmuo įmonėje.</li><li><strong>Įmonės pavadinimas</strong> – organizacijos pavadinimas.</li><li><strong>Papildoma eilutė</strong> – trumpas jūsų veiklos ar pasiūlymo aprašymas.</li><li><strong>El. paštas</strong> – privalomas laukas.</li><li><strong>Telefonas</strong> – kontaktinis numeris laisvu formatu.</li><li><strong>Svetainė</strong> – pilnas URL adresas prasidedantis https://.</li><li><strong>Adresas</strong> – fizinis įmonės adresas.</li><li><strong>Formalūs duomenys</strong> – įmonės kodas, licencijos numeris ar kiti srities reikalavimai.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionDemo",
       "title": "Parašo išdėstymai – kurį pasirinktumėte?",
       "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Parašo išdėstymas</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div></div>",
       "html": "<p class=\"text-mid\">Generatorius siūlo aštuonis iš anksto nustatytus išdėstymus. Kiekvienas išdėstymas pateikia tą pačią informaciją skirtingu būdu.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> – klasikinis vertikalus išdėstymas, tinkantis daugumai situacijų.</li><li><strong>Top bar</strong> – horizontali linija atskiria parašą nuo turinio.</li><li><strong>Labels left</strong> – du stulpeliai: žymės ir reikšmės.</li><li><strong>Centered</strong> – formalus išvaizda, turinys centruotas.</li><li><strong>Compact</strong> – viskas vienoje eilutėje, minimalus aukštis.</li><li><strong>Two columns</strong> – duomenys kairėje, kontaktinė informacija dešinėje.</li><li><strong>Minimalist</strong> – tik pagrindinė informacija.</li><li><strong>Bottom bar</strong> – spalvota eilutė su kontaktiniais duomenimis parašo apačioje.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kaip pridėti CTA mygtukus?",
+      "html": "<p class=\"text-mid\">CTA mygtukas (call-to-action, raginimas veikti) yra paspaudžiamas elementas, nukreipiantis gavėją į pasirinktą puslapį. Tai gali būti nuoroda į susitikimų kalendorių, kontaktinę formą ar pasiūlymą. Generatorius leidžia pridėti du CTA mygtukus.</p><h3 class=\"h5 mt-6 mb-3\">Pagrindinis mygtukas</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Atidarykite skirtuką <strong>Mygtukai</strong> redaktoriuje.</li><li>Skyriuje <strong>Pagrindinis mygtukas</strong> įrašykite tekstą, kurį matys gavėjas, pvz., Rezervuokite nemokamą konsultaciją.</li><li>Lauke <strong>CTA nuoroda</strong> įklijuokite pilną URL adresą prasidedantį https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Antrinis mygtukas</h3><p class=\"text-mid\">Galite pridėti antrą CTA mygtuką outline stiliumi (permatomas fonas su kraštine). Užpildykite laukus analogiškai.</p><h3 class=\"h5 mt-6 mb-3\">Mygtukų apvalumas</h3><p class=\"text-mid\">Mygtukų skirtuko apačioje rasite parinktį <strong>Mygtukų apvalumas</strong>. Trys variantai: Be (aštrūs kampai), Lengvas (šiek tiek apvalinti) arba Pilnas (ovalus mygtukas).</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Kaip pridėti nuorodas į socialinius tinklus?",
+      "html": "<p class=\"text-mid\">Skirtuke <strong>Socialiniai tinklai</strong> galite pridėti nuorodas į savo profilius. Generatorius palaiko dvylika platformų: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (anksčiau Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram ir Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Kaip tai padaryti</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Atidarykite skirtuką <strong>Socialiniai tinklai</strong> redaktoriuje.</li><li>Prie kiekvienos platformos rasite URL lauką. Įklijuokite pilną nuorodą į savo profilį.</li><li>Užpildykite tik tuos laukus, kurie jums aktualūs. Tušti laukai paraše nebus rodomi.</li></ol><h3 class=\"h5 mt-6 mb-3\">Socialinių tinklų piktogramos</h3><p class=\"text-mid\">Skirtuko apačioje rasite parinktį <strong>Rodyti piktogramas šalia pavadinimų</strong>. Įjungus nuorodos rodomos kaip spalvotos SVG piktogramos vietoj vien pavadinimų.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Piktogramų dydis</strong> – pasirinkimai: Mažos (16 px), Vidutinės (20 px) arba Didelės (24 px).</li><li><strong>Piktogramų spalva</strong> – Platformų spalvos (numatytosios), Akcento spalva (vienoda) arba Teksto spalva.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Išvaizdos pritaikymas",
+      "html": "<p class=\"text-mid\">Skirtuke <strong>Išvaizda</strong> galite pritaikyti spalvas, šriftą ir kitus vizualinius elementus.</p><h3 class=\"h5 mt-6 mb-3\">Spalvų temos</h3><p class=\"text-mid\">Skirtuko viršuje rasite penkias iš anksto nustatytas temas: Tamsi, Mėlyna, Violetinė, Žalia ir Pilka. Paspaudus temą automatiškai nustatoma akcento ir teksto spalva.</p><h3 class=\"h5 mt-6 mb-3\">Spalvos</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Akcento spalva</strong> – naudojama šoninėje/viršutinėje juostoje, CTA mygtuke ir nuorodose.</li><li><strong>Teksto spalva</strong> – visų tekstų spalva paraše.</li><li><strong>Fono spalva</strong> – parašo fonas. Numatytoji balta.</li></ul><h3 class=\"h5 mt-6 mb-3\">Šriftas ir dydis</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Šriftas</strong> – pasirinkimai: Arial, Verdana, Tahoma, Trebuchet MS ir Georgia. Visi saugūs el. paštui.</li><li><strong>Teksto dydis</strong> – trys pasirinkimai: Mažas (12 px), Standartinis (14 px) ir Didesnis (16 px).</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Teksto stilius – atskirų elementų spalvos ir dydžiai",
+      "html": "<p class=\"text-mid\">Skirtuke <strong>Teksto stilius</strong> galite individualiai pritaikyti kiekvieno tekstinio elemento spalvą ir šrifto dydį.</p><h3 class=\"h5 mt-6 mb-3\">Prieinami elementai</h3><p class=\"text-mid\">Matomi tik tie elementai, kurie šiuo metu yra paraše. Kiekvienam elementui galite nustatyti:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Vardas ir pavardė</strong> – numatytai rodomas akcento spalva.</li><li><strong>Pareigos</strong> – vaidmuo įmonėje.</li><li><strong>Įmonė</strong> – organizacijos pavadinimas.</li><li><strong>Kontaktiniai duomenys</strong> – el. paštas, telefonas, svetainė.</li><li><strong>Socialiniai tinklai</strong> – nuorodos į profilius.</li><li><strong>Teisinė nuostata</strong> – teisinis tekstas apačioje.</li></ul><h3 class=\"h5 mt-6 mb-3\">Kaip pakeisti spalvą?</h3><p class=\"text-mid\">Prie kiekvieno elemento rasite spalvų parinktis. Spustelėkite spalvos kvadratą pasirinkimui. Atstatymo mygtukas grąžina numatytąją spalvą.</p><h3 class=\"h5 mt-6 mb-3\">Kaip pakeisti dydį?</h3><p class=\"text-mid\">Antroje eilutėje rasite dydžio valdymą su mygtukais - ir +. Diapazonas: nuo -4 iki +4 pikselių.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Tarpai tarp elementų",
+      "html": "<p class=\"text-mid\">Skirtuke <strong>Tarpai</strong> galite tiksliai valdyti atstumus tarp atskirų parašo elementų.</p><h3 class=\"h5 mt-6 mb-3\">Vidinis paraštė</h3><p class=\"text-mid\">Skirtuko viršuje rasite vidinio paraštės parinktį – atstumą tarp parašo turinio ir jo kraštų. Trys reikšmės: 8 px (mažas), 16 px (vidutinis) ir 24 px (didelis).</p><h3 class=\"h5 mt-6 mb-3\">Tarpai tarp elementų</h3><p class=\"text-mid\">Po paraštės rasite valdiklius atskiriems elementams su mygtukais + ir -.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Po vardo</strong></li><li><strong>Po pareigų / įmonės</strong></li><li><strong>Po papildomos eilutės</strong></li><li><strong>Po kontaktinių duomenų</strong></li><li><strong>Po socialinių tinklų</strong></li><li><strong>Po CTA mygtuko</strong></li><li><strong>Prieš teisinę nuostatą</strong></li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Teisinė nuostata / BDAR – kada pridėti?",
+      "html": "<p class=\"text-mid\">Skirtuke <strong>Nuostata / BDAR</strong> galite pridėti teisinį tekstą, kuris bus rodomas parašo apačioje mažesniu šriftu.</p><h3 class=\"h5 mt-6 mb-3\">Kada verta pridėti nuostatą?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Verslo korespondencija</strong> – informacija apie žinutės konfidencialumą ir prašymas ištrinti klaidingai pristatymo atveju.</li><li><strong>Srities reikalavimai</strong> – tam tikros sritys (pvz., teisinė, medicinos, finansų) reikalauja tam tikros informacijos kiekvienoje žinutėje.</li><li><strong>BDAR</strong> – informacija apie asmens duomenų tvarkymą, jei įmonė yra duomenų valdytoja.</li></ul><p class=\"text-mid mt-4\">Numatytai laukas užpildytas pavyzdiniu tekstu. Galite jį redaguoti, ištrinti arba pakeisti sava nuostata.</p><h3 class=\"h5 mt-6 mb-3\">Skirtuva linija</h3><p class=\"text-mid\">Po teksto lauku rasite parinktį <strong>Rodyti skirtuva liniją</strong>. Įjungus pridedama horizontali linija tarp kontaktinių duomenų ir teisinės nuostatos.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Automatinis išsaugojimas ir nustatymų atstatymas",
+      "html": "<p class=\"text-mid\">Generatorius automatiškai išsaugo visus nustatymus naršyklės atmintyje (localStorage). Atnaujinus puslapį ar vėl atidarius įrankį, duomenys, išdėstymas, spalvos ir visi kiti nustatymai bus atkurti.</p><h3 class=\"h5 mt-6 mb-3\">Kaip veikia automatinis išsaugojimas?</h3><p class=\"text-mid\">Kiekvienas pakeitimas (tekstas, spalva, išdėstymas, tarpai) nedelsiant išsaugomas naršyklės atmintyje. Išsaugojimas vyksta automatiškai fone.</p><h3 class=\"h5 mt-6 mb-3\">Kaip atstatyti nustatymus?</h3><p class=\"text-mid\">Po peržiūra rasite mygtuką <strong>Atstatyti išvaizdą</strong>. Patvirtinimas grąžina visus duomenis ir nustatymus į numatytąsias reikšmes. Šio veiksmo negalima atšaukti.</p><h3 class=\"h5 mt-6 mb-3\">Konfigūracijos eksportas ir importas</h3><p class=\"text-mid\">Po peržiūra rasite du papildomus mygtukus: <strong>Eksportuoti nustatymus</strong> ir <strong>Importuoti nustatymus</strong>. Eksportas išsaugo visą konfigūraciją į JSON failą. Importas įkelia anksčiau išsaugotą konfigūraciją.</p>"
     },
     {
       "type": "gap",
@@ -152,6 +206,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Parašo peržiūra ir eksporto parinktys",
+      "html": "<p class=\"text-mid\">Peržiūros skydelis rodomas redaktoriaus dešinėje ir automatiškai atnaujinamas su kiekvienu pakeitimu. Peržiūra pritvirtinta prie ekrano (sticky), todėl matoma net slenkant.</p><h3 class=\"h5 mt-6 mb-3\">Peržiūros fono keitimas</h3><p class=\"text-mid\">Virš peržiūros rasite tris mygtukus fono keitimui: <strong>Šviesus</strong> (numatytasis pilkas fonas), <strong>Tamsus</strong> (tamsus fonas skaitomumo patikrinimui) ir <strong>Šachmatinis</strong> (šachmatinis raštas permatomumui ir kraštams matyti).</p><h3 class=\"h5 mt-6 mb-3\">Veiksmo mygtukai</h3><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Kopijuoti parašą (Gmail / Outlook)</strong> – nukopijuoja parašą kaip formatuotą HTML į iškarpinę.</li><li><strong>Kopijuoti HTML kodą</strong> – nukopijuoja neapdorotą HTML kodą į iškarpinę.</li><li><strong>Atsisiųsti kaip HTML</strong> – išsaugo parašo kodą kaip .html failą.</li><li><strong>Rodyti HTML kodą</strong> – atidaro modalinį langą su šaltinio kodu.</li><li><strong>Eksportuoti nustatymus</strong> – išsaugo visą konfigūraciją į JSON failą.</li><li><strong>Importuoti nustatymus</strong> – įkelia konfigūraciją iš JSON failo.</li><li><strong>Atstatyti išvaizdą</strong> – grąžina visus duomenis ir nustatymus į numatytąsias reikšmes (po patvirtinimo).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Kam skirtas el. pašto parašo generatorius?",
       "grid": "two",
@@ -175,6 +238,62 @@
           "icon": "RiScales3Line",
           "title": "Teisininkai, buhalteriai, gydytojai",
           "description": "Galimybė pridėti teisines pastabas, licencijų informaciją ar kitus profesinius duomenis."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kuo šis el. pašto parašo generatorius ypatingas?",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Aštuoni parašo išdėstymai",
+          "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist ir bottom bar."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Automatinis išsaugojimas naršyklėje",
+          "description": "Kiekvienas pakeitimas automatiškai išsaugomas naršyklės atmintyje. Parašas lieka prieinamas po puslapio atnaujinimo."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Konfigūracijos eksportas ir importas",
+          "description": "Visa parašo konfigūracija gali būti eksportuota kaip JSON failas ir pasidalinta su kolegomis."
+        },
+        {
+          "icon": "RiAppsLine",
+          "title": "12 socialinių platformų",
+          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram ir Pinterest."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Išplėstinis pritaikymas",
+          "description": "Avataro forma ir dydis, linijų stilizavimas, individualios spalvos ir teksto dydžiai."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Daug eksporto parinkčių",
+          "description": "HTML kopijavimas, failo atsisiuntimas, šaltinio kodo peržiūra, JSON konfigūracijos eksportas/importas."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privatumas",
+          "description": "Duomenys nesiunčiami į serverį. Generatorius visiškai veikia naršyklėje."
+        },
+        {
+          "icon": "RiMailCheckLine",
+          "title": "Suderinamumas",
+          "description": "Sugeneruotas HTML kodas veikia Gmail, Outlook, Apple Mail ir Thunderbird."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Peržiūra realiuoju laiku",
+          "description": "Kiekvienas pakeitimas matomas iš karto šviesiame, tamsiame ar šachmatiniame fone."
         }
       ]
     },

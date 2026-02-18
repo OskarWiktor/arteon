@@ -195,6 +195,24 @@
       "variant": "line"
     },
     {
+      "type": "sectionDemo",
+      "title": "QR kodo išvaizdos pritaikymas",
+      "subtitle": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Dydis</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Paraštė</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kodo spalva</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Fono spalva</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Generatorius leidžia pritaikyti kelis parametrus, turinčius įtakos kodo išvaizdai ir skaitomumui:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Dydis (px)</strong> – kodo matmuo pikseliais. Standartiniam spausdinimui (skrajutės, vizitinės kortelės) pasirinkite 300–500 px. Skaitmeniniam naudojimui pakanka 150–200 px.</li><li><strong>Paraštė</strong> – balta sritis aplink kodą, būtina tinkamam nuskaitymui. Rekomenduojama reikšmė yra 2–4. Reikšmė 0 gali apsunkinti nuskaitymą tamsiame fone.</li><li><strong>QR kodo spalva</strong> – numatytoji yra juoda (#000000). Galite pakeisti bet kuria tamsia spalva, atitinkančia vizualinį identitetą.</li><li><strong>Fono spalva</strong> – numatytoji yra balta (#ffffff). Galite pakeisti bet kuria šviesia spalva. Generatorius perspės, jei kontrastas bus per mažas.</li></ul><p class=\"text-mid mt-3\"><strong>Patarimas:</strong> Išlaikykite aukštą kontrastą tarp kodo ir fono (mažiausiai 3:1). Tamsus kodas šviesiame fone nuskaitomas lengviausiai.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Klaidų taisymo lygiai – L, M, Q, H",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Low / Žemas)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Medium / Vidutinis)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Quartile / Aukštas)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (High / Maksimalus)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Klaidų taisymas – tai mechanizmas, leidžiantis nuskaityti QR kodą net tada, kai dalis yra pažeista, nešvari ar uždengta. Generatorius naudoja Reed-Solomon algoritmą, QR kodų standartą.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Low / Žemas) – 7%</strong> – mažiausias perteklius, kodas kompaktiškiausias. Pasirinkite, kai kodas bus naudojamas idealiomis sąlygomis (ekranas, aukštos kokybės spauda).</li><li><strong>M (Medium / Vidutinis) – 15%</strong> – numatytoji reikšmė, geras balansas tarp talpos ir atsparumo. Tinka daugumai naudojimo atvejų.</li><li><strong>Q (Quartile / Aukštas) – 25%</strong> – didesnis atsparumas pažeidimams. Pasirinkite kodams, spausdinamiems ant užteršimui jautrių medžiagų.</li><li><strong>H (High / Maksimalus) – 30%</strong> – aukščiausias atsparumas. Rekomenduojama lauko medžiagoms, pakuotėms ir situacijoms, kai kodas gali būti dalinai uždengtas (pvz., logotipas viduryje).</li></ul><p class=\"text-mid mt-3\"><strong>Pastaba:</strong> Aukštesnis taisymo lygis reiškia didesnį ir sudėtingesnį kodą. Esant dideliam duomenų kiekiui ir lygiui H, kodas gali tapti labai tankus.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionFeatureComparison",
       "title": "PNG ir SVG – kurį formatą pasirinkti spausdinimui?",
       "plans": [
@@ -258,6 +276,31 @@
             "svg": true
           }
         }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Patarimai spausdinant QR kodus",
+      "description": "Kad QR kodas būtų skaitomas po spausdinimo, laikykitės kelių taisyklių:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "Minimalus dydis",
+          "description": "Kodas turėtų būti bent 2x2 cm nuskaitymui iš artimo atstumo. Kuo didesnis nuskaitymo atstumas, tuo didesnis turi būti kodas."
+        },
+        { "icon": "RiContrastLine", "title": "Kontrastas", "description": "Tamsus kodas šviesiame fone. Venkite pastelinių spalvų ir žemo kontrasto." },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Paraštė aplink kodą",
+          "description": "Palikite tuščią sritį aplink kodą. Nedėkite kitų grafinių elementų per arti – paraštė būtina tinkamam nuskaitymui."
+        },
+        { "icon": "RiEyeLine", "title": "Testavimas", "description": "Prieš masinį spausdinimą išbandykite kodą skirtinguose telefonuose ir skirtingomis apšvietimo sąlygomis." },
+        { "icon": "RiShieldCheckLine", "title": "Taisymo lygis", "description": "Lauko spaudai ir pažeidimams jautrioms medžiagoms pasirinkite lygį Q arba H." }
       ]
     },
     {

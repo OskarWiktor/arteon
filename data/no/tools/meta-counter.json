@@ -121,6 +121,53 @@
       "variant": "line"
     },
     {
+      "type": "sectionDemo",
+      "title": "Hvordan tolke resultatene?",
+      "subtitle": "Vurderingsstatuser",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta-tittel</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Tegn: <strong>52</strong></span><span class=\"text-mid\">Ord: <strong>7</strong></span><span class=\"text-mid\">Piksler: <strong>456px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Riktig lengde</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta-beskrivelse</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Tegn: <strong>142</strong></span><span class=\"text-mid\">Ord: <strong>21</strong></span><span class=\"text-mid\">Piksler: <strong>812px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Riktig lengde</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Verktøyet viser tre metrikker for hvert felt sammen med en fargekodet lengdevurdering:</p><h3 class=\"h5 mt-6 mb-2\">Metrikker</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tegn</strong> – totalt antall tegn (inkludert mellomrom). Lett å forstå, men mindre presist enn piksler.</li><li><strong>Ord</strong> – antall ord. Nyttig for rask vurdering av lengde.</li><li><strong>Bredde (px)</strong> – tekstens bredde i piksler. Dette er verdien Google faktisk bruker ved avkorting.</li></ul><h3 class=\"h5 mt-6 mb-2\">Vurderingsstatuser</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Riktig lengde</strong> (grønn) – teksten er innenfor anbefalt intervall. Google bør vise den i sin helhet.</li><li><strong class=\"text-warning-text\">For kort</strong> (gul) – teksten er for kort. Det er plass til mer informasjon som kan øke klikkraten.</li><li><strong class=\"text-error-text\">For lang</strong> (rød) – teksten overskrider anbefalt intervall. Google kan avkorte den. Vurder å forkorte.</li><li><strong class=\"text-light\">Ingen data</strong> (grå) – feltet er tomt. Skriv inn tekst for å se analysen.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Hvorfor er bredde i piksler viktigere enn antall tegn?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">iiiiiiiiiiiiiiii (16 tegn)</p><div class=\"bg-success-icon mt-1 h-3 w-1/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~64px bredde</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">WWWWWWWWWWWWWWWW (16 tegn)</p><div class=\"bg-error-icon mt-1 h-3 w-3/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~256px bredde</p></div></div>",
+      "html": "<p class=\"text-mid\">Ulike bokstaver har ulik bredde. Sammenlign &quot;iiii&quot; og &quot;WWWW&quot; – begge har 4 tegn, men den visuelle bredden er helt forskjellig. Google måler tekstbredde i piksler, ikke i tegn.</p><p class=\"text-mid mt-3\">Derfor kan en tittel med mange smale bokstaver (i, l, t, f) være lengre enn en tittel med brede bokstaver (W, M, O), selv om de har samme antall tegn. Verktøyet viser begge verdier: antall tegn (lettere å forstå) og bredde i piksler (mer presist for Google).</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Snippet-forhåndsvisning – hva viser den?",
+      "html": "<p class=\"text-mid\">Forhåndsvisningen (snippet preview) simulerer hvordan tittel og beskrivelse ser ut i Googles søkeresultater. Det er en veiledende visualisering – det faktiske utseendet kan variere litt avhengig av enhet og nettleser.</p><h3 class=\"h5 mt-6 mb-2\">Elementer i forhåndsvisningen</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> – sidens adresse vist over tittelen. Du kan skrive den inn i det valgfrie feltet for en mer realistisk forhåndsvisning.</li><li><strong>Tittel</strong> – den blå overskriften. Hvis den er for lang, avkorter verktøyet den automatisk med prikker.</li><li><strong>Beskrivelse</strong> – den grå teksten under tittelen. Avkortes også hvis den overskrider grensen.</li></ul><h3 class=\"h5 mt-6 mb-2\">Hva forhåndsvisningen ikke viser</h3><p class=\"text-mid\">Forhåndsvisningen inkluderer ikke alle elementer Google kan legge til: datoer, stjernevurderinger, lenker til undersider eller utvidede fragmenter. Det er en forenklet versjon med fokus på tekstlengde.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Vanligste problemer og løsninger",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "Tittelen er for lang",
+          "description": "Forkort tittelen og behold de viktigste ordene i begynnelsen. Fjern adjektiver som beste, profesjonell – de tilfører sjelden verdi. Firmanavn til slutt etter separator."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Beskrivelsen er for kort",
+          "description": "Legg til mer informasjon: hva brukeren finner på siden, hvilken fordel vedkommende får, hva som skiller tilbudet. Avslutt med en oppfordring til handling."
+        },
+        {
+          "icon": "RiRuler2Line",
+          "title": "Pikselbredden er annerledes enn forventet",
+          "description": "Verktøyet måler bredde med en standardskrift som ligner den Google bruker. Resultatet kan variere litt avhengig av nettleseren."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Hvem er meta-tag-sjekkerern for?",
       "grid": "two",

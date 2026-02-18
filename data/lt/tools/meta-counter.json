@@ -121,6 +121,53 @@
       "variant": "line"
     },
     {
+      "type": "sectionDemo",
+      "title": "Kaip interpretuoti rezultatus?",
+      "subtitle": "Vertinimo būsenos",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta pavadinimas</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Simboliai: <strong>52</strong></span><span class=\"text-mid\">Žodžiai: <strong>7</strong></span><span class=\"text-mid\">Pikseliai: <strong>456px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Tinkamas ilgis</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta aprašymas</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Simboliai: <strong>142</strong></span><span class=\"text-mid\">Žodžiai: <strong>21</strong></span><span class=\"text-mid\">Pikseliai: <strong>812px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Tinkamas ilgis</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Įrankis rodo tris metrikas kiekvienam laukui kartu su spalviniu ilgio vertinimu:</p><h3 class=\"h5 mt-6 mb-2\">Metrikos</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Simboliai</strong> – bendras simbolių skaičius (su tarpais). Lengvai suprantama, bet mažiau tikslu nei pikseliai.</li><li><strong>Žodžiai</strong> – žodžių skaičius. Naudinga greitam ilgio įvertinimui.</li><li><strong>Plotis (px)</strong> – teksto plotis pikseliais. Tai reikšmė, kurią Google iš tikrųjų naudoja apkirpdamas.</li></ul><h3 class=\"h5 mt-6 mb-2\">Vertinimo būsenos</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Tinkamas ilgis</strong> (žalia) – tekstas yra rekomenduojamame intervale. Google turėtų jį rodyti visą.</li><li><strong class=\"text-warning-text\">Per trumpas</strong> (geltona) – tekstas per trumpas. Yra vietos papildomai informacijai, kuri gali padidinti paspaudimų rodiklį.</li><li><strong class=\"text-error-text\">Per ilgas</strong> (raudona) – tekstas viršija rekomenduojamą intervalą. Google gali jį apkirpti. Apsvarstykite sutrumpinimą.</li><li><strong class=\"text-light\">Nėra duomenų</strong> (pilka) – laukas tuščias. Įveskite tekstą, kad matytumėte analizę.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Kodėl plotis pikseliais yra svarbesnis nei simbolių skaičius?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">iiiiiiiiiiiiiiii (16 simbolių)</p><div class=\"bg-success-icon mt-1 h-3 w-1/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~64px pločio</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">WWWWWWWWWWWWWWWW (16 simbolių)</p><div class=\"bg-error-icon mt-1 h-3 w-3/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~256px pločio</p></div></div>",
+      "html": "<p class=\"text-mid\">Skirtingos raidės turi skirtingą plotį. Palyginkite &quot;iiii&quot; ir &quot;WWWW&quot; – abi turi 4 simbolius, bet vizualinis plotis visiškai skiriasi. Google matuoja teksto plotį pikseliais, ne simboliais.</p><p class=\"text-mid mt-3\">Todėl pavadinimas su daug siaurų raidžių (i, l, t, f) gali būti ilgesnis nei pavadinimas su plačiomis raidėmis (W, M, O), nors simbolių skaičius toks pats. Įrankis rodo abi reikšmes: simbolių skaičių (lengviau suprasti) ir plotį pikseliais (tiksliau Google atžvilgiu).</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Snippet peržiūra – ką ji rodo?",
+      "html": "<p class=\"text-mid\">Peržiūra (snippet preview) simuliuoja, kaip pavadinimas ir aprašymas atrodo Google paieškos rezultatuose. Tai orientacinė vizualizacija – tikrasis vaizdas gali šiek tiek skirtis priklausomai nuo įrenginio ir naršyklės.</p><h3 class=\"h5 mt-6 mb-2\">Peržiūros elementai</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> – puslapio adresas rodomas virš pavadinimo. Galite jį įvesti į neprivalomą lauką realističesnei peržiūrai.</li><li><strong>Pavadinimas</strong> – mėlyna antraštė. Jei per ilga, įrankis automatiškai ją apkerpa ir prideda tris taškus.</li><li><strong>Aprašymas</strong> – pilkas tekstas po pavadinimu. Taip pat apkerpamas, jei viršija limitą.</li></ul><h3 class=\"h5 mt-6 mb-2\">Ko peržiūra nerodo</h3><p class=\"text-mid\">Peržiūra neapima visų elementų, kuriuos Google gali pridėti prie rezultato: datų, žvaigždučių įvertinimų, nuorodų į polapius ir išplėstinių fragmentų. Tai supaprastinta versija, orientuota į teksto ilgį.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Dažniausios problemos ir sprendimai",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "Pavadinimas per ilgas",
+          "description": "Sutrumpinkite pavadinimą ir svarbiausius žodžius palikite pradžioje. Pašalinkite būdvardžius kaip geriausias, profesionalus – jie retai prideda vertės. Įmonės pavadinimas gale po skirtuvo."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Aprašymas per trumpas",
+          "description": "Pridėkite daugiau informacijos: ką vartotojas ras puslapyje, kokią naudą gaus, kuo pasiūlymas išsiskiria. Užbaikite raginimu veikti."
+        },
+        {
+          "icon": "RiRuler2Line",
+          "title": "Plotis pikseliais kitoks nei tikėtasi",
+          "description": "Įrankis matuoja plotį standartiniu šriftu, panašiu į Google naudojamą. Rezultatas gali šiek tiek skirtis priklausomai nuo naršyklės."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Kam skirtas meta žymių tikrintuvas?",
       "grid": "two",

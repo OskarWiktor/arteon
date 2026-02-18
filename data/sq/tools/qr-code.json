@@ -195,6 +195,24 @@
       "variant": "line"
     },
     {
+      "type": "sectionDemo",
+      "title": "Personalizimi i pamjes së kodit QR",
+      "subtitle": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Madhësia</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margjina</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Ngjyra e kodit</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Ngjyra e sfondit</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Gjeneruesi ju lejon të personalizoni disa parametra që ndikojnë pamjen dhe lexueshmërinë e kodit:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Madhësia (px)</strong> – dimensioni i kodit në pikselë. Për shtypje standarde (fletëpalosje, karta vizite) zgjidhni 300–500 px. Për përdorim digjital mjafton 150–200 px.</li><li><strong>Margjina</strong> – zona e bardhë rreth kodit, e nevojshme për skanim të saktë. Vlera e rekomanduar është 2–4. Vlera 0 mund të vështirësojë skanimin në sfond të errët.</li><li><strong>Ngjyra e kodit QR</strong> – e parazgjedhur është e zezë (#000000). Mund ta ndryshoni në çdo ngjyrë të errët që përputhet me identitetin vizual.</li><li><strong>Ngjyra e sfondit</strong> – e parazgjedhur është e bardhë (#ffffff). Mund ta ndryshoni në çdo ngjyrë të çelët. Gjeneruesi paralajmëron nëse kontrasti është shumë i ulët.</li></ul><p class=\"text-mid mt-3\"><strong>Këshillë:</strong> Ruani kontrast të lartë ndërmjet kodit dhe sfondit (minimum 3:1). Kodi i errët në sfond të çelët skanohet më lehtë.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Nivelet e korrigjimit të gabimeve – L, M, Q, H",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Low / I ulët)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Medium / Mesatar)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Quartile / I lartë)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (High / Maksimal)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Korrigjimi i gabimeve është një mekanizëm që mundëson leximin e kodit QR edhe kur një pjesë është e dëmtuar, e ndotur ose e mbuluar. Gjeneruesi përdor algoritmin Reed-Solomon, standardin në kodet QR.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Low / I ulët) – 7%</strong> – redundancë minimale, kodi është më kompakt. Zgjidhni kur kodi do të përdoret në kushte ideale (ekran, shtypje cilësore).</li><li><strong>M (Medium / Mesatar) – 15%</strong> – vlera e parazgjedhur, balancë e mirë ndërmjet kapacitetit dhe qëndrueshmërisë. I përshtatshëm për shumicën e përdorimeve.</li><li><strong>Q (Quartile / I lartë) – 25%</strong> – qëndrueshmëri më e madhe ndaj dëmtimeve. Zgjidhni për kode të shtypura në materiale të ekspozuara ndaj ndotjes.</li><li><strong>H (High / Maksimal) – 30%</strong> – qëndrueshmëria më e lartë. Rekomandohet për shtypje në materiale të jashtme, ambalazhe dhe situata ku kodi mund të jetë pjesërisht i mbuluar (p.sh. logo në qendër).</li></ul><p class=\"text-mid mt-3\"><strong>Shënim:</strong> Niveli më i lartë i korrigjimit do të thotë kod më i madh dhe më kompleks. Me sasi të mëdha të dhënash dhe nivel H, kodi mund të bëhet shumë i dendur.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionFeatureComparison",
       "title": "PNG vs SVG – cilin format të zgjidhni për shtypje?",
       "plans": [
@@ -258,6 +276,31 @@
             "svg": true
           }
         }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Këshilla për shtypjen e kodeve QR",
+      "description": "Që kodi QR të jetë i lexueshëm pas shtypjes, ndiqni disa rregulla:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "Madhësia minimale",
+          "description": "Kodi duhet të jetë të paktën 2x2 cm për skanim nga afërsia. Sa më e madhe distanca e skanimit, aq më i madh duhet të jetë kodi."
+        },
+        { "icon": "RiContrastLine", "title": "Kontrasti", "description": "Kod i errët në sfond të çelët. Shmangni ngjyrat pastel dhe kontrastin e ulët." },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Margjina rreth kodit",
+          "description": "Ruani një zonë bosh rreth kodit. Mos vendosni elemente të tjera grafike shumë afër – margjina është e nevojshme për skanim të saktë."
+        },
+        { "icon": "RiEyeLine", "title": "Testimi", "description": "Para shtypjes masive, testoni kodin në telefona të ndryshëm dhe në kushte të ndryshme ndriçimi." },
+        { "icon": "RiShieldCheckLine", "title": "Niveli i korrigjimit", "description": "Për shtypje në ambient të jashtëm dhe materiale të ekspozuara ndaj dëmtimeve, zgjidhni nivelin Q ose H." }
       ]
     },
     {

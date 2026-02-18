@@ -103,10 +103,10 @@ for (const locale of NEW_LOCALES) {
   for (const [file, key] of Object.entries(FILE_TO_KEY)) {
     const fp = path.join(ROOT, 'data', locale, 'tools', file);
     let content = fs.readFileSync(fp, 'utf-8');
-    
+
     const enSlug = EN_SLUGS[key];
     const newSlug = LOCALE_SLUGS[locale][key];
-    
+
     if (enSlug && newSlug && content.includes(enSlug)) {
       content = content.split(enSlug).join(newSlug);
       fs.writeFileSync(fp, content, 'utf-8');

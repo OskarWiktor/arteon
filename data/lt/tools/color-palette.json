@@ -207,6 +207,32 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Paletių generatoriaus trikčių šalinimas",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Paletės nesikeičia įvedus spalvą",
+          "description": "Vien HEX kodo įvedimas automatiškai negeneruoja palečių – pakeitimą reikia patvirtinti mygtuku <strong>Atnaujinti spalvą</strong>. Tik po patvirtinimo įrankis perskaičiuoja visas 9 schemas."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Pranešimas apie netinkamą formatą",
+          "description": "Generatorius priima tik HEX formatą su # simboliu pradžioje, pvz. <code class=\"rounded bg-black/5 px-1\">#FF5500</code>. Formatai be # (pvz. <code class=\"rounded bg-black/5 px-1\">FF5500</code>) arba RGB užrašu (pvz. <code class=\"rounded bg-black/5 px-1\">rgb(255,85,0)</code>) nepalaikomi."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Sutrumpintas ir pilnas HEX formatas",
+          "description": "Palaikomi abu užrašai: pilnas <code class=\"rounded bg-black/5 px-1\">#RRGGBB</code> (pvz. #FF5500) ir sutrumpintas <code class=\"rounded bg-black/5 px-1\">#RGB</code> (pvz. #F50). Generatorius automatiškai atpažįsta abu formatus ir traktuoja juos vienodai."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Dažnai užduodami klausimai apie spalvų paletių generatorių",
       "openByDefault": 1,
@@ -220,6 +246,11 @@
           "question": "Kiek spalvų yra kiekvienoje paletėje?",
           "answer": "Kiekviena paletė turi 4–6 spalvas. Skaičius priklauso nuo schemos tipo – monochromatinės ir toninės paletės kuria daugiau atspalvių, o komplementarios ir triadinės paletės orientuojasi į mažiau kontrastingų spalvų.",
           "answerSchemaText": "Kiekviena paletė turi 4–6 spalvas, priklausomai nuo schemos tipo."
+        },
+        {
+          "question": "Kas yra HSL spalvų erdvė ir kaip ją skaityti?",
+          "answer": "HSL yra spalvos aprašymo būdas trimis reikšmėmis: H (atspalvis, 0°–360° spalvų rate), S (sodrumas, 0%–100%) ir L (šviesumas, 0%–100%). Generatorius rodo HSL reikšmes šalia kiekvienos spalvos, todėl lengviau suprasti, kuo skiriasi paletės spalvos – pvz., monochromatinė paletė keičia tik šviesumą (L), išlaikydama tą patį atspalvį (H).",
+          "answerSchemaText": "HSL aprašo spalvas per atspalvį (H), sodrumą (S) ir šviesumą (L). Generatorius rodo šias reikšmes šalia kiekvienos spalvos paletėje."
         },
         {
           "question": "Ar galiu sukurtas paletes naudoti komerciniais tikslais?",

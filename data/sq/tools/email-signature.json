@@ -115,10 +115,64 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Si të plotësoni të dhënat në nënshkrim?",
+      "html": "<p class=\"text-mid\">Në skedën <strong>Të dhënat</strong> gjeni të gjitha fushat që mund t'i plotësoni. Vetëm dy janë të detyrueshme: emri dhe mbiemri dhe adresa email. Fushat e tjera janë opsionale dhe shfaqen në nënshkrim vetëm nëse i plotësoni.</p><h3 class=\"h5 mt-6 mb-3\">Fushat në skedën Të dhënat</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Rreshti mbi emrin</strong> – tekst shtesë mbi emrin. Mund të shkruani emrin e kompanisë, sloganin ose moton.</li><li><strong>Avatar / logo (URL e imazhit)</strong> – URL e fotografisë së profilit ose logos së kompanisë. Imazhi duhet të jetë katror (min. 120×120 px) dhe i aksesueshëm publikisht.</li><li><strong>Emri dhe mbiemri</strong> – fushë e detyrueshme.</li><li><strong>Etiketa pranë emrit</strong> – tekst i shkurtër pranë emrit, p.sh. përemrat ose titulli i shkurtuar.</li><li><strong>Pozicioni</strong> – roli në kompani.</li><li><strong>Emri i kompanisë</strong> – emri i organizatës.</li><li><strong>Rreshti shtesë</strong> – përshkrim i shkurtër i aktivitetit ose ofertës tuaj.</li><li><strong>Email</strong> – fushë e detyrueshme.</li><li><strong>Telefoni</strong> – numri kontaktues në format të lirë.</li><li><strong>Faqja web</strong> – URL e plotë duke filluar me https://.</li><li><strong>Adresa</strong> – adresa fizike e kompanisë.</li><li><strong>Të dhëna formale</strong> – NIPT, numri licencës ose të dhëna të tjera të kërkuara nga industria.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionDemo",
       "title": "Paraqitjet e nënshkrimit – cilën të zgjidhni?",
       "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Paraqitja e nënshkrimit</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div></div>",
       "html": "<p class=\"text-mid\">Gjeneruesi ofron tetë paraqitje të paracaktuara. Secila prezanton të njëjtin informacion në një mënyrë tjetër.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> – paraqitje klasike vertikale, përshtatet për shumicën e rasteve të përdorimit.</li><li><strong>Top bar</strong> – vijë horizontale ndan nënshkrimin nga përmbajtja.</li><li><strong>Labels left</strong> – dy kolona: etiketa dhe vlera.</li><li><strong>Centered</strong> – pamje formale, përmbajtja në qendër.</li><li><strong>Compact</strong> – gjithçka në një rresht, lartësi minimale.</li><li><strong>Two columns</strong> – të dhënat majtas, kontaktet djathtas.</li><li><strong>Minimalist</strong> – vetëm informacioni bazë.</li><li><strong>Bottom bar</strong> – vijë me ngjyra me kontakte në fund të nënshkrimit.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Si të shtoni butonat CTA?",
+      "html": "<p class=\"text-mid\">Butoni CTA (call-to-action, thirrje për veprim) është një element i klikueshëm që drejton marrësin në një faqe të zgjedhur. Mund të jetë një lidhje për kalendarin e takimeve, formën e kontaktit ose ofertën. Gjeneruesi lejon shtimin e dy butonave CTA.</p><h3 class=\"h5 mt-6 mb-3\">Butoni kryesor</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Hapni skedën <strong>Butonat</strong> në redaktues.</li><li>Në seksionin <strong>Butoni kryesor</strong> shkruani tekstin që marrësi do të shohë, p.sh. Rezervoni konsultim falas.</li><li>Në fushën <strong>Lidhja CTA</strong> ngjitni URL-në e plotë duke filluar me https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Butoni sekondar</h3><p class=\"text-mid\">Mund të shtoni butonin e dytë CTA në stilin outline (sfond transparent me kufi). Plotësoni fushat në mënyrë analoge.</p><h3 class=\"h5 mt-6 mb-3\">Rrumbullakimi i butonave</h3><p class=\"text-mid\">Në fund të skedës Butonat gjeni opsionin <strong>Rrumbullakimi i butonave</strong>. Tre variante: Asnjë (kënde të mprehta), I lehtë (pak i rrumbullakët) ose I plotë (buton oval).</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Si të shtoni lidhje për rrjetet sociale?",
+      "html": "<p class=\"text-mid\">Në skedën <strong>Rrjetet sociale</strong> mund të shtoni lidhje për profilet tuaja. Gjeneruesi mbështet dymbëdhjetë platforma: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (më parë Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram dhe Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Si ta bëni</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Hapni skedën <strong>Rrjetet sociale</strong> në redaktues.</li><li>Pranë secilës platformë gjeni një fushë për URL-në. Ngjitni lidhjen e plotë për profilin tuaj.</li><li>Plotësoni vetëm ato fusha që janë relevante për ju. Fushat boshe nuk shfaqen në nënshkrim.</li></ol><h3 class=\"h5 mt-6 mb-3\">Ikonat e rrjeteve sociale</h3><p class=\"text-mid\">Në fund të skedës gjeni opsionin <strong>Shfaq ikonat pranë emrave</strong>. Kur aktivizohet, lidhjet shfaqen si ikona SVG me ngjyra në vend të emrave të vetëm.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Madhësia e ikonave</strong> – opsionet: Të vogla (16 px), Mesatare (20 px) ose Të mëdha (24 px).</li><li><strong>Ngjyra e ikonave</strong> – Ngjyrat e platformave (ngjyrat e paracaktuara), Ngjyra e theksimit (e njëtrajtshme) ose Ngjyra e tekstit.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Personalizimi i pamjes",
+      "html": "<p class=\"text-mid\">Në skedën <strong>Pamja</strong> mund të personalizoni ngjyrat, fontin dhe elemente të tjera vizuale.</p><h3 class=\"h5 mt-6 mb-3\">Temat e ngjyrave</h3><p class=\"text-mid\">Në krye të skedës gjeni pesë tema të paracaktuara: E errët, Blu, Vjollcë, Gjelbër dhe Gri. Klikimi mbi një temë vendos automatikisht ngjyrën e theksimit dhe ngjyrën e tekstit.</p><h3 class=\"h5 mt-6 mb-3\">Ngjyrat</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Ngjyra e theksimit</strong> – përdoret në shiritin anësor/të sipërm, butonin CTA dhe lidhjet.</li><li><strong>Ngjyra e tekstit</strong> – ngjyra e të gjitha teksteve në nënshkrim.</li><li><strong>Ngjyra e sfondit</strong> – sfondi i nënshkrimit. Parazgjedhur e bardhë.</li></ul><h3 class=\"h5 mt-6 mb-3\">Fonti dhe madhësia</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Fonti</strong> – opsionet: Arial, Verdana, Tahoma, Trebuchet MS dhe Georgia. Të gjitha janë të sigurta për email.</li><li><strong>Madhësia e tekstit</strong> – tre opsione: E vogël (12 px), Standarde (14 px) dhe Më e madhe (16 px).</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Stili i tekstit – ngjyrat dhe madhësitë e elementeve të veçanta",
+      "html": "<p class=\"text-mid\">Në skedën <strong>Stili i tekstit</strong> mund të personalizoni individualisht ngjyrën dhe madhësinë e fontit për çdo element teksti në nënshkrim.</p><h3 class=\"h5 mt-6 mb-3\">Elementet e disponueshme</h3><p class=\"text-mid\">Të dukshme janë vetëm ata elemente që aktualisht ndodhen në nënshkrim. Për çdo element mund të vendosni:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Emri dhe mbiemri</strong> – parazgjedhur shfaqet në ngjyrën e theksimit.</li><li><strong>Pozicioni</strong> – roli në kompani.</li><li><strong>Kompania</strong> – emri i organizatës.</li><li><strong>Të dhënat e kontaktit</strong> – email, telefon, web.</li><li><strong>Rrjetet sociale</strong> – lidhjet për profilet.</li><li><strong>Klauzola ligjore</strong> – teksti ligjor në fund.</li></ul><h3 class=\"h5 mt-6 mb-3\">Si të ndryshoni ngjyrën?</h3><p class=\"text-mid\">Pranë çdo elementi gjeni opsionet e ngjyrave. Klikoni mbi katrorin me ngjyrë për të zgjedhur. Butoni i rivendosjes rikthen ngjyrën e paracaktuar.</p><h3 class=\"h5 mt-6 mb-3\">Si të ndryshoni madhësinë?</h3><p class=\"text-mid\">Në rreshtin e dytë gjeni kontrollin e madhësisë me butonat - dhe +. Diapazoni: nga -4 deri +4 pikselë.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Hapësirat midis elementeve",
+      "html": "<p class=\"text-mid\">Në skedën <strong>Hapësirat</strong> mund të kontrolloni me saktësi distancat midis elementeve të veçanta të nënshkrimit.</p><h3 class=\"h5 mt-6 mb-3\">Margjina e brendshme</h3><p class=\"text-mid\">Në krye të skedës gjeni opsionin e margjinës së brendshme – distancën midis përmbajtjes së nënshkrimit dhe kufijve të tij. Tre vlera: 8 px (i vogël), 16 px (mesatar) dhe 24 px (i madh).</p><h3 class=\"h5 mt-6 mb-3\">Hapësirat midis elementeve</h3><p class=\"text-mid\">Nën margjinë gjeni kontrollet për elementet e veçanta me butonat + dhe -.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Pas emrit</strong></li><li><strong>Pas pozicionit / kompanisë</strong></li><li><strong>Pas rreshtit shtesë</strong></li><li><strong>Pas të dhënave të kontaktit</strong></li><li><strong>Pas rrjeteve sociale</strong></li><li><strong>Pas butonit CTA</strong></li><li><strong>Para klauzolës ligjore</strong></li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Klauzola ligjore / GDPR – kur ta shtoni?",
+      "html": "<p class=\"text-mid\">Në skedën <strong>Klauzola / GDPR</strong> mund të shtoni një tekst ligjor që shfaqet në fund të nënshkrimit me font më të vogël.</p><h3 class=\"h5 mt-6 mb-3\">Kur ia vlen të shtoni klauzolën?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Korrespondenca tregtare</strong> – informacion mbi konfidencialitetin e mesazhit dhe kërkesë për fshirje në rast dorëzimi të gabuar.</li><li><strong>Kërkesat e industrisë</strong> – disa industri (p.sh. ligjore, mjekësore, financiare) kërkojnë informacione të caktuara në çdo mesazh.</li><li><strong>GDPR</strong> – informacion mbi përpunimin e të dhënave personale, nëse kompania është kontrollues i të dhënave.</li></ul><p class=\"text-mid mt-4\">Parazgjedhur fusha është plotësuar me një tekst shembull. Mund ta redaktoni, fshini ose zëvendësoni me klauzolën tuaj.</p><h3 class=\"h5 mt-6 mb-3\">Vija ndarëse</h3><p class=\"text-mid\">Nën fushën e tekstit gjeni opsionin <strong>Shfaq vijën ndarëse</strong>. Aktivizimi shton një vijë horizontale midis të dhënave të kontaktit dhe klauzolës ligjore.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Ruajtja automatike dhe rivendosja e cilësimeve",
+      "html": "<p class=\"text-mid\">Gjeneruesi ruan automatikisht të gjitha cilësimet në kujtesën e shfletuesit (localStorage). Pas rifreskimit të faqes ose rihapjes së mjetit, të dhënat, paraqitja, ngjyrat dhe të gjitha opsionet e tjera rikthehen.</p><h3 class=\"h5 mt-6 mb-3\">Si funksionon ruajtja automatike?</h3><p class=\"text-mid\">Çdo ndryshim (tekst, ngjyrë, paraqitje, hapësira) ruhet menjëherë në kujtesën e shfletuesit. Ruajtja ndodh automatikisht në sfond.</p><h3 class=\"h5 mt-6 mb-3\">Si të rivendosni cilësimet?</h3><p class=\"text-mid\">Nën pamjen paraprake gjeni butonin <strong>Rivendos pamjen</strong>. Konfirmimi rikthen të gjitha të dhënat dhe cilësimet në vlerat e paracaktuara. Ky veprim nuk mund të zhbëhet.</p><h3 class=\"h5 mt-6 mb-3\">Eksportimi dhe importimi i konfigurimit</h3><p class=\"text-mid\">Nën pamjen paraprake gjeni dy butona shtesë: <strong>Eksporto cilësimet</strong> dhe <strong>Importo cilësimet</strong>. Eksportimi ruan të gjithë konfigurimin në një skedar JSON. Importimi ngarkon një konfigurim të ruajtur më parë.</p>"
     },
     {
       "type": "gap",
@@ -152,6 +206,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Pamja paraprake e nënshkrimit dhe opsionet e eksportimit",
+      "html": "<p class=\"text-mid\">Paneli i pamjes paraprake shfaqet në të djathtë të redaktuesit dhe përditësohet automatikisht me çdo ndryshim. Pamja paraprake është e fiksuar në ekran (sticky), kështu që është e dukshme edhe gjatë lëvizjes.</p><h3 class=\"h5 mt-6 mb-3\">Ndërrimi i sfondit të pamjes paraprake</h3><p class=\"text-mid\">Mbi pamjen paraprake gjeni tre butona për ndërrimin e sfondit: <strong>I ndritshëm</strong> (sfondi gri i paracaktuar), <strong>I errët</strong> (sfond i errët për kontrollimin e lexueshmërisë) dhe <strong>Shahmat</strong> (model shahmat për të parë transparencën dhe kufijtë).</p><h3 class=\"h5 mt-6 mb-3\">Butonat e veprimit</h3><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Kopjo nënshkrimin (Gmail / Outlook)</strong> – kopjon nënshkrimin si HTML të formatuar në clipboard.</li><li><strong>Kopjo kodin HTML</strong> – kopjon kodin e papërpunuar HTML në clipboard.</li><li><strong>Shkarko si HTML</strong> – ruan kodin e nënshkrimit si skedar .html.</li><li><strong>Shfaq kodin HTML</strong> – hap një dritare modale me kodin burimor.</li><li><strong>Eksporto cilësimet</strong> – ruan të gjithë konfigurimin në skedar JSON.</li><li><strong>Importo cilësimet</strong> – ngarkon konfigurimin nga skedar JSON.</li><li><strong>Rivendos pamjen</strong> – rikthen të gjitha të dhënat dhe cilësimet në vlerat e paracaktuara (pas konfirmimit).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Për kë është gjeneruesi i nënshkrimit email?",
       "grid": "two",
@@ -175,6 +238,62 @@
           "icon": "RiScales3Line",
           "title": "Avokatë, kontabilistë, mjekë",
           "description": "Mundësi për të shtuar klauzola ligjore, numra licence ose të dhëna të tjera të kërkuara në fushën."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Çfarë e bën këtë gjenerues nënshkrimi email të veçantë?",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Tetë paraqitje nënshkrimi",
+          "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist dhe bottom bar."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Ruajtje automatike në shfletues",
+          "description": "Çdo ndryshim ruhet automatikisht në kujtesën e shfletuesit. Nënshkrimi mbetet i disponueshëm pas rifreskimit."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Eksportim dhe importim i konfigurimit",
+          "description": "I gjithë konfigurimi i nënshkrimit mund të eksportohet si skedar JSON dhe të ndahet me kolegët."
+        },
+        {
+          "icon": "RiAppsLine",
+          "title": "12 platforma sociale",
+          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram dhe Pinterest."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Personalizim i avancuar",
+          "description": "Forma dhe madhësia e avatarit, stilizimi i vijave, ngjyra individuale dhe madhësi teksti."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Shumë opsione eksportimi",
+          "description": "Kopjim HTML, shkarkim skedari, pamje e kodit burimor, eksport/import i konfigurimit JSON."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privatësia",
+          "description": "Të dhënat nuk dërgohen në asnjë server. Gjeneruesi funksionon tërësisht në shfletues."
+        },
+        {
+          "icon": "RiMailCheckLine",
+          "title": "Përputhshmëria",
+          "description": "Kodi HTML i gjeneruar funksionon në Gmail, Outlook, Apple Mail dhe Thunderbird."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Pamje paraprake në kohë reale",
+          "description": "Çdo ndryshim i dukshëm menjëherë në sfondin e ndritshëm, të errët ose shahmat."
         }
       ]
     },

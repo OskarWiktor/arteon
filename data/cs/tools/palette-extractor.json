@@ -100,6 +100,62 @@
     },
     { "type": "gap", "variant": "line" },
     {
+      "type": "sectionTimeline",
+      "title": "Jak funguje extrakce barev z obrázku?",
+      "description": "Po nahrání souboru nástroj provede několik kroků na pozadí – celá analýza probíhá lokálně v prohlížeči:",
+      "items": [
+        {
+          "icon": "RiZoomInLine",
+          "title": "Změna velikosti obrazu",
+          "description": "Obraz je zmenšen na cca 240 pixelů šířky. To zrychlí analýzu i velmi velkých fotografií bez vlivu na přesnost detekce barev."
+        },
+        {
+          "icon": "RiGroupLine",
+          "title": "Seskupení podobných odstínů",
+          "description": "Každý pixel je analyzován a blízké odstíny jsou sloučeny do skupin. Dva téměř identické modré odstíny se stanou jednou barvou v paletě."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Výběr dominantních barev",
+          "description": "Algoritmus vybere barvy, které zabírají největší plochu obrazu. Výsledkem je seznam až 12 barev seřazených od nejčastěji se vyskytující."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Přeskočení průhledných pixelů",
+          "description": "U souborů PNG s průhledným pozadím nejsou tyto oblasti brány v úvahu – extraktor analyzuje výhradně viditelné barvy. Celý proces obvykle trvá méně než sekundu."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Řešení problémů s extraktorem barev",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBarChartLine",
+          "title": "Extraktor vyextrahoval méně než 12 barev",
+          "description": "Počet vyextrahovaných barev závisí na obsahu obrazu. Jednoduché logo ve dvou barvách dá 2–3 výsledky – to je správné chování. Nástroj nepřidává umělé barvy, vyextrahuje pouze ty, které se na obraze skutečně vyskytují."
+        },
+        {
+          "icon": "RiAlertLine",
+          "title": "V paletě se objevily neočekávané barvy",
+          "description": "Mohou to být barvy stínů, přechodů nebo odlesků světla – pixely v těchto oblastech mají jiné barvy, než je na první pohled viditelný objekt. Použití obrazu s více uniformními barvami nebo oříznutí tmavých částí zlepší výsledky."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Barva pozadí dominuje ve výsledcích",
+          "description": "Když pozadí zabírá větší plochu než samotný objekt, jeho barva se objeví jako první na seznamu. Řešení: použijte soubor PNG s průhledným pozadím nebo ořízněte obraz tak, aby objekt zabíral větší část."
+        },
+        {
+          "icon": "RiFileWarningLine",
+          "title": "Soubor není přijat extraktorem",
+          "description": "Nástroj podporuje výhradně formáty PNG, JPG a SVG. Soubory v jiných formátech (GIF, TIFF, HEIC, PDF) vyžadují předchozí konverzi."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "sectionSteps",
       "title": "Čím je tento extraktor barev z obrázku výjimečný?",
       "grid": "two",

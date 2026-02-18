@@ -139,6 +139,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionTimeline",
+      "title": "Kako deluje izvlečenje barv iz slike?",
+      "description": "Po nalaganju datoteke orodje izvede več korakov v ozadju – celotna analiza poteka lokalno v brskalniku:",
+      "items": [
+        {
+          "icon": "RiZoomInLine",
+          "title": "Sprememba velikosti slike",
+          "description": "Slika se pomanjša na približno 240 pikslov širine. To pospeši analizo tudi zelo velikih fotografij brez vpliva na natančnost zaznave barv."
+        },
+        {
+          "icon": "RiGroupLine",
+          "title": "Združevanje podobnih odtenkov",
+          "description": "Vsak piksel se analizira, bližnji odtenki pa se združijo v skupine. Dva skoraj identična modra odtenka postaneta ena barva v paleti."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Izbor prevladujočih barv",
+          "description": "Algoritem izbere barve, ki pokrivajo največjo površino slike. Rezultat je seznam do 12 barv, razvrščenih od najpogostejše."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Preskok prosojnih pikslov",
+          "description": "Pri PNG datotekah s prosojnim ozadjem se ta področja ne upoštevajo – ekstraktor analizira izključno vidne barve. Celoten postopek običajno traja manj kot sekundo."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Odpravljanje težav z ekstraktorjem barv",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBarChartLine",
+          "title": "Ekstraktor je izvlekel manj kot 12 barv",
+          "description": "Število izvlečenih barv je odvisno od vsebine slike. Preprost logotip v dveh barvah da 2–3 rezultate – to je pravilno delovanje. Orodje ne dodaja umetnih barv, izvleče le tiste, ki se na sliki dejansko pojavljajo."
+        },
+        {
+          "icon": "RiAlertLine",
+          "title": "V paleti so se pojavile nepričakovane barve",
+          "description": "To so lahko barve senc, prelivov ali odsevov svetlobe – piksli na teh področjih imajo drugačne barve od predmeta, ki je viden na prvi pogled. Uporaba slike z bolj enakomernimi barvami ali obrezovanje temnih delov izboljša rezultate."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Barva ozadja prevladuje v rezultatih",
+          "description": "Ko ozadje pokriva večjo površino od samega predmeta, se njegova barva pojavi prva na seznamu. Rešitev: uporabite PNG datoteko s prosojnim ozadjem ali obrežite sliko tako, da predmet pokriva večji del."
+        },
+        {
+          "icon": "RiFileWarningLine",
+          "title": "Datoteka ni sprejeta v ekstraktorju",
+          "description": "Orodje podpira izključno formate PNG, JPG in SVG. Datoteke v drugih formatih (GIF, TIFF, HEIC, PDF) zahtevajo predhodno pretvorbo."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Po čem je ta ekstraktor barv poseben?",
       "grid": "two",

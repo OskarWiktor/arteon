@@ -206,6 +206,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Limity znaků na populárních platformách",
+      "html": "<p class=\"text-mid mb-4\">Počítadlo znaků se hodí při tvorbě obsahu pro platformy s omezením délky:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platforma / Prvek</th><th class=\"py-2 pr-4 font-semibold\">Limit znaků</th><th class=\"py-2 font-semibold\">Poznámky</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 znaků</td><td class=\"text-primary-light0 py-2 text-sm\">Delší titulky jsou ve výsledcích vyhledávání oříznuty.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 znaků</td><td class=\"text-primary-light0 py-2 text-sm\">Popis viditelný pod odkazem ve výsledcích vyhledávání.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook – příspěvek</td><td class=\"py-2 pr-4 whitespace-nowrap\">63 206 znaků</td><td class=\"text-primary-light0 py-2 text-sm\">Delší příspěvky jsou skryty pod tlačítkem Zobrazit více.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – popis</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 200 znaků</td><td class=\"text-primary-light0 py-2 text-sm\">Viditelných je prvních ~125 znaků.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – příspěvek</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 znaků</td><td class=\"text-primary-light0 py-2 text-sm\">Základní limit pro standardní účty.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn – příspěvek</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 znaků</td><td class=\"text-primary-light0 py-2 text-sm\">Prvních ~140 znaků viditelných bez rozkliknutí.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čím je toto počítadlo slov a znaků výjimečné?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Šest typů stránek s doporučenými rozsahy",
+          "description": "Popis produktu, stránka služby, hlavní stránka, nabídková stránka, blogový článek a návod – každý typ má vlastní rozsahy založené na analýzách."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Lokální zpracování v prohlížeči",
+          "description": "Text se neodesílá na žádný server – celá analýza probíhá lokálně na vašem zařízení."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Hodnocení délky textu",
+          "description": "Nejen počítáte slova, ale dostanete informaci, zda je délka vhodná pro daný typ stránky."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "Rozsahy založené na SEO",
+          "description": "Doporučené délky vycházejí z analýz obsahu, který se dobře umisťuje ve vyhledávačích."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Doba čtení",
+          "description": "Hned víte, kolik minut čtenářům zabere přečtení textu."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Kopírování reportu",
+          "description": "Tlačítko Kopírovat report přenese do schránky souhrn se všemi statistikami a hodnocením délky."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o počítadle slov a znaků",
       "openByDefault": 1,

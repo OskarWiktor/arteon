@@ -139,6 +139,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionTimeline",
+      "title": "Hvordan fungerer fargeutrekking fra bilde?",
+      "description": "Etter opplasting av filen utfører verktøyet flere trinn i bakgrunnen – hele analysen foregår lokalt i nettleseren:",
+      "items": [
+        {
+          "icon": "RiZoomInLine",
+          "title": "Skalering av bildet",
+          "description": "Bildet skaleres ned til ca. 240 pikslers bredde. Det gjør analysen raskere selv for svært store bilder uten å påvirke nøyaktigheten av fargegjenkjenningen."
+        },
+        {
+          "icon": "RiGroupLine",
+          "title": "Gruppering av lignende nyanser",
+          "description": "Hver piksel analyseres, og nære nyanser slås sammen i grupper. To nesten identiske blånyanser blir til én farge i paletten."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Valg av dominerende farger",
+          "description": "Algoritmen velger fargene som dekker det største arealet av bildet. Resultatet er en liste med opptil 12 farger sortert etter hyppighet."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Hopp over gjennomsiktige piksler",
+          "description": "I PNG-filer med gjennomsiktig bakgrunn tas disse områdene ikke med – utrekkeren analyserer utelukkende synlige farger. Hele prosessen tar vanligvis under ett sekund."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Feilsøking av fargeutrekkeren",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBarChartLine",
+          "title": "Utrekkeren fant færre enn 12 farger",
+          "description": "Antallet uttrukne farger avhenger av bildets innhold. En enkel logo i to farger gir 2–3 resultater – det er korrekt oppførsel. Verktøyet legger ikke til kunstige farger, det trekker kun ut dem som faktisk finnes i bildet."
+        },
+        {
+          "icon": "RiAlertLine",
+          "title": "Uventede farger i paletten",
+          "description": "Det kan være farger fra skygger, gradienter eller lysrefleksjoner – pikslene i disse områdene har andre farger enn objektet som er synlig ved første øyekast. Bruk av et bilde med jevnere farger eller beskjæring av mørke områder forbedrer resultatene."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Bakgrunnsfargen dominerer resultatene",
+          "description": "Når bakgrunnen dekker mer areal enn selve objektet, vises fargen dens som den første på listen. Løsning: bruk en PNG-fil med gjennomsiktig bakgrunn eller beskjær bildet slik at objektet fyller mer."
+        },
+        {
+          "icon": "RiFileWarningLine",
+          "title": "Filen aksepteres ikke av utrekkeren",
+          "description": "Verktøyet støtter utelukkende formatene PNG, JPG og SVG. Filer i andre formater (GIF, TIFF, HEIC, PDF) krever forutgående konvertering."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Hva gjør denne fargeutrekkeren spesiell?",
       "grid": "two",

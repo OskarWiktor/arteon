@@ -1841,7 +1841,7 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
       fi: {
         slug: 'ilmainen-qr-koodi-generaattori',
         title: 'Ilmainen QR-koodigeneraattori',
-        description: 'Luo QR-koodi verkkosivulle, vCard-k\u00e4yntikortille, menulle tai esitteelle. Vie PNG- ja SVG-muotoon ilman kirjautumista ja rajoituksia.',
+        description: 'Luo QR-koodi verkkosivulle, vCard-käyntikortille, menulle tai esitteelle. Vie PNG- ja SVG-muotoon ilman kirjautumista ja rajoituksia.',
       },
       sk: {
         slug: 'generator-qr-kodov-zadarmo',

@@ -113,10 +113,53 @@
       "variant": "line"
     },
     {
+      "type": "sectionTabs",
+      "title": "Koji formati boja su podržani?",
+      "tabs": [
+        {
+          "title": "HEX",
+          "icon": "RiHashtag",
+          "html": "<div><p class=\"text-mid mb-3\">Heksadecimalni format – najpopularniji u web dizajnu. Počinje znakom <code class=\"rounded bg-black/5 px-1\">#</code> i sadrži 3 ili 6 znakova (znamenke 0-9 i slova A-F).</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">#fff</code> – bijela (skraćeni oblik)</li><li><code class=\"rounded bg-black/5 px-1\">#ffffff</code> – bijela (puni oblik)</li><li><code class=\"rounded bg-black/5 px-1\">#1a73e8</code> – plava</li></ul></div>"
+        },
+        {
+          "title": "RGB / RGBA",
+          "icon": "RiPaletteLine",
+          "html": "<div><p class=\"text-mid mb-3\">Format temeljen na tri kanala: crvena (Red), zelena (Green), plava (Blue). Svaki kanal prima vrijednost od 0 do 255. RGBA varijanta dodaje četvrti parametar – prozirnost (alpha) od 0 do 1.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">rgb(255, 255, 255)</code> – bijela</li><li><code class=\"rounded bg-black/5 px-1\">rgba(0, 0, 0, 0.8)</code> – crna s 80% pokrivenosti</li></ul></div>"
+        },
+        {
+          "title": "HSL / HSLA",
+          "icon": "RiEqualizerLine",
+          "html": "<div><p class=\"text-mid mb-3\">Format temeljen na nijansi (Hue, 0-360°), zasićenosti (Saturation, 0-100%) i svjetlini (Lightness, 0-100%). HSLA varijanta dodaje prozirnost. Ovaj format je koristan kada želite prilagoditi svjetlinu ili zasićenost boje.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">hsl(0, 0%, 100%)</code> – bijela</li><li><code class=\"rounded bg-black/5 px-1\">hsla(217, 91%, 60%, 0.9)</code> – plava s 90% pokrivenosti</li></ul></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionDemo",
-      "title": "Kako interpretirati rezultate testa čitljivosti",
+      "title": "Kako protumačiti rezultate testa čitljivosti",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Omjer kontrasta</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Normalni tekst</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div></div></div>",
       "html": "<p class=\"text-mid mb-4\">Nakon unosa boja alat prikazuje rezultate u tri dijela:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normalni tekst</strong> – zahtijeva kontrast 4.5:1 (AA) ili 7:1 (AAA). Odnosi se na tekst manji od 18pt (24px) ili manji od 14pt podebljani.</li><li><strong>Veliki tekst / podebljani</strong> – zahtijeva kontrast 3:1 (AA) ili 4.5:1 (AAA). Odnosi se na naslove, gumbe i istaknuti tekst.</li><li><strong>Ikone</strong> – zahtijeva kontrast 3:1 (AA). Odnosi se na ikone i grafičke elemente korisničkog sučelja koji prenose informacije.</li></ul><p class=\"text-mid mt-3\"><strong>Zelena oznaka</strong> znači da je zahtjev ispunjen. <strong>Crvena oznaka</strong> znači da je kontrast prenizak i potrebna je korekcija.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Što znače rezultati testa čitljivosti?",
+      "html": "<p class=\"text-mid mb-4\">Alat prikazuje omjer kontrasta na ljestvici od 1:1 (nema kontrasta) do 21:1 (maksimalni kontrast – crni tekst na bijeloj pozadini). Rezultat se uspoređuje s pragovima definiranima u WCAG standardu:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normalni tekst</strong> – zahtijeva kontrast najmanje 4.5:1 za razinu AA (minimalni standard) ili 7:1 za razinu AAA (prošireni standard). Odnosi se na tekst manji od 18pt (24px) ili manji od 14pt (18.5px) podebljani.</li><li><strong>Veliki tekst / podebljani</strong> – zahtijeva kontrast najmanje 3:1 za razinu AA ili 4.5:1 za razinu AAA. Odnosi se na tekst od 18pt (24px) ili od 14pt (18.5px) podebljani – naslove, gumbe, isticanja.</li><li><strong>Ikone i grafički elementi</strong> – zahtijevaju kontrast najmanje 3:1 za razinu AA. Odnosi se na ikone, gumbe, polja obrazaca i druge elemente sučelja koji prenose informacije.</li></ul><p class=\"text-mid mt-3\"><strong>Razina AA</strong> je minimum koji zahtijeva zakonodavstvo o pristupačnosti u mnogim zemljama, uključujući <a href=\"https://eur-lex.europa.eu/legal-content/HR/TXT/?uri=CELEX:32016L2102\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">EU direktivu o pristupačnosti web stranica</a>. <strong>Razina AAA</strong> osigurava bolju čitljivost, ali nije uvijek praktično ostvariva za sve elemente.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Automatsko prilagođavanje boje zahtjevima WCAG-a",
+      "html": "<p class=\"text-mid mb-4\">Ako je kontrast prenizak, ne morate tražiti pravu boju metodom pokušaja i pogreške. Funkcija <strong>Match</strong> automatski pronalazi varijantu boje teksta koja ispunjava odabrani prag kontrasta.</p><p class=\"text-mid mb-4\">Kako prilagodba funkcionira:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Odaberite cilj prilagodbe s popisa – npr. AA za normalni tekst ili AAA za veliki tekst.</li><li>Pokrenite funkciju gumbom Match.</li><li>Alat pretražuje varijante svjetline boje teksta i predlaže najbližu koja ispunjava zahtjeve.</li><li>Predloženi kôd boje možete kopirati u međuspremnik ili odmah postaviti kao novu boju teksta.</li></ol><p class=\"text-mid mt-3\">Algoritam zadržava nijansu i zasićenost izvorne boje, mijenjajući samo svjetlinu. Predložena boja tako ostaje u skladu s vizualnim identitetom, a istovremeno ispunjava standard pristupačnosti.</p>"
     },
     {
       "type": "gap",
@@ -185,6 +228,107 @@
             "aa": true,
             "aaa": true
           }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Rješavanje problema s testerom kontrasta boja",
+      "html": "<h3 class=\"h5 mb-2\">Vidim poruku o pogrešnom formatu boje</h3><p class=\"text-mid mb-4\">Provjerite format boje. HEX kôd treba započeti znakom <code class=\"rounded bg-black/5 px-1\">#</code> i sadržavati 3 ili 6 znakova (npr. <code class=\"rounded bg-black/5 px-1\">#fff</code> ili <code class=\"rounded bg-black/5 px-1\">#ffffff</code>). Za RGB format provjerite jesu li vrijednosti odvojene zarezima i u rasponu 0-255.</p><h3 class=\"h5 mb-2\">Funkcija Match ne pronalazi odgovarajuću boju</h3><p class=\"text-mid mb-4\">Kada pozadina i tekst imaju sličnu svjetlinu u istoj nijansi, algoritam možda neće pronaći varijantu koja ispunjava zahtjeve bez promjene nijanse. U tom slučaju razmislite o promjeni boje pozadine ili odabiru potpuno druge boje teksta.</p><h3 class=\"h5 mb-2\">Boja u biraču ne odgovara unesenom kodu</h3><p class=\"text-mid\">Birač boja u pregledniku podržava samo HEX format bez prozirnosti. Ako unesete boju u RGBA ili HSLA formatu s prozirnošću, birač prikazuje samo dio boje (bez alpha). Izračuni kontrasta i dalje uzimaju u obzir prozirnost.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Gdje je vrijedno provjeravati čitljivost boja?",
+      "description": "Čitljivost je važna svugdje gdje netko mora pročitati tekst ili prepoznati element sučelja:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Web stranice",
+          "description": "Tekst na stranicama, gumbi, linkovi, obrasci. Posebno važno za poslovne stranice, gdje posjetitelji imaju različitu dob i različite vidne sposobnosti."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Web trgovine",
+          "description": "Cijene, gumbi Kupi odmah, informacije o proizvodu. Niska čitljivost može značiti izgubljene narudžbe."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Prezentacije",
+          "description": "Slajdovi prikazani s projektora često imaju slabiji kontrast nego na monitoru. Vrijedi provjeriti boje prije prezentacije."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Plakati i letci",
+          "description": "Tiskani materijali koji se gledaju pod različitim uvjetima osvjetljenja zahtijevaju visoki kontrast."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Mobilne aplikacije",
+          "description": "Telefoni se koriste na punom suncu, noću, od strane ljudi različite dobi."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Jelovnici restorana",
+          "description": "Često tiskani na papiru u boji ili s ukrasnim fontovima – lako dolazi do preniskog kontrasta."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Čitljivost boja za osobe s daltonizmom",
+      "html": "<p class=\"text-mid mb-4\">Daltonizam (sljepoća za boje) je poremećaj vida boja koji pogađa oko 8% muškaraca i 0,5% žena. Osobe s daltonizmom mogu imati poteškoća u razlikovanju određenih parova boja, čak i kada je kontrast svjetline dovoljan.</p><p class=\"text-mid mb-4\">Najčešći tipovi daltonizma:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deuteranopija</strong> – poteškoće s razlikovanjem zelene i crvene (najčešći oblik)</li><li><strong>Protanopija</strong> – poteškoće s videnjem crvene</li><li><strong>Tritanopija</strong> – poteškoće s videnjem plave i žute (rijetka)</li></ul><p class=\"text-mid mt-3\">Ovaj alat provjerava kontrast svjetline, koji je važan za sve korisnike. Međutim, pri dizajnu je dobro dodatno izbjegavati problematične kombinacije boja (npr. crveni tekst na zelenoj pozadini) i ne oslanjati se isključivo na boju za prenošenje informacija – koristite i oblike, ikone i tekst.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Što odlikuje tester kontrasta i čitljivosti boja?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiEyeLine",
+          "title": "Objektivna ocjena temeljena na matematičkoj formuli",
+          "description": "Omjer kontrasta izračunava se prema formuli iz WCAG smjernica – rezultat ne ovisi o postavkama monitora niti o individualnom opažanju boja."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Usklađenost s međunarodnim WCAG standardom",
+          "description": "Rezultati odgovaraju zahtjevima WCAG 2.1, koji su temelj propisa o digitalnoj pristupačnosti u EU i mnogim drugim zemljama."
+        },
+        {
+          "icon": "RiMagicLine",
+          "title": "Automatsko prilagođavanje boje pragu",
+          "description": "Funkcija Match pronalazi varijantu boje teksta koja ispunjava odabrani prag kontrasta – zadržava nijansu, mijenja samo svjetlinu."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Pet formata boja",
+          "description": "Podržani formati: HEX, RGB, RGBA, HSL i HSLA. Kôd boje možete zalijepiti izravno iz Figme, Photoshopa ili CSS lista stilova."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Tri vrste sadržaja u jednom testu",
+          "description": "Jedna provjera prikazuje rezultat za normalni tekst, veliki tekst (naslovi, gumbi) i ikone – ne morate testirati svaku vrstu zasebno."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Pregled teksta uživo",
+          "description": "Promjena boje teksta ili pozadine odmah ažurira pregled – vidite kako tekst izgleda na odabranoj pozadini, još prije implementacije."
         }
       ]
     },

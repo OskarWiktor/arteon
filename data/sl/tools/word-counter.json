@@ -195,6 +195,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Omejitve znakov na priljubljenih platformah",
+      "html": "<p class=\"text-mid mb-4\">Števec znakov je koristen pri ustvarjanju vsebin za platforme z omejitvami dolžine:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platforma / Element</th><th class=\"py-2 pr-4 font-semibold\">Omejitev znakov</th><th class=\"py-2 font-semibold\">Opombe</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 znakov</td><td class=\"text-primary-light0 py-2 text-sm\">Daljši naslovi so v rezultatih iskanja odrezani.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 znakov</td><td class=\"text-primary-light0 py-2 text-sm\">Opis viden pod povezavo v rezultatih iskanja.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook – objava</td><td class=\"py-2 pr-4 whitespace-nowrap\">63 206 znakov</td><td class=\"text-primary-light0 py-2 text-sm\">Daljše objave so skrite za gumbom Prikaži več.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – opis</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 200 znakov</td><td class=\"text-primary-light0 py-2 text-sm\">Vidnih je prvih ~125 znakov.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – objava</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 znakov</td><td class=\"text-primary-light0 py-2 text-sm\">Osnovna omejitev za standardne račune.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn – objava</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 znakov</td><td class=\"text-primary-light0 py-2 text-sm\">Prvih ~140 znakov vidnih brez klika.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Po čem je ta števec besed in znakov poseben?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Šest tipov strani s priporočenimi razponi",
+          "description": "Opis izdelka, stran storitve, domača stran, ponudbena stran, blog članek in vodnik – vsak tip ima lastne razpone, temelječe na analizah."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Lokalna obdelava v brskalniku",
+          "description": "Besedilo se ne pošilja na strežnik – celotna analiza poteka lokalno na vaši napravi."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Ocena dolžine besedila",
+          "description": "Ne le štejete besede, ampak dobite informacijo, ali je dolžina primerna za dani tip strani."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "SEO razponi",
+          "description": "Priporočene dolžine temeljijo na analizah vsebin, ki se dobro uvrščajo v iskalnikih."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Čas branja",
+          "description": "Takoj veste, koliko minut bralcem vzame branje besedila."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Kopiranje poročila",
+          "description": "Gumb Kopiraj poročilo prenese v odložišče povzetek z vsemi statistikami in oceno dolžine."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Pogosta vprašanja o števcu besed in znakov",
       "openByDefault": 1,

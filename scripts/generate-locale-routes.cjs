@@ -88,14 +88,26 @@ const TOOLS = [
     componentPath: '@/components/sections/tools/EmailSignatureGenerator',
     dataFile: 'email-signature.json',
     desktopOnly: true,
-    slugs: { el: 'dorean-dimiourgia-ypografis-email', bg: 'bezplaten-generator-na-podpis-za-email', ha: 'samar-da-sa-hannu-imel-kyauta', yo: 'olupilese-ibuwolu-imeeli-ofe', af: 'gratis-e-pos-handtekening-generator' },
+    slugs: {
+      el: 'dorean-dimiourgia-ypografis-email',
+      bg: 'bezplaten-generator-na-podpis-za-email',
+      ha: 'samar-da-sa-hannu-imel-kyauta',
+      yo: 'olupilese-ibuwolu-imeeli-ofe',
+      af: 'gratis-e-pos-handtekening-generator',
+    },
   },
   {
     component: 'MetaTitleDescriptionTool',
     componentPath: '@/components/sections/tools/MetaTitleDescriptionTool',
     dataFile: 'meta-counter.json',
     desktopOnly: false,
-    slugs: { el: 'elegkhos-meta-titlou-kai-perigrafis', bg: 'proverka-na-meta-zaglavie-i-opisanie', ha: 'tantance-meta-take-da-bayani', yo: 'atunyewo-meta-akole-ati-apejuwe', af: 'meta-titel-en-beskrywing-nagaaier' },
+    slugs: {
+      el: 'elegkhos-meta-titlou-kai-perigrafis',
+      bg: 'proverka-na-meta-zaglavie-i-opisanie',
+      ha: 'tantance-meta-take-da-bayani',
+      yo: 'atunyewo-meta-akole-ati-apejuwe',
+      af: 'meta-titel-en-beskrywing-nagaaier',
+    },
   },
   {
     component: 'WordCountTool',
@@ -170,7 +182,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     </LocaleProvider>
   );
 }
-`
+`,
   );
   totalFiles++;
 
@@ -182,7 +194,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 export default function Loading() {
   return <ToolsIndexSkeleton />;
 }
-`
+`,
   );
   totalFiles++;
 
@@ -213,7 +225,7 @@ export const metadata = {
 export default function AboutPage() {
   return <AboutPageContent locale={LOCALE} />;
 }
-`
+`,
   );
   totalFiles++;
 
@@ -244,16 +256,14 @@ export const metadata = {
 export default function ContactPage() {
   return <ContactPageContent locale={LOCALE} />;
 }
-`
+`,
   );
   totalFiles++;
 
   // 5. All 10 tool pages
   for (const tool of TOOLS) {
     const slug = tool.slugs[locale];
-    const toolDir = tool.desktopOnly
-      ? path.join(appDir, cfg.toolsDir, '(desktop-only)', slug)
-      : path.join(appDir, cfg.toolsDir, slug);
+    const toolDir = tool.desktopOnly ? path.join(appDir, cfg.toolsDir, '(desktop-only)', slug) : path.join(appDir, cfg.toolsDir, slug);
 
     writeFile(
       path.join(toolDir, 'page.tsx'),
@@ -270,7 +280,7 @@ export const metadata: Metadata = generateToolMetadata(pageData);
 export default function Page() {
   return <ToolPageRenderer data={pageData} tool={<${tool.component} />} />;
 }
-`
+`,
     );
     totalFiles++;
   }

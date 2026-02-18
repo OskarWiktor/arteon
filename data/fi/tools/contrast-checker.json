@@ -113,10 +113,53 @@
       "variant": "line"
     },
     {
+      "type": "sectionTabs",
+      "title": "Mitä värimuotoja tuetaan?",
+      "tabs": [
+        {
+          "title": "HEX",
+          "icon": "RiHashtag",
+          "html": "<div><p class=\"text-mid mb-3\">Heksadesimaalimuoto – suosituin verkkosivujen suunnittelussa. Alkaa merkillä <code class=\"rounded bg-black/5 px-1\">#</code> ja sisältää 3 tai 6 merkkiä (numerot 0-9 ja kirjaimet A-F).</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">#fff</code> – valkoinen (lyhennetty muoto)</li><li><code class=\"rounded bg-black/5 px-1\">#ffffff</code> – valkoinen (täysi muoto)</li><li><code class=\"rounded bg-black/5 px-1\">#1a73e8</code> – sininen</li></ul></div>"
+        },
+        {
+          "title": "RGB / RGBA",
+          "icon": "RiPaletteLine",
+          "html": "<div><p class=\"text-mid mb-3\">Kolmeen kanavaan perustuva muoto: punainen (Red), vihreä (Green), sininen (Blue). Jokainen kanava saa arvon 0–255. RGBA-variantti lisää neljännen parametrin – läpinäkyvyyden (alpha) 0–1.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">rgb(255, 255, 255)</code> – valkoinen</li><li><code class=\"rounded bg-black/5 px-1\">rgba(0, 0, 0, 0.8)</code> – musta 80 % peittävyydellä</li></ul></div>"
+        },
+        {
+          "title": "HSL / HSLA",
+          "icon": "RiEqualizerLine",
+          "html": "<div><p class=\"text-mid mb-3\">Sävyyn (Hue, 0-360°), kylläisyyteen (Saturation, 0-100 %) ja valoisuuteen (Lightness, 0-100 %) perustuva muoto. HSLA-variantti lisää läpinäkyvyyden. Tämä muoto on hyödyllinen, kun haluat säätää värin valoisuutta tai kylläisyyttä.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">hsl(0, 0%, 100%)</code> – valkoinen</li><li><code class=\"rounded bg-black/5 px-1\">hsla(217, 91%, 60%, 0.9)</code> – sininen 90 % peittävyydellä</li></ul></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionDemo",
       "title": "Näin tulkitset luettavuustestin tulokset",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Kontrastisuhde</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Normaali teksti</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div></div></div>",
       "html": "<p class=\"text-mid mb-4\">Kun värit on syötetty, työkalu näyttää tulokset kolmessa osassa:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normaali teksti</strong> – vaatii kontrastin 4.5:1 (AA) tai 7:1 (AAA). Koskee tekstiä alle 18pt (24px) tai alle 14pt lihavoitua.</li><li><strong>Suuri teksti / lihavoitu</strong> – vaatii kontrastin 3:1 (AA) tai 4.5:1 (AAA). Koskee otsikoita, painikkeita ja korostettua tekstiä.</li><li><strong>Kuvakkeet</strong> – vaatii kontrastin 3:1 (AA). Koskee kuvakkeita ja graafisia käyttöliittymäelementtejä, jotka välittävät tietoa.</li></ul><p class=\"text-mid mt-3\"><strong>Vihreä merkki</strong> tarkoittaa, että vaatimus täyttyy. <strong>Punainen merkki</strong> tarkoittaa, että kontrasti on liian matala ja se on korjattava.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Mitä luettavuustestin tulokset tarkoittavat?",
+      "html": "<p class=\"text-mid mb-4\">Työkalu näyttää kontrastisuhteen asteikolla 1:1 (ei kontrastia) – 21:1 (maksimaalinen kontrasti – musta teksti valkoisella pohjalla). Tulosta verrataan WCAG-standardin raja-arvoihin:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normaali teksti</strong> – vaatii kontrastin vähintään 4.5:1 tasolle AA (minimistandardi) tai 7:1 tasolle AAA (laajennettu standardi). Koskee tekstiä alle 18pt (24px) tai alle 14pt (18.5px) lihavoitua.</li><li><strong>Suuri teksti / lihavoitu</strong> – vaatii kontrastin vähintään 3:1 tasolle AA tai 4.5:1 tasolle AAA. Koskee tekstiä 18pt (24px) tai 14pt (18.5px) lihavoitua ja suurempaa – otsikoita, painikkeita, korostuksia.</li><li><strong>Kuvakkeet ja graafiset elementit</strong> – vaativat kontrastin vähintään 3:1 tasolle AA. Koskee kuvakkeita, painikkeita, lomakekenttiä ja muita käyttöliittymäelementtejä, jotka välittävät tietoa.</li></ul><p class=\"text-mid mt-3\"><strong>Taso AA</strong> on monissa maissa saavutettavuuslainsäädännön edellyttämä vähimmäistaso, mukaan lukien <a href=\"https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32016L2102\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">EU:n verkkosaavutettavuusdirektiivi</a>. <strong>Taso AAA</strong> tarjoaa paremman luettavuuden, mutta ei aina ole käytännössä saavutettavissa kaikille elementeille.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Automaattinen värin sovitus WCAG-vaatimuksiin",
+      "html": "<p class=\"text-mid mb-4\">Jos kontrasti on liian matala, oikean värin etsiminen kokeilemalla ei ole tarpeen. <strong>Match</strong>-toiminto löytää automaattisesti tekstivärin variantin, joka täyttää valitun kontrastikynnyksen.</p><p class=\"text-mid mb-4\">Näin sovitus toimii:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Valitse sovitustavoite listasta – esim. AA normaalille tekstille tai AAA suurelle tekstille.</li><li>Käynnistä toiminto Match-painikkeella.</li><li>Työkalu etsii tekstivärin valoisuusvariantteja ja ehdottaa lähintä vaatimukset täyttävää.</li><li>Ehdotettu värikoodi voidaan kopioida leikepöydälle tai asettaa suoraan uudeksi tekstiväriksi.</li></ol><p class=\"text-mid mt-3\">Algoritmi säilyttää alkuperäisen värin sävyn ja kylläisyyden muuttaen ainoastaan valoisuutta. Ehdotettu väri pysyy siis visuaalisen identiteetin mukaisena ja täyttää samalla saavutettavuusstandardin.</p>"
     },
     {
       "type": "gap",
@@ -185,6 +228,107 @@
             "aa": true,
             "aaa": true
           }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Värikontrastin tarkistuksen vianmääritys",
+      "html": "<h3 class=\"h5 mb-2\">Näen virheilmoituksen värimuodosta</h3><p class=\"text-mid mb-4\">Tarkista värimuoto. HEX-koodin tulee alkaa merkillä <code class=\"rounded bg-black/5 px-1\">#</code> ja sisältää 3 tai 6 merkkiä (esim. <code class=\"rounded bg-black/5 px-1\">#fff</code> tai <code class=\"rounded bg-black/5 px-1\">#ffffff</code>). RGB-muodossa tarkista, että arvot on erotettu pilkuilla ja ovat välillä 0–255.</p><h3 class=\"h5 mb-2\">Match-toiminto ei löydä sopivaa väriä</h3><p class=\"text-mid mb-4\">Kun tausta ja teksti ovat samanlaisen kirkkaita samassa sävyssä, algoritmi ei ehkä löydä vaatimukset täyttävää varianttia ilman sävyn muuttamista. Harkitse silloin taustavärin vaihtamista tai kokonaan erilaisen tekstivärin valitsemista.</p><h3 class=\"h5 mb-2\">Värinvalitsimen väri ei vastaa syötettyä koodia</h3><p class=\"text-mid\">Selaimen värinvalitsin tukee vain HEX-muotoa ilman läpinäkyvyyttä. Jos syötät värin RGBA- tai HSLA-muodossa läpinäkyvyydellä, valitsin näyttää vain väriosan (ilman alphaa). Kontrastilaskelmat huomioivat silti läpinäkyvyyden.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Missä värien luettavuutta kannattaa tarkistaa?",
+      "description": "Luettavuus on tärkeää kaikkialla, missä jonkun on luettava tekstiä tai tunnistettava käyttöliittymäelementti:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Verkkosivustot",
+          "description": "Teksti sivuilla, painikkeet, linkit, lomakkeet. Erityisen tärkeää yrityksille, joiden kävijöillä on eri ikä ja erilaiset näkökyvyt."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Verkkokaupat",
+          "description": "Hinnat, Osta nyt -painikkeet, tuotetiedot. Heikko luettavuus voi tarkoittaa menetettyjä tilauksia."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Esitykset",
+          "description": "Projektorilla näytetyissä dioissa on usein heikompi kontrasti kuin näytöllä. Värit kannattaa tarkistaa ennen esitystä."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Julisteet ja esitteet",
+          "description": "Painetut materiaalit, joita katsotaan erilaisissa valaistusolosuhteissa, vaativat korkeaa kontrastia."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Mobiilisovellukset",
+          "description": "Puhelimia käytetään kirkkaassa auringonvalossa, yöllä, eri-ikäisten ihmisten toimesta."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Ravintolan ruokalistat",
+          "description": "Usein painettu värilliselle paperille tai koristekuvioilla – liian matala kontrasti syntyy helposti."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Värien luettavuus värisokeille",
+      "html": "<p class=\"text-mid mb-4\">Värisokeus on värinäön häiriö, joka koskee noin 8 % miehistä ja 0,5 % naisista. Värisokeat voivat kokea vaikeuksia erottaa tiettyjä väripareja, vaikka valoisuuskontrasti olisikin riittävä.</p><p class=\"text-mid mb-4\">Yleisimmät värisokeuden tyypit:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deuteranopia</strong> – vaikeus erottaa vihreää ja punaista (yleisin muoto)</li><li><strong>Protanopia</strong> – vaikeus nähdä punaista</li><li><strong>Tritanopia</strong> – vaikeus nähdä sinistä ja keltaista (harvinainen)</li></ul><p class=\"text-mid mt-3\">Tämä työkalu tarkistaa valoisuuskontrastin, joka on tärkeä kaikille käyttäjille. Suunnittelussa kannattaa kuitenkin lisäksi välttää ongelmallisia väriyhdistelmiä (esim. punainen teksti vihreällä pohjalla) eikä luottaa pelkästään väriin tiedon välittämisessä – käytä myös muotoja, kuvakkeita ja tekstiä.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä erottaa värikontrastin tarkistuksen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiEyeLine",
+          "title": "Objektiivinen arviointi matemaattiseen kaavaan perustuen",
+          "description": "Kontrastisuhde lasketaan WCAG-ohjeiden kaavalla – tulos ei riipu näytön asetuksista eikä yksilöllisestä värien havaitsemisesta."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Kansainvälisen WCAG-standardin mukainen",
+          "description": "Tulokset vastaavat WCAG 2.1:n vaatimuksia, jotka ovat digitaalisen saavutettavuuden lainsäädännön perusta EU:ssa ja monissa muissa maissa."
+        },
+        {
+          "icon": "RiMagicLine",
+          "title": "Automaattinen värin sovitus kynnysarvoon",
+          "description": "Match-toiminto löytää tekstivärin variantin, joka täyttää valitun kontrastikynnyksen – säilyttää sävyn, muuttaa vain valoisuutta."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Viisi värimuotoa",
+          "description": "Tuetut muodot: HEX, RGB, RGBA, HSL ja HSLA. Värikoodin voi liittää suoraan Figmasta, Photoshopista tai CSS-tyylitiedostosta."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Kolme sisältötyyppiä yhdessä testissä",
+          "description": "Yksi tarkistus näyttää tuloksen normaalille tekstille, suurelle tekstille (otsikot, painikkeet) ja kuvakkeille – jokaista tyyppiä ei tarvitse testata erikseen."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Reaaliaikainen tekstin esikatselu",
+          "description": "Tekstin tai taustan värin muutos päivittää esikatselun välittömästi – näet, miltä teksti näyttää valitulla taustalla, jo ennen käyttöönottoa."
         }
       ]
     },

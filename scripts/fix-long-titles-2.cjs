@@ -35,7 +35,10 @@ const FIXES = {
 let fixCount = 0;
 for (const [file, newTitle] of Object.entries(FIXES)) {
   const fp = path.join(process.cwd(), file);
-  if (!fs.existsSync(fp)) { console.log('SKIP: ' + file); continue; }
+  if (!fs.existsSync(fp)) {
+    console.log('SKIP: ' + file);
+    continue;
+  }
   const data = JSON.parse(fs.readFileSync(fp, 'utf-8'));
   const oldLen = data.metadata.title.length;
   data.metadata.title = newTitle;

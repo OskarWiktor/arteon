@@ -78,7 +78,10 @@ const FIXES = {
 let fixCount = 0;
 for (const [file, newTitle] of Object.entries(FIXES)) {
   const fp = path.join(process.cwd(), file);
-  if (!fs.existsSync(fp)) { console.log(`  SKIP (not found): ${file}`); continue; }
+  if (!fs.existsSync(fp)) {
+    console.log(`  SKIP (not found): ${file}`);
+    continue;
+  }
   const data = JSON.parse(fs.readFileSync(fp, 'utf-8'));
   const oldTitle = data.metadata.title;
   const oldLen = oldTitle.length;

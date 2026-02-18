@@ -139,6 +139,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionTimeline",
+      "title": "Si funksionon nxjerrja e ngjyrave nga imazhi?",
+      "description": "Pas ngarkimit të skedarit, mjeti kryen disa hapa në sfond – e gjithë analiza ndodh lokalisht në shfletues:",
+      "items": [
+        {
+          "icon": "RiZoomInLine",
+          "title": "Ndryshimi i madhësisë së imazhit",
+          "description": "Imazhi zvogëlohet në rreth 240 pikselë gjerësi. Kjo përshpejton analizën edhe për fotografi shumë të mëdha pa ndikuar saktësinë e zbulimit të ngjyrave."
+        },
+        {
+          "icon": "RiGroupLine",
+          "title": "Grupimi i nuancave të ngjashme",
+          "description": "Çdo piksel analizohet dhe nuancat e afërta bashkohen në grupe. Dy nuanca blu pothuajse identike bëhen një ngjyrë e vetme në paletë."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Zgjedhja e ngjyrave dominuese",
+          "description": "Algoritmi zgjedh ngjyrat që mbulojnë sipërfaqen më të madhe të imazhit. Rezultati është një listë deri në 12 ngjyra të renditura nga më e shpeshta."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Kapërcimi i pikselëve transparentë",
+          "description": "Në skedarët PNG me sfond transparent, këto zona nuk merren parasysh – nxjerrësi analizon vetëm ngjyrat e dukshme. I gjithë procesi zakonisht zgjat më pak se një sekondë."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Zgjidhja e problemeve me nxjerrësin e ngjyrave",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBarChartLine",
+          "title": "Nxjerrësi gjeti më pak se 12 ngjyra",
+          "description": "Numri i ngjyrave të nxjerra varet nga përmbajtja e imazhit. Një logo e thjeshtë me dy ngjyra jep 2–3 rezultate – kjo është sjellje normale. Mjeti nuk shton ngjyra artificiale, nxjerr vetëm ato që ekzistojnë realisht në imazh."
+        },
+        {
+          "icon": "RiAlertLine",
+          "title": "Ngjyra të papritura në paletë",
+          "description": "Mund të jenë ngjyra hijesh, gradientësh ose reflektimesh drite – pikselët në këto zona kanë ngjyra të ndryshme nga objekti i dukshëm në shikim të parë. Përdorimi i imazheve me ngjyra më uniforme ose prerja e zonave të errëta përmirëson rezultatet."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Ngjyra e sfondit dominon rezultatet",
+          "description": "Kur sfondi mbulon më shumë sipërfaqe se vetë objekti, ngjyra e tij shfaqet e para në listë. Zgjidhja: përdorni skedar PNG me sfond transparent ose prisni imazhin që objekti të mbulojë pjesën më të madhe."
+        },
+        {
+          "icon": "RiFileWarningLine",
+          "title": "Skedari nuk pranohet nga nxjerrësi",
+          "description": "Mjeti mbështet vetëm formatet PNG, JPG dhe SVG. Skedarët në formate të tjera (GIF, TIFF, HEIC, PDF) kërkojnë konvertim paraprak."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Çfarë e bën këtë nxjerrës ngjyrash të veçantë?",
       "grid": "two",

@@ -121,6 +121,53 @@
       "variant": "line"
     },
     {
+      "type": "sectionDemo",
+      "title": "Ako interpretovať výsledky?",
+      "subtitle": "Stavy hodnotenia",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta titulok</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Znaky: <strong>52</strong></span><span class=\"text-mid\">Slová: <strong>7</strong></span><span class=\"text-mid\">Pixely: <strong>456px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Správna dĺžka</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta popis</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Znaky: <strong>142</strong></span><span class=\"text-mid\">Slová: <strong>21</strong></span><span class=\"text-mid\">Pixely: <strong>812px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Správna dĺžka</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Nástroj zobrazuje tri metriky pre každé pole spolu s farebným hodnotením dĺžky:</p><h3 class=\"h5 mt-6 mb-2\">Metriky</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Znaky</strong> – celkový počet znakov (vrátane medzier). Ľahko zrozumiteľné, ale menej presné ako pixely.</li><li><strong>Slová</strong> – počet slov. Užitočné na rýchle posúdenie dĺžky.</li><li><strong>Šírka (px)</strong> – šírka textu v pixeloch. Toto je hodnota, ktorú Google skutočne používa pri orezávaní.</li></ul><h3 class=\"h5 mt-6 mb-2\">Stavy hodnotenia</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Správna dĺžka</strong> (zelená) – text je v odporúčanom rozsahu. Google by ho mal zobraziť celý.</li><li><strong class=\"text-warning-text\">Príliš krátke</strong> (žltá) – text je príliš krátky. Je priestor pre ďalšie informácie, ktoré môžu zvýšiť mieru preklikov.</li><li><strong class=\"text-error-text\">Príliš dlhé</strong> (červená) – text prekračuje odporúčaný rozsah. Google ho môže orezať. Zvážte skrátenie.</li><li><strong class=\"text-light\">Žiadne dáta</strong> (sivá) – pole je prázdne. Zadajte text pre zobrazenie analýzy.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Prečo je šírka v pixeloch dôležitejšia ako počet znakov?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">iiiiiiiiiiiiiiii (16 znakov)</p><div class=\"bg-success-icon mt-1 h-3 w-1/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~64px šírky</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">WWWWWWWWWWWWWWWW (16 znakov)</p><div class=\"bg-error-icon mt-1 h-3 w-3/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~256px šírky</p></div></div>",
+      "html": "<p class=\"text-mid\">Rôzne písmená majú rôznu šírku. Porovnajte &quot;iiii&quot; a &quot;WWWW&quot; – obe majú 4 znaky, ale vizuálna šírka je úplne odlišná. Google meria šírku textu v pixeloch, nie v znakoch.</p><p class=\"text-mid mt-3\">Preto titulok s mnohými úzkymi písmenami (i, l, t, f) môže byť dlhší ako titulok so širokými písmenami (W, M, O), hoci majú rovnaký počet znakov. Nástroj zobrazuje obe hodnoty: počet znakov (ľahšie pochopiteľný) a šírku v pixeloch (presnejšiu pre Google).</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Náhľad snippetu – čo zobrazuje?",
+      "html": "<p class=\"text-mid\">Náhľad (snippet preview) simuluje, ako titulok a popis stránky vyzerajú vo výsledkoch vyhľadávania Google. Ide o orientačnú vizualizáciu – skutočný vzhľad sa môže mierne líšiť v závislosti od zariadenia a prehliadača.</p><h3 class=\"h5 mt-6 mb-2\">Prvky náhľadu</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> – adresa stránky zobrazená nad titulkom. Môžete ju zadať do voliteľného poľa pre realistickejší náhľad.</li><li><strong>Titulok</strong> – modrý nadpis. Ak je príliš dlhý, nástroj ho automaticky orezá a pridá tri bodky.</li><li><strong>Popis</strong> – sivý text pod titulkom. Tiež sa orezá, ak prekročí limit.</li></ul><h3 class=\"h5 mt-6 mb-2\">Čo náhľad neukazuje</h3><p class=\"text-mid\">Náhľad nezahŕňa všetky prvky, ktoré Google môže pridať k výsledku: dátumy, hviezdičkové hodnotenia, odkazy na podstránky ani rozšírené fragmenty. Ide o zjednodušenú verziu zameranú na dĺžku textu.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Najčastejšie problémy a riešenia",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "Titulok je príliš dlhý",
+          "description": "Skráťte titulok a zachovajte najdôležitejšie slová na začiatku. Odstráňte prídavné mená typu najlepší, profesionálny – zriedka pridávajú hodnotu. Názov firmy na koniec za oddeľovač."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Popis je príliš krátky",
+          "description": "Pridajte viac informácií: čo používateľ na stránke nájde, akú výhodu získa, čím sa ponuka odlišuje. Ukončite výzvou k akcii."
+        },
+        {
+          "icon": "RiRuler2Line",
+          "title": "Šírka v pixeloch je iná, ako sa čakalo",
+          "description": "Nástroj meria šírku pomocou štandardného písma podobného tomu, ktoré používa Google. Výsledok sa môže mierne líšiť v závislosti od prehliadača."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Pre koho je kontrola meta značiek určená?",
       "grid": "two",

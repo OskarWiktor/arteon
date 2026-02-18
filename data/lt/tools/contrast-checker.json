@@ -113,10 +113,53 @@
       "variant": "line"
     },
     {
+      "type": "sectionTabs",
+      "title": "Kokie spalvų formatai palaikomi?",
+      "tabs": [
+        {
+          "title": "HEX",
+          "icon": "RiHashtag",
+          "html": "<div><p class=\"text-mid mb-3\">Šešioliktainis formatas – populiariausias kuriant svetaines. Prasideda simboliu <code class=\"rounded bg-black/5 px-1\">#</code> ir turi 3 arba 6 simbolius (skaičiai 0-9 ir raidės A-F).</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">#fff</code> – balta (sutrumpinta forma)</li><li><code class=\"rounded bg-black/5 px-1\">#ffffff</code> – balta (pilna forma)</li><li><code class=\"rounded bg-black/5 px-1\">#1a73e8</code> – mėlyna</li></ul></div>"
+        },
+        {
+          "title": "RGB / RGBA",
+          "icon": "RiPaletteLine",
+          "html": "<div><p class=\"text-mid mb-3\">Formatas, pagrįstas trimis kanalais: raudona (Red), žalia (Green), mėlyna (Blue). Kiekvienas kanalas priima reikšmę nuo 0 iki 255. RGBA variantas prideda ketvirtą parametrą – skaidrumą (alpha) nuo 0 iki 1.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">rgb(255, 255, 255)</code> – balta</li><li><code class=\"rounded bg-black/5 px-1\">rgba(0, 0, 0, 0.8)</code> – juoda su 80% dengimu</li></ul></div>"
+        },
+        {
+          "title": "HSL / HSLA",
+          "icon": "RiEqualizerLine",
+          "html": "<div><p class=\"text-mid mb-3\">Formatas, pagrįstas atspalviu (Hue, 0-360°), sodrumu (Saturation, 0-100%) ir šviesumu (Lightness, 0-100%). HSLA variantas prideda skaidrumą. Šis formatas naudingas, kai norite keisti spalvos šviesumą ar sodrumą.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">hsl(0, 0%, 100%)</code> – balta</li><li><code class=\"rounded bg-black/5 px-1\">hsla(217, 91%, 60%, 0.9)</code> – mėlyna su 90% dengimu</li></ul></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionDemo",
       "title": "Kaip interpretuoti įskaitomumo testo rezultatus",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Kontrasto santykis</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Įprastas tekstas</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div></div></div>",
       "html": "<p class=\"text-mid mb-4\">Įvedus spalvas įrankis rodo rezultatus trijose dalyse:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Įprastas tekstas</strong> – reikalauja kontrasto 4.5:1 (AA) arba 7:1 (AAA). Taikoma tekstui mažesniam nei 18pt (24px) arba mažesniam nei 14pt paryškintam.</li><li><strong>Didelis tekstas / paryškintas</strong> – reikalauja kontrasto 3:1 (AA) arba 4.5:1 (AAA). Taikoma antraštėms, mygtukams ir paryškintam tekstui.</li><li><strong>Piktogramos</strong> – reikalauja kontrasto 3:1 (AA). Taikoma piktogramoms ir grafiniams sąsajos elementams, perduodantiems informaciją.</li></ul><p class=\"text-mid mt-3\"><strong>Žalia žymė</strong> reiškia, kad reikalavimas įvykdytas. <strong>Raudona žymė</strong> reiškia, kad kontrastas per žemas ir reikalinga korekcija.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Ką reiškia skaitomumo testo rezultatai?",
+      "html": "<p class=\"text-mid mb-4\">Įrankis rodo kontrasto santykį skalėje nuo 1:1 (nėra kontrasto) iki 21:1 (maksimalus kontrastas – juodas tekstas baltame fone). Rezultatas lyginamas su WCAG standarto ribomis:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Įprastas tekstas</strong> – reikalauja kontrasto bent 4.5:1 AA lygiui (minimalus standartas) arba 7:1 AAA lygiui (išplėstinis standartas). Taikoma tekstui mažesniam nei 18pt (24px) arba mažesniam nei 14pt (18.5px) paryškintam.</li><li><strong>Didelis tekstas / paryškintas</strong> – reikalauja kontrasto bent 3:1 AA lygiui arba 4.5:1 AAA lygiui. Taikoma tekstui nuo 18pt (24px) arba nuo 14pt (18.5px) paryškintam – antraštėms, mygtukams, paryškinimams.</li><li><strong>Piktogramos ir grafiniai elementai</strong> – reikalauja kontrasto bent 3:1 AA lygiui. Taikoma piktogramoms, mygtukams, formų laukams ir kitiems sąsajos elementams, perduodantiems informaciją.</li></ul><p class=\"text-mid mt-3\"><strong>AA lygis</strong> yra minimalus reikalavimas pagal prieinamumo teisės aktus daugelyje šalių, įskaitant <a href=\"https://eur-lex.europa.eu/legal-content/LT/TXT/?uri=CELEX:32016L2102\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">ES tinklalapių prieinamumo direktyvą</a>. <strong>AAA lygis</strong> užtikrina geresnį skaitomumą, bet ne visada yra praktiškai pasiekiamas visiems elementams.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Automatinis spalvos pritaikymas WCAG reikalavimams",
+      "html": "<p class=\"text-mid mb-4\">Jei kontrastas per žemas, tinkamos spalvos ieškoti bandymų ir klaidų metodu nereikia. Funkcija <strong>Match</strong> automatiškai suranda teksto spalvos variantą, atitinkantį pasirinktą kontrasto ribą.</p><p class=\"text-mid mb-4\">Kaip veikia pritaikymas:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Pasirinkite pritaikymo tikslą iš sąrašo – pvz., AA įprastam tekstui arba AAA dideliam tekstui.</li><li>Paleiskite funkciją mygtuku Match.</li><li>Įrankis peržiūri teksto spalvos šviesumo variantus ir pasiūlo artimiausią, atitinkantį reikalavimus.</li><li>Pasiūlytą spalvos kodą galima nukopijuoti į iškarpinę arba iš karto nustatyti kaip naują teksto spalvą.</li></ol><p class=\"text-mid mt-3\">Algoritmas išsaugo originalios spalvos atspalvį ir sodrumą, keisdamas tik šviesumą. Pasiūlyta spalva lieka suderinta su vizualiniu identitetu ir kartu atitinka prieinamumo standartą.</p>"
     },
     {
       "type": "gap",
@@ -185,6 +228,107 @@
             "aa": true,
             "aaa": true
           }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Spalvų kontrasto tikrintuvo trikčių šalinimas",
+      "html": "<h3 class=\"h5 mb-2\">Matau klaidos pranešimą apie spalvos formatą</h3><p class=\"text-mid mb-4\">Patikrinkite spalvos formatą. HEX kodas turi prasidėti simboliu <code class=\"rounded bg-black/5 px-1\">#</code> ir turėti 3 arba 6 simbolius (pvz., <code class=\"rounded bg-black/5 px-1\">#fff</code> arba <code class=\"rounded bg-black/5 px-1\">#ffffff</code>). RGB formatui patikrinkite, ar reikšmės atskirtos kableliais ir yra intervale 0-255.</p><h3 class=\"h5 mb-2\">Funkcija Match neranda tinkamos spalvos</h3><p class=\"text-mid mb-4\">Kai fonas ir tekstas turi panašų šviesumą tame pačiame atspalvyje, algoritmas gali nerasti varianto, atitinkančio reikalavimus, nekeisdamas atspalvio. Tokiu atveju apsvarstykite fono spalvos keitimą arba visiškai kitos teksto spalvos pasirinkimą.</p><h3 class=\"h5 mb-2\">Spalva parinkiklyje neatitinka įvesto kodo</h3><p class=\"text-mid\">Naršyklės spalvų parinkiklis palaiko tik HEX formatą be skaidrumo. Jei įvesite spalvą RGBA ar HSLA formatu su skaidrumu, parinkiklis rodys tik spalvinę dalį (be alpha). Kontrasto skaičiavimai vis tiek atsižvelgia į skaidrumą.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kur verta tikrinti spalvų skaitomumą?",
+      "description": "Skaitomumas svarbus visur, kur kas nors turi perskaityti tekstą ar atpažinti sąsajos elementą:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Svetainės",
+          "description": "Tekstas puslapiuose, mygtukai, nuorodos, formos. Ypač svarbu verslo svetainėms, kur lankytojai yra įvairaus amžiaus ir turi skirtingas regos galimybes."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Elektroninės parduotuvės",
+          "description": "Kainos, mygtukai Pirkti dabar, produkto informacija. Žemas skaitomumas gali reikšti prarastus užsakymus."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Prezentacijos",
+          "description": "Skaidrės, rodomos per projektorių, dažnai turi silpnesnį kontrastą nei monitoriuje. Verta patikrinti spalvas prieš prezentaciją."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Plakatai ir lankstinukai",
+          "description": "Spausdinta medžiaga, žiūrima skirtingomis apšvietimo sąlygomis, reikalauja aukšto kontrasto."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Mobiliosios programėlės",
+          "description": "Telefonai naudojami tiesioginiuose saulės spinduliuose, naktį, įvairaus amžiaus žmonių."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Restoranų meniu",
+          "description": "Dažnai spausdinami ant spalvoto popieriaus ar su dekoratyviniais šriftais – lengva gauti per žemą kontrastą."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Spalvų skaitomumas daltonikams",
+      "html": "<p class=\"text-mid mb-4\">Daltonizmas (spalvų aklumas) yra spalvų matymo sutrikimas, paveikiantis apie 8% vyrų ir 0,5% moterų. Daltonikai gali sunkiai atskirti tam tikras spalvų poras, net jei šviesumo kontrastas yra pakankamas.</p><p class=\"text-mid mb-4\">Dažniausi daltonizmo tipai:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deuteranopija</strong> – sunkumai atskiriant žalią ir raudoną (dažniausias tipas)</li><li><strong>Protanopija</strong> – sunkumai matant raudoną</li><li><strong>Tritanopija</strong> – sunkumai matant mėlyną ir geltoną (reta)</li></ul><p class=\"text-mid mt-3\">Šis įrankis tikrina šviesumo kontrastą, kuris svarbus visiems vartotojams. Tačiau projektuojant verta papildomai vengti problemiškų spalvų derinių (pvz., raudonas tekstas žaliame fone) ir nepasikliauti vien spalva perduodant informaciją – naudokite ir formas, piktogramas bei tekstą.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kuo išsiskiria spalvų kontrasto ir skaitomumo tikrintuvas?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiEyeLine",
+          "title": "Objektyvus vertinimas pagal matematinę formulę",
+          "description": "Kontrasto santykis skaičiuojamas pagal WCAG gairių formulę – rezultatas nepriklauso nuo monitoriaus nustatymų ar individualaus spalvų suvokimo."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Atitikimas tarptautiniam WCAG standartui",
+          "description": "Rezultatai atitinka WCAG 2.1 reikalavimus, kurie yra skaitmeninio prieinamumo teisės aktų pagrindas ES ir daugelyje kitų šalių."
+        },
+        {
+          "icon": "RiMagicLine",
+          "title": "Automatinis spalvos pritaikymas ribai",
+          "description": "Funkcija Match suranda teksto spalvos variantą, atitinkantį pasirinktą kontrasto ribą – išsaugo atspalvį, keičia tik šviesumą."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Penki spalvų formatai",
+          "description": "Palaikomi formatai: HEX, RGB, RGBA, HSL ir HSLA. Spalvos kodą galima įklijuoti tiesiai iš Figma, Photoshop ar CSS stiliaus lapo."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Trys turinio tipai viename teste",
+          "description": "Viena patikra rodo rezultatą įprastam tekstui, dideliam tekstui (antraštės, mygtukai) ir piktogramoms – nereikia testuoti kiekvieno tipo atskirai."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Teksto peržiūra realiuoju laiku",
+          "description": "Teksto ar fono spalvos keitimas iš karto atnaujina peržiūrą – matote, kaip tekstas atrodo pasirinktame fone, dar prieš diegimą."
         }
       ]
     },

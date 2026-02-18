@@ -113,10 +113,53 @@
       "variant": "line"
     },
     {
+      "type": "sectionTabs",
+      "title": "Cilat formate ngjyrash mbështeten?",
+      "tabs": [
+        {
+          "title": "HEX",
+          "icon": "RiHashtag",
+          "html": "<div><p class=\"text-mid mb-3\">Formati heksadecimal – më i popullarizuari në dizajnin e uebit. Fillon me shenjën <code class=\"rounded bg-black/5 px-1\">#</code> dhe përmban 3 ose 6 karaktere (shifrat 0-9 dhe shkronjat A-F).</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">#fff</code> – e bardhë (formë e shkurtuar)</li><li><code class=\"rounded bg-black/5 px-1\">#ffffff</code> – e bardhë (formë e plotë)</li><li><code class=\"rounded bg-black/5 px-1\">#1a73e8</code> – blu</li></ul></div>"
+        },
+        {
+          "title": "RGB / RGBA",
+          "icon": "RiPaletteLine",
+          "html": "<div><p class=\"text-mid mb-3\">Format i bazuar në tre kanale: e kuqe (Red), e gjelbër (Green), blu (Blue). Çdo kanal pranon një vlerë nga 0 në 255. Varianti RGBA shton parametrin e katërt – transparencën (alpha) nga 0 në 1.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">rgb(255, 255, 255)</code> – e bardhë</li><li><code class=\"rounded bg-black/5 px-1\">rgba(0, 0, 0, 0.8)</code> – e zezë me 80% mbulim</li></ul></div>"
+        },
+        {
+          "title": "HSL / HSLA",
+          "icon": "RiEqualizerLine",
+          "html": "<div><p class=\"text-mid mb-3\">Format i bazuar në nuancë (Hue, 0-360°), ngopje (Saturation, 0-100%) dhe ndriçim (Lightness, 0-100%). Varianti HSLA shton transparencën. Ky format është i dobishëm kur dëshironi të rregulloni ndriçimin ose ngopjen e një ngjyre.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">hsl(0, 0%, 100%)</code> – e bardhë</li><li><code class=\"rounded bg-black/5 px-1\">hsla(217, 91%, 60%, 0.9)</code> – blu me 90% mbulim</li></ul></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionDemo",
       "title": "Si të interpretoni rezultatet e testit të lexueshmërisë",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Raporti i kontrastit</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Tekst normal</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div></div></div>",
       "html": "<p class=\"text-mid mb-4\">Pasi të shkruani ngjyrat, mjeti tregon rezultate në tre seksione:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tekst normal</strong> – kërkon kontrast 4.5:1 (AA) ose 7:1 (AAA). Vlen për tekst nën 18pt (24px) ose nën 14pt bold.</li><li><strong>Tekst i madh / bold</strong> – kërkon kontrast 3:1 (AA) ose 4.5:1 (AAA). Vlen për tituj, butona dhe tekst të theksuar.</li><li><strong>Ikona</strong> – kërkon kontrast 3:1 (AA). Vlen për ikona dhe elemente grafike UI që mbajnë informacion.</li></ul><p class=\"text-mid mt-3\"><strong>Treguesi i gjelbër</strong> do të thotë se kërkesa është plotësuar. <strong>Treguesi i kuq</strong> do të thotë se kontrasti është shumë i ulët dhe duhet korrigjuar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Çfarë do të thonë rezultatet e testit të lexueshmërisë?",
+      "html": "<p class=\"text-mid mb-4\">Mjeti tregon raportin e kontrastit në një shkallë nga 1:1 (pa kontrast) deri në 21:1 (kontrast maksimal – tekst i zi në sfond të bardhë). Rezultati krahasohet me pragjet e përcaktuara në standardin WCAG:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tekst normal</strong> – kërkon kontrast së paku 4.5:1 për nivelin AA (standardi minimal) ose 7:1 për nivelin AAA (standardi i zgjeruar). Vlen për tekst nën 18pt (24px) ose nën 14pt (18.5px) bold.</li><li><strong>Tekst i madh / bold</strong> – kërkon kontrast së paku 3:1 për nivelin AA ose 4.5:1 për nivelin AAA. Vlen për tekst nga 18pt (24px) ose nga 14pt (18.5px) bold – tituj, butona, theksime.</li><li><strong>Ikona dhe elemente grafike</strong> – kërkojnë kontrast së paku 3:1 për nivelin AA. Vlen për ikona, butona, fusha formulari dhe elemente të tjera UI që mbajnë informacion.</li></ul><p class=\"text-mid mt-3\"><strong>Niveli AA</strong> është minimumi i kërkuar nga legjislacioni i aksesueshmërisë në shumë vende, përfshirë <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016L2102\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">direktivën e BE-së për aksesueshmërinë e uebit</a>. <strong>Niveli AAA</strong> siguron lexueshmëri më të mirë, por nuk është gjithmonë praktikisht i arritshëm për të gjitha elementet.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Përshtatja automatike e ngjyrës sipas kërkesave WCAG",
+      "html": "<p class=\"text-mid mb-4\">Nëse kontrasti është shumë i ulët, nuk keni nevojë të kërkoni ngjyrën e duhur me metodën e provës dhe gabimit. Funksioni <strong>Match</strong> gjen automatikisht një variant të ngjyrës së tekstit që plotëson pragun e zgjedhur të kontrastit.</p><p class=\"text-mid mb-4\">Si funksionon përshtatja:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Zgjidhni objektivin e përshtatjes nga lista – p.sh. AA për tekst normal ose AAA për tekst të madh.</li><li>Nisni funksionin me butonin Match.</li><li>Mjeti kërkon nëpër variantet e ndriçimit të ngjyrës së tekstit dhe sugjeron më të afërtën që plotëson kërkesat.</li><li>Kodi i ngjyrës së sugjeruar mund të kopjohet në clipboard ose të vendoset menjëherë si ngjyrë e re e tekstit.</li></ol><p class=\"text-mid mt-3\">Algoritmi ruan nuancën dhe ngopjen e ngjyrës origjinale, duke ndryshuar vetëm ndriçimin. Ngjyra e sugjeruar mbetet kështu në përputhje me identitetin vizual dhe njëkohësisht plotëson standardin e aksesueshmërisë.</p>"
     },
     {
       "type": "gap",
@@ -185,6 +228,107 @@
             "aa": true,
             "aaa": true
           }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Zgjidhja e problemeve me kontrolluesin e kontrastit të ngjyrave",
+      "html": "<h3 class=\"h5 mb-2\">Shoh një mesazh gabimi për formatin e ngjyrës</h3><p class=\"text-mid mb-4\">Kontrolloni formatin e ngjyrës. Kodi HEX duhet të fillojë me shenjën <code class=\"rounded bg-black/5 px-1\">#</code> dhe të përmbajë 3 ose 6 karaktere (p.sh. <code class=\"rounded bg-black/5 px-1\">#fff</code> ose <code class=\"rounded bg-black/5 px-1\">#ffffff</code>). Për formatin RGB kontrolloni që vlerat janë të ndara me presje dhe në intervalin 0-255.</p><h3 class=\"h5 mb-2\">Funksioni Match nuk gjen ngjyrë të përshtatshme</h3><p class=\"text-mid mb-4\">Kur sfondi dhe teksti kanë ndriçim të ngjashëm në të njëjtën nuancë, algoritmi mund të mos gjejë variant që plotëson kërkesat pa ndryshuar nuancën. Në këtë rast merrni parasysh ndryshimin e ngjyrës së sfondit ose zgjedhjen e një ngjyre krejtësisht të ndryshme teksti.</p><h3 class=\"h5 mb-2\">Ngjyra në zgjedhës nuk përputhet me kodin e futur</h3><p class=\"text-mid\">Zgjedhësi i ngjyrave i shfletuesit mbështet vetëm formatin HEX pa transparencë. Nëse futni ngjyrë në formatin RGBA ose HSLA me transparencë, zgjedhësi tregon vetëm pjesën e ngjyrës (pa alpha). Llogaritjet e kontrastit ende marrin parasysh transparencën.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ku ia vlen të kontrolloni lexueshmërinë e ngjyrave?",
+      "description": "Lexueshmëria është e rëndësishme kudo ku dikush duhet të lexojë tekst ose të njohë një element ndërfaqeje:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Faqe interneti",
+          "description": "Teksti në faqe, butonat, lidhjet, formularët. Veçanërisht e rëndësishme për faqet e biznesit, ku vizitorët kanë mosha dhe aftësi vizuale të ndryshme."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Dyqane në internet",
+          "description": "Çmimet, butonat Bli tani, informacioni i produktit. Lexueshmëria e ulët mund të thotë porosi të humbura."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Prezantime",
+          "description": "Sllajdet e shfaqura nga projektori shpesh kanë kontrast më të dobët se në ekran. Ia vlen të kontrolloni ngjyrat para prezantimit."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Postera dhe fletëpalosje",
+          "description": "Materialet e printuara të shikuara në kushte të ndryshme ndriçimi kërkojnë kontrast të lartë."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Aplikacione celulare",
+          "description": "Telefonat përdoren në dritë të plotë dielli, natën, nga njerëz të moshave të ndryshme."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Menutë e restoranteve",
+          "description": "Shpesh të printuara në letër me ngjyrë ose me shkronja dekorative – lehtë arrihet kontrast shumë i ulët."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Lexueshmëria e ngjyrave për personat me daltonizëm",
+      "html": "<p class=\"text-mid mb-4\">Daltonizmi (verbëria ndaj ngjyrave) është çrregullim i shikimit të ngjyrave që prek rreth 8% të meshkujve dhe 0,5% të femrave. Personat me daltonizëm mund të kenë vështirësi në dallimin e disa çifteve ngjyrash, edhe kur kontrasti i ndriçimit është i mjaftueshëm.</p><p class=\"text-mid mb-4\">Llojet më të zakonshme të daltonizmit:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deuteranopia</strong> – vështirësi në dallimin e gjelbër dhe kuqe (forma më e zakonshme)</li><li><strong>Protanopia</strong> – vështirësi në shikimin e kuqes</li><li><strong>Tritanopia</strong> – vështirësi në shikimin e bluzë dhe verdhë (e rrallë)</li></ul><p class=\"text-mid mt-3\">Ky mjet kontrollon kontrastin e ndriçimit, i cili është i rëndësishëm për të gjithë përdoruesit. Megjithatë, gjatë dizajnimit ia vlen gjithashtu të shmangni kombinime problematike ngjyrash (p.sh. tekst i kuq në sfond të gjelbër) dhe të mos mbështeteni vetëm tek ngjyra për të komunikuar informacion – përdorni gjithashtu forma, ikona dhe tekst.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Çfarë e dallon kontrolluesin e kontrastit dhe lexueshmërisë së ngjyrave?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiEyeLine",
+          "title": "Vlerësim objektiv i bazuar në formulë matematikore",
+          "description": "Raporti i kontrastit llogaritet sipas formulës nga udhëzimet WCAG – rezultati nuk varet nga cilësimet e ekranit apo perceptimi individual i ngjyrave."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Përputhje me standardin ndërkombëtar WCAG",
+          "description": "Rezultatet korrespondojnë me kërkesat e WCAG 2.1, që janë baza e legjislacionit të aksesueshmërisë digjitale në BE dhe shumë vende të tjera."
+        },
+        {
+          "icon": "RiMagicLine",
+          "title": "Përshtatje automatike e ngjyrës në prag",
+          "description": "Funksioni Match gjen një variant të ngjyrës së tekstit që plotëson pragun e zgjedhur të kontrastit – ruan nuancën, ndryshon vetëm ndriçimin."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Pesë formate ngjyrash",
+          "description": "Formatet e mbështetura: HEX, RGB, RGBA, HSL dhe HSLA. Kodin e ngjyrës mund ta ngjisni drejtpërdrejt nga Figma, Photoshop ose fletët e stilit CSS."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Tre lloje përmbajtjeje në një test",
+          "description": "Një kontroll tregon rezultatin për tekst normal, tekst të madh (tituj, butona) dhe ikona – nuk keni nevojë të testoni çdo lloj veç e veç."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Paraparje e tekstit në kohë reale",
+          "description": "Ndryshimi i ngjyrës së tekstit ose sfondit përditëson menjëherë paraparjen – shihni si duket teksti në sfondin e zgjedhur, ende para implementimit."
         }
       ]
     },

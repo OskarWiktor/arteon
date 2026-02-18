@@ -115,10 +115,64 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Sådan udfylder du oplysningerne i signaturen",
+      "html": "<p class=\"text-mid\">I fanen <strong>Oplysninger</strong> finder du alle felter, du kan udfylde. Kun to er obligatoriske: navn og e-mailadresse. De øvrige felter er valgfrie og vises kun i signaturen, hvis du udfylder dem.</p><h3 class=\"h5 mt-6 mb-3\">Felter i fanen Oplysninger</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Linje over navnet</strong> – ekstra tekst over navn. Du kan skrive firmanavn, slogan eller motto.</li><li><strong>Avatar / logo (billed-URL)</strong> – URL til profilbillede eller firmalogo. Billedet bør være kvadratisk (min. 120×120 px) og offentligt tilgængeligt.</li><li><strong>Navn</strong> – obligatorisk felt.</li><li><strong>Tag ved navn</strong> – kort tekst ved siden af navnet, f.eks. pronominer eller forkortet titel.</li><li><strong>Stilling</strong> – rolle i virksomheden.</li><li><strong>Firmanavn</strong> – organisationens navn.</li><li><strong>Ekstra linje</strong> – kort beskrivelse af din aktivitet eller tilbud.</li><li><strong>E-mail</strong> – obligatorisk felt.</li><li><strong>Telefon</strong> – kontaktnummer i valgfrit format.</li><li><strong>Hjemmeside</strong> – fuld URL startende med https://.</li><li><strong>Adresse</strong> – fysisk firmaadresse.</li><li><strong>Formelle oplysninger</strong> – CVR-nummer, licens eller andre branchekrav.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionDemo",
       "title": "Signaturlayouts – hvilket skal du vælge?",
       "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Signaturlayout</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div></div>",
       "html": "<p class=\"text-mid\">Generatoren tilbyder otte foruddefinerede layouts. Hvert layout præsenterer de samme oplysninger på en anden måde.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> – klassisk vertikalt layout, passer til de fleste brugsscenarier.</li><li><strong>Top bar</strong> – vandret linje adskiller signaturen fra indholdet.</li><li><strong>Labels left</strong> – to kolonner: etiketter og værdier.</li><li><strong>Centered</strong> – formelt udseende, indhold centreret.</li><li><strong>Compact</strong> – alt på én linje, minimal højde.</li><li><strong>Two columns</strong> – oplysninger til venstre, kontakter til højre.</li><li><strong>Minimalist</strong> – kun grundlæggende oplysninger.</li><li><strong>Bottom bar</strong> – farvet linje med kontakter i bunden af signaturen.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Sådan tilføjer du CTA-knapper",
+      "html": "<p class=\"text-mid\">En CTA-knap (call-to-action) er et klikbart element, der leder modtageren til en valgt side. Det kan være et link til en mødekalender, kontaktformular eller tilbud. Generatoren gør det muligt at tilføje to CTA-knapper.</p><h3 class=\"h5 mt-6 mb-3\">Primær knap</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Åbn fanen <strong>Knapper</strong> i editoren.</li><li>I sektionen <strong>Primær knap</strong> indtast teksten, som modtageren vil se, f.eks. Book gratis konsultation.</li><li>I feltet <strong>CTA-link</strong> indsæt den fulde URL-adresse. Adressen skal starte med https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Sekundær knap</h3><p class=\"text-mid\">Du kan tilføje en anden CTA-knap i outline-stil (gennemsigtig baggrund med kant). Udfyld felterne analogt.</p><h3 class=\"h5 mt-6 mb-3\">Afrunding af knapper</h3><p class=\"text-mid\">I bunden af fanen Knapper finder du muligheden <strong>Afrunding af knapper</strong>. Tre varianter: Ingen (skarpe hjørner), Let (let afrundet) eller Fuld (oval knap).</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Sådan tilføjer du links til sociale medier",
+      "html": "<p class=\"text-mid\">I fanen <strong>Sociale medier</strong> kan du tilføje links til dine profiler. Generatoren understøtter tolv platforme: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (tidligere Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram og Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Sådan gør du</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Åbn fanen <strong>Sociale medier</strong> i editoren.</li><li>Ved hver platform finder du et felt til URL-adresse. Indsæt det fulde link til din profil.</li><li>Udfyld kun de felter, der er relevante for dig. Tomme felter vises ikke i signaturen.</li></ol><h3 class=\"h5 mt-6 mb-3\">Ikoner for sociale medier</h3><p class=\"text-mid\">I bunden af fanen finder du muligheden <strong>Vis ikoner ved siden af navne</strong>. Når den er aktiveret, vises links som farvede SVG-ikoner i stedet for bare navne.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Ikonstørrelse</strong> – valgmuligheder: Små (16 px), Mellemstore (20 px) eller Store (24 px).</li><li><strong>Ikonfarve</strong> – Platformfarver (standardfarver), Accentfarve (ensartet) eller Tekstfarve.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Tilpasning af udseende",
+      "html": "<p class=\"text-mid\">I fanen <strong>Udseende</strong> kan du tilpasse farver, skrifttype og andre visuelle elementer.</p><h3 class=\"h5 mt-6 mb-3\">Farvetemaer</h3><p class=\"text-mid\">Øverst i fanen finder du fem foruddefinerede temaer: Mørk, Blå, Lilla, Grøn og Grå. Et klik på et tema indstiller automatisk accentfarve og tekstfarve.</p><h3 class=\"h5 mt-6 mb-3\">Farver</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Accentfarve</strong> – bruges i sidebjælke/topbjælke, CTA-knap og links.</li><li><strong>Tekstfarve</strong> – farve på alle tekster i signaturen.</li><li><strong>Baggrundsfarve</strong> – signaturens baggrund. Standard hvid.</li></ul><h3 class=\"h5 mt-6 mb-3\">Skrifttype og størrelse</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Skrifttype</strong> – valgmuligheder: Arial, Verdana, Tahoma, Trebuchet MS og Georgia. Alle er e-mail-sikre.</li><li><strong>Tekststørrelse</strong> – tre muligheder: Lille (12 px), Standard (14 px) og Større (16 px).</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Tekststil – farver og størrelser for de enkelte elementer",
+      "html": "<p class=\"text-mid\">I fanen <strong>Tekststil</strong> kan du individuelt tilpasse farve og skriftstørrelse for hvert tekstelement i signaturen.</p><h3 class=\"h5 mt-6 mb-3\">Tilgængelige elementer</h3><p class=\"text-mid\">Kun de elementer, der aktuelt findes i signaturen, er synlige. For hvert element kan du indstille:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Navn</strong> – vises som standard i accentfarve.</li><li><strong>Stilling</strong> – rolle i virksomheden.</li><li><strong>Firma</strong> – organisationens navn.</li><li><strong>Kontaktoplysninger</strong> – e-mail, telefon, hjemmeside.</li><li><strong>Sociale medier</strong> – links til profiler.</li><li><strong>Juridisk klausul</strong> – juridisk tekst i bunden.</li></ul><h3 class=\"h5 mt-6 mb-3\">Sådan ændrer du farve</h3><p class=\"text-mid\">Ved hvert element finder du farveindstillinger. Klik på en farvefirkant for at vælge. Nulstilknappen gendanner standardfarven.</p><h3 class=\"h5 mt-6 mb-3\">Sådan ændrer du størrelse</h3><p class=\"text-mid\">I anden række finder du størrelsesjustering med knapperne - og +. Interval: fra -4 til +4 pixels.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Afstande mellem elementer",
+      "html": "<p class=\"text-mid\">I fanen <strong>Afstande</strong> kan du præcist styre afstandene mellem de enkelte elementer i signaturen.</p><h3 class=\"h5 mt-6 mb-3\">Indre margen</h3><p class=\"text-mid\">Øverst i fanen finder du muligheden for indre margen – afstanden mellem signaturens indhold og kanter. Tre værdier: 8 px (lille), 16 px (mellem) og 24 px (stor).</p><h3 class=\"h5 mt-6 mb-3\">Afstande mellem elementer</h3><p class=\"text-mid\">Under margenen finder du justeringer for de enkelte elementer med knapperne + og -.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Efter navn</strong></li><li><strong>Efter stilling / firma</strong></li><li><strong>Efter ekstra linje</strong></li><li><strong>Efter kontaktoplysninger</strong></li><li><strong>Efter sociale medier</strong></li><li><strong>Efter CTA-knap</strong></li><li><strong>Før juridisk klausul</strong></li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Juridisk klausul / GDPR – hvornår skal den tilføjes?",
+      "html": "<p class=\"text-mid\">I fanen <strong>Klausul / GDPR</strong> kan du tilføje en juridisk tekst, der vises i bunden af signaturen med mindre skrift.</p><h3 class=\"h5 mt-6 mb-3\">Hvornår er det værd at tilføje en klausul?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Forretningskorrespondance</strong> – oplysning om fortrolighed og anmodning om sletning ved fejlagtig levering.</li><li><strong>Branchekrav</strong> – visse brancher (f.eks. juridisk, medicinsk, finansiel) kræver bestemte oplysninger i hver besked.</li><li><strong>GDPR</strong> – oplysning om behandling af persondata, hvis virksomheden er dataansvarlig.</li></ul><p class=\"text-mid mt-4\">Som standard er feltet udfyldt med en eksempeltekst. Du kan redigere, slette eller erstatte den med din egen klausul.</p><h3 class=\"h5 mt-6 mb-3\">Adskillelseslinje</h3><p class=\"text-mid\">Under tekstfeltet finder du muligheden <strong>Vis adskillelseslinje</strong>. Aktivering tilføjer en vandret linje mellem kontaktoplysninger og juridisk klausul.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Automatisk lagring og nulstilling af indstillinger",
+      "html": "<p class=\"text-mid\">Generatoren gemmer automatisk alle indstillinger i browserens hukommelse (localStorage). Når du genindlæser siden eller åbner værktøjet igen, gendannes data, layout, farver og alle andre indstillinger.</p><h3 class=\"h5 mt-6 mb-3\">Sådan fungerer automatisk lagring</h3><p class=\"text-mid\">Enhver ændring (tekst, farve, layout, afstande) gemmes øjeblikkeligt i browserens hukommelse. Lagring sker automatisk i baggrunden.</p><h3 class=\"h5 mt-6 mb-3\">Sådan nulstiller du indstillinger</h3><p class=\"text-mid\">Under forhåndsvisningen finder du knappen <strong>Nulstil udseende</strong>. Bekræftelse gendanner alle data og indstillinger til standardværdier. Handlingen kan ikke fortrydes.</p><h3 class=\"h5 mt-6 mb-3\">Eksport og import af konfiguration</h3><p class=\"text-mid\">Under forhåndsvisningen finder du to ekstra knapper: <strong>Eksportér indstillinger</strong> og <strong>Importér indstillinger</strong>. Eksport gemmer al konfiguration til en JSON-fil. Import indlæser en tidligere gemt konfiguration.</p>"
     },
     {
       "type": "gap",
@@ -152,6 +206,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Forhåndsvisning af signatur og eksportmuligheder",
+      "html": "<p class=\"text-mid\">Forhåndsvisningspanelet vises til højre for editoren og opdateres automatisk ved enhver ændring. Forhåndsvisningen er fastgjort til skærmen (sticky), så den er synlig selv under scrolling.</p><h3 class=\"h5 mt-6 mb-3\">Skift forhåndsvisningsbaggrund</h3><p class=\"text-mid\">Over forhåndsvisningen finder du tre knapper til at skifte baggrund: <strong>Lys</strong> (standard grå baggrund), <strong>Mørk</strong> (mørk baggrund til kontrol af læsbarhed) og <strong>Skakbræt</strong> (skakbrætmønster til at se gennemsigtighed og kanter).</p><h3 class=\"h5 mt-6 mb-3\">Handlingsknapper</h3><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Kopiér signatur (Gmail / Outlook)</strong> – kopierer signaturen som formateret HTML til udklipsholder.</li><li><strong>Kopiér HTML-kode</strong> – kopierer rå HTML-kode til udklipsholder.</li><li><strong>Download som HTML</strong> – gemmer signaturkoden som .html-fil.</li><li><strong>Vis HTML-kode</strong> – åbner et modalt vindue med kildekoden.</li><li><strong>Eksportér indstillinger</strong> – gemmer hele konfigurationen som JSON-fil.</li><li><strong>Importér indstillinger</strong> – indlæser konfiguration fra JSON-fil.</li><li><strong>Nulstil udseende</strong> – gendanner alle data og indstillinger til standardværdier (efter bekræftelse).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Hvem er e-mail-signatur-generatoren til?",
       "grid": "two",
@@ -175,6 +238,62 @@
           "icon": "RiScales3Line",
           "title": "Advokater, revisorer, læger",
           "description": "Mulighed for at tilføje juridiske klausuler, licensnumre eller andre branchespecifikke oplysninger."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvad gør denne e-mail-signatur-generator speciel?",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Otte signaturlayouts",
+          "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist og bottom bar."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Automatisk lagring i browser",
+          "description": "Enhver ændring gemmes automatisk i browserens hukommelse. Signaturen forbliver tilgængelig efter genindlæsning."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Eksport og import af konfiguration",
+          "description": "Hele signaturkonfigurationen kan eksporteres som JSON-fil og deles med kolleger."
+        },
+        {
+          "icon": "RiAppsLine",
+          "title": "12 sociale platforme",
+          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram og Pinterest."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Avanceret tilpasning",
+          "description": "Avatarform og -størrelse, linjestilisering, individuelle farver og tekststørrelser."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Mange eksportmuligheder",
+          "description": "HTML-kopiering, fildownload, kildekodevisning, eksport/import af JSON-konfiguration."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privatlivsbeskyttelse",
+          "description": "Data sendes ikke til nogen server. Generatoren fungerer udelukkende i browseren."
+        },
+        {
+          "icon": "RiMailCheckLine",
+          "title": "Kompatibilitet",
+          "description": "Den genererede HTML-kode fungerer i Gmail, Outlook, Apple Mail og Thunderbird."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Live forhåndsvisning",
+          "description": "Enhver ændring synlig øjeblikkeligt på lys, mørk eller skakbrætbaggrund."
         }
       ]
     },

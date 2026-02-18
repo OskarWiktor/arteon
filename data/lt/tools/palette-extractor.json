@@ -139,6 +139,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionTimeline",
+      "title": "Kaip veikia spalvų ištraukimas iš paveikslo?",
+      "description": "Įkėlus failą, įrankis atlieka kelis veiksmus fone – visa analizė vyksta lokaliai naršyklėje:",
+      "items": [
+        {
+          "icon": "RiZoomInLine",
+          "title": "Vaizdo mastelio keitimas",
+          "description": "Vaizdas sumažinamas iki maždaug 240 pikselių pločio. Tai pagreitina analizę net labai didelėms nuotraukoms, nepaveikiant spalvų aptikimo tikslumo."
+        },
+        {
+          "icon": "RiGroupLine",
+          "title": "Panašių atspalvių grupavimas",
+          "description": "Kiekvienas pikselis analizuojamas, o artimi atspalviai sujungiami į grupes. Du beveik identiški mėlyni atspalviai tampa viena spalva paletėje."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Dominuojančių spalvų pasirinkimas",
+          "description": "Algoritmas pasirenka spalvas, užimančias didžiausią vaizdo plotą. Rezultatas – sąrašas iki 12 spalvų, surikiuotų nuo dažniausiai pasitaikančios."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Skaidrių pikselių praleidimas",
+          "description": "PNG failuose su skaidriu fonu šios sritys neįtraukiamos – ekstraktorius analizuoja tik matomas spalvas. Visas procesas paprastai trunka mažiau nei sekundę."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Spalvų ekstraktoriaus trikčių šalinimas",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBarChartLine",
+          "title": "Ekstraktorius rado mažiau nei 12 spalvų",
+          "description": "Ištrauktų spalvų skaičius priklauso nuo vaizdo turinio. Paprastas dviejų spalvų logotipas duos 2–3 rezultatus – tai normalu. Įrankis neprideda dirbtinių spalvų, o ištraukia tik tas, kurios tikrai yra vaizde."
+        },
+        {
+          "icon": "RiAlertLine",
+          "title": "Paletėje atsirado netikėtų spalvų",
+          "description": "Tai gali būti šešėlių, gradientų ar šviesos atspindžių spalvos – pikseliai tose srityse turi kitokias spalvas nei iš pirmo žvilgsnio matomas objektas. Vaizdų su vienodesnėmis spalvomis naudojimas arba tamsių sričių apkarpymas pagerins rezultatus."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Fono spalva dominuoja rezultatuose",
+          "description": "Kai fonas užima didesnį plotą nei pats objektas, jo spalva rodoma pirma sąraše. Sprendimas: naudokite PNG failą su skaidriu fonu arba apkarpykite vaizdą taip, kad objektas užimtų didesnę dalį."
+        },
+        {
+          "icon": "RiFileWarningLine",
+          "title": "Failas nepriimamas ekstraktoriuje",
+          "description": "Įrankis palaiko tik PNG, JPG ir SVG formatus. Kitų formatų failams (GIF, TIFF, HEIC, PDF) reikia išankstinio konvertavimo."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Kuo šis spalvų ekstraktorius ypatingas?",
       "grid": "two",

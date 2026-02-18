@@ -113,10 +113,53 @@
       "variant": "line"
     },
     {
+      "type": "sectionTabs",
+      "title": "Jaké formáty barev jsou podporovány?",
+      "tabs": [
+        {
+          "title": "HEX",
+          "icon": "RiHashtag",
+          "html": "<div><p class=\"text-mid mb-3\">Hexadecimální formát – nejpoužívanější při návrhu webových stránek. Začíná znakem <code class=\"rounded bg-black/5 px-1\">#</code> a obsahuje 3 nebo 6 znaků (číslice 0-9 a písmena A-F).</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">#fff</code> – bílá (zkrácená forma)</li><li><code class=\"rounded bg-black/5 px-1\">#ffffff</code> – bílá (plná forma)</li><li><code class=\"rounded bg-black/5 px-1\">#1a73e8</code> – modrá</li></ul></div>"
+        },
+        {
+          "title": "RGB / RGBA",
+          "icon": "RiPaletteLine",
+          "html": "<div><p class=\"text-mid mb-3\">Formát založený na třech kanálech: červená (Red), zelená (Green), modrá (Blue). Každý kanál přijímá hodnotu od 0 do 255. Varianta RGBA přidává čtvrtý parametr – průhlednost (alpha) od 0 do 1.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">rgb(255, 255, 255)</code> – bílá</li><li><code class=\"rounded bg-black/5 px-1\">rgba(0, 0, 0, 0.8)</code> – černá s 80% krytím</li></ul></div>"
+        },
+        {
+          "title": "HSL / HSLA",
+          "icon": "RiEqualizerLine",
+          "html": "<div><p class=\"text-mid mb-3\">Formát založený na odstínu (Hue, 0-360°), sytosti (Saturation, 0-100%) a světlosti (Lightness, 0-100%). Varianta HSLA přidává průhlednost. Tento formát je užitečný, když chcete upravit světlost nebo sytost barvy.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">hsl(0, 0%, 100%)</code> – bílá</li><li><code class=\"rounded bg-black/5 px-1\">hsla(217, 91%, 60%, 0.9)</code> – modrá s 90% krytím</li></ul></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionDemo",
       "title": "Jak interpretovat výsledky testu čitelnosti",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Poměr kontrastu</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Běžný text</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div></div></div>",
       "html": "<p class=\"text-mid mb-4\">Po zadání barev nástroj zobrazí výsledky ve třech sekcích:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Běžný text</strong> – vyžaduje kontrast 4.5:1 (AA) nebo 7:1 (AAA). Platí pro text pod 18pt (24px) nebo pod 14pt bold.</li><li><strong>Velký text / bold</strong> – vyžaduje kontrast 3:1 (AA) nebo 4.5:1 (AAA). Platí pro nadpisy, tlačítka a zvýrazněný text.</li><li><strong>Ikony</strong> – vyžaduje kontrast 3:1 (AA). Platí pro ikony a grafické UI prvky nesoucí informaci.</li></ul><p class=\"text-mid mt-3\"><strong>Zelený indikátor</strong> znamená splnění požadavku. <strong>Červený indikátor</strong> znamená příliš nízký kontrast, který je třeba opravit.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Co znamenají výsledky testu čitelnosti?",
+      "html": "<p class=\"text-mid mb-4\">Nástroj ukazuje poměr kontrastu na stupnici od 1:1 (žádný kontrast) do 21:1 (maximální kontrast – černý text na bílém pozadí). Výsledek se porovnává s prahy stanovenými standardem WCAG:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Běžný text</strong> – vyžaduje kontrast alespoň 4.5:1 pro úroveň AA (minimální standard) nebo 7:1 pro úroveň AAA (rozšířený standard). Platí pro text menší než 18pt (24px) nebo menší než 14pt (18.5px) tučný.</li><li><strong>Velký text / tučný</strong> – vyžaduje kontrast alespoň 3:1 pro úroveň AA nebo 4.5:1 pro úroveň AAA. Platí pro text od 18pt (24px) nebo od 14pt (18.5px) tučný – nadpisy, tlačítka, zvýraznění.</li><li><strong>Ikony a grafické prvky</strong> – vyžadují kontrast alespoň 3:1 pro úroveň AA. Platí pro ikony, tlačítka, pole formulářů a další UI prvky nesoucí informaci.</li></ul><p class=\"text-mid mt-3\"><strong>Úroveň AA</strong> je minimum vyžadované předpisy o digitální přístupnosti v mnoha zemích, včetně <a href=\"https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32016L2102\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">směrnice EU o přístupnosti webových stránek</a>. <strong>Úroveň AAA</strong> zajišťuje lepší čitelnost, ale ne vždy je prakticky dosažitelná pro všechny prvky.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Automatické přizpůsobení barvy požadavkům WCAG",
+      "html": "<p class=\"text-mid mb-4\">Pokud je kontrast příliš nízký, není nutné hledat správnou barvu metodou pokusů a omylů. Funkce <strong>Dopasuj</strong> automaticky najde variantu barvy textu, která splňuje zvolený práh kontrastu.</p><p class=\"text-mid mb-4\">Jak přizpůsobení funguje:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Vyberte cíl přizpůsobení ze seznamu – např. AA pro běžný text nebo AAA pro velký text.</li><li>Spusťte funkci tlačítkem Dopasuj.</li><li>Nástroj prohledá varianty jasu barvy textu a navrhne nejbližší splňující požadavky.</li><li>Navržený kód barvy lze zkopírovat do schránky nebo přímo nastavit jako novou barvu textu.</li></ol><p class=\"text-mid mt-3\">Algoritmus zachovává odstín a sytost původní barvy a mění pouze jas. Navržená barva tak zůstává v souladu s vizuální identitou a zároveň splňuje standard přístupnosti.</p>"
     },
     {
       "type": "gap",
@@ -185,6 +228,107 @@
             "aa": true,
             "aaa": true
           }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Řešení problémů s testerem kontrastu barev",
+      "html": "<h3 class=\"h5 mb-2\">Vidím chybovou zprávu o formátu barvy</h3><p class=\"text-mid mb-4\">Zkontrolujte formát barvy. HEX kód by měl začínat znakem <code class=\"rounded bg-black/5 px-1\">#</code> a obsahovat 3 nebo 6 znaků (např. <code class=\"rounded bg-black/5 px-1\">#fff</code> nebo <code class=\"rounded bg-black/5 px-1\">#ffffff</code>). Pro formát RGB zkontrolujte, zda jsou hodnoty odděleny čárkami a jsou v rozsahu 0-255.</p><h3 class=\"h5 mb-2\">Funkce Dopasuj nenachází vhodnou barvu</h3><p class=\"text-mid mb-4\">Když mají pozadí a text podobný jas ve stejném odstínu, algoritmus nemusí najít variantu splňující požadavky bez změny odstínu. V takovém případě zvažte změnu barvy pozadí nebo výběr úplně jiné barvy textu.</p><h3 class=\"h5 mb-2\">Barva v próbniku neodpovídá zadanému kódu</h3><p class=\"text-mid\">Próbnik barev v prohlížeči podporuje pouze formát HEX bez průhlednosti. Pokud zadáte barvu ve formátu RGBA nebo HSLA s průhledností, próbnik zobrazí pouze barevnou složku (bez alpha). Výpočty kontrastu stále zohledňují průhlednost.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kde stojí za to kontrolovat čitelnost barev?",
+      "description": "Čitelnost je důležitá všude tam, kde někdo potřebuje přečíst text nebo rozpoznat prvek rozhraní:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Webové stránky",
+          "description": "Text na stránkách, tlačítka, odkazy, formuláře. Obzvláště důležité pro firemní weby, kde mají návštěvníci různý věk a různé zrakové schopnosti."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "E-shopy",
+          "description": "Ceny, tlačítka Koupit, informace o produktu. Nízká čitelnost může znamenat ztracené objednávky."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Prezentace",
+          "description": "Snímky zobrazené z projektoru mají často slabší kontrast než na monitoru. Vyplatí se zkontrolovat barvy před prezentací."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Plakáty a letáky",
+          "description": "Tištěné materiály prohlížené v různých světelných podmínkách vyžadují vysoký kontrast."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Mobilní aplikace",
+          "description": "Telefony se používají na přímém slunci, v noci, lidmi v různém věku."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Jídelní lístky restaurací",
+          "description": "Často tištěné na barevném papíře nebo s ozdobnými fonty – snadno vznikne příliš nízký kontrast."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Čitelnost barev pro osoby s poruchou barvocitu",
+      "html": "<p class=\"text-mid mb-4\">Porucha barvocitu (barvoslepost) je porucha vnímání barev, která postihuje přibližně 8 % mužů a 0,5 % žen. Osoby s poruchou barvocitu mohou mít potíže s rozlišením některých párů barev, i když je kontrast jasu dostatečný.</p><p class=\"text-mid mb-4\">Nejčastější typy poruchy barvocitu:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deuteranopie</strong> – potíže s rozlišením zelené a červené (nejčastější forma)</li><li><strong>Protanopie</strong> – potíže s vnímáním červené</li><li><strong>Tritanopie</strong> – potíže s vnímáním modré a žluté (vzácná)</li></ul><p class=\"text-mid mt-3\">Tento nástroj kontroluje kontrast jasu, který je důležitý pro všechny uživatele. Při návrhu je však dobré navíc vyhnout se problematickým kombinacím barev (např. červený text na zeleném pozadí) a nespoléhat se výhradně na barvu při předávání informací – používejte také tvary, ikony a text.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čím se tester kontrastu a čitelnosti barev vyznačuje?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiEyeLine",
+          "title": "Objektivní hodnocení založené na matematickém vzorci",
+          "description": "Poměr kontrastu se počítá podle vzorce z pokynů WCAG – výsledek nezávisí na nastavení monitoru ani na individuálním vnímání barev."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Shoda s mezinárodním standardem WCAG",
+          "description": "Výsledky odpovídají požadavkům WCAG 2.1, které jsou základem předpisů o digitální přístupnosti v Evropské unii a mnoha dalších zemích."
+        },
+        {
+          "icon": "RiMagicLine",
+          "title": "Automatické přizpůsobení barvy prahu",
+          "description": "Funkce Dopasuj najde variantu barvy textu splňující zvolený práh kontrastu – zachovává odstín, mění pouze jas."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Pět formátů barev",
+          "description": "Podporované formáty: HEX, RGB, RGBA, HSL a HSLA. Kód barvy lze vložit přímo z Figmy, Photoshopu nebo CSS stylopisu."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Tři typy obsahu v jednom testu",
+          "description": "Jedno ověření ukazuje výsledek pro běžný text, velký text (nadpisy, tlačítka) a ikony – není třeba testovat každý typ zvlášť."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Živý náhled textu",
+          "description": "Změna barvy textu nebo pozadí okamžitě aktualizuje náhled – vidíte, jak text vypadá na zvoleném pozadí, ještě před nasazením."
         }
       ]
     },

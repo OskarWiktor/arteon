@@ -195,6 +195,24 @@
       "variant": "line"
     },
     {
+      "type": "sectionDemo",
+      "title": "Prispôsobenie vzhľadu QR kódu",
+      "subtitle": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Veľkosť</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Okraj</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Farba kódu</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Farba pozadia</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Generátor umožňuje prispôsobiť niekoľko parametrov ovplyvňujúcich vzhľad a čitateľnosť kódu:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Veľkosť (px)</strong> – rozmer kódu v pixeloch. Pre štandardnú tlač (letáky, vizitky) zvoľte 300–500 px. Pre digitálne použitie stačí 150–200 px.</li><li><strong>Okraj</strong> – biela oblasť okolo kódu nevyhnutná pre správne skenovanie. Odporúčaná hodnota je 2–4. Hodnota 0 môže sťažiť skenovanie na tmavom pozadí.</li><li><strong>Farba QR kódu</strong> – predvolená je čierna (#000000). Môžete zmeniť na ľubovoľnú tmavú farbu zodpovedajúcu vizuálnej identite.</li><li><strong>Farba pozadia</strong> – predvolená je biela (#ffffff). Môžete zmeniť na ľubovoľnú svetlú farbu. Generátor upozorní, ak bude kontrast príliš nízky.</li></ul><p class=\"text-mid mt-3\"><strong>Tip:</strong> Zachovajte vysoký kontrast medzi kódom a pozadím (minimum 3:1). Tmavý kód na svetlom pozadí sa skenuje najľahšie.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Úrovne korekcie chýb – L, M, Q, H",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Low / Nízky)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Medium / Stredný)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Quartile / Vysoký)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (High / Maximálny)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Korekcia chýb je mechanizmus umožňujúci prečítať QR kód aj keď je časť poškodená, znečistená alebo zakrytá. Generátor využíva algoritmus Reed-Solomon, štandard v QR kódoch.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Low / Nízky) – 7%</strong> – najmenšia redundancia, kód je najkompaktnejší. Zvoľte, keď bude kód používaný v ideálnych podmienkach (obrazovka, kvalitná tlač).</li><li><strong>M (Medium / Stredný) – 15%</strong> – predvolená hodnota, dobrý kompromis medzi kapacitou a odolnosťou. Vhodný pre väčšinu použití.</li><li><strong>Q (Quartile / Vysoký) – 25%</strong> – väčšia odolnosť voči poškodeniu. Zvoľte pre kódy tlačené na materiáloch náchylných na znečistenie.</li><li><strong>H (High / Maximálny) – 30%</strong> – najvyššia odolnosť. Odporúčaný pre tlač na vonkajšie materiály, obaly a situácie, kedy môže byť kód čiastočne zakrytý (napr. logo v strede).</li></ul><p class=\"text-mid mt-3\"><strong>Upozornenie:</strong> Vyššia úroveň korekcie znamená väčší a zložitejší kód. Pri veľkom množstve dát a úrovni H sa kód môže stať veľmi hustým.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionFeatureComparison",
       "title": "PNG vs SVG – aký formát zvoliť na tlač?",
       "plans": [
@@ -258,6 +276,31 @@
             "svg": true
           }
         }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tipy na tlač QR kódov",
+      "description": "Aby bol QR kód po vytlačení čitateľný, dodržiavajte niekoľko pravidiel:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "Minimálna veľkosť",
+          "description": "Kód by mal mať minimálne 2x2 cm na skenovanie z blízkej vzdialenosti. Čím väčšia vzdialenosť skenovania, tým väčší musí byť kód."
+        },
+        { "icon": "RiContrastLine", "title": "Kontrast", "description": "Tmavý kód na svetlom pozadí. Vyhnite sa pastelovým farbám a nízkemu kontrastu." },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Okraj okolo kódu",
+          "description": "Zachovajte prázdnu oblasť okolo kódu. Neumiestňujte iné grafické prvky príliš blízko – okraj je nevyhnutný pre správne skenovanie."
+        },
+        { "icon": "RiEyeLine", "title": "Testovanie", "description": "Pred hromadnou tlačou otestujte kód na rôznych telefónoch a v rôznych svetelných podmienkach." },
+        { "icon": "RiShieldCheckLine", "title": "Úroveň korekcie", "description": "Pre vonkajšiu tlač a materiály náchylné na poškodenie zvoľte úroveň Q alebo H." }
       ]
     },
     {

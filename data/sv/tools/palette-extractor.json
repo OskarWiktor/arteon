@@ -139,6 +139,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionTimeline",
+      "title": "Hur fungerar färgextraktion från bild?",
+      "description": "Efter uppladdning av filen utför verktyget flera steg i bakgrunden – hela analysen sker lokalt i webbläsaren:",
+      "items": [
+        {
+          "icon": "RiZoomInLine",
+          "title": "Storleksändring av bilden",
+          "description": "Bilden skalas ner till ca 240 pixlars bredd. Det snabbar upp analysen även för mycket stora bilder utan att påverka noggrannheten i färgdetektionen."
+        },
+        {
+          "icon": "RiGroupLine",
+          "title": "Gruppering av liknande nyanser",
+          "description": "Varje pixel analyseras och närliggande nyanser slås samman i grupper. Två nästan identiska blånyanser blir en färg i paletten."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Val av dominerande färger",
+          "description": "Algoritmen väljer de färger som täcker den största ytan av bilden. Resultatet är en lista med upp till 12 färger sorterade efter förekomst."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Hoppa över transparenta pixlar",
+          "description": "I PNG-filer med transparent bakgrund tas dessa områden inte med – extraktorn analyserar enbart synliga färger. Hela processen tar vanligtvis under en sekund."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Felsökning av färgextraktorn",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBarChartLine",
+          "title": "Extraktorn hittade färre än 12 färger",
+          "description": "Antalet extraherade färger beror på bildens innehåll. En enkel logotyp i två färger ger 2–3 resultat – det är korrekt beteende. Verktyget lägger inte till konstgjorda färger, det extraherar enbart de som faktiskt finns i bilden."
+        },
+        {
+          "icon": "RiAlertLine",
+          "title": "Oväntade färger i paletten",
+          "description": "Det kan vara färger från skuggor, gradienter eller ljusreflektioner – pixlarna i dessa områden har andra färger än det objekt som syns vid första anblicken. Användning av en bild med jämnare färger eller beskärning av mörka delar förbättrar resultaten."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Bakgrundsfärgen dominerar resultaten",
+          "description": "När bakgrunden täcker en större yta än själva objektet visas dess färg som den första i listan. Lösning: använd en PNG-fil med transparent bakgrund eller beskär bilden så att objektet fyller mer."
+        },
+        {
+          "icon": "RiFileWarningLine",
+          "title": "Filen accepteras inte av extraktorn",
+          "description": "Verktyget stöder enbart formaten PNG, JPG och SVG. Filer i andra format (GIF, TIFF, HEIC, PDF) kräver föregående konvertering."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Vad gör denna färgextraktor speciell?",
       "grid": "two",

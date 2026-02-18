@@ -195,6 +195,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Simbolių limitai populiariose platformose",
+      "html": "<p class=\"text-mid mb-4\">Simbolių skaitiklis naudingas kuriant turinį platformoms su ilgio apribojimais:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platforma / Elementas</th><th class=\"py-2 pr-4 font-semibold\">Simbolių limitas</th><th class=\"py-2 font-semibold\">Pastabos</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 simbolių</td><td class=\"text-primary-light0 py-2 text-sm\">Ilgesni pavadinimai apkerpami paieškos rezultatuose.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 simbolių</td><td class=\"text-primary-light0 py-2 text-sm\">Aprašymas matomas po nuoroda paieškos rezultatuose.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook – įrašas</td><td class=\"py-2 pr-4 whitespace-nowrap\">63 206 simbolių</td><td class=\"text-primary-light0 py-2 text-sm\">Ilgesni įrašai paslepiami po mygtuku Rodyti daugiau.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – aprašymas</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 200 simbolių</td><td class=\"text-primary-light0 py-2 text-sm\">Matomi pirmieji ~125 simboliai.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – įrašas</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 simbolių</td><td class=\"text-primary-light0 py-2 text-sm\">Pagrindinis limitas standartinėms paskyroms.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn – įrašas</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 simbolių</td><td class=\"text-primary-light0 py-2 text-sm\">Pirmieji ~140 simbolių matomi be paspaudimo.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kuo šis žodžių ir simbolių skaitiklis ypatingas?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Šeši puslapių tipai su rekomenduojamais intervalais",
+          "description": "Produkto aprašymas, paslaugos puslapis, pagrindinis puslapis, pasiūlymo puslapis, tinklaraščio straipsnis ir vadovas – kiekvienas tipas turi savo intervalus, pagrįstus analizėmis."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Vietinis apdorojimas naršyklėje",
+          "description": "Tekstas nesiunčiamas į serverį – visa analizė vyksta lokaliai jūsų įrenginyje."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Teksto ilgio vertinimas",
+          "description": "Ne tik skaičiuojate žodžius, bet gaunate informaciją, ar ilgis tinkamas duotam puslapio tipui."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "SEO pagrįsti intervalai",
+          "description": "Rekomenduojami ilgiai pagrįsti turinio, kuris gerai reitinguojamas paieškos sistemose, analizėmis."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Skaitymo laikas",
+          "description": "Iš karto žinote, kiek minučių skaitytojams užtruks teksto perskaitymas."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Ataskaitos kopijavimas",
+          "description": "Mygtukas Kopijuoti ataskaitą perkelia į iškarpinę santrauką su visomis statistikomis ir ilgio vertinimu."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Dažnai užduodami klausimai apie žodžių ir simbolių skaitiklį",
       "openByDefault": 1,

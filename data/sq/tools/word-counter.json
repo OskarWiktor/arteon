@@ -195,6 +195,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Limitet e karaktereve në platformat popullore",
+      "html": "<p class=\"text-mid mb-4\">Numëruesi i karaktereve është i dobishëm kur krijoni përmbajtje për platforma me kufizime gjatësie:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platforma / Elementi</th><th class=\"py-2 pr-4 font-semibold\">Limiti i karaktereve</th><th class=\"py-2 font-semibold\">Shënime</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 karaktere</td><td class=\"text-primary-light0 py-2 text-sm\">Titujt më të gjatë shkurtohen në rezultatet e kërkimit.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 karaktere</td><td class=\"text-primary-light0 py-2 text-sm\">Përshkrimi i dukshëm nën lidhjen në rezultatet e kërkimit.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook – postim</td><td class=\"py-2 pr-4 whitespace-nowrap\">63 206 karaktere</td><td class=\"text-primary-light0 py-2 text-sm\">Postimet më të gjata fshihen pas butonit Shiko më shumë.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – përshkrim</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 200 karaktere</td><td class=\"text-primary-light0 py-2 text-sm\">~125 karakteret e para janë të dukshme.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – postim</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 karaktere</td><td class=\"text-primary-light0 py-2 text-sm\">Limiti bazë për llogaritë standarde.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn – postim</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 karaktere</td><td class=\"text-primary-light0 py-2 text-sm\">~140 karakteret e para të dukshme pa klikuar.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Çfarë e bën këtë numërues fjalësh dhe karakteresh të veçantë?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Gjashtë tipe faqesh me intervale të rekomanduara",
+          "description": "Përshkrim produkti, faqe shërbimi, faqe kryesore, faqe oferte, artikull blogu dhe udhëzues – secili tip ka intervalet e veta bazuar në analiza."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Përpunim lokal në shfletues",
+          "description": "Teksti nuk dërgohet në asnjë server – e gjithë analiza ndodh lokalisht në pajisjen tuaj."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Vlerësim i gjatësisë së tekstit",
+          "description": "Jo vetëm numëroni fjalë, por merrni informacion nëse gjatësia është e përshtatshme për tipin e dhënë të faqes."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "Intervale të bazuara në SEO",
+          "description": "Gjatësitë e rekomanduara bazohen në analiza të përmbajtjes që renditet mirë në motorët e kërkimit."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Koha e leximit",
+          "description": "Menjëherë e dini sa minuta u duhet lexuesve për të lexuar tekstin."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Kopjimi i raportit",
+          "description": "Butoni Kopjo raportin transferon në clipboard një përmbledhje me të gjitha statistikat dhe vlerësimin e gjatësisë."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Pyetjet më të shpeshta për numëruesin e fjalëve dhe karaktereve",
       "openByDefault": 1,

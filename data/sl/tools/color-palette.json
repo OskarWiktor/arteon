@@ -207,6 +207,32 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Odpravljanje težav z generatorjem palet",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Palete se ne spremenijo po vnosu barve",
+          "description": "Sam vnos HEX kode ne ustvari palet samodejno – spremembo je treba potrditi z gumbom <strong>Posodobi barvo</strong>. Šele po potrditvi orodje preračuna vseh 9 shem."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Sporočilo o neveljavnem formatu",
+          "description": "Generator sprejema izključno format HEX s simbolom # na začetku, npr. <code class=\"rounded bg-black/5 px-1\">#FF5500</code>. Formati brez # (npr. <code class=\"rounded bg-black/5 px-1\">FF5500</code>) ali v zapisu RGB (npr. <code class=\"rounded bg-black/5 px-1\">rgb(255,85,0)</code>) niso podprti."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Skrajšan in poln format HEX",
+          "description": "Podprta sta oba zapisa: poln <code class=\"rounded bg-black/5 px-1\">#RRGGBB</code> (npr. #FF5500) in skrajšan <code class=\"rounded bg-black/5 px-1\">#RGB</code> (npr. #F50). Generator samodejno prepozna oba formata in ju obravnava enako."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Pogosta vprašanja o generatorju barvnih palet",
       "openByDefault": 1,
@@ -220,6 +246,11 @@
           "question": "Koliko barv vsebuje vsaka paleta?",
           "answer": "Vsaka paleta vsebuje 4–6 barv. Število je odvisno od vrste sheme – monokromatske in tonalne palete ustvarjajo več odtenkov, medtem ko se komplementarne in triadne palete osredotočajo na manj kontrastnih barv.",
           "answerSchemaText": "Vsaka paleta vsebuje 4–6 barv, odvisno od vrste sheme."
+        },
+        {
+          "question": "Kaj je barvni prostor HSL in kako ga brati?",
+          "answer": "HSL je način zapisa barve s tremi vrednostmi: H (odtenek, 0°–360° na barvnem krogu), S (nasičenost, 0%–100%) in L (svetlost, 0%–100%). Generator prikazuje vrednosti HSL ob vsaki barvi, kar olajša razumevanje, kako se barve v paleti razlikujejo – npr. monokromatska paleta spreminja le svetlost (L), pri čemer ohranja enak odtenek (H).",
+          "answerSchemaText": "HSL opisuje barve prek odtenka (H), nasičenosti (S) in svetlosti (L). Generator prikazuje te vrednosti ob vsaki barvi v paleti."
         },
         {
           "question": "Ali lahko ustvarjene palete uporabim v komercialne namene?",

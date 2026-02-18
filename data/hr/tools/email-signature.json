@@ -115,10 +115,64 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kako ispuniti podatke u potpisu?",
+      "html": "<p class=\"text-mid\">U kartici <strong>Podaci</strong> nalaze se sva polja koja možete ispuniti. Samo su dva obavezna: ime i prezime te adresa e-pošte. Ostala polja su neobavezna i prikazat će se u potpisu samo ako ih ispunite.</p><h3 class=\"h5 mt-6 mb-3\">Polja u kartici Podaci</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Redak iznad imena</strong> – dodatni tekst iznad imena. Možete upisati naziv tvrtke, slogan ili moto.</li><li><strong>Avatar / logotip (URL slike)</strong> – URL profilne slike ili logotipa tvrtke. Slika bi trebala biti kvadratna (min. 120×120 px) i javno dostupna.</li><li><strong>Ime i prezime</strong> – obavezno polje.</li><li><strong>Oznaka uz ime</strong> – kratak tekst uz ime, npr. zamjenice ili skraćeni naslov.</li><li><strong>Pozicija</strong> – uloga u tvrtki.</li><li><strong>Naziv tvrtke</strong> – naziv organizacije.</li><li><strong>Dodatni redak</strong> – kratak opis vaše djelatnosti ili ponude.</li><li><strong>E-pošta</strong> – obavezno polje.</li><li><strong>Telefon</strong> – kontaktni broj u slobodnom formatu.</li><li><strong>Web stranica</strong> – potpuni URL koji počinje s https://.</li><li><strong>Adresa</strong> – fizička adresa tvrtke.</li><li><strong>Formalni podaci</strong> – OIB, broj licence ili drugi podaci potrebni u branši.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionDemo",
       "title": "Rasporedi potpisa – koji biste odabrali?",
       "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Raspored potpisa</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div></div>",
       "html": "<p class=\"text-mid\">Generator nudi osam unaprijed definiranih rasporeda. Svaki raspored prikazuje iste informacije na drugačiji način.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> – klasičan okomiti raspored, pogodan za većinu situacija.</li><li><strong>Top bar</strong> – vodoravna linija odvaja potpis od sadržaja.</li><li><strong>Labels left</strong> – dva stupca: oznake i vrijednosti.</li><li><strong>Centered</strong> – formalan izgled, sadržaj centriran.</li><li><strong>Compact</strong> – sve u jednom retku, minimalna visina.</li><li><strong>Two columns</strong> – podaci lijevo, kontaktne informacije desno.</li><li><strong>Minimalist</strong> – samo osnovne informacije.</li><li><strong>Bottom bar</strong> – obojeni redak s kontaktnim podacima na dnu potpisa.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kako dodati CTA gumbe?",
+      "html": "<p class=\"text-mid\">CTA gumb (call-to-action, poziv na radnju) je klikabilni element koji usmjerava primatelja na odabranu stranicu. To može biti poveznica na kalendar sastanaka, kontaktni obrazac ili ponudu. Generator omogućuje dodavanje dva CTA gumba.</p><h3 class=\"h5 mt-6 mb-3\">Primarni gumb</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Otvorite karticu <strong>Gumbi</strong> u uređivaču.</li><li>U odjeljku <strong>Primarni gumb</strong> unesite tekst koji će primatelj vidjeti, npr. Zakažite besplatnu konzultaciju.</li><li>U polje <strong>CTA poveznica</strong> zalijepite punu URL adresu koja počinje s https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Sekundarni gumb</h3><p class=\"text-mid\">Možete dodati drugi CTA gumb u outline stilu (prozirna pozadina s obrubom). Ispunite polja na analogan način.</p><h3 class=\"h5 mt-6 mb-3\">Zaobljenost gumba</h3><p class=\"text-mid\">Na dnu kartice Gumbi nalazite opciju <strong>Zaobljenost gumba</strong>. Tri varijante: Bez (oštri kutovi), Blago (lagano zaobljeno) ili Potpuno (ovalni gumb).</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Kako dodati poveznice na društvene mreže?",
+      "html": "<p class=\"text-mid\">U kartici <strong>Društvene mreže</strong> možete dodati poveznice na svoje profile. Generator podržava dvanaest platformi: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (nekada Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram i Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Kako to učiniti</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Otvorite karticu <strong>Društvene mreže</strong> u uređivaču.</li><li>Kod svake platforme nalazite polje za URL adresu. Zalijepite punu poveznicu na svoj profil.</li><li>Ispunite samo ona polja koja su vam relevantna. Prazna polja neće se prikazati u potpisu.</li></ol><h3 class=\"h5 mt-6 mb-3\">Ikone društvenih mreža</h3><p class=\"text-mid\">Na dnu kartice nalazite opciju <strong>Prikaži ikone uz nazive</strong>. Kada je uključena, poveznice se prikazuju kao obojene SVG ikone umjesto samih naziva.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Veličina ikona</strong> – opcije: Male (16 px), Srednje (20 px) ili Velike (24 px).</li><li><strong>Boja ikona</strong> – Boje platformi (zadane boje), Boja naglaska (jedinstvena) ili Boja teksta.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Prilagodba izgleda",
+      "html": "<p class=\"text-mid\">U kartici <strong>Izgled</strong> možete prilagoditi boje, font i druge vizualne elemente.</p><h3 class=\"h5 mt-6 mb-3\">Teme boja</h3><p class=\"text-mid\">Na vrhu kartice nalazite pet unaprijed definiranih tema: Tamna, Plava, Ljubičasta, Zelena i Siva. Klikom na temu automatski se postavljaju boja naglaska i boja teksta.</p><h3 class=\"h5 mt-6 mb-3\">Boje</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Boja naglaska</strong> – koristi se u bočnoj/gornjoj traci, CTA gumbu i poveznicama.</li><li><strong>Boja teksta</strong> – boja svih tekstova u potpisu.</li><li><strong>Boja pozadine</strong> – pozadina potpisa. Zadano bijela.</li></ul><h3 class=\"h5 mt-6 mb-3\">Font i veličina</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Font</strong> – opcije: Arial, Verdana, Tahoma, Trebuchet MS i Georgia. Svi su sigurni za e-poštu.</li><li><strong>Veličina teksta</strong> – tri opcije: Mala (12 px), Standardna (14 px) i Veća (16 px).</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Stil teksta – boje i veličine pojedinih elemenata",
+      "html": "<p class=\"text-mid\">U kartici <strong>Stil teksta</strong> možete pojedinačno prilagoditi boju i veličinu fonta za svaki tekstualni element u potpisu.</p><h3 class=\"h5 mt-6 mb-3\">Dostupni elementi</h3><p class=\"text-mid\">Vidljivi su samo oni elementi koji se trenutno nalaze u potpisu. Za svaki element možete postaviti:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Ime i prezime</strong> – zadano prikazano bojom naglaska.</li><li><strong>Pozicija</strong> – uloga u tvrtki.</li><li><strong>Tvrtka</strong> – naziv organizacije.</li><li><strong>Kontaktni podaci</strong> – e-pošta, telefon, web.</li><li><strong>Društvene mreže</strong> – poveznice na profile.</li><li><strong>Pravna klauzula</strong> – pravni tekst na dnu.</li></ul><h3 class=\"h5 mt-6 mb-3\">Kako promijeniti boju?</h3><p class=\"text-mid\">Kod svakog elementa nalazite opcije boja. Kliknite na kvadrat s bojom za odabir. Gumb za poništavanje vraća zadanu boju.</p><h3 class=\"h5 mt-6 mb-3\">Kako promijeniti veličinu?</h3><p class=\"text-mid\">U drugom retku nalazite kontrolu veličine s gumbima - i +. Raspon: od -4 do +4 piksela.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Razmaci između elemenata",
+      "html": "<p class=\"text-mid\">U kartici <strong>Razmaci</strong> možete precizno kontrolirati udaljenosti između pojedinih elemenata potpisa.</p><h3 class=\"h5 mt-6 mb-3\">Unutarnji rub</h3><p class=\"text-mid\">Na vrhu kartice nalazite opciju unutarnjeg ruba – udaljenost između sadržaja potpisa i njegovih rubova. Tri vrijednosti: 8 px (mali), 16 px (srednji) i 24 px (veliki).</p><h3 class=\"h5 mt-6 mb-3\">Razmaci između elemenata</h3><p class=\"text-mid\">Ispod unutarnjeg ruba nalazite kontrole za pojedine elemente s gumbima + i -.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Nakon imena</strong></li><li><strong>Nakon pozicije / tvrtke</strong></li><li><strong>Nakon dodatnog retka</strong></li><li><strong>Nakon kontaktnih podataka</strong></li><li><strong>Nakon društvenih mreža</strong></li><li><strong>Nakon CTA gumba</strong></li><li><strong>Prije pravne klauzule</strong></li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Pravna klauzula / GDPR – kada je dodati?",
+      "html": "<p class=\"text-mid\">U kartici <strong>Klauzula / GDPR</strong> možete dodati pravni tekst koji će se prikazati na dnu potpisa manjim fontom.</p><h3 class=\"h5 mt-6 mb-3\">Kada se isplati dodati klauzulu?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Poslovna korespondencija</strong> – informacija o povjerljivosti poruke i zahtjev za brisanje u slučaju pogrešne dostave.</li><li><strong>Zahtjevi struke</strong> – određene struke (npr. pravna, medicinska, financijska) zahtijevaju određene informacije u svakoj poruci.</li><li><strong>GDPR</strong> – informacija o obradi osobnih podataka, ako je tvrtka voditelj obrade.</li></ul><p class=\"text-mid mt-4\">Zadano je polje ispunjeno primjerom teksta. Možete ga urediti, izbrisati ili zamijeniti vlastitom klauzulom.</p><h3 class=\"h5 mt-6 mb-3\">Razdijelna linija</h3><p class=\"text-mid\">Ispod tekstualnog polja nalazite opciju <strong>Prikaži razdijelnu liniju</strong>. Uključivanje dodaje vodoravnu liniju između kontaktnih podataka i pravne klauzule.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Automatsko spremanje i poništavanje postavki",
+      "html": "<p class=\"text-mid\">Generator automatski sprema sve postavke u memoriju preglednika (localStorage). Nakon osvježavanja stranice ili ponovnog otvaranja alata, podaci, raspored, boje i sve ostale opcije bit će vraćeni.</p><h3 class=\"h5 mt-6 mb-3\">Kako funkcionira automatsko spremanje?</h3><p class=\"text-mid\">Svaka promjena (tekst, boja, raspored, razmaci) odmah se sprema u memoriju preglednika. Spremanje se odvija automatski u pozadini.</p><h3 class=\"h5 mt-6 mb-3\">Kako poništiti postavke?</h3><p class=\"text-mid\">Ispod pregleda potpisa nalazite gumb <strong>Poništi izgled</strong>. Potvrda vraća sve podatke i postavke na zadane vrijednosti. Radnju nije moguće poništiti.</p><h3 class=\"h5 mt-6 mb-3\">Izvoz i uvoz konfiguracije</h3><p class=\"text-mid\">Ispod pregleda potpisa nalazite dva dodatna gumba: <strong>Izvezi postavke</strong> i <strong>Uvezi postavke</strong>. Izvoz sprema cjelokupnu konfiguraciju u JSON datoteku. Uvoz učitava prethodno spremljenu konfiguraciju.</p>"
     },
     {
       "type": "gap",
@@ -152,6 +206,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Pregled potpisa i opcije izvoza",
+      "html": "<p class=\"text-mid\">Panel pregleda prikazuje se desno od uređivača i automatski se ažurira pri svakoj promjeni. Pregled je prikvačen na ekran (sticky), pa je vidljiv i tijekom listanja.</p><h3 class=\"h5 mt-6 mb-3\">Promjena pozadine pregleda</h3><p class=\"text-mid\">Iznad pregleda nalazite tri gumba za promjenu pozadine: <strong>Svijetla</strong> (zadana siva pozadina), <strong>Tamna</strong> (tamna pozadina za provjeru čitljivosti) i <strong>Šahovnica</strong> (uzorak šahovnice za prikaz prozirnosti i rubova).</p><h3 class=\"h5 mt-6 mb-3\">Akcijski gumbi</h3><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Kopiraj potpis (Gmail / Outlook)</strong> – kopira potpis kao formatirani HTML u međuspremnik.</li><li><strong>Kopiraj HTML kod</strong> – kopira sirovi HTML kod u međuspremnik.</li><li><strong>Preuzmi kao HTML</strong> – sprema kod potpisa kao .html datoteku.</li><li><strong>Prikaži HTML kod</strong> – otvara modalni prozor s izvornim kodom.</li><li><strong>Izvezi postavke</strong> – sprema cjelokupnu konfiguraciju u JSON datoteku.</li><li><strong>Uvezi postavke</strong> – učitava konfiguraciju iz JSON datoteke.</li><li><strong>Poništi izgled</strong> – vraća sve podatke i postavke na zadane vrijednosti (nakon potvrde).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Kome je namijenjen generator potpisa e-pošte?",
       "grid": "two",
@@ -175,6 +238,62 @@
           "icon": "RiScales3Line",
           "title": "Odvjetnici, računovođe, liječnici",
           "description": "Mogućnost dodavanja pravnih napomena, licencnih informacija ili drugih strukovnih podataka."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Što čini ovaj generator potpisa e-pošte posebnim?",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Osam rasporeda potpisa",
+          "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist i bottom bar."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Automatsko spremanje u pregledniku",
+          "description": "Svaka promjena automatski se sprema u memoriju preglednika. Potpis ostaje dostupan nakon osvježavanja."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Izvoz i uvoz konfiguracije",
+          "description": "Cjelokupna konfiguracija potpisa može se izvesti kao JSON datoteka i podijeliti s kolegama."
+        },
+        {
+          "icon": "RiAppsLine",
+          "title": "12 društvenih platformi",
+          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram i Pinterest."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Napredna prilagodba",
+          "description": "Oblik i veličina avatara, stilizacija linija, individualne boje i veličine teksta."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Mnoge opcije izvoza",
+          "description": "Kopiranje HTML-a, preuzimanje datoteke, pregled izvornog koda, izvoz/uvoz JSON konfiguracije."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privatnost",
+          "description": "Podaci se ne šalju na poslužitelj. Generator u cijelosti radi u pregledniku."
+        },
+        {
+          "icon": "RiMailCheckLine",
+          "title": "Kompatibilnost",
+          "description": "Generirani HTML kod radi u Gmailu, Outlooku, Apple Mailu i Thunderbirdu."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Pregled uživo",
+          "description": "Svaka promjena vidljiva odmah na svijetloj, tamnoj ili šahovničkoj pozadini."
         }
       ]
     },

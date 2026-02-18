@@ -1,7 +1,7 @@
 /**
  * Patch all lib/i18n/tools/*.ts and lib/i18n/pages/*.ts files
  * to add id, vi, tr locale entries by cloning the EN entry with translated labels.
- * 
+ *
  * Strategy: For each file, find the `hu: {` block, then after its closing `},`
  * insert id/vi/tr blocks based on the EN block structure with translated strings.
  */
@@ -55,7 +55,7 @@ for (const filePath of files) {
 
   const indent = enMatch[1]; // e.g. "\n  "
   const enStart = src.indexOf(enMatch[0]);
-  
+
   // Find the balanced closing brace for the en block
   let braceCount = 0;
   let enEnd = -1;

@@ -207,6 +207,32 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Zgjidhja e problemeve me gjeneruesin e paletave",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Paletat nuk ndryshojnë pas futjes së ngjyrës",
+          "description": "Vetëm futja e kodit HEX nuk gjeneron paleta automatikisht – ndryshimi duhet konfirmuar me butonin <strong>Përditëso ngjyrën</strong>. Vetëm pas konfirmimit mjeti rillogarit të gjitha 9 skemat."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Mesazh për format të pavlefshëm",
+          "description": "Gjeneruesi pranon vetëm formatin HEX me simbolin # në fillim, p.sh. <code class=\"rounded bg-black/5 px-1\">#FF5500</code>. Formatet pa # (p.sh. <code class=\"rounded bg-black/5 px-1\">FF5500</code>) ose në shënimin RGB (p.sh. <code class=\"rounded bg-black/5 px-1\">rgb(255,85,0)</code>) nuk mbështeten."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Formati HEX i shkurtuar dhe i plotë",
+          "description": "Mbështeten të dy shënimet: i plotë <code class=\"rounded bg-black/5 px-1\">#RRGGBB</code> (p.sh. #FF5500) dhe i shkurtuar <code class=\"rounded bg-black/5 px-1\">#RGB</code> (p.sh. #F50). Gjeneruesi i njeh automatikisht të dy formatet dhe i trajton njësoj."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Pyetjet më të shpeshta për gjeneruesin e paletave të ngjyrave",
       "openByDefault": 1,
@@ -220,6 +246,11 @@
           "question": "Sa ngjyra ka në çdo paletë?",
           "answer": "Çdo paletë përmban 4 deri në 6 ngjyra. Numri varet nga lloji i skemës – paletat monokromatike dhe tonale gjenerojnë më shumë nuanca, ndërsa paletat komplementare dhe triadike fokusohen në më pak ngjyra kontrastuese.",
           "answerSchemaText": "Çdo paletë përmban 4 deri në 6 ngjyra, në varësi të llojit të skemës."
+        },
+        {
+          "question": "Çfarë është hapësira e ngjyrave HSL dhe si lexohet?",
+          "answer": "HSL është mënyrë për të përshkruar ngjyrat me tri vlera: H (nuanca, 0°–360° në rrotën e ngjyrave), S (ngopja, 0%–100%) dhe L (ndriçimi, 0%–100%). Gjeneruesi shfaq vlerat HSL pranë secilës ngjyrë, gjë që e bën më të lehtë kuptimin se si dallohen ngjyrat në paletë – p.sh. paleta monokromatike ndryshon vetëm ndriçimin (L), duke ruajtur nuancën (H) e njëjtë.",
+          "answerSchemaText": "HSL përshkruan ngjyrat përmes nuancës (H), ngopjes (S) dhe ndriçimit (L). Gjeneruesi shfaq këto vlera pranë secilës ngjyrë në paletë."
         },
         {
           "question": "A mund t'i përdor paletat e gjeneruara komercialëisht?",

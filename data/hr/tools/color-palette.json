@@ -207,6 +207,32 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Rješavanje problema s generatorom paleta",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Palete se ne mijenjaju nakon unosa boje",
+          "description": "Sam unos HEX koda ne generira palete automatski – promjenu je potrebno potvrditi gumbom <strong>Ažuriraj boju</strong>. Tek nakon potvrde alat preračunava svih 9 shema."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Poruka o neispravnom formatu",
+          "description": "Generator prihvaća isključivo HEX format sa simbolom # na početku, npr. <code class=\"rounded bg-black/5 px-1\">#FF5500</code>. Formati bez # (npr. <code class=\"rounded bg-black/5 px-1\">FF5500</code>) ili u RGB zapisu (npr. <code class=\"rounded bg-black/5 px-1\">rgb(255,85,0)</code>) nisu podržani."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Skraćeni i puni HEX format",
+          "description": "Podržana su oba zapisa: puni <code class=\"rounded bg-black/5 px-1\">#RRGGBB</code> (npr. #FF5500) i skraćeni <code class=\"rounded bg-black/5 px-1\">#RGB</code> (npr. #F50). Generator automatski prepoznaje oba formata i tretira ih jednako."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Često postavljana pitanja o generatoru paleta boja",
       "openByDefault": 1,
@@ -220,6 +246,11 @@
           "question": "Koliko boja sadrži svaka paleta?",
           "answer": "Svaka paleta sadrži 4–6 boja. Broj ovisi o vrsti sheme – monokromatske i tonalne palete stvaraju više nijansi, dok se komplementarne i trijadne palete usredotočuju na manje kontrastnih boja.",
           "answerSchemaText": "Svaka paleta sadrži 4–6 boja ovisno o vrsti sheme."
+        },
+        {
+          "question": "Što je HSL prostor boja i kako ga čitati?",
+          "answer": "HSL je način zapisa boja pomoću tri vrijednosti: H (nijansa, 0°–360° na krugu boja), S (zasićenost, 0%–100%) i L (svjetlina, 0%–100%). Generator prikazuje HSL vrijednosti uz svaku boju, što olakšava razumijevanje razlika među bojama u paleti – npr. monokromatska paleta mijenja samo svjetlinu (L), zadržavajući istu nijansu (H).",
+          "answerSchemaText": "HSL opisuje boje pomoću nijanse (H), zasićenosti (S) i svjetline (L). Generator prikazuje te vrijednosti uz svaku boju u paleti."
         },
         {
           "question": "Mogu li izrađene palete koristiti u komercijalne svrhe?",

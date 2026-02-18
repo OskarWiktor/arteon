@@ -207,6 +207,32 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Feilsøking av palettgeneratoren",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Palettene endres ikke etter at fargen er skrevet inn",
+          "description": "Bare å skrive inn en HEX-kode genererer ikke paletter automatisk – du må bekrefte endringen med knappen <strong>Oppdater farge</strong>. Først etter bekreftelse beregner verktøyet alle 9 skjemaene."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Melding om ugyldig format",
+          "description": "Generatoren godtar kun HEX-format med # i begynnelsen, f.eks. <code class=\"rounded bg-black/5 px-1\">#FF5500</code>. Formater uten # (f.eks. <code class=\"rounded bg-black/5 px-1\">FF5500</code>) eller i RGB-notasjon (f.eks. <code class=\"rounded bg-black/5 px-1\">rgb(255,85,0)</code>) støttes ikke."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Kort og fullt HEX-format",
+          "description": "Begge notasjoner støttes: fullt <code class=\"rounded bg-black/5 px-1\">#RRGGBB</code> (f.eks. #FF5500) og kort <code class=\"rounded bg-black/5 px-1\">#RGB</code> (f.eks. #F50). Generatoren gjenkjenner automatisk begge formater og behandler dem likt."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stilte spørsmål om fargepalettgeneratoren",
       "openByDefault": 1,
@@ -220,6 +246,11 @@
           "question": "Hvor mange farger er det i hver palett?",
           "answer": "Hver palett inneholder 4 til 6 farger. Antallet avhenger av skjematypen – monokromatiske og tonale paletter genererer flere nyanser, mens komplementære og triadiske paletter fokuserer på færre kontrasterende farger.",
           "answerSchemaText": "Hver palett inneholder 4 til 6 farger, avhengig av skjematypen."
+        },
+        {
+          "question": "Hva er HSL-fargerommet og hvordan leser man det?",
+          "answer": "HSL er en måte å beskrive farger med tre verdier: H (nyanse, 0°–360° på fargehjulet), S (metning, 0%–100%) og L (lyshet, 0%–100%). Generatoren viser HSL-verdier ved siden av hver farge, noe som gjør det lettere å forstå hvordan fargene i paletten skiller seg – f.eks. endrer en monokromatisk palett kun lysheten (L), mens nyansen (H) forblir den samme.",
+          "answerSchemaText": "HSL beskriver farger via nyanse (H), metning (S) og lyshet (L). Generatoren viser disse verdiene ved siden av hver farge i paletten."
         },
         {
           "question": "Kan jeg bruke genererte paletter kommersielt?",

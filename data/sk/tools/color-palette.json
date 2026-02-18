@@ -207,6 +207,32 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Riešenie problémov s generátorom paliet",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Palety sa nemenia po zadaní farby",
+          "description": "Samotné zadanie HEX kódu negeneruje palety automaticky – zmenu je potrebné potvrdiť tlačidlom <strong>Aktualizovať farbu</strong>. Až po potvrdení nástroj prepočíta všetkých 9 schém."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Hlásenie o neplatnom formáte",
+          "description": "Generátor prijíma výhradne formát HEX so symbolom # na začiatku, napr. <code class=\"rounded bg-black/5 px-1\">#FF5500</code>. Formáty bez # (napr. <code class=\"rounded bg-black/5 px-1\">FF5500</code>) alebo v zápise RGB (napr. <code class=\"rounded bg-black/5 px-1\">rgb(255,85,0)</code>) nie sú podporované."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Skrátený a plný formát HEX",
+          "description": "Podporované sú oba zápisy: plný <code class=\"rounded bg-black/5 px-1\">#RRGGBB</code> (napr. #FF5500) a skrátený <code class=\"rounded bg-black/5 px-1\">#RGB</code> (napr. #F50). Generátor automaticky rozpozná oba formáty a zaobchádza s nimi rovnako."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o generátore farebných paliet",
       "openByDefault": 1,
@@ -220,6 +246,11 @@
           "question": "Koľko farieb obsahuje každá paleta?",
           "answer": "Každá paleta obsahuje 4–6 farieb. Počet závisí od typu schémy – monochromatické a tónové palety vytvárajú viac odtieňov, zatiaľ čo komplementárne a triadické palety sa zameriavajú na menej kontrastných farieb.",
           "answerSchemaText": "Každá paleta obsahuje 4–6 farieb v závislosti od typu schémy."
+        },
+        {
+          "question": "Čo je farebný priestor HSL a ako ho čítať?",
+          "answer": "HSL je spôsob zápisu farby pomocou troch hodnôt: H (odtieň, 0°–360° na farebnom kruhu), S (sýtosť, 0%–100%) a L (svetlosť, 0%–100%). Generátor zobrazuje hodnoty HSL vedľa každej farby, čo uľahčuje pochopenie, ako sa jednotlivé farby v palete líšia – napr. monochromatická paleta mení iba svetlosť (L), pričom zachováva rovnaký odtieň (H).",
+          "answerSchemaText": "HSL je zápis farby cez odtieň (H), sýtosť (S) a svetlosť (L). Generátor zobrazuje tieto hodnoty vedľa každej farby v palete."
         },
         {
           "question": "Môžem vytvorené palety používať na komerčné účely?",

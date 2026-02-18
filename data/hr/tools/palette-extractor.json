@@ -139,6 +139,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionTimeline",
+      "title": "Kako funkcionira ekstrakcija boja iz slike?",
+      "description": "Nakon učitavanja datoteke alat izvršava nekoliko koraka u pozadini – cijela analiza odvija se lokalno u pregledniku:",
+      "items": [
+        {
+          "icon": "RiZoomInLine",
+          "title": "Skaliranje slike",
+          "description": "Slika se smanji na otprilike 240 piksela širine. To ubrzava analizu čak i vrlo velikih fotografija bez utjecaja na točnost detekcije boja."
+        },
+        {
+          "icon": "RiGroupLine",
+          "title": "Grupiranje sličnih nijansi",
+          "description": "Svaki piksel se analizira, a slične nijanse spajaju se u grupe. Dvije gotovo identične plave nijanse postaju jedna boja u paleti."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Odabir dominantnih boja",
+          "description": "Algoritam odabire boje koje zauzimaju najveću površinu slike. Rezultat je popis do 12 boja poredanih od najčešće zastupljene."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Preskakanje prozirnih piksela",
+          "description": "U PNG datotekama s prozirnom pozadinom ti se dijelovi ne uzimaju u obzir – ekstraktor analizira isključivo vidljive boje. Cijeli proces obično traje manje od sekunde."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Rješavanje problema s ekstraktorom boja",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBarChartLine",
+          "title": "Ekstraktor je izvukao manje od 12 boja",
+          "description": "Broj izvučenih boja ovisi o sadržaju slike. Jednostavan logo u dvije boje dat će 2–3 rezultata – to je ispravno ponašanje. Alat ne dodaje umjetne boje, izvlači samo one koje se stvarno nalaze na slici."
+        },
+        {
+          "icon": "RiAlertLine",
+          "title": "U paleti su se pojavile neočekivane boje",
+          "description": "To mogu biti boje sjena, gradijenata ili refleksija svjetla – pikseli u tim područjima imaju drugačije boje od objekta vidljivog na prvi pogled. Korištenje slike s ujednačenijim bojama ili obrezivanje tamnih dijelova poboljšat će rezultate."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Boja pozadine dominira rezultatima",
+          "description": "Kada pozadina zauzima veću površinu od samog objekta, njezina boja pojavljuje se prva na popisu. Rješenje: koristite PNG datoteku s prozirnom pozadinom ili obrežite sliku tako da objekt zauzima veći dio."
+        },
+        {
+          "icon": "RiFileWarningLine",
+          "title": "Datoteka nije prihvaćena u ekstraktoru",
+          "description": "Alat podržava isključivo formate PNG, JPG i SVG. Datoteke u drugim formatima (GIF, TIFF, HEIC, PDF) zahtijevaju prethodnu konverziju."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Po čemu je ovaj ekstraktor boja poseban?",
       "grid": "two",

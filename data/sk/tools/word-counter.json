@@ -195,6 +195,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Limity znakov na populárnych platformách",
+      "html": "<p class=\"text-mid mb-4\">Počítadlo znakov sa hodí pri tvorbe obsahu pre platformy s obmedzením dĺžky:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platforma / Prvok</th><th class=\"py-2 pr-4 font-semibold\">Limit znakov</th><th class=\"py-2 font-semibold\">Poznámky</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 znakov</td><td class=\"text-primary-light0 py-2 text-sm\">Dlhšie titulky sú vo výsledkoch vyhľadávania orezané.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 znakov</td><td class=\"text-primary-light0 py-2 text-sm\">Popis viditeľný pod odkazom vo výsledkoch vyhľadávania.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook – príspevok</td><td class=\"py-2 pr-4 whitespace-nowrap\">63 206 znakov</td><td class=\"text-primary-light0 py-2 text-sm\">Dlhšie príspevky sú skryté za tlačidlom Zobraziť viac.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – popis</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 200 znakov</td><td class=\"text-primary-light0 py-2 text-sm\">Viditeľných je prvých ~125 znakov.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – príspevok</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 znakov</td><td class=\"text-primary-light0 py-2 text-sm\">Základný limit pre štandardné účty.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn – príspevok</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 znakov</td><td class=\"text-primary-light0 py-2 text-sm\">Prvých ~140 znakov viditeľných bez kliknutia.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čím je toto počítadlo slov a znakov výnimočné?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Šesť typov stránok s odporúčanými rozsahmi",
+          "description": "Popis produktu, stránka služby, hlavná stránka, ponuková stránka, blogový článok a návod – každý typ má vlastné rozsahy založené na analýzach."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Lokálne spracovanie v prehliadači",
+          "description": "Text sa neodosiela na žiadny server – celá analýza prebieha lokálne na vašom zariadení."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Hodnotenie dĺžky textu",
+          "description": "Nielen počítate slová, ale dostanete informáciu, či je dĺžka vhodná pre daný typ stránky."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "Rozsahy založené na SEO",
+          "description": "Odporúčané dĺžky vychádzajú z analýz obsahu, ktorý sa dobre umiestňuje vo vyhľadávačoch."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Čas čítania",
+          "description": "Hneď viete, koľko minút čitateľom zaberie prečítanie textu."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Kopírovanie reportu",
+          "description": "Tlačidlo Kopírovať report prenesie do schránky súhrn so všetkými štatistikami a hodnotením dĺžky."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o počítadle slov a znakov",
       "openByDefault": 1,

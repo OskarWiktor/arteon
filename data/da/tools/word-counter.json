@@ -195,6 +195,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Tegngrænser på populære platforme",
+      "html": "<p class=\"text-mid mb-4\">Tegntælleren er nyttig ved oprettelse af indhold til platforme med længdebegrænsninger:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform / Element</th><th class=\"py-2 pr-4 font-semibold\">Tegngrænse</th><th class=\"py-2 font-semibold\">Noter</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 tegn</td><td class=\"text-primary-light0 py-2 text-sm\">Længere titler afkortes i søgeresultaterne.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 tegn</td><td class=\"text-primary-light0 py-2 text-sm\">Beskrivelse synlig under linket i søgeresultaterne.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook – opslag</td><td class=\"py-2 pr-4 whitespace-nowrap\">63.206 tegn</td><td class=\"text-primary-light0 py-2 text-sm\">Længere opslag skjules bag Se mere.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – billedtekst</td><td class=\"py-2 pr-4 whitespace-nowrap\">2.200 tegn</td><td class=\"text-primary-light0 py-2 text-sm\">De første ~125 tegn er synlige.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – opslag</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 tegn</td><td class=\"text-primary-light0 py-2 text-sm\">Standardgrænse for almindelige konti.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn – opslag</td><td class=\"py-2 pr-4 whitespace-nowrap\">3.000 tegn</td><td class=\"text-primary-light0 py-2 text-sm\">De første ~140 tegn synlige uden at klikke.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvad gør denne ord- og tegntæller speciel?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Seks sidetyper med anbefalede intervaller",
+          "description": "Produktbeskrivelse, serviceside, forside, tilbudsside, blogartikel og guide – hver type har egne intervaller baseret på analyser."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Lokal behandling i browseren",
+          "description": "Tekst sendes ikke til nogen server – hele analysen sker lokalt på din enhed."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Vurdering af tekstlængde",
+          "description": "Du tæller ikke bare ord, men får information om, hvorvidt længden er passende for den givne sidetype."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "SEO-baserede intervaller",
+          "description": "Anbefalede længder er baseret på analyser af indhold, der rangerer godt i søgemaskiner."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Læsetid",
+          "description": "Du ved med det samme, hvor mange minutter det tager læserne at læse teksten."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Kopiering af rapport",
+          "description": "Knappen Kopier rapport overfører et resumé med alle statistikker og længdevurdering til udklipsholderen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om ord- og tegntælleren",
       "openByDefault": 1,

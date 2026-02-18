@@ -109,7 +109,7 @@ function deepReplace(obj, enSlug, newSlug, enLocale, newLocale, enToolsBase, new
     return s;
   }
   if (Array.isArray(obj)) {
-    return obj.map(item => deepReplace(item, enSlug, newSlug, enLocale, newLocale, enToolsBase, newToolsBase));
+    return obj.map((item) => deepReplace(item, enSlug, newSlug, enLocale, newLocale, enToolsBase, newToolsBase));
   }
   if (obj && typeof obj === 'object') {
     const result = {};

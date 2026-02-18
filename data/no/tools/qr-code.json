@@ -195,6 +195,24 @@
       "variant": "line"
     },
     {
+      "type": "sectionDemo",
+      "title": "Tilpasning av QR-kodens utseende",
+      "subtitle": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Størrelse</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Marg</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kodefarge</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Bakgrunnsfarge</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Generatoren lar deg tilpasse flere parametere som påvirker kodens utseende og lesbarhet:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Størrelse (px)</strong> – kodens dimensjon i piksler. For standardtrykk (flyers, visittkort) velg 300–500 px. For digital bruk er 150–200 px tilstrekkelig.</li><li><strong>Marg</strong> – det hvite området rundt koden som er nødvendig for korrekt skanning. Anbefalt verdi er 2–4. Verdien 0 kan vanskeliggjøre skanning på mørk bakgrunn.</li><li><strong>QR-kodefarge</strong> – standard er svart (#000000). Du kan endre til en hvilken som helst mørk farge som passer til den visuelle identiteten.</li><li><strong>Bakgrunnsfarge</strong> – standard er hvit (#ffffff). Du kan endre til en hvilken som helst lys farge. Generatoren advarer hvis kontrasten er for lav.</li></ul><p class=\"text-mid mt-3\"><strong>Tips:</strong> Bevar høy kontrast mellom kode og bakgrunn (minimum 3:1). Mørk kode på lys bakgrunn skannes enklest.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Feilkorreksjonsnivåer – L, M, Q, H",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Low / Lav)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Medium / Middels)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Quartile / Høy)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (High / Maksimal)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Feilkorreksjon er en mekanisme som gjør det mulig å lese en QR-kode selv når en del er skadet, skitten eller tildekket. Generatoren bruker Reed-Solomon-algoritmen, standarden i QR-koder.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Low / Lav) – 7%</strong> – minst redundans, koden er mest kompakt. Velg når koden brukes under ideelle forhold (skjerm, trykk av høy kvalitet).</li><li><strong>M (Medium / Middels) – 15%</strong> – standardverdi, god balanse mellom kapasitet og motstandsdyktighet. Egnet for de fleste bruksområder.</li><li><strong>Q (Quartile / Høy) – 25%</strong> – større motstandsdyktighet mot skader. Velg for koder trykt på materialer utsatt for tilsmussing.</li><li><strong>H (High / Maksimal) – 30%</strong> – høyeste motstandsdyktighet. Anbefalt for trykk på utendørsmaterialer, emballasje og situasjoner der koden kan være delvis tildekket (f.eks. logo i midten).</li></ul><p class=\"text-mid mt-3\"><strong>Merk:</strong> Høyere korreksjonsnivå betyr en større og mer kompleks kode. Ved store datamengder og nivå H kan koden bli svært tett.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionFeatureComparison",
       "title": "PNG vs SVG – hvilket format bør man velge for trykk?",
       "plans": [
@@ -258,6 +276,31 @@
             "svg": true
           }
         }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips for trykking av QR-koder",
+      "description": "For at QR-koden skal være lesbar etter trykking, følg noen regler:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "Minimumsstørrelse",
+          "description": "Koden bør være minst 2x2 cm for skanning på kort avstand. Jo større skanningsavstand, desto større må koden være."
+        },
+        { "icon": "RiContrastLine", "title": "Kontrast", "description": "Mørk kode på lys bakgrunn. Unngå pastellfarger og lav kontrast." },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Marg rundt koden",
+          "description": "Bevar et tomt område rundt koden. Ikke plasser andre grafiske elementer for nært – margen er nødvendig for korrekt skanning."
+        },
+        { "icon": "RiEyeLine", "title": "Testing", "description": "Før massetrykk, test koden på forskjellige telefoner og i forskjellige lysforhold." },
+        { "icon": "RiShieldCheckLine", "title": "Korreksjonsnivå", "description": "For utendørstrykk og materialer utsatt for skader, velg nivå Q eller H." }
       ]
     },
     {

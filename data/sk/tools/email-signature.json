@@ -115,10 +115,64 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Ako vyplniť údaje v podpise?",
+      "html": "<p class=\"text-mid\">Na karte <strong>Údaje</strong> nájdete všetky polia, ktoré môžete vyplniť. Povinné sú len dve: meno a priezvisko a e-mailová adresa. Ostatné polia sú voliteľné a v podpise sa zobrazia len vtedy, ak ich vyplníte.</p><h3 class=\"h5 mt-6 mb-3\">Polia na karte Údaje</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Riadok nad menom</strong> – dodatočný text zobrazený nad menom. Môžete sem napísať názov firmy, slogan alebo motto.</li><li><strong>Avatar / logo (URL obrázka)</strong> – adresa URL profilového obrázka alebo loga firmy. Obrázok by mal byť štvorcový (min. 120×120 px) a verejne dostupný.</li><li><strong>Meno a priezvisko</strong> – povinné pole.</li><li><strong>Značka pri mene</strong> – krátky text vedľa mena, napr. zámená alebo skrátená pozícia.</li><li><strong>Pozícia</strong> – rola vo firme.</li><li><strong>Názov firmy</strong> – názov organizácie.</li><li><strong>Ďalší riadok</strong> – krátky popis vašej činnosti alebo ponuky.</li><li><strong>E-mail</strong> – povinné pole.</li><li><strong>Telefón</strong> – kontaktné číslo vo voľnom formáte.</li><li><strong>Web</strong> – úplná URL adresa začínajúca https://.</li><li><strong>Adresa</strong> – fyzická adresa firmy.</li><li><strong>Formálne údaje</strong> – IČO, DIČ, číslo licencie alebo iné údaje vyžadované v odvetví.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionDemo",
       "title": "Rozloženia podpisu – ktoré si vyberiete?",
       "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Rozloženie podpisu</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div></div>",
       "html": "<p class=\"text-mid\">Generátor ponúka osem prednastavených rozložení. Každé rozloženie prezentuje rovnaké informácie iným spôsobom.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> – klasické vertikálne rozloženie, vhodné pre väčšinu situácií.</li><li><strong>Top bar</strong> – horizontálna čiara oddeľuje podpis od obsahu.</li><li><strong>Labels left</strong> – dva stĺpce: popisky a hodnoty.</li><li><strong>Centered</strong> – formálny vzhľad, obsah vycentrovaný.</li><li><strong>Compact</strong> – všetko na jednom riadku, minimálna výška.</li><li><strong>Two columns</strong> – údaje vľavo, kontaktné informácie vpravo.</li><li><strong>Minimalist</strong> – iba základné informácie.</li><li><strong>Bottom bar</strong> – farebný riadok s kontaktnými údajmi v spodnej časti podpisu.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Ako pridať CTA tlačidlá?",
+      "html": "<p class=\"text-mid\">CTA tlačidlo (call-to-action, výzva k akcii) je klikateľný prvok, ktorý nasmeruje príjemcu na vybranú stránku. Môže to byť odkaz na kalendár stretnutí, kontaktný formulár alebo ponuku. Generátor umožňuje pridať dve CTA tlačidlá.</p><h3 class=\"h5 mt-6 mb-3\">Hlavné tlačidlo</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Otvorte kartu <strong>Tlačidlá</strong> v editore.</li><li>V sekcii <strong>Hlavné tlačidlo</strong> zadajte text, ktorý uvidí príjemca, napr. Dohodnite si bezplatnú konzultáciu.</li><li>Do poľa <strong>CTA odkaz</strong> vložte úplnú URL adresu začínajúcu https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Sekundárne tlačidlo</h3><p class=\"text-mid\">Môžete pridať druhé CTA tlačidlo v štýle outline (priehľadné pozadie s okrajom). Vyplňte polia analogicky.</p><h3 class=\"h5 mt-6 mb-3\">Zaoblenie tlačidiel</h3><p class=\"text-mid\">V spodnej časti karty Tlačidlá nájdete možnosť <strong>Zaoblenie tlačidiel</strong>. Tri varianty: Žiadne (ostré rohy), Mierne (ľahko zaoblené) alebo Plné (oválne tlačidlo).</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Ako pridať odkazy na sociálne siete?",
+      "html": "<p class=\"text-mid\">Na karte <strong>Sociálne siete</strong> môžete pridať odkazy na svoje profily. Generátor podporuje dvanásť platforiem: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (predtým Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram a Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Ako na to</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Otvorte kartu <strong>Sociálne siete</strong> v editore.</li><li>Pri každej platforme nájdete pole pre URL adresu. Vložte úplný odkaz na svoj profil.</li><li>Vyplňte iba tie polia, ktoré sú pre vás relevantné. Prázdne polia sa v podpise nezobrazia.</li></ol><h3 class=\"h5 mt-6 mb-3\">Ikony sociálnych sietí</h3><p class=\"text-mid\">V spodnej časti karty nájdete možnosť <strong>Zobraziť ikony vedľa názvov</strong>. Po zapnutí sa odkazy zobrazia ako farebné SVG ikony namiesto samotných názvov.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Veľkosť ikon</strong> – možnosti: Malé (16 px), Stredné (20 px) alebo Veľké (24 px).</li><li><strong>Farba ikon</strong> – Farby platforiem (predvolené farby), Farba akcentu (jednotná) alebo Farba textu.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Prispôsobenie vzhľadu",
+      "html": "<p class=\"text-mid\">Na karte <strong>Vzhľad</strong> môžete upraviť farby, písmo a ďalšie vizuálne prvky.</p><h3 class=\"h5 mt-6 mb-3\">Farebné motívy</h3><p class=\"text-mid\">V hornej časti karty nájdete päť prednastavených motívov: Tmavý, Modrý, Fialový, Zelený a Sivý. Kliknutie na motív automaticky nastaví farbu akcentu a farbu textu.</p><h3 class=\"h5 mt-6 mb-3\">Farby</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Farba akcentu</strong> – používa sa v bočnom/hornom pruhu, CTA tlačidle a odkazoch.</li><li><strong>Farba textu</strong> – farba všetkých textov v podpise.</li><li><strong>Farba pozadia</strong> – pozadie podpisu. Predvolene biela.</li></ul><h3 class=\"h5 mt-6 mb-3\">Písmo a veľkosť</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Písmo</strong> – možnosti: Arial, Verdana, Tahoma, Trebuchet MS a Georgia. Všetky sú bezpečné pre e-maily.</li><li><strong>Veľkosť textu</strong> – tri možnosti: Malá (12 px), Štandardná (14 px) a Väčšia (16 px).</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Štýl textu – farby a veľkosti jednotlivých prvkov",
+      "html": "<p class=\"text-mid\">Na karte <strong>Štýl textu</strong> môžete individuálne prispôsobiť farbu a veľkosť písma pre každý textový prvok v podpise.</p><h3 class=\"h5 mt-6 mb-3\">Dostupné prvky</h3><p class=\"text-mid\">Viditeľné sú iba tie prvky, ktoré sa aktuálne nachádzajú v podpise. Pre každý prvok môžete nastaviť:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Meno a priezvisko</strong> – predvolene zobrazené farbou akcentu.</li><li><strong>Pozícia</strong> – rola vo firme.</li><li><strong>Firma</strong> – názov organizácie.</li><li><strong>Kontaktné údaje</strong> – e-mail, telefón, web.</li><li><strong>Sociálne siete</strong> – odkazy na profily.</li><li><strong>Právna doložka</strong> – právny text v spodnej časti.</li></ul><h3 class=\"h5 mt-6 mb-3\">Ako zmeniť farbu?</h3><p class=\"text-mid\">Pri každom prvku nájdete farebné možnosti. Kliknite na štvorec s farbou pre výber. Tlačidlo resetovania obnoví predvolenú farbu.</p><h3 class=\"h5 mt-6 mb-3\">Ako zmeniť veľkosť?</h3><p class=\"text-mid\">V druhom riadku nájdete ovládanie veľkosti s tlačidlami - a +. Rozsah: od -4 do +4 pixelov.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Medzery medzi prvkami",
+      "html": "<p class=\"text-mid\">Na karte <strong>Medzery</strong> môžete presne ovládať vzdialenosti medzi jednotlivými prvkami podpisu.</p><h3 class=\"h5 mt-6 mb-3\">Vnútorný okraj</h3><p class=\"text-mid\">V hornej časti karty nájdete možnosť vnútorného okraja – vzdialenosti medzi obsahom podpisu a jeho okrajmi. Tri hodnoty: 8 px (malý), 16 px (stredný) a 24 px (veľký).</p><h3 class=\"h5 mt-6 mb-3\">Medzery medzi prvkami</h3><p class=\"text-mid\">Pod vnútorným okrajom nájdete ovládacie prvky pre jednotlivé prvky podpisu s tlačidlami + a -.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Za menom a priezviskom</strong></li><li><strong>Za pozíciou / firmou</strong></li><li><strong>Za ďalším riadkom</strong></li><li><strong>Za kontaktnými údajmi</strong></li><li><strong>Za sociálnymi sieťami</strong></li><li><strong>Za CTA tlačidlom</strong></li><li><strong>Pred právnou doložkou</strong></li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Právna doložka / GDPR – kedy ju pridať?",
+      "html": "<p class=\"text-mid\">Na karte <strong>Doložka / GDPR</strong> môžete pridať právny text, ktorý sa zobrazí v spodnej časti podpisu menším písmom.</p><h3 class=\"h5 mt-6 mb-3\">Kedy sa oplatí doložku pridať?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Obchodná korešpondencia</strong> – informácia o dôvernosti správy a žiadosť o vymazanie v prípade chybného doručenia.</li><li><strong>Odborové požiadavky</strong> – niektoré odvetvia (napr. právne, zdravotnícke, finančné) vyžadujú určité informácie v každej správe.</li><li><strong>GDPR</strong> – informácia o spracovaní osobných údajov, ak je firma správcom údajov.</li></ul><p class=\"text-mid mt-4\">Predvolene je pole vyplnené ukážkovým textom. Môžete ho upraviť, vymazať alebo nahradiť vlastnou doložkou.</p><h3 class=\"h5 mt-6 mb-3\">Oddeľovacia čiara</h3><p class=\"text-mid\">Pod textovým poľom nájdete možnosť <strong>Zobraziť oddeľovaciu čiaru</strong>. Zapnutie pridá horizontálnu čiaru medzi kontaktné údaje a právnu doložku.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Automatické ukladanie a reset nastavení",
+      "html": "<p class=\"text-mid\">Generátor automaticky ukladá všetky nastavenia v pamäti prehliadača (localStorage). Po obnovení stránky alebo opätovnom otvorení nástroja sa údaje, rozloženie, farby a všetky ostatné možnosti obnovia.</p><h3 class=\"h5 mt-6 mb-3\">Ako funguje automatické ukladanie?</h3><p class=\"text-mid\">Každá zmena (text, farba, rozloženie, medzery) sa okamžite ukladá v pamäti prehliadača. Ukladanie prebieha automaticky na pozadí.</p><h3 class=\"h5 mt-6 mb-3\">Ako resetovať nastavenia?</h3><p class=\"text-mid\">Pod náhľadom podpisu nájdete tlačidlo <strong>Resetovať vzhľad</strong>. Potvrdenie resetu obnoví všetky údaje a nastavenia na predvolené hodnoty. Túto operáciu nemožno vrátiť späť.</p><h3 class=\"h5 mt-6 mb-3\">Export a import konfigurácie</h3><p class=\"text-mid\">Pod náhľadom podpisu nájdete dve ďalšie tlačidlá: <strong>Exportovať nastavenia</strong> a <strong>Importovať nastavenia</strong>. Export uloží všetky údaje, farby, rozloženie, medzery a štýly textu do súboru JSON. Import umožní načítať predtým uloženú konfiguráciu zo súboru.</p>"
     },
     {
       "type": "gap",
@@ -152,6 +206,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Náhľad podpisu a možnosti exportu",
+      "html": "<p class=\"text-mid\">Panel náhľadu sa zobrazuje vpravo od editora a automaticky sa aktualizuje pri každej zmene. Náhľad je pripnutý k obrazovke (sticky), takže je viditeľný aj pri rolovaní.</p><h3 class=\"h5 mt-6 mb-3\">Prepínanie pozadia náhľadu</h3><p class=\"text-mid\">Nad náhľadom nájdete tri tlačidlá na zmenu pozadia: <strong>Svetlé</strong> (predvolené sivé pozadie), <strong>Tmavé</strong> (tmavé pozadie na kontrolu čitateľnosti) a <strong>Šachovnica</strong> (vzor šachovnice na zobrazenie priehľadnosti a okrajov).</p><h3 class=\"h5 mt-6 mb-3\">Akčné tlačidlá</h3><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Kopírovať podpis (Gmail / Outlook)</strong> – skopíruje podpis ako formátovaný HTML do schránky.</li><li><strong>Kopírovať HTML kód</strong> – skopíruje surový HTML kód do schránky.</li><li><strong>Stiahnuť ako HTML</strong> – uloží kód podpisu ako súbor .html.</li><li><strong>Zobraziť HTML kód</strong> – otvorí modálne okno so zdrojovým kódom.</li><li><strong>Exportovať nastavenia</strong> – uloží celú konfiguráciu do súboru JSON.</li><li><strong>Importovať nastavenia</strong> – načíta konfiguráciu zo súboru JSON.</li><li><strong>Resetovať vzhľad</strong> – obnoví všetky údaje a nastavenia na predvolené hodnoty (po potvrdení).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Pre koho je generátor e-mailového podpisu určený?",
       "grid": "two",
@@ -175,6 +238,62 @@
           "icon": "RiScales3Line",
           "title": "Právnici, účtovníci, lekári",
           "description": "Možnosť pridať právne doložky, licenčné informácie alebo iné odborové údaje."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čím je tento generátor e-mailového podpisu výnimočný?",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Osem rozložení podpisu",
+          "description": "Standard, horný pruh, etikety vľavo, vycentrovaný, kompaktný, dva stĺpce, minimalistický a spodný pruh."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Automatické ukladanie v prehliadači",
+          "description": "Každá zmena sa automaticky ukladá v pamäti prehliadača. Podpis zostáva dostupný po obnovení stránky."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Export a import konfigurácie",
+          "description": "Celá konfigurácia podpisu môže byť exportovaná ako súbor JSON a zdieľaná s kolegami."
+        },
+        {
+          "icon": "RiAppsLine",
+          "title": "12 sociálnych platforiem",
+          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram a Pinterest."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Pokročilé prispôsobenie",
+          "description": "Tvar a veľkosť avatara, štylizácia línií, individuálne farby a veľkosti textu."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Mnoho možností exportu",
+          "description": "Kopírovanie HTML, sťahovanie súboru, náhľad zdrojového kódu, export/import konfigurácie JSON."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Súkromie",
+          "description": "Údaje sa neodosielajú na server. Generátor funguje úplne v prehliadači."
+        },
+        {
+          "icon": "RiMailCheckLine",
+          "title": "Kompatibilita",
+          "description": "Vygenerovaný HTML kód funguje v Gmaile, Outlooku, Apple Maile aj Thunderbirde."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Náhľad v reálnom čase",
+          "description": "Každá zmena viditeľná okamžite na svetlom, tmavom alebo šachovnicovom pozadí."
         }
       ]
     },

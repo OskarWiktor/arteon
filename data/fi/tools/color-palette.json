@@ -207,6 +207,32 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Palettien generaattorin vianmääritys",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Paletit eivät muutu värin syöttämisen jälkeen",
+          "description": "Pelkkä HEX-koodin syöttäminen ei luo paletteja automaattisesti – muutos on vahvistettava painamalla <strong>Päivitä väri</strong>. Vasta vahvistuksen jälkeen työkalu laskee kaikki 9 skeemaa."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Ilmoitus virheellisestä muodosta",
+          "description": "Generaattori hyväksyy vain HEX-muodon #-merkillä alussa, esim. <code class=\"rounded bg-black/5 px-1\">#FF5500</code>. Muodot ilman #-merkkiä (esim. <code class=\"rounded bg-black/5 px-1\">FF5500</code>) tai RGB-muodossa (esim. <code class=\"rounded bg-black/5 px-1\">rgb(255,85,0)</code>) eivät ole tuettuja."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Lyhennetty ja täysi HEX-muoto",
+          "description": "Molemmat merkintätavat ovat tuettuja: täysi <code class=\"rounded bg-black/5 px-1\">#RRGGBB</code> (esim. #FF5500) ja lyhennetty <code class=\"rounded bg-black/5 px-1\">#RGB</code> (esim. #F50). Generaattori tunnistaa molemmat muodot automaattisesti ja käsittelee ne samalla tavalla."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset väripalettien generaattorista",
       "openByDefault": 1,
@@ -220,6 +246,11 @@
           "question": "Kuinka monta väriä jokaisessa paletissa on?",
           "answer": "Jokainen paletti sisältää 4–6 väriä. Määrä riippuu skeematyypistä – monokromaattiset ja tonaaliset paletit luovat enemmän sävyjä, kun taas komplementaariset ja triadiset paletit keskittyvät harvempiin kontrastivareihin.",
           "answerSchemaText": "Jokainen paletti sisältää 4–6 väriä skeematyypistä riippuen."
+        },
+        {
+          "question": "Mikä on HSL-väriavaruus ja miten sitä luetaan?",
+          "answer": "HSL on tapa kuvata värejä kolmella arvolla: H (sävy, 0°–360° väriympyrällä), S (kylläisyys, 0%–100%) ja L (valoisuus, 0%–100%). Generaattori näyttää HSL-arvot jokaisen värin vieressä, mikä helpottaa ymmärtämään, miten paletin värit eroavat toisistaan – esim. monokromaattinen paletti muuttaa vain valoisuutta (L), säilyttäen saman sävyn (H).",
+          "answerSchemaText": "HSL kuvaa värejä sävyn (H), kylläisyyden (S) ja valoisuuden (L) avulla. Generaattori näyttää nämä arvot jokaisen värin vieressä paletissa."
         },
         {
           "question": "Voinko käyttää luotuja paletteja kaupallisesti?",

@@ -27,19 +27,11 @@ for (const { file, json } of TOOL_WRAPPERS) {
   let src = fs.readFileSync(fp, 'utf-8');
 
   // Add imports after the last sl import
-  const importLines = NEW.map(loc =>
-    `import ${loc} from '@/data/${loc}/tools-ui/${json}.json';`
-  ).join('\n');
-  src = src.replace(
-    /import sl from '@\/data\/sl\/tools-ui\/[^']+';/,
-    (m) => m + '\n' + importLines
-  );
+  const importLines = NEW.map((loc) => `import ${loc} from '@/data/${loc}/tools-ui/${json}.json';`).join('\n');
+  src = src.replace(/import sl from '@\/data\/sl\/tools-ui\/[^']+';/, (m) => m + '\n' + importLines);
 
   // Update the export line: add new locales to the object
-  src = src.replace(
-    /lt, sl\s*\}/,
-    'lt, sl, el, bg, ha, yo, af }'
-  );
+  src = src.replace(/lt, sl\s*\}/, 'lt, sl, el, bg, ha, yo, af }');
 
   fs.writeFileSync(fp, src, 'utf-8');
   console.log('  ' + file);
@@ -50,18 +42,10 @@ for (const { file, json } of TOOL_WRAPPERS) {
   const fp = path.join(ROOT, 'components/sections/tools/ImageResizeTool/ui.ts');
   let src = fs.readFileSync(fp, 'utf-8');
 
-  const importLines = NEW.map(loc =>
-    `import ${loc} from '@/data/${loc}/tools-ui/image-resize-editor.json';`
-  ).join('\n');
-  src = src.replace(
-    /import sl from '@\/data\/sl\/tools-ui\/image-resize-editor\.json';/,
-    (m) => m + '\n' + importLines
-  );
+  const importLines = NEW.map((loc) => `import ${loc} from '@/data/${loc}/tools-ui/image-resize-editor.json';`).join('\n');
+  src = src.replace(/import sl from '@\/data\/sl\/tools-ui\/image-resize-editor\.json';/, (m) => m + '\n' + importLines);
 
-  src = src.replace(
-    /lt, sl\s*\}/,
-    'lt, sl, el, bg, ha, yo, af }'
-  );
+  src = src.replace(/lt, sl\s*\}/, 'lt, sl, el, bg, ha, yo, af }');
 
   fs.writeFileSync(fp, src, 'utf-8');
   console.log('  ImageResizeTool/ui.ts');
@@ -78,18 +62,13 @@ for (const { file, json } of PAGE_WRAPPERS) {
   const fp = path.join(ROOT, file);
   let src = fs.readFileSync(fp, 'utf-8');
 
-  const importLines = NEW.map(loc =>
-    `import ${loc}Page from '@/data/${loc}/pages/${json}.json';`
-  ).join('\n');
-  src = src.replace(
-    /import slPage from '@\/data\/sl\/pages\/[^']+';/,
-    (m) => m + '\n' + importLines
-  );
+  const importLines = NEW.map((loc) => `import ${loc}Page from '@/data/${loc}/pages/${json}.json';`).join('\n');
+  src = src.replace(/import slPage from '@\/data\/sl\/pages\/[^']+';/, (m) => m + '\n' + importLines);
 
   // Update page data object
   src = src.replace(
     /sl: slPage,?\s*\n(\s*)\}/m,
-    (match, indent) => `sl: slPage,\n${indent}el: elPage,\n${indent}bg: bgPage,\n${indent}ha: haPage,\n${indent}yo: yoPage,\n${indent}af: afPage,\n${indent}}`
+    (match, indent) => `sl: slPage,\n${indent}el: elPage,\n${indent}bg: bgPage,\n${indent}ha: haPage,\n${indent}yo: yoPage,\n${indent}af: afPage,\n${indent}}`,
   );
 
   fs.writeFileSync(fp, src, 'utf-8');
@@ -101,18 +80,13 @@ for (const { file, json } of PAGE_WRAPPERS) {
   const fp = path.join(ROOT, 'lib/tools/text/wordCount.ts');
   let src = fs.readFileSync(fp, 'utf-8');
 
-  const importLines = NEW.map(loc =>
-    `import ${loc}PageTypes from '@/data/${loc}/tools-ui/word-count-page-types.json';`
-  ).join('\n');
-  src = src.replace(
-    /import slPageTypes from '@\/data\/sl\/tools-ui\/word-count-page-types\.json';/,
-    (m) => m + '\n' + importLines
-  );
+  const importLines = NEW.map((loc) => `import ${loc}PageTypes from '@/data/${loc}/tools-ui/word-count-page-types.json';`).join('\n');
+  src = src.replace(/import slPageTypes from '@\/data\/sl\/tools-ui\/word-count-page-types\.json';/, (m) => m + '\n' + importLines);
 
   // Update PAGE_TYPES object
   src = src.replace(
     /sl: slPageTypes,?\s*\n(\s*)\}/m,
-    (match, indent) => `sl: slPageTypes,\n${indent}el: elPageTypes,\n${indent}bg: bgPageTypes,\n${indent}ha: haPageTypes,\n${indent}yo: yoPageTypes,\n${indent}af: afPageTypes,\n${indent}}`
+    (match, indent) => `sl: slPageTypes,\n${indent}el: elPageTypes,\n${indent}bg: bgPageTypes,\n${indent}ha: haPageTypes,\n${indent}yo: yoPageTypes,\n${indent}af: afPageTypes,\n${indent}}`,
   );
 
   fs.writeFileSync(fp, src, 'utf-8');
@@ -124,18 +98,14 @@ for (const { file, json } of PAGE_WRAPPERS) {
   const fp = path.join(ROOT, 'lib/i18n/get-dictionary.ts');
   let src = fs.readFileSync(fp, 'utf-8');
 
-  const importLines = NEW.map(loc =>
-    `import ${loc}Dict from '@/data/${loc}/dictionary.json';`
-  ).join('\n');
-  src = src.replace(
-    /import slDict from '@\/data\/sl\/dictionary\.json';/,
-    (m) => m + '\n' + importLines
-  );
+  const importLines = NEW.map((loc) => `import ${loc}Dict from '@/data/${loc}/dictionary.json';`).join('\n');
+  src = src.replace(/import slDict from '@\/data\/sl\/dictionary\.json';/, (m) => m + '\n' + importLines);
 
   // Update the dictionaries object
   src = src.replace(
     /sl: async \(\) => slDict,?\s*\n(\s*)\}/m,
-    (match, indent) => `sl: async () => slDict,\n${indent}el: async () => elDict,\n${indent}bg: async () => bgDict,\n${indent}ha: async () => haDict,\n${indent}yo: async () => yoDict,\n${indent}af: async () => afDict,\n${indent}}`
+    (match, indent) =>
+      `sl: async () => slDict,\n${indent}el: async () => elDict,\n${indent}bg: async () => bgDict,\n${indent}ha: async () => haDict,\n${indent}yo: async () => yoDict,\n${indent}af: async () => afDict,\n${indent}}`,
   );
 
   fs.writeFileSync(fp, src, 'utf-8');

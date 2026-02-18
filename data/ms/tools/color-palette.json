@@ -170,6 +170,29 @@
     },
     { "type": "gap", "variant": "line" },
     {
+      "type": "sectionSteps",
+      "title": "Penyelesaian masalah penjana palet",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Palet tidak berubah selepas memasukkan warna",
+          "description": "Memasukkan kod HEX sahaja tidak menjana palet secara automatik – perubahan perlu disahkan dengan butang <strong>Kemas kini warna</strong>. Hanya selepas pengesahan alat akan mengira semua 9 skema."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Mesej format tidak sah",
+          "description": "Penjana hanya menerima format HEX dengan simbol # di permulaan, cth. <code class=\"rounded bg-black/5 px-1\">#FF5500</code>. Format tanpa # (cth. <code class=\"rounded bg-black/5 px-1\">FF5500</code>) atau dalam notasi RGB (cth. <code class=\"rounded bg-black/5 px-1\">rgb(255,85,0)</code>) tidak disokong."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Format HEX singkat dan penuh",
+          "description": "Kedua-dua notasi disokong: penuh <code class=\"rounded bg-black/5 px-1\">#RRGGBB</code> (cth. #FF5500) dan singkat <code class=\"rounded bg-black/5 px-1\">#RGB</code> (cth. #F50). Penjana mengenal pasti kedua-dua format secara automatik dan memperlakukannya sama."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "faq",
       "title": "Soalan lazim tentang penjana palet warna",
       "openByDefault": 1,
@@ -183,6 +206,11 @@
           "question": "Berapa banyak warna dalam setiap palet?",
           "answer": "Setiap palet mengandungi 4 hingga 6 warna. Bilangan bergantung pada jenis skema \u2013 palet monokromatik dan tona menjana lebih banyak bayangan, manakala palet pelengkap dan triadik memberi tumpuan kepada beberapa warna yang kontras.",
           "answerSchemaText": "Setiap palet mengandungi 4 hingga 6 warna, bergantung pada jenis skema."
+        },
+        {
+          "question": "Apakah ruang warna HSL dan bagaimana membacanya?",
+          "answer": "HSL ialah cara menerangkan warna dengan tiga nilai: H (rona, 0°–360° pada roda warna), S (ketepuan, 0%–100%) dan L (kecerahan, 0%–100%). Penjana menunjukkan nilai HSL di sebelah setiap warna, menjadikannya lebih mudah untuk memahami perbezaan warna dalam palet – cth. palet monokromatik hanya menukar kecerahan (L), mengekalkan rona (H) yang sama.",
+          "answerSchemaText": "HSL menerangkan warna melalui rona (H), ketepuan (S) dan kecerahan (L). Penjana menunjukkan nilai ini di sebelah setiap warna dalam palet."
         },
         {
           "question": "Bolehkah saya menggunakan palet yang dijana secara komersial?",
