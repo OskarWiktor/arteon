@@ -2,56 +2,56 @@
   "toolKey": "colorPalette",
   "locale": "yo",
   "metadata": {
-    "title": "Free Color Palette Generator – 9 Palettes From One Color",
-    "description": "Generate 9 color palettes from one base color: monochromatic, complementary, triadic, pastel and more. Copy HEX codes in one click. No signup, no limits.",
+    "title": "Olùpìlẹ̀ṣẹ̀ Paleti Awọ̀ Òfẹ́ẹ́ – 9 Paleti Láti Awọ̀ Kan",
+    "description": "Ṣẹ̀dá 9 paleti awọ̀ láti awọ̀ ìpilẹ̀ kan: monochromatic, complementary, triadic, pastel àti bèè bẹ́ẹ̀ lọ. Daakọ HEX ní ìtẹ̀ kan. Láì ìforukọ̀sílẹ̀.",
     "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
     "path": "/yo/awon-irinse/olupilese-paleti-awoo"
   },
   "hero": {
-    "title": "Color palette generator",
-    "description": "Enter one base color, and the tool will generate 9 harmonious color palettes: monochromatic, complementary, triadic, pastel, and more. Each color can be copied with its HEX code.",
+    "title": "Olùpìlẹ̀ṣẹ̀ paleti awọ̀",
+    "description": "Tẹ awọ̀ ìpilẹ̀ kan, irìnṣé náà ṣẹ̀dá 9 paleti awọ̀ tí ó barámu: monochromatic, complementary, triadic, pastel, àti bèè bẹ́ẹ̀ lọ. Awọ̀ kọ̀ọ̀kan lè ṣe é daakọ pẹ̀lú kóòdù HEX rẹ̀.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/yo/awon-irinse", "label": "Tools" },
-    "third": { "href": "/yo/awon-irinse/olupilese-paleti-awoo", "label": "Color palette generator" }
+    "second": { "href": "/yo/awon-irinse", "label": "Awọn Irìnṣé" },
+    "third": { "href": "/yo/awon-irinse/olupilese-paleti-awoo", "label": "Olùpìlẹ̀ṣẹ̀ paleti awọ̀" }
   },
   "schemas": {
     "software": {
-      "name": "Color palette generator",
-      "alternateName": ["Color scheme generator", "Online color generator", "Color palette creator", "Color matching tool", "Color palette online", "Color harmony generator"],
+      "name": "Olùpìlẹ̀ṣẹ̀ paleti awọ̀",
+      "alternateName": ["Olùpìlẹ̀ṣẹ̀ ètò awọ̀", "Olùṣẹ̀dá awọ̀", "Aṣẹ̀dá paleti awọ̀", "Irìnṣé ìbarámu awọ̀", "Olùpìlẹ̀ṣẹ̀ ìbarámú awọ̀"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Free online color palette generator. Enter one HEX color and the tool will generate 9 schemes: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, and minimalist. Each color can be copied with its HEX code and HSL value.",
+      "description": "Olùpìlẹ̀ṣẹ̀ paleti awọ̀ òfẹ́ẹ́. Tẹ awọ̀ HEX kan, irìnṣé náà ṣẹ̀dá 9 ètò: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, àti minimalist. Awọ̀ kọ̀ọ̀kan lè ṣe é daakọ pẹ̀lú kóòdù HEX àti ìyẹ HSL.",
       "featureList": [
-        "Monochromatic scheme - shades of one color",
-        "Analogous scheme - neighboring colors on the color wheel",
-        "Complementary scheme - opposite colors",
-        "Triadic scheme - 3 colors at equal intervals",
-        "Split-complementary scheme - base color and 2 neighbors of its complement",
-        "Pastel palette - light, muted shades",
-        "Dark palette - deep colors for dark themes",
-        "Tonal palette - lightness scale of one hue",
-        "Minimalist palette - strong accent with light neutrals",
-        "Base color in HEX format",
-        "Color picker for visual selection",
-        "Random starting color",
-        "Copy HEX code to clipboard",
-        "HSL value displayed alongside each color",
-        "Local processing in the browser"
+        "Ètò monochromatic - awọn ìbòjú awọ̀ kan",
+        "Ètò analogous - awọn awọ̀ tí ó wà nítosi lórí kíka awọ̀",
+        "Ètò complementary - awọn awọ̀ tí ó kójú",
+        "Ètò triadic - awọ̀ 3 ní ààlà dógán",
+        "Ètò split-complementary - awọ̀ ìpilẹ̀ àti 2 aladugàní rẹ̀",
+        "Paleti pastel - awọn awọ̀ fèèrèfèè tí ó rẹ̀lẹ̀",
+        "Paleti dúdú - awọn awọ̀ jìnlẹ̀ fún tímú dúdú",
+        "Paleti tonal - ìwọn ìmọ̀lẹ̀ ti awọ̀ kan",
+        "Paleti minimalist - awọ̀ alágbára pẹ̀lú awọn awọ̀ fèèrèfèè",
+        "Awọ̀ ìpilẹ̀ ní ònà HEX",
+        "Aṣàyàn awọ̀ fún yíyàn afarawọ",
+        "Awọ̀ aìlábá fún ìbẹ̀rẹ̀",
+        "Daakọ kóòdù HEX sí clipboard",
+        "Ìyẹ HSL hán légbẹ̀ẹ̀ awọ̀ kọ̀ọ̀kan",
+        "Ìṣèlẹ̀ àdání ní browser"
       ]
     },
     "howTo": {
-      "name": "How to generate a color palette from one base color",
-      "description": "How to generate 9 color palettes from one base color: monochromatic, complementary, triadic, pastel, and more. Each color can be copied with its HEX code.",
+      "name": "Bí o ṣe lè ṣẹ̀dá paleti awọ̀ láti awọ̀ ìpilẹ̀ kan",
+      "description": "Bí o ṣe lè ṣẹ̀dá 9 paleti awọ̀ láti awọ̀ ìpilẹ̀ kan: monochromatic, complementary, triadic, pastel, àti bèè bẹ́ẹ̀ lọ. Awọ̀ kọ̀ọ̀kan lè ṣe é daakọ pẹ̀lú kóòdù HEX rẹ̀.",
       "steps": [
-        { "name": "Choose a base color", "text": "Enter a HEX code in the text field or use the color picker to select a color visually." },
-        { "name": "Confirm the color", "text": "Confirm the selected color with the Update Color button - the tool will generate palettes based on your chosen base color." },
+        { "name": "Yan awọ̀ ìpilẹ̀", "text": "Tẹ kóòdù HEX sí aaye ọ̀rọ̀ tabi lo aṣàyàn awọ̀ láti yan awọ̀ ní afarawọ." },
+        { "name": "Fi awọ̀ náà múlẹ̀", "text": "Fi awọ̀ tí o yan múlẹ̀ pẹ̀lú bọ́tìnì Update Color — irìnṣé náà ṣẹ̀dá awọn paleti dá lórí awọ̀ ìpilẹ̀ rẹ." },
         {
-          "name": "Browse the palettes",
-          "text": "The tool will automatically generate 9 different palettes: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, and minimalist."
+          "name": "Wo awọn paleti",
+          "text": "Irìnṣé náà ṣẹ̀dá 9 paleti oríṣìríṣì ní àìfọ̀wọ́: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, àti minimalist."
         },
-        { "name": "Copy colors", "text": "Next to each color you will find a Copy button - the HEX code is copied to your system clipboard." }
+        { "name": "Daakọ awọn awọ̀", "text": "Légbẹ̀ẹ̀ awọ̀ kọ̀ọ̀kan iwọ ní bọ́tìnì Copy — kóòdù HEX náà daakọ sí clipboard ẹ̀rọ̀ rẹ." }
       ]
     }
   },
@@ -59,173 +59,173 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Why generate a color palette?",
-      "html": "<p class=\"text-mid\">A consistent color palette is the foundation of every visual project - from a website, through a logo, to printed materials. Manually selecting colors that work together requires knowledge of color theory. The generator does it automatically: you provide one base color (e.g., your logo color), and the tool creates 9 color sets based on proven color harmony schemes.</p><p class=\"text-mid mt-3\">Each generated color comes with its HEX code (e.g., #4F6BF5) and HSL value (hue, saturation, lightness). The HEX code can be pasted directly into CSS, Figma, Canva, or any graphics application.</p>"
+      "title": "Kí nìdí tí o fi yẹ kí o ṣẹ̀dá paleti awọ̀?",
+      "html": "<p class=\"text-mid\">Paleti awọ̀ tí ó bá ara mu ni ìpìlẹ̀ gbogbo iṣẹ́ afarawọ — láti ojú-ìwé ayélujára, nípasẹ̀ àmì ìdánimọ̀, sí àwọn ohun tí a tẹ̀ jáde. Yíyàn awọ̀ tí wọ́n bá ara mu pẹ̀lú ọwọ́ nílò ìmọ̀ ẹ̀kọ́ awọ̀. Olùpìlẹ̀ṣẹ̀ náà ṣe é ní àìfọ̀wọ́: o pèsè awọ̀ ìpilẹ̀ kan (bí àpẹẹrẹ, awọ̀ àmì ìdánimọ̀ rẹ), irìnṣé náà sì ṣẹ̀dá 9 ètò awọ̀ tí ó dá lórí àwọn ètò ìbarámú awọ̀ tí a ti fìdí múlẹ̀.</p><p class=\"text-mid mt-3\">Awọ̀ kọ̀ọ̀kan tí a ṣẹ̀dá wá pẹ̀lú kóòdù HEX rẹ̀ (bí àpẹẹrẹ, #4F6BF5) àti ìyẹ HSL (hue, saturation, lightness). Kóòdù HEX lè ṣe é lẹ̀ tààrà sínú CSS, Figma, Canva, tàbí ohunkóhun àpù àwòrán.</p>"
     },
     { "type": "gap", "size": "sm" },
     {
       "type": "sectionSteps",
-      "title": "How to use the color palette generator",
-      "description": "The whole process takes just a few seconds:",
+      "title": "Bí o ṣe lè lo olùpìlẹ̀ṣẹ̀ paleti awọ̀",
+      "description": "Gbogbo ìlànà náà gba ìṣẹ́jú díẹ̀ péré:",
       "grid": "three",
       "items": [
-        { "title": "1. Enter the base color", "description": "Type a HEX code (e.g., #4F6BF5) in the text field or pick a color from the color picker. You can also use the Random Color button." },
-        { "title": "2. Confirm your choice", "description": "After clicking the Update Color button, the tool will automatically generate 9 palettes based on different color harmony schemes." },
-        { "title": "3. Copy the colors you need", "description": "Next to each color there is a Copy button - the HEX code goes to the clipboard and can be pasted directly into your project." }
+        { "title": "1. Tẹ awọ̀ ìpilẹ̀", "description": "Tẹ kóòdù HEX (bí àpẹẹrẹ, #4F6BF5) sí aaye ọ̀rọ̀ tàbí yan awọ̀ láti inú aṣàyàn awọ̀. O tún lè lo bọ́tìnì Random Color." },
+        { "title": "2. Fi ìyàn rẹ múlẹ̀", "description": "Lẹ́yìn tí o tẹ bọ́tìnì Update Color, irìnṣé náà ṣẹ̀dá 9 paleti ní àìfọ̀wọ́ tí ó dá lórí àwọn ètò ìbarámú awọ̀ oríṣìríṣì." },
+        { "title": "3. Daakọ àwọn awọ̀ tí o nílò", "description": "Légbẹ̀ẹ̀ awọ̀ kọ̀ọ̀kan ni bọ́tìnì Copy wà — kóòdù HEX náà lọ sí clipboard, o sì lè lẹ̀ é tààrà sínú iṣẹ́ rẹ." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "What color schemes does the tool generate?",
-      "description": "The generator creates 9 palette types - each based on a different color theory principle:",
+      "title": "Àwọn ètò awọ̀ wo ni irìnṣé náà ṣẹ̀dá?",
+      "description": "Olùpìlẹ̀ṣẹ̀ náà ṣẹ̀dá 9 irú paleti — ọ̀kọ̀ọ̀kan dá lórí ìlànà ẹ̀kọ́ awọ̀ tó yàtọ̀:",
       "grid": "two",
       "items": [
         {
           "icon": "RiStackLine",
-          "title": "Monochromatic palette",
-          "description": "Several shades of one color - from light to dark. All colors have the same hue on the color wheel and differ only in lightness. Works well in elegant, minimalist designs where consistency matters."
+          "title": "Paleti monochromatic",
+          "description": "Àwọn ìbòjú awọ̀ kan — láti fẹ́ẹ́rẹ́fẹ́ẹ́ sí dúdú. Gbogbo awọ̀ ní hue kan náà lórí kíka awọ̀, wọ́n sì yàtọ̀ nínú ìmọ́lẹ̀ péré. Ó ṣiṣẹ́ dáadáa nínú àwọn àpẹẹrẹ ẹlẹ́wà, minimalist níbi tí ìbáradọ́gba ṣe pàtàkì."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Analogous palette",
-          "description": "Neighboring colors on the color wheel (shifted about 30° in both directions from the base). They create harmonious, smooth color transitions. Great for projects that build a warm or cool atmosphere."
+          "title": "Paleti analogous",
+          "description": "Àwọn awọ̀ tí ó wà nítosi lórí kíka awọ̀ (yíyí nǹkan bí 30° ní ẹ̀gbẹ́ méjèèjì láti ìpilẹ̀). Wọ́n ṣẹ̀dá àwọn ìyípadà awọ̀ tí ó bá ara mu, tí ó rọ. Ó dára fún àwọn iṣẹ́ tí ó kọ́ afẹ́fẹ́ gbígbóná tàbí tútù."
         },
         {
           "icon": "RiLayoutGridLine",
-          "title": "Complementary palette",
-          "description": "The base color and the color opposite on the color wheel (180° shift). Creates strong visual contrast. Useful where an element needs to attract attention - buttons, highlighted headings, promo banners."
+          "title": "Paleti complementary",
+          "description": "Awọ̀ ìpilẹ̀ àti awọ̀ tí ó kójú lórí kíka awọ̀ (ìyípadà 180°). Ó ṣẹ̀dá ìyàtọ̀ afarawọ alágbára. Ó wúlò níbi tí ó nílò kí nǹkan fa ojú sí — bọ́tìnì, àkọlé tí a tẹnumọ́, àwọn banner ìpolówó."
         },
         {
           "icon": "RiSparklingLine",
-          "title": "Triadic palette",
-          "description": "Three colors spaced 120° apart on the color wheel - forming an equilateral triangle. A vibrant, dynamic combination. Works well in creative projects: young brand identity, advertising materials, posters."
+          "title": "Paleti triadic",
+          "description": "Awọ̀ mẹ́ta tí àlàfo 120° wà láàárín wọn lórí kíka awọ̀ — tí wọ́n ṣẹ̀dá onigun mẹ́ta dọ́gba. Àkópọ̀ tí ó lágbára, tí ó yàtọ̀. Ó ṣiṣẹ́ dáadáa nínú àwọn iṣẹ́ ẹ̀dá: ìdánimọ̀ àmì ìṣòwò, àwọn ohun ìpolówó, àwọn póstà."
         },
         {
           "icon": "RiCursorLine",
-          "title": "Split-complementary palette",
-          "description": "A softer version of the complementary palette. Instead of one opposite color, it uses two colors shifted about 30° from the complement. Gives clear contrast but without as strong visual tension."
+          "title": "Paleti split-complementary",
+          "description": "Ẹ̀yà tí ó rọ ti paleti complementary. Dípò awọ̀ kan tí ó kójú, ó lo awọ̀ méjì tí wọ́n yípadà nǹkan bí 30° láti complement. Ó fún ni ìyàtọ̀ tí ó hàn ṣùgbọ́n láìsí ìfarabalẹ̀ afarawọ tí ó pọ̀ jù."
         },
         {
           "icon": "RiDropLine",
-          "title": "Pastel palette",
-          "description": "The same hue with reduced saturation and increased lightness - soft, gentle colors. Popular in cosmetics, children's fashion, and food industry. Pairs well with a light background and white space."
+          "title": "Paleti pastel",
+          "description": "Hue kan náà pẹ̀lú saturation tí ó dín kù àti lightness tí ó pọ̀ sí i — àwọn awọ̀ rírọ̀, tí ó dùn mọ́. Ó gbajúmọ̀ nínú ẹ̀wà, aṣọ àwọn ọmọdé, àti ilé-iṣẹ́ oúnjẹ. Ó bá ipilẹ̀ fẹ́ẹ́rẹ́fẹ́ẹ́ àti àyè funfun mu."
         },
         {
           "icon": "RiMoonLine",
-          "title": "Dark palette",
-          "description": "Base color at high saturation and reduced lightness - deep, intense colors. Useful for designing dark themes for websites and apps, as well as materials for premium brands."
+          "title": "Paleti dúdú",
+          "description": "Awọ̀ ìpilẹ̀ ní saturation gíga àti lightness tí ó dín kù — àwọn awọ̀ jìnlẹ̀, tí ó lágbára. Ó wúlò fún ṣíṣe àpẹẹrẹ tímú dúdú fún àwọn ojú-ìwé ayélujára àti àpù, àti àwọn ohun fún àwọn àmì ìṣòwò gíga."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Tonal palette",
-          "description": "Several lightness steps of one hue - from very light to dark. Similar to tonal scales used in design systems (e.g., shades from 50 to 900). Useful for building interfaces where the same color needs variants."
+          "title": "Paleti tonal",
+          "description": "Àwọn ìgbésẹ̀ ìmọ́lẹ̀ púpọ̀ ti hue kan — láti fẹ́ẹ́rẹ́fẹ́ẹ́ gan-an sí dúdú. Ó jọ àwọn ìwọ̀n tonal tí a ń lò nínú àwọn ètò àpẹẹrẹ (bí àpẹẹrẹ, ìbòjú láti 50 sí 900). Ó wúlò fún kíkọ́ interface níbi tí awọ̀ kan náà nílò àwọn ẹ̀yà."
         },
         {
           "icon": "RiContractLeftRightLine",
-          "title": "Minimalist palette",
-          "description": "One bold color accent and several very light, soft neutrals. The rest of the palette stays muted. Works well in modern interfaces with lots of white space - typical product and landing page style."
+          "title": "Paleti minimalist",
+          "description": "Ìyàtọ̀ awọ̀ alágbára kan àti àwọn awọ̀ fẹ́ẹ́rẹ́fẹ́ẹ́ rírọ̀ púpọ̀. Ìyókù paleti náà dákẹ́. Ó ṣiṣẹ́ dáadáa nínú àwọn interface ìgbàlódé pẹ̀lú àyè funfun púpọ̀ — àpẹẹrẹ ojú-ìwé ọjà àti landing page."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "What is the color palette generator based on?",
-      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° on the color wheel</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
-      "html": "<p class=\"text-mid\">All palettes are created by mathematically transforming the base color in HSL color space. HSL describes a color with three values: hue (H) is the position on the color wheel (0°–360°), saturation (S) determines color intensity, and lightness (L) - how bright or dark the color is.</p><p class=\"text-mid mt-3\">The complementary, triadic, and split-complementary palettes are based on color wheel geometry - colors are placed at equal angular intervals, creating visual balance. The monochromatic, pastel, and dark palettes change only lightness and saturation while keeping the same hue.</p>"
+      "title": "Kí ni olùpìlẹ̀ṣẹ̀ paleti awọ̀ dá lórí?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° lórí kíka awọ̀</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">Gbogbo paleti ni a ṣẹ̀dá nípa yíyí awọ̀ ìpilẹ̀ padà ní ọ̀nà ìṣirò nínú àyè awọ̀ HSL. HSL ṣàpèjúwe awọ̀ pẹ̀lú ìyẹ mẹ́ta: hue (H) jẹ́ ipò lórí kíka awọ̀ (0°–360°), saturation (S) pinnu bí awọ̀ ṣe lágbára tó, àti lightness (L) — bí awọ̀ ṣe mọ́lẹ̀ tàbí ṣókùnkùn tó.</p><p class=\"text-mid mt-3\">Àwọn paleti complementary, triadic, àti split-complementary dá lórí geometry kíka awọ̀ — a fi àwọn awọ̀ sí àwọn àlàfo ìgun dọ́gba, tí ó ṣẹ̀dá ìdọ́gba afarawọ. Àwọn paleti monochromatic, pastel, àti dúdú yí lightness àti saturation padà péré nígbà tí wọ́n ṣe àmúlò hue kan náà.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Where to use the generated color palettes",
+      "title": "Níbo ni o lè lo àwọn paleti awọ̀ tí a ṣẹ̀dá",
       "grid": "two",
       "items": [
         {
           "icon": "RiBrushLine",
-          "title": "Brand visual identity",
-          "description": "Select complementary colors for an existing logo or build a branding palette from scratch - for business cards, stationery, and marketing materials."
+          "title": "Ìdánimọ̀ afarawọ àmì ìṣòwò",
+          "description": "Yan àwọn awọ̀ tí ó bá àmì ìdánimọ̀ tí ó wà tẹ́lẹ̀ mu tàbí kọ́ paleti àmì ìṣòwò láti ìbẹ̀rẹ̀ — fún kádì ìṣòwò, ohun ìkọ̀wé, àti àwọn ohun ìpolówó."
         },
         {
           "icon": "RiGlobalLine",
-          "title": "Websites",
-          "description": "Establish the primary color, accent color, and background shades. Copied HEX codes paste straight into CSS stylesheets or theme configuration."
+          "title": "Àwọn ojú-ìwé ayélujára",
+          "description": "Fi ìdí awọ̀ àkọ́kọ́, awọ̀ ìyàtọ̀, àti àwọn ìbòjú ìpilẹ̀ múlẹ̀. Àwọn kóòdù HEX tí a daakọ lè lẹ̀ tààrà sínú àwọn CSS tàbí ìtò tímú."
         },
         {
           "icon": "RiSmartphoneLine",
-          "title": "App interfaces",
-          "description": "The tonal palette provides lightness variants of one color - lighter for backgrounds, darker for text, intermediate for borders and interactive states."
+          "title": "Àwọn interface àpù",
+          "description": "Paleti tonal pèsè àwọn ẹ̀yà ìmọ́lẹ̀ ti awọ̀ kan — fẹ́ẹ́rẹ́fẹ́ẹ́ fún ìpilẹ̀, dúdú fún ọ̀rọ̀, àárín fún ààlà àti àwọn ipò ìbáṣepọ̀."
         },
         {
           "icon": "RiImageLine",
-          "title": "Social media graphics",
-          "description": "Consistent colors for posts, stories, and profile covers. Analogous or pastel palettes work well when you want a uniform, recognizable style."
+          "title": "Àwọn àwòrán àjọlò",
+          "description": "Àwọn awọ̀ tí ó bá ara mu fún àwọn ìfiránṣẹ́, stories, àti àwọn ìbòrí profaili. Àwọn paleti analogous tàbí pastel ṣiṣẹ́ dáadáa nígbà tí o fẹ́ àpẹẹrẹ kan náà tí a mọ̀."
         },
         {
           "icon": "RiSlideshowLine",
-          "title": "Presentations and documents",
-          "description": "Harmonious color sets for slides, charts, and infographics. Monochromatic or minimalist palettes maintain visual order."
+          "title": "Àwọn ìgbékalẹ̀ àti àwọn ìwé",
+          "description": "Àwọn ètò awọ̀ tí ó bá ara mu fún àwọn slides, àwòrán data, àti infographics. Àwọn paleti monochromatic tàbí minimalist ṣe àmúlò ìtò afarawọ."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Troubleshooting the palette generator",
+      "title": "Ìyanjú ìṣòro olùpìlẹ̀ṣẹ̀ paleti",
       "grid": "two",
       "items": [
         {
           "icon": "RiRefreshLine",
-          "title": "Palettes don't change after entering a color",
-          "description": "Simply typing a HEX code does not automatically generate palettes - you need to confirm the change with the Update Color button. Only after confirmation does the tool recalculate all 9 schemes."
+          "title": "Àwọn paleti kò yípadà lẹ́yìn títẹ awọ̀",
+          "description": "Títẹ kóòdù HEX péré kò ṣẹ̀dá paleti ní àìfọ̀wọ́ — o nílò láti fi ìyípadà náà múlẹ̀ pẹ̀lú bọ́tìnì Update Color. Lẹ́yìn ìfìdí múlẹ̀ péré ni irìnṣé náà ṣe àtúnṣe gbogbo 9 ètò."
         },
         {
           "icon": "RiErrorWarningLine",
-          "title": "Invalid format message",
-          "description": "The generator only accepts HEX format with a # at the beginning, e.g., #FF5500. Formats without # (e.g., FF5500) or in RGB notation (e.g., rgb(255,85,0)) are not supported."
+          "title": "Ìfiránṣẹ́ ònà tí kò tọ́",
+          "description": "Olùpìlẹ̀ṣẹ̀ náà gba ònà HEX péré pẹ̀lú # ní ìbẹ̀rẹ̀, bí àpẹẹrẹ, #FF5500. Àwọn ònà láìsí # (bí àpẹẹrẹ, FF5500) tàbí nínú ìkọ̀sí RGB (bí àpẹẹrẹ, rgb(255,85,0)) kò ní àtìlẹ́yìn."
         },
         {
           "icon": "RiCodeLine",
-          "title": "Short and full HEX format",
-          "description": "Both formats are supported: full #RRGGBB (e.g., #FF5500) and short #RGB (e.g., #F50). The generator automatically recognizes both and treats them identically."
+          "title": "Ònà HEX kúkúrú àti kíkún",
+          "description": "Àwọn ònà méjèèjì ní àtìlẹ́yìn: kíkún #RRGGBB (bí àpẹẹrẹ, #FF5500) àti kúkúrú #RGB (bí àpẹẹrẹ, #F50). Olùpìlẹ̀ṣẹ̀ náà mọ̀ méjèèjì ní àìfọ̀wọ́, ó sì tọ́jú wọn bákannáà."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the color palette generator",
+      "title": "Àwọn ìbéèrè tí a máa ń béèrè nípa olùpìlẹ̀ṣẹ̀ paleti awọ̀",
       "openByDefault": 1,
       "items": [
         {
-          "question": "What format should the base color be in?",
-          "answer": "The generator accepts colors in HEX format - both short (e.g., #F50) and full (e.g., #FF5500). Next to the text field you will find a color picker that lets you choose a color visually. Generated palettes show the HEX code and HSL value of each color.",
-          "answerSchemaText": "The generator accepts HEX colors (#RGB or #RRGGBB). Each generated color has a HEX code and HSL value."
+          "question": "Ònà wo ni awọ̀ ìpilẹ̀ gbọ́dọ̀ wà?",
+          "answer": "Olùpìlẹ̀ṣẹ̀ náà gba àwọn awọ̀ ní ònà HEX — méjèèjì kúkúrú (bí àpẹẹrẹ, #F50) àti kíkún (bí àpẹẹrẹ, #FF5500). Légbẹ̀ẹ̀ aaye ọ̀rọ̀ iwọ yóò rí aṣàyàn awọ̀ tí ó jẹ́ kí o yan awọ̀ ní afarawọ. Àwọn paleti tí a ṣẹ̀dá fi kóòdù HEX àti ìyẹ HSL ti awọ̀ kọ̀ọ̀kan hàn.",
+          "answerSchemaText": "Olùpìlẹ̀ṣẹ̀ náà gba àwọn awọ̀ HEX (#RGB tàbí #RRGGBB). Awọ̀ kọ̀ọ̀kan tí a ṣẹ̀dá ní kóòdù HEX àti ìyẹ HSL."
         },
         {
-          "question": "How many colors does each palette contain?",
-          "answer": "Each palette contains 4 to 6 colors. The number depends on the scheme type - monochromatic and tonal palettes generate more shades (a lightness scale of one hue), while complementary and triadic palettes focus on fewer contrasting colors.",
-          "answerSchemaText": "Each palette contains 4 to 6 colors, depending on the scheme type."
+          "question": "Awọ̀ mélòó ni paleti kọ̀ọ̀kan ní?",
+          "answer": "Paleti kọ̀ọ̀kan ní awọ̀ 4 sí 6. Iye náà dá lórí irú ètò — àwọn paleti monochromatic àti tonal ṣẹ̀dá ìbòjú púpọ̀ sí i (ìwọ̀n ìmọ́lẹ̀ ti hue kan), nígbà tí àwọn paleti complementary àti triadic ṣojú àwọn awọ̀ tí ó yàtọ̀ díẹ̀.",
+          "answerSchemaText": "Paleti kọ̀ọ̀kan ní awọ̀ 4 sí 6, ó dá lórí irú ètò."
         },
         {
-          "question": "What is the HSL color space and how to read it?",
-          "answer": "HSL is a way of describing color using three values: H (hue, 0°–360° on the color wheel), S (saturation, 0%–100%), and L (lightness, 0%–100%). The generator displays HSL values alongside each color, making it easier to understand how the colors in the palette differ - e.g., a monochromatic palette changes only lightness (L) while keeping the same hue (H).",
-          "answerSchemaText": "HSL describes color via hue (H), saturation (S), and lightness (L). The generator displays these values alongside each color."
+          "question": "Kí ni àyè awọ̀ HSL àti bí a ṣe lè kà á?",
+          "answer": "HSL jẹ́ ọ̀nà ṣíṣàpèjúwe awọ̀ pẹ̀lú ìyẹ mẹ́ta: H (hue, 0°–360° lórí kíka awọ̀), S (saturation, 0%–100%), àti L (lightness, 0%–100%). Olùpìlẹ̀ṣẹ̀ náà fi àwọn ìyẹ HSL hàn légbẹ̀ẹ̀ awọ̀ kọ̀ọ̀kan, tí ó mú kí ó rọrùn láti lóye bí àwọn awọ̀ nínú paleti ṣe yàtọ̀ — bí àpẹẹrẹ, paleti monochromatic yí lightness (L) padà péré nígbà tí ó ṣe àmúlò hue (H) kan náà.",
+          "answerSchemaText": "HSL ṣàpèjúwe awọ̀ nípasẹ̀ hue (H), saturation (S), àti lightness (L). Olùpìlẹ̀ṣẹ̀ náà fi àwọn ìyẹ wọ̀nyí hàn légbẹ̀ẹ̀ awọ̀ kọ̀ọ̀kan."
         },
         {
-          "question": "Can I use the generated palettes commercially?",
-          "answer": "Yes. You can use the generated color palettes in any project - commercial and non-commercial, without licensing restrictions.",
-          "answerSchemaText": "Yes, generated palettes can be used without restrictions in commercial and non-commercial projects."
+          "question": "Ṣé mo lè lo àwọn paleti tí a ṣẹ̀dá fún iṣẹ́ ìṣòwò?",
+          "answer": "Bẹ́ẹ̀ni. O lè lo àwọn paleti awọ̀ tí a ṣẹ̀dá nínú iṣẹ́ èyíkéyìí — ìṣòwò àti tí kìí ṣe ìṣòwò, láìsí ìdíwọ́ ìwé-àṣẹ.",
+          "answerSchemaText": "Bẹ́ẹ̀ni, a lè lo àwọn paleti tí a ṣẹ̀dá láìsí ìdíwọ́ nínú àwọn iṣẹ́ ìṣòwò àti tí kìí ṣe ìṣòwò."
         },
         {
-          "question": "Does the color palette generator require login or payment?",
-          "answer": "The generator is completely free and requires no login or registration. Colors are generated locally in the browser - no data is sent to external servers.",
-          "answerSchemaText": "The generator is free, requires no login. Colors are generated locally in the browser."
+          "question": "Ṣé olùpìlẹ̀ṣẹ̀ paleti awọ̀ nílò ìwọlé tàbí ìsanwó?",
+          "answer": "Olùpìlẹ̀ṣẹ̀ náà jẹ́ òfẹ́ pátápátá, kò sì nílò ìwọlé tàbí ìforukọ̀sílẹ̀. A ṣẹ̀dá àwọn awọ̀ ní àdáni nínú browser — kò sí data tí a fi ránṣẹ́ sí àwọn server òde.",
+          "answerSchemaText": "Olùpìlẹ̀ṣẹ̀ náà jẹ́ òfẹ́, kò nílò ìwọlé. A ṣẹ̀dá àwọn awọ̀ ní àdáni nínú browser."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
+    { "type": "toolsCarousel", "title": "Ṣàwárí àwọn irìnṣé mìíràn" },
     { "type": "gap", "size": "sm" }
   ]
 }

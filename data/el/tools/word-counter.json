@@ -2,70 +2,70 @@
   "toolKey": "wordCounter",
   "locale": "el",
   "metadata": {
-    "title": "Free Word & Character Counter – Check Text Length for SEO",
-    "description": "Count words, characters, paragraphs and reading time instantly. Check optimal text length for SEO – blog posts, product pages, landing pages. No signup.",
+    "title": "Δωρεάν Μετρητής Λέξεων & Χαρακτήρων – Έλεγχος Μήκους Κειμένου για SEO",
+    "description": "Μετρήστε λέξεις, χαρακτήρες, παραγράφους και χρόνο ανάγνωσης άμεσα. Ελέγξτε το βέλτιστο μήκος κειμένου για SEO — blog posts, σελίδες προϊόντων, landing pages. Χωρίς εγγραφή.",
     "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
     "path": "/el/ergaleia/metritis-lexeon-kai-charaktiron"
   },
   "hero": {
-    "title": "Word and character counter with length evaluation",
-    "description": "Paste your text, select a page type, and the tool will show word count, character count, paragraphs, and evaluate whether the length is appropriate for that type of content",
+    "title": "Μετρητής λέξεων και χαρακτήρων με αξιολόγηση μήκους",
+    "description": "Επικολλήστε το κείμενό σας, επιλέξτε τύπο σελίδας και το εργαλείο θα εμφανίσει αριθμό λέξεων, χαρακτήρων, παραγράφων και θα αξιολογήσει αν το μήκος είναι κατάλληλο για αυτόν τον τύπο περιεχομένου",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
     "second": {
       "href": "/el/ergaleia",
-      "label": "Tools"
+      "label": "Εργαλεία"
     },
     "third": {
       "href": "/el/ergaleia/metritis-lexeon-kai-charaktiron",
-      "label": "Word and character counter"
+      "label": "Μετρητής λέξεων και χαρακτήρων"
     }
   },
   "schemas": {
     "software": {
-      "name": "Free word and character counter online",
+      "name": "Δωρεάν μετρητής λέξεων και χαρακτήρων",
       "alternateName": [
-        "Word counter with text length evaluation",
-        "Online character counter",
-        "Word counting tool for copywriters",
-        "Reading time calculator",
-        "Online word counter",
-        "Check how many words a text has",
-        "Word counter for SEO",
-        "Optimal text length for a blog post"
+        "Μετρητής λέξεων με αξιολόγηση μήκους κειμένου",
+        "Μετρητής χαρακτήρων",
+        "Εργαλείο μέτρησης λέξεων για copywriters",
+        "Υπολογιστής χρόνου ανάγνωσης",
+        "Μετρητής λέξεων",
+        "Ελέγξτε πόσες λέξεις έχει ένα κείμενο",
+        "Μετρητής λέξεων για SEO",
+        "Βέλτιστο μήκος κειμένου για blog post"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter. Checks word count, characters, paragraphs, and estimated reading time. Evaluates text length for different page types: product description, service page, homepage, landing page, blog post, guide.",
+      "description": "Δωρεάν μετρητής λέξεων και χαρακτήρων. Ελέγχει αριθμό λέξεων, χαρακτήρων, παραγράφων και εκτιμώμενο χρόνο ανάγνωσης. Αξιολογεί το μήκος κειμένου για διαφορετικούς τύπους σελίδων: περιγραφή προϊόντος, σελίδα υπηρεσίας, αρχική σελίδα, landing page, blog post, οδηγός.",
       "featureList": [
-        "Word count",
-        "Character count with and without spaces",
-        "Paragraph count",
-        "Estimated reading time",
-        "Text length evaluation for different page types",
-        "Recommended ranges for: product description, service page, homepage, landing page, blog post, guide",
-        "Copy report to clipboard"
+        "Μέτρηση λέξεων",
+        "Μέτρηση χαρακτήρων με και χωρίς κενά",
+        "Μέτρηση παραγράφων",
+        "Εκτιμώμενος χρόνος ανάγνωσης",
+        "Αξιολόγηση μήκους κειμένου για διαφορετικούς τύπους σελίδων",
+        "Συνιστώμενα εύρη για: περιγραφή προϊόντος, σελίδα υπηρεσίας, αρχική σελίδα, landing page, blog post, οδηγός",
+        "Αντιγραφή αναφοράς στο clipboard"
       ]
     },
     "howTo": {
-      "name": "How to use the word and character counter",
-      "description": "Check the length of your text and evaluate whether it is appropriate for a specific page type. Learn how many words a product description, service page, blog post, or guide should have.",
+      "name": "Πώς να χρησιμοποιήσετε τον μετρητή λέξεων και χαρακτήρων",
+      "description": "Ελέγξτε το μήκος του κειμένου σας και αξιολογήστε αν είναι κατάλληλο για συγκεκριμένο τύπο σελίδας. Μάθετε πόσες λέξεις πρέπει να έχει μια περιγραφή προϊόντος, σελίδα υπηρεσίας, blog post ή οδηγός.",
       "steps": [
         {
-          "name": "Select a page type",
-          "text": "Choose from the dropdown what type of page you are writing for. Each type has different recommended word count ranges."
+          "name": "Επιλέξτε τύπο σελίδας",
+          "text": "Επιλέξτε από το dropdown για ποιον τύπο σελίδας γράφετε. Κάθε τύπος έχει διαφορετικά συνιστώμενα εύρη αριθμού λέξεων."
         },
         {
-          "name": "Paste your text",
-          "text": "Paste or type text into the text field. The tool will automatically count words, characters (with and without spaces), paragraphs, and estimate reading time."
+          "name": "Επικολλήστε το κείμενό σας",
+          "text": "Επικολλήστε ή πληκτρολογήστε κείμενο στο πεδίο κειμένου. Το εργαλείο θα μετρήσει αυτόματα λέξεις, χαρακτήρες (με και χωρίς κενά), παραγράφους και θα εκτιμήσει τον χρόνο ανάγνωσης."
         },
         {
-          "name": "Check the evaluation",
-          "text": "Look at the colored progress bar and status. Green means good length, yellow means too short, red means too long."
+          "name": "Ελέγξτε την αξιολόγηση",
+          "text": "Κοιτάξτε την χρωματιστή μπάρα προόδου και την κατάσταση. Πράσινο σημαίνει καλό μήκος, κίτρινο σημαίνει πολύ κοντό, κόκκινο σημαίνει πολύ μακρύ."
         },
         {
-          "name": "Copy the report",
-          "text": "The Copy Report button copies a summary with all statistics and the length evaluation to your clipboard."
+          "name": "Αντιγράψτε την αναφορά",
+          "text": "Το κουμπί Copy Report αντιγράφει σύνοψη με όλα τα στατιστικά και την αξιολόγηση μήκους στο clipboard σας."
         }
       ]
     }
@@ -77,8 +77,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Free word counter online - count and evaluate text length",
-      "html": "<p class=\"text-mid\">This word counting tool lets you quickly check the length of any text. Paste your content and the counter will tally words, characters, and paragraphs. You will also see how many minutes it takes to read and whether the length fits the page type you select.</p><p class=\"text-mid mt-3\">Every page type has a different purpose - a product description answers buyer questions, a blog post covers a topic in depth, and a service page explains what the client will receive. The counter shows ranges for each of these types based on analyses of content that ranks well.</p>"
+      "title": "Δωρεάν μετρητής λέξεων — μετρήστε και αξιολογήστε το μήκος κειμένου",
+      "html": "<p class=\"text-mid\">Αυτό το εργαλείο μέτρησης λέξεων σας επιτρέπει να ελέγξετε γρήγορα το μήκος οποιουδήποτε κειμένου. Επικολλήστε το περιεχόμενό σας και ο μετρητής θα υπολογίσει λέξεις, χαρακτήρες και παραγράφους. Θα δείτε επίσης πόσα λεπτά χρειάζονται για την ανάγνωση και αν το μήκος ταιριάζει στον τύπο σελίδας που επιλέγετε.</p><p class=\"text-mid mt-3\">Κάθε τύπος σελίδας έχει διαφορετικό σκοπό — μια περιγραφή προϊόντος απαντά σε ερωτήσεις αγοραστών, ένα blog post καλύπτει ένα θέμα σε βάθος και μια σελίδα υπηρεσίας εξηγεί τι θα λάβει ο πελάτης. Ο μετρητής δείχνει εύρη για καθέναν από αυτούς τους τύπους βάσει αναλύσεων περιεχομένου που κατατάσσεται καλά.</p>"
     },
     {
       "type": "gap",
@@ -86,29 +86,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "How to use the word and character counter",
-      "description": "Checking text length takes less than a minute:",
+      "title": "Πώς να χρησιμοποιήσετε τον μετρητή λέξεων και χαρακτήρων",
+      "description": "Ο έλεγχος μήκους κειμένου διαρκεί λιγότερο από ένα λεπτό:",
       "grid": "four",
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "1. Select page type",
-          "description": "Choose from the dropdown what type of page you are writing for. Each type has different recommended minimum and maximum word counts."
+          "title": "1. Επιλέξτε τύπο σελίδας",
+          "description": "Επιλέξτε από το dropdown για ποιον τύπο σελίδας γράφετε. Κάθε τύπος έχει διαφορετικά συνιστώμενα ελάχιστα και μέγιστα αριθμού λέξεων."
         },
         {
           "icon": "RiFileTextLine",
-          "title": "2. Paste your text",
-          "description": "Paste or type text into the large field on the right. The tool will immediately count words, characters (with and without spaces), paragraphs, and estimate reading time."
+          "title": "2. Επικολλήστε το κείμενό σας",
+          "description": "Επικολλήστε ή πληκτρολογήστε κείμενο στο μεγάλο πεδίο δεξιά. Το εργαλείο θα μετρήσει αμέσως λέξεις, χαρακτήρες (με και χωρίς κενά), παραγράφους και θα εκτιμήσει τον χρόνο ανάγνωσης."
         },
         {
           "icon": "RiBarChartLine",
-          "title": "3. Check the evaluation",
-          "description": "Look at the colored progress bar and status. Green means good length, yellow means too short, red means too long. Below you will find a helpful tip."
+          "title": "3. Ελέγξτε την αξιολόγηση",
+          "description": "Κοιτάξτε την χρωματιστή μπάρα προόδου και την κατάσταση. Πράσινο σημαίνει καλό μήκος, κίτρινο σημαίνει πολύ κοντό, κόκκινο σημαίνει πολύ μακρύ. Παρακάτω θα βρείτε χρήσιμη συμβουλή."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Copy the report",
-          "description": "The Copy Report button copies a summary with word count, character count, paragraphs, reading time, and length evaluation to your clipboard."
+          "title": "4. Αντιγράψτε την αναφορά",
+          "description": "Το κουμπί Copy Report αντιγράφει σύνοψη με αριθμό λέξεων, χαρακτήρων, παραγράφους, χρόνο ανάγνωσης και αξιολόγηση μήκους στο clipboard σας."
         }
       ]
     },
@@ -118,34 +118,34 @@
     },
     {
       "type": "sectionSteps",
-      "title": "What the counter measures - words, characters, reading time",
-      "description": "The counter tracks five key metrics:",
+      "title": "Τι μετράει ο μετρητής — λέξεις, χαρακτήρες, χρόνος ανάγνωσης",
+      "description": "Ο μετρητής παρακολουθεί πέντε βασικές μετρικές:",
       "grid": "two",
       "items": [
         {
           "icon": "RiText",
-          "title": "Words",
-          "description": "Total word count. This is the primary indicator of text length."
+          "title": "Λέξεις",
+          "description": "Συνολικός αριθμός λέξεων. Αυτός είναι ο κύριος δείκτης μήκους κειμένου."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Characters (with spaces)",
-          "description": "All characters including spaces. Useful when a CMS has a character limit (e.g., marketplace listings)."
+          "title": "Χαρακτήρες (με κενά)",
+          "description": "Όλοι οι χαρακτήρες συμπεριλαμβανομένων των κενών. Χρήσιμο όταν ένα CMS έχει όριο χαρακτήρων (π.χ. αγγελίες marketplace)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Characters (without spaces)",
-          "description": "Only letters, digits, and punctuation. Sometimes required by print shops or for translation billing."
+          "title": "Χαρακτήρες (χωρίς κενά)",
+          "description": "Μόνο γράμματα, ψηφία και σημεία στίξης. Μερικές φορές απαιτείται από τυπογραφεία ή για χρέωση μεταφράσεων."
         },
         {
           "icon": "RiParagraph",
-          "title": "Paragraphs",
-          "description": "How many text blocks separated by blank lines you have. Helps assess whether the text is well structured."
+          "title": "Παράγραφοι",
+          "description": "Πόσα μπλοκ κειμένου χωρισμένα με κενές γραμμές έχετε. Βοηθά στην αξιολόγηση αν το κείμενο είναι καλά δομημένο."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Reading time",
-          "description": "The reading time calculator shows how many minutes it takes to read the text at an average speed of 200 words per minute."
+          "title": "Χρόνος ανάγνωσης",
+          "description": "Ο υπολογιστής χρόνου ανάγνωσης δείχνει πόσα λεπτά χρειάζονται για την ανάγνωση του κειμένου με μέση ταχύτητα 200 λέξεων ανά λεπτό."
         }
       ]
     },
@@ -155,10 +155,10 @@
     },
     {
       "type": "sectionDemo",
-      "title": "How to interpret the results",
-      "subtitle": "Evaluation statuses",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">Good length</span><span class=\"text-mid text-sm!\">Text is within range</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Below range</span><span class=\"text-mid text-sm!\">Text is shorter than typical</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Above range</span><span class=\"text-mid text-sm!\">Text is longer than typical</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Progress</span><span class=\"text-mid\">1200 / 1200–3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
-      "html": "<p class=\"text-mid mb-4\">The colored progress bar and status help you quickly assess text length:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Good length</strong> (green) - the text falls within the approximate range for the selected page type.</li><li><strong class=\"text-warning-text\">Below range</strong> (yellow) - the text is shorter than typical for this page type. If it answers all of the reader's questions, the length may be fine.</li><li><strong class=\"text-error-text\">Above range</strong> (red) - the text is longer than typical. If every paragraph adds new information, the length is justified.</li></ul><p class=\"text-mid mt-4\">The ranges are based on analyses of content that ranks well in search engines. If the text answers the reader's questions, the length is appropriate regardless of the counter result.</p>"
+      "title": "Πώς να ερμηνεύσετε τα αποτελέσματα",
+      "subtitle": "Καταστάσεις αξιολόγησης",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">Καλό μήκος</span><span class=\"text-mid text-sm!\">Το κείμενο είναι εντός εύρους</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Κάτω από το εύρος</span><span class=\"text-mid text-sm!\">Το κείμενο είναι πιο κοντό από το τυπικό</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Πάνω από το εύρος</span><span class=\"text-mid text-sm!\">Το κείμενο είναι πιο μακρύ από το τυπικό</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Πρόοδος</span><span class=\"text-mid\">1200 / 1200–3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Η χρωματιστή μπάρα προόδου και η κατάσταση σας βοηθούν να αξιολογήσετε γρήγορα το μήκος κειμένου:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Καλό μήκος</strong> (πράσινο) — το κείμενο εμπίπτει στο κατά προσέγγιση εύρος για τον επιλεγμένο τύπο σελίδας.</li><li><strong class=\"text-warning-text\">Κάτω από το εύρος</strong> (κίτρινο) — το κείμενο είναι πιο κοντό από το τυπικό για αυτόν τον τύπο σελίδας. Αν απαντά σε όλες τις ερωτήσεις του αναγνώστη, το μήκος μπορεί να είναι εντάξει.</li><li><strong class=\"text-error-text\">Πάνω από το εύρος</strong> (κόκκινο) — το κείμενο είναι πιο μακρύ από το τυπικό. Αν κάθε παράγραφος προσθέτει νέα πληροφορία, το μήκος δικαιολογείται.</li></ul><p class=\"text-mid mt-4\">Τα εύρη βασίζονται σε αναλύσεις περιεχομένου που κατατάσσεται καλά στις μηχανές αναζήτησης. Αν το κείμενο απαντά στις ερωτήσεις του αναγνώστη, το μήκος είναι κατάλληλο ανεξάρτητα από το αποτέλεσμα του μετρητή.</p>"
     },
     {
       "type": "gap",
@@ -166,8 +166,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "How many words should a text have - optimal length for SEO",
-      "html": "<p class=\"text-mid mb-4\">The ranges below are based on analyses of content that ranks well in search engines. Text length itself does not affect Google rankings - what matters is whether the content answers the reader's questions.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Page type</th><th class=\"py-2 pr-4 font-semibold\">Range</th><th class=\"py-2 font-semibold\">When shorter, when longer?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Product description</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 words</td><td class=\"text-primary-light0 py-2 text-sm\">Simple product (e.g., a mug) - 80–150 words. Complex equipment (e.g., a laptop) - 300–400 words, because buyers have more questions.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Service page</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 words</td><td class=\"text-primary-light0 py-2 text-sm\">Local service (e.g., plumber) - 500–700 words. B2B service with process and FAQ - 1,200–1,500 words.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Homepage</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 words</td><td class=\"text-primary-light0 py-2 text-sm\">The homepage conveys the main value and guides visitors further - the text supports navigation, not to replace subpages.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landing page</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 words</td><td class=\"text-primary-light0 py-2 text-sm\">Simple offer - 600–1,000 words. Offer requiring explanation of process, variants, and objection handling - 1,500–2,500 words.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blog post</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 words</td><td class=\"text-primary-light0 py-2 text-sm\">Answer to a simple question - 1,200–1,800 words. Complex topic with many aspects - 2,000–3,000 words.</td></tr><tr><td class=\"py-2 pr-4\">Guide</td><td class=\"py-2 pr-4 whitespace-nowrap\">2500–6000 words</td><td class=\"text-primary-light0 py-2 text-sm\">Narrow topic - 2,500–3,500 words. Broad topic with many steps and examples - 4,000–6,000 words.</td></tr></tbody></table></div>"
+      "title": "Πόσες λέξεις πρέπει να έχει ένα κείμενο — βέλτιστο μήκος για SEO",
+      "html": "<p class=\"text-mid mb-4\">Τα παρακάτω εύρη βασίζονται σε αναλύσεις περιεχομένου που κατατάσσεται καλά στις μηχανές αναζήτησης. Το μήκος κειμένου από μόνο του δεν επηρεάζει τις κατατάξεις Google — αυτό που μετράει είναι αν το περιεχόμενο απαντά στις ερωτήσεις του αναγνώστη.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Τύπος σελίδας</th><th class=\"py-2 pr-4 font-semibold\">Εύρος</th><th class=\"py-2 font-semibold\">Πότε πιο κοντό, πότε πιο μακρύ;</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Περιγραφή προϊόντος</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 λέξεις</td><td class=\"text-primary-light0 py-2 text-sm\">Απλό προϊόν (π.χ. κούπα) — 80–150 λέξεις. Σύνθετος εξοπλισμός (π.χ. laptop) — 300–400 λέξεις, γιατί οι αγοραστές έχουν περισσότερες ερωτήσεις.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Σελίδα υπηρεσίας</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 λέξεις</td><td class=\"text-primary-light0 py-2 text-sm\">Τοπική υπηρεσία (π.χ. υδραυλικός) — 500–700 λέξεις. B2B υπηρεσία με διαδικασία και FAQ — 1.200–1.500 λέξεις.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Αρχική σελίδα</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 λέξεις</td><td class=\"text-primary-light0 py-2 text-sm\">Η αρχική σελίδα μεταφέρει την κύρια αξία και καθοδηγεί τους επισκέπτες — το κείμενο υποστηρίζει την πλοήγηση, δεν αντικαθιστά υποσελίδες.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landing page</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 λέξεις</td><td class=\"text-primary-light0 py-2 text-sm\">Απλή προσφορά — 600–1.000 λέξεις. Προσφορά που απαιτεί επεξήγηση διαδικασίας, παραλλαγών και αντιμετώπιση αντιρρήσεων — 1.500–2.500 λέξεις.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blog post</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 λέξεις</td><td class=\"text-primary-light0 py-2 text-sm\">Ενημερωτικό άρθρο — 1.200–1.500 λέξεις. Ολοκληρωμένος οδηγός ή σύγκριση — 2.500–3.000 λέξεις.</td></tr><tr><td class=\"py-2 pr-4\">Οδηγός / tutorial</td><td class=\"py-2 pr-4 whitespace-nowrap\">2000–5000 λέξεις</td><td class=\"text-primary-light0 py-2 text-sm\">Όσο πιο σύνθετο το θέμα, τόσο πιο μακρύς ο οδηγός. Βήμα-βήμα οδηγός για αρχάριους — 2.000–3.000 λέξεις. Εξειδικευμένος οδηγός με παραδείγματα και case studies — 4.000–5.000 λέξεις.</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -175,39 +175,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Who is the online word counter for?",
-      "description": "A word counting tool for copywriters and beyond - here is who uses the counter most:",
+      "title": "Για ποιον είναι ο μετρητής λέξεων;",
+      "description": "Ένα εργαλείο μέτρησης λέξεων για copywriters και όχι μόνο — δείτε ποιοι χρησιμοποιούν τον μετρητή περισσότερο:",
       "grid": "three",
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Copywriters and content creators",
-          "description": "Check whether the text falls within the recommended range for a specific page type. The SEO word counter helps evaluate whether an article is developed enough."
+          "title": "Copywriters και δημιουργοί περιεχομένου",
+          "description": "Ελέγξτε αν το κείμενο εμπίπτει στο συνιστώμενο εύρος για συγκεκριμένο τύπο σελίδας. Ο μετρητής λέξεων SEO βοηθά στην αξιολόγηση αν ένα άρθρο είναι αρκετά αναπτυγμένο."
         },
         {
           "icon": "RiBloggerLine",
           "title": "Bloggers",
-          "description": "Monitor post length to keep publications consistent. Check reading time before publishing."
+          "description": "Παρακολουθήστε το μήκος δημοσιεύσεων για συνέπεια. Ελέγξτε τον χρόνο ανάγνωσης πριν τη δημοσίευση."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "E-commerce store owners",
-          "description": "Verify product descriptions against character limits on selling platforms (Amazon, eBay, Etsy)."
+          "title": "Ιδιοκτήτες ηλεκτρονικών καταστημάτων",
+          "description": "Επαληθεύστε τις περιγραφές προϊόντων σε σχέση με τα όρια χαρακτήρων πλατφορμών πώλησης (Amazon, eBay, Etsy)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO specialists",
-          "description": "Evaluate whether page content has an optimal length compared to competitors. Analyze the word-to-topic ratio."
+          "title": "Ειδικοί SEO",
+          "description": "Αξιολογήστε αν το περιεχόμενο σελίδας έχει βέλτιστο μήκος σε σύγκριση με τους ανταγωνιστές. Αναλύστε την αναλογία λέξεων προς θέμα."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Students and academics",
-          "description": "Check whether a paper meets the required word or character limit."
+          "title": "Φοιτητές και ακαδημαϊκοί",
+          "description": "Ελέγξτε αν μια εργασία πληροί το απαιτούμενο όριο λέξεων ή χαρακτήρων."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Translators",
-          "description": "Count characters without spaces for translation quotes (a standard billing unit)."
+          "title": "Μεταφραστές",
+          "description": "Μετρήστε χαρακτήρες χωρίς κενά για προσφορές μετάφρασης (τυπική μονάδα χρέωσης)."
         }
       ]
     },
@@ -217,8 +217,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Character limits on popular platforms",
-      "html": "<p class=\"text-mid mb-4\">The character counter is useful when creating content for platforms with length restrictions:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform / Element</th><th class=\"py-2 pr-4 font-semibold\">Character limit</th><th class=\"py-2 font-semibold\">Notes</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 characters</td><td class=\"text-primary-light0 py-2 text-sm\">Longer titles are truncated in search results.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 characters</td><td class=\"text-primary-light0 py-2 text-sm\">The description visible below the link in search results.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - product title</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 characters</td><td class=\"text-primary-light0 py-2 text-sm\">Short, specific title with the most important keywords.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - bullet points</td><td class=\"py-2 pr-4 whitespace-nowrap\">500 characters each</td><td class=\"text-primary-light0 py-2 text-sm\">Up to 5 bullet points describing key product features.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) - post</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 characters</td><td class=\"text-primary-light0 py-2 text-sm\">Standard limit for regular users.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn - post</td><td class=\"py-2 pr-4 whitespace-nowrap\">3,000 characters</td><td class=\"text-primary-light0 py-2 text-sm\">After ~210 characters a &quot;see more&quot; link appears.</td></tr></tbody></table></div>"
+      "title": "Όρια χαρακτήρων σε δημοφιλείς πλατφόρμες",
+      "html": "<p class=\"text-mid mb-4\">Ο μετρητής χαρακτήρων είναι χρήσιμος κατά τη δημιουργία περιεχομένου για πλατφόρμες με περιορισμούς μήκους:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Πλατφόρμα / Στοιχείο</th><th class=\"py-2 pr-4 font-semibold\">Όριο χαρακτήρων</th><th class=\"py-2 font-semibold\">Σημειώσεις</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 χαρακτήρες</td><td class=\"text-primary-light0 py-2 text-sm\">Μεγαλύτεροι τίτλοι περικόπτονται στα αποτελέσματα αναζήτησης.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 χαρακτήρες</td><td class=\"text-primary-light0 py-2 text-sm\">Η περιγραφή ορατή κάτω από τον σύνδεσμο στα αποτελέσματα αναζήτησης.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - τίτλος προϊόντος</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 χαρακτήρες</td><td class=\"text-primary-light0 py-2 text-sm\">Σύντομος, συγκεκριμένος τίτλος με τις πιο σημαντικές λέξεις-κλειδιά.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - bullet points</td><td class=\"py-2 pr-4 whitespace-nowrap\">500 χαρακτήρες το καθένα</td><td class=\"text-primary-light0 py-2 text-sm\">Έως 5 bullet points που περιγράφουν τα κύρια χαρακτηριστικά του προϊόντος.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) - post</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 χαρακτήρες</td><td class=\"text-primary-light0 py-2 text-sm\">Τυπικό όριο για κανονικούς χρήστες.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn - post</td><td class=\"py-2 pr-4 whitespace-nowrap\">3.000 χαρακτήρες</td><td class=\"text-primary-light0 py-2 text-sm\">Μετά από ~210 χαρακτήρες εμφανίζεται σύνδεσμος &quot;δείτε περισσότερα&quot;.</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -226,38 +226,38 @@
     },
     {
       "type": "sectionSteps",
-      "title": "What makes this word and character counter special?",
+      "title": "Τι κάνει αυτόν τον μετρητή λέξεων και χαρακτήρων ξεχωριστό;",
       "grid": "two",
       "items": [
         {
           "icon": "RiInfinityLine",
-          "title": "Six page types with recommended ranges",
-          "description": "Product description, service page, homepage, landing page, blog post, and guide - each type has its own ranges based on analyses."
+          "title": "Έξι τύποι σελίδων με συνιστώμενα εύρη",
+          "description": "Περιγραφή προϊόντος, σελίδα υπηρεσίας, αρχική σελίδα, landing page, blog post και οδηγός — κάθε τύπος έχει τα δικά του εύρη βάσει αναλύσεων."
         },
         {
           "icon": "RiUserLine",
-          "title": "Local processing in the browser",
-          "description": "Your text is never sent to any server - all analysis happens locally on your device."
+          "title": "Τοπική επεξεργασία στον browser",
+          "description": "Το κείμενό σας δεν αποστέλλεται ποτέ σε κανέναν server — όλη η ανάλυση γίνεται τοπικά στη συσκευή σας."
         },
         {
           "icon": "RiCheckboxCircleLine",
-          "title": "Text length evaluation",
-          "description": "You don't just count words - you get information on whether the length is appropriate for the selected page type."
+          "title": "Αξιολόγηση μήκους κειμένου",
+          "description": "Δεν μετράτε απλώς λέξεις — λαμβάνετε πληροφορία αν το μήκος είναι κατάλληλο για τον επιλεγμένο τύπο σελίδας."
         },
         {
           "icon": "RiBarChartLine",
-          "title": "SEO-based ranges",
-          "description": "Recommended lengths are based on analyses of content that ranks well in search engines."
+          "title": "Εύρη βασισμένα σε SEO",
+          "description": "Τα συνιστώμενα μήκη βασίζονται σε αναλύσεις περιεχομένου που κατατάσσεται καλά στις μηχανές αναζήτησης."
         },
         {
           "icon": "RiTimerLine",
-          "title": "Reading time",
-          "description": "You immediately know how many minutes it will take readers to go through the text."
+          "title": "Χρόνος ανάγνωσης",
+          "description": "Γνωρίζετε αμέσως πόσα λεπτά θα χρειαστούν οι αναγνώστες για να διαβάσουν το κείμενο."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Copy report",
-          "description": "The Copy Report button copies a summary with all statistics and the length evaluation to your clipboard."
+          "title": "Αντιγραφή αναφοράς",
+          "description": "Το κουμπί Copy Report αντιγράφει σύνοψη με όλα τα στατιστικά και την αξιολόγηση μήκους στο clipboard σας."
         }
       ]
     },
@@ -267,38 +267,38 @@
     },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the word and character counter",
+      "title": "Συχνές ερωτήσεις για τον μετρητή λέξεων και χαρακτήρων",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Does text length affect Google rankings?",
-          "answer": "Text length by itself is not a ranking factor. Google evaluates whether the content answers the user's question and is valuable to them. Shorter text that comprehensively answers a question can rank well - what matters is value for the reader. The ranges in this tool are based on analyses of content that ranks well in search results.",
-          "answerSchemaText": "Text length is not a direct ranking factor. Google evaluates the value of content for the user."
+          "question": "Επηρεάζει το μήκος κειμένου τις κατατάξεις Google;",
+          "answer": "Το μήκος κειμένου από μόνο του δεν είναι παράγοντας κατάταξης. Η Google αξιολογεί αν το περιεχόμενο απαντά στην ερώτηση του χρήστη και αν είναι πολύτιμο για αυτόν. Πιο σύντομο κείμενο που απαντά ολοκληρωμένα σε μια ερώτηση μπορεί να κατατάσσεται καλά — αυτό που μετράει είναι η αξία για τον αναγνώστη. Τα εύρη σε αυτό το εργαλείο βασίζονται σε αναλύσεις περιεχομένου που κατατάσσεται καλά στα αποτελέσματα αναζήτησης.",
+          "answerSchemaText": "Το μήκος κειμένου δεν είναι άμεσος παράγοντας κατάταξης. Η Google αξιολογεί την αξία του περιεχομένου για τον χρήστη."
         },
         {
-          "question": "Why are the word ranges so broad?",
-          "answer": "The same page type may require different lengths depending on topic complexity. A simple product description (e.g., a mug) is 80–150 words - just material, capacity, and use case. A laptop description is 300–400 words because buyers ask about the processor, memory, screen, and battery. Similarly with services: a local plumber's page is 500–700 words, while a comprehensive B2B service implementation page with process steps and FAQ is 1,200–1,500 words.",
-          "answerSchemaText": "The difference comes from topic complexity - a simple product needs fewer words than a complex one."
+          "question": "Γιατί τα εύρη λέξεων είναι τόσο ευρεία;",
+          "answer": "Ο ίδιος τύπος σελίδας μπορεί να απαιτεί διαφορετικά μήκη ανάλογα με την πολυπλοκότητα του θέματος. Μια απλή περιγραφή προϊόντος (π.χ. κούπα) είναι 80–150 λέξεις — υλικό, χωρητικότητα και χρήση. Μια περιγραφή laptop είναι 300–400 λέξεις γιατί οι αγοραστές ρωτούν για επεξεργαστή, μνήμη, οθόνη και μπαταρία. Ομοίως με τις υπηρεσίες: μια σελίδα τοπικού υδραυλικού είναι 500–700 λέξεις, ενώ μια ολοκληρωμένη σελίδα υπηρεσίας B2B με βήματα διαδικασίας και FAQ είναι 1.200–1.500 λέξεις.",
+          "answerSchemaText": "Η διαφορά προέρχεται από την πολυπλοκότητα του θέματος — ένα απλό προϊόν χρειάζεται λιγότερες λέξεις από ένα σύνθετο."
         },
         {
-          "question": "How should I interpret \"too short\" or \"too long\"?",
-          "answer": "The evaluation shows where your text falls relative to typical content of that type. If the text is marked \"too short\" but answers all of the reader's questions - the length is fine. If it is \"too long\" but every paragraph adds new information - the length is justified.",
-          "answerSchemaText": "The evaluation shows where the text falls relative to typical content. If the text answers the reader's questions, the length is appropriate."
+          "question": "Πώς πρέπει να ερμηνεύσω το &quot;πολύ κοντό&quot; ή &quot;πολύ μακρύ&quot;;",
+          "answer": "Η αξιολόγηση δείχνει πού βρίσκεται το κείμενό σας σε σχέση με τυπικό περιεχόμενο αυτού του τύπου. Αν το κείμενο σημειώνεται ως &quot;πολύ κοντό&quot; αλλά απαντά σε όλες τις ερωτήσεις του αναγνώστη — το μήκος είναι εντάξει. Αν είναι &quot;πολύ μακρύ&quot; αλλά κάθε παράγραφος προσθέτει νέα πληροφορία — το μήκος δικαιολογείται.",
+          "answerSchemaText": "Η αξιολόγηση δείχνει πού βρίσκεται το κείμενο σε σχέση με τυπικό περιεχόμενο. Αν το κείμενο απαντά στις ερωτήσεις του αναγνώστη, το μήκος είναι κατάλληλο."
         },
         {
-          "question": "How does the reading time calculator work?",
-          "answer": "The tool divides the word count by 200 - the average reading speed for typical text. Technical or demanding text (e.g., documentation, terms of service) will be read slower. A light lifestyle article - faster. The result is an approximate value that helps estimate how long a reader will spend with the text.",
-          "answerSchemaText": "The tool assumes an average reading speed of 200 words per minute. This is an approximate value for typical text."
+          "question": "Πώς λειτουργεί ο υπολογιστής χρόνου ανάγνωσης;",
+          "answer": "Το εργαλείο διαιρεί τον αριθμό λέξεων με 200 — τη μέση ταχύτητα ανάγνωσης για τυπικό κείμενο. Τεχνικό ή απαιτητικό κείμενο (π.χ. τεκμηρίωση, όροι χρήσης) θα διαβαστεί πιο αργά. Ένα ελαφρύ lifestyle άρθρο — πιο γρήγορα. Το αποτέλεσμα είναι μια κατά προσέγγιση τιμή που βοηθά στην εκτίμηση πόσο χρόνο θα αφιερώσει ο αναγνώστης στο κείμενο.",
+          "answerSchemaText": "Το εργαλείο υποθέτει μέση ταχύτητα ανάγνωσης 200 λέξεων ανά λεπτό. Αυτή είναι μια κατά προσέγγιση τιμή για τυπικό κείμενο."
         },
         {
-          "question": "Where do the recommended ranges come from?",
-          "answer": "The ranges are based on analyses of content that ranks well in search engines and on content creation best practices. They are intentionally broad because the same page type may require different lengths depending on industry, topic complexity, and reader needs. The ranges serve as a starting point for evaluating whether text falls within a typical range for a specific page type.",
-          "answerSchemaText": "The ranges are based on SEO analyses and content creation best practices."
+          "question": "Από πού προέρχονται τα συνιστώμενα εύρη;",
+          "answer": "Τα εύρη βασίζονται σε αναλύσεις περιεχομένου που κατατάσσεται καλά στις μηχανές αναζήτησης και σε βέλτιστες πρακτικές δημιουργίας περιεχομένου. Είναι σκόπιμα ευρεία γιατί ο ίδιος τύπος σελίδας μπορεί να απαιτεί διαφορετικά μήκη ανάλογα με τον κλάδο, την πολυπλοκότητα του θέματος και τις ανάγκες του αναγνώστη. Τα εύρη χρησιμεύουν ως σημείο εκκίνησης για αξιολόγηση αν το κείμενο εμπίπτει σε τυπικό εύρος για συγκεκριμένο τύπο σελίδας.",
+          "answerSchemaText": "Τα εύρη βασίζονται σε αναλύσεις SEO και βέλτιστες πρακτικές δημιουργίας περιεχομένου."
         },
         {
-          "question": "Can I copy the report with statistics?",
-          "answer": "Yes. Below the statistics you will find a Copy Report button - it copies a summary with word count, character count, paragraphs, reading time, and length evaluation to your clipboard. You can paste it into a document or send it to collaborators.",
-          "answerSchemaText": "Yes. Click the Copy Report button below the statistics. A summary with all metrics and evaluation will be copied to your clipboard."
+          "question": "Μπορώ να αντιγράψω την αναφορά με τα στατιστικά;",
+          "answer": "Ναι. Κάτω από τα στατιστικά θα βρείτε κουμπί Copy Report — αντιγράφει σύνοψη με αριθμό λέξεων, χαρακτήρων, παραγράφους, χρόνο ανάγνωσης και αξιολόγηση μήκους στο clipboard σας. Μπορείτε να την επικολλήσετε σε έγγραφο ή να τη στείλετε σε συνεργάτες.",
+          "answerSchemaText": "Ναι. Κάντε κλικ στο κουμπί Copy Report κάτω από τα στατιστικά. Σύνοψη με όλες τις μετρικές και αξιολόγηση θα αντιγραφεί στο clipboard σας."
         }
       ]
     },
@@ -308,7 +308,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Explore other tools"
+      "title": "Εξερευνήστε άλλα εργαλεία"
     },
     {
       "type": "gap",

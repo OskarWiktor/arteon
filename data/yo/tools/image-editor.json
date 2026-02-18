@@ -2,60 +2,60 @@
   "toolKey": "imageResize",
   "locale": "yo",
   "metadata": {
-    "title": "Free Image Editor – Crop, Resize & Convert in Seconds",
-    "description": "Resize and crop images in seconds. Ready-made templates for Instagram, Facebook, LinkedIn. Convert JPG to WebP. Create circular avatars. No signup, no limits.",
+    "title": "Olóòtú Àwòrán Òfẹ́ẹ́ – Gé, Yí Ìwọn Padà & Yí Padà Ní Ìṣẹ́jú",
+    "description": "Yí ìwọn àwọn àwòrán padà kí o sì gé wọn ní ìṣẹ́jú. Àwọn àwò tí a ti ṣe sílẹ̀ fún Instagram, Facebook, LinkedIn. Yí JPG padà sí WebP. Ṣẹ̀dá àwọn avatar yíkà. Láì ìforukọ̀sílẹ̀, láìsí ìdíwọ̀n.",
     "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
     "path": "/yo/awon-irinse/olootu-aworan"
   },
   "hero": {
-    "title": "Free Image Editor – Crop, Resize & Convert",
-    "description": "Resize, crop, and convert images for Instagram, Facebook, and LinkedIn. Ready-made formats, circular avatars, export to JPG, PNG, and WebP. Local processing in the browser.",
+    "title": "Olóòtú Àwòrán Òfẹ́ẹ́ – Gé, Yí Ìwọn Padà & Yí Padà",
+    "description": "Yí ìwọn padà, gé, kí o sì yí àwọn àwòrán padà fún Instagram, Facebook, àti LinkedIn. Àwọn ònà tí a ti ṣe sílẹ̀, àwọn avatar yíkà, ìmújáde sí JPG, PNG, àti WebP. Ìṣèlẹ̀ àdáni nínú browser.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/yo/awon-irinse", "label": "Tools" },
-    "third": { "href": "/yo/awon-irinse/olootu-aworan", "label": "Online image editor" }
+    "second": { "href": "/yo/awon-irinse", "label": "Àwọn Irìnṣé" },
+    "third": { "href": "/yo/awon-irinse/olootu-aworan", "label": "Olóòtú àwòrán" }
   },
   "schemas": {
     "software": {
-      "name": "Free online image editor",
+      "name": "Olóòtú àwòrán òfẹ́ẹ́",
       "alternateName": [
-        "Online image resizer",
-        "Online image cropper",
-        "Instagram image size tool",
-        "Facebook image size tool",
-        "JPG to WebP converter",
-        "Circular profile picture tool",
-        "Image compression online"
+        "Olùyí-ìwọn-padà àwòrán",
+        "Olùgé-àwòrán",
+        "Irìnṣé ìwọn àwòrán Instagram",
+        "Irìnṣé ìwọn àwòrán Facebook",
+        "Olùyípadà JPG sí WebP",
+        "Irìnṣé àwòrán profaili yíkà",
+        "Fífúnú àwòrán"
       ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Free online image editor for resizing, cropping, and format conversion. Ready-made presets for Instagram, Facebook, and LinkedIn. Circular avatar creation. Export to JPG, PNG, and WebP with quality control. Local processing in the browser.",
+      "description": "Olóòtú àwòrán òfẹ́ẹ́ fún yíyí ìwọn padà, gígé, àti yíyí ònà padà. Àwọn àwò tí a ti ṣe sílẹ̀ fún Instagram, Facebook, àti LinkedIn. Ṣíṣẹ̀dá avatar yíkà. Ìmújáde sí JPG, PNG, àti WebP pẹ̀lú àkóso dídára. Ìṣèlẹ̀ àdáni nínú browser.",
       "featureList": [
-        "Resize images to any dimensions",
-        "Crop with interactive area selection",
-        "Ready-made Instagram formats (square post, portrait post, story, reels)",
-        "Ready-made Facebook formats (post, page cover)",
-        "Ready-made LinkedIn formats (post, profile banner)",
-        "Ready-made web formats (OG image, hero, banner, thumbnail)",
-        "Crop shapes: rectangle, square, circle (round avatar)",
-        "3x3 grid (rule of thirds) with color selection",
-        "Crop zoom 100–300%",
-        "Precise crop position (X, Y) with centering",
-        "Format conversion: JPG, PNG, WebP",
-        "Compression quality control 60–100%",
-        "Local processing in the browser",
-        "Free tool, no login required"
+        "Yí ìwọn àwọn àwòrán padà sí ìwọn èyíkéyìí",
+        "Gé pẹ̀lú yíyàn agbègbè aláàyè",
+        "Àwọn ònà Instagram tí a ti ṣe sílẹ̀ (ìfiranṣẹ́ onígun mẹ́rin dọ́gba, ìfiranṣẹ́ inaro, story, reels)",
+        "Àwọn ònà Facebook tí a ti ṣe sílẹ̀ (ìfiranṣẹ́, àbò ojú-ìwé)",
+        "Àwọn ònà LinkedIn tí a ti ṣe sílẹ̀ (ìfiranṣẹ́, àbànà profaili)",
+        "Àwọn ònà ayélujára tí a ti ṣe sílẹ̀ (àwòrán OG, hero, bánà, thumbnail)",
+        "Àwọn ìrisi gígé: onígun mẹ́rin, onígun mẹ́rin dọ́gba, yíkà (avatar yíkà)",
+        "Grídì 3x3 (òfìn ìdamẹ́ta) pẹ̀lú yíyàn awọ̀",
+        "Zoom gígé 100–300%",
+        "Ipò gígé pípé (X, Y) pẹ̀lú ìàárínsí",
+        "Yíyí ònà padà: JPG, PNG, WebP",
+        "Àkóso dídára fífúnú 60–100%",
+        "Ìṣèlẹ̀ àdáni nínú browser",
+        "Irìnṣé òfẹ́ẹ́, kò sí ìwolé tí a nílò"
       ]
     },
     "howTo": {
-      "name": "How to resize and crop an image for social media",
-      "description": "How to resize an image for Instagram (1080x1080, 1080x1350, story), Facebook, LinkedIn, and OG image. JPG to WebP conversion and circular avatar creation.",
+      "name": "Bí o ṣe lè yí ìwọn padà kí o sì gé àwòrán fún àjọlò",
+      "description": "Bí o ṣe lè yí ìwọn àwòrán padà fún Instagram (1080x1080, 1080x1350, story), Facebook, LinkedIn, àti àwòrán OG. Yíyí JPG padà sí WebP àti ṣíṣẹ̀dá avatar yíkà.",
       "steps": [
-        { "name": "Add an image", "text": "Drag a file onto the designated area or select an image from your device. Supported formats: JPG, PNG, WebP." },
-        { "name": "Choose dimensions or a preset", "text": "Enter target dimensions in pixels or select a ready-made format (e.g., Instagram post, Facebook cover, OG image)." },
-        { "name": "Adjust the crop", "text": "Move and zoom the image to select the best area. The bright area in the preview shows exactly what will be saved." },
-        { "name": "Choose format and download", "text": "Select the file format (JPG, PNG, or WebP), set compression quality, and download the finished image." }
+        { "name": "Fi àwòrán kún", "text": "Fa fáìlì sí agbègbè tí a yàn sọ́tọ̀ tàbí yan àwòrán láti ẹ̀rọ̀ rẹ. Àwọn ònà tí a ṣe àtìlẹ́yìn fún: JPG, PNG, WebP." },
+        { "name": "Yan ìwọn tàbí àwò tí a ti ṣe sílẹ̀", "text": "Tẹ ìwọn àfọ́jùsUN ní pixels tàbí yan ònà tí a ti ṣe sílẹ̀ (bí àpẹẹrẹ, ìfiranṣẹ́ Instagram, àbò Facebook, àwòrán OG)." },
+        { "name": "Ṣàtò gígé", "text": "Yí kí o sì zoom àwòrán láti yan agbègbè tí ó dára jùlọ. Agbègbè tí ó mọ́lẹ̀ nínú ìwòràn fi ohun tí a ó fipamọ́ hàn gán-an." },
+        { "name": "Yan ònà kí o sì gbà sílẹ̀", "text": "Yan ònà fáìlì (JPG, PNG, tàbí WebP), ṣètò dídára fífúnú, kí o sì gbà àwòrán tí ó ti parí sílẹ̀." }
       ]
     }
   },
@@ -63,189 +63,193 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Resize images online - crop, convert, and compress in one tool",
-      "html": "<p class=\"text-mid\">The online image editor lets you quickly adapt images to specific dimensions. You can resize an image to any pixel dimensions, select a ready-made format for social media, or crop a section of the image with precise framing.</p><p class=\"text-mid mt-3\">In addition to resizing, the tool offers format conversion (JPG, PNG, WebP), circular avatar creation, and compression quality control.</p>"
+      "title": "Yí ìwọn àwọn àwòrán padà — gé, yí padà, kí o sì fúnú nínú irìnṣé kan",
+      "html": "<p class=\"text-mid\">Olóòtú àwòrán jẹ́ kí o bá àwọn àwòrán mu ní kíákíá sí àwọn ìwọn kan pàtó. O lè yí ìwọn àwòrán padà sí ìwọn pixel èyíkéyìí, yan ònà tí a ti ṣe sílẹ̀ fún àjọlò, tàbí gé apá àwòrán kan pẹ̀lú ìṣètò pípé.</p><p class=\"text-mid mt-3\">Yàtọ̀ sí yíyí ìwọn padà, irìnṣé náà pèsè yíyí ònà padà (JPG, PNG, WebP), ṣíṣẹ̀dá avatar yíkà, àti àkóso dídára fífúnú.</p>"
     },
     { "type": "gap", "size": "sm" },
     {
       "type": "sectionSteps",
-      "title": "How to resize an image online",
-      "description": "Editing an image takes just a few seconds:",
+      "title": "Bí o ṣe lè yí ìwọn àwòrán padà",
+      "description": "Ṣíṣàtúnṣe àwòrán gba ìṣẹ́jú díẹ̀ péré:",
       "grid": "three",
       "items": [
-        { "title": "1. Add an image", "description": "Drag a file onto the designated area or select an image from your device. Supported formats: JPG, PNG, WebP." },
-        { "title": "2. Set dimensions", "description": "Enter dimensions in pixels or select a ready-made format (Instagram, Facebook, YouTube, LinkedIn, OG image)." },
-        { "title": "3. Download", "description": "Adjust the crop, choose the file format (JPG, PNG, WebP), set quality, and download the finished image." }
+        { "title": "1. Fi àwòrán kún", "description": "Fa fáìlì sí agbègbè tí a yàn sọ́tọ̀ tàbí yan àwòrán láti ẹ̀rọ̀ rẹ. Àwọn ònà tí a ṣe àtìlẹ́yìn fún: JPG, PNG, WebP." },
+        { "title": "2. Ṣètò ìwọn", "description": "Tẹ ìwọn ní pixels tàbí yan ònà tí a ti ṣe sílẹ̀ (Instagram, Facebook, YouTube, LinkedIn, àwòrán OG)." },
+        { "title": "3. Gbà sílẹ̀", "description": "Ṣàtò gígé, yan ònà fáìlì (JPG, PNG, WebP), ṣètò dídára, kí o sì gbà àwòrán tí ó ti parí sílẹ̀." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to add an image",
-      "html": "<p class=\"text-mid\">The tool accepts images in JPG, PNG, and WebP formats. You can add an image in two ways:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Drag and drop</strong> - grab a file from a folder on your computer and drop it onto the file upload area (the area with a dashed border).</li><li><strong>Select from device</strong> - clicking the file upload area opens a file selection dialog.</li></ul><p class=\"text-mid mt-3\">After adding an image, the tool automatically reads its original dimensions and displays a preview. You can now proceed to crop settings.</p>"
+      "title": "Bí o ṣe lè fi àwòrán kún",
+      "html": "<p class=\"text-mid\">Irìnṣé náà gba àwọn àwòrán ní ònà JPG, PNG, àti WebP. O lè fi àwòrán kún ní ọ̀nà méjì:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Fa kí o sì jù sílẹ̀</strong> — mu fáìlì láti fọ́ldà lórí kọ̀mpútà rẹ kí o sì jù sí agbègbè gbígbé fáìlì sókè (agbègbè tí ó ní ààlà aládàṣe).</li><li><strong>Yan láti ẹ̀rọ̀</strong> — títẹ agbègbè gbígbé fáìlì sókè ṣí ìjíròrò yíyàn fáìlì.</li></ul><p class=\"text-mid mt-3\">Lẹ́yìn fífi àwòrán kún, irìnṣé náà ka ìwọn àtẹ̀jísẹ́ rẹ̀ ní aìfọ̀wọ́ ó sì fi ìwòràn hàn. O lè tẹ̀síwájú sí àwọn àtúnṣe gígé báyìí.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "Set target dimensions",
-      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Dimensions in px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Ready-made formats</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Width (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly></div><div><label class=\"text-[14px]! font-medium\">Height (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span>Keep proportions (auto second dimension)</span></label></div></div>",
-      "html": "<p class=\"text-mid\">In the <strong>Dimensions in px</strong> tab, you enter width and height manually. The <strong>Keep proportions</strong> option automatically adjusts the second dimension.</p>"
+      "title": "Ṣètò ìwọn àfọ́jùsùn",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Ìwọn ní px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Àwọn ònà tí a ti ṣe sílẹ̀</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Ìbú (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly></div><div><label class=\"text-[14px]! font-medium\">Gíga (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span>Pa ìwọ̀n mọ́ (ìwọn keji aìfọ̀wọ́)</span></label></div></div>",
+      "html": "<p class=\"text-mid\">Nínú tab <strong>Ìwọn ní px</strong>, o tẹ ìbú àti gíga pẹ̀lú ọwọ́. Àṣàyàn <strong>Pa ìwọ̀n mọ́</strong> ṣàtúnṣe ìwọn keji ní aìfọ̀wọ́.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Image dimensions for Instagram, Facebook, and LinkedIn",
-      "html": "<p class=\"text-mid mb-4\">The tool includes ready-made formats with optimal dimensions for the most popular platforms:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform</th><th class=\"py-2 pr-4 font-semibold\">Format</th><th class=\"py-2 pr-4 font-semibold\">Dimensions (px)</th><th class=\"py-2 font-semibold\">Ratio</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Square post</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Portrait post</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Post</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Page cover</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Post</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Profile banner</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG image</td><td class=\"py-2 pr-4\">Link sharing</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Dimensions in the table are recommended sizes for each platform. The tool automatically sets these dimensions when you select the appropriate format.</p>"
+      "title": "Àwọn ìwọn àwòrán fún Instagram, Facebook, àti LinkedIn",
+      "html": "<p class=\"text-mid mb-4\">Irìnṣé náà ní àwọn ònà tí a ti ṣe sílẹ̀ pẹ̀lú àwọn ìwọn tí ó dára jùlọ fún àwọn pẹpẹ tí ó gbajúmọ̀ jùlọ:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Pẹpẹ</th><th class=\"py-2 pr-4 font-semibold\">Ònà</th><th class=\"py-2 pr-4 font-semibold\">Ìwọn (px)</th><th class=\"py-2 font-semibold\">Ìwọ̀n</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Ìfiranṣẹ́ onígun mẹ́rin dọ́gba</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Ìfiranṣẹ́ inaro</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Ìfiranṣẹ́</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Àbò ojú-ìwé</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Ìfiranṣẹ́</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Àbànà profaili</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">Àwòrán OG</td><td class=\"py-2 pr-4\">Pípín ìjápọ̀</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div><p class=\"text-light mt-4\">Àwọn wọ̀nyí ni àwọn ìwọn tí a ṣe àbá lọ́wọ́lọ́wọ́. Àwọn pẹpẹ lè yí àwọn ìbéèrè wọn padà — nínú irú ìṣẹ̀lẹ̀ bẹ́ẹ̀, a ṣe àtúnṣe irìnṣé náà bákannáà.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Ready-made formats - which to choose?",
-      "description": "Each format corresponds to specific platform or use case requirements:",
+      "title": "Àwọn ònà tí a ti ṣe sílẹ̀ — èwo ni kí o yan?",
+      "description": "Ònà kọ̀ọ̀kan bá àwọn ìbéèrè pẹpẹ tàbí ìlò kan pàtó mu:",
       "grid": "two",
       "items": [
         {
           "icon": "RiInstagramLine",
-          "title": "Instagram - square post (1080×1080)",
-          "description": "Standard Instagram post format. 1:1 ratio. Works well in the feed and looks good on both phone and desktop."
+          "title": "Instagram — ìfiranṣẹ́ onígun mẹ́rin dọ́gba (1080×1080)",
+          "description": "Ònà ìfiranṣẹ́ Instagram ìbílẹ̀. Ìwọ̀n 1:1. Ó ṣiṣẹ́ dáadáa nínú feed ó sì dára lórí fóònù àti desktop."
         },
         {
           "icon": "RiInstagramLine",
-          "title": "Instagram - portrait post (1080×1350)",
-          "description": "Vertical post format (4:5 ratio). Takes up more space in the feed than a square, which may increase engagement."
+          "title": "Instagram — ìfiranṣẹ́ inaro (1080×1350)",
+          "description": "Ònà ìfiranṣẹ́ inaro (ìwọ̀n 4:5). Ó gba àyè tí ó pọ̀ jù sí i nínú feed ju onígun mẹ́rin dọ́gba lọ, èyí tí ó lè mú ìfọwọ́sowọ́pọ̀ pọ̀ sí i."
         },
         {
           "icon": "RiInstagramLine",
-          "title": "Instagram - story / reels (1080×1920)",
-          "description": "Full-screen vertical format (9:16 ratio). Used in stories and reels. Fills the entire phone screen."
+          "title": "Instagram — story / reels (1080×1920)",
+          "description": "Ònà inaro ojú-ìbòjú kíkún (ìwọ̀n 9:16). A ń lò ó nínú stories àti reels. Ó kún gbogbo ojú-ìbòjú fóònù."
         },
-        { "icon": "RiFacebookLine", "title": "Facebook - post (1200×630)", "description": "Optimal format for Facebook posts and shared links. Ratio close to 16:9." },
+        { "icon": "RiFacebookLine", "title": "Facebook — ìfiranṣẹ́ (1200×630)", "description": "Ònà tí ó dára jùlọ fún àwọn ìfiranṣẹ́ Facebook àti àwọn ìjápọ̀ tí a pín. Ìwọ̀n tí ó sún mọ́ 16:9." },
         {
           "icon": "RiFacebookLine",
-          "title": "Facebook - page cover (820×360)",
-          "description": "Background photo for a Facebook business page. Wide, panoramic format - may be cropped differently on various devices."
+          "title": "Facebook — àbò ojú-ìwé (820×360)",
+          "description": "Àwòrán ìpilẹ̀ fún ojú-ìwé iṣòwò Facebook. Ònà gbòòrò, panoramic — a lè gé e ní ọ̀nà tí ó yàtọ̀ lórí àwọn ẹ̀rọ̀ oríṣìríṣì."
         },
-        { "icon": "RiLinkedinLine", "title": "LinkedIn - post (1200×1200)", "description": "Square format for LinkedIn posts. Looks good in the feed and on mobile devices." },
+        { "icon": "RiLinkedinLine", "title": "LinkedIn — ìfiranṣẹ́ (1200×1200)", "description": "Ònà onígun mẹ́rin dọ́gba fún àwọn ìfiranṣẹ́ LinkedIn. Ó dára nínú feed àti lórí àwọn ẹ̀rọ̀ alágbèéká." },
         {
           "icon": "RiLinkedinLine",
-          "title": "LinkedIn - profile banner (1584×396)",
-          "description": "Background image for a personal or company LinkedIn profile. Very wide format - center the key element in the crop."
+          "title": "LinkedIn — àbànà profaili (1584×396)",
+          "description": "Àwòrán ìpilẹ̀ fún profaili LinkedIn ẹni kọ̀ọ̀kan tàbí ilé-iṣẹ́. Ònà gbòòrò púpọ̀ — fi ẹ̀yà pàtàkì sí àárín gígé."
         },
         {
           "icon": "RiImageLine",
-          "title": "OG image (1200×630)",
-          "description": "Graphic displayed when sharing a link on social media (Open Graph). Standard for Facebook, Twitter, LinkedIn, and other platforms."
+          "title": "Àwòrán OG (1200×630)",
+          "description": "Àwòrán tí ó hàn nígbà pípín ìjápọ̀ lórí àjọlò (Open Graph). Ìbílẹ̀ fún Facebook, Twitter, LinkedIn, àti àwọn pẹpẹ mìíràn."
         },
-        { "icon": "RiFileImageLine", "title": "Article graphic (1600×900)", "description": "Wide format suitable for blog article headers. 16:9 ratio looks good on text-heavy pages." },
-        { "icon": "RiAspectRatioLine", "title": "Website banner (1920×600)", "description": "Very wide format for website banners. Works as a background under headers or in offer sections." },
-        { "icon": "RiCropLine", "title": "Article thumbnail (800×600)", "description": "Smaller format for thumbnails on article lists, product carousels, or search result previews." },
-        { "icon": "RiLayoutGridLine", "title": "Hero section (1920×1080)", "description": "Full HD full-screen format. Used as the main section background on homepages or offer pages." }
+        { "icon": "RiFileImageLine", "title": "Àwòrán àkọlé (1600×900)", "description": "Ònà gbòòrò tí ó bá àwọn àkọlé àkọsílẹ̀ blog mu. Ìwọ̀n 16:9 dára lórí àwọn ojú-ìwé tí ó ní ọ̀rọ̀ púpọ̀." },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Bánà ojú-ìwé ayélujára (1920×600)",
+          "description": "Ònà gbòòrò púpọ̀ fún àwọn bánà ojú-ìwé ayélujára. Ó ṣiṣẹ́ gẹ́gẹ́ bí ìpilẹ̀ lábẹ́ àwọn àkọlé tàbí nínú àwọn apá ìpèsè."
+        },
+        { "icon": "RiCropLine", "title": "Thumbnail àkọsílẹ̀ (800×600)", "description": "Ònà kéré fún àwọn thumbnail lórí àkójọ àkọsílẹ̀, àwọn carousel ọjà, tàbí àwọn ìwòràn èsì ìwádìí." },
+        { "icon": "RiLayoutGridLine", "title": "Apá hero (1920×1080)", "description": "Ònà ojú-ìbòjú kíkún Full HD. A ń lò ó gẹ́gẹ́ bí ìpilẹ̀ apá àkọ́kọ́ lórí àwọn ojú-ìwé ìbẹ̀rẹ̀ tàbí ojú-ìwé ìpèsè." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to crop an image",
-      "html": "<p class=\"text-mid\">After setting target dimensions, an interactive crop area appears on the preview. The bright part of the image is the section that will be saved - the rest is dimmed.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Dragging the crop</p><p class=\"text-mid mt-1\">Grab the bright area and drag it to any part of the image. This way you choose which section of the photo will be exported.</p></div><div><p class=\"text-dark font-semibold\">Resizing via handles</p><p class=\"text-mid mt-1\">In the corners of the crop area there are small squares (handles). Dragging them changes the crop size - you can enlarge or shrink it while maintaining the chosen proportions.</p></div><div><p class=\"text-dark font-semibold\">Zoom</p><p class=\"text-mid mt-1\">In the <strong>Zoom</strong> tab you will find a slider to adjust zoom (100–300%). A higher value means the crop covers a smaller section of the original image - useful when you want to cut out a specific detail.</p></div><div><p class=\"text-dark font-semibold\">Precise position control</p><p class=\"text-mid mt-1\">In the <strong>Position</strong> tab you can set the exact crop position in percentages (0–100% for X and Y axes). Centering buttons let you quickly position the crop at the center of the image.</p></div></div>"
+      "title": "Bí o ṣe lè gé àwòrán",
+      "html": "<p class=\"text-mid\">Lẹ́yìn ṣíṣètò ìwọn àfọ́jùsùn, agbègbè gígé aláàyè hàn lórí ìwòràn. Apá àwòrán tí ó mọ́lẹ̀ ni apá tí a óò fipamọ́ — ìyókù ti dín.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Fífa gígé</p><p class=\"text-mid mt-1\">Mu agbègbè tí ó mọ́lẹ̀ kí o sì fa á sí apá èyíkéyìí ti àwòrán. Ní ọ̀nà yìí o yan apá àwòrán wo ni a óò mú jáde.</p></div><div><p class=\"text-dark font-semibold\">Yíyí ìwọn padà nípasẹ̀ àwọn mú</p><p class=\"text-mid mt-1\">Ní àwọn igun agbègbè gígé àwọn onígun mẹ́rin kékeré (àwọn mú) wà. Fífa wọn yí ìwọn gígé padà — o lè mú u tóbi sí i tàbí dín kù nígbà tí o ń pa ìwọ̀n tí a yàn mọ́.</p></div><div><p class=\"text-dark font-semibold\">Zoom</p><p class=\"text-mid mt-1\">Nínú tab <strong>Zoom</strong> iwọ yóò rí slider láti ṣàtúnṣe zoom (100–300%). Ìyẹ gíga sí i túmọ̀ sí pé gígé bò apá kéré sí i ti àwòrán àtẹ̀jísẹ́ — wúlò nígbà tí o fẹ́ gé àlàyé kan pàtó jáde.</p></div><div><p class=\"text-dark font-semibold\">Àkóso ipò pípé</p><p class=\"text-mid mt-1\">Nínú tab <strong>Position</strong> o lè ṣètò ipò gígé gangan ní ìpín ọgọ́rùn-ún (0–100% fún àwọn axis X àti Y). Àwọn bọ́tìnì ìàárínsí jẹ́ kí o fi gígé sí àárín àwòrán ní kíákíá.</p></div></div>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "Crop shapes",
-      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Rectangle</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Square</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Circle</span></div></div>",
-      "html": "<p class=\"text-mid\">In the <strong>Crop Shapes</strong> tab, you choose the shape of the exported image: rectangle (with selected proportions), square (forces 1:1), or circle (with transparent background).</p><p class=\"text-mid mt-3\">The circle shape creates a round avatar with a transparent background outside the circle. The tool automatically switches the format to PNG or WebP, since JPG does not support transparency.</p>"
+      "title": "Àwọn ìrísí gígé",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Onígun mẹ́rin</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Onígun mẹ́rin dọ́gba</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Yíkà</span></div></div>",
+      "html": "<p class=\"text-mid\">Nínú tab <strong>Crop Shapes</strong>, o yan ìrísí àwòrán tí a óò mú jáde: onígun mẹ́rin (pẹ̀lú ìwọ̀n tí a yàn), onígun mẹ́rin dọ́gba (fipá mú 1:1), tàbí yíkà (pẹ̀lú ìpilẹ̀ aláìrí).</p><p class=\"text-mid mt-3\">Ìrísí yíkà ṣẹ̀dá avatar yíkà pẹ̀lú ìpilẹ̀ aláìrí ní ìta yíkà. Irìnṣé náà yí ònà padà sí PNG tàbí WebP ní aìfọ̀wọ́, nítorí JPG kò ṣe àtìlẹ́yìn fún ìhàn-gbangba.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "3×3 grid - what is it for?",
-      "html": "<p class=\"text-mid\">A grid dividing the image into 9 equal parts is visible on the crop area. This is a visualization of the <strong>rule of thirds</strong> - one of the fundamental principles of photographic composition.</p><p class=\"text-mid mt-3\">The rule states that the most important elements of a photo (face, product, point of interest) should be placed at the intersections of the grid lines or along them. Such composition is more dynamic and pleasing to the eye than placing the subject exactly in the center.</p><p class=\"text-mid mt-3\">In the <strong>Grid color</strong> tab you can change the line color (green, white, black, red, yellow) so the grid is clearly visible on different images.</p>"
+      "title": "Grídì 3×3 — kí ni ó wà fún?",
+      "html": "<p class=\"text-mid\">Grídì tí ó pín àwòrán sí àwọn apá dọ́gba 9 hàn lórí agbègbè gígé. Èyí jẹ́ ìfihàn ti <strong>òfìn ìdamẹ́ta</strong> — ọ̀kan lára àwọn ìlànà ìpìlẹ̀ ti ṣíṣètò àwòrán fọ́tò.</p><p class=\"text-mid mt-3\">Òfìn náà sọ pé àwọn ẹ̀yà pàtàkì jùlọ ti fọ́tò (ojú, ọjà, ibi ìfọkànsí) yẹ kí a fi sí àwọn ibùdé àwọn ìlà grídì tàbí lẹ́gbẹ̀ẹ̀ wọn. Ìrú ṣíṣètò bẹ́ẹ̀ ní àkúnlẹ̀ sí i àti dídùn sí ojú ju fífi ohun tí a ń fọkànsí sí àárín gangan lọ.</p><p class=\"text-mid mt-3\">Nínú tab <strong>Grid color</strong> o lè yí awọ̀ ìlà padà (àwọ̀ ewé, funfun, dúdú, pupa, rírẹ̀) kí grídì le hàn kedere lórí àwọn àwòrán oríṣìríṣì.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionTabs",
-      "title": "Export - which format to choose?",
+      "title": "Ìmújáde — ònà wo ni kí o yan?",
       "tabs": [
         {
           "title": "JPG",
           "icon": "RiImageLine",
-          "html": "<div><p class=\"text-mid mb-3\">The most popular format for photos. Good compression while maintaining visual quality. Does not support transparency - the background will always be filled with a color.</p><p class=\"text-mid\">A good choice for product photos, portraits, and most website graphics. The quality slider (60–100%) controls compression.</p></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Ònà tí ó gbajúmọ̀ jùlọ fún àwọn fọ́tò. Fífúnú tí ó dára nígbà tí ó ń pa dídára ojú mọ́. Kò ṣe àtìlẹ́yìn fún ìhàn-gbangba — a óò kún ìpilẹ̀ pẹ̀lú awọ̀ nígbà gbogbo.</p><p class=\"text-mid\">Yíyàn tí ó dára fún àwọn fọ́tò ọjà, àwọn àwòrán ojú, àti ọ̀pọ̀lọpọ̀ àwọn àwòrán ojú-ìwé ayélujára. Slider dídára (60–100%) ń ṣàkóso fífúnú.</p></div>"
         },
         {
           "title": "PNG",
           "icon": "RiFileImageLine",
-          "html": "<div><p class=\"text-mid mb-3\">Lossless format - preserves full quality, but files are larger. Supports transparency (required for the circle shape).</p><p class=\"text-mid\">A good choice for graphics with text, icons, and images requiring sharp edges.</p></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Ònà tí kò ní ìpadánù — ó pa dídára kíkún mọ́, ṣùgbọ́n àwọn fáìlì tóbi sí i. Ó ṣe àtìlẹ́yìn fún ìhàn-gbangba (a nílò rẹ̀ fún ìrísí yíkà).</p><p class=\"text-mid\">Yíyàn tí ó dára fún àwọn àwòrán pẹ̀lú ọ̀rọ̀, àwọn àmì, àti àwọn àwòrán tí ó nílò ẹ̀gbẹ́ mímú.</p></div>"
         },
         {
           "title": "WebP",
           "icon": "RiCropLine",
-          "html": "<div><p class=\"text-mid mb-3\">Modern format combining the advantages of JPG and PNG - small files, good quality, transparency support. Supported by all modern browsers.</p><p class=\"text-mid\">Recommended for websites - smaller files mean faster loading.</p></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Ònà ìgbàlódé tí ó dàpọ̀ àwọn àǹfààní JPG àti PNG — àwọn fáìlì kékeré, dídára tí ó dára, àtìlẹ́yìn ìhàn-gbangba. Gbogbo àwọn browser ìgbàlódé ṣe àtìlẹ́yìn fún un.</p><p class=\"text-mid\">A ṣe àbá fún àwọn ojú-ìwé ayélujára — àwọn fáìlì tí ó kéré túmọ̀ sí gbígbé ní kíákíá sí i.</p></div>"
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Aspect ratios - what do they mean?",
-      "description": "The aspect ratio is the relationship between the width and height of an image. Written as two numbers separated by a colon:",
+      "title": "Àwọn ìwọ̀n — kí ni wọ́n túmọ̀ sí?",
+      "description": "Ìwọ̀n jẹ́ ìbáṣepọ̀ láàárín ìbú àti gíga àwòrán. A kọ ọ́ gẹ́gẹ́ bí nọ́mbà méjì tí àmì ìyapa ya sọ́tọ̀:",
       "grid": "two",
       "items": [
-        { "icon": "RiLayoutGridLine", "title": "1:1 (square)", "description": "Width equals height. Instagram square post, profile pictures, icons." },
-        { "icon": "RiAspectRatioLine", "title": "4:5 (portrait)", "description": "Slightly vertical format. Instagram portrait post - takes up more space in the feed than a square." },
-        { "icon": "RiImageLine", "title": "3:2 (classic)", "description": "Traditional analog photography proportions. Many digital cameras also use this format." },
-        { "icon": "RiCropLine", "title": "16:9 (widescreen)", "description": "Standard HD video, presentation, and monitor format. YouTube, Facebook video, website banners." },
+        { "icon": "RiLayoutGridLine", "title": "1:1 (onígun mẹ́rin dọ́gba)", "description": "Ìbú dọ́gba gíga. Ìfiranṣẹ́ onígun mẹ́rin dọ́gba Instagram, àwọn àwòrán profaili, àwọn àmì." },
+        { "icon": "RiAspectRatioLine", "title": "4:5 (inaro)", "description": "Ònà inaro díẹ̀. Ìfiranṣẹ́ inaro Instagram — ó gba àyè tí ó pọ̀ jù sí i nínú feed ju onígun mẹ́rin dọ́gba lọ." },
+        { "icon": "RiImageLine", "title": "3:2 (ìbílẹ̀)", "description": "Ìwọ̀n àwòrán fọ́tò analogue ìbílẹ̀. Ọ̀pọ̀lọpọ̀ àwọn kámẹ́rà dígítà tún lo ònà yìí." },
+        { "icon": "RiCropLine", "title": "16:9 (ojú-ìbòjú gbòòrò)", "description": "Ònà ìbílẹ̀ fídíò HD, ìgbékalẹ̀, àti atẹ̀yínká. YouTube, fídíò Facebook, àwọn bánà ojú-ìwé ayélujára." },
         {
           "icon": "RiInstagramLine",
-          "title": "9:16 (vertical full-screen)",
-          "description": "Inverted 16:9 - a vertical format filling the entire phone screen. Instagram Stories, TikTok, YouTube Shorts."
+          "title": "9:16 (inaro ojú-ìbòjú kíkún)",
+          "description": "16:9 tí a yí padà — ònà inaro tí ó kún gbogbo ojú-ìbòjú fóònù. Instagram Stories, TikTok, YouTube Shorts."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the image editor",
+      "title": "Àwọn ìbéèrè tí a máa ń béèrè nípa olóòtú àwòrán",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Does the editor handle very large images?",
-          "answer": "Yes, though processing may be slower for images above 4000×4000 pixels - this depends on the device's power and available browser memory. All processing happens locally, without sending files to a server.",
-          "answerSchemaText": "Yes. Processing may be slower above 4000×4000 px. All processing is local."
+          "question": "Ṣé olóòtú náà lè ṣiṣẹ́ pẹ̀lú àwọn àwòrán tí ó tóbi púpọ̀?",
+          "answer": "Bẹ́ẹ̀ ni, bí ó tilẹ̀ jẹ́ pé ìṣèlẹ̀ lè lọ̀ra fún àwọn àwòrán tí ó ju 4000×4000 pixels lọ — èyí dá lórí agbára ẹ̀rọ̀ àti ìrántí browser tí ó wà. Gbogbo ìṣèlẹ̀ wáyé ní àdáni, láìsí fífi àwọn fáìlì ránṣẹ́ sí server.",
+          "answerSchemaText": "Bẹ́ẹ̀ ni. Ìṣèlẹ̀ lè lọ̀ra lókè 4000×4000 px. Gbogbo ìṣèlẹ̀ jẹ́ àdáni."
         },
         {
-          "question": "Which export format to choose - JPG, PNG, or WebP?",
-          "answer": "JPG is a good choice for photos with many colors and gradients - files are small with good quality. PNG preserves the highest quality and supports transparency (e.g., circular avatar). WebP combines the advantages of both - small files with high quality and transparency support.",
-          "answerSchemaText": "JPG for photos, PNG for transparency, WebP combines small files with high quality."
+          "question": "Ònà ìmújáde wo ni kí mo yan — JPG, PNG, tàbí WebP?",
+          "answer": "JPG jẹ́ yíyàn tí ó dára fún àwọn fọ́tò pẹ̀lú awọ̀ púpọ̀ àti àwọn ìyípadà àníìyàntó — àwọn fáìlì kéré pẹ̀lú dídára tí ó dára. PNG pa dídára gíga jùlọ mọ́ ó sì ṣe àtìlẹ́yìn fún ìhàn-gbangba (bí àpẹẹrẹ, avatar yíkà). WebP dàpọ̀ àwọn àǹfààní méjèèjì — àwọn fáìlì kékeré pẹ̀lú dídára gíga àti àtìlẹ́yìn ìhàn-gbangba.",
+          "answerSchemaText": "JPG fún àwọn fọ́tò, PNG fún ìhàn-gbangba, WebP dàpọ̀ àwọn fáìlì kékeré pẹ̀lú dídára gíga."
         },
         {
-          "question": "How to create a circular profile picture?",
-          "answer": "In the Crop Shapes tab, select the Circle option. The tool will automatically switch the format to PNG or WebP (JPG does not support transparency). The area outside the circle will be transparent.",
-          "answerSchemaText": "Select Circle in the Crop Shapes tab. The area outside the circle is transparent."
+          "question": "Bí o ṣe lè ṣẹ̀dá àwòrán profaili yíkà?",
+          "answer": "Nínú tab Crop Shapes, yan àṣàyàn Circle. Irìnṣé náà yóò yí ònà padà sí PNG tàbí WebP ní aìfọ̀wọ́ (JPG kò ṣe àtìlẹ́yìn fún ìhàn-gbangba). Agbègbè ní ìta yíkà yóò jẹ́ aláìrí.",
+          "answerSchemaText": "Yan Circle nínú tab Crop Shapes. Agbègbè ní ìta yíkà jẹ́ aláìrí."
         },
         {
-          "question": "What are the image dimensions for Instagram?",
-          "answer": "Instagram supports three main formats: square post (1080×1080 px, 1:1 ratio), portrait post (1080×1350 px, 4:5 ratio), and story/reels (1080×1920 px, 9:16 ratio). The tool has ready-made formats for each of these dimensions.",
-          "answerSchemaText": "Square post: 1080×1080 px, portrait post: 1080×1350 px, story/reels: 1080×1920 px."
+          "question": "Àwọn ìwọn àwòrán wo ni fún Instagram?",
+          "answer": "Instagram ṣe àtìlẹ́yìn fún ònà àkọ́kọ́ mẹ́ta: ìfiranṣẹ́ onígun mẹ́rin dọ́gba (1080×1080 px, ìwọ̀n 1:1), ìfiranṣẹ́ inaro (1080×1350 px, ìwọ̀n 4:5), àti story/reels (1080×1920 px, ìwọ̀n 9:16). Irìnṣé náà ní àwọn ònà tí a ti ṣe sílẹ̀ fún ìwọn kọ̀ọ̀kan wọ̀nyí.",
+          "answerSchemaText": "Ìfiranṣẹ́ onígun mẹ́rin dọ́gba: 1080×1080 px, ìfiranṣẹ́ inaro: 1080×1350 px, story/reels: 1080×1920 px."
         },
         {
-          "question": "How does the quality slider work?",
-          "answer": "The quality slider (60–100%) controls the compression level for JPG and WebP formats. A higher value means better image quality but a larger file size. For most social media use cases, the optimal value is 70–85%.",
-          "answerSchemaText": "The slider controls JPG and WebP compression. 70–85% is optimal for social media."
+          "question": "Bí slider dídára ṣe ń ṣiṣẹ́?",
+          "answer": "Slider dídára (60–100%) ṣàkóso ìpele fífúnú fún àwọn ònà JPG àti WebP. Ìyẹ gíga sí i túmọ̀ sí dídára àwòrán tí ó dára sí i ṣùgbọ́n ìwọn fáìlì tí ó tóbi sí i. Fún ọ̀pọ̀lọpọ̀ àwọn ìlò àjọlò, ìyẹ tí ó dára jùlọ jẹ́ 70–85%.",
+          "answerSchemaText": "Slider náà ṣàkóso fífúnú JPG àti WebP. 70–85% dára jùlọ fún àjọlò."
         },
         {
-          "question": "Why is JPG format unavailable with the circle shape?",
-          "answer": "JPG format does not support transparency. The circle shape requires a transparent background outside the circle, so the tool automatically limits the choice to PNG or WebP - formats with an alpha channel.",
-          "answerSchemaText": "JPG does not support transparency. Circle shape requires PNG or WebP."
+          "question": "Kí nìdí tí ònà JPG kò fi wà fún ìrísí yíkà?",
+          "answer": "Ònà JPG kò ṣe àtìlẹ́yìn fún ìhàn-gbangba. Ìrísí yíkà nílò ìpilẹ̀ aláìrí ní ìta yíkà, nítorí náà irìnṣé náà dín yíyàn kù sí PNG tàbí WebP ní aìfọ̀wọ́ — àwọn ònà tí ó ní ìkànàl alpha.",
+          "answerSchemaText": "JPG kò ṣe àtìlẹ́yìn fún ìhàn-gbangba. Ìrísí yíkà nílò PNG tàbí WebP."
         },
         {
-          "question": "What do aspect ratios like 4:5 or 16:9 mean?",
-          "answer": "Aspect ratios define the relationship between the width and height of an image. For example, 4:5 means the width is 4 parts and the height is 5 parts. 16:9 is the typical ratio for films and presentations. Instagram portrait post uses 4:5, while story and reels use 9:16.",
-          "answerSchemaText": "4:5 = width 4 parts, height 5 parts. 16:9 = standard widescreen."
+          "question": "Kí ni àwọn ìwọ̀n bí 4:5 tàbí 16:9 túmọ̀ sí?",
+          "answer": "Àwọn ìwọ̀n ṣàlàyé ìbáṣepọ̀ láàárín ìbú àti gíga àwòrán. Bí àpẹẹrẹ, 4:5 túmọ̀ sí pé ìbú jẹ́ apá 4 gíga sì jẹ́ apá 5. 16:9 jẹ́ ìwọ̀n àbáwọlé fún àwọn fíìmù àti àwọn ìgbékalẹ̀. Ìfiranṣẹ́ inaro Instagram lo 4:5, nígbà tí story àti reels lo 9:16.",
+          "answerSchemaText": "4:5 = ìbú apá 4, gíga apá 5. 16:9 = ojú-ìbòjú gbòòrò ìbílẹ̀."
         }
       ]
     },
     { "type": "gap", "size": "sm" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
+    { "type": "toolsCarousel", "title": "Ṣàwárí àwọn irìnṣé mìíràn" },
     { "type": "gap", "size": "sm" }
   ]
 }

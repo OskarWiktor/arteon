@@ -2,68 +2,68 @@
   "toolKey": "emailSignature",
   "locale": "yo",
   "metadata": {
-    "title": "Free Email Signature Generator – HTML for Gmail & Outlook",
-    "description": "Create a professional HTML email signature without coding. Add contact details, logo, social media links and copy to Gmail or Outlook. No signup, no limits.",
+    "title": "Olùpìlẹ̀ṣẹ̀ Ìbúwòlú Ìmeèlì Òfẹ́ẹ́ – HTML fún Gmail & Outlook",
+    "description": "Ṣẹ̀dá ìbúwòlú ìmeèlì HTML alámòòdájú láì kíkọ kóòdù. Fi àlàyé ìbáṣepọ̀, àmì ìdánìmọ̀, àwọn ìjápọ̀ àjọlò kún, kí o sì daakọ sí Gmail tabi Outlook. Láì ìforukọ̀sílẹ̀.",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
     "path": "/yo/awon-irinse/olupilese-ibuwolu-imeeli-ofe"
   },
   "hero": {
-    "title": "Create a professional HTML email signature",
-    "description": "Build a professional email signature in minutes. Enter your details, choose colors, and copy the ready HTML code into Gmail, Outlook, or any email client.",
+    "title": "Ṣẹ̀dá ìbúwòlú ìmeèlì HTML alámòòdájú",
+    "description": "Kọ́ ìbúwòlú ìmeèlì alámòòdájú ní ìṣẹ́jú. Tẹ àwọn àlàyé rẹ, yan awọn awọ̀, kí o sì daakọ kóòdù HTML tí ó ti ṣetán sínú Gmail, Outlook, tabi ẹ̀rọ̀ ìmeèlì èyíkéyìí.",
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/yo/awon-irinse", "label": "Tools" },
-    "third": { "href": "/yo/awon-irinse/olupilese-ibuwolu-imeeli-ofe", "label": "Email signature generator" }
+    "second": { "href": "/yo/awon-irinse", "label": "Awọn Irìnṣé" },
+    "third": { "href": "/yo/awon-irinse/olupilese-ibuwolu-imeeli-ofe", "label": "Olùpìlẹ̀ṣẹ̀ ìbúwòlú ìmeèlì" }
   },
   "schemas": {
     "software": {
-      "name": "Free email signature generator online",
-      "alternateName": ["HTML email signature generator", "Email signature creator", "Email footer generator online"],
+      "name": "Olùpìlẹ̀ṣẹ̀ ìbúwòlú ìmeèlì òfẹ́ẹ́",
+      "alternateName": ["Olùpìlẹ̀ṣẹ̀ ìbúwòlú ìmeèlì HTML", "Aṣẹ̀dá ìbúwòlú ìmeèlì", "Olùpìlẹ̀ṣẹ̀ èsè-ìwe ìmeèlì"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Free HTML email signature generator. Add contact details, CTA link, and social media profiles, then copy the ready code into Gmail, Outlook, and other email clients.",
+      "description": "Olùpìlẹ̀ṣẹ̀ ìbúwòlú ìmeèlì HTML òfẹ́ẹ́. Fi àlàyé ìbáṣepọ̀, ìjápọ̀ CTA, àti àwọn profaili àjọlò kún, lẹ́yìn náà daakọ kóòdù tí ó ti ṣetán sínú Gmail, Outlook, àti àwọn ẹ̀rọ̀ ìmeèlì mìíràn.",
       "featureList": [
-        "Contact details (name, title, company)",
-        "Phone, email, and website URL",
-        "Logo or profile picture with shape and size options",
-        "Social media icons (12 platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
-        "Customizable colors (text, accent, background)",
-        "Individual text style for each signature element",
-        "CTA button with custom text and link",
-        "Separator line styling (style, thickness, color)",
-        "Live signature preview with background switching (light, dark, checkerboard)",
-        "HTML source code preview in modal",
-        "Copy HTML code to clipboard",
-        "Download signature as HTML file",
-        "Export and import configuration as JSON file",
-        "Compatible with Gmail, Outlook, Apple Mail",
-        "Free tool, no login required"
+        "Àlàyé ìbáṣepọ̀ (orúkọ, àkọ̀lé iṣẹ́, ilé-iṣẹ́)",
+        "Fóònù, ìmeèlì, àti URL ojú-ìwé ayélujára",
+        "Àmì ìdánìmọ̀ tabi àwòrán profaili pẹ̀lú àṣàyàn ìrisi àti ìwọn",
+        "Àwọn àmì àjọlò (pẹpẹ 12: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
+        "Awọn awọ̀ tí a lè ṣàtúnṣe (ọ̀rọ̀, ìyatọ̀, ìpilẹ̀)",
+        "Àpẹẹrẹ ọ̀rọ̀ kọ̀ọ̀kan fún ẹ̀yà ìbúwòlú kọ̀ọ̀kan",
+        "Bọ́tìnì CTA pẹ̀lú ọ̀rọ̀ àti ìjápọ̀ aṣàyàn",
+        "Àpẹẹrẹ ìlà ìya (apẹẹrẹ, nípọn, awọ̀)",
+        "Ìwòràn ìbúwòlú láàyè pẹ̀lú yíyípadà ìpilẹ̀ (fẹ́ẹ́rẹ́fẹ́ẹ́, dúdú, àtèlé)",
+        "Ìwòràn kóòdù orísun HTML nínú modal",
+        "Daakọ kóòdù HTML sí clipboard",
+        "Gbà ìbúwòlú sílẹ̀ gẹ́gẹ́ bí fáìlì HTML",
+        "Kí o mú jáde kí o sì gba àtò gẹ́gẹ́ bí fáìlì JSON",
+        "Ìbarámú pẹ̀lú Gmail, Outlook, Apple Mail",
+        "Irìnṣé òfẹ́ẹ́, kò sí ìwolé tí a nílò"
       ]
     },
     "howTo": {
-      "name": "How to use the email signature generator",
-      "description": "How to create a professional HTML email signature using the free Arteon generator.",
+      "name": "Bí o ṣe lè lo olùpìlẹ̀ṣẹ̀ ìbúwòlú ìmeèlì",
+      "description": "Bí o ṣe lè ṣẹ̀dá ìbúwòlú ìmeèlì HTML alámòòdájú lílò olùpìlẹ̀ṣẹ̀ Arteon òfẹ́ẹ́.",
       "totalTime": "PT5M",
       "steps": [
-        { "name": "Choose a signature layout", "text": "Select one of eight available layouts: Standard, Top bar, Labels left, Centered, Compact, Two columns, Minimalist, or Bottom bar." },
+        { "name": "Yan ètò ìbúwòlú", "text": "Yan ọ̀kan nínú ètò mẹ́jọ tí ó wà: Standard, Top bar, Labels left, Centered, Compact, Two columns, Minimalist, tabi Bottom bar." },
         {
-          "name": "Fill in contact details",
-          "text": "In the Details tab, enter your name, title, company, email, phone, and website URL. Optionally add an avatar or logo - after entering the image URL, you can choose shape (round, rounded, square) and size (40, 56, or 72 px)."
+          "name": "Kún àlàyé ìbáṣepọ̀",
+          "text": "Nínú tab Details, tẹ orúkọ rẹ, àkọ̀lé iṣẹ́, ilé-iṣẹ́, ìmeèlì, fóònù, àti URL ojú-ìwé ayélujára. Ní àìyan, fi avatar tabi àmì ìdánìmọ̀ kún — lẹ́yìn títẹ URL àwòrán, o lè yan ìrisi (yíkà, yíkà díẹ̀, ònigégé mẹ́rin) àti ìwọn (40, 56, tabi 72 px)."
         },
-        { "name": "Add CTA buttons", "text": "In the Buttons tab, add text and URL for the main button. Optionally add a second outline-style button and choose button rounding." },
+        { "name": "Fi awọn bọ́tìnì CTA kún", "text": "Nínú tab Buttons, fi ọ̀rọ̀ àti URL kún fún bọ́tìnì àkọ́kọ́. Ní àìyan, fi bọ́tìnì keji ní àpẹẹrẹ outline kún kí o sì yan rounding bọ́tìnì." },
         {
-          "name": "Add social media links",
-          "text": "In the Social Media tab, paste URLs to your profiles. Supported platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest."
+          "name": "Fi awọn ìjápọ̀ àjọlò kún",
+          "text": "Nínú tab Social Media, lẹ̀ àwọn URL sí àwọn profaili rẹ. Àwọn pẹpẹ tí a ṣe àtìlẹ́yìn fún: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, àti Pinterest."
         },
-        { "name": "Customize appearance", "text": "In the Appearance tab, choose a color theme, font, and text size. In the Text Style tab, change colors and sizes of individual elements." },
+        { "name": "Ṣàtúnṣe ìrísí", "text": "Nínú tab Appearance, yan tímú awọ̀, fọ́ọ̀ntì, àti ìwọn ọ̀rọ̀. Nínú tab Text Style, yí awọn awọ̀ àti ìwọn ẹ̀yà kọ̀ọ̀kan padà." },
         {
-          "name": "Add disclaimer and configure separator",
-          "text": "In the Disclaimer / Legal tab, enter legal text and configure the separator line - choose style (solid, dashed, dotted), thickness (1–3 px), and color."
+          "name": "Fi àlàyé ofìn kún kí o sì ṣàtò ìlà ìya",
+          "text": "Nínú tab Disclaimer / Legal, tẹ ọ̀rọ̀ ofìn kí o sì ṣàtò ìlà ìya — yan àpẹẹrẹ (solid, dashed, dotted), nípọn (1–3 px), àti awọ̀."
         },
         {
-          "name": "Preview and copy signature",
-          "text": "The signature preview is available on light, dark, or checkerboard background. The Copy signature (Gmail / Outlook) button copies the ready code to clipboard. Also available: Copy HTML code, Download as HTML, View HTML code, and export configuration as JSON file."
+          "name": "Wo àyẹ̀wò kí o sì daakọ ìbúwòlú",
+          "text": "Ìwòràn ìbúwòlú wà lórí ìpilẹ̀ fẹ́ẹ́rẹ́fẹ́ẹ́, dúdú, tabi àtèlé. Bọ́tìnì Copy signature (Gmail / Outlook) daakọ kóòdù tí ó ti ṣetán sí clipboard. Tún wà: Copy HTML code, Download as HTML, View HTML code, àti kí o mú àtò jáde gẹ́gẹ́ bí fáìlì JSON."
         }
       ]
     }
@@ -72,191 +72,195 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Why have a professional email signature?",
-      "html": "<p class=\"text-mid\">An email signature (also called an email footer) is a block of information at the end of every sent message. It contains contact details, job title, company name, and often a link to the website or meeting calendar.</p><p class=\"text-mid mt-3\">The recipient does not have to search for the phone number in previous messages - all details are readily available. A professional email signature also shows that you pay attention to details and maintain a consistent company image in business correspondence.</p>"
+      "title": "Kí nìdí tí o fi yẹ kí o ní ìbúwòlú ìmeèlì alámòòdájú?",
+      "html": "<p class=\"text-mid\">Ìbúwòlú ìmeèlì (tí a tún ń pè ní èsè-ìwé ìmeèlì) jẹ́ blọ́kì àlàyé ní ìparí ìfiránṣẹ́ kọ̀ọ̀kan tí a fi ránṣẹ́. Ó ní àlàyé ìbáṣepọ̀, àkọ̀lé iṣẹ́, orúkọ ilé-iṣẹ́, àti sábà ìjápọ̀ sí ojú-ìwé ayélujára tàbí kàlẹ́ndà ìpàdé.</p><p class=\"text-mid mt-3\">Olùgbà kò nílò láti wá nọ́mbà fóònù nínú àwọn ìfiránṣẹ́ tẹ́lẹ̀ — gbogbo àlàyé wà ní ìṣetán. Ìbúwòlú ìmeèlì alámòòdájú tún fi hàn pé o ṣe àkíyèsí àwọn àlàyé kéékèèké, o sì pa àwòrán ilé-iṣẹ́ tí ó bá ara mu mọ́ nínú ìfọwọ́ránṣẹ́ ìṣòwò.</p>"
     },
     { "type": "gap", "size": "sm" },
     {
       "type": "sectionSteps",
-      "title": "How to use the email signature generator",
-      "description": "Creating a professional email signature takes just a few minutes:",
+      "title": "Bí o ṣe lè lo olùpìlẹ̀ṣẹ̀ ìbúwòlú ìmeèlì",
+      "description": "Ṣíṣẹ̀dá ìbúwòlú ìmeèlì alámòòdájú gba ìṣẹ́jú díẹ̀ péré:",
       "grid": "three",
       "items": [
-        { "title": "1. Enter details", "description": "Fill in your name, title, company, and contact details." },
-        { "title": "2. Customize appearance", "description": "Choose a layout, colors, add a logo, and social media links." },
-        { "title": "3. Copy the code", "description": "The Copy signature button copies the ready code to clipboard. Just paste it in Gmail, Outlook, or another email client." }
+        { "title": "1. Tẹ àwọn àlàyé", "description": "Kún orúkọ rẹ, àkọ̀lé iṣẹ́, ilé-iṣẹ́, àti àlàyé ìbáṣepọ̀." },
+        { "title": "2. Ṣàtúnṣe ìrísí", "description": "Yan ètò, àwọn awọ̀, fi àmì ìdánìmọ̀ kún, àti àwọn ìjápọ̀ àjọlò." },
+        { "title": "3. Daakọ kóòdù náà", "description": "Bọ́tìnì Copy signature daakọ kóòdù tí ó ti ṣetán sí clipboard. Lẹ̀ é péré sínú Gmail, Outlook, tàbí ẹ̀rọ̀ ìmeèlì mìíràn." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to fill in signature details",
-      "html": "<p class=\"text-mid\">The <strong>Details</strong> tab contains all the fields you can fill in. Only two are required: name and email address. The remaining fields are optional and will appear in the signature only when filled in.</p><h3 class=\"h5 mt-6 mb-3\">Fields in the Details tab</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Line above name</strong> - additional text displayed above the name. You can enter the company name, tagline, or slogan.</li><li><strong>Avatar / logo (image URL)</strong> - URL to a profile photo or company logo. The image should be square (min. 120×120 px) and publicly accessible online. After pasting the URL, additional options appear: <strong>Avatar shape</strong> (round, rounded, or square) and <strong>Avatar size</strong> (small - 40 px, medium - 56 px, large - 72 px).</li><li><strong>Full name</strong> - required field. Enter your full name.</li><li><strong>Name tag</strong> - short text next to the name, e.g., pronouns or abbreviated title.</li><li><strong>Job title</strong> - your role in the company, e.g., Sales Manager, Marketing Specialist.</li><li><strong>Company name</strong> - the name of the organization you represent.</li><li><strong>Additional line</strong> - a short description of what you do or what you offer.</li><li><strong>Email</strong> - required field. Enter your business email address.</li><li><strong>Phone</strong> - contact number. Any format, e.g., +1 555 000 000.</li><li><strong>Website</strong> - full URL of your website, starting with https://.</li><li><strong>Address</strong> - physical company address (street, city, postal code).</li><li><strong>Formal details</strong> - tax ID, license number, or other details required in your industry.</li></ul>"
+      "title": "Bí o ṣe lè kún àlàyé ìbúwòlú",
+      "html": "<p class=\"text-mid\">Tab <strong>Details</strong> ní gbogbo àwọn aaye tí o lè kún. Méjì péré ni a nílò: orúkọ àti àdírẹ́sì ìmeèlì. Àwọn aaye tí ó kù jẹ́ àìyan, wọ́n sì yóò hàn nínú ìbúwòlú nígbà tí a bá kún wọn péré.</p><h3 class=\"h5 mt-6 mb-3\">Àwọn aaye nínú tab Details</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Ìlà lókè orúkọ</strong> — ọ̀rọ̀ àfikún tí ó hàn lókè orúkọ. O lè tẹ orúkọ ilé-iṣẹ́, ọ̀rọ̀ àpèjúwe, tàbí ọ̀rọ̀ ìpolówó.</li><li><strong>Avatar / àmì ìdánìmọ̀ (URL àwòrán)</strong> — URL sí àwòrán profaili tàbí àmì ìdánìmọ̀ ilé-iṣẹ́. Àwòrán yẹ kí ó jẹ́ onígun mẹ́rin dọ́gba (kéréjù 120×120 px) kí ó sì wà ní gbangba lórí ayélujára. Lẹ́yìn lílẹ̀ URL, àwọn àṣàyàn àfikún yóò hàn: <strong>Ìrisi avatar</strong> (yíkà, yíkà díẹ̀, tàbí onígun mẹ́rin) àti <strong>Ìwọn avatar</strong> (kéré — 40 px, àárín — 56 px, nílà — 72 px).</li><li><strong>Orúkọ kíkún</strong> — aaye tí a nílò. Tẹ orúkọ rẹ kíkún.</li><li><strong>Àmì orúkọ</strong> — ọ̀rọ̀ kúkúrú lẹ́gbẹ̀ẹ̀ orúkọ, bí àpẹẹrẹ, pronouns tàbí àkọlé kúkúrú.</li><li><strong>Àkọ̀lé iṣẹ́</strong> — ipò rẹ nínú ilé-iṣẹ́, bí àpẹẹrẹ, Olùdarí Títa, Amọ̀ràn Ìpolówó.</li><li><strong>Orúkọ ilé-iṣẹ́</strong> — orúkọ àjọ tí o ṣojú rẹ̀.</li><li><strong>Ìlà àfikún</strong> — àpèjúwe kúkúrú ti ohun tí o ń ṣe tàbí ohun tí o ń pèsè.</li><li><strong>Ìmeèlì</strong> — aaye tí a nílò. Tẹ àdírẹ́sì ìmeèlì iṣẹ́ rẹ.</li><li><strong>Fóònù</strong> — nọ́mbà ìbáṣepọ̀. Ònà èyíkéyìí, bí àpẹẹrẹ, +1 555 000 000.</li><li><strong>Ojú-ìwé ayélujára</strong> — URL kíkún ti ojú-ìwé ayélujára rẹ, tí ó bẹ̀rẹ̀ pẹ̀lú https://.</li><li><strong>Àdírẹ́sì</strong> — àdírẹ́sì ilé-iṣẹ́ gidi (òpópónà, ìlú, kóòdù ìfíwéránṣẹ́).</li><li><strong>Àlàyé ìlànà</strong> — nọ́mbà owó-orí, nọ́mbà ìwé-àṣẹ, tàbí àwọn àlàyé mìíràn tí ilé-iṣẹ́ rẹ nílò.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "Signature layouts - which to choose?",
-      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Signature layout</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">John Smith</p><p class=\"text-mid text-sm\">Web Developer</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">john@example.com</p><p class=\"text-mid\">+1 555 000 000</p></div></div></div>",
-      "html": "<p class=\"text-mid\">The generator offers eight ready-made layouts. Each presents the same information in a different way.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> - classic vertical layout, fits most use cases.</li><li><strong>Top bar</strong> - a horizontal bar separates the signature from the content.</li><li><strong>Labels left</strong> - two columns: labels and values.</li><li><strong>Centered</strong> - formal appearance, content centered.</li><li><strong>Compact</strong> - everything in one line, minimal height.</li><li><strong>Two columns</strong> - details on the left, contact info on the right.</li><li><strong>Minimalist</strong> - only the most important information.</li><li><strong>Bottom bar</strong> - colored bar with contact at the bottom of the signature.</li></ul>"
+      "title": "Àwọn ètò ìbúwòlú — èwo ni kí o yan?",
+      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Ètò ìbúwòlú</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">John Smith</p><p class=\"text-mid text-sm\">Web Developer</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">john@example.com</p><p class=\"text-mid\">+1 555 000 000</p></div></div></div>",
+      "html": "<p class=\"text-mid\">Olùpìlẹ̀ṣẹ̀ náà pèsè ètò mẹ́jọ tí a ti ṣe sílẹ̀. Ọ̀kọ̀ọ̀kan fi àlàyé kan náà hàn ní ọ̀nà tí ó yàtọ̀.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> — ètò inaro ìbílẹ̀, ó bá ọ̀pọ̀lọpọ̀ ìlò mu.</li><li><strong>Top bar</strong> — ìlà pẹ̀tẹ́lẹ̀ ya ìbúwòlú kúrò nínú àkóónú.</li><li><strong>Labels left</strong> — ọ̀wọ́n méjì: àwọn àmì àti àwọn ìyẹ.</li><li><strong>Centered</strong> — ìrísí ìlànà, àkóónú ní àárín.</li><li><strong>Compact</strong> — gbogbo nǹkan ní ìlà kan, gíga tí ó kéréjù.</li><li><strong>Two columns</strong> — àlàyé ní apá òsì, àlàyé ìbáṣepọ̀ ní apá ọ̀tún.</li><li><strong>Minimalist</strong> — àlàyé tí ó ṣe pàtàkì jùlọ péré.</li><li><strong>Bottom bar</strong> — ìlà aláwọ̀ pẹ̀lú ìbáṣepọ̀ ní ìsàlẹ̀ ìbúwòlú.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to add CTA buttons",
-      "html": "<p class=\"text-mid\">A CTA button (call-to-action) is a clickable element that directs the recipient to a chosen page. It can be a link to a meeting calendar, contact form, or offer. The generator allows adding two CTA buttons.</p><h3 class=\"h5 mt-6 mb-3\">Main button</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Open the <strong>Buttons</strong> tab in the editor.</li><li>In the <strong>Main button</strong> section, enter the text the recipient will see, e.g., Schedule a free consultation.</li><li>In the <strong>CTA link</strong> field, paste the full URL. The address must start with https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Secondary button</h3><p class=\"text-mid\">You can add a second CTA button in outline style (transparent background with border). Fill in the fields in the <strong>Secondary button</strong> section the same way as for the main button.</p><h3 class=\"h5 mt-6 mb-3\">Button rounding</h3><p class=\"text-mid\">At the bottom of the Buttons tab you will find the <strong>Button rounding</strong> option. Three variants are available: None (sharp corners), Slight (slightly rounded), or Full (oval button).</p><p class=\"text-mid mt-4\">If you leave both fields empty, the button will not appear in the signature. If you fill in only one field, the button will also not be visible - both text and link are needed.</p>"
+      "title": "Bí o ṣe lè fi àwọn bọ́tìnì CTA kún",
+      "html": "<p class=\"text-mid\">Bọ́tìnì CTA (ìpè-sí-ìṣe) jẹ́ ẹ̀yà tí a lè tẹ tí ó darí olùgbà sí ojú-ìwé tí a yàn. Ó lè jẹ́ ìjápọ̀ sí kàlẹ́ndà ìpàdé, fọ́ọ̀mù ìbáṣepọ̀, tàbí ìpèsè. Olùpìlẹ̀ṣẹ̀ náà jẹ́ kí o fi bọ́tìnì CTA méjì kún.</p><h3 class=\"h5 mt-6 mb-3\">Bọ́tìnì àkọ́kọ́</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Ṣí tab <strong>Buttons</strong> nínú olóòtú.</li><li>Nínú apá <strong>Main button</strong>, tẹ ọ̀rọ̀ tí olùgbà yóò rí, bí àpẹẹrẹ, Ṣètò ìgbìmọ̀ ọ̀fẹ́.</li><li>Nínú aaye <strong>CTA link</strong>, lẹ̀ URL kíkún. Àdírẹ́sì gbọ́dọ̀ bẹ̀rẹ̀ pẹ̀lú https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Bọ́tìnì keji</h3><p class=\"text-mid\">O lè fi bọ́tìnì CTA keji kún ní àpẹẹrẹ outline (ìpilẹ̀ tí ó hàn gbangba pẹ̀lú ààlà). Kún àwọn aaye nínú apá <strong>Secondary button</strong> bákannáà bí bọ́tìnì àkọ́kọ́.</p><h3 class=\"h5 mt-6 mb-3\">Rounding bọ́tìnì</h3><p class=\"text-mid\">Ní ìsàlẹ̀ tab Buttons iwọ yóò rí àṣàyàn <strong>Button rounding</strong>. Ẹ̀yà mẹ́ta wà: None (ìgun tókàn), Slight (yíkà díẹ̀), tàbí Full (bọ́tìnì àlàfo yíkà).</p><p class=\"text-mid mt-4\">Tí o bá fi àwọn aaye méjèèjì sílẹ̀ láìkún, bọ́tìnì kò ní hàn nínú ìbúwòlú. Tí o bá kún aaye kan péré, bọ́tìnì kò ní hàn — ọ̀rọ̀ àti ìjápọ̀ méjèèjì ni a nílò.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to add social media links",
-      "html": "<p class=\"text-mid\">In the <strong>Social Media</strong> tab you can add links to your profiles. The generator supports twelve platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (formerly Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">How to do it</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Open the <strong>Social Media</strong> tab in the editor.</li><li>Next to each platform you will find a URL field. Paste the full link to your profile, e.g., https://www.linkedin.com/in/yourprofile.</li><li>Fill in only the fields you need. Empty fields will not appear in the signature.</li></ol><h3 class=\"h5 mt-6 mb-3\">Social media icons</h3><p class=\"text-mid\">At the bottom of the Social Media tab you will find the <strong>Show icons next to service names</strong> option. When enabled, links will display as colored SVG icons instead of just names.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Icon size</strong> - options: Small (16 px), Medium (20 px), or Large (24 px).</li><li><strong>Icon color</strong> - Platform colors (default colors for each platform), Accent color (uniform accent color), or Text color.</li></ul>"
+      "title": "Bí o ṣe lè fi àwọn ìjápọ̀ àjọlò kún",
+      "html": "<p class=\"text-mid\">Nínú tab <strong>Social Media</strong> o lè fi àwọn ìjápọ̀ sí àwọn profaili rẹ kún. Olùpìlẹ̀ṣẹ̀ náà ṣe àtìlẹ́yìn fún pẹpẹ méjìlá: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (tẹ́lẹ̀ Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram, àti Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Bí o ṣe lè ṣe é</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Ṣí tab <strong>Social Media</strong> nínú olóòtú.</li><li>Légbẹ̀ẹ̀ pẹpẹ kọ̀ọ̀kan iwọ yóò rí aaye URL. Lẹ̀ ìjápọ̀ kíkún sí profaili rẹ, bí àpẹẹrẹ, https://www.linkedin.com/in/profaiilirẹ.</li><li>Kún àwọn aaye tí o nílò péré. Àwọn aaye tí ó ṣófo kò ní hàn nínú ìbúwòlú.</li></ol><h3 class=\"h5 mt-6 mb-3\">Àwọn àmì àjọlò</h3><p class=\"text-mid\">Ní ìsàlẹ̀ tab Social Media iwọ yóò rí àṣàyàn <strong>Fi àwọn àmì hàn légbẹ̀ẹ̀ orúkọ iṣẹ́</strong>. Nígbà tí a bá mú u ṣiṣẹ́, àwọn ìjápọ̀ yóò hàn gẹ́gẹ́ bí àwọn àmì SVG aláwọ̀ dípò orúkọ péré.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Ìwọn àmì</strong> — àṣàyàn: Kéré (16 px), Àárín (20 px), tàbí Nílà (24 px).</li><li><strong>Awọ̀ àmì</strong> — Àwọn awọ̀ pẹpẹ (àwọn awọ̀ ìbílẹ̀ fún pẹpẹ kọ̀ọ̀kan), Awọ̀ ìyàtọ̀ (awọ̀ ìyàtọ̀ kan náà), tàbí Awọ̀ ọ̀rọ̀.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Appearance customization",
-      "html": "<p class=\"text-mid\">In the <strong>Appearance</strong> tab you can customize colors, font, and other visual elements of the signature.</p><h3 class=\"h5 mt-6 mb-3\">Color themes</h3><p class=\"text-mid\">At the top of the tab you will find five ready-made themes: Dark, Blue, Purple, Green, and Gray. Clicking a theme automatically sets the accent color and text color. This is the quickest way to achieve a consistent signature look.</p><h3 class=\"h5 mt-6 mb-3\">Colors</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Accent color</strong> - used in the side/top bar, CTA button, and links. You can choose any color from the palette.</li><li><strong>Text color</strong> - color of all text in the signature (name, contact details, disclaimer).</li><li><strong>Background color</strong> - background color of the entire signature. White by default, but you can change it.</li></ul><h3 class=\"h5 mt-6 mb-3\">Font and size</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Font</strong> - options: Arial, Verdana, Tahoma, Trebuchet MS, and Georgia. All are email-safe and will display correctly for the recipient.</li><li><strong>Text size</strong> - three options: Small (12 px), Standard (14 px), and Larger (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Additional settings</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Signature border</strong> - you can add a border to the signature by selecting any combination of sides (left, right, top, bottom). Selecting all sides automatically sets a full border. The border uses the accent color.</li></ul>"
+      "title": "Ṣíṣàtúnṣe ìrísí",
+      "html": "<p class=\"text-mid\">Nínú tab <strong>Appearance</strong> o lè ṣàtúnṣe àwọn awọ̀, fọ́ọ̀ntì, àti àwọn ẹ̀yà afarawọ mìíràn ti ìbúwòlú.</p><h3 class=\"h5 mt-6 mb-3\">Àwọn tímú awọ̀</h3><p class=\"text-mid\">Ní òkè tab náà iwọ yóò rí tímú márùn-ún tí a ti ṣe sílẹ̀: Dúdú, Búlúù, Aláwọ̀ àlùkò, Aláwọ̀ ewé, àti Awọ̀ ìkùn. Títẹ tímú kan ní aìfọ̀wọ́ ṣètò awọ̀ ìyàtọ̀ àti awọ̀ ọ̀rọ̀. Èyí ni ọ̀nà tí ó yára jùlọ láti ṣàṣeyọrí ìrísí ìbúwòlú tí ó bá ara mu.</p><h3 class=\"h5 mt-6 mb-3\">Àwọn awọ̀</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Awọ̀ ìyàtọ̀</strong> — a ń lò ó nínú ìlà ẹ̀gbẹ́/òkè, bọ́tìnì CTA, àti àwọn ìjápọ̀. O lè yan awọ̀ èyíkéyìí láti inú paleti.</li><li><strong>Awọ̀ ọ̀rọ̀</strong> — awọ̀ gbogbo ọ̀rọ̀ nínú ìbúwòlú (orúkọ, àlàyé ìbáṣepọ̀, àlàyé ofìn).</li><li><strong>Awọ̀ ìpilẹ̀</strong> — awọ̀ ìpilẹ̀ gbogbo ìbúwòlú. Funfun ní ìbílẹ̀, ṣùgbọ́n o lè yí i padà.</li></ul><h3 class=\"h5 mt-6 mb-3\">Fọ́ọ̀ntì àti ìwọn</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Fọ́ọ̀ntì</strong> — àṣàyàn: Arial, Verdana, Tahoma, Trebuchet MS, àti Georgia. Gbogbo wọn jẹ́ aìléwu fún ìmeèlì, wọ́n sì yóò hàn dáadáa fún olùgbà.</li><li><strong>Ìwọn ọ̀rọ̀</strong> — àṣàyàn mẹ́ta: Kéré (12 px), Ìbílẹ̀ (14 px), àti Tóbi sí i (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Àwọn àtúnṣe àfikún</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Ààlà ìbúwòlú</strong> — o lè fi ààlà kún ìbúwòlú nípa yíyàn àkópọ̀ ẹ̀gbẹ́ èyíkéyìí (òsì, ọ̀tún, òkè, ìsàlẹ̀). Yíyàn gbogbo ẹ̀gbẹ́ ní aìfọ̀wọ́ ṣètò ààlà kíkún. Ààlà náà lo awọ̀ ìyàtọ̀.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Text style - colors and sizes of individual elements",
-      "html": "<p class=\"text-mid\">In the <strong>Text Style</strong> tab you can individually customize the color and font size for each text element in the signature.</p><h3 class=\"h5 mt-6 mb-3\">Available elements</h3><p class=\"text-mid\">Only elements that currently have content in the signature are visible. For each element you can set:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Name</strong> - displayed in accent color by default.</li><li><strong>Job title</strong> - role in the company.</li><li><strong>Company</strong> - organization name.</li><li><strong>Contact details</strong> - email, phone, website (labels).</li><li><strong>Social media</strong> - profile links.</li><li><strong>Legal disclaimer</strong> - legal text at the bottom of the signature.</li></ul><h3 class=\"h5 mt-6 mb-3\">How to change color</h3><p class=\"text-mid\">Next to each element you will find a row of color options. Click a color square to select it. You can also add a custom color by clicking the colored square with a plus - choose a color and click Save. Custom colors (up to 8) are shared between all elements.</p><p class=\"text-mid mt-3\">The reset icon button restores the default color of the element.</p><h3 class=\"h5 mt-6 mb-3\">How to change size</h3><p class=\"text-mid\">In the second row you will find a size control with - and + buttons. The value shows the offset relative to the base font size (set in the Appearance tab). Range: from -4 to +4 pixels.</p>"
+      "title": "Àpẹẹrẹ ọ̀rọ̀ — àwọn awọ̀ àti ìwọn ẹ̀yà kọ̀ọ̀kan",
+      "html": "<p class=\"text-mid\">Nínú tab <strong>Text Style</strong> o lè ṣàtúnṣe awọ̀ àti ìwọn fọ́ọ̀ntì fún ẹ̀yà ọ̀rọ̀ kọ̀ọ̀kan nínú ìbúwòlú ní ọ̀kọ̀ọ̀kan.</p><h3 class=\"h5 mt-6 mb-3\">Àwọn ẹ̀yà tí ó wà</h3><p class=\"text-mid\">Àwọn ẹ̀yà tí ó ní àkóónú nínú ìbúwòlú lọ́wọ́lọ́wọ́ péré ni ó hàn. Fún ẹ̀yà kọ̀ọ̀kan o lè ṣètò:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Orúkọ</strong> — ó hàn ní awọ̀ ìyàtọ̀ ní ìbílẹ̀.</li><li><strong>Àkọ̀lé iṣẹ́</strong> — ipò nínú ilé-iṣẹ́.</li><li><strong>Ilé-iṣẹ́</strong> — orúkọ àjọ.</li><li><strong>Àlàyé ìbáṣepọ̀</strong> — ìmeèlì, fóònù, ojú-ìwé ayélujára (àwọn àmì).</li><li><strong>Àjọlò</strong> — àwọn ìjápọ̀ profaili.</li><li><strong>Àlàyé ofìn</strong> — ọ̀rọ̀ ofìn ní ìsàlẹ̀ ìbúwòlú.</li></ul><h3 class=\"h5 mt-6 mb-3\">Bí o ṣe lè yí awọ̀ padà</h3><p class=\"text-mid\">Légbẹ̀ẹ̀ ẹ̀yà kọ̀ọ̀kan iwọ yóò rí ìlà àwọn àṣàyàn awọ̀. Tẹ onígun mẹ́rin awọ̀ láti yan rẹ̀. O tún lè fi awọ̀ aṣàyàn kún nípa títẹ onígun mẹ́rin aláwọ̀ pẹ̀lú àfikún — yan awọ̀ kí o sì tẹ Save. Àwọn awọ̀ aṣàyàn (títí di 8) ni a pín láàárín gbogbo ẹ̀yà.</p><p class=\"text-mid mt-3\">Bọ́tìnì àmì ìtúnṣe da awọ̀ ìbílẹ̀ ti ẹ̀yà padà.</p><h3 class=\"h5 mt-6 mb-3\">Bí o ṣe lè yí ìwọn padà</h3><p class=\"text-mid\">Nínú ìlà keji iwọ yóò rí àkóso ìwọn pẹ̀lú àwọn bọ́tìnì - àti +. Ìyẹ náà fi ìyàtọ̀ hàn ní ìbámu pẹ̀lú ìwọn fọ́ọ̀ntì ìpìlẹ̀ (tí a ṣètò nínú tab Appearance). Ìwọ̀n: láti -4 sí +4 pixels.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Spacing between elements",
-      "html": "<p class=\"text-mid\">In the <strong>Spacing</strong> tab you can precisely control the distances between individual signature elements.</p><h3 class=\"h5 mt-6 mb-3\">Inner signature padding</h3><p class=\"text-mid\">At the top of the tab you will find the inner padding option - the distance between the signature content and its edges. Three values are available: 8 px (small), 16 px (medium), and 24 px (large).</p><h3 class=\"h5 mt-6 mb-3\">Spacing between elements</h3><p class=\"text-mid\">Below the padding you will find controls for individual signature elements. Each control has + and - buttons to increase or decrease the spacing. Only options for elements currently in the signature are visible.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>After name</strong> - spacing below the name line.</li><li><strong>After title / company</strong> - spacing below the title and company name line.</li><li><strong>After additional line</strong> - spacing below the description (if filled in).</li><li><strong>After contact details</strong> - spacing below email, phone, and website.</li><li><strong>After social media</strong> - spacing below profile links.</li><li><strong>After CTA button</strong> - spacing below the button (if enabled).</li><li><strong>Before disclaimer</strong> - spacing above the legal disclaimer text.</li></ul><p class=\"text-mid mt-4\">If you clear a field (e.g., remove the phone number), the corresponding spacing option will automatically disappear from the tab.</p>"
+      "title": "Àlàfo láàárín àwọn ẹ̀yà",
+      "html": "<p class=\"text-mid\">Nínú tab <strong>Spacing</strong> o lè ṣàkóso àwọn àlàfo láàárín àwọn ẹ̀yà ìbúwòlú kọ̀ọ̀kan ní pípé.</p><h3 class=\"h5 mt-6 mb-3\">Ìkún inú ìbúwòlú</h3><p class=\"text-mid\">Ní òkè tab náà iwọ yóò rí àṣàyàn ìkún inú — àlàfo láàárín àkóónú ìbúwòlú àti àwọn ẹ̀gbẹ́ rẹ̀. Ìyẹ mẹ́ta wà: 8 px (kéré), 16 px (àárín), àti 24 px (nílà).</p><h3 class=\"h5 mt-6 mb-3\">Àlàfo láàárín àwọn ẹ̀yà</h3><p class=\"text-mid\">Nísàlẹ̀ ìkún náà iwọ yóò rí àwọn àkóso fún àwọn ẹ̀yà ìbúwòlú kọ̀ọ̀kan. Àkóso kọ̀ọ̀kan ní àwọn bọ́tìnì + àti - láti mú àlàfo pọ̀ sí i tàbí dín kù. Àwọn àṣàyàn fún àwọn ẹ̀yà tí ó wà nínú ìbúwòlú lọ́wọ́lọ́wọ́ péré ni ó hàn.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Lẹ́yìn orúkọ</strong> — àlàfo nísàlẹ̀ ìlà orúkọ.</li><li><strong>Lẹ́yìn àkọ̀lé / ilé-iṣẹ́</strong> — àlàfo nísàlẹ̀ ìlà àkọ̀lé iṣẹ́ àti orúkọ ilé-iṣẹ́.</li><li><strong>Lẹ́yìn ìlà àfikún</strong> — àlàfo nísàlẹ̀ àpèjúwe (tí a bá kún).</li><li><strong>Lẹ́yìn àlàyé ìbáṣepọ̀</strong> — àlàfo nísàlẹ̀ ìmeèlì, fóònù, àti ojú-ìwé ayélujára.</li><li><strong>Lẹ́yìn àjọlò</strong> — àlàfo nísàlẹ̀ àwọn ìjápọ̀ profaili.</li><li><strong>Lẹ́yìn bọ́tìnì CTA</strong> — àlàfo nísàlẹ̀ bọ́tìnì (tí a bá mú ṣiṣẹ́).</li><li><strong>Ṣáájú àlàyé ofìn</strong> — àlàfo lókè ọ̀rọ̀ àlàyé ofìn.</li></ul><p class=\"text-mid mt-4\">Tí o bá pa aaye kan rẹ́ (bí àpẹẹrẹ, yọ nọ́mbà fóònù kúrò), àṣàyàn àlàfo tí ó bá mu yóò pàrẹ́ kúrò nínú tab ní aìfọ̀wọ́.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Legal disclaimer - when to add it",
-      "html": "<p class=\"text-mid\">In the <strong>Disclaimer / Legal</strong> tab you can add legal text that will appear at the bottom of the signature in smaller font.</p><h3 class=\"h5 mt-6 mb-3\">When to add a disclaimer</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Business correspondence</strong> - confidentiality notice and request to delete in case of incorrect delivery.</li><li><strong>Industry requirements</strong> - some industries (e.g., legal, medical, financial) require specific information in every message.</li><li><strong>GDPR</strong> - information about personal data processing, if the company is a data controller.</li></ul><p class=\"text-mid mt-4\">By default, the field is filled with a sample confidentiality text. You can edit, delete, or replace it with your own disclaimer. If you leave the field empty, no disclaimer will appear in the signature.</p><h3 class=\"h5 mt-6 mb-3\">Separator line</h3><p class=\"text-mid\">Below the text field you will find the <strong>Show divider between contact details and disclaimer</strong> option. Enable it to add a horizontal line between contact details and the legal disclaimer.</p><p class=\"text-mid mt-3\">After enabling the line, additional customization options appear:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Line style</strong> - options: solid, dashed, or dotted.</li><li><strong>Line thickness</strong> - three options: 1 px, 2 px, or 3 px.</li><li><strong>Line color</strong> - default gray (#e5e7eb). You can choose any color from the palette or restore the default by clicking the Default button.</li></ul>"
+      "title": "Àlàyé ofìn — nígbà wo ni kí o fi kún",
+      "html": "<p class=\"text-mid\">Nínú tab <strong>Disclaimer / Legal</strong> o lè fi ọ̀rọ̀ ofìn kún tí yóò hàn ní ìsàlẹ̀ ìbúwòlú ní fọ́ọ̀ntì kéré.</p><h3 class=\"h5 mt-6 mb-3\">Nígbà wo ni kí o fi àlàyé ofìn kún</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Ìfọwọ́ránṣẹ́ ìṣòwò</strong> — ìfitonilétí àṣírí àti ìbéèrè láti pa rẹ́ tí a bá fi ránṣẹ́ sí ẹni tí kò tọ́.</li><li><strong>Àwọn ìbéèrè ilé-iṣẹ́</strong> — àwọn ilé-iṣẹ́ kan (bí àpẹẹrẹ, ofìn, ìṣègùn, owó) nílò àlàyé kan pàtó nínú ìfiránṣẹ́ kọ̀ọ̀kan.</li><li><strong>GDPR</strong> — àlàyé nípa ṣíṣe àmúlò data ẹni kọ̀ọ̀kan, tí ilé-iṣẹ́ bá jẹ́ alákóso data.</li></ul><p class=\"text-mid mt-4\">Ní ìbílẹ̀, a ti kún aaye náà pẹ̀lú ọ̀rọ̀ àṣírí àpẹẹrẹ. O lè ṣàtúnṣe, pa rẹ́, tàbí rọ́pò rẹ̀ pẹ̀lú àlàyé ofìn tirẹ. Tí o bá fi aaye náà sílẹ̀ láìkún, kò sí àlàyé ofìn tí yóò hàn nínú ìbúwòlú.</p><h3 class=\"h5 mt-6 mb-3\">Ìlà ìya</h3><p class=\"text-mid\">Nísàlẹ̀ aaye ọ̀rọ̀ iwọ yóò rí àṣàyàn <strong>Fi ìlà ìya hàn láàárín àlàyé ìbáṣepọ̀ àti àlàyé ofìn</strong>. Mú u ṣiṣẹ́ láti fi ìlà pẹ̀tẹ́lẹ̀ kún láàárín àlàyé ìbáṣepọ̀ àti àlàyé ofìn.</p><p class=\"text-mid mt-3\">Lẹ́yìn mímú ìlà ṣiṣẹ́, àwọn àṣàyàn ṣíṣàtúnṣe àfikún yóò hàn:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Àpẹẹrẹ ìlà</strong> — àṣàyàn: solid, dashed, tàbí dotted.</li><li><strong>Nípọn ìlà</strong> — àṣàyàn mẹ́ta: 1 px, 2 px, tàbí 3 px.</li><li><strong>Awọ̀ ìlà</strong> — awọ̀ ìkùn ìbílẹ̀ (#e5e7eb). O lè yan awọ̀ èyíkéyìí láti inú paleti tàbí da ìbílẹ̀ padà nípa títẹ bọ́tìnì Default.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Auto-save and resetting settings",
-      "html": "<p class=\"text-mid\">The generator automatically saves all settings in browser memory (localStorage). After refreshing the page or reopening the tool, data, layout, colors, and all other options will be restored.</p><h3 class=\"h5 mt-6 mb-3\">How does auto-save work?</h3><p class=\"text-mid\">Every change (text, color, layout, spacing) is immediately saved in browser memory. Saving happens automatically in the background - without clicking any buttons.</p><h3 class=\"h5 mt-6 mb-3\">How to reset settings</h3><p class=\"text-mid\">Below the signature preview you will find a <strong>Reset appearance</strong> button. After clicking, a confirmation dialog will appear. Confirming the reset will restore all data and settings to default values. This operation cannot be undone.</p><h3 class=\"h5 mt-6 mb-3\">Export and import configuration</h3><p class=\"text-mid\">Below the signature preview you will find two additional buttons: <strong>Export settings</strong> and <strong>Import settings</strong>. Export saves all data, colors, layout, spacing, and text styles to a JSON file. Import loads a previously saved configuration from a file.</p><p class=\"text-mid mt-3\">This feature is especially useful when you want to transfer the signature configuration between computers, share settings with colleagues, or keep a backup of your settings before a reset.</p>"
+      "title": "Fífipamọ́ aìfọ̀wọ́ àti dídá àtúnṣe padà",
+      "html": "<p class=\"text-mid\">Olùpìlẹ̀ṣẹ̀ náà fi gbogbo àtúnṣe pamọ́ ní aìfọ̀wọ́ nínú ìrántí browser (localStorage). Lẹ́yìn títún ojú-ìwé ṣe tàbí ṣíṣí irìnṣé padà, data, ètò, àwọn awọ̀, àti gbogbo àṣàyàn mìíràn yóò dà padà.</p><h3 class=\"h5 mt-6 mb-3\">Báwo ni fífipamọ́ aìfọ̀wọ́ ṣe ń ṣiṣẹ́?</h3><p class=\"text-mid\">Ìyípadà kọ̀ọ̀kan (ọ̀rọ̀, awọ̀, ètò, àlàfo) ni a fi pamọ́ lẹ́sẹ̀kẹsẹ̀ nínú ìrántí browser. Fífipamọ́ wáyé ní aìfọ̀wọ́ ní ìpamọ́ — láìsí títẹ bọ́tìnì kankan.</p><h3 class=\"h5 mt-6 mb-3\">Bí o ṣe lè dá àtúnṣe padà</h3><p class=\"text-mid\">Nísàlẹ̀ ìwòràn ìbúwòlú iwọ yóò rí bọ́tìnì <strong>Reset appearance</strong>. Lẹ́yìn títẹ, ìjíròrò ìfìdímúlẹ̀ yóò hàn. Fífìdí ìtúnṣe múlẹ̀ yóò da gbogbo data àti àtúnṣe padà sí àwọn ìyẹ ìbílẹ̀. Ìṣe yìí kò ṣe é dá padà.</p><h3 class=\"h5 mt-6 mb-3\">Kí o mú àtò jáde kí o sì gba</h3><p class=\"text-mid\">Nísàlẹ̀ ìwòràn ìbúwòlú iwọ yóò rí bọ́tìnì méjì àfikún: <strong>Export settings</strong> àti <strong>Import settings</strong>. Export fi gbogbo data, àwọn awọ̀, ètò, àlàfo, àti àwọn àpẹẹrẹ ọ̀rọ̀ pamọ́ sí fáìlì JSON. Import gba àtò tí a ti fi pamọ́ tẹ́lẹ̀ láti fáìlì.</p><p class=\"text-mid mt-3\">Èṣò yìí wúlò pàápàá nígbà tí o fẹ́ gbe àtò ìbúwòlú lọ láàárín àwọn kọ̀mpútà, pín àtúnṣe pẹ̀lú àwọn ẹlẹgbẹ́, tàbí pa àfipamọ́ àtúnṣe rẹ mọ́ ṣáájú ìtúnṣe.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "How to copy the signature to Gmail or Outlook",
-      "description": "When the signature is ready, it only takes a few steps to add it to your email client:",
+      "title": "Bí o ṣe lè daakọ ìbúwòlú sí Gmail tàbí Outlook",
+      "description": "Nígbà tí ìbúwòlú bá ti ṣetán, ìgbésẹ̀ díẹ̀ péré ni ó nílò láti fi kún ẹ̀rọ̀ ìmeèlì rẹ:",
       "grid": "three",
       "items": [
-        { "icon": "RiClipboardLine", "title": "1. Copy the code", "description": "The Copy signature (Gmail / Outlook) button copies the signature to clipboard as formatted HTML, ready to paste." },
-        { "icon": "RiSettings3Line", "title": "2. Open signature settings", "description": "In Gmail: Settings → See all settings → Signature. In Outlook: File → Options → Mail → Signatures." },
+        {
+          "icon": "RiClipboardLine",
+          "title": "1. Daakọ kóòdù náà",
+          "description": "Bọ́tìnì Copy signature (Gmail / Outlook) daakọ ìbúwòlú sí clipboard gẹ́gẹ́ bí HTML tí a ti ṣètò, tí ó ṣetán láti lẹ̀."
+        },
+        { "icon": "RiSettings3Line", "title": "2. Ṣí àtúnṣe ìbúwòlú", "description": "Nínú Gmail: Settings → See all settings → Signature. Nínú Outlook: File → Options → Mail → Signatures." },
         {
           "icon": "RiSaveLine",
-          "title": "3. Paste and save",
-          "description": "In the signature field, use Ctrl+V (Windows) or Cmd+V (Mac). The signature will appear with all colors and formatting. Save changes."
+          "title": "3. Lẹ̀ kí o sì fipamọ́",
+          "description": "Nínú aaye ìbúwòlú, lo Ctrl+V (Windows) tàbí Cmd+V (Mac). Ìbúwòlú yóò hàn pẹ̀lú gbogbo àwọn awọ̀ àti ètò. Fipamọ́ àwọn ìyípadà."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Signature preview and export options",
-      "html": "<p class=\"text-mid\">The preview panel displays on the right side of the editor and automatically updates with every change. The preview is sticky, so it remains visible even while scrolling through editing options.</p><h3 class=\"h5 mt-6 mb-3\">Switching preview background</h3><p class=\"text-mid\">Above the preview you will find three background change buttons: <strong>Light</strong> (default gray background), <strong>Dark</strong> (dark background, useful for checking readability on dark backgrounds), and <strong>Checkerboard</strong> (checkerboard pattern, lets you see transparency and signature edges).</p><h3 class=\"h5 mt-6 mb-3\">Action buttons</h3><p class=\"text-mid\">Below the preview you will find several buttons:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Copy signature (Gmail / Outlook)</strong> - copies the signature to clipboard as formatted HTML. Paste it directly in signature settings.</li><li><strong>Copy HTML code</strong> - copies the raw HTML code of the signature to clipboard. Useful when you want to paste code in an HTML editor or CMS.</li><li><strong>Download as HTML</strong> - saves the signature code as an .html file to disk. Useful for archiving or sharing with a developer.</li><li><strong>View HTML code</strong> - opens a modal with the full HTML source code of the signature. You can review the code and copy it directly from the modal.</li><li><strong>Export settings</strong> - saves the full signature configuration (data, colors, layout, spacing, styles) to a JSON file.</li><li><strong>Import settings</strong> - loads a configuration from a JSON file. All settings will be automatically applied.</li><li><strong>Reset appearance</strong> - restores all data and settings to default values (after confirmation).</li></ul>"
+      "title": "Ìwòràn ìbúwòlú àti àwọn àṣàyàn ìmújáde",
+      "html": "<p class=\"text-mid\">Pánẹ́ẹ̀lì ìwòràn hàn ní apá ọ̀tún olóòtú, ó sì ń ṣe àtúnṣe ní aìfọ̀wọ́ pẹ̀lú ìyípadà kọ̀ọ̀kan. Ìwòràn náà jẹ́ sticky, nítorí náà ó wà ní hàn bí ó tilẹ̀ jẹ́ pé o ń yí àwọn àṣàyàn ṣíṣàtúnṣe wò.</p><h3 class=\"h5 mt-6 mb-3\">Yíyí ìpilẹ̀ ìwòràn padà</h3><p class=\"text-mid\">Lókè ìwòràn iwọ yóò rí bọ́tìnì yíyí ìpilẹ̀ padà mẹ́ta: <strong>Light</strong> (ìpilẹ̀ awọ̀ ìkùn ìbílẹ̀), <strong>Dark</strong> (ìpilẹ̀ dúdú, wúlò fún ṣíṣàyẹ̀wò àgbèkà lórí àwọn ìpilẹ̀ dúdú), àti <strong>Checkerboard</strong> (àpẹẹrẹ àtèlé, jẹ́ kí o rí ìhàn-gbangba àti àwọn ẹ̀gbẹ́ ìbúwòlú).</p><h3 class=\"h5 mt-6 mb-3\">Àwọn bọ́tìnì ìṣe</h3><p class=\"text-mid\">Nísàlẹ̀ ìwòràn iwọ yóò rí àwọn bọ́tìnì púpọ̀:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Copy signature (Gmail / Outlook)</strong> — daakọ ìbúwòlú sí clipboard gẹ́gẹ́ bí HTML tí a ti ṣètò. Lẹ̀ é tààrà nínú àtúnṣe ìbúwòlú.</li><li><strong>Copy HTML code</strong> — daakọ kóòdù HTML àtẹ̀jísẹ́ ti ìbúwòlú sí clipboard. Wúlò nígbà tí o fẹ́ lẹ̀ kóòdù nínú olóòtú HTML tàbí CMS.</li><li><strong>Download as HTML</strong> — fi kóòdù ìbúwòlú pamọ́ gẹ́gẹ́ bí fáìlì .html sí disk. Wúlò fún ìfipamọ́ tàbí pípín pẹ̀lú olùmúgbékalẹ̀.</li><li><strong>View HTML code</strong> — ṣí modal pẹ̀lú kóòdù orísun HTML kíkún ti ìbúwòlú. O lè ṣàyẹ̀wò kóòdù kí o sì daakọ rẹ̀ tààrà láti inú modal.</li><li><strong>Export settings</strong> — fi àtò ìbúwòlú kíkún pamọ́ (data, àwọn awọ̀, ètò, àlàfo, àwọn àpẹẹrẹ) sí fáìlì JSON.</li><li><strong>Import settings</strong> — gba àtò láti fáìlì JSON. Gbogbo àtúnṣe yóò jẹ́ àmúlò ní aìfọ̀wọ́.</li><li><strong>Reset appearance</strong> — da gbogbo data àti àtúnṣe padà sí àwọn ìyẹ ìbílẹ̀ (lẹ́yìn ìfìdímúlẹ̀).</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Who is the email signature creator for?",
-      "description": "The email signature tool is useful for anyone who sends business emails:",
+      "title": "Ta ni olùṣẹ̀dá ìbúwòlú ìmeèlì wà fún?",
+      "description": "Irìnṣé ìbúwòlú ìmeèlì wúlò fún ẹnikẹ́ni tí ó ń fi ìmeèlì ìṣòwò ránṣẹ́:",
       "grid": "two",
       "items": [
-        { "icon": "RiBriefcaseLine", "title": "Entrepreneurs and freelancers", "description": "A professional signature in every message without hiring a designer." },
-        { "icon": "RiTeamLine", "title": "Company teams", "description": "Each employee creates their own signature in the same style. Consistent identity across the entire company." },
-        { "icon": "RiHandCoinLine", "title": "Sales representatives", "description": "A CTA button with a link to a calendar or offer increases the chances of booking a meeting." },
-        { "icon": "RiScales3Line", "title": "Lawyers, accountants, doctors", "description": "Ability to add a legal disclaimer, license number, tax ID, or other details required in the industry." }
+        { "icon": "RiBriefcaseLine", "title": "Àwọn oníṣòwò àti alámùṣiṣẹ́-fúnrarẹ̀", "description": "Ìbúwòlú alámòòdájú nínú ìfiránṣẹ́ kọ̀ọ̀kan láìsí gbígba olùṣe àpẹẹrẹ." },
+        { "icon": "RiTeamLine", "title": "Àwọn ẹgbẹ́ ilé-iṣẹ́", "description": "Oṣiṣẹ́ kọ̀ọ̀kan ṣẹ̀dá ìbúwòlú tirẹ̀ ní àpẹẹrẹ kan náà. Ìdánimọ̀ tí ó bá ara mu kárí gbogbo ilé-iṣẹ́." },
+        { "icon": "RiHandCoinLine", "title": "Àwọn aṣojú títa", "description": "Bọ́tìnì CTA pẹ̀lú ìjápọ̀ sí kàlẹ́ndà tàbí ìpèsè mú àǹfààní ṣíṣètò ìpàdé pọ̀ sí i." },
+        { "icon": "RiScales3Line", "title": "Àwọn agbẹjọ́rò, aṣirò owó, dókítà", "description": "Agbára láti fi àlàyé ofìn, nọ́mbà ìwé-àṣẹ, nọ́mbà owó-orí, tàbí àwọn àlàyé mìíràn tí ilé-iṣẹ́ nílò kún." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "What makes this HTML email signature generator special?",
+      "title": "Kí ni tí ó mú olùpìlẹ̀ṣẹ̀ ìbúwòlú ìmeèlì HTML yìí yàtọ̀?",
       "grid": "three",
       "items": [
-        { "icon": "RiInfinityLine", "title": "Eight signature layouts", "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist, and bottom bar." },
-        { "icon": "RiUserLine", "title": "Auto-save in browser", "description": "Every change is automatically saved in browser memory. After refreshing the page, the signature remains available." },
-        { "icon": "RiTranslate2", "title": "Export and import configuration", "description": "The full signature configuration can be exported as a JSON file and shared with colleagues." },
+        { "icon": "RiInfinityLine", "title": "Ètò ìbúwòlú mẹ́jọ", "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist, àti bottom bar." },
+        { "icon": "RiUserLine", "title": "Fífipamọ́ aìfọ̀wọ́ nínú browser", "description": "A fi ìyípadà kọ̀ọ̀kan pamọ́ ní aìfọ̀wọ́ nínú ìrántí browser. Lẹ́yìn títún ojú-ìwé ṣe, ìbúwòlú ṣì wà." },
+        { "icon": "RiTranslate2", "title": "Kí o mú àtò jáde kí o sì gba", "description": "A lè mú àtò ìbúwòlú kíkún jáde gẹ́gẹ́ bí fáìlì JSON kí a sì pín pẹ̀lú àwọn ẹlẹgbẹ́." },
         {
           "icon": "RiAppsLine",
-          "title": "12 social media platforms",
-          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest."
+          "title": "Pẹpẹ àjọlò 12",
+          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, àti Pinterest."
         },
-        { "icon": "RiPaletteLine", "title": "Advanced customization", "description": "Avatar shape and size, line styling, individual text colors and sizes." },
-        { "icon": "RiFileCodeLine", "title": "Multiple export options", "description": "Copy HTML, download file, source code preview, JSON configuration export/import." },
-        { "icon": "RiShieldCheckLine", "title": "Privacy", "description": "Data is not sent to a server. The generator works entirely in the browser." },
-        { "icon": "RiMailCheckLine", "title": "Compatibility", "description": "Generated HTML code works in Gmail, Outlook, Apple Mail, and Thunderbird." },
-        { "icon": "RiEyeLine", "title": "Live preview", "description": "Every change is instantly visible on light, dark, or checkerboard background." }
+        { "icon": "RiPaletteLine", "title": "Ṣíṣàtúnṣe tí ó jìnlẹ̀", "description": "Ìrisi àti ìwọn avatar, àpẹẹrẹ ìlà, àwọn awọ̀ àti ìwọn ọ̀rọ̀ kọ̀ọ̀kan." },
+        { "icon": "RiFileCodeLine", "title": "Àṣàyàn ìmújáde lọ́pọ̀lọpọ̀", "description": "Daakọ HTML, gbà fáìlì sílẹ̀, ìwòràn kóòdù orísun, ìmújáde/ìgbàwọlé àtò JSON." },
+        { "icon": "RiShieldCheckLine", "title": "Àṣírí", "description": "A kò fi data ránṣẹ́ sí server. Olùpìlẹ̀ṣẹ̀ náà ṣiṣẹ́ pátápátá nínú browser." },
+        { "icon": "RiMailCheckLine", "title": "Ìbarámú", "description": "Kóòdù HTML tí a ṣẹ̀dá ṣiṣẹ́ nínú Gmail, Outlook, Apple Mail, àti Thunderbird." },
+        { "icon": "RiEyeLine", "title": "Ìwòràn láàyè", "description": "Ìyípadà kọ̀ọ̀kan hàn lẹ́sẹ̀kẹsẹ̀ lórí ìpilẹ̀ fẹ́ẹ́rẹ́fẹ́ẹ́, dúdú, tàbí àtèlé." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the email signature generator",
+      "title": "Àwọn ìbéèrè tí a máa ń béèrè nípa olùpìlẹ̀ṣẹ̀ ìbúwòlú ìmeèlì",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Does the signature work in Gmail, Outlook, and Apple Mail?",
-          "answer": "Yes. Signatures generated by the generator use HTML tables that display correctly in all popular email clients: Gmail, Outlook (desktop and web), Apple Mail, Thunderbird. The layout adapts to different devices, including smartphones."
+          "question": "Ṣé ìbúwòlú náà ṣiṣẹ́ nínú Gmail, Outlook, àti Apple Mail?",
+          "answer": "Bẹ́ẹ̀ ni. Àwọn ìbúwòlú tí olùpìlẹ̀ṣẹ̀ ṣẹ̀dá lo àwọn tábìlì HTML tí ó hàn dáadáa nínú gbogbo àwọn ẹ̀rọ̀ ìmeèlì tí ó gbajúmọ̀: Gmail, Outlook (desktop àti ayélujára), Apple Mail, Thunderbird. Ètò náà bá àwọn ẹ̀rọ̀ oríṣìríṣì mu, pẹ̀lú àwọn fóònù alágbèéká."
         },
         {
-          "question": "Can I add a company logo?",
-          "answer": "Yes. In the Details tab, paste the URL of an image (logo or profile photo). The image should be square (min. 120×120 px) and publicly accessible online. After pasting the URL, options for shape (round, rounded, square) and size (40, 56, or 72 px) will appear."
+          "question": "Ṣé mo lè fi àmì ìdánìmọ̀ ilé-iṣẹ́ kún?",
+          "answer": "Bẹ́ẹ̀ ni. Nínú tab Details, lẹ̀ URL àwòrán (àmì ìdánìmọ̀ tàbí àwòrán profaili). Àwòrán yẹ kí ó jẹ́ onígun mẹ́rin dọ́gba (kéréjù 120×120 px) kí ó sì wà ní gbangba lórí ayélujára. Lẹ́yìn lílẹ̀ URL, àwọn àṣàyàn fún ìrisi (yíkà, yíkà díẹ̀, onígun mẹ́rin) àti ìwọn (40, 56, tàbí 72 px) yóò hàn."
         },
         {
-          "question": "How do I copy the signature to an email client?",
-          "answer": "The Copy signature (Gmail / Outlook) button below the preview copies the signature to clipboard as formatted HTML. In Gmail or Outlook signature settings, just use Ctrl+V (Windows) or Cmd+V (Mac)."
+          "question": "Báwo ni mo ṣe lè daakọ ìbúwòlú sí ẹ̀rọ̀ ìmeèlì?",
+          "answer": "Bọ́tìnì Copy signature (Gmail / Outlook) nísàlẹ̀ ìwòràn daakọ ìbúwòlú sí clipboard gẹ́gẹ́ bí HTML tí a ti ṣètò. Nínú àtúnṣe ìbúwòlú Gmail tàbí Outlook, lo Ctrl+V (Windows) tàbí Cmd+V (Mac) péré."
         },
         {
-          "question": "Can I use the generator to create signatures for an entire team?",
-          "answer": "Yes. The generator does not require login or registration. Each person on the team can open the tool, fill in their details, and copy the ready signature. To maintain visual consistency, agree on shared settings: the same layout, color theme, and font. You can also export the configuration as a JSON file and share it with colleagues - they just need to import the file and change only their personal details."
+          "question": "Ṣé mo lè lo olùpìlẹ̀ṣẹ̀ náà láti ṣẹ̀dá àwọn ìbúwòlú fún gbogbo ẹgbẹ́?",
+          "answer": "Bẹ́ẹ̀ ni. Olùpìlẹ̀ṣẹ̀ náà kò nílò ìwolé tàbí ìforukọ̀sílẹ̀. Ẹni kọ̀ọ̀kan lórí ẹgbẹ́ lè ṣí irìnṣé, kún àwọn àlàyé tirẹ̀, kí ó sì daakọ ìbúwòlú tí ó ti ṣetán. Láti pa ìrísí tí ó bá ara mu mọ́, fi ẹnu kò àwọn àtúnṣe tí a pín: ètò kan náà, tímú awọ̀, àti fọ́ọ̀ntì. O tún lè mú àtò jáde gẹ́gẹ́ bí fáìlì JSON kí o sì pín pẹ̀lú àwọn ẹlẹgbẹ́ — wọ́n nílò láti gba fáìlì wọlé kí wọ́n sì yí àwọn àlàyé ẹni kọ̀ọ̀kan padà péré."
         },
         {
-          "question": "Can I add custom social media icons?",
-          "answer": "The generator offers built-in SVG icons for twelve platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest. Enable the Show icons option in the Social Media tab. You can choose icon size and color (platform colors, accent color, or text color)."
+          "question": "Ṣé mo lè fi àwọn àmì àjọlò aṣàyàn kún?",
+          "answer": "Olùpìlẹ̀ṣẹ̀ náà pèsè àwọn àmì SVG tí a ti kọ́ sínú fún pẹpẹ méjìlá: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, àti Pinterest. Mú àṣàyàn Show icons ṣiṣẹ́ nínú tab Social Media. O lè yan ìwọn àmì àti awọ̀ (àwọn awọ̀ pẹpẹ, awọ̀ ìyàtọ̀, tàbí awọ̀ ọ̀rọ̀)."
         },
-        { "question": "The copy button is inactive - why?", "answer": "To copy the signature, fill in at least two fields: name and email address. Check that both fields are filled in." },
+        { "question": "Bọ́tìnì daakọ kò ṣiṣẹ́ — kí nìdí?", "answer": "Láti daakọ ìbúwòlú, kún ó kéréjù aaye méjì: orúkọ àti àdírẹ́sì ìmeèlì. Ṣàyẹ̀wò pé a ti kún àwọn aaye méjèèjì." },
         {
-          "question": "Avatar or logo is not displaying - what to do?",
-          "answer": "The image must be publicly accessible online. The URL should point directly to an image file (ending in .jpg, .png, or .webp). Images from Google Drive or Dropbox require a special sharing link."
-        },
-        {
-          "question": "The signature looks different for the recipient - why?",
-          "answer": "Different email clients (Gmail, Outlook, Apple Mail) may slightly differ in how they render HTML. The generator uses safe styles that work in most programs. If you see major differences, make sure you are pasting the signature using Ctrl+V, not Paste as plain text."
+          "question": "Avatar tàbí àmì ìdánìmọ̀ kò hàn — kí ni kí n ṣe?",
+          "answer": "Àwòrán gbọ́dọ̀ wà ní gbangba lórí ayélujára. URL yẹ kí ó tọ́ka tààrà sí fáìlì àwòrán (tí ó parí ní .jpg, .png, tàbí .webp). Àwọn àwòrán láti Google Drive tàbí Dropbox nílò ìjápọ̀ pípín pàtàkì."
         },
         {
-          "question": "CTA button is not appearing - what to do?",
-          "answer": "The button requires both fields: text and link. Check that in the Buttons tab both fields are filled in and the URL starts with https://."
+          "question": "Ìbúwòlú hàn yàtọ̀ fún olùgbà — kí nìdí?",
+          "answer": "Àwọn ẹ̀rọ̀ ìmeèlì oríṣìríṣì (Gmail, Outlook, Apple Mail) lè yàtọ̀ díẹ̀ nínú bí wọ́n ṣe ń fi HTML hàn. Olùpìlẹ̀ṣẹ̀ náà lo àwọn àpẹẹrẹ aìléwu tí ó ṣiṣẹ́ nínú ọ̀pọ̀lọpọ̀ ètò. Tí o bá rí ìyàtọ̀ nílà, rí i dájú pé o ń lẹ̀ ìbúwòlú pẹ̀lú Ctrl+V, kìí ṣe Lẹ̀ gẹ́gẹ́ bí ọ̀rọ̀ lásán."
         },
         {
-          "question": "How to export or import signature settings?",
-          "answer": "Below the signature preview you will find Export settings and Import settings buttons. Export saves the full configuration (data, colors, layout, spacing, text styles) to a JSON file. Import loads the configuration from a file and automatically applies all settings."
+          "question": "Bọ́tìnì CTA kò hàn — kí ni kí n ṣe?",
+          "answer": "Bọ́tìnì nílò àwọn aaye méjèèjì: ọ̀rọ̀ àti ìjápọ̀. Ṣàyẹ̀wò pé nínú tab Buttons a ti kún àwọn aaye méjèèjì àti pé URL bẹ̀rẹ̀ pẹ̀lú https://."
         },
         {
-          "question": "How to view the source code of the generated signature?",
-          "answer": "The View HTML code button below the signature preview opens a modal with the full HTML source code. You can review and copy the code directly from the modal. Alternatively, the Copy HTML code button copies the raw code to clipboard, and Download as HTML saves it as a file."
+          "question": "Bí o ṣe lè mú àtúnṣe ìbúwòlú jáde tàbí gba wọlé?",
+          "answer": "Nísàlẹ̀ ìwòràn ìbúwòlú iwọ yóò rí àwọn bọ́tìnì Export settings àti Import settings. Export fi àtò kíkún pamọ́ (data, àwọn awọ̀, ètò, àlàfo, àwọn àpẹẹrẹ ọ̀rọ̀) sí fáìlì JSON. Import gba àtò láti fáìlì, ó sì ṣe àmúlò gbogbo àtúnṣe ní aìfọ̀wọ́."
         },
         {
-          "question": "Can I change the avatar shape and size?",
-          "answer": "Yes. After pasting the image URL in the Data tab, additional options appear: Avatar shape (round, rounded, square) and Avatar size (small - 40 px, medium - 56 px, large - 72 px). Settings are applied in all signature layouts."
+          "question": "Bí o ṣe lè wo kóòdù orísun ti ìbúwòlú tí a ṣẹ̀dá?",
+          "answer": "Bọ́tìnì View HTML code nísàlẹ̀ ìwòràn ìbúwòlú ṣí modal pẹ̀lú kóòdù orísun HTML kíkún. O lè ṣàyẹ̀wò kí o sì daakọ kóòdù tààrà láti inú modal. Tàbí bọ́tìnì Copy HTML code daakọ kóòdù àtẹ̀jísẹ́ sí clipboard, Download as HTML sì fi í pamọ́ gẹ́gẹ́ bí fáìlì."
         },
         {
-          "question": "How to change the separator line style?",
-          "answer": "In the Disclaimer / Legal tab, enable the Show separator line option. Additional options will appear: line style (solid, dashed, dotted), thickness (1–3 px), and color (default gray or any color chosen from the palette)."
+          "question": "Ṣé mo lè yí ìrisi àti ìwọn avatar padà?",
+          "answer": "Bẹ́ẹ̀ ni. Lẹ́yìn lílẹ̀ URL àwòrán nínú tab Data, àwọn àṣàyàn àfikún yóò hàn: Ìrisi avatar (yíkà, yíkà díẹ̀, onígun mẹ́rin) àti Ìwọn avatar (kéré — 40 px, àárín — 56 px, nílà — 72 px). A ṣe àmúlò àtúnṣe nínú gbogbo àwọn ètò ìbúwòlú."
+        },
+        {
+          "question": "Bí o ṣe lè yí àpẹẹrẹ ìlà ìya padà?",
+          "answer": "Nínú tab Disclaimer / Legal, mú àṣàyàn Show separator line ṣiṣẹ́. Àwọn àṣàyàn àfikún yóò hàn: àpẹẹrẹ ìlà (solid, dashed, dotted), nípọn (1–3 px), àti awọ̀ (awọ̀ ìkùn ìbílẹ̀ tàbí awọ̀ èyíkéyìí tí a yàn láti inú paleti)."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
+    { "type": "toolsCarousel", "title": "Ṣàwárí àwọn irìnṣé mìíràn" },
     { "type": "gap", "size": "sm" }
   ]
 }

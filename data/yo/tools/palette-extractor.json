@@ -2,44 +2,44 @@
   "toolKey": "paletteExtractor",
   "locale": "yo",
   "metadata": {
-    "title": "Free Image Color Extractor – Palette From Any Photo",
-    "description": "Upload a photo or logo and extract up to 12 dominant colors with HEX and RGB codes. Perfect for UI, branding and social media. No signup, no limits.",
+    "title": "Olùyọ Awọ̀ Láti Àwòrán Òfẹ́ẹ́ – Paleti Láti Fọ́tò Èyíkéyìí",
+    "description": "Gbé fọ́tò tàbí àmì ìdánìmọ̀ sókè kí o sì yọ títí dé awọ̀ alákóso 12 pẹ̀lú kóòdù HEX àti RGB. Pípé fún UI, àmì àti àjọlò. Láìsí ìforukọ̀sílẹ̀, láìsí ìdíwọ̀n.",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/yo/awon-irinse/iseduro-awoo-lati-aworan"
   },
   "hero": {
-    "title": "Image Color Extractor – Get a Palette From Any Photo",
-    "description": "Upload a photo, logo, or graphic, and the tool will extract up to 12 dominant colors with HEX and RGB codes. Analysis happens locally in your browser.",
+    "title": "Olùyọ Awọ̀ Àwòrán – Gba Paleti Láti Fọ́tò Èyíkéyìí",
+    "description": "Gbé fọ́tò, àmì ìdánìmọ̀, tàbí àwòrán sókè, irìnṣé náà yóò yọ títí dé awọ̀ alákóso 12 pẹ̀lú kóòdù HEX àti RGB. Àtúpalẹ̀ wáyé ní àdáni nínú browser rẹ.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/yo/awon-irinse", "label": "Tools" },
-    "third": { "href": "/yo/awon-irinse/iseduro-awoo-lati-aworan", "label": "Image color extractor" }
+    "second": { "href": "/yo/awon-irinse", "label": "Àwọn Irìnṣé" },
+    "third": { "href": "/yo/awon-irinse/iseduro-awoo-lati-aworan", "label": "Olùyọ awọ̀ àwòrán" }
   },
   "schemas": {
     "software": {
-      "name": "Image color extractor online - free palette generator",
-      "alternateName": ["Extract color palette from a photo or logo"],
+      "name": "Olùyọ awọ̀ àwòrán — olùpìlẹ̀ṣẹ̀ paleti òfẹ́ẹ́",
+      "alternateName": ["Yọ paleti awọ̀ láti fọ́tò tàbí àmì ìdánìmọ̀"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
-      "description": "Free online image color extractor. Upload a photo, logo, or graphic and get a palette of up to 12 dominant colors with HEX and RGB codes. Processing happens in the browser - files are not sent to a server.",
+      "description": "Olùyọ awọ̀ àwòrán òfẹ́ẹ́. Gbé fọ́tò, àmì ìdánìmọ̀, tàbí àwòrán sókè kí o sì gba paleti títí dé awọ̀ alákóso 12 pẹ̀lú kóòdù HEX àti RGB. Ìṣèlẹ̀ wáyé nínú browser — a kò fi àwọn fáìlì ránṣẹ́ sí server.",
       "featureList": [
-        "Automatic extraction of up to 12 dominant colors",
-        "Analysis of photos, logos, and vector graphics",
-        "Color codes in HEX and RGB format",
-        "Copy color code to clipboard",
-        "Support for PNG, JPG, and SVG files",
-        "Ignores transparent pixels in PNG files",
-        "Local processing in the browser - image is not sent to a server"
+        "Yíyọ awọ̀ alákóso títí dé 12 ní aìfọ̀wọ́",
+        "Àtúpalẹ̀ àwọn fọ́tò, àwọn àmì ìdánìmọ̀, àti àwọn àwòrán vector",
+        "Kóòdù awọ̀ ní ònà HEX àti RGB",
+        "Daakọ kóòdù awọ̀ sí clipboard",
+        "Àtìlẹ́yìn fún àwọn fáìlì PNG, JPG, àti SVG",
+        "Fòyinmò àwọn pixel aláìrí nínú àwọn fáìlì PNG",
+        "Ìṣèlẹ̀ àdáni nínú browser — a kò fi àwòrán ránṣẹ́ sí server"
       ]
     },
     "howTo": {
-      "name": "How to extract colors from a photo or image",
-      "description": "How to extract dominant colors from a photo or logo. Upload an image in PNG, JPG, or SVG format, and the tool will generate a palette of up to 12 colors with HEX codes.",
+      "name": "Bí o ṣe lè yọ àwọn awọ̀ láti fọ́tò tàbí àwòrán",
+      "description": "Bí o ṣe lè yọ àwọn awọ̀ alákóso láti fọ́tò tàbí àmì ìdánìmọ̀. Gbé àwòrán sókè ní ònà PNG, JPG, tàbí SVG, irìnṣé náà yóò ṣẹ̀dá paleti títí dé awọ̀ 12 pẹ̀lú kóòdù HEX.",
       "steps": [
-        { "name": "Upload an image", "text": "Drag a file onto the designated area or select an image from your device. Supported formats are PNG, JPG, and SVG." },
-        { "name": "Wait for analysis", "text": "The tool will automatically analyze the image and extract dominant colors." },
-        { "name": "Copy colors", "text": "Next to each color you will find a copy button - the HEX code is copied to your system clipboard." }
+        { "name": "Gbé àwòrán sókè", "text": "Fa fáìlì sí agbègbè tí a yàn sọ́tọ̀ tàbí yan àwòrán láti ẹ̀rọ̀ rẹ. Àwọn ònà tí a ṣe àtìlẹ́yìn fún: PNG, JPG, àti SVG." },
+        { "name": "Duro fún àtúpalẹ̀", "text": "Irìnṣé náà yóò ṣe àtúpalẹ̀ àwòrán ní aìfọ̀wọ́ yóò sì yọ àwọn awọ̀ alákóso." },
+        { "name": "Daakọ àwọn awọ̀", "text": "Lẹ́gbẹ̀ẹ̀ awọ̀ kọ̀ọ̀kan iwọ yóò rí bọ́tìnì dídaàkọ — a daakọ kóòdù HEX sí clipboard ẹ̀rọ̀ rẹ." }
       ]
     }
   },
@@ -47,209 +47,209 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Why extract colors from an image?",
-      "html": "<p class=\"mb-4\">Every photo, logo, or graphic contains colors that can serve as a ready-made color palette. The extractor analyzes the image and shows which colors dominate - along with HEX codes and RGB values ready to paste into your project.</p><p class=\"mb-4\">In practice, this means that instead of manually sampling colors in a graphics application (pixel by pixel), you upload one image and get an organized list of up to 12 colors. This is useful when selecting colors for a website, creating consistent social media graphics, or building a visual identity from existing material.</p><p>All analysis happens locally in the browser - the image is not sent to any server.</p>"
+      "title": "Kí nìdí tí o fi yẹ kí a yọ awọ̀ láti àwòrán?",
+      "html": "<p class=\"mb-4\">Fọ́tò, àmì ìdánìmọ̀, tàbí àwòrán kọ̀ọ̀kan ní àwọn awọ̀ tí ó lè ṣiṣẹ́ gẹ́gẹ́ bí paleti awọ̀ tí a ti ṣe sílẹ̀. Olùyọ náà ṣe àtúpalẹ̀ àwòrán ó sì fi hàn àwọn awọ̀ tí ó ṣàkóso — pẹ̀lú kóòdù HEX àti àwọn ìyẹ RGB tí ó ṣetán láti lẹ̀ sínú iṣẹ́ rẹ.</p><p class=\"mb-4\">Ní àṣà ìṣe, èyí túmọ̀ sí pé dípò yíyàn awọ̀ pẹ̀lú ọwọ́ nínú àpù àwòrán (pixel fún pixel), o gbé àwòrán kan sókè o sì gba àkójọ tí a ṣètò ti títí dé awọ̀ 12. Èyí wúlò nígbà yíyàn àwọn awọ̀ fún ojú-ìwé ayélujára, ṣíṣẹ̀dá àwọn àwòrán àjọlò tí ó bá ara mu, tàbí kíkọ́ ìdánìmọ̀ ojú láti ohun èlò tí ó wà tẹ́lẹ̀.</p><p>Gbogbo àtúpalẹ̀ wáyé ní àdáni nínú browser — a kò fi àwòrán ránṣẹ́ sí server èyíkéyìí.</p>"
     },
     { "type": "gap", "size": "xs" },
     {
       "type": "sectionSteps",
-      "title": "How to use the image color extractor",
-      "description": "The whole process takes just a few seconds:",
+      "title": "Bí o ṣe lè lo olùyọ awọ̀ àwòrán",
+      "description": "Gbogbo ìlànà gba ìṣẹ́jú díẹ̀ péré:",
       "grid": "three",
       "items": [
-        { "title": "1. Upload an image", "description": "Drag a file onto the designated area or select it from your device. Supported formats are PNG, JPG, and SVG." },
-        { "title": "2. Wait for analysis", "description": "The tool will automatically analyze the image and extract up to 12 dominant colors." },
-        { "title": "3. Copy the colors you need", "description": "Next to each color there is a copy button - the HEX or RGB code goes to the clipboard and can be pasted directly into your project." }
+        { "title": "1. Gbé àwòrán sókè", "description": "Fa fáìlì sí agbègbè tí a yàn sọ́tọ̀ tàbí yan láti ẹ̀rọ̀ rẹ. Àwọn ònà tí a ṣe àtìlẹ́yìn fún: PNG, JPG, àti SVG." },
+        { "title": "2. Duro fún àtúpalẹ̀", "description": "Irìnṣé náà yóò ṣe àtúpalẹ̀ àwòrán ní aìfọ̀wọ́ yóò sì yọ títí dé awọ̀ alákóso 12." },
+        { "title": "3. Daakọ àwọn awọ̀ tí o nílò", "description": "Lẹ́gbẹ̀ẹ̀ awọ̀ kọ̀ọ̀kan bọ́tìnì dídaàkọ wà — kóòdù HEX tàbí RGB lọ sí clipboard a sì lè lẹ̀ ẹ́ tààrà sínú iṣẹ́ rẹ." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "What does an extracted color palette look like?",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Example colors extracted from a nature image</p></div>",
-      "html": "<p class=\"text-mid mb-4\">After uploading an image, the extractor displays a list of dominant colors sorted from most to least prominent. Each color shows its HEX code and RGB value - ready to paste into CSS, Figma, or any graphics application.</p><p class=\"text-mid\">The number of extracted colors depends on the image content. A landscape photo will produce a richer palette (8–12 colors), while a simple two-color logo will yield correspondingly fewer items.</p>"
+      "title": "Báwo ni paleti awọ̀ tí a yọ ṣe rí?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Àpẹẹrẹ àwọn awọ̀ tí a yọ láti àwòrán ẹ̀dá</p></div>",
+      "html": "<p class=\"text-mid mb-4\">Lẹ́yìn gbígbé àwòrán sókè, olùyọ náà fi àkójọ àwọn awọ̀ alákóso hàn tí a tò láti tí ó ṣàkóso jùlọ sí tí ó kéré jùlọ. Awọ̀ kọ̀ọ̀kan fi kóòdù HEX àti ìyẹ RGB rẹ̀ hàn — tí ó ṣetán láti lẹ̀ sínú CSS, Figma, tàbí àpù àwòrán èyíkéyìí.</p><p class=\"text-mid\">Iye àwọn awọ̀ tí a yọ dá lórí àkóónú àwòrán. Fọ́tò ilẹ̀ yóò mú paleti tí ó lọ́rọ̀ sí i jáde (awọ̀ 8–12), nígbà tí àmì ìdánìmọ̀ rọrùn oníawọ̀ méjì yóò mú èsì tí ó kéré bákannáà.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Which images give the best results in the color extractor?",
-      "description": "The quality of the extracted palette depends on the type of uploaded image:",
+      "title": "Àwọn àwòrán wo ni ó mú èsì tí ó dára jùlọ jáde nínú olùyọ awọ̀?",
+      "description": "Dídára paleti tí a yọ dá lórí irú àwòrán tí a gbé sókè:",
       "grid": "two",
       "items": [
         {
           "icon": "RiImageLine",
-          "title": "Logos and graphics with a limited palette",
-          "description": "Images with a few clearly separated colors give the most precise results - the extractor accurately identifies each color."
+          "title": "Àwọn àmì ìdánìmọ̀ àti àwọn àwòrán pẹ̀lú paleti tí ó lópin",
+          "description": "Àwọn àwòrán pẹ̀lú awọ̀ díẹ̀ tí a ya sọ́tọ̀ kedere mú èsì tí ó pé jùlọ jáde — olùyọ náà dámọ̀ awọ̀ kọ̀ọ̀kan dáadáa."
         },
         {
           "icon": "RiSearchEyeLine",
-          "title": "Photos with a clear subject",
-          "description": "Product, interior, or landscape photos also produce useful palettes, but they contain more shades - including shadow colors and light reflections."
+          "title": "Àwọn fọ́tò pẹ̀lú ohun tí a fọkànsí tí ó ṣe kedere",
+          "description": "Àwọn fọ́tò ọjà, inú ilé, tàbí ilẹ̀ tún mú àwọn paleti wúlò jáde, ṣùgbọ́n wọ́n ní àwọn ìbòjú sí i — pẹ̀lú àwọn awọ̀ ojìji àti ìtànṣán ìmọ́lẹ̀."
         },
         {
           "icon": "RiEraserLine",
-          "title": "PNG files with transparent backgrounds",
-          "description": "Transparent pixels are automatically skipped during analysis. If you want to extract colors only from the object (e.g., a logo), use a PNG file without a background."
+          "title": "Àwọn fáìlì PNG pẹ̀lú ìpilẹ̀ aláìrí",
+          "description": "A fòyinmò àwọn pixel aláìrí ní aìfọ̀wọ́ lásìkò àtúpalẹ̀. Tí o bá fẹ́ yọ awọ̀ láti inú ohun péré (bí àpẹẹrẹ, àmì ìdánìmọ̀), lo fáìlì PNG láìsí ìpilẹ̀."
         },
         {
           "icon": "RiCropLine",
-          "title": "Images without a large solid-color background",
-          "description": "When the background takes up most of the image area, its color dominates the results. Before uploading, consider cropping the image to the area of interest."
+          "title": "Àwọn àwòrán láìsí ìpilẹ̀ awọ̀ kan tí ó tóbi",
+          "description": "Nígbà tí ìpilẹ̀ gba ọ̀pọ̀lọpọ̀ agbègbè àwòrán, awọ̀ rẹ̀ ṣàkóso àwọn èsì. Ṣáájú gbígbé sókè, rò nínú gígé àwòrán sí agbègbè tí o nífẹ̀ẹ́ sí."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionTimeline",
-      "title": "How does image color extraction work?",
-      "description": "After uploading a file, the tool performs several steps in the background - all analysis happens locally in the browser:",
+      "title": "Báwo ni yíyọ awọ̀ àwòrán ṣe ń ṣiṣẹ́?",
+      "description": "Lẹ́yìn gbígbé fáìlì sókè, irìnṣé náà ṣe àwọn ìgbésẹ̀ púpọ̀ ní ẹ̀yìn — gbogbo àtúpalẹ̀ wáyé ní àdáni nínú browser:",
       "items": [
         {
           "icon": "RiZoomInLine",
-          "title": "Image scaling",
-          "description": "The image is resized to about 240 pixels wide. This speeds up analysis even for very large photos, without affecting color detection accuracy."
+          "title": "Yíyí ìwọn àwòrán padà",
+          "description": "A yí ìwọn àwòrán padà sí nǹkan bí 240 pixels ìbú. Èyí mú àtúpalẹ̀ yára paápàá fún àwọn fọ́tò tí ó tóbi púpọ̀, láìsí ipa lórí pípé ìdámọ̀ awọ̀."
         },
         {
           "icon": "RiGroupLine",
-          "title": "Grouping similar colors",
-          "description": "Each pixel is analyzed, and similar shades are grouped together. Two nearly identical blues become one color in the palette."
+          "title": "Dídì àwọn awọ̀ tí ó jọra papọ̀",
+          "description": "A ṣe àtúpalẹ̀ pixel kọ̀ọ̀kan, àwọn ìbòjú tí ó jọra sì di ẹgbẹ́ kan. Búlúù méjì tí ó fẹ́rẹ̀ẹ́ jọra di awọ̀ kan nínú paleti."
         },
         {
           "icon": "RiStarLine",
-          "title": "Selecting dominant colors",
-          "description": "The algorithm picks colors that cover the largest area of the image. The result is a list of up to 12 colors sorted from most to least prominent."
+          "title": "Yíyàn àwọn awọ̀ alákóso",
+          "description": "Algorithm náà yan àwọn awọ̀ tí ó bò agbègbè tí ó tóbi jùlọ ti àwòrán. Èsì jẹ́ àkójọ títí dé awọ̀ 12 tí a tò láti tí ó ṣàkóso jùlọ sí tí ó kéré jùlọ."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Skipping transparent pixels",
-          "description": "In PNG files with transparent backgrounds, those areas are not included in the analysis - the extractor examines only visible colors. The entire process typically takes under a second."
+          "title": "Fífo àwọn pixel aláìrí kọjá",
+          "description": "Nínú àwọn fáìlì PNG pẹ̀lú ìpilẹ̀ aláìrí, a kò fi àwọn agbègbè yẹn sínú àtúpalẹ̀ — olùyọ náà ṣàyẹ̀wò àwọn awọ̀ tí a lè rí péré. Gbogbo ìlànà sábà gba kéréjù ìṣẹ́jú kan."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Troubleshooting the color extractor",
+      "title": "Ìyanjú ìṣòro olùyọ awọ̀",
       "grid": "two",
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "Extractor returned fewer than 12 colors",
-          "description": "The number of extracted colors depends on the image content. A simple two-color logo will give 2–3 results - this is correct behavior. The tool does not add artificial colors; it only extracts those that actually appear in the image."
+          "title": "Olùyọ dá awọ̀ tí ó kéré ju 12 padà",
+          "description": "Iye àwọn awọ̀ tí a yọ dá lórí àkóónú àwòrán. Àmì ìdánìmọ̀ rọrùn oníawọ̀ méjì yóò fún èsì 2–3 — èyí jẹ́ ìṣe tí ó tọ́. Irìnṣé náà kò fi awọ̀ irọ́ kún; ó yọ àwọn tí ó wà gangan nínú àwòrán péré."
         },
         {
           "icon": "RiAlertLine",
-          "title": "Unexpected colors appeared in the palette",
-          "description": "These may be shadow, gradient, or light reflection colors - pixels in those areas have different colors than the object visible at first glance. Using an image with more uniform colors or cropping dark areas will improve results."
+          "title": "Àwọn awọ̀ tí a kò retí hàn nínú paleti",
+          "description": "Àwọn wọ̀nyí lè jẹ́ àwọn awọ̀ ojìji, ìyípadà àníìyàntó, tàbí ìtànṣán ìmọ́lẹ̀ — àwọn pixel ní àwọn agbègbè yẹn ní awọ̀ tí ó yàtọ̀ sí ohun tí a rí ní ìwòran àkọ́kọ́. Lílo àwòrán pẹ̀lú àwọn awọ̀ tí ó bá ara mu sí i tàbí gígé àwọn agbègbè dúdú yóò mú èsì dára sí i."
         },
         {
           "icon": "RiErrorWarningLine",
-          "title": "Background color dominates the results",
-          "description": "When the background covers more area than the object itself, its color will appear first on the list. Solution: use a PNG file with a transparent background or crop the image so the object takes up more of the frame."
+          "title": "Awọ̀ ìpilẹ̀ ṣàkóso àwọn èsì",
+          "description": "Nígbà tí ìpilẹ̀ bò agbègbè tí ó tóbi jù ohun fúnrarẹ̀ lọ, awọ̀ rẹ̀ yóò hàn ní àkọ́kọ́ lórí àkójọ. Ojútùú: lo fáìlì PNG pẹ̀lú ìpilẹ̀ aláìrí tàbí gé àwòrán kí ohun náà gba apá tí ó tóbi sí i ti fíréèmù."
         },
         {
           "icon": "RiFileWarningLine",
-          "title": "File is not accepted by the extractor",
-          "description": "The tool only supports PNG, JPG, and SVG formats. Files in other formats (GIF, TIFF, HEIC, PDF) require prior conversion."
+          "title": "Olùyọ kò gba fáìlì",
+          "description": "Irìnṣé náà ṣe àtìlẹ́yìn fún àwọn ònà PNG, JPG, àti SVG péré. Àwọn fáìlì ní àwọn ònà mìíràn (GIF, TIFF, HEIC, PDF) nílò yíyí padà ṣáájú."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "What makes this image color extractor special?",
+      "title": "Kí ni tí ó mú olùyọ awọ̀ àwòrán yìí yàtọ̀?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Local analysis - the image never leaves your computer",
-          "description": "All color extraction happens in the browser. The image is not sent to any server, and after closing the page, data is removed from memory."
+          "title": "Àtúpalẹ̀ àdáni — àwòrán kò kúrò lórí kọ̀mpútà rẹ rárá",
+          "description": "Gbogbo yíyọ awọ̀ wáyé nínú browser. A kò fi àwòrán ránṣẹ́ sí server èyíkéyìí, lẹ́yìn títí ojú-ìwé, a yọ data kúrò nínú ìrántí."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Up to 12 dominant colors from one image",
-          "description": "The tool extracts up to 12 colors sorted from most prominent - enough to build a complete project color palette."
+          "title": "Títí dé awọ̀ alákóso 12 láti àwòrán kan",
+          "description": "Irìnṣé náà yọ títí dé awọ̀ 12 tí a tò láti tí ó ṣàkóso jùlọ — tí ó tó láti kọ́ paleti awọ̀ iṣẹ́ kíkún."
         },
         {
           "icon": "RiFileImageLine",
-          "title": "Three popular image formats",
-          "description": "Supported formats are PNG, JPG, and SVG. PNG files with transparent backgrounds give the best results because transparent pixels are automatically skipped."
+          "title": "Ònà àwòrán gbajúmọ̀ mẹ́ta",
+          "description": "Àwọn ònà tí a ṣe àtìlẹ́yìn fún: PNG, JPG, àti SVG. Àwọn fáìlì PNG pẹ̀lú ìpilẹ̀ aláìrí mú èsì tí ó dára jùlọ nítorí a fòyinmò àwọn pixel aláìrí ní aìfọ̀wọ́."
         },
         {
           "icon": "RiGlobalLine",
-          "title": "Ready HEX and RGB codes to paste",
-          "description": "Each extracted color comes with its HEX code (e.g., #2C5F2D) and RGB value. The code can be copied to the clipboard and pasted directly into CSS, Figma, or Photoshop."
+          "title": "Kóòdù HEX àti RGB tí ó ṣetán láti lẹ̀",
+          "description": "Awọ̀ kọ̀ọ̀kan tí a yọ wá pẹ̀lú kóòdù HEX rẹ̀ (bí àpẹẹrẹ, #2C5F2D) àti ìyẹ RGB. A lè daakọ kóòdù sí clipboard a sì lè lẹ̀ ẹ́ tààrà sínú CSS, Figma, tàbí Photoshop."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Where to use colors extracted from an image",
+      "title": "Níbo ni a lè lo àwọn awọ̀ tí a yọ láti àwòrán",
       "grid": "two",
       "items": [
         {
           "icon": "RiBrushLine",
-          "title": "Building visual identity",
-          "description": "Upload a photo that captures the mood of the brand - a landscape, a restaurant interior, a product photo - and extract colors as a starting point for a branding palette."
+          "title": "Kíkọ́ ìdánìmọ̀ ojú",
+          "description": "Gbé fọ́tò tí ó mu ìṣesí àmì sókè — ilẹ̀, inú ilé oúnjẹ, fọ́tò ọjà — kí o sì yọ àwọn awọ̀ gẹ́gẹ́ bí ìbẹ̀rẹ̀ fún paleti àmì."
         },
         {
           "icon": "RiLayoutMasonryLine",
-          "title": "Social media graphics",
-          "description": "Extract colors from a product photo and use them as backgrounds or accents in graphics. Posts based on colors from the same source look consistent on the profile."
+          "title": "Àwọn àwòrán àjọlò",
+          "description": "Yọ àwọn awọ̀ láti fọ́tò ọjà kí o sì lo wọ́n gẹ́gẹ́ bí ìpilẹ̀ tàbí àwọn awọ̀ àṣekún nínú àwọn àwòrán. Àwọn ìfiranṣẹ́ tí ó dá lórí àwọn awọ̀ láti orísun kan náà dára lórí profaili."
         },
         {
           "icon": "RiPaintBrushLine",
-          "title": "Matching colors to a website",
-          "description": "Extract colors from the logo and use them as the website color palette - primary color, accent color, background shades. HEX codes paste straight into CSS."
+          "title": "Bíbá àwọn awọ̀ mu fún ojú-ìwé ayélujára",
+          "description": "Yọ àwọn awọ̀ láti àmì ìdánìmọ̀ kí o sì lo wọ́n gẹ́gẹ́ bí paleti awọ̀ ojú-ìwé — awọ̀ àkọ́kọ́, awọ̀ àṣekún, àwọn ìbòjú ìpilẹ̀. Àwọn kóòdù HEX lẹ̀ tààrà sínú CSS."
         },
         {
           "icon": "RiSearchEyeLine",
-          "title": "Expanding an existing palette",
-          "description": "An extracted base color can be used in the <a href=\"/yo/awon-irinse/color-palette-generator\">color palette generator</a> to create a full set of harmonious colors based on color theory."
+          "title": "Fífẹ̀ paleti tí ó wà tẹ́lẹ̀ sí i",
+          "description": "A lè lo awọ̀ ìpìlẹ̀ tí a yọ nínú <a href=\"/yo/awon-irinse/color-palette-generator\">olùpìlẹ̀ṣẹ̀ paleti awọ̀</a> láti ṣẹ̀dá ètò kíkún ti àwọn awọ̀ tí ó bá ara mu dá lórí ìmọ̀ awọ̀."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the image color extractor",
+      "title": "Àwọn ìbéèrè tí a máa ń béèrè nípa olùyọ awọ̀ àwòrán",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Does the image color extractor require registration?",
-          "answer": "No. The tool is completely free and requires no login or registration. The image is analyzed locally in the browser - it is not sent to any server. After closing the page, all data is removed.",
-          "answerSchemaText": "No. The tool is free and does not require registration. The image is analyzed locally in the browser."
+          "question": "Ṣé olùyọ awọ̀ àwòrán nílò ìforukọ̀sílẹ̀?",
+          "answer": "Rárá. Irìnṣé náà jẹ́ òfẹ́ẹ́ pátápátá kò sì nílò ìwolé tàbí ìforukọ̀sílẹ̀. A ṣe àtúpalẹ̀ àwòrán ní àdáni nínú browser — a kò fi ránṣẹ́ sí server èyíkéyìí. Lẹ́yìn títí ojú-ìwé, a yọ gbogbo data kúrò.",
+          "answerSchemaText": "Rárá. Irìnṣé náà jẹ́ òfẹ́ẹ́ kò sì nílò ìforukọ̀sílẹ̀. A ṣe àtúpalẹ̀ àwòrán ní àdáni nínú browser."
         },
         {
-          "question": "How is the color extractor different from a palette generator?",
-          "answer": "The extractor pulls colors from an existing image - it analyzes a photo and shows which colors dominate in it. A color palette generator works the other way: you provide one base color, and the tool creates harmonious sets based on color theory. Both tools complement each other - you can extract a color from an image and then use it as a base in the palette generator.",
-          "answerSchemaText": "The extractor pulls colors from an image. The generator creates palettes from a base color. Both tools complement each other."
+          "question": "Báwo ni olùyọ awọ̀ ṣe yàtọ̀ sí olùpìlẹ̀ṣẹ̀ paleti?",
+          "answer": "Olùyọ yọ àwọn awọ̀ láti àwòrán tí ó wà tẹ́lẹ̀ — ó ṣe àtúpalẹ̀ fọ́tò ó sì fi hàn àwọn awọ̀ tí ó ṣàkóso nínú rẹ̀. Olùpìlẹ̀ṣẹ̀ paleti awọ̀ ṣiṣẹ́ ní ọ̀nà mìíràn: o pèsè awọ̀ ìpìlẹ̀ kan, irìnṣé náà sì ṣẹ̀dá àwọn ètò tí ó bá ara mu dá lórí ìmọ̀ awọ̀. Àwọn irìnṣé méjèèjì ṣe àtìlẹ́yìn fún ara wọn — o lè yọ awọ̀ láti àwòrán lẹ́yìn náà lo ó gẹ́gẹ́ bí ìpìlẹ̀ nínú olùpìlẹ̀ṣẹ̀ paleti.",
+          "answerSchemaText": "Olùyọ yọ àwọn awọ̀ láti àwòrán. Olùpìlẹ̀ṣẹ̀ ṣẹ̀dá àwọn paleti láti awọ̀ ìpìlẹ̀. Àwọn irìnṣé méjèèjì ṣe àtìlẹ́yìn fún ara wọn."
         },
         {
-          "question": "How many colors does the extractor pull from one image?",
-          "answer": "The tool extracts up to 12 dominant colors. The exact number depends on the image content - if a graphic has only two colors (e.g., a simple logo), the result will contain fewer items. Colors are sorted from most to least prominent.",
-          "answerSchemaText": "Up to 12 dominant colors, sorted from the most to least prominent."
+          "question": "Awọ̀ mélòò ni olùyọ yọ láti àwòrán kan?",
+          "answer": "Irìnṣé náà yọ títí dé awọ̀ alákóso 12. Iye gangan dá lórí àkóónú àwòrán — tí àwòrán bá ní awọ̀ méjì péré (bí àpẹẹrẹ, àmì ìdánìmọ̀ rọrùn), èsì yóò ní èsì tí ó kéré sí i. A tò àwọn awọ̀ láti tí ó ṣàkóso jùlọ sí tí ó kéré jùlọ.",
+          "answerSchemaText": "Títí dé awọ̀ alákóso 12, tí a tò láti tí ó ṣàkóso jùlọ sí tí ó kéré jùlọ."
         },
         {
-          "question": "What image formats does the color extractor support?",
-          "answer": "Supported formats are PNG, JPG (JPEG), and SVG. PNG files with transparent backgrounds give better results because transparent pixels are skipped during analysis - the tool focuses on the colors of the object itself.",
-          "answerSchemaText": "PNG, JPG, and SVG. PNG with transparent background gives the best results."
+          "question": "Àwọn ònà àwòrán wo ni olùyọ awọ̀ ṣe àtìlẹ́yìn fún?",
+          "answer": "Àwọn ònà tí a ṣe àtìlẹ́yìn fún: PNG, JPG (JPEG), àti SVG. Àwọn fáìlì PNG pẹ̀lú ìpilẹ̀ aláìrí mú èsì tí ó dára sí i nítorí a fòyinmò àwọn pixel aláìrí lásìkò àtúpalẹ̀ — irìnṣé náà fọkànsí àwọn awọ̀ ohun fúnrarẹ̀.",
+          "answerSchemaText": "PNG, JPG, àti SVG. PNG pẹ̀lú ìpilẹ̀ aláìrí mú èsì tí ó dára jùlọ."
         },
         {
-          "question": "In what format do I get the extracted color codes?",
-          "answer": "Each color is displayed with its HEX code (e.g., #2C5F2D) and RGB value (e.g., rgb(44, 95, 45)). The code can be copied to the clipboard and pasted directly into CSS, Figma, Photoshop, or any other graphics application.",
-          "answerSchemaText": "HEX (e.g., #2C5F2D) and RGB (e.g., rgb(44, 95, 45)). Copyable to clipboard."
+          "question": "Ní ònà wo ni mo gba àwọn kóòdù awọ̀ tí a yọ?",
+          "answer": "A fi awọ̀ kọ̀ọ̀kan hàn pẹ̀lú kóòdù HEX rẹ̀ (bí àpẹẹrẹ, #2C5F2D) àti ìyẹ RGB (bí àpẹẹrẹ, rgb(44, 95, 45)). A lè daakọ kóòdù sí clipboard a sì lè lẹ̀ ẹ́ tààrà sínú CSS, Figma, Photoshop, tàbí àpù àwòrán èyíkéyìí mìíràn.",
+          "answerSchemaText": "HEX (bí àpẹẹrẹ, #2C5F2D) àti RGB (bí àpẹẹrẹ, rgb(44, 95, 45)). A lè daakọ sí clipboard."
         },
         {
-          "question": "Can I copy all palette colors at once?",
-          "answer": "Currently the tool allows copying colors individually - next to each color there is a button that copies the HEX code to the clipboard. The copied code can be immediately pasted into Figma, Photoshop, CSS, or any other application.",
-          "answerSchemaText": "Colors are copied individually via the copy button next to each color."
+          "question": "Ṣé mo lè daakọ gbogbo àwọn awọ̀ paleti ní ẹ̀ẹ̀kan?",
+          "answer": "Lọ́wọ́lọ́wọ́ irìnṣé náà jẹ́ kí o daakọ àwọn awọ̀ ní ọ̀kọ̀ọ̀kan — lẹ́gbẹ̀ẹ̀ awọ̀ kọ̀ọ̀kan bọ́tìnì wà tí ó daakọ kóòdù HEX sí clipboard. A lè lẹ̀ kóòdù tí a daakọ lẹ́sẹ̀kẹsẹ̀ sínú Figma, Photoshop, CSS, tàbí àpù èyíkéyìí mìíràn.",
+          "answerSchemaText": "A daakọ àwọn awọ̀ ní ọ̀kọ̀ọ̀kan nípasẹ̀ bọ́tìnì dídaàkọ lẹ́gbẹ̀ẹ̀ awọ̀ kọ̀ọ̀kan."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
+    { "type": "toolsCarousel", "title": "Ṣàwárí àwọn irìnṣé mìíràn" },
     { "type": "gap", "size": "sm" }
   ]
 }
