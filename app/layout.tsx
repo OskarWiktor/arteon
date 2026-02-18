@@ -20,7 +20,7 @@ import './globals.css';
 
 const instrumentSans = Instrument_Sans({
   subsets: ['latin', 'latin-ext'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '500', '600'],
   display: 'swap',
   variable: '--font-sans',
 });
@@ -115,8 +115,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           }}
         />
 
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+
         {METRICOOL_HASH && (
-          <Script id="metricool-tracker" strategy="afterInteractive">
+          <Script id="metricool-tracker" strategy="lazyOnload">
             {`
               function loadScript(callback){
                 var head=document.getElementsByTagName("head")[0];
@@ -139,6 +142,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <script id="schema-org-website" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
 
         {ADSENSE_CLIENT && <Script src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} strategy="afterInteractive" crossOrigin="anonymous" />}
+
+        {/* dns-prefetch fallback for browsers that don't support preconnect */}
+        <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
       </head>
 
       <body className="font-sans antialiased">

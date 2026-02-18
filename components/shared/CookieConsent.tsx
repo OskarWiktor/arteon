@@ -104,6 +104,9 @@ export default function CookieConsent({ translations: t }: { translations: Cooki
       ads: next.ads,
       updatedAt: new Date().toISOString(),
     });
+
+    window.dispatchEvent(new CustomEvent('arteon:consent-updated', { detail: next }));
+
     updateGtag(next.analytics, next.ads);
     if (next.analytics) {
       loadGA(window.__GA_ID);

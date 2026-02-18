@@ -8,7 +8,6 @@ import FeesSteps from '@/components/sections/steps/FeesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import TechStack from '@/components/sections/TechStack';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import Button from '@/components/ui/buttons/Button';
 import Gap from '@/components/ui/Gap';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
@@ -19,6 +18,7 @@ import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiF
 import testimonialsPl from '@/data/pl/testimonials.json';
 import type { Testimonial } from '@/types/testimonial';
 import { getAllArticlePreviews } from '@/lib/blogDataService';
+import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 
 export const metadata = {
   title: 'Strony, sklepy, treści i marketing | Arteon',

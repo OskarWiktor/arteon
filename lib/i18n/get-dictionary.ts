@@ -179,7 +179,14 @@ const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
   uk: () => import('@/data/uk/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
 };
 
+const cache = new Map<Locale, Dictionary>();
+
 export async function getDictionary(locale: Locale): Promise<Dictionary> {
+  const cached = cache.get(locale);
+  if (cached) return cached;
+
   const loader = dictionaries[locale] ?? dictionaries.en;
-  return loader();
+  const dict = await loader();
+  cache.set(locale, dict);
+  return dict;
 }

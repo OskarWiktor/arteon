@@ -4,7 +4,6 @@ import CarouselSkeleton from './CarouselSkeleton';
 import SectionStepsSkeleton from './SectionStepsSkeleton';
 import GapSkeleton from './GapSkeleton';
 import CTABannerSkeleton from './CTABannerSkeleton';
-import SectionInfoSkeleton from './SectionInfoSkeleton';
 import Shimmer from './Shimmer';
 
 function FeatureGridSkeleton() {
@@ -43,6 +42,22 @@ function WorkStepsSkeleton() {
   );
 }
 
+function TechStackSkeleton() {
+  return (
+    <div className="space-y-4">
+      <Shimmer className="h-7 w-2/5 !rounded-md" />
+      <div className="flex gap-6 overflow-hidden md:gap-10 lg:gap-14">
+        {Array.from({ length: 8 }).map((_, i) => (
+          <div key={i} className="flex shrink-0 items-center gap-2">
+            <Shimmer className="h-6 w-6 !rounded-md" />
+            <Shimmer className="h-6 w-24 !rounded-md" />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function HomePageSkeleton() {
   return (
     <>
@@ -62,7 +77,7 @@ export default function HomePageSkeleton() {
         <GapSkeleton variant="line" />
         <WorkStepsSkeleton />
         <GapSkeleton variant="line" />
-        <SectionInfoSkeleton />
+        <TechStackSkeleton />
         <GapSkeleton variant="line" />
         <SectionStepsSkeleton cols={4} />
         <GapSkeleton variant="line" />

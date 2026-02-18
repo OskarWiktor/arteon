@@ -7,29 +7,32 @@ const CANONICAL_PROTOCOL = 'https';
 // ---------------------------------------------------------------------------
 // Security: known malicious bot user-agent substrings (case-insensitive)
 // ---------------------------------------------------------------------------
-const BAD_BOTS = [
-  'wpscan',
-  'sqlmap',
-  'nikto',
-  'nmap',
-  'masscan',
-  'zmeu',
-  'morfeus',
-  'blackwidow',
-  'indy library',
-  'dirbuster',
-  'gobuster',
-  'nuclei',
-  'httpx',
-  'censys',
-  'zgrab',
-  'commix',
-  'havij',
-  'acunetix',
-  'nessus',
-  'openvas',
-  'arachni',
-];
+const BAD_BOTS_RE = new RegExp(
+  [
+    'wpscan',
+    'sqlmap',
+    'nikto',
+    'nmap',
+    'masscan',
+    'zmeu',
+    'morfeus',
+    'blackwidow',
+    'indy library',
+    'dirbuster',
+    'gobuster',
+    'nuclei',
+    'httpx',
+    'censys',
+    'zgrab',
+    'commix',
+    'havij',
+    'acunetix',
+    'nessus',
+    'openvas',
+    'arachni',
+  ].join('|'),
+  'i',
+);
 
 // ---------------------------------------------------------------------------
 // Security: paths commonly probed by bots/scanners (WordPress, PHP, etc.)
@@ -98,8 +101,8 @@ const BLOCKED_EXTENSIONS = ['.php', '.asp', '.aspx', '.jsp', '.cgi', '.sql', '.b
  */
 function isBlockedRequest(request: NextRequest): boolean {
   // --- User-Agent check ---
-  const ua = (request.headers.get('user-agent') || '').toLowerCase();
-  if (ua && BAD_BOTS.some((bot) => ua.includes(bot))) {
+  const ua = request.headers.get('user-agent') || '';
+  if (ua && BAD_BOTS_RE.test(ua)) {
     return true;
   }
 

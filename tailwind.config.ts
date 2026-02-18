@@ -6,7 +6,6 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ['"neue-haas-grotesk-display"', 'sans-serif'],
-        serif: ['"the-seasons"', 'serif'],
       },
     },
   },

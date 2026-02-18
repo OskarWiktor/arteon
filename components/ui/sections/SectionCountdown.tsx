@@ -55,13 +55,13 @@ export default function SectionCountdown({ title, description, targetDate, btnLa
     <section data-section="countdown" className="from-error-icon to-accent-orange bg-gradient-to-r py-12 text-white">
       <Wrapper>
         <div className="text-center">
-          <h2 className="text-2xl font-bold">{title}</h2>
+          <h2 className="text-2xl font-semibold">{title}</h2>
           {description && <p className="mt-2 text-white/80">{description}</p>}
 
           <div className="mt-6 flex justify-center gap-4">
             {timeUnits.map((unit, index) => (
               <div key={index} className="rounded-xl bg-white/20 px-4 py-3">
-                <p className="text-3xl font-bold">{String(unit.value).padStart(2, '0')}</p>
+                <p className="text-3xl font-semibold">{String(unit.value).padStart(2, '0')}</p>
                 <p className="text-xs text-white/70">{unit.label}</p>
               </div>
             ))}
