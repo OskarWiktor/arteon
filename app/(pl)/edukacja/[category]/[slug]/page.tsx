@@ -266,8 +266,8 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
 
         if (b.type === 'ad') {
           return (
-            <div key={`grp-ad-${i}`} className="not-prose my-8">
-              <AdSense variant="in-article" adSlot={b.slot} />
+            <div key={`grp-ad-${i}`} className="not-prose my-8 flex justify-center">
+              <AdSense variant="tool-banner" />
             </div>
           );
         }
