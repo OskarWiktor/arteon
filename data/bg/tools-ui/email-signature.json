@@ -45,7 +45,7 @@
     "avatarSizeSmall": "Малък (40 px)",
     "avatarSizeMedium": "Среден (56 px)",
     "avatarSizeLarge": "Голям (72 px)",
-    "fullName": "Пълно име *",
+    "fullName": "Име и фамилия *",
     "fullNamePlaceholder": "Иван Петров",
     "nameTag": "Етикет на името",
     "nameTagPlaceholder": "Напр. Той/Него  Арт директор",
@@ -117,7 +117,7 @@
     "dividerStyleSolid": "Плътна",
     "dividerStyleDashed": "Прекъсната",
     "dividerStyleDotted": "Точкувана",
-    "dividerWidth": "Ширина на линията",
+    "dividerWidth": "Дебелина на линията",
     "dividerColor": "Цвят на линията",
     "dividerColorDefault": "По подразбиране"
   },
@@ -139,7 +139,7 @@
     "customColors": "Персонализирани цветове",
     "addColor": "Нов цвят",
     "saveColor": "Запази",
-    "name": "Пълно име",
+    "name": "Име и фамилия",
     "jobTitle": "Длъжност",
     "company": "Фирма",
     "contact": "Данни за контакт",
@@ -157,7 +157,7 @@
     "copyRawButton": "Копирай HTML код",
     "copyRawSuccess": "HTML кодът е копиран",
     "downloadButton": "Изтегли като HTML",
-    "requiredFields": "За да копирате подписа, попълнете поне пълното име и имейла.",
+    "requiredFields": "За да копирате подписа, попълнете поне име и фамилия и имейл.",
     "resetButton": "Нулиране на външния вид",
     "resetModalTitle": "Нулиране на настройките?",
     "resetModalDescription": "Всички данни и настройки на подписа ще бъдат възстановени до стойностите по подразбиране. Това действие не може да бъде отменено.",
@@ -177,7 +177,7 @@
   "labels": {
     "tel": "Тел.",
     "email": "Имейл",
-    "website": "Уебсайт",
+    "website": "Сайт",
     "address": "Адрес"
   },
   "themes": {

@@ -62,7 +62,7 @@
     "ariaLabel": "navigace"
   },
   "contactForm": {
-    "nameLabel": "Celé jméno",
+    "nameLabel": "Jméno a příjmení",
     "namePlaceholder": "Jan Novák",
     "emailLabel": "E-mail",
     "emailPlaceholder": "jan.novak@gmail.com",

@@ -62,7 +62,7 @@
     "ariaLabel": "navigimi"
   },
   "contactForm": {
-    "nameLabel": "Emri i plotë",
+    "nameLabel": "Emri dhe mbiemri",
     "namePlaceholder": "Arben Hoxha",
     "emailLabel": "Email",
     "emailPlaceholder": "arben.hoxha@gmail.com",

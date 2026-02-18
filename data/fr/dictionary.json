@@ -62,7 +62,7 @@
     "ariaLabel": "fil d'Ariane"
   },
   "contactForm": {
-    "nameLabel": "Nom complet",
+    "nameLabel": "Prénom et nom",
     "namePlaceholder": "Jean Dupont",
     "emailLabel": "E-mail",
     "emailPlaceholder": "jean.dupont@gmail.com",

@@ -62,7 +62,7 @@
     "ariaLabel": "navigasjon"
   },
   "contactForm": {
-    "nameLabel": "Fullt navn",
+    "nameLabel": "For- og etternavn",
     "namePlaceholder": "Ola Nordmann",
     "emailLabel": "E-post",
     "emailPlaceholder": "ola.nordmann@gmail.com",

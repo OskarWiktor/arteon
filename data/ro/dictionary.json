@@ -62,17 +62,17 @@
     "ariaLabel": "navigare"
   },
   "contactForm": {
-    "nameLabel": "Nume complet",
+    "nameLabel": "Prenume și nume",
     "namePlaceholder": "Ion Popescu",
     "emailLabel": "E-mail",
     "emailPlaceholder": "ion.popescu@gmail.com",
     "subjectLabel": "Subiect",
-    "subjectPlaceholder": "ex. Raport eroare | Sugestie instrument | Intrebare",
+    "subjectPlaceholder": "ex. Raport eroare | Sugestie instrument | Întrebare",
     "messageLabel": "Mesaj",
-    "messagePlaceholder": "Descrieti intrebarea sau sugestia dvs...",
+    "messagePlaceholder": "Descrieți întrebarea sau sugestia dvs...",
     "send": "Trimite",
-    "error": "Ceva nu a functionat. Verificati datele si incercati din nou.",
-    "success": "Mesaj trimis! Vom raspunde cat mai curand posibil."
+    "error": "Ceva nu a funcționat. Verificați datele și încercați din nou.",
+    "success": "Mesaj trimis! Vom răspunde cât mai curând posibil."
   },
   "toolsCarousel": {
     "defaultTitle": "Instrumente gratuite",

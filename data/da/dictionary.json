@@ -62,7 +62,7 @@
     "ariaLabel": "navigation"
   },
   "contactForm": {
-    "nameLabel": "Fulde navn",
+    "nameLabel": "For- og efternavn",
     "namePlaceholder": "Lars Nielsen",
     "emailLabel": "E-mail",
     "emailPlaceholder": "lars.nielsen@gmail.com",

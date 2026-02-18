@@ -62,17 +62,17 @@
     "ariaLabel": "útmutató"
   },
   "contactForm": {
-    "nameLabel": "Teljes nev",
-    "namePlaceholder": "Kovacs Janos",
+    "nameLabel": "Vezetéknév és keresztnév",
+    "namePlaceholder": "Kovács János",
     "emailLabel": "E-mail",
     "emailPlaceholder": "kovacs.janos@gmail.com",
-    "subjectLabel": "Targy",
-    "subjectPlaceholder": "pl. Hibajelentes | Eszkoz javaslat | Kerdes",
-    "messageLabel": "Uzenet",
-    "messagePlaceholder": "Irja le kerdeset vagy javaslatat...",
-    "send": "Kuldes",
-    "error": "Valami hiba tortent. Ellenorizze az adatokat es probalkozzon ujra.",
-    "success": "Uzenet elkuldve! A leheto leghamarabb valaszolunk."
+    "subjectLabel": "Tárgy",
+    "subjectPlaceholder": "pl. Hibajelentés | Eszközjavaslat | Kérdés",
+    "messageLabel": "Üzenet",
+    "messagePlaceholder": "Írja le kérdését vagy javaslatát...",
+    "send": "Küldés",
+    "error": "Valami hiba történt. Ellenőrizze az adatokat és próbálkozzon újra.",
+    "success": "Üzenet elküldve! A lehető leghamarabb válaszolunk."
   },
   "toolsCarousel": {
     "defaultTitle": "Ingyenes eszközök",

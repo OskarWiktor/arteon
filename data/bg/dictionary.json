@@ -53,7 +53,7 @@
   "legal": [{ "key": "privacy", "href": "/bg/politika-za-poveritelnost", "label": "Политика за поверителност" }],
   "breadcrumbs": { "home": "Начало", "ariaLabel": "навигация breadcrumbs" },
   "contactForm": {
-    "nameLabel": "Пълно име",
+    "nameLabel": "Име и фамилия",
     "namePlaceholder": "Иван Петров",
     "emailLabel": "Имейл",
     "emailPlaceholder": "ivan.petrov@example.com",

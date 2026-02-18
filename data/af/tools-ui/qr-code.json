@@ -41,7 +41,7 @@
   "email": {
     "to": "E-posadres",
     "subject": "Onderwerp (opsioneel)",
-    "body": "Liggaam (opsioneel)"
+    "body": "Inhoud (opsioneel)"
   },
   "printTip": "Vir gedrukte materiaal beveel ons 'n minimum grootte van 300px en foutkorreksievlak H aan."
 }

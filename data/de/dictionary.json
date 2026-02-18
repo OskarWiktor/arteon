@@ -62,7 +62,7 @@
     "ariaLabel": "Brotkrümel"
   },
   "contactForm": {
-    "nameLabel": "Vollständiger Name",
+    "nameLabel": "Vor- und Nachname",
     "namePlaceholder": "Max Mustermann",
     "emailLabel": "E-Mail",
     "emailPlaceholder": "max.mustermann@gmail.com",

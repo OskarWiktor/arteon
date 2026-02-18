@@ -53,7 +53,7 @@
   "legal": [{ "key": "privacy", "href": "/af/privaatheidsbeleid", "label": "Privaatheidsbeleid" }],
   "breadcrumbs": { "home": "Tuis", "ariaLabel": "breadcrumbs-navigasie" },
   "contactForm": {
-    "nameLabel": "Volle naam",
+    "nameLabel": "Naam en van",
     "namePlaceholder": "Johan van der Merwe",
     "emailLabel": "E-pos",
     "emailPlaceholder": "johan@example.com",

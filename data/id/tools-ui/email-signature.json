@@ -117,7 +117,7 @@
     "dividerStyleSolid": "Solid",
     "dividerStyleDashed": "Putus-putus",
     "dividerStyleDotted": "Titik-titik",
-    "dividerWidth": "Lebar garis",
+    "dividerWidth": "Ketebalan garis",
     "dividerColor": "Warna garis",
     "dividerColorDefault": "Default"
   },

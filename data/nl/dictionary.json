@@ -62,7 +62,7 @@
     "ariaLabel": "kruimelpad"
   },
   "contactForm": {
-    "nameLabel": "Volledige naam",
+    "nameLabel": "Voor- en achternaam",
     "namePlaceholder": "Jan de Vries",
     "emailLabel": "E-mail",
     "emailPlaceholder": "jan.devries@gmail.com",

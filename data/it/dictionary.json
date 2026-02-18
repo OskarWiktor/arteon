@@ -62,7 +62,7 @@
     "ariaLabel": "briciole di pane"
   },
   "contactForm": {
-    "nameLabel": "Nome completo",
+    "nameLabel": "Nome e cognome",
     "namePlaceholder": "Mario Rossi",
     "emailLabel": "E-mail",
     "emailPlaceholder": "mario.rossi@gmail.com",

@@ -62,7 +62,7 @@
     "ariaLabel": "navigaatio"
   },
   "contactForm": {
-    "nameLabel": "Koko nimi",
+    "nameLabel": "Etu- ja sukunimi",
     "namePlaceholder": "Matti Meikäläinen",
     "emailLabel": "Sähköposti",
     "emailPlaceholder": "matti.meikalainen@gmail.com",

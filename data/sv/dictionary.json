@@ -62,7 +62,7 @@
     "ariaLabel": "navigering"
   },
   "contactForm": {
-    "nameLabel": "Fullständigt namn",
+    "nameLabel": "För- och efternamn",
     "namePlaceholder": "Erik Johansson",
     "emailLabel": "E-post",
     "emailPlaceholder": "erik.johansson@gmail.com",
