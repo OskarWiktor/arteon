@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import type { AdSenseProps } from '@/types/ui';
 export type { AdVariant, AdSenseProps } from '@/types/ui';
 
@@ -21,18 +21,11 @@ declare global {
 
 export default function AdSense({ variant, adSlot, className = '' }: AdSenseProps) {
   const pushed = useRef(false);
-  const [ready, setReady] = useState(false);
   const preset = PRESETS[variant];
   const slot = adSlot || preset.slot;
 
-  /* Phase 1 — mark component as client-mounted so the real <ins> renders */
   useEffect(() => {
-    setReady(true);
-  }, []);
-
-  /* Phase 2 — push to adsbygoogle one frame AFTER the <ins> is in the DOM */
-  useEffect(() => {
-    if (!ready || pushed.current) return;
+    if (pushed.current) return;
     const id = requestAnimationFrame(() => {
       try {
         (window.adsbygoogle = window.adsbygoogle || []).push({});
@@ -42,15 +35,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
       }
     });
     return () => cancelAnimationFrame(id);
-  }, [ready]);
-
-  /* ----------------------------------------------------------------
-   * SSR / pre-mount placeholder — keeps layout stable, no <ins> yet
-   * --------------------------------------------------------------- */
-  if (!ready) {
-    const h = variant === 'tool-banner' ? '90px' : variant === 'vertical' ? '600px' : undefined;
-    return <div className={className} style={h ? { minHeight: h } : undefined} />;
-  }
+  }, []);
 
   /* ----------------------------------------------------------------
    * tool-top-banner-test — fixed 728×90 leaderboard
@@ -66,14 +51,13 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
   }
 
   /* ----------------------------------------------------------------
-   * in-article — fluid ad inside article content
-   * Google code: display:block; text-align:center;
-   * data-ad-layout="in-article", data-ad-format="fluid"
+   * in-article — responsive ad between content sections
+   * Uses auto format (more reliable in React SPAs than fluid in-article)
    * --------------------------------------------------------------- */
   if (variant === 'in-article') {
     return (
       <div className={className}>
-        <ins className="adsbygoogle" style={{ display: 'block', textAlign: 'center' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} data-ad-layout="in-article" data-ad-format="fluid" />
+        <ins className="adsbygoogle" style={{ display: 'block' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} data-ad-format="auto" data-full-width-responsive="true" />
       </div>
     );
   }
@@ -92,13 +76,12 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
   }
 
   /* ----------------------------------------------------------------
-   * pionowe-tools — responsive vertical ad (side columns)
-   * Google code: display:block
-   * data-ad-format="auto" (NO data-full-width-responsive)
+   * vertical — responsive ad for side columns (160px)
+   * data-ad-format="auto", NO data-full-width-responsive (stays in column)
    * --------------------------------------------------------------- */
   return (
     <div className={className}>
-      <ins className="adsbygoogle" style={{ display: 'block', minHeight: '600px' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} data-ad-format="auto" />
+      <ins className="adsbygoogle" style={{ display: 'block' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} data-ad-format="auto" />
     </div>
   );
 }
