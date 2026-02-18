@@ -1,8 +1,7 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import type { AdSenseProps } from '@/types/ui';
-import { readConsent } from '@/lib/consent/consentCookie';
 export type { AdVariant, AdSenseProps } from '@/types/ui';
 
 const AD_CLIENT = 'ca-pub-7845947936813012';
@@ -37,37 +36,14 @@ declare global {
 export default function AdSense({ variant, adSlot, className = '' }: AdSenseProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const pushed = useRef(false);
-  const [adsAllowed, setAdsAllowed] = useState(false);
   const preset = PRESETS[variant];
   const rawSlot = adSlot || preset.slot;
   const slot = SLOT_ALIASES[rawSlot] ?? rawSlot;
   const isInArticleVariant = variant === 'in-article' || variant === 'in-article-new';
 
   useEffect(() => {
-    setAdsAllowed(readConsent()?.ads ?? false);
-
-    const handleConsentUpdated = (event: Event) => {
-      const next = (event as CustomEvent<{ ads?: boolean }>).detail;
-      if (typeof next?.ads === 'boolean') {
-        setAdsAllowed(next.ads);
-        return;
-      }
-
-      setAdsAllowed(readConsent()?.ads ?? false);
-    };
-
-    window.addEventListener('arteon:consent-updated', handleConsentUpdated);
-    return () => window.removeEventListener('arteon:consent-updated', handleConsentUpdated);
-  }, []);
-
-  useEffect(() => {
     const container = containerRef.current;
-    if (!container) return;
-
-    container.innerHTML = '';
-    pushed.current = false;
-
-    if (!adsAllowed || pushed.current) return;
+    if (!container || pushed.current) return;
 
     const ins = document.createElement('ins');
     ins.className = 'adsbygoogle';
@@ -100,7 +76,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
     } catch (err) {
       console.error('AdSense push error:', err);
     }
-  }, [variant, slot, adsAllowed]);
+  }, [variant, slot]);
 
   if (variant === 'tool-banner') {
     return <div ref={containerRef} className={`flex justify-center ${className}`} />;
