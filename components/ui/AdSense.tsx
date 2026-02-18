@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { AdSenseProps } from '@/types/ui';
 export type { AdVariant, AdSenseProps } from '@/types/ui';
 
@@ -20,21 +20,37 @@ declare global {
 }
 
 export default function AdSense({ variant, adSlot, className = '' }: AdSenseProps) {
-  const adRef = useRef<HTMLModElement>(null);
-  const isAdPushed = useRef(false);
+  const pushed = useRef(false);
+  const [ready, setReady] = useState(false);
   const preset = PRESETS[variant];
   const slot = adSlot || preset.slot;
 
+  /* Phase 1 — mark component as client-mounted so the real <ins> renders */
   useEffect(() => {
-    if (isAdPushed.current) return;
-
-    try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-      isAdPushed.current = true;
-    } catch (err) {
-      console.error('AdSense error:', err);
-    }
+    setReady(true);
   }, []);
+
+  /* Phase 2 — push to adsbygoogle one frame AFTER the <ins> is in the DOM */
+  useEffect(() => {
+    if (!ready || pushed.current) return;
+    const id = requestAnimationFrame(() => {
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+        pushed.current = true;
+      } catch (err) {
+        console.error('AdSense push error:', err);
+      }
+    });
+    return () => cancelAnimationFrame(id);
+  }, [ready]);
+
+  /* ----------------------------------------------------------------
+   * SSR / pre-mount placeholder — keeps layout stable, no <ins> yet
+   * --------------------------------------------------------------- */
+  if (!ready) {
+    const h = variant === 'tool-banner' ? '90px' : variant === 'vertical' ? '600px' : undefined;
+    return <div className={className} style={h ? { minHeight: h } : undefined} />;
+  }
 
   /* ----------------------------------------------------------------
    * tool-top-banner-test — fixed 728×90 leaderboard
@@ -44,7 +60,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
   if (variant === 'tool-banner') {
     return (
       <div className={`flex justify-center ${className}`}>
-        <ins ref={adRef} className="adsbygoogle" style={{ display: 'inline-block', width: '728px', height: '90px' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} />
+        <ins className="adsbygoogle" style={{ display: 'inline-block', width: '728px', height: '90px' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} />
       </div>
     );
   }
@@ -57,7 +73,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
   if (variant === 'in-article') {
     return (
       <div className={className}>
-        <ins ref={adRef} className="adsbygoogle" style={{ display: 'block', textAlign: 'center' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} data-ad-layout="in-article" data-ad-format="fluid" />
+        <ins className="adsbygoogle" style={{ display: 'block', textAlign: 'center' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} data-ad-layout="in-article" data-ad-format="fluid" />
       </div>
     );
   }
@@ -70,7 +86,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
   if (variant === 'autorelaxed') {
     return (
       <div className={className}>
-        <ins ref={adRef} className="adsbygoogle" style={{ display: 'block' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} data-ad-format="autorelaxed" />
+        <ins className="adsbygoogle" style={{ display: 'block' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} data-ad-format="autorelaxed" />
       </div>
     );
   }
@@ -78,11 +94,11 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
   /* ----------------------------------------------------------------
    * pionowe-tools — responsive vertical ad (side columns)
    * Google code: display:block
-   * data-ad-format="auto", data-full-width-responsive="true"
+   * data-ad-format="auto" (NO data-full-width-responsive)
    * --------------------------------------------------------------- */
   return (
     <div className={className}>
-      <ins ref={adRef} className="adsbygoogle" style={{ display: 'block', minHeight: '600px' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} data-ad-format="auto" />
+      <ins className="adsbygoogle" style={{ display: 'block', minHeight: '600px' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} data-ad-format="auto" />
     </div>
   );
 }
