@@ -77,6 +77,7 @@ import bg from '@/data/bg/pages/about.json';
 import ha from '@/data/ha/pages/about.json';
 import yo from '@/data/yo/pages/about.json';
 import af from '@/data/af/pages/about.json';
+import uk from '@/data/uk/pages/about.json';
 
 const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
   en,
@@ -109,6 +110,7 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
   ha,
   yo,
   af,
+  uk,
 };
 
 // ---------------------------------------------------------------------------

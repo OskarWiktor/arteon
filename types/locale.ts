@@ -29,7 +29,8 @@ export type Locale =
   | 'bg'
   | 'ha'
   | 'yo'
-  | 'af';
+  | 'af'
+  | 'uk';
 
 export type LocaleConfig = {
   lang: string;

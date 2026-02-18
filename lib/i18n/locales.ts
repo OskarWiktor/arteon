@@ -33,6 +33,7 @@ import bgDict from '@/data/bg/dictionary.json';
 import haDict from '@/data/ha/dictionary.json';
 import yoDict from '@/data/yo/dictionary.json';
 import afDict from '@/data/af/dictionary.json';
+import ukDict from '@/data/uk/dictionary.json';
 
 const dicts = {
   pl: plDict,
@@ -66,6 +67,7 @@ const dicts = {
   ha: haDict,
   yo: yoDict,
   af: afDict,
+  uk: ukDict,
 } as const;
 
 export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
@@ -406,6 +408,17 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/af/oor-ons',
     contactHref: '/af/kontak',
     privacyHref: '/af/privaatheidsbeleid',
+  },
+  uk: {
+    lang: 'uk',
+    hreflang: 'uk',
+    label: 'UK',
+    name: 'Українська',
+    toolsBasePath: '/uk/instrumenty',
+    toolsIndexHref: '/uk/instrumenty',
+    aboutHref: '/uk/pro-nas',
+    contactHref: '/uk/kontakt',
+    privacyHref: '/uk/polityka-konfidentsiinosti',
   },
 };
 

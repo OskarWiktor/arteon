@@ -44,6 +44,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       ha: { title: 'Hotuna da favicon' },
       yo: { title: 'Àwọn àwòrán àti favicon' },
       af: { title: 'Beelde en favicons' },
+      uk: { title: 'Зображення та favicon' },
     },
   },
   {
@@ -81,6 +82,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       ha: { title: 'Meta & SEO' },
       yo: { title: 'Meta & SEO' },
       af: { title: 'Meta & SEO' },
+      uk: { title: 'Meta та SEO' },
     },
   },
   {
@@ -118,6 +120,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       ha: { title: 'Imel da sadarwa' },
       yo: { title: 'Ímeèlì àti ìbánisọ̀rọ̀' },
       af: { title: 'E-pos & kommunikasie' },
+      uk: { title: 'Електронна пошта та комунікація' },
     },
   },
   {
@@ -155,6 +158,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       ha: { title: 'Launuka da fayafai' },
       yo: { title: 'Àwọ̀ àti pálẹ́ẹ̀tì' },
       af: { title: 'Kleure & palette' },
+      uk: { title: 'Кольори та палітри' },
     },
   },
   {
@@ -192,6 +196,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       ha: { title: 'Bugu da QR' },
       yo: { title: 'Ìtẹ̀wé àti QR' },
       af: { title: 'Druk & QR' },
+      uk: { title: 'Друк та QR' },
     },
   },
 ];
@@ -362,6 +367,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JPG/PNG-na-WebP-omskakelaar',
         description: 'Verminder beeldgrootte sonder kwaliteitverlies. Skakel JPG en PNG om na WebP en versnel jou webwerf.',
       },
+      uk: {
+        slug: 'konverter-jpg-png-u-webp',
+        title: 'Конвертер JPG/PNG у WebP',
+        description: 'Зменшуйте розмір зображень без втрати якості. Конвертуйте JPG та PNG у WebP і прискорте завантаження сайту.',
+      },
     },
   },
   {
@@ -525,6 +535,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'beeldredigeerder',
         title: 'Beeldredigeerder',
         description: "Berei die perfekte snywerk voor vir sosiale media of jou webwerf. Kies 'n voorafbepaalde formaat of voer pasgemaakte afmetings in.",
+      },
+      uk: {
+        slug: 'redaktor-zobrazhen',
+        title: 'Редактор зображень',
+        description: 'Підготуйте ідеальний кадр для соціальних мереж або вебсайту. Оберіть готовий формат або введіть власні розміри.',
       },
     },
   },
@@ -690,6 +705,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Favicon-generator',
         description: 'Genereer favicon.ico en PNG-ikone vanuit een beeld, wat voldoen aan blaaier- en Lighthouse-vereistes.',
       },
+      uk: {
+        slug: 'bezkoshtovnyi-generator-favicon',
+        title: 'Генератор favicon',
+        description: 'Створіть favicon.ico та PNG-іконки з одного зображення, що відповідають вимогам браузерів та Lighthouse.',
+      },
     },
   },
   {
@@ -853,6 +873,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'meta-titel-en-beskrywing-nagaaier',
         title: 'Meta-titel- en -beskrywing-nagaaier',
         description: 'Kontroleer die aantal karakters en sien hoe jou bladsy in Google lyk. Vermy afgekapte titels en beskrywings in soekresultate.',
+      },
+      uk: {
+        slug: 'perevirka-meta-zaholovka-ta-opysu',
+        title: 'Перевірка мета-заголовка та опису',
+        description: 'Перевірте кількість символів і подивіться, як ваша сторінка виглядає у Google. Уникайте обрізаних заголовків та описів у результатах пошуку.',
       },
     },
   },
@@ -1018,6 +1043,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Woord- en karakterteller',
         description: "Kontroleer tekslengte en evalueer of dit pas vir 'n tuisblad, diensbladsy, bloginskrywing of produkbeskrywing.",
       },
+      uk: {
+        slug: 'lichylnyk-sliv-i-symvoliv',
+        title: 'Лічильник слів та символів',
+        description: 'Перевірте довжину тексту та оцініть, чи відповідає він головній сторінці, опису послуги, статті чи опису продукту.',
+      },
     },
   },
   {
@@ -1181,6 +1211,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'gratis-e-pos-handtekening-generator',
         title: 'E-poshandtekeninggenerator',
         description: "Skep 'n professionele e-poshandtekening binne minute. Kopieer die klaargemaakte HTML-kode na Gmail of Outlook.",
+      },
+      uk: {
+        slug: 'bezkoshtovnyi-generator-pidpysu-email',
+        title: 'Генератор підпису електронної пошти',
+        description: 'Створіть професійний підпис електронної пошти за кілька хвилин. Скопіюйте готовий HTML-код у Gmail або Outlook.',
       },
     },
   },
@@ -1346,6 +1381,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Kleurkontras-nagaaier',
         description: 'Kontroleer of jou teks- en agtergrondkleure leesbaar is. Die gereedskap bereken kontras volgens WCAG en help om die regte kleur te kies.',
       },
+      uk: {
+        slug: 'perevirka-kontrastu-koloriv',
+        title: 'Перевірка контрасту кольорів',
+        description: 'Перевірте, чи читається текст на обраному фоні. Інструмент розраховує контраст згідно з WCAG і допоможе обрати правильний колір.',
+      },
     },
   },
   {
@@ -1509,6 +1549,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'kleur-onttrekker-uit-beeld',
         title: 'Kleuronttrekker uit beeld',
         description: "Laai 'n foto of logo op en die gereedskap sal die dominante kleure onttrek. Kopieer gegenereerde kleurkodes met een klik.",
+      },
+      uk: {
+        slug: 'ekstraktor-koloriv-z-zobrazhennia',
+        title: 'Екстрактор кольорів із зображення',
+        description: 'Завантажте фото або логотип, і інструмент виділить домінуючі кольори. Скопіюйте коди кольорів одним кліком.',
       },
     },
   },
@@ -1674,6 +1719,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Kleurpaletgenerator',
         description: 'Kies een kleur en genereer 9 palette: monochromaties, komplementêr, triadies en meer.',
       },
+      uk: {
+        slug: 'generator-kolirnykh-palitr',
+        title: 'Генератор колірних палітр',
+        description: 'Оберіть один колір і згенеруйте 9 палітр: монохромна, комплементарна, тріадна та інші.',
+      },
     },
   },
   {
@@ -1837,6 +1887,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'gratis-qr-kode-generator',
         title: 'Gratis QR-kode-generator',
         description: "Skep 'n QR-kode vir 'n webwerf, vCard, spyskaart of pamflet. Voer uit na PNG en SVG, sonder aanmelding, sonder perke.",
+      },
+      uk: {
+        slug: 'bezkoshtovnyi-generator-qr-kodu',
+        title: 'Безкоштовний генератор QR-коду',
+        description: 'Створіть QR-код для вебсайту, vCard, меню або листівки. Експорт у PNG та SVG, без реєстрації, без обмежень.',
       },
     },
   },

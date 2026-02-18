@@ -339,6 +339,17 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     contactHref: '/af/kontak',
     privacyHref: '/af/privaatheidsbeleid',
   },
+  uk: {
+    lang: 'uk',
+    hreflang: 'uk',
+    label: 'UK',
+    name: 'Українська',
+    toolsBasePath: '/uk/instrumenty',
+    toolsIndexHref: '/uk/instrumenty',
+    aboutHref: '/uk/pro-nas',
+    contactHref: '/uk/kontakt',
+    privacyHref: '/uk/polityka-konfidentsiinosti',
+  },
 };
 
 export const SUPPORTED_LOCALES = Object.keys(LOCALE_CONFIG) as Locale[];

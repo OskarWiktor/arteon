@@ -37,6 +37,7 @@ import bgPt from '@/data/bg/tools-ui/word-count-page-types.json';
 import haPt from '@/data/ha/tools-ui/word-count-page-types.json';
 import yoPt from '@/data/yo/tools-ui/word-count-page-types.json';
 import afPt from '@/data/af/tools-ui/word-count-page-types.json';
+import ukPt from '@/data/uk/tools-ui/word-count-page-types.json';
 
 const PAGE_TYPES: Record<Locale, PageTypeConfig[]> = {
   pl: plPt as PageTypeConfig[],
@@ -70,6 +71,7 @@ const PAGE_TYPES: Record<Locale, PageTypeConfig[]> = {
   ha: haPt as PageTypeConfig[],
   yo: yoPt as PageTypeConfig[],
   af: afPt as PageTypeConfig[],
+  uk: ukPt as PageTypeConfig[],
 };
 
 export function getPageTypes(locale: Locale): PageTypeConfig[] {
@@ -944,6 +946,31 @@ const EVAL_UI: Record<Locale, EvalUi> = {
       statusShort: '\u26a0\ufe0f Te kort',
       statusLong: '\u26a0\ufe0f Te lank',
       generatedBy: 'Gegenereer deur: arteonagency.pl/af/gereedskap/woord-en-karakter-teller',
+    },
+  },
+  uk: {
+    wordsUnit: 'слів',
+    emptyMessage: 'Вставте або введіть текст, щоб побачити аналіз.',
+    tooShort: (min, unit, missing) => `Текст нижче орієнтовного мінімуму (${min} ${unit}). Якщо тему розкрито \u2014 цього може бути достатньо. Бракує близько ${missing} ${unit}.`,
+    tooLong: (excess, unit) => `Текст перевищує орієнтовний максимум на ${excess} ${unit}. Якщо кожне речення несе цінність \u2014 довжина виправдана.`,
+    idealInRange: 'Довжина в рекомендованому діапазоні. Цінність для читача \u2014 головне, а діапазони служать орієнтиром.',
+    idealGoodLength: (label) => `Гарна довжина для ${label.toLowerCase()}. Кожен абзац повинен нести конкретну цінність для читача.`,
+    readingTime: (m) => (m === 1 ? '1 хвилина' : m >= 2 && m <= 4 ? `${m} хвилини` : `${m} хвилин`),
+    report: {
+      title: '\ud83d\udcca ЗВІТ ПРО ДОВЖИНУ ТЕКСТУ',
+      pageType: 'Тип сторінки',
+      range: 'Рекомендований діапазон',
+      statistics: '\ud83d\udcdd СТАТИСТИКА:',
+      words: 'Слова',
+      charsWithSpaces: 'Символи (з пробілами)',
+      charsWithoutSpaces: 'Символи (без пробілів)',
+      paragraphs: 'Абзаци',
+      readingTime: 'Час читання',
+      evaluation: '\ud83d\udcc8 ОЦІНКА',
+      statusIdeal: '\u2705 Гарна довжина',
+      statusShort: '\u26a0\ufe0f Занадто коротко',
+      statusLong: '\u26a0\ufe0f Занадто довго',
+      generatedBy: 'Згенеровано: arteonagency.pl/uk/instrumenty/lichylnyk-sliv-i-symvoliv',
     },
   },
 };

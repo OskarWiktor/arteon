@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "mainNavigation": "Головна навігація",
+    "logoAlt": "Arteon - логотип компанії",
+    "closeMenu": "Закрити меню",
+    "openMenu": "Відкрити меню",
+    "closeToolsList": "Закрити список інструментів",
+    "openToolsList": "Відкрити список інструментів",
+    "toolsLabel": "Інструменти",
+    "mobileMenu": "Мобільне меню",
+    "aboutLabel": "Про нас",
+    "contactLabel": "Контакти"
+  },
+  "footer": {
+    "copyright": "Усі права захищені.",
+    "description": "Безкоштовні інструменти для веб-розробників, дизайнерів і маркетологів.",
+    "companyDataLabel": "Дані компанії",
+    "toolsLabel": "Інструменти",
+    "legalLabel": "Правові документи",
+    "cookieSettingsLabel": "Налаштування cookies"
+  },
+  "desktopOnly": {
+    "title": "Цей інструмент працює на більшому екрані",
+    "description": "Щоб зручно користуватися цим інструментом, відкрийте його на ноутбуці, настільному комп'ютері або планшеті в альбомному режимі.",
+    "tipTitle": "Порада",
+    "tipText": "Якщо ви використовуєте планшет, переведіть його в альбомний режим - коли ширина вікна буде достатньою, інструмент завантажиться автоматично."
+  },
+  "cookie": {
+    "title": "Cookies та конфіденційність",
+    "description": "Ми використовуємо cookies для роботи сайту, аналізу трафіку та показу реклами. Дізнайтеся більше в нашій",
+    "setPreferences": "Налаштувати параметри",
+    "privacyPolicy": "Політика конфіденційності",
+    "privacyPolicyHref": "/uk/polityka-konfidentsiinosti",
+    "reject": "Відхилити все",
+    "settings": "Налаштування",
+    "accept": "Прийняти все",
+    "panelTitle": "Налаштування конфіденційності",
+    "panelDescription": "Параметри згоди на обробку даних.",
+    "categoriesLegend": "Категорії",
+    "essentialTitle": "Необхідні",
+    "essentialDescription": "Сайт не може працювати без них. Вони не збирають маркетингові дані.",
+    "essentialStatus": "Завжди активні",
+    "analyticsTitle": "Аналітика (GA4)",
+    "analyticsDescription": "Статистика відвідувань. Активує Google Analytics 4 за вашою згодою.",
+    "analyticsLabel": "Увімкнути аналітику GA4",
+    "adsTitle": "Реклама (Google AdSense)",
+    "adsDescription": "Персоналізована реклама на основі ваших інтересів.",
+    "adsLabel": "Увімкнути персоналізовану рекламу",
+    "changeDecision": "Ви можете змінити своє рішення в будь-який час",
+    "save": "Зберегти"
+  },
+  "skipToContent": "Перейти до вмісту",
+  "legal": [
+    {
+      "key": "privacy",
+      "href": "/uk/polityka-konfidentsiinosti",
+      "label": "Політика конфіденційності"
+    }
+  ],
+  "breadcrumbs": {
+    "home": "Головна",
+    "ariaLabel": "навігаційний ланцюжок"
+  },
+  "contactForm": {
+    "nameLabel": "Ім'я та прізвище",
+    "namePlaceholder": "Іван Петренко",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "ivan.petrenko@gmail.com",
+    "subjectLabel": "Тема",
+    "subjectPlaceholder": "напр. Повідомлення про помилку | Пропозиція | Запитання",
+    "messageLabel": "Повідомлення",
+    "messagePlaceholder": "Опишіть ваше запитання або пропозицію...",
+    "send": "Надіслати",
+    "error": "Щось пішло не так. Перевірте дані та спробуйте ще раз.",
+    "success": "Повідомлення надіслано! Ми відповімо якнайшвидше."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Безкоштовні інструменти",
+    "seeAllTools": "Переглянути всі інструменти",
+    "carouselLabel": "Карусель інструментів",
+    "scrollLeft": "Прокрутити ліворуч",
+    "scrollRight": "Прокрутити праворуч",
+    "carouselNavigation": "Навігація каруселі",
+    "goToSlide": "Перейти до слайда",
+    "of": "з",
+    "slide": "Слайд",
+    "tool": "Інструмент",
+    "openTool": "Відкрити інструмент"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Перейти на українську",
+    "toggleLabel": "Змінити мову",
+    "chooseLabel": "Оберіть мову",
+    "popularLabel": "Популярні",
+    "otherLabel": "Інші",
+    "closeModalLabel": "Закрити"
+  },
+  "mobileNav": {
+    "close": "Закрити",
+    "services": "Послуги",
+    "contact": "Зв'яжіться"
+  },
+  "infoBanner": {
+    "text": "Оновлення генератора email-підпису — перегляньте нові можливості",
+    "linkText": "інструменти"
+  }
+}

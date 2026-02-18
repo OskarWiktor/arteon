@@ -1,0 +1,141 @@
+{
+  "toolKey": "favicon",
+  "locale": "uk",
+  "metadata": {
+    "title": "Генератор favicon — створіть favicon.ico з будь-якого зображення",
+    "description": "Створіть favicon.ico та повний набір іконок для сайту з одного зображення. Усі потрібні розміри одним кліком. Працює локально у браузері.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
+    "path": "/uk/instrumenty/bezkoshtovnyi-generator-favicon"
+  },
+  "hero": {
+    "title": "Генератор favicon — створіть favicon.ico безкоштовно",
+    "description": "Згенеруйте favicon.ico та повний набір PNG-іконок для вашого сайту з одного зображення. Уся обробка відбувається локально у браузері.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/uk/instrumenty", "label": "Інструменти" },
+    "third": { "href": "/uk/instrumenty/bezkoshtovnyi-generator-favicon", "label": "Генератор favicon" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Генератор favicon — безкоштовний створювач іконок для сайтів",
+      "alternateName": ["Генератор favicon.ico та PNG-іконок"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "IconGenerator",
+      "description": "Безкоштовний генератор favicon. Створіть favicon.ico та PNG-іконки 16x16, 32x32, 180x180, 192x192 та 512x512 без обмежень і без надсилання файлів на сервер. Обробка відбувається локально у браузері.",
+      "featureList": [
+        "Генерація favicon.ico (16x16, 32x32, 48x48 в одному файлі)",
+        "Генерація PNG-іконок 16x16 та 32x32",
+        "Генерація apple-touch-icon 180x180",
+        "Генерація PWA-іконок 192x192 та 512x512",
+        "Підтримка PNG, JPG та SVG вихідних зображень",
+        "Налаштування кольору фону",
+        "Генерація файлу manifest.json для PWA",
+        "Завантаження всіх файлів як ZIP",
+        "Завантаження окремих файлів",
+        "Відповідність вимогам Lighthouse",
+        "Обробка у браузері (файли не надсилаються на сервер)",
+        "Безкоштовний інструмент, без реєстрації"
+      ]
+    },
+    "howTo": {
+      "name": "Як створити favicon для сайту",
+      "description": "Як згенерувати favicon.ico та PNG-іконки (16x16, 32x32, 180x180, 512x512) з одного зображення. Які розміри потрібні та як додати favicon у WordPress, HTML та Next.js.",
+      "steps": [
+        {
+          "name": "Додайте вихідне зображення",
+          "text": "Перетягніть файл у відведену область або оберіть графіку з пристрою. Найкраще підходить простий логотип або іконка у форматі PNG, JPG або SVG."
+        },
+        { "name": "Оберіть розміри іконок", "text": "Виберіть, які розміри іконок вам потрібні: favicon.ico (32x32), PNG-іконки (16x16, 32x32, 180x180, 192x192, 512x512)." },
+        { "name": "Налаштуйте параметри", "text": "За потреби встановіть колір фону для іконок, де джерельне зображення має прозорий фон." },
+        { "name": "Завантажте іконки", "text": "Завантажте окремі файли або весь набір одним ZIP-архівом. Архів містить також файл manifest.json та HTML-код для вставки." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Що таке favicon і навіщо він потрібен?",
+      "html": "<p class=\"text-mid\">Favicon (від англ. favorites icon) — це маленька іконка, яка відображається у вкладці браузера, закладках, історії та на панелі завдань. Це перший візуальний елемент, за яким користувач ідентифікує ваш сайт серед десятків відкритих вкладок.</p><p class=\"text-mid mt-3\">Сучасний сайт потребує кілька розмірів favicon: від маленького 16x16 для вкладки браузера до великого 512x512 для PWA (Progressive Web App). Генератор створює всі потрібні розміри з одного зображення.</p>"
+    },
+    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionSteps",
+      "title": "Як створити favicon для сайту?",
+      "description": "Генерація favicon займає менше хвилини:",
+      "grid": "four",
+      "items": [
+        { "icon": "RiUploadLine", "title": "1. Додайте зображення", "description": "Завантажте логотип або іконку у форматі PNG, JPG або SVG. Найкраще підходять прості графіки з чіткими формами." },
+        {
+          "icon": "RiCheckboxMultipleLine",
+          "title": "2. Оберіть розміри",
+          "description": "Виберіть потрібні розміри іконок. За замовчуванням увімкнені всі основні: favicon.ico, PNG 16-512px, apple-touch-icon."
+        },
+        { "icon": "RiPaletteLine", "title": "3. Налаштуйте фон", "description": "Для зображень з прозорістю встановіть колір фону. Для непрозорих зображень цей крок можна пропустити." },
+        { "icon": "RiDownloadLine", "title": "4. Завантажте набір", "description": "Завантажте весь набір іконок як ZIP або окремі файли. Архів містить manifest.json та HTML-код." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Які розміри favicon потрібні?",
+      "html": "<p class=\"text-mid mb-4\">Різні браузери та пристрої використовують різні розміри іконок. Нижче наведено повний перелік:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Файл</th><th class=\"py-2 pr-4 font-semibold\">Розмір</th><th class=\"py-2 font-semibold\">Призначення</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon.ico</td><td class=\"py-2 pr-4 whitespace-nowrap\">16x16, 32x32, 48x48</td><td class=\"text-primary-light0 py-2 text-sm\">Класичний favicon для вкладки браузера. Мультирозмірний файл ICO.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-16x16.png</td><td class=\"py-2 pr-4 whitespace-nowrap\">16x16</td><td class=\"text-primary-light0 py-2 text-sm\">Маленька іконка для вкладки у деяких браузерах.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-32x32.png</td><td class=\"py-2 pr-4 whitespace-nowrap\">32x32</td><td class=\"text-primary-light0 py-2 text-sm\">Стандартна іконка для вкладки браузера на дисплеях Retina.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">apple-touch-icon.png</td><td class=\"py-2 pr-4 whitespace-nowrap\">180x180</td><td class=\"text-primary-light0 py-2 text-sm\">Іконка для iOS при додаванні сайту на головний екран.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">android-chrome-192x192.png</td><td class=\"py-2 pr-4 whitespace-nowrap\">192x192</td><td class=\"text-primary-light0 py-2 text-sm\">Іконка для Android та PWA (manifest.json).</td></tr><tr><td class=\"py-2 pr-4 font-medium\">android-chrome-512x512.png</td><td class=\"py-2 pr-4 whitespace-nowrap\">512x512</td><td class=\"text-primary-light0 py-2 text-sm\">Велика іконка для PWA splash screen та Google.</td></tr></tbody></table></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Як додати favicon на сайт?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiCodeLine", "title": "HTML", "description": "Додайте теги &lt;link&gt; у &lt;head&gt; сторінки. Генератор створює готовий HTML-код, який достатньо скопіювати." },
+        { "icon": "RiWordpressLine", "title": "WordPress", "description": "Перейдіть у Зовнішній вигляд → Налаштувати → Ідентифікація сайту → Іконка сайту. Завантажте зображення 512x512." },
+        { "icon": "RiNextjsLine", "title": "Next.js", "description": "Помістіть favicon.ico та apple-touch-icon.png у папку app/. Next.js автоматично підхопить їх." },
+        { "icon": "RiGlobalLine", "title": "PWA", "description": "Додайте файл manifest.json з посиланнями на іконки 192x192 та 512x512. Генератор створює готовий manifest." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Чим особливий цей генератор favicon?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Конфіденційність", "description": "Файли обробляються у браузері — нічого не надсилається на сервер. Ваш логотип залишається приватним." },
+        { "icon": "RiCheckboxCircleLine", "title": "Відповідність Lighthouse", "description": "Згенеровані іконки відповідають вимогам Google Lighthouse для PWA та SEO." },
+        { "icon": "RiArchiveLine", "title": "Повний набір одним кліком", "description": "Завантажте всі розміри, manifest.json та HTML-код одним ZIP-архівом." },
+        { "icon": "RiCodeLine", "title": "Готовий HTML-код", "description": "Генератор створює HTML-теги для вставки у head — достатньо скопіювати та вставити." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Часті запитання про генератор favicon",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Яке зображення найкраще підходить для favicon?",
+          "answer": "Найкраще підходить простий логотип або іконка з чіткими формами та мінімумом деталей. Favicon відображається у дуже маленькому розмірі (16x16 або 32x32 пікселів), тому складні зображення з тонкими лініями та дрібним текстом будуть нерозбірливими.",
+          "answerSchemaText": "Простий логотип або іконка з чіткими формами. Складні зображення будуть нерозбірливими у маленькому розмірі."
+        },
+        {
+          "question": "Чи потрібен favicon.ico, якщо є PNG-іконки?",
+          "answer": "Так, favicon.ico досі потрібен для повної сумісності. Деякі старші браузери та сервіси (наприклад, RSS-рідери) шукають саме файл favicon.ico. Він також використовується за замовчуванням, якщо інші іконки не вказані.",
+          "answerSchemaText": "Так, favicon.ico потрібен для повної сумісності зі старими браузерами та сервісами."
+        },
+        {
+          "question": "Які формати вихідних зображень підтримуються?",
+          "answer": "Генератор приймає PNG, JPG та SVG. PNG рекомендується для логотипів з прозорістю. SVG дає найкращу якість при масштабуванні. JPG підходить для фотографічних іконок.",
+          "answerSchemaText": "PNG, JPG та SVG. PNG рекомендується для логотипів з прозорістю, SVG — для найкращої якості."
+        },
+        {
+          "question": "Що таке manifest.json і навіщо він потрібен?",
+          "answer": "Manifest.json — це файл конфігурації для Progressive Web App (PWA). Він містить інформацію про назву додатку, кольори теми та посилання на іконки. Браузер використовує його, коли користувач додає сайт на головний екран телефону.",
+          "answerSchemaText": "Файл конфігурації PWA з інформацією про іконки, назву та кольори додатку."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Інші інструменти" },
+    { "type": "gap", "size": "sm" }
+  ]
+}
