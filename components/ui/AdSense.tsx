@@ -9,9 +9,16 @@ const AD_CLIENT = 'ca-pub-7845947936813012';
 const PRESETS = {
   'tool-banner': { slot: '7551147298' },
   'in-article': { slot: '8632270964' },
+  'in-article-new': { slot: '8632270964' },
   autorelaxed: { slot: '4600483034' },
   vertical: { slot: '7442268796' },
 } as const;
+
+const LEGACY_IN_ARTICLE_SLOT = '9459125335';
+
+const SLOT_ALIASES: Record<string, string> = {
+  [LEGACY_IN_ARTICLE_SLOT]: PRESETS['in-article'].slot,
+};
 
 declare global {
   interface Window {
@@ -30,7 +37,9 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
   const containerRef = useRef<HTMLDivElement>(null);
   const pushed = useRef(false);
   const preset = PRESETS[variant];
-  const slot = adSlot || preset.slot;
+  const rawSlot = adSlot || preset.slot;
+  const slot = SLOT_ALIASES[rawSlot] ?? rawSlot;
+  const isInArticleVariant = variant === 'in-article' || variant === 'in-article-new';
 
   useEffect(() => {
     const container = containerRef.current;
@@ -45,11 +54,12 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
       ins.style.display = 'inline-block';
       ins.style.width = '728px';
       ins.style.height = '90px';
-    } else if (variant === 'in-article') {
+    } else if (isInArticleVariant) {
       ins.style.display = 'block';
       ins.style.textAlign = 'center';
       ins.setAttribute('data-ad-layout', 'in-article');
       ins.setAttribute('data-ad-format', 'fluid');
+      ins.setAttribute('data-full-width-responsive', 'true');
     } else if (variant === 'autorelaxed') {
       ins.style.display = 'block';
       ins.setAttribute('data-ad-format', 'autorelaxed');

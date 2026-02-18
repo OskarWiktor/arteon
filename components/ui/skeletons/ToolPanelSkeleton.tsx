@@ -1,6 +1,6 @@
 import Shimmer from './Shimmer';
 
-export type ToolPanelVariant = 'default' | 'word-count' | 'image-editor' | 'color-palette' | 'email-signature';
+export type ToolPanelVariant = 'default' | 'word-count' | 'image-editor' | 'color-palette' | 'email-signature' | 'meta-counter' | 'contrast-checker' | 'upload-tool';
 
 /* ── Reusable inner blocks ────────────────────────────────────── */
 
@@ -29,7 +29,7 @@ function ButtonShimmer({ width = 'w-28' }: { width?: string }) {
   return <Shimmer className={`h-9 ${width} !rounded-lg`} />;
 }
 
-/* ── Variant: default (2:3 grid — QR, Meta, WCAG, Extractor, Favicon, WebP) ── */
+/* ── Variant: default (QR Code — 2:3 grid, inputs + preview) ── */
 
 function DefaultPanel() {
   return (
@@ -50,6 +50,95 @@ function DefaultPanel() {
         <div className="flex gap-2">
           <Shimmer className="h-8 w-20 !rounded-lg" />
           <Shimmer className="h-8 w-20 !rounded-lg" />
+        </div>
+      </SectionBox>
+    </div>
+  );
+}
+
+/* ── Variant: meta-counter (2 field rows + Google preview) ── */
+
+function MetaCounterPanel() {
+  return (
+    <SectionBox className="space-y-6">
+      {[1, 2].map((i) => (
+        <div key={i} className="space-y-2">
+          <div className="flex items-center justify-between">
+            <Shimmer className="h-3.5 w-24 !rounded-md" />
+            <Shimmer className="h-6 w-16 !rounded-full" />
+          </div>
+          <Shimmer className="h-10 w-full" />
+          <Shimmer className="h-2 w-full !rounded-full" />
+          <Shimmer className="h-3 w-48 !rounded-md" />
+        </div>
+      ))}
+      <div className="space-y-2 rounded-xl border border-black/5 bg-neutral-50 p-4">
+        <Shimmer className="h-4 w-64 !rounded-md" />
+        <Shimmer className="h-3 w-full !rounded-md" />
+        <Shimmer className="h-3 w-3/4 !rounded-md" />
+      </div>
+    </SectionBox>
+  );
+}
+
+/* ── Variant: contrast-checker (2 color pickers + results table) ── */
+
+function ContrastCheckerPanel() {
+  return (
+    <div className="space-y-4">
+      <SectionBox className="space-y-4">
+        <div className="grid gap-4 md:grid-cols-2">
+          {[1, 2].map((i) => (
+            <div key={i} className="space-y-2">
+              <Shimmer className="h-3.5 w-20 !rounded-md" />
+              <div className="flex items-center gap-3">
+                <Shimmer className="h-10 w-10 !rounded-lg" />
+                <Shimmer className="h-10 flex-1" />
+              </div>
+            </div>
+          ))}
+        </div>
+        <Shimmer className="mx-auto h-20 w-full !rounded-xl !bg-neutral-200" />
+        <Shimmer className="mx-auto h-8 w-48 !rounded-md" />
+      </SectionBox>
+
+      <SectionBox className="space-y-3">
+        <Shimmer className="h-5 w-40 !rounded-md" />
+        {[1, 2, 3].map((i) => (
+          <div key={i} className="flex items-center justify-between rounded-lg border border-black/5 px-4 py-3">
+            <Shimmer className="h-4 w-32 !rounded-md" />
+            <div className="flex gap-2">
+              <Shimmer className="h-6 w-16 !rounded-full" />
+              <Shimmer className="h-6 w-16 !rounded-full" />
+            </div>
+          </div>
+        ))}
+      </SectionBox>
+    </div>
+  );
+}
+
+/* ── Variant: upload-tool (Favicon, WebP, Extractor — dropzone + results) ── */
+
+function UploadToolPanel() {
+  return (
+    <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
+      <SectionBox className="space-y-4">
+        <Shimmer className="h-5 w-28 !rounded-md" />
+        <Shimmer className="h-32 w-full !rounded-xl border border-dashed !border-neutral-200 !bg-neutral-50" />
+        <Shimmer className="h-3 w-48 !rounded-md" />
+        <div className="flex gap-3 pt-2">
+          <ButtonShimmer />
+          <ButtonShimmer width="w-24" />
+        </div>
+      </SectionBox>
+
+      <SectionBox className="space-y-4">
+        <Shimmer className="h-5 w-32 !rounded-md" />
+        <div className="grid gap-3 sm:grid-cols-2">
+          {[1, 2, 3, 4].map((i) => (
+            <Shimmer key={i} className="h-20 w-full !rounded-xl !bg-neutral-200" />
+          ))}
         </div>
       </SectionBox>
     </div>
@@ -250,16 +339,45 @@ interface ToolPanelSkeletonProps {
   variant?: ToolPanelVariant;
 }
 
+function SideAdShimmer() {
+  return (
+    <div className="sticky top-4">
+      <Shimmer className="h-[600px] w-full !rounded-xl !bg-neutral-50" />
+    </div>
+  );
+}
+
 export default function ToolPanelSkeleton({ variant = 'default' }: ToolPanelSkeletonProps) {
   return (
-    <div className="mx-auto w-[94%] max-w-[1420px] 2xl:max-w-none">
-      <AdBannerShimmer />
+    <div
+      className={[
+        'mx-auto w-[94%] max-w-[1420px]',
+        'xl:grid xl:w-full xl:max-w-none xl:grid-cols-[1fr_160px_minmax(0,1420px)_1fr] xl:gap-x-4',
+        'min-[1600px]:grid-cols-[1fr_160px_minmax(0,1420px)_160px_1fr]',
+      ].join(' ')}
+    >
+      <div className="hidden xl:col-start-2 xl:block">
+        <SideAdShimmer />
+      </div>
 
-      {variant === 'default' && <DefaultPanel />}
-      {variant === 'word-count' && <WordCountPanel />}
-      {variant === 'image-editor' && <ImageEditorPanel />}
-      {variant === 'color-palette' && <ColorPalettePanel />}
-      {variant === 'email-signature' && <EmailSignaturePanel />}
+      <div className="xl:col-start-3">
+        <AdBannerShimmer />
+
+        {variant === 'default' && <DefaultPanel />}
+        {variant === 'word-count' && <WordCountPanel />}
+        {variant === 'image-editor' && <ImageEditorPanel />}
+        {variant === 'color-palette' && <ColorPalettePanel />}
+        {variant === 'email-signature' && <EmailSignaturePanel />}
+        {variant === 'meta-counter' && <MetaCounterPanel />}
+        {variant === 'contrast-checker' && <ContrastCheckerPanel />}
+        {variant === 'upload-tool' && <UploadToolPanel />}
+
+        <AdBannerShimmer />
+      </div>
+
+      <div className="hidden min-[1600px]:col-start-4 min-[1600px]:block">
+        <SideAdShimmer />
+      </div>
     </div>
   );
 }
