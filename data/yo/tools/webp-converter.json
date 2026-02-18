@@ -187,48 +187,48 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the WebP converter",
+      "title": "Àwọn ìbéèrè tí a máa ń béèrè nípa olùyípadà WebP",
       "openByDefault": 1,
       "items": [
         {
-          "question": "What is WebP and how does it differ from JPG?",
-          "answer": "WebP is an image format created by Google that combines the advantages of JPG (small photo files) and PNG (transparency). WebP files are on average 25–35% smaller than JPG at comparable visual quality. All modern browsers (Chrome, Firefox, Safari, Edge) support WebP.",
-          "answerSchemaText": "WebP is a Google image format, 25–35% smaller than JPG. All modern browsers support it."
+          "question": "Kí ni WebP àti báwo ni ó ṣe yàtọ̀ sí JPG?",
+          "answer": "WebP jẹ́ ònà àwòrán tí Google ṣẹ̀dá tí ó ṣàkópọ̀ àwọn àǹfààní JPG (àwọn fáìlì fọ́tò kékeré) àti PNG (àìríojú). Àwọn fáìlì WebP kéré ní àpapọ̀ 25–35% ju JPG lọ ní dídára ojú tí ó bá ara mu. Gbogbo àwọn browser òde-òní (Chrome, Firefox, Safari, Edge) ṣe àtìlẹ́yìn fún WebP.",
+          "answerSchemaText": "WebP jẹ́ ònà àwòrán Google, 25–35% kéré ju JPG lọ. Gbogbo àwọn browser òde-òní ṣe àtìlẹ́yìn fún rẹ̀."
         },
         {
-          "question": "Does WebP support transparency like PNG?",
-          "answer": "Yes. WebP supports the alpha channel (transparency) - PNG files with transparent backgrounds will be converted correctly. However, size savings for PNGs with transparency may be less than for regular JPG photos.",
-          "answerSchemaText": "Yes, WebP supports alpha transparency. PNG files with transparent backgrounds convert correctly."
+          "question": "Ṣé WebP ṣe àtìlẹ́yìn fún àìríojú bí PNG?",
+          "answer": "Bẹ́ẹ̀ni. WebP ṣe àtìlẹ́yìn fún ìkànnì alpha (àìríojú) — àwọn fáìlì PNG pẹ̀lú ìpilẹ̀ aláìrí yóò jẹ́ yíyípadà dáadáa. Àmọ́, ìfipamọ́ ìwọn fún àwọn PNG pẹ̀lú àìríojú lè kéré sí i ju ti àwọn fọ́tò JPG ìbílẹ̀ lọ.",
+          "answerSchemaText": "Bẹ́ẹ̀ni, WebP ṣe àtìlẹ́yìn fún àìríojú alpha. Àwọn fáìlì PNG pẹ̀lú ìpilẹ̀ aláìrí jẹ́ yíyípadà dáadáa."
         },
         {
-          "question": "What quality level should I choose?",
-          "answer": "For most use cases (websites, stores, blogs), 80% quality provides a good balance between file size and appearance. For product photos or portfolios, you can choose 85–90%. Values below 70% will significantly reduce size but may introduce visible artifacts.",
-          "answerSchemaText": "80% for most uses. 85–90% for product photos. Below 70% for maximum compression."
+          "question": "Ìpele dídára wo ni kí n yan?",
+          "answer": "Fún ọ̀pọ̀lọpọ̀ àwọn ìlò (àwọn ojú-ìwé ayélujára, àwọn ilé ìtajà, àwọn blog), dídára 80% pèsè ìwọ̀ntúnwọ̀nsí tí ó dára láàárín ìwọn fáìlì àti ìrísí. Fún àwọn fọ́tò ọjà tàbí àwọn gbàlẹ̀rì, o lè yan 85–90%. Àwọn ìyẹ tí ó kéré ju 70% yóò dín ìwọn kù gan-an ṣùgbọ́n lè mú àwọn àmì tí a lè rí wá.",
+          "answerSchemaText": "80% fún ọ̀pọ̀lọpọ̀ àwọn ìlò. 85–90% fún àwọn fọ́tò ọjà. Nísàlẹ̀ 70% fún ìfúnpọ̀ tí ó pọ̀ jùlọ."
         },
         {
-          "question": "How much space can I save?",
-          "answer": "Typical savings are 25–35% compared to JPG. For example, a 500 KB JPG photo after conversion to WebP will be about 325–375 KB. For PNG, savings can be even greater - up to 50–70%.",
-          "answerSchemaText": "25–35% for JPG, up to 50–70% for PNG."
+          "question": "Àyè mélòó ni mo lè fipamọ́?",
+          "answer": "Ìfipamọ́ àṣà jẹ́ 25–35% ní àfiwé pẹ̀lú JPG. Bí àpẹẹrẹ, fọ́tò JPG 500 KB lẹ́yìn yíyípadà sí WebP yóò jẹ́ nǹkan bí 325–375 KB. Fún PNG, ìfipamọ́ lè tóbi sí i — títí dé 50–70%.",
+          "answerSchemaText": "25–35% fún JPG, títí dé 50–70% fún PNG."
         },
         {
-          "question": "Can I convert multiple files at once?",
-          "answer": "Yes. You can add any number of files at once - there is no limit. All will be converted, and you can download them individually or as a ZIP archive.",
-          "answerSchemaText": "Yes, unlimited batch conversion with ZIP download."
+          "question": "Ṣé mo lè yí àwọn fáìlì púpọ̀ padà ní ẹ̀ẹ̀kan?",
+          "answer": "Bẹ́ẹ̀ni. O lè fi iye fáìlì èyíkéyìí kún ní ẹ̀ẹ̀kan — kò sí ìdíwọ̀n. Gbogbo wọn yóò jẹ́ yíyípadà, o sì lè gbà wọ́n lẹ́yòọ̀kan tàbí gẹ́gẹ́ bí àkójọ ZIP.",
+          "answerSchemaText": "Bẹ́ẹ̀ni, yíyípadà àkójọ láìsí ìdíwọ̀n pẹ̀lú gbígbà ZIP."
         },
         {
-          "question": "What is Smart Quality?",
-          "answer": "Smart Quality is an automatic quality adjustment mechanism that ensures the output WebP file is never larger than the original. If conversion would result in a larger file (which can happen with already heavily compressed images), the tool automatically lowers quality until the output is smaller.",
-          "answerSchemaText": "Automatic quality adjustment ensuring the output file is always smaller than the original."
+          "question": "Kí ni Smart Quality?",
+          "answer": "Smart Quality jẹ́ ètò àtúnṣe dídára aìfọ̀wọ́ tí ó rí i dájú pé fáìlì WebP tí ó jadé kò tóbi ju ti àtìlẹ́bá lọ rárá. Tí yíyípadà bá mú fáìlì tí ó tóbi sí i (tí ó lè ṣẹlẹ̀ pẹ̀lú àwọn àwòrán tí a ti fúnpọ̀ tó tẹ́lẹ̀), irìnṣé náà dín dídára kù ní aìfọ̀wọ́ títí tí fáìlì tí ó jadé yóò fi kéré sí i.",
+          "answerSchemaText": "Àtúnṣe dídára aìfọ̀wọ́ tí ó rí i dájú pé fáìlì tí ó jadé máa kéré ju ti àtìlẹ́bá lọ nígbà gbogbo."
         },
         {
-          "question": "Does WebP speed up a website?",
-          "answer": "Yes. Smaller image files mean faster page loading. This directly impacts the LCP (Largest Contentful Paint) metric in Core Web Vitals - one of Google's ranking factors. Tools like PageSpeed Insights often recommend converting images to WebP.",
-          "answerSchemaText": "Yes, smaller files improve LCP and Core Web Vitals scores."
+          "question": "Ṣé WebP mú ojú-ìwé ayélujára yára sí i?",
+          "answer": "Bẹ́ẹ̀ni. Àwọn fáìlì àwòrán tí ó kéré sí i túmọ̀ sí ìgbérù ojú-ìwé tí ó yára sí i. Èyí ní ipa tààrà lórí ìyẹ LCP (Largest Contentful Paint) nínú Core Web Vitals — ọ̀kan nínú àwọn ohun tí Google fi ń tò ipò. Àwọn irìnṣé bí PageSpeed Insights sábà máa ń ṣe àbá yíyípadà àwọn àwòrán sí WebP.",
+          "answerSchemaText": "Bẹ́ẹ̀ni, àwọn fáìlì tí ó kéré sí i mú ìyẹ LCP àti Core Web Vitals dára sí i."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
+    { "type": "toolsCarousel", "title": "Ṣàwárí àwọn irìnṣé mìíràn" },
     { "type": "gap", "size": "sm" }
   ]
 }

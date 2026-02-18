@@ -2,68 +2,68 @@
   "toolKey": "emailSignature",
   "locale": "ha",
   "metadata": {
-    "title": "Free Email Signature Generator – HTML for Gmail & Outlook",
-    "description": "Create a professional HTML email signature without coding. Add contact details, logo, social media links and copy to Gmail or Outlook. No signup, no limits.",
+    "title": "Mai Samar da Sa Hannu na Imel Kyauta – HTML don Gmail & Outlook",
+    "description": "Ƙirƙiri sa hannun imel na HTML na ƙwararru ba tare da shirye-shiryen kwamfuta ba. Ƙara bayanan tuntubar, alama, hanyoyin haɗin kafofin watsa labarai kuma kwafa zuwa Gmail ko Outlook. Ba buƙatar rajista, ba iyaka.",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
     "path": "/ha/kayan-aiki/samar-da-sa-hannu-imel-kyauta"
   },
   "hero": {
-    "title": "Create a professional HTML email signature",
-    "description": "Build a professional email signature in minutes. Enter your details, choose colors, and copy the ready HTML code into Gmail, Outlook, or any email client.",
+    "title": "Ƙirƙiri sa hannun imel na HTML na ƙwararru",
+    "description": "Gina sa hannun imel na ƙwararru cikin mintuna. Shigar da bayananka, zaɓi launuka, kuma kwafa lambar HTML da ta shirya zuwa Gmail, Outlook, ko kowane abokin ciniki na imel.",
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/ha/kayan-aiki", "label": "Tools" },
-    "third": { "href": "/ha/kayan-aiki/samar-da-sa-hannu-imel-kyauta", "label": "Email signature generator" }
+    "second": { "href": "/ha/kayan-aiki", "label": "Kayan Aiki" },
+    "third": { "href": "/ha/kayan-aiki/samar-da-sa-hannu-imel-kyauta", "label": "Mai samar da sa hannun imel" }
   },
   "schemas": {
     "software": {
-      "name": "Free email signature generator online",
-      "alternateName": ["HTML email signature generator", "Email signature creator", "Email footer generator online"],
+      "name": "Mai samar da sa hannun imel kyauta ta yanar gizo",
+      "alternateName": ["Mai samar da sa hannun imel na HTML", "Mai ƙirƙirar sa hannun imel", "Mai samar da ƙafafun imel ta yanar gizo"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Free HTML email signature generator. Add contact details, CTA link, and social media profiles, then copy the ready code into Gmail, Outlook, and other email clients.",
+      "description": "Mai samar da sa hannun imel na HTML kyauta. Ƙara bayanan tuntubar, hanyar haɗin CTA, da bayanan kafofin watsa labarai, sannan kwafa lambar da ta shirya zuwa Gmail, Outlook, da sauran abokan ciniki na imel.",
       "featureList": [
-        "Contact details (name, title, company)",
-        "Phone, email, and website URL",
-        "Logo or profile picture with shape and size options",
-        "Social media icons (12 platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
-        "Customizable colors (text, accent, background)",
-        "Individual text style for each signature element",
-        "CTA button with custom text and link",
-        "Separator line styling (style, thickness, color)",
-        "Live signature preview with background switching (light, dark, checkerboard)",
-        "HTML source code preview in modal",
-        "Copy HTML code to clipboard",
-        "Download signature as HTML file",
-        "Export and import configuration as JSON file",
-        "Compatible with Gmail, Outlook, Apple Mail",
-        "Free tool, no login required"
+        "Bayanan tuntubar (suna, taken, kamfanin)",
+        "Waya, imel, da URL na gidan yanar gizo",
+        "Alama ko hoton bayanan martaba tare da zaɓuɓɓukan siffa da girma",
+        "Alamomin kafofin watsa labarai (dandamali 12: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
+        "Launuka masu sauya (rubutu, ƙarfafawa, baya)",
+        "Salon rubutu na kowane bangarrn sa hannu",
+        "Maɓallin CTA tare da rubutu da hanyar haɗi na musamman",
+        "Salon layin raba (salo, kauri, launi)",
+        "Duba sa hannu kai tsaye tare da sauya baya (haske, duhu, checkerboard)",
+        "Duba lambar tushe na HTML a cikin modal",
+        "Kwafa lambar HTML zuwa clipboard",
+        "Sauke sa hannu a matsayin fayil na HTML",
+        "Fitar da shigar da tsari a matsayin fayil na JSON",
+        "Yana aiki tare da Gmail, Outlook, Apple Mail",
+        "Kayan aiki kyauta, ba a buƙatar shiga ba"
       ]
     },
     "howTo": {
-      "name": "How to use the email signature generator",
-      "description": "How to create a professional HTML email signature using the free Arteon generator.",
+      "name": "Yadda ake amfani da mai samar da sa hannun imel",
+      "description": "Yadda ake ƙirƙirar sa hannun imel na HTML na ƙwararru ta amfani da mai samar da Arteon kyauta.",
       "totalTime": "PT5M",
       "steps": [
-        { "name": "Choose a signature layout", "text": "Select one of eight available layouts: Standard, Top bar, Labels left, Centered, Compact, Two columns, Minimalist, or Bottom bar." },
+        { "name": "Zaɓi tsarin sa hannu", "text": "Zaɓi ɗaya daga cikin tsare-tsare takwas da ke akwai: Standard, Top bar, Labels left, Centered, Compact, Two columns, Minimalist, ko Bottom bar." },
         {
-          "name": "Fill in contact details",
-          "text": "In the Details tab, enter your name, title, company, email, phone, and website URL. Optionally add an avatar or logo - after entering the image URL, you can choose shape (round, rounded, square) and size (40, 56, or 72 px)."
+          "name": "Cika bayanan tuntubar",
+          "text": "A cikin shafin Details, shigar da sunanka, taken, kamfanin, imel, waya, da URL na gidan yanar gizo. A zaɓi ka ƙara avatar ko alama - bayan shigar da URL na hoto, za ka iya zaɓar siffa (zagaye, daɓɓe, murabba'i) da girma (40, 56, ko 72 px)."
         },
-        { "name": "Add CTA buttons", "text": "In the Buttons tab, add text and URL for the main button. Optionally add a second outline-style button and choose button rounding." },
+        { "name": "Ƙara maɓallai na CTA", "text": "A cikin shafin Buttons, ƙara rubutu da URL don babban maɓalli. A zaɓi ka ƙara maɓalli na biyu na salon outline kuma zaɓi zagayewar maɓalli." },
         {
-          "name": "Add social media links",
-          "text": "In the Social Media tab, paste URLs to your profiles. Supported platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest."
+          "name": "Ƙara hanyoyin haɗin kafofin watsa labarai",
+          "text": "A cikin shafin Social Media, liƙa URL zuwa bayanan martaba naka. Dandamali da ake tallafawa: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, da Pinterest."
         },
-        { "name": "Customize appearance", "text": "In the Appearance tab, choose a color theme, font, and text size. In the Text Style tab, change colors and sizes of individual elements." },
+        { "name": "Gyara bayyanar", "text": "A cikin shafin Appearance, zaɓi jigon launi, font, da girman rubutu. A cikin shafin Text Style, canza launuka da girman abubuwa ɗaya-ɗaya." },
         {
-          "name": "Add disclaimer and configure separator",
-          "text": "In the Disclaimer / Legal tab, enter legal text and configure the separator line - choose style (solid, dashed, dotted), thickness (1–3 px), and color."
+          "name": "Ƙara sanarwar doka kuma tsara mai raba",
+          "text": "A cikin shafin Disclaimer / Legal, shigar da rubutun doka kuma tsara layin raba - zaɓi salon (solid, dashed, dotted), kauri (1–3 px), da launi."
         },
         {
-          "name": "Preview and copy signature",
-          "text": "The signature preview is available on light, dark, or checkerboard background. The Copy signature (Gmail / Outlook) button copies the ready code to clipboard. Also available: Copy HTML code, Download as HTML, View HTML code, and export configuration as JSON file."
+          "name": "Duba kuma kwafa sa hannu",
+          "text": "Ana iya duba sa hannu a kan bayan haske, duhu, ko checkerboard. Maɓallin Kwafa sa hannu (Gmail / Outlook) yana kwafa lambar da ta shirya zuwa clipboard. Har ila yau akwai: Kwafa lambar HTML, Sauke a matsayin HTML, Duba lambar HTML, da fitar da tsari a matsayin fayil na JSON."
         }
       ]
     }
@@ -72,191 +72,207 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Why have a professional email signature?",
-      "html": "<p class=\"text-mid\">An email signature (also called an email footer) is a block of information at the end of every sent message. It contains contact details, job title, company name, and often a link to the website or meeting calendar.</p><p class=\"text-mid mt-3\">The recipient does not have to search for the phone number in previous messages - all details are readily available. A professional email signature also shows that you pay attention to details and maintain a consistent company image in business correspondence.</p>"
+      "title": "Me ya sa ake buƙatar sa hannun imel na ƙwararru?",
+      "html": "<p class=\"text-mid\">Sa hannun imel (wanda kuma ake kira ƙafafun imel) toshe ne na bayanai a ƙarshen kowane saƙon da aka aika. Ya ƙunshi bayanan tuntubar, taken aiki, sunan kamfanin, kuma galibi hanyar haɗi zuwa gidan yanar gizo ko kalandar taro.</p><p class=\"text-mid mt-3\">Mai karɓa ba zai buƙaci neman lambar waya a cikin saƙonnin da suka gabata ba - dukan bayanan suna nan a shirye. Sa hannun imel na ƙwararru kuma yana nuna cewa kana kula da daki-daki kuma kana kiyaye hoton kamfanin mai daidaituwa a cikin wasiƙun kasuwanci.</p>"
     },
     { "type": "gap", "size": "sm" },
     {
       "type": "sectionSteps",
-      "title": "How to use the email signature generator",
-      "description": "Creating a professional email signature takes just a few minutes:",
+      "title": "Yadda ake amfani da mai samar da sa hannun imel",
+      "description": "Ƙirƙirar sa hannun imel na ƙwararru yana ɗaukar mintuna kaɗan kawai:",
       "grid": "three",
       "items": [
-        { "title": "1. Enter details", "description": "Fill in your name, title, company, and contact details." },
-        { "title": "2. Customize appearance", "description": "Choose a layout, colors, add a logo, and social media links." },
-        { "title": "3. Copy the code", "description": "The Copy signature button copies the ready code to clipboard. Just paste it in Gmail, Outlook, or another email client." }
+        { "title": "1. Shigar da bayanan", "description": "Cika sunanka, taken, kamfanin, da bayanan tuntubar." },
+        { "title": "2. Gyara bayyanar", "description": "Zaɓi tsari, launuka, ƙara alama, da hanyoyin haɗin kafofin watsa labarai." },
+        { "title": "3. Kwafa lambar", "description": "Maɓallin Kwafa sa hannu yana kwafa lambar da ta shirya zuwa clipboard. Kawai liƙa shi a cikin Gmail, Outlook, ko wani abokin ciniki na imel." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to fill in signature details",
-      "html": "<p class=\"text-mid\">The <strong>Details</strong> tab contains all the fields you can fill in. Only two are required: name and email address. The remaining fields are optional and will appear in the signature only when filled in.</p><h3 class=\"h5 mt-6 mb-3\">Fields in the Details tab</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Line above name</strong> - additional text displayed above the name. You can enter the company name, tagline, or slogan.</li><li><strong>Avatar / logo (image URL)</strong> - URL to a profile photo or company logo. The image should be square (min. 120×120 px) and publicly accessible online. After pasting the URL, additional options appear: <strong>Avatar shape</strong> (round, rounded, or square) and <strong>Avatar size</strong> (small - 40 px, medium - 56 px, large - 72 px).</li><li><strong>Full name</strong> - required field. Enter your full name.</li><li><strong>Name tag</strong> - short text next to the name, e.g., pronouns or abbreviated title.</li><li><strong>Job title</strong> - your role in the company, e.g., Sales Manager, Marketing Specialist.</li><li><strong>Company name</strong> - the name of the organization you represent.</li><li><strong>Additional line</strong> - a short description of what you do or what you offer.</li><li><strong>Email</strong> - required field. Enter your business email address.</li><li><strong>Phone</strong> - contact number. Any format, e.g., +1 555 000 000.</li><li><strong>Website</strong> - full URL of your website, starting with https://.</li><li><strong>Address</strong> - physical company address (street, city, postal code).</li><li><strong>Formal details</strong> - tax ID, license number, or other details required in your industry.</li></ul>"
+      "title": "Yadda ake cika bayanan sa hannu",
+      "html": "<p class=\"text-mid\">Shafin <strong>Details</strong> ya ƙunshi dukan filayen da za ka iya cikawa. Biyu ne kawai ake buƙata: suna da adireshin imel. Sauran filayen na zaɓi ne kuma za su bayyana a cikin sa hannu ne kawai lokacin da aka cika su.</p><h3 class=\"h5 mt-6 mb-3\">Filaye a cikin shafin Details</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Layin sama da suna</strong> - ƙarin rubutu da ake nuna sama da sunan. Za ka iya shigar da sunan kamfanin, taken, ko taken yabo.</li><li><strong>Avatar / alama (URL na hoto)</strong> - URL zuwa hoton bayanan martaba ko alamar kamfanin. Hoton ya kamata ya zama murabba'i (min. 120×120 px) kuma ana iya samunsa a bainar jama'a ta yanar gizo. Bayan liƙa URL, ƙarin zaɓuɓɓuka sun bayyana: <strong>Siffar avatar</strong> (zagaye, daɓɓe, ko murabba'i) da <strong>Girman avatar</strong> (ƙarami - 40 px, matsakaici - 56 px, babba - 72 px).</li><li><strong>Cikakken suna</strong> - filin da ake buƙata. Shigar da cikakken sunanka.</li><li><strong>Alamar suna</strong> - gajeren rubutu kusa da sunan, misali, karin suna ko gajeriyar taken.</li><li><strong>Taken aiki</strong> - matsayinka a cikin kamfanin, misali, Manajan Tallace-tallace, Ƙwararren Tallace-tallace.</li><li><strong>Sunan kamfanin</strong> - sunan ƙungiyar da kake wakilta.</li><li><strong>Ƙarin layi</strong> - gajeren bayani game da abin da kake yi ko abin da kake bayarwa.</li><li><strong>Imel</strong> - filin da ake buƙata. Shigar da adireshin imel na kasuwancin ka.</li><li><strong>Waya</strong> - lambar tuntubar. Kowane tsari, misali, +1 555 000 000.</li><li><strong>Gidan yanar gizo</strong> - cikakken URL na gidan yanar gizon ka, yana farawa da https://.</li><li><strong>Adireshi</strong> - adireshin kamfanin na zahiri (titi, birni, lambar gidan waya).</li><li><strong>Bayanan hukuma</strong> - lambar haraji, lambar lasisi, ko wasu bayanan da ake buƙata a cikin masana'antar ka.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "Signature layouts - which to choose?",
-      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Signature layout</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">John Smith</p><p class=\"text-mid text-sm\">Web Developer</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">john@example.com</p><p class=\"text-mid\">+1 555 000 000</p></div></div></div>",
-      "html": "<p class=\"text-mid\">The generator offers eight ready-made layouts. Each presents the same information in a different way.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> - classic vertical layout, fits most use cases.</li><li><strong>Top bar</strong> - a horizontal bar separates the signature from the content.</li><li><strong>Labels left</strong> - two columns: labels and values.</li><li><strong>Centered</strong> - formal appearance, content centered.</li><li><strong>Compact</strong> - everything in one line, minimal height.</li><li><strong>Two columns</strong> - details on the left, contact info on the right.</li><li><strong>Minimalist</strong> - only the most important information.</li><li><strong>Bottom bar</strong> - colored bar with contact at the bottom of the signature.</li></ul>"
+      "title": "Tsarin sa hannu - wanne za a zaɓa?",
+      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Tsarin sa hannu</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">John Smith</p><p class=\"text-mid text-sm\">Web Developer</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">john@example.com</p><p class=\"text-mid\">+1 555 000 000</p></div></div></div>",
+      "html": "<p class=\"text-mid\">Mai samar da yana ba da tsare-tsare takwas da aka riga aka shirya. Kowannensu yana gabatar da bayanai iri ɗaya ta hanya dabam.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> - tsari na tsaye na gargajiya, ya dace da yawancin amfanin.</li><li><strong>Top bar</strong> - sandar a kwance tana raba sa hannu daga abun ciki.</li><li><strong>Labels left</strong> - ginshiƙai biyu: lakabi da ƙimomi.</li><li><strong>Centered</strong> - bayyanar hukuma, abun ciki a tsakiya.</li><li><strong>Compact</strong> - duka a cikin layi ɗaya, ƙaramin tsayi.</li><li><strong>Two columns</strong> - bayanan a hagu, bayanan tuntubar a dama.</li><li><strong>Minimalist</strong> - bayanan da suka fi muhimmanci kawai.</li><li><strong>Bottom bar</strong> - sandar mai launi tare da tuntubar a ƙasan sa hannu.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to add CTA buttons",
-      "html": "<p class=\"text-mid\">A CTA button (call-to-action) is a clickable element that directs the recipient to a chosen page. It can be a link to a meeting calendar, contact form, or offer. The generator allows adding two CTA buttons.</p><h3 class=\"h5 mt-6 mb-3\">Main button</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Open the <strong>Buttons</strong> tab in the editor.</li><li>In the <strong>Main button</strong> section, enter the text the recipient will see, e.g., Schedule a free consultation.</li><li>In the <strong>CTA link</strong> field, paste the full URL. The address must start with https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Secondary button</h3><p class=\"text-mid\">You can add a second CTA button in outline style (transparent background with border). Fill in the fields in the <strong>Secondary button</strong> section the same way as for the main button.</p><h3 class=\"h5 mt-6 mb-3\">Button rounding</h3><p class=\"text-mid\">At the bottom of the Buttons tab you will find the <strong>Button rounding</strong> option. Three variants are available: None (sharp corners), Slight (slightly rounded), or Full (oval button).</p><p class=\"text-mid mt-4\">If you leave both fields empty, the button will not appear in the signature. If you fill in only one field, the button will also not be visible - both text and link are needed.</p>"
+      "title": "Yadda ake ƙara maɓallai na CTA",
+      "html": "<p class=\"text-mid\">Maɓallin CTA (kira zuwa aiki) abu ne da ake iya dannawa wanda ke jagorantar mai karɓa zuwa shafin da aka zaɓa. Yana iya zama hanyar haɗi zuwa kalandar taro, fom na tuntubar, ko tayin. Mai samar da yana ba da damar ƙara maɓallai na CTA biyu.</p><h3 class=\"h5 mt-6 mb-3\">Babban maɓalli</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Buɗe shafin <strong>Buttons</strong> a cikin edita.</li><li>A cikin sashen <strong>Babban maɓalli</strong>, shigar da rubutun da mai karɓa zai gani, misali, Tsara shawarwari kyauta.</li><li>A cikin filin <strong>Hanyar haɗin CTA</strong>, liƙa cikakken URL. Adireshin dole ya fara da https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Maɓalli na biyu</h3><p class=\"text-mid\">Za ka iya ƙara maɓallin CTA na biyu a salon outline (bayan gaskiya tare da iyaka). Cika filayen a cikin sashen <strong>Maɓalli na biyu</strong> kamar yadda aka yi don babban maɓalli.</p><h3 class=\"h5 mt-6 mb-3\">Zagayewar maɓalli</h3><p class=\"text-mid\">A ƙasan shafin Buttons za ka sami zaɓin <strong>Zagayewar maɓalli</strong>. Bambance-bambance uku suna samuwa: Babu (kusurwa masu kaifi), Kaɗan (an zagaya kaɗan), ko Cikakke (maɓallin oval).</p><p class=\"text-mid mt-4\">Idan ka bar filayen biyu babu komai, maɓallin ba zai bayyana a cikin sa hannu ba. Idan ka cika fili ɗaya kawai, maɓallin ma ba zai bayyana ba - ana buƙatar rubutu da hanyar haɗi duka biyun.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to add social media links",
-      "html": "<p class=\"text-mid\">In the <strong>Social Media</strong> tab you can add links to your profiles. The generator supports twelve platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (formerly Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">How to do it</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Open the <strong>Social Media</strong> tab in the editor.</li><li>Next to each platform you will find a URL field. Paste the full link to your profile, e.g., https://www.linkedin.com/in/yourprofile.</li><li>Fill in only the fields you need. Empty fields will not appear in the signature.</li></ol><h3 class=\"h5 mt-6 mb-3\">Social media icons</h3><p class=\"text-mid\">At the bottom of the Social Media tab you will find the <strong>Show icons next to service names</strong> option. When enabled, links will display as colored SVG icons instead of just names.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Icon size</strong> - options: Small (16 px), Medium (20 px), or Large (24 px).</li><li><strong>Icon color</strong> - Platform colors (default colors for each platform), Accent color (uniform accent color), or Text color.</li></ul>"
+      "title": "Yadda ake ƙara hanyoyin haɗin kafofin watsa labarai",
+      "html": "<p class=\"text-mid\">A cikin shafin <strong>Social Media</strong> za ka iya ƙara hanyoyin haɗi zuwa bayanan martaba naka. Mai samar da yana tallafawa dandamali goma sha biyu: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (tsohuwar Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram, da Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Yadda ake yin shi</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Buɗe shafin <strong>Social Media</strong> a cikin edita.</li><li>Kusa da kowane dandamali za ka sami filin URL. Liƙa cikakken hanyar haɗi zuwa bayanan martaba naka, misali, https://www.linkedin.com/in/yourprofile.</li><li>Cika filayen da kake buƙata kawai. Filayen da babu komai ba za su bayyana a cikin sa hannu ba.</li></ol><h3 class=\"h5 mt-6 mb-3\">Alamomin kafofin watsa labarai</h3><p class=\"text-mid\">A ƙasan shafin Social Media za ka sami zaɓin <strong>Nuna alamomin hoto kusa da sunayen sabis</strong>. Lokacin da aka kunna, hanyoyin haɗi za su nuna a matsayin alamomin SVG masu launi maimakon sunaye kawai.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Girman alama</strong> - zaɓuɓɓuka: Ƙarami (16 px), Matsakaici (20 px), ko Babba (24 px).</li><li><strong>Launin alama</strong> - Launukan dandamali (launuka na asali don kowane dandamali), Launin ƙarfafawa (launin ƙarfafawa mai daidaituwa), ko Launin rubutu.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Appearance customization",
-      "html": "<p class=\"text-mid\">In the <strong>Appearance</strong> tab you can customize colors, font, and other visual elements of the signature.</p><h3 class=\"h5 mt-6 mb-3\">Color themes</h3><p class=\"text-mid\">At the top of the tab you will find five ready-made themes: Dark, Blue, Purple, Green, and Gray. Clicking a theme automatically sets the accent color and text color. This is the quickest way to achieve a consistent signature look.</p><h3 class=\"h5 mt-6 mb-3\">Colors</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Accent color</strong> - used in the side/top bar, CTA button, and links. You can choose any color from the palette.</li><li><strong>Text color</strong> - color of all text in the signature (name, contact details, disclaimer).</li><li><strong>Background color</strong> - background color of the entire signature. White by default, but you can change it.</li></ul><h3 class=\"h5 mt-6 mb-3\">Font and size</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Font</strong> - options: Arial, Verdana, Tahoma, Trebuchet MS, and Georgia. All are email-safe and will display correctly for the recipient.</li><li><strong>Text size</strong> - three options: Small (12 px), Standard (14 px), and Larger (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Additional settings</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Signature border</strong> - you can add a border to the signature by selecting any combination of sides (left, right, top, bottom). Selecting all sides automatically sets a full border. The border uses the accent color.</li></ul>"
+      "title": "Gyara bayyanar",
+      "html": "<p class=\"text-mid\">A cikin shafin <strong>Appearance</strong> za ka iya gyara launuka, font, da sauran abubuwan gani na sa hannu.</p><h3 class=\"h5 mt-6 mb-3\">Jigogin launuka</h3><p class=\"text-mid\">A saman shafin za ka sami jigogi biyar da aka shirya: Duhu, Shuɗi, Purple, Kore, da Toka. Dannawa jigo yana saita launin ƙarfafawa da launin rubutu ta atomatik. Wannan ita ce hanya mafi sauri don samun bayyanar sa hannu mai daidaituwa.</p><h3 class=\"h5 mt-6 mb-3\">Launuka</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Launin ƙarfafawa</strong> - ana amfani da shi a cikin sandar gefe/sama, maɓallin CTA, da hanyoyin haɗi. Za ka iya zaɓar kowane launi daga fayafayan.</li><li><strong>Launin rubutu</strong> - launin dukan rubutu a cikin sa hannu (suna, bayanan tuntubar, sanarwar doka).</li><li><strong>Launin baya</strong> - launin baya na dukan sa hannu. Fari ne ta asali, amma za ka iya canza shi.</li></ul><h3 class=\"h5 mt-6 mb-3\">Font da girma</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Font</strong> - zaɓuɓɓuka: Arial, Verdana, Tahoma, Trebuchet MS, da Georgia. Duk suna da aminci don imel kuma za su bayyana daidai ga mai karɓa.</li><li><strong>Girman rubutu</strong> - zaɓuɓɓuka uku: Ƙarami (12 px), Standard (14 px), da Mafi girma (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Ƙarin saituna</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Iyakar sa hannu</strong> - za ka iya ƙara iyaka ga sa hannu ta hanyar zaɓar kowane haɗin bangarori (hagu, dama, sama, ƙasa). Zaɓar dukan bangarori yana saita cikakken iyaka ta atomatik. Iyakar tana amfani da launin ƙarfafawa.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Text style - colors and sizes of individual elements",
-      "html": "<p class=\"text-mid\">In the <strong>Text Style</strong> tab you can individually customize the color and font size for each text element in the signature.</p><h3 class=\"h5 mt-6 mb-3\">Available elements</h3><p class=\"text-mid\">Only elements that currently have content in the signature are visible. For each element you can set:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Name</strong> - displayed in accent color by default.</li><li><strong>Job title</strong> - role in the company.</li><li><strong>Company</strong> - organization name.</li><li><strong>Contact details</strong> - email, phone, website (labels).</li><li><strong>Social media</strong> - profile links.</li><li><strong>Legal disclaimer</strong> - legal text at the bottom of the signature.</li></ul><h3 class=\"h5 mt-6 mb-3\">How to change color</h3><p class=\"text-mid\">Next to each element you will find a row of color options. Click a color square to select it. You can also add a custom color by clicking the colored square with a plus - choose a color and click Save. Custom colors (up to 8) are shared between all elements.</p><p class=\"text-mid mt-3\">The reset icon button restores the default color of the element.</p><h3 class=\"h5 mt-6 mb-3\">How to change size</h3><p class=\"text-mid\">In the second row you will find a size control with - and + buttons. The value shows the offset relative to the base font size (set in the Appearance tab). Range: from -4 to +4 pixels.</p>"
+      "title": "Salon rubutu - launuka da girman abubuwa ɗaya-ɗaya",
+      "html": "<p class=\"text-mid\">A cikin shafin <strong>Text Style</strong> za ka iya gyara launin da girman font ɗaya-ɗaya don kowane abu na rubutu a cikin sa hannu.</p><h3 class=\"h5 mt-6 mb-3\">Abubuwan da ke akwai</h3><p class=\"text-mid\">Abubuwan da ke da abun ciki a halin yanzu a cikin sa hannu ne kawai ake nuna. Don kowane abu za ka iya saita:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Suna</strong> - ana nuna shi a launin ƙarfafawa ta asali.</li><li><strong>Taken aiki</strong> - matsayi a cikin kamfanin.</li><li><strong>Kamfanin</strong> - sunan ƙungiya.</li><li><strong>Bayanan tuntubar</strong> - imel, waya, gidan yanar gizo (lakabi).</li><li><strong>Kafofin watsa labarai</strong> - hanyoyin haɗin bayanan martaba.</li><li><strong>Sanarwar doka</strong> - rubutun doka a ƙasan sa hannu.</li></ul><h3 class=\"h5 mt-6 mb-3\">Yadda ake canza launi</h3><p class=\"text-mid\">Kusa da kowane abu za ka sami jerin zaɓuɓɓukan launi. Danna murabba'in launi don zaɓar shi. Kuma za ka iya ƙara launi na musamman ta hanyar dannawa murabba'in mai launi tare da ƙari - zaɓi launi kuma danna Ajiye. Launuka na musamman (har zuwa 8) ana raba su tsakanin dukan abubuwa.</p><p class=\"text-mid mt-3\">Maɓallin alamar sake saiti yana mayar da launin asali na abu.</p><h3 class=\"h5 mt-6 mb-3\">Yadda ake canza girma</h3><p class=\"text-mid\">A cikin layi na biyu za ka sami kula da girma tare da maɓallai na - da +. Ƙimar tana nuna bambancin dangane da girman font na tushe (da aka saita a cikin shafin Appearance). Kewayon: daga -4 zuwa +4 pixels.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Spacing between elements",
-      "html": "<p class=\"text-mid\">In the <strong>Spacing</strong> tab you can precisely control the distances between individual signature elements.</p><h3 class=\"h5 mt-6 mb-3\">Inner signature padding</h3><p class=\"text-mid\">At the top of the tab you will find the inner padding option - the distance between the signature content and its edges. Three values are available: 8 px (small), 16 px (medium), and 24 px (large).</p><h3 class=\"h5 mt-6 mb-3\">Spacing between elements</h3><p class=\"text-mid\">Below the padding you will find controls for individual signature elements. Each control has + and - buttons to increase or decrease the spacing. Only options for elements currently in the signature are visible.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>After name</strong> - spacing below the name line.</li><li><strong>After title / company</strong> - spacing below the title and company name line.</li><li><strong>After additional line</strong> - spacing below the description (if filled in).</li><li><strong>After contact details</strong> - spacing below email, phone, and website.</li><li><strong>After social media</strong> - spacing below profile links.</li><li><strong>After CTA button</strong> - spacing below the button (if enabled).</li><li><strong>Before disclaimer</strong> - spacing above the legal disclaimer text.</li></ul><p class=\"text-mid mt-4\">If you clear a field (e.g., remove the phone number), the corresponding spacing option will automatically disappear from the tab.</p>"
+      "title": "Tazarar tsakanin abubuwa",
+      "html": "<p class=\"text-mid\">A cikin shafin <strong>Spacing</strong> za ka iya sarrafa tazarar tsakanin abubuwan sa hannu ɗaya-ɗaya daidai.</p><h3 class=\"h5 mt-6 mb-3\">Cikakken tazarar sa hannu na ciki</h3><p class=\"text-mid\">A saman shafin za ka sami zaɓin tazarar ciki - nisan tsakanin abun cikin sa hannu da gefunansa. Ƙimomi uku suna samuwa: 8 px (ƙarami), 16 px (matsakaici), da 24 px (babba).</p><h3 class=\"h5 mt-6 mb-3\">Tazarar tsakanin abubuwa</h3><p class=\"text-mid\">Ƙasan tazarar za ka sami kula don abubuwan sa hannu ɗaya-ɗaya. Kowane kula yana da maɓallai na + da - don ƙara ko rage tazara. Zaɓuɓɓuka don abubuwan da ke cikin sa hannu a halin yanzu ne kawai ake nuna.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Bayan suna</strong> - tazarar ƙasan layin suna.</li><li><strong>Bayan taken / kamfanin</strong> - tazarar ƙasan layin taken da sunan kamfanin.</li><li><strong>Bayan ƙarin layi</strong> - tazarar ƙasan bayani (idan an cika).</li><li><strong>Bayan bayanan tuntubar</strong> - tazarar ƙasan imel, waya, da gidan yanar gizo.</li><li><strong>Bayan kafofin watsa labarai</strong> - tazarar ƙasan hanyoyin haɗin bayanan martaba.</li><li><strong>Bayan maɓallin CTA</strong> - tazarar ƙasan maɓalli (idan an kunna).</li><li><strong>Kafin sanarwar doka</strong> - tazarar saman rubutun sanarwar doka.</li></ul><p class=\"text-mid mt-4\">Idan ka share fili (misali, ka cire lambar waya), zaɓin tazara mai dacewa zai ɓace ta atomatik daga shafin.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Legal disclaimer - when to add it",
-      "html": "<p class=\"text-mid\">In the <strong>Disclaimer / Legal</strong> tab you can add legal text that will appear at the bottom of the signature in smaller font.</p><h3 class=\"h5 mt-6 mb-3\">When to add a disclaimer</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Business correspondence</strong> - confidentiality notice and request to delete in case of incorrect delivery.</li><li><strong>Industry requirements</strong> - some industries (e.g., legal, medical, financial) require specific information in every message.</li><li><strong>GDPR</strong> - information about personal data processing, if the company is a data controller.</li></ul><p class=\"text-mid mt-4\">By default, the field is filled with a sample confidentiality text. You can edit, delete, or replace it with your own disclaimer. If you leave the field empty, no disclaimer will appear in the signature.</p><h3 class=\"h5 mt-6 mb-3\">Separator line</h3><p class=\"text-mid\">Below the text field you will find the <strong>Show divider between contact details and disclaimer</strong> option. Enable it to add a horizontal line between contact details and the legal disclaimer.</p><p class=\"text-mid mt-3\">After enabling the line, additional customization options appear:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Line style</strong> - options: solid, dashed, or dotted.</li><li><strong>Line thickness</strong> - three options: 1 px, 2 px, or 3 px.</li><li><strong>Line color</strong> - default gray (#e5e7eb). You can choose any color from the palette or restore the default by clicking the Default button.</li></ul>"
+      "title": "Sanarwar doka - yaushe za a ƙara ta",
+      "html": "<p class=\"text-mid\">A cikin shafin <strong>Disclaimer / Legal</strong> za ka iya ƙara rubutun doka da zai bayyana a ƙasan sa hannu a cikin ƙaramin font.</p><h3 class=\"h5 mt-6 mb-3\">Yaushe za a ƙara sanarwar doka</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Wasiƙun kasuwanci</strong> - sanarwar sirri da buƙatar share idan an yi kuskuren aika.</li><li><strong>Buƙatun masana'anta</strong> - wasu masana'antu (misali, shari'a, likitanci, kuɗi) suna buƙatar takamaiman bayanai a cikin kowane saƙo.</li><li><strong>GDPR</strong> - bayani game da sarrafa bayanan sirri, idan kamfanin mai sarrafa bayanai ne.</li></ul><p class=\"text-mid mt-4\">Ta asali, filin yana cike da misalin rubutun sirri. Za ka iya gyara, share, ko maye gurbinsa da sanarwar doka naka. Idan ka bar filin babu komai, babu sanarwar doka da za ta bayyana a cikin sa hannu.</p><h3 class=\"h5 mt-6 mb-3\">Layin raba</h3><p class=\"text-mid\">Ƙasan filin rubutu za ka sami zaɓin <strong>Nuna mai raba tsakanin bayanan tuntubar da sanarwar doka</strong>. Kunna shi don ƙara layin a kwance tsakanin bayanan tuntubar da sanarwar doka.</p><p class=\"text-mid mt-3\">Bayan kunna layin, ƙarin zaɓuɓɓukan gyara sun bayyana:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Salon layi</strong> - zaɓuɓɓuka: solid, dashed, ko dotted.</li><li><strong>Kaurin layi</strong> - zaɓuɓɓuka uku: 1 px, 2 px, ko 3 px.</li><li><strong>Launin layi</strong> - toka ta asali (#e5e7eb). Za ka iya zaɓar kowane launi daga fayafayan ko mayar da asali ta hanyar dannawa maɓallin Default.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Auto-save and resetting settings",
-      "html": "<p class=\"text-mid\">The generator automatically saves all settings in browser memory (localStorage). After refreshing the page or reopening the tool, data, layout, colors, and all other options will be restored.</p><h3 class=\"h5 mt-6 mb-3\">How does auto-save work?</h3><p class=\"text-mid\">Every change (text, color, layout, spacing) is immediately saved in browser memory. Saving happens automatically in the background - without clicking any buttons.</p><h3 class=\"h5 mt-6 mb-3\">How to reset settings</h3><p class=\"text-mid\">Below the signature preview you will find a <strong>Reset appearance</strong> button. After clicking, a confirmation dialog will appear. Confirming the reset will restore all data and settings to default values. This operation cannot be undone.</p><h3 class=\"h5 mt-6 mb-3\">Export and import configuration</h3><p class=\"text-mid\">Below the signature preview you will find two additional buttons: <strong>Export settings</strong> and <strong>Import settings</strong>. Export saves all data, colors, layout, spacing, and text styles to a JSON file. Import loads a previously saved configuration from a file.</p><p class=\"text-mid mt-3\">This feature is especially useful when you want to transfer the signature configuration between computers, share settings with colleagues, or keep a backup of your settings before a reset.</p>"
+      "title": "Ajiye ta atomatik da sake saita saituna",
+      "html": "<p class=\"text-mid\">Mai samar da yana ajiye dukan saituna ta atomatik a cikin ƙwaƙwalwar browser (localStorage). Bayan sabunta shafin ko sake buɗe kayan aikin, bayanai, tsari, launuka, da dukan sauran zaɓuɓɓuka za a mayar da su.</p><h3 class=\"h5 mt-6 mb-3\">Yaya ajiye ta atomatik ke aiki?</h3><p class=\"text-mid\">Kowane canjin (rubutu, launi, tsari, tazara) ana ajiye shi nan da nan a cikin ƙwaƙwalwar browser. Ajiye yana faruwa ta atomatik a bayan fage - ba tare da dannawa kowane maɓalli ba.</p><h3 class=\"h5 mt-6 mb-3\">Yadda ake sake saita saituna</h3><p class=\"text-mid\">Ƙasan duba sa hannu za ka sami maɓallin <strong>Sake saita bayyanar</strong>. Bayan dannawa, za a nuna tabbatarwar tattaunawa. Tabbatar da sake saita zai mayar da dukan bayanai da saituna zuwa ƙimomin asali. Ba za a iya soke wannan aiki ba.</p><h3 class=\"h5 mt-6 mb-3\">Fitar da shigar da tsari</h3><p class=\"text-mid\">Ƙasan duba sa hannu za ka sami ƙarin maɓallai biyu: <strong>Fitar da saituna</strong> da <strong>Shigar da saituna</strong>. Fitar da yana ajiye dukan bayanai, launuka, tsari, tazara, da salon rubutu zuwa fayil na JSON. Shigar da yana ɗaukar tsarin da aka ajiye a baya daga fayil.</p><p class=\"text-mid mt-3\">Wannan fasalin yana da amfani musamman lokacin da kake son canja tsarin sa hannu tsakanin kwamfutoci, raba saituna tare da abokan aiki, ko kiyaye ajiyar saitunanka kafin sake saita.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "How to copy the signature to Gmail or Outlook",
-      "description": "When the signature is ready, it only takes a few steps to add it to your email client:",
+      "title": "Yadda ake kwafa sa hannu zuwa Gmail ko Outlook",
+      "description": "Lokacin da sa hannu ya shirya, matakai kaɗan ne kawai don ƙara shi zuwa abokin ciniki na imel:",
       "grid": "three",
       "items": [
-        { "icon": "RiClipboardLine", "title": "1. Copy the code", "description": "The Copy signature (Gmail / Outlook) button copies the signature to clipboard as formatted HTML, ready to paste." },
-        { "icon": "RiSettings3Line", "title": "2. Open signature settings", "description": "In Gmail: Settings → See all settings → Signature. In Outlook: File → Options → Mail → Signatures." },
+        {
+          "icon": "RiClipboardLine",
+          "title": "1. Kwafa lambar",
+          "description": "Maɓallin Kwafa sa hannu (Gmail / Outlook) yana kwafa sa hannu zuwa clipboard a matsayin HTML mai tsari, shirye don liƙawa."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "2. Buɗe saituna na sa hannu",
+          "description": "A cikin Gmail: Saituna → Duba dukan saituna → Sa hannu. A cikin Outlook: Fayil → Zaɓuɓɓuka → Saƙo → Sa hannu."
+        },
         {
           "icon": "RiSaveLine",
-          "title": "3. Paste and save",
-          "description": "In the signature field, use Ctrl+V (Windows) or Cmd+V (Mac). The signature will appear with all colors and formatting. Save changes."
+          "title": "3. Liƙa kuma ajiye",
+          "description": "A cikin filin sa hannu, yi amfani da Ctrl+V (Windows) ko Cmd+V (Mac). Sa hannu zai bayyana tare da dukan launuka da tsari. Ajiye canje-canje."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Signature preview and export options",
-      "html": "<p class=\"text-mid\">The preview panel displays on the right side of the editor and automatically updates with every change. The preview is sticky, so it remains visible even while scrolling through editing options.</p><h3 class=\"h5 mt-6 mb-3\">Switching preview background</h3><p class=\"text-mid\">Above the preview you will find three background change buttons: <strong>Light</strong> (default gray background), <strong>Dark</strong> (dark background, useful for checking readability on dark backgrounds), and <strong>Checkerboard</strong> (checkerboard pattern, lets you see transparency and signature edges).</p><h3 class=\"h5 mt-6 mb-3\">Action buttons</h3><p class=\"text-mid\">Below the preview you will find several buttons:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Copy signature (Gmail / Outlook)</strong> - copies the signature to clipboard as formatted HTML. Paste it directly in signature settings.</li><li><strong>Copy HTML code</strong> - copies the raw HTML code of the signature to clipboard. Useful when you want to paste code in an HTML editor or CMS.</li><li><strong>Download as HTML</strong> - saves the signature code as an .html file to disk. Useful for archiving or sharing with a developer.</li><li><strong>View HTML code</strong> - opens a modal with the full HTML source code of the signature. You can review the code and copy it directly from the modal.</li><li><strong>Export settings</strong> - saves the full signature configuration (data, colors, layout, spacing, styles) to a JSON file.</li><li><strong>Import settings</strong> - loads a configuration from a JSON file. All settings will be automatically applied.</li><li><strong>Reset appearance</strong> - restores all data and settings to default values (after confirmation).</li></ul>"
+      "title": "Duba sa hannu da zaɓuɓɓukan fitarwa",
+      "html": "<p class=\"text-mid\">Bangaren duba yana nuna a gefen dama na edita kuma yana sabuntawa ta atomatik tare da kowane canjin. Duban yana makale, don haka yana ci gaba da kasancewa a gani ko da yayin gungurawa ta hanyar zaɓuɓɓukan gyarawa.</p><h3 class=\"h5 mt-6 mb-3\">Sauya bayan duba</h3><p class=\"text-mid\">Sama da duban za ka sami maɓallai uku na canja baya: <strong>Haske</strong> (bayan toka ta asali), <strong>Duhu</strong> (bayan duhu, yana da amfani don duba iya karatu a kan bayan duhu), da <strong>Checkerboard</strong> (tsarin checkerboard, yana baka damar ganin gaskiya da gefunan sa hannu).</p><h3 class=\"h5 mt-6 mb-3\">Maɓallai na aiki</h3><p class=\"text-mid\">Ƙasan duban za ka sami maɓallai da yawa:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Kwafa sa hannu (Gmail / Outlook)</strong> - yana kwafa sa hannu zuwa clipboard a matsayin HTML mai tsari. Liƙa shi kai tsaye a cikin saituna na sa hannu.</li><li><strong>Kwafa lambar HTML</strong> - yana kwafa lambar HTML ta asali na sa hannu zuwa clipboard. Yana da amfani lokacin da kake son liƙa lambar a cikin editan HTML ko CMS.</li><li><strong>Sauke a matsayin HTML</strong> - yana ajiye lambar sa hannu a matsayin fayil na .html zuwa faifai. Yana da amfani don ajiya ko raba tare da mai haɓakawa.</li><li><strong>Duba lambar HTML</strong> - yana buɗe modal tare da cikakken lambar tushe na HTML na sa hannu. Za ka iya duba lambar kuma ka kwafa ta kai tsaye daga modal.</li><li><strong>Fitar da saituna</strong> - yana ajiye cikakken tsarin sa hannu (bayanai, launuka, tsari, tazara, salon) zuwa fayil na JSON.</li><li><strong>Shigar da saituna</strong> - yana ɗaukar tsari daga fayil na JSON. Za a yi amfani da dukan saituna ta atomatik.</li><li><strong>Sake saita bayyanar</strong> - yana mayar da dukan bayanai da saituna zuwa ƙimomin asali (bayan tabbatarwa).</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Who is the email signature creator for?",
-      "description": "The email signature tool is useful for anyone who sends business emails:",
+      "title": "Wa ne mai ƙirƙirar sa hannun imel yake don su?",
+      "description": "Kayan aikin sa hannun imel yana da amfani ga duk wanda ke aika imeloli na kasuwanci:",
       "grid": "two",
       "items": [
-        { "icon": "RiBriefcaseLine", "title": "Entrepreneurs and freelancers", "description": "A professional signature in every message without hiring a designer." },
-        { "icon": "RiTeamLine", "title": "Company teams", "description": "Each employee creates their own signature in the same style. Consistent identity across the entire company." },
-        { "icon": "RiHandCoinLine", "title": "Sales representatives", "description": "A CTA button with a link to a calendar or offer increases the chances of booking a meeting." },
-        { "icon": "RiScales3Line", "title": "Lawyers, accountants, doctors", "description": "Ability to add a legal disclaimer, license number, tax ID, or other details required in the industry." }
+        { "icon": "RiBriefcaseLine", "title": "Masu kasuwanci da masu zaman kansu", "description": "Sa hannu na ƙwararru a cikin kowane saƙo ba tare da ɗaukar mai zane ba." },
+        { "icon": "RiTeamLine", "title": "Ƙungiyoyin kamfanin", "description": "Kowane ma'aikaci yana ƙirƙirar sa hannunsa a cikin salon iri ɗaya. Asali mai daidaituwa a dukan kamfanin." },
+        { "icon": "RiHandCoinLine", "title": "Wakilan tallace-tallace", "description": "Maɓallin CTA tare da hanyar haɗi zuwa kalandar ko tayin yana ƙara damar yin ajiyar taro." },
+        {
+          "icon": "RiScales3Line",
+          "title": "Lauyoyi, masu lissafi, likitoci",
+          "description": "Ikon ƙara sanarwar doka, lambar lasisi, lambar haraji, ko wasu bayanan da ake buƙata a cikin masana'antar."
+        }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "What makes this HTML email signature generator special?",
+      "title": "Menene ke sa wannan mai samar da sa hannun imel na HTML ya bambanta?",
       "grid": "three",
       "items": [
-        { "icon": "RiInfinityLine", "title": "Eight signature layouts", "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist, and bottom bar." },
-        { "icon": "RiUserLine", "title": "Auto-save in browser", "description": "Every change is automatically saved in browser memory. After refreshing the page, the signature remains available." },
-        { "icon": "RiTranslate2", "title": "Export and import configuration", "description": "The full signature configuration can be exported as a JSON file and shared with colleagues." },
+        { "icon": "RiInfinityLine", "title": "Tsare-tsaren sa hannu takwas", "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist, da bottom bar." },
+        {
+          "icon": "RiUserLine",
+          "title": "Ajiye ta atomatik a cikin browser",
+          "description": "Ana ajiye kowane canjin ta atomatik a cikin ƙwaƙwalwar browser. Bayan sabunta shafin, sa hannu yana ci gaba da kasancewa."
+        },
+        { "icon": "RiTranslate2", "title": "Fitar da shigar da tsari", "description": "Ana iya fitar da cikakken tsarin sa hannu a matsayin fayil na JSON kuma a raba shi tare da abokan aiki." },
         {
           "icon": "RiAppsLine",
-          "title": "12 social media platforms",
-          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest."
+          "title": "Dandamali 12 na kafofin watsa labarai",
+          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, da Pinterest."
         },
-        { "icon": "RiPaletteLine", "title": "Advanced customization", "description": "Avatar shape and size, line styling, individual text colors and sizes." },
-        { "icon": "RiFileCodeLine", "title": "Multiple export options", "description": "Copy HTML, download file, source code preview, JSON configuration export/import." },
-        { "icon": "RiShieldCheckLine", "title": "Privacy", "description": "Data is not sent to a server. The generator works entirely in the browser." },
-        { "icon": "RiMailCheckLine", "title": "Compatibility", "description": "Generated HTML code works in Gmail, Outlook, Apple Mail, and Thunderbird." },
-        { "icon": "RiEyeLine", "title": "Live preview", "description": "Every change is instantly visible on light, dark, or checkerboard background." }
+        { "icon": "RiPaletteLine", "title": "Gyara ci gaba", "description": "Siffar avatar da girma, salon layi, launuka da girman rubutu ɗaya-ɗaya." },
+        { "icon": "RiFileCodeLine", "title": "Zaɓuɓɓukan fitarwa da yawa", "description": "Kwafa HTML, sauke fayil, duba lambar tushe, fitar/shigar da tsarin JSON." },
+        { "icon": "RiShieldCheckLine", "title": "Sirri", "description": "Ba a aika bayanai zuwa sabar ba. Mai samar da yana aiki gaba ɗaya a cikin browser." },
+        { "icon": "RiMailCheckLine", "title": "Dacewa", "description": "Lambar HTML da aka samar tana aiki a cikin Gmail, Outlook, Apple Mail, da Thunderbird." },
+        { "icon": "RiEyeLine", "title": "Duba kai tsaye", "description": "Kowane canjin yana bayyana nan da nan a kan bayan haske, duhu, ko checkerboard." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the email signature generator",
+      "title": "Tambayoyin da ake yawan yi game da mai samar da sa hannun imel",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Does the signature work in Gmail, Outlook, and Apple Mail?",
-          "answer": "Yes. Signatures generated by the generator use HTML tables that display correctly in all popular email clients: Gmail, Outlook (desktop and web), Apple Mail, Thunderbird. The layout adapts to different devices, including smartphones."
+          "question": "Sa hannu yana aiki a cikin Gmail, Outlook, da Apple Mail?",
+          "answer": "Eh. Sa hannun da mai samar da ya ƙirƙira suna amfani da teburorin HTML waɗanda ke nuna daidai a cikin dukan abokan ciniki na imel masu shahara: Gmail, Outlook (na tebur da na yanar gizo), Apple Mail, Thunderbird. Tsarin yana daidaitawa ga na'urori daban-daban, ciki har da wayoyin hannu."
         },
         {
-          "question": "Can I add a company logo?",
-          "answer": "Yes. In the Details tab, paste the URL of an image (logo or profile photo). The image should be square (min. 120×120 px) and publicly accessible online. After pasting the URL, options for shape (round, rounded, square) and size (40, 56, or 72 px) will appear."
+          "question": "Zan iya ƙara alamar kamfanin?",
+          "answer": "Eh. A cikin shafin Details, liƙa URL na hoto (alama ko hoton bayanan martaba). Hoton ya kamata ya zama murabba'i (min. 120×120 px) kuma ana iya samunsa a bainar jama'a ta yanar gizo. Bayan liƙa URL, zaɓuɓɓukan siffa (zagaye, daɓɓe, murabba'i) da girma (40, 56, ko 72 px) za su bayyana."
         },
         {
-          "question": "How do I copy the signature to an email client?",
-          "answer": "The Copy signature (Gmail / Outlook) button below the preview copies the signature to clipboard as formatted HTML. In Gmail or Outlook signature settings, just use Ctrl+V (Windows) or Cmd+V (Mac)."
+          "question": "Yaya zan kwafa sa hannu zuwa abokin ciniki na imel?",
+          "answer": "Maɓallin Kwafa sa hannu (Gmail / Outlook) ƙasan duban yana kwafa sa hannu zuwa clipboard a matsayin HTML mai tsari. A cikin saituna na sa hannu na Gmail ko Outlook, kawai yi amfani da Ctrl+V (Windows) ko Cmd+V (Mac)."
         },
         {
-          "question": "Can I use the generator to create signatures for an entire team?",
-          "answer": "Yes. The generator does not require login or registration. Each person on the team can open the tool, fill in their details, and copy the ready signature. To maintain visual consistency, agree on shared settings: the same layout, color theme, and font. You can also export the configuration as a JSON file and share it with colleagues - they just need to import the file and change only their personal details."
+          "question": "Zan iya amfani da mai samar da don ƙirƙirar sa hannu don dukan ƙungiya?",
+          "answer": "Eh. Mai samar da ba ya buƙatar shiga ko rajista. Kowane mutum a cikin ƙungiyar na iya buɗe kayan aikin, cika bayanansu, kuma kwafa sa hannun da ya shirya. Don kiyaye daidaiton gani, ku yarda akan saituna da ake raba: tsari iri ɗaya, jigon launi, da font. Kuma za ka iya fitar da tsarin a matsayin fayil na JSON kuma ka raba shi tare da abokan aiki - suna buƙatar shigar da fayil kawai kuma su canza bayanansu na sirri kawai."
         },
         {
-          "question": "Can I add custom social media icons?",
-          "answer": "The generator offers built-in SVG icons for twelve platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest. Enable the Show icons option in the Social Media tab. You can choose icon size and color (platform colors, accent color, or text color)."
+          "question": "Zan iya ƙara alamomin kafofin watsa labarai na musamman?",
+          "answer": "Mai samar da yana ba da alamomin SVG da aka gina a ciki don dandamali goma sha biyu: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, da Pinterest. Kunna zaɓin Nuna alamomin hoto a cikin shafin Social Media. Za ka iya zaɓar girman alama da launi (launukan dandamali, launin ƙarfafawa, ko launin rubutu)."
         },
-        { "question": "The copy button is inactive - why?", "answer": "To copy the signature, fill in at least two fields: name and email address. Check that both fields are filled in." },
+        { "question": "Maɓallin kwafa ba ya aiki - me ya sa?", "answer": "Don kwafa sa hannu, cika aƙalla filaye biyu: suna da adireshin imel. Tabbatar cewa an cika filayen biyu." },
         {
-          "question": "Avatar or logo is not displaying - what to do?",
-          "answer": "The image must be publicly accessible online. The URL should point directly to an image file (ending in .jpg, .png, or .webp). Images from Google Drive or Dropbox require a special sharing link."
-        },
-        {
-          "question": "The signature looks different for the recipient - why?",
-          "answer": "Different email clients (Gmail, Outlook, Apple Mail) may slightly differ in how they render HTML. The generator uses safe styles that work in most programs. If you see major differences, make sure you are pasting the signature using Ctrl+V, not Paste as plain text."
+          "question": "Avatar ko alama ba ta nuna - me za a yi?",
+          "answer": "Hoton dole ne ya kasance ana iya samunsa a bainar jama'a ta yanar gizo. URL ya kamata ya nuna kai tsaye zuwa fayil na hoto (yana ƙarewa da .jpg, .png, ko .webp). Hotunan daga Google Drive ko Dropbox suna buƙatar hanyar haɗi ta musamman don rabawa."
         },
         {
-          "question": "CTA button is not appearing - what to do?",
-          "answer": "The button requires both fields: text and link. Check that in the Buttons tab both fields are filled in and the URL starts with https://."
+          "question": "Sa hannu yana bambanta ga mai karɓa - me ya sa?",
+          "answer": "Abokan ciniki na imel daban-daban (Gmail, Outlook, Apple Mail) na iya bambanta kaɗan a yadda suke nuna HTML. Mai samar da yana amfani da salon masu aminci waɗanda ke aiki a yawancin shirye-shirye. Idan kana ganin manyan bambance-bambance, tabbatar cewa kana liƙa sa hannu ta amfani da Ctrl+V, ba Liƙa a matsayin rubutu mai sauƙi ba."
         },
         {
-          "question": "How to export or import signature settings?",
-          "answer": "Below the signature preview you will find Export settings and Import settings buttons. Export saves the full configuration (data, colors, layout, spacing, text styles) to a JSON file. Import loads the configuration from a file and automatically applies all settings."
+          "question": "Maɓallin CTA ba ya bayyana - me za a yi?",
+          "answer": "Maɓallin yana buƙatar filayen biyu: rubutu da hanyar haɗi. Tabbatar cewa a cikin shafin Buttons an cika filayen biyu kuma URL yana farawa da https://."
         },
         {
-          "question": "How to view the source code of the generated signature?",
-          "answer": "The View HTML code button below the signature preview opens a modal with the full HTML source code. You can review and copy the code directly from the modal. Alternatively, the Copy HTML code button copies the raw code to clipboard, and Download as HTML saves it as a file."
+          "question": "Yaya ake fitar ko shigar da saituna na sa hannu?",
+          "answer": "Ƙasan duba sa hannu za ka sami maɓallai na Fitar da saituna da Shigar da saituna. Fitar da yana ajiye cikakken tsari (bayanai, launuka, tsari, tazara, salon rubutu) zuwa fayil na JSON. Shigar da yana ɗaukar tsari daga fayil kuma yana amfani da dukan saituna ta atomatik."
         },
         {
-          "question": "Can I change the avatar shape and size?",
-          "answer": "Yes. After pasting the image URL in the Data tab, additional options appear: Avatar shape (round, rounded, square) and Avatar size (small - 40 px, medium - 56 px, large - 72 px). Settings are applied in all signature layouts."
+          "question": "Yaya ake duba lambar tushe na sa hannun da aka samar?",
+          "answer": "Maɓallin Duba lambar HTML ƙasan duba sa hannu yana buɗe modal tare da cikakken lambar tushe na HTML. Za ka iya duba kuma ka kwafa lambar kai tsaye daga modal. Haka kuma, maɓallin Kwafa lambar HTML yana kwafa lambar ta asali zuwa clipboard, kuma Sauke a matsayin HTML yana ajiye ta a matsayin fayil."
         },
         {
-          "question": "How to change the separator line style?",
-          "answer": "In the Disclaimer / Legal tab, enable the Show separator line option. Additional options will appear: line style (solid, dashed, dotted), thickness (1–3 px), and color (default gray or any color chosen from the palette)."
+          "question": "Zan iya canza siffar avatar da girma?",
+          "answer": "Eh. Bayan liƙa URL na hoto a cikin shafin Data, ƙarin zaɓuɓɓuka sun bayyana: Siffar avatar (zagaye, daɓɓe, murabba'i) da Girman avatar (ƙarami - 40 px, matsakaici - 56 px, babba - 72 px). Ana amfani da saituna a cikin dukan tsare-tsaren sa hannu."
+        },
+        {
+          "question": "Yaya ake canza salon layin raba?",
+          "answer": "A cikin shafin Disclaimer / Legal, kunna zaɓin Nuna layin raba. Ƙarin zaɓuɓɓuka za su bayyana: salon layi (solid, dashed, dotted), kauri (1–3 px), da launi (toka ta asali ko kowane launi da aka zaɓa daga fayafayan)."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
+    { "type": "toolsCarousel", "title": "Bincika sauran kayan aiki" },
     { "type": "gap", "size": "sm" }
   ]
 }

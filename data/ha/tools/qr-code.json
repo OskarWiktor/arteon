@@ -2,60 +2,60 @@
   "toolKey": "qrCode",
   "locale": "ha",
   "metadata": {
-    "title": "Free QR Code Generator – PNG & SVG, No Signup",
-    "description": "Create QR codes for websites, vCards, menus or flyers in seconds. Export as PNG & SVG. Customize colors and size. No signup, no limits.",
+    "title": "Mai Samar da Lambar QR Kyauta – PNG & SVG, Ba Buƙatar Rajista",
+    "description": "Ƙirƙiri lambobin QR don gidajen yanar gizo, vCards, menu ko falayen a cikin daƙiƙu. Fitar da a matsayin PNG & SVG. Tsara launuka da girma. Ba buƙatar rajista, ba iyaka.",
     "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
     "path": "/ha/kayan-aiki/samar-da-lambar-qr-kyauta"
   },
   "hero": {
-    "title": "QR Code Generator – Free, No Signup Required",
-    "description": "Create a QR code for a website, vCard business card, email, phone, or text. Customize colors, size, and error correction level, then download a ready PNG or SVG file.",
+    "title": "Mai Samar da Lambar QR – Kyauta, Ba Buƙatar Rajista",
+    "description": "Ƙirƙiri lambar QR don gidan yanar gizo, katin kasuwanci na vCard, imel, waya, ko rubutu. Tsara launuka, girma, da matakin gyaran kuskure, sannan sauke fayil na PNG ko SVG da aka shirya.",
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/ha/kayan-aiki", "label": "Tools" },
-    "third": { "href": "/ha/kayan-aiki/samar-da-lambar-qr-kyauta", "label": "Free QR code generator" }
+    "second": { "href": "/ha/kayan-aiki", "label": "Kayan Aiki" },
+    "third": { "href": "/ha/kayan-aiki/samar-da-lambar-qr-kyauta", "label": "Mai samar da lambar QR kyauta" }
   },
   "schemas": {
     "software": {
-      "name": "Free QR code generator online",
+      "name": "Mai samar da lambar QR kyauta ta yanar gizo",
       "alternateName": [
-        "QR code creator online",
-        "vCard QR code generator",
-        "Free QR generator",
-        "QR code tool",
-        "Restaurant menu QR code generator",
-        "QR code for print PNG SVG",
-        "Electronic business card vCard generator",
-        "QR code generator no registration",
-        "Free QR code generator no limits"
+        "Mai ƙirƙirar lambar QR ta yanar gizo",
+        "Mai samar da lambar QR na vCard",
+        "Mai samar da QR kyauta",
+        "Kayan aikin lambar QR",
+        "Mai samar da lambar QR don menu na gidan abinci",
+        "Lambar QR don bugu PNG SVG",
+        "Mai samar da katin kasuwanci na lantarki vCard",
+        "Mai samar da lambar QR ba tare da rajista ba",
+        "Mai samar da lambar QR kyauta ba tare da iyaka ba"
       ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "QRCodeGenerator",
-      "description": "Create a QR code for a website, business card, menu, or flyer. Choose the data type, customize colors and size, then download a PNG or SVG file.",
+      "description": "Ƙirƙiri lambar QR don gidan yanar gizo, katin kasuwanci, menu, ko falayen. Zaɓi nau'in bayanan, tsara launuka da girma, sannan sauke fayil PNG ko SVG.",
       "featureList": [
-        "QR code for URL (website)",
-        "QR code for plain text",
-        "vCard QR code (contact details)",
-        "QR code for email (address, subject, body)",
-        "QR code for phone number",
-        "Customizable code and background colors",
-        "Code size selection in pixels",
-        "Export to PNG format (raster)",
-        "Export to SVG format (vector)",
-        "Live code preview",
-        "Local processing in the browser",
-        "Reed-Solomon error correction"
+        "Lambar QR don URL (gidan yanar gizo)",
+        "Lambar QR don rubutu",
+        "Lambar QR na vCard (bayanan tuntubar)",
+        "Lambar QR don imel (adireshi, batu, jikin)",
+        "Lambar QR don lambar waya",
+        "Launukan lambar da baya da za a tsara",
+        "Zaɓar girman lambar a cikin pixels",
+        "Fitarwa zuwa tsarin PNG (raster)",
+        "Fitarwa zuwa tsarin SVG (vector)",
+        "Duban lambar kai tsaye",
+        "Sarrafa a cikin browser na gida",
+        "Gyaran kuskuren Reed-Solomon"
       ]
     },
     "howTo": {
-      "name": "How to use the free QR code generator",
-      "description": "How to create a QR code for a website, vCard business card, email, or phone - from choosing the data type to downloading the ready file for printing.",
+      "name": "Yadda ake amfani da mai samar da lambar QR kyauta",
+      "description": "Yadda ake ƙirƙirar lambar QR don gidan yanar gizo, katin kasuwanci na vCard, imel, ko waya - daga zaɓar nau'in bayanan zuwa sauke fayil da aka shirya don bugu.",
       "steps": [
-        { "name": "Choose the data type", "text": "Decide what the QR code should contain: URL, text, business card (vCard), email, or phone number." },
-        { "name": "Enter the data", "text": "Fill in the appropriate fields. For URL, enter the website address; for vCard, provide contact details." },
-        { "name": "Customize the appearance", "text": "Choose size, margin, code and background colors, and error correction level." },
-        { "name": "Download the code", "text": "The ready QR code can be downloaded as a PNG file (for print and web) or SVG (vector, scales without quality loss)." }
+        { "name": "Zaɓi nau'in bayanan", "text": "Yanke shawara game da abin da lambar QR ya kamata ta ƙunsa: URL, rubutu, katin kasuwanci (vCard), imel, ko lambar waya." },
+        { "name": "Shigar da bayanai", "text": "Cika filaye masu dacewa. Don URL, shigar da adireshin gidan yanar gizo; don vCard, ba da bayanan tuntubar." },
+        { "name": "Tsara bayyanar", "text": "Zaɓi girma, margin, launukan lambar da baya, da matakin gyaran kuskure." },
+        { "name": "Sauke lambar", "text": "Ana iya sauke lambar QR da aka shirya a matsayin fayil PNG (don bugu da yanar gizo) ko SVG (vector, yana canza girma ba tare da asarar inganci ba)." }
       ]
     }
   },
@@ -63,211 +63,219 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "What is a QR code and how does it work?",
-      "html": "<p class=\"text-mid\">A QR code (Quick Response) is a two-dimensional barcode that can be scanned with a smartphone camera. Unlike traditional barcodes, QR codes store data both horizontally and vertically, allowing them to encode significantly more information - up to approximately 3,000 alphanumeric characters.</p><p class=\"text-mid mt-3\">The QR code was developed in 1994 by the Japanese company Denso Wave (part of the Toyota group) for tracking car parts. Today, QR codes are widely used in marketing, hospitality, logistics, and business communication. They gained particular popularity during the COVID-19 pandemic, when restaurants began replacing paper menus with QR codes.</p>"
+      "title": "Menene lambar QR kuma yaya take aiki?",
+      "html": "<p class=\"text-mid\">Lambar QR (Quick Response) lambar layi ce ta girma biyu da za a iya duba ta da kyamarar waya. Ba kamar lambobin layi na al'ada ba, lambobin QR suna adana bayanai a kwance da tsaye, wanda ke ba su damar lambar bayanan da suka fi yawa - har zuwa haruffa na alphanumeric kusan 3,000.</p><p class=\"text-mid mt-3\">An ƙirƙiri lambar QR a shekarar 1994 ta kamfanin Japan Denso Wave (wani ɓangare na ƙungiyar Toyota) don bin diddigin sassan motoci. A yau, ana amfani da lambobin QR sosai a cikin talla, masaukin baƙi, kayan aiki, da sadarwar kasuwanci. Sun sami shahara musamman a lokacin annobar COVID-19, lokacin da gidajen abinci suka fara maye gurbin menu na takarda da lambobin QR.</p>"
     },
     { "type": "gap", "size": "sm" },
     {
       "type": "sectionSteps",
-      "title": "How to use the free QR code generator",
-      "description": "Creating a QR code takes just a few seconds:",
+      "title": "Yadda ake amfani da mai samar da lambar QR kyauta",
+      "description": "Ƙirƙirar lambar QR yana ɗaukar 'yan daƙiƙu kaɗan kawai:",
       "grid": "three",
       "items": [
-        { "title": "1. Choose the data type", "description": "Select what you want to encode: URL, text, vCard business card, email, or phone number." },
-        { "title": "2. Enter the data", "description": "Fill in the appropriate fields - website address, contact details, or message content." },
-        { "title": "3. Download the code", "description": "Customize the appearance (colors, size, margin) and download as PNG or SVG." }
+        { "title": "1. Zaɓi nau'in bayanan", "description": "Zaɓi abin da kake son lambar: URL, rubutu, katin kasuwanci na vCard, imel, ko lambar waya." },
+        { "title": "2. Shigar da bayanai", "description": "Cika filaye masu dacewa - adireshin gidan yanar gizo, bayanan tuntubar, ko abun cikin saƙo." },
+        { "title": "3. Sauke lambar", "description": "Tsara bayyanar (launuka, girma, margin) kuma sauke a matsayin PNG ko SVG." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "QR code types - URL, vCard, email, phone, text",
-      "description": "The free QR code generator supports five data types - each useful in different situations:",
+      "title": "Nau'ikan lambar QR - URL, vCard, imel, waya, rubutu",
+      "description": "Mai samar da lambar QR kyauta yana tallafawa nau'ikan bayanai biyar - kowannensu yana da amfani a cikin yanayi daban-daban:",
       "grid": "two",
       "items": [
-        { "icon": "RiGlobalLine", "title": "URL", "description": "A link to a website. After scanning, the phone opens the page in the browser. Ideal for business cards, flyers, and posters." },
+        {
+          "icon": "RiGlobalLine",
+          "title": "URL",
+          "description": "Hanyar haɗi zuwa gidan yanar gizo. Bayan duba, waya tana buɗe shafin a cikin browser. Cikakke don katin kasuwanci, falayen, da fastoci."
+        },
         {
           "icon": "RiFileTextLine",
-          "title": "Text",
-          "description": "Any text up to 3,000 characters. After scanning, the phone displays the text on screen. Useful for discount coupons and short instructions."
+          "title": "Rubutu",
+          "description": "Kowane rubutu har zuwa haruffa 3,000. Bayan duba, waya tana nuna rubutun a kan allo. Yana da amfani don kuɗaɗen rangwame da gajerun umarni."
         },
         {
           "icon": "RiContactsBookLine",
-          "title": "vCard business card",
-          "description": "A digital business card with contact data (name, company, phone, email, address). After scanning, the phone offers to save the contact. Ideal for professional business cards."
+          "title": "Katin kasuwanci na vCard",
+          "description": "Katin kasuwanci na dijital mai bayanan tuntubar (suna, kamfani, waya, imel, adireshi). Bayan duba, waya tana ba da shawarar ajiye lambar. Cikakke don katin kasuwanci na ƙwararru."
         },
-        { "icon": "RiMailLine", "title": "Email", "description": "An email address with optional subject and body. After scanning, the phone opens the mail app with a pre-filled form." },
-        { "icon": "RiPhoneLine", "title": "Phone", "description": "A phone number. After scanning, the phone offers to make a call. Useful for hotlines and customer support." }
+        { "icon": "RiMailLine", "title": "Imel", "description": "Adireshin imel tare da batu da jikin zaɓi. Bayan duba, waya tana buɗe aikace-aikacen wasiƙa tare da tsarin da aka cika tukuna." },
+        { "icon": "RiPhoneLine", "title": "Waya", "description": "Lambar waya. Bayan duba, waya tana ba da shawarar yin kira. Yana da amfani don layukan zafi da tallafin abokin ciniki." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "QR code technical specifications",
-      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Capacity</span><span class=\"text-mid text-sm!\">up to 4,296 characters</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Error correction</span><span class=\"text-mid text-sm!\">7% – 30%</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Min. print size</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Min. contrast</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margin</span><span class=\"text-mid text-sm!\">min. 4 modules</span></div></div>",
-      "html": "<p class=\"text-mid mb-4\">Knowing the technical parameters helps create QR codes that are readable in all conditions:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Data capacity</strong> - a QR code can hold up to 7,089 digits, 4,296 alphanumeric characters, or 2,953 bytes of binary data. In practice, this is more than enough for URLs and business cards.</li><li><strong>Reed-Solomon error correction</strong> - a mathematical algorithm that enables reading the code even when part of it is damaged or obscured. Levels: L (7%), M (15%), Q (25%), H (30%).</li><li><strong>Margin</strong> - the white area around the code required for proper scanning. The recommended minimum is 4 modules (code units).</li><li><strong>Minimum print size</strong> - for standard scanning conditions, the code should be at least 2×2 cm. For large format printing (banners, billboards), scale up accordingly.</li><li><strong>Contrast</strong> - the contrast ratio between the code and background should be at least 3:1. The generator automatically warns about too low contrast.</li></ul>"
+      "title": "Bayanan fasaha na lambar QR",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Ƙarfi</span><span class=\"text-mid text-sm!\">har zuwa haruffa 4,296</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Gyaran kuskure</span><span class=\"text-mid text-sm!\">7% – 30%</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Ƙaramin girman bugu</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Ƙaramin bambanci</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margin</span><span class=\"text-mid text-sm!\">aƙalla modules 4</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Sanin sigogin fasaha yana taimakawa wajen ƙirƙirar lambobin QR da za a iya karantawa a cikin duk yanayi:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Ƙarfin bayanai</strong> - lambar QR na iya ɗaukar lambobi har zuwa 7,089, haruffa na alphanumeric 4,296, ko bytes na binary 2,953. A aikace, wannan ya fi isasshe don URLs da katin kasuwanci.</li><li><strong>Gyaran kuskuren Reed-Solomon</strong> - algorithm na lissafi da ke ba da damar karanta lambar ko da wani ɓangare ya lalace ko an rufe shi. Matakan: L (7%), M (15%), Q (25%), H (30%).</li><li><strong>Margin</strong> - yankin fari a kusa da lambar da ake buƙata don ingantaccen duba. Mafi ƙarancin da ake ba da shawara shi ne modules 4 (sassan lambar).</li><li><strong>Ƙaramin girman bugu</strong> - don yanayin duba na al'ada, ya kamata lambar ta kasance aƙalla 2×2 cm. Don bugu mai girma (tutoci, allunan talla), ƙara girma daidai.</li><li><strong>Bambanci</strong> - rabo na bambanci tsakanin lambar da baya ya kamata ya kasance aƙalla 3:1. Mai samar yana gargaɗi ta atomatik game da bambancin da ya yi ƙaranci.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "QR code applications - business cards, flyers, restaurant menus",
-      "description": "QR codes find use in many industries and scenarios:",
+      "title": "Amfanin lambar QR - katin kasuwanci, falayen, menu na gidan abinci",
+      "description": "Lambobin QR suna samun amfani a cikin masana'antu da yanayi da yawa:",
       "grid": "three",
       "items": [
         {
           "icon": "RiContactsBookLine",
-          "title": "Business cards",
-          "description": "A vCard code on a business card lets the recipient save the contact with a single scan, without manually typing data."
+          "title": "Katin kasuwanci",
+          "description": "Lambar vCard a kan katin kasuwanci tana ba mai karɓa damar ajiye lambar tare da duba guda ɗaya, ba tare da rubuta bayanai da hannu ba."
         },
         {
           "icon": "RiRestaurantLine",
-          "title": "Restaurant and cafe menus",
-          "description": "A QR code on the table directs to a digital menu. A hygienic solution popular since the COVID-19 pandemic."
+          "title": "Menu na gidan abinci da cafe",
+          "description": "Lambar QR a kan tebur tana kai zuwa menu na dijital. Mafita mai tsabta da ta sami shahara tun daga annobar COVID-19."
         },
-        { "icon": "RiPrinterLine", "title": "Flyers and posters", "description": "QR code with a link to a product page, registration form, or special offer." },
-        { "icon": "RiBuilding2Line", "title": "Product packaging", "description": "Link to user manual, warranty card, or manufacturer website." },
-        { "icon": "RiHospitalLine", "title": "Medical offices", "description": "QR codes on patient cards linking to the patient portal or appointment booking system." },
-        { "icon": "RiHome4Line", "title": "Real estate", "description": "Codes on banners linking to the full listing with photo gallery and details." },
-        { "icon": "RiTruckLine", "title": "Warehouses and logistics", "description": "QR labels for tracking product batches, warehouse locations, and shipment history." },
-        { "icon": "RiShoppingCartLine", "title": "E-commerce", "description": "Codes on packaging linking to return instructions, customer reviews, or loyalty programs." },
-        { "icon": "RiCalendarEventLine", "title": "Events and conferences", "description": "Tickets with QR codes for quick verification at entry." }
+        { "icon": "RiPrinterLine", "title": "Falayen da fastoci", "description": "Lambar QR tare da hanyar haɗi zuwa shafin kayan, tsarin rajista, ko tayin na musamman." },
+        { "icon": "RiBuilding2Line", "title": "Kunshin kayan", "description": "Hanyar haɗi zuwa jagorar mai amfani, katin garanti, ko gidan yanar gizo na masana'anta." },
+        { "icon": "RiHospitalLine", "title": "Ofisoshin likita", "description": "Lambobin QR a kan katin marasa lafiya da ke haɗawa zuwa mashigin marasa lafiya ko tsarin yin alƙawari." },
+        { "icon": "RiHome4Line", "title": "Gidaje", "description": "Lambobi a kan tutoci da ke haɗawa zuwa cikakken jerin tare da hotunan nunin da cikakkun bayanai." },
+        { "icon": "RiTruckLine", "title": "Rumfuna da dabaru", "description": "Alamomin QR don bin diddigin tarin kayan, wuraren rumfa, da tarihin jigilar kaya." },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Kasuwanci ta yanar gizo",
+          "description": "Lambobi a kan kunshin da ke haɗawa zuwa umarnin mayar da kayan, bita na abokin ciniki, ko shirye-shiryen aminci."
+        },
+        { "icon": "RiCalendarEventLine", "title": "Bukukuwa da tarurruka", "description": "Tikiti masu lambobin QR don tabbatar da sauri a ƙofar shiga." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "QR code appearance customization",
+      "title": "Tsara bayyanar lambar QR",
       "variant": "left",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Size</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margin</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Code color</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Background color</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
-      "html": "<p class=\"text-mid mb-4\">The generator lets you customize several parameters affecting the appearance and readability of the code:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Size (px)</strong> - code dimension in pixels. For standard print (flyers, business cards) choose 300–500 px. For digital use, 150–200 px is sufficient.</li><li><strong>Margin</strong> - white area around the code required for proper scanning. Recommended value is 2–4. A value of 0 may make scanning difficult on a dark background.</li><li><strong>QR code color</strong> - black by default (#000000). You can change it to any dark color matching your visual identity.</li><li><strong>Background color</strong> - white by default (#ffffff). You can change it to any light color. The generator will warn if contrast is too low.</li></ul><p class=\"text-mid mt-3\"><strong>Tip:</strong> Maintain high contrast between the code and background (minimum 3:1). A dark code on a light background scans most easily.</p>"
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Girma</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margin</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Launin lambar</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Launin baya</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Mai samar yana ba ka damar tsara sigogin da yawa da ke shafar bayyanar da karanta lambar:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Girma (px)</strong> - girman lambar a cikin pixels. Don bugu na al'ada (falayen, katin kasuwanci) zaɓi 300–500 px. Don amfani da dijital, 150–200 px ya isa.</li><li><strong>Margin</strong> - yankin fari a kusa da lambar da ake buƙata don ingantaccen duba. Ƙimar da ake ba da shawara ita ce 2–4. Ƙimar 0 na iya sa duba ya yi wahala a kan bayan duhu.</li><li><strong>Launin lambar QR</strong> - baƙi ta asali (#000000). Za ka iya canza shi zuwa kowane launin duhu da ya dace da asalin gani na ka.</li><li><strong>Launin baya</strong> - fari ta asali (#ffffff). Za ka iya canza shi zuwa kowane launin haske. Mai samar zai gargaɗi idan bambanci ya yi ƙaranci.</li></ul><p class=\"text-mid mt-3\"><strong>Shawarar:</strong> Kiyaye babban bambanci tsakanin lambar da baya (aƙalla 3:1). Lambar duhu a kan bayan haske tana duba da sauƙi.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "Error correction levels - L, M, Q, H",
-      "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Low)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Medium)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Quartile)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (High)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
-      "html": "<p class=\"text-mid mb-4\">Error correction is a mechanism that enables reading a QR code even when part of it is damaged, dirty, or obscured. The generator uses the Reed-Solomon algorithm, a standard in QR codes.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Low) - 7%</strong> - least redundancy, code is most compact. Choose when the code will be used in ideal conditions (screen, high-quality print).</li><li><strong>M (Medium) - 15%</strong> - default value, a good balance between capacity and resilience. Suitable for most applications.</li><li><strong>Q (Quartile) - 25%</strong> - greater resistance to damage. Choose for codes printed on materials prone to getting dirty.</li><li><strong>H (High) - 30%</strong> - highest resilience. Recommended for outdoor print materials, packaging, and situations where the code may be partially obscured (e.g., a logo in the center).</li></ul><p class=\"text-mid mt-3\"><strong>Note:</strong> A higher correction level means a larger and more complex code. With large amounts of data and level H, the code can become very dense.</p>"
+      "title": "Matakan gyaran kuskure - L, M, Q, H",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Ƙasa)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Matsakaici)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Kwata)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (Babba)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Gyaran kuskure tsari ne da ke ba da damar karanta lambar QR ko da wani ɓangarenta ya lalace, ya ƙazantu, ko an rufe shi. Mai samar yana amfani da algorithm na Reed-Solomon, wanda shine al'ada a cikin lambobin QR.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Ƙasa) - 7%</strong> - mafi ƙarancin sake maimaitawa, lambar ta fi ƙanƙanta. Zaɓi lokacin da za a yi amfani da lambar a cikin yanayi mafi kyau (allo, bugu mai inganci).</li><li><strong>M (Matsakaici) - 15%</strong> - ƙimar asali, kyakkyawan daidaito tsakanin ƙarfi da juriya. Ya dace da yawancin amfani.</li><li><strong>Q (Kwata) - 25%</strong> - babbar juriya ga lalacewa. Zaɓi don lambobi da aka buga a kan kayan da suka saba da ƙazanta.</li><li><strong>H (Babba) - 30%</strong> - mafi girman juriya. Ana ba da shawara don kayan bugu na waje, kunshin, da yanayi inda za a iya rufe wani ɓangaren lambar (misali, alama a tsakiya).</li></ul><p class=\"text-mid mt-3\"><strong>Bayanan kula:</strong> Babban matakin gyara yana nufin lambar ta fi girma kuma ta fi rikitarwa. Tare da yawan bayanai da matakin H, lambar na iya zama mai yawa sosai.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionFeatureComparison",
-      "title": "PNG vs SVG - which format to choose for printing?",
+      "title": "PNG vs SVG - wane tsari za a zaɓa don bugu?",
       "plans": [
         { "id": "png", "name": "PNG (raster)" },
         { "id": "svg", "name": "SVG (vector)", "highlighted": true }
       ],
       "features": [
-        { "name": "Websites and social media", "values": { "png": true, "svg": true } },
-        { "name": "Flyers and business cards", "values": { "png": true, "svg": true } },
-        { "name": "Posters and banners (large format)", "values": { "png": false, "svg": true } },
-        { "name": "Scaling without quality loss", "values": { "png": false, "svg": true } },
-        { "name": "Editing in a graphics program", "values": { "png": false, "svg": true } },
-        { "name": "Smaller file size", "values": { "png": false, "svg": true } },
-        { "name": "Presentations", "values": { "png": true, "svg": true } }
+        { "name": "Gidajen yanar gizo da kafofin watsa labarai", "values": { "png": true, "svg": true } },
+        { "name": "Falayen da katin kasuwanci", "values": { "png": true, "svg": true } },
+        { "name": "Fastoci da tutoci (girma mai girma)", "values": { "png": false, "svg": true } },
+        { "name": "Canza girma ba tare da asarar inganci ba", "values": { "png": false, "svg": true } },
+        { "name": "Gyara a cikin shirin zane", "values": { "png": false, "svg": true } },
+        { "name": "Ƙaramin girman fayil", "values": { "png": false, "svg": true } },
+        { "name": "Gabatarwa", "values": { "png": true, "svg": true } }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "QR code printing tips",
-      "description": "To ensure the QR code is readable after printing, follow a few rules:",
+      "title": "Shawarwarin bugu na lambar QR",
+      "description": "Don tabbatar da lambar QR za a iya karantawa bayan bugu, bi ƙa'idoji kaɗan:",
       "grid": "two",
       "items": [
         {
           "icon": "RiRulerLine",
-          "title": "Minimum size",
-          "description": "The code should be at least 2×2 cm for close-range scanning. The greater the scanning distance, the larger the code must be."
+          "title": "Ƙaramin girma",
+          "description": "Ya kamata lambar ta kasance aƙalla 2×2 cm don duba a kusa. Yawan nisan duba, girman lambar da ake buƙata."
         },
-        { "icon": "RiContrastLine", "title": "Contrast", "description": "Dark code on a light background. Avoid pastel colors and low contrast." },
+        { "icon": "RiContrastLine", "title": "Bambanci", "description": "Lambar duhu a kan bayan haske. Guje wa launukan pastel da ƙarancin bambanci." },
         {
           "icon": "RiLayoutGridLine",
-          "title": "Margin around the code",
-          "description": "Keep empty space around the code. Do not place other graphic elements too close - the margin is essential for proper scanning."
+          "title": "Margin a kusa da lambar",
+          "description": "Kiyaye sararin fanko a kusa da lambar. Kada ka sanya sauran abubuwan zane kusa sosai - margin yana da muhimmanci don ingantaccen duba."
         },
-        { "icon": "RiEyeLine", "title": "Testing", "description": "Before mass printing, test the code on different phones and in various lighting conditions." },
-        { "icon": "RiShieldCheckLine", "title": "Correction level", "description": "For outdoor print and materials prone to damage, choose level Q or H." }
+        { "icon": "RiEyeLine", "title": "Gwaji", "description": "Kafin bugu da yawa, gwada lambar a kan wayoyin daban-daban kuma a cikin yanayin haske daban-daban." },
+        { "icon": "RiShieldCheckLine", "title": "Matakin gyara", "description": "Don bugu na waje da kayan da suka saba da lalacewa, zaɓi matakin Q ko H." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "What makes this QR code generator special?",
+      "title": "Menene ke sa mai samar da lambar QR ya bambanta?",
       "grid": "two",
       "items": [
         {
           "icon": "RiInfinityLine",
-          "title": "Local generation in the browser",
-          "description": "Data entered into the generator is not sent to any server - all processing happens locally on your device."
+          "title": "Samarwa na gida a cikin browser",
+          "description": "Ba a aika bayanan da aka shigar a cikin mai samar zuwa kowane sabar ba - ana yin dukan sarrafa a cikin na'urar ka ta gida."
         },
         {
           "icon": "RiLockLine",
-          "title": "Five data types in one tool",
-          "description": "URL, text, vCard business card, email, and phone - each type generates a QR code in the appropriate standard."
+          "title": "Nau'ikan bayanai biyar a cikin kayan aiki guda ɗaya",
+          "description": "URL, rubutu, katin kasuwanci na vCard, imel, da waya - kowane nau'i yana samar da lambar QR a cikin al'adar da ta dace."
         },
         {
           "icon": "RiStackLine",
-          "title": "QR code appearance customization",
-          "description": "Code and background colors, size in pixels, margin, and error correction level - every parameter can be customized."
+          "title": "Tsara bayyanar lambar QR",
+          "description": "Launukan lambar da baya, girma a cikin pixels, margin, da matakin gyaran kuskure - ana iya tsara kowane sigogi."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Four error correction levels",
-          "description": "The Reed-Solomon algorithm lets you choose code resilience to damage - from 7% (L) to 30% (H). Higher levels are useful for print on materials prone to getting dirty."
+          "title": "Matakan gyaran kuskure huɗu",
+          "description": "Algorithm na Reed-Solomon yana ba ka damar zaɓar juriyar lambar ga lalacewa - daga 7% (L) zuwa 30% (H). Matakan da suka fi girma suna da amfani don bugu a kan kayan da suka saba da ƙazanta."
         },
-        { "icon": "RiEyeLine", "title": "Live preview", "description": "You see the result immediately after entering data, without clicking &quot;Generate&quot;." },
-        { "icon": "RiDownloadLine", "title": "PNG and SVG export", "description": "Download the code in the format appropriate for your use case." }
+        { "icon": "RiEyeLine", "title": "Duban kai tsaye", "description": "Kana ganin sakamakon nan da nan bayan shigar da bayanai, ba tare da danna &quot;Samar&quot; ba." },
+        { "icon": "RiDownloadLine", "title": "Fitarwa ta PNG da SVG", "description": "Sauke lambar a cikin tsarin da ya dace da amfanin ka." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the QR code generator",
+      "title": "Tambayoyin da ake yawan yi game da mai samar da lambar QR",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Does a QR code generated with this tool expire?",
-          "answer": "No. A static QR code (like the one generated by this tool) does not expire. The content - e.g., a URL or business card data - is encoded directly in the code. As long as the target page exists, the code will work.",
-          "answerSchemaText": "No. Static QR codes do not expire. Content is encoded directly in the code."
+          "question": "Shin lambar QR da aka samar da wannan kayan aikin tana ƙarewa?",
+          "answer": "A'a. Lambar QR ta tsaye (kamar wadda wannan kayan aikin ke samarwa) ba ta ƙarewa. Abun cikin - misali, URL ko bayanan katin kasuwanci - an lambar su kai tsaye a cikin lambar. Muddin shafin da aka nufa yana nan, lambar za ta yi aiki.",
+          "answerSchemaText": "A'a. Lambobin QR na tsaye ba sa ƙarewa. Ana lambar abun cikin kai tsaye a cikin lambar."
         },
         {
-          "question": "Can I change the URL in an existing QR code?",
-          "answer": "With a static QR code, you cannot change the encoded content - you need to generate a new code with a new address. Dynamic QR codes (editable after generation) require external paid services.",
-          "answerSchemaText": "No, static QR codes cannot be edited. Generate a new code for a different URL."
+          "question": "Zan iya canza URL a cikin lambar QR da ke akwai?",
+          "answer": "Tare da lambar QR ta tsaye, ba za ka iya canza abun cikin da aka lambar ba - kana buƙatar samar da sabuwar lambar tare da sabon adireshi. Lambobin QR na motsi (da za a iya gyarawa bayan samarwa) suna buƙatar sabis na waje masu biyan kuɗi.",
+          "answerSchemaText": "A'a, ba za a iya gyara lambobin QR na tsaye ba. Samar da sabuwar lambar don URL daban."
         },
         {
-          "question": "PNG or SVG - which QR code format should I choose for printing?",
-          "answer": "PNG works for most use cases: websites, social media, printing up to A4 size. SVG is vector-based - it can be scaled to any size without quality loss, making it suitable for banners, billboards, and large advertising formats.",
-          "answerSchemaText": "PNG for web and standard print. SVG for large format and lossless scaling."
+          "question": "PNG ko SVG - wane tsari na lambar QR ya kamata in zaɓa don bugu?",
+          "answer": "PNG yana aiki don yawancin amfani: gidajen yanar gizo, kafofin watsa labarai, bugu har zuwa girman A4. SVG yana tushen vector - ana iya canza girma zuwa kowane girma ba tare da asarar inganci ba, wanda ya sa ya dace da tutoci, allunan talla, da manyan tsare-tsaren talla.",
+          "answerSchemaText": "PNG don yanar gizo da bugu na al'ada. SVG don girma mai girma da canza girma ba tare da asara ba."
         },
         {
-          "question": "What QR code size should I choose for a business card?",
-          "answer": "For printed materials (business cards, flyers), the code should be at least 2×2 cm, optimally 3×3 cm. In the generator, this corresponds to a resolution of 300 px at standard print quality (300 DPI). For larger formats (posters, banners), choose a larger size or SVG format.",
-          "answerSchemaText": "At least 2×2 cm (300 px at 300 DPI). Optimally 3×3 cm for business cards."
+          "question": "Wane girman lambar QR ya kamata in zaɓa don katin kasuwanci?",
+          "answer": "Don kayan da aka buga (katin kasuwanci, falayen), ya kamata lambar ta kasance aƙalla 2×2 cm, mafi kyau 3×3 cm. A cikin mai samar, wannan ya dace da ƙudurin 300 px a ingancin bugu na al'ada (300 DPI). Don manyan tsare-tsare (fastoci, tutoci), zaɓi girma mai girma ko tsarin SVG.",
+          "answerSchemaText": "Aƙalla 2×2 cm (300 px a 300 DPI). Mafi kyau 3×3 cm don katin kasuwanci."
         },
         {
-          "question": "Can I add a logo to the center of the QR code?",
-          "answer": "This tool does not support adding a logo directly. However, you can download the code in SVG format and overlay a logo in a graphics program - in that case, it is necessary to set a high error correction level (H) so the code remains readable despite partial obscuring.",
-          "answerSchemaText": "Not directly. Download SVG and add a logo in a graphics program with H error correction."
+          "question": "Zan iya ƙara alama a tsakiyar lambar QR?",
+          "answer": "Wannan kayan aikin ba ya tallafawa ƙara alama kai tsaye. Duk da haka, za ka iya sauke lambar a tsarin SVG kuma ka ɗora alama a cikin shirin zane - a wannan yanayin, ya zama dole a saita babban matakin gyaran kuskure (H) domin lambar ta kasance ana iya karantawa duk da an rufe wani ɓangare.",
+          "answerSchemaText": "Ba kai tsaye ba. Sauke SVG kuma ƙara alama a cikin shirin zane tare da gyaran kuskuren H."
         },
         {
-          "question": "Why doesn't my QR code scan after printing?",
-          "answer": "Most common causes: too low contrast between code and background, too small code size, no margin around the code, or print damage. Try increasing the size, improving contrast, and raising the error correction level (Q or H).",
-          "answerSchemaText": "Check contrast, size, margin, and error correction level."
+          "question": "Me ya sa lambar QR ta ba ta duba bayan bugu?",
+          "answer": "Dalilai mafi yawa: ƙarancin bambanci tsakanin lambar da baya, girman lambar ya yi ƙanƙanta, rashin margin a kusa da lambar, ko lalacewar bugu. Gwada ƙara girma, inganta bambanci, da ƙara matakin gyaran kuskure (Q ko H).",
+          "answerSchemaText": "Duba bambanci, girma, margin, da matakin gyaran kuskure."
         },
         {
-          "question": "Can I use generated QR codes commercially?",
-          "answer": "Yes. Generated QR codes can be freely used in any project - commercial and non-commercial, without licensing restrictions.",
-          "answerSchemaText": "Yes, without restrictions in commercial and non-commercial projects."
+          "question": "Zan iya amfani da lambobin QR da aka samar don kasuwanci?",
+          "answer": "Eh. Ana iya amfani da lambobin QR da aka samar a cikin kowane aiki - na kasuwanci da na rashin kasuwanci, ba tare da ƙuntatawan lasisi ba.",
+          "answerSchemaText": "Eh, ba tare da ƙuntata ba a cikin ayyukan kasuwanci da na rashin kasuwanci."
         },
         {
-          "question": "What is the difference between a vCard business card and a plain text QR code?",
-          "answer": "A vCard QR code contains contact data in a standardized format (name, company, phone, email, address). After scanning, the phone automatically offers to save the contact in the address book. A text code displays data as plain text - without the option to automatically save it.",
-          "answerSchemaText": "vCard saves contact automatically. Text QR just displays text."
+          "question": "Menene bambanci tsakanin katin kasuwanci na vCard da lambar QR ta rubutu?",
+          "answer": "Lambar QR ta vCard tana ɗauke da bayanan tuntubar a cikin tsari na al'ada (suna, kamfani, waya, imel, adireshi). Bayan duba, waya tana ba da shawarar ajiye lambar a cikin littafin adireshi ta atomatik. Lambar rubutu tana nuna bayanai a matsayin rubutu na al'ada - ba tare da zaɓin ajiye ta atomatik ba.",
+          "answerSchemaText": "vCard tana ajiye lambar ta atomatik. Lambar QR ta rubutu tana nuna rubutu kawai."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore other free tools" },
+    { "type": "toolsCarousel", "title": "Bincika sauran kayan aiki kyauta" },
     { "type": "gap", "size": "sm" }
   ]
 }

@@ -2,56 +2,63 @@
   "toolKey": "colorPalette",
   "locale": "ha",
   "metadata": {
-    "title": "Free Color Palette Generator – 9 Palettes From One Color",
-    "description": "Generate 9 color palettes from one base color: monochromatic, complementary, triadic, pastel and more. Copy HEX codes in one click. No signup, no limits.",
+    "title": "Mai Samar da Fayafayan Launuka Kyauta – Fayafayai 9 Daga Launi Ɗaya",
+    "description": "Samar da fayafayan launuka 9 daga launi guda ɗaya: monochromatic, complementary, triadic, pastel da ƙari. Kwafa lambobin HEX cikin dannawa ɗaya. Ba buƙatar rajista, ba iyaka.",
     "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
     "path": "/ha/kayan-aiki/samar-da-fayafayan-launuka"
   },
   "hero": {
-    "title": "Color palette generator",
-    "description": "Enter one base color, and the tool will generate 9 harmonious color palettes: monochromatic, complementary, triadic, pastel, and more. Each color can be copied with its HEX code.",
+    "title": "Mai samar da fayafayan launuka",
+    "description": "Shigar da launi guda ɗaya na tushe, kayan aikin zai samar da fayafayan launuka 9 masu jituwa: monochromatic, complementary, triadic, pastel, da ƙari. Ana iya kwafa kowane launi tare da lambar HEX ɗinsa.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/ha/kayan-aiki", "label": "Tools" },
-    "third": { "href": "/ha/kayan-aiki/samar-da-fayafayan-launuka", "label": "Color palette generator" }
+    "second": { "href": "/ha/kayan-aiki", "label": "Kayan Aiki" },
+    "third": { "href": "/ha/kayan-aiki/samar-da-fayafayan-launuka", "label": "Mai samar da fayafayan launuka" }
   },
   "schemas": {
     "software": {
-      "name": "Color palette generator",
-      "alternateName": ["Color scheme generator", "Online color generator", "Color palette creator", "Color matching tool", "Color palette online", "Color harmony generator"],
+      "name": "Mai samar da fayafayan launuka",
+      "alternateName": [
+        "Mai samar da tsarin launuka",
+        "Mai samar da launuka ta yanar gizo",
+        "Mai ƙirƙirar fayafayan launuka",
+        "Kayan aikin daidaita launuka",
+        "Fayafayan launuka ta yanar gizo",
+        "Mai samar da jituwar launuka"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Free online color palette generator. Enter one HEX color and the tool will generate 9 schemes: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, and minimalist. Each color can be copied with its HEX code and HSL value.",
+      "description": "Mai samar da fayafayan launuka kyauta ta yanar gizo. Shigar da launi HEX ɗaya kayan aikin zai samar da tsare-tsare 9: monochromatic, analogous, complementary, triadic, split-complementary, pastel, duhu, tonal, da minimalist. Ana iya kwafa kowane launi tare da lambar HEX da ƙimar HSL.",
       "featureList": [
-        "Monochromatic scheme - shades of one color",
-        "Analogous scheme - neighboring colors on the color wheel",
-        "Complementary scheme - opposite colors",
-        "Triadic scheme - 3 colors at equal intervals",
-        "Split-complementary scheme - base color and 2 neighbors of its complement",
-        "Pastel palette - light, muted shades",
-        "Dark palette - deep colors for dark themes",
-        "Tonal palette - lightness scale of one hue",
-        "Minimalist palette - strong accent with light neutrals",
-        "Base color in HEX format",
-        "Color picker for visual selection",
-        "Random starting color",
-        "Copy HEX code to clipboard",
-        "HSL value displayed alongside each color",
-        "Local processing in the browser"
+        "Tsarin monochromatic - inuwar launi guda ɗaya",
+        "Tsarin analogous - launuka makwabta a kan da'irar launuka",
+        "Tsarin complementary - launuka akasin juna",
+        "Tsarin triadic - launuka 3 a tazara daidai",
+        "Tsarin split-complementary - launin tushe da makwabta 2 na akasinsa",
+        "Fayafayan pastel - launuka masu haske, masu laushi",
+        "Fayafayan duhu - launuka masu zurfi don jigogin duhu",
+        "Fayafayan tonal - ma'aunin haske na launi guda ɗaya",
+        "Fayafayan minimalist - launi mai ƙarfi tare da launuka masu laushi",
+        "Launin tushe a tsarin HEX",
+        "Mai zaɓar launi don zaɓi ta gani",
+        "Launin farawa bazuwar",
+        "Kwafa lambar HEX zuwa clipboard",
+        "Ƙimar HSL ana nuna ta kusa da kowane launi",
+        "Sarrafa a cikin browser na gida"
       ]
     },
     "howTo": {
-      "name": "How to generate a color palette from one base color",
-      "description": "How to generate 9 color palettes from one base color: monochromatic, complementary, triadic, pastel, and more. Each color can be copied with its HEX code.",
+      "name": "Yadda ake samar da fayafayan launuka daga launi guda ɗaya na tushe",
+      "description": "Yadda ake samar da fayafayan launuka 9 daga launi guda ɗaya na tushe: monochromatic, complementary, triadic, pastel, da ƙari. Ana iya kwafa kowane launi tare da lambar HEX ɗinsa.",
       "steps": [
-        { "name": "Choose a base color", "text": "Enter a HEX code in the text field or use the color picker to select a color visually." },
-        { "name": "Confirm the color", "text": "Confirm the selected color with the Update Color button - the tool will generate palettes based on your chosen base color." },
+        { "name": "Zaɓi launin tushe", "text": "Shigar da lambar HEX a cikin filin rubutu ko yi amfani da mai zaɓar launi don zaɓi launi ta gani." },
+        { "name": "Tabbatar da launi", "text": "Tabbatar da launin da aka zaɓa tare da maɓallin Sabunta Launi - kayan aikin zai samar da fayafayai bisa launin tushe da ka zaɓa." },
         {
-          "name": "Browse the palettes",
-          "text": "The tool will automatically generate 9 different palettes: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, and minimalist."
+          "name": "Duba fayafayai",
+          "text": "Kayan aikin zai samar da fayafayai 9 daban-daban ta atomatik: monochromatic, analogous, complementary, triadic, split-complementary, pastel, duhu, tonal, da minimalist."
         },
-        { "name": "Copy colors", "text": "Next to each color you will find a Copy button - the HEX code is copied to your system clipboard." }
+        { "name": "Kwafa launuka", "text": "Kusa da kowane launi za ka sami maɓallin Kwafa - ana kwafa lambar HEX zuwa clipboard na tsarinku." }
       ]
     }
   },
@@ -59,173 +66,176 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Why generate a color palette?",
-      "html": "<p class=\"text-mid\">A consistent color palette is the foundation of every visual project - from a website, through a logo, to printed materials. Manually selecting colors that work together requires knowledge of color theory. The generator does it automatically: you provide one base color (e.g., your logo color), and the tool creates 9 color sets based on proven color harmony schemes.</p><p class=\"text-mid mt-3\">Each generated color comes with its HEX code (e.g., #4F6BF5) and HSL value (hue, saturation, lightness). The HEX code can be pasted directly into CSS, Figma, Canva, or any graphics application.</p>"
+      "title": "Me ya sa za a samar da fayafayan launuka?",
+      "html": "<p class=\"text-mid\">Fayafayan launuka mai daidaituwa ita ce tushen kowane aikin gani - daga gidan yanar gizo, ta hanyar alama, zuwa kayan bugu. Zaɓar launuka da ke aiki tare da hannu yana buƙatar sanin ka'idar launuka. Mai samar da yana yin hakan ta atomatik: ka ba da launi guda ɗaya na tushe (misali, launin alamar ka), kayan aikin kuma ya ƙirƙiri saitin launuka 9 bisa tsare-tsaren jituwar launuka da aka tabbatar.</p><p class=\"text-mid mt-3\">Kowane launi da aka samar yana zuwa tare da lambar HEX ɗinsa (misali, #4F6BF5) da ƙimar HSL (hue, saturation, lightness). Ana iya liƙa lambar HEX kai tsaye cikin CSS, Figma, Canva, ko kowane aikace-aikacen zane.</p>"
     },
     { "type": "gap", "size": "sm" },
     {
       "type": "sectionSteps",
-      "title": "How to use the color palette generator",
-      "description": "The whole process takes just a few seconds:",
+      "title": "Yadda ake amfani da mai samar da fayafayan launuka",
+      "description": "Dukan tsarin yana ɗaukar 'yan daƙiƙu kaɗan kawai:",
       "grid": "three",
       "items": [
-        { "title": "1. Enter the base color", "description": "Type a HEX code (e.g., #4F6BF5) in the text field or pick a color from the color picker. You can also use the Random Color button." },
-        { "title": "2. Confirm your choice", "description": "After clicking the Update Color button, the tool will automatically generate 9 palettes based on different color harmony schemes." },
-        { "title": "3. Copy the colors you need", "description": "Next to each color there is a Copy button - the HEX code goes to the clipboard and can be pasted directly into your project." }
+        {
+          "title": "1. Shigar da launin tushe",
+          "description": "Buga lambar HEX (misali, #4F6BF5) a cikin filin rubutu ko zaɓi launi daga mai zaɓar launi. Kuma za ka iya amfani da maɓallin Launin Bazuwar."
+        },
+        { "title": "2. Tabbatar da zaɓinka", "description": "Bayan dannawa maɓallin Sabunta Launi, kayan aikin zai samar da fayafayai 9 ta atomatik bisa tsare-tsaren jituwar launuka daban-daban." },
+        { "title": "3. Kwafa launukan da kake buƙata", "description": "Kusa da kowane launi akwai maɓallin Kwafa - lambar HEX tana zuwa clipboard kuma ana iya liƙa ta kai tsaye cikin aikin ka." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "What color schemes does the tool generate?",
-      "description": "The generator creates 9 palette types - each based on a different color theory principle:",
+      "title": "Wane irin tsare-tsaren launuka ne kayan aikin ke samarwa?",
+      "description": "Mai samar da yana ƙirƙirar nau'ikan fayafayai 9 - kowannensu ya dogara ne akan ka'idar launuka daban:",
       "grid": "two",
       "items": [
         {
           "icon": "RiStackLine",
-          "title": "Monochromatic palette",
-          "description": "Several shades of one color - from light to dark. All colors have the same hue on the color wheel and differ only in lightness. Works well in elegant, minimalist designs where consistency matters."
+          "title": "Fayafayan monochromatic",
+          "description": "Inuwar launuka da yawa na launi guda ɗaya - daga haske zuwa duhu. Dukan launuka suna da launi iri ɗaya a kan da'irar launuka kuma sun bambanta kawai a cikin haske. Yana aiki sosai a cikin zane-zane masu kyau, masu sauƙi inda daidaituwa ta fi muhimmanci."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Analogous palette",
-          "description": "Neighboring colors on the color wheel (shifted about 30° in both directions from the base). They create harmonious, smooth color transitions. Great for projects that build a warm or cool atmosphere."
+          "title": "Fayafayan analogous",
+          "description": "Launuka makwabta a kan da'irar launuka (an matsar da kusan 30° a bangarori biyu daga tushe). Suna ƙirƙirar sauye-sauyen launuka masu jituwa, masu santsi. Kyakkyawa don ayyuka da ke gina yanayi mai ɗumi ko sanyi."
         },
         {
           "icon": "RiLayoutGridLine",
-          "title": "Complementary palette",
-          "description": "The base color and the color opposite on the color wheel (180° shift). Creates strong visual contrast. Useful where an element needs to attract attention - buttons, highlighted headings, promo banners."
+          "title": "Fayafayan complementary",
+          "description": "Launin tushe da launin da ke gaba ɗaya a kan da'irar launuka (matsar da 180°). Yana ƙirƙirar bambancin gani mai ƙarfi. Yana da amfani inda wani abu ke buƙatar jawo hankali - maɓallai, taken da aka haskaka, tutocin tallace-tallace."
         },
         {
           "icon": "RiSparklingLine",
-          "title": "Triadic palette",
-          "description": "Three colors spaced 120° apart on the color wheel - forming an equilateral triangle. A vibrant, dynamic combination. Works well in creative projects: young brand identity, advertising materials, posters."
+          "title": "Fayafayan triadic",
+          "description": "Launuka uku da ke da tazarar 120° a kan da'irar launuka - suna samar da alwatika mai daidaita. Haɗuwa mai rai, mai ƙarfi. Yana aiki sosai a cikin ayyukan kirkira: alamar ƙasa, kayan talla, fastoci."
         },
         {
           "icon": "RiCursorLine",
-          "title": "Split-complementary palette",
-          "description": "A softer version of the complementary palette. Instead of one opposite color, it uses two colors shifted about 30° from the complement. Gives clear contrast but without as strong visual tension."
+          "title": "Fayafayan split-complementary",
+          "description": "Sigar fayafayan complementary mai laushi. Maimakon launi ɗaya na akasin, yana amfani da launuka biyu da aka matsar da kusan 30° daga complement. Yana ba da bambancin bayyananne amma ba tare da tashin hankali na gani mai ƙarfi ba."
         },
         {
           "icon": "RiDropLine",
-          "title": "Pastel palette",
-          "description": "The same hue with reduced saturation and increased lightness - soft, gentle colors. Popular in cosmetics, children's fashion, and food industry. Pairs well with a light background and white space."
+          "title": "Fayafayan pastel",
+          "description": "Launi iri ɗaya tare da rage ƙarfin launi da ƙara haske - launuka masu laushi, masu taushi. Sun shahara a cikin kayan kwalliya, suturar yara, da masana'antar abinci. Suna tafiya da kyau tare da bayan farin fili."
         },
         {
           "icon": "RiMoonLine",
-          "title": "Dark palette",
-          "description": "Base color at high saturation and reduced lightness - deep, intense colors. Useful for designing dark themes for websites and apps, as well as materials for premium brands."
+          "title": "Fayafayan duhu",
+          "description": "Launin tushe a ƙarfin launi mai girma da rage haske - launuka masu zurfi, masu ƙarfi. Yana da amfani don ƙera jigogin duhu don gidajen yanar gizo da aikace-aikace, da kuma kayan alamar kasuwanci na musamman."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Tonal palette",
-          "description": "Several lightness steps of one hue - from very light to dark. Similar to tonal scales used in design systems (e.g., shades from 50 to 900). Useful for building interfaces where the same color needs variants."
+          "title": "Fayafayan tonal",
+          "description": "Matakai da yawa na haske na launi guda ɗaya - daga mai haske sosai zuwa duhu. Kwatankwacin ma'aunin tonal da ake amfani da su a cikin tsarin zane (misali, inuwa daga 50 zuwa 900). Yana da amfani don gina mu'amala inda launi iri ɗaya ke buƙatar bambance-bambance."
         },
         {
           "icon": "RiContractLeftRightLine",
-          "title": "Minimalist palette",
-          "description": "One bold color accent and several very light, soft neutrals. The rest of the palette stays muted. Works well in modern interfaces with lots of white space - typical product and landing page style."
+          "title": "Fayafayan minimalist",
+          "description": "Launi ɗaya mai ƙarfi da launuka masu haske da yawa masu laushi. Sauran fayafayan suna ci gaba da kasancewa a hankali. Yana aiki sosai a cikin mu'amala na zamani tare da farin fili da yawa - salon shafukan ƙasa da na siyarwa."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "What is the color palette generator based on?",
-      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° on the color wheel</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
-      "html": "<p class=\"text-mid\">All palettes are created by mathematically transforming the base color in HSL color space. HSL describes a color with three values: hue (H) is the position on the color wheel (0°–360°), saturation (S) determines color intensity, and lightness (L) - how bright or dark the color is.</p><p class=\"text-mid mt-3\">The complementary, triadic, and split-complementary palettes are based on color wheel geometry - colors are placed at equal angular intervals, creating visual balance. The monochromatic, pastel, and dark palettes change only lightness and saturation while keeping the same hue.</p>"
+      "title": "Me ne mai samar da fayafayan launuka ke dogara a kai?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° a kan da'irar launuka</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">Ana ƙirƙirar dukan fayafayai ta hanyar canza launin tushe ta lissafi a cikin sararin launuka na HSL. HSL yana bayyana launi tare da ƙimomi uku: hue (H) shi ne matsayin a kan da'irar launuka (0°–360°), saturation (S) yana ƙayyade ƙarfin launi, kuma lightness (L) - yadda launi yake da haske ko duhu.</p><p class=\"text-mid mt-3\">Fayafayan complementary, triadic, da split-complementary sun dogara ne a kan lissafin da'irar launuka - ana sanya launuka a tazara daidai, wanda ke ƙirƙirar daidaiton gani. Fayafayan monochromatic, pastel, da duhu suna canza haske da ƙarfin launi kawai yayin da suke riƙe launi iri ɗaya.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Where to use the generated color palettes",
+      "title": "Ina za a yi amfani da fayafayan launuka da aka samar",
       "grid": "two",
       "items": [
         {
           "icon": "RiBrushLine",
-          "title": "Brand visual identity",
-          "description": "Select complementary colors for an existing logo or build a branding palette from scratch - for business cards, stationery, and marketing materials."
+          "title": "Asalin alamar kasuwanci ta gani",
+          "description": "Zaɓi launuka masu dacewa don alama da ke akwai ko gina fayafayan alamar kasuwanci daga farko - don katin kasuwanci, takardun ofis, da kayan tallace-tallace."
         },
         {
           "icon": "RiGlobalLine",
-          "title": "Websites",
-          "description": "Establish the primary color, accent color, and background shades. Copied HEX codes paste straight into CSS stylesheets or theme configuration."
+          "title": "Gidajen yanar gizo",
+          "description": "Kafa launin farko, launin ƙarfafawa, da inuwar baya. Ana iya liƙa lambobin HEX da aka kwafa kai tsaye cikin takardun salon CSS ko tsarin jigo."
         },
         {
           "icon": "RiSmartphoneLine",
-          "title": "App interfaces",
-          "description": "The tonal palette provides lightness variants of one color - lighter for backgrounds, darker for text, intermediate for borders and interactive states."
+          "title": "Mu'amalar aikace-aikace",
+          "description": "Fayafayan tonal tana ba da bambance-bambancen haske na launi guda ɗaya - masu haske don baya, masu duhu don rubutu, matsakaici don iyakoki da yanayin hulɗa."
         },
         {
           "icon": "RiImageLine",
-          "title": "Social media graphics",
-          "description": "Consistent colors for posts, stories, and profile covers. Analogous or pastel palettes work well when you want a uniform, recognizable style."
+          "title": "Zane-zanen kafofin watsa labarai na zamantakewa",
+          "description": "Launuka masu daidaituwa don sakonnin, labarun, da murfi na bayanan martaba. Fayafayan analogous ko pastel suna aiki sosai lokacin da kake son salon da ake gane shi."
         },
         {
           "icon": "RiSlideshowLine",
-          "title": "Presentations and documents",
-          "description": "Harmonious color sets for slides, charts, and infographics. Monochromatic or minimalist palettes maintain visual order."
+          "title": "Gabatarwa da takardu",
+          "description": "Saitin launuka masu jituwa don faifai, jadawali, da zane-zanen bayanai. Fayafayan monochromatic ko minimalist suna kiyaye tsari na gani."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Troubleshooting the palette generator",
+      "title": "Warware matsalolin mai samar da fayafayai",
       "grid": "two",
       "items": [
         {
           "icon": "RiRefreshLine",
-          "title": "Palettes don't change after entering a color",
-          "description": "Simply typing a HEX code does not automatically generate palettes - you need to confirm the change with the Update Color button. Only after confirmation does the tool recalculate all 9 schemes."
+          "title": "Fayafayai ba su canja ba bayan shigar da launi",
+          "description": "Kawai buga lambar HEX ba ya samar da fayafayai ta atomatik - kana buƙatar tabbatar da canjin tare da maɓallin Sabunta Launi. Sai bayan tabbatarwa ne kayan aikin ke sake ƙididdige dukan tsare-tsare 9."
         },
         {
           "icon": "RiErrorWarningLine",
-          "title": "Invalid format message",
-          "description": "The generator only accepts HEX format with a # at the beginning, e.g., #FF5500. Formats without # (e.g., FF5500) or in RGB notation (e.g., rgb(255,85,0)) are not supported."
+          "title": "Saƙon tsari mara inganci",
+          "description": "Mai samar da yana karɓar tsarin HEX kawai tare da # a farkon, misali, #FF5500. Tsare-tsare ba tare da # ba (misali, FF5500) ko a cikin rubuce-rubucen RGB (misali, rgb(255,85,0)) ba a tallafa musu ba."
         },
         {
           "icon": "RiCodeLine",
-          "title": "Short and full HEX format",
-          "description": "Both formats are supported: full #RRGGBB (e.g., #FF5500) and short #RGB (e.g., #F50). The generator automatically recognizes both and treats them identically."
+          "title": "Tsarin HEX gajere da cikakke",
+          "description": "Ana tallafawa tsare-tsare biyu: cikakke #RRGGBB (misali, #FF5500) da gajere #RGB (misali, #F50). Mai samar da yana gane duka biyun ta atomatik kuma yana bi da su daidai."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the color palette generator",
+      "title": "Tambayoyin da ake yawan yi game da mai samar da fayafayan launuka",
       "openByDefault": 1,
       "items": [
         {
-          "question": "What format should the base color be in?",
-          "answer": "The generator accepts colors in HEX format - both short (e.g., #F50) and full (e.g., #FF5500). Next to the text field you will find a color picker that lets you choose a color visually. Generated palettes show the HEX code and HSL value of each color.",
-          "answerSchemaText": "The generator accepts HEX colors (#RGB or #RRGGBB). Each generated color has a HEX code and HSL value."
+          "question": "Wane tsari ne launin tushe ya kamata ya kasance?",
+          "answer": "Mai samar da yana karɓar launuka a tsarin HEX - duka gajere (misali, #F50) da cikakke (misali, #FF5500). Kusa da filin rubutu za ka sami mai zaɓar launi da ke baka damar zaɓar launi ta gani. Fayafayan da aka samar suna nuna lambar HEX da ƙimar HSL na kowane launi.",
+          "answerSchemaText": "Mai samar da yana karɓar launuka HEX (#RGB ko #RRGGBB). Kowane launi da aka samar yana da lambar HEX da ƙimar HSL."
         },
         {
-          "question": "How many colors does each palette contain?",
-          "answer": "Each palette contains 4 to 6 colors. The number depends on the scheme type - monochromatic and tonal palettes generate more shades (a lightness scale of one hue), while complementary and triadic palettes focus on fewer contrasting colors.",
-          "answerSchemaText": "Each palette contains 4 to 6 colors, depending on the scheme type."
+          "question": "Launuka nawa ne kowane fayafaya ke ɗauke da su?",
+          "answer": "Kowane fayafaya yana ɗauke da launuka 4 zuwa 6. Adadin ya dogara ne akan nau'in tsari - fayafayan monochromatic da tonal suna samar da inuwa da yawa (ma'aunin haske na launi guda ɗaya), yayin da fayafayan complementary da triadic suke mai da hankali akan launuka masu bambanci kaɗan.",
+          "answerSchemaText": "Kowane fayafaya yana ɗauke da launuka 4 zuwa 6, ya danganta da nau'in tsari."
         },
         {
-          "question": "What is the HSL color space and how to read it?",
-          "answer": "HSL is a way of describing color using three values: H (hue, 0°–360° on the color wheel), S (saturation, 0%–100%), and L (lightness, 0%–100%). The generator displays HSL values alongside each color, making it easier to understand how the colors in the palette differ - e.g., a monochromatic palette changes only lightness (L) while keeping the same hue (H).",
-          "answerSchemaText": "HSL describes color via hue (H), saturation (S), and lightness (L). The generator displays these values alongside each color."
+          "question": "Menene sararin launuka na HSL kuma yaya ake karantarsa?",
+          "answer": "HSL hanya ce ta bayyana launi ta amfani da ƙimomi uku: H (hue, 0°–360° a kan da'irar launuka), S (saturation, 0%–100%), da L (lightness, 0%–100%). Mai samar da yana nuna ƙimomin HSL kusa da kowane launi, wanda ke sauƙaƙe fahimtar yadda launuka a cikin fayafayan suke bambanta - misali, fayafayan monochromatic yana canza haske (L) kawai yayin da yake riƙe launi iri ɗaya (H).",
+          "answerSchemaText": "HSL yana bayyana launi ta hanyar hue (H), saturation (S), da lightness (L). Mai samar da yana nuna waɗannan ƙimomi kusa da kowane launi."
         },
         {
-          "question": "Can I use the generated palettes commercially?",
-          "answer": "Yes. You can use the generated color palettes in any project - commercial and non-commercial, without licensing restrictions.",
-          "answerSchemaText": "Yes, generated palettes can be used without restrictions in commercial and non-commercial projects."
+          "question": "Zan iya amfani da fayafayan da aka samar don kasuwanci?",
+          "answer": "Eh. Za ka iya amfani da fayafayan launuka da aka samar a cikin kowane aiki - na kasuwanci da na ba kasuwanci ba, ba tare da ƙuntatawan lasisi ba.",
+          "answerSchemaText": "Eh, ana iya amfani da fayafayan da aka samar ba tare da ƙuntata ba a cikin ayyukan kasuwanci da na ba kasuwanci ba."
         },
         {
-          "question": "Does the color palette generator require login or payment?",
-          "answer": "The generator is completely free and requires no login or registration. Colors are generated locally in the browser - no data is sent to external servers.",
-          "answerSchemaText": "The generator is free, requires no login. Colors are generated locally in the browser."
+          "question": "Mai samar da fayafayan launuka yana buƙatar shiga ko biyan kuɗi?",
+          "answer": "Mai samar da kyauta ne gaba ɗaya kuma ba ya buƙatar shiga ko rajista. Ana samar da launuka a cikin browser na gida - ba a aika bayanai zuwa sabar waje ba.",
+          "answerSchemaText": "Mai samar da kyauta ne, ba ya buƙatar shiga. Ana samar da launuka a cikin browser na gida."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
+    { "type": "toolsCarousel", "title": "Bincika sauran kayan aiki" },
     { "type": "gap", "size": "sm" }
   ]
 }

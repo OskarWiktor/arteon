@@ -2,44 +2,44 @@
   "toolKey": "paletteExtractor",
   "locale": "ha",
   "metadata": {
-    "title": "Free Image Color Extractor – Palette From Any Photo",
-    "description": "Upload a photo or logo and extract up to 12 dominant colors with HEX and RGB codes. Perfect for UI, branding and social media. No signup, no limits.",
+    "title": "Mai Fitar Launuka Daga Hoto Kyauta – Palet Daga Kowane Hoto",
+    "description": "Đora hoto ko alama kuma fitar da launuka masu rinjaye har zuwa 12 tare da lambobin HEX da RGB. Cikakke don UI, alama da kafofin watsa labarai. Ba buƙatar rajista, ba iyaka.",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/ha/kayan-aiki/fitar-launuka-daga-hoto"
   },
   "hero": {
-    "title": "Image Color Extractor – Get a Palette From Any Photo",
-    "description": "Upload a photo, logo, or graphic, and the tool will extract up to 12 dominant colors with HEX and RGB codes. Analysis happens locally in your browser.",
+    "title": "Mai Fitar Launuka Daga Hoto – Samu Palet Daga Kowane Hoto",
+    "description": "Đora hoto, alama, ko zane, kuma kayan aikin zai fitar da launuka masu rinjaye har zuwa 12 tare da lambobin HEX da RGB. Ana yin bincike a cikin browser na gida.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/ha/kayan-aiki", "label": "Tools" },
-    "third": { "href": "/ha/kayan-aiki/fitar-launuka-daga-hoto", "label": "Image color extractor" }
+    "second": { "href": "/ha/kayan-aiki", "label": "Kayan Aiki" },
+    "third": { "href": "/ha/kayan-aiki/fitar-launuka-daga-hoto", "label": "Mai fitar launuka daga hoto" }
   },
   "schemas": {
     "software": {
-      "name": "Image color extractor online - free palette generator",
-      "alternateName": ["Extract color palette from a photo or logo"],
+      "name": "Mai fitar launuka daga hoto ta yanar gizo - mai samar da palet kyauta",
+      "alternateName": ["Fitar da palet launuka daga hoto ko alama"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
-      "description": "Free online image color extractor. Upload a photo, logo, or graphic and get a palette of up to 12 dominant colors with HEX and RGB codes. Processing happens in the browser - files are not sent to a server.",
+      "description": "Mai fitar launuka daga hoto kyauta ta yanar gizo. Đora hoto, alama, ko zane kuma samu palet na launuka masu rinjaye har zuwa 12 tare da lambobin HEX da RGB. Ana yin sarrafa a cikin browser - ba a aika fayiloli zuwa sabar ba.",
       "featureList": [
-        "Automatic extraction of up to 12 dominant colors",
-        "Analysis of photos, logos, and vector graphics",
-        "Color codes in HEX and RGB format",
-        "Copy color code to clipboard",
-        "Support for PNG, JPG, and SVG files",
-        "Ignores transparent pixels in PNG files",
-        "Local processing in the browser - image is not sent to a server"
+        "Fitar da launuka masu rinjaye har zuwa 12 ta atomatik",
+        "Binciken hotuna, alamomi, da zane-zanen vector",
+        "Lambobin launi a tsarin HEX da RGB",
+        "Kwafa lambar launi zuwa clipboard",
+        "Tallafawa fayilolin PNG, JPG, da SVG",
+        "Yana tsallake pixels masu gaskiya a cikin fayilolin PNG",
+        "Sarrafa a cikin browser na gida - ba a aika hoto zuwa sabar ba"
       ]
     },
     "howTo": {
-      "name": "How to extract colors from a photo or image",
-      "description": "How to extract dominant colors from a photo or logo. Upload an image in PNG, JPG, or SVG format, and the tool will generate a palette of up to 12 colors with HEX codes.",
+      "name": "Yadda ake fitar da launuka daga hoto ko sura",
+      "description": "Yadda ake fitar da launuka masu rinjaye daga hoto ko alama. Đora hoto a tsarin PNG, JPG, ko SVG, kuma kayan aikin zai samar da palet na launuka har zuwa 12 tare da lambobin HEX.",
       "steps": [
-        { "name": "Upload an image", "text": "Drag a file onto the designated area or select an image from your device. Supported formats are PNG, JPG, and SVG." },
-        { "name": "Wait for analysis", "text": "The tool will automatically analyze the image and extract dominant colors." },
-        { "name": "Copy colors", "text": "Next to each color you will find a copy button - the HEX code is copied to your system clipboard." }
+        { "name": "Đora hoto", "text": "Ja fayil zuwa wurin da aka kebantar ko zaɓi hoto daga na'urar ka. Tsare-tsare da ake tallafawa sune PNG, JPG, da SVG." },
+        { "name": "Jira bincike", "text": "Kayan aikin zai binciki hoton ta atomatik kuma ya fitar da launuka masu rinjaye." },
+        { "name": "Kwafa launuka", "text": "Kusa da kowane launi za ka sami maɓallin kwafa - ana kwafa lambar HEX zuwa clipboard na tsarin ka." }
       ]
     }
   },
@@ -47,209 +47,212 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Why extract colors from an image?",
-      "html": "<p class=\"mb-4\">Every photo, logo, or graphic contains colors that can serve as a ready-made color palette. The extractor analyzes the image and shows which colors dominate - along with HEX codes and RGB values ready to paste into your project.</p><p class=\"mb-4\">In practice, this means that instead of manually sampling colors in a graphics application (pixel by pixel), you upload one image and get an organized list of up to 12 colors. This is useful when selecting colors for a website, creating consistent social media graphics, or building a visual identity from existing material.</p><p>All analysis happens locally in the browser - the image is not sent to any server.</p>"
+      "title": "Me ya sa ake fitar da launuka daga hoto?",
+      "html": "<p class=\"mb-4\">Kowane hoto, alama, ko zane yana ɗauke da launuka da za su iya zama palet na launi da aka shirya. Mai fitar yana bincika hoton kuma yana nuna wane launuka ke rinjaye - tare da lambobin HEX da ƙimomin RGB da suke shirye don liƙawa a cikin aikin ka.</p><p class=\"mb-4\">A aikace, wannan yana nufin maimakon zaɓar launuka da hannu a cikin aikace-aikacen zane (pixel da pixel), kana ɗora hoto guda ɗaya kuma ka sami jerin launuka masu tsari har zuwa 12. Wannan yana da amfani lokacin zaɓar launuka don gidan yanar gizo, ƙirƙirar hotunan kafofin watsa labarai masu daidaituwa, ko gina asalin gani daga kayan da ke akwai.</p><p>Ana yin dukan bincike a cikin browser na gida - ba a aika hoton zuwa kowane sabar ba.</p>"
     },
     { "type": "gap", "size": "xs" },
     {
       "type": "sectionSteps",
-      "title": "How to use the image color extractor",
-      "description": "The whole process takes just a few seconds:",
+      "title": "Yadda ake amfani da mai fitar launuka daga hoto",
+      "description": "Dukan tsarin yana ɗaukar 'yan daƙiƙu kaɗan kawai:",
       "grid": "three",
       "items": [
-        { "title": "1. Upload an image", "description": "Drag a file onto the designated area or select it from your device. Supported formats are PNG, JPG, and SVG." },
-        { "title": "2. Wait for analysis", "description": "The tool will automatically analyze the image and extract up to 12 dominant colors." },
-        { "title": "3. Copy the colors you need", "description": "Next to each color there is a copy button - the HEX or RGB code goes to the clipboard and can be pasted directly into your project." }
+        { "title": "1. Ɗora hoto", "description": "Ja fayil zuwa wurin da aka kebantar ko zaɓi shi daga na'urar ka. Tsare-tsare da ake tallafawa sune PNG, JPG, da SVG." },
+        { "title": "2. Jira bincike", "description": "Kayan aikin zai binciki hoton ta atomatik kuma ya fitar da launuka masu rinjaye har zuwa 12." },
+        {
+          "title": "3. Kwafa launukan da kake buƙata",
+          "description": "Kusa da kowane launi akwai maɓallin kwafa - lambar HEX ko RGB tana zuwa clipboard kuma ana iya liƙa ta kai tsaye a cikin aikin ka."
+        }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "What does an extracted color palette look like?",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Example colors extracted from a nature image</p></div>",
-      "html": "<p class=\"text-mid mb-4\">After uploading an image, the extractor displays a list of dominant colors sorted from most to least prominent. Each color shows its HEX code and RGB value - ready to paste into CSS, Figma, or any graphics application.</p><p class=\"text-mid\">The number of extracted colors depends on the image content. A landscape photo will produce a richer palette (8–12 colors), while a simple two-color logo will yield correspondingly fewer items.</p>"
+      "title": "Yaya palet na launuka da aka fitar ke kama?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Misalin launuka da aka fitar daga hoton yanayi</p></div>",
+      "html": "<p class=\"text-mid mb-4\">Bayan ɗora hoto, mai fitar yana nuna jerin launuka masu rinjaye waɗanda aka tsara daga mafi yawa zuwa mafi ƙaranci. Kowane launi yana nuna lambar HEX da ƙimar RGB - shirye don liƙawa a cikin CSS, Figma, ko kowane aikace-aikacen zane.</p><p class=\"text-mid\">Adadin launukan da aka fitar ya dogara da abun cikin hoto. Hoton shimfiɗa zai samar da palet mai wadata (launuka 8–12), yayin da alama mai sauƙi mai launuka biyu za ta samar da ƙananan abubuwa.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Which images give the best results in the color extractor?",
-      "description": "The quality of the extracted palette depends on the type of uploaded image:",
+      "title": "Wane hotuna ne ke ba da mafi kyawun sakamako a cikin mai fitar launuka?",
+      "description": "Ingancin palet da aka fitar ya dogara da nau'in hoton da aka ɗora:",
       "grid": "two",
       "items": [
         {
           "icon": "RiImageLine",
-          "title": "Logos and graphics with a limited palette",
-          "description": "Images with a few clearly separated colors give the most precise results - the extractor accurately identifies each color."
+          "title": "Alamomi da zane-zane masu iyakantaccen palet",
+          "description": "Hotuna masu launuka kaɗan da suka rabu a fili suna ba da sakamako mafi daidaito - mai fitar yana gano kowane launi daidai."
         },
         {
           "icon": "RiSearchEyeLine",
-          "title": "Photos with a clear subject",
-          "description": "Product, interior, or landscape photos also produce useful palettes, but they contain more shades - including shadow colors and light reflections."
+          "title": "Hotuna masu bayyananniyar jigo",
+          "description": "Hotunan kayayyaki, ɗakin ciki, ko shimfiɗa kuma suna samar da palet masu amfani, amma suna ɗauke da ƙarin inuwa - ciki har da launukan inuwa da hasken wuta."
         },
         {
           "icon": "RiEraserLine",
-          "title": "PNG files with transparent backgrounds",
-          "description": "Transparent pixels are automatically skipped during analysis. If you want to extract colors only from the object (e.g., a logo), use a PNG file without a background."
+          "title": "Fayilolin PNG masu bayan gaskiya",
+          "description": "Ana tsallake pixels masu gaskiya ta atomatik yayin bincike. Idan kana son fitar da launuka kawai daga abu (misali, alama), yi amfani da fayil PNG ba tare da baya ba."
         },
         {
           "icon": "RiCropLine",
-          "title": "Images without a large solid-color background",
-          "description": "When the background takes up most of the image area, its color dominates the results. Before uploading, consider cropping the image to the area of interest."
+          "title": "Hotuna ba tare da babban bayan launi guda ɗaya ba",
+          "description": "Lokacin da baya ke ɗaukar yawancin yankin hoto, launinsa yana mamaye sakamakon. Kafin ɗorawa, yi la'akari da yanke hoton zuwa yankin da kake so."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionTimeline",
-      "title": "How does image color extraction work?",
-      "description": "After uploading a file, the tool performs several steps in the background - all analysis happens locally in the browser:",
+      "title": "Yaya fitar da launuka daga hoto ke aiki?",
+      "description": "Bayan ɗora fayil, kayan aikin yana yin matakai da yawa a baya - ana yin dukan bincike a cikin browser na gida:",
       "items": [
         {
           "icon": "RiZoomInLine",
-          "title": "Image scaling",
-          "description": "The image is resized to about 240 pixels wide. This speeds up analysis even for very large photos, without affecting color detection accuracy."
+          "title": "Canza girman hoto",
+          "description": "Ana canza girman hoton zuwa kusan 240 pixels faɗi. Wannan yana hanzarta bincike ko da don hotuna manya sosai, ba tare da shafar daidaiton gano launi ba."
         },
         {
           "icon": "RiGroupLine",
-          "title": "Grouping similar colors",
-          "description": "Each pixel is analyzed, and similar shades are grouped together. Two nearly identical blues become one color in the palette."
+          "title": "Tattara launuka masu kama",
+          "description": "Ana bincika kowane pixel, kuma ana tattara inuwa masu kama tare. Shuɗi biyu da suka kusan yi kama suna zama launi guda ɗaya a cikin palet."
         },
         {
           "icon": "RiStarLine",
-          "title": "Selecting dominant colors",
-          "description": "The algorithm picks colors that cover the largest area of the image. The result is a list of up to 12 colors sorted from most to least prominent."
+          "title": "Zaɓar launuka masu rinjaye",
+          "description": "Algorithm yana zaɓar launuka da ke rufe mafi girman yankin hoto. Sakamakon jerin launuka ne har zuwa 12 da aka tsara daga mafi yawa zuwa mafi ƙaranci."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Skipping transparent pixels",
-          "description": "In PNG files with transparent backgrounds, those areas are not included in the analysis - the extractor examines only visible colors. The entire process typically takes under a second."
+          "title": "Tsallake pixels masu gaskiya",
+          "description": "A cikin fayilolin PNG masu bayan gaskiya, waɗannan yankuna ba a haɗa su a cikin bincike ba - mai fitar yana bincika launuka masu ganuwa kawai. Dukan tsarin yawanci yana ɗaukar ƙasa da daƙiƙa guda."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Troubleshooting the color extractor",
+      "title": "Warware matsalolin mai fitar launuka",
       "grid": "two",
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "Extractor returned fewer than 12 colors",
-          "description": "The number of extracted colors depends on the image content. A simple two-color logo will give 2–3 results - this is correct behavior. The tool does not add artificial colors; it only extracts those that actually appear in the image."
+          "title": "Mai fitar ya dawo da launuka ƙasa da 12",
+          "description": "Adadin launukan da aka fitar ya dogara da abun cikin hoto. Alama mai sauƙi mai launuka biyu za ta ba da sakamako 2–3 - wannan hali ne na daidai. Kayan aikin ba ya ƙara launuka na wucin gadi; yana fitar da waɗanda suke bayyana a zahiri a cikin hoton kawai."
         },
         {
           "icon": "RiAlertLine",
-          "title": "Unexpected colors appeared in the palette",
-          "description": "These may be shadow, gradient, or light reflection colors - pixels in those areas have different colors than the object visible at first glance. Using an image with more uniform colors or cropping dark areas will improve results."
+          "title": "Launuka da ba a tsammani sun bayyana a cikin palet",
+          "description": "Waɗannan na iya zama launukan inuwa, gradient, ko hasken wuta - pixels a cikin waɗannan yankuna suna da launuka daban da na abu mai ganuwa da farko. Amfani da hoto mai launuka masu daidaituwa ko yanke yankuna masu duhu zai inganta sakamako."
         },
         {
           "icon": "RiErrorWarningLine",
-          "title": "Background color dominates the results",
-          "description": "When the background covers more area than the object itself, its color will appear first on the list. Solution: use a PNG file with a transparent background or crop the image so the object takes up more of the frame."
+          "title": "Launin baya yana mamaye sakamakon",
+          "description": "Lokacin da baya ke rufe yanki mafi girma fiye da abun kansa, launinsa zai bayyana na farko a jerin. Mafita: yi amfani da fayil PNG mai bayan gaskiya ko yanke hoton domin abun ya ɗauki ƙarin sararin firam."
         },
         {
           "icon": "RiFileWarningLine",
-          "title": "File is not accepted by the extractor",
-          "description": "The tool only supports PNG, JPG, and SVG formats. Files in other formats (GIF, TIFF, HEIC, PDF) require prior conversion."
+          "title": "Ba a karɓar fayil a cikin mai fitar ba",
+          "description": "Kayan aikin yana tallafawa tsarin PNG, JPG, da SVG kawai. Fayiloli a cikin tsare-tsare na daban (GIF, TIFF, HEIC, PDF) suna buƙatar juya tukuna."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "What makes this image color extractor special?",
+      "title": "Menene ke sa mai fitar launuka daga hoto ya bambanta?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Local analysis - the image never leaves your computer",
-          "description": "All color extraction happens in the browser. The image is not sent to any server, and after closing the page, data is removed from memory."
+          "title": "Bincike na gida - hoton ba ya barin kwamfutar ka",
+          "description": "Ana yin dukan fitar da launuka a cikin browser. Ba a aika hoton zuwa kowane sabar ba, kuma bayan rufe shafin, ana cire bayanai daga ƙwaƙwalwa."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Up to 12 dominant colors from one image",
-          "description": "The tool extracts up to 12 colors sorted from most prominent - enough to build a complete project color palette."
+          "title": "Launuka masu rinjaye har zuwa 12 daga hoto guda ɗaya",
+          "description": "Kayan aikin yana fitar da launuka har zuwa 12 da aka tsara daga mafi yawa - isasshe don gina cikakken palet na launin aiki."
         },
         {
           "icon": "RiFileImageLine",
-          "title": "Three popular image formats",
-          "description": "Supported formats are PNG, JPG, and SVG. PNG files with transparent backgrounds give the best results because transparent pixels are automatically skipped."
+          "title": "Tsarin hotuna uku masu shahara",
+          "description": "Tsare-tsare da ake tallafawa sune PNG, JPG, da SVG. Fayilolin PNG masu bayan gaskiya suna ba da mafi kyawun sakamako saboda ana tsallake pixels masu gaskiya ta atomatik."
         },
         {
           "icon": "RiGlobalLine",
-          "title": "Ready HEX and RGB codes to paste",
-          "description": "Each extracted color comes with its HEX code (e.g., #2C5F2D) and RGB value. The code can be copied to the clipboard and pasted directly into CSS, Figma, or Photoshop."
+          "title": "Lambobin HEX da RGB da suke shirye don liƙawa",
+          "description": "Kowane launi da aka fitar yana zuwa tare da lambar HEX (misali, #2C5F2D) da ƙimar RGB. Ana iya kwafa lambar zuwa clipboard kuma a liƙa ta kai tsaye a cikin CSS, Figma, ko Photoshop."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Where to use colors extracted from an image",
+      "title": "Ina ake amfani da launuka da aka fitar daga hoto",
       "grid": "two",
       "items": [
         {
           "icon": "RiBrushLine",
-          "title": "Building visual identity",
-          "description": "Upload a photo that captures the mood of the brand - a landscape, a restaurant interior, a product photo - and extract colors as a starting point for a branding palette."
+          "title": "Gina asalin gani",
+          "description": "Ɗora hoton da ke ɗaukar yanayin alama - shimfiɗa, ɗakin ciki na gidan abinci, hoton kayan - kuma fitar da launuka a matsayin farkon palet na alama."
         },
         {
           "icon": "RiLayoutMasonryLine",
-          "title": "Social media graphics",
-          "description": "Extract colors from a product photo and use them as backgrounds or accents in graphics. Posts based on colors from the same source look consistent on the profile."
+          "title": "Hotunan kafofin watsa labarai",
+          "description": "Fitar da launuka daga hoton kayan kuma yi amfani da su a matsayin baya ko ƙari a cikin hotuna. Bugawa da suka dogara da launuka daga tushe ɗaya suna kama daidai a kan bayanan martaba."
         },
         {
           "icon": "RiPaintBrushLine",
-          "title": "Matching colors to a website",
-          "description": "Extract colors from the logo and use them as the website color palette - primary color, accent color, background shades. HEX codes paste straight into CSS."
+          "title": "Daidaita launuka zuwa gidan yanar gizo",
+          "description": "Fitar da launuka daga alama kuma yi amfani da su a matsayin palet na launin gidan yanar gizo - launin farko, launin ƙari, inuwar baya. Ana liƙa lambobin HEX kai tsaye a cikin CSS."
         },
         {
           "icon": "RiSearchEyeLine",
-          "title": "Expanding an existing palette",
-          "description": "An extracted base color can be used in the <a href=\"/ha/kayan-aiki/color-palette-generator\">color palette generator</a> to create a full set of harmonious colors based on color theory."
+          "title": "Faɗaɗa palet da ke akwai",
+          "description": "Ana iya amfani da launin tushe da aka fitar a cikin <a href=\"/ha/kayan-aiki/color-palette-generator\">mai samar da palet na launi</a> don ƙirƙirar cikakken saitin launuka masu jituwa dangane da ka'idar launi."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the image color extractor",
+      "title": "Tambayoyin da ake yawan yi game da mai fitar launuka daga hoto",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Does the image color extractor require registration?",
-          "answer": "No. The tool is completely free and requires no login or registration. The image is analyzed locally in the browser - it is not sent to any server. After closing the page, all data is removed.",
-          "answerSchemaText": "No. The tool is free and does not require registration. The image is analyzed locally in the browser."
+          "question": "Shin mai fitar launuka daga hoto yana buƙatar rajista?",
+          "answer": "A'a. Kayan aikin kyauta ne gaba ɗaya kuma ba ya buƙatar shiga ko rajista. Ana bincika hoton a cikin browser na gida - ba a aika shi zuwa kowane sabar ba. Bayan rufe shafin, ana cire dukan bayanai.",
+          "answerSchemaText": "A'a. Kayan aikin kyauta ne kuma ba ya buƙatar rajista. Ana bincika hoton a cikin browser na gida."
         },
         {
-          "question": "How is the color extractor different from a palette generator?",
-          "answer": "The extractor pulls colors from an existing image - it analyzes a photo and shows which colors dominate in it. A color palette generator works the other way: you provide one base color, and the tool creates harmonious sets based on color theory. Both tools complement each other - you can extract a color from an image and then use it as a base in the palette generator.",
-          "answerSchemaText": "The extractor pulls colors from an image. The generator creates palettes from a base color. Both tools complement each other."
+          "question": "Yaya mai fitar launuka ya bambanta da mai samar da palet?",
+          "answer": "Mai fitar yana ciro launuka daga hoton da ke akwai - yana bincika hoto kuma yana nuna wane launuka ke rinjaye a ciki. Mai samar da palet na launi yana aiki ta wata hanya: kana ba da launi guda ɗaya na tushe, kuma kayan aikin yana ƙirƙirar saituna masu jituwa dangane da ka'idar launi. Kayan aikin biyu suna cikar juna - za ka iya fitar da launi daga hoto sannan ka yi amfani da shi a matsayin tushe a cikin mai samar da palet.",
+          "answerSchemaText": "Mai fitar yana ciro launuka daga hoto. Mai samar yana ƙirƙirar palet daga launin tushe. Kayan aikin biyu suna cikar juna."
         },
         {
-          "question": "How many colors does the extractor pull from one image?",
-          "answer": "The tool extracts up to 12 dominant colors. The exact number depends on the image content - if a graphic has only two colors (e.g., a simple logo), the result will contain fewer items. Colors are sorted from most to least prominent.",
-          "answerSchemaText": "Up to 12 dominant colors, sorted from the most to least prominent."
+          "question": "Nawa launuka mai fitar ke cirowa daga hoto guda ɗaya?",
+          "answer": "Kayan aikin yana fitar da launuka masu rinjaye har zuwa 12. Daidaitaccen adadin ya dogara da abun cikin hoto - idan zane yana da launuka biyu kawai (misali, alama mai sauƙi), sakamakon zai ƙunshi ƙananan abubuwa. Ana tsara launuka daga mafi yawa zuwa mafi ƙaranci.",
+          "answerSchemaText": "Launuka masu rinjaye har zuwa 12, da aka tsara daga mafi yawa zuwa mafi ƙaranci."
         },
         {
-          "question": "What image formats does the color extractor support?",
-          "answer": "Supported formats are PNG, JPG (JPEG), and SVG. PNG files with transparent backgrounds give better results because transparent pixels are skipped during analysis - the tool focuses on the colors of the object itself.",
-          "answerSchemaText": "PNG, JPG, and SVG. PNG with transparent background gives the best results."
+          "question": "Wane tsarin hotuna ne mai fitar launuka ke tallafawa?",
+          "answer": "Tsare-tsare da ake tallafawa sune PNG, JPG (JPEG), da SVG. Fayilolin PNG masu bayan gaskiya suna ba da sakamako mafi kyau saboda ana tsallake pixels masu gaskiya yayin bincike - kayan aikin yana mayar da hankali kan launukan abu kansa.",
+          "answerSchemaText": "PNG, JPG, da SVG. PNG mai bayan gaskiya yana ba da mafi kyawun sakamako."
         },
         {
-          "question": "In what format do I get the extracted color codes?",
-          "answer": "Each color is displayed with its HEX code (e.g., #2C5F2D) and RGB value (e.g., rgb(44, 95, 45)). The code can be copied to the clipboard and pasted directly into CSS, Figma, Photoshop, or any other graphics application.",
-          "answerSchemaText": "HEX (e.g., #2C5F2D) and RGB (e.g., rgb(44, 95, 45)). Copyable to clipboard."
+          "question": "A wane tsari nake samun lambobin launuka da aka fitar?",
+          "answer": "Ana nuna kowane launi tare da lambar HEX (misali, #2C5F2D) da ƙimar RGB (misali, rgb(44, 95, 45)). Ana iya kwafa lambar zuwa clipboard kuma a liƙa ta kai tsaye a cikin CSS, Figma, Photoshop, ko kowane aikace-aikacen zane.",
+          "answerSchemaText": "HEX (misali, #2C5F2D) da RGB (misali, rgb(44, 95, 45)). Ana iya kwafa zuwa clipboard."
         },
         {
-          "question": "Can I copy all palette colors at once?",
-          "answer": "Currently the tool allows copying colors individually - next to each color there is a button that copies the HEX code to the clipboard. The copied code can be immediately pasted into Figma, Photoshop, CSS, or any other application.",
-          "answerSchemaText": "Colors are copied individually via the copy button next to each color."
+          "question": "Zan iya kwafa dukan launukan palet a lokaci guda?",
+          "answer": "A yanzu kayan aikin yana ba da damar kwafa launuka ɗaya-ɗaya - kusa da kowane launi akwai maɓalli da ke kwafa lambar HEX zuwa clipboard. Ana iya liƙa lambar da aka kwafa nan da nan a cikin Figma, Photoshop, CSS, ko kowane aikace-aikace.",
+          "answerSchemaText": "Ana kwafa launuka ɗaya-ɗaya ta hanyar maɓallin kwafa kusa da kowane launi."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
+    { "type": "toolsCarousel", "title": "Bincika sauran kayan aiki" },
     { "type": "gap", "size": "sm" }
   ]
 }

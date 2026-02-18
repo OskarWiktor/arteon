@@ -2,76 +2,76 @@
   "toolKey": "contrastChecker",
   "locale": "ha",
   "metadata": {
-    "title": "Free Color Contrast Checker – WCAG 2.1 Compliance",
-    "description": "Check if your text and background colors are readable per WCAG 2.1. Enter HEX, RGB or HSL codes, see the contrast ratio and use auto-fix to find accessible.",
+    "title": "Mai Tantance Bambancin Launuka Kyauta – Bin Doka WCAG 2.1",
+    "description": "Duba ko launukan rubutu da bayan ka suna iya karatu bisa WCAG 2.1. Shigar da lambobin HEX, RGB ko HSL, duba ma'aunin bambanci kuma yi amfani da gyara ta atomatik don samun masu samu.",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/ha/kayan-aiki/tantance-bambancin-launuka"
   },
   "hero": {
-    "title": "Color contrast and readability checker",
-    "description": "Enter a text and background color, and the tool will show whether contrast is sufficient. Calculations are based on the international accessibility standard WCAG 2.1, which defines minimum contrast values for different content types.",
+    "title": "Mai tantance bambancin launuka da iya karatu",
+    "description": "Shigar da launin rubutu da baya, kayan aikin zai nuna ko bambanci ya isa. Ana yin ƙididdiga bisa ka'idar samun dama ta duniya WCAG 2.1, wanda ke ayyana ƙananan ƙimomin bambanci don nau'ikan abun ciki daban-daban.",
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
   "breadcrumbs": {
     "second": {
       "href": "/ha/kayan-aiki",
-      "label": "Tools"
+      "label": "Kayan Aiki"
     },
     "third": {
       "href": "/ha/kayan-aiki/tantance-bambancin-launuka",
-      "label": "Color contrast checker"
+      "label": "Mai tantance bambancin launuka"
     }
   },
   "schemas": {
     "software": {
-      "name": "Color contrast and readability checker online",
+      "name": "Mai tantance bambancin launuka da iya karatu ta yanar gizo",
       "alternateName": [
-        "Color readability tester",
-        "Text and background contrast checker",
-        "Readability checking tool",
-        "Color contrast calculator",
-        "WCAG contrast tester",
-        "Color accessibility checker",
-        "Are my colors readable"
+        "Mai gwada iya karatu na launuka",
+        "Mai tantance bambancin rubutu da baya",
+        "Kayan aikin tantance iya karatu",
+        "Mai ƙididdige bambancin launuka",
+        "Mai gwada bambanci na WCAG",
+        "Mai tantance samun dama na launuka",
+        "Shin launuka na suna iya karatu"
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
-      "description": "Check if text and background colors are readable for all users. The tool calculates contrast ratio per WCAG 2.1 and shows whether you meet accessibility requirements.",
+      "description": "Duba ko launukan rubutu da baya suna iya karatu ga duk masu amfani. Kayan aikin yana ƙididdige ma'aunin bambanci bisa WCAG 2.1 kuma yana nuna ko kana cika buƙatun samun dama.",
       "featureList": [
-        "Contrast ratio calculation",
-        "WCAG 2.1 Level AA compliance check",
-        "WCAG 2.1 Level AAA compliance check",
-        "Normal text testing",
-        "Large text and heading testing",
-        "Icon and UI component testing",
-        "HEX color format support",
-        "RGB and RGBA color format support",
-        "HSL and HSLA color format support",
-        "Color picker for visual selection",
-        "Live text preview",
-        "Automatic color matching feature",
-        "Local processing in the browser"
+        "Ƙididdige ma'aunin bambanci",
+        "Tantance bin doka WCAG 2.1 Matsayi AA",
+        "Tantance bin doka WCAG 2.1 Matsayi AAA",
+        "Gwada rubutu na al'ada",
+        "Gwada rubutu babba da taken",
+        "Gwada alamomin hoto da bangarorin UI",
+        "Tallafawa tsarin launuka na HEX",
+        "Tallafawa tsarin launuka na RGB da RGBA",
+        "Tallafawa tsarin launuka na HSL da HSLA",
+        "Mai zaɓar launi don zaɓi ta gani",
+        "Duba rubutu kai tsaye",
+        "Fasalin daidaita launi ta atomatik",
+        "Sarrafa a cikin browser na gida"
       ]
     },
     "howTo": {
-      "name": "How to check color contrast and readability online",
-      "description": "How to check text and background color readability per WCAG standard. Enter colors, read the contrast ratio, and use the automatic matching feature.",
+      "name": "Yadda ake tantance bambancin launuka da iya karatu ta yanar gizo",
+      "description": "Yadda ake tantance iya karatu na launukan rubutu da baya bisa ka'idar WCAG. Shigar da launuka, karanta ma'aunin bambanci, kuma yi amfani da fasalin daidaitawa ta atomatik.",
       "steps": [
         {
-          "name": "Choose the text color",
-          "text": "Enter a color code (e.g., #333333) in HEX, RGB, or HSL format - or pick a color from the color picker."
+          "name": "Zaɓi launin rubutu",
+          "text": "Shigar da lambar launi (misali, #333333) a tsarin HEX, RGB, ko HSL - ko zaɓi launi daga mai zaɓar launi."
         },
         {
-          "name": "Choose the background color",
-          "text": "Enter the background color on which the text will be displayed - this can be a section, block, or page background color."
+          "name": "Zaɓi launin baya",
+          "text": "Shigar da launin baya da za a nuna rubutu a kai - wannan na iya zama launin baya na sashe, toshe, ko shafi."
         },
         {
-          "name": "Read the result",
-          "text": "The tool will show the contrast ratio and whether the colors meet AA/AAA requirements."
+          "name": "Karanta sakamakon",
+          "text": "Kayan aikin zai nuna ma'aunin bambanci da kuma ko launuka sun cika buƙatun AA/AAA."
         },
         {
-          "name": "Adjust colors",
-          "text": "If contrast is too low, the Match feature automatically suggests a text color variant that meets the selected WCAG threshold."
+          "name": "Daidaita launuka",
+          "text": "Idan bambanci ya yi ƙasa, fasalin Daidaitawa yana ba da shawarar bambance-bambancen launin rubutu ta atomatik da ke cika ƙofar WCAG da aka zaɓa."
         }
       ]
     }
@@ -83,8 +83,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Why does color readability matter?",
-      "html": "<p class=\"text-mid\">Readability is the luminance difference between the text color and the background color. The greater the difference, the easier it is to read the text. Too low contrast makes content hard to read - especially for people with vision impairments, older adults, or in difficult lighting conditions (e.g., on a phone in direct sunlight).</p><p class=\"text-mid mt-3\">According to the <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">World Health Organization (WHO)</a>, approximately 2.2 billion people worldwide have some form of vision impairment. In addition, millions have color blindness (about 8% of men and 0.5% of women), and many more experience age-related vision decline.</p><p class=\"text-mid mt-3\">The tool calculates the contrast ratio using the formula specified in the <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Web Content Accessibility Guidelines)</a> - international digital accessibility guidelines. The result allows an objective assessment of whether colors are readable enough, regardless of monitor settings or individual color perception.</p>"
+      "title": "Me ya sa iya karatu na launuka ke da muhimmanci?",
+      "html": "<p class=\"text-mid\">Iya karatu shi ne bambancin haske tsakanin launin rubutu da launin baya. Gwargwadon bambancin da ke akwai, haka sauƙin karanta rubutu yake. Bambanci mai ƙasa yana sa abun ciki ya yi wuya a karanta - musamman ga mutane masu matsalar gani, tsofaffi, ko a cikin yanayin haske mai wahala (misali, a kan waya a cikin hasken rana kai tsaye).</p><p class=\"text-mid mt-3\">Bisa ga <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Hukumar Lafiya ta Duniya (WHO)</a>, kusan mutane biliyan 2.2 a duk duniya suna da wani nau'in matsalar gani. Bugu da ƙari, miliyoyin suna da matsalar ganin launi (kusan 8% na maza da 0.5% na mata), da yawa kuma suna fuskantar raguwar gani saboda tsufa.</p><p class=\"text-mid mt-3\">Kayan aikin yana ƙididdige ma'aunin bambanci ta amfani da dabarar da aka ayyana a cikin <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Web Content Accessibility Guidelines)</a> - jagororin samun dama na dijital na duniya. Sakamakon yana ba da damar tantancewa ta haƙiƙa ko launuka suna iya karatu isa, ba tare da la'akari da saitunan na'ura ko fahimtar launi ta mutum ba.</p>"
     },
     {
       "type": "gap",
@@ -92,29 +92,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "How to use the color contrast checker",
-      "description": "Checking readability takes just a few seconds:",
+      "title": "Yadda ake amfani da mai tantance bambancin launuka",
+      "description": "Tantance iya karatu yana ɗaukar 'yan daƙiƙu kaɗan kawai:",
       "grid": "four",
       "items": [
         {
           "icon": "RiPaletteLine",
-          "title": "1. Enter the text color",
-          "description": "Type a color code (e.g., #333333) in HEX, RGB, or HSL format - or pick a color from the color picker."
+          "title": "1. Shigar da launin rubutu",
+          "description": "Buga lambar launi (misali, #333333) a tsarin HEX, RGB, ko HSL - ko zaɓi launi daga mai zaɓar launi."
         },
         {
           "icon": "RiPaintBrushLine",
-          "title": "2. Enter the background color",
-          "description": "Enter the background color on which the text will be displayed - this can be a section, block, or full page background."
+          "title": "2. Shigar da launin baya",
+          "description": "Shigar da launin baya da za a nuna rubutu a kai - wannan na iya zama bayan sashe, toshe, ko cikakken shafi."
         },
         {
           "icon": "RiCheckboxCircleLine",
-          "title": "3. Read the result",
-          "description": "The tool will calculate the contrast ratio and show whether the colors meet WCAG requirements for normal text, large text, and icons."
+          "title": "3. Karanta sakamakon",
+          "description": "Kayan aikin zai ƙididdige ma'aunin bambanci kuma ya nuna ko launuka sun cika buƙatun WCAG don rubutu na al'ada, rubutu babba, da alamomin hoto."
         },
         {
           "icon": "RiEqualizerLine",
-          "title": "4. Adjust colors",
-          "description": "If contrast is too low, the Match feature automatically suggests a color variant that meets the selected threshold."
+          "title": "4. Daidaita launuka",
+          "description": "Idan bambanci ya yi ƙasa, fasalin Daidaitawa yana ba da shawarar bambancen launi ta atomatik da ke cika ƙofar da aka zaɓa."
         }
       ]
     },
@@ -124,22 +124,22 @@
     },
     {
       "type": "sectionTabs",
-      "title": "What color formats are supported?",
+      "title": "Wane irin tsarin launuka ake tallafawa?",
       "tabs": [
         {
           "title": "HEX",
           "icon": "RiHashtag",
-          "html": "<div><p class=\"text-mid mb-3\">Hexadecimal format - the most common in web design. Starts with <code class=\"rounded bg-black/5 px-1\">#</code> and contains 3 or 6 characters (digits 0-9 and letters A-F).</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">#fff</code> - white (shorthand)</li><li><code class=\"rounded bg-black/5 px-1\">#ffffff</code> - white (full form)</li><li><code class=\"rounded bg-black/5 px-1\">#1a73e8</code> - blue</li></ul></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Tsarin hexadecimal - mafi yawan amfani a cikin ƙirar yanar gizo. Yana farawa da <code class=\"rounded bg-black/5 px-1\">#</code> kuma ya ƙunshi haruffa 3 ko 6 (lambobi 0-9 da haruffa A-F).</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">#fff</code> - fari (gajeriyar siga)</li><li><code class=\"rounded bg-black/5 px-1\">#ffffff</code> - fari (cikakkiyar siga)</li><li><code class=\"rounded bg-black/5 px-1\">#1a73e8</code> - shuɗi</li></ul></div>"
         },
         {
           "title": "RGB / RGBA",
           "icon": "RiPaletteLine",
-          "html": "<div><p class=\"text-mid mb-3\">Format based on three channels: Red, Green, Blue. Each channel accepts a value from 0 to 255. The RGBA variant adds a fourth parameter - transparency (alpha) from 0 to 1.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">rgb(255, 255, 255)</code> - white</li><li><code class=\"rounded bg-black/5 px-1\">rgba(0, 0, 0, 0.8)</code> - black at 80% opacity</li></ul></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Tsari bisa tashoshi uku: Ja, Kore, Shuɗi. Kowane tashar yana karɓar ƙima daga 0 zuwa 255. Bambancin RGBA yana ƙara sigar huɗu - gaskiya (alpha) daga 0 zuwa 1.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">rgb(255, 255, 255)</code> - fari</li><li><code class=\"rounded bg-black/5 px-1\">rgba(0, 0, 0, 0.8)</code> - baƙi a 80% gaskiya</li></ul></div>"
         },
         {
           "title": "HSL / HSLA",
           "icon": "RiEqualizerLine",
-          "html": "<div><p class=\"text-mid mb-3\">Format based on Hue (0-360°), Saturation (0-100%), and Lightness (0-100%). The HSLA variant adds transparency. This format is useful when you want to adjust the brightness or saturation of a color.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">hsl(0, 0%, 100%)</code> - white</li><li><code class=\"rounded bg-black/5 px-1\">hsla(217, 91%, 60%, 0.9)</code> - blue at 90% opacity</li></ul></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Tsari bisa Hue (0-360°), Saturation (0-100%), da Lightness (0-100%). Bambancin HSLA yana ƙara gaskiya. Wannan tsari yana da amfani lokacin da kake son daidaita haske ko ƙarfin launi.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">hsl(0, 0%, 100%)</code> - fari</li><li><code class=\"rounded bg-black/5 px-1\">hsla(217, 91%, 60%, 0.9)</code> - shuɗi a 90% gaskiya</li></ul></div>"
         }
       ]
     },
@@ -149,9 +149,9 @@
     },
     {
       "type": "sectionDemo",
-      "title": "How to interpret the readability test results",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Contrast ratio</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Normal text</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div><div class=\"rounded-lg border border-neutral-200 px-3 py-2\" style=\"color: var(--black3); background-color: var(--white)\"><p class=\"text-sm!\">Sample normal text</p></div></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Large text</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 3:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 4.5:1)</span></div></div></div></div>",
-      "html": "<p class=\"text-mid mb-4\">After entering colors, the tool displays results in three sections:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normal text</strong> - requires 4.5:1 contrast (AA) or 7:1 (AAA). Applies to text below 18pt (24px) or below 14pt bold.</li><li><strong>Large / bold text</strong> - requires 3:1 contrast (AA) or 4.5:1 (AAA). Applies to headings, buttons, and highlights.</li><li><strong>Icons</strong> - requires 3:1 contrast (AA). Applies to icons and graphical UI elements that convey information.</li></ul><p class=\"text-mid mt-3\"><strong>Green indicator</strong> means the requirement is met. <strong>Red indicator</strong> means contrast is too low and needs improvement.</p>"
+      "title": "Yadda ake fassara sakamakon gwajin iya karatu",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Ma'aunin bambanci</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Rubutu na al'ada</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div><div class=\"rounded-lg border border-neutral-200 px-3 py-2\" style=\"color: var(--black3); background-color: var(--white)\"><p class=\"text-sm!\">Misalin rubutu na al'ada</p></div></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Rubutu babba</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 3:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 4.5:1)</span></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Bayan shigar da launuka, kayan aikin yana nuna sakamako a cikin sassa uku:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Rubutu na al'ada</strong> - yana buƙatar bambanci 4.5:1 (AA) ko 7:1 (AAA). Yana shafi rubutu ƙasa da 18pt (24px) ko ƙasa da 14pt mai kauri.</li><li><strong>Rubutu babba / mai kauri</strong> - yana buƙatar bambanci 3:1 (AA) ko 4.5:1 (AAA). Yana shafi taken, maɓallai, da haskakawa.</li><li><strong>Alamomin hoto</strong> - yana buƙatar bambanci 3:1 (AA). Yana shafi alamomin hoto da abubuwan zane na UI da ke isar da bayanai.</li></ul><p class=\"text-mid mt-3\"><strong>Alamar kore</strong> tana nufin an cika buƙatar. <strong>Alamar ja</strong> tana nufin bambanci ya yi ƙasa kuma yana buƙatar ingantawa.</p>"
     },
     {
       "type": "gap",
@@ -159,8 +159,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "What do the readability test results mean?",
-      "html": "<p class=\"text-mid mb-4\">The tool shows the contrast ratio on a scale from 1:1 (no contrast) to 21:1 (maximum contrast - black on white). The result is compared against thresholds defined in the WCAG standard:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normal text</strong> - requires at least 4.5:1 for Level AA (minimum standard) or 7:1 for Level AAA (enhanced standard). Applies to text under 18pt (24px) or under 14pt (18.5px) bold.</li><li><strong>Large / bold text</strong> - requires at least 3:1 for Level AA or 4.5:1 for Level AAA. Applies to text from 18pt (24px) or from 14pt (18.5px) bold - headings, buttons, highlights.</li><li><strong>Icons and UI elements</strong> - require at least 3:1 for Level AA. Applies to icons, buttons, form fields, and other interface elements that convey information.</li></ul><p class=\"text-mid mt-3\"><strong>Level AA</strong> is the minimum required by digital accessibility regulations in many countries, including the <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016L2102\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">EU Web Accessibility Directive</a>. <strong>Level AAA</strong> provides better readability but is not always practical to achieve for all elements.</p>"
+      "title": "Menene ma'anar sakamakon gwajin iya karatu?",
+      "html": "<p class=\"text-mid mb-4\">Kayan aikin yana nuna ma'aunin bambanci a kan ma'auni daga 1:1 (babu bambanci) zuwa 21:1 (mafi girman bambanci - baƙi a kan fari). Ana kwatanta sakamakon da ƙofofin da aka ayyana a cikin ka'idar WCAG:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Rubutu na al'ada</strong> - yana buƙatar aƙalla 4.5:1 don Matsayi AA (ƙaramin ka'ida) ko 7:1 don Matsayi AAA (ingantaccen ka'ida). Yana shafi rubutu ƙasa da 18pt (24px) ko ƙasa da 14pt (18.5px) mai kauri.</li><li><strong>Rubutu babba / mai kauri</strong> - yana buƙatar aƙalla 3:1 don Matsayi AA ko 4.5:1 don Matsayi AAA. Yana shafi rubutu daga 18pt (24px) ko daga 14pt (18.5px) mai kauri - taken, maɓallai, haskakawa.</li><li><strong>Alamomin hoto da abubuwan UI</strong> - suna buƙatar aƙalla 3:1 don Matsayi AA. Yana shafi alamomin hoto, maɓallai, filayen fom, da sauran abubuwan mu'amala da ke isar da bayanai.</li></ul><p class=\"text-mid mt-3\"><strong>Matsayi AA</strong> shi ne mafi ƙarancin da ake buƙata ta dokokin samun dama na dijital a ƙasashe da yawa, ciki har da <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016L2102\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Dokar Samun Dama ta Yanar Gizo ta EU</a>. <strong>Matsayi AAA</strong> yana ba da iya karatu mafi kyau amma ba koyaushe ne zai yiwu a cimma ga dukan abubuwa ba.</p>"
     },
     {
       "type": "gap",
@@ -168,8 +168,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Automatic color matching to WCAG requirements",
-      "html": "<p class=\"text-mid mb-4\">If contrast is too low, you don't need to search for the right color by trial and error. The <strong>Match</strong> feature automatically finds a text color variant that meets the selected contrast threshold.</p><p class=\"text-mid mb-4\">How matching works:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Select the matching target from the list - e.g., AA for normal text or AAA for large text.</li><li>Click the Match button.</li><li>The tool will search through lightness variants of the text color and suggest the closest one that meets the requirements.</li><li>The suggested color can be copied to the clipboard or immediately set as the new text color.</li></ol><p class=\"text-mid mt-3\">The algorithm preserves the hue and saturation of the original color, changing only the lightness. The suggested color stays consistent with the visual identity while meeting the accessibility standard.</p>"
+      "title": "Daidaita launi ta atomatik zuwa buƙatun WCAG",
+      "html": "<p class=\"text-mid mb-4\">Idan bambanci ya yi ƙasa, ba ka buƙatar neman launin da ya dace ta hanyar gwaji da kuskure. Fasalin <strong>Daidaitawa</strong> yana neman bambancen launin rubutu ta atomatik da ke cika ƙofar bambanci da aka zaɓa.</p><p class=\"text-mid mb-4\">Yadda daidaitawa ke aiki:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Zaɓi manufar daidaitawa daga jerin - misali, AA don rubutu na al'ada ko AAA don rubutu babba.</li><li>Danna maɓallin Daidaitawa.</li><li>Kayan aikin zai bincika ta hanyar bambance-bambancen haske na launin rubutu ya kuma ba da shawarar mafi kusa da ya cika buƙatun.</li><li>Ana iya kwafa launin da aka ba da shawara zuwa clipboard ko a saita shi nan da nan a matsayin sabon launin rubutu.</li></ol><p class=\"text-mid mt-3\">Algorithm ɗin yana kiyaye launin asali da ƙarfin launi, yana canza haske kawai. Launin da aka ba da shawara yana ci gaba da daidaituwa da asalin gani yayin da yake cika ka'idar samun dama.</p>"
     },
     {
       "type": "gap",
@@ -177,63 +177,63 @@
     },
     {
       "type": "sectionFeatureComparison",
-      "title": "What do AA and AAA levels mean in the WCAG standard?",
+      "title": "Menene ma'anar matakan AA da AAA a cikin ka'idar WCAG?",
       "plans": [
         {
           "id": "aa",
-          "name": "Level AA (minimum)",
+          "name": "Matsayi AA (mafi ƙaranci)",
           "highlighted": true
         },
         {
           "id": "aaa",
-          "name": "Level AAA (enhanced)"
+          "name": "Matsayi AAA (ingantacce)"
         }
       ],
       "features": [
         {
-          "name": "Normal text - min. 4.5:1",
+          "name": "Rubutu na al'ada - min. 4.5:1",
           "values": {
             "aa": true,
             "aaa": true
           }
         },
         {
-          "name": "Normal text - min. 7:1",
+          "name": "Rubutu na al'ada - min. 7:1",
           "values": {
             "aa": false,
             "aaa": true
           }
         },
         {
-          "name": "Large / bold text - min. 3:1",
+          "name": "Rubutu babba / mai kauri - min. 3:1",
           "values": {
             "aa": true,
             "aaa": true
           }
         },
         {
-          "name": "Large / bold text - min. 4.5:1",
+          "name": "Rubutu babba / mai kauri - min. 4.5:1",
           "values": {
             "aa": false,
             "aaa": true
           }
         },
         {
-          "name": "Icons and UI elements - min. 3:1",
+          "name": "Alamomin hoto da abubuwan UI - min. 3:1",
           "values": {
             "aa": true,
             "aaa": true
           }
         },
         {
-          "name": "Legally required (EU directive)",
+          "name": "Ana buƙata ta doka (dokar EU)",
           "values": {
             "aa": true,
             "aaa": false
           }
         },
         {
-          "name": "Recommended for key content",
+          "name": "Ana ba da shawara don abun ciki na muhimmanci",
           "values": {
             "aa": true,
             "aaa": true
@@ -247,39 +247,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Where should you check color readability?",
-      "description": "Readability matters everywhere someone needs to read text or recognize a UI element:",
+      "title": "Ina ya kamata a tantance iya karatu na launuka?",
+      "description": "Iya karatu yana da muhimmanci a ko'ina da wani ke buƙatar karanta rubutu ko gane wani abu na UI:",
       "grid": "three",
       "items": [
         {
           "icon": "RiGlobalLine",
-          "title": "Websites",
-          "description": "Text on pages, buttons, links, forms. Especially important for business sites where visitors have varying ages and visual abilities."
+          "title": "Gidajen yanar gizo",
+          "description": "Rubutu a kan shafuka, maɓallai, hanyoyin haɗi, fom. Yana da muhimmanci musamman don shafukan kasuwanci inda masu ziyara suke da shekaru da ikon gani daban-daban."
         },
         {
           "icon": "RiShoppingCartLine",
-          "title": "Online stores",
-          "description": "Prices, Buy Now buttons, product information. Low readability can mean lost orders."
+          "title": "Shagunan yanar gizo",
+          "description": "Farashin, maɓallin Saya Yanzu, bayanan kaya. Ƙarancin iya karatu na iya nufin asarar oda."
         },
         {
           "icon": "RiSlideshowLine",
-          "title": "Presentations",
-          "description": "Slides displayed via projector often have weaker contrast than on a monitor. Check colors before presenting."
+          "title": "Gabatarwa",
+          "description": "Faifai da ake nunawa ta hanyar projector galibi suna da bambanci mai rauni fiye da na na'ura. Duba launuka kafin gabatarwa."
         },
         {
           "icon": "RiPrinterLine",
-          "title": "Posters and flyers",
-          "description": "Printed materials viewed in various lighting conditions require high contrast."
+          "title": "Fastoci da takardun talla",
+          "description": "Kayan bugu da ake kallon su a cikin yanayin haske daban-daban suna buƙatar bambanci mai girma."
         },
         {
           "icon": "RiSmartphoneLine",
-          "title": "Mobile apps",
-          "description": "Phones are used in bright sunlight, at night, and by people of all ages."
+          "title": "Aikace-aikacen waya",
+          "description": "Ana amfani da wayoyin hannu a cikin hasken rana mai ƙarfi, da dare, kuma mutane masu shekaru daban-daban ne ke amfani da su."
         },
         {
           "icon": "RiRestaurantLine",
-          "title": "Restaurant menus",
-          "description": "Often printed on colored paper or with decorative fonts - easy to end up with too low contrast."
+          "title": "Menu na gidajen abinci",
+          "description": "Galibi ana buga su a kan takarda mai launi ko tare da haruffan ado - sauƙi a ƙare da bambanci mai ƙasa sosai."
         }
       ]
     },
@@ -289,8 +289,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Color readability for color-blind users",
-      "html": "<p class=\"text-mid mb-4\">Color blindness affects about 8% of men and 0.5% of women. People with color blindness may have difficulty distinguishing certain color pairs, even if the luminance contrast is sufficient.</p><p class=\"text-mid mb-4\">Most common types of color blindness:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deuteranopia</strong> - difficulty distinguishing green and red (most common form)</li><li><strong>Protanopia</strong> - difficulty seeing red</li><li><strong>Tritanopia</strong> - difficulty seeing blue and yellow (rare)</li></ul><p class=\"text-mid mt-3\">This tool checks luminance contrast, which is important for all users. However, when designing, it is also worth avoiding problematic color combinations (e.g., red text on a green background) and not relying solely on color to convey information - use shapes, icons, and text as well.</p>"
+      "title": "Iya karatu na launuka ga masu matsalar ganin launi",
+      "html": "<p class=\"text-mid mb-4\">Matsalar ganin launi tana shafar kusan 8% na maza da 0.5% na mata. Mutane masu matsalar ganin launi na iya samun wahalar bambanta wasu nau'ikan launuka biyu, ko da bambancin haske ya isa.</p><p class=\"text-mid mb-4\">Nau'ikan matsalar ganin launi mafi yawa:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deuteranopia</strong> - wahalar bambanta kore da ja (nau'in da ya fi yawa)</li><li><strong>Protanopia</strong> - wahalar ganin ja</li><li><strong>Tritanopia</strong> - wahalar ganin shuɗi da rawaya (da wuya)</li></ul><p class=\"text-mid mt-3\">Wannan kayan aikin yana tantance bambancin haske, wanda ke da muhimmanci ga duk masu amfani. Duk da haka, lokacin ƙira, yana da kyau a guje wa haɗuwar launuka masu matsala (misali, rubutu ja a kan bayan kore) kuma kada a dogara da launi kawai don isar da bayanai - yi amfani da siffofi, alamomin hoto, da rubutu ma.</p>"
     },
     {
       "type": "gap",
@@ -298,33 +298,33 @@
     },
     {
       "type": "sectionSteps",
-      "title": "What makes this contrast and readability checker special?",
+      "title": "Menene ke sa wannan mai tantance bambanci da iya karatu ya bambanta?",
       "grid": "two",
       "items": [
         {
           "icon": "RiEyeLine",
-          "title": "Objective evaluation based on a mathematical formula",
-          "description": "Contrast ratio is calculated using the WCAG formula - the result does not depend on monitor settings or individual color perception."
+          "title": "Tantancewa ta haƙiƙa bisa dabarar lissafi",
+          "description": "Ana ƙididdige ma'aunin bambanci ta amfani da dabarar WCAG - sakamakon bai dogara da saitunan na'ura ko fahimtar launi ta mutum ba."
         },
         {
           "icon": "RiShieldCheckLine",
-          "title": "Compliance with international WCAG standard",
-          "description": "Results match WCAG 2.1 requirements, which form the basis of digital accessibility regulations in the EU and many other countries."
+          "title": "Bin doka da ka'idar WCAG ta duniya",
+          "description": "Sakamako sun dace da buƙatun WCAG 2.1, waɗanda suke tushen dokokin samun dama na dijital a EU da ƙasashe da yawa."
         },
         {
           "icon": "RiMagicLine",
-          "title": "Automatic color matching to threshold",
-          "description": "The Match feature finds a text color variant that meets the selected contrast threshold - preserves hue, changes only lightness."
+          "title": "Daidaita launi ta atomatik zuwa ƙofar",
+          "description": "Fasalin Daidaitawa yana neman bambancen launin rubutu da ke cika ƙofar bambanci da aka zaɓa - yana kiyaye launi, yana canza haske kawai."
         },
         {
           "icon": "RiStackLine",
-          "title": "Five color formats",
-          "description": "Supported formats: HEX, RGB, RGBA, HSL, and HSLA. Color code can be pasted directly from Figma, Photoshop, or a CSS stylesheet."
+          "title": "Tsarin launuka biyar",
+          "description": "Tsare-tsare da ake tallafawa: HEX, RGB, RGBA, HSL, da HSLA. Ana iya liƙa lambar launi kai tsaye daga Figma, Photoshop, ko takardun salon CSS."
         },
         {
           "icon": "RiInfinityLine",
-          "title": "Three content types in one test",
-          "description": "A single check shows the result for normal text, large text (headings, buttons), and icons - no need to test each type separately."
+          "title": "Nau'ikan abun ciki uku a cikin gwaji ɗaya",
+          "description": "Tantancewa guda ɗaya tana nuna sakamakon rubutu na al'ada, rubutu babba (taken, maɓallai), da alamomin hoto - ba buƙatar gwada kowane nau'i dabam."
         }
       ]
     },
@@ -334,40 +334,40 @@
     },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the color contrast checker",
+      "title": "Tambayoyin da ake yawan yi game da mai tantance bambancin launuka",
       "openByDefault": 1,
       "items": [
         {
-          "question": "What is a color contrast ratio?",
-          "answer": "A contrast ratio is a measure of the luminance difference between two colors. The scale ranges from 1:1 (no difference - e.g., white text on white background) to 21:1 (maximum difference - black text on white background). The higher the ratio, the easier it is to distinguish text from the background."
+          "question": "Menene ma'aunin bambancin launuka?",
+          "answer": "Ma'aunin bambanci shi ne ma'aunin bambancin haske tsakanin launuka biyu. Ma'aunin yana farawa daga 1:1 (babu bambanci - misali, rubutu fari a kan bayan fari) zuwa 21:1 (mafi girman bambanci - rubutu baƙi a kan bayan fari). Gwargwadon ma'aunin da ke girma, haka sauƙin bambanta rubutu daga baya yake."
         },
         {
-          "question": "What contrast is sufficient according to WCAG?",
-          "answer": "For normal text, the minimum is 4.5:1 (Level AA). For large text - headings from 18pt or bold text from 14pt - 3:1 is sufficient. For icons and UI components, 3:1 is also required. These thresholds ensure readability for most users, including those with impaired vision."
+          "question": "Wane bambanci ne ya isa bisa WCAG?",
+          "answer": "Don rubutu na al'ada, mafi ƙarancin shi ne 4.5:1 (Matsayi AA). Don rubutu babba - taken daga 18pt ko rubutu mai kauri daga 14pt - 3:1 ya isa. Don alamomin hoto da bangarorin UI, ana buƙatar 3:1 ma. Waɗannan ƙofofin suna tabbatar da iya karatu ga yawancin masu amfani, ciki har da masu matsalar gani."
         },
         {
-          "question": "Is color contrast important for color-blind users?",
-          "answer": "The checker tests luminance contrast, which matters for all users, including those with color blindness. However, color blindness is a color perception issue, not a luminance issue - so in addition to contrast, avoid problematic color pairs (e.g., red text on green background) and don't rely solely on color to convey information."
+          "question": "Shin bambancin launuka yana da muhimmanci ga masu matsalar ganin launi?",
+          "answer": "Mai tantance yana gwada bambancin haske, wanda ke da muhimmanci ga duk masu amfani, ciki har da masu matsalar ganin launi. Duk da haka, matsalar ganin launi matsala ce ta fahimtar launi, ba ta haske ba - don haka ban da bambanci, guje wa haɗuwar launuka masu matsala (misali, rubutu ja a kan bayan kore) kuma kada ka dogara da launi kawai don isar da bayanai."
         },
         {
-          "question": "Why doesn't my color meet the requirements even though I can see it fine?",
-          "answer": "Personal color perception depends on monitor settings, room lighting, and individual visual abilities. WCAG is based on an objective mathematical formula that accounts for various vision impairments. A color readable on one screen may be unreadable on another or for a different person."
+          "question": "Me ya sa launi na ba ya cika buƙatun duk da cewa na iya ganinsa daidai?",
+          "answer": "Fahimtar launi ta mutum ya dogara da saitunan na'ura, hasken ɗaki, da ikon gani na mutum. WCAG ya dogara ne akan dabarar lissafi ta haƙiƙa da ke la'akari da matsalolin gani daban-daban. Launi da ake iya karanta a kan allon guda ɗaya na iya zama ba a iya karanta a kan wani ko ga wani mutum."
         },
         {
-          "question": "Do I need to meet AAA contrast level?",
-          "answer": "Not always. Level AA (4.5:1 for normal text) is the minimum required by accessibility regulations in the European Union. Level AAA (7:1) provides better readability but is harder to achieve. For critical content - warnings, safety instructions - consider aiming for AAA."
+          "question": "Ina buƙatar cika matakin bambanci na AAA?",
+          "answer": "Ba koyaushe ba. Matsayi AA (4.5:1 don rubutu na al'ada) shi ne mafi ƙarancin da ake buƙata ta dokokin samun dama a Tarayyar Turai. Matsayi AAA (7:1) yana ba da iya karatu mafi kyau amma ya fi wahala a cimma. Don abun ciki mai muhimmanci - gargaɗi, umarnin tsaro - yi la'akari da nufin AAA."
         },
         {
-          "question": "What is the WCAG standard?",
-          "answer": "WCAG (Web Content Accessibility Guidelines) is an international set of web accessibility guidelines developed by the W3C organization. It defines, among other things, minimum color contrast values, heading structure, keyboard support, and other requirements that make websites accessible to people with various disabilities."
+          "question": "Menene ka'idar WCAG?",
+          "answer": "WCAG (Web Content Accessibility Guidelines) tarin jagororin samun dama na yanar gizo ne na duniya da ƙungiyar W3C ta ƙera. Yana ayyana, a tsakanin sauran abubuwa, ƙananan ƙimomin bambancin launuka, tsarin taken, tallafin maɓallin keyboard, da sauran buƙatun da ke sa gidajen yanar gizo su samu ga mutane masu nakasa daban-daban."
         },
         {
-          "question": "Where can I find color codes from my website?",
-          "answer": "In a browser (Chrome, Firefox, Edge) you can open developer tools (right-click > Inspect). In the Styles tab, you can see the colors used on the page. Alternatively, browser extensions like ColorZilla let you pick the color of any element without digging into code."
+          "question": "Ina zan sami lambobin launuka daga gidan yanar gizon na?",
+          "answer": "A cikin browser (Chrome, Firefox, Edge) za ka iya buɗe kayan aikin mai haɓakawa (danna dama > Inspect). A cikin shafin Styles, za ka iya ganin launukan da ake amfani da su a kan shafin. Ko kuma ƙarin na'urorin browser kamar ColorZilla suna baka damar zaɓar launin kowane abu ba tare da shiga cikin lambar ba."
         },
         {
-          "question": "Which color pairs on my site should I check first?",
-          "answer": "Most important: text on the main background, text on banners and colored sections, buttons (text color and button background relative to page background), links, and icons. Pay special attention to elements that appear on different backgrounds depending on the section."
+          "question": "Wane nau'ikan launuka biyu a kan shafin na ya kamata in tantance da farko?",
+          "answer": "Mafi muhimmanci: rubutu a kan babban baya, rubutu a kan tutoci da sassa masu launi, maɓallai (launin rubutu da bayan maɓalli dangane da bayan shafi), hanyoyin haɗi, da alamomin hoto. Ka mai da hankali musamman ga abubuwan da ke bayyana a kan bayan daban-daban gwargwadon sashe."
         }
       ]
     },
@@ -377,7 +377,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Explore other free tools"
+      "title": "Bincika sauran kayan aiki kyauta"
     },
     {
       "type": "gap",

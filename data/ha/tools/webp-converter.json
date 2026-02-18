@@ -2,46 +2,46 @@
   "toolKey": "jpgToWebp",
   "locale": "ha",
   "metadata": {
-    "title": "Free JPG/PNG to WebP Converter – No Limits, No Upload",
-    "description": "Reduce image size by up to 35% without quality loss. JPG and PNG to WebP conversion runs locally – files never leave your device. No signup, no limits.",
+    "title": "Mai Canza JPG/PNG zuwa WebP Kyauta – Ba Iyaka, Ba Đorawa",
+    "description": "Rage girman hoto har zuwa 35% ba tare da asarar inganci ba. Ana yin canza JPG da PNG zuwa WebP a cikin na'urar ka – fayiloli ba sa barin na'urar ka. Ba buƙatar rajista, ba iyaka.",
     "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
     "path": "/ha/kayan-aiki/mai-canza-jpg-png-zuwa-webp"
   },
   "hero": {
-    "title": "JPG/PNG to WebP Converter – Free, No Limits",
-    "description": "Reduce image file size by up to 35% without losing quality. Add files, choose quality level, and download images in WebP format. All conversion happens locally in the browser.",
+    "title": "Mai Canza JPG/PNG zuwa WebP – Kyauta, Ba Iyaka",
+    "description": "Rage girman fayil na hoto har zuwa 35% ba tare da asarar inganci ba. Ƙara fayiloli, zaɓi matakin inganci, kuma sauke hotuna a cikin tsarin WebP. Ana yin dukan canzawa a cikin browser na gida.",
     "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/ha/kayan-aiki", "label": "Tools" },
-    "third": { "href": "/ha/kayan-aiki/mai-canza-jpg-png-zuwa-webp", "label": "JPG/PNG to WebP converter" }
+    "second": { "href": "/ha/kayan-aiki", "label": "Kayan Aiki" },
+    "third": { "href": "/ha/kayan-aiki/mai-canza-jpg-png-zuwa-webp", "label": "Mai canza JPG/PNG zuwa WebP" }
   },
   "schemas": {
     "software": {
-      "name": "JPG and PNG to WebP converter online - free, no limits",
-      "alternateName": ["JPG to WebP and PNG to WebP converter"],
+      "name": "Mai canza JPG da PNG zuwa WebP ta yanar gizo - kyauta, ba iyaka",
+      "alternateName": ["Mai canza JPG zuwa WebP da PNG zuwa WebP"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Free online JPG and PNG to WebP converter. Reduce image file size by up to 35%, improve page load speed and Core Web Vitals scores. Conversion happens in the browser - files are not sent to a server.",
+      "description": "Mai canza JPG da PNG zuwa WebP kyauta ta yanar gizo. Rage girman fayil na hoto har zuwa 35%, inganta saurin lodi na shafi da ƙimar Core Web Vitals. Ana yin canzawa a cikin browser - ba a aika fayiloli zuwa sabar ba.",
       "featureList": [
-        "JPG to WebP conversion",
-        "PNG to WebP conversion",
-        "Quality level adjustment (1–100%)",
-        "Batch conversion of multiple files",
-        "Size preview before and after conversion",
-        "Individual file download",
-        "Download all files as ZIP",
-        "Local processing in the browser (files are not sent to a server)"
+        "Canza JPG zuwa WebP",
+        "Canza PNG zuwa WebP",
+        "Daidaita matakin inganci (1–100%)",
+        "Canza fayiloli da yawa a lokaci guda",
+        "Duban girma kafin da bayan canzawa",
+        "Sauke fayiloli ɗaya-ɗaya",
+        "Sauke dukan fayiloli a matsayin ZIP",
+        "Sarrafa a cikin browser na gida (ba a aika fayiloli zuwa sabar ba)"
       ]
     },
     "howTo": {
-      "name": "How to convert JPG and PNG to WebP online",
-      "description": "How to convert JPG and PNG images to WebP format. Quality settings (60–95%), Smart Quality mechanism, and downloading converted files as ZIP.",
+      "name": "Yadda ake canza JPG da PNG zuwa WebP ta yanar gizo",
+      "description": "Yadda ake canza hotunan JPG da PNG zuwa tsarin WebP. Saitin inganci (60–95%), tsarin Smart Quality, da sauke fayiloli da aka canza a matsayin ZIP.",
       "steps": [
-        { "name": "Add files for conversion", "text": "Drag JPG or PNG images onto the designated area or select files from your device. You can add multiple files at once." },
-        { "name": "Set quality level", "text": "Choose the output WebP file quality using the slider (60–95%). The default value of 80% is a good balance between quality and size." },
-        { "name": "Start conversion", "text": "After starting conversion, the tool will process all files in the queue and automatically apply Smart Quality." },
-        { "name": "Download converted files", "text": "Converted files can be downloaded individually or all at once as a ZIP archive." }
+        { "name": "Ƙara fayiloli don canzawa", "text": "Ja hotunan JPG ko PNG zuwa wurin da aka kebantar ko zaɓi fayiloli daga na'urar ka. Za ka iya ƙara fayiloli da yawa a lokaci guda." },
+        { "name": "Saita matakin inganci", "text": "Zaɓi ingancin fayil na WebP ta amfani da mai zamewa (60–95%). Ƙimar asali na 80% kyakkyawan daidaito ne tsakanin inganci da girma." },
+        { "name": "Fara canzawa", "text": "Bayan fara canzawa, kayan aikin zai sarrafa dukan fayiloli a cikin jerin kuma ya yi amfani da Smart Quality ta atomatik." },
+        { "name": "Sauke fayiloli da aka canza", "text": "Ana iya sauke fayiloli da aka canza ɗaya-ɗaya ko duka a lokaci guda a matsayin ma'ajiyar ZIP." }
       ]
     }
   },
@@ -49,182 +49,182 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "What is WebP and why convert images?",
-      "html": "<p class=\"mb-4\">WebP is an image format created by Google that allows reducing image file sizes by up to 25–35% compared to JPG and PNG - while maintaining comparable visual quality. Smaller files mean faster page loading, which translates to better user experience and higher scores in <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"mb-4\">The WebP format is supported by all modern browsers: Chrome, Firefox, Safari (from version 14), and Edge. If you run a website, online store, or blog, converting images to WebP is one of the simplest ways to improve site performance.</p><p>The converter supports both JPG photos and PNG graphics (including those with transparency). You can convert any number of files at once - all are processed locally in the browser, without being sent to a server.</p>"
+      "title": "Menene WebP kuma me ya sa ake canza hotuna?",
+      "html": "<p class=\"mb-4\">WebP tsarin hoto ne da Google ya ƙirƙira wanda ke ba da damar rage girman fayilolin hoto har zuwa 25–35% idan aka kwatanta da JPG da PNG - yayin kiyaye ingancin gani mai kama. Ƙananan fayiloli suna nufin saurin lodi na shafi, wanda ke fassarawa zuwa ingantaccen gogayya na mai amfani da ƙarin maki a cikin <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"mb-4\">Dukan browsers na zamani suna tallafawa tsarin WebP: Chrome, Firefox, Safari (daga sigar 14), da Edge. Idan kana gudanar da gidan yanar gizo, shagon kan layi, ko blog, canza hotuna zuwa WebP ɗaya ne daga cikin hanyoyin mafi sauƙi don inganta aikin shafi.</p><p>Mai canza yana tallafawa hotunan JPG da zane-zanen PNG (ciki har da waɗanda ke da gaskiya). Za ka iya canza fayiloli kowace iri a lokaci guda - ana sarrafa duka a cikin browser na gida, ba tare da aika zuwa sabar ba.</p>"
     },
     { "type": "gap", "size": "xs" },
     {
       "type": "sectionSteps",
-      "title": "How to convert images to WebP",
-      "description": "Converting to WebP takes just a few seconds:",
+      "title": "Yadda ake canza hotuna zuwa WebP",
+      "description": "Canza zuwa WebP yana ɗaukar 'yan daƙiƙu kaɗan kawai:",
       "grid": "three",
       "items": [
-        { "title": "1. Add files", "description": "Drag JPG or PNG images onto the designated area or select files from your device. You can add any number of files at once." },
-        { "title": "2. Set quality", "description": "Choose the quality level (default 80%). A lower value means a smaller file. For most use cases, 80% is the optimal setting." },
-        { "title": "3. Download WebP", "description": "After conversion, download files individually or as a ZIP archive. Each file shows information about the space saved." }
+        { "title": "1. Ƙara fayiloli", "description": "Ja hotunan JPG ko PNG zuwa wurin da aka kebantar ko zaɓi fayiloli daga na'urar ka. Za ka iya ƙara fayiloli ko kowace iri a lokaci guda." },
+        { "title": "2. Saita inganci", "description": "Zaɓi matakin inganci (asali 80%). Ƙaramin ƙima yana nufin ƙaramin fayil. Don yawancin amfani, 80% shine saitin da ya fi dacewa." },
+        { "title": "3. Sauke WebP", "description": "Bayan canzawa, sauke fayiloli ɗaya-ɗaya ko a matsayin ma'ajiyar ZIP. Kowane fayil yana nuna bayanin sararin da aka ajiye." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to add files for conversion",
-      "html": "<p class=\"text-mid\">The tool offers two ways to add files:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Drag and drop</strong> - grab files from a folder on your computer and drop them onto the area labeled &quot;Drag and drop images here&quot;. You can drag multiple files at once.</li><li><strong>Select from device</strong> - clicking the file upload area opens a selection dialog. Holding Ctrl (or Cmd on Mac) lets you select multiple files at once.</li></ul><p class=\"text-mid mt-3\">The tool only accepts JPG and PNG files. If you accidentally add a file in another format (e.g., GIF or BMP), it will be automatically skipped and you will see an informational message.</p><p class=\"text-mid mt-3\"><strong>Privacy:</strong> All files are processed locally in the browser. They are not sent anywhere - they do not go to any server. After closing the tab or browser, files are removed from memory.</p>"
+      "title": "Yadda ake ƙara fayiloli don canzawa",
+      "html": "<p class=\"text-mid\">Kayan aikin yana ba da hanyoyi biyu don ƙara fayiloli:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Ja da sauke</strong> - ɗauki fayiloli daga babban fayil a kan kwamfutar ka kuma ka jefa su a kan yankin da aka lakafta &quot;Ja kuma sauke hotuna a nan&quot;. Za ka iya jan fayiloli da yawa a lokaci guda.</li><li><strong>Zaɓi daga na'ura</strong> - danna wurin ɗora fayil yana buɗe tattaunawar zaɓi. Riƙe Ctrl (ko Cmd akan Mac) yana ba ka damar zaɓar fayiloli da yawa a lokaci guda.</li></ul><p class=\"text-mid mt-3\">Kayan aikin yana karɓar fayilolin JPG da PNG kawai. Idan ka ƙara fayil a cikin wani tsari ba da gangan ba (misali, GIF ko BMP), za a tsallake shi ta atomatik kuma za ka ga saƙon bayani.</p><p class=\"text-mid mt-3\"><strong>Sirri:</strong> Ana sarrafa dukan fayiloli a cikin browser na gida. Ba a aika su ko'ina ba - ba sa zuwa kowane sabar. Bayan rufe shafin ko browser, ana cire fayiloli daga ƙwaƙwalwa.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "What do file statuses mean?",
-      "html": "<p class=\"text-mid\">Each file in the queue has one of four statuses that indicate conversion progress:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Pending</span><p class=\"text-mid\">The file is in the queue and waiting to be processed. Conversion has not yet started.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Processing…</span><p class=\"text-mid\">The file is being converted. For most images this takes a fraction of a second, but very large files may take several seconds.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Done</span><p class=\"text-mid\">Conversion completed successfully. The WebP file is ready to download. Next to the status you will also see the size before and after conversion.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Error</span><p class=\"text-mid\">Something went wrong during conversion. This may be a corrupted source file or a browser memory issue with very large images. The &quot;Retry&quot; button lets you try again.</p></div></div>"
+      "title": "Menene ma'anar matsayin fayiloli?",
+      "html": "<p class=\"text-mid\">Kowane fayil a cikin jerin yana da ɗaya daga cikin matsayi huɗu da ke nuna ci gaban canzawa:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Ana jira</span><p class=\"text-mid\">Fayil yana cikin jerin kuma yana jiran a sarrafa shi. Canzawa bai fara ba tukuna.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Ana sarrafa…</span><p class=\"text-mid\">Ana canza fayil. Don yawancin hotuna wannan yana ɗaukar ɓangaren daƙiƙa, amma manyan fayiloli sosai na iya ɗaukar daƙiƙu da yawa.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">An gama</span><p class=\"text-mid\">An kammala canzawa cikin nasara. Fayil na WebP yana shirye don saukewa. Kusa da matsayin za ka kuma ga girma kafin da bayan canzawa.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Kuskure</span><p class=\"text-mid\">Wani abu ya yi kuskure yayin canzawa. Wannan na iya zama fayil na tushe da ya lalace ko matsalar ƙwaƙwalwar browser tare da manyan hotuna sosai. Maɓallin &quot;Sake gwadawa&quot; yana ba ka damar sake gwadawa.</p></div></div>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How does Smart Quality work?",
-      "html": "<p class=\"text-mid\">Smart Quality is an automatic optimization mechanism that ensures the output WebP file is never larger than the original. It works as follows:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>The tool converts the image at your set quality (e.g., 80%).</li><li>It checks whether the resulting file is smaller than the original.</li><li>If it is larger, it automatically lowers quality and tries again.</li><li>The process repeats until the output file is smaller or quality drops below a safe minimum.</li></ol><p class=\"text-mid mt-3\">The tool automatically selects optimal settings. If you have an image that is already heavily compressed (e.g., a JPG at 60% quality), the parameters will be automatically adjusted to still achieve size savings.</p><p class=\"text-mid mt-3\">Next to each file you will see &quot;WebP quality used&quot; - this is the actual quality applied after any Smart Quality adjustment.</p>"
+      "title": "Yaya Smart Quality ke aiki?",
+      "html": "<p class=\"text-mid\">Smart Quality tsari ne na inganta ta atomatik da ke tabbatar da fayil na WebP da aka samar ba zai taɓa zama mafi girma daga na asali ba. Yana aiki kamar haka:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>Kayan aikin yana canza hoton a ingancin da ka saita (misali, 80%).</li><li>Yana duba ko fayil da ya samo ya fi ƙanƙanta daga na asali.</li><li>Idan ya fi girma, yana rage inganci ta atomatik kuma ya sake gwadawa.</li><li>Tsarin yana maimaita har sai fayil da aka samar ya fi ƙanƙanta ko inganci ya faɗi ƙasa da mafi ƙarancin aminci.</li></ol><p class=\"text-mid mt-3\">Kayan aikin yana zaɓar saitin da suka fi dacewa ta atomatik. Idan kana da hoton da aka riga aka matse sosai (misali, JPG a ingancin 60%), za a daidaita sigogin ta atomatik don ci gaba da samun rage girma.</p><p class=\"text-mid mt-3\">Kusa da kowane fayil za ka ga &quot;Ingancin WebP da aka yi amfani da shi&quot; - wannan shine ingancin gaske da aka yi amfani da shi bayan duk wani daidaitawar Smart Quality.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "Quality settings - what to choose?",
-      "demoHtml": "<div class=\"space-y-4\"><div><p class=\"text-dark mb-2 text-sm! font-medium uppercase\">Set quality</p><div class=\"flex items-center\"><input type=\"range\" min=\"60\" max=\"95\" value=\"80\" class=\"flex-1\" disabled><span class=\"text-mid w-12 text-right text-sm!\">80%</span></div><span class=\"text-light mt-1 block text-xs\">Higher value = better quality, larger file</span></div><div class=\"flex items-center\"><input type=\"checkbox\" checked class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Auto-download after conversion</span></div><div class=\"ml-6 flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Download individually</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Download as ZIP</span></div></div>",
-      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. A higher value means better image quality but also a larger file size.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (default)</strong> - a good balance for most use cases.</li><li><strong>85–90%</strong> - for product photos and photography portfolios.</li><li><strong>60–70%</strong> - when minimizing file size is the priority.</li></ul>"
+      "title": "Saitin inganci - menene za a zaɓa?",
+      "demoHtml": "<div class=\"space-y-4\"><div><p class=\"text-dark mb-2 text-sm! font-medium uppercase\">Saita inganci</p><div class=\"flex items-center\"><input type=\"range\" min=\"60\" max=\"95\" value=\"80\" class=\"flex-1\" disabled><span class=\"text-mid w-12 text-right text-sm!\">80%</span></div><span class=\"text-light mt-1 block text-xs\">Babban ƙima = inganci mafi kyau, fayil mafi girma</span></div><div class=\"flex items-center\"><input type=\"checkbox\" checked class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Sauke ta atomatik bayan canzawa</span></div><div class=\"ml-6 flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Sauke ɗaya-ɗaya</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Sauke a matsayin ZIP</span></div></div>",
+      "html": "<p class=\"text-mid\">Mai zamewan inganci yana ba ka damar saita ƙima daga 60% zuwa 95%. Babban ƙima yana nufin ingancin hoto mafi kyau amma kuma girman fayil mafi girma.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (asali)</strong> - kyakkyawan daidaito don yawancin amfani.</li><li><strong>85–90%</strong> - don hotunan kayan da portfolios na daukar hoto.</li><li><strong>60–70%</strong> - lokacin da rage girman fayil shine fifiko.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "How to download converted files",
+      "title": "Yadda ake sauke fayiloli da aka canza",
       "variant": "left",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-medium text-white\">Convert</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Download all</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Download as ZIP</span></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Include CSV report in ZIP</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Input size: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Size after conversion: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">Saved: <strong class=\"text-success-icon\">1.5 MB (~63%)</strong></p></div></div>",
-      "html": "<p class=\"text-mid\">After conversion is complete, you have several download options:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Download</strong> (next to each file) - downloads a single WebP file.</li><li><strong>Download all</strong> - downloads all files one by one.</li><li><strong>Download as ZIP</strong> - creates an archive with all files.</li></ul><p class=\"text-mid mt-3\"><strong>CSV report option:</strong> Include a conversion summary report in the ZIP archive.</p>"
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-medium text-white\">Canza</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Sauke duka</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Sauke a matsayin ZIP</span></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Haɗa rahoton CSV a cikin ZIP</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Girman shigarwa: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Girma bayan canzawa: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">An ajiye: <strong class=\"text-success-icon\">1.5 MB (~63%)</strong></p></div></div>",
+      "html": "<p class=\"text-mid\">Bayan an kammala canzawa, kana da zaɓuɓɓukan saukewa da yawa:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Sauke</strong> (kusa da kowane fayil) - yana sauke fayil guda ɗaya na WebP.</li><li><strong>Sauke duka</strong> - yana sauke dukan fayiloli ɗaya bayan ɗaya.</li><li><strong>Sauke a matsayin ZIP</strong> - yana ƙirƙirar ma'ajiya tare da dukan fayiloli.</li></ul><p class=\"text-mid mt-3\"><strong>Zaɓin rahoton CSV:</strong> Haɗa rahoton taƙaitaccen canzawa a cikin ma'ajiyar ZIP.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Savings report - what does it show?",
-      "html": "<p class=\"text-mid\">Below the conversion buttons you will find a summary with savings information:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Total input size</strong> - sum of all original file sizes.</li><li><strong>Total size after conversion</strong> - sum of all WebP file sizes.</li><li><strong>Saved</strong> - how much space you gained through conversion (in KB/MB and percentage).</li></ul><p class=\"text-mid mt-3\"><strong>Copy summary:</strong> The button copies the report to clipboard in text format. You can paste it into notes, emails, or documents - useful for documenting image optimization.</p>"
+      "title": "Rahoton ajiya - menene ke nunawa?",
+      "html": "<p class=\"text-mid\">Ƙasan maɓallan canzawa za ka sami taƙaitaccen bayani tare da bayanan ajiya:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Jimlar girman shigarwa</strong> - jimlar girman dukan fayilolin asali.</li><li><strong>Jimlar girma bayan canzawa</strong> - jimlar girman dukan fayilolin WebP.</li><li><strong>An ajiye</strong> - nawa sarari ka samu ta hanyar canzawa (a cikin KB/MB da kashi).</li></ul><p class=\"text-mid mt-3\"><strong>Kwafa taƙaitaccen bayani:</strong> Maɓallin yana kwafa rahoton zuwa clipboard a cikin tsarin rubutu. Za ka iya liƙa shi a cikin bayanan kula, imel, ko takardu - yana da amfani don rubuta inganta hoto.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How much can you save by converting to WebP?",
-      "html": "<p class=\"mb-4\">Savings depend on the type of image and its original compression. Below are example results for typical files:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">JPG photo (camera)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Savings: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">PNG graphic (logo)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Savings: ~75%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product photo</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Savings: ~63%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary. The converter shows the exact size before and after conversion for each file, as well as a summary of total savings.</p>"
+      "title": "Nawa za ka iya ajiyewa ta hanyar canza zuwa WebP?",
+      "html": "<p class=\"mb-4\">Ajiya ya dogara da nau'in hoto da matakin matsar sa na asali. A ƙasa akwai sakamakon misali don fayiloli na yau da kullum:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Hoton JPG (kyamara)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ajiya: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Zanen PNG (alama)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ajiya: ~75%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Hoton kayan</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ajiya: ~63%</p></div></div><p class=\"text-light mt-4 text-sm\">Ajiyar gaske na iya bambanta. Mai canza yana nuna daidaitaccen girma kafin da bayan canzawa don kowane fayil, da kuma taƙaitaccen jimlar ajiya.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "What makes this JPG/PNG to WebP converter special?",
+      "title": "Menene ke sa mai canza JPG/PNG zuwa WebP ya bambanta?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Full privacy",
-          "description": "Files never leave your computer. Conversion happens in the browser - nothing is sent to a server. After closing the page, data is removed."
+          "title": "Cikakken sirri",
+          "description": "Fayiloli ba sa barin kwamfutar ka. Ana yin canzawa a cikin browser - ba a aika komai zuwa sabar ba. Bayan rufe shafin, ana cire bayanai."
         },
         {
           "icon": "RiInfinityFill",
-          "title": "Batch conversion of multiple files",
-          "description": "Convert any number of images at once. All files are processed sequentially, and results are available for download individually or as a ZIP archive."
+          "title": "Canza fayiloli da yawa a lokaci guda",
+          "description": "Canza hotuna ko kowace iri a lokaci guda. Ana sarrafa dukan fayiloli biye da biye, kuma sakamakon suna samuwa don saukewa ɗaya-ɗaya ko a matsayin ma'ajiyar ZIP."
         },
         {
           "icon": "RiSpeedLine",
           "title": "Smart Quality",
-          "description": "The tool automatically adjusts quality so the output file is always smaller than the original. No need to manually search for optimal settings."
+          "description": "Kayan aikin yana daidaita inganci ta atomatik domin fayil da aka samar ya kasance koyaushe ya fi ƙanƙanta daga na asali. Ba buƙatar neman saitin da suka fi dacewa da hannu."
         },
         {
           "icon": "RiDownloadLine",
-          "title": "Download as ZIP",
-          "description": "Download converted files individually or all at once as a ZIP archive. Optionally, you can include a CSV report with a summary."
+          "title": "Sauke a matsayin ZIP",
+          "description": "Sauke fayiloli da aka canza ɗaya-ɗaya ko duka a lokaci guda a matsayin ma'ajiyar ZIP. A zaɓi, za ka iya haɗa rahoton CSV tare da taƙaitaccen bayani."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Things to keep in mind",
-      "description": "A few tips to help avoid problems during conversion:",
+      "title": "Abubuwan da ya kamata a tuna",
+      "description": "Shawarwari kaɗan don taimakawa wajen guje wa matsaloli yayin canzawa:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Very large files",
-          "description": "Converting images above 4000×4000 pixels may be slower and strain the browser. If processing many large files, consider splitting them into batches."
+          "title": "Manyan fayiloli sosai",
+          "description": "Canza hotuna sama da 4000×4000 pixels na iya zama a hankali kuma ya matsa browser. Idan kana sarrafa manyan fayiloli da yawa, yi la'akari da raba su zuwa kungiyoyi."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Already compressed images",
-          "description": "If the original JPG was saved at very low quality, converting to WebP may not yield large savings. In extreme cases, the WebP file may be even larger - Smart Quality will then lower quality automatically."
+          "title": "Hotuna da aka riga aka matse",
+          "description": "Idan an ajiye JPG na asali a inganci mai ƙaranci sosai, canza zuwa WebP ba zai iya ba da babban ajiya ba. A cikin yanayi masu tsanani, fayil na WebP na iya ma zama mafi girma - Smart Quality za ta rage inganci ta atomatik."
         },
         {
           "icon": "RiStackLine",
-          "title": "PNG format with transparency",
-          "description": "WebP supports transparency, so PNG files with an alpha channel will be converted correctly. However, size savings for PNGs with transparency may be less than for regular JPG photos."
+          "title": "Tsarin PNG mai gaskiya",
+          "description": "WebP yana tallafawa gaskiya, don haka fayilolin PNG masu tashar alpha za a canza su daidai. Duk da haka, ajiyar girma don PNGs masu gaskiya na iya zama ƙasa da na hotunan JPG na yau da kullum."
         },
         {
           "icon": "RiGlobalLine",
-          "title": "Browser compatibility",
-          "description": "All modern browsers (Chrome, Firefox, Safari 14+, Edge) support WebP. If the site must work on older browsers, you can use the &lt;picture&gt; tag with an alternative JPG/PNG source."
+          "title": "Dacewa da browser",
+          "description": "Dukan browsers na zamani (Chrome, Firefox, Safari 14+, Edge) suna tallafawa WebP. Idan dole ne shafin ya yi aiki a kan tsoffin browsers, za ka iya amfani da alamar &lt;picture&gt; tare da tushen JPG/PNG na madadin."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "When is it worth converting images to WebP?",
-      "description": "Converting to WebP brings benefits in virtually every case when images are displayed in a browser:",
+      "title": "Yaushe ne ya cancanta a canza hotuna zuwa WebP?",
+      "description": "Canza zuwa WebP yana kawo fa'ida a kusan kowane hali lokacin da ake nuna hotuna a cikin browser:",
       "grid": "two",
       "items": [
-        { "icon": "RiBuilding2Line", "title": "Business websites", "description": "Faster loading improves first impressions and reduces bounce rate." },
-        { "icon": "RiShoppingCartLine", "title": "Online stores", "description": "Product photos are often the largest files on a page; optimizing them speeds up the entire store." },
-        { "icon": "RiArticleLine", "title": "Blogs and portals", "description": "Articles with many photos load significantly faster." },
-        { "icon": "RiCameraLine", "title": "Photography portfolios", "description": "At 85–90% quality, the visual difference is unnoticeable, and files are smaller." },
-        { "icon": "RiSmartphoneLine", "title": "Web apps (PWA)", "description": "Smaller assets mean faster performance, especially on mobile devices." }
+        { "icon": "RiBuilding2Line", "title": "Gidajen yanar gizo na kasuwanci", "description": "Saurin lodi yana inganta ra'ayi na farko kuma yana rage yawan ficewa." },
+        { "icon": "RiShoppingCartLine", "title": "Shaguna ta yanar gizo", "description": "Hotunan kayan yawanci sune manyan fayiloli a kan shafi; inganta su yana hanzarta dukan shagon." },
+        { "icon": "RiArticleLine", "title": "Blogogi da kofofi", "description": "Labarai masu hotuna da yawa suna lodi da sauri sosai." },
+        { "icon": "RiCameraLine", "title": "Portfolios na daukar hoto", "description": "A ingancin 85–90%, bambancin gani ba a gane shi ba, kuma fayiloli sun fi ƙanƙanta." },
+        { "icon": "RiSmartphoneLine", "title": "Aikace-aikacen yanar gizo (PWA)", "description": "Ƙananan kayan suna nufin saurin aiki, musamman a kan na'urorin hannu." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the WebP converter",
+      "title": "Tambayoyin da ake yawan yi game da mai canza WebP",
       "openByDefault": 1,
       "items": [
         {
-          "question": "What is WebP and how does it differ from JPG?",
-          "answer": "WebP is an image format created by Google that combines the advantages of JPG (small photo files) and PNG (transparency). WebP files are on average 25–35% smaller than JPG at comparable visual quality. All modern browsers (Chrome, Firefox, Safari, Edge) support WebP.",
-          "answerSchemaText": "WebP is a Google image format, 25–35% smaller than JPG. All modern browsers support it."
+          "question": "Menene WebP kuma yaya ya bambanta da JPG?",
+          "answer": "WebP tsarin hoto ne da Google ya ƙirƙira wanda ke haɗa fa'idodin JPG (ƙananan fayilolin hoto) da PNG (gaskiya). Fayilolin WebP a matsakaita sun fi ƙanƙanta da 25–35% fiye da JPG a ingancin gani mai kama. Dukan browsers na zamani (Chrome, Firefox, Safari, Edge) suna tallafawa WebP.",
+          "answerSchemaText": "WebP tsarin hoton Google ne, ya fi ƙanƙanta da 25–35% fiye da JPG. Dukan browsers na zamani suna tallafawa shi."
         },
         {
-          "question": "Does WebP support transparency like PNG?",
-          "answer": "Yes. WebP supports the alpha channel (transparency) - PNG files with transparent backgrounds will be converted correctly. However, size savings for PNGs with transparency may be less than for regular JPG photos.",
-          "answerSchemaText": "Yes, WebP supports alpha transparency. PNG files with transparent backgrounds convert correctly."
+          "question": "Shin WebP yana tallafawa gaskiya kamar PNG?",
+          "answer": "Eh. WebP yana tallafawa tashar alpha (gaskiya) - fayilolin PNG masu bayan gaskiya za a canza su daidai. Duk da haka, ajiyar girma don PNGs masu gaskiya na iya zama ƙasa da na hotunan JPG na yau da kullum.",
+          "answerSchemaText": "Eh, WebP yana tallafawa gaskiyar alpha. Fayilolin PNG masu bayan gaskiya suna canzawa daidai."
         },
         {
-          "question": "What quality level should I choose?",
-          "answer": "For most use cases (websites, stores, blogs), 80% quality provides a good balance between file size and appearance. For product photos or portfolios, you can choose 85–90%. Values below 70% will significantly reduce size but may introduce visible artifacts.",
-          "answerSchemaText": "80% for most uses. 85–90% for product photos. Below 70% for maximum compression."
+          "question": "Wane matakin inganci ya kamata in zaɓa?",
+          "answer": "Don yawancin amfani (gidajen yanar gizo, shaguna, blogogi), ingancin 80% yana ba da kyakkyawan daidaito tsakanin girman fayil da bayyanar. Don hotunan kayan ko portfolios, za ka iya zaɓar 85–90%. Ƙimomi ƙasa da 70% za su rage girma sosai amma na iya gabatar da aibobi masu ganuwa.",
+          "answerSchemaText": "80% don yawancin amfani. 85–90% don hotunan kayan. Ƙasa da 70% don mafi girman matsa."
         },
         {
-          "question": "How much space can I save?",
-          "answer": "Typical savings are 25–35% compared to JPG. For example, a 500 KB JPG photo after conversion to WebP will be about 325–375 KB. For PNG, savings can be even greater - up to 50–70%.",
-          "answerSchemaText": "25–35% for JPG, up to 50–70% for PNG."
+          "question": "Nawa sarari zan iya ajiyewa?",
+          "answer": "Ajiya na yau da kullum shine 25–35% idan aka kwatanta da JPG. Misali, hoton JPG na 500 KB bayan canzawa zuwa WebP zai kasance kusan 325–375 KB. Don PNG, ajiya na iya zama mafi girma - har zuwa 50–70%.",
+          "answerSchemaText": "25–35% don JPG, har zuwa 50–70% don PNG."
         },
         {
-          "question": "Can I convert multiple files at once?",
-          "answer": "Yes. You can add any number of files at once - there is no limit. All will be converted, and you can download them individually or as a ZIP archive.",
-          "answerSchemaText": "Yes, unlimited batch conversion with ZIP download."
+          "question": "Zan iya canza fayiloli da yawa a lokaci guda?",
+          "answer": "Eh. Za ka iya ƙara fayiloli ko kowace iri a lokaci guda - babu iyaka. Za a canza duka, kuma za ka iya sauke su ɗaya-ɗaya ko a matsayin ma'ajiyar ZIP.",
+          "answerSchemaText": "Eh, canza fayiloli da yawa ba tare da iyaka ba tare da sauke ZIP."
         },
         {
-          "question": "What is Smart Quality?",
-          "answer": "Smart Quality is an automatic quality adjustment mechanism that ensures the output WebP file is never larger than the original. If conversion would result in a larger file (which can happen with already heavily compressed images), the tool automatically lowers quality until the output is smaller.",
-          "answerSchemaText": "Automatic quality adjustment ensuring the output file is always smaller than the original."
+          "question": "Menene Smart Quality?",
+          "answer": "Smart Quality tsari ne na daidaita inganci ta atomatik da ke tabbatar da fayil na WebP da aka samar ba zai taɓa zama mafi girma daga na asali ba. Idan canzawa zai haifar da babban fayil (wanda zai iya faruwa tare da hotuna da aka riga aka matse sosai), kayan aikin yana rage inganci ta atomatik har sai abin da aka samar ya fi ƙanƙanta.",
+          "answerSchemaText": "Daidaita inganci ta atomatik da ke tabbatar da fayil da aka samar koyaushe ya fi ƙanƙanta daga na asali."
         },
         {
-          "question": "Does WebP speed up a website?",
-          "answer": "Yes. Smaller image files mean faster page loading. This directly impacts the LCP (Largest Contentful Paint) metric in Core Web Vitals - one of Google's ranking factors. Tools like PageSpeed Insights often recommend converting images to WebP.",
-          "answerSchemaText": "Yes, smaller files improve LCP and Core Web Vitals scores."
+          "question": "Shin WebP yana hanzarta gidan yanar gizo?",
+          "answer": "Eh. Ƙananan fayilolin hoto suna nufin saurin lodi na shafi. Wannan yana shafar ma'aunin LCP (Largest Contentful Paint) a cikin Core Web Vitals kai tsaye - ɗaya daga cikin abubuwan tantance matsayi na Google. Kayan aiki kamar PageSpeed Insights yawanci suna ba da shawarar canza hotuna zuwa WebP.",
+          "answerSchemaText": "Eh, ƙananan fayiloli suna inganta LCP da ƙimar Core Web Vitals."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
+    { "type": "toolsCarousel", "title": "Bincika sauran kayan aiki" },
     { "type": "gap", "size": "sm" }
   ]
 }

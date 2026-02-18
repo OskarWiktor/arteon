@@ -2,67 +2,67 @@
   "toolKey": "favicon",
   "locale": "ha",
   "metadata": {
-    "title": "Free Favicon Generator – Create favicon.ico From Any Image",
-    "description": "Create favicon.ico and a complete favicon set for your website from a single image. All required sizes in one click. Runs locally in your browser.",
+    "title": "Mai Samar da Favicon Kyauta – Ƙirƙiri favicon.ico Daga Kowane Hoto",
+    "description": "Ƙirƙiri favicon.ico da cikakken saitin favicon don gidan yanar gizon ka daga hoto guda ɗaya. Dukan girma da ake buƙata a cikin danna guda ɗaya. Yana aiki a cikin browser na gida.",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
     "path": "/ha/kayan-aiki/samar-da-favicon-kyauta"
   },
   "hero": {
-    "title": "Favicon Generator – Create favicon.ico for Free",
-    "description": "Generate favicon.ico and a complete set of PNG icons for your website from a single image. All processing happens locally in the browser.",
+    "title": "Mai Samar da Favicon – Ƙirƙiri favicon.ico Kyauta",
+    "description": "Samar da favicon.ico da cikakken saitin alamomin PNG don gidan yanar gizon ka daga hoto guda ɗaya. Ana yin dukan sarrafa a cikin browser na gida.",
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
   "breadcrumbs": {
     "second": {
       "href": "/ha/kayan-aiki",
-      "label": "Tools"
+      "label": "Kayan Aiki"
     },
     "third": {
       "href": "/ha/kayan-aiki/samar-da-favicon-kyauta",
-      "label": "Favicon generator"
+      "label": "Mai samar da favicon"
     }
   },
   "schemas": {
     "software": {
-      "name": "Favicon generator online - free icon creator for websites",
-      "alternateName": ["Favicon.ico and PNG icon generator"],
+      "name": "Mai samar da favicon ta yanar gizo - mai ƙirƙirar alama kyauta don gidajen yanar gizo",
+      "alternateName": ["Mai samar da alamomin Favicon.ico da PNG"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "IconGenerator",
-      "description": "Free online favicon generator. Create favicon.ico and PNG icons 16x16, 32x32, 180x180, 192x192, and 512x512 without limits and without sending files to a server. Processing happens locally in the browser.",
+      "description": "Mai samar da favicon kyauta ta yanar gizo. Ƙirƙiri favicon.ico da alamomin PNG 16x16, 32x32, 180x180, 192x192, da 512x512 ba tare da iyaka ba kuma ba tare da aika fayiloli zuwa sabar ba. Ana yin sarrafa a cikin browser na gida.",
       "featureList": [
-        "Generate favicon.ico (16x16, 32x32, 48x48 in one file)",
-        "Generate PNG icons 16x16 and 32x32",
-        "Generate apple-touch-icon 180x180",
-        "Generate PWA icons 192x192 and 512x512",
-        "Support for PNG, JPG, and SVG source images",
-        "Background color configuration",
-        "Generate manifest.json file for PWA",
-        "Download all files as ZIP",
-        "Download individual files",
-        "Lighthouse compliance",
-        "Browser-based processing (files are not sent to a server)",
-        "Free tool, no login required"
+        "Samar da favicon.ico (16x16, 32x32, 48x48 a cikin fayil guda ɗaya)",
+        "Samar da alamomin PNG 16x16 da 32x32",
+        "Samar da apple-touch-icon 180x180",
+        "Samar da alamomin PWA 192x192 da 512x512",
+        "Tallafawa hotunan tushe na PNG, JPG, da SVG",
+        "Tsarin launin baya",
+        "Samar da fayil na manifest.json don PWA",
+        "Sauke dukan fayiloli a matsayin ZIP",
+        "Sauke fayiloli ɗaya-ɗaya",
+        "Bin doka na Lighthouse",
+        "Sarrafa a cikin browser (ba a aika fayiloli zuwa sabar ba)",
+        "Kayan aiki kyauta, ba a buƙatar shiga ba"
       ]
     },
     "howTo": {
-      "name": "How to create a favicon for a website",
-      "description": "How to generate favicon.ico and PNG icons (16x16, 32x32, 180x180, 512x512) from a single image. What sizes are needed and how to add favicon to WordPress, HTML, and Next.js.",
+      "name": "Yadda ake ƙirƙirar favicon don gidan yanar gizo",
+      "description": "Yadda ake samar da favicon.ico da alamomin PNG (16x16, 32x32, 180x180, 512x512) daga hoto guda ɗaya. Wane girma ake buƙata da yadda ake ƙara favicon zuwa WordPress, HTML, da Next.js.",
       "steps": [
         {
-          "name": "Add a source image",
-          "text": "Drag a file onto the designated area or select a graphic from your device. A simple logo or icon in PNG, JPG, or SVG format works best."
+          "name": "Ƙara hoton tushe",
+          "text": "Ja fayil zuwa wurin da aka kebantar ko zaɓi hoto daga na'urar ka. Saukin alama ko hoto a tsarin PNG, JPG, ko SVG ya fi dacewa."
         },
         {
-          "name": "Choose icon sizes",
-          "text": "Select which icon sizes you need: favicon.ico (32x32), PNG icons (16x16, 32x32, 180x180, 192x192, 512x512)."
+          "name": "Zaɓi girman alama",
+          "text": "Zaɓi wane girman alama kake buƙata: favicon.ico (32x32), alamomin PNG (16x16, 32x32, 180x180, 192x192, 512x512)."
         },
         {
-          "name": "Configure options",
-          "text": "Set the background color (or keep transparent), decide whether to generate a manifest file, and whether files should auto-download."
+          "name": "Tsara zaɓuɓɓuka",
+          "text": "Saita launin baya (ko kiyaye gaskiya), yanke shawarar ko za a samar da fayil na manifest, da kuma ko za a sauke fayiloli ta atomatik."
         },
         {
-          "name": "Generate and download files",
-          "text": "After generation, files can be downloaded as a ZIP archive or each icon individually."
+          "name": "Samar kuma sauke fayiloli",
+          "text": "Bayan samarwa, ana iya sauke fayiloli a matsayin tarin ZIP ko kowane alama ɗaya-ɗaya."
         }
       ]
     }
@@ -74,8 +74,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "What is a favicon and why should you have one?",
-      "html": "<p class=\"mb-4\">A favicon is a small icon that appears on the browser tab next to the page title. You also see it in bookmarks, browsing history, and on the phone home screen when someone adds the site as a shortcut.</p><p class=\"mb-4\">This small graphic serves an important function - it helps users quickly recognize a site among many open tabs. When someone has a dozen tabs open in the browser, the favicon is often the only visible element identifying the site.</p><p>The generator creates a complete icon set: a classic favicon.ico file for browsers, PNG icons in various sizes, and an apple-touch-icon for Apple devices. If you are building a web app (PWA), you can also generate 192x192 and 512x512 icons along with a manifest file.</p>"
+      "title": "Menene favicon kuma me ya sa ya kamata ka samu ɗaya?",
+      "html": "<p class=\"mb-4\">Favicon ƙaramin alama ne da ke bayyana a kan shafin browser kusa da taken shafin. Kuma kana ganin sa a cikin alamomin shafi, tarihin bincike, da kuma a kan allon gida na waya lokacin da wani ya ƙara shafin a matsayin gajeren hanya.</p><p class=\"mb-4\">Wannan ƙaramin hoto yana da muhimmin aiki - yana taimaka wa masu amfani su gane shafin da sauri a cikin shafuka da yawa da ke buɗe. Lokacin da wani yana da shafuka goma sha biyu a buɗe a cikin browser, favicon galibi shi ne abu guda ɗaya da ake iya gani wanda ke bayyana shafin.</p><p>Mai samar da yana ƙirƙirar cikakken saitin alama: fayil na favicon.ico na gargajiya don browsers, alamomin PNG a girma daban-daban, da apple-touch-icon don na'urorin Apple. Idan kana gina aikace-aikacen yanar gizo (PWA), kuma za ka iya samar da alamomin 192x192 da 512x512 tare da fayil na manifest.</p>"
     },
     {
       "type": "gap",
@@ -83,21 +83,21 @@
     },
     {
       "type": "sectionSteps",
-      "title": "How to create a favicon in 3 steps",
-      "description": "Generating a favicon takes just a few seconds:",
+      "title": "Yadda ake ƙirƙirar favicon a matakai 3",
+      "description": "Samar da favicon yana ɗaukar 'yan daƙiƙu kaɗan kawai:",
       "grid": "three",
       "items": [
         {
-          "title": "1. Add an image",
-          "description": "Drag a file onto the designated area or select a graphic from your device. Supported formats: PNG, JPG, SVG. Recommended size: min. 512×512 pixels."
+          "title": "1. Ƙara hoto",
+          "description": "Ja fayil zuwa wurin da aka kebantar ko zaɓi hoto daga na'urar ka. Tsare-tsare da ake tallafawa: PNG, JPG, SVG. Girman da ake ba da shawara: min. 512×512 pixels."
         },
         {
-          "title": "2. Choose sizes",
-          "description": "Select the icon sizes you need. For a regular website: favicon.ico, 32×32, and 180×180. For PWA, add 192×192 and 512×512."
+          "title": "2. Zaɓi girma",
+          "description": "Zaɓi girman alama da kake buƙata. Don gidan yanar gizo na yau da kullum: favicon.ico, 32×32, da 180×180. Don PWA, ƙara 192×192 da 512×512."
         },
         {
-          "title": "3. Download files",
-          "description": "After generating, download all files as a ZIP or each icon individually. Below the tool you will find instructions on how to add the favicon to your site."
+          "title": "3. Sauke fayiloli",
+          "description": "Bayan samarwa, sauke dukan fayiloli a matsayin ZIP ko kowane alama ɗaya-ɗaya. Ƙasan kayan aikin za ka sami umarnin yadda ake ƙara favicon zuwa shafin ka."
         }
       ]
     },
@@ -107,8 +107,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "What icon sizes does the tool generate?",
-      "html": "<p class=\"mb-6\">Each size has its use:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Classic format recognized by all browsers. Displays on the browser tab.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16×16 and 32×32 PNG</p><p class=\"text-mid text-sm\">Standard sizes for modern browsers. Display on tabs and in bookmarks.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180×180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Icon for Apple devices (iPhone, iPad). Displays when someone adds the site to their home screen.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192×192 and 512×512 PNG</p><p class=\"text-mid text-sm\">Icons for web apps (PWA). Required by the manifest and used in app stores.</p></div></div><p class=\"text-light mt-6\">If you are not building a PWA, you only need: favicon.ico, 32×32 PNG, and 180×180 PNG. These three files cover most use cases.</p>"
+      "title": "Wane girman alama ne kayan aikin ke samarwa?",
+      "html": "<p class=\"mb-6\">Kowane girma yana da amfaninsa:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Tsarin gargajiya da dukan browsers ke ganewa. Yana nuna a kan shafin browser.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16×16 da 32×32 PNG</p><p class=\"text-mid text-sm\">Girman al'ada don browsers na zamani. Suna nuna a kan shafuka da cikin alamomin shafi.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180×180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Alama don na'urorin Apple (iPhone, iPad). Tana nuna lokacin da wani ya ƙara shafin zuwa allon gida.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192×192 da 512×512 PNG</p><p class=\"text-mid text-sm\">Alamomin aikace-aikacen yanar gizo (PWA). Ana buƙata ta manifest kuma ana amfani da su a shagunan aikace-aikace.</p></div></div><p class=\"text-light mt-6\">Idan ba kana gina PWA ba, kana buƙatar kawai: favicon.ico, 32×32 PNG, da 180×180 PNG. Waɗannan fayiloli uku sun rufe yawancin buƙatu.</p>"
     },
     {
       "type": "gap",
@@ -116,28 +116,28 @@
     },
     {
       "type": "sectionSteps",
-      "title": "What makes the favicon generator special?",
+      "title": "Menene ke sa mai samar da favicon ya bambanta?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy - files never leave your computer",
-          "description": "All operations are performed locally in the browser. The image is not sent to any server. After closing the page, all data is cleared."
+          "title": "Sirri - fayiloli ba sa barin kwamfutar ka",
+          "description": "Ana yin dukan ayyuka a cikin browser na gida. Ba a aika hoton zuwa kowane sabar ba. Bayan rufe shafin, ana share dukan bayanai."
         },
         {
           "icon": "RiDownloadLine",
-          "title": "Complete set in one place",
-          "description": "Favicon.ico, PNG icons, apple-touch-icon, PWA icons, and manifest - all from one image, in one tool."
+          "title": "Cikakken saitin a wuri ɗaya",
+          "description": "Favicon.ico, alamomin PNG, apple-touch-icon, alamomin PWA, da manifest - duka daga hoto ɗaya, a cikin kayan aiki ɗaya."
         },
         {
           "icon": "RiImageLine",
-          "title": "PNG, JPG, and SVG support",
-          "description": "You can use a logo in any format. If you have SVG - icons will be sharp in all sizes."
+          "title": "Tallafawa PNG, JPG, da SVG",
+          "description": "Za ka iya amfani da alama a kowane tsari. Idan kana da SVG - alamomin za su kasance masu kaifi a dukan girma."
         },
         {
           "icon": "RiSmartphoneLine",
-          "title": "Ready for website and PWA use",
-          "description": "The tool generates a manifest.json file for web apps. Below you will find instructions for integrating the icons."
+          "title": "Shirye don gidan yanar gizo da amfani da PWA",
+          "description": "Kayan aikin yana samar da fayil na manifest.json don aikace-aikacen yanar gizo. A ƙasa za ka sami umarnin haɗa alamomin."
         }
       ]
     },
@@ -147,29 +147,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "How to use the favicon generator",
-      "description": "Generating a favicon is a few simple steps:",
+      "title": "Yadda ake amfani da mai samar da favicon",
+      "description": "Samar da favicon matakai masu sauƙi ne kaɗan:",
       "grid": "two",
       "items": [
         {
           "icon": "RiUploadLine",
-          "title": "1. Add source image",
-          "description": "Drag a file onto the designated area or select a graphic from your device. Supported formats: PNG, JPG, SVG. A simple logo or icon at least 512×512 pixels works best."
+          "title": "1. Ƙara hoton tushe",
+          "description": "Ja fayil zuwa wurin da aka kebantar ko zaɓi hoto daga na'urar ka. Tsare-tsare da ake tallafawa: PNG, JPG, SVG. Saukin alama ko hoto aƙalla 512×512 pixels ya fi dacewa."
         },
         {
           "icon": "RiLayoutGridLine",
-          "title": "2. Choose icon sizes",
-          "description": "Select which icon sizes you need. You can select all or only some. For a regular website: favicon.ico, 32×32, and 180×180."
+          "title": "2. Zaɓi girman alama",
+          "description": "Zaɓi wane girman alama kake buƙata. Za ka iya zaɓar duka ko wasu kawai. Don gidan yanar gizo na yau da kullum: favicon.ico, 32×32, da 180×180."
         },
         {
           "icon": "RiSettings3Line",
-          "title": "3. Configure generation options",
-          "description": "Set additional options: background (transparent or chosen color), manifest (PWA configuration file), and auto-download."
+          "title": "3. Tsara zaɓuɓɓukan samarwa",
+          "description": "Saita ƙarin zaɓuɓɓuka: baya (gaskiya ko launin da aka zaɓa), manifest (fayil na tsarin PWA), da sauke ta atomatik."
         },
         {
           "icon": "RiDownloadLine",
-          "title": "4. Generate and download files",
-          "description": "After starting generation, the tool processes the image locally - nothing is sent to a server. Download all files as a ZIP archive or individual icons separately."
+          "title": "4. Samar kuma sauke fayiloli",
+          "description": "Bayan fara samarwa, kayan aikin yana sarrafa hoton a cikin gida - ba a aika komai zuwa sabar ba. Sauke dukan fayiloli a matsayin tarin ZIP ko alamomin ɗaya-ɗaya dabam."
         }
       ]
     },
@@ -179,9 +179,9 @@
     },
     {
       "type": "sectionDemo",
-      "title": "Generation options - what does each one do?",
-      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">PNG sizes</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">16×16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">32×32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">180×180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span class=\"text-mid text-sm!\">Transparent background (PNG/ICO)</span></div></div></div>",
-      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Background (transparent or color)</h3><p class=\"text-mid\">By default, the generator preserves transparency. You can also choose a specific background color.</p></div><div><h3 class=\"h5 mb-2\">Generate manifest (site.webmanifest)</h3><p class=\"text-mid\">A JSON file for web apps (PWA). If you are not building a PWA, this option is not required.</p></div></div>"
+      "title": "Zaɓuɓɓukan samarwa - menene kowannensu ke yi?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">Girman PNG</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">16×16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">32×32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">180×180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span class=\"text-mid text-sm!\">Bayan gaskiya (PNG/ICO)</span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Baya (gaskiya ko launi)</h3><p class=\"text-mid\">Ta asali, mai samar da yana kiyaye gaskiya. Kuma za ka iya zaɓar takamaiman launin baya.</p></div><div><h3 class=\"h5 mb-2\">Samar da manifest (site.webmanifest)</h3><p class=\"text-mid\">Fayil na JSON don aikace-aikacen yanar gizo (PWA). Idan ba kana gina PWA ba, ba a buƙatar wannan zaɓi.</p></div></div>"
     },
     {
       "type": "gap",
@@ -189,19 +189,19 @@
     },
     {
       "type": "sectionSteps",
-      "title": "How to download generated files",
-      "description": "After generating icons, you have several download options:",
+      "title": "Yadda ake sauke fayilolin da aka samar",
+      "description": "Bayan samar da alamomin, kana da zaɓuɓɓukan sauke da yawa:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFolderZipLine",
-          "title": "Download all as ZIP",
-          "description": "The &quot;Download all&quot; button packs all generated files into a single ZIP archive. This is the most convenient option when you need the full icon set."
+          "title": "Sauke duka a matsayin ZIP",
+          "description": "Maɓallin &quot;Sauke duka&quot; yana ɗauke da dukan fayilolin da aka samar a cikin tarin ZIP guda ɗaya. Wannan shine zaɓin da ya fi dacewa lokacin da kake buƙatar cikakken saitin alama."
         },
         {
           "icon": "RiFileDownloadLine",
-          "title": "Download individual files",
-          "description": "Each generated icon has its own download button - you can download a single file without downloading the entire set. Useful when only one size needs updating."
+          "title": "Sauke fayiloli ɗaya-ɗaya",
+          "description": "Kowane alama da aka samar yana da maɓallin sauke nasa - za ka iya sauke fayil guda ɗaya ba tare da sauke dukan saitin ba. Yana da amfani lokacin da girma guda ɗaya ke buƙatar sabuntawa."
         }
       ]
     },
@@ -211,22 +211,22 @@
     },
     {
       "type": "sectionTabs",
-      "title": "Where and how to add a favicon",
+      "title": "Ina da yadda ake ƙara favicon",
       "tabs": [
         {
           "title": "WordPress",
           "icon": "RiWordpressLine",
-          "html": "<div><p class=\"text-mid mb-3\">Most WordPress themes have a built-in option for setting the site icon. You will find it in the admin panel:</p><p class=\"text-mid mb-3\"><strong>Appearance → Customize → Site Identity → Site Icon</strong></p><p class=\"text-light\">Upload the 512×512 file there - WordPress will automatically generate smaller sizes. For full control over icons, you can also upload files directly to the root directory via FTP.</p></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Yawancin jigogin WordPress suna da zaɓin da aka gina a ciki don saita alamar shafin. Za ka same shi a cikin bangaren gudanarwa:</p><p class=\"text-mid mb-3\"><strong>Bayyanar → Gyara → Asalin Shafin → Alamar Shafin</strong></p><p class=\"text-light\">Ɗora fayil na 512×512 a can - WordPress zai samar da ƙananan girma ta atomatik. Don cikakken iko akan alamomin, kuma za ka iya ɗora fayiloli kai tsaye zuwa babban directory ta hanyar FTP.</p></div>"
         },
         {
           "title": "HTML",
           "icon": "RiHtml5Line",
-          "html": "<div><p class=\"text-mid mb-3\">Place the generated files in the root directory of your site (where index.html is). Then add the appropriate tags in the &lt;head&gt; section:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">The code above is an example — adjust the paths to match your site structure.</p></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Sanya fayilolin da aka samar a cikin babban directory na shafin ka (inda index.html yake). Sannan ƙara abubuwan da suka dace a cikin sashen &lt;head&gt;:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">Lambar da ke sama misali ne — daidaita hanyoyin don dacewa da tsarin shafin ka.</p></div>"
         },
         {
           "title": "Next.js / React",
           "icon": "RiReactjsLine",
-          "html": "<div><p class=\"text-mid mb-3\">In Next.js (App Router), place favicon files in the <code>app/</code> or <code>public/</code> directory:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> - automatically recognized by Next.js</li><li><code>app/apple-icon.png</code> - Apple icon</li><li><code>public/</code> - remaining icons (192×192, 512×512)</li></ul><p class=\"text-light\">You can also configure icons in <code>layout.tsx</code> via the <code>metadata.icons</code> object.</p></div>"
+          "html": "<div><p class=\"text-mid mb-3\">A cikin Next.js (App Router), sanya fayilolin favicon a cikin directory na <code>app/</code> ko <code>public/</code>:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> - Next.js yana ganewa ta atomatik</li><li><code>app/apple-icon.png</code> - alamar Apple</li><li><code>public/</code> - sauran alamomin (192×192, 512×512)</li></ul><p class=\"text-light\">Kuma za ka iya tsara alamomin a cikin <code>layout.tsx</code> ta hanyar abu na <code>metadata.icons</code>.</p></div>"
         }
       ]
     },
@@ -236,34 +236,34 @@
     },
     {
       "type": "sectionSteps",
-      "title": "What source image works best?",
-      "description": "A favicon is a very small graphic - as small as 16×16 pixels. Not every image works well as a source:",
+      "title": "Wane hoton tushe ne ya fi dacewa?",
+      "description": "Favicon ƙaramin hoto ne sosai - ƙanƙanta kamar 16×16 pixels. Ba kowane hoto ne ke aiki da kyau a matsayin tushe ba:",
       "grid": "two",
       "items": [
         {
           "icon": "RiShapeLine",
-          "title": "Simple shapes and readable symbols",
-          "description": "Simple logos, single letters, or symbols work best. Avoid complex graphics with many details."
+          "title": "Siffofi masu sauƙi da alamomi masu karatu",
+          "description": "Sauƙaƙƙun alamomi, haruffa guda ɗaya, ko alamomi sun fi dacewa. Guje wa hotuna masu rikitarwa da ke da cikakkun bayanan da yawa."
         },
         {
           "icon": "RiAspectRatioLine",
-          "title": "Square format",
-          "description": "A favicon is square. If the source image has a ratio other than 1:1, it will be cropped or stretched."
+          "title": "Tsarin murabba'i",
+          "description": "Favicon murabba'i ne. Idan hoton tushe yana da rabo ban da 1:1, za a yanke shi ko a miƙa shi."
         },
         {
           "icon": "RiZoomInLine",
-          "title": "Large enough size",
-          "description": "We recommend a source image of at least 512×512 pixels. Smaller images will be scaled up."
+          "title": "Girma mai isasshe",
+          "description": "Muna ba da shawarar hoton tushe na aƙalla 512×512 pixels. Za a ƙara girman hotunan da suka fi ƙanƙanta."
         },
         {
           "icon": "RiImageLine",
-          "title": "SVG format as ideal source",
-          "description": "SVG scales without quality loss, so icons in all sizes will be sharp."
+          "title": "Tsarin SVG a matsayin tushe mafi kyau",
+          "description": "SVG yana ƙara girma ba tare da asarar inganci ba, don haka alamomin a dukan girma za su kasance masu kaifi."
         },
         {
           "icon": "RiContrastLine",
-          "title": "High-contrast colors",
-          "description": "A favicon must be visible on different backgrounds (light tabs, dark mode). Choose colors that maintain readability."
+          "title": "Launuka masu bambanci mai girma",
+          "description": "Favicon dole ne ya bayyana a kan bayan daban-daban (shafuka masu haske, yanayin duhu). Zaɓi launuka da ke kiyaye iya karatu."
         }
       ]
     },
@@ -273,48 +273,48 @@
     },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the favicon generator",
+      "title": "Tambayoyin da ake yawan yi game da mai samar da favicon",
       "openByDefault": 0,
       "items": [
         {
-          "question": "What size should the source image be for generating favicons?",
-          "answer": "The recommended size is at least 512×512 pixels in square format (1:1). With such a source, icons in all sizes will be sharp and readable. If you have a logo in SVG format - use it, as vector graphics scale without quality loss.",
-          "answerSchemaText": "At least 512×512 px, square (1:1). SVG is ideal as it scales without quality loss."
+          "question": "Wane girma ne ya kamata hoton tushe ya kasance don samar da favicon?",
+          "answer": "Girman da ake ba da shawara shine aƙalla 512×512 pixels a tsarin murabba'i (1:1). Tare da irin wannan tushe, alamomin a dukan girma za su kasance masu kaifi kuma masu karatu. Idan kana da alama a tsarin SVG - yi amfani da ita, saboda hotunan vector suna ƙara girma ba tare da asarar inganci ba.",
+          "answerSchemaText": "Aƙalla 512×512 px, murabba'i (1:1). SVG ya fi dacewa saboda yana ƙara girma ba tare da asarar inganci ba."
         },
         {
-          "question": "Can I generate only favicon.ico without the other icons?",
-          "answer": "Yes. Before generating, you can select exactly which sizes you need - e.g., only favicon.ico or only selected PNG sizes.",
-          "answerSchemaText": "Yes, you can select individual sizes before generating."
+          "question": "Zan iya samar da favicon.ico kawai ba tare da sauran alamomin ba?",
+          "answer": "Eh. Kafin samarwa, za ka iya zaɓar daidai wane girma kake buƙata - misali, favicon.ico kawai ko girman PNG da aka zaɓa kawai.",
+          "answerSchemaText": "Eh, za ka iya zaɓar girma ɗaya-ɗaya kafin samarwa."
         },
         {
-          "question": "What image formats does the favicon generator support?",
-          "answer": "The generator accepts images in PNG, JPG, and SVG formats. As output, it generates a favicon.ico file and PNG icons in selected sizes, ready to upload to your website.",
-          "answerSchemaText": "Input: PNG, JPG, SVG. Output: favicon.ico and PNG icons."
+          "question": "Wane tsarin hotuna ne mai samar da favicon ke tallafawa?",
+          "answer": "Mai samar da yana karɓar hotuna a tsarin PNG, JPG, da SVG. A matsayin fitarwa, yana samar da fayil na favicon.ico da alamomin PNG a girman da aka zaɓa, shirye don ɗorawa zuwa gidan yanar gizon ka.",
+          "answerSchemaText": "Shigarwa: PNG, JPG, SVG. Fitarwa: favicon.ico da alamomin PNG."
         },
         {
-          "question": "Does a favicon affect Google search ranking?",
-          "answer": "Not directly - favicon is not a ranking factor. However, it indirectly affects brand recognition: a site with a professional icon is more easily identifiable among many open tabs, which may translate to a higher click-through rate in search results.",
-          "answerSchemaText": "Not directly. Indirectly improves brand recognition and click-through rate."
+          "question": "Shin favicon yana shafar matsayin bincike na Google?",
+          "answer": "Ba kai tsaye ba - favicon ba abin tantancewa ne na matsayi ba. Duk da haka, a kaikaice yana shafar ganin alama: shafin da ke da alama ta ƙwararru ya fi sauƙin ganewa a cikin shafuka da yawa da ke buɗe, wanda zai iya haifar da ƙarin yawan danna a cikin sakamakon bincike.",
+          "answerSchemaText": "Ba kai tsaye ba. A kaikaice yana inganta ganin alama da yawan danna."
         },
         {
-          "question": "Which icon sizes are essential for a regular website?",
-          "answer": "For a typical website, three files are sufficient: favicon.ico (32×32), a 32×32 PNG icon, and apple-touch-icon 180×180. If the site should work as a web app (PWA), you also need 192×192 and 512×512 icons plus a manifest file.",
-          "answerSchemaText": "favicon.ico, 32×32 PNG, and apple-touch-icon 180×180. For PWA add 192×192 and 512×512."
+          "question": "Wane girman alama ne ya zama dole don gidan yanar gizo na yau da kullum?",
+          "answer": "Don gidan yanar gizo na al'ada, fayiloli uku sun isa: favicon.ico (32×32), alamar PNG na 32×32, da apple-touch-icon 180×180. Idan shafin ya kamata ya yi aiki a matsayin aikace-aikacen yanar gizo (PWA), kuma kana buƙatar alamomin 192×192 da 512×512 tare da fayil na manifest.",
+          "answerSchemaText": "favicon.ico, 32×32 PNG, da apple-touch-icon 180×180. Don PWA ƙara 192×192 da 512×512."
         },
         {
-          "question": "What is a site.webmanifest file and when is it needed?",
-          "answer": "It is a configuration file for web apps (PWA) that contains information about the icon, name, and colors of the application. It is required when the site should work as an app added to the phone home screen. For regular websites, it is not necessary.",
-          "answerSchemaText": "PWA configuration file. Required for home screen apps, not needed for regular websites."
+          "question": "Menene fayil na site.webmanifest kuma yaushe ake buƙatar shi?",
+          "answer": "Fayil ne na tsari don aikace-aikacen yanar gizo (PWA) da ke ɗauke da bayanai game da alama, suna, da launukan aikace-aikacen. Ana buƙatar shi lokacin da shafin ya kamata ya yi aiki a matsayin aikace-aikacen da aka ƙara zuwa allon gida na waya. Don gidajen yanar gizo na yau da kullum, ba a buƙatar sa.",
+          "answerSchemaText": "Fayil na tsarin PWA. Ana buƙatar shi don aikace-aikacen allon gida, ba a buƙatar shi don gidajen yanar gizo na yau da kullum ba."
         },
         {
-          "question": "Does the favicon display the same in all browsers?",
-          "answer": "Most modern browsers (Chrome, Firefox, Edge, Safari) recognize the favicon.ico file and PNG icons. Differences may occur in the displayed icon size - Chrome prefers PNG 32×32, while Safari on iOS uses apple-touch-icon 180×180. For best compatibility, we recommend generating the full set of sizes.",
-          "answerSchemaText": "Mostly yes. Generate the full set of sizes for best compatibility."
+          "question": "Shin favicon yana nuna iri ɗaya a dukan browsers?",
+          "answer": "Yawancin browsers na zamani (Chrome, Firefox, Edge, Safari) suna gane fayil na favicon.ico da alamomin PNG. Bambance-bambance na iya faruwa a girman alama da ake nuna - Chrome ya fi son PNG 32×32, yayin da Safari a kan iOS ke amfani da apple-touch-icon 180×180. Don mafi kyawun dacewa, muna ba da shawarar samar da cikakken saitin girma.",
+          "answerSchemaText": "Galibi eh. Samar da cikakken saitin girma don mafi kyawun dacewa."
         },
         {
-          "question": "Why doesn't the favicon change after uploading a new file?",
-          "answer": "Browsers aggressively cache favicons. After uploading a new icon, try clearing the browser cache or adding a version parameter to the file path (e.g., /favicon.ico?v=2). The change may take several hours to become visible.",
-          "answerSchemaText": "Browsers cache favicons aggressively. Clear cache or add a version parameter."
+          "question": "Me ya sa favicon ba ya canzawa bayan ɗora sabon fayil?",
+          "answer": "Browsers suna adana favicon a cikin cache sosai. Bayan ɗora sabon alama, gwada share cache na browser ko ƙara sigar parameter zuwa hanyar fayil (misali, /favicon.ico?v=2). Canjin na iya ɗaukar sa'o'i da yawa kafin ya bayyana.",
+          "answerSchemaText": "Browsers suna adana favicon a cikin cache sosai. Share cache ko ƙara sigar parameter."
         }
       ]
     },
@@ -324,7 +324,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Explore other tools"
+      "title": "Bincika sauran kayan aiki"
     },
     {
       "type": "gap",

@@ -2,60 +2,60 @@
   "toolKey": "imageResize",
   "locale": "ha",
   "metadata": {
-    "title": "Free Image Editor – Crop, Resize & Convert in Seconds",
-    "description": "Resize and crop images in seconds. Ready-made templates for Instagram, Facebook, LinkedIn. Convert JPG to WebP. Create circular avatars. No signup, no limits.",
+    "title": "Editan Hoto Kyauta – Yanke, Canza Girma & Juyawa Cikin Dakiku",
+    "description": "Canza girma da yankan hotuna cikin dakiƙu. Ƙayyadadden tsare-tsare don Instagram, Facebook, LinkedIn. Juya JPG zuwa WebP. Ƙirƙiri hotunan zagaye. Ba buƙatar rajista, ba iyaka.",
     "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
     "path": "/ha/kayan-aiki/editan-hoto"
   },
   "hero": {
-    "title": "Free Image Editor – Crop, Resize & Convert",
-    "description": "Resize, crop, and convert images for Instagram, Facebook, and LinkedIn. Ready-made formats, circular avatars, export to JPG, PNG, and WebP. Local processing in the browser.",
+    "title": "Editan Hoto Kyauta – Yanke, Canza Girma & Juyawa",
+    "description": "Canza girma, yanke, da juya hotuna don Instagram, Facebook, da LinkedIn. Ƙayyadadden tsare-tsare, hotunan zagaye, fitar zuwa JPG, PNG, da WebP. Sarrafa a cikin browser na gida.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/ha/kayan-aiki", "label": "Tools" },
-    "third": { "href": "/ha/kayan-aiki/editan-hoto", "label": "Online image editor" }
+    "second": { "href": "/ha/kayan-aiki", "label": "Kayan Aiki" },
+    "third": { "href": "/ha/kayan-aiki/editan-hoto", "label": "Editan hoto ta yanar gizo" }
   },
   "schemas": {
     "software": {
-      "name": "Free online image editor",
+      "name": "Editan hoto kyauta ta yanar gizo",
       "alternateName": [
-        "Online image resizer",
-        "Online image cropper",
-        "Instagram image size tool",
-        "Facebook image size tool",
-        "JPG to WebP converter",
-        "Circular profile picture tool",
-        "Image compression online"
+        "Mai canza girman hoto ta yanar gizo",
+        "Mai yankan hoto ta yanar gizo",
+        "Kayan aikin girman hoton Instagram",
+        "Kayan aikin girman hoton Facebook",
+        "Mai juya JPG zuwa WebP",
+        "Kayan aikin hoton bayanan martaba zagaye",
+        "Matsawar hoto ta yanar gizo"
       ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Free online image editor for resizing, cropping, and format conversion. Ready-made presets for Instagram, Facebook, and LinkedIn. Circular avatar creation. Export to JPG, PNG, and WebP with quality control. Local processing in the browser.",
+      "description": "Editan hoto kyauta ta yanar gizo don canza girma, yanke, da juya tsari. Ƙayyadadden tsare-tsare don Instagram, Facebook, da LinkedIn. Ƙirƙirar hoton zagaye. Fitar zuwa JPG, PNG, da WebP tare da sarrafa inganci. Sarrafa a cikin browser na gida.",
       "featureList": [
-        "Resize images to any dimensions",
-        "Crop with interactive area selection",
-        "Ready-made Instagram formats (square post, portrait post, story, reels)",
-        "Ready-made Facebook formats (post, page cover)",
-        "Ready-made LinkedIn formats (post, profile banner)",
-        "Ready-made web formats (OG image, hero, banner, thumbnail)",
-        "Crop shapes: rectangle, square, circle (round avatar)",
-        "3x3 grid (rule of thirds) with color selection",
-        "Crop zoom 100–300%",
-        "Precise crop position (X, Y) with centering",
-        "Format conversion: JPG, PNG, WebP",
-        "Compression quality control 60–100%",
-        "Local processing in the browser",
-        "Free tool, no login required"
+        "Canza girman hotuna zuwa kowane girma",
+        "Yanke tare da zaɓin yanki na mu'amala",
+        "Ƙayyadadden tsare-tsaren Instagram (bugu murabba'i, bugu tsaye, story, reels)",
+        "Ƙayyadadden tsare-tsaren Facebook (bugu, murfin shafi)",
+        "Ƙayyadadden tsare-tsaren LinkedIn (bugu, tutar bayanan martaba)",
+        "Ƙayyadadden tsare-tsaren yanar gizo (hoton OG, hero, tuta, ƙaramin hoto)",
+        "Siffofin yanke: murabba'i, murabba'i daidai, da'ira (hoton zagaye)",
+        "Grid 3x3 (doka ta kashi uku) tare da zaɓin launi",
+        "Girman yanke 100–300%",
+        "Daidaiton matsayin yanke (X, Y) tare da tsakaituwa",
+        "Juya tsari: JPG, PNG, WebP",
+        "Sarrafa ingancin matsawa 60–100%",
+        "Sarrafa a cikin browser na gida",
+        "Kayan aiki kyauta, ba a buƙatar shiga ba"
       ]
     },
     "howTo": {
-      "name": "How to resize and crop an image for social media",
-      "description": "How to resize an image for Instagram (1080x1080, 1080x1350, story), Facebook, LinkedIn, and OG image. JPG to WebP conversion and circular avatar creation.",
+      "name": "Yadda ake canza girma da yankan hoto don kafofin watsa labarai",
+      "description": "Yadda ake canza girman hoto don Instagram (1080x1080, 1080x1350, story), Facebook, LinkedIn, da hoton OG. Juya JPG zuwa WebP da ƙirƙirar hoton zagaye.",
       "steps": [
-        { "name": "Add an image", "text": "Drag a file onto the designated area or select an image from your device. Supported formats: JPG, PNG, WebP." },
-        { "name": "Choose dimensions or a preset", "text": "Enter target dimensions in pixels or select a ready-made format (e.g., Instagram post, Facebook cover, OG image)." },
-        { "name": "Adjust the crop", "text": "Move and zoom the image to select the best area. The bright area in the preview shows exactly what will be saved." },
-        { "name": "Choose format and download", "text": "Select the file format (JPG, PNG, or WebP), set compression quality, and download the finished image." }
+        { "name": "Ƙara hoto", "text": "Ja fayil zuwa wurin da aka kebantar ko zaɓi hoto daga na'urar ka. Tsare-tsare da ake tallafawa: JPG, PNG, WebP." },
+        { "name": "Zaɓi girma ko ƙayyadadden tsari", "text": "Shigar da girman da ake nufi a cikin pixels ko zaɓi ƙayyadadden tsari (misali, bugun Instagram, murfin Facebook, hoton OG)." },
+        { "name": "Daidaita yanke", "text": "Motsa kuma ƙara girman hoton don zaɓar mafi kyawun yanki. Yankin mai haske a cikin duban yana nuna daidai abin da za a ajiye." },
+        { "name": "Zaɓi tsari kuma sauke", "text": "Zaɓi tsarin fayil (JPG, PNG, ko WebP), saita ingancin matsawa, kuma sauke hoton da ya gama." }
       ]
     }
   },
@@ -63,189 +63,197 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Resize images online - crop, convert, and compress in one tool",
-      "html": "<p class=\"text-mid\">The online image editor lets you quickly adapt images to specific dimensions. You can resize an image to any pixel dimensions, select a ready-made format for social media, or crop a section of the image with precise framing.</p><p class=\"text-mid mt-3\">In addition to resizing, the tool offers format conversion (JPG, PNG, WebP), circular avatar creation, and compression quality control.</p>"
+      "title": "Canza girman hotuna ta yanar gizo - yanke, juya, da matsa a cikin kayan aiki ɗaya",
+      "html": "<p class=\"text-mid\">Editan hoto ta yanar gizo yana baka damar daidaita hotuna zuwa takamaiman girma cikin sauri. Za ka iya canza girman hoto zuwa kowane girman pixel, zaɓi ƙayyadadden tsari don kafofin watsa labarai, ko yanke sashen hoto tare da tsarin daidaitacce.</p><p class=\"text-mid mt-3\">Ban da canza girma, kayan aikin yana ba da juya tsari (JPG, PNG, WebP), ƙirƙirar hoton zagaye, da sarrafa ingancin matsawa.</p>"
     },
     { "type": "gap", "size": "sm" },
     {
       "type": "sectionSteps",
-      "title": "How to resize an image online",
-      "description": "Editing an image takes just a few seconds:",
+      "title": "Yadda ake canza girman hoto ta yanar gizo",
+      "description": "Gyaran hoto yana ɗaukar 'yan daƙiƙu kaɗan kawai:",
       "grid": "three",
       "items": [
-        { "title": "1. Add an image", "description": "Drag a file onto the designated area or select an image from your device. Supported formats: JPG, PNG, WebP." },
-        { "title": "2. Set dimensions", "description": "Enter dimensions in pixels or select a ready-made format (Instagram, Facebook, YouTube, LinkedIn, OG image)." },
-        { "title": "3. Download", "description": "Adjust the crop, choose the file format (JPG, PNG, WebP), set quality, and download the finished image." }
+        { "title": "1. Ƙara hoto", "description": "Ja fayil zuwa wurin da aka kebantar ko zaɓi hoto daga na'urar ka. Tsare-tsare da ake tallafawa: JPG, PNG, WebP." },
+        { "title": "2. Saita girma", "description": "Shigar da girma a cikin pixels ko zaɓi ƙayyadadden tsari (Instagram, Facebook, YouTube, LinkedIn, hoton OG)." },
+        { "title": "3. Sauke", "description": "Daidaita yanke, zaɓi tsarin fayil (JPG, PNG, WebP), saita inganci, kuma sauke hoton da ya gama." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to add an image",
-      "html": "<p class=\"text-mid\">The tool accepts images in JPG, PNG, and WebP formats. You can add an image in two ways:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Drag and drop</strong> - grab a file from a folder on your computer and drop it onto the file upload area (the area with a dashed border).</li><li><strong>Select from device</strong> - clicking the file upload area opens a file selection dialog.</li></ul><p class=\"text-mid mt-3\">After adding an image, the tool automatically reads its original dimensions and displays a preview. You can now proceed to crop settings.</p>"
+      "title": "Yadda ake ƙara hoto",
+      "html": "<p class=\"text-mid\">Kayan aikin yana karɓar hotuna a tsarin JPG, PNG, da WebP. Za ka iya ƙara hoto ta hanyoyi biyu:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Ja da sauka</strong> - ɗauki fayil daga babban fayil a kan kwamfutar ka kuma jefa shi a kan wurin ɗora fayil (wurin da ke da iyakar da ke da digo-digo).</li><li><strong>Zaɓi daga na'ura</strong> - dannawa wurin ɗora fayil yana buɗe tagar zaɓin fayil.</li></ul><p class=\"text-mid mt-3\">Bayan ƙara hoto, kayan aikin yana karanta girman asali ta atomatik kuma yana nuna duban. Yanzu za ka iya ci gaba zuwa saituna na yanke.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "Set target dimensions",
-      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Dimensions in px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Ready-made formats</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Width (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly></div><div><label class=\"text-[14px]! font-medium\">Height (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span>Keep proportions (auto second dimension)</span></label></div></div>",
-      "html": "<p class=\"text-mid\">In the <strong>Dimensions in px</strong> tab, you enter width and height manually. The <strong>Keep proportions</strong> option automatically adjusts the second dimension.</p>"
+      "title": "Saita girman da ake nufi",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Girma a cikin px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>\u0198ayyadadden tsare-tsare</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Fa\u0257i (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly></div><div><label class=\"text-[14px]! font-medium\">Tsayi (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span>Kiyaye daidaito (girma na biyu ta atomatik)</span></label></div></div>",
+      "html": "<p class=\"text-mid\">A cikin shafin <strong>Girma a cikin px</strong>, kana shigar da fa\u0257i da tsayi da hannu. Za\u0253in <strong>Kiyaye daidaito</strong> yana daidaita girma na biyu ta atomatik.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Image dimensions for Instagram, Facebook, and LinkedIn",
-      "html": "<p class=\"text-mid mb-4\">The tool includes ready-made formats with optimal dimensions for the most popular platforms:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform</th><th class=\"py-2 pr-4 font-semibold\">Format</th><th class=\"py-2 pr-4 font-semibold\">Dimensions (px)</th><th class=\"py-2 font-semibold\">Ratio</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Square post</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Portrait post</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Post</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Page cover</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Post</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Profile banner</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG image</td><td class=\"py-2 pr-4\">Link sharing</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Dimensions in the table are recommended sizes for each platform. The tool automatically sets these dimensions when you select the appropriate format.</p>"
+      "title": "Girman hoto don Instagram, Facebook, da LinkedIn",
+      "html": "<p class=\"text-mid mb-4\">Kayan aikin ya ƙunshi ƙayyadadden tsare-tsare tare da mafi kyawun girma don dandamali mafi shahara:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Dandamali</th><th class=\"py-2 pr-4 font-semibold\">Tsari</th><th class=\"py-2 pr-4 font-semibold\">Girma (px)</th><th class=\"py-2 font-semibold\">Rabo</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Bugu murabba'i</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Bugu tsaye</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Bugu</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Murfin shafi</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Bugu</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Tutar bayanan martaba</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">Hoton OG</td><td class=\"py-2 pr-4\">Raba hanyar haɗi</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div><p class=\"text-light mt-4\">Don zaɓar ƙayyadadden tsari, canja zuwa shafin <strong>Ƙayyadadden tsare-tsare</strong> kuma danna girman da aka zaɓa. Za a yi amfani da girma ta atomatik.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Ready-made formats - which to choose?",
-      "description": "Each format corresponds to specific platform or use case requirements:",
+      "title": "Ƙayyadadden tsare-tsare - wanne za a zaɓa?",
+      "description": "Kowane tsari ya dace da takamaiman buƙatun dandamali ko amfani:",
       "grid": "two",
       "items": [
         {
           "icon": "RiInstagramLine",
-          "title": "Instagram - square post (1080×1080)",
-          "description": "Standard Instagram post format. 1:1 ratio. Works well in the feed and looks good on both phone and desktop."
+          "title": "Instagram - bugu murabba'i (1080×1080)",
+          "description": "Tsarin bugu na Instagram na al'ada. Rabo 1:1. Yana aiki da kyau a cikin feed kuma yana kyau a kan waya da tebur."
         },
         {
           "icon": "RiInstagramLine",
-          "title": "Instagram - portrait post (1080×1350)",
-          "description": "Vertical post format (4:5 ratio). Takes up more space in the feed than a square, which may increase engagement."
+          "title": "Instagram - bugu tsaye (1080×1350)",
+          "description": "Tsarin bugu tsaye (rabo 4:5). Yana ɗaukar ƙarin sarari a cikin feed fiye da murabba'i, wanda zai iya ƙara shiga."
         },
         {
           "icon": "RiInstagramLine",
           "title": "Instagram - story / reels (1080×1920)",
-          "description": "Full-screen vertical format (9:16 ratio). Used in stories and reels. Fills the entire phone screen."
+          "description": "Tsarin tsaye na cikakken allo (rabo 9:16). Ana amfani da shi a cikin stories da reels. Yana cika dukan allon waya."
         },
-        { "icon": "RiFacebookLine", "title": "Facebook - post (1200×630)", "description": "Optimal format for Facebook posts and shared links. Ratio close to 16:9." },
+        { "icon": "RiFacebookLine", "title": "Facebook - bugu (1200×630)", "description": "Mafi kyawun tsari don bugun Facebook da hanyoyin haɗi da aka raba. Rabo kusa da 16:9." },
         {
           "icon": "RiFacebookLine",
-          "title": "Facebook - page cover (820×360)",
-          "description": "Background photo for a Facebook business page. Wide, panoramic format - may be cropped differently on various devices."
+          "title": "Facebook - murfin shafi (820×360)",
+          "description": "Hoton baya don shafin kasuwanci na Facebook. Tsarin faɗi, mai faɗi - ana iya yanke shi dabam a kan na'urori daban-daban."
         },
-        { "icon": "RiLinkedinLine", "title": "LinkedIn - post (1200×1200)", "description": "Square format for LinkedIn posts. Looks good in the feed and on mobile devices." },
+        { "icon": "RiLinkedinLine", "title": "LinkedIn - bugu (1200×1200)", "description": "Tsarin murabba'i don bugun LinkedIn. Yana kyau a cikin feed da kan na'urorin hannu." },
         {
           "icon": "RiLinkedinLine",
-          "title": "LinkedIn - profile banner (1584×396)",
-          "description": "Background image for a personal or company LinkedIn profile. Very wide format - center the key element in the crop."
+          "title": "LinkedIn - tutar bayanan martaba (1584×396)",
+          "description": "Hoton baya don bayanan martaba na LinkedIn na mutum ko kamfanin. Tsarin mai faɗi sosai - sanya muhimmin abu a tsakiya a cikin yanke."
         },
         {
           "icon": "RiImageLine",
-          "title": "OG image (1200×630)",
-          "description": "Graphic displayed when sharing a link on social media (Open Graph). Standard for Facebook, Twitter, LinkedIn, and other platforms."
+          "title": "Hoton OG (1200×630)",
+          "description": "Hoto da ake nuna lokacin raba hanyar haɗi a kan kafofin watsa labarai (Open Graph). Al'ada don Facebook, Twitter, LinkedIn, da sauran dandamali."
         },
-        { "icon": "RiFileImageLine", "title": "Article graphic (1600×900)", "description": "Wide format suitable for blog article headers. 16:9 ratio looks good on text-heavy pages." },
-        { "icon": "RiAspectRatioLine", "title": "Website banner (1920×600)", "description": "Very wide format for website banners. Works as a background under headers or in offer sections." },
-        { "icon": "RiCropLine", "title": "Article thumbnail (800×600)", "description": "Smaller format for thumbnails on article lists, product carousels, or search result previews." },
-        { "icon": "RiLayoutGridLine", "title": "Hero section (1920×1080)", "description": "Full HD full-screen format. Used as the main section background on homepages or offer pages." }
+        { "icon": "RiFileImageLine", "title": "Hoton labarin (1600×900)", "description": "Tsarin faɗi da ya dace don kan labarin blog. Rabo 16:9 yana kyau a kan shafuka masu yawan rubutu." },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Tutar gidan yanar gizo (1920×600)",
+          "description": "Tsarin mai faɗi sosai don tutocin gidan yanar gizo. Yana aiki a matsayin baya ƙarƙashin kanun labarai ko a cikin sassan tayin."
+        },
+        { "icon": "RiCropLine", "title": "Ƙaramin hoton labarin (800×600)", "description": "Ƙaramin tsari don ƙananan hotuna a kan jerin labarai, juzu'in kayayyaki, ko duba sakamakon bincike." },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Sashen Hero (1920×1080)",
+          "description": "Tsarin Full HD na cikakken allo. Ana amfani da shi a matsayin bayan babban sashe a kan shafukan gida ko shafukan tayin."
+        }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to crop an image",
-      "html": "<p class=\"text-mid\">After setting target dimensions, an interactive crop area appears on the preview. The bright part of the image is the section that will be saved - the rest is dimmed.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Dragging the crop</p><p class=\"text-mid mt-1\">Grab the bright area and drag it to any part of the image. This way you choose which section of the photo will be exported.</p></div><div><p class=\"text-dark font-semibold\">Resizing via handles</p><p class=\"text-mid mt-1\">In the corners of the crop area there are small squares (handles). Dragging them changes the crop size - you can enlarge or shrink it while maintaining the chosen proportions.</p></div><div><p class=\"text-dark font-semibold\">Zoom</p><p class=\"text-mid mt-1\">In the <strong>Zoom</strong> tab you will find a slider to adjust zoom (100–300%). A higher value means the crop covers a smaller section of the original image - useful when you want to cut out a specific detail.</p></div><div><p class=\"text-dark font-semibold\">Precise position control</p><p class=\"text-mid mt-1\">In the <strong>Position</strong> tab you can set the exact crop position in percentages (0–100% for X and Y axes). Centering buttons let you quickly position the crop at the center of the image.</p></div></div>"
+      "title": "Yadda ake yankan hoto",
+      "html": "<p class=\"text-mid\">Bayan saita girman da ake nufi, yankin yanke na mu'amala yana bayyana a kan duban. Bangaren hoto mai haske shi ne sashen da za a ajiye - sauran an duhunta su.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Jan yanke</p><p class=\"text-mid mt-1\">Kama yankin mai haske kuma ja shi zuwa kowane bangaren hoto. Ta wannan hanyar kana zaɓar wane sashe na hoton da za a fitar.</p></div><div><p class=\"text-dark font-semibold\">Canza girma ta hanyar hannaye</p><p class=\"text-mid mt-1\">A kusurwoyin yankin yanke akwai ƙananan murabba'ai (hannaye). Jan su yana canza girman yanke - za ka iya ƙara girma ko rage shi yayin kiyaye daidaiton da aka zaɓa.</p></div><div><p class=\"text-dark font-semibold\">Girman duba</p><p class=\"text-mid mt-1\">A cikin shafin <strong>Zoom</strong> za ka sami mai zamewa don daidaita girman duba (100–300%). Ƙimar da ta fi girma tana nufin yanke yana rufe ƙaramin sashe na hoton asali - yana da amfani lokacin da kake son yanke takamaiman cikakkun bayanan.</p></div><div><p class=\"text-dark font-semibold\">Daidaiton matsayi na daidai</p><p class=\"text-mid mt-1\">A cikin shafin <strong>Position</strong> za ka iya saita daidaiton matsayin yanke a cikin kaso (0–100% don igiyoyin X da Y). Maɓallai na tsakaituwa suna baka damar sanya yanke a tsakiyar hoto cikin sauri.</p></div></div>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "Crop shapes",
-      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Rectangle</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Square</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Circle</span></div></div>",
-      "html": "<p class=\"text-mid\">In the <strong>Crop Shapes</strong> tab, you choose the shape of the exported image: rectangle (with selected proportions), square (forces 1:1), or circle (with transparent background).</p><p class=\"text-mid mt-3\">The circle shape creates a round avatar with a transparent background outside the circle. The tool automatically switches the format to PNG or WebP, since JPG does not support transparency.</p>"
+      "title": "Siffofin yanke",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Murabba'i</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Murabba'i daidai</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Da'ira</span></div></div>",
+      "html": "<p class=\"text-mid\">A cikin shafin <strong>Siffofin Yanke</strong>, kana zaɓar siffar hoton da za a fitar: murabba'i (tare da daidaiton da aka zaɓa), murabba'i daidai (yana tilasta 1:1), ko da'ira (tare da bayan gaskiya).</p><p class=\"text-mid mt-3\">Siffar da'ira tana ƙirƙirar hoton zagaye tare da bayan gaskiya a waje da da'irar. Kayan aikin yana canja tsari zuwa PNG ko WebP ta atomatik, tun da JPG ba ya tallafawa gaskiya.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "3×3 grid - what is it for?",
-      "html": "<p class=\"text-mid\">A grid dividing the image into 9 equal parts is visible on the crop area. This is a visualization of the <strong>rule of thirds</strong> - one of the fundamental principles of photographic composition.</p><p class=\"text-mid mt-3\">The rule states that the most important elements of a photo (face, product, point of interest) should be placed at the intersections of the grid lines or along them. Such composition is more dynamic and pleasing to the eye than placing the subject exactly in the center.</p><p class=\"text-mid mt-3\">In the <strong>Grid color</strong> tab you can change the line color (green, white, black, red, yellow) so the grid is clearly visible on different images.</p>"
+      "title": "Grid 3×3 - menene amfaninsa?",
+      "html": "<p class=\"text-mid\">Grid da ke raba hoto zuwa sassa 9 daidai yana bayyana a kan yankin yanke. Wannan hangen nesa ne na <strong>dokar kashi uku</strong> - ɗaya daga cikin ƙa'idodin asali na tsarin daukar hoto.</p><p class=\"text-mid mt-3\">Dokar ta ce muhimman abubuwan hoto (fuska, kayan, wurin sha'awa) ya kamata a sanya su a mahaɗin layukan grid ko kusa da su. Irin wannan tsari ya fi ƙarfi kuma yana faranta wa ido fiye da sanya batun daidai a tsakiya.</p><p class=\"text-mid mt-3\">A cikin shafin <strong>Launin grid</strong> za ka iya canza launin layi (kore, fari, baƙi, ja, rawaya) domin grid ya bayyana a fili a kan hotuna daban-daban.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionTabs",
-      "title": "Export - which format to choose?",
+      "title": "Fitarwa - wane tsari za a zaɓa?",
       "tabs": [
         {
           "title": "JPG",
           "icon": "RiImageLine",
-          "html": "<div><p class=\"text-mid mb-3\">The most popular format for photos. Good compression while maintaining visual quality. Does not support transparency - the background will always be filled with a color.</p><p class=\"text-mid\">A good choice for product photos, portraits, and most website graphics. The quality slider (60–100%) controls compression.</p></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Tsarin da ya fi shahara don hotuna. Kyakkyawan matsawa yayin kiyaye ingancin gani. Ba ya tallafawa gaskiya - za a cika bayan koyaushe da launi.</p><p class=\"text-mid\">Kyakkyawan zaɓi don hotunan kayayyaki, hotunan fuska, da yawancin hotunan gidan yanar gizo. Mai zamewa na inganci (60–100%) yana sarrafa matsawa.</p></div>"
         },
         {
           "title": "PNG",
           "icon": "RiFileImageLine",
-          "html": "<div><p class=\"text-mid mb-3\">Lossless format - preserves full quality, but files are larger. Supports transparency (required for the circle shape).</p><p class=\"text-mid\">A good choice for graphics with text, icons, and images requiring sharp edges.</p></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Tsarin da ba shi da asara - yana kiyaye cikakken inganci, amma fayiloli sun fi girma. Yana tallafawa gaskiya (ana buƙata don siffar da'ira).</p><p class=\"text-mid\">Kyakkyawan zaɓi don hotuna masu rubutu, alamomi, da hotuna da ke buƙatar gefuna masu kaifi.</p></div>"
         },
         {
           "title": "WebP",
           "icon": "RiCropLine",
-          "html": "<div><p class=\"text-mid mb-3\">Modern format combining the advantages of JPG and PNG - small files, good quality, transparency support. Supported by all modern browsers.</p><p class=\"text-mid\">Recommended for websites - smaller files mean faster loading.</p></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Tsarin zamani da ke haɗa fa'idodin JPG da PNG - ƙananan fayiloli, kyakkyawan inganci, tallafawa gaskiya. Dukan browsers na zamani suna tallafawa shi.</p><p class=\"text-mid\">Ana ba da shawara don gidajen yanar gizo - ƙananan fayiloli suna nufin ɗaukar hoto cikin sauri.</p></div>"
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Aspect ratios - what do they mean?",
-      "description": "The aspect ratio is the relationship between the width and height of an image. Written as two numbers separated by a colon:",
+      "title": "Rabo na girma - menene ma'anarsu?",
+      "description": "Rabo na girma shine alaƙar tsakanin faɗi da tsayin hoto. Ana rubuta shi a matsayin lambobi biyu da aka raba da alamar colon:",
       "grid": "two",
       "items": [
-        { "icon": "RiLayoutGridLine", "title": "1:1 (square)", "description": "Width equals height. Instagram square post, profile pictures, icons." },
-        { "icon": "RiAspectRatioLine", "title": "4:5 (portrait)", "description": "Slightly vertical format. Instagram portrait post - takes up more space in the feed than a square." },
-        { "icon": "RiImageLine", "title": "3:2 (classic)", "description": "Traditional analog photography proportions. Many digital cameras also use this format." },
-        { "icon": "RiCropLine", "title": "16:9 (widescreen)", "description": "Standard HD video, presentation, and monitor format. YouTube, Facebook video, website banners." },
+        { "icon": "RiLayoutGridLine", "title": "1:1 (murabba'i)", "description": "Faɗi ya yi daidai da tsayi. Bugun Instagram murabba'i, hotunan bayanan martaba, alamomi." },
+        { "icon": "RiAspectRatioLine", "title": "4:5 (tsaye)", "description": "Tsarin tsaye kaɗan. Bugun Instagram tsaye - yana ɗaukar ƙarin sarari a cikin feed fiye da murabba'i." },
+        { "icon": "RiImageLine", "title": "3:2 (na gargajiya)", "description": "Daidaiton daukar hoto na gargajiya na analog. Kyamarori na dijital da yawa kuma suna amfani da wannan tsari." },
+        { "icon": "RiCropLine", "title": "16:9 (faɗin allo)", "description": "Tsarin bidiyo na HD na al'ada, gabatarwa, da na'urar duba. YouTube, bidiyon Facebook, tutocin gidan yanar gizo." },
         {
           "icon": "RiInstagramLine",
-          "title": "9:16 (vertical full-screen)",
-          "description": "Inverted 16:9 - a vertical format filling the entire phone screen. Instagram Stories, TikTok, YouTube Shorts."
+          "title": "9:16 (tsaye cikakken allo)",
+          "description": "Juya 16:9 - tsarin tsaye da ke cika dukan allon waya. Instagram Stories, TikTok, YouTube Shorts."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the image editor",
+      "title": "Tambayoyin da ake yawan yi game da editan hoto",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Does the editor handle very large images?",
-          "answer": "Yes, though processing may be slower for images above 4000×4000 pixels - this depends on the device's power and available browser memory. All processing happens locally, without sending files to a server.",
-          "answerSchemaText": "Yes. Processing may be slower above 4000×4000 px. All processing is local."
+          "question": "Shin editan yana iya sarrafa hotuna manya sosai?",
+          "answer": "Eh, ko da yake sarrafa na iya zama a hankali don hotuna sama da 4000×4000 pixels - wannan ya dogara da ƙarfin na'urar da ƙwaƙwalwar browser da ke akwai. Ana yin dukan sarrafa a cikin gida, ba tare da aika fayiloli zuwa sabar ba.",
+          "answerSchemaText": "Eh. Sarrafa na iya zama a hankali sama da 4000×4000 px. Dukan sarrafa na gida ne."
         },
         {
-          "question": "Which export format to choose - JPG, PNG, or WebP?",
-          "answer": "JPG is a good choice for photos with many colors and gradients - files are small with good quality. PNG preserves the highest quality and supports transparency (e.g., circular avatar). WebP combines the advantages of both - small files with high quality and transparency support.",
-          "answerSchemaText": "JPG for photos, PNG for transparency, WebP combines small files with high quality."
+          "question": "Wane tsari na fitarwa za a zaɓa - JPG, PNG, ko WebP?",
+          "answer": "JPG kyakkyawan zaɓi ne don hotuna masu launuka da yawa da gradients - fayiloli ƙanana ne tare da kyakkyawan inganci. PNG yana kiyaye mafi girman inganci kuma yana tallafawa gaskiya (misali, hoton zagaye). WebP yana haɗa fa'idodin duka biyun - ƙananan fayiloli tare da babban inganci da tallafawa gaskiya.",
+          "answerSchemaText": "JPG don hotuna, PNG don gaskiya, WebP yana haɗa ƙananan fayiloli tare da babban inganci."
         },
         {
-          "question": "How to create a circular profile picture?",
-          "answer": "In the Crop Shapes tab, select the Circle option. The tool will automatically switch the format to PNG or WebP (JPG does not support transparency). The area outside the circle will be transparent.",
-          "answerSchemaText": "Select Circle in the Crop Shapes tab. The area outside the circle is transparent."
+          "question": "Yaya ake ƙirƙirar hoton bayanan martaba zagaye?",
+          "answer": "A cikin shafin Siffofin Yanke, zaɓi zaɓin Da'ira. Kayan aikin zai canja tsari zuwa PNG ko WebP ta atomatik (JPG ba ya tallafawa gaskiya). Yankin a waje da da'irar zai kasance gaskiya.",
+          "answerSchemaText": "Zaɓi Da'ira a cikin shafin Siffofin Yanke. Yankin a waje da da'irar gaskiya ne."
         },
         {
-          "question": "What are the image dimensions for Instagram?",
-          "answer": "Instagram supports three main formats: square post (1080×1080 px, 1:1 ratio), portrait post (1080×1350 px, 4:5 ratio), and story/reels (1080×1920 px, 9:16 ratio). The tool has ready-made formats for each of these dimensions.",
-          "answerSchemaText": "Square post: 1080×1080 px, portrait post: 1080×1350 px, story/reels: 1080×1920 px."
+          "question": "Menene girman hoto don Instagram?",
+          "answer": "Instagram yana tallafawa manyan tsare-tsare uku: bugu murabba'i (1080×1080 px, rabo 1:1), bugu tsaye (1080×1350 px, rabo 4:5), da story/reels (1080×1920 px, rabo 9:16). Kayan aikin yana da ƙayyadadden tsare-tsare don kowane ɗayan waɗannan girma.",
+          "answerSchemaText": "Bugu murabba'i: 1080×1080 px, bugu tsaye: 1080×1350 px, story/reels: 1080×1920 px."
         },
         {
-          "question": "How does the quality slider work?",
-          "answer": "The quality slider (60–100%) controls the compression level for JPG and WebP formats. A higher value means better image quality but a larger file size. For most social media use cases, the optimal value is 70–85%.",
-          "answerSchemaText": "The slider controls JPG and WebP compression. 70–85% is optimal for social media."
+          "question": "Yaya mai zamewa na inganci ke aiki?",
+          "answer": "Mai zamewa na inganci (60–100%) yana sarrafa matakin matsawa don tsarin JPG da WebP. Ƙimar da ta fi girma tana nufin mafi kyawun ingancin hoto amma girman fayil mafi girma. Don yawancin amfani da kafofin watsa labarai, ƙimar da ta fi dacewa shine 70–85%.",
+          "answerSchemaText": "Mai zamewa yana sarrafa matsawa na JPG da WebP. 70–85% ya fi dacewa don kafofin watsa labarai."
         },
         {
-          "question": "Why is JPG format unavailable with the circle shape?",
-          "answer": "JPG format does not support transparency. The circle shape requires a transparent background outside the circle, so the tool automatically limits the choice to PNG or WebP - formats with an alpha channel.",
-          "answerSchemaText": "JPG does not support transparency. Circle shape requires PNG or WebP."
+          "question": "Me ya sa tsarin JPG ba ya samuwa tare da siffar da'ira?",
+          "answer": "Tsarin JPG ba ya tallafawa gaskiya. Siffar da'ira tana buƙatar bayan gaskiya a waje da da'irar, don haka kayan aikin yana iyakance zaɓin zuwa PNG ko WebP ta atomatik - tsare-tsare masu tashar alpha.",
+          "answerSchemaText": "JPG ba ya tallafawa gaskiya. Siffar da'ira tana buƙatar PNG ko WebP."
         },
         {
-          "question": "What do aspect ratios like 4:5 or 16:9 mean?",
-          "answer": "Aspect ratios define the relationship between the width and height of an image. For example, 4:5 means the width is 4 parts and the height is 5 parts. 16:9 is the typical ratio for films and presentations. Instagram portrait post uses 4:5, while story and reels use 9:16.",
-          "answerSchemaText": "4:5 = width 4 parts, height 5 parts. 16:9 = standard widescreen."
+          "question": "Menene ma'anar rabo na girma kamar 4:5 ko 16:9?",
+          "answer": "Rabo na girma yana bayyana alaƙar tsakanin faɗi da tsayin hoto. Misali, 4:5 yana nufin faɗi sassa 4 ne kuma tsayi sassa 5 ne. 16:9 shine rabo na al'ada don fina-finai da gabatarwa. Bugun Instagram tsaye yana amfani da 4:5, yayin da story da reels ke amfani da 9:16.",
+          "answerSchemaText": "4:5 = faɗi sassa 4, tsayi sassa 5. 16:9 = faɗin allo na al'ada."
         }
       ]
     },
     { "type": "gap", "size": "sm" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
+    { "type": "toolsCarousel", "title": "Bincika sauran kayan aiki" },
     { "type": "gap", "size": "sm" }
   ]
 }
