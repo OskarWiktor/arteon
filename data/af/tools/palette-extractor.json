@@ -2,44 +2,44 @@
   "toolKey": "paletteExtractor",
   "locale": "af",
   "metadata": {
-    "title": "Free Image Color Extractor – Palette From Any Photo",
-    "description": "Upload a photo or logo and extract up to 12 dominant colors with HEX and RGB codes. Perfect for UI, branding and social media. No signup, no limits.",
+    "title": "Gratis Beeldkleur-onttrekker – Palet Uit Enige Foto",
+    "description": "Laai 'n foto of logo op en onttrek tot 12 dominante kleure met HEX- en RGB-kodes. Perfek vir UI, handelsmerk en sosiale media. Geen registrasie, geen beperkings nie.",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/af/gereedskap/kleur-onttrekker-uit-beeld"
   },
   "hero": {
-    "title": "Image Color Extractor – Get a Palette From Any Photo",
-    "description": "Upload a photo, logo, or graphic, and the tool will extract up to 12 dominant colors with HEX and RGB codes. Analysis happens locally in your browser.",
+    "title": "Beeldkleur-onttrekker – Kry 'n Palet Uit Enige Foto",
+    "description": "Laai 'n foto, logo of grafika op, en die instrument sal tot 12 dominante kleure met HEX- en RGB-kodes onttrek. Analise gebeur plaaslik in jou blaaier.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/af/gereedskap", "label": "Tools" },
-    "third": { "href": "/af/gereedskap/kleur-onttrekker-uit-beeld", "label": "Image color extractor" }
+    "second": { "href": "/af/gereedskap", "label": "Gereedskap" },
+    "third": { "href": "/af/gereedskap/kleur-onttrekker-uit-beeld", "label": "Beeldkleur-onttrekker" }
   },
   "schemas": {
     "software": {
-      "name": "Image color extractor online - free palette generator",
-      "alternateName": ["Extract color palette from a photo or logo"],
+      "name": "Beeldkleur-onttrekker - gratis paletgenerator",
+      "alternateName": ["Onttrek kleurpalet uit 'n foto of logo"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
-      "description": "Free online image color extractor. Upload a photo, logo, or graphic and get a palette of up to 12 dominant colors with HEX and RGB codes. Processing happens in the browser - files are not sent to a server.",
+      "description": "Gratis beeldkleur-onttrekker. Laai 'n foto, logo of grafika op en kry 'n palet van tot 12 dominante kleure met HEX- en RGB-kodes. Verwerking gebeur in die blaaier - lêers word nie na 'n bediener gestuur nie.",
       "featureList": [
-        "Automatic extraction of up to 12 dominant colors",
-        "Analysis of photos, logos, and vector graphics",
-        "Color codes in HEX and RGB format",
-        "Copy color code to clipboard",
-        "Support for PNG, JPG, and SVG files",
-        "Ignores transparent pixels in PNG files",
-        "Local processing in the browser - image is not sent to a server"
+        "Outomatiese onttrekking van tot 12 dominante kleure",
+        "Analise van foto's, logo's en vektorgrafika",
+        "Kleurkodes in HEX- en RGB-formaat",
+        "Kopieer kleurkode na knipbord",
+        "Ondersteuning vir PNG-, JPG- en SVG-lêers",
+        "Ignoreer deursigtige piksels in PNG-lêers",
+        "Plaaslike verwerking in die blaaier - beeld word nie na 'n bediener gestuur nie"
       ]
     },
     "howTo": {
-      "name": "How to extract colors from a photo or image",
-      "description": "How to extract dominant colors from a photo or logo. Upload an image in PNG, JPG, or SVG format, and the tool will generate a palette of up to 12 colors with HEX codes.",
+      "name": "Hoe om kleure uit 'n foto of beeld te onttrek",
+      "description": "Hoe om dominante kleure uit 'n foto of logo te onttrek. Laai 'n beeld in PNG-, JPG- of SVG-formaat op, en die instrument sal 'n palet van tot 12 kleure met HEX-kodes genereer.",
       "steps": [
-        { "name": "Upload an image", "text": "Drag a file onto the designated area or select an image from your device. Supported formats are PNG, JPG, and SVG." },
-        { "name": "Wait for analysis", "text": "The tool will automatically analyze the image and extract dominant colors." },
-        { "name": "Copy colors", "text": "Next to each color you will find a copy button - the HEX code is copied to your system clipboard." }
+        { "name": "Laai 'n beeld op", "text": "Sleep 'n lêer na die aangewese area of kies 'n beeld van jou toestel. Ondersteunde formate is PNG, JPG en SVG." },
+        { "name": "Wag vir analise", "text": "Die instrument sal outomaties die beeld analiseer en dominante kleure onttrek." },
+        { "name": "Kopieer kleure", "text": "Langs elke kleur sal jy 'n kopieerknoppie vind - die HEX-kode word na jou stelselknipbord gekopieer." }
       ]
     }
   },
@@ -47,209 +47,212 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Why extract colors from an image?",
-      "html": "<p class=\"mb-4\">Every photo, logo, or graphic contains colors that can serve as a ready-made color palette. The extractor analyzes the image and shows which colors dominate - along with HEX codes and RGB values ready to paste into your project.</p><p class=\"mb-4\">In practice, this means that instead of manually sampling colors in a graphics application (pixel by pixel), you upload one image and get an organized list of up to 12 colors. This is useful when selecting colors for a website, creating consistent social media graphics, or building a visual identity from existing material.</p><p>All analysis happens locally in the browser - the image is not sent to any server.</p>"
+      "title": "Waarom kleure uit 'n beeld onttrek?",
+      "html": "<p class=\"mb-4\">Elke foto, logo of grafika bevat kleure wat as 'n klaargemaakte kleurpalet kan dien. Die onttrekker analiseer die beeld en wys watter kleure domineer - saam met HEX-kodes en RGB-waardes gereed om in jou projek te plak.</p><p class=\"mb-4\">In die praktyk beteken dit dat jy, in plaas daarvan om handmatig kleure in 'n grafiese toepassing te monster (piksel vir piksel), een beeld oplaai en 'n georganiseerde lys van tot 12 kleure kry. Dit is nuttig wanneer jy kleure vir 'n webwerf kies, konsekwente sosiale media-grafika skep, of 'n visuele identiteit uit bestaande materiaal bou.</p><p>Alle analise gebeur plaaslik in die blaaier - die beeld word nie na enige bediener gestuur nie.</p>"
     },
     { "type": "gap", "size": "xs" },
     {
       "type": "sectionSteps",
-      "title": "How to use the image color extractor",
-      "description": "The whole process takes just a few seconds:",
+      "title": "Hoe om die beeldkleur-onttrekker te gebruik",
+      "description": "Die hele proses neem net 'n paar sekondes:",
       "grid": "three",
       "items": [
-        { "title": "1. Upload an image", "description": "Drag a file onto the designated area or select it from your device. Supported formats are PNG, JPG, and SVG." },
-        { "title": "2. Wait for analysis", "description": "The tool will automatically analyze the image and extract up to 12 dominant colors." },
-        { "title": "3. Copy the colors you need", "description": "Next to each color there is a copy button - the HEX or RGB code goes to the clipboard and can be pasted directly into your project." }
+        { "title": "1. Laai 'n beeld op", "description": "Sleep 'n lêer na die aangewese area of kies dit van jou toestel. Ondersteunde formate is PNG, JPG en SVG." },
+        { "title": "2. Wag vir analise", "description": "Die instrument sal outomaties die beeld analiseer en tot 12 dominante kleure onttrek." },
+        {
+          "title": "3. Kopieer die kleure wat jy nodig het",
+          "description": "Langs elke kleur is daar 'n kopieerknoppie - die HEX- of RGB-kode gaan na die knipbord en kan direk in jou projek geplak word."
+        }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "What does an extracted color palette look like?",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Example colors extracted from a nature image</p></div>",
-      "html": "<p class=\"text-mid mb-4\">After uploading an image, the extractor displays a list of dominant colors sorted from most to least prominent. Each color shows its HEX code and RGB value - ready to paste into CSS, Figma, or any graphics application.</p><p class=\"text-mid\">The number of extracted colors depends on the image content. A landscape photo will produce a richer palette (8–12 colors), while a simple two-color logo will yield correspondingly fewer items.</p>"
+      "title": "Hoe lyk 'n onttrekde kleurpalet?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Voorbeeldkleure onttrek uit 'n natuurbeeld</p></div>",
+      "html": "<p class=\"text-mid mb-4\">Na die oplaai van 'n beeld vertoon die onttrekker 'n lys dominante kleure gesorteer van mees na minste prominent. Elke kleur wys sy HEX-kode en RGB-waarde - gereed om in CSS, Figma of enige grafiese toepassing te plak.</p><p class=\"text-mid\">Die aantal onttrekde kleure hang af van die beeldinhoud. 'n Landskapfoto sal 'n ryker palet lewer (8–12 kleure), terwyl 'n eenvoudige tweekleur-logo ooreenstemmend minder items sal lewer.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Which images give the best results in the color extractor?",
-      "description": "The quality of the extracted palette depends on the type of uploaded image:",
+      "title": "Watter beelde gee die beste resultate in die kleur-onttrekker?",
+      "description": "Die kwaliteit van die onttrekde palet hang af van die tipe opgelaaide beeld:",
       "grid": "two",
       "items": [
         {
           "icon": "RiImageLine",
-          "title": "Logos and graphics with a limited palette",
-          "description": "Images with a few clearly separated colors give the most precise results - the extractor accurately identifies each color."
+          "title": "Logo's en grafika met 'n beperkte palet",
+          "description": "Beelde met 'n paar duidelik geskeide kleure gee die mees presiese resultate - die onttrekker identifiseer elke kleur akkuraat."
         },
         {
           "icon": "RiSearchEyeLine",
-          "title": "Photos with a clear subject",
-          "description": "Product, interior, or landscape photos also produce useful palettes, but they contain more shades - including shadow colors and light reflections."
+          "title": "Foto's met 'n duidelike onderwerp",
+          "description": "Produk-, interieur- of landskapfoto's lewer ook nuttige palette, maar hulle bevat meer skakerings - insluitend skadu-kleure en ligrefleksies."
         },
         {
           "icon": "RiEraserLine",
-          "title": "PNG files with transparent backgrounds",
-          "description": "Transparent pixels are automatically skipped during analysis. If you want to extract colors only from the object (e.g., a logo), use a PNG file without a background."
+          "title": "PNG-lêers met deursigtige agtergronde",
+          "description": "Deursigtige piksels word outomaties tydens analise oorgeslaan. As jy kleure slegs uit die objek wil onttrek (bv. 'n logo), gebruik 'n PNG-lêer sonder agtergrond."
         },
         {
           "icon": "RiCropLine",
-          "title": "Images without a large solid-color background",
-          "description": "When the background takes up most of the image area, its color dominates the results. Before uploading, consider cropping the image to the area of interest."
+          "title": "Beelde sonder 'n groot eenkleurige agtergrond",
+          "description": "Wanneer die agtergrond die meeste van die beeldarea beslaan, domineer sy kleur die resultate. Oorweeg om die beeld voor oplaai na die area van belang te sny."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionTimeline",
-      "title": "How does image color extraction work?",
-      "description": "After uploading a file, the tool performs several steps in the background - all analysis happens locally in the browser:",
+      "title": "Hoe werk beeldkleur-onttrekking?",
+      "description": "Na die oplaai van 'n lêer voer die instrument verskeie stappe op die agtergrond uit - alle analise gebeur plaaslik in die blaaier:",
       "items": [
         {
           "icon": "RiZoomInLine",
-          "title": "Image scaling",
-          "description": "The image is resized to about 240 pixels wide. This speeds up analysis even for very large photos, without affecting color detection accuracy."
+          "title": "Beeldskaling",
+          "description": "Die beeld word hergrootte na ongeveer 240 piksels breed. Dit versnel analise selfs vir baie groot foto's, sonder om kleurdeteksie-akkuraatheid te beïnvloed."
         },
         {
           "icon": "RiGroupLine",
-          "title": "Grouping similar colors",
-          "description": "Each pixel is analyzed, and similar shades are grouped together. Two nearly identical blues become one color in the palette."
+          "title": "Groepering van soortgelyke kleure",
+          "description": "Elke piksel word geanaliseer, en soortgelyke skakerings word saam gegroepeer. Twee byna identiese bloue word een kleur in die palet."
         },
         {
           "icon": "RiStarLine",
-          "title": "Selecting dominant colors",
-          "description": "The algorithm picks colors that cover the largest area of the image. The result is a list of up to 12 colors sorted from most to least prominent."
+          "title": "Seleksie van dominante kleure",
+          "description": "Die algoritme kies kleure wat die grootste area van die beeld dek. Die resultaat is 'n lys van tot 12 kleure gesorteer van mees na minste prominent."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Skipping transparent pixels",
-          "description": "In PNG files with transparent backgrounds, those areas are not included in the analysis - the extractor examines only visible colors. The entire process typically takes under a second."
+          "title": "Oorslaan van deursigtige piksels",
+          "description": "In PNG-lêers met deursigtige agtergronde word daardie areas nie in die analise ingesluit nie - die onttrekker ondersoek slegs sigbare kleure. Die hele proses neem tipies minder as 'n sekonde."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Troubleshooting the color extractor",
+      "title": "Probleemoplossing vir die kleur-onttrekker",
       "grid": "two",
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "Extractor returned fewer than 12 colors",
-          "description": "The number of extracted colors depends on the image content. A simple two-color logo will give 2–3 results - this is correct behavior. The tool does not add artificial colors; it only extracts those that actually appear in the image."
+          "title": "Onttrekker het minder as 12 kleure teruggegee",
+          "description": "Die aantal onttrekde kleure hang af van die beeldinhoud. 'n Eenvoudige tweekleur-logo sal 2–3 resultate gee - dit is korrekte gedrag. Die instrument voeg nie kunsmatige kleure by nie; dit onttrek slegs die wat werklik in die beeld voorkom."
         },
         {
           "icon": "RiAlertLine",
-          "title": "Unexpected colors appeared in the palette",
-          "description": "These may be shadow, gradient, or light reflection colors - pixels in those areas have different colors than the object visible at first glance. Using an image with more uniform colors or cropping dark areas will improve results."
+          "title": "Onverwagte kleure het in die palet verskyn",
+          "description": "Dit kan skadu-, gradiënt- of ligrefleksiekleure wees - piksels in daardie areas het ander kleure as die objek wat op die eerste oogopslag sigbaar is. Die gebruik van 'n beeld met meer eenvormige kleure of die sny van donker areas sal resultate verbeter."
         },
         {
           "icon": "RiErrorWarningLine",
-          "title": "Background color dominates the results",
-          "description": "When the background covers more area than the object itself, its color will appear first on the list. Solution: use a PNG file with a transparent background or crop the image so the object takes up more of the frame."
+          "title": "Agtergrondkleur domineer die resultate",
+          "description": "Wanneer die agtergrond meer area as die objek self dek, sal sy kleur eerste op die lys verskyn. Oplossing: gebruik 'n PNG-lêer met 'n deursigtige agtergrond of sny die beeld sodat die objek meer van die raam beslaan."
         },
         {
           "icon": "RiFileWarningLine",
-          "title": "File is not accepted by the extractor",
-          "description": "The tool only supports PNG, JPG, and SVG formats. Files in other formats (GIF, TIFF, HEIC, PDF) require prior conversion."
+          "title": "Lêer word nie deur die onttrekker aanvaar nie",
+          "description": "Die instrument ondersteun slegs PNG-, JPG- en SVG-formate. Lêers in ander formate (GIF, TIFF, HEIC, PDF) vereis voorafomskakeling."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "What makes this image color extractor special?",
+      "title": "Wat maak hierdie beeldkleur-onttrekker spesiaal?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Local analysis - the image never leaves your computer",
-          "description": "All color extraction happens in the browser. The image is not sent to any server, and after closing the page, data is removed from memory."
+          "title": "Plaaslike analise - die beeld verlaat nooit jou rekenaar nie",
+          "description": "Alle kleuronttrekking gebeur in die blaaier. Die beeld word nie na enige bediener gestuur nie, en na die sluiting van die bladsy word data uit die geheue verwyder."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Up to 12 dominant colors from one image",
-          "description": "The tool extracts up to 12 colors sorted from most prominent - enough to build a complete project color palette."
+          "title": "Tot 12 dominante kleure uit een beeld",
+          "description": "Die instrument onttrek tot 12 kleure gesorteer van mees prominent - genoeg om 'n volledige projekkleurpalet te bou."
         },
         {
           "icon": "RiFileImageLine",
-          "title": "Three popular image formats",
-          "description": "Supported formats are PNG, JPG, and SVG. PNG files with transparent backgrounds give the best results because transparent pixels are automatically skipped."
+          "title": "Drie gewilde beeldformate",
+          "description": "Ondersteunde formate is PNG, JPG en SVG. PNG-lêers met deursigtige agtergronde gee die beste resultate omdat deursigtige piksels outomaties oorgeslaan word."
         },
         {
           "icon": "RiGlobalLine",
-          "title": "Ready HEX and RGB codes to paste",
-          "description": "Each extracted color comes with its HEX code (e.g., #2C5F2D) and RGB value. The code can be copied to the clipboard and pasted directly into CSS, Figma, or Photoshop."
+          "title": "Klaargemaakte HEX- en RGB-kodes om te plak",
+          "description": "Elke onttrekde kleur kom met sy HEX-kode (bv. #2C5F2D) en RGB-waarde. Die kode kan na die knipbord gekopieer en direk in CSS, Figma of Photoshop geplak word."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Where to use colors extracted from an image",
+      "title": "Waar om kleure onttrek uit 'n beeld te gebruik",
       "grid": "two",
       "items": [
         {
           "icon": "RiBrushLine",
-          "title": "Building visual identity",
-          "description": "Upload a photo that captures the mood of the brand - a landscape, a restaurant interior, a product photo - and extract colors as a starting point for a branding palette."
+          "title": "Bou van visuele identiteit",
+          "description": "Laai 'n foto op wat die stemming van die handelsmerk vasvang - 'n landskap, 'n restaurant-interieur, 'n produkfoto - en onttrek kleure as 'n beginpunt vir 'n handelsmerkpalet."
         },
         {
           "icon": "RiLayoutMasonryLine",
-          "title": "Social media graphics",
-          "description": "Extract colors from a product photo and use them as backgrounds or accents in graphics. Posts based on colors from the same source look consistent on the profile."
+          "title": "Sosiale media-grafika",
+          "description": "Onttrek kleure uit 'n produkfoto en gebruik dit as agtergronde of aksente in grafika. Plasings gebaseer op kleure uit dieselfde bron lyk konsekwent op die profiel."
         },
         {
           "icon": "RiPaintBrushLine",
-          "title": "Matching colors to a website",
-          "description": "Extract colors from the logo and use them as the website color palette - primary color, accent color, background shades. HEX codes paste straight into CSS."
+          "title": "Kleure by 'n webwerf pas",
+          "description": "Onttrek kleure uit die logo en gebruik dit as die werfkleurpalet - primêre kleur, aksentkleur, agtergrondskakerings. HEX-kodes plak reguit in CSS."
         },
         {
           "icon": "RiSearchEyeLine",
-          "title": "Expanding an existing palette",
-          "description": "An extracted base color can be used in the <a href=\"/af/gereedskap/color-palette-generator\">color palette generator</a> to create a full set of harmonious colors based on color theory."
+          "title": "Uitbreiding van 'n bestaande palet",
+          "description": "'n Onttrekde basiskleur kan in die <a href=\"/af/gereedskap/color-palette-generator\">kleurpaletgenerator</a> gebruik word om 'n volledige stel harmoniese kleure gebaseer op kleurteorie te skep."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the image color extractor",
+      "title": "Gereeld gevraagde vrae oor die beeldkleur-onttrekker",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Does the image color extractor require registration?",
-          "answer": "No. The tool is completely free and requires no login or registration. The image is analyzed locally in the browser - it is not sent to any server. After closing the page, all data is removed.",
-          "answerSchemaText": "No. The tool is free and does not require registration. The image is analyzed locally in the browser."
+          "question": "Vereis die beeldkleur-onttrekker registrasie?",
+          "answer": "Nee. Die instrument is heeltemal gratis en vereis geen aanmelding of registrasie nie. Die beeld word plaaslik in die blaaier geanaliseer - dit word nie na enige bediener gestuur nie. Na die sluiting van die bladsy word alle data verwyder.",
+          "answerSchemaText": "Nee. Die instrument is gratis en vereis nie registrasie nie. Die beeld word plaaslik in die blaaier geanaliseer."
         },
         {
-          "question": "How is the color extractor different from a palette generator?",
-          "answer": "The extractor pulls colors from an existing image - it analyzes a photo and shows which colors dominate in it. A color palette generator works the other way: you provide one base color, and the tool creates harmonious sets based on color theory. Both tools complement each other - you can extract a color from an image and then use it as a base in the palette generator.",
-          "answerSchemaText": "The extractor pulls colors from an image. The generator creates palettes from a base color. Both tools complement each other."
+          "question": "Hoe verskil die kleur-onttrekker van 'n paletgenerator?",
+          "answer": "Die onttrekker trek kleure uit 'n bestaande beeld - dit analiseer 'n foto en wys watter kleure daarin domineer. 'n Kleurpaletgenerator werk andersom: jy verskaf een basiskleur, en die instrument skep harmoniese stelle gebaseer op kleurteorie. Beide instrumente vul mekaar aan - jy kan 'n kleur uit 'n beeld onttrek en dit dan as basis in die paletgenerator gebruik.",
+          "answerSchemaText": "Die onttrekker trek kleure uit 'n beeld. Die generator skep palette uit 'n basiskleur. Beide instrumente vul mekaar aan."
         },
         {
-          "question": "How many colors does the extractor pull from one image?",
-          "answer": "The tool extracts up to 12 dominant colors. The exact number depends on the image content - if a graphic has only two colors (e.g., a simple logo), the result will contain fewer items. Colors are sorted from most to least prominent.",
-          "answerSchemaText": "Up to 12 dominant colors, sorted from the most to least prominent."
+          "question": "Hoeveel kleure onttrek die onttrekker uit een beeld?",
+          "answer": "Die instrument onttrek tot 12 dominante kleure. Die presiese aantal hang af van die beeldinhoud - as 'n grafika slegs twee kleure het (bv. 'n eenvoudige logo), sal die resultaat minder items bevat. Kleure word gesorteer van mees na minste prominent.",
+          "answerSchemaText": "Tot 12 dominante kleure, gesorteer van mees na minste prominent."
         },
         {
-          "question": "What image formats does the color extractor support?",
-          "answer": "Supported formats are PNG, JPG (JPEG), and SVG. PNG files with transparent backgrounds give better results because transparent pixels are skipped during analysis - the tool focuses on the colors of the object itself.",
-          "answerSchemaText": "PNG, JPG, and SVG. PNG with transparent background gives the best results."
+          "question": "Watter beeldformate ondersteun die kleur-onttrekker?",
+          "answer": "Ondersteunde formate is PNG, JPG (JPEG) en SVG. PNG-lêers met deursigtige agtergronde gee beter resultate omdat deursigtige piksels tydens analise oorgeslaan word - die instrument fokus op die kleure van die objek self.",
+          "answerSchemaText": "PNG, JPG en SVG. PNG met deursigtige agtergrond gee die beste resultate."
         },
         {
-          "question": "In what format do I get the extracted color codes?",
-          "answer": "Each color is displayed with its HEX code (e.g., #2C5F2D) and RGB value (e.g., rgb(44, 95, 45)). The code can be copied to the clipboard and pasted directly into CSS, Figma, Photoshop, or any other graphics application.",
-          "answerSchemaText": "HEX (e.g., #2C5F2D) and RGB (e.g., rgb(44, 95, 45)). Copyable to clipboard."
+          "question": "In watter formaat kry ek die onttrekde kleurkodes?",
+          "answer": "Elke kleur word vertoon met sy HEX-kode (bv. #2C5F2D) en RGB-waarde (bv. rgb(44, 95, 45)). Die kode kan na die knipbord gekopieer en direk in CSS, Figma, Photoshop of enige ander grafiese toepassing geplak word.",
+          "answerSchemaText": "HEX (bv. #2C5F2D) en RGB (bv. rgb(44, 95, 45)). Kopieerbaar na knipbord."
         },
         {
-          "question": "Can I copy all palette colors at once?",
-          "answer": "Currently the tool allows copying colors individually - next to each color there is a button that copies the HEX code to the clipboard. The copied code can be immediately pasted into Figma, Photoshop, CSS, or any other application.",
-          "answerSchemaText": "Colors are copied individually via the copy button next to each color."
+          "question": "Kan ek alle paletkleure gelyktydig kopieer?",
+          "answer": "Tans laat die instrument toe om kleure individueel te kopieer - langs elke kleur is daar 'n knoppie wat die HEX-kode na die knipbord kopieer. Die gekopieerde kode kan onmiddellik in Figma, Photoshop, CSS of enige ander toepassing geplak word.",
+          "answerSchemaText": "Kleure word individueel gekopieer via die kopieerknoppie langs elke kleur."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
+    { "type": "toolsCarousel", "title": "Verken ander gereedskap" },
     { "type": "gap", "size": "sm" }
   ]
 }

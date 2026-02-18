@@ -2,68 +2,71 @@
   "toolKey": "emailSignature",
   "locale": "af",
   "metadata": {
-    "title": "Free Email Signature Generator – HTML for Gmail & Outlook",
-    "description": "Create a professional HTML email signature without coding. Add contact details, logo, social media links and copy to Gmail or Outlook. No signup, no limits.",
+    "title": "Gratis E-poshandtekening-generator – HTML vir Gmail & Outlook",
+    "description": "Skep 'n professionele HTML-e-poshandtekening sonder kodering. Voeg kontakbesonderhede, logo, sosiale media-skakels by en kopieer na Gmail of Outlook. Geen registrasie, geen beperkings nie.",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
     "path": "/af/gereedskap/gratis-e-pos-handtekening-generator"
   },
   "hero": {
-    "title": "Create a professional HTML email signature",
-    "description": "Build a professional email signature in minutes. Enter your details, choose colors, and copy the ready HTML code into Gmail, Outlook, or any email client.",
+    "title": "Skep 'n professionele HTML-e-poshandtekening",
+    "description": "Bou 'n professionele e-poshandtekening binne minute. Voer jou besonderhede in, kies kleure en kopieer die klaargemaakte HTML-kode in Gmail, Outlook of enige e-poskliënt.",
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/af/gereedskap", "label": "Tools" },
-    "third": { "href": "/af/gereedskap/gratis-e-pos-handtekening-generator", "label": "Email signature generator" }
+    "second": { "href": "/af/gereedskap", "label": "Gereedskap" },
+    "third": { "href": "/af/gereedskap/gratis-e-pos-handtekening-generator", "label": "E-poshandtekening-generator" }
   },
   "schemas": {
     "software": {
-      "name": "Free email signature generator online",
-      "alternateName": ["HTML email signature generator", "Email signature creator", "Email footer generator online"],
+      "name": "Gratis e-poshandtekening-generator",
+      "alternateName": ["HTML-e-poshandtekening-generator", "E-poshandtekening-skepper", "E-posvoetskrif-generator"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Free HTML email signature generator. Add contact details, CTA link, and social media profiles, then copy the ready code into Gmail, Outlook, and other email clients.",
+      "description": "Gratis HTML-e-poshandtekening-generator. Voeg kontakbesonderhede, CTA-skakel en sosiale media-profiele by, kopieer dan die klaargemaakte kode in Gmail, Outlook en ander e-poskliënte.",
       "featureList": [
-        "Contact details (name, title, company)",
-        "Phone, email, and website URL",
-        "Logo or profile picture with shape and size options",
-        "Social media icons (12 platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
-        "Customizable colors (text, accent, background)",
-        "Individual text style for each signature element",
-        "CTA button with custom text and link",
-        "Separator line styling (style, thickness, color)",
-        "Live signature preview with background switching (light, dark, checkerboard)",
-        "HTML source code preview in modal",
-        "Copy HTML code to clipboard",
-        "Download signature as HTML file",
-        "Export and import configuration as JSON file",
-        "Compatible with Gmail, Outlook, Apple Mail",
-        "Free tool, no login required"
+        "Kontakbesonderhede (naam, titel, maatskappy)",
+        "Foon, e-pos en webwerf-URL",
+        "Logo of profielfoto met vorm- en grootte-opsies",
+        "Sosiale media-ikone (12 platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
+        "Aanpasbare kleure (teks, aksent, agtergrond)",
+        "Individuele teksstyl vir elke handtekeningelement",
+        "CTA-knoppie met pasgemaakte teks en skakel",
+        "Skeidingslyn-styl (styl, dikte, kleur)",
+        "Regstreekse handtekeningvoorskou met agtergrondwisseling (lig, donker, dambord)",
+        "HTML-bronkode-voorskou in modaal",
+        "Kopieer HTML-kode na knipbord",
+        "Laai handtekening af as HTML-lêer",
+        "Voer konfigurasie uit en in as JSON-lêer",
+        "Versoenbaar met Gmail, Outlook, Apple Mail",
+        "Gratis instrument, geen aanmelding nodig nie"
       ]
     },
     "howTo": {
-      "name": "How to use the email signature generator",
-      "description": "How to create a professional HTML email signature using the free Arteon generator.",
+      "name": "Hoe om die e-poshandtekening-generator te gebruik",
+      "description": "Hoe om 'n professionele HTML-e-poshandtekening te skep met die gratis Arteon-generator.",
       "totalTime": "PT5M",
       "steps": [
-        { "name": "Choose a signature layout", "text": "Select one of eight available layouts: Standard, Top bar, Labels left, Centered, Compact, Two columns, Minimalist, or Bottom bar." },
         {
-          "name": "Fill in contact details",
-          "text": "In the Details tab, enter your name, title, company, email, phone, and website URL. Optionally add an avatar or logo - after entering the image URL, you can choose shape (round, rounded, square) and size (40, 56, or 72 px)."
-        },
-        { "name": "Add CTA buttons", "text": "In the Buttons tab, add text and URL for the main button. Optionally add a second outline-style button and choose button rounding." },
-        {
-          "name": "Add social media links",
-          "text": "In the Social Media tab, paste URLs to your profiles. Supported platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest."
-        },
-        { "name": "Customize appearance", "text": "In the Appearance tab, choose a color theme, font, and text size. In the Text Style tab, change colors and sizes of individual elements." },
-        {
-          "name": "Add disclaimer and configure separator",
-          "text": "In the Disclaimer / Legal tab, enter legal text and configure the separator line - choose style (solid, dashed, dotted), thickness (1–3 px), and color."
+          "name": "Kies 'n handtekeninguitleg",
+          "text": "Kies een van agt beskikbare uitlegte: Standaard, Boonste balk, Etikette links, Gesentreer, Kompak, Twee kolomme, Minimalisties of Onderste balk."
         },
         {
-          "name": "Preview and copy signature",
-          "text": "The signature preview is available on light, dark, or checkerboard background. The Copy signature (Gmail / Outlook) button copies the ready code to clipboard. Also available: Copy HTML code, Download as HTML, View HTML code, and export configuration as JSON file."
+          "name": "Vul kontakbesonderhede in",
+          "text": "In die Besonderhede-oortjie, voer jou naam, titel, maatskappy, e-pos, foon en webwerf-URL in. Voeg opsioneel 'n avatar of logo by - na die invoer van die prent-URL kan jy vorm (rond, afgerond, vierkantig) en grootte (40, 56 of 72 px) kies."
+        },
+        { "name": "Voeg CTA-knoppies by", "text": "In die Knoppies-oortjie, voeg teks en URL vir die hoofknoppie by. Voeg opsioneel 'n tweede omlyn-styl knoppie by en kies knoppie-afronding." },
+        {
+          "name": "Voeg sosiale media-skakels by",
+          "text": "In die Sosiale Media-oortjie, plak URL's na jou profiele. Ondersteunde platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram en Pinterest."
+        },
+        { "name": "Pas voorkoms aan", "text": "In die Voorkoms-oortjie, kies 'n kleurtema, lettertipe en teksgrootte. In die Teksstyl-oortjie, verander kleure en groottes van individuele elemente." },
+        {
+          "name": "Voeg vrywaring by en stel skeier op",
+          "text": "In die Vrywaring / Regsgeldig-oortjie, voer regsteks in en stel die skeidingslyn op - kies styl (soliede, gestreep, gestippel), dikte (1–3 px) en kleur."
+        },
+        {
+          "name": "Voorskou en kopieer handtekening",
+          "text": "Die handtekeningvoorskou is beskikbaar op ligte, donker of dambord-agtergrond. Die Kopieer handtekening (Gmail / Outlook)-knoppie kopieer die klaargemaakte kode na knipbord. Ook beskikbaar: Kopieer HTML-kode, Laai af as HTML, Bekyk HTML-kode en voer konfigurasie uit as JSON-lêer."
         }
       ]
     }
@@ -72,191 +75,214 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Why have a professional email signature?",
-      "html": "<p class=\"text-mid\">An email signature (also called an email footer) is a block of information at the end of every sent message. It contains contact details, job title, company name, and often a link to the website or meeting calendar.</p><p class=\"text-mid mt-3\">The recipient does not have to search for the phone number in previous messages - all details are readily available. A professional email signature also shows that you pay attention to details and maintain a consistent company image in business correspondence.</p>"
+      "title": "Waarom 'n professionele e-poshandtekening hê?",
+      "html": "<p class=\"text-mid\">'n E-poshandtekening (ook 'n e-posvoetskrif genoem) is 'n blok inligting aan die einde van elke gestuurde boodskap. Dit bevat kontakbesonderhede, postitel, maatskappynaam en dikwels 'n skakel na die webwerf of vergaderingskalender.</p><p class=\"text-mid mt-3\">Die ontvanger hoef nie in vorige boodskappe na die foonnommer te soek nie - alle besonderhede is geredelik beskikbaar. 'n Professionele e-poshandtekening wys ook dat jy aandag aan besonderhede gee en 'n konsekwente maatskappybeeld in besigheidskorrespondensie handhaaf.</p>"
     },
     { "type": "gap", "size": "sm" },
     {
       "type": "sectionSteps",
-      "title": "How to use the email signature generator",
-      "description": "Creating a professional email signature takes just a few minutes:",
+      "title": "Hoe om die e-poshandtekening-generator te gebruik",
+      "description": "Om 'n professionele e-poshandtekening te skep, neem net 'n paar minute:",
       "grid": "three",
       "items": [
-        { "title": "1. Enter details", "description": "Fill in your name, title, company, and contact details." },
-        { "title": "2. Customize appearance", "description": "Choose a layout, colors, add a logo, and social media links." },
-        { "title": "3. Copy the code", "description": "The Copy signature button copies the ready code to clipboard. Just paste it in Gmail, Outlook, or another email client." }
+        { "title": "1. Voer besonderhede in", "description": "Vul jou naam, titel, maatskappy en kontakbesonderhede in." },
+        { "title": "2. Pas voorkoms aan", "description": "Kies 'n uitleg, kleure, voeg 'n logo en sosiale media-skakels by." },
+        { "title": "3. Kopieer die kode", "description": "Die Kopieer handtekening-knoppie kopieer die klaargemaakte kode na knipbord. Plak dit net in Gmail, Outlook of 'n ander e-poskliënt." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to fill in signature details",
-      "html": "<p class=\"text-mid\">The <strong>Details</strong> tab contains all the fields you can fill in. Only two are required: name and email address. The remaining fields are optional and will appear in the signature only when filled in.</p><h3 class=\"h5 mt-6 mb-3\">Fields in the Details tab</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Line above name</strong> - additional text displayed above the name. You can enter the company name, tagline, or slogan.</li><li><strong>Avatar / logo (image URL)</strong> - URL to a profile photo or company logo. The image should be square (min. 120×120 px) and publicly accessible online. After pasting the URL, additional options appear: <strong>Avatar shape</strong> (round, rounded, or square) and <strong>Avatar size</strong> (small - 40 px, medium - 56 px, large - 72 px).</li><li><strong>Full name</strong> - required field. Enter your full name.</li><li><strong>Name tag</strong> - short text next to the name, e.g., pronouns or abbreviated title.</li><li><strong>Job title</strong> - your role in the company, e.g., Sales Manager, Marketing Specialist.</li><li><strong>Company name</strong> - the name of the organization you represent.</li><li><strong>Additional line</strong> - a short description of what you do or what you offer.</li><li><strong>Email</strong> - required field. Enter your business email address.</li><li><strong>Phone</strong> - contact number. Any format, e.g., +1 555 000 000.</li><li><strong>Website</strong> - full URL of your website, starting with https://.</li><li><strong>Address</strong> - physical company address (street, city, postal code).</li><li><strong>Formal details</strong> - tax ID, license number, or other details required in your industry.</li></ul>"
+      "title": "Hoe om handtekeningbesonderhede in te vul",
+      "html": "<p class=\"text-mid\">Die <strong>Besonderhede</strong>-oortjie bevat al die velde wat jy kan invul. Slegs twee is verpligtend: naam en e-posadres. Die oorblywende velde is opsioneel en sal slegs in die handtekening verskyn wanneer dit ingevul is.</p><h3 class=\"h5 mt-6 mb-3\">Velde in die Besonderhede-oortjie</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Lyn bo naam</strong> - addisionele teks wat bo die naam vertoon word. Jy kan die maatskappynaam, slagspreuk of leuse invoer.</li><li><strong>Avatar / logo (prent-URL)</strong> - URL na 'n profielfoto of maatskappylogo. Die prent moet vierkantig wees (min. 120×120 px) en publiek toeganklik aanlyn. Na die plak van die URL verskyn addisionele opsies: <strong>Avatar-vorm</strong> (rond, afgerond of vierkantig) en <strong>Avatar-grootte</strong> (klein - 40 px, medium - 56 px, groot - 72 px).</li><li><strong>Volle naam</strong> - verpligte veld. Voer jou volle naam in.</li><li><strong>Naam-etiket</strong> - kort teks langs die naam, bv. voornaamwoorde of verkorte titel.</li><li><strong>Postitel</strong> - jou rol in die maatskappy, bv. Verkoopsbestuurder, Bemarkingspesialis.</li><li><strong>Maatskappynaam</strong> - die naam van die organisasie wat jy verteenwoordig.</li><li><strong>Addisionele lyn</strong> - 'n kort beskrywing van wat jy doen of wat jy aanbied.</li><li><strong>E-pos</strong> - verpligte veld. Voer jou besigheids-e-posadres in.</li><li><strong>Foon</strong> - kontaknommer. Enige formaat, bv. +27 12 345 6789.</li><li><strong>Webwerf</strong> - volle URL van jou webwerf, begin met https://.</li><li><strong>Adres</strong> - fisiese maatskappyadres (straat, stad, poskode).</li><li><strong>Formele besonderhede</strong> - belasting-ID, lisensienommer of ander besonderhede wat in jou bedryf vereis word.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "Signature layouts - which to choose?",
-      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Signature layout</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">John Smith</p><p class=\"text-mid text-sm\">Web Developer</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">john@example.com</p><p class=\"text-mid\">+1 555 000 000</p></div></div></div>",
-      "html": "<p class=\"text-mid\">The generator offers eight ready-made layouts. Each presents the same information in a different way.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> - classic vertical layout, fits most use cases.</li><li><strong>Top bar</strong> - a horizontal bar separates the signature from the content.</li><li><strong>Labels left</strong> - two columns: labels and values.</li><li><strong>Centered</strong> - formal appearance, content centered.</li><li><strong>Compact</strong> - everything in one line, minimal height.</li><li><strong>Two columns</strong> - details on the left, contact info on the right.</li><li><strong>Minimalist</strong> - only the most important information.</li><li><strong>Bottom bar</strong> - colored bar with contact at the bottom of the signature.</li></ul>"
+      "title": "Handtekeninguitlegings - watter een om te kies?",
+      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Handtekeninguitleg</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standaard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Aksentbalk</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Boonste balk</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Etikette links</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Gesentreer</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">Jan Smit</p><p class=\"text-mid text-sm\">Webontwikkelaar</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">jan@voorbeeld.com</p><p class=\"text-mid\">+27 12 345 6789</p></div></div></div>",
+      "html": "<p class=\"text-mid\">Die generator bied agt klaargemaakte uitlegte. Elkeen vertoon dieselfde inligting op 'n ander manier.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standaard</strong> - klassieke vertikale uitleg, pas by die meeste gebruiksgevalle.</li><li><strong>Boonste balk</strong> - 'n horisontale balk skei die handtekening van die inhoud.</li><li><strong>Etikette links</strong> - twee kolomme: etikette en waardes.</li><li><strong>Gesentreer</strong> - formele voorkoms, inhoud gesentreer.</li><li><strong>Kompak</strong> - alles in een lyn, minimale hoogte.</li><li><strong>Twee kolomme</strong> - besonderhede links, kontakinligting regs.</li><li><strong>Minimalisties</strong> - slegs die belangrikste inligting.</li><li><strong>Onderste balk</strong> - gekleurde balk met kontak onderaan die handtekening.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to add CTA buttons",
-      "html": "<p class=\"text-mid\">A CTA button (call-to-action) is a clickable element that directs the recipient to a chosen page. It can be a link to a meeting calendar, contact form, or offer. The generator allows adding two CTA buttons.</p><h3 class=\"h5 mt-6 mb-3\">Main button</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Open the <strong>Buttons</strong> tab in the editor.</li><li>In the <strong>Main button</strong> section, enter the text the recipient will see, e.g., Schedule a free consultation.</li><li>In the <strong>CTA link</strong> field, paste the full URL. The address must start with https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Secondary button</h3><p class=\"text-mid\">You can add a second CTA button in outline style (transparent background with border). Fill in the fields in the <strong>Secondary button</strong> section the same way as for the main button.</p><h3 class=\"h5 mt-6 mb-3\">Button rounding</h3><p class=\"text-mid\">At the bottom of the Buttons tab you will find the <strong>Button rounding</strong> option. Three variants are available: None (sharp corners), Slight (slightly rounded), or Full (oval button).</p><p class=\"text-mid mt-4\">If you leave both fields empty, the button will not appear in the signature. If you fill in only one field, the button will also not be visible - both text and link are needed.</p>"
+      "title": "Hoe om CTA-knoppies by te voeg",
+      "html": "<p class=\"text-mid\">'n CTA-knoppie (oproep-tot-aksie) is 'n klikbare element wat die ontvanger na 'n gekose bladsy rig. Dit kan 'n skakel na 'n vergaderingskalender, kontakvorm of aanbod wees. Die generator laat toe om twee CTA-knoppies by te voeg.</p><h3 class=\"h5 mt-6 mb-3\">Hoofknoppie</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Maak die <strong>Knoppies</strong>-oortjie in die redigeerder oop.</li><li>In die <strong>Hoofknoppie</strong>-afdeling, voer die teks in wat die ontvanger sal sien, bv. Skeduleer 'n gratis konsultasie.</li><li>In die <strong>CTA-skakel</strong>-veld, plak die volle URL. Die adres moet met https:// begin.</li></ol><h3 class=\"h5 mt-6 mb-3\">Sekondêre knoppie</h3><p class=\"text-mid\">Jy kan 'n tweede CTA-knoppie in omlyn-styl byvoeg (deursigtige agtergrond met rand). Vul die velde in die <strong>Sekondêre knoppie</strong>-afdeling op dieselfde manier as vir die hoofknoppie in.</p><h3 class=\"h5 mt-6 mb-3\">Knoppie-afronding</h3><p class=\"text-mid\">Onderaan die Knoppies-oortjie sal jy die <strong>Knoppie-afronding</strong>-opsie vind. Drie variante is beskikbaar: Geen (skerp hoeke), Effens (effens afgerond) of Vol (ovaal knoppie).</p><p class=\"text-mid mt-4\">As jy albei velde leeg laat, sal die knoppie nie in die handtekening verskyn nie. As jy slegs een veld invul, sal die knoppie ook nie sigbaar wees nie - beide teks en skakel word benodig.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to add social media links",
-      "html": "<p class=\"text-mid\">In the <strong>Social Media</strong> tab you can add links to your profiles. The generator supports twelve platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (formerly Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">How to do it</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Open the <strong>Social Media</strong> tab in the editor.</li><li>Next to each platform you will find a URL field. Paste the full link to your profile, e.g., https://www.linkedin.com/in/yourprofile.</li><li>Fill in only the fields you need. Empty fields will not appear in the signature.</li></ol><h3 class=\"h5 mt-6 mb-3\">Social media icons</h3><p class=\"text-mid\">At the bottom of the Social Media tab you will find the <strong>Show icons next to service names</strong> option. When enabled, links will display as colored SVG icons instead of just names.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Icon size</strong> - options: Small (16 px), Medium (20 px), or Large (24 px).</li><li><strong>Icon color</strong> - Platform colors (default colors for each platform), Accent color (uniform accent color), or Text color.</li></ul>"
+      "title": "Hoe om sosiale media-skakels by te voeg",
+      "html": "<p class=\"text-mid\">In die <strong>Sosiale Media</strong>-oortjie kan jy skakels na jou profiele byvoeg. Die generator ondersteun twaalf platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (voorheen Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram en Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Hoe om dit te doen</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Maak die <strong>Sosiale Media</strong>-oortjie in die redigeerder oop.</li><li>Langs elke platform sal jy 'n URL-veld vind. Plak die volle skakel na jou profiel, bv. https://www.linkedin.com/in/jouprofiel.</li><li>Vul slegs die velde in wat jy nodig het. Leë velde sal nie in die handtekening verskyn nie.</li></ol><h3 class=\"h5 mt-6 mb-3\">Sosiale media-ikone</h3><p class=\"text-mid\">Onderaan die Sosiale Media-oortjie sal jy die <strong>Wys ikone langs diensname</strong>-opsie vind. Wanneer geaktiveer, sal skakels as gekleurde SVG-ikone vertoon word in plaas van net name.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Ikoongrootte</strong> - opsies: Klein (16 px), Medium (20 px) of Groot (24 px).</li><li><strong>Ikoonkleur</strong> - Platformkleure (verstekkleure vir elke platform), Aksentkleur (eenvormige aksentkleur) of Tekskleur.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Appearance customization",
-      "html": "<p class=\"text-mid\">In the <strong>Appearance</strong> tab you can customize colors, font, and other visual elements of the signature.</p><h3 class=\"h5 mt-6 mb-3\">Color themes</h3><p class=\"text-mid\">At the top of the tab you will find five ready-made themes: Dark, Blue, Purple, Green, and Gray. Clicking a theme automatically sets the accent color and text color. This is the quickest way to achieve a consistent signature look.</p><h3 class=\"h5 mt-6 mb-3\">Colors</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Accent color</strong> - used in the side/top bar, CTA button, and links. You can choose any color from the palette.</li><li><strong>Text color</strong> - color of all text in the signature (name, contact details, disclaimer).</li><li><strong>Background color</strong> - background color of the entire signature. White by default, but you can change it.</li></ul><h3 class=\"h5 mt-6 mb-3\">Font and size</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Font</strong> - options: Arial, Verdana, Tahoma, Trebuchet MS, and Georgia. All are email-safe and will display correctly for the recipient.</li><li><strong>Text size</strong> - three options: Small (12 px), Standard (14 px), and Larger (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Additional settings</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Signature border</strong> - you can add a border to the signature by selecting any combination of sides (left, right, top, bottom). Selecting all sides automatically sets a full border. The border uses the accent color.</li></ul>"
+      "title": "Voorkoms-aanpassing",
+      "html": "<p class=\"text-mid\">In die <strong>Voorkoms</strong>-oortjie kan jy kleure, lettertipe en ander visuele elemente van die handtekening aanpas.</p><h3 class=\"h5 mt-6 mb-3\">Kleurtemas</h3><p class=\"text-mid\">Bo-aan die oortjie sal jy vyf klaargemaakte temas vind: Donker, Blou, Pers, Groen en Grys. Deur op 'n tema te klik, stel dit outomaties die aksentkleur en tekskleur in. Dit is die vinnigste manier om 'n konsekwente handtekeningvoorkoms te bereik.</p><h3 class=\"h5 mt-6 mb-3\">Kleure</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Aksentkleur</strong> - gebruik in die sy-/boonste balk, CTA-knoppie en skakels. Jy kan enige kleur uit die palet kies.</li><li><strong>Tekskleur</strong> - kleur van alle teks in die handtekening (naam, kontakbesonderhede, vrywaring).</li><li><strong>Agtergrondkleur</strong> - agtergrondkleur van die hele handtekening. Wit by verstek, maar jy kan dit verander.</li></ul><h3 class=\"h5 mt-6 mb-3\">Lettertipe en grootte</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Lettertipe</strong> - opsies: Arial, Verdana, Tahoma, Trebuchet MS en Georgia. Almal is e-posveilig en sal korrek by die ontvanger vertoon.</li><li><strong>Teksgrootte</strong> - drie opsies: Klein (12 px), Standaard (14 px) en Groter (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Addisionele instellings</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Handtekeningrand</strong> - jy kan 'n rand by die handtekening voeg deur enige kombinasie van kante te kies (links, regs, bo, onder). Deur alle kante te kies, stel dit outomaties 'n volle rand in. Die rand gebruik die aksentkleur.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Text style - colors and sizes of individual elements",
-      "html": "<p class=\"text-mid\">In the <strong>Text Style</strong> tab you can individually customize the color and font size for each text element in the signature.</p><h3 class=\"h5 mt-6 mb-3\">Available elements</h3><p class=\"text-mid\">Only elements that currently have content in the signature are visible. For each element you can set:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Name</strong> - displayed in accent color by default.</li><li><strong>Job title</strong> - role in the company.</li><li><strong>Company</strong> - organization name.</li><li><strong>Contact details</strong> - email, phone, website (labels).</li><li><strong>Social media</strong> - profile links.</li><li><strong>Legal disclaimer</strong> - legal text at the bottom of the signature.</li></ul><h3 class=\"h5 mt-6 mb-3\">How to change color</h3><p class=\"text-mid\">Next to each element you will find a row of color options. Click a color square to select it. You can also add a custom color by clicking the colored square with a plus - choose a color and click Save. Custom colors (up to 8) are shared between all elements.</p><p class=\"text-mid mt-3\">The reset icon button restores the default color of the element.</p><h3 class=\"h5 mt-6 mb-3\">How to change size</h3><p class=\"text-mid\">In the second row you will find a size control with - and + buttons. The value shows the offset relative to the base font size (set in the Appearance tab). Range: from -4 to +4 pixels.</p>"
+      "title": "Teksstyl - kleure en groottes van individuele elemente",
+      "html": "<p class=\"text-mid\">In die <strong>Teksstyl</strong>-oortjie kan jy die kleur en lettergrootte vir elke tekselement in die handtekening individueel aanpas.</p><h3 class=\"h5 mt-6 mb-3\">Beskikbare elemente</h3><p class=\"text-mid\">Slegs elemente wat tans inhoud in die handtekening het, is sigbaar. Vir elke element kan jy stel:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Naam</strong> - vertoon by verstek in aksentkleur.</li><li><strong>Postitel</strong> - rol in die maatskappy.</li><li><strong>Maatskappy</strong> - organisasienaam.</li><li><strong>Kontakbesonderhede</strong> - e-pos, foon, webwerf (etikette).</li><li><strong>Sosiale media</strong> - profielskakels.</li><li><strong>Regsvrywaring</strong> - regsteks onderaan die handtekening.</li></ul><h3 class=\"h5 mt-6 mb-3\">Hoe om kleur te verander</h3><p class=\"text-mid\">Langs elke element sal jy 'n ry kleuropsies vind. Klik op 'n kleurvierkant om dit te kies. Jy kan ook 'n pasgemaakte kleur byvoeg deur op die gekleurde vierkant met 'n plus te klik - kies 'n kleur en klik Stoor. Pasgemaakte kleure (tot 8) word tussen alle elemente gedeel.</p><p class=\"text-mid mt-3\">Die herstel-ikoonknoppie herstel die verstekkleur van die element.</p><h3 class=\"h5 mt-6 mb-3\">Hoe om grootte te verander</h3><p class=\"text-mid\">In die tweede ry sal jy 'n groottebeheer met - en + knoppies vind. Die waarde wys die afwyking relatief tot die basislettergrootte (gestel in die Voorkoms-oortjie). Reikwydte: van -4 tot +4 piksels.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Spacing between elements",
-      "html": "<p class=\"text-mid\">In the <strong>Spacing</strong> tab you can precisely control the distances between individual signature elements.</p><h3 class=\"h5 mt-6 mb-3\">Inner signature padding</h3><p class=\"text-mid\">At the top of the tab you will find the inner padding option - the distance between the signature content and its edges. Three values are available: 8 px (small), 16 px (medium), and 24 px (large).</p><h3 class=\"h5 mt-6 mb-3\">Spacing between elements</h3><p class=\"text-mid\">Below the padding you will find controls for individual signature elements. Each control has + and - buttons to increase or decrease the spacing. Only options for elements currently in the signature are visible.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>After name</strong> - spacing below the name line.</li><li><strong>After title / company</strong> - spacing below the title and company name line.</li><li><strong>After additional line</strong> - spacing below the description (if filled in).</li><li><strong>After contact details</strong> - spacing below email, phone, and website.</li><li><strong>After social media</strong> - spacing below profile links.</li><li><strong>After CTA button</strong> - spacing below the button (if enabled).</li><li><strong>Before disclaimer</strong> - spacing above the legal disclaimer text.</li></ul><p class=\"text-mid mt-4\">If you clear a field (e.g., remove the phone number), the corresponding spacing option will automatically disappear from the tab.</p>"
+      "title": "Spasiëring tussen elemente",
+      "html": "<p class=\"text-mid\">In die <strong>Spasiëring</strong>-oortjie kan jy die afstande tussen individuele handtekeningelemente presies beheer.</p><h3 class=\"h5 mt-6 mb-3\">Binneste handtekeningvulling</h3><p class=\"text-mid\">Bo-aan die oortjie sal jy die binneste vulling-opsie vind - die afstand tussen die handtekeninginhoud en sy rande. Drie waardes is beskikbaar: 8 px (klein), 16 px (medium) en 24 px (groot).</p><h3 class=\"h5 mt-6 mb-3\">Spasiëring tussen elemente</h3><p class=\"text-mid\">Onder die vulling sal jy beheerders vir individuele handtekeningelemente vind. Elke beheerder het + en - knoppies om die spasiëring te vergroot of te verminder. Slegs opsies vir elemente wat tans in die handtekening is, is sigbaar.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Na naam</strong> - spasiëring onder die naamlyn.</li><li><strong>Na titel / maatskappy</strong> - spasiëring onder die titel- en maatskappynaamlyn.</li><li><strong>Na addisionele lyn</strong> - spasiëring onder die beskrywing (indien ingevul).</li><li><strong>Na kontakbesonderhede</strong> - spasiëring onder e-pos, foon en webwerf.</li><li><strong>Na sosiale media</strong> - spasiëring onder profielskakels.</li><li><strong>Na CTA-knoppie</strong> - spasiëring onder die knoppie (indien geaktiveer).</li><li><strong>Voor vrywaring</strong> - spasiëring bo die regsvrywaringsteks.</li></ul><p class=\"text-mid mt-4\">As jy 'n veld skoonmaak (bv. die foonnommer verwyder), sal die ooreenstemmende spasiëringsopsie outomaties uit die oortjie verdwyn.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Legal disclaimer - when to add it",
-      "html": "<p class=\"text-mid\">In the <strong>Disclaimer / Legal</strong> tab you can add legal text that will appear at the bottom of the signature in smaller font.</p><h3 class=\"h5 mt-6 mb-3\">When to add a disclaimer</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Business correspondence</strong> - confidentiality notice and request to delete in case of incorrect delivery.</li><li><strong>Industry requirements</strong> - some industries (e.g., legal, medical, financial) require specific information in every message.</li><li><strong>GDPR</strong> - information about personal data processing, if the company is a data controller.</li></ul><p class=\"text-mid mt-4\">By default, the field is filled with a sample confidentiality text. You can edit, delete, or replace it with your own disclaimer. If you leave the field empty, no disclaimer will appear in the signature.</p><h3 class=\"h5 mt-6 mb-3\">Separator line</h3><p class=\"text-mid\">Below the text field you will find the <strong>Show divider between contact details and disclaimer</strong> option. Enable it to add a horizontal line between contact details and the legal disclaimer.</p><p class=\"text-mid mt-3\">After enabling the line, additional customization options appear:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Line style</strong> - options: solid, dashed, or dotted.</li><li><strong>Line thickness</strong> - three options: 1 px, 2 px, or 3 px.</li><li><strong>Line color</strong> - default gray (#e5e7eb). You can choose any color from the palette or restore the default by clicking the Default button.</li></ul>"
+      "title": "Regsvrywaring - wanneer om dit by te voeg",
+      "html": "<p class=\"text-mid\">In die <strong>Vrywaring / Regsgeldig</strong>-oortjie kan jy regsteks byvoeg wat onderaan die handtekening in kleiner lettertipe sal verskyn.</p><h3 class=\"h5 mt-6 mb-3\">Wanneer om 'n vrywaring by te voeg</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Besigheidskorrespondensie</strong> - vertroulikheidskennisgewing en versoek om te verwyder in geval van verkeerde aflewering.</li><li><strong>Bedryfsvereistes</strong> - sommige bedrywe (bv. regs, medies, finansieel) vereis spesifieke inligting in elke boodskap.</li><li><strong>POPIA</strong> - inligting oor persoonlike dataverwerking, indien die maatskappy 'n databeheerder is.</li></ul><p class=\"text-mid mt-4\">By verstek is die veld gevul met 'n voorbeeld-vertroulikheidsteks. Jy kan dit redigeer, verwyder of met jou eie vrywaring vervang. As jy die veld leeg laat, sal geen vrywaring in die handtekening verskyn nie.</p><h3 class=\"h5 mt-6 mb-3\">Skeidingslyn</h3><p class=\"text-mid\">Onder die teksveld sal jy die <strong>Wys verdeler tussen kontakbesonderhede en vrywaring</strong>-opsie vind. Aktiveer dit om 'n horisontale lyn tussen kontakbesonderhede en die regsvrywaring by te voeg.</p><p class=\"text-mid mt-3\">Na die aktivering van die lyn verskyn addisionele aanpassingsopsies:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Lynstyl</strong> - opsies: soliede, gestreep of gestippel.</li><li><strong>Lyndikte</strong> - drie opsies: 1 px, 2 px of 3 px.</li><li><strong>Lynkleur</strong> - verstek grys (#e5e7eb). Jy kan enige kleur uit die palet kies of die verstek herstel deur op die Verstek-knoppie te klik.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Auto-save and resetting settings",
-      "html": "<p class=\"text-mid\">The generator automatically saves all settings in browser memory (localStorage). After refreshing the page or reopening the tool, data, layout, colors, and all other options will be restored.</p><h3 class=\"h5 mt-6 mb-3\">How does auto-save work?</h3><p class=\"text-mid\">Every change (text, color, layout, spacing) is immediately saved in browser memory. Saving happens automatically in the background - without clicking any buttons.</p><h3 class=\"h5 mt-6 mb-3\">How to reset settings</h3><p class=\"text-mid\">Below the signature preview you will find a <strong>Reset appearance</strong> button. After clicking, a confirmation dialog will appear. Confirming the reset will restore all data and settings to default values. This operation cannot be undone.</p><h3 class=\"h5 mt-6 mb-3\">Export and import configuration</h3><p class=\"text-mid\">Below the signature preview you will find two additional buttons: <strong>Export settings</strong> and <strong>Import settings</strong>. Export saves all data, colors, layout, spacing, and text styles to a JSON file. Import loads a previously saved configuration from a file.</p><p class=\"text-mid mt-3\">This feature is especially useful when you want to transfer the signature configuration between computers, share settings with colleagues, or keep a backup of your settings before a reset.</p>"
+      "title": "Outo-stoor en herstel van instellings",
+      "html": "<p class=\"text-mid\">Die generator stoor outomaties alle instellings in blaaiergeheue (localStorage). Na die herlaai van die bladsy of die heropening van die instrument, sal data, uitleg, kleure en alle ander opsies herstel word.</p><h3 class=\"h5 mt-6 mb-3\">Hoe werk outo-stoor?</h3><p class=\"text-mid\">Elke verandering (teks, kleur, uitleg, spasiëring) word onmiddellik in blaaiergeheue gestoor. Stoor gebeur outomaties op die agtergrond - sonder om enige knoppies te klik.</p><h3 class=\"h5 mt-6 mb-3\">Hoe om instellings te herstel</h3><p class=\"text-mid\">Onder die handtekeningvoorskou sal jy 'n <strong>Herstel voorkoms</strong>-knoppie vind. Na die klik sal 'n bevestigingsdialoog verskyn. Bevestiging van die herstel sal alle data en instellings na verstekwaardes herstel. Hierdie bewerking kan nie ongedaan gemaak word nie.</p><h3 class=\"h5 mt-6 mb-3\">Uitvoer en invoer van konfigurasie</h3><p class=\"text-mid\">Onder die handtekeningvoorskou sal jy twee addisionele knoppies vind: <strong>Voer instellings uit</strong> en <strong>Voer instellings in</strong>. Uitvoer stoor alle data, kleure, uitleg, spasiëring en teksstyle na 'n JSON-lêer. Invoer laai 'n voorheen gestoorde konfigurasie uit 'n lêer.</p><p class=\"text-mid mt-3\">Hierdie funksie is veral nuttig wanneer jy die handtekeningkonfigurasie tussen rekenaars wil oordra, instellings met kollegas wil deel, of 'n rugsteun van jou instellings voor 'n herstel wil hou.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "How to copy the signature to Gmail or Outlook",
-      "description": "When the signature is ready, it only takes a few steps to add it to your email client:",
+      "title": "Hoe om die handtekening na Gmail of Outlook te kopieer",
+      "description": "Wanneer die handtekening gereed is, neem dit net 'n paar stappe om dit by jou e-poskliënt te voeg:",
       "grid": "three",
       "items": [
-        { "icon": "RiClipboardLine", "title": "1. Copy the code", "description": "The Copy signature (Gmail / Outlook) button copies the signature to clipboard as formatted HTML, ready to paste." },
-        { "icon": "RiSettings3Line", "title": "2. Open signature settings", "description": "In Gmail: Settings → See all settings → Signature. In Outlook: File → Options → Mail → Signatures." },
+        {
+          "icon": "RiClipboardLine",
+          "title": "1. Kopieer die kode",
+          "description": "Die Kopieer handtekening (Gmail / Outlook)-knoppie kopieer die handtekening na knipbord as geformateerde HTML, gereed om te plak."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "2. Maak handtekeninginstellings oop",
+          "description": "In Gmail: Instellings → Sien alle instellings → Handtekening. In Outlook: Lêer → Opsies → Pos → Handtekeninge."
+        },
         {
           "icon": "RiSaveLine",
-          "title": "3. Paste and save",
-          "description": "In the signature field, use Ctrl+V (Windows) or Cmd+V (Mac). The signature will appear with all colors and formatting. Save changes."
+          "title": "3. Plak en stoor",
+          "description": "In die handtekeningveld, gebruik Ctrl+V (Windows) of Cmd+V (Mac). Die handtekening sal met alle kleure en formatering verskyn. Stoor veranderinge."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Signature preview and export options",
-      "html": "<p class=\"text-mid\">The preview panel displays on the right side of the editor and automatically updates with every change. The preview is sticky, so it remains visible even while scrolling through editing options.</p><h3 class=\"h5 mt-6 mb-3\">Switching preview background</h3><p class=\"text-mid\">Above the preview you will find three background change buttons: <strong>Light</strong> (default gray background), <strong>Dark</strong> (dark background, useful for checking readability on dark backgrounds), and <strong>Checkerboard</strong> (checkerboard pattern, lets you see transparency and signature edges).</p><h3 class=\"h5 mt-6 mb-3\">Action buttons</h3><p class=\"text-mid\">Below the preview you will find several buttons:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Copy signature (Gmail / Outlook)</strong> - copies the signature to clipboard as formatted HTML. Paste it directly in signature settings.</li><li><strong>Copy HTML code</strong> - copies the raw HTML code of the signature to clipboard. Useful when you want to paste code in an HTML editor or CMS.</li><li><strong>Download as HTML</strong> - saves the signature code as an .html file to disk. Useful for archiving or sharing with a developer.</li><li><strong>View HTML code</strong> - opens a modal with the full HTML source code of the signature. You can review the code and copy it directly from the modal.</li><li><strong>Export settings</strong> - saves the full signature configuration (data, colors, layout, spacing, styles) to a JSON file.</li><li><strong>Import settings</strong> - loads a configuration from a JSON file. All settings will be automatically applied.</li><li><strong>Reset appearance</strong> - restores all data and settings to default values (after confirmation).</li></ul>"
+      "title": "Handtekeningvoorskou en uitvoeropsies",
+      "html": "<p class=\"text-mid\">Die voorskoupaneel vertoon aan die regterkant van die redigeerder en word outomaties met elke verandering opgedateer. Die voorskou is klewerig, sodat dit sigbaar bly selfs terwyl jy deur redigeringsopsies blaai.</p><h3 class=\"h5 mt-6 mb-3\">Wissel voorskoua-agtergrond</h3><p class=\"text-mid\">Bo die voorskou sal jy drie agtergrondveranderingsknoppies vind: <strong>Lig</strong> (verstek grys agtergrond), <strong>Donker</strong> (donker agtergrond, nuttig om leesbaarheid op donker agtergronde na te gaan) en <strong>Dambord</strong> (dambordpatroon, laat jou deursigtigheid en handtekeningrande sien).</p><h3 class=\"h5 mt-6 mb-3\">Aksieknoppies</h3><p class=\"text-mid\">Onder die voorskou sal jy verskeie knoppies vind:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Kopieer handtekening (Gmail / Outlook)</strong> - kopieer die handtekening na knipbord as geformateerde HTML. Plak dit direk in handtekeninginstellings.</li><li><strong>Kopieer HTML-kode</strong> - kopieer die rou HTML-kode van die handtekening na knipbord. Nuttig wanneer jy kode in 'n HTML-redigeerder of CMS wil plak.</li><li><strong>Laai af as HTML</strong> - stoor die handtekeningkode as 'n .html-lêer op skyf. Nuttig vir argivering of deling met 'n ontwikkelaar.</li><li><strong>Bekyk HTML-kode</strong> - maak 'n modaal oop met die volle HTML-bronkode van die handtekening. Jy kan die kode oorsien en dit direk uit die modaal kopieer.</li><li><strong>Voer instellings uit</strong> - stoor die volle handtekeningkonfigurasie (data, kleure, uitleg, spasiëring, style) na 'n JSON-lêer.</li><li><strong>Voer instellings in</strong> - laai 'n konfigurasie uit 'n JSON-lêer. Alle instellings sal outomaties toegepas word.</li><li><strong>Herstel voorkoms</strong> - herstel alle data en instellings na verstekwaardes (na bevestiging).</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Who is the email signature creator for?",
-      "description": "The email signature tool is useful for anyone who sends business emails:",
+      "title": "Vir wie is die e-poshandtekening-skepper?",
+      "description": "Die e-poshandtekening-instrument is nuttig vir enigiemand wat besigheids-e-posse stuur:",
       "grid": "two",
       "items": [
-        { "icon": "RiBriefcaseLine", "title": "Entrepreneurs and freelancers", "description": "A professional signature in every message without hiring a designer." },
-        { "icon": "RiTeamLine", "title": "Company teams", "description": "Each employee creates their own signature in the same style. Consistent identity across the entire company." },
-        { "icon": "RiHandCoinLine", "title": "Sales representatives", "description": "A CTA button with a link to a calendar or offer increases the chances of booking a meeting." },
-        { "icon": "RiScales3Line", "title": "Lawyers, accountants, doctors", "description": "Ability to add a legal disclaimer, license number, tax ID, or other details required in the industry." }
+        { "icon": "RiBriefcaseLine", "title": "Entrepreneurs en vryskutwerkers", "description": "'n Professionele handtekening in elke boodskap sonder om 'n ontwerper te huur." },
+        { "icon": "RiTeamLine", "title": "Maatskappyspanne", "description": "Elke werknemer skep hul eie handtekening in dieselfde styl. Konsekwente identiteit regoor die hele maatskappy." },
+        { "icon": "RiHandCoinLine", "title": "Verkoopsverteenwoordigers", "description": "'n CTA-knoppie met 'n skakel na 'n kalender of aanbod verhoog die kanse om 'n vergadering te bespreek." },
+        {
+          "icon": "RiScales3Line",
+          "title": "Prokureurs, rekenmeesters, dokters",
+          "description": "Vermoë om 'n regsvrywaring, lisensienommer, belasting-ID of ander besonderhede wat in die bedryf vereis word, by te voeg."
+        }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "What makes this HTML email signature generator special?",
+      "title": "Wat maak hierdie HTML-e-poshandtekening-generator spesiaal?",
       "grid": "three",
       "items": [
-        { "icon": "RiInfinityLine", "title": "Eight signature layouts", "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist, and bottom bar." },
-        { "icon": "RiUserLine", "title": "Auto-save in browser", "description": "Every change is automatically saved in browser memory. After refreshing the page, the signature remains available." },
-        { "icon": "RiTranslate2", "title": "Export and import configuration", "description": "The full signature configuration can be exported as a JSON file and shared with colleagues." },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Agt handtekeninguitlegings",
+          "description": "Standaard, boonste balk, etikette links, gesentreer, kompak, twee kolomme, minimalisties en onderste balk."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Outo-stoor in blaaier",
+          "description": "Elke verandering word outomaties in blaaiergeheue gestoor. Na die herlaai van die bladsy bly die handtekening beskikbaar."
+        },
+        { "icon": "RiTranslate2", "title": "Uitvoer en invoer van konfigurasie", "description": "Die volle handtekeningkonfigurasie kan as 'n JSON-lêer uitgevoer en met kollegas gedeel word." },
         {
           "icon": "RiAppsLine",
-          "title": "12 social media platforms",
-          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest."
+          "title": "12 sosiale media-platforms",
+          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram en Pinterest."
         },
-        { "icon": "RiPaletteLine", "title": "Advanced customization", "description": "Avatar shape and size, line styling, individual text colors and sizes." },
-        { "icon": "RiFileCodeLine", "title": "Multiple export options", "description": "Copy HTML, download file, source code preview, JSON configuration export/import." },
-        { "icon": "RiShieldCheckLine", "title": "Privacy", "description": "Data is not sent to a server. The generator works entirely in the browser." },
-        { "icon": "RiMailCheckLine", "title": "Compatibility", "description": "Generated HTML code works in Gmail, Outlook, Apple Mail, and Thunderbird." },
-        { "icon": "RiEyeLine", "title": "Live preview", "description": "Every change is instantly visible on light, dark, or checkerboard background." }
+        { "icon": "RiPaletteLine", "title": "Gevorderde aanpassing", "description": "Avatar-vorm en -grootte, lynstylering, individuele tekskleure en -groottes." },
+        { "icon": "RiFileCodeLine", "title": "Verskeie uitvoeropsies", "description": "Kopieer HTML, laai lêer af, bronkode-voorskou, JSON-konfigurasie uitvoer/invoer." },
+        { "icon": "RiShieldCheckLine", "title": "Privaatheid", "description": "Data word nie na 'n bediener gestuur nie. Die generator werk heeltemal in die blaaier." },
+        { "icon": "RiMailCheckLine", "title": "Versoenbaarheid", "description": "Gegenereerde HTML-kode werk in Gmail, Outlook, Apple Mail en Thunderbird." },
+        { "icon": "RiEyeLine", "title": "Regstreekse voorskou", "description": "Elke verandering is onmiddellik sigbaar op ligte, donker of dambord-agtergrond." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the email signature generator",
+      "title": "Gereeld gevraagde vrae oor die e-poshandtekening-generator",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Does the signature work in Gmail, Outlook, and Apple Mail?",
-          "answer": "Yes. Signatures generated by the generator use HTML tables that display correctly in all popular email clients: Gmail, Outlook (desktop and web), Apple Mail, Thunderbird. The layout adapts to different devices, including smartphones."
+          "question": "Werk die handtekening in Gmail, Outlook en Apple Mail?",
+          "answer": "Ja. Handtekeninge wat deur die generator geskep is, gebruik HTML-tabelle wat korrek in alle gewilde e-poskliënte vertoon: Gmail, Outlook (rekenaar en web), Apple Mail, Thunderbird. Die uitleg pas aan by verskillende toestelle, insluitend slimfone."
         },
         {
-          "question": "Can I add a company logo?",
-          "answer": "Yes. In the Details tab, paste the URL of an image (logo or profile photo). The image should be square (min. 120×120 px) and publicly accessible online. After pasting the URL, options for shape (round, rounded, square) and size (40, 56, or 72 px) will appear."
+          "question": "Kan ek 'n maatskappylogo byvoeg?",
+          "answer": "Ja. In die Besonderhede-oortjie, plak die URL van 'n prent (logo of profielfoto). Die prent moet vierkantig wees (min. 120×120 px) en publiek toeganklik aanlyn. Na die plak van die URL sal opsies vir vorm (rond, afgerond, vierkantig) en grootte (40, 56 of 72 px) verskyn."
         },
         {
-          "question": "How do I copy the signature to an email client?",
-          "answer": "The Copy signature (Gmail / Outlook) button below the preview copies the signature to clipboard as formatted HTML. In Gmail or Outlook signature settings, just use Ctrl+V (Windows) or Cmd+V (Mac)."
+          "question": "Hoe kopieer ek die handtekening na 'n e-poskliënt?",
+          "answer": "Die Kopieer handtekening (Gmail / Outlook)-knoppie onder die voorskou kopieer die handtekening na knipbord as geformateerde HTML. In Gmail of Outlook handtekeninginstellings, gebruik net Ctrl+V (Windows) of Cmd+V (Mac)."
         },
         {
-          "question": "Can I use the generator to create signatures for an entire team?",
-          "answer": "Yes. The generator does not require login or registration. Each person on the team can open the tool, fill in their details, and copy the ready signature. To maintain visual consistency, agree on shared settings: the same layout, color theme, and font. You can also export the configuration as a JSON file and share it with colleagues - they just need to import the file and change only their personal details."
+          "question": "Kan ek die generator gebruik om handtekeninge vir 'n hele span te skep?",
+          "answer": "Ja. Die generator vereis geen aanmelding of registrasie nie. Elke persoon in die span kan die instrument oopmaak, hul besonderhede invul en die klaargemaakte handtekening kopieer. Om visuele konsekwentheid te handhaaf, kom ooreen oor gedeelde instellings: dieselfde uitleg, kleurtema en lettertipe. Jy kan ook die konfigurasie as 'n JSON-lêer uitvoer en met kollegas deel - hulle hoef net die lêer in te voer en slegs hul persoonlike besonderhede te verander."
         },
         {
-          "question": "Can I add custom social media icons?",
-          "answer": "The generator offers built-in SVG icons for twelve platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest. Enable the Show icons option in the Social Media tab. You can choose icon size and color (platform colors, accent color, or text color)."
-        },
-        { "question": "The copy button is inactive - why?", "answer": "To copy the signature, fill in at least two fields: name and email address. Check that both fields are filled in." },
-        {
-          "question": "Avatar or logo is not displaying - what to do?",
-          "answer": "The image must be publicly accessible online. The URL should point directly to an image file (ending in .jpg, .png, or .webp). Images from Google Drive or Dropbox require a special sharing link."
+          "question": "Kan ek pasgemaakte sosiale media-ikone byvoeg?",
+          "answer": "Die generator bied ingeboude SVG-ikone vir twaalf platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram en Pinterest. Aktiveer die Wys ikone-opsie in die Sosiale Media-oortjie. Jy kan ikoongrootte en -kleur kies (platformkleure, aksentkleur of tekskleur)."
         },
         {
-          "question": "The signature looks different for the recipient - why?",
-          "answer": "Different email clients (Gmail, Outlook, Apple Mail) may slightly differ in how they render HTML. The generator uses safe styles that work in most programs. If you see major differences, make sure you are pasting the signature using Ctrl+V, not Paste as plain text."
+          "question": "Die kopieerknoppie is onaktief - waarom?",
+          "answer": "Om die handtekening te kopieer, vul ten minste twee velde in: naam en e-posadres. Kontroleer dat albei velde ingevul is."
         },
         {
-          "question": "CTA button is not appearing - what to do?",
-          "answer": "The button requires both fields: text and link. Check that in the Buttons tab both fields are filled in and the URL starts with https://."
+          "question": "Avatar of logo word nie vertoon nie - wat om te doen?",
+          "answer": "Die prent moet publiek toeganklik aanlyn wees. Die URL moet direk na 'n prentlêer wys (eindig op .jpg, .png of .webp). Prente van Google Drive of Dropbox vereis 'n spesiale deelskakel."
         },
         {
-          "question": "How to export or import signature settings?",
-          "answer": "Below the signature preview you will find Export settings and Import settings buttons. Export saves the full configuration (data, colors, layout, spacing, text styles) to a JSON file. Import loads the configuration from a file and automatically applies all settings."
+          "question": "Die handtekening lyk anders vir die ontvanger - waarom?",
+          "answer": "Verskillende e-poskliënte (Gmail, Outlook, Apple Mail) kan effens verskil in hoe hulle HTML weergee. Die generator gebruik veilige style wat in die meeste programme werk. As jy groot verskille sien, maak seker jy plak die handtekening met Ctrl+V, nie Plak as gewone teks nie."
         },
         {
-          "question": "How to view the source code of the generated signature?",
-          "answer": "The View HTML code button below the signature preview opens a modal with the full HTML source code. You can review and copy the code directly from the modal. Alternatively, the Copy HTML code button copies the raw code to clipboard, and Download as HTML saves it as a file."
+          "question": "CTA-knoppie verskyn nie - wat om te doen?",
+          "answer": "Die knoppie vereis albei velde: teks en skakel. Kontroleer dat in die Knoppies-oortjie albei velde ingevul is en die URL met https:// begin."
         },
         {
-          "question": "Can I change the avatar shape and size?",
-          "answer": "Yes. After pasting the image URL in the Data tab, additional options appear: Avatar shape (round, rounded, square) and Avatar size (small - 40 px, medium - 56 px, large - 72 px). Settings are applied in all signature layouts."
+          "question": "Hoe om handtekeninginstellings uit te voer of in te voer?",
+          "answer": "Onder die handtekeningvoorskou sal jy Voer instellings uit- en Voer instellings in-knoppies vind. Uitvoer stoor die volle konfigurasie (data, kleure, uitleg, spasiëring, teksstyle) na 'n JSON-lêer. Invoer laai die konfigurasie uit 'n lêer en pas alle instellings outomaties toe."
         },
         {
-          "question": "How to change the separator line style?",
-          "answer": "In the Disclaimer / Legal tab, enable the Show separator line option. Additional options will appear: line style (solid, dashed, dotted), thickness (1–3 px), and color (default gray or any color chosen from the palette)."
+          "question": "Hoe om die bronkode van die gegenereerde handtekening te bekyk?",
+          "answer": "Die Bekyk HTML-kode-knoppie onder die handtekeningvoorskou maak 'n modaal oop met die volle HTML-bronkode. Jy kan die kode oorsien en dit direk uit die modaal kopieer. Alternatiewelik kopieer die Kopieer HTML-kode-knoppie die rou kode na knipbord, en Laai af as HTML stoor dit as 'n lêer."
+        },
+        {
+          "question": "Kan ek die avatar-vorm en -grootte verander?",
+          "answer": "Ja. Na die plak van die prent-URL in die Besonderhede-oortjie verskyn addisionele opsies: Avatar-vorm (rond, afgerond, vierkantig) en Avatar-grootte (klein - 40 px, medium - 56 px, groot - 72 px). Instellings word in alle handtekeninguitlegings toegepas."
+        },
+        {
+          "question": "Hoe om die skeidingslynstyl te verander?",
+          "answer": "In die Vrywaring / Regsgeldig-oortjie, aktiveer die Wys skeidingslyn-opsie. Addisionele opsies sal verskyn: lynstyl (soliede, gestreep, gestippel), dikte (1–3 px) en kleur (verstek grys of enige kleur uit die palet gekies)."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
+    { "type": "toolsCarousel", "title": "Verken ander gereedskap" },
     { "type": "gap", "size": "sm" }
   ]
 }

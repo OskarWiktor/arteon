@@ -2,46 +2,46 @@
   "toolKey": "jpgToWebp",
   "locale": "af",
   "metadata": {
-    "title": "Free JPG/PNG to WebP Converter – No Limits, No Upload",
-    "description": "Reduce image size by up to 35% without quality loss. JPG and PNG to WebP conversion runs locally – files never leave your device. No signup, no limits.",
+    "title": "Gratis JPG/PNG na WebP-omskakelaar – Geen Beperkings, Geen Oplaai",
+    "description": "Verminder beeldgrootte met tot 35% sonder kwaliteitverlies. JPG en PNG na WebP-omskakeling gebeur plaaslik – lêers verlaat nooit jou toestel nie. Geen registrasie, geen beperkings nie.",
     "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
     "path": "/af/gereedskap/jpg-png-na-webp-omskakelaar"
   },
   "hero": {
-    "title": "JPG/PNG to WebP Converter – Free, No Limits",
-    "description": "Reduce image file size by up to 35% without losing quality. Add files, choose quality level, and download images in WebP format. All conversion happens locally in the browser.",
+    "title": "JPG/PNG na WebP-omskakelaar – Gratis, Geen Beperkings",
+    "description": "Verminder beeldlêergrootte met tot 35% sonder kwaliteitverlies. Voeg lêers by, kies kwaliteitvlak en laai beelde in WebP-formaat af. Alle omskakeling gebeur plaaslik in die blaaier.",
     "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/af/gereedskap", "label": "Tools" },
-    "third": { "href": "/af/gereedskap/jpg-png-na-webp-omskakelaar", "label": "JPG/PNG to WebP converter" }
+    "second": { "href": "/af/gereedskap", "label": "Gereedskap" },
+    "third": { "href": "/af/gereedskap/jpg-png-na-webp-omskakelaar", "label": "JPG/PNG na WebP-omskakelaar" }
   },
   "schemas": {
     "software": {
-      "name": "JPG and PNG to WebP converter online - free, no limits",
-      "alternateName": ["JPG to WebP and PNG to WebP converter"],
+      "name": "JPG en PNG na WebP-omskakelaar - gratis, geen beperkings",
+      "alternateName": ["JPG na WebP en PNG na WebP-omskakelaar"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Free online JPG and PNG to WebP converter. Reduce image file size by up to 35%, improve page load speed and Core Web Vitals scores. Conversion happens in the browser - files are not sent to a server.",
+      "description": "Gratis JPG en PNG na WebP-omskakelaar. Verminder beeldlêergrootte met tot 35%, verbeter bladsylaaisnelheid en Core Web Vitals-tellings. Omskakeling gebeur in die blaaier - lêers word nie na 'n bediener gestuur nie.",
       "featureList": [
-        "JPG to WebP conversion",
-        "PNG to WebP conversion",
-        "Quality level adjustment (1–100%)",
-        "Batch conversion of multiple files",
-        "Size preview before and after conversion",
-        "Individual file download",
-        "Download all files as ZIP",
-        "Local processing in the browser (files are not sent to a server)"
+        "JPG na WebP-omskakeling",
+        "PNG na WebP-omskakeling",
+        "Kwaliteitvlak-aanpassing (1–100%)",
+        "Bondelomskakeling van veelvuldige lêers",
+        "Grootte-voorskou voor en na omskakeling",
+        "Individuele lêer-aflaai",
+        "Laai alle lêers as ZIP af",
+        "Plaaslike verwerking in die blaaier (lêers word nie na 'n bediener gestuur nie)"
       ]
     },
     "howTo": {
-      "name": "How to convert JPG and PNG to WebP online",
-      "description": "How to convert JPG and PNG images to WebP format. Quality settings (60–95%), Smart Quality mechanism, and downloading converted files as ZIP.",
+      "name": "Hoe om JPG en PNG na WebP om te skakel",
+      "description": "Hoe om JPG- en PNG-beelde na WebP-formaat om te skakel. Kwaliteitinstellings (60–95%), Slim Kwaliteit-meganisme en aflaai van omgeskakelde lêers as ZIP.",
       "steps": [
-        { "name": "Add files for conversion", "text": "Drag JPG or PNG images onto the designated area or select files from your device. You can add multiple files at once." },
-        { "name": "Set quality level", "text": "Choose the output WebP file quality using the slider (60–95%). The default value of 80% is a good balance between quality and size." },
-        { "name": "Start conversion", "text": "After starting conversion, the tool will process all files in the queue and automatically apply Smart Quality." },
-        { "name": "Download converted files", "text": "Converted files can be downloaded individually or all at once as a ZIP archive." }
+        { "name": "Voeg lêers vir omskakeling by", "text": "Sleep JPG- of PNG-beelde na die aangewese area of kies lêers van jou toestel. Jy kan veelvuldige lêers gelyktydig byvoeg." },
+        { "name": "Stel kwaliteitvlak in", "text": "Kies die uitvoer-WebP-lêerkwaliteit met die skuifbalk (60–95%). Die verstekwaarde van 80% is 'n goeie balans tussen kwaliteit en grootte." },
+        { "name": "Begin omskakeling", "text": "Na die begin van omskakeling sal die instrument alle lêers in die tou verwerk en outomaties Slim Kwaliteit toepas." },
+        { "name": "Laai omgeskakelde lêers af", "text": "Omgeskakelde lêers kan individueel of almal gelyktydig as 'n ZIP-argief afgelaai word." }
       ]
     }
   },
@@ -49,182 +49,185 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "What is WebP and why convert images?",
-      "html": "<p class=\"mb-4\">WebP is an image format created by Google that allows reducing image file sizes by up to 25–35% compared to JPG and PNG - while maintaining comparable visual quality. Smaller files mean faster page loading, which translates to better user experience and higher scores in <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"mb-4\">The WebP format is supported by all modern browsers: Chrome, Firefox, Safari (from version 14), and Edge. If you run a website, online store, or blog, converting images to WebP is one of the simplest ways to improve site performance.</p><p>The converter supports both JPG photos and PNG graphics (including those with transparency). You can convert any number of files at once - all are processed locally in the browser, without being sent to a server.</p>"
+      "title": "Wat is WebP en waarom beelde omskakel?",
+      "html": "<p class=\"mb-4\">WebP is 'n beeldformaat wat deur Google geskep is en wat beeldlêergroottes met tot 25–35% kan verminder in vergelyking met JPG en PNG - terwyl vergelykbare visuele kwaliteit behou word. Kleiner lêers beteken vinniger bladsylaaie, wat vertaal na beter gebruikerservaring en hoër tellings in <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"mb-4\">Die WebP-formaat word deur alle moderne blaaiers ondersteun: Chrome, Firefox, Safari (vanaf weergawe 14) en Edge. As jy 'n webwerf, aanlynwinkel of blog bestuur, is die omskakeling van beelde na WebP een van die eenvoudigste maniere om werfprestasie te verbeter.</p><p>Die omskakelaar ondersteun beide JPG-foto's en PNG-grafika (insluitend dié met deursigtigheid). Jy kan enige aantal lêers gelyktydig omskakel - almal word plaaslik in die blaaier verwerk, sonder om na 'n bediener gestuur te word.</p>"
     },
     { "type": "gap", "size": "xs" },
     {
       "type": "sectionSteps",
-      "title": "How to convert images to WebP",
-      "description": "Converting to WebP takes just a few seconds:",
+      "title": "Hoe om beelde na WebP om te skakel",
+      "description": "Omskakeling na WebP neem net 'n paar sekondes:",
       "grid": "three",
       "items": [
-        { "title": "1. Add files", "description": "Drag JPG or PNG images onto the designated area or select files from your device. You can add any number of files at once." },
-        { "title": "2. Set quality", "description": "Choose the quality level (default 80%). A lower value means a smaller file. For most use cases, 80% is the optimal setting." },
-        { "title": "3. Download WebP", "description": "After conversion, download files individually or as a ZIP archive. Each file shows information about the space saved." }
+        { "title": "1. Voeg lêers by", "description": "Sleep JPG- of PNG-beelde na die aangewese area of kies lêers van jou toestel. Jy kan enige aantal lêers gelyktydig byvoeg." },
+        {
+          "title": "2. Stel kwaliteit in",
+          "description": "Kies die kwaliteitvlak (verstek 80%). 'n Laer waarde beteken 'n kleiner lêer. Vir die meeste gebruiksgevalle is 80% die optimale instelling."
+        },
+        { "title": "3. Laai WebP af", "description": "Na omskakeling, laai lêers individueel of as 'n ZIP-argief af. Elke lêer wys inligting oor die spasie wat bespaar is." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to add files for conversion",
-      "html": "<p class=\"text-mid\">The tool offers two ways to add files:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Drag and drop</strong> - grab files from a folder on your computer and drop them onto the area labeled &quot;Drag and drop images here&quot;. You can drag multiple files at once.</li><li><strong>Select from device</strong> - clicking the file upload area opens a selection dialog. Holding Ctrl (or Cmd on Mac) lets you select multiple files at once.</li></ul><p class=\"text-mid mt-3\">The tool only accepts JPG and PNG files. If you accidentally add a file in another format (e.g., GIF or BMP), it will be automatically skipped and you will see an informational message.</p><p class=\"text-mid mt-3\"><strong>Privacy:</strong> All files are processed locally in the browser. They are not sent anywhere - they do not go to any server. After closing the tab or browser, files are removed from memory.</p>"
+      "title": "Hoe om lêers vir omskakeling by te voeg",
+      "html": "<p class=\"text-mid\">Die instrument bied twee maniere om lêers by te voeg:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Sleep en los</strong> - gryp lêers uit 'n vouer op jou rekenaar en los dit op die area gemerk &quot;Sleep beelde hierheen&quot;. Jy kan veelvuldige lêers gelyktydig sleep.</li><li><strong>Kies van toestel</strong> - deur op die lêer-oplaai-area te klik, word 'n keuse-dialoog oopgemaak. Deur Ctrl (of Cmd op Mac) in te hou, kan jy veelvuldige lêers gelyktydig kies.</li></ul><p class=\"text-mid mt-3\">Die instrument aanvaar slegs JPG- en PNG-lêers. As jy per ongeluk 'n lêer in 'n ander formaat byvoeg (bv. GIF of BMP), sal dit outomaties oorgeslaan word en jy sal 'n inligtingsboodskap sien.</p><p class=\"text-mid mt-3\"><strong>Privaatheid:</strong> Alle lêers word plaaslik in die blaaier verwerk. Hulle word nêrens heen gestuur nie - hulle gaan nie na enige bediener nie. Na die sluiting van die oortjie of blaaier word lêers uit die geheue verwyder.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "What do file statuses mean?",
-      "html": "<p class=\"text-mid\">Each file in the queue has one of four statuses that indicate conversion progress:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Pending</span><p class=\"text-mid\">The file is in the queue and waiting to be processed. Conversion has not yet started.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Processing…</span><p class=\"text-mid\">The file is being converted. For most images this takes a fraction of a second, but very large files may take several seconds.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Done</span><p class=\"text-mid\">Conversion completed successfully. The WebP file is ready to download. Next to the status you will also see the size before and after conversion.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Error</span><p class=\"text-mid\">Something went wrong during conversion. This may be a corrupted source file or a browser memory issue with very large images. The &quot;Retry&quot; button lets you try again.</p></div></div>"
+      "title": "Wat beteken lêerstatusse?",
+      "html": "<p class=\"text-mid\">Elke lêer in die tou het een van vier statusse wat omskakelingsvordering aandui:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Wag</span><p class=\"text-mid\">Die lêer is in die tou en wag om verwerk te word. Omskakeling het nog nie begin nie.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Verwerk…</span><p class=\"text-mid\">Die lêer word omgeskakel. Vir die meeste beelde neem dit 'n breukdeel van 'n sekonde, maar baie groot lêers kan verskeie sekondes neem.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Klaar</span><p class=\"text-mid\">Omskakeling is suksesvol voltooi. Die WebP-lêer is gereed om af te laai. Langs die status sal jy ook die grootte voor en na omskakeling sien.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Fout</span><p class=\"text-mid\">Iets het tydens omskakeling verkeerd geloop. Dit kan 'n beskadigde bronlêer of 'n blaaiergeheue-probleem met baie groot beelde wees. Die &quot;Probeer weer&quot;-knoppie laat jou toe om weer te probeer.</p></div></div>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How does Smart Quality work?",
-      "html": "<p class=\"text-mid\">Smart Quality is an automatic optimization mechanism that ensures the output WebP file is never larger than the original. It works as follows:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>The tool converts the image at your set quality (e.g., 80%).</li><li>It checks whether the resulting file is smaller than the original.</li><li>If it is larger, it automatically lowers quality and tries again.</li><li>The process repeats until the output file is smaller or quality drops below a safe minimum.</li></ol><p class=\"text-mid mt-3\">The tool automatically selects optimal settings. If you have an image that is already heavily compressed (e.g., a JPG at 60% quality), the parameters will be automatically adjusted to still achieve size savings.</p><p class=\"text-mid mt-3\">Next to each file you will see &quot;WebP quality used&quot; - this is the actual quality applied after any Smart Quality adjustment.</p>"
+      "title": "Hoe werk Slim Kwaliteit?",
+      "html": "<p class=\"text-mid\">Slim Kwaliteit is 'n outomatiese optimeringsmeganisme wat verseker dat die uitvoer-WebP-lêer nooit groter as die oorspronklike is nie. Dit werk soos volg:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>Die instrument skakel die beeld om teen jou ingestelde kwaliteit (bv. 80%).</li><li>Dit kontroleer of die resulterende lêer kleiner as die oorspronklike is.</li><li>As dit groter is, verlaag dit outomaties kwaliteit en probeer weer.</li><li>Die proses herhaal totdat die uitvoerlêer kleiner is of kwaliteit onder 'n veilige minimum daal.</li></ol><p class=\"text-mid mt-3\">Die instrument kies outomaties optimale instellings. As jy 'n beeld het wat reeds swaar gekomprimeer is (bv. 'n JPG teen 60% kwaliteit), sal die parameters outomaties aangepas word om steeds groottebesparing te behaal.</p><p class=\"text-mid mt-3\">Langs elke lêer sal jy &quot;WebP-kwaliteit gebruik&quot; sien - dit is die werklike kwaliteit wat na enige Slim Kwaliteit-aanpassing toegepas is.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "Quality settings - what to choose?",
-      "demoHtml": "<div class=\"space-y-4\"><div><p class=\"text-dark mb-2 text-sm! font-medium uppercase\">Set quality</p><div class=\"flex items-center\"><input type=\"range\" min=\"60\" max=\"95\" value=\"80\" class=\"flex-1\" disabled><span class=\"text-mid w-12 text-right text-sm!\">80%</span></div><span class=\"text-light mt-1 block text-xs\">Higher value = better quality, larger file</span></div><div class=\"flex items-center\"><input type=\"checkbox\" checked class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Auto-download after conversion</span></div><div class=\"ml-6 flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Download individually</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Download as ZIP</span></div></div>",
-      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. A higher value means better image quality but also a larger file size.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (default)</strong> - a good balance for most use cases.</li><li><strong>85–90%</strong> - for product photos and photography portfolios.</li><li><strong>60–70%</strong> - when minimizing file size is the priority.</li></ul>"
+      "title": "Kwaliteitinstellings - wat om te kies?",
+      "demoHtml": "<div class=\"space-y-4\"><div><p class=\"text-dark mb-2 text-sm! font-medium uppercase\">Stel kwaliteit in</p><div class=\"flex items-center\"><input type=\"range\" min=\"60\" max=\"95\" value=\"80\" class=\"flex-1\" disabled><span class=\"text-mid w-12 text-right text-sm!\">80%</span></div><span class=\"text-light mt-1 block text-xs\">Hoër waarde = beter kwaliteit, groter lêer</span></div><div class=\"flex items-center\"><input type=\"checkbox\" checked class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Outo-aflaai na omskakeling</span></div><div class=\"ml-6 flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Laai individueel af</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Laai as ZIP af</span></div></div>",
+      "html": "<p class=\"text-mid\">Die kwaliteitskuifbalk laat jou toe om 'n waarde van 60% tot 95% in te stel. 'n Hoër waarde beteken beter beeldkwaliteit maar ook 'n groter lêergrootte.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (verstek)</strong> - 'n goeie balans vir die meeste gebruiksgevalle.</li><li><strong>85–90%</strong> - vir produkfoto's en fotografieportefeuljes.</li><li><strong>60–70%</strong> - wanneer die minimalisering van lêergrootte die prioriteit is.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "How to download converted files",
+      "title": "Hoe om omgeskakelde lêers af te laai",
       "variant": "left",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-medium text-white\">Convert</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Download all</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Download as ZIP</span></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Include CSV report in ZIP</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Input size: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Size after conversion: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">Saved: <strong class=\"text-success-icon\">1.5 MB (~63%)</strong></p></div></div>",
-      "html": "<p class=\"text-mid\">After conversion is complete, you have several download options:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Download</strong> (next to each file) - downloads a single WebP file.</li><li><strong>Download all</strong> - downloads all files one by one.</li><li><strong>Download as ZIP</strong> - creates an archive with all files.</li></ul><p class=\"text-mid mt-3\"><strong>CSV report option:</strong> Include a conversion summary report in the ZIP archive.</p>"
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-medium text-white\">Omskakel</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Laai alles af</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Laai as ZIP af</span></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Sluit CSV-verslag in ZIP in</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Invoergrootte: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Grootte na omskakeling: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">Bespaar: <strong class=\"text-success-icon\">1.5 MB (~63%)</strong></p></div></div>",
+      "html": "<p class=\"text-mid\">Na voltooiing van omskakeling het jy verskeie aflaai-opsies:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Laai af</strong> (langs elke lêer) - laai 'n enkele WebP-lêer af.</li><li><strong>Laai alles af</strong> - laai alle lêers een vir een af.</li><li><strong>Laai as ZIP af</strong> - skep 'n argief met alle lêers.</li></ul><p class=\"text-mid mt-3\"><strong>CSV-verslagopsie:</strong> Sluit 'n omskakelingsopsommingsverslag in die ZIP-argief in.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Savings report - what does it show?",
-      "html": "<p class=\"text-mid\">Below the conversion buttons you will find a summary with savings information:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Total input size</strong> - sum of all original file sizes.</li><li><strong>Total size after conversion</strong> - sum of all WebP file sizes.</li><li><strong>Saved</strong> - how much space you gained through conversion (in KB/MB and percentage).</li></ul><p class=\"text-mid mt-3\"><strong>Copy summary:</strong> The button copies the report to clipboard in text format. You can paste it into notes, emails, or documents - useful for documenting image optimization.</p>"
+      "title": "Besparingsverslag - wat wys dit?",
+      "html": "<p class=\"text-mid\">Onder die omskakelingsknoppies sal jy 'n opsomming met besparingsinligting vind:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Totale invoergrootte</strong> - som van alle oorspronklike lêergroottes.</li><li><strong>Totale grootte na omskakeling</strong> - som van alle WebP-lêergroottes.</li><li><strong>Bespaar</strong> - hoeveel spasie jy deur omskakeling gewin het (in KB/MB en persentasie).</li></ul><p class=\"text-mid mt-3\"><strong>Kopieer opsomming:</strong> Die knoppie kopieer die verslag na die knipbord in teksformaat. Jy kan dit in notas, e-posse of dokumente plak - nuttig vir die dokumentering van beeldoptimering.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How much can you save by converting to WebP?",
-      "html": "<p class=\"mb-4\">Savings depend on the type of image and its original compression. Below are example results for typical files:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">JPG photo (camera)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Savings: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">PNG graphic (logo)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Savings: ~75%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product photo</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Savings: ~63%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary. The converter shows the exact size before and after conversion for each file, as well as a summary of total savings.</p>"
+      "title": "Hoeveel kan jy bespaar deur na WebP om te skakel?",
+      "html": "<p class=\"mb-4\">Besparings hang af van die tipe beeld en sy oorspronklike kompressie. Hieronder is voorbeeldresultate vir tipiese lêers:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">JPG-foto (kamera)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">PNG-grafika (logo)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~75%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produkfoto</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div></div><p class=\"text-light mt-4 text-sm\">Werklike besparings kan wissel. Die omskakelaar wys die presiese grootte voor en na omskakeling vir elke lêer, sowel as 'n opsomming van totale besparings.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "What makes this JPG/PNG to WebP converter special?",
+      "title": "Wat maak hierdie JPG/PNG na WebP-omskakelaar spesiaal?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Full privacy",
-          "description": "Files never leave your computer. Conversion happens in the browser - nothing is sent to a server. After closing the page, data is removed."
+          "title": "Volle privaatheid",
+          "description": "Lêers verlaat nooit jou rekenaar nie. Omskakeling gebeur in die blaaier - niks word na 'n bediener gestuur nie. Na die sluiting van die bladsy word data verwyder."
         },
         {
           "icon": "RiInfinityFill",
-          "title": "Batch conversion of multiple files",
-          "description": "Convert any number of images at once. All files are processed sequentially, and results are available for download individually or as a ZIP archive."
+          "title": "Bondelomskakeling van veelvuldige lêers",
+          "description": "Skakel enige aantal beelde gelyktydig om. Alle lêers word opeenvolgend verwerk, en resultate is beskikbaar vir individuele aflaai of as 'n ZIP-argief."
         },
         {
           "icon": "RiSpeedLine",
-          "title": "Smart Quality",
-          "description": "The tool automatically adjusts quality so the output file is always smaller than the original. No need to manually search for optimal settings."
+          "title": "Slim Kwaliteit",
+          "description": "Die instrument pas outomaties kwaliteit aan sodat die uitvoerlêer altyd kleiner as die oorspronklike is. Geen behoefte om handmatig na optimale instellings te soek nie."
         },
         {
           "icon": "RiDownloadLine",
-          "title": "Download as ZIP",
-          "description": "Download converted files individually or all at once as a ZIP archive. Optionally, you can include a CSV report with a summary."
+          "title": "Laai as ZIP af",
+          "description": "Laai omgeskakelde lêers individueel of almal gelyktydig as 'n ZIP-argief af. Opsioneel kan jy 'n CSV-verslag met 'n opsomming insluit."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Things to keep in mind",
-      "description": "A few tips to help avoid problems during conversion:",
+      "title": "Dinge om in gedagte te hou",
+      "description": "'n Paar wenke om probleme tydens omskakeling te help vermy:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Very large files",
-          "description": "Converting images above 4000×4000 pixels may be slower and strain the browser. If processing many large files, consider splitting them into batches."
+          "title": "Baie groot lêers",
+          "description": "Die omskakeling van beelde bo 4000×4000 piksels kan stadiger wees en die blaaier belas. As jy baie groot lêers verwerk, oorweeg om dit in groepe te verdeel."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Already compressed images",
-          "description": "If the original JPG was saved at very low quality, converting to WebP may not yield large savings. In extreme cases, the WebP file may be even larger - Smart Quality will then lower quality automatically."
+          "title": "Reeds gekomprimeerde beelde",
+          "description": "As die oorspronklike JPG teen baie lae kwaliteit gestoor is, sal omskakeling na WebP moontlik nie groot besparings lewer nie. In uiterste gevalle kan die WebP-lêer selfs groter wees - Slim Kwaliteit sal dan kwaliteit outomaties verlaag."
         },
         {
           "icon": "RiStackLine",
-          "title": "PNG format with transparency",
-          "description": "WebP supports transparency, so PNG files with an alpha channel will be converted correctly. However, size savings for PNGs with transparency may be less than for regular JPG photos."
+          "title": "PNG-formaat met deursigtigheid",
+          "description": "WebP ondersteun deursigtigheid, so PNG-lêers met 'n alfa-kanaal sal korrek omgeskakel word. Groottebesparing vir PNG's met deursigtigheid kan egter minder wees as vir gewone JPG-foto's."
         },
         {
           "icon": "RiGlobalLine",
-          "title": "Browser compatibility",
-          "description": "All modern browsers (Chrome, Firefox, Safari 14+, Edge) support WebP. If the site must work on older browsers, you can use the &lt;picture&gt; tag with an alternative JPG/PNG source."
+          "title": "Blaaierversoenbaarheid",
+          "description": "Alle moderne blaaiers (Chrome, Firefox, Safari 14+, Edge) ondersteun WebP. As die werf op ouer blaaiers moet werk, kan jy die &lt;picture&gt;-etiket met 'n alternatiewe JPG/PNG-bron gebruik."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "When is it worth converting images to WebP?",
-      "description": "Converting to WebP brings benefits in virtually every case when images are displayed in a browser:",
+      "title": "Wanneer is dit die moeite werd om beelde na WebP om te skakel?",
+      "description": "Omskakeling na WebP bring voordele in feitlik elke geval wanneer beelde in 'n blaaier vertoon word:",
       "grid": "two",
       "items": [
-        { "icon": "RiBuilding2Line", "title": "Business websites", "description": "Faster loading improves first impressions and reduces bounce rate." },
-        { "icon": "RiShoppingCartLine", "title": "Online stores", "description": "Product photos are often the largest files on a page; optimizing them speeds up the entire store." },
-        { "icon": "RiArticleLine", "title": "Blogs and portals", "description": "Articles with many photos load significantly faster." },
-        { "icon": "RiCameraLine", "title": "Photography portfolios", "description": "At 85–90% quality, the visual difference is unnoticeable, and files are smaller." },
-        { "icon": "RiSmartphoneLine", "title": "Web apps (PWA)", "description": "Smaller assets mean faster performance, especially on mobile devices." }
+        { "icon": "RiBuilding2Line", "title": "Besigheidswebwerwe", "description": "Vinniger laaie verbeter eerste indrukke en verminder weierstempo." },
+        { "icon": "RiShoppingCartLine", "title": "Aanlynwinkels", "description": "Produkfoto's is dikwels die grootste lêers op 'n bladsy; die optimering daarvan versnel die hele winkel." },
+        { "icon": "RiArticleLine", "title": "Blogs en portale", "description": "Artikels met baie foto's laai aansienlik vinniger." },
+        { "icon": "RiCameraLine", "title": "Fotografieportefeuljes", "description": "Teen 85–90% kwaliteit is die visuele verskil onmerkbaar, en lêers is kleiner." },
+        { "icon": "RiSmartphoneLine", "title": "Webtoepassings (PWA)", "description": "Kleiner bates beteken vinniger prestasie, veral op mobiele toestelle." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the WebP converter",
+      "title": "Gereeld gevraagde vrae oor die WebP-omskakelaar",
       "openByDefault": 1,
       "items": [
         {
-          "question": "What is WebP and how does it differ from JPG?",
-          "answer": "WebP is an image format created by Google that combines the advantages of JPG (small photo files) and PNG (transparency). WebP files are on average 25–35% smaller than JPG at comparable visual quality. All modern browsers (Chrome, Firefox, Safari, Edge) support WebP.",
-          "answerSchemaText": "WebP is a Google image format, 25–35% smaller than JPG. All modern browsers support it."
+          "question": "Wat is WebP en hoe verskil dit van JPG?",
+          "answer": "WebP is 'n beeldformaat wat deur Google geskep is en wat die voordele van JPG (klein fotolêers) en PNG (deursigtigheid) kombineer. WebP-lêers is gemiddeld 25–35% kleiner as JPG teen vergelykbare visuele kwaliteit. Alle moderne blaaiers (Chrome, Firefox, Safari, Edge) ondersteun WebP.",
+          "answerSchemaText": "WebP is 'n Google-beeldformaat, 25–35% kleiner as JPG. Alle moderne blaaiers ondersteun dit."
         },
         {
-          "question": "Does WebP support transparency like PNG?",
-          "answer": "Yes. WebP supports the alpha channel (transparency) - PNG files with transparent backgrounds will be converted correctly. However, size savings for PNGs with transparency may be less than for regular JPG photos.",
-          "answerSchemaText": "Yes, WebP supports alpha transparency. PNG files with transparent backgrounds convert correctly."
+          "question": "Ondersteun WebP deursigtigheid soos PNG?",
+          "answer": "Ja. WebP ondersteun die alfa-kanaal (deursigtigheid) - PNG-lêers met deursigtige agtergronde sal korrek omgeskakel word. Groottebesparing vir PNG's met deursigtigheid kan egter minder wees as vir gewone JPG-foto's.",
+          "answerSchemaText": "Ja, WebP ondersteun alfa-deursigtigheid. PNG-lêers met deursigtige agtergronde word korrek omgeskakel."
         },
         {
-          "question": "What quality level should I choose?",
-          "answer": "For most use cases (websites, stores, blogs), 80% quality provides a good balance between file size and appearance. For product photos or portfolios, you can choose 85–90%. Values below 70% will significantly reduce size but may introduce visible artifacts.",
-          "answerSchemaText": "80% for most uses. 85–90% for product photos. Below 70% for maximum compression."
+          "question": "Watter kwaliteitvlak moet ek kies?",
+          "answer": "Vir die meeste gebruiksgevalle (webwerwe, winkels, blogs) bied 80% kwaliteit 'n goeie balans tussen lêergrootte en voorkoms. Vir produkfoto's of portefeuljes kan jy 85–90% kies. Waardes onder 70% sal grootte aansienlik verminder, maar kan sigbare artefakte inbring.",
+          "answerSchemaText": "80% vir die meeste gebruike. 85–90% vir produkfoto's. Onder 70% vir maksimum kompressie."
         },
         {
-          "question": "How much space can I save?",
-          "answer": "Typical savings are 25–35% compared to JPG. For example, a 500 KB JPG photo after conversion to WebP will be about 325–375 KB. For PNG, savings can be even greater - up to 50–70%.",
-          "answerSchemaText": "25–35% for JPG, up to 50–70% for PNG."
+          "question": "Hoeveel spasie kan ek bespaar?",
+          "answer": "Tipiese besparings is 25–35% in vergelyking met JPG. Byvoorbeeld, 'n 500 KB JPG-foto na omskakeling na WebP sal ongeveer 325–375 KB wees. Vir PNG kan besparings selfs groter wees - tot 50–70%.",
+          "answerSchemaText": "25–35% vir JPG, tot 50–70% vir PNG."
         },
         {
-          "question": "Can I convert multiple files at once?",
-          "answer": "Yes. You can add any number of files at once - there is no limit. All will be converted, and you can download them individually or as a ZIP archive.",
-          "answerSchemaText": "Yes, unlimited batch conversion with ZIP download."
+          "question": "Kan ek veelvuldige lêers gelyktydig omskakel?",
+          "answer": "Ja. Jy kan enige aantal lêers gelyktydig byvoeg - daar is geen beperking nie. Almal sal omgeskakel word, en jy kan dit individueel of as 'n ZIP-argief aflaai.",
+          "answerSchemaText": "Ja, onbeperkte bondelomskakeling met ZIP-aflaai."
         },
         {
-          "question": "What is Smart Quality?",
-          "answer": "Smart Quality is an automatic quality adjustment mechanism that ensures the output WebP file is never larger than the original. If conversion would result in a larger file (which can happen with already heavily compressed images), the tool automatically lowers quality until the output is smaller.",
-          "answerSchemaText": "Automatic quality adjustment ensuring the output file is always smaller than the original."
+          "question": "Wat is Slim Kwaliteit?",
+          "answer": "Slim Kwaliteit is 'n outomatiese kwaliteitaanpassingsmeganisme wat verseker dat die uitvoer-WebP-lêer nooit groter as die oorspronklike is nie. As omskakeling 'n groter lêer sou lewer (wat kan gebeur met reeds swaar gekomprimeerde beelde), verlaag die instrument outomaties kwaliteit totdat die uitvoer kleiner is.",
+          "answerSchemaText": "Outomatiese kwaliteitaanpassing wat verseker dat die uitvoerlêer altyd kleiner as die oorspronklike is."
         },
         {
-          "question": "Does WebP speed up a website?",
-          "answer": "Yes. Smaller image files mean faster page loading. This directly impacts the LCP (Largest Contentful Paint) metric in Core Web Vitals - one of Google's ranking factors. Tools like PageSpeed Insights often recommend converting images to WebP.",
-          "answerSchemaText": "Yes, smaller files improve LCP and Core Web Vitals scores."
+          "question": "Versnel WebP 'n webwerf?",
+          "answer": "Ja. Kleiner beeldlêers beteken vinniger bladsylaaie. Dit het 'n direkte impak op die LCP (Largest Contentful Paint) metriek in Core Web Vitals - een van Google se ranglysfaktore. Instrumente soos PageSpeed Insights beveel dikwels aan om beelde na WebP om te skakel.",
+          "answerSchemaText": "Ja, kleiner lêers verbeter LCP- en Core Web Vitals-tellings."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
+    { "type": "toolsCarousel", "title": "Verken ander gereedskap" },
     { "type": "gap", "size": "sm" }
   ]
 }

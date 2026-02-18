@@ -2,70 +2,70 @@
   "toolKey": "wordCounter",
   "locale": "af",
   "metadata": {
-    "title": "Free Word & Character Counter – Check Text Length for SEO",
-    "description": "Count words, characters, paragraphs and reading time instantly. Check optimal text length for SEO – blog posts, product pages, landing pages. No signup.",
+    "title": "Gratis Woord- & Karakterteller – Kontroleer Tekslengte vir SEO",
+    "description": "Tel woorde, karakters, paragrawe en leestyd onmiddellik. Kontroleer optimale tekslengte vir SEO – blogplasings, produkbladsye, bestemmingsbladsye. Geen registrasie nie.",
     "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
     "path": "/af/gereedskap/woord-en-karakter-teller"
   },
   "hero": {
-    "title": "Word and character counter with length evaluation",
-    "description": "Paste your text, select a page type, and the tool will show word count, character count, paragraphs, and evaluate whether the length is appropriate for that type of content",
+    "title": "Woord- en karakterteller met lengte-evaluering",
+    "description": "Plak jou teks, kies 'n bladsytipe, en die instrument sal woordtelling, karaktertelling, paragrawe wys en evalueer of die lengte geskik is vir daardie tipe inhoud",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
     "second": {
       "href": "/af/gereedskap",
-      "label": "Tools"
+      "label": "Gereedskap"
     },
     "third": {
       "href": "/af/gereedskap/woord-en-karakter-teller",
-      "label": "Word and character counter"
+      "label": "Woord- en karakterteller"
     }
   },
   "schemas": {
     "software": {
-      "name": "Free word and character counter online",
+      "name": "Gratis woord- en karakterteller",
       "alternateName": [
-        "Word counter with text length evaluation",
-        "Online character counter",
-        "Word counting tool for copywriters",
-        "Reading time calculator",
-        "Online word counter",
-        "Check how many words a text has",
-        "Word counter for SEO",
-        "Optimal text length for a blog post"
+        "Woordteller met tekslengte-evaluering",
+        "Karakterteller",
+        "Woordtellingsinstrument vir kopiskrywers",
+        "Leestydsakrekenaar",
+        "Woordteller",
+        "Kontroleer hoeveel woorde 'n teks het",
+        "Woordteller vir SEO",
+        "Optimale tekslengte vir 'n blogplasing"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter. Checks word count, characters, paragraphs, and estimated reading time. Evaluates text length for different page types: product description, service page, homepage, landing page, blog post, guide.",
+      "description": "Gratis woord- en karakterteller. Kontroleer woordtelling, karakters, paragrawe en beraamde leestyd. Evalueer tekslengte vir verskillende bladsytipes: produkbeskrywing, diensbladsy, tuisbladsy, bestemmingsbladsy, blogplasing, gids.",
       "featureList": [
-        "Word count",
-        "Character count with and without spaces",
-        "Paragraph count",
-        "Estimated reading time",
-        "Text length evaluation for different page types",
-        "Recommended ranges for: product description, service page, homepage, landing page, blog post, guide",
-        "Copy report to clipboard"
+        "Woordtelling",
+        "Karaktertelling met en sonder spasies",
+        "Paragraaftelling",
+        "Beraamde leestyd",
+        "Tekslengte-evaluering vir verskillende bladsytipes",
+        "Aanbevole reekse vir: produkbeskrywing, diensbladsy, tuisbladsy, bestemmingsbladsy, blogplasing, gids",
+        "Kopieer verslag na knipbord"
       ]
     },
     "howTo": {
-      "name": "How to use the word and character counter",
-      "description": "Check the length of your text and evaluate whether it is appropriate for a specific page type. Learn how many words a product description, service page, blog post, or guide should have.",
+      "name": "Hoe om die woord- en karakterteller te gebruik",
+      "description": "Kontroleer die lengte van jou teks en evalueer of dit geskik is vir 'n spesifieke bladsytipe. Leer hoeveel woorde 'n produkbeskrywing, diensbladsy, blogplasing of gids moet hê.",
       "steps": [
         {
-          "name": "Select a page type",
-          "text": "Choose from the dropdown what type of page you are writing for. Each type has different recommended word count ranges."
+          "name": "Kies 'n bladsytipe",
+          "text": "Kies uit die aftreklys waarvoor jy skryf. Elke tipe het verskillende aanbevole woordtellingreekse."
         },
         {
-          "name": "Paste your text",
-          "text": "Paste or type text into the text field. The tool will automatically count words, characters (with and without spaces), paragraphs, and estimate reading time."
+          "name": "Plak jou teks",
+          "text": "Plak of tik teks in die teksveld. Die instrument sal outomaties woorde, karakters (met en sonder spasies), paragrawe tel en leestyd beraam."
         },
         {
-          "name": "Check the evaluation",
-          "text": "Look at the colored progress bar and status. Green means good length, yellow means too short, red means too long."
+          "name": "Kontroleer die evaluering",
+          "text": "Kyk na die gekleurde vorderingsbalk en status. Groen beteken goeie lengte, geel beteken te kort, rooi beteken te lank."
         },
         {
-          "name": "Copy the report",
-          "text": "The Copy Report button copies a summary with all statistics and the length evaluation to your clipboard."
+          "name": "Kopieer die verslag",
+          "text": "Die Kopieer Verslag-knoppie kopieer 'n opsomming met alle statistieke en die lengte-evaluering na jou knipbord."
         }
       ]
     }
@@ -77,8 +77,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Free word counter online - count and evaluate text length",
-      "html": "<p class=\"text-mid\">This word counting tool lets you quickly check the length of any text. Paste your content and the counter will tally words, characters, and paragraphs. You will also see how many minutes it takes to read and whether the length fits the page type you select.</p><p class=\"text-mid mt-3\">Every page type has a different purpose - a product description answers buyer questions, a blog post covers a topic in depth, and a service page explains what the client will receive. The counter shows ranges for each of these types based on analyses of content that ranks well.</p>"
+      "title": "Gratis woordteller - tel en evalueer tekslengte",
+      "html": "<p class=\"text-mid\">Hierdie woordtellingsinstrument laat jou toe om vinnig die lengte van enige teks te kontroleer. Plak jou inhoud en die teller sal woorde, karakters en paragrawe tel. Jy sal ook sien hoeveel minute dit neem om te lees en of die lengte by die bladsytipe pas wat jy kies.</p><p class=\"text-mid mt-3\">Elke bladsytipe het 'n ander doel - 'n produkbeskrywing beantwoord kopersvrae, 'n blogplasing dek 'n onderwerp in diepte, en 'n diensbladsy verduidelik wat die kliënt sal ontvang. Die teller wys reekse vir elk van hierdie tipes gebaseer op ontledings van inhoud wat goed rangeer.</p>"
     },
     {
       "type": "gap",
@@ -86,29 +86,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "How to use the word and character counter",
-      "description": "Checking text length takes less than a minute:",
+      "title": "Hoe om die woord- en karakterteller te gebruik",
+      "description": "Die kontrolering van tekslengte neem minder as 'n minuut:",
       "grid": "four",
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "1. Select page type",
-          "description": "Choose from the dropdown what type of page you are writing for. Each type has different recommended minimum and maximum word counts."
+          "title": "1. Kies bladsytipe",
+          "description": "Kies uit die aftreklys waarvoor jy skryf. Elke tipe het verskillende aanbevole minimum en maksimum woordtellings."
         },
         {
           "icon": "RiFileTextLine",
-          "title": "2. Paste your text",
-          "description": "Paste or type text into the large field on the right. The tool will immediately count words, characters (with and without spaces), paragraphs, and estimate reading time."
+          "title": "2. Plak jou teks",
+          "description": "Plak of tik teks in die groot veld aan die regterkant. Die instrument sal onmiddellik woorde, karakters (met en sonder spasies), paragrawe tel en leestyd beraam."
         },
         {
           "icon": "RiBarChartLine",
-          "title": "3. Check the evaluation",
-          "description": "Look at the colored progress bar and status. Green means good length, yellow means too short, red means too long. Below you will find a helpful tip."
+          "title": "3. Kontroleer die evaluering",
+          "description": "Kyk na die gekleurde vorderingsbalk en status. Groen beteken goeie lengte, geel beteken te kort, rooi beteken te lank. Hieronder sal jy 'n nuttige wenk vind."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Copy the report",
-          "description": "The Copy Report button copies a summary with word count, character count, paragraphs, reading time, and length evaluation to your clipboard."
+          "title": "4. Kopieer die verslag",
+          "description": "Die Kopieer Verslag-knoppie kopieer 'n opsomming met woordtelling, karaktertelling, paragrawe, leestyd en lengte-evaluering na jou knipbord."
         }
       ]
     },
@@ -118,34 +118,34 @@
     },
     {
       "type": "sectionSteps",
-      "title": "What the counter measures - words, characters, reading time",
-      "description": "The counter tracks five key metrics:",
+      "title": "Wat die teller meet - woorde, karakters, leestyd",
+      "description": "Die teller volg vyf sleutelmetrieke:",
       "grid": "two",
       "items": [
         {
           "icon": "RiText",
-          "title": "Words",
-          "description": "Total word count. This is the primary indicator of text length."
+          "title": "Woorde",
+          "description": "Totale woordtelling. Dit is die primêre aanwyser van tekslengte."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Characters (with spaces)",
-          "description": "All characters including spaces. Useful when a CMS has a character limit (e.g., marketplace listings)."
+          "title": "Karakters (met spasies)",
+          "description": "Alle karakters insluitend spasies. Nuttig wanneer 'n CMS 'n karakterlimiet het (bv. markpleklyste)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Characters (without spaces)",
-          "description": "Only letters, digits, and punctuation. Sometimes required by print shops or for translation billing."
+          "title": "Karakters (sonder spasies)",
+          "description": "Slegs letters, syfers en leestekens. Soms vereis deur drukkerye of vir vertalingsfakturering."
         },
         {
           "icon": "RiParagraph",
-          "title": "Paragraphs",
-          "description": "How many text blocks separated by blank lines you have. Helps assess whether the text is well structured."
+          "title": "Paragrawe",
+          "description": "Hoeveel teksblokke geskei deur leë lyne jy het. Help om te beoordeel of die teks goed gestruktureer is."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Reading time",
-          "description": "The reading time calculator shows how many minutes it takes to read the text at an average speed of 200 words per minute."
+          "title": "Leestyd",
+          "description": "Die leestydsakrekenaar wys hoeveel minute dit neem om die teks te lees teen 'n gemiddelde snelheid van 200 woorde per minuut."
         }
       ]
     },
@@ -155,10 +155,10 @@
     },
     {
       "type": "sectionDemo",
-      "title": "How to interpret the results",
-      "subtitle": "Evaluation statuses",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">Good length</span><span class=\"text-mid text-sm!\">Text is within range</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Below range</span><span class=\"text-mid text-sm!\">Text is shorter than typical</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Above range</span><span class=\"text-mid text-sm!\">Text is longer than typical</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Progress</span><span class=\"text-mid\">1200 / 1200–3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
-      "html": "<p class=\"text-mid mb-4\">The colored progress bar and status help you quickly assess text length:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Good length</strong> (green) - the text falls within the approximate range for the selected page type.</li><li><strong class=\"text-warning-text\">Below range</strong> (yellow) - the text is shorter than typical for this page type. If it answers all of the reader's questions, the length may be fine.</li><li><strong class=\"text-error-text\">Above range</strong> (red) - the text is longer than typical. If every paragraph adds new information, the length is justified.</li></ul><p class=\"text-mid mt-4\">The ranges are based on analyses of content that ranks well in search engines. If the text answers the reader's questions, the length is appropriate regardless of the counter result.</p>"
+      "title": "Hoe om die resultate te interpreteer",
+      "subtitle": "Evalueringsstatusse",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">Goeie lengte</span><span class=\"text-mid text-sm!\">Teks is binne reeks</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Onder reeks</span><span class=\"text-mid text-sm!\">Teks is korter as tipies</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Bo reeks</span><span class=\"text-mid text-sm!\">Teks is langer as tipies</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Vordering</span><span class=\"text-mid\">1200 / 1200–3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Die gekleurde vorderingsbalk en status help jou om vinnig tekslengte te beoordeel:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Goeie lengte</strong> (groen) - die teks val binne die benaderde reeks vir die geselekteerde bladsytipe.</li><li><strong class=\"text-warning-text\">Onder reeks</strong> (geel) - die teks is korter as tipies vir hierdie bladsytipe. As dit al die leser se vrae beantwoord, kan die lengte goed wees.</li><li><strong class=\"text-error-text\">Bo reeks</strong> (rooi) - die teks is langer as tipies. As elke paragraaf nuwe inligting byvoeg, is die lengte geregverdig.</li></ul><p class=\"text-mid mt-4\">Die reekse is gebaseer op ontledings van inhoud wat goed in soekenjins rangeer. As die teks die leser se vrae beantwoord, is die lengte toepaslik ongeag die tellerresultaat.</p>"
     },
     {
       "type": "gap",

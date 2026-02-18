@@ -2,76 +2,76 @@
   "toolKey": "contrastChecker",
   "locale": "af",
   "metadata": {
-    "title": "Free Color Contrast Checker – WCAG 2.1 Compliance",
-    "description": "Check if your text and background colors are readable per WCAG 2.1. Enter HEX, RGB or HSL codes, see the contrast ratio and use auto-fix to find accessible.",
+    "title": "Gratis Kleurkontras-nagaaier – WCAG 2.1-nakoming",
+    "description": "Kyk of jou teks- en agtergrondkleure leesbaar is volgens WCAG 2.1. Voer HEX-, RGB- of HSL-kodes in, sien die kontrasverhouding en gebruik outo-regstelling om toeganklike kleure te vind.",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/af/gereedskap/kleurkontras-nagaaier"
   },
   "hero": {
-    "title": "Color contrast and readability checker",
-    "description": "Enter a text and background color, and the tool will show whether contrast is sufficient. Calculations are based on the international accessibility standard WCAG 2.1, which defines minimum contrast values for different content types.",
+    "title": "Kleurkontras- en leesbaarheidnagaaier",
+    "description": "Voer 'n teks- en agtergrondkleur in, en die instrument sal wys of die kontras voldoende is. Berekeninge is gebaseer op die internasionale toeganklikheidstandaard WCAG 2.1, wat minimum kontraswaardes vir verskillende inhoudtipes definieer.",
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
   "breadcrumbs": {
     "second": {
       "href": "/af/gereedskap",
-      "label": "Tools"
+      "label": "Gereedskap"
     },
     "third": {
       "href": "/af/gereedskap/kleurkontras-nagaaier",
-      "label": "Color contrast checker"
+      "label": "Kleurkontras-nagaaier"
     }
   },
   "schemas": {
     "software": {
-      "name": "Color contrast and readability checker online",
+      "name": "Kleurkontras- en leesbaarheidnagaaier aanlyn",
       "alternateName": [
-        "Color readability tester",
-        "Text and background contrast checker",
-        "Readability checking tool",
-        "Color contrast calculator",
-        "WCAG contrast tester",
-        "Color accessibility checker",
-        "Are my colors readable"
+        "Kleurleesbaarheidtoetser",
+        "Teks- en agtergrondkontras-nagaaier",
+        "Leesbaarheid-nagaaierinstrument",
+        "Kleurkontras-sakrekenaar",
+        "WCAG-kontrastoetser",
+        "Kleurtoeganklkheid-nagaaier",
+        "Is my kleure leesbaar"
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
-      "description": "Check if text and background colors are readable for all users. The tool calculates contrast ratio per WCAG 2.1 and shows whether you meet accessibility requirements.",
+      "description": "Kyk of teks- en agtergrondkleure leesbaar is vir alle gebruikers. Die instrument bereken die kontrasverhouding volgens WCAG 2.1 en wys of jy aan toeganklikheidsvereistes voldoen.",
       "featureList": [
-        "Contrast ratio calculation",
-        "WCAG 2.1 Level AA compliance check",
-        "WCAG 2.1 Level AAA compliance check",
-        "Normal text testing",
-        "Large text and heading testing",
-        "Icon and UI component testing",
-        "HEX color format support",
-        "RGB and RGBA color format support",
-        "HSL and HSLA color format support",
-        "Color picker for visual selection",
-        "Live text preview",
-        "Automatic color matching feature",
-        "Local processing in the browser"
+        "Kontrasverhouding-berekening",
+        "WCAG 2.1 Vlak AA-nakomingskontrole",
+        "WCAG 2.1 Vlak AAA-nakomingskontrole",
+        "Normale teks-toetsing",
+        "Groot teks- en opskriftoetsing",
+        "Ikoon- en UI-komponenttoetsing",
+        "HEX-kleurformaat-ondersteuning",
+        "RGB- en RGBA-kleurformaat-ondersteuning",
+        "HSL- en HSLA-kleurformaat-ondersteuning",
+        "Kleurkieser vir visuele seleksie",
+        "Regstreekse teksvoorskou",
+        "Outomatiese kleurpassingsfunksie",
+        "Plaaslike verwerking in die blaaier"
       ]
     },
     "howTo": {
-      "name": "How to check color contrast and readability online",
-      "description": "How to check text and background color readability per WCAG standard. Enter colors, read the contrast ratio, and use the automatic matching feature.",
+      "name": "Hoe om kleurkontras en leesbaarheid aanlyn na te gaan",
+      "description": "Hoe om teks- en agtergrondkleur-leesbaarheid volgens die WCAG-standaard na te gaan. Voer kleure in, lees die kontrasverhouding en gebruik die outomatiese passingsfunksie.",
       "steps": [
         {
-          "name": "Choose the text color",
-          "text": "Enter a color code (e.g., #333333) in HEX, RGB, or HSL format - or pick a color from the color picker."
+          "name": "Kies die tekskleur",
+          "text": "Voer 'n kleurkode (bv. #333333) in HEX-, RGB- of HSL-formaat in - of kies 'n kleur met die kleurkieser."
         },
         {
-          "name": "Choose the background color",
-          "text": "Enter the background color on which the text will be displayed - this can be a section, block, or page background color."
+          "name": "Kies die agtergrondkleur",
+          "text": "Voer die agtergrondkleur in waarop die teks vertoon sal word - dit kan 'n afdeling-, blok- of bladsy-agtergrondkleur wees."
         },
         {
-          "name": "Read the result",
-          "text": "The tool will show the contrast ratio and whether the colors meet AA/AAA requirements."
+          "name": "Lees die resultaat",
+          "text": "Die instrument sal die kontrasverhouding wys en of die kleure aan AA/AAA-vereistes voldoen."
         },
         {
-          "name": "Adjust colors",
-          "text": "If contrast is too low, the Match feature automatically suggests a text color variant that meets the selected WCAG threshold."
+          "name": "Pas kleure aan",
+          "text": "As die kontras te laag is, stel die Pas-funksie outomaties 'n tekskleurvariant voor wat aan die geselekteerde WCAG-drempel voldoen."
         }
       ]
     }
@@ -83,8 +83,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Why does color readability matter?",
-      "html": "<p class=\"text-mid\">Readability is the luminance difference between the text color and the background color. The greater the difference, the easier it is to read the text. Too low contrast makes content hard to read - especially for people with vision impairments, older adults, or in difficult lighting conditions (e.g., on a phone in direct sunlight).</p><p class=\"text-mid mt-3\">According to the <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">World Health Organization (WHO)</a>, approximately 2.2 billion people worldwide have some form of vision impairment. In addition, millions have color blindness (about 8% of men and 0.5% of women), and many more experience age-related vision decline.</p><p class=\"text-mid mt-3\">The tool calculates the contrast ratio using the formula specified in the <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Web Content Accessibility Guidelines)</a> - international digital accessibility guidelines. The result allows an objective assessment of whether colors are readable enough, regardless of monitor settings or individual color perception.</p>"
+      "title": "Waarom maak kleurleesbaarheid saak?",
+      "html": "<p class=\"text-mid\">Leesbaarheid is die heldheidsverskil tussen die tekskleur en die agtergrondkleur. Hoe groter die verskil, hoe makliker is dit om die teks te lees. Te lae kontras maak inhoud moeilik leesbaar - veral vir mense met siggebreke, ouer volwassenes, of in moeilike beligting (bv. op 'n foon in direkte sonlig).</p><p class=\"text-mid mt-3\">Volgens die <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Wêreldgesondheidsorganisasie (WGO)</a> het ongeveer 2,2 miljard mense wêreldwyd een of ander vorm van siggebreke. Daarbenewens het miljoene kleurblindheid (ongeveer 8% van mans en 0,5% van vroue), en nog meer ervaar ouderdomsverwante sigverswakking.</p><p class=\"text-mid mt-3\">Die instrument bereken die kontrasverhouding met die formule gespesifiseer in die <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Web Content Accessibility Guidelines)</a> - internasionale digitale toeganklikheidsriglyne. Die resultaat maak 'n objektiewe beoordeling moontlik of kleure leesbaar genoeg is, ongeag monitorinstellings of individuele kleurwaarneming.</p>"
     },
     {
       "type": "gap",
@@ -92,29 +92,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "How to use the color contrast checker",
-      "description": "Checking readability takes just a few seconds:",
+      "title": "Hoe om die kleurkontras-nagaaier te gebruik",
+      "description": "Om leesbaarheid na te gaan, neem net 'n paar sekondes:",
       "grid": "four",
       "items": [
         {
           "icon": "RiPaletteLine",
-          "title": "1. Enter the text color",
-          "description": "Type a color code (e.g., #333333) in HEX, RGB, or HSL format - or pick a color from the color picker."
+          "title": "1. Voer die tekskleur in",
+          "description": "Tik 'n kleurkode (bv. #333333) in HEX-, RGB- of HSL-formaat in - of kies 'n kleur met die kleurkieser."
         },
         {
           "icon": "RiPaintBrushLine",
-          "title": "2. Enter the background color",
-          "description": "Enter the background color on which the text will be displayed - this can be a section, block, or full page background."
+          "title": "2. Voer die agtergrondkleur in",
+          "description": "Voer die agtergrondkleur in waarop die teks vertoon sal word - dit kan 'n afdeling-, blok- of volbladsy-agtergrond wees."
         },
         {
           "icon": "RiCheckboxCircleLine",
-          "title": "3. Read the result",
-          "description": "The tool will calculate the contrast ratio and show whether the colors meet WCAG requirements for normal text, large text, and icons."
+          "title": "3. Lees die resultaat",
+          "description": "Die instrument sal die kontrasverhouding bereken en wys of die kleure aan WCAG-vereistes vir normale teks, groot teks en ikone voldoen."
         },
         {
           "icon": "RiEqualizerLine",
-          "title": "4. Adjust colors",
-          "description": "If contrast is too low, the Match feature automatically suggests a color variant that meets the selected threshold."
+          "title": "4. Pas kleure aan",
+          "description": "As die kontras te laag is, stel die Pas-funksie outomaties 'n kleurvariant voor wat aan die geselekteerde drempel voldoen."
         }
       ]
     },
@@ -124,22 +124,22 @@
     },
     {
       "type": "sectionTabs",
-      "title": "What color formats are supported?",
+      "title": "Watter kleurformate word ondersteun?",
       "tabs": [
         {
           "title": "HEX",
           "icon": "RiHashtag",
-          "html": "<div><p class=\"text-mid mb-3\">Hexadecimal format - the most common in web design. Starts with <code class=\"rounded bg-black/5 px-1\">#</code> and contains 3 or 6 characters (digits 0-9 and letters A-F).</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">#fff</code> - white (shorthand)</li><li><code class=\"rounded bg-black/5 px-1\">#ffffff</code> - white (full form)</li><li><code class=\"rounded bg-black/5 px-1\">#1a73e8</code> - blue</li></ul></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Heksadesimale formaat - die algemeenste in webontwerp. Begin met <code class=\"rounded bg-black/5 px-1\">#</code> en bevat 3 of 6 karakters (syfers 0-9 en letters A-F).</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">#fff</code> - wit (verkort)</li><li><code class=\"rounded bg-black/5 px-1\">#ffffff</code> - wit (vol vorm)</li><li><code class=\"rounded bg-black/5 px-1\">#1a73e8</code> - blou</li></ul></div>"
         },
         {
           "title": "RGB / RGBA",
           "icon": "RiPaletteLine",
-          "html": "<div><p class=\"text-mid mb-3\">Format based on three channels: Red, Green, Blue. Each channel accepts a value from 0 to 255. The RGBA variant adds a fourth parameter - transparency (alpha) from 0 to 1.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">rgb(255, 255, 255)</code> - white</li><li><code class=\"rounded bg-black/5 px-1\">rgba(0, 0, 0, 0.8)</code> - black at 80% opacity</li></ul></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Formaat gebaseer op drie kanale: Rooi, Groen, Blou. Elke kanaal aanvaar 'n waarde van 0 tot 255. Die RGBA-variant voeg 'n vierde parameter by - deursigtigheid (alfa) van 0 tot 1.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">rgb(255, 255, 255)</code> - wit</li><li><code class=\"rounded bg-black/5 px-1\">rgba(0, 0, 0, 0.8)</code> - swart teen 80% ondeursigtigheid</li></ul></div>"
         },
         {
           "title": "HSL / HSLA",
           "icon": "RiEqualizerLine",
-          "html": "<div><p class=\"text-mid mb-3\">Format based on Hue (0-360°), Saturation (0-100%), and Lightness (0-100%). The HSLA variant adds transparency. This format is useful when you want to adjust the brightness or saturation of a color.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">hsl(0, 0%, 100%)</code> - white</li><li><code class=\"rounded bg-black/5 px-1\">hsla(217, 91%, 60%, 0.9)</code> - blue at 90% opacity</li></ul></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Formaat gebaseer op Kleurtoon (0-360°), Versadiging (0-100%) en Helderheid (0-100%). Die HSLA-variant voeg deursigtigheid by. Hierdie formaat is nuttig wanneer jy die helderheid of versadiging van 'n kleur wil aanpas.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">hsl(0, 0%, 100%)</code> - wit</li><li><code class=\"rounded bg-black/5 px-1\">hsla(217, 91%, 60%, 0.9)</code> - blou teen 90% ondeursigtigheid</li></ul></div>"
         }
       ]
     },
@@ -149,9 +149,9 @@
     },
     {
       "type": "sectionDemo",
-      "title": "How to interpret the readability test results",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Contrast ratio</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Normal text</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div><div class=\"rounded-lg border border-neutral-200 px-3 py-2\" style=\"color: var(--black3); background-color: var(--white)\"><p class=\"text-sm!\">Sample normal text</p></div></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Large text</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 3:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 4.5:1)</span></div></div></div></div>",
-      "html": "<p class=\"text-mid mb-4\">After entering colors, the tool displays results in three sections:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normal text</strong> - requires 4.5:1 contrast (AA) or 7:1 (AAA). Applies to text below 18pt (24px) or below 14pt bold.</li><li><strong>Large / bold text</strong> - requires 3:1 contrast (AA) or 4.5:1 (AAA). Applies to headings, buttons, and highlights.</li><li><strong>Icons</strong> - requires 3:1 contrast (AA). Applies to icons and graphical UI elements that convey information.</li></ul><p class=\"text-mid mt-3\"><strong>Green indicator</strong> means the requirement is met. <strong>Red indicator</strong> means contrast is too low and needs improvement.</p>"
+      "title": "Hoe om die leesbaarheidtoetsresultate te interpreteer",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Kontrasverhouding</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Normale teks</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div><div class=\"rounded-lg border border-neutral-200 px-3 py-2\" style=\"color: var(--black3); background-color: var(--white)\"><p class=\"text-sm!\">Voorbeeld normale teks</p></div></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Groot teks</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 3:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 4.5:1)</span></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Na die invoer van kleure, vertoon die instrument resultate in drie afdelings:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normale teks</strong> - vereis 4.5:1 kontras (AA) of 7:1 (AAA). Geld vir teks onder 18pt (24px) of onder 14pt vetdruk.</li><li><strong>Groot / vetgedrukte teks</strong> - vereis 3:1 kontras (AA) of 4.5:1 (AAA). Geld vir opskrifte, knoppies en uitligtings.</li><li><strong>Ikone</strong> - vereis 3:1 kontras (AA). Geld vir ikone en grafiese UI-elemente wat inligting oordra.</li></ul><p class=\"text-mid mt-3\"><strong>Groen aanwyser</strong> beteken die vereiste is nagekom. <strong>Rooi aanwyser</strong> beteken die kontras is te laag en moet verbeter word.</p>"
     },
     {
       "type": "gap",
@@ -159,8 +159,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "What do the readability test results mean?",
-      "html": "<p class=\"text-mid mb-4\">The tool shows the contrast ratio on a scale from 1:1 (no contrast) to 21:1 (maximum contrast - black on white). The result is compared against thresholds defined in the WCAG standard:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normal text</strong> - requires at least 4.5:1 for Level AA (minimum standard) or 7:1 for Level AAA (enhanced standard). Applies to text under 18pt (24px) or under 14pt (18.5px) bold.</li><li><strong>Large / bold text</strong> - requires at least 3:1 for Level AA or 4.5:1 for Level AAA. Applies to text from 18pt (24px) or from 14pt (18.5px) bold - headings, buttons, highlights.</li><li><strong>Icons and UI elements</strong> - require at least 3:1 for Level AA. Applies to icons, buttons, form fields, and other interface elements that convey information.</li></ul><p class=\"text-mid mt-3\"><strong>Level AA</strong> is the minimum required by digital accessibility regulations in many countries, including the <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016L2102\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">EU Web Accessibility Directive</a>. <strong>Level AAA</strong> provides better readability but is not always practical to achieve for all elements.</p>"
+      "title": "Wat beteken die leesbaarheidtoetsresultate?",
+      "html": "<p class=\"text-mid mb-4\">Die instrument wys die kontrasverhouding op 'n skaal van 1:1 (geen kontras) tot 21:1 (maksimum kontras - swart op wit). Die resultaat word vergelyk met drempels wat in die WCAG-standaard gedefinieer is:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normale teks</strong> - vereis ten minste 4.5:1 vir Vlak AA (minimum standaard) of 7:1 vir Vlak AAA (verbeterde standaard). Geld vir teks onder 18pt (24px) of onder 14pt (18.5px) vetdruk.</li><li><strong>Groot / vetgedrukte teks</strong> - vereis ten minste 3:1 vir Vlak AA of 4.5:1 vir Vlak AAA. Geld vir teks vanaf 18pt (24px) of vanaf 14pt (18.5px) vetdruk - opskrifte, knoppies, uitligtings.</li><li><strong>Ikone en UI-elemente</strong> - vereis ten minste 3:1 vir Vlak AA. Geld vir ikone, knoppies, vormvelde en ander koppelvlakelemente wat inligting oordra.</li></ul><p class=\"text-mid mt-3\"><strong>Vlak AA</strong> is die minimum wat deur digitale toeganklikheidsregulasies in baie lande vereis word, insluitend die <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016L2102\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">EU Webtoeganlikheidsrichtlijn</a>. <strong>Vlak AAA</strong> bied beter leesbaarheid maar is nie altyd prakties om vir alle elemente te bereik nie.</p>"
     },
     {
       "type": "gap",
@@ -168,8 +168,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Automatic color matching to WCAG requirements",
-      "html": "<p class=\"text-mid mb-4\">If contrast is too low, you don't need to search for the right color by trial and error. The <strong>Match</strong> feature automatically finds a text color variant that meets the selected contrast threshold.</p><p class=\"text-mid mb-4\">How matching works:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Select the matching target from the list - e.g., AA for normal text or AAA for large text.</li><li>Click the Match button.</li><li>The tool will search through lightness variants of the text color and suggest the closest one that meets the requirements.</li><li>The suggested color can be copied to the clipboard or immediately set as the new text color.</li></ol><p class=\"text-mid mt-3\">The algorithm preserves the hue and saturation of the original color, changing only the lightness. The suggested color stays consistent with the visual identity while meeting the accessibility standard.</p>"
+      "title": "Outomatiese kleurpassing aan WCAG-vereistes",
+      "html": "<p class=\"text-mid mb-4\">As die kontras te laag is, hoef jy nie deur proefneming na die regte kleur te soek nie. Die <strong>Pas</strong>-funksie vind outomaties 'n tekskleurvariant wat aan die geselekteerde kontrasdrempel voldoen.</p><p class=\"text-mid mb-4\">Hoe passing werk:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Kies die passingsdoelwit uit die lys - bv. AA vir normale teks of AAA vir groot teks.</li><li>Klik op die Pas-knoppie.</li><li>Die instrument sal deur heldheidsvariante van die tekskleur soek en die naaste een voorstel wat aan die vereistes voldoen.</li><li>Die voorgestelde kleur kan na die knipbord gekopieer word of onmiddellik as die nuwe tekskleur gestel word.</li></ol><p class=\"text-mid mt-3\">Die algoritme behou die kleurtoon en versadiging van die oorspronklike kleur en verander slegs die helderheid. Die voorgestelde kleur bly konsekwent met die visuele identiteit terwyl dit aan die toeganklikheidsstandaard voldoen.</p>"
     },
     {
       "type": "gap",
@@ -177,63 +177,63 @@
     },
     {
       "type": "sectionFeatureComparison",
-      "title": "What do AA and AAA levels mean in the WCAG standard?",
+      "title": "Wat beteken AA- en AAA-vlakke in die WCAG-standaard?",
       "plans": [
         {
           "id": "aa",
-          "name": "Level AA (minimum)",
+          "name": "Vlak AA (minimum)",
           "highlighted": true
         },
         {
           "id": "aaa",
-          "name": "Level AAA (enhanced)"
+          "name": "Vlak AAA (verbeter)"
         }
       ],
       "features": [
         {
-          "name": "Normal text - min. 4.5:1",
+          "name": "Normale teks - min. 4.5:1",
           "values": {
             "aa": true,
             "aaa": true
           }
         },
         {
-          "name": "Normal text - min. 7:1",
+          "name": "Normale teks - min. 7:1",
           "values": {
             "aa": false,
             "aaa": true
           }
         },
         {
-          "name": "Large / bold text - min. 3:1",
+          "name": "Groot / vetgedrukte teks - min. 3:1",
           "values": {
             "aa": true,
             "aaa": true
           }
         },
         {
-          "name": "Large / bold text - min. 4.5:1",
+          "name": "Groot / vetgedrukte teks - min. 4.5:1",
           "values": {
             "aa": false,
             "aaa": true
           }
         },
         {
-          "name": "Icons and UI elements - min. 3:1",
+          "name": "Ikone en UI-elemente - min. 3:1",
           "values": {
             "aa": true,
             "aaa": true
           }
         },
         {
-          "name": "Legally required (EU directive)",
+          "name": "Wetlik vereis (EU-riglyn)",
           "values": {
             "aa": true,
             "aaa": false
           }
         },
         {
-          "name": "Recommended for key content",
+          "name": "Aanbeveel vir sleutelinhoud",
           "values": {
             "aa": true,
             "aaa": true
@@ -247,39 +247,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Where should you check color readability?",
-      "description": "Readability matters everywhere someone needs to read text or recognize a UI element:",
+      "title": "Waar moet jy kleurleesbaarheid nagaan?",
+      "description": "Leesbaarheid maak oral saak waar iemand teks moet lees of 'n UI-element moet herken:",
       "grid": "three",
       "items": [
         {
           "icon": "RiGlobalLine",
-          "title": "Websites",
-          "description": "Text on pages, buttons, links, forms. Especially important for business sites where visitors have varying ages and visual abilities."
+          "title": "Webwerwe",
+          "description": "Teks op bladsye, knoppies, skakels, vorms. Veral belangrik vir besigheidswebwerwe waar besoekers verskillende ouderdomme en visuele vermoëns het."
         },
         {
           "icon": "RiShoppingCartLine",
-          "title": "Online stores",
-          "description": "Prices, Buy Now buttons, product information. Low readability can mean lost orders."
+          "title": "Aanlynwinkels",
+          "description": "Pryse, Koop Nou-knoppies, produkinligting. Lae leesbaarheid kan verlore bestellings beteken."
         },
         {
           "icon": "RiSlideshowLine",
-          "title": "Presentations",
-          "description": "Slides displayed via projector often have weaker contrast than on a monitor. Check colors before presenting."
+          "title": "Aanbiedings",
+          "description": "Skyfies wat via 'n projektor vertoon word, het dikwels swakker kontras as op 'n monitor. Kontroleer kleure voor die aanbieding."
         },
         {
           "icon": "RiPrinterLine",
-          "title": "Posters and flyers",
-          "description": "Printed materials viewed in various lighting conditions require high contrast."
+          "title": "Plakkate en pamflette",
+          "description": "Gedrukte materiaal wat in verskeie beligtingstoestande bekyk word, vereis hoë kontras."
         },
         {
           "icon": "RiSmartphoneLine",
-          "title": "Mobile apps",
-          "description": "Phones are used in bright sunlight, at night, and by people of all ages."
+          "title": "Mobiele toepassings",
+          "description": "Fone word in helder sonlig, snags en deur mense van alle ouderdomme gebruik."
         },
         {
           "icon": "RiRestaurantLine",
-          "title": "Restaurant menus",
-          "description": "Often printed on colored paper or with decorative fonts - easy to end up with too low contrast."
+          "title": "Restaurantspyskaarte",
+          "description": "Dikwels gedruk op gekleurde papier of met dekoratiewe lettertipes - maklik om met te lae kontras te eindig."
         }
       ]
     },
@@ -289,8 +289,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Color readability for color-blind users",
-      "html": "<p class=\"text-mid mb-4\">Color blindness affects about 8% of men and 0.5% of women. People with color blindness may have difficulty distinguishing certain color pairs, even if the luminance contrast is sufficient.</p><p class=\"text-mid mb-4\">Most common types of color blindness:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deuteranopia</strong> - difficulty distinguishing green and red (most common form)</li><li><strong>Protanopia</strong> - difficulty seeing red</li><li><strong>Tritanopia</strong> - difficulty seeing blue and yellow (rare)</li></ul><p class=\"text-mid mt-3\">This tool checks luminance contrast, which is important for all users. However, when designing, it is also worth avoiding problematic color combinations (e.g., red text on a green background) and not relying solely on color to convey information - use shapes, icons, and text as well.</p>"
+      "title": "Kleurleesbaarheid vir kleurblinde gebruikers",
+      "html": "<p class=\"text-mid mb-4\">Kleurblindheid raak ongeveer 8% van mans en 0,5% van vroue. Mense met kleurblindheid kan moeilikheid hê om sekere kleurpare te onderskei, selfs al is die helderheidskontras voldoende.</p><p class=\"text-mid mb-4\">Mees algemene tipes kleurblindheid:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deuteranopie</strong> - moeilikheid om groen en rooi te onderskei (algemeenste vorm)</li><li><strong>Protanopie</strong> - moeilikheid om rooi te sien</li><li><strong>Tritanopie</strong> - moeilikheid om blou en geel te sien (skaars)</li></ul><p class=\"text-mid mt-3\">Hierdie instrument kontroleer helderheidskontras, wat vir alle gebruikers belangrik is. Wanneer jy ontwerp, is dit egter ook die moeite werd om problematiese kleurkombinasies te vermy (bv. rooi teks op 'n groen agtergrond) en nie uitsluitlik op kleur te steun om inligting oor te dra nie - gebruik ook vorms, ikone en teks.</p>"
     },
     {
       "type": "gap",
@@ -298,33 +298,33 @@
     },
     {
       "type": "sectionSteps",
-      "title": "What makes this contrast and readability checker special?",
+      "title": "Wat maak hierdie kontras- en leesbaarheidnagaaier spesiaal?",
       "grid": "two",
       "items": [
         {
           "icon": "RiEyeLine",
-          "title": "Objective evaluation based on a mathematical formula",
-          "description": "Contrast ratio is calculated using the WCAG formula - the result does not depend on monitor settings or individual color perception."
+          "title": "Objektiewe evaluering gebaseer op 'n wiskundige formule",
+          "description": "Die kontrasverhouding word met die WCAG-formule bereken - die resultaat hang nie af van monitorinstellings of individuele kleurwaarneming nie."
         },
         {
           "icon": "RiShieldCheckLine",
-          "title": "Compliance with international WCAG standard",
-          "description": "Results match WCAG 2.1 requirements, which form the basis of digital accessibility regulations in the EU and many other countries."
+          "title": "Nakoming van internasionale WCAG-standaard",
+          "description": "Resultate stem ooreen met WCAG 2.1-vereistes, wat die grondslag vorm van digitale toeganklikheidsregulasies in die EU en baie ander lande."
         },
         {
           "icon": "RiMagicLine",
-          "title": "Automatic color matching to threshold",
-          "description": "The Match feature finds a text color variant that meets the selected contrast threshold - preserves hue, changes only lightness."
+          "title": "Outomatiese kleurpassing aan drempel",
+          "description": "Die Pas-funksie vind 'n tekskleurvariant wat aan die geselekteerde kontrasdrempel voldoen - behou kleurtoon, verander slegs helderheid."
         },
         {
           "icon": "RiStackLine",
-          "title": "Five color formats",
-          "description": "Supported formats: HEX, RGB, RGBA, HSL, and HSLA. Color code can be pasted directly from Figma, Photoshop, or a CSS stylesheet."
+          "title": "Vyf kleurformate",
+          "description": "Ondersteunde formate: HEX, RGB, RGBA, HSL en HSLA. Kleurkode kan direk uit Figma, Photoshop of 'n CSS-stylblad geplak word."
         },
         {
           "icon": "RiInfinityLine",
-          "title": "Three content types in one test",
-          "description": "A single check shows the result for normal text, large text (headings, buttons), and icons - no need to test each type separately."
+          "title": "Drie inhoudtipes in een toets",
+          "description": "'n Enkele kontrole wys die resultaat vir normale teks, groot teks (opskrifte, knoppies) en ikone - geen nodigheid om elke tipe afsonderlik te toets nie."
         }
       ]
     },
@@ -334,40 +334,40 @@
     },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the color contrast checker",
+      "title": "Gereeld gevraagde vrae oor die kleurkontras-nagaaier",
       "openByDefault": 1,
       "items": [
         {
-          "question": "What is a color contrast ratio?",
-          "answer": "A contrast ratio is a measure of the luminance difference between two colors. The scale ranges from 1:1 (no difference - e.g., white text on white background) to 21:1 (maximum difference - black text on white background). The higher the ratio, the easier it is to distinguish text from the background."
+          "question": "Wat is 'n kleurkontrasverhouding?",
+          "answer": "'n Kontrasverhouding is 'n maatstaf van die heldheidsverskil tussen twee kleure. Die skaal wissel van 1:1 (geen verskil - bv. wit teks op wit agtergrond) tot 21:1 (maksimum verskil - swart teks op wit agtergrond). Hoe hoër die verhouding, hoe makliker is dit om teks van die agtergrond te onderskei."
         },
         {
-          "question": "What contrast is sufficient according to WCAG?",
-          "answer": "For normal text, the minimum is 4.5:1 (Level AA). For large text - headings from 18pt or bold text from 14pt - 3:1 is sufficient. For icons and UI components, 3:1 is also required. These thresholds ensure readability for most users, including those with impaired vision."
+          "question": "Watter kontras is voldoende volgens WCAG?",
+          "answer": "Vir normale teks is die minimum 4.5:1 (Vlak AA). Vir groot teks - opskrifte vanaf 18pt of vetgedrukte teks vanaf 14pt - is 3:1 voldoende. Vir ikone en UI-komponente word 3:1 ook vereis. Hierdie drempels verseker leesbaarheid vir die meeste gebruikers, insluitend diegene met verswakte sig."
         },
         {
-          "question": "Is color contrast important for color-blind users?",
-          "answer": "The checker tests luminance contrast, which matters for all users, including those with color blindness. However, color blindness is a color perception issue, not a luminance issue - so in addition to contrast, avoid problematic color pairs (e.g., red text on green background) and don't rely solely on color to convey information."
+          "question": "Is kleurkontras belangrik vir kleurblinde gebruikers?",
+          "answer": "Die nagaaier toets helderheidskontras, wat vir alle gebruikers saak maak, insluitend diegene met kleurblindheid. Kleurblindheid is egter 'n kleurwaarnemingskwessie, nie 'n heldheidskwessie nie - so benewens kontras, vermy problematiese kleurpare (bv. rooi teks op groen agtergrond) en moenie uitsluitlik op kleur steun om inligting oor te dra nie."
         },
         {
-          "question": "Why doesn't my color meet the requirements even though I can see it fine?",
-          "answer": "Personal color perception depends on monitor settings, room lighting, and individual visual abilities. WCAG is based on an objective mathematical formula that accounts for various vision impairments. A color readable on one screen may be unreadable on another or for a different person."
+          "question": "Waarom voldoen my kleur nie aan die vereistes nie, al kan ek dit goed sien?",
+          "answer": "Persoonlike kleurwaarneming hang af van monitorinstellings, kamerverligting en individuele visuele vermoëns. WCAG is gebaseer op 'n objektiewe wiskundige formule wat vir verskeie siggebreke verantwoord. 'n Kleur wat op een skerm leesbaar is, kan op 'n ander of vir 'n ander persoon onleesbaar wees."
         },
         {
-          "question": "Do I need to meet AAA contrast level?",
-          "answer": "Not always. Level AA (4.5:1 for normal text) is the minimum required by accessibility regulations in the European Union. Level AAA (7:1) provides better readability but is harder to achieve. For critical content - warnings, safety instructions - consider aiming for AAA."
+          "question": "Moet ek aan AAA-kontrasvlak voldoen?",
+          "answer": "Nie altyd nie. Vlak AA (4.5:1 vir normale teks) is die minimum wat deur toeganklikheidsregulasies in die Europese Unie vereis word. Vlak AAA (7:1) bied beter leesbaarheid maar is moeiliker om te bereik. Vir kritieke inhoud - waarskuwings, veiligheidsinstruksies - oorweeg om na AAA te mik."
         },
         {
-          "question": "What is the WCAG standard?",
-          "answer": "WCAG (Web Content Accessibility Guidelines) is an international set of web accessibility guidelines developed by the W3C organization. It defines, among other things, minimum color contrast values, heading structure, keyboard support, and other requirements that make websites accessible to people with various disabilities."
+          "question": "Wat is die WCAG-standaard?",
+          "answer": "WCAG (Web Content Accessibility Guidelines) is 'n internasionale stel webtoeganlikheidsriglyne wat deur die W3C-organisasie ontwikkel is. Dit definieer onder andere minimum kleurkontraswaardes, opskrifstruktuur, sleutelbordondersteuning en ander vereistes wat webwerwe toeganklik maak vir mense met verskeie gestremdhede."
         },
         {
-          "question": "Where can I find color codes from my website?",
-          "answer": "In a browser (Chrome, Firefox, Edge) you can open developer tools (right-click > Inspect). In the Styles tab, you can see the colors used on the page. Alternatively, browser extensions like ColorZilla let you pick the color of any element without digging into code."
+          "question": "Waar kan ek kleurkodes van my webwerf vind?",
+          "answer": "In 'n blaaier (Chrome, Firefox, Edge) kan jy ontwikkelaarsinstrumente oopmaak (regskliek > Inspekteer). In die Stylblad-oortjie kan jy die kleure sien wat op die bladsy gebruik word. Alternatiewelik laat blaaieruitbreidings soos ColorZilla jou toe om die kleur van enige element te kies sonder om in kode te delf."
         },
         {
-          "question": "Which color pairs on my site should I check first?",
-          "answer": "Most important: text on the main background, text on banners and colored sections, buttons (text color and button background relative to page background), links, and icons. Pay special attention to elements that appear on different backgrounds depending on the section."
+          "question": "Watter kleurpare op my webwerf moet ek eerste nagaan?",
+          "answer": "Belangrikste: teks op die hoofagtergrond, teks op baniere en gekleurde afdelings, knoppies (tekskleur en knoppie-agtergrond relatief tot bladsy-agtergrond), skakels en ikone. Gee spesiale aandag aan elemente wat op verskillende agtergronde verskyn afhangende van die afdeling."
         }
       ]
     },
@@ -377,7 +377,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Explore other free tools"
+      "title": "Verken ander gratis gereedskap"
     },
     {
       "type": "gap",

@@ -2,56 +2,56 @@
   "toolKey": "colorPalette",
   "locale": "af",
   "metadata": {
-    "title": "Free Color Palette Generator – 9 Palettes From One Color",
-    "description": "Generate 9 color palettes from one base color: monochromatic, complementary, triadic, pastel and more. Copy HEX codes in one click. No signup, no limits.",
+    "title": "Gratis Kleurpalet-generator – 9 Palette Uit Een Kleur",
+    "description": "Genereer 9 kleurpalette uit een basiskleur: monochromaties, komplementêr, triadies, pastel en meer. Kopieer HEX-kodes met een klik. Geen registrasie, geen beperkings nie.",
     "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
     "path": "/af/gereedskap/kleurpalet-generator"
   },
   "hero": {
-    "title": "Color palette generator",
-    "description": "Enter one base color, and the tool will generate 9 harmonious color palettes: monochromatic, complementary, triadic, pastel, and more. Each color can be copied with its HEX code.",
+    "title": "Kleurpalet-generator",
+    "description": "Voer een basiskleur in en die instrument sal 9 harmonieuse kleurpalette genereer: monochromaties, komplementêr, triadies, pastel en meer. Elke kleur kan met sy HEX-kode gekopieer word.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/af/gereedskap", "label": "Tools" },
-    "third": { "href": "/af/gereedskap/kleurpalet-generator", "label": "Color palette generator" }
+    "second": { "href": "/af/gereedskap", "label": "Gereedskap" },
+    "third": { "href": "/af/gereedskap/kleurpalet-generator", "label": "Kleurpalet-generator" }
   },
   "schemas": {
     "software": {
-      "name": "Color palette generator",
-      "alternateName": ["Color scheme generator", "Online color generator", "Color palette creator", "Color matching tool", "Color palette online", "Color harmony generator"],
+      "name": "Kleurpalet-generator",
+      "alternateName": ["Kleurskema-generator", "Aanlyn kleurgenerator", "Kleurpalet-skepper", "Kleur-passingsinstrument", "Kleurpalet aanlyn", "Kleurharmonie-generator"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Free online color palette generator. Enter one HEX color and the tool will generate 9 schemes: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, and minimalist. Each color can be copied with its HEX code and HSL value.",
+      "description": "Gratis aanlyn kleurpalet-generator. Voer een HEX-kleur in en die instrument genereer 9 skemas: monochromaties, analoog, komplementêr, triadies, gesplete-komplementêr, pastel, donker, tonaal en minimalisties. Elke kleur kan met sy HEX-kode en HSL-waarde gekopieer word.",
       "featureList": [
-        "Monochromatic scheme - shades of one color",
-        "Analogous scheme - neighboring colors on the color wheel",
-        "Complementary scheme - opposite colors",
-        "Triadic scheme - 3 colors at equal intervals",
-        "Split-complementary scheme - base color and 2 neighbors of its complement",
-        "Pastel palette - light, muted shades",
-        "Dark palette - deep colors for dark themes",
-        "Tonal palette - lightness scale of one hue",
-        "Minimalist palette - strong accent with light neutrals",
-        "Base color in HEX format",
-        "Color picker for visual selection",
-        "Random starting color",
-        "Copy HEX code to clipboard",
-        "HSL value displayed alongside each color",
-        "Local processing in the browser"
+        "Monochromatiese skema - skakerings van een kleur",
+        "Analoogskema - naburige kleure op die kleurwiel",
+        "Komplementêre skema - teenoorgestelde kleure",
+        "Triadiese skema - 3 kleure op gelyke afstande",
+        "Gesplete-komplementêre skema - basiskleur en 2 bure van sy komplement",
+        "Pastelpalet - ligte, gedempte skakerings",
+        "Donker palet - diep kleure vir donker temas",
+        "Tonale palet - heldheidskaal van een kleurtoon",
+        "Minimalistiese palet - sterk aksent met ligte neutrale kleure",
+        "Basiskleur in HEX-formaat",
+        "Kleurkieser vir visuele seleksie",
+        "Ewekansige beginkleur",
+        "Kopieer HEX-kode na knipbord",
+        "HSL-waarde vertoon langs elke kleur",
+        "Plaaslike verwerking in die blaaier"
       ]
     },
     "howTo": {
-      "name": "How to generate a color palette from one base color",
-      "description": "How to generate 9 color palettes from one base color: monochromatic, complementary, triadic, pastel, and more. Each color can be copied with its HEX code.",
+      "name": "Hoe om 'n kleurpalet uit een basiskleur te genereer",
+      "description": "Hoe om 9 kleurpalette uit een basiskleur te genereer: monochromaties, komplementêr, triadies, pastel en meer. Elke kleur kan met sy HEX-kode gekopieer word.",
       "steps": [
-        { "name": "Choose a base color", "text": "Enter a HEX code in the text field or use the color picker to select a color visually." },
-        { "name": "Confirm the color", "text": "Confirm the selected color with the Update Color button - the tool will generate palettes based on your chosen base color." },
+        { "name": "Kies 'n basiskleur", "text": "Voer 'n HEX-kode in die teksveld in of gebruik die kleurkieser om 'n kleur visueel te kies." },
+        { "name": "Bevestig die kleur", "text": "Bevestig die geselekteerde kleur met die Dateer Kleur-knoppie - die instrument sal palette genereer gebaseer op jou gekose basiskleur." },
         {
-          "name": "Browse the palettes",
-          "text": "The tool will automatically generate 9 different palettes: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, and minimalist."
+          "name": "Blaai deur die palette",
+          "text": "Die instrument sal outomaties 9 verskillende palette genereer: monochromaties, analoog, komplementêr, triadies, gesplete-komplementêr, pastel, donker, tonaal en minimalisties."
         },
-        { "name": "Copy colors", "text": "Next to each color you will find a Copy button - the HEX code is copied to your system clipboard." }
+        { "name": "Kopieer kleure", "text": "Langs elke kleur sal jy 'n Kopieer-knoppie vind - die HEX-kode word na jou stelselknipbord gekopieer." }
       ]
     }
   },
@@ -59,173 +59,179 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Why generate a color palette?",
-      "html": "<p class=\"text-mid\">A consistent color palette is the foundation of every visual project - from a website, through a logo, to printed materials. Manually selecting colors that work together requires knowledge of color theory. The generator does it automatically: you provide one base color (e.g., your logo color), and the tool creates 9 color sets based on proven color harmony schemes.</p><p class=\"text-mid mt-3\">Each generated color comes with its HEX code (e.g., #4F6BF5) and HSL value (hue, saturation, lightness). The HEX code can be pasted directly into CSS, Figma, Canva, or any graphics application.</p>"
+      "title": "Waarom 'n kleurpalet genereer?",
+      "html": "<p class=\"text-mid\">'n Konsekwente kleurpalet is die grondslag van elke visuele projek - van 'n webwerf, deur 'n logo, tot gedrukte materiaal. Om handmatig kleure te kies wat saamwerk, vereis kennis van kleurteorie. Die generator doen dit outomaties: jy verskaf een basiskleur (bv. jou logo-kleur), en die instrument skep 9 kleurstelle gebaseer op bewese kleurharmonie-skemas.</p><p class=\"text-mid mt-3\">Elke gegenereerde kleur kom met sy HEX-kode (bv. #4F6BF5) en HSL-waarde (kleurtoon, versadiging, helderheid). Die HEX-kode kan direk in CSS, Figma, Canva of enige grafiese toepassing geplak word.</p>"
     },
     { "type": "gap", "size": "sm" },
     {
       "type": "sectionSteps",
-      "title": "How to use the color palette generator",
-      "description": "The whole process takes just a few seconds:",
+      "title": "Hoe om die kleurpalet-generator te gebruik",
+      "description": "Die hele proses neem net 'n paar sekondes:",
       "grid": "three",
       "items": [
-        { "title": "1. Enter the base color", "description": "Type a HEX code (e.g., #4F6BF5) in the text field or pick a color from the color picker. You can also use the Random Color button." },
-        { "title": "2. Confirm your choice", "description": "After clicking the Update Color button, the tool will automatically generate 9 palettes based on different color harmony schemes." },
-        { "title": "3. Copy the colors you need", "description": "Next to each color there is a Copy button - the HEX code goes to the clipboard and can be pasted directly into your project." }
+        {
+          "title": "1. Voer die basiskleur in",
+          "description": "Tik 'n HEX-kode (bv. #4F6BF5) in die teksveld in of kies 'n kleur met die kleurkieser. Jy kan ook die Ewekansige Kleur-knoppie gebruik."
+        },
+        {
+          "title": "2. Bevestig jou keuse",
+          "description": "Nadat jy op die Dateer Kleur-knoppie geklik het, sal die instrument outomaties 9 palette genereer gebaseer op verskillende kleurharmonie-skemas."
+        },
+        { "title": "3. Kopieer die kleure wat jy nodig het", "description": "Langs elke kleur is daar 'n Kopieer-knoppie - die HEX-kode gaan na die knipbord en kan direk in jou projek geplak word." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "What color schemes does the tool generate?",
-      "description": "The generator creates 9 palette types - each based on a different color theory principle:",
+      "title": "Watter kleurskemas genereer die instrument?",
+      "description": "Die generator skep 9 palette-tipes - elk gebaseer op 'n ander kleurteorie-beginsel:",
       "grid": "two",
       "items": [
         {
           "icon": "RiStackLine",
-          "title": "Monochromatic palette",
-          "description": "Several shades of one color - from light to dark. All colors have the same hue on the color wheel and differ only in lightness. Works well in elegant, minimalist designs where consistency matters."
+          "title": "Monochromatiese palet",
+          "description": "Verskeie skakerings van een kleur - van lig tot donker. Alle kleure het dieselfde kleurtoon op die kleurwiel en verskil slegs in helderheid. Werk goed in elegante, minimalistiese ontwerpe waar konsekwentheid saak maak."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Analogous palette",
-          "description": "Neighboring colors on the color wheel (shifted about 30° in both directions from the base). They create harmonious, smooth color transitions. Great for projects that build a warm or cool atmosphere."
+          "title": "Analoogpalet",
+          "description": "Naburige kleure op die kleurwiel (ongeveer 30° in albei rigtings van die basis verskuif). Hulle skep harmonieuse, gladde kleurvloeiings. Uitstekend vir projekte wat 'n warm of koel atmosfeer bou."
         },
         {
           "icon": "RiLayoutGridLine",
-          "title": "Complementary palette",
-          "description": "The base color and the color opposite on the color wheel (180° shift). Creates strong visual contrast. Useful where an element needs to attract attention - buttons, highlighted headings, promo banners."
+          "title": "Komplementêre palet",
+          "description": "Die basiskleur en die kleur teenoor op die kleurwiel (180°-verskuiwing). Skep sterk visuele kontras. Nuttig waar 'n element aandag moet trek - knoppies, uitgeligte opskrifte, promosiebaniere."
         },
         {
           "icon": "RiSparklingLine",
-          "title": "Triadic palette",
-          "description": "Three colors spaced 120° apart on the color wheel - forming an equilateral triangle. A vibrant, dynamic combination. Works well in creative projects: young brand identity, advertising materials, posters."
+          "title": "Triadiese palet",
+          "description": "Drie kleure 120° uitmekaar op die kleurwiel - wat 'n gelykbenige driehoek vorm. 'n Lewendige, dinamiese kombinasie. Werk goed in kreatiewe projekte: jong handelsmerkidentiteit, advertensiemateriaal, plakkate."
         },
         {
           "icon": "RiCursorLine",
-          "title": "Split-complementary palette",
-          "description": "A softer version of the complementary palette. Instead of one opposite color, it uses two colors shifted about 30° from the complement. Gives clear contrast but without as strong visual tension."
+          "title": "Gesplete-komplementêre palet",
+          "description": "'n Sagter weergawe van die komplementêre palet. In plaas van een teenoorgestelde kleur, gebruik dit twee kleure wat ongeveer 30° van die komplement verskuif is. Gee duidelike kontras maar sonder so sterk visuele spanning."
         },
         {
           "icon": "RiDropLine",
-          "title": "Pastel palette",
-          "description": "The same hue with reduced saturation and increased lightness - soft, gentle colors. Popular in cosmetics, children's fashion, and food industry. Pairs well with a light background and white space."
+          "title": "Pastelpalet",
+          "description": "Dieselfde kleurtoon met verminderde versadiging en verhoogde helderheid - sagte, delikate kleure. Gewild in kosmetiek, kindermode en die voedselindustrie. Pas goed by 'n ligte agtergrond en wit ruimte."
         },
         {
           "icon": "RiMoonLine",
-          "title": "Dark palette",
-          "description": "Base color at high saturation and reduced lightness - deep, intense colors. Useful for designing dark themes for websites and apps, as well as materials for premium brands."
+          "title": "Donker palet",
+          "description": "Basiskleur teen hoë versadiging en verminderde helderheid - diep, intense kleure. Nuttig vir die ontwerp van donker temas vir webwerwe en toepassings, sowel as materiaal vir premium-handelsmerke."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Tonal palette",
-          "description": "Several lightness steps of one hue - from very light to dark. Similar to tonal scales used in design systems (e.g., shades from 50 to 900). Useful for building interfaces where the same color needs variants."
+          "title": "Tonale palet",
+          "description": "Verskeie helderheidstappe van een kleurtoon - van baie lig tot donker. Soortgelyk aan tonale skale wat in ontwerpstelsels gebruik word (bv. skakerings van 50 tot 900). Nuttig vir die bou van koppelvlakke waar dieselfde kleur variante benodig."
         },
         {
           "icon": "RiContractLeftRightLine",
-          "title": "Minimalist palette",
-          "description": "One bold color accent and several very light, soft neutrals. The rest of the palette stays muted. Works well in modern interfaces with lots of white space - typical product and landing page style."
+          "title": "Minimalistiese palet",
+          "description": "Een vet kleuraksent en verskeie baie ligte, sagte neutrale kleure. Die res van die palet bly gedemp. Werk goed in moderne koppelvlakke met baie wit ruimte - tipiese produk- en bestemmingsbladsystyl."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "What is the color palette generator based on?",
-      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° on the color wheel</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
-      "html": "<p class=\"text-mid\">All palettes are created by mathematically transforming the base color in HSL color space. HSL describes a color with three values: hue (H) is the position on the color wheel (0°–360°), saturation (S) determines color intensity, and lightness (L) - how bright or dark the color is.</p><p class=\"text-mid mt-3\">The complementary, triadic, and split-complementary palettes are based on color wheel geometry - colors are placed at equal angular intervals, creating visual balance. The monochromatic, pastel, and dark palettes change only lightness and saturation while keeping the same hue.</p>"
+      "title": "Waarop is die kleurpalet-generator gebaseer?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (kleurtoon)</span><span class=\"text-mid\">0°–360° op die kleurwiel</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (versadiging)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (helderheid)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">Alle palette word geskep deur die basiskleur wiskundig in die HSL-kleurruimte te transformeer. HSL beskryf 'n kleur met drie waardes: kleurtoon (H) is die posisie op die kleurwiel (0°–360°), versadiging (S) bepaal kleurintensiteit, en helderheid (L) - hoe helder of donker die kleur is.</p><p class=\"text-mid mt-3\">Die komplementêre, triadiese en gesplete-komplementêre palette is gebaseer op kleurwiel-meetkunde - kleure word op gelyke hoekafstande geplaas, wat visuele balans skep. Die monochromatiese, pastel- en donker palette verander slegs helderheid en versadiging terwyl dieselfde kleurtoon behou word.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Where to use the generated color palettes",
+      "title": "Waar om die gegenereerde kleurpalette te gebruik",
       "grid": "two",
       "items": [
         {
           "icon": "RiBrushLine",
-          "title": "Brand visual identity",
-          "description": "Select complementary colors for an existing logo or build a branding palette from scratch - for business cards, stationery, and marketing materials."
+          "title": "Handelsmerk visuele identiteit",
+          "description": "Kies komplementêre kleure vir 'n bestaande logo of bou 'n handelsmerkpalet van nuuts af - vir besigheidskaartjies, skryfbehoeftes en bemarkingsmateriaal."
         },
         {
           "icon": "RiGlobalLine",
-          "title": "Websites",
-          "description": "Establish the primary color, accent color, and background shades. Copied HEX codes paste straight into CSS stylesheets or theme configuration."
+          "title": "Webwerwe",
+          "description": "Stel die primêre kleur, aksentkleur en agtergrondskakerings vas. Gekopieerde HEX-kodes plak direk in CSS-stylblaaie of tema-konfigurasie."
         },
         {
           "icon": "RiSmartphoneLine",
-          "title": "App interfaces",
-          "description": "The tonal palette provides lightness variants of one color - lighter for backgrounds, darker for text, intermediate for borders and interactive states."
+          "title": "Toepassingskoppelvlakke",
+          "description": "Die tonale palet bied helderheidsvariante van een kleur - ligter vir agtergronde, donkerder vir teks, tussenin vir rande en interaktiewe toestande."
         },
         {
           "icon": "RiImageLine",
-          "title": "Social media graphics",
-          "description": "Consistent colors for posts, stories, and profile covers. Analogous or pastel palettes work well when you want a uniform, recognizable style."
+          "title": "Sosiale media-grafika",
+          "description": "Konsekwente kleure vir plasings, stories en profielbedekkers. Analoog- of pastelpalette werk goed wanneer jy 'n eenvormige, herkenbare styl wil hê."
         },
         {
           "icon": "RiSlideshowLine",
-          "title": "Presentations and documents",
-          "description": "Harmonious color sets for slides, charts, and infographics. Monochromatic or minimalist palettes maintain visual order."
+          "title": "Aanbiedings en dokumente",
+          "description": "Harmonieuse kleurstelle vir skyfies, grafieke en infografika. Monochromatiese of minimalistiese palette handhaaf visuele orde."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "Troubleshooting the palette generator",
+      "title": "Probleemoplossing vir die palet-generator",
       "grid": "two",
       "items": [
         {
           "icon": "RiRefreshLine",
-          "title": "Palettes don't change after entering a color",
-          "description": "Simply typing a HEX code does not automatically generate palettes - you need to confirm the change with the Update Color button. Only after confirmation does the tool recalculate all 9 schemes."
+          "title": "Palette verander nie nadat 'n kleur ingevoer is nie",
+          "description": "Om bloot 'n HEX-kode te tik, genereer nie outomaties palette nie - jy moet die verandering bevestig met die Dateer Kleur-knoppie. Eers na bevestiging herbereken die instrument al 9 skemas."
         },
         {
           "icon": "RiErrorWarningLine",
-          "title": "Invalid format message",
-          "description": "The generator only accepts HEX format with a # at the beginning, e.g., #FF5500. Formats without # (e.g., FF5500) or in RGB notation (e.g., rgb(255,85,0)) are not supported."
+          "title": "Ongeldige formaat-boodskap",
+          "description": "Die generator aanvaar slegs HEX-formaat met 'n # aan die begin, bv. #FF5500. Formate sonder # (bv. FF5500) of in RGB-notasie (bv. rgb(255,85,0)) word nie ondersteun nie."
         },
         {
           "icon": "RiCodeLine",
-          "title": "Short and full HEX format",
-          "description": "Both formats are supported: full #RRGGBB (e.g., #FF5500) and short #RGB (e.g., #F50). The generator automatically recognizes both and treats them identically."
+          "title": "Kort en vol HEX-formaat",
+          "description": "Albei formate word ondersteun: vol #RRGGBB (bv. #FF5500) en kort #RGB (bv. #F50). Die generator herken albei outomaties en behandel hulle identies."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the color palette generator",
+      "title": "Gereeld gevraagde vrae oor die kleurpalet-generator",
       "openByDefault": 1,
       "items": [
         {
-          "question": "What format should the base color be in?",
-          "answer": "The generator accepts colors in HEX format - both short (e.g., #F50) and full (e.g., #FF5500). Next to the text field you will find a color picker that lets you choose a color visually. Generated palettes show the HEX code and HSL value of each color.",
-          "answerSchemaText": "The generator accepts HEX colors (#RGB or #RRGGBB). Each generated color has a HEX code and HSL value."
+          "question": "In watter formaat moet die basiskleur wees?",
+          "answer": "Die generator aanvaar kleure in HEX-formaat - beide kort (bv. #F50) en vol (bv. #FF5500). Langs die teksveld sal jy 'n kleurkieser vind waarmee jy 'n kleur visueel kan kies. Gegenereerde palette wys die HEX-kode en HSL-waarde van elke kleur.",
+          "answerSchemaText": "Die generator aanvaar HEX-kleure (#RGB of #RRGGBB). Elke gegenereerde kleur het 'n HEX-kode en HSL-waarde."
         },
         {
-          "question": "How many colors does each palette contain?",
-          "answer": "Each palette contains 4 to 6 colors. The number depends on the scheme type - monochromatic and tonal palettes generate more shades (a lightness scale of one hue), while complementary and triadic palettes focus on fewer contrasting colors.",
-          "answerSchemaText": "Each palette contains 4 to 6 colors, depending on the scheme type."
+          "question": "Hoeveel kleure bevat elke palet?",
+          "answer": "Elke palet bevat 4 tot 6 kleure. Die aantal hang af van die skematipe - monochromatiese en tonale palette genereer meer skakerings ('n helderheidskaal van een kleurtoon), terwyl komplementêre en triadiese palette op minder kontrasterende kleure fokus.",
+          "answerSchemaText": "Elke palet bevat 4 tot 6 kleure, afhangende van die skematipe."
         },
         {
-          "question": "What is the HSL color space and how to read it?",
-          "answer": "HSL is a way of describing color using three values: H (hue, 0°–360° on the color wheel), S (saturation, 0%–100%), and L (lightness, 0%–100%). The generator displays HSL values alongside each color, making it easier to understand how the colors in the palette differ - e.g., a monochromatic palette changes only lightness (L) while keeping the same hue (H).",
-          "answerSchemaText": "HSL describes color via hue (H), saturation (S), and lightness (L). The generator displays these values alongside each color."
+          "question": "Wat is die HSL-kleurruimte en hoe lees jy dit?",
+          "answer": "HSL is 'n manier om kleur te beskryf met drie waardes: H (kleurtoon, 0°–360° op die kleurwiel), S (versadiging, 0%–100%) en L (helderheid, 0%–100%). Die generator vertoon HSL-waardes langs elke kleur, wat dit makliker maak om te verstaan hoe die kleure in die palet verskil - bv. 'n monochromatiese palet verander slegs helderheid (L) terwyl dieselfde kleurtoon (H) behou word.",
+          "answerSchemaText": "HSL beskryf kleur via kleurtoon (H), versadiging (S) en helderheid (L). Die generator vertoon hierdie waardes langs elke kleur."
         },
         {
-          "question": "Can I use the generated palettes commercially?",
-          "answer": "Yes. You can use the generated color palettes in any project - commercial and non-commercial, without licensing restrictions.",
-          "answerSchemaText": "Yes, generated palettes can be used without restrictions in commercial and non-commercial projects."
+          "question": "Kan ek die gegenereerde palette kommersieel gebruik?",
+          "answer": "Ja. Jy kan die gegenereerde kleurpalette in enige projek gebruik - kommersieel en nie-kommersieel, sonder lisensie-beperkings.",
+          "answerSchemaText": "Ja, gegenereerde palette kan sonder beperkings in kommersiële en nie-kommersiële projekte gebruik word."
         },
         {
-          "question": "Does the color palette generator require login or payment?",
-          "answer": "The generator is completely free and requires no login or registration. Colors are generated locally in the browser - no data is sent to external servers.",
-          "answerSchemaText": "The generator is free, requires no login. Colors are generated locally in the browser."
+          "question": "Vereis die kleurpalet-generator aanmelding of betaling?",
+          "answer": "Die generator is heeltemal gratis en vereis geen aanmelding of registrasie nie. Kleure word plaaslik in die blaaier gegenereer - geen data word na eksterne bedieners gestuur nie.",
+          "answerSchemaText": "Die generator is gratis, vereis geen aanmelding nie. Kleure word plaaslik in die blaaier gegenereer."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
+    { "type": "toolsCarousel", "title": "Verken ander gereedskap" },
     { "type": "gap", "size": "sm" }
   ]
 }
