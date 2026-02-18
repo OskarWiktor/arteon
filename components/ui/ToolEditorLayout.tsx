@@ -16,13 +16,17 @@ export default function ToolEditorLayout({ children }: ToolEditorLayoutProps) {
       ].join(' ')}
     >
       <div className="hidden xl:col-start-2 xl:block">
-        <AdSense variant="vertical" />
+        <div className="sticky top-4">
+          <AdSense variant="vertical" />
+        </div>
       </div>
 
       <div className="xl:col-start-3">{children}</div>
 
       <div className="hidden min-[1600px]:col-start-4 min-[1600px]:block">
-        <AdSense variant="vertical" />
+        <div className="sticky top-4">
+          <AdSense variant="vertical" />
+        </div>
       </div>
     </div>
   );

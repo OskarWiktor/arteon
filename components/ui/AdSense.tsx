@@ -43,7 +43,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
    * --------------------------------------------------------------- */
   if (variant === 'tool-banner') {
     return (
-      <div className={`flex justify-center overflow-hidden ${className}`}>
+      <div className={`flex justify-center ${className}`}>
         <ins ref={adRef} className="adsbygoogle" style={{ display: 'inline-block', width: '728px', height: '90px' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} />
       </div>
     );
@@ -56,7 +56,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
    * --------------------------------------------------------------- */
   if (variant === 'in-article') {
     return (
-      <div className={`overflow-hidden ${className}`}>
+      <div className={className}>
         <ins ref={adRef} className="adsbygoogle" style={{ display: 'block', textAlign: 'center' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} data-ad-layout="in-article" data-ad-format="fluid" />
       </div>
     );
@@ -69,7 +69,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
    * --------------------------------------------------------------- */
   if (variant === 'autorelaxed') {
     return (
-      <div className={`overflow-hidden ${className}`}>
+      <div className={className}>
         <ins ref={adRef} className="adsbygoogle" style={{ display: 'block' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} data-ad-format="autorelaxed" />
       </div>
     );
@@ -81,8 +81,8 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
    * data-ad-format="auto", data-full-width-responsive="true"
    * --------------------------------------------------------------- */
   return (
-    <div className={`overflow-hidden ${className}`}>
-      <ins ref={adRef} className="adsbygoogle" style={{ display: 'block' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} data-ad-format="auto" data-full-width-responsive="true" />
+    <div className={className}>
+      <ins ref={adRef} className="adsbygoogle" style={{ display: 'block', minHeight: '600px' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} data-ad-format="auto" />
     </div>
   );
 }

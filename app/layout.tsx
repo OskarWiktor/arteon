@@ -138,7 +138,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
         <script id="schema-org-website" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
 
-        {ADSENSE_CLIENT && <Script src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} strategy="lazyOnload" crossOrigin="anonymous" />}
+        {ADSENSE_CLIENT && <Script src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} strategy="afterInteractive" crossOrigin="anonymous" />}
       </head>
 
       <body className="font-sans antialiased">

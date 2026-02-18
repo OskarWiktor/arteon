@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { Fragment, type ReactNode } from 'react';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import type { ToolPageData, ToolContentBlock } from '@/types/tool-page';
@@ -27,7 +27,7 @@ import { getToolAlternates, getToolSoftwareSchema, getToolHowToSchema, getToolWe
 import { getToolHref } from '@/lib/i18n/tool-registry';
 import { getToolIcon } from '@/lib/tools/icon-registry';
 
-const AD_AFTER_BLOCK_INDEX = 2;
+const AD_SECTION_INTERVAL = 4;
 
 export function generateToolMetadata(data: ToolPageData): Metadata {
   const canonicalPath = getToolHref(data.toolKey as ToolItemKey, data.locale as Locale);
@@ -185,20 +185,33 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
       </ToolEditorLayout>
 
       <Wrapper>
-        {data.contentBlocks.map((block, idx) => {
-          const node = renderBlock(block, idx, pageUrl);
-          if (idx === AD_AFTER_BLOCK_INDEX) {
-            return (
-              <div key={`wrap-${idx}`}>
-                {node}
-                <div className="not-prose my-8">
-                  <AdSense variant="in-article" />
-                </div>
-              </div>
-            );
-          }
-          return node;
-        })}
+        {(() => {
+          const adPositions = new Set<number>();
+          let contentCount = 0;
+          data.contentBlocks.forEach((block, idx) => {
+            if (block.type !== 'gap') {
+              contentCount++;
+              if (contentCount % AD_SECTION_INTERVAL === 0) {
+                adPositions.add(idx);
+              }
+            }
+          });
+
+          return data.contentBlocks.map((block, idx) => {
+            const node = renderBlock(block, idx, pageUrl);
+            if (adPositions.has(idx)) {
+              return (
+                <Fragment key={`block-ad-${idx}`}>
+                  {node}
+                  <div className="not-prose my-8">
+                    <AdSense variant="in-article" />
+                  </div>
+                </Fragment>
+              );
+            }
+            return node;
+          });
+        })()}
       </Wrapper>
 
       {data.cta && (
