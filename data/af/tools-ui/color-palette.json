@@ -1,52 +1,52 @@
 {
-  "selectBaseColor": "Select base color",
-  "updateColor": "Update color",
-  "randomColor": "Random color",
-  "currentBaseColor": "Current base color",
-  "baseColorHelper": "All palettes below are based on this color.",
-  "colorPreview": "Color preview",
-  "copied": "Copied",
-  "copy": "Copy",
-  "generatedPalettes": "Generated color palettes",
-  "colorReadError": "Could not read the color. Make sure you are using the format",
-  "example": "e.g.",
-  "enterValidColor": "Enter a valid HEX color to generate palettes. All calculations are performed locally in your browser.",
+  "selectBaseColor": "Kies basiskleur",
+  "updateColor": "Werk kleur by",
+  "randomColor": "Ewekansige kleur",
+  "currentBaseColor": "Huidige basiskleur",
+  "baseColorHelper": "Alle palette hieronder is gebaseer op hierdie kleur.",
+  "colorPreview": "Kleurvoorskou",
+  "copied": "Gekopieer",
+  "copy": "Kopieer",
+  "generatedPalettes": "Gegenereerde kleurpalette",
+  "colorReadError": "Kon nie die kleur lees nie. Maak seker jy gebruik die formaat",
+  "example": "bv.",
+  "enterValidColor": "Voer 'n geldige HEX-kleur in om palette te genereer. Alle berekeninge word plaaslik in jou blaaier uitgevoer.",
   "palettes": {
     "monochromatic": {
-      "label": "Monochromatic palette",
-      "description": "All colors share the same hue (H), differing mainly in lightness (L) in the HSL color space."
+      "label": "Monochromatiese palet",
+      "description": "Alle kleure deel dieselfde tint (H) en verskil hoofsaaklik in ligtheid (L) in die HSL-kleurruimte."
     },
     "analogous": {
-      "label": "Analogous palette",
-      "description": "Colors with similar hues - from about -30° to +30° around the base color on the classic color wheel (e.g. Itten)."
+      "label": "Analoog palet",
+      "description": "Kleure met soortgelyke tinte - van ongeveer -30° tot +30° rondom die basiskleur op die klassieke kleurwiel (bv. Itten)."
     },
     "complementary": {
-      "label": "Complementary palette",
-      "description": "The base color and its complement shifted by 180° on the color wheel - one of the fundamental color contrasts described by Johannes Itten."
+      "label": "Komplementêre palet",
+      "description": "Die basiskleur en sy komplement verskuif met 180° op die kleurwiel - een van die fundamentele kleurkontraste beskryf deur Johannes Itten."
     },
     "triadic": {
-      "label": "Triadic palette",
-      "description": "Three hues spaced 120° apart on the color wheel (vertices of an equilateral triangle) - a geometry often used in branding and Bauhaus-inspired designs."
+      "label": "Triadiese palet",
+      "description": "Drie tinte met 120° tussenruimtes op die kleurwiel (hoekpunte van 'n gelyksydige driehoek) - 'n geometrie wat dikwels in handelsmerkontwerp en Bauhaus-geïnspireerde ontwerpe gebruik word."
     },
     "splitComplementary": {
-      "label": "Split-complementary palette",
-      "description": "A variation of the complementary palette - instead of one complement (180°), two colors shifted by about ±30° from the complement are used, reducing visual tension while maintaining strong contrast."
+      "label": "Gesplete-komplementêre palet",
+      "description": "'n Variasie van die komplementêre palet - in plaas van een komplement (180°) word twee kleure gebruik wat met ongeveer ±30° van die komplement verskuif is, wat visuele spanning verminder terwyl sterk kontras behou word."
     },
     "softPastel": {
-      "label": "Pastel palette",
-      "description": "The same hue with reduced saturation and increased lightness - a shift toward the center and top of the HSL space, producing soft, \"creamy\" colors."
+      "label": "Pastelpalet",
+      "description": "Dieselfde tint met verminderde versadiging en verhoogde ligtheid - 'n verskuiwing na die middel en bokant van die HSL-ruimte, wat sagte, \"romerige\" kleure produseer."
     },
     "deepDark": {
-      "label": "Dark palette",
-      "description": "The same hue with high saturation (S) and reduced lightness (L) - a downward shift on the lightness axis, producing deep colors typical of dark mode and bold accents."
+      "label": "Donker palet",
+      "description": "Dieselfde tint met hoë versadiging (S) en verminderde ligtheid (L) - 'n afwaartse verskuiwing op die ligheidas, wat diep kleure tipies van donker modus en vet aksente produseer."
     },
     "materialTonal": {
-      "label": "Tonal palette (Material Design inspired)",
-      "description": "Several lightness steps of one hue - varied L and moderate S, similar to tonal ranges known from Material Design guidelines (e.g. 50-900)."
+      "label": "Tonale palet (Material Design-geïnspireer)",
+      "description": "Verskeie ligheidstappe van een tint - gevarieerde L en matige S, soortgelyk aan tonale reekse bekend van Material Design-riglyne (bv. 50-900)."
     },
     "appleMinimal": {
-      "label": "Minimalist palette (Apple inspired)",
-      "description": "One bold color accent and several very light, soft neutrals - a layout typical of interfaces with plenty of white space and subtle shadows."
+      "label": "Minimalistiese palet (Apple-geïnspireer)",
+      "description": "Een vet kleurakent en verskeie baie ligte, sagte neutrale - 'n uitleg tipies van koppelvlakke met baie wit ruimte en subtiele skaduwees."
     }
   }
 }

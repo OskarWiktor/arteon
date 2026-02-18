@@ -1,44 +1,44 @@
 [
   {
     "key": "product",
-    "label": "Product description",
+    "label": "Produkbeskrywing",
     "minWords": 80,
     "maxWords": 400,
-    "description": "Simple products need shorter descriptions. Complex items (e.g. electronics) require more detail and specifications."
+    "description": "Eenvoudige produkte benodig korter beskrywings. Komplekse items (bv. elektronika) vereis meer detail en spesifikasies."
   },
   {
     "key": "service",
-    "label": "Service page",
+    "label": "Diensbladsy",
     "minWords": 500,
     "maxWords": 1500,
-    "description": "A simple local service needs fewer words. A complex offering with multiple stages and client questions needs more."
+    "description": "'n Eenvoudige plaaslike diens benodig minder woorde. 'n Komplekse aanbod met veelvuldige fases en kliëntevrae benodig meer."
   },
   {
     "key": "homepage",
-    "label": "Homepage",
+    "label": "Tuisbladsy",
     "minWords": 400,
     "maxWords": 1000,
-    "description": "The homepage guides visitors to subpages. A clear message and readable structure make navigation easier."
+    "description": "Die tuisbladsy lei besoekers na subbladsye. 'n Duidelike boodskap en leesbare struktuur maak navigasie makliker."
   },
   {
     "key": "landing",
-    "label": "Landing page",
+    "label": "Bestemmingsbladsy",
     "minWords": 600,
     "maxWords": 2500,
-    "description": "Higher-priced offers require more explanation and trust-building. Simple offers can be shorter."
+    "description": "Hoërprys-aanbiedinge vereis meer verduideliking en vertrouebouing. Eenvoudige aanbiedinge kan korter wees."
   },
   {
     "key": "blog",
-    "label": "Blog post",
+    "label": "Blogplasing",
     "minWords": 1200,
     "maxWords": 3000,
-    "description": "Length depends on topic complexity. The text should answer the reader's questions thoroughly and concisely."
+    "description": "Lengte hang af van onderwerpkompleksiteit. Die teks moet die leser se vrae deeglik en bondig beantwoord."
   },
   {
     "key": "guide",
-    "label": "Guide / tutorial",
+    "label": "Gids / handleiding",
     "minWords": 2500,
     "maxWords": 6000,
-    "description": "A detailed treatment of a topic with many aspects. Length depends on the scope of the subject."
+    "description": "'n Gedetailleerde behandeling van 'n onderwerp met baie aspekte. Lengte hang af van die omvang van die onderwerp."
   }
 ]

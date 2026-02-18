@@ -1,47 +1,47 @@
 {
-  "dataType": "Data type",
+  "dataType": "Nau'in bayanai",
   "types": {
-    "url": "URL address",
-    "text": "Text",
-    "vcard": "Business card (vCard)",
-    "email": "Email",
-    "phone": "Phone"
+    "url": "Adireshin URL",
+    "text": "Rubutu",
+    "vcard": "Katin kasuwanci (vCard)",
+    "email": "Imel",
+    "phone": "Waya"
   },
-  "urlPlaceholder": "https://www.your-website.com",
-  "textPlaceholder": "Enter any text...",
-  "phonePlaceholder": "+1 234 567 890",
-  "size": "Size (px)",
-  "margin": "Margin (quiet zone)",
-  "qrColor": "QR code color",
-  "bgColor": "Background color",
-  "errorCorrection": "Error correction level",
+  "urlPlaceholder": "https://www.gidan-yanar-gizonku.com",
+  "textPlaceholder": "Shigar da kowane rubutu...",
+  "phonePlaceholder": "+234 80 1234 5678",
+  "size": "Girma (px)",
+  "margin": "Gefen (yankin shiru)",
+  "qrColor": "Launin lambar QR",
+  "bgColor": "Launin bango",
+  "errorCorrection": "Matakin gyaran kuskure",
   "errorCorrectionLevels": {
-    "L": "L - Low (7%)",
-    "M": "M - Medium (15%)",
-    "Q": "Q - High (25%)",
-    "H": "H - Maximum (30%)"
+    "L": "L - Ƙasa (7%)",
+    "M": "M - Matsakaici (15%)",
+    "Q": "Q - Sama (25%)",
+    "H": "H - Mafi girma (30%)"
   },
-  "preview": "QR code preview",
-  "downloadPng": "Download PNG",
-  "downloadSvg": "Download SVG",
-  "contrastWarning": "Contrast between colors is too low. The QR code may be difficult to scan.",
-  "contrastRatio": "Contrast ratio",
-  "recommended": "Recommended minimum: 3:1",
-  "enterData": "Enter data to generate a QR code.",
+  "preview": "Dubawan lambar QR",
+  "downloadPng": "Sauke PNG",
+  "downloadSvg": "Sauke SVG",
+  "contrastWarning": "Bambancin tsakanin launuka ya yi ƙasa sosai. Lambar QR na iya zama da wahalar dubawa.",
+  "contrastRatio": "Adadin bambanci",
+  "recommended": "Mafi ƙarancin da aka ba da shawarar: 3:1",
+  "enterData": "Shigar da bayanai don ƙirƙirar lambar QR.",
   "vcard": {
-    "firstName": "First name",
-    "lastName": "Last name",
-    "organization": "Company (optional)",
-    "title": "Job title (optional)",
-    "phone": "Phone (optional)",
-    "email": "Email (optional)",
-    "website": "Website (optional)",
-    "address": "Address (optional)"
+    "firstName": "Sunan farko",
+    "lastName": "Sunan ƙarshe",
+    "organization": "Kamfani (na zaɓi)",
+    "title": "Taken aiki (na zaɓi)",
+    "phone": "Waya (na zaɓi)",
+    "email": "Imel (na zaɓi)",
+    "website": "Gidan yanar gizo (na zaɓi)",
+    "address": "Adireshi (na zaɓi)"
   },
   "email": {
-    "to": "Email address",
-    "subject": "Subject (optional)",
-    "body": "Body (optional)"
+    "to": "Adireshin imel",
+    "subject": "Taken (na zaɓi)",
+    "body": "Jikin saƙo (na zaɓi)"
   },
-  "printTip": "For printed materials, we recommend a minimum size of 300px and error correction level H."
+  "printTip": "Don kayan bugu, muna ba da shawarar mafi ƙarancin girma na 300px da matakin gyaran kuskure H."
 }

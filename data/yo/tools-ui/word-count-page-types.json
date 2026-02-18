@@ -1,44 +1,44 @@
 [
   {
     "key": "product",
-    "label": "Product description",
+    "label": "Àpèjúwe ọjà",
     "minWords": 80,
     "maxWords": 400,
-    "description": "Simple products need shorter descriptions. Complex items (e.g. electronics) require more detail and specifications."
+    "description": "Àwọn ọjà tó rọrùn nílò àpèjúwe kúkúrú. Àwọn ohun tó ṣòro (bí i ẹ̀rọ alátagbà) nílò àlàyé àti pàtó sí i."
   },
   {
     "key": "service",
-    "label": "Service page",
+    "label": "Ojú-ìwé iṣẹ́",
     "minWords": 500,
     "maxWords": 1500,
-    "description": "A simple local service needs fewer words. A complex offering with multiple stages and client questions needs more."
+    "description": "Iṣẹ́ àdúgbò tó rọrùn nílò ọ̀rọ̀ díẹ̀. Iṣẹ́ tó ṣòro tó ní ọ̀pọ̀ ìgbésẹ̀ àti ìbéèrè àwọn aṣòwò nílò ọ̀rọ̀ sí i."
   },
   {
     "key": "homepage",
-    "label": "Homepage",
+    "label": "Ojú-ìwé àkọ́kọ́",
     "minWords": 400,
     "maxWords": 1000,
-    "description": "The homepage guides visitors to subpages. A clear message and readable structure make navigation easier."
+    "description": "Ojú-ìwé àkọ́kọ́ ń darí àwọn àlejò sí àwọn ojú-ìwé kéékèèké. Ìfiranṣẹ́ tó hàn gbangba àti ètò tó ṣe é kà ṣe ìrìn àjò rọrùn."
   },
   {
     "key": "landing",
-    "label": "Landing page",
+    "label": "Ojú-ìwé ìbalẹ̀",
     "minWords": 600,
     "maxWords": 2500,
-    "description": "Higher-priced offers require more explanation and trust-building. Simple offers can be shorter."
+    "description": "Àwọn iṣẹ́ owó ńlá nílò àlàyé sí i àti ìkọ́ ìgbẹ́kẹ̀lé. Àwọn iṣẹ́ tó rọrùn lè kúrú."
   },
   {
     "key": "blog",
-    "label": "Blog post",
+    "label": "Àròkọ blog",
     "minWords": 1200,
     "maxWords": 3000,
-    "description": "Length depends on topic complexity. The text should answer the reader's questions thoroughly and concisely."
+    "description": "Gígùn dá lórí bí àkọ́lé ṣe ṣòro tó. Ọ̀rọ̀ náà gbọ́dọ̀ dáhùn àwọn ìbéèrè olùkà ní kíkún àti ní ṣókí."
   },
   {
     "key": "guide",
-    "label": "Guide / tutorial",
+    "label": "Ìtọ́sọ́nà / ẹ̀kọ́",
     "minWords": 2500,
     "maxWords": 6000,
-    "description": "A detailed treatment of a topic with many aspects. Length depends on the scope of the subject."
+    "description": "Àlàyé kíkún lórí àkọ́lé tó ní ọ̀pọ̀lọpọ̀ ẹ̀ka. Gígùn dá lórí ìtóbi àkọ́lé náà."
   }
 ]

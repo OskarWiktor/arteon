@@ -1,47 +1,47 @@
 {
-  "dataType": "Data type",
+  "dataType": "Datatipe",
   "types": {
-    "url": "URL address",
-    "text": "Text",
-    "vcard": "Business card (vCard)",
-    "email": "Email",
-    "phone": "Phone"
+    "url": "URL-adres",
+    "text": "Teks",
+    "vcard": "Besigheidskaartjie (vCard)",
+    "email": "E-pos",
+    "phone": "Telefoon"
   },
-  "urlPlaceholder": "https://www.your-website.com",
-  "textPlaceholder": "Enter any text...",
-  "phonePlaceholder": "+1 234 567 890",
-  "size": "Size (px)",
-  "margin": "Margin (quiet zone)",
-  "qrColor": "QR code color",
-  "bgColor": "Background color",
-  "errorCorrection": "Error correction level",
+  "urlPlaceholder": "https://www.jou-webwerf.com",
+  "textPlaceholder": "Voer enige teks in...",
+  "phonePlaceholder": "+27 12 345 6789",
+  "size": "Grootte (px)",
+  "margin": "Marge (stilsone)",
+  "qrColor": "QR-kodekleur",
+  "bgColor": "Agtergrondkleur",
+  "errorCorrection": "Foutkorreksievlak",
   "errorCorrectionLevels": {
-    "L": "L - Low (7%)",
+    "L": "L - Laag (7%)",
     "M": "M - Medium (15%)",
-    "Q": "Q - High (25%)",
-    "H": "H - Maximum (30%)"
+    "Q": "Q - Hoog (25%)",
+    "H": "H - Maksimum (30%)"
   },
-  "preview": "QR code preview",
-  "downloadPng": "Download PNG",
-  "downloadSvg": "Download SVG",
-  "contrastWarning": "Contrast between colors is too low. The QR code may be difficult to scan.",
-  "contrastRatio": "Contrast ratio",
-  "recommended": "Recommended minimum: 3:1",
-  "enterData": "Enter data to generate a QR code.",
+  "preview": "QR-kode voorskou",
+  "downloadPng": "Laai PNG af",
+  "downloadSvg": "Laai SVG af",
+  "contrastWarning": "Kontras tussen kleure is te laag. Die QR-kode kan moeilik wees om te skandeer.",
+  "contrastRatio": "Kontrasverhouding",
+  "recommended": "Aanbevole minimum: 3:1",
+  "enterData": "Voer data in om 'n QR-kode te genereer.",
   "vcard": {
-    "firstName": "First name",
-    "lastName": "Last name",
-    "organization": "Company (optional)",
-    "title": "Job title (optional)",
-    "phone": "Phone (optional)",
-    "email": "Email (optional)",
-    "website": "Website (optional)",
-    "address": "Address (optional)"
+    "firstName": "Voornaam",
+    "lastName": "Van",
+    "organization": "Maatskappy (opsioneel)",
+    "title": "Postitel (opsioneel)",
+    "phone": "Telefoon (opsioneel)",
+    "email": "E-pos (opsioneel)",
+    "website": "Webwerf (opsioneel)",
+    "address": "Adres (opsioneel)"
   },
   "email": {
-    "to": "Email address",
-    "subject": "Subject (optional)",
-    "body": "Body (optional)"
+    "to": "E-posadres",
+    "subject": "Onderwerp (opsioneel)",
+    "body": "Liggaam (opsioneel)"
   },
-  "printTip": "For printed materials, we recommend a minimum size of 300px and error correction level H."
+  "printTip": "Vir gedrukte materiaal beveel ons 'n minimum grootte van 300px en foutkorreksievlak H aan."
 }

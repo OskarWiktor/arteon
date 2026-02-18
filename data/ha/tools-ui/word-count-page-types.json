@@ -1,44 +1,44 @@
 [
   {
     "key": "product",
-    "label": "Product description",
+    "label": "Bayanin kaya",
     "minWords": 80,
     "maxWords": 400,
-    "description": "Simple products need shorter descriptions. Complex items (e.g. electronics) require more detail and specifications."
+    "description": "Kayayyaki masu sauƙi suna buƙatar bayani gajere. Abubuwa masu rikitarwa (misali na'urorin lantarki) suna buƙatar ƙarin cikakkun bayanai da ƙayyadaddun bayanai."
   },
   {
     "key": "service",
-    "label": "Service page",
+    "label": "Shafin hidima",
     "minWords": 500,
     "maxWords": 1500,
-    "description": "A simple local service needs fewer words. A complex offering with multiple stages and client questions needs more."
+    "description": "Hidimar gida mai sauƙi tana buƙatar ƙarancin kalmomi. Tayin da ya ƙunshi matakai da yawa da tambayoyin abokan ciniki yana buƙatar ƙari."
   },
   {
     "key": "homepage",
-    "label": "Homepage",
+    "label": "Babban shafi",
     "minWords": 400,
     "maxWords": 1000,
-    "description": "The homepage guides visitors to subpages. A clear message and readable structure make navigation easier."
+    "description": "Babban shafin yana jagorantar baƙi zuwa ƙananan shafuka. Saƙo mai bayyana da tsari mai karatu suna sauƙaƙa kewayawa."
   },
   {
     "key": "landing",
-    "label": "Landing page",
+    "label": "Shafin sauka",
     "minWords": 600,
     "maxWords": 2500,
-    "description": "Higher-priced offers require more explanation and trust-building. Simple offers can be shorter."
+    "description": "Tayin da suka fi tsada suna buƙatar ƙarin bayani da gina amana. Tayin masu sauƙi za su iya zama gajere."
   },
   {
     "key": "blog",
-    "label": "Blog post",
+    "label": "Rubutun blog",
     "minWords": 1200,
     "maxWords": 3000,
-    "description": "Length depends on topic complexity. The text should answer the reader's questions thoroughly and concisely."
+    "description": "Tsawo ya dogara da rikitarwar batun. Rubutun ya kamata ya amsa tambayoyin mai karatu cikakke kuma a taƙaice."
   },
   {
     "key": "guide",
-    "label": "Guide / tutorial",
+    "label": "Jagora / koyarwa",
     "minWords": 2500,
     "maxWords": 6000,
-    "description": "A detailed treatment of a topic with many aspects. Length depends on the scope of the subject."
+    "description": "Cikakken magana kan batu mai bangarori da yawa. Tsawo ya dogara da fadin batun."
   }
 ]

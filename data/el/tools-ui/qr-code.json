@@ -1,47 +1,47 @@
 {
-  "dataType": "Data type",
+  "dataType": "Τύπος δεδομένων",
   "types": {
-    "url": "URL address",
-    "text": "Text",
-    "vcard": "Business card (vCard)",
+    "url": "Διεύθυνση URL",
+    "text": "Κείμενο",
+    "vcard": "Επαγγελματική κάρτα (vCard)",
     "email": "Email",
-    "phone": "Phone"
+    "phone": "Τηλέφωνο"
   },
-  "urlPlaceholder": "https://www.your-website.com",
-  "textPlaceholder": "Enter any text...",
-  "phonePlaceholder": "+1 234 567 890",
-  "size": "Size (px)",
-  "margin": "Margin (quiet zone)",
-  "qrColor": "QR code color",
-  "bgColor": "Background color",
-  "errorCorrection": "Error correction level",
+  "urlPlaceholder": "https://www.η-ιστοσελίδα-σας.com",
+  "textPlaceholder": "Εισάγετε οποιοδήποτε κείμενο...",
+  "phonePlaceholder": "+30 21 0123 4567",
+  "size": "Μέγεθος (px)",
+  "margin": "Περιθώριο (ζώνη ησυχίας)",
+  "qrColor": "Χρώμα κωδικού QR",
+  "bgColor": "Χρώμα φόντου",
+  "errorCorrection": "Επίπεδο διόρθωσης σφαλμάτων",
   "errorCorrectionLevels": {
-    "L": "L - Low (7%)",
-    "M": "M - Medium (15%)",
-    "Q": "Q - High (25%)",
-    "H": "H - Maximum (30%)"
+    "L": "L - Χαμηλό (7%)",
+    "M": "M - Μεσαίο (15%)",
+    "Q": "Q - Υψηλό (25%)",
+    "H": "H - Μέγιστο (30%)"
   },
-  "preview": "QR code preview",
-  "downloadPng": "Download PNG",
-  "downloadSvg": "Download SVG",
-  "contrastWarning": "Contrast between colors is too low. The QR code may be difficult to scan.",
-  "contrastRatio": "Contrast ratio",
-  "recommended": "Recommended minimum: 3:1",
-  "enterData": "Enter data to generate a QR code.",
+  "preview": "Προεπισκόπηση κωδικού QR",
+  "downloadPng": "Λήψη PNG",
+  "downloadSvg": "Λήψη SVG",
+  "contrastWarning": "Η αντίθεση μεταξύ των χρωμάτων είναι πολύ χαμηλή. Ο κωδικός QR μπορεί να είναι δύσκολο να σαρωθεί.",
+  "contrastRatio": "Αναλογία αντίθεσης",
+  "recommended": "Συνιστώμενο ελάχιστο: 3:1",
+  "enterData": "Εισάγετε δεδομένα για να δημιουργήσετε κωδικό QR.",
   "vcard": {
-    "firstName": "First name",
-    "lastName": "Last name",
-    "organization": "Company (optional)",
-    "title": "Job title (optional)",
-    "phone": "Phone (optional)",
-    "email": "Email (optional)",
-    "website": "Website (optional)",
-    "address": "Address (optional)"
+    "firstName": "Όνομα",
+    "lastName": "Επώνυμο",
+    "organization": "Εταιρεία (προαιρετικό)",
+    "title": "Τίτλος εργασίας (προαιρετικό)",
+    "phone": "Τηλέφωνο (προαιρετικό)",
+    "email": "Email (προαιρετικό)",
+    "website": "Ιστοσελίδα (προαιρετικό)",
+    "address": "Διεύθυνση (προαιρετικό)"
   },
   "email": {
-    "to": "Email address",
-    "subject": "Subject (optional)",
-    "body": "Body (optional)"
+    "to": "Διεύθυνση email",
+    "subject": "Θέμα (προαιρετικό)",
+    "body": "Σώμα (προαιρετικό)"
   },
-  "printTip": "For printed materials, we recommend a minimum size of 300px and error correction level H."
+  "printTip": "Για έντυπο υλικό, συνιστούμε ελάχιστο μέγεθος 300px και επίπεδο διόρθωσης σφαλμάτων H."
 }

@@ -1,44 +1,44 @@
 [
   {
     "key": "product",
-    "label": "Product description",
+    "label": "Описание на продукт",
     "minWords": 80,
     "maxWords": 400,
-    "description": "Simple products need shorter descriptions. Complex items (e.g. electronics) require more detail and specifications."
+    "description": "Простите продукти се нуждаят от по-кратки описания. Сложните артикули (напр. електроника) изискват повече детайли и спецификации."
   },
   {
     "key": "service",
-    "label": "Service page",
+    "label": "Страница за услуга",
     "minWords": 500,
     "maxWords": 1500,
-    "description": "A simple local service needs fewer words. A complex offering with multiple stages and client questions needs more."
+    "description": "Проста местна услуга се нуждае от по-малко думи. Сложна оферта с множество етапи и клиентски въпроси изисква повече."
   },
   {
     "key": "homepage",
-    "label": "Homepage",
+    "label": "Начална страница",
     "minWords": 400,
     "maxWords": 1000,
-    "description": "The homepage guides visitors to subpages. A clear message and readable structure make navigation easier."
+    "description": "Началната страница насочва посетителите към подстраници. Ясното послание и четливата структура улесняват навигацията."
   },
   {
     "key": "landing",
-    "label": "Landing page",
+    "label": "Целева страница",
     "minWords": 600,
     "maxWords": 2500,
-    "description": "Higher-priced offers require more explanation and trust-building. Simple offers can be shorter."
+    "description": "По-скъпите оферти изискват повече обяснение и изграждане на доверие. Простите оферти могат да бъдат по-кратки."
   },
   {
     "key": "blog",
-    "label": "Blog post",
+    "label": "Блог публикация",
     "minWords": 1200,
     "maxWords": 3000,
-    "description": "Length depends on topic complexity. The text should answer the reader's questions thoroughly and concisely."
+    "description": "Дължината зависи от сложността на темата. Текстът трябва да отговаря на въпросите на читателя задълбочено и кратко."
   },
   {
     "key": "guide",
-    "label": "Guide / tutorial",
+    "label": "Ръководство / урок",
     "minWords": 2500,
     "maxWords": 6000,
-    "description": "A detailed treatment of a topic with many aspects. Length depends on the scope of the subject."
+    "description": "Подробно разглеждане на тема с много аспекти. Дължината зависи от обхвата на темата."
   }
 ]

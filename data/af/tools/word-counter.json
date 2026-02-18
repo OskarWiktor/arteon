@@ -166,8 +166,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "How many words should a text have - optimal length for SEO",
-      "html": "<p class=\"text-mid mb-4\">The ranges below are based on analyses of content that ranks well in search engines. Text length itself does not affect Google rankings - what matters is whether the content answers the reader's questions.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Page type</th><th class=\"py-2 pr-4 font-semibold\">Range</th><th class=\"py-2 font-semibold\">When shorter, when longer?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Product description</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 words</td><td class=\"text-primary-light0 py-2 text-sm\">Simple product (e.g., a mug) - 80–150 words. Complex equipment (e.g., a laptop) - 300–400 words, because buyers have more questions.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Service page</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 words</td><td class=\"text-primary-light0 py-2 text-sm\">Local service (e.g., plumber) - 500–700 words. B2B service with process and FAQ - 1,200–1,500 words.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Homepage</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 words</td><td class=\"text-primary-light0 py-2 text-sm\">The homepage conveys the main value and guides visitors further - the text supports navigation, not to replace subpages.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landing page</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 words</td><td class=\"text-primary-light0 py-2 text-sm\">Simple offer - 600–1,000 words. Offer requiring explanation of process, variants, and objection handling - 1,500–2,500 words.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blog post</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 words</td><td class=\"text-primary-light0 py-2 text-sm\">Answer to a simple question - 1,200–1,800 words. Complex topic with many aspects - 2,000–3,000 words.</td></tr><tr><td class=\"py-2 pr-4\">Guide</td><td class=\"py-2 pr-4 whitespace-nowrap\">2500–6000 words</td><td class=\"text-primary-light0 py-2 text-sm\">Narrow topic - 2,500–3,500 words. Broad topic with many steps and examples - 4,000–6,000 words.</td></tr></tbody></table></div>"
+      "title": "Hoeveel woorde moet 'n teks hê - optimale lengte vir SEO",
+      "html": "<p class=\"text-mid mb-4\">Die reekse hieronder is gebaseer op ontledings van inhoud wat goed in soekenjins rangeer. Tekslengte op sigself beïnvloed nie Google-ranglyste nie - wat saak maak, is of die inhoud die leser se vrae beantwoord.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Bladsytipe</th><th class=\"py-2 pr-4 font-semibold\">Reeks</th><th class=\"py-2 font-semibold\">Wanneer korter, wanneer langer?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Produkbeskrywing</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 woorde</td><td class=\"text-primary-light0 py-2 text-sm\">Eenvoudige produk (bv. 'n beker) - 80–150 woorde. Komplekse toerusting (bv. 'n skootrekenaar) - 300–400 woorde, omdat kopers meer vrae het.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Diensbladsy</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 woorde</td><td class=\"text-primary-light0 py-2 text-sm\">Plaaslike diens (bv. loodgieter) - 500–700 woorde. B2B-diens met proses en GVV - 1 200–1 500 woorde.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Tuisbladsy</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 woorde</td><td class=\"text-primary-light0 py-2 text-sm\">Die tuisbladsy dra die hoofwaarde oor en lei besoekers verder - die teks ondersteun navigasie, nie om subbladsye te vervang nie.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Bestemmingsbladsy</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 woorde</td><td class=\"text-primary-light0 py-2 text-sm\">Eenvoudige aanbod - 600–1 000 woorde. Aanbod wat verduideliking van proses, variante en beswaarbehandeling vereis - 1 500–2 500 woorde.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blogplasing</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 woorde</td><td class=\"text-primary-light0 py-2 text-sm\">Antwoord op 'n eenvoudige vraag - 1,200–1,800 woorde. Komplekse onderwerp met baie aspekte - 2,000–3,000 woorde.</td></tr><tr><td class=\"py-2 pr-4\">Gids</td><td class=\"py-2 pr-4 whitespace-nowrap\">2500–6000 woorde</td><td class=\"text-primary-light0 py-2 text-sm\">Smal onderwerp - 2,500–3,500 woorde. Breë onderwerp met baie stappe en voorbeelde - 4,000–6,000 woorde.</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -175,39 +175,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Who is the online word counter for?",
-      "description": "A word counting tool for copywriters and beyond - here is who uses the counter most:",
+      "title": "Vir wie is die woordteller?",
+      "description": "'n Woordtellingsinstrument vir kopiskrywers en meer - hier is wie die teller die meeste gebruik:",
       "grid": "three",
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Copywriters and content creators",
-          "description": "Check whether the text falls within the recommended range for a specific page type. The SEO word counter helps evaluate whether an article is developed enough."
+          "title": "Kopiskrywers en inhoudskeppers",
+          "description": "Kontroleer of die teks binne die aanbevole reeks vir 'n spesifieke bladsytipe val. Die SEO-woordteller help om te evalueer of 'n artikel genoeg ontwikkel is."
         },
         {
           "icon": "RiBloggerLine",
           "title": "Bloggers",
-          "description": "Monitor post length to keep publications consistent. Check reading time before publishing."
+          "description": "Monitor plasingslengte om publikasies konsekwent te hou. Kontroleer leestyd voor publisering."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "E-commerce store owners",
-          "description": "Verify product descriptions against character limits on selling platforms (Amazon, eBay, Etsy)."
+          "title": "E-handelswinkeleienaars",
+          "description": "Verifieer produkbeskrywings teen karakterlimiete op verkoopplatforms (Amazon, eBay, Etsy)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO specialists",
-          "description": "Evaluate whether page content has an optimal length compared to competitors. Analyze the word-to-topic ratio."
+          "title": "SEO-spesialiste",
+          "description": "Evalueer of bladsy-inhoud 'n optimale lengte het in vergelyking met mededingers. Analiseer die woord-tot-onderwerp-verhouding."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Students and academics",
-          "description": "Check whether a paper meets the required word or character limit."
+          "title": "Studente en akademici",
+          "description": "Kontroleer of 'n werkstuk aan die vereiste woord- of karakterlimiet voldoen."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Translators",
-          "description": "Count characters without spaces for translation quotes (a standard billing unit)."
+          "title": "Vertalers",
+          "description": "Tel karakters sonder spasies vir vertalingsaanhalings ('n standaard faktureereenheid)."
         }
       ]
     },
@@ -217,8 +217,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Character limits on popular platforms",
-      "html": "<p class=\"text-mid mb-4\">The character counter is useful when creating content for platforms with length restrictions:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform / Element</th><th class=\"py-2 pr-4 font-semibold\">Character limit</th><th class=\"py-2 font-semibold\">Notes</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 characters</td><td class=\"text-primary-light0 py-2 text-sm\">Longer titles are truncated in search results.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 characters</td><td class=\"text-primary-light0 py-2 text-sm\">The description visible below the link in search results.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - product title</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 characters</td><td class=\"text-primary-light0 py-2 text-sm\">Short, specific title with the most important keywords.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - bullet points</td><td class=\"py-2 pr-4 whitespace-nowrap\">500 characters each</td><td class=\"text-primary-light0 py-2 text-sm\">Up to 5 bullet points describing key product features.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) - post</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 characters</td><td class=\"text-primary-light0 py-2 text-sm\">Standard limit for regular users.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn - post</td><td class=\"py-2 pr-4 whitespace-nowrap\">3,000 characters</td><td class=\"text-primary-light0 py-2 text-sm\">After ~210 characters a &quot;see more&quot; link appears.</td></tr></tbody></table></div>"
+      "title": "Karakterlimiete op gewilde platforms",
+      "html": "<p class=\"text-mid mb-4\">Die karakterteller is nuttig wanneer jy inhoud skep vir platforms met lengtebeperkings:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform / Element</th><th class=\"py-2 pr-4 font-semibold\">Karakterlimiet</th><th class=\"py-2 font-semibold\">Notas</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta-titel</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 karakters</td><td class=\"text-primary-light0 py-2 text-sm\">Langer titels word in soekresultate afgekap.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta-beskrywing</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 karakters</td><td class=\"text-primary-light0 py-2 text-sm\">Die beskrywing sigbaar onder die skakel in soekresultate.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - produktitel</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 karakters</td><td class=\"text-primary-light0 py-2 text-sm\">Kort, spesifieke titel met die belangrikste sleutelwoorde.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - opsommingspunte</td><td class=\"py-2 pr-4 whitespace-nowrap\">500 karakters elk</td><td class=\"text-primary-light0 py-2 text-sm\">Tot 5 opsommingspunte wat sleutelprodukkenmerke beskryf.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) - plasing</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 karakters</td><td class=\"text-primary-light0 py-2 text-sm\">Standaardlimiet vir gewone gebruikers.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn - plasing</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 karakters</td><td class=\"text-primary-light0 py-2 text-sm\">Na ~210 karakters verskyn 'n &quot;sien meer&quot;-skakel.</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -226,38 +226,38 @@
     },
     {
       "type": "sectionSteps",
-      "title": "What makes this word and character counter special?",
+      "title": "Wat maak hierdie woord- en karakterteller spesiaal?",
       "grid": "two",
       "items": [
         {
           "icon": "RiInfinityLine",
-          "title": "Six page types with recommended ranges",
-          "description": "Product description, service page, homepage, landing page, blog post, and guide - each type has its own ranges based on analyses."
+          "title": "Ses bladsytipes met aanbevole reekse",
+          "description": "Produkbeskrywing, diensbladsy, tuisbladsy, bestemmingsbladsy, blogplasing en gids - elke tipe het sy eie reekse gebaseer op ontledings."
         },
         {
           "icon": "RiUserLine",
-          "title": "Local processing in the browser",
-          "description": "Your text is never sent to any server - all analysis happens locally on your device."
+          "title": "Plaaslike verwerking in die blaaier",
+          "description": "Jou teks word nooit na enige bediener gestuur nie - alle analise gebeur plaaslik op jou toestel."
         },
         {
           "icon": "RiCheckboxCircleLine",
-          "title": "Text length evaluation",
-          "description": "You don't just count words - you get information on whether the length is appropriate for the selected page type."
+          "title": "Tekslengte-evaluering",
+          "description": "Jy tel nie net woorde nie - jy kry inligting oor of die lengte geskik is vir die geselekteerde bladsytipe."
         },
         {
           "icon": "RiBarChartLine",
-          "title": "SEO-based ranges",
-          "description": "Recommended lengths are based on analyses of content that ranks well in search engines."
+          "title": "SEO-gebaseerde reekse",
+          "description": "Aanbevole lengtes is gebaseer op ontledings van inhoud wat goed in soekenjins rangeer."
         },
         {
           "icon": "RiTimerLine",
-          "title": "Reading time",
-          "description": "You immediately know how many minutes it will take readers to go through the text."
+          "title": "Leestyd",
+          "description": "Jy weet onmiddellik hoeveel minute dit lesers sal neem om deur die teks te gaan."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Copy report",
-          "description": "The Copy Report button copies a summary with all statistics and the length evaluation to your clipboard."
+          "title": "Kopieer verslag",
+          "description": "Die Kopieer Verslag-knoppie kopieer 'n opsomming met alle statistieke en die lengte-evaluering na jou knipbord."
         }
       ]
     },
@@ -267,38 +267,38 @@
     },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the word and character counter",
+      "title": "Gereeld gevraagde vrae oor die woord- en karakterteller",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Does text length affect Google rankings?",
-          "answer": "Text length by itself is not a ranking factor. Google evaluates whether the content answers the user's question and is valuable to them. Shorter text that comprehensively answers a question can rank well - what matters is value for the reader. The ranges in this tool are based on analyses of content that ranks well in search results.",
-          "answerSchemaText": "Text length is not a direct ranking factor. Google evaluates the value of content for the user."
+          "question": "Beïnvloed tekslengte Google-ranglyste?",
+          "answer": "Tekslengte op sigself is nie 'n ranglysfaktor nie. Google evalueer of die inhoud die gebruiker se vraag beantwoord en waardevol vir hulle is. Korter teks wat 'n vraag omvattend beantwoord, kan goed rangeer - wat saak maak, is waarde vir die leser. Die reekse in hierdie instrument is gebaseer op ontledings van inhoud wat goed in soekresultate rangeer.",
+          "answerSchemaText": "Tekslengte is nie 'n direkte ranglysfaktor nie. Google evalueer die waarde van inhoud vir die gebruiker."
         },
         {
-          "question": "Why are the word ranges so broad?",
-          "answer": "The same page type may require different lengths depending on topic complexity. A simple product description (e.g., a mug) is 80–150 words - just material, capacity, and use case. A laptop description is 300–400 words because buyers ask about the processor, memory, screen, and battery. Similarly with services: a local plumber's page is 500–700 words, while a comprehensive B2B service implementation page with process steps and FAQ is 1,200–1,500 words.",
-          "answerSchemaText": "The difference comes from topic complexity - a simple product needs fewer words than a complex one."
+          "question": "Waarom is die woordreekse so breed?",
+          "answer": "Dieselfde bladsytipe kan verskillende lengtes vereis afhangende van onderwerpkompleksiteit. 'n Eenvoudige produkbeskrywing (bv. 'n beker) is 80–150 woorde - net materiaal, kapasiteit en gebruiksgeval. 'n Skootrekenaarbeskrywing is 300–400 woorde omdat kopers oor die verwerker, geheue, skerm en battery vra. Net so met dienste: 'n plaaslike loodgieter se bladsy is 500–700 woorde, terwyl 'n omvattende B2B-diensimplementeringsbladsy met prosesstappe en GVV 1 200–1 500 woorde is.",
+          "answerSchemaText": "Die verskil kom van onderwerpkompleksiteit - 'n eenvoudige produk benodig minder woorde as 'n komplekse een."
         },
         {
-          "question": "How should I interpret \"too short\" or \"too long\"?",
-          "answer": "The evaluation shows where your text falls relative to typical content of that type. If the text is marked \"too short\" but answers all of the reader's questions - the length is fine. If it is \"too long\" but every paragraph adds new information - the length is justified.",
-          "answerSchemaText": "The evaluation shows where the text falls relative to typical content. If the text answers the reader's questions, the length is appropriate."
+          "question": "Hoe moet ek \"te kort\" of \"te lank\" interpreteer?",
+          "answer": "Die evaluering wys waar jou teks val relatief tot tipiese inhoud van daardie tipe. As die teks as \"te kort\" gemerk is maar al die leser se vrae beantwoord - is die lengte goed. As dit \"te lank\" is maar elke paragraaf nuwe inligting byvoeg - is die lengte geregverdig.",
+          "answerSchemaText": "Die evaluering wys waar die teks val relatief tot tipiese inhoud. As die teks die leser se vrae beantwoord, is die lengte toepaslik."
         },
         {
-          "question": "How does the reading time calculator work?",
-          "answer": "The tool divides the word count by 200 - the average reading speed for typical text. Technical or demanding text (e.g., documentation, terms of service) will be read slower. A light lifestyle article - faster. The result is an approximate value that helps estimate how long a reader will spend with the text.",
-          "answerSchemaText": "The tool assumes an average reading speed of 200 words per minute. This is an approximate value for typical text."
+          "question": "Hoe werk die leestydsakrekenaar?",
+          "answer": "Die instrument deel die woordtelling deur 200 - die gemiddelde leesspoed vir tipiese teks. Tegniese of veeleisende teks (bv. dokumentasie, diensvoorwaardes) sal stadiger gelees word. 'n Ligte lewenstylartiekel - vinniger. Die resultaat is 'n benaderde waarde wat help om te beraam hoe lank 'n leser met die teks sal spandeer.",
+          "answerSchemaText": "Die instrument neem 'n gemiddelde leesspoed van 200 woorde per minuut aan. Dit is 'n benaderde waarde vir tipiese teks."
         },
         {
-          "question": "Where do the recommended ranges come from?",
-          "answer": "The ranges are based on analyses of content that ranks well in search engines and on content creation best practices. They are intentionally broad because the same page type may require different lengths depending on industry, topic complexity, and reader needs. The ranges serve as a starting point for evaluating whether text falls within a typical range for a specific page type.",
-          "answerSchemaText": "The ranges are based on SEO analyses and content creation best practices."
+          "question": "Waar kom die aanbevole reekse vandaan?",
+          "answer": "Die reekse is gebaseer op ontledings van inhoud wat goed in soekenjins rangeer en op beste praktyke vir inhoudskeppping. Hulle is doelbewus breed omdat dieselfde bladsytipe verskillende lengtes kan vereis afhangende van bedryf, onderwerpkompleksiteit en leserbehoeftes. Die reekse dien as 'n beginpunt vir die evaluering of teks binne 'n tipiese reeks vir 'n spesifieke bladsytipe val.",
+          "answerSchemaText": "Die reekse is gebaseer op SEO-ontledings en beste praktyke vir inhoudskeppping."
         },
         {
-          "question": "Can I copy the report with statistics?",
-          "answer": "Yes. Below the statistics you will find a Copy Report button - it copies a summary with word count, character count, paragraphs, reading time, and length evaluation to your clipboard. You can paste it into a document or send it to collaborators.",
-          "answerSchemaText": "Yes. Click the Copy Report button below the statistics. A summary with all metrics and evaluation will be copied to your clipboard."
+          "question": "Kan ek die verslag met statistieke kopieer?",
+          "answer": "Ja. Onder die statistieke sal jy 'n Kopieer Verslag-knoppie vind - dit kopieer 'n opsomming met woordtelling, karaktertelling, paragrawe, leestyd en lengte-evaluering na jou knipbord. Jy kan dit in 'n dokument plak of aan medewerkers stuur.",
+          "answerSchemaText": "Ja. Klik op die Kopieer Verslag-knoppie onder die statistieke. 'n Opsomming met alle metrieke en evaluering sal na jou knipbord gekopieer word."
         }
       ]
     },
@@ -308,7 +308,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Explore other tools"
+      "title": "Verken ander gereedskap"
     },
     {
       "type": "gap",

@@ -1,44 +1,44 @@
 [
   {
     "key": "product",
-    "label": "Product description",
+    "label": "Περιγραφή προϊόντος",
     "minWords": 80,
     "maxWords": 400,
-    "description": "Simple products need shorter descriptions. Complex items (e.g. electronics) require more detail and specifications."
+    "description": "Τα απλά προϊόντα χρειάζονται μικρότερες περιγραφές. Τα σύνθετα αντικείμενα (π.χ. ηλεκτρονικά) απαιτούν περισσότερες λεπτομέρειες και προδιαγραφές."
   },
   {
     "key": "service",
-    "label": "Service page",
+    "label": "Σελίδα υπηρεσίας",
     "minWords": 500,
     "maxWords": 1500,
-    "description": "A simple local service needs fewer words. A complex offering with multiple stages and client questions needs more."
+    "description": "Μια απλή τοπική υπηρεσία χρειάζεται λιγότερες λέξεις. Μια σύνθετη προσφορά με πολλαπλά στάδια και ερωτήσεις πελατών χρειάζεται περισσότερες."
   },
   {
     "key": "homepage",
-    "label": "Homepage",
+    "label": "Αρχική σελίδα",
     "minWords": 400,
     "maxWords": 1000,
-    "description": "The homepage guides visitors to subpages. A clear message and readable structure make navigation easier."
+    "description": "Η αρχική σελίδα καθοδηγεί τους επισκέπτες σε υποσελίδες. Ένα σαφές μήνυμα και αναγνώσιμη δομή διευκολύνουν την πλοήγηση."
   },
   {
     "key": "landing",
-    "label": "Landing page",
+    "label": "Σελίδα προορισμού",
     "minWords": 600,
     "maxWords": 2500,
-    "description": "Higher-priced offers require more explanation and trust-building. Simple offers can be shorter."
+    "description": "Οι υψηλότερης τιμής προσφορές απαιτούν περισσότερη εξήγηση και οικοδόμηση εμπιστοσύνης. Οι απλές προσφορές μπορούν να είναι πιο σύντομες."
   },
   {
     "key": "blog",
-    "label": "Blog post",
+    "label": "Άρθρο ιστολογίου",
     "minWords": 1200,
     "maxWords": 3000,
-    "description": "Length depends on topic complexity. The text should answer the reader's questions thoroughly and concisely."
+    "description": "Το μήκος εξαρτάται από την πολυπλοκότητα του θέματος. Το κείμενο πρέπει να απαντά στις ερωτήσεις του αναγνώστη διεξοδικά και συνοπτικά."
   },
   {
     "key": "guide",
-    "label": "Guide / tutorial",
+    "label": "Οδηγός / εκπαιδευτικό υλικό",
     "minWords": 2500,
     "maxWords": 6000,
-    "description": "A detailed treatment of a topic with many aspects. Length depends on the scope of the subject."
+    "description": "Λεπτομερής αντιμετώπιση ενός θέματος με πολλές πτυχές. Το μήκος εξαρτάται από το εύρος του θέματος."
   }
 ]
