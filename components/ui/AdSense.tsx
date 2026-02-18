@@ -51,13 +51,14 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
   }
 
   /* ----------------------------------------------------------------
-   * in-article — responsive ad between content sections
-   * Uses auto format (more reliable in React SPAs than fluid in-article)
+   * in-article — fluid ad inside article/tool content
+   * MUST match Google's exact in-article code: data-ad-layout="in-article"
+   * + data-ad-format="fluid" (slot 9459125335 is an In-article unit)
    * --------------------------------------------------------------- */
   if (variant === 'in-article') {
     return (
       <div className={className}>
-        <ins className="adsbygoogle" style={{ display: 'block' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} data-ad-format="auto" data-full-width-responsive="true" />
+        <ins className="adsbygoogle" style={{ display: 'block', textAlign: 'center' }} data-ad-client={AD_CLIENT} data-ad-slot={slot} data-ad-layout="in-article" data-ad-format="fluid" />
       </div>
     );
   }
