@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import type { AdSenseProps } from '@/types/ui';
 export type { AdVariant, AdSenseProps } from '@/types/ui';
 
-const AD_CLIENT = 'ca-pub-7845947936813012';
+const AD_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT || 'ca-pub-7845947936813012';
 
 const PRESETS = {
   'tool-banner': { slot: '7551147298' },
@@ -45,41 +45,75 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
     const container = containerRef.current;
     if (!container || pushed.current) return;
 
-    const ins = document.createElement('ins');
-    ins.className = 'adsbygoogle';
-    ins.setAttribute('data-ad-client', AD_CLIENT);
-    ins.setAttribute('data-ad-slot', slot);
+    const tryRender = () => {
+      if (pushed.current) return true;
 
-    if (variant === 'tool-banner') {
-      ins.style.display = 'inline-block';
-      ins.style.width = '728px';
-      ins.style.height = '90px';
-    } else if (isInArticleVariant) {
-      ins.style.display = 'block';
-      ins.style.textAlign = 'center';
-      ins.setAttribute('data-ad-layout', 'in-article');
-      ins.setAttribute('data-ad-format', 'fluid');
-      ins.setAttribute('data-full-width-responsive', 'true');
-    } else if (variant === 'autorelaxed') {
-      ins.style.display = 'block';
-      ins.setAttribute('data-ad-format', 'autorelaxed');
-    } else {
-      ins.style.display = 'block';
-      ins.setAttribute('data-ad-format', 'auto');
-    }
+      // Auto/fluid units can collapse to 0px if pushed while hidden (e.g. responsive sidebars).
+      if (variant !== 'tool-banner' && container.getBoundingClientRect().width === 0) {
+        return false;
+      }
 
-    container.appendChild(ins);
+      const ins = document.createElement('ins');
+      ins.className = 'adsbygoogle';
+      ins.setAttribute('data-ad-client', AD_CLIENT);
+      ins.setAttribute('data-ad-slot', slot);
 
-    try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-      pushed.current = true;
-    } catch (err) {
-      console.error('AdSense push error:', err);
-    }
+      if (variant === 'tool-banner') {
+        ins.style.display = 'inline-block';
+        ins.style.width = '728px';
+        ins.style.height = '90px';
+      } else if (isInArticleVariant) {
+        ins.style.display = 'block';
+        ins.style.textAlign = 'center';
+        ins.setAttribute('data-ad-layout', 'in-article');
+        ins.setAttribute('data-ad-format', 'fluid');
+        ins.setAttribute('data-full-width-responsive', 'true');
+      } else if (variant === 'vertical') {
+        ins.style.display = 'inline-block';
+        ins.style.width = '160px';
+        ins.style.height = '600px';
+      } else if (variant === 'autorelaxed') {
+        ins.style.display = 'block';
+        ins.setAttribute('data-ad-format', 'autorelaxed');
+      } else {
+        ins.style.display = 'block';
+        ins.setAttribute('data-ad-format', 'auto');
+      }
+
+      container.replaceChildren(ins);
+
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+        pushed.current = true;
+      } catch (err) {
+        console.error('AdSense push error:', err);
+      }
+
+      return pushed.current;
+    };
+
+    if (tryRender()) return;
+
+    if (typeof ResizeObserver === 'undefined') return;
+
+    const observer = new ResizeObserver(() => {
+      if (tryRender()) observer.disconnect();
+    });
+
+    observer.observe(container);
+    return () => observer.disconnect();
   }, [variant, slot]);
 
   if (variant === 'tool-banner') {
     return <div ref={containerRef} className={`flex justify-center ${className}`} />;
+  }
+
+  if (variant === 'vertical') {
+    return <div ref={containerRef} className={`mx-auto min-h-[600px] w-[160px] ${className}`} />;
+  }
+
+  if (isInArticleVariant) {
+    return <div ref={containerRef} className={`min-h-[280px] w-full ${className}`} />;
   }
 
   return <div ref={containerRef} className={className} />;
