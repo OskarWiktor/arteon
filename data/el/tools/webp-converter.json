@@ -2,46 +2,49 @@
   "toolKey": "jpgToWebp",
   "locale": "el",
   "metadata": {
-    "title": "Free JPG/PNG to WebP Converter – No Limits, No Upload",
-    "description": "Reduce image size by up to 35% without quality loss. JPG and PNG to WebP conversion runs locally – files never leave your device. No signup, no limits.",
+    "title": "Δωρεάν Μετατροπέας JPG/PNG σε WebP – Χωρίς Όρια, Χωρίς Upload",
+    "description": "Μειώστε το μέγεθος εικόνων έως 35% χωρίς απώλεια ποιότητας. Η μετατροπή JPG και PNG σε WebP γίνεται τοπικά — τα αρχεία δεν φεύγουν από τη συσκευή σας. Χωρίς εγγραφή, χωρίς όρια.",
     "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
     "path": "/el/ergaleia/metatropeas-jpg-png-se-webp"
   },
   "hero": {
-    "title": "JPG/PNG to WebP Converter – Free, No Limits",
-    "description": "Reduce image file size by up to 35% without losing quality. Add files, choose quality level, and download images in WebP format. All conversion happens locally in the browser.",
+    "title": "Μετατροπέας JPG/PNG σε WebP – Δωρεάν, Χωρίς Όρια",
+    "description": "Μειώστε το μέγεθος αρχείων εικόνων έως 35% χωρίς απώλεια ποιότητας. Προσθέστε αρχεία, επιλέξτε επίπεδο ποιότητας και κατεβάστε εικόνες σε μορφή WebP. Όλη η μετατροπή γίνεται τοπικά στον browser.",
     "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/el/ergaleia", "label": "Tools" },
-    "third": { "href": "/el/ergaleia/metatropeas-jpg-png-se-webp", "label": "JPG/PNG to WebP converter" }
+    "second": { "href": "/el/ergaleia", "label": "Εργαλεία" },
+    "third": { "href": "/el/ergaleia/metatropeas-jpg-png-se-webp", "label": "Μετατροπέας JPG/PNG σε WebP" }
   },
   "schemas": {
     "software": {
-      "name": "JPG and PNG to WebP converter online - free, no limits",
-      "alternateName": ["JPG to WebP and PNG to WebP converter"],
+      "name": "Μετατροπέας JPG και PNG σε WebP — δωρεάν, χωρίς όρια",
+      "alternateName": ["Μετατροπέας JPG σε WebP και PNG σε WebP"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Free online JPG and PNG to WebP converter. Reduce image file size by up to 35%, improve page load speed and Core Web Vitals scores. Conversion happens in the browser - files are not sent to a server.",
+      "description": "Δωρεάν μετατροπέας JPG και PNG σε WebP. Μειώστε το μέγεθος αρχείων εικόνων έως 35%, βελτιώστε την ταχύτητα φόρτωσης σελίδας και τις βαθμολογίες Core Web Vitals. Η μετατροπή γίνεται στον browser — τα αρχεία δεν αποστέλλονται σε server.",
       "featureList": [
-        "JPG to WebP conversion",
-        "PNG to WebP conversion",
-        "Quality level adjustment (1–100%)",
-        "Batch conversion of multiple files",
-        "Size preview before and after conversion",
-        "Individual file download",
-        "Download all files as ZIP",
-        "Local processing in the browser (files are not sent to a server)"
+        "Μετατροπή JPG σε WebP",
+        "Μετατροπή PNG σε WebP",
+        "Ρύθμιση επιπέδου ποιότητας (1–100%)",
+        "Ομαδική μετατροπή πολλαπλών αρχείων",
+        "Προεπισκόπηση μεγέθους πριν και μετά τη μετατροπή",
+        "Μεμονωμένη λήψη αρχείων",
+        "Λήψη όλων των αρχείων ως ZIP",
+        "Τοπική επεξεργασία στον browser (τα αρχεία δεν αποστέλλονται σε server)"
       ]
     },
     "howTo": {
-      "name": "How to convert JPG and PNG to WebP online",
-      "description": "How to convert JPG and PNG images to WebP format. Quality settings (60–95%), Smart Quality mechanism, and downloading converted files as ZIP.",
+      "name": "Πώς να μετατρέψετε JPG και PNG σε WebP",
+      "description": "Πώς να μετατρέψετε εικόνες JPG και PNG σε μορφή WebP. Ρυθμίσεις ποιότητας (60–95%), μηχανισμός Smart Quality και λήψη μετατρεμμένων αρχείων ως ZIP.",
       "steps": [
-        { "name": "Add files for conversion", "text": "Drag JPG or PNG images onto the designated area or select files from your device. You can add multiple files at once." },
-        { "name": "Set quality level", "text": "Choose the output WebP file quality using the slider (60–95%). The default value of 80% is a good balance between quality and size." },
-        { "name": "Start conversion", "text": "After starting conversion, the tool will process all files in the queue and automatically apply Smart Quality." },
-        { "name": "Download converted files", "text": "Converted files can be downloaded individually or all at once as a ZIP archive." }
+        {
+          "name": "Προσθέστε αρχεία για μετατροπή",
+          "text": "Σύρετε εικόνες JPG ή PNG στην καθορισμένη περιοχή ή επιλέξτε αρχεία από τη συσκευή σας. Μπορείτε να προσθέσετε πολλαπλά αρχεία ταυτόχρονα."
+        },
+        { "name": "Ορίστε επίπεδο ποιότητας", "text": "Επιλέξτε την ποιότητα του αρχείου WebP με το slider (60–95%). Η προεπιλεγμένη τιμή 80% είναι καλή ισορροπία μεταξύ ποιότητας και μεγέθους." },
+        { "name": "Ξεκινήστε τη μετατροπή", "text": "Μετά την έναρξη, το εργαλείο θα επεξεργαστεί όλα τα αρχεία στην ουρά και θα εφαρμόσει αυτόματα Smart Quality." },
+        { "name": "Κατεβάστε τα μετατρεμμένα αρχεία", "text": "Τα μετατρεμμένα αρχεία μπορούν να κατεβούν μεμονωμένα ή όλα μαζί ως αρχείο ZIP." }
       ]
     }
   },
@@ -49,65 +52,71 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "What is WebP and why convert images?",
-      "html": "<p class=\"mb-4\">WebP is an image format created by Google that allows reducing image file sizes by up to 25–35% compared to JPG and PNG - while maintaining comparable visual quality. Smaller files mean faster page loading, which translates to better user experience and higher scores in <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"mb-4\">The WebP format is supported by all modern browsers: Chrome, Firefox, Safari (from version 14), and Edge. If you run a website, online store, or blog, converting images to WebP is one of the simplest ways to improve site performance.</p><p>The converter supports both JPG photos and PNG graphics (including those with transparency). You can convert any number of files at once - all are processed locally in the browser, without being sent to a server.</p>"
+      "title": "Τι είναι το WebP και γιατί να μετατρέψετε εικόνες;",
+      "html": "<p class=\"mb-4\">Το WebP είναι μια μορφή εικόνας που δημιούργησε η Google και επιτρέπει μείωση του μεγέθους αρχείων εικόνων έως 25–35% σε σύγκριση με JPG και PNG — διατηρώντας συγκρίσιμη οπτική ποιότητα. Μικρότερα αρχεία σημαίνουν ταχύτερη φόρτωση σελίδας, που μεταφράζεται σε καλύτερη εμπειρία χρήστη και υψηλότερες βαθμολογίες στο <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"mb-4\">Η μορφή WebP υποστηρίζεται από όλους τους σύγχρονους browsers: Chrome, Firefox, Safari (από έκδοση 14) και Edge. Αν διαχειρίζεστε ιστοσελίδα, ηλεκτρονικό κατάστημα ή blog, η μετατροπή εικόνων σε WebP είναι ένας από τους απλούστερους τρόπους βελτίωσης της απόδοσης του site.</p><p>Ο μετατροπέας υποστηρίζει τόσο φωτογραφίες JPG όσο και γραφικά PNG (συμπεριλαμβανομένων αυτών με διαφάνεια). Μπορείτε να μετατρέψετε οποιονδήποτε αριθμό αρχείων ταυτόχρονα — όλα επεξεργάζονται τοπικά στον browser, χωρίς αποστολή σε server.</p>"
     },
     { "type": "gap", "size": "xs" },
     {
       "type": "sectionSteps",
-      "title": "How to convert images to WebP",
-      "description": "Converting to WebP takes just a few seconds:",
+      "title": "Πώς να μετατρέψετε εικόνες σε WebP",
+      "description": "Η μετατροπή σε WebP διαρκεί μόλις λίγα δευτερόλεπτα:",
       "grid": "three",
       "items": [
-        { "title": "1. Add files", "description": "Drag JPG or PNG images onto the designated area or select files from your device. You can add any number of files at once." },
-        { "title": "2. Set quality", "description": "Choose the quality level (default 80%). A lower value means a smaller file. For most use cases, 80% is the optimal setting." },
-        { "title": "3. Download WebP", "description": "After conversion, download files individually or as a ZIP archive. Each file shows information about the space saved." }
+        {
+          "title": "1. Προσθέστε αρχεία",
+          "description": "Σύρετε εικόνες JPG ή PNG στην καθορισμένη περιοχή ή επιλέξτε αρχεία από τη συσκευή σας. Μπορείτε να προσθέσετε οποιονδήποτε αριθμό αρχείων ταυτόχρονα."
+        },
+        {
+          "title": "2. Ορίστε ποιότητα",
+          "description": "Επιλέξτε το επίπεδο ποιότητας (προεπιλογή 80%). Χαμηλότερη τιμή σημαίνει μικρότερο αρχείο. Για τις περισσότερες χρήσεις, 80% είναι η βέλτιστη ρύθμιση."
+        },
+        { "title": "3. Κατεβάστε WebP", "description": "Μετά τη μετατροπή, κατεβάστε αρχεία μεμονωμένα ή ως αρχείο ZIP. Κάθε αρχείο δείχνει πληροφορίες για τον εξοικονομημένο χώρο." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How to add files for conversion",
-      "html": "<p class=\"text-mid\">The tool offers two ways to add files:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Drag and drop</strong> - grab files from a folder on your computer and drop them onto the area labeled &quot;Drag and drop images here&quot;. You can drag multiple files at once.</li><li><strong>Select from device</strong> - clicking the file upload area opens a selection dialog. Holding Ctrl (or Cmd on Mac) lets you select multiple files at once.</li></ul><p class=\"text-mid mt-3\">The tool only accepts JPG and PNG files. If you accidentally add a file in another format (e.g., GIF or BMP), it will be automatically skipped and you will see an informational message.</p><p class=\"text-mid mt-3\"><strong>Privacy:</strong> All files are processed locally in the browser. They are not sent anywhere - they do not go to any server. After closing the tab or browser, files are removed from memory.</p>"
+      "title": "Πώς να προσθέσετε αρχεία για μετατροπή",
+      "html": "<p class=\"text-mid\">Το εργαλείο προσφέρει δύο τρόπους προσθήκης αρχείων:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Σύρσιμο και απόθεση</strong> — πιάστε αρχεία από φάκελο στον υπολογιστή σας και αφήστε τα στην περιοχή με την ένδειξη &quot;Drag and drop images here&quot;. Μπορείτε να σύρετε πολλαπλά αρχεία ταυτόχρονα.</li><li><strong>Επιλογή από συσκευή</strong> — κάνοντας κλικ στην περιοχή αποστολής αρχείων ανοίγει παράθυρο επιλογής. Κρατώντας Ctrl (ή Cmd σε Mac) μπορείτε να επιλέξετε πολλαπλά αρχεία ταυτόχρονα.</li></ul><p class=\"text-mid mt-3\">Το εργαλείο δέχεται μόνο αρχεία JPG και PNG. Αν προσθέσετε κατά λάθος αρχείο σε άλλη μορφή (π.χ. GIF ή BMP), θα παραληφθεί αυτόματα και θα δείτε ενημερωτικό μήνυμα.</p><p class=\"text-mid mt-3\"><strong>Απόρρητο:</strong> Όλα τα αρχεία επεξεργάζονται τοπικά στον browser. Δεν αποστέλλονται πουθενά — δεν πηγαίνουν σε κανένα server. Μετά το κλείσιμο της καρτέλας ή του browser, τα αρχεία αφαιρούνται από τη μνήμη.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "What do file statuses mean?",
-      "html": "<p class=\"text-mid\">Each file in the queue has one of four statuses that indicate conversion progress:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Pending</span><p class=\"text-mid\">The file is in the queue and waiting to be processed. Conversion has not yet started.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Processing…</span><p class=\"text-mid\">The file is being converted. For most images this takes a fraction of a second, but very large files may take several seconds.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Done</span><p class=\"text-mid\">Conversion completed successfully. The WebP file is ready to download. Next to the status you will also see the size before and after conversion.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Error</span><p class=\"text-mid\">Something went wrong during conversion. This may be a corrupted source file or a browser memory issue with very large images. The &quot;Retry&quot; button lets you try again.</p></div></div>"
+      "title": "Τι σημαίνουν οι καταστάσεις αρχείων;",
+      "html": "<p class=\"text-mid\">Κάθε αρχείο στην ουρά έχει μία από τέσσερις καταστάσεις που δείχνουν την πρόοδο μετατροπής:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Pending</span><p class=\"text-mid\">Το αρχείο βρίσκεται στην ουρά και περιμένει επεξεργασία. Η μετατροπή δεν έχει ξεκινήσει ακόμα.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Processing…</span><p class=\"text-mid\">Το αρχείο μετατρέπεται. Για τις περισσότερες εικόνες αυτό διαρκεί κλάσμα δευτερολέπτου, αλλά πολύ μεγάλα αρχεία μπορεί να χρειαστούν αρκετά δευτερόλεπτα.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Done</span><p class=\"text-mid\">Η μετατροπή ολοκληρώθηκε επιτυχώς. Το αρχείο WebP είναι έτοιμο για λήψη. Δίπλα στην κατάσταση θα δείτε επίσης το μέγεθος πριν και μετά τη μετατροπή.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Error</span><p class=\"text-mid\">Κάτι πήγε στραβά κατά τη μετατροπή. Αυτό μπορεί να είναι κατεστραμμένο αρχείο πηγής ή πρόβλημα μνήμης browser με πολύ μεγάλες εικόνες. Το κουμπί &quot;Retry&quot; σας επιτρέπει να δοκιμάσετε ξανά.</p></div></div>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How does Smart Quality work?",
-      "html": "<p class=\"text-mid\">Smart Quality is an automatic optimization mechanism that ensures the output WebP file is never larger than the original. It works as follows:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>The tool converts the image at your set quality (e.g., 80%).</li><li>It checks whether the resulting file is smaller than the original.</li><li>If it is larger, it automatically lowers quality and tries again.</li><li>The process repeats until the output file is smaller or quality drops below a safe minimum.</li></ol><p class=\"text-mid mt-3\">The tool automatically selects optimal settings. If you have an image that is already heavily compressed (e.g., a JPG at 60% quality), the parameters will be automatically adjusted to still achieve size savings.</p><p class=\"text-mid mt-3\">Next to each file you will see &quot;WebP quality used&quot; - this is the actual quality applied after any Smart Quality adjustment.</p>"
+      "title": "Πώς λειτουργεί το Smart Quality;",
+      "html": "<p class=\"text-mid\">Το Smart Quality είναι ένας αυτόματος μηχανισμός βελτιστοποίησης που διασφαλίζει ότι το αρχείο WebP δεν είναι ποτέ μεγαλύτερο από το αρχικό. Λειτουργεί ως εξής:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>Το εργαλείο μετατρέπει την εικόνα στην ποιότητα που ορίσατε (π.χ. 80%).</li><li>Ελέγχει αν το αρχείο που προέκυψε είναι μικρότερο από το αρχικό.</li><li>Αν είναι μεγαλύτερο, μειώνει αυτόματα την ποιότητα και δοκιμάζει ξανά.</li><li>Η διαδικασία επαναλαμβάνεται μέχρι το αρχείο εξόδου να είναι μικρότερο ή η ποιότητα να πέσει κάτω από ένα ασφαλές ελάχιστο.</li></ol><p class=\"text-mid mt-3\">Το εργαλείο επιλέγει αυτόματα βέλτιστες ρυθμίσεις. Αν έχετε εικόνα που είναι ήδη πολύ συμπιεσμένη (π.χ. JPG σε 60% ποιότητα), οι παράμετροι θα προσαρμοστούν αυτόματα ώστε να επιτευχθεί εξοικονόμηση μεγέθους.</p><p class=\"text-mid mt-3\">Δίπλα σε κάθε αρχείο θα δείτε &quot;WebP quality used&quot; — αυτή είναι η πραγματική ποιότητα που εφαρμόστηκε μετά τυχόν προσαρμογή Smart Quality.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "Quality settings - what to choose?",
-      "demoHtml": "<div class=\"space-y-4\"><div><p class=\"text-dark mb-2 text-sm! font-medium uppercase\">Set quality</p><div class=\"flex items-center\"><input type=\"range\" min=\"60\" max=\"95\" value=\"80\" class=\"flex-1\" disabled><span class=\"text-mid w-12 text-right text-sm!\">80%</span></div><span class=\"text-light mt-1 block text-xs\">Higher value = better quality, larger file</span></div><div class=\"flex items-center\"><input type=\"checkbox\" checked class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Auto-download after conversion</span></div><div class=\"ml-6 flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Download individually</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Download as ZIP</span></div></div>",
-      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. A higher value means better image quality but also a larger file size.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (default)</strong> - a good balance for most use cases.</li><li><strong>85–90%</strong> - for product photos and photography portfolios.</li><li><strong>60–70%</strong> - when minimizing file size is the priority.</li></ul>"
+      "title": "Ρυθμίσεις ποιότητας — τι να επιλέξετε;",
+      "demoHtml": "<div class=\"space-y-4\"><div><p class=\"text-dark mb-2 text-sm! font-medium uppercase\">Ορισμός ποιότητας</p><div class=\"flex items-center\"><input type=\"range\" min=\"60\" max=\"95\" value=\"80\" class=\"flex-1\" disabled><span class=\"text-mid w-12 text-right text-sm!\">80%</span></div><span class=\"text-light mt-1 block text-xs\">Υψηλότερη τιμή = καλύτερη ποιότητα, μεγαλύτερο αρχείο</span></div><div class=\"flex items-center\"><input type=\"checkbox\" checked class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Αυτόματη λήψη μετά τη μετατροπή</span></div><div class=\"ml-6 flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Λήψη μεμονωμένα</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Λήψη ως ZIP</span></div></div>",
+      "html": "<p class=\"text-mid\">Το slider ποιότητας σας επιτρέπει να ορίσετε τιμή από 60% έως 95%. Υψηλότερη τιμή σημαίνει καλύτερη ποιότητα εικόνας αλλά και μεγαλύτερο μέγεθος αρχείου.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (προεπιλογή)</strong> — καλή ισορροπία για τις περισσότερες χρήσεις.</li><li><strong>85–90%</strong> — για φωτογραφίες προϊόντων και portfolios φωτογραφίας.</li><li><strong>60–70%</strong> — όταν η ελαχιστοποίηση μεγέθους αρχείου είναι προτεραιότητα.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "How to download converted files",
+      "title": "Πώς να κατεβάσετε μετατρεμμένα αρχεία",
       "variant": "left",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-medium text-white\">Convert</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Download all</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Download as ZIP</span></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Include CSV report in ZIP</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Input size: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Size after conversion: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">Saved: <strong class=\"text-success-icon\">1.5 MB (~63%)</strong></p></div></div>",
-      "html": "<p class=\"text-mid\">After conversion is complete, you have several download options:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Download</strong> (next to each file) - downloads a single WebP file.</li><li><strong>Download all</strong> - downloads all files one by one.</li><li><strong>Download as ZIP</strong> - creates an archive with all files.</li></ul><p class=\"text-mid mt-3\"><strong>CSV report option:</strong> Include a conversion summary report in the ZIP archive.</p>"
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-medium text-white\">Μετατροπή</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Λήψη όλων</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Λήψη ως ZIP</span></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Συμπερίληψη αναφοράς CSV στο ZIP</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Μέγεθος εισόδου: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Μέγεθος μετά τη μετατροπή: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">Εξοικονόμηση: <strong class=\"text-success-icon\">1.5 MB (~63%)</strong></p></div></div>",
+      "html": "<p class=\"text-mid\">Μετά την ολοκλήρωση της μετατροπής, έχετε αρκετές επιλογές λήψης:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Λήψη</strong> (δίπλα σε κάθε αρχείο) — κατεβάζει ένα μόνο αρχείο WebP.</li><li><strong>Λήψη όλων</strong> — κατεβάζει όλα τα αρχεία ένα-ένα.</li><li><strong>Λήψη ως ZIP</strong> — δημιουργεί αρχείο με όλα τα αρχεία.</li></ul><p class=\"text-mid mt-3\"><strong>Επιλογή αναφοράς CSV:</strong> Συμπεριλάβετε αναφορά σύνοψης μετατροπής στο αρχείο ZIP.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Savings report - what does it show?",
-      "html": "<p class=\"text-mid\">Below the conversion buttons you will find a summary with savings information:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Total input size</strong> - sum of all original file sizes.</li><li><strong>Total size after conversion</strong> - sum of all WebP file sizes.</li><li><strong>Saved</strong> - how much space you gained through conversion (in KB/MB and percentage).</li></ul><p class=\"text-mid mt-3\"><strong>Copy summary:</strong> The button copies the report to clipboard in text format. You can paste it into notes, emails, or documents - useful for documenting image optimization.</p>"
+      "title": "Αναφορά εξοικονόμησης — τι δείχνει;",
+      "html": "<p class=\"text-mid\">Κάτω από τα κουμπιά μετατροπής θα βρείτε σύνοψη με πληροφορίες εξοικονόμησης:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Συνολικό μέγεθος εισόδου</strong> — άθροισμα μεγεθών όλων των αρχικών αρχείων.</li><li><strong>Συνολικό μέγεθος μετά τη μετατροπή</strong> — άθροισμα μεγεθών όλων των αρχείων WebP.</li><li><strong>Εξοικονόμηση</strong> — πόσο χώρο κερδίσατε μέσω της μετατροπής (σε KB/MB και ποσοστό).</li></ul><p class=\"text-mid mt-3\"><strong>Αντιγραφή σύνοψης:</strong> Το κουμπί αντιγράφει την αναφορά στο clipboard σε μορφή κειμένου. Μπορείτε να την επικολλήσετε σε σημειώσεις, emails ή έγγραφα — χρήσιμο για τεκμηρίωση βελτιστοποίησης εικόνων.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "How much can you save by converting to WebP?",
-      "html": "<p class=\"mb-4\">Savings depend on the type of image and its original compression. Below are example results for typical files:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">JPG photo (camera)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Savings: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">PNG graphic (logo)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Savings: ~75%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product photo</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Savings: ~63%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary. The converter shows the exact size before and after conversion for each file, as well as a summary of total savings.</p>"
+      "title": "Πόσο μπορείτε να εξοικονομήσετε μετατρέποντας σε WebP;",
+      "html": "<p class=\"mb-4\">Η εξοικονόμηση εξαρτάται από τον τύπο εικόνας και την αρχική συμπίεσή της. Παρακάτω βλέπετε ενδεικτικά αποτελέσματα για τυπικά αρχεία:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Φωτογραφία JPG (κάμερα)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Εξοικονόμηση: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Γραφικό PNG (λογότυπο)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Εξοικονόμηση: ~75%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Φωτογραφία προϊόντος</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Εξοικονόμηση: ~63%</p></div></div><p class=\"text-light mt-4 text-sm\">Η πραγματική εξοικονόμηση μπορεί να διαφέρει. Ο μετατροπέας δείχνει το ακριβές μέγεθος πριν και μετά τη μετατροπή για κάθε αρχείο, καθώς και σύνοψη συνολικής εξοικονόμησης.</p>"
     },
     { "type": "gap", "variant": "line" },
     {

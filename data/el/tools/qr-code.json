@@ -2,60 +2,60 @@
   "toolKey": "qrCode",
   "locale": "el",
   "metadata": {
-    "title": "Free QR Code Generator – PNG & SVG, No Signup",
-    "description": "Create QR codes for websites, vCards, menus or flyers in seconds. Export as PNG & SVG. Customize colors and size. No signup, no limits.",
+    "title": "Δωρεάν Δημιουργός QR Code – PNG & SVG, Χωρίς Εγγραφή",
+    "description": "Δημιουργήστε QR codes για ιστοσελίδες, vCards, μενού ή φυλλάδια σε δευτερόλεπτα. Εξαγωγή σε PNG & SVG. Προσαρμογή χρωμάτων και μεγέθους. Χωρίς εγγραφή, χωρίς όρια.",
     "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
     "path": "/el/ergaleia/dorean-dimiourgia-kodikou-qr"
   },
   "hero": {
-    "title": "QR Code Generator – Free, No Signup Required",
-    "description": "Create a QR code for a website, vCard business card, email, phone, or text. Customize colors, size, and error correction level, then download a ready PNG or SVG file.",
+    "title": "Δημιουργός QR Code – Δωρεάν, Χωρίς Εγγραφή",
+    "description": "Δημιουργήστε QR code για ιστοσελίδα, επαγγελματική κάρτα vCard, email, τηλέφωνο ή κείμενο. Προσαρμόστε χρώματα, μέγεθος και επίπεδο διόρθωσης σφαλμάτων και κατεβάστε έτοιμο αρχείο PNG ή SVG.",
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/el/ergaleia", "label": "Tools" },
-    "third": { "href": "/el/ergaleia/dorean-dimiourgia-kodikou-qr", "label": "Free QR code generator" }
+    "second": { "href": "/el/ergaleia", "label": "Εργαλεία" },
+    "third": { "href": "/el/ergaleia/dorean-dimiourgia-kodikou-qr", "label": "Δωρεάν δημιουργός QR code" }
   },
   "schemas": {
     "software": {
-      "name": "Free QR code generator online",
+      "name": "Δωρεάν δημιουργός QR code",
       "alternateName": [
-        "QR code creator online",
-        "vCard QR code generator",
-        "Free QR generator",
-        "QR code tool",
-        "Restaurant menu QR code generator",
-        "QR code for print PNG SVG",
-        "Electronic business card vCard generator",
-        "QR code generator no registration",
-        "Free QR code generator no limits"
+        "Δημιουργός QR code",
+        "Δημιουργός QR code vCard",
+        "Δωρεάν γεννήτρια QR",
+        "Εργαλείο QR code",
+        "Δημιουργός QR code για μενού εστιατορίου",
+        "QR code για εκτύπωση PNG SVG",
+        "Δημιουργός ηλεκτρονικής επαγγελματικής κάρτας vCard",
+        "Δημιουργός QR code χωρίς εγγραφή",
+        "Δωρεάν δημιουργός QR code χωρίς όρια"
       ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "QRCodeGenerator",
-      "description": "Create a QR code for a website, business card, menu, or flyer. Choose the data type, customize colors and size, then download a PNG or SVG file.",
+      "description": "Δημιουργήστε QR code για ιστοσελίδα, επαγγελματική κάρτα, μενού ή φυλλάδιο. Επιλέξτε τον τύπο δεδομένων, προσαρμόστε χρώματα και μέγεθος και κατεβάστε αρχείο PNG ή SVG.",
       "featureList": [
-        "QR code for URL (website)",
-        "QR code for plain text",
-        "vCard QR code (contact details)",
-        "QR code for email (address, subject, body)",
-        "QR code for phone number",
-        "Customizable code and background colors",
-        "Code size selection in pixels",
-        "Export to PNG format (raster)",
-        "Export to SVG format (vector)",
-        "Live code preview",
-        "Local processing in the browser",
-        "Reed-Solomon error correction"
+        "QR code για URL (ιστοσελίδα)",
+        "QR code για απλό κείμενο",
+        "QR code vCard (στοιχεία επικοινωνίας)",
+        "QR code για email (διεύθυνση, θέμα, σώμα)",
+        "QR code για αριθμό τηλεφώνου",
+        "Προσαρμόσιμα χρώματα κωδικού και φόντου",
+        "Επιλογή μεγέθους κωδικού σε pixels",
+        "Εξαγωγή σε μορφή PNG (raster)",
+        "Εξαγωγή σε μορφή SVG (διανυσματικό)",
+        "Ζωντανή προεπισκόπηση κωδικού",
+        "Τοπική επεξεργασία στον browser",
+        "Διόρθωση σφαλμάτων Reed-Solomon"
       ]
     },
     "howTo": {
-      "name": "How to use the free QR code generator",
-      "description": "How to create a QR code for a website, vCard business card, email, or phone - from choosing the data type to downloading the ready file for printing.",
+      "name": "Πώς να χρησιμοποιήσετε τον δωρεάν δημιουργό QR code",
+      "description": "Πώς να δημιουργήσετε QR code για ιστοσελίδα, επαγγελματική κάρτα vCard, email ή τηλέφωνο — από την επιλογή τύπου δεδομένων έως τη λήψη του έτοιμου αρχείου για εκτύπωση.",
       "steps": [
-        { "name": "Choose the data type", "text": "Decide what the QR code should contain: URL, text, business card (vCard), email, or phone number." },
-        { "name": "Enter the data", "text": "Fill in the appropriate fields. For URL, enter the website address; for vCard, provide contact details." },
-        { "name": "Customize the appearance", "text": "Choose size, margin, code and background colors, and error correction level." },
-        { "name": "Download the code", "text": "The ready QR code can be downloaded as a PNG file (for print and web) or SVG (vector, scales without quality loss)." }
+        { "name": "Επιλέξτε τον τύπο δεδομένων", "text": "Αποφασίστε τι πρέπει να περιέχει το QR code: URL, κείμενο, επαγγελματική κάρτα (vCard), email ή αριθμό τηλεφώνου." },
+        { "name": "Εισάγετε τα δεδομένα", "text": "Συμπληρώστε τα κατάλληλα πεδία. Για URL, εισάγετε τη διεύθυνση ιστοσελίδας. Για vCard, συμπληρώστε τα στοιχεία επικοινωνίας." },
+        { "name": "Προσαρμόστε την εμφάνιση", "text": "Επιλέξτε μέγεθος, περιθώριο, χρώματα κωδικού και φόντου, και επίπεδο διόρθωσης σφαλμάτων." },
+        { "name": "Κατεβάστε τον κωδικό", "text": "Το έτοιμο QR code μπορεί να κατεβεί ως αρχείο PNG (για εκτύπωση και web) ή SVG (διανυσματικό, κλιμακώνεται χωρίς απώλεια ποιότητας)." }
       ]
     }
   },
@@ -63,211 +63,219 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "What is a QR code and how does it work?",
-      "html": "<p class=\"text-mid\">A QR code (Quick Response) is a two-dimensional barcode that can be scanned with a smartphone camera. Unlike traditional barcodes, QR codes store data both horizontally and vertically, allowing them to encode significantly more information - up to approximately 3,000 alphanumeric characters.</p><p class=\"text-mid mt-3\">The QR code was developed in 1994 by the Japanese company Denso Wave (part of the Toyota group) for tracking car parts. Today, QR codes are widely used in marketing, hospitality, logistics, and business communication. They gained particular popularity during the COVID-19 pandemic, when restaurants began replacing paper menus with QR codes.</p>"
+      "title": "Τι είναι ένα QR code και πώς λειτουργεί;",
+      "html": "<p class=\"text-mid\">Ένα QR code (Quick Response) είναι ένας δισδιάστατος γραμμωτός κωδικός που μπορεί να σαρωθεί με την κάμερα ενός smartphone. Σε αντίθεση με τους παραδοσιακούς γραμμωτούς κωδικούς, τα QR codes αποθηκεύουν δεδομένα τόσο οριζόντια όσο και κάθετα, επιτρέποντάς τους να κωδικοποιήσουν σημαντικά περισσότερες πληροφορίες — έως περίπου 3.000 αλφαριθμητικούς χαρακτήρες.</p><p class=\"text-mid mt-3\">Το QR code αναπτύχθηκε το 1994 από την ιαπωνική εταιρεία Denso Wave (μέρος του ομίλου Toyota) για την παρακολούθηση ανταλλακτικών αυτοκινήτων. Σήμερα, τα QR codes χρησιμοποιούνται ευρέως στο μάρκετινγκ, τη φιλοξενία, τα logistics και την επιχειρηματική επικοινωνία. Απέκτησαν ιδιαίτερη δημοτικότητα κατά τη διάρκεια της πανδημίας COVID-19, όταν τα εστιατόρια άρχισαν να αντικαθιστούν τα χάρτινα μενού με QR codes.</p>"
     },
     { "type": "gap", "size": "sm" },
     {
       "type": "sectionSteps",
-      "title": "How to use the free QR code generator",
-      "description": "Creating a QR code takes just a few seconds:",
+      "title": "Πώς να χρησιμοποιήσετε τον δωρεάν δημιουργό QR code",
+      "description": "Η δημιουργία QR code διαρκεί μόλις λίγα δευτερόλεπτα:",
       "grid": "three",
       "items": [
-        { "title": "1. Choose the data type", "description": "Select what you want to encode: URL, text, vCard business card, email, or phone number." },
-        { "title": "2. Enter the data", "description": "Fill in the appropriate fields - website address, contact details, or message content." },
-        { "title": "3. Download the code", "description": "Customize the appearance (colors, size, margin) and download as PNG or SVG." }
+        { "title": "1. Επιλέξτε τον τύπο δεδομένων", "description": "Επιλέξτε τι θέλετε να κωδικοποιήσετε: URL, κείμενο, επαγγελματική κάρτα vCard, email ή αριθμό τηλεφώνου." },
+        { "title": "2. Εισάγετε τα δεδομένα", "description": "Συμπληρώστε τα κατάλληλα πεδία — διεύθυνση ιστοσελίδας, στοιχεία επικοινωνίας ή περιεχόμενο μηνύματος." },
+        { "title": "3. Κατεβάστε τον κωδικό", "description": "Προσαρμόστε την εμφάνιση (χρώματα, μέγεθος, περιθώριο) και κατεβάστε ως PNG ή SVG." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "QR code types - URL, vCard, email, phone, text",
-      "description": "The free QR code generator supports five data types - each useful in different situations:",
+      "title": "Τύποι QR code — URL, vCard, email, τηλέφωνο, κείμενο",
+      "description": "Ο δωρεάν δημιουργός QR code υποστηρίζει πέντε τύπους δεδομένων — κάθε ένας χρήσιμος σε διαφορετικές καταστάσεις:",
       "grid": "two",
       "items": [
-        { "icon": "RiGlobalLine", "title": "URL", "description": "A link to a website. After scanning, the phone opens the page in the browser. Ideal for business cards, flyers, and posters." },
+        {
+          "icon": "RiGlobalLine",
+          "title": "URL",
+          "description": "Σύνδεσμος σε ιστοσελίδα. Μετά τη σάρωση, το τηλέφωνο ανοίγει τη σελίδα στον browser. Ιδανικό για επαγγελματικές κάρτες, φυλλάδια και αφίσες."
+        },
         {
           "icon": "RiFileTextLine",
-          "title": "Text",
-          "description": "Any text up to 3,000 characters. After scanning, the phone displays the text on screen. Useful for discount coupons and short instructions."
+          "title": "Κείμενο",
+          "description": "Οποιοδήποτε κείμενο έως 3.000 χαρακτήρες. Μετά τη σάρωση, το τηλέφωνο εμφανίζει το κείμενο στην οθόνη. Χρήσιμο για κουπόνια έκπτωσης και σύντομες οδηγίες."
         },
         {
           "icon": "RiContactsBookLine",
-          "title": "vCard business card",
-          "description": "A digital business card with contact data (name, company, phone, email, address). After scanning, the phone offers to save the contact. Ideal for professional business cards."
+          "title": "Επαγγελματική κάρτα vCard",
+          "description": "Ψηφιακή επαγγελματική κάρτα με στοιχεία επικοινωνίας (όνομα, εταιρεία, τηλέφωνο, email, διεύθυνση). Μετά τη σάρωση, το τηλέφωνο προσφέρει αποθήκευση της επαφής. Ιδανικό για επαγγελματικές κάρτες."
         },
-        { "icon": "RiMailLine", "title": "Email", "description": "An email address with optional subject and body. After scanning, the phone opens the mail app with a pre-filled form." },
-        { "icon": "RiPhoneLine", "title": "Phone", "description": "A phone number. After scanning, the phone offers to make a call. Useful for hotlines and customer support." }
+        {
+          "icon": "RiMailLine",
+          "title": "Email",
+          "description": "Διεύθυνση email με προαιρετικό θέμα και σώμα. Μετά τη σάρωση, το τηλέφωνο ανοίγει την εφαρμογή αλληλογραφίας με προσυμπληρωμένη φόρμα."
+        },
+        { "icon": "RiPhoneLine", "title": "Τηλέφωνο", "description": "Αριθμός τηλεφώνου. Μετά τη σάρωση, το τηλέφωνο προσφέρει κλήση. Χρήσιμο για γραμμές εξυπηρέτησης και υποστήριξη πελατών." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "QR code technical specifications",
-      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Capacity</span><span class=\"text-mid text-sm!\">up to 4,296 characters</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Error correction</span><span class=\"text-mid text-sm!\">7% – 30%</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Min. print size</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Min. contrast</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margin</span><span class=\"text-mid text-sm!\">min. 4 modules</span></div></div>",
-      "html": "<p class=\"text-mid mb-4\">Knowing the technical parameters helps create QR codes that are readable in all conditions:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Data capacity</strong> - a QR code can hold up to 7,089 digits, 4,296 alphanumeric characters, or 2,953 bytes of binary data. In practice, this is more than enough for URLs and business cards.</li><li><strong>Reed-Solomon error correction</strong> - a mathematical algorithm that enables reading the code even when part of it is damaged or obscured. Levels: L (7%), M (15%), Q (25%), H (30%).</li><li><strong>Margin</strong> - the white area around the code required for proper scanning. The recommended minimum is 4 modules (code units).</li><li><strong>Minimum print size</strong> - for standard scanning conditions, the code should be at least 2×2 cm. For large format printing (banners, billboards), scale up accordingly.</li><li><strong>Contrast</strong> - the contrast ratio between the code and background should be at least 3:1. The generator automatically warns about too low contrast.</li></ul>"
+      "title": "Τεχνικές προδιαγραφές QR code",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Χωρητικότητα</span><span class=\"text-mid text-sm!\">έως 4.296 χαρακτήρες</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Διόρθωση σφαλμάτων</span><span class=\"text-mid text-sm!\">7% – 30%</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Ελάχ. μέγεθος εκτύπωσης</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Ελάχ. αντίθεση</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Περιθώριο</span><span class=\"text-mid text-sm!\">ελάχ. 4 modules</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Η γνώση των τεχνικών παραμέτρων βοηθά στη δημιουργία QR codes αναγνώσιμων σε όλες τις συνθήκες:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Χωρητικότητα δεδομένων</strong> — ένα QR code μπορεί να χωρέσει έως 7.089 ψηφία, 4.296 αλφαριθμητικούς χαρακτήρες ή 2.953 bytes δυαδικών δεδομένων. Στην πράξη, αυτό είναι υπεραρκετό για URLs και επαγγελματικές κάρτες.</li><li><strong>Διόρθωση σφαλμάτων Reed-Solomon</strong> — μαθηματικός αλγόριθμος που επιτρέπει ανάγνωση του κωδικού ακόμα και όταν μέρος του είναι κατεστραμμένο ή καλυμμένο. Επίπεδα: L (7%), M (15%), Q (25%), H (30%).</li><li><strong>Περιθώριο</strong> — η λευκή περιοχή γύρω από τον κωδικό απαραίτητη για σωστή σάρωση. Το συνιστώμενο ελάχιστο είναι 4 modules (μονάδες κωδικού).</li><li><strong>Ελάχιστο μέγεθος εκτύπωσης</strong> — για τυπικές συνθήκες σάρωσης, ο κωδικός πρέπει να είναι τουλάχιστον 2×2 cm. Για εκτύπωση μεγάλου μεγέθους (banners, billboards), κλιμακώστε ανάλογα.</li><li><strong>Αντίθεση</strong> — η αναλογία αντίθεσης μεταξύ κωδικού και φόντου πρέπει να είναι τουλάχιστον 3:1. Ο δημιουργός προειδοποιεί αυτόματα για πολύ χαμηλή αντίθεση.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "QR code applications - business cards, flyers, restaurant menus",
-      "description": "QR codes find use in many industries and scenarios:",
+      "title": "Εφαρμογές QR code — επαγγελματικές κάρτες, φυλλάδια, μενού εστιατορίου",
+      "description": "Τα QR codes βρίσκουν χρήση σε πολλούς κλάδους και σενάρια:",
       "grid": "three",
       "items": [
         {
           "icon": "RiContactsBookLine",
-          "title": "Business cards",
-          "description": "A vCard code on a business card lets the recipient save the contact with a single scan, without manually typing data."
+          "title": "Επαγγελματικές κάρτες",
+          "description": "Ένα vCard code σε επαγγελματική κάρτα επιτρέπει στον παραλήπτη να αποθηκεύσει την επαφή με μία σάρωση, χωρίς χειροκίνητη πληκτρολόγηση δεδομένων."
         },
         {
           "icon": "RiRestaurantLine",
-          "title": "Restaurant and cafe menus",
-          "description": "A QR code on the table directs to a digital menu. A hygienic solution popular since the COVID-19 pandemic."
+          "title": "Μενού εστιατορίων και καφετεριών",
+          "description": "Ένα QR code στο τραπέζι κατευθύνει σε ψηφιακό μενού. Μια υγιεινή λύση δημοφιλής από την πανδημία COVID-19."
         },
-        { "icon": "RiPrinterLine", "title": "Flyers and posters", "description": "QR code with a link to a product page, registration form, or special offer." },
-        { "icon": "RiBuilding2Line", "title": "Product packaging", "description": "Link to user manual, warranty card, or manufacturer website." },
-        { "icon": "RiHospitalLine", "title": "Medical offices", "description": "QR codes on patient cards linking to the patient portal or appointment booking system." },
-        { "icon": "RiHome4Line", "title": "Real estate", "description": "Codes on banners linking to the full listing with photo gallery and details." },
-        { "icon": "RiTruckLine", "title": "Warehouses and logistics", "description": "QR labels for tracking product batches, warehouse locations, and shipment history." },
-        { "icon": "RiShoppingCartLine", "title": "E-commerce", "description": "Codes on packaging linking to return instructions, customer reviews, or loyalty programs." },
-        { "icon": "RiCalendarEventLine", "title": "Events and conferences", "description": "Tickets with QR codes for quick verification at entry." }
+        { "icon": "RiPrinterLine", "title": "Φυλλάδια και αφίσες", "description": "QR code με σύνδεσμο σε σελίδα προϊόντος, φόρμα εγγραφής ή ειδική προσφορά." },
+        { "icon": "RiBuilding2Line", "title": "Συσκευασία προϊόντων", "description": "Σύνδεσμος σε εγχειρίδιο χρήσης, κάρτα εγγύησης ή ιστοσελίδα κατασκευαστή." },
+        { "icon": "RiHospitalLine", "title": "Ιατρεία", "description": "QR codes σε κάρτες ασθενών που συνδέουν στην πύλη ασθενούς ή σύστημα κράτησης ραντεβού." },
+        { "icon": "RiHome4Line", "title": "Ακίνητα", "description": "Κωδικοί σε banners που συνδέουν στην πλήρη αγγελία με γκαλερί φωτογραφιών και λεπτομέρειες." },
+        { "icon": "RiTruckLine", "title": "Αποθήκες και logistics", "description": "Ετικέτες QR για παρακολούθηση παρτίδων προϊόντων, θέσεων αποθήκης και ιστορικού αποστολών." },
+        { "icon": "RiShoppingCartLine", "title": "E-commerce", "description": "Κωδικοί σε συσκευασίες που συνδέουν σε οδηγίες επιστροφής, κριτικές πελατών ή προγράμματα πιστότητας." },
+        { "icon": "RiCalendarEventLine", "title": "Εκδηλώσεις και συνέδρια", "description": "Εισιτήρια με QR codes για γρήγορο έλεγχο στην είσοδο." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "QR code appearance customization",
+      "title": "Προσαρμογή εμφάνισης QR code",
       "variant": "left",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Size</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margin</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Code color</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Background color</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
-      "html": "<p class=\"text-mid mb-4\">The generator lets you customize several parameters affecting the appearance and readability of the code:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Size (px)</strong> - code dimension in pixels. For standard print (flyers, business cards) choose 300–500 px. For digital use, 150–200 px is sufficient.</li><li><strong>Margin</strong> - white area around the code required for proper scanning. Recommended value is 2–4. A value of 0 may make scanning difficult on a dark background.</li><li><strong>QR code color</strong> - black by default (#000000). You can change it to any dark color matching your visual identity.</li><li><strong>Background color</strong> - white by default (#ffffff). You can change it to any light color. The generator will warn if contrast is too low.</li></ul><p class=\"text-mid mt-3\"><strong>Tip:</strong> Maintain high contrast between the code and background (minimum 3:1). A dark code on a light background scans most easily.</p>"
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Μέγεθος</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Περιθώριο</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Χρώμα κωδικού</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Χρώμα φόντου</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Ο δημιουργός σας επιτρέπει να προσαρμόσετε αρκετές παραμέτρους που επηρεάζουν την εμφάνιση και αναγνωσιμότητα του κωδικού:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Μέγεθος (px)</strong> — διάσταση κωδικού σε pixels. Για τυπική εκτύπωση (φυλλάδια, επαγγελματικές κάρτες) επιλέξτε 300–500 px. Για ψηφιακή χρήση, 150–200 px αρκεί.</li><li><strong>Περιθώριο</strong> — λευκή περιοχή γύρω από τον κωδικό απαραίτητη για σωστή σάρωση. Συνιστώμενη τιμή 2–4. Τιμή 0 μπορεί να δυσκολέψει τη σάρωση σε σκούρο φόντο.</li><li><strong>Χρώμα QR code</strong> — μαύρο από προεπιλογή (#000000). Μπορείτε να το αλλάξετε σε οποιοδήποτε σκούρο χρώμα που ταιριάζει με την οπτική σας ταυτότητα.</li><li><strong>Χρώμα φόντου</strong> — λευκό από προεπιλογή (#ffffff). Μπορείτε να το αλλάξετε σε οποιοδήποτε ανοιχτό χρώμα. Ο δημιουργός θα προειδοποιήσει αν η αντίθεση είναι πολύ χαμηλή.</li></ul><p class=\"text-mid mt-3\"><strong>Συμβουλή:</strong> Διατηρήστε υψηλή αντίθεση μεταξύ κωδικού και φόντου (ελάχιστο 3:1). Σκούρος κωδικός σε ανοιχτό φόντο σαρώνεται πιο εύκολα.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionDemo",
-      "title": "Error correction levels - L, M, Q, H",
+      "title": "Επίπεδα διόρθωσης σφαλμάτων — L, M, Q, H",
       "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Low)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Medium)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Quartile)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (High)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
-      "html": "<p class=\"text-mid mb-4\">Error correction is a mechanism that enables reading a QR code even when part of it is damaged, dirty, or obscured. The generator uses the Reed-Solomon algorithm, a standard in QR codes.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Low) - 7%</strong> - least redundancy, code is most compact. Choose when the code will be used in ideal conditions (screen, high-quality print).</li><li><strong>M (Medium) - 15%</strong> - default value, a good balance between capacity and resilience. Suitable for most applications.</li><li><strong>Q (Quartile) - 25%</strong> - greater resistance to damage. Choose for codes printed on materials prone to getting dirty.</li><li><strong>H (High) - 30%</strong> - highest resilience. Recommended for outdoor print materials, packaging, and situations where the code may be partially obscured (e.g., a logo in the center).</li></ul><p class=\"text-mid mt-3\"><strong>Note:</strong> A higher correction level means a larger and more complex code. With large amounts of data and level H, the code can become very dense.</p>"
+      "html": "<p class=\"text-mid mb-4\">Η διόρθωση σφαλμάτων είναι ένας μηχανισμός που επιτρέπει την ανάγνωση ενός QR code ακόμα και όταν μέρος του είναι κατεστραμμένο, βρώμικο ή καλυμμένο. Ο δημιουργός χρησιμοποιεί τον αλγόριθμο Reed-Solomon, πρότυπο στα QR codes.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Low) — 7%</strong> — ελάχιστη πλεονασμός, ο κωδικός είναι πιο συμπαγής. Επιλέξτε όταν ο κωδικός θα χρησιμοποιηθεί σε ιδανικές συνθήκες (οθόνη, υψηλής ποιότητας εκτύπωση).</li><li><strong>M (Medium) — 15%</strong> — προεπιλεγμένη τιμή, καλή ισορροπία μεταξύ χωρητικότητας και ανθεκτικότητας. Κατάλληλο για τις περισσότερες εφαρμογές.</li><li><strong>Q (Quartile) — 25%</strong> — μεγαλύτερη αντίσταση σε βλάβες. Επιλέξτε για κωδικούς εκτυπωμένους σε υλικά που λερώνονται εύκολα.</li><li><strong>H (High) — 30%</strong> — υψηλότερη ανθεκτικότητα. Συνιστάται για εξωτερικά εκτυπωμένα υλικά, συσκευασίες και καταστάσεις όπου ο κωδικός μπορεί να καλυφθεί μερικώς (π.χ. λογότυπο στο κέντρο).</li></ul><p class=\"text-mid mt-3\"><strong>Σημείωση:</strong> Υψηλότερο επίπεδο διόρθωσης σημαίνει μεγαλύτερο και πιο σύνθετο κωδικό. Με μεγάλο όγκο δεδομένων και επίπεδο H, ο κωδικός μπορεί να γίνει πολύ πυκνός.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionFeatureComparison",
-      "title": "PNG vs SVG - which format to choose for printing?",
+      "title": "PNG vs SVG — ποια μορφή να επιλέξετε για εκτύπωση;",
       "plans": [
         { "id": "png", "name": "PNG (raster)" },
-        { "id": "svg", "name": "SVG (vector)", "highlighted": true }
+        { "id": "svg", "name": "SVG (διανυσματικό)", "highlighted": true }
       ],
       "features": [
-        { "name": "Websites and social media", "values": { "png": true, "svg": true } },
-        { "name": "Flyers and business cards", "values": { "png": true, "svg": true } },
-        { "name": "Posters and banners (large format)", "values": { "png": false, "svg": true } },
-        { "name": "Scaling without quality loss", "values": { "png": false, "svg": true } },
-        { "name": "Editing in a graphics program", "values": { "png": false, "svg": true } },
-        { "name": "Smaller file size", "values": { "png": false, "svg": true } },
-        { "name": "Presentations", "values": { "png": true, "svg": true } }
+        { "name": "Ιστοσελίδες και κοινωνικά δίκτυα", "values": { "png": true, "svg": true } },
+        { "name": "Φυλλάδια και επαγγελματικές κάρτες", "values": { "png": true, "svg": true } },
+        { "name": "Αφίσες και banners (μεγάλο μέγεθος)", "values": { "png": false, "svg": true } },
+        { "name": "Κλιμάκωση χωρίς απώλεια ποιότητας", "values": { "png": false, "svg": true } },
+        { "name": "Επεξεργασία σε πρόγραμμα γραφικών", "values": { "png": false, "svg": true } },
+        { "name": "Μικρότερο μέγεθος αρχείου", "values": { "png": false, "svg": true } },
+        { "name": "Παρουσιάσεις", "values": { "png": true, "svg": true } }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "QR code printing tips",
-      "description": "To ensure the QR code is readable after printing, follow a few rules:",
+      "title": "Συμβουλές εκτύπωσης QR code",
+      "description": "Για να διασφαλίσετε ότι το QR code είναι αναγνώσιμο μετά την εκτύπωση, ακολουθήστε μερικούς κανόνες:",
       "grid": "two",
       "items": [
         {
           "icon": "RiRulerLine",
-          "title": "Minimum size",
-          "description": "The code should be at least 2×2 cm for close-range scanning. The greater the scanning distance, the larger the code must be."
+          "title": "Ελάχιστο μέγεθος",
+          "description": "Ο κωδικός πρέπει να είναι τουλάχιστον 2×2 cm για σάρωση από κοντινή απόσταση. Όσο μεγαλύτερη η απόσταση σάρωσης, τόσο μεγαλύτερος πρέπει να είναι ο κωδικός."
         },
-        { "icon": "RiContrastLine", "title": "Contrast", "description": "Dark code on a light background. Avoid pastel colors and low contrast." },
+        { "icon": "RiContrastLine", "title": "Αντίθεση", "description": "Σκούρος κωδικός σε ανοιχτό φόντο. Αποφύγετε παστέλ χρώματα και χαμηλή αντίθεση." },
         {
           "icon": "RiLayoutGridLine",
-          "title": "Margin around the code",
-          "description": "Keep empty space around the code. Do not place other graphic elements too close - the margin is essential for proper scanning."
+          "title": "Περιθώριο γύρω από τον κωδικό",
+          "description": "Διατηρήστε κενό χώρο γύρω από τον κωδικό. Μην τοποθετείτε άλλα γραφικά στοιχεία πολύ κοντά — το περιθώριο είναι απαραίτητο για σωστή σάρωση."
         },
-        { "icon": "RiEyeLine", "title": "Testing", "description": "Before mass printing, test the code on different phones and in various lighting conditions." },
-        { "icon": "RiShieldCheckLine", "title": "Correction level", "description": "For outdoor print and materials prone to damage, choose level Q or H." }
+        { "icon": "RiEyeLine", "title": "Δοκιμή", "description": "Πριν τη μαζική εκτύπωση, δοκιμάστε τον κωδικό σε διαφορετικά τηλέφωνα και σε διάφορες συνθήκες φωτισμού." },
+        { "icon": "RiShieldCheckLine", "title": "Επίπεδο διόρθωσης", "description": "Για εξωτερική εκτύπωση και υλικά ευάλωτα σε φθορά, επιλέξτε επίπεδο Q ή H." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
-      "title": "What makes this QR code generator special?",
+      "title": "Τι κάνει αυτόν τον δημιουργό QR code ξεχωριστό;",
       "grid": "two",
       "items": [
         {
           "icon": "RiInfinityLine",
-          "title": "Local generation in the browser",
-          "description": "Data entered into the generator is not sent to any server - all processing happens locally on your device."
+          "title": "Τοπική δημιουργία στον browser",
+          "description": "Τα δεδομένα που εισάγονται στον δημιουργό δεν αποστέλλονται σε κανένα server — όλη η επεξεργασία γίνεται τοπικά στη συσκευή σας."
         },
         {
           "icon": "RiLockLine",
-          "title": "Five data types in one tool",
-          "description": "URL, text, vCard business card, email, and phone - each type generates a QR code in the appropriate standard."
+          "title": "Πέντε τύποι δεδομένων σε ένα εργαλείο",
+          "description": "URL, κείμενο, επαγγελματική κάρτα vCard, email και τηλέφωνο — κάθε τύπος δημιουργεί QR code στο κατάλληλο πρότυπο."
         },
         {
           "icon": "RiStackLine",
-          "title": "QR code appearance customization",
-          "description": "Code and background colors, size in pixels, margin, and error correction level - every parameter can be customized."
+          "title": "Προσαρμογή εμφάνισης QR code",
+          "description": "Χρώματα κωδικού και φόντου, μέγεθος σε pixels, περιθώριο και επίπεδο διόρθωσης σφαλμάτων — κάθε παράμετρος μπορεί να προσαρμοστεί."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Four error correction levels",
-          "description": "The Reed-Solomon algorithm lets you choose code resilience to damage - from 7% (L) to 30% (H). Higher levels are useful for print on materials prone to getting dirty."
+          "title": "Τέσσερα επίπεδα διόρθωσης σφαλμάτων",
+          "description": "Ο αλγόριθμος Reed-Solomon σας επιτρέπει να επιλέξετε ανθεκτικότητα κωδικού σε βλάβες — από 7% (L) έως 30% (H). Υψηλότερα επίπεδα είναι χρήσιμα για εκτύπωση σε υλικά που λερώνονται εύκολα."
         },
-        { "icon": "RiEyeLine", "title": "Live preview", "description": "You see the result immediately after entering data, without clicking &quot;Generate&quot;." },
-        { "icon": "RiDownloadLine", "title": "PNG and SVG export", "description": "Download the code in the format appropriate for your use case." }
+        { "icon": "RiEyeLine", "title": "Ζωντανή προεπισκόπηση", "description": "Βλέπετε το αποτέλεσμα αμέσως μετά την εισαγωγή δεδομένων, χωρίς να πατήσετε &quot;Generate&quot;." },
+        { "icon": "RiDownloadLine", "title": "Εξαγωγή PNG και SVG", "description": "Κατεβάστε τον κωδικό στη μορφή κατάλληλη για τη χρήση σας." }
       ]
     },
     { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the QR code generator",
+      "title": "Συχνές ερωτήσεις για τον δημιουργό QR code",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Does a QR code generated with this tool expire?",
-          "answer": "No. A static QR code (like the one generated by this tool) does not expire. The content - e.g., a URL or business card data - is encoded directly in the code. As long as the target page exists, the code will work.",
-          "answerSchemaText": "No. Static QR codes do not expire. Content is encoded directly in the code."
+          "question": "Ένα QR code που δημιουργήθηκε με αυτό το εργαλείο λήγει;",
+          "answer": "Όχι. Ένα στατικό QR code (όπως αυτό που δημιουργεί αυτό το εργαλείο) δεν λήγει. Το περιεχόμενο — π.χ. URL ή δεδομένα επαγγελματικής κάρτας — κωδικοποιείται απευθείας στον κωδικό. Εφόσον η σελίδα-στόχος υπάρχει, ο κωδικός θα λειτουργεί.",
+          "answerSchemaText": "Όχι. Τα στατικά QR codes δεν λήγουν. Το περιεχόμενο κωδικοποιείται απευθείας στον κωδικό."
         },
         {
-          "question": "Can I change the URL in an existing QR code?",
-          "answer": "With a static QR code, you cannot change the encoded content - you need to generate a new code with a new address. Dynamic QR codes (editable after generation) require external paid services.",
-          "answerSchemaText": "No, static QR codes cannot be edited. Generate a new code for a different URL."
+          "question": "Μπορώ να αλλάξω το URL σε υπάρχον QR code;",
+          "answer": "Με στατικό QR code, δεν μπορείτε να αλλάξετε το κωδικοποιημένο περιεχόμενο — πρέπει να δημιουργήσετε νέο κωδικό με νέα διεύθυνση. Τα δυναμικά QR codes (επεξεργάσιμα μετά τη δημιουργία) απαιτούν εξωτερικές υπηρεσίες επί πληρωμή.",
+          "answerSchemaText": "Όχι, τα στατικά QR codes δεν μπορούν να επεξεργαστούν. Δημιουργήστε νέο κωδικό για διαφορετικό URL."
         },
         {
-          "question": "PNG or SVG - which QR code format should I choose for printing?",
-          "answer": "PNG works for most use cases: websites, social media, printing up to A4 size. SVG is vector-based - it can be scaled to any size without quality loss, making it suitable for banners, billboards, and large advertising formats.",
-          "answerSchemaText": "PNG for web and standard print. SVG for large format and lossless scaling."
+          "question": "PNG ή SVG — ποια μορφή QR code να επιλέξω για εκτύπωση;",
+          "answer": "Το PNG λειτουργεί για τις περισσότερες χρήσεις: ιστοσελίδες, κοινωνικά δίκτυα, εκτύπωση έως μέγεθος A4. Το SVG είναι διανυσματικό — μπορεί να κλιμακωθεί σε οποιοδήποτε μέγεθος χωρίς απώλεια ποιότητας, κάνοντάς το κατάλληλο για banners, billboards και μεγάλες διαφημιστικές μορφές.",
+          "answerSchemaText": "PNG για web και τυπική εκτύπωση. SVG για μεγάλο μέγεθος και κλιμάκωση χωρίς απώλεια."
         },
         {
-          "question": "What QR code size should I choose for a business card?",
-          "answer": "For printed materials (business cards, flyers), the code should be at least 2×2 cm, optimally 3×3 cm. In the generator, this corresponds to a resolution of 300 px at standard print quality (300 DPI). For larger formats (posters, banners), choose a larger size or SVG format.",
-          "answerSchemaText": "At least 2×2 cm (300 px at 300 DPI). Optimally 3×3 cm for business cards."
+          "question": "Τι μέγεθος QR code να επιλέξω για επαγγελματική κάρτα;",
+          "answer": "Για εκτυπωμένα υλικά (επαγγελματικές κάρτες, φυλλάδια), ο κωδικός πρέπει να είναι τουλάχιστον 2×2 cm, ιδανικά 3×3 cm. Στον δημιουργό, αυτό αντιστοιχεί σε ανάλυση 300 px σε τυπική ποιότητα εκτύπωσης (300 DPI). Για μεγαλύτερες μορφές (αφίσες, banners), επιλέξτε μεγαλύτερο μέγεθος ή μορφή SVG.",
+          "answerSchemaText": "Τουλάχιστον 2×2 cm (300 px σε 300 DPI). Ιδανικά 3×3 cm για επαγγελματικές κάρτες."
         },
         {
-          "question": "Can I add a logo to the center of the QR code?",
-          "answer": "This tool does not support adding a logo directly. However, you can download the code in SVG format and overlay a logo in a graphics program - in that case, it is necessary to set a high error correction level (H) so the code remains readable despite partial obscuring.",
-          "answerSchemaText": "Not directly. Download SVG and add a logo in a graphics program with H error correction."
+          "question": "Μπορώ να προσθέσω λογότυπο στο κέντρο του QR code;",
+          "answer": "Αυτό το εργαλείο δεν υποστηρίζει απευθείας προσθήκη λογότυπου. Ωστόσο, μπορείτε να κατεβάσετε τον κωδικό σε μορφή SVG και να τοποθετήσετε λογότυπο σε πρόγραμμα γραφικών — σε αυτή την περίπτωση, είναι απαραίτητο να ορίσετε υψηλό επίπεδο διόρθωσης σφαλμάτων (H) ώστε ο κωδικός να παραμένει αναγνώσιμος παρά τη μερική κάλυψη.",
+          "answerSchemaText": "Όχι απευθείας. Κατεβάστε SVG και προσθέστε λογότυπο σε πρόγραμμα γραφικών με διόρθωση σφαλμάτων H."
         },
         {
-          "question": "Why doesn't my QR code scan after printing?",
-          "answer": "Most common causes: too low contrast between code and background, too small code size, no margin around the code, or print damage. Try increasing the size, improving contrast, and raising the error correction level (Q or H).",
-          "answerSchemaText": "Check contrast, size, margin, and error correction level."
+          "question": "Γιατί δεν σαρώνεται το QR code μου μετά την εκτύπωση;",
+          "answer": "Πιο συχνές αιτίες: πολύ χαμηλή αντίθεση μεταξύ κωδικού και φόντου, πολύ μικρό μέγεθος κωδικού, έλλειψη περιθωρίου γύρω από τον κωδικό ή φθορά εκτύπωσης. Δοκιμάστε να αυξήσετε το μέγεθος, να βελτιώσετε την αντίθεση και να αυξήσετε το επίπεδο διόρθωσης σφαλμάτων (Q ή H).",
+          "answerSchemaText": "Ελέγξτε αντίθεση, μέγεθος, περιθώριο και επίπεδο διόρθωσης σφαλμάτων."
         },
         {
-          "question": "Can I use generated QR codes commercially?",
-          "answer": "Yes. Generated QR codes can be freely used in any project - commercial and non-commercial, without licensing restrictions.",
-          "answerSchemaText": "Yes, without restrictions in commercial and non-commercial projects."
+          "question": "Μπορώ να χρησιμοποιήσω τα δημιουργημένα QR codes εμπορικά;",
+          "answer": "Ναι. Τα δημιουργημένα QR codes μπορούν να χρησιμοποιηθούν ελεύθερα σε οποιοδήποτε έργο — εμπορικό και μη εμπορικό, χωρίς περιορισμούς αδειοδότησης.",
+          "answerSchemaText": "Ναι, χωρίς περιορισμούς σε εμπορικά και μη εμπορικά έργα."
         },
         {
-          "question": "What is the difference between a vCard business card and a plain text QR code?",
-          "answer": "A vCard QR code contains contact data in a standardized format (name, company, phone, email, address). After scanning, the phone automatically offers to save the contact in the address book. A text code displays data as plain text - without the option to automatically save it.",
-          "answerSchemaText": "vCard saves contact automatically. Text QR just displays text."
+          "question": "Ποια είναι η διαφορά μεταξύ επαγγελματικής κάρτας vCard και απλού κειμένου QR code;",
+          "answer": "Ένα QR code vCard περιέχει στοιχεία επικοινωνίας σε τυποποιημένη μορφή (όνομα, εταιρεία, τηλέφωνο, email, διεύθυνση). Μετά τη σάρωση, το τηλέφωνο προσφέρει αυτόματα αποθήκευση της επαφής στο βιβλίο διευθύνσεων. Ένα κείμενο QR code εμφανίζει τα δεδομένα ως απλό κείμενο — χωρίς δυνατότητα αυτόματης αποθήκευσης.",
+          "answerSchemaText": "Το vCard αποθηκεύει αυτόματα την επαφή. Το κείμενο QR απλώς εμφανίζει κείμενο."
         }
       ]
     },
     { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore other free tools" },
+    { "type": "toolsCarousel", "title": "Εξερευνήστε άλλα δωρεάν εργαλεία" },
     { "type": "gap", "size": "sm" }
   ]
 }

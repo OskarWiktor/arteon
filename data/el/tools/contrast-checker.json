@@ -2,76 +2,76 @@
   "toolKey": "contrastChecker",
   "locale": "el",
   "metadata": {
-    "title": "Free Color Contrast Checker – WCAG 2.1 Compliance",
-    "description": "Check if your text and background colors are readable per WCAG 2.1. Enter HEX, RGB or HSL codes, see the contrast ratio and use auto-fix to find accessible.",
+    "title": "Δωρεάν Έλεγχος Αντίθεσης Χρωμάτων – Συμμόρφωση WCAG 2.1",
+    "description": "Ελέγξτε αν τα χρώματα κειμένου και φόντου είναι αναγνώσιμα σύμφωνα με το WCAG 2.1. Εισάγετε κωδικούς HEX, RGB ή HSL, δείτε την αναλογία αντίθεσης και διορθώστε αυτόματα.",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/el/ergaleia/elegkhos-kontrast-chromaton"
   },
   "hero": {
-    "title": "Color contrast and readability checker",
-    "description": "Enter a text and background color, and the tool will show whether contrast is sufficient. Calculations are based on the international accessibility standard WCAG 2.1, which defines minimum contrast values for different content types.",
+    "title": "Έλεγχος αντίθεσης και αναγνωσιμότητας χρωμάτων",
+    "description": "Εισάγετε χρώμα κειμένου και φόντου και το εργαλείο θα δείξει αν η αντίθεση είναι επαρκής. Οι υπολογισμοί βασίζονται στο διεθνές πρότυπο προσβασιμότητας WCAG 2.1, που ορίζει ελάχιστες τιμές αντίθεσης για διαφορετικούς τύπους περιεχομένου.",
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
   "breadcrumbs": {
     "second": {
       "href": "/el/ergaleia",
-      "label": "Tools"
+      "label": "Εργαλεία"
     },
     "third": {
       "href": "/el/ergaleia/elegkhos-kontrast-chromaton",
-      "label": "Color contrast checker"
+      "label": "Έλεγχος αντίθεσης χρωμάτων"
     }
   },
   "schemas": {
     "software": {
-      "name": "Color contrast and readability checker online",
+      "name": "Έλεγχος αντίθεσης και αναγνωσιμότητας χρωμάτων",
       "alternateName": [
-        "Color readability tester",
-        "Text and background contrast checker",
-        "Readability checking tool",
-        "Color contrast calculator",
-        "WCAG contrast tester",
-        "Color accessibility checker",
-        "Are my colors readable"
+        "Ελεγκτής αναγνωσιμότητας χρωμάτων",
+        "Έλεγχος αντίθεσης κειμένου και φόντου",
+        "Εργαλείο ελέγχου αναγνωσιμότητας",
+        "Υπολογιστής αντίθεσης χρωμάτων",
+        "Ελεγκτής αντίθεσης WCAG",
+        "Έλεγχος προσβασιμότητας χρωμάτων",
+        "Είναι αναγνώσιμα τα χρώματά μου"
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
-      "description": "Check if text and background colors are readable for all users. The tool calculates contrast ratio per WCAG 2.1 and shows whether you meet accessibility requirements.",
+      "description": "Ελέγξτε αν τα χρώματα κειμένου και φόντου είναι αναγνώσιμα για όλους τους χρήστες. Το εργαλείο υπολογίζει την αναλογία αντίθεσης σύμφωνα με το WCAG 2.1 και δείχνει αν πληροίτε τις απαιτήσεις προσβασιμότητας.",
       "featureList": [
-        "Contrast ratio calculation",
-        "WCAG 2.1 Level AA compliance check",
-        "WCAG 2.1 Level AAA compliance check",
-        "Normal text testing",
-        "Large text and heading testing",
-        "Icon and UI component testing",
-        "HEX color format support",
-        "RGB and RGBA color format support",
-        "HSL and HSLA color format support",
-        "Color picker for visual selection",
-        "Live text preview",
-        "Automatic color matching feature",
-        "Local processing in the browser"
+        "Υπολογισμός αναλογίας αντίθεσης",
+        "Έλεγχος συμμόρφωσης WCAG 2.1 Επίπεδο AA",
+        "Έλεγχος συμμόρφωσης WCAG 2.1 Επίπεδο AAA",
+        "Δοκιμή κανονικού κειμένου",
+        "Δοκιμή μεγάλου κειμένου και επικεφαλίδων",
+        "Δοκιμή εικονιδίων και στοιχείων UI",
+        "Υποστήριξη μορφής χρώματος HEX",
+        "Υποστήριξη μορφών RGB και RGBA",
+        "Υποστήριξη μορφών HSL και HSLA",
+        "Επιλογέας χρωμάτων για οπτική επιλογή",
+        "Ζωντανή προεπισκόπηση κειμένου",
+        "Αυτόματη αντιστοίχιση χρωμάτων",
+        "Τοπική επεξεργασία στον browser"
       ]
     },
     "howTo": {
-      "name": "How to check color contrast and readability online",
-      "description": "How to check text and background color readability per WCAG standard. Enter colors, read the contrast ratio, and use the automatic matching feature.",
+      "name": "Πώς να ελέγξετε την αντίθεση και αναγνωσιμότητα χρωμάτων",
+      "description": "Πώς να ελέγξετε την αναγνωσιμότητα χρωμάτων κειμένου και φόντου σύμφωνα με το πρότυπο WCAG. Εισάγετε χρώματα, διαβάστε την αναλογία αντίθεσης και χρησιμοποιήστε την αυτόματη αντιστοίχιση.",
       "steps": [
         {
-          "name": "Choose the text color",
-          "text": "Enter a color code (e.g., #333333) in HEX, RGB, or HSL format - or pick a color from the color picker."
+          "name": "Επιλέξτε το χρώμα κειμένου",
+          "text": "Εισάγετε κωδικό χρώματος (π.χ. #333333) σε μορφή HEX, RGB ή HSL — ή επιλέξτε χρώμα από τον επιλογέα χρωμάτων."
         },
         {
-          "name": "Choose the background color",
-          "text": "Enter the background color on which the text will be displayed - this can be a section, block, or page background color."
+          "name": "Επιλέξτε το χρώμα φόντου",
+          "text": "Εισάγετε το χρώμα φόντου πάνω στο οποίο θα εμφανίζεται το κείμενο — μπορεί να είναι φόντο ενότητας, μπλοκ ή σελίδας."
         },
         {
-          "name": "Read the result",
-          "text": "The tool will show the contrast ratio and whether the colors meet AA/AAA requirements."
+          "name": "Διαβάστε το αποτέλεσμα",
+          "text": "Το εργαλείο θα εμφανίσει την αναλογία αντίθεσης και αν τα χρώματα πληρούν τις απαιτήσεις AA/AAA."
         },
         {
-          "name": "Adjust colors",
-          "text": "If contrast is too low, the Match feature automatically suggests a text color variant that meets the selected WCAG threshold."
+          "name": "Προσαρμόστε τα χρώματα",
+          "text": "Αν η αντίθεση είναι πολύ χαμηλή, η λειτουργία Αντιστοίχιση προτείνει αυτόματα μια παραλλαγή χρώματος κειμένου που πληροί το επιλεγμένο κατώφλι WCAG."
         }
       ]
     }
@@ -83,8 +83,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Why does color readability matter?",
-      "html": "<p class=\"text-mid\">Readability is the luminance difference between the text color and the background color. The greater the difference, the easier it is to read the text. Too low contrast makes content hard to read - especially for people with vision impairments, older adults, or in difficult lighting conditions (e.g., on a phone in direct sunlight).</p><p class=\"text-mid mt-3\">According to the <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">World Health Organization (WHO)</a>, approximately 2.2 billion people worldwide have some form of vision impairment. In addition, millions have color blindness (about 8% of men and 0.5% of women), and many more experience age-related vision decline.</p><p class=\"text-mid mt-3\">The tool calculates the contrast ratio using the formula specified in the <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Web Content Accessibility Guidelines)</a> - international digital accessibility guidelines. The result allows an objective assessment of whether colors are readable enough, regardless of monitor settings or individual color perception.</p>"
+      "title": "Γιατί έχει σημασία η αναγνωσιμότητα χρωμάτων;",
+      "html": "<p class=\"text-mid\">Η αναγνωσιμότητα είναι η διαφορά φωτεινότητας μεταξύ του χρώματος κειμένου και του χρώματος φόντου. Όσο μεγαλύτερη η διαφορά, τόσο πιο εύκολο είναι να διαβαστεί το κείμενο. Πολύ χαμηλή αντίθεση καθιστά το περιεχόμενο δυσανάγνωστο — ιδιαίτερα για άτομα με προβλήματα όρασης, ηλικιωμένους ή σε δύσκολες συνθήκες φωτισμού (π.χ. σε τηλέφωνο υπό άμεσο ηλιακό φως).</p><p class=\"text-mid mt-3\">Σύμφωνα με τον <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Παγκόσμιο Οργανισμό Υγείας (WHO)</a>, περίπου 2,2 δισεκατομμύρια άνθρωποι παγκοσμίως έχουν κάποια μορφή προβλήματος όρασης. Επιπλέον, εκατομμύρια έχουν αχρωματοψία (περίπου 8% των ανδρών και 0,5% των γυναικών), και πολλοί περισσότεροι αντιμετωπίζουν μείωση της όρασης λόγω ηλικίας.</p><p class=\"text-mid mt-3\">Το εργαλείο υπολογίζει την αναλογία αντίθεσης χρησιμοποιώντας τον τύπο που ορίζεται στις <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Web Content Accessibility Guidelines)</a> — διεθνείς οδηγίες ψηφιακής προσβασιμότητας. Το αποτέλεσμα επιτρέπει αντικειμενική αξιολόγηση του αν τα χρώματα είναι αρκετά αναγνώσιμα, ανεξάρτητα από ρυθμίσεις οθόνης ή ατομική αντίληψη χρωμάτων.</p>"
     },
     {
       "type": "gap",
@@ -92,29 +92,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "How to use the color contrast checker",
-      "description": "Checking readability takes just a few seconds:",
+      "title": "Πώς να χρησιμοποιήσετε τον ελεγκτή αντίθεσης χρωμάτων",
+      "description": "Ο έλεγχος αναγνωσιμότητας διαρκεί μόλις λίγα δευτερόλεπτα:",
       "grid": "four",
       "items": [
         {
           "icon": "RiPaletteLine",
-          "title": "1. Enter the text color",
-          "description": "Type a color code (e.g., #333333) in HEX, RGB, or HSL format - or pick a color from the color picker."
+          "title": "1. Εισάγετε το χρώμα κειμένου",
+          "description": "Πληκτρολογήστε κωδικό χρώματος (π.χ. #333333) σε μορφή HEX, RGB ή HSL — ή επιλέξτε χρώμα από τον επιλογέα χρωμάτων."
         },
         {
           "icon": "RiPaintBrushLine",
-          "title": "2. Enter the background color",
-          "description": "Enter the background color on which the text will be displayed - this can be a section, block, or full page background."
+          "title": "2. Εισάγετε το χρώμα φόντου",
+          "description": "Εισάγετε το χρώμα φόντου πάνω στο οποίο θα εμφανίζεται το κείμενο — μπορεί να είναι φόντο ενότητας, μπλοκ ή ολόκληρης σελίδας."
         },
         {
           "icon": "RiCheckboxCircleLine",
-          "title": "3. Read the result",
-          "description": "The tool will calculate the contrast ratio and show whether the colors meet WCAG requirements for normal text, large text, and icons."
+          "title": "3. Διαβάστε το αποτέλεσμα",
+          "description": "Το εργαλείο θα υπολογίσει την αναλογία αντίθεσης και θα δείξει αν τα χρώματα πληρούν τις απαιτήσεις WCAG για κανονικό κείμενο, μεγάλο κείμενο και εικονίδια."
         },
         {
           "icon": "RiEqualizerLine",
-          "title": "4. Adjust colors",
-          "description": "If contrast is too low, the Match feature automatically suggests a color variant that meets the selected threshold."
+          "title": "4. Προσαρμόστε τα χρώματα",
+          "description": "Αν η αντίθεση είναι πολύ χαμηλή, η λειτουργία Αντιστοίχιση προτείνει αυτόματα μια παραλλαγή χρώματος που πληροί το επιλεγμένο κατώφλι."
         }
       ]
     },
@@ -124,22 +124,22 @@
     },
     {
       "type": "sectionTabs",
-      "title": "What color formats are supported?",
+      "title": "Ποιες μορφές χρωμάτων υποστηρίζονται;",
       "tabs": [
         {
           "title": "HEX",
           "icon": "RiHashtag",
-          "html": "<div><p class=\"text-mid mb-3\">Hexadecimal format - the most common in web design. Starts with <code class=\"rounded bg-black/5 px-1\">#</code> and contains 3 or 6 characters (digits 0-9 and letters A-F).</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">#fff</code> - white (shorthand)</li><li><code class=\"rounded bg-black/5 px-1\">#ffffff</code> - white (full form)</li><li><code class=\"rounded bg-black/5 px-1\">#1a73e8</code> - blue</li></ul></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Δεκαεξαδική μορφή — η πιο συνηθισμένη στον σχεδιασμό ιστοσελίδων. Ξεκινά με <code class=\"rounded bg-black/5 px-1\">#</code> και περιέχει 3 ή 6 χαρακτήρες (ψηφία 0-9 και γράμματα A-F).</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">#fff</code> — λευκό (συντομογραφία)</li><li><code class=\"rounded bg-black/5 px-1\">#ffffff</code> — λευκό (πλήρης μορφή)</li><li><code class=\"rounded bg-black/5 px-1\">#1a73e8</code> — μπλε</li></ul></div>"
         },
         {
           "title": "RGB / RGBA",
           "icon": "RiPaletteLine",
-          "html": "<div><p class=\"text-mid mb-3\">Format based on three channels: Red, Green, Blue. Each channel accepts a value from 0 to 255. The RGBA variant adds a fourth parameter - transparency (alpha) from 0 to 1.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">rgb(255, 255, 255)</code> - white</li><li><code class=\"rounded bg-black/5 px-1\">rgba(0, 0, 0, 0.8)</code> - black at 80% opacity</li></ul></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Μορφή βασισμένη σε τρία κανάλια: Κόκκινο, Πράσινο, Μπλε. Κάθε κανάλι δέχεται τιμή από 0 έως 255. Η παραλλαγή RGBA προσθέτει μια τέταρτη παράμετρο — διαφάνεια (alpha) από 0 έως 1.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">rgb(255, 255, 255)</code> — λευκό</li><li><code class=\"rounded bg-black/5 px-1\">rgba(0, 0, 0, 0.8)</code> — μαύρο σε 80% αδιαφάνεια</li></ul></div>"
         },
         {
           "title": "HSL / HSLA",
           "icon": "RiEqualizerLine",
-          "html": "<div><p class=\"text-mid mb-3\">Format based on Hue (0-360°), Saturation (0-100%), and Lightness (0-100%). The HSLA variant adds transparency. This format is useful when you want to adjust the brightness or saturation of a color.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">hsl(0, 0%, 100%)</code> - white</li><li><code class=\"rounded bg-black/5 px-1\">hsla(217, 91%, 60%, 0.9)</code> - blue at 90% opacity</li></ul></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Μορφή βασισμένη σε Απόχρωση (0-360°), Κορεσμό (0-100%) και Φωτεινότητα (0-100%). Η παραλλαγή HSLA προσθέτει διαφάνεια. Αυτή η μορφή είναι χρήσιμη όταν θέλετε να ρυθμίσετε τη φωτεινότητα ή τον κορεσμό ενός χρώματος.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">hsl(0, 0%, 100%)</code> — λευκό</li><li><code class=\"rounded bg-black/5 px-1\">hsla(217, 91%, 60%, 0.9)</code> — μπλε σε 90% αδιαφάνεια</li></ul></div>"
         }
       ]
     },
@@ -149,9 +149,9 @@
     },
     {
       "type": "sectionDemo",
-      "title": "How to interpret the readability test results",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Contrast ratio</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Normal text</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 7:1)</span></div></div><div class=\"rounded-lg border border-neutral-200 px-3 py-2\" style=\"color: var(--black3); background-color: var(--white)\"><p class=\"text-sm!\">Sample normal text</p></div></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Large text</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (min. 3:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (min. 4.5:1)</span></div></div></div></div>",
-      "html": "<p class=\"text-mid mb-4\">After entering colors, the tool displays results in three sections:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normal text</strong> - requires 4.5:1 contrast (AA) or 7:1 (AAA). Applies to text below 18pt (24px) or below 14pt bold.</li><li><strong>Large / bold text</strong> - requires 3:1 contrast (AA) or 4.5:1 (AAA). Applies to headings, buttons, and highlights.</li><li><strong>Icons</strong> - requires 3:1 contrast (AA). Applies to icons and graphical UI elements that convey information.</li></ul><p class=\"text-mid mt-3\"><strong>Green indicator</strong> means the requirement is met. <strong>Red indicator</strong> means contrast is too low and needs improvement.</p>"
+      "title": "Πώς να ερμηνεύσετε τα αποτελέσματα του ελέγχου αναγνωσιμότητας",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Αναλογία αντίθεσης</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Κανονικό κείμενο</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (ελάχ. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (ελάχ. 7:1)</span></div></div><div class=\"rounded-lg border border-neutral-200 px-3 py-2\" style=\"color: var(--black3); background-color: var(--white)\"><p class=\"text-sm!\">Δείγμα κανονικού κειμένου</p></div></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Μεγάλο κείμενο</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AA (ελάχ. 3:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">AAA (ελάχ. 4.5:1)</span></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Μετά την εισαγωγή χρωμάτων, το εργαλείο εμφανίζει αποτελέσματα σε τρεις ενότητες:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Κανονικό κείμενο</strong> — απαιτεί αντίθεση 4.5:1 (AA) ή 7:1 (AAA). Ισχύει για κείμενο κάτω από 18pt (24px) ή κάτω από 14pt bold.</li><li><strong>Μεγάλο / bold κείμενο</strong> — απαιτεί αντίθεση 3:1 (AA) ή 4.5:1 (AAA). Ισχύει για επικεφαλίδες, κουμπιά και τονισμένα στοιχεία.</li><li><strong>Εικονίδια</strong> — απαιτεί αντίθεση 3:1 (AA). Ισχύει για εικονίδια και γραφικά στοιχεία UI που μεταφέρουν πληροφορία.</li></ul><p class=\"text-mid mt-3\"><strong>Πράσινη ένδειξη</strong> σημαίνει ότι η απαίτηση πληρείται. <strong>Κόκκινη ένδειξη</strong> σημαίνει ότι η αντίθεση είναι πολύ χαμηλή και χρειάζεται βελτίωση.</p>"
     },
     {
       "type": "gap",
@@ -159,8 +159,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "What do the readability test results mean?",
-      "html": "<p class=\"text-mid mb-4\">The tool shows the contrast ratio on a scale from 1:1 (no contrast) to 21:1 (maximum contrast - black on white). The result is compared against thresholds defined in the WCAG standard:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normal text</strong> - requires at least 4.5:1 for Level AA (minimum standard) or 7:1 for Level AAA (enhanced standard). Applies to text under 18pt (24px) or under 14pt (18.5px) bold.</li><li><strong>Large / bold text</strong> - requires at least 3:1 for Level AA or 4.5:1 for Level AAA. Applies to text from 18pt (24px) or from 14pt (18.5px) bold - headings, buttons, highlights.</li><li><strong>Icons and UI elements</strong> - require at least 3:1 for Level AA. Applies to icons, buttons, form fields, and other interface elements that convey information.</li></ul><p class=\"text-mid mt-3\"><strong>Level AA</strong> is the minimum required by digital accessibility regulations in many countries, including the <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016L2102\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">EU Web Accessibility Directive</a>. <strong>Level AAA</strong> provides better readability but is not always practical to achieve for all elements.</p>"
+      "title": "Τι σημαίνουν τα αποτελέσματα του ελέγχου αναγνωσιμότητας;",
+      "html": "<p class=\"text-mid mb-4\">Το εργαλείο εμφανίζει την αναλογία αντίθεσης σε κλίμακα από 1:1 (καμία αντίθεση) έως 21:1 (μέγιστη αντίθεση — μαύρο σε λευκό). Το αποτέλεσμα συγκρίνεται με τα κατώφλια που ορίζει το πρότυπο WCAG:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Κανονικό κείμενο</strong> — απαιτεί τουλάχιστον 4.5:1 για Επίπεδο AA (ελάχιστο πρότυπο) ή 7:1 για Επίπεδο AAA (ενισχυμένο πρότυπο). Ισχύει για κείμενο κάτω από 18pt (24px) ή κάτω από 14pt (18.5px) bold.</li><li><strong>Μεγάλο / bold κείμενο</strong> — απαιτεί τουλάχιστον 3:1 για Επίπεδο AA ή 4.5:1 για Επίπεδο AAA. Ισχύει για κείμενο από 18pt (24px) ή από 14pt (18.5px) bold — επικεφαλίδες, κουμπιά, τονισμένα στοιχεία.</li><li><strong>Εικονίδια και στοιχεία UI</strong> — απαιτούν τουλάχιστον 3:1 για Επίπεδο AA. Ισχύει για εικονίδια, κουμπιά, πεδία φορμών και άλλα στοιχεία interface που μεταφέρουν πληροφορία.</li></ul><p class=\"text-mid mt-3\">Το <strong>Επίπεδο AA</strong> είναι το ελάχιστο που απαιτείται από τους κανονισμούς ψηφιακής προσβασιμότητας σε πολλές χώρες, συμπεριλαμβανομένης της <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016L2102\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Οδηγίας της ΕΕ για την Προσβασιμότητα του Διαδικτύου</a>. Το <strong>Επίπεδο AAA</strong> παρέχει καλύτερη αναγνωσιμότητα αλλά δεν είναι πάντα πρακτικό να επιτευχθεί για όλα τα στοιχεία.</p>"
     },
     {
       "type": "gap",
@@ -168,8 +168,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Automatic color matching to WCAG requirements",
-      "html": "<p class=\"text-mid mb-4\">If contrast is too low, you don't need to search for the right color by trial and error. The <strong>Match</strong> feature automatically finds a text color variant that meets the selected contrast threshold.</p><p class=\"text-mid mb-4\">How matching works:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Select the matching target from the list - e.g., AA for normal text or AAA for large text.</li><li>Click the Match button.</li><li>The tool will search through lightness variants of the text color and suggest the closest one that meets the requirements.</li><li>The suggested color can be copied to the clipboard or immediately set as the new text color.</li></ol><p class=\"text-mid mt-3\">The algorithm preserves the hue and saturation of the original color, changing only the lightness. The suggested color stays consistent with the visual identity while meeting the accessibility standard.</p>"
+      "title": "Αυτόματη αντιστοίχιση χρωμάτων στις απαιτήσεις WCAG",
+      "html": "<p class=\"text-mid mb-4\">Αν η αντίθεση είναι πολύ χαμηλή, δεν χρειάζεται να ψάχνετε το σωστό χρώμα με δοκιμή και σφάλμα. Η λειτουργία <strong>Αντιστοίχιση</strong> βρίσκει αυτόματα μια παραλλαγή χρώματος κειμένου που πληροί το επιλεγμένο κατώφλι αντίθεσης.</p><p class=\"text-mid mb-4\">Πώς λειτουργεί η αντιστοίχιση:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Επιλέξτε τον στόχο αντιστοίχισης από τη λίστα — π.χ. AA για κανονικό κείμενο ή AAA για μεγάλο κείμενο.</li><li>Κάντε κλικ στο κουμπί Αντιστοίχιση.</li><li>Το εργαλείο θα αναζητήσει παραλλαγές φωτεινότητας του χρώματος κειμένου και θα προτείνει την πλησιέστερη που πληροί τις απαιτήσεις.</li><li>Το προτεινόμενο χρώμα μπορεί να αντιγραφεί στο πρόχειρο ή να οριστεί αμέσως ως νέο χρώμα κειμένου.</li></ol><p class=\"text-mid mt-3\">Ο αλγόριθμος διατηρεί την απόχρωση και τον κορεσμό του αρχικού χρώματος, αλλάζοντας μόνο τη φωτεινότητα. Το προτεινόμενο χρώμα παραμένει συνεπές με την οπτική ταυτότητα ενώ πληροί το πρότυπο προσβασιμότητας.</p>"
     },
     {
       "type": "gap",
@@ -177,63 +177,63 @@
     },
     {
       "type": "sectionFeatureComparison",
-      "title": "What do AA and AAA levels mean in the WCAG standard?",
+      "title": "Τι σημαίνουν τα επίπεδα AA και AAA στο πρότυπο WCAG;",
       "plans": [
         {
           "id": "aa",
-          "name": "Level AA (minimum)",
+          "name": "Επίπεδο AA (ελάχιστο)",
           "highlighted": true
         },
         {
           "id": "aaa",
-          "name": "Level AAA (enhanced)"
+          "name": "Επίπεδο AAA (ενισχυμένο)"
         }
       ],
       "features": [
         {
-          "name": "Normal text - min. 4.5:1",
+          "name": "Κανονικό κείμενο — ελάχ. 4.5:1",
           "values": {
             "aa": true,
             "aaa": true
           }
         },
         {
-          "name": "Normal text - min. 7:1",
+          "name": "Κανονικό κείμενο — ελάχ. 7:1",
           "values": {
             "aa": false,
             "aaa": true
           }
         },
         {
-          "name": "Large / bold text - min. 3:1",
+          "name": "Μεγάλο / bold κείμενο — ελάχ. 3:1",
           "values": {
             "aa": true,
             "aaa": true
           }
         },
         {
-          "name": "Large / bold text - min. 4.5:1",
+          "name": "Μεγάλο / bold κείμενο — ελάχ. 4.5:1",
           "values": {
             "aa": false,
             "aaa": true
           }
         },
         {
-          "name": "Icons and UI elements - min. 3:1",
+          "name": "Εικονίδια και στοιχεία UI — ελάχ. 3:1",
           "values": {
             "aa": true,
             "aaa": true
           }
         },
         {
-          "name": "Legally required (EU directive)",
+          "name": "Νομικά απαιτούμενο (Οδηγία ΕΕ)",
           "values": {
             "aa": true,
             "aaa": false
           }
         },
         {
-          "name": "Recommended for key content",
+          "name": "Συνιστάται για κρίσιμο περιεχόμενο",
           "values": {
             "aa": true,
             "aaa": true
@@ -247,39 +247,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Where should you check color readability?",
-      "description": "Readability matters everywhere someone needs to read text or recognize a UI element:",
+      "title": "Πού πρέπει να ελέγχετε την αναγνωσιμότητα χρωμάτων;",
+      "description": "Η αναγνωσιμότητα έχει σημασία παντού όπου κάποιος χρειάζεται να διαβάσει κείμενο ή να αναγνωρίσει ένα στοιχείο UI:",
       "grid": "three",
       "items": [
         {
           "icon": "RiGlobalLine",
-          "title": "Websites",
-          "description": "Text on pages, buttons, links, forms. Especially important for business sites where visitors have varying ages and visual abilities."
+          "title": "Ιστοσελίδες",
+          "description": "Κείμενο σε σελίδες, κουμπιά, συνδέσμους, φόρμες. Ιδιαίτερα σημαντικό για επαγγελματικές ιστοσελίδες όπου οι επισκέπτες έχουν διαφορετικές ηλικίες και οπτικές ικανότητες."
         },
         {
           "icon": "RiShoppingCartLine",
-          "title": "Online stores",
-          "description": "Prices, Buy Now buttons, product information. Low readability can mean lost orders."
+          "title": "Ηλεκτρονικά καταστήματα",
+          "description": "Τιμές, κουμπιά Αγοράς, πληροφορίες προϊόντων. Χαμηλή αναγνωσιμότητα μπορεί να σημαίνει χαμένες παραγγελίες."
         },
         {
           "icon": "RiSlideshowLine",
-          "title": "Presentations",
-          "description": "Slides displayed via projector often have weaker contrast than on a monitor. Check colors before presenting."
+          "title": "Παρουσιάσεις",
+          "description": "Οι διαφάνειες που προβάλλονται μέσω προβολέα συχνά έχουν ασθενέστερη αντίθεση από ό,τι στην οθόνη. Ελέγξτε τα χρώματα πριν την παρουσίαση."
         },
         {
           "icon": "RiPrinterLine",
-          "title": "Posters and flyers",
-          "description": "Printed materials viewed in various lighting conditions require high contrast."
+          "title": "Αφίσες και φυλλάδια",
+          "description": "Τα έντυπα υλικά που βλέπετε σε διάφορες συνθήκες φωτισμού απαιτούν υψηλή αντίθεση."
         },
         {
           "icon": "RiSmartphoneLine",
-          "title": "Mobile apps",
-          "description": "Phones are used in bright sunlight, at night, and by people of all ages."
+          "title": "Εφαρμογές κινητών",
+          "description": "Τα τηλέφωνα χρησιμοποιούνται σε έντονο ηλιακό φως, τη νύχτα και από ανθρώπους κάθε ηλικίας."
         },
         {
           "icon": "RiRestaurantLine",
-          "title": "Restaurant menus",
-          "description": "Often printed on colored paper or with decorative fonts - easy to end up with too low contrast."
+          "title": "Μενού εστιατορίων",
+          "description": "Συχνά εκτυπώνονται σε χρωματιστό χαρτί ή με διακοσμητικές γραμματοσειρές — εύκολο να καταλήξουν με πολύ χαμηλή αντίθεση."
         }
       ]
     },
@@ -289,8 +289,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Color readability for color-blind users",
-      "html": "<p class=\"text-mid mb-4\">Color blindness affects about 8% of men and 0.5% of women. People with color blindness may have difficulty distinguishing certain color pairs, even if the luminance contrast is sufficient.</p><p class=\"text-mid mb-4\">Most common types of color blindness:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deuteranopia</strong> - difficulty distinguishing green and red (most common form)</li><li><strong>Protanopia</strong> - difficulty seeing red</li><li><strong>Tritanopia</strong> - difficulty seeing blue and yellow (rare)</li></ul><p class=\"text-mid mt-3\">This tool checks luminance contrast, which is important for all users. However, when designing, it is also worth avoiding problematic color combinations (e.g., red text on a green background) and not relying solely on color to convey information - use shapes, icons, and text as well.</p>"
+      "title": "Αναγνωσιμότητα χρωμάτων για αχρωματοψία",
+      "html": "<p class=\"text-mid mb-4\">Η αχρωματοψία επηρεάζει περίπου 8% των ανδρών και 0,5% των γυναικών. Τα άτομα με αχρωματοψία μπορεί να δυσκολεύονται να διακρίνουν ορισμένα ζεύγη χρωμάτων, ακόμα κι αν η αντίθεση φωτεινότητας είναι επαρκής.</p><p class=\"text-mid mb-4\">Πιο συνηθισμένοι τύποι αχρωματοψίας:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Δευτερανωπία</strong> — δυσκολία διάκρισης πράσινου και κόκκινου (πιο συχνή μορφή)</li><li><strong>Πρωτανωπία</strong> — δυσκολία αντίληψης του κόκκινου</li><li><strong>Τριτανωπία</strong> — δυσκολία αντίληψης μπλε και κίτρινου (σπάνια)</li></ul><p class=\"text-mid mt-3\">Αυτό το εργαλείο ελέγχει την αντίθεση φωτεινότητας, η οποία είναι σημαντική για όλους τους χρήστες. Ωστόσο, κατά τον σχεδιασμό, αξίζει επίσης να αποφεύγετε προβληματικούς συνδυασμούς χρωμάτων (π.χ. κόκκινο κείμενο σε πράσινο φόντο) και να μη βασίζεστε αποκλειστικά στο χρώμα για τη μετάδοση πληροφοριών — χρησιμοποιήστε σχήματα, εικονίδια και κείμενο.</p>"
     },
     {
       "type": "gap",
@@ -298,33 +298,33 @@
     },
     {
       "type": "sectionSteps",
-      "title": "What makes this contrast and readability checker special?",
+      "title": "Τι κάνει αυτόν τον ελεγκτή αντίθεσης και αναγνωσιμότητας ξεχωριστό;",
       "grid": "two",
       "items": [
         {
           "icon": "RiEyeLine",
-          "title": "Objective evaluation based on a mathematical formula",
-          "description": "Contrast ratio is calculated using the WCAG formula - the result does not depend on monitor settings or individual color perception."
+          "title": "Αντικειμενική αξιολόγηση βασισμένη σε μαθηματικό τύπο",
+          "description": "Η αναλογία αντίθεσης υπολογίζεται με τον τύπο WCAG — το αποτέλεσμα δεν εξαρτάται από ρυθμίσεις οθόνης ή ατομική αντίληψη χρωμάτων."
         },
         {
           "icon": "RiShieldCheckLine",
-          "title": "Compliance with international WCAG standard",
-          "description": "Results match WCAG 2.1 requirements, which form the basis of digital accessibility regulations in the EU and many other countries."
+          "title": "Συμμόρφωση με το διεθνές πρότυπο WCAG",
+          "description": "Τα αποτελέσματα αντιστοιχούν στις απαιτήσεις WCAG 2.1, που αποτελούν τη βάση των κανονισμών ψηφιακής προσβασιμότητας στην ΕΕ και πολλές άλλες χώρες."
         },
         {
           "icon": "RiMagicLine",
-          "title": "Automatic color matching to threshold",
-          "description": "The Match feature finds a text color variant that meets the selected contrast threshold - preserves hue, changes only lightness."
+          "title": "Αυτόματη αντιστοίχιση χρώματος στο κατώφλι",
+          "description": "Η λειτουργία Αντιστοίχιση βρίσκει μια παραλλαγή χρώματος κειμένου που πληροί το επιλεγμένο κατώφλι αντίθεσης — διατηρεί την απόχρωση, αλλάζει μόνο τη φωτεινότητα."
         },
         {
           "icon": "RiStackLine",
-          "title": "Five color formats",
-          "description": "Supported formats: HEX, RGB, RGBA, HSL, and HSLA. Color code can be pasted directly from Figma, Photoshop, or a CSS stylesheet."
+          "title": "Πέντε μορφές χρωμάτων",
+          "description": "Υποστηριζόμενες μορφές: HEX, RGB, RGBA, HSL και HSLA. Ο κωδικός χρώματος μπορεί να επικολληθεί απευθείας από Figma, Photoshop ή CSS."
         },
         {
           "icon": "RiInfinityLine",
-          "title": "Three content types in one test",
-          "description": "A single check shows the result for normal text, large text (headings, buttons), and icons - no need to test each type separately."
+          "title": "Τρεις τύποι περιεχομένου σε έναν έλεγχο",
+          "description": "Ένας μόνο έλεγχος δείχνει το αποτέλεσμα για κανονικό κείμενο, μεγάλο κείμενο (επικεφαλίδες, κουμπιά) και εικονίδια — χωρίς ξεχωριστό τεστ για κάθε τύπο."
         }
       ]
     },
@@ -334,40 +334,40 @@
     },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the color contrast checker",
+      "title": "Συχνές ερωτήσεις για τον ελεγκτή αντίθεσης χρωμάτων",
       "openByDefault": 1,
       "items": [
         {
-          "question": "What is a color contrast ratio?",
-          "answer": "A contrast ratio is a measure of the luminance difference between two colors. The scale ranges from 1:1 (no difference - e.g., white text on white background) to 21:1 (maximum difference - black text on white background). The higher the ratio, the easier it is to distinguish text from the background."
+          "question": "Τι είναι η αναλογία αντίθεσης χρωμάτων;",
+          "answer": "Η αναλογία αντίθεσης είναι ένα μέτρο της διαφοράς φωτεινότητας μεταξύ δύο χρωμάτων. Η κλίμακα κυμαίνεται από 1:1 (καμία διαφορά — π.χ. λευκό κείμενο σε λευκό φόντο) έως 21:1 (μέγιστη διαφορά — μαύρο κείμενο σε λευκό φόντο). Όσο υψηλότερη η αναλογία, τόσο πιο εύκολο είναι να διακρίνετε το κείμενο από το φόντο."
         },
         {
-          "question": "What contrast is sufficient according to WCAG?",
-          "answer": "For normal text, the minimum is 4.5:1 (Level AA). For large text - headings from 18pt or bold text from 14pt - 3:1 is sufficient. For icons and UI components, 3:1 is also required. These thresholds ensure readability for most users, including those with impaired vision."
+          "question": "Ποια αντίθεση είναι επαρκής σύμφωνα με το WCAG;",
+          "answer": "Για κανονικό κείμενο, το ελάχιστο είναι 4.5:1 (Επίπεδο AA). Για μεγάλο κείμενο — επικεφαλίδες από 18pt ή bold κείμενο από 14pt — αρκεί 3:1. Για εικονίδια και στοιχεία UI, απαιτείται επίσης 3:1. Αυτά τα κατώφλια εξασφαλίζουν αναγνωσιμότητα για τους περισσότερους χρήστες, συμπεριλαμβανομένων ατόμων με μειωμένη όραση."
         },
         {
-          "question": "Is color contrast important for color-blind users?",
-          "answer": "The checker tests luminance contrast, which matters for all users, including those with color blindness. However, color blindness is a color perception issue, not a luminance issue - so in addition to contrast, avoid problematic color pairs (e.g., red text on green background) and don't rely solely on color to convey information."
+          "question": "Είναι σημαντική η αντίθεση χρωμάτων για χρήστες με αχρωματοψία;",
+          "answer": "Ο ελεγκτής εξετάζει την αντίθεση φωτεινότητας, η οποία έχει σημασία για όλους τους χρήστες, συμπεριλαμβανομένων αυτών με αχρωματοψία. Ωστόσο, η αχρωματοψία είναι ζήτημα αντίληψης χρωμάτων, όχι φωτεινότητας — επομένως εκτός από την αντίθεση, αποφύγετε προβληματικά ζεύγη χρωμάτων (π.χ. κόκκινο κείμενο σε πράσινο φόντο) και μη βασίζεστε μόνο στο χρώμα για μετάδοση πληροφοριών."
         },
         {
-          "question": "Why doesn't my color meet the requirements even though I can see it fine?",
-          "answer": "Personal color perception depends on monitor settings, room lighting, and individual visual abilities. WCAG is based on an objective mathematical formula that accounts for various vision impairments. A color readable on one screen may be unreadable on another or for a different person."
+          "question": "Γιατί το χρώμα μου δεν πληροί τις απαιτήσεις παρόλο που το βλέπω μια χαρά;",
+          "answer": "Η προσωπική αντίληψη χρωμάτων εξαρτάται από τις ρυθμίσεις οθόνης, τον φωτισμό του δωματίου και τις ατομικές οπτικές ικανότητες. Το WCAG βασίζεται σε αντικειμενικό μαθηματικό τύπο που λαμβάνει υπόψη διάφορα προβλήματα όρασης. Ένα χρώμα αναγνώσιμο σε μια οθόνη μπορεί να είναι δυσανάγνωστο σε άλλη ή για διαφορετικό άτομο."
         },
         {
-          "question": "Do I need to meet AAA contrast level?",
-          "answer": "Not always. Level AA (4.5:1 for normal text) is the minimum required by accessibility regulations in the European Union. Level AAA (7:1) provides better readability but is harder to achieve. For critical content - warnings, safety instructions - consider aiming for AAA."
+          "question": "Πρέπει να πληρώ το επίπεδο αντίθεσης AAA;",
+          "answer": "Όχι πάντα. Το Επίπεδο AA (4.5:1 για κανονικό κείμενο) είναι το ελάχιστο που απαιτείται από τους κανονισμούς προσβασιμότητας στην Ευρωπαϊκή Ένωση. Το Επίπεδο AAA (7:1) παρέχει καλύτερη αναγνωσιμότητα αλλά είναι δυσκολότερο να επιτευχθεί. Για κρίσιμο περιεχόμενο — προειδοποιήσεις, οδηγίες ασφαλείας — εξετάστε το ενδεχόμενο στόχευσης AAA."
         },
         {
-          "question": "What is the WCAG standard?",
-          "answer": "WCAG (Web Content Accessibility Guidelines) is an international set of web accessibility guidelines developed by the W3C organization. It defines, among other things, minimum color contrast values, heading structure, keyboard support, and other requirements that make websites accessible to people with various disabilities."
+          "question": "Τι είναι το πρότυπο WCAG;",
+          "answer": "Το WCAG (Web Content Accessibility Guidelines) είναι ένα διεθνές σύνολο οδηγιών προσβασιμότητας ιστού που αναπτύχθηκε από τον οργανισμό W3C. Ορίζει, μεταξύ άλλων, ελάχιστες τιμές αντίθεσης χρωμάτων, δομή επικεφαλίδων, υποστήριξη πληκτρολογίου και άλλες απαιτήσεις που κάνουν τις ιστοσελίδες προσβάσιμες σε άτομα με διάφορες αναπηρίες."
         },
         {
-          "question": "Where can I find color codes from my website?",
-          "answer": "In a browser (Chrome, Firefox, Edge) you can open developer tools (right-click > Inspect). In the Styles tab, you can see the colors used on the page. Alternatively, browser extensions like ColorZilla let you pick the color of any element without digging into code."
+          "question": "Πού μπορώ να βρω τους κωδικούς χρωμάτων της ιστοσελίδας μου;",
+          "answer": "Σε ένα browser (Chrome, Firefox, Edge) μπορείτε να ανοίξετε τα εργαλεία ανάπτυξης (δεξί κλικ > Επιθεώρηση). Στην καρτέλα Styles μπορείτε να δείτε τα χρώματα που χρησιμοποιούνται στη σελίδα. Εναλλακτικά, επεκτάσεις browser όπως το ColorZilla σας επιτρέπουν να επιλέξετε το χρώμα οποιουδήποτε στοιχείου χωρίς να ψάχνετε στον κώδικα."
         },
         {
-          "question": "Which color pairs on my site should I check first?",
-          "answer": "Most important: text on the main background, text on banners and colored sections, buttons (text color and button background relative to page background), links, and icons. Pay special attention to elements that appear on different backgrounds depending on the section."
+          "question": "Ποια ζεύγη χρωμάτων στην ιστοσελίδα μου πρέπει να ελέγξω πρώτα;",
+          "answer": "Πιο σημαντικά: κείμενο στο κύριο φόντο, κείμενο σε banner και χρωματιστές ενότητες, κουμπιά (χρώμα κειμένου και φόντο κουμπιού σε σχέση με το φόντο σελίδας), σύνδεσμοι και εικονίδια. Δώστε ιδιαίτερη προσοχή σε στοιχεία που εμφανίζονται σε διαφορετικά φόντα ανάλογα με την ενότητα."
         }
       ]
     },
@@ -377,7 +377,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Explore other free tools"
+      "title": "Εξερευνήστε άλλα δωρεάν εργαλεία"
     },
     {
       "type": "gap",

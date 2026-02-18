@@ -2,67 +2,67 @@
   "toolKey": "favicon",
   "locale": "el",
   "metadata": {
-    "title": "Free Favicon Generator – Create favicon.ico From Any Image",
-    "description": "Create favicon.ico and a complete favicon set for your website from a single image. All required sizes in one click. Runs locally in your browser.",
+    "title": "Δωρεάν Δημιουργός Favicon – Δημιουργία favicon.ico Από Οποιαδήποτε Εικόνα",
+    "description": "Δημιουργήστε favicon.ico και πλήρες σετ favicon για την ιστοσελίδα σας από μία εικόνα. Όλα τα απαιτούμενα μεγέθη με ένα κλικ. Εκτελείται τοπικά στον browser.",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
     "path": "/el/ergaleia/dorean-dimiourgia-favicon"
   },
   "hero": {
-    "title": "Favicon Generator – Create favicon.ico for Free",
-    "description": "Generate favicon.ico and a complete set of PNG icons for your website from a single image. All processing happens locally in the browser.",
+    "title": "Δημιουργός Favicon – Δημιουργήστε favicon.ico Δωρεάν",
+    "description": "Δημιουργήστε favicon.ico και πλήρες σετ εικονιδίων PNG για την ιστοσελίδα σας από μία εικόνα. Όλη η επεξεργασία γίνεται τοπικά στον browser.",
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
   "breadcrumbs": {
     "second": {
       "href": "/el/ergaleia",
-      "label": "Tools"
+      "label": "Εργαλεία"
     },
     "third": {
       "href": "/el/ergaleia/dorean-dimiourgia-favicon",
-      "label": "Favicon generator"
+      "label": "Δημιουργός favicon"
     }
   },
   "schemas": {
     "software": {
-      "name": "Favicon generator online - free icon creator for websites",
-      "alternateName": ["Favicon.ico and PNG icon generator"],
+      "name": "Δημιουργός favicon — δωρεάν εργαλείο εικονιδίων για ιστοσελίδες",
+      "alternateName": ["Δημιουργός εικονιδίων favicon.ico και PNG"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "IconGenerator",
-      "description": "Free online favicon generator. Create favicon.ico and PNG icons 16x16, 32x32, 180x180, 192x192, and 512x512 without limits and without sending files to a server. Processing happens locally in the browser.",
+      "description": "Δωρεάν δημιουργός favicon. Δημιουργήστε favicon.ico και εικονίδια PNG 16x16, 32x32, 180x180, 192x192 και 512x512 χωρίς όρια και χωρίς αποστολή αρχείων σε server. Η επεξεργασία γίνεται τοπικά στον browser.",
       "featureList": [
-        "Generate favicon.ico (16x16, 32x32, 48x48 in one file)",
-        "Generate PNG icons 16x16 and 32x32",
-        "Generate apple-touch-icon 180x180",
-        "Generate PWA icons 192x192 and 512x512",
-        "Support for PNG, JPG, and SVG source images",
-        "Background color configuration",
-        "Generate manifest.json file for PWA",
-        "Download all files as ZIP",
-        "Download individual files",
-        "Lighthouse compliance",
-        "Browser-based processing (files are not sent to a server)",
-        "Free tool, no login required"
+        "Δημιουργία favicon.ico (16x16, 32x32, 48x48 σε ένα αρχείο)",
+        "Δημιουργία εικονιδίων PNG 16x16 και 32x32",
+        "Δημιουργία apple-touch-icon 180x180",
+        "Δημιουργία εικονιδίων PWA 192x192 και 512x512",
+        "Υποστήριξη εικόνων PNG, JPG και SVG",
+        "Ρύθμιση χρώματος φόντου",
+        "Δημιουργία αρχείου manifest.json για PWA",
+        "Λήψη όλων των αρχείων ως ZIP",
+        "Λήψη μεμονωμένων αρχείων",
+        "Συμμόρφωση με Lighthouse",
+        "Επεξεργασία στον browser (τα αρχεία δεν αποστέλλονται σε server)",
+        "Δωρεάν εργαλείο, χωρίς σύνδεση"
       ]
     },
     "howTo": {
-      "name": "How to create a favicon for a website",
-      "description": "How to generate favicon.ico and PNG icons (16x16, 32x32, 180x180, 512x512) from a single image. What sizes are needed and how to add favicon to WordPress, HTML, and Next.js.",
+      "name": "Πώς να δημιουργήσετε favicon για ιστοσελίδα",
+      "description": "Πώς να δημιουργήσετε favicon.ico και εικονίδια PNG (16x16, 32x32, 180x180, 512x512) από μία εικόνα. Ποια μεγέθη χρειάζονται και πώς να προσθέσετε favicon σε WordPress, HTML και Next.js.",
       "steps": [
         {
-          "name": "Add a source image",
-          "text": "Drag a file onto the designated area or select a graphic from your device. A simple logo or icon in PNG, JPG, or SVG format works best."
+          "name": "Προσθέστε εικόνα πηγής",
+          "text": "Σύρετε ένα αρχείο στην καθορισμένη περιοχή ή επιλέξτε γραφικό από τη συσκευή σας. Ένα απλό λογότυπο ή εικονίδιο σε μορφή PNG, JPG ή SVG λειτουργεί καλύτερα."
         },
         {
-          "name": "Choose icon sizes",
-          "text": "Select which icon sizes you need: favicon.ico (32x32), PNG icons (16x16, 32x32, 180x180, 192x192, 512x512)."
+          "name": "Επιλέξτε μεγέθη εικονιδίων",
+          "text": "Επιλέξτε ποια μεγέθη εικονιδίων χρειάζεστε: favicon.ico (32x32), εικονίδια PNG (16x16, 32x32, 180x180, 192x192, 512x512)."
         },
         {
-          "name": "Configure options",
-          "text": "Set the background color (or keep transparent), decide whether to generate a manifest file, and whether files should auto-download."
+          "name": "Ρυθμίστε επιλογές",
+          "text": "Ορίστε το χρώμα φόντου (ή διατηρήστε διαφάνεια), αποφασίστε αν θα δημιουργηθεί αρχείο manifest και αν τα αρχεία θα ληφθούν αυτόματα."
         },
         {
-          "name": "Generate and download files",
-          "text": "After generation, files can be downloaded as a ZIP archive or each icon individually."
+          "name": "Δημιουργήστε και κατεβάστε τα αρχεία",
+          "text": "Μετά τη δημιουργία, τα αρχεία μπορούν να ληφθούν ως αρχείο ZIP ή κάθε εικονίδιο μεμονωμένα."
         }
       ]
     }
@@ -74,8 +74,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "What is a favicon and why should you have one?",
-      "html": "<p class=\"mb-4\">A favicon is a small icon that appears on the browser tab next to the page title. You also see it in bookmarks, browsing history, and on the phone home screen when someone adds the site as a shortcut.</p><p class=\"mb-4\">This small graphic serves an important function - it helps users quickly recognize a site among many open tabs. When someone has a dozen tabs open in the browser, the favicon is often the only visible element identifying the site.</p><p>The generator creates a complete icon set: a classic favicon.ico file for browsers, PNG icons in various sizes, and an apple-touch-icon for Apple devices. If you are building a web app (PWA), you can also generate 192x192 and 512x512 icons along with a manifest file.</p>"
+      "title": "Τι είναι ένα favicon και γιατί πρέπει να το έχετε;",
+      "html": "<p class=\"mb-4\">Ένα favicon είναι ένα μικρό εικονίδιο που εμφανίζεται στην καρτέλα του browser δίπλα στον τίτλο σελίδας. Το βλέπετε επίσης στους σελιδοδείκτες, στο ιστορικό περιήγησης και στην αρχική οθόνη τηλεφώνου όταν κάποιος προσθέτει τον ιστότοπο ως συντόμευση.</p><p class=\"mb-4\">Αυτό το μικρό γραφικό εξυπηρετεί σημαντική λειτουργία — βοηθά τους χρήστες να αναγνωρίσουν γρήγορα έναν ιστότοπο ανάμεσα σε πολλές ανοιχτές καρτέλες. Όταν κάποιος έχει δεκάδες καρτέλες ανοιχτές στον browser, το favicon είναι συχνά το μόνο ορατό στοιχείο που αναγνωρίζει τον ιστότοπο.</p><p>Ο δημιουργός παράγει ένα πλήρες σετ εικονιδίων: ένα κλασικό αρχείο favicon.ico για browsers, εικονίδια PNG σε διάφορα μεγέθη και ένα apple-touch-icon για συσκευές Apple. Αν φτιάχνετε web app (PWA), μπορείτε επίσης να δημιουργήσετε εικονίδια 192x192 και 512x512 μαζί με αρχείο manifest.</p>"
     },
     {
       "type": "gap",
@@ -83,21 +83,21 @@
     },
     {
       "type": "sectionSteps",
-      "title": "How to create a favicon in 3 steps",
-      "description": "Generating a favicon takes just a few seconds:",
+      "title": "Πώς να δημιουργήσετε favicon σε 3 βήματα",
+      "description": "Η δημιουργία favicon διαρκεί μόλις λίγα δευτερόλεπτα:",
       "grid": "three",
       "items": [
         {
-          "title": "1. Add an image",
-          "description": "Drag a file onto the designated area or select a graphic from your device. Supported formats: PNG, JPG, SVG. Recommended size: min. 512×512 pixels."
+          "title": "1. Προσθέστε εικόνα",
+          "description": "Σύρετε αρχείο στην καθορισμένη περιοχή ή επιλέξτε γραφικό από τη συσκευή σας. Υποστηριζόμενες μορφές: PNG, JPG, SVG. Συνιστώμενο μέγεθος: ελάχ. 512×512 pixels."
         },
         {
-          "title": "2. Choose sizes",
-          "description": "Select the icon sizes you need. For a regular website: favicon.ico, 32×32, and 180×180. For PWA, add 192×192 and 512×512."
+          "title": "2. Επιλέξτε μεγέθη",
+          "description": "Επιλέξτε τα μεγέθη εικονιδίων που χρειάζεστε. Για κανονική ιστοσελίδα: favicon.ico, 32×32 και 180×180. Για PWA, προσθέστε 192×192 και 512×512."
         },
         {
-          "title": "3. Download files",
-          "description": "After generating, download all files as a ZIP or each icon individually. Below the tool you will find instructions on how to add the favicon to your site."
+          "title": "3. Κατεβάστε αρχεία",
+          "description": "Μετά τη δημιουργία, κατεβάστε όλα τα αρχεία ως ZIP ή κάθε εικονίδιο μεμονωμένα. Κάτω από το εργαλείο θα βρείτε οδηγίες για το πώς να προσθέσετε το favicon στον ιστότοπό σας."
         }
       ]
     },
@@ -107,8 +107,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "What icon sizes does the tool generate?",
-      "html": "<p class=\"mb-6\">Each size has its use:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Classic format recognized by all browsers. Displays on the browser tab.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16×16 and 32×32 PNG</p><p class=\"text-mid text-sm\">Standard sizes for modern browsers. Display on tabs and in bookmarks.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180×180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Icon for Apple devices (iPhone, iPad). Displays when someone adds the site to their home screen.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192×192 and 512×512 PNG</p><p class=\"text-mid text-sm\">Icons for web apps (PWA). Required by the manifest and used in app stores.</p></div></div><p class=\"text-light mt-6\">If you are not building a PWA, you only need: favicon.ico, 32×32 PNG, and 180×180 PNG. These three files cover most use cases.</p>"
+      "title": "Ποια μεγέθη εικονιδίων δημιουργεί το εργαλείο;",
+      "html": "<p class=\"mb-6\">Κάθε μέγεθος έχει τη χρήση του:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Κλασική μορφή αναγνωρίσιμη από όλους τους browsers. Εμφανίζεται στην καρτέλα του browser.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16×16 και 32×32 PNG</p><p class=\"text-mid text-sm\">Τυπικά μεγέθη για σύγχρονους browsers. Εμφανίζονται σε καρτέλες και σελιδοδείκτες.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180×180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Εικονίδιο για συσκευές Apple (iPhone, iPad). Εμφανίζεται όταν κάποιος προσθέτει τον ιστότοπο στην αρχική οθόνη.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192×192 και 512×512 PNG</p><p class=\"text-mid text-sm\">Εικονίδια για web apps (PWA). Απαιτούνται από το manifest και χρησιμοποιούνται σε app stores.</p></div></div><p class=\"text-light mt-6\">Αν δεν φτιάχνετε PWA, χρειάζεστε μόνο: favicon.ico, 32×32 PNG και 180×180 PNG. Αυτά τα τρία αρχεία καλύπτουν τις περισσότερες περιπτώσεις.</p>"
     },
     {
       "type": "gap",
@@ -116,28 +116,28 @@
     },
     {
       "type": "sectionSteps",
-      "title": "What makes the favicon generator special?",
+      "title": "Τι κάνει τον δημιουργό favicon ξεχωριστό;",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy - files never leave your computer",
-          "description": "All operations are performed locally in the browser. The image is not sent to any server. After closing the page, all data is cleared."
+          "title": "Απόρρητο — τα αρχεία δεν φεύγουν από τον υπολογιστή σας",
+          "description": "Όλες οι λειτουργίες εκτελούνται τοπικά στον browser. Η εικόνα δεν αποστέλλεται σε κανέναν server. Μετά το κλείσιμο της σελίδας, όλα τα δεδομένα διαγράφονται."
         },
         {
           "icon": "RiDownloadLine",
-          "title": "Complete set in one place",
-          "description": "Favicon.ico, PNG icons, apple-touch-icon, PWA icons, and manifest - all from one image, in one tool."
+          "title": "Πλήρες σετ σε ένα μέρος",
+          "description": "Favicon.ico, εικονίδια PNG, apple-touch-icon, εικονίδια PWA και manifest — όλα από μία εικόνα, σε ένα εργαλείο."
         },
         {
           "icon": "RiImageLine",
-          "title": "PNG, JPG, and SVG support",
-          "description": "You can use a logo in any format. If you have SVG - icons will be sharp in all sizes."
+          "title": "Υποστήριξη PNG, JPG και SVG",
+          "description": "Μπορείτε να χρησιμοποιήσετε λογότυπο σε οποιαδήποτε μορφή. Αν έχετε SVG — τα εικονίδια θα είναι ευκρινή σε όλα τα μεγέθη."
         },
         {
           "icon": "RiSmartphoneLine",
-          "title": "Ready for website and PWA use",
-          "description": "The tool generates a manifest.json file for web apps. Below you will find instructions for integrating the icons."
+          "title": "Έτοιμο για ιστοσελίδα και PWA",
+          "description": "Το εργαλείο δημιουργεί αρχείο manifest.json για web apps. Παρακάτω θα βρείτε οδηγίες για την ενσωμάτωση των εικονιδίων."
         }
       ]
     },
@@ -147,29 +147,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "How to use the favicon generator",
-      "description": "Generating a favicon is a few simple steps:",
+      "title": "Πώς να χρησιμοποιήσετε τον δημιουργό favicon",
+      "description": "Η δημιουργία favicon είναι λίγα απλά βήματα:",
       "grid": "two",
       "items": [
         {
           "icon": "RiUploadLine",
-          "title": "1. Add source image",
-          "description": "Drag a file onto the designated area or select a graphic from your device. Supported formats: PNG, JPG, SVG. A simple logo or icon at least 512×512 pixels works best."
+          "title": "1. Προσθέστε εικόνα πηγής",
+          "description": "Σύρετε αρχείο στην καθορισμένη περιοχή ή επιλέξτε γραφικό από τη συσκευή σας. Υποστηριζόμενες μορφές: PNG, JPG, SVG. Ένα απλό λογότυπο ή εικονίδιο τουλάχιστον 512×512 pixels λειτουργεί καλύτερα."
         },
         {
           "icon": "RiLayoutGridLine",
-          "title": "2. Choose icon sizes",
-          "description": "Select which icon sizes you need. You can select all or only some. For a regular website: favicon.ico, 32×32, and 180×180."
+          "title": "2. Επιλέξτε μεγέθη εικονιδίων",
+          "description": "Επιλέξτε ποια μεγέθη εικονιδίων χρειάζεστε. Μπορείτε να επιλέξετε όλα ή μόνο ορισμένα. Για κανονική ιστοσελίδα: favicon.ico, 32×32 και 180×180."
         },
         {
           "icon": "RiSettings3Line",
-          "title": "3. Configure generation options",
-          "description": "Set additional options: background (transparent or chosen color), manifest (PWA configuration file), and auto-download."
+          "title": "3. Ρυθμίστε επιλογές δημιουργίας",
+          "description": "Ορίστε πρόσθετες επιλογές: φόντο (διαφανές ή επιλεγμένο χρώμα), manifest (αρχείο ρυθμίσεων PWA) και αυτόματη λήψη."
         },
         {
           "icon": "RiDownloadLine",
-          "title": "4. Generate and download files",
-          "description": "After starting generation, the tool processes the image locally - nothing is sent to a server. Download all files as a ZIP archive or individual icons separately."
+          "title": "4. Δημιουργήστε και κατεβάστε αρχεία",
+          "description": "Μετά την εκκίνηση, το εργαλείο επεξεργάζεται την εικόνα τοπικά — τίποτα δεν αποστέλλεται σε server. Κατεβάστε όλα τα αρχεία ως ZIP ή μεμονωμένα εικονίδια ξεχωριστά."
         }
       ]
     },
@@ -179,9 +179,9 @@
     },
     {
       "type": "sectionDemo",
-      "title": "Generation options - what does each one do?",
-      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">PNG sizes</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">16×16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">32×32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">180×180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span class=\"text-mid text-sm!\">Transparent background (PNG/ICO)</span></div></div></div>",
-      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Background (transparent or color)</h3><p class=\"text-mid\">By default, the generator preserves transparency. You can also choose a specific background color.</p></div><div><h3 class=\"h5 mb-2\">Generate manifest (site.webmanifest)</h3><p class=\"text-mid\">A JSON file for web apps (PWA). If you are not building a PWA, this option is not required.</p></div></div>"
+      "title": "Επιλογές δημιουργίας — τι κάνει η κάθε μία;",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">Μεγέθη PNG</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">16×16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">32×32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">180×180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span class=\"text-mid text-sm!\">Διαφανές φόντο (PNG/ICO)</span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Φόντο (διαφανές ή χρώμα)</h3><p class=\"text-mid\">Εξ ορισμού, ο δημιουργός διατηρεί τη διαφάνεια. Μπορείτε επίσης να επιλέξετε συγκεκριμένο χρώμα φόντου.</p></div><div><h3 class=\"h5 mb-2\">Δημιουργία manifest (site.webmanifest)</h3><p class=\"text-mid\">Αρχείο JSON για web apps (PWA). Αν δεν φτιάχνετε PWA, αυτή η επιλογή δεν απαιτείται.</p></div></div>"
     },
     {
       "type": "gap",
@@ -189,19 +189,19 @@
     },
     {
       "type": "sectionSteps",
-      "title": "How to download generated files",
-      "description": "After generating icons, you have several download options:",
+      "title": "Πώς να κατεβάσετε τα δημιουργημένα αρχεία",
+      "description": "Μετά τη δημιουργία εικονιδίων, έχετε αρκετές επιλογές λήψης:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFolderZipLine",
-          "title": "Download all as ZIP",
-          "description": "The &quot;Download all&quot; button packs all generated files into a single ZIP archive. This is the most convenient option when you need the full icon set."
+          "title": "Λήψη όλων ως ZIP",
+          "description": "Το κουμπί &quot;Λήψη όλων&quot; συσκευάζει όλα τα δημιουργημένα αρχεία σε ένα αρχείο ZIP. Αυτή είναι η πιο βολική επιλογή όταν χρειάζεστε το πλήρες σετ εικονιδίων."
         },
         {
           "icon": "RiFileDownloadLine",
-          "title": "Download individual files",
-          "description": "Each generated icon has its own download button - you can download a single file without downloading the entire set. Useful when only one size needs updating."
+          "title": "Λήψη μεμονωμένων αρχείων",
+          "description": "Κάθε δημιουργημένο εικονίδιο έχει το δικό του κουμπί λήψης — μπορείτε να κατεβάσετε ένα μόνο αρχείο χωρίς να κατεβάσετε ολόκληρο το σετ. Χρήσιμο όταν χρειάζεται ενημέρωση μόνο ενός μεγέθους."
         }
       ]
     },
@@ -211,22 +211,22 @@
     },
     {
       "type": "sectionTabs",
-      "title": "Where and how to add a favicon",
+      "title": "Πού και πώς να προσθέσετε favicon",
       "tabs": [
         {
           "title": "WordPress",
           "icon": "RiWordpressLine",
-          "html": "<div><p class=\"text-mid mb-3\">Most WordPress themes have a built-in option for setting the site icon. You will find it in the admin panel:</p><p class=\"text-mid mb-3\"><strong>Appearance → Customize → Site Identity → Site Icon</strong></p><p class=\"text-light\">Upload the 512×512 file there - WordPress will automatically generate smaller sizes. For full control over icons, you can also upload files directly to the root directory via FTP.</p></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Τα περισσότερα θέματα WordPress έχουν ενσωματωμένη επιλογή για ρύθμιση εικονιδίου ιστοτόπου. Θα τη βρείτε στον πίνακα διαχείρισης:</p><p class=\"text-mid mb-3\"><strong>Appearance → Customize → Site Identity → Site Icon</strong></p><p class=\"text-light\">Ανεβάστε εκεί το αρχείο 512×512 — το WordPress θα δημιουργήσει αυτόματα μικρότερα μεγέθη. Για πλήρη έλεγχο εικονιδίων, μπορείτε επίσης να ανεβάσετε αρχεία απευθείας στον ριζικό κατάλογο μέσω FTP.</p></div>"
         },
         {
           "title": "HTML",
           "icon": "RiHtml5Line",
-          "html": "<div><p class=\"text-mid mb-3\">Place the generated files in the root directory of your site (where index.html is). Then add the appropriate tags in the &lt;head&gt; section:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">The code above is an example — adjust the paths to match your site structure.</p></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Τοποθετήστε τα δημιουργημένα αρχεία στον ριζικό κατάλογο του ιστοτόπου σας (εκεί που βρίσκεται το index.html). Στη συνέχεια προσθέστε τις κατάλληλες ετικέτες στην ενότητα &lt;head&gt;:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">Ο παραπάνω κώδικας είναι παράδειγμα — προσαρμόστε τα paths ανάλογα με τη δομή του ιστοτόπου σας.</p></div>"
         },
         {
           "title": "Next.js / React",
           "icon": "RiReactjsLine",
-          "html": "<div><p class=\"text-mid mb-3\">In Next.js (App Router), place favicon files in the <code>app/</code> or <code>public/</code> directory:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> - automatically recognized by Next.js</li><li><code>app/apple-icon.png</code> - Apple icon</li><li><code>public/</code> - remaining icons (192×192, 512×512)</li></ul><p class=\"text-light\">You can also configure icons in <code>layout.tsx</code> via the <code>metadata.icons</code> object.</p></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Στο Next.js (App Router), τοποθετήστε τα αρχεία favicon στον κατάλογο <code>app/</code> ή <code>public/</code>:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> — αναγνωρίζεται αυτόματα από το Next.js</li><li><code>app/apple-icon.png</code> — εικονίδιο Apple</li><li><code>public/</code> — υπόλοιπα εικονίδια (192×192, 512×512)</li></ul><p class=\"text-light\">Μπορείτε επίσης να ρυθμίσετε εικονίδια στο <code>layout.tsx</code> μέσω του αντικειμένου <code>metadata.icons</code>.</p></div>"
         }
       ]
     },
@@ -236,34 +236,34 @@
     },
     {
       "type": "sectionSteps",
-      "title": "What source image works best?",
-      "description": "A favicon is a very small graphic - as small as 16×16 pixels. Not every image works well as a source:",
+      "title": "Ποια εικόνα πηγής λειτουργεί καλύτερα;",
+      "description": "Ένα favicon είναι πολύ μικρό γραφικό — μόλις 16×16 pixels. Δεν λειτουργεί κάθε εικόνα καλά ως πηγή:",
       "grid": "two",
       "items": [
         {
           "icon": "RiShapeLine",
-          "title": "Simple shapes and readable symbols",
-          "description": "Simple logos, single letters, or symbols work best. Avoid complex graphics with many details."
+          "title": "Απλά σχήματα και ευανάγνωστα σύμβολα",
+          "description": "Απλά λογότυπα, μεμονωμένα γράμματα ή σύμβολα λειτουργούν καλύτερα. Αποφύγετε πολύπλοκα γραφικά με πολλές λεπτομέρειες."
         },
         {
           "icon": "RiAspectRatioLine",
-          "title": "Square format",
-          "description": "A favicon is square. If the source image has a ratio other than 1:1, it will be cropped or stretched."
+          "title": "Τετράγωνη μορφή",
+          "description": "Ένα favicon είναι τετράγωνο. Αν η εικόνα πηγής έχει αναλογία διαφορετική από 1:1, θα περικοπεί ή θα τεντωθεί."
         },
         {
           "icon": "RiZoomInLine",
-          "title": "Large enough size",
-          "description": "We recommend a source image of at least 512×512 pixels. Smaller images will be scaled up."
+          "title": "Αρκετά μεγάλο μέγεθος",
+          "description": "Συνιστούμε εικόνα πηγής τουλάχιστον 512×512 pixels. Μικρότερες εικόνες θα μεγεθυνθούν."
         },
         {
           "icon": "RiImageLine",
-          "title": "SVG format as ideal source",
-          "description": "SVG scales without quality loss, so icons in all sizes will be sharp."
+          "title": "Μορφή SVG ως ιδανική πηγή",
+          "description": "Το SVG κλιμακώνεται χωρίς απώλεια ποιότητας, οπότε τα εικονίδια σε όλα τα μεγέθη θα είναι ευκρινή."
         },
         {
           "icon": "RiContrastLine",
-          "title": "High-contrast colors",
-          "description": "A favicon must be visible on different backgrounds (light tabs, dark mode). Choose colors that maintain readability."
+          "title": "Χρώματα υψηλής αντίθεσης",
+          "description": "Ένα favicon πρέπει να είναι ορατό σε διαφορετικά φόντα (ανοιχτές καρτέλες, dark mode). Επιλέξτε χρώματα που διατηρούν την αναγνωσιμότητα."
         }
       ]
     },
@@ -273,48 +273,48 @@
     },
     {
       "type": "faq",
-      "title": "Frequently asked questions about the favicon generator",
+      "title": "Συχνές ερωτήσεις για τον δημιουργό favicon",
       "openByDefault": 0,
       "items": [
         {
-          "question": "What size should the source image be for generating favicons?",
-          "answer": "The recommended size is at least 512×512 pixels in square format (1:1). With such a source, icons in all sizes will be sharp and readable. If you have a logo in SVG format - use it, as vector graphics scale without quality loss.",
-          "answerSchemaText": "At least 512×512 px, square (1:1). SVG is ideal as it scales without quality loss."
+          "question": "Τι μέγεθος πρέπει να έχει η εικόνα πηγής για δημιουργία favicons;",
+          "answer": "Το συνιστώμενο μέγεθος είναι τουλάχιστον 512×512 pixels σε τετράγωνη μορφή (1:1). Με τέτοια πηγή, τα εικονίδια σε όλα τα μεγέθη θα είναι ευκρινή και αναγνώσιμα. Αν έχετε λογότυπο σε μορφή SVG — χρησιμοποιήστε το, καθώς τα διανυσματικά γραφικά κλιμακώνονται χωρίς απώλεια ποιότητας.",
+          "answerSchemaText": "Τουλάχιστον 512×512 px, τετράγωνο (1:1). Το SVG είναι ιδανικό καθώς κλιμακώνεται χωρίς απώλεια ποιότητας."
         },
         {
-          "question": "Can I generate only favicon.ico without the other icons?",
-          "answer": "Yes. Before generating, you can select exactly which sizes you need - e.g., only favicon.ico or only selected PNG sizes.",
-          "answerSchemaText": "Yes, you can select individual sizes before generating."
+          "question": "Μπορώ να δημιουργήσω μόνο favicon.ico χωρίς τα άλλα εικονίδια;",
+          "answer": "Ναι. Πριν τη δημιουργία, μπορείτε να επιλέξετε ακριβώς ποια μεγέθη χρειάζεστε — π.χ. μόνο favicon.ico ή μόνο επιλεγμένα μεγέθη PNG.",
+          "answerSchemaText": "Ναι, μπορείτε να επιλέξετε μεμονωμένα μεγέθη πριν τη δημιουργία."
         },
         {
-          "question": "What image formats does the favicon generator support?",
-          "answer": "The generator accepts images in PNG, JPG, and SVG formats. As output, it generates a favicon.ico file and PNG icons in selected sizes, ready to upload to your website.",
-          "answerSchemaText": "Input: PNG, JPG, SVG. Output: favicon.ico and PNG icons."
+          "question": "Ποιες μορφές εικόνας υποστηρίζει ο δημιουργός favicon;",
+          "answer": "Ο δημιουργός δέχεται εικόνες σε μορφές PNG, JPG και SVG. Ως έξοδο, δημιουργεί αρχείο favicon.ico και εικονίδια PNG σε επιλεγμένα μεγέθη, έτοιμα για ανέβασμα στην ιστοσελίδα σας.",
+          "answerSchemaText": "Είσοδος: PNG, JPG, SVG. Έξοδος: favicon.ico και εικονίδια PNG."
         },
         {
-          "question": "Does a favicon affect Google search ranking?",
-          "answer": "Not directly - favicon is not a ranking factor. However, it indirectly affects brand recognition: a site with a professional icon is more easily identifiable among many open tabs, which may translate to a higher click-through rate in search results.",
-          "answerSchemaText": "Not directly. Indirectly improves brand recognition and click-through rate."
+          "question": "Επηρεάζει το favicon την κατάταξη στο Google;",
+          "answer": "Όχι άμεσα — το favicon δεν είναι παράγοντας κατάταξης. Ωστόσο, επηρεάζει έμμεσα την αναγνωρισιμότητα μάρκας: ένας ιστότοπος με επαγγελματικό εικονίδιο αναγνωρίζεται πιο εύκολα ανάμεσα σε πολλές ανοιχτές καρτέλες, κάτι που μπορεί να μεταφραστεί σε υψηλότερο ποσοστό κλικ στα αποτελέσματα αναζήτησης.",
+          "answerSchemaText": "Όχι άμεσα. Βελτιώνει έμμεσα την αναγνωρισιμότητα μάρκας και το ποσοστό κλικ."
         },
         {
-          "question": "Which icon sizes are essential for a regular website?",
-          "answer": "For a typical website, three files are sufficient: favicon.ico (32×32), a 32×32 PNG icon, and apple-touch-icon 180×180. If the site should work as a web app (PWA), you also need 192×192 and 512×512 icons plus a manifest file.",
-          "answerSchemaText": "favicon.ico, 32×32 PNG, and apple-touch-icon 180×180. For PWA add 192×192 and 512×512."
+          "question": "Ποια μεγέθη εικονιδίων είναι απαραίτητα για κανονική ιστοσελίδα;",
+          "answer": "Για τυπική ιστοσελίδα, τρία αρχεία αρκούν: favicon.ico (32×32), εικονίδιο PNG 32×32 και apple-touch-icon 180×180. Αν ο ιστότοπος πρέπει να λειτουργεί ως web app (PWA), χρειάζεστε επίσης εικονίδια 192×192 και 512×512 μαζί με αρχείο manifest.",
+          "answerSchemaText": "favicon.ico, PNG 32×32 και apple-touch-icon 180×180. Για PWA προσθέστε 192×192 και 512×512."
         },
         {
-          "question": "What is a site.webmanifest file and when is it needed?",
-          "answer": "It is a configuration file for web apps (PWA) that contains information about the icon, name, and colors of the application. It is required when the site should work as an app added to the phone home screen. For regular websites, it is not necessary.",
-          "answerSchemaText": "PWA configuration file. Required for home screen apps, not needed for regular websites."
+          "question": "Τι είναι το αρχείο site.webmanifest και πότε χρειάζεται;",
+          "answer": "Είναι αρχείο ρυθμίσεων για web apps (PWA) που περιέχει πληροφορίες για το εικονίδιο, όνομα και χρώματα της εφαρμογής. Απαιτείται όταν ο ιστότοπος πρέπει να λειτουργεί ως εφαρμογή προστιθέμενη στην αρχική οθόνη τηλεφώνου. Για κανονικές ιστοσελίδες, δεν είναι απαραίτητο.",
+          "answerSchemaText": "Αρχείο ρυθμίσεων PWA. Απαιτείται για εφαρμογές αρχικής οθόνης, δεν χρειάζεται για κανονικές ιστοσελίδες."
         },
         {
-          "question": "Does the favicon display the same in all browsers?",
-          "answer": "Most modern browsers (Chrome, Firefox, Edge, Safari) recognize the favicon.ico file and PNG icons. Differences may occur in the displayed icon size - Chrome prefers PNG 32×32, while Safari on iOS uses apple-touch-icon 180×180. For best compatibility, we recommend generating the full set of sizes.",
-          "answerSchemaText": "Mostly yes. Generate the full set of sizes for best compatibility."
+          "question": "Εμφανίζεται το favicon το ίδιο σε όλους τους browsers;",
+          "answer": "Οι περισσότεροι σύγχρονοι browsers (Chrome, Firefox, Edge, Safari) αναγνωρίζουν το αρχείο favicon.ico και τα εικονίδια PNG. Διαφορές μπορεί να εμφανιστούν στο μέγεθος εικονιδίου — ο Chrome προτιμά PNG 32×32, ενώ το Safari σε iOS χρησιμοποιεί apple-touch-icon 180×180. Για καλύτερη συμβατότητα, συνιστούμε τη δημιουργία πλήρους σετ μεγεθών.",
+          "answerSchemaText": "Κυρίως ναι. Δημιουργήστε πλήρες σετ μεγεθών για καλύτερη συμβατότητα."
         },
         {
-          "question": "Why doesn't the favicon change after uploading a new file?",
-          "answer": "Browsers aggressively cache favicons. After uploading a new icon, try clearing the browser cache or adding a version parameter to the file path (e.g., /favicon.ico?v=2). The change may take several hours to become visible.",
-          "answerSchemaText": "Browsers cache favicons aggressively. Clear cache or add a version parameter."
+          "question": "Γιατί δεν αλλάζει το favicon μετά το ανέβασμα νέου αρχείου;",
+          "answer": "Οι browsers αποθηκεύουν επιθετικά τα favicons στην cache. Μετά το ανέβασμα νέου εικονιδίου, δοκιμάστε να καθαρίσετε την cache του browser ή να προσθέσετε παράμετρο έκδοσης στο path αρχείου (π.χ. /favicon.ico?v=2). Η αλλαγή μπορεί να χρειαστεί αρκετές ώρες για να γίνει ορατή.",
+          "answerSchemaText": "Οι browsers αποθηκεύουν επιθετικά τα favicons. Καθαρίστε cache ή προσθέστε παράμετρο έκδοσης."
         }
       ]
     },
@@ -324,7 +324,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Explore other tools"
+      "title": "Εξερευνήστε άλλα εργαλεία"
     },
     {
       "type": "gap",
