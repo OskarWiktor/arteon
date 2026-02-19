@@ -47,6 +47,7 @@ const LOCALE_TOOLS_BASE = {
   ha: '/ha/kayan-aiki',
   yo: '/yo/awon-irinse',
   af: '/af/gereedskap',
+  ceb: '/ceb/mga-himan',
 };
 
 // ---------------------------------------------------------------------------
@@ -85,6 +86,7 @@ const TOOLS = [
     ha: 'mai-canza-jpg-png-zuwa-webp',
     yo: 'oluyipada-jpg-png-si-webp',
     af: 'jpg-png-na-webp-omskakelaar',
+    ceb: 'jpg-png-ngadto-webp-converter',
   },
   {
     pl: 'edytor-zdjec-online',
@@ -118,6 +120,7 @@ const TOOLS = [
     ha: 'editan-hoto',
     yo: 'olootu-aworan',
     af: 'beeldredigeerder',
+    ceb: 'editor-sa-hulagway',
   },
   {
     pl: 'darmowy-generator-favicon-ico',
@@ -151,6 +154,7 @@ const TOOLS = [
     ha: 'samar-da-favicon-kyauta',
     yo: 'olupilese-favicon-ofe',
     af: 'gratis-favicon-generator',
+    ceb: 'libre-nga-favicon-generator',
   },
   {
     pl: 'licznik-dlugosci-meta-title-i-description',
@@ -184,6 +188,7 @@ const TOOLS = [
     ha: 'tantance-meta-take-da-bayani',
     yo: 'atunyewo-meta-akole-ati-apejuwe',
     af: 'meta-titel-en-beskrywing-nagaaier',
+    ceb: 'tigsusi-sa-meta-titulo-ug-deskripsyon',
   },
   {
     pl: 'licznik-slow-i-znakow',
@@ -217,6 +222,7 @@ const TOOLS = [
     ha: 'kidaya-kalmomi-da-haruffa',
     yo: 'oluka-oro-ati-ohun-kikoo',
     af: 'woord-en-karakter-teller',
+    ceb: 'tigihap-sa-pulong-ug-karakter',
   },
   {
     pl: 'darmowy-generator-stopki-mailowej',
@@ -250,6 +256,7 @@ const TOOLS = [
     ha: 'samar-da-sa-hannu-imel-kyauta',
     yo: 'olupilese-ibuwolu-imeeli-ofe',
     af: 'gratis-e-pos-handtekening-generator',
+    ceb: 'libre-nga-email-pirma-generator',
   },
   {
     pl: 'kontrast-i-czytelnosc-kolorow',
@@ -283,6 +290,7 @@ const TOOLS = [
     ha: 'tantance-bambancin-launuka',
     yo: 'atunyewo-iyato-awon-awoo',
     af: 'kleurkontras-nagaaier',
+    ceb: 'tigsusi-sa-kontras-sa-kolor',
   },
   {
     pl: 'ekstraktor-kolorow-z-obrazu',
@@ -316,6 +324,7 @@ const TOOLS = [
     ha: 'fitar-launuka-daga-hoto',
     yo: 'iseduro-awoo-lati-aworan',
     af: 'kleur-onttrekker-uit-beeld',
+    ceb: 'tigkuha-sa-kolor-gikan-sa-hulagway',
   },
   {
     pl: 'generator-palet-kolorow',
@@ -349,6 +358,7 @@ const TOOLS = [
     ha: 'samar-da-fayafayan-launuka',
     yo: 'olupilese-paleti-awoo',
     af: 'kleurpalet-generator',
+    ceb: 'generator-sa-paleta-sa-kolor',
   },
   {
     pl: 'darmowy-generator-kodow-qr',
@@ -382,6 +392,7 @@ const TOOLS = [
     ha: 'samar-da-lambar-qr-kyauta',
     yo: 'olupilese-koodu-qr-ofe',
     af: 'gratis-qr-kode-generator',
+    ceb: 'libre-nga-qr-code-generator',
   },
 ];
 
@@ -419,6 +430,7 @@ const MULTILINGUAL_PAGES = [
     ha: '/ha/game-da-mu',
     yo: '/yo/nipa-wa',
     af: '/af/oor-ons',
+    ceb: '/ceb/mahitungod-kanamo',
   },
   {
     pl: '/kontakt',
@@ -452,6 +464,7 @@ const MULTILINGUAL_PAGES = [
     ha: '/ha/tuntube-mu',
     yo: '/yo/kan-si-wa',
     af: '/af/kontak',
+    ceb: '/ceb/kontaka-kami',
   },
   {
     pl: '/polityka-prywatnosci',
@@ -485,6 +498,7 @@ const MULTILINGUAL_PAGES = [
     ha: '/ha/manufar-sirri',
     yo: '/yo/ilana-asiri',
     af: '/af/privaatheidsbeleid',
+    ceb: '/ceb/palisiya-sa-pribasiya',
   },
 ];
 
@@ -520,6 +534,7 @@ const LOCALES = [
   'ha',
   'yo',
   'af',
+  'ceb',
 ];
 
 // ---------------------------------------------------------------------------

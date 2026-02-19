@@ -45,6 +45,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       yo: { title: 'Àwọn àwòrán àti favicon' },
       af: { title: 'Beelde en favicons' },
       uk: { title: 'Зображення та favicon' },
+      ceb: { title: 'Mga hulagway ug favicon' },
     },
   },
   {
@@ -83,6 +84,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       yo: { title: 'Meta & SEO' },
       af: { title: 'Meta & SEO' },
       uk: { title: 'Meta та SEO' },
+      ceb: { title: 'Meta ug SEO' },
     },
   },
   {
@@ -121,6 +123,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       yo: { title: 'Ímeèlì àti ìbánisọ̀rọ̀' },
       af: { title: 'E-pos & kommunikasie' },
       uk: { title: 'Електронна пошта та комунікація' },
+      ceb: { title: 'Email ug komunikasyon' },
     },
   },
   {
@@ -159,6 +162,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       yo: { title: 'Àwọ̀ àti pálẹ́ẹ̀tì' },
       af: { title: 'Kleure & palette' },
       uk: { title: 'Кольори та палітри' },
+      ceb: { title: 'Mga kolor ug paleta' },
     },
   },
   {
@@ -197,6 +201,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       yo: { title: 'Ìtẹ̀wé àti QR' },
       af: { title: 'Druk & QR' },
       uk: { title: 'Друк та QR' },
+      ceb: { title: 'Print ug QR' },
     },
   },
 ];
@@ -372,6 +377,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Конвертер JPG/PNG у WebP',
         description: 'Зменшуйте розмір зображень без втрати якості. Конвертуйте JPG та PNG у WebP і прискорте завантаження сайту.',
       },
+      ceb: {
+        slug: 'jpg-png-ngadto-webp-converter',
+        title: 'JPG/PNG ngadto WebP converter',
+        description: 'Gamaya ang gidak-on sa mga hulagway nga walay pagkawala sa kalidad. I-convert ang JPG ug PNG ngadto WebP ug padasiga ang imong website.',
+      },
     },
   },
   {
@@ -540,6 +550,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'redaktor-zobrazhen',
         title: 'Редактор зображень',
         description: 'Підготуйте ідеальний кадр для соціальних мереж або вебсайту. Оберіть готовий формат або введіть власні розміри.',
+      },
+      ceb: {
+        slug: 'editor-sa-hulagway',
+        title: 'Editor sa hulagway',
+        description: 'Pag-andam sa perpekto nga crop para sa social media o imong website. Pagpili og andam na nga format o pagsulod og custom nga gidak-on.',
       },
     },
   },
@@ -710,6 +725,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Генератор favicon',
         description: 'Створіть favicon.ico та PNG-іконки з одного зображення, що відповідають вимогам браузерів та Lighthouse.',
       },
+      ceb: {
+        slug: 'libre-nga-favicon-generator',
+        title: 'Favicon generator',
+        description: 'Paghimo og favicon.ico ug PNG icon gikan sa usa ka hulagway, sumala sa mga kinahanglanon sa browser ug Lighthouse.',
+      },
     },
   },
   {
@@ -878,6 +898,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'perevirka-meta-zaholovka-ta-opysu',
         title: 'Перевірка мета-заголовка та опису',
         description: 'Перевірте кількість символів і подивіться, як ваша сторінка виглядає у Google. Уникайте обрізаних заголовків та описів у результатах пошуку.',
+      },
+      ceb: {
+        slug: 'tigsusi-sa-meta-titulo-ug-deskripsyon',
+        title: 'Tigsusi sa meta titulo ug deskripsyon',
+        description: 'Susiha ang ihap sa karakter ug tan-awa kung giunsa pagpakita ang imong panid sa Google. Likayan ang mga naputol nga titulo ug deskripsyon.',
       },
     },
   },
@@ -1048,6 +1073,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Лічильник слів та символів',
         description: 'Перевірте довжину тексту та оцініть, чи відповідає він головній сторінці, опису послуги, статті чи опису продукту.',
       },
+      ceb: {
+        slug: 'tigihap-sa-pulong-ug-karakter',
+        title: 'Tigihap sa pulong ug karakter',
+        description: 'Susiha ang gitas-on sa teksto ug i-evaluate kung angay kini para sa homepage, service page, blog post, o product description.',
+      },
     },
   },
   {
@@ -1216,6 +1246,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'bezkoshtovnyi-generator-pidpysu-email',
         title: 'Генератор підпису електронної пошти',
         description: 'Створіть професійний підпис електронної пошти за кілька хвилин. Скопіюйте готовий HTML-код у Gmail або Outlook.',
+      },
+      ceb: {
+        slug: 'libre-nga-email-pirma-generator',
+        title: 'Email signature generator',
+        description: 'Paghimo og propesyonal nga email signature. Isulod ang mga detalye, pagpili og kolor, ug kopyaha ang andam na nga HTML code para sa Gmail o Outlook.',
       },
     },
   },
@@ -1386,6 +1421,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Перевірка контрасту кольорів',
         description: 'Перевірте, чи читається текст на обраному фоні. Інструмент розраховує контраст згідно з WCAG і допоможе обрати правильний колір.',
       },
+      ceb: {
+        slug: 'tigsusi-sa-kontras-sa-kolor',
+        title: 'Tigsusi sa kontras sa kolor',
+        description: 'Susiha ang kontras ug readability sa kolor sa teksto ug background sumala sa WCAG. Gikalkula ang contrast ratio ug nagtabang sa pag-adjust.',
+      },
     },
   },
   {
@@ -1554,6 +1594,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'ekstraktor-koloriv-z-zobrazhennia',
         title: 'Екстрактор кольорів із зображення',
         description: 'Завантажте фото або логотип, і інструмент виділить домінуючі кольори. Скопіюйте коди кольорів одним кліком.',
+      },
+      ceb: {
+        slug: 'tigkuha-sa-kolor-gikan-sa-hulagway',
+        title: 'Tigkuha sa kolor gikan sa hulagway',
+        description: 'Libre nga color extractor. Pag-upload og litrato o logo ug pagkuha og paleta hangtod 12 dominante nga kolor (HEX ug RGB).',
       },
     },
   },
@@ -1724,6 +1769,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Генератор колірних палітр',
         description: 'Оберіть один колір і згенеруйте 9 палітр: монохромна, комплементарна, тріадна та інші.',
       },
+      ceb: {
+        slug: 'generator-sa-paleta-sa-kolor',
+        title: 'Generator sa paleta sa kolor',
+        description: 'Paghimo og color palette gikan sa usa ka base color. Monochromatic, triadic, analogous, complementary, ug uban pa.',
+      },
     },
   },
   {
@@ -1892,6 +1942,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'bezkoshtovnyi-generator-qr-kodu',
         title: 'Безкоштовний генератор QR-коду',
         description: 'Створіть QR-код для вебсайту, vCard, меню або листівки. Експорт у PNG та SVG, без реєстрації, без обмежень.',
+      },
+      ceb: {
+        slug: 'libre-nga-qr-code-generator',
+        title: 'QR code generator',
+        description: 'Paghimo og QR code para sa website, vCard, menu sa restaurant, o flyer. I-export sa PNG ug SVG, walay login, walay limitasyon.',
       },
     },
   },

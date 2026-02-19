@@ -350,6 +350,17 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     contactHref: '/uk/kontakt',
     privacyHref: '/uk/polityka-konfidentsiinosti',
   },
+  ceb: {
+    lang: 'ceb',
+    hreflang: 'ceb',
+    label: 'CEB',
+    name: 'Cebuano',
+    toolsBasePath: '/ceb/mga-himan',
+    toolsIndexHref: '/ceb/mga-himan',
+    aboutHref: '/ceb/mahitungod-kanamo',
+    contactHref: '/ceb/kontaka-kami',
+    privacyHref: '/ceb/palisiya-sa-pribasiya',
+  },
 };
 
 export const SUPPORTED_LOCALES = Object.keys(LOCALE_CONFIG) as Locale[];

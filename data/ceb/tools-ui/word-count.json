@@ -1,0 +1,23 @@
+{
+  "pasteText": "I-paste o i-type ang teksto",
+  "textPlaceholder": "I-paste dinhi ang teksto nga gusto nimong analisahon...",
+  "pageType": "Tipo sa panid",
+  "pageTypeHelper": "Pagpili sa tipo sa panid nga imong gisulatan. Matag tipo adunay lahi nga rekomendasyon sa gitas-on.",
+  "words": "Mga pulong",
+  "charsWithSpaces": "Mga karakter (uban sa espasyo)",
+  "charsWithoutSpaces": "Mga karakter (walay espasyo)",
+  "paragraphs": "Mga parapo",
+  "readingTime": "Oras sa pagbasa",
+  "lengthEvaluation": "Ebalwasyon sa gitas-on",
+  "recommendedRange": "Girekomenda nga sakop",
+  "copyReport": "Kopyaha ang report",
+  "copied": "Nakopya na",
+  "statistics": "Estadistika sa teksto",
+  "noText": "Walay teksto",
+  "empty": "Pagsulod og teksto aron makita ang estadistika.",
+  "tooShort": "Mubo kaayo",
+  "tooLong": "Taas kaayo",
+  "ideal": "Maayo nga gitas-on",
+  "analysisFor": "Analisa para sa",
+  "wordsUnit": "mga pulong"
+}

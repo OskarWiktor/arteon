@@ -1,0 +1,318 @@
+{
+  "toolKey": "wordCounter",
+  "locale": "ceb",
+  "metadata": {
+    "title": "Tigihap sa pulong ug karakter nga libre – susiha ang gitas-on sa teksto",
+    "description": "Ihapa ang mga pulong, karakter, parapo ug oras sa pagbasa sa usa ka segundo. Susiha ang optimal nga gitas-on sa teksto para sa SEO — artikulo, deskripsyon sa produkto, panid sa serbisyo.",
+    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "path": "/ceb/mga-himan/tigihap-sa-pulong-ug-karakter"
+  },
+  "hero": {
+    "title": "Tigihap sa pulong ug karakter uban sa ebalwasyon sa gitas-on",
+    "description": "I-paste ang teksto, pilia ang tipo sa panid, ug ang himan magpakita sa ihap sa mga pulong, karakter, parapo ug mag-evaluate kung angay ba ang gitas-on para sa gihatag nga tipo sa sulod.",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ceb/mga-himan",
+      "label": "Mga himan"
+    },
+    "third": {
+      "href": "/ceb/mga-himan/tigihap-sa-pulong-ug-karakter",
+      "label": "Tigihap sa pulong ug karakter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Libre nga tigihap sa pulong ug karakter online",
+      "alternateName": [
+        "Tigihap sa pulong uban sa ebalwasyon sa gitas-on sa teksto",
+        "Tigihap sa karakter online",
+        "Himan sa pag-ihap sa pulong para sa copywriter",
+        "Kalkulator sa oras sa pagbasa",
+        "Tigihap sa pulong",
+        "Susiha pila ka pulong ang teksto",
+        "Tigihap sa pulong para sa SEO",
+        "Optimal nga gitas-on sa teksto para sa blog post"
+      ],
+      "applicationSubCategory": "TextApplication",
+      "description": "Libre nga tigihap sa pulong ug karakter. Nagsusi sa ihap sa mga pulong, karakter, parapo ug gibanabana nga oras sa pagbasa. Nag-evaluate sa gitas-on sa teksto para sa lahi-lahi nga tipo sa panid: deskripsyon sa produkto, panid sa serbisyo, pangunang panid, landing page, blog post, giya.",
+      "featureList": [
+        "Ihap sa mga pulong",
+        "Ihap sa karakter nga may ug walay espasyo",
+        "Ihap sa mga parapo",
+        "Gibanabana nga oras sa pagbasa",
+        "Ebalwasyon sa gitas-on sa teksto para sa lahi-lahi nga tipo sa panid",
+        "Girekomenda nga sakop para sa: deskripsyon sa produkto, panid sa serbisyo, pangunang panid, landing page, blog post, giya",
+        "Pagkopya sa report ngadto sa clipboard"
+      ]
+    },
+    "howTo": {
+      "name": "Giunsa paggamit sa tigihap sa pulong ug karakter",
+      "description": "Susiha ang gitas-on sa teksto ug i-evaluate kung angay kini para sa partikular nga tipo sa panid.Hibaloi pila ka pulong ang kinahanglan sa deskripsyon sa produkto, panid sa serbisyo, blog post, o giya.",
+      "steps": [
+        {
+          "name": "Pagpili og tipo sa panid",
+          "text": "Pagpili gikan sa dropdown kung unsang tipo sa panid ang gisulatan. Matag tipo adunay lahi-lahi nga girekomenda nga sakop sa ihap sa pulong."
+        },
+        {
+          "name": "Pag-paste sa teksto",
+          "text": "Pag-paste o pag-type sa teksto sa text field. Awtomatiko nga ihapan sa himan ang mga pulong, karakter (may ug walay espasyo), parapo, ug banabanaon ang oras sa pagbasa."
+        },
+        {
+          "name": "Pagsusi sa ebalwasyon",
+          "text": "Tan-awa ang may kolor nga progress bar ug status. Ang berde nagpasabot og maayo nga gitas-on, dalag ubos kaayo, pula taas kaayo."
+        },
+        {
+          "name": "Pagkopya sa report",
+          "text": "Ang Kopyaha ang Report button nagkopya sa summary nga may tanang estadistika ug ebalwasyon sa gitas-on ngadto sa clipboard."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Libre nga tigihap sa pulong — ihapa ug susiha ang gitas-on sa teksto",
+      "html": "<p class=\"text-mid\">Kini nga himan para sa pag-ihap sa pulong nagtugot sa paspas nga pagsusi sa gitas-on sa bisan unsang teksto. I-paste ang sulod ug ihapan sa counter ang mga pulong, karakter, ug parapo. Makita usab kung pila ka minuto ang kinahanglan para basahon ug kung ang gitas-on angay para sa tipo sa panid nga pilion.</p><p class=\"text-mid mt-3\">Matag tipo sa panid adunay lahi-lahi nga katuyoan — ang deskripsyon sa produkto nagtubag sa mga pangutana sa mamimili, ang blog post nagsakop sa usa ka topiko og lawom, ug ang panid sa serbisyo nagpasabot kung unsa ang madawat sa kliyente. Gipakita sa counter ang mga sakop para sa matag usa sa kini nga mga tipo base sa mga pagsusi sa sulod nga maayo og ranggo.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Giunsa paggamit sa tigihap sa pulong ug karakter?",
+      "description": "Ang pagsusi sa gitas-on sa teksto mokaon og ubos sa usa ka minuto:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiListCheck2",
+          "title": "1. Pagpili og tipo sa panid",
+          "description": "Pagpili gikan sa dropdown kung unsang tipo sa panid ang gisulatan. Matag tipo adunay lahi-lahi nga girekomenda nga minimum ug maximum nga ihap sa pulong."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Pag-paste sa teksto",
+          "description": "Pag-paste o pag-type sa teksto sa dako nga field sa tuo. Diha-diha ihapan sa himan ang mga pulong, karakter (may ug walay espasyo), parapo, ug banabanaon ang oras sa pagbasa."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "3. Pagsusi sa ebalwasyon",
+          "description": "Tan-awa ang may kolor nga progress bar ug status. Ang berde nagpasabot og maayo nga gitas-on, dalag ubos kaayo, pula taas kaayo. Sa ubos makita ang mapuslanon nga tip."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Pagkopya sa report",
+          "description": "Ang Kopyaha ang Report button nagkopya sa summary nga may ihap sa pulong, karakter, parapo, oras sa pagbasa, ug ebalwasyon sa gitas-on ngadto sa clipboard."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Unsa ang gisukod sa counter — mga pulong, karakter, oras sa pagbasa",
+      "description": "Gisubay sa counter ang lima ka nag-unang sukod:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiText",
+          "title": "Mga pulong",
+          "description": "Kinatibuk-ang ihap sa mga pulong. Mao kini ang nag-unang indikador sa gitas-on sa teksto."
+        },
+        {
+          "icon": "RiSpaceShipLine",
+          "title": "Mga karakter (may espasyo)",
+          "description": "Tanang karakter lakip ang mga espasyo. Mapuslanon kung adunay character limit ang CMS (pananglitan: mga listahan sa marketplace)."
+        },
+        {
+          "icon": "RiHashtag",
+          "title": "Mga karakter (walay espasyo)",
+          "description": "Mga letra, digit, ug bantas lang. Usahay gikinahanglan sa mga imprenta o para sa pagbayad sa paghubad."
+        },
+        {
+          "icon": "RiParagraph",
+          "title": "Mga parapo",
+          "description": "Pila ang mga bloke sa teksto nga gibulag sa mga blangko nga linya. Nagtabang pagsusi kung maayo ang istruktura sa teksto."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Oras sa pagbasa",
+          "description": "Gipakita sa kalkulator sa oras sa pagbasa kung pila ka minuto ang kinahanglan para basahon ang teksto sa average nga tulin nga 200 ka pulong matag minuto."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Giunsa pag-interpret sa mga resulta",
+      "subtitle": "Mga status sa ebalwasyon",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">Maayo nga gitas-on</span><span class=\"text-mid text-sm!\">Ang teksto anaa sa sulod sa sakop</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Ubos sa sakop</span><span class=\"text-mid text-sm!\">Ang teksto mas mubo kaysa sa kasagaran</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Taas sa sakop</span><span class=\"text-mid text-sm!\">Ang teksto mas taas kaysa sa kasagaran</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Progreso</span><span class=\"text-mid\">1200 / 1200–3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Ang may kolor nga progress bar ug status nagtabang sa paspas nga pagsusi sa gitas-on sa teksto:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Maayo nga gitas-on</strong> (berde) — ang teksto anaa sa sulod sa gibanabana nga sakop para sa napili nga tipo sa panid.</li><li><strong class=\"text-warning-text\">Ubos sa sakop</strong> (dalag) — ang teksto mas mubo kaysa sa kasagaran para sa kini nga tipo sa panid. Kung nagtubag kini sa tanang pangutana sa magbabasa, mahimong maayo ang gitas-on.</li><li><strong class=\"text-error-text\">Taas sa sakop</strong> (pula) — ang teksto mas taas kaysa sa kasagaran. Kung matag parapo nagdugang og bag-ong impormasyon, makatarunganon ang gitas-on.</li></ul><p class=\"text-mid mt-4\">Ang mga sakop gibase sa mga pagsusi sa sulod nga maayo og ranggo sa mga search engine. Kung nagtubag ang teksto sa mga pangutana sa magbabasa, angay ang gitas-on bisan unsa pa ang resulta sa counter.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Pila ka pulong ang kinahanglan sa teksto — optimal nga gitas-on para sa SEO",
+      "html": "<p class=\"text-mid mb-4\">Ang mga sakop sa ubos gibase sa mga pagsusi sa sulod nga maayo og ranggo sa mga search engine. Ang gitas-on sa teksto mismo dili makaapekto sa Google ranking — ang importante kung nagtubag ba ang sulod sa mga pangutana sa magbabasa.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Tipo sa panid</th><th class=\"py-2 pr-4 font-semibold\">Sakop</th><th class=\"py-2 font-semibold\">Kanus-a mas mubo, kanus-a mas taas?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Deskripsyon sa produkto</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 ka pulong</td><td class=\"text-primary-light0 py-2 text-sm\">Simple nga produkto (pananglitan: tasa) — 80–150 ka pulong. Komplikado nga kagamitan (pananglitan: laptop) — 300–400 ka pulong, kay mas daghang pangutana ang mamimili.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Panid sa serbisyo</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 ka pulong</td><td class=\"text-primary-light0 py-2 text-sm\">Lokal nga serbisyo (pananglitan: tubero) — 500–700 ka pulong. B2B serbisyo nga may proseso ug FAQ — 1,200–1,500 ka pulong.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Pangunang panid</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 ka pulong</td><td class=\"text-primary-light0 py-2 text-sm\">Ang pangunang panid naghatud sa nag-unang bili ug naggiya sa mga bisita — ang teksto nagsuporta sa navigation, dili para puli-an ang mga subpage.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landing page</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 ka pulong</td><td class=\"text-primary-light0 py-2 text-sm\">Simple nga alok — 600–1,000 ka pulong. Alok nga nagkinahanglan og pagpasabot sa proseso, variant, ug pagtubag sa mga oposisyon — 1,500–2,500 ka pulong.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blog post</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 ka pulong</td><td class=\"text-primary-light0 py-2 text-sm\">Mubo nga how-to — 1,200–1,500 ka pulong. Komprehensibo nga giya o pagsusi — 2,500–3,000 ka pulong.</td></tr><tr><td class=\"py-2 pr-4\">Giya / pillar page</td><td class=\"py-2 pr-4 whitespace-nowrap\">3000–7000 ka pulong</td><td class=\"text-primary-light0 py-2 text-sm\">Usa ka komprehensibo nga resource nga nagsakop sa topiko gikan sa daghang anggulo. Nag-link sa mga detalyado nga subpage.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Para kang kinsa ang tigihap sa pulong?",
+      "description": "Himan sa pag-ihap sa pulong para sa mga copywriter ug labaw pa — ania kung kinsa ang labing kasagaran naggamit sa counter:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiEditLine",
+          "title": "Mga copywriter ug content creator",
+          "description": "Susiha kung ang teksto anaa sa sulod sa girekomenda nga sakop para sa partikular nga tipo sa panid. Ang SEO word counter nagtabang pagsusi kung igo na ba ang pagkahan-ay sa artikulo."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Mga blogger",
+          "description": "Pagsubay sa gitas-on sa post aron magpabilin nga konsistente ang mga publikasyon. Susiha ang oras sa pagbasa sa wala pa mag-publish."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Mga tag-iya sa tindahan",
+          "description": "Pag-verify sa mga deskripsyon sa produkto batok sa character limit sa mga selling platform (Amazon, eBay, Etsy)."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "Mga SEO specialist",
+          "description": "Pag-evaluate kung ang sulod sa panid adunay optimal nga gitas-on kompara sa mga kakompetensya. Susiha ang ratio sa pulong sa topiko."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Mga estudyante ug akademiko",
+          "description": "Susiha kung natuman sa papel ang gikinahanglan nga limitasyon sa pulong o karakter."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Mga tighubad",
+          "description": "Pag-ihap sa mga karakter nga walay espasyo para sa mga quotation sa paghubad (usa ka kasagaran nga yunit sa pagbayad)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Mga character limit sa mga popular nga platform",
+      "html": "<p class=\"text-mid mb-4\">Ang character counter mapuslanon kung naghimo og sulod para sa mga platform nga may mga limitasyon sa gitas-on:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform / Elemento</th><th class=\"py-2 pr-4 font-semibold\">Character limit</th><th class=\"py-2 font-semibold\">Mga nota</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 ka karakter</td><td class=\"text-primary-light0 py-2 text-sm\">Ang mas taas nga titulo giputol sa search results.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 ka karakter</td><td class=\"text-primary-light0 py-2 text-sm\">Ang description nga makita sa ubos sa link sa search results.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon – product title</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 ka karakter</td><td class=\"text-primary-light0 py-2 text-sm\">Mubo, espesipiko nga titulo nga may labing importante nga keyword.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon – bullet point</td><td class=\"py-2 pr-4 whitespace-nowrap\">500 ka karakter matag usa</td><td class=\"text-primary-light0 py-2 text-sm\">Hangtod 5 ka bullet point nga nagdeskribo sa mga nag-unang kinaiya sa produkto.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – post</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 ka karakter</td><td class=\"text-primary-light0 py-2 text-sm\">Kasagaran nga limitasyon para sa regular nga mga user.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn – post</td><td class=\"py-2 pr-4 whitespace-nowrap\">3,000 ka karakter</td><td class=\"text-primary-light0 py-2 text-sm\">Human sa ~210 ka karakter motungha ang link nga &quot;tan-awa pa&quot;.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Unsa ang espesyal sa tigihap sa pulong ug karakter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Unom ka tipo sa panid nga may girekomenda nga sakop",
+          "description": "Deskripsyon sa produkto, panid sa serbisyo, pangunang panid, landing page, blog post, ug giya — matag tipo adunay kaugalingon nga sakop base sa mga pagsusi."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Lokal nga pagproseso sa browser",
+          "description": "Ang teksto dili gyud gipadala sa bisan unsang server — tanang pagsusi gihimo lokal sa device."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Ebalwasyon sa gitas-on sa teksto",
+          "description": "Dili lang mag-ihap sa mga pulong — makakuha og impormasyon kung angay ang gitas-on para sa napili nga tipo sa panid."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "Mga sakop nga gibase sa SEO",
+          "description": "Ang mga girekomenda nga gitas-on gibase sa mga pagsusi sa sulod nga maayo og ranggo sa mga search engine."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Oras sa pagbasa",
+          "description": "Diha-diha mahibaloan kung pila ka minuto ang kinahanglan sa mga magbabasa aron basahon ang teksto."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Pagkopya sa report",
+          "description": "Ang Kopyaha ang Report button nagkopya sa summary nga may tanang estadistika ug ebalwasyon sa gitas-on ngadto sa clipboard."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Kasagaran pangutanon mahitungod sa tigihap sa pulong ug karakter",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Nakaapekto ba ang gitas-on sa teksto sa Google ranking?",
+          "answer": "Ang gitas-on sa teksto mismo dili ranking factor. Gisusi sa Google kung nagtubag ang sulod sa pangutana sa user ug kung importante kini para nila. Ang mas mubo nga teksto nga komprehensibo nagtubag sa pangutana mahimong maayo og ranggo — ang importante mao ang bili para sa magbabasa. Ang mga sakop sa kini nga himan gibase sa mga pagsusi sa sulod nga maayo og ranggo sa search results.",
+          "answerSchemaText": "Ang gitas-on sa teksto dili direkta nga ranking factor. Gisusi sa Google ang bili sa sulod para sa user."
+        },
+        {
+          "question": "Ngano hilabihan ka lapad ang mga sakop sa pulong?",
+          "answer": "Ang parehas nga tipo sa panid mahimong nagkinahanglan og lahi-lahi nga gitas-on depende sa pagka-komplikado sa topiko. Ang simple nga deskripsyon sa produkto (pananglitan: tasa) mao ang 80–150 ka pulong — materyales, kapasidad, ug gamit lang. Ang deskripsyon sa laptop mao ang 300–400 ka pulong kay nagpangutana ang mga mamimili mahitungod sa processor, memorya, screen, ug baterya.",
+          "answerSchemaText": "Ang kalainan naggikan sa pagka-komplikado sa topiko — ang simple nga produkto nagkinahanglan og mas gamay nga pulong kaysa sa komplikado."
+        },
+        {
+          "question": "Giunsa nako pag-interpret ang \"ubos kaayo\" o \"taas kaayo\"?",
+          "answer": "Gipakita sa ebalwasyon kung asa ang teksto kompara sa kasagaran nga sulod sa maong tipo. Kung ang teksto gimarkahan nga \"ubos kaayo\" apan nagtubag kini sa tanang pangutana sa magbabasa — maayo ang gitas-on. Kung \"taas kaayo\" kini apan matag parapo nagdugang og bag-ong impormasyon — makatarunganon ang gitas-on.",
+          "answerSchemaText": "Gipakita sa ebalwasyon kung asa ang teksto kompara sa kasagaran nga sulod. Kung nagtubag ang teksto sa mga pangutana sa magbabasa, angay ang gitas-on."
+        },
+        {
+          "question": "Giunsa paglihok ang kalkulator sa oras sa pagbasa?",
+          "answer": "Gibahin sa himan ang ihap sa pulong sa 200 — ang average nga tulin sa pagbasa para sa kasagaran nga teksto. Ang teknikal o lisod nga teksto (pananglitan: dokumentasyon, terms of service) mas hinay basahon. Ang gaan nga lifestyle nga artikulo — mas paspas. Ang resulta usa ka gibanabana nga value nga nagtabang bantayan kung unsa ka dugay ang gamiton sa magbabasa sa teksto.",
+          "answerSchemaText": "Ang himan naggamit og average nga tulin sa pagbasa nga 200 ka pulong matag minuto. Kini usa ka gibanabana nga value para sa kasagaran nga teksto."
+        },
+        {
+          "question": "Asa naggikan ang mga girekomenda nga sakop?",
+          "answer": "Ang mga sakop gibase sa mga pagsusi sa sulod nga maayo og ranggo sa mga search engine ug sa mga labing maayo nga praktika sa paghimo og sulod. Gituyo kini nga himuon og lapad kay ang parehas nga tipo sa panid mahimong nagkinahanglan og lahi-lahi nga gitas-on depende sa industriya, pagka-komplikado sa topiko, ug mga panginahanglan sa magbabasa.",
+          "answerSchemaText": "Ang mga sakop gibase sa mga pagsusi sa SEO ug labing maayo nga praktika sa paghimo og sulod."
+        },
+        {
+          "question": "Mahimo ba nako kopyahon ang report nga may mga estadistika?",
+          "answer": "Oo. Sa ubos sa mga estadistika makita ang Kopyaha ang Report button — gikopya niini ang summary nga may ihap sa pulong, karakter, parapo, oras sa pagbasa, ug ebalwasyon sa gitas-on ngadto sa clipboard. Mahimo kini i-paste sa dokumento o ipadala sa mga kauban.",
+          "answerSchemaText": "Oo. I-click ang Kopyaha ang Report button sa ubos sa mga estadistika. Ang summary nga may tanang sukod ug ebalwasyon makopya sa clipboard."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tan-awa ang ubang mga himan"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

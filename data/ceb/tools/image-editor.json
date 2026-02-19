@@ -1,0 +1,355 @@
+{
+  "toolKey": "imageResize",
+  "locale": "ceb",
+  "metadata": {
+    "title": "Libre nga Editor sa Hulagway – Crop ug Resize | Arteon",
+    "description": "I-crop ug i-resize ang mga hulagway para sa social media ug website. Mga andam na nga format, custom nga pixel sizes, ug suporta sa bilog nga avatar.",
+    "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
+    "path": "/ceb/mga-himan/editor-sa-hulagway"
+  },
+  "hero": {
+    "title": "Editor sa hulagway",
+    "description": "I-crop ang hulagway nga perpekto para sa social media o website. Pagpili og andam na nga format o pag-type og custom nga pixel sizes — i-download sa PNG, JPG, o WebP.",
+    "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ceb/mga-himan",
+      "label": "Mga himan"
+    },
+    "third": {
+      "href": "/ceb/mga-himan/editor-sa-hulagway",
+      "label": "Editor sa hulagway"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Editor sa hulagway",
+      "alternateName": ["Image resizer", "Image cropper", "Instagram image size tool", "Facebook image size tool", "JPG sa WebP converter", "Circular profile picture tool"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageEditor",
+      "description": "Libre nga editor sa hulagway para sa pag-resize, pag-crop, ug pag-convert sa format. Mga andam na nga preset para sa Instagram, Facebook, ug LinkedIn. Paghimo og bilog nga avatar. I-export sa JPG, PNG, ug WebP nga may kontrol sa kalidad. Lokal nga pagproseso sa browser.",
+      "featureList": [
+        "Pag-resize sa mga hulagway sa bisan unsang gidak-on",
+        "Pag-crop nga may interactive nga pagpili sa lugar",
+        "Mga andam na nga format para sa Instagram (square post, portrait post, story, reels)",
+        "Mga andam na nga format para sa Facebook (post, page cover)",
+        "Mga andam na nga format para sa LinkedIn (post, profile banner)",
+        "Mga andam na nga format para sa web (OG image, hero, banner, thumbnail)",
+        "Mga porma sa crop: rectangle, square, circle (bilog nga avatar)",
+        "3x3 grid (rule of thirds) nga may pagpili sa kolor",
+        "Crop zoom 100–300%",
+        "Tukma nga posisyon sa crop (X, Y) nga may centering",
+        "Pag-convert sa format: JPG, PNG, WebP",
+        "Kontrol sa kalidad sa compression 60–100%",
+        "Lokal nga pagproseso sa browser",
+        "Libre nga himan, walay kinahanglan nga login"
+      ]
+    },
+    "howTo": {
+      "name": "Giunsa pag-resize ug pag-crop sa hulagway para sa social media",
+      "description": "Giunsa pag-resize sa hulagway para sa Instagram (1080x1080, 1080x1350, story), Facebook, LinkedIn, ug OG image. JPG ngadto sa WebP conversion ug paghimo og bilog nga avatar.",
+      "steps": [
+        {
+          "name": "Pagdugang og hulagway",
+          "text": "I-drag ang file sa gitakda nga lugar o pagpili og hulagway gikan sa device. Mga gisuportahan nga format: JPG, PNG, WebP."
+        },
+        {
+          "name": "Pagpili og gidak-on o preset",
+          "text": "Pag-type og target nga gidak-on sa pixels o pagpili og andam na nga format (pananglitan: Instagram post, Facebook cover, OG image)."
+        },
+        {
+          "name": "Pag-adjust sa crop",
+          "text": "Ibalhin ug i-zoom ang hulagway aron pilion ang labing maayo nga lugar. Ang hayag nga lugar sa preview mao ang eksakto nga ma-save."
+        },
+        {
+          "name": "Pagpili og format ug pag-download",
+          "text": "Pilion ang format sa file (JPG, PNG, o WebP), i-set ang kalidad sa compression, ug i-download ang nahuman na hulagway."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Pag-resize sa mga hulagway — pag-crop, pag-convert, ug pag-compress sa usa ka himan",
+      "html": "<p class=\"text-mid\">Ang editor sa hulagway nagtugot sa paspas nga pag-adapt sa mga hulagway sa partikular nga gidak-on. Mahimong i-resize ang hulagway sa bisan unsang gidak-on sa pixel, mopili og andam na nga format para sa social media, o mag-crop og seksyon sa hulagway nga may tukma nga pag-frame.</p><p class=\"text-mid mt-3\">Gawas sa pag-resize, nagtanyag ang himan og pag-convert sa format (JPG, PNG, WebP), paghimo og bilog nga avatar, ug kontrol sa kalidad sa compression.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Giunsa pag-resize sa hulagway",
+      "description": "Ang pag-edit sa hulagway mokaon lang og pipila ka segundo:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Pagdugang og hulagway",
+          "description": "I-drag ang file sa gitakda nga lugar o pagpili og hulagway gikan sa device. Mga gisuportahan nga format: JPG, PNG, WebP."
+        },
+        {
+          "title": "2. Pag-set sa gidak-on",
+          "description": "Pag-type og gidak-on sa pixels o pagpili og andam na nga format (Instagram, Facebook, YouTube, LinkedIn, OG image)."
+        },
+        {
+          "title": "3. Pag-download",
+          "description": "Ayoha ang crop, pilion ang format sa file (JPG, PNG, WebP), i-set ang kalidad, ug i-download ang nahuman na hulagway."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Giunsa pagdugang og hulagway",
+      "html": "<p class=\"text-mid\">Nagdawat ang himan og mga hulagway sa JPG, PNG, ug WebP nga mga format. Mahimong magdugang og hulagway sa duha ka paagi:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Drag and drop</strong> — pagkuha og file gikan sa folder sa computer ug i-drop sa lugar sa pag-upload sa file (ang lugar nga may dashed nga border).</li><li><strong>Pagpili gikan sa device</strong> — ang pag-click sa lugar sa pag-upload sa file magbukas og dialog sa pagpili sa file.</li></ul><p class=\"text-mid mt-3\">Human makadugang og hulagway, awtomatiko nga gibasa sa himan ang orihinal nga gidak-on niini ug nagpakita og preview. Mahimo na magpadayon sa mga setting sa crop.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Pag-set sa target nga gidak-on",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Gidak-on sa px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Mga andam na nga format</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Gilapdon (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly></div><div><label class=\"text-[14px]! font-medium\">Gitas-on (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span>Padayona ang proporsyon (auto ikaduhang gidak-on)</span></label></div></div>",
+      "html": "<p class=\"text-mid\">Sa tab nga <strong>Gidak-on sa px</strong>, mano-mano nga gisulod ang gilapdon ug gitas-on. Ang opsyon nga <strong>Padayona ang proporsyon</strong> awtomatiko nga nag-adjust sa ikaduhang gidak-on.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Mga gidak-on sa hulagway para sa Instagram, Facebook, ug LinkedIn",
+      "html": "<p class=\"text-mid mb-4\">Gilakip sa himan ang mga andam na nga format nga may optimal nga gidak-on para sa labing popular nga mga platform:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform</th><th class=\"py-2 pr-4 font-semibold\">Format</th><th class=\"py-2 pr-4 font-semibold\">Gidak-on (px)</th><th class=\"py-2 font-semibold\">Ratio</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Square post</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Portrait post</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Post</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Page cover</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Post</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Profile banner</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG image</td><td class=\"py-2 pr-4\">Link sharing</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mga andam na nga format — hain ang pilion?",
+      "description": "Matag format nagtubag sa mga partikular nga kinahanglanon sa platform o gamit:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInstagramLine",
+          "title": "Instagram — square post (1080×1080)",
+          "description": "Kasagaran nga format sa post sa Instagram. 1:1 ratio. Nindot sa feed ug motan-aw og maayo sa telepono ug desktop."
+        },
+        {
+          "icon": "RiInstagramLine",
+          "title": "Instagram — portrait post (1080×1350)",
+          "description": "Bertikal nga format sa post (4:5 ratio). Mas dako nga espasyo sa feed kaysa sa square, nga mahimong magpataas sa engagement."
+        },
+        {
+          "icon": "RiInstagramLine",
+          "title": "Instagram — story / reels (1080×1920)",
+          "description": "Full-screen bertikal nga format (9:16 ratio). Gigamit sa mga story ug reels. Gipuno ang tibuok screen sa telepono."
+        },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook — post (1200×630)",
+          "description": "Optimal nga format para sa mga Facebook post ug shared link. Ratio nga duol sa 16:9."
+        },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook — page cover (820×360)",
+          "description": "Background nga litrato para sa Facebook business page. Lapad, panoramic nga format — mahimong magkalahi ang crop sa lahi-lahi nga device."
+        },
+        {
+          "icon": "RiLinkedinLine",
+          "title": "LinkedIn — post (1200×1200)",
+          "description": "Square nga format para sa mga LinkedIn post. Nindot sa feed ug sa mga mobile device."
+        },
+        {
+          "icon": "RiLinkedinLine",
+          "title": "LinkedIn — profile banner (1584×396)",
+          "description": "Background nga hulagway para sa personal o company nga LinkedIn profile. Hilabihan ka lapad nga format — i-center ang nag-unang elemento sa crop."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "OG image (1200×630)",
+          "description": "Graphic nga gipakita kung nagbahagi og link sa social media (Open Graph). Standard para sa Facebook, Twitter, LinkedIn, ug ubang platform."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Graphic sa artikulo (1600×900)",
+          "description": "Lapad nga format nga angay para sa mga header sa blog article. 16:9 ratio nga nindot sa mga panid nga daghang teksto."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Banner sa website (1920×600)",
+          "description": "Hilabihan ka lapad nga format para sa mga banner sa website. Naglihok isip background sa ubos sa mga header o sa mga seksyon sa alok."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Thumbnail sa artikulo (800×600)",
+          "description": "Mas gamay nga format para sa mga thumbnail sa listahan sa artikulo, product carousel, o mga preview sa search result."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Hero section (1920×1080)",
+          "description": "Full HD full-screen nga format. Gigamit isip nag-unang background sa seksyon sa mga homepage o offer page."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Giunsa pag-crop sa hulagway",
+      "html": "<p class=\"text-mid\">Human i-set ang target nga gidak-on, motungha ang interactive nga crop area sa preview. Ang hayag nga bahin sa hulagway mao ang seksyon nga ma-save — ang nahabilin naka-dim.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Pag-drag sa crop</p><p class=\"text-mid mt-1\">Guniti ang hayag nga lugar ug i-drag sa bisan unsang bahin sa hulagway. Sa ingon nga paagi pilion kung unsang seksyon sa litrato ang i-export.</p></div><div><p class=\"text-dark font-semibold\">Pag-resize gamit ang mga handle</p><p class=\"text-mid mt-1\">Sa mga eskina sa crop area adunay gagmay nga parisukat (handle). Ang pag-drag niini nagbag-o sa gidak-on sa crop — mahimong padak-on o gamay-on samtang gipadayon ang napili nga proporsyon.</p></div><div><p class=\"text-dark font-semibold\">Zoom</p><p class=\"text-mid mt-1\">Sa tab nga <strong>Zoom</strong> makita ang slider para i-adjust ang zoom (100–300%). Ang mas taas nga value nagpasabot nga ang crop nagsakop sa mas gamay nga seksyon sa orihinal nga hulagway — mapuslanon kung gusto nimo putlon ang usa ka partikular nga detalye.</p></div><div><p class=\"text-dark font-semibold\">Tukma nga kontrol sa posisyon</p><p class=\"text-mid mt-1\">Sa tab nga <strong>Posisyon</strong> mahimong i-set ang eksakto nga posisyon sa crop sa porsyento (0–100% para sa X ug Y axis). Ang mga centering button nagtugot sa paspas nga pagbutang sa crop sa tunga sa hulagway.</p></div></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Mga porma sa crop",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Rectangle</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Square</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Bilog</span></div></div>",
+      "html": "<p class=\"text-mid\">Sa tab nga <strong>Mga Porma sa Crop</strong>, pilion ang porma sa i-export nga hulagway: rectangle (nga may napili nga proporsyon), square (gipugos ang 1:1), o bilog (nga may transparent nga background).</p><p class=\"text-mid mt-3\">Ang porma nga bilog naghimo og round nga avatar nga may transparent nga background sa gawas sa bilog. Awtomatiko nga gibalhin sa himan ang format sa PNG o WebP, kay wala gisuportahan sa JPG ang transparency.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "3×3 grid — para unsa kini?",
+      "html": "<p class=\"text-mid\">Ang grid nga nagbahin sa hulagway sa 9 ka parehas nga bahin makita sa crop area. Kini usa ka visualization sa <strong>rule of thirds</strong> — usa sa mga nag-unang prinsipyo sa photographic composition.</p><p class=\"text-mid mt-3\">Ang lagda nagsulti nga ang labing importante nga elemento sa litrato (nawong, produkto, punto sa interes) kinahanglan ibutang sa mga intersection sa mga linya sa grid o uban niini. Ang ingon nga komposisyon mas dynamic ug madanihon sa mata kaysa sa pagbutang sa subject og eksakto sa tunga.</p><p class=\"text-mid mt-3\">Sa tab nga <strong>Kolor sa grid</strong> mahimong usbon ang kolor sa linya (berde, puti, itom, pula, dalag) aron klaro nga makita ang grid sa lahi-lahi nga hulagway.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTabs",
+      "title": "Export — unsang format ang pilion?",
+      "tabs": [
+        {
+          "title": "JPG",
+          "icon": "RiImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Ang labing popular nga format para sa mga litrato. Maayo nga compression samtang gipadayon ang biswal nga kalidad. Wala gisuportahan ang transparency — ang background kanunay may kolor.</p><p class=\"text-mid\">Maayo nga kapilian para sa mga litrato sa produkto, portrait, ug kadaghanan sa graphics sa website. Gikontrol sa slider sa kalidad (60–100%) ang compression.</p></div>"
+        },
+        {
+          "title": "PNG",
+          "icon": "RiFileImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Lossless nga format — gipadayon ang tibuok kalidad, apan mas dako ang mga file. Gisuportahan ang transparency (kinahanglan para sa porma nga bilog).</p><p class=\"text-mid\">Maayo nga kapilian para sa graphics nga may teksto, icon, ug mga hulagway nga nagkinahanglan og klaro nga kilid.</p></div>"
+        },
+        {
+          "title": "WebP",
+          "icon": "RiCropLine",
+          "html": "<div><p class=\"text-mid mb-3\">Moderno nga format nga nagtipon sa mga bentaha sa JPG ug PNG — gamay nga file, maayo nga kalidad, suporta sa transparency. Gisuportahan sa tanang moderno nga browser.</p><p class=\"text-mid\">Girekomenda para sa mga website — ang mas gamay nga file nagpasabot og mas paspas nga pag-load.</p></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mga aspect ratio — unsa ang buot ipasabot niini?",
+      "description": "Ang aspect ratio mao ang relasyon tali sa gilapdon ug gitas-on sa hulagway. Gisulat isip duha ka numero nga gibulag sa colon:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "1:1 (square)",
+          "description": "Parehas ang gilapdon ug gitas-on. Instagram square post, profile picture, icon."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "4:5 (portrait)",
+          "description": "Gamay nga bertikal nga format. Instagram portrait post — mas dako nga espasyo sa feed kaysa sa square."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "3:2 (classic)",
+          "description": "Tradisyonal nga proporsyon sa analog photography. Daghang digital camera naggamit usab niini nga format."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "16:9 (widescreen)",
+          "description": "Standard nga HD video, presentasyon, ug format sa monitor. YouTube, Facebook video, mga banner sa website."
+        },
+        {
+          "icon": "RiInstagramLine",
+          "title": "9:16 (vertical full-screen)",
+          "description": "Gibaliktad nga 16:9 — bertikal nga format nga nagpuno sa tibuok screen sa telepono. Instagram Stories, TikTok, YouTube Shorts."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Kasagaran pangutanon mahitungod sa editor sa hulagway",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Makaya ba sa editor ang hilabihan ka dako nga hulagway?",
+          "answer": "Oo, bisan tuod mahimong hinay ang pagproseso para sa mga hulagway nga labaw sa 4000×4000 pixel — depende kini sa gahum sa device ug available nga memorya sa browser. Tanang pagproseso gihimo lokal, nga walay pagpadala sa mga file sa server.",
+          "answerSchemaText": "Oo. Mahimong hinay ang pagproseso sa labaw sa 4000×4000 px. Tanang pagproseso lokal."
+        },
+        {
+          "question": "Unsang export format ang pilion — JPG, PNG, o WebP?",
+          "answer": "Ang JPG maayo nga kapilian para sa mga litrato nga may daghang kolor ug gradient — gamay ang mga file nga may maayo nga kalidad. Gipadayon sa PNG ang labing taas nga kalidad ug gisuportahan ang transparency (pananglitan: bilog nga avatar). Gitipon sa WebP ang mga bentaha sa duha — gamay nga file nga may taas nga kalidad ug suporta sa transparency.",
+          "answerSchemaText": "JPG para sa mga litrato, PNG para sa transparency, gitipon sa WebP ang gamay nga file nga may taas nga kalidad."
+        },
+        {
+          "question": "Giunsa paghimo og bilog nga profile picture?",
+          "answer": "Sa tab nga Mga Porma sa Crop, pilion ang opsyon nga Bilog. Awtomatiko nga mobalhin ang himan sa format sa PNG o WebP (wala gisuportahan sa JPG ang transparency). Ang lugar sa gawas sa bilog mahimong transparent.",
+          "answerSchemaText": "Pilion ang Bilog sa tab nga Mga Porma sa Crop. Ang lugar sa gawas sa bilog transparent."
+        },
+        {
+          "question": "Unsa ang mga gidak-on sa hulagway para sa Instagram?",
+          "answer": "Gisuportahan sa Instagram ang tulo ka nag-unang format: square post (1080×1080 px, 1:1 ratio), portrait post (1080×1350 px, 4:5 ratio), ug story/reels (1080×1920 px, 9:16 ratio). Ang himan adunay mga andam na nga format para sa matag usa niini nga mga gidak-on.",
+          "answerSchemaText": "Square post: 1080×1080 px, portrait post: 1080×1350 px, story/reels: 1080×1920 px."
+        },
+        {
+          "question": "Giunsa paglihok sa slider sa kalidad?",
+          "answer": "Gikontrol sa slider sa kalidad (60–100%) ang lebel sa compression para sa JPG ug WebP nga mga format. Ang mas taas nga value nagpasabot og mas maayo nga kalidad sa hulagway apan mas dako nga file. Para sa kadaghanan sa gamit sa social media, ang optimal nga value mao ang 70–85%.",
+          "answerSchemaText": "Gikontrol sa slider ang JPG ug WebP compression. 70–85% ang optimal para sa social media."
+        },
+        {
+          "question": "Ngano wala available ang JPG format sa porma nga bilog?",
+          "answer": "Wala gisuportahan sa JPG format ang transparency. Ang porma nga bilog nagkinahanglan og transparent nga background sa gawas sa bilog, mao nga awtomatiko nga gilimitahan sa himan ang kapilian sa PNG o WebP — mga format nga may alpha channel.",
+          "answerSchemaText": "Wala gisuportahan sa JPG ang transparency. Ang porma nga bilog nagkinahanglan og PNG o WebP."
+        },
+        {
+          "question": "Unsa ang buot ipasabot sa mga aspect ratio sama sa 4:5 o 16:9?",
+          "answer": "Gitino sa mga aspect ratio ang relasyon tali sa gilapdon ug gitas-on sa hulagway. Pananglitan, ang 4:5 nagpasabot nga ang gilapdon 4 ka bahin ug ang gitas-on 5 ka bahin. Ang 16:9 mao ang kasagaran nga ratio para sa mga pelikula ug presentasyon. Naggamit ang Instagram portrait post og 4:5, samtang ang story ug reels naggamit og 9:16.",
+          "answerSchemaText": "4:5 = gilapdon 4 ka bahin, gitas-on 5 ka bahin. 16:9 = standard widescreen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tan-awa ang ubang mga himan"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

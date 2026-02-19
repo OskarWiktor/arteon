@@ -32,5 +32,6 @@ import ha from '@/data/ha/tools-ui/color-palette.json';
 import yo from '@/data/yo/tools-ui/color-palette.json';
 import af from '@/data/af/tools-ui/color-palette.json';
 import uk from '@/data/uk/tools-ui/color-palette.json';
+import ceb from '@/data/ceb/tools-ui/color-palette.json';
 
-export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, id, vi, tr, tl, sw, ms, cs, sv, sq, da, no, fi, sk, hr, lt, sl, el, bg, ha, yo, af, uk } as const satisfies Record<Locale, unknown>;
+export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, id, vi, tr, tl, sw, ms, cs, sv, sq, da, no, fi, sk, hr, lt, sl, el, bg, ha, yo, af, uk, ceb } as const satisfies Record<Locale, unknown>;

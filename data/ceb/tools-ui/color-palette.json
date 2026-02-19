@@ -1,0 +1,52 @@
+{
+  "selectBaseColor": "Pagpili og base nga kolor",
+  "updateColor": "I-update ang kolor",
+  "randomColor": "Random nga kolor",
+  "currentBaseColor": "Kasamtangan nga base nga kolor",
+  "baseColorHelper": "Sa kini nga kolor gibase ang tanan nga paleta sa ubos.",
+  "colorPreview": "Preview sa kolor",
+  "copied": "Nakopya na",
+  "copy": "Kopyaha",
+  "generatedPalettes": "Mga nahimo nga paleta sa kolor",
+  "colorReadError": "Wala mabasahan ang kolor. Siguruha nga naggamit ka sa format nga",
+  "example": "pananglitan:",
+  "enterValidColor": "Pagsulod og husto nga HEX kolor aron makahimo og mga paleta. Tanan nga kalkulasyon gihimo lokal sa imong browser.",
+  "palettes": {
+    "monochromatic": {
+      "label": "Monochromatic nga paleta",
+      "description": "Tanan nga kolor adunay parehas nga tono (H), ug nagkalahi lang sa kahayag (L) sa HSL nga espasyo sa kolor."
+    },
+    "analogous": {
+      "label": "Analogous nga paleta",
+      "description": "Mga kolor nga parehas og tono — gikan sa mga -30° hangtod +30° palibot sa base nga kolor sa klasiko nga color wheel (pananglitan: Itten)."
+    },
+    "complementary": {
+      "label": "Complementary nga paleta",
+      "description": "Ang base nga kolor ug ang iyang kapareha nga gibalhin og 180° sa color wheel — usa sa mga pundasyon nga kontras sa kolor nga gihulagway ni Johannes Itten."
+    },
+    "triadic": {
+      "label": "Triadic nga paleta",
+      "description": "Tulo ka tono nga may 120° nga gilay-on sa color wheel (mga tumoy sa equilateral triangle) — geometry nga sagad gamiton sa branding ug mga disenyo nga giinspirar sa Bauhaus."
+    },
+    "splitComplementary": {
+      "label": "Split-complementary nga paleta",
+      "description": "Lahi nga bersyon sa complementary paleta — imbis usa ka kapareha (180°), naggamit og duha ka kolor nga gibalhin og mga ±30° gikan sa kapareha, nga nagpamenos sa biswal nga tensyon samtang nagmantener sa kusog nga kontras."
+    },
+    "softPastel": {
+      "label": "Pastel nga paleta",
+      "description": "Parehas nga tono nga may giubos nga saturation ug gipataas nga kahayag — pagbalhin padulong sa tunga ug ibabaw sa HSL nga espasyo, nga naghatag og humok ug malumo nga mga kolor."
+    },
+    "deepDark": {
+      "label": "Dark nga paleta",
+      "description": "Parehas nga kolor nga may taas nga saturation (S) ug ubos nga kahayag (L) — pagbalhin paubos sa kahayag nga axis, nga naghatag og lawom nga mga kolor para sa dark mode ug kusog nga mga accent."
+    },
+    "materialTonal": {
+      "label": "Tonal nga paleta (giinspirar sa Material Design)",
+      "description": "Pipila ka lakang sa kahayag sa usa ka tono — nagkalahi nga L ug tunga-tunga nga S, susama sa tonal ranges sa Material Design guidelines (pananglitan: 50–900)."
+    },
+    "appleMinimal": {
+      "label": "Minimalist nga paleta (giinspirar sa Apple)",
+      "description": "Usa ka kusog nga accent sa kolor ug pipila ka klaro kaayo ug humok nga neutral tones — layout nga tipikal sa mga interface nga adunay daghang white space ug hinay-hinay nga mga anino."
+    }
+  }
+}

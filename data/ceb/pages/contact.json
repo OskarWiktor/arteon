@@ -1,0 +1,28 @@
+{
+  "slug": "kontaka-kami",
+  "metadata": {
+    "title": "Kontaka ang Arteon – Suporta ug Feedback sa mga Himan",
+    "description": "Kontaka ang team sa Arteon. Mag-report og bug, magsugyot og bag-ong himan, o mangutana mahitungod sa among mga libre nga himan para sa hulagway, SEO, kolor."
+  },
+  "hero": {
+    "title": "Kontaka ang team sa Arteon",
+    "description": "Mag-report og bug, magsugyot og bag-ong himan, o mangutana — motubag kami sulod sa usa ka adlaw sa trabaho"
+  },
+  "intro": {
+    "title": "Adunay pangutana o sugyot?",
+    "textBefore": "Malipay kami nga madungog ang imong feedback mahitungod sa among mga himan. Kung nakakita ka og bug, adunay ideya para sa bag-ong himan, o nagkinahanglan og tabang — sulati kami sa",
+    "textAfter": ". Motubag kami sulod sa usa ka adlaw sa trabaho."
+  },
+  "formTitle": "Pagpadala og mensahe",
+  "details": {
+    "title": "Impormasyon sa pagkontak",
+    "emailLabel": "Email",
+    "hoursLabel": "Oras sa trabaho",
+    "hoursValue": "Lunes – Biyernes: 8:00 – 16:00 (CET)"
+  },
+  "cta": {
+    "title": "Balik sa mga himan",
+    "description": "10 libre nga himan para sa pagtrabaho sa hulagway, teksto, ug kolor",
+    "btnOne": "Mga himan"
+  }
+}

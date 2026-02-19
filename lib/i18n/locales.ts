@@ -34,6 +34,7 @@ import haDict from '@/data/ha/dictionary.json';
 import yoDict from '@/data/yo/dictionary.json';
 import afDict from '@/data/af/dictionary.json';
 import ukDict from '@/data/uk/dictionary.json';
+import cebDict from '@/data/ceb/dictionary.json';
 
 const dicts = {
   pl: plDict,
@@ -68,6 +69,7 @@ const dicts = {
   yo: yoDict,
   af: afDict,
   uk: ukDict,
+  ceb: cebDict,
 } as const;
 
 export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
@@ -422,6 +424,17 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/uk/pro-nas',
     contactHref: '/uk/kontakt',
     privacyHref: '/uk/polityka-konfidentsiinosti',
+  },
+  ceb: {
+    lang: 'ceb',
+    hreflang: 'ceb',
+    label: 'CEB',
+    name: 'Cebuano',
+    toolsBasePath: '/ceb/mga-himan',
+    toolsIndexHref: '/ceb/mga-himan',
+    aboutHref: '/ceb/mahitungod-kanamo',
+    contactHref: '/ceb/kontaka-kami',
+    privacyHref: '/ceb/palisiya-sa-pribasiya',
   },
 };
 

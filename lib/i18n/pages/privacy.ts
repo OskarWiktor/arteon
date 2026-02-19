@@ -44,6 +44,7 @@ import ha from '@/data/ha/pages/privacy.json';
 import yo from '@/data/yo/pages/privacy.json';
 import af from '@/data/af/pages/privacy.json';
 import uk from '@/data/uk/pages/privacy.json';
+import ceb from '@/data/ceb/pages/privacy.json';
 
 const PRIVACY_META: Partial<Record<Locale, PrivacyPageMeta>> = {
   en,
@@ -77,6 +78,7 @@ const PRIVACY_META: Partial<Record<Locale, PrivacyPageMeta>> = {
   yo,
   af,
   uk,
+  ceb,
 };
 
 // ---------------------------------------------------------------------------

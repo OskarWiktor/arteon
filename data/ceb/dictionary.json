@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "mainNavigation": "Nag-unang nabigasyon",
+    "logoAlt": "Arteon - logo sa kompanya",
+    "closeMenu": "Sirhi ang menu",
+    "openMenu": "Ablihi ang menu",
+    "closeToolsList": "Sirhi ang lista sa mga himan",
+    "openToolsList": "Ablihi ang lista sa mga himan",
+    "toolsLabel": "Mga Himan",
+    "mobileMenu": "Mobile nga menu",
+    "aboutLabel": "Mahitungod kanamo",
+    "contactLabel": "Kontaka kami"
+  },
+  "footer": {
+    "copyright": "Tanan nga katungod gitagana.",
+    "description": "Naghimo kami og mga proyekto para sa mga kompanyang Polako sa tibuok kalibutan — nakabase sa Małopolska, duol sa Kraków.",
+    "companyDataLabel": "Datos sa kompanya ug lokasyon",
+    "toolsLabel": "Mga Himan",
+    "legalLabel": "Mga dokumento ug mga setting",
+    "cookieSettingsLabel": "Mga setting sa cookie"
+  },
+  "desktopOnly": {
+    "title": "Kini nga himan nagkinahanglan og mas dako nga screen",
+    "description": "Aron komportable nga magamit kini nga himan, ablihi kini sa laptop, desktop computer, o tablet sa pahigda nga posisyon.",
+    "tipTitle": "Tip",
+    "tipText": "Kung naggamit ka og tablet, ibalhin kini sa pahigda nga mode — kung igo na ang gilapdon sa window, awtomatiko nga mag-load ang himan."
+  },
+  "cookie": {
+    "title": "Mga cookie ug pagkapribado",
+    "description": "Naggamit kami og mga cookie aron husto nga molihok ang site, mag-analisa sa trapiko, ug magpakita og mga ad. Dugang pa sa among",
+    "setPreferences": "I-set ang mga kagustuhan",
+    "privacyPolicy": "Palisiya sa pagkapribado",
+    "privacyPolicyHref": "/ceb/palisiya-sa-pribasiya",
+    "reject": "Balibari tanan",
+    "settings": "Mga setting",
+    "accept": "Dawata tanan",
+    "panelTitle": "Mga kagustuhan sa pagkapribado",
+    "panelDescription": "Mga setting sa pagtugot para sa pagproseso sa datos.",
+    "categoriesLegend": "Mga kategorya",
+    "essentialTitle": "Gikinahanglan",
+    "essentialDescription": "Kung wala kini, dili molihok ang site. Wala kini nagkolekta og datos para sa marketing.",
+    "essentialStatus": "Kanunay aktibo",
+    "analyticsTitle": "Analytics (GA4)",
+    "analyticsDescription": "Estadistika sa mga pagbisita. Gi-enable ang Google Analytics 4 human sa imong pagtugot.",
+    "analyticsLabel": "I-enable ang GA4 analytics",
+    "adsTitle": "Mga ad (Google AdSense)",
+    "adsDescription": "Personalized nga mga ad base sa imong mga interes.",
+    "adsLabel": "I-enable ang personalized nga mga ad",
+    "changeDecision": "Mahimo nimong usbon ang imong desisyon bisan unsang orasa",
+    "save": "I-save"
+  },
+  "skipToContent": "Lakaw ngadto sa sulod",
+  "legal": [
+    {
+      "key": "privacy",
+      "href": "/ceb/palisiya-sa-pribasiya",
+      "label": "Palisiya sa pagkapribado"
+    }
+  ],
+  "breadcrumbs": {
+    "home": "Pangunang panid",
+    "ariaLabel": "agianan sa nabigasyon"
+  },
+  "contactForm": {
+    "nameLabel": "Ngalan ug apelyido",
+    "namePlaceholder": "Juan dela Cruz",
+    "emailLabel": "Email",
+    "emailPlaceholder": "juan.delacruz@gmail.com",
+    "subjectLabel": "Hilisgutan",
+    "subjectPlaceholder": "pananglitan: Website | Tindahan | Social media | Logo",
+    "messageLabel": "Mensahe",
+    "messagePlaceholder": "Aduna koy negosyo nga nagdumala sa... gusto nakong maghimo og...",
+    "send": "Ipadala",
+    "error": "Adunay nahitabo nga sayop. Susiha ang imong datos ug sulayi pag-usab.",
+    "success": "Napadala na ang mensahe! Tubagon ka namo sa labing madali."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Mga libre nga himan sa web",
+    "seeAllTools": "Tan-awa tanan nga himan",
+    "carouselLabel": "Carousel sa mga himan",
+    "scrollLeft": "I-scroll pakawala",
+    "scrollRight": "I-scroll pakuo",
+    "carouselNavigation": "Nabigasyon sa carousel",
+    "goToSlide": "Adto sa slide",
+    "of": "sa",
+    "slide": "Slide",
+    "tool": "Himan",
+    "openTool": "Ablihi ang himan"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Ibalhin sa Cebuano",
+    "toggleLabel": "Ilisan ang pinulongan",
+    "chooseLabel": "Pagpili og pinulongan",
+    "popularLabel": "Popular",
+    "otherLabel": "Uban pa",
+    "closeModalLabel": "Sirhi"
+  },
+  "mobileNav": {
+    "close": "Sirhi",
+    "services": "Mga serbisyo",
+    "contact": "Kontaka kami"
+  },
+  "infoBanner": {
+    "text": "Na-update ang generator sa email signature – tan-awa ang mga bag-ong feature",
+    "linkText": "mga himan"
+  }
+}

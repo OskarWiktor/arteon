@@ -1,0 +1,314 @@
+{
+  "toolKey": "paletteExtractor",
+  "locale": "ceb",
+  "metadata": {
+    "title": "Tigkuha sa kolor gikan sa hulagway nga libre – paleta gikan sa litrato",
+    "description": "Pag-upload og litrato o logo ug pagkuha og paleta hangtod 12 ka dominante nga kolor uban sa HEX ug RGB code. Angay para sa UI, branding ug social media.",
+    "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
+    "path": "/ceb/mga-himan/tigkuha-sa-kolor-gikan-sa-hulagway"
+  },
+  "hero": {
+    "title": "Tigkuha sa kolor gikan sa hulagway",
+    "description": "Pag-upload og litrato, logo o graphic, ug ang himan mokuha og hangtod 12 ka dominante nga kolor uban sa HEX ug RGB code. Ang pagsusi gihimo lokal sa browser.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ceb/mga-himan",
+      "label": "Mga himan"
+    },
+    "third": {
+      "href": "/ceb/mga-himan/tigkuha-sa-kolor-gikan-sa-hulagway",
+      "label": "Tigkuha sa kolor gikan sa hulagway"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Tigkuha sa kolor gikan sa hulagway online — libre nga generator sa paleta",
+      "alternateName": "Pagkuha og paleta sa kolor gikan sa litrato o logo",
+      "applicationSubCategory": "ColorExtractor",
+      "description": "Libre nga tigkuha sa kolor gikan sa hulagway online. Pag-upload og litrato, logo o graphic ug pagkuha og paleta hangtod 12 ka dominante nga kolor uban sa HEX ug RGB code. Ang pagproseso gihimo sa browser — walay file gipadala sa server.",
+      "featureList": [
+        "Awtomatik nga pagkuha hangtod 12 ka dominante nga kolor",
+        "Pagsusi sa mga litrato, logo ug vector graphic",
+        "Mga color code sa HEX ug RGB format",
+        "Pagkopya sa color code ngadto sa clipboard",
+        "Suporta sa PNG, JPG, ug SVG file",
+        "Gipasagdan ang mga transparent pixel sa PNG file",
+        "Lokal nga pagproseso sa browser — ang hulagway dili gipadala sa server"
+      ]
+    },
+    "howTo": {
+      "name": "Giunsa pagkuha og mga kolor gikan sa litrato o hulagway",
+      "description": "Giunsa pagkuha og dominante nga mga kolor gikan sa litrato o logo. Pag-upload og hulagway sa PNG, JPG, o SVG format, ug ang himan maghimo og paleta hangtod 12 ka kolor uban sa HEX code.",
+      "steps": [
+        {
+          "name": "Pagdugang og hulagway",
+          "text": "I-drag ang file ngadto sa gimarkahan nga lugar o pagpili og hulagway gikan sa device. Gisuportahan nga format: PNG, JPG, ug SVG."
+        },
+        {
+          "name": "Paghulat sa pagsusi",
+          "text": "Awtomatiko nga susihon sa himan ang hulagway ug kuhaon ang mga dominante nga kolor."
+        },
+        {
+          "name": "Kopyaha ang mga kolor",
+          "text": "Tupad sa matag kolor makita ang copy button — ang HEX code makopya ngadto sa system clipboard."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Ngano kinahanglan mokuha og mga kolor gikan sa hulagway?",
+      "html": "<p class=\"text-mid mb-4\">Matag litrato, logo o graphic adunay mga kolor nga mahimong gamiton isip andam na nga paleta sa kolor. Gisusi sa extractor ang hulagway ug gipakita kung unsang mga kolor ang nagdominar — uban sa HEX code ug RGB value nga andam na i-paste sa proyekto.</p><p class=\"text-mid mb-4\">Sa praktika, nagpasabot kini nga imbis mano-mano nga mag-sample og mga kolor sa graphics application (pixel by pixel), mag-upload lang og usa ka hulagway ug makakuha og organisado nga lista hangtod 12 ka kolor. Mapuslanon kini sa pagpili og mga kolor para sa website, paghimo og magkahaum nga social media graphic, o pagtukod og biswal nga identidad gikan sa naa na nga materyales.</p><p class=\"text-mid\">Ang tibuok pagsusi gihimo lokal sa browser — ang hulagway dili gipadala sa bisan unsang server.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Giunsa paggamit sa tigkuha sa kolor gikan sa hulagway?",
+      "description": "Ang tibuok proseso mokaon lang og pipila ka segundo:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Pag-upload og hulagway",
+          "description": "I-drag ang file ngadto sa gimarkahan nga lugar o pilion gikan sa device. Gisuportahan nga format: PNG, JPG, ug SVG."
+        },
+        {
+          "title": "2. Paghulat sa pagsusi",
+          "description": "Awtomatiko nga susihon sa himan ang hulagway ug kuhaon ang hangtod 12 ka dominante nga kolor."
+        },
+        {
+          "title": "3. Kopyaha ang gikinahanglan nga mga kolor",
+          "description": "Tupad sa matag kolor adunay copy button — ang HEX o RGB code moadto sa clipboard ug mahimo dayon i-paste sa proyekto."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Unsa ang hitsura sa nakuha nga paleta sa kolor?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Pananglitan nga mga kolor nga nakuha gikan sa hulagway sa kinaiyahan</p></div>",
+      "html": "<p class=\"text-mid mb-4\">Human sa pag-upload og hulagway, gipakita sa extractor ang lista sa mga dominante nga kolor nga gihan-ay gikan sa labing kasagaran. Matag kolor nagpakita sa HEX code ug RGB value — andam na i-paste sa CSS, Figma, o bisan unsang graphics application.</p><p class=\"text-mid\">Ang ihap sa nakuha nga kolor nagdepende sa sulod sa hulagway. Ang landscape nga litrato maghatag og mas datos nga paleta (8–12 ka kolor), samtang ang simple nga duha ka kolor nga logo maghatag og mas gamay nga item.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Unsang mga hulagway ang naghatag og labing maayo nga resulta?",
+      "description": "Ang kalidad sa nakuha nga paleta nagdepende sa tipo sa gi-upload nga hulagway:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiImageLine",
+          "title": "Mga logo ug graphic nga may limitado nga paleta",
+          "description": "Mga hulagway nga adunay pipila ka klaro nga gibulag nga kolor naghatag sa labing tukma nga resulta — tukma nga nailhan sa extractor ang matag kolor."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Mga litrato nga may klaro nga subject",
+          "description": "Mga litrato sa produkto, interior, o landscape naghatag usab og mapuslanon nga paleta, apan adunay sila mas daghang shade — lakip ang mga kolor sa anino ug refleksyon sa suga."
+        },
+        {
+          "icon": "RiEraserLine",
+          "title": "Mga PNG file nga may transparent nga background",
+          "description": "Ang mga transparent pixel awtomatiko nga gipasagdan sa pagsusi. Kung gusto nimong mokuha og mga kolor lang gikan sa object (pananglitan: logo), gamita ang PNG file nga walay background."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Mga hulagway nga walay dako nga solid-color nga background",
+          "description": "Kung ang background naghupot og mas dako nga bahin sa hulagway kaysa sa object mismo, ang kolor niini nagdominar sa mga resulta. Sa wala pa mag-upload, hunahunaa ang pag-crop sa hulagway ngadto sa interesante nga bahin."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTimeline",
+      "title": "Giunsa paglihok ang pagkuha og kolor gikan sa hulagway?",
+      "description": "Human sa pag-upload og file, naghimo ang himan og pipila ka lakang sa background — tanang pagsusi gihimo lokal sa browser:",
+      "items": [
+        {
+          "icon": "RiZoomInLine",
+          "title": "Pag-scale sa hulagway",
+          "description": "Gi-resize ang hulagway ngadto sa mga 240 pixel ang gilapdon. Gipadali niini ang pagsusi bisan para sa dako kaayo nga mga litrato, nga walay epekto sa katukma sa pagdetect sa kolor."
+        },
+        {
+          "icon": "RiGroupLine",
+          "title": "Pag-grupo sa susama nga mga kolor",
+          "description": "Matag pixel gisusi, ug ang susama nga mga shade gihiusa sa mga grupo. Ang duha ka halos parehas nga asul nahimong usa ka kolor sa paleta."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Pagpili sa dominante nga mga kolor",
+          "description": "Gipili sa algorithm ang mga kolor nga naghupot sa labing dako nga bahin sa hulagway. Ang resulta usa ka lista hangtod 12 ka kolor nga gihan-ay gikan sa labing kasagaran."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Paglaktaw sa mga transparent pixel",
+          "description": "Sa mga PNG file nga may transparent nga background, kadtong mga lugar wala gilakip sa pagsusi — gisusi lang sa extractor ang makita nga mga kolor. Ang tibuok proseso kasagaran mokaon og ubos sa usa ka segundo."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Pag-troubleshoot sa tigkuha sa kolor",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBarChartLine",
+          "title": "Ang extractor mibalik og mas gamay sa 12 ka kolor",
+          "description": "Ang ihap sa nakuha nga kolor nagdepende sa sulod sa hulagway. Ang simple nga duha ka kolor nga logo maghatag og 2–3 ka resulta — kini husto nga paglihok. Ang himan wala nagdugang og artipisyal nga mga kolor; gikuha lang niini ang tinuod nga anaa sa hulagway."
+        },
+        {
+          "icon": "RiAlertLine",
+          "title": "Wala gilauman nga mga kolor ang mitungha sa paleta",
+          "description": "Mahimong mga kolor kini sa anino, gradient, o refleksyon sa suga — ang mga pixel sa kadtong mga lugar adunay lahi nga kolor kaysa sa object nga makita sa unang tan-aw. Ang paggamit og hulagway nga may mas uniform nga mga kolor o pag-crop sa ngitngit nga mga bahin makapaayo sa mga resulta."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Ang kolor sa background nagdominar sa mga resulta",
+          "description": "Kung ang background naghupot og mas dako nga lugar kaysa sa object mismo, ang kolor niini una nga motungha sa lista. Solusyon: gamita ang PNG file nga may transparent nga background o i-crop ang hulagway aron mas dako nga bahin sa frame ang gihuptan sa object."
+        },
+        {
+          "icon": "RiFileWarningLine",
+          "title": "Ang file wala gidawat sa extractor",
+          "description": "Ang himan nagsuporta lang sa PNG, JPG, ug SVG format. Ang mga file sa ubang format (GIF, TIFF, HEIC, PDF) nagkinahanglan og pag-convert una."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Unsa ang espesyal sa tigkuha sa kolor gikan sa hulagway?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Lokal nga pagsusi — ang hulagway wala mobiya sa kompyuter",
+          "description": "Tanang pagkuha sa kolor gihimo sa browser. Ang hulagway dili gipadala sa bisan unsang server, ug human sa pagsira sa panid, gitangtang ang datos gikan sa memorya."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Hangtod 12 ka dominante nga kolor gikan sa usa ka hulagway",
+          "description": "Mokuha ang himan og hangtod 12 ka kolor nga gihan-ay gikan sa labing kasagaran — igo para matukod ang kompleto nga paleta sa kolor sa proyekto."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Tulo ka popular nga format sa hulagway",
+          "description": "Gisuportahan nga format: PNG, JPG, ug SVG. Ang mga PNG file nga may transparent nga background naghatag sa labing maayo nga resulta kay awtomatiko nga gipasagdan ang mga transparent pixel."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Andam na nga HEX ug RGB code para i-paste",
+          "description": "Matag nakuha nga kolor adunay HEX code (pananglitan: #2C5F2D) ug RGB value. Ang code mahimong kopyahon sa clipboard ug direkta nga i-paste sa CSS, Figma, o Photoshop."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Asa gamiton ang mga kolor nga nakuha gikan sa hulagway?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Pagtukod og biswal nga identidad",
+          "description": "Pag-upload og litrato nga nagkuha sa mood sa brand — landscape, interior sa restaurant, litrato sa produkto — ug pagkuha og mga kolor isip sugod para sa branding paleta."
+        },
+        {
+          "icon": "RiLayoutMasonryLine",
+          "title": "Mga graphic para sa social media",
+          "description": "Pagkuha og mga kolor gikan sa litrato sa produkto ug paggamit isip background o accent sa mga graphic. Ang mga post nga gibase sa mga kolor gikan sa parehas nga source nagtan-aw nga magkahaum sa profile."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Pag-match sa mga kolor sa website",
+          "description": "Pagkuha og mga kolor gikan sa logo ug paggamit isip paleta sa kolor sa website — primary nga kolor, accent nga kolor, shade sa background. Ang mga HEX code direkta nga ma-paste sa CSS."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Pagpadako sa naa na nga paleta",
+          "description": "Ang nakuha nga base nga kolor mahimong gamiton sa <a href=\"/ceb/mga-himan/generator-sa-paleta-sa-kolor\">generator sa paleta sa kolor</a> aron maghimo og tibuok set sa magkahaum nga mga kolor base sa teorya sa kolor."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Kasagaran pangutanon mahitungod sa tigkuha sa kolor gikan sa hulagway",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Nagkinahanglan ba og registration ang tigkuha sa kolor gikan sa hulagway?",
+          "answer": "Dili. Ang himan hingpit nga libre ug wala nagkinahanglan og login o registration. Ang hulagway gisusi lokal sa browser — dili kini gipadala sa bisan unsang server. Human sa pagsira sa panid, tanang datos gitangtang.",
+          "answerSchemaText": "Dili. Ang himan libre ug wala nagkinahanglan og registration. Ang hulagway gisusi lokal sa browser."
+        },
+        {
+          "question": "Giunsa nagkalahi ang color extractor sa palette generator?",
+          "answer": "Gikuha sa extractor ang mga kolor gikan sa naa na nga hulagway — gisusi niini ang litrato ug gipakita kung unsang mga kolor ang nagdominar. Ang generator sa paleta sa kolor naglihok sa baliktad: maghatag ka og usa ka base nga kolor, ug ang himan maghimo og magkahaum nga set base sa teorya sa kolor. Nagkomplimento ang duha ka himan — mahimo mokuha og kolor gikan sa hulagway ug dayon gamiton isip base sa generator sa paleta.",
+          "answerSchemaText": "Gikuha sa extractor ang mga kolor gikan sa hulagway. Naghimo og paleta ang generator gikan sa base nga kolor. Nagkomplimento ang duha ka himan."
+        },
+        {
+          "question": "Pila ka kolor ang gikuha sa extractor gikan sa usa ka hulagway?",
+          "answer": "Mokuha ang himan og hangtod 12 ka dominante nga kolor. Ang eksakto nga ihap nagdepende sa sulod sa hulagway — kung ang graphic adunay duha lang ka kolor (pananglitan: simple nga logo), ang resulta adunay mas gamay nga item. Ang mga kolor gihan-ay gikan sa labing kasagaran.",
+          "answerSchemaText": "Hangtod 12 ka dominante nga kolor, gihan-ay gikan sa labing kasagaran."
+        },
+        {
+          "question": "Unsang mga format sa hulagway ang gisuportahan sa color extractor?",
+          "answer": "Gisuportahan nga format: PNG, JPG (JPEG), ug SVG. Ang mga PNG file nga may transparent nga background naghatag og mas maayo nga resulta kay gipasagdan ang mga transparent pixel sa pagsusi — nagfocus ang himan sa mga kolor sa object mismo.",
+          "answerSchemaText": "PNG, JPG, ug SVG. Ang PNG nga may transparent nga background naghatag sa labing maayo nga resulta."
+        },
+        {
+          "question": "Sa unsang format nako makuha ang mga nakuha nga color code?",
+          "answer": "Matag kolor gipakita uban sa HEX code (pananglitan: #2C5F2D) ug RGB value (pananglitan: rgb(44, 95, 45)). Ang code mahimong kopyahon sa clipboard ug direkta nga i-paste sa CSS, Figma, Photoshop, o bisan unsang ubang graphics application.",
+          "answerSchemaText": "HEX (pananglitan: #2C5F2D) ug RGB (pananglitan: rgb(44, 95, 45)). Mahimong kopyahon sa clipboard."
+        },
+        {
+          "question": "Mahimo ba nako kopyahon ang tanang kolor sa paleta sa usa ka higayon?",
+          "answer": "Sa pagkakaron, ang himan nagtugot sa pagkopya sa mga kolor usa-usa — tupad sa matag kolor adunay button nga nagkopya sa HEX code ngadto sa clipboard. Ang nakopya nga code mahimong diha-diha i-paste sa Figma, Photoshop, CSS, o bisan unsang ubang application.",
+          "answerSchemaText": "Gikopya ang mga kolor usa-usa gamit ang copy button tupad sa matag kolor."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tan-awa ang ubang mga himan"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

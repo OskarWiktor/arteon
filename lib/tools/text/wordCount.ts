@@ -38,6 +38,7 @@ import haPt from '@/data/ha/tools-ui/word-count-page-types.json';
 import yoPt from '@/data/yo/tools-ui/word-count-page-types.json';
 import afPt from '@/data/af/tools-ui/word-count-page-types.json';
 import ukPt from '@/data/uk/tools-ui/word-count-page-types.json';
+import cebPt from '@/data/ceb/tools-ui/word-count-page-types.json';
 
 const PAGE_TYPES: Record<Locale, PageTypeConfig[]> = {
   pl: plPt as PageTypeConfig[],
@@ -72,6 +73,7 @@ const PAGE_TYPES: Record<Locale, PageTypeConfig[]> = {
   yo: yoPt as PageTypeConfig[],
   af: afPt as PageTypeConfig[],
   uk: ukPt as PageTypeConfig[],
+  ceb: cebPt as PageTypeConfig[],
 };
 
 export function getPageTypes(locale: Locale): PageTypeConfig[] {
@@ -971,6 +973,31 @@ const EVAL_UI: Record<Locale, EvalUi> = {
       statusShort: '\u26a0\ufe0f Занадто коротко',
       statusLong: '\u26a0\ufe0f Занадто довго',
       generatedBy: 'Згенеровано: arteonagency.pl/uk/instrumenty/lichylnyk-sliv-i-symvoliv',
+    },
+  },
+  ceb: {
+    wordsUnit: 'mga pulong',
+    emptyMessage: 'Pag-paste o pag-type og teksto aron makita ang pag-analisa.',
+    tooShort: (min, unit, missing) => `Ang teksto ubos sa gibanabana nga minimum (${min} ${unit}). Kung nahisgutan na ang topiko \u2014 basin igo na kini. Kulang og mga ${missing} ${unit}.`,
+    tooLong: (excess, unit) => `Ang teksto milabaw sa gibanabana nga maximum og ${excess} ${unit}. Kung matag sentence adunay bili \u2014 ang gitas-on husto.`,
+    idealInRange: 'Ang gitas-on anaa sa girekomenda nga sakop. Ang bili para sa magbabasa mao ang yawe \u2014 ang mga sakop nagserbisyo isip punto sa reperensya.',
+    idealGoodLength: (label) => `Maayo nga gitas-on para sa ${label.toLowerCase()}. Matag parapo kinahanglan magdala og konkreto nga bili para sa magbabasa.`,
+    readingTime: (m) => (m === 1 ? '1 minuto' : `${m} minuto`),
+    report: {
+      title: '\ud83d\udcca REPORT SA GITAS-ON SA TEKSTO',
+      pageType: 'Tipo sa panid',
+      range: 'Girekomenda nga sakop',
+      statistics: '\ud83d\udcdd ESTADISTIKA:',
+      words: 'Mga pulong',
+      charsWithSpaces: 'Mga karakter (may espasyo)',
+      charsWithoutSpaces: 'Mga karakter (walay espasyo)',
+      paragraphs: 'Mga parapo',
+      readingTime: 'Oras sa pagbasa',
+      evaluation: '\ud83d\udcc8 EBALWASYON',
+      statusIdeal: '\u2705 Maayo nga gitas-on',
+      statusShort: '\u26a0\ufe0f Mubo kaayo',
+      statusLong: '\u26a0\ufe0f Taas kaayo',
+      generatedBy: 'Gihimo sa: arteonagency.pl/ceb/mga-himan/tigihap-sa-pulong-ug-karakter',
     },
   },
 };

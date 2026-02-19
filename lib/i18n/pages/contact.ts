@@ -66,6 +66,7 @@ import ha from '@/data/ha/pages/contact.json';
 import yo from '@/data/yo/pages/contact.json';
 import af from '@/data/af/pages/contact.json';
 import uk from '@/data/uk/pages/contact.json';
+import ceb from '@/data/ceb/pages/contact.json';
 
 const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
   en,
@@ -99,6 +100,7 @@ const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
   yo,
   af,
   uk,
+  ceb,
 };
 
 // ---------------------------------------------------------------------------

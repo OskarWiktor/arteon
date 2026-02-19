@@ -1,0 +1,47 @@
+{
+  "dataType": "Tipo sa datos",
+  "types": {
+    "url": "URL address",
+    "text": "Teksto",
+    "vcard": "Bisita card (vCard)",
+    "email": "E-mail",
+    "phone": "Telepono"
+  },
+  "urlPlaceholder": "https://www.imong-site.ph",
+  "textPlaceholder": "Pagsulod og bisan unsang teksto...",
+  "phonePlaceholder": "+48 123 456 789",
+  "size": "Gidak-on (px)",
+  "margin": "Margin (quiet zone)",
+  "qrColor": "Kolor sa QR code",
+  "bgColor": "Kolor sa background",
+  "errorCorrection": "Level sa error correction",
+  "errorCorrectionLevels": {
+    "L": "L — Ubos (7%)",
+    "M": "M — Katamtaman (15%)",
+    "Q": "Q — Taas (25%)",
+    "H": "H — Pinakataas (30%)"
+  },
+  "preview": "Preview sa QR code",
+  "downloadPng": "I-download ang PNG",
+  "downloadSvg": "I-download ang SVG",
+  "contrastWarning": "Ubos kaayo ang kontras tali sa mga kolor. Mahimong lisod i-scan ang QR code.",
+  "contrastRatio": "Ratio sa kontras",
+  "recommended": "Girekomenda nga minimum: 3:1",
+  "enterData": "Pagsulod og datos aron makahimo og QR code.",
+  "vcard": {
+    "firstName": "Ngalan",
+    "lastName": "Apelyido",
+    "organization": "Kompanya (opsyonal)",
+    "title": "Posisyon (opsyonal)",
+    "phone": "Telepono (opsyonal)",
+    "email": "E-mail (opsyonal)",
+    "website": "Website (opsyonal)",
+    "address": "Adres (opsyonal)"
+  },
+  "email": {
+    "to": "E-mail address",
+    "subject": "Hilisgutan (opsyonal)",
+    "body": "Sulod (opsyonal)"
+  },
+  "printTip": "Para sa mga gi-print nga materyales, girekomenda ang min. 300px nga gidak-on ug H level sa error correction."
+}

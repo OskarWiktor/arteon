@@ -1,0 +1,44 @@
+[
+  {
+    "key": "product",
+    "label": "Deskripsyon sa produkto",
+    "minWords": 80,
+    "maxWords": 400,
+    "description": "Kung mas simple ang produkto, mas mubo ang deskripsyon. Ang mga komplikado nga produkto (pananglitan: electronics) nagkinahanglan og mas daghang pagsaysay ug detalye."
+  },
+  {
+    "key": "service",
+    "label": "Panid sa serbisyo",
+    "minWords": 500,
+    "maxWords": 1500,
+    "description": "Ang simpleng lokal nga serbisyo nagkinahanglan og mas gamay nga pulong. Ang komplikado nga alok nga may daghang yugto nagkinahanglan og mas daghan."
+  },
+  {
+    "key": "homepage",
+    "label": "Pangunang panid",
+    "minWords": 400,
+    "maxWords": 1000,
+    "description": "Ang pangunang panid nagdirekta sa mga subpage. Klaro nga mensahe ug maayo nga istruktura ang nagpasayon sa pag-navigate."
+  },
+  {
+    "key": "landing",
+    "label": "Landing page",
+    "minWords": 600,
+    "maxWords": 2500,
+    "description": "Ang mas mahal nga alok nagkinahanglan og mas daghang pagsaysay ug pagtukod og tiwala. Ang simple nga alok mahimong mas mubo."
+  },
+  {
+    "key": "blog",
+    "label": "Artikulo sa blog",
+    "minWords": 1200,
+    "maxWords": 3000,
+    "description": "Ang gitas-on nagdepende sa pagkakomplikado sa topiko. Kinahanglan tubagon sa teksto ang mga pangutana sa magbabasa sa bug-os ug konkreto nga paagi."
+  },
+  {
+    "key": "guide",
+    "label": "Giya / tutorial",
+    "minWords": 2500,
+    "maxWords": 6000,
+    "description": "Detalyado nga pagdiskusyon sa usa ka topiko nga may daghang aspeto. Ang gitas-on nagdepende sa gilapdon sa topiko."
+  }
+]

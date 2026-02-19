@@ -1,0 +1,304 @@
+{
+  "toolKey": "metaCounter",
+  "locale": "ceb",
+  "metadata": {
+    "title": "Tigsusi sa Meta Title ug Description – Google Preview",
+    "description": "Susiha ang gitas-on sa meta title ug description uban ang Google preview. Ipakita ang ihap sa karakter ug pixel width aron dili maputol ang mga titulo.",
+    "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+    "path": "/ceb/mga-himan/tigsusi-sa-meta-titulo-ug-deskripsyon"
+  },
+  "hero": {
+    "title": "Tigsusi sa meta title ug description",
+    "description": "Susiha ang ihap sa karakter, ihap sa pulong, ug pixel width — uban ang Google preview. Likayan ang mga naputol nga titulo ug description sa search results.",
+    "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ceb/mga-himan",
+      "label": "Mga himan"
+    },
+    "third": {
+      "href": "/ceb/mga-himan/tigsusi-sa-meta-titulo-ug-deskripsyon",
+      "label": "Tigsusi sa meta title ug description"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Tigsusi sa meta title ug description",
+      "alternateName": [
+        "Tigsusi sa meta title ug description nga may Google preview",
+        "Google snippet preview",
+        "Susiha ang gitas-on sa SEO title sa pixel",
+        "Himan sa pagsusi sa gitas-on sa meta tag",
+        "Google SERP preview tool",
+        "Pila ka karakter ang meta description",
+        "Optimal nga gitas-on sa title ug description",
+        "SEO meta tag checker"
+      ],
+      "applicationSubCategory": "SEOTool",
+      "description": "Libre nga tigsusi sa gitas-on sa meta title ug meta description. Nagsusi sa ihap sa karakter, pulong, ug gilapdon sa pixel. Nagpakita og preview kung giunsa pagtan-aw ang titulo ug description sa Google search results.",
+      "featureList": [
+        "Character counter para sa meta title",
+        "Character counter para sa meta description",
+        "Pagsukod sa gilapdon sa pixel (Google-compatible)",
+        "Word counter para sa title ug description",
+        "Google search results preview",
+        "May kolor nga ebalwasyon sa gitas-on (ubos kaayo / optimal / taas kaayo)",
+        "Pasidaan sa truncation para sa title ug description",
+        "Mga rekomendasyon sa optimal nga gitas-on",
+        "Lokal nga pagproseso sa browser"
+      ]
+    },
+    "howTo": {
+      "name": "Giunsa pagsusi sa gitas-on sa meta title ug description",
+      "description": "Susiha ang gitas-on sa meta title ug description sa pixel ug karakter. Hibaloi pila ka karakter ang kinahanglan sa title (50–60) ug description (120–160) ug giunsa paglikay sa truncation sa Google.",
+      "totalTime": "PT3M",
+      "steps": [
+        {
+          "name": "Pagsulod sa meta title",
+          "text": "I-paste o i-type ang titulo sa panid sa Meta title field. Awtomatiko nga kalkulahon sa himan ang ihap sa karakter, pulong, ug gilapdon sa pixel."
+        },
+        {
+          "name": "Pagsulod sa meta description",
+          "text": "Idugang ang description sa panid sa Meta description field. Makita ang parehas nga mga sukod. Mas dako ang field kay mas taas ang description kaysa sa title — mahimong mosulod ang 2–3 ka mubo nga sentensya."
+        },
+        {
+          "name": "Pagsusi sa Google preview",
+          "text": "Tan-awa kung giunsa pagtan-aw ang titulo ug description sa usa ka simulated nga Google search result. Awtomatiko nga giputol sa preview ang teksto sama sa buhaton sa search engine."
+        },
+        {
+          "name": "Pag-ayo base sa mga tip",
+          "text": "Kung nagpakita ang status nga Ubos kaayo o Taas kaayo, ayoha ang teksto ug bantayi ang mga pagbag-o sa real time."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Unsa ang meta title ug meta description?",
+      "html": "<p class=\"text-mid\">Ang meta title ug meta description duha ka mubo nga teksto nga nagdeskribo sa sulod sa usa ka web page. Dili sila direkta nga makita sa panid apan motungha sa Google search results isip titulo (asul nga link) ug description (gray nga teksto sa ubos sa titulo).</p><p class=\"text-mid mt-3\">Ang maayo nga nabuhat nga meta tag naglihok sama sa usa ka ad para sa panid sa search results — nagdani og atensyon ug nagpataas sa tsansa sa pag-click. Ang dili maayo nga nasulat o naputol nga tag mahimong maka-discourage sa mga click, bisan importante ang panid mismo.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Giunsa paggamit sa meta title ug description checker?",
+      "description": "Ang pagsusi sa gitas-on sa meta tag mokaon og usa ka minuto:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiPencilLine",
+          "title": "1. Pagsulod sa titulo sa panid",
+          "description": "I-paste o i-type ang meta title sa unang text field. Diha-diha ipakita sa himan ang tulo ka sukod: ihap sa karakter, ihap sa pulong, ug gilapdon sa pixel. Usa ka may kolor nga status motungha tupad niini."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Pagsulod sa description sa panid",
+          "description": "Idugang ang meta description sa ikaduha nga field. Makita ang parehas nga mga sukod. Mas dako ang field kay mas taas ang description kaysa sa title — mahimong mosulod ang 2–3 ka mubo nga sentensya."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "3. Pagsusi sa preview",
+          "description": "Sa tuo nga bahin (desktop) o sa ubos (mobile) makita ang preview nga nagpakita kung giunsa pagtan-aw ang titulo ug description sa Google search results. Awtomatiko nga giputol ang teksto sama sa buhaton sa search engine."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "4. Pag-ayo base sa mga tip",
+          "description": "Kung nagpakita ang status nga Ubos kaayo o Taas kaayo, ayoha ang teksto. Ang mga pagbag-o diha-diha makita — mahimong mag-eksperimento hangtod makuha ang optimal nga gitas-on ug sulod."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Pila ka karakter ang kinahanglan sa meta title ug description?",
+      "html": "<p class=\"text-mid mb-4\">Giputol sa Google ang mga titulo ug description nga taas kaayo. Sa ubos ang mga girekomenda nga sakop nga nagpaubos sa risgo nga maputol ang teksto sa search results.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Elemento</th><th class=\"py-2 pr-4 font-semibold\">Mga karakter</th><th class=\"py-2 pr-4 font-semibold\">Mga pixel</th><th class=\"py-2 font-semibold\">Mga nota</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 ka karakter</td><td class=\"py-2 pr-4 whitespace-nowrap\">hangtod ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Ibutang ang labing importante nga pulong sa sugod. Ngalan sa brand sa katapusan.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">120–160 ka karakter</td><td class=\"py-2 pr-4 whitespace-nowrap\">hangtod ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">Mahimong mosulod ang 2–3 ka mubo nga sentensya. Tapusa og call to action.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Kini mga gibanabana nga value — wala gibutang sa Google ang estrikto nga limitasyon ug mahimong i-adjust kini depende sa device ug konteksto sa query.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Giunsa pag-interpret sa mga resulta",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta title</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Mga karakter: <strong>52</strong></span><span class=\"text-mid\">Mga pulong: <strong>7</strong></span><span class=\"text-mid\">Mga pixel: <strong>456px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Maayo nga gitas-on</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta description</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Mga karakter: <strong>142</strong></span><span class=\"text-mid\">Mga pulong: <strong>21</strong></span><span class=\"text-mid\">Mga pixel: <strong>812px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Maayo nga gitas-on</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Nagpakita ang himan og tulo ka sukod para sa matag field uban sa may kolor nga ebalwasyon sa gitas-on:</p><h3 class=\"h5 mt-6 mb-2\">Mga sukod</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Mga karakter</strong> — kinatibuk-ang ihap sa karakter (lakip ang mga espasyo). Sayon sabton apan dili kaayo tukma kaysa sa pixel.</li><li><strong>Mga pulong</strong> — ihap sa pulong. Mapuslanon para sa paspas nga pagsusi sa gitas-on.</li><li><strong>Gilapdon (px)</strong> — gilapdon sa teksto sa pixel. Mao kini ang value nga aktwal gigamit sa Google kung nagputol.</li></ul><h3 class=\"h5 mt-6 mb-2\">Mga status sa ebalwasyon</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Maayo nga gitas-on</strong> (berde) — ang teksto anaa sa sulod sa girekomenda nga sakop. Kinahanglan ipakita kini sa Google nga tibuok.</li><li><strong class=\"text-warning-text\">Ubos kaayo</strong> (dalag) — ang teksto mubo kaayo. Aduna pay espasyo para sa dugang nga impormasyon nga mahimong mag-encourage og mga click.</li><li><strong class=\"text-error-text\">Taas kaayo</strong> (pula) — ang teksto milabaw sa girekomenda nga sakop. Lagmit putlon kini sa Google. Hunahunaa ang pagmubo.</li><li><strong class=\"text-light\">Walay datos</strong> (gray) — walay sulod ang field. Pag-type og teksto aron makita ang ebalwasyon.</li></ul><h3 class=\"h5 mt-6 mb-2\">Mga girekomenda nga sakop</h3><p class=\"text-mid\"><strong>Meta title:</strong> 35–65 ka karakter o 350–580 pixel ang gilapdon. Ibutang ang labing importante nga pulong sa sugod.</p><p class=\"text-mid mt-2\"><strong>Meta description:</strong> 100–165 ka karakter o 430–920 pixel ang gilapdon. Mahimong mosulod ang 2–3 ka mubo nga sentensya.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Ngano mas importante ang gilapdon sa pixel kaysa sa ihap sa karakter",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">iiiiiiiiiiiiiiii (16 ka karakter)</p><div class=\"bg-success-icon mt-1 h-3 w-1/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~64px ang gilapdon</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">WWWWWWWWWWWWWWWW (16 ka karakter)</p><div class=\"bg-error-icon mt-1 h-3 w-3/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~256px ang gilapdon</p></div></div>",
+      "html": "<p class=\"text-mid\">Lahi-lahi ang gilapdon sa lahi-lahi nga letra. Itandi ang &quot;iiii&quot; ug &quot;WWWW&quot; — parehas sila may 4 ka karakter, apan hingpit nga lahi ang biswal nga gilapdon. Gisukod sa Google ang gilapdon sa teksto sa pixel, dili sa karakter.</p><p class=\"text-mid mt-3\">Nagpasabot kini nga ang titulo nga may daghang pig-ot nga letra (i, l, t, f) mahimong mas taas kaysa sa titulo nga may lapad nga letra (W, M, O), bisan parehas ang ihap sa karakter. Gipakita sa himan ang duha ka value: ihap sa karakter (mas sayon sabton) ug gilapdon sa pixel (mas tukma para sa Google).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Snippet preview — unsa ang gipakita niini?",
+      "html": "<p class=\"text-mid\">Ang snippet preview nagsimulate kung giunsa pagtan-aw ang titulo ug description sa panid sa Google search results. Kini usa ka gibanabana nga visualization — ang aktwal nga hitsura mahimong gamay nga magkalahi depende sa device ug browser.</p><h3 class=\"h5 mt-6 mb-2\">Mga elemento sa preview</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> — ang address sa panid nga gipakita sa ibabaw sa titulo. Mahimo kini isulod sa opsyonal nga field para mas realistic ang preview.</li><li><strong>Titulo</strong> — ang asul nga heading. Kung taas kaayo kini, awtomatiko nga giputol sa himan ug gidugang og ellipsis.</li><li><strong>Description</strong> — ang gray nga teksto sa ubos sa titulo. Giputol usab kung milabaw sa limitasyon.</li></ul><h3 class=\"h5 mt-6 mb-2\">Unsa ang wala gipakita sa preview</h3><p class=\"text-mid\">Wala gilakip sa preview ang tanang elemento nga mahimong idugang sa Google sa usa ka resulta: mga petsa, star rating, sitelink, o rich snippet. Kini usa ka gipasimple nga bersyon nga nakatutok sa gitas-on sa teksto.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mga kasagaran nga problema ug solusyon",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "Taas kaayo ang titulo",
+          "description": "Muboi ang titulo samtang gipadayon ang labing importante nga pulong sa sugod. Tangtanga ang mga pang-uri sama sa &quot;labing maayo&quot; o &quot;propesyonal&quot; — panagsa sila nagdugang og bili. Ibutang ang ngalan sa brand sa katapusan human sa separator."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Ubos kaayo ang description",
+          "description": "Pagdugang og dugang nga impormasyon: unsa ang makita sa user sa panid, unsang benepisyo ang makuha, unsa ang nagpailhan sa alok. Tapusa og call to action."
+        },
+        {
+          "icon": "RiRuler2Line",
+          "title": "Lahi ang gilapdon sa pixel sa gilauman",
+          "description": "Gisukod sa himan ang gilapdon gamit ang kasagaran nga font nga susama sa gigamit sa Google. Ang resulta mahimong gamay nga magkalahi depende sa browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Para kang kinsa ang meta tag checker?",
+      "description": "Ang meta tag checker mapuslanon para sa bisan kinsa nga naghimo og web content:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Mga tag-iya sa website ug tindahan",
+          "description": "Susiha kung ang mga titulo ug description naputol sa Google results sa wala pa mag-publish og bag-ong panid o produkto."
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "Mga SEO specialist",
+          "description": "Pagsulay og lahi-lahi nga variant sa titulo ug description, pagsusi sa search results preview, ug pag-verify sa pagsunod sa mga giya."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Mga copywriter",
+          "description": "Pagsulat og mga titulo ug description nga mosulod sa sulod sa mga limitasyon ug mag-encourage og mga click."
+        },
+        {
+          "icon": "RiMegaphoneLine",
+          "title": "Mga marketer",
+          "description": "Paghimo og mga meta tag para sa mga kampanya ug landing page, nga nag-optimize sa click-through rate sa organic results."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Mga developer",
+          "description": "Pag-verify sa mga meta tag sa wala pa i-deploy ang panid sa production."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Unsa ang espesyal sa meta title ug description checker?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRuler2Line",
+          "title": "Pagsukod sa pixel",
+          "description": "Dili lang mag-ihap sa mga karakter — gisukod ang aktwal nga gilapdon sa teksto sama sa gibuhat sa Google."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Google preview",
+          "description": "Tan-awa kung giunsa pagtan-aw ang titulo ug description sa search results sa wala pa i-publish ang panid."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "May kolor nga ebalwasyon",
+          "description": "Diha-diha mahibaloan kung ang teksto ubos kaayo, optimal, o taas kaayo."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Pixel ug ihap sa karakter nga dungan",
+          "description": "Gipakita sa himan ang duha ka value nga dungan — mahimong itandi kung ang titulo mosulod sa sulod sa duha ka limitasyon sa karakter ug pixel."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Titulo ug description sa usa ka view",
+          "description": "Susiha ang duha ka meta title ug description nga dungan, nga walay pag-ilis og tab."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Kasagaran pangutanon mahitungod sa meta title ug description checker",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ngano nagpakita ang himan og gilapdon sa pixel imbis sa ihap sa karakter lang?",
+          "answer": "Lahi-lahi ang gilapdon sa lahi-lahi nga letra. Ang letra nga &quot;i&quot; nagkuha og mas gamay nga espasyo kaysa sa &quot;m&quot; o &quot;W&quot;. Giputol sa Google ang mga titulo ug description base sa gilapdon sa pixel, dili sa ihap sa karakter. Nagpasabot kini nga ang teksto nga may daghang pig-ot nga letra mahimong mas taas kaysa sa teksto nga may lapad nga letra, bisan parehas ang ihap sa karakter.",
+          "answerSchemaText": "Giputol sa Google base sa gilapdon sa pixel, dili sa ihap sa karakter. Lahi-lahi ang gilapdon sa lahi-lahi nga letra."
+        },
+        {
+          "question": "Kanunay bang gipakita sa Google ang akong meta title ug description?",
+          "answer": "Dili kanunay. Mahimong usbon sa Google ang gipakita nga titulo o description kung sa hunahuna niini mas angay ang lain nga butang sa query sa user. Kasagaran gikuha niini ang mga snippet gikan sa sulod sa panid. Ang maayo nga nasulat nga meta tag nagpataas sa tsansa nga gamiton kini sa Google, apan walay 100% nga garantiya.",
+          "answerSchemaText": "Dili kanunay. Mahimong usbon sa Google ang gipakita nga titulo o description aron mas motakdo sa query."
+        },
+        {
+          "question": "Unsa ang optimal nga gitas-on para sa meta title ug meta description?",
+          "answer": "Ang meta title kinahanglan mga 50–60 ka karakter (hangtod ~580 pixel ang gilapdon). Ang meta description labing maayo sa 120–160 ka karakter (hangtod ~920 pixel). Kini mga gibanabana nga value — wala gibutang sa Google ang estrikto nga limitasyon ug mahimong i-adjust kini.",
+          "answerSchemaText": "Meta title: 50–60 ka karakter (~580px). Meta description: 120–160 ka karakter (~920px). Kini mga gibanabana nga value."
+        },
+        {
+          "question": "Nakaapekto ba ang meta description sa ranking sa panid sa Google?",
+          "answer": "Ang meta description dili direkta nga ranking factor — dili kini gigamit sa Google aron matino ang posisyon sa panid. Apan, ang maayo nga description nagpataas sa click-through rate gikan sa search results, ug ang mas taas nga CTR mahimong dili direkta nga makaapekto sa ranking.",
+          "answerSchemaText": "Ang meta description dili direkta nga ranking factor, apan ang maayo nga description mahimong magpataas sa CTR ug dili direkta nga makaapekto sa ranking."
+        },
+        {
+          "question": "Unsa ang buhaton nako kung taas kaayo ang akong titulo?",
+          "answer": "Muboi ang titulo samtang gipadayon ang labing importante nga pulong sa sugod. Tangtanga ang mga filler word (pananglitan: &quot;labing maayo&quot;, &quot;propesyonal&quot;) ug tutoka sa partikular nga bili para sa user. Kung iapil ang ngalan sa brand, ibutang kini sa katapusan human sa separator.",
+          "answerSchemaText": "Muboi ang titulo, padayona ang importante nga pulong sa sugod, ug ibalhin ang ngalan sa brand sa katapusan."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tan-awa ang ubang mga himan"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

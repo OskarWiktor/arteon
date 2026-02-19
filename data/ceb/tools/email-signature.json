@@ -1,0 +1,355 @@
+{
+  "toolKey": "emailSignature",
+  "locale": "ceb",
+  "metadata": {
+    "title": "Libre nga Email Signature Generator – HTML | Arteon",
+    "description": "Paghimo og propesyonal nga HTML email signature. Isulod ang mga detalye, pagpili og kolor, ug kopyaha ang andam na nga HTML code para sa Gmail o Outlook.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
+    "path": "/ceb/mga-himan/libre-nga-email-pirma-generator"
+  },
+  "hero": {
+    "title": "Email signature generator",
+    "description": "Paghimo og propesyonal nga email signature sa pipila ka minuto. Isulod ang mga detalye, pagpili og kolor, ug kopyaha ang andam na nga HTML code.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ceb/mga-himan",
+      "label": "Mga himan"
+    },
+    "third": {
+      "href": "/ceb/mga-himan/libre-nga-email-pirma-generator",
+      "label": "Email signature generator"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Email signature generator",
+      "alternateName": ["HTML email signature generator", "Email signature creator", "Email footer generator"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "EmailSignatureGenerator",
+      "description": "Libre nga HTML email signature generator. Pagdugang og contact detail, CTA link, ug social media profile, dayon kopyaha ang andam na nga code sa Gmail, Outlook, ug ubang email client.",
+      "featureList": [
+        "Contact detail (ngalan, titulo, kompanya)",
+        "Telepono, email, ug website URL",
+        "Logo o profile picture nga may porma ug gidak-on nga opsyon",
+        "Social media icon (12 platform: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
+        "Ma-customize nga mga kolor (teksto, accent, background)",
+        "Indibidwal nga estilo sa teksto para sa matag elemento sa signature",
+        "CTA button nga may custom nga teksto ug link",
+        "Estilo sa separator line (estilo, gibag-on, kolor)",
+        "Live nga preview sa signature nga may pag-ilis sa background (light, dark, checkerboard)",
+        "Preview sa HTML source code sa modal",
+        "Pagkopya sa HTML code sa clipboard",
+        "Pag-download sa signature isip HTML file",
+        "Pag-export ug pag-import sa configuration isip JSON file",
+        "Compatible sa Gmail, Outlook, Apple Mail",
+        "Libre nga himan, walay kinahanglan nga login"
+      ]
+    },
+    "howTo": {
+      "name": "Giunsa paggamit sa email signature generator",
+      "description": "Giunsa paghimo og propesyonal nga HTML email signature gamit ang libre nga Arteon generator.",
+      "totalTime": "PT5M",
+      "steps": [
+        {
+          "name": "Pagpili og layout sa signature",
+          "text": "Pagpili og usa sa walo ka available nga layout: Standard, Top bar, Labels left, Centered, Compact, Two columns, Minimalist, o Bottom bar."
+        },
+        {
+          "name": "Pagsulod sa contact detail",
+          "text": "Sa tab nga Details, isulod ang ngalan, titulo, kompanya, email, telepono, ug website URL. Opsyonal nga magdugang og avatar o logo — human isulod ang image URL, mahimong mopili og porma (round, rounded, square) ug gidak-on (40, 56, o 72 px)."
+        },
+        {
+          "name": "Pagdugang og CTA button",
+          "text": "Sa tab nga Buttons, pagdugang og teksto ug URL para sa nag-unang button. Opsyonal nga magdugang og ikaduhang outline-style button ug pagpili og button rounding."
+        },
+        {
+          "name": "Pagdugang og social media link",
+          "text": "Sa tab nga Social Media, i-paste ang mga URL sa mga profile. Mga gisuportahan nga platform: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, ug Pinterest."
+        },
+        {
+          "name": "Pag-customize sa hitsura",
+          "text": "Sa tab nga Appearance, pagpili og color theme, font, ug gidak-on sa teksto. Sa tab nga Text Style, usba ang mga kolor ug gidak-on sa indibidwal nga elemento."
+        },
+        {
+          "name": "Pagdugang og disclaimer ug pag-configure sa separator",
+          "text": "Sa tab nga Disclaimer / Legal, isulod ang legal nga teksto ug i-configure ang separator line — pagpili og estilo (solid, dashed, dotted), gibag-on (1–3 px), ug kolor."
+        },
+        {
+          "name": "Pag-preview ug pagkopya sa signature",
+          "text": "Ang preview sa signature available sa light, dark, o checkerboard background. Ang Copy signature (Gmail / Outlook) button nagkopya sa andam na nga code sa clipboard. Available usab: Copy HTML code, Download as HTML, View HTML code, ug export configuration isip JSON file."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Ngano kinahanglan og propesyonal nga email signature?",
+      "html": "<p class=\"text-mid\">Ang email signature (gitawag usab nga email footer) usa ka bloke sa impormasyon sa katapusan sa matag gipadala nga mensahe. Naglangkob kini sa contact detail, titulo sa trabaho, ngalan sa kompanya, ug kasagaran link sa website o meeting calendar.</p><p class=\"text-mid mt-3\">Dili kinahanglan sa nakadawat nga mangita sa numero sa telepono sa mga nangagi nga mensahe — tanang detalye dali nga available. Ang propesyonal nga email signature nagpakita usab nga gihatagan og pagtagad ang mga detalye ug gipadayon ang consistent nga imahe sa kompanya sa business correspondence.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Giunsa paggamit sa email signature generator",
+      "description": "Ang paghimo og propesyonal nga email signature mokaon lang og pipila ka minuto:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Isulod ang mga detalye",
+          "description": "Suloda ang ngalan, titulo, kompanya, ug contact detail."
+        },
+        {
+          "title": "2. I-customize ang hitsura",
+          "description": "Pagpili og layout, mga kolor, pagdugang og logo, ug social media link."
+        },
+        {
+          "title": "3. Kopyaha ang code",
+          "description": "Ang Copy signature button nagkopya sa andam na nga code sa clipboard. I-paste lang sa Gmail, Outlook, o ubang email client."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Giunsa pagsulod sa mga detalye sa signature",
+      "html": "<p class=\"text-mid\">Ang tab nga <strong>Details</strong> naglangkob sa tanang field nga mahimong suldon. Duha lang ang kinahanglan: ngalan ug email address. Ang nahabilin nga field opsyonal ug motungha sa signature kung nasulod.</p><h3 class=\"h5 mt-6 mb-3\">Mga field sa tab nga Details</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Linya sa ibabaw sa ngalan</strong> — dugang nga teksto nga gipakita sa ibabaw sa ngalan. Mahimong isulod ang ngalan sa kompanya, tagline, o slogan.</li><li><strong>Avatar / logo (image URL)</strong> — URL sa profile photo o logo sa kompanya. Ang hulagway kinahanglan square (min. 120×120 px) ug publicly accessible. Human i-paste ang URL, motungha ang mga dugang nga opsyon: <strong>Porma sa avatar</strong> (round, rounded, o square) ug <strong>Gidak-on sa avatar</strong> (gamay — 40 px, tunga-tunga — 56 px, dako — 72 px).</li><li><strong>Tibuok ngalan</strong> — kinahanglan nga field. Isulod ang tibuok ngalan.</li><li><strong>Name tag</strong> — mubo nga teksto tupad sa ngalan, pananglitan: pronoun o gimubo nga titulo.</li><li><strong>Titulo sa trabaho</strong> — papel sa kompanya, pananglitan: Sales Manager, Marketing Specialist.</li><li><strong>Ngalan sa kompanya</strong> — ngalan sa organisasyon nga girepresentahan.</li><li><strong>Dugang nga linya</strong> — mubo nga paghulagway kung unsa ang gibuhat o gitanyag.</li><li><strong>Email</strong> — kinahanglan nga field. Isulod ang business email address.</li><li><strong>Telepono</strong> — contact number. Bisan unsang format, pananglitan: +63 912 000 0000.</li><li><strong>Website</strong> — tibuok URL sa website, nagsugod sa https://.</li><li><strong>Address</strong> — pisikal nga address sa kompanya (dalan, siyudad, postal code).</li><li><strong>Pormal nga detalye</strong> — tax ID, numero sa lisensya, o ubang detalye nga kinahanglan sa industriya.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Mga layout sa signature — hain ang pilion?",
+      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Layout sa signature</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">Maria Santos</p><p class=\"text-mid text-sm\">Web Developer</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">maria@example.com</p><p class=\"text-mid\">+63 912 000 0000</p></div></div></div>",
+      "html": "<p class=\"text-mid\">Nagtanyag ang generator og walo ka andam na nga layout. Matag usa nagpakita sa parehas nga impormasyon sa lahi nga paagi.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> — klasiko nga bertikal nga layout, angay sa kadaghanan sa gamit.</li><li><strong>Top bar</strong> — usa ka horizontal bar ang nagbulag sa signature gikan sa sulod.</li><li><strong>Labels left</strong> — duha ka kolumna: label ug value.</li><li><strong>Centered</strong> — pormal nga hitsura, naka-center ang sulod.</li><li><strong>Compact</strong> — tanan sa usa ka linya, minimal nga gitas-on.</li><li><strong>Two columns</strong> — mga detalye sa wala, contact info sa tuo.</li><li><strong>Minimalist</strong> — ang labing importante nga impormasyon lang.</li><li><strong>Bottom bar</strong> — may kolor nga bar nga may contact sa ubos sa signature.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Giunsa pagdugang og CTA button",
+      "html": "<p class=\"text-mid\">Ang CTA button (call-to-action) usa ka ma-click nga elemento nga nagdirekta sa nakadawat sa napili nga panid. Mahimo kining link sa meeting calendar, contact form, o alok. Gitugotan sa generator ang pagdugang og duha ka CTA button.</p><h3 class=\"h5 mt-6 mb-3\">Nag-unang button</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Ablihi ang tab nga <strong>Buttons</strong> sa editor.</li><li>Sa seksyon nga <strong>Main button</strong>, isulod ang teksto nga makita sa nakadawat, pananglitan: Mag-schedule og libre nga konsultasyon.</li><li>Sa field nga <strong>CTA link</strong>, i-paste ang tibuok URL. Ang address kinahanglan magsugod sa https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Ikaduhang button</h3><p class=\"text-mid\">Mahimong magdugang og ikaduhang CTA button sa outline nga estilo (transparent nga background nga may border). Suloda ang mga field sa seksyon nga <strong>Secondary button</strong> sa parehas nga paagi sama sa nag-unang button.</p><h3 class=\"h5 mt-6 mb-3\">Button rounding</h3><p class=\"text-mid\">Sa ubos sa tab nga Buttons makita ang opsyon nga <strong>Button rounding</strong>. Tulo ka variant ang available: None (hait nga eskina), Slight (gamay nga bilog), o Full (oval nga button).</p><p class=\"text-mid mt-4\">Kung ibilin nga walay sulod ang duha ka field, dili motungha ang button sa signature. Kung usa ka field lang ang suldon, dili usab makita ang button — kinahanglan ang duha ka teksto ug link.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Giunsa pagdugang og social media link",
+      "html": "<p class=\"text-mid\">Sa tab nga <strong>Social Media</strong> mahimong magdugang og mga link sa mga profile. Gisuportahan sa generator ang napulog duha ka platform: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (kanhi Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram, ug Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Giunsa paghimo</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Ablihi ang tab nga <strong>Social Media</strong> sa editor.</li><li>Tupad sa matag platform makita ang URL field. I-paste ang tibuok link sa profile, pananglitan: https://www.linkedin.com/in/yourprofile.</li><li>Suloda lang ang mga field nga kinahanglan. Ang mga walay sulod nga field dili motungha sa signature.</li></ol><h3 class=\"h5 mt-6 mb-3\">Social media icon</h3><p class=\"text-mid\">Sa ubos sa tab nga Social Media makita ang opsyon nga <strong>Ipakita ang icon tupad sa ngalan sa serbisyo</strong>. Kung naka-enable, ang mga link magpakita isip mga may kolor nga SVG icon imbis mga ngalan lang.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Gidak-on sa icon</strong> — mga opsyon: Gamay (16 px), Tunga-tunga (20 px), o Dako (24 px).</li><li><strong>Kolor sa icon</strong> — Mga kolor sa platform (default nga kolor para sa matag platform), Accent color (uniform nga accent color), o Text color.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Pag-customize sa hitsura",
+      "html": "<p class=\"text-mid\">Sa tab nga <strong>Appearance</strong> mahimong i-customize ang mga kolor, font, ug ubang biswal nga elemento sa signature.</p><h3 class=\"h5 mt-6 mb-3\">Mga color theme</h3><p class=\"text-mid\">Sa ibabaw sa tab makita ang lima ka andam na nga theme: Dark, Blue, Purple, Green, ug Gray. Ang pag-click sa theme awtomatiko nga nag-set sa accent color ug text color. Kini ang labing paspas nga paagi aron makab-ot ang consistent nga hitsura sa signature.</p><h3 class=\"h5 mt-6 mb-3\">Mga kolor</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Accent color</strong> — gigamit sa side/top bar, CTA button, ug mga link. Mahimong mopili og bisan unsang kolor gikan sa palette.</li><li><strong>Text color</strong> — kolor sa tanang teksto sa signature (ngalan, contact detail, disclaimer).</li><li><strong>Background color</strong> — kolor sa background sa tibuok signature. Puti isip default, apan mahimong usbon.</li></ul><h3 class=\"h5 mt-6 mb-3\">Font ug gidak-on</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Font</strong> — mga opsyon: Arial, Verdana, Tahoma, Trebuchet MS, ug Georgia. Tanan email-safe ug maayo nga ipakita sa nakadawat.</li><li><strong>Gidak-on sa teksto</strong> — tulo ka opsyon: Gamay (12 px), Standard (14 px), ug Mas dako (16 px).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Estilo sa teksto — mga kolor ug gidak-on sa indibidwal nga elemento",
+      "html": "<p class=\"text-mid\">Sa tab nga <strong>Text Style</strong> mahimong indibidwal nga i-customize ang kolor ug gidak-on sa font para sa matag elemento sa teksto sa signature.</p><h3 class=\"h5 mt-6 mb-3\">Mga available nga elemento</h3><p class=\"text-mid\">Kadto lang mga elemento nga karon may sulod sa signature ang makita. Para sa matag elemento mahimong i-set ang:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Ngalan</strong> — gipakita sa accent color isip default.</li><li><strong>Titulo sa trabaho</strong> — papel sa kompanya.</li><li><strong>Kompanya</strong> — ngalan sa organisasyon.</li><li><strong>Contact detail</strong> — email, telepono, website (mga label).</li><li><strong>Social media</strong> — mga link sa profile.</li><li><strong>Legal disclaimer</strong> — legal nga teksto sa ubos sa signature.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Legal disclaimer — kanus-a idugang",
+      "html": "<p class=\"text-mid\">Sa tab nga <strong>Disclaimer / Legal</strong> mahimong magdugang og legal nga teksto nga motungha sa ubos sa signature sa mas gamay nga font.</p><h3 class=\"h5 mt-6 mb-3\">Kanus-a magdugang og disclaimer</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Business correspondence</strong> — pahibalo sa confidentiality ug hangyo sa pag-delete sa kaso sa sayop nga pagpadala.</li><li><strong>Mga kinahanglanon sa industriya</strong> — ang pipila ka industriya (pananglitan: legal, medikal, pinansyal) nagkinahanglan og partikular nga impormasyon sa matag mensahe.</li><li><strong>GDPR</strong> — impormasyon mahitungod sa pagproseso sa personal nga datos, kung ang kompanya data controller.</li></ul><p class=\"text-mid mt-4\">Isip default, ang field puno sa sample nga teksto sa confidentiality. Mahimo kining i-edit, tangtangon, o ilisan sa kaugalingon nga disclaimer. Kung ibilin nga walay sulod ang field, walay disclaimer nga motungha sa signature.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Giunsa pagkopya sa signature sa Gmail o Outlook",
+      "description": "Kung andam na ang signature, pipila ka lakang lang ang kinahanglan aron idugang kini sa email client:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiClipboardLine",
+          "title": "1. Kopyaha ang code",
+          "description": "Ang Copy signature (Gmail / Outlook) button nagkopya sa signature sa clipboard isip formatted HTML, andam na i-paste."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "2. Ablihi ang signature settings",
+          "description": "Sa Gmail: Settings → See all settings → Signature. Sa Outlook: File → Options → Mail → Signatures."
+        },
+        {
+          "icon": "RiSaveLine",
+          "title": "3. I-paste ug i-save",
+          "description": "Sa signature field, gamita ang Ctrl+V (Windows) o Cmd+V (Mac). Motungha ang signature nga may tanang kolor ug formatting. I-save ang mga kausaban."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Para kang kinsa ang email signature creator?",
+      "description": "Ang email signature tool mapuslanon para sa bisan kinsa nga nagpadala og business email:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBriefcaseLine",
+          "title": "Mga entrepreneur ug freelancer",
+          "description": "Propesyonal nga signature sa matag mensahe nga walay kinahanglan nga designer."
+        },
+        {
+          "icon": "RiTeamLine",
+          "title": "Mga team sa kompanya",
+          "description": "Matag empleyado naghimo og kaugalingon nga signature sa parehas nga estilo. Consistent nga identidad sa tibuok kompanya."
+        },
+        {
+          "icon": "RiHandCoinLine",
+          "title": "Mga sales representative",
+          "description": "Ang CTA button nga may link sa calendar o alok nagpataas sa kahigayonan sa pag-book og meeting."
+        },
+        {
+          "icon": "RiScales3Line",
+          "title": "Mga abogado, accountant, doktor",
+          "description": "Katakus sa pagdugang og legal disclaimer, numero sa lisensya, tax ID, o ubang detalye nga kinahanglan sa industriya."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Unsa ang espesyal sa HTML email signature generator?",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Walo ka layout sa signature",
+          "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist, ug bottom bar."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Auto-save sa browser",
+          "description": "Matag kausaban awtomatiko nga na-save sa memorya sa browser. Human i-refresh ang panid, nagpabilin nga available ang signature."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Pag-export ug pag-import sa configuration",
+          "description": "Ang tibuok configuration sa signature mahimong i-export isip JSON file ug ipaambit sa mga kauban."
+        },
+        {
+          "icon": "RiAppsLine",
+          "title": "12 social media platform",
+          "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, ug Pinterest."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Advanced nga customization",
+          "description": "Porma ug gidak-on sa avatar, estilo sa linya, indibidwal nga kolor ug gidak-on sa teksto."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Daghang opsyon sa export",
+          "description": "Kopyaha ang HTML, i-download ang file, preview sa source code, JSON configuration export/import."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Wala gipadala ang datos sa server. Naglihok ang generator nga tibuok sa browser."
+        },
+        {
+          "icon": "RiMailCheckLine",
+          "title": "Compatibility",
+          "description": "Ang na-generate nga HTML code naglihok sa Gmail, Outlook, Apple Mail, ug Thunderbird."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Live nga preview",
+          "description": "Matag kausaban dali nga makita sa light, dark, o checkerboard background."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Kasagaran pangutanon mahitungod sa email signature generator",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Naglihok ba ang signature sa Gmail, Outlook, ug Apple Mail?",
+          "answer": "Oo. Ang mga signature nga gi-generate sa generator naggamit og HTML table nga maayo nga gipakita sa tanang popular nga email client: Gmail, Outlook (desktop ug web), Apple Mail, Thunderbird. Ang layout nag-adapt sa lahi-lahi nga device, lakip ang mga smartphone."
+        },
+        {
+          "question": "Mahimo bang magdugang og logo sa kompanya?",
+          "answer": "Oo. Sa tab nga Details, i-paste ang URL sa hulagway (logo o profile photo). Ang hulagway kinahanglan square (min. 120×120 px) ug publicly accessible. Human i-paste ang URL, motungha ang mga opsyon para sa porma (round, rounded, square) ug gidak-on (40, 56, o 72 px)."
+        },
+        {
+          "question": "Giunsa pagkopya sa signature sa email client?",
+          "answer": "Ang Copy signature (Gmail / Outlook) button sa ubos sa preview nagkopya sa signature sa clipboard isip formatted HTML. Sa signature settings sa Gmail o Outlook, gamita lang ang Ctrl+V (Windows) o Cmd+V (Mac)."
+        },
+        {
+          "question": "Mahimo bang gamiton ang generator aron maghimo og signature para sa tibuok team?",
+          "answer": "Oo. Walay kinahanglan nga login o registration ang generator. Matag tawo sa team mahimong moabli sa himan, mosulod sa mga detalye, ug mokopya sa andam na nga signature. Aron mapadayon ang biswal nga consistency, magkasabot sa mga shared nga setting: parehas nga layout, color theme, ug font. Mahimo usab i-export ang configuration isip JSON file ug ipaambit sa mga kauban — kinahanglan lang nila i-import ang file ug usbon ang mga personal nga detalye."
+        },
+        {
+          "question": "Ang copy button dili aktibo — ngano?",
+          "answer": "Aron makopya ang signature, suloda ang dili ubos sa duha ka field: ngalan ug email address. Susiha nga duha ka field nasulod."
+        },
+        {
+          "question": "Dili motungha ang avatar o logo — unsa ang buhaton?",
+          "answer": "Ang hulagway kinahanglan publicly accessible. Ang URL kinahanglan direkta nga nagtudlo sa image file (nagtapos sa .jpg, .png, o .webp). Ang mga hulagway gikan sa Google Drive o Dropbox nagkinahanglan og espesyal nga sharing link."
+        },
+        {
+          "question": "Lahi ang hitsura sa signature para sa nakadawat — ngano?",
+          "answer": "Ang lahi-lahi nga email client (Gmail, Outlook, Apple Mail) mahimong gamay nga magkalahi sa kung giunsa nila i-render ang HTML. Naggamit ang generator og mga luwas nga estilo nga naglihok sa kadaghanan sa programa. Kung makakita og dako nga kalainan, siguroha nga gi-paste ang signature gamit ang Ctrl+V, dili Paste as plain text."
+        },
+        {
+          "question": "Giunsa pag-export o pag-import sa mga setting sa signature?",
+          "answer": "Sa ubos sa preview sa signature makita ang mga button nga Export settings ug Import settings. Gi-save sa Export ang tibuok configuration (datos, kolor, layout, spacing, estilo sa teksto) sa JSON file. Gi-load sa Import ang configuration gikan sa file ug awtomatiko nga gi-apply ang tanang setting."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tan-awa ang ubang mga himan"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}
