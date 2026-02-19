@@ -132,6 +132,34 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
+      "title": "Kutatua matatizo na kitoa rangi",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBarChartLine",
+          "title": "Kitoa kimetoa rangi chini ya 12",
+          "description": "Idadi ya rangi zilizotolewa inategemea maudhui ya picha. Nembo rahisi yenye rangi mbili itatoa matokeo 2–3 – hiyo ni kazi sahihi. Zana haiongezi rangi bandia, inatoa tu zile zinazoonekana kweli kwenye picha."
+        },
+        {
+          "icon": "RiAlertLine",
+          "title": "Rangi zisizotarajiwa katika paleti",
+          "description": "Hizi zinaweza kuwa rangi za vivuli, gradienti au mwanga wa kuakisi – pikseli katika maeneo hayo zina rangi tofauti na kitu kinachoonekana kwa mtazamo wa kwanza. Kutumia picha yenye rangi zaidi sawa au kukata sehemu zenye giza itaboresha matokeo."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Rangi ya mandharinyuma inatawala matokeo",
+          "description": "Mandharinyuma inapochukua eneo kubwa zaidi ya kitu chenyewe, rangi yake itaonekana ya kwanza kwenye orodha. Suluhisho: tumia faili ya PNG yenye mandharinyuma ya uwazi au kata picha ili kitu kichukue sehemu kubwa zaidi."
+        },
+        {
+          "icon": "RiFileWarningLine",
+          "title": "Faili haikubaliki na kitoa",
+          "description": "Zana inasaidia miundo ya PNG, JPG na SVG pekee. Faili katika miundo mingine (GIF, TIFF, HEIC, PDF) zinahitaji kubadilishwa kwanza."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
       "title": "Ni nini kinachofanya kitoa hiki cha rangi kutoka picha kuwa maalum?",
       "grid": "two",
       "items": [
