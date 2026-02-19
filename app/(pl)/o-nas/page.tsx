@@ -14,11 +14,12 @@ import Wrapper from '@/components/ui/Wrapper';
 import Link from 'next/link';
 import { RiCodeSSlashFill, RiLightbulbFlashLine, RiMegaphoneLine, RiPaletteLine } from 'react-icons/ri';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
+import { getAboutAlternates } from '@/lib/i18n/pages/about';
 
 export const metadata = {
   title: 'O nas - strategia, kreacja i widoczność - Arteon',
   description: 'Poznaj Arteon: łączymy strategię, branding, technologię i marketing w jeden proces. Zobacz, jak pracujemy i dlaczego klienci nam ufają.',
-  alternates: { canonical: toAbsoluteUrl('/o-nas') },
+  alternates: getAboutAlternates('pl'),
   openGraph: {
     title: 'O nas - strategia, kreacja i widoczność - Arteon',
     description: 'Poznaj Arteon: łączymy strategię, branding, technologię i marketing w jeden proces. Zobacz, jak pracujemy i dlaczego klienci nam ufają.',

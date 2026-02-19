@@ -3,7 +3,7 @@
   "locale": "ms",
   "metadata": {
     "title": "Penyemak Kontras Warna Percuma – Pematuhan WCAG 2.1",
-    "description": "Semak sama ada warna teks dan latar belakang boleh dibaca mengikut WCAG 2.1. Masukkan kod HEX, RGB atau HSL, lihat nisbah kontras dan gunakan pembetulan automatik.",
+    "description": "Semak sama ada warna teks dan latar belakang boleh dibaca mengikut WCAG 2.1. Masukkan kod HEX, RGB atau HSL, lihat nisbah kontras dan gunakan pembetulan.",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/ms/alatan/penyemak-kontras-warna"
   },

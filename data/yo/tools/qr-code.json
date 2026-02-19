@@ -3,7 +3,7 @@
   "locale": "yo",
   "metadata": {
     "title": "Olùpìlẹ̀ṣẹ̀ Kóòdù QR Òfẹ́ẹ́ – PNG & SVG, Láìsí Ìforukọ̀sílẹ̀",
-    "description": "Ṣẹ̀dá àwọn kóòdù QR fún àwọn ojú-ìwé, vCards, àwọn atọ̀kà tàbí àwọn ìwé ìpolówó ní ìṣẹ́jú díẹ̀. Mú jáde gẹ́gẹ́ bí PNG & SVG. Ṣàtò àwọn awọ̀ àti ìwọn. Láìsí ìforukọ̀sílẹ̀, láìsí ìdíwọ̀n.",
+    "description": "Ṣẹ̀dá àwọn kóòdù QR fún àwọn ojú-ìwé, vCards, àwọn atọ̀kà tàbí àwọn ìwé ìpolówó ní ìṣẹ́jú díẹ̀. Mú jáde gẹ́gẹ́ bí PNG & SVG. Ṣàtò àwọn awọ̀ àti ìwọn.",
     "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
     "path": "/yo/awon-irinse/olupilese-koodu-qr-ofe"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/yo/awon-irinse", "label": "Àwọn Irìnṣé" },
-    "third": { "href": "/yo/awon-irinse/olupilese-koodu-qr-ofe", "label": "Olùpìlẹ̀ṣẹ̀ kóòdù QR òfẹ́ẹ́" }
+    "second": {
+      "href": "/yo/awon-irinse",
+      "label": "Àwọn Irìnṣé"
+    },
+    "third": {
+      "href": "/yo/awon-irinse/olupilese-koodu-qr-ofe",
+      "label": "Olùpìlẹ̀ṣẹ̀ kóòdù QR òfẹ́ẹ́"
+    }
   },
   "schemas": {
     "software": {
@@ -52,33 +58,63 @@
       "name": "Bí o ṣe lè lo olùpìlẹ̀ṣẹ̀ kóòdù QR òfẹ́ẹ́",
       "description": "Bí o ṣe lè ṣẹ̀dá kóòdù QR fún ojú-ìwé ayélujára, káàdì owò vCard, ìméèlì, tàbí foonù — láti yíyàn irú data títí dé gbigbà fáìlì tí ó ṣetán fún têtê.",
       "steps": [
-        { "name": "Yan irú data", "text": "Pinnu ohun tí kóòdù QR yẹ kí ó ní: URL, ọ̀rọ̀, káàdì owò (vCard), ìméèlì, tàbí nọ́mbà foonù." },
-        { "name": "Tẹ data", "text": "Kún àwọn aaye tí ó yẹ. Fún URL, tẹ àdírẹ́sì ojú-ìwé; fún vCard, pèsè àwọn àlàyé ìbáṣepọ̀." },
-        { "name": "Ṣàtò ìrísí", "text": "Yan ìwọn, àlà àyìká, àwọn awọ̀ kóòdù àti ìpìlẹ̀, àti ìpele àtúnṣe àṣìsẹ." },
-        { "name": "Gbà kóòdù", "text": "A lè gbà kóòdù QR tí ó ṣetán gẹ́gẹ́ bí fáìlì PNG (fún têtê àti ayélujára) tàbí SVG (vector, ó tóbi láìsí ìpàdánú dídára)." }
+        {
+          "name": "Yan irú data",
+          "text": "Pinnu ohun tí kóòdù QR yẹ kí ó ní: URL, ọ̀rọ̀, káàdì owò (vCard), ìméèlì, tàbí nọ́mbà foonù."
+        },
+        {
+          "name": "Tẹ data",
+          "text": "Kún àwọn aaye tí ó yẹ. Fún URL, tẹ àdírẹ́sì ojú-ìwé; fún vCard, pèsè àwọn àlàyé ìbáṣepọ̀."
+        },
+        {
+          "name": "Ṣàtò ìrísí",
+          "text": "Yan ìwọn, àlà àyìká, àwọn awọ̀ kóòdù àti ìpìlẹ̀, àti ìpele àtúnṣe àṣìsẹ."
+        },
+        {
+          "name": "Gbà kóòdù",
+          "text": "A lè gbà kóòdù QR tí ó ṣetán gẹ́gẹ́ bí fáìlì PNG (fún têtê àti ayélujára) tàbí SVG (vector, ó tóbi láìsí ìpàdánú dídára)."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Kí ni kóòdù QR àti báwo ni ó ṣe ń ṣiṣẹ́?",
       "html": "<p class=\"text-mid\">Kóòdù QR (Quick Response) jẹ́ kóòdù ìlà onígun méjì tí a lè ṣe àyẹ̀wò pẹ̀lú kámẹ́rà fóònù alágbèéká. Yàtọ̀ sí àwọn kóòdù ìlà ìbílẹ̀, àwọn kóòdù QR tọ́jú data ní ìpele àti inaro, tí ó jẹ́ kí wọ́n lè kó àlàyé tí ó pọ̀ sí i gan-an — títí dé nǹkan bí àmì-lẹ́tà-nọ́mbà 3,000.</p><p class=\"text-mid mt-3\">A ṣe àgbékalẹ̀ kóòdù QR ní ọdún 1994 nípasẹ̀ ilé-iṣẹ́ Japan Denso Wave (apá kan ẹgbẹ́ Toyota) fún mímọ àwọn ẹ̀yà ọkọ̀ ayọ́kẹ́lẹ́. Lónìí, a ń lo àwọn kóòdù QR ní ọ̀pọ̀lọpọ̀ àwọn ibi nínú ìpolówó, iṣẹ́ àlejò, ìkólórí, àti ìbáṣepọ̀ iṣẹ́-owó. Wọ́n gbajúmọ̀ ní pàtàkì lásìkò àjàkálẹ̀-àrùn COVID-19, nígbà tí àwọn ilé oúnjẹ bẹ̀rẹ̀ sí rọ́pò àwọn atọ̀kà tí a tẹ̀ pẹ̀lú àwọn kóòdù QR.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Bí o ṣe lè lo olùpìlẹ̀ṣẹ̀ kóòdù QR òfẹ́ẹ́",
       "description": "Ṣíṣẹ̀dá kóòdù QR gba ìṣẹ́jú díẹ̀ péré:",
       "grid": "three",
       "items": [
-        { "title": "1. Yan irú data", "description": "Yan ohun tí o fẹ́ kó sínú: URL, ọ̀rọ̀, káàdì owò vCard, ìméèlì, tàbí nọ́mbà foonù." },
-        { "title": "2. Tẹ data", "description": "Kún àwọn aaye tí ó yẹ — àdírẹ́sì ojú-ìwé, àwọn àlàyé ìbáṣepọ̀, tàbí àkóónú ìfiránṣẹ́." },
-        { "title": "3. Gbà kóòdù", "description": "Ṣàtò ìrísí (àwọn awọ̀, ìwọn, àlà àyìká) kí o sì gbà gẹ́gẹ́ bí PNG tàbí SVG." }
+        {
+          "title": "1. Yan irú data",
+          "description": "Yan ohun tí o fẹ́ kó sínú: URL, ọ̀rọ̀, káàdì owò vCard, ìméèlì, tàbí nọ́mbà foonù."
+        },
+        {
+          "title": "2. Tẹ data",
+          "description": "Kún àwọn aaye tí ó yẹ — àdírẹ́sì ojú-ìwé, àwọn àlàyé ìbáṣepọ̀, tàbí àkóónú ìfiránṣẹ́."
+        },
+        {
+          "title": "3. Gbà kóòdù",
+          "description": "Ṣàtò ìrísí (àwọn awọ̀, ìwọn, àlà àyìká) kí o sì gbà gẹ́gẹ́ bí PNG tàbí SVG."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Àwọn irú kóòdù QR — URL, vCard, ìméèlì, foonù, ọ̀rọ̀",
@@ -100,18 +136,32 @@
           "title": "Káàdì owò vCard",
           "description": "Káàdì owò dígítà pẹ̀lú data ìbáṣepọ̀ (orúkọ, ilé-iṣẹ́, foonù, ìméèlì, àdírẹ́sì). Lẹ́yìn ṣíṣe àyẹ̀wò, foonù pèsè láti fipamọ́ ìbáṣepọ̀. Pípé fún àwọn káàdì owò alámòòdájú."
         },
-        { "icon": "RiMailLine", "title": "Ìméèlì", "description": "Àdírẹ́sì ìméèlì pẹ̀lú àkọlé àti àkóónú tí kò jẹ́ dandan. Lẹ́yìn ṣíṣe àyẹ̀wò, foonù ṣí àpù méèlì pẹ̀lú fọ́ọ̀mù tí a ti kún tẹ́lẹ̀." },
-        { "icon": "RiPhoneLine", "title": "Foonù", "description": "Nọ́mbà foonù. Lẹ́yìn ṣíṣe àyẹ̀wò, foonù pèsè láti pe. Wúlò fún àwọn ìlà gbígbóná àti ìtìlẹ́yìn oníbàárà." }
+        {
+          "icon": "RiMailLine",
+          "title": "Ìméèlì",
+          "description": "Àdírẹ́sì ìméèlì pẹ̀lú àkọlé àti àkóónú tí kò jẹ́ dandan. Lẹ́yìn ṣíṣe àyẹ̀wò, foonù ṣí àpù méèlì pẹ̀lú fọ́ọ̀mù tí a ti kún tẹ́lẹ̀."
+        },
+        {
+          "icon": "RiPhoneLine",
+          "title": "Foonù",
+          "description": "Nọ́mbà foonù. Lẹ́yìn ṣíṣe àyẹ̀wò, foonù pèsè láti pe. Wúlò fún àwọn ìlà gbígbóná àti ìtìlẹ́yìn oníbàárà."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Àwọn pàtó ìmọ̀-ẹ̀rọ̀ kóòdù QR",
       "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Àgbára</span><span class=\"text-mid text-sm!\">títí dé àmì-lẹ́tà 4,296</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Àtúnṣe àṣìsẹ</span><span class=\"text-mid text-sm!\">7% – 30%</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Ìwọn têtê kéréjù</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Ìyàtọ̀ kéréjù</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Àlà àyìká</span><span class=\"text-mid text-sm!\">kéréjù módúùlù 4</span></div></div>",
       "html": "<p class=\"text-mid mb-4\">Mímọ̀ àwọn pàtó ìmọ̀-ẹ̀rọ̀ ràn ọ́ lọ́wọ́ láti ṣẹ̀dá àwọn kóòdù QR tí a lè kà ní gbogbo ipò:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Àgbára data</strong> — kóòdù QR lè di títí dé nọ́mbà 7,089, àmì-lẹ́tà-nọ́mbà 4,296, tàbí byte 2,953 ti data binary. Ní àṣà ìṣe, èyí tó jù fún àwọn URL àti àwọn káàdì owò.</li><li><strong>Àtúnṣe àṣìsẹ Reed-Solomon</strong> — algorithm ìṣirò tí ó jẹ́ kí a lè kà kóòdù bí ó tilẹ̀ jẹ́ pé apá kan rẹ̀ ti bajẹ́ tàbí bò. Àwọn ìpele: L (7%), M (15%), Q (25%), H (30%).</li><li><strong>Àlà àyìká</strong> — agbègbè funfun ní àyìká kóòdù tí a nílò fún ṣíṣe àyẹ̀wò tí ó dára. Kéréjù tí a ṣe àbá jẹ́ módúùlù 4 (àwọn ẹ̀yà kóòdù).</li><li><strong>Ìwọn têtê kéréjù</strong> — fún àwọn ipò ṣíṣe àyẹ̀wò ìbílẹ̀, kóòdù yẹ kí ó kéré jù 2×2 cm. Fún têtê ìwọn ńlá (àwọn bánà, àwọn pátákó ìpolówó), mú ìwọn tóbi bákannáà.</li><li><strong>Ìyàtọ̀</strong> — ìwọ̀n ìyàtọ̀ láàárín kóòdù àti ìpilẹ̀ yẹ kí ó kéré jù 3:1. Olùpìlẹ̀ṣẹ̀ náà kìlọ̀ ní aìfọ̀wọ́ nípa ìyàtọ̀ tí ó kéré jù.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Àwọn ìlò kóòdù QR — àwọn káàdì owò, àwọn ìwé ìpolówó, àwọn atọ̀kà ilé oúnjẹ",
@@ -128,16 +178,47 @@
           "title": "Àwọn atọ̀kà ilé oúnjẹ àti kafé",
           "description": "Kóòdù QR lórí tábìlì darí sí atọ̀kà dígítà. Ojútùú ìmọ́tótó tí ó gbajúmọ̀ láti ìgbà àjàkálẹ̀-àrùn COVID-19."
         },
-        { "icon": "RiPrinterLine", "title": "Àwọn ìwé ìpolówó àti pósítà", "description": "Kóòdù QR pẹ̀lú ìjápọ̀ sí ojú-ìwé ọjà, fọ́ọ̀mù ìforukọ̀sílẹ̀, tàbí ìpèsè pàtàkì." },
-        { "icon": "RiBuilding2Line", "title": "Àpò ọjà", "description": "Ìjápọ̀ sí ìtọ́sọ́nà olùlò, káàdì ìdánilójú, tàbí ojú-ìwé olùṣèpèsè." },
-        { "icon": "RiHospitalLine", "title": "Àwọn ọ́fíìsì ìlera", "description": "Àwọn kóòdù QR lórí káàdì aláìsàn tí ó so mọ́ portal aláìsàn tàbí ètò ìpàdé ìpèdè." },
-        { "icon": "RiHome4Line", "title": "Ohun-ìní", "description": "Àwọn kóòdù lórí àwọn bánà tí ó so mọ́ àkójọ kíkún pẹ̀lú gbàlẹ̀rì fọ́tò àti àwọn àlàyé." },
-        { "icon": "RiTruckLine", "title": "Àwọn ilé ìpamọ́ àti ìkólórí", "description": "Àwọn àmì QR fún mímọ àwọn ìpín ọjà, àwọn ipò ilé ìpamọ́, àti ìtàn gbígbé." },
-        { "icon": "RiShoppingCartLine", "title": "Ìtajà ayélujára", "description": "Àwọn kóòdù lórí àpò tí ó so mọ́ àwọn ìtọ́sọ́nà ìpadà, àwọn àtúnyẹ̀wò oníbàárà, tàbí àwọn ètò ìṣòtítọ́." },
-        { "icon": "RiCalendarEventLine", "title": "Àwọn ìṣẹ̀lẹ̀ àti àwọn àpéjọ", "description": "Àwọn tíkẹ́tì pẹ̀lú àwọn kóòdù QR fún ìfọ̀wọ́sí kíákíá ní ẹnubodè." }
+        {
+          "icon": "RiPrinterLine",
+          "title": "Àwọn ìwé ìpolówó àti pósítà",
+          "description": "Kóòdù QR pẹ̀lú ìjápọ̀ sí ojú-ìwé ọjà, fọ́ọ̀mù ìforukọ̀sílẹ̀, tàbí ìpèsè pàtàkì."
+        },
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Àpò ọjà",
+          "description": "Ìjápọ̀ sí ìtọ́sọ́nà olùlò, káàdì ìdánilójú, tàbí ojú-ìwé olùṣèpèsè."
+        },
+        {
+          "icon": "RiHospitalLine",
+          "title": "Àwọn ọ́fíìsì ìlera",
+          "description": "Àwọn kóòdù QR lórí káàdì aláìsàn tí ó so mọ́ portal aláìsàn tàbí ètò ìpàdé ìpèdè."
+        },
+        {
+          "icon": "RiHome4Line",
+          "title": "Ohun-ìní",
+          "description": "Àwọn kóòdù lórí àwọn bánà tí ó so mọ́ àkójọ kíkún pẹ̀lú gbàlẹ̀rì fọ́tò àti àwọn àlàyé."
+        },
+        {
+          "icon": "RiTruckLine",
+          "title": "Àwọn ilé ìpamọ́ àti ìkólórí",
+          "description": "Àwọn àmì QR fún mímọ àwọn ìpín ọjà, àwọn ipò ilé ìpamọ́, àti ìtàn gbígbé."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Ìtajà ayélujára",
+          "description": "Àwọn kóòdù lórí àpò tí ó so mọ́ àwọn ìtọ́sọ́nà ìpadà, àwọn àtúnyẹ̀wò oníbàárà, tàbí àwọn ètò ìṣòtítọ́."
+        },
+        {
+          "icon": "RiCalendarEventLine",
+          "title": "Àwọn ìṣẹ̀lẹ̀ àti àwọn àpéjọ",
+          "description": "Àwọn tíkẹ́tì pẹ̀lú àwọn kóòdù QR fún ìfọ̀wọ́sí kíákíá ní ẹnubodè."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Ṣíṣàtò ìrísí kóòdù QR",
@@ -145,32 +226,90 @@
       "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Ìwọn</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Àlà àyìká</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Awọ̀ kóòdù</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Awọ̀ ìpilẹ̀</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
       "html": "<p class=\"text-mid mb-4\">Olùpìlẹ̀ṣẹ̀ náà jẹ́ kí o ṣàtò àwọn pàtó púpọ̀ tí ó ní ipa lórí ìrísí àti mímọ̀ kà kóòdù:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Ìwọn (px)</strong> — ìwọn kóòdù ní pixels. Fún têtê ìbílẹ̀ (àwọn ìwé ìpolówó, àwọn káàdì owò) yan 300–500 px. Fún ìlò dígítà, 150–200 px tó.</li><li><strong>Àlà àyìká</strong> — agbègbè funfun ní àyìká kóòdù tí a nílò fún ṣíṣe àyẹ̀wò tí ó dára. Ìyẹ tí a ṣe àbá jẹ́ 2–4. Ìyẹ 0 lè mú ṣíṣe àyẹ̀wò ṣòro lórí ìpilẹ̀ dúdú.</li><li><strong>Awọ̀ kóòdù QR</strong> — dúdú ní àbáwọlé (#000000). O lè yí padà sí awọ̀ dúdú èyíkéyìí tí ó bá ìdánìmọ̀ ojú rẹ mu.</li><li><strong>Awọ̀ ìpilẹ̀</strong> — funfun ní àbáwọlé (#ffffff). O lè yí padà sí awọ̀ fẹ́ẹ́rẹ̀fẹ́ èyíkéyìí. Olùpìlẹ̀ṣẹ̀ yóò kìlọ̀ tí ìyàtọ̀ bá kéré jù.</li></ul><p class=\"text-mid mt-3\"><strong>Àbá:</strong> Pa ìyàtọ̀ gíga mọ́ láàárín kóòdù àti ìpilẹ̀ (kéréjù 3:1). Kóòdù dúdú lórí ìpilẹ̀ fẹ́ẹ́rẹ̀fẹ́ rọrùn jùlọ láti ṣe àyẹ̀wò.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Àwọn ìpele àtúnṣe àṣìsẹ — L, M, Q, H",
       "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Kékeré)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Àárín)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Ìdamẹ́rin)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (Gíga)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
       "html": "<p class=\"text-mid mb-4\">Àtúnṣe àṣìsẹ jẹ́ ètò tí ó jẹ́ kí a lè kà kóòdù QR bí ó tilẹ̀ jẹ́ pé apá kan rẹ̀ ti bajẹ́, dọ̀tí, tàbí bò. Olùpìlẹ̀ṣẹ̀ náà lo algorithm Reed-Solomon, ìbílẹ̀ nínú àwọn kóòdù QR.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Kékeré) — 7%</strong> — àṣekún tí ó kéré jùlọ, kóòdù rọ̀rùn jùlọ. Yan nígbà tí a óò lo kóòdù ní àwọn ipò tí ó dára (ojú-ìbòjú, têtê dídára gíga).</li><li><strong>M (Àárín) — 15%</strong> — ìyẹ àbáwọlé, ìwọ̀ntúnwọ̀nsí tí ó dára láàárín àgbára àti agídí. Ó yẹ fún ọ̀pọ̀lọpọ̀ àwọn ìlò.</li><li><strong>Q (Ìdamẹ́rin) — 25%</strong> — agídí tí ó tóbi sí i sí ìbajẹ́. Yan fún àwọn kóòdù tí a tẹ̀ lórí àwọn ohun èlò tí ó sábà dọ̀tí.</li><li><strong>H (Gíga) — 30%</strong> — agídí tí ó ga jùlọ. A ṣe àbá fún àwọn ohun èlò têtê ní ìta, àwọn àpò, àti àwọn ipò tí kóòdù lè bò ní apá kan (bí àpẹẹrẹ, àmì ìdánìmọ̀ ní àárín).</li></ul><p class=\"text-mid mt-3\"><strong>Àkíyèsí:</strong> Ìpele àtúnṣe tí ó ga sí i túmọ̀ sí kóòdù tí ó tóbi sí i tí ó sì ṣòro sí i. Pẹ̀lú data púpọ̀ àti ìpele H, kóòdù lè di pọ̀ púpọ̀.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionFeatureComparison",
       "title": "PNG vs SVG — ònà wo ni kí o yan fún têtê?",
       "plans": [
-        { "id": "png", "name": "PNG (raster)" },
-        { "id": "svg", "name": "SVG (vector)", "highlighted": true }
+        {
+          "id": "png",
+          "name": "PNG (raster)"
+        },
+        {
+          "id": "svg",
+          "name": "SVG (vector)",
+          "highlighted": true
+        }
       ],
       "features": [
-        { "name": "Àwọn ojú-ìwé ayélujára àti àjọlò", "values": { "png": true, "svg": true } },
-        { "name": "Àwọn ìwé ìpolówó àti àwọn káàdì owò", "values": { "png": true, "svg": true } },
-        { "name": "Àwọn pósítà àti bánà (ìwọn ńlá)", "values": { "png": false, "svg": true } },
-        { "name": "Yíyí ìwọn padà láìsí ìpàdánú dídára", "values": { "png": false, "svg": true } },
-        { "name": "Ṣíṣàtúnṣe nínú ètò àwòrán", "values": { "png": false, "svg": true } },
-        { "name": "Ìwọn fáìlì tí ó kéré sí i", "values": { "png": false, "svg": true } },
-        { "name": "Àwọn ìgbékalẹ̀", "values": { "png": true, "svg": true } }
+        {
+          "name": "Àwọn ojú-ìwé ayélujára àti àjọlò",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Àwọn ìwé ìpolówó àti àwọn káàdì owò",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Àwọn pósítà àti bánà (ìwọn ńlá)",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Yíyí ìwọn padà láìsí ìpàdánú dídára",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Ṣíṣàtúnṣe nínú ètò àwòrán",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Ìwọn fáìlì tí ó kéré sí i",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Àwọn ìgbékalẹ̀",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Àwọn àbá têtê kóòdù QR",
@@ -182,17 +321,32 @@
           "title": "Ìwọn kéréjù",
           "description": "Kóòdù yẹ kí ó kéré jù 2×2 cm fún ṣíṣe àyẹ̀wò ní nítòsí. Bí àyè ṣíṣe àyẹ̀wò ṣe jìnnà sí i, bẹ́ẹ̀ ni kóòdù gbọ́dọ̀ tóbi sí i."
         },
-        { "icon": "RiContrastLine", "title": "Ìyàtọ̀", "description": "Kóòdù dúdú lórí ìpilẹ̀ fẹ́ẹ́rẹ̀fẹ́. Yagò fún àwọn awọ̀ pastel àti ìyàtọ̀ kékeré." },
+        {
+          "icon": "RiContrastLine",
+          "title": "Ìyàtọ̀",
+          "description": "Kóòdù dúdú lórí ìpilẹ̀ fẹ́ẹ́rẹ̀fẹ́. Yagò fún àwọn awọ̀ pastel àti ìyàtọ̀ kékeré."
+        },
         {
           "icon": "RiLayoutGridLine",
           "title": "Àlà àyìká kóòdù",
           "description": "Pa àyè ṣófo mọ́ ní àyìká kóòdù. Má ṣe fi àwọn ẹ̀yà àwòrán mìíràn sí nítòsí jù — àlà àyìká ṣe pàtàkì fún ṣíṣe àyẹ̀wò tí ó dára."
         },
-        { "icon": "RiEyeLine", "title": "Ìdánwò", "description": "Ṣáájú têtê ọ̀pọ̀lọpọ̀, dán kóòdù wò lórí àwọn foonù oríṣìríṣì àti ní àwọn ipò ìmọ́lẹ̀ oríṣìríṣì." },
-        { "icon": "RiShieldCheckLine", "title": "Ìpele àtúnṣe", "description": "Fún têtê ní ìta àti àwọn ohun èlò tí ó sábà bajẹ́, yan ìpele Q tàbí H." }
+        {
+          "icon": "RiEyeLine",
+          "title": "Ìdánwò",
+          "description": "Ṣáájú têtê ọ̀pọ̀lọpọ̀, dán kóòdù wò lórí àwọn foonù oríṣìríṣì àti ní àwọn ipò ìmọ́lẹ̀ oríṣìríṣì."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Ìpele àtúnṣe",
+          "description": "Fún têtê ní ìta àti àwọn ohun èlò tí ó sábà bajẹ́, yan ìpele Q tàbí H."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Kí ni tí ó mú olùpìlẹ̀ṣẹ̀ kóòdù QR yìí yàtọ̀?",
@@ -218,11 +372,22 @@
           "title": "Ìpele àtúnṣe àṣìsẹ mẹ́rin",
           "description": "Algorithm Reed-Solomon jẹ́ kí o yan agídí kóòdù sí ìbajẹ́ — láti 7% (L) sí 30% (H). Àwọn ìpele gíga wúlò fún têtê lórí àwọn ohun èlò tí ó sábà dọ̀tí."
         },
-        { "icon": "RiEyeLine", "title": "Ìwòràn ní àkókó", "description": "O rí èsì lẹ́sẹ̀kẹsẹ̀ lẹ́yìn títẹ data, láìsí títẹ &quot;Ṣẹ̀dá&quot;." },
-        { "icon": "RiDownloadLine", "title": "Ìmújáde PNG àti SVG", "description": "Gbà kóòdù ní ònà tí ó yẹ fún ìlò rẹ." }
+        {
+          "icon": "RiEyeLine",
+          "title": "Ìwòràn ní àkókó",
+          "description": "O rí èsì lẹ́sẹ̀kẹsẹ̀ lẹ́yìn títẹ data, láìsí títẹ &quot;Ṣẹ̀dá&quot;."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Ìmújáde PNG àti SVG",
+          "description": "Gbà kóòdù ní ònà tí ó yẹ fún ìlò rẹ."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Àwọn ìbéèrè tí a máa ń béèrè nípa olùpìlẹ̀ṣẹ̀ kóòdù QR",
@@ -270,8 +435,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Ṣàwárí àwọn irìnṣé òfẹ́ẹ́ mìíràn" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ṣàwárí àwọn irìnṣé òfẹ́ẹ́ mìíràn"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

@@ -2,8 +2,8 @@
   "toolKey": "emailSignature",
   "locale": "ha",
   "metadata": {
-    "title": "Mai Samar da Sa Hannu na Imel Kyauta – HTML don Gmail & Outlook",
-    "description": "Ƙirƙiri sa hannun imel na HTML na ƙwararru ba tare da shirye-shiryen kwamfuta ba. Ƙara bayanan tuntubar, alama, hanyoyin haɗin kafofin watsa labarai kuma kwafa zuwa Gmail ko Outlook. Ba buƙatar rajista, ba iyaka.",
+    "title": "Mai Samar da Sa Hannu na Imel Kyauta – HTML don Gmail &",
+    "description": "Ƙirƙiri sa hannun imel na HTML na ƙwararru ba tare da shirye-shiryen kwamfuta ba. Ƙara bayanan tuntubar, alama, hanyoyin haɗin kafofin watsa labarai kuma.",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
     "path": "/ha/kayan-aiki/samar-da-sa-hannu-imel-kyauta"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/ha/kayan-aiki", "label": "Kayan Aiki" },
-    "third": { "href": "/ha/kayan-aiki/samar-da-sa-hannu-imel-kyauta", "label": "Mai samar da sa hannun imel" }
+    "second": {
+      "href": "/ha/kayan-aiki",
+      "label": "Kayan Aiki"
+    },
+    "third": {
+      "href": "/ha/kayan-aiki/samar-da-sa-hannu-imel-kyauta",
+      "label": "Mai samar da sa hannun imel"
+    }
   },
   "schemas": {
     "software": {
@@ -46,17 +52,26 @@
       "description": "Yadda ake ƙirƙirar sa hannun imel na HTML na ƙwararru ta amfani da mai samar da Arteon kyauta.",
       "totalTime": "PT5M",
       "steps": [
-        { "name": "Zaɓi tsarin sa hannu", "text": "Zaɓi ɗaya daga cikin tsare-tsare takwas da ke akwai: Standard, Top bar, Labels left, Centered, Compact, Two columns, Minimalist, ko Bottom bar." },
+        {
+          "name": "Zaɓi tsarin sa hannu",
+          "text": "Zaɓi ɗaya daga cikin tsare-tsare takwas da ke akwai: Standard, Top bar, Labels left, Centered, Compact, Two columns, Minimalist, ko Bottom bar."
+        },
         {
           "name": "Cika bayanan tuntubar",
           "text": "A cikin shafin Details, shigar da sunanka, taken, kamfanin, imel, waya, da URL na gidan yanar gizo. A zaɓi ka ƙara avatar ko alama - bayan shigar da URL na hoto, za ka iya zaɓar siffa (zagaye, daɓɓe, murabba'i) da girma (40, 56, ko 72 px)."
         },
-        { "name": "Ƙara maɓallai na CTA", "text": "A cikin shafin Buttons, ƙara rubutu da URL don babban maɓalli. A zaɓi ka ƙara maɓalli na biyu na salon outline kuma zaɓi zagayewar maɓalli." },
+        {
+          "name": "Ƙara maɓallai na CTA",
+          "text": "A cikin shafin Buttons, ƙara rubutu da URL don babban maɓalli. A zaɓi ka ƙara maɓalli na biyu na salon outline kuma zaɓi zagayewar maɓalli."
+        },
         {
           "name": "Ƙara hanyoyin haɗin kafofin watsa labarai",
           "text": "A cikin shafin Social Media, liƙa URL zuwa bayanan martaba naka. Dandamali da ake tallafawa: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, da Pinterest."
         },
-        { "name": "Gyara bayyanar", "text": "A cikin shafin Appearance, zaɓi jigon launi, font, da girman rubutu. A cikin shafin Text Style, canza launuka da girman abubuwa ɗaya-ɗaya." },
+        {
+          "name": "Gyara bayyanar",
+          "text": "A cikin shafin Appearance, zaɓi jigon launi, font, da girman rubutu. A cikin shafin Text Style, canza launuka da girman abubuwa ɗaya-ɗaya."
+        },
         {
           "name": "Ƙara sanarwar doka kuma tsara mai raba",
           "text": "A cikin shafin Disclaimer / Legal, shigar da rubutun doka kuma tsara layin raba - zaɓi salon (solid, dashed, dotted), kauri (1–3 px), da launi."
@@ -69,80 +84,125 @@
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Me ya sa ake buƙatar sa hannun imel na ƙwararru?",
       "html": "<p class=\"text-mid\">Sa hannun imel (wanda kuma ake kira ƙafafun imel) toshe ne na bayanai a ƙarshen kowane saƙon da aka aika. Ya ƙunshi bayanan tuntubar, taken aiki, sunan kamfanin, kuma galibi hanyar haɗi zuwa gidan yanar gizo ko kalandar taro.</p><p class=\"text-mid mt-3\">Mai karɓa ba zai buƙaci neman lambar waya a cikin saƙonnin da suka gabata ba - dukan bayanan suna nan a shirye. Sa hannun imel na ƙwararru kuma yana nuna cewa kana kula da daki-daki kuma kana kiyaye hoton kamfanin mai daidaituwa a cikin wasiƙun kasuwanci.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Yadda ake amfani da mai samar da sa hannun imel",
       "description": "Ƙirƙirar sa hannun imel na ƙwararru yana ɗaukar mintuna kaɗan kawai:",
       "grid": "three",
       "items": [
-        { "title": "1. Shigar da bayanan", "description": "Cika sunanka, taken, kamfanin, da bayanan tuntubar." },
-        { "title": "2. Gyara bayyanar", "description": "Zaɓi tsari, launuka, ƙara alama, da hanyoyin haɗin kafofin watsa labarai." },
-        { "title": "3. Kwafa lambar", "description": "Maɓallin Kwafa sa hannu yana kwafa lambar da ta shirya zuwa clipboard. Kawai liƙa shi a cikin Gmail, Outlook, ko wani abokin ciniki na imel." }
+        {
+          "title": "1. Shigar da bayanan",
+          "description": "Cika sunanka, taken, kamfanin, da bayanan tuntubar."
+        },
+        {
+          "title": "2. Gyara bayyanar",
+          "description": "Zaɓi tsari, launuka, ƙara alama, da hanyoyin haɗin kafofin watsa labarai."
+        },
+        {
+          "title": "3. Kwafa lambar",
+          "description": "Maɓallin Kwafa sa hannu yana kwafa lambar da ta shirya zuwa clipboard. Kawai liƙa shi a cikin Gmail, Outlook, ko wani abokin ciniki na imel."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Yadda ake cika bayanan sa hannu",
       "html": "<p class=\"text-mid\">Shafin <strong>Details</strong> ya ƙunshi dukan filayen da za ka iya cikawa. Biyu ne kawai ake buƙata: suna da adireshin imel. Sauran filayen na zaɓi ne kuma za su bayyana a cikin sa hannu ne kawai lokacin da aka cika su.</p><h3 class=\"h5 mt-6 mb-3\">Filaye a cikin shafin Details</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Layin sama da suna</strong> - ƙarin rubutu da ake nuna sama da sunan. Za ka iya shigar da sunan kamfanin, taken, ko taken yabo.</li><li><strong>Avatar / alama (URL na hoto)</strong> - URL zuwa hoton bayanan martaba ko alamar kamfanin. Hoton ya kamata ya zama murabba'i (min. 120×120 px) kuma ana iya samunsa a bainar jama'a ta yanar gizo. Bayan liƙa URL, ƙarin zaɓuɓɓuka sun bayyana: <strong>Siffar avatar</strong> (zagaye, daɓɓe, ko murabba'i) da <strong>Girman avatar</strong> (ƙarami - 40 px, matsakaici - 56 px, babba - 72 px).</li><li><strong>Cikakken suna</strong> - filin da ake buƙata. Shigar da cikakken sunanka.</li><li><strong>Alamar suna</strong> - gajeren rubutu kusa da sunan, misali, karin suna ko gajeriyar taken.</li><li><strong>Taken aiki</strong> - matsayinka a cikin kamfanin, misali, Manajan Tallace-tallace, Ƙwararren Tallace-tallace.</li><li><strong>Sunan kamfanin</strong> - sunan ƙungiyar da kake wakilta.</li><li><strong>Ƙarin layi</strong> - gajeren bayani game da abin da kake yi ko abin da kake bayarwa.</li><li><strong>Imel</strong> - filin da ake buƙata. Shigar da adireshin imel na kasuwancin ka.</li><li><strong>Waya</strong> - lambar tuntubar. Kowane tsari, misali, +1 555 000 000.</li><li><strong>Gidan yanar gizo</strong> - cikakken URL na gidan yanar gizon ka, yana farawa da https://.</li><li><strong>Adireshi</strong> - adireshin kamfanin na zahiri (titi, birni, lambar gidan waya).</li><li><strong>Bayanan hukuma</strong> - lambar haraji, lambar lasisi, ko wasu bayanan da ake buƙata a cikin masana'antar ka.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Tsarin sa hannu - wanne za a zaɓa?",
       "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Tsarin sa hannu</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">John Smith</p><p class=\"text-mid text-sm\">Web Developer</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">john@example.com</p><p class=\"text-mid\">+1 555 000 000</p></div></div></div>",
       "html": "<p class=\"text-mid\">Mai samar da yana ba da tsare-tsare takwas da aka riga aka shirya. Kowannensu yana gabatar da bayanai iri ɗaya ta hanya dabam.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> - tsari na tsaye na gargajiya, ya dace da yawancin amfanin.</li><li><strong>Top bar</strong> - sandar a kwance tana raba sa hannu daga abun ciki.</li><li><strong>Labels left</strong> - ginshiƙai biyu: lakabi da ƙimomi.</li><li><strong>Centered</strong> - bayyanar hukuma, abun ciki a tsakiya.</li><li><strong>Compact</strong> - duka a cikin layi ɗaya, ƙaramin tsayi.</li><li><strong>Two columns</strong> - bayanan a hagu, bayanan tuntubar a dama.</li><li><strong>Minimalist</strong> - bayanan da suka fi muhimmanci kawai.</li><li><strong>Bottom bar</strong> - sandar mai launi tare da tuntubar a ƙasan sa hannu.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Yadda ake ƙara maɓallai na CTA",
       "html": "<p class=\"text-mid\">Maɓallin CTA (kira zuwa aiki) abu ne da ake iya dannawa wanda ke jagorantar mai karɓa zuwa shafin da aka zaɓa. Yana iya zama hanyar haɗi zuwa kalandar taro, fom na tuntubar, ko tayin. Mai samar da yana ba da damar ƙara maɓallai na CTA biyu.</p><h3 class=\"h5 mt-6 mb-3\">Babban maɓalli</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Buɗe shafin <strong>Buttons</strong> a cikin edita.</li><li>A cikin sashen <strong>Babban maɓalli</strong>, shigar da rubutun da mai karɓa zai gani, misali, Tsara shawarwari kyauta.</li><li>A cikin filin <strong>Hanyar haɗin CTA</strong>, liƙa cikakken URL. Adireshin dole ya fara da https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Maɓalli na biyu</h3><p class=\"text-mid\">Za ka iya ƙara maɓallin CTA na biyu a salon outline (bayan gaskiya tare da iyaka). Cika filayen a cikin sashen <strong>Maɓalli na biyu</strong> kamar yadda aka yi don babban maɓalli.</p><h3 class=\"h5 mt-6 mb-3\">Zagayewar maɓalli</h3><p class=\"text-mid\">A ƙasan shafin Buttons za ka sami zaɓin <strong>Zagayewar maɓalli</strong>. Bambance-bambance uku suna samuwa: Babu (kusurwa masu kaifi), Kaɗan (an zagaya kaɗan), ko Cikakke (maɓallin oval).</p><p class=\"text-mid mt-4\">Idan ka bar filayen biyu babu komai, maɓallin ba zai bayyana a cikin sa hannu ba. Idan ka cika fili ɗaya kawai, maɓallin ma ba zai bayyana ba - ana buƙatar rubutu da hanyar haɗi duka biyun.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Yadda ake ƙara hanyoyin haɗin kafofin watsa labarai",
       "html": "<p class=\"text-mid\">A cikin shafin <strong>Social Media</strong> za ka iya ƙara hanyoyin haɗi zuwa bayanan martaba naka. Mai samar da yana tallafawa dandamali goma sha biyu: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (tsohuwar Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram, da Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Yadda ake yin shi</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Buɗe shafin <strong>Social Media</strong> a cikin edita.</li><li>Kusa da kowane dandamali za ka sami filin URL. Liƙa cikakken hanyar haɗi zuwa bayanan martaba naka, misali, https://www.linkedin.com/in/yourprofile.</li><li>Cika filayen da kake buƙata kawai. Filayen da babu komai ba za su bayyana a cikin sa hannu ba.</li></ol><h3 class=\"h5 mt-6 mb-3\">Alamomin kafofin watsa labarai</h3><p class=\"text-mid\">A ƙasan shafin Social Media za ka sami zaɓin <strong>Nuna alamomin hoto kusa da sunayen sabis</strong>. Lokacin da aka kunna, hanyoyin haɗi za su nuna a matsayin alamomin SVG masu launi maimakon sunaye kawai.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Girman alama</strong> - zaɓuɓɓuka: Ƙarami (16 px), Matsakaici (20 px), ko Babba (24 px).</li><li><strong>Launin alama</strong> - Launukan dandamali (launuka na asali don kowane dandamali), Launin ƙarfafawa (launin ƙarfafawa mai daidaituwa), ko Launin rubutu.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Gyara bayyanar",
       "html": "<p class=\"text-mid\">A cikin shafin <strong>Appearance</strong> za ka iya gyara launuka, font, da sauran abubuwan gani na sa hannu.</p><h3 class=\"h5 mt-6 mb-3\">Jigogin launuka</h3><p class=\"text-mid\">A saman shafin za ka sami jigogi biyar da aka shirya: Duhu, Shuɗi, Purple, Kore, da Toka. Dannawa jigo yana saita launin ƙarfafawa da launin rubutu ta atomatik. Wannan ita ce hanya mafi sauri don samun bayyanar sa hannu mai daidaituwa.</p><h3 class=\"h5 mt-6 mb-3\">Launuka</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Launin ƙarfafawa</strong> - ana amfani da shi a cikin sandar gefe/sama, maɓallin CTA, da hanyoyin haɗi. Za ka iya zaɓar kowane launi daga fayafayan.</li><li><strong>Launin rubutu</strong> - launin dukan rubutu a cikin sa hannu (suna, bayanan tuntubar, sanarwar doka).</li><li><strong>Launin baya</strong> - launin baya na dukan sa hannu. Fari ne ta asali, amma za ka iya canza shi.</li></ul><h3 class=\"h5 mt-6 mb-3\">Font da girma</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Font</strong> - zaɓuɓɓuka: Arial, Verdana, Tahoma, Trebuchet MS, da Georgia. Duk suna da aminci don imel kuma za su bayyana daidai ga mai karɓa.</li><li><strong>Girman rubutu</strong> - zaɓuɓɓuka uku: Ƙarami (12 px), Standard (14 px), da Mafi girma (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Ƙarin saituna</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Iyakar sa hannu</strong> - za ka iya ƙara iyaka ga sa hannu ta hanyar zaɓar kowane haɗin bangarori (hagu, dama, sama, ƙasa). Zaɓar dukan bangarori yana saita cikakken iyaka ta atomatik. Iyakar tana amfani da launin ƙarfafawa.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Salon rubutu - launuka da girman abubuwa ɗaya-ɗaya",
       "html": "<p class=\"text-mid\">A cikin shafin <strong>Text Style</strong> za ka iya gyara launin da girman font ɗaya-ɗaya don kowane abu na rubutu a cikin sa hannu.</p><h3 class=\"h5 mt-6 mb-3\">Abubuwan da ke akwai</h3><p class=\"text-mid\">Abubuwan da ke da abun ciki a halin yanzu a cikin sa hannu ne kawai ake nuna. Don kowane abu za ka iya saita:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Suna</strong> - ana nuna shi a launin ƙarfafawa ta asali.</li><li><strong>Taken aiki</strong> - matsayi a cikin kamfanin.</li><li><strong>Kamfanin</strong> - sunan ƙungiya.</li><li><strong>Bayanan tuntubar</strong> - imel, waya, gidan yanar gizo (lakabi).</li><li><strong>Kafofin watsa labarai</strong> - hanyoyin haɗin bayanan martaba.</li><li><strong>Sanarwar doka</strong> - rubutun doka a ƙasan sa hannu.</li></ul><h3 class=\"h5 mt-6 mb-3\">Yadda ake canza launi</h3><p class=\"text-mid\">Kusa da kowane abu za ka sami jerin zaɓuɓɓukan launi. Danna murabba'in launi don zaɓar shi. Kuma za ka iya ƙara launi na musamman ta hanyar dannawa murabba'in mai launi tare da ƙari - zaɓi launi kuma danna Ajiye. Launuka na musamman (har zuwa 8) ana raba su tsakanin dukan abubuwa.</p><p class=\"text-mid mt-3\">Maɓallin alamar sake saiti yana mayar da launin asali na abu.</p><h3 class=\"h5 mt-6 mb-3\">Yadda ake canza girma</h3><p class=\"text-mid\">A cikin layi na biyu za ka sami kula da girma tare da maɓallai na - da +. Ƙimar tana nuna bambancin dangane da girman font na tushe (da aka saita a cikin shafin Appearance). Kewayon: daga -4 zuwa +4 pixels.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Tazarar tsakanin abubuwa",
       "html": "<p class=\"text-mid\">A cikin shafin <strong>Spacing</strong> za ka iya sarrafa tazarar tsakanin abubuwan sa hannu ɗaya-ɗaya daidai.</p><h3 class=\"h5 mt-6 mb-3\">Cikakken tazarar sa hannu na ciki</h3><p class=\"text-mid\">A saman shafin za ka sami zaɓin tazarar ciki - nisan tsakanin abun cikin sa hannu da gefunansa. Ƙimomi uku suna samuwa: 8 px (ƙarami), 16 px (matsakaici), da 24 px (babba).</p><h3 class=\"h5 mt-6 mb-3\">Tazarar tsakanin abubuwa</h3><p class=\"text-mid\">Ƙasan tazarar za ka sami kula don abubuwan sa hannu ɗaya-ɗaya. Kowane kula yana da maɓallai na + da - don ƙara ko rage tazara. Zaɓuɓɓuka don abubuwan da ke cikin sa hannu a halin yanzu ne kawai ake nuna.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Bayan suna</strong> - tazarar ƙasan layin suna.</li><li><strong>Bayan taken / kamfanin</strong> - tazarar ƙasan layin taken da sunan kamfanin.</li><li><strong>Bayan ƙarin layi</strong> - tazarar ƙasan bayani (idan an cika).</li><li><strong>Bayan bayanan tuntubar</strong> - tazarar ƙasan imel, waya, da gidan yanar gizo.</li><li><strong>Bayan kafofin watsa labarai</strong> - tazarar ƙasan hanyoyin haɗin bayanan martaba.</li><li><strong>Bayan maɓallin CTA</strong> - tazarar ƙasan maɓalli (idan an kunna).</li><li><strong>Kafin sanarwar doka</strong> - tazarar saman rubutun sanarwar doka.</li></ul><p class=\"text-mid mt-4\">Idan ka share fili (misali, ka cire lambar waya), zaɓin tazara mai dacewa zai ɓace ta atomatik daga shafin.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Sanarwar doka - yaushe za a ƙara ta",
       "html": "<p class=\"text-mid\">A cikin shafin <strong>Disclaimer / Legal</strong> za ka iya ƙara rubutun doka da zai bayyana a ƙasan sa hannu a cikin ƙaramin font.</p><h3 class=\"h5 mt-6 mb-3\">Yaushe za a ƙara sanarwar doka</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Wasiƙun kasuwanci</strong> - sanarwar sirri da buƙatar share idan an yi kuskuren aika.</li><li><strong>Buƙatun masana'anta</strong> - wasu masana'antu (misali, shari'a, likitanci, kuɗi) suna buƙatar takamaiman bayanai a cikin kowane saƙo.</li><li><strong>GDPR</strong> - bayani game da sarrafa bayanan sirri, idan kamfanin mai sarrafa bayanai ne.</li></ul><p class=\"text-mid mt-4\">Ta asali, filin yana cike da misalin rubutun sirri. Za ka iya gyara, share, ko maye gurbinsa da sanarwar doka naka. Idan ka bar filin babu komai, babu sanarwar doka da za ta bayyana a cikin sa hannu.</p><h3 class=\"h5 mt-6 mb-3\">Layin raba</h3><p class=\"text-mid\">Ƙasan filin rubutu za ka sami zaɓin <strong>Nuna mai raba tsakanin bayanan tuntubar da sanarwar doka</strong>. Kunna shi don ƙara layin a kwance tsakanin bayanan tuntubar da sanarwar doka.</p><p class=\"text-mid mt-3\">Bayan kunna layin, ƙarin zaɓuɓɓukan gyara sun bayyana:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Salon layi</strong> - zaɓuɓɓuka: solid, dashed, ko dotted.</li><li><strong>Kaurin layi</strong> - zaɓuɓɓuka uku: 1 px, 2 px, ko 3 px.</li><li><strong>Launin layi</strong> - toka ta asali (#e5e7eb). Za ka iya zaɓar kowane launi daga fayafayan ko mayar da asali ta hanyar dannawa maɓallin Default.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Ajiye ta atomatik da sake saita saituna",
       "html": "<p class=\"text-mid\">Mai samar da yana ajiye dukan saituna ta atomatik a cikin ƙwaƙwalwar browser (localStorage). Bayan sabunta shafin ko sake buɗe kayan aikin, bayanai, tsari, launuka, da dukan sauran zaɓuɓɓuka za a mayar da su.</p><h3 class=\"h5 mt-6 mb-3\">Yaya ajiye ta atomatik ke aiki?</h3><p class=\"text-mid\">Kowane canjin (rubutu, launi, tsari, tazara) ana ajiye shi nan da nan a cikin ƙwaƙwalwar browser. Ajiye yana faruwa ta atomatik a bayan fage - ba tare da dannawa kowane maɓalli ba.</p><h3 class=\"h5 mt-6 mb-3\">Yadda ake sake saita saituna</h3><p class=\"text-mid\">Ƙasan duba sa hannu za ka sami maɓallin <strong>Sake saita bayyanar</strong>. Bayan dannawa, za a nuna tabbatarwar tattaunawa. Tabbatar da sake saita zai mayar da dukan bayanai da saituna zuwa ƙimomin asali. Ba za a iya soke wannan aiki ba.</p><h3 class=\"h5 mt-6 mb-3\">Fitar da shigar da tsari</h3><p class=\"text-mid\">Ƙasan duba sa hannu za ka sami ƙarin maɓallai biyu: <strong>Fitar da saituna</strong> da <strong>Shigar da saituna</strong>. Fitar da yana ajiye dukan bayanai, launuka, tsari, tazara, da salon rubutu zuwa fayil na JSON. Shigar da yana ɗaukar tsarin da aka ajiye a baya daga fayil.</p><p class=\"text-mid mt-3\">Wannan fasalin yana da amfani musamman lokacin da kake son canja tsarin sa hannu tsakanin kwamfutoci, raba saituna tare da abokan aiki, ko kiyaye ajiyar saitunanka kafin sake saita.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Yadda ake kwafa sa hannu zuwa Gmail ko Outlook",
@@ -166,22 +226,40 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Duba sa hannu da zaɓuɓɓukan fitarwa",
       "html": "<p class=\"text-mid\">Bangaren duba yana nuna a gefen dama na edita kuma yana sabuntawa ta atomatik tare da kowane canjin. Duban yana makale, don haka yana ci gaba da kasancewa a gani ko da yayin gungurawa ta hanyar zaɓuɓɓukan gyarawa.</p><h3 class=\"h5 mt-6 mb-3\">Sauya bayan duba</h3><p class=\"text-mid\">Sama da duban za ka sami maɓallai uku na canja baya: <strong>Haske</strong> (bayan toka ta asali), <strong>Duhu</strong> (bayan duhu, yana da amfani don duba iya karatu a kan bayan duhu), da <strong>Checkerboard</strong> (tsarin checkerboard, yana baka damar ganin gaskiya da gefunan sa hannu).</p><h3 class=\"h5 mt-6 mb-3\">Maɓallai na aiki</h3><p class=\"text-mid\">Ƙasan duban za ka sami maɓallai da yawa:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Kwafa sa hannu (Gmail / Outlook)</strong> - yana kwafa sa hannu zuwa clipboard a matsayin HTML mai tsari. Liƙa shi kai tsaye a cikin saituna na sa hannu.</li><li><strong>Kwafa lambar HTML</strong> - yana kwafa lambar HTML ta asali na sa hannu zuwa clipboard. Yana da amfani lokacin da kake son liƙa lambar a cikin editan HTML ko CMS.</li><li><strong>Sauke a matsayin HTML</strong> - yana ajiye lambar sa hannu a matsayin fayil na .html zuwa faifai. Yana da amfani don ajiya ko raba tare da mai haɓakawa.</li><li><strong>Duba lambar HTML</strong> - yana buɗe modal tare da cikakken lambar tushe na HTML na sa hannu. Za ka iya duba lambar kuma ka kwafa ta kai tsaye daga modal.</li><li><strong>Fitar da saituna</strong> - yana ajiye cikakken tsarin sa hannu (bayanai, launuka, tsari, tazara, salon) zuwa fayil na JSON.</li><li><strong>Shigar da saituna</strong> - yana ɗaukar tsari daga fayil na JSON. Za a yi amfani da dukan saituna ta atomatik.</li><li><strong>Sake saita bayyanar</strong> - yana mayar da dukan bayanai da saituna zuwa ƙimomin asali (bayan tabbatarwa).</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Wa ne mai ƙirƙirar sa hannun imel yake don su?",
       "description": "Kayan aikin sa hannun imel yana da amfani ga duk wanda ke aika imeloli na kasuwanci:",
       "grid": "two",
       "items": [
-        { "icon": "RiBriefcaseLine", "title": "Masu kasuwanci da masu zaman kansu", "description": "Sa hannu na ƙwararru a cikin kowane saƙo ba tare da ɗaukar mai zane ba." },
-        { "icon": "RiTeamLine", "title": "Ƙungiyoyin kamfanin", "description": "Kowane ma'aikaci yana ƙirƙirar sa hannunsa a cikin salon iri ɗaya. Asali mai daidaituwa a dukan kamfanin." },
-        { "icon": "RiHandCoinLine", "title": "Wakilan tallace-tallace", "description": "Maɓallin CTA tare da hanyar haɗi zuwa kalandar ko tayin yana ƙara damar yin ajiyar taro." },
+        {
+          "icon": "RiBriefcaseLine",
+          "title": "Masu kasuwanci da masu zaman kansu",
+          "description": "Sa hannu na ƙwararru a cikin kowane saƙo ba tare da ɗaukar mai zane ba."
+        },
+        {
+          "icon": "RiTeamLine",
+          "title": "Ƙungiyoyin kamfanin",
+          "description": "Kowane ma'aikaci yana ƙirƙirar sa hannunsa a cikin salon iri ɗaya. Asali mai daidaituwa a dukan kamfanin."
+        },
+        {
+          "icon": "RiHandCoinLine",
+          "title": "Wakilan tallace-tallace",
+          "description": "Maɓallin CTA tare da hanyar haɗi zuwa kalandar ko tayin yana ƙara damar yin ajiyar taro."
+        },
         {
           "icon": "RiScales3Line",
           "title": "Lauyoyi, masu lissafi, likitoci",
@@ -189,32 +267,66 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Menene ke sa wannan mai samar da sa hannun imel na HTML ya bambanta?",
       "grid": "three",
       "items": [
-        { "icon": "RiInfinityLine", "title": "Tsare-tsaren sa hannu takwas", "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist, da bottom bar." },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Tsare-tsaren sa hannu takwas",
+          "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist, da bottom bar."
+        },
         {
           "icon": "RiUserLine",
           "title": "Ajiye ta atomatik a cikin browser",
           "description": "Ana ajiye kowane canjin ta atomatik a cikin ƙwaƙwalwar browser. Bayan sabunta shafin, sa hannu yana ci gaba da kasancewa."
         },
-        { "icon": "RiTranslate2", "title": "Fitar da shigar da tsari", "description": "Ana iya fitar da cikakken tsarin sa hannu a matsayin fayil na JSON kuma a raba shi tare da abokan aiki." },
+        {
+          "icon": "RiTranslate2",
+          "title": "Fitar da shigar da tsari",
+          "description": "Ana iya fitar da cikakken tsarin sa hannu a matsayin fayil na JSON kuma a raba shi tare da abokan aiki."
+        },
         {
           "icon": "RiAppsLine",
           "title": "Dandamali 12 na kafofin watsa labarai",
           "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, da Pinterest."
         },
-        { "icon": "RiPaletteLine", "title": "Gyara ci gaba", "description": "Siffar avatar da girma, salon layi, launuka da girman rubutu ɗaya-ɗaya." },
-        { "icon": "RiFileCodeLine", "title": "Zaɓuɓɓukan fitarwa da yawa", "description": "Kwafa HTML, sauke fayil, duba lambar tushe, fitar/shigar da tsarin JSON." },
-        { "icon": "RiShieldCheckLine", "title": "Sirri", "description": "Ba a aika bayanai zuwa sabar ba. Mai samar da yana aiki gaba ɗaya a cikin browser." },
-        { "icon": "RiMailCheckLine", "title": "Dacewa", "description": "Lambar HTML da aka samar tana aiki a cikin Gmail, Outlook, Apple Mail, da Thunderbird." },
-        { "icon": "RiEyeLine", "title": "Duba kai tsaye", "description": "Kowane canjin yana bayyana nan da nan a kan bayan haske, duhu, ko checkerboard." }
+        {
+          "icon": "RiPaletteLine",
+          "title": "Gyara ci gaba",
+          "description": "Siffar avatar da girma, salon layi, launuka da girman rubutu ɗaya-ɗaya."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Zaɓuɓɓukan fitarwa da yawa",
+          "description": "Kwafa HTML, sauke fayil, duba lambar tushe, fitar/shigar da tsarin JSON."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Sirri",
+          "description": "Ba a aika bayanai zuwa sabar ba. Mai samar da yana aiki gaba ɗaya a cikin browser."
+        },
+        {
+          "icon": "RiMailCheckLine",
+          "title": "Dacewa",
+          "description": "Lambar HTML da aka samar tana aiki a cikin Gmail, Outlook, Apple Mail, da Thunderbird."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Duba kai tsaye",
+          "description": "Kowane canjin yana bayyana nan da nan a kan bayan haske, duhu, ko checkerboard."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Tambayoyin da ake yawan yi game da mai samar da sa hannun imel",
@@ -240,7 +352,10 @@
           "question": "Zan iya ƙara alamomin kafofin watsa labarai na musamman?",
           "answer": "Mai samar da yana ba da alamomin SVG da aka gina a ciki don dandamali goma sha biyu: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, da Pinterest. Kunna zaɓin Nuna alamomin hoto a cikin shafin Social Media. Za ka iya zaɓar girman alama da launi (launukan dandamali, launin ƙarfafawa, ko launin rubutu)."
         },
-        { "question": "Maɓallin kwafa ba ya aiki - me ya sa?", "answer": "Don kwafa sa hannu, cika aƙalla filaye biyu: suna da adireshin imel. Tabbatar cewa an cika filayen biyu." },
+        {
+          "question": "Maɓallin kwafa ba ya aiki - me ya sa?",
+          "answer": "Don kwafa sa hannu, cika aƙalla filaye biyu: suna da adireshin imel. Tabbatar cewa an cika filayen biyu."
+        },
         {
           "question": "Avatar ko alama ba ta nuna - me za a yi?",
           "answer": "Hoton dole ne ya kasance ana iya samunsa a bainar jama'a ta yanar gizo. URL ya kamata ya nuna kai tsaye zuwa fayil na hoto (yana ƙarewa da .jpg, .png, ko .webp). Hotunan daga Google Drive ko Dropbox suna buƙatar hanyar haɗi ta musamman don rabawa."
@@ -271,8 +386,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Bincika sauran kayan aiki" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Bincika sauran kayan aiki"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

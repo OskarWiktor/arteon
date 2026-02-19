@@ -3,7 +3,7 @@
   "locale": "fr",
   "metadata": {
     "title": "Vérificateur de méta titre et description gratuit – SEO",
-    "description": "Vérifiez la longueur de votre méta titre et description en caractères et pixels. Aperçu Google pour éviter les snippets tronqués. Sans inscription.",
+    "description": "Vérifiez la longueur de votre méta titre et description en caractères et pixels. Aperçu Google pour éviter les snippets tronqués.",
     "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
     "path": "/fr/outils/verificateur-meta-titre-et-description"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/fr/outils", "label": "Outils" },
-    "third": { "href": "/fr/outils/verificateur-meta-titre-et-description", "label": "Méta titre et description" }
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/verificateur-meta-titre-et-description",
+      "label": "Méta titre et description"
+    }
   },
   "schemas": {
     "software": {
@@ -45,20 +51,35 @@
       "name": "Comment vérifier la longueur du méta titre et de la description",
       "description": "Saisissez votre méta titre et description pour vérifier le nombre de caractères, la largeur en pixels et l'aperçu dans les résultats Google.",
       "steps": [
-        { "name": "Saisir le méta titre", "text": "Saisissez le titre de votre page dans le champ prévu. L'outil affiche immédiatement le nombre de caractères et la largeur en pixels." },
-        { "name": "Saisir la méta description", "text": "Saisissez la description de votre page. Vérifiez que la longueur se situe dans la plage recommandée." },
-        { "name": "Vérifier l'aperçu", "text": "Consultez l'aperçu du résultat Google pour voir comment votre page apparaîtra dans les SERP." }
+        {
+          "name": "Saisir le méta titre",
+          "text": "Saisissez le titre de votre page dans le champ prévu. L'outil affiche immédiatement le nombre de caractères et la largeur en pixels."
+        },
+        {
+          "name": "Saisir la méta description",
+          "text": "Saisissez la description de votre page. Vérifiez que la longueur se situe dans la plage recommandée."
+        },
+        {
+          "name": "Vérifier l'aperçu",
+          "text": "Consultez l'aperçu du résultat Google pour voir comment votre page apparaîtra dans les SERP."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Pourquoi vérifier la longueur du méta titre et de la description ?",
       "html": "<p class=\"text-mid\">Le méta titre et la méta description sont les premiers éléments que les utilisateurs voient dans les résultats de recherche Google. Un titre tronqué ou une description coupée peut réduire le taux de clics et nuire au référencement de votre page.</p><p class=\"text-mid mt-3\">Cet outil vérifie le nombre de caractères, le nombre de mots et la largeur en pixels de votre titre et description. Il affiche un aperçu en temps réel de l'apparence de votre page dans les résultats Google, vous permettant d'optimiser chaque élément avant publication.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Comment utiliser le vérificateur",
@@ -70,37 +91,60 @@
           "title": "1. Saisir le méta titre",
           "description": "Saisissez le titre de votre page. L'outil affiche immédiatement le nombre de caractères et la largeur en pixels."
         },
-        { "icon": "RiFileTextLine", "title": "2. Saisir la description", "description": "Saisissez la méta description. Vérifiez que la longueur se situe dans la plage recommandée." },
-        { "icon": "RiEyeLine", "title": "3. Vérifier l'aperçu", "description": "Consultez l'aperçu Google pour voir comment votre page apparaîtra dans les résultats de recherche." }
+        {
+          "icon": "RiFileTextLine",
+          "title": "2. Saisir la description",
+          "description": "Saisissez la méta description. Vérifiez que la longueur se situe dans la plage recommandée."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "3. Vérifier l'aperçu",
+          "description": "Consultez l'aperçu Google pour voir comment votre page apparaîtra dans les résultats de recherche."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Combien de caractères doivent contenir le méta titre et la description ?",
       "html": "<p class=\"text-mid mb-4\">Google tronque les titres et les descriptions trop longs. Voici les plages recommandées qui réduisent le risque de coupure dans les résultats de recherche.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Élément</th><th class=\"py-2 pr-4 font-semibold\">Caractères</th><th class=\"py-2 pr-4 font-semibold\">Pixels</th><th class=\"py-2 font-semibold\">Remarques</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Méta titre</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 caractères</td><td class=\"py-2 pr-4 whitespace-nowrap\">jusqu'à ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Placez les mots les plus importants au début. Nom de marque à la fin.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Méta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">120–160 caractères</td><td class=\"py-2 pr-4 whitespace-nowrap\">jusqu'à ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">2-3 phrases courtes suffisent. Terminez par un appel à l'action.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Ce sont des valeurs approximatives : Google ne publie pas de limites strictes et peut les ajuster selon l'appareil et le contexte de la requête.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Comment interpréter les résultats",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Méta titre</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Caractères : <strong>52</strong></span><span class=\"text-mid\">Mots : <strong>7</strong></span><span class=\"text-mid\">Pixels : <strong>456px</strong></span></div><span class=\"mt-2 inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800\">Bonne longueur</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Méta description</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Caractères : <strong>142</strong></span><span class=\"text-mid\">Mots : <strong>21</strong></span><span class=\"text-mid\">Pixels : <strong>812px</strong></span></div><span class=\"mt-2 inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800\">Bonne longueur</span></div></div>",
       "html": "<p class=\"text-mid mb-4\">L'outil affiche trois métriques pour chaque champ ainsi qu'une évaluation de longueur codée par couleurs :</p><h3 class=\"h5 mt-6 mb-2\">Métriques</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Caractères</strong> – nombre total de caractères (espaces compris). Facile à comprendre mais moins précis que les pixels.</li><li><strong>Mots</strong> – nombre de mots. Utile pour une évaluation rapide de la longueur.</li><li><strong>Largeur (px)</strong> – largeur du texte en pixels. C'est la valeur que Google utilise réellement pour tronquer.</li></ul><h3 class=\"h5 mt-6 mb-2\">États d'évaluation</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Bonne longueur</strong> (vert) – le texte est dans la plage recommandée. Google devrait l'afficher en entier.</li><li><strong class=\"text-warning-text\">Trop court</strong> (jaune) – le texte est très court. Vous avez de la place pour plus d'informations qui pourraient encourager les clics.</li><li><strong class=\"text-error-text\">Trop long</strong> (rouge) – le texte dépasse la plage recommandée. Google le tronquera probablement. Envisagez de le raccourcir.</li><li><strong class=\"text-light\">Aucune donnée</strong> (gris) – le champ est vide. Saisissez du texte pour voir l'analyse.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Pourquoi la largeur en pixels est-elle plus importante que le nombre de caractères ?",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">iiiiiiiiiiiiiiii (16 caractères)</p><div class=\"bg-success-icon mt-1 h-3 w-1/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~64 px de largeur</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">WWWWWWWWWWWWWWWW (16 caractères)</p><div class=\"bg-error-icon mt-1 h-3 w-3/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~256 px de largeur</p></div></div>",
       "html": "<p class=\"text-mid\">Les différentes lettres ont des largeurs différentes. Comparez &laquo; iiii &raquo; et &laquo; WWWW &raquo; : les deux ont 4 caractères, mais la largeur visuelle est complètement différente. Google mesure la largeur du texte en pixels, pas en caractères.</p><p class=\"text-mid mt-3\">C'est pourquoi un titre avec de nombreuses lettres étroites (i, l, t, f) peut être plus long qu'un titre avec des lettres larges (W, M, O), malgré le même nombre de caractères. L'outil affiche les deux valeurs : le nombre de caractères (plus facile à comprendre) et la largeur en pixels (plus précis pour Google).</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Aperçu du snippet : que montre-t-il ?",
       "html": "<p class=\"text-mid\">L'aperçu (snippet preview) simule l'apparence du titre et de la description de la page dans les résultats de recherche Google. C'est une visualisation indicative : l'apparence réelle peut varier légèrement selon l'appareil et le navigateur.</p><h3 class=\"h5 mt-6 mb-2\">Éléments de l'aperçu</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> – l'adresse de la page affichée au-dessus du titre. Vous pouvez la saisir dans un champ optionnel pour un résultat plus réaliste.</li><li><strong>Titre</strong> – l'en-tête bleu. S'il est trop long, l'outil le tronque automatiquement et ajoute des points de suspension.</li><li><strong>Description</strong> – le texte gris sous le titre. Il est également tronqué s'il dépasse la limite.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Problèmes courants et solutions",
@@ -123,20 +167,42 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Conseils pour des méta titres efficaces",
       "description": "Un bon méta titre influence le taux de clics dans les résultats de recherche :",
       "grid": "two",
       "items": [
-        { "icon": "RiSearchLine", "title": "Mot-clé principal en début", "description": "Placez le mot-clé le plus important au début du titre pour une meilleure visibilité." },
-        { "icon": "RiRulerLine", "title": "Respecter la plage optimale", "description": "50–60 caractères / 450–580 pixels – la plage qui s'affiche généralement en entier." },
-        { "icon": "RiEditLine", "title": "Être descriptif et unique", "description": "Chaque page doit avoir un titre unique qui décrit précisément son contenu." },
-        { "icon": "RiMegaphoneLine", "title": "Inciter au clic", "description": "Utilisez des termes qui donnent envie de cliquer – sans tomber dans le clickbait." }
+        {
+          "icon": "RiSearchLine",
+          "title": "Mot-clé principal en début",
+          "description": "Placez le mot-clé le plus important au début du titre pour une meilleure visibilité."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Respecter la plage optimale",
+          "description": "50–60 caractères / 450–580 pixels – la plage qui s'affiche généralement en entier."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Être descriptif et unique",
+          "description": "Chaque page doit avoir un titre unique qui décrit précisément son contenu."
+        },
+        {
+          "icon": "RiMegaphoneLine",
+          "title": "Inciter au clic",
+          "description": "Utilisez des termes qui donnent envie de cliquer – sans tomber dans le clickbait."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Pour qui le vérificateur de méta est-il utile ?",
@@ -153,33 +219,63 @@
           "title": "Spécialistes SEO",
           "description": "Testez différentes variantes de titre et description, vérifiez l'aperçu des résultats de recherche et le respect des recommandations."
         },
-        { "icon": "RiEditLine", "title": "Rédacteurs", "description": "Rédigez des titres et descriptions qui respectent les limites et encouragent les clics." },
+        {
+          "icon": "RiEditLine",
+          "title": "Rédacteurs",
+          "description": "Rédigez des titres et descriptions qui respectent les limites et encouragent les clics."
+        },
         {
           "icon": "RiMegaphoneLine",
           "title": "Professionnels du marketing",
           "description": "Créez des méta pour les campagnes et landing pages, en optimisant le taux de clics dans les résultats organiques."
         },
-        { "icon": "RiCodeLine", "title": "Développeurs", "description": "Vérifiez les balises méta avant de déployer une page en production." }
+        {
+          "icon": "RiCodeLine",
+          "title": "Développeurs",
+          "description": "Vérifiez les balises méta avant de déployer une page en production."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Qu'est-ce qui rend ce vérificateur spécial ?",
       "grid": "two",
       "items": [
-        { "icon": "RiRuler2Line", "title": "Mesure en pixels", "description": "Nous ne comptons pas seulement les caractères : nous mesurons la largeur réelle du texte comme le fait Google." },
-        { "icon": "RiEyeLine", "title": "Aperçu Google", "description": "Voyez comment le titre et la description apparaissent dans les résultats de recherche avant de publier votre page." },
-        { "icon": "RiCheckboxCircleLine", "title": "Évaluation codée par couleurs", "description": "Sachez instantanément si le texte est trop court, optimal ou trop long." },
+        {
+          "icon": "RiRuler2Line",
+          "title": "Mesure en pixels",
+          "description": "Nous ne comptons pas seulement les caractères : nous mesurons la largeur réelle du texte comme le fait Google."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Aperçu Google",
+          "description": "Voyez comment le titre et la description apparaissent dans les résultats de recherche avant de publier votre page."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Évaluation codée par couleurs",
+          "description": "Sachez instantanément si le texte est trop court, optimal ou trop long."
+        },
         {
           "icon": "RiInfinityLine",
           "title": "Pixels et caractères ensemble",
           "description": "L'outil affiche les deux valeurs simultanément : vous pouvez comparer si le titre respecte à la fois la limite de caractères et celle de pixels."
         },
-        { "icon": "RiUserLine", "title": "Titre et description en une seule vue", "description": "Vérifiez le méta titre et la description simultanément, sans changer d'onglet." }
+        {
+          "icon": "RiUserLine",
+          "title": "Titre et description en une seule vue",
+          "description": "Vérifiez le méta titre et la description simultanément, sans changer d'onglet."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Questions fréquentes sur le vérificateur de méta titre",
@@ -212,8 +308,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Découvrir d'autres outils" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Découvrir d'autres outils"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

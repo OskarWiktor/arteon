@@ -3,7 +3,7 @@
   "locale": "uk",
   "metadata": {
     "title": "Перевірка контрасту кольорів WCAG — доступність тексту",
-    "description": "Перевірте, чи читається текст на обраному фоні. Інструмент розраховує контраст згідно з WCAG 2.1 і допоможе обрати правильний колір. Без реєстрації.",
+    "description": "Перевірте, чи читається текст на обраному фоні. Інструмент розраховує контраст згідно з WCAG 2.1 і допоможе обрати правильний колір.",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/uk/instrumenty/perevirka-kontrastu-koloriv"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/uk/instrumenty", "label": "Інструменти" },
-    "third": { "href": "/uk/instrumenty/perevirka-kontrastu-koloriv", "label": "Перевірка контрасту кольорів" }
+    "second": {
+      "href": "/uk/instrumenty",
+      "label": "Інструменти"
+    },
+    "third": {
+      "href": "/uk/instrumenty/perevirka-kontrastu-koloriv",
+      "label": "Перевірка контрасту кольорів"
+    }
   },
   "schemas": {
     "software": {
@@ -38,40 +44,80 @@
       "name": "Як перевірити контраст кольорів",
       "description": "Перевірте контраст тексту та фону згідно з WCAG 2.1. Дізнайтеся, чи читається текст і чи відповідає вимогам доступності.",
       "steps": [
-        { "name": "Оберіть колір тексту", "text": "Введіть HEX-код кольору тексту або оберіть через палітру кольорів." },
-        { "name": "Оберіть колір фону", "text": "Введіть HEX-код кольору фону або оберіть через палітру кольорів." },
-        { "name": "Перевірте результат", "text": "Інструмент покаже коефіцієнт контрасту та відповідність вимогам WCAG 2.1 рівнів AA та AAA." },
-        { "name": "Відкоригуйте кольори", "text": "Якщо контраст недостатній, змініть кольори та спостерігайте за змінами у реальному часі." }
+        {
+          "name": "Оберіть колір тексту",
+          "text": "Введіть HEX-код кольору тексту або оберіть через палітру кольорів."
+        },
+        {
+          "name": "Оберіть колір фону",
+          "text": "Введіть HEX-код кольору фону або оберіть через палітру кольорів."
+        },
+        {
+          "name": "Перевірте результат",
+          "text": "Інструмент покаже коефіцієнт контрасту та відповідність вимогам WCAG 2.1 рівнів AA та AAA."
+        },
+        {
+          "name": "Відкоригуйте кольори",
+          "text": "Якщо контраст недостатній, змініть кольори та спостерігайте за змінами у реальному часі."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Що таке контраст кольорів і навіщо його перевіряти?",
       "html": "<p class=\"text-mid\">Контраст кольорів — це різниця яскравості між текстом та фоном. Високий контраст означає, що текст легко читається, низький — що текст зливається з фоном і його важко розрізнити.</p><p class=\"text-mid mt-3\">Стандарт WCAG 2.1 (Web Content Accessibility Guidelines) визначає мінімальні вимоги до контрасту, щоб контент був доступний для людей з порушеннями зору. Дотримання цих вимог не лише покращує доступність, а й робить сайт зручнішим для всіх користувачів.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Як користуватися перевіркою контрасту?",
       "description": "Перевірка контрасту займає кілька секунд:",
       "grid": "four",
       "items": [
-        { "icon": "RiPaletteLine", "title": "1. Оберіть колір тексту", "description": "Введіть HEX-код або оберіть колір через палітру. Наприклад, #333333 для темно-сірого тексту." },
-        { "icon": "RiPaintBrushLine", "title": "2. Оберіть колір фону", "description": "Введіть HEX-код фону або оберіть через палітру. Наприклад, #FFFFFF для білого фону." },
-        { "icon": "RiEyeLine", "title": "3. Перегляньте результат", "description": "Інструмент покаже коефіцієнт контрасту та відповідність вимогам WCAG AA та AAA для різних розмірів тексту." },
-        { "icon": "RiRefreshLine", "title": "4. Відкоригуйте", "description": "Якщо контраст недостатній, змінюйте кольори і спостерігайте за результатами у реальному часі." }
+        {
+          "icon": "RiPaletteLine",
+          "title": "1. Оберіть колір тексту",
+          "description": "Введіть HEX-код або оберіть колір через палітру. Наприклад, #333333 для темно-сірого тексту."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "2. Оберіть колір фону",
+          "description": "Введіть HEX-код фону або оберіть через палітру. Наприклад, #FFFFFF для білого фону."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "3. Перегляньте результат",
+          "description": "Інструмент покаже коефіцієнт контрасту та відповідність вимогам WCAG AA та AAA для різних розмірів тексту."
+        },
+        {
+          "icon": "RiRefreshLine",
+          "title": "4. Відкоригуйте",
+          "description": "Якщо контраст недостатній, змінюйте кольори і спостерігайте за результатами у реальному часі."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Вимоги WCAG до контрасту",
       "html": "<p class=\"text-mid mb-4\">WCAG 2.1 визначає два рівні відповідності для контрасту тексту:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Рівень</th><th class=\"py-2 pr-4 font-semibold\">Звичайний текст</th><th class=\"py-2 pr-4 font-semibold\">Великий текст</th><th class=\"py-2 font-semibold\">Примітки</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">AA (мінімальний)</td><td class=\"py-2 pr-4 whitespace-nowrap\">4.5:1</td><td class=\"py-2 pr-4 whitespace-nowrap\">3:1</td><td class=\"text-primary-light0 py-2 text-sm\">Мінімальна вимога для більшості сайтів. Обов'язковий для державних сайтів у багатьох країнах.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">AAA (підвищений)</td><td class=\"py-2 pr-4 whitespace-nowrap\">7:1</td><td class=\"py-2 pr-4 whitespace-nowrap\">4.5:1</td><td class=\"text-primary-light0 py-2 text-sm\">Рекомендований рівень. Забезпечує комфортне читання для більшості людей з порушеннями зору.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Великий текст — це текст розміром від 18pt (24px) або від 14pt (18.67px) жирний.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Поширені помилки з контрастом",
@@ -94,19 +140,41 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Для кого призначена перевірка контрасту?",
       "grid": "two",
       "items": [
-        { "icon": "RiPaintBrushLine", "title": "Дизайнери", "description": "Перевіряйте кольорові комбінації на етапі дизайну, щоб забезпечити доступність з самого початку." },
-        { "icon": "RiCodeLine", "title": "Розробники", "description": "Перевіряйте контраст перед деплоєм та при перевірці коду. Переконайтеся, що CSS-кольори відповідають WCAG." },
-        { "icon": "RiShoppingBagLine", "title": "Власники сайтів", "description": "Забезпечте доступність сайту для всіх користувачів. У багатьох країнах це вимога закону." },
-        { "icon": "RiMegaphoneLine", "title": "Маркетологи", "description": "Переконайтеся, що рекламні банери та лендінги читаються всіма користувачами." }
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Дизайнери",
+          "description": "Перевіряйте кольорові комбінації на етапі дизайну, щоб забезпечити доступність з самого початку."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Розробники",
+          "description": "Перевіряйте контраст перед деплоєм та при перевірці коду. Переконайтеся, що CSS-кольори відповідають WCAG."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Власники сайтів",
+          "description": "Забезпечте доступність сайту для всіх користувачів. У багатьох країнах це вимога закону."
+        },
+        {
+          "icon": "RiMegaphoneLine",
+          "title": "Маркетологи",
+          "description": "Переконайтеся, що рекламні банери та лендінги читаються всіма користувачами."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Часті запитання про контраст кольорів",
@@ -134,8 +202,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Інші інструменти" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Інші інструменти"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

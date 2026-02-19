@@ -2,7 +2,7 @@
   "toolKey": "paletteExtractor",
   "locale": "bg",
   "metadata": {
-    "title": "Безплатен екстрактор на цветове от изображение – Палитра от всяка снимка",
+    "title": "Безплатен екстрактор на цветове от изображение – Палитра",
     "description": "Качете снимка или лого и извлечете до 12 доминантни цвята с HEX и RGB кодове. Идеално за UI, брандинг и социални мрежи. Без регистрация.",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/bg/instrumenti/ekstraktor-na-tsvetove-ot-izobrazhenie"
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/bg/instrumenti", "label": "Инструменти" },
-    "third": { "href": "/bg/instrumenti/ekstraktor-na-tsvetove-ot-izobrazhenie", "label": "Екстрактор на цветове от изображение" }
+    "second": {
+      "href": "/bg/instrumenti",
+      "label": "Инструменти"
+    },
+    "third": {
+      "href": "/bg/instrumenti/ekstraktor-na-tsvetove-ot-izobrazhenie",
+      "label": "Екстрактор на цветове от изображение"
+    }
   },
   "schemas": {
     "software": {
@@ -37,39 +43,69 @@
       "name": "Как да извлечете цветове от снимка или изображение",
       "description": "Как да извлечете доминантни цветове от снимка или лого. Качете изображение във формат PNG, JPG или SVG и инструментът ще генерира палитра от до 12 цвята с HEX кодове.",
       "steps": [
-        { "name": "Качете изображение", "text": "Плъзнете файл върху обозначената зона или изберете изображение от устройството си. Поддържаните формати са PNG, JPG и SVG." },
-        { "name": "Изчакайте анализа", "text": "Инструментът автоматично ще анализира изображението и ще извлече доминантните цветове." },
-        { "name": "Копирайте цветовете", "text": "До всеки цвят ще намерите бутон за копиране – HEX кодът се копира в системния клипборд." }
+        {
+          "name": "Качете изображение",
+          "text": "Плъзнете файл върху обозначената зона или изберете изображение от устройството си. Поддържаните формати са PNG, JPG и SVG."
+        },
+        {
+          "name": "Изчакайте анализа",
+          "text": "Инструментът автоматично ще анализира изображението и ще извлече доминантните цветове."
+        },
+        {
+          "name": "Копирайте цветовете",
+          "text": "До всеки цвят ще намерите бутон за копиране – HEX кодът се копира в системния клипборд."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Защо да извличате цветове от изображение?",
       "html": "<p class=\"mb-4\">Всяка снимка, лого или графика съдържа цветове, които могат да послужат като готова цветова палитра. Екстракторът анализира изображението и показва кои цветове доминират – заедно с HEX кодове и RGB стойности, готови за поставяне в проекта ви.</p><p class=\"mb-4\">На практика това означава, че вместо ръчно да извличате цветове в графично приложение (пиксел по пиксел), качвате едно изображение и получавате организиран списък от до 12 цвята. Това е полезно при избор на цветове за уебсайт, създаване на последователни графики за социални мрежи или изграждане на визуална идентичност от съществуващ материал.</p><p>Целият анализ се извършва локално в браузъра – изображението не се изпраща на никакъв сървър.</p>"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Как да използвате екстрактора на цветове",
       "description": "Целият процес отнема само няколко секунди:",
       "grid": "three",
       "items": [
-        { "title": "1. Качете изображение", "description": "Плъзнете файл върху обозначената зона или го изберете от устройството си. Поддържаните формати са PNG, JPG и SVG." },
-        { "title": "2. Изчакайте анализа", "description": "Инструментът автоматично ще анализира изображението и ще извлече до 12 доминантни цвята." },
-        { "title": "3. Копирайте нужните цветове", "description": "До всеки цвят има бутон за копиране – HEX или RGB кодът отива в клипборда и може да се постави директно в проекта ви." }
+        {
+          "title": "1. Качете изображение",
+          "description": "Плъзнете файл върху обозначената зона или го изберете от устройството си. Поддържаните формати са PNG, JPG и SVG."
+        },
+        {
+          "title": "2. Изчакайте анализа",
+          "description": "Инструментът автоматично ще анализира изображението и ще извлече до 12 доминантни цвята."
+        },
+        {
+          "title": "3. Копирайте нужните цветове",
+          "description": "До всеки цвят има бутон за копиране – HEX или RGB кодът отива в клипборда и може да се постави директно в проекта ви."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Как изглежда извлечена цветова палитра?",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Примерни цветове, извлечени от изображение на природа</p></div>",
       "html": "<p class=\"text-mid mb-4\">След качване на изображение екстракторът показва списък с доминантни цветове, сортирани от най-изявен до най-слабо изявен. Всеки цвят показва своя HEX код и RGB стойност – готови за поставяне в CSS, Figma или всяко графично приложение.</p><p class=\"text-mid\">Броят на извлечените цветове зависи от съдържанието на изображението. Пейзажна снимка ще даде по-богата палитра (8–12 цвята), докато просто двуцветно лого ще даде съответно по-малко елементи.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Кои изображения дават най-добри резултати в екстрактора на цветове?",
@@ -98,7 +134,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTimeline",
       "title": "Как работи извличането на цветове от изображение?",
@@ -126,7 +165,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Отстраняване на проблеми с екстрактора на цветове",
@@ -154,7 +196,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Какво прави този екстрактор на цветове специален?",
@@ -182,7 +227,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Къде да използвате цветове, извлечени от изображение",
@@ -206,11 +254,14 @@
         {
           "icon": "RiSearchEyeLine",
           "title": "Разширяване на съществуваща палитра",
-          "description": "Извлечен базов цвят може да се използва в <a href=\"/bg/instrumenti/color-palette-generator\">генератора на цветови палитри</a> за създаване на пълен набор от хармонични цветове, базирани на теория на цветовете."
+          "description": "Извлечен базов цвят може да се използва в <a href=\"/bg/instrumenti/generator-na-tsvetovi-palitri\">генератора на цветови палитри</a> за създаване на пълен набор от хармонични цветове, базирани на теория на цветовете."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Често задавани въпроси за екстрактора на цветове от изображение",
@@ -248,8 +299,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Разгледайте другите инструменти" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Разгледайте другите инструменти"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

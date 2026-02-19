@@ -2,8 +2,8 @@
   "toolKey": "metaCounter",
   "locale": "nl",
   "metadata": {
-    "title": "Gratis meta title & description checker \u2013 Pixelbreedte",
-    "description": "Controleer de lengte van uw meta title en description in tekens en pixels. Google SERP-preview helpt u afgekapte snippets te vermijden. Zonder registratie.",
+    "title": "Gratis meta title & description checker – Pixelbreedte",
+    "description": "Controleer de lengte van uw meta title en description in tekens en pixels. Google SERP-preview helpt u afgekapte snippets te vermijden.",
     "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
     "path": "/nl/tools/meta-title-description-lengte-checker"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/nl/tools", "label": "Tools" },
-    "third": { "href": "/nl/tools/meta-title-description-lengte-checker", "label": "Meta title & description checker" }
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/meta-title-description-lengte-checker",
+      "label": "Meta title & description checker"
+    }
   },
   "schemas": {
     "software": {
@@ -46,30 +52,42 @@
     },
     "howTo": {
       "name": "Hoe meta title en description lengte te controleren",
-      "description": "Controleer de lengte van uw meta title en description in pixels en tekens. Leer hoeveel tekens een titel (50\u201360) en beschrijving (120\u2013160) moet hebben en hoe u afkapping in Google vermijdt.",
+      "description": "Controleer de lengte van uw meta title en description in pixels en tekens. Leer hoeveel tekens een titel (50–60) en beschrijving (120–160) moet hebben en hoe u afkapping in Google vermijdt.",
       "totalTime": "PT3M",
       "steps": [
-        { "name": "Voer de meta title in", "text": "Plak of typ uw paginatitel in het Meta title veld. De tool berekent automatisch het aantal tekens, woorden en pixelbreedte." },
+        {
+          "name": "Voer de meta title in",
+          "text": "Plak of typ uw paginatitel in het Meta title veld. De tool berekent automatisch het aantal tekens, woorden en pixelbreedte."
+        },
         {
           "name": "Voer de meta description in",
-          "text": "Voeg de paginabeschrijving toe in het Meta description veld. U ziet dezelfde metrieken. Het veld is groter omdat beschrijvingen langer zijn dan titels - u kunt 2\u20133 korte zinnen kwijt."
+          "text": "Voeg de paginabeschrijving toe in het Meta description veld. U ziet dezelfde metrieken. Het veld is groter omdat beschrijvingen langer zijn dan titels - u kunt 2–3 korte zinnen kwijt."
         },
         {
           "name": "Controleer de Google preview",
           "text": "Zie hoe de titel en beschrijving eruitzien in een gesimuleerd Google zoekresultaat. De preview kapt tekst automatisch af zoals de zoekmachine dat zou doen."
         },
-        { "name": "Pas aan op basis van tips", "text": "Als de status Te kort of Te lang toont, pas dan de tekst aan en bekijk de veranderingen in real-time." }
+        {
+          "name": "Pas aan op basis van tips",
+          "text": "Als de status Te kort of Te lang toont, pas dan de tekst aan en bekijk de veranderingen in real-time."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Wat zijn meta title en meta description?",
       "html": "<p class=\"text-mid\">Meta title en meta description zijn twee korte teksten die de inhoud van een webpagina beschrijven. Ze zijn niet direct zichtbaar op de pagina maar verschijnen in Google zoekresultaten als de titel (blauwe link) en beschrijving (grijze tekst onder de titel).</p><p class=\"text-mid mt-3\">Goed geschreven meta tags werken als een advertentie voor uw pagina in zoekresultaten - ze trekken de aandacht en verhogen de kans op een klik. Slecht geschreven of afgekapte tags kunnen kliks ontmoedigen, zelfs als de pagina zelf waardevol is.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Hoe de meta title en description checker te gebruiken",
@@ -84,7 +102,7 @@
         {
           "icon": "RiFileTextLine",
           "title": "2. Voer de paginabeschrijving in",
-          "description": "Voeg de meta description toe in het tweede veld. U ziet dezelfde metrieken. Het veld is groter omdat beschrijvingen langer zijn dan titels - u kunt 2\u20133 korte zinnen kwijt."
+          "description": "Voeg de meta description toe in het tweede veld. U ziet dezelfde metrieken. Het veld is groter omdat beschrijvingen langer zijn dan titels - u kunt 2–3 korte zinnen kwijt."
         },
         {
           "icon": "RiEyeLine",
@@ -98,33 +116,48 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Hoeveel tekens moeten meta title en description hebben?",
-      "html": "<p class=\"text-mid mb-4\">Google kapt titels en beschrijvingen af die te lang zijn. Hieronder staan aanbevolen bereiken die het risico verkleinen dat tekst wordt afgesneden in zoekresultaten.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Element</th><th class=\"py-2 pr-4 font-semibold\">Tekens</th><th class=\"py-2 pr-4 font-semibold\">Pixels</th><th class=\"py-2 font-semibold\">Opmerkingen</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50\u201360 tekens</td><td class=\"py-2 pr-4 whitespace-nowrap\">tot ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Zet de belangrijkste woorden vooraan. Merknaam achteraan.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">120\u2013160 tekens</td><td class=\"py-2 pr-4 whitespace-nowrap\">tot ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">U kunt 2\u20133 korte zinnen kwijt. Eindig met een call to action.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Dit zijn geschatte waarden - Google publiceert geen strikte limieten en kan deze aanpassen afhankelijk van apparaat en querycontext.</p>"
+      "html": "<p class=\"text-mid mb-4\">Google kapt titels en beschrijvingen af die te lang zijn. Hieronder staan aanbevolen bereiken die het risico verkleinen dat tekst wordt afgesneden in zoekresultaten.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Element</th><th class=\"py-2 pr-4 font-semibold\">Tekens</th><th class=\"py-2 pr-4 font-semibold\">Pixels</th><th class=\"py-2 font-semibold\">Opmerkingen</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 tekens</td><td class=\"py-2 pr-4 whitespace-nowrap\">tot ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Zet de belangrijkste woorden vooraan. Merknaam achteraan.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">120–160 tekens</td><td class=\"py-2 pr-4 whitespace-nowrap\">tot ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">U kunt 2–3 korte zinnen kwijt. Eindig met een call to action.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Dit zijn geschatte waarden - Google publiceert geen strikte limieten en kan deze aanpassen afhankelijk van apparaat en querycontext.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Hoe de resultaten te interpreteren",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta title</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Tekens: <strong>52</strong></span><span class=\"text-mid\">Woorden: <strong>7</strong></span><span class=\"text-mid\">Pixels: <strong>456px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Goede lengte</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta description</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Tekens: <strong>142</strong></span><span class=\"text-mid\">Woorden: <strong>21</strong></span><span class=\"text-mid\">Pixels: <strong>812px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Goede lengte</span></div></div>",
-      "html": "<p class=\"text-mid mb-4\">De tool toont drie metrieken voor elk veld samen met een kleurgecodeerde lengte-evaluatie:</p><h3 class=\"h5 mt-6 mb-2\">Metrieken</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tekens</strong> - totaal aantal tekens (inclusief spaties). Makkelijk te begrijpen maar minder precies dan pixels.</li><li><strong>Woorden</strong> - woordenaantal. Handig voor een snelle inschatting van de lengte.</li><li><strong>Breedte (px)</strong> - tekstbreedte in pixels. Dit is de waarde die Google daadwerkelijk gebruikt bij afkapping.</li></ul><h3 class=\"h5 mt-6 mb-2\">Beoordelingsstatussen</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Goede lengte</strong> (groen) - tekst valt binnen het aanbevolen bereik. Google zou het volledig moeten tonen.</li><li><strong class=\"text-warning-text\">Te kort</strong> (geel) - tekst is zeer kort. U heeft ruimte voor meer informatie die kliks kan aanmoedigen.</li><li><strong class=\"text-error-text\">Te lang</strong> (rood) - tekst overschrijdt het aanbevolen bereik. Google zal het waarschijnlijk afkappen. Overweeg inkorten.</li><li><strong class=\"text-light\">Geen gegevens</strong> (grijs) - het veld is leeg. Voer tekst in om de analyse te zien.</li></ul><h3 class=\"h5 mt-6 mb-2\">Aanbevolen bereiken</h3><p class=\"text-mid\"><strong>Meta title:</strong> 35\u201365 tekens of 350\u2013580 pixels breed. Zet de belangrijkste woorden vooraan.</p><p class=\"text-mid mt-2\"><strong>Meta description:</strong> 100\u2013165 tekens of 430\u2013920 pixels breed. U kunt 2\u20133 korte zinnen kwijt.</p>"
+      "html": "<p class=\"text-mid mb-4\">De tool toont drie metrieken voor elk veld samen met een kleurgecodeerde lengte-evaluatie:</p><h3 class=\"h5 mt-6 mb-2\">Metrieken</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tekens</strong> - totaal aantal tekens (inclusief spaties). Makkelijk te begrijpen maar minder precies dan pixels.</li><li><strong>Woorden</strong> - woordenaantal. Handig voor een snelle inschatting van de lengte.</li><li><strong>Breedte (px)</strong> - tekstbreedte in pixels. Dit is de waarde die Google daadwerkelijk gebruikt bij afkapping.</li></ul><h3 class=\"h5 mt-6 mb-2\">Beoordelingsstatussen</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Goede lengte</strong> (groen) - tekst valt binnen het aanbevolen bereik. Google zou het volledig moeten tonen.</li><li><strong class=\"text-warning-text\">Te kort</strong> (geel) - tekst is zeer kort. U heeft ruimte voor meer informatie die kliks kan aanmoedigen.</li><li><strong class=\"text-error-text\">Te lang</strong> (rood) - tekst overschrijdt het aanbevolen bereik. Google zal het waarschijnlijk afkappen. Overweeg inkorten.</li><li><strong class=\"text-light\">Geen gegevens</strong> (grijs) - het veld is leeg. Voer tekst in om de analyse te zien.</li></ul><h3 class=\"h5 mt-6 mb-2\">Aanbevolen bereiken</h3><p class=\"text-mid\"><strong>Meta title:</strong> 35–65 tekens of 350–580 pixels breed. Zet de belangrijkste woorden vooraan.</p><p class=\"text-mid mt-2\"><strong>Meta description:</strong> 100–165 tekens of 430–920 pixels breed. U kunt 2–3 korte zinnen kwijt.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Waarom pixelbreedte belangrijker is dan tekenaantal",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">iiiiiiiiiiiiiiii (16 tekens)</p><div class=\"bg-success-icon mt-1 h-3 w-1/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~64px breed</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">WWWWWWWWWWWWWWWW (16 tekens)</p><div class=\"bg-error-icon mt-1 h-3 w-3/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~256px breed</p></div></div>",
       "html": "<p class=\"text-mid\">Verschillende letters hebben verschillende breedtes. Vergelijk &quot;iiii&quot; en &quot;WWWW&quot; - beide hebben 4 tekens, maar de visuele breedte is totaal anders. Google meet tekstbreedte in pixels, niet in tekens.</p><p class=\"text-mid mt-3\">Dit betekent dat een titel met veel smalle letters (i, l, t, f) langer kan zijn dan een titel met brede letters (W, M, O), ondanks hetzelfde tekenaantal. De tool toont beide waarden: tekenaantal (makkelijker te begrijpen) en pixelbreedte (nauwkeuriger voor Google).</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Snippet preview - wat toont het?",
-      "html": "<p class=\"text-mid\">De snippet preview simuleert hoe de titel en beschrijving van uw pagina eruitzien in Google zoekresultaten. Het is een geschatte visualisatie - het werkelijke uiterlijk kan enigszins vari\u00ebren afhankelijk van apparaat en browser.</p><h3 class=\"h5 mt-6 mb-2\">Preview-elementen</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> - het pagina-adres dat boven de titel wordt weergegeven. U kunt het invoeren in het optionele veld voor een realistischere preview.</li><li><strong>Titel</strong> - de blauwe kop. Als deze te lang is, kapt de tool hem automatisch af en voegt een ellipsis toe.</li><li><strong>Beschrijving</strong> - de grijze tekst onder de titel. Wordt ook afgekapt als deze de limiet overschrijdt.</li></ul><h3 class=\"h5 mt-6 mb-2\">Wat de preview niet toont</h3><p class=\"text-mid\">De preview bevat niet alle elementen die Google kan toevoegen aan een resultaat: datums, sterbeoordelingen, sitelinks of rich snippets. Het is een vereenvoudigde versie gericht op tekstlengte.</p>"
+      "html": "<p class=\"text-mid\">De snippet preview simuleert hoe de titel en beschrijving van uw pagina eruitzien in Google zoekresultaten. Het is een geschatte visualisatie - het werkelijke uiterlijk kan enigszins variëren afhankelijk van apparaat en browser.</p><h3 class=\"h5 mt-6 mb-2\">Preview-elementen</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> - het pagina-adres dat boven de titel wordt weergegeven. U kunt het invoeren in het optionele veld voor een realistischere preview.</li><li><strong>Titel</strong> - de blauwe kop. Als deze te lang is, kapt de tool hem automatisch af en voegt een ellipsis toe.</li><li><strong>Beschrijving</strong> - de grijze tekst onder de titel. Wordt ook afgekapt als deze de limiet overschrijdt.</li></ul><h3 class=\"h5 mt-6 mb-2\">Wat de preview niet toont</h3><p class=\"text-mid\">De preview bevat niet alle elementen die Google kan toevoegen aan een resultaat: datums, sterbeoordelingen, sitelinks of rich snippets. Het is een vereenvoudigde versie gericht op tekstlengte.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Veelvoorkomende problemen en oplossingen",
@@ -143,11 +176,14 @@
         {
           "icon": "RiRuler2Line",
           "title": "Pixelbreedte verschilt van verwacht",
-          "description": "De tool meet breedte met een standaard lettertype vergelijkbaar met wat Google gebruikt. Het resultaat kan enigszins vari\u00ebren afhankelijk van de browser."
+          "description": "De tool meet breedte met een standaard lettertype vergelijkbaar met wat Google gebruikt. Het resultaat kan enigszins variëren afhankelijk van de browser."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Voor wie is de meta tag checker?",
@@ -164,20 +200,47 @@
           "title": "SEO-specialisten",
           "description": "Test verschillende titel- en beschrijvingsvarianten, controleer de zoekresultaten preview en verifieer naleving van richtlijnen."
         },
-        { "icon": "RiEditLine", "title": "Copywriters", "description": "Schrijf titels en beschrijvingen die binnen limieten passen en kliks aanmoedigen." },
-        { "icon": "RiMegaphoneLine", "title": "Marketeers", "description": "Maak meta tags voor campagnes en landingspagina's, optimaliseer de klikfrequentie in organische resultaten." },
-        { "icon": "RiCodeLine", "title": "Ontwikkelaars", "description": "Verifieer meta tags voordat u een pagina naar productie deployt." }
+        {
+          "icon": "RiEditLine",
+          "title": "Copywriters",
+          "description": "Schrijf titels en beschrijvingen die binnen limieten passen en kliks aanmoedigen."
+        },
+        {
+          "icon": "RiMegaphoneLine",
+          "title": "Marketeers",
+          "description": "Maak meta tags voor campagnes en landingspagina's, optimaliseer de klikfrequentie in organische resultaten."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Ontwikkelaars",
+          "description": "Verifieer meta tags voordat u een pagina naar productie deployt."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Wat maakt deze meta title en description checker bijzonder?",
       "grid": "two",
       "items": [
-        { "icon": "RiRuler2Line", "title": "Pixelmeting", "description": "We tellen niet alleen tekens - we meten de werkelijke tekstbreedte zoals Google dat doet." },
-        { "icon": "RiEyeLine", "title": "Google preview", "description": "Zie hoe de titel en beschrijving eruitzien in zoekresultaten voordat u uw pagina publiceert." },
-        { "icon": "RiCheckboxCircleLine", "title": "Kleurgecodeerde beoordeling", "description": "Weet direct of de tekst te kort, optimaal of te lang is." },
+        {
+          "icon": "RiRuler2Line",
+          "title": "Pixelmeting",
+          "description": "We tellen niet alleen tekens - we meten de werkelijke tekstbreedte zoals Google dat doet."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Google preview",
+          "description": "Zie hoe de titel en beschrijving eruitzien in zoekresultaten voordat u uw pagina publiceert."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Kleurgecodeerde beoordeling",
+          "description": "Weet direct of de tekst te kort, optimaal of te lang is."
+        },
         {
           "icon": "RiInfinityLine",
           "title": "Pixels en tekens samen",
@@ -185,12 +248,15 @@
         },
         {
           "icon": "RiUserLine",
-          "title": "Titel en beschrijving in \u00e9\u00e9n weergave",
+          "title": "Titel en beschrijving in één weergave",
           "description": "Controleer zowel meta title als description tegelijkertijd, zonder tussen tabbladen te schakelen."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Veelgestelde vragen over de meta title en description checker",
@@ -208,13 +274,13 @@
         },
         {
           "question": "Wat is de optimale lengte voor meta title en meta description?",
-          "answer": "Meta title moet ongeveer 50\u201360 tekens zijn (tot ~580 pixels breed). Meta description werkt het best bij 120\u2013160 tekens (tot ~920 pixels). Dit zijn geschatte waarden - Google publiceert geen strikte limieten en kan deze aanpassen.",
-          "answerSchemaText": "Meta title: 50\u201360 tekens (~580px). Meta description: 120\u2013160 tekens (~920px). Geschatte waarden."
+          "answer": "Meta title moet ongeveer 50–60 tekens zijn (tot ~580 pixels breed). Meta description werkt het best bij 120–160 tekens (tot ~920 pixels). Dit zijn geschatte waarden - Google publiceert geen strikte limieten en kan deze aanpassen.",
+          "answerSchemaText": "Meta title: 50–60 tekens (~580px). Meta description: 120–160 tekens (~920px). Geschatte waarden."
         },
         {
-          "question": "Be\u00efnvloedt meta description de paginapositie in Google?",
-          "answer": "Meta description is geen directe rankingfactor - Google gebruikt het niet om de paginapositie te bepalen. Echter, een goede beschrijving verhoogt de klikfrequentie vanuit zoekresultaten, en een hogere CTR kan indirect de ranking be\u00efnvloeden.",
-          "answerSchemaText": "Meta description is geen directe rankingfactor, maar een goede beschrijving kan CTR verhogen en indirect ranking be\u00efnvloeden."
+          "question": "Beïnvloedt meta description de paginapositie in Google?",
+          "answer": "Meta description is geen directe rankingfactor - Google gebruikt het niet om de paginapositie te bepalen. Echter, een goede beschrijving verhoogt de klikfrequentie vanuit zoekresultaten, en een hogere CTR kan indirect de ranking beïnvloeden.",
+          "answerSchemaText": "Meta description is geen directe rankingfactor, maar een goede beschrijving kan CTR verhogen en indirect ranking beïnvloeden."
         },
         {
           "question": "Wat moet ik doen als mijn titel te lang is?",
@@ -223,8 +289,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Ontdek andere tools" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ontdek andere tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

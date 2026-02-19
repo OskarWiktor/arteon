@@ -2,8 +2,8 @@
   "toolKey": "emailSignature",
   "locale": "af",
   "metadata": {
-    "title": "Gratis E-poshandtekening-generator – HTML vir Gmail & Outlook",
-    "description": "Skep 'n professionele HTML-e-poshandtekening sonder kodering. Voeg kontakbesonderhede, logo, sosiale media-skakels by en kopieer na Gmail of Outlook. Geen registrasie, geen beperkings nie.",
+    "title": "Gratis E-poshandtekening-generator – HTML vir Gmail &",
+    "description": "Skep 'n professionele HTML-e-poshandtekening sonder kodering. Voeg kontakbesonderhede, logo, sosiale media-skakels by en kopieer na Gmail of Outlook.",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
     "path": "/af/gereedskap/gratis-e-pos-handtekening-generator"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/af/gereedskap", "label": "Gereedskap" },
-    "third": { "href": "/af/gereedskap/gratis-e-pos-handtekening-generator", "label": "E-poshandtekening-generator" }
+    "second": {
+      "href": "/af/gereedskap",
+      "label": "Gereedskap"
+    },
+    "third": {
+      "href": "/af/gereedskap/gratis-e-pos-handtekening-generator",
+      "label": "E-poshandtekening-generator"
+    }
   },
   "schemas": {
     "software": {
@@ -54,12 +60,18 @@
           "name": "Vul kontakbesonderhede in",
           "text": "In die Besonderhede-oortjie, voer jou naam, titel, maatskappy, e-pos, foon en webwerf-URL in. Voeg opsioneel 'n avatar of logo by - na die invoer van die prent-URL kan jy vorm (rond, afgerond, vierkantig) en grootte (40, 56 of 72 px) kies."
         },
-        { "name": "Voeg CTA-knoppies by", "text": "In die Knoppies-oortjie, voeg teks en URL vir die hoofknoppie by. Voeg opsioneel 'n tweede omlyn-styl knoppie by en kies knoppie-afronding." },
+        {
+          "name": "Voeg CTA-knoppies by",
+          "text": "In die Knoppies-oortjie, voeg teks en URL vir die hoofknoppie by. Voeg opsioneel 'n tweede omlyn-styl knoppie by en kies knoppie-afronding."
+        },
         {
           "name": "Voeg sosiale media-skakels by",
           "text": "In die Sosiale Media-oortjie, plak URL's na jou profiele. Ondersteunde platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram en Pinterest."
         },
-        { "name": "Pas voorkoms aan", "text": "In die Voorkoms-oortjie, kies 'n kleurtema, lettertipe en teksgrootte. In die Teksstyl-oortjie, verander kleure en groottes van individuele elemente." },
+        {
+          "name": "Pas voorkoms aan",
+          "text": "In die Voorkoms-oortjie, kies 'n kleurtema, lettertipe en teksgrootte. In die Teksstyl-oortjie, verander kleure en groottes van individuele elemente."
+        },
         {
           "name": "Voeg vrywaring by en stel skeier op",
           "text": "In die Vrywaring / Regsgeldig-oortjie, voer regsteks in en stel die skeidingslyn op - kies styl (soliede, gestreep, gestippel), dikte (1–3 px) en kleur."
@@ -72,80 +84,125 @@
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Waarom 'n professionele e-poshandtekening hê?",
       "html": "<p class=\"text-mid\">'n E-poshandtekening (ook 'n e-posvoetskrif genoem) is 'n blok inligting aan die einde van elke gestuurde boodskap. Dit bevat kontakbesonderhede, postitel, maatskappynaam en dikwels 'n skakel na die webwerf of vergaderingskalender.</p><p class=\"text-mid mt-3\">Die ontvanger hoef nie in vorige boodskappe na die foonnommer te soek nie - alle besonderhede is geredelik beskikbaar. 'n Professionele e-poshandtekening wys ook dat jy aandag aan besonderhede gee en 'n konsekwente maatskappybeeld in besigheidskorrespondensie handhaaf.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Hoe om die e-poshandtekening-generator te gebruik",
       "description": "Om 'n professionele e-poshandtekening te skep, neem net 'n paar minute:",
       "grid": "three",
       "items": [
-        { "title": "1. Voer besonderhede in", "description": "Vul jou naam, titel, maatskappy en kontakbesonderhede in." },
-        { "title": "2. Pas voorkoms aan", "description": "Kies 'n uitleg, kleure, voeg 'n logo en sosiale media-skakels by." },
-        { "title": "3. Kopieer die kode", "description": "Die Kopieer handtekening-knoppie kopieer die klaargemaakte kode na knipbord. Plak dit net in Gmail, Outlook of 'n ander e-poskliënt." }
+        {
+          "title": "1. Voer besonderhede in",
+          "description": "Vul jou naam, titel, maatskappy en kontakbesonderhede in."
+        },
+        {
+          "title": "2. Pas voorkoms aan",
+          "description": "Kies 'n uitleg, kleure, voeg 'n logo en sosiale media-skakels by."
+        },
+        {
+          "title": "3. Kopieer die kode",
+          "description": "Die Kopieer handtekening-knoppie kopieer die klaargemaakte kode na knipbord. Plak dit net in Gmail, Outlook of 'n ander e-poskliënt."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Hoe om handtekeningbesonderhede in te vul",
       "html": "<p class=\"text-mid\">Die <strong>Besonderhede</strong>-oortjie bevat al die velde wat jy kan invul. Slegs twee is verpligtend: naam en e-posadres. Die oorblywende velde is opsioneel en sal slegs in die handtekening verskyn wanneer dit ingevul is.</p><h3 class=\"h5 mt-6 mb-3\">Velde in die Besonderhede-oortjie</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Lyn bo naam</strong> - addisionele teks wat bo die naam vertoon word. Jy kan die maatskappynaam, slagspreuk of leuse invoer.</li><li><strong>Avatar / logo (prent-URL)</strong> - URL na 'n profielfoto of maatskappylogo. Die prent moet vierkantig wees (min. 120×120 px) en publiek toeganklik aanlyn. Na die plak van die URL verskyn addisionele opsies: <strong>Avatar-vorm</strong> (rond, afgerond of vierkantig) en <strong>Avatar-grootte</strong> (klein - 40 px, medium - 56 px, groot - 72 px).</li><li><strong>Volle naam</strong> - verpligte veld. Voer jou volle naam in.</li><li><strong>Naam-etiket</strong> - kort teks langs die naam, bv. voornaamwoorde of verkorte titel.</li><li><strong>Postitel</strong> - jou rol in die maatskappy, bv. Verkoopsbestuurder, Bemarkingspesialis.</li><li><strong>Maatskappynaam</strong> - die naam van die organisasie wat jy verteenwoordig.</li><li><strong>Addisionele lyn</strong> - 'n kort beskrywing van wat jy doen of wat jy aanbied.</li><li><strong>E-pos</strong> - verpligte veld. Voer jou besigheids-e-posadres in.</li><li><strong>Foon</strong> - kontaknommer. Enige formaat, bv. +27 12 345 6789.</li><li><strong>Webwerf</strong> - volle URL van jou webwerf, begin met https://.</li><li><strong>Adres</strong> - fisiese maatskappyadres (straat, stad, poskode).</li><li><strong>Formele besonderhede</strong> - belasting-ID, lisensienommer of ander besonderhede wat in jou bedryf vereis word.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Handtekeninguitlegings - watter een om te kies?",
       "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Handtekeninguitleg</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standaard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Aksentbalk</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Boonste balk</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Etikette links</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Gesentreer</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">Jan Smit</p><p class=\"text-mid text-sm\">Webontwikkelaar</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">jan@voorbeeld.com</p><p class=\"text-mid\">+27 12 345 6789</p></div></div></div>",
       "html": "<p class=\"text-mid\">Die generator bied agt klaargemaakte uitlegte. Elkeen vertoon dieselfde inligting op 'n ander manier.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standaard</strong> - klassieke vertikale uitleg, pas by die meeste gebruiksgevalle.</li><li><strong>Boonste balk</strong> - 'n horisontale balk skei die handtekening van die inhoud.</li><li><strong>Etikette links</strong> - twee kolomme: etikette en waardes.</li><li><strong>Gesentreer</strong> - formele voorkoms, inhoud gesentreer.</li><li><strong>Kompak</strong> - alles in een lyn, minimale hoogte.</li><li><strong>Twee kolomme</strong> - besonderhede links, kontakinligting regs.</li><li><strong>Minimalisties</strong> - slegs die belangrikste inligting.</li><li><strong>Onderste balk</strong> - gekleurde balk met kontak onderaan die handtekening.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Hoe om CTA-knoppies by te voeg",
       "html": "<p class=\"text-mid\">'n CTA-knoppie (oproep-tot-aksie) is 'n klikbare element wat die ontvanger na 'n gekose bladsy rig. Dit kan 'n skakel na 'n vergaderingskalender, kontakvorm of aanbod wees. Die generator laat toe om twee CTA-knoppies by te voeg.</p><h3 class=\"h5 mt-6 mb-3\">Hoofknoppie</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Maak die <strong>Knoppies</strong>-oortjie in die redigeerder oop.</li><li>In die <strong>Hoofknoppie</strong>-afdeling, voer die teks in wat die ontvanger sal sien, bv. Skeduleer 'n gratis konsultasie.</li><li>In die <strong>CTA-skakel</strong>-veld, plak die volle URL. Die adres moet met https:// begin.</li></ol><h3 class=\"h5 mt-6 mb-3\">Sekondêre knoppie</h3><p class=\"text-mid\">Jy kan 'n tweede CTA-knoppie in omlyn-styl byvoeg (deursigtige agtergrond met rand). Vul die velde in die <strong>Sekondêre knoppie</strong>-afdeling op dieselfde manier as vir die hoofknoppie in.</p><h3 class=\"h5 mt-6 mb-3\">Knoppie-afronding</h3><p class=\"text-mid\">Onderaan die Knoppies-oortjie sal jy die <strong>Knoppie-afronding</strong>-opsie vind. Drie variante is beskikbaar: Geen (skerp hoeke), Effens (effens afgerond) of Vol (ovaal knoppie).</p><p class=\"text-mid mt-4\">As jy albei velde leeg laat, sal die knoppie nie in die handtekening verskyn nie. As jy slegs een veld invul, sal die knoppie ook nie sigbaar wees nie - beide teks en skakel word benodig.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Hoe om sosiale media-skakels by te voeg",
       "html": "<p class=\"text-mid\">In die <strong>Sosiale Media</strong>-oortjie kan jy skakels na jou profiele byvoeg. Die generator ondersteun twaalf platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (voorheen Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram en Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Hoe om dit te doen</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Maak die <strong>Sosiale Media</strong>-oortjie in die redigeerder oop.</li><li>Langs elke platform sal jy 'n URL-veld vind. Plak die volle skakel na jou profiel, bv. https://www.linkedin.com/in/jouprofiel.</li><li>Vul slegs die velde in wat jy nodig het. Leë velde sal nie in die handtekening verskyn nie.</li></ol><h3 class=\"h5 mt-6 mb-3\">Sosiale media-ikone</h3><p class=\"text-mid\">Onderaan die Sosiale Media-oortjie sal jy die <strong>Wys ikone langs diensname</strong>-opsie vind. Wanneer geaktiveer, sal skakels as gekleurde SVG-ikone vertoon word in plaas van net name.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Ikoongrootte</strong> - opsies: Klein (16 px), Medium (20 px) of Groot (24 px).</li><li><strong>Ikoonkleur</strong> - Platformkleure (verstekkleure vir elke platform), Aksentkleur (eenvormige aksentkleur) of Tekskleur.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Voorkoms-aanpassing",
       "html": "<p class=\"text-mid\">In die <strong>Voorkoms</strong>-oortjie kan jy kleure, lettertipe en ander visuele elemente van die handtekening aanpas.</p><h3 class=\"h5 mt-6 mb-3\">Kleurtemas</h3><p class=\"text-mid\">Bo-aan die oortjie sal jy vyf klaargemaakte temas vind: Donker, Blou, Pers, Groen en Grys. Deur op 'n tema te klik, stel dit outomaties die aksentkleur en tekskleur in. Dit is die vinnigste manier om 'n konsekwente handtekeningvoorkoms te bereik.</p><h3 class=\"h5 mt-6 mb-3\">Kleure</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Aksentkleur</strong> - gebruik in die sy-/boonste balk, CTA-knoppie en skakels. Jy kan enige kleur uit die palet kies.</li><li><strong>Tekskleur</strong> - kleur van alle teks in die handtekening (naam, kontakbesonderhede, vrywaring).</li><li><strong>Agtergrondkleur</strong> - agtergrondkleur van die hele handtekening. Wit by verstek, maar jy kan dit verander.</li></ul><h3 class=\"h5 mt-6 mb-3\">Lettertipe en grootte</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Lettertipe</strong> - opsies: Arial, Verdana, Tahoma, Trebuchet MS en Georgia. Almal is e-posveilig en sal korrek by die ontvanger vertoon.</li><li><strong>Teksgrootte</strong> - drie opsies: Klein (12 px), Standaard (14 px) en Groter (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Addisionele instellings</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Handtekeningrand</strong> - jy kan 'n rand by die handtekening voeg deur enige kombinasie van kante te kies (links, regs, bo, onder). Deur alle kante te kies, stel dit outomaties 'n volle rand in. Die rand gebruik die aksentkleur.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Teksstyl - kleure en groottes van individuele elemente",
       "html": "<p class=\"text-mid\">In die <strong>Teksstyl</strong>-oortjie kan jy die kleur en lettergrootte vir elke tekselement in die handtekening individueel aanpas.</p><h3 class=\"h5 mt-6 mb-3\">Beskikbare elemente</h3><p class=\"text-mid\">Slegs elemente wat tans inhoud in die handtekening het, is sigbaar. Vir elke element kan jy stel:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Naam</strong> - vertoon by verstek in aksentkleur.</li><li><strong>Postitel</strong> - rol in die maatskappy.</li><li><strong>Maatskappy</strong> - organisasienaam.</li><li><strong>Kontakbesonderhede</strong> - e-pos, foon, webwerf (etikette).</li><li><strong>Sosiale media</strong> - profielskakels.</li><li><strong>Regsvrywaring</strong> - regsteks onderaan die handtekening.</li></ul><h3 class=\"h5 mt-6 mb-3\">Hoe om kleur te verander</h3><p class=\"text-mid\">Langs elke element sal jy 'n ry kleuropsies vind. Klik op 'n kleurvierkant om dit te kies. Jy kan ook 'n pasgemaakte kleur byvoeg deur op die gekleurde vierkant met 'n plus te klik - kies 'n kleur en klik Stoor. Pasgemaakte kleure (tot 8) word tussen alle elemente gedeel.</p><p class=\"text-mid mt-3\">Die herstel-ikoonknoppie herstel die verstekkleur van die element.</p><h3 class=\"h5 mt-6 mb-3\">Hoe om grootte te verander</h3><p class=\"text-mid\">In die tweede ry sal jy 'n groottebeheer met - en + knoppies vind. Die waarde wys die afwyking relatief tot die basislettergrootte (gestel in die Voorkoms-oortjie). Reikwydte: van -4 tot +4 piksels.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Spasiëring tussen elemente",
       "html": "<p class=\"text-mid\">In die <strong>Spasiëring</strong>-oortjie kan jy die afstande tussen individuele handtekeningelemente presies beheer.</p><h3 class=\"h5 mt-6 mb-3\">Binneste handtekeningvulling</h3><p class=\"text-mid\">Bo-aan die oortjie sal jy die binneste vulling-opsie vind - die afstand tussen die handtekeninginhoud en sy rande. Drie waardes is beskikbaar: 8 px (klein), 16 px (medium) en 24 px (groot).</p><h3 class=\"h5 mt-6 mb-3\">Spasiëring tussen elemente</h3><p class=\"text-mid\">Onder die vulling sal jy beheerders vir individuele handtekeningelemente vind. Elke beheerder het + en - knoppies om die spasiëring te vergroot of te verminder. Slegs opsies vir elemente wat tans in die handtekening is, is sigbaar.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Na naam</strong> - spasiëring onder die naamlyn.</li><li><strong>Na titel / maatskappy</strong> - spasiëring onder die titel- en maatskappynaamlyn.</li><li><strong>Na addisionele lyn</strong> - spasiëring onder die beskrywing (indien ingevul).</li><li><strong>Na kontakbesonderhede</strong> - spasiëring onder e-pos, foon en webwerf.</li><li><strong>Na sosiale media</strong> - spasiëring onder profielskakels.</li><li><strong>Na CTA-knoppie</strong> - spasiëring onder die knoppie (indien geaktiveer).</li><li><strong>Voor vrywaring</strong> - spasiëring bo die regsvrywaringsteks.</li></ul><p class=\"text-mid mt-4\">As jy 'n veld skoonmaak (bv. die foonnommer verwyder), sal die ooreenstemmende spasiëringsopsie outomaties uit die oortjie verdwyn.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Regsvrywaring - wanneer om dit by te voeg",
       "html": "<p class=\"text-mid\">In die <strong>Vrywaring / Regsgeldig</strong>-oortjie kan jy regsteks byvoeg wat onderaan die handtekening in kleiner lettertipe sal verskyn.</p><h3 class=\"h5 mt-6 mb-3\">Wanneer om 'n vrywaring by te voeg</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Besigheidskorrespondensie</strong> - vertroulikheidskennisgewing en versoek om te verwyder in geval van verkeerde aflewering.</li><li><strong>Bedryfsvereistes</strong> - sommige bedrywe (bv. regs, medies, finansieel) vereis spesifieke inligting in elke boodskap.</li><li><strong>POPIA</strong> - inligting oor persoonlike dataverwerking, indien die maatskappy 'n databeheerder is.</li></ul><p class=\"text-mid mt-4\">By verstek is die veld gevul met 'n voorbeeld-vertroulikheidsteks. Jy kan dit redigeer, verwyder of met jou eie vrywaring vervang. As jy die veld leeg laat, sal geen vrywaring in die handtekening verskyn nie.</p><h3 class=\"h5 mt-6 mb-3\">Skeidingslyn</h3><p class=\"text-mid\">Onder die teksveld sal jy die <strong>Wys verdeler tussen kontakbesonderhede en vrywaring</strong>-opsie vind. Aktiveer dit om 'n horisontale lyn tussen kontakbesonderhede en die regsvrywaring by te voeg.</p><p class=\"text-mid mt-3\">Na die aktivering van die lyn verskyn addisionele aanpassingsopsies:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Lynstyl</strong> - opsies: soliede, gestreep of gestippel.</li><li><strong>Lyndikte</strong> - drie opsies: 1 px, 2 px of 3 px.</li><li><strong>Lynkleur</strong> - verstek grys (#e5e7eb). Jy kan enige kleur uit die palet kies of die verstek herstel deur op die Verstek-knoppie te klik.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Outo-stoor en herstel van instellings",
       "html": "<p class=\"text-mid\">Die generator stoor outomaties alle instellings in blaaiergeheue (localStorage). Na die herlaai van die bladsy of die heropening van die instrument, sal data, uitleg, kleure en alle ander opsies herstel word.</p><h3 class=\"h5 mt-6 mb-3\">Hoe werk outo-stoor?</h3><p class=\"text-mid\">Elke verandering (teks, kleur, uitleg, spasiëring) word onmiddellik in blaaiergeheue gestoor. Stoor gebeur outomaties op die agtergrond - sonder om enige knoppies te klik.</p><h3 class=\"h5 mt-6 mb-3\">Hoe om instellings te herstel</h3><p class=\"text-mid\">Onder die handtekeningvoorskou sal jy 'n <strong>Herstel voorkoms</strong>-knoppie vind. Na die klik sal 'n bevestigingsdialoog verskyn. Bevestiging van die herstel sal alle data en instellings na verstekwaardes herstel. Hierdie bewerking kan nie ongedaan gemaak word nie.</p><h3 class=\"h5 mt-6 mb-3\">Uitvoer en invoer van konfigurasie</h3><p class=\"text-mid\">Onder die handtekeningvoorskou sal jy twee addisionele knoppies vind: <strong>Voer instellings uit</strong> en <strong>Voer instellings in</strong>. Uitvoer stoor alle data, kleure, uitleg, spasiëring en teksstyle na 'n JSON-lêer. Invoer laai 'n voorheen gestoorde konfigurasie uit 'n lêer.</p><p class=\"text-mid mt-3\">Hierdie funksie is veral nuttig wanneer jy die handtekeningkonfigurasie tussen rekenaars wil oordra, instellings met kollegas wil deel, of 'n rugsteun van jou instellings voor 'n herstel wil hou.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hoe om die handtekening na Gmail of Outlook te kopieer",
@@ -169,22 +226,40 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Handtekeningvoorskou en uitvoeropsies",
       "html": "<p class=\"text-mid\">Die voorskoupaneel vertoon aan die regterkant van die redigeerder en word outomaties met elke verandering opgedateer. Die voorskou is klewerig, sodat dit sigbaar bly selfs terwyl jy deur redigeringsopsies blaai.</p><h3 class=\"h5 mt-6 mb-3\">Wissel voorskoua-agtergrond</h3><p class=\"text-mid\">Bo die voorskou sal jy drie agtergrondveranderingsknoppies vind: <strong>Lig</strong> (verstek grys agtergrond), <strong>Donker</strong> (donker agtergrond, nuttig om leesbaarheid op donker agtergronde na te gaan) en <strong>Dambord</strong> (dambordpatroon, laat jou deursigtigheid en handtekeningrande sien).</p><h3 class=\"h5 mt-6 mb-3\">Aksieknoppies</h3><p class=\"text-mid\">Onder die voorskou sal jy verskeie knoppies vind:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Kopieer handtekening (Gmail / Outlook)</strong> - kopieer die handtekening na knipbord as geformateerde HTML. Plak dit direk in handtekeninginstellings.</li><li><strong>Kopieer HTML-kode</strong> - kopieer die rou HTML-kode van die handtekening na knipbord. Nuttig wanneer jy kode in 'n HTML-redigeerder of CMS wil plak.</li><li><strong>Laai af as HTML</strong> - stoor die handtekeningkode as 'n .html-lêer op skyf. Nuttig vir argivering of deling met 'n ontwikkelaar.</li><li><strong>Bekyk HTML-kode</strong> - maak 'n modaal oop met die volle HTML-bronkode van die handtekening. Jy kan die kode oorsien en dit direk uit die modaal kopieer.</li><li><strong>Voer instellings uit</strong> - stoor die volle handtekeningkonfigurasie (data, kleure, uitleg, spasiëring, style) na 'n JSON-lêer.</li><li><strong>Voer instellings in</strong> - laai 'n konfigurasie uit 'n JSON-lêer. Alle instellings sal outomaties toegepas word.</li><li><strong>Herstel voorkoms</strong> - herstel alle data en instellings na verstekwaardes (na bevestiging).</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Vir wie is die e-poshandtekening-skepper?",
       "description": "Die e-poshandtekening-instrument is nuttig vir enigiemand wat besigheids-e-posse stuur:",
       "grid": "two",
       "items": [
-        { "icon": "RiBriefcaseLine", "title": "Entrepreneurs en vryskutwerkers", "description": "'n Professionele handtekening in elke boodskap sonder om 'n ontwerper te huur." },
-        { "icon": "RiTeamLine", "title": "Maatskappyspanne", "description": "Elke werknemer skep hul eie handtekening in dieselfde styl. Konsekwente identiteit regoor die hele maatskappy." },
-        { "icon": "RiHandCoinLine", "title": "Verkoopsverteenwoordigers", "description": "'n CTA-knoppie met 'n skakel na 'n kalender of aanbod verhoog die kanse om 'n vergadering te bespreek." },
+        {
+          "icon": "RiBriefcaseLine",
+          "title": "Entrepreneurs en vryskutwerkers",
+          "description": "'n Professionele handtekening in elke boodskap sonder om 'n ontwerper te huur."
+        },
+        {
+          "icon": "RiTeamLine",
+          "title": "Maatskappyspanne",
+          "description": "Elke werknemer skep hul eie handtekening in dieselfde styl. Konsekwente identiteit regoor die hele maatskappy."
+        },
+        {
+          "icon": "RiHandCoinLine",
+          "title": "Verkoopsverteenwoordigers",
+          "description": "'n CTA-knoppie met 'n skakel na 'n kalender of aanbod verhoog die kanse om 'n vergadering te bespreek."
+        },
         {
           "icon": "RiScales3Line",
           "title": "Prokureurs, rekenmeesters, dokters",
@@ -192,7 +267,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Wat maak hierdie HTML-e-poshandtekening-generator spesiaal?",
@@ -208,20 +286,47 @@
           "title": "Outo-stoor in blaaier",
           "description": "Elke verandering word outomaties in blaaiergeheue gestoor. Na die herlaai van die bladsy bly die handtekening beskikbaar."
         },
-        { "icon": "RiTranslate2", "title": "Uitvoer en invoer van konfigurasie", "description": "Die volle handtekeningkonfigurasie kan as 'n JSON-lêer uitgevoer en met kollegas gedeel word." },
+        {
+          "icon": "RiTranslate2",
+          "title": "Uitvoer en invoer van konfigurasie",
+          "description": "Die volle handtekeningkonfigurasie kan as 'n JSON-lêer uitgevoer en met kollegas gedeel word."
+        },
         {
           "icon": "RiAppsLine",
           "title": "12 sosiale media-platforms",
           "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram en Pinterest."
         },
-        { "icon": "RiPaletteLine", "title": "Gevorderde aanpassing", "description": "Avatar-vorm en -grootte, lynstylering, individuele tekskleure en -groottes." },
-        { "icon": "RiFileCodeLine", "title": "Verskeie uitvoeropsies", "description": "Kopieer HTML, laai lêer af, bronkode-voorskou, JSON-konfigurasie uitvoer/invoer." },
-        { "icon": "RiShieldCheckLine", "title": "Privaatheid", "description": "Data word nie na 'n bediener gestuur nie. Die generator werk heeltemal in die blaaier." },
-        { "icon": "RiMailCheckLine", "title": "Versoenbaarheid", "description": "Gegenereerde HTML-kode werk in Gmail, Outlook, Apple Mail en Thunderbird." },
-        { "icon": "RiEyeLine", "title": "Regstreekse voorskou", "description": "Elke verandering is onmiddellik sigbaar op ligte, donker of dambord-agtergrond." }
+        {
+          "icon": "RiPaletteLine",
+          "title": "Gevorderde aanpassing",
+          "description": "Avatar-vorm en -grootte, lynstylering, individuele tekskleure en -groottes."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Verskeie uitvoeropsies",
+          "description": "Kopieer HTML, laai lêer af, bronkode-voorskou, JSON-konfigurasie uitvoer/invoer."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privaatheid",
+          "description": "Data word nie na 'n bediener gestuur nie. Die generator werk heeltemal in die blaaier."
+        },
+        {
+          "icon": "RiMailCheckLine",
+          "title": "Versoenbaarheid",
+          "description": "Gegenereerde HTML-kode werk in Gmail, Outlook, Apple Mail en Thunderbird."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Regstreekse voorskou",
+          "description": "Elke verandering is onmiddellik sigbaar op ligte, donker of dambord-agtergrond."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Gereeld gevraagde vrae oor die e-poshandtekening-generator",
@@ -281,8 +386,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Verken ander gereedskap" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Verken ander gereedskap"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

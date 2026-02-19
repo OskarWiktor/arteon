@@ -2,8 +2,8 @@
   "toolKey": "colorPalette",
   "locale": "ha",
   "metadata": {
-    "title": "Mai Samar da Fayafayan Launuka Kyauta – Fayafayai 9 Daga Launi Ɗaya",
-    "description": "Samar da fayafayan launuka 9 daga launi guda ɗaya: monochromatic, complementary, triadic, pastel da ƙari. Kwafa lambobin HEX cikin dannawa ɗaya. Ba buƙatar rajista, ba iyaka.",
+    "title": "Mai Samar da Fayafayan Launuka Kyauta – Fayafayai 9 Daga",
+    "description": "Samar da fayafayan launuka 9 daga launi guda ɗaya: monochromatic, complementary, triadic, pastel da ƙari. Kwafa lambobin HEX cikin dannawa ɗaya.",
     "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
     "path": "/ha/kayan-aiki/samar-da-fayafayan-launuka"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/ha/kayan-aiki", "label": "Kayan Aiki" },
-    "third": { "href": "/ha/kayan-aiki/samar-da-fayafayan-launuka", "label": "Mai samar da fayafayan launuka" }
+    "second": {
+      "href": "/ha/kayan-aiki",
+      "label": "Kayan Aiki"
+    },
+    "third": {
+      "href": "/ha/kayan-aiki/samar-da-fayafayan-launuka",
+      "label": "Mai samar da fayafayan launuka"
+    }
   },
   "schemas": {
     "software": {
@@ -52,24 +58,39 @@
       "name": "Yadda ake samar da fayafayan launuka daga launi guda ɗaya na tushe",
       "description": "Yadda ake samar da fayafayan launuka 9 daga launi guda ɗaya na tushe: monochromatic, complementary, triadic, pastel, da ƙari. Ana iya kwafa kowane launi tare da lambar HEX ɗinsa.",
       "steps": [
-        { "name": "Zaɓi launin tushe", "text": "Shigar da lambar HEX a cikin filin rubutu ko yi amfani da mai zaɓar launi don zaɓi launi ta gani." },
-        { "name": "Tabbatar da launi", "text": "Tabbatar da launin da aka zaɓa tare da maɓallin Sabunta Launi - kayan aikin zai samar da fayafayai bisa launin tushe da ka zaɓa." },
+        {
+          "name": "Zaɓi launin tushe",
+          "text": "Shigar da lambar HEX a cikin filin rubutu ko yi amfani da mai zaɓar launi don zaɓi launi ta gani."
+        },
+        {
+          "name": "Tabbatar da launi",
+          "text": "Tabbatar da launin da aka zaɓa tare da maɓallin Sabunta Launi - kayan aikin zai samar da fayafayai bisa launin tushe da ka zaɓa."
+        },
         {
           "name": "Duba fayafayai",
           "text": "Kayan aikin zai samar da fayafayai 9 daban-daban ta atomatik: monochromatic, analogous, complementary, triadic, split-complementary, pastel, duhu, tonal, da minimalist."
         },
-        { "name": "Kwafa launuka", "text": "Kusa da kowane launi za ka sami maɓallin Kwafa - ana kwafa lambar HEX zuwa clipboard na tsarinku." }
+        {
+          "name": "Kwafa launuka",
+          "text": "Kusa da kowane launi za ka sami maɓallin Kwafa - ana kwafa lambar HEX zuwa clipboard na tsarinku."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Me ya sa za a samar da fayafayan launuka?",
       "html": "<p class=\"text-mid\">Fayafayan launuka mai daidaituwa ita ce tushen kowane aikin gani - daga gidan yanar gizo, ta hanyar alama, zuwa kayan bugu. Zaɓar launuka da ke aiki tare da hannu yana buƙatar sanin ka'idar launuka. Mai samar da yana yin hakan ta atomatik: ka ba da launi guda ɗaya na tushe (misali, launin alamar ka), kayan aikin kuma ya ƙirƙiri saitin launuka 9 bisa tsare-tsaren jituwar launuka da aka tabbatar.</p><p class=\"text-mid mt-3\">Kowane launi da aka samar yana zuwa tare da lambar HEX ɗinsa (misali, #4F6BF5) da ƙimar HSL (hue, saturation, lightness). Ana iya liƙa lambar HEX kai tsaye cikin CSS, Figma, Canva, ko kowane aikace-aikacen zane.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Yadda ake amfani da mai samar da fayafayan launuka",
@@ -80,11 +101,20 @@
           "title": "1. Shigar da launin tushe",
           "description": "Buga lambar HEX (misali, #4F6BF5) a cikin filin rubutu ko zaɓi launi daga mai zaɓar launi. Kuma za ka iya amfani da maɓallin Launin Bazuwar."
         },
-        { "title": "2. Tabbatar da zaɓinka", "description": "Bayan dannawa maɓallin Sabunta Launi, kayan aikin zai samar da fayafayai 9 ta atomatik bisa tsare-tsaren jituwar launuka daban-daban." },
-        { "title": "3. Kwafa launukan da kake buƙata", "description": "Kusa da kowane launi akwai maɓallin Kwafa - lambar HEX tana zuwa clipboard kuma ana iya liƙa ta kai tsaye cikin aikin ka." }
+        {
+          "title": "2. Tabbatar da zaɓinka",
+          "description": "Bayan dannawa maɓallin Sabunta Launi, kayan aikin zai samar da fayafayai 9 ta atomatik bisa tsare-tsaren jituwar launuka daban-daban."
+        },
+        {
+          "title": "3. Kwafa launukan da kake buƙata",
+          "description": "Kusa da kowane launi akwai maɓallin Kwafa - lambar HEX tana zuwa clipboard kuma ana iya liƙa ta kai tsaye cikin aikin ka."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Wane irin tsare-tsaren launuka ne kayan aikin ke samarwa?",
@@ -138,14 +168,20 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Me ne mai samar da fayafayan launuka ke dogara a kai?",
       "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° a kan da'irar launuka</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
       "html": "<p class=\"text-mid\">Ana ƙirƙirar dukan fayafayai ta hanyar canza launin tushe ta lissafi a cikin sararin launuka na HSL. HSL yana bayyana launi tare da ƙimomi uku: hue (H) shi ne matsayin a kan da'irar launuka (0°–360°), saturation (S) yana ƙayyade ƙarfin launi, kuma lightness (L) - yadda launi yake da haske ko duhu.</p><p class=\"text-mid mt-3\">Fayafayan complementary, triadic, da split-complementary sun dogara ne a kan lissafin da'irar launuka - ana sanya launuka a tazara daidai, wanda ke ƙirƙirar daidaiton gani. Fayafayan monochromatic, pastel, da duhu suna canza haske da ƙarfin launi kawai yayin da suke riƙe launi iri ɗaya.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Ina za a yi amfani da fayafayan launuka da aka samar",
@@ -178,7 +214,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Warware matsalolin mai samar da fayafayai",
@@ -201,7 +240,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Tambayoyin da ake yawan yi game da mai samar da fayafayan launuka",
@@ -234,8 +276,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Bincika sauran kayan aiki" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Bincika sauran kayan aiki"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

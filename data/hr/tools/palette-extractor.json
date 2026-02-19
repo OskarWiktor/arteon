@@ -3,7 +3,7 @@
   "locale": "hr",
   "metadata": {
     "title": "Besplatno izdvajanje boja iz slike – Paleta",
-    "description": "Učitajte fotografiju ili logotip i izdvojite do 12 dominantnih boja s HEX i RGB kodovima. Pogodno za UI dizajn, brendiranje i društvene mreže. Bez registracije.",
+    "description": "Učitajte fotografiju ili logotip i izdvojite do 12 dominantnih boja s HEX i RGB kodovima. Pogodno za UI dizajn, brendiranje i društvene mreže.",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/hr/alati/izdvajanje-boja-iz-slike"
   },
@@ -165,7 +165,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Rješavanje problema s ekstraktorom boja",

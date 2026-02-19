@@ -3,7 +3,7 @@
   "locale": "pt",
   "metadata": {
     "title": "Verificador de contraste de cores gratuito – WCAG 2.1",
-    "description": "Verifique a legibilidade das cores de texto e fundo segundo WCAG 2.1. Rácio de contraste, avaliação AA/AAA e correção automática de cores. Sem registo.",
+    "description": "Verifique a legibilidade das cores de texto e fundo segundo WCAG 2.1. Rácio de contraste, avaliação AA/AAA e correção automática de cores.",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/pt/ferramentas/verificador-de-contraste-de-cores"
   },

@@ -3,7 +3,7 @@
   "locale": "no",
   "metadata": {
     "title": "Gratis fargeutrekker fra bilde – Palett fra ethvert foto",
-    "description": "Last opp et foto eller logo og trekk ut opptil 12 dominerende farger med HEX- og RGB-koder. Egnet for UI, merkevarebygging og sosiale medier. Uten registrering.",
+    "description": "Last opp et foto eller logo og trekk ut opptil 12 dominerende farger med HEX- og RGB-koder. Egnet for UI, merkevarebygging og sosiale medier.",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/no/verktoy/fargeutrekker-fra-bilde"
   },
@@ -165,7 +165,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Feilsøking av fargeutrekkeren",

@@ -4,20 +4,12 @@ import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Wrapper from '@/components/ui/Wrapper';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
+import { getPrivacyAlternates } from '@/lib/i18n/pages/privacy';
 
 export const metadata = {
   title: 'Polityka prywatności - Arteon',
   description: 'Polityka prywatności strony Arteon - dowiedz się w jaki sposób chronimy Twoje dane osobowe i z jakich narzędzi analitycznych korzystamy',
-  alternates: {
-    canonical: toAbsoluteUrl('/polityka-prywatnosci'),
-    languages: {
-      pl: toAbsoluteUrl('/polityka-prywatnosci'),
-      en: toAbsoluteUrl('/en/privacy-policy'),
-      de: toAbsoluteUrl('/de/datenschutzrichtlinie'),
-      es: toAbsoluteUrl('/es/politica-de-privacidad'),
-      fr: toAbsoluteUrl('/fr/politique-de-confidentialite'),
-    },
-  },
+  alternates: getPrivacyAlternates('pl'),
   openGraph: {
     title: 'Polityka prywatności - Arteon',
     description: 'Polityka prywatności strony Arteon - dowiedz się w jaki sposób chronimy Twoje dane osobowe i z jakich narzędzi analitycznych korzystamy',

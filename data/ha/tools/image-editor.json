@@ -2,8 +2,8 @@
   "toolKey": "imageResize",
   "locale": "ha",
   "metadata": {
-    "title": "Editan Hoto Kyauta – Yanke, Canza Girma & Juyawa Cikin Dakiku",
-    "description": "Canza girma da yankan hotuna cikin dakiƙu. Ƙayyadadden tsare-tsare don Instagram, Facebook, LinkedIn. Juya JPG zuwa WebP. Ƙirƙiri hotunan zagaye. Ba buƙatar rajista, ba iyaka.",
+    "title": "Editan Hoto Kyauta – Yanke, Canza Girma & Juyawa Cikin",
+    "description": "Canza girma da yankan hotuna cikin dakiƙu. Ƙayyadadden tsare-tsare don Instagram, Facebook, LinkedIn. Juya JPG zuwa WebP. Ƙirƙiri hotunan zagaye.",
     "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
     "path": "/ha/kayan-aiki/editan-hoto"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/ha/kayan-aiki", "label": "Kayan Aiki" },
-    "third": { "href": "/ha/kayan-aiki/editan-hoto", "label": "Editan hoto ta yanar gizo" }
+    "second": {
+      "href": "/ha/kayan-aiki",
+      "label": "Kayan Aiki"
+    },
+    "third": {
+      "href": "/ha/kayan-aiki/editan-hoto",
+      "label": "Editan hoto ta yanar gizo"
+    }
   },
   "schemas": {
     "software": {
@@ -52,52 +58,91 @@
       "name": "Yadda ake canza girma da yankan hoto don kafofin watsa labarai",
       "description": "Yadda ake canza girman hoto don Instagram (1080x1080, 1080x1350, story), Facebook, LinkedIn, da hoton OG. Juya JPG zuwa WebP da ƙirƙirar hoton zagaye.",
       "steps": [
-        { "name": "Ƙara hoto", "text": "Ja fayil zuwa wurin da aka kebantar ko zaɓi hoto daga na'urar ka. Tsare-tsare da ake tallafawa: JPG, PNG, WebP." },
-        { "name": "Zaɓi girma ko ƙayyadadden tsari", "text": "Shigar da girman da ake nufi a cikin pixels ko zaɓi ƙayyadadden tsari (misali, bugun Instagram, murfin Facebook, hoton OG)." },
-        { "name": "Daidaita yanke", "text": "Motsa kuma ƙara girman hoton don zaɓar mafi kyawun yanki. Yankin mai haske a cikin duban yana nuna daidai abin da za a ajiye." },
-        { "name": "Zaɓi tsari kuma sauke", "text": "Zaɓi tsarin fayil (JPG, PNG, ko WebP), saita ingancin matsawa, kuma sauke hoton da ya gama." }
+        {
+          "name": "Ƙara hoto",
+          "text": "Ja fayil zuwa wurin da aka kebantar ko zaɓi hoto daga na'urar ka. Tsare-tsare da ake tallafawa: JPG, PNG, WebP."
+        },
+        {
+          "name": "Zaɓi girma ko ƙayyadadden tsari",
+          "text": "Shigar da girman da ake nufi a cikin pixels ko zaɓi ƙayyadadden tsari (misali, bugun Instagram, murfin Facebook, hoton OG)."
+        },
+        {
+          "name": "Daidaita yanke",
+          "text": "Motsa kuma ƙara girman hoton don zaɓar mafi kyawun yanki. Yankin mai haske a cikin duban yana nuna daidai abin da za a ajiye."
+        },
+        {
+          "name": "Zaɓi tsari kuma sauke",
+          "text": "Zaɓi tsarin fayil (JPG, PNG, ko WebP), saita ingancin matsawa, kuma sauke hoton da ya gama."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Canza girman hotuna ta yanar gizo - yanke, juya, da matsa a cikin kayan aiki ɗaya",
       "html": "<p class=\"text-mid\">Editan hoto ta yanar gizo yana baka damar daidaita hotuna zuwa takamaiman girma cikin sauri. Za ka iya canza girman hoto zuwa kowane girman pixel, zaɓi ƙayyadadden tsari don kafofin watsa labarai, ko yanke sashen hoto tare da tsarin daidaitacce.</p><p class=\"text-mid mt-3\">Ban da canza girma, kayan aikin yana ba da juya tsari (JPG, PNG, WebP), ƙirƙirar hoton zagaye, da sarrafa ingancin matsawa.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Yadda ake canza girman hoto ta yanar gizo",
       "description": "Gyaran hoto yana ɗaukar 'yan daƙiƙu kaɗan kawai:",
       "grid": "three",
       "items": [
-        { "title": "1. Ƙara hoto", "description": "Ja fayil zuwa wurin da aka kebantar ko zaɓi hoto daga na'urar ka. Tsare-tsare da ake tallafawa: JPG, PNG, WebP." },
-        { "title": "2. Saita girma", "description": "Shigar da girma a cikin pixels ko zaɓi ƙayyadadden tsari (Instagram, Facebook, YouTube, LinkedIn, hoton OG)." },
-        { "title": "3. Sauke", "description": "Daidaita yanke, zaɓi tsarin fayil (JPG, PNG, WebP), saita inganci, kuma sauke hoton da ya gama." }
+        {
+          "title": "1. Ƙara hoto",
+          "description": "Ja fayil zuwa wurin da aka kebantar ko zaɓi hoto daga na'urar ka. Tsare-tsare da ake tallafawa: JPG, PNG, WebP."
+        },
+        {
+          "title": "2. Saita girma",
+          "description": "Shigar da girma a cikin pixels ko zaɓi ƙayyadadden tsari (Instagram, Facebook, YouTube, LinkedIn, hoton OG)."
+        },
+        {
+          "title": "3. Sauke",
+          "description": "Daidaita yanke, zaɓi tsarin fayil (JPG, PNG, WebP), saita inganci, kuma sauke hoton da ya gama."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Yadda ake ƙara hoto",
       "html": "<p class=\"text-mid\">Kayan aikin yana karɓar hotuna a tsarin JPG, PNG, da WebP. Za ka iya ƙara hoto ta hanyoyi biyu:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Ja da sauka</strong> - ɗauki fayil daga babban fayil a kan kwamfutar ka kuma jefa shi a kan wurin ɗora fayil (wurin da ke da iyakar da ke da digo-digo).</li><li><strong>Zaɓi daga na'ura</strong> - dannawa wurin ɗora fayil yana buɗe tagar zaɓin fayil.</li></ul><p class=\"text-mid mt-3\">Bayan ƙara hoto, kayan aikin yana karanta girman asali ta atomatik kuma yana nuna duban. Yanzu za ka iya ci gaba zuwa saituna na yanke.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Saita girman da ake nufi",
-      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Girma a cikin px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>\u0198ayyadadden tsare-tsare</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Fa\u0257i (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly></div><div><label class=\"text-[14px]! font-medium\">Tsayi (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span>Kiyaye daidaito (girma na biyu ta atomatik)</span></label></div></div>",
-      "html": "<p class=\"text-mid\">A cikin shafin <strong>Girma a cikin px</strong>, kana shigar da fa\u0257i da tsayi da hannu. Za\u0253in <strong>Kiyaye daidaito</strong> yana daidaita girma na biyu ta atomatik.</p>"
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Girma a cikin px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Ƙayyadadden tsare-tsare</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Faɗi (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly></div><div><label class=\"text-[14px]! font-medium\">Tsayi (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span>Kiyaye daidaito (girma na biyu ta atomatik)</span></label></div></div>",
+      "html": "<p class=\"text-mid\">A cikin shafin <strong>Girma a cikin px</strong>, kana shigar da faɗi da tsayi da hannu. Zaɓin <strong>Kiyaye daidaito</strong> yana daidaita girma na biyu ta atomatik.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Girman hoto don Instagram, Facebook, da LinkedIn",
       "html": "<p class=\"text-mid mb-4\">Kayan aikin ya ƙunshi ƙayyadadden tsare-tsare tare da mafi kyawun girma don dandamali mafi shahara:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Dandamali</th><th class=\"py-2 pr-4 font-semibold\">Tsari</th><th class=\"py-2 pr-4 font-semibold\">Girma (px)</th><th class=\"py-2 font-semibold\">Rabo</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Bugu murabba'i</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Bugu tsaye</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Bugu</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Murfin shafi</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Bugu</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Tutar bayanan martaba</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">Hoton OG</td><td class=\"py-2 pr-4\">Raba hanyar haɗi</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div><p class=\"text-light mt-4\">Don zaɓar ƙayyadadden tsari, canja zuwa shafin <strong>Ƙayyadadden tsare-tsare</strong> kuma danna girman da aka zaɓa. Za a yi amfani da girma ta atomatik.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Ƙayyadadden tsare-tsare - wanne za a zaɓa?",
@@ -119,13 +164,21 @@
           "title": "Instagram - story / reels (1080×1920)",
           "description": "Tsarin tsaye na cikakken allo (rabo 9:16). Ana amfani da shi a cikin stories da reels. Yana cika dukan allon waya."
         },
-        { "icon": "RiFacebookLine", "title": "Facebook - bugu (1200×630)", "description": "Mafi kyawun tsari don bugun Facebook da hanyoyin haɗi da aka raba. Rabo kusa da 16:9." },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook - bugu (1200×630)",
+          "description": "Mafi kyawun tsari don bugun Facebook da hanyoyin haɗi da aka raba. Rabo kusa da 16:9."
+        },
         {
           "icon": "RiFacebookLine",
           "title": "Facebook - murfin shafi (820×360)",
           "description": "Hoton baya don shafin kasuwanci na Facebook. Tsarin faɗi, mai faɗi - ana iya yanke shi dabam a kan na'urori daban-daban."
         },
-        { "icon": "RiLinkedinLine", "title": "LinkedIn - bugu (1200×1200)", "description": "Tsarin murabba'i don bugun LinkedIn. Yana kyau a cikin feed da kan na'urorin hannu." },
+        {
+          "icon": "RiLinkedinLine",
+          "title": "LinkedIn - bugu (1200×1200)",
+          "description": "Tsarin murabba'i don bugun LinkedIn. Yana kyau a cikin feed da kan na'urorin hannu."
+        },
         {
           "icon": "RiLinkedinLine",
           "title": "LinkedIn - tutar bayanan martaba (1584×396)",
@@ -136,13 +189,21 @@
           "title": "Hoton OG (1200×630)",
           "description": "Hoto da ake nuna lokacin raba hanyar haɗi a kan kafofin watsa labarai (Open Graph). Al'ada don Facebook, Twitter, LinkedIn, da sauran dandamali."
         },
-        { "icon": "RiFileImageLine", "title": "Hoton labarin (1600×900)", "description": "Tsarin faɗi da ya dace don kan labarin blog. Rabo 16:9 yana kyau a kan shafuka masu yawan rubutu." },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Hoton labarin (1600×900)",
+          "description": "Tsarin faɗi da ya dace don kan labarin blog. Rabo 16:9 yana kyau a kan shafuka masu yawan rubutu."
+        },
         {
           "icon": "RiAspectRatioLine",
           "title": "Tutar gidan yanar gizo (1920×600)",
           "description": "Tsarin mai faɗi sosai don tutocin gidan yanar gizo. Yana aiki a matsayin baya ƙarƙashin kanun labarai ko a cikin sassan tayin."
         },
-        { "icon": "RiCropLine", "title": "Ƙaramin hoton labarin (800×600)", "description": "Ƙaramin tsari don ƙananan hotuna a kan jerin labarai, juzu'in kayayyaki, ko duba sakamakon bincike." },
+        {
+          "icon": "RiCropLine",
+          "title": "Ƙaramin hoton labarin (800×600)",
+          "description": "Ƙaramin tsari don ƙananan hotuna a kan jerin labarai, juzu'in kayayyaki, ko duba sakamakon bincike."
+        },
         {
           "icon": "RiLayoutGridLine",
           "title": "Sashen Hero (1920×1080)",
@@ -150,26 +211,38 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Yadda ake yankan hoto",
       "html": "<p class=\"text-mid\">Bayan saita girman da ake nufi, yankin yanke na mu'amala yana bayyana a kan duban. Bangaren hoto mai haske shi ne sashen da za a ajiye - sauran an duhunta su.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Jan yanke</p><p class=\"text-mid mt-1\">Kama yankin mai haske kuma ja shi zuwa kowane bangaren hoto. Ta wannan hanyar kana zaɓar wane sashe na hoton da za a fitar.</p></div><div><p class=\"text-dark font-semibold\">Canza girma ta hanyar hannaye</p><p class=\"text-mid mt-1\">A kusurwoyin yankin yanke akwai ƙananan murabba'ai (hannaye). Jan su yana canza girman yanke - za ka iya ƙara girma ko rage shi yayin kiyaye daidaiton da aka zaɓa.</p></div><div><p class=\"text-dark font-semibold\">Girman duba</p><p class=\"text-mid mt-1\">A cikin shafin <strong>Zoom</strong> za ka sami mai zamewa don daidaita girman duba (100–300%). Ƙimar da ta fi girma tana nufin yanke yana rufe ƙaramin sashe na hoton asali - yana da amfani lokacin da kake son yanke takamaiman cikakkun bayanan.</p></div><div><p class=\"text-dark font-semibold\">Daidaiton matsayi na daidai</p><p class=\"text-mid mt-1\">A cikin shafin <strong>Position</strong> za ka iya saita daidaiton matsayin yanke a cikin kaso (0–100% don igiyoyin X da Y). Maɓallai na tsakaituwa suna baka damar sanya yanke a tsakiyar hoto cikin sauri.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Siffofin yanke",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Murabba'i</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Murabba'i daidai</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Da'ira</span></div></div>",
       "html": "<p class=\"text-mid\">A cikin shafin <strong>Siffofin Yanke</strong>, kana zaɓar siffar hoton da za a fitar: murabba'i (tare da daidaiton da aka zaɓa), murabba'i daidai (yana tilasta 1:1), ko da'ira (tare da bayan gaskiya).</p><p class=\"text-mid mt-3\">Siffar da'ira tana ƙirƙirar hoton zagaye tare da bayan gaskiya a waje da da'irar. Kayan aikin yana canja tsari zuwa PNG ko WebP ta atomatik, tun da JPG ba ya tallafawa gaskiya.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Grid 3×3 - menene amfaninsa?",
       "html": "<p class=\"text-mid\">Grid da ke raba hoto zuwa sassa 9 daidai yana bayyana a kan yankin yanke. Wannan hangen nesa ne na <strong>dokar kashi uku</strong> - ɗaya daga cikin ƙa'idodin asali na tsarin daukar hoto.</p><p class=\"text-mid mt-3\">Dokar ta ce muhimman abubuwan hoto (fuska, kayan, wurin sha'awa) ya kamata a sanya su a mahaɗin layukan grid ko kusa da su. Irin wannan tsari ya fi ƙarfi kuma yana faranta wa ido fiye da sanya batun daidai a tsakiya.</p><p class=\"text-mid mt-3\">A cikin shafin <strong>Launin grid</strong> za ka iya canza launin layi (kore, fari, baƙi, ja, rawaya) domin grid ya bayyana a fili a kan hotuna daban-daban.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Fitarwa - wane tsari za a zaɓa?",
@@ -191,17 +264,36 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Rabo na girma - menene ma'anarsu?",
       "description": "Rabo na girma shine alaƙar tsakanin faɗi da tsayin hoto. Ana rubuta shi a matsayin lambobi biyu da aka raba da alamar colon:",
       "grid": "two",
       "items": [
-        { "icon": "RiLayoutGridLine", "title": "1:1 (murabba'i)", "description": "Faɗi ya yi daidai da tsayi. Bugun Instagram murabba'i, hotunan bayanan martaba, alamomi." },
-        { "icon": "RiAspectRatioLine", "title": "4:5 (tsaye)", "description": "Tsarin tsaye kaɗan. Bugun Instagram tsaye - yana ɗaukar ƙarin sarari a cikin feed fiye da murabba'i." },
-        { "icon": "RiImageLine", "title": "3:2 (na gargajiya)", "description": "Daidaiton daukar hoto na gargajiya na analog. Kyamarori na dijital da yawa kuma suna amfani da wannan tsari." },
-        { "icon": "RiCropLine", "title": "16:9 (faɗin allo)", "description": "Tsarin bidiyo na HD na al'ada, gabatarwa, da na'urar duba. YouTube, bidiyon Facebook, tutocin gidan yanar gizo." },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "1:1 (murabba'i)",
+          "description": "Faɗi ya yi daidai da tsayi. Bugun Instagram murabba'i, hotunan bayanan martaba, alamomi."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "4:5 (tsaye)",
+          "description": "Tsarin tsaye kaɗan. Bugun Instagram tsaye - yana ɗaukar ƙarin sarari a cikin feed fiye da murabba'i."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "3:2 (na gargajiya)",
+          "description": "Daidaiton daukar hoto na gargajiya na analog. Kyamarori na dijital da yawa kuma suna amfani da wannan tsari."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "16:9 (faɗin allo)",
+          "description": "Tsarin bidiyo na HD na al'ada, gabatarwa, da na'urar duba. YouTube, bidiyon Facebook, tutocin gidan yanar gizo."
+        },
         {
           "icon": "RiInstagramLine",
           "title": "9:16 (tsaye cikakken allo)",
@@ -209,7 +301,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Tambayoyin da ake yawan yi game da editan hoto",
@@ -252,8 +347,17 @@
         }
       ]
     },
-    { "type": "gap", "size": "sm" },
-    { "type": "toolsCarousel", "title": "Bincika sauran kayan aiki" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Bincika sauran kayan aiki"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

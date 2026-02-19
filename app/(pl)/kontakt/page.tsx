@@ -5,11 +5,12 @@ import Wrapper from '@/components/ui/Wrapper';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import { RiPhoneLine, RiMailLine, RiMapPinTimeLine } from 'react-icons/ri';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
+import { getContactAlternates } from '@/lib/i18n/pages/contact';
 
 export const metadata = {
   title: 'Kontakt - wycena Twojego planu - Arteon',
   description: 'Strona kontaktowa Arteon. Napisz, co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',
-  alternates: { canonical: toAbsoluteUrl('/kontakt') },
+  alternates: getContactAlternates('pl'),
   openGraph: {
     title: 'Kontakt - wycena Twojego planu - Arteon',
     description: 'Strona kontaktowa Arteon. Napisz, co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',

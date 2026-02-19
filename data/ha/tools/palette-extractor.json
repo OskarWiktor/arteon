@@ -3,7 +3,7 @@
   "locale": "ha",
   "metadata": {
     "title": "Mai Fitar Launuka Daga Hoto Kyauta – Palet Daga Kowane Hoto",
-    "description": "Đora hoto ko alama kuma fitar da launuka masu rinjaye har zuwa 12 tare da lambobin HEX da RGB. Cikakke don UI, alama da kafofin watsa labarai. Ba buƙatar rajista, ba iyaka.",
+    "description": "Đora hoto ko alama kuma fitar da launuka masu rinjaye har zuwa 12 tare da lambobin HEX da RGB. Cikakke don UI, alama da kafofin watsa labarai.",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/ha/kayan-aiki/fitar-launuka-daga-hoto"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/ha/kayan-aiki", "label": "Kayan Aiki" },
-    "third": { "href": "/ha/kayan-aiki/fitar-launuka-daga-hoto", "label": "Mai fitar launuka daga hoto" }
+    "second": {
+      "href": "/ha/kayan-aiki",
+      "label": "Kayan Aiki"
+    },
+    "third": {
+      "href": "/ha/kayan-aiki/fitar-launuka-daga-hoto",
+      "label": "Mai fitar launuka daga hoto"
+    }
   },
   "schemas": {
     "software": {
@@ -37,42 +43,69 @@
       "name": "Yadda ake fitar da launuka daga hoto ko sura",
       "description": "Yadda ake fitar da launuka masu rinjaye daga hoto ko alama. Đora hoto a tsarin PNG, JPG, ko SVG, kuma kayan aikin zai samar da palet na launuka har zuwa 12 tare da lambobin HEX.",
       "steps": [
-        { "name": "Đora hoto", "text": "Ja fayil zuwa wurin da aka kebantar ko zaɓi hoto daga na'urar ka. Tsare-tsare da ake tallafawa sune PNG, JPG, da SVG." },
-        { "name": "Jira bincike", "text": "Kayan aikin zai binciki hoton ta atomatik kuma ya fitar da launuka masu rinjaye." },
-        { "name": "Kwafa launuka", "text": "Kusa da kowane launi za ka sami maɓallin kwafa - ana kwafa lambar HEX zuwa clipboard na tsarin ka." }
+        {
+          "name": "Đora hoto",
+          "text": "Ja fayil zuwa wurin da aka kebantar ko zaɓi hoto daga na'urar ka. Tsare-tsare da ake tallafawa sune PNG, JPG, da SVG."
+        },
+        {
+          "name": "Jira bincike",
+          "text": "Kayan aikin zai binciki hoton ta atomatik kuma ya fitar da launuka masu rinjaye."
+        },
+        {
+          "name": "Kwafa launuka",
+          "text": "Kusa da kowane launi za ka sami maɓallin kwafa - ana kwafa lambar HEX zuwa clipboard na tsarin ka."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Me ya sa ake fitar da launuka daga hoto?",
       "html": "<p class=\"mb-4\">Kowane hoto, alama, ko zane yana ɗauke da launuka da za su iya zama palet na launi da aka shirya. Mai fitar yana bincika hoton kuma yana nuna wane launuka ke rinjaye - tare da lambobin HEX da ƙimomin RGB da suke shirye don liƙawa a cikin aikin ka.</p><p class=\"mb-4\">A aikace, wannan yana nufin maimakon zaɓar launuka da hannu a cikin aikace-aikacen zane (pixel da pixel), kana ɗora hoto guda ɗaya kuma ka sami jerin launuka masu tsari har zuwa 12. Wannan yana da amfani lokacin zaɓar launuka don gidan yanar gizo, ƙirƙirar hotunan kafofin watsa labarai masu daidaituwa, ko gina asalin gani daga kayan da ke akwai.</p><p>Ana yin dukan bincike a cikin browser na gida - ba a aika hoton zuwa kowane sabar ba.</p>"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Yadda ake amfani da mai fitar launuka daga hoto",
       "description": "Dukan tsarin yana ɗaukar 'yan daƙiƙu kaɗan kawai:",
       "grid": "three",
       "items": [
-        { "title": "1. Ɗora hoto", "description": "Ja fayil zuwa wurin da aka kebantar ko zaɓi shi daga na'urar ka. Tsare-tsare da ake tallafawa sune PNG, JPG, da SVG." },
-        { "title": "2. Jira bincike", "description": "Kayan aikin zai binciki hoton ta atomatik kuma ya fitar da launuka masu rinjaye har zuwa 12." },
+        {
+          "title": "1. Ɗora hoto",
+          "description": "Ja fayil zuwa wurin da aka kebantar ko zaɓi shi daga na'urar ka. Tsare-tsare da ake tallafawa sune PNG, JPG, da SVG."
+        },
+        {
+          "title": "2. Jira bincike",
+          "description": "Kayan aikin zai binciki hoton ta atomatik kuma ya fitar da launuka masu rinjaye har zuwa 12."
+        },
         {
           "title": "3. Kwafa launukan da kake buƙata",
           "description": "Kusa da kowane launi akwai maɓallin kwafa - lambar HEX ko RGB tana zuwa clipboard kuma ana iya liƙa ta kai tsaye a cikin aikin ka."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Yaya palet na launuka da aka fitar ke kama?",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Misalin launuka da aka fitar daga hoton yanayi</p></div>",
       "html": "<p class=\"text-mid mb-4\">Bayan ɗora hoto, mai fitar yana nuna jerin launuka masu rinjaye waɗanda aka tsara daga mafi yawa zuwa mafi ƙaranci. Kowane launi yana nuna lambar HEX da ƙimar RGB - shirye don liƙawa a cikin CSS, Figma, ko kowane aikace-aikacen zane.</p><p class=\"text-mid\">Adadin launukan da aka fitar ya dogara da abun cikin hoto. Hoton shimfiɗa zai samar da palet mai wadata (launuka 8–12), yayin da alama mai sauƙi mai launuka biyu za ta samar da ƙananan abubuwa.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Wane hotuna ne ke ba da mafi kyawun sakamako a cikin mai fitar launuka?",
@@ -101,7 +134,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTimeline",
       "title": "Yaya fitar da launuka daga hoto ke aiki?",
@@ -129,7 +165,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Warware matsalolin mai fitar launuka",
@@ -157,7 +196,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Menene ke sa mai fitar launuka daga hoto ya bambanta?",
@@ -185,7 +227,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Ina ake amfani da launuka da aka fitar daga hoto",
@@ -209,11 +254,14 @@
         {
           "icon": "RiSearchEyeLine",
           "title": "Faɗaɗa palet da ke akwai",
-          "description": "Ana iya amfani da launin tushe da aka fitar a cikin <a href=\"/ha/kayan-aiki/color-palette-generator\">mai samar da palet na launi</a> don ƙirƙirar cikakken saitin launuka masu jituwa dangane da ka'idar launi."
+          "description": "Ana iya amfani da launin tushe da aka fitar a cikin <a href=\"/ha/kayan-aiki/samar-da-fayafayan-launuka\">mai samar da palet na launi</a> don ƙirƙirar cikakken saitin launuka masu jituwa dangane da ka'idar launi."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Tambayoyin da ake yawan yi game da mai fitar launuka daga hoto",
@@ -251,8 +299,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Bincika sauran kayan aiki" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Bincika sauran kayan aiki"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

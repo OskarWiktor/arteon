@@ -2,8 +2,8 @@
   "toolKey": "wordCounter",
   "locale": "el",
   "metadata": {
-    "title": "Δωρεάν Μετρητής Λέξεων & Χαρακτήρων – Έλεγχος Μήκους Κειμένου για SEO",
-    "description": "Μετρήστε λέξεις, χαρακτήρες, παραγράφους και χρόνο ανάγνωσης άμεσα. Ελέγξτε το βέλτιστο μήκος κειμένου για SEO — blog posts, σελίδες προϊόντων, landing pages. Χωρίς εγγραφή.",
+    "title": "Δωρεάν Μετρητής Λέξεων & Χαρακτήρων – Έλεγχος Μήκους",
+    "description": "Μετρήστε λέξεις, χαρακτήρες, παραγράφους και χρόνο ανάγνωσης άμεσα. Ελέγξτε το βέλτιστο μήκος κειμένου για SEO — blog posts, σελίδες προϊόντων, landing pages.",
     "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
     "path": "/el/ergaleia/metritis-lexeon-kai-charaktiron"
   },

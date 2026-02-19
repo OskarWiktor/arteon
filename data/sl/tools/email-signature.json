@@ -3,7 +3,7 @@
   "locale": "sl",
   "metadata": {
     "title": "Brezplačni generator e-poštnega podpisa – HTML",
-    "description": "Ustvarite profesionalni HTML e-poštni podpis brez programske opreme. Dodajte kontaktne podatke, logotip, povezave do družbenih omrežij in kopirajte v Gmail ali Outlook.",
+    "description": "Ustvarite profesionalni HTML e-poštni podpis brez programske opreme. Dodajte kontaktne podatke, logotip, povezave do družbenih omrežij in kopirajte v Gmail.",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
     "path": "/sl/orodja/brezplacni-generator-e-postnega-podpisa"
   },
@@ -138,37 +138,55 @@
       "title": "Kako dodati CTA gumbe?",
       "html": "<p class=\"text-mid\">CTA gumb (call-to-action, poziv k dejanju) je klikljiv element, ki prejemnika usmeri na izbrano stran. Lahko je povezava do koledarja sestankov, kontaktnega obrazca ali ponudbe. Generator omogoča dodajanje dveh CTA gumbov.</p><h3 class=\"h5 mt-6 mb-3\">Primarni gumb</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Odprite zavihek <strong>Gumbi</strong> v urejevalniku.</li><li>V razdelku <strong>Primarni gumb</strong> vnesite besedilo, ki ga bo videl prejemnik, npr. Rezervirajte brezplačno posvetovanje.</li><li>V polje <strong>CTA povezava</strong> prilepite celoten URL naslov, ki se začne s https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Sekundarni gumb</h3><p class=\"text-mid\">Dodate lahko drugi CTA gumb v slogu outline (prozorno ozadje z obrobo). Izpolnite polja analogno.</p><h3 class=\"h5 mt-6 mb-3\">Zaobljenost gumbov</h3><p class=\"text-mid\">Na dnu zavihka Gumbi najdete možnost <strong>Zaobljenost gumbov</strong>. Tri različice: Brez (ostri koti), Rahla (rahlo zaobljeno) ali Polna (ovalen gumb).</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Kako dodati povezave do družbenih omrežij?",
       "html": "<p class=\"text-mid\">V zavihku <strong>Družbena omrežja</strong> lahko dodate povezave do svojih profilov. Generator podpira dvanajst platform: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (prej Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram in Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Kako to storite</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Odprite zavihek <strong>Družbena omrežja</strong> v urejevalniku.</li><li>Pri vsaki platformi najdete polje za URL naslov. Prilepite celotno povezavo do svojega profila.</li><li>Izpolnite samo tista polja, ki so za vas pomembna. Prazna polja se v podpisu ne prikažejo.</li></ol><h3 class=\"h5 mt-6 mb-3\">Ikone družbenih omrežij</h3><p class=\"text-mid\">Na dnu zavihka najdete možnost <strong>Prikaži ikone ob imenih</strong>. Ko je vklopljena, se povezave prikažejo kot barvne SVG ikone namesto samih imen.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Velikost ikon</strong> – možnosti: Majhne (16 px), Srednje (20 px) ali Velike (24 px).</li><li><strong>Barva ikon</strong> – Barve platform (privzete barve), Barva poudarka (enotna) ali Barva besedila.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Prilagoditev videza",
       "html": "<p class=\"text-mid\">V zavihku <strong>Videz</strong> lahko prilagodite barve, pisavo in druge vizualne elemente.</p><h3 class=\"h5 mt-6 mb-3\">Barvne teme</h3><p class=\"text-mid\">Na vrhu zavihka najdete pet vnaprej določenih tem: Temna, Modra, Vijolična, Zelena in Siva. Klik na temo samodejno nastavi barvo poudarka in barvo besedila.</p><h3 class=\"h5 mt-6 mb-3\">Barve</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Barva poudarka</strong> – uporablja se v stranski/zgornji vrstici, CTA gumbu in povezavah.</li><li><strong>Barva besedila</strong> – barva vseh besedil v podpisu.</li><li><strong>Barva ozadja</strong> – ozadje podpisa. Privzeto bela.</li></ul><h3 class=\"h5 mt-6 mb-3\">Pisava in velikost</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Pisava</strong> – možnosti: Arial, Verdana, Tahoma, Trebuchet MS in Georgia. Vse so varne za e-pošto.</li><li><strong>Velikost besedila</strong> – tri možnosti: Majhna (12 px), Standardna (14 px) in Večja (16 px).</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Slog besedila – barve in velikosti posameznih elementov",
       "html": "<p class=\"text-mid\">V zavihku <strong>Slog besedila</strong> lahko posamezno prilagodite barvo in velikost pisave za vsak besedilni element v podpisu.</p><h3 class=\"h5 mt-6 mb-3\">Razpoložljivi elementi</h3><p class=\"text-mid\">Vidni so le tisti elementi, ki so trenutno prisotni v podpisu. Za vsak element lahko nastavite:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Ime in priimek</strong> – privzeto prikazano v barvi poudarka.</li><li><strong>Položaj</strong> – vloga v podjetju.</li><li><strong>Podjetje</strong> – naziv organizacije.</li><li><strong>Kontaktni podatki</strong> – e-pošta, telefon, spletna stran.</li><li><strong>Družbena omrežja</strong> – povezave do profilov.</li><li><strong>Pravna klavzula</strong> – pravno besedilo na dnu.</li></ul><h3 class=\"h5 mt-6 mb-3\">Kako spremeniti barvo?</h3><p class=\"text-mid\">Pri vsakem elementu najdete barvne možnosti. Kliknite na barvni kvadrat za izbiro. Gumb za ponastavitev obnovi privzeto barvo.</p><h3 class=\"h5 mt-6 mb-3\">Kako spremeniti velikost?</h3><p class=\"text-mid\">V drugi vrstici najdete nadzor velikosti z gumboma - in +. Obseg: od -4 do +4 pikslov.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Razmiki med elementi",
       "html": "<p class=\"text-mid\">V zavihku <strong>Razmiki</strong> lahko natančno nadzirate razdalje med posameznimi elementi podpisa.</p><h3 class=\"h5 mt-6 mb-3\">Notranji rob</h3><p class=\"text-mid\">Na vrhu zavihka najdete možnost notranjega roba – razdalje med vsebino podpisa in njegovimi robovi. Tri vrednosti: 8 px (majhen), 16 px (srednji) in 24 px (velik).</p><h3 class=\"h5 mt-6 mb-3\">Razmiki med elementi</h3><p class=\"text-mid\">Pod notranjim robom najdete nadzorne elemente za posamezne elemente podpisa z gumboma + in -.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Za imenom</strong></li><li><strong>Za položajem / podjetjem</strong></li><li><strong>Za dodatno vrstico</strong></li><li><strong>Za kontaktnimi podatki</strong></li><li><strong>Za družbenimi omrežji</strong></li><li><strong>Za CTA gumbom</strong></li><li><strong>Pred pravno klavzulo</strong></li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Pravna klavzula / GDPR – kdaj jo dodati?",
       "html": "<p class=\"text-mid\">V zavihku <strong>Klavzula / GDPR</strong> lahko dodate pravno besedilo, ki se prikaže na dnu podpisa z manjšo pisavo.</p><h3 class=\"h5 mt-6 mb-3\">Kdaj se splača dodati klavzulo?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Poslovna korespondenca</strong> – informacija o zaupnosti sporočila in zahteva za izbris v primeru napačne dostave.</li><li><strong>Panožne zahteve</strong> – nekatere panoge (npr. pravna, medicinska, finančna) zahtevajo določene informacije v vsakem sporočilu.</li><li><strong>GDPR</strong> – informacija o obdelavi osebnih podatkov, če je podjetje upravljavec podatkov.</li></ul><p class=\"text-mid mt-4\">Privzeto je polje izpolnjeno s primerom besedila. Lahko ga uredite, izbrišete ali zamenjate z lastno klavzulo.</p><h3 class=\"h5 mt-6 mb-3\">Ločilna črta</h3><p class=\"text-mid\">Pod besedilnim poljem najdete možnost <strong>Prikaži ločilno črto</strong>. Vklop doda vodoravno črto med kontaktne podatke in pravno klavzulo.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Samodejno shranjevanje in ponastavitev nastavitev",

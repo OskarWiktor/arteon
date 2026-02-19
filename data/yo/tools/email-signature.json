@@ -3,7 +3,7 @@
   "locale": "yo",
   "metadata": {
     "title": "Olùpìlẹ̀ṣẹ̀ Ìbúwòlú Ìmeèlì Òfẹ́ẹ́ – HTML fún Gmail & Outlook",
-    "description": "Ṣẹ̀dá ìbúwòlú ìmeèlì HTML alámòòdájú láì kíkọ kóòdù. Fi àlàyé ìbáṣepọ̀, àmì ìdánìmọ̀, àwọn ìjápọ̀ àjọlò kún, kí o sì daakọ sí Gmail tabi Outlook. Láì ìforukọ̀sílẹ̀.",
+    "description": "Ṣẹ̀dá ìbúwòlú ìmeèlì HTML alámòòdájú láì kíkọ kóòdù. Fi àlàyé ìbáṣepọ̀, àmì ìdánìmọ̀, àwọn ìjápọ̀ àjọlò kún, kí o sì daakọ sí Gmail tabi Outlook.",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
     "path": "/yo/awon-irinse/olupilese-ibuwolu-imeeli-ofe"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/yo/awon-irinse", "label": "Awọn Irìnṣé" },
-    "third": { "href": "/yo/awon-irinse/olupilese-ibuwolu-imeeli-ofe", "label": "Olùpìlẹ̀ṣẹ̀ ìbúwòlú ìmeèlì" }
+    "second": {
+      "href": "/yo/awon-irinse",
+      "label": "Awọn Irìnṣé"
+    },
+    "third": {
+      "href": "/yo/awon-irinse/olupilese-ibuwolu-imeeli-ofe",
+      "label": "Olùpìlẹ̀ṣẹ̀ ìbúwòlú ìmeèlì"
+    }
   },
   "schemas": {
     "software": {
@@ -46,17 +52,26 @@
       "description": "Bí o ṣe lè ṣẹ̀dá ìbúwòlú ìmeèlì HTML alámòòdájú lílò olùpìlẹ̀ṣẹ̀ Arteon òfẹ́ẹ́.",
       "totalTime": "PT5M",
       "steps": [
-        { "name": "Yan ètò ìbúwòlú", "text": "Yan ọ̀kan nínú ètò mẹ́jọ tí ó wà: Standard, Top bar, Labels left, Centered, Compact, Two columns, Minimalist, tabi Bottom bar." },
+        {
+          "name": "Yan ètò ìbúwòlú",
+          "text": "Yan ọ̀kan nínú ètò mẹ́jọ tí ó wà: Standard, Top bar, Labels left, Centered, Compact, Two columns, Minimalist, tabi Bottom bar."
+        },
         {
           "name": "Kún àlàyé ìbáṣepọ̀",
           "text": "Nínú tab Details, tẹ orúkọ rẹ, àkọ̀lé iṣẹ́, ilé-iṣẹ́, ìmeèlì, fóònù, àti URL ojú-ìwé ayélujára. Ní àìyan, fi avatar tabi àmì ìdánìmọ̀ kún — lẹ́yìn títẹ URL àwòrán, o lè yan ìrisi (yíkà, yíkà díẹ̀, ònigégé mẹ́rin) àti ìwọn (40, 56, tabi 72 px)."
         },
-        { "name": "Fi awọn bọ́tìnì CTA kún", "text": "Nínú tab Buttons, fi ọ̀rọ̀ àti URL kún fún bọ́tìnì àkọ́kọ́. Ní àìyan, fi bọ́tìnì keji ní àpẹẹrẹ outline kún kí o sì yan rounding bọ́tìnì." },
+        {
+          "name": "Fi awọn bọ́tìnì CTA kún",
+          "text": "Nínú tab Buttons, fi ọ̀rọ̀ àti URL kún fún bọ́tìnì àkọ́kọ́. Ní àìyan, fi bọ́tìnì keji ní àpẹẹrẹ outline kún kí o sì yan rounding bọ́tìnì."
+        },
         {
           "name": "Fi awọn ìjápọ̀ àjọlò kún",
           "text": "Nínú tab Social Media, lẹ̀ àwọn URL sí àwọn profaili rẹ. Àwọn pẹpẹ tí a ṣe àtìlẹ́yìn fún: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, àti Pinterest."
         },
-        { "name": "Ṣàtúnṣe ìrísí", "text": "Nínú tab Appearance, yan tímú awọ̀, fọ́ọ̀ntì, àti ìwọn ọ̀rọ̀. Nínú tab Text Style, yí awọn awọ̀ àti ìwọn ẹ̀yà kọ̀ọ̀kan padà." },
+        {
+          "name": "Ṣàtúnṣe ìrísí",
+          "text": "Nínú tab Appearance, yan tímú awọ̀, fọ́ọ̀ntì, àti ìwọn ọ̀rọ̀. Nínú tab Text Style, yí awọn awọ̀ àti ìwọn ẹ̀yà kọ̀ọ̀kan padà."
+        },
         {
           "name": "Fi àlàyé ofìn kún kí o sì ṣàtò ìlà ìya",
           "text": "Nínú tab Disclaimer / Legal, tẹ ọ̀rọ̀ ofìn kí o sì ṣàtò ìlà ìya — yan àpẹẹrẹ (solid, dashed, dotted), nípọn (1–3 px), àti awọ̀."
@@ -69,80 +84,125 @@
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Kí nìdí tí o fi yẹ kí o ní ìbúwòlú ìmeèlì alámòòdájú?",
       "html": "<p class=\"text-mid\">Ìbúwòlú ìmeèlì (tí a tún ń pè ní èsè-ìwé ìmeèlì) jẹ́ blọ́kì àlàyé ní ìparí ìfiránṣẹ́ kọ̀ọ̀kan tí a fi ránṣẹ́. Ó ní àlàyé ìbáṣepọ̀, àkọ̀lé iṣẹ́, orúkọ ilé-iṣẹ́, àti sábà ìjápọ̀ sí ojú-ìwé ayélujára tàbí kàlẹ́ndà ìpàdé.</p><p class=\"text-mid mt-3\">Olùgbà kò nílò láti wá nọ́mbà fóònù nínú àwọn ìfiránṣẹ́ tẹ́lẹ̀ — gbogbo àlàyé wà ní ìṣetán. Ìbúwòlú ìmeèlì alámòòdájú tún fi hàn pé o ṣe àkíyèsí àwọn àlàyé kéékèèké, o sì pa àwòrán ilé-iṣẹ́ tí ó bá ara mu mọ́ nínú ìfọwọ́ránṣẹ́ ìṣòwò.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Bí o ṣe lè lo olùpìlẹ̀ṣẹ̀ ìbúwòlú ìmeèlì",
       "description": "Ṣíṣẹ̀dá ìbúwòlú ìmeèlì alámòòdájú gba ìṣẹ́jú díẹ̀ péré:",
       "grid": "three",
       "items": [
-        { "title": "1. Tẹ àwọn àlàyé", "description": "Kún orúkọ rẹ, àkọ̀lé iṣẹ́, ilé-iṣẹ́, àti àlàyé ìbáṣepọ̀." },
-        { "title": "2. Ṣàtúnṣe ìrísí", "description": "Yan ètò, àwọn awọ̀, fi àmì ìdánìmọ̀ kún, àti àwọn ìjápọ̀ àjọlò." },
-        { "title": "3. Daakọ kóòdù náà", "description": "Bọ́tìnì Copy signature daakọ kóòdù tí ó ti ṣetán sí clipboard. Lẹ̀ é péré sínú Gmail, Outlook, tàbí ẹ̀rọ̀ ìmeèlì mìíràn." }
+        {
+          "title": "1. Tẹ àwọn àlàyé",
+          "description": "Kún orúkọ rẹ, àkọ̀lé iṣẹ́, ilé-iṣẹ́, àti àlàyé ìbáṣepọ̀."
+        },
+        {
+          "title": "2. Ṣàtúnṣe ìrísí",
+          "description": "Yan ètò, àwọn awọ̀, fi àmì ìdánìmọ̀ kún, àti àwọn ìjápọ̀ àjọlò."
+        },
+        {
+          "title": "3. Daakọ kóòdù náà",
+          "description": "Bọ́tìnì Copy signature daakọ kóòdù tí ó ti ṣetán sí clipboard. Lẹ̀ é péré sínú Gmail, Outlook, tàbí ẹ̀rọ̀ ìmeèlì mìíràn."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Bí o ṣe lè kún àlàyé ìbúwòlú",
       "html": "<p class=\"text-mid\">Tab <strong>Details</strong> ní gbogbo àwọn aaye tí o lè kún. Méjì péré ni a nílò: orúkọ àti àdírẹ́sì ìmeèlì. Àwọn aaye tí ó kù jẹ́ àìyan, wọ́n sì yóò hàn nínú ìbúwòlú nígbà tí a bá kún wọn péré.</p><h3 class=\"h5 mt-6 mb-3\">Àwọn aaye nínú tab Details</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Ìlà lókè orúkọ</strong> — ọ̀rọ̀ àfikún tí ó hàn lókè orúkọ. O lè tẹ orúkọ ilé-iṣẹ́, ọ̀rọ̀ àpèjúwe, tàbí ọ̀rọ̀ ìpolówó.</li><li><strong>Avatar / àmì ìdánìmọ̀ (URL àwòrán)</strong> — URL sí àwòrán profaili tàbí àmì ìdánìmọ̀ ilé-iṣẹ́. Àwòrán yẹ kí ó jẹ́ onígun mẹ́rin dọ́gba (kéréjù 120×120 px) kí ó sì wà ní gbangba lórí ayélujára. Lẹ́yìn lílẹ̀ URL, àwọn àṣàyàn àfikún yóò hàn: <strong>Ìrisi avatar</strong> (yíkà, yíkà díẹ̀, tàbí onígun mẹ́rin) àti <strong>Ìwọn avatar</strong> (kéré — 40 px, àárín — 56 px, nílà — 72 px).</li><li><strong>Orúkọ kíkún</strong> — aaye tí a nílò. Tẹ orúkọ rẹ kíkún.</li><li><strong>Àmì orúkọ</strong> — ọ̀rọ̀ kúkúrú lẹ́gbẹ̀ẹ̀ orúkọ, bí àpẹẹrẹ, pronouns tàbí àkọlé kúkúrú.</li><li><strong>Àkọ̀lé iṣẹ́</strong> — ipò rẹ nínú ilé-iṣẹ́, bí àpẹẹrẹ, Olùdarí Títa, Amọ̀ràn Ìpolówó.</li><li><strong>Orúkọ ilé-iṣẹ́</strong> — orúkọ àjọ tí o ṣojú rẹ̀.</li><li><strong>Ìlà àfikún</strong> — àpèjúwe kúkúrú ti ohun tí o ń ṣe tàbí ohun tí o ń pèsè.</li><li><strong>Ìmeèlì</strong> — aaye tí a nílò. Tẹ àdírẹ́sì ìmeèlì iṣẹ́ rẹ.</li><li><strong>Fóònù</strong> — nọ́mbà ìbáṣepọ̀. Ònà èyíkéyìí, bí àpẹẹrẹ, +1 555 000 000.</li><li><strong>Ojú-ìwé ayélujára</strong> — URL kíkún ti ojú-ìwé ayélujára rẹ, tí ó bẹ̀rẹ̀ pẹ̀lú https://.</li><li><strong>Àdírẹ́sì</strong> — àdírẹ́sì ilé-iṣẹ́ gidi (òpópónà, ìlú, kóòdù ìfíwéránṣẹ́).</li><li><strong>Àlàyé ìlànà</strong> — nọ́mbà owó-orí, nọ́mbà ìwé-àṣẹ, tàbí àwọn àlàyé mìíràn tí ilé-iṣẹ́ rẹ nílò.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Àwọn ètò ìbúwòlú — èwo ni kí o yan?",
       "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Ètò ìbúwòlú</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">John Smith</p><p class=\"text-mid text-sm\">Web Developer</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">john@example.com</p><p class=\"text-mid\">+1 555 000 000</p></div></div></div>",
       "html": "<p class=\"text-mid\">Olùpìlẹ̀ṣẹ̀ náà pèsè ètò mẹ́jọ tí a ti ṣe sílẹ̀. Ọ̀kọ̀ọ̀kan fi àlàyé kan náà hàn ní ọ̀nà tí ó yàtọ̀.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> — ètò inaro ìbílẹ̀, ó bá ọ̀pọ̀lọpọ̀ ìlò mu.</li><li><strong>Top bar</strong> — ìlà pẹ̀tẹ́lẹ̀ ya ìbúwòlú kúrò nínú àkóónú.</li><li><strong>Labels left</strong> — ọ̀wọ́n méjì: àwọn àmì àti àwọn ìyẹ.</li><li><strong>Centered</strong> — ìrísí ìlànà, àkóónú ní àárín.</li><li><strong>Compact</strong> — gbogbo nǹkan ní ìlà kan, gíga tí ó kéréjù.</li><li><strong>Two columns</strong> — àlàyé ní apá òsì, àlàyé ìbáṣepọ̀ ní apá ọ̀tún.</li><li><strong>Minimalist</strong> — àlàyé tí ó ṣe pàtàkì jùlọ péré.</li><li><strong>Bottom bar</strong> — ìlà aláwọ̀ pẹ̀lú ìbáṣepọ̀ ní ìsàlẹ̀ ìbúwòlú.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Bí o ṣe lè fi àwọn bọ́tìnì CTA kún",
       "html": "<p class=\"text-mid\">Bọ́tìnì CTA (ìpè-sí-ìṣe) jẹ́ ẹ̀yà tí a lè tẹ tí ó darí olùgbà sí ojú-ìwé tí a yàn. Ó lè jẹ́ ìjápọ̀ sí kàlẹ́ndà ìpàdé, fọ́ọ̀mù ìbáṣepọ̀, tàbí ìpèsè. Olùpìlẹ̀ṣẹ̀ náà jẹ́ kí o fi bọ́tìnì CTA méjì kún.</p><h3 class=\"h5 mt-6 mb-3\">Bọ́tìnì àkọ́kọ́</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Ṣí tab <strong>Buttons</strong> nínú olóòtú.</li><li>Nínú apá <strong>Main button</strong>, tẹ ọ̀rọ̀ tí olùgbà yóò rí, bí àpẹẹrẹ, Ṣètò ìgbìmọ̀ ọ̀fẹ́.</li><li>Nínú aaye <strong>CTA link</strong>, lẹ̀ URL kíkún. Àdírẹ́sì gbọ́dọ̀ bẹ̀rẹ̀ pẹ̀lú https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Bọ́tìnì keji</h3><p class=\"text-mid\">O lè fi bọ́tìnì CTA keji kún ní àpẹẹrẹ outline (ìpilẹ̀ tí ó hàn gbangba pẹ̀lú ààlà). Kún àwọn aaye nínú apá <strong>Secondary button</strong> bákannáà bí bọ́tìnì àkọ́kọ́.</p><h3 class=\"h5 mt-6 mb-3\">Rounding bọ́tìnì</h3><p class=\"text-mid\">Ní ìsàlẹ̀ tab Buttons iwọ yóò rí àṣàyàn <strong>Button rounding</strong>. Ẹ̀yà mẹ́ta wà: None (ìgun tókàn), Slight (yíkà díẹ̀), tàbí Full (bọ́tìnì àlàfo yíkà).</p><p class=\"text-mid mt-4\">Tí o bá fi àwọn aaye méjèèjì sílẹ̀ láìkún, bọ́tìnì kò ní hàn nínú ìbúwòlú. Tí o bá kún aaye kan péré, bọ́tìnì kò ní hàn — ọ̀rọ̀ àti ìjápọ̀ méjèèjì ni a nílò.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Bí o ṣe lè fi àwọn ìjápọ̀ àjọlò kún",
       "html": "<p class=\"text-mid\">Nínú tab <strong>Social Media</strong> o lè fi àwọn ìjápọ̀ sí àwọn profaili rẹ kún. Olùpìlẹ̀ṣẹ̀ náà ṣe àtìlẹ́yìn fún pẹpẹ méjìlá: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (tẹ́lẹ̀ Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram, àti Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Bí o ṣe lè ṣe é</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Ṣí tab <strong>Social Media</strong> nínú olóòtú.</li><li>Légbẹ̀ẹ̀ pẹpẹ kọ̀ọ̀kan iwọ yóò rí aaye URL. Lẹ̀ ìjápọ̀ kíkún sí profaili rẹ, bí àpẹẹrẹ, https://www.linkedin.com/in/profaiilirẹ.</li><li>Kún àwọn aaye tí o nílò péré. Àwọn aaye tí ó ṣófo kò ní hàn nínú ìbúwòlú.</li></ol><h3 class=\"h5 mt-6 mb-3\">Àwọn àmì àjọlò</h3><p class=\"text-mid\">Ní ìsàlẹ̀ tab Social Media iwọ yóò rí àṣàyàn <strong>Fi àwọn àmì hàn légbẹ̀ẹ̀ orúkọ iṣẹ́</strong>. Nígbà tí a bá mú u ṣiṣẹ́, àwọn ìjápọ̀ yóò hàn gẹ́gẹ́ bí àwọn àmì SVG aláwọ̀ dípò orúkọ péré.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Ìwọn àmì</strong> — àṣàyàn: Kéré (16 px), Àárín (20 px), tàbí Nílà (24 px).</li><li><strong>Awọ̀ àmì</strong> — Àwọn awọ̀ pẹpẹ (àwọn awọ̀ ìbílẹ̀ fún pẹpẹ kọ̀ọ̀kan), Awọ̀ ìyàtọ̀ (awọ̀ ìyàtọ̀ kan náà), tàbí Awọ̀ ọ̀rọ̀.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Ṣíṣàtúnṣe ìrísí",
       "html": "<p class=\"text-mid\">Nínú tab <strong>Appearance</strong> o lè ṣàtúnṣe àwọn awọ̀, fọ́ọ̀ntì, àti àwọn ẹ̀yà afarawọ mìíràn ti ìbúwòlú.</p><h3 class=\"h5 mt-6 mb-3\">Àwọn tímú awọ̀</h3><p class=\"text-mid\">Ní òkè tab náà iwọ yóò rí tímú márùn-ún tí a ti ṣe sílẹ̀: Dúdú, Búlúù, Aláwọ̀ àlùkò, Aláwọ̀ ewé, àti Awọ̀ ìkùn. Títẹ tímú kan ní aìfọ̀wọ́ ṣètò awọ̀ ìyàtọ̀ àti awọ̀ ọ̀rọ̀. Èyí ni ọ̀nà tí ó yára jùlọ láti ṣàṣeyọrí ìrísí ìbúwòlú tí ó bá ara mu.</p><h3 class=\"h5 mt-6 mb-3\">Àwọn awọ̀</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Awọ̀ ìyàtọ̀</strong> — a ń lò ó nínú ìlà ẹ̀gbẹ́/òkè, bọ́tìnì CTA, àti àwọn ìjápọ̀. O lè yan awọ̀ èyíkéyìí láti inú paleti.</li><li><strong>Awọ̀ ọ̀rọ̀</strong> — awọ̀ gbogbo ọ̀rọ̀ nínú ìbúwòlú (orúkọ, àlàyé ìbáṣepọ̀, àlàyé ofìn).</li><li><strong>Awọ̀ ìpilẹ̀</strong> — awọ̀ ìpilẹ̀ gbogbo ìbúwòlú. Funfun ní ìbílẹ̀, ṣùgbọ́n o lè yí i padà.</li></ul><h3 class=\"h5 mt-6 mb-3\">Fọ́ọ̀ntì àti ìwọn</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Fọ́ọ̀ntì</strong> — àṣàyàn: Arial, Verdana, Tahoma, Trebuchet MS, àti Georgia. Gbogbo wọn jẹ́ aìléwu fún ìmeèlì, wọ́n sì yóò hàn dáadáa fún olùgbà.</li><li><strong>Ìwọn ọ̀rọ̀</strong> — àṣàyàn mẹ́ta: Kéré (12 px), Ìbílẹ̀ (14 px), àti Tóbi sí i (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Àwọn àtúnṣe àfikún</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Ààlà ìbúwòlú</strong> — o lè fi ààlà kún ìbúwòlú nípa yíyàn àkópọ̀ ẹ̀gbẹ́ èyíkéyìí (òsì, ọ̀tún, òkè, ìsàlẹ̀). Yíyàn gbogbo ẹ̀gbẹ́ ní aìfọ̀wọ́ ṣètò ààlà kíkún. Ààlà náà lo awọ̀ ìyàtọ̀.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Àpẹẹrẹ ọ̀rọ̀ — àwọn awọ̀ àti ìwọn ẹ̀yà kọ̀ọ̀kan",
       "html": "<p class=\"text-mid\">Nínú tab <strong>Text Style</strong> o lè ṣàtúnṣe awọ̀ àti ìwọn fọ́ọ̀ntì fún ẹ̀yà ọ̀rọ̀ kọ̀ọ̀kan nínú ìbúwòlú ní ọ̀kọ̀ọ̀kan.</p><h3 class=\"h5 mt-6 mb-3\">Àwọn ẹ̀yà tí ó wà</h3><p class=\"text-mid\">Àwọn ẹ̀yà tí ó ní àkóónú nínú ìbúwòlú lọ́wọ́lọ́wọ́ péré ni ó hàn. Fún ẹ̀yà kọ̀ọ̀kan o lè ṣètò:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Orúkọ</strong> — ó hàn ní awọ̀ ìyàtọ̀ ní ìbílẹ̀.</li><li><strong>Àkọ̀lé iṣẹ́</strong> — ipò nínú ilé-iṣẹ́.</li><li><strong>Ilé-iṣẹ́</strong> — orúkọ àjọ.</li><li><strong>Àlàyé ìbáṣepọ̀</strong> — ìmeèlì, fóònù, ojú-ìwé ayélujára (àwọn àmì).</li><li><strong>Àjọlò</strong> — àwọn ìjápọ̀ profaili.</li><li><strong>Àlàyé ofìn</strong> — ọ̀rọ̀ ofìn ní ìsàlẹ̀ ìbúwòlú.</li></ul><h3 class=\"h5 mt-6 mb-3\">Bí o ṣe lè yí awọ̀ padà</h3><p class=\"text-mid\">Légbẹ̀ẹ̀ ẹ̀yà kọ̀ọ̀kan iwọ yóò rí ìlà àwọn àṣàyàn awọ̀. Tẹ onígun mẹ́rin awọ̀ láti yan rẹ̀. O tún lè fi awọ̀ aṣàyàn kún nípa títẹ onígun mẹ́rin aláwọ̀ pẹ̀lú àfikún — yan awọ̀ kí o sì tẹ Save. Àwọn awọ̀ aṣàyàn (títí di 8) ni a pín láàárín gbogbo ẹ̀yà.</p><p class=\"text-mid mt-3\">Bọ́tìnì àmì ìtúnṣe da awọ̀ ìbílẹ̀ ti ẹ̀yà padà.</p><h3 class=\"h5 mt-6 mb-3\">Bí o ṣe lè yí ìwọn padà</h3><p class=\"text-mid\">Nínú ìlà keji iwọ yóò rí àkóso ìwọn pẹ̀lú àwọn bọ́tìnì - àti +. Ìyẹ náà fi ìyàtọ̀ hàn ní ìbámu pẹ̀lú ìwọn fọ́ọ̀ntì ìpìlẹ̀ (tí a ṣètò nínú tab Appearance). Ìwọ̀n: láti -4 sí +4 pixels.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Àlàfo láàárín àwọn ẹ̀yà",
       "html": "<p class=\"text-mid\">Nínú tab <strong>Spacing</strong> o lè ṣàkóso àwọn àlàfo láàárín àwọn ẹ̀yà ìbúwòlú kọ̀ọ̀kan ní pípé.</p><h3 class=\"h5 mt-6 mb-3\">Ìkún inú ìbúwòlú</h3><p class=\"text-mid\">Ní òkè tab náà iwọ yóò rí àṣàyàn ìkún inú — àlàfo láàárín àkóónú ìbúwòlú àti àwọn ẹ̀gbẹ́ rẹ̀. Ìyẹ mẹ́ta wà: 8 px (kéré), 16 px (àárín), àti 24 px (nílà).</p><h3 class=\"h5 mt-6 mb-3\">Àlàfo láàárín àwọn ẹ̀yà</h3><p class=\"text-mid\">Nísàlẹ̀ ìkún náà iwọ yóò rí àwọn àkóso fún àwọn ẹ̀yà ìbúwòlú kọ̀ọ̀kan. Àkóso kọ̀ọ̀kan ní àwọn bọ́tìnì + àti - láti mú àlàfo pọ̀ sí i tàbí dín kù. Àwọn àṣàyàn fún àwọn ẹ̀yà tí ó wà nínú ìbúwòlú lọ́wọ́lọ́wọ́ péré ni ó hàn.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Lẹ́yìn orúkọ</strong> — àlàfo nísàlẹ̀ ìlà orúkọ.</li><li><strong>Lẹ́yìn àkọ̀lé / ilé-iṣẹ́</strong> — àlàfo nísàlẹ̀ ìlà àkọ̀lé iṣẹ́ àti orúkọ ilé-iṣẹ́.</li><li><strong>Lẹ́yìn ìlà àfikún</strong> — àlàfo nísàlẹ̀ àpèjúwe (tí a bá kún).</li><li><strong>Lẹ́yìn àlàyé ìbáṣepọ̀</strong> — àlàfo nísàlẹ̀ ìmeèlì, fóònù, àti ojú-ìwé ayélujára.</li><li><strong>Lẹ́yìn àjọlò</strong> — àlàfo nísàlẹ̀ àwọn ìjápọ̀ profaili.</li><li><strong>Lẹ́yìn bọ́tìnì CTA</strong> — àlàfo nísàlẹ̀ bọ́tìnì (tí a bá mú ṣiṣẹ́).</li><li><strong>Ṣáájú àlàyé ofìn</strong> — àlàfo lókè ọ̀rọ̀ àlàyé ofìn.</li></ul><p class=\"text-mid mt-4\">Tí o bá pa aaye kan rẹ́ (bí àpẹẹrẹ, yọ nọ́mbà fóònù kúrò), àṣàyàn àlàfo tí ó bá mu yóò pàrẹ́ kúrò nínú tab ní aìfọ̀wọ́.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Àlàyé ofìn — nígbà wo ni kí o fi kún",
       "html": "<p class=\"text-mid\">Nínú tab <strong>Disclaimer / Legal</strong> o lè fi ọ̀rọ̀ ofìn kún tí yóò hàn ní ìsàlẹ̀ ìbúwòlú ní fọ́ọ̀ntì kéré.</p><h3 class=\"h5 mt-6 mb-3\">Nígbà wo ni kí o fi àlàyé ofìn kún</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Ìfọwọ́ránṣẹ́ ìṣòwò</strong> — ìfitonilétí àṣírí àti ìbéèrè láti pa rẹ́ tí a bá fi ránṣẹ́ sí ẹni tí kò tọ́.</li><li><strong>Àwọn ìbéèrè ilé-iṣẹ́</strong> — àwọn ilé-iṣẹ́ kan (bí àpẹẹrẹ, ofìn, ìṣègùn, owó) nílò àlàyé kan pàtó nínú ìfiránṣẹ́ kọ̀ọ̀kan.</li><li><strong>GDPR</strong> — àlàyé nípa ṣíṣe àmúlò data ẹni kọ̀ọ̀kan, tí ilé-iṣẹ́ bá jẹ́ alákóso data.</li></ul><p class=\"text-mid mt-4\">Ní ìbílẹ̀, a ti kún aaye náà pẹ̀lú ọ̀rọ̀ àṣírí àpẹẹrẹ. O lè ṣàtúnṣe, pa rẹ́, tàbí rọ́pò rẹ̀ pẹ̀lú àlàyé ofìn tirẹ. Tí o bá fi aaye náà sílẹ̀ láìkún, kò sí àlàyé ofìn tí yóò hàn nínú ìbúwòlú.</p><h3 class=\"h5 mt-6 mb-3\">Ìlà ìya</h3><p class=\"text-mid\">Nísàlẹ̀ aaye ọ̀rọ̀ iwọ yóò rí àṣàyàn <strong>Fi ìlà ìya hàn láàárín àlàyé ìbáṣepọ̀ àti àlàyé ofìn</strong>. Mú u ṣiṣẹ́ láti fi ìlà pẹ̀tẹ́lẹ̀ kún láàárín àlàyé ìbáṣepọ̀ àti àlàyé ofìn.</p><p class=\"text-mid mt-3\">Lẹ́yìn mímú ìlà ṣiṣẹ́, àwọn àṣàyàn ṣíṣàtúnṣe àfikún yóò hàn:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Àpẹẹrẹ ìlà</strong> — àṣàyàn: solid, dashed, tàbí dotted.</li><li><strong>Nípọn ìlà</strong> — àṣàyàn mẹ́ta: 1 px, 2 px, tàbí 3 px.</li><li><strong>Awọ̀ ìlà</strong> — awọ̀ ìkùn ìbílẹ̀ (#e5e7eb). O lè yan awọ̀ èyíkéyìí láti inú paleti tàbí da ìbílẹ̀ padà nípa títẹ bọ́tìnì Default.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Fífipamọ́ aìfọ̀wọ́ àti dídá àtúnṣe padà",
       "html": "<p class=\"text-mid\">Olùpìlẹ̀ṣẹ̀ náà fi gbogbo àtúnṣe pamọ́ ní aìfọ̀wọ́ nínú ìrántí browser (localStorage). Lẹ́yìn títún ojú-ìwé ṣe tàbí ṣíṣí irìnṣé padà, data, ètò, àwọn awọ̀, àti gbogbo àṣàyàn mìíràn yóò dà padà.</p><h3 class=\"h5 mt-6 mb-3\">Báwo ni fífipamọ́ aìfọ̀wọ́ ṣe ń ṣiṣẹ́?</h3><p class=\"text-mid\">Ìyípadà kọ̀ọ̀kan (ọ̀rọ̀, awọ̀, ètò, àlàfo) ni a fi pamọ́ lẹ́sẹ̀kẹsẹ̀ nínú ìrántí browser. Fífipamọ́ wáyé ní aìfọ̀wọ́ ní ìpamọ́ — láìsí títẹ bọ́tìnì kankan.</p><h3 class=\"h5 mt-6 mb-3\">Bí o ṣe lè dá àtúnṣe padà</h3><p class=\"text-mid\">Nísàlẹ̀ ìwòràn ìbúwòlú iwọ yóò rí bọ́tìnì <strong>Reset appearance</strong>. Lẹ́yìn títẹ, ìjíròrò ìfìdímúlẹ̀ yóò hàn. Fífìdí ìtúnṣe múlẹ̀ yóò da gbogbo data àti àtúnṣe padà sí àwọn ìyẹ ìbílẹ̀. Ìṣe yìí kò ṣe é dá padà.</p><h3 class=\"h5 mt-6 mb-3\">Kí o mú àtò jáde kí o sì gba</h3><p class=\"text-mid\">Nísàlẹ̀ ìwòràn ìbúwòlú iwọ yóò rí bọ́tìnì méjì àfikún: <strong>Export settings</strong> àti <strong>Import settings</strong>. Export fi gbogbo data, àwọn awọ̀, ètò, àlàfo, àti àwọn àpẹẹrẹ ọ̀rọ̀ pamọ́ sí fáìlì JSON. Import gba àtò tí a ti fi pamọ́ tẹ́lẹ̀ láti fáìlì.</p><p class=\"text-mid mt-3\">Èṣò yìí wúlò pàápàá nígbà tí o fẹ́ gbe àtò ìbúwòlú lọ láàárín àwọn kọ̀mpútà, pín àtúnṣe pẹ̀lú àwọn ẹlẹgbẹ́, tàbí pa àfipamọ́ àtúnṣe rẹ mọ́ ṣáájú ìtúnṣe.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Bí o ṣe lè daakọ ìbúwòlú sí Gmail tàbí Outlook",
@@ -154,7 +214,11 @@
           "title": "1. Daakọ kóòdù náà",
           "description": "Bọ́tìnì Copy signature (Gmail / Outlook) daakọ ìbúwòlú sí clipboard gẹ́gẹ́ bí HTML tí a ti ṣètò, tí ó ṣetán láti lẹ̀."
         },
-        { "icon": "RiSettings3Line", "title": "2. Ṣí àtúnṣe ìbúwòlú", "description": "Nínú Gmail: Settings → See all settings → Signature. Nínú Outlook: File → Options → Mail → Signatures." },
+        {
+          "icon": "RiSettings3Line",
+          "title": "2. Ṣí àtúnṣe ìbúwòlú",
+          "description": "Nínú Gmail: Settings → See all settings → Signature. Nínú Outlook: File → Options → Mail → Signatures."
+        },
         {
           "icon": "RiSaveLine",
           "title": "3. Lẹ̀ kí o sì fipamọ́",
@@ -162,47 +226,107 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Ìwòràn ìbúwòlú àti àwọn àṣàyàn ìmújáde",
       "html": "<p class=\"text-mid\">Pánẹ́ẹ̀lì ìwòràn hàn ní apá ọ̀tún olóòtú, ó sì ń ṣe àtúnṣe ní aìfọ̀wọ́ pẹ̀lú ìyípadà kọ̀ọ̀kan. Ìwòràn náà jẹ́ sticky, nítorí náà ó wà ní hàn bí ó tilẹ̀ jẹ́ pé o ń yí àwọn àṣàyàn ṣíṣàtúnṣe wò.</p><h3 class=\"h5 mt-6 mb-3\">Yíyí ìpilẹ̀ ìwòràn padà</h3><p class=\"text-mid\">Lókè ìwòràn iwọ yóò rí bọ́tìnì yíyí ìpilẹ̀ padà mẹ́ta: <strong>Light</strong> (ìpilẹ̀ awọ̀ ìkùn ìbílẹ̀), <strong>Dark</strong> (ìpilẹ̀ dúdú, wúlò fún ṣíṣàyẹ̀wò àgbèkà lórí àwọn ìpilẹ̀ dúdú), àti <strong>Checkerboard</strong> (àpẹẹrẹ àtèlé, jẹ́ kí o rí ìhàn-gbangba àti àwọn ẹ̀gbẹ́ ìbúwòlú).</p><h3 class=\"h5 mt-6 mb-3\">Àwọn bọ́tìnì ìṣe</h3><p class=\"text-mid\">Nísàlẹ̀ ìwòràn iwọ yóò rí àwọn bọ́tìnì púpọ̀:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Copy signature (Gmail / Outlook)</strong> — daakọ ìbúwòlú sí clipboard gẹ́gẹ́ bí HTML tí a ti ṣètò. Lẹ̀ é tààrà nínú àtúnṣe ìbúwòlú.</li><li><strong>Copy HTML code</strong> — daakọ kóòdù HTML àtẹ̀jísẹ́ ti ìbúwòlú sí clipboard. Wúlò nígbà tí o fẹ́ lẹ̀ kóòdù nínú olóòtú HTML tàbí CMS.</li><li><strong>Download as HTML</strong> — fi kóòdù ìbúwòlú pamọ́ gẹ́gẹ́ bí fáìlì .html sí disk. Wúlò fún ìfipamọ́ tàbí pípín pẹ̀lú olùmúgbékalẹ̀.</li><li><strong>View HTML code</strong> — ṣí modal pẹ̀lú kóòdù orísun HTML kíkún ti ìbúwòlú. O lè ṣàyẹ̀wò kóòdù kí o sì daakọ rẹ̀ tààrà láti inú modal.</li><li><strong>Export settings</strong> — fi àtò ìbúwòlú kíkún pamọ́ (data, àwọn awọ̀, ètò, àlàfo, àwọn àpẹẹrẹ) sí fáìlì JSON.</li><li><strong>Import settings</strong> — gba àtò láti fáìlì JSON. Gbogbo àtúnṣe yóò jẹ́ àmúlò ní aìfọ̀wọ́.</li><li><strong>Reset appearance</strong> — da gbogbo data àti àtúnṣe padà sí àwọn ìyẹ ìbílẹ̀ (lẹ́yìn ìfìdímúlẹ̀).</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Ta ni olùṣẹ̀dá ìbúwòlú ìmeèlì wà fún?",
       "description": "Irìnṣé ìbúwòlú ìmeèlì wúlò fún ẹnikẹ́ni tí ó ń fi ìmeèlì ìṣòwò ránṣẹ́:",
       "grid": "two",
       "items": [
-        { "icon": "RiBriefcaseLine", "title": "Àwọn oníṣòwò àti alámùṣiṣẹ́-fúnrarẹ̀", "description": "Ìbúwòlú alámòòdájú nínú ìfiránṣẹ́ kọ̀ọ̀kan láìsí gbígba olùṣe àpẹẹrẹ." },
-        { "icon": "RiTeamLine", "title": "Àwọn ẹgbẹ́ ilé-iṣẹ́", "description": "Oṣiṣẹ́ kọ̀ọ̀kan ṣẹ̀dá ìbúwòlú tirẹ̀ ní àpẹẹrẹ kan náà. Ìdánimọ̀ tí ó bá ara mu kárí gbogbo ilé-iṣẹ́." },
-        { "icon": "RiHandCoinLine", "title": "Àwọn aṣojú títa", "description": "Bọ́tìnì CTA pẹ̀lú ìjápọ̀ sí kàlẹ́ndà tàbí ìpèsè mú àǹfààní ṣíṣètò ìpàdé pọ̀ sí i." },
-        { "icon": "RiScales3Line", "title": "Àwọn agbẹjọ́rò, aṣirò owó, dókítà", "description": "Agbára láti fi àlàyé ofìn, nọ́mbà ìwé-àṣẹ, nọ́mbà owó-orí, tàbí àwọn àlàyé mìíràn tí ilé-iṣẹ́ nílò kún." }
+        {
+          "icon": "RiBriefcaseLine",
+          "title": "Àwọn oníṣòwò àti alámùṣiṣẹ́-fúnrarẹ̀",
+          "description": "Ìbúwòlú alámòòdájú nínú ìfiránṣẹ́ kọ̀ọ̀kan láìsí gbígba olùṣe àpẹẹrẹ."
+        },
+        {
+          "icon": "RiTeamLine",
+          "title": "Àwọn ẹgbẹ́ ilé-iṣẹ́",
+          "description": "Oṣiṣẹ́ kọ̀ọ̀kan ṣẹ̀dá ìbúwòlú tirẹ̀ ní àpẹẹrẹ kan náà. Ìdánimọ̀ tí ó bá ara mu kárí gbogbo ilé-iṣẹ́."
+        },
+        {
+          "icon": "RiHandCoinLine",
+          "title": "Àwọn aṣojú títa",
+          "description": "Bọ́tìnì CTA pẹ̀lú ìjápọ̀ sí kàlẹ́ndà tàbí ìpèsè mú àǹfààní ṣíṣètò ìpàdé pọ̀ sí i."
+        },
+        {
+          "icon": "RiScales3Line",
+          "title": "Àwọn agbẹjọ́rò, aṣirò owó, dókítà",
+          "description": "Agbára láti fi àlàyé ofìn, nọ́mbà ìwé-àṣẹ, nọ́mbà owó-orí, tàbí àwọn àlàyé mìíràn tí ilé-iṣẹ́ nílò kún."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Kí ni tí ó mú olùpìlẹ̀ṣẹ̀ ìbúwòlú ìmeèlì HTML yìí yàtọ̀?",
       "grid": "three",
       "items": [
-        { "icon": "RiInfinityLine", "title": "Ètò ìbúwòlú mẹ́jọ", "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist, àti bottom bar." },
-        { "icon": "RiUserLine", "title": "Fífipamọ́ aìfọ̀wọ́ nínú browser", "description": "A fi ìyípadà kọ̀ọ̀kan pamọ́ ní aìfọ̀wọ́ nínú ìrántí browser. Lẹ́yìn títún ojú-ìwé ṣe, ìbúwòlú ṣì wà." },
-        { "icon": "RiTranslate2", "title": "Kí o mú àtò jáde kí o sì gba", "description": "A lè mú àtò ìbúwòlú kíkún jáde gẹ́gẹ́ bí fáìlì JSON kí a sì pín pẹ̀lú àwọn ẹlẹgbẹ́." },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ètò ìbúwòlú mẹ́jọ",
+          "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist, àti bottom bar."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Fífipamọ́ aìfọ̀wọ́ nínú browser",
+          "description": "A fi ìyípadà kọ̀ọ̀kan pamọ́ ní aìfọ̀wọ́ nínú ìrántí browser. Lẹ́yìn títún ojú-ìwé ṣe, ìbúwòlú ṣì wà."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Kí o mú àtò jáde kí o sì gba",
+          "description": "A lè mú àtò ìbúwòlú kíkún jáde gẹ́gẹ́ bí fáìlì JSON kí a sì pín pẹ̀lú àwọn ẹlẹgbẹ́."
+        },
         {
           "icon": "RiAppsLine",
           "title": "Pẹpẹ àjọlò 12",
           "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, àti Pinterest."
         },
-        { "icon": "RiPaletteLine", "title": "Ṣíṣàtúnṣe tí ó jìnlẹ̀", "description": "Ìrisi àti ìwọn avatar, àpẹẹrẹ ìlà, àwọn awọ̀ àti ìwọn ọ̀rọ̀ kọ̀ọ̀kan." },
-        { "icon": "RiFileCodeLine", "title": "Àṣàyàn ìmújáde lọ́pọ̀lọpọ̀", "description": "Daakọ HTML, gbà fáìlì sílẹ̀, ìwòràn kóòdù orísun, ìmújáde/ìgbàwọlé àtò JSON." },
-        { "icon": "RiShieldCheckLine", "title": "Àṣírí", "description": "A kò fi data ránṣẹ́ sí server. Olùpìlẹ̀ṣẹ̀ náà ṣiṣẹ́ pátápátá nínú browser." },
-        { "icon": "RiMailCheckLine", "title": "Ìbarámú", "description": "Kóòdù HTML tí a ṣẹ̀dá ṣiṣẹ́ nínú Gmail, Outlook, Apple Mail, àti Thunderbird." },
-        { "icon": "RiEyeLine", "title": "Ìwòràn láàyè", "description": "Ìyípadà kọ̀ọ̀kan hàn lẹ́sẹ̀kẹsẹ̀ lórí ìpilẹ̀ fẹ́ẹ́rẹ́fẹ́ẹ́, dúdú, tàbí àtèlé." }
+        {
+          "icon": "RiPaletteLine",
+          "title": "Ṣíṣàtúnṣe tí ó jìnlẹ̀",
+          "description": "Ìrisi àti ìwọn avatar, àpẹẹrẹ ìlà, àwọn awọ̀ àti ìwọn ọ̀rọ̀ kọ̀ọ̀kan."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Àṣàyàn ìmújáde lọ́pọ̀lọpọ̀",
+          "description": "Daakọ HTML, gbà fáìlì sílẹ̀, ìwòràn kóòdù orísun, ìmújáde/ìgbàwọlé àtò JSON."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Àṣírí",
+          "description": "A kò fi data ránṣẹ́ sí server. Olùpìlẹ̀ṣẹ̀ náà ṣiṣẹ́ pátápátá nínú browser."
+        },
+        {
+          "icon": "RiMailCheckLine",
+          "title": "Ìbarámú",
+          "description": "Kóòdù HTML tí a ṣẹ̀dá ṣiṣẹ́ nínú Gmail, Outlook, Apple Mail, àti Thunderbird."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Ìwòràn láàyè",
+          "description": "Ìyípadà kọ̀ọ̀kan hàn lẹ́sẹ̀kẹsẹ̀ lórí ìpilẹ̀ fẹ́ẹ́rẹ́fẹ́ẹ́, dúdú, tàbí àtèlé."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Àwọn ìbéèrè tí a máa ń béèrè nípa olùpìlẹ̀ṣẹ̀ ìbúwòlú ìmeèlì",
@@ -228,7 +352,10 @@
           "question": "Ṣé mo lè fi àwọn àmì àjọlò aṣàyàn kún?",
           "answer": "Olùpìlẹ̀ṣẹ̀ náà pèsè àwọn àmì SVG tí a ti kọ́ sínú fún pẹpẹ méjìlá: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, àti Pinterest. Mú àṣàyàn Show icons ṣiṣẹ́ nínú tab Social Media. O lè yan ìwọn àmì àti awọ̀ (àwọn awọ̀ pẹpẹ, awọ̀ ìyàtọ̀, tàbí awọ̀ ọ̀rọ̀)."
         },
-        { "question": "Bọ́tìnì daakọ kò ṣiṣẹ́ — kí nìdí?", "answer": "Láti daakọ ìbúwòlú, kún ó kéréjù aaye méjì: orúkọ àti àdírẹ́sì ìmeèlì. Ṣàyẹ̀wò pé a ti kún àwọn aaye méjèèjì." },
+        {
+          "question": "Bọ́tìnì daakọ kò ṣiṣẹ́ — kí nìdí?",
+          "answer": "Láti daakọ ìbúwòlú, kún ó kéréjù aaye méjì: orúkọ àti àdírẹ́sì ìmeèlì. Ṣàyẹ̀wò pé a ti kún àwọn aaye méjèèjì."
+        },
         {
           "question": "Avatar tàbí àmì ìdánìmọ̀ kò hàn — kí ni kí n ṣe?",
           "answer": "Àwòrán gbọ́dọ̀ wà ní gbangba lórí ayélujára. URL yẹ kí ó tọ́ka tààrà sí fáìlì àwòrán (tí ó parí ní .jpg, .png, tàbí .webp). Àwọn àwòrán láti Google Drive tàbí Dropbox nílò ìjápọ̀ pípín pàtàkì."
@@ -259,8 +386,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Ṣàwárí àwọn irìnṣé mìíràn" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ṣàwárí àwọn irìnṣé mìíràn"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

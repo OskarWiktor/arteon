@@ -2,8 +2,8 @@
   "toolKey": "contrastChecker",
   "locale": "bg",
   "metadata": {
-    "title": "Безплатна проверка на контраст на цветове – съответствие с WCAG 2.1",
-    "description": "Проверете дали цветовете на текста и фона ви са четими по WCAG 2.1. Въведете HEX, RGB или HSL кодове, вижте коефициента на контраст и използвайте автоматична корекция за достъпни цветове.",
+    "title": "Безплатна проверка на контраст на цветове – съответствие с",
+    "description": "Проверете дали цветовете на текста и фона ви са четими по WCAG 2.1. Въведете HEX, RGB или HSL кодове, вижте коефициента на контраст и използвайте автоматична.",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/bg/instrumenti/proverka-na-kontrast-na-tsvetove"
   },

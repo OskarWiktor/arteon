@@ -3,7 +3,7 @@
   "locale": "es",
   "metadata": {
     "title": "Verificador de meta título y descripción gratis – SEO",
-    "description": "Compruebe la longitud de meta título y descripción en caracteres y píxeles. Vista previa de Google para evitar textos truncados en los resultados. Sin registro.",
+    "description": "Compruebe la longitud de meta título y descripción en caracteres y píxeles. Vista previa de Google para evitar textos truncados en los resultados.",
     "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
     "path": "/es/herramientas/verificador-de-meta-titulo-y-descripcion"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/es/herramientas", "label": "Herramientas" },
-    "third": { "href": "/es/herramientas/verificador-de-meta-titulo-y-descripcion", "label": "Verificador de meta título y descripción" }
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/verificador-de-meta-titulo-y-descripcion",
+      "label": "Verificador de meta título y descripción"
+    }
   },
   "schemas": {
     "software": {
@@ -61,18 +67,27 @@
           "name": "Compruebe la vista previa de Google",
           "text": "Vea cómo se ven el título y la descripción en un resultado de búsqueda de Google simulado. La vista previa trunca automáticamente el texto tal como lo haría el motor de búsqueda."
         },
-        { "name": "Ajuste según los consejos", "text": "Si el estado muestra Demasiado corto o Demasiado largo, ajuste el texto y observe los cambios en tiempo real." }
+        {
+          "name": "Ajuste según los consejos",
+          "text": "Si el estado muestra Demasiado corto o Demasiado largo, ajuste el texto y observe los cambios en tiempo real."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "¿Qué son el meta título y la meta descripción?",
       "html": "<p class=\"text-mid\">El meta título y la meta descripción son dos textos cortos que describen el contenido de una página web. No son visibles directamente en la página, pero aparecen en los resultados de búsqueda de Google como el título (enlace azul) y la descripción (texto gris debajo del título).</p><p class=\"text-mid mt-3\">Unas meta etiquetas bien escritas funcionan como un anuncio de su página en los resultados de búsqueda: atraen la atención y aumentan la probabilidad de un clic. Unas etiquetas mal escritas o truncadas pueden desanimar los clics, incluso si la página en sí es valiosa.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Cómo usar el verificador de meta título y descripción",
@@ -101,33 +116,48 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "¿Cuántos caracteres deben tener el meta título y la descripción?",
       "html": "<p class=\"text-mid mb-4\">Google trunca los títulos y las descripciones que son demasiado largos. A continuación se muestran los rangos recomendados que reducen el riesgo de que el texto se corte en los resultados de búsqueda.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Elemento</th><th class=\"py-2 pr-4 font-semibold\">Caracteres</th><th class=\"py-2 pr-4 font-semibold\">Píxeles</th><th class=\"py-2 font-semibold\">Notas</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta título</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 caracteres</td><td class=\"py-2 pr-4 whitespace-nowrap\">hasta ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Coloque las palabras más importantes al principio. Nombre de marca al final.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta descripción</td><td class=\"py-2 pr-4 whitespace-nowrap\">120–160 caracteres</td><td class=\"py-2 pr-4 whitespace-nowrap\">hasta ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">Caben 2-3 frases cortas. Termine con una llamada a la acción.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Son valores aproximados: Google no publica límites estrictos y puede ajustarlos según el dispositivo y el contexto de la consulta.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Cómo interpretar los resultados",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta título</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Caracteres: <strong>52</strong></span><span class=\"text-mid\">Palabras: <strong>7</strong></span><span class=\"text-mid\">Píxeles: <strong>456px</strong></span></div><span class=\"mt-2 inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800\">Buena longitud</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta descripción</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Caracteres: <strong>142</strong></span><span class=\"text-mid\">Palabras: <strong>21</strong></span><span class=\"text-mid\">Píxeles: <strong>812px</strong></span></div><span class=\"mt-2 inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800\">Buena longitud</span></div></div>",
       "html": "<p class=\"text-mid mb-4\">La herramienta muestra tres métricas para cada campo junto con una evaluación de longitud codificada por colores:</p><h3 class=\"h5 mt-6 mb-2\">Métricas</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Caracteres</strong> - número total de caracteres (incluidos los espacios). Fácil de entender pero menos preciso que los píxeles.</li><li><strong>Palabras</strong> - número de palabras. útil para una evaluación rápida de la longitud.</li><li><strong>Ancho (px)</strong> - ancho del texto en píxeles. Este es el valor que Google realmente usa al truncar.</li></ul><h3 class=\"h5 mt-6 mb-2\">Estados de evaluación</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Buena longitud</strong> (verde) - el texto está dentro del rango recomendado. Google debería mostrarlo completo.</li><li><strong class=\"text-warning-text\">Demasiado corto</strong> (amarillo) - el texto es muy corto. Tiene espacio para más información que podría fomentar los clics.</li><li><strong class=\"text-error-text\">Demasiado largo</strong> (rojo) - el texto excede el rango recomendado. Google probablemente lo truncará. Considere acortarlo.</li><li><strong class=\"text-light\">Sin datos</strong> (gris) - el campo está vacío. Introduzca texto para ver el análisis.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "¿Por qué el ancho en píxeles es más importante que el número de caracteres?",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">iiiiiiiiiiiiiiii (16 caracteres)</p><div class=\"bg-success-icon mt-1 h-3 w-1/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~64px de ancho</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">WWWWWWWWWWWWWWWW (16 caracteres)</p><div class=\"bg-error-icon mt-1 h-3 w-3/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~256px de ancho</p></div></div>",
       "html": "<p class=\"text-mid\">Las letras diferentes tienen anchos diferentes. Compare &quot;iiii&quot; y &quot;WWWW&quot;: ambas tienen 4 caracteres, pero el ancho visual es completamente diferente. Google mide el ancho del texto en píxeles, no en caracteres.</p><p class=\"text-mid mt-3\">Por eso, un título con muchas letras estrechas (i, l, t, f) puede ser más largo que un título con letras anchas (W, M, O), a pesar de tener el mismo número de caracteres. La herramienta muestra ambos valores: el número de caracteres (más fácil de entender) y el ancho en píxeles (más preciso para Google).</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Vista previa del snippet: ¿qué muestra?",
       "html": "<p class=\"text-mid\">La vista previa (snippet preview) simula cómo se ven el título y la descripción de la página en los resultados de búsqueda de Google. Es una visualización orientativa: la apariencia real puede variar ligeramente según el dispositivo y el navegador.</p><h3 class=\"h5 mt-6 mb-2\">Elementos de la vista previa</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> - la dirección de la página que se muestra sobre el título. Puede introducirla en un campo opcional para un resultado más realista.</li><li><strong>Título</strong> - el encabezado azul. Si es demasiado largo, la herramienta lo trunca automáticamente y añade puntos suspensivos.</li><li><strong>Descripción</strong> - el texto gris debajo del título. También se trunca si supera el límite.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Problemas comunes y soluciones",
@@ -150,7 +180,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "¿Para quién es el verificador de meta etiquetas?",
@@ -167,33 +200,63 @@
           "title": "Especialistas en SEO",
           "description": "Pruebe diferentes variantes de título y descripción, compruebe la vista previa de resultados de búsqueda y verifique el cumplimiento de las directrices."
         },
-        { "icon": "RiEditLine", "title": "Redactores", "description": "Escriba títulos y descripciones que se ajusten a los límites y fomenten los clics." },
+        {
+          "icon": "RiEditLine",
+          "title": "Redactores",
+          "description": "Escriba títulos y descripciones que se ajusten a los límites y fomenten los clics."
+        },
         {
           "icon": "RiMegaphoneLine",
           "title": "Profesionales de marketing",
           "description": "Cree meta etiquetas para campañas y landing pages, optimizando la tasa de clics en los resultados orgánicos."
         },
-        { "icon": "RiCodeLine", "title": "Desarrolladores", "description": "Verifique las meta etiquetas antes de desplegar una página en producción." }
+        {
+          "icon": "RiCodeLine",
+          "title": "Desarrolladores",
+          "description": "Verifique las meta etiquetas antes de desplegar una página en producción."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "¿Qué hace especial a este verificador de meta título y descripción?",
       "grid": "two",
       "items": [
-        { "icon": "RiRuler2Line", "title": "Medición en píxeles", "description": "No solo contamos caracteres: medimos el ancho real del texto como lo hace Google." },
-        { "icon": "RiEyeLine", "title": "Vista previa de Google", "description": "Vea cómo se ven el título y la descripción en los resultados de búsqueda antes de publicar su página." },
-        { "icon": "RiCheckboxCircleLine", "title": "Evaluación codificada por colores", "description": "Sepa al instante si el texto es demasiado corto, óptimo o demasiado largo." },
+        {
+          "icon": "RiRuler2Line",
+          "title": "Medición en píxeles",
+          "description": "No solo contamos caracteres: medimos el ancho real del texto como lo hace Google."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Vista previa de Google",
+          "description": "Vea cómo se ven el título y la descripción en los resultados de búsqueda antes de publicar su página."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Evaluación codificada por colores",
+          "description": "Sepa al instante si el texto es demasiado corto, óptimo o demasiado largo."
+        },
         {
           "icon": "RiInfinityLine",
           "title": "Píxeles y caracteres juntos",
           "description": "La herramienta muestra ambos valores a la vez: puede comparar si el título se ajusta tanto al límite de caracteres como al de píxeles."
         },
-        { "icon": "RiUserLine", "title": "Título y descripción en una sola vista", "description": "Compruebe tanto el meta título como la descripción simultáneamente, sin cambiar entre pestañas." }
+        {
+          "icon": "RiUserLine",
+          "title": "Título y descripción en una sola vista",
+          "description": "Compruebe tanto el meta título como la descripción simultáneamente, sin cambiar entre pestañas."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Preguntas frecuentes sobre el verificador de meta título y descripción",
@@ -226,8 +289,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore otras herramientas" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore otras herramientas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

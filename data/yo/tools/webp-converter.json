@@ -2,8 +2,8 @@
   "toolKey": "jpgToWebp",
   "locale": "yo",
   "metadata": {
-    "title": "Olùyípadà JPG/PNG sí WebP Òfẹ́ẹ́ – Láìsí Ìdíwọ̀n, Láìsí Gbígbé Sókè",
-    "description": "Dín ìwọn àwòrán kù títí dé 35% láìsí ìpàdánú dídára. Yíyípadà JPG àti PNG sí WebP wáyé ní àdáni – àwọn fáìlì kò kúrò lórí ẹ̀rọ̀ rẹ. Láìsí ìforukọ̀sílẹ̀, láìsí ìdíwọ̀n.",
+    "title": "Olùyípadà JPG/PNG sí WebP Òfẹ́ẹ́ – Láìsí Ìdíwọ̀n, Láìsí",
+    "description": "Dín ìwọn àwòrán kù títí dé 35% láìsí ìpàdánú dídára. Yíyípadà JPG àti PNG sí WebP wáyé ní àdáni – àwọn fáìlì kò kúrò lórí ẹ̀rọ̀ rẹ. Láìsí ìforukọ̀sílẹ̀, láìsí.",
     "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
     "path": "/yo/awon-irinse/oluyipada-jpg-png-si-webp"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/yo/awon-irinse", "label": "Àwọn Irìnṣé" },
-    "third": { "href": "/yo/awon-irinse/oluyipada-jpg-png-si-webp", "label": "Olùyípadà JPG/PNG sí WebP" }
+    "second": {
+      "href": "/yo/awon-irinse",
+      "label": "Àwọn Irìnṣé"
+    },
+    "third": {
+      "href": "/yo/awon-irinse/oluyipada-jpg-png-si-webp",
+      "label": "Olùyípadà JPG/PNG sí WebP"
+    }
   },
   "schemas": {
     "software": {
@@ -38,58 +44,100 @@
       "name": "Bí o ṣe lè yí JPG àti PNG padà sí WebP",
       "description": "Bí o ṣe lè yí àwọn àwòrán JPG àti PNG padà sí ònà WebP. Àwọn àtò dídára (60–95%), ètò Smart Quality, àti gbígbà àwọn fáìlì tí a yípadà gẹ́gẹ́ bí ZIP.",
       "steps": [
-        { "name": "Fi àwọn fáìlì kún fún yíyípadà", "text": "Fa àwọn àwòrán JPG tàbí PNG sí agbègbè tí a yàn sọ́tọ̀ tàbí yan àwọn fáìlì láti ẹ̀rọ̀ rẹ. O lè fi àwọn fáìlì púpọ̀ kún ní ẹ̀ẹ̀kan náà." },
-        { "name": "Ṣètò ìpele dídára", "text": "Yan dídára fáìlì WebP tí ó jadé pẹ̀lú slider (60–95%). Ìyẹ àbáwọlé 80% jẹ́ ìwọ̀ntúnwọ̀nsí tí ó dára láàárín dídára àti ìwọn." },
-        { "name": "Bẹ̀rẹ̀ yíyípadà", "text": "Lẹ́yìn bíbẹ̀rẹ̀ yíyípadà, irìnṣé náà yóò ṣe gbogbo àwọn fáìlì nínú ìlà ìdúró yóò sì lo Smart Quality ní aìfọ̀wọ́." },
-        { "name": "Gbà àwọn fáìlì tí a yípadà", "text": "A lè gbà àwọn fáìlì tí a yípadà lẹ́yòọ̀kan tàbí gbogbo ní ẹ̀ẹ̀kan gẹ́gẹ́ bí àkójọ ZIP." }
+        {
+          "name": "Fi àwọn fáìlì kún fún yíyípadà",
+          "text": "Fa àwọn àwòrán JPG tàbí PNG sí agbègbè tí a yàn sọ́tọ̀ tàbí yan àwọn fáìlì láti ẹ̀rọ̀ rẹ. O lè fi àwọn fáìlì púpọ̀ kún ní ẹ̀ẹ̀kan náà."
+        },
+        {
+          "name": "Ṣètò ìpele dídára",
+          "text": "Yan dídára fáìlì WebP tí ó jadé pẹ̀lú slider (60–95%). Ìyẹ àbáwọlé 80% jẹ́ ìwọ̀ntúnwọ̀nsí tí ó dára láàárín dídára àti ìwọn."
+        },
+        {
+          "name": "Bẹ̀rẹ̀ yíyípadà",
+          "text": "Lẹ́yìn bíbẹ̀rẹ̀ yíyípadà, irìnṣé náà yóò ṣe gbogbo àwọn fáìlì nínú ìlà ìdúró yóò sì lo Smart Quality ní aìfọ̀wọ́."
+        },
+        {
+          "name": "Gbà àwọn fáìlì tí a yípadà",
+          "text": "A lè gbà àwọn fáìlì tí a yípadà lẹ́yòọ̀kan tàbí gbogbo ní ẹ̀ẹ̀kan gẹ́gẹ́ bí àkójọ ZIP."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Kí ni WebP àti kí nìdí tí a fi yẹ kí a yí àwọn àwòrán padà?",
       "html": "<p class=\"mb-4\">WebP jẹ́ ònà àwòrán tí Google ṣẹ̀dá tí ó jẹ́ kí a dín ìwọn fáìlì àwòrán kù títí dé 25–35% ní àfiwé pẹ̀lú JPG àti PNG — nígbà tí a ń pa dídára ojú tí ó bá ara mu mọ́. Àwọn fáìlì tí ó kéré sí i túmọ̀ sí ìgbérù ojú-ìwé tí ó yára sí i, tí ó túmọ̀ sí ìrírí olùlò tí ó dára sí i àti àwọn ìwọn tí ó ga sí i nínú <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"mb-4\">Gbogbo àwọn browser òde-òní ṣe àtìlẹ́yìn fún ònà WebP: Chrome, Firefox, Safari (láti àtúnṣe 14), àti Edge. Tí o bá ń ṣàkóso ojú-ìwé ayélujára, ilé ìtajà, tàbí blog, yíyípadà àwọn àwòrán sí WebP jẹ́ ọ̀kan lára àwọn ọ̀nà tí ó rọrùn jùlọ láti mú ìṣiṣẹ́ ojú-ìwé dára sí i.</p><p>Olùyípadà náà ṣe àtìlẹ́yìn fún àwọn fọ́tò JPG àti àwọn àwòrán PNG (pẹ̀lú àwọn tí ó ní àìríojú). O lè yí iye fáìlì èyíkéyìí padà ní ẹ̀ẹ̀kan — gbogbo wọn jẹ́ ṣíṣe ní àdáni nínú browser, láìsí fífí ránṣẹ́ sí server.</p>"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Bí o ṣe lè yí àwọn àwòrán padà sí WebP",
       "description": "Yíyípadà sí WebP gba ìṣẹ́jú díẹ̀ péré:",
       "grid": "three",
       "items": [
-        { "title": "1. Fi àwọn fáìlì kún", "description": "Fa àwọn àwòrán JPG tàbí PNG sí agbègbè tí a yàn sọ́tọ̀ tàbí yan àwọn fáìlì láti ẹ̀rọ̀ rẹ. O lè fi iye fáìlì èyíkéyìí kún ní ẹ̀ẹ̀kan." },
-        { "title": "2. Ṣètò dídára", "description": "Yan ìpele dídára (àbáwọlé 80%). Ìyẹ tí ó kéré sí i túmọ̀ sí fáìlì tí ó kéré sí i. Fún ọ̀pọ̀lọpọ̀ àwọn ìlò, 80% jẹ́ àtò tí ó dára jùlọ." },
-        { "title": "3. Gbà WebP", "description": "Lẹ́yìn yíyípadà, gbà àwọn fáìlì lẹ́yòọ̀kan tàbí gẹ́gẹ́ bí àkójọ ZIP. Fáìlì kọ̀ọ̀kan fi àlàyé nípa àyè tí a fipamọ́ hàn." }
+        {
+          "title": "1. Fi àwọn fáìlì kún",
+          "description": "Fa àwọn àwòrán JPG tàbí PNG sí agbègbè tí a yàn sọ́tọ̀ tàbí yan àwọn fáìlì láti ẹ̀rọ̀ rẹ. O lè fi iye fáìlì èyíkéyìí kún ní ẹ̀ẹ̀kan."
+        },
+        {
+          "title": "2. Ṣètò dídára",
+          "description": "Yan ìpele dídára (àbáwọlé 80%). Ìyẹ tí ó kéré sí i túmọ̀ sí fáìlì tí ó kéré sí i. Fún ọ̀pọ̀lọpọ̀ àwọn ìlò, 80% jẹ́ àtò tí ó dára jùlọ."
+        },
+        {
+          "title": "3. Gbà WebP",
+          "description": "Lẹ́yìn yíyípadà, gbà àwọn fáìlì lẹ́yòọ̀kan tàbí gẹ́gẹ́ bí àkójọ ZIP. Fáìlì kọ̀ọ̀kan fi àlàyé nípa àyè tí a fipamọ́ hàn."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Bí o ṣe lè fi àwọn fáìlì kún fún yíyípadà",
       "html": "<p class=\"text-mid\">Irìnṣé náà pèsè ọ̀nà méjì láti fi àwọn fáìlì kún:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Fa àti jù sílẹ̀</strong> — mú àwọn fáìlì láti àpò lórí kọ̀mpútà rẹ kí o sì jù wọ́n sí agbègbè tí a fi &quot;Fa àwọn àwòrán sí ibí&quot; ṣe àmì. O lè fa àwọn fáìlì púpọ̀ ní ẹ̀ẹ̀kan.</li><li><strong>Yan láti ẹ̀rọ̀</strong> — títẹ agbègbè gbígbé fáìlì sókè ṣí ìfọ̀rọ̀wérọ̀ yíyàn. Dídì Ctrl (tàbí Cmd lórí Mac) mú jẹ́ kí o yan àwọn fáìlì púpọ̀ ní ẹ̀ẹ̀kan.</li></ul><p class=\"text-mid mt-3\">Irìnṣé náà gba àwọn fáìlì JPG àti PNG péré. Tí o bá fi fáìlì ní ònà mìíràn kún láìmọ̀ọ́mọ̀ (bí àpẹẹrẹ, GIF tàbí BMP), a yóò fòyinmò rẹ̀ ní aìfọ̀wọ́ iwọ yóò sì rí ìfiránṣẹ́ àlàyé.</p><p class=\"text-mid mt-3\"><strong>Ìpamọ́:</strong> Gbogbo àwọn fáìlì jẹ́ ṣíṣe ní àdáni nínú browser. A kò fi wọ́n ránṣẹ́ síbìkíbi — wọ́n kò lọ sí server èyíkéyìí. Lẹ́yìn títí tab tàbí browser, a yọ àwọn fáìlì kúrò nínú ìrántí.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Kí ni àwọn ipò fáìlì túmọ̀ sí?",
       "html": "<p class=\"text-mid\">Fáìlì kọ̀ọ̀kan nínú ìlà ìdúró ní ọ̀kan nínú àwọn ipò mẹ́rin tí ó fi ìlọsíwájú yíyípadà hàn:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Ń dúró</span><p class=\"text-mid\">Fáìlì wà nínú ìlà ìdúró ó sì ń dúró de ṣíṣe. Yíyípadà kò tíì bẹ̀rẹ̀.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Ń ṣiṣẹ́…</span><p class=\"text-mid\">A ń yí fáìlì padà. Fún ọ̀pọ̀lọpọ̀ àwọn àwòrán èyí gba ìdá ìṣẹ́jú kan, ṣùgbọ́n àwọn fáìlì tí ó tóbi púpọ̀ lè gba ìṣẹ́jú díẹ̀.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Ti parí</span><p class=\"text-mid\">Yíyípadà parí ní àṣeyọrí. Fáìlì WebP ṣetán láti gbà. Lẹ́gbẹ̀ẹ̀ ipò náà iwọ yóò tún rí ìwọn ṣáájú àti lẹ́yìn yíyípadà.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Àṣìṣe</span><p class=\"text-mid\">Ohun kan ṣe àṣìṣe lásìkò yíyípadà. Èyí lè jẹ́ fáìlì orísun tí ó ti bajẹ́ tàbí ìṣòro ìrántí browser pẹ̀lú àwọn àwòrán tí ó tóbi púpọ̀. Bọ́tìnì &quot;Gbìyànjú lẹ́ẹ̀kan sí i&quot; jẹ́ kí o gbìyànjú lẹ́ẹ̀kan sí i.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Báwo ni Smart Quality ṣe ń ṣiṣẹ́?",
       "html": "<p class=\"text-mid\">Smart Quality jẹ́ ètò ìmúdára aìfọ̀wọ́ tí ó rí i dájú pé fáìlì WebP tí ó jadé kò tóbi ju ti àtìlẹ́bá lọ rárá. Ó ṣiṣẹ́ báyìí:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>Irìnṣé náà yí àwòrán padà ní dídára tí o ṣètò (bí àpẹẹrẹ, 80%).</li><li>Ó ṣàyẹ̀wò bóyá fáìlì tí ó jadé kéré ju ti àtìlẹ́bá lọ.</li><li>Tí ó bá tóbi sí i, ó dín dídára kù ní aìfọ̀wọ́ ó sì gbìyànjú lẹ́ẹ̀kan sí i.</li><li>Ìlànà náà tún ṣe títí tí fáìlì tí ó jadé yóò fi kéré tàbí dídára yóò ṣubú sí àbẹ́ kéréjù aábo.</li></ol><p class=\"text-mid mt-3\">Irìnṣé náà yan àwọn àtò tí ó dára jùlọ ní aìfọ̀wọ́. Tí o bá ní àwòrán tí a ti fún ní ìfúnpọ̀ tó (bí àpẹẹrẹ, JPG ní dídára 60%), a yóò ṣàtúnṣe àwọn pàtó ní aìfọ̀wọ́ láti ṣì ṣàṣeyọrí ìfipamọ́ ìwọn.</p><p class=\"text-mid mt-3\">Lẹ́gbẹ̀ẹ̀ fáìlì kọ̀ọ̀kan iwọ yóò rí &quot;Dídára WebP tí a lò&quot; — èyí ni dídára gangan tí a lo lẹ́yìn àtúnṣe Smart Quality èyíkéyìí.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Àwọn àtò dídára — kí ni kí a yan?",
       "demoHtml": "<div class=\"space-y-4\"><div><p class=\"text-dark mb-2 text-sm! font-medium uppercase\">Ṣètò dídára</p><div class=\"flex items-center\"><input type=\"range\" min=\"60\" max=\"95\" value=\"80\" class=\"flex-1\" disabled><span class=\"text-mid w-12 text-right text-sm!\">80%</span></div><span class=\"text-light mt-1 block text-xs\">Ìyẹ tí ó ga sí i = dídára tí ó dára sí i, fáìlì tí ó tóbi sí i</span></div><div class=\"flex items-center\"><input type=\"checkbox\" checked class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Gbà ní aìfọ̀wọ́ lẹ́yìn yíyípadà</span></div><div class=\"ml-6 flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Gbà lẹ́yòọ̀kan</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Gbà gẹ́gẹ́ bí ZIP</span></div></div>",
       "html": "<p class=\"text-mid\">Slider dídára jẹ́ kí o ṣètò ìyẹ láti 60% sí 95%. Ìyẹ tí ó ga sí i túmọ̀ sí dídára àwòrán tí ó dára sí i ṣùgbọ́n ìwọn fáìlì tí ó tóbi sí i.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (àbáwọlé)</strong> — ìwọ̀ntúnwọ̀nsí tí ó dára fún ọ̀pọ̀lọpọ̀ àwọn ìlò.</li><li><strong>85–90%</strong> — fún àwọn fọ́tò ọjà àti àwọn gbàlẹ̀rì fọ́tò.</li><li><strong>60–70%</strong> — nígbà tí dídín ìwọn fáìlì kù jẹ́ ohun pàtàkì jùlọ.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Bí o ṣe lè gbà àwọn fáìlì tí a yípadà",
@@ -97,19 +145,28 @@
       "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-medium text-white\">Yípadà</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Gbà gbogbo</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Gbà gẹ́gẹ́ bí ZIP</span></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Fi ìròyìn CSV kún sínú ZIP</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Ìwọn tí ó wọlé: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Ìwọn lẹ́yìn yíyípadà: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">Tí a fipamọ́: <strong class=\"text-success-icon\">1.5 MB (~63%)</strong></p></div></div>",
       "html": "<p class=\"text-mid\">Lẹ́yìn tí yíyípadà bá parí, o ní àwọn àṣàyàn gbígbà púpọ̀:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Gbà</strong> (lẹ́gbẹ̀ẹ̀ fáìlì kọ̀ọ̀kan) — gbà fáìlì WebP kan.</li><li><strong>Gbà gbogbo</strong> — gbà gbogbo àwọn fáìlì lẹ́yòọ̀kan.</li><li><strong>Gbà gẹ́gẹ́ bí ZIP</strong> — ṣẹ̀dá àkójọ pẹ̀lú gbogbo àwọn fáìlì.</li></ul><p class=\"text-mid mt-3\"><strong>Àṣàyàn ìròyìn CSV:</strong> Fi ìròyìn àkópọ̀ yíyípadà kún sínú àkójọ ZIP.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Ìròyìn ìfipamọ́ — kí ni ó fi hàn?",
       "html": "<p class=\"text-mid\">Nísàlẹ̀ àwọn bọ́tìnì yíyípadà iwọ yóò rí àkópọ̀ pẹ̀lú àlàyé ìfipamọ́:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Ìwọn tí ó wọlé lápapọ̀</strong> — àpapọ̀ ìwọn gbogbo àwọn fáìlì àtìlẹ́bá.</li><li><strong>Ìwọn lápapọ̀ lẹ́yìn yíyípadà</strong> — àpapọ̀ ìwọn gbogbo àwọn fáìlì WebP.</li><li><strong>Tí a fipamọ́</strong> — àyè mélòó ni o gba nípasẹ̀ yíyípadà (ní KB/MB àti ìpín ọgọ́rùn-ún).</li></ul><p class=\"text-mid mt-3\"><strong>Daakọ àkópọ̀:</strong> Bọ́tìnì náà daakọ ìròyìn sí clipboard ní ònà ọ̀rọ̀. O lè lẹ̀ ẹ́ sínú àwọn àkọsílẹ̀, àwọn ìméèlì, tàbí àwọn ìwé — wúlò fún àkọsílẹ̀ ìmúdára àwòrán.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Mélòó ni o lè fipamọ́ nípasẹ̀ yíyípadà sí WebP?",
       "html": "<p class=\"mb-4\">Ìfipamọ́ dá lórí irú àwòrán àti ìfúnpọ̀ àtìlẹ́bá rẹ̀. Nísàlẹ̀ ni àwọn àpẹẹrẹ èsì fún àwọn fáìlì àṣà:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fọ́tò JPG (kámẹ́rà)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ìfipamọ́: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Àwòrán PNG (àmì ìdánìmọ̀)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ìfipamọ́: ~75%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fọ́tò ọjà</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ìfipamọ́: ~63%</p></div></div><p class=\"text-light mt-4 text-sm\">Ìfipamọ́ gangan lè yàtọ̀. Olùyípadà fi ìwọn gangan hàn ṣáájú àti lẹ́yìn yíyípadà fún fáìlì kọ̀ọ̀kan, àti àkópọ̀ ìfipamọ́ lápapọ̀.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Kí ni tí ó mú olùyípadà JPG/PNG sí WebP yìí yàtọ̀?",
@@ -137,7 +194,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Àwọn ohun tí o yẹ kí o mọ̀",
@@ -166,25 +226,47 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Nígbà wo ni ó tọ́ láti yí àwọn àwòrán padà sí WebP?",
       "description": "Yíyípadà sí WebP mú àǹfààní wá ní fẹ́rẹ̀ẹ́ gbogbo ìgbà tí a bá ń fi àwọn àwòrán hàn nínú browser:",
       "grid": "two",
       "items": [
-        { "icon": "RiBuilding2Line", "title": "Àwọn ojú-ìwé iṣẹ́-owó", "description": "Ìgbérù tí ó yára sí i mú ìfẹ́ àkọ́kọ́ dára sí i tí ó sì dín ìwọ̀n ẹni tí ó padà kù." },
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Àwọn ojú-ìwé iṣẹ́-owó",
+          "description": "Ìgbérù tí ó yára sí i mú ìfẹ́ àkọ́kọ́ dára sí i tí ó sì dín ìwọ̀n ẹni tí ó padà kù."
+        },
         {
           "icon": "RiShoppingCartLine",
           "title": "Àwọn ilé ìtajà ayélujára",
           "description": "Àwọn fọ́tò ọjà sábà jẹ́ àwọn fáìlì tí ó tóbi jùlọ lórí ojú-ìwé; ìmúdára wọn mú gbogbo ilé ìtajà yára sí i."
         },
-        { "icon": "RiArticleLine", "title": "Àwọn blog àti àwọn portal", "description": "Àwọn àpilẹ̀kọ pẹ̀lú fọ́tò púpọ̀ gba ìgbérù tí ó yára sí i gan-an." },
-        { "icon": "RiCameraLine", "title": "Àwọn gbàlẹ̀rì fọ́tò", "description": "Ní dídára 85–90%, ìyàtọ̀ ojú kò fi ara hàn, àwọn fáìlì sì kéré sí i." },
-        { "icon": "RiSmartphoneLine", "title": "Àwọn àpù ayélujára (PWA)", "description": "Àwọn ohun-ìní tí ó kéré sí i túmọ̀ sí ìṣiṣẹ́ tí ó yára sí i, ní pàtàkì lórí àwọn ẹ̀rọ̀ alágbèéká." }
+        {
+          "icon": "RiArticleLine",
+          "title": "Àwọn blog àti àwọn portal",
+          "description": "Àwọn àpilẹ̀kọ pẹ̀lú fọ́tò púpọ̀ gba ìgbérù tí ó yára sí i gan-an."
+        },
+        {
+          "icon": "RiCameraLine",
+          "title": "Àwọn gbàlẹ̀rì fọ́tò",
+          "description": "Ní dídára 85–90%, ìyàtọ̀ ojú kò fi ara hàn, àwọn fáìlì sì kéré sí i."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Àwọn àpù ayélujára (PWA)",
+          "description": "Àwọn ohun-ìní tí ó kéré sí i túmọ̀ sí ìṣiṣẹ́ tí ó yára sí i, ní pàtàkì lórí àwọn ẹ̀rọ̀ alágbèéká."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Àwọn ìbéèrè tí a máa ń béèrè nípa olùyípadà WebP",
@@ -227,8 +309,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Ṣàwárí àwọn irìnṣé mìíràn" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ṣàwárí àwọn irìnṣé mìíràn"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

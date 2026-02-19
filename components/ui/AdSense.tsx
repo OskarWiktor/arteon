@@ -105,7 +105,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
   }, [variant, slot]);
 
   if (variant === 'tool-banner') {
-    return <div ref={containerRef} className={`flex justify-center ${className}`} />;
+    return <div ref={containerRef} className={`flex min-h-[90px] items-center justify-center ${className}`} />;
   }
 
   if (variant === 'vertical') {

@@ -2,8 +2,8 @@
   "toolKey": "imageResize",
   "locale": "el",
   "metadata": {
-    "title": "Δωρεάν Επεξεργαστής Εικόνων – Περικοπή, Αλλαγή Μεγέθους & Μετατροπή",
-    "description": "Αλλάξτε μέγεθος και περικόψτε εικόνες σε δευτερόλεπτα. Έτοιμα πρότυπα για Instagram, Facebook, LinkedIn. Μετατροπή JPG σε WebP. Δημιουργία στρογγυλών avatar. Χωρίς εγγραφή, χωρίς όρια.",
+    "title": "Δωρεάν Επεξεργαστής Εικόνων – Περικοπή, Αλλαγή Μεγέθους &",
+    "description": "Αλλάξτε μέγεθος και περικόψτε εικόνες σε δευτερόλεπτα. Έτοιμα πρότυπα για Instagram, Facebook, LinkedIn. Μετατροπή JPG σε WebP. Δημιουργία στρογγυλών avatar.",
     "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
     "path": "/el/ergaleia/epexergasia-eikonas"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/el/ergaleia", "label": "Εργαλεία" },
-    "third": { "href": "/el/ergaleia/epexergasia-eikonas", "label": "Επεξεργαστής εικόνων" }
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/epexergasia-eikonas",
+      "label": "Επεξεργαστής εικόνων"
+    }
   },
   "schemas": {
     "software": {
@@ -52,55 +58,91 @@
       "name": "Πώς να αλλάξετε μέγεθος και να περικόψετε εικόνα για κοινωνικά δίκτυα",
       "description": "Πώς να αλλάξετε μέγεθος εικόνας για Instagram (1080x1080, 1080x1350, story), Facebook, LinkedIn και OG image. Μετατροπή JPG σε WebP και δημιουργία στρογγυλού avatar.",
       "steps": [
-        { "name": "Προσθέστε εικόνα", "text": "Σύρετε αρχείο στην καθορισμένη περιοχή ή επιλέξτε εικόνα από τη συσκευή σας. Υποστηριζόμενες μορφές: JPG, PNG, WebP." },
-        { "name": "Επιλέξτε διαστάσεις ή πρότυπο", "text": "Εισάγετε διαστάσεις στόχου σε pixels ή επιλέξτε έτοιμη μορφή (π.χ. Instagram post, εξώφυλλο Facebook, OG image)." },
+        {
+          "name": "Προσθέστε εικόνα",
+          "text": "Σύρετε αρχείο στην καθορισμένη περιοχή ή επιλέξτε εικόνα από τη συσκευή σας. Υποστηριζόμενες μορφές: JPG, PNG, WebP."
+        },
+        {
+          "name": "Επιλέξτε διαστάσεις ή πρότυπο",
+          "text": "Εισάγετε διαστάσεις στόχου σε pixels ή επιλέξτε έτοιμη μορφή (π.χ. Instagram post, εξώφυλλο Facebook, OG image)."
+        },
         {
           "name": "Προσαρμόστε την περικοπή",
           "text": "Μετακινήστε και μεγεθύνετε την εικόνα για να επιλέξετε την καλύτερη περιοχή. Η φωτεινή περιοχή στην προεπισκόπηση δείχνει ακριβώς τι θα αποθηκευτεί."
         },
-        { "name": "Επιλέξτε μορφή και κατεβάστε", "text": "Επιλέξτε μορφή αρχείου (JPG, PNG ή WebP), ορίστε ποιότητα συμπίεσης και κατεβάστε την έτοιμη εικόνα." }
+        {
+          "name": "Επιλέξτε μορφή και κατεβάστε",
+          "text": "Επιλέξτε μορφή αρχείου (JPG, PNG ή WebP), ορίστε ποιότητα συμπίεσης και κατεβάστε την έτοιμη εικόνα."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Αλλαγή μεγέθους εικόνων — περικοπή, μετατροπή και συμπίεση σε ένα εργαλείο",
       "html": "<p class=\"text-mid\">Ο επεξεργαστής εικόνων σας επιτρέπει να προσαρμόσετε γρήγορα εικόνες σε συγκεκριμένες διαστάσεις. Μπορείτε να αλλάξετε μέγεθος εικόνας σε οποιεσδήποτε διαστάσεις σε pixels, να επιλέξετε έτοιμη μορφή για κοινωνικά δίκτυα ή να περικόψετε ένα τμήμα της εικόνας με ακριβές πλαίσιο.</p><p class=\"text-mid mt-3\">Εκτός από αλλαγή μεγέθους, το εργαλείο προσφέρει μετατροπή μορφής (JPG, PNG, WebP), δημιουργία στρογγυλού avatar και έλεγχο ποιότητας συμπίεσης.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Πώς να αλλάξετε μέγεθος εικόνας",
       "description": "Η επεξεργασία εικόνας διαρκεί μόλις λίγα δευτερόλεπτα:",
       "grid": "three",
       "items": [
-        { "title": "1. Προσθέστε εικόνα", "description": "Σύρετε αρχείο στην καθορισμένη περιοχή ή επιλέξτε εικόνα από τη συσκευή σας. Υποστηριζόμενες μορφές: JPG, PNG, WebP." },
-        { "title": "2. Ορίστε διαστάσεις", "description": "Εισάγετε διαστάσεις σε pixels ή επιλέξτε έτοιμη μορφή (Instagram, Facebook, YouTube, LinkedIn, OG image)." },
-        { "title": "3. Κατεβάστε", "description": "Προσαρμόστε την περικοπή, επιλέξτε μορφή αρχείου (JPG, PNG, WebP), ορίστε ποιότητα και κατεβάστε την έτοιμη εικόνα." }
+        {
+          "title": "1. Προσθέστε εικόνα",
+          "description": "Σύρετε αρχείο στην καθορισμένη περιοχή ή επιλέξτε εικόνα από τη συσκευή σας. Υποστηριζόμενες μορφές: JPG, PNG, WebP."
+        },
+        {
+          "title": "2. Ορίστε διαστάσεις",
+          "description": "Εισάγετε διαστάσεις σε pixels ή επιλέξτε έτοιμη μορφή (Instagram, Facebook, YouTube, LinkedIn, OG image)."
+        },
+        {
+          "title": "3. Κατεβάστε",
+          "description": "Προσαρμόστε την περικοπή, επιλέξτε μορφή αρχείου (JPG, PNG, WebP), ορίστε ποιότητα και κατεβάστε την έτοιμη εικόνα."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Πώς να προσθέσετε εικόνα",
       "html": "<p class=\"text-mid\">Το εργαλείο δέχεται εικόνες σε μορφές JPG, PNG και WebP. Μπορείτε να προσθέσετε εικόνα με δύο τρόπους:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Drag and drop</strong> — σύρετε αρχείο από φάκελο του υπολογιστή σας και αφήστε το στην περιοχή μεταφόρτωσης (η περιοχή με το διακεκομμένο περίγραμμα).</li><li><strong>Επιλογή από συσκευή</strong> — κάνοντας κλικ στην περιοχή μεταφόρτωσης ανοίγει ο διάλογος επιλογής αρχείου.</li></ul><p class=\"text-mid mt-3\">Μετά την προσθήκη εικόνας, το εργαλείο διαβάζει αυτόματα τις αρχικές διαστάσεις και εμφανίζει προεπισκόπηση. Μπορείτε τώρα να προχωρήσετε στις ρυθμίσεις περικοπής.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Ορίστε διαστάσεις στόχου",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Διαστάσεις σε px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Έτοιμες μορφές</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Πλάτος (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly></div><div><label class=\"text-[14px]! font-medium\">Ύψος (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span>Διατήρηση αναλογιών (αυτόματη δεύτερη διάσταση)</span></label></div></div>",
       "html": "<p class=\"text-mid\">Στην καρτέλα <strong>Διαστάσεις σε px</strong>, εισάγετε πλάτος και ύψος χειροκίνητα. Η επιλογή <strong>Διατήρηση αναλογιών</strong> προσαρμόζει αυτόματα τη δεύτερη διάσταση.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Διαστάσεις εικόνων για Instagram, Facebook και LinkedIn",
       "html": "<p class=\"text-mid mb-4\">Το εργαλείο περιλαμβάνει έτοιμες μορφές με βέλτιστες διαστάσεις για τις πιο δημοφιλείς πλατφόρμες:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Πλατφόρμα</th><th class=\"py-2 pr-4 font-semibold\">Μορφή</th><th class=\"py-2 pr-4 font-semibold\">Διαστάσεις (px)</th><th class=\"py-2 font-semibold\">Αναλογία</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Τετράγωνο post</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Portrait post</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Post</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Εξώφυλλο σελίδας</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Post</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Banner προφίλ</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG image</td><td class=\"py-2 pr-4\">Κοινοποίηση συνδέσμου</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div><p class=\"text-light mt-4\">Οι διαστάσεις είναι ενημερωμένες από τις αρχές του 2025. Οι πλατφόρμες μπορεί να αλλάξουν τις προτάσεις τους — ενημερώνουμε τις μορφές τακτικά.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Έτοιμες μορφές — ποια να επιλέξετε;",
@@ -122,13 +164,21 @@
           "title": "Instagram — story / reels (1080×1920)",
           "description": "Κάθετη μορφή πλήρους οθόνης (αναλογία 9:16). Χρησιμοποιείται σε stories και reels. Γεμίζει ολόκληρη την οθόνη τηλεφώνου."
         },
-        { "icon": "RiFacebookLine", "title": "Facebook — post (1200×630)", "description": "Βέλτιστη μορφή για posts και κοινοποιημένους συνδέσμους Facebook. Αναλογία κοντά στο 16:9." },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook — post (1200×630)",
+          "description": "Βέλτιστη μορφή για posts και κοινοποιημένους συνδέσμους Facebook. Αναλογία κοντά στο 16:9."
+        },
         {
           "icon": "RiFacebookLine",
           "title": "Facebook — εξώφυλλο σελίδας (820×360)",
           "description": "Φωτογραφία φόντου για επαγγελματική σελίδα Facebook. Ευρεία, πανοραμική μορφή — μπορεί να περικοπεί διαφορετικά σε διάφορες συσκευές."
         },
-        { "icon": "RiLinkedinLine", "title": "LinkedIn — post (1200×1200)", "description": "Τετράγωνη μορφή για posts LinkedIn. Φαίνεται καλά στο feed και σε κινητές συσκευές." },
+        {
+          "icon": "RiLinkedinLine",
+          "title": "LinkedIn — post (1200×1200)",
+          "description": "Τετράγωνη μορφή για posts LinkedIn. Φαίνεται καλά στο feed και σε κινητές συσκευές."
+        },
         {
           "icon": "RiLinkedinLine",
           "title": "LinkedIn — banner προφίλ (1584×396)",
@@ -161,26 +211,38 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Πώς να περικόψετε μια εικόνα",
       "html": "<p class=\"text-mid\">Μετά τον ορισμό διαστάσεων στόχου, εμφανίζεται μια διαδραστική περιοχή περικοπής στην προεπισκόπηση. Το φωτεινό μέρος της εικόνας είναι το τμήμα που θα αποθηκευτεί — το υπόλοιπο είναι σκοτεινό.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Μεταφορά περικοπής</p><p class=\"text-mid mt-1\">Πιάστε τη φωτεινή περιοχή και σύρετέ τη σε οποιοδήποτε μέρος της εικόνας. Έτσι επιλέγετε ποιο τμήμα της φωτογραφίας θα εξαχθεί.</p></div><div><p class=\"text-dark font-semibold\">Αλλαγή μεγέθους μέσω λαβών</p><p class=\"text-mid mt-1\">Στις γωνίες της περιοχής περικοπής υπάρχουν μικρά τετράγωνα (λαβές). Σύροντάς τα αλλάζει το μέγεθος περικοπής — μπορείτε να μεγαλώσετε ή να μικρύνετε διατηρώντας τις επιλεγμένες αναλογίες.</p></div><div><p class=\"text-dark font-semibold\">Zoom</p><p class=\"text-mid mt-1\">Στην καρτέλα <strong>Zoom</strong> θα βρείτε ένα slider για ρύθμιση μεγέθυνσης (100–300%). Υψηλότερη τιμή σημαίνει ότι η περικοπή καλύπτει μικρότερο τμήμα της αρχικής εικόνας — χρήσιμο όταν θέλετε να αποκόψετε μια συγκεκριμένη λεπτομέρεια.</p></div><div><p class=\"text-dark font-semibold\">Ακριβής έλεγχος θέσης</p><p class=\"text-mid mt-1\">Στην καρτέλα <strong>Position</strong> μπορείτε να ορίσετε την ακριβή θέση περικοπής σε ποσοστά (0–100% για τους άξονες X και Y). Τα κουμπιά κεντραρίσματος σας επιτρέπουν να τοποθετήσετε γρήγορα την περικοπή στο κέντρο της εικόνας.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Σχήματα περικοπής",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Ορθογώνιο</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Τετράγωνο</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Κύκλος</span></div></div>",
       "html": "<p class=\"text-mid\">Στην καρτέλα <strong>Crop Shapes</strong>, επιλέγετε το σχήμα της εξαγόμενης εικόνας: ορθογώνιο (με επιλεγμένες αναλογίες), τετράγωνο (επιβάλλει 1:1) ή κύκλο (με διαφανές φόντο).</p><p class=\"text-mid mt-3\">Το σχήμα κύκλου δημιουργεί στρογγυλό avatar με διαφανές φόντο εκτός του κύκλου. Το εργαλείο αλλάζει αυτόματα τη μορφή σε PNG ή WebP, αφού το JPG δεν υποστηρίζει διαφάνεια.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Πλέγμα 3×3 — σε τι χρησιμεύει;",
       "html": "<p class=\"text-mid\">Ένα πλέγμα που χωρίζει την εικόνα σε 9 ίσα μέρη είναι ορατό στην περιοχή περικοπής. Αυτή είναι μια οπτικοποίηση του <strong>κανόνα των τρίτων</strong> — μιας από τις θεμελιώδεις αρχές φωτογραφικής σύνθεσης.</p><p class=\"text-mid mt-3\">Ο κανόνας λέει ότι τα πιο σημαντικά στοιχεία μιας φωτογραφίας (πρόσωπο, προϊόν, σημείο ενδιαφέροντος) πρέπει να τοποθετούνται στις τομές των γραμμών πλέγματος ή κατά μήκος τους. Μια τέτοια σύνθεση είναι πιο δυναμική και ευχάριστη στο μάτι από την τοποθέτηση του θέματος ακριβώς στο κέντρο.</p><p class=\"text-mid mt-3\">Στην καρτέλα <strong>Grid color</strong> μπορείτε να αλλάξετε το χρώμα γραμμών (πράσινο, λευκό, μαύρο, κόκκινο, κίτρινο) ώστε το πλέγμα να είναι ευδιάκριτο σε διαφορετικές εικόνες.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Εξαγωγή — ποια μορφή να επιλέξετε;",
@@ -202,17 +264,36 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Αναλογίες διαστάσεων — τι σημαίνουν;",
       "description": "Η αναλογία διαστάσεων είναι η σχέση μεταξύ πλάτους και ύψους μιας εικόνας. Γράφεται ως δύο αριθμοί χωρισμένοι με άνω-κάτω τελεία:",
       "grid": "two",
       "items": [
-        { "icon": "RiLayoutGridLine", "title": "1:1 (τετράγωνο)", "description": "Πλάτος ίσο με ύψος. Τετράγωνο post Instagram, εικόνες προφίλ, εικονίδια." },
-        { "icon": "RiAspectRatioLine", "title": "4:5 (portrait)", "description": "Ελαφρά κάθετη μορφή. Portrait post Instagram — καταλαμβάνει περισσότερο χώρο στο feed από τετράγωνο." },
-        { "icon": "RiImageLine", "title": "3:2 (κλασικό)", "description": "Παραδοσιακές αναλογίες αναλογικής φωτογραφίας. Πολλές ψηφιακές κάμερες χρησιμοποιούν επίσης αυτή τη μορφή." },
-        { "icon": "RiCropLine", "title": "16:9 (ευρεία οθόνη)", "description": "Τυπική μορφή βίντεο HD, παρουσιάσεων και οθονών. YouTube, βίντεο Facebook, banners ιστοσελίδων." },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "1:1 (τετράγωνο)",
+          "description": "Πλάτος ίσο με ύψος. Τετράγωνο post Instagram, εικόνες προφίλ, εικονίδια."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "4:5 (portrait)",
+          "description": "Ελαφρά κάθετη μορφή. Portrait post Instagram — καταλαμβάνει περισσότερο χώρο στο feed από τετράγωνο."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "3:2 (κλασικό)",
+          "description": "Παραδοσιακές αναλογίες αναλογικής φωτογραφίας. Πολλές ψηφιακές κάμερες χρησιμοποιούν επίσης αυτή τη μορφή."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "16:9 (ευρεία οθόνη)",
+          "description": "Τυπική μορφή βίντεο HD, παρουσιάσεων και οθονών. YouTube, βίντεο Facebook, banners ιστοσελίδων."
+        },
         {
           "icon": "RiInstagramLine",
           "title": "9:16 (κάθετη πλήρης οθόνη)",
@@ -220,7 +301,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Συχνές ερωτήσεις για τον επεξεργαστή εικόνων",
@@ -263,8 +347,17 @@
         }
       ]
     },
-    { "type": "gap", "size": "sm" },
-    { "type": "toolsCarousel", "title": "Εξερευνήστε άλλα εργαλεία" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Εξερευνήστε άλλα εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

@@ -3,7 +3,7 @@
   "locale": "lt",
   "metadata": {
     "title": "Nemokamas spalvų kontrasto tikrintuvas – WCAG 2.1 atitiktis",
-    "description": "Patikrinkite, ar teksto ir fono spalvos yra įskaitomos pagal WCAG 2.1. Įveskite HEX, RGB arba HSL kodą, peržiūrėkite kontrasto santykį ir naudokite automatinį taisymą.",
+    "description": "Patikrinkite, ar teksto ir fono spalvos yra įskaitomos pagal WCAG 2.1. Įveskite HEX, RGB arba HSL kodą, peržiūrėkite kontrasto santykį ir naudokite automatinį.",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/lt/irankiai/spalvu-kontrasto-tikrintuvas"
   },

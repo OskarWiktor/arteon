@@ -2,8 +2,8 @@
   "toolKey": "paletteExtractor",
   "locale": "el",
   "metadata": {
-    "title": "Δωρεάν Εξαγωγή Χρωμάτων από Εικόνα – Παλέτα από Οποιαδήποτε Φωτογραφία",
-    "description": "Ανεβάστε φωτογραφία ή λογότυπο και εξάγετε έως 12 κυρίαρχα χρώματα με κωδικούς HEX και RGB. Ιδανικό για UI, branding και κοινωνικά δίκτυα. Χωρίς εγγραφή, χωρίς όρια.",
+    "title": "Δωρεάν Εξαγωγή Χρωμάτων από Εικόνα – Παλέτα από",
+    "description": "Ανεβάστε φωτογραφία ή λογότυπο και εξάγετε έως 12 κυρίαρχα χρώματα με κωδικούς HEX και RGB. Ιδανικό για UI, branding και κοινωνικά δίκτυα.",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/el/ergaleia/exagogi-chromaton-apo-eikona"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/el/ergaleia", "label": "Εργαλεία" },
-    "third": { "href": "/el/ergaleia/exagogi-chromaton-apo-eikona", "label": "Εξαγωγή χρωμάτων από εικόνα" }
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/exagogi-chromaton-apo-eikona",
+      "label": "Εξαγωγή χρωμάτων από εικόνα"
+    }
   },
   "schemas": {
     "software": {
@@ -37,42 +43,69 @@
       "name": "Πώς να εξάγετε χρώματα από φωτογραφία ή εικόνα",
       "description": "Πώς να εξάγετε κυρίαρχα χρώματα από φωτογραφία ή λογότυπο. Ανεβάστε εικόνα σε μορφή PNG, JPG ή SVG και το εργαλείο θα δημιουργήσει παλέτα έως 12 χρωμάτων με κωδικούς HEX.",
       "steps": [
-        { "name": "Ανεβάστε εικόνα", "text": "Σύρετε αρχείο στην καθορισμένη περιοχή ή επιλέξτε εικόνα από τη συσκευή σας. Υποστηριζόμενες μορφές: PNG, JPG και SVG." },
-        { "name": "Περιμένετε την ανάλυση", "text": "Το εργαλείο θα αναλύσει αυτόματα την εικόνα και θα εξάγει τα κυρίαρχα χρώματα." },
-        { "name": "Αντιγράψτε χρώματα", "text": "Δίπλα σε κάθε χρώμα θα βρείτε κουμπί αντιγραφής — ο κωδικός HEX αντιγράφεται στο clipboard του συστήματός σας." }
+        {
+          "name": "Ανεβάστε εικόνα",
+          "text": "Σύρετε αρχείο στην καθορισμένη περιοχή ή επιλέξτε εικόνα από τη συσκευή σας. Υποστηριζόμενες μορφές: PNG, JPG και SVG."
+        },
+        {
+          "name": "Περιμένετε την ανάλυση",
+          "text": "Το εργαλείο θα αναλύσει αυτόματα την εικόνα και θα εξάγει τα κυρίαρχα χρώματα."
+        },
+        {
+          "name": "Αντιγράψτε χρώματα",
+          "text": "Δίπλα σε κάθε χρώμα θα βρείτε κουμπί αντιγραφής — ο κωδικός HEX αντιγράφεται στο clipboard του συστήματός σας."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Γιατί να εξάγετε χρώματα από εικόνα;",
       "html": "<p class=\"mb-4\">Κάθε φωτογραφία, λογότυπο ή γραφικό περιέχει χρώματα που μπορούν να χρησιμεύσουν ως έτοιμη παλέτα χρωμάτων. Ο εξαγωγέας αναλύει την εικόνα και δείχνει ποια χρώματα κυριαρχούν — μαζί με κωδικούς HEX και τιμές RGB έτοιμες για επικόλληση στο έργο σας.</p><p class=\"mb-4\">Στην πράξη, αυτό σημαίνει ότι αντί να δειγματίζετε χειροκίνητα χρώματα σε εφαρμογή γραφικών (pixel ανά pixel), ανεβάζετε μια εικόνα και λαμβάνετε οργανωμένη λίστα έως 12 χρωμάτων. Αυτό είναι χρήσιμο κατά την επιλογή χρωμάτων για ιστοσελίδα, τη δημιουργία συνεπών γραφικών κοινωνικών δικτύων ή την ανάπτυξη οπτικής ταυτότητας από υπάρχον υλικό.</p><p>Όλη η ανάλυση γίνεται τοπικά στον browser — η εικόνα δεν αποστέλλεται σε κανένα server.</p>"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Πώς να χρησιμοποιήσετε τον εξαγωγέα χρωμάτων",
       "description": "Η όλη διαδικασία διαρκεί μόλις λίγα δευτερόλεπτα:",
       "grid": "three",
       "items": [
-        { "title": "1. Ανεβάστε εικόνα", "description": "Σύρετε αρχείο στην καθορισμένη περιοχή ή επιλέξτε το από τη συσκευή σας. Υποστηριζόμενες μορφές: PNG, JPG και SVG." },
-        { "title": "2. Περιμένετε την ανάλυση", "description": "Το εργαλείο θα αναλύσει αυτόματα την εικόνα και θα εξάγει έως 12 κυρίαρχα χρώματα." },
+        {
+          "title": "1. Ανεβάστε εικόνα",
+          "description": "Σύρετε αρχείο στην καθορισμένη περιοχή ή επιλέξτε το από τη συσκευή σας. Υποστηριζόμενες μορφές: PNG, JPG και SVG."
+        },
+        {
+          "title": "2. Περιμένετε την ανάλυση",
+          "description": "Το εργαλείο θα αναλύσει αυτόματα την εικόνα και θα εξάγει έως 12 κυρίαρχα χρώματα."
+        },
         {
           "title": "3. Αντιγράψτε τα χρώματα που χρειάζεστε",
           "description": "Δίπλα σε κάθε χρώμα υπάρχει κουμπί αντιγραφής — ο κωδικός HEX ή RGB μεταφέρεται στο clipboard και μπορεί να επικολληθεί απευθείας στο έργο σας."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Πώς μοιάζει μια εξαγόμενη παλέτα χρωμάτων;",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Παράδειγμα χρωμάτων που εξήχθησαν από εικόνα φύσης</p></div>",
       "html": "<p class=\"text-mid mb-4\">Μετά την αποστολή εικόνας, ο εξαγωγέας εμφανίζει λίστα κυρίαρχων χρωμάτων ταξινομημένων από τα πιο εμφανή στα λιγότερο εμφανή. Κάθε χρώμα δείχνει τον κωδικό HEX και την τιμή RGB — έτοιμα για επικόλληση σε CSS, Figma ή οποιαδήποτε εφαρμογή γραφικών.</p><p class=\"text-mid\">Ο αριθμός των εξαγόμενων χρωμάτων εξαρτάται από το περιεχόμενο της εικόνας. Μια φωτογραφία τοπίου θα δώσει πλουσιότερη παλέτα (8–12 χρώματα), ενώ ένα απλό λογότυπο δύο χρωμάτων θα δώσει αντίστοιχα λιγότερα στοιχεία.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Ποιες εικόνες δίνουν τα καλύτερα αποτελέσματα στον εξαγωγέα χρωμάτων;",
@@ -101,7 +134,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTimeline",
       "title": "Πώς λειτουργεί η εξαγωγή χρωμάτων από εικόνα;",
@@ -129,7 +165,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Αντιμετώπιση προβλημάτων εξαγωγέα χρωμάτων",
@@ -157,7 +196,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Τι κάνει αυτόν τον εξαγωγέα χρωμάτων ξεχωριστό;",
@@ -185,7 +227,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Πού να χρησιμοποιήσετε χρώματα εξαγόμενα από εικόνα",
@@ -209,11 +254,14 @@
         {
           "icon": "RiSearchEyeLine",
           "title": "Επέκταση υπάρχουσας παλέτας",
-          "description": "Ένα εξαγόμενο βασικό χρώμα μπορεί να χρησιμοποιηθεί στη <a href=\"/el/ergaleia/color-palette-generator\">γεννήτρια παλέτας χρωμάτων</a> για τη δημιουργία πλήρους σετ αρμονικών χρωμάτων βασισμένων στη θεωρία χρωμάτων."
+          "description": "Ένα εξαγόμενο βασικό χρώμα μπορεί να χρησιμοποιηθεί στη <a href=\"/el/ergaleia/dimiourgia-paletas-chromaton\">γεννήτρια παλέτας χρωμάτων</a> για τη δημιουργία πλήρους σετ αρμονικών χρωμάτων βασισμένων στη θεωρία χρωμάτων."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Συχνές ερωτήσεις για τον εξαγωγέα χρωμάτων εικόνας",
@@ -251,8 +299,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Εξερευνήστε άλλα εργαλεία" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Εξερευνήστε άλλα εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

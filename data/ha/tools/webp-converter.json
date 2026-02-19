@@ -3,7 +3,7 @@
   "locale": "ha",
   "metadata": {
     "title": "Mai Canza JPG/PNG zuwa WebP Kyauta – Ba Iyaka, Ba Đorawa",
-    "description": "Rage girman hoto har zuwa 35% ba tare da asarar inganci ba. Ana yin canza JPG da PNG zuwa WebP a cikin na'urar ka – fayiloli ba sa barin na'urar ka. Ba buƙatar rajista, ba iyaka.",
+    "description": "Rage girman hoto har zuwa 35% ba tare da asarar inganci ba. Ana yin canza JPG da PNG zuwa WebP a cikin na'urar ka – fayiloli ba sa barin na'urar ka.",
     "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
     "path": "/ha/kayan-aiki/mai-canza-jpg-png-zuwa-webp"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/ha/kayan-aiki", "label": "Kayan Aiki" },
-    "third": { "href": "/ha/kayan-aiki/mai-canza-jpg-png-zuwa-webp", "label": "Mai canza JPG/PNG zuwa WebP" }
+    "second": {
+      "href": "/ha/kayan-aiki",
+      "label": "Kayan Aiki"
+    },
+    "third": {
+      "href": "/ha/kayan-aiki/mai-canza-jpg-png-zuwa-webp",
+      "label": "Mai canza JPG/PNG zuwa WebP"
+    }
   },
   "schemas": {
     "software": {
@@ -38,58 +44,100 @@
       "name": "Yadda ake canza JPG da PNG zuwa WebP ta yanar gizo",
       "description": "Yadda ake canza hotunan JPG da PNG zuwa tsarin WebP. Saitin inganci (60–95%), tsarin Smart Quality, da sauke fayiloli da aka canza a matsayin ZIP.",
       "steps": [
-        { "name": "Ƙara fayiloli don canzawa", "text": "Ja hotunan JPG ko PNG zuwa wurin da aka kebantar ko zaɓi fayiloli daga na'urar ka. Za ka iya ƙara fayiloli da yawa a lokaci guda." },
-        { "name": "Saita matakin inganci", "text": "Zaɓi ingancin fayil na WebP ta amfani da mai zamewa (60–95%). Ƙimar asali na 80% kyakkyawan daidaito ne tsakanin inganci da girma." },
-        { "name": "Fara canzawa", "text": "Bayan fara canzawa, kayan aikin zai sarrafa dukan fayiloli a cikin jerin kuma ya yi amfani da Smart Quality ta atomatik." },
-        { "name": "Sauke fayiloli da aka canza", "text": "Ana iya sauke fayiloli da aka canza ɗaya-ɗaya ko duka a lokaci guda a matsayin ma'ajiyar ZIP." }
+        {
+          "name": "Ƙara fayiloli don canzawa",
+          "text": "Ja hotunan JPG ko PNG zuwa wurin da aka kebantar ko zaɓi fayiloli daga na'urar ka. Za ka iya ƙara fayiloli da yawa a lokaci guda."
+        },
+        {
+          "name": "Saita matakin inganci",
+          "text": "Zaɓi ingancin fayil na WebP ta amfani da mai zamewa (60–95%). Ƙimar asali na 80% kyakkyawan daidaito ne tsakanin inganci da girma."
+        },
+        {
+          "name": "Fara canzawa",
+          "text": "Bayan fara canzawa, kayan aikin zai sarrafa dukan fayiloli a cikin jerin kuma ya yi amfani da Smart Quality ta atomatik."
+        },
+        {
+          "name": "Sauke fayiloli da aka canza",
+          "text": "Ana iya sauke fayiloli da aka canza ɗaya-ɗaya ko duka a lokaci guda a matsayin ma'ajiyar ZIP."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Menene WebP kuma me ya sa ake canza hotuna?",
       "html": "<p class=\"mb-4\">WebP tsarin hoto ne da Google ya ƙirƙira wanda ke ba da damar rage girman fayilolin hoto har zuwa 25–35% idan aka kwatanta da JPG da PNG - yayin kiyaye ingancin gani mai kama. Ƙananan fayiloli suna nufin saurin lodi na shafi, wanda ke fassarawa zuwa ingantaccen gogayya na mai amfani da ƙarin maki a cikin <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"mb-4\">Dukan browsers na zamani suna tallafawa tsarin WebP: Chrome, Firefox, Safari (daga sigar 14), da Edge. Idan kana gudanar da gidan yanar gizo, shagon kan layi, ko blog, canza hotuna zuwa WebP ɗaya ne daga cikin hanyoyin mafi sauƙi don inganta aikin shafi.</p><p>Mai canza yana tallafawa hotunan JPG da zane-zanen PNG (ciki har da waɗanda ke da gaskiya). Za ka iya canza fayiloli kowace iri a lokaci guda - ana sarrafa duka a cikin browser na gida, ba tare da aika zuwa sabar ba.</p>"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Yadda ake canza hotuna zuwa WebP",
       "description": "Canza zuwa WebP yana ɗaukar 'yan daƙiƙu kaɗan kawai:",
       "grid": "three",
       "items": [
-        { "title": "1. Ƙara fayiloli", "description": "Ja hotunan JPG ko PNG zuwa wurin da aka kebantar ko zaɓi fayiloli daga na'urar ka. Za ka iya ƙara fayiloli ko kowace iri a lokaci guda." },
-        { "title": "2. Saita inganci", "description": "Zaɓi matakin inganci (asali 80%). Ƙaramin ƙima yana nufin ƙaramin fayil. Don yawancin amfani, 80% shine saitin da ya fi dacewa." },
-        { "title": "3. Sauke WebP", "description": "Bayan canzawa, sauke fayiloli ɗaya-ɗaya ko a matsayin ma'ajiyar ZIP. Kowane fayil yana nuna bayanin sararin da aka ajiye." }
+        {
+          "title": "1. Ƙara fayiloli",
+          "description": "Ja hotunan JPG ko PNG zuwa wurin da aka kebantar ko zaɓi fayiloli daga na'urar ka. Za ka iya ƙara fayiloli ko kowace iri a lokaci guda."
+        },
+        {
+          "title": "2. Saita inganci",
+          "description": "Zaɓi matakin inganci (asali 80%). Ƙaramin ƙima yana nufin ƙaramin fayil. Don yawancin amfani, 80% shine saitin da ya fi dacewa."
+        },
+        {
+          "title": "3. Sauke WebP",
+          "description": "Bayan canzawa, sauke fayiloli ɗaya-ɗaya ko a matsayin ma'ajiyar ZIP. Kowane fayil yana nuna bayanin sararin da aka ajiye."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Yadda ake ƙara fayiloli don canzawa",
       "html": "<p class=\"text-mid\">Kayan aikin yana ba da hanyoyi biyu don ƙara fayiloli:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Ja da sauke</strong> - ɗauki fayiloli daga babban fayil a kan kwamfutar ka kuma ka jefa su a kan yankin da aka lakafta &quot;Ja kuma sauke hotuna a nan&quot;. Za ka iya jan fayiloli da yawa a lokaci guda.</li><li><strong>Zaɓi daga na'ura</strong> - danna wurin ɗora fayil yana buɗe tattaunawar zaɓi. Riƙe Ctrl (ko Cmd akan Mac) yana ba ka damar zaɓar fayiloli da yawa a lokaci guda.</li></ul><p class=\"text-mid mt-3\">Kayan aikin yana karɓar fayilolin JPG da PNG kawai. Idan ka ƙara fayil a cikin wani tsari ba da gangan ba (misali, GIF ko BMP), za a tsallake shi ta atomatik kuma za ka ga saƙon bayani.</p><p class=\"text-mid mt-3\"><strong>Sirri:</strong> Ana sarrafa dukan fayiloli a cikin browser na gida. Ba a aika su ko'ina ba - ba sa zuwa kowane sabar. Bayan rufe shafin ko browser, ana cire fayiloli daga ƙwaƙwalwa.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Menene ma'anar matsayin fayiloli?",
       "html": "<p class=\"text-mid\">Kowane fayil a cikin jerin yana da ɗaya daga cikin matsayi huɗu da ke nuna ci gaban canzawa:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Ana jira</span><p class=\"text-mid\">Fayil yana cikin jerin kuma yana jiran a sarrafa shi. Canzawa bai fara ba tukuna.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Ana sarrafa…</span><p class=\"text-mid\">Ana canza fayil. Don yawancin hotuna wannan yana ɗaukar ɓangaren daƙiƙa, amma manyan fayiloli sosai na iya ɗaukar daƙiƙu da yawa.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">An gama</span><p class=\"text-mid\">An kammala canzawa cikin nasara. Fayil na WebP yana shirye don saukewa. Kusa da matsayin za ka kuma ga girma kafin da bayan canzawa.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Kuskure</span><p class=\"text-mid\">Wani abu ya yi kuskure yayin canzawa. Wannan na iya zama fayil na tushe da ya lalace ko matsalar ƙwaƙwalwar browser tare da manyan hotuna sosai. Maɓallin &quot;Sake gwadawa&quot; yana ba ka damar sake gwadawa.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Yaya Smart Quality ke aiki?",
       "html": "<p class=\"text-mid\">Smart Quality tsari ne na inganta ta atomatik da ke tabbatar da fayil na WebP da aka samar ba zai taɓa zama mafi girma daga na asali ba. Yana aiki kamar haka:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>Kayan aikin yana canza hoton a ingancin da ka saita (misali, 80%).</li><li>Yana duba ko fayil da ya samo ya fi ƙanƙanta daga na asali.</li><li>Idan ya fi girma, yana rage inganci ta atomatik kuma ya sake gwadawa.</li><li>Tsarin yana maimaita har sai fayil da aka samar ya fi ƙanƙanta ko inganci ya faɗi ƙasa da mafi ƙarancin aminci.</li></ol><p class=\"text-mid mt-3\">Kayan aikin yana zaɓar saitin da suka fi dacewa ta atomatik. Idan kana da hoton da aka riga aka matse sosai (misali, JPG a ingancin 60%), za a daidaita sigogin ta atomatik don ci gaba da samun rage girma.</p><p class=\"text-mid mt-3\">Kusa da kowane fayil za ka ga &quot;Ingancin WebP da aka yi amfani da shi&quot; - wannan shine ingancin gaske da aka yi amfani da shi bayan duk wani daidaitawar Smart Quality.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Saitin inganci - menene za a zaɓa?",
       "demoHtml": "<div class=\"space-y-4\"><div><p class=\"text-dark mb-2 text-sm! font-medium uppercase\">Saita inganci</p><div class=\"flex items-center\"><input type=\"range\" min=\"60\" max=\"95\" value=\"80\" class=\"flex-1\" disabled><span class=\"text-mid w-12 text-right text-sm!\">80%</span></div><span class=\"text-light mt-1 block text-xs\">Babban ƙima = inganci mafi kyau, fayil mafi girma</span></div><div class=\"flex items-center\"><input type=\"checkbox\" checked class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Sauke ta atomatik bayan canzawa</span></div><div class=\"ml-6 flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Sauke ɗaya-ɗaya</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Sauke a matsayin ZIP</span></div></div>",
       "html": "<p class=\"text-mid\">Mai zamewan inganci yana ba ka damar saita ƙima daga 60% zuwa 95%. Babban ƙima yana nufin ingancin hoto mafi kyau amma kuma girman fayil mafi girma.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (asali)</strong> - kyakkyawan daidaito don yawancin amfani.</li><li><strong>85–90%</strong> - don hotunan kayan da portfolios na daukar hoto.</li><li><strong>60–70%</strong> - lokacin da rage girman fayil shine fifiko.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Yadda ake sauke fayiloli da aka canza",
@@ -97,19 +145,28 @@
       "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-medium text-white\">Canza</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Sauke duka</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Sauke a matsayin ZIP</span></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Haɗa rahoton CSV a cikin ZIP</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Girman shigarwa: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Girma bayan canzawa: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">An ajiye: <strong class=\"text-success-icon\">1.5 MB (~63%)</strong></p></div></div>",
       "html": "<p class=\"text-mid\">Bayan an kammala canzawa, kana da zaɓuɓɓukan saukewa da yawa:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Sauke</strong> (kusa da kowane fayil) - yana sauke fayil guda ɗaya na WebP.</li><li><strong>Sauke duka</strong> - yana sauke dukan fayiloli ɗaya bayan ɗaya.</li><li><strong>Sauke a matsayin ZIP</strong> - yana ƙirƙirar ma'ajiya tare da dukan fayiloli.</li></ul><p class=\"text-mid mt-3\"><strong>Zaɓin rahoton CSV:</strong> Haɗa rahoton taƙaitaccen canzawa a cikin ma'ajiyar ZIP.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Rahoton ajiya - menene ke nunawa?",
       "html": "<p class=\"text-mid\">Ƙasan maɓallan canzawa za ka sami taƙaitaccen bayani tare da bayanan ajiya:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Jimlar girman shigarwa</strong> - jimlar girman dukan fayilolin asali.</li><li><strong>Jimlar girma bayan canzawa</strong> - jimlar girman dukan fayilolin WebP.</li><li><strong>An ajiye</strong> - nawa sarari ka samu ta hanyar canzawa (a cikin KB/MB da kashi).</li></ul><p class=\"text-mid mt-3\"><strong>Kwafa taƙaitaccen bayani:</strong> Maɓallin yana kwafa rahoton zuwa clipboard a cikin tsarin rubutu. Za ka iya liƙa shi a cikin bayanan kula, imel, ko takardu - yana da amfani don rubuta inganta hoto.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Nawa za ka iya ajiyewa ta hanyar canza zuwa WebP?",
       "html": "<p class=\"mb-4\">Ajiya ya dogara da nau'in hoto da matakin matsar sa na asali. A ƙasa akwai sakamakon misali don fayiloli na yau da kullum:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Hoton JPG (kyamara)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ajiya: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Zanen PNG (alama)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ajiya: ~75%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Hoton kayan</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ajiya: ~63%</p></div></div><p class=\"text-light mt-4 text-sm\">Ajiyar gaske na iya bambanta. Mai canza yana nuna daidaitaccen girma kafin da bayan canzawa don kowane fayil, da kuma taƙaitaccen jimlar ajiya.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Menene ke sa mai canza JPG/PNG zuwa WebP ya bambanta?",
@@ -137,7 +194,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Abubuwan da ya kamata a tuna",
@@ -166,21 +226,47 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Yaushe ne ya cancanta a canza hotuna zuwa WebP?",
       "description": "Canza zuwa WebP yana kawo fa'ida a kusan kowane hali lokacin da ake nuna hotuna a cikin browser:",
       "grid": "two",
       "items": [
-        { "icon": "RiBuilding2Line", "title": "Gidajen yanar gizo na kasuwanci", "description": "Saurin lodi yana inganta ra'ayi na farko kuma yana rage yawan ficewa." },
-        { "icon": "RiShoppingCartLine", "title": "Shaguna ta yanar gizo", "description": "Hotunan kayan yawanci sune manyan fayiloli a kan shafi; inganta su yana hanzarta dukan shagon." },
-        { "icon": "RiArticleLine", "title": "Blogogi da kofofi", "description": "Labarai masu hotuna da yawa suna lodi da sauri sosai." },
-        { "icon": "RiCameraLine", "title": "Portfolios na daukar hoto", "description": "A ingancin 85–90%, bambancin gani ba a gane shi ba, kuma fayiloli sun fi ƙanƙanta." },
-        { "icon": "RiSmartphoneLine", "title": "Aikace-aikacen yanar gizo (PWA)", "description": "Ƙananan kayan suna nufin saurin aiki, musamman a kan na'urorin hannu." }
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Gidajen yanar gizo na kasuwanci",
+          "description": "Saurin lodi yana inganta ra'ayi na farko kuma yana rage yawan ficewa."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Shaguna ta yanar gizo",
+          "description": "Hotunan kayan yawanci sune manyan fayiloli a kan shafi; inganta su yana hanzarta dukan shagon."
+        },
+        {
+          "icon": "RiArticleLine",
+          "title": "Blogogi da kofofi",
+          "description": "Labarai masu hotuna da yawa suna lodi da sauri sosai."
+        },
+        {
+          "icon": "RiCameraLine",
+          "title": "Portfolios na daukar hoto",
+          "description": "A ingancin 85–90%, bambancin gani ba a gane shi ba, kuma fayiloli sun fi ƙanƙanta."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Aikace-aikacen yanar gizo (PWA)",
+          "description": "Ƙananan kayan suna nufin saurin aiki, musamman a kan na'urorin hannu."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Tambayoyin da ake yawan yi game da mai canza WebP",
@@ -223,8 +309,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Bincika sauran kayan aiki" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Bincika sauran kayan aiki"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

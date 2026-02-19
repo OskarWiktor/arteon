@@ -3,7 +3,7 @@
   "locale": "no",
   "metadata": {
     "title": "Gratis QR-kode-generator – PNG og SVG, uten registrering",
-    "description": "Opprett en QR-kode for en nettside, vCard, meny eller flyer på noen sekunder. Eksporter til PNG og SVG. Tilpass farger og størrelse. Uten registrering.",
+    "description": "Opprett en QR-kode for en nettside, vCard, meny eller flyer på noen sekunder. Eksporter til PNG og SVG. Tilpass farger og størrelse.",
     "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
     "path": "/no/verktoy/gratis-qr-kode-generator"
   },
@@ -201,7 +201,10 @@
       "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Størrelse</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Marg</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Kodefarge</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Bakgrunnsfarge</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
       "html": "<p class=\"text-mid mb-4\">Generatoren lar deg tilpasse flere parametere som påvirker kodens utseende og lesbarhet:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Størrelse (px)</strong> – kodens dimensjon i piksler. For standardtrykk (flyers, visittkort) velg 300–500 px. For digital bruk er 150–200 px tilstrekkelig.</li><li><strong>Marg</strong> – det hvite området rundt koden som er nødvendig for korrekt skanning. Anbefalt verdi er 2–4. Verdien 0 kan vanskeliggjøre skanning på mørk bakgrunn.</li><li><strong>QR-kodefarge</strong> – standard er svart (#000000). Du kan endre til en hvilken som helst mørk farge som passer til den visuelle identiteten.</li><li><strong>Bakgrunnsfarge</strong> – standard er hvit (#ffffff). Du kan endre til en hvilken som helst lys farge. Generatoren advarer hvis kontrasten er for lav.</li></ul><p class=\"text-mid mt-3\"><strong>Tips:</strong> Bevar høy kontrast mellom kode og bakgrunn (minimum 3:1). Mørk kode på lys bakgrunn skannes enklest.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Feilkorreksjonsnivåer – L, M, Q, H",
@@ -293,14 +296,26 @@
           "title": "Minimumsstørrelse",
           "description": "Koden bør være minst 2x2 cm for skanning på kort avstand. Jo større skanningsavstand, desto større må koden være."
         },
-        { "icon": "RiContrastLine", "title": "Kontrast", "description": "Mørk kode på lys bakgrunn. Unngå pastellfarger og lav kontrast." },
+        {
+          "icon": "RiContrastLine",
+          "title": "Kontrast",
+          "description": "Mørk kode på lys bakgrunn. Unngå pastellfarger og lav kontrast."
+        },
         {
           "icon": "RiLayoutGridLine",
           "title": "Marg rundt koden",
           "description": "Bevar et tomt område rundt koden. Ikke plasser andre grafiske elementer for nært – margen er nødvendig for korrekt skanning."
         },
-        { "icon": "RiEyeLine", "title": "Testing", "description": "Før massetrykk, test koden på forskjellige telefoner og i forskjellige lysforhold." },
-        { "icon": "RiShieldCheckLine", "title": "Korreksjonsnivå", "description": "For utendørstrykk og materialer utsatt for skader, velg nivå Q eller H." }
+        {
+          "icon": "RiEyeLine",
+          "title": "Testing",
+          "description": "Før massetrykk, test koden på forskjellige telefoner og i forskjellige lysforhold."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Korreksjonsnivå",
+          "description": "For utendørstrykk og materialer utsatt for skader, velg nivå Q eller H."
+        }
       ]
     },
     {

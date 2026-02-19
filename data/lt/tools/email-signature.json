@@ -3,7 +3,7 @@
   "locale": "lt",
   "metadata": {
     "title": "Nemokamas el. pašto parašo generatorius – HTML",
-    "description": "Sukurkite profesionalų HTML el. pašto parašą be programinės įrangos. Pridėkite kontaktinius duomenis, logotipą, socialinių tinklų nuorodas ir nukopijuokite į Gmail ar Outlook.",
+    "description": "Sukurkite profesionalų HTML el. pašto parašą be programinės įrangos. Pridėkite kontaktinius duomenis, logotipą, socialinių tinklų nuorodas ir nukopijuokite į.",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
     "path": "/lt/irankiai/nemokamas-el-pasto-paraso-generatorius"
   },
@@ -138,37 +138,55 @@
       "title": "Kaip pridėti CTA mygtukus?",
       "html": "<p class=\"text-mid\">CTA mygtukas (call-to-action, raginimas veikti) yra paspaudžiamas elementas, nukreipiantis gavėją į pasirinktą puslapį. Tai gali būti nuoroda į susitikimų kalendorių, kontaktinę formą ar pasiūlymą. Generatorius leidžia pridėti du CTA mygtukus.</p><h3 class=\"h5 mt-6 mb-3\">Pagrindinis mygtukas</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Atidarykite skirtuką <strong>Mygtukai</strong> redaktoriuje.</li><li>Skyriuje <strong>Pagrindinis mygtukas</strong> įrašykite tekstą, kurį matys gavėjas, pvz., Rezervuokite nemokamą konsultaciją.</li><li>Lauke <strong>CTA nuoroda</strong> įklijuokite pilną URL adresą prasidedantį https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Antrinis mygtukas</h3><p class=\"text-mid\">Galite pridėti antrą CTA mygtuką outline stiliumi (permatomas fonas su kraštine). Užpildykite laukus analogiškai.</p><h3 class=\"h5 mt-6 mb-3\">Mygtukų apvalumas</h3><p class=\"text-mid\">Mygtukų skirtuko apačioje rasite parinktį <strong>Mygtukų apvalumas</strong>. Trys variantai: Be (aštrūs kampai), Lengvas (šiek tiek apvalinti) arba Pilnas (ovalus mygtukas).</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Kaip pridėti nuorodas į socialinius tinklus?",
       "html": "<p class=\"text-mid\">Skirtuke <strong>Socialiniai tinklai</strong> galite pridėti nuorodas į savo profilius. Generatorius palaiko dvylika platformų: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (anksčiau Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram ir Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Kaip tai padaryti</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Atidarykite skirtuką <strong>Socialiniai tinklai</strong> redaktoriuje.</li><li>Prie kiekvienos platformos rasite URL lauką. Įklijuokite pilną nuorodą į savo profilį.</li><li>Užpildykite tik tuos laukus, kurie jums aktualūs. Tušti laukai paraše nebus rodomi.</li></ol><h3 class=\"h5 mt-6 mb-3\">Socialinių tinklų piktogramos</h3><p class=\"text-mid\">Skirtuko apačioje rasite parinktį <strong>Rodyti piktogramas šalia pavadinimų</strong>. Įjungus nuorodos rodomos kaip spalvotos SVG piktogramos vietoj vien pavadinimų.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Piktogramų dydis</strong> – pasirinkimai: Mažos (16 px), Vidutinės (20 px) arba Didelės (24 px).</li><li><strong>Piktogramų spalva</strong> – Platformų spalvos (numatytosios), Akcento spalva (vienoda) arba Teksto spalva.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Išvaizdos pritaikymas",
       "html": "<p class=\"text-mid\">Skirtuke <strong>Išvaizda</strong> galite pritaikyti spalvas, šriftą ir kitus vizualinius elementus.</p><h3 class=\"h5 mt-6 mb-3\">Spalvų temos</h3><p class=\"text-mid\">Skirtuko viršuje rasite penkias iš anksto nustatytas temas: Tamsi, Mėlyna, Violetinė, Žalia ir Pilka. Paspaudus temą automatiškai nustatoma akcento ir teksto spalva.</p><h3 class=\"h5 mt-6 mb-3\">Spalvos</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Akcento spalva</strong> – naudojama šoninėje/viršutinėje juostoje, CTA mygtuke ir nuorodose.</li><li><strong>Teksto spalva</strong> – visų tekstų spalva paraše.</li><li><strong>Fono spalva</strong> – parašo fonas. Numatytoji balta.</li></ul><h3 class=\"h5 mt-6 mb-3\">Šriftas ir dydis</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Šriftas</strong> – pasirinkimai: Arial, Verdana, Tahoma, Trebuchet MS ir Georgia. Visi saugūs el. paštui.</li><li><strong>Teksto dydis</strong> – trys pasirinkimai: Mažas (12 px), Standartinis (14 px) ir Didesnis (16 px).</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Teksto stilius – atskirų elementų spalvos ir dydžiai",
       "html": "<p class=\"text-mid\">Skirtuke <strong>Teksto stilius</strong> galite individualiai pritaikyti kiekvieno tekstinio elemento spalvą ir šrifto dydį.</p><h3 class=\"h5 mt-6 mb-3\">Prieinami elementai</h3><p class=\"text-mid\">Matomi tik tie elementai, kurie šiuo metu yra paraše. Kiekvienam elementui galite nustatyti:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Vardas ir pavardė</strong> – numatytai rodomas akcento spalva.</li><li><strong>Pareigos</strong> – vaidmuo įmonėje.</li><li><strong>Įmonė</strong> – organizacijos pavadinimas.</li><li><strong>Kontaktiniai duomenys</strong> – el. paštas, telefonas, svetainė.</li><li><strong>Socialiniai tinklai</strong> – nuorodos į profilius.</li><li><strong>Teisinė nuostata</strong> – teisinis tekstas apačioje.</li></ul><h3 class=\"h5 mt-6 mb-3\">Kaip pakeisti spalvą?</h3><p class=\"text-mid\">Prie kiekvieno elemento rasite spalvų parinktis. Spustelėkite spalvos kvadratą pasirinkimui. Atstatymo mygtukas grąžina numatytąją spalvą.</p><h3 class=\"h5 mt-6 mb-3\">Kaip pakeisti dydį?</h3><p class=\"text-mid\">Antroje eilutėje rasite dydžio valdymą su mygtukais - ir +. Diapazonas: nuo -4 iki +4 pikselių.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Tarpai tarp elementų",
       "html": "<p class=\"text-mid\">Skirtuke <strong>Tarpai</strong> galite tiksliai valdyti atstumus tarp atskirų parašo elementų.</p><h3 class=\"h5 mt-6 mb-3\">Vidinis paraštė</h3><p class=\"text-mid\">Skirtuko viršuje rasite vidinio paraštės parinktį – atstumą tarp parašo turinio ir jo kraštų. Trys reikšmės: 8 px (mažas), 16 px (vidutinis) ir 24 px (didelis).</p><h3 class=\"h5 mt-6 mb-3\">Tarpai tarp elementų</h3><p class=\"text-mid\">Po paraštės rasite valdiklius atskiriems elementams su mygtukais + ir -.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Po vardo</strong></li><li><strong>Po pareigų / įmonės</strong></li><li><strong>Po papildomos eilutės</strong></li><li><strong>Po kontaktinių duomenų</strong></li><li><strong>Po socialinių tinklų</strong></li><li><strong>Po CTA mygtuko</strong></li><li><strong>Prieš teisinę nuostatą</strong></li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Teisinė nuostata / BDAR – kada pridėti?",
       "html": "<p class=\"text-mid\">Skirtuke <strong>Nuostata / BDAR</strong> galite pridėti teisinį tekstą, kuris bus rodomas parašo apačioje mažesniu šriftu.</p><h3 class=\"h5 mt-6 mb-3\">Kada verta pridėti nuostatą?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Verslo korespondencija</strong> – informacija apie žinutės konfidencialumą ir prašymas ištrinti klaidingai pristatymo atveju.</li><li><strong>Srities reikalavimai</strong> – tam tikros sritys (pvz., teisinė, medicinos, finansų) reikalauja tam tikros informacijos kiekvienoje žinutėje.</li><li><strong>BDAR</strong> – informacija apie asmens duomenų tvarkymą, jei įmonė yra duomenų valdytoja.</li></ul><p class=\"text-mid mt-4\">Numatytai laukas užpildytas pavyzdiniu tekstu. Galite jį redaguoti, ištrinti arba pakeisti sava nuostata.</p><h3 class=\"h5 mt-6 mb-3\">Skirtuva linija</h3><p class=\"text-mid\">Po teksto lauku rasite parinktį <strong>Rodyti skirtuva liniją</strong>. Įjungus pridedama horizontali linija tarp kontaktinių duomenų ir teisinės nuostatos.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Automatinis išsaugojimas ir nustatymų atstatymas",

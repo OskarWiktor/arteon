@@ -78,6 +78,9 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     name: 'Polski',
     toolsBasePath: '/narzedzia',
     toolsIndexHref: '/narzedzia',
+    aboutHref: '/o-nas',
+    contactHref: '/kontakt',
+    privacyHref: '/polityka-prywatnosci',
   },
   en: {
     lang: 'en',

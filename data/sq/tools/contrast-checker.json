@@ -3,7 +3,7 @@
   "locale": "sq",
   "metadata": {
     "title": "Kontrollues kontrasti ngjyrash falas – Përputhje WCAG 2.1",
-    "description": "Kontrolloni nëse ngjyrat e tekstit dhe sfondit janë të lexueshme sipas WCAG 2.1. Shkruani kodin HEX, RGB ose HSL, shikoni raportin e kontrastit dhe përdorni korrigjimin automatik.",
+    "description": "Kontrolloni nëse ngjyrat e tekstit dhe sfondit janë të lexueshme sipas WCAG 2.1. Shkruani kodin HEX, RGB ose HSL, shikoni raportin e kontrastit dhe përdorni.",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/sq/mjetet/kontrollues-kontrasti-ngjyrave"
   },

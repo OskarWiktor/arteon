@@ -2,8 +2,8 @@
   "toolKey": "qrCode",
   "locale": "ha",
   "metadata": {
-    "title": "Mai Samar da Lambar QR Kyauta – PNG & SVG, Ba Buƙatar Rajista",
-    "description": "Ƙirƙiri lambobin QR don gidajen yanar gizo, vCards, menu ko falayen a cikin daƙiƙu. Fitar da a matsayin PNG & SVG. Tsara launuka da girma. Ba buƙatar rajista, ba iyaka.",
+    "title": "Mai Samar da Lambar QR Kyauta – PNG & SVG, Ba Buƙatar",
+    "description": "Ƙirƙiri lambobin QR don gidajen yanar gizo, vCards, menu ko falayen a cikin daƙiƙu. Fitar da a matsayin PNG & SVG. Tsara launuka da girma. Ba buƙatar rajista.",
     "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
     "path": "/ha/kayan-aiki/samar-da-lambar-qr-kyauta"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/ha/kayan-aiki", "label": "Kayan Aiki" },
-    "third": { "href": "/ha/kayan-aiki/samar-da-lambar-qr-kyauta", "label": "Mai samar da lambar QR kyauta" }
+    "second": {
+      "href": "/ha/kayan-aiki",
+      "label": "Kayan Aiki"
+    },
+    "third": {
+      "href": "/ha/kayan-aiki/samar-da-lambar-qr-kyauta",
+      "label": "Mai samar da lambar QR kyauta"
+    }
   },
   "schemas": {
     "software": {
@@ -52,33 +58,63 @@
       "name": "Yadda ake amfani da mai samar da lambar QR kyauta",
       "description": "Yadda ake ƙirƙirar lambar QR don gidan yanar gizo, katin kasuwanci na vCard, imel, ko waya - daga zaɓar nau'in bayanan zuwa sauke fayil da aka shirya don bugu.",
       "steps": [
-        { "name": "Zaɓi nau'in bayanan", "text": "Yanke shawara game da abin da lambar QR ya kamata ta ƙunsa: URL, rubutu, katin kasuwanci (vCard), imel, ko lambar waya." },
-        { "name": "Shigar da bayanai", "text": "Cika filaye masu dacewa. Don URL, shigar da adireshin gidan yanar gizo; don vCard, ba da bayanan tuntubar." },
-        { "name": "Tsara bayyanar", "text": "Zaɓi girma, margin, launukan lambar da baya, da matakin gyaran kuskure." },
-        { "name": "Sauke lambar", "text": "Ana iya sauke lambar QR da aka shirya a matsayin fayil PNG (don bugu da yanar gizo) ko SVG (vector, yana canza girma ba tare da asarar inganci ba)." }
+        {
+          "name": "Zaɓi nau'in bayanan",
+          "text": "Yanke shawara game da abin da lambar QR ya kamata ta ƙunsa: URL, rubutu, katin kasuwanci (vCard), imel, ko lambar waya."
+        },
+        {
+          "name": "Shigar da bayanai",
+          "text": "Cika filaye masu dacewa. Don URL, shigar da adireshin gidan yanar gizo; don vCard, ba da bayanan tuntubar."
+        },
+        {
+          "name": "Tsara bayyanar",
+          "text": "Zaɓi girma, margin, launukan lambar da baya, da matakin gyaran kuskure."
+        },
+        {
+          "name": "Sauke lambar",
+          "text": "Ana iya sauke lambar QR da aka shirya a matsayin fayil PNG (don bugu da yanar gizo) ko SVG (vector, yana canza girma ba tare da asarar inganci ba)."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Menene lambar QR kuma yaya take aiki?",
       "html": "<p class=\"text-mid\">Lambar QR (Quick Response) lambar layi ce ta girma biyu da za a iya duba ta da kyamarar waya. Ba kamar lambobin layi na al'ada ba, lambobin QR suna adana bayanai a kwance da tsaye, wanda ke ba su damar lambar bayanan da suka fi yawa - har zuwa haruffa na alphanumeric kusan 3,000.</p><p class=\"text-mid mt-3\">An ƙirƙiri lambar QR a shekarar 1994 ta kamfanin Japan Denso Wave (wani ɓangare na ƙungiyar Toyota) don bin diddigin sassan motoci. A yau, ana amfani da lambobin QR sosai a cikin talla, masaukin baƙi, kayan aiki, da sadarwar kasuwanci. Sun sami shahara musamman a lokacin annobar COVID-19, lokacin da gidajen abinci suka fara maye gurbin menu na takarda da lambobin QR.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Yadda ake amfani da mai samar da lambar QR kyauta",
       "description": "Ƙirƙirar lambar QR yana ɗaukar 'yan daƙiƙu kaɗan kawai:",
       "grid": "three",
       "items": [
-        { "title": "1. Zaɓi nau'in bayanan", "description": "Zaɓi abin da kake son lambar: URL, rubutu, katin kasuwanci na vCard, imel, ko lambar waya." },
-        { "title": "2. Shigar da bayanai", "description": "Cika filaye masu dacewa - adireshin gidan yanar gizo, bayanan tuntubar, ko abun cikin saƙo." },
-        { "title": "3. Sauke lambar", "description": "Tsara bayyanar (launuka, girma, margin) kuma sauke a matsayin PNG ko SVG." }
+        {
+          "title": "1. Zaɓi nau'in bayanan",
+          "description": "Zaɓi abin da kake son lambar: URL, rubutu, katin kasuwanci na vCard, imel, ko lambar waya."
+        },
+        {
+          "title": "2. Shigar da bayanai",
+          "description": "Cika filaye masu dacewa - adireshin gidan yanar gizo, bayanan tuntubar, ko abun cikin saƙo."
+        },
+        {
+          "title": "3. Sauke lambar",
+          "description": "Tsara bayyanar (launuka, girma, margin) kuma sauke a matsayin PNG ko SVG."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Nau'ikan lambar QR - URL, vCard, imel, waya, rubutu",
@@ -100,18 +136,32 @@
           "title": "Katin kasuwanci na vCard",
           "description": "Katin kasuwanci na dijital mai bayanan tuntubar (suna, kamfani, waya, imel, adireshi). Bayan duba, waya tana ba da shawarar ajiye lambar. Cikakke don katin kasuwanci na ƙwararru."
         },
-        { "icon": "RiMailLine", "title": "Imel", "description": "Adireshin imel tare da batu da jikin zaɓi. Bayan duba, waya tana buɗe aikace-aikacen wasiƙa tare da tsarin da aka cika tukuna." },
-        { "icon": "RiPhoneLine", "title": "Waya", "description": "Lambar waya. Bayan duba, waya tana ba da shawarar yin kira. Yana da amfani don layukan zafi da tallafin abokin ciniki." }
+        {
+          "icon": "RiMailLine",
+          "title": "Imel",
+          "description": "Adireshin imel tare da batu da jikin zaɓi. Bayan duba, waya tana buɗe aikace-aikacen wasiƙa tare da tsarin da aka cika tukuna."
+        },
+        {
+          "icon": "RiPhoneLine",
+          "title": "Waya",
+          "description": "Lambar waya. Bayan duba, waya tana ba da shawarar yin kira. Yana da amfani don layukan zafi da tallafin abokin ciniki."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Bayanan fasaha na lambar QR",
       "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Ƙarfi</span><span class=\"text-mid text-sm!\">har zuwa haruffa 4,296</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Gyaran kuskure</span><span class=\"text-mid text-sm!\">7% – 30%</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Ƙaramin girman bugu</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Ƙaramin bambanci</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margin</span><span class=\"text-mid text-sm!\">aƙalla modules 4</span></div></div>",
       "html": "<p class=\"text-mid mb-4\">Sanin sigogin fasaha yana taimakawa wajen ƙirƙirar lambobin QR da za a iya karantawa a cikin duk yanayi:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Ƙarfin bayanai</strong> - lambar QR na iya ɗaukar lambobi har zuwa 7,089, haruffa na alphanumeric 4,296, ko bytes na binary 2,953. A aikace, wannan ya fi isasshe don URLs da katin kasuwanci.</li><li><strong>Gyaran kuskuren Reed-Solomon</strong> - algorithm na lissafi da ke ba da damar karanta lambar ko da wani ɓangare ya lalace ko an rufe shi. Matakan: L (7%), M (15%), Q (25%), H (30%).</li><li><strong>Margin</strong> - yankin fari a kusa da lambar da ake buƙata don ingantaccen duba. Mafi ƙarancin da ake ba da shawara shi ne modules 4 (sassan lambar).</li><li><strong>Ƙaramin girman bugu</strong> - don yanayin duba na al'ada, ya kamata lambar ta kasance aƙalla 2×2 cm. Don bugu mai girma (tutoci, allunan talla), ƙara girma daidai.</li><li><strong>Bambanci</strong> - rabo na bambanci tsakanin lambar da baya ya kamata ya kasance aƙalla 3:1. Mai samar yana gargaɗi ta atomatik game da bambancin da ya yi ƙaranci.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Amfanin lambar QR - katin kasuwanci, falayen, menu na gidan abinci",
@@ -128,20 +178,47 @@
           "title": "Menu na gidan abinci da cafe",
           "description": "Lambar QR a kan tebur tana kai zuwa menu na dijital. Mafita mai tsabta da ta sami shahara tun daga annobar COVID-19."
         },
-        { "icon": "RiPrinterLine", "title": "Falayen da fastoci", "description": "Lambar QR tare da hanyar haɗi zuwa shafin kayan, tsarin rajista, ko tayin na musamman." },
-        { "icon": "RiBuilding2Line", "title": "Kunshin kayan", "description": "Hanyar haɗi zuwa jagorar mai amfani, katin garanti, ko gidan yanar gizo na masana'anta." },
-        { "icon": "RiHospitalLine", "title": "Ofisoshin likita", "description": "Lambobin QR a kan katin marasa lafiya da ke haɗawa zuwa mashigin marasa lafiya ko tsarin yin alƙawari." },
-        { "icon": "RiHome4Line", "title": "Gidaje", "description": "Lambobi a kan tutoci da ke haɗawa zuwa cikakken jerin tare da hotunan nunin da cikakkun bayanai." },
-        { "icon": "RiTruckLine", "title": "Rumfuna da dabaru", "description": "Alamomin QR don bin diddigin tarin kayan, wuraren rumfa, da tarihin jigilar kaya." },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Falayen da fastoci",
+          "description": "Lambar QR tare da hanyar haɗi zuwa shafin kayan, tsarin rajista, ko tayin na musamman."
+        },
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Kunshin kayan",
+          "description": "Hanyar haɗi zuwa jagorar mai amfani, katin garanti, ko gidan yanar gizo na masana'anta."
+        },
+        {
+          "icon": "RiHospitalLine",
+          "title": "Ofisoshin likita",
+          "description": "Lambobin QR a kan katin marasa lafiya da ke haɗawa zuwa mashigin marasa lafiya ko tsarin yin alƙawari."
+        },
+        {
+          "icon": "RiHome4Line",
+          "title": "Gidaje",
+          "description": "Lambobi a kan tutoci da ke haɗawa zuwa cikakken jerin tare da hotunan nunin da cikakkun bayanai."
+        },
+        {
+          "icon": "RiTruckLine",
+          "title": "Rumfuna da dabaru",
+          "description": "Alamomin QR don bin diddigin tarin kayan, wuraren rumfa, da tarihin jigilar kaya."
+        },
         {
           "icon": "RiShoppingCartLine",
           "title": "Kasuwanci ta yanar gizo",
           "description": "Lambobi a kan kunshin da ke haɗawa zuwa umarnin mayar da kayan, bita na abokin ciniki, ko shirye-shiryen aminci."
         },
-        { "icon": "RiCalendarEventLine", "title": "Bukukuwa da tarurruka", "description": "Tikiti masu lambobin QR don tabbatar da sauri a ƙofar shiga." }
+        {
+          "icon": "RiCalendarEventLine",
+          "title": "Bukukuwa da tarurruka",
+          "description": "Tikiti masu lambobin QR don tabbatar da sauri a ƙofar shiga."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Tsara bayyanar lambar QR",
@@ -149,32 +226,90 @@
       "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Girma</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margin</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Launin lambar</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Launin baya</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
       "html": "<p class=\"text-mid mb-4\">Mai samar yana ba ka damar tsara sigogin da yawa da ke shafar bayyanar da karanta lambar:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Girma (px)</strong> - girman lambar a cikin pixels. Don bugu na al'ada (falayen, katin kasuwanci) zaɓi 300–500 px. Don amfani da dijital, 150–200 px ya isa.</li><li><strong>Margin</strong> - yankin fari a kusa da lambar da ake buƙata don ingantaccen duba. Ƙimar da ake ba da shawara ita ce 2–4. Ƙimar 0 na iya sa duba ya yi wahala a kan bayan duhu.</li><li><strong>Launin lambar QR</strong> - baƙi ta asali (#000000). Za ka iya canza shi zuwa kowane launin duhu da ya dace da asalin gani na ka.</li><li><strong>Launin baya</strong> - fari ta asali (#ffffff). Za ka iya canza shi zuwa kowane launin haske. Mai samar zai gargaɗi idan bambanci ya yi ƙaranci.</li></ul><p class=\"text-mid mt-3\"><strong>Shawarar:</strong> Kiyaye babban bambanci tsakanin lambar da baya (aƙalla 3:1). Lambar duhu a kan bayan haske tana duba da sauƙi.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Matakan gyaran kuskure - L, M, Q, H",
       "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Ƙasa)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Matsakaici)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Kwata)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (Babba)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
       "html": "<p class=\"text-mid mb-4\">Gyaran kuskure tsari ne da ke ba da damar karanta lambar QR ko da wani ɓangarenta ya lalace, ya ƙazantu, ko an rufe shi. Mai samar yana amfani da algorithm na Reed-Solomon, wanda shine al'ada a cikin lambobin QR.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Ƙasa) - 7%</strong> - mafi ƙarancin sake maimaitawa, lambar ta fi ƙanƙanta. Zaɓi lokacin da za a yi amfani da lambar a cikin yanayi mafi kyau (allo, bugu mai inganci).</li><li><strong>M (Matsakaici) - 15%</strong> - ƙimar asali, kyakkyawan daidaito tsakanin ƙarfi da juriya. Ya dace da yawancin amfani.</li><li><strong>Q (Kwata) - 25%</strong> - babbar juriya ga lalacewa. Zaɓi don lambobi da aka buga a kan kayan da suka saba da ƙazanta.</li><li><strong>H (Babba) - 30%</strong> - mafi girman juriya. Ana ba da shawara don kayan bugu na waje, kunshin, da yanayi inda za a iya rufe wani ɓangaren lambar (misali, alama a tsakiya).</li></ul><p class=\"text-mid mt-3\"><strong>Bayanan kula:</strong> Babban matakin gyara yana nufin lambar ta fi girma kuma ta fi rikitarwa. Tare da yawan bayanai da matakin H, lambar na iya zama mai yawa sosai.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionFeatureComparison",
       "title": "PNG vs SVG - wane tsari za a zaɓa don bugu?",
       "plans": [
-        { "id": "png", "name": "PNG (raster)" },
-        { "id": "svg", "name": "SVG (vector)", "highlighted": true }
+        {
+          "id": "png",
+          "name": "PNG (raster)"
+        },
+        {
+          "id": "svg",
+          "name": "SVG (vector)",
+          "highlighted": true
+        }
       ],
       "features": [
-        { "name": "Gidajen yanar gizo da kafofin watsa labarai", "values": { "png": true, "svg": true } },
-        { "name": "Falayen da katin kasuwanci", "values": { "png": true, "svg": true } },
-        { "name": "Fastoci da tutoci (girma mai girma)", "values": { "png": false, "svg": true } },
-        { "name": "Canza girma ba tare da asarar inganci ba", "values": { "png": false, "svg": true } },
-        { "name": "Gyara a cikin shirin zane", "values": { "png": false, "svg": true } },
-        { "name": "Ƙaramin girman fayil", "values": { "png": false, "svg": true } },
-        { "name": "Gabatarwa", "values": { "png": true, "svg": true } }
+        {
+          "name": "Gidajen yanar gizo da kafofin watsa labarai",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Falayen da katin kasuwanci",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Fastoci da tutoci (girma mai girma)",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Canza girma ba tare da asarar inganci ba",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Gyara a cikin shirin zane",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Ƙaramin girman fayil",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Gabatarwa",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Shawarwarin bugu na lambar QR",
@@ -186,17 +321,32 @@
           "title": "Ƙaramin girma",
           "description": "Ya kamata lambar ta kasance aƙalla 2×2 cm don duba a kusa. Yawan nisan duba, girman lambar da ake buƙata."
         },
-        { "icon": "RiContrastLine", "title": "Bambanci", "description": "Lambar duhu a kan bayan haske. Guje wa launukan pastel da ƙarancin bambanci." },
+        {
+          "icon": "RiContrastLine",
+          "title": "Bambanci",
+          "description": "Lambar duhu a kan bayan haske. Guje wa launukan pastel da ƙarancin bambanci."
+        },
         {
           "icon": "RiLayoutGridLine",
           "title": "Margin a kusa da lambar",
           "description": "Kiyaye sararin fanko a kusa da lambar. Kada ka sanya sauran abubuwan zane kusa sosai - margin yana da muhimmanci don ingantaccen duba."
         },
-        { "icon": "RiEyeLine", "title": "Gwaji", "description": "Kafin bugu da yawa, gwada lambar a kan wayoyin daban-daban kuma a cikin yanayin haske daban-daban." },
-        { "icon": "RiShieldCheckLine", "title": "Matakin gyara", "description": "Don bugu na waje da kayan da suka saba da lalacewa, zaɓi matakin Q ko H." }
+        {
+          "icon": "RiEyeLine",
+          "title": "Gwaji",
+          "description": "Kafin bugu da yawa, gwada lambar a kan wayoyin daban-daban kuma a cikin yanayin haske daban-daban."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Matakin gyara",
+          "description": "Don bugu na waje da kayan da suka saba da lalacewa, zaɓi matakin Q ko H."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Menene ke sa mai samar da lambar QR ya bambanta?",
@@ -222,11 +372,22 @@
           "title": "Matakan gyaran kuskure huɗu",
           "description": "Algorithm na Reed-Solomon yana ba ka damar zaɓar juriyar lambar ga lalacewa - daga 7% (L) zuwa 30% (H). Matakan da suka fi girma suna da amfani don bugu a kan kayan da suka saba da ƙazanta."
         },
-        { "icon": "RiEyeLine", "title": "Duban kai tsaye", "description": "Kana ganin sakamakon nan da nan bayan shigar da bayanai, ba tare da danna &quot;Samar&quot; ba." },
-        { "icon": "RiDownloadLine", "title": "Fitarwa ta PNG da SVG", "description": "Sauke lambar a cikin tsarin da ya dace da amfanin ka." }
+        {
+          "icon": "RiEyeLine",
+          "title": "Duban kai tsaye",
+          "description": "Kana ganin sakamakon nan da nan bayan shigar da bayanai, ba tare da danna &quot;Samar&quot; ba."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Fitarwa ta PNG da SVG",
+          "description": "Sauke lambar a cikin tsarin da ya dace da amfanin ka."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Tambayoyin da ake yawan yi game da mai samar da lambar QR",
@@ -274,8 +435,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Bincika sauran kayan aiki kyauta" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Bincika sauran kayan aiki kyauta"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

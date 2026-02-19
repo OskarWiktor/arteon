@@ -2,8 +2,8 @@
   "toolKey": "imageResize",
   "locale": "bg",
   "metadata": {
-    "title": "Безплатен редактор на изображения – Изрязване, преоразмеряване и конвертиране",
-    "description": "Преоразмерете и изрежете изображения за секунди. Готови шаблони за Instagram, Facebook, LinkedIn. Конвертиране на JPG в WebP. Кръгли аватари. Без регистрация, без ограничения.",
+    "title": "Безплатен редактор на изображения – Изрязване",
+    "description": "Преоразмерете и изрежете изображения за секунди. Готови шаблони за Instagram, Facebook, LinkedIn. Конвертиране на JPG в WebP. Кръгли аватари.",
     "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
     "path": "/bg/instrumenti/redaktor-na-izobrazhenia"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/bg/instrumenti", "label": "Инструменти" },
-    "third": { "href": "/bg/instrumenti/redaktor-na-izobrazhenia", "label": "Редактор на изображения" }
+    "second": {
+      "href": "/bg/instrumenti",
+      "label": "Инструменти"
+    },
+    "third": {
+      "href": "/bg/instrumenti/redaktor-na-izobrazhenia",
+      "label": "Редактор на изображения"
+    }
   },
   "schemas": {
     "software": {
@@ -52,52 +58,91 @@
       "name": "Как да преоразмерите и изрежете изображение за социални мрежи",
       "description": "Как да преоразмерите изображение за Instagram (1080x1080, 1080x1350, стори), Facebook, LinkedIn и OG изображение. Конвертиране от JPG в WebP и създаване на кръгъл аватар.",
       "steps": [
-        { "name": "Добавете изображение", "text": "Плъзнете файл в определената зона или изберете изображение от устройството си. Поддържани формати: JPG, PNG, WebP." },
-        { "name": "Изберете размери или шаблон", "text": "Въведете целеви размери в пиксели или изберете готов формат (напр. Instagram публикация, Facebook корица, OG изображение)." },
-        { "name": "Настройте изрязването", "text": "Преместете и мащабирайте изображението, за да изберете най-добрата област. Светлата зона в прегледа показва точно какво ще бъде запазено." },
-        { "name": "Изберете формат и изтеглете", "text": "Изберете файловия формат (JPG, PNG или WebP), задайте качеството на компресия и изтеглете готовото изображение." }
+        {
+          "name": "Добавете изображение",
+          "text": "Плъзнете файл в определената зона или изберете изображение от устройството си. Поддържани формати: JPG, PNG, WebP."
+        },
+        {
+          "name": "Изберете размери или шаблон",
+          "text": "Въведете целеви размери в пиксели или изберете готов формат (напр. Instagram публикация, Facebook корица, OG изображение)."
+        },
+        {
+          "name": "Настройте изрязването",
+          "text": "Преместете и мащабирайте изображението, за да изберете най-добрата област. Светлата зона в прегледа показва точно какво ще бъде запазено."
+        },
+        {
+          "name": "Изберете формат и изтеглете",
+          "text": "Изберете файловия формат (JPG, PNG или WebP), задайте качеството на компресия и изтеглете готовото изображение."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Преоразмеряване на изображения – изрязване, конвертиране и компресиране в един инструмент",
       "html": "<p class=\"text-mid\">Редакторът на изображения позволява бързо да адаптирате изображения към конкретни размери. Можете да преоразмерите изображение до произволни пикселни размери, да изберете готов формат за социални мрежи или да изрежете част от изображението с прецизно кадриране.</p><p class=\"text-mid mt-3\">Освен преоразмеряване, инструментът предлага конвертиране на формати (JPG, PNG, WebP), създаване на кръгъл аватар и контрол на качеството на компресия.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Как да преоразмерите изображение",
       "description": "Редактирането на изображение отнема само няколко секунди:",
       "grid": "three",
       "items": [
-        { "title": "1. Добавете изображение", "description": "Плъзнете файл в определената зона или изберете изображение от устройството си. Поддържани формати: JPG, PNG, WebP." },
-        { "title": "2. Задайте размери", "description": "Въведете размери в пиксели или изберете готов формат (Instagram, Facebook, YouTube, LinkedIn, OG изображение)." },
-        { "title": "3. Изтеглете", "description": "Настройте изрязването, изберете файловия формат (JPG, PNG, WebP), задайте качеството и изтеглете готовото изображение." }
+        {
+          "title": "1. Добавете изображение",
+          "description": "Плъзнете файл в определената зона или изберете изображение от устройството си. Поддържани формати: JPG, PNG, WebP."
+        },
+        {
+          "title": "2. Задайте размери",
+          "description": "Въведете размери в пиксели или изберете готов формат (Instagram, Facebook, YouTube, LinkedIn, OG изображение)."
+        },
+        {
+          "title": "3. Изтеглете",
+          "description": "Настройте изрязването, изберете файловия формат (JPG, PNG, WebP), задайте качеството и изтеглете готовото изображение."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Как да добавите изображение",
       "html": "<p class=\"text-mid\">Инструментът приема изображения във формати JPG, PNG и WebP. Можете да добавите изображение по два начина:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Плъзгане и пускане</strong> – хванете файл от папка на компютъра и го пуснете върху зоната за качване (зоната с пунктирана рамка).</li><li><strong>Избор от устройство</strong> – кликването върху зоната за качване отваря диалогов прозорец за избор на файл.</li></ul><p class=\"text-mid mt-3\">След добавяне на изображение инструментът автоматично чете оригиналните му размери и показва преглед. След това можете да преминете към настройките за изрязване.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Задайте целеви размери",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Размери в px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Готови формати</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Ширина (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly></div><div><label class=\"text-[14px]! font-medium\">Височина (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span>Запази пропорциите (автоматично второ измерение)</span></label></div></div>",
       "html": "<p class=\"text-mid\">В раздела <strong>Размери в px</strong> въвеждате ширина и височина ръчно. Опцията <strong>Запази пропорциите</strong> автоматично коригира второто измерение.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Размери на изображения за Instagram, Facebook и LinkedIn",
       "html": "<p class=\"text-mid mb-4\">Инструментът включва готови формати с оптимални размери за най-популярните платформи:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Платформа</th><th class=\"py-2 pr-4 font-semibold\">Формат</th><th class=\"py-2 pr-4 font-semibold\">Размери (px)</th><th class=\"py-2 font-semibold\">Съотношение</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Квадратна публикация</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Портретна публикация</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Стори / Рийлс</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Публикация</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Корица на страница</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Публикация</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Банер на профил</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG изображение</td><td class=\"py-2 pr-4\">Споделяне на връзка</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Dimensions in the table are recommended sizes for each platform. The tool automatically sets these dimensions when you select the appropriate format.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Готови формати – кой да изберете?",
@@ -119,13 +164,21 @@
           "title": "Instagram – стори / рийлс (1080×1920)",
           "description": "Пълноекранен вертикален формат (съотношение 9:16). Използва се в сторита и рийлс. Запълва целия екран на телефона."
         },
-        { "icon": "RiFacebookLine", "title": "Facebook – публикация (1200×630)", "description": "Оптимален формат за публикации във Facebook и споделени връзки. Съотношение близко до 16:9." },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook – публикация (1200×630)",
+          "description": "Оптимален формат за публикации във Facebook и споделени връзки. Съотношение близко до 16:9."
+        },
         {
           "icon": "RiFacebookLine",
           "title": "Facebook – корица на страница (820×360)",
           "description": "Фонова снимка за бизнес страница във Facebook. Широк, панорамен формат – може да бъде изрязан различно на различни устройства."
         },
-        { "icon": "RiLinkedinLine", "title": "LinkedIn – публикация (1200×1200)", "description": "Квадратен формат за публикации в LinkedIn. Изглежда добре във фийда и на мобилни устройства." },
+        {
+          "icon": "RiLinkedinLine",
+          "title": "LinkedIn – публикация (1200×1200)",
+          "description": "Квадратен формат за публикации в LinkedIn. Изглежда добре във фийда и на мобилни устройства."
+        },
         {
           "icon": "RiLinkedinLine",
           "title": "LinkedIn – банер на профил (1584×396)",
@@ -141,35 +194,55 @@
           "title": "Графика за статия (1600×900)",
           "description": "Широк формат, подходящ за заглавия на блог статии. Съотношение 16:9, което изглежда добре на страници с много текст."
         },
-        { "icon": "RiAspectRatioLine", "title": "Банер за уебсайт (1920×600)", "description": "Много широк формат за банери на уебсайтове. Работи като фон под заглавия или в секции с оферти." },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Банер за уебсайт (1920×600)",
+          "description": "Много широк формат за банери на уебсайтове. Работи като фон под заглавия или в секции с оферти."
+        },
         {
           "icon": "RiCropLine",
           "title": "Миниатюра за статия (800×600)",
           "description": "По-малък формат за миниатюри в списъци със статии, карусели с продукти или прегледи на резултати от търсене."
         },
-        { "icon": "RiLayoutGridLine", "title": "Герой секция (1920×1080)", "description": "Full HD пълноекранен формат. Използва се като фон на основната секция на начални или офертни страници." }
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Герой секция (1920×1080)",
+          "description": "Full HD пълноекранен формат. Използва се като фон на основната секция на начални или офертни страници."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Как да изрежете изображение",
       "html": "<p class=\"text-mid\">След задаване на целеви размери върху прегледа се появява интерактивна зона за изрязване. Светлата част на изображението е секцията, която ще бъде запазена – останалото е затъмнено.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Плъзгане на изрязването</p><p class=\"text-mid mt-1\">Хванете светлата зона и я плъзнете до всяка част на изображението. По този начин избирате коя секция от снимката ще бъде експортирана.</p></div><div><p class=\"text-dark font-semibold\">Промяна на размера чрез дръжки</p><p class=\"text-mid mt-1\">В ъглите на зоната за изрязване има малки квадратчета (дръжки). Плъзгането им променя размера на изрязването – можете да го увеличите или намалите, запазвайки избраните пропорции.</p></div><div><p class=\"text-dark font-semibold\">Мащабиране</p><p class=\"text-mid mt-1\">В раздела <strong>Мащабиране</strong> ще намерите плъзгач за настройка на мащаба (100–300%). По-висока стойност означава, че изрязването покрива по-малка част от оригиналното изображение – полезно, когато искате да изрежете конкретен детайл.</p></div><div><p class=\"text-dark font-semibold\">Прецизен контрол на позицията</p><p class=\"text-mid mt-1\">В раздела <strong>Позиция</strong> можете да зададете точната позиция на изрязването в проценти (0–100% за осите X и Y). Бутоните за центриране позволяват бързо да позиционирате изрязването в центъра на изображението.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Форми на изрязване",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Правоъгълник</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Квадрат</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Кръг</span></div></div>",
       "html": "<p class=\"text-mid\">В раздела <strong>Форми на изрязване</strong> избирате формата на експортираното изображение: правоъгълник (с избрани пропорции), квадрат (принудително 1:1) или кръг (с прозрачен фон).</p><p class=\"text-mid mt-3\">Формата кръг създава кръгъл аватар с прозрачен фон извън кръга. Инструментът автоматично превключва формата към PNG или WebP, тъй като JPG не поддържа прозрачност.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Мрежа 3×3 – за какво служи?",
       "html": "<p class=\"text-mid\">Върху зоната за изрязване се вижда мрежа, разделяща изображението на 9 равни части. Това е визуализация на <strong>правилото на третините</strong> – един от основните принципи на фотографската композиция.</p><p class=\"text-mid mt-3\">Правилото гласи, че най-важните елементи на снимката (лице, продукт, точка на интерес) трябва да се поставят в пресечните точки на линиите на мрежата или по тях. Такава композиция е по-динамична и приятна за окото в сравнение с поставянето на обекта точно в центъра.</p><p class=\"text-mid mt-3\">В раздела <strong>Цвят на мрежата</strong> можете да промените цвета на линиите (зелен, бял, черен, червен, жълт), за да е мрежата ясно видима върху различни изображения.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Експорт – кой формат да изберете?",
@@ -191,17 +264,36 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Съотношения на страните – какво означават?",
       "description": "Съотношението на страните е взаимоотношението между ширината и височината на изображение. Записва се като две числа, разделени с двоеточие:",
       "grid": "two",
       "items": [
-        { "icon": "RiLayoutGridLine", "title": "1:1 (квадрат)", "description": "Ширината е равна на височината. Instagram квадратна публикация, профилни снимки, икони." },
-        { "icon": "RiAspectRatioLine", "title": "4:5 (портрет)", "description": "Леко вертикален формат. Instagram портретна публикация – заема повече място във фийда от квадратната." },
-        { "icon": "RiImageLine", "title": "3:2 (класически)", "description": "Традиционни пропорции на аналоговата фотография. Много цифрови фотоапарати също използват този формат." },
-        { "icon": "RiCropLine", "title": "16:9 (широкоекранен)", "description": "Стандартен формат за HD видео, презентации и монитори. YouTube, Facebook видео, банери за уебсайтове." },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "1:1 (квадрат)",
+          "description": "Ширината е равна на височината. Instagram квадратна публикация, профилни снимки, икони."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "4:5 (портрет)",
+          "description": "Леко вертикален формат. Instagram портретна публикация – заема повече място във фийда от квадратната."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "3:2 (класически)",
+          "description": "Традиционни пропорции на аналоговата фотография. Много цифрови фотоапарати също използват този формат."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "16:9 (широкоекранен)",
+          "description": "Стандартен формат за HD видео, презентации и монитори. YouTube, Facebook видео, банери за уебсайтове."
+        },
         {
           "icon": "RiInstagramLine",
           "title": "9:16 (вертикален пълноекранен)",
@@ -209,7 +301,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Често задавани въпроси за редактора на изображения",
@@ -252,8 +347,17 @@
         }
       ]
     },
-    { "type": "gap", "size": "sm" },
-    { "type": "toolsCarousel", "title": "Разгледайте другите инструменти" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Разгледайте другите инструменти"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

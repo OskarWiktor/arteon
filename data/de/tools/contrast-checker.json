@@ -3,7 +3,7 @@
   "locale": "de",
   "metadata": {
     "title": "Kostenloser Farbkontrast-Checker – WCAG 2.1",
-    "description": "Prüfen Sie die Lesbarkeit von Text- und Hintergrundfarben gemäß WCAG 2.1. Kontrastverhältnis, AA/AAA-Bewertung und automatische Farbkorrektur. Ohne Anmeldung.",
+    "description": "Prüfen Sie die Lesbarkeit von Text- und Hintergrundfarben gemäß WCAG 2.1. Kontrastverhältnis, AA/AAA-Bewertung und automatische Farbkorrektur.",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/de/werkzeuge/farbkontrast-checker"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/de/werkzeuge", "label": "Werkzeuge" },
-    "third": { "href": "/de/werkzeuge/farbkontrast-checker", "label": "Farbkontrast-Checker" }
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/farbkontrast-checker",
+      "label": "Farbkontrast-Checker"
+    }
   },
   "schemas": {
     "software": {
@@ -44,21 +50,39 @@
       "name": "So prüfen Sie den Farbkontrast gemäß WCAG",
       "description": "Prüfen Sie, ob Ihre Text- und Hintergrundfarben die WCAG 2.1-Anforderungen erfüllen. Geben Sie zwei Farben ein und sehen Sie sofort das Kontrastverhältnis und die Bewertung für AA und AAA.",
       "steps": [
-        { "name": "Textfarbe eingeben", "text": "Geben Sie einen Farbcode (z. B. #333333) im HEX-, RGB- oder HSL-Format ein - oder wählen Sie eine Farbe aus der Farbauswahl." },
-        { "name": "Hintergrundfarbe eingeben", "text": "Geben Sie die Hintergrundfarbe ein, auf der der Text angezeigt wird." },
-        { "name": "Ergebnis ablesen", "text": "Das Tool berechnet das Kontrastverhältnis und zeigt, ob die Farben die WCAG-Anforderungen für normalen Text, großen Text und Symbole erfüllen." },
-        { "name": "Farben anpassen", "text": "Bei zu geringem Kontrast schlägt die Auto-Match-Funktion automatisch eine Farbvariante vor, die den gewählten Schwellenwert erfüllt." }
+        {
+          "name": "Textfarbe eingeben",
+          "text": "Geben Sie einen Farbcode (z. B. #333333) im HEX-, RGB- oder HSL-Format ein - oder wählen Sie eine Farbe aus der Farbauswahl."
+        },
+        {
+          "name": "Hintergrundfarbe eingeben",
+          "text": "Geben Sie die Hintergrundfarbe ein, auf der der Text angezeigt wird."
+        },
+        {
+          "name": "Ergebnis ablesen",
+          "text": "Das Tool berechnet das Kontrastverhältnis und zeigt, ob die Farben die WCAG-Anforderungen für normalen Text, großen Text und Symbole erfüllen."
+        },
+        {
+          "name": "Farben anpassen",
+          "text": "Bei zu geringem Kontrast schlägt die Auto-Match-Funktion automatisch eine Farbvariante vor, die den gewählten Schwellenwert erfüllt."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Warum ist Farblesbarkeit wichtig?",
       "html": "<p class=\"text-mid\">Lesbarkeit hängt vom Helligkeitsunterschied zwischen Text- und Hintergrundfarbe ab. Je größer dieser Unterschied, desto leichter ist der Text zu lesen. Zu geringer Kontrast erschwert das Lesen - besonders für Menschen mit Sehbeeinträchtigungen, ältere Personen oder bei schwierigen Lichtverhältnissen.</p><p class=\"text-mid mt-3\">Laut der <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Weltgesundheitsorganisation (WHO)</a> haben weltweit etwa 2,2 Milliarden Menschen eine Form von Sehbeeinträchtigung.</p><p class=\"text-mid mt-3\">Das Kontrastverhältnis wird nach der <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1-Formel</a> berechnet. Es beschreibt den Helligkeitsunterschied zwischen zwei Farben auf einer Skala von 1:1 (kein Unterschied) bis 21:1 (maximaler Unterschied).</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "So verwenden Sie den Farbkontrast-Checker",
@@ -70,8 +94,16 @@
           "title": "1. Textfarbe eingeben",
           "description": "Geben Sie einen Farbcode (z. B. #333333) im HEX-, RGB- oder HSL-Format ein - oder wählen Sie eine Farbe aus der Farbauswahl."
         },
-        { "icon": "RiPaintBrushLine", "title": "2. Hintergrundfarbe eingeben", "description": "Geben Sie die Hintergrundfarbe ein, auf der der Text angezeigt wird." },
-        { "icon": "RiCheckboxCircleLine", "title": "3. Ergebnis ablesen", "description": "Das Tool berechnet das Kontrastverhältnis und zeigt, ob die Farben die WCAG-Anforderungen erfüllen." },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "2. Hintergrundfarbe eingeben",
+          "description": "Geben Sie die Hintergrundfarbe ein, auf der der Text angezeigt wird."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "3. Ergebnis ablesen",
+          "description": "Das Tool berechnet das Kontrastverhältnis und zeigt, ob die Farben die WCAG-Anforderungen erfüllen."
+        },
         {
           "icon": "RiEqualizerLine",
           "title": "4. Farben anpassen",
@@ -79,7 +111,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Welche Farbformate werden unterstützt?",
@@ -101,7 +136,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "So interpretieren Sie die Ergebnisse",
@@ -109,81 +147,194 @@
       "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800\">Bestanden</span><span class=\"text-mid text-sm!\">Kontrast erfüllt die Anforderung</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-800\">Nicht bestanden</span><span class=\"text-mid text-sm!\">Kontrast ist zu gering</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><p class=\"text-dark text-sm! font-medium\">Kontrastverhältnis</p><p class=\"text-mid mt-1 text-2xl! font-bold\">4.56 : 1</p></div></div>",
       "html": "<p class=\"text-mid mb-4\">Das Tool zeigt das Kontrastverhältnis und die Bewertung für drei Inhaltstypen:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normaler Text</strong> - Standardtext auf der Seite. Minimum: 4,5:1 (AA) oder 7:1 (AAA).</li><li><strong>Großer Text</strong> - Überschriften ab 18pt oder fetter Text ab 14pt. Minimum: 3:1 (AA) oder 4,5:1 (AAA).</li><li><strong>UI-Komponenten und Symbole</strong> - Schaltflächen, Formularfelder, Icons. Minimum: 3:1 (AA).</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Was bedeuten die Ergebnisse des Lesbarkeitstests?",
       "html": "<p class=\"text-mid mb-4\">Das Tool zeigt das Kontrastverhältnis auf einer Skala von 1:1 (kein Kontrast) bis 21:1 (maximaler Kontrast – Schwarz auf Weiß). Das Ergebnis wird mit den im WCAG-Standard definierten Schwellenwerten verglichen:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Normaler Text</strong> – erfordert mindestens 4,5:1 für Level AA (Mindeststandard) oder 7:1 für Level AAA (erweiterter Standard). Gilt für Text unter 18pt (24px) oder unter 14pt (18,5px) fett.</li><li><strong>Großer / fetter Text</strong> – erfordert mindestens 3:1 für Level AA oder 4,5:1 für Level AAA. Gilt für Text ab 18pt (24px) oder ab 14pt (18,5px) fett – Überschriften, Buttons, Hervorhebungen.</li><li><strong>Symbole und UI-Elemente</strong> – erfordern mindestens 3:1 für Level AA. Gilt für Icons, Buttons, Formularfelder und andere Oberflächenelemente, die Informationen vermitteln.</li></ul><p class=\"text-mid mt-3\"><strong>Level AA</strong> ist das Minimum, das von den Barrierefreiheitsvorschriften in vielen Ländern verlangt wird, einschließlich der <a href=\"https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016L2102\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">EU-Richtlinie über die Barrierefreiheit von Websites</a>. <strong>Level AAA</strong> bietet bessere Lesbarkeit, ist aber nicht immer für alle Elemente praktisch umsetzbar.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Automatische Farbanpassung - Match-Funktion",
       "html": "<p class=\"text-mid\">Wenn die gewählte Farbkombination den Kontrastschwellenwert nicht erfüllt, schlägt die Match-Funktion automatisch die nächstliegende Textfarbe vor, die die Anforderung erfüllt. Die vorgeschlagene Farbe bleibt so nah wie möglich am Original.</p><p class=\"text-mid mt-3\">Sie können den Schwellenwert zwischen AA (4,5:1) und AAA (7:1) umschalten, und die Match-Funktion passt die Vorschläge entsprechend an. Dies erleichtert die Suche nach barrierefreien Farbkombinationen, ohne den gewünschten Farbton komplett aufgeben zu müssen.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionFeatureComparison",
       "title": "Was bedeuten die Stufen AA und AAA?",
       "plans": [
-        { "id": "aa", "name": "Level AA (Minimum)", "highlighted": true },
-        { "id": "aaa", "name": "Level AAA (Erweitert)" }
+        {
+          "id": "aa",
+          "name": "Level AA (Minimum)",
+          "highlighted": true
+        },
+        {
+          "id": "aaa",
+          "name": "Level AAA (Erweitert)"
+        }
       ],
       "features": [
-        { "name": "Normaler Text - min. 4,5:1", "values": { "aa": true, "aaa": true } },
-        { "name": "Normaler Text - min. 7:1", "values": { "aa": false, "aaa": true } },
-        { "name": "Großer / fetter Text - min. 3:1", "values": { "aa": true, "aaa": true } },
-        { "name": "Großer / fetter Text - min. 4,5:1", "values": { "aa": false, "aaa": true } },
-        { "name": "Symbole und UI-Elemente - min. 3:1", "values": { "aa": true, "aaa": true } },
-        { "name": "Gesetzlich vorgeschrieben (EU-Richtlinie)", "values": { "aa": true, "aaa": false } },
-        { "name": "Empfohlen für wichtige Inhalte", "values": { "aa": true, "aaa": true } }
+        {
+          "name": "Normaler Text - min. 4,5:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Normaler Text - min. 7:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Großer / fetter Text - min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Großer / fetter Text - min. 4,5:1",
+          "values": {
+            "aa": false,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Symbole und UI-Elemente - min. 3:1",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        },
+        {
+          "name": "Gesetzlich vorgeschrieben (EU-Richtlinie)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Empfohlen für wichtige Inhalte",
+          "values": {
+            "aa": true,
+            "aaa": true
+          }
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Fehlerbehebung beim Farbkontrast-Checker",
       "html": "<h3 class=\"h5 mb-2\">Fehlermeldung zum Farbformat</h3><p class=\"text-mid mb-4\">Überprüfen Sie das Farbformat. Ein HEX-Code muss mit <code class=\"rounded bg-black/5 px-1\">#</code> beginnen und 3 oder 6 Zeichen enthalten (z. B. <code class=\"rounded bg-black/5 px-1\">#fff</code> oder <code class=\"rounded bg-black/5 px-1\">#ffffff</code>). Beim RGB-Format müssen die Werte durch Kommas getrennt sein und im Bereich 0–255 liegen.</p><h3 class=\"h5 mb-2\">Die Match-Funktion findet keine passende Farbe</h3><p class=\"text-mid mb-4\">Wenn Hintergrund und Text eine ähnliche Helligkeit im gleichen Farbton haben, kann der Algorithmus möglicherweise keine Variante finden, die die Anforderungen erfüllt, ohne den Farbton zu ändern. In diesem Fall sollten Sie die Hintergrundfarbe ändern oder eine ganz andere Textfarbe wählen.</p><h3 class=\"h5 mb-2\">Farbe im Farbwähler stimmt nicht mit dem eingegebenen Code überein</h3><p class=\"text-mid\">Der Farbwähler des Browsers unterstützt nur das HEX-Format ohne Transparenz. Wenn Sie eine Farbe im RGBA- oder HSLA-Format mit Transparenz eingeben, zeigt der Farbwähler nur den Farbanteil (ohne Alpha). Die Kontrastberechnung berücksichtigt die Transparenz weiterhin.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Wo sollten Sie die Farblesbarkeit prüfen?",
       "description": "Der Kontrast-Checker hilft bei der Bewertung verschiedener Bereiche einer Website:",
       "grid": "three",
       "items": [
-        { "icon": "RiGlobalLine", "title": "Navigation und Menüs", "description": "Menüpunkte müssen auf dem Hintergrund gut lesbar sein - auch bei Hover- und Fokuszuständen." },
-        { "icon": "RiFileTextLine", "title": "Fließtext und Artikel", "description": "Text auf weißem oder farbigem Hintergrund. Besonders kritisch bei hellen Grautönen als Textfarbe." },
-        { "icon": "RiMailLine", "title": "Formulare und Buttons", "description": "Formularfelder, Fehlermeldungen und CTA-Buttons müssen gut sichtbar sein." },
-        { "icon": "RiSmartphoneLine", "title": "Mobile Ansicht", "description": "Auf kleinen Bildschirmen und bei direkter Sonneneinstrahlung ist ein höherer Kontrast besonders wichtig." },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Navigation und Menüs",
+          "description": "Menüpunkte müssen auf dem Hintergrund gut lesbar sein - auch bei Hover- und Fokuszuständen."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Fließtext und Artikel",
+          "description": "Text auf weißem oder farbigem Hintergrund. Besonders kritisch bei hellen Grautönen als Textfarbe."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Formulare und Buttons",
+          "description": "Formularfelder, Fehlermeldungen und CTA-Buttons müssen gut sichtbar sein."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Mobile Ansicht",
+          "description": "Auf kleinen Bildschirmen und bei direkter Sonneneinstrahlung ist ein höherer Kontrast besonders wichtig."
+        },
         {
           "icon": "RiLayoutGridLine",
           "title": "Hero-Banner und Overlays",
           "description": "Weißer Text auf Bildhintergründen - häufige Problemquelle. Prüfen Sie den Kontrast gegen die dunkelste Stelle."
         },
-        { "icon": "RiArticleLine", "title": "Footer und rechtliche Hinweise", "description": "Footer-Text ist oft klein und hell — eine häufige Schwachstelle bei der Barrierefreiheit." }
+        {
+          "icon": "RiArticleLine",
+          "title": "Footer und rechtliche Hinweise",
+          "description": "Footer-Text ist oft klein und hell — eine häufige Schwachstelle bei der Barrierefreiheit."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Farblesbarkeit für Farbenblinde",
       "html": "<p class=\"text-mid\">Etwa 8 % der Männer und 0,5 % der Frauen haben eine Farbsehschwäche. Die häufigste Form ist die Rot-Grün-Schwäche (Deuteranomalie), bei der rote und grüne Töne schwer zu unterscheiden sind.</p><p class=\"text-mid mt-3\">Der WCAG-Kontrasttest prüft nur den Helligkeitsunterschied, nicht die Farbunterscheidung. Beachten Sie daher zusätzlich: Verwenden Sie nie nur Farbe allein, um Informationen zu vermitteln (z.&nbsp;B. &quot;rote Felder sind Pflichtfelder&quot;). Ergänzen Sie Farbe stets durch Beschriftungen, Muster oder Symbole.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Was macht diesen Kontrast-Checker besonders?",
       "grid": "two",
       "items": [
-        { "icon": "RiEyeLine", "title": "Objektive Bewertung", "description": "Das Kontrastverhältnis wird nach der WCAG-Formel berechnet — unabhängig von Ihren Monitoreinstellungen." },
-        { "icon": "RiShieldCheckLine", "title": "WCAG-Konformität", "description": "Basiert auf den WCAG-2.1-Anforderungen — der Grundlage der EU-Barrierefreiheitsrichtlinie." },
-        { "icon": "RiMagicLine", "title": "Automatische Farbanpassung", "description": "Die Match-Funktion findet automatisch eine Textfarbe, die den gewählten Kontrastschwellenwert erfüllt." },
-        { "icon": "RiStackLine", "title": "Fünf Farbformate", "description": "Unterstützte Formate: HEX, RGB, RGBA, HSL und HSLA." },
-        { "icon": "RiInfinityLine", "title": "Drei Inhaltstypen in einem Test", "description": "Ein Test — drei Ergebnisse: normaler Text, großer Text und Symbole." }
+        {
+          "icon": "RiEyeLine",
+          "title": "Objektive Bewertung",
+          "description": "Das Kontrastverhältnis wird nach der WCAG-Formel berechnet — unabhängig von Ihren Monitoreinstellungen."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "WCAG-Konformität",
+          "description": "Basiert auf den WCAG-2.1-Anforderungen — der Grundlage der EU-Barrierefreiheitsrichtlinie."
+        },
+        {
+          "icon": "RiMagicLine",
+          "title": "Automatische Farbanpassung",
+          "description": "Die Match-Funktion findet automatisch eine Textfarbe, die den gewählten Kontrastschwellenwert erfüllt."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Fünf Farbformate",
+          "description": "Unterstützte Formate: HEX, RGB, RGBA, HSL und HSLA."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Drei Inhaltstypen in einem Test",
+          "description": "Ein Test — drei Ergebnisse: normaler Text, großer Text und Symbole."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Häufig gestellte Fragen zum Farbkontrast-Checker",
@@ -231,8 +382,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Weitere kostenlose Tools entdecken" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere kostenlose Tools entdecken"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

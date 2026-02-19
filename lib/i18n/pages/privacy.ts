@@ -98,8 +98,6 @@ export function getPrivacyAlternates(locale: Locale) {
       languages[c.hreflang] = toAbsoluteUrl(c.privacyHref);
     }
   }
-  // PL privacy page exists at /polityka-prywatnosci
-  languages['pl'] = toAbsoluteUrl('/polityka-prywatnosci');
   languages['x-default'] = toAbsoluteUrl(LOCALE_CONFIG.en.privacyHref!);
 
   return {

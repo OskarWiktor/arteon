@@ -1,5 +1,5 @@
-﻿import ToolPageSkeleton from '@/components/ui/skeletons/ToolPageSkeleton';
+import ToolPageSkeleton from '@/components/ui/skeletons/ToolPageSkeleton';
 
 export default function Loading() {
-  return <ToolPageSkeleton />;
+  return <ToolPageSkeleton variant="contrast-checker" />;
 }

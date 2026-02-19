@@ -3,7 +3,7 @@
   "locale": "af",
   "metadata": {
     "title": "Gratis Beeldkleur-onttrekker – Palet Uit Enige Foto",
-    "description": "Laai 'n foto of logo op en onttrek tot 12 dominante kleure met HEX- en RGB-kodes. Perfek vir UI, handelsmerk en sosiale media. Geen registrasie, geen beperkings nie.",
+    "description": "Laai 'n foto of logo op en onttrek tot 12 dominante kleure met HEX- en RGB-kodes. Perfek vir UI, handelsmerk en sosiale media. Geen registrasie, geen.",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/af/gereedskap/kleur-onttrekker-uit-beeld"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/af/gereedskap", "label": "Gereedskap" },
-    "third": { "href": "/af/gereedskap/kleur-onttrekker-uit-beeld", "label": "Beeldkleur-onttrekker" }
+    "second": {
+      "href": "/af/gereedskap",
+      "label": "Gereedskap"
+    },
+    "third": {
+      "href": "/af/gereedskap/kleur-onttrekker-uit-beeld",
+      "label": "Beeldkleur-onttrekker"
+    }
   },
   "schemas": {
     "software": {
@@ -37,42 +43,69 @@
       "name": "Hoe om kleure uit 'n foto of beeld te onttrek",
       "description": "Hoe om dominante kleure uit 'n foto of logo te onttrek. Laai 'n beeld in PNG-, JPG- of SVG-formaat op, en die instrument sal 'n palet van tot 12 kleure met HEX-kodes genereer.",
       "steps": [
-        { "name": "Laai 'n beeld op", "text": "Sleep 'n lêer na die aangewese area of kies 'n beeld van jou toestel. Ondersteunde formate is PNG, JPG en SVG." },
-        { "name": "Wag vir analise", "text": "Die instrument sal outomaties die beeld analiseer en dominante kleure onttrek." },
-        { "name": "Kopieer kleure", "text": "Langs elke kleur sal jy 'n kopieerknoppie vind - die HEX-kode word na jou stelselknipbord gekopieer." }
+        {
+          "name": "Laai 'n beeld op",
+          "text": "Sleep 'n lêer na die aangewese area of kies 'n beeld van jou toestel. Ondersteunde formate is PNG, JPG en SVG."
+        },
+        {
+          "name": "Wag vir analise",
+          "text": "Die instrument sal outomaties die beeld analiseer en dominante kleure onttrek."
+        },
+        {
+          "name": "Kopieer kleure",
+          "text": "Langs elke kleur sal jy 'n kopieerknoppie vind - die HEX-kode word na jou stelselknipbord gekopieer."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Waarom kleure uit 'n beeld onttrek?",
       "html": "<p class=\"mb-4\">Elke foto, logo of grafika bevat kleure wat as 'n klaargemaakte kleurpalet kan dien. Die onttrekker analiseer die beeld en wys watter kleure domineer - saam met HEX-kodes en RGB-waardes gereed om in jou projek te plak.</p><p class=\"mb-4\">In die praktyk beteken dit dat jy, in plaas daarvan om handmatig kleure in 'n grafiese toepassing te monster (piksel vir piksel), een beeld oplaai en 'n georganiseerde lys van tot 12 kleure kry. Dit is nuttig wanneer jy kleure vir 'n webwerf kies, konsekwente sosiale media-grafika skep, of 'n visuele identiteit uit bestaande materiaal bou.</p><p>Alle analise gebeur plaaslik in die blaaier - die beeld word nie na enige bediener gestuur nie.</p>"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Hoe om die beeldkleur-onttrekker te gebruik",
       "description": "Die hele proses neem net 'n paar sekondes:",
       "grid": "three",
       "items": [
-        { "title": "1. Laai 'n beeld op", "description": "Sleep 'n lêer na die aangewese area of kies dit van jou toestel. Ondersteunde formate is PNG, JPG en SVG." },
-        { "title": "2. Wag vir analise", "description": "Die instrument sal outomaties die beeld analiseer en tot 12 dominante kleure onttrek." },
+        {
+          "title": "1. Laai 'n beeld op",
+          "description": "Sleep 'n lêer na die aangewese area of kies dit van jou toestel. Ondersteunde formate is PNG, JPG en SVG."
+        },
+        {
+          "title": "2. Wag vir analise",
+          "description": "Die instrument sal outomaties die beeld analiseer en tot 12 dominante kleure onttrek."
+        },
         {
           "title": "3. Kopieer die kleure wat jy nodig het",
           "description": "Langs elke kleur is daar 'n kopieerknoppie - die HEX- of RGB-kode gaan na die knipbord en kan direk in jou projek geplak word."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Hoe lyk 'n onttrekde kleurpalet?",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Voorbeeldkleure onttrek uit 'n natuurbeeld</p></div>",
       "html": "<p class=\"text-mid mb-4\">Na die oplaai van 'n beeld vertoon die onttrekker 'n lys dominante kleure gesorteer van mees na minste prominent. Elke kleur wys sy HEX-kode en RGB-waarde - gereed om in CSS, Figma of enige grafiese toepassing te plak.</p><p class=\"text-mid\">Die aantal onttrekde kleure hang af van die beeldinhoud. 'n Landskapfoto sal 'n ryker palet lewer (8–12 kleure), terwyl 'n eenvoudige tweekleur-logo ooreenstemmend minder items sal lewer.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Watter beelde gee die beste resultate in die kleur-onttrekker?",
@@ -101,7 +134,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTimeline",
       "title": "Hoe werk beeldkleur-onttrekking?",
@@ -129,7 +165,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Probleemoplossing vir die kleur-onttrekker",
@@ -157,7 +196,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Wat maak hierdie beeldkleur-onttrekker spesiaal?",
@@ -185,7 +227,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Waar om kleure onttrek uit 'n beeld te gebruik",
@@ -209,11 +254,14 @@
         {
           "icon": "RiSearchEyeLine",
           "title": "Uitbreiding van 'n bestaande palet",
-          "description": "'n Onttrekde basiskleur kan in die <a href=\"/af/gereedskap/color-palette-generator\">kleurpaletgenerator</a> gebruik word om 'n volledige stel harmoniese kleure gebaseer op kleurteorie te skep."
+          "description": "'n Onttrekde basiskleur kan in die <a href=\"/af/gereedskap/kleurpalet-generator\">kleurpaletgenerator</a> gebruik word om 'n volledige stel harmoniese kleure gebaseer op kleurteorie te skep."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Gereeld gevraagde vrae oor die beeldkleur-onttrekker",
@@ -251,8 +299,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Verken ander gereedskap" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Verken ander gereedskap"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

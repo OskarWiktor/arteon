@@ -3,7 +3,7 @@
   "locale": "af",
   "metadata": {
     "title": "Gratis Kleurpalet-generator – 9 Palette Uit Een Kleur",
-    "description": "Genereer 9 kleurpalette uit een basiskleur: monochromaties, komplementêr, triadies, pastel en meer. Kopieer HEX-kodes met een klik. Geen registrasie, geen beperkings nie.",
+    "description": "Genereer 9 kleurpalette uit een basiskleur: monochromaties, komplementêr, triadies, pastel en meer. Kopieer HEX-kodes met een klik. Geen registrasie, geen.",
     "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
     "path": "/af/gereedskap/kleurpalet-generator"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/af/gereedskap", "label": "Gereedskap" },
-    "third": { "href": "/af/gereedskap/kleurpalet-generator", "label": "Kleurpalet-generator" }
+    "second": {
+      "href": "/af/gereedskap",
+      "label": "Gereedskap"
+    },
+    "third": {
+      "href": "/af/gereedskap/kleurpalet-generator",
+      "label": "Kleurpalet-generator"
+    }
   },
   "schemas": {
     "software": {
@@ -45,24 +51,39 @@
       "name": "Hoe om 'n kleurpalet uit een basiskleur te genereer",
       "description": "Hoe om 9 kleurpalette uit een basiskleur te genereer: monochromaties, komplementêr, triadies, pastel en meer. Elke kleur kan met sy HEX-kode gekopieer word.",
       "steps": [
-        { "name": "Kies 'n basiskleur", "text": "Voer 'n HEX-kode in die teksveld in of gebruik die kleurkieser om 'n kleur visueel te kies." },
-        { "name": "Bevestig die kleur", "text": "Bevestig die geselekteerde kleur met die Dateer Kleur-knoppie - die instrument sal palette genereer gebaseer op jou gekose basiskleur." },
+        {
+          "name": "Kies 'n basiskleur",
+          "text": "Voer 'n HEX-kode in die teksveld in of gebruik die kleurkieser om 'n kleur visueel te kies."
+        },
+        {
+          "name": "Bevestig die kleur",
+          "text": "Bevestig die geselekteerde kleur met die Dateer Kleur-knoppie - die instrument sal palette genereer gebaseer op jou gekose basiskleur."
+        },
         {
           "name": "Blaai deur die palette",
           "text": "Die instrument sal outomaties 9 verskillende palette genereer: monochromaties, analoog, komplementêr, triadies, gesplete-komplementêr, pastel, donker, tonaal en minimalisties."
         },
-        { "name": "Kopieer kleure", "text": "Langs elke kleur sal jy 'n Kopieer-knoppie vind - die HEX-kode word na jou stelselknipbord gekopieer." }
+        {
+          "name": "Kopieer kleure",
+          "text": "Langs elke kleur sal jy 'n Kopieer-knoppie vind - die HEX-kode word na jou stelselknipbord gekopieer."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Waarom 'n kleurpalet genereer?",
       "html": "<p class=\"text-mid\">'n Konsekwente kleurpalet is die grondslag van elke visuele projek - van 'n webwerf, deur 'n logo, tot gedrukte materiaal. Om handmatig kleure te kies wat saamwerk, vereis kennis van kleurteorie. Die generator doen dit outomaties: jy verskaf een basiskleur (bv. jou logo-kleur), en die instrument skep 9 kleurstelle gebaseer op bewese kleurharmonie-skemas.</p><p class=\"text-mid mt-3\">Elke gegenereerde kleur kom met sy HEX-kode (bv. #4F6BF5) en HSL-waarde (kleurtoon, versadiging, helderheid). Die HEX-kode kan direk in CSS, Figma, Canva of enige grafiese toepassing geplak word.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Hoe om die kleurpalet-generator te gebruik",
@@ -77,10 +98,16 @@
           "title": "2. Bevestig jou keuse",
           "description": "Nadat jy op die Dateer Kleur-knoppie geklik het, sal die instrument outomaties 9 palette genereer gebaseer op verskillende kleurharmonie-skemas."
         },
-        { "title": "3. Kopieer die kleure wat jy nodig het", "description": "Langs elke kleur is daar 'n Kopieer-knoppie - die HEX-kode gaan na die knipbord en kan direk in jou projek geplak word." }
+        {
+          "title": "3. Kopieer die kleure wat jy nodig het",
+          "description": "Langs elke kleur is daar 'n Kopieer-knoppie - die HEX-kode gaan na die knipbord en kan direk in jou projek geplak word."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Watter kleurskemas genereer die instrument?",
@@ -134,14 +161,20 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Waarop is die kleurpalet-generator gebaseer?",
       "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (kleurtoon)</span><span class=\"text-mid\">0°–360° op die kleurwiel</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (versadiging)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (helderheid)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
       "html": "<p class=\"text-mid\">Alle palette word geskep deur die basiskleur wiskundig in die HSL-kleurruimte te transformeer. HSL beskryf 'n kleur met drie waardes: kleurtoon (H) is die posisie op die kleurwiel (0°–360°), versadiging (S) bepaal kleurintensiteit, en helderheid (L) - hoe helder of donker die kleur is.</p><p class=\"text-mid mt-3\">Die komplementêre, triadiese en gesplete-komplementêre palette is gebaseer op kleurwiel-meetkunde - kleure word op gelyke hoekafstande geplaas, wat visuele balans skep. Die monochromatiese, pastel- en donker palette verander slegs helderheid en versadiging terwyl dieselfde kleurtoon behou word.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Waar om die gegenereerde kleurpalette te gebruik",
@@ -174,7 +207,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Probleemoplossing vir die palet-generator",
@@ -197,7 +233,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Gereeld gevraagde vrae oor die kleurpalet-generator",
@@ -230,8 +269,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Verken ander gereedskap" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Verken ander gereedskap"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

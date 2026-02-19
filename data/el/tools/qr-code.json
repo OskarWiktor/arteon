@@ -3,7 +3,7 @@
   "locale": "el",
   "metadata": {
     "title": "Δωρεάν Δημιουργός QR Code – PNG & SVG, Χωρίς Εγγραφή",
-    "description": "Δημιουργήστε QR codes για ιστοσελίδες, vCards, μενού ή φυλλάδια σε δευτερόλεπτα. Εξαγωγή σε PNG & SVG. Προσαρμογή χρωμάτων και μεγέθους. Χωρίς εγγραφή, χωρίς όρια.",
+    "description": "Δημιουργήστε QR codes για ιστοσελίδες, vCards, μενού ή φυλλάδια σε δευτερόλεπτα. Εξαγωγή σε PNG & SVG. Προσαρμογή χρωμάτων και μεγέθους. Χωρίς εγγραφή, χωρίς.",
     "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
     "path": "/el/ergaleia/dorean-dimiourgia-kodikou-qr"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/el/ergaleia", "label": "Εργαλεία" },
-    "third": { "href": "/el/ergaleia/dorean-dimiourgia-kodikou-qr", "label": "Δωρεάν δημιουργός QR code" }
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/dorean-dimiourgia-kodikou-qr",
+      "label": "Δωρεάν δημιουργός QR code"
+    }
   },
   "schemas": {
     "software": {
@@ -52,33 +58,63 @@
       "name": "Πώς να χρησιμοποιήσετε τον δωρεάν δημιουργό QR code",
       "description": "Πώς να δημιουργήσετε QR code για ιστοσελίδα, επαγγελματική κάρτα vCard, email ή τηλέφωνο — από την επιλογή τύπου δεδομένων έως τη λήψη του έτοιμου αρχείου για εκτύπωση.",
       "steps": [
-        { "name": "Επιλέξτε τον τύπο δεδομένων", "text": "Αποφασίστε τι πρέπει να περιέχει το QR code: URL, κείμενο, επαγγελματική κάρτα (vCard), email ή αριθμό τηλεφώνου." },
-        { "name": "Εισάγετε τα δεδομένα", "text": "Συμπληρώστε τα κατάλληλα πεδία. Για URL, εισάγετε τη διεύθυνση ιστοσελίδας. Για vCard, συμπληρώστε τα στοιχεία επικοινωνίας." },
-        { "name": "Προσαρμόστε την εμφάνιση", "text": "Επιλέξτε μέγεθος, περιθώριο, χρώματα κωδικού και φόντου, και επίπεδο διόρθωσης σφαλμάτων." },
-        { "name": "Κατεβάστε τον κωδικό", "text": "Το έτοιμο QR code μπορεί να κατεβεί ως αρχείο PNG (για εκτύπωση και web) ή SVG (διανυσματικό, κλιμακώνεται χωρίς απώλεια ποιότητας)." }
+        {
+          "name": "Επιλέξτε τον τύπο δεδομένων",
+          "text": "Αποφασίστε τι πρέπει να περιέχει το QR code: URL, κείμενο, επαγγελματική κάρτα (vCard), email ή αριθμό τηλεφώνου."
+        },
+        {
+          "name": "Εισάγετε τα δεδομένα",
+          "text": "Συμπληρώστε τα κατάλληλα πεδία. Για URL, εισάγετε τη διεύθυνση ιστοσελίδας. Για vCard, συμπληρώστε τα στοιχεία επικοινωνίας."
+        },
+        {
+          "name": "Προσαρμόστε την εμφάνιση",
+          "text": "Επιλέξτε μέγεθος, περιθώριο, χρώματα κωδικού και φόντου, και επίπεδο διόρθωσης σφαλμάτων."
+        },
+        {
+          "name": "Κατεβάστε τον κωδικό",
+          "text": "Το έτοιμο QR code μπορεί να κατεβεί ως αρχείο PNG (για εκτύπωση και web) ή SVG (διανυσματικό, κλιμακώνεται χωρίς απώλεια ποιότητας)."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Τι είναι ένα QR code και πώς λειτουργεί;",
       "html": "<p class=\"text-mid\">Ένα QR code (Quick Response) είναι ένας δισδιάστατος γραμμωτός κωδικός που μπορεί να σαρωθεί με την κάμερα ενός smartphone. Σε αντίθεση με τους παραδοσιακούς γραμμωτούς κωδικούς, τα QR codes αποθηκεύουν δεδομένα τόσο οριζόντια όσο και κάθετα, επιτρέποντάς τους να κωδικοποιήσουν σημαντικά περισσότερες πληροφορίες — έως περίπου 3.000 αλφαριθμητικούς χαρακτήρες.</p><p class=\"text-mid mt-3\">Το QR code αναπτύχθηκε το 1994 από την ιαπωνική εταιρεία Denso Wave (μέρος του ομίλου Toyota) για την παρακολούθηση ανταλλακτικών αυτοκινήτων. Σήμερα, τα QR codes χρησιμοποιούνται ευρέως στο μάρκετινγκ, τη φιλοξενία, τα logistics και την επιχειρηματική επικοινωνία. Απέκτησαν ιδιαίτερη δημοτικότητα κατά τη διάρκεια της πανδημίας COVID-19, όταν τα εστιατόρια άρχισαν να αντικαθιστούν τα χάρτινα μενού με QR codes.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Πώς να χρησιμοποιήσετε τον δωρεάν δημιουργό QR code",
       "description": "Η δημιουργία QR code διαρκεί μόλις λίγα δευτερόλεπτα:",
       "grid": "three",
       "items": [
-        { "title": "1. Επιλέξτε τον τύπο δεδομένων", "description": "Επιλέξτε τι θέλετε να κωδικοποιήσετε: URL, κείμενο, επαγγελματική κάρτα vCard, email ή αριθμό τηλεφώνου." },
-        { "title": "2. Εισάγετε τα δεδομένα", "description": "Συμπληρώστε τα κατάλληλα πεδία — διεύθυνση ιστοσελίδας, στοιχεία επικοινωνίας ή περιεχόμενο μηνύματος." },
-        { "title": "3. Κατεβάστε τον κωδικό", "description": "Προσαρμόστε την εμφάνιση (χρώματα, μέγεθος, περιθώριο) και κατεβάστε ως PNG ή SVG." }
+        {
+          "title": "1. Επιλέξτε τον τύπο δεδομένων",
+          "description": "Επιλέξτε τι θέλετε να κωδικοποιήσετε: URL, κείμενο, επαγγελματική κάρτα vCard, email ή αριθμό τηλεφώνου."
+        },
+        {
+          "title": "2. Εισάγετε τα δεδομένα",
+          "description": "Συμπληρώστε τα κατάλληλα πεδία — διεύθυνση ιστοσελίδας, στοιχεία επικοινωνίας ή περιεχόμενο μηνύματος."
+        },
+        {
+          "title": "3. Κατεβάστε τον κωδικό",
+          "description": "Προσαρμόστε την εμφάνιση (χρώματα, μέγεθος, περιθώριο) και κατεβάστε ως PNG ή SVG."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Τύποι QR code — URL, vCard, email, τηλέφωνο, κείμενο",
@@ -105,17 +141,27 @@
           "title": "Email",
           "description": "Διεύθυνση email με προαιρετικό θέμα και σώμα. Μετά τη σάρωση, το τηλέφωνο ανοίγει την εφαρμογή αλληλογραφίας με προσυμπληρωμένη φόρμα."
         },
-        { "icon": "RiPhoneLine", "title": "Τηλέφωνο", "description": "Αριθμός τηλεφώνου. Μετά τη σάρωση, το τηλέφωνο προσφέρει κλήση. Χρήσιμο για γραμμές εξυπηρέτησης και υποστήριξη πελατών." }
+        {
+          "icon": "RiPhoneLine",
+          "title": "Τηλέφωνο",
+          "description": "Αριθμός τηλεφώνου. Μετά τη σάρωση, το τηλέφωνο προσφέρει κλήση. Χρήσιμο για γραμμές εξυπηρέτησης και υποστήριξη πελατών."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Τεχνικές προδιαγραφές QR code",
       "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Χωρητικότητα</span><span class=\"text-mid text-sm!\">έως 4.296 χαρακτήρες</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Διόρθωση σφαλμάτων</span><span class=\"text-mid text-sm!\">7% – 30%</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Ελάχ. μέγεθος εκτύπωσης</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Ελάχ. αντίθεση</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Περιθώριο</span><span class=\"text-mid text-sm!\">ελάχ. 4 modules</span></div></div>",
       "html": "<p class=\"text-mid mb-4\">Η γνώση των τεχνικών παραμέτρων βοηθά στη δημιουργία QR codes αναγνώσιμων σε όλες τις συνθήκες:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Χωρητικότητα δεδομένων</strong> — ένα QR code μπορεί να χωρέσει έως 7.089 ψηφία, 4.296 αλφαριθμητικούς χαρακτήρες ή 2.953 bytes δυαδικών δεδομένων. Στην πράξη, αυτό είναι υπεραρκετό για URLs και επαγγελματικές κάρτες.</li><li><strong>Διόρθωση σφαλμάτων Reed-Solomon</strong> — μαθηματικός αλγόριθμος που επιτρέπει ανάγνωση του κωδικού ακόμα και όταν μέρος του είναι κατεστραμμένο ή καλυμμένο. Επίπεδα: L (7%), M (15%), Q (25%), H (30%).</li><li><strong>Περιθώριο</strong> — η λευκή περιοχή γύρω από τον κωδικό απαραίτητη για σωστή σάρωση. Το συνιστώμενο ελάχιστο είναι 4 modules (μονάδες κωδικού).</li><li><strong>Ελάχιστο μέγεθος εκτύπωσης</strong> — για τυπικές συνθήκες σάρωσης, ο κωδικός πρέπει να είναι τουλάχιστον 2×2 cm. Για εκτύπωση μεγάλου μεγέθους (banners, billboards), κλιμακώστε ανάλογα.</li><li><strong>Αντίθεση</strong> — η αναλογία αντίθεσης μεταξύ κωδικού και φόντου πρέπει να είναι τουλάχιστον 3:1. Ο δημιουργός προειδοποιεί αυτόματα για πολύ χαμηλή αντίθεση.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Εφαρμογές QR code — επαγγελματικές κάρτες, φυλλάδια, μενού εστιατορίου",
@@ -132,16 +178,47 @@
           "title": "Μενού εστιατορίων και καφετεριών",
           "description": "Ένα QR code στο τραπέζι κατευθύνει σε ψηφιακό μενού. Μια υγιεινή λύση δημοφιλής από την πανδημία COVID-19."
         },
-        { "icon": "RiPrinterLine", "title": "Φυλλάδια και αφίσες", "description": "QR code με σύνδεσμο σε σελίδα προϊόντος, φόρμα εγγραφής ή ειδική προσφορά." },
-        { "icon": "RiBuilding2Line", "title": "Συσκευασία προϊόντων", "description": "Σύνδεσμος σε εγχειρίδιο χρήσης, κάρτα εγγύησης ή ιστοσελίδα κατασκευαστή." },
-        { "icon": "RiHospitalLine", "title": "Ιατρεία", "description": "QR codes σε κάρτες ασθενών που συνδέουν στην πύλη ασθενούς ή σύστημα κράτησης ραντεβού." },
-        { "icon": "RiHome4Line", "title": "Ακίνητα", "description": "Κωδικοί σε banners που συνδέουν στην πλήρη αγγελία με γκαλερί φωτογραφιών και λεπτομέρειες." },
-        { "icon": "RiTruckLine", "title": "Αποθήκες και logistics", "description": "Ετικέτες QR για παρακολούθηση παρτίδων προϊόντων, θέσεων αποθήκης και ιστορικού αποστολών." },
-        { "icon": "RiShoppingCartLine", "title": "E-commerce", "description": "Κωδικοί σε συσκευασίες που συνδέουν σε οδηγίες επιστροφής, κριτικές πελατών ή προγράμματα πιστότητας." },
-        { "icon": "RiCalendarEventLine", "title": "Εκδηλώσεις και συνέδρια", "description": "Εισιτήρια με QR codes για γρήγορο έλεγχο στην είσοδο." }
+        {
+          "icon": "RiPrinterLine",
+          "title": "Φυλλάδια και αφίσες",
+          "description": "QR code με σύνδεσμο σε σελίδα προϊόντος, φόρμα εγγραφής ή ειδική προσφορά."
+        },
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Συσκευασία προϊόντων",
+          "description": "Σύνδεσμος σε εγχειρίδιο χρήσης, κάρτα εγγύησης ή ιστοσελίδα κατασκευαστή."
+        },
+        {
+          "icon": "RiHospitalLine",
+          "title": "Ιατρεία",
+          "description": "QR codes σε κάρτες ασθενών που συνδέουν στην πύλη ασθενούς ή σύστημα κράτησης ραντεβού."
+        },
+        {
+          "icon": "RiHome4Line",
+          "title": "Ακίνητα",
+          "description": "Κωδικοί σε banners που συνδέουν στην πλήρη αγγελία με γκαλερί φωτογραφιών και λεπτομέρειες."
+        },
+        {
+          "icon": "RiTruckLine",
+          "title": "Αποθήκες και logistics",
+          "description": "Ετικέτες QR για παρακολούθηση παρτίδων προϊόντων, θέσεων αποθήκης και ιστορικού αποστολών."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "E-commerce",
+          "description": "Κωδικοί σε συσκευασίες που συνδέουν σε οδηγίες επιστροφής, κριτικές πελατών ή προγράμματα πιστότητας."
+        },
+        {
+          "icon": "RiCalendarEventLine",
+          "title": "Εκδηλώσεις και συνέδρια",
+          "description": "Εισιτήρια με QR codes για γρήγορο έλεγχο στην είσοδο."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Προσαρμογή εμφάνισης QR code",
@@ -149,32 +226,90 @@
       "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Μέγεθος</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Περιθώριο</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Χρώμα κωδικού</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Χρώμα φόντου</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
       "html": "<p class=\"text-mid mb-4\">Ο δημιουργός σας επιτρέπει να προσαρμόσετε αρκετές παραμέτρους που επηρεάζουν την εμφάνιση και αναγνωσιμότητα του κωδικού:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Μέγεθος (px)</strong> — διάσταση κωδικού σε pixels. Για τυπική εκτύπωση (φυλλάδια, επαγγελματικές κάρτες) επιλέξτε 300–500 px. Για ψηφιακή χρήση, 150–200 px αρκεί.</li><li><strong>Περιθώριο</strong> — λευκή περιοχή γύρω από τον κωδικό απαραίτητη για σωστή σάρωση. Συνιστώμενη τιμή 2–4. Τιμή 0 μπορεί να δυσκολέψει τη σάρωση σε σκούρο φόντο.</li><li><strong>Χρώμα QR code</strong> — μαύρο από προεπιλογή (#000000). Μπορείτε να το αλλάξετε σε οποιοδήποτε σκούρο χρώμα που ταιριάζει με την οπτική σας ταυτότητα.</li><li><strong>Χρώμα φόντου</strong> — λευκό από προεπιλογή (#ffffff). Μπορείτε να το αλλάξετε σε οποιοδήποτε ανοιχτό χρώμα. Ο δημιουργός θα προειδοποιήσει αν η αντίθεση είναι πολύ χαμηλή.</li></ul><p class=\"text-mid mt-3\"><strong>Συμβουλή:</strong> Διατηρήστε υψηλή αντίθεση μεταξύ κωδικού και φόντου (ελάχιστο 3:1). Σκούρος κωδικός σε ανοιχτό φόντο σαρώνεται πιο εύκολα.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Επίπεδα διόρθωσης σφαλμάτων — L, M, Q, H",
       "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Low)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Medium)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Quartile)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (High)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
       "html": "<p class=\"text-mid mb-4\">Η διόρθωση σφαλμάτων είναι ένας μηχανισμός που επιτρέπει την ανάγνωση ενός QR code ακόμα και όταν μέρος του είναι κατεστραμμένο, βρώμικο ή καλυμμένο. Ο δημιουργός χρησιμοποιεί τον αλγόριθμο Reed-Solomon, πρότυπο στα QR codes.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Low) — 7%</strong> — ελάχιστη πλεονασμός, ο κωδικός είναι πιο συμπαγής. Επιλέξτε όταν ο κωδικός θα χρησιμοποιηθεί σε ιδανικές συνθήκες (οθόνη, υψηλής ποιότητας εκτύπωση).</li><li><strong>M (Medium) — 15%</strong> — προεπιλεγμένη τιμή, καλή ισορροπία μεταξύ χωρητικότητας και ανθεκτικότητας. Κατάλληλο για τις περισσότερες εφαρμογές.</li><li><strong>Q (Quartile) — 25%</strong> — μεγαλύτερη αντίσταση σε βλάβες. Επιλέξτε για κωδικούς εκτυπωμένους σε υλικά που λερώνονται εύκολα.</li><li><strong>H (High) — 30%</strong> — υψηλότερη ανθεκτικότητα. Συνιστάται για εξωτερικά εκτυπωμένα υλικά, συσκευασίες και καταστάσεις όπου ο κωδικός μπορεί να καλυφθεί μερικώς (π.χ. λογότυπο στο κέντρο).</li></ul><p class=\"text-mid mt-3\"><strong>Σημείωση:</strong> Υψηλότερο επίπεδο διόρθωσης σημαίνει μεγαλύτερο και πιο σύνθετο κωδικό. Με μεγάλο όγκο δεδομένων και επίπεδο H, ο κωδικός μπορεί να γίνει πολύ πυκνός.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionFeatureComparison",
       "title": "PNG vs SVG — ποια μορφή να επιλέξετε για εκτύπωση;",
       "plans": [
-        { "id": "png", "name": "PNG (raster)" },
-        { "id": "svg", "name": "SVG (διανυσματικό)", "highlighted": true }
+        {
+          "id": "png",
+          "name": "PNG (raster)"
+        },
+        {
+          "id": "svg",
+          "name": "SVG (διανυσματικό)",
+          "highlighted": true
+        }
       ],
       "features": [
-        { "name": "Ιστοσελίδες και κοινωνικά δίκτυα", "values": { "png": true, "svg": true } },
-        { "name": "Φυλλάδια και επαγγελματικές κάρτες", "values": { "png": true, "svg": true } },
-        { "name": "Αφίσες και banners (μεγάλο μέγεθος)", "values": { "png": false, "svg": true } },
-        { "name": "Κλιμάκωση χωρίς απώλεια ποιότητας", "values": { "png": false, "svg": true } },
-        { "name": "Επεξεργασία σε πρόγραμμα γραφικών", "values": { "png": false, "svg": true } },
-        { "name": "Μικρότερο μέγεθος αρχείου", "values": { "png": false, "svg": true } },
-        { "name": "Παρουσιάσεις", "values": { "png": true, "svg": true } }
+        {
+          "name": "Ιστοσελίδες και κοινωνικά δίκτυα",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Φυλλάδια και επαγγελματικές κάρτες",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Αφίσες και banners (μεγάλο μέγεθος)",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Κλιμάκωση χωρίς απώλεια ποιότητας",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Επεξεργασία σε πρόγραμμα γραφικών",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Μικρότερο μέγεθος αρχείου",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Παρουσιάσεις",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Συμβουλές εκτύπωσης QR code",
@@ -186,17 +321,32 @@
           "title": "Ελάχιστο μέγεθος",
           "description": "Ο κωδικός πρέπει να είναι τουλάχιστον 2×2 cm για σάρωση από κοντινή απόσταση. Όσο μεγαλύτερη η απόσταση σάρωσης, τόσο μεγαλύτερος πρέπει να είναι ο κωδικός."
         },
-        { "icon": "RiContrastLine", "title": "Αντίθεση", "description": "Σκούρος κωδικός σε ανοιχτό φόντο. Αποφύγετε παστέλ χρώματα και χαμηλή αντίθεση." },
+        {
+          "icon": "RiContrastLine",
+          "title": "Αντίθεση",
+          "description": "Σκούρος κωδικός σε ανοιχτό φόντο. Αποφύγετε παστέλ χρώματα και χαμηλή αντίθεση."
+        },
         {
           "icon": "RiLayoutGridLine",
           "title": "Περιθώριο γύρω από τον κωδικό",
           "description": "Διατηρήστε κενό χώρο γύρω από τον κωδικό. Μην τοποθετείτε άλλα γραφικά στοιχεία πολύ κοντά — το περιθώριο είναι απαραίτητο για σωστή σάρωση."
         },
-        { "icon": "RiEyeLine", "title": "Δοκιμή", "description": "Πριν τη μαζική εκτύπωση, δοκιμάστε τον κωδικό σε διαφορετικά τηλέφωνα και σε διάφορες συνθήκες φωτισμού." },
-        { "icon": "RiShieldCheckLine", "title": "Επίπεδο διόρθωσης", "description": "Για εξωτερική εκτύπωση και υλικά ευάλωτα σε φθορά, επιλέξτε επίπεδο Q ή H." }
+        {
+          "icon": "RiEyeLine",
+          "title": "Δοκιμή",
+          "description": "Πριν τη μαζική εκτύπωση, δοκιμάστε τον κωδικό σε διαφορετικά τηλέφωνα και σε διάφορες συνθήκες φωτισμού."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Επίπεδο διόρθωσης",
+          "description": "Για εξωτερική εκτύπωση και υλικά ευάλωτα σε φθορά, επιλέξτε επίπεδο Q ή H."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Τι κάνει αυτόν τον δημιουργό QR code ξεχωριστό;",
@@ -222,11 +372,22 @@
           "title": "Τέσσερα επίπεδα διόρθωσης σφαλμάτων",
           "description": "Ο αλγόριθμος Reed-Solomon σας επιτρέπει να επιλέξετε ανθεκτικότητα κωδικού σε βλάβες — από 7% (L) έως 30% (H). Υψηλότερα επίπεδα είναι χρήσιμα για εκτύπωση σε υλικά που λερώνονται εύκολα."
         },
-        { "icon": "RiEyeLine", "title": "Ζωντανή προεπισκόπηση", "description": "Βλέπετε το αποτέλεσμα αμέσως μετά την εισαγωγή δεδομένων, χωρίς να πατήσετε &quot;Generate&quot;." },
-        { "icon": "RiDownloadLine", "title": "Εξαγωγή PNG και SVG", "description": "Κατεβάστε τον κωδικό στη μορφή κατάλληλη για τη χρήση σας." }
+        {
+          "icon": "RiEyeLine",
+          "title": "Ζωντανή προεπισκόπηση",
+          "description": "Βλέπετε το αποτέλεσμα αμέσως μετά την εισαγωγή δεδομένων, χωρίς να πατήσετε &quot;Generate&quot;."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Εξαγωγή PNG και SVG",
+          "description": "Κατεβάστε τον κωδικό στη μορφή κατάλληλη για τη χρήση σας."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Συχνές ερωτήσεις για τον δημιουργό QR code",
@@ -274,8 +435,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Εξερευνήστε άλλα δωρεάν εργαλεία" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Εξερευνήστε άλλα δωρεάν εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

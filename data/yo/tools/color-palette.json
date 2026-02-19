@@ -3,7 +3,7 @@
   "locale": "yo",
   "metadata": {
     "title": "Olùpìlẹ̀ṣẹ̀ Paleti Awọ̀ Òfẹ́ẹ́ – 9 Paleti Láti Awọ̀ Kan",
-    "description": "Ṣẹ̀dá 9 paleti awọ̀ láti awọ̀ ìpilẹ̀ kan: monochromatic, complementary, triadic, pastel àti bèè bẹ́ẹ̀ lọ. Daakọ HEX ní ìtẹ̀ kan. Láì ìforukọ̀sílẹ̀.",
+    "description": "Ṣẹ̀dá 9 paleti awọ̀ láti awọ̀ ìpilẹ̀ kan: monochromatic, complementary, triadic, pastel àti bèè bẹ́ẹ̀ lọ. Daakọ HEX ní ìtẹ̀ kan.",
     "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
     "path": "/yo/awon-irinse/olupilese-paleti-awoo"
   },
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/yo/awon-irinse", "label": "Awọn Irìnṣé" },
-    "third": { "href": "/yo/awon-irinse/olupilese-paleti-awoo", "label": "Olùpìlẹ̀ṣẹ̀ paleti awọ̀" }
+    "second": {
+      "href": "/yo/awon-irinse",
+      "label": "Awọn Irìnṣé"
+    },
+    "third": {
+      "href": "/yo/awon-irinse/olupilese-paleti-awoo",
+      "label": "Olùpìlẹ̀ṣẹ̀ paleti awọ̀"
+    }
   },
   "schemas": {
     "software": {
@@ -45,36 +51,63 @@
       "name": "Bí o ṣe lè ṣẹ̀dá paleti awọ̀ láti awọ̀ ìpilẹ̀ kan",
       "description": "Bí o ṣe lè ṣẹ̀dá 9 paleti awọ̀ láti awọ̀ ìpilẹ̀ kan: monochromatic, complementary, triadic, pastel, àti bèè bẹ́ẹ̀ lọ. Awọ̀ kọ̀ọ̀kan lè ṣe é daakọ pẹ̀lú kóòdù HEX rẹ̀.",
       "steps": [
-        { "name": "Yan awọ̀ ìpilẹ̀", "text": "Tẹ kóòdù HEX sí aaye ọ̀rọ̀ tabi lo aṣàyàn awọ̀ láti yan awọ̀ ní afarawọ." },
-        { "name": "Fi awọ̀ náà múlẹ̀", "text": "Fi awọ̀ tí o yan múlẹ̀ pẹ̀lú bọ́tìnì Update Color — irìnṣé náà ṣẹ̀dá awọn paleti dá lórí awọ̀ ìpilẹ̀ rẹ." },
+        {
+          "name": "Yan awọ̀ ìpilẹ̀",
+          "text": "Tẹ kóòdù HEX sí aaye ọ̀rọ̀ tabi lo aṣàyàn awọ̀ láti yan awọ̀ ní afarawọ."
+        },
+        {
+          "name": "Fi awọ̀ náà múlẹ̀",
+          "text": "Fi awọ̀ tí o yan múlẹ̀ pẹ̀lú bọ́tìnì Update Color — irìnṣé náà ṣẹ̀dá awọn paleti dá lórí awọ̀ ìpilẹ̀ rẹ."
+        },
         {
           "name": "Wo awọn paleti",
           "text": "Irìnṣé náà ṣẹ̀dá 9 paleti oríṣìríṣì ní àìfọ̀wọ́: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, àti minimalist."
         },
-        { "name": "Daakọ awọn awọ̀", "text": "Légbẹ̀ẹ̀ awọ̀ kọ̀ọ̀kan iwọ ní bọ́tìnì Copy — kóòdù HEX náà daakọ sí clipboard ẹ̀rọ̀ rẹ." }
+        {
+          "name": "Daakọ awọn awọ̀",
+          "text": "Légbẹ̀ẹ̀ awọ̀ kọ̀ọ̀kan iwọ ní bọ́tìnì Copy — kóòdù HEX náà daakọ sí clipboard ẹ̀rọ̀ rẹ."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Kí nìdí tí o fi yẹ kí o ṣẹ̀dá paleti awọ̀?",
       "html": "<p class=\"text-mid\">Paleti awọ̀ tí ó bá ara mu ni ìpìlẹ̀ gbogbo iṣẹ́ afarawọ — láti ojú-ìwé ayélujára, nípasẹ̀ àmì ìdánimọ̀, sí àwọn ohun tí a tẹ̀ jáde. Yíyàn awọ̀ tí wọ́n bá ara mu pẹ̀lú ọwọ́ nílò ìmọ̀ ẹ̀kọ́ awọ̀. Olùpìlẹ̀ṣẹ̀ náà ṣe é ní àìfọ̀wọ́: o pèsè awọ̀ ìpilẹ̀ kan (bí àpẹẹrẹ, awọ̀ àmì ìdánimọ̀ rẹ), irìnṣé náà sì ṣẹ̀dá 9 ètò awọ̀ tí ó dá lórí àwọn ètò ìbarámú awọ̀ tí a ti fìdí múlẹ̀.</p><p class=\"text-mid mt-3\">Awọ̀ kọ̀ọ̀kan tí a ṣẹ̀dá wá pẹ̀lú kóòdù HEX rẹ̀ (bí àpẹẹrẹ, #4F6BF5) àti ìyẹ HSL (hue, saturation, lightness). Kóòdù HEX lè ṣe é lẹ̀ tààrà sínú CSS, Figma, Canva, tàbí ohunkóhun àpù àwòrán.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Bí o ṣe lè lo olùpìlẹ̀ṣẹ̀ paleti awọ̀",
       "description": "Gbogbo ìlànà náà gba ìṣẹ́jú díẹ̀ péré:",
       "grid": "three",
       "items": [
-        { "title": "1. Tẹ awọ̀ ìpilẹ̀", "description": "Tẹ kóòdù HEX (bí àpẹẹrẹ, #4F6BF5) sí aaye ọ̀rọ̀ tàbí yan awọ̀ láti inú aṣàyàn awọ̀. O tún lè lo bọ́tìnì Random Color." },
-        { "title": "2. Fi ìyàn rẹ múlẹ̀", "description": "Lẹ́yìn tí o tẹ bọ́tìnì Update Color, irìnṣé náà ṣẹ̀dá 9 paleti ní àìfọ̀wọ́ tí ó dá lórí àwọn ètò ìbarámú awọ̀ oríṣìríṣì." },
-        { "title": "3. Daakọ àwọn awọ̀ tí o nílò", "description": "Légbẹ̀ẹ̀ awọ̀ kọ̀ọ̀kan ni bọ́tìnì Copy wà — kóòdù HEX náà lọ sí clipboard, o sì lè lẹ̀ é tààrà sínú iṣẹ́ rẹ." }
+        {
+          "title": "1. Tẹ awọ̀ ìpilẹ̀",
+          "description": "Tẹ kóòdù HEX (bí àpẹẹrẹ, #4F6BF5) sí aaye ọ̀rọ̀ tàbí yan awọ̀ láti inú aṣàyàn awọ̀. O tún lè lo bọ́tìnì Random Color."
+        },
+        {
+          "title": "2. Fi ìyàn rẹ múlẹ̀",
+          "description": "Lẹ́yìn tí o tẹ bọ́tìnì Update Color, irìnṣé náà ṣẹ̀dá 9 paleti ní àìfọ̀wọ́ tí ó dá lórí àwọn ètò ìbarámú awọ̀ oríṣìríṣì."
+        },
+        {
+          "title": "3. Daakọ àwọn awọ̀ tí o nílò",
+          "description": "Légbẹ̀ẹ̀ awọ̀ kọ̀ọ̀kan ni bọ́tìnì Copy wà — kóòdù HEX náà lọ sí clipboard, o sì lè lẹ̀ é tààrà sínú iṣẹ́ rẹ."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Àwọn ètò awọ̀ wo ni irìnṣé náà ṣẹ̀dá?",
@@ -128,14 +161,20 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Kí ni olùpìlẹ̀ṣẹ̀ paleti awọ̀ dá lórí?",
       "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° lórí kíka awọ̀</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
       "html": "<p class=\"text-mid\">Gbogbo paleti ni a ṣẹ̀dá nípa yíyí awọ̀ ìpilẹ̀ padà ní ọ̀nà ìṣirò nínú àyè awọ̀ HSL. HSL ṣàpèjúwe awọ̀ pẹ̀lú ìyẹ mẹ́ta: hue (H) jẹ́ ipò lórí kíka awọ̀ (0°–360°), saturation (S) pinnu bí awọ̀ ṣe lágbára tó, àti lightness (L) — bí awọ̀ ṣe mọ́lẹ̀ tàbí ṣókùnkùn tó.</p><p class=\"text-mid mt-3\">Àwọn paleti complementary, triadic, àti split-complementary dá lórí geometry kíka awọ̀ — a fi àwọn awọ̀ sí àwọn àlàfo ìgun dọ́gba, tí ó ṣẹ̀dá ìdọ́gba afarawọ. Àwọn paleti monochromatic, pastel, àti dúdú yí lightness àti saturation padà péré nígbà tí wọ́n ṣe àmúlò hue kan náà.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Níbo ni o lè lo àwọn paleti awọ̀ tí a ṣẹ̀dá",
@@ -168,7 +207,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Ìyanjú ìṣòro olùpìlẹ̀ṣẹ̀ paleti",
@@ -191,7 +233,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Àwọn ìbéèrè tí a máa ń béèrè nípa olùpìlẹ̀ṣẹ̀ paleti awọ̀",
@@ -224,8 +269,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Ṣàwárí àwọn irìnṣé mìíràn" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ṣàwárí àwọn irìnṣé mìíràn"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

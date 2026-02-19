@@ -2,7 +2,7 @@
   "toolKey": "favicon",
   "locale": "uk",
   "metadata": {
-    "title": "Генератор favicon — створіть favicon.ico з будь-якого зображення",
+    "title": "Генератор favicon — створіть favicon.ico з будь-якого",
     "description": "Створіть favicon.ico та повний набір іконок для сайту з одного зображення. Усі потрібні розміри одним кліком. Працює локально у браузері.",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
     "path": "/uk/instrumenty/bezkoshtovnyi-generator-favicon"
@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/uk/instrumenty", "label": "Інструменти" },
-    "third": { "href": "/uk/instrumenty/bezkoshtovnyi-generator-favicon", "label": "Генератор favicon" }
+    "second": {
+      "href": "/uk/instrumenty",
+      "label": "Інструменти"
+    },
+    "third": {
+      "href": "/uk/instrumenty/bezkoshtovnyi-generator-favicon",
+      "label": "Генератор favicon"
+    }
   },
   "schemas": {
     "software": {
@@ -46,67 +52,138 @@
           "name": "Додайте вихідне зображення",
           "text": "Перетягніть файл у відведену область або оберіть графіку з пристрою. Найкраще підходить простий логотип або іконка у форматі PNG, JPG або SVG."
         },
-        { "name": "Оберіть розміри іконок", "text": "Виберіть, які розміри іконок вам потрібні: favicon.ico (32x32), PNG-іконки (16x16, 32x32, 180x180, 192x192, 512x512)." },
-        { "name": "Налаштуйте параметри", "text": "За потреби встановіть колір фону для іконок, де джерельне зображення має прозорий фон." },
-        { "name": "Завантажте іконки", "text": "Завантажте окремі файли або весь набір одним ZIP-архівом. Архів містить також файл manifest.json та HTML-код для вставки." }
+        {
+          "name": "Оберіть розміри іконок",
+          "text": "Виберіть, які розміри іконок вам потрібні: favicon.ico (32x32), PNG-іконки (16x16, 32x32, 180x180, 192x192, 512x512)."
+        },
+        {
+          "name": "Налаштуйте параметри",
+          "text": "За потреби встановіть колір фону для іконок, де джерельне зображення має прозорий фон."
+        },
+        {
+          "name": "Завантажте іконки",
+          "text": "Завантажте окремі файли або весь набір одним ZIP-архівом. Архів містить також файл manifest.json та HTML-код для вставки."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Що таке favicon і навіщо він потрібен?",
       "html": "<p class=\"text-mid\">Favicon (від англ. favorites icon) — це маленька іконка, яка відображається у вкладці браузера, закладках, історії та на панелі завдань. Це перший візуальний елемент, за яким користувач ідентифікує ваш сайт серед десятків відкритих вкладок.</p><p class=\"text-mid mt-3\">Сучасний сайт потребує кілька розмірів favicon: від маленького 16x16 для вкладки браузера до великого 512x512 для PWA (Progressive Web App). Генератор створює всі потрібні розміри з одного зображення.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Як створити favicon для сайту?",
       "description": "Генерація favicon займає менше хвилини:",
       "grid": "four",
       "items": [
-        { "icon": "RiUploadLine", "title": "1. Додайте зображення", "description": "Завантажте логотип або іконку у форматі PNG, JPG або SVG. Найкраще підходять прості графіки з чіткими формами." },
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Додайте зображення",
+          "description": "Завантажте логотип або іконку у форматі PNG, JPG або SVG. Найкраще підходять прості графіки з чіткими формами."
+        },
         {
           "icon": "RiCheckboxMultipleLine",
           "title": "2. Оберіть розміри",
           "description": "Виберіть потрібні розміри іконок. За замовчуванням увімкнені всі основні: favicon.ico, PNG 16-512px, apple-touch-icon."
         },
-        { "icon": "RiPaletteLine", "title": "3. Налаштуйте фон", "description": "Для зображень з прозорістю встановіть колір фону. Для непрозорих зображень цей крок можна пропустити." },
-        { "icon": "RiDownloadLine", "title": "4. Завантажте набір", "description": "Завантажте весь набір іконок як ZIP або окремі файли. Архів містить manifest.json та HTML-код." }
+        {
+          "icon": "RiPaletteLine",
+          "title": "3. Налаштуйте фон",
+          "description": "Для зображень з прозорістю встановіть колір фону. Для непрозорих зображень цей крок можна пропустити."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Завантажте набір",
+          "description": "Завантажте весь набір іконок як ZIP або окремі файли. Архів містить manifest.json та HTML-код."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Які розміри favicon потрібні?",
       "html": "<p class=\"text-mid mb-4\">Різні браузери та пристрої використовують різні розміри іконок. Нижче наведено повний перелік:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Файл</th><th class=\"py-2 pr-4 font-semibold\">Розмір</th><th class=\"py-2 font-semibold\">Призначення</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon.ico</td><td class=\"py-2 pr-4 whitespace-nowrap\">16x16, 32x32, 48x48</td><td class=\"text-primary-light0 py-2 text-sm\">Класичний favicon для вкладки браузера. Мультирозмірний файл ICO.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-16x16.png</td><td class=\"py-2 pr-4 whitespace-nowrap\">16x16</td><td class=\"text-primary-light0 py-2 text-sm\">Маленька іконка для вкладки у деяких браузерах.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-32x32.png</td><td class=\"py-2 pr-4 whitespace-nowrap\">32x32</td><td class=\"text-primary-light0 py-2 text-sm\">Стандартна іконка для вкладки браузера на дисплеях Retina.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">apple-touch-icon.png</td><td class=\"py-2 pr-4 whitespace-nowrap\">180x180</td><td class=\"text-primary-light0 py-2 text-sm\">Іконка для iOS при додаванні сайту на головний екран.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">android-chrome-192x192.png</td><td class=\"py-2 pr-4 whitespace-nowrap\">192x192</td><td class=\"text-primary-light0 py-2 text-sm\">Іконка для Android та PWA (manifest.json).</td></tr><tr><td class=\"py-2 pr-4 font-medium\">android-chrome-512x512.png</td><td class=\"py-2 pr-4 whitespace-nowrap\">512x512</td><td class=\"text-primary-light0 py-2 text-sm\">Велика іконка для PWA splash screen та Google.</td></tr></tbody></table></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Як додати favicon на сайт?",
       "grid": "two",
       "items": [
-        { "icon": "RiCodeLine", "title": "HTML", "description": "Додайте теги &lt;link&gt; у &lt;head&gt; сторінки. Генератор створює готовий HTML-код, який достатньо скопіювати." },
-        { "icon": "RiWordpressLine", "title": "WordPress", "description": "Перейдіть у Зовнішній вигляд → Налаштувати → Ідентифікація сайту → Іконка сайту. Завантажте зображення 512x512." },
-        { "icon": "RiNextjsLine", "title": "Next.js", "description": "Помістіть favicon.ico та apple-touch-icon.png у папку app/. Next.js автоматично підхопить їх." },
-        { "icon": "RiGlobalLine", "title": "PWA", "description": "Додайте файл manifest.json з посиланнями на іконки 192x192 та 512x512. Генератор створює готовий manifest." }
+        {
+          "icon": "RiCodeLine",
+          "title": "HTML",
+          "description": "Додайте теги &lt;link&gt; у &lt;head&gt; сторінки. Генератор створює готовий HTML-код, який достатньо скопіювати."
+        },
+        {
+          "icon": "RiWordpressLine",
+          "title": "WordPress",
+          "description": "Перейдіть у Зовнішній вигляд → Налаштувати → Ідентифікація сайту → Іконка сайту. Завантажте зображення 512x512."
+        },
+        {
+          "icon": "RiNextjsLine",
+          "title": "Next.js",
+          "description": "Помістіть favicon.ico та apple-touch-icon.png у папку app/. Next.js автоматично підхопить їх."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "PWA",
+          "description": "Додайте файл manifest.json з посиланнями на іконки 192x192 та 512x512. Генератор створює готовий manifest."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Чим особливий цей генератор favicon?",
       "grid": "two",
       "items": [
-        { "icon": "RiShieldCheckLine", "title": "Конфіденційність", "description": "Файли обробляються у браузері — нічого не надсилається на сервер. Ваш логотип залишається приватним." },
-        { "icon": "RiCheckboxCircleLine", "title": "Відповідність Lighthouse", "description": "Згенеровані іконки відповідають вимогам Google Lighthouse для PWA та SEO." },
-        { "icon": "RiArchiveLine", "title": "Повний набір одним кліком", "description": "Завантажте всі розміри, manifest.json та HTML-код одним ZIP-архівом." },
-        { "icon": "RiCodeLine", "title": "Готовий HTML-код", "description": "Генератор створює HTML-теги для вставки у head — достатньо скопіювати та вставити." }
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Конфіденційність",
+          "description": "Файли обробляються у браузері — нічого не надсилається на сервер. Ваш логотип залишається приватним."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Відповідність Lighthouse",
+          "description": "Згенеровані іконки відповідають вимогам Google Lighthouse для PWA та SEO."
+        },
+        {
+          "icon": "RiArchiveLine",
+          "title": "Повний набір одним кліком",
+          "description": "Завантажте всі розміри, manifest.json та HTML-код одним ZIP-архівом."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Готовий HTML-код",
+          "description": "Генератор створює HTML-теги для вставки у head — достатньо скопіювати та вставити."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Часті запитання про генератор favicon",
@@ -134,8 +211,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Інші інструменти" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Інші інструменти"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }
