@@ -50,7 +50,7 @@
     "nameTag": "Tag sa ngalan",
     "nameTagPlaceholder": "Pananglitan: Art Director",
     "jobTitle": "Posisyon",
-    "jobTitlePlaceholder": "Web Developer",
+    "jobTitlePlaceholder": "Tigbuhat og Website",
     "company": "Ngalan sa kompanya",
     "companyPlaceholder": "Imong kompanya / brand",
     "extraLine": "Dugang nga linya (mubo nga deskripsyon)",
@@ -58,13 +58,13 @@
     "email": "E-mail *",
     "emailPlaceholder": "juan.delacruz@pananglitan.ph",
     "phone": "Telepono",
-    "phonePlaceholder": "+48 600 000 000",
+    "phonePlaceholder": "+63 917 123 4567",
     "website": "Website",
     "websitePlaceholder": "https://www.imongsite.ph",
     "address": "Adres (opsyonal)",
-    "addressPlaceholder": "ul. Dobra 3, 30-000 Kraków",
-    "formalLine": "Pormal nga datos (pananglitan: NIP, numero sa lisensya)",
-    "formalLinePlaceholder": "Pananglitan: NIP: 0000000000 • REGON: 000000000"
+    "addressPlaceholder": "Osmeña Blvd 10, Cebu City 6000",
+    "formalLine": "Pormal nga datos (pananglitan: TIN, numero sa lisensya)",
+    "formalLinePlaceholder": "Pananglitan: TIN: 000-000-000-000"
   },
   "buttons": {
     "title": "Mga CTA button",
