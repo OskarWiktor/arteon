@@ -1211,6 +1211,41 @@ export function getDefaultSignature(locale: Locale): SignatureConfig {
       avatarUrl: '',
     };
   }
+  if (locale === 'ig') {
+    return {
+      fullName: 'Chukwuemeka Okafor',
+      jobTitle: 'Onye na-arụ weebụsaịtị',
+      company: 'Arteon Agency',
+      topLine: '',
+      nameTag: '',
+      email: 'chukwuemeka.okafor@iheatu.ng',
+      phone: '+234 803 123 4567',
+      website: 'https://www.weebusaitigi.ng',
+      address: '10 Azikiwe Road, Onitsha',
+      extraLine: 'Ana m arụ weebụsaịtị ngwa ngwa na nke na-arụ ọrụ nke ọma.',
+      ctaLabel: "Debe mkparịta ụka n'efu",
+      ctaUrl: 'https://www.weebusaitigi.ng',
+      cta2Label: '',
+      cta2Url: '',
+      socials: {
+        linkedin: 'https://www.linkedin.com/in/chukwuemekaokafor',
+        instagram: '',
+        facebook: '',
+        tiktok: '',
+        youtube: '',
+        x: '',
+        github: '',
+        dribbble: '',
+        behance: '',
+        whatsapp: '',
+        telegram: '',
+        pinterest: '',
+      },
+      legalNote: 'Ozi a nwere ike inwe ozi nzuzo. \u1ecc b\u1ee5r\u1ee5 na \u1ecb b\u1ee5gh\u1ecb onye a na-ezigara ya, biko gwa onye zigara ya wee hichap\u1ee5 ozi a.',
+      formalLine: '',
+      avatarUrl: '',
+    };
+  }
   return {
     fullName: 'Jan Kowalski',
     jobTitle: 'Web Developer',

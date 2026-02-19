@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "mainNavigation": "Ụzọ nleba anya isi",
+    "logoAlt": "Arteon – akara ụlọ ọrụ",
+    "closeMenu": "Mechie menu",
+    "openMenu": "Mepee menu",
+    "closeToolsList": "Mechie ndepụta ngwa ọrụ",
+    "openToolsList": "Mepee ndepụta ngwa ọrụ",
+    "toolsLabel": "Ngwa ọrụ",
+    "mobileMenu": "Menu ekwentị",
+    "aboutLabel": "Maka anyị",
+    "contactLabel": "Kpọtụrụ anyị"
+  },
+  "footer": {
+    "copyright": "Ikike niile echekwara.",
+    "description": "Ngwa ọrụ n'efu maka ndị nrụpụta weebụsaịtị, ndị na-ese ihe, na ndị na-ere ahịa.",
+    "companyDataLabel": "Ozi ụlọ ọrụ",
+    "toolsLabel": "Ngwa ọrụ",
+    "legalLabel": "Akwụkwọ iwu",
+    "cookieSettingsLabel": "Ntọala kuki"
+  },
+  "desktopOnly": {
+    "title": "Ngwa ọrụ a na-arụ ọrụ na ihuenyo buru ibu",
+    "description": "Maka iji ya nke ọma, mepee ngwa ọrụ a na kọmputa, desktọọpụ, ma ọ bụ tabuletị dị n'ụzọ ahịrị.",
+    "tipTitle": "Ndụmọdụ",
+    "tipText": "Ọ bụrụ na ị na-eji tabuletị, gbanwee gaa n'ụzọ ahịrị – mgbe obosara windo zuru ezu, ngwa ọrụ ahụ ga-eji ya."
+  },
+  "cookie": {
+    "title": "Kuki na nzuzo",
+    "description": "Anyị na-eji kuki eme ka weebụsaịtị a rụọ ọrụ, nyochaa nleba anya, na igosi mgbasa ozi. Gụọ karịa na",
+    "setPreferences": "Tọọ nhọrọ",
+    "privacyPolicy": "Iwu nzuzo",
+    "privacyPolicyHref": "/ig/iwu-nzuzo",
+    "reject": "Jụ ha niile",
+    "settings": "Ntọala",
+    "accept": "Nabata ha niile",
+    "panelTitle": "Nhọrọ nzuzo",
+    "panelDescription": "Ntọala nkwenye maka iji data.",
+    "categoriesLegend": "Ụdị",
+    "essentialTitle": "Dị mkpa",
+    "essentialDescription": "Weebụsaịtị enweghị ike ịrụ ọrụ na-enweghị ndị a. Ha anaghị anakọta data ire ere.",
+    "essentialStatus": "Na-arụ ọrụ mgbe niile",
+    "analyticsTitle": "Nyocha (GA4)",
+    "analyticsDescription": "Ndekọ nleta. Ọ na-eme ka Google Analytics 4 rụọ ọrụ site na nkwenye gị.",
+    "analyticsLabel": "Mee ka nyocha GA4 rụọ ọrụ",
+    "adsTitle": "Mgbasa ozi (Google AdSense)",
+    "adsDescription": "Mgbasa ozi dabara na mmasị gị.",
+    "adsLabel": "Mee ka mgbasa ozi nkeonwe rụọ ọrụ",
+    "changeDecision": "Ị nwere ike ịgbanwe mkpebi gị oge ọ bụla",
+    "save": "Chekwaa"
+  },
+  "skipToContent": "Wụga gaa na ọdịnaya",
+  "legal": [{ "key": "privacy", "href": "/ig/iwu-nzuzo", "label": "Iwu nzuzo" }],
+  "breadcrumbs": { "home": "Ụlọ", "ariaLabel": "ụzọ nleba anya breadcrumbs" },
+  "contactForm": {
+    "nameLabel": "Aha zuru ezu",
+    "namePlaceholder": "Chukwuemeka Okafor",
+    "emailLabel": "Email",
+    "emailPlaceholder": "chukwuemeka@example.com",
+    "subjectLabel": "Isiokwu",
+    "subjectPlaceholder": "dịka ọmụmaatụ Mkpesa njehie | Aro ngwa ọrụ | Ajụjụ",
+    "messageLabel": "Ozi",
+    "messagePlaceholder": "Kọwaa ajụjụ ma ọ bụ aro gị...",
+    "send": "Zipu",
+    "error": "Ihe fulara adabaghị. Biko lelee data gị wee nwaa ọzọ.",
+    "success": "Ezigala ozi! Anyị ga-aza ngwa ngwa."
+  },
+  "toolsCarousel": {
+    "defaultTitle": "Ngwa ọrụ n'efu",
+    "seeAllTools": "Hụ ngwa ọrụ niile",
+    "carouselLabel": "Carousel ngwa ọrụ",
+    "scrollLeft": "Pịgharịa gaa n'aka ekpe",
+    "scrollRight": "Pịgharịa gaa n'aka nri",
+    "carouselNavigation": "Ụzọ nleba anya carousel",
+    "goToSlide": "Gaa na peeji",
+    "of": "n'ime",
+    "slide": "Peeji",
+    "tool": "Ngwa ọrụ",
+    "openTool": "Mepee ngwa ọrụ"
+  },
+  "languageSwitcher": {
+    "switchTitle": "Gbanwee gaa Igbo",
+    "toggleLabel": "Gbanwee asụsụ",
+    "chooseLabel": "Họrọ asụsụ",
+    "popularLabel": "Ndị a ma ama",
+    "otherLabel": "Ndị ọzọ",
+    "closeModalLabel": "Mechie"
+  },
+  "mobileNav": { "close": "Mechie", "services": "Ọrụ", "contact": "Kpọtụrụ anyị" },
+  "infoBanner": {
+    "text": "Emelitere njikọta mbinye aka email – hụ ihe ọhụrụ",
+    "linkText": "ngwa ọrụ"
+  }
+}

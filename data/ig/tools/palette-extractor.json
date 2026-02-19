@@ -1,0 +1,255 @@
+{
+  "toolKey": "paletteExtractor",
+  "locale": "ig",
+  "metadata": {
+    "title": "Onye Mwepụta Agba Site na Onyonyo n'efu – Paleti Site na Foto Ọ bụla",
+    "description": "Bulite foto ma ọ bụ logo wee wepụta ruo agba isi 12 nwere koodu HEX na RGB. Zuru ezu maka UI, akara na mmekọrịta. Enweghị ndebanye aha, enweghị oke.",
+    "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
+    "path": "/ig/ngwa-oru/iweputa-agba-site-na-onyonyo"
+  },
+  "hero": {
+    "title": "Onye Mwepụta Agba Onyonyo – Nweta Paleti Site na Foto Ọ bụla",
+    "description": "Bulite foto, logo, ma ọ bụ onyonyo, ngwa ọrụ ahụ ga-ewepụta ruo agba isi 12 nwere koodu HEX na RGB. Nyocha na-eme n'ime ihe nchọgharị gị.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/ig/ngwa-oru", "label": "Ngwa ọrụ" },
+    "third": { "href": "/ig/ngwa-oru/iweputa-agba-site-na-onyonyo", "label": "Onye mwepụta agba onyonyo" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Onye mwepụta agba onyonyo — onye emepụta paleti n'efu",
+      "alternateName": ["Wepụta paleti agba site na foto ma ọ bụ logo"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorExtractor",
+      "description": "Onye mwepụta agba onyonyo n'efu. Bulite foto, logo, ma ọ bụ onyonyo wee nweta paleti ruo agba isi 12 nwere koodu HEX na RGB. Nhazi na-eme n'ime ihe nchọgharị — a naghị eziga faịlụ gaa sava.",
+      "featureList": [
+        "Ịwepụta agba isi ruo 12 na-akpaghị aka",
+        "Nyocha foto, logo, na onyonyo vector",
+        "Koodu agba na usoro HEX na RGB",
+        "Detuo koodu agba gaa clipboard",
+        "Nkwado maka faịlụ PNG, JPG, na SVG",
+        "Ịhapụ pixel a na-ahụ site na ya na faịlụ PNG",
+        "Nhazi n'ime ihe nchọgharị — a naghị eziga onyonyo gaa sava"
+      ]
+    },
+    "howTo": {
+      "name": "Otu esi ewepụta agba site na foto ma ọ bụ onyonyo",
+      "description": "Otu esi ewepụta agba isi site na foto ma ọ bụ logo. Bulite onyonyo na usoro PNG, JPG, ma ọ bụ SVG, ngwa ọrụ ahụ ga-emepụta paleti ruo agba 12 nwere koodu HEX.",
+      "steps": [
+        { "name": "Bulite onyonyo", "text": "Dọkpụrụ faịlụ tinye na mpaghara ahọpụtara ma ọ bụ họrọ onyonyo site na ngwaọrụ gị. Usoro a na-akwado: PNG, JPG, na SVG." },
+        { "name": "Chere nyocha", "text": "Ngwa ọrụ ahụ ga-enyocha onyonyo na-akpaghị aka wee wepụta agba ndị isi." },
+        { "name": "Detuo agba", "text": "N'akụkụ agba ọ bụla ị ga-ahụ bọtịnụ idetuo — a na-edetuo koodu HEX gaa clipboard ngwaọrụ gị." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Gịnị mere ị ga-eji wepụta agba site na onyonyo?",
+      "html": "<p class=\"mb-4\">Foto, logo, ma ọ bụ onyonyo ọ bụla nwere agba nke nwere ike ịrụ ọrụ dịka paleti agba emechara. Onye mwepụta ahụ na-enyocha onyonyo ma na-egosi agba ndị na-achị achị — nwere koodu HEX na uru RGB dị njikere imado n'ọrụ gị.</p><p class=\"mb-4\">N'omume, nke a pụtara na kama ịhọrọ agba n'aka n'ime ngwa onyonyo (pixel site na pixel), ị na-ebulite otu onyonyo wee nweta ndepụta ahaziri nke ruo agba 12. Nke a bara uru mgbe ị na-ahọrọ agba maka weebụsaịtị, na-emepụta onyonyo mmekọrịta kwekọrọ, ma ọ bụ na-ewu ịmata anya site na ihe dị adị.</p><p>Nyocha niile na-eme n'ime ihe nchọgharị — a naghị eziga onyonyo gaa sava ọ bụla.</p>"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionSteps",
+      "title": "Otu esi eji onye mwepụta agba onyonyo",
+      "description": "Usoro niile na-ewe naanị nkeji ole na ole:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Bulite onyonyo", "description": "Dọkpụrụ faịlụ tinye na mpaghara ahọpụtara ma ọ bụ họrọ site na ngwaọrụ gị. Usoro a na-akwado: PNG, JPG, na SVG." },
+        { "title": "2. Chere nyocha", "description": "Ngwa ọrụ ahụ ga-enyocha onyonyo na-akpaghị aka wee wepụta ruo agba isi 12." },
+        { "title": "3. Detuo agba ị chọrọ", "description": "N'akụkụ agba ọ bụla bọtịnụ idetuo dị — koodu HEX ma ọ bụ RGB na-aga clipboard a pụrụ imado ya ozugbo n'ọrụ gị." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Kedu ka paleti agba ewepụtara si dị?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Ihe atụ agba ewepụtara site na onyonyo ụwa</p></div>",
+      "html": "<p class=\"text-mid mb-4\">Mgbe ibulitechara onyonyo, onye mwepụta ahụ na-egosi ndepụta agba isi ahaziri site na nke na-achị achị kachasị ruo nke kachasị nta. Agba ọ bụla na-egosi koodu HEX ya na uru RGB — dị njikere imado na CSS, Figma, ma ọ bụ ngwa onyonyo ọ bụla.</p><p class=\"text-mid\">Ọnụọgụ agba ewepụtara dabere na ọdịnaya onyonyo. Foto ala ga-ewepụta paleti bara ụba karịa (agba 8–12), ma logo dị mfe nwere agba abụọ ga-enye nsorita obere kwa.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Onyonyo ole na-enye nsorita kacha mma n'onye mwepụta agba?",
+      "description": "Mma paleti ewepụtara dabere na ụdị onyonyo ebulitere:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiImageLine",
+          "title": "Logo na onyonyo nwere paleti kọmpakịtị",
+          "description": "Onyonyo nwere agba ole na ole nke ekewapụrụ nke ọma na-enye nsorita zuru ezu kachasị — onye mwepụta ahụ na-amata agba ọ bụla nke ọma."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Foto nwere ihe a na-elekwasị anya doro anya",
+          "description": "Foto ngwaahịa, ime ụlọ, ma ọ bụ ala na-ewepụtakwa paleti bara uru, ma ha nwere ụdị agba karịa — gụnyere agba onyinyo na ìhè."
+        },
+        {
+          "icon": "RiEraserLine",
+          "title": "Faịlụ PNG nwere ndabere a na-ahụ site na ya",
+          "description": "A na-ahapụ pixel a na-ahụ site na ya na-akpaghị aka n'oge nyocha. Ọ bụrụ na ị chọrọ ịwepụta agba site na ihe naanị (dịka ọmụmaatụ, logo), jiri faịlụ PNG na-enweghị ndabere."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Onyonyo na-enweghị otu ndabere agba buru ibu",
+          "description": "Mgbe ndabere na-ekpuchi ọtụtụ mpaghara onyonyo, agba ya na-achị nsorita. Tupu ibulite, tụlee ịkpụcha onyonyo gaa mpaghara ị nwere mmasị na ya."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTimeline",
+      "title": "Kedu ka ịwepụta agba onyonyo si arụ ọrụ?",
+      "description": "Mgbe ebulitechara faịlụ, ngwa ọrụ ahụ na-eme ọtụtụ nzọụkwụ n'azụ — nyocha niile na-eme n'ime ihe nchọgharị:",
+      "items": [
+        {
+          "icon": "RiZoomInLine",
+          "title": "Ịgbanwe nha onyonyo",
+          "description": "A na-agbanwe nha onyonyo gaa ihe dịka 240 pixel obosara. Nke a na-eme ka nyocha dị ngwa ọ bụrụgodị maka foto buru nnọọ ibu, na-enweghị mmetụta na ịzụrụ oke nke ịchọpụta agba."
+        },
+        {
+          "icon": "RiGroupLine",
+          "title": "Ịchịkọta agba yiri ibe",
+          "description": "A na-enyocha pixel ọ bụla, a na-ejikọta ụdị yiri ibe n'otu otu. Anụnụ abụọ fere yie ibe na-aghọ otu agba na paleti."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Ịhọrọ agba ndị isi",
+          "description": "Algorithm ahụ na-ahọrọ agba ndị na-ekpuchi mpaghara kachasị ukwuu nke onyonyo. Nsorita bụ ndepụta ruo agba 12 ahaziri site na nke na-achị achị kachasị ruo nke kachasị nta."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Ịhapụ pixel a na-ahụ site na ya",
+          "description": "Na faịlụ PNG nwere ndabere a na-ahụ site na ya, a naghị etinye mpaghara ndị ahụ na nyocha — onye mwepụta ahụ na-enyocha naanị agba a pụrụ ịhụ anya. Usoro niile na-ewekarị obere karịa otu nkeji."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Idozi nsogbu onye mwepụta agba",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBarChartLine",
+          "title": "Onye mwepụta weghachitere obere karịa agba 12",
+          "description": "Ọnụọgụ agba ewepụtara dabere na ọdịnaya onyonyo. Logo dị mfe nwere agba abụọ ga-enye nsorita 2–3 — nke a bụ omume ziri ezi. Ngwa ọrụ ahụ anaghị etinye agba aghụghọ; ọ na-ewepụta naanị ndị dị n'onyonyo."
+        },
+        {
+          "icon": "RiAlertLine",
+          "title": "Agba a na-atụghị anya pụtara na paleti",
+          "description": "Ndị a nwere ike ịbụ agba onyinyo, mgbanwe nwayọọ nwayọọ, ma ọ bụ ìhè — pixel na mpaghara ndị ahụ nwere agba dị iche na ihe a na-ahụ na nlele mbụ. Iji onyonyo nwere agba kwekọrọ karịa ma ọ bụ ịkpụcha mpaghara ojii ga-eme ka nsorita dị mma karịa."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Agba ndabere na-achị nsorita",
+          "description": "Mgbe ndabere na-ekpuchi mpaghara karịa ihe n'onwe ya, agba ya ga-apụta na mbụ n'elu ndepụta. Ihe ọma: jiri faịlụ PNG nwere ndabere a na-ahụ site na ya ma ọ bụ kpuchaa onyonyo ka ihe ahụ were akụkụ buru ibu karịa nke freemu."
+        },
+        {
+          "icon": "RiFileWarningLine",
+          "title": "Onye mwepụta anaghị anabata faịlụ",
+          "description": "Ngwa ọrụ ahụ na-akwado naanị usoro PNG, JPG, na SVG. Faịlụ na usoro ndị ọzọ (GIF, TIFF, HEIC, PDF) chọrọ ịgbanwe usoro tupu."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Gịnị mere onye mwepụta agba onyonyo a ji dị iche?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Nyocha nzuzo — onyonyo anaghị ahapụ kọmputa gị",
+          "description": "Ịwepụta agba niile na-eme n'ime ihe nchọgharị. A naghị eziga onyonyo gaa sava ọ bụla, mgbe emechisịrị peeji, a na-ewepụ data n'ebe nchekwa."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Ruo agba isi 12 site n'otu onyonyo",
+          "description": "Ngwa ọrụ ahụ na-ewepụta ruo agba 12 ahaziri site na nke na-achị achị kachasị — nke kwuru maka iwu paleti agba ọrụ zuru ezu."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Usoro onyonyo a ma ama atọ",
+          "description": "Usoro a na-akwado: PNG, JPG, na SVG. Faịlụ PNG nwere ndabere a na-ahụ site na ya na-enye nsorita kacha mma n'ihi na a na-ahapụ pixel a na-ahụ site na ya na-akpaghị aka."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Koodu HEX na RGB dị njikere imado",
+          "description": "Agba ọ bụla ewepụtara na-abịa nwere koodu HEX ya (dịka ọmụmaatụ, #2C5F2D) na uru RGB. Ị nwere ike idetuo koodu gaa clipboard imado ya ozugbo na CSS, Figma, ma ọ bụ Photoshop."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Ebee ka ị nwere ike iji agba ewepụtara site na onyonyo",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Iwu ịmata anya",
+          "description": "Bulite foto na-akpali mmetụta akara — ala, ime ụlọ oriri, foto ngwaahịa — wee wepụta agba dịka ntọala maka paleti akara."
+        },
+        {
+          "icon": "RiLayoutMasonryLine",
+          "title": "Onyonyo mmekọrịta",
+          "description": "Wepụta agba site na foto ngwaahịa wee jiri ha dịka ndabere ma ọ bụ agba mgbakwụnye na onyonyo. Ederede dabere na agba site n'otu isi mmalite na-adị mma na profaịlụ."
+        },
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Ịdakọrịta agba maka weebụsaịtị",
+          "description": "Wepụta agba site na logo wee jiri ha dịka paleti agba peeji — agba isi, agba mmetụta, ụdị ndabere. Koodu HEX na-amado ozugbo na CSS."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Ịgbasawanye paleti dị adị",
+          "description": "Ị nwere ike iji agba isi ewepụtara na <a href=\"/ig/ngwa-oru/onye-emeputa-paleti-agba\">onye emepụta paleti agba</a> iji mepụta usoro zuru ezu nke agba kwekọrọ dabere na amamihe agba."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Ajụjụ a na-ajụkarị gbasara onye mwepụta agba onyonyo",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Onye mwepụta agba onyonyo ọ chọrọ ndebanye aha?",
+          "answer": "Mba. Ngwa ọrụ ahụ bụ n'efu kpamkpam ma achọghị nbanye ma ọ bụ ndebanye aha. A na-enyocha onyonyo n'ime ihe nchọgharị — a naghị eziga ya gaa sava ọ bụla. Mgbe emechisịrị peeji, a na-ewepụ data niile.",
+          "answerSchemaText": "Mba. Ngwa ọrụ ahụ bụ n'efu ma achọghị ndebanye aha. A na-enyocha onyonyo n'ime ihe nchọgharị."
+        },
+        {
+          "question": "Kedu ka onye mwepụta agba si dị iche na onye emepụta paleti?",
+          "answer": "Onye mwepụta na-ewepụta agba site na onyonyo dị adị — ọ na-enyocha foto ma na-egosi agba ndị na-achị achị na ya. Onye emepụta paleti agba na-arụ ọrụ n'ụzọ ọzọ: ị na-enye otu agba isi, ngwa ọrụ ahụ na-emepụta usoro kwekọrọ dabere na amamihe agba. Ngwa ọrụ abụọ ndị a na-akwado ibe ha — ị nwere ike ịwepụta agba site na onyonyo mgbe ahụ jiri ya dịka isi na onye emepụta paleti.",
+          "answerSchemaText": "Onye mwepụta na-ewepụta agba site na onyonyo. Onye emepụta na-emepụta paleti site n'agba isi. Ngwa ọrụ abụọ na-akwado ibe ha."
+        },
+        {
+          "question": "Ole agba ka onye mwepụta na-ewepụta site n'otu onyonyo?",
+          "answer": "Ngwa ọrụ ahụ na-ewepụta ruo agba isi 12. Ọnụọgụ kpọmkwem dabere na ọdịnaya onyonyo — ọ bụrụ na onyonyo nwere naanị agba abụọ (dịka ọmụmaatụ, logo dị mfe), nsorita ga-adị obere kwa. A na-ahazi agba site na nke na-achị achị kachasị ruo nke kachasị nta.",
+          "answerSchemaText": "Ruo agba isi 12, ahaziri site na nke na-achị achị kachasị ruo nke kachasị nta."
+        },
+        {
+          "question": "Usoro onyonyo ole ka onye mwepụta agba na-akwado?",
+          "answer": "Usoro a na-akwado: PNG, JPG (JPEG), na SVG. Faịlụ PNG nwere ndabere a na-ahụ site na ya na-enye nsorita ka mma n'ihi na a na-ahapụ pixel a na-ahụ site na ya n'oge nyocha — ngwa ọrụ ahụ na-elekwasị anya na agba ihe n'onwe ya.",
+          "answerSchemaText": "PNG, JPG, na SVG. PNG nwere ndabere a na-ahụ site na ya na-enye nsorita kacha mma."
+        },
+        {
+          "question": "N'ụzọ ole ka m ga-esi nweta koodu agba ewepụtara?",
+          "answer": "A na-egosi agba ọ bụla nwere koodu HEX ya (dịka ọmụmaatụ, #2C5F2D) na uru RGB (dịka ọmụmaatụ, rgb(44, 95, 45)). Ị nwere ike idetuo koodu gaa clipboard imado ya ozugbo na CSS, Figma, Photoshop, ma ọ bụ ngwa onyonyo ọ bụla ọzọ.",
+          "answerSchemaText": "HEX (dịka ọmụmaatụ, #2C5F2D) na RGB (dịka ọmụmaatụ, rgb(44, 95, 45)). Ị nwere ike idetuo gaa clipboard."
+        },
+        {
+          "question": "Enwere m ike idetuo agba paleti niile n'otu oge?",
+          "answer": "Ugbu a ngwa ọrụ ahụ na-enye gị ohere idetuo agba otu otu — n'akụkụ agba ọ bụla bọtịnụ dị nke na-edetuo koodu HEX gaa clipboard. Ị nwere ike imado koodu edetuora ozugbo na Figma, Photoshop, CSS, ma ọ bụ ngwa ọ bụla ọzọ.",
+          "answerSchemaText": "A na-edetuo agba otu otu site na bọtịnụ idetuo n'akụkụ agba ọ bụla."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Chọpụta ngwa ọrụ ndị ọzọ" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

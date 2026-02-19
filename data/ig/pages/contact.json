@@ -1,0 +1,28 @@
+{
+  "slug": "kpoturu-anyi",
+  "metadata": {
+    "title": "Kpọtụrụ Arteon – Nkwado na nzaghachi maka ngwa ọrụ n'efu",
+    "description": "Kpọtụrụ otu Arteon. Kpesaa njehie, tụọ aro ngwa ọrụ ọhụrụ ma ọ bụ jụọ ajụjụ gbasara ngwa ọrụ anyị n'efu maka onyonyo, SEO, agba na koodu QR. Anyị ga-aza n'ime otu ụbọchị ọrụ."
+  },
+  "hero": {
+    "title": "Kpọtụrụ otu Arteon",
+    "description": "Kpesaa njehie, tụọ aro ngwa ọrụ ọhụrụ ma ọ bụ jụọ ajụjụ — anyị ga-aza n'ime otu ụbọchị ọrụ"
+  },
+  "intro": {
+    "title": "Ị nwere ajụjụ ma ọ bụ aro?",
+    "textBefore": "Anyị na-enwe obi ụtọ ịnụ nzaghachi gị gbasara ngwa ọrụ anyị. Ọ bụrụ na ị hụrụ njehie, nwere echiche maka ngwa ọrụ ọhụrụ ma ọ bụ chọọ enyemaka — dee anyị na",
+    "textAfter": ". Anyị ga-aza n'ime otu ụbọchị ọrụ."
+  },
+  "formTitle": "Zigara anyị ozi",
+  "details": {
+    "title": "Ozi mkpọtụrụ",
+    "emailLabel": "Email",
+    "hoursLabel": "Oge ọrụ",
+    "hoursValue": "Mọnde – Fraịde: 8:00 – 16:00 (CET)"
+  },
+  "cta": {
+    "title": "Laghachi na ngwa ọrụ",
+    "description": "Ngwa ọrụ 10 n'efu maka ọrụ na onyonyo, ederede na agba",
+    "btnOne": "Ngwa ọrụ"
+  }
+}

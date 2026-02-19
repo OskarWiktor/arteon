@@ -46,6 +46,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       af: { title: 'Beelde en favicons' },
       uk: { title: 'Зображення та favicon' },
       ceb: { title: 'Mga hulagway ug favicon' },
+      ig: { title: 'Onyonyo na favicon' },
     },
   },
   {
@@ -85,6 +86,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       af: { title: 'Meta & SEO' },
       uk: { title: 'Meta та SEO' },
       ceb: { title: 'Meta ug SEO' },
+      ig: { title: 'Meta na SEO' },
     },
   },
   {
@@ -124,6 +126,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       af: { title: 'E-pos & kommunikasie' },
       uk: { title: 'Електронна пошта та комунікація' },
       ceb: { title: 'Email ug komunikasyon' },
+      ig: { title: 'Email na nkwurịta oku' },
     },
   },
   {
@@ -163,6 +166,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       af: { title: 'Kleure & palette' },
       uk: { title: 'Кольори та палітри' },
       ceb: { title: 'Mga kolor ug paleta' },
+      ig: { title: 'Agba na palette' },
     },
   },
   {
@@ -202,6 +206,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       af: { title: 'Druk & QR' },
       uk: { title: 'Друк та QR' },
       ceb: { title: 'Print ug QR' },
+      ig: { title: 'Ibipụta na QR' },
     },
   },
 ];
@@ -382,6 +387,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JPG/PNG ngadto WebP converter',
         description: 'Gamaya ang gidak-on sa mga hulagway nga walay pagkawala sa kalidad. I-convert ang JPG ug PNG ngadto WebP ug padasiga ang imong website.',
       },
+      ig: {
+        slug: 'gbanwee-jpg-png-gaa-webp',
+        title: 'Ngbanwe JPG/PNG gaa WebP',
+        description: 'Belata ogo faịlụ onyonyo na-enweghị mfu mma. Gbanwee JPG na PNG gaa WebP wee mee ka weebụsaịtị gị dị ngwa.',
+      },
     },
   },
   {
@@ -555,6 +565,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'editor-sa-hulagway',
         title: 'Editor sa hulagway',
         description: 'Pag-andam sa perpekto nga crop para sa social media o imong website. Pagpili og andam na nga format o pagsulod og custom nga gidak-on.',
+      },
+      ig: {
+        slug: 'edita-onyonyo',
+        title: 'Edita onyonyo',
+        description: 'Kwadebe mkpụrụ zuru oke maka mgbasa ozi mmekọrịta ma ọ bụ weebụsaịtị gị. Họrọ usoro emechara ma ọ bụ tinye nha nke gị.',
       },
     },
   },
@@ -730,6 +745,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Favicon generator',
         description: 'Paghimo og favicon.ico ug PNG icon gikan sa usa ka hulagway, sumala sa mga kinahanglanon sa browser ug Lighthouse.',
       },
+      ig: {
+        slug: 'njikota-favicon-nefu',
+        title: 'Njikọta favicon',
+        description: 'Site na otu onyonyo mepụta favicon.ico na akara PNG ndị kwekọrọ na ihe achọrọ nke ihe nchọgharị na Lighthouse.',
+      },
     },
   },
   {
@@ -903,6 +923,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'tigsusi-sa-meta-titulo-ug-deskripsyon',
         title: 'Tigsusi sa meta titulo ug deskripsyon',
         description: 'Susiha ang ihap sa karakter ug tan-awa kung giunsa pagpakita ang imong panid sa Google. Likayan ang mga naputol nga titulo ug deskripsyon.',
+      },
+      ig: {
+        slug: 'nyocha-meta-aha-na-nkowa',
+        title: 'Nyocha meta aha na nkọwa',
+        description: 'Lelee ọnụ ọgụgụ mkpụrụedemede wee hụ ụzọ peeji gị si pụta na Google. Zere aha na nkọwa e bipụtara na nsorita ọchụchọ.',
       },
     },
   },
@@ -1078,6 +1103,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Tigihap sa pulong ug karakter',
         description: 'Susiha ang gitas-on sa teksto ug i-evaluate kung angay kini para sa homepage, service page, blog post, o product description.',
       },
+      ig: {
+        slug: 'agu-okwu-na-mkpuruedemede',
+        title: 'Ọgụgụ okwu na mkpụrụedemede',
+        description: 'Lelee ogologo ederede wee nyochaa ma ọ dabara maka peeji ụlọ, peeji ọrụ, edemede blọọgụ, ma ọ bụ nkọwa ngwaahịa.',
+      },
     },
   },
   {
@@ -1251,6 +1281,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'libre-nga-email-pirma-generator',
         title: 'Email signature generator',
         description: 'Paghimo og propesyonal nga email signature. Isulod ang mga detalye, pagpili og kolor, ug kopyaha ang andam na nga HTML code para sa Gmail o Outlook.',
+      },
+      ig: {
+        slug: 'njikota-mbinye-aka-email-nefu',
+        title: 'Njikọta mbinye aka email',
+        description: 'Wuo mbinye aka email nke ọkachamara n\u2019otu nkeji ole na ole. Detuo koodu HTML emechara tinye na Gmail ma ọ bụ Outlook.',
       },
     },
   },
@@ -1426,6 +1461,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Tigsusi sa kontras sa kolor',
         description: 'Susiha ang kontras ug readability sa kolor sa teksto ug background sumala sa WCAG. Gikalkula ang contrast ratio ug nagtabang sa pag-adjust.',
       },
+      ig: {
+        slug: 'nyocha-idi-iche-agba',
+        title: 'Nyocha ịdị iche agba',
+        description: 'Lelee ma agba ederede na ndabere gị pụrụ ịgụ. Ngwa ọrụ a na-agụ ịdị iche dịka WCAG wee nyere aka ịhọrọ agba ziri ezi.',
+      },
     },
   },
   {
@@ -1599,6 +1639,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'tigkuha-sa-kolor-gikan-sa-hulagway',
         title: 'Tigkuha sa kolor gikan sa hulagway',
         description: 'Libre nga color extractor. Pag-upload og litrato o logo ug pagkuha og paleta hangtod 12 dominante nga kolor (HEX ug RGB).',
+      },
+      ig: {
+        slug: 'mweputa-agba-site-na-onyonyo',
+        title: 'Mwepụta agba site na onyonyo',
+        description: 'Bulite foto ma ọ bụ logo, ngwa ọrụ a ga-ewepụta agba ndị kachasị. Detuo koodu agba emepụtara site na otu ịpị.',
       },
     },
   },
@@ -1774,6 +1819,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Generator sa paleta sa kolor',
         description: 'Paghimo og color palette gikan sa usa ka base color. Monochromatic, triadic, analogous, complementary, ug uban pa.',
       },
+      ig: {
+        slug: 'njikota-palette-agba',
+        title: 'Njikọta palette agba',
+        description: 'Họrọ otu agba wee mepụta palette 9: monochromatic, complementary, triadic, na ndị ọzọ.',
+      },
     },
   },
   {
@@ -1947,6 +1997,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'libre-nga-qr-code-generator',
         title: 'QR code generator',
         description: 'Paghimo og QR code para sa website, vCard, menu sa restaurant, o flyer. I-export sa PNG ug SVG, walay login, walay limitasyon.',
+      },
+      ig: {
+        slug: 'njikota-koodu-qr-nefu',
+        title: 'Njikọta koodu QR n\u2019efu',
+        description: 'Mepụta koodu QR maka weebụsaịtị, vCard, menu, ma ọ bụ flaya. Bupụ na PNG na SVG, enweghị nbanye, enweghị oke.',
       },
     },
   },

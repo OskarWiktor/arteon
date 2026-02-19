@@ -1,0 +1,285 @@
+{
+  "toolKey": "colorPalette",
+  "locale": "ig",
+  "metadata": {
+    "title": "Onye Emepụta Paleti Agba n'efu – Paleti 9 Site n'Otu Agba",
+    "description": "Mepụta paleti agba 9 site n'otu agba isi: monochromatic, complementary, triadic, pastel na ndị ọzọ. Detuo HEX n'otu pịa.",
+    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "path": "/ig/ngwa-oru/onye-emeputa-paleti-agba"
+  },
+  "hero": {
+    "title": "Onye emepụta paleti agba",
+    "description": "Tinye otu agba isi, ngwa ọrụ ahụ ga-emepụta paleti agba 9 kwekọrọ: monochromatic, complementary, triadic, pastel, na ndị ọzọ. Ị nwere ike idetuo agba ọ bụla nwere koodu HEX ya.",
+    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ig/ngwa-oru",
+      "label": "Ngwa ọrụ"
+    },
+    "third": {
+      "href": "/ig/ngwa-oru/onye-emeputa-paleti-agba",
+      "label": "Onye emepụta paleti agba"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Onye emepụta paleti agba",
+      "alternateName": ["Onye emepụta usoro agba", "Onye emepụta agba", "Onye emepụta paleti agba", "Ngwa ọrụ ndakọrịta agba", "Onye emepụta nhata agba"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "ColorPaletteGenerator",
+      "description": "Onye emepụta paleti agba n'efu. Tinye otu agba HEX, ngwa ọrụ ahụ ga-emepụta usoro 9: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, na minimalist. Ị nwere ike idetuo agba ọ bụla nwere koodu HEX na uru HSL.",
+      "featureList": [
+        "Usoro monochromatic - ụdị nke otu agba",
+        "Usoro analogous - agba dị nso na kịkịl agba",
+        "Usoro complementary - agba gbagwojuru anya",
+        "Usoro triadic - agba 3 na oghere nhata",
+        "Usoro split-complementary - agba isi na 2 ndị dị nso na nke gbagwojuru anya",
+        "Paleti pastel - agba dị nro, rụrụ arụ",
+        "Paleti ojii - agba miri emi maka isiokwu ojii",
+        "Paleti tonal - ọkwa ìhè nke otu agba",
+        "Paleti minimalist - agba siri ike na agba dị nro",
+        "Agba isi na usoro HEX",
+        "Nhọpụta agba maka ịhọrọ ọdịdị",
+        "Agba mbụ na-enweghị agbanwe maka ibido",
+        "Detuo koodu HEX gaa clipboard",
+        "Uru HSL pụtara n'akụkụ agba ọ bụla",
+        "Nhazi n'ime ihe nchọgharị"
+      ]
+    },
+    "howTo": {
+      "name": "Otu esi emepụta paleti agba site n'otu agba isi",
+      "description": "Otu esi emepụta paleti agba 9 site n'otu agba isi: monochromatic, complementary, triadic, pastel, na ndị ọzọ. Ị nwere ike idetuo agba ọ bụla nwere koodu HEX ya.",
+      "steps": [
+        {
+          "name": "Họrọ agba isi",
+          "text": "Tinye koodu HEX n'ubi ederede ma ọ bụ jiri nhọpụta agba họrọ agba n'ụdị."
+        },
+        {
+          "name": "Kwado agba ahụ",
+          "text": "Kwado agba ị họrọrọ site na bọtịnụ Update Color — ngwa ọrụ ahụ ga-emepụta paleti dabere na agba isi gị."
+        },
+        {
+          "name": "Lee paleti ndị ahụ",
+          "text": "Ngwa ọrụ ahụ na-emepụta paleti 9 dị iche iche na-akpaghị aka: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, na minimalist."
+        },
+        {
+          "name": "Detuo agba ndị ahụ",
+          "text": "N'akụkụ agba ọ bụla bọtịnụ Copy dị — koodu HEX na-aga gaa clipboard, ị nwekwara ike imado ya ozugbo n'ọrụ gị."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Gịnị mere ị ga-eji mepụta paleti agba?",
+      "html": "<p class=\"text-mid\">Paleti agba kwekọrọ bụ ntọala ọrụ nhazi niile — site na weebụsaịtị, site na akara, ruo ihe ebipụtara. Ịhọrọ agba kwekọrọ n'aka chọrọ ihe ọmụma gbasara amamihe agba. Onye emepụta ahụ na-eme ya na-akpaghị aka: ị na-enye otu agba isi (dịka ọmụmaatụ, agba logo gị), ngwa ọrụ ahụ na-emepụta usoro agba 9 dabere na usoro nhata agba amụmamụ.</p><p class=\"text-mid mt-3\">Agba ọ bụla emepụtara na-abịa nwere koodu HEX ya (dịka ọmụmaatụ, #4F6BF5) na uru HSL (hue, saturation, lightness). Ị nwere ike imado koodu HEX ozugbo na CSS, Figma, Canva, ma ọ bụ ngwa onyonyo ọ bụla.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Otu esi eji onye emepụta paleti agba",
+      "description": "Usoro niile na-ewe naanị nkeji ole na ole:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Tinye agba isi",
+          "description": "Tinye koodu HEX (dịka ọmụmaatụ, #4F6BF5) n'ubi ederede ma ọ bụ họrọ agba site na nhọpụta agba. Ị nwekwara ike iji bọtịnụ Random Color."
+        },
+        {
+          "title": "2. Kwado nhọrọ gị",
+          "description": "Mgbe ịpịchara bọtịnụ Update Color, ngwa ọrụ ahụ na-emepụta paleti 9 na-akpaghị aka dabere na usoro nhata agba dị iche iche."
+        },
+        {
+          "title": "3. Detuo agba ị chọrọ",
+          "description": "N'akụkụ agba ọ bụla bọtịnụ Copy dị — koodu HEX na-aga gaa clipboard, ị nwekwara ike imado ya ozugbo n'ọrụ gị."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Usoro agba ole ka ngwa ọrụ ahụ na-emepụta?",
+      "description": "Onye emepụta ahụ na-emepụta ụdị paleti 9 — nke ọ bụla dabere na ụkpụrụ amamihe agba dị iche:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiStackLine",
+          "title": "Paleti monochromatic",
+          "description": "Ụdị nke otu agba — site na nke dị ìhè ruo nke ojii. Agba niile nwere otu hue na kịkịl agba, ha na-adị iche naanị na ìhè. Ọ na-arụ ọrụ nke ọma na nhazi eleganti, minimalist ebe ịha nhata dị mkpa."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Paleti analogous",
+          "description": "Agba dị nso na kịkịl agba (ntụgharị ihe dịka 30° n'akụkụ abụọ site n'isi). Ha na-emepụta mgbanwe agba kwekọrọ, dị nro. Ọ dị mma maka ọrụ na-ewu ikuku dị ọkụ ma ọ bụ oyi."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Paleti complementary",
+          "description": "Agba isi na agba gbagwojuru anya na kịkịl agba (ntụgharị 180°). Ọ na-emepụta ọdịiche nhazi siri ike. Ọ bara uru ebe achọrọ ka ihe dọta anya — bọtịnụ, aha akwụkwọ, ọkọlọtọ mgbasa ozi."
+        },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Paleti triadic",
+          "description": "Agba atọ nwere oghere 120° n'etiti ha na kịkịl agba — na-emepụta triangle nhata. Njikọta siri ike, dị iche iche. Ọ na-arụ ọrụ nke ọma na ọrụ ịke: ịmata akara azụmaahịa, ihe mgbasa ozi, akwụkwọ mgbasa ozi."
+        },
+        {
+          "icon": "RiCursorLine",
+          "title": "Paleti split-complementary",
+          "description": "Ụdị dị nro nke paleti complementary. Kama otu agba gbagwojuru anya, ọ na-eji agba abụọ ntụgharịrị ihe dịka 30° site na complement. Ọ na-enye ọdịiche a na-ahụ anya ma na-enweghị ịdị ike nhazi."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Paleti pastel",
+          "description": "Otu hue nwere saturation belataara na lightness abawanyere — agba dị nro, na-atọ ụtọ. A ma ama na mma, uwe ụmụaka, na ụlọ ọrụ nri. Ọ dabara na ndabere dị ìhè na oghere ọcha."
+        },
+        {
+          "icon": "RiMoonLine",
+          "title": "Paleti ojii",
+          "description": "Agba isi nwere saturation dị elu na lightness belataara — agba miri emi, siri ike. Ọ bara uru maka nhazi isiokwu ojii maka weebụsaịtị na ngwa, yana ihe maka akara dị elu."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Paleti tonal",
+          "description": "Ọtụtụ nzọụkwụ ìhè nke otu hue — site na nke dị ìhè nke ọma ruo ojii. Ọ yiri ọkwa tonal a na-eji na usoro nhazi (dịka ọmụmaatụ, ụdị site na 50 ruo 900). Ọ bara uru maka iwu interface ebe otu agba chọrọ ụdị."
+        },
+        {
+          "icon": "RiContractLeftRightLine",
+          "title": "Paleti minimalist",
+          "description": "Otu ọdịiche agba siri ike na ọtụtụ agba dị ìhè nke nro. Paleti ndị fọdụrụ dị jụụ. Ọ na-arụ ọrụ nke ọma na interface ọgbara ọhụrụ nwere oghere ọcha ọtụtụ — nhazi peeji ngwaahịa na landing page."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Gịnị ka onye emepụta paleti agba dabere na ya?",
+      "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° na kịkịl agba</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
+      "html": "<p class=\"text-mid\">A na-emepụta paleti niile site na ịtụgharị agba isi n'ụzọ ọtụtụ na oghere agba HSL. HSL na-akọwa agba site n'uru atọ: hue (H) bụ ọnọdụ na kịkịl agba (0°–360°), saturation (S) na-ekpebi otu agba ahụ si dị ike, na lightness (L) — otu agba ahụ si dị ìhè ma ọ bụ ojii.</p><p class=\"text-mid mt-3\">Paleti complementary, triadic, na split-complementary dabere na geometry kịkịl agba — a na-edobe agba n'oghere akụkụ nhata, na-emepụta ịha nhata nhazi. Paleti monochromatic, pastel, na ojii na-agbanwe naanị lightness na saturation mgbe ha na-eji otu hue.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ebee ka ị nwere ike iji paleti agba emepụtara",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Ịmata anya nhazi akara azụmaahịa",
+          "description": "Họrọ agba kwekọrọ na logo dị adị ma ọ bụ wuo paleti akara azụmaahịa site na mbido — maka kaadị azụmaahịa, ihe edere ihe, na ihe mgbasa ozi."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Weebụsaịtị",
+          "description": "Tọọ agba isi, agba mmetụta, na ụdị ndabere. Ị nwere ike imado koodu HEX edetuora ozugbo na CSS ma ọ bụ usoro isiokwu."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Interface ngwa",
+          "description": "Paleti tonal na-enye ụdị ìhè nke otu agba — nke dị ìhè maka ndabere, ojii maka ederede, etiti maka ókè na ọnọdụ mmekọrịta."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Onyonyo mmekọrịta",
+          "description": "Agba kwekọrọ maka ederede, stories, na mkpuchi profaịlụ. Paleti analogous ma ọ bụ pastel na-arụ ọrụ nke ọma mgbe ị chọrọ otu ụdị a maara."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Ngosi na akwụkwọ",
+          "description": "Usoro agba kwekọrọ maka slides, eserese data, na infographics. Paleti monochromatic ma ọ bụ minimalist na-etinye usoro nhazi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Idozi nsogbu onye emepụta paleti",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRefreshLine",
+          "title": "Paleti agbanweghị mgbe itinyechara agba",
+          "description": "Itinye koodu HEX naanị anaghị emepụta paleti na-akpaghị aka — ị kwesịrị ikwado mgbanwe ahụ site na bọtịnụ Update Color. Naanị mgbe ikwadochara ka ngwa ọrụ ahụ na-emelite usoro 9 niile."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Ozi usoro na-ezighị ezi",
+          "description": "Onye emepụta ahụ na-anabata naanị usoro HEX nwere # na mbido, dịka ọmụmaatụ, #FF5500. Usoro na-enweghị # (dịka ọmụmaatụ, FF5500) ma ọ bụ na usoro RGB (dịka ọmụmaatụ, rgb(255,85,0)) enweghị nkwado."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Usoro HEX mkpụmkpụ na zuru ezu",
+          "description": "A na-akwado usoro abụọ: zuru ezu #RRGGBB (dịka ọmụmaatụ, #FF5500) na mkpụmkpụ #RGB (dịka ọmụmaatụ, #F50). Onye emepụta ahụ na-amata ha abụọ na-akpaghị aka ma na-ejikwa ha otu ahụ."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ajụjụ a na-ajụkarị gbasara onye emepụta paleti agba",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Usoro ole ka agba isi kwesịrị ịdị?",
+          "answer": "Onye emepụta ahụ na-anabata agba na usoro HEX — ma mkpụmkpụ (dịka ọmụmaatụ, #F50) ma zuru ezu (dịka ọmụmaatụ, #FF5500). N'akụkụ ubi ederede ị ga-ahụ nhọpụta agba nke na-enye gị ohere ịhọrọ agba n'ụdị. Paleti emepụtara na-egosi koodu HEX na uru HSL nke agba ọ bụla.",
+          "answerSchemaText": "Onye emepụta ahụ na-anabata agba HEX (#RGB ma ọ bụ #RRGGBB). Agba ọ bụla emepụtara nwere koodu HEX na uru HSL."
+        },
+        {
+          "question": "Ole agba ka paleti ọ bụla nwere?",
+          "answer": "Paleti ọ bụla nwere agba 4 ruo 6. Ọnụọgụ dabere na ụdị usoro — paleti monochromatic na tonal na-emepụta ụdị karịa (ọkwa ìhè nke otu hue), ma paleti complementary na triadic na-anọchi anya agba ole na ole dị iche.",
+          "answerSchemaText": "Paleti ọ bụla nwere agba 4 ruo 6, dabere na ụdị usoro."
+        },
+        {
+          "question": "Gịnị bụ oghere agba HSL na kedu ka a ga-esi gụọ ya?",
+          "answer": "HSL bụ ụzọ ịkọwa agba site n'uru atọ: H (hue, 0°–360° na kịkịl agba), S (saturation, 0%–100%), na L (lightness, 0%–100%). Onye emepụta ahụ na-egosi uru HSL n'akụkụ agba ọ bụla, nke na-eme ka ọ dị mfe ịghọta otu agba na paleti si adị iche — dịka ọmụmaatụ, paleti monochromatic na-agbanwe naanị lightness (L) mgbe ọ na-eji otu hue (H).",
+          "answerSchemaText": "HSL na-akọwa agba site na hue (H), saturation (S), na lightness (L). Onye emepụta ahụ na-egosi uru ndị a n'akụkụ agba ọ bụla."
+        },
+        {
+          "question": "Enwere m ike iji paleti emepụtara maka ọrụ azụmaahịa?",
+          "answer": "Ee. Ị nwere ike iji paleti agba emepụtara n'ọrụ ọ bụla — azụmaahịa na nke abụghị azụmaahịa, na-enweghị oke ikike.",
+          "answerSchemaText": "Ee, ị nwere ike iji paleti emepụtara na-enweghị oke na ọrụ azụmaahịa na nke abụghị azụmaahịa."
+        },
+        {
+          "question": "Onye emepụta paleti agba ọ chọrọ nbanye ma ọ bụ ịkwụ ụgwọ?",
+          "answer": "Onye emepụta ahụ bụ n'efu kpamkpam, ọ chọghịkwa nbanye ma ọ bụ ndebanye aha. A na-emepụta agba n'ime ihe nchọgharị — enweghị data a na-eziga gaa sava mpụga.",
+          "answerSchemaText": "Onye emepụta ahụ bụ n'efu, ọ chọghị nbanye. A na-emepụta agba n'ime ihe nchọgharị."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Chọpụta ngwa ọrụ ndị ọzọ"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

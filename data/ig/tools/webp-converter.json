@@ -1,0 +1,325 @@
+{
+  "toolKey": "jpgToWebp",
+  "locale": "ig",
+  "metadata": {
+    "title": "Ngbanwe JPG/PNG gaa WebP n'efu – Enweghị Oke, Enweghị Ndebanye Aha",
+    "description": "Belata nha onyonyo ruo 35% na-enweghị mfu mma. Ngbanwe JPG na PNG gaa WebP na-eme n'ime ihe nchọgharị — faịlụ anaghị ahapụ ngwaọrụ gị. Enweghị ndebanye aha, enweghị oke.",
+    "ogImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp",
+    "path": "/ig/ngwa-oru/gbanwee-jpg-png-gaa-webp"
+  },
+  "hero": {
+    "title": "Ngbanwe JPG/PNG gaa WebP – N'efu, Enweghị Oke",
+    "description": "Belata nha faịlụ onyonyo ruo 35% na-enweghị mfu mma. Tinye faịlụ, họrọ ọkwa mma, wee budata onyonyo na usoro WebP. Ngbanwe niile na-eme n'ime ihe nchọgharị.",
+    "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ig/ngwa-oru",
+      "label": "Ngwa ọrụ"
+    },
+    "third": {
+      "href": "/ig/ngwa-oru/gbanwee-jpg-png-gaa-webp",
+      "label": "Ngbanwe JPG/PNG gaa WebP"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Ngbanwe JPG na PNG gaa WebP — n'efu, enweghị oke",
+      "alternateName": ["Ngbanwe JPG gaa WebP na PNG gaa WebP"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Ngbanwe JPG na PNG gaa WebP n'efu. Belata nha faịlụ onyonyo ruo 35%, mee ka peeji bulie ngwa ngwa ma melite Core Web Vitals. Ngbanwe na-eme n'ime ihe nchọgharị — a naghị eziga faịlụ gaa sava.",
+      "featureList": [
+        "Ngbanwe JPG gaa WebP",
+        "Ngbanwe PNG gaa WebP",
+        "Ntọala ọkwa mma (1–100%)",
+        "Ngbanwe ọtụtụ faịlụ n'otu oge",
+        "Nlele nha tupu na mgbe ngbanwe",
+        "Ibudata faịlụ ọ bụla",
+        "Ibudata faịlụ niile dịka ZIP",
+        "Nhazi n'ime ihe nchọgharị (a naghị eziga faịlụ gaa sava)"
+      ]
+    },
+    "howTo": {
+      "name": "Otu esi agbanwe JPG na PNG gaa WebP",
+      "description": "Otu esi agbanwe onyonyo JPG na PNG gaa usoro WebP. Ntọala mma (60–95%), usoro Smart Quality, na ibudata faịlụ agbanweere dịka ZIP.",
+      "steps": [
+        {
+          "name": "Tinye faịlụ maka ngbanwe",
+          "text": "Dọkpụrụ onyonyo JPG ma ọ bụ PNG tinye na mpaghara ahọpụtara ma ọ bụ họrọ faịlụ site na ngwaọrụ gị. Ị nwere ike itinye ọtụtụ faịlụ n'otu oge."
+        },
+        {
+          "name": "Tọọ ọkwa mma",
+          "text": "Họrọ mma faịlụ WebP pụtara site na slider (60–95%). Nke mbụ 80% bụ ntụle dị mma n'etiti mma na nha."
+        },
+        {
+          "name": "Malite ngbanwe",
+          "text": "Mgbe ngbanwe malitere, ngwa ọrụ ahụ ga-ahazi faịlụ niile dị n'ahịrị ma jiri Smart Quality na-akpaghị aka."
+        },
+        {
+          "name": "Budata faịlụ agbanweere",
+          "text": "Ị nwere ike ibudata faịlụ agbanweere otu otu ma ọ bụ ha niile n'otu oge dịka akpa ZIP."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Gịnị bụ WebP na gịnị mere anyị ga-eji gbanwee onyonyo?",
+      "html": "<p class=\"mb-4\">WebP bụ usoro onyonyo nke Google mepụtara nke na-eme ka nha faịlụ onyonyo belata ruo 25–35% ma e jiri ya tụnyere JPG na PNG — mgbe ọ na-edobe mma anya yiri ya. Faịlụ dị obere karịa pụtara ibudata peeji dị ngwa karịa, nke pụtara ahụmịhe onye ọrụ ka mma na ọnụọgụ dị elu karịa na <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"mb-4\">Ihe nchọgharị ọgbara ọhụrụ niile na-akwado usoro WebP: Chrome, Firefox, Safari (site na ntụgharị 14), na Edge. Ọ bụrụ na ị na-ejikwa weebụsaịtị, ụlọ ahịa, ma ọ bụ blọọgụ, ịgbanwe onyonyo gaa WebP bụ otu n'ime ụzọ ndị kachasị mfe iji melite arụmọrụ peeji.</p><p>Ngbanwe a na-akwado foto JPG na onyonyo PNG (gụnyere ndị nwere transparency). Ị nwere ike ịgbanwe ọnụọgụ faịlụ ọ bụla n'otu oge — ha niile na-eme n'ime ihe nchọgharị, na-ezigaghị gaa sava.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Otu esi agbanwe onyonyo gaa WebP",
+      "description": "Ngbanwe gaa WebP na-ewe naanị nkeji ole na ole:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Tinye faịlụ",
+          "description": "Dọkpụrụ onyonyo JPG ma ọ bụ PNG tinye na mpaghara ahọpụtara ma ọ bụ họrọ faịlụ site na ngwaọrụ gị. Ị nwere ike itinye ọnụọgụ faịlụ ọ bụla n'otu oge."
+        },
+        {
+          "title": "2. Tọọ mma",
+          "description": "Họrọ ọkwa mma (nke mbụ 80%). Uru dị ala karịa pụtara faịlụ dị obere karịa. Maka ọtụtụ ojiji, 80% bụ ntọala kacha mma."
+        },
+        {
+          "title": "3. Budata WebP",
+          "description": "Mgbe ngbanwe gasịrị, budata faịlụ otu otu ma ọ bụ dịka akpa ZIP. Faịlụ ọ bụla na-egosi ozi gbasara oghere echekwara."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Otu esi etinye faịlụ maka ngbanwe",
+      "html": "<p class=\"text-mid\">Ngwa ọrụ ahụ na-enye ụzọ abụọ isi tinye faịlụ:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Dọkpụrụ tinye</strong> — were faịlụ site na nchekwa na kọmputa gị tinye na mpaghara akara &quot;Dọkpụrụ onyonyo tinye ebe a&quot;. Ị nwere ike ịdọkpụrụ ọtụtụ faịlụ n'otu oge.</li><li><strong>Họrọ site na ngwaọrụ</strong> — ịpị mpaghara ibulite faịlụ na-emepee okwu ọhọrọ. Jide Ctrl (ma ọ bụ Cmd na Mac) ka ị họrọ ọtụtụ faịlụ n'otu oge.</li></ul><p class=\"text-mid mt-3\">Ngwa ọrụ ahụ na-anabata naanị faịlụ JPG na PNG. Ọ bụrụ na ị tinyere faịlụ nwere usoro ọzọ na-amaghị ama (dịka ọmụmaatụ, GIF ma ọ bụ BMP), a ga-ahapụ ya na-akpaghị aka ị ga-ahụkwa ozi ọkọwa.</p><p class=\"text-mid mt-3\"><strong>Nchekwa:</strong> A na-ahazi faịlụ niile n'ime ihe nchọgharị. A naghị eziga ha ebe ọ bụla — ha anaghị aga gaa sava ọ bụla. Mgbe ị mechisịrị taabu ma ọ bụ ihe nchọgharị, a na-ewepụ faịlụ site na ebe nchekwa.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Gịnị ka ọnọdụ faịlụ pụtara?",
+      "html": "<p class=\"text-mid\">Faịlụ ọ bụla dị n'ahịrị nwere otu n'ime ọnọdụ anọ na-egosi ọganihu ngbanwe:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Na-eche</span><p class=\"text-mid\">Faịlụ dị n'ahịrị, na-eche nhazi. Ngbanwe ebidoghị.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Ana-arụ ọrụ…</span><p class=\"text-mid\">A na-agbanwe faịlụ. Maka ọtụtụ onyonyo nke a na-ewe otu nkeji, ma faịlụ buru ibu nwere ike iwe nkeji ole na ole.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Emechara</span><p class=\"text-mid\">Ngbanwe emechara nke ọma. Faịlụ WebP dị njikere ibudata. N'akụkụ ọnọdụ ahụ ị ga-ahụkwa nha tupu na mgbe ngbanwe.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Njehie</span><p class=\"text-mid\">Ihe fulara mebiri n'oge ngbanwe. Nke a nwere ike ịbụ faịlụ isi mmalite mebiri emebi ma ọ bụ nsogbu ebe nchekwa ihe nchọgharị na onyonyo buru ibu. Bọtịnụ &quot;Nwaa ọzọ&quot; na-enye gị ohere ịnwaa ọzọ.</p></div></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Otu Smart Quality si arụ ọrụ",
+      "html": "<p class=\"text-mid\">Smart Quality bụ usoro mmezi na-akpaghị aka nke na-ahụ na faịlụ WebP pụtara anọghị buru ibu karịa nke mbụ. Otu ọ si arụ ọrụ:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>Ngwa ọrụ ahụ na-agbanwe onyonyo na mma ị tọrọ (dịka ọmụmaatụ, 80%).</li><li>Ọ na-enyocha ma faịlụ pụtara dị obere karịa nke mbụ.</li><li>Ọ bụrụ na ọ buru ibu karịa, ọ na-ebelata mma na-akpaghị aka wee nwaa ọzọ.</li><li>Usoro a na-atụgharị ruo mgbe faịlụ pụtara ga-adị obere ma ọ bụ mma ga-adaba n'okpuru oke nchekwa.</li></ol><p class=\"text-mid mt-3\">Ngwa ọrụ ahụ na-ahọrọ ntọala kacha mma na-akpaghị aka. Ọ bụrụ na ị nwere onyonyo nke akpachitụrụ anya (dịka ọmụmaatụ, JPG na mma 60%), a ga-edozi paramita na-akpaghị aka iji ruo nchekwa nha.</p><p class=\"text-mid mt-3\">N'akụkụ faịlụ ọ bụla ị ga-ahụ &quot;Mma WebP ejiri&quot; — nke a bụ mma kpọmkwem ejiri mgbe mmezi Smart Quality ọ bụla gasịrị.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Ntọala mma — gịnị ka a ga-ahọrọ?",
+      "demoHtml": "<div class=\"space-y-4\"><div><p class=\"text-dark mb-2 text-sm! font-medium uppercase\">Tọọ mma</p><div class=\"flex items-center\"><input type=\"range\" min=\"60\" max=\"95\" value=\"80\" class=\"flex-1\" disabled><span class=\"text-mid w-12 text-right text-sm!\">80%</span></div><span class=\"text-light mt-1 block text-xs\">Uru dị elu karịa = mma ka mma, faịlụ buru ibu karịa</span></div><div class=\"flex items-center\"><input type=\"checkbox\" checked class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Budata na-akpaghị aka mgbe ngbanwe gasịrị</span></div><div class=\"ml-6 flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Budata otu otu</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Budata dịka ZIP</span></div></div>",
+      "html": "<p class=\"text-mid\">Slider mma na-enye gị ohere ịtọọ uru site na 60% ruo 95%. Uru dị elu karịa pụtara mma onyonyo ka mma ma nha faịlụ buru ibu karịa.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (nke mbụ)</strong> — ntụle dị mma maka ọtụtụ ojiji.</li><li><strong>85–90%</strong> — maka foto ngwaahịa na nnọkọta foto.</li><li><strong>60–70%</strong> — mgbe ibelata nha faịlụ kacha dị mkpa.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Otu esi ebudata faịlụ agbanweere",
+      "variant": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-medium text-white\">Gbanwee</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Budata niile</span><span class=\"inline-flex items-center rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium\">Budata dịka ZIP</span></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled><span class=\"text-mid pl-2 text-sm!\">Tinye akụkọ CSV n'ime ZIP</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Nha mbata: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Nha mgbe ngbanwe: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">Echekwara: <strong class=\"text-success-icon\">1.5 MB (~63%)</strong></p></div></div>",
+      "html": "<p class=\"text-mid\">Mgbe ngbanwe gasịrị, ị nwere nhọrọ ibudata ọtụtụ:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Budata</strong> (n'akụkụ faịlụ ọ bụla) — budata otu faịlụ WebP.</li><li><strong>Budata niile</strong> — budata faịlụ niile otu otu.</li><li><strong>Budata dịka ZIP</strong> — mepụta akpa nwere faịlụ niile.</li></ul><p class=\"text-mid mt-3\"><strong>Nhọrọ akụkọ CSV:</strong> Tinye akụkọ nchịkọta ngbanwe n'ime akpa ZIP.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Akụkọ nchekwa — gịnị ka ọ na-egosi?",
+      "html": "<p class=\"text-mid\">N'okpuru bọtịnụ ngbanwe ị ga-ahụ nchịkọta nwere ozi nchekwa:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Nha mbata niile</strong> — mkpokọta nha faịlụ mbụ niile.</li><li><strong>Nha niile mgbe ngbanwe</strong> — mkpokọta nha faịlụ WebP niile.</li><li><strong>Echekwara</strong> — oghere ole ka ị nwetara site na ngbanwe (na KB/MB na pasent).</li></ul><p class=\"text-mid mt-3\"><strong>Detuo nchịkọta:</strong> Bọtịnụ ahụ na-edetuo akụkọ gaa clipboard n'usoro ederede. Ị nwere ike imado ya na ndekọ, email, ma ọ bụ akwụkwọ — ọ bara uru maka ndekọ mmezi onyonyo.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Ole ka ị ga-echekwa site na ngbanwe gaa WebP?",
+      "html": "<p class=\"mb-4\">Nchekwa dabere na ụdị onyonyo na mkpachitụ anya mbụ ya. N'okpuru bụ ihe atụ nsorita maka faịlụ a na-ahụkarị:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto JPG (kamera)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Nchekwa: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Onyonyo PNG (logo)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Nchekwa: ~75%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto ngwaahịa</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Nchekwa: ~63%</p></div></div><p class=\"text-light mt-4 text-sm\">Nchekwa kpọmkwem nwere ike ịdị iche. Ngbanwe ahụ na-egosi nha kpọmkwem tupu na mgbe ngbanwe maka faịlụ ọ bụla, yana nchịkọta nchekwa niile.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Gịnị mere ngbanwe JPG/PNG gaa WebP a ji dị iche?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Nchekwa zuru ezu",
+          "description": "Faịlụ anaghị ahapụ kọmputa gị. Ngbanwe na-eme n'ime ihe nchọgharị — a naghị eziga ihe ọ bụla gaa sava. Mgbe ị mechisịrị peeji ahụ, a na-ehichapụ data."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Ngbanwe ọtụtụ faịlụ",
+          "description": "Gbanwee ọnụọgụ onyonyo ọ bụla n'otu oge. A na-ahazi faịlụ niile n'usoro, nsorita dị njikere maka ibudata otu otu ma ọ bụ dịka akpa ZIP."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Smart Quality",
+          "description": "Ngwa ọrụ ahụ na-edozi mma na-akpaghị aka ka faịlụ pụtara adịkarịa obere karịa nke mbụ mgbe niile. Enweghị mkpa ịchọ ntọala kacha mma n'aka."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Budata dịka ZIP",
+          "description": "Budata faịlụ agbanweere otu otu ma ọ bụ ha niile n'otu oge dịka akpa ZIP. Ị nwekwara nhọrọ itinye akụkọ CSV na nchịkọta."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ihe ị kwesịrị ịmara",
+      "description": "Ndụmọdụ ole na ole iji nyere aka izere nsogbu n'oge ngbanwe:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Faịlụ buru nnọọ ibu",
+          "description": "Ngbanwe onyonyo karịrị 4000×4000 pixel nwere ike ịdị nwayọọ karịa ma nye ihe nchọgharị nsogbu. Ọ bụrụ na ị na-arụ ọrụ na faịlụ buru nnọọ ibu, tụlee ikewa ha n'otu."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Onyonyo akpachitụrụ anya na mbụ",
+          "description": "Ọ bụrụ na echekwara JPG mbụ na mma dị obere, ịgbanwe gaa WebP nwere ike ghara iweta nchekwa ukwuu. N'ọnọdụ ndị pụrụ iche, faịlụ WebP nwere ike ịburu ibu karịa — Smart Quality ga-ebelata mma na-akpaghị aka."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Usoro PNG nwere transparency",
+          "description": "WebP na-akwado transparency, yabụ faịlụ PNG nwere alpha channel ga-agbanwe nke ọma. Ma nchekwa nha maka PNG nwere transparency nwere ike ịdị obere karịa nke foto JPG nkịtị."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Ndakọrịta ihe nchọgharị",
+          "description": "Ihe nchọgharị ọgbara ọhụrụ niile (Chrome, Firefox, Safari 14+, Edge) na-akwado WebP. Ọ bụrụ na weebụsaịtị kwesịrị ịrụ ọrụ na ihe nchọgharị ochie, ị nwere ike iji akara &lt;picture&gt; nwere isi mmalite JPG/PNG ọzọ."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Olee mgbe o kwesịrị ịgbanwe onyonyo gaa WebP?",
+      "description": "Ngbanwe gaa WebP na-eweta uru n'ihe fọrọ nke nta ka ọ bụrụ mgbe niile a na-egosi onyonyo na ihe nchọgharị:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Weebụsaịtị azụmaahịa",
+          "description": "Ibudata ngwa ngwa na-eme ka mmetụta mbụ dị mma ma belatakwa ọnụọgụ ndị na-ahapụ."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Ụlọ ahịa n'ịntanetị",
+          "description": "Foto ngwaahịa na-abụkarị faịlụ ndị kachasị buru ibu na peeji; ịhazi ha na-eme ka ụlọ ahịa niile dị ngwa."
+        },
+        {
+          "icon": "RiArticleLine",
+          "title": "Blọọgụ na portal",
+          "description": "Edemede nwere ọtụtụ foto na-ebudata ngwa ngwa karịa."
+        },
+        {
+          "icon": "RiCameraLine",
+          "title": "Nnọkọta foto",
+          "description": "Na mma 85–90%, ọdịiche anya apụtaghị, ma faịlụ dị obere karịa."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Ngwa weebụ (PWA)",
+          "description": "Ihe dị obere karịa pụtara arụmọrụ dị ngwa karịa, karịsịa na ngwaọrụ mkpanaaka."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ajụjụ a na-ajụkarị gbasara ngbanwe WebP",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Gịnị bụ WebP na otu o si dị iche na JPG?",
+          "answer": "WebP bụ usoro onyonyo nke Google mepụtara nke na-ejikọta uru JPG (faịlụ foto dị obere) na PNG (transparency). Faịlụ WebP dị obere 25–35% karịa JPG na mma anya yiri ya. Ihe nchọgharị ọgbara ọhụrụ niile (Chrome, Firefox, Safari, Edge) na-akwado WebP.",
+          "answerSchemaText": "WebP bụ usoro onyonyo Google, 25–35% obere karịa JPG. Ihe nchọgharị ọgbara ọhụrụ niile na-akwado ya."
+        },
+        {
+          "question": "WebP ọ na-akwado transparency dịka PNG?",
+          "answer": "Ee. WebP na-akwado alpha channel (transparency) — faịlụ PNG nwere ndabere a na-ahụ site na ya ga-agbanwe nke ọma. Ma nchekwa nha maka PNG nwere transparency nwere ike ịdị obere karịa nke foto JPG nkịtị.",
+          "answerSchemaText": "Ee, WebP na-akwado alpha transparency. Faịlụ PNG nwere ndabere a na-ahụ site na ya na-agbanwe nke ọma."
+        },
+        {
+          "question": "Ọkwa mma ole ka m kwesịrị ịhọrọ?",
+          "answer": "Maka ọtụtụ ojiji (weebụsaịtị, ụlọ ahịa, blọọgụ), mma 80% na-enye ntụle dị mma n'etiti nha faịlụ na ọdịdị. Maka foto ngwaahịa ma ọ bụ nnọkọta, ị nwere ike ịhọrọ 85–90%. Uru dị ala karịa 70% ga-ebelata nha nke ukwuu ma nwere ike iweta akara a pụrụ ịhụ anya.",
+          "answerSchemaText": "80% maka ọtụtụ ojiji. 85–90% maka foto ngwaahịa. N'okpuru 70% maka mkpachitụ anya kachasị."
+        },
+        {
+          "question": "Oghere ole ka m nwere ike ịchekwa?",
+          "answer": "Nchekwa a na-ahụkarị bụ 25–35% ma e jiri ya tụnyere JPG. Dịka ọmụmaatụ, foto JPG 500 KB mgbe agbanweere gaa WebP ga-abụ ihe dịka 325–375 KB. Maka PNG, nchekwa nwere ike ịdị ukwuu karịa — ruo 50–70%.",
+          "answerSchemaText": "25–35% maka JPG, ruo 50–70% maka PNG."
+        },
+        {
+          "question": "Enwere m ike ịgbanwe ọtụtụ faịlụ n'otu oge?",
+          "answer": "Ee. Ị nwere ike itinye ọnụọgụ faịlụ ọ bụla n'otu oge — enweghị oke. A ga-agbanwe ha niile, ị nwekwa ike ibudata ha otu otu ma ọ bụ dịka akpa ZIP.",
+          "answerSchemaText": "Ee, ngbanwe ọtụtụ na-enweghị oke nwere ibudata ZIP."
+        },
+        {
+          "question": "Gịnị bụ Smart Quality?",
+          "answer": "Smart Quality bụ usoro mmezi mma na-akpaghị aka nke na-ahụ na faịlụ WebP pụtara anọghị buru ibu karịa nke mbụ. Ọ bụrụ na ngbanwe ewepụtara faịlụ buru ibu karịa (nke nwere ike ime na onyonyo akpachitụrụ anya na mbụ), ngwa ọrụ ahụ na-ebelata mma na-akpaghị aka ruo mgbe faịlụ pụtara ga-adị obere karịa.",
+          "answerSchemaText": "Mmezi mma na-akpaghị aka nke na-ahụ na faịlụ pụtara adịkarịa obere karịa nke mbụ mgbe niile."
+        },
+        {
+          "question": "WebP ọ na-eme ka weebụsaịtị dị ngwa karịa?",
+          "answer": "Ee. Faịlụ onyonyo dị obere karịa pụtara ibudata peeji dị ngwa karịa. Nke a na-emetụta LCP (Largest Contentful Paint) na Core Web Vitals ozugbo — otu n'ime ihe Google ji atọ ọnọdụ. Ngwa ọrụ dịka PageSpeed Insights na-atụ aro ịgbanwe onyonyo gaa WebP.",
+          "answerSchemaText": "Ee, faịlụ dị obere karịa na-eme ka LCP na Core Web Vitals dị mma karịa."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Chọpụta ngwa ọrụ ndị ọzọ"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

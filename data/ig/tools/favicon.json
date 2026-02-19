@@ -1,0 +1,334 @@
+{
+  "toolKey": "favicon",
+  "locale": "ig",
+  "metadata": {
+    "title": "Onye Emepụta Favicon n'efu – Mepụta favicon.ico Site na Onyonyo",
+    "description": "Mepụta favicon.ico na usoro favicon zuru ezu maka weebụsaịtị gị site n'otu onyonyo. Nha niile achọrọ n'otu pịa. Ọ na-arụ ọrụ n'ime ihe nchọgharị gị.",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
+    "path": "/ig/ngwa-oru/onye-emeputa-favicon-nefu"
+  },
+  "hero": {
+    "title": "Onye Emepụta Favicon – Mepụta favicon.ico Ngwa Ngwa",
+    "description": "Mepụta favicon.ico na usoro zuru ezu nke akara PNG maka weebụsaịtị gị site n'otu onyonyo. Nhazi niile na-eme n'ime ihe nchọgharị.",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ig/ngwa-oru",
+      "label": "Ngwa ọrụ"
+    },
+    "third": {
+      "href": "/ig/ngwa-oru/onye-emeputa-favicon-nefu",
+      "label": "Onye emepụta favicon"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Onye emepụta favicon — onye emepụta akara n'efu maka weebụsaịtị",
+      "alternateName": ["Onye emepụta akara Favicon.ico na PNG"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "IconGenerator",
+      "description": "Onye emepụta favicon n'efu. Mepụta favicon.ico na akara PNG 16x16, 32x32, 180x180, 192x192, na 512x512 na-enweghị oke na na-ezigaghị faịlụ gaa sava. Nhazi na-eme n'ime ihe nchọgharị.",
+      "featureList": [
+        "Mepụta favicon.ico (16x16, 32x32, 48x48 n'otu faịlụ)",
+        "Mepụta akara PNG 16x16 na 32x32",
+        "Mepụta apple-touch-icon 180x180",
+        "Mepụta akara PWA 192x192 na 512x512",
+        "Nkwado maka onyonyo isi mmalite PNG, JPG, na SVG",
+        "Ntọala agba ndabere",
+        "Mepụta faịlụ manifest.json maka PWA",
+        "Budata faịlụ niile dịka ZIP",
+        "Budata faịlụ ọ bụla",
+        "Ndakọrịta na Lighthouse",
+        "Nhazi n'ime ihe nchọgharị (a naghị eziga faịlụ gaa sava)",
+        "Ngwa ọrụ n'efu, enweghị nbanye achọrọ"
+      ]
+    },
+    "howTo": {
+      "name": "Otu esi emepụta favicon maka weebụsaịtị",
+      "description": "Otu esi emepụta favicon.ico na akara PNG (16x16, 32x32, 180x180, 512x512) site n'otu onyonyo. Nha ole achọrọ na otu esi etinye favicon na WordPress, HTML, na Next.js.",
+      "steps": [
+        {
+          "name": "Tinye onyonyo isi mmalite",
+          "text": "Dọkpụrụ faịlụ tinye na mpaghara ahọpụtara ma ọ bụ họrọ onyonyo site na ngwaọrụ gị. Akara dị mfe ma ọ bụ logo na usoro PNG, JPG, ma ọ bụ SVG na-arụ ọrụ nke ọma kachasị."
+        },
+        {
+          "name": "Họrọ nha akara",
+          "text": "Họrọ nha akara ị chọrọ: favicon.ico (32x32), akara PNG (16x16, 32x32, 180x180, 192x192, 512x512)."
+        },
+        {
+          "name": "Dozie nhọrọ",
+          "text": "Tọọ agba ndabere (ma ọ bụ hapụ ka ọ bụrụ nke a na-ahụ site na ya), kpebie ma a ga-emepụta faịlụ manifest, na ma a ga-ebudata faịlụ na-akpaghị aka."
+        },
+        {
+          "name": "Mepụta wee budata faịlụ",
+          "text": "Mgbe emepụtachara, ị nwere ike ibudata faịlụ niile dịka akpa ZIP ma ọ bụ akara ọ bụla n'otu."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Gịnị bụ favicon na gịnị mere ị ga-eji nwee otu?",
+      "html": "<p class=\"mb-4\">Favicon bụ akara obere nke pụtara na taabu ihe nchọgharị n'akụkụ aha peeji. Ị na-ahụkwa ya na akara ndekọ, akụkọ nlele weebụ, na na ihuenyo ụlọ ekwentị mgbe mmadụ tinyere peeji ahụ dịka ụzọ mkpụmkpụ.</p><p class=\"mb-4\">Onyonyo obere a na-arụ ọrụ dị mkpa — ọ na-enyere ndị ọrụ aka ịmata peeji ngwa ngwa n'etiti ọtụtụ taabu mepere emepe. Mgbe mmadụ nwere taabu iri na abụọ mepere na ihe nchọgharị, favicon na-abụkarị naanị akụkụ a na-ahụ anya nke na-amata peeji.</p><p>Onye emepụta ahụ na-emepụta usoro akara zuru ezu: faịlụ favicon.ico ọdịnala maka ihe nchọgharị, akara PNG na nha dị iche iche, na apple-touch-icon maka ngwaọrụ Apple. Ọ bụrụ na ị na-ewu ngwa weebụ (PWA), ị nwekwara ike ịmepụta akara 192x192 na 512x512 yana faịlụ manifest.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Otu esi emepụta favicon na nzọụkwụ 3",
+      "description": "Ịmepụta favicon na-ewe naanị nkeji ole na ole:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Tinye onyonyo",
+          "description": "Dọkpụrụ faịlụ tinye na mpaghara ahọpụtara ma ọ bụ họrọ onyonyo site na ngwaọrụ gị. Usoro a na-akwado: PNG, JPG, SVG. Nha a tụrụ aro: ọ dịkarịa ala 512×512 pixel."
+        },
+        {
+          "title": "2. Họrọ nha",
+          "description": "Họrọ nha akara ị chọrọ. Maka weebụsaịtị nkịtị: favicon.ico, 32×32, na 180×180. Maka PWA, tinye 192×192 na 512×512."
+        },
+        {
+          "title": "3. Budata faịlụ",
+          "description": "Mgbe emepụtachara, budata faịlụ niile dịka ZIP ma ọ bụ akara ọ bụla n'otu. N'okpuru ngwa ọrụ ị ga-ahụ ntụziaka otu esi etinye favicon na peeji gị."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Nha akara ole ka ngwa ọrụ ahụ na-emepụta?",
+      "html": "<p class=\"mb-6\">Nha ọ bụla nwere ojiji ya:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Usoro ọdịnala nke ihe nchọgharị niile maara. Ọ na-apụta na taabu ihe nchọgharị.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16×16 na 32×32 PNG</p><p class=\"text-mid text-sm\">Nha ntọala maka ihe nchọgharị ọgbara ọhụrụ. Ha na-apụta na taabu na na akara ndekọ.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180×180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Akara maka ngwaọrụ Apple (iPhone, iPad). Ọ na-apụta mgbe mmadụ tinyere peeji na ihuenyo ụlọ.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192×192 na 512×512 PNG</p><p class=\"text-mid text-sm\">Akara maka ngwa weebụ (PWA). Manifest chọrọ ha, a na-ejikwa ha na ụlọ ahịa ngwa.</p></div></div><p class=\"text-light mt-6\">Ọ bụrụ na ị naghị ewu PWA, ị chọrọ naanị: favicon.ico, 32×32 PNG, na 180×180 PNG. Faịlụ atọ ndị a na-ekpuchi ọtụtụ ojiji.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Gịnị mere onye emepụta favicon a ji dị iche?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Nzuzo — faịlụ anaghị ahapụ kọmputa gị",
+          "description": "Nhazi niile na-eme n'ime ihe nchọgharị. A naghị eziga onyonyo gaa sava ọ bụla. Mgbe ị mechisịrị peeji, a na-ehichapụ data niile."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Usoro zuru ezu n'otu ebe",
+          "description": "Favicon.ico, akara PNG, apple-touch-icon, akara PWA, na manifest — ihe niile site n'otu onyonyo, n'otu ngwa ọrụ."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Nkwado maka PNG, JPG, na SVG",
+          "description": "Ị nwere ike iji logo na usoro ọ bụla. Ọ bụrụ na ị nwere SVG — akara ga-adị mma na nha niile."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Dị njikere maka weebụsaịtị na ojiji PWA",
+          "description": "Ngwa ọrụ ahụ na-emepụta faịlụ manifest.json maka ngwa weebụ. N'okpuru ị ga-ahụ ntụziaka maka ịchịkọta akara."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Otu esi eji onye emepụta favicon",
+      "description": "Ịmepụta favicon bụ nzọụkwụ dị mfe ole na ole:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Tinye onyonyo isi mmalite",
+          "description": "Dọkpụrụ faịlụ tinye na mpaghara ahọpụtara ma ọ bụ họrọ onyonyo site na ngwaọrụ gị. Usoro a na-akwado: PNG, JPG, SVG. Akara dị mfe ma ọ bụ logo ọ dịkarịa ala 512×512 pixel na-arụ ọrụ nke ọma kachasị."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "2. Họrọ nha akara",
+          "description": "Họrọ nha akara ị chọrọ. Ị nwere ike ịhọrọ ha niile ma ọ bụ naanị ụfọdụ. Maka weebụsaịtị nkịtị: favicon.ico, 32×32, na 180×180."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "3. Dozie nhọrọ ịmepụta",
+          "description": "Tọọ nhọrọ ọzọ: ndabere (nke a na-ahụ site na ya ma ọ bụ agba ahọrọrọ), manifest (faịlụ ntọala PWA), na ibudata na-akpaghị aka."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Mepụta wee budata faịlụ",
+          "description": "Mgbe ịmepụta malitere, ngwa ọrụ ahụ na-ahazi onyonyo n'ime ihe nchọgharị — a naghị eziga ihe ọ bụla gaa sava. Budata faịlụ niile dịka akpa ZIP ma ọ bụ akara ọ bụla n'otu."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Nhọrọ ịmepụta — gịnị ka nke ọ bụla na-eme?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">Nha PNG</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">16×16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">32×32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">180×180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span class=\"text-mid text-sm!\">Ndabere a na-ahụ site na ya (PNG/ICO)</span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Ndabere (a na-ahụ site na ya ma ọ bụ agba)</h3><p class=\"text-mid\">N'oge ntọala, onye emepụta ahụ na-edobe transparency. Ị nwekwara ike ịhọrọ agba ndabere pụrụ iche.</p></div><div><h3 class=\"h5 mb-2\">Mepụta manifest (site.webmanifest)</h3><p class=\"text-mid\">Faịlụ JSON maka ngwa weebụ (PWA). Ọ bụrụ na ị naghị ewu PWA, nhọrọ a adịghị mkpa.</p></div></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Otu esi ebudata faịlụ emepụtara",
+      "description": "Mgbe emepụtachara akara, ị nwere nhọrọ ibudata ọtụtụ:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFolderZipLine",
+          "title": "Budata niile dịka ZIP",
+          "description": "Bọtịnụ &quot;Budata niile&quot; na-achịkọta faịlụ niile emepụtara n'ime otu akpa ZIP. Nke a bụ nhọrọ kachasị mfe mgbe ị chọrọ usoro akara zuru ezu."
+        },
+        {
+          "icon": "RiFileDownloadLine",
+          "title": "Budata faịlụ ọ bụla",
+          "description": "Akara ọ bụla emepụtara nwere bọtịnụ ibudata nke ya — ị nwere ike ibudata otu faịlụ na-ebutaghị usoro niile. Ọ bara uru mgbe naanị otu nha chọrọ ndozi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTabs",
+      "title": "Ebee na otu esi etinye favicon",
+      "tabs": [
+        {
+          "title": "WordPress",
+          "icon": "RiWordpressLine",
+          "html": "<div><p class=\"text-mid mb-3\">Ọtụtụ isiokwu WordPress nwere nhọrọ arụnyere maka ịtọ akara peeji. Ị ga-ahụ ya na pano njikwa:</p><p class=\"text-mid mb-3\"><strong>Appearance → Customize → Site Identity → Site Icon</strong></p><p class=\"text-light\">Bulite faịlụ 512×512 ebe ahụ — WordPress ga-emepụta nha obere na-akpaghị aka. Maka njikwa zuru ezu nke akara, ị nwekwara ike ibulite faịlụ ozugbo na nchekwa isi site na FTP.</p></div>"
+        },
+        {
+          "title": "HTML",
+          "icon": "RiHtml5Line",
+          "html": "<div><p class=\"text-mid mb-3\">Tinye faịlụ emepụtara na nchekwa isi nke peeji gị (ebe index.html nọ). Mgbe ahụ tinye tag kwesịrị ekwesị n'ime ngalaba &lt;head&gt;:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">Koodu n'elu bụ ihe atụ — dozie ụzọ iji dabara na nhazi peeji gị.</p></div>"
+        },
+        {
+          "title": "Next.js / React",
+          "icon": "RiReactjsLine",
+          "html": "<div><p class=\"text-mid mb-3\">Na Next.js (App Router), tinye faịlụ favicon na nchekwa <code>app/</code> ma ọ bụ <code>public/</code>:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> — Next.js na-amata ya na-akpaghị aka</li><li><code>app/apple-icon.png</code> — akara Apple</li><li><code>public/</code> — akara ndị fọdụrụ (192×192, 512×512)</li></ul><p class=\"text-light\">Ị nwekwara ike ịhazi akara na <code>layout.tsx</code> site na ihe <code>metadata.icons</code>.</p></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Onyonyo isi mmalite ole na-arụ ọrụ nke ọma kachasị?",
+      "description": "Favicon bụ onyonyo obere — ọ dị obere ruo 16×16 pixel. Ọ bụghị onyonyo niile na-arụ ọrụ nke ọma dịka isi mmalite:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShapeLine",
+          "title": "Ụdị dị mfe na akara a pụrụ ịgụ",
+          "description": "Logo dị mfe, otu mkpụrụedemede, ma ọ bụ akara na-arụ ọrụ nke ọma kachasị. Zere onyonyo siri ike nwere ọtụtụ nkọwa."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Usoro onígun nhata",
+          "description": "Favicon bụ onígun nhata. Ọ bụrụ na onyonyo isi mmalite nwere ọnụọgụ akụkụ dị iche na 1:1, a ga-akpụcha ya ma ọ bụ gbatịe ya."
+        },
+        {
+          "icon": "RiZoomInLine",
+          "title": "Nha buru nke ọma ibu",
+          "description": "Anyị na-atụ aro onyonyo isi mmalite ọ dịkarịa ala 512×512 pixel. Onyonyo dị obere ka a ga-agbasatịe."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Usoro SVG dịka isi mmalite zuru ezu",
+          "description": "SVG na-agbasatịe na-enweghị mfu mma, yabụ akara na nha niile ga-adị mma."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Agba dị iche nke ọma",
+          "description": "Favicon kwesịrị ịpụta nke ọma na ndabere dị iche iche (taabu dị ọcha, ọdịdị ojii). Họrọ agba na-edobe ọdịiche."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ajụjụ a na-ajụkarị gbasara onye emepụta favicon",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Nha ole ka onyonyo isi mmalite kwesịrị ịbụ maka ịmepụta favicon?",
+          "answer": "Nha a tụrụ aro bụ ọ dịkarịa ala 512×512 pixel na usoro onígun nhata (1:1). Site n'isi mmalite dị otú a, akara na nha niile ga-adị mma ma doo anya. Ọ bụrụ na ị nwere logo na usoro SVG — jiri ya, n'ihi na onyonyo vector na-agbasatịe na-enweghị mfu mma.",
+          "answerSchemaText": "Ọ dịkarịa ala 512×512 px, onígun nhata (1:1). SVG bụ nke zuru ezu n'ihi na ọ na-agbasatịe na-enweghị mfu mma."
+        },
+        {
+          "question": "Enwere m ike ịmepụta naanị favicon.ico na-enweghị akara ndị ọzọ?",
+          "answer": "Ee. Tupu ịmepụta, ị nwere ike ịhọrọ nha ị chọrọ kpọmkwem — dịka ọmụmaatụ, naanị favicon.ico ma ọ bụ naanị nha PNG ahọrọrọ.",
+          "answerSchemaText": "Ee, ị nwere ike ịhọrọ nha ọ bụla tupu ịmepụta."
+        },
+        {
+          "question": "Usoro onyonyo ole ka onye emepụta favicon na-akwado?",
+          "answer": "Onye emepụta ahụ na-anabata onyonyo na usoro PNG, JPG, na SVG. Dịka nsorita, ọ na-emepụta faịlụ favicon.ico na akara PNG na nha ahọrọrọ, dị njikere ibulite na weebụsaịtị gị.",
+          "answerSchemaText": "Mbata: PNG, JPG, SVG. Mpụta: favicon.ico na akara PNG."
+        },
+        {
+          "question": "Favicon ọ na-emetụta ọnọdụ ọchụchọ Google?",
+          "answer": "Ọ bụghị n'ụzọ ozugbo — favicon abụghị ihe na-ekpebi ọnọdụ. Ma ọ na-emetụta ịmata akara n'ụzọ na-adịghị ozugbo: peeji nwere akara ọkachamara dị mfe ịmata n'etiti ọtụtụ taabu mepere emepe, nke nwere ike iweta ọnụọgụ ịpị dị elu karịa na nsorita ọchụchọ.",
+          "answerSchemaText": "Ọ bụghị n'ụzọ ozugbo. Ọ na-eme ka ịmata akara na ọnụọgụ ịpị dị mma karịa n'ụzọ na-adịghị ozugbo."
+        },
+        {
+          "question": "Nha akara ole kacha dị mkpa maka weebụsaịtị nkịtị?",
+          "answer": "Maka weebụsaịtị ntọala, faịlụ atọ kwuru: favicon.ico (32×32), akara PNG 32×32, na apple-touch-icon 180×180. Ọ bụrụ na peeji ahụ kwesịrị ịrụ ọrụ dịka ngwa weebụ (PWA), ị chọkwara akara 192×192 na 512×512 yana faịlụ manifest.",
+          "answerSchemaText": "favicon.ico, 32×32 PNG, na apple-touch-icon 180×180. Maka PWA tinye 192×192 na 512×512."
+        },
+        {
+          "question": "Gịnị bụ faịlụ site.webmanifest na olee mgbe a chọrọ ya?",
+          "answer": "Ọ bụ faịlụ ntọala maka ngwa weebụ (PWA) nke nwere ozi gbasara akara, aha, na agba ngwa. A chọrọ ya mgbe peeji kwesịrị ịrụ ọrụ dịka ngwa a tinyere na ihuenyo ụlọ ekwentị. Maka weebụsaịtị nkịtị, ọ dịghị mkpa.",
+          "answerSchemaText": "Faịlụ ntọala PWA. A chọrọ ya maka ngwa ihuenyo ụlọ, ọ dịghị mkpa maka weebụsaịtị nkịtị."
+        },
+        {
+          "question": "Favicon ọ na-apụta otu ahụ na ihe nchọgharị niile?",
+          "answer": "Ọtụtụ ihe nchọgharị ọgbara ọhụrụ (Chrome, Firefox, Edge, Safari) na-amata faịlụ favicon.ico na akara PNG. Ọdịiche nwere ike ịdị na nha akara pụtara — Chrome na-ahọrọ PNG 32×32, ma Safari na iOS na-eji apple-touch-icon 180×180. Maka ndakọrịta kacha mma, anyị na-atụ aro ịmepụta usoro nha zuru ezu.",
+          "answerSchemaText": "N'ọtụtụ oge ee. Mepụta usoro nha zuru ezu maka ndakọrịta kacha mma."
+        },
+        {
+          "question": "Gịnị mere favicon ji adịghị agbanwe mgbe ebulitechara faịlụ ọhụrụ?",
+          "answer": "Ihe nchọgharị na-echekwa favicon nke ukwuu. Mgbe ibulitechara akara ọhụrụ, nwaa ihichapụ cache ihe nchọgharị gị ma ọ bụ tinye ahịrị ntụgharị na ụzọ faịlụ (dịka ọmụmaatụ, /favicon.ico?v=2). Mgbanwe nwere ike iwe ọtụtụ awa tupu ọ pụta.",
+          "answerSchemaText": "Ihe nchọgharị na-echekwa favicon nke ukwuu. Hichapụ cache gị ma ọ bụ tinye ahịrị ntụgharị."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Chọpụta ngwa ọrụ ndị ọzọ"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

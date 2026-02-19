@@ -39,6 +39,7 @@ import yoPt from '@/data/yo/tools-ui/word-count-page-types.json';
 import afPt from '@/data/af/tools-ui/word-count-page-types.json';
 import ukPt from '@/data/uk/tools-ui/word-count-page-types.json';
 import cebPt from '@/data/ceb/tools-ui/word-count-page-types.json';
+import igPt from '@/data/ig/tools-ui/word-count-page-types.json';
 
 const PAGE_TYPES: Record<Locale, PageTypeConfig[]> = {
   pl: plPt as PageTypeConfig[],
@@ -74,6 +75,7 @@ const PAGE_TYPES: Record<Locale, PageTypeConfig[]> = {
   af: afPt as PageTypeConfig[],
   uk: ukPt as PageTypeConfig[],
   ceb: cebPt as PageTypeConfig[],
+  ig: igPt as PageTypeConfig[],
 };
 
 export function getPageTypes(locale: Locale): PageTypeConfig[] {
@@ -998,6 +1000,31 @@ const EVAL_UI: Record<Locale, EvalUi> = {
       statusShort: '\u26a0\ufe0f Mubo kaayo',
       statusLong: '\u26a0\ufe0f Taas kaayo',
       generatedBy: 'Gihimo sa: arteonagency.pl/ceb/mga-himan/tigihap-sa-pulong-ug-karakter',
+    },
+  },
+  ig: {
+    wordsUnit: 'okwu',
+    emptyMessage: 'Mado ma ọ bụ dee ederede iji hụ nyocha.',
+    tooShort: (min, unit, missing) => `Ederede dị n'okpuru nke kachasị nta (${min} ${unit}). Ọ bụrụ na isiokwu zuru ezu — nke a nwere ike ịkwu. Ọ dị mkpa ihe dịka ${missing} ${unit}.`,
+    tooLong: (excess, unit) => `Ederede karịrị nke kachasị site na ${excess} ${unit}. Ọ bụrụ na ahiriị okwu ọ bụla na-enye uru — ogologo kwesịrị ekwesị.`,
+    idealInRange: 'Ogologo dị n’oke a tụrụ aro. Uru maka onye ọgụ bụ nke kachasị mkpa — oke na-ejeịrị dịka ebe ntugharị.',
+    idealGoodLength: (label) => `Ogologo dị mma maka ${label.toLowerCase()}. Paragraf ọ bụla kwesịrị ịnye onye ọgụ uru dị ịchị.`,
+    readingTime: (m) => (m === 1 ? '1 nkeji' : `${m} nkeji`),
+    report: {
+      title: '\ud83d\udcca AKỤKỌ OGOLOGO EDEREDE',
+      pageType: '\u1ee4dị peeji',
+      range: 'Oke a tụrụ aro',
+      statistics: '\ud83d\udcdd \u1eccN\u1ee4\u1eccG\u1ee4:',
+      words: 'Okwu',
+      charsWithSpaces: 'Mkpụrụedemede (nwere oghere)',
+      charsWithoutSpaces: 'Mkpụrụedemede (enweghị oghere)',
+      paragraphs: 'Paragraf',
+      readingTime: 'Oge ọgụ',
+      evaluation: '\ud83d\udcc8 NYOCHA',
+      statusIdeal: '\u2705 Ogologo dị mma',
+      statusShort: '\u26a0\ufe0f Dị mkpụmkpụ',
+      statusLong: '\u26a0\ufe0f Dị ogologo',
+      generatedBy: 'Mepụtara site na: arteonagency.pl/ig/ngwa-oru/onye-agugu-okwu-na-mkpuruede',
     },
   },
 };

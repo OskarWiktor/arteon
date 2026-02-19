@@ -1,0 +1,78 @@
+{
+  "slug": "maka-anyi",
+  "metadata": {
+    "title": "Maka Arteon – Ngwa ọrụ 10 n'efu maka weebụ, SEO na nhazi",
+    "description": "Arteon bụ ụlọ ọrụ okike na-emepụta ngwa ọrụ n'efu maka ihe nchọgharị: ngbanwe WebP, njikọta favicon, nyocha ịdị iche agba, njikọta koodu QR na ọtụtụ ndị ọzọ."
+  },
+  "hero": {
+    "title": "Ngwa ọrụ n'efu nke ụlọ ọrụ okike mere",
+    "description": "Ngwa ọrụ 10 maka ihe nchọgharị maka onyonyo, SEO, agba, mbinye aka email na koodu QR — enweghị ndebanye aha, enweghị ibuli faịlụ, enweghị oke"
+  },
+  "whoWeAre": {
+    "title": "Onye ka anyị bụ",
+    "p1": "Arteon bụ ụlọ ọrụ okike si Poland. N'ụzọ yiri nke anyị na-ere, anyị na-emepụta ma na-elekọta mkpokọta ngwa ọrụ n'efu na-eto eto maka ndị ahịa azụmaahịa, ndị nrụpụta weebụsaịtị, ndị na-ese ihe, ndị na-ere ahịa na onye ọ bụla na-arụ ọrụ na ọdịnaya dijitalụ.",
+    "p2": "Ngwa ọrụ ọ bụla anyị mere na-edozi nsogbu kpọmkwem nke ụbọchị niile: ịgbanwe onyonyo, ịlele ịdị iche agba, ịmepụta favicon, ịmepụta koodu QR na ọtụtụ ndị ọzọ. Ebumnuche anyị bụ ịmepụta otu mkpokọta zuru oke ebe ị ga-ahụ ihe niile ị chọrọ n'otu ebe — enweghị ịgbanwe n'etiti ọtụtụ weebụsaịtị."
+  },
+  "whyFree": {
+    "title": "Gịnị mere anyị ji enye ngwa ọrụ n'efu",
+    "items": [
+      {
+        "title": "Enweghị ndebanye aha, enweghị oke",
+        "description": "Ngwa ọrụ ọ bụla na-arụ ọrụ ozugbo na ihe nchọgharị gị. Ọ chọghị akaụntụ, nbanye ma ọ bụ ụgwọ."
+      },
+      {
+        "title": "Nzuzo bu ụzọ",
+        "description": "Faịlụ gị anaghị ahapụ ngwaọrụ gị. Ihe niile na-eme n'ime ihe nchọgharị — anyị anaghị eziga data gị gaa ebe ọ bụla."
+      },
+      {
+        "title": "Anyị mere ya site na mkpa ezigbo",
+        "description": "Ngwa ọrụ ọ bụla sitere na nsogbu ezigbo anyị zutere mgbe anyị na-arụ ọrụ na ọrụ ndị ahịa anyị. Ọ bụrụ na anyị chọrọ ya, o yikarịrị na ị ga-achọkwa ya."
+      },
+      {
+        "title": "Mgbasa ozi na-akwụ ụgwọ, n'efu maka gị",
+        "description": "Anyị na-eji nnata Google AdSense kpuchie ego mmepe na ịbata. N'ihi ego si na mgbasa ozi, ngwa ọrụ niile dị n'efu."
+      }
+    ]
+  },
+  "ourTools": {
+    "title": "Ngwa ọrụ anyị",
+    "items": [
+      {
+        "title": "Onyonyo na favicon",
+        "description": "Ngbanwe WebP, edita onyonyo na njikọta favicon. Ngwa ọrụ 3 maka ọrụ ụbọchị niile na onyonyo."
+      },
+      {
+        "title": "Meta na SEO",
+        "description": "Nyocha meta aha na nkọwa yana ọgụgụ okwu na mkpụrụedemede maka ịtụle ogologo ederede."
+      },
+      {
+        "title": "Email na nkwurịta oku",
+        "description": "Njikọta mbinye aka email HTML nwere koodu emechara maka Gmail na Outlook."
+      },
+      {
+        "title": "Agba na nnweta",
+        "description": "Nyocha ịdị iche WCAG, ịwepụta agba site na onyonyo na njikọta palette agba. Ngwa ọrụ 3 maka ọrụ na agba."
+      },
+      {
+        "title": "Ibipụta na ihe",
+        "description": "Njikọta koodu QR maka weebụsaịtị, vCard, menu na flaya. Ibupụ na PNG na SVG."
+      }
+    ]
+  },
+  "whatsNext": {
+    "title": "Gịnị na-abịa",
+    "text": "Anyị na-arụ ọrụ iji gbasaa mkpokọta ngwa ọrụ. Anyị na-etinye ngwa ọrụ ọhụrụ mgbe niile dabere na nzaghachi ndị ọrụ na ahụmịhe anyị. Atụmatụ bụ otu ikpo okwu ebe ndị ahịa azụmaahịa, ndị na-ese ihe na ndị nrụpụta nwere ike ịhụ ngwa ọrụ niile dị mkpa — ihe niile n'otu ebe, ihe niile n'efu."
+  },
+  "privacy": {
+    "title": "Nzuzo na nchekwa",
+    "textBefore": "Anyị na-asọpụrụ nzuzo gị. Faịlụ ị bulitere na ngwa ọrụ anyị ka a na-ahazi naanị na ihe nchọgharị gị, anyị anaghị ezigakwa ha gaa sava ọ bụla. Anyị na-eji nyocha (Google Analytics 4) na mgbasa ozi (Google AdSense) naanị mgbe i nyere nkwenye site na ọkwa kuki. Gụọ nkọwa zuru ezu na",
+    "linkLabel": "Iwu Nzuzo",
+    "textAfter": " anyị."
+  },
+  "cta": {
+    "title": "Nwale ngwa ọrụ anyị",
+    "description": "Ngwa ọrụ 10 n'efu — enweghị ndebanye aha, enweghị oke, enweghị ibuli faịlụ gaa sava",
+    "btnOne": "Gaa na ngwa ọrụ",
+    "btnTwo": "Kpọtụrụ anyị"
+  }
+}

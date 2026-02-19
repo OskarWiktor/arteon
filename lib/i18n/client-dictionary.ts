@@ -38,6 +38,7 @@ const dictLoaders: Record<Locale, () => Promise<ClientDictionary>> = {
   af: () => import('@/data/af/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
   uk: () => import('@/data/uk/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
   ceb: () => import('@/data/ceb/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
+  ig: () => import('@/data/ig/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
 };
 
 export async function getClientDictionary(locale: Locale): Promise<ClientDictionary> {

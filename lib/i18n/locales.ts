@@ -35,6 +35,7 @@ import yoDict from '@/data/yo/dictionary.json';
 import afDict from '@/data/af/dictionary.json';
 import ukDict from '@/data/uk/dictionary.json';
 import cebDict from '@/data/ceb/dictionary.json';
+import igDict from '@/data/ig/dictionary.json';
 
 const dicts = {
   pl: plDict,
@@ -70,6 +71,7 @@ const dicts = {
   af: afDict,
   uk: ukDict,
   ceb: cebDict,
+  ig: igDict,
 } as const;
 
 export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
@@ -435,6 +437,17 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/ceb/mahitungod-kanamo',
     contactHref: '/ceb/kontaka-kami',
     privacyHref: '/ceb/palisiya-sa-pribasiya',
+  },
+  ig: {
+    lang: 'ig',
+    hreflang: 'ig',
+    label: 'IG',
+    name: 'Igbo',
+    toolsBasePath: '/ig/ngwa-oru',
+    toolsIndexHref: '/ig/ngwa-oru',
+    aboutHref: '/ig/maka-anyi',
+    contactHref: '/ig/kpoturu-anyi',
+    privacyHref: '/ig/iwu-nzuzo',
   },
 };
 

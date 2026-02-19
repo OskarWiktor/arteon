@@ -1,0 +1,44 @@
+[
+  {
+    "key": "product",
+    "label": "Nkọwa ngwaahịa",
+    "minWords": 80,
+    "maxWords": 400,
+    "description": "Ngwaahịa dị mfe chọrọ nkọwa dị mkpụmkpụ. Ihe siri ike (dịka ngwaọrụ teknụzụ) chọrọ nkọwa na nkọwapụta karịa."
+  },
+  {
+    "key": "service",
+    "label": "Peeji ọrụ",
+    "minWords": 500,
+    "maxWords": 1500,
+    "description": "Ọrụ mpaghara dị mfe chọrọ ederede ole na ole. Ọrụ siri ike nwere ọtụtụ nzọụkwụ na ajụjụ ndị ahịa chọrọ ederede karịa."
+  },
+  {
+    "key": "homepage",
+    "label": "Peeji ụlọ",
+    "minWords": 400,
+    "maxWords": 1000,
+    "description": "Peeji ụlọ na-eduzi ndị ọbịa gaa na peeji ndị dị nkenke. Ozi doro anya na nhazi a pụrụ ịgụ na-eme njem dị mfe."
+  },
+  {
+    "key": "landing",
+    "label": "Peeji ịdaba",
+    "minWords": 600,
+    "maxWords": 2500,
+    "description": "Ọrụ ego ukwuu chọrọ nkọwa karịa na iwu ntụkwasị obi. Ọrụ dị mfe nwere ike ịdị mkpụmkpụ."
+  },
+  {
+    "key": "blog",
+    "label": "Edemede blọọgụ",
+    "minWords": 1200,
+    "maxWords": 3000,
+    "description": "Ogologo dabere na otu isiokwu si sie ike. Ederede ahụ kwesịrị ịza ajụjụ ndị na-agụ ya nke ọma ma n'ụzọ dị mkpụmkpụ."
+  },
+  {
+    "key": "guide",
+    "label": "Ntụziaka / nkuzi",
+    "minWords": 2500,
+    "maxWords": 6000,
+    "description": "Nkọwa zuru ezu gbasara isiokwu nwere ọtụtụ ngalaba. Ogologo dabere na nha isiokwu ahụ."
+  }
+]

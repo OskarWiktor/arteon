@@ -361,6 +361,17 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     contactHref: '/ceb/kontaka-kami',
     privacyHref: '/ceb/palisiya-sa-pribasiya',
   },
+  ig: {
+    lang: 'ig',
+    hreflang: 'ig',
+    label: 'IG',
+    name: 'Igbo',
+    toolsBasePath: '/ig/ngwa-oru',
+    toolsIndexHref: '/ig/ngwa-oru',
+    aboutHref: '/ig/maka-anyi',
+    contactHref: '/ig/kpoturu-anyi',
+    privacyHref: '/ig/iwu-nzuzo',
+  },
 };
 
 export const SUPPORTED_LOCALES = Object.keys(LOCALE_CONFIG) as Locale[];
