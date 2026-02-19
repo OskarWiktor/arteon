@@ -208,6 +208,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Čo odlišuje tento počítač meta title a description?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRuler2Line",
+          "title": "Meranie v pixeloch",
+          "description": "Nielen počítame znaky, ale meriame skutočnú šírku textu, tak ako to robí Google."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Náhľad v Google",
+          "description": "Vidíte, ako nadpis a popis vyzerajú vo výsledkoch vyhľadávania, ešte pred publikovaním stránky."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Farebné hodnotenie",
+          "description": "Hneď viete, či je text príliš krátky, optimálny alebo príliš dlhý."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Pixely a znaky súčasne",
+          "description": "Nástroj zobrazuje obe hodnoty naraz – môžete porovnať, či sa nadpis zmestí do limitu znakov aj pixelov."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Nadpis a popis v jednom zobrazení",
+          "description": "Title a description je možné skontrolovať súčasne bez prepínania medzi kartami."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Lokálne rozhranie",
+          "description": "Celé rozhranie je vo vašom jazyku. Nemusíte prekladať možnosti z angličtiny."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o kontrole meta title a description",
       "openByDefault": 1,

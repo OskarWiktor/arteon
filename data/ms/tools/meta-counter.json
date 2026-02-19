@@ -137,6 +137,51 @@
       "variant": "line"
     },
     {
+      "type": "sectionDemo",
+      "title": "Mengapa lebar dalam piksel lebih penting daripada bilangan aksara?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">iiiiiiiiiiiiiiii (16 aksara)</p><div class=\"bg-success-icon mt-1 h-3 w-1/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~64px lebar</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">WWWWWWWWWWWWWWWW (16 aksara)</p><div class=\"bg-error-icon mt-1 h-3 w-3/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~256px lebar</p></div></div>",
+      "html": "<p class=\"text-mid\">Huruf yang berbeza mempunyai lebar yang berbeza. Bandingkan &quot;iiii&quot; dan &quot;WWWW&quot; – kedua-duanya mempunyai 4 aksara, tetapi lebar visualnya sangat berbeza. Google mengukur lebar teks dalam piksel, bukan aksara.</p><p class=\"text-mid mt-3\">Sebab itulah tajuk dengan banyak huruf sempit (i, l, t, f) boleh lebih panjang daripada tajuk dengan huruf lebar (W, M, O), walaupun bilangan aksara sama. Alat ini menunjukkan kedua-dua nilai: bilangan aksara (lebih mudah difahami) dan lebar piksel (lebih tepat untuk Google).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Pratonton snippet – apa yang ditunjukkan?",
+      "html": "<p class=\"text-mid\">Pratonton (snippet preview) mensimulasikan bagaimana tajuk dan penerangan halaman kelihatan dalam hasil carian Google. Ini adalah visualisasi anggaran – paparan sebenar mungkin sedikit berbeza bergantung pada peranti dan pelayar.</p><h3 class=\"h5 mt-6 mb-2\">Elemen pratonton</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> – alamat halaman yang dipaparkan di atas tajuk. Anda boleh memasukkannya dalam medan pilihan untuk pratonton yang lebih realistik.</li><li><strong>Tajuk</strong> – pengepala biru. Jika terlalu panjang, alat memotongnya secara automatik dan menambah elipsis.</li><li><strong>Penerangan</strong> – teks kelabu di bawah tajuk. Juga dipotong jika melebihi had.</li></ul><h3 class=\"h5 mt-6 mb-2\">Apa yang tidak ditunjukkan oleh pratonton</h3><p class=\"text-mid\">Pratonton tidak mengambil kira semua elemen yang Google mungkin tambah: tarikh, penilaian bintang, pautan laman atau cebisan kaya. Ini adalah versi ringkas yang memfokuskan pada panjang teks.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Masalah lazim dan penyelesaian",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "Tajuk terlalu panjang",
+          "description": "Pendekkan tajuk sambil mengekalkan kata kunci terpenting di hadapan. Buang kata sifat seperti &quot;terbaik&quot;, &quot;profesional&quot; – ia jarang menambah nilai. Nama jenama di hujung selepas pemisah."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Penerangan terlalu pendek",
+          "description": "Tambah butiran lanjut: apa yang pengguna akan temui di halaman, manfaat yang diterima, apa yang membezakan tawaran. Akhiri dengan seruan bertindak."
+        },
+        {
+          "icon": "RiRuler2Line",
+          "title": "Lebar piksel berbeza daripada jangkaan",
+          "description": "Alat mengukur lebar menggunakan fon standard yang serupa dengan yang digunakan oleh Google. Hasilnya mungkin sedikit berbeza bergantung pada pelayar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Penyemak meta tag untuk siapa?",
       "description": "Penyemak meta tag berguna untuk sesiapa yang mencipta kandungan laman web:",

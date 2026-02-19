@@ -128,6 +128,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Bildmaße für Instagram, Facebook und LinkedIn",
+      "html": "<p class=\"text-mid\">Jede Plattform hat eigene Anforderungen an Bildgrößen. Falsche Maße führen zu automatischem Zuschnitt oder Verzerrung:</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Instagram</p><ul class=\"text-mid mt-1 list-disc pl-5 space-y-1\"><li>Post (Quadrat): 1080×1080 px (1:1)</li><li>Post (Hochformat): 1080×1350 px (4:5) – nimmt mehr Platz im Feed ein</li><li>Story / Reels: 1080×1920 px (9:16) – füllt den gesamten Bildschirm</li></ul></div><div><p class=\"text-dark font-semibold\">Facebook</p><ul class=\"text-mid mt-1 list-disc pl-5 space-y-1\"><li>Post: 1200×630 px – optimale Größe für Posts und geteilte Links</li><li>Cover (Seite): 820×360 px – Titelbild der Unternehmensseite</li></ul></div><div><p class=\"text-dark font-semibold\">LinkedIn</p><ul class=\"text-mid mt-1 list-disc pl-5 space-y-1\"><li>Post: 1200×1200 px (1:1) – Quadrat für den Feed</li><li>Profilbanner: 1584×396 px – Hintergrundbild des Profils</li></ul></div><div><p class=\"text-dark font-semibold\">Weitere</p><ul class=\"text-mid mt-1 list-disc pl-5 space-y-1\"><li>OG Image: 1200×630 px – wird beim Teilen eines Links angezeigt</li><li>Artikelbild: 1600×900 px – Breitformat für Blogbeiträge (16:9)</li><li>Website-Banner: 1920×600 px – Hintergrundbild für Header-Bereiche</li></ul></div></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Fertige Vorlagen nach Kategorie",
       "description": "Der Editor enthält Vorlagen für verschiedene Anwendungsbereiche:",
@@ -192,6 +201,31 @@
       "type": "sectionInfo",
       "title": "3×3-Raster – wozu dient es?",
       "html": "<p class=\"text-mid\">Im Zuschnittsbereich ist ein Raster sichtbar, das das Bild in 9 gleiche Teile unterteilt. Das ist eine Visualisierung der <strong>Drittelregel</strong> – eines der grundlegenden Prinzipien der fotografischen Komposition.</p><p class=\"text-mid mt-3\">Die Regel besagt, dass die wichtigsten Bildelemente (Gesicht, Produkt, Blickfang) an den Schnittpunkten der Rasterlinien oder entlang dieser platziert werden sollten. Eine solche Komposition wirkt dynamischer und angenehmer als eine zentrale Platzierung.</p><p class=\"text-mid mt-3\">Im Reiter <strong>Rasterfarbe</strong> können Sie die Linienfarbe ändern (grün, weiß, schwarz, rot, gelb), damit das Raster auf verschiedenen Bildern gut sichtbar ist.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTabs",
+      "title": "Export – welches Format wählen?",
+      "tabs": [
+        {
+          "title": "JPG",
+          "icon": "RiImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Das beliebteste Format für Fotos. Gute Komprimierung bei visuell hoher Qualität. Unterstützt keine Transparenz – der Hintergrund wird immer mit einer Farbe gefüllt.</p><p class=\"text-mid\">Gute Wahl für Produktfotos, Porträts und die meisten Grafiken für Websites. Der Qualitätsregler (60–100 %) steuert die Komprimierung.</p></div>"
+        },
+        {
+          "title": "PNG",
+          "icon": "RiFileImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Verlustfreies Format – behält die volle Qualität, aber die Dateien sind größer. Unterstützt Transparenz (erforderlich bei Kreisform).</p><p class=\"text-mid\">Gute Wahl für Grafiken mit Text, Icons und Bilder, die scharfe Kanten erfordern.</p></div>"
+        },
+        {
+          "title": "WebP",
+          "icon": "RiCropLine",
+          "html": "<div><p class=\"text-mid mb-3\">Modernes Format, das die Vorteile von JPG und PNG vereint – kleine Dateien, gute Qualität, Transparenzunterstützung. Wird von allen modernen Browsern unterstützt.</p><p class=\"text-mid\">Empfohlen für Websites – kleinere Dateien bedeuten schnelleres Laden.</p></div>"
+        }
+      ]
     },
     {
       "type": "gap",

@@ -208,6 +208,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä meta-otsikon ja -kuvauksen laskurista erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRuler2Line",
+          "title": "Mittaus pikseleinä",
+          "description": "Emme vain laske merkkejä, vaan mittaamme tekstin todellisen leveyden, kuten Google tekee."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Google-esikatselu",
+          "description": "Näet, miltä otsikko ja kuvaus näyttävät hakutuloksissa, ennen kuin julkaiset sivun."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Väriarviointi",
+          "description": "Tiedät heti, onko teksti liian lyhyt, optimaalinen vai liian pitkä."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Pikselit ja merkit samanaikaisesti",
+          "description": "Työkalu näyttää molemmat arvot kerralla – voit vertailla, mahtuuko otsikko sekä merkki- että pikselirajan sisälle."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Otsikko ja kuvaus samassa näkymässä",
+          "description": "Title ja description voidaan tarkistaa samanaikaisesti ilman välilehtien vaihtamista."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Paikallinen käyttöliittymä",
+          "description": "Koko käyttöliittymä on omalla kielelläsi. Sinun ei tarvitse kääntää asetuksia englannista."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset meta-otsikon ja -kuvauksen tarkistuksesta",
       "openByDefault": 1,

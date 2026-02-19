@@ -100,6 +100,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Welche Icon-Größen generiert das Tool?",
+      "html": "<p class=\"text-mid mb-6\">Jede Größe hat ihren eigenen Verwendungszweck:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32x32)</p><p class=\"text-mid text-sm\">Das klassische Format, das von allen Browsern erkannt wird. Wird auf dem Browser-Tab angezeigt.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16x16 und 32x32 PNG</p><p class=\"text-mid text-sm\">Standardgrößen für moderne Browser. Werden auf Tabs und in Lesezeichen angezeigt.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180x180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Icon für Apple-Geräte (iPhone, iPad). Wird angezeigt, wenn jemand die Website zum Startbildschirm hinzufügt.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192x192 und 512x512 PNG</p><p class=\"text-mid text-sm\">Icons für Web-Apps (PWA). Werden vom Manifest verlangt und in App-Stores verwendet.</p></div></div><p class=\"text-light mt-6\">Wenn Sie keine PWA erstellen, reichen favicon.ico, 32x32 PNG und 180x180 PNG. Diese drei Dateien decken die meisten Anwendungsfälle ab.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionDemo",
       "title": "Welche Dateien werden generiert?",
       "demoHtml": "<div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Datei</th><th class=\"py-2 pr-4 font-semibold\">Größe</th><th class=\"py-2 font-semibold\">Verwendung</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon.ico</td><td class=\"py-2 pr-4\">16×16 + 32×32</td><td class=\"text-primary-light0 py-2\">Browser-Tab (Standard)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-16x16.png</td><td class=\"py-2 pr-4\">16×16</td><td class=\"text-primary-light0 py-2\">Browser-Tab (kleine Darstellung)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-32x32.png</td><td class=\"py-2 pr-4\">32×32</td><td class=\"text-primary-light0 py-2\">Browser-Tab (Retina)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">apple-touch-icon.png</td><td class=\"py-2 pr-4\">180×180</td><td class=\"text-primary-light0 py-2\">iOS-Startbildschirm, Safari</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">android-chrome-192x192.png</td><td class=\"py-2 pr-4\">192×192</td><td class=\"text-primary-light0 py-2\">Android, PWA-Installation</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">android-chrome-512x512.png</td><td class=\"py-2 pr-4\">512×512</td><td class=\"text-primary-light0 py-2\">PWA-Splashscreen, Google-Suchergebnisse</td></tr><tr><td class=\"py-2 pr-4 font-medium\">site.webmanifest</td><td class=\"py-2 pr-4\">-</td><td class=\"text-primary-light0 py-2\">PWA-Konfiguration (optional)</td></tr></tbody></table></div>",
@@ -166,6 +175,31 @@
           "icon": "RiDownloadLine",
           "title": "Einzelne Dateien herunterladen",
           "description": "Jedes generierte Icon hat einen eigenen Download-Button – Sie können eine einzelne Datei herunterladen, ohne das gesamte Set. Nützlich bei einer Aktualisierung einzelner Größen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTabs",
+      "title": "Wo und wie lädt man das Favicon hoch?",
+      "tabs": [
+        {
+          "title": "WordPress",
+          "icon": "RiWordpressLine",
+          "html": "<div><p class=\"text-mid mb-3\">Die meisten WordPress-Themes haben eine integrierte Option zum Festlegen des Website-Icons. Sie finden sie im Admin-Bereich:</p><p class=\"text-mid mb-3\"><strong>Design → Customizer → Website-Informationen → Website-Icon</strong></p><p class=\"text-light\">Laden Sie dort die 512x512-Datei hoch – WordPress generiert automatisch kleinere Größen. Für volle Kontrolle können Sie die Dateien auch direkt per FTP in das Stammverzeichnis hochladen.</p></div>"
+        },
+        {
+          "title": "HTML",
+          "icon": "RiHtml5Line",
+          "html": "<div><p class=\"text-mid mb-3\">Platzieren Sie die generierten Dateien im Stammverzeichnis der Website (dort, wo die index.html liegt). Fügen Sie dann im &lt;head&gt;-Bereich die entsprechenden Tags hinzu:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">Der obige Code ist ein Beispiel – passen Sie die Pfade an Ihre Website-Struktur an.</p></div>"
+        },
+        {
+          "title": "Next.js / React",
+          "icon": "RiReactjsLine",
+          "html": "<div><p class=\"text-mid mb-3\">In Next.js (App Router) platzieren Sie die Favicon-Dateien im Verzeichnis <code>app/</code> oder <code>public/</code>:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> – wird automatisch von Next.js erkannt</li><li><code>app/apple-icon.png</code> – Apple-Icon</li><li><code>public/</code> – übrige Icons (192x192, 512x512)</li></ul><p class=\"text-light\">Sie können die Icons auch in der Datei <code>layout.tsx</code> über das Objekt <code>metadata.icons</code> konfigurieren.</p></div>"
         }
       ]
     },

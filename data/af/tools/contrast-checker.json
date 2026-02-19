@@ -246,6 +246,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Probleemoplossing met die kleurkontras-nagaaier",
+      "html": "<h3 class=\"h5 mb-2\">Ek sien 'n kleurformaat-foutboodskap</h3><p class=\"text-mid mb-4\">Kontroleer die kleurformaat. 'n HEX-kode moet met <code class=\"rounded bg-black/5 px-1\">#</code> begin en 3 of 6 karakters bevat (bv. <code class=\"rounded bg-black/5 px-1\">#fff</code> of <code class=\"rounded bg-black/5 px-1\">#ffffff</code>). Vir RGB, maak seker waardes is met kommas geskei en val binne die reeks 0-255.</p><h3 class=\"h5 mb-2\">Die Pas aan-funksie vind nie 'n geskikte kleur nie</h3><p class=\"text-mid mb-4\">Wanneer die agtergrond en teks soortgelyke helderheid in dieselfde kleurtoon het, kan die algoritme nie 'n variant vind wat aan die vereistes voldoen sonder om die kleurtoon te verander nie. Oorweeg dan om die agtergrondkleur te verander of 'n heeltemal ander tekskleur te kies.</p><h3 class=\"h5 mb-2\">Die kleurkieser stem nie ooreen met die ingevoerde kode nie</h3><p class=\"text-mid\">Die blaaier se kleurkieser ondersteun slegs HEX-formaat sonder deursigtigheid. As jy 'n kleur in RGBA- of HSLA-formaat met deursigtigheid invoer, sal die kieser slegs die kleurgedeelte wys (sonder alfa). Kontrasberekening hou steeds rekening met deursigtigheid.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Waar moet jy kleurleesbaarheid nagaan?",
       "description": "Leesbaarheid maak oral saak waar iemand teks moet lees of 'n UI-element moet herken:",

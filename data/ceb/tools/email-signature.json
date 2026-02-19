@@ -178,8 +178,26 @@
     },
     {
       "type": "sectionInfo",
+      "title": "Mga gilay-on tali sa mga elemento",
+      "html": "<p class=\"text-mid\">Sa tab nga <strong>Spacing</strong> mahimong tukma nga makontrol ang distansya tali sa indibidwal nga elemento sa signature.</p><h3 class=\"h5 mt-6 mb-3\">Internal padding sa signature</h3><p class=\"text-mid\">Sa ibabaw sa tab makita ang opsyon sa internal padding — gilay-on tali sa sulod sa signature ug sa mga kilid niini. Tulo ka bili ang available: 8 px (gamay), 16 px (tunga-tunga), ug 24 px (dako).</p><h3 class=\"h5 mt-6 mb-3\">Mga gilay-on tali sa mga elemento</h3><p class=\"text-mid\">Sa ubos sa padding makita ang mga kontrol para sa indibidwal nga elemento sa signature. Matag kontrol adunay + ug − button aron padak-on o gamay-on ang gilay-on. Kadto lang opsyon para sa mga elemento nga karon naa sa signature ang makita.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Pagkahuman sa ngalan</strong> — gilay-on ubos sa linya sa ngalan.</li><li><strong>Pagkahuman sa titulo / kompanya</strong> — gilay-on ubos sa linya sa titulo ug ngalan sa kompanya.</li><li><strong>Pagkahuman sa dugang nga linya</strong> — gilay-on ubos sa deskripsyon (kung napuno).</li><li><strong>Pagkahuman sa contact detail</strong> — gilay-on ubos sa email, telepono, ug website.</li><li><strong>Pagkahuman sa social media</strong> — gilay-on ubos sa mga link sa profile.</li><li><strong>Pagkahuman sa CTA button</strong> — gilay-on ubos sa button (kung naka-enable).</li><li><strong>Sa wala pa ang disclaimer</strong> — gilay-on sa ibabaw sa teksto sa legal disclaimer.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
       "title": "Legal disclaimer — kanus-a idugang",
       "html": "<p class=\"text-mid\">Sa tab nga <strong>Disclaimer / Legal</strong> mahimong magdugang og legal nga teksto nga motungha sa ubos sa signature sa mas gamay nga font.</p><h3 class=\"h5 mt-6 mb-3\">Kanus-a magdugang og disclaimer</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Business correspondence</strong> — pahibalo sa confidentiality ug hangyo sa pag-delete sa kaso sa sayop nga pagpadala.</li><li><strong>Mga kinahanglanon sa industriya</strong> — ang pipila ka industriya (pananglitan: legal, medikal, pinansyal) nagkinahanglan og partikular nga impormasyon sa matag mensahe.</li><li><strong>GDPR</strong> — impormasyon mahitungod sa pagproseso sa personal nga datos, kung ang kompanya data controller.</li></ul><p class=\"text-mid mt-4\">Isip default, ang field puno sa sample nga teksto sa confidentiality. Mahimo kining i-edit, tangtangon, o ilisan sa kaugalingon nga disclaimer. Kung ibilin nga walay sulod ang field, walay disclaimer nga motungha sa signature.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Awtomatiko nga pag-save ug pag-reset sa settings",
+      "html": "<p class=\"text-mid\">Ang generator awtomatiko nga nagtipig sa tanang settings sa memorya sa browser (localStorage). Human ma-refresh ang panid o maablihan pag-usab ang tool, ang datos, layout, mga kolor, ug tanang ubang opsyon mabalik.</p><h3 class=\"h5 mt-6 mb-3\">Giunsa ang awtomatiko nga pag-save?</h3><p class=\"text-mid\">Matag kausaban (teksto, kolor, layout, spacing) diha-diha nga na-save sa memorya sa browser. Awtomatiko kini sa background — walay kinahanglan nga pag-click sa button.</p><h3 class=\"h5 mt-6 mb-3\">Giunsa pag-reset ang settings?</h3><p class=\"text-mid\">Ubos sa preview sa signature makita ang button nga <strong>Reset appearance</strong>. Pagka-click motungha ang window nga nangayo og kompirmasyon. Ang pagkompirmar sa reset mobalik sa tanang datos ug settings ngadto sa default nga bili. Kini nga aksyon dili mahimong i-undo.</p><h3 class=\"h5 mt-6 mb-3\">Export ug import sa configuration</h3><p class=\"text-mid\">Ubos sa preview sa signature makita ang duha ka dugang nga button: <strong>Export settings</strong> ug <strong>Import settings</strong>. Ang export nagtipig sa tanang datos, kolor, layout, spacing, ug text style ngadto sa JSON file. Ang import nagpaload sa dati nga na-save nga configuration gikan sa file.</p><p class=\"text-mid mt-3\">Kini nga feature labi ka mapuslanon kung gusto nimong ibalhin ang signature configuration tali sa mga computer, ipaambit ang settings sa mga kauban, o magtipig og backup sa dili pa ang reset.</p>"
     },
     {
       "type": "gap",
@@ -207,6 +225,15 @@
           "description": "Sa signature field, gamita ang Ctrl+V (Windows) o Cmd+V (Mac). Motungha ang signature nga may tanang kolor ug formatting. I-save ang mga kausaban."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Preview sa signature ug mga opsyon sa export",
+      "html": "<p class=\"text-mid\">Ang preview panel makita sa tuo sa editor ug awtomatiko nga nag-update sa matag kausaban. Ang preview naka-sticky, mao nga makita bisan kung mag-scroll sa mga editing option.</p><h3 class=\"h5 mt-6 mb-3\">Pagbalhin sa preview background</h3><p class=\"text-mid\">Sa ibabaw sa preview makita ang tulo ka button sa pagbalhin sa background: <strong>Light</strong> (default nga gray background), <strong>Dark</strong> (itom nga background, mapuslanon sa pagsusi sa readability), ug <strong>Checkerboard</strong> (chess pattern aron makita ang transparency ug mga kilid sa signature).</p><h3 class=\"h5 mt-6 mb-3\">Mga action button</h3><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Copy signature (Gmail / Outlook)</strong> — nagkopya sa signature isip formatted HTML ngadto sa clipboard.</li><li><strong>Copy HTML code</strong> — nagkopya sa raw HTML code sa signature.</li><li><strong>Download as HTML</strong> — nagtipig sa signature code isip .html file.</li><li><strong>Show HTML code</strong> — nag-abli og modal window nga may source code.</li><li><strong>Export settings</strong> — nagtipig sa tibuok configuration ngadto sa JSON file.</li><li><strong>Import settings</strong> — nagload sa configuration gikan sa JSON file.</li><li><strong>Reset appearance</strong> — nagbalik sa tanang datos ug settings ngadto sa default (human makompirmar).</li></ul>"
     },
     {
       "type": "gap",

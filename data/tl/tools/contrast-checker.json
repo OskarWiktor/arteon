@@ -246,6 +246,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Pag-troubleshoot ng color contrast checker",
+      "html": "<h3 class=\"h5 mb-2\">May nakikita akong error sa format ng kulay</h3><p class=\"text-mid mb-4\">Suriin ang format ng kulay. Ang HEX code ay dapat magsimula sa <code class=\"rounded bg-black/5 px-1\">#</code> at maglaman ng 3 o 6 na character (hal. <code class=\"rounded bg-black/5 px-1\">#fff</code> o <code class=\"rounded bg-black/5 px-1\">#ffffff</code>). Para sa RGB, tiyaking ang mga value ay pinaghihiwalay ng comma at nasa loob ng range na 0-255.</p><h3 class=\"h5 mb-2\">Hindi makahanap ng angkop na kulay ang Adjust function</h3><p class=\"text-mid mb-4\">Kapag ang background at text ay may magkatulad na brightness sa parehong hue, maaaring hindi makahanap ang algorithm ng variant na nakakatugon sa mga kinakailangan nang hindi binabago ang hue. Sa ganitong kaso, isaalang-alang ang pagbabago ng background color o pagpili ng ganap na ibang text color.</p><h3 class=\"h5 mb-2\">Hindi tumutugma ang color picker sa inilagay na code</h3><p class=\"text-mid\">Ang browser color picker ay sumusuporta lamang sa HEX format na walang transparency. Kung maglalagay ka ng kulay sa RGBA o HSLA format na may transparency, ipapakita lamang ng picker ang color part (walang alpha). Ang contrast calculations ay isinasaalang-alang pa rin ang transparency.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Saan dapat suriin ang readability ng kulay?",
       "description": "Mahalaga ang readability saanman kailangang magbasa ng teksto o makilala ang UI element:",

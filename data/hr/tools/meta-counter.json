@@ -208,6 +208,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Što ističe ovaj brojač meta naslova i opisa?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRuler2Line",
+          "title": "Mjerenje u pikselima",
+          "description": "Ne samo da brojimo znakove, već mjerimo stvarnu širinu teksta, kao što to radi Google."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Google pregled",
+          "description": "Vidite kako naslov i opis izgledaju u rezultatima pretraživanja prije objave stranice."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Ocjena u boji",
+          "description": "Odmah znate je li tekst prekratak, optimalan ili predug."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Pikseli i znakovi istovremeno",
+          "description": "Alat prikazuje obje vrijednosti odjednom – možete usporediti stane li naslov unutar ograničenja znakova i piksela."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Naslov i opis u jednom pogledu",
+          "description": "Title i description mogu se provjeriti istovremeno bez prebacivanja između kartica."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Lokalno sučelje",
+          "description": "Cijelo sučelje je na vašem jeziku. Ne morate prevoditi opcije s engleskog."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Često postavljana pitanja o provjeri meta naslova i opisa",
       "openByDefault": 1,

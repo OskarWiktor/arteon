@@ -246,6 +246,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Warware matsaloli da mai tantance bambancin launuka",
+      "html": "<h3 class=\"h5 mb-2\">Na ga sakon kuskuren tsarin launi</h3><p class=\"text-mid mb-4\">Duba tsarin launin. Lambar HEX yakamata ta fara da <code class=\"rounded bg-black/5 px-1\">#</code> kuma ta ƙunshi haruffa 3 ko 6 (misali <code class=\"rounded bg-black/5 px-1\">#fff</code> ko <code class=\"rounded bg-black/5 px-1\">#ffffff</code>). Don RGB, tabbatar cewa dabi'u sun rabu da waƙafi kuma suna cikin kewayon 0-255.</p><h3 class=\"h5 mb-2\">Aikin Daidaitawa bai sami dacen launi ba</h3><p class=\"text-mid mb-4\">Lokacin da bango da rubutu suna da irin wannan haske a cikin launi ɗaya, algorithm ɗin na iya rashin samun sigar da ta cika buƙatun ba tare da canza launin ba. A wannan yanayin, yi la'akari da canza launin bango ko zaɓar wani launin rubutu dabam.</p><h3 class=\"h5 mb-2\">Mai zaɓen launi bai dace da lambar da aka shigar ba</h3><p class=\"text-mid\">Mai zaɓen launin na'ura mai bincike yana tallafawa tsarin HEX kawai ba tare da gaskiya ba. Idan ka shigar da launi a cikin tsarin RGBA ko HSLA tare da gaskiya, mai zaɓen zai nuna ɓangaren launi kawai (ba tare da alfa ba). Ƙididdiga na bambanci har yanzu suna la'akari da gaskiyar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Ina ya kamata a tantance iya karatu na launuka?",
       "description": "Iya karatu yana da muhimmanci a ko'ina da wani ke buƙatar karanta rubutu ko gane wani abu na UI:",

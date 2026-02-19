@@ -158,6 +158,15 @@
     },
     {
       "type": "sectionInfo",
+      "title": "Matokeo ya jaribio la usomekaji yanamaanisha nini?",
+      "html": "<p class=\"text-mid mb-4\">Zana inaonyesha uwiano wa utofautishaji katika kiwango kutoka 1:1 (hakuna utofautishaji) hadi 21:1 (utofautishaji wa juu zaidi – nyeusi kwenye nyeupe). Matokeo yanalinganishwa na viwango vilivyoamuliwa katika kiwango cha WCAG:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Maandishi ya kawaida</strong> – yanahitaji utofautishaji wa angalau 4.5:1 kwa kiwango AA (kiwango cha chini) au 7:1 kwa kiwango AAA (kiwango cha juu). Inatumika kwa maandishi chini ya 18pt (24px) au chini ya 14pt (18.5px) mazito.</li><li><strong>Maandishi makubwa / mazito</strong> – yanahitaji utofautishaji wa angalau 3:1 kwa kiwango AA au 4.5:1 kwa kiwango AAA. Inatumika kwa maandishi kutoka 18pt (24px) au kutoka 14pt (18.5px) mazito – vichwa, vitufe, maeneo yaliyoangaziwa.</li><li><strong>Ikoni na vipengele vya picha</strong> – vinahitaji utofautishaji wa angalau 3:1 kwa kiwango AA. Inatumika kwa ikoni, vitufe, sehemu za fomu na vipengele vingine vya kiolesura vinavyowasilisha habari.</li></ul><p class=\"text-mid mt-3\"><strong>Kiwango AA</strong> ndicho kiwango cha chini kinachohitajika na sheria za ufikivu wa kidijitali katika nchi nyingi, ikiwa ni pamoja na <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016L2102\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">maagizo ya EU kuhusu ufikivu wa tovuti</a>. <strong>Kiwango AAA</strong> kinatoa usomekaji bora zaidi, lakini si rahisi kila wakati kufikia kwa vipengele vyote.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
       "title": "Kulinganisha rangi kiotomatiki kwa mahitaji ya WCAG",
       "html": "<p class=\"text-mid mb-4\">Ikiwa utofautishaji ni wa chini sana, huhitaji kutafuta rangi sahihi kwa kujaribu na kukosea. Kipengele cha <strong>Match</strong> kinapata kiotomatiki toleo la rangi ya maandishi linalokidhi kizingiti kilichochaguliwa cha utofautishaji.</p><p class=\"text-mid mb-4\">Jinsi kulinganisha kunafanya kazi:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Chagua shabaha ya kulinganisha kutoka orodha – mfano AA kwa maandishi ya kawaida au AAA kwa maandishi makubwa.</li><li>Bofya kitufe cha Match.</li><li>Zana itatafuta toleo la mwanga wa rangi ya maandishi na kupendekeza lililo karibu zaidi linalokidhi mahitaji.</li><li>Rangi iliyopendekezwa inaweza kunakiliwa kwenye ubao wa kunakili au kuwekwa mara moja kama rangi mpya ya maandishi.</li></ol><p class=\"text-mid mt-3\">Algorithm inahifadhi hue na saturation ya rangi ya asili, ikibadilisha mwanga tu. Rangi iliyopendekezwa inabaki kulingana na utambulisho wa kuona huku ikikidhi kiwango cha ufikivu.</p>"
     },
@@ -230,6 +239,66 @@
           }
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kutatua matatizo na kikaguzi cha utofautishaji wa rangi",
+      "html": "<h3 class=\"h5 mb-2\">Naona ujumbe wa hitilafu ya muundo wa rangi</h3><p class=\"text-mid mb-4\">Angalia muundo wa rangi. Msimbo wa HEX unapaswa kuanza na <code class=\"rounded bg-black/5 px-1\">#</code> na kuwa na herufi 3 au 6 (mfano <code class=\"rounded bg-black/5 px-1\">#fff</code> au <code class=\"rounded bg-black/5 px-1\">#ffffff</code>). Kwa RGB, hakikisha thamani zimegawanywa kwa koma na ziko katika masafa ya 0-255.</p><h3 class=\"h5 mb-2\">Kipengele cha Kulinganisha hakipati rangi inayofaa</h3><p class=\"text-mid mb-4\">Wakati mandhari na maandishi yana mwanga sawa katika rangi moja, algorithm inaweza isipate toleo linalokidhi mahitaji bila kubadilisha rangi. Katika hali hiyo, fikiria kubadilisha rangi ya mandhari au kuchagua rangi tofauti kabisa ya maandishi.</p><h3 class=\"h5 mb-2\">Kichaguzi cha rangi hakiendani na msimbo ulioingizwa</h3><p class=\"text-mid\">Kichaguzi cha rangi cha kivinjari kinaunga mkono muundo wa HEX pekee bila uwazi. Ukiingiza rangi katika muundo wa RGBA au HSLA na uwazi, kichaguzi kitaonyesha sehemu ya rangi tu (bila alfa). Mahesabu ya utofautishaji bado yanazingatia uwazi.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ni wapi unapaswa kuangalia usomekaji wa rangi?",
+      "description": "Usomekaji ni muhimu kila mahali ambapo mtu anahitaji kusoma maandishi au kutambua kipengele cha kiolesura:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Tovuti",
+          "description": "Maandishi kwenye kurasa, vitufe, viungo, fomu. Muhimu hasa kwa tovuti za biashara ambapo wageni wana umri na uwezo tofauti wa kuona."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Maduka ya mtandaoni",
+          "description": "Bei, vitufe vya Nunua sasa, taarifa za bidhaa. Usomekaji duni unaweza kumaanisha maagizo yaliyopotea."
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "Mawasilisho",
+          "description": "Slaidi zinazoonyeshwa na projekta mara nyingi zina utofautishaji duni kuliko kwenye skrini. Ni bora kuangalia rangi kabla ya uwasilishaji."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Mabango na vijitabu",
+          "description": "Nyenzo zilizochapishwa zinazoangaliwa katika hali tofauti za mwanga zinahitaji utofautishaji wa juu."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Programu za simu",
+          "description": "Simu zinatumika kwenye jua kali, usiku, na watu wa umri tofauti."
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Menyu za mikahawa",
+          "description": "Mara nyingi huchapishwa kwenye karatasi ya rangi au kwa fonti za mapambo – ni rahisi kupata utofautishaji wa chini sana."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Usomekaji wa rangi kwa watu wenye upofu wa rangi",
+      "html": "<p class=\"text-mid mb-4\">Upofu wa rangi (daltonism) ni hali ya kuona rangi inayoathiri takriban 8% ya wanaume na 0.5% ya wanawake. Watu wenye upofu wa rangi wanaweza kuwa na ugumu wa kutofautisha jozi fulani za rangi, hata kama utofautishaji wa mwanga unatosha.</p><p class=\"text-mid mb-4\">Aina za kawaida za upofu wa rangi:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deuteranopia</strong> – ugumu wa kutofautisha kijani na nyekundu (aina ya kawaida zaidi)</li><li><strong>Protanopia</strong> – ugumu wa kuona nyekundu</li><li><strong>Tritanopia</strong> – ugumu wa kuona bluu na njano (nadra)</li></ul><p class=\"text-mid mt-3\">Zana hii inakagua utofautishaji wa mwanga, ambao ni muhimu kwa watumiaji wote. Hata hivyo, wakati wa kubuni ni bora kuepuka mchanganyiko wa rangi wenye matatizo (mfano maandishi mekundu kwenye mandhari ya kijani) na kutotegemea rangi pekee kuwasilisha habari – tumia pia maumbo, ikoni, na maandishi.</p>"
     },
     {
       "type": "gap",

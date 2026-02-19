@@ -208,6 +208,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Kuo išsiskiria šis meta pavadinimo ir aprašymo skaitiklis?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRuler2Line",
+          "title": "Matavimas pikseliais",
+          "description": "Ne tik skaičiuojame simbolius, bet matuojame tikrąjį teksto plotį, kaip tai daro Google."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Google peržiūra",
+          "description": "Matote, kaip pavadinimas ir aprašymas atrodo paieškos rezultatuose, prieš publikuodami puslapį."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Spalvinis vertinimas",
+          "description": "Iš karto žinote, ar tekstas per trumpas, optimalus ar per ilgas."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Pikseliai ir simboliai vienu metu",
+          "description": "Įrankis rodo abi reikšmes vienu metu – galite palyginti, ar pavadinimas telpa tiek simbolių, tiek pikselių riboje."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Pavadinimas ir aprašymas viename rodinyje",
+          "description": "Title ir description galima patikrinti vienu metu neperjungiant kortelių."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Lokali sąsaja",
+          "description": "Visa sąsaja jūsų kalba. Nereikia versti nustatymų iš anglų kalbos."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Dažnai užduodami klausimai apie meta pavadinimo ir aprašymo tikrintuvą",
       "openByDefault": 1,

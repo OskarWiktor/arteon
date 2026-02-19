@@ -199,6 +199,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Çfarë e bën këtë numërues të meta titullit dhe përshkrimit të veçantë?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRuler2Line",
+          "title": "Matje në pikselë",
+          "description": "Nuk numërojmë vetëm karaktere, por masim gjerësinë reale të tekstit, ashtu siç bën Google."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Paraparje në Google",
+          "description": "Shihni si duken titulli dhe përshkrimi në rezultatet e kërkimit, para se të publikoni faqen."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Vlerësim me ngjyrë",
+          "description": "Menjëherë e dini nëse teksti është shumë i shkurtër, optimal ose shumë i gjatë."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Pikselë dhe karaktere njëkohësisht",
+          "description": "Mjeti tregon të dyja vlerat njëherësh – mund të krahasoni nëse titulli qëndron brenda kufirit të karaktereve dhe pikselëve."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Titulli dhe përshkrimi në një pamje",
+          "description": "Title dhe description mund të kontrollohen njëkohësisht pa ndërruar mes skedave."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Ndërfaqe lokale",
+          "description": "E gjithë ndërfaqja është në gjuhën tuaj. Nuk keni nevojë të përktheni opsionet nga anglishtja."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Pyetjet më të shpeshta për kontrolluesin e meta titullit dhe përshkrimit",
       "openByDefault": 1,

@@ -214,6 +214,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Vikomo vya herufi kwenye majukwaa maarufu",
+      "html": "<p class=\"text-mid mb-4\">Kihesabuji cha herufi ni muhimu wakati wa kuunda maudhui kwa majukwaa yenye vikomo vya urefu:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Jukwaa / Kipengele</th><th class=\"py-2 pr-4 font-semibold\">Kikomo cha herufi</th><th class=\"py-2 font-semibold\">Maelezo</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">Herufi 50–60</td><td class=\"text-primary-light0 py-2 text-sm\">Vichwa virefu zaidi hukatwa katika matokeo ya utafutaji.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">Herufi 150–160</td><td class=\"text-primary-light0 py-2 text-sm\">Maelezo yanayoonekana chini ya kiungo katika matokeo ya utafutaji.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – chapisho</td><td class=\"py-2 pr-4 whitespace-nowrap\">Herufi 280</td><td class=\"text-primary-light0 py-2 text-sm\">Kikomo cha kawaida kwa chapisho moja.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn – chapisho</td><td class=\"py-2 pr-4 whitespace-nowrap\">Herufi 3000</td><td class=\"text-primary-light0 py-2 text-sm\">Machapisho marefu zaidi yanaonekana na kitufe cha Ona zaidi.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – maelezo</td><td class=\"py-2 pr-4 whitespace-nowrap\">Herufi 2200</td><td class=\"text-primary-light0 py-2 text-sm\">Hukatwa baada ya ~herufi 125 katika mlisho.</td></tr><tr><td class=\"py-2 pr-4\">YouTube – maelezo</td><td class=\"py-2 pr-4 whitespace-nowrap\">Herufi 5000</td><td class=\"text-primary-light0 py-2 text-sm\">Mistari 2–3 ya kwanza tu inaonekana bila kubofya Onyesha zaidi.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Ni nini kinachofanya kihesabuji hiki cha maneno na herufi kuwa maalum?",
       "grid": "two",

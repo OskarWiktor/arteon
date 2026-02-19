@@ -178,8 +178,26 @@
     },
     {
       "type": "sectionInfo",
+      "title": "Mga espasyo sa pagitan ng mga elemento",
+      "html": "<p class=\"text-mid\">Sa tab na <strong>Spacing</strong> maaaring tumpak na kontrolin ang distansya sa pagitan ng mga indibidwal na elemento ng signature.</p><h3 class=\"h5 mt-6 mb-3\">Internal padding ng signature</h3><p class=\"text-mid\">Sa itaas ng tab makikita ang opsyon ng internal padding — distansya sa pagitan ng nilalaman ng signature at ng mga gilid nito. Tatlong halaga ang available: 8 px (maliit), 16 px (katamtaman), at 24 px (malaki).</p><h3 class=\"h5 mt-6 mb-3\">Mga espasyo sa pagitan ng mga elemento</h3><p class=\"text-mid\">Sa ibaba ng padding makikita ang mga kontrol para sa mga indibidwal na elemento ng signature. Bawat kontrol ay may + at − button para palakihin o paliitin ang espasyo. Tanging mga opsyon para sa mga elementong kasalukuyang nasa signature ang nakikita.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Pagkatapos ng pangalan</strong> — espasyo sa ilalim ng linya ng pangalan.</li><li><strong>Pagkatapos ng titulo / kompanya</strong> — espasyo sa ilalim ng linya ng titulo at pangalan ng kompanya.</li><li><strong>Pagkatapos ng karagdagang linya</strong> — espasyo sa ilalim ng deskripsyon (kung napunan).</li><li><strong>Pagkatapos ng contact detail</strong> — espasyo sa ilalim ng email, telepono, at website.</li><li><strong>Pagkatapos ng social media</strong> — espasyo sa ilalim ng mga link ng profile.</li><li><strong>Pagkatapos ng CTA button</strong> — espasyo sa ilalim ng button (kung naka-enable).</li><li><strong>Bago ang disclaimer</strong> — espasyo sa itaas ng teksto ng legal disclaimer.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
       "title": "Legal disclaimer – kailan idagdag",
       "html": "<p class=\"text-mid\">Sa tab na <strong>Disclaimer / Legal</strong> maaaring magdagdag ng legal na teksto na lalabas sa ibaba ng signature sa mas maliit na font.</p><h3 class=\"h5 mt-6 mb-3\">Kailan magdagdag ng disclaimer</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Business correspondence</strong> – paunawa sa confidentiality at kahilingang mag-delete sa kaso ng maling paghahatid.</li><li><strong>Mga kinakailangan ng industriya</strong> – ang ilang industriya (hal. legal, medikal, pinansyal) ay nangangailangan ng partikular na impormasyon sa bawat mensahe.</li><li><strong>GDPR</strong> – impormasyon tungkol sa pagproseso ng personal na data, kung ang kompanya ay data controller.</li></ul><p class=\"text-mid mt-4\">Bilang default, ang field ay puno ng sample na teksto ng confidentiality. Maaari itong i-edit, tanggalin, o palitan ng sariling disclaimer. Kung iiwan na walang laman ang field, walang disclaimer na lalabas sa signature.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Awtomatikong pag-save at pag-reset ng settings",
+      "html": "<p class=\"text-mid\">Awtomatikong sinasave ng generator ang lahat ng settings sa memorya ng browser (localStorage). Pagkatapos ma-refresh ang page o mabuksan ulit ang tool, ang mga data, layout, kulay, at lahat ng ibang opsyon ay maibabalik.</p><h3 class=\"h5 mt-6 mb-3\">Paano gumagana ang awtomatikong pag-save?</h3><p class=\"text-mid\">Bawat pagbabago (teksto, kulay, layout, spacing) ay agad na sinasave sa memorya ng browser. Awtomatiko ito sa background — walang kailangang i-click na button.</p><h3 class=\"h5 mt-6 mb-3\">Paano i-reset ang settings?</h3><p class=\"text-mid\">Sa ilalim ng preview ng signature makikita ang button na <strong>Reset appearance</strong>. Pagka-click lalabas ang window na humihingi ng kompirmasyon. Ang pagkumpirma ng reset ay magbabalik ng lahat ng data at settings sa default na halaga. Hindi na maaaring i-undo ang aksyon na ito.</p><h3 class=\"h5 mt-6 mb-3\">Export at import ng configuration</h3><p class=\"text-mid\">Sa ilalim ng preview ng signature makikita ang dalawang karagdagang button: <strong>Export settings</strong> at <strong>Import settings</strong>. Ang export ay sinasave ang lahat ng data, kulay, layout, spacing, at text style sa JSON file. Ang import ay naglo-load ng dating na-save na configuration mula sa file.</p><p class=\"text-mid mt-3\">Ang feature na ito ay lalo nang kapaki-pakinabang kung gusto mong ilipat ang signature configuration sa pagitan ng mga computer, ibahagi ang settings sa mga kasamahan, o mag-save ng backup bago mag-reset.</p>"
     },
     {
       "type": "gap",
@@ -207,6 +225,15 @@
           "description": "Sa signature field, gamitin ang Ctrl+V (Windows) o Cmd+V (Mac). Lalabas ang signature na may lahat ng kulay at formatting. I-save ang mga pagbabago."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Preview ng signature at mga opsyon sa export",
+      "html": "<p class=\"text-mid\">Ang preview panel ay nakikita sa kanan ng editor at awtomatikong nag-a-update sa bawat pagbabago. Ang preview ay naka-sticky, kaya nakikita kahit mag-scroll sa mga editing option.</p><h3 class=\"h5 mt-6 mb-3\">Pagpalit ng preview background</h3><p class=\"text-mid\">Sa itaas ng preview makikita ang tatlong button ng pagpalit ng background: <strong>Light</strong> (default na gray background), <strong>Dark</strong> (madilim na background, kapaki-pakinabang sa pagsuri ng readability), at <strong>Checkerboard</strong> (chess pattern para makita ang transparency at mga gilid ng signature).</p><h3 class=\"h5 mt-6 mb-3\">Mga action button</h3><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Copy signature (Gmail / Outlook)</strong> — kinokopya ang signature bilang formatted HTML sa clipboard.</li><li><strong>Copy HTML code</strong> — kinokopya ang raw HTML code ng signature.</li><li><strong>Download as HTML</strong> — sinasave ang signature code bilang .html file.</li><li><strong>Show HTML code</strong> — nagbubukas ng modal window na may source code.</li><li><strong>Export settings</strong> — sinasave ang buong configuration sa JSON file.</li><li><strong>Import settings</strong> — naglo-load ng configuration mula sa JSON file.</li><li><strong>Reset appearance</strong> — nagbabalik ng lahat ng data at settings sa default (pagkatapos ng kompirmasyon).</li></ul>"
     },
     {
       "type": "gap",

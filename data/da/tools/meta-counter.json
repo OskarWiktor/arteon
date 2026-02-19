@@ -208,6 +208,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Hvad gør denne meta-titel og beskrivelsesstæller speciel?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRuler2Line",
+          "title": "Måling i pixels",
+          "description": "Vi tæller ikke kun tegn, men måler den faktiske tekstbredde, som Google gør det."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Google-forhåndsvisning",
+          "description": "Se hvordan titlen og beskrivelsen ser ud i søgeresultaterne, før du publicerer siden."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Farvevurdering",
+          "description": "Du ved med det samme, om teksten er for kort, optimal eller for lang."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Pixels og tegn samtidig",
+          "description": "Værktøjet viser begge værdier på én gang – du kan sammenligne, om titlen holder sig inden for både tegn- og pixelgrænsen."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Titel og beskrivelse i ét view",
+          "description": "Title og description kan tjekkes samtidig uden at skifte mellem faner."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Lokalt interface",
+          "description": "Hele interfacet er på dit sprog. Du behøver ikke oversætte indstillinger fra engelsk."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om meta-titel og beskrivelseskontrollen",
       "openByDefault": 1,

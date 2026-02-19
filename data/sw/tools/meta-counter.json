@@ -150,6 +150,41 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Muhtasari wa snippet – inaonyesha nini?",
+      "html": "<p class=\"text-mid\">Muhtasari (snippet preview) unaiga jinsi kichwa na maelezo ya ukurasa yanavyoonekana katika matokeo ya utafutaji ya Google. Hii ni taswira ya makadirio – muonekano halisi unaweza kutofautiana kidogo kulingana na kifaa na kivinjari.</p><h3 class=\"h5 mt-6 mb-2\">Vipengele vya muhtasari</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> – anwani ya ukurasa inayoonyeshwa juu ya kichwa. Unaweza kuiingiza katika sehemu ya hiari kwa muhtasari wa kweli zaidi.</li><li><strong>Kichwa</strong> – kichwa cha habari cha bluu. Ikiwa ni kirefu sana, zana inakikata moja kwa moja na kuongeza nukta tatu.</li><li><strong>Maelezo</strong> – maandishi ya kijivu chini ya kichwa. Pia yanakatwa ikiwa yanazidi kikomo.</li></ul><h3 class=\"h5 mt-6 mb-2\">Muhtasari hauonyeshi nini</h3><p class=\"text-mid\">Muhtasari hauzingatii vipengele vyote ambavyo Google inaweza kuongeza: tarehe, ukadiriaji wa nyota, viungo vya ukurasa ndogo au vipande tajiri. Hii ni toleo rahisi linalolenga urefu wa maandishi.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Matatizo ya kawaida na ufumbuzi",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "Kichwa ni kirefu sana",
+          "description": "Fupisha kichwa huku ukihifadhi maneno muhimu zaidi mbele. Ondoa vivumishi kama &quot;bora zaidi&quot;, &quot;kitaalamu&quot; – mara chache huongeza thamani. Jina la chapa mwishoni baada ya kigawanyo."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Maelezo ni mafupi sana",
+          "description": "Ongeza maelezo zaidi: mtumiaji atapata nini kwenye ukurasa, faida gani atapokea, ni nini kinachofanya ofa kuwa tofauti. Maliza na wito wa kuchukua hatua."
+        },
+        {
+          "icon": "RiRuler2Line",
+          "title": "Upana wa pikseli ni tofauti na inavyotarajiwa",
+          "description": "Zana inapima upana kwa kutumia fonti ya kawaida inayofanana na ile inayotumiwa na Google. Matokeo yanaweza kutofautiana kidogo kulingana na kivinjari."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Kikaguzi cha meta tag ni kwa nani?",
       "description": "Kikaguzi cha meta tag ni muhimu kwa mtu yeyote anayetengeneza maudhui ya tovuti:",

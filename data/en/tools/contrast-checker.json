@@ -246,6 +246,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Troubleshooting the color contrast checker",
+      "html": "<h3 class=\"h5 mb-2\">I see a color format error message</h3><p class=\"text-mid mb-4\">Check the color format. A HEX code should start with <code class=\"rounded bg-black/5 px-1\">#</code> and contain 3 or 6 characters (e.g. <code class=\"rounded bg-black/5 px-1\">#fff</code> or <code class=\"rounded bg-black/5 px-1\">#ffffff</code>). For RGB, make sure values are separated by commas and fall within the 0-255 range.</p><h3 class=\"h5 mb-2\">The Adjust function cannot find a suitable color</h3><p class=\"text-mid mb-4\">When the background and text have similar lightness in the same hue, the algorithm may not find a variant that meets the requirements without changing the hue. In this case, consider changing the background color or choosing an entirely different text color.</p><h3 class=\"h5 mb-2\">The color picker does not match the entered code</h3><p class=\"text-mid\">The browser color picker only supports the HEX format without transparency. If you enter a color in RGBA or HSLA format with transparency, the picker will show only the color part (without alpha). Contrast calculations still take transparency into account.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Where should you check color readability?",
       "description": "Readability matters everywhere someone needs to read text or recognize a UI element:",
