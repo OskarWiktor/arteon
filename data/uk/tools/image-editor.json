@@ -124,6 +124,34 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Як додати зображення?",
+      "html": "<p class=\"text-mid\">Інструмент приймає зображення у форматах JPG, PNG та WebP. Додати фото можна двома способами:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Перетягнути та відпустити</strong> — перетягніть файл з папки на комп'ютері та відпустіть його на поле для завантаження (поле з пунктирною рамкою).</li><li><strong>Вибір з пристрою</strong> — натисніть на поле для завантаження, і відкриється вікно вибору файлу.</li></ul><p class=\"text-mid mt-3\">Після додавання зображення інструмент автоматично зчитає його оригінальні розміри та покаже попередній перегляд. Далі можна переходити до налаштування кадру.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Встановіть цільові розміри",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Розміри в px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Готові формати</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Ширина (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly /></div><div><label class=\"text-[14px]! font-medium\">Висота (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly /></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\" /><span>Зберегти пропорції (автоматичний другий розмір)</span></label></div></div>",
+      "html": "<p class=\"text-mid\">У вкладці <strong>Розміри в px</strong> ви вводите ширину та висоту вручну. Опція <strong>Зберегти пропорції</strong> автоматично підлаштовує другий розмір.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Розміри зображень для Instagram, Facebook та LinkedIn",
+      "html": "<p class=\"text-mid mb-4\">Інструмент містить готові формати з оптимальними розмірами для найпопулярніших платформ:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Платформа</th><th class=\"py-2 pr-4 font-semibold\">Формат</th><th class=\"py-2 pr-4 font-semibold\">Розміри (px)</th><th class=\"py-2 font-semibold\">Пропорції</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Квадратний пост</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Портретний пост</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Пост</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Обкладинка сторінки</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Пост</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Банер профілю</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG image</td><td class=\"py-2 pr-4\">Поширення посилань</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Готові формати для соціальних мереж",
       "grid": "two",
@@ -178,6 +206,59 @@
           "icon": "RiFileTransferLine",
           "title": "Конвертація форматів",
           "description": "Конвертуйте між JPG, PNG та WebP. Контролюйте якість стиснення від 60% до 100%."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Як кадрувати зображення?",
+      "html": "<p class=\"text-mid\">Після встановлення цільових розмірів на попередньому перегляді з'являється інтерактивна область кадру. Світла частина зображення — це фрагмент, який буде збережено, решта затемнена.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Переміщення кадру</p><p class=\"text-mid mt-1\">Перетягніть світлу область у будь-яке місце зображення. Так ви обираєте, який фрагмент фото буде експортовано.</p></div><div><p class=\"text-dark font-semibold\">Зміна розміру через маркери</p><p class=\"text-mid mt-1\">У кутах області кадру є маленькі квадрати (маркери). Перетягуючи їх, ви змінюєте розмір кадру — можна збільшити або зменшити, зберігаючи обрані пропорції.</p></div><div><p class=\"text-dark font-semibold\">Наближення (зум)</p><p class=\"text-mid mt-1\">У вкладці <strong>Наближення</strong> є повзунок для регулювання зуму (100–300%). Вище значення означає, що кадр охоплює менший фрагмент оригінального фото — зручно, коли потрібно вирізати конкретну деталь.</p></div><div><p class=\"text-dark font-semibold\">Точне встановлення позиції</p><p class=\"text-mid mt-1\">У вкладці <strong>Позиція</strong> можна встановити точну позицію кадру у відсотках (0–100% для осей X та Y). Кнопки центрування дозволяють швидко встановити кадр по центру зображення.</p></div></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Форми кадру",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Прямокутник</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Квадрат</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Коло</span></div></div>",
+      "html": "<p class=\"text-mid\">У вкладці <strong>Форми кадру</strong> обирайте форму експортованого зображення: прямокутник (з обраними пропорціями), квадрат (примусово 1:1) або коло (з прозорим фоном).</p><p class=\"text-mid mt-3\">Форма кола створює круглий аватар із прозорим фоном поза колом. Інструмент автоматично переключить формат на PNG або WebP, оскільки JPG не підтримує прозорість.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Сітка 3×3 — для чого вона потрібна?",
+      "html": "<p class=\"text-mid\">На області кадру видно сітку, що ділить зображення на 9 рівних частин. Це візуалізація <strong>правила третин</strong> — одного з базових принципів фотографічної композиції.</p><p class=\"text-mid mt-3\">Правило стверджує, що найважливіші елементи фото (обличчя, продукт, точка інтересу) мають знаходитися на перетинах ліній сітки або вздовж них. Така композиція виглядає динамічніше та приємніше для ока, ніж розміщення об'єкта точно по центру.</p><p class=\"text-mid mt-3\">У вкладці <strong>Колір сітки</strong> можна змінити колір ліній (зелений, білий, чорний, червоний, жовтий), щоб сітка була добре видна на різних зображеннях.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTabs",
+      "title": "Експорт — який формат обрати?",
+      "tabs": [
+        {
+          "title": "JPG",
+          "icon": "RiImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Найпопулярніший формат для фотографій. Добре стискається при збереженні візуальної якості. Не підтримує прозорість — фон завжди буде заповнений кольором.</p><p class=\"text-mid\">Гарний вибір для фото продуктів, портретів та більшості графіки для сайту. Повзунок якості (60–100%) контролює стиснення.</p></div>"
+        },
+        {
+          "title": "PNG",
+          "icon": "RiFileImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Формат без втрат — зберігає повну якість, але файли більші. Підтримує прозорість (необхідний для форми кола).</p><p class=\"text-mid\">Гарний вибір для графіки з текстом, іконок та зображень, що потребують чітких країв.</p></div>"
+        },
+        {
+          "title": "WebP",
+          "icon": "RiCropLine",
+          "html": "<div><p class=\"text-mid mb-3\">Сучасний формат, що поєднує переваги JPG та PNG — малі файли, хороша якість, підтримка прозорості. Підтримується усіма сучасними браузерами.</p><p class=\"text-mid\">Рекомендований для веб-сайтів — менші файли означають швидше завантаження.</p></div>"
         }
       ]
     },

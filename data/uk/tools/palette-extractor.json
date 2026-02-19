@@ -100,8 +100,143 @@
       "variant": "line"
     },
     {
+      "type": "sectionDemo",
+      "title": "Як виглядає палітра кольорів із зображення?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Приклад кольорів, отриманих із фотографії природи</p></div>",
+      "html": "<p class=\"text-mid mb-4\">Після завантаження зображення екстрактор відображає список домінуючих кольорів, відсортованих від найчастіше представленого. Біля кожного кольору видно код HEX та значення RGB — готові для вставки у CSS, Figma або будь-який графічний редактор.</p><p class=\"text-mid\">Кількість виділених кольорів залежить від вмісту зображення. Пейзажне фото дасть багатшу палітру (8–12 кольорів), а просте двокольорове лого — відповідно менше позицій.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
-      "title": "Де застосувати екстрактор кольорів?",
+      "title": "Які зображення дають найкращі результати?",
+      "description": "Якість отриманої палітри залежить від типу завантаженого зображення:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiImageLine",
+          "title": "Логотипи та графіка з обмеженою палітрою",
+          "description": "Зображення з кількома чітко розділеними кольорами дають найточніші результати — екстрактор влучно розпізнає кожний колір."
+        },
+        {
+          "icon": "RiSearchEyeLine",
+          "title": "Фотографії з виразним мотивом",
+          "description": "Фото продуктів, інтер'єрів чи пейзажів також дають корисні палітри, але містять більше відтінків — включно з кольорами тіней та відблисків."
+        },
+        {
+          "icon": "RiEraserLine",
+          "title": "Файли PNG з прозорим фоном",
+          "description": "Прозорі пікселі автоматично пропускаються під час аналізу. Якщо потрібно витягти кольори лише з об'єкта (наприклад, логотипу), використовуйте PNG без фону."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Зображення без великого однокольорового фону",
+          "description": "Коли фон займає більшу частину зображення, його колір домінує у результатах. Перед завантаженням варто обрізати зображення до потрібного фрагмента."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTimeline",
+      "title": "Як працює екстракція кольорів із зображення?",
+      "description": "Після завантаження файлу інструмент виконує кілька кроків у фоновому режимі — уся аналітика відбувається локально у браузері:",
+      "items": [
+        {
+          "icon": "RiZoomInLine",
+          "title": "Масштабування зображення",
+          "description": "Зображення зменшується до ~240 пікселів завширшки. Це пришвидшує аналіз навіть дуже великих фотографій без впливу на точність визначення кольорів."
+        },
+        {
+          "icon": "RiGroupLine",
+          "title": "Групування схожих кольорів",
+          "description": "Кожен піксель аналізується, а близькі відтінки об'єднуються в групи. Два майже ідентичних синіх стають одним кольором у палітрі."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Вибір домінуючих кольорів",
+          "description": "Алгоритм обирає кольори, що займають найбільшу площу зображення. Результат — список до 12 кольорів, відсортованих від найчастіше представленого."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Пропуск прозорих пікселів",
+          "description": "У файлах PNG з прозорим фоном ці області не враховуються — екстрактор аналізує лише видимі кольори. Увесь процес зазвичай займає менше секунди."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Вирішення проблем з екстрактором кольорів",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBarChartLine",
+          "title": "Екстрактор виділив менше 12 кольорів",
+          "description": "Кількість виділених кольорів залежить від вмісту зображення. Просте двокольорове лого дасть 2–3 результати — це нормальна робота. Інструмент не додає штучних кольорів, а витягує лише ті, які фактично є на зображенні."
+        },
+        {
+          "icon": "RiAlertLine",
+          "title": "У палітрі з'явилися несподівані кольори",
+          "description": "Це можуть бути кольори тіней, градієнтів або відблисків — пікселі в цих областях мають інші кольори, ніж об'єкт на перший погляд. Використання зображення з більш однорідними кольорами або обрізання темних фрагментів покращить результати."
+        },
+        {
+          "icon": "RiErrorWarningLine",
+          "title": "Колір фону домінує у результатах",
+          "description": "Коли фон займає більшу площу, ніж сам об'єкт, його колір буде першим у списку. Рішення: використовуйте PNG з прозорим фоном або обріжте зображення так, щоб об'єкт займав більшу частину."
+        },
+        {
+          "icon": "RiFileWarningLine",
+          "title": "Файл не приймається екстрактором",
+          "description": "Інструмент підтримує лише формати PNG, JPG та SVG. Файли в інших форматах (GIF, TIFF, HEIC, PDF) потребують попередньої конвертації."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Що вирізняє екстрактор кольорів із зображення?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Локальна аналітика — зображення не залишає комп'ютер",
+          "description": "Уся екстракція кольорів відбувається у браузері. Зображення не надсилається на жоден сервер, а після закриття сторінки дані видаляються з пам'яті."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "До 12 домінуючих кольорів з одного зображення",
+          "description": "Інструмент виділяє до 12 кольорів, відсортованих від найчастіше представленого — достатньо для побудови повної колірної палітри проєкту."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Три популярних формати зображень",
+          "description": "Підтримуються формати PNG, JPG та SVG. Файли PNG з прозорим фоном дають найкращі результати, бо прозорі пікселі автоматично пропускаються."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Готові коди HEX та RGB для вставки",
+          "description": "Кожен виділений колір має код HEX (напр. #2C5F2D) та значення RGB. Код можна скопіювати у буфер обміну та вставити безпосередньо у CSS, Figma або Photoshop."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Де використати кольори, витягнуті із зображення?",
       "grid": "two",
       "items": [
         {

@@ -185,6 +185,107 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Як користуватися генератором favicon?",
+      "description": "Генерація favicon — це кілька простих кроків:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Додайте вихідне зображення",
+          "description": "<div><p class=\"mb-2\">Перетягніть файл у відведену область або оберіть графіку з пристрою.</p><p class=\"text-light\">Підтримувані формати: PNG, JPG, SVG. Найкраще підходить простий логотип або іконка розміром щонайменше 512×512 пікселів.</p></div>"
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "2. Оберіть розміри іконок",
+          "description": "<div><p class=\"mb-2\">Позначте, які розміри іконок вам потрібні.</p><p class=\"text-light\">Можна обрати всі або лише деякі. Для звичайного сайту достатньо: favicon.ico, 32×32 та 180×180.</p></div>"
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "3. Налаштуйте параметри генерації",
+          "description": "<div><p class=\"mb-2\">Встановіть додаткові параметри:</p><ul class=\"text-light list-disc pl-5\"><li><strong>Фон</strong> — прозорий або обраний колір</li><li><strong>Маніфест</strong> — конфігураційний файл для PWA</li><li><strong>Автоматичне завантаження</strong> — файли завантажаться одразу після генерації</li></ul></div>"
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Згенеруйте та завантажте файли",
+          "description": "<div><p class=\"mb-2\">Після запуску генерації інструмент обробить зображення локально — нічого не надсилається на сервер.</p><p class=\"text-light\">Завантажте всі файли як ZIP-архів або завантажте окремі іконки по одній.</p></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Параметри генерації — що робить кожен з них?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">Розміри PNG</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">16x16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">32x32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">180x180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Прозорий фон (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Колір фону:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Фон (прозорий або колір)</h3><p class=\"text-mid\">За замовчуванням генератор зберігає прозорість. Також можна обрати конкретний колір фону.</p></div><div><h3 class=\"h5 mb-2\">Генерація маніфесту (site.webmanifest)</h3><p class=\"text-mid\">JSON-файл для веб-додатків (PWA). Якщо ви не створюєте PWA, цей параметр не обов'язковий.</p></div></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Як завантажити згенеровані файли?",
+      "description": "Після генерації іконок доступні кілька варіантів завантаження:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFolderZipLine",
+          "title": "Завантажити все як ZIP",
+          "description": "Кнопка Завантажити все пакує всі згенеровані файли в один ZIP-архів. Це найзручніший варіант, коли потрібен повний набір іконок."
+        },
+        {
+          "icon": "RiFileDownloadLine",
+          "title": "Завантажити окремі файли",
+          "description": "Кожна згенерована іконка має власну кнопку завантаження — можна завантажити окремий файл без необхідності завантажувати весь набір. Зручно, коли потрібно оновити лише один розмір."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Яке вихідне зображення працює найкраще?",
+      "description": "Favicon — це дуже маленька графіка, навіть 16×16 пікселів. Тому не кожне зображення підійде як джерело:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShapeLine",
+          "title": "Прості форми та чіткі символи",
+          "description": "Найкраще підходять прості логотипи, окремі літери або символи. Уникайте складних графік із багатьма дрібними деталями."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Квадратний формат",
+          "description": "Favicon — квадратний. Якщо вихідне зображення має пропорції, відмінні від 1:1, воно буде обрізане або розтягнуте."
+        },
+        {
+          "icon": "RiZoomInLine",
+          "title": "Достатній розмір",
+          "description": "Рекомендуємо вихідне зображення розміром щонайменше 512×512 пікселів. Менші зображення будуть збільшені з втратою якості."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "SVG як ідеальне джерело",
+          "description": "SVG масштабується без втрати якості, тому іконки в усіх розмірах будуть чіткими."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Контрастні кольори",
+          "description": "Favicon має бути видимий на різних фонах (світлі вкладки, темний режим). Оберіть кольори, які зберігають читабельність."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Часті запитання про генератор favicon",
       "openByDefault": 1,

@@ -116,6 +116,54 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Що вимірює лічильник — слова, символи, час читання",
+      "description": "Лічильник вимірює п'ять ключових показників:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiText",
+          "title": "Слова",
+          "description": "Загальна кількість слів у тексті. Це основний показник довжини."
+        },
+        {
+          "icon": "RiSpaceShipLine",
+          "title": "Символи (з пробілами)",
+          "description": "Усі символи разом із пробілами. Корисно, коли CMS або платформа має ліміт символів."
+        },
+        {
+          "icon": "RiHashtag",
+          "title": "Символи (без пробілів)",
+          "description": "Лише літери, цифри та розділові знаки. Іноді потрібно для друкарень або при розрахунках за текст."
+        },
+        {
+          "icon": "RiParagraph",
+          "title": "Абзаци",
+          "description": "Скільки блоків тексту, розділених порожніми рядками. Допомагає оцінити, чи текст добре структурований."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Час читання",
+          "description": "Калькулятор часу читання показує, скільки хвилин займе прочитання тексту при середній швидкості 200 слів на хвилину."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Як інтерпретувати результати?",
+      "subtitle": "Статуси оцінки",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">Гарна довжина</span><span class=\"text-mid text-sm!\">Текст вміщується у діапазон</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Нижче діапазону</span><span class=\"text-mid text-sm!\">Текст коротший за типовий</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Вище діапазону</span><span class=\"text-mid text-sm!\">Текст довший за типовий</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Прогрес</span><span class=\"text-mid\">1200 / 1200-3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Кольорова шкала прогресу та статус оцінки допомагають швидко оцінити довжину тексту:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Гарна довжина</strong> (зелений) — текст вміщується в орієнтовний діапазон для обраного типу сторінки.</li><li><strong class=\"text-warning-text\">Нижче діапазону</strong> (жовтий) — текст коротший за типовий для цього типу. Якщо він відповідає на запитання читача, довжина може бути достатньою.</li><li><strong class=\"text-error-text\">Вище діапазону</strong> (червоний) — текст довший за типовий. Якщо кожен абзац несе нову інформацію, довжина виправдана.</li></ul><p class=\"text-mid mt-4\">Діапазони базуються на аналізі контенту, який добре ранжується у пошукових системах. Якщо текст відповідає на запитання читача, довжина є прийнятною незалежно від результату лічильника.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Рекомендовані діапазони довжини тексту",
       "html": "<p class=\"text-mid mb-4\">Нижче наведено орієнтовні діапазони для різних типів сторінок. Це рекомендації, а не жорсткі правила — найважливіша цінність для читача.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Тип сторінки</th><th class=\"py-2 pr-4 font-semibold\">Слова</th><th class=\"py-2 font-semibold\">Примітки</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Опис продукту</td><td class=\"py-2 pr-4 whitespace-nowrap\">100-300</td><td class=\"text-primary-light0 py-2 text-sm\">Конкретні вигоди та технічні характеристики.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Сторінка послуги</td><td class=\"py-2 pr-4 whitespace-nowrap\">500-1000</td><td class=\"text-primary-light0 py-2 text-sm\">Опис процесу, вигоди, приклади з практики.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Головна сторінка</td><td class=\"py-2 pr-4 whitespace-nowrap\">300-800</td><td class=\"text-primary-light0 py-2 text-sm\">Ключова пропозиція цінності, навігація до ключових розділів.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Лендінг</td><td class=\"py-2 pr-4 whitespace-nowrap\">500-1500</td><td class=\"text-primary-light0 py-2 text-sm\">Переконливий текст з чітким закликом до дії.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Стаття блогу</td><td class=\"py-2 pr-4 whitespace-nowrap\">1500-3000</td><td class=\"text-primary-light0 py-2 text-sm\">Глибока тема з практичними прикладами.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Гайд</td><td class=\"py-2 pr-4 whitespace-nowrap\">2000-5000</td><td class=\"text-primary-light0 py-2 text-sm\">Вичерпне покриття теми з покроковими інструкціями.</td></tr></tbody></table></div>"
@@ -149,6 +197,56 @@
           "icon": "RiMegaphoneLine",
           "title": "Маркетологи",
           "description": "Оцінюйте довжину лендінгів, email-розсилок та рекламних текстів."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Ліміти символів на популярних платформах",
+      "html": "<p class=\"text-mid mb-4\">Лічильник символів стане в пригоді при створенні контенту для платформ з обмеженнями довжини:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Платформа / Елемент</th><th class=\"py-2 pr-4 font-semibold\">Ліміт символів</th><th class=\"py-2 font-semibold\">Примітки</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google — meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 символів</td><td class=\"text-primary-light0 py-2 text-sm\">Довші заголовки обрізаються у результатах пошуку.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google — meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 символів</td><td class=\"text-primary-light0 py-2 text-sm\">Опис під посиланням у результатах пошуку.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram — біо</td><td class=\"py-2 pr-4 whitespace-nowrap\">150 символів</td><td class=\"text-primary-light0 py-2 text-sm\">Короткий опис профілю.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) — пост</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 символів</td><td class=\"text-primary-light0 py-2 text-sm\">Лаконічний текст з ключовим повідомленням.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn — пост</td><td class=\"py-2 pr-4 whitespace-nowrap\">3000 символів</td><td class=\"text-primary-light0 py-2 text-sm\">Текст згортається після ~140 символів — перше речення найважливіше.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook — пост</td><td class=\"py-2 pr-4 whitespace-nowrap\">63 206 символів</td><td class=\"text-primary-light0 py-2 text-sm\">Текст згортається після ~480 символів.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Що вирізняє цей лічильник слів та символів?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Шість типів сторінок із рекомендованими діапазонами",
+          "description": "Опис продукту, сторінка послуги, головна, лендінг, стаття блогу та гайд — кожен тип має власні діапазони на основі аналітики."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Локальна обробка у браузері",
+          "description": "Текст не надсилається на жоден сервер — весь аналіз відбувається локально на вашому пристрої."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Оцінка довжини тексту",
+          "description": "Ви не лише рахуєте слова, а й отримуєте інформацію, чи довжина відповідає обраному типу сторінки."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "Діапазони на основі SEO",
+          "description": "Рекомендовані довжини базуються на аналізі контенту, який добре ранжується у пошукових системах."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Час читання",
+          "description": "Одразу бачите, скільки хвилин займе читачам прочитання вашого тексту."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Копіювання звіту",
+          "description": "Кнопка Копіювати звіт переносить у буфер обміну підсумок з усіма статистиками та оцінкою довжини."
         }
       ]
     },

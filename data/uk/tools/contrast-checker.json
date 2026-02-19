@@ -110,9 +110,102 @@
       "variant": "line"
     },
     {
+      "type": "sectionTabs",
+      "title": "Які формати кольорів підтримуються?",
+      "tabs": [
+        {
+          "title": "HEX",
+          "icon": "RiHashtag",
+          "html": "<div><p class=\"text-mid mb-3\">Шістнадцятковий формат — найпопулярніший у веб-дизайні. Починається із символу <code class=\"rounded bg-black/5 px-1\">#</code> та містить 3 або 6 символів (цифри 0–9 та літери A–F).</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">#fff</code> — білий (скорочена форма)</li><li><code class=\"rounded bg-black/5 px-1\">#ffffff</code> — білий (повна форма)</li><li><code class=\"rounded bg-black/5 px-1\">#1a73e8</code> — синій</li></ul></div>"
+        },
+        {
+          "title": "RGB / RGBA",
+          "icon": "RiPaletteLine",
+          "html": "<div><p class=\"text-mid mb-3\">Формат на основі трьох каналів: червоний (Red), зелений (Green), синій (Blue). Кожен канал приймає значення від 0 до 255. Варіант RGBA додає четвертий параметр — прозорість (alpha) від 0 до 1.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">rgb(255, 255, 255)</code> — білий</li><li><code class=\"rounded bg-black/5 px-1\">rgba(0, 0, 0, 0.8)</code> — чорний з 80% непрозорості</li></ul></div>"
+        },
+        {
+          "title": "HSL / HSLA",
+          "icon": "RiEqualizerLine",
+          "html": "<div><p class=\"text-mid mb-3\">Формат на основі тону (Hue, 0–360°), насиченості (Saturation, 0–100%) та яскравості (Lightness, 0–100%). Варіант HSLA додає прозорість. Зручний, коли потрібно змінити яскравість або насиченість кольору.</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">hsl(0, 0%, 100%)</code> — білий</li><li><code class=\"rounded bg-black/5 px-1\">hsla(217, 91%, 60%, 0.9)</code> — синій з 90% непрозорості</li></ul></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Як інтерпретувати результати перевірки читабельності?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">Коефіцієнт контрасту</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Звичайний текст</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">AA (мін. 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">AAA (мін. 7:1)</span></div></div><div class=\"rounded-lg border border-neutral-200 px-3 py-2\" style=\"color: var(--black3); background-color: var(--white)\"><p class=\"text-sm!\">Приклад звичайного тексту</p></div></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">Великий текст</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">AA (мін. 3:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">AAA (мін. 4.5:1)</span></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Після введення кольорів інструмент показує результати у трьох секціях:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Звичайний текст</strong> — потрібен контраст 4.5:1 (AA) або 7:1 (AAA). Стосується тексту менше 18pt (24px) або менше 14pt жирного.</li><li><strong>Великий / жирний текст</strong> — потрібен контраст 3:1 (AA) або 4.5:1 (AAA). Стосується заголовків, кнопок, виділень.</li><li><strong>Іконки</strong> — потрібен контраст 3:1 (AA). Стосується іконок та графічних елементів інтерфейсу.</li></ul><p class=\"text-mid mt-3\"><strong>Зелена позначка</strong> означає виконану вимогу. <strong>Червона позначка</strong> означає, що контраст занадто низький і потребує виправлення.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Вимоги WCAG до контрасту",
       "html": "<p class=\"text-mid mb-4\">WCAG 2.1 визначає два рівні відповідності для контрасту тексту:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Рівень</th><th class=\"py-2 pr-4 font-semibold\">Звичайний текст</th><th class=\"py-2 pr-4 font-semibold\">Великий текст</th><th class=\"py-2 font-semibold\">Примітки</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">AA (мінімальний)</td><td class=\"py-2 pr-4 whitespace-nowrap\">4.5:1</td><td class=\"py-2 pr-4 whitespace-nowrap\">3:1</td><td class=\"text-primary-light0 py-2 text-sm\">Мінімальна вимога для більшості сайтів. Обов'язковий для державних сайтів у багатьох країнах.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">AAA (підвищений)</td><td class=\"py-2 pr-4 whitespace-nowrap\">7:1</td><td class=\"py-2 pr-4 whitespace-nowrap\">4.5:1</td><td class=\"text-primary-light0 py-2 text-sm\">Рекомендований рівень. Забезпечує комфортне читання для більшості людей з порушеннями зору.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Великий текст — це текст розміром від 18pt (24px) або від 14pt (18.67px) жирний.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Автоматичне підбирання кольору під вимоги WCAG",
+      "html": "<p class=\"text-mid mb-4\">Якщо контраст занадто низький, не потрібно підбирати відповідний колір методом спроб і помилок. Функція <strong>Підібрати</strong> автоматично знаходить варіант кольору тексту, який відповідає обраному порогу контрасту.</p><p class=\"text-mid mb-4\">Як працює підбирання:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>Оберіть ціль підбирання зі списку — наприклад, AA для звичайного тексту або AAA для великого тексту.</li><li>Запустіть функцію кнопкою Підібрати.</li><li>Інструмент перебере варіанти яскравості кольору тексту та запропонує найближчий, що відповідає вимогам.</li><li>Запропонований колір можна скопіювати у буфер обміну або одразу встановити як новий колір тексту.</li></ol><p class=\"text-mid mt-3\">Алгоритм зберігає тон та насиченість оригінального кольору, змінюючи лише яскравість. Запропонований колір залишається узгодженим з айдентикою, водночас відповідаючи стандарту доступності.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Що означають рівні AA та AAA у стандарті WCAG?",
+      "plans": [
+        {
+          "id": "aa",
+          "name": "Рівень AA (мінімальний)",
+          "highlighted": true
+        },
+        {
+          "id": "aaa",
+          "name": "Рівень AAA (підвищений)"
+        }
+      ],
+      "features": [
+        {
+          "name": "Звичайний текст — мін. 4.5:1",
+          "values": { "aa": true, "aaa": true }
+        },
+        {
+          "name": "Звичайний текст — мін. 7:1",
+          "values": { "aa": false, "aaa": true }
+        },
+        {
+          "name": "Великий / жирний текст — мін. 3:1",
+          "values": { "aa": true, "aaa": true }
+        },
+        {
+          "name": "Великий / жирний текст — мін. 4.5:1",
+          "values": { "aa": false, "aaa": true }
+        },
+        {
+          "name": "Іконки та елементи інтерфейсу — мін. 3:1",
+          "values": { "aa": true, "aaa": true }
+        },
+        {
+          "name": "Вимога законодавства (директива ЄС)",
+          "values": { "aa": true, "aaa": false }
+        },
+        {
+          "name": "Рекомендовано для ключового контенту",
+          "values": { "aa": true, "aaa": true }
+        }
+      ]
     },
     {
       "type": "gap",
@@ -168,6 +261,56 @@
           "icon": "RiMegaphoneLine",
           "title": "Маркетологи",
           "description": "Переконайтеся, що рекламні банери та лендінги читаються всіма користувачами."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Читабельність кольорів для людей з дальтонізмом",
+      "html": "<p class=\"text-mid mb-4\">Дальтонізм (колірна сліпота) — це порушення сприйняття кольорів, яке зустрічається приблизно у 8% чоловіків та 0,5% жінок. Люди з дальтонізмом можуть мати труднощі з розрізненням деяких пар кольорів, навіть якщо контраст яскравості достатній.</p><p class=\"text-mid mb-4\">Найпоширеніші типи дальтонізму:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Дейтеранопія</strong> — труднощі з розрізненням зеленого та червоного (найпоширеніша форма)</li><li><strong>Протанопія</strong> — труднощі з баченням червоного</li><li><strong>Тританопія</strong> — труднощі з баченням синього та жовтого (рідкісна)</li></ul><p class=\"text-mid mt-3\">Цей інструмент перевіряє контраст яскравості, важливий для всіх користувачів. Однак при проєктуванні варто додатково уникати проблемних комбінацій кольорів (наприклад, червоний текст на зеленому фоні) та не покладатися виключно на колір для передачі інформації — використовуйте також форми, іконки, текст.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Що вирізняє перевірку контрасту та читабельності кольорів?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiEyeLine",
+          "title": "Об'єктивна оцінка на основі математичної формули",
+          "description": "Коефіцієнт контрасту обчислюється за формулою з рекомендацій WCAG — результат не залежить від налаштувань монітора чи індивідуального сприйняття кольорів."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Відповідність міжнародному стандарту WCAG",
+          "description": "Результати відповідають вимогам WCAG 2.1, які є основою законодавства про цифрову доступність у Євросоюзі та багатьох інших країнах."
+        },
+        {
+          "icon": "RiMagicLine",
+          "title": "Автоматичне підбирання кольору під поріг",
+          "description": "Функція Підібрати знаходить варіант кольору тексту, що відповідає обраному порогу контрасту — зберігає тон, змінює лише яскравість."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "П'ять форматів кольорів",
+          "description": "Підтримувані формати: HEX, RGB, RGBA, HSL та HSLA. Код кольору можна вставити безпосередньо з Figma, Photoshop або CSS."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Три типи контенту в одній перевірці",
+          "description": "Одна перевірка показує результат для звичайного тексту, великого тексту (заголовки, кнопки) та іконок — не потрібно тестувати кожен тип окремо."
+        },
+        {
+          "icon": "RiTranslate2",
+          "title": "Попередній перегляд тексту в реальному часі",
+          "description": "Зміна кольору тексту або фону одразу оновлює попередній перегляд — видно, як текст виглядає на обраному фоні, ще до впровадження."
         }
       ]
     },

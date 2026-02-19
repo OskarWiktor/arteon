@@ -91,14 +91,113 @@
     },
     { "type": "gap", "variant": "line" },
     {
+      "type": "sectionDemo",
+      "title": "Технічна специфікація QR-кодів",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Ємність</span><span class=\"text-mid text-sm!\">до 4296 символів</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Корекція помилок</span><span class=\"text-mid text-sm!\">7% – 30%</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Мін. розмір друку</span><span class=\"text-mid text-sm!\">2 × 2 см</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Мін. контраст</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Поля</span><span class=\"text-mid text-sm!\">мін. 4 модулі</span></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Знання технічних параметрів допомагає створювати QR-коди, які зчитуватимуться за будь-яких умов:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Ємність даних</strong> — QR-код може вмістити до 7089 цифр, 4296 алфавітно-цифрових символів або 2953 байти двійкових даних. На практиці для URL та візиток цієї ємності більш ніж достатньо.</li><li><strong>Корекція помилок Reed-Solomon</strong> — математичний алгоритм, що дозволяє зчитати код, навіть коли частина пошкоджена або закрита. Рівні: L (7%), M (15%), Q (25%), H (30%).</li><li><strong>Поля</strong> — білий простір навколо коду, необхідний для правильного сканування. Рекомендований мінімум — 4 модулі (одиниці коду).</li><li><strong>Мінімальний розмір для друку</strong> — за стандартних умов сканування код має бути не менше 2×2 см. Для друку великих форматів (банери, білборди) — пропорційно більше.</li><li><strong>Контраст</strong> — співвідношення контрасту між кодом і фоном має становити мінімум 3:1. Генератор автоматично попереджає про занадто низький контраст.</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "sectionSteps",
-      "title": "Де використовувати QR-коди?",
+      "title": "Застосування QR-кодів — візитки, листівки, меню ресторанів",
+      "description": "QR-коди знаходять застосування у багатьох сферах:",
+      "grid": "three",
+      "items": [
+        { "icon": "RiContactsBookLine", "title": "Ділові візитки", "description": "Код vCard на візитці дозволяє отримувачу зберегти контакт одним скануванням, без ручного введення даних." },
+        { "icon": "RiRestaurantLine", "title": "Меню ресторанів і кафе", "description": "QR-код на столику веде до цифрового меню. Гігієнічне рішення, популярне з часів пандемії COVID-19." },
+        { "icon": "RiPrinterLine", "title": "Листівки та плакати", "description": "QR-код з посиланням на сторінку продукту, форму реєстрації або спеціальну пропозицію." },
+        { "icon": "RiBuilding2Line", "title": "Упаковки продуктів", "description": "Посилання на інструкцію з експлуатації, гарантійний талон або сайт виробника." },
+        { "icon": "RiHospitalLine", "title": "Медичні кабінети", "description": "QR-коди на картках пацієнтів з посиланням на портал пацієнта або систему запису на прийом." },
+        { "icon": "RiHome4Line", "title": "Нерухомість", "description": "Коди на банерах з посиланням на повне оголошення з галереєю фотографій та деталями." },
+        { "icon": "RiTruckLine", "title": "Склади та логістика", "description": "Етикетки з QR-кодами для відстеження партій продуктів, локалізації на складі та історії відправлення." },
+        { "icon": "RiShoppingCartLine", "title": "Електронна комерція", "description": "Коди на упаковках з посиланням на інструкцію повернення, відгуки клієнтів або програму лояльності." },
+        { "icon": "RiCalendarEventLine", "title": "Заходи та конференції", "description": "Квитки з QR-кодом для швидкої верифікації при вході." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Персоналізація зовнішнього вигляду QR-коду",
+      "subtitle": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Розмір</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Поля</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Колір коду</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Колір фону</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Генератор дозволяє налаштувати кілька параметрів, що впливають на зовнішній вигляд і читабельність коду:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Розмір (px)</strong> — розмір коду у пікселях. Для стандартного друку (листівки, візитки) обирайте 300–500 px. Для цифрового використання достатньо 150–200 px.</li><li><strong>Поля</strong> — білий простір навколо коду, необхідний для правильного сканування. Рекомендоване значення: 2–4. Значення 0 може ускладнити сканування на темному фоні.</li><li><strong>Колір QR-коду</strong> — за замовчуванням чорний (#000000). Можна змінити на будь-який темний колір, що відповідає вашому бренду.</li><li><strong>Колір фону</strong> — за замовчуванням білий (#ffffff). Можна змінити на будь-який світлий колір. Генератор попередить, якщо контраст буде занадто низьким.</li></ul><p class=\"text-mid mt-3\"><strong>Порада:</strong> Зберігайте високий контраст між кодом і фоном (мінімум 3:1). Темний код на світлому фоні сканується найлегше.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Рівні корекції помилок — L, M, Q, H",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Low / Низький)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Medium / Середній)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Quartile / Високий)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (High / Максимальний)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Корекція помилок — механізм, що дозволяє зчитати QR-код, навіть коли частина пошкоджена, забруднена або закрита. Генератор використовує алгоритм Reed-Solomon — стандарт для QR-кодів.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Low / Низький) — 7%</strong> — мінімальна надмірність, код найкомпактніший. Обирайте, коли код використовуватиметься в ідеальних умовах (екран, якісний друк).</li><li><strong>M (Medium / Середній) — 15%</strong> — значення за замовчуванням, гарний компроміс між ємністю та стійкістю. Підходить для більшості випадків.</li><li><strong>Q (Quartile / Високий) — 25%</strong> — підвищена стійкість до пошкоджень. Обирайте для кодів, надрукованих на матеріалах, що можуть забруднитися.</li><li><strong>H (High / Максимальний) — 30%</strong> — найвища стійкість. Рекомендований для друку на зовнішніх матеріалах, упаковках та ситуацій, коли код може бути частково закритий (напр. логотипом у центрі).</li></ul><p class=\"text-mid mt-3\"><strong>Увага:</strong> Вищий рівень корекції означає більший і складніший код. При великому обсязі даних та рівні H код може стати дуже щільним.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs SVG — який формат обрати для друку?",
+      "plans": [
+        { "id": "png", "name": "PNG (растровий)" },
+        { "id": "svg", "name": "SVG (векторний)", "highlighted": true }
+      ],
+      "features": [
+        { "name": "Веб-сайти та соціальні мережі", "values": { "png": true, "svg": true } },
+        { "name": "Листівки та візитки", "values": { "png": true, "svg": true } },
+        { "name": "Плакати та банери (великий формат)", "values": { "png": false, "svg": true } },
+        { "name": "Масштабування без втрати якості", "values": { "png": false, "svg": true } },
+        { "name": "Редагування у графічному редакторі", "values": { "png": false, "svg": true } },
+        { "name": "Менший розмір файлу", "values": { "png": false, "svg": true } },
+        { "name": "Презентації", "values": { "png": true, "svg": true } }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Поради щодо друку QR-кодів",
+      "description": "Щоб QR-код був читабельним після друку, дотримуйтеся кількох правил:",
       "grid": "two",
       "items": [
-        { "icon": "RiPrinterLine", "title": "Друковані матеріали", "description": "Візитки, листівки, плакати, банери. Додайте QR-код з посиланням на сайт або портфоліо." },
-        { "icon": "RiRestaurantLine", "title": "Ресторани та кафе", "description": "Меню у форматі QR-коду на столі. Гості сканують та бачать актуальне меню на смартфоні." },
-        { "icon": "RiStoreLine", "title": "Роздрібна торгівля", "description": "QR-код на упаковці з посиланням на детальний опис товару, відгуки або інструкцію." },
-        { "icon": "RiCalendarEventLine", "title": "Заходи", "description": "QR-код на квитках та запрошеннях з посиланням на програму, карту або реєстрацію." }
+        {
+          "icon": "RiRulerLine",
+          "title": "Мінімальний розмір",
+          "description": "Код має бути не менше 2×2 см для сканування з близької відстані. Чим більша відстань сканування, тим більший код потрібен."
+        },
+        { "icon": "RiContrastLine", "title": "Контраст", "description": "Темний код на світлому фоні. Уникайте пастельних кольорів та низького контрасту." },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Поля навколо коду",
+          "description": "Залиште порожній простір навколо коду. Не розміщуйте інші графічні елементи занадто близько — поля необхідні для правильного сканування."
+        },
+        { "icon": "RiEyeLine", "title": "Тестування", "description": "Перед масовим друком протестуйте код на різних телефонах та за різних умов освітлення." },
+        { "icon": "RiShieldCheckLine", "title": "Рівень корекції", "description": "Для зовнішнього друку та матеріалів, що можуть пошкодитися, обирайте рівень Q або H." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Що вирізняє цей генератор QR-кодів?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiInfinityLine",
+          "title": "Локальна генерація у браузері",
+          "description": "Дані, введені у генератор, не надсилаються на жоден сервер — уся обробка відбувається локально на вашому пристрої."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "П'ять типів даних в одному інструменті",
+          "description": "URL, текст, візитка vCard, електронна пошта та телефон — кожен тип генерує QR-код у відповідному стандарті."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Персоналізація зовнішнього вигляду",
+          "description": "Кольори коду та фону, розмір у пікселях, поля та рівень корекції помилок — кожен параметр можна налаштувати."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Чотири рівні корекції помилок",
+          "description": "Алгоритм Reed-Solomon дозволяє обрати стійкість коду до пошкоджень — від 7% (L) до 30% (H). Вищий рівень корисний при друку на матеріалах, що можуть забруднитися."
+        },
+        { "icon": "RiEyeLine", "title": "Попередній перегляд у реальному часі", "description": "Результат відображається одразу після введення даних, без натискання «Згенерувати»." },
+        { "icon": "RiDownloadLine", "title": "Експорт PNG та SVG", "description": "Завантажте код у форматі, що відповідає вашим потребам." },
+        { "icon": "RiTranslate2", "title": "Інтерфейс українською", "description": "Інструмент повністю українською мовою, без необхідності перекладати іншомовні елементи." }
       ]
     },
     { "type": "gap", "variant": "line" },
