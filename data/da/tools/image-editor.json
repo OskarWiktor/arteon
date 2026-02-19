@@ -110,6 +110,34 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Hvordan tilføjer man et billede?",
+      "html": "<p class=\"text-mid\">Værktøjet accepterer billeder i formaterne JPG, PNG og WebP. Du kan tilføje et billede på to måder:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Træk og slip</strong> – tag filen fra en mappe og slip den på feltet til tilføjelse af filer (feltet med den stiplede ramme).</li><li><strong>Vælg fra disk</strong> – efter klik på feltet åbnes et vindue til at vælge en fil fra disken.</li></ul><p class=\"text-mid mt-3\">Efter tilføjelse af billedet aflæser værktøjet automatisk dets originale mål og viser en forhåndsvisning. Du kan nu gå videre til beskæringsindstillingerne.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Indstil målmål",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Mål i px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Færdige formater</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Bredde (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly /></div><div><label class=\"text-[14px]! font-medium\">Højde (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly /></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\" /><span>Bevar proportioner (automatisk andet mål)</span></label></div></div>",
+      "html": "<p class=\"text-mid\">I fanen <strong>Mål i px</strong> indtaster du bredde og højde manuelt. Muligheden <strong>Bevar proportioner</strong> tilpasser automatisk det andet mål.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Billedmål til Instagram, Facebook og LinkedIn",
+      "html": "<p class=\"text-mid mb-4\">Værktøjet indeholder færdige formater med optimale mål til de mest populære platforme:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform</th><th class=\"py-2 pr-4 font-semibold\">Format</th><th class=\"py-2 pr-4 font-semibold\">Mål (px)</th><th class=\"py-2 font-semibold\">Billedformat</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Kvadratisk opslag</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Portræt-opslag</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Opslag</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Sidecover</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Opslag</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Profilbanner</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG image</td><td class=\"py-2 pr-4\">Linkdeling</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Færdige formater til sociale medier",
       "description": "Redigeringen tilbyder færdige formater til de mest populære platforme:",
@@ -151,6 +179,47 @@
       "type": "gap",
       "variant": "line"
     },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan beskærer man et billede?",
+      "html": "<p class=\"text-mid\">Efter indstilling af målmålene vises et interaktivt beskæringsområde på forhåndsvisningen. Den lyse del af billedet er den del, der gemmes – resten er mørklagt.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Træk beskæringen</p><p class=\"text-mid mt-1\">Tag fat i det lyse område og træk det til det ønskede sted på billedet. På denne måde vælger du, hvilken del der eksporteres.</p></div><div><p class=\"text-dark font-semibold\">Ændr størrelse med håndtag</p><p class=\"text-mid mt-1\">I hjørnerne af beskæringsområdet findes små firkanter (håndtag). Ved at trække dem ændrer du beskæringens størrelse, mens proportionerne bevares.</p></div><div><p class=\"text-dark font-semibold\">Zoom</p><p class=\"text-mid mt-1\">I fanen <strong>Zoom</strong> finder du en skyder til regulering af zoom (100–300 %). En højere værdi betyder, at beskæringen dækker en mindre del af billedet.</p></div><div><p class=\"text-dark font-semibold\">Præcis positionsindstilling</p><p class=\"text-mid mt-1\">I fanen <strong>Position</strong> kan du indstille den nøjagtige position i procent (0–100 % for X- og Y-aksen). Centreringsknapperne centrerer beskæringen hurtigt.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Beskæringsformer",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Rektangel</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Kvadrat</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Cirkel</span></div></div>",
+      "html": "<p class=\"text-mid\">I fanen <strong>Beskæringsformer</strong> vælger du formen på det eksporterede billede: rektangel (med valgte proportioner), kvadrat (tvinger 1:1) eller cirkel (med gennemsigtig baggrund).</p><p class=\"text-mid mt-3\">Cirkelformen skaber en rund avatar med gennemsigtig baggrund uden for cirklen. Værktøjet skifter automatisk format til PNG eller WebP, da JPG ikke understøtter gennemsigtighed.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "3×3-gitter – hvad bruges det til?",
+      "html": "<p class=\"text-mid\">På beskæringsområdet er der synligt et gitter, der deler billedet i 9 lige store dele. Det er en visualisering af <strong>tredjedelsreglen</strong> – en af de grundlæggende regler for fotografisk komposition.</p><p class=\"text-mid mt-3\">Reglen siger, at de vigtigste elementer (ansigt, produkt, interessepunkt) bør ligge på skæringspunkterne af gitterlinjerne eller langs dem. Sådan en komposition er mere dynamisk og behagelig for øjet end at placere objektet præcist i midten.</p><p class=\"text-mid mt-3\">I fanen <strong>Gitterfarve</strong> kan du ændre farven på linjerne (grøn, hvid, sort, rød, gul), så gitteret er tydeligt synligt på forskellige fotografier.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTabs",
+      "title": "Eksport – hvilket format skal man vælge?",
+      "tabs": [
+        {
+          "title": "JPG",
+          "icon": "RiImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Det mest populære format til fotografier. God komprimering med bevaret visuel kvalitet. Understøtter ikke gennemsigtighed – baggrunden vil altid være fyldt med en farve.</p><p class=\"text-mid\">Et godt valg til produktbilleder, portrætter og de fleste grafiske elementer til hjemmesider. Kvalitetsskyderen (60–100 %) styrer komprimeringen.</p></div>"
+        },
+        {
+          "title": "PNG",
+          "icon": "RiFileImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Tabsfrit format – bevarer fuld kvalitet, men filerne er større. Understøtter gennemsigtighed (nødvendigt ved cirkelformen).</p><p class=\"text-mid\">Et godt valg til grafik med tekst, ikoner og billeder, der kræver skarpe kanter.</p></div>"
+        },
+        {
+          "title": "WebP",
+          "icon": "RiCropLine",
+          "html": "<div><p class=\"text-mid mb-3\">Moderne format, der kombinerer fordelene ved JPG og PNG – små filer, god kvalitet, understøttelse af gennemsigtighed. Understøttet af alle moderne browsere.</p><p class=\"text-mid\">Anbefalet til hjemmesider – mindre filer betyder hurtigere indlæsning.</p></div>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
       "title": "Hvem har brug for en billedredigering?",

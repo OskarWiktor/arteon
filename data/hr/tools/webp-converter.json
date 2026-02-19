@@ -67,10 +67,48 @@
     },
     { "type": "gap", "variant": "line" },
     {
+      "type": "sectionInfo",
+      "title": "Kako dodati datoteke za pretvaranje?",
+      "html": "<p class=\"text-mid\">Alat nudi dva načina dodavanja datoteka:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Povuci i ispusti</strong> – uhvatite datoteke iz mape na računalu i ispustite ih na područje s natpisom &quot;Povucite i ispustite slike ovdje&quot;. Možete povući više datoteka odjednom.</li><li><strong>Odabir s diska</strong> – klikom na polje za dodavanje datoteka otvara se prozor za odabir. Držanjem Ctrl (ili Cmd na Macu) možete odabrati više datoteka istovremeno.</li></ul><p class=\"text-mid mt-3\">Alat prihvaća samo JPG i PNG datoteke. Ako slučajno dodate datoteku u drugom formatu (npr. GIF ili BMP), ona će biti automatski preskočena i vidjet ćete informativnu poruku.</p><p class=\"text-mid mt-3\"><strong>Privatnost:</strong> Sve datoteke obrađuju se lokalno u pregledniku. Ne šalju se nikamo – ne dospijevaju na nijedan poslužitelj. Nakon zatvaranja kartice ili preglednika datoteke se brišu iz memorije.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Što znače statusi datoteka?",
+      "html": "<p class=\"text-mid\">Svaka datoteka u redu ima jedan od četiri statusa koji informiraju o tijeku pretvaranja:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Čeka</span><p class=\"text-mid\">Datoteka je u redu i čeka na obradu. Pretvaranje još nije započelo.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Obrađuje se...</span><p class=\"text-mid\">Datoteka se upravo pretvara. Za većinu slika to traje djelić sekunde, ali vrlo velike datoteke mogu zahtijevati nekoliko sekundi.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Gotovo</span><p class=\"text-mid\">Pretvaranje je uspješno završeno. WebP datoteka je spremna za preuzimanje. Uz status ćete vidjeti i informaciju o veličini prije i nakon pretvaranja.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Greška</span><p class=\"text-mid\">Nešto je pošlo po krivu tijekom pretvaranja. Mogući uzrok je oštećena izvorna datoteka ili problem s memorijom preglednika kod vrlo velikih slika. Gumb &quot;Pretvori ponovo&quot; omogućava ponovni pokušaj.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Kako funkcionira Smart Quality?",
+      "html": "<p class=\"text-mid\">Smart Quality je automatski mehanizam optimizacije koji osigurava da rezultirajuća WebP datoteka nikada neće biti veća od izvornika. Funkcionira ovako:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>Alat pretvara sliku s kvalitetom koju ste postavili (npr. 80 %).</li><li>Provjerava je li rezultirajuća datoteka manja od izvornika.</li><li>Ako je veća, automatski smanjuje kvalitetu i pokušava ponovo.</li><li>Proces se ponavlja dok rezultirajuća datoteka ne bude manja ili kvaliteta ne padne ispod sigurnog minimuma.</li></ol><p class=\"text-mid mt-3\">Alat automatski bira optimalne postavke. Ako imate sliku koja je već snažno komprimirana (npr. JPG s kvalitetom 60 %), parametri će se automatski prilagoditi kako bi se i dalje postigla ušteda veličine.</p><p class=\"text-mid mt-3\">Uz svaku datoteku vidjet ćete informaciju &quot;Korištena WebP kvaliteta&quot; – to je stvarna kvaliteta primijenjena nakon eventualnog prilagođavanja Smart Quality.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "sectionDemo",
       "title": "Kako odabrati pravu kvalitetu za WebP",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kvaliteta: 80</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Preporučeno</span></div><p class=\"text-mid text-sm!\">Najbolji omjer kvalitete i veličine datoteke. Pogodno za većinu web i e-commerce slika.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kvaliteta: 60–70</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Agresivna kompresija</span></div><p class=\"text-mid text-sm!\">Manje datoteke. Pogodno za minijature, ikone i dekorativne pozadine.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kvaliteta: 90–100</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Najviša kvaliteta</span></div><p class=\"text-mid text-sm!\">Vrlo visoka kvaliteta, ali veće datoteke. Pogodno za portfolije i glavne produktne slike.</p></div></div>",
       "html": "<p class=\"text-mid\">Postavka kvalitete određuje omjer između vizualne kvalitete i veličine datoteke. Za većinu web slika vrijednost 75–85 daje najbolje rezultate – razlika u kvaliteti nije vidljiva golim okom, a datoteka može biti 3–5 puta manja od izvornog JPG-a.</p><p class=\"text-mid mt-3\">Za minijature, ikone i dekorativne pozadine možete sniziti kvalitetu na 60–70 bez gubitka oštrine. Za portfolio slike ili glavne produktne fotografije vrijednost 90–95 zadržava detalje.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Kako preuzeti pretvorene datoteke?",
+      "variant": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium text-white\" disabled>Pretvori</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Preuzmi sve</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Preuzmi kao ZIP</button></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled /><span class=\"text-mid pl-2 text-sm!\">Priloži CSV izvještaj u ZIP</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Ulazna veličina: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Veličina nakon pretvaranja: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">Ušteđeno: <strong class=\"text-success-icon\">1.5 MB (~63 %)</strong></p></div></div>",
+      "html": "<p class=\"text-mid\">Nakon završetka pretvaranja imate nekoliko mogućnosti preuzimanja:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Preuzmi</strong> (kod svake datoteke) – preuzima pojedinačnu WebP datoteku.</li><li><strong>Preuzmi sve</strong> – preuzima sve datoteke jednu po jednu.</li><li><strong>Preuzmi kao ZIP</strong> – stvara arhivu sa svim datotekama.</li></ul><p class=\"text-mid mt-3\"><strong>CSV izvještaj:</strong> Priložite izvještaj s pregledom pretvaranja u ZIP arhivu.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Izvještaj o uštedama – što prikazuje?",
+      "html": "<p class=\"text-mid\">Ispod gumba za pretvaranje nalazi se sažetak s informacijama o uštedama:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Ukupna ulazna veličina</strong> – zbroj veličina svih izvornih datoteka.</li><li><strong>Ukupna veličina nakon pretvaranja</strong> – zbroj veličina svih WebP datoteka.</li><li><strong>Ušteđeno</strong> – koliko ste prostora uštedjeli pretvaranjem (u KB/MB i postocima).</li></ul><p class=\"text-mid mt-3\"><strong>Kopiraj sažetak:</strong> Gumb kopira izvještaj u međuspremnik u tekstualnom formatu. Možete ga zalijepiti u bilješke, e-mail ili dokument – korisno pri dokumentiranju optimizacije grafika.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Koliko se može uštedjeti pretvaranjem u WebP?",
+      "html": "<p class=\"text-mid mb-4\">Uštede ovise o vrsti slike i njenoj izvornoj kompresiji. U nastavku su primjeri rezultata za tipične datoteke:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">JPG fotografija (fotoaparat)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ušteda: ~63 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">PNG grafika (logo)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ušteda: ~75 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktna fotografija</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ušteda: ~63 %</p></div></div><p class=\"text-light mt-4 text-sm\">Stvarne uštede mogu varirati. Pretvarač prikazuje točnu veličinu prije i nakon pretvaranja za svaku datoteku te sažetak ukupnih ušteda.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
@@ -102,6 +140,35 @@
         { "icon": "RiSpeedLine", "title": "Trenutačno pretvaranje", "description": "Rezultati se prikazuju odmah – bez čekanja u redu i bez obrade na poslužitelju." },
         { "icon": "RiInfinityLine", "title": "Bez ograničenja broja slika", "description": "Pretvorite koliko god slika trebate. Bez dnevnog ili sesijskog ograničenja." },
         { "icon": "RiScalesLine", "title": "Prilagodljiv regulator kvalitete", "description": "Prilagodite kvalitetu (0–100) za svaku sliku i dobijte najbolji omjer veličine i kvalitete." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Na što obratiti pozornost?",
+      "description": "Nekoliko savjeta koji pomažu izbjeći probleme tijekom pretvaranja:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Vrlo velike datoteke",
+          "description": "Pretvaranje slika rezolucije iznad 4000×4000 piksela može biti sporije i opteretiti preglednik. Ako obrađujete mnogo velikih datoteka, razmislite o podjeli na serije."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Već komprimirane slike",
+          "description": "Ako je izvorni JPG spremljen s vrlo niskom kvalitetom, pretvaranje u WebP možda neće donijeti velike uštede. U krajnjim slučajevima WebP datoteka može biti čak i veća – tada Smart Quality automatski smanjuje kvalitetu."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "PNG format s prozirnosti",
+          "description": "WebP podržava prozirnost, pa će se PNG datoteke s alfa kanalom pravilno pretvoriti. Ušteda veličine za PNG s prozirnosti može međutim biti manja nego za obične JPG fotografije."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Kompatibilnost s preglednicima",
+          "description": "Svi moderni preglednici (Chrome, Firefox, Safari 14+, Edge) podržavaju WebP. Ako stranica mora raditi na starijim preglednicima, možete koristiti oznaku &lt;picture&gt; s alternativnim JPG/PNG izvorom."
+        }
       ]
     },
     { "type": "gap", "variant": "line" },

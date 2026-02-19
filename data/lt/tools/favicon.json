@@ -172,6 +172,127 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Kaip naudotis favicon generatoriumi?",
+      "description": "Generatorius veda per visą procesą žingsnis po žingsnio:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Pridėkite šaltinio paveikslą",
+          "description": "<div><p class=\"mb-2\">Vilkite failą į pažymėtą sritį arba pasirinkite paveikslą iš disko.</p><p class=\"text-light\">Palaikomi formatai: PNG, JPG, SVG. Geriausiai tinka paprastas logotipas arba piktograma bent 512×512 pikselių.</p></div>"
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "2. Pasirinkite piktogramų dydžius",
+          "description": "<div><p class=\"mb-2\">Pažymėkite reikiamus piktogramų dydžius.</p><p class=\"text-light\">Galite pasirinkti visus arba tik kai kuriuos. Įprastai svetainei pakanka: favicon.ico, 32×32 ir 180×180.</p></div>"
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "3. Nustatykite generavimo parinktis",
+          "description": "<div><p class=\"mb-2\">Nustatykite papildomas parinktis:</p><ul class=\"text-light list-disc pl-5\"><li><strong>Fonas</strong> – skaidrus arba pasirinkta spalva</li><li><strong>Manifestas</strong> – PWA konfigūracijos failas</li><li><strong>Automatinis atsisiuntimas</strong> – failai atsisiunčiami iš karto po generavimo</li></ul></div>"
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Sugeneruokite ir atsisiųskite failus",
+          "description": "<div><p class=\"mb-2\">Po generavimo paleidimo įrankis apdoroja paveikslą lokaliai – niekas nesiunčiama į serverį.</p><p class=\"text-light\">Atsisiųskite visus failus kaip ZIP archyvą arba atsisiųskite atskiras piktogramas atskirai.</p></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Generavimo parinktys – ką kiekviena daro?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">PNG dydžiai</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">16x16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">32x32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">180x180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Skaidrus fonas (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Fono spalva:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Fonas (skaidrus arba spalva)</h3><p class=\"text-mid\">Pagal numatytuosius nustatymus generatorius išsaugo skaidrumą. Taip pat galite pasirinkti konkrečią fono spalvą.</p></div><div><h3 class=\"h5 mb-2\">Generuoti manifestą (site.webmanifest)</h3><p class=\"text-mid\">JSON konfigūracijos failas žiniatinklio programoms (PWA). Jei nekuriate PWA, ši parinktis nereikalinga.</p></div></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kaip atsisiųsti sugeneruotus failus?",
+      "description": "Sugeneravus piktogramas turite keletą atsisiuntimo parinkčių:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFolderZipLine",
+          "title": "Atsisiųsti viską kaip ZIP",
+          "description": "Mygtukas Atsisiųsti viską supakuoja visus sugeneruotus failus į vieną ZIP archyvą. Tai patogiausia parinktis, kai reikia viso piktogramų rinkinio."
+        },
+        {
+          "icon": "RiFileDownloadLine",
+          "title": "Atsisiųsti atskirus failus",
+          "description": "Kiekviena sugeneruota piktograma turi savo atsisiuntimo mygtuką – galite atsisiųsti atskirą failą be viso rinkinio atsisiuntimo. Naudinga atnaujinant tik vieną dydį."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTabs",
+      "title": "Kur ir kaip įkelti favicon?",
+      "tabs": [
+        {
+          "title": "WordPress",
+          "icon": "RiWordpressLine",
+          "html": "<div><p class=\"text-mid mb-3\">Dauguma WordPress temų turi integruotą svetainės piktogramos nustatymo galimybę. Ją rasite administravimo skydelyje:</p><p class=\"text-mid mb-3\"><strong>Išvaizda → Tinkinti → Svetainės tapatybė → Svetainės piktograma</strong></p><p class=\"text-light\">Įkelkite 512×512 failą – WordPress automatiškai sugeneruos mažesnius dydžius. Pilnai kontrolei galite failus įkelti tiesiai į šakninį katalogą per FTP.</p></div>"
+        },
+        {
+          "title": "HTML",
+          "icon": "RiHtml5Line",
+          "html": "<div><p class=\"text-mid mb-3\">Perkelkite sugeneruotus failus į svetainės šakninį katalogą (ten, kur yra index.html). Tada pridėkite atitinkamas žymas į &lt;head&gt; sekciją:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">Aukščiau pateiktas kodas yra pavyzdys – pritaikykite kelius pagal savo svetainės struktūrą.</p></div>"
+        },
+        {
+          "title": "Next.js / React",
+          "icon": "RiReactjsLine",
+          "html": "<div><p class=\"text-mid mb-3\">Next.js (App Router) favicon failus patalpinkite kataloge <code>app/</code> arba <code>public/</code>:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> – automatiškai atpažįstamas Next.js</li><li><code>app/apple-icon.png</code> – Apple piktograma</li><li><code>public/</code> – kitos piktogramos (192×192, 512×512)</li></ul><p class=\"text-light\">Piktogramas taip pat galite konfigūruoti faile <code>layout.tsx</code> per objektą <code>metadata.icons</code>.</p></div>"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Koks šaltinio paveikslas veikia geriausiai?",
+      "description": "Favicon yra labai maža grafika – net 16×16 pikselių. Todėl ne kiekvienas paveikslas tinka kaip šaltinis:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShapeLine",
+          "title": "Paprastos formos ir aiškūs simboliai",
+          "description": "Geriausiai veikia paprasti logotipai, atskiros raidės ar simboliai. Venkite sudėtingų grafikų su daugybe detalių."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Kvadratinis formatas",
+          "description": "Favicon yra kvadratinė. Jei šaltinio paveikslas turi kitokias proporcijas nei 1:1, jis bus apkarpytas arba ištemptas."
+        },
+        {
+          "icon": "RiZoomInLine",
+          "title": "Pakankamas dydis",
+          "description": "Rekomenduojame šaltinio paveikslą bent 512×512 pikselių. Mažesni paveikslai bus padidinti."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "SVG kaip idealus šaltinis",
+          "description": "SVG keičia mastelį be kokybės praradimo, todėl piktogramos bus ryškios visais dydžiais."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Dažnai užduodami klausimai apie favicon generatorių",
       "openByDefault": 1,

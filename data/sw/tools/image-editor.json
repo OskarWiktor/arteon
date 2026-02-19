@@ -110,6 +110,25 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Jinsi ya kuongeza picha?",
+      "html": "<p class=\"text-mid\">Zana inakubali picha katika muundo wa JPG, PNG na WebP. Unaweza kuongeza picha kwa njia mbili:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Buruta na uache</strong> – shika faili kutoka kwenye folda na uiache kwenye eneo la kuongeza faili (eneo lenye fremu ya mistari iliyokatika).</li><li><strong>Chagua kutoka diski</strong> – baada ya kubofya eneo hilo, dirisha la kuchagua faili litafunguka.</li></ul><p class=\"text-mid mt-3\">Baada ya kuongeza picha, zana itasoma kiotomatiki vipimo vyake vya asili na kuonyesha hakikisho. Sasa unaweza kuendelea na mipangilio ya kukata.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Weka vipimo vya lengo",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Vipimo kwa px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Miundo tayari</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Upana (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly /></div><div><label class=\"text-[14px]! font-medium\">Urefu (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly /></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\" /><span>Hifadhi uwiano (kipimo cha pili kiotomatiki)</span></label></div></div>",
+      "html": "<p class=\"text-mid\">Katika kichupo cha <strong>Vipimo kwa px</strong> unaingiza upana na urefu kwa mikono. Chaguo la <strong>Hifadhi uwiano</strong> linarekebisha kiotomatiki kipimo cha pili.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Vipimo vya picha kwa Instagram, Facebook na LinkedIn",
+      "html": "<p class=\"text-mid mb-4\">Zana ina miundo tayari yenye vipimo bora kwa majukwaa maarufu zaidi:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Jukwaa</th><th class=\"py-2 pr-4 font-semibold\">Muundo</th><th class=\"py-2 pr-4 font-semibold\">Vipimo (px)</th><th class=\"py-2 font-semibold\">Uwiano</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Chapisho la mraba</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Chapisho wima</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Chapisho</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Jalada la ukurasa</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Chapisho</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Bango la wasifu</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG image</td><td class=\"py-2 pr-4\">Kushiriki viungo</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "sectionSteps",
       "title": "Miundo iliyokuwa tayari kwa mitandao ya kijamii",
       "description": "Kihariri kinatoa miundo iliyokuwa tayari kwa majukwaa maarufu zaidi:",
@@ -151,6 +170,25 @@
       "type": "gap",
       "variant": "line"
     },
+    {
+      "type": "sectionInfo",
+      "title": "Jinsi ya kukata picha?",
+      "html": "<p class=\"text-mid\">Baada ya kuweka vipimo vya lengo, eneo la kukata linaloendana linaonekana kwenye hakikisho. Sehemu nyepesi ya picha ndiyo sehemu itakayohifadhiwa – sehemu nyingine imetiwa giza.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Buruta eneo la kukata</p><p class=\"text-mid mt-1\">Shika eneo nyepesi na uliburute hadi mahali unapotaka kwenye picha. Kwa njia hii unachagua sehemu gani ya picha itaeksportiwa.</p></div><div><p class=\"text-dark font-semibold\">Badilisha ukubwa kwa vishikio</p><p class=\"text-mid mt-1\">Kwenye kona za eneo la kukata kuna miraba midogo (vishikio). Kwa kuviburuta unabadilisha ukubwa wa eneo la kukata huku ukihifadhi uwiano uliochaguliwa.</p></div><div><p class=\"text-dark font-semibold\">Kukuza (zoom)</p><p class=\"text-mid mt-1\">Katika kichupo cha <strong>Kukuza</strong> utapata kitelezi cha kurekebisha zoom (100–300 %). Thamani kubwa zaidi inamaanisha eneo la kukata linafunika sehemu ndogo zaidi ya picha ya asili.</p></div><div><p class=\"text-dark font-semibold\">Uwekaji sahihi wa nafasi</p><p class=\"text-mid mt-1\">Katika kichupo cha <strong>Nafasi</strong> unaweza kuweka nafasi sahihi kwa asilimia (0–100 % kwa mhimili wa X na Y). Vitufe vya kukatikati vinawezesha kukatikati kwa haraka.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Maumbo ya kukata",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Mstatili</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Mraba</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Duara</span></div></div>",
+      "html": "<p class=\"text-mid\">Katika kichupo cha <strong>Maumbo ya kukata</strong> unachagua umbo la picha itakayoeksportiwa: mstatili (na uwiano uliochaguliwa), mraba (unalazimisha 1:1) au duara (na mandharinyuma ya uwazi).</p><p class=\"text-mid mt-3\">Umbo la duara linaunda avatar ya mviringo yenye mandharinyuma ya uwazi nje ya duara. Zana inabadilisha kiotomatiki muundo kuwa PNG au WebP kwa sababu JPG haiauni uwazi.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Gridi 3×3 – inatumika kwa nini?",
+      "html": "<p class=\"text-mid\">Kwenye eneo la kukata kuna gridi inayoonekana inayogawanya picha katika sehemu 9 sawa. Hii ni mwonekano wa <strong>kanuni ya theluthi</strong> – moja ya kanuni za msingi za muundo wa upigaji picha.</p><p class=\"text-mid mt-3\">Kanuni inasema kwamba vipengele muhimu zaidi vya picha (uso, bidhaa, hatua ya kuvutia) vinapaswa kuwa kwenye makutano ya mistari ya gridi au kando yake. Muundo kama huu ni wa kusisimua zaidi na wa kupendeza kwa macho kuliko kuweka kitu hasa katikati.</p><p class=\"text-mid mt-3\">Katika kichupo cha <strong>Rangi ya gridi</strong> unaweza kubadilisha rangi ya mistari (kijani, nyeupe, nyeusi, nyekundu, njano), ili gridi ionekane vizuri kwenye picha tofauti.</p>"
+    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
       "title": "Nani anahitaji kihariri cha picha?",

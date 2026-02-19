@@ -98,6 +98,112 @@
     },
     { "type": "gap", "variant": "line" },
     {
+      "type": "sectionSteps",
+      "title": "Si ta përdorni gjeneruesin e favicon?",
+      "description": "Gjeneruesi ju udhëheq nëpër të gjithë procesin hap pas hapi:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Shtoni imazhin burimor",
+          "description": "<div><p class=\"mb-2\">Tërhiqni skedarin në zonën e shënuar ose zgjidhni një imazh nga disku.</p><p class=\"text-light\">Formatet e mbështetura: PNG, JPG, SVG. Një logo e thjeshtë ose ikonë me dimensione të paktën 512×512 pikselë funksionon më mirë.</p></div>"
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "2. Zgjidhni madhësitë e ikonave",
+          "description": "<div><p class=\"mb-2\">Shënoni madhësitë e ikonave që ju nevojiten.</p><p class=\"text-light\">Mund të zgjidhni të gjitha ose vetëm disa. Për një faqe të zakonshme mjafton: favicon.ico, 32×32 dhe 180×180.</p></div>"
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "3. Vendosni opsionet e gjenerimit",
+          "description": "<div><p class=\"mb-2\">Vendosni opsionet shtesë:</p><ul class=\"text-light list-disc pl-5\"><li><strong>Sfondi</strong> – transparent ose ngjyrë e zgjedhur</li><li><strong>Manifesti</strong> – skedar konfigurimi për PWA</li><li><strong>Shkarkim automatik</strong> – skedarët shkarkohen menjëherë pas gjenerimit</li></ul></div>"
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Gjeneroni dhe shkarkoni skedarët",
+          "description": "<div><p class=\"mb-2\">Pas nisjes së gjenerimit mjeti përpunon imazhin lokalisht – asgjë nuk dërgohet në server.</p><p class=\"text-light\">Shkarkoni të gjithë skedarët si arkiv ZIP ose shkarkoni ikona të veçanta veç e veç.</p></div>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Opsionet e gjenerimit – çfarë bën secila?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">Madhësitë PNG</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">16x16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">32x32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">180x180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Sfond transparent (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Ngjyra e sfondit:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Sfondi (transparent ose ngjyrë)</h3><p class=\"text-mid\">Si parazgjedhje gjeneruesi ruan transparencën. Gjithashtu mund të zgjidhni një ngjyrë specifike sfondi.</p></div><div><h3 class=\"h5 mb-2\">Gjenero manifest (site.webmanifest)</h3><p class=\"text-mid\">Skedar konfigurimi JSON për aplikacionet ueb (PWA). Nëse nuk krijoni PWA, ky opsion nuk nevojitet.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Si të shkarkoni skedarët e gjeneruar?",
+      "description": "Pas gjenerimit të ikonave keni disa opsione shkarkimi:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFolderZipLine",
+          "title": "Shkarkoni të gjithë si ZIP",
+          "description": "Butoni Shkarko të gjithë pakezon të gjithë skedarët e gjeneruar në një arkiv ZIP. Ky është opsioni më i përshtatshëm kur ju nevojitet seti i plotë i ikonave."
+        },
+        {
+          "icon": "RiFileDownloadLine",
+          "title": "Shkarkoni skedarë të veçantë",
+          "description": "Çdo ikonë e gjeneruar ka butonin e vet të shkarkimit – mund të shkarkoni një skedar të vetëm pa shkarkuar të gjithë setin. E dobishme kur përditësoni vetëm një madhësi."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTabs",
+      "title": "Ku dhe si të ngarkoni favicon?",
+      "tabs": [
+        {
+          "title": "WordPress",
+          "icon": "RiWordpressLine",
+          "html": "<div><p class=\"text-mid mb-3\">Shumica e temave WordPress kanë opsion të integruar për vendosjen e ikonës së faqes. E gjeni në panelin e administratorit:</p><p class=\"text-mid mb-3\"><strong>Pamja → Personalizo → Identiteti i faqes → Ikona e faqes</strong></p><p class=\"text-light\">Ngarkoni skedarin 512×512 – WordPress gjeneron automatikisht madhësi më të vogla. Për kontroll të plotë mund të ngarkoni skedarët drejtpërdrejt në direktorinë rrënjë përmes FTP.</p></div>"
+        },
+        {
+          "title": "HTML",
+          "icon": "RiHtml5Line",
+          "html": "<div><p class=\"text-mid mb-3\">Vendosni skedarët e gjeneruar në direktorinë rrënjë të faqes (aty ku ndodhet index.html). Pastaj shtoni etiketat përkatëse në seksionin &lt;head&gt;:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">Kodi më sipër është shembull – përshtatni shtigjet sipas strukturës së faqes suaj.</p></div>"
+        },
+        {
+          "title": "Next.js / React",
+          "icon": "RiReactjsLine",
+          "html": "<div><p class=\"text-mid mb-3\">Në Next.js (App Router) skedarët favicon vendosen në direktorinë <code>app/</code> ose <code>public/</code>:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> – njihet automatikisht nga Next.js</li><li><code>app/apple-icon.png</code> – ikona për Apple</li><li><code>public/</code> – ikonat e tjera (192×192, 512×512)</li></ul><p class=\"text-light\">Ikonat mund t'i konfiguroni edhe në skedarin <code>layout.tsx</code> përmes objektit <code>metadata.icons</code>.</p></div>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Cili imazh burimor funksionon më mirë?",
+      "description": "Favicon është grafikë shumë e vogël – edhe vetëm 16×16 pikselë. Prandaj jo çdo imazh është i përshtatshëm si burim:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShapeLine",
+          "title": "Forma të thjeshta dhe simbole të lexueshme",
+          "description": "Logo të thjeshta, shkronja të vetme ose simbole funksionojnë më mirë. Shmangni grafika komplekse me shumë detaje."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Formati katror",
+          "description": "Favicon është katror. Nëse imazhi burimor ka proporcione të ndryshme nga 1:1, do të pritet ose shtrydhet."
+        },
+        {
+          "icon": "RiZoomInLine",
+          "title": "Madhësi e mjaftueshme",
+          "description": "Rekomandojmë imazh burimor me dimensione të paktën 512×512 pikselë. Imazhet më të vogla do të zmadhohen."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "SVG si burim ideal",
+          "description": "SVG shkallëzohet pa humbje cilësie, kështu që ikonat do të jenë të mprehta në të gjitha madhësitë."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "faq",
       "title": "Pyetjet më të shpeshta për gjeneruesin e favicon",
       "openByDefault": 1,

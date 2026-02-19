@@ -91,10 +91,48 @@
     },
     { "type": "gap", "variant": "line" },
     {
+      "type": "sectionInfo",
+      "title": "Jak přidat soubory ke konverzi?",
+      "html": "<p class=\"text-mid\">Nástroj nabízí dva způsoby přidání souborů:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Přetažením</strong> – uchopte soubory ze složky na počítači a přetáhněte je na oblast s nápisem &quot;Přetáhněte obrázky sem&quot;. Můžete přetáhnout více souborů najednou.</li><li><strong>Výběrem z disku</strong> – po kliknutí na pole pro přidání souborů se otevře okno výběru. Podržením Ctrl (nebo Cmd na Macu) vyberete několik souborů současně.</li></ul><p class=\"text-mid mt-3\">Nástroj přijímá pouze soubory JPG a PNG. Pokud náhodou přidáte soubor v jiném formátu (např. GIF nebo BMP), bude automaticky přeskočen a zobrazí se informační zpráva.</p><p class=\"text-mid mt-3\"><strong>Soukromí:</strong> Všechny soubory jsou zpracovány lokálně v prohlížeči. Nejsou nikam odesílány – netrafí na žádný server. Po zavření karty nebo prohlížeče jsou soubory odstraněny z paměti.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Co znamenají statusy souborů?",
+      "html": "<p class=\"text-mid\">Každý soubor ve frontě má jeden ze čtyř statusů informujících o průběhu konverze:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Čeká</span><p class=\"text-mid\">Soubor je ve frontě a čeká na zpracování. Konverze ještě nezačala.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Zpracování...</span><p class=\"text-mid\">Soubor je právě konvertován. U většiny obrázků to trvá zlomek sekundy, ale velmi velké soubory mohou vyžadovat několik sekund.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Hotovo</span><p class=\"text-mid\">Konverze proběhla úspěšně. Soubor WebP je připraven ke stažení. U statusu uvidíte i informaci o velikosti před a po konverzi.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Chyba</span><p class=\"text-mid\">Něco se při konverzi pokazilo. Může jít o poškozený zdrojový soubor nebo problém s pamětí prohlížeče u velmi velkých obrázků. Tlačítko &quot;Konvertovat znovu&quot; umožní opakovat pokus.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje Smart Quality?",
+      "html": "<p class=\"text-mid\">Smart Quality je automatický optimalizační mechanismus, který zajišťuje, že výsledný soubor WebP nikdy nebude větší než originál. Funguje následovně:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>Nástroj konvertuje obrázek s kvalitou, kterou jste nastavili (např. 80 %).</li><li>Zkontroluje, zda je výsledný soubor menší než originál.</li><li>Pokud je větší, automaticky sníží kvalitu a zkusí to znovu.</li><li>Proces se opakuje, dokud výsledný soubor nebude menší nebo kvalita neklesne pod bezpečné minimum.</li></ol><p class=\"text-mid mt-3\">Nástroj automaticky volí optimální nastavení. Pokud máte obrázek, který je již silně komprimovaný (např. JPG s kvalitou 60 %), parametry budou automaticky upraveny, aby stále dosáhly úspory velikosti.</p><p class=\"text-mid mt-3\">U každého souboru uvidíte informaci &quot;Použitá kvalita WebP&quot; – to je skutečná kvalita aplikovaná po případném přizpůsobení Smart Quality.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "sectionDemo",
       "title": "Jak zvolit spr\u00e1vnou kvalitu pro WebP",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kvalita: 80</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Doporu\u010deno</span></div><p class=\"text-mid text-sm!\">Nejlep\u0161\u00ed pom\u011br kvality a velikosti souboru. Vhodn\u00e9 pro v\u011bt\u0161inu obr\u00e1zk\u016f na webu a v e-shopu.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kvalita: 60\u201370</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Agresivn\u00ed komprese</span></div><p class=\"text-mid text-sm!\">Men\u0161\u00ed soubory. Vhodn\u00e9 pro miniatury, ikony a dekorativn\u00ed pozad\u00ed.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kvalita: 90\u2013100</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Nejvy\u0161\u0161\u00ed kvalita</span></div><p class=\"text-mid text-sm!\">Velmi vysok\u00e1 kvalita, ale v\u011bt\u0161\u00ed soubory. Vhodn\u00e9 pro portfolia a kl\u00ed\u010dov\u00e9 produktov\u00e9 fotografie.</p></div></div>",
       "html": "<p class=\"text-mid\">Nastaven\u00ed kvality ur\u010duje pom\u011br mezi vizu\u00e1ln\u00ed kvalitou a velikost\u00ed souboru. Pro v\u011bt\u0161inu obr\u00e1zk\u016f na webu hodnota 75\u201385 p\u0159in\u00e1\u0161\u00ed nejlep\u0161\u00ed v\u00fdsledky \u2013 rozd\u00edl v kvalit\u011b nen\u00ed okem viditeln\u00fd a soubor m\u016f\u017ee b\u00fdt 3\u20135\u00d7 men\u0161\u00ed ne\u017e p\u016fvodn\u00ed JPG.</p><p class=\"text-mid mt-3\">Pro miniatury, ikony a dekorativn\u00ed pozad\u00ed m\u016f\u017eete kvalitu sn\u00ed\u017eit na 60\u201370 bez ztr\u00e1ty ostrosti. Pro portfoliov\u00e9 fotografie nebo kl\u00ed\u010dov\u00e9 produktov\u00e9 sn\u00edmky hodnota 90\u201395 zachov\u00e1 detaily.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Jak stáhnout převedené soubory?",
+      "variant": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium text-white\" disabled>Konvertovat</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Stáhnout vše</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Stáhnout jako ZIP</button></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled /><span class=\"text-mid pl-2 text-sm!\">Přiložit CSV report do ZIP</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Vstupní velikost: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Velikost po konverzi: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">Ušetřeno: <strong class=\"text-success-icon\">1.5 MB (~63 %)</strong></p></div></div>",
+      "html": "<p class=\"text-mid\">Po dokončení konverze máte několik možností stažení:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Stáhnout</strong> (u každého souboru) – stáhne jednotlivý soubor WebP.</li><li><strong>Stáhnout vše</strong> – stáhne všechny soubory jeden po druhém.</li><li><strong>Stáhnout jako ZIP</strong> – vytvoří archiv se všemi soubory.</li></ul><p class=\"text-mid mt-3\"><strong>Možnost CSV reportu:</strong> Přiložte report s přehledem konverze do archivu ZIP.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Report úspor – co ukazuje?",
+      "html": "<p class=\"text-mid\">Pod tlačítky konverze najdete shrnutí s informacemi o úsporách:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Celková vstupní velikost</strong> – součet velikostí všech původních souborů.</li><li><strong>Celková velikost po konverzi</strong> – součet velikostí všech souborů WebP.</li><li><strong>Ušetřeno</strong> – kolik místa jste konverzí získali (v KB/MB a procentech).</li></ul><p class=\"text-mid mt-3\"><strong>Zkopírovat shrnutí:</strong> Tlačítko přenese report do schránky v textovém formátu. Můžete ho vložit do poznámek, e-mailu nebo dokumentu – užitečné při dokumentování optimalizace grafik.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Kolik lze ušetřit konverzí na WebP?",
+      "html": "<p class=\"text-mid mb-4\">Úspory závisí na typu obrazu a jeho původní kompresi. Níže jsou příklady výsledků pro typické soubory:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fotografie JPG (fotoaparát)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Úspora: ~63 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Grafika PNG (logo)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Úspora: ~75 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktová fotografie</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Úspora: ~63 %</p></div></div><p class=\"text-light mt-4 text-sm\">Skutečné úspory se mohou lišit. Konvertor zobrazuje přesnou velikost před a po konverzi u každého souboru a také souhrn celkových úspor.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
@@ -150,6 +188,35 @@
           "icon": "RiScalesLine",
           "title": "Nastaviteln\u00fd posuvn\u00edk kvality",
           "description": "Nastavte kvalitu (0\u2013100) pro ka\u017ed\u00fd obr\u00e1zek a z\u00edskejte nejlep\u0161\u00ed pom\u011br velikosti a kvality."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Na co si dát pozor?",
+      "description": "Několik tipů, které pomohou vyhnout se problémům při konverzi:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Velmi velké soubory",
+          "description": "Konverze obrázků s rozlišením nad 4000×4000 pixelů může být pomalejší a zatěžovat prohlížeč. Pokud zpracováváte mnoho velkých souborů, zvažte jejich rozdělení na dávky."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Již komprimované obrázky",
+          "description": "Pokud byl původní JPG uložen s velmi nízkou kvalitou, konverze do WebP nemusí přinést velké úspory. V krajních případech může být soubor WebP i větší – tehdy Smart Quality automaticky sníží kvalitu."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Formát PNG s průhledností",
+          "description": "WebP podporuje průhlednost, takže soubory PNG s alfa kanálem budou převedeny správně. Úspora velikosti u PNG s průhledností však může být menší než u běžných fotografií JPG."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Kompatibilita s prohlížeči",
+          "description": "Všechny moderní prohlížeče (Chrome, Firefox, Safari 14+, Edge) podporují WebP. Pokud stránka musí fungovat na starších prohlížečích, lze použít tag &lt;picture&gt; s alternativním zdrojem JPG/PNG."
         }
       ]
     },

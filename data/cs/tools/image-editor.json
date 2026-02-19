@@ -110,6 +110,34 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Jak přidat obrázek?",
+      "html": "<p class=\"text-mid\">Nástroj přijímá obrázky ve formátech JPG, PNG a WebP. Obrázek můžete přidat dvěma způsoby:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Přetažením</strong> – uchopte soubor ze složky a přetáhněte ho na pole pro přidání souboru (pole s přerušovaným rámečkem).</li><li><strong>Výběrem z disku</strong> – po kliknutí na pole pro přidání souboru se otevře okno pro výběr souboru z disku.</li></ul><p class=\"text-mid mt-3\">Po přidání obrázku nástroj automaticky přečte jeho původní rozměry a zobrazí náhled. Nyní můžete přejít k nastavení ořezu.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Nastavení cílových rozměrů",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Rozměry v px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Přednastavené formáty</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Šířka (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly /></div><div><label class=\"text-[14px]! font-medium\">Výška (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly /></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\" /><span>Zachovat poměr stran (automatický druhý rozměr)</span></label></div></div>",
+      "html": "<p class=\"text-mid\">V záložce <strong>Rozměry v px</strong> zadáváte šířku a výšku ručně. Volba <strong>Zachovat poměr stran</strong> automaticky přizpůsobí druhý rozměr.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Rozměry obrázků pro Instagram, Facebook a LinkedIn",
+      "html": "<p class=\"text-mid mb-4\">Nástroj obsahuje přednastavené formáty s optimálními rozměry pro nejpopulárnější platformy:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platforma</th><th class=\"py-2 pr-4 font-semibold\">Formát</th><th class=\"py-2 pr-4 font-semibold\">Rozměry (px)</th><th class=\"py-2 font-semibold\">Poměr stran</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Čtvercový příspěvek</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Příspěvek na výšku</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Příspěvek</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Obálka stránky</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Příspěvek</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Banner profilu</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG image</td><td class=\"py-2 pr-4\">Sdílení odkazů</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Přednastavené formáty pro sociální sítě",
       "description": "Editor nabízí přednastavené formáty pro nejpopulárnější platformy:",
@@ -146,6 +174,34 @@
           "description": "Zadejte libovolnou šířku a výšku v pixelech nebo vyberte libovolný poměr stran."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak oříznout obrázek?",
+      "html": "<p class=\"text-mid\">Po nastavení cílových rozměrů se na náhledu objeví interaktivní oblast ořezu. Světlá část obrázku je fragment, který bude uložen – zbytek je ztmavený.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Přetažení ořezu</p><p class=\"text-mid mt-1\">Uchopte světlou oblast a přetáhněte ji na libovolné místo obrázku. Tímto způsobem vybíráte, která část fotografie bude exportována.</p></div><div><p class=\"text-dark font-semibold\">Změna velikosti pomocí úchytů</p><p class=\"text-mid mt-1\">V rozích oblasti ořezu se nacházejí malé čtverečky (úchyty). Přetažením měníte velikost ořezu – můžete ho zvětšit nebo zmenšit při zachování zvolených proporcí.</p></div><div><p class=\"text-dark font-semibold\">Přiblížení (zoom)</p><p class=\"text-mid mt-1\">V záložce <strong>Přiblížení</strong> najdete posuvník pro regulaci zoomu (100–300 %). Vyšší hodnota znamená, že ořez pokrývá menší fragment původní fotografie – užitečné, když chcete vyříznout konkrétní detail.</p></div><div><p class=\"text-dark font-semibold\">Přesné nastavení pozice</p><p class=\"text-mid mt-1\">V záložce <strong>Pozice</strong> můžete nastavit přesnou pozici ořezu v procentech (0–100 % pro osu X a Y). Tlačítka pro centrování umožní rychle nastavit ořez na střed obrázku.</p></div></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
+      "title": "Tvary ořezu",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Obdélník</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Čtverec</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Kruh</span></div></div>",
+      "html": "<p class=\"text-mid\">V záložce <strong>Tvary ořezu</strong> vybíráte tvar exportovaného obrázku: obdélník (se zvolenými proporcemi), čtverec (vynutí 1:1) nebo kruh (s průhledným pozadím).</p><p class=\"text-mid mt-3\">Tvar kruhu vytvoří kulatý avatar s průhledným pozadím mimo kruh. Nástroj automaticky přepne formát na PNG nebo WebP, protože JPG nepodporuje průhlednost.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Mřížka 3×3 – k čemu slouží?",
+      "html": "<p class=\"text-mid\">Na oblasti ořezu je viditelná mřížka rozdělující obrázek na 9 stejných částí. Jde o vizualizaci <strong>pravidla třetin</strong> – jednoho ze základních pravidel fotografické kompozice.</p><p class=\"text-mid mt-3\">Pravidlo říká, že nejdůležitější prvky fotografie (tvář, produkt, bod zájmu) by měly ležet na průsečících čar mřížky nebo podél nich. Taková kompozice je dynamičtější a příjemnější pro oko než umístění objektu přesně na střed.</p><p class=\"text-mid mt-3\">V záložce <strong>Barva mřížky</strong> můžete změnit barvu čar (zelená, bílá, černá, červená, žlutá), aby mřížka byla dobře viditelná na různých fotografiích.</p>"
     },
     {
       "type": "gap",

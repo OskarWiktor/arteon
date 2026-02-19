@@ -110,6 +110,25 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kaip pridėti paveikslėlį?",
+      "html": "<p class=\"text-mid\">Įrankis priima paveikslėlius JPG, PNG ir WebP formatais. Paveikslėlį galite pridėti dviem būdais:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Vilkimu ir numetimu</strong> – paimkite failą iš aplanko ir numeskite jį ant failo pridėjimo lauko (laukas su punktyriniu rėmeliu).</li><li><strong>Pasirinkimu iš disko</strong> – paspaudus ant lauko atsidaro failo pasirinkimo langas.</li></ul><p class=\"text-mid mt-3\">Pridėjus paveikslėlį įrankis automatiškai nuskaito jo originalius matmenis ir rodo peržiūrą. Dabar galite pereiti prie apkarpymo nustatymų.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Nustatykite tikslinius matmenis",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Matmenys px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Paruošti formatai</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Plotis (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly /></div><div><label class=\"text-[14px]! font-medium\">Aukštis (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly /></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\" /><span>Išlaikyti proporcijas (automatinis antras matmuo)</span></label></div></div>",
+      "html": "<p class=\"text-mid\">Skirtuke <strong>Matmenys px</strong> plotį ir aukštį įvedate rankiniu būdu. Parinktis <strong>Išlaikyti proporcijas</strong> automatiškai pritaiko antrą matmenį.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Paveikslėlių matmenys Instagram, Facebook ir LinkedIn",
+      "html": "<p class=\"text-mid mb-4\">Įrankis turi paruoštus formatus su optimaliais matmenimis populiariausioms platformoms:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platforma</th><th class=\"py-2 pr-4 font-semibold\">Formatas</th><th class=\"py-2 pr-4 font-semibold\">Matmenys (px)</th><th class=\"py-2 font-semibold\">Proporcijos</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Kvadratinis įrašas</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Vertikalus įrašas</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Įrašas</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Puslapio viršelis</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Įrašas</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Profilio baneris</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG image</td><td class=\"py-2 pr-4\">Nuorodų dalijimasis</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "sectionSteps",
       "title": "Paruošti formatai socialiniams tinklams",
       "description": "Redaktorius siūlo paruoštus formatus populiariausioms platformoms:",
@@ -151,6 +170,47 @@
       "type": "gap",
       "variant": "line"
     },
+    {
+      "type": "sectionInfo",
+      "title": "Kaip apkarpyti paveikslėlį?",
+      "html": "<p class=\"text-mid\">Nustačius tikslinius matmenis peržiūroje atsiranda interaktyvi apkarpymo sritis. Šviesi paveikslėlio dalis yra ta, kuri bus išsaugota – likusi dalis yra patamsinta.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Apkarpymo tempimas</p><p class=\"text-mid mt-1\">Sugriebkite šviesiąją sritį ir nutempkite ją į norimą vietą paveikslėlyje. Taip pasirenkate, kuri nuotraukos dalis bus eksportuota.</p></div><div><p class=\"text-dark font-semibold\">Dydžio keitimas rankenėlėmis</p><p class=\"text-mid mt-1\">Apkarpymo srities kampuose yra maži kvadratėliai (rankenėlės). Tempiant juos keičiate apkarpymo dydį, išlaikant pasirinktas proporcijas.</p></div><div><p class=\"text-dark font-semibold\">Priartinimas (zoom)</p><p class=\"text-mid mt-1\">Skirtuke <strong>Priartinimas</strong> rasite slankiklį zoom reguliavimui (100–300 %). Didesnė reikšmė reiškia, kad apkarpymas apima mažesnę originalaus paveikslėlio dalį.</p></div><div><p class=\"text-dark font-semibold\">Tikslus pozicijos nustatymas</p><p class=\"text-mid mt-1\">Skirtuke <strong>Pozicija</strong> galite nustatyti tikslią apkarpymo poziciją procentais (0–100 % X ir Y ašims). Centravimo mygtukai leidžia greitai centruoti apkarpymą.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Apkarpymo formos",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Stačiakampis</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Kvadratas</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Apskritimas</span></div></div>",
+      "html": "<p class=\"text-mid\">Skirtuke <strong>Apkarpymo formos</strong> pasirenkate eksportuojamo paveikslėlio formą: stačiakampis (su pasirinktomis proporcijomis), kvadratas (priverstinis 1:1) arba apskritimas (su skaidriu fonu).</p><p class=\"text-mid mt-3\">Apskritimo forma sukuria apvalų avatarą su skaidriu fonu už apskritimo ribų. Įrankis automatiškai perjungia formatą į PNG arba WebP, nes JPG nepalaiko skaidrumo.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "3×3 tinklelis – kam jis skirtas?",
+      "html": "<p class=\"text-mid\">Apkarpymo srityje matomas tinklelis, kuris dalija paveikslėlį į 9 lygias dalis. Tai <strong>trečdalių taisyklės</strong> vizualizacija – vienos iš pagrindinių fotografijos kompozicijos taisyklių.</p><p class=\"text-mid mt-3\">Taisyklė sako, kad svarbiausi nuotraukos elementai (veidas, produktas, domesio taškas) turėtų būti tinklelio linijų susikirtimo taškuose arba palei jas. Tokia kompozicija yra dinamiškesnė ir malonesnė akiai nei objekto padėjimas tiksliai centre.</p><p class=\"text-mid mt-3\">Skirtuke <strong>Tinklelio spalva</strong> galite pakeisti linijų spalvą (žalia, balta, juoda, raudona, geltona), kad tinklelis būtų gerai matomas skirtingose nuotraukose.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTabs",
+      "title": "Eksportas – kokį formatą pasirinkti?",
+      "tabs": [
+        {
+          "title": "JPG",
+          "icon": "RiImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Populiariausias formatas nuotraukoms. Gera kompresija išlaikant vizualinę kokybę. Nepalaiko skaidrumo – fonas visada bus užpildytas spalva.</p><p class=\"text-mid\">Geras pasirinkimas produktų nuotraukoms, portretams ir daugumai grafikos svetainėms. Kokybės slankiklis (60–100 %) valdo kompresiją.</p></div>"
+        },
+        {
+          "title": "PNG",
+          "icon": "RiFileImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Nenuostolingas formatas – išsaugo visą kokybę, bet failai yra didesni. Palaiko skaidrumą (reikalingas apskritimo formai).</p><p class=\"text-mid\">Geras pasirinkimas grafikoms su tekstu, piktogramoms ir paveikslėliams, kuriems reikia aštrių kraštų.</p></div>"
+        },
+        {
+          "title": "WebP",
+          "icon": "RiCropLine",
+          "html": "<div><p class=\"text-mid mb-3\">Modernus formatas, jungiantis JPG ir PNG privalumus – maži failai, gera kokybė, skaidrumo palaikymas. Palaikomas visų šiuolaikinių naršyklių.</p><p class=\"text-mid\">Rekomenduojamas svetainėms – mažesni failai reiškia greitesnį įkėlimą.</p></div>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
       "title": "Kam reikia paveikslėlių redaktoriaus?",

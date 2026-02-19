@@ -110,6 +110,25 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Ako pridať obrázok?",
+      "html": "<p class=\"text-mid\">Nástroj prijíma obrázky vo formátoch JPG, PNG a WebP. Obrázok môžete pridať dvoma spôsobmi:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Pretiahnutím</strong> – uchopte súbor z priečinka a pustite ho na pole na pridanie súboru (pole s prerušovaným rámčekom).</li><li><strong>Výberom z disku</strong> – po kliknutí na pole sa otvorí okno na výber súboru z disku.</li></ul><p class=\"text-mid mt-3\">Po pridaní obrázka nástroj automaticky prečíta jeho pôvodné rozmery a zobrazí náhľad. Teraz môžete prejsť k nastaveniam orezania.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Nastavenie cieľových rozmerov",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Rozmery v px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Hotové formáty</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Šírka (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly /></div><div><label class=\"text-[14px]! font-medium\">Výška (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly /></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\" /><span>Zachovať pomer strán (automatický druhý rozmer)</span></label></div></div>",
+      "html": "<p class=\"text-mid\">V záložke <strong>Rozmery v px</strong> zadávate šírku a výšku ručne. Voľba <strong>Zachovať pomer strán</strong> automaticky prispôsobí druhý rozmer.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Rozmery obrázkov pre Instagram, Facebook a LinkedIn",
+      "html": "<p class=\"text-mid mb-4\">Nástroj obsahuje hotové formáty s optimálnymi rozmermi pre najpopulárnejšie platformy:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platforma</th><th class=\"py-2 pr-4 font-semibold\">Formát</th><th class=\"py-2 pr-4 font-semibold\">Rozmery (px)</th><th class=\"py-2 font-semibold\">Pomer strán</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Štvorcový príspevok</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Príspevok na výšku</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Príspevok</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Obálka stránky</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Príspevok</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Banner profilu</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG image</td><td class=\"py-2 pr-4\">Zdieľanie odkazov</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "sectionSteps",
       "title": "Hotové formáty pre sociálne médiá",
       "description": "Editor ponúka hotové formáty pre najpopulárnejšie platformy:",
@@ -151,6 +170,47 @@
       "type": "gap",
       "variant": "line"
     },
+    {
+      "type": "sectionInfo",
+      "title": "Ako orezať obrázok?",
+      "html": "<p class=\"text-mid\">Po nastavení cieľových rozmerov sa na náhľade objaví interaktívna oblasť orezania. Svetlá časť obrázka je fragment, ktorý bude uložený – zvyšok je stmavený.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Pretiahnutie orezania</p><p class=\"text-mid mt-1\">Uchopte svetlú oblasť a pretiahnite ju na ľubovoľné miesto obrázka. Takto vyberáte, ktorá časť fotografie bude exportovaná.</p></div><div><p class=\"text-dark font-semibold\">Zmena veľkosti úchytmi</p><p class=\"text-mid mt-1\">V rohoch oblasti orezania sa nachádzajú malé štvorčeky (úchyty). Pretiahnutím meníte veľkosť orezania pri zachovaní zvolených proporcií.</p></div><div><p class=\"text-dark font-semibold\">Priblíženie (zoom)</p><p class=\"text-mid mt-1\">V záložke <strong>Priblíženie</strong> nájdete posuvník na reguláciu zoomu (100–300 %). Vyššia hodnota znamená, že orezanie pokrýva menšiu časť pôvodnej fotografie.</p></div><div><p class=\"text-dark font-semibold\">Presné nastavenie pozície</p><p class=\"text-mid mt-1\">V záložke <strong>Pozícia</strong> môžete nastaviť presnú pozíciu orezania v percentách (0–100 % pre os X a Y). Tlačidlá na centrovanie umožnia rýchlo nastaviť orezanie na stred.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Tvary orezania",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Obdĺžnik</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Štvorec</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Kruh</span></div></div>",
+      "html": "<p class=\"text-mid\">V záložke <strong>Tvary orezania</strong> vyberáte tvar exportovaného obrázka: obdĺžnik (so zvolenými proporciami), štvorec (vynúti 1:1) alebo kruh (s priehľadným pozadím).</p><p class=\"text-mid mt-3\">Tvar kruhu vytvorí okrúhly avatar s priehľadným pozadím mimo kruhu. Nástroj automaticky prepne formát na PNG alebo WebP, pretože JPG nepodporuje priehľadnosť.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Mriežka 3×3 – na čo slúži?",
+      "html": "<p class=\"text-mid\">Na oblasti orezania je viditeľná mriežka rozdeľujúca obrázok na 9 rovnakých častí. Ide o vizualizáciu <strong>pravidla tretín</strong> – jedného zo základných pravidiel fotografickej kompozície.</p><p class=\"text-mid mt-3\">Pravidlo hovorí, že najdôležitejšie prvky fotografie (tvár, produkt, bod záujmu) by mali ležať na priesečníkoch čiar mriežky alebo pozdĺž nich. Takáto kompozícia je dynamickejšia a príjemnejšia pre oko než umiestnenie objektu presne na stred.</p><p class=\"text-mid mt-3\">V záložke <strong>Farba mriežky</strong> môžete zmeniť farbu čiar (zelená, biela, čierna, červená, žltá), aby mriežka bola dobre viditeľná na rôznych fotografiách.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTabs",
+      "title": "Export – aký formát vybrať?",
+      "tabs": [
+        {
+          "title": "JPG",
+          "icon": "RiImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Najpopulárnejší formát pre fotografie. Dobrá kompresia pri zachovaní vizuálnej kvality. Nepodporuje priehľadnosť – pozadie bude vždy vyplnené farbou.</p><p class=\"text-mid\">Dobrá voľba pre produktové fotografie, portréty a väčšinu grafík na web. Posuvník kvality (60–100 %) riadi kompresiu.</p></div>"
+        },
+        {
+          "title": "PNG",
+          "icon": "RiFileImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Bezstratový formát – zachováva plnú kvalitu, ale súbory sú väčšie. Podporuje priehľadnosť (potrebný pre tvar kruhu).</p><p class=\"text-mid\">Dobrá voľba pre grafiky s textom, ikony a obrázky vyžadujúce ostré hrany.</p></div>"
+        },
+        {
+          "title": "WebP",
+          "icon": "RiCropLine",
+          "html": "<div><p class=\"text-mid mb-3\">Moderný formát kombinujúci výhody JPG a PNG – malé súbory, dobrá kvalita, podpora priehľadnosti. Podporovaný všetkými modernými prehliadačmi.</p><p class=\"text-mid\">Odporúčaný pre webové stránky – menšie súbory znamenajú rýchlejšie načítanie.</p></div>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
       "title": "Kto potrebuje editor obrázkov?",

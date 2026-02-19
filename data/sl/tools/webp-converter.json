@@ -67,10 +67,48 @@
     },
     { "type": "gap", "variant": "line" },
     {
+      "type": "sectionInfo",
+      "title": "Kako dodati datoteke za pretvorbo?",
+      "html": "<p class=\"text-mid\">Orodje ponuja dva načina dodajanja datotek:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Povleci in spusti</strong> – primite datoteke iz mape na računalniku in jih spustite na območje z napisom &quot;Povlecite in spustite slike sem&quot;. Povlečete lahko več datotek hkrati.</li><li><strong>Izbira z diska</strong> – s klikom na polje za dodajanje datotek se odpre okno za izbiro. Z držanjem Ctrl (ali Cmd na Macu) izberete več datotek hkrati.</li></ul><p class=\"text-mid mt-3\">Orodje sprejema le datoteke JPG in PNG. Če po nesreči dodate datoteko v drugi obliki (npr. GIF ali BMP), bo samodejno preskočena in prikazalo se bo informativno sporočilo.</p><p class=\"text-mid mt-3\"><strong>Zasebnost:</strong> Vse datoteke se obdelujejo lokalno v brskalniku. Nikamor se ne pošiljajo – ne dosežejo nobenega strežnika. Po zaprtju zavihka ali brskalnika se datoteke izbrišejo iz pomnilnika.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Kaj pomenijo statusi datotek?",
+      "html": "<p class=\"text-mid\">Vsaka datoteka v vrsti ima enega od štirih statusov, ki obveščajo o poteku pretvorbe:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Čaka</span><p class=\"text-mid\">Datoteka je v vrsti in čaka na obdelavo. Pretvorba se še ni začela.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Obdelovanje...</span><p class=\"text-mid\">Datoteka se trenutno pretvarja. Pri večini slik to traja delček sekunde, vendar zelo velike datoteke lahko zahtevajo nekaj sekund.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Končano</span><p class=\"text-mid\">Pretvorba je uspešno zaključena. Datoteka WebP je pripravljena za prenos. Ob statusu boste videli tudi informacijo o velikosti pred in po pretvorbi.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Napaka</span><p class=\"text-mid\">Med pretvorbo je šlo nekaj narobe. Vzrok je lahko poškodovana izvorna datoteka ali težava s pomnilnikom brskalnika pri zelo velikih slikah. Gumb &quot;Pretvori znova&quot; omogoča ponovni poskus.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Kako deluje Smart Quality?",
+      "html": "<p class=\"text-mid\">Smart Quality je samodejni optimizacijski mehanizem, ki zagotavlja, da rezultirajoča datoteka WebP nikoli ne bo večja od izvirnika. Deluje takole:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>Orodje pretvori sliko s kakovostjo, ki ste jo nastavili (npr. 80 %).</li><li>Preveri, ali je rezultirajoča datoteka manjša od izvirnika.</li><li>Če je večja, samodejno zniža kakovost in poskusi znova.</li><li>Postopek se ponavlja, dokler rezultirajoča datoteka ni manjša ali kakovost ne pade pod varni minimum.</li></ol><p class=\"text-mid mt-3\">Orodje samodejno izbere optimalne nastavitve. Če imate sliko, ki je že močno stisnjena (npr. JPG s kakovostjo 60 %), se parametri samodejno prilagodijo, da se vseeno doseže prihranek velikosti.</p><p class=\"text-mid mt-3\">Pri vsaki datoteki boste videli informacijo &quot;Uporabljena WebP kakovost&quot; – to je dejanska kakovost, uporabljena po morebitni prilagoditvi Smart Quality.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "sectionDemo",
       "title": "Kako izbrati pravo kakovost za WebP",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kakovost: 80</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Priporočeno</span></div><p class=\"text-mid text-sm!\">Najboljše razmerje kakovosti in velikosti datoteke. Primerno za večino spletnih in e-commerce slik.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kakovost: 60–70</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Agresivna kompresija</span></div><p class=\"text-mid text-sm!\">Manjše datoteke. Primerno za minijature, ikone in dekorativna ozadja.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kakovost: 90–100</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Najvišja kakovost</span></div><p class=\"text-mid text-sm!\">Zelo visoka kakovost, vendar večje datoteke. Primerno za portfolije in glavne produktne slike.</p></div></div>",
       "html": "<p class=\"text-mid\">Nastavitev kakovosti določa razmerje med vizualno kakovostjo in velikostjo datoteke. Za večino spletnih slik vrednost 75–85 daje najboljše rezultate – razlika v kakovosti ni vidna s prostim očesom, datoteka pa je lahko 3–5-krat manjša od izvirnega JPG.</p><p class=\"text-mid mt-3\">Za minijature, ikone in dekorativna ozadja lahko znižate kakovost na 60–70 brez izgube ostrine. Za portfolio slike ali glavne produktne fotografije vrednost 90–95 ohrani podrobnosti.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Kako prenesti pretvorjene datoteke?",
+      "variant": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium text-white\" disabled>Pretvori</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Prenesi vse</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Prenesi kot ZIP</button></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled /><span class=\"text-mid pl-2 text-sm!\">Priloži CSV poročilo v ZIP</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Vhodna velikost: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Velikost po pretvorbi: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">Prihranjeno: <strong class=\"text-success-icon\">1.5 MB (~63 %)</strong></p></div></div>",
+      "html": "<p class=\"text-mid\">Po končani pretvorbi imate več možnosti prenosa:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Prenesi</strong> (pri vsaki datoteki) – prenese posamezno datoteko WebP.</li><li><strong>Prenesi vse</strong> – prenese vse datoteke eno za drugo.</li><li><strong>Prenesi kot ZIP</strong> – ustvari arhiv z vsemi datotekami.</li></ul><p class=\"text-mid mt-3\"><strong>CSV poročilo:</strong> Priložite poročilo s pregledom pretvorbe v ZIP arhiv.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Poročilo o prihrankih – kaj prikazuje?",
+      "html": "<p class=\"text-mid\">Pod gumbi za pretvorbo najdete povzetek z informacijami o prihrankih:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Skupna vhodna velikost</strong> – vsota velikosti vseh izvirnih datotek.</li><li><strong>Skupna velikost po pretvorbi</strong> – vsota velikosti vseh datotek WebP.</li><li><strong>Prihranjeno</strong> – koliko prostora ste s pretvorbo pridobili (v KB/MB in odstotkih).</li></ul><p class=\"text-mid mt-3\"><strong>Kopiraj povzetek:</strong> Gumb prenese poročilo v odložišče v besedilni obliki. Prilepite ga lahko v zapiske, e-pošto ali dokument – uporabno pri dokumentiranju optimizacije grafik.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Koliko je mogoče prihraniti s pretvorbo v WebP?",
+      "html": "<p class=\"text-mid mb-4\">Prihranki so odvisni od vrste slike in njene izvorne kompresije. Spodaj so primeri rezultatov za tipične datoteke:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">JPG fotografija (fotoaparat)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Prihranek: ~63 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">PNG grafika (logotip)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Prihranek: ~75 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktna fotografija</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Prihranek: ~63 %</p></div></div><p class=\"text-light mt-4 text-sm\">Dejanski prihranki se lahko razlikujejo. Pretvornik prikazuje natančno velikost pred in po pretvorbi za vsako datoteko ter povzetek skupnih prihrankov.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
@@ -102,6 +140,35 @@
         { "icon": "RiSpeedLine", "title": "Takojšnja pretvorba", "description": "Rezultati se prikažejo takoj – brez čakanja v vrsti in brez obdelave na strežniku." },
         { "icon": "RiInfinityLine", "title": "Brez omejitve števila slik", "description": "Pretvorite toliko slik, kolikor potrebujete. Brez dnevne ali sejne omejitve." },
         { "icon": "RiScalesLine", "title": "Prilagodljiv regulator kakovosti", "description": "Prilagodite kakovost (0–100) za vsako sliko in dobite najboljše razmerje velikosti in kakovosti." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Na kaj biti pozoren?",
+      "description": "Nekaj nasvetov, ki pomagajo izogniti se težavam med pretvorbo:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Zelo velike datoteke",
+          "description": "Pretvorba slik z ločljivostjo nad 4000×4000 pikslov je lahko počasnejša in obremeni brskalnik. Če obdelujete veliko velikih datotek, razmislite o razdelitvi na serije."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Že stisnjene slike",
+          "description": "Če je bil izvirni JPG shranjen z zelo nizko kakovostjo, pretvorba v WebP morda ne bo prinesla velikih prihrankov. V skrajnih primerih je lahko datoteka WebP celo večja – takrat Smart Quality samodejno zniža kakovost."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Format PNG s prosojnostjo",
+          "description": "WebP podpira prosojnost, zato bodo datoteke PNG z alfa kanalom pretvorjene pravilno. Prihranek velikosti pri PNG s prosojnostjo pa je lahko manjši kot pri običajnih fotografijah JPG."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Združljivost z brskalniki",
+          "description": "Vsi sodobni brskalniki (Chrome, Firefox, Safari 14+, Edge) podpirajo WebP. Če mora stran delovati na starejših brskalnikih, lahko uporabite oznako &lt;picture&gt; z alternativnim virom JPG/PNG."
+        }
       ]
     },
     { "type": "gap", "variant": "line" },

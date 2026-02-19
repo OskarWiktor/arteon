@@ -67,10 +67,48 @@
     },
     { "type": "gap", "variant": "line" },
     {
+      "type": "sectionInfo",
+      "title": "Miten tiedostot lisätään muunnettavaksi?",
+      "html": "<p class=\"text-mid\">Työkalu tarjoaa kaksi tapaa lisätä tiedostoja:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Vedä ja pudota</strong> – tartu tiedostoihin tietokoneen kansiosta ja pudota ne alueelle, jossa lukee &quot;Vedä ja pudota kuvat tähän&quot;. Voit vetää useita tiedostoja kerralla.</li><li><strong>Valitse levyltä</strong> – napsauttamalla tiedostojen lisäyskenttää avautuu valintaikkuna. Pidä Ctrl (tai Cmd Macilla) painettuna valitaksesi useita tiedostoja samanaikaisesti.</li></ul><p class=\"text-mid mt-3\">Työkalu hyväksyy vain JPG- ja PNG-tiedostoja. Jos lisäät vahingossa tiedoston toisessa muodossa (esim. GIF tai BMP), se ohitetaan automaattisesti ja näet tiedotteen.</p><p class=\"text-mid mt-3\"><strong>Yksityisyys:</strong> Kaikki tiedostot käsitellään paikallisesti selaimessa. Niitä ei lähetetä minnekään – ne eivät päädy millekään palvelimelle. Välilehden tai selaimen sulkemisen jälkeen tiedostot poistetaan muistista.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Mitä tiedostojen tilat tarkoittavat?",
+      "html": "<p class=\"text-mid\">Jokaisella jonossa olevalla tiedostolla on yksi neljästä tilasta, jotka kertovat muunnoksen etenemisestä:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Odottaa</span><p class=\"text-mid\">Tiedosto on jonossa ja odottaa käsittelyä. Muunnos ei ole vielä alkanut.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Käsitellään...</span><p class=\"text-mid\">Tiedostoa muunnetaan parhaillaan. Useimmille kuville tämä kestää sekunnin murto-osan, mutta erittäin suuret tiedostot voivat vaatia muutaman sekunnin.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Valmis</span><p class=\"text-mid\">Muunnos onnistui. WebP-tiedosto on valmis ladattavaksi. Tilan yhteydessä näet myös tiedostokoon ennen ja jälkeen muunnoksen.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Virhe</span><p class=\"text-mid\">Jokin meni pieleen muunnoksen aikana. Syynä voi olla vioittunut lähdetiedosto tai selaimen muistiongelma erittäin suurilla kuvilla. &quot;Muunna uudelleen&quot; -painike mahdollistaa uuden yrityksen.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Miten Smart Quality toimii?",
+      "html": "<p class=\"text-mid\">Smart Quality on automaattinen optimointimekanismi, joka varmistaa, ettei tuloksena oleva WebP-tiedosto ole koskaan suurempi kuin alkuperäinen. Se toimii seuraavasti:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>Työkalu muuntaa kuvan asettamallasi laadulla (esim. 80 %).</li><li>Se tarkistaa, onko tulostiedosto pienempi kuin alkuperäinen.</li><li>Jos se on suurempi, laatua lasketaan automaattisesti ja yritetään uudelleen.</li><li>Prosessi toistuu, kunnes tulostiedosto on pienempi tai laatu laskee turvallisen minimin alle.</li></ol><p class=\"text-mid mt-3\">Työkalu valitsee automaattisesti optimaaliset asetukset. Jos kuvasi on jo voimakkaasti pakattu (esim. JPG laadulla 60 %), parametreja säädetään automaattisesti säästön saavuttamiseksi.</p><p class=\"text-mid mt-3\">Jokaisen tiedoston kohdalla näet tiedon &quot;Käytetty WebP-laatu&quot; – se on todellinen laatu Smart Qualityn mahdollisen säädön jälkeen.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "sectionDemo",
       "title": "Näin valitset oikean laadun WebP-muotoon",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Laatu: 80</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Suositeltu</span></div><p class=\"text-mid text-sm!\">Paras suhde laadun ja tiedostokoon välillä. Sopii useimpiin verkko- ja verkkokauppakuviin.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Laatu: 60–70</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Aggressiivinen pakkaus</span></div><p class=\"text-mid text-sm!\">Pienemmät tiedostot. Sopii pikkukuville, kuvakkeille ja koristetaustoille.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Laatu: 90–100</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Korkein laatu</span></div><p class=\"text-mid text-sm!\">Erittäin korkea laatu, mutta suuremmat tiedostot. Sopii portfolioihin ja tuotteiden pääkuviin.</p></div></div>",
       "html": "<p class=\"text-mid\">Laatuasetus määrittää visuaalisen laadun ja tiedostokoon välisen suhteen. Useimmille verkkokuville arvo 75–85 tuottaa parhaat tulokset – laatuero ei ole silmälle näkyvä, ja tiedosto voi olla 3–5 kertaa pienempi kuin alkuperäinen JPG.</p><p class=\"text-mid mt-3\">Pikkukuville, kuvakkeille ja koristetaustoille voit laskea laadun 60–70:een menettämättä terävyyttä. Portfoliokuville tai tuotteiden pääkuville arvo 90–95 säilyttää yksityiskohdat.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Miten muunnetut tiedostot ladataan?",
+      "variant": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium text-white\" disabled>Muunna</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Lataa kaikki</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Lataa ZIP-tiedostona</button></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled /><span class=\"text-mid pl-2 text-sm!\">Liitä CSV-raportti ZIP-tiedostoon</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Syötekoko: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Koko muunnoksen jälkeen: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">Säästetty: <strong class=\"text-success-icon\">1.5 MB (~63 %)</strong></p></div></div>",
+      "html": "<p class=\"text-mid\">Muunnoksen jälkeen sinulla on useita latausvaihtoehtoja:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Lataa</strong> (kunkin tiedoston kohdalla) – lataa yksittäisen WebP-tiedoston.</li><li><strong>Lataa kaikki</strong> – lataa kaikki tiedostot yksi kerrallaan.</li><li><strong>Lataa ZIP-tiedostona</strong> – luo arkiston kaikista tiedostoista.</li></ul><p class=\"text-mid mt-3\"><strong>CSV-raportti:</strong> Liitä muunnosyhteenvedon sisältävä raportti ZIP-arkistoon.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Säästöraportti – mitä se näyttää?",
+      "html": "<p class=\"text-mid\">Muunnospainikkeiden alla on yhteenveto säästötiedoilla:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Kokonaissyötekoko</strong> – kaikkien alkuperäisten tiedostojen kokojen summa.</li><li><strong>Kokonaiskoko muunnoksen jälkeen</strong> – kaikkien WebP-tiedostojen kokojen summa.</li><li><strong>Säästetty</strong> – kuinka paljon tilaa muunnoksella saavutettiin (KB/MB:nä ja prosentteina).</li></ul><p class=\"text-mid mt-3\"><strong>Kopioi yhteenveto:</strong> Painike kopioi raportin leikepöydälle tekstimuodossa. Sen voi liittää muistiinpanoihin, sähköpostiin tai asiakirjaan – hyödyllinen kuvien optimoinnin dokumentoinnissa.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Kuinka paljon WebP-muunnoksella voi säästää?",
+      "html": "<p class=\"text-mid mb-4\">Säästöt riippuvat kuvatyypistä ja alkuperäisestä pakkauksesta. Alla esimerkkituloksia tyypillisille tiedostoille:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">JPG-valokuva (kamera)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Säästö: ~63 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">PNG-grafiikka (logo)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Säästö: ~75 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotevalokuva</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Säästö: ~63 %</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset säästöt voivat vaihdella. Muunnin näyttää tarkan koon ennen ja jälkeen muunnoksen jokaiselle tiedostolle sekä yhteenvedon kokonaissäästöistä.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
@@ -106,6 +144,35 @@
         { "icon": "RiSpeedLine", "title": "Välitön muuntaminen", "description": "Tulokset näkyvät heti – ei jonottamista eikä palvelimella käsittelyä." },
         { "icon": "RiInfinityLine", "title": "Ei kuvarajaa", "description": "Muunna niin monta kuvaa kuin tarvitset. Ei päivä- tai istuntorajaa." },
         { "icon": "RiScalesLine", "title": "Säädettävä laadunsäädin", "description": "Säädä laatua (0–100) jokaiselle kuvalle ja saat parhaan suhteen koon ja laadun välillä." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Mihin kannattaa kiinnittää huomiota?",
+      "description": "Muutama vinkki, jotka auttavat välttämään ongelmia muunnoksen aikana:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Erittäin suuret tiedostot",
+          "description": "Yli 4000×4000 pikselin kuvien muuntaminen voi olla hitaampaa ja rasittaa selainta. Jos käsittelet monia suuria tiedostoja, harkitse niiden jakamista eriin."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Jo pakatut kuvat",
+          "description": "Jos alkuperäinen JPG tallennettiin erittäin matalalla laadulla, muunnos WebP:ksi ei välttämättä tuota suuria säästöjä. Ääritapauksissa WebP-tiedosto voi olla jopa suurempi – silloin Smart Quality laskee laatua automaattisesti."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "PNG-muoto läpinäkyvyydellä",
+          "description": "WebP tukee läpinäkyvyyttä, joten alfa-kanavalla varustetut PNG-tiedostot muunnetaan oikein. Kokonaissäästö läpinäkyville PNG-tiedostoille voi kuitenkin olla pienempi kuin tavallisille JPG-valokuville."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Selainyhteensopivuus",
+          "description": "Kaikki modernit selaimet (Chrome, Firefox, Safari 14+, Edge) tukevat WebP:tä. Jos sivuston on toimittava vanhemmissa selaimissa, voit käyttää &lt;picture&gt;-tunnistetta vaihtoehtoisella JPG/PNG-lähteellä."
+        }
       ]
     },
     { "type": "gap", "variant": "line" },

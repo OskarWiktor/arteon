@@ -67,10 +67,48 @@
     },
     { "type": "gap", "variant": "line" },
     {
+      "type": "sectionInfo",
+      "title": "Bagaimana menambah fail untuk penukaran?",
+      "html": "<p class=\"text-mid\">Alat ini menawarkan dua cara untuk menambah fail:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Seret dan lepas</strong> – ambil fail dari folder di komputer dan lepaskannya pada kawasan bertulisan &quot;Seret dan lepas imej di sini&quot;. Anda boleh menyeret beberapa fail sekaligus.</li><li><strong>Pilih dari cakera</strong> – selepas mengklik medan penambahan fail, tetingkap pemilihan akan dibuka. Tahan Ctrl (atau Cmd di Mac) untuk memilih beberapa fail serentak.</li></ul><p class=\"text-mid mt-3\">Alat ini hanya menerima fail JPG dan PNG. Jika anda secara tidak sengaja menambah fail dalam format lain (cth. GIF atau BMP), ia akan dilangkau secara automatik dan anda akan melihat mesej maklumat.</p><p class=\"text-mid mt-3\"><strong>Privasi:</strong> Semua fail diproses secara setempat dalam pelayar. Ia tidak dihantar ke mana-mana – ia tidak sampai ke mana-mana pelayan. Selepas menutup tab atau pelayar, fail akan dipadam dari memori.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Apakah maksud status fail?",
+      "html": "<p class=\"text-mid\">Setiap fail dalam baris gilir mempunyai satu daripada empat status yang memaklumkan tentang kemajuan penukaran:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Menunggu</span><p class=\"text-mid\">Fail berada dalam baris gilir dan menunggu pemprosesan. Penukaran belum bermula.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Memproses...</span><p class=\"text-mid\">Fail sedang ditukar. Untuk kebanyakan imej ia mengambil sesaat sahaja, tetapi fail yang sangat besar mungkin memerlukan beberapa saat.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Selesai</span><p class=\"text-mid\">Penukaran berjaya diselesaikan. Fail WebP sedia untuk dimuat turun. Di sebelah status, anda juga akan melihat maklumat saiz sebelum dan selepas penukaran.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Ralat</span><p class=\"text-mid\">Sesuatu telah berlaku semasa penukaran. Puncanya mungkin fail sumber yang rosak atau masalah memori pelayar dengan imej yang sangat besar. Butang &quot;Tukar semula&quot; membolehkan percubaan semula.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Bagaimana Smart Quality berfungsi?",
+      "html": "<p class=\"text-mid\">Smart Quality ialah mekanisme pengoptimuman automatik yang memastikan fail WebP yang terhasil tidak akan pernah lebih besar daripada fail asal. Ia berfungsi seperti berikut:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>Alat menukar imej dengan kualiti yang telah ditetapkan (cth. 80 %).</li><li>Ia menyemak sama ada fail yang terhasil lebih kecil daripada asal.</li><li>Jika lebih besar, kualiti dikurangkan secara automatik dan percubaan dilakukan semula.</li><li>Proses berulang sehingga fail yang terhasil lebih kecil atau kualiti jatuh di bawah minimum yang selamat.</li></ol><p class=\"text-mid mt-3\">Alat secara automatik memilih tetapan optimum. Jika anda mempunyai imej yang sudah dimampatkan dengan kuat (cth. JPG dengan kualiti 60 %), parameter akan disesuaikan secara automatik untuk tetap mencapai penjimatan saiz.</p><p class=\"text-mid mt-3\">Pada setiap fail anda akan melihat maklumat &quot;Kualiti WebP yang digunakan&quot; – itulah kualiti sebenar yang digunakan selepas pelarasan Smart Quality yang mungkin berlaku.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "sectionDemo",
       "title": "Cara memilih kualiti yang sesuai untuk WebP",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kualiti: 80</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Disyorkan</span></div><p class=\"text-mid text-sm!\">Nisbah terbaik antara kualiti dan saiz fail. Sesuai untuk kebanyakan imej laman web dan kedai.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kualiti: 60\u201370</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Pemampatan agresif</span></div><p class=\"text-mid text-sm!\">Fail lebih kecil. Sesuai untuk imej kecil, ikon, dan latar belakang hiasan.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kualiti: 90\u2013100</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Kualiti tertinggi</span></div><p class=\"text-mid text-sm!\">Kualiti sangat tinggi, tetapi fail lebih besar. Sesuai untuk portfolio dan foto produk yang kritikal.</p></div></div>",
       "html": "<p class=\"text-mid\">Tetapan kualiti menentukan nisbah antara kualiti visual dan saiz fail. Untuk kebanyakan imej laman web, nilai 75\u201385 memberikan hasil terbaik \u2013 perbezaan kualiti tidak kelihatan pada mata, dan fail boleh menjadi 3\u20135 kali lebih kecil daripada JPG asal.</p><p class=\"text-mid mt-3\">Untuk imej kecil, ikon, dan latar belakang hiasan, anda boleh mengurangkan kualiti kepada 60\u201370 tanpa kehilangan ketajaman. Untuk foto portfolio atau foto produk yang kritikal, nilai 90\u201395 akan mengekalkan butiran.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Bagaimana memuat turun fail yang ditukar?",
+      "variant": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium text-white\" disabled>Tukar</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Muat turun semua</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Muat turun sebagai ZIP</button></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled /><span class=\"text-mid pl-2 text-sm!\">Sertakan laporan CSV dalam ZIP</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Saiz input: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Saiz selepas penukaran: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">Dijimatkan: <strong class=\"text-success-icon\">1.5 MB (~63 %)</strong></p></div></div>",
+      "html": "<p class=\"text-mid\">Selepas penukaran selesai, anda mempunyai beberapa pilihan muat turun:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Muat turun</strong> (di sebelah setiap fail) – memuat turun fail WebP individu.</li><li><strong>Muat turun semua</strong> – memuat turun semua fail satu persatu.</li><li><strong>Muat turun sebagai ZIP</strong> – mencipta arkib dengan semua fail.</li></ul><p class=\"text-mid mt-3\"><strong>Laporan CSV:</strong> Sertakan laporan dengan ringkasan penukaran dalam arkib ZIP.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Laporan penjimatan – apa yang ditunjukkan?",
+      "html": "<p class=\"text-mid\">Di bawah butang penukaran anda akan menemui ringkasan dengan maklumat penjimatan:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Jumlah saiz input</strong> – jumlah keseluruhan saiz semua fail asal.</li><li><strong>Jumlah saiz selepas penukaran</strong> – jumlah keseluruhan saiz semua fail WebP.</li><li><strong>Dijimatkan</strong> – berapa banyak ruang yang diperoleh melalui penukaran (dalam KB/MB dan peratus).</li></ul><p class=\"text-mid mt-3\"><strong>Salin ringkasan:</strong> Butang ini menyalin laporan ke papan klip dalam format teks. Anda boleh menampalnya dalam nota, e-mel atau dokumen – berguna untuk mendokumentasikan pengoptimuman grafik.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Berapa banyak yang boleh dijimatkan dengan menukar kepada WebP?",
+      "html": "<p class=\"text-mid mb-4\">Penjimatan bergantung pada jenis imej dan pemampatan asalnya. Berikut adalah contoh hasil untuk fail tipikal:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto JPG (kamera)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Penjimatan: ~63 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Grafik PNG (logo)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Penjimatan: ~75 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto produk</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Penjimatan: ~63 %</p></div></div><p class=\"text-light mt-4 text-sm\">Penjimatan sebenar mungkin berbeza. Penukar menunjukkan saiz tepat sebelum dan selepas penukaran untuk setiap fail serta ringkasan jumlah keseluruhan penjimatan.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
@@ -110,6 +148,35 @@
           "icon": "RiScalesLine",
           "title": "Peluncur kualiti yang boleh dilaras",
           "description": "Tetapkan kualiti (0\u2013100) untuk setiap imej bagi mendapatkan nisbah terbaik antara saiz dan kualiti."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Apa yang perlu diberi perhatian?",
+      "description": "Beberapa petua untuk mengelakkan masalah semasa penukaran:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Fail yang sangat besar",
+          "description": "Penukaran imej dengan resolusi melebihi 4000×4000 piksel mungkin lebih perlahan dan membebankan pelayar. Jika anda memproses banyak fail besar, pertimbangkan untuk membahagikannya kepada kumpulan."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Imej yang sudah dimampatkan",
+          "description": "Jika JPG asal disimpan dengan kualiti sangat rendah, penukaran kepada WebP mungkin tidak menghasilkan penjimatan yang besar. Dalam kes ekstrem, fail WebP mungkin lebih besar – Smart Quality akan menurunkan kualiti secara automatik."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Format PNG dengan ketelusan",
+          "description": "WebP menyokong ketelusan, jadi fail PNG dengan saluran alfa akan ditukar dengan betul. Namun, penjimatan saiz untuk PNG dengan ketelusan mungkin lebih kecil berbanding foto JPG biasa."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Keserasian pelayar",
+          "description": "Semua pelayar moden (Chrome, Firefox, Safari 14+, Edge) menyokong WebP. Jika laman web perlu berfungsi pada pelayar lama, anda boleh menggunakan tag &lt;picture&gt; dengan sumber JPG/PNG alternatif."
         }
       ]
     },

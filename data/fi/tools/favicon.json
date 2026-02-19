@@ -94,6 +94,112 @@
     },
     { "type": "gap", "variant": "line" },
     {
+      "type": "sectionSteps",
+      "title": "Miten favicon-generaattoria käytetään?",
+      "description": "Generaattori ohjaa sinut koko prosessin läpi vaihe vaiheelta:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Lisää lähdekuva",
+          "description": "<div><p class=\"mb-2\">Vedä tiedosto merkitylle alueelle tai valitse kuva tietokoneeltasi.</p><p class=\"text-light\">Tuetut muodot: PNG, JPG, SVG. Yksinkertainen logo tai kuvake vähintään 512×512 pikseliä toimii parhaiten.</p></div>"
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "2. Valitse kuvakekoot",
+          "description": "<div><p class=\"mb-2\">Valitse tarvitsemasi kuvakekoot.</p><p class=\"text-light\">Voit valita kaikki tai vain osan. Tavalliselle verkkosivulle riittää: favicon.ico, 32×32 ja 180×180.</p></div>"
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "3. Aseta luontiasetukset",
+          "description": "<div><p class=\"mb-2\">Määritä lisäasetukset:</p><ul class=\"text-light list-disc pl-5\"><li><strong>Tausta</strong> – läpinäkyvä tai valittu väri</li><li><strong>Manifesti</strong> – PWA-konfiguraatiotiedosto</li><li><strong>Automaattinen lataus</strong> – tiedostot ladataan heti luonnin jälkeen</li></ul></div>"
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Luo ja lataa tiedostot",
+          "description": "<div><p class=\"mb-2\">Luonnin jälkeen työkalu käsittelee kuvan paikallisesti – mitään ei lähetetä palvelimelle.</p><p class=\"text-light\">Lataa kaikki tiedostot ZIP-arkistona tai lataa yksittäiset kuvakkeet erikseen.</p></div>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Luontiasetukset – mitä kukin tekee?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">PNG-koot</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">16x16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">32x32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">180x180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Läpinäkyvä tausta (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Taustaväri:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Tausta (läpinäkyvä tai väri)</h3><p class=\"text-mid\">Oletusarvoisesti generaattori säilyttää läpinäkyvyyden. Voit myös valita tietyn taustavärin.</p></div><div><h3 class=\"h5 mb-2\">Luo manifesti (site.webmanifest)</h3><p class=\"text-mid\">JSON-konfiguraatiotiedosto verkkosovelluksille (PWA). Jos et luo PWA:ta, tämä asetus ei ole tarpeen.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Miten luodut tiedostot ladataan?",
+      "description": "Kuvakkeiden luonnin jälkeen sinulla on useita latausvaihtoehtoja:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFolderZipLine",
+          "title": "Lataa kaikki ZIP-tiedostona",
+          "description": "Lataa kaikki -painike pakkaa kaikki luodut tiedostot yhteen ZIP-arkistoon. Kätevin vaihtoehto, kun tarvitset täydellisen kuvakesarjan."
+        },
+        {
+          "icon": "RiFileDownloadLine",
+          "title": "Lataa yksittäiset tiedostot",
+          "description": "Jokaisella luodulla kuvakkeella on oma latauspainike – voit ladata yksittäisen tiedoston ilman koko sarjan latausta. Hyödyllinen yhden koon päivittämiseen."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTabs",
+      "title": "Minne ja miten favicon ladataan?",
+      "tabs": [
+        {
+          "title": "WordPress",
+          "icon": "RiWordpressLine",
+          "html": "<div><p class=\"text-mid mb-3\">Useimmissa WordPress-teemoissa on sisäänrakennettu sivustokuvakkeen asetusmahdollisuus. Löydät sen hallintapaneelista:</p><p class=\"text-mid mb-3\"><strong>Ulkoasu → Muokkaa → Sivuston identiteetti → Sivustokuvake</strong></p><p class=\"text-light\">Lataa 512×512-tiedosto – WordPress luo automaattisesti pienemmät koot. Täyttä hallintaa varten voit myös ladata tiedostot suoraan juurihakemistoon FTP:n kautta.</p></div>"
+        },
+        {
+          "title": "HTML",
+          "icon": "RiHtml5Line",
+          "html": "<div><p class=\"text-mid mb-3\">Sijoita luodut tiedostot sivuston juurihakemistoon (sinne, missä index.html sijaitsee). Lisää sitten sopivat tagit &lt;head&gt;-osioon:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">Yllä oleva koodi on esimerkki – mukauta polut sivustosi rakenteen mukaan.</p></div>"
+        },
+        {
+          "title": "Next.js / React",
+          "icon": "RiReactjsLine",
+          "html": "<div><p class=\"text-mid mb-3\">Next.js:ssä (App Router) favicon-tiedostot sijoitetaan hakemistoon <code>app/</code> tai <code>public/</code>:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> – Next.js tunnistaa automaattisesti</li><li><code>app/apple-icon.png</code> – Apple-kuvake</li><li><code>public/</code> – muut kuvakkeet (192×192, 512×512)</li></ul><p class=\"text-light\">Kuvakkeet voi myös määrittää tiedostossa <code>layout.tsx</code> objektin <code>metadata.icons</code> kautta.</p></div>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä lähdekuva toimii parhaiten?",
+      "description": "Favicon on hyvin pieni grafiikka – jopa 16×16 pikseliä. Siksi kaikki kuvat eivät sovellu lähteeksi:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShapeLine",
+          "title": "Yksinkertaiset muodot ja luettavat symbolit",
+          "description": "Yksinkertaiset logot, yksittäiset kirjaimet tai symbolit toimivat parhaiten. Vältä monimutkaisia grafiikoita, joissa on paljon yksityiskohtia."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Neliömuoto",
+          "description": "Favicon on neliö. Jos lähdekuvalla on muu kuvasuhde kuin 1:1, se rajataan tai venytetään."
+        },
+        {
+          "icon": "RiZoomInLine",
+          "title": "Riittävä koko",
+          "description": "Suosittelemme lähdekuvaa, jonka koko on vähintään 512×512 pikseliä. Pienemmät kuvat suurennetaan."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "SVG ihanteellisena lähteenä",
+          "description": "SVG skaalautuu ilman laadun heikkenemistä, joten kuvakkeet ovat teräviä kaikissa koissa."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset favicon-generaattorista",
       "openByDefault": 1,

@@ -110,6 +110,25 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Si të shtoni një imazh?",
+      "html": "<p class=\"text-mid\">Mjeti pranon imazhe në formatet JPG, PNG dhe WebP. Imazhin mund ta shtoni në dy mënyra:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Tërhiq dhe lësho</strong> – merrni skedarin nga dosja dhe lëshojeni në fushën për shtimin e skedarëve (fusha me kornizë me vija të ndërprera).</li><li><strong>Zgjidhni nga disku</strong> – pas klikimit në fushë hapet dritarja për zgjedhjen e skedarit nga disku.</li></ul><p class=\"text-mid mt-3\">Pas shtimit të imazhit mjeti lexon automatikisht dimensionet e tij origjinale dhe shfaq parapamjen. Tani mund të kaloni te cilësimet e prerjes.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Vendosni dimensionet e synuara",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Dimensione në px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Formate të gatshme</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Gjerësia (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly /></div><div><label class=\"text-[14px]! font-medium\">Lartësia (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly /></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\" /><span>Ruaj proporcionet (dimensioni i dytë automatik)</span></label></div></div>",
+      "html": "<p class=\"text-mid\">Në skedën <strong>Dimensione në px</strong> vendosni gjerësinë dhe lartësinë manualisht. Opsioni <strong>Ruaj proporcionet</strong> përshtat automatikisht dimensionin e dytë.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Dimensionet e imazheve për Instagram, Facebook dhe LinkedIn",
+      "html": "<p class=\"text-mid mb-4\">Mjeti përmban formate të gatshme me dimensione optimale për platformat më të njohura:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platforma</th><th class=\"py-2 pr-4 font-semibold\">Formati</th><th class=\"py-2 pr-4 font-semibold\">Dimensionet (px)</th><th class=\"py-2 font-semibold\">Proporcionet</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Postim katror</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Postim vertikal</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Postim</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Kopertina e faqes</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Postim</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Baneri i profilit</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG image</td><td class=\"py-2 pr-4\">Ndarja e lidhjeve</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "sectionSteps",
       "title": "Formate të gatshme për rrjetet sociale",
       "description": "Redaktuesi ofron formate të gatshme për platformat më të njohura:",
@@ -151,6 +170,47 @@
       "type": "gap",
       "variant": "line"
     },
+    {
+      "type": "sectionInfo",
+      "title": "Si të preni një imazh?",
+      "html": "<p class=\"text-mid\">Pas vendosjes së dimensioneve të synuara në parapamje shfaqet një zonë interaktive prerjeje. Pjesa e ndritshme e imazhit është pjesa që do të ruhet – pjesa tjetër është e errësuar.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Tërheqja e prerjes</p><p class=\"text-mid mt-1\">Merrni zonën e ndritshme dhe tërhiqeni në vendin e dëshiruar në imazh. Kështu zgjidhni cilën pjesë të fotografisë do ta eksportoni.</p></div><div><p class=\"text-dark font-semibold\">Ndryshimi i madhësisë me doreza</p><p class=\"text-mid mt-1\">Në qoshet e zonës së prerjes ndodhen katrorë të vegjël (doreza). Duke i tërhequr ndryshoni madhësinë e prerjes duke ruajtur proporcionet e zgjedhura.</p></div><div><p class=\"text-dark font-semibold\">Zmadhimi (zoom)</p><p class=\"text-mid mt-1\">Në skedën <strong>Zoom</strong> gjeni një rrëshqitës për rregullimin e zoomit (100–300 %). Vlera më e lartë do të thotë se prerja mbulon një pjesë më të vogël të imazhit origjinal.</p></div><div><p class=\"text-dark font-semibold\">Vendosja e saktë e pozicionit</p><p class=\"text-mid mt-1\">Në skedën <strong>Pozicioni</strong> mund të vendosni pozicionin e saktë në përqindje (0–100 % për boshtin X dhe Y). Butonat e centrimit mundësojnë centrimin e shpejtë.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Format e prerjes",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Drejtkëndësh</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Katror</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Rreth</span></div></div>",
+      "html": "<p class=\"text-mid\">Në skedën <strong>Format e prerjes</strong> zgjidhni formën e imazhit të eksportuar: drejtkëndësh (me proporcionet e zgjedhura), katror (detyron 1:1) ose rreth (me sfond transparent).</p><p class=\"text-mid mt-3\">Forma e rrethit krijon një avatar të rrumbullakët me sfond transparent jashtë rrethit. Mjeti kalon automatikisht në format PNG ose WebP, sepse JPG nuk mbështet transparencën.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Rrjeta 3×3 – për çfarë shërben?",
+      "html": "<p class=\"text-mid\">Në zonën e prerjes shihet një rrjetë që e ndan imazhin në 9 pjesë të barabarta. Kjo është vizualizimi i <strong>rregullit të tretave</strong> – njërit nga rregullat themelore të kompozicionit fotografik.</p><p class=\"text-mid mt-3\">Rregulli thotë se elementet më të rëndësishme të fotografisë (fytyra, produkti, pika e interesit) duhet të ndodhen në pikat e kryqëzimit të vijave të rrjetës ose përgjatë tyre. Një kompozicion i tillë është më dinamik dhe më i këndshëm për syrin sesa vendosja e objektit saktësisht në qendër.</p><p class=\"text-mid mt-3\">Në skedën <strong>Ngjyra e rrjetës</strong> mund të ndryshoni ngjyrën e vijave (e gjelbër, e bardhë, e zezë, e kuqe, e verdhë), që rrjeta të jetë e dukshme mirë në fotografi të ndryshme.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTabs",
+      "title": "Eksporti – cilin format të zgjidhni?",
+      "tabs": [
+        {
+          "title": "JPG",
+          "icon": "RiImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Formati më i njohur për fotografi. Kompresim i mirë duke ruajtur cilësinë vizuale. Nuk mbështet transparencën – sfondi do të jetë gjithmonë i mbushur me ngjyrë.</p><p class=\"text-mid\">Zgjedhje e mirë për foto produktesh, portrete dhe shumicën e grafikave për faqe. Rrëshqitësi i cilësisë (60–100 %) kontrollon kompresimin.</p></div>"
+        },
+        {
+          "title": "PNG",
+          "icon": "RiFileImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Format pa humbje – ruan cilësinë e plotë, por skedarët janë më të mëdhenj. Mbështet transparencën (i nevojshëm për formën e rrethit).</p><p class=\"text-mid\">Zgjedhje e mirë për grafika me tekst, ikona dhe imazhe që kërkojnë skaje të mprehta.</p></div>"
+        },
+        {
+          "title": "WebP",
+          "icon": "RiCropLine",
+          "html": "<div><p class=\"text-mid mb-3\">Format modern që kombinon përparësitë e JPG dhe PNG – skedarë të vegjël, cilësi e mirë, mbështetje e transparencës. I mbështetur nga të gjithë shfletuesit modernë.</p><p class=\"text-mid\">I rekomanduar për faqe interneti – skedarë më të vegjël do të thotë ngarkim më i shpejtë.</p></div>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
       "title": "Kush ka nevojë për një redaktues imazhesh?",

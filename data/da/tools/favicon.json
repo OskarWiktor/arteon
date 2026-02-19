@@ -94,6 +94,112 @@
     },
     { "type": "gap", "variant": "line" },
     {
+      "type": "sectionSteps",
+      "title": "Hvordan bruger du favicon-generatoren?",
+      "description": "Generatoren guider dig gennem hele processen trin for trin:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Tilføj kildebillede",
+          "description": "<div><p class=\"mb-2\">Træk en fil til det markerede felt, eller vælg et billede fra din computer.</p><p class=\"text-light\">Understøttede formater: PNG, JPG, SVG. Et simpelt logo eller ikon på mindst 512×512 pixels fungerer bedst.</p></div>"
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "2. Vælg ikonstørrelser",
+          "description": "<div><p class=\"mb-2\">Afkryds de ikonstørrelser, du har brug for.</p><p class=\"text-light\">Du kan vælge alle eller kun enkelte. Til en almindelig hjemmeside er nok: favicon.ico, 32×32 og 180×180.</p></div>"
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "3. Indstil genereringsoptioner",
+          "description": "<div><p class=\"mb-2\">Indstil yderligere muligheder:</p><ul class=\"text-light list-disc pl-5\"><li><strong>Baggrund</strong> – gennemsigtig eller valgt farve</li><li><strong>Manifest</strong> – konfigurationsfil til PWA</li><li><strong>Automatisk download</strong> – filer downloades med det samme efter generering</li></ul></div>"
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Generér og download filer",
+          "description": "<div><p class=\"mb-2\">Efter generering behandler værktøjet billedet lokalt – intet sendes til en server.</p><p class=\"text-light\">Download alle filer som ZIP-arkiv, eller download enkelte ikoner separat.</p></div>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Genereringsoptioner – hvad gør hver af dem?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">PNG-størrelser</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">16x16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">32x32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">180x180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Gennemsigtig baggrund (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Baggrundsfarve:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Baggrund (gennemsigtig eller farve)</h3><p class=\"text-mid\">Som standard bevarer generatoren gennemsigtighed. Du kan også vælge en bestemt baggrundsfarve.</p></div><div><h3 class=\"h5 mb-2\">Generér manifest (site.webmanifest)</h3><p class=\"text-mid\">En JSON-konfigurationsfil til webapps (PWA). Hvis du ikke opretter en PWA, er denne mulighed ikke nødvendig.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Hvordan downloader du de genererede filer?",
+      "description": "Efter generering af ikoner har du flere downloadmuligheder:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFolderZipLine",
+          "title": "Download alt som ZIP",
+          "description": "Knappen Download alt pakker alle genererede filer i ét ZIP-arkiv. Det er den mest bekvemme mulighed, når du har brug for det komplette ikonsæt."
+        },
+        {
+          "icon": "RiFileDownloadLine",
+          "title": "Download enkelte filer",
+          "description": "Hvert genereret ikon har sin egen downloadknap – du kan downloade en enkelt fil uden at downloade hele sættet. Nyttigt ved opdatering af en enkelt størrelse."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTabs",
+      "title": "Hvor og hvordan uploader man favicon?",
+      "tabs": [
+        {
+          "title": "WordPress",
+          "icon": "RiWordpressLine",
+          "html": "<div><p class=\"text-mid mb-3\">De fleste WordPress-temaer har en indbygget mulighed for at indstille webstedsikonet. Du finder den i admin-panelet:</p><p class=\"text-mid mb-3\"><strong>Udseende → Tilpas → Webstedsidentitet → Webstedsikon</strong></p><p class=\"text-light\">Upload 512×512-filen – WordPress genererer automatisk mindre størrelser. For fuld kontrol kan du også uploade filerne direkte til rodmappen via FTP.</p></div>"
+        },
+        {
+          "title": "HTML",
+          "icon": "RiHtml5Line",
+          "html": "<div><p class=\"text-mid mb-3\">Placer de genererede filer i hjemmesidens rodmappe (der, hvor index.html ligger). Tilføj derefter de passende tags i &lt;head&gt;-sektionen:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">Ovenstående kode er et eksempel – tilpas stierne til din hjemmesides struktur.</p></div>"
+        },
+        {
+          "title": "Next.js / React",
+          "icon": "RiReactjsLine",
+          "html": "<div><p class=\"text-mid mb-3\">I Next.js (App Router) placeres favicon-filerne i mappen <code>app/</code> eller <code>public/</code>:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> – genkendes automatisk af Next.js</li><li><code>app/apple-icon.png</code> – Apple-ikon</li><li><code>public/</code> – øvrige ikoner (192×192, 512×512)</li></ul><p class=\"text-light\">Du kan også konfigurere ikoner i filen <code>layout.tsx</code> via objektet <code>metadata.icons</code>.</p></div>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Hvilket kildebillede fungerer bedst?",
+      "description": "Favicon er en meget lille grafik – ned til 16×16 pixels. Derfor er ikke alle billeder egnede som kilde:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShapeLine",
+          "title": "Enkle former og læsbare symboler",
+          "description": "Enkle logoer, enkelte bogstaver eller symboler fungerer bedst. Undgå komplekse grafik med mange detaljer."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Kvadratisk format",
+          "description": "Favicon er kvadratisk. Hvis kildebilledet har andre proportioner end 1:1, vil det blive beskåret eller strakt."
+        },
+        {
+          "icon": "RiZoomInLine",
+          "title": "Tilstrækkelig størrelse",
+          "description": "Vi anbefaler et kildebillede på mindst 512×512 pixels. Mindre billeder vil blive opskaleret."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "SVG som ideel kilde",
+          "description": "SVG skalerer uden kvalitetstab, så ikoner vil være skarpe i alle størrelser."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om favicon-generatoren",
       "openByDefault": 1,

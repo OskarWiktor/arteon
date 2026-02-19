@@ -94,6 +94,112 @@
     },
     { "type": "gap", "variant": "line" },
     {
+      "type": "sectionSteps",
+      "title": "Kako uporabljati generator favicon?",
+      "description": "Generator vas vodi skozi celoten postopek korak za korakom:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Dodajte izvorno sliko",
+          "description": "<div><p class=\"mb-2\">Povlecite datoteko na označeno območje ali izberite sliko z diska.</p><p class=\"text-light\">Podprti formati: PNG, JPG, SVG. Preprost logotip ali ikona dimenzij vsaj 512×512 pikslov deluje najbolje.</p></div>"
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "2. Izberite velikosti ikon",
+          "description": "<div><p class=\"mb-2\">Označite velikosti ikon, ki jih potrebujete.</p><p class=\"text-light\">Izberete lahko vse ali samo nekatere. Za običajno spletno stran zadostuje: favicon.ico, 32×32 in 180×180.</p></div>"
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "3. Nastavite možnosti generiranja",
+          "description": "<div><p class=\"mb-2\">Nastavite dodatne možnosti:</p><ul class=\"text-light list-disc pl-5\"><li><strong>Ozadje</strong> – prozorno ali izbrana barva</li><li><strong>Manifest</strong> – konfiguracijska datoteka za PWA</li><li><strong>Samodejni prenos</strong> – datoteke se prenesejo takoj po generiranju</li></ul></div>"
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Generirajte in prenesite datoteke",
+          "description": "<div><p class=\"mb-2\">Po zagonu generiranja orodje obdela sliko lokalno – nič se ne pošilja na strežnik.</p><p class=\"text-light\">Prenesite vse datoteke kot ZIP-arhiv ali prenesite posamezne ikone ločeno.</p></div>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Možnosti generiranja – kaj naredi vsaka od njih?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">Velikosti PNG</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">16x16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">32x32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">180x180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Prozorno ozadje (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Barva ozadja:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Ozadje (prozorno ali barva)</h3><p class=\"text-mid\">Privzeto generator ohranja prozornost. Lahko tudi izberete določeno barvo ozadja.</p></div><div><h3 class=\"h5 mb-2\">Generiraj manifest (site.webmanifest)</h3><p class=\"text-mid\">JSON konfiguracijska datoteka za spletne aplikacije (PWA). Če ne ustvarjate PWA, ta možnost ni potrebna.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kako prenesti generirane datoteke?",
+      "description": "Po generiranju ikon imate več možnosti prenosa:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFolderZipLine",
+          "title": "Prenesite vse kot ZIP",
+          "description": "Gumb Prenesi vse zapakira vse generirane datoteke v en ZIP-arhiv. To je najprimernejša možnost, ko potrebujete celoten nabor ikon."
+        },
+        {
+          "icon": "RiFileDownloadLine",
+          "title": "Prenesite posamezne datoteke",
+          "description": "Vsaka generirana ikona ima svoj gumb za prenos – posamezno datoteko lahko prenesete brez prenašanja celotnega nabora. Uporabno pri posodabljanju le ene velikosti."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTabs",
+      "title": "Kam in kako naložiti favicon?",
+      "tabs": [
+        {
+          "title": "WordPress",
+          "icon": "RiWordpressLine",
+          "html": "<div><p class=\"text-mid mb-3\">Večina WordPress tem ima vgrajeno možnost nastavitve ikone spletnega mesta. Najdete jo v administraciji:</p><p class=\"text-mid mb-3\"><strong>Videz → Prilagodi → Identiteta spletnega mesta → Ikona spletnega mesta</strong></p><p class=\"text-light\">Naložite datoteko 512×512 – WordPress samodejno ustvari manjše velikosti. Za popoln nadzor lahko datoteke naložite neposredno v korenski imenik prek FTP.</p></div>"
+        },
+        {
+          "title": "HTML",
+          "icon": "RiHtml5Line",
+          "html": "<div><p class=\"text-mid mb-3\">Postavite generirane datoteke v korenski imenik spletnega mesta (kjer se nahaja index.html). Nato dodajte ustrezne oznake v sekcijo &lt;head&gt;:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">Zgornja koda je primer – prilagodite poti strukturi svojega spletnega mesta.</p></div>"
+        },
+        {
+          "title": "Next.js / React",
+          "icon": "RiReactjsLine",
+          "html": "<div><p class=\"text-mid mb-3\">V Next.js (App Router) favicon datoteke postavite v imenik <code>app/</code> ali <code>public/</code>:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> – samodejno prepoznan s strani Next.js</li><li><code>app/apple-icon.png</code> – ikona za Apple</li><li><code>public/</code> – ostale ikone (192×192, 512×512)</li></ul><p class=\"text-light\">Ikone lahko tudi konfigurirate v datoteki <code>layout.tsx</code> prek objekta <code>metadata.icons</code>.</p></div>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Katera izvorna slika deluje najbolje?",
+      "description": "Favicon je zelo majhna grafika – tudi samo 16×16 pikslov. Zato ni vsaka slika primerna kot vir:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShapeLine",
+          "title": "Preproste oblike in berljivi simboli",
+          "description": "Preprosti logotipi, posamezne črke ali simboli delujejo najbolje. Izogibajte se zapletenim grafikam z veliko podrobnostmi."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Kvadratni format",
+          "description": "Favicon je kvadraten. Če ima izvorna slika razmerje, ki ni 1:1, bo obrezana ali raztegnjena."
+        },
+        {
+          "icon": "RiZoomInLine",
+          "title": "Zadostna velikost",
+          "description": "Priporočamo izvorno sliko dimenzij vsaj 512×512 pikslov. Manjše slike bodo povečane."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "SVG kot idealen vir",
+          "description": "SVG se skalira brez izgube kakovosti, zato bodo ikone ostre v vseh velikostih."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "faq",
       "title": "Pogosta vprašanja o generatorju faviconov",
       "openByDefault": 1,

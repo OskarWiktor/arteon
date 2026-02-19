@@ -110,6 +110,25 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kako dodati sliko?",
+      "html": "<p class=\"text-mid\">Orodje sprejema slike v formatih JPG, PNG in WebP. Sliko lahko dodate na dva načina:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Povleci in spusti</strong> – primite datoteko iz mape in jo spustite na polje za dodajanje datotek (polje s prekinjenim okvirjem).</li><li><strong>Izbira z diska</strong> – po kliku na polje se odpre okno za izbiro datoteke z diska.</li></ul><p class=\"text-mid mt-3\">Po dodajanju slike orodje samodejno prebere njene izvirne dimenzije in prikaže predogled. Zdaj lahko nadaljujete z nastavitvami obrezovanja.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Nastavite ciljne dimenzije",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Dimenzije v px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Pripravljeni formati</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Širina (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly /></div><div><label class=\"text-[14px]! font-medium\">Višina (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly /></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\" /><span>Ohrani razmerje stranic (samodejna druga dimenzija)</span></label></div></div>",
+      "html": "<p class=\"text-mid\">V zavihku <strong>Dimenzije v px</strong> vnesete širino in višino ročno. Možnost <strong>Ohrani razmerje stranic</strong> samodejno prilagodi drugo dimenzijo.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Dimenzije slik za Instagram, Facebook in LinkedIn",
+      "html": "<p class=\"text-mid mb-4\">Orodje vsebuje pripravljene formate z optimalnimi dimenzijami za najpriljubljenejše platforme:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platforma</th><th class=\"py-2 pr-4 font-semibold\">Format</th><th class=\"py-2 pr-4 font-semibold\">Dimenzije (px)</th><th class=\"py-2 font-semibold\">Razmerje</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Kvadratna objava</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Pokončna objava</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Objava</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Naslovna slika</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Objava</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Profilni pasica</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG image</td><td class=\"py-2 pr-4\">Deljenje povezav</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "sectionSteps",
       "title": "Pripravljeni formati za družbena omrežja",
       "description": "Urejevalnik ponuja pripravljene formate za najpriljubljenejše platforme:",
@@ -151,6 +170,47 @@
       "type": "gap",
       "variant": "line"
     },
+    {
+      "type": "sectionInfo",
+      "title": "Kako obrezati sliko?",
+      "html": "<p class=\"text-mid\">Po nastavitvi ciljnih dimenzij se na predogledu prikaže interaktivno območje obrezovanja. Svetli del slike je del, ki bo shranjen – ostanek je zatemljen.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Vlečenje obreza</p><p class=\"text-mid mt-1\">Primite svetlo območje in ga povlecite na želeno mesto na sliki. Tako izberete, kateri del fotografije bo izvožen.</p></div><div><p class=\"text-dark font-semibold\">Spreminjanje velikosti z ročicami</p><p class=\"text-mid mt-1\">V kotih območja obrezovanja so majhni kvadratki (ročice). Z vlečenjem spreminjate velikost obreza ob ohranjanju izbranih razmerij.</p></div><div><p class=\"text-dark font-semibold\">Približevanje (zoom)</p><p class=\"text-mid mt-1\">V zavihku <strong>Približevanje</strong> najdete drsnik za regulacijo zooma (100–300 %). Višja vrednost pomeni, da obrez pokriva manjši del izvirne slike.</p></div><div><p class=\"text-dark font-semibold\">Natančna nastavitev položaja</p><p class=\"text-mid mt-1\">V zavihku <strong>Položaj</strong> lahko nastavite natančen položaj obreza v odstotkih (0–100 % za os X in Y). Gumbi za centriranje omogočajo hitro centriranje obreza.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Oblike obrezovanja",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Pravokotnik</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Kvadrat</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Krog</span></div></div>",
+      "html": "<p class=\"text-mid\">V zavihku <strong>Oblike obrezovanja</strong> izberete obliko izvožene slike: pravokotnik (z izbranimi razmerji), kvadrat (vsili 1:1) ali krog (s prozornim ozadjem).</p><p class=\"text-mid mt-3\">Oblika kroga ustvari okrogel avatar s prozornim ozadjem zunaj kroga. Orodje samodejno preklopi format na PNG ali WebP, ker JPG ne podpira prozornosti.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Mreža 3×3 – čemu služi?",
+      "html": "<p class=\"text-mid\">Na območju obrezovanja je vidna mreža, ki sliko razdeli na 9 enakih delov. To je vizualizacija <strong>pravila tretjin</strong> – enega od temeljnih pravil fotografske kompozicije.</p><p class=\"text-mid mt-3\">Pravilo pravi, da bi morali najpomembnejši elementi fotografije (obraz, izdelek, točka zanimanja) ležati na presečiščih črt mreže ali vzdolž njih. Takšna kompozicija je bolj dinamična in prijetna za oko, kot če objekt postavimo natančno na sredino.</p><p class=\"text-mid mt-3\">V zavihku <strong>Barva mreže</strong> lahko spremenite barvo črt (zelena, bela, črna, rdeča, rumena), da je mreža dobro vidna na različnih fotografijah.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTabs",
+      "title": "Izvoz – kateri format izbrati?",
+      "tabs": [
+        {
+          "title": "JPG",
+          "icon": "RiImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Najpriljubljenejši format za fotografije. Dobra kompresija ob ohranjanju vizualne kakovosti. Ne podpira prozornosti – ozadje bo vedno zapolnjeno z barvo.</p><p class=\"text-mid\">Dobra izbira za slike izdelkov, portrete in večino grafik za spletne strani. Drsnik kakovosti (60–100 %) nadzira kompresijo.</p></div>"
+        },
+        {
+          "title": "PNG",
+          "icon": "RiFileImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Brezizgubni format – ohranja polno kakovost, a datoteke so večje. Podpira prozornost (potreben za obliko kroga).</p><p class=\"text-mid\">Dobra izbira za grafike z besedilom, ikone in slike, ki zahtevajo ostre robove.</p></div>"
+        },
+        {
+          "title": "WebP",
+          "icon": "RiCropLine",
+          "html": "<div><p class=\"text-mid mb-3\">Sodoben format, ki združuje prednosti JPG in PNG – majhne datoteke, dobra kakovost, podpora za prozornost. Podprt v vseh sodobnih brskalnikih.</p><p class=\"text-mid\">Priporočen za spletne strani – manjše datoteke pomenijo hitrejše nalaganje.</p></div>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "sectionSteps",
       "title": "Kdo potrebuje urejevalnik slik?",

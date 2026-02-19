@@ -67,10 +67,48 @@
     },
     { "type": "gap", "variant": "line" },
     {
+      "type": "sectionInfo",
+      "title": "Kaip pridėti failus konvertavimui?",
+      "html": "<p class=\"text-mid\">Įrankis siūlo du būdus pridėti failus:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Vilkite ir numeskite</strong> – paimkite failus iš aplanko kompiuteryje ir numeskite juos ant srities su užrašu &quot;Vilkite ir numeskite paveikslėlius čia&quot;. Galite vilkti kelis failus vienu metu.</li><li><strong>Pasirinkite iš disko</strong> – paspaudus failų pridėjimo lauką atsidarys pasirinkimo langas. Laikydami Ctrl (arba Cmd Mac) galite pasirinkti kelis failus vienu metu.</li></ul><p class=\"text-mid mt-3\">Įrankis priima tik JPG ir PNG failus. Jei netyčia pridėsite failą kitu formatu (pvz., GIF arba BMP), jis bus automatiškai praleistas ir pamatysite informacinį pranešimą.</p><p class=\"text-mid mt-3\"><strong>Privatumas:</strong> Visi failai apdorojami lokaliai naršyklėje. Jie niekur nesiunčiami – nepatenka į jokį serverį. Uždarius skirtuką arba naršyklę failai ištrinami iš atminties.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Ką reiškia failų būsenos?",
+      "html": "<p class=\"text-mid\">Kiekvienas failas eilėje turi vieną iš keturių būsenų, informuojančių apie konvertavimo eigą:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Laukia</span><p class=\"text-mid\">Failas yra eilėje ir laukia apdorojimo. Konvertavimas dar neprasidėjo.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Apdorojama...</span><p class=\"text-mid\">Failas šiuo metu konvertuojamas. Daugumai paveikslėlių tai trunka sekundės dalį, bet labai dideli failai gali reikalauti kelių sekundžių.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Atlikta</span><p class=\"text-mid\">Konvertavimas sėkmingai baigtas. WebP failas paruoštas atsisiuntimui. Prie būsenos matysite ir informaciją apie dydį prieš ir po konvertavimo.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Klaida</span><p class=\"text-mid\">Kažkas nepavyko konvertavimo metu. Priežastis gali būti pažeistas šaltinio failas arba naršyklės atminties problema su labai dideliais paveikslėliais. Mygtukas &quot;Konvertuoti iš naujo&quot; leidžia bandyti dar kartą.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Kaip veikia Smart Quality?",
+      "html": "<p class=\"text-mid\">Smart Quality yra automatinis optimizavimo mechanizmas, užtikrinantis, kad rezultatas WebP failas niekada nebus didesnis nei originalas. Jis veikia taip:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>Įrankis konvertuoja paveikslėlį jūsų nustatyta kokybe (pvz., 80 %).</li><li>Patikrina, ar rezultatas failas mažesnis nei originalas.</li><li>Jei didesnis, automatiškai sumažina kokybę ir bando iš naujo.</li><li>Procesas kartojamas, kol rezultatas failas bus mažesnis arba kokybė nukris žemiau saugaus minimumo.</li></ol><p class=\"text-mid mt-3\">Įrankis automatiškai parenka optimalius nustatymus. Jei turite paveikslėlį, kuris jau stipriai suspaustas (pvz., JPG su kokybe 60 %), parametrai bus automatiškai pritaikyti, kad vis tiek būtų pasiekta dydžio ekonomija.</p><p class=\"text-mid mt-3\">Prie kiekvieno failo matysite informaciją &quot;Naudota WebP kokybė&quot; – tai tikroji kokybė, pritaikyta po galimo Smart Quality koregavimo.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "sectionDemo",
       "title": "Kaip pasirinkti tinkamą kokybę WebP formatui",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kokybė: 80</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Rekomenduojama</span></div><p class=\"text-mid text-sm!\">Geriausias kokybės ir failo dydžio santykis. Tinka daugumai internetinių ir e. parduotuvės paveikslėlių.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kokybė: 60–70</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Agresyvi kompresija</span></div><p class=\"text-mid text-sm!\">Mažesni failai. Tinka miniatiūroms, piktogramoms ir dekoratyviniams fonams.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kokybė: 90–100</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Aukščiausia kokybė</span></div><p class=\"text-mid text-sm!\">Labai aukšta kokybė, bet didesni failai. Tinka portfeliams ir pagrindiniams produktų paveikslėliams.</p></div></div>",
       "html": "<p class=\"text-mid\">Kokybės nustatymas nustato santykį tarp vizualinės kokybės ir failo dydžio. Daugumai internetinių paveikslėlių reikšmė 75–85 duoda geriausius rezultatus – kokybės skirtumas nėra matomas plika akimi, o failas gali būti 3–5 kartus mažesnis nei originalus JPG.</p><p class=\"text-mid mt-3\">Miniatiūroms, piktogramoms ir dekoratyviniams fonams galite sumažinti kokybę iki 60–70 neprarandant aštrumo. Portfelio paveikslėliams ar pagrindiniams produktų nuotraukoms reikšmė 90–95 išlaiko detales.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Kaip atsisiųsti konvertuotus failus?",
+      "variant": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium text-white\" disabled>Konvertuoti</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Atsisiųsti visus</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Atsisiųsti kaip ZIP</button></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled /><span class=\"text-mid pl-2 text-sm!\">Pridėti CSV ataskaitą į ZIP</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Įvesties dydis: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Dydis po konvertavimo: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">Sutaupyta: <strong class=\"text-success-icon\">1.5 MB (~63 %)</strong></p></div></div>",
+      "html": "<p class=\"text-mid\">Baigus konvertavimą turite kelias atsisiuntimo galimybes:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Atsisiųsti</strong> (prie kiekvieno failo) – atsisiunčia atskirą WebP failą.</li><li><strong>Atsisiųsti visus</strong> – atsisiunčia visus failus po vieną.</li><li><strong>Atsisiųsti kaip ZIP</strong> – sukuria archyvą su visais failais.</li></ul><p class=\"text-mid mt-3\"><strong>CSV ataskaita:</strong> Pridėkite konvertavimo suvestinės ataskaitą į ZIP archyvą.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Sutaupymų ataskaita – ką ji rodo?",
+      "html": "<p class=\"text-mid\">Po konvertavimo mygtukais rasite suvestinę su informacija apie sutaupymus:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Bendras įvesties dydis</strong> – visų originalių failų dydžių suma.</li><li><strong>Bendras dydis po konvertavimo</strong> – visų WebP failų dydžių suma.</li><li><strong>Sutaupyta</strong> – kiek vietos gavote konvertavimu (KB/MB ir procentais).</li></ul><p class=\"text-mid mt-3\"><strong>Kopijuoti suvestinę:</strong> Mygtukas nukopijuoja ataskaitą į iškarpinę tekstiniu formatu. Galite ją įklijuoti į užrašus, el. laišką ar dokumentą – naudinga dokumentuojant grafikų optimizavimą.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Kiek galima sutaupyti konvertuojant į WebP?",
+      "html": "<p class=\"text-mid mb-4\">Sutaupymai priklauso nuo paveikslėlio tipo ir jo originalios kompresijos. Žemiau pateikiami pavyzdiniai rezultatai tipiniams failams:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">JPG nuotrauka (fotoaparatas)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Sutaupymas: ~63 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">PNG grafika (logotipas)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Sutaupymas: ~75 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produkto nuotrauka</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Sutaupymas: ~63 %</p></div></div><p class=\"text-light mt-4 text-sm\">Tikri sutaupymai gali skirtis. Konverteris rodo tikslų dydį prieš ir po konvertavimo kiekvienam failui bei bendrą sutaupymų suvestinę.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
@@ -105,6 +143,35 @@
           "icon": "RiScalesLine",
           "title": "Reguliuojamas kokybės reguliatorius",
           "description": "Pritaikykite kokybę (0–100) kiekvienam paveikslėliui ir gaukite geriausią dydžio ir kokybės santykį."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Į ką atkreipti dėmesį?",
+      "description": "Keletas patarimų, padėsiančių išvengti problemų konvertavimo metu:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Labai dideli failai",
+          "description": "Paveikslėlių, kurių rezoliucija viršija 4000×4000 pikselių, konvertavimas gali būti lėtesnis ir apkrauti naršyklę. Jei apdorojate daug didelių failų, apsvarstykite jų padalijimą į partijas."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Jau suspausti paveikslėliai",
+          "description": "Jei originalus JPG buvo išsaugotas labai žema kokybe, konvertavimas į WebP gali neduoti didelių sutaupymų. Kraštutiniais atvejais WebP failas gali būti net didesnis – tuomet Smart Quality automatiškai sumažins kokybę."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "PNG formatas su permatomumu",
+          "description": "WebP palaiko permatomumą, todėl PNG failai su alfa kanalu bus konvertuoti teisingai. Tačiau dydžio sutaupymas PNG su permatomumu gali būti mažesnis nei įprastoms JPG nuotraukoms."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Suderinamumas su naršyklėmis",
+          "description": "Visos modernios naršyklės (Chrome, Firefox, Safari 14+, Edge) palaiko WebP. Jei svetainė turi veikti senesnėse naršyklėse, galite naudoti žymą &lt;picture&gt; su alternatyviu JPG/PNG šaltiniu."
         }
       ]
     },

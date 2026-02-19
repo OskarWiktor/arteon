@@ -67,10 +67,48 @@
     },
     { "type": "gap", "variant": "line" },
     {
+      "type": "sectionInfo",
+      "title": "Jinsi ya kuongeza faili kwa ubadilishaji?",
+      "html": "<p class=\"text-mid\">Chombo kinatoa njia mbili za kuongeza faili:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Buruta na udondoshe</strong> – shika faili kutoka folda kwenye kompyuta na uzidondoshe kwenye eneo lenye maandishi &quot;Buruta na udondoshe picha hapa&quot;. Unaweza kuburuta faili kadhaa kwa wakati mmoja.</li><li><strong>Chagua kutoka diski</strong> – ukibonyeza sehemu ya kuongeza faili, dirisha la kuchagua litafunguka. Shikilia Ctrl (au Cmd kwenye Mac) ili kuchagua faili kadhaa kwa wakati mmoja.</li></ul><p class=\"text-mid mt-3\">Chombo kinakubali faili za JPG na PNG pekee. Ukiongeza faili katika muundo mwingine kwa bahati mbaya (k.m. GIF au BMP), itarukwa moja kwa moja na utaona ujumbe wa taarifa.</p><p class=\"text-mid mt-3\"><strong>Faragha:</strong> Faili zote zinashughulikiwa ndani ya kivinjari. Hazitumwi popote – hazifiki seva yoyote. Baada ya kufunga kichupo au kivinjari, faili zinafutwa kutoka kumbukumbu.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Hali za faili zinamaanisha nini?",
+      "html": "<p class=\"text-mid\">Kila faili katika foleni ina hali moja kati ya nne zinazojulisha kuhusu maendeleo ya ubadilishaji:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Inasubiri</span><p class=\"text-mid\">Faili iko kwenye foleni na inasubiri kushughulikiwa. Ubadilishaji bado haujaanza.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Inashughulikiwa...</span><p class=\"text-mid\">Faili inabadilishwa sasa hivi. Kwa picha nyingi huchukua sehemu ya sekunde, lakini faili kubwa sana zinaweza kuhitaji sekunde kadhaa.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Imekamilika</span><p class=\"text-mid\">Ubadilishaji umekamilika kwa mafanikio. Faili ya WebP iko tayari kupakuliwa. Kando ya hali utaona pia taarifa kuhusu ukubwa kabla na baada ya ubadilishaji.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Hitilafu</span><p class=\"text-mid\">Kitu kimekwenda vibaya wakati wa ubadilishaji. Sababu inaweza kuwa faili chanzo iliyoharibika au tatizo la kumbukumbu ya kivinjari na picha kubwa sana. Kitufe &quot;Badilisha tena&quot; kinakuwezesha kujaribu tena.</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Smart Quality inafanyaje kazi?",
+      "html": "<p class=\"text-mid\">Smart Quality ni utaratibu wa kiotomatiki wa kuboresha ambao unahakikisha kwamba faili ya WebP inayotokana kamwe haitakuwa kubwa kuliko ya asili. Inafanya kazi hivi:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>Chombo kinabadilisha picha kwa ubora ulioweka (k.m. 80 %).</li><li>Kinaangalia kama faili inayotokana ni ndogo kuliko ya asili.</li><li>Ikiwa ni kubwa zaidi, ubora unapunguzwa kiotomatiki na kujaribu tena.</li><li>Mchakato unarudiwa hadi faili inayotokana iwe ndogo au ubora ushuke chini ya kiwango salama cha chini.</li></ol><p class=\"text-mid mt-3\">Chombo kinachagua mipangilio bora kiotomatiki. Ukiwa na picha ambayo tayari imeshibanwa sana (k.m. JPG yenye ubora wa 60 %), vigezo vitarekebishwa kiotomatiki ili bado kufikia uokoaji wa ukubwa.</p><p class=\"text-mid mt-3\">Kando ya kila faili utaona taarifa &quot;Ubora wa WebP uliotumika&quot; – huo ni ubora halisi unaotumika baada ya marekebisho ya Smart Quality yanayoweza kutokea.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "sectionDemo",
       "title": "Jinsi ya kuchagua ubora unaofaa kwa WebP",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Ubora: 80</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Inapendekezwa</span></div><p class=\"text-mid text-sm!\">Uwiano bora kati ya ubora na ukubwa wa faili. Inafaa kwa picha nyingi za tovuti na duka.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Ubora: 60\u201370</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Ubano mkali</span></div><p class=\"text-mid text-sm!\">Faili ndogo zaidi. Inafaa kwa picha ndogo ndogo, ikoni, na mandharinyuma ya mapambo.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Ubora: 90\u2013100</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Ubora wa juu zaidi</span></div><p class=\"text-mid text-sm!\">Ubora wa juu sana, lakini faili kubwa zaidi. Inafaa kwa picha za portfolio na picha za bidhaa zinazohitajika.</p></div></div>",
       "html": "<p class=\"text-mid\">Mpangilio wa ubora huamua uwiano kati ya ubora wa kuonekana na ukubwa wa faili. Kwa picha nyingi za tovuti, thamani ya 75\u201385 hutoa matokeo bora \u2013 tofauti ya ubora haionekani kwa jicho, na faili zinaweza kuwa ndogo mara 3\u20135 kuliko JPG ya asili.</p><p class=\"text-mid mt-3\">Kwa picha ndogo ndogo, ikoni, na mandharinyuma ya mapambo, unaweza kupunguza ubora hadi 60\u201370 bila kupoteza ubainifu. Kwa picha za portfolio au picha za bidhaa zinazohitajika, thamani ya 90\u201395 itahifadhi maelezo.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "Jinsi ya kupakua faili zilizobadilishwa?",
+      "variant": "left",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium text-white\" disabled>Badilisha</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Pakua zote</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Pakua kama ZIP</button></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled /><span class=\"text-mid pl-2 text-sm!\">Ambatisha ripoti ya CSV katika ZIP</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Ukubwa wa kuingiza: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Ukubwa baada ya ubadilishaji: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">Imeokolewa: <strong class=\"text-success-icon\">1.5 MB (~63 %)</strong></p></div></div>",
+      "html": "<p class=\"text-mid\">Baada ya ubadilishaji kukamilika, una chaguo kadhaa za kupakua:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Pakua</strong> (kando ya kila faili) – inapakua faili moja ya WebP.</li><li><strong>Pakua zote</strong> – inapakua faili zote moja baada ya nyingine.</li><li><strong>Pakua kama ZIP</strong> – inaunda kumbukumbu na faili zote.</li></ul><p class=\"text-mid mt-3\"><strong>Ripoti ya CSV:</strong> Ambatisha ripoti yenye muhtasari wa ubadilishaji katika kumbukumbu ya ZIP.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Ripoti ya uokoaji – inaonyesha nini?",
+      "html": "<p class=\"text-mid\">Chini ya vitufe vya ubadilishaji utapata muhtasari na taarifa za uokoaji:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Jumla ya ukubwa wa kuingiza</strong> – jumla ya ukubwa wa faili zote za asili.</li><li><strong>Jumla ya ukubwa baada ya ubadilishaji</strong> – jumla ya ukubwa wa faili zote za WebP.</li><li><strong>Imeokolewa</strong> – nafasi uliyopata kwa ubadilishaji (katika KB/MB na asilimia).</li></ul><p class=\"text-mid mt-3\"><strong>Nakili muhtasari:</strong> Kitufe kinakili ripoti kwenye ubao wa kunakili katika muundo wa maandishi. Unaweza kuibandika kwenye maelezo, barua pepe au hati – muhimu kwa kurekodi uboreshaji wa picha.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Ni kiasi gani kinaweza kuokolewa kwa kubadilisha kuwa WebP?",
+      "html": "<p class=\"text-mid mb-4\">Uokoaji unategemea aina ya picha na ubano wake wa asili. Hapa chini ni mifano ya matokeo kwa faili za kawaida:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Picha ya JPG (kamera)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uokoaji: ~63 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Picha ya PNG (nembo)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uokoaji: ~75 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Picha ya bidhaa</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uokoaji: ~63 %</p></div></div><p class=\"text-light mt-4 text-sm\">Uokoaji halisi unaweza kutofautiana. Kibadilishaji kinaonyesha ukubwa halisi kabla na baada ya ubadilishaji kwa kila faili na muhtasari wa jumla ya uokoaji.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
@@ -107,6 +145,35 @@
         { "icon": "RiSpeedLine", "title": "Ubadilishaji wa papo hapo", "description": "Matokeo yanapatikana mara moja \u2013 hakuna kusubiri kwenye foleni au usindikaji wa seva." },
         { "icon": "RiInfinityLine", "title": "Bila kikomo cha picha", "description": "Badilisha picha nyingi kama unavyohitaji. Hakuna kikomo cha kila siku au kwa kila kipindi." },
         { "icon": "RiScalesLine", "title": "Kitelezi cha ubora kinachoweza kubadilishwa", "description": "Weka ubora (0\u2013100) kwa kila picha ili kupata uwiano bora kati ya ukubwa na ubora." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Nini cha kuzingatia?",
+      "description": "Vidokezo kadhaa vinavyosaidia kuepuka matatizo wakati wa ubadilishaji:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Faili kubwa sana",
+          "description": "Kubadilisha picha zenye azimio zaidi ya 4000×4000 pikseli kunaweza kuwa polepole zaidi na kulemea kivinjari. Ukishughulikia faili nyingi kubwa, fikiria kuzigawanya katika makundi."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Picha zilizoshibanwa tayari",
+          "description": "Ikiwa JPG ya asili ilihifadhiwa kwa ubora wa chini sana, kubadilisha kuwa WebP huenda hakutaokoa sana. Katika hali za kupindukia, faili ya WebP inaweza kuwa kubwa zaidi – hapo Smart Quality itapunguza ubora kiotomatiki."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Muundo wa PNG wenye uwazi",
+          "description": "WebP inasaidia uwazi, kwa hivyo faili za PNG zenye njia ya alfa zitabadilishwa ipasavyo. Hata hivyo, uokoaji wa ukubwa kwa PNG yenye uwazi unaweza kuwa mdogo kuliko picha za kawaida za JPG."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Utangamano na vivinjari",
+          "description": "Vivinjari vyote vya kisasa (Chrome, Firefox, Safari 14+, Edge) vinasaidia WebP. Ikiwa tovuti inahitaji kufanya kazi kwenye vivinjari vya zamani, unaweza kutumia lebo ya &lt;picture&gt; na chanzo mbadala cha JPG/PNG."
+        }
       ]
     },
     { "type": "gap", "variant": "line" },
