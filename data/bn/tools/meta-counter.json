@@ -1,5 +1,5 @@
 {
-  "toolKey": "metaTitleCounter",
+  "toolKey": "metaCounter",
   "locale": "bn",
   "metadata": {
     "title": "বিনামূল্যে মেটা টাইটেল ও ডেসক্রিপশন চেকার – পিক্সেল প্রস্থ",
@@ -69,6 +69,122 @@
         {
           "title": "3. প্রিভিউ দেখুন",
           "description": "Google SERP প্রিভিউতে দেখুন সার্চ রেজাল্টে আপনার পেজ কেমন দেখাবে।"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "মেটা টাইটেল ও ডেসক্রিপশন কত অক্ষর হওয়া উচিত?",
+      "html": "<p class=\"text-mid mb-4\">Google অতিরিক্ত লম্বা টাইটেল ও ডেসক্রিপশন কেটে দেয়। নিচের সুপারিশকৃত সীমা টেক্সট কাটা যাওয়ার ঝুঁকি কমায়।</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">এলিমেন্ট</th><th class=\"py-2 pr-4 font-semibold\">অক্ষর</th><th class=\"py-2 pr-4 font-semibold\">পিক্সেল</th><th class=\"py-2 font-semibold\">মন্তব্য</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">মেটা টাইটেল</td><td class=\"py-2 pr-4 whitespace-nowrap\">50-60 অক্ষর</td><td class=\"py-2 pr-4 whitespace-nowrap\">~580 px পর্যন্ত</td><td class=\"text-primary-light0 py-2 text-sm\">গুরুত্বপূর্ণ শব্দ শুরুতে রাখুন। ব্র্যান্ডের নাম শেষে।</td></tr><tr><td class=\"py-2 pr-4 font-medium\">মেটা ডেসক্রিপশন</td><td class=\"py-2 pr-4 whitespace-nowrap\">120-160 অক্ষর</td><td class=\"py-2 pr-4 whitespace-nowrap\">~920 px পর্যন্ত</td><td class=\"text-primary-light0 py-2 text-sm\">2-3টি ছোট বাক্য। কল টু অ্যাকশন দিয়ে শেষ করুন।</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">এগুলো আনুমানিক মান — Google সুনির্দিষ্ট সীমা প্রকাশ করে না এবং ডিভাইস ও কোয়েরির উপর নির্ভর করে পরিবর্তন করতে পারে।</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "ফলাফল কীভাবে ব্যাখ্যা করবেন?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">মেটা টাইটেল</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">অক্ষর: <strong>52</strong></span><span class=\"text-mid\">শব্দ: <strong>7</strong></span><span class=\"text-mid\">পিক্সেল: <strong>456px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text mt-2\">ভালো দৈর্ঘ্য</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">মেটা ডেসক্রিপশন</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">অক্ষর: <strong>142</strong></span><span class=\"text-mid\">শব্দ: <strong>21</strong></span><span class=\"text-mid\">পিক্সেল: <strong>812px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text mt-2\">ভালো দৈর্ঘ্য</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">টুলটি প্রতিটি ফিল্ডের জন্য তিনটি মেট্রিক ও রঙিন স্ট্যাটাস দেখায়:</p><h3 class=\"h5 mt-6 mb-2\">মেট্রিক</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>অক্ষর</strong> — স্পেসসহ মোট অক্ষর সংখ্যা।</li><li><strong>শব্দ</strong> — টেক্সটের শব্দ সংখ্যা।</li><li><strong>প্রস্থ (px)</strong> — পিক্সেলে টেক্সটের প্রস্থ। Google আসলে এটি দিয়ে কাটে।</li></ul><h3 class=\"h5 mt-6 mb-2\">মূল্যায়ন স্ট্যাটাস</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">ভালো দৈর্ঘ্য</strong> (সবুজ) — সুপারিশকৃত সীমায় আছে। Google সম্পূর্ণ দেখানো উচিত।</li><li><strong class=\"text-warning-text\">খুব ছোট</strong> (হলুদ) — টেক্সট খুব ছোট। আরো তথ্য যোগ করার সুযোগ আছে।</li><li><strong class=\"text-error-text\">খুব লম্বা</strong> (লাল) — সুপারিশকৃত সীমা ছাড়িয়ে গেছে। Google সম্ভবত কাটবে।</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "পিক্সেল প্রস্থ কেন অক্ষর সংখ্যার চেয়ে বেশি গুরুত্বপূর্ণ?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">iiiiiiiiiiiiiiii (16 অক্ষর)</p><div class=\"bg-success-icon mt-1 h-3 w-1/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~64px প্রস্থ</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">WWWWWWWWWWWWWWWW (16 অক্ষর)</p><div class=\"bg-error-icon mt-1 h-3 w-3/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~256px প্রস্থ</p></div></div>",
+      "html": "<p class=\"text-mid\">ভিন্ন অক্ষরের ভিন্ন প্রস্থ আছে। &quot;iiii&quot; ও &quot;WWWW&quot; তুলনা করুন — দুটোতেই 4 অক্ষর, কিন্তু ভিজ্যুয়াল প্রস্থ সম্পূর্ণ আলাদা। Google পিক্সেলে টেক্সটের প্রস্থ মাপে, অক্ষর সংখ্যায় নয়।</p><p class=\"text-mid mt-3\">তাই সরু অক্ষরের (i, l, t, f) টাইটেল চওড়া অক্ষরের (W, M, O) টাইটেলের চেয়ে বেশি অক্ষর হতে পারে, একই অক্ষর সংখ্যা সত্ত্বেও। টুলটি দুটো মান দেখায়: অক্ষর সংখ্যা (সহজে বোঝা যায়) ও পিক্সেল প্রস্থ (Google এর জন্য সঠিক)।</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "স্নিপেট প্রিভিউ — এটি কী দেখায়?",
+      "html": "<p class=\"text-mid\">স্নিপেট প্রিভিউ দেখায় Google সার্চ রেজাল্টে আপনার টাইটেল ও ডেসক্রিপশন কেমন দেখাবে। এটি আনুমানিক ভিজ্যুয়ালাইজেশন — প্রকৃত চেহারা ডিভাইস ও ব্রাউজার অনুযায়ী কিছুটা আলাদা হতে পারে।</p><h3 class=\"h5 mt-6 mb-2\">প্রিভিউ এলিমেন্ট</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> — টাইটেলের উপরে পেজের ঠিকানা। ঐচ্ছিক ফিল্ডে লিখলে প্রিভিউ আরো বাস্তব হয়।</li><li><strong>টাইটেল</strong> — নীল হেডিং। খুব লম্বা হলে টুল স্বয়ংক্রিয়ভাবে কাটে ও বিন্দু যোগ করে।</li><li><strong>ডেসক্রিপশন</strong> — টাইটেলের নিচে ধূসর টেক্সট। সীমা ছাড়ালে এটিও কাটা হয়।</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "সাধারণ সমস্যা ও সমাধান",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "টাইটেল খুব লম্বা",
+          "description": "গুরুত্বপূর্ণ শব্দ শুরুতে রেখে সংক্ষিপ্ত করুন। &quot;সেরা&quot;, &quot;পেশাদার&quot; এর মতো অতিরিক্ত বিশেষণ বাদ দিন। ব্র্যান্ডের নাম সেপারেটরের পর শেষে রাখুন।"
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "ডেসক্রিপশন খুব ছোট",
+          "description": "আরো তথ্য যোগ করুন: ব্যবহারকারী পেজে কী পাবে, কী সুবিধা পাবে, অফারটি কেন আলাদা। কল টু অ্যাকশন দিয়ে শেষ করুন।"
+        },
+        {
+          "icon": "RiRuler2Line",
+          "title": "পিক্সেল প্রস্থ প্রত্যাশার চেয়ে আলাদা",
+          "description": "টুলটি Google এর ফন্টের কাছাকাছি স্ট্যান্ডার্ড ফন্ট দিয়ে প্রস্থ মাপে। ব্রাউজার অনুযায়ী ফলাফল সামান্য আলাদা হতে পারে।"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "মেটা ট্যাগ চেকার কাদের জন্য?",
+      "description": "ওয়েবসাইটের জন্য কন্টেন্ট তৈরি করা প্রত্যেকের কাজে লাগে:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "ওয়েবসাইট ও শপ মালিক",
+          "description": "নতুন পেজ বা পণ্য প্রকাশের আগে টাইটেল ও ডেসক্রিপশন Google রেজাল্টে কাটা যাবে কি না পরীক্ষা করেন।"
+        },
+        {
+          "icon": "RiSearchLine",
+          "title": "SEO বিশেষজ্ঞ",
+          "description": "ভিন্ন ভিন্ন টাইটেল ও ডেসক্রিপশন ভ্যারিয়েন্ট পরীক্ষা করেন, সার্চ রেজাল্ট প্রিভিউ দেখেন ও সুপারিশ মেনে চলেন।"
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "কন্টেন্ট রাইটার",
+          "description": "সীমার মধ্যে থেকে ক্লিক আকর্ষণকারী টাইটেল ও ডেসক্রিপশন লেখেন।"
+        },
+        {
+          "icon": "RiMegaphoneLine",
+          "title": "মার্কেটার",
+          "description": "ক্যাম্পেইন ও ল্যান্ডিং পেজের মেটা ট্যাগ তৈরি করেন, অর্গানিক রেজাল্টে CTR অপ্টিমাইজ করেন।"
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "ডেভেলপার",
+          "description": "প্রোডাকশনে ডিপ্লয়ের আগে মেটা ট্যাগ ভেরিফাই করেন।"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "এই মেটা টাইটেল ও ডেসক্রিপশন চেকারের বিশেষত্ব কী?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRuler2Line",
+          "title": "পিক্সেলে পরিমাপ",
+          "description": "শুধু অক্ষর গণনা নয়, Google যেভাবে করে সেভাবে পিক্সেলে টেক্সটের প্রকৃত প্রস্থ মাপে।"
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Google প্রিভিউ",
+          "description": "পেজ প্রকাশের আগেই সার্চ রেজাল্টে টাইটেল ও ডেসক্রিপশন কেমন দেখাবে দেখুন।"
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "রঙিন মূল্যায়ন",
+          "description": "তৎক্ষণাৎ জানুন টেক্সট খুব ছোট, সঠিক না খুব লম্বা।"
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "পিক্সেল ও অক্ষর একসাথে",
+          "description": "দুটো মানই একসাথে দেখায় — অক্ষর ও পিক্সেল উভয় সীমায় আছে কি না তুলনা করুন।"
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "টাইটেল ও ডেসক্রিপশন একই ভিউতে",
+          "description": "ট্যাব পরিবর্তন ছাড়াই টাইটেল ও ডেসক্রিপশন একসাথে পরীক্ষা করুন।"
         }
       ]
     },

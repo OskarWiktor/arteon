@@ -1078,7 +1078,7 @@ const EVAL_UI: Record<Locale, EvalUi> = {
       statusIdeal: '\u2705 ভালো দৈর্ঘ্য',
       statusShort: '\u26a0\ufe0f খুব ছোট',
       statusLong: '\u26a0\ufe0f খুব লম্বা',
-      generatedBy: 'তৈরি করেছে: arteonagency.pl/bn/yantra/shobdo-gonona',
+      generatedBy: 'তৈরি করেছে: arteonagency.pl/bn/yantra/shobdo-gonok',
     },
   },
 };

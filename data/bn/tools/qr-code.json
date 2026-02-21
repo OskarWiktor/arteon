@@ -110,6 +110,82 @@
     },
     { "type": "gap", "variant": "line" },
     {
+      "type": "sectionDemo",
+      "title": "QR কোডের প্রযুক্তিগত বিবরণ",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">ধারণক্ষমতা</span><span class=\"text-mid text-sm!\">4296 অক্ষর পর্যন্ত</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">এরর কারেকশন</span><span class=\"text-mid text-sm!\">7% – 30%</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">ন্যূনতম প্রিন্ট সাইজ</span><span class=\"text-mid text-sm!\">2 × 2 সেমি</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">ন্যূনতম কনট্রাস্ট</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">মার্জিন</span><span class=\"text-mid text-sm!\">ন্যূনতম 4 মডিউল</span></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">প্রযুক্তিগত প্যারামিটার জানলে সব পরিস্থিতিতে পাঠযোগ্য QR কোড তৈরি করা সহজ:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>ডেটা ধারণক্ষমতা</strong> — QR কোড সর্বোচ্চ 7089 সংখ্যা, 4296 আলফানিউমেরিক অক্ষর বা 2953 বাইট বাইনারি ডেটা ধারণ করতে পারে। URL ও vCard এর জন্য এই ধারণক্ষমতা যথেষ্টের চেয়ে বেশি।</li><li><strong>Reed-Solomon এরর কারেকশন</strong> — গাণিতিক অ্যালগরিদম যা কোডের অংশ ক্ষতিগ্রস্ত বা ঢাকা থাকলেও পড়তে দেয়। স্তর: L (7%), M (15%), Q (25%), H (30%)।</li><li><strong>মার্জিন</strong> — কোডের চারপাশে সাদা এলাকা যা সঠিক স্ক্যানিংয়ের জন্য প্রয়োজনীয়। সুপারিশকৃত ন্যূনতম 4 মডিউল (কোড ইউনিট)।</li><li><strong>প্রিন্টের ন্যূনতম সাইজ</strong> — স্ট্যান্ডার্ড স্ক্যানিং দূরত্বে কোড কমপক্ষে 2x2 সেমি হওয়া উচিত।</li><li><strong>কনট্রাস্ট</strong> — কোড ও ব্যাকগ্রাউন্ডের কনট্রাস্ট অনুপাত কমপক্ষে 3:1 হওয়া উচিত। জেনারেটর কম কনট্রাস্টে স্বয়ংক্রিয়ভাবে সতর্ক করে।</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "QR কোডের ব্যবহার — বিজনেস কার্ড, ফ্লায়ার, রেস্তোরাঁ মেনু",
+      "description": "QR কোড বিভিন্ন শিল্প ও পরিস্থিতিতে ব্যবহৃত হয়:",
+      "grid": "three",
+      "items": [
+        { "icon": "RiContactsBookLine", "title": "বিজনেস কার্ড", "description": "কার্ডে vCard কোড দিয়ে প্রাপক একটি স্ক্যানে যোগাযোগ সেভ করতে পারে, ম্যানুয়ালি লেখার দরকার নেই।" },
+        { "icon": "RiRestaurantLine", "title": "রেস্তোরাঁ ও ক্যাফে মেনু", "description": "টেবিলে QR কোড ডিজিটাল মেনুতে নিয়ে যায়। COVID-19 এর পর জনপ্রিয় স্বাস্থ্যকর সমাধান।" },
+        { "icon": "RiPrinterLine", "title": "ফ্লায়ার ও পোস্টার", "description": "পণ্যের পেজ, রেজিস্ট্রেশন ফর্ম বা স্পেশাল অফারের লিঙ্কসহ QR কোড।" },
+        { "icon": "RiBuilding2Line", "title": "পণ্যের প্যাকেজিং", "description": "ব্যবহার নির্দেশিকা, ওয়ারেন্টি কার্ড বা প্রস্তুতকারকের পেজের লিঙ্ক।" },
+        { "icon": "RiShoppingCartLine", "title": "ই-কমার্স", "description": "প্যাকেজে রিটার্ন নির্দেশনা, কাস্টমার রিভিউ বা লয়ালটি প্রোগ্রামের লিঙ্কসহ কোড।" },
+        { "icon": "RiCalendarEventLine", "title": "ইভেন্ট ও কনফারেন্স", "description": "প্রবেশদ্বারে দ্রুত যাচাইয়ের জন্য QR কোডসহ টিকেট।" }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "QR কোডের চেহারা কাস্টমাইজেশন",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">সাইজ</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">মার্জিন</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">কোড রং</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">ব্যাকগ্রাউন্ড রং</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">জেনারেটরে কোডের চেহারা ও পাঠযোগ্যতা প্রভাবিত করে এমন কয়েকটি প্যারামিটার সমন্বয় করা যায়:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>সাইজ (px)</strong> — পিক্সেলে কোডের মাপ। স্ট্যান্ডার্ড প্রিন্টের জন্য (ফ্লায়ার, কার্ড) 300-500 px বেছে নিন। ডিজিটাল ব্যবহারে 150-200 px যথেষ্ট।</li><li><strong>মার্জিন</strong> — কোডের চারপাশে সাদা এলাকা। সুপারিশকৃত মান 2-4। 0 মান গাঢ় ব্যাকগ্রাউন্ডে স্ক্যানিং কঠিন করতে পারে।</li><li><strong>QR কোড রং</strong> — ডিফল্ট কালো (#000000)। ব্র্যান্ড আইডেন্টিটির সাথে মিলিয়ে যেকোনো গাঢ় রং দিতে পারেন।</li><li><strong>ব্যাকগ্রাউন্ড রং</strong> — ডিফল্ট সাদা (#ffffff)। যেকোনো হালকা রং দিতে পারেন। কনট্রাস্ট কম হলে জেনারেটর সতর্ক করবে।</li></ul><p class=\"text-mid mt-3\"><strong>পরামর্শ:</strong> কোড ও ব্যাকগ্রাউন্ডের মধ্যে উচ্চ কনট্রাস্ট (ন্যূনতম 3:1) বজায় রাখুন। হালকা ব্যাকগ্রাউন্ডে গাঢ় কোড সবচেয়ে সহজে স্ক্যান হয়।</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "এরর কারেকশন স্তর — L, M, Q, H",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Low / নিম্ন)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Medium / মধ্যম)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Quartile / উচ্চ)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (High / সর্বোচ্চ)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">এরর কারেকশন হলো এমন মেকানিজম যা QR কোডের অংশ ক্ষতিগ্রস্ত, নোংরা বা ঢাকা থাকলেও পড়তে দেয়। জেনারেটর QR কোডের স্ট্যান্ডার্ড Reed-Solomon অ্যালগরিদম ব্যবহার করে।</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Low / নিম্ন) — 7%</strong> — সবচেয়ে কম রিডান্ড্যান্সি, কোড সবচেয়ে কমপ্যাক্ট। আদর্শ পরিস্থিতিতে (স্ক্রিন, উচ্চ মানের প্রিন্ট) ব্যবহারের জন্য।</li><li><strong>M (Medium / মধ্যম) — 15%</strong> — ডিফল্ট মান, ধারণক্ষমতা ও স্থায়িত্বের ভালো ভারসাম্য। বেশিরভাগ ব্যবহারে উপযুক্ত।</li><li><strong>Q (Quartile / উচ্চ) — 25%</strong> — ক্ষতির বিরুদ্ধে বেশি স্থায়িত্ব। নোংরা হওয়ার সম্ভাবনাযুক্ত সামগ্রীতে প্রিন্টের জন্য।</li><li><strong>H (High / সর্বোচ্চ) — 30%</strong> — সর্বোচ্চ স্থায়িত্ব। বাইরের সামগ্রী, প্যাকেজিং ও কোড আংশিক ঢাকা পড়ার পরিস্থিতিতে (যেমন মাঝে লোগো) সুপারিশকৃত।</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PNG বনাম SVG — প্রিন্টের জন্য কোন ফরম্যাট?",
+      "plans": [
+        { "id": "png", "name": "PNG (র‍্যাস্টার)" },
+        { "id": "svg", "name": "SVG (ভেক্টর)", "highlighted": true }
+      ],
+      "features": [
+        { "name": "ওয়েবসাইট ও সোশ্যাল মিডিয়া", "values": { "png": true, "svg": true } },
+        { "name": "ফ্লায়ার ও বিজনেস কার্ড", "values": { "png": true, "svg": true } },
+        { "name": "পোস্টার ও ব্যানার (বড় ফরম্যাট)", "values": { "png": false, "svg": true } },
+        { "name": "মান না হারিয়ে স্কেলিং", "values": { "png": false, "svg": true } },
+        { "name": "গ্রাফিক্স প্রোগ্রামে এডিটিং", "values": { "png": false, "svg": true } },
+        { "name": "ছোট ফাইল সাইজ", "values": { "png": false, "svg": true } },
+        { "name": "প্রেজেন্টেশন", "values": { "png": true, "svg": true } }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "QR কোড প্রিন্টের পরামর্শ",
+      "description": "প্রিন্টের পর QR কোড পাঠযোগ্য রাখতে কয়েকটি নিয়ম মানুন:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRulerLine",
+          "title": "ন্যূনতম সাইজ",
+          "description": "কাছ থেকে স্ক্যানের জন্য কোড কমপক্ষে 2x2 সেমি হওয়া উচিত। স্ক্যানিং দূরত্ব যত বেশি, কোড তত বড় হতে হবে।"
+        },
+        { "icon": "RiContrastLine", "title": "কনট্রাস্ট", "description": "হালকা ব্যাকগ্রাউন্ডে গাঢ় কোড। প্যাস্টেল রং ও কম কনট্রাস্ট এড়িয়ে চলুন।" },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "কোডের চারপাশে মার্জিন",
+          "description": "কোডের চারপাশে খালি জায়গা রাখুন। অন্য গ্রাফিক এলিমেন্ট খুব কাছে রাখবেন না — মার্জিন সঠিক স্ক্যানিংয়ের জন্য জরুরি।"
+        },
+        { "icon": "RiEyeLine", "title": "পরীক্ষা", "description": "বড় পরিমাণে প্রিন্টের আগে বিভিন্ন ফোনে ও আলোর পরিস্থিতিতে কোড পরীক্ষা করুন।" },
+        { "icon": "RiShieldCheckLine", "title": "কারেকশন স্তর", "description": "বাইরের প্রিন্ট ও ক্ষতির সম্ভাবনাযুক্ত সামগ্রীর জন্য Q বা H স্তর বেছে নিন।" }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "sectionSteps",
       "title": "এই QR কোড জেনারেটর কেন আলাদা?",
       "grid": "two",

@@ -392,7 +392,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     toolsIndexHref: '/bn/yantra',
     aboutHref: '/bn/amader-somporke',
     contactHref: '/bn/jogajog',
-    privacyHref: '/bn/goponioyota-niti',
+    privacyHref: '/bn/goponeeyota-neeti',
   },
 };
 

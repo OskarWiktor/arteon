@@ -81,6 +81,123 @@
     },
     { "type": "gap", "variant": "line" },
     {
+      "type": "sectionTabs",
+      "title": "কোন কালার ফরম্যাট সমর্থিত?",
+      "tabs": [
+        {
+          "title": "HEX",
+          "icon": "RiHashtag",
+          "html": "<div><p class=\"text-mid mb-3\">হেক্সাডেসিমাল ফরম্যাট — ওয়েব ডিজাইনে সবচেয়ে জনপ্রিয়। <code class=\"rounded bg-black/5 px-1\">#</code> চিহ্ন দিয়ে শুরু হয় এবং 3 বা 6 অক্ষর (0-9 ও A-F) থাকে।</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">#fff</code> — সাদা (সংক্ষিপ্ত)</li><li><code class=\"rounded bg-black/5 px-1\">#ffffff</code> — সাদা (পূর্ণ)</li><li><code class=\"rounded bg-black/5 px-1\">#1a73e8</code> — নীল</li></ul></div>"
+        },
+        {
+          "title": "RGB / RGBA",
+          "icon": "RiPaletteLine",
+          "html": "<div><p class=\"text-mid mb-3\">তিনটি চ্যানেলের উপর ভিত্তি করে: লাল (Red), সবুজ (Green), নীল (Blue)। প্রতিটি চ্যানেল 0 থেকে 255 মান নেয়। RGBA ভ্যারিয়েন্টে চতুর্থ প্যারামিটার — স্বচ্ছতা (alpha) 0 থেকে 1।</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">rgb(255, 255, 255)</code> — সাদা</li><li><code class=\"rounded bg-black/5 px-1\">rgba(0, 0, 0, 0.8)</code> — কালো 80% অস্বচ্ছতায়</li></ul></div>"
+        },
+        {
+          "title": "HSL / HSLA",
+          "icon": "RiEqualizerLine",
+          "html": "<div><p class=\"text-mid mb-3\">হিউ (Hue, 0-360°), স্যাচুরেশন (Saturation, 0-100%) ও লাইটনেস (Lightness, 0-100%) এর উপর ভিত্তি করে। HSLA ভ্যারিয়েন্টে স্বচ্ছতা যোগ হয়। রঙের উজ্জ্বলতা বা স্যাচুরেশন পরিবর্তন করতে দরকারী।</p><ul class=\"text-mid list-disc space-y-1 pl-5\"><li><code class=\"rounded bg-black/5 px-1\">hsl(0, 0%, 100%)</code> — সাদা</li><li><code class=\"rounded bg-black/5 px-1\">hsla(217, 91%, 60%, 0.9)</code> — নীল 90% অস্বচ্ছতায়</li></ul></div>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "পরীক্ষার ফলাফল কীভাবে ব্যাখ্যা করবেন?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"space-y-1\"><p class=\"text-dark text-sm! font-medium uppercase\">কনট্রাস্ট অনুপাত</p><p class=\"text-dark text-xl font-semibold\">8.59:1</p></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">সাধারণ টেক্সট</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">AA (ন্যূনতম 4.5:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">AAA (ন্যূনতম 7:1)</span></div></div><div class=\"rounded-lg border border-neutral-200 px-3 py-2\" style=\"color: var(--black3); background-color: var(--white)\"><p class=\"text-sm!\">সাধারণ টেক্সটের নমুনা</p></div></div><div class=\"space-y-2 rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"flex items-center justify-between\"><p class=\"text-dark text-sm! font-medium uppercase\">বড় টেক্সট</p><div class=\"flex gap-1\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">AA (ন্যূনতম 3:1)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">AAA (ন্যূনতম 4.5:1)</span></div></div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">রং দেওয়ার পর টুলটি তিনটি বিভাগে ফলাফল দেখায়:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>সাধারণ টেক্সট</strong> — 4.5:1 (AA) বা 7:1 (AAA) কনট্রাস্ট প্রয়োজন। 18pt (24px) এর ছোট বা 14pt বোল্ডের ছোট টেক্সটে প্রযোজ্য।</li><li><strong>বড়/বোল্ড টেক্সট</strong> — 3:1 (AA) বা 4.5:1 (AAA) কনট্রাস্ট প্রয়োজন। হেডিং, বাটন ও হাইলাইটে প্রযোজ্য।</li><li><strong>আইকন</strong> — 3:1 (AA) কনট্রাস্ট প্রয়োজন। আইকন ও ইন্টারফেস এলিমেন্টে প্রযোজ্য।</li></ul><p class=\"text-mid mt-3\"><strong>সবুজ চিহ্ন</strong> মানে শর্ত পূরণ। <strong>লাল চিহ্ন</strong> মানে কনট্রাস্ট কম ও উন্নতি দরকার।</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "পাঠযোগ্যতা পরীক্ষার ফলাফলের অর্থ কী?",
+      "html": "<p class=\"text-mid mb-4\">টুলটি কনট্রাস্ট অনুপাত 1:1 (কনট্রাস্ট নেই) থেকে 21:1 (সর্বোচ্চ কনট্রাস্ট — সাদায় কালো) স্কেলে দেখায়। ফলাফল WCAG স্ট্যান্ডার্ডে নির্ধারিত সীমার সাথে তুলনা করা হয়:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>সাধারণ টেক্সট</strong> — AA স্তরে ন্যূনতম 4.5:1 বা AAA স্তরে 7:1 কনট্রাস্ট প্রয়োজন। 18pt (24px) এর ছোট বা 14pt (18.5px) বোল্ডের ছোট টেক্সটে প্রযোজ্য।</li><li><strong>বড়/বোল্ড টেক্সট</strong> — AA স্তরে ন্যূনতম 3:1 বা AAA স্তরে 4.5:1 কনট্রাস্ট প্রয়োজন। 18pt (24px) বা তার বেশি, অথবা 14pt (18.5px) বোল্ড বা তার বেশি টেক্সটে প্রযোজ্য — হেডিং, বাটন, হাইলাইট।</li><li><strong>আইকন ও গ্রাফিক এলিমেন্ট</strong> — AA স্তরে ন্যূনতম 3:1 কনট্রাস্ট প্রয়োজন। আইকন, বাটন, ফর্ম ফিল্ড ও তথ্য জানানো অন্যান্য ইন্টারফেস এলিমেন্টে প্রযোজ্য।</li></ul><p class=\"text-mid mt-3\"><strong>AA স্তর</strong> অনেক দেশের ডিজিটাল অ্যাক্সেসিবিলিটি আইনে ন্যূনতম প্রয়োজনীয়তা। <strong>AAA স্তর</strong> ভালো পাঠযোগ্যতা দেয় কিন্তু সব এলিমেন্টে সবসময় ব্যবহারিক নয়।</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "WCAG শর্ত অনুযায়ী স্বয়ংক্রিয় রং সমন্বয়",
+      "html": "<p class=\"text-mid mb-4\">কনট্রাস্ট কম হলে ট্রায়াল অ্যান্ড এরর করে সঠিক রং খোঁজার দরকার নেই। <strong>Match</strong> ফাংশন স্বয়ংক্রিয়ভাবে টেক্সট রঙের এমন ভ্যারিয়েন্ট খুঁজে দেয় যা নির্বাচিত কনট্রাস্ট সীমা পূরণ করে।</p><p class=\"text-mid mb-4\">কীভাবে কাজ করে:</p><ol class=\"text-mid list-decimal space-y-2 pl-5\"><li>তালিকা থেকে লক্ষ্য বেছে নিন — যেমন সাধারণ টেক্সটের জন্য AA বা বড় টেক্সটের জন্য AAA।</li><li>Match বাটন চাপুন।</li><li>টুলটি টেক্সট রঙের উজ্জ্বলতা ভ্যারিয়েন্ট খুঁজে শর্ত পূরণকারী নিকটতম রং প্রস্তাব করে।</li><li>প্রস্তাবিত রং ক্লিপবোর্ডে কপি করুন বা সরাসরি নতুন টেক্সট রং হিসেবে সেট করুন।</li></ol><p class=\"text-mid mt-3\">অ্যালগরিদম মূল রঙের হিউ ও স্যাচুরেশন বজায় রাখে, শুধু উজ্জ্বলতা পরিবর্তন করে। তাই প্রস্তাবিত রং ব্র্যান্ড আইডেন্টিটির সাথে সুসংগত থাকে এবং অ্যাক্সেসিবিলিটি মানও পূরণ করে।</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "WCAG মানে AA ও AAA স্তরের অর্থ কী?",
+      "plans": [
+        {
+          "id": "aa",
+          "name": "AA স্তর (ন্যূনতম)",
+          "highlighted": true
+        },
+        {
+          "id": "aaa",
+          "name": "AAA স্তর (উচ্চতর)"
+        }
+      ],
+      "features": [
+        { "name": "সাধারণ টেক্সট — ন্যূনতম 4.5:1", "values": { "aa": true, "aaa": true } },
+        { "name": "সাধারণ টেক্সট — ন্যূনতম 7:1", "values": { "aa": false, "aaa": true } },
+        { "name": "বড়/বোল্ড টেক্সট — ন্যূনতম 3:1", "values": { "aa": true, "aaa": true } },
+        { "name": "বড়/বোল্ড টেক্সট — ন্যূনতম 4.5:1", "values": { "aa": false, "aaa": true } },
+        { "name": "আইকন ও ইন্টারফেস এলিমেন্ট — ন্যূনতম 3:1", "values": { "aa": true, "aaa": true } },
+        { "name": "আইনত প্রয়োজনীয় (EU নির্দেশিকা)", "values": { "aa": true, "aaa": false } },
+        { "name": "গুরুত্বপূর্ণ কন্টেন্টের জন্য সুপারিশকৃত", "values": { "aa": true, "aaa": true } }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "কনট্রাস্ট চেকারের সমস্যা সমাধান",
+      "html": "<h3 class=\"h5 mb-2\">কালার ফরম্যাট এরর দেখাচ্ছে</h3><p class=\"text-mid mb-4\">রঙের ফরম্যাট পরীক্ষা করুন। HEX কোড <code class=\"rounded bg-black/5 px-1\">#</code> দিয়ে শুরু হওয়া উচিত এবং 3 বা 6 অক্ষর থাকা উচিত (যেমন <code class=\"rounded bg-black/5 px-1\">#fff</code> বা <code class=\"rounded bg-black/5 px-1\">#ffffff</code>)। RGB ফরম্যাটে মান 0-255 সীমায় কমা দিয়ে আলাদা হওয়া উচিত।</p><h3 class=\"h5 mb-2\">Match ফাংশন উপযুক্ত রং খুঁজে পাচ্ছে না</h3><p class=\"text-mid mb-4\">ব্যাকগ্রাউন্ড ও টেক্সটের উজ্জ্বলতা একই শেডে কাছাকাছি হলে অ্যালগরিদম হিউ পরিবর্তন ছাড়া শর্ত পূরণকারী ভ্যারিয়েন্ট নাও পেতে পারে। সেক্ষেত্রে ব্যাকগ্রাউন্ড রং পরিবর্তন বা সম্পূর্ণ ভিন্ন টেক্সট রং বিবেচনা করুন।</p><h3 class=\"h5 mb-2\">কালার পিকারে লেখা কোডের সাথে রং মিলছে না</h3><p class=\"text-mid\">ব্রাউজারের কালার পিকার শুধু স্বচ্ছতাহীন HEX সমর্থন করে। RGBA বা HSLA ফরম্যাটে স্বচ্ছতাসহ রং লিখলে পিকার শুধু রঙের অংশ দেখায় (alpha ছাড়া)। কনট্রাস্ট হিসাবে স্বচ্ছতা সঠিকভাবে অন্তর্ভুক্ত থাকে।</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "কোথায় কনট্রাস্ট পরীক্ষা করা উচিত?",
+      "description": "যেখানেই কেউ টেক্সট পড়বে বা ইন্টারফেস এলিমেন্ট চিনবে সেখানে পাঠযোগ্যতা গুরুত্বপূর্ণ:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "ওয়েবসাইট",
+          "description": "পেজের টেক্সট, বাটন, লিঙ্ক, ফর্ম। বিশেষত কর্পোরেট সাইটে গুরুত্বপূর্ণ যেখানে ভিজিটরদের বয়স ও দৃষ্টিশক্তি বিভিন্ন।"
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "ই-কমার্স",
+          "description": "দাম, কেনার বাটন, পণ্যের তথ্য। কম পাঠযোগ্যতা মানে হারানো অর্ডার।"
+        },
+        {
+          "icon": "RiSlideshowLine",
+          "title": "প্রেজেন্টেশন",
+          "description": "প্রজেক্টরে দেখানো স্লাইডে মনিটরের চেয়ে কম কনট্রাস্ট হয়। প্রেজেন্টেশনের আগে রং পরীক্ষা করুন।"
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "মুদ্রিত সামগ্রী",
+          "description": "পোস্টার ও ফ্লায়ার বিভিন্ন আলোতে দেখা হয় — উচ্চ কনট্রাস্ট দরকার।"
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "মোবাইল অ্যাপ",
+          "description": "ফোন রোদে, রাতে, বিভিন্ন বয়সের মানুষ ব্যবহার করে।"
+        },
+        {
+          "icon": "RiRestaurantLine",
+          "title": "রেস্তোরাঁ মেনু",
+          "description": "রঙিন কাগজে বা সজ্জিত ফন্টে প্রিন্ট করা হয় — কম কনট্রাস্ট হওয়া সহজ।"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "বর্ণান্ধ ব্যক্তিদের জন্য রঙের পাঠযোগ্যতা",
+      "html": "<p class=\"text-mid mb-4\">বর্ণান্ধতা (কালার ব্লাইন্ডনেস) হলো রং দেখার সমস্যা যা প্রায় 8% পুরুষ ও 0.5% নারীকে প্রভাবিত করে। বর্ণান্ধ ব্যক্তিরা কিছু রঙের জোড়া পার্থক্য করতে অসুবিধায় পড়তে পারে, উজ্জ্বলতার কনট্রাস্ট পর্যাপ্ত হলেও।</p><p class=\"text-mid mb-4\">সবচেয়ে সাধারণ ধরন:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>ডিউটেরানোপিয়া</strong> — সবুজ ও লাল পার্থক্য করতে সমস্যা (সবচেয়ে সাধারণ)</li><li><strong>প্রোটানোপিয়া</strong> — লাল দেখতে সমস্যা</li><li><strong>ট্রাইটানোপিয়া</strong> — নীল ও হলুদ দেখতে সমস্যা (বিরল)</li></ul><p class=\"text-mid mt-3\">এই টুল উজ্জ্বলতার কনট্রাস্ট পরীক্ষা করে যা সব ব্যবহারকারীর জন্য গুরুত্বপূর্ণ। তবে ডিজাইনে সমস্যাজনক রঙের সমন্বয় (যেমন সবুজ ব্যাকগ্রাউন্ডে লাল টেক্সট) এড়ানো এবং তথ্য জানাতে শুধু রঙের উপর নির্ভর না করে আকৃতি, আইকন ও টেক্সটও ব্যবহার করা উচিত।</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "sectionSteps",
       "title": "এই কনট্রাস্ট চেকার কেন আলাদা?",
       "grid": "two",

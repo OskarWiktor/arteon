@@ -143,6 +143,80 @@
     },
     { "type": "gap", "variant": "line" },
     {
+      "type": "sectionInfo",
+      "title": "ছবি কীভাবে যোগ করবেন?",
+      "html": "<p class=\"text-mid\">টুলটি JPG, PNG ও WebP ফরম্যাটের ছবি গ্রহণ করে। দুই ভাবে ছবি যোগ করতে পারেন:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>ড্র্যাগ অ্যান্ড ড্রপ</strong> — কম্পিউটারের ফোল্ডার থেকে ফাইল ধরে ড্রপ জোনে (ড্যাশ বর্ডারের ঘর) ছেড়ে দিন।</li><li><strong>ডিস্ক থেকে নির্বাচন</strong> — ড্রপ জোনে ক্লিক করলে ফাইল সিলেক্ট উইন্ডো খুলবে।</li></ul><p class=\"text-mid mt-3\">ছবি যোগ করার পর টুল স্বয়ংক্রিয়ভাবে মূল মাপ পড়ে প্রিভিউ দেখায়। এবার ক্রপ সেটিংসে যেতে পারেন।</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "টার্গেট মাপ সেট করুন",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>পিক্সেলে মাপ</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>তৈরি ফরম্যাট</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">প্রস্থ (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly /></div><div><label class=\"text-[14px]! font-medium\">উচ্চতা (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly /></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\" /><span>অনুপাত বজায় রাখুন (স্বয়ংক্রিয় দ্বিতীয় মাপ)</span></label></div></div>",
+      "html": "<p class=\"text-mid\"><strong>পিক্সেলে মাপ</strong> ট্যাবে প্রস্থ ও উচ্চতা ম্যানুয়ালি লিখুন। <strong>অনুপাত বজায় রাখুন</strong> অপশন স্বয়ংক্রিয়ভাবে দ্বিতীয় মাপ সমন্বয় করে।</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Instagram, Facebook ও LinkedIn এর জন্য ছবির মাপ",
+      "html": "<p class=\"text-mid mb-4\">টুলটি জনপ্রিয় প্ল্যাটফর্মের জন্য সর্বোত্তম মাপের তৈরি ফরম্যাট সরবরাহ করে:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">প্ল্যাটফর্ম</th><th class=\"py-2 pr-4 font-semibold\">ফরম্যাট</th><th class=\"py-2 pr-4 font-semibold\">মাপ (px)</th><th class=\"py-2 font-semibold\">অনুপাত</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">বর্গাকার পোস্ট</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">উল্লম্ব পোস্ট</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">স্টোরি / রিলস</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">পোস্ট</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">পেজ কভার</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">পোস্ট</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">প্রোফাইল ব্যানার</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG image</td><td class=\"py-2 pr-4\">লিঙ্ক শেয়ার</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div><p class=\"text-light mt-4\">PWA না বানালে favicon.ico, 32x32 PNG ও 180x180 PNG — এই তিনটি ফাইলই বেশিরভাগ ক্ষেত্রে যথেষ্ট।</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "ছবি কীভাবে ক্রপ করবেন?",
+      "html": "<p class=\"text-mid\">টার্গেট মাপ সেট করার পর প্রিভিউতে ইন্টারেক্টিভ ক্রপ এরিয়া দেখা যায়। উজ্জ্বল অংশ সেভ হবে — বাকি অংশ অন্ধকার।</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">ক্রপ এরিয়া টানুন</p><p class=\"text-mid mt-1\">উজ্জ্বল এলাকা ধরে ছবির যেকোনো জায়গায় টানুন। এভাবে ছবির কোন অংশ এক্সপোর্ট হবে সেটি বেছে নিন।</p></div><div><p class=\"text-dark font-semibold\">হ্যান্ডেল দিয়ে সাইজ পরিবর্তন</p><p class=\"text-mid mt-1\">ক্রপ এরিয়ার কোণায় ছোট বর্গ (হ্যান্ডেল) আছে। টেনে ক্রপ বড় বা ছোট করুন, নির্বাচিত অনুপাত বজায় রেখে।</p></div><div><p class=\"text-dark font-semibold\">জুম</p><p class=\"text-mid mt-1\"><strong>জুম</strong> ট্যাবে স্লাইডার দিয়ে জুম (100-300%) নিয়ন্ত্রণ করুন। বেশি মান মানে মূল ছবির ছোট অংশ — নির্দিষ্ট ডিটেইল কাটতে দরকারী।</p></div><div><p class=\"text-dark font-semibold\">সুনির্দিষ্ট পজিশন</p><p class=\"text-mid mt-1\"><strong>পজিশন</strong> ট্যাবে শতাংশে (X ও Y অক্ষের জন্য 0-100%) ক্রপের সঠিক অবস্থান সেট করুন। সেন্টারিং বাটন দিয়ে দ্রুত মাঝখানে আনুন।</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "ক্রপের আকৃতি",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">আয়তক্ষেত্র</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">বর্গক্ষেত্র</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">বৃত্ত</span></div></div>",
+      "html": "<p class=\"text-mid\"><strong>ক্রপ আকৃতি</strong> ট্যাবে এক্সপোর্ট করা ছবির আকৃতি বেছে নিন: আয়তক্ষেত্র (নির্বাচিত অনুপাতে), বর্গক্ষেত্র (1:1 বাধ্যতামূলক) বা বৃত্ত (স্বচ্ছ ব্যাকগ্রাউন্ড)।</p><p class=\"text-mid mt-3\">বৃত্ত আকৃতি বৃত্তের বাইরে স্বচ্ছ ব্যাকগ্রাউন্ডের গোল অ্যাভাটার তৈরি করে। টুল স্বয়ংক্রিয়ভাবে PNG বা WebP তে স্যুইচ করে কারণ JPG স্বচ্ছতা সমর্থন করে না।</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "3x3 গ্রিড — কী কাজে লাগে?",
+      "html": "<p class=\"text-mid\">ক্রপ এরিয়ায় দৃশ্যমান গ্রিড ছবিকে 9 সমান ভাগে ভাগ করে। এটি <strong>তৃতীয়াংশ নিয়ম</strong> (rule of thirds) — ফটোগ্রাফি কম্পোজিশনের মৌলিক নীতির ভিজ্যুয়ালাইজেশন।</p><p class=\"text-mid mt-3\">নিয়মটি বলে ছবির সবচেয়ে গুরুত্বপূর্ণ উপাদান (মুখ, পণ্য, ফোকাল পয়েন্ট) গ্রিড লাইনের ছেদবিন্দুতে বা তাদের বরাবর রাখা উচিত। এই কম্পোজিশন সরাসরি মাঝখানে রাখার চেয়ে আকর্ষণীয় ও চোখের জন্য আরামদায়ক।</p><p class=\"text-mid mt-3\"><strong>গ্রিড রং</strong> ট্যাবে লাইনের রং পরিবর্তন করতে পারেন (সবুজ, সাদা, কালো, লাল, হলুদ) যাতে বিভিন্ন ছবিতে ভালো দেখা যায়।</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTabs",
+      "title": "এক্সপোর্ট — কোন ফরম্যাট বেছে নেবেন?",
+      "tabs": [
+        {
+          "title": "JPG",
+          "icon": "RiImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">ফটোর জন্য সবচেয়ে জনপ্রিয় ফরম্যাট। ভিজ্যুয়াল মান বজায় রেখে ভালো কম্প্রেশন। স্বচ্ছতা সমর্থন করে না — ব্যাকগ্রাউন্ড সবসময় রঙিন।</p><p class=\"text-mid\">পণ্যের ফটো, পোর্ট্রেট ও বেশিরভাগ ওয়েব গ্রাফিক্সের জন্য ভালো। কোয়ালিটি স্লাইডার (60-100%) কম্প্রেশন নিয়ন্ত্রণ করে।</p></div>"
+        },
+        {
+          "title": "PNG",
+          "icon": "RiFileImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">লসলেস ফরম্যাট — পূর্ণ মান বজায় রাখে কিন্তু ফাইল বড়। স্বচ্ছতা সমর্থন করে (বৃত্তাকার ক্রপে আবশ্যক)।</p><p class=\"text-mid\">টেক্সটসহ গ্রাফিক্স, আইকন ও তীক্ষ্ণ প্রান্তের ছবির জন্য ভালো।</p></div>"
+        },
+        {
+          "title": "WebP",
+          "icon": "RiCropLine",
+          "html": "<div><p class=\"text-mid mb-3\">আধুনিক ফরম্যাট যা JPG ও PNG এর সুবিধা একত্রিত করে — ছোট ফাইল, ভালো মান, স্বচ্ছতা সমর্থন। সব আধুনিক ব্রাউজার সমর্থন করে।</p><p class=\"text-mid\">ওয়েবসাইটের জন্য সুপারিশকৃত — ছোট ফাইল মানে দ্রুত লোডিং।</p></div>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "অনুপাত (aspect ratio) — এর মানে কী?",
+      "description": "ছবির অনুপাত (aspect ratio) হলো প্রস্থ ও উচ্চতার অনুপাত। কোলন দিয়ে আলাদা দুটি সংখ্যায় লেখা হয়:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiLayoutGridLine", "title": "1:1 (বর্গক্ষেত্র)", "description": "প্রস্থ সমান উচ্চতা। Instagram বর্গাকার পোস্ট, প্রোফাইল ছবি, আইকন।" },
+        { "icon": "RiAspectRatioLine", "title": "4:5 (উল্লম্ব)", "description": "হালকা উল্লম্ব ফরম্যাট। Instagram উল্লম্ব পোস্ট — ফিডে বর্গাকারের চেয়ে বেশি জায়গা নেয়।" },
+        { "icon": "RiImageLine", "title": "3:2 (ক্লাসিক)", "description": "ফিল্ম ফটোগ্রাফির ঐতিহ্যবাহী অনুপাত। অনেক ডিজিটাল ক্যামেরাও এই ফরম্যাট ব্যবহার করে।" },
+        { "icon": "RiCropLine", "title": "16:9 (প্যানোরামিক)", "description": "HD ভিডিও, প্রেজেন্টেশন ও মনিটরের স্ট্যান্ডার্ড ফরম্যাট। YouTube, Facebook ভিডিও, ওয়েবসাইট ব্যানার।" },
+        { "icon": "RiInstagramLine", "title": "9:16 (উল্লম্ব ফুলস্ক্রিন)", "description": "উল্টো 16:9 — ফোনের পুরো স্ক্রিন ভরা উল্লম্ব ফরম্যাট। Instagram Stories, TikTok, YouTube Shorts।" }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
       "type": "faq",
       "title": "ছবি সম্পাদক সম্পর্কে প্রায়শই জিজ্ঞাসিত প্রশ্ন",
       "openByDefault": 1,

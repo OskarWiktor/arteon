@@ -408,7 +408,7 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description: 'बिना गुणवत्ता खोए इमेज का आकार घटाएँ। JPG और PNG को WebP में बदलें और वेबसाइट तेज़ करें।',
       },
       bn: {
-        slug: 'jpg-png-theke-webp-rupantar',
+        slug: 'jpg-png-theke-webp-rupantor',
         title: 'JPG/PNG থেকে WebP কনভার্টার',
         description: 'গুণমান না হারিয়ে ছবির সাইজ কমান। JPG ও PNG কে WebP তে রূপান্তর করে ওয়েবসাইট দ্রুত করুন।',
       },

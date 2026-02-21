@@ -93,23 +93,134 @@
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "সম্পূর্ণ গোপনীয়তা",
-          "description": "ফাইল আপনার ডিভাইস ছাড়ে না। সব কিছু ব্রাউজারে হয়।"
+          "title": "গোপনীয়তা — ফাইল কম্পিউটার ছাড়ে না",
+          "description": "সব কিছু ব্রাউজারে লোকালি হয়। ছবি কোনো সার্ভারে পাঠানো হয় না। পেজ বন্ধ করলে কিছুই থাকে না।"
         },
         {
           "icon": "RiDownloadLine",
-          "title": "এক ক্লিকে ডাউনলোড",
-          "description": "সব প্রয়োজনীয় আইকন একটি ZIP প্যাকেজে প্রস্তুত।"
+          "title": "একটি জায়গায় সম্পূর্ণ সেট",
+          "description": "Favicon.ico, PNG আইকন, apple-touch-icon, PWA আইকন ও manifest — সবকিছু একটি ছবি থেকে, একটি টুলে।"
         },
         {
-          "icon": "RiCheckboxCircleLine",
-          "title": "সব সাইজ অন্তর্ভুক্ত",
-          "description": "favicon.ico, Apple Touch Icon, Android Chrome — সব একসাথে।"
+          "icon": "RiImageLine",
+          "title": "PNG, JPG ও SVG সমর্থন",
+          "description": "যেকোনো ফরম্যাটে লোগো ব্যবহার করুন। SVG হলে সব সাইজে আইকন তীক্ষ্ণ হবে।"
         },
         {
-          "icon": "RiSpeedLine",
-          "title": "তৎক্ষণাৎ ফলাফল",
-          "description": "ছবি আপলোড করুন আর কয়েক মুহূর্তেই সব আইকন প্রস্তুত।"
+          "icon": "RiSmartphoneLine",
+          "title": "ওয়েবসাইট ও PWA তে ব্যবহারের জন্য প্রস্তুত",
+          "description": "ওয়েব অ্যাপ্লিকেশনের জন্য manifest.json ফাইলও তৈরি করে। নিচে আইকন আপলোডের নির্দেশনা পাবেন।"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "ফেভিকন জেনারেটর কীভাবে ব্যবহার করবেন",
+      "description": "ফেভিকন তৈরি কয়েকটি সহজ ধাপে:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiUploadLine",
+          "title": "1. সোর্স ছবি যোগ করুন",
+          "description": "ফাইল ড্র্যাগ করুন বা ডিস্ক থেকে বেছে নিন। PNG, JPG, SVG সমর্থিত। কমপক্ষে 512x512 পিক্সেলের সরল লোগো বা আইকন সেরা।"
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "2. আইকন সাইজ বেছে নিন",
+          "description": "কোন সাইজ দরকার সেটি বেছে নিন। সাধারণ ওয়েবসাইটের জন্য: favicon.ico, 32x32 ও 180x180 যথেষ্ট। PWA এর জন্য 192x192 ও 512x512 যোগ করুন।"
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "3. অপশন সেট করুন",
+          "description": "ব্যাকগ্রাউন্ড (স্বচ্ছ বা নির্দিষ্ট রং), manifest ফাইল (PWA এর জন্য) এবং অটো ডাউনলোড সেট করুন।"
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. জেনারেট ও ডাউনলোড করুন",
+          "description": "জেনারেট করলে টুলটি ছবি লোকালি প্রসেস করে। সব ফাইল ZIP এ ডাউনলোড করুন বা আলাদা আলাদা আইকন ডাউনলোড করুন।"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionDemo",
+      "title": "জেনারেশন অপশন — প্রতিটি কী করে?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">PNG সাইজ</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">16x16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">32x32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">180x180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">স্বচ্ছ ব্যাকগ্রাউন্ড (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">ব্যাকগ্রাউন্ড রং:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">ব্যাকগ্রাউন্ড (স্বচ্ছ বা রং)</h3><p class=\"text-mid\">ডিফল্টে জেনারেটর স্বচ্ছতা বজায় রাখে। নির্দিষ্ট ব্যাকগ্রাউন্ড রংও বেছে নিতে পারেন।</p></div><div><h3 class=\"h5 mb-2\">Manifest তৈরি করুন (site.webmanifest)</h3><p class=\"text-mid\">ওয়েব অ্যাপ্লিকেশনের (PWA) জন্য JSON ফাইল। PWA না বানালে এই অপশন দরকার নেই।</p></div></div>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "জেনারেট করা ফাইল কীভাবে ডাউনলোড করবেন?",
+      "description": "আইকন জেনারেট করার পর ডাউনলোডের কয়েকটি অপশন:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFolderZipLine",
+          "title": "সব ZIP এ ডাউনলোড করুন",
+          "description": "সব ডাউনলোড করুন বাটন সব জেনারেট করা ফাইল একটি ZIP আর্কাইভে প্যাক করে। সম্পূর্ণ আইকন সেট দরকার হলে সবচেয়ে সুবিধাজনক।"
+        },
+        {
+          "icon": "RiFileDownloadLine",
+          "title": "আলাদা ফাইল ডাউনলোড করুন",
+          "description": "প্রতিটি জেনারেট করা আইকনে নিজস্ব ডাউনলোড বাটন আছে — পুরো সেট ছাড়াই একটি ফাইল ডাউনলোড করুন। শুধু একটি সাইজ আপডেট করতে দরকারী।"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTabs",
+      "title": "ফেভিকন কোথায় ও কীভাবে আপলোড করবেন?",
+      "tabs": [
+        {
+          "title": "WordPress",
+          "icon": "RiWordpressLine",
+          "html": "<div><p class=\"text-mid mb-3\">বেশিরভাগ WordPress থিমে সাইট আইকন সেটিংস আছে। অ্যাডমিন প্যানেলে যান:</p><p class=\"text-mid mb-3\"><strong>Appearance → Customize → Site Identity → Site Icon</strong></p><p class=\"text-light\">512x512 ফাইল আপলোড করুন — WordPress স্বয়ংক্রিয়ভাবে ছোট সাইজ তৈরি করবে। পূর্ণ নিয়ন্ত্রণ চাইলে FTP দিয়ে সরাসরি রুট ডিরেক্টরিতে ফাইল আপলোড করুন।</p></div>"
+        },
+        {
+          "title": "HTML",
+          "icon": "RiHtml5Line",
+          "html": "<div><p class=\"text-mid mb-3\">জেনারেট করা ফাইল সাইটের রুট ডিরেক্টরিতে (index.html এর পাশে) রাখুন। তারপর &lt;head&gt; সেকশনে যথাযথ ট্যাগ যোগ করুন:</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">এটি উদাহরণ — আপনার সাইটের ফাইল কাঠামো অনুযায়ী পাথ পরিবর্তন করুন।</p></div>"
+        },
+        {
+          "title": "Next.js / React",
+          "icon": "RiReactjsLine",
+          "html": "<div><p class=\"text-mid mb-3\">Next.js (App Router) এ favicon ফাইল <code>app/</code> বা <code>public/</code> ডিরেক্টরিতে রাখুন:</p><ul class=\"text-light mb-3 list-disc pl-5\"><li><code>app/favicon.ico</code> — Next.js স্বয়ংক্রিয়ভাবে চেনে</li><li><code>app/apple-icon.png</code> — Apple আইকন</li><li><code>public/</code> — বাকি আইকন (192x192, 512x512)</li></ul><p class=\"text-light\"><code>layout.tsx</code> ফাইলে <code>metadata.icons</code> অবজেক্ট দিয়েও আইকন কনফিগার করা যায়।</p></div>"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "কোন সোর্স ছবি সেরা কাজ করে?",
+      "description": "ফেভিকন খুব ছোট গ্রাফিক — এমনকি 16x16 পিক্সেল। তাই সব ছবি সোর্স হিসেবে ভালো কাজ করে না:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShapeLine",
+          "title": "সরল আকৃতি ও স্পষ্ট প্রতীক",
+          "description": "সরল লোগো, একক অক্ষর বা প্রতীক সেরা কাজ করে। অনেক ডিটেইলের জটিল গ্রাফিক্স এড়িয়ে চলুন।"
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "বর্গাকার ফরম্যাট",
+          "description": "ফেভিকন বর্গাকার। সোর্স ছবি 1:1 অনুপাতের না হলে কাটা বা প্রসারিত হবে।"
+        },
+        {
+          "icon": "RiZoomInLine",
+          "title": "যথেষ্ট বড় সাইজ",
+          "description": "কমপক্ষে 512x512 পিক্সেলের সোর্স ছবি সুপারিশকৃত। ছোট ছবি বড় করে স্কেল করা হবে।"
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "আদর্শ সোর্স হিসেবে SVG",
+          "description": "SVG মান না কমিয়ে স্কেল হয়, তাই সব সাইজে আইকন তীক্ষ্ণ হবে।"
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "কনট্রাস্টপূর্ণ রং",
+          "description": "ফেভিকন বিভিন্ন ব্যাকগ্রাউন্ডে (হালকা ট্যাব, ডার্ক মোড) দৃশ্যমান হতে হবে। পাঠযোগ্য রং বেছে নিন।"
         }
       ]
     },
