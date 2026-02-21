@@ -155,12 +155,7 @@ const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
   ro: () => import('@/data/ro/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   nl: () => import('@/data/nl/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   hu: () => import('@/data/hu/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  id: () => import('@/data/id/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  vi: () => import('@/data/vi/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   tr: () => import('@/data/tr/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  tl: () => import('@/data/tl/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  sw: () => import('@/data/sw/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  ms: () => import('@/data/ms/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   cs: () => import('@/data/cs/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   sv: () => import('@/data/sv/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   sq: () => import('@/data/sq/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
@@ -173,14 +168,7 @@ const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
   sl: () => import('@/data/sl/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   el: () => import('@/data/el/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   bg: () => import('@/data/bg/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  ha: () => import('@/data/ha/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  yo: () => import('@/data/yo/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  af: () => import('@/data/af/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   uk: () => import('@/data/uk/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  ceb: () => import('@/data/ceb/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  ig: () => import('@/data/ig/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  hi: () => import('@/data/hi/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  bn: () => import('@/data/bn/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
 };
 
 const cache = new Map<Locale, Dictionary>();

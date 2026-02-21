@@ -12,12 +12,7 @@ import itDict from '@/data/it/dictionary.json';
 import roDict from '@/data/ro/dictionary.json';
 import nlDict from '@/data/nl/dictionary.json';
 import huDict from '@/data/hu/dictionary.json';
-import idDict from '@/data/id/dictionary.json';
-import viDict from '@/data/vi/dictionary.json';
 import trDict from '@/data/tr/dictionary.json';
-import tlDict from '@/data/tl/dictionary.json';
-import swDict from '@/data/sw/dictionary.json';
-import msDict from '@/data/ms/dictionary.json';
 import csDict from '@/data/cs/dictionary.json';
 import svDict from '@/data/sv/dictionary.json';
 import sqDict from '@/data/sq/dictionary.json';
@@ -30,14 +25,7 @@ import ltDict from '@/data/lt/dictionary.json';
 import slDict from '@/data/sl/dictionary.json';
 import elDict from '@/data/el/dictionary.json';
 import bgDict from '@/data/bg/dictionary.json';
-import haDict from '@/data/ha/dictionary.json';
-import yoDict from '@/data/yo/dictionary.json';
-import afDict from '@/data/af/dictionary.json';
 import ukDict from '@/data/uk/dictionary.json';
-import cebDict from '@/data/ceb/dictionary.json';
-import igDict from '@/data/ig/dictionary.json';
-import hiDict from '@/data/hi/dictionary.json';
-import bnDict from '@/data/bn/dictionary.json';
 
 const dicts = {
   pl: plDict,
@@ -50,12 +38,7 @@ const dicts = {
   ro: roDict,
   nl: nlDict,
   hu: huDict,
-  id: idDict,
-  vi: viDict,
   tr: trDict,
-  tl: tlDict,
-  sw: swDict,
-  ms: msDict,
   cs: csDict,
   sv: svDict,
   sq: sqDict,
@@ -68,14 +51,7 @@ const dicts = {
   sl: slDict,
   el: elDict,
   bg: bgDict,
-  ha: haDict,
-  yo: yoDict,
-  af: afDict,
   uk: ukDict,
-  ceb: cebDict,
-  ig: igDict,
-  hi: hiDict,
-  bn: bnDict,
 } as const;
 
 export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
@@ -189,28 +165,6 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     contactHref: '/hu/kapcsolat',
     privacyHref: '/hu/adatvedelmi-iranyelvek',
   },
-  id: {
-    lang: 'id',
-    hreflang: 'id',
-    label: 'ID',
-    name: 'Bahasa Indonesia',
-    toolsBasePath: '/id/alat',
-    toolsIndexHref: '/id/alat',
-    aboutHref: '/id/tentang-kami',
-    contactHref: '/id/kontak',
-    privacyHref: '/id/kebijakan-privasi',
-  },
-  vi: {
-    lang: 'vi',
-    hreflang: 'vi',
-    label: 'VI',
-    name: 'Tiếng Việt',
-    toolsBasePath: '/vi/cong-cu',
-    toolsIndexHref: '/vi/cong-cu',
-    aboutHref: '/vi/ve-chung-toi',
-    contactHref: '/vi/lien-he',
-    privacyHref: '/vi/chinh-sach-bao-mat',
-  },
   tr: {
     lang: 'tr',
     hreflang: 'tr',
@@ -221,39 +175,6 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/tr/hakkimizda',
     contactHref: '/tr/iletisim',
     privacyHref: '/tr/gizlilik-politikasi',
-  },
-  tl: {
-    lang: 'tl',
-    hreflang: 'tl',
-    label: 'TL',
-    name: 'Filipino',
-    toolsBasePath: '/tl/mga-kasangkapan',
-    toolsIndexHref: '/tl/mga-kasangkapan',
-    aboutHref: '/tl/tungkol-sa-amin',
-    contactHref: '/tl/makipag-ugnayan',
-    privacyHref: '/tl/patakaran-sa-privacy',
-  },
-  sw: {
-    lang: 'sw',
-    hreflang: 'sw',
-    label: 'SW',
-    name: 'Kiswahili',
-    toolsBasePath: '/sw/zana',
-    toolsIndexHref: '/sw/zana',
-    aboutHref: '/sw/kuhusu-sisi',
-    contactHref: '/sw/wasiliana-nasi',
-    privacyHref: '/sw/sera-ya-faragha',
-  },
-  ms: {
-    lang: 'ms',
-    hreflang: 'ms',
-    label: 'MS',
-    name: 'Bahasa Melayu',
-    toolsBasePath: '/ms/alatan',
-    toolsIndexHref: '/ms/alatan',
-    aboutHref: '/ms/tentang-kami',
-    contactHref: '/ms/hubungi-kami',
-    privacyHref: '/ms/dasar-privasi',
   },
   cs: {
     lang: 'cs',
@@ -387,39 +308,6 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     contactHref: '/bg/kontakt',
     privacyHref: '/bg/politika-za-poveritelnost',
   },
-  ha: {
-    lang: 'ha',
-    hreflang: 'ha',
-    label: 'HA',
-    name: 'Hausa',
-    toolsBasePath: '/ha/kayan-aiki',
-    toolsIndexHref: '/ha/kayan-aiki',
-    aboutHref: '/ha/game-da-mu',
-    contactHref: '/ha/tuntube-mu',
-    privacyHref: '/ha/manufar-sirri',
-  },
-  yo: {
-    lang: 'yo',
-    hreflang: 'yo',
-    label: 'YO',
-    name: 'Yorùbá',
-    toolsBasePath: '/yo/awon-irinse',
-    toolsIndexHref: '/yo/awon-irinse',
-    aboutHref: '/yo/nipa-wa',
-    contactHref: '/yo/kan-si-wa',
-    privacyHref: '/yo/ilana-asiri',
-  },
-  af: {
-    lang: 'af',
-    hreflang: 'af',
-    label: 'AF',
-    name: 'Afrikaans',
-    toolsBasePath: '/af/gereedskap',
-    toolsIndexHref: '/af/gereedskap',
-    aboutHref: '/af/oor-ons',
-    contactHref: '/af/kontak',
-    privacyHref: '/af/privaatheidsbeleid',
-  },
   uk: {
     lang: 'uk',
     hreflang: 'uk',
@@ -430,50 +318,6 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/uk/pro-nas',
     contactHref: '/uk/kontakt',
     privacyHref: '/uk/polityka-konfidentsiinosti',
-  },
-  ceb: {
-    lang: 'ceb',
-    hreflang: 'ceb',
-    label: 'CEB',
-    name: 'Cebuano',
-    toolsBasePath: '/ceb/mga-himan',
-    toolsIndexHref: '/ceb/mga-himan',
-    aboutHref: '/ceb/mahitungod-kanamo',
-    contactHref: '/ceb/kontaka-kami',
-    privacyHref: '/ceb/palisiya-sa-pribasiya',
-  },
-  ig: {
-    lang: 'ig',
-    hreflang: 'ig',
-    label: 'IG',
-    name: 'Igbo',
-    toolsBasePath: '/ig/ngwa-oru',
-    toolsIndexHref: '/ig/ngwa-oru',
-    aboutHref: '/ig/maka-anyi',
-    contactHref: '/ig/kpoturu-anyi',
-    privacyHref: '/ig/iwu-nzuzo',
-  },
-  hi: {
-    lang: 'hi',
-    hreflang: 'hi',
-    label: 'HI',
-    name: 'हिन्दी',
-    toolsBasePath: '/hi/upkaran',
-    toolsIndexHref: '/hi/upkaran',
-    aboutHref: '/hi/hamare-baare-mein',
-    contactHref: '/hi/sampark-karein',
-    privacyHref: '/hi/gopaneeyata-neeti',
-  },
-  bn: {
-    lang: 'bn',
-    hreflang: 'bn',
-    label: 'BN',
-    name: 'বাংলা',
-    toolsBasePath: '/bn/yantra',
-    toolsIndexHref: '/bn/yantra',
-    aboutHref: '/bn/amader-somporke',
-    contactHref: '/bn/jogajog',
-    privacyHref: '/bn/goponeeyota-neeti',
   },
 };
 

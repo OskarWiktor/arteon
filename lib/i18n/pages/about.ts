@@ -56,12 +56,7 @@ import it from '@/data/it/pages/about.json';
 import ro from '@/data/ro/pages/about.json';
 import nl from '@/data/nl/pages/about.json';
 import hu from '@/data/hu/pages/about.json';
-import id from '@/data/id/pages/about.json';
-import vi from '@/data/vi/pages/about.json';
 import tr from '@/data/tr/pages/about.json';
-import tl from '@/data/tl/pages/about.json';
-import sw from '@/data/sw/pages/about.json';
-import ms from '@/data/ms/pages/about.json';
 import cs from '@/data/cs/pages/about.json';
 import sv from '@/data/sv/pages/about.json';
 import sq from '@/data/sq/pages/about.json';
@@ -74,14 +69,7 @@ import lt from '@/data/lt/pages/about.json';
 import sl from '@/data/sl/pages/about.json';
 import el from '@/data/el/pages/about.json';
 import bg from '@/data/bg/pages/about.json';
-import ha from '@/data/ha/pages/about.json';
-import yo from '@/data/yo/pages/about.json';
-import af from '@/data/af/pages/about.json';
 import uk from '@/data/uk/pages/about.json';
-import ceb from '@/data/ceb/pages/about.json';
-import ig from '@/data/ig/pages/about.json';
-import hi from '@/data/hi/pages/about.json';
-import bn from '@/data/bn/pages/about.json';
 
 const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
   en,
@@ -93,12 +81,7 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
   ro,
   nl,
   hu,
-  id,
-  vi,
   tr,
-  tl,
-  sw,
-  ms,
   cs,
   sv,
   sq,
@@ -111,14 +94,7 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
   sl,
   el,
   bg,
-  ha,
-  yo,
-  af,
   uk,
-  ceb,
-  ig,
-  hi,
-  bn,
 };
 
 // ---------------------------------------------------------------------------

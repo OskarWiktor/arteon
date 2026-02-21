@@ -10,12 +10,7 @@ import it from '@/data/it/tools-ui/jpg-png-webp.json';
 import ro from '@/data/ro/tools-ui/jpg-png-webp.json';
 import nl from '@/data/nl/tools-ui/jpg-png-webp.json';
 import hu from '@/data/hu/tools-ui/jpg-png-webp.json';
-import id from '@/data/id/tools-ui/jpg-png-webp.json';
-import vi from '@/data/vi/tools-ui/jpg-png-webp.json';
 import tr from '@/data/tr/tools-ui/jpg-png-webp.json';
-import tl from '@/data/tl/tools-ui/jpg-png-webp.json';
-import sw from '@/data/sw/tools-ui/jpg-png-webp.json';
-import ms from '@/data/ms/tools-ui/jpg-png-webp.json';
 import cs from '@/data/cs/tools-ui/jpg-png-webp.json';
 import sv from '@/data/sv/tools-ui/jpg-png-webp.json';
 import sq from '@/data/sq/tools-ui/jpg-png-webp.json';
@@ -28,16 +23,6 @@ import lt from '@/data/lt/tools-ui/jpg-png-webp.json';
 import sl from '@/data/sl/tools-ui/jpg-png-webp.json';
 import el from '@/data/el/tools-ui/jpg-png-webp.json';
 import bg from '@/data/bg/tools-ui/jpg-png-webp.json';
-import ha from '@/data/ha/tools-ui/jpg-png-webp.json';
-import yo from '@/data/yo/tools-ui/jpg-png-webp.json';
-import af from '@/data/af/tools-ui/jpg-png-webp.json';
 import uk from '@/data/uk/tools-ui/jpg-png-webp.json';
-import ceb from '@/data/ceb/tools-ui/jpg-png-webp.json';
-import ig from '@/data/ig/tools-ui/jpg-png-webp.json';
-import hi from '@/data/hi/tools-ui/jpg-png-webp.json';
-import bn from '@/data/bn/tools-ui/jpg-png-webp.json';
 
-export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, id, vi, tr, tl, sw, ms, cs, sv, sq, da, no, fi, sk, hr, lt, sl, el, bg, ha, yo, af, uk, ceb, ig, hi, bn } as const satisfies Record<
-  Locale,
-  unknown
->;
+export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, tr, cs, sv, sq, da, no, fi, sk, hr, lt, sl, el, bg, uk } as const satisfies Record<Locale, unknown>;

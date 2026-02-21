@@ -10,12 +10,7 @@ import it from '@/data/it/tools-ui/palette-extractor.json';
 import ro from '@/data/ro/tools-ui/palette-extractor.json';
 import nl from '@/data/nl/tools-ui/palette-extractor.json';
 import hu from '@/data/hu/tools-ui/palette-extractor.json';
-import id from '@/data/id/tools-ui/palette-extractor.json';
-import vi from '@/data/vi/tools-ui/palette-extractor.json';
 import tr from '@/data/tr/tools-ui/palette-extractor.json';
-import tl from '@/data/tl/tools-ui/palette-extractor.json';
-import sw from '@/data/sw/tools-ui/palette-extractor.json';
-import ms from '@/data/ms/tools-ui/palette-extractor.json';
 import cs from '@/data/cs/tools-ui/palette-extractor.json';
 import sv from '@/data/sv/tools-ui/palette-extractor.json';
 import sq from '@/data/sq/tools-ui/palette-extractor.json';
@@ -28,16 +23,6 @@ import lt from '@/data/lt/tools-ui/palette-extractor.json';
 import sl from '@/data/sl/tools-ui/palette-extractor.json';
 import el from '@/data/el/tools-ui/palette-extractor.json';
 import bg from '@/data/bg/tools-ui/palette-extractor.json';
-import ha from '@/data/ha/tools-ui/palette-extractor.json';
-import yo from '@/data/yo/tools-ui/palette-extractor.json';
-import af from '@/data/af/tools-ui/palette-extractor.json';
 import uk from '@/data/uk/tools-ui/palette-extractor.json';
-import ceb from '@/data/ceb/tools-ui/palette-extractor.json';
-import ig from '@/data/ig/tools-ui/palette-extractor.json';
-import hi from '@/data/hi/tools-ui/palette-extractor.json';
-import bn from '@/data/bn/tools-ui/palette-extractor.json';
 
-export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, id, vi, tr, tl, sw, ms, cs, sv, sq, da, no, fi, sk, hr, lt, sl, el, bg, ha, yo, af, uk, ceb, ig, hi, bn } as const satisfies Record<
-  Locale,
-  unknown
->;
+export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, tr, cs, sv, sq, da, no, fi, sk, hr, lt, sl, el, bg, uk } as const satisfies Record<Locale, unknown>;

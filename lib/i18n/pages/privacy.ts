@@ -22,12 +22,7 @@ import it from '@/data/it/pages/privacy.json';
 import ro from '@/data/ro/pages/privacy.json';
 import nl from '@/data/nl/pages/privacy.json';
 import hu from '@/data/hu/pages/privacy.json';
-import id from '@/data/id/pages/privacy.json';
-import vi from '@/data/vi/pages/privacy.json';
 import tr from '@/data/tr/pages/privacy.json';
-import tl from '@/data/tl/pages/privacy.json';
-import sw from '@/data/sw/pages/privacy.json';
-import ms from '@/data/ms/pages/privacy.json';
 import cs from '@/data/cs/pages/privacy.json';
 import sv from '@/data/sv/pages/privacy.json';
 import sq from '@/data/sq/pages/privacy.json';
@@ -40,14 +35,7 @@ import lt from '@/data/lt/pages/privacy.json';
 import sl from '@/data/sl/pages/privacy.json';
 import el from '@/data/el/pages/privacy.json';
 import bg from '@/data/bg/pages/privacy.json';
-import ha from '@/data/ha/pages/privacy.json';
-import yo from '@/data/yo/pages/privacy.json';
-import af from '@/data/af/pages/privacy.json';
 import uk from '@/data/uk/pages/privacy.json';
-import ceb from '@/data/ceb/pages/privacy.json';
-import ig from '@/data/ig/pages/privacy.json';
-import hi from '@/data/hi/pages/privacy.json';
-import bn from '@/data/bn/pages/privacy.json';
 
 const PRIVACY_META: Partial<Record<Locale, PrivacyPageMeta>> = {
   en,
@@ -59,12 +47,7 @@ const PRIVACY_META: Partial<Record<Locale, PrivacyPageMeta>> = {
   ro,
   nl,
   hu,
-  id,
-  vi,
   tr,
-  tl,
-  sw,
-  ms,
   cs,
   sv,
   sq,
@@ -77,14 +60,7 @@ const PRIVACY_META: Partial<Record<Locale, PrivacyPageMeta>> = {
   sl,
   el,
   bg,
-  ha,
-  yo,
-  af,
   uk,
-  ceb,
-  ig,
-  hi,
-  bn,
 };
 
 // ---------------------------------------------------------------------------

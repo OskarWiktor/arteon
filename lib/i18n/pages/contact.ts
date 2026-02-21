@@ -44,12 +44,7 @@ import it from '@/data/it/pages/contact.json';
 import ro from '@/data/ro/pages/contact.json';
 import nl from '@/data/nl/pages/contact.json';
 import hu from '@/data/hu/pages/contact.json';
-import id from '@/data/id/pages/contact.json';
-import vi from '@/data/vi/pages/contact.json';
 import tr from '@/data/tr/pages/contact.json';
-import tl from '@/data/tl/pages/contact.json';
-import sw from '@/data/sw/pages/contact.json';
-import ms from '@/data/ms/pages/contact.json';
 import cs from '@/data/cs/pages/contact.json';
 import sv from '@/data/sv/pages/contact.json';
 import sq from '@/data/sq/pages/contact.json';
@@ -62,14 +57,7 @@ import lt from '@/data/lt/pages/contact.json';
 import sl from '@/data/sl/pages/contact.json';
 import el from '@/data/el/pages/contact.json';
 import bg from '@/data/bg/pages/contact.json';
-import ha from '@/data/ha/pages/contact.json';
-import yo from '@/data/yo/pages/contact.json';
-import af from '@/data/af/pages/contact.json';
 import uk from '@/data/uk/pages/contact.json';
-import ceb from '@/data/ceb/pages/contact.json';
-import ig from '@/data/ig/pages/contact.json';
-import hi from '@/data/hi/pages/contact.json';
-import bn from '@/data/bn/pages/contact.json';
 
 const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
   en,
@@ -81,12 +69,7 @@ const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
   ro,
   nl,
   hu,
-  id,
-  vi,
   tr,
-  tl,
-  sw,
-  ms,
   cs,
   sv,
   sq,
@@ -99,14 +82,7 @@ const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
   sl,
   el,
   bg,
-  ha,
-  yo,
-  af,
   uk,
-  ceb,
-  ig,
-  hi,
-  bn,
 };
 
 // ---------------------------------------------------------------------------
