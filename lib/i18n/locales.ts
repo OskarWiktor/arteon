@@ -37,6 +37,7 @@ import ukDict from '@/data/uk/dictionary.json';
 import cebDict from '@/data/ceb/dictionary.json';
 import igDict from '@/data/ig/dictionary.json';
 import hiDict from '@/data/hi/dictionary.json';
+import bnDict from '@/data/bn/dictionary.json';
 
 const dicts = {
   pl: plDict,
@@ -74,6 +75,7 @@ const dicts = {
   ceb: cebDict,
   ig: igDict,
   hi: hiDict,
+  bn: bnDict,
 } as const;
 
 export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
@@ -461,6 +463,17 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/hi/hamare-baare-mein',
     contactHref: '/hi/sampark-karein',
     privacyHref: '/hi/gopaneeyata-neeti',
+  },
+  bn: {
+    lang: 'bn',
+    hreflang: 'bn',
+    label: 'BN',
+    name: 'বাংলা',
+    toolsBasePath: '/bn/yantra',
+    toolsIndexHref: '/bn/yantra',
+    aboutHref: '/bn/amader-somporke',
+    contactHref: '/bn/jogajog',
+    privacyHref: '/bn/goponeeyota-neeti',
   },
 };
 

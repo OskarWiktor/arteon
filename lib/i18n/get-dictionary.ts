@@ -180,6 +180,7 @@ const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
   ceb: () => import('@/data/ceb/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   ig: () => import('@/data/ig/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   hi: () => import('@/data/hi/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
+  bn: () => import('@/data/bn/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
 };
 
 const cache = new Map<Locale, Dictionary>();

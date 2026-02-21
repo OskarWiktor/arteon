@@ -1,0 +1,47 @@
+{
+  "dataType": "ডেটার ধরন",
+  "types": {
+    "url": "URL ঠিকানা",
+    "text": "টেক্সট",
+    "vcard": "বিজনেস কার্ড (vCard)",
+    "email": "ইমেইল",
+    "phone": "ফোন"
+  },
+  "urlPlaceholder": "https://www.example.com",
+  "textPlaceholder": "যেকোনো টেক্সট লিখুন...",
+  "phonePlaceholder": "+880 1712 345678",
+  "size": "আকার (px)",
+  "margin": "মার্জিন (শান্ত অঞ্চল)",
+  "qrColor": "QR কোড রং",
+  "bgColor": "ব্যাকগ্রাউন্ড রং",
+  "errorCorrection": "ত্রুটি সংশোধন স্তর",
+  "errorCorrectionLevels": {
+    "L": "L - নিম্ন (7%)",
+    "M": "M - মাঝারি (15%)",
+    "Q": "Q - উচ্চ (25%)",
+    "H": "H - সর্বোচ্চ (30%)"
+  },
+  "preview": "QR কোড প্রিভিউ",
+  "downloadPng": "PNG ডাউনলোড করুন",
+  "downloadSvg": "SVG ডাউনলোড করুন",
+  "contrastWarning": "এই রংগুলোর মধ্যে কনট্রাস্ট কম। QR কোড স্ক্যান করা কঠিন হতে পারে।",
+  "contrastRatio": "কনট্রাস্ট অনুপাত",
+  "recommended": "সুপারিশকৃত ন্যূনতম: 3:1",
+  "enterData": "QR কোড তৈরি করতে ডেটা লিখুন।",
+  "vcard": {
+    "firstName": "প্রথম নাম",
+    "lastName": "শেষ নাম",
+    "organization": "কোম্পানি (ঐচ্ছিক)",
+    "title": "পদবি (ঐচ্ছিক)",
+    "phone": "ফোন (ঐচ্ছিক)",
+    "email": "ইমেইল (ঐচ্ছিক)",
+    "website": "ওয়েবসাইট (ঐচ্ছিক)",
+    "address": "ঠিকানা (ঐচ্ছিক)"
+  },
+  "email": {
+    "to": "ইমেইল ঠিকানা",
+    "subject": "বিষয় (ঐচ্ছিক)",
+    "body": "বার্তা (ঐচ্ছিক)"
+  },
+  "printTip": "প্রিন্টের জন্য, আমরা ন্যূনতম 300px আকার এবং H ত্রুটি সংশোধন স্তর সুপারিশ করি।"
+}

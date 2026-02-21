@@ -383,6 +383,17 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     contactHref: '/hi/sampark-karein',
     privacyHref: '/hi/gopaneeyata-neeti',
   },
+  bn: {
+    lang: 'bn',
+    hreflang: 'bn',
+    label: 'BN',
+    name: 'বাংলা',
+    toolsBasePath: '/bn/yantra',
+    toolsIndexHref: '/bn/yantra',
+    aboutHref: '/bn/amader-somporke',
+    contactHref: '/bn/jogajog',
+    privacyHref: '/bn/goponioyota-niti',
+  },
 };
 
 export const SUPPORTED_LOCALES = Object.keys(LOCALE_CONFIG) as Locale[];

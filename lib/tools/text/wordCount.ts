@@ -41,6 +41,7 @@ import ukPt from '@/data/uk/tools-ui/word-count-page-types.json';
 import cebPt from '@/data/ceb/tools-ui/word-count-page-types.json';
 import igPt from '@/data/ig/tools-ui/word-count-page-types.json';
 import hiPt from '@/data/hi/tools-ui/word-count-page-types.json';
+import bnPt from '@/data/bn/tools-ui/word-count-page-types.json';
 
 const PAGE_TYPES: Record<Locale, PageTypeConfig[]> = {
   pl: plPt as PageTypeConfig[],
@@ -78,6 +79,7 @@ const PAGE_TYPES: Record<Locale, PageTypeConfig[]> = {
   ceb: cebPt as PageTypeConfig[],
   ig: igPt as PageTypeConfig[],
   hi: hiPt as PageTypeConfig[],
+  bn: bnPt as PageTypeConfig[],
 };
 
 export function getPageTypes(locale: Locale): PageTypeConfig[] {
@@ -1052,6 +1054,31 @@ const EVAL_UI: Record<Locale, EvalUi> = {
       statusShort: '\u26a0\ufe0f बहुत छोटा',
       statusLong: '\u26a0\ufe0f बहुत लंबा',
       generatedBy: 'जनरेट किया: arteonagency.pl/hi/upkaran/shabd-ganak',
+    },
+  },
+  bn: {
+    wordsUnit: 'শব্দ',
+    emptyMessage: 'বিশ্লেষণ দেখতে টেক্সট পেস্ট করুন বা টাইপ করুন।',
+    tooShort: (min, unit, missing) => `টেক্সট আনুমানিক ন্যূনতম (${min} ${unit}) এর চেয়ে কম। বিষয় সম্পূর্ণ হলে — এটি যথেষ্ট হতে পারে। প্রায় ${missing} ${unit} কম আছে।`,
+    tooLong: (excess, unit) => `টেক্সট আনুমানিক সর্বোচ্চ থেকে ${excess} ${unit} বেশি। প্রতিটি বাক্য মূল্য যোগ করলে — দৈর্ঘ্য যুক্তিসঙ্গত।`,
+    idealInRange: 'দৈর্ঘ্য সুপারিশকৃত সীমায় আছে। পাঠকের জন্য মূল্য সবচেয়ে গুরুত্বপূর্ণ — সীমাগুলো রেফারেন্স পয়েন্ট।',
+    idealGoodLength: (label) => `${label} এর জন্য ভালো দৈর্ঘ্য। প্রতিটি অনুচ্ছেদ পাঠকের জন্য সুনির্দিষ্ট মূল্য প্রদান করা উচিত।`,
+    readingTime: (m) => (m === 1 ? '1 মিনিট' : `${m} মিনিট`),
+    report: {
+      title: '\ud83d\udcca টেক্সট দৈর্ঘ্য রিপোর্ট',
+      pageType: 'পেজের ধরন',
+      range: 'সুপারিশকৃত সীমা',
+      statistics: '\ud83d\udcdd পরিসংখ্যান:',
+      words: 'শব্দ',
+      charsWithSpaces: 'অক্ষর (স্পেসসহ)',
+      charsWithoutSpaces: 'অক্ষর (স্পেস ছাড়া)',
+      paragraphs: 'অনুচ্ছেদ',
+      readingTime: 'পড়ার সময়',
+      evaluation: '\ud83d\udcc8 মূল্যায়ন',
+      statusIdeal: '\u2705 ভালো দৈর্ঘ্য',
+      statusShort: '\u26a0\ufe0f খুব ছোট',
+      statusLong: '\u26a0\ufe0f খুব লম্বা',
+      generatedBy: 'তৈরি করেছে: arteonagency.pl/bn/yantra/shobdo-gonona',
     },
   },
 };

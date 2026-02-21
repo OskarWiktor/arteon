@@ -35,8 +35,9 @@ import uk from '@/data/uk/tools-ui/meta-title.json';
 import ceb from '@/data/ceb/tools-ui/meta-title.json';
 import ig from '@/data/ig/tools-ui/meta-title.json';
 import hi from '@/data/hi/tools-ui/meta-title.json';
+import bn from '@/data/bn/tools-ui/meta-title.json';
 
-export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, id, vi, tr, tl, sw, ms, cs, sv, sq, da, no, fi, sk, hr, lt, sl, el, bg, ha, yo, af, uk, ceb, ig, hi } as const satisfies Record<
+export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, id, vi, tr, tl, sw, ms, cs, sv, sq, da, no, fi, sk, hr, lt, sl, el, bg, ha, yo, af, uk, ceb, ig, hi, bn } as const satisfies Record<
   Locale,
   unknown
 >;

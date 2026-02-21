@@ -49,6 +49,7 @@ const LOCALE_TOOLS_BASE = {
   af: '/af/gereedskap',
   ceb: '/ceb/mga-himan',
   hi: '/hi/upkaran',
+  bn: '/bn/yantra',
 };
 
 // ---------------------------------------------------------------------------
@@ -89,6 +90,7 @@ const TOOLS = [
     af: 'jpg-png-na-webp-omskakelaar',
     ceb: 'jpg-png-ngadto-webp-converter',
     hi: 'jpg-png-se-webp-badlein',
+    bn: 'jpg-png-theke-webp-rupantor',
   },
   {
     pl: 'edytor-zdjec-online',
@@ -124,6 +126,7 @@ const TOOLS = [
     af: 'beeldredigeerder',
     ceb: 'editor-sa-hulagway',
     hi: 'chitra-sampadak',
+    bn: 'chhobi-sompadok',
   },
   {
     pl: 'darmowy-generator-favicon-ico',
@@ -159,6 +162,7 @@ const TOOLS = [
     af: 'gratis-favicon-generator',
     ceb: 'libre-nga-favicon-generator',
     hi: 'favicon-nirmata',
+    bn: 'favicon-toyri',
   },
   {
     pl: 'licznik-dlugosci-meta-title-i-description',
@@ -194,6 +198,7 @@ const TOOLS = [
     af: 'meta-titel-en-beskrywing-nagaaier',
     ceb: 'tigsusi-sa-meta-titulo-ug-deskripsyon',
     hi: 'meta-sheerashak-jaanch',
+    bn: 'meta-shirshonam-pariksha',
   },
   {
     pl: 'licznik-slow-i-znakow',
@@ -229,6 +234,7 @@ const TOOLS = [
     af: 'woord-en-karakter-teller',
     ceb: 'tigihap-sa-pulong-ug-karakter',
     hi: 'shabd-ganak',
+    bn: 'shobdo-gonok',
   },
   {
     pl: 'darmowy-generator-stopki-mailowej',
@@ -264,6 +270,7 @@ const TOOLS = [
     af: 'gratis-e-pos-handtekening-generator',
     ceb: 'libre-nga-email-pirma-generator',
     hi: 'email-hastakshar-nirmata',
+    bn: 'email-shakkhor-toyri',
   },
   {
     pl: 'kontrast-i-czytelnosc-kolorow',
@@ -299,6 +306,7 @@ const TOOLS = [
     af: 'kleurkontras-nagaaier',
     ceb: 'tigsusi-sa-kontras-sa-kolor',
     hi: 'rang-virodh-jaanch',
+    bn: 'rong-boiporitto-pariksha',
   },
   {
     pl: 'ekstraktor-kolorow-z-obrazu',
@@ -334,6 +342,7 @@ const TOOLS = [
     af: 'kleur-onttrekker-uit-beeld',
     ceb: 'tigkuha-sa-kolor-gikan-sa-hulagway',
     hi: 'chitra-se-rang-nikaalein',
+    bn: 'chhobi-theke-rong-ber-korun',
   },
   {
     pl: 'generator-palet-kolorow',
@@ -369,6 +378,7 @@ const TOOLS = [
     af: 'kleurpalet-generator',
     ceb: 'generator-sa-paleta-sa-kolor',
     hi: 'rang-palette-nirmata',
+    bn: 'rong-palette-toyri',
   },
   {
     pl: 'darmowy-generator-kodow-qr',
@@ -404,6 +414,7 @@ const TOOLS = [
     af: 'gratis-qr-kode-generator',
     ceb: 'libre-nga-qr-code-generator',
     hi: 'qr-code-nirmata',
+    bn: 'qr-code-toyri',
   },
 ];
 
@@ -443,6 +454,7 @@ const MULTILINGUAL_PAGES = [
     af: '/af/oor-ons',
     ceb: '/ceb/mahitungod-kanamo',
     hi: '/hi/hamare-baare-mein',
+    bn: '/bn/amader-somporke',
   },
   {
     pl: '/kontakt',
@@ -478,6 +490,7 @@ const MULTILINGUAL_PAGES = [
     af: '/af/kontak',
     ceb: '/ceb/kontaka-kami',
     hi: '/hi/sampark-karein',
+    bn: '/bn/jogajog',
   },
   {
     pl: '/polityka-prywatnosci',
@@ -513,6 +526,7 @@ const MULTILINGUAL_PAGES = [
     af: '/af/privaatheidsbeleid',
     ceb: '/ceb/palisiya-sa-pribasiya',
     hi: '/hi/gopaneeyata-neeti',
+    bn: '/bn/goponeeyota-neeti',
   },
 ];
 
@@ -550,6 +564,7 @@ const LOCALES = [
   'af',
   'ceb',
   'hi',
+  'bn',
 ];
 
 // ---------------------------------------------------------------------------

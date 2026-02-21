@@ -1,0 +1,148 @@
+{
+  "toolKey": "favicon",
+  "locale": "bn",
+  "metadata": {
+    "title": "বিনামূল্যে ফেভিকন জেনারেটর – ছবি থেকে favicon.ico তৈরি",
+    "description": "একটি ছবি থেকে favicon.ico ও সম্পূর্ণ ফেভিকন সেট তৈরি করুন। এক ক্লিকে সব প্রয়োজনীয় সাইজ। ব্রাউজারে কাজ করে।",
+    "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
+    "path": "/bn/yantra/favicon-toyri"
+  },
+  "hero": {
+    "title": "ফেভিকন জেনারেটর – তৎক্ষণাৎ favicon.ico তৈরি করুন",
+    "description": "একটি ছবি থেকে favicon.ico ও সব প্রয়োজনীয় PNG আইকন তৈরি করুন। সব কিছু ব্রাউজারে হয়।",
+    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/bn/yantra", "label": "যন্ত্র" },
+    "third": { "href": "/bn/yantra/favicon-toyri", "label": "ফেভিকন জেনারেটর" }
+  },
+  "schemas": {
+    "software": {
+      "name": "ফেভিকন জেনারেটর — ওয়েবসাইটের জন্য বিনামূল্যে আইকন জেনারেটর",
+      "alternateName": ["Favicon.ico ও PNG আইকন জেনারেটর"],
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "IconGenerator",
+      "description": "বিনামূল্যে ফেভিকন জেনারেটর। favicon.ico ও PNG আইকন 16x16, 32x32, 180x180, 192x192 ও 512x512 সীমা ছাড়া ও ফাইল সার্ভারে না পাঠিয়ে তৈরি করুন। প্রসেসিং ব্রাউজারে হয়।",
+      "featureList": [
+        "favicon.ico জেনারেশন (16x16 + 32x32)",
+        "Apple Touch Icon (180x180)",
+        "Android Chrome আইকন (192x192, 512x512)",
+        "সব ফাইল ZIP এ ডাউনলোড",
+        "ব্রাউজারে প্রসেসিং",
+        "কোনো সীমা নেই, কোনো সাইন আপ নেই"
+      ]
+    },
+    "howTo": {
+      "name": "ফেভিকন কীভাবে তৈরি করবেন",
+      "description": "একটি ছবি থেকে favicon.ico ও সম্পূর্ণ ফেভিকন সেট তৈরির উপায়।",
+      "steps": [
+        {
+          "name": "ছবি আপলোড করুন",
+          "text": "বর্গাকার ছবি (কমপক্ষে 512x512 px) আপলোড করুন। PNG, JPG, WebP বা SVG।"
+        },
+        {
+          "name": "প্রিভিউ পরীক্ষা করুন",
+          "text": "জেনারেট করা আইকনের প্রিভিউ দেখুন এবং নিশ্চিত করুন যে ভালো দেখাচ্ছে।"
+        },
+        {
+          "name": "ফাইল ডাউনলোড করুন",
+          "text": "সব জেনারেট করা ফাইল ZIP প্যাকেজে ডাউনলোড করুন।"
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "ফেভিকন কী এবং কেন প্রয়োজন?",
+      "html": "<p class=\"mb-4\">ফেভিকন হলো সেই ছোট আইকন যা ব্রাউজার ট্যাব, বুকমার্ক ও সার্চ রেজাল্টে ওয়েবসাইটের নামের পাশে দেখা যায়। এটি ওয়েবসাইটের পরিচয়ের গুরুত্বপূর্ণ অংশ — ব্যবহারকারী এটি দেখে তৎক্ষণাৎ চিনতে পারে কোন ট্যাব কোন সাইটের।</p><p class=\"mb-4\">আধুনিক ব্রাউজার ও ডিভাইসে একাধিক সাইজের আইকন প্রয়োজন: favicon.ico (16x16 ও 32x32), Apple Touch Icon (180x180), এবং Android Chrome আইকন (192x192 ও 512x512)। এই টুল একটি ছবি থেকে এই সব আইকন স্বয়ংক্রিয়ভাবে তৈরি করে।</p><p>সেরা ফলাফলের জন্য, বর্গাকার ছবি (কমপক্ষে 512x512 px) আপলোড করুন, পছন্দমতো স্বচ্ছ পটভূমি (PNG) সহ।</p>"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionSteps",
+      "title": "ফেভিকন কীভাবে তৈরি করবেন",
+      "description": "ফেভিকন তৈরি মাত্র তিন ধাপে:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. ছবি আপলোড করুন",
+          "description": "বর্গাকার ছবি (কমপক্ষে 512x512 px) আপলোড করুন। PNG, JPG, WebP বা SVG।"
+        },
+        {
+          "title": "2. প্রিভিউ পরীক্ষা করুন",
+          "description": "জেনারেট করা আইকনের প্রিভিউ দেখুন।"
+        },
+        {
+          "title": "3. ZIP ডাউনলোড করুন",
+          "description": "সব আইকন একটি ZIP প্যাকেজে ডাউনলোড করুন।"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "কোন আইকন জেনারেট হয়?",
+      "html": "<p class=\"text-mid\">টুলটি একটি ছবি থেকে নিম্নলিখিত ফাইল তৈরি করে:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>favicon.ico</strong> — ক্লাসিক ফেভিকন (16x16 + 32x32) সব ব্রাউজারের জন্য।</li><li><strong>favicon-16x16.png</strong> — ছোট PNG আইকন।</li><li><strong>favicon-32x32.png</strong> — স্ট্যান্ডার্ড PNG আইকন।</li><li><strong>apple-touch-icon.png</strong> — Apple ডিভাইসের জন্য (180x180)।</li><li><strong>android-chrome-192x192.png</strong> — Android Chrome এর জন্য।</li><li><strong>android-chrome-512x512.png</strong> — Android স্প্ল্যাশ স্ক্রিন ও PWA এর জন্য।</li></ul>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "এই ফেভিকন জেনারেটর কেন আলাদা?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "সম্পূর্ণ গোপনীয়তা",
+          "description": "ফাইল আপনার ডিভাইস ছাড়ে না। সব কিছু ব্রাউজারে হয়।"
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "এক ক্লিকে ডাউনলোড",
+          "description": "সব প্রয়োজনীয় আইকন একটি ZIP প্যাকেজে প্রস্তুত।"
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "সব সাইজ অন্তর্ভুক্ত",
+          "description": "favicon.ico, Apple Touch Icon, Android Chrome — সব একসাথে।"
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "তৎক্ষণাৎ ফলাফল",
+          "description": "ছবি আপলোড করুন আর কয়েক মুহূর্তেই সব আইকন প্রস্তুত।"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "ফেভিকন জেনারেটর সম্পর্কে প্রায়শই জিজ্ঞাসিত প্রশ্ন",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "সেরা ইনপুট ছবি কেমন হওয়া উচিত?",
+          "answer": "বর্গাকার ছবি, কমপক্ষে 512x512 px। PNG ফরম্যাট সেরা কারণ এটি স্বচ্ছতা সমর্থন করে। লোগো বা সরল গ্রাফিক্স সবচেয়ে ভালো কাজ করে।",
+          "answerSchemaText": "বর্গাকার PNG, কমপক্ষে 512x512 px, স্বচ্ছ ব্যাকগ্রাউন্ড।"
+        },
+        {
+          "question": "ফাইল কি সার্ভারে পাঠানো হয়?",
+          "answer": "না। সব প্রসেসিং আপনার ব্রাউজারে হয়। ফাইল কখনো আপনার ডিভাইস ছাড়ে না।",
+          "answerSchemaText": "না, সব কিছু ব্রাউজারে হয়।"
+        },
+        {
+          "question": "favicon.ico তে কোন সাইজ থাকে?",
+          "answer": "জেনারেট করা favicon.ico তে 16x16 ও 32x32 পিক্সেল উভয় সাইজ অন্তর্ভুক্ত। এটি সব আধুনিক ব্রাউজারের জন্য যথেষ্ট।",
+          "answerSchemaText": "16x16 ও 32x32 px উভয় একটি ICO ফাইলে।"
+        },
+        {
+          "question": "ওয়েবসাইটে ফেভিকন কীভাবে যোগ করবেন?",
+          "answer": "ZIP ডাউনলোড করুন, ফাইলগুলো আপনার ওয়েবসাইটের রুট ফোল্ডারে রাখুন এবং HTML &lt;head&gt; এ যথাযথ &lt;link&gt; ট্যাগ যোগ করুন। Next.js বা অন্য ফ্রেমওয়ার্কে ফাইলগুলো public/ ফোল্ডারে রাখুন।",
+          "answerSchemaText": "ফাইল রুট ফোল্ডারে রাখুন এবং HTML head এ link ট্যাগ যোগ করুন।"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "অন্যান্য টুল দেখুন" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -48,6 +48,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       ceb: { title: 'Mga hulagway ug favicon' },
       ig: { title: 'Onyonyo na favicon' },
       hi: { title: 'इमेज और फ़ेविकॉन' },
+      bn: { title: 'ছবি ও ফেভিকন' },
     },
   },
   {
@@ -89,6 +90,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       ceb: { title: 'Meta ug SEO' },
       ig: { title: 'Meta na SEO' },
       hi: { title: 'मेटा और SEO' },
+      bn: { title: 'মেটা ও SEO' },
     },
   },
   {
@@ -130,6 +132,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       ceb: { title: 'Email ug komunikasyon' },
       ig: { title: 'Email na nkwurịta oku' },
       hi: { title: 'ईमेल और संवाद' },
+      bn: { title: 'ইমেইল ও যোগাযোগ' },
     },
   },
   {
@@ -171,6 +174,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       ceb: { title: 'Mga kolor ug paleta' },
       ig: { title: 'Agba na palette' },
       hi: { title: 'रंग और एक्सेसिबिलिटी' },
+      bn: { title: 'রং ও অ্যাক্সেসিবিলিটি' },
     },
   },
   {
@@ -212,6 +216,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       ceb: { title: 'Print ug QR' },
       ig: { title: 'Ibipụta na QR' },
       hi: { title: 'प्रिंट और QR' },
+      bn: { title: 'প্রিন্ট ও QR' },
     },
   },
 ];
@@ -402,6 +407,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JPG/PNG को WebP में बदलें',
         description: 'बिना गुणवत्ता खोए इमेज का आकार घटाएँ। JPG और PNG को WebP में बदलें और वेबसाइट तेज़ करें।',
       },
+      bn: {
+        slug: 'jpg-png-theke-webp-rupantar',
+        title: 'JPG/PNG থেকে WebP কনভার্টার',
+        description: 'গুণমান না হারিয়ে ছবির সাইজ কমান। JPG ও PNG কে WebP তে রূপান্তর করে ওয়েবসাইট দ্রুত করুন।',
+      },
     },
   },
   {
@@ -585,6 +595,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'chitra-sampadak',
         title: 'इमेज एडिटर',
         description: 'सोशल मीडिया या वेबसाइट के लिए परफ़ेक्ट क्रॉप तैयार करें। प्रीसेट चुनें या कस्टम आयाम दर्ज करें।',
+      },
+      bn: {
+        slug: 'chhobi-sompadok',
+        title: 'ছবি সম্পাদক ও ক্রপ টুল',
+        description: 'সোশ্যাল মিডিয়া বা ওয়েবসাইটের জন্য নিখুঁত ক্রপ তৈরি করুন। প্রিসেট বেছে নিন বা কাস্টম মাপ দিন।',
       },
     },
   },
@@ -770,6 +785,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'फ़ेविकॉन जनरेटर',
         description: 'एक इमेज से favicon.ico और PNG आइकन बनाएँ जो ब्राउज़र और Lighthouse की आवश्यकताओं को पूरा करें।',
       },
+      bn: {
+        slug: 'favicon-toyri',
+        title: 'ফেভিকন জেনারেটর — বিনামূল্যে',
+        description: 'একটি ছবি থেকে favicon.ico ও PNG আইকন তৈরি করুন। ব্রাউজার ও Lighthouse সামঞ্জস্যপূর্ণ।',
+      },
     },
   },
   {
@@ -953,6 +973,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'meta-sheerashak-jaanch',
         title: 'मेटा टाइटल और डिस्क्रिप्शन चेकर',
         description: 'कैरेक्टर गिनती जाँचें और देखें कि Google में आपका पेज कैसा दिखेगा। कटे हुए स्निपेट से बचें।',
+      },
+      bn: {
+        slug: 'meta-shirshonam-pariksha',
+        title: 'মেটা টাইটেল ও বর্ণনা পরীক্ষক',
+        description: 'অক্ষর সংখ্যা যাচাই করুন এবং Google এ পেজ কেমন দেখাবে প্রিভিউ দেখুন। কাটা স্নিপেট এড়িয়ে চলুন।',
       },
     },
   },
@@ -1138,6 +1163,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'शब्द और कैरेक्टर काउंटर',
         description: 'टेक्स्ट की लंबाई जाँचें और मूल्यांकन करें कि यह होम पेज, सर्विस पेज, ब्लॉग पोस्ट या प्रोडक्ट डिस्क्रिप्शन के लिए उपयुक्त है।',
       },
+      bn: {
+        slug: 'shobdo-gonok',
+        title: 'শব্দ ও অক্ষর গণনাকারী',
+        description: 'টেক্সটের দৈর্ঘ্য যাচাই করুন। হোম পেজ, সার্ভিস পেজ, ব্লগ পোস্ট বা পণ্যের বর্ণনায় উপযুক্ত কি না মূল্যায়ন করুন।',
+      },
     },
   },
   {
@@ -1321,6 +1351,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'email-hastakshar-nirmata',
         title: 'ईमेल सिग्नेचर जनरेटर',
         description: 'कुछ मिनटों में प्रोफ़ेशनल ईमेल सिग्नेचर बनाएँ। तैयार HTML कोड Gmail या Outlook में पेस्ट करें।',
+      },
+      bn: {
+        slug: 'email-shakkhor-toyri',
+        title: 'ইমেইল স্বাক্ষর জেনারেটর',
+        description: 'কয়েক মিনিটে পেশাদার ইমেইল স্বাক্ষর তৈরি করুন। তৈরি HTML কোড Gmail বা Outlook এ পেস্ট করুন।',
       },
     },
   },
@@ -1506,6 +1541,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'कलर कंट्रास्ट चेकर',
         description: 'जाँचें कि टेक्स्ट और बैकग्राउंड रंग पठनीय हैं। WCAG के अनुसार कंट्रास्ट अनुपात गणना और सही रंग चुनने में मदद।',
       },
+      bn: {
+        slug: 'rong-boiporitto-pariksha',
+        title: 'রং কনট্রাস্ট পরীক্ষক (WCAG)',
+        description: 'টেক্সট ও ব্যাকগ্রাউন্ড রং পাঠযোগ্য কি না যাচাই করুন। WCAG অনুযায়ী কনট্রাস্ট গণনা ও সঠিক রং বাছাই।',
+      },
     },
   },
   {
@@ -1689,6 +1729,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'chitra-se-rang-nikaalein',
         title: 'इमेज से रंग निकालें',
         description: 'फ़ोटो या लोगो अपलोड करें और प्रमुख रंग निकालें। एक क्लिक में कलर कोड कॉपी करें।',
+      },
+      bn: {
+        slug: 'chhobi-theke-rong-ber-korun',
+        title: 'ছবি থেকে রং এক্সট্র্যাক্টর',
+        description: 'ফটো বা লোগো আপলোড করুন, প্রধান রংগুলো বের হবে। এক ক্লিকে কালার কোড কপি করুন।',
       },
     },
   },
@@ -1874,6 +1919,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'रंग पैलेट जनरेटर',
         description: 'एक बेस रंग चुनें और 9 पैलेट बनाएँ: मोनोक्रोमैटिक, कॉम्प्लिमेंटरी, ट्रायडिक और अन्य।',
       },
+      bn: {
+        slug: 'rong-palette-toyri',
+        title: 'কালার প্যালেট জেনারেটর',
+        description: 'একটি বেস রং বেছে 9টি প্যালেট তৈরি করুন: মনোক্রোম্যাটিক, কম্প্লিমেন্টারি, ট্রায়াডিক ও আরও।',
+      },
     },
   },
   {
@@ -2057,6 +2107,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'qr-code-nirmata',
         title: 'QR कोड जनरेटर',
         description: 'वेबसाइट, vCard, मेनू या फ़्लायर के लिए QR कोड बनाएँ। PNG और SVG में एक्सपोर्ट, बिना लॉगिन, बिना सीमा।',
+      },
+      bn: {
+        slug: 'qr-code-toyri',
+        title: 'বিনামূল্যে QR কোড জেনারেটর',
+        description: 'ওয়েবসাইট, vCard, মেনু বা ফ্লায়ারের জন্য QR কোড তৈরি করুন। PNG ও SVG এক্সপোর্ট, লগইন ছাড়া।',
       },
     },
   },

@@ -35,8 +35,9 @@ import uk from '@/data/uk/tools-ui/word-count.json';
 import ceb from '@/data/ceb/tools-ui/word-count.json';
 import ig from '@/data/ig/tools-ui/word-count.json';
 import hi from '@/data/hi/tools-ui/word-count.json';
+import bn from '@/data/bn/tools-ui/word-count.json';
 
-export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, id, vi, tr, tl, sw, ms, cs, sv, sq, da, no, fi, sk, hr, lt, sl, el, bg, ha, yo, af, uk, ceb, ig, hi } as const satisfies Record<
+export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, id, vi, tr, tl, sw, ms, cs, sv, sq, da, no, fi, sk, hr, lt, sl, el, bg, ha, yo, af, uk, ceb, ig, hi, bn } as const satisfies Record<
   Locale,
   unknown
 >;
