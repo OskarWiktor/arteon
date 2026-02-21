@@ -32,7 +32,8 @@ export type Locale =
   | 'af'
   | 'uk'
   | 'ceb'
-  | 'ig';
+  | 'ig'
+  | 'hi';
 
 export type LocaleConfig = {
   lang: string;

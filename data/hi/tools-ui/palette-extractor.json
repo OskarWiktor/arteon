@@ -1,0 +1,15 @@
+{
+  "heading": "इमेज से रंग निकालें",
+  "subheading": "फ़ोटो या लोगो अपलोड करें और प्रमुख रंग निकालें",
+  "dropzoneText": "इमेज यहाँ खींचें या क्लिक करके चुनें",
+  "dropzoneFormats": "JPG, PNG, WebP, SVG (अधिकतम 10 MB)",
+  "changeImage": "इमेज बदलें",
+  "extractedColors": "निकाले गए रंग",
+  "noColors": "अभी तक कोई रंग नहीं। इमेज अपलोड करें।",
+  "copied": "कॉपी किया!",
+  "copyHex": "HEX कॉपी करें",
+  "rgbValue": "RGB मान",
+  "colorsCount": "रंगों की संख्या",
+  "errorTitle": "त्रुटि",
+  "errorGeneric": "इमेज प्रोसेसिंग के दौरान त्रुटि हुई। कृपया दोबारा प्रयास करें।"
+}

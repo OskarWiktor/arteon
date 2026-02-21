@@ -1,0 +1,22 @@
+{
+  "heading": "JPG/PNG को WebP में बदलें",
+  "subheading": "इमेज को WebP फ़ॉर्मेट में बदलें और फ़ाइल का आकार घटाएँ",
+  "dropzoneText": "इमेज यहाँ खींचें या क्लिक करके चुनें",
+  "dropzoneFormats": "JPG, PNG, WebP (अधिकतम 10 MB प्रति फ़ाइल)",
+  "qualityLabel": "गुणवत्ता",
+  "qualityHelper": "कम गुणवत्ता = छोटी फ़ाइल। 75-85% अधिकांश उपयोगों के लिए सबसे अच्छा है।",
+  "convertAll": "सभी को बदलें",
+  "downloadAll": "सभी डाउनलोड करें (ZIP)",
+  "download": "डाउनलोड करें",
+  "remove": "हटाएँ",
+  "removeAll": "सभी हटाएँ",
+  "converting": "बदल रहे हैं...",
+  "converted": "बदल दिया गया",
+  "original": "मूल",
+  "result": "परिणाम",
+  "savings": "बचत",
+  "errorTitle": "त्रुटि",
+  "errorGeneric": "कन्वर्शन के दौरान त्रुटि हुई। कृपया दोबारा प्रयास करें।",
+  "filesSelected": "फ़ाइलें चयनित",
+  "dragActive": "फ़ाइलें यहाँ छोड़ें..."
+}

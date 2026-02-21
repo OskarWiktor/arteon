@@ -47,6 +47,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       uk: { title: 'Зображення та favicon' },
       ceb: { title: 'Mga hulagway ug favicon' },
       ig: { title: 'Onyonyo na favicon' },
+      hi: { title: 'इमेज और फ़ेविकॉन' },
     },
   },
   {
@@ -87,6 +88,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       uk: { title: 'Meta та SEO' },
       ceb: { title: 'Meta ug SEO' },
       ig: { title: 'Meta na SEO' },
+      hi: { title: 'मेटा और SEO' },
     },
   },
   {
@@ -127,6 +129,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       uk: { title: 'Електронна пошта та комунікація' },
       ceb: { title: 'Email ug komunikasyon' },
       ig: { title: 'Email na nkwurịta oku' },
+      hi: { title: 'ईमेल और संवाद' },
     },
   },
   {
@@ -167,6 +170,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       uk: { title: 'Кольори та палітри' },
       ceb: { title: 'Mga kolor ug paleta' },
       ig: { title: 'Agba na palette' },
+      hi: { title: 'रंग और एक्सेसिबिलिटी' },
     },
   },
   {
@@ -207,6 +211,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       uk: { title: 'Друк та QR' },
       ceb: { title: 'Print ug QR' },
       ig: { title: 'Ibipụta na QR' },
+      hi: { title: 'प्रिंट और QR' },
     },
   },
 ];
@@ -392,6 +397,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Ngbanwe JPG/PNG gaa WebP',
         description: 'Belata ogo faịlụ onyonyo na-enweghị mfu mma. Gbanwee JPG na PNG gaa WebP wee mee ka weebụsaịtị gị dị ngwa.',
       },
+      hi: {
+        slug: 'jpg-png-se-webp-badlein',
+        title: 'JPG/PNG को WebP में बदलें',
+        description: 'बिना गुणवत्ता खोए इमेज का आकार घटाएँ। JPG और PNG को WebP में बदलें और वेबसाइट तेज़ करें।',
+      },
     },
   },
   {
@@ -570,6 +580,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'edita-onyonyo',
         title: 'Edita onyonyo',
         description: 'Kwadebe mkpụrụ zuru oke maka mgbasa ozi mmekọrịta ma ọ bụ weebụsaịtị gị. Họrọ usoro emechara ma ọ bụ tinye nha nke gị.',
+      },
+      hi: {
+        slug: 'chitra-sampadak',
+        title: 'इमेज एडिटर',
+        description: 'सोशल मीडिया या वेबसाइट के लिए परफ़ेक्ट क्रॉप तैयार करें। प्रीसेट चुनें या कस्टम आयाम दर्ज करें।',
       },
     },
   },
@@ -750,6 +765,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Njikọta favicon',
         description: 'Site na otu onyonyo mepụta favicon.ico na akara PNG ndị kwekọrọ na ihe achọrọ nke ihe nchọgharị na Lighthouse.',
       },
+      hi: {
+        slug: 'favicon-nirmata',
+        title: 'फ़ेविकॉन जनरेटर',
+        description: 'एक इमेज से favicon.ico और PNG आइकन बनाएँ जो ब्राउज़र और Lighthouse की आवश्यकताओं को पूरा करें।',
+      },
     },
   },
   {
@@ -928,6 +948,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'nyocha-meta-aha-na-nkowa',
         title: 'Nyocha meta aha na nkọwa',
         description: 'Lelee ọnụ ọgụgụ mkpụrụedemede wee hụ ụzọ peeji gị si pụta na Google. Zere aha na nkọwa e bipụtara na nsorita ọchụchọ.',
+      },
+      hi: {
+        slug: 'meta-sheerashak-jaanch',
+        title: 'मेटा टाइटल और डिस्क्रिप्शन चेकर',
+        description: 'कैरेक्टर गिनती जाँचें और देखें कि Google में आपका पेज कैसा दिखेगा। कटे हुए स्निपेट से बचें।',
       },
     },
   },
@@ -1108,6 +1133,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Ọgụgụ okwu na mkpụrụedemede',
         description: 'Lelee ogologo ederede wee nyochaa ma ọ dabara maka peeji ụlọ, peeji ọrụ, edemede blọọgụ, ma ọ bụ nkọwa ngwaahịa.',
       },
+      hi: {
+        slug: 'shabd-ganak',
+        title: 'शब्द और कैरेक्टर काउंटर',
+        description: 'टेक्स्ट की लंबाई जाँचें और मूल्यांकन करें कि यह होम पेज, सर्विस पेज, ब्लॉग पोस्ट या प्रोडक्ट डिस्क्रिप्शन के लिए उपयुक्त है।',
+      },
     },
   },
   {
@@ -1286,6 +1316,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'njikota-mbinye-aka-email-nefu',
         title: 'Njikọta mbinye aka email',
         description: 'Wuo mbinye aka email nke ọkachamara n\u2019otu nkeji ole na ole. Detuo koodu HTML emechara tinye na Gmail ma ọ bụ Outlook.',
+      },
+      hi: {
+        slug: 'email-hastakshar-nirmata',
+        title: 'ईमेल सिग्नेचर जनरेटर',
+        description: 'कुछ मिनटों में प्रोफ़ेशनल ईमेल सिग्नेचर बनाएँ। तैयार HTML कोड Gmail या Outlook में पेस्ट करें।',
       },
     },
   },
@@ -1466,6 +1501,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Nyocha ịdị iche agba',
         description: 'Lelee ma agba ederede na ndabere gị pụrụ ịgụ. Ngwa ọrụ a na-agụ ịdị iche dịka WCAG wee nyere aka ịhọrọ agba ziri ezi.',
       },
+      hi: {
+        slug: 'rang-virodh-jaanch',
+        title: 'कलर कंट्रास्ट चेकर',
+        description: 'जाँचें कि टेक्स्ट और बैकग्राउंड रंग पठनीय हैं। WCAG के अनुसार कंट्रास्ट अनुपात गणना और सही रंग चुनने में मदद।',
+      },
     },
   },
   {
@@ -1644,6 +1684,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'mweputa-agba-site-na-onyonyo',
         title: 'Mwepụta agba site na onyonyo',
         description: 'Bulite foto ma ọ bụ logo, ngwa ọrụ a ga-ewepụta agba ndị kachasị. Detuo koodu agba emepụtara site na otu ịpị.',
+      },
+      hi: {
+        slug: 'chitra-se-rang-nikaalein',
+        title: 'इमेज से रंग निकालें',
+        description: 'फ़ोटो या लोगो अपलोड करें और प्रमुख रंग निकालें। एक क्लिक में कलर कोड कॉपी करें।',
       },
     },
   },
@@ -1824,6 +1869,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Njikọta palette agba',
         description: 'Họrọ otu agba wee mepụta palette 9: monochromatic, complementary, triadic, na ndị ọzọ.',
       },
+      hi: {
+        slug: 'rang-palette-nirmata',
+        title: 'रंग पैलेट जनरेटर',
+        description: 'एक बेस रंग चुनें और 9 पैलेट बनाएँ: मोनोक्रोमैटिक, कॉम्प्लिमेंटरी, ट्रायडिक और अन्य।',
+      },
     },
   },
   {
@@ -2002,6 +2052,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'njikota-koodu-qr-nefu',
         title: 'Njikọta koodu QR n\u2019efu',
         description: 'Mepụta koodu QR maka weebụsaịtị, vCard, menu, ma ọ bụ flaya. Bupụ na PNG na SVG, enweghị nbanye, enweghị oke.',
+      },
+      hi: {
+        slug: 'qr-code-nirmata',
+        title: 'QR कोड जनरेटर',
+        description: 'वेबसाइट, vCard, मेनू या फ़्लायर के लिए QR कोड बनाएँ। PNG और SVG में एक्सपोर्ट, बिना लॉगिन, बिना सीमा।',
       },
     },
   },

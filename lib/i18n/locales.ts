@@ -36,6 +36,7 @@ import afDict from '@/data/af/dictionary.json';
 import ukDict from '@/data/uk/dictionary.json';
 import cebDict from '@/data/ceb/dictionary.json';
 import igDict from '@/data/ig/dictionary.json';
+import hiDict from '@/data/hi/dictionary.json';
 
 const dicts = {
   pl: plDict,
@@ -72,6 +73,7 @@ const dicts = {
   uk: ukDict,
   ceb: cebDict,
   ig: igDict,
+  hi: hiDict,
 } as const;
 
 export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
@@ -448,6 +450,17 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/ig/maka-anyi',
     contactHref: '/ig/kpoturu-anyi',
     privacyHref: '/ig/iwu-nzuzo',
+  },
+  hi: {
+    lang: 'hi',
+    hreflang: 'hi',
+    label: 'HI',
+    name: 'हिन्दी',
+    toolsBasePath: '/hi/upkaran',
+    toolsIndexHref: '/hi/upkaran',
+    aboutHref: '/hi/hamare-baare-mein',
+    contactHref: '/hi/sampark-karein',
+    privacyHref: '/hi/gopaneeyata-neeti',
   },
 };
 

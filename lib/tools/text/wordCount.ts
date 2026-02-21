@@ -1024,7 +1024,7 @@ const EVAL_UI: Record<Locale, EvalUi> = {
       statusIdeal: '\u2705 Ogologo dị mma',
       statusShort: '\u26a0\ufe0f Dị mkpụmkpụ',
       statusLong: '\u26a0\ufe0f Dị ogologo',
-      generatedBy: 'Mepụtara site na: arteonagency.pl/ig/ngwa-oru/onye-agugu-okwu-na-mkpuruede',
+      generatedBy: 'Mepụtara site na: arteonagency.pl/ig/ngwa-oru/agu-okwu-na-mkpuruedemede',
     },
   },
 };

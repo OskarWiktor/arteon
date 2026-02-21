@@ -5,7 +5,7 @@
     "title": "Onye Mwepụta Agba Site na Onyonyo n'efu – Paleti Site na Foto Ọ bụla",
     "description": "Bulite foto ma ọ bụ logo wee wepụta ruo agba isi 12 nwere koodu HEX na RGB. Zuru ezu maka UI, akara na mmekọrịta. Enweghị ndebanye aha, enweghị oke.",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
-    "path": "/ig/ngwa-oru/iweputa-agba-site-na-onyonyo"
+    "path": "/ig/ngwa-oru/mweputa-agba-site-na-onyonyo"
   },
   "hero": {
     "title": "Onye Mwepụta Agba Onyonyo – Nweta Paleti Site na Foto Ọ bụla",
@@ -14,7 +14,7 @@
   },
   "breadcrumbs": {
     "second": { "href": "/ig/ngwa-oru", "label": "Ngwa ọrụ" },
-    "third": { "href": "/ig/ngwa-oru/iweputa-agba-site-na-onyonyo", "label": "Onye mwepụta agba onyonyo" }
+    "third": { "href": "/ig/ngwa-oru/mweputa-agba-site-na-onyonyo", "label": "Onye mwepụta agba onyonyo" }
   },
   "schemas": {
     "software": {
@@ -206,7 +206,7 @@
         {
           "icon": "RiSearchEyeLine",
           "title": "Ịgbasawanye paleti dị adị",
-          "description": "Ị nwere ike iji agba isi ewepụtara na <a href=\"/ig/ngwa-oru/onye-emeputa-paleti-agba\">onye emepụta paleti agba</a> iji mepụta usoro zuru ezu nke agba kwekọrọ dabere na amamihe agba."
+          "description": "Ị nwere ike iji agba isi ewepụtara na <a href=\"/ig/ngwa-oru/njikota-palette-agba\">onye emepụta paleti agba</a> iji mepụta usoro zuru ezu nke agba kwekọrọ dabere na amamihe agba."
         }
       ]
     },

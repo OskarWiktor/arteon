@@ -372,6 +372,17 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     contactHref: '/ig/kpoturu-anyi',
     privacyHref: '/ig/iwu-nzuzo',
   },
+  hi: {
+    lang: 'hi',
+    hreflang: 'hi',
+    label: 'HI',
+    name: 'हिन्दी',
+    toolsBasePath: '/hi/upkaran',
+    toolsIndexHref: '/hi/upkaran',
+    aboutHref: '/hi/hamare-baare-mein',
+    contactHref: '/hi/sampark-karein',
+    privacyHref: '/hi/gopaneeyata-neeti',
+  },
 };
 
 export const SUPPORTED_LOCALES = Object.keys(LOCALE_CONFIG) as Locale[];

@@ -1,0 +1,23 @@
+{
+  "heading": "रंग पैलेट जनरेटर",
+  "subheading": "एक बेस रंग चुनें और 9 सामंजस्यपूर्ण पैलेट बनाएँ",
+  "baseColorLabel": "बेस रंग",
+  "pickColor": "रंग चुनें",
+  "hexInputLabel": "HEX कोड दर्ज करें",
+  "randomColor": "रैंडम रंग",
+  "palettes": "पैलेट",
+  "copied": "कॉपी किया!",
+  "copyHex": "HEX कॉपी करें",
+  "hslValue": "HSL मान",
+  "paletteNames": {
+    "monochromatic": "मोनोक्रोमैटिक",
+    "analogous": "एनालॉगस",
+    "complementary": "कॉम्प्लिमेंटरी",
+    "triadic": "ट्रायडिक",
+    "splitComplementary": "स्प्लिट-कॉम्प्लिमेंटरी",
+    "pastel": "पेस्टल",
+    "dark": "डार्क",
+    "tonal": "टोनल",
+    "minimalist": "मिनिमलिस्ट"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "mainNavigation": "मुख्य नेविगेशन",
+    "logoAlt": "Arteon – कंपनी का लोगो",
+    "closeMenu": "मेनू बंद करें",
+    "openMenu": "मेनू खोलें",
+    "closeToolsList": "टूल्स की सूची बंद करें",
+    "openToolsList": "टूल्स की सूची खोलें",
+    "toolsLabel": "टूल्स",
+    "mobileMenu": "मोबाइल मेनू",
+    "aboutLabel": "हमारे बारे में",
+    "contactLabel": "संपर्क करें"
+  },
+  "footer": {
+    "copyright": "सर्वाधिकार सुरक्षित।",
+    "description": "वेब डेवलपर्स, डिज़ाइनर्स और मार्केटर्स के लिए मुफ़्त ऑनलाइन टूल्स।",
+    "companyDataLabel": "कंपनी की जानकारी",
+    "toolsLabel": "टूल्स",
+    "legalLabel": "कानूनी दस्तावेज़",
+    "cookieSettingsLabel": "कुकी सेटिंग्स"
+  },
+  "desktopOnly": {
+    "title": "यह टूल बड़ी स्क्रीन पर काम करता है",
+    "description": "सबसे अच्छे अनुभव के लिए, इस टूल को कंप्यूटर, डेस्कटॉप या लैंडस्केप मोड में टैबलेट पर खोलें।",
+    "tipTitle": "सुझाव",
+    "tipText": "अगर आप टैबलेट का उपयोग कर रहे हैं, तो लैंडस्केप मोड में बदलें – जब विंडो की चौड़ाई पर्याप्त होगी, तो टूल उपलब्ध हो जाएगा।"
+  },
+  "cookie": {
+    "title": "कुकी और गोपनीयता",
+    "description": "हम इस वेबसाइट को चलाने, ट्रैफ़िक का विश्लेषण करने और विज्ञापन दिखाने के लिए कुकीज़ का उपयोग करते हैं। और पढ़ें",
+    "setPreferences": "प्राथमिकताएँ सेट करें",
+    "privacyPolicy": "गोपनीयता नीति",
+    "privacyPolicyHref": "/hi/gopaneeyata-neeti",
+    "reject": "सभी अस्वीकार करें",
+    "settings": "सेटिंग्स",
+    "accept": "सभी स्वीकार करें",
+    "panelTitle": "गोपनीयता प्राथमिकताएँ",
+    "panelDescription": "डेटा के उपयोग के लिए सहमति सेटिंग्स।",
+    "categoriesLegend": "श्रेणियाँ",
+    "essentialTitle": "आवश्यक",
+    "essentialDescription": "वेबसाइट इनके बिना काम नहीं कर सकती। ये कोई मार्केटिंग डेटा एकत्र नहीं करते।",
+    "essentialStatus": "हमेशा सक्रिय",
+    "analyticsTitle": "विश्लेषण (GA4)",
+    "analyticsDescription": "विज़िट की रिकॉर्डिंग। आपकी सहमति से Google Analytics 4 सक्रिय करता है।",
+    "analyticsLabel": "GA4 विश्लेषण सक्रिय करें",
+    "adsTitle": "विज्ञापन (Google AdSense)",
+    "adsDescription": "आपकी रुचियों के अनुसार विज्ञापन।",
+    "adsLabel": "व्यक्तिगत विज्ञापन सक्रिय करें",
+    "changeDecision": "आप कभी भी अपना निर्णय बदल सकते हैं",
+    "save": "सहेजें"
+  },
+  "skipToContent": "सामग्री पर जाएँ",
+  "legal": [{ "key": "privacy", "href": "/hi/gopaneeyata-neeti", "label": "गोपनीयता नीति" }],
+  "breadcrumbs": { "home": "होम", "ariaLabel": "ब्रेडक्रम्ब नेविगेशन" },
+  "contactForm": {
+    "nameLabel": "पूरा नाम",
+    "namePlaceholder": "राहुल शर्मा",
+    "emailLabel": "ईमेल",
+    "emailPlaceholder": "rahul@example.com",
+    "subjectLabel": "विषय",
+    "subjectPlaceholder": "जैसे बग रिपोर्ट | टूल सुझाव | प्रश्न",
+    "messageLabel": "संदेश",
+    "messagePlaceholder": "अपना प्रश्न या सुझाव लिखें...",
+    "send": "भेजें",
+    "error": "कुछ गलत हो गया। कृपया अपना डेटा जाँचें और दोबारा प्रयास करें।",
+    "success": "संदेश भेज दिया गया! हम जल्द उत्तर देंगे।"
+  },
+  "toolsCarousel": {
+    "defaultTitle": "मुफ़्त टूल्स",
+    "seeAllTools": "सभी टूल्स देखें",
+    "carouselLabel": "टूल्स कैरोसेल",
+    "scrollLeft": "बाएँ स्क्रॉल करें",
+    "scrollRight": "दाएँ स्क्रॉल करें",
+    "carouselNavigation": "कैरोसेल नेविगेशन",
+    "goToSlide": "पेज पर जाएँ",
+    "of": "में से",
+    "slide": "पेज",
+    "tool": "टूल",
+    "openTool": "टूल खोलें"
+  },
+  "languageSwitcher": {
+    "switchTitle": "हिंदी में बदलें",
+    "toggleLabel": "भाषा बदलें",
+    "chooseLabel": "भाषा चुनें",
+    "popularLabel": "लोकप्रिय",
+    "otherLabel": "अन्य",
+    "closeModalLabel": "बंद करें"
+  },
+  "mobileNav": { "close": "बंद करें", "services": "सेवाएँ", "contact": "संपर्क करें" },
+  "infoBanner": {
+    "text": "ईमेल हस्ताक्षर जनरेटर अपडेट हो गया – नई सुविधाएँ देखें",
+    "linkText": "टूल"
+  }
+}

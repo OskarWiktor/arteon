@@ -1,0 +1,20 @@
+{
+  "heading": "इमेज रीसाइज़र",
+  "subheading": "इमेज का आकार बदलें, क्रॉप करें और फ़ॉर्मेट बदलें",
+  "dropzoneText": "इमेज यहाँ खींचें या क्लिक करके चुनें",
+  "dropzoneFormats": "JPG, PNG, WebP (अधिकतम 10 MB)",
+  "widthLabel": "चौड़ाई (px)",
+  "heightLabel": "ऊँचाई (px)",
+  "keepAspectRatio": "अनुपात बनाए रखें",
+  "outputFormat": "आउटपुट फ़ॉर्मेट",
+  "qualityLabel": "गुणवत्ता",
+  "resize": "आकार बदलें",
+  "download": "डाउनलोड करें",
+  "startOver": "दोबारा शुरू करें",
+  "original": "मूल",
+  "result": "परिणाम",
+  "presets": "प्रीसेट",
+  "customSize": "कस्टम आकार",
+  "errorTitle": "त्रुटि",
+  "errorGeneric": "इमेज प्रोसेसिंग में त्रुटि। कृपया दोबारा प्रयास करें।"
+}

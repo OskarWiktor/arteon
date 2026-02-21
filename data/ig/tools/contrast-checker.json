@@ -5,7 +5,7 @@
     "title": "Nyocha Ọdịiche Agba n'efu – Ndakọrịta WCAG 2.1",
     "description": "Lelee ma agba ederede na ndabere ya ọ pụrụ ịgụ dịka WCAG 2.1 si kwuo. Tinye koodu HEX, RGB ma ọ bụ HSL, hụ ọnụọgụ ọdịiche, wee jiri ndozi na-akpaghị aka.",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
-    "path": "/ig/ngwa-oru/nyocha-odiiche-agba"
+    "path": "/ig/ngwa-oru/nyocha-idi-iche-agba"
   },
   "hero": {
     "title": "Nyocha ọdịiche agba na nnweta",
@@ -18,7 +18,7 @@
       "label": "Ngwa ọrụ"
     },
     "third": {
-      "href": "/ig/ngwa-oru/nyocha-odiiche-agba",
+      "href": "/ig/ngwa-oru/nyocha-idi-iche-agba",
       "label": "Nyocha ọdịiche agba"
     }
   },

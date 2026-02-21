@@ -1,0 +1,16 @@
+{
+  "heading": "फ़ेविकॉन जनरेटर",
+  "subheading": "एक इमेज से favicon.ico और PNG आइकन बनाएँ",
+  "dropzoneText": "इमेज यहाँ खींचें या क्लिक करके चुनें",
+  "dropzoneFormats": "PNG, JPG, WebP, SVG (अधिकतम 10 MB)",
+  "processing": "प्रोसेसिंग...",
+  "preview": "प्रीव्यू",
+  "generatedFiles": "जेनरेट की गई फ़ाइलें",
+  "downloadAll": "सभी डाउनलोड करें (ZIP)",
+  "download": "डाउनलोड करें",
+  "startOver": "दोबारा शुरू करें",
+  "errorTitle": "त्रुटि",
+  "errorGeneric": "फ़ेविकॉन बनाने में त्रुटि। कृपया दूसरी इमेज अपलोड करें।",
+  "recommendationTitle": "सुझाव",
+  "recommendationText": "सबसे अच्छे परिणाम के लिए, चौकोर इमेज (कम से कम 512×512 px) अपलोड करें, जिसमें पारदर्शी पृष्ठभूमि हो।"
+}

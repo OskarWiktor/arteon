@@ -1,0 +1,39 @@
+{
+  "heading": "QR कोड जनरेटर",
+  "subheading": "वेबसाइट, vCard, ईमेल, फ़ोन या टेक्स्ट के लिए QR कोड बनाएँ",
+  "tabs": {
+    "url": "URL",
+    "text": "टेक्स्ट",
+    "vcard": "vCard",
+    "email": "ईमेल",
+    "phone": "फ़ोन"
+  },
+  "urlPlaceholder": "https://www.your-website.com",
+  "textPlaceholder": "कोई भी टेक्स्ट लिखें...",
+  "phonePlaceholder": "+91 98765 43210",
+  "size": "आकार (px)",
+  "margin": "मार्जिन (शांत क्षेत्र)",
+  "qrColor": "QR कोड रंग",
+  "bgColor": "पृष्ठभूमि रंग",
+  "errorCorrection": "त्रुटि सुधार",
+  "errorCorrectionHelper": "उच्च स्तर = अधिक विश्वसनीय स्कैनिंग, लेकिन सघन पैटर्न। L (7%), M (15%), Q (25%), H (30%)।",
+  "download": "डाउनलोड करें",
+  "downloadPng": "PNG डाउनलोड करें",
+  "downloadSvg": "SVG डाउनलोड करें",
+  "preview": "प्रीव्यू",
+  "vcard": {
+    "firstName": "पहला नाम",
+    "lastName": "अंतिम नाम",
+    "phone": "फ़ोन",
+    "email": "ईमेल",
+    "company": "कंपनी",
+    "jobTitle": "पद",
+    "website": "वेबसाइट",
+    "address": "पता"
+  },
+  "emailFields": {
+    "to": "प्राप्तकर्ता",
+    "subject": "विषय",
+    "body": "संदेश"
+  }
+}
