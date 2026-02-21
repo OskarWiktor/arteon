@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Színkontraszt és olvashatóság ellenőrző online",
+      "name": "Színkontraszt és olvashatóság ellenőrző — WCAG 2.1",
       "alternateName": [
         "Színolvashatóság tesztelő",
         "Szöveg és háttér kontraszt ellenőrző",
@@ -54,7 +54,7 @@
       ]
     },
     "howTo": {
-      "name": "Hogyan ellenőrizze a színkontrasztot és az olvashatóságot online",
+      "name": "Hogyan ellenőrizze a színkontrasztot és az olvashatóságot",
       "description": "Hogyan ellenőrizze a szöveg- és háttérszínek olvashatóságát a WCAG szabvány szerint. Adja meg a színeket, olvassa le a kontrasztarányt, és használja az automatikus illesztési funkciót.",
       "steps": [
         {

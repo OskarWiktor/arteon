@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Extracteur de couleurs d'image en ligne",
+      "name": "Extracteur de couleurs d'image — palette depuis vos photos",
       "alternateName": ["Palette de couleurs à partir d'une image", "Extracteur de couleurs dominantes", "Générateur de palette à partir d'une photo"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",

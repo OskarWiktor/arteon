@@ -3,7 +3,7 @@
   "locale": "en",
   "metadata": {
     "title": "Free Color Contrast Checker – WCAG 2.1 Compliance",
-    "description": "Check if your text and background colors are readable per WCAG 2.1. Enter HEX, RGB or HSL codes, see the contrast ratio and use auto-fix to find accessible.",
+    "description": "Check if your text and background colors meet WCAG 2.1 standards. Enter HEX, RGB or HSL codes, see the contrast ratio and auto-fix colors for accessibility.",
     "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
     "path": "/en/tools/color-contrast-checker"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Color contrast and readability checker online",
+      "name": "Color contrast and readability checker — WCAG 2.1",
       "alternateName": [
         "Color readability tester",
         "Text and background contrast checker",
@@ -54,7 +54,7 @@
       ]
     },
     "howTo": {
-      "name": "How to check color contrast and readability online",
+      "name": "How to check color contrast and readability",
       "description": "How to check text and background color readability per WCAG standard. Enter colors, read the contrast ratio, and use the automatic matching feature.",
       "steps": [
         {

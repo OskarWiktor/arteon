@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Verificator de contrast și lizibilitate a culorilor online",
+      "name": "Verificator de contrast și lizibilitate a culorilor — WCAG 2.1",
       "alternateName": [
         "Tester de lizibilitate a culorilor",
         "Verificator contrast text și fundal",
@@ -54,7 +54,7 @@
       ]
     },
     "howTo": {
-      "name": "Cum să verificați contrastul și lizibilitatea culorilor online",
+      "name": "Cum să verificați contrastul și lizibilitatea culorilor",
       "description": "Cum să verificați lizibilitatea culorilor textului și fundalului conform standardului WCAG. Introduceți culorile, citiți raportul de contrast și folosiți funcția de potrivire automată.",
       "steps": [
         {

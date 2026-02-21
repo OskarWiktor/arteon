@@ -1,7 +1,7 @@
 {
   "slug": "ueber-uns",
   "metadata": {
-    "title": "Über Arteon – 10 kostenlose Online-Tools für Web, SEO &",
+    "title": "Über Arteon – 10 kostenlose Tools für Web, SEO und Design",
     "description": "Arteon ist eine Kreativagentur und entwickelt kostenlose Browser-Tools: WebP-Konverter, Favicon-Generator, Farbkontrast-Checker, QR-Code-Generator u. v. m."
   },
   "hero": {
@@ -39,7 +39,7 @@
     "items": [
       {
         "title": "Bilder & Favicons",
-        "description": "WebP-Konverter, Online-Bildeditor und Favicon-Generator. 3 Tools für die tägliche Bildarbeit."
+        "description": "WebP-Konverter, Bildeditor und Favicon-Generator. 3 Tools für die tägliche Bildarbeit."
       },
       {
         "title": "Meta & SEO",

@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Favicon generator online - free icon creator for websites",
-      "alternateName": ["Favicon.ico and PNG icon generator"],
+      "name": "Favicon generator — create favicon.ico from any image",
+      "alternateName": ["Favicon.ico generator", "Create favicon from image", "Free favicon creator"],
       "applicationCategory": "DesignApplication",
-      "applicationSubCategory": "IconGenerator",
-      "description": "Free online favicon generator. Create favicon.ico and PNG icons 16x16, 32x32, 180x180, 192x192, and 512x512 without limits and without sending files to a server. Processing happens locally in the browser.",
+      "applicationSubCategory": "FaviconGenerator",
+      "description": "Free favicon generator. Create favicon.ico and PNG icons 16x16, 32x32, 180x180, 192x192, and 512x512 without limits and without sending files to a server. Processing happens locally in the browser.",
       "featureList": [
         "Generate favicon.ico (16x16, 32x32, 48x48 in one file)",
         "Generate PNG icons 16x16 and 32x32",

@@ -24,14 +24,14 @@
   },
   "schemas": {
     "software": {
-      "name": "Farbpaletten-Generator online - 9 Paletten aus einer Farbe",
+      "name": "Farbpaletten-Generator — 9 Paletten aus einer Farbe",
       "alternateName": [
-        "Online-Farbpaletten-Generator",
+        "Kostenloser Farbpaletten-Generator",
         "Farbschemata aus einer Farbe generieren",
         "Harmonische Farbpaletten erstellen",
         "Komplementärfarben-Generator",
         "Monochromatische Palette erstellen",
-        "Farbtheorie-Tool online"
+        "Farbtheorie-Tool"
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",

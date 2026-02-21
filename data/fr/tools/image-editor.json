@@ -8,7 +8,7 @@
     "path": "/fr/outils/editeur-d-images-en-ligne"
   },
   "hero": {
-    "title": "Éditeur d'images en ligne",
+    "title": "Éditeur d'images — recadrer et redimensionner",
     "description": "Recadrez et redimensionnez vos images pour les réseaux sociaux, les sites web et les supports imprimés. Modèles prêts à l'emploi pour Instagram, Facebook et LinkedIn – ou saisissez vos propres dimensions.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -24,14 +24,14 @@
   },
   "schemas": {
     "software": {
-      "name": "Éditeur d'images en ligne – recadrer et redimensionner",
+      "name": "Éditeur d'images gratuit — recadrer, redimensionner et convertir",
       "alternateName": [
-        "Recadrer des images en ligne",
-        "Redimensionner des images en ligne",
+        "Recadrer des images gratuitement",
+        "Redimensionner des images gratuitement",
         "Recadrer des images Instagram",
         "Taille de couverture Facebook",
         "Créer une bannière LinkedIn",
-        "Éditeur de photos en ligne gratuit",
+        "Éditeur de photos gratuit",
         "Recadrer une image pour les réseaux sociaux",
         "Redimensionner une image OG"
       ],
@@ -49,7 +49,7 @@
       ]
     },
     "howTo": {
-      "name": "Comment recadrer des images en ligne",
+      "name": "Comment recadrer des images en quelques secondes",
       "description": "Recadrez des images pour les réseaux sociaux et les sites web. Utilisez des modèles prêts à l'emploi ou saisissez vos propres dimensions.",
       "steps": [
         {

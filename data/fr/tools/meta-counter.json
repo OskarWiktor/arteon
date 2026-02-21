@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Vérificateur de méta titre et description en ligne",
+      "name": "Vérificateur de méta titre et description — aperçu Google",
       "alternateName": [
         "Vérificateur de méta titre avec aperçu Google",
         "Compteur de caractères méta titre",
@@ -164,38 +164,6 @@
           "icon": "RiRuler2Line",
           "title": "La largeur en pixels est différente de l'attendu",
           "description": "L'outil mesure la largeur avec une police standard similaire à celle utilisée par Google. Le résultat peut varier légèrement selon le navigateur."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Conseils pour des méta titres efficaces",
-      "description": "Un bon méta titre influence le taux de clics dans les résultats de recherche :",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiSearchLine",
-          "title": "Mot-clé principal en début",
-          "description": "Placez le mot-clé le plus important au début du titre pour une meilleure visibilité."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "Respecter la plage optimale",
-          "description": "50–60 caractères / 450–580 pixels – la plage qui s'affiche généralement en entier."
-        },
-        {
-          "icon": "RiEditLine",
-          "title": "Être descriptif et unique",
-          "description": "Chaque page doit avoir un titre unique qui décrit précisément son contenu."
-        },
-        {
-          "icon": "RiMegaphoneLine",
-          "title": "Inciter au clic",
-          "description": "Utilisez des termes qui donnent envie de cliquer – sans tomber dans le clickbait."
         }
       ]
     },

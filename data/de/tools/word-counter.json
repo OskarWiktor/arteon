@@ -24,13 +24,13 @@
   },
   "schemas": {
     "software": {
-      "name": "Kostenloser Wort- und Zeichenzähler online",
+      "name": "Kostenloser Wort- und Zeichenzähler mit SEO-Bewertung",
       "alternateName": [
         "Wortzähler mit Textlängen-Bewertung",
-        "Online-Zeichenzähler",
+        "Zeichenzähler-Tool",
         "Wortzähler für Texter",
         "Lesezeit-Rechner",
-        "Online-Wortzähler",
+        "Wortzähler für Webseiten",
         "Prüfen, wie viele Wörter ein Text hat",
         "Wortzähler für SEO",
         "Optimale Textlänge für Blogartikel prüfen"
@@ -79,7 +79,7 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kostenloser Wortzähler online - Textlänge zählen und bewerten",
+      "title": "Kostenloser Wortzähler — Textlänge zählen und bewerten",
       "html": "<p class=\"text-mid\">Mit diesem Wortzähler prüfen Sie schnell die Länge eines beliebigen Textes. Fügen Sie Ihren Inhalt ein, und der Zähler ermittelt sofort Wörter, Zeichen und Absätze. Zusätzlich sehen Sie die geschätzte Lesezeit und ob die Länge zum gewählten Seitentyp passt.</p><p class=\"text-mid mt-3\">Jeder Seitentyp hat einen anderen Zweck - eine Produktbeschreibung beantwortet Käuferfragen, ein Blogartikel behandelt ein Thema ausführlich, und eine Dienstleistungsseite erklärt, was der Kunde erhält. Der Zähler zeigt Bereiche für jeden dieser Typen, basierend auf Analysen von Inhalten, die gut ranken.</p>"
     },
     {
@@ -177,7 +177,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Für wen ist der Online-Wortzähler?",
+      "title": "Für wen ist der Wortzähler?",
       "description": "Ein Wortzähler für Texter und darüber hinaus - hier sind die häufigsten Nutzer:",
       "grid": "three",
       "items": [

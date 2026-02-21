@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Generatore di firma e-mail HTML - Gmail e Outlook",
-      "alternateName": ["Creare una firma e-mail online", "Generatore di firma HTML", "Generatore di firma Gmail", "Generatore di firma Outlook", "Firma e-mail professionale"],
+      "alternateName": ["Creare una firma e-mail gratis", "Generatore di firma HTML", "Generatore di firma Gmail", "Generatore di firma Outlook", "Firma e-mail professionale"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
       "description": "Generatore gratuito di firma e-mail HTML. 8 layout, colori personalizzabili, icone social media, link CTA. Per Gmail, Outlook e altri client. Esecuzione locale.",

@@ -27,7 +27,7 @@
       "name": "Favicon generátor - ingyenes ikonkészítő weboldalakhoz",
       "alternateName": ["Favicon.ico és PNG ikon generátor"],
       "applicationCategory": "DesignApplication",
-      "applicationSubCategory": "IconGenerator",
+      "applicationSubCategory": "FaviconGenerator",
       "description": "Ingyenes favicon generátor. Készítsen favicon.ico-t és PNG ikonokat 16x16, 32x32, 180x180, 192x192 és 512x512 méretben korlátozás nélkül, fájlok szerverre küldése nélkül. A feldolgozás helyben történik a böngészőben.",
       "featureList": [
         "Favicon.ico generálás (16x16, 32x32, 48x48 egy fájlban)",

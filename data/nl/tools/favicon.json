@@ -27,7 +27,7 @@
       "name": "Favicon-generator - gratis pictogrammaker voor websites",
       "alternateName": ["Favicon.ico en PNG-pictogramgenerator"],
       "applicationCategory": "DesignApplication",
-      "applicationSubCategory": "IconGenerator",
+      "applicationSubCategory": "FaviconGenerator",
       "description": "Gratis favicon-generator. Maak favicon.ico en PNG-pictogrammen 16x16, 32x32, 180x180, 192x192 en 512x512 zonder limieten en zonder bestanden naar een server te sturen. Verwerking vindt lokaal in de browser plaats.",
       "featureList": [
         "Genereer favicon.ico (16x16, 32x32, 48x48 in één bestand)",

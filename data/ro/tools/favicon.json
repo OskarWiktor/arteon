@@ -27,7 +27,7 @@
       "name": "Generator de favicon - creator gratuit de pictograme pentru site-uri web",
       "alternateName": ["Generator favicon.ico și pictograme PNG"],
       "applicationCategory": "DesignApplication",
-      "applicationSubCategory": "IconGenerator",
+      "applicationSubCategory": "FaviconGenerator",
       "description": "Generator gratuit de favicon. Creați favicon.ico și pictograme PNG 16x16, 32x32, 180x180, 192x192 și 512x512 fără limite și fără a trimite fișiere la un server. Procesarea are loc local în browser.",
       "featureList": [
         "Generare favicon.ico (16x16, 32x32, 48x48 într-un singur fișier)",

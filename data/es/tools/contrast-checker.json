@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Comprobador de contraste y legibilidad de colores online",
+      "name": "Comprobador de contraste y legibilidad de colores — WCAG 2.1",
       "alternateName": [
         "Probador de legibilidad de colores",
         "Comprobador de contraste de texto y fondo",
@@ -53,7 +53,7 @@
       ]
     },
     "howTo": {
-      "name": "Cómo comprobar el contraste y la legibilidad de colores online",
+      "name": "Cómo comprobar el contraste y la legibilidad de colores",
       "description": "Cómo comprobar la legibilidad de colores de texto y fondo según el estándar WCAG. Introduzca los colores, lea la relación de contraste y utilice la función de coincidencia automática.",
       "steps": [
         {

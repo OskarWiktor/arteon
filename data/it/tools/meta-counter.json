@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Verificatore di meta titolo e descrizione online",
+      "name": "Verificatore di meta titolo e descrizione — anteprima Google",
       "alternateName": ["Verificatore meta titolo con anteprima Google", "Contatore caratteri meta titolo", "Anteprima SERP Google", "Verificatore lunghezza SEO"],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "SEOTool",
@@ -155,38 +155,6 @@
           "icon": "RiRuler2Line",
           "title": "La larghezza in pixel e diversa dall'atteso",
           "description": "Lo strumento misura la larghezza con un font standard simile a quello utilizzato da Google. Il risultato può variare leggermente a seconda del browser."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Consigli per meta titoli efficaci",
-      "description": "Un buon meta titolo influenza il tasso di clic nei risultati di ricerca:",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiSearchLine",
-          "title": "Parola chiave principale all'inizio",
-          "description": "Posiziona la parola chiave più importante all'inizio del titolo per una migliore visibilità."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "Rispettare l'intervallo ottimale",
-          "description": "50-60 caratteri / 450-580 pixel - l'intervallo che generalmente viene mostrato per intero."
-        },
-        {
-          "icon": "RiEditLine",
-          "title": "Essere descrittivi e unici",
-          "description": "Ogni pagina deve avere un titolo unico che descriva con precisione il suo contenuto."
-        },
-        {
-          "icon": "RiMegaphoneLine",
-          "title": "Invitare al clic",
-          "description": "Usa termini che invoglino a cliccare, senza cadere nel clickbait."
         }
       ]
     },

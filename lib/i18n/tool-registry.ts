@@ -233,7 +233,7 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
       },
       de: {
         slug: 'online-bildeditor',
-        title: 'Online-Bildeditor',
+        title: 'Bildeditor',
         description: 'Bereiten Sie den perfekten Zuschnitt für Social Media oder Ihre Website vor. Wählen Sie ein fertiges Format oder geben Sie eigene Maße ein.',
       },
       es: {

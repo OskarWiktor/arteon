@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Bild-Farbextraktor online - Farbpalette aus Bildern",
-      "alternateName": ["Farben aus Bildern extrahieren", "Online-Farbpaletten-Extraktor", "Dominante Farben aus einem Foto", "Farbcodes aus Bildern auslesen", "Farben aus Logo extrahieren"],
+      "name": "Bild-Farbextraktor — Farbpalette aus Fotos und Logos",
+      "alternateName": ["Farben aus Bildern extrahieren", "Farbpaletten-Extraktor", "Dominante Farben aus einem Foto", "Farbcodes aus Bildern auslesen", "Farben aus Logo extrahieren"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
-      "description": "Kostenloser Online-Bild-Farbextraktor. Laden Sie ein Foto oder Logo hoch und erhalten Sie eine Palette von bis zu 12 dominanten Farben mit HEX- und RGB-Codes. Verarbeitung lokal im Browser.",
+      "description": "Kostenloser Bild-Farbextraktor. Laden Sie ein Foto oder Logo hoch und erhalten Sie eine Palette von bis zu 12 dominanten Farben mit HEX- und RGB-Codes. Verarbeitung lokal im Browser.",
       "featureList": [
         "Extraktion von bis zu 12 dominanten Farben",
         "HEX- und RGB-Codes für jede Farbe",

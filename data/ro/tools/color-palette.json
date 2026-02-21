@@ -27,15 +27,15 @@
       "name": "Generator de palete de culori",
       "alternateName": [
         "Generator de scheme de culori",
-        "Generator de culori online",
+        "Generator de culori HEX",
         "Creator de palete de culori",
         "Instrument de potrivire culori",
-        "Palete de culori online",
+        "Palete de culori gratuite",
         "Generator de armonie a culorilor"
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Generator gratuit de palete de culori online. Introduceți o culoare HEX și instrumentul va genera 9 scheme: monocromatică, analogică, complementară, triadică, split-complementară, pastel, întunecata, tonală și minimalistă. Fiecare culoare poate fi copiată cu codul HEX și valoarea HSL.",
+      "description": "Generator gratuit de palete de culori. Introduceți o culoare HEX și instrumentul va genera 9 scheme: monocromatică, analogică, complementară, triadică, split-complementară, pastel, întunecata, tonală și minimalistă. Fiecare culoare poate fi copiată cu codul HEX și valoarea HSL.",
       "featureList": [
         "Schemă monocromatică – nuanțe ale unei singure culori",
         "Schemă analogică – culori vecine pe roata culorilor",

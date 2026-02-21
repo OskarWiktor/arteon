@@ -18,8 +18,8 @@
   },
   "schemas": {
     "software": {
-      "name": "Free email signature generator online",
-      "alternateName": ["HTML email signature generator", "Email signature creator", "Email footer generator online"],
+      "name": "Free email signature generator — HTML for Gmail and Outlook",
+      "alternateName": ["HTML email signature generator", "Email signature creator", "Email footer generator"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
       "description": "Free HTML email signature generator. Add contact details, CTA link, and social media profiles, then copy the ready code into Gmail, Outlook, and other email clients.",

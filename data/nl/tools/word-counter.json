@@ -24,13 +24,13 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis woorden- en tekenteller online",
+      "name": "Gratis woorden- en tekenteller met SEO-evaluatie",
       "alternateName": [
         "Woordenteller met tekstlengte-evaluatie",
-        "Online tekenteller",
+        "Gratis tekenteller",
         "Woordenteltool voor copywriters",
         "Leestijdcalculator",
-        "Online woordenteller",
+        "Woordenteller voor webcontent",
         "Controleer hoeveel woorden een tekst heeft",
         "Woordenteller voor SEO",
         "Optimale tekstlengte voor een blogpost"
@@ -77,7 +77,7 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Gratis woordenteller online - tel en beoordeel tekstlengte",
+      "title": "Gratis woordenteller — tel en beoordeel tekstlengte",
       "html": "<p class=\"text-mid\">Deze woordenteltool laat u snel de lengte van elke tekst controleren. Plak uw inhoud en de teller telt woorden, tekens en alinea's. U ziet ook hoeveel minuten het kost om te lezen en of de lengte past bij het geselecteerde paginatype.</p><p class=\"text-mid mt-3\">Elk paginatype heeft een ander doel - een productbeschrijving beantwoordt kopersvragen, een blogpost behandelt een onderwerp diepgaand en een servicepagina legt uit wat de klant ontvangt. De teller toont bereiken voor elk type op basis van analyses van goed rankende inhoud.</p>"
     },
     {

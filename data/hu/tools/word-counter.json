@@ -24,13 +24,13 @@
   },
   "schemas": {
     "software": {
-      "name": "Ingyenes szó- és karakterszámláló online",
+      "name": "Ingyenes szó- és karakterszámláló SEO értékeléssel",
       "alternateName": [
         "Szószámláló szöveghossz-értékeléssel",
-        "Online karakterszámláló",
+        "Ingyenes karakterszámláló",
         "Szószámláló eszköz szövegíróknak",
         "Olvasási idő számoló",
-        "Online szószámláló",
+        "Szószámláló webtartalomhoz",
         "Ellenőrizze hány szóból áll egy szöveg",
         "Szószámláló SEO-hoz",
         "Optimális szöveghossz blogcikkhez"
@@ -77,7 +77,7 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ingyenes szószámláló online - számolja és értékelje a szöveghosszt",
+      "title": "Ingyenes szószámláló — számolja és értékelje a szöveghosszt",
       "html": "<p class=\"text-mid\">Ez a szószámláló eszköz lehetővé teszi bármely szöveg hosszának gyors ellenőrzését. Illessze be a tartalmat, és a számláló megszámolja a szavakat, karaktereket és bekezdéseket. Látni fogja azt is, hány percet vesz igénybe az olvasás, és hogy a hossz megfelel-e a kiválasztott oldatípusnak.</p><p class=\"text-mid mt-3\">Minden oldatípusnak más célja van - egy termékleírás a vásárlók kérdéseire válaszol, egy blogcikk mélyen feldolgoz egy témát, egy szolgáltatás oldal pedig elmagyarázza, mit kap az ügyfél. A számláló tartományokat mutat minden típushoz, a jól rangsoroló tartalom elemzései alapján.</p>"
     },
     {

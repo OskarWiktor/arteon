@@ -18,14 +18,14 @@
   },
   "schemas": {
     "software": {
-      "name": "Editor de imagens online – recortar e redimensionar",
+      "name": "Editor de imagens gratuito — recortar, redimensionar e converter",
       "alternateName": [
-        "Recortar imagens online",
-        "Redimensionar imagens online",
+        "Recortar imagens gratuito",
+        "Redimensionar imagens gratuito",
         "Recortar imagens Instagram",
         "Tamanho de capa Facebook",
         "Criar banner LinkedIn",
-        "Editor de fotos online gratuito",
+        "Editor de fotos gratuito",
         "Recortar imagem para redes sociais",
         "Redimensionar imagem OG"
       ],
@@ -43,7 +43,7 @@
       ]
     },
     "howTo": {
-      "name": "Como recortar imagens online",
+      "name": "Como recortar imagens em segundos",
       "description": "Recorte imagens para redes sociais e sites. Utilize modelos prontos ou introduza as suas próprias dimensões.",
       "steps": [
         { "name": "Importar uma imagem", "text": "Arraste e largue uma imagem ou selecione um ficheiro. Formatos suportados: JPG, PNG, WebP." },

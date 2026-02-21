@@ -24,14 +24,14 @@
   },
   "schemas": {
     "software": {
-      "name": "Gerador de paletas de cores online – 9 paletas a partir de uma cor",
+      "name": "Gerador de paletas de cores — 9 paletas a partir de uma cor",
       "alternateName": [
-        "Gerador de paletas online",
+        "Gerador de paletas gratuito",
         "Esquemas de cores a partir de uma cor",
         "Gerador de cores complementares",
         "Paleta monocromática",
         "Criador de paletas de cores",
-        "Paleta triádica online",
+        "Paleta triádica gratuita",
         "Gerador de cores harmoniosas"
       ],
       "applicationCategory": "DesignApplication",

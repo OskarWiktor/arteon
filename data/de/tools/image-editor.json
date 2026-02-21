@@ -19,13 +19,13 @@
     },
     "third": {
       "href": "/de/werkzeuge/online-bildeditor",
-      "label": "Online-Bildeditor"
+      "label": "Bildeditor"
     }
   },
   "schemas": {
     "software": {
-      "name": "Online-Bildeditor - Zuschneiden und Größe ändern",
-      "alternateName": ["Bilder online zuschneiden", "Bildgröße ändern online", "Instagram-Bilder zuschneiden", "Facebook-Cover-Größe", "LinkedIn-Banner erstellen", "Runde Avatare erstellen"],
+      "name": "Bildeditor — Zuschneiden, Größe ändern und konvertieren",
+      "alternateName": ["Bilder zuschneiden Tool", "Bildgröße ändern kostenlos", "Instagram-Bilder zuschneiden", "Facebook-Cover-Größe", "LinkedIn-Banner erstellen", "Runde Avatare erstellen"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
       "description": "Bilder zuschneiden und skalieren für Social Media und Websites. Fertige Größenvorlagen für Instagram, Facebook, LinkedIn. Drei Zuschnittsformen, Export als PNG, JPG, WebP.",
@@ -40,7 +40,7 @@
       ]
     },
     "howTo": {
-      "name": "So schneiden Sie Bilder online zu",
+      "name": "So schneiden Sie Bilder in Sekunden zu",
       "description": "Schneiden Sie Bilder für Social Media und Websites zu. Verwenden Sie fertige Vorlagen oder geben Sie eigene Pixelmaße ein.",
       "steps": [
         {

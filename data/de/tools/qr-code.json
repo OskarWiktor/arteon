@@ -18,9 +18,9 @@
   },
   "schemas": {
     "software": {
-      "name": "Kostenloser QR-Code-Generator online - PNG und SVG",
+      "name": "Kostenloser QR-Code-Generator — PNG und SVG",
       "alternateName": [
-        "QR-Code erstellen online",
+        "QR-Code erstellen kostenlos",
         "vCard-QR-Code-Generator",
         "QR-Code für Visitenkarten",
         "QR-Code-Generator ohne Anmeldung",
@@ -29,7 +29,7 @@
       ],
       "applicationCategory": "UtilityApplication",
       "applicationSubCategory": "QRCodeGenerator",
-      "description": "Kostenloser Online-QR-Code-Generator. Erstellen Sie QR-Codes für URLs, vCards, E-Mail, Telefon und Freitext. Export als PNG und SVG. Anpassbare Farben, Größe und Fehlerkorrektur.",
+      "description": "Kostenloser QR-Code-Generator. Erstellen Sie QR-Codes für URLs, vCards, E-Mail, Telefon und Freitext. Export als PNG und SVG. Anpassbare Farben, Größe und Fehlerkorrektur.",
       "featureList": [
         "5 Datentypen: URL, Text, vCard, E-Mail, Telefon",
         "Export als PNG und SVG",

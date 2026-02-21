@@ -25,10 +25,10 @@
   "schemas": {
     "software": {
       "name": "Kleurpalettengenerator",
-      "alternateName": ["Kleurschema generator", "Online kleurgenerator", "Kleurpalet maker", "Kleurafstemmingstool", "Kleurpalet online", "Kleurharmonie generator"],
+      "alternateName": ["Kleurschema generator", "HEX kleurgenerator", "Kleurpalet maker", "Kleurafstemmingstool", "Kleurpalet gratis", "Kleurharmonie generator"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Gratis online kleurpalettengenerator. Voer één HEX-kleur in en de tool genereert 9 schema's: monochromatisch, analoog, complementair, triadisch, split-complementair, pastel, donker, tonaal en minimalistisch. Elke kleur kan worden gekopieerd met zijn HEX-code en HSL-waarde.",
+      "description": "Gratis kleurpalettengenerator. Voer één HEX-kleur in en de tool genereert 9 schema's: monochromatisch, analoog, complementair, triadisch, split-complementair, pastel, donker, tonaal en minimalistisch. Elke kleur kan worden gekopieerd met zijn HEX-code en HSL-waarde.",
       "featureList": [
         "Monochromatisch schema – tinten van één kleur",
         "Analoog schema – naburige kleuren op het kleurenwiel",

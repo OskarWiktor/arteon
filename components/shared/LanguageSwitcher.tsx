@@ -108,7 +108,8 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
 
   const popularSorted = [...popular].sort((a, b) => a.name.localeCompare(b.name));
   const otherSorted = [...other].sort((a, b) => a.name.localeCompare(b.name));
-  const otherCols = splitIntoColumns(otherSorted, 5);
+  const popularCols = splitIntoColumns(popularSorted, 2);
+  const otherCols = splitIntoColumns(otherSorted, 3);
   const popularMobileCols = splitIntoColumns(popularSorted, 2);
   const otherMobileCols = splitIntoColumns(otherSorted, 2);
 
@@ -159,7 +160,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
               style={{ top: headerBottom }}
             >
               <Wrapper>
-                <div className="grid grid-cols-7 gap-0">
+                <div className="grid grid-cols-6 gap-0">
                   {/* Column 1: Current language */}
                   <div className="border-primary-light border-r pr-4">
                     <div className="text-primary flex items-center gap-3 rounded-xl bg-white px-4 py-3">
@@ -173,15 +174,22 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
                     </div>
                   </div>
 
-                  {/* Column 2: Popular languages (single column) */}
+                  {/* Columns 2-3: Popular languages (2 columns) */}
                   {popularSorted.length > 0 && (
-                    <div className="border-primary-light border-r pr-4 pl-6">
-                      <span className="text-light mb-2 block px-3 text-[11px] font-semibold tracking-wider uppercase">{t.popularLabel}</span>
-                      <div className="flex flex-col">{popularSorted.map(linkItem)}</div>
-                    </div>
+                    <>
+                      <div className="border-primary-light border-r pr-4 pl-6">
+                        <span className="text-light mb-2 block px-3 text-[11px] font-semibold tracking-wider uppercase">{t.popularLabel}</span>
+                        <div className="flex flex-col">{popularCols[0].map(linkItem)}</div>
+                      </div>
+                      {popularCols[1]?.length > 0 && (
+                        <div className="border-primary-light border-r pt-5 pr-4">
+                          <div className="flex flex-col">{popularCols[1].map(linkItem)}</div>
+                        </div>
+                      )}
+                    </>
                   )}
 
-                  {/* Columns 3-7: Other languages (5 columns, alphabetical top-to-bottom) */}
+                  {/* Columns 4-6: Other languages (3 columns, alphabetical top-to-bottom) */}
                   {otherSorted.length > 0 && (
                     <>
                       <div className="pl-6">
@@ -196,16 +204,6 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
                       {otherCols[2]?.length > 0 && (
                         <div className="pt-5">
                           <div className="flex flex-col">{otherCols[2].map(linkItem)}</div>
-                        </div>
-                      )}
-                      {otherCols[3]?.length > 0 && (
-                        <div className="pt-5">
-                          <div className="flex flex-col">{otherCols[3].map(linkItem)}</div>
-                        </div>
-                      )}
-                      {otherCols[4]?.length > 0 && (
-                        <div className="pt-5">
-                          <div className="flex flex-col">{otherCols[4].map(linkItem)}</div>
                         </div>
                       )}
                     </>

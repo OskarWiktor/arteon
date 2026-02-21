@@ -24,9 +24,9 @@
   },
   "schemas": {
     "software": {
-      "name": "JPG- und PNG-zu-WebP-Konverter online - ohne Limits",
+      "name": "JPG- und PNG-zu-WebP-Konverter — kostenlos, ohne Limits",
       "alternateName": [
-        "WebP-Konverter online",
+        "WebP-Konverter kostenlos",
         "JPG in WebP umwandeln",
         "PNG in WebP konvertieren",
         "Bilder in WebP umwandeln",
@@ -35,7 +35,7 @@
       ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Kostenloser Online-Konverter von JPG und PNG zu WebP. Reduzieren Sie die Dateigröße um bis zu 35 % ohne Qualitätsverlust. Stapelverarbeitung, automatische Optimierung, lokale Verarbeitung.",
+      "description": "Kostenloser Konverter von JPG und PNG zu WebP. Reduzieren Sie die Dateigröße um bis zu 35 % ohne Qualitätsverlust. Stapelverarbeitung, automatische Optimierung, lokale Verarbeitung.",
       "featureList": [
         "JPG- und PNG-Dateien zu WebP konvertieren",
         "Dateigröße um bis zu 35 % reduzieren",

@@ -24,10 +24,10 @@
   },
   "schemas": {
     "software": {
-      "name": "Generatore di favicon online - favicon.ico e icone PNG",
-      "alternateName": ["Creare un favicon online", "Generatore favicon.ico", "Generatore Apple Touch Icon", "Creare icone PWA", "Favicon da un'immagine"],
+      "name": "Generatore di favicon — favicon.ico e icone PNG",
+      "alternateName": ["Creare un favicon gratis", "Generatore favicon.ico", "Generatore Apple Touch Icon", "Creare icone PWA", "Favicon da un'immagine"],
       "applicationCategory": "DesignApplication",
-      "applicationSubCategory": "IconGenerator",
+      "applicationSubCategory": "FaviconGenerator",
       "description": "Generatore di favicon gratuito. favicon.ico e icone PNG 16x16, 32x32, 180x180, 192x192 e 512x512. site.webmanifest opzionale. Compatibile con Lighthouse.",
       "featureList": [
         "favicon.ico (16x16 + 32x32 combinati)",

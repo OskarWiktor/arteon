@@ -24,10 +24,10 @@
   },
   "schemas": {
     "software": {
-      "name": "Farbkontrast-Checker online",
+      "name": "Farbkontrast-Checker",
       "alternateName": [
         "WCAG-Kontrastprüfer",
-        "Online-Lesbarkeitstest für Farben",
+        "Lesbarkeitstest für Farben",
         "Textkontrast-Checker WCAG 2.1",
         "AA- und AAA-Kontrast-Checker",
         "Farben auf Barrierefreiheit prüfen",

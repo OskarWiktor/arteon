@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Online-Favicon-Generator - favicon.ico und PNG-Symbole",
-      "alternateName": ["Favicon erstellen online", "favicon.ico Generator", "Apple Touch Icon Generator", "PWA-Icons erstellen", "Favicon aus Bild generieren", "Website-Symbol erstellen"],
+      "name": "Favicon-Generator — favicon.ico und PNG-Symbole",
+      "alternateName": ["Favicon erstellen kostenlos", "favicon.ico Generator", "Apple Touch Icon Generator", "PWA-Icons erstellen", "Favicon aus Bild generieren", "Website-Symbol erstellen"],
       "applicationCategory": "DesignApplication",
-      "applicationSubCategory": "IconGenerator",
-      "description": "Kostenloser Online-Favicon-Generator. favicon.ico und PNG-Symbole 16x16, 32x32, 180x180, 192x192 und 512x512. site.webmanifest optional. Lighthouse-konform.",
+      "applicationSubCategory": "FaviconGenerator",
+      "description": "Kostenloser Favicon-Generator. favicon.ico und PNG-Symbole 16x16, 32x32, 180x180, 192x192 und 512x512. site.webmanifest optional. Lighthouse-konform.",
       "featureList": [
         "favicon.ico (16x16 + 32x32 kombiniert)",
         "PNG-Symbole: 16x16, 32x32, 180x180, 192x192, 512x512",

@@ -24,13 +24,13 @@
   },
   "schemas": {
     "software": {
-      "name": "Contador de palabras y caracteres online gratuito",
+      "name": "Contador de palabras y caracteres gratuito con evaluación SEO",
       "alternateName": [
         "Contador de palabras con evaluación de extensión de texto",
-        "Contador de caracteres online",
+        "Contador de caracteres gratuito",
         "Herramienta de recuento de palabras para redactores",
         "Calculadora de tiempo de lectura",
-        "Contador de palabras online",
+        "Contador de palabras para contenido web",
         "Comprobar cuántas palabras tiene un texto",
         "Contador de palabras para SEO",
         "Extensión óptima de texto para un artículo de blog"
@@ -79,7 +79,7 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Contador de palabras online gratuito: cuente y evalúe la extensión del texto",
+      "title": "Contador de palabras gratuito — cuente y evalúe la extensión del texto",
       "html": "<p class=\"text-mid\">Esta herramienta de conteo de palabras le permite comprobar rápidamente la extensión de cualquier texto. Pegue su contenido y el contador sumará palabras, caracteres y párrafos. También verá cuántos minutos se tarda en leer y si la extensión se ajusta al tipo de página que seleccione.</p><p class=\"text-mid mt-3\">Cada tipo de página tiene un propósito diferente: una descripción de producto responde a las preguntas del comprador, un artículo de blog profundiza en un tema y una página de servicio explica lo que recibirá el cliente. El contador muestra rangos para cada uno de estos tipos basados en análisis de contenido bien posicionado.</p>"
     },
     {
@@ -177,7 +177,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "¿Para quién es el contador de palabras online?",
+      "title": "¿Para quién es el contador de palabras?",
       "description": "Una herramienta de conteo de palabras para redactores y más: estos son quienes más usan el contador:",
       "grid": "three",
       "items": [

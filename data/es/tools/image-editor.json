@@ -19,24 +19,24 @@
     },
     "third": {
       "href": "/es/herramientas/editor-de-imagenes-en-linea",
-      "label": "Editor de imágenes online"
+      "label": "Editor de imágenes"
     }
   },
   "schemas": {
     "software": {
-      "name": "Editor de imágenes gratuito online",
+      "name": "Editor de imágenes gratuito — recortar, redimensionar y convertir",
       "alternateName": [
-        "Redimensionador de imágenes online",
-        "Recortador de imágenes online",
+        "Redimensionador de imágenes gratuito",
+        "Recortador de imágenes",
         "Herramienta de tamaño de imagen para Instagram",
         "Herramienta de tamaño de imagen para Facebook",
         "Convertidor de JPG a WebP",
         "Herramienta de foto de perfil circular",
-        "Compresión de imágenes online"
+        "Compresión de imágenes"
       ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Editor de imágenes gratuito online para redimensionar, recortar y convertir formatos. Formatos predefinidos para Instagram, Facebook y LinkedIn. Creación de avatares circulares. Exportación a JPG, PNG y WebP con control de calidad. Procesamiento local en el navegador.",
+      "description": "Editor de imágenes gratuito para redimensionar, recortar y convertir formatos. Formatos predefinidos para Instagram, Facebook y LinkedIn. Creación de avatares circulares. Exportación a JPG, PNG y WebP con control de calidad. Procesamiento local en el navegador.",
       "featureList": [
         "Redimensionar imágenes a cualquier dimensión",
         "Recortar con selección de área interactiva",
@@ -84,7 +84,7 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Redimensione imágenes online: recorte, convierta y comprima en una sola herramienta",
+      "title": "Redimensione imágenes: recorte, convierta y comprima en una sola herramienta",
       "html": "<p class=\"text-mid\">El editor de imágenes online le permite adaptar rápidamente las imágenes a dimensiones específicas. Puede redimensionar una imagen a cualquier dimensión en píxeles, seleccionar un formato predefinido para redes sociales o recortar una sección de la imagen con un encuadre preciso.</p><p class=\"text-mid mt-3\">Además de redimensionar, la herramienta ofrece conversión de formato (JPG, PNG, WebP), creación de avatares circulares y control de calidad de compresión.</p>"
     },
     {
@@ -93,7 +93,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Cómo redimensionar una imagen online",
+      "title": "Cómo redimensionar una imagen en segundos",
       "description": "Editar una imagen tarda solo unos segundos:",
       "grid": "three",
       "items": [

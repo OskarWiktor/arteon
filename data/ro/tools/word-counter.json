@@ -24,13 +24,13 @@
   },
   "schemas": {
     "software": {
-      "name": "Contor gratuit de cuvinte și caractere online",
+      "name": "Contor gratuit de cuvinte și caractere cu evaluare SEO",
       "alternateName": [
         "Contor de cuvinte cu evaluarea lungimii textului",
-        "Contor de caractere online",
+        "Contor de caractere gratuit",
         "Instrument de numărare a cuvintelor pentru copywriteri",
         "Calculator de timp de citire",
-        "Contor de cuvinte online",
+        "Contor de cuvinte pentru conținut web",
         "Verificați câte cuvinte are un text",
         "Contor de cuvinte pentru SEO",
         "Lungimea optimă a textului pentru un articol de blog"
@@ -77,7 +77,7 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Contor gratuit de cuvinte online - numărați și evaluați lungimea textului",
+      "title": "Contor gratuit de cuvinte — numărați și evaluați lungimea textului",
       "html": "<p class=\"text-mid\">Acest instrument de numărare a cuvintelor vă permite să verificați rapid lungimea oricărui text. Lipiți conținutul și contorul va număra cuvintele, caracterele și paragrafele. Veți vedea și câte minute durează citirea și dacă lungimea se potrivește tipului de pagină selectat.</p><p class=\"text-mid mt-3\">Fiecare tip de pagină are un scop diferit - o descriere de produs răspunde la întrebările cumpărătorilor, un articol de blog acoperă un subiect în profunzime, iar o pagină de serviciu explică ce va primi clientul. Contorul arată intervale pentru fiecare tip, bazate pe analize ale conținutului care se clasează bine.</p>"
     },
     {

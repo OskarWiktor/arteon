@@ -24,8 +24,8 @@
   },
   "schemas": {
     "software": {
-      "name": "Editor di immagini online - ritaglia e ridimensiona",
-      "alternateName": ["Ritagliare immagini online", "Ridimensionare immagini online", "Ritagliare immagini Instagram", "Dimensione copertina Facebook", "Creare banner LinkedIn"],
+      "name": "Editor di immagini gratuito — ritaglia, ridimensiona e converti",
+      "alternateName": ["Ritagliare immagini gratis", "Ridimensionare immagini gratis", "Ritagliare immagini Instagram", "Dimensione copertina Facebook", "Creare banner LinkedIn"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
       "description": "Ritaglia e ridimensiona le tue immagini per i social media e i siti web. Modelli per Instagram, Facebook, LinkedIn. Tre forme di ritaglio, esportazione in PNG, JPG, WebP.",
@@ -40,7 +40,7 @@
       ]
     },
     "howTo": {
-      "name": "Come ritagliare immagini online",
+      "name": "Come ritagliare immagini in pochi secondi",
       "description": "Ritaglia immagini per i social media e i siti web. Usa modelli pronti all'uso o inserisci le tue dimensioni personalizzate.",
       "steps": [
         {

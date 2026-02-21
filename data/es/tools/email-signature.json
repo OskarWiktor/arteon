@@ -18,8 +18,8 @@
   },
   "schemas": {
     "software": {
-      "name": "Generador gratuito de firma de correo online",
-      "alternateName": ["Generador de firma de correo HTML", "Creador de firma de correo electrónico", "Generador de pie de email online"],
+      "name": "Generador gratuito de firma de correo HTML",
+      "alternateName": ["Generador de firma de correo HTML", "Creador de firma de correo electrónico", "Generador de pie de email gratuito"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
       "description": "Generador gratuito de firma de correo HTML. Añada datos de contacto, enlace CTA y perfiles de redes sociales, luego copie el código listo en Gmail, Outlook y otros clientes de correo.",

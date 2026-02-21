@@ -25,7 +25,13 @@
   "schemas": {
     "software": {
       "name": "Générateur de signature e-mail HTML – Gmail et Outlook",
-      "alternateName": ["Créer une signature e-mail en ligne", "Générateur de signature HTML", "Générateur de signature Gmail", "Générateur de signature Outlook", "Signature e-mail professionnelle"],
+      "alternateName": [
+        "Créer une signature e-mail gratuitement",
+        "Générateur de signature HTML",
+        "Générateur de signature Gmail",
+        "Générateur de signature Outlook",
+        "Signature e-mail professionnelle"
+      ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
       "description": "Générateur gratuit de signature e-mail HTML. 8 mises en page, couleurs personnalisables, icônes de réseaux sociaux, lien CTA. Pour Gmail, Outlook et autres clients. Exécution locale.",
@@ -111,89 +117,10 @@
       "variant": "line"
     },
     {
-      "type": "sectionSteps",
-      "title": "8 mises en page – laquelle vous convient ?",
-      "description": "Chaque mise en page organise les éléments différemment :",
-      "grid": "four",
-      "items": [
-        {
-          "icon": "RiLayoutLine",
-          "title": "Standard",
-          "description": "Disposition classique avec photo de profil à gauche et coordonnées à droite."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Barre supérieure",
-          "description": "Barre de couleur en haut avec nom et poste, coordonnées en dessous."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Labels à gauche",
-          "description": "Labels (téléphone, e-mail, site web) à gauche, valeurs à droite."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Centré",
-          "description": "Tous les éléments centrés – idéal pour les secteurs créatifs."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Compact",
-          "description": "Gain de place – toutes les informations en quelques lignes."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Deux colonnes",
-          "description": "Photo et nom à gauche, coordonnées et réseaux sociaux à droite."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Minimaliste",
-          "description": "Réduit à l'essentiel – nom, poste et un lien."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Barre inférieure",
-          "description": "Coordonnées en haut, barre de couleur avec CTA et réseaux sociaux en bas."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionDemo",
       "title": "Que peut contenir la signature ?",
       "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Données personnelles</strong> – nom, poste, entreprise, service</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Coordonnées</strong> – téléphone, e-mail, site web, adresse postale</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Images</strong> – photo de profil et/ou logo d'entreprise (URL)</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Réseaux sociaux</strong> – 12 plateformes avec icônes automatiques</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Lien CTA</strong> – bouton d'action (par ex. Prendre rendez-vous)</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Disclaimer</strong> – mention légale / information RGPD</span></div></div>",
       "html": "<p class=\"text-mid mb-4\">Le générateur offre de nombreuses options de personnalisation pour tous les éléments d'une signature e-mail professionnelle :</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Données personnelles</strong> – nom, poste, entreprise et service.</li><li><strong>Coordonnées</strong> – téléphone, e-mail, site web et adresse postale.</li><li><strong>Éléments visuels</strong> – photo de profil, logo, schéma de couleurs et police.</li><li><strong>Réseaux sociaux</strong> – liens vers 12 plateformes avec icônes générées automatiquement.</li><li><strong>Bouton CTA</strong> – lien d'action optionnel avec texte et URL personnalisés.</li><li><strong>Disclaimer</strong> – mention légale en petite taille en bas de la signature.</li></ul>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Options de design en détail",
-      "description": "Personnalisez chaque aspect de la signature selon votre marque :",
-      "grid": "three",
-      "items": [
-        {
-          "icon": "RiPaletteLine",
-          "title": "Schéma de couleurs",
-          "description": "Couleur principale et couleur de texte librement configurables. Influence les séparateurs, liens et icônes de réseaux sociaux."
-        },
-        {
-          "icon": "RiFontSize",
-          "title": "Police et taille",
-          "description": "Choisissez parmi plusieurs polices et ajustez la taille pour le nom, le poste et les coordonnées."
-        },
-        {
-          "icon": "RiSettings3Line",
-          "title": "Espacements et styles",
-          "description": "Espacements entre éléments, épaisseur des séparateurs, taille des icônes et styles de texte réglables individuellement."
-        }
-      ]
     },
     {
       "type": "gap",

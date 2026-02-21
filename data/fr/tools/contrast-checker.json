@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Vérificateur de contraste et lisibilité des couleurs en ligne",
+      "name": "Vérificateur de contraste et lisibilité des couleurs — WCAG 2.1",
       "alternateName": [
         "Vérificateur de contraste WCAG",
         "Testeur d'accessibilité des couleurs",

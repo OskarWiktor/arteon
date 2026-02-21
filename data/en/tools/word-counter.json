@@ -24,13 +24,13 @@
   },
   "schemas": {
     "software": {
-      "name": "Free word and character counter online",
+      "name": "Free word and character counter with SEO evaluation",
       "alternateName": [
         "Word counter with text length evaluation",
-        "Online character counter",
+        "Character counter tool",
         "Word counting tool for copywriters",
         "Reading time calculator",
-        "Online word counter",
+        "Word counter for content writers",
         "Check how many words a text has",
         "Word counter for SEO",
         "Optimal text length for a blog post"
@@ -77,7 +77,7 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Free word counter online - count and evaluate text length",
+      "title": "Free word counter — count and evaluate text length",
       "html": "<p class=\"text-mid\">This word counting tool lets you quickly check the length of any text. Paste your content and the counter will tally words, characters, and paragraphs. You will also see how many minutes it takes to read and whether the length fits the page type you select.</p><p class=\"text-mid mt-3\">Every page type has a different purpose - a product description answers buyer questions, a blog post covers a topic in depth, and a service page explains what the client will receive. The counter shows ranges for each of these types based on analyses of content that ranks well.</p>"
     },
     {
@@ -175,7 +175,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Who is the online word counter for?",
+      "title": "Who is the word counter for?",
       "description": "A word counting tool for copywriters and beyond - here is who uses the counter most:",
       "grid": "three",
       "items": [

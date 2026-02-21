@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Kleurextractor uit afbeelding online - gratis palettengenerator",
+      "name": "Kleurextractor uit afbeelding — gratis palettengenerator",
       "alternateName": ["Extraheer kleurenpalet uit een foto of logo"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
-      "description": "Gratis online kleurextractor uit afbeeldingen. Upload een foto, logo of afbeelding en krijg een palet van tot 12 dominante kleuren met HEX- en RGB-codes. Verwerking vindt plaats in de browser - bestanden worden niet naar een server gestuurd.",
+      "description": "Gratis kleurextractor uit afbeeldingen. Upload een foto, logo of afbeelding en krijg een palet van tot 12 dominante kleuren met HEX- en RGB-codes. Verwerking vindt plaats in de browser - bestanden worden niet naar een server gestuurd.",
       "featureList": [
         "Automatische extractie van tot 12 dominante kleuren",
         "Analyse van foto's, logo's en vectorafbeeldingen",

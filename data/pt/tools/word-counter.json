@@ -24,9 +24,9 @@
   },
   "schemas": {
     "software": {
-      "name": "Contador de palavras e caracteres gratuito online",
+      "name": "Contador de palavras e caracteres gratuito com avaliação SEO",
       "alternateName": [
-        "Contador de palavras online",
+        "Contador de palavras gratuito",
         "Contador de caracteres",
         "Verificador de comprimento de texto SEO",
         "Contador de parágrafos",
@@ -167,7 +167,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Para quem é útil o contador de palavras online?",
+      "title": "Para quem é útil o contador de palavras?",
       "description": "Uma ferramenta de contagem de palavras para redatores e muito mais: eis quem mais utiliza o contador:",
       "grid": "three",
       "items": [

@@ -18,11 +18,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Image color extractor online - free palette generator",
+      "name": "Image color extractor — get a palette from any photo",
       "alternateName": ["Extract color palette from a photo or logo"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
-      "description": "Free online image color extractor. Upload a photo, logo, or graphic and get a palette of up to 12 dominant colors with HEX and RGB codes. Processing happens in the browser - files are not sent to a server.",
+      "description": "Free image color extractor. Upload a photo, logo, or graphic and get a palette of up to 12 dominant colors with HEX and RGB codes. Processing happens in the browser - files are not sent to a server.",
       "featureList": [
         "Automatic extraction of up to 12 dominant colors",
         "Analysis of photos, logos, and vector graphics",

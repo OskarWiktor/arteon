@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Gerador de assinatura de e-mail HTML – Gmail e Outlook",
-      "alternateName": ["Criar assinatura de e-mail online", "Gerador de assinatura HTML", "Gerador de assinatura Gmail", "Gerador de assinatura Outlook", "Assinatura de e-mail profissional"],
+      "alternateName": ["Criar assinatura de e-mail gratuito", "Gerador de assinatura HTML", "Gerador de assinatura Gmail", "Gerador de assinatura Outlook", "Assinatura de e-mail profissional"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
       "description": "Gerador gratuito de assinatura de e-mail HTML. 8 layouts, cores personalizáveis, ícones de redes sociais, link CTA. Para Gmail, Outlook e outros clientes. Execução local.",
@@ -111,89 +111,10 @@
       "variant": "line"
     },
     {
-      "type": "sectionSteps",
-      "title": "8 layouts – qual lhe convém?",
-      "description": "Cada layout organiza os elementos de forma diferente:",
-      "grid": "four",
-      "items": [
-        {
-          "icon": "RiLayoutLine",
-          "title": "Standard",
-          "description": "Disposição clássica com foto de perfil à esquerda e dados de contacto à direita."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Barra superior",
-          "description": "Barra de cor no topo com nome e cargo, dados de contacto por baixo."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Labels à esquerda",
-          "description": "Labels (telefone, e-mail, site) à esquerda, valores à direita."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Centrado",
-          "description": "Todos os elementos centrados – ideal para setores criativos."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Compacto",
-          "description": "Poupança de espaço – todas as informações em poucas linhas."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Duas colunas",
-          "description": "Foto e nome à esquerda, dados de contacto e redes sociais à direita."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Minimalista",
-          "description": "Reduzido ao essencial – nome, cargo e um link."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Barra inferior",
-          "description": "Dados de contacto em cima, barra de cor com CTA e redes sociais em baixo."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionDemo",
       "title": "O que pode conter a assinatura?",
       "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Dados pessoais</strong> – nome, cargo, empresa, departamento</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Contactos</strong> – telefone, e-mail, site, morada</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Imagens</strong> – foto de perfil e/ou logótipo da empresa (URL)</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Redes sociais</strong> – 12 plataformas com ícones automáticos</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Link CTA</strong> – botão de ação (ex.: Marcar reunião)</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Disclaimer</strong> – aviso legal / informação RGPD</span></div></div>",
       "html": "<p class=\"text-mid mb-4\">O gerador oferece inúmeras opções de personalização para todos os elementos de uma assinatura de e-mail profissional:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Dados pessoais</strong> – nome, cargo, empresa e departamento.</li><li><strong>Contactos</strong> – telefone, e-mail, site e morada.</li><li><strong>Elementos visuais</strong> – foto de perfil, logótipo, esquema de cores e tipo de letra.</li><li><strong>Redes sociais</strong> – links para 12 plataformas com ícones gerados automaticamente.</li><li><strong>Botão CTA</strong> – link de ação opcional com texto e URL personalizados.</li><li><strong>Disclaimer</strong> – aviso legal em tamanho reduzido na parte inferior da assinatura.</li></ul>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Opções de design em detalhe",
-      "description": "Personalize cada aspeto da assinatura segundo a sua marca:",
-      "grid": "three",
-      "items": [
-        {
-          "icon": "RiPaletteLine",
-          "title": "Esquema de cores",
-          "description": "Cor principal e cor do texto livremente configuráveis. Influencia separadores, links e ícones de redes sociais."
-        },
-        {
-          "icon": "RiFontSize",
-          "title": "Tipo de letra e tamanho",
-          "description": "Escolha entre vários tipos de letra e ajuste o tamanho para o nome, cargo e dados de contacto."
-        },
-        {
-          "icon": "RiSettings3Line",
-          "title": "Espaçamentos e estilos",
-          "description": "Espaçamentos entre elementos, espessura dos separadores, tamanho dos ícones e estilos de texto ajustáveis individualmente."
-        }
-      ]
     },
     {
       "type": "gap",

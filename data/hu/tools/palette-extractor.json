@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Színkinyaró képből online - ingyenes palettagenerátor",
+      "name": "Színkinyaró képből — ingyenes palettagenerátor",
       "alternateName": ["Színpaletta kinyarése fényképből vagy logóból"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
-      "description": "Ingyenes online színkinyaró képből. Töltsön fel fényképet, logót vagy grafikát, és kapjon palettát akár 12 domináns színnel HEX és RGB kódokkal. A feldolgozás a böngészőben történik - a fájlok nem kerülnek szerverre.",
+      "description": "Ingyenes színkinyaró képből. Töltsön fel fényképet, logót vagy grafikát, és kapjon palettát akár 12 domináns színnel HEX és RGB kódokkal. A feldolgozás a böngészőben történik - a fájlok nem kerülnek szerverre.",
       "featureList": [
         "Akár 12 domináns szín automatikus kinyarése",
         "Fényképek, logók és vektorgrafikák elemzése",

@@ -14,23 +14,23 @@
   },
   "breadcrumbs": {
     "second": { "href": "/en/tools", "label": "Tools" },
-    "third": { "href": "/en/tools/online-image-editor", "label": "Online image editor" }
+    "third": { "href": "/en/tools/online-image-editor", "label": "Image editor" }
   },
   "schemas": {
     "software": {
-      "name": "Free online image editor",
+      "name": "Free image editor — crop, resize and convert",
       "alternateName": [
-        "Online image resizer",
-        "Online image cropper",
+        "Image resizer for social media",
+        "Image cropper tool",
         "Instagram image size tool",
         "Facebook image size tool",
         "JPG to WebP converter",
         "Circular profile picture tool",
-        "Image compression online"
+        "Image compression tool"
       ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Free online image editor for resizing, cropping, and format conversion. Ready-made presets for Instagram, Facebook, and LinkedIn. Circular avatar creation. Export to JPG, PNG, and WebP with quality control. Local processing in the browser.",
+      "description": "Free image editor for resizing, cropping, and format conversion. Ready-made presets for Instagram, Facebook, and LinkedIn. Circular avatar creation. Export to JPG, PNG, and WebP with quality control. Local processing in the browser.",
       "featureList": [
         "Resize images to any dimensions",
         "Crop with interactive area selection",
@@ -63,13 +63,13 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "sectionInfo",
-      "title": "Resize images online - crop, convert, and compress in one tool",
-      "html": "<p class=\"text-mid\">The online image editor lets you quickly adapt images to specific dimensions. You can resize an image to any pixel dimensions, select a ready-made format for social media, or crop a section of the image with precise framing.</p><p class=\"text-mid mt-3\">In addition to resizing, the tool offers format conversion (JPG, PNG, WebP), circular avatar creation, and compression quality control.</p>"
+      "title": "Resize images instantly — crop, convert and compress in one tool",
+      "html": "<p class=\"text-mid\">The image editor lets you quickly adapt images to specific dimensions. You can resize an image to any pixel dimensions, select a ready-made format for social media, or crop a section of the image with precise framing.</p><p class=\"text-mid mt-3\">In addition to resizing, the tool offers format conversion (JPG, PNG, WebP), circular avatar creation, and compression quality control.</p>"
     },
     { "type": "gap", "size": "sm" },
     {
       "type": "sectionSteps",
-      "title": "How to resize an image online",
+      "title": "How to resize an image in seconds",
       "description": "Editing an image takes just a few seconds:",
       "grid": "three",
       "items": [

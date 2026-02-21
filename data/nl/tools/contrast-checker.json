@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Kleurcontrast en leesbaarheid checker online",
+      "name": "Kleurcontrast en leesbaarheid checker — WCAG 2.1",
       "alternateName": [
         "Kleurleesbaarheid tester",
         "Tekst- en achtergrondcontrast checker",
@@ -54,7 +54,7 @@
       ]
     },
     "howTo": {
-      "name": "Hoe kleurcontrast en leesbaarheid online controleren",
+      "name": "Hoe kleurcontrast en leesbaarheid controleren",
       "description": "Hoe de leesbaarheid van tekst- en achtergrondkleuren te controleren volgens de WCAG-standaard. Voer kleuren in, lees de contrastverhouding en gebruik de automatische afstemmingsfunctie.",
       "steps": [
         {

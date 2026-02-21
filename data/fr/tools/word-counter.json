@@ -24,9 +24,9 @@
   },
   "schemas": {
     "software": {
-      "name": "Compteur de mots et caractères gratuit en ligne",
+      "name": "Compteur de mots et caractères gratuit avec évaluation SEO",
       "alternateName": [
-        "Compteur de mots en ligne",
+        "Compteur de mots gratuit",
         "Compteur de caractères",
         "Vérificateur de longueur de texte SEO",
         "Compteur de paragraphes",
@@ -167,7 +167,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Pour qui le compteur de mots en ligne est-il utile ?",
+      "title": "Pour qui le compteur de mots est-il utile ?",
       "description": "Un outil de comptage de mots pour les rédacteurs et bien plus : voici ceux qui utilisent le plus le compteur :",
       "grid": "three",
       "items": [

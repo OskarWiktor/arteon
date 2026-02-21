@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Verificador de meta título e descrição online",
+      "name": "Verificador de meta título e descrição — pré-visualização Google",
       "alternateName": [
         "Verificador de meta título com pré-visualização Google",
         "Contador de caracteres meta título",
@@ -164,38 +164,6 @@
           "icon": "RiRuler2Line",
           "title": "A largura em píxeis é diferente do esperado",
           "description": "A ferramenta mede a largura com um tipo de letra padrão semelhante ao utilizado pelo Google. O resultado pode variar ligeiramente conforme o navegador."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Dicas para meta títulos eficazes",
-      "description": "Um bom meta título influencia a taxa de cliques nos resultados de pesquisa:",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiSearchLine",
-          "title": "Palavra-chave principal no início",
-          "description": "Coloque a palavra-chave mais importante no início do título para melhor visibilidade."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "Respeitar o intervalo ideal",
-          "description": "50–60 caracteres / 450–580 píxeis – o intervalo que geralmente é mostrado na íntegra."
-        },
-        {
-          "icon": "RiEditLine",
-          "title": "Ser descritivo e único",
-          "description": "Cada página deve ter um título único que descreva com precisão o seu conteúdo."
-        },
-        {
-          "icon": "RiMegaphoneLine",
-          "title": "Incentivar o clique",
-          "description": "Utilize termos que despertem vontade de clicar – sem cair no clickbait."
         }
       ]
     },

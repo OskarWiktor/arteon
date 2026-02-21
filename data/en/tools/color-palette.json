@@ -19,10 +19,10 @@
   "schemas": {
     "software": {
       "name": "Color palette generator",
-      "alternateName": ["Color scheme generator", "Online color generator", "Color palette creator", "Color matching tool", "Color palette online", "Color harmony generator"],
+      "alternateName": ["Color scheme generator", "Color palette creator", "Color matching tool", "Color harmony generator", "HEX color palette tool"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Free online color palette generator. Enter one HEX color and the tool will generate 9 schemes: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, and minimalist. Each color can be copied with its HEX code and HSL value.",
+      "description": "Free color palette generator. Enter one HEX color and the tool will generate 9 schemes: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, and minimalist. Each color can be copied with its HEX code and HSL value.",
       "featureList": [
         "Monochromatic scheme - shades of one color",
         "Analogous scheme - neighboring colors on the color wheel",

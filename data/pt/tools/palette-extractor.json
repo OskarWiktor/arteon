@@ -18,7 +18,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Extrator de cores de imagem online",
+      "name": "Extrator de cores de imagem — paleta a partir de fotos",
       "alternateName": ["Paleta de cores a partir de uma imagem", "Extrator de cores dominantes", "Gerador de paleta a partir de uma foto"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",

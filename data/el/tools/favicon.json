@@ -27,7 +27,7 @@
       "name": "Δημιουργός favicon — δωρεάν εργαλείο εικονιδίων για ιστοσελίδες",
       "alternateName": ["Δημιουργός εικονιδίων favicon.ico και PNG"],
       "applicationCategory": "DesignApplication",
-      "applicationSubCategory": "IconGenerator",
+      "applicationSubCategory": "FaviconGenerator",
       "description": "Δωρεάν δημιουργός favicon. Δημιουργήστε favicon.ico και εικονίδια PNG 16x16, 32x32, 180x180, 192x192 και 512x512 χωρίς όρια και χωρίς αποστολή αρχείων σε server. Η επεξεργασία γίνεται τοπικά στον browser.",
       "featureList": [
         "Δημιουργία favicon.ico (16x16, 32x32, 48x48 σε ένα αρχείο)",
