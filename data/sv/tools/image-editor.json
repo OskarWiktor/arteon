@@ -190,29 +190,23 @@
     },
     { "type": "gap", "variant": "line" },
     {
-      "type": "sectionSteps",
-      "title": "Vem behöver en bildredigerare?",
-      "grid": "two",
-      "items": [
+      "type": "sectionTabs",
+      "title": "Export – vilket format ska du välja?",
+      "tabs": [
         {
-          "icon": "RiMegaphoneLine",
-          "title": "Sociala medier-ansvariga",
-          "description": "Förbered bilder med rätt bildförhållande för varje plattform utan att behöva grafisk programvara."
+          "title": "JPG",
+          "icon": "RiImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Det populäraste formatet för foton. Bra komprimering med bibehållen visuell kvalitet. Stöder inte transparens – bakgrunden fylls alltid med en färg.</p><p class=\"text-mid\">Bra val för produktfoton, porträtt och de flesta webbgrafiker. Kvalitetsreglaget (60–100 %) styr komprimeringen.</p></div>"
         },
         {
-          "icon": "RiShoppingBagLine",
-          "title": "E-handlare",
-          "description": "Beskär produktbilder till samma bildförhållande för ett professionellt utseende i katalogerna."
+          "title": "PNG",
+          "icon": "RiFileImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Förlustfritt format – bevarar full kvalitet men filerna blir större. Stöder transparens (krävs vid cirkelform).</p><p class=\"text-mid\">Bra val för grafik med text, ikoner och bilder som kräver skarpa kanter.</p></div>"
         },
         {
-          "icon": "RiBloggerLine",
-          "title": "Bloggare",
-          "description": "Förbered rubrikbilder och foton till artiklar med rätt bildförhållande."
-        },
-        {
-          "icon": "RiCodeLine",
-          "title": "Webbutvecklare",
-          "description": "Beskär bilder snabbt till egna mått utan att öppna grafisk programvara."
+          "title": "WebP",
+          "icon": "RiCropLine",
+          "html": "<div><p class=\"text-mid mb-3\">Modernt format som kombinerar fördelarna med JPG och PNG – små filer, bra kvalitet, stöd för transparens. Stöds av alla moderna webbläsare.</p><p class=\"text-mid\">Rekommenderat för webbplatser – mindre filer innebär snabbare laddning. Mer om WebP hittar du i vår <a href=\"/sv/verktyg/jpg-png-till-webp-konverterare\">JPG/PNG till WebP-konverterare</a>.</p></div>"
         }
       ]
     },

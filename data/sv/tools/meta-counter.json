@@ -131,8 +131,9 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionDemo",
       "title": "Snippet-förhandsvisning – vad visar den?",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-light text-xs!\">https://www.dinwebbplats.se/tjanster</p><p class=\"text-primary text-sm! font-medium\">Webbutveckling och design – Din Webbplats</p><p class=\"text-mid text-sm!\">Vi skapar snabba och funktionella webbplatser. Kontakta oss för en gratis konsultation och offert...</p></div></div>",
       "html": "<p class=\"text-mid\">Förhandsvisningen (snippet preview) simulerar hur titel och beskrivning ser ut i Googles sökresultat. Det är en vägledande visualisering – det faktiska utseendet kan variera något beroende på enhet och webbläsare.</p><h3 class=\"h5 mt-6 mb-2\">Element i förhandsvisningen</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> – sidans adress som visas ovanför titeln. Du kan ange den i det valfria fältet för en mer realistisk förhandsvisning.</li><li><strong>Titel</strong> – den blå rubriken. Om den är för lång, avkortar verktyget den automatiskt med tre punkter.</li><li><strong>Beskrivning</strong> – den grå texten under titeln. Avkortas också om den överskrider gränsen.</li></ul><h3 class=\"h5 mt-6 mb-2\">Vad förhandsvisningen inte visar</h3><p class=\"text-mid\">Förhandsvisningen inkluderar inte alla element som Google kan lägga till: datum, stjärnbetyg, länkar till undersidor eller utökade fragment. Det är en förenklad version med fokus på textlängd.</p>"
     },
     {
@@ -140,26 +141,9 @@
       "variant": "line"
     },
     {
-      "type": "sectionSteps",
+      "type": "sectionInfo",
       "title": "Vanligaste problemen och lösningar",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiRulerLine",
-          "title": "Titeln är för lång",
-          "description": "Förkorta titeln och behåll de viktigaste orden i början. Ta bort adjektiv som bästa, professionell – de tillför sällan värde. Företagsnamnet sist efter separator."
-        },
-        {
-          "icon": "RiFileTextLine",
-          "title": "Beskrivningen är för kort",
-          "description": "Lägg till mer information: vad användaren hittar på sidan, vilken fördel hen får, vad som skiljer erbjudandet. Avsluta med en uppmaning till handling."
-        },
-        {
-          "icon": "RiRuler2Line",
-          "title": "Pixelbredden är annorlunda än förväntat",
-          "description": "Verktyget mäter bredd med ett standardtypsnitt som liknar det Google använder. Resultatet kan variera något beroende på webbläsaren."
-        }
-      ]
+      "html": "<h3 class=\"h5 mb-2\">Titeln är för lång</h3><p class=\"text-mid mb-4\">Förkorta titeln och behåll de viktigaste orden i början. Ta bort adjektiv som bästa, professionell – de tillför sällan värde. Företagsnamnet sist efter separator.</p><h3 class=\"h5 mb-2\">Beskrivningen är för kort</h3><p class=\"text-mid mb-4\">Lägg till mer information: vad användaren hittar på sidan, vilken fördel hen får, vad som skiljer erbjudandet. Avsluta med en uppmaning till handling.</p><h3 class=\"h5 mb-2\">Pixelbredden är annorlunda än förväntat</h3><p class=\"text-mid\">Verktyget mäter bredd med ett standardtypsnitt som liknar det Google använder. Resultatet kan variera något beroende på webbläsaren.</p>"
     },
     {
       "type": "gap",

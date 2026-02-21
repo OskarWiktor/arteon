@@ -68,17 +68,9 @@
     },
     { "type": "gap", "variant": "line" },
     {
-      "type": "sectionSteps",
+      "type": "sectionInfo",
       "title": "Hvilke ikoner lager generatoren?",
-      "description": "Generatoren lager et komplett sett med ikoner for moderne nettlesere og enheter:",
-      "grid": "two",
-      "items": [
-        { "icon": "RiGlobalLine", "title": "favicon.ico", "description": "ICO-fil som inneholder tre størrelser (16×16, 32×32, 48×48 px). Støttes av alle nettlesere, inkludert eldre." },
-        { "icon": "RiChromeLine", "title": "Nettleserikoner (PNG)", "description": "Sett med PNG-ikoner for moderne nettlesere: 16×16, 32×32, 48×48, 96×96 og 128×128 px." },
-        { "icon": "RiAppleLine", "title": "Apple Touch Icon", "description": "Ikon 180×180 px for iOS-enheter (iPhone, iPad). Vises på startskjermen etter at siden er lagt til." },
-        { "icon": "RiAndroidLine", "title": "Android/PWA-ikoner", "description": "Ikoner 192×192 og 512×512 px for Progressive Web Apps og Android-enheter." },
-        { "icon": "RiWindowsLine", "title": "Microsoft-ikoner", "description": "Ikoner 150×150 og 310×310 px for Windows-paneler og Microsoft Edge." }
-      ]
+      "html": "<p class=\"text-mid mb-6\">Hver størrelse har sitt bruksområde:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Klassisk format som gjenkjennes av alle nettlesere. Vises i nettleserfanen.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16×16 og 32×32 PNG</p><p class=\"text-mid text-sm\">Standardstørrelser for moderne nettlesere. Vises i faner og bokmerker.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180×180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Ikon for Apple-enheter (iPhone, iPad). Vises når noen legger til siden på startskjermen.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192×192 og 512×512 PNG</p><p class=\"text-mid text-sm\">Ikoner for webapper (PWA). Kreves av manifestet og brukes i appbutikker.</p></div></div><p class=\"text-light mt-6\">Hvis du ikke bygger en PWA, holder det med: favicon.ico, 32×32 PNG og 180×180 PNG. Disse tre filene dekker de fleste brukstilfeller.</p>"
     },
     { "type": "gap", "variant": "line" },
     {

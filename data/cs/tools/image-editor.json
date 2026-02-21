@@ -208,30 +208,23 @@
       "variant": "line"
     },
     {
-      "type": "sectionSteps",
-      "title": "Kdo potřebuje editor obrázků?",
-      "description": "Tento nástroj je užitečný pro každého, kdo pracuje s obrázky:",
-      "grid": "two",
-      "items": [
+      "type": "sectionTabs",
+      "title": "Export – jaký formát zvolit?",
+      "tabs": [
         {
-          "icon": "RiMegaphoneLine",
-          "title": "Správci sociálních sítí",
-          "description": "Připravte obrázky se správným poměrem stran pro každou platformu bez potřeby grafického softwaru."
+          "title": "JPG",
+          "icon": "RiImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Nejpopulárnější formát pro fotografie. Dobrá komprese při zachování vizuální kvality. Nepodporuje průhlednost – pozadí bude vždy vyplněno barvou.</p><p class=\"text-mid\">Dobrá volba pro produktové fotky, portréty a většinu grafik na web. Posuvník kvality (60–100 %) řídí kompresi.</p></div>"
         },
         {
-          "icon": "RiShoppingBagLine",
-          "title": "Majitelé e-shopů",
-          "description": "Ořízněte produktové fotky na stejný poměr stran pro profesionální vzhled v katalozích."
+          "title": "PNG",
+          "icon": "RiFileImageLine",
+          "html": "<div><p class=\"text-mid mb-3\">Bezztrátový formát – zachovává plnou kvalitu, ale soubory jsou větší. Podporuje průhlednost (vyžadován při tvaru kruhu).</p><p class=\"text-mid\">Dobrá volba pro grafiky s textem, ikony a obrázky vyžadující ostré hrany.</p></div>"
         },
         {
-          "icon": "RiBloggerLine",
-          "title": "Bloggeři",
-          "description": "Připravte hlavičkové obrázky a fotky do článků se správným poměrem stran."
-        },
-        {
-          "icon": "RiCodeLine",
-          "title": "Weboví vývojáři",
-          "description": "Rychle ořízněte obrázky na vlastní rozměry bez otevírání grafického softwaru."
+          "title": "WebP",
+          "icon": "RiCropLine",
+          "html": "<div><p class=\"text-mid mb-3\">Moderní formát kombinující výhody JPG a PNG – malé soubory, dobrá kvalita, podpora průhlednosti. Podporován všemi moderními prohlížeči.</p><p class=\"text-mid\">Doporučený pro webové stránky – menší soubory znamenají rychlejší načítání. Více o WebP najdete v našem <a href=\"/cs/nastroje/konvertor-jpg-png-na-webp\">konvertoru JPG/PNG na WebP</a>.</p></div>"
         }
       ]
     },

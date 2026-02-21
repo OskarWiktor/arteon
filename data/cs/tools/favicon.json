@@ -80,29 +80,9 @@
     },
     { "type": "gap", "variant": "line" },
     {
-      "type": "sectionSteps",
+      "type": "sectionInfo",
       "title": "Jak\u00e9 ikony gener\u00e1tor vytv\u00e1\u0159\u00ed?",
-      "description": "Gener\u00e1tor vytv\u00e1\u0159\u00ed kompletní sadu ikon pot\u0159ebn\u00fdch pro modern\u00ed prohl\u00ed\u017ee\u010de a za\u0159\u00edzen\u00ed:",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiGlobalLine",
-          "title": "favicon.ico",
-          "description": "ICO soubor obsahuj\u00edc\u00ed t\u0159i velikosti (16\u00d716, 32\u00d732, 48\u00d748 px). Podporov\u00e1n v\u0161emi prohl\u00ed\u017ee\u010di, v\u010detn\u011b star\u0161\u00edch."
-        },
-        {
-          "icon": "RiChromeLine",
-          "title": "Ikony prohl\u00ed\u017ee\u010de (PNG)",
-          "description": "Sada PNG ikon pro modern\u00ed prohl\u00ed\u017ee\u010de: 16\u00d716, 32\u00d732, 48\u00d748, 96\u00d796 a 128\u00d7128 px."
-        },
-        {
-          "icon": "RiAppleLine",
-          "title": "Apple Touch Icon",
-          "description": "Ikona 180\u00d7180 px pro iOS za\u0159\u00edzen\u00ed (iPhone, iPad). Zobrazuje se na domovsk\u00e9 obrazovce po p\u0159id\u00e1n\u00ed str\u00e1nky."
-        },
-        { "icon": "RiAndroidLine", "title": "Android/PWA ikony", "description": "Ikony 192\u00d7192 a 512\u00d7512 px pro Progressive Web Apps a Android za\u0159\u00edzen\u00ed." },
-        { "icon": "RiWindowsLine", "title": "Microsoft ikony", "description": "Ikony 150\u00d7150 a 310\u00d7310 px pro Windows dla\u017edice a Microsoft Edge." }
-      ]
+      "html": "<p class=\"text-mid mb-6\">Ka\u017ad\u00e1 velikost m\u00e1 sv\u00e9 vyu\u017eit\u00ed:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32\u00d732)</p><p class=\"text-mid text-sm\">Klasick\u00fd form\u00e1t rozpozn\u00e1van\u00fd v\u0161emi prohl\u00ed\u017ee\u010di. Zobrazuje se na z\u00e1lo\u017ece prohl\u00ed\u017ee\u010de.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16\u00d716 a 32\u00d732 PNG</p><p class=\"text-mid text-sm\">Standardn\u00ed velikosti pro modern\u00ed prohl\u00ed\u017ee\u010de. Zobrazuj\u00ed se na z\u00e1lo\u017ek\u00e1ch a v panelech.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180\u00d7180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Ikona pro za\u0159\u00edzen\u00ed Apple (iPhone, iPad). Zobrazuje se na domovsk\u00e9 obrazovce po p\u0159id\u00e1n\u00ed str\u00e1nky.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192\u00d7192 a 512\u00d7512 PNG</p><p class=\"text-mid text-sm\">Ikony pro webov\u00e9 aplikace (PWA). Vy\u017eadov\u00e1ny manifestem a pou\u017e\u00edv\u00e1ny v obchodech s aplikacemi.</p></div></div><p class=\"text-light mt-6\">Pokud nevytv\u00e1\u0159\u00edte PWA, sta\u010d\u00ed v\u00e1m: favicon.ico, 32\u00d732 PNG a 180\u00d7180 PNG. Tyto t\u0159i soubory pokryj\u00ed v\u011bt\u0161inu p\u0159\u00edpad\u016f pou\u017eit\u00ed.</p>"
     },
     { "type": "gap", "variant": "line" },
     {

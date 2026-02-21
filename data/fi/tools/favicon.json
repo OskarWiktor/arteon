@@ -68,17 +68,9 @@
     },
     { "type": "gap", "variant": "line" },
     {
-      "type": "sectionSteps",
+      "type": "sectionInfo",
       "title": "Mitkä kuvakkeet generaattori luo?",
-      "description": "Generaattori luo täydellisen kuvakesarjan nykyaikaisille selaimille ja laitteille:",
-      "grid": "two",
-      "items": [
-        { "icon": "RiGlobalLine", "title": "favicon.ico", "description": "ICO-tiedosto, joka sisältää kolme kokoa (16×16, 32×32, 48×48 px). Kaikki selaimet tukevat, mukaan lukien vanhemmat." },
-        { "icon": "RiChromeLine", "title": "Selainkuvakkeet (PNG)", "description": "PNG-kuvakesarja nykyaikaisille selaimille: 16×16, 32×32, 48×48, 96×96 ja 128×128 px." },
-        { "icon": "RiAppleLine", "title": "Apple Touch Icon", "description": "Kuvake 180×180 px iOS-laitteille (iPhone, iPad). Näkyy aloitusnäytöllä sivun lisäämisen jälkeen." },
-        { "icon": "RiAndroidLine", "title": "Android/PWA-kuvakkeet", "description": "Kuvakkeet 192×192 ja 512×512 px Progressive Web Appseille ja Android-laitteille." },
-        { "icon": "RiWindowsLine", "title": "Microsoft-kuvakkeet", "description": "Kuvakkeet 150×150 ja 310×310 px Windows-ruuduille ja Microsoft Edgelle." }
-      ]
+      "html": "<p class=\"text-mid mb-6\">Jokaisella koolla on oma käyttötarkoituksensa:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Klassinen muoto, jonka kaikki selaimet tunnistavat. Näkyy selaimen välilehdessä.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16×16 ja 32×32 PNG</p><p class=\"text-mid text-sm\">Vakiokoot nykyaikaisille selaimille. Näkyvät välilehdissä ja kirjanmerkeissä.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180×180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Kuvake Apple-laitteille (iPhone, iPad). Näkyy aloitusnäytöllä, kun sivu lisätään.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192×192 ja 512×512 PNG</p><p class=\"text-mid text-sm\">Kuvakkeet verkkosovelluksille (PWA). Manifestin vaatimia ja sovelluskauppojen käyttämiä.</p></div></div><p class=\"text-light mt-6\">Jos et rakenna PWA:ta, riittävät: favicon.ico, 32×32 PNG ja 180×180 PNG. Nämä kolme tiedostoa kattavat useimmat käyttötapausten.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
