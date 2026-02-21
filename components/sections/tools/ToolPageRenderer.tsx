@@ -202,7 +202,7 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
               return (
                 <Fragment key={`block-ad-${idx}`}>
                   {node}
-                  <div className="not-prose my-8 flex justify-center">
+                  <div className="not-prose mt-8 flex justify-center">
                     <AdSense variant="tool-banner" />
                   </div>
                 </Fragment>
