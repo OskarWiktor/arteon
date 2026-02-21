@@ -13,7 +13,7 @@ import FocusManager from '@/components/systems/FocusManager';
 import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 import { getDictionary } from '@/lib/i18n/get-dictionary';
-import { SUPPORTED_LOCALES } from '@/lib/i18n/locale-config';
+import { LOCALE_CONFIG, SUPPORTED_LOCALES } from '@/lib/i18n/locale-config';
 import type { Locale } from '@/types/locale';
 
 import './globals.css';
@@ -29,7 +29,7 @@ const instrumentSans = Instrument_Sans({
 const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
 const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
 const METRICOOL_HASH = process.env.METRICOOL_HASH;
-const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
+const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT || 'ca-pub-7845947936813012';
 
 const ORG_LOGO = toAbsoluteUrl('/icon-512x512.png');
 const metadataBase = new URL(siteUrl);
@@ -104,6 +104,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const lang: Locale = SUPPORTED_LOCALES.find((l) => l !== 'pl' && pathname.startsWith(`/${l}`)) ?? 'pl';
   const dict = await getDictionary(lang);
 
+  const toolBasePaths = Object.values(LOCALE_CONFIG).map((c) => c.toolsBasePath);
+  const isAdPage = toolBasePaths.some((base) => pathname === base || pathname.startsWith(base + '/')) || pathname.startsWith('/edukacja/');
+
   return (
     <html lang={lang} className={instrumentSans.variable}>
       <head>
@@ -111,7 +114,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <script
           id="google-consent-default"
           dangerouslySetInnerHTML={{
-            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};window.gtag=gtag;gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});${GA_MEASUREMENT_ID ? `window.__GA_ID='${GA_MEASUREMENT_ID}';` : ''}`,
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};window.gtag=gtag;gtag('consent','default',{analytics_storage:'denied',ad_storage:'granted',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});${GA_MEASUREMENT_ID ? `window.__GA_ID='${GA_MEASUREMENT_ID}';` : ''}`,
           }}
         />
 
@@ -141,7 +144,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
         <script id="schema-org-website" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
 
-        {ADSENSE_CLIENT && <Script src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} strategy="afterInteractive" crossOrigin="anonymous" />}
+        {isAdPage && <Script src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} strategy="afterInteractive" crossOrigin="anonymous" />}
 
         {/* dns-prefetch fallback for browsers that don't support preconnect */}
         <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />

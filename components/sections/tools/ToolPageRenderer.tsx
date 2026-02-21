@@ -181,7 +181,6 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
       <ToolEditorLayout>
         <AdSense variant="tool-banner" className="my-3" />
         {tool ?? <DynamicToolRenderer toolKey={data.toolKey} />}
-        <AdSense variant="tool-banner" className="my-3" />
       </ToolEditorLayout>
 
       <Wrapper>
@@ -203,7 +202,7 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
               return (
                 <Fragment key={`block-ad-${idx}`}>
                   {node}
-                  <div className="not-prose my-8 flex justify-center">
+                  <div className="not-prose mt-8 flex justify-center">
                     <AdSense variant="tool-banner" />
                   </div>
                 </Fragment>
