@@ -40,6 +40,7 @@ import afPt from '@/data/af/tools-ui/word-count-page-types.json';
 import ukPt from '@/data/uk/tools-ui/word-count-page-types.json';
 import cebPt from '@/data/ceb/tools-ui/word-count-page-types.json';
 import igPt from '@/data/ig/tools-ui/word-count-page-types.json';
+import hiPt from '@/data/hi/tools-ui/word-count-page-types.json';
 
 const PAGE_TYPES: Record<Locale, PageTypeConfig[]> = {
   pl: plPt as PageTypeConfig[],
@@ -76,6 +77,7 @@ const PAGE_TYPES: Record<Locale, PageTypeConfig[]> = {
   uk: ukPt as PageTypeConfig[],
   ceb: cebPt as PageTypeConfig[],
   ig: igPt as PageTypeConfig[],
+  hi: hiPt as PageTypeConfig[],
 };
 
 export function getPageTypes(locale: Locale): PageTypeConfig[] {
@@ -1025,6 +1027,31 @@ const EVAL_UI: Record<Locale, EvalUi> = {
       statusShort: '\u26a0\ufe0f Dị mkpụmkpụ',
       statusLong: '\u26a0\ufe0f Dị ogologo',
       generatedBy: 'Mepụtara site na: arteonagency.pl/ig/ngwa-oru/agu-okwu-na-mkpuruedemede',
+    },
+  },
+  hi: {
+    wordsUnit: 'शब्द',
+    emptyMessage: 'विश्लेषण देखने के लिए टेक्स्ट पेस्ट करें या टाइप करें।',
+    tooShort: (min, unit, missing) => `टेक्स्ट अनुमानित न्यूनतम (${min} ${unit}) से कम है। यदि विषय पूरा हो गया है — तो यह पर्याप्त हो सकता है। लगभग ${missing} ${unit} की कमी है।`,
+    tooLong: (excess, unit) => `टेक्स्ट अनुमानित अधिकतम से ${excess} ${unit} अधिक है। यदि हर वाक्य मूल्य जोड़ता है — तो लंबाई उचित है।`,
+    idealInRange: 'लंबाई अनुशंसित सीमा में है। पाठक के लिए मूल्य सबसे महत्वपूर्ण है — सीमाएँ संदर्भ बिंदु हैं।',
+    idealGoodLength: (label) => `${label} के लिए अच्छी लंबाई। हर पैराग्राफ को पाठक के लिए ठोस मूल्य प्रदान करना चाहिए।`,
+    readingTime: (m) => (m === 1 ? '1 मिनट' : `${m} मिनट`),
+    report: {
+      title: '\ud83d\udcca टेक्स्ट लंबाई रिपोर्ट',
+      pageType: 'पेज का प्रकार',
+      range: 'अनुशंसित सीमा',
+      statistics: '\ud83d\udcdd आँकड़े:',
+      words: 'शब्द',
+      charsWithSpaces: 'अक्षर (स्पेस सहित)',
+      charsWithoutSpaces: 'अक्षर (बिना स्पेस)',
+      paragraphs: 'पैराग्राफ',
+      readingTime: 'पढ़ने का समय',
+      evaluation: '\ud83d\udcc8 मूल्यांकन',
+      statusIdeal: '\u2705 अच्छी लंबाई',
+      statusShort: '\u26a0\ufe0f बहुत छोटा',
+      statusLong: '\u26a0\ufe0f बहुत लंबा',
+      generatedBy: 'जनरेट किया: arteonagency.pl/hi/upkaran/shabd-ganak',
     },
   },
 };

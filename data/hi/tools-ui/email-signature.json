@@ -165,14 +165,14 @@
     "resetCancel": "रद्द करें",
     "bgLight": "हल्का",
     "bgDark": "गहरा",
-    "bgChecker": "चेकरबोर्ड",
+    "bgChecker": "चेकर",
     "viewSourceButton": "HTML कोड देखें",
-    "viewSourceTitle": "सिग्नेचर HTML सोर्स कोड",
+    "viewSourceTitle": "सिग्नेचर का HTML सोर्स कोड",
     "viewSourceCopy": "कोड कॉपी करें",
     "viewSourceCopied": "कॉपी किया",
     "viewSourceClose": "बंद करें",
-    "exportConfig": "कॉन्फ़िग निर्यात करें",
-    "importConfig": "कॉन्फ़िग आयात करें"
+    "exportConfig": "सेटिंग्स एक्सपोर्ट करें",
+    "importConfig": "सेटिंग्स इम्पोर्ट करें"
   },
   "labels": {
     "tel": "फ़ोन",
@@ -185,6 +185,6 @@
     "blue": "नीला",
     "purple": "बैंगनी",
     "green": "हरा",
-    "gray": "भूरा"
+    "gray": "ग्रे"
   }
 }

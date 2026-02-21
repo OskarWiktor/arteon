@@ -1,39 +1,47 @@
 {
-  "heading": "QR कोड जनरेटर",
-  "subheading": "वेबसाइट, vCard, ईमेल, फ़ोन या टेक्स्ट के लिए QR कोड बनाएँ",
-  "tabs": {
-    "url": "URL",
+  "dataType": "डेटा प्रकार",
+  "types": {
+    "url": "URL पता",
     "text": "टेक्स्ट",
-    "vcard": "vCard",
+    "vcard": "बिज़नेस कार्ड (vCard)",
     "email": "ईमेल",
     "phone": "फ़ोन"
   },
-  "urlPlaceholder": "https://www.your-website.com",
+  "urlPlaceholder": "https://www.example.in",
   "textPlaceholder": "कोई भी टेक्स्ट लिखें...",
   "phonePlaceholder": "+91 98765 43210",
   "size": "आकार (px)",
   "margin": "मार्जिन (शांत क्षेत्र)",
   "qrColor": "QR कोड रंग",
-  "bgColor": "पृष्ठभूमि रंग",
-  "errorCorrection": "त्रुटि सुधार",
-  "errorCorrectionHelper": "उच्च स्तर = अधिक विश्वसनीय स्कैनिंग, लेकिन सघन पैटर्न। L (7%), M (15%), Q (25%), H (30%)।",
-  "download": "डाउनलोड करें",
+  "bgColor": "बैकग्राउंड रंग",
+  "errorCorrection": "त्रुटि सुधार स्तर",
+  "errorCorrectionLevels": {
+    "L": "L - कम (7%)",
+    "M": "M - मध्यम (15%)",
+    "Q": "Q - उच्च (25%)",
+    "H": "H - अधिकतम (30%)"
+  },
+  "preview": "QR कोड प्रीव्यू",
   "downloadPng": "PNG डाउनलोड करें",
   "downloadSvg": "SVG डाउनलोड करें",
-  "preview": "प्रीव्यू",
+  "contrastWarning": "इन रंगों के बीच कंट्रास्ट कम है। QR कोड को स्कैन करना मुश्किल हो सकता है।",
+  "contrastRatio": "कंट्रास्ट अनुपात",
+  "recommended": "अनुशंसित न्यूनतम: 3:1",
+  "enterData": "QR कोड बनाने के लिए डेटा दर्ज करें।",
   "vcard": {
     "firstName": "पहला नाम",
     "lastName": "अंतिम नाम",
-    "phone": "फ़ोन",
-    "email": "ईमेल",
-    "company": "कंपनी",
-    "jobTitle": "पद",
-    "website": "वेबसाइट",
-    "address": "पता"
+    "organization": "कंपनी (वैकल्पिक)",
+    "title": "पद (वैकल्पिक)",
+    "phone": "फ़ोन (वैकल्पिक)",
+    "email": "ईमेल (वैकल्पिक)",
+    "website": "वेबसाइट (वैकल्पिक)",
+    "address": "पता (वैकल्पिक)"
   },
-  "emailFields": {
-    "to": "प्राप्तकर्ता",
-    "subject": "विषय",
-    "body": "संदेश"
-  }
+  "email": {
+    "to": "ईमेल पता",
+    "subject": "विषय (वैकल्पिक)",
+    "body": "संदेश (वैकल्पिक)"
+  },
+  "printTip": "प्रिंट के लिए, हम न्यूनतम 300px आकार और H त्रुटि सुधार स्तर की सलाह देते हैं।"
 }

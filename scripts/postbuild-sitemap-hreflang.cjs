@@ -48,6 +48,7 @@ const LOCALE_TOOLS_BASE = {
   yo: '/yo/awon-irinse',
   af: '/af/gereedskap',
   ceb: '/ceb/mga-himan',
+  hi: '/hi/upkaran',
 };
 
 // ---------------------------------------------------------------------------
@@ -87,6 +88,7 @@ const TOOLS = [
     yo: 'oluyipada-jpg-png-si-webp',
     af: 'jpg-png-na-webp-omskakelaar',
     ceb: 'jpg-png-ngadto-webp-converter',
+    hi: 'jpg-png-se-webp-badlein',
   },
   {
     pl: 'edytor-zdjec-online',
@@ -121,6 +123,7 @@ const TOOLS = [
     yo: 'olootu-aworan',
     af: 'beeldredigeerder',
     ceb: 'editor-sa-hulagway',
+    hi: 'chitra-sampadak',
   },
   {
     pl: 'darmowy-generator-favicon-ico',
@@ -155,6 +158,7 @@ const TOOLS = [
     yo: 'olupilese-favicon-ofe',
     af: 'gratis-favicon-generator',
     ceb: 'libre-nga-favicon-generator',
+    hi: 'favicon-nirmata',
   },
   {
     pl: 'licznik-dlugosci-meta-title-i-description',
@@ -189,6 +193,7 @@ const TOOLS = [
     yo: 'atunyewo-meta-akole-ati-apejuwe',
     af: 'meta-titel-en-beskrywing-nagaaier',
     ceb: 'tigsusi-sa-meta-titulo-ug-deskripsyon',
+    hi: 'meta-sheerashak-jaanch',
   },
   {
     pl: 'licznik-slow-i-znakow',
@@ -223,6 +228,7 @@ const TOOLS = [
     yo: 'oluka-oro-ati-ohun-kikoo',
     af: 'woord-en-karakter-teller',
     ceb: 'tigihap-sa-pulong-ug-karakter',
+    hi: 'shabd-ganak',
   },
   {
     pl: 'darmowy-generator-stopki-mailowej',
@@ -257,6 +263,7 @@ const TOOLS = [
     yo: 'olupilese-ibuwolu-imeeli-ofe',
     af: 'gratis-e-pos-handtekening-generator',
     ceb: 'libre-nga-email-pirma-generator',
+    hi: 'email-hastakshar-nirmata',
   },
   {
     pl: 'kontrast-i-czytelnosc-kolorow',
@@ -291,6 +298,7 @@ const TOOLS = [
     yo: 'atunyewo-iyato-awon-awoo',
     af: 'kleurkontras-nagaaier',
     ceb: 'tigsusi-sa-kontras-sa-kolor',
+    hi: 'rang-virodh-jaanch',
   },
   {
     pl: 'ekstraktor-kolorow-z-obrazu',
@@ -325,6 +333,7 @@ const TOOLS = [
     yo: 'iseduro-awoo-lati-aworan',
     af: 'kleur-onttrekker-uit-beeld',
     ceb: 'tigkuha-sa-kolor-gikan-sa-hulagway',
+    hi: 'chitra-se-rang-nikaalein',
   },
   {
     pl: 'generator-palet-kolorow',
@@ -359,6 +368,7 @@ const TOOLS = [
     yo: 'olupilese-paleti-awoo',
     af: 'kleurpalet-generator',
     ceb: 'generator-sa-paleta-sa-kolor',
+    hi: 'rang-palette-nirmata',
   },
   {
     pl: 'darmowy-generator-kodow-qr',
@@ -393,6 +403,7 @@ const TOOLS = [
     yo: 'olupilese-koodu-qr-ofe',
     af: 'gratis-qr-kode-generator',
     ceb: 'libre-nga-qr-code-generator',
+    hi: 'qr-code-nirmata',
   },
 ];
 
@@ -431,6 +442,7 @@ const MULTILINGUAL_PAGES = [
     yo: '/yo/nipa-wa',
     af: '/af/oor-ons',
     ceb: '/ceb/mahitungod-kanamo',
+    hi: '/hi/hamare-baare-mein',
   },
   {
     pl: '/kontakt',
@@ -465,6 +477,7 @@ const MULTILINGUAL_PAGES = [
     yo: '/yo/kan-si-wa',
     af: '/af/kontak',
     ceb: '/ceb/kontaka-kami',
+    hi: '/hi/sampark-karein',
   },
   {
     pl: '/polityka-prywatnosci',
@@ -499,6 +512,7 @@ const MULTILINGUAL_PAGES = [
     yo: '/yo/ilana-asiri',
     af: '/af/privaatheidsbeleid',
     ceb: '/ceb/palisiya-sa-pribasiya',
+    hi: '/hi/gopaneeyata-neeti',
   },
 ];
 
@@ -535,6 +549,7 @@ const LOCALES = [
   'yo',
   'af',
   'ceb',
+  'hi',
 ];
 
 // ---------------------------------------------------------------------------

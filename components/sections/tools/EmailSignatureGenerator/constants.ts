@@ -1246,6 +1246,41 @@ export function getDefaultSignature(locale: Locale): SignatureConfig {
       avatarUrl: '',
     };
   }
+  if (locale === 'hi') {
+    return {
+      fullName: 'राहुल शर्मा',
+      jobTitle: 'वेब डेवलपर',
+      company: 'Arteon Agency',
+      topLine: '',
+      nameTag: '',
+      email: 'rahul.sharma@example.in',
+      phone: '+91 98765 43210',
+      website: 'https://www.example.in',
+      address: '42, MG Road, Bengaluru',
+      extraLine: 'तेज़ और कार्यात्मक वेबसाइट बनाता हूँ।',
+      ctaLabel: 'मुफ़्त परामर्श बुक करें',
+      ctaUrl: 'https://www.example.in',
+      cta2Label: '',
+      cta2Url: '',
+      socials: {
+        linkedin: 'https://www.linkedin.com/in/rahulsharma',
+        instagram: '',
+        facebook: '',
+        tiktok: '',
+        youtube: '',
+        x: '',
+        github: '',
+        dribbble: '',
+        behance: '',
+        whatsapp: '',
+        telegram: '',
+        pinterest: '',
+      },
+      legalNote: 'इस संदेश में गोपनीय जानकारी हो सकती है। यदि आप इसके इच्छित प्राप्तकर्ता नहीं हैं, तो कृपया प्रेषक को सूचित करें और इस संदेश को हटा दें।',
+      formalLine: '',
+      avatarUrl: '',
+    };
+  }
   return {
     fullName: 'Jan Kowalski',
     jobTitle: 'Web Developer',

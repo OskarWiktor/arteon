@@ -179,6 +179,7 @@ const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
   uk: () => import('@/data/uk/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   ceb: () => import('@/data/ceb/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   ig: () => import('@/data/ig/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
+  hi: () => import('@/data/hi/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
 };
 
 const cache = new Map<Locale, Dictionary>();
