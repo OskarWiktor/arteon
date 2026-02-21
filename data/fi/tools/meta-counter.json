@@ -2,8 +2,8 @@
   "toolKey": "metaCounter",
   "locale": "fi",
   "metadata": {
-    "title": "Meta-otsikon ja -kuvauksen tarkistus – Pikseleinä",
-    "description": "Tarkista meta-otsikon ja -kuvauksen pituus merkkeinä ja pikseleinä. Googlen hakutulosesikatselu auttaa välttämään katkenneita pätkien.",
+    "title": "Meta-otsikon ja -kuvauksen pituustarkistus – Pikseleinä",
+    "description": "Tarkista meta-otsikon ja -kuvauksen pituus merkkeinä ja pikseleinä. Googlen hakutulosesikatselu auttaa välttämään katkenneita otsikoita ja kuvauksia hakutuloksissa.",
     "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
     "path": "/fi/tyokalut/meta-otsikko-ja-kuvaus-tarkistus"
   },

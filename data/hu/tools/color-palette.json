@@ -3,7 +3,7 @@
   "locale": "hu",
   "metadata": {
     "title": "Ingyenes színpaletta generátor – 9 paletta egyetlen színből",
-    "description": "Generáljon kilenc harmonikus palettát egyetlen kiválasztott alapszínből. Másolja a HEX, RGB és HSL kódokat minden egyes árnyalathoz.",
+    "description": "Generáljon 9 harmonikus színpalettát egyetlen alapszínből: monokromatikus, komplementer, triádikus, pasztell és más. Másolja a HEX-, RGB- és HSL-kódokat egy kattintással.",
     "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
     "path": "/hu/eszkozok/szinpaletta-generator"
   },

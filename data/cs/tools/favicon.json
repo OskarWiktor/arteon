@@ -3,7 +3,7 @@
   "locale": "cs",
   "metadata": {
     "title": "Gener\u00e1tor favicon zdarma \u2013 ICO a PNG z jednoho obr\u00e1zku",
-    "description": "Z jednoho obr\u00e1zku vygenerujte favicon.ico a PNG ikony v souladu s po\u017eadavky prohl\u00ed\u017ee\u010d\u016f a Lighthouse. Bez registrace, funguje v prohl\u00ed\u017ee\u010di.",
+    "description": "Z jednoho obr\u00e1zku vygenerujte favicon.ico a PNG ikony 16\u00d716 a\u017e 512\u00d7512 v souladu s po\u017eadavky prohl\u00ed\u017ee\u010d\u016f a Lighthouse. Bez registrace, funguje v prohl\u00ed\u017ee\u010di.",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp",
     "path": "/cs/nastroje/generator-favicon-zdarma"
   },

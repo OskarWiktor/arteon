@@ -2,8 +2,8 @@
   "toolKey": "imageResize",
   "locale": "sv",
   "metadata": {
-    "title": "Gratis bildredigerare – Beskär för sociala medier",
-    "description": "Beskär och ändra storlek på bilder för Instagram, Facebook, LinkedIn och mer. Välj ett färdigt format eller ange egna mått.",
+    "title": "Gratis bildredigerare – Beskär bilder för sociala medier",
+    "description": "Beskär och ändra storlek på bilder för Instagram, Facebook, LinkedIn och mer. Välj ett färdigt format eller ange egna mått. Fungerar i webbläsaren utan registrering.",
     "ogImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp",
     "path": "/sv/verktyg/bildredigerare"
   },

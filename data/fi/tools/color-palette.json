@@ -2,8 +2,8 @@
   "toolKey": "colorPalette",
   "locale": "fi",
   "metadata": {
-    "title": "Ilmainen väripalettien generaattori – 9 palettia",
-    "description": "Luo 9 väripalettia perusväristä: monokromaattinen, komplementaarinen, triadinen, pastelli ja muita. Kopioi HEX-koodit yhdellä napsautuksella.",
+    "title": "Ilmainen väripalettien generaattori – 9 palettia yhdestä",
+    "description": "Luo 9 harmonista väripalettia yhdestä perusväristä: monokromaattinen, komplementaarinen, triadinen, pastelli ja muita. Kopioi HEX- ja RGB-koodit yhdellä klikkauksella.",
     "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
     "path": "/fi/tyokalut/varipaletti-generaattori"
   },

@@ -2,8 +2,8 @@
   "toolKey": "paletteExtractor",
   "locale": "el",
   "metadata": {
-    "title": "Δωρεάν Εξαγωγή Χρωμάτων από Εικόνα – Παλέτα από",
-    "description": "Ανεβάστε φωτογραφία ή λογότυπο και εξάγετε έως 12 κυρίαρχα χρώματα με κωδικούς HEX και RGB. Ιδανικό για UI, branding και κοινωνικά δίκτυα.",
+    "title": "Δωρεάν εξαγωγή χρωμάτων από εικόνα – HEX και RGB κωδικοί",
+    "description": "Ανεβάστε φωτογραφία ή λογότυπο και εξάγετε έως 12 κυρίαρχα χρώματα με κωδικούς HEX και RGB. Ιδανικό για UI design, branding και μέσα κοινωνικής δικτύωσης.",
     "ogImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp",
     "path": "/el/ergaleia/exagogi-chromaton-apo-eikona"
   },
