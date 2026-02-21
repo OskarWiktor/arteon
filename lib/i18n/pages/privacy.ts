@@ -22,20 +22,12 @@ import it from '@/data/it/pages/privacy.json';
 import ro from '@/data/ro/pages/privacy.json';
 import nl from '@/data/nl/pages/privacy.json';
 import hu from '@/data/hu/pages/privacy.json';
-import tr from '@/data/tr/pages/privacy.json';
 import cs from '@/data/cs/pages/privacy.json';
 import sv from '@/data/sv/pages/privacy.json';
-import sq from '@/data/sq/pages/privacy.json';
 import da from '@/data/da/pages/privacy.json';
 import no from '@/data/no/pages/privacy.json';
 import fi from '@/data/fi/pages/privacy.json';
-import sk from '@/data/sk/pages/privacy.json';
-import hr from '@/data/hr/pages/privacy.json';
-import lt from '@/data/lt/pages/privacy.json';
-import sl from '@/data/sl/pages/privacy.json';
 import el from '@/data/el/pages/privacy.json';
-import bg from '@/data/bg/pages/privacy.json';
-import uk from '@/data/uk/pages/privacy.json';
 
 const PRIVACY_META: Partial<Record<Locale, PrivacyPageMeta>> = {
   en,
@@ -47,20 +39,12 @@ const PRIVACY_META: Partial<Record<Locale, PrivacyPageMeta>> = {
   ro,
   nl,
   hu,
-  tr,
   cs,
   sv,
-  sq,
   da,
   no,
   fi,
-  sk,
-  hr,
-  lt,
-  sl,
   el,
-  bg,
-  uk,
 };
 
 // ---------------------------------------------------------------------------

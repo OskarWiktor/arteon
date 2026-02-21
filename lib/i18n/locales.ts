@@ -12,20 +12,12 @@ import itDict from '@/data/it/dictionary.json';
 import roDict from '@/data/ro/dictionary.json';
 import nlDict from '@/data/nl/dictionary.json';
 import huDict from '@/data/hu/dictionary.json';
-import trDict from '@/data/tr/dictionary.json';
 import csDict from '@/data/cs/dictionary.json';
 import svDict from '@/data/sv/dictionary.json';
-import sqDict from '@/data/sq/dictionary.json';
 import daDict from '@/data/da/dictionary.json';
 import noDict from '@/data/no/dictionary.json';
 import fiDict from '@/data/fi/dictionary.json';
-import skDict from '@/data/sk/dictionary.json';
-import hrDict from '@/data/hr/dictionary.json';
-import ltDict from '@/data/lt/dictionary.json';
-import slDict from '@/data/sl/dictionary.json';
 import elDict from '@/data/el/dictionary.json';
-import bgDict from '@/data/bg/dictionary.json';
-import ukDict from '@/data/uk/dictionary.json';
 
 const dicts = {
   pl: plDict,
@@ -38,20 +30,12 @@ const dicts = {
   ro: roDict,
   nl: nlDict,
   hu: huDict,
-  tr: trDict,
   cs: csDict,
   sv: svDict,
-  sq: sqDict,
   da: daDict,
   no: noDict,
   fi: fiDict,
-  sk: skDict,
-  hr: hrDict,
-  lt: ltDict,
-  sl: slDict,
   el: elDict,
-  bg: bgDict,
-  uk: ukDict,
 } as const;
 
 export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
@@ -165,17 +149,6 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     contactHref: '/hu/kapcsolat',
     privacyHref: '/hu/adatvedelmi-iranyelvek',
   },
-  tr: {
-    lang: 'tr',
-    hreflang: 'tr',
-    label: 'TR',
-    name: 'Türkçe',
-    toolsBasePath: '/tr/araclar',
-    toolsIndexHref: '/tr/araclar',
-    aboutHref: '/tr/hakkimizda',
-    contactHref: '/tr/iletisim',
-    privacyHref: '/tr/gizlilik-politikasi',
-  },
   cs: {
     lang: 'cs',
     hreflang: 'cs',
@@ -197,17 +170,6 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/sv/om-oss',
     contactHref: '/sv/kontakt',
     privacyHref: '/sv/integritetspolicy',
-  },
-  sq: {
-    lang: 'sq',
-    hreflang: 'sq',
-    label: 'SQ',
-    name: 'Shqip',
-    toolsBasePath: '/sq/mjetet',
-    toolsIndexHref: '/sq/mjetet',
-    aboutHref: '/sq/rreth-nesh',
-    contactHref: '/sq/kontakti',
-    privacyHref: '/sq/politika-e-privatesise',
   },
   da: {
     lang: 'da',
@@ -242,50 +204,6 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     contactHref: '/fi/yhteystiedot',
     privacyHref: '/fi/tietosuojakaytanto',
   },
-  sk: {
-    lang: 'sk',
-    hreflang: 'sk',
-    label: 'SK',
-    name: 'Slovenčina',
-    toolsBasePath: '/sk/nastroje',
-    toolsIndexHref: '/sk/nastroje',
-    aboutHref: '/sk/o-nas',
-    contactHref: '/sk/kontakt',
-    privacyHref: '/sk/zasady-ochrany-osobnych-udajov',
-  },
-  hr: {
-    lang: 'hr',
-    hreflang: 'hr',
-    label: 'HR',
-    name: 'Hrvatski',
-    toolsBasePath: '/hr/alati',
-    toolsIndexHref: '/hr/alati',
-    aboutHref: '/hr/o-nama',
-    contactHref: '/hr/kontakt',
-    privacyHref: '/hr/pravila-privatnosti',
-  },
-  lt: {
-    lang: 'lt',
-    hreflang: 'lt',
-    label: 'LT',
-    name: 'Lietuvių',
-    toolsBasePath: '/lt/irankiai',
-    toolsIndexHref: '/lt/irankiai',
-    aboutHref: '/lt/apie-mus',
-    contactHref: '/lt/kontaktai',
-    privacyHref: '/lt/privatumo-politika',
-  },
-  sl: {
-    lang: 'sl',
-    hreflang: 'sl',
-    label: 'SL',
-    name: 'Slovenščina',
-    toolsBasePath: '/sl/orodja',
-    toolsIndexHref: '/sl/orodja',
-    aboutHref: '/sl/o-nas',
-    contactHref: '/sl/kontakt',
-    privacyHref: '/sl/pravilnik-o-zasebnosti',
-  },
   el: {
     lang: 'el',
     hreflang: 'el',
@@ -296,28 +214,6 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/el/sxetika-me-emas',
     contactHref: '/el/epikoinonia',
     privacyHref: '/el/politiki-aporritou',
-  },
-  bg: {
-    lang: 'bg',
-    hreflang: 'bg',
-    label: 'BG',
-    name: 'Български',
-    toolsBasePath: '/bg/instrumenti',
-    toolsIndexHref: '/bg/instrumenti',
-    aboutHref: '/bg/za-nas',
-    contactHref: '/bg/kontakt',
-    privacyHref: '/bg/politika-za-poveritelnost',
-  },
-  uk: {
-    lang: 'uk',
-    hreflang: 'uk',
-    label: 'UK',
-    name: 'Українська',
-    toolsBasePath: '/uk/instrumenty',
-    toolsIndexHref: '/uk/instrumenty',
-    aboutHref: '/uk/pro-nas',
-    contactHref: '/uk/kontakt',
-    privacyHref: '/uk/polityka-konfidentsiinosti',
   },
 };
 

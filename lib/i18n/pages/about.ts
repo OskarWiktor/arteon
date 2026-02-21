@@ -56,20 +56,12 @@ import it from '@/data/it/pages/about.json';
 import ro from '@/data/ro/pages/about.json';
 import nl from '@/data/nl/pages/about.json';
 import hu from '@/data/hu/pages/about.json';
-import tr from '@/data/tr/pages/about.json';
 import cs from '@/data/cs/pages/about.json';
 import sv from '@/data/sv/pages/about.json';
-import sq from '@/data/sq/pages/about.json';
 import da from '@/data/da/pages/about.json';
 import no from '@/data/no/pages/about.json';
 import fi from '@/data/fi/pages/about.json';
-import sk from '@/data/sk/pages/about.json';
-import hr from '@/data/hr/pages/about.json';
-import lt from '@/data/lt/pages/about.json';
-import sl from '@/data/sl/pages/about.json';
 import el from '@/data/el/pages/about.json';
-import bg from '@/data/bg/pages/about.json';
-import uk from '@/data/uk/pages/about.json';
 
 const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
   en,
@@ -81,20 +73,12 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
   ro,
   nl,
   hu,
-  tr,
   cs,
   sv,
-  sq,
   da,
   no,
   fi,
-  sk,
-  hr,
-  lt,
-  sl,
   el,
-  bg,
-  uk,
 };
 
 // ---------------------------------------------------------------------------

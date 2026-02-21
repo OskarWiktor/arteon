@@ -15,20 +15,12 @@ const dictLoaders: Record<Locale, () => Promise<ClientDictionary>> = {
   ro: () => import('@/data/ro/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
   nl: () => import('@/data/nl/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
   hu: () => import('@/data/hu/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
-  tr: () => import('@/data/tr/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
   cs: () => import('@/data/cs/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
   sv: () => import('@/data/sv/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
-  sq: () => import('@/data/sq/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
   da: () => import('@/data/da/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
   no: () => import('@/data/no/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
   fi: () => import('@/data/fi/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
-  sk: () => import('@/data/sk/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
-  hr: () => import('@/data/hr/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
-  lt: () => import('@/data/lt/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
-  sl: () => import('@/data/sl/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
   el: () => import('@/data/el/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
-  bg: () => import('@/data/bg/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
-  uk: () => import('@/data/uk/dictionary.json').then((m) => m.default as unknown as ClientDictionary),
 };
 
 export async function getClientDictionary(locale: Locale): Promise<ClientDictionary> {

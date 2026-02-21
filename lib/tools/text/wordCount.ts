@@ -16,20 +16,12 @@ import itPt from '@/data/it/tools-ui/word-count-page-types.json';
 import roPt from '@/data/ro/tools-ui/word-count-page-types.json';
 import nlPt from '@/data/nl/tools-ui/word-count-page-types.json';
 import huPt from '@/data/hu/tools-ui/word-count-page-types.json';
-import trPt from '@/data/tr/tools-ui/word-count-page-types.json';
 import csPt from '@/data/cs/tools-ui/word-count-page-types.json';
 import svPt from '@/data/sv/tools-ui/word-count-page-types.json';
-import sqPt from '@/data/sq/tools-ui/word-count-page-types.json';
 import daPt from '@/data/da/tools-ui/word-count-page-types.json';
 import noPt from '@/data/no/tools-ui/word-count-page-types.json';
 import fiPt from '@/data/fi/tools-ui/word-count-page-types.json';
-import skPt from '@/data/sk/tools-ui/word-count-page-types.json';
-import hrPt from '@/data/hr/tools-ui/word-count-page-types.json';
-import ltPt from '@/data/lt/tools-ui/word-count-page-types.json';
-import slPt from '@/data/sl/tools-ui/word-count-page-types.json';
 import elPt from '@/data/el/tools-ui/word-count-page-types.json';
-import bgPt from '@/data/bg/tools-ui/word-count-page-types.json';
-import ukPt from '@/data/uk/tools-ui/word-count-page-types.json';
 
 const PAGE_TYPES: Record<Locale, PageTypeConfig[]> = {
   pl: plPt as PageTypeConfig[],
@@ -42,20 +34,12 @@ const PAGE_TYPES: Record<Locale, PageTypeConfig[]> = {
   ro: roPt as PageTypeConfig[],
   nl: nlPt as PageTypeConfig[],
   hu: huPt as PageTypeConfig[],
-  tr: trPt as PageTypeConfig[],
   cs: csPt as PageTypeConfig[],
   sv: svPt as PageTypeConfig[],
-  sq: sqPt as PageTypeConfig[],
   da: daPt as PageTypeConfig[],
   no: noPt as PageTypeConfig[],
   fi: fiPt as PageTypeConfig[],
-  sk: skPt as PageTypeConfig[],
-  hr: hrPt as PageTypeConfig[],
-  lt: ltPt as PageTypeConfig[],
-  sl: slPt as PageTypeConfig[],
   el: elPt as PageTypeConfig[],
-  bg: bgPt as PageTypeConfig[],
-  uk: ukPt as PageTypeConfig[],
 };
 
 export function getPageTypes(locale: Locale): PageTypeConfig[] {
@@ -383,31 +367,6 @@ const EVAL_UI: Record<Locale, EvalUi> = {
       generatedBy: 'K\u00e9sz\u00edtette: arteonagency.pl/hu/eszkozok/szo-es-karakterszamlalo',
     },
   },
-  tr: {
-    wordsUnit: 'kelime',
-    emptyMessage: 'Analizi g\u00f6rmek i\u00e7in metin yap\u0131\u015ft\u0131r\u0131n veya yaz\u0131n.',
-    tooShort: (min, unit, missing) => `Metin yakla\u015f\u0131k minimumun alt\u0131nda (${min} ${unit}). Konu kapsanm\u0131\u015fsa yeterli olabilir. Yakla\u015f\u0131k ${missing} ${unit} eksik.`,
-    tooLong: (excess, unit) => `Metin yakla\u015f\u0131k maksimumu ${excess} ${unit} a\u015f\u0131yor. Her c\u00fcmle de\u011fer kat\u0131yorsa uzunluk hakl\u0131d\u0131r.`,
-    idealInRange: 'Uzunluk \u00f6nerilen aral\u0131kta. Okuyucu i\u00e7in de\u011fer \u00f6nemlidir \u2014 aral\u0131klar referans noktas\u0131 olarak hizmet eder.',
-    idealGoodLength: (label) => `${label} i\u00e7in iyi uzunluk. Her paragraf okuyucuya somut de\u011fer sunmal\u0131d\u0131r.`,
-    readingTime: (m) => (m === 1 ? '1 dakika' : `${m} dakika`),
-    report: {
-      title: '📊 MET\u0130N UZUNLU\u011eU RAPORU',
-      pageType: 'Sayfa t\u00fcr\u00fc',
-      range: '\u00d6nerilen aral\u0131k',
-      statistics: '📝 \u0130STAT\u0130ST\u0130KLER:',
-      words: 'Kelimeler',
-      charsWithSpaces: 'Karakterler (bo\u015fluklu)',
-      charsWithoutSpaces: 'Karakterler (bo\u015fluksuz)',
-      paragraphs: 'Paragraflar',
-      readingTime: 'Okuma s\u00fcresi',
-      evaluation: '📈 DE\u011eERLEND\u0130RME',
-      statusIdeal: '\u2705 \u0130yi uzunluk',
-      statusShort: '\u26a0\ufe0f \u00c7ok k\u0131sa',
-      statusLong: '\u26a0\ufe0f \u00c7ok uzun',
-      generatedBy: 'Olu\u015fturan: arteonagency.pl/tr/araclar/kelime-ve-karakter-sayaci',
-    },
-  },
   cs: {
     wordsUnit: 'slov',
     emptyMessage: 'Vlo\u017ete nebo zadejte text pro zobrazen\u00ed anal\u00fdzy.',
@@ -459,33 +418,6 @@ const EVAL_UI: Record<Locale, EvalUi> = {
       statusShort: '\u26a0\ufe0f F\u00f6r kort',
       statusLong: '\u26a0\ufe0f F\u00f6r l\u00e5ng',
       generatedBy: 'Genererad av: arteonagency.pl/sv/verktyg/ord-och-teckenraknare',
-    },
-  },
-  sq: {
-    wordsUnit: 'fjal\u00eb',
-    emptyMessage: 'Ngjisni ose shkruani tekst p\u00ebr t\u00eb par\u00eb analiz\u00ebn.',
-    tooShort: (min, unit, missing) =>
-      `Teksti \u00ebsht\u00eb n\u00ebn minimumin e p\u00ebraf\u00ebrt (${min} ${unit}). N\u00ebse tema \u00ebsht\u00eb mbuluar, mund t\u00eb mjaftoj\u00eb. Mungojn\u00eb rreth ${missing} ${unit}.`,
-    tooLong: (excess, unit) => `Teksti tejkalon maksimumin e p\u00ebraf\u00ebrt me ${excess} ${unit}. N\u00ebse \u00e7do fjali shton vler\u00eb, gjat\u00ebsia \u00ebsht\u00eb e arsyeshme.`,
-    idealInRange:
-      'Gjat\u00ebsia \u00ebsht\u00eb brenda diapazonit t\u00eb rekomanduar. Vlera p\u00ebr lexuesin \u00ebsht\u00eb \u00e7el\u00ebsi \u2014 diapazonet sh\u00ebrbejn\u00eb si pik\u00eb referimi.',
-    idealGoodLength: (label) => `Gjat\u00ebsi e mir\u00eb p\u00ebr ${label.toLowerCase()}. \u00c7do paragraf duhet t\u2019i jap\u00eb vler\u00eb konkrete lexuesit.`,
-    readingTime: (m) => (m === 1 ? '1 minut\u00eb' : `${m} minuta`),
-    report: {
-      title: '📊 RAPORT I GJAT\u00cbSIS\u00cb S\u00cb TEKSTIT',
-      pageType: 'Lloji i faqes',
-      range: 'Diapazoni i rekomanduar',
-      statistics: '📝 STATISTIKA:',
-      words: 'Fjal\u00ebt',
-      charsWithSpaces: 'Karakteret (me hap\u00ebsira)',
-      charsWithoutSpaces: 'Karakteret (pa hap\u00ebsira)',
-      paragraphs: 'Paragraf\u00ebt',
-      readingTime: 'Koha e leximit',
-      evaluation: '📈 VLER\u00cbSIMI',
-      statusIdeal: '\u2705 Gjat\u00ebsi e mir\u00eb',
-      statusShort: '\u26a0\ufe0f Shum\u00eb i shkurt\u00ebr',
-      statusLong: '\u26a0\ufe0f Shum\u00eb i gjat\u00eb',
-      generatedBy: 'Gjeneruar nga: arteonagency.pl/sq/mjetet/numerues-fjalesh-dhe-karakteresh',
     },
   },
   da: {
@@ -563,107 +495,6 @@ const EVAL_UI: Record<Locale, EvalUi> = {
       generatedBy: 'Luonut: arteonagency.pl/fi/tyokalut/sana-ja-merkkilaskuri',
     },
   },
-  sk: {
-    wordsUnit: 'slov',
-    emptyMessage: 'Prilepte alebo zadajte text pre zobrazenie anal\u00fdzy.',
-    tooShort: (min, unit, missing) =>
-      `Text je pod pribli\u017en\u00fdm minimom (${min} ${unit}). Ak je t\u00e9ma pokryt\u00e1, m\u00f4\u017ee to sta\u010di\u0165. Ch\u00fdba pribli\u017ene ${missing} ${unit}.`,
-    tooLong: (excess, unit) => `Text prekra\u010duje pribli\u017en\u00e9 maximum o ${excess} ${unit}. Ak ka\u017ed\u00e1 veta prid\u00e1va hodnotu, d\u013a\u017eka je od\u00f4vodnen\u00e1.`,
-    idealInRange: 'D\u013a\u017eka je v odpor\u00fa\u010danom rozsahu. Hodnota pre \u010ditate\u013ea je k\u013e\u00fa\u010dov\u00e1 \u2014 rozsahy sl\u00fa\u017eia ako referen\u010dn\u00fd bod.',
-    idealGoodLength: (label) => `Dobr\u00e1 d\u013a\u017eka pre ${label.toLowerCase()}. Ka\u017ed\u00fd odsek by mal \u010ditate\u013eovi poskytn\u00fa\u0165 konkr\u00e9tnu hodnotu.`,
-    readingTime: (m) => (m === 1 ? '1 min\u00fata' : m >= 2 && m <= 4 ? `${m} min\u00faty` : `${m} min\u00fat`),
-    report: {
-      title: '📊 SPR\u00c1VA O D\u013a\u017dKE TEXTU',
-      pageType: 'Typ str\u00e1nky',
-      range: 'Odpor\u00fa\u010dan\u00fd rozsah',
-      statistics: '📝 \u0160TATISTIKY:',
-      words: 'Slov\u00e1',
-      charsWithSpaces: 'Znaky (s medzerami)',
-      charsWithoutSpaces: 'Znaky (bez medzier)',
-      paragraphs: 'Odseky',
-      readingTime: '\u010cas \u010d\u00edtania',
-      evaluation: '📈 HODNOTENIE',
-      statusIdeal: '\u2705 Dobr\u00e1 d\u013a\u017eka',
-      statusShort: '\u26a0\ufe0f Pr\u00edli\u0161 kr\u00e1tky',
-      statusLong: '\u26a0\ufe0f Pr\u00edli\u0161 dlh\u00fd',
-      generatedBy: 'Vygenerovan\u00e9: arteonagency.pl/sk/nastroje/pocitadlo-slov-a-znakov',
-    },
-  },
-  hr: {
-    wordsUnit: 'rije\u010di',
-    emptyMessage: 'Zalijepite ili upi\u0161ite tekst za prikaz analize.',
-    tooShort: (min, unit, missing) => `Tekst je ispod pribli\u017enog minimuma (${min} ${unit}). Ako je tema pokrivena, mo\u017ee biti dovoljno. Nedostaje otprilike ${missing} ${unit}.`,
-    tooLong: (excess, unit) => `Tekst prema\u0161uje pribli\u017eni maksimum za ${excess} ${unit}. Ako svaka re\u010denica dodaje vrijednost, duljina je opravdana.`,
-    idealInRange: 'Duljina je unutar preporu\u010denog raspona. Vrijednost za \u010ditatelja je klju\u010dna \u2014 rasponi slu\u017ee kao referentna to\u010dka.',
-    idealGoodLength: (label) => `Dobra duljina za ${label.toLowerCase()}. Svaki odlomak trebao bi \u010ditatelju pru\u017eiti konkretnu vrijednost.`,
-    readingTime: (m) => (m === 1 ? '1 minuta' : m >= 2 && m <= 4 ? `${m} minute` : `${m} minuta`),
-    report: {
-      title: '📊 IZVJE\u0160TAJ O DULJINI TEKSTA',
-      pageType: 'Vrsta stranice',
-      range: 'Preporu\u010deni raspon',
-      statistics: '📝 STATISTIKE:',
-      words: 'Rije\u010di',
-      charsWithSpaces: 'Znakovi (s razmacima)',
-      charsWithoutSpaces: 'Znakovi (bez razmaka)',
-      paragraphs: 'Odlomci',
-      readingTime: 'Vrijeme \u010ditanja',
-      evaluation: '📈 OCJENA',
-      statusIdeal: '\u2705 Dobra duljina',
-      statusShort: '\u26a0\ufe0f Prekratko',
-      statusLong: '\u26a0\ufe0f Predugo',
-      generatedBy: 'Generirano: arteonagency.pl/hr/alati/brojac-rijeci-i-znakova',
-    },
-  },
-  lt: {
-    wordsUnit: '\u017eod\u017ei\u0173',
-    emptyMessage: '\u012eklijuokite arba \u012fveskite tekst\u0105 nor\u0117dami pamatyti analiz\u0119.',
-    tooShort: (min, unit, missing) => `Tekstas yra \u017eemiau apytikrio minimumo (${min} ${unit}). Jei tema i\u0161samiai apr\u0117pta, to gali pakakti. Tr\u016bksta apytiksliai ${missing} ${unit}.`,
-    tooLong: (excess, unit) => `Tekstas vir\u0161ija apytikr\u012f maksimum\u0105 ${excess} ${unit}. Jei kiekvienas sakinys suteikia vert\u0119, ilgis yra pateisinamas.`,
-    idealInRange: 'Ilgis yra rekomenduojamame diapazone. Vert\u0117 skaitytojui yra svarbiausia \u2014 diapazonai yra orientacinis ta\u0161kas.',
-    idealGoodLength: (label) => `Geras ilgis ${label.toLowerCase()}. Kiekviena pastraipa tur\u0117t\u0173 suteikti konkreci\u0105 vert\u0119 skaitytojui.`,
-    readingTime: (m) => (m === 1 ? '1 minut\u0117' : `${m} minu\u010di\u0173`),
-    report: {
-      title: '📊 TEKSTO ILGIO ATASKAITA',
-      pageType: 'Puslapio tipas',
-      range: 'Rekomenduojamas diapazonas',
-      statistics: '📝 STATISTIKA:',
-      words: '\u017dod\u017eiai',
-      charsWithSpaces: 'Simboliai (su tarpais)',
-      charsWithoutSpaces: 'Simboliai (be tarp\u0173)',
-      paragraphs: 'Pastraipos',
-      readingTime: 'Skaitymo laikas',
-      evaluation: '📈 \u012eVERTINIMAS',
-      statusIdeal: '\u2705 Geras ilgis',
-      statusShort: '\u26a0\ufe0f Per trumpas',
-      statusLong: '\u26a0\ufe0f Per ilgas',
-      generatedBy: 'Sugeneravo: arteonagency.pl/lt/irankiai/zodziu-ir-simboliu-skaiciuokle',
-    },
-  },
-  sl: {
-    wordsUnit: 'besed',
-    emptyMessage: 'Prilepite ali vnesite besedilo za prikaz analize.',
-    tooShort: (min, unit, missing) => `Besedilo je pod pribli\u017enim minimumom (${min} ${unit}). \u010ce je tema pokrita, je morda dovolj. Manjka pribli\u017eno ${missing} ${unit}.`,
-    tooLong: (excess, unit) => `Besedilo presega pribli\u017eni maksimum za ${excess} ${unit}. \u010ce vsak stavek dodaja vrednost, je dol\u017eina upravi\u010dena.`,
-    idealInRange: 'Dol\u017eina je v priporo\u010denem razponu. Vrednost za bralca je klju\u010dna \u2014 razponi slu\u017eijo kot referen\u010dna to\u010dka.',
-    idealGoodLength: (label) => `Dobra dol\u017eina za ${label.toLowerCase()}. Vsak odstavek mora bralcu ponuditi konkretno vrednost.`,
-    readingTime: (m) => (m === 1 ? '1 minuta' : m === 2 ? '2 minuti' : m >= 3 && m <= 4 ? `${m} minute` : `${m} minut`),
-    report: {
-      title: '📊 PORO\u010cILO O DOL\u017dINI BESEDILA',
-      pageType: 'Vrsta strani',
-      range: 'Priporo\u010den razpon',
-      statistics: '📝 STATISTIKA:',
-      words: 'Besede',
-      charsWithSpaces: 'Znaki (s presledki)',
-      charsWithoutSpaces: 'Znaki (brez presledkov)',
-      paragraphs: 'Odstavki',
-      readingTime: '\u010cas branja',
-      evaluation: '📈 OCENA',
-      statusIdeal: '\u2705 Dobra dol\u017eina',
-      statusShort: '\u26a0\ufe0f Prekratko',
-      statusLong: '\u26a0\ufe0f Predolgo',
-      generatedBy: 'Ustvarjeno: arteonagency.pl/sl/orodja/stevec-besed-in-znakov',
-    },
-  },
   el: {
     wordsUnit: '\u03bb\u03ad\u03be\u03b5\u03b9\u03c2',
     emptyMessage:
@@ -692,61 +523,6 @@ const EVAL_UI: Record<Locale, EvalUi> = {
       statusShort: '\u26a0\ufe0f \u03a0\u03bf\u03bb\u03cd \u03ba\u03bf\u03bd\u03c4\u03cc',
       statusLong: '\u26a0\ufe0f \u03a0\u03bf\u03bb\u03cd \u03bc\u03b1\u03ba\u03c1\u03cd',
       generatedBy: '\u0394\u03b7\u03bc\u03b9\u03bf\u03c5\u03c1\u03b3\u03ae\u03b8\u03b7\u03ba\u03b5 \u03b1\u03c0\u03cc: arteonagency.pl/el/ergaleia/metritis-lexeon-kai-charaktiron',
-    },
-  },
-  bg: {
-    wordsUnit: '\u0434\u0443\u043c\u0438',
-    emptyMessage:
-      '\u041f\u043e\u0441\u0442\u0430\u0432\u0435\u0442\u0435 \u0438\u043b\u0438 \u0432\u044a\u0432\u0435\u0434\u0435\u0442\u0435 \u0442\u0435\u043a\u0441\u0442, \u0437\u0430 \u0434\u0430 \u0432\u0438\u0434\u0438\u0442\u0435 \u0430\u043d\u0430\u043b\u0438\u0437\u0430.',
-    tooShort: (min, unit, missing) =>
-      `\u0422\u0435\u043a\u0441\u0442\u044a\u0442 \u0435 \u043f\u043e\u0434 \u043f\u0440\u0438\u0431\u043b\u0438\u0437\u0438\u0442\u0435\u043b\u043d\u0438\u044f \u043c\u0438\u043d\u0438\u043c\u0443\u043c (${min} ${unit}). \u0410\u043a\u043e \u0442\u0435\u043c\u0430\u0442\u0430 \u0435 \u043f\u043e\u043a\u0440\u0438\u0442\u0430 \u2013 \u043c\u043e\u0436\u0435 \u0434\u0430 \u0435 \u0434\u043e\u0441\u0442\u0430\u0442\u044a\u0447\u043d\u043e. \u041b\u0438\u043f\u0441\u0432\u0430\u0442 \u043e\u043a\u043e\u043b\u043e ${missing} ${unit}.`,
-    tooLong: (excess, unit) =>
-      `\u0422\u0435\u043a\u0441\u0442\u044a\u0442 \u043f\u0440\u0435\u0432\u0438\u0448\u0430\u0432\u0430 \u043f\u0440\u0438\u0431\u043b\u0438\u0437\u0438\u0442\u0435\u043b\u043d\u0438\u044f \u043c\u0430\u043a\u0441\u0438\u043c\u0443\u043c \u0441 ${excess} ${unit}. \u0410\u043a\u043e \u0432\u0441\u044f\u043a\u043e \u0438\u0437\u0440\u0435\u0447\u0435\u043d\u0438\u0435 \u043d\u043e\u0441\u0438 \u0441\u0442\u043e\u0439\u043d\u043e\u0441\u0442 \u2013 \u0434\u044a\u043b\u0436\u0438\u043d\u0430\u0442\u0430 \u0435 \u043e\u043f\u0440\u0430\u0432\u0434\u0430\u043d\u0430.`,
-    idealInRange:
-      '\u0414\u044a\u043b\u0436\u0438\u043d\u0430\u0442\u0430 \u0435 \u0432 \u043f\u0440\u0435\u043f\u043e\u0440\u044a\u0447\u0438\u0442\u0435\u043b\u043d\u0438\u044f \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d. \u0421\u0442\u043e\u0439\u043d\u043e\u0441\u0442\u0442\u0430 \u0437\u0430 \u0447\u0438\u0442\u0430\u0442\u0435\u043b\u044f \u0435 \u043a\u043b\u044e\u0447\u043e\u0432\u0430.',
-    idealGoodLength: (label) =>
-      `\u0414\u043e\u0431\u0440\u0430 \u0434\u044a\u043b\u0436\u0438\u043d\u0430 \u0437\u0430 ${label.toLowerCase()}. \u0412\u0441\u0435\u043a\u0438 \u0430\u0431\u0437\u0430\u0446 \u0442\u0440\u044f\u0431\u0432\u0430 \u0434\u0430 \u043d\u043e\u0441\u0438 \u043a\u043e\u043d\u043a\u0440\u0435\u0442\u043d\u0430 \u0441\u0442\u043e\u0439\u043d\u043e\u0441\u0442.`,
-    readingTime: (m) => (m === 1 ? '1 \u043c\u0438\u043d\u0443\u0442\u0430' : `${m} \u043c\u0438\u043d\u0443\u0442\u0438`),
-    report: {
-      title: '\ud83d\udcca \u0414\u041e\u041a\u041b\u0410\u0414 \u0417\u0410 \u0414\u042a\u041b\u0416\u0418\u041d\u0410 \u041d\u0410 \u0422\u0415\u041a\u0421\u0422\u0410',
-      pageType: '\u0422\u0438\u043f \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430',
-      range: '\u041f\u0440\u0435\u043f\u043e\u0440\u044a\u0447\u0438\u0442\u0435\u043b\u0435\u043d \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d',
-      statistics: '\ud83d\udcdd \u0421\u0422\u0410\u0422\u0418\u0421\u0422\u0418\u041a\u0410:',
-      words: '\u0414\u0443\u043c\u0438',
-      charsWithSpaces: '\u0417\u043d\u0430\u0446\u0438 (\u0441 \u0438\u043d\u0442\u0435\u0440\u0432\u0430\u043b\u0438)',
-      charsWithoutSpaces: '\u0417\u043d\u0430\u0446\u0438 (\u0431\u0435\u0437 \u0438\u043d\u0442\u0435\u0440\u0432\u0430\u043b\u0438)',
-      paragraphs: '\u0410\u0431\u0437\u0430\u0446\u0438',
-      readingTime: '\u0412\u0440\u0435\u043c\u0435 \u0437\u0430 \u0447\u0435\u0442\u0435\u043d\u0435',
-      evaluation: '\ud83d\udcc8 \u041e\u0426\u0415\u041d\u041a\u0410',
-      statusIdeal: '\u2705 \u0414\u043e\u0431\u0440\u0430 \u0434\u044a\u043b\u0436\u0438\u043d\u0430',
-      statusShort: '\u26a0\ufe0f \u041f\u0440\u0435\u043a\u0430\u043b\u0435\u043d\u043e \u043a\u044a\u0441\u043e',
-      statusLong: '\u26a0\ufe0f \u041f\u0440\u0435\u043a\u0430\u043b\u0435\u043d\u043e \u0434\u044a\u043b\u0433\u043e',
-      generatedBy: '\u0413\u0435\u043d\u0435\u0440\u0438\u0440\u0430\u043d\u043e \u043e\u0442: arteonagency.pl/bg/instrumenti/broiach-na-dumi-i-simvoli',
-    },
-  },
-  uk: {
-    wordsUnit: 'слів',
-    emptyMessage: 'Вставте або введіть текст, щоб побачити аналіз.',
-    tooShort: (min, unit, missing) => `Текст нижче орієнтовного мінімуму (${min} ${unit}). Якщо тему розкрито \u2014 цього може бути достатньо. Бракує близько ${missing} ${unit}.`,
-    tooLong: (excess, unit) => `Текст перевищує орієнтовний максимум на ${excess} ${unit}. Якщо кожне речення несе цінність \u2014 довжина виправдана.`,
-    idealInRange: 'Довжина в рекомендованому діапазоні. Цінність для читача \u2014 головне, а діапазони служать орієнтиром.',
-    idealGoodLength: (label) => `Гарна довжина для ${label.toLowerCase()}. Кожен абзац повинен нести конкретну цінність для читача.`,
-    readingTime: (m) => (m === 1 ? '1 хвилина' : m >= 2 && m <= 4 ? `${m} хвилини` : `${m} хвилин`),
-    report: {
-      title: '\ud83d\udcca ЗВІТ ПРО ДОВЖИНУ ТЕКСТУ',
-      pageType: 'Тип сторінки',
-      range: 'Рекомендований діапазон',
-      statistics: '\ud83d\udcdd СТАТИСТИКА:',
-      words: 'Слова',
-      charsWithSpaces: 'Символи (з пробілами)',
-      charsWithoutSpaces: 'Символи (без пробілів)',
-      paragraphs: 'Абзаци',
-      readingTime: 'Час читання',
-      evaluation: '\ud83d\udcc8 ОЦІНКА',
-      statusIdeal: '\u2705 Гарна довжина',
-      statusShort: '\u26a0\ufe0f Занадто коротко',
-      statusLong: '\u26a0\ufe0f Занадто довго',
-      generatedBy: 'Згенеровано: arteonagency.pl/uk/instrumenty/lichylnyk-sliv-i-symvoliv',
     },
   },
 };

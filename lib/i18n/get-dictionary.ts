@@ -155,20 +155,12 @@ const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
   ro: () => import('@/data/ro/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   nl: () => import('@/data/nl/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   hu: () => import('@/data/hu/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  tr: () => import('@/data/tr/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   cs: () => import('@/data/cs/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   sv: () => import('@/data/sv/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  sq: () => import('@/data/sq/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   da: () => import('@/data/da/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   no: () => import('@/data/no/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   fi: () => import('@/data/fi/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  sk: () => import('@/data/sk/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  hr: () => import('@/data/hr/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  lt: () => import('@/data/lt/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  sl: () => import('@/data/sl/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
   el: () => import('@/data/el/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  bg: () => import('@/data/bg/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
-  uk: () => import('@/data/uk/dictionary.json').then((m) => DictionarySchema.parse(m.default)),
 };
 
 const cache = new Map<Locale, Dictionary>();

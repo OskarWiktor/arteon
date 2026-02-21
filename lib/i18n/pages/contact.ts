@@ -44,20 +44,12 @@ import it from '@/data/it/pages/contact.json';
 import ro from '@/data/ro/pages/contact.json';
 import nl from '@/data/nl/pages/contact.json';
 import hu from '@/data/hu/pages/contact.json';
-import tr from '@/data/tr/pages/contact.json';
 import cs from '@/data/cs/pages/contact.json';
 import sv from '@/data/sv/pages/contact.json';
-import sq from '@/data/sq/pages/contact.json';
 import da from '@/data/da/pages/contact.json';
 import no from '@/data/no/pages/contact.json';
 import fi from '@/data/fi/pages/contact.json';
-import sk from '@/data/sk/pages/contact.json';
-import hr from '@/data/hr/pages/contact.json';
-import lt from '@/data/lt/pages/contact.json';
-import sl from '@/data/sl/pages/contact.json';
 import el from '@/data/el/pages/contact.json';
-import bg from '@/data/bg/pages/contact.json';
-import uk from '@/data/uk/pages/contact.json';
 
 const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
   en,
@@ -69,20 +61,12 @@ const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
   ro,
   nl,
   hu,
-  tr,
   cs,
   sv,
-  sq,
   da,
   no,
   fi,
-  sk,
-  hr,
-  lt,
-  sl,
   el,
-  bg,
-  uk,
 };
 
 // ---------------------------------------------------------------------------

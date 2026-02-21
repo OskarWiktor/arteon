@@ -125,11 +125,10 @@ export const TOOLS_REDIRECTS: Record<string, string> = {
 };
 
 /**
- * Redirecty dla norweskich i litewskich narzędzi (poprawki literówek w slugach, 2026-02-16)
+ * Redirecty dla norweskich narzędzi (poprawki literówek w slugach, 2026-02-16)
  */
-export const NO_LT_TOOLS_REDIRECTS: Record<string, string> = {
+export const NO_TOOLS_REDIRECTS: Record<string, string> = {
   '/no/verktoy/fargeuttrrekker-fra-bilde': '/no/verktoy/fargeutrekker-fra-bilde',
-  '/lt/irankiai/nemokamas-el-paraso-paraso-generatorius': '/lt/irankiai/nemokamas-el-pasto-paraso-generatorius',
 };
 
 /**
@@ -156,6 +155,143 @@ export const SERVICES_REDIRECTS: Record<string, string> = {
   // Zmiana URL strony internetowe → tworzenie stron WordPress (2026-01-24)
   '/uslugi/strony-internetowe': '/uslugi/tworzenie-stron-wordpress',
   '/uslugi/strony-internetowe/optymalizacja-strony-wordpress': '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
+};
+
+/**
+ * Redirecty dla usuniętych lokalizacji azjatyckich i afrykańskich (2026-06)
+ * Wszystkie URL-e przekierowują na odpowiedniki angielskie.
+ */
+export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
+  // ── Turkish (tr) ────────────────────────────────────────────────────
+  '/tr': '/en',
+  '/tr/araclar': '/en/tools',
+  '/tr/hakkimizda': '/en/about',
+  '/tr/iletisim': '/en/contact',
+  '/tr/gizlilik-politikasi': '/en/privacy-policy',
+  '/tr/araclar/jpg-png-webp-donusturucu': '/en/tools/jpg-png-to-webp-unlimited',
+  '/tr/araclar/gorsel-duzenleyici': '/en/tools/online-image-editor',
+  '/tr/araclar/ucretsiz-favicon-olusturucu': '/en/tools/free-favicon-generator',
+  '/tr/araclar/meta-baslik-ve-aciklama-kontrol': '/en/tools/meta-title-description-length-checker',
+  '/tr/araclar/kelime-ve-karakter-sayaci': '/en/tools/word-and-character-counter',
+  '/tr/araclar/ucretsiz-e-posta-imza-olusturucu': '/en/tools/free-email-signature-generator',
+  '/tr/araclar/renk-kontrast-kontrolu': '/en/tools/color-contrast-checker',
+  '/tr/araclar/gorsel-renk-cikarici': '/en/tools/image-color-extractor',
+  '/tr/araclar/renk-paleti-olusturucu': '/en/tools/color-palette-generator',
+  '/tr/araclar/ucretsiz-qr-kod-olusturucu': '/en/tools/free-qr-code-generator',
+  // ── Albanian (sq) ───────────────────────────────────────────────────
+  '/sq': '/en',
+  '/sq/mjetet': '/en/tools',
+  '/sq/rreth-nesh': '/en/about',
+  '/sq/kontakti': '/en/contact',
+  '/sq/politika-e-privatesise': '/en/privacy-policy',
+  '/sq/mjetet/konvertues-jpg-png-ne-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/sq/mjetet/redaktues-imazhesh': '/en/tools/online-image-editor',
+  '/sq/mjetet/gjenerues-favicon-falas': '/en/tools/free-favicon-generator',
+  '/sq/mjetet/kontrollues-meta-titull-dhe-pershkrim': '/en/tools/meta-title-description-length-checker',
+  '/sq/mjetet/numerues-fjalesh-dhe-karakteresh': '/en/tools/word-and-character-counter',
+  '/sq/mjetet/gjenerues-nenshkrimi-email-falas': '/en/tools/free-email-signature-generator',
+  '/sq/mjetet/kontrollues-kontrasti-ngjyrave': '/en/tools/color-contrast-checker',
+  '/sq/mjetet/nxjerres-ngjyrash-nga-imazhi': '/en/tools/image-color-extractor',
+  '/sq/mjetet/gjenerues-paletash-ngjyrash': '/en/tools/color-palette-generator',
+  '/sq/mjetet/gjenerues-kodi-qr-falas': '/en/tools/free-qr-code-generator',
+  // ── Slovak (sk) ─────────────────────────────────────────────────────
+  '/sk': '/en',
+  '/sk/nastroje': '/en/tools',
+  '/sk/o-nas': '/en/about',
+  '/sk/kontakt': '/en/contact',
+  '/sk/zasady-ochrany-osobnych-udajov': '/en/privacy-policy',
+  '/sk/nastroje/konvertor-jpg-png-na-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/sk/nastroje/editor-obrazkov': '/en/tools/online-image-editor',
+  '/sk/nastroje/generator-favicon-zadarmo': '/en/tools/free-favicon-generator',
+  '/sk/nastroje/kontrola-meta-titulku-a-popisu': '/en/tools/meta-title-description-length-checker',
+  '/sk/nastroje/pocitadlo-slov-a-znakov': '/en/tools/word-and-character-counter',
+  '/sk/nastroje/generator-podpisu-emailu-zadarmo': '/en/tools/free-email-signature-generator',
+  '/sk/nastroje/kontrola-kontrastu-farieb': '/en/tools/color-contrast-checker',
+  '/sk/nastroje/extraktor-farieb-z-obrazka': '/en/tools/image-color-extractor',
+  '/sk/nastroje/generator-farebnych-palet': '/en/tools/color-palette-generator',
+  '/sk/nastroje/generator-qr-kodov-zadarmo': '/en/tools/free-qr-code-generator',
+  // ── Croatian (hr) ───────────────────────────────────────────────────
+  '/hr': '/en',
+  '/hr/alati': '/en/tools',
+  '/hr/o-nama': '/en/about',
+  '/hr/kontakt': '/en/contact',
+  '/hr/pravila-privatnosti': '/en/privacy-policy',
+  '/hr/alati/pretvaranje-jpg-png-u-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/hr/alati/urednik-slika': '/en/tools/online-image-editor',
+  '/hr/alati/besplatni-generator-favicona': '/en/tools/free-favicon-generator',
+  '/hr/alati/provjera-meta-naslova-i-opisa': '/en/tools/meta-title-description-length-checker',
+  '/hr/alati/brojac-rijeci-i-znakova': '/en/tools/word-and-character-counter',
+  '/hr/alati/besplatni-generator-potpisa-emaila': '/en/tools/free-email-signature-generator',
+  '/hr/alati/provjera-kontrasta-boja': '/en/tools/color-contrast-checker',
+  '/hr/alati/izdvajanje-boja-iz-slike': '/en/tools/image-color-extractor',
+  '/hr/alati/generator-paleta-boja': '/en/tools/color-palette-generator',
+  '/hr/alati/besplatni-generator-qr-kodova': '/en/tools/free-qr-code-generator',
+  // ── Lithuanian (lt) ─────────────────────────────────────────────────
+  '/lt': '/en',
+  '/lt/irankiai': '/en/tools',
+  '/lt/apie-mus': '/en/about',
+  '/lt/kontaktai': '/en/contact',
+  '/lt/privatumo-politika': '/en/privacy-policy',
+  '/lt/irankiai/jpg-png-i-webp-konverteris': '/en/tools/jpg-png-to-webp-unlimited',
+  '/lt/irankiai/vaizdu-redaktorius': '/en/tools/online-image-editor',
+  '/lt/irankiai/nemokamas-favicon-generatorius': '/en/tools/free-favicon-generator',
+  '/lt/irankiai/meta-pavadinimo-ir-aprasymo-tikrintuvas': '/en/tools/meta-title-description-length-checker',
+  '/lt/irankiai/zodziu-ir-simboliu-skaitiklis': '/en/tools/word-and-character-counter',
+  '/lt/irankiai/nemokamas-el-pasto-paraso-generatorius': '/en/tools/free-email-signature-generator',
+  '/lt/irankiai/spalvu-kontrasto-tikrintuvas': '/en/tools/color-contrast-checker',
+  '/lt/irankiai/spalvu-isrinkimas-is-vaizdo': '/en/tools/image-color-extractor',
+  '/lt/irankiai/spalvu-paletes-generatorius': '/en/tools/color-palette-generator',
+  '/lt/irankiai/nemokamas-qr-kodo-generatorius': '/en/tools/free-qr-code-generator',
+  // Old typo redirect (was in NO_LT_TOOLS_REDIRECTS)
+  '/lt/irankiai/nemokamas-el-paraso-paraso-generatorius': '/en/tools/free-email-signature-generator',
+  // ── Slovenian (sl) ──────────────────────────────────────────────────
+  '/sl': '/en',
+  '/sl/orodja': '/en/tools',
+  '/sl/o-nas': '/en/about',
+  '/sl/kontakt': '/en/contact',
+  '/sl/pravilnik-o-zasebnosti': '/en/privacy-policy',
+  '/sl/orodja/pretvornik-jpg-png-v-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/sl/orodja/urejevalnik-slik': '/en/tools/online-image-editor',
+  '/sl/orodja/brezplacni-generator-faviconov': '/en/tools/free-favicon-generator',
+  '/sl/orodja/preverjanje-meta-naslova-in-opisa': '/en/tools/meta-title-description-length-checker',
+  '/sl/orodja/stevec-besed-in-znakov': '/en/tools/word-and-character-counter',
+  '/sl/orodja/brezplacni-generator-podpisa-eposta': '/en/tools/free-email-signature-generator',
+  '/sl/orodja/preverjanje-kontrasta-barv': '/en/tools/color-contrast-checker',
+  '/sl/orodja/izlocanje-barv-iz-slike': '/en/tools/image-color-extractor',
+  '/sl/orodja/generator-barvnih-palet': '/en/tools/color-palette-generator',
+  '/sl/orodja/brezplacni-generator-qr-kod': '/en/tools/free-qr-code-generator',
+  // ── Bulgarian (bg) ──────────────────────────────────────────────────
+  '/bg': '/en',
+  '/bg/instrumenti': '/en/tools',
+  '/bg/za-nas': '/en/about',
+  '/bg/kontakt': '/en/contact',
+  '/bg/politika-za-poveritelnost': '/en/privacy-policy',
+  '/bg/instrumenti/konvertor-jpg-png-v-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/bg/instrumenti/redaktor-na-izobrazhenia': '/en/tools/online-image-editor',
+  '/bg/instrumenti/bezplaten-generator-na-favicon': '/en/tools/free-favicon-generator',
+  '/bg/instrumenti/proverka-na-meta-zaglavie-i-opisanie': '/en/tools/meta-title-description-length-checker',
+  '/bg/instrumenti/broiach-na-dumi-i-simvoli': '/en/tools/word-and-character-counter',
+  '/bg/instrumenti/bezplaten-generator-na-podpis-za-email': '/en/tools/free-email-signature-generator',
+  '/bg/instrumenti/proverka-na-kontrast-na-tsvetove': '/en/tools/color-contrast-checker',
+  '/bg/instrumenti/ekstraktor-na-tsvetove-ot-izobrazhenie': '/en/tools/image-color-extractor',
+  '/bg/instrumenti/generator-na-tsvetovi-palitri': '/en/tools/color-palette-generator',
+  '/bg/instrumenti/bezplaten-generator-na-qr-kod': '/en/tools/free-qr-code-generator',
+  // ── Ukrainian (uk) ──────────────────────────────────────────────────
+  '/uk': '/en',
+  '/uk/instrumenty': '/en/tools',
+  '/uk/pro-nas': '/en/about',
+  '/uk/kontakt': '/en/contact',
+  '/uk/polityka-konfidentsiinosti': '/en/privacy-policy',
+  '/uk/instrumenty/konverter-jpg-png-u-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/uk/instrumenty/redaktor-zobrazhen': '/en/tools/online-image-editor',
+  '/uk/instrumenty/bezkoshtovnyi-generator-favicon': '/en/tools/free-favicon-generator',
+  '/uk/instrumenty/perevirka-meta-zaholovka-ta-opysu': '/en/tools/meta-title-description-length-checker',
+  '/uk/instrumenty/lichylnyk-sliv-i-symvoliv': '/en/tools/word-and-character-counter',
+  '/uk/instrumenty/bezkoshtovnyi-generator-pidpysu-email': '/en/tools/free-email-signature-generator',
+  '/uk/instrumenty/perevirka-kontrastu-koloriv': '/en/tools/color-contrast-checker',
+  '/uk/instrumenty/ekstraktor-koloriv-z-zobrazhennia': '/en/tools/image-color-extractor',
+  '/uk/instrumenty/generator-kolirnykh-palitr': '/en/tools/color-palette-generator',
+  '/uk/instrumenty/bezkoshtovnyi-generator-qr-kodu': '/en/tools/free-qr-code-generator',
 };
 
 /**
@@ -367,8 +503,9 @@ export const ALL_STATIC_REDIRECTS: Record<string, string> = {
   ...PROJECT_REDIRECTS,
   ...EDUCATION_REDIRECTS,
   ...TOOLS_REDIRECTS,
-  ...NO_LT_TOOLS_REDIRECTS,
+  ...NO_TOOLS_REDIRECTS,
   ...DE_TOOLS_REDIRECTS,
   ...SERVICES_REDIRECTS,
+  ...REMOVED_LOCALE_REDIRECTS_EU,
   ...REMOVED_LOCALE_REDIRECTS,
 };
