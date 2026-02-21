@@ -181,7 +181,6 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
       <ToolEditorLayout>
         <AdSense variant="tool-banner" className="my-3" />
         {tool ?? <DynamicToolRenderer toolKey={data.toolKey} />}
-        <AdSense variant="tool-banner" className="my-3" />
       </ToolEditorLayout>
 
       <Wrapper>
