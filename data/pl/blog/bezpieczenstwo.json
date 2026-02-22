@@ -26,18 +26,22 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak działają aktualizacje WordPressa?</h2><p>WordPress składa się z trzech głównych elementów: rdzenia (core), motywów i wtyczek. Każdy z nich jest aktualizowany niezależnie i każdy może zawierać luki bezpieczeństwa.</p><br/><h3 class='h5 mb-3 mt-4'>Rdzeń WordPressa</h3><p>Rdzeń to podstawowy kod systemu - odpowiada za logowanie, zarządzanie treścią, obsługę mediów i wszystkie fundamentalne funkcje. Zespół WordPress regularnie wydaje aktualizacje, które dzielą się na dwa typy:</p><br/><ul class='list-disc ml-5'><li><strong>Aktualizacje główne</strong> (np. 6.4, 6.5) - wprowadzają nowe funkcje, zmiany w interfejsie i większe usprawnienia. Wychodzą kilka razy w roku.</li><li><strong>Aktualizacje bezpieczeństwa</strong> (np. 6.4.1, 6.4.2) - naprawiają konkretne luki i błędy. Wychodzą w miarę potrzeb, czasem kilka w miesiącu.</li></ul><br/><p>Od wersji 3.7 WordPress domyślnie instaluje automatyczne aktualizacje bezpieczeństwa dla rdzenia, ale aktualizacje główne wymagają ręcznej decyzji.</p>",
-          "breakAfter": true
-        },
-        {
           "type": "ad",
           "slot": "9459125335"
         },
         {
           "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak działają aktualizacje WordPressa?</h2><p>WordPress składa się z trzech głównych elementów: rdzenia (core), motywów i wtyczek. Każdy z nich jest aktualizowany niezależnie i każdy może zawierać luki bezpieczeństwa.</p><br/><h3 class='h5 mb-3 mt-4'>Rdzeń WordPressa</h3><p>Rdzeń to podstawowy kod systemu - odpowiada za logowanie, zarządzanie treścią, obsługę mediów i wszystkie fundamentalne funkcje. Zespół WordPress regularnie wydaje aktualizacje, które dzielą się na dwa typy:</p><br/><ul class='list-disc ml-5'><li><strong>Aktualizacje główne</strong> (np. 6.4, 6.5) - wprowadzają nowe funkcje, zmiany w interfejsie i większe usprawnienia. Wychodzą kilka razy w roku.</li><li><strong>Aktualizacje bezpieczeństwa</strong> (np. 6.4.1, 6.4.2) - naprawiają konkretne luki i błędy. Wychodzą w miarę potrzeb, czasem kilka w miesiącu.</li></ul><br/><p>Od wersji 3.7 WordPress domyślnie instaluje automatyczne aktualizacje bezpieczeństwa dla rdzenia, ale aktualizacje główne wymagają ręcznej decyzji.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego wiele stron WordPress pozostaje nieaktualnych?</h2><p>Powodów, dla których strony pozostają nieaktualne, jest kilka.</p><br/><h3 class='h5 mb-3 mt-4'>Brak świadomości</h3><p>Wielu właścicieli stron nie wie, że WordPress wymaga regularnych aktualizacji. Strona działa, wygląda dobrze, więc wydaje się, że wszystko jest w porządku. Luki bezpieczeństwa nie są widoczne w codziennym użytkowaniu strony.</p><br/><h3 class='h5 mb-3 mt-4'>Obawa przed uszkodzeniem strony</h3><p>Aktualizacje mogą powodować konflikty - szczególnie gdy strona korzysta z wielu wtyczek lub ma niestandardowe modyfikacje. Właściciele obawiają się, że po aktualizacji coś przestanie działać. Dlatego warto przygotować się do aktualizacji: utworzyć kopię zapasową i, jeśli to możliwe, przetestować zmiany na środowisku testowym.</p><br/><h3 class='h5 mb-3 mt-4'>Brak czasu lub zasobów</h3><p>Utrzymanie strony wymaga regularnej uwagi. Dla małej firmy, która nie ma dedykowanego zespołu IT, aktualizacje mogą schodzić na dalszy plan. Regularna konserwacja pozwala uniknąć poważniejszych problemów w przyszłości.</p><br/><h3 class='h5 mb-3 mt-4'>Nieaktualizowane lub porzucone wtyczki</h3><p>Niektóre wtyczki nie są już rozwijane przez autorów. Strona może działać poprawnie, ale wtyczka nie otrzymuje poprawek bezpieczeństwa. W takiej sytuacji jedynym rozwiązaniem jest znalezienie alternatywy lub usunięcie wtyczki.</p><br/><p>Jeśli zarządzanie stroną WordPress wydaje się zbyt czasochłonne, warto rozważyć <a class='inline-link' href='/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress'>profesjonalną optymalizację i utrzymanie</a> - to pozwala skupić się na prowadzeniu firmy zamiast na kwestiach technicznych.</p>",
           "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335"
         },
         {
           "type": "richtext",
@@ -128,18 +132,22 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co to jest certyfikat SSL i jak działa?</h2><p><strong>Certyfikat SSL</strong> to cyfrowy dokument, który potwierdza tożsamość strony internetowej i umożliwia szyfrowane połączenie. Gdy strona ma SSL, jej adres zaczyna się od <strong>https://</strong> zamiast http:// - ta dodatkowa litera s oznacza secure (bezpieczne).</p><br/><p><strong>Jak to działa w praktyce?</strong></p><br/><p>Gdy wchodzisz na stronę z SSL, Twoja przeglądarka i serwer wymieniają się kluczami szyfrującymi. Od tego momentu wszystkie dane przesyłane między Tobą a stroną są zaszyfrowane - nawet jeśli ktoś przechwyci tę komunikację, zobaczy tylko nieczytelny ciąg znaków.</p><br/><p>Bez SSL dane są jak kartka pocztowa - każdy po drodze może je przeczytać. Z SSL dane są zaszyfrowane i może je odczytać tylko adresat.</p><br/><p><strong>Gdzie widzisz, że strona ma SSL?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Kłódka w pasku adresu</strong> - symbol zamkniętej kłódki obok adresu strony</li><li><strong>HTTPS w adresie</strong> - adres zaczyna się od https:// zamiast http://</li><li><strong>Informacje o certyfikacie</strong> - po kliknięciu w kłódkę zobaczysz szczegóły certyfikatu</li></ul>",
-          "breakAfter": true
-        },
-        {
           "type": "ad",
           "slot": "9459125335"
         },
         {
           "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co to jest certyfikat SSL i jak działa?</h2><p><strong>Certyfikat SSL</strong> to cyfrowy dokument, który potwierdza tożsamość strony internetowej i umożliwia szyfrowane połączenie. Gdy strona ma SSL, jej adres zaczyna się od <strong>https://</strong> zamiast http:// - ta dodatkowa litera s oznacza secure (bezpieczne).</p><br/><p><strong>Jak to działa w praktyce?</strong></p><br/><p>Gdy wchodzisz na stronę z SSL, Twoja przeglądarka i serwer wymieniają się kluczami szyfrującymi. Od tego momentu wszystkie dane przesyłane między Tobą a stroną są zaszyfrowane - nawet jeśli ktoś przechwyci tę komunikację, zobaczy tylko nieczytelny ciąg znaków.</p><br/><p>Bez SSL dane są jak kartka pocztowa - każdy po drodze może je przeczytać. Z SSL dane są zaszyfrowane i może je odczytać tylko adresat.</p><br/><p><strong>Gdzie widzisz, że strona ma SSL?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Kłódka w pasku adresu</strong> - symbol zamkniętej kłódki obok adresu strony</li><li><strong>HTTPS w adresie</strong> - adres zaczyna się od https:// zamiast http://</li><li><strong>Informacje o certyfikacie</strong> - po kliknięciu w kłódkę zobaczysz szczegóły certyfikatu</li></ul>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego SSL jest ważny dla bezpieczeństwa i zaufania użytkowników?</h2><p>Certyfikat SSL chroni dane użytkowników przed przechwyceniem. To szczególnie istotne w kilku sytuacjach:</p><br/><p><strong>1. Formularze kontaktowe i logowanie</strong></p><br/><p>Gdy ktoś wypełnia formularz na stronie - podaje imię, e-mail, telefon lub hasło - te dane są przesyłane do serwera. Bez SSL ktoś mógłby je przechwycić w drodze. Z SSL są zaszyfrowane i bezpieczne.</p><br/><p><strong>2. Sklepy internetowe i płatności</strong></p><br/><p>Każdy <a class='inline-link' href='/uslugi/sklepy-internetowe'>sklep internetowy</a> musi mieć SSL. Bez niego operatorzy płatności (jak PayU, Przelewy24, Stripe) nie pozwolą na integrację systemu płatności. To wymóg bezpieczeństwa - dane kart płatniczych muszą być szyfrowane.</p><br/><p><strong>3. Zaufanie użytkowników</strong></p><br/><p>Przeglądarki (Chrome, Firefox, Safari) wyraźnie oznaczają strony bez SSL jako niezabezpieczone. Użytkownik widzi ostrzeżenie, a czasem przeglądarka w ogóle blokuje wejście na stronę. Według danych <a class='inline-link' href='https://www.globalsign.com/en/blog/what-happens-to-unsecured-website' target='_blank' rel='noopener noreferrer'>GlobalSign</a>, ponad 80% użytkowników opuszcza stronę, gdy widzą ostrzeżenie o braku bezpieczeństwa.</p><br/><p>Dla kancelarii prawnej, gabinetu lekarskiego czy biura nieruchomości to może oznaczać utratę potencjalnych klientów - zanim jeszcze zobaczą ofertę.</p>",
           "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335"
         },
         {
           "type": "richtext",
@@ -166,18 +174,22 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak zainstalować darmowy certyfikat Let's Encrypt?</h2><p><a href='https://letsencrypt.org/' target='_blank' rel='noopener noreferrer'>Let's Encrypt</a> to bezpłatny dostawca certyfikatów SSL, który zrewolucjonizował rynek. Przed jego powstaniem w 2015 roku każdy certyfikat SSL był płatny. Dziś Let's Encrypt wydaje certyfikaty dla ponad 300 milionów domen na świecie.</p><br/><p><strong>Instalacja przez panel hostingu</strong></p><br/><p>Większość polskich firm hostingowych (np. home.pl, nazwa.pl, OVH, cyber_Folks) oferuje instalację Let's Encrypt bezpośrednio w panelu administracyjnym. Proces wygląda zwykle tak:</p><br/><ol class='list-decimal ml-5'><li>Zaloguj się do panelu hostingu</li><li>Znajdź sekcję SSL / Certyfikaty / Bezpieczeństwo</li><li>Wybierz opcję Let's Encrypt lub darmowy SSL</li><li>Wskaż domenę, dla której chcesz certyfikat</li><li>Potwierdź instalację - certyfikat zostanie aktywowany w ciągu kilku minut</li></ol><br/><p><strong>Automatyczne odnawianie</strong></p><br/><p>Certyfikaty Let's Encrypt są ważne przez 90 dni, ale odnawiają się automatycznie. Nie musisz pamiętać o ręcznym odnawianiu - hosting robi to za Ciebie. Jeśli z jakiegoś powodu automatyczne odnawianie nie zadziała, Let's Encrypt wysyła powiadomienia e-mail na 20, 10 i 1 dzień przed wygaśnięciem.</p><br/><p><strong>Przekierowanie HTTP na HTTPS</strong></p><br/><p>Po instalacji certyfikatu ważne jest skonfigurowanie przekierowania z http:// na https://. Dzięki temu wszyscy użytkownicy - niezależnie od tego, czy wpiszą adres z http czy https - trafią na bezpieczną wersję strony. W większości hostingów tę opcję włączysz w panelu administracyjnym. Warto też upewnić się, że <strong>przekierowanie 301</strong> jest poprawnie skonfigurowane, żeby nie stracić pozycji w Google.</p><br/><p><strong>Certyfikat wildcard</strong></p><br/><p>Jeśli firma korzysta z subdomen (np. sklep.mojafirma.pl, blog.mojafirma.pl), potrzebny jest certyfikat wildcard (*.mojafirma.pl), który obejmuje wszystkie subdomeny. Let's Encrypt oferuje certyfikaty wildcard, ale ich konfiguracja wymaga dostępu do DNS i może być bardziej techniczna. W takim przypadku warto skonsultować się ze specjalistą lub <a class='inline-link' href='/kontakt'>skontaktować się z nami</a>.</p>",
-          "breakAfter": true
-        },
-        {
           "type": "ad",
           "slot": "9459125335"
         },
         {
           "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak zainstalować darmowy certyfikat Let's Encrypt?</h2><p><a href='https://letsencrypt.org/' target='_blank' rel='noopener noreferrer'>Let's Encrypt</a> to bezpłatny dostawca certyfikatów SSL, który zrewolucjonizował rynek. Przed jego powstaniem w 2015 roku każdy certyfikat SSL był płatny. Dziś Let's Encrypt wydaje certyfikaty dla ponad 300 milionów domen na świecie.</p><br/><p><strong>Instalacja przez panel hostingu</strong></p><br/><p>Większość polskich firm hostingowych (np. home.pl, nazwa.pl, OVH, cyber_Folks) oferuje instalację Let's Encrypt bezpośrednio w panelu administracyjnym. Proces wygląda zwykle tak:</p><br/><ol class='list-decimal ml-5'><li>Zaloguj się do panelu hostingu</li><li>Znajdź sekcję SSL / Certyfikaty / Bezpieczeństwo</li><li>Wybierz opcję Let's Encrypt lub darmowy SSL</li><li>Wskaż domenę, dla której chcesz certyfikat</li><li>Potwierdź instalację - certyfikat zostanie aktywowany w ciągu kilku minut</li></ol><br/><p><strong>Automatyczne odnawianie</strong></p><br/><p>Certyfikaty Let's Encrypt są ważne przez 90 dni, ale odnawiają się automatycznie. Nie musisz pamiętać o ręcznym odnawianiu - hosting robi to za Ciebie. Jeśli z jakiegoś powodu automatyczne odnawianie nie zadziała, Let's Encrypt wysyła powiadomienia e-mail na 20, 10 i 1 dzień przed wygaśnięciem.</p><br/><p><strong>Przekierowanie HTTP na HTTPS</strong></p><br/><p>Po instalacji certyfikatu ważne jest skonfigurowanie przekierowania z http:// na https://. Dzięki temu wszyscy użytkownicy - niezależnie od tego, czy wpiszą adres z http czy https - trafią na bezpieczną wersję strony. W większości hostingów tę opcję włączysz w panelu administracyjnym. Warto też upewnić się, że <strong>przekierowanie 301</strong> jest poprawnie skonfigurowane, żeby nie stracić pozycji w Google.</p><br/><p><strong>Certyfikat wildcard</strong></p><br/><p>Jeśli firma korzysta z subdomen (np. sklep.mojafirma.pl, blog.mojafirma.pl), potrzebny jest certyfikat wildcard (*.mojafirma.pl), który obejmuje wszystkie subdomeny. Let's Encrypt oferuje certyfikaty wildcard, ale ich konfiguracja wymaga dostępu do DNS i może być bardziej techniczna. W takim przypadku warto skonsultować się ze specjalistą lub <a class='inline-link' href='/kontakt'>skontaktować się z nami</a>.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>SSL a ochrona danych osobowych (RODO)</h2><p>Certyfikat SSL ma znaczenie nie tylko dla SEO i zaufania użytkowników, ale również z perspektywy prawnej - konkretnie w kontekście RODO (Rozporządzenie o Ochronie Danych Osobowych).</p><br/><p><strong>Obowiązek zabezpieczenia danych</strong></p><br/><p>RODO (art. 32) wymaga, żeby administratorzy danych stosowali odpowiednie środki techniczne do ochrony danych osobowych. Szyfrowanie transmisji danych (czyli właśnie SSL/TLS) jest jednym z takich środków. Jeśli Twoja strona zbiera dane osobowe przez formularze (imię, e-mail, telefon, adres), szyfrowanie SSL jest praktycznie wymagane.</p><br/><p><strong>Formularze kontaktowe i zapisy na newsletter</strong></p><br/><p>Każdy formularz kontaktowy na stronie firmowej przesyła dane osobowe. Formularz zapisu na <a class='inline-link' href='/edukacja/marketing/co-to-jest-newsletter-i-czy-warto-go-prowadzic'>newsletter</a> zbiera adresy e-mail. Formularz rezerwacji w restauracji - imiona i numery telefonów. Wszystkie te dane powinny być przesyłane przez szyfrowane połączenie.</p><br/><p><strong>Konsekwencje braku zabezpieczeń</strong></p><br/><p>Brak SSL na stronie zbierającej dane osobowe może być uznany za naruszenie zasady bezpieczeństwa przetwarzania danych. W przypadku wycieku danych, UODO (Urząd Ochrony Danych Osobowych) może nałożyć karę finansową. Niezależnie od kar, wyciek danych klientów to poważny cios wizerunkowy dla firmy.</p><br/><p><strong>SSL to minimum, nie maksimum</strong></p><br/><p>Warto pamiętać, że SSL chroni dane w trakcie przesyłania (in transit), ale nie chroni danych przechowywanych na serwerze (at rest). Kompleksowe bezpieczeństwo strony obejmuje również: regularne aktualizacje oprogramowania, silne hasła dostępowe, kopie zapasowe i odpowiednią konfigurację serwera. Jeśli planujesz <a class='inline-link' href='/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony'>uruchomienie nowej strony</a>, warto od razu zadbać o wszystkie aspekty bezpieczeństwa.</p>",
           "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335"
         },
         {
           "type": "richtext",
