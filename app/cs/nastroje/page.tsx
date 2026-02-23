@@ -375,7 +375,7 @@ export default function ToolsIndexPage() {
               icon: <RiPaletteLine className="h-8 w-8" />,
               title: 'Generator barevnych palet',
               topImageAlt: 'Generator barevnych palet Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
+              topImageSrc: '/assets/tools/color-palette-generator/generator-barevnych-palet-cs.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Vyberte jednu zakladni barvu a vytvorte 9 barevnych palet: monochromatickou, komplementarni, triadickou, pastelovou, tmavou a dalsi. Zkopirujte HEX kody jednim kliknutim.</p>

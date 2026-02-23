@@ -381,7 +381,7 @@ export default function ToolsIndexPage() {
               icon: <RiPaletteLine className="h-8 w-8" />,
               title: 'Kleurpalettengenerator',
               topImageAlt: 'Kleurpalettengenerator Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
+              topImageSrc: '/assets/tools/color-palette-generator/kleurpalettengenerator-nl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Kies een basiskleur en genereer 9 kleurpaletten: monochromatisch, complementair, triadisch, pastel, donker en meer. Kopieer HEX-codes met één klik.</p>

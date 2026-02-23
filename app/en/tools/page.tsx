@@ -403,7 +403,7 @@ export default function ToolsIndexPage() {
               icon: <RiPaletteLine className="h-8 w-8" />,
               title: 'Color palette generator',
               topImageAlt: 'Color palette generator Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
+              topImageSrc: '/assets/tools/color-palette-generator/color-palette-generator-en.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Pick one base color and generate 9 color palettes: monochromatic, complementary, triadic, pastel, dark, and more. Copy HEX codes with a single click.</p>

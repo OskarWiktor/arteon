@@ -352,7 +352,7 @@ export default function ToolsIndexPage() {
               icon: <RiPaletteLine className="h-8 w-8" />,
               title: 'Väripalettien generaattori',
               topImageAlt: 'Väripalettien generaattori Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
+              topImageSrc: '/assets/tools/color-palette-generator/varipaletti-generaattori-fi.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Valitse perusväri ja luo 9 väripalettia: monokromaattinen, komplementaarinen, triadinen, pastelli, tumma ja muita. Kopioi HEX-koodit yhdellä napsautuksella.</p>

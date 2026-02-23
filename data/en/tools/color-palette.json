@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Free Color Palette Generator – 9 Palettes From One Color",
     "description": "Generate 9 color palettes from one base color: monochromatic, complementary, triadic, pastel and more. Copy HEX codes in one click. No signup, no limits.",
-    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "ogImage": "/assets/tools/color-palette-generator/color-palette-generator-en.webp",
     "path": "/en/tools/color-palette-generator"
   },
   "hero": {
@@ -60,7 +60,7 @@
     {
       "type": "sectionInfo",
       "title": "Why generate a color palette?",
-      "html": "<p class=\"text-mid\">A consistent color palette is the foundation of every visual project - from a website, through a logo, to printed materials. Manually selecting colors that work together requires knowledge of color theory. The generator does it automatically: you provide one base color (e.g., your logo color), and the tool creates 9 color sets based on proven color harmony schemes.</p><p class=\"text-mid mt-3\">Each generated color comes with its HEX code (e.g., #4F6BF5) and HSL value (hue, saturation, lightness). The HEX code can be pasted directly into CSS, Figma, Canva, or any graphics application.</p>"
+      "html": "<p class=\"text-mid\">A consistent color palette is the foundation of every visual project - from a website, through a logo, to printed materials. Manually selecting colors that work together requires knowledge of color theory. The generator does it automatically: you provide one base color (e.g., your logo color), and the tool creates 9 color sets based on proven color harmony schemes.</p><p class=\"text-mid mt-3\">Each generated color comes with its HEX code (e.g., #496ba2) and HSL value (hue, saturation, lightness). The HEX code can be pasted directly into CSS, Figma, Canva, or any graphics application.</p>"
     },
     { "type": "gap", "size": "sm" },
     {
@@ -69,7 +69,7 @@
       "description": "The whole process takes just a few seconds:",
       "grid": "three",
       "items": [
-        { "title": "1. Enter the base color", "description": "Type a HEX code (e.g., #4F6BF5) in the text field or pick a color from the color picker. You can also use the Random Color button." },
+        { "title": "1. Enter the base color", "description": "Type a HEX code (e.g., #496ba2) in the text field or pick a color from the color picker. You can also use the Random Color button." },
         { "title": "2. Confirm your choice", "description": "After clicking the Update Color button, the tool will automatically generate 9 palettes based on different color harmony schemes." },
         { "title": "3. Copy the colors you need", "description": "Next to each color there is a Copy button - the HEX code goes to the clipboard and can be pasted directly into your project." }
       ]

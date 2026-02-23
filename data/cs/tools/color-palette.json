@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Generátor barevných palet zdarma – 9 palet z jedné barvy",
     "description": "Vygenerujte 9 barevných palet z jedné základní barvy: monochromatickou, komplementární, triádickou, pastelovou a další. Zkopírujte kódy HEX jedním klikem.",
-    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "ogImage": "/assets/tools/color-palette-generator/generator-barevnych-palet-cs.webp",
     "path": "/cs/nastroje/generator-barevnych-palet"
   },
   "hero": {
@@ -78,7 +78,7 @@
     {
       "type": "sectionInfo",
       "title": "Proč generovat barevnou paletu?",
-      "html": "<p class=\"text-mid\">Konzistentní barevná paleta je základem každého vizuálního projektu – od webu přes logo po tiskové materiály. Ruční výběr barev, které spolu fungují, vyžaduje znalost teorie barev. Generátor tento proces automatizuje: zadáte jednu základní barvu (např. barvu vašeho loga) a nástroj vygeneruje 9 sad barev na základě ověřených schémat barevné harmonie.</p><p class=\"text-mid mt-3\">Každá vygenerovaná barva má svůj kód HEX (např. #4F6BF5) a hodnotu HSL (hue, saturation, lightness). Kód HEX lze vložit přímo do CSS, Figma, Canva nebo jakékoliv grafické aplikace.</p>"
+      "html": "<p class=\"text-mid\">Konzistentní barevná paleta je základem každého vizuálního projektu – od webu přes logo po tiskové materiály. Ruční výběr barev, které spolu fungují, vyžaduje znalost teorie barev. Generátor tento proces automatizuje: zadáte jednu základní barvu (např. barvu vašeho loga) a nástroj vygeneruje 9 sad barev na základě ověřených schémat barevné harmonie.</p><p class=\"text-mid mt-3\">Každá vygenerovaná barva má svůj kód HEX (např. #496ba2) a hodnotu HSL (hue, saturation, lightness). Kód HEX lze vložit přímo do CSS, Figma, Canva nebo jakékoliv grafické aplikace.</p>"
     },
     {
       "type": "gap",
@@ -92,7 +92,7 @@
       "items": [
         {
           "title": "1. Zadejte základní barvu",
-          "description": "Zadejte kód HEX (např. #4F6BF5) do textového pole nebo vyberte barvu z color pickeru. Můžete také použít tlačítko Náhodná barva."
+          "description": "Zadejte kód HEX (např. #496ba2) do textového pole nebo vyberte barvu z color pickeru. Můžete také použít tlačítko Náhodná barva."
         },
         {
           "title": "2. Potvrďte svůj výběr",

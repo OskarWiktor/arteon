@@ -364,7 +364,7 @@ export default function ToolsIndexPage() {
               icon: <RiPaletteLine className="h-8 w-8" />,
               title: 'Δημιουργία παλέτας χρωμάτων',
               topImageAlt: 'Δημιουργία παλέτας χρωμάτων Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
+              topImageSrc: '/assets/tools/color-palette-generator/dimiourgia-paletas-chromaton-el.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Επιλέξτε ένα βασικό χρώμα και δημιουργήστε 9 παλέτες: μονοχρωματική, συμπληρωματική, τριαδική, παστέλ, σκούρα και άλλες. Αντιγράψτε κωδικούς HEX με ένα κλικ.</p>

@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Gratis kleurpalettengenerator – 9 paletten uit één kleur",
     "description": "Genereer 9 harmonische kleurpaletten uit één basiskleur: monochromatisch, complementair, triadisch, pastel en meer. Kopieer HEX-, RGB- en HSL-codes met één klik.",
-    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "ogImage": "/assets/tools/color-palette-generator/kleurpalettengenerator-nl.webp",
     "path": "/nl/tools/kleurpalettengenerator"
   },
   "hero": {
@@ -78,7 +78,7 @@
     {
       "type": "sectionInfo",
       "title": "Waarom een kleurpalet genereren?",
-      "html": "<p class=\"text-mid\">Een consistent kleurpalet is de basis van elk visueel project – van een website, via een logo, tot drukwerk. Het handmatig selecteren van kleuren die goed samenwerken vereist kennis van kleurentheorie. De generator doet dit automatisch: u geeft één basiskleur op (bijv. uw logkleur) en de tool creëert 9 kleurensets op basis van bewezen kleurharmonieschema's.</p><p class=\"text-mid mt-3\">Elke gegenereerde kleur komt met zijn HEX-code (bijv. #4F6BF5) en HSL-waarde (tint, verzadiging, lichtheid). De HEX-code kan direct worden geplakt in CSS, Figma, Canva of een grafische applicatie.</p>"
+      "html": "<p class=\"text-mid\">Een consistent kleurpalet is de basis van elk visueel project – van een website, via een logo, tot drukwerk. Het handmatig selecteren van kleuren die goed samenwerken vereist kennis van kleurentheorie. De generator doet dit automatisch: u geeft één basiskleur op (bijv. uw logkleur) en de tool creëert 9 kleurensets op basis van bewezen kleurharmonieschema's.</p><p class=\"text-mid mt-3\">Elke gegenereerde kleur komt met zijn HEX-code (bijv. #496ba2) en HSL-waarde (tint, verzadiging, lichtheid). De HEX-code kan direct worden geplakt in CSS, Figma, Canva of een grafische applicatie.</p>"
     },
     {
       "type": "gap",
@@ -92,7 +92,7 @@
       "items": [
         {
           "title": "1. Voer de basiskleur in",
-          "description": "Typ een HEX-code (bijv. #4F6BF5) in het tekstveld of kies een kleur uit de kleurkiezer. U kunt ook de knop Willekeurige kleur gebruiken."
+          "description": "Typ een HEX-code (bijv. #496ba2) in het tekstveld of kies een kleur uit de kleurkiezer. U kunt ook de knop Willekeurige kleur gebruiken."
         },
         {
           "title": "2. Bevestig uw keuze",

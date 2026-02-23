@@ -386,7 +386,7 @@ export default function ToolsIndexPage() {
               icon: <RiPaletteLine className="h-8 w-8" />,
               title: 'Színpaletta generátor',
               topImageAlt: 'Színpaletta generátor Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
+              topImageSrc: '/assets/tools/color-palette-generator/szinpaletta-generator-hu.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Válasszon egy alapszínt és generáljon 9 színpalettát: monokromatikus, komplementer, triádikus, pasztell, sötét és több. Másolja a HEX kódokat egyetlen kattintással.</p>

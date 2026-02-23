@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Darmowy generator palet kolorów – 9 schematów",
     "description": "Wygeneruj 9 palet kolorów z jednego koloru: monochromatyczną, komplementarną, triadyczną, pastelową i inne. Skopiuj kody HEX jednym kliknięciem.",
-    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "ogImage": "/assets/tools/color-palette-generator/generator-palet-kolorow-pl.webp",
     "path": "/narzedzia/generator-palet-kolorow"
   },
   "hero": {
@@ -85,7 +85,7 @@
     {
       "type": "sectionInfo",
       "title": "Po co generować paletę kolorów?",
-      "html": "<p class=\"text-mid\">Spójna paleta kolorów to podstawa każdego projektu wizualnego - od strony internetowej, przez logo, po materiały drukowane. Ręczne dobieranie barw, które do siebie pasują, wymaga znajomości teorii koloru. Generator robi to automatycznie: podajesz jeden kolor bazowy (np. kolor swojego logo), a narzędzie tworzy 9 zestawów kolorów opartych na sprawdzonych schematach harmonii barw.</p><p class=\"text-mid mt-3\">Każdy wygenerowany kolor ma podany kod HEX (np. #4F6BF5) i wartość HSL (odcień, nasycenie, jasność). Kod HEX możesz wkleić bezpośrednio do CSS, Figmy, Canvy lub dowolnego programu graficznego.</p>"
+      "html": "<p class=\"text-mid\">Spójna paleta kolorów to podstawa każdego projektu wizualnego - od strony internetowej, przez logo, po materiały drukowane. Ręczne dobieranie barw, które do siebie pasują, wymaga znajomości teorii koloru. Generator robi to automatycznie: podajesz jeden kolor bazowy (np. kolor swojego logo), a narzędzie tworzy 9 zestawów kolorów opartych na sprawdzonych schematach harmonii barw.</p><p class=\"text-mid mt-3\">Każdy wygenerowany kolor ma podany kod HEX (np. #496ba2) i wartość HSL (odcień, nasycenie, jasność). Kod HEX możesz wkleić bezpośrednio do CSS, Figmy, Canvy lub dowolnego programu graficznego.</p>"
     },
     {
       "type": "gap",
@@ -99,7 +99,7 @@
       "items": [
         {
           "title": "1. Podaj kolor bazowy",
-          "description": "Wpisz kod HEX (np. #4F6BF5) w pole tekstowe lub wybierz barwę z próbnika kolorów. Możesz też wylosować kolor przyciskiem Losowy kolor."
+          "description": "Wpisz kod HEX (np. #496ba2) w pole tekstowe lub wybierz barwę z próbnika kolorów. Możesz też wylosować kolor przyciskiem Losowy kolor."
         },
         {
           "title": "2. Zatwierdź wybór",

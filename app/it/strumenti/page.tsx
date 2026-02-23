@@ -410,7 +410,7 @@ export default function ToolsIndexPage() {
               icon: <RiPaletteLine className="h-8 w-8" />,
               title: 'Generatore di palette di colori',
               topImageAlt: 'Generatore di palette di colori Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
+              topImageSrc: '/assets/tools/color-palette-generator/generatore-di-palette-di-colori-it.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Scegli un colore base e genera 9 palette: monocromatica, complementare, triadica, pastello, scura e altre. Copia i codici HEX con un solo clic.</p>

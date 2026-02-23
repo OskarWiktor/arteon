@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Generator gratuit de palete de culori – Dintr-o culoare",
     "description": "Generați nouă palete armonioase pornind de la o singură culoare de bază: monocromatică, complementară, triadică și altele. Copiați codurile HEX, RGB și HSL cu un clic.",
-    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "ogImage": "/assets/tools/color-palette-generator/generator-de-palete-de-culori-ro.webp",
     "path": "/ro/instrumente/generator-de-palete-de-culori"
   },
   "hero": {
@@ -85,7 +85,7 @@
     {
       "type": "sectionInfo",
       "title": "De ce să generați o paletă de culori?",
-      "html": "<p class=\"text-mid\">O paletă de culori consecventă este baza oricărui proiect vizual – de la un site web, la un logo, la materiale tipărite. Selectarea manuală a culorilor care funcționează împreună necesită cunoștințe de teoria culorilor. Generatorul face acest lucru automat: furnizați o culoare de bază (ex. culoarea logo-ului), iar instrumentul creează 9 seturi de culori bazate pe scheme dovedite de armonie a culorilor.</p><p class=\"text-mid mt-3\">Fiecare culoare generată vine cu codul HEX (ex. #4F6BF5) și valoarea HSL (nuanță, saturație, luminozitate). Codul HEX poate fi lipit direct în CSS, Figma, Canva sau orice aplicație grafică.</p>"
+      "html": "<p class=\"text-mid\">O paletă de culori consecventă este baza oricărui proiect vizual – de la un site web, la un logo, la materiale tipărite. Selectarea manuală a culorilor care funcționează împreună necesită cunoștințe de teoria culorilor. Generatorul face acest lucru automat: furnizați o culoare de bază (ex. culoarea logo-ului), iar instrumentul creează 9 seturi de culori bazate pe scheme dovedite de armonie a culorilor.</p><p class=\"text-mid mt-3\">Fiecare culoare generată vine cu codul HEX (ex. #496ba2) și valoarea HSL (nuanță, saturație, luminozitate). Codul HEX poate fi lipit direct în CSS, Figma, Canva sau orice aplicație grafică.</p>"
     },
     {
       "type": "gap",
@@ -99,7 +99,7 @@
       "items": [
         {
           "title": "1. Introduceți culoarea de bază",
-          "description": "Tastați un cod HEX (ex. #4F6BF5) în câmpul de text sau alegeți o culoare din selectorul de culori. Puteți folosi și butonul Culoare aleatorie."
+          "description": "Tastați un cod HEX (ex. #496ba2) în câmpul de text sau alegeți o culoare din selectorul de culori. Puteți folosi și butonul Culoare aleatorie."
         },
         {
           "title": "2. Confirmați alegerea",

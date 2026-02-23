@@ -342,7 +342,7 @@ export default function ToolsIndexPage() {
               icon: <RiPaletteLine className="h-8 w-8" />,
               title: 'Fargpalettgenerator',
               topImageAlt: 'Fargpalettgenerator Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
+              topImageSrc: '/assets/tools/color-palette-generator/fargpalettgenerator-sv.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Valj en basfarg och skapa 9 fargpaletter: monokromatisk, komplementar, triadisk, pastell, mork och fler. Kopiera HEX-koder med ett klick.</p>

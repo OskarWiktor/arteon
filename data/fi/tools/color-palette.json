@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Ilmainen väripalettien generaattori – 9 palettia yhdestä",
     "description": "Luo 9 harmonista väripalettia yhdestä perusväristä: monokromaattinen, komplementaarinen, triadinen, pastelli ja muita. Kopioi HEX- ja RGB-koodit yhdellä klikkauksella.",
-    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "ogImage": "/assets/tools/color-palette-generator/varipaletti-generaattori-fi.webp",
     "path": "/fi/tyokalut/varipaletti-generaattori"
   },
   "hero": {
@@ -78,7 +78,7 @@
     {
       "type": "sectionInfo",
       "title": "Miksi luoda väripaletti?",
-      "html": "<p class=\"text-mid\">Yhtenäinen väripaletti on jokaisen visuaalisen projektin perusta – verkkosivuista logoihin ja painotuotteisiin. Yhteensopivien värien manuaalinen valinta vaatii väriteorian tuntemusta. Generaattori automatisoi tämän prosessin: syötät perusvärin (esim. logon värin), ja työkalu luo 9 värisarjaa hyväksi havaituilla väriharmoniaskeemoilla.</p><p class=\"text-mid mt-3\">Jokaisella luodulla värillä on oma HEX-koodinsa (esim. #4F6BF5) ja HSL-arvo (hue, saturation, lightness). HEX-koodi voidaan liittää suoraan CSS:ään, Figmaan, Canvaan tai mihin tahansa grafiikkasovellukseen.</p>"
+      "html": "<p class=\"text-mid\">Yhtenäinen väripaletti on jokaisen visuaalisen projektin perusta – verkkosivuista logoihin ja painotuotteisiin. Yhteensopivien värien manuaalinen valinta vaatii väriteorian tuntemusta. Generaattori automatisoi tämän prosessin: syötät perusvärin (esim. logon värin), ja työkalu luo 9 värisarjaa hyväksi havaituilla väriharmoniaskeemoilla.</p><p class=\"text-mid mt-3\">Jokaisella luodulla värillä on oma HEX-koodinsa (esim. #496ba2) ja HSL-arvo (hue, saturation, lightness). HEX-koodi voidaan liittää suoraan CSS:ään, Figmaan, Canvaan tai mihin tahansa grafiikkasovellukseen.</p>"
     },
     {
       "type": "gap",
@@ -92,7 +92,7 @@
       "items": [
         {
           "title": "1. Syötä perusväri",
-          "description": "Syötä HEX-koodi (esim. #4F6BF5) tekstikenttään tai valitse väri värinvalitsimesta. Voit myös käyttää Satunnainen väri -painiketta."
+          "description": "Syötä HEX-koodi (esim. #496ba2) tekstikenttään tai valitse väri värinvalitsimesta. Voit myös käyttää Satunnainen väri -painiketta."
         },
         {
           "title": "2. Vahvista valintasi",

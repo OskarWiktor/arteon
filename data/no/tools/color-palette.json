@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Gratis fargepalettgenerator – 9 paletter fra en farge",
     "description": "Generer 9 harmoniske fargepaletter fra én grunnfarge: monokromatisk, komplementær, triadisk, pastell og flere. Kopier HEX-, RGB- og HSL-koder med ett klikk.",
-    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "ogImage": "/assets/tools/color-palette-generator/fargepalettgenerator-no.webp",
     "path": "/no/verktoy/fargepalettgenerator"
   },
   "hero": {
@@ -78,7 +78,7 @@
     {
       "type": "sectionInfo",
       "title": "Hvorfor generere en fargepalett?",
-      "html": "<p class=\"text-mid\">En konsekvent fargepalett er grunnlaget for ethvert visuelt prosjekt – fra nettsider, via logoer, til trykt materiale. Manuelt utvalg av farger som fungerer sammen krever kunnskap om fargeteori. Generatoren automatiserer denne prosessen: du angir en grunnfarge (f.eks. fargen på logoen din), og verktøyet genererer 9 sett med farger basert på velprøvde fargeharmoniskjemaer.</p><p class=\"text-mid mt-3\">Hver generert farge har sin HEX-kode (f.eks. #4F6BF5) og HSL-verdi (hue, saturation, lightness). HEX-koden kan limes inn direkte i CSS, Figma, Canva eller enhver grafisk applikasjon.</p>"
+      "html": "<p class=\"text-mid\">En konsekvent fargepalett er grunnlaget for ethvert visuelt prosjekt – fra nettsider, via logoer, til trykt materiale. Manuelt utvalg av farger som fungerer sammen krever kunnskap om fargeteori. Generatoren automatiserer denne prosessen: du angir en grunnfarge (f.eks. fargen på logoen din), og verktøyet genererer 9 sett med farger basert på velprøvde fargeharmoniskjemaer.</p><p class=\"text-mid mt-3\">Hver generert farge har sin HEX-kode (f.eks. #496ba2) og HSL-verdi (hue, saturation, lightness). HEX-koden kan limes inn direkte i CSS, Figma, Canva eller enhver grafisk applikasjon.</p>"
     },
     {
       "type": "gap",
@@ -92,7 +92,7 @@
       "items": [
         {
           "title": "1. Skriv inn grunnfarge",
-          "description": "Skriv inn en HEX-kode (f.eks. #4F6BF5) i tekstfeltet, eller velg en farge fra fargevelgeren. Du kan også bruke knappen Tilfeldig farge."
+          "description": "Skriv inn en HEX-kode (f.eks. #496ba2) i tekstfeltet, eller velg en farge fra fargevelgeren. Du kan også bruke knappen Tilfeldig farge."
         },
         {
           "title": "2. Bekreft valget ditt",

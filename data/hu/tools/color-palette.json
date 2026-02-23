@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Ingyenes színpaletta generátor – 9 paletta egyetlen színből",
     "description": "Generáljon 9 harmonikus színpalettát egyetlen alapszínből: monokromatikus, komplementer, triádikus, pasztell és más. Másolja a HEX-, RGB- és HSL-kódokat egy kattintással.",
-    "ogImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp",
+    "ogImage": "/assets/tools/color-palette-generator/szinpaletta-generator-hu.webp",
     "path": "/hu/eszkozok/szinpaletta-generator"
   },
   "hero": {
@@ -78,7 +78,7 @@
     {
       "type": "sectionInfo",
       "title": "Miért generáljon színpalettát?",
-      "html": "<p class=\"text-mid\">Az egységes színpaletta minden vizuális projekt alapja – a weboldaltól a logón át a nyomtatott anyagokig. Az egymással jól működő színek kézi kiválasztása színelméleti ismereteket igényel. A generátor ezt automatikusan végzi: Ön megad egy alapszínt (pl. a logó színét), és az eszköz 9 színkészletet hoz létre bevált színösszhang-sémák alapján.</p><p class=\"text-mid mt-3\">Minden generált szín tartalmazza a HEX kódját (pl. #4F6BF5) és HSL értékét (színezet, telítettség, világosság). A HEX kód közvetlenül beilleszthető CSS-be, Figmába, Canvába vagy bármely grafikus alkalmazásba.</p>"
+      "html": "<p class=\"text-mid\">Az egységes színpaletta minden vizuális projekt alapja – a weboldaltól a logón át a nyomtatott anyagokig. Az egymással jól működő színek kézi kiválasztása színelméleti ismereteket igényel. A generátor ezt automatikusan végzi: Ön megad egy alapszínt (pl. a logó színét), és az eszköz 9 színkészletet hoz létre bevált színösszhang-sémák alapján.</p><p class=\"text-mid mt-3\">Minden generált szín tartalmazza a HEX kódját (pl. #496ba2) és HSL értékét (színezet, telítettség, világosság). A HEX kód közvetlenül beilleszthető CSS-be, Figmába, Canvába vagy bármely grafikus alkalmazásba.</p>"
     },
     {
       "type": "gap",
@@ -92,7 +92,7 @@
       "items": [
         {
           "title": "1. Adja meg az alapszínt",
-          "description": "Írjon be egy HEX kódot (pl. #4F6BF5) a szövegmezőbe, vagy válasszon színt a színválasztóból. Használhatja a Véletlen szín gombot is."
+          "description": "Írjon be egy HEX kódot (pl. #496ba2) a szövegmezőbe, vagy válasszon színt a színválasztóból. Használhatja a Véletlen szín gombot is."
         },
         {
           "title": "2. Erősítse meg a választást",
