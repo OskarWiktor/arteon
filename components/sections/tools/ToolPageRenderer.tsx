@@ -2,7 +2,7 @@ import { Fragment, type ReactNode } from 'react';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import type { ToolPageData, ToolContentBlock } from '@/types/tool-page';
-import type { Locale } from '@/types/locale';
+import type { Locale, DesktopOnlyUi } from '@/types/locale';
 import type { ToolItemKey } from '@/types/tools/common';
 
 import HeroBanner from '@/components/sections/HeroBanner';
@@ -26,8 +26,24 @@ import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 import { getToolAlternates, getToolSoftwareSchema, getToolHowToSchema, getToolWebPageSchema } from '@/lib/i18n/pages/tool-meta';
 import { getToolHref } from '@/lib/i18n/tool-registry';
 import { getToolIcon } from '@/lib/tools/icon-registry';
+import { DESKTOP_ONLY_UI } from '@/lib/i18n/locales';
 
 const AD_SECTION_INTERVAL = 4;
+
+const DESKTOP_ONLY_TOOLS = new Set(['jpgToWebp', 'imageResize', 'favicon', 'emailSignature']);
+
+function DesktopOnlyNotice({ t }: { t: DesktopOnlyUi }) {
+  return (
+    <section className="mx-auto my-6 max-w-xl rounded-2xl border border-black/10 bg-white/90 p-6 text-sm shadow-sm">
+      <h2 className="mb-3 text-lg font-semibold">{t.title}</h2>
+      <p className="text-mid mb-3">{t.description}</p>
+      <div className="text-light rounded-xl bg-neutral-50 px-4 py-3 text-xs">
+        <p className="mb-1 font-medium">{t.tipTitle}</p>
+        <p>{t.tipText}</p>
+      </div>
+    </section>
+  );
+}
 
 export function generateToolMetadata(data: ToolPageData): Metadata {
   const canonicalPath = getToolHref(data.toolKey as ToolItemKey, data.locale as Locale);
@@ -136,6 +152,8 @@ interface ToolPageRendererProps {
 
 export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) {
   const pageUrl = toAbsoluteUrl(data.metadata.path);
+  const isDesktopOnly = DESKTOP_ONLY_TOOLS.has(data.toolKey);
+  const desktopOnlyT = DESKTOP_ONLY_UI[data.locale as Locale];
 
   const softwareSchema = getToolSoftwareSchema({
     toolKey: data.toolKey as ToolItemKey,
@@ -180,7 +198,16 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
 
       <ToolEditorLayout>
         <AdSense variant="tool-banner" className="my-3" />
-        {tool ?? <DynamicToolRenderer toolKey={data.toolKey} />}
+        {isDesktopOnly ? (
+          <>
+            <div className="hidden lg:block">{tool ?? <DynamicToolRenderer toolKey={data.toolKey} />}</div>
+            <div className="block lg:hidden">
+              <DesktopOnlyNotice t={desktopOnlyT} />
+            </div>
+          </>
+        ) : (
+          (tool ?? <DynamicToolRenderer toolKey={data.toolKey} />)
+        )}
       </ToolEditorLayout>
 
       <Wrapper>
