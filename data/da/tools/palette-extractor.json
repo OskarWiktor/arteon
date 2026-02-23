@@ -80,15 +80,18 @@
       "items": [
         {
           "title": "1. Upload billede",
-          "description": "Træk og slip filen i det markerede område, eller vælg den fra din enhed. Understøttede formater er PNG, JPG og SVG."
+          "description": "Træk og slip filen i det markerede område, eller vælg den fra din enhed. Understøttede formater er PNG, JPG og SVG.",
+          "icon": "RiUploadLine"
         },
         {
           "title": "2. Vent på analysen",
-          "description": "Værktøjet analyserer automatisk billedet og udtrækker op til 12 dominerende farver."
+          "description": "Værktøjet analyserer automatisk billedet og udtrækker op til 12 dominerende farver.",
+          "icon": "RiSearchEyeLine"
         },
         {
           "title": "3. Kopiér de farver du har brug for",
-          "description": "Ved hver farve er der en kopiérknap – HEX- eller RGB-koden går til udklipsholder og kan indsættes direkte i dit projekt."
+          "description": "Ved hver farve er der en kopiérknap – HEX- eller RGB-koden går til udklipsholder og kan indsættes direkte i dit projekt.",
+          "icon": "RiFileCopyLine"
         }
       ]
     },

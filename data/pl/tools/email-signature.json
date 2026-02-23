@@ -105,15 +105,18 @@
       "items": [
         {
           "title": "1. Wpisz dane",
-          "description": "Uzupełnij imię, nazwisko, stanowisko, firmę i dane kontaktowe."
+          "description": "Uzupełnij imię, nazwisko, stanowisko, firmę i dane kontaktowe.",
+          "icon": "RiEditLine"
         },
         {
           "title": "2. Dostosuj wygląd",
-          "description": "Wybierz układ, kolory, dodaj logo i linki do mediów społecznościowych."
+          "description": "Wybierz układ, kolory, dodaj logo i linki do mediów społecznościowych.",
+          "icon": "RiPaletteLine"
         },
         {
           "title": "3. Skopiuj kod",
-          "description": "Przycisk Kopiuj stopkę przenosi gotowy kod do schowka. Wystarczy wkleić w ustawieniach Gmail, Outlook lub innego klienta."
+          "description": "Przycisk Kopiuj stopkę przenosi gotowy kod do schowka. Wystarczy wkleić w ustawieniach Gmail, Outlook lub innego klienta.",
+          "icon": "RiCodeLine"
         }
       ]
     },

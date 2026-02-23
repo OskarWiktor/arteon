@@ -98,15 +98,18 @@
       "items": [
         {
           "title": "1. Syötä tiedot",
-          "description": "Täytä nimi, titteli, yritys ja yhteystiedot."
+          "description": "Täytä nimi, titteli, yritys ja yhteystiedot.",
+          "icon": "RiEditLine"
         },
         {
           "title": "2. Mukauta ulkoasua",
-          "description": "Valitse asettelu, värit, lisää logo ja sosiaalisen median linkit."
+          "description": "Valitse asettelu, värit, lisää logo ja sosiaalisen median linkit.",
+          "icon": "RiPaletteLine"
         },
         {
           "title": "3. Kopioi koodi",
-          "description": "Copy signature -painike kopioi valmiin koodin leikepöydälle. Liitä se Gmailiin, Outlookiin tai muuhun sähköpostiohjelmaan."
+          "description": "Copy signature -painike kopioi valmiin koodin leikepöydälle. Liitä se Gmailiin, Outlookiin tai muuhun sähköpostiohjelmaan.",
+          "icon": "RiCodeLine"
         }
       ]
     },
@@ -138,37 +141,55 @@
       "title": "Miten lisätä CTA-painikkeet?",
       "html": "<p class=\"text-mid\">CTA-painike (call-to-action, toimintakehotus) on klikattava elementti, joka ohjaa vastaanottajan valitulle sivulle. Se voi olla linkki tapaamiskalenteriin, yhteydenottolomakkeeseen tai tarjoukseen. Generaattori mahdollistaa kahden CTA-painikkeen lisäämisen.</p><h3 class=\"h5 mt-6 mb-3\">Ensisijainen painike</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Avaa <strong>Painikkeet</strong>-välilehti editorissa.</li><li>Kohdassa <strong>Ensisijainen painike</strong> kirjoita teksti, jonka vastaanottaja näkee, esim. Varaa ilmainen konsultaatio.</li><li>Kenttään <strong>CTA-linkki</strong> liitä täydellinen URL-osoite alkaen https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Toissijainen painike</h3><p class=\"text-mid\">Voit lisätä toisen CTA-painikkeen outline-tyylillä (läpinäkyvä tausta reunuksella). Täytä kentät vastaavasti.</p><h3 class=\"h5 mt-6 mb-3\">Painikkeiden pyöristys</h3><p class=\"text-mid\">Painikkeet-välilehden alaosasta löydät vaihtoehdon <strong>Painikkeiden pyöristys</strong>. Kolme vaihtoehtoa: Ei (terävät kulmat), Kevyt (kevyesti pyöristetty) tai Täysi (soikea painike).</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Miten lisätä sosiaalisen median linkit?",
       "html": "<p class=\"text-mid\">Välilehdellä <strong>Sosiaalinen media</strong> voit lisätä linkit profiileihisi. Generaattori tukee kahtatoista alustaa: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (entinen Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram ja Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Näin teet</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Avaa <strong>Sosiaalinen media</strong> -välilehti editorissa.</li><li>Kunkin alustan kohdalla on URL-kenttä. Liitä täydellinen linkki profiiliisi.</li><li>Täytä vain ne kentät, jotka ovat sinulle relevantteja. Tyhjät kentät eivät näy allekirjoituksessa.</li></ol><h3 class=\"h5 mt-6 mb-3\">Sosiaalisen median kuvakkeet</h3><p class=\"text-mid\">Välilehden alaosasta löydät vaihtoehdon <strong>Näytä kuvakkeet nimien vieressä</strong>. Käytössä linkit näkyvät värillisinä SVG-kuvakkeina pelkkien nimien sijaan.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Kuvakkeen koko</strong> – vaihtoehdot: Pieni (16 px), Keskikokoinen (20 px) tai Suuri (24 px).</li><li><strong>Kuvakkeen väri</strong> – Alustavärit (oletusvärit), Korostusväri (yhtenäinen) tai Tekstin väri.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Ulkoasun mukauttaminen",
       "html": "<p class=\"text-mid\">Välilehdellä <strong>Ulkoasu</strong> voit mukauttaa värejä, fonttia ja muita visuaalisia elementtejä.</p><h3 class=\"h5 mt-6 mb-3\">Väriteemat</h3><p class=\"text-mid\">Välilehden yläosassa on viisi esimääritettyä teemaa: Tumma, Sininen, Violetti, Vihreä ja Harmaa. Teeman napsauttaminen asettaa automaattisesti korostusvärin ja tekstin värin.</p><h3 class=\"h5 mt-6 mb-3\">Värit</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Korostusväri</strong> – käytetään sivupalkissa/yläpalkissa, CTA-painikkeessa ja linkeissä.</li><li><strong>Tekstin väri</strong> – kaikkien tekstien väri allekirjoituksessa.</li><li><strong>Taustaväri</strong> – allekirjoituksen tausta. Oletusarvoisesti valkoinen.</li></ul><h3 class=\"h5 mt-6 mb-3\">Fontti ja koko</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Fontti</strong> – vaihtoehdot: Arial, Verdana, Tahoma, Trebuchet MS ja Georgia. Kaikki ovat sähköpostiturvallisia.</li><li><strong>Tekstin koko</strong> – kolme vaihtoehtoa: Pieni (12 px), Normaali (14 px) ja Suurempi (16 px).</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Tekstityyli – yksittäisten elementtien värit ja koot",
       "html": "<p class=\"text-mid\">Välilehdellä <strong>Tekstityyli</strong> voit mukauttaa kunkin tekstielementin väriä ja fonttikokoa erikseen.</p><h3 class=\"h5 mt-6 mb-3\">Käytettävissä olevat elementit</h3><p class=\"text-mid\">Vain ne elementit, jotka ovat tällä hetkellä allekirjoituksessa, ovat näkyvissä. Jokaiselle elementille voit asettaa:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Nimi</strong> – näkyy oletuksena korostusvärillä.</li><li><strong>Asema</strong> – rooli yrityksessä.</li><li><strong>Yritys</strong> – organisaation nimi.</li><li><strong>Yhteystiedot</strong> – sähköposti, puhelin, verkkosivusto.</li><li><strong>Sosiaalinen media</strong> – linkit profiileihin.</li><li><strong>Oikeudellinen lauseke</strong> – juridinen teksti alaosassa.</li></ul><h3 class=\"h5 mt-6 mb-3\">Värin vaihtaminen</h3><p class=\"text-mid\">Kunkin elementin kohdalla on värivaihtoehtoja. Napsauta värineliötä valitaksesi. Palautuspainike palauttaa oletusvärin.</p><h3 class=\"h5 mt-6 mb-3\">Koon vaihtaminen</h3><p class=\"text-mid\">Toisella rivillä on koon säätö painikkeilla - ja +. Alue: -4:stä +4 pikseliin.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Elementtien väliset etäisyydet",
       "html": "<p class=\"text-mid\">Välilehdellä <strong>Etäisyydet</strong> voit tarkasti säätää allekirjoituksen elementtien välisiä etäisyyksiä.</p><h3 class=\"h5 mt-6 mb-3\">Sisäinen marginaali</h3><p class=\"text-mid\">Välilehden yläosassa on sisäisen marginaalin vaihtoehto – etäisyys allekirjoituksen sisällön ja reunojen välillä. Kolme arvoa: 8 px (pieni), 16 px (keskikokoinen) ja 24 px (suuri).</p><h3 class=\"h5 mt-6 mb-3\">Elementtien väliset etäisyydet</h3><p class=\"text-mid\">Marginaalin alla on säädöt yksittäisille elementeille painikkeilla + ja -.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Nimen jälkeen</strong></li><li><strong>Aseman / yrityksen jälkeen</strong></li><li><strong>Lisärivin jälkeen</strong></li><li><strong>Yhteystietojen jälkeen</strong></li><li><strong>Sosiaalisen median jälkeen</strong></li><li><strong>CTA-painikkeen jälkeen</strong></li><li><strong>Ennen oikeudellista lauseketta</strong></li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Oikeudellinen lauseke / GDPR – milloin lisätä?",
       "html": "<p class=\"text-mid\">Välilehdellä <strong>Lauseke / GDPR</strong> voit lisätä juridisen tekstin, joka näkyy allekirjoituksen alaosassa pienemmällä fontilla.</p><h3 class=\"h5 mt-6 mb-3\">Milloin lauseke kannattaa lisätä?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Liikekirjeenvaihto</strong> – tieto viestin luottamuksellisuudesta ja pyyntö poistaa virheellisen toimituksen yhteydessä.</li><li><strong>Toimialavaatimukset</strong> – tietyt toimialat (esim. oikeudellinen, lääketieteellinen, rahoitus) vaativat tiettyjä tietoja jokaisessa viestissä.</li><li><strong>GDPR</strong> – tieto henkilötietojen käsittelystä, jos yritys on rekisterinpitäjä.</li></ul><p class=\"text-mid mt-4\">Oletusarvoisesti kenttä on täytetty esimerkkitekstillä. Voit muokata, poistaa tai korvata sen omalla lausekkeellasi.</p><h3 class=\"h5 mt-6 mb-3\">Erotteluviiva</h3><p class=\"text-mid\">Tekstikentän alla on vaihtoehto <strong>Näytä erotteluviiva</strong>. Käytössä se lisää vaakaviivan yhteystietojen ja oikeudellisen lausekkeen väliin.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Automaattinen tallennus ja asetusten nollaus",

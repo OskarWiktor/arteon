@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "nl",
   "metadata": {
-    "title": "Gratis woorden- en tekenteller – Tekstlengte voor SEO",
-    "description": "Tel woorden, tekens en zinnen in elke tekst. Analyseer de leestijd en zoekwoorddichtheid voor SEO-optimalisatie. Gratis, zonder registratie of beperkingen.",
+    "title": "Gratis woorden- & tekenteller online – Tellen, transformeren & analyseren",
+    "description": "Gratis woorden-, teken-, zin- en alineateller. Hoofdletters wijzigen, duplicaten verwijderen, regels sorteren. 8 statistieken en 10 teksttools.",
     "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
     "path": "/nl/tools/woorden-en-tekenteller"
   },
   "hero": {
-    "title": "Woorden- en tekenteller met lengte-evaluatie",
-    "description": "Plak uw tekst, selecteer een paginatype en de tool toont het aantal woorden, tekens, alinea's en beoordeelt of de lengte geschikt is voor dat type inhoud",
+    "title": "Woorden- en tekenteller met tekstopmaaktools",
+    "description": "Plak uw tekst en de tool telt woorden, tekens, zinnen, alinea's, unieke woorden en leestijd. Wijzig hoofdletters, verwijder duplicaten of sorteer regels",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -24,48 +24,55 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis woorden- en tekenteller met SEO-evaluatie",
+      "name": "Gratis woorden- en tekenteller online met teksttools",
       "alternateName": [
-        "Woordenteller met tekstlengte-evaluatie",
-        "Gratis tekenteller",
-        "Woordenteltool voor copywriters",
-        "Leestijdcalculator",
-        "Woordenteller voor webcontent",
-        "Controleer hoeveel woorden een tekst heeft",
-        "Woordenteller voor SEO",
-        "Optimale tekstlengte voor een blogpost"
+        "Online word counter",
+        "Character counter with and without spaces",
+        "Word counting tool for copywriters",
+        "Reading time calculator",
+        "Online letter case converter",
+        "Uppercase to lowercase converter",
+        "Remove duplicate lines from text",
+        "Sort text lines alphabetically"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Gratis woorden- en tekenteller. Controleert aantal woorden, tekens, alinea's en geschatte leestijd. Beoordeelt tekstlengte voor verschillende paginatypen: productbeschrijving, servicepagina, homepage, landingspagina, blogpost, gids.",
+      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
       "featureList": [
-        "Woorden tellen",
-        "Tekens tellen met en zonder spaties",
-        "Alinea's tellen",
-        "Geschatte leestijd",
-        "Tekstlengte-evaluatie voor verschillende paginatypen",
-        "Aanbevolen bereiken voor: productbeschrijving, servicepagina, homepage, landingspagina, blogpost, gids",
-        "Rapport kopiëren naar klembord"
+        "Word count",
+        "Character count with and without spaces",
+        "Sentence and paragraph count",
+        "Unique word count",
+        "Average word length",
+        "Estimated reading time",
+        "Convert to uppercase or lowercase",
+        "Convert to sentence case or title case",
+        "Toggle letter case",
+        "Remove extra spaces",
+        "Remove empty lines and duplicates",
+        "Sort lines A-Z and Z-A",
+        "Copy text to clipboard"
       ]
     },
     "howTo": {
       "name": "Hoe de woorden- en tekenteller te gebruiken",
-      "description": "Controleer de lengte van uw tekst en beoordeel of deze geschikt is voor een specifiek paginatype. Leer hoeveel woorden een productbeschrijving, servicepagina, blogpost of gids moet hebben.",
+      "description": "Analyseer en formatteer tekst in drie stappen:",
+      "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Selecteer een paginatype",
-          "text": "Kies uit het dropdown voor welk type pagina u schrijft. Elk type heeft verschillende aanbevolen woordaantallen."
-        },
-        {
           "name": "Plak uw tekst",
-          "text": "Plak of typ tekst in het tekstveld. De tool telt automatisch woorden, tekens (met en zonder spaties), alinea's en schat de leestijd."
+          "text": "Plak of typ tekst. De tool telt direct woorden, tekens, zinnen, alinea's en unieke woorden."
         },
         {
-          "name": "Controleer de beoordeling",
-          "text": "Bekijk de gekleurde voortgangsbalk en status. Groen betekent goede lengte, geel te kort, rood te lang."
+          "name": "Controleer de statistieken",
+          "text": "In het linkerpaneel ziet u 8 statistieken: woorden, tekens, zinnen, alinea's, unieke woorden, woordlengte en leestijd."
         },
         {
-          "name": "Kopieer het rapport",
-          "text": "De knop Rapport kopiëren kopieert een samenvatting met alle statistieken en de lengte-evaluatie naar uw klembord."
+          "name": "Transformeer tekst",
+          "text": "Onder het tekstveld vindt u 10 transformatietools."
+        },
+        {
+          "name": "Kopieer het resultaat",
+          "text": "Klik op Tekst kopiëren. Gebruik Wissen om opnieuw te beginnen."
         }
       ]
     }
@@ -77,8 +84,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Gratis woordenteller — tel en beoordeel tekstlengte",
-      "html": "<p class=\"text-mid\">Deze woordenteltool laat u snel de lengte van elke tekst controleren. Plak uw inhoud en de teller telt woorden, tekens en alinea's. U ziet ook hoeveel minuten het kost om te lezen en of de lengte past bij het geselecteerde paginatype.</p><p class=\"text-mid mt-3\">Elk paginatype heeft een ander doel - een productbeschrijving beantwoordt kopersvragen, een blogpost behandelt een onderwerp diepgaand en een servicepagina legt uit wat de klant ontvangt. De teller toont bereiken voor elk type op basis van analyses van goed rankende inhoud.</p>"
+      "title": "Gratis woorden- en tekenteller met teksttools",
+      "html": "<p class=\"text-mid\">Deze tool combineert een woorden- en tekenteller met tekstopmaakfuncties. Plak uw tekst en u ziet woorden, tekens, zinnen, alinea's, unieke woorden en leestijd.</p><p class=\"text-mid mt-3\">Onder het tekstveld vindt u 10 tools: hoofdletterconversie, verwijdering van spaties, lege regels, duplicaten en sortering. Alles wordt lokaal in uw browser verwerkt.</p>"
     },
     {
       "type": "gap",
@@ -87,28 +94,28 @@
     {
       "type": "sectionSteps",
       "title": "Hoe de woorden- en tekenteller te gebruiken",
-      "description": "Tekstlengte controleren duurt minder dan een minuut:",
+      "description": "Analyseer en formatteer tekst in drie stappen:",
       "grid": "four",
       "items": [
         {
-          "icon": "RiListCheck2",
-          "title": "1. Selecteer paginatype",
-          "description": "Kies uit het dropdown voor welk type pagina u schrijft. Elk type heeft verschillende aanbevolen minimum en maximum woordaantallen."
-        },
-        {
           "icon": "RiFileTextLine",
-          "title": "2. Plak uw tekst",
-          "description": "Plak of typ tekst in het grote veld rechts. De tool telt direct woorden, tekens (met en zonder spaties), alinea's en schat de leestijd."
+          "title": "1. Plak uw tekst",
+          "description": "Plak of typ tekst. De tool telt direct woorden, tekens, zinnen, alinea's en unieke woorden."
         },
         {
           "icon": "RiBarChartLine",
-          "title": "3. Controleer de beoordeling",
-          "description": "Bekijk de gekleurde voortgangsbalk en status. Groen betekent goede lengte, geel te kort, rood te lang. Daaronder vindt u een nuttige tip."
+          "title": "2. Controleer de statistieken",
+          "description": "In het linkerpaneel ziet u 8 statistieken: woorden, tekens, zinnen, alinea's, unieke woorden, woordlengte en leestijd."
+        },
+        {
+          "icon": "RiTextWrap",
+          "title": "3. Transformeer tekst",
+          "description": "Onder het tekstveld vindt u 10 transformatietools."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Kopieer het rapport",
-          "description": "De knop Rapport kopiëren kopieert een samenvatting met woordaantal, tekenaantal, alinea's, leestijd en lengte-evaluatie naar uw klembord."
+          "title": "4. Kopieer het resultaat",
+          "description": "Klik op Tekst kopiëren. Gebruik Wissen om opnieuw te beginnen."
         }
       ]
     },
@@ -118,34 +125,49 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Wat de teller meet - woorden, tekens, leestijd",
-      "description": "De teller volgt vijf kernmetrieken:",
+      "title": "8 tekststatistieken",
+      "description": "De teller analyseert uw tekst op acht indicatoren:",
       "grid": "two",
       "items": [
         {
           "icon": "RiText",
-          "title": "Woorden",
-          "description": "Totaal aantal woorden. Dit is de primaire indicator van tekstlengte."
+          "title": "Words",
+          "description": "Total word count. The primary indicator of text length, useful for content creation, articles and descriptions."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Tekens (met spaties)",
-          "description": "Alle tekens inclusief spaties. Handig wanneer een CMS een tekenlimiet heeft (bijv. marketplace-vermeldingen)."
+          "title": "Characters (with spaces)",
+          "description": "All characters including spaces. Useful when a platform has a character limit (e.g., Amazon listings, meta descriptions)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Tekens (zonder spaties)",
-          "description": "Alleen letters, cijfers en leestekens. Soms vereist door drukkerijen of voor vertaalfacturering."
+          "title": "Characters (without spaces)",
+          "description": "Only letters, digits and punctuation. The standard billing unit for translations and print shops."
+        },
+        {
+          "icon": "RiChatQuoteLine",
+          "title": "Sentences",
+          "description": "Number of sentences in the text. Helps assess complexity and readability — shorter sentences are easier to absorb."
         },
         {
           "icon": "RiParagraph",
-          "title": "Alinea's",
-          "description": "Hoeveel tekstblokken gescheiden door lege regels u heeft. Helpt beoordelen of de tekst goed gestructureerd is."
+          "title": "Paragraphs",
+          "description": "Text blocks separated by blank lines. Well-structured paragraphs improve readability on screens."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Unique words",
+          "description": "Number of non-repeating words. A higher ratio of unique to total words indicates richer vocabulary."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Average word length",
+          "description": "Average number of characters per word. An indicator of text complexity — technical texts have longer words than casual ones."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Leestijd",
-          "description": "De leestijdcalculator toont hoeveel minuten het kost om de tekst te lezen bij een gemiddelde snelheid van 200 woorden per minuut."
+          "title": "Reading time",
+          "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
         }
       ]
     },
@@ -154,20 +176,62 @@
       "variant": "line"
     },
     {
-      "type": "sectionDemo",
-      "title": "Hoe de resultaten te interpreteren",
-      "subtitle": "Beoordelingsstatussen",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">Goede lengte</span><span class=\"text-mid text-sm!\">Tekst valt binnen bereik</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Onder bereik</span><span class=\"text-mid text-sm!\">Tekst is korter dan gebruikelijk</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Boven bereik</span><span class=\"text-mid text-sm!\">Tekst is langer dan gebruikelijk</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Voortgang</span><span class=\"text-mid\">1200 / 1200–3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
-      "html": "<p class=\"text-mid mb-4\">De gekleurde voortgangsbalk en status helpen u snel de tekstlengte te beoordelen:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Goede lengte</strong> (groen) - de tekst valt binnen het geschatte bereik voor het geselecteerde paginatype.</li><li><strong class=\"text-warning-text\">Onder bereik</strong> (geel) - de tekst is korter dan gebruikelijk voor dit paginatype. Als het alle vragen van de lezer beantwoordt, kan de lengte prima zijn.</li><li><strong class=\"text-error-text\">Boven bereik</strong> (rood) - de tekst is langer dan gebruikelijk. Als elke alinea nieuwe informatie toevoegt, is de lengte gerechtvaardigd.</li></ul><p class=\"text-mid mt-4\">De bereiken zijn gebaseerd op analyses van goed rankende inhoud in zoekmachines. Als de tekst de vragen van de lezer beantwoordt, is de lengte geschikt ongeacht het tellerresultaat.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Hoeveel woorden moet een tekst hebben - optimale lengte voor SEO",
-      "html": "<p class=\"text-mid mb-4\">De onderstaande bereiken zijn gebaseerd op analyses van goed rankende inhoud in zoekmachines. Tekstlengte op zich beïnvloedt Google-rankings niet - wat telt is of de inhoud de vragen van de lezer beantwoordt.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Paginatype</th><th class=\"py-2 pr-4 font-semibold\">Bereik</th><th class=\"py-2 font-semibold\">Wanneer korter, wanneer langer?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Productbeschrijving</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 woorden</td><td class=\"text-primary-light0 py-2 text-sm\">Simpel product (bijv. mok) - 80–150 woorden. Complex apparaat (bijv. laptop) - 300–400 woorden.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Servicepagina</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 woorden</td><td class=\"text-primary-light0 py-2 text-sm\">Lokale service (bijv. loodgieter) - 500–700 woorden. B2B-service met proces en FAQ - 1.200–1.500 woorden.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Homepage</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 woorden</td><td class=\"text-primary-light0 py-2 text-sm\">De homepage brengt de kernwaarde over en leidt bezoekers verder.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landingspagina</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 woorden</td><td class=\"text-primary-light0 py-2 text-sm\">Eenvoudig aanbod - 600–1.000 woorden. Aanbod met uitleg - 1.500–2.500 woorden.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blogpost</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 woorden</td><td class=\"text-primary-light0 py-2 text-sm\">Kort antwoord op specifieke vraag - 1.200 woorden. Uitgebreide gids - 2.500–3.000 woorden.</td></tr><tr><td class=\"py-2 pr-4\">Gids / Tutorial</td><td class=\"py-2 pr-4 whitespace-nowrap\">2000–5000 woorden</td><td class=\"text-primary-light0 py-2 text-sm\">Praktische gids met stappen - 2.000–3.000 woorden. Uitgebreide encyclopedische gids - 4.000–5.000 woorden.</td></tr></tbody></table></div>"
+      "type": "sectionSteps",
+      "title": "10 tekstopmaaktools",
+      "description": "Onder het tekstveld vindt u knoppen voor snelle transformatie:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiArrowUpLine",
+          "title": "UPPERCASE",
+          "description": "Converts all text to uppercase. Useful for headings, acronyms and highlighting text fragments."
+        },
+        {
+          "icon": "RiArrowDownLine",
+          "title": "lowercase",
+          "description": "Converts all text to lowercase. Useful for normalizing text copied from different sources."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Sentence case",
+          "description": "First letter of each sentence is capitalized, the rest lowercase. Standard format for continuous text."
+        },
+        {
+          "icon": "RiHeading",
+          "title": "Title Case",
+          "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "tOGGLE cASE",
+          "description": "Swaps uppercase to lowercase and vice versa. Useful when text was typed with Caps Lock on."
+        },
+        {
+          "icon": "RiSpace",
+          "title": "Remove extra spaces",
+          "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
+        },
+        {
+          "icon": "RiDeleteRow",
+          "title": "Remove empty lines",
+          "description": "Removes empty and redundant lines from text. Useful for cleaning text copied from websites."
+        },
+        {
+          "icon": "RiFilterLine",
+          "title": "Remove duplicate lines",
+          "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
+        },
+        {
+          "icon": "RiSortAsc",
+          "title": "Sort A→Z",
+          "description": "Sorts text lines alphabetically in ascending order. Useful for organizing lists, keywords and data."
+        },
+        {
+          "icon": "RiSortDesc",
+          "title": "Sort Z→A",
+          "description": "Sorts text lines alphabetically in descending order. Reverse sort order."
+        }
+      ]
     },
     {
       "type": "gap",
@@ -176,38 +240,38 @@
     {
       "type": "sectionSteps",
       "title": "Voor wie is de woordenteller?",
-      "description": "Een woordenteltool voor copywriters en daarbuiten - dit zijn de meest frequente gebruikers:",
+      "description": "De tool is nuttig voor iedereen die met tekst werkt:",
       "grid": "three",
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Copywriters en contentmakers",
-          "description": "Controleer of de tekst binnen het aanbevolen bereik valt voor een specifiek paginatype. De SEO-woordenteller helpt beoordelen of een artikel voldoende ontwikkeld is."
+          "title": "Copywriters and editors",
+          "description": "Count words and characters, check platform limits, quickly change letter case and clean text before publishing."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Bloggers",
-          "description": "Monitor postlengte om publicaties consistent te houden. Controleer de leestijd voor publicatie."
+          "title": "Bloggers and content creators",
+          "description": "Monitor post length, check reading time, remove duplicate lines and sort lists."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "Webwinkeleigenaren",
-          "description": "Verifieer productbeschrijvingen tegen tekenlimieten op verkoopplatforms (Amazon, eBay, Etsy)."
+          "title": "Store owners",
+          "description": "Verify product descriptions against character limits on platforms (Amazon, eBay, Etsy)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO-specialisten",
-          "description": "Beoordeel of pagina-inhoud een optimale lengte heeft vergeleken met concurrenten."
+          "title": "SEO specialists",
+          "description": "Analyze content length, count unique words and assess text complexity based on average word length."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Studenten en academici",
-          "description": "Controleer of een werkstuk voldoet aan de vereiste woord- of tekenlimiet."
+          "title": "Students and academics",
+          "description": "Check word or character limits in essays and research papers."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Vertalers",
-          "description": "Tel tekens zonder spaties voor vertaaloffertes (een standaard factureringseenheid)."
+          "title": "Translators",
+          "description": "Count characters without spaces for quotes (the standard billing unit in translation)."
         }
       ]
     },
@@ -217,8 +281,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Tekenlimieten op populaire platforms",
-      "html": "<p class=\"text-mid mb-4\">De tekenteller is handig bij het maken van inhoud voor platforms met lengtebeperkingen:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform / Element</th><th class=\"py-2 pr-4 font-semibold\">Tekenlimiet</th><th class=\"py-2 font-semibold\">Opmerkingen</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 tekens</td><td class=\"text-primary-light0 py-2 text-sm\">Langere titels worden afgekapt in zoekresultaten.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 tekens</td><td class=\"text-primary-light0 py-2 text-sm\">De beschrijving zichtbaar onder de link in zoekresultaten.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - producttitel</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 tekens</td><td class=\"text-primary-light0 py-2 text-sm\">Korte, specifieke titel met de belangrijkste zoekwoorden.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - bullet points</td><td class=\"py-2 pr-4 whitespace-nowrap\">500 tekens elk</td><td class=\"text-primary-light0 py-2 text-sm\">Tot 5 bulletpoints met belangrijkste productkenmerken.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) - post</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 tekens</td><td class=\"text-primary-light0 py-2 text-sm\">Standaardlimiet voor reguliere gebruikers.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn - post</td><td class=\"py-2 pr-4 whitespace-nowrap\">3.000 tekens</td><td class=\"text-primary-light0 py-2 text-sm\">Na ~210 tekens verschijnt een \"meer weergeven\" link.</td></tr></tbody></table></div>"
+      "title": "Tekenlimites op populaire platforms",
+      "html": "<p class=\"text-mid\">Character limits vary by platform.</p>"
     },
     {
       "type": "gap",
@@ -226,38 +290,38 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Wat maakt deze woorden- en tekenteller bijzonder?",
+      "title": "Wat maakt deze woordenteller bijzonder?",
       "grid": "two",
       "items": [
         {
-          "icon": "RiInfinityLine",
-          "title": "Zes paginatypen met aanbevolen bereiken",
-          "description": "Productbeschrijving, servicepagina, homepage, landingspagina, blogpost en gids - elk type heeft eigen bereiken op basis van analyses."
+          "icon": "RiBarChartLine",
+          "title": "8 text metrics",
+          "description": "Words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time — all in one panel."
+        },
+        {
+          "icon": "RiTextWrap",
+          "title": "10 formatting tools",
+          "description": "Letter case conversion, removing spaces, empty lines, duplicates and sorting — without installing additional software."
         },
         {
           "icon": "RiUserLine",
-          "title": "Lokale verwerking in de browser",
-          "description": "Uw tekst wordt nooit naar een server gestuurd - alle analyse vindt lokaal op uw apparaat plaats."
-        },
-        {
-          "icon": "RiCheckboxCircleLine",
-          "title": "Tekstlengte-evaluatie",
-          "description": "U telt niet alleen woorden - u krijgt informatie of de lengte geschikt is voor het geselecteerde paginatype."
-        },
-        {
-          "icon": "RiBarChartLine",
-          "title": "SEO-gebaseerde bereiken",
-          "description": "Aanbevolen lengtes zijn gebaseerd op analyses van goed rankende inhoud in zoekmachines."
-        },
-        {
-          "icon": "RiTimerLine",
-          "title": "Leestijd",
-          "description": "U weet direct hoeveel minuten lezers nodig hebben om de tekst door te nemen."
+          "title": "Local processing in the browser",
+          "description": "Your text is never sent to any server. All analysis and transformation happens locally on your device."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Rapport kopiëren",
-          "description": "De knop Rapport kopiëren kopieert een samenvatting met alle statistieken en de lengte-evaluatie naar uw klembord."
+          "title": "Copy and clear text",
+          "description": "Copy the modified text to your clipboard with one click or clear the field to start over."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Instant results",
+          "description": "Statistics update in real time as you type or paste text. No waiting for processing."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "No registration or limits",
+          "description": "The tool is completely free. No registration, login or personal data required."
         }
       ]
     },
@@ -271,34 +335,14 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Beïnvloedt tekstlengte Google-rankings?",
-          "answer": "Tekstlengte op zich is geen rankingfactor. Google beoordeelt of de inhoud de vraag van de gebruiker beantwoordt en waardevol is. Kortere tekst die een vraag volledig beantwoordt kan goed ranken - wat telt is waarde voor de lezer. De bereiken in deze tool zijn gebaseerd op analyses van goed rankende inhoud.",
-          "answerSchemaText": "Tekstlengte is geen directe rankingfactor. Google beoordeelt de waarde van inhoud voor de gebruiker."
-        },
-        {
-          "question": "Waarom zijn de woordbereiken zo breed?",
-          "answer": "Hetzelfde paginatype kan verschillende lengtes vereisen afhankelijk van de complexiteit van het onderwerp. Een eenvoudige productbeschrijving (bijv. een mok) is 80–150 woorden. Een laptopbeschrijving is 300–400 woorden omdat kopers vragen hebben over processor, geheugen, scherm en batterij.",
-          "answerSchemaText": "Het verschil komt door onderwerpscomplexiteit - een simpel product heeft minder woorden nodig dan een complex product."
-        },
-        {
-          "question": "Hoe moet ik \"te kort\" of \"te lang\" interpreteren?",
-          "answer": "De beoordeling toont waar uw tekst valt ten opzichte van typische inhoud van dat type. Als de tekst \"te kort\" is maar alle vragen van de lezer beantwoordt - is de lengte prima. Als het \"te lang\" is maar elke alinea nieuwe informatie toevoegt - is de lengte gerechtvaardigd.",
-          "answerSchemaText": "De beoordeling toont waar de tekst valt ten opzichte van typische inhoud. Als de tekst de vragen van de lezer beantwoordt, is de lengte geschikt."
-        },
-        {
           "question": "Hoe werkt de leestijdcalculator?",
-          "answer": "De tool deelt het woordaantal door 200 - de gemiddelde leessnelheid voor gewone tekst. Technische of veeleisende tekst (bijv. documentatie, algemene voorwaarden) wordt langzamer gelezen. Een licht lifestyle-artikel - sneller. Het resultaat is een geschatte waarde.",
-          "answerSchemaText": "De tool gaat uit van een gemiddelde leessnelheid van 200 woorden per minuut. Dit is een geschatte waarde voor gewone tekst."
+          "answer": "De tool deelt het aantal woorden door 200, de gemiddelde leessnelheid. Het resultaat is een geschatte waarde.",
+          "answerSchemaText": "De tool gaat uit van 200 woorden per minuut."
         },
         {
-          "question": "Waar komen de aanbevolen bereiken vandaan?",
-          "answer": "De bereiken zijn gebaseerd op analyses van goed rankende inhoud in zoekmachines en op best practices voor contentcreatie. Ze zijn opzettelijk breed omdat hetzelfde paginatype verschillende lengtes kan vereisen afhankelijk van branche, onderwerpscomplexiteit en lezersbehoeften.",
-          "answerSchemaText": "De bereiken zijn gebaseerd op SEO-analyses en best practices voor contentcreatie."
-        },
-        {
-          "question": "Kan ik het rapport met statistieken kopiëren?",
-          "answer": "Ja. Onder de statistieken vindt u een knop Rapport kopiëren - deze kopieert een samenvatting met woordaantal, tekenaantal, alinea's, leestijd en lengte-evaluatie naar uw klembord. U kunt het in een document plakken of naar medewerkers sturen.",
-          "answerSchemaText": "Ja. Klik op de knop Rapport kopiëren onder de statistieken. Een samenvatting met alle metrieken en beoordeling wordt naar uw klembord gekopieerd."
+          "question": "Is mijn tekst veilig?",
+          "answer": "Ja. Alle analyse vindt lokaal in uw browser plaats. De tekst wordt nooit naar een server verzonden.",
+          "answerSchemaText": "Ja. De tekst wordt lokaal in de browser verwerkt."
         }
       ]
     },

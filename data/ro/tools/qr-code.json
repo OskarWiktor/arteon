@@ -99,15 +99,18 @@
       "items": [
         {
           "title": "1. Alegeți tipul de date",
-          "description": "Selectați ce doriți să codificați: URL, text, carte de vizită vCard, e-mail sau număr de telefon."
+          "description": "Selectați ce doriți să codificați: URL, text, carte de vizită vCard, e-mail sau număr de telefon.",
+          "icon": "RiListCheck2"
         },
         {
           "title": "2. Introduceți datele",
-          "description": "Completați câmpurile corespunzătoare - adresa site-ului, datele de contact sau conținutul mesajului."
+          "description": "Completați câmpurile corespunzătoare - adresa site-ului, datele de contact sau conținutul mesajului.",
+          "icon": "RiEditLine"
         },
         {
           "title": "3. Descărcați codul",
-          "description": "Personalizați aspectul (culori, dimensiune, margine) și descărcați ca PNG sau SVG."
+          "description": "Personalizați aspectul (culori, dimensiune, margine) și descărcați ca PNG sau SVG.",
+          "icon": "RiDownloadLine"
         }
       ]
     },

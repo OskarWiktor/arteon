@@ -85,15 +85,18 @@
       "items": [
         {
           "title": "1. Adăugați fișiere",
-          "description": "Trageți imagini JPG sau PNG în zona desemnată sau selectați fișiere de pe dispozitiv. Puteți adăuga orice număr de fișiere simultan."
+          "description": "Trageți imagini JPG sau PNG în zona desemnată sau selectați fișiere de pe dispozitiv. Puteți adăuga orice număr de fișiere simultan.",
+          "icon": "RiUploadLine"
         },
         {
           "title": "2. Setați calitatea",
-          "description": "Alegeți nivelul de calitate (implicit 80%). O valoare mai mică înseamnă un fișier mai mic. Pentru majoritatea cazurilor, 80% este setarea optimă."
+          "description": "Alegeți nivelul de calitate (implicit 80%). O valoare mai mică înseamnă un fișier mai mic. Pentru majoritatea cazurilor, 80% este setarea optimă.",
+          "icon": "RiEqualizerLine"
         },
         {
           "title": "3. Descărcați WebP",
-          "description": "După conversie, descărcați fișierele individual sau ca arhivă ZIP. Fiecare fișier afișează informații despre spațiul economisit."
+          "description": "După conversie, descărcați fișierele individual sau ca arhivă ZIP. Fiecare fișier afișează informații despre spațiul economisit.",
+          "icon": "RiDownloadLine"
         }
       ]
     },

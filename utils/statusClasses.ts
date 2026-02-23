@@ -1,4 +1,4 @@
-import type { LengthStatus } from '@/lib/tools/text/wordCount';
+export type LengthStatus = 'empty' | 'too-short' | 'ideal' | 'too-long';
 
 export function getStatusClasses(status: LengthStatus): string {
   switch (status) {

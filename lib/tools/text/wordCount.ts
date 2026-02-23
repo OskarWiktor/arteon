@@ -1,52 +1,10 @@
 import type { Locale } from '@/types/locale';
-import type { PageTypeConfig, TextMetrics, LengthEvaluation } from '@/types/tools/text';
-export type { PageType, PageTypeConfig, LengthStatus, TextMetrics, LengthEvaluation } from '@/types/tools/text';
+import type { TextMetrics } from '@/types/tools/text';
+export type { TextMetrics } from '@/types/tools/text';
 
 // ---------------------------------------------------------------------------
-// Page type definitions per locale (loaded from JSON)
+// Core counting helpers
 // ---------------------------------------------------------------------------
-
-import plPt from '@/data/pl/tools-ui/word-count-page-types.json';
-import enPt from '@/data/en/tools-ui/word-count-page-types.json';
-import dePt from '@/data/de/tools-ui/word-count-page-types.json';
-import esPt from '@/data/es/tools-ui/word-count-page-types.json';
-import frPt from '@/data/fr/tools-ui/word-count-page-types.json';
-import ptPt from '@/data/pt/tools-ui/word-count-page-types.json';
-import itPt from '@/data/it/tools-ui/word-count-page-types.json';
-import roPt from '@/data/ro/tools-ui/word-count-page-types.json';
-import nlPt from '@/data/nl/tools-ui/word-count-page-types.json';
-import huPt from '@/data/hu/tools-ui/word-count-page-types.json';
-import csPt from '@/data/cs/tools-ui/word-count-page-types.json';
-import svPt from '@/data/sv/tools-ui/word-count-page-types.json';
-import daPt from '@/data/da/tools-ui/word-count-page-types.json';
-import noPt from '@/data/no/tools-ui/word-count-page-types.json';
-import fiPt from '@/data/fi/tools-ui/word-count-page-types.json';
-import elPt from '@/data/el/tools-ui/word-count-page-types.json';
-
-const PAGE_TYPES: Record<Locale, PageTypeConfig[]> = {
-  pl: plPt as PageTypeConfig[],
-  en: enPt as PageTypeConfig[],
-  de: dePt as PageTypeConfig[],
-  es: esPt as PageTypeConfig[],
-  fr: frPt as PageTypeConfig[],
-  pt: ptPt as PageTypeConfig[],
-  it: itPt as PageTypeConfig[],
-  ro: roPt as PageTypeConfig[],
-  nl: nlPt as PageTypeConfig[],
-  hu: huPt as PageTypeConfig[],
-  cs: csPt as PageTypeConfig[],
-  sv: svPt as PageTypeConfig[],
-  da: daPt as PageTypeConfig[],
-  no: noPt as PageTypeConfig[],
-  fi: fiPt as PageTypeConfig[],
-  el: elPt as PageTypeConfig[],
-};
-
-export function getPageTypes(locale: Locale): PageTypeConfig[] {
-  return PAGE_TYPES[locale];
-}
-
-export { PAGE_TYPES };
 
 export function countWords(text: string): number {
   if (!text.trim()) return 0;
@@ -61,9 +19,27 @@ export function countCharsWithoutSpaces(text: string): number {
   return text.replace(/\s/g, '').length;
 }
 
+export function countSentences(text: string): number {
+  if (!text.trim()) return 0;
+  return text.split(/[.!?]+/).filter((s) => s.trim().length > 0).length;
+}
+
 export function countParagraphs(text: string): number {
   if (!text.trim()) return 0;
   return text.split(/\n\s*\n/).filter((p) => p.trim().length > 0).length;
+}
+
+export function countUniqueWords(text: string): number {
+  if (!text.trim()) return 0;
+  const words = text.trim().toLowerCase().split(/\s+/);
+  return new Set(words).size;
+}
+
+export function calculateAvgWordLength(text: string): number {
+  if (!text.trim()) return 0;
+  const words = text.trim().split(/\s+/);
+  const totalChars = words.reduce((sum, w) => sum + w.replace(/[^a-zA-Z\u00C0-\u024F\u0370-\u03FF\u0400-\u04FF]/g, '').length, 0);
+  return Math.round((totalChars / words.length) * 10) / 10;
 }
 
 export function calculateReadingTime(words: number): number {
@@ -77,517 +53,104 @@ export function analyzeText(text: string): TextMetrics {
     words,
     charsWithSpaces: countCharsWithSpaces(text),
     charsWithoutSpaces: countCharsWithoutSpaces(text),
+    sentences: countSentences(text),
     paragraphs: countParagraphs(text),
+    uniqueWords: countUniqueWords(text),
+    avgWordLength: calculateAvgWordLength(text),
     readingTimeMinutes: calculateReadingTime(words),
   };
 }
 
 // ---------------------------------------------------------------------------
-// Evaluation & report i18n
-// EVAL_UI contains arrow functions (tooShort, tooLong, idealGoodLength,
-// readingTime) that can't be serialised to JSON, so it stays in TS.
+// Reading-time i18n (kept minimal — only formatting, no page-type evaluation)
 // ---------------------------------------------------------------------------
-type EvalUi = {
-  wordsUnit: string;
-  emptyMessage: string;
-  tooShort: (min: number, unit: string, missing: number) => string;
-  tooLong: (excess: number, unit: string) => string;
-  idealInRange: string;
-  idealGoodLength: (label: string) => string;
-  readingTime: (minutes: number) => string;
-  report: {
-    title: string;
-    pageType: string;
-    range: string;
-    statistics: string;
-    words: string;
-    charsWithSpaces: string;
-    charsWithoutSpaces: string;
-    paragraphs: string;
-    readingTime: string;
-    evaluation: string;
-    statusIdeal: string;
-    statusShort: string;
-    statusLong: string;
-    generatedBy: string;
-  };
+const READING_TIME_FMT: Record<Locale, (m: number) => string> = {
+  pl: (m) => (m === 1 ? '1 minuta' : m >= 2 && m <= 4 ? `${m} minuty` : `${m} minut`),
+  en: (m) => (m === 1 ? '1 minute' : `${m} minutes`),
+  de: (m) => (m === 1 ? '1 Minute' : `${m} Minuten`),
+  es: (m) => (m === 1 ? '1 minuto' : `${m} minutos`),
+  fr: (m) => (m === 1 ? '1 minute' : `${m} minutes`),
+  pt: (m) => (m === 1 ? '1 minuto' : `${m} minutos`),
+  it: (m) => (m === 1 ? '1 minuto' : `${m} minuti`),
+  ro: (m) => (m === 1 ? '1 minut' : `${m} minute`),
+  nl: (m) => (m === 1 ? '1 minuut' : `${m} minuten`),
+  hu: (m) => (m === 1 ? '1 perc' : `${m} perc`),
+  cs: (m) => (m === 1 ? '1 minuta' : m >= 2 && m <= 4 ? `${m} minuty` : `${m} minut`),
+  sv: (m) => (m === 1 ? '1 minut' : `${m} minuter`),
+  da: (m) => (m === 1 ? '1 minut' : `${m} minutter`),
+  no: (m) => (m === 1 ? '1 minutt' : `${m} minutter`),
+  fi: (m) => (m === 1 ? '1 minuutti' : `${m} minuuttia`),
+  el: (m) => (m === 1 ? '1 \u03bb\u03b5\u03c0\u03c4\u03cc' : `${m} \u03bb\u03b5\u03c0\u03c4\u03ac`),
 };
-
-const EVAL_UI: Record<Locale, EvalUi> = {
-  pl: {
-    wordsUnit: 'słów',
-    emptyMessage: 'Wklej lub wpisz tekst, aby zobaczyć analizę.',
-    tooShort: (min, unit, missing) => `Tekst poniżej orientacyjnego minimum (${min} ${unit}). Jeśli temat jest wyczerpany - to może wystarczyć. Brakuje około ${missing} ${unit}.`,
-    tooLong: (excess, unit) => `Tekst powyżej orientacyjnego maksimum o ${excess} ${unit}. Jeśli każde zdanie wnosi wartość - długość jest uzasadniona.`,
-    idealInRange: 'Długość w zalecanym zakresie. Wartość dla czytelnika jest kluczowa, a zakresy służą jako punkt odniesienia.',
-    idealGoodLength: (label) => `Dobra długość dla ${label.toLowerCase()}. Każdy akapit powinien wnosić konkretną wartość dla czytelnika.`,
-    readingTime: (m) => (m === 1 ? '1 minuta' : m >= 2 && m <= 4 ? `${m} minuty` : `${m} minut`),
-    report: {
-      title: '📊 RAPORT DŁUGOŚCI TEKSTU',
-      pageType: 'Typ strony',
-      range: 'Zalecany zakres',
-      statistics: '📝 STATYSTYKI:',
-      words: 'Słowa',
-      charsWithSpaces: 'Znaki (ze spacjami)',
-      charsWithoutSpaces: 'Znaki (bez spacji)',
-      paragraphs: 'Akapity',
-      readingTime: 'Czas czytania',
-      evaluation: '📈 OCENA',
-      statusIdeal: '✅ Dobra długość',
-      statusShort: '⚠️ Za krótki',
-      statusLong: '⚠️ Za długi',
-      generatedBy: 'Wygenerowano przez: arteonagency.pl/narzedzia/licznik-slow-i-znakow',
-    },
-  },
-  en: {
-    wordsUnit: 'words',
-    emptyMessage: 'Paste or type text to see the analysis.',
-    tooShort: (min, unit, missing) => `Text is below the approximate minimum (${min} ${unit}). If the topic is covered - it may be enough. About ${missing} words short.`,
-    tooLong: (excess, unit) => `Text exceeds the approximate maximum by ${excess} ${unit}. If every sentence adds value - the length is justified.`,
-    idealInRange: 'Length is within the recommended range. Value for the reader is key - ranges serve as a reference point.',
-    idealGoodLength: (label) => `Good length for a ${label.toLowerCase()}. Each paragraph should provide concrete value for the reader.`,
-    readingTime: (m) => (m === 1 ? '1 minute' : `${m} minutes`),
-    report: {
-      title: '📊 TEXT LENGTH REPORT',
-      pageType: 'Page type',
-      range: 'Recommended range',
-      statistics: '📝 STATISTICS:',
-      words: 'Words',
-      charsWithSpaces: 'Characters (with spaces)',
-      charsWithoutSpaces: 'Characters (without spaces)',
-      paragraphs: 'Paragraphs',
-      readingTime: 'Reading time',
-      evaluation: '📈 EVALUATION',
-      statusIdeal: '✅ Good length',
-      statusShort: '⚠️ Too short',
-      statusLong: '⚠️ Too long',
-      generatedBy: 'Generated by: arteonagency.pl/en/tools/word-and-character-counter',
-    },
-  },
-  de: {
-    wordsUnit: 'Wörter',
-    emptyMessage: 'Text einfügen oder eingeben, um die Analyse zu sehen.',
-    tooShort: (min, unit, missing) => `Text liegt unter dem ungefähren Minimum (${min} ${unit}). Wenn das Thema abgedeckt ist, kann das ausreichen. Es fehlen etwa ${missing} ${unit}.`,
-    tooLong: (excess, unit) => `Text überschreitet das ungefähre Maximum um ${excess} ${unit}. Wenn jeder Satz einen Mehrwert bietet, ist die Länge gerechtfertigt.`,
-    idealInRange: 'Länge im empfohlenen Bereich. Der Mehrwert für den Leser ist entscheidend — die Bereiche dienen als Orientierung.',
-    idealGoodLength: (label) => `Gute Länge für ${label}. Jeder Absatz sollte dem Leser konkreten Mehrwert bieten.`,
-    readingTime: (m) => (m === 1 ? '1 Minute' : `${m} Minuten`),
-    report: {
-      title: '📊 TEXTLÄNGEN-BERICHT',
-      pageType: 'Seitentyp',
-      range: 'Empfohlener Bereich',
-      statistics: '📝 STATISTIKEN:',
-      words: 'Wörter',
-      charsWithSpaces: 'Zeichen (mit Leerzeichen)',
-      charsWithoutSpaces: 'Zeichen (ohne Leerzeichen)',
-      paragraphs: 'Absätze',
-      readingTime: 'Lesezeit',
-      evaluation: '📈 BEWERTUNG',
-      statusIdeal: '✅ Gute Länge',
-      statusShort: '⚠️ Zu kurz',
-      statusLong: '⚠️ Zu lang',
-      generatedBy: 'Erstellt von: arteonagency.pl/de/werkzeuge/wort-und-zeichenzaehler',
-    },
-  },
-  es: {
-    wordsUnit: 'palabras',
-    emptyMessage: 'Pega o escribe un texto para ver el análisis.',
-    tooShort: (min, unit, missing) => `El texto está por debajo del mínimo aproximado (${min} ${unit}). Si el tema está cubierto, puede ser suficiente. Faltan unas ${missing} ${unit}.`,
-    tooLong: (excess, unit) => `El texto supera el máximo aproximado en ${excess} ${unit}. Si cada frase aporta valor, la longitud está justificada.`,
-    idealInRange: 'La longitud está dentro del rango recomendado. El valor para el lector es clave: los rangos sirven como referencia.',
-    idealGoodLength: (label) => `Buena longitud para ${label.toLowerCase()}. Cada párrafo debe aportar valor concreto al lector.`,
-    readingTime: (m) => (m === 1 ? '1 minuto' : `${m} minutos`),
-    report: {
-      title: '📊 INFORME DE LONGITUD DEL TEXTO',
-      pageType: 'Tipo de página',
-      range: 'Rango recomendado',
-      statistics: '📝 ESTADÍSTICAS:',
-      words: 'Palabras',
-      charsWithSpaces: 'Caracteres (con espacios)',
-      charsWithoutSpaces: 'Caracteres (sin espacios)',
-      paragraphs: 'Párrafos',
-      readingTime: 'Tiempo de lectura',
-      evaluation: '📈 EVALUACIÓN',
-      statusIdeal: '✅ Buena longitud',
-      statusShort: '⚠️ Demasiado corto',
-      statusLong: '⚠️ Demasiado largo',
-      generatedBy: 'Generado por: arteonagency.pl/es/herramientas/contador-de-palabras-y-caracteres',
-    },
-  },
-  fr: {
-    wordsUnit: 'mots',
-    emptyMessage: 'Collez ou saisissez un texte pour voir l\u2019analyse.',
-    tooShort: (min, unit, missing) => `Le texte est en dessous du minimum approximatif (${min} ${unit}). Si le sujet est couvert, cela peut suffire. Il manque environ ${missing} ${unit}.`,
-    tooLong: (excess, unit) => `Le texte d\u00e9passe le maximum approximatif de ${excess} ${unit}. Si chaque phrase apporte de la valeur, la longueur est justifi\u00e9e.`,
-    idealInRange: 'La longueur est dans la fourchette recommand\u00e9e. La valeur pour le lecteur est essentielle \u2014 les fourchettes servent de r\u00e9f\u00e9rence.',
-    idealGoodLength: (label) => `Bonne longueur pour ${label.toLowerCase()}. Chaque paragraphe doit apporter une valeur concr\u00e8te au lecteur.`,
-    readingTime: (m) => (m === 1 ? '1 minute' : `${m} minutes`),
-    report: {
-      title: '📊 RAPPORT DE LONGUEUR DU TEXTE',
-      pageType: 'Type de page',
-      range: 'Fourchette recommand\u00e9e',
-      statistics: '📝 STATISTIQUES :',
-      words: 'Mots',
-      charsWithSpaces: 'Caract\u00e8res (avec espaces)',
-      charsWithoutSpaces: 'Caract\u00e8res (sans espaces)',
-      paragraphs: 'Paragraphes',
-      readingTime: 'Temps de lecture',
-      evaluation: '📈 \u00c9VALUATION',
-      statusIdeal: '\u2705 Bonne longueur',
-      statusShort: '\u26a0\ufe0f Trop court',
-      statusLong: '\u26a0\ufe0f Trop long',
-      generatedBy: 'G\u00e9n\u00e9r\u00e9 par : arteonagency.pl/fr/outils/compteur-de-mots-et-de-caracteres',
-    },
-  },
-  pt: {
-    wordsUnit: 'palavras',
-    emptyMessage: 'Cole ou digite um texto para ver a an\u00e1lise.',
-    tooShort: (min, unit, missing) => `O texto est\u00e1 abaixo do m\u00ednimo aproximado (${min} ${unit}). Se o tema est\u00e1 coberto, pode ser suficiente. Faltam cerca de ${missing} ${unit}.`,
-    tooLong: (excess, unit) => `O texto ultrapassa o m\u00e1ximo aproximado em ${excess} ${unit}. Se cada frase agrega valor, o comprimento \u00e9 justificado.`,
-    idealInRange: 'O comprimento est\u00e1 dentro do intervalo recomendado. O valor para o leitor \u00e9 fundamental \u2014 os intervalos servem como refer\u00eancia.',
-    idealGoodLength: (label) => `Bom comprimento para ${label.toLowerCase()}. Cada par\u00e1grafo deve fornecer valor concreto ao leitor.`,
-    readingTime: (m) => (m === 1 ? '1 minuto' : `${m} minutos`),
-    report: {
-      title: '📊 RELAT\u00d3RIO DE COMPRIMENTO DO TEXTO',
-      pageType: 'Tipo de p\u00e1gina',
-      range: 'Intervalo recomendado',
-      statistics: '📝 ESTAT\u00cdSTICAS:',
-      words: 'Palavras',
-      charsWithSpaces: 'Caracteres (com espa\u00e7os)',
-      charsWithoutSpaces: 'Caracteres (sem espa\u00e7os)',
-      paragraphs: 'Par\u00e1grafos',
-      readingTime: 'Tempo de leitura',
-      evaluation: '📈 AVALIA\u00c7\u00c3O',
-      statusIdeal: '\u2705 Bom comprimento',
-      statusShort: '\u26a0\ufe0f Muito curto',
-      statusLong: '\u26a0\ufe0f Muito longo',
-      generatedBy: 'Gerado por: arteonagency.pl/pt/ferramentas/contador-de-palavras-e-caracteres',
-    },
-  },
-  it: {
-    wordsUnit: 'parole',
-    emptyMessage: 'Incolla o digita un testo per visualizzare l\u2019analisi.',
-    tooShort: (min, unit, missing) =>
-      `Il testo \u00e8 al di sotto del minimo approssimativo (${min} ${unit}). Se l\u2019argomento \u00e8 coperto, potrebbe essere sufficiente. Mancano circa ${missing} ${unit}.`,
-    tooLong: (excess, unit) => `Il testo supera il massimo approssimativo di ${excess} ${unit}. Se ogni frase aggiunge valore, la lunghezza \u00e8 giustificata.`,
-    idealInRange: 'La lunghezza \u00e8 nell\u2019intervallo raccomandato. Il valore per il lettore \u00e8 fondamentale \u2014 gli intervalli servono come riferimento.',
-    idealGoodLength: (label) => `Buona lunghezza per ${label.toLowerCase()}. Ogni paragrafo dovrebbe fornire valore concreto al lettore.`,
-    readingTime: (m) => (m === 1 ? '1 minuto' : `${m} minuti`),
-    report: {
-      title: '📊 RAPPORTO SULLA LUNGHEZZA DEL TESTO',
-      pageType: 'Tipo di pagina',
-      range: 'Intervallo consigliato',
-      statistics: '📝 STATISTICHE:',
-      words: 'Parole',
-      charsWithSpaces: 'Caratteri (con spazi)',
-      charsWithoutSpaces: 'Caratteri (senza spazi)',
-      paragraphs: 'Paragrafi',
-      readingTime: 'Tempo di lettura',
-      evaluation: '📈 VALUTAZIONE',
-      statusIdeal: '\u2705 Buona lunghezza',
-      statusShort: '\u26a0\ufe0f Troppo corto',
-      statusLong: '\u26a0\ufe0f Troppo lungo',
-      generatedBy: 'Generato da: arteonagency.pl/it/strumenti/contatore-parole-e-caratteri',
-    },
-  },
-  ro: {
-    wordsUnit: 'cuvinte',
-    emptyMessage: 'Lipi\u021bi sau introduce\u021bi text pentru a vedea analiza.',
-    tooShort: (min, unit, missing) => `Textul este sub minimul aproximativ (${min} ${unit}). Dac\u0103 subiectul este acoperit, poate fi suficient. Lipsesc aproximativ ${missing} ${unit}.`,
-    tooLong: (excess, unit) => `Textul dep\u0103\u0219e\u0219te maximul aproximativ cu ${excess} ${unit}. Dac\u0103 fiecare propozi\u021bie adaug\u0103 valoare, lungimea este justificat\u0103.`,
-    idealInRange: 'Lungimea este \u00een intervalul recomandat. Valoarea pentru cititor este esen\u021bial\u0103 \u2014 intervalele servesc ca referin\u021b\u0103.',
-    idealGoodLength: (label) => `Lungime bun\u0103 pentru ${label.toLowerCase()}. Fiecare paragraf ar trebui s\u0103 ofere valoare concret\u0103 cititorului.`,
-    readingTime: (m) => (m === 1 ? '1 minut' : `${m} minute`),
-    report: {
-      title: '📊 RAPORT DE LUNGIME A TEXTULUI',
-      pageType: 'Tip de pagin\u0103',
-      range: 'Interval recomandat',
-      statistics: '📝 STATISTICI:',
-      words: 'Cuvinte',
-      charsWithSpaces: 'Caractere (cu spa\u021bii)',
-      charsWithoutSpaces: 'Caractere (f\u0103r\u0103 spa\u021bii)',
-      paragraphs: 'Paragrafe',
-      readingTime: 'Timp de citire',
-      evaluation: '📈 EVALUARE',
-      statusIdeal: '\u2705 Lungime bun\u0103',
-      statusShort: '\u26a0\ufe0f Prea scurt',
-      statusLong: '\u26a0\ufe0f Prea lung',
-      generatedBy: 'Generat de: arteonagency.pl/ro/instrumente/numarator-de-cuvinte-si-caractere',
-    },
-  },
-  nl: {
-    wordsUnit: 'woorden',
-    emptyMessage: 'Plak of typ tekst om de analyse te zien.',
-    tooShort: (min, unit, missing) => `Tekst is onder het geschatte minimum (${min} ${unit}). Als het onderwerp behandeld is, kan het voldoende zijn. Ongeveer ${missing} ${unit} te weinig.`,
-    tooLong: (excess, unit) => `Tekst overschrijdt het geschatte maximum met ${excess} ${unit}. Als elke zin waarde toevoegt, is de lengte gerechtvaardigd.`,
-    idealInRange: 'Lengte is binnen het aanbevolen bereik. Waarde voor de lezer is essentieel \u2014 bereiken dienen als referentiepunt.',
-    idealGoodLength: (label) => `Goede lengte voor ${label.toLowerCase()}. Elke alinea moet concrete waarde bieden aan de lezer.`,
-    readingTime: (m) => (m === 1 ? '1 minuut' : `${m} minuten`),
-    report: {
-      title: '📊 TEKSTLENGTERAPPORT',
-      pageType: 'Paginatype',
-      range: 'Aanbevolen bereik',
-      statistics: '📝 STATISTIEKEN:',
-      words: 'Woorden',
-      charsWithSpaces: 'Tekens (met spaties)',
-      charsWithoutSpaces: 'Tekens (zonder spaties)',
-      paragraphs: 'Alinea\u2019s',
-      readingTime: 'Leestijd',
-      evaluation: '📈 BEOORDELING',
-      statusIdeal: '\u2705 Goede lengte',
-      statusShort: '\u26a0\ufe0f Te kort',
-      statusLong: '\u26a0\ufe0f Te lang',
-      generatedBy: 'Gegenereerd door: arteonagency.pl/nl/tools/woord-en-tekenteller',
-    },
-  },
-  hu: {
-    wordsUnit: 'sz\u00f3',
-    emptyMessage: 'Illesszen be vagy \u00edrjon sz\u00f6veget az elemz\u00e9s megtekint\u00e9s\u00e9hez.',
-    tooShort: (min, unit, missing) =>
-      `A sz\u00f6veg a k\u00f6zel\u00edt\u0151 minimum alatt van (${min} ${unit}). Ha a t\u00e9ma lefedett, elegend\u0151 lehet. K\u00f6r\u00fclbel\u00fcl ${missing} ${unit} hi\u00e1nyzik.`,
-    tooLong: (excess, unit) => `A sz\u00f6veg ${excess} ${unit}-val meghaladja a k\u00f6zel\u00edt\u0151 maximumot. Ha minden mondat \u00e9rt\u00e9ket ad, a hossz indokolt.`,
-    idealInRange:
-      'A hossz az aj\u00e1nlott tartom\u00e1nyon bel\u00fcl van. Az olvas\u00f3 sz\u00e1m\u00e1ra ny\u00fajtott \u00e9rt\u00e9k a kulcs \u2014 a tartom\u00e1nyok referenciapontk\u00e9nt szolg\u00e1lnak.',
-    idealGoodLength: (label) => `J\u00f3 hossz a(z) ${label.toLowerCase()} sz\u00e1m\u00e1ra. Minden bekezd\u00e9snek konkr\u00e9t \u00e9rt\u00e9ket kell ny\u00fajtania az olvas\u00f3nak.`,
-    readingTime: (m) => (m === 1 ? '1 perc' : `${m} perc`),
-    report: {
-      title: '📊 SZ\u00d6VEGHOSSZ JELENT\u00c9S',
-      pageType: 'Oldalt\u00edpus',
-      range: 'Aj\u00e1nlott tartom\u00e1ny',
-      statistics: '📝 STATISZTIK\u00c1K:',
-      words: 'Szavak',
-      charsWithSpaces: 'Karakterek (sz\u00f3k\u00f6z\u00f6kkel)',
-      charsWithoutSpaces: 'Karakterek (sz\u00f3k\u00f6z\u00f6k n\u00e9lk\u00fcl)',
-      paragraphs: 'Bekezd\u00e9sek',
-      readingTime: 'Olvas\u00e1si id\u0151',
-      evaluation: '📈 \u00c9RT\u00c9KEL\u00c9S',
-      statusIdeal: '\u2705 J\u00f3 hossz',
-      statusShort: '\u26a0\ufe0f T\u00fal r\u00f6vid',
-      statusLong: '\u26a0\ufe0f T\u00fal hossz\u00fa',
-      generatedBy: 'K\u00e9sz\u00edtette: arteonagency.pl/hu/eszkozok/szo-es-karakterszamlalo',
-    },
-  },
-  cs: {
-    wordsUnit: 'slov',
-    emptyMessage: 'Vlo\u017ete nebo zadejte text pro zobrazen\u00ed anal\u00fdzy.',
-    tooShort: (min, unit, missing) =>
-      `Text je pod p\u0159ibli\u017en\u00fdm minimem (${min} ${unit}). Pokud je t\u00e9ma pokryto, m\u016f\u017ee to sta\u010dit. Chyb\u00ed p\u0159ibli\u017en\u011b ${missing} ${unit}.`,
-    tooLong: (excess, unit) =>
-      `Text p\u0159ekra\u010duje p\u0159ibli\u017en\u00e9 maximum o ${excess} ${unit}. Pokud ka\u017ed\u00e1 v\u011bta p\u0159id\u00e1v\u00e1 hodnotu, d\u00e9lka je od\u016fvodn\u011bn\u00e1.`,
-    idealInRange: 'D\u00e9lka je v doporu\u010den\u00e9m rozsahu. Hodnota pro \u010dten\u00e1\u0159e je kl\u00ed\u010dov\u00e1 \u2014 rozsahy slou\u017e\u00ed jako referen\u010dn\u00ed bod.',
-    idealGoodLength: (label) => `Dobr\u00e1 d\u00e9lka pro ${label.toLowerCase()}. Ka\u017ed\u00fd odstavec by m\u011bl \u010dten\u00e1\u0159i poskytnout konkr\u00e9tn\u00ed hodnotu.`,
-    readingTime: (m) => (m === 1 ? '1 minuta' : m >= 2 && m <= 4 ? `${m} minuty` : `${m} minut`),
-    report: {
-      title: '📊 ZPR\u00c1VA O D\u00c9LCE TEXTU',
-      pageType: 'Typ str\u00e1nky',
-      range: 'Doporu\u010den\u00fd rozsah',
-      statistics: '📝 STATISTIKY:',
-      words: 'Slova',
-      charsWithSpaces: 'Znaky (s mezerami)',
-      charsWithoutSpaces: 'Znaky (bez mezer)',
-      paragraphs: 'Odstavce',
-      readingTime: '\u010cas \u010dten\u00ed',
-      evaluation: '📈 HODNOCEN\u00cd',
-      statusIdeal: '\u2705 Dobr\u00e1 d\u00e9lka',
-      statusShort: '\u26a0\ufe0f P\u0159\u00edli\u0161 kr\u00e1tk\u00fd',
-      statusLong: '\u26a0\ufe0f P\u0159\u00edli\u0161 dlouh\u00fd',
-      generatedBy: 'Vygenerov\u00e1no: arteonagency.pl/cs/nastroje/pocitadlo-slov-a-znaku',
-    },
-  },
-  sv: {
-    wordsUnit: 'ord',
-    emptyMessage: 'Klistra in eller skriv text f\u00f6r att se analysen.',
-    tooShort: (min, unit, missing) =>
-      `Texten \u00e4r under det ungef\u00e4rliga minimumet (${min} ${unit}). Om \u00e4mnet \u00e4r t\u00e4ckt kan det r\u00e4cka. Ungef\u00e4r ${missing} ${unit} fattas.`,
-    tooLong: (excess, unit) => `Texten \u00f6verskrider det ungef\u00e4rliga maximet med ${excess} ${unit}. Om varje mening tillf\u00f6r v\u00e4rde \u00e4r l\u00e4ngden motiverad.`,
-    idealInRange: 'L\u00e4ngden \u00e4r inom det rekommenderade intervallet. V\u00e4rde f\u00f6r l\u00e4saren \u00e4r nyckeln \u2014 intervallen fungerar som referenspunkt.',
-    idealGoodLength: (label) => `Bra l\u00e4ngd f\u00f6r ${label.toLowerCase()}. Varje stycke b\u00f6r ge konkret v\u00e4rde \u00e5t l\u00e4saren.`,
-    readingTime: (m) => (m === 1 ? '1 minut' : `${m} minuter`),
-    report: {
-      title: '📊 TEXTL\u00c4NGDSRAPPORT',
-      pageType: 'Sidtyp',
-      range: 'Rekommenderat intervall',
-      statistics: '📝 STATISTIK:',
-      words: 'Ord',
-      charsWithSpaces: 'Tecken (med mellanslag)',
-      charsWithoutSpaces: 'Tecken (utan mellanslag)',
-      paragraphs: 'Stycken',
-      readingTime: 'L\u00e4stid',
-      evaluation: '📈 BED\u00d6MNING',
-      statusIdeal: '\u2705 Bra l\u00e4ngd',
-      statusShort: '\u26a0\ufe0f F\u00f6r kort',
-      statusLong: '\u26a0\ufe0f F\u00f6r l\u00e5ng',
-      generatedBy: 'Genererad av: arteonagency.pl/sv/verktyg/ord-och-teckenraknare',
-    },
-  },
-  da: {
-    wordsUnit: 'ord',
-    emptyMessage: 'Inds\u00e6t eller skriv tekst for at se analysen.',
-    tooShort: (min, unit, missing) => `Teksten er under det omtrentlige minimum (${min} ${unit}). Hvis emnet er d\u00e6kket, kan det v\u00e6re nok. Der mangler ca. ${missing} ${unit}.`,
-    tooLong: (excess, unit) => `Teksten overstiger det omtrentlige maksimum med ${excess} ${unit}. Hvis hver s\u00e6tning tilfører v\u00e6rdi, er l\u00e6ngden berettiget.`,
-    idealInRange: 'L\u00e6ngden er inden for det anbefalede interval. V\u00e6rdi for l\u00e6seren er n\u00f8glen \u2014 intervallerne fungerer som referencepunkt.',
-    idealGoodLength: (label) => `God l\u00e6ngde for ${label.toLowerCase()}. Hvert afsnit b\u00f8r give konkret v\u00e6rdi til l\u00e6seren.`,
-    readingTime: (m) => (m === 1 ? '1 minut' : `${m} minutter`),
-    report: {
-      title: '📊 TEKSTL\u00c6NGDERAPPORT',
-      pageType: 'Sidetype',
-      range: 'Anbefalet interval',
-      statistics: '📝 STATISTIK:',
-      words: 'Ord',
-      charsWithSpaces: 'Tegn (med mellemrum)',
-      charsWithoutSpaces: 'Tegn (uden mellemrum)',
-      paragraphs: 'Afsnit',
-      readingTime: 'L\u00e6setid',
-      evaluation: '📈 VURDERING',
-      statusIdeal: '\u2705 God l\u00e6ngde',
-      statusShort: '\u26a0\ufe0f For kort',
-      statusLong: '\u26a0\ufe0f For lang',
-      generatedBy: 'Genereret af: arteonagency.pl/da/vaerktojer/ord-og-tegntaeller',
-    },
-  },
-  no: {
-    wordsUnit: 'ord',
-    emptyMessage: 'Lim inn eller skriv tekst for \u00e5 se analysen.',
-    tooShort: (min, unit, missing) => `Teksten er under det omtrentlige minimum (${min} ${unit}). Hvis emnet er dekket, kan det v\u00e6re nok. Det mangler ca. ${missing} ${unit}.`,
-    tooLong: (excess, unit) => `Teksten overskrider det omtrentlige maksimum med ${excess} ${unit}. Hvis hver setning tilfører verdi, er lengden berettiget.`,
-    idealInRange: 'Lengden er innenfor det anbefalte intervallet. Verdi for leseren er n\u00f8kkelen \u2014 intervallene fungerer som referansepunkt.',
-    idealGoodLength: (label) => `God lengde for ${label.toLowerCase()}. Hvert avsnitt b\u00f8r gi konkret verdi til leseren.`,
-    readingTime: (m) => (m === 1 ? '1 minutt' : `${m} minutter`),
-    report: {
-      title: '📊 TEKSTLENGDERAPPORT',
-      pageType: 'Sidetype',
-      range: 'Anbefalt intervall',
-      statistics: '📝 STATISTIKK:',
-      words: 'Ord',
-      charsWithSpaces: 'Tegn (med mellomrom)',
-      charsWithoutSpaces: 'Tegn (uten mellomrom)',
-      paragraphs: 'Avsnitt',
-      readingTime: 'Lesetid',
-      evaluation: '📈 VURDERING',
-      statusIdeal: '\u2705 God lengde',
-      statusShort: '\u26a0\ufe0f For kort',
-      statusLong: '\u26a0\ufe0f For lang',
-      generatedBy: 'Generert av: arteonagency.pl/no/verktoy/ord-og-tegnteller',
-    },
-  },
-  fi: {
-    wordsUnit: 'sanaa',
-    emptyMessage: 'Liit\u00e4 tai kirjoita teksti\u00e4 n\u00e4hd\u00e4ksesi analyysin.',
-    tooShort: (min, unit, missing) => `Teksti on alle likimääräisen minimin (${min} ${unit}). Jos aihe on katettu, se voi riittää. Puuttuu noin ${missing} ${unit}.`,
-    tooLong: (excess, unit) => `Teksti ylitt\u00e4\u00e4 likim\u00e4\u00e4r\u00e4isen maksimin ${excess} ${unit}. Jos jokainen lause tuo lis\u00e4arvoa, pituus on perusteltu.`,
-    idealInRange: 'Pituus on suositellun vaihteluv\u00e4lin sis\u00e4ll\u00e4. Arvo lukijalle on avainasia \u2014 vaihteluv\u00e4lit toimivat viitepisteein\u00e4.',
-    idealGoodLength: (label) => `Hyv\u00e4 pituus ${label.toLowerCase()}. Jokaisen kappaleen tulisi tarjota konkreettista arvoa lukijalle.`,
-    readingTime: (m) => (m === 1 ? '1 minuutti' : `${m} minuuttia`),
-    report: {
-      title: '📊 TEKSTIN PITUUSRAPORTTI',
-      pageType: 'Sivutyyppi',
-      range: 'Suositeltu vaihteluv\u00e4li',
-      statistics: '📝 TILASTOT:',
-      words: 'Sanat',
-      charsWithSpaces: 'Merkit (v\u00e4lily\u00f6nnein)',
-      charsWithoutSpaces: 'Merkit (ilman v\u00e4lily\u00f6ntej\u00e4)',
-      paragraphs: 'Kappaleet',
-      readingTime: 'Lukuaika',
-      evaluation: '📈 ARVIOINTI',
-      statusIdeal: '\u2705 Hyv\u00e4 pituus',
-      statusShort: '\u26a0\ufe0f Liian lyhyt',
-      statusLong: '\u26a0\ufe0f Liian pitk\u00e4',
-      generatedBy: 'Luonut: arteonagency.pl/fi/tyokalut/sana-ja-merkkilaskuri',
-    },
-  },
-  el: {
-    wordsUnit: '\u03bb\u03ad\u03be\u03b5\u03b9\u03c2',
-    emptyMessage:
-      '\u0395\u03c0\u03b9\u03ba\u03bf\u03bb\u03bb\u03ae\u03c3\u03c4\u03b5 \u03ae \u03c0\u03bb\u03b7\u03ba\u03c4\u03c1\u03bf\u03bb\u03bf\u03b3\u03ae\u03c3\u03c4\u03b5 \u03ba\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03b3\u03b9\u03b1 \u03bd\u03b1 \u03b4\u03b5\u03af\u03c4\u03b5 \u03c4\u03b7\u03bd \u03b1\u03bd\u03ac\u03bb\u03c5\u03c3\u03b7.',
-    tooShort: (min, unit, missing) =>
-      `\u03a4\u03bf \u03ba\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03b5\u03af\u03bd\u03b1\u03b9 \u03ba\u03ac\u03c4\u03c9 \u03b1\u03c0\u03cc \u03c4\u03bf \u03ba\u03b1\u03c4\u03ac \u03c0\u03c1\u03bf\u03c3\u03ad\u03b3\u03b3\u03b9\u03c3\u03b7 \u03b5\u03bb\u03ac\u03c7\u03b9\u03c3\u03c4\u03bf (${min} ${unit}). \u0391\u03bd \u03c4\u03bf \u03b8\u03ad\u03bc\u03b1 \u03ba\u03b1\u03bb\u03cd\u03c0\u03c4\u03b5\u03c4\u03b1\u03b9 \u2013 \u03bc\u03c0\u03bf\u03c1\u03b5\u03af \u03bd\u03b1 \u03b1\u03c1\u03ba\u03b5\u03af. \u039b\u03b5\u03af\u03c0\u03bf\u03c5\u03bd \u03c0\u03b5\u03c1\u03af\u03c0\u03bf\u03c5 ${missing} ${unit}.`,
-    tooLong: (excess, unit) =>
-      `\u03a4\u03bf \u03ba\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03c5\u03c0\u03b5\u03c1\u03b2\u03b1\u03af\u03bd\u03b5\u03b9 \u03c4\u03bf \u03ba\u03b1\u03c4\u03ac \u03c0\u03c1\u03bf\u03c3\u03ad\u03b3\u03b3\u03b9\u03c3\u03b7 \u03bc\u03ad\u03b3\u03b9\u03c3\u03c4\u03bf \u03ba\u03b1\u03c4\u03ac ${excess} ${unit}. \u0391\u03bd \u03ba\u03ac\u03b8\u03b5 \u03c0\u03c1\u03cc\u03c4\u03b1\u03c3\u03b7 \u03c0\u03c1\u03bf\u03c3\u03b8\u03ad\u03c4\u03b5\u03b9 \u03b1\u03be\u03af\u03b1 \u2013 \u03c4\u03bf \u03bc\u03ae\u03ba\u03bf\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03b4\u03b9\u03ba\u03b1\u03b9\u03bf\u03bb\u03bf\u03b3\u03b7\u03bc\u03ad\u03bd\u03bf.`,
-    idealInRange:
-      '\u03a4\u03bf \u03bc\u03ae\u03ba\u03bf\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03b5\u03bd\u03c4\u03cc\u03c2 \u03c4\u03bf\u03c5 \u03c3\u03c5\u03bd\u03b9\u03c3\u03c4\u03ce\u03bc\u03b5\u03bd\u03bf\u03c5 \u03b5\u03cd\u03c1\u03bf\u03c5\u03c2. \u0397 \u03b1\u03be\u03af\u03b1 \u03b3\u03b9\u03b1 \u03c4\u03bf\u03bd \u03b1\u03bd\u03b1\u03b3\u03bd\u03ce\u03c3\u03c4\u03b7 \u03b5\u03af\u03bd\u03b1\u03b9 \u03ba\u03bb\u03b5\u03b9\u03b4\u03af.',
-    idealGoodLength: (label) =>
-      `\u039a\u03b1\u03bb\u03cc \u03bc\u03ae\u03ba\u03bf\u03c2 \u03b3\u03b9\u03b1 ${label.toLowerCase()}. \u039a\u03ac\u03b8\u03b5 \u03c0\u03b1\u03c1\u03ac\u03b3\u03c1\u03b1\u03c6\u03bf\u03c2 \u03c0\u03c1\u03ad\u03c0\u03b5\u03b9 \u03bd\u03b1 \u03c0\u03c1\u03bf\u03c3\u03c6\u03ad\u03c1\u03b5\u03b9 \u03c3\u03c5\u03b3\u03ba\u03b5\u03ba\u03c1\u03b9\u03bc\u03ad\u03bd\u03b7 \u03b1\u03be\u03af\u03b1.`,
-    readingTime: (m) => (m === 1 ? '1 \u03bb\u03b5\u03c0\u03c4\u03cc' : `${m} \u03bb\u03b5\u03c0\u03c4\u03ac`),
-    report: {
-      title: '\ud83d\udcca \u0391\u039d\u0391\u03a6\u039f\u03a1\u0391 \u039c\u0397\u039a\u039f\u03a5\u03a3 \u039a\u0395\u0399\u039c\u0395\u039d\u039f\u03a5',
-      pageType: '\u03a4\u03cd\u03c0\u03bf\u03c2 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1\u03c2',
-      range: '\u03a3\u03c5\u03bd\u03b9\u03c3\u03c4\u03ce\u03bc\u03b5\u03bd\u03bf \u03b5\u03cd\u03c1\u03bf\u03c2',
-      statistics: '\ud83d\udcdd \u03a3\u03a4\u0391\u03a4\u0399\u03a3\u03a4\u0399\u039a\u0391:',
-      words: '\u039b\u03ad\u03be\u03b5\u03b9\u03c2',
-      charsWithSpaces: '\u03a7\u03b1\u03c1\u03b1\u03ba\u03c4\u03ae\u03c1\u03b5\u03c2 (\u03bc\u03b5 \u03ba\u03b5\u03bd\u03ac)',
-      charsWithoutSpaces: '\u03a7\u03b1\u03c1\u03b1\u03ba\u03c4\u03ae\u03c1\u03b5\u03c2 (\u03c7\u03c9\u03c1\u03af\u03c2 \u03ba\u03b5\u03bd\u03ac)',
-      paragraphs: '\u03a0\u03b1\u03c1\u03ac\u03b3\u03c1\u03b1\u03c6\u03bf\u03b9',
-      readingTime: '\u03a7\u03c1\u03cc\u03bd\u03bf\u03c2 \u03b1\u03bd\u03ac\u03b3\u03bd\u03c9\u03c3\u03b7\u03c2',
-      evaluation: '\ud83d\udcc8 \u0391\u039e\u0399\u039f\u039b\u039f\u0393\u0397\u03a3\u0397',
-      statusIdeal: '\u2705 \u039a\u03b1\u03bb\u03cc \u03bc\u03ae\u03ba\u03bf\u03c2',
-      statusShort: '\u26a0\ufe0f \u03a0\u03bf\u03bb\u03cd \u03ba\u03bf\u03bd\u03c4\u03cc',
-      statusLong: '\u26a0\ufe0f \u03a0\u03bf\u03bb\u03cd \u03bc\u03b1\u03ba\u03c1\u03cd',
-      generatedBy: '\u0394\u03b7\u03bc\u03b9\u03bf\u03c5\u03c1\u03b3\u03ae\u03b8\u03b7\u03ba\u03b5 \u03b1\u03c0\u03cc: arteonagency.pl/el/ergaleia/metritis-lexeon-kai-charaktiron',
-    },
-  },
-};
-
-// ---------------------------------------------------------------------------
-// Evaluation helpers
-// ---------------------------------------------------------------------------
-
-export function evaluateLength(words: number, pageType: PageTypeConfig, locale: Locale = 'pl'): LengthEvaluation {
-  const t = EVAL_UI[locale];
-
-  if (words === 0) {
-    return { status: 'empty', percentage: 0, message: t.emptyMessage };
-  }
-
-  const { minWords, maxWords } = pageType;
-  const midPoint = (minWords + maxWords) / 2;
-
-  if (words < minWords) {
-    const percentage = Math.round((words / minWords) * 100);
-    const missing = minWords - words;
-    return { status: 'too-short', percentage: Math.min(percentage, 99), message: t.tooShort(minWords, t.wordsUnit, missing) };
-  }
-
-  if (words > maxWords) {
-    const excess = words - maxWords;
-    return { status: 'too-long', percentage: 100, message: t.tooLong(excess, t.wordsUnit) };
-  }
-
-  const percentage = Math.round(((words - minWords) / (maxWords - minWords)) * 100);
-
-  if (words < midPoint) {
-    return { status: 'ideal', percentage: Math.max(percentage, 1), message: t.idealInRange };
-  }
-
-  return { status: 'ideal', percentage, message: t.idealGoodLength(pageType.label) };
-}
 
 export function formatReadingTime(minutes: number, locale: Locale = 'pl'): string {
-  return EVAL_UI[locale].readingTime(minutes);
+  return READING_TIME_FMT[locale](minutes);
 }
 
-export function formatReportText(metrics: TextMetrics, pageType: PageTypeConfig, evaluation: LengthEvaluation, locale: Locale = 'pl'): string {
-  const r = EVAL_UI[locale].report;
-  const statusLabel = evaluation.status === 'ideal' ? r.statusIdeal : evaluation.status === 'too-short' ? r.statusShort : evaluation.status === 'too-long' ? r.statusLong : '-';
+// ---------------------------------------------------------------------------
+// Text transformation functions
+// ---------------------------------------------------------------------------
 
-  const lines = [
-    r.title,
-    '\u2500'.repeat(30),
-    `${r.pageType}: ${pageType.label}`,
-    `${r.range}: ${pageType.minWords}\u2013${pageType.maxWords} ${EVAL_UI[locale].wordsUnit}`,
-    '',
-    r.statistics,
-    `\u2022 ${r.words}: ${metrics.words}`,
-    `\u2022 ${r.charsWithSpaces}: ${metrics.charsWithSpaces}`,
-    `\u2022 ${r.charsWithoutSpaces}: ${metrics.charsWithoutSpaces}`,
-    `\u2022 ${r.paragraphs}: ${metrics.paragraphs}`,
-    `\u2022 ${r.readingTime}: ${formatReadingTime(metrics.readingTimeMinutes, locale)}`,
-    '',
-    `${r.evaluation}: ${statusLabel}`,
-    evaluation.message,
-    '',
-    '\u2500'.repeat(30),
-    r.generatedBy,
-  ];
+export function toUpperCase(text: string): string {
+  return text.toUpperCase();
+}
 
-  return lines.join('\n');
+export function toLowerCase(text: string): string {
+  return text.toLowerCase();
+}
+
+export function toSentenceCase(text: string): string {
+  const lower = text.toLowerCase();
+  return lower.replace(/(^\s*|[.!?]\s+)(\p{L})/gu, (_m, sep, char: string) => sep + char.toUpperCase());
+}
+
+export function toTitleCase(text: string): string {
+  return text.toLowerCase().replace(/(^|\s)\p{L}/gu, (c) => c.toUpperCase());
+}
+
+export function toToggleCase(text: string): string {
+  return text
+    .split('')
+    .map((c) => (c === c.toUpperCase() ? c.toLowerCase() : c.toUpperCase()))
+    .join('');
+}
+
+export function removeExtraSpaces(text: string): string {
+  return text
+    .split('\n')
+    .map((line) => line.replace(/[ \t]+/g, ' ').trim())
+    .join('\n');
+}
+
+export function removeEmptyLines(text: string): string {
+  return text
+    .split('\n')
+    .filter((line) => line.trim().length > 0)
+    .join('\n');
+}
+
+export function removeDuplicateLines(text: string): string {
+  const seen = new Set<string>();
+  return text
+    .split('\n')
+    .filter((line) => {
+      if (seen.has(line)) return false;
+      seen.add(line);
+      return true;
+    })
+    .join('\n');
+}
+
+export function sortLinesAsc(text: string): string {
+  return text
+    .split('\n')
+    .sort((a, b) => a.localeCompare(b))
+    .join('\n');
+}
+
+export function sortLinesDesc(text: string): string {
+  return text
+    .split('\n')
+    .sort((a, b) => b.localeCompare(a))
+    .join('\n');
 }

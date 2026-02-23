@@ -85,15 +85,18 @@
       "items": [
         {
           "title": "1. Voeg bestanden toe",
-          "description": "Sleep JPG- of PNG-afbeeldingen naar het aangewezen gebied of selecteer bestanden van uw apparaat. U kunt elk aantal bestanden tegelijk toevoegen."
+          "description": "Sleep JPG- of PNG-afbeeldingen naar het aangewezen gebied of selecteer bestanden van uw apparaat. U kunt elk aantal bestanden tegelijk toevoegen.",
+          "icon": "RiUploadLine"
         },
         {
           "title": "2. Stel kwaliteit in",
-          "description": "Kies het kwaliteitsniveau (standaard 80%). Een lagere waarde betekent een kleiner bestand. Voor de meeste toepassingen is 80% de optimale instelling."
+          "description": "Kies het kwaliteitsniveau (standaard 80%). Een lagere waarde betekent een kleiner bestand. Voor de meeste toepassingen is 80% de optimale instelling.",
+          "icon": "RiEqualizerLine"
         },
         {
           "title": "3. Download WebP",
-          "description": "Na conversie downloadt u bestanden individueel of als ZIP-archief. Elk bestand toont informatie over de bespaarde ruimte."
+          "description": "Na conversie downloadt u bestanden individueel of als ZIP-archief. Elk bestand toont informatie over de bespaarde ruimte.",
+          "icon": "RiDownloadLine"
         }
       ]
     },

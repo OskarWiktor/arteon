@@ -89,15 +89,18 @@
       "items": [
         {
           "title": "1. Adjon hozzá képet",
-          "description": "Húzzon egy fájlt a kijelölt területre, vagy válasszon grafikát az eszközéről. Támogatott formátumok: PNG, JPG, SVG. Ajánlott méret: min. 512×512 pixel."
+          "description": "Húzzon egy fájlt a kijelölt területre, vagy válasszon grafikát az eszközéről. Támogatott formátumok: PNG, JPG, SVG. Ajánlott méret: min. 512×512 pixel.",
+          "icon": "RiImageLine"
         },
         {
           "title": "2. Válasszon méreteket",
-          "description": "Válassza ki a szükséges ikonméreteket. Szokványos weboldalhoz: favicon.ico, 32×32 és 180×180. PWA-hoz adja hozzá a 192×192 és 512×512 méreteket."
+          "description": "Válassza ki a szükséges ikonméreteket. Szokványos weboldalhoz: favicon.ico, 32×32 és 180×180. PWA-hoz adja hozzá a 192×192 és 512×512 méreteket.",
+          "icon": "RiAspectRatioLine"
         },
         {
           "title": "3. Töltse le a fájlokat",
-          "description": "A generálás után töltse le az összes fájlt ZIP-ként vagy minden ikont külön. Az eszköz alatt talál útmutatást a favicon hozzáadásáról."
+          "description": "A generálás után töltse le az összes fájlt ZIP-ként vagy minden ikont külön. Az eszköz alatt talál útmutatást a favicon hozzáadásáról.",
+          "icon": "RiDownloadLine"
         }
       ]
     },

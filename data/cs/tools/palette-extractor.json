@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/cs/nastroje", "label": "Nástroje" },
-    "third": { "href": "/cs/nastroje/extraktor-barev-z-obrazku", "label": "Extraktor barev z obrázku" }
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/extraktor-barev-z-obrazku",
+      "label": "Extraktor barev z obrázku"
+    }
   },
   "schemas": {
     "software": {
@@ -37,39 +43,72 @@
       "name": "Jak extrahovat barvy z fotky nebo obrázku",
       "description": "Jak extrahovat dominantní barvy z fotky nebo loga. Nahrajte obrázek ve formátu PNG, JPG nebo SVG a nástroj vygeneruje paletu až 12 barev s kódy HEX.",
       "steps": [
-        { "name": "Nahrajte obrázek", "text": "Přetáhněte soubor do vyznačené oblasti nebo vyberte obrázek ze zařízení. Podporované formáty jsou PNG, JPG a SVG." },
-        { "name": "Počkejte na analýzu", "text": "Nástroj automaticky analyzuje obrázek a extrahuje dominantní barvy." },
-        { "name": "Zkopírujte barvy", "text": "U každé barvy najdete tlačítko kopírování – kód HEX se zkopíruje do schránky vašeho systému." }
+        {
+          "name": "Nahrajte obrázek",
+          "text": "Přetáhněte soubor do vyznačené oblasti nebo vyberte obrázek ze zařízení. Podporované formáty jsou PNG, JPG a SVG."
+        },
+        {
+          "name": "Počkejte na analýzu",
+          "text": "Nástroj automaticky analyzuje obrázek a extrahuje dominantní barvy."
+        },
+        {
+          "name": "Zkopírujte barvy",
+          "text": "U každé barvy najdete tlačítko kopírování – kód HEX se zkopíruje do schránky vašeho systému."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Proč extrahovat barvy z obrázku?",
       "html": "<p class=\"mb-4\">Každá fotografie, logo nebo grafika obsahuje barvy, které mohou sloužit jako hotová barevná paleta. Extraktor analyzuje obrázek a zobrazí, které barvy dominují – spolu s kódy HEX a hodnotami RGB připravenými k vložení do vašeho projektu.</p><p class=\"mb-4\">V praxi to znamená, že místo ručního vzorkování barev v grafickém programu (pixel po pixelu) nahrajete jeden obrázek a získáte uspořádaný seznam až 12 barev. To je užitečné při výběru barev pro web, tvorbě konzistentní grafiky pro sociální sítě nebo budování vizuální identity z existujících materiálů.</p><p>Veškerá analýza probíhá lokálně v prohlížeči – obrázek se neodesílá na žádný server.</p>"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak použít extraktor barev z obrázku",
       "description": "Celý proces zabere jen pár sekund:",
       "grid": "three",
       "items": [
-        { "title": "1. Nahrajte obrázek", "description": "Přetáhněte soubor do vyznačené oblasti nebo jej vyberte ze zařízení. Podporované formáty jsou PNG, JPG a SVG." },
-        { "title": "2. Počkejte na analýzu", "description": "Nástroj automaticky analyzuje obrázek a extrahuje až 12 dominantních barev." },
-        { "title": "3. Zkopírujte potřebné barvy", "description": "U každé barvy je tlačítko kopírování – kód HEX nebo RGB jde do schránky a můžete jej vložit přímo do projektu." }
+        {
+          "title": "1. Nahrajte obrázek",
+          "description": "Přetáhněte soubor do vyznačené oblasti nebo jej vyberte ze zařízení. Podporované formáty jsou PNG, JPG a SVG.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Počkejte na analýzu",
+          "description": "Nástroj automaticky analyzuje obrázek a extrahuje až 12 dominantních barev.",
+          "icon": "RiSearchEyeLine"
+        },
+        {
+          "title": "3. Zkopírujte potřebné barvy",
+          "description": "U každé barvy je tlačítko kopírování – kód HEX nebo RGB jde do schránky a můžete jej vložit přímo do projektu.",
+          "icon": "RiFileCopyLine"
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Jak vypadá extrahovaná barevná paleta?",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Příklad barev extrahovaných z krajinné fotografie</p></div>",
       "html": "<p class=\"text-mid mb-4\">Po nahrání obrázku extraktor zobrazí seznam dominantních barev seřazených od nejdominantnější po nejméně dominantní. Každá barva zobrazuje svůj kód HEX a hodnotu RGB – připravené k vložení do CSS, Figma nebo jakékoliv grafické aplikace.</p><p class=\"text-mid\">Počet extrahovaných barev závisí na obsahu obrázku. Krajinná fotografie poskytne bohatší paletu (8–12 barev), zatímco jednoduché dvoubarevné logo dá méně položek.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Které obrázky dávají nejlepší výsledky?",
@@ -98,7 +137,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTimeline",
       "title": "Jak funguje extrakce barev z obrázku?",
@@ -126,7 +168,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Řešení problémů s extraktorem barev",
@@ -154,7 +199,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Čím je tento extraktor barev z obrázku výjimečný?",
@@ -170,7 +218,11 @@
           "title": "Až 12 dominantních barev z jednoho obrázku",
           "description": "Nástroj extrahuje až 12 barev seřazených od nejdominantnější – dostatečné pro sestavení kompletní projektové barevné palety."
         },
-        { "icon": "RiFileImageLine", "title": "Tři populární formáty obrázků", "description": "Podporované formáty jsou PNG, JPG a SVG. PNG soubory s průhledným pozadím dávají nejlepší výsledky." },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Tři populární formáty obrázků",
+          "description": "Podporované formáty jsou PNG, JPG a SVG. PNG soubory s průhledným pozadím dávají nejlepší výsledky."
+        },
         {
           "icon": "RiGlobalLine",
           "title": "Kódy HEX a RGB připravené k vložení",
@@ -178,13 +230,20 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Kde využít extrahované barvy z obrázku",
       "grid": "two",
       "items": [
-        { "icon": "RiBrushLine", "title": "Budování vizuální identity", "description": "Nahrajte fotografii zachycující náladu značky a extrahujte barvy jako základ barevné palety značky." },
+        {
+          "icon": "RiBrushLine",
+          "title": "Budování vizuální identity",
+          "description": "Nahrajte fotografii zachycující náladu značky a extrahujte barvy jako základ barevné palety značky."
+        },
         {
           "icon": "RiLayoutMasonryLine",
           "title": "Grafika pro sociální sítě",
@@ -202,7 +261,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Často kladené otázky o extraktoru barev z obrázku",
@@ -230,8 +292,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Objevte další nástroje" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Objevte další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

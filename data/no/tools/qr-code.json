@@ -89,15 +89,18 @@
       "items": [
         {
           "title": "1. Velg datatype",
-          "description": "Velg hva du vil kode: URL, tekst, vCard-visittkort, e-post eller telefonnummer."
+          "description": "Velg hva du vil kode: URL, tekst, vCard-visittkort, e-post eller telefonnummer.",
+          "icon": "RiListCheck2"
         },
         {
           "title": "2. Skriv inn data",
-          "description": "Fyll ut de relevante feltene – nettadresse, kontaktinformasjon eller meldingsinnhold."
+          "description": "Fyll ut de relevante feltene – nettadresse, kontaktinformasjon eller meldingsinnhold.",
+          "icon": "RiEditLine"
         },
         {
           "title": "3. Last ned koden",
-          "description": "Tilpass utseendet (farger, størrelse, marginer) og last ned som PNG eller SVG."
+          "description": "Tilpass utseendet (farger, størrelse, marginer) og last ned som PNG eller SVG.",
+          "icon": "RiDownloadLine"
         }
       ]
     },

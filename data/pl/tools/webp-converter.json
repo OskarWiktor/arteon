@@ -85,15 +85,18 @@
       "items": [
         {
           "title": "1. Dodaj pliki",
-          "description": "Przeciągnij zdjęcia JPG lub PNG na wyznaczone pole albo wybierz pliki z dysku. Można dodać dowolną liczbę plików naraz."
+          "description": "Przeciągnij zdjęcia JPG lub PNG na wyznaczone pole albo wybierz pliki z dysku. Można dodać dowolną liczbę plików naraz.",
+          "icon": "RiUploadLine"
         },
         {
           "title": "2. Ustaw jakość",
-          "description": "Wybierz poziom jakości (domyślnie 80%). Niższa wartość oznacza mniejszy plik. Dla większości zastosowań 80% to optymalne ustawienie."
+          "description": "Wybierz poziom jakości (domyślnie 80%). Niższa wartość oznacza mniejszy plik. Dla większości zastosowań 80% to optymalne ustawienie.",
+          "icon": "RiEqualizerLine"
         },
         {
           "title": "3. Pobierz WebP",
-          "description": "Po konwersji pobierz pliki pojedynczo lub jako archiwum ZIP. Przy każdym pliku widoczna jest informacja o zaoszczędzonym miejscu."
+          "description": "Po konwersji pobierz pliki pojedynczo lub jako archiwum ZIP. Przy każdym pliku widoczna jest informacja o zaoszczędzonym miejscu.",
+          "icon": "RiDownloadLine"
         }
       ]
     },

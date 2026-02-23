@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "de",
   "metadata": {
-    "title": "Kostenloser Wort- und Zeichenzähler – Textlänge prüfen",
-    "description": "Zählen Sie Wörter, Zeichen, Absätze und Lesezeit sofort. Prüfen Sie die optimale Textlänge für SEO – Blogartikel, Produktseite, Landingpage.",
+    "title": "Kostenloser Wort- & Zeichenzähler online – Zählen, Umwandeln & Analysieren",
+    "description": "Kostenloser Wort-, Zeichen-, Satz- und Absatzzähler. Groß-/Kleinschreibung ändern, Duplikate entfernen, Zeilen sortieren. 8 Metriken und 10 Textwerkzeuge.",
     "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
     "path": "/de/werkzeuge/wort-und-zeichenzaehler"
   },
   "hero": {
-    "title": "Wort- und Zeichenzähler mit Längenbewertung",
-    "description": "Text einfügen, Seitentyp wählen - und das Tool zeigt Ihnen Wortanzahl, Zeichenanzahl und Absätze. Außerdem bewertet es, ob die Länge für den gewählten Inhaltstyp passt.",
+    "title": "Wort- und Zeichenzähler mit Textformatierungswerkzeugen",
+    "description": "Text einfügen – das Tool zählt Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter und Lesezeit. Groß-/Kleinschreibung ändern, Duplikate entfernen oder Zeilen sortieren",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -24,50 +24,55 @@
   },
   "schemas": {
     "software": {
-      "name": "Kostenloser Wort- und Zeichenzähler mit SEO-Bewertung",
+      "name": "Kostenloser Wort- und Zeichenzähler online mit Textwerkzeugen",
       "alternateName": [
-        "Wortzähler mit Textlängen-Bewertung",
-        "Zeichenzähler-Tool",
-        "Wortzähler für Texter",
-        "Lesezeit-Rechner",
-        "Wortzähler für Websites",
-        "Prüfen, wie viele Wörter ein Text hat",
-        "Wortzähler für SEO",
-        "Optimale Textlänge für Blogartikel prüfen"
+        "Online word counter",
+        "Character counter with and without spaces",
+        "Word counting tool for copywriters",
+        "Reading time calculator",
+        "Online letter case converter",
+        "Uppercase to lowercase converter",
+        "Remove duplicate lines from text",
+        "Sort text lines alphabetically"
       ],
-      "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "TextApplication",
-      "description": "Kostenloser Wort- und Zeichenzähler. Prüft Wortanzahl, Zeichen, Absätze und geschätzte Lesezeit. Bewertet die Textlänge für verschiedene Seitentypen: Produktbeschreibung, Dienstleistungsseite, Startseite, Landingpage, Blogartikel, Ratgeber.",
+      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
       "featureList": [
-        "Wortanzahl",
-        "Zeichenanzahl mit und ohne Leerzeichen",
-        "Absatzanzahl",
-        "Geschätzte Lesezeit",
-        "Textlängen-Bewertung für verschiedene Seitentypen",
-        "Empfohlene Bereiche für: Produktbeschreibung, Dienstleistungsseite, Startseite, Landingpage, Blogartikel, Ratgeber",
-        "Bericht in die Zwischenablage kopieren"
+        "Word count",
+        "Character count with and without spaces",
+        "Sentence and paragraph count",
+        "Unique word count",
+        "Average word length",
+        "Estimated reading time",
+        "Convert to uppercase or lowercase",
+        "Convert to sentence case or title case",
+        "Toggle letter case",
+        "Remove extra spaces",
+        "Remove empty lines and duplicates",
+        "Sort lines A-Z and Z-A",
+        "Copy text to clipboard"
       ]
     },
     "howTo": {
       "name": "So verwenden Sie den Wort- und Zeichenzähler",
-      "description": "Prüfen Sie die Länge Ihres Textes und bewerten Sie, ob sie für einen bestimmten Seitentyp angemessen ist. Erfahren Sie, wie viele Wörter eine Produktbeschreibung, Dienstleistungsseite, ein Blogartikel oder Ratgeber haben sollte.",
-      "totalTime": "PT2M",
+      "description": "Text in drei Schritten analysieren und formatieren:",
+      "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Seitentyp wählen",
-          "text": "Wählen Sie im Dropdown-Menü, für welchen Seitentyp Sie schreiben. Jeder Typ hat unterschiedliche empfohlene Wortanzahlen."
-        },
-        {
           "name": "Text einfügen",
-          "text": "Fügen Sie Text in das Textfeld ein oder tippen Sie ihn ein. Das Tool zählt automatisch Wörter, Zeichen (mit und ohne Leerzeichen), Absätze und schätzt die Lesezeit."
+          "text": "Text einfügen oder eingeben. Das Tool zählt sofort Wörter, Zeichen, Sätze, Absätze und einzigartige Wörter."
         },
         {
-          "name": "Bewertung prüfen",
-          "text": "Schauen Sie auf den farbigen Fortschrittsbalken und Status. Grün bedeutet gute Länge, Gelb bedeutet zu kurz, Rot bedeutet zu lang."
+          "name": "Statistiken prüfen",
+          "text": "Im linken Panel sehen Sie 8 Metriken: Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter, Wortlänge und Lesezeit."
         },
         {
-          "name": "Bericht kopieren",
-          "text": "Die Schaltfläche kopiert eine Zusammenfassung mit Wortanzahl, Zeichenanzahl, Absätzen, Lesezeit und Längenbewertung in die Zwischenablage."
+          "name": "Text umwandeln",
+          "text": "Unter dem Textfeld finden Sie 10 Werkzeuge: Groß-/Kleinschreibung, Leerzeichen, Leerzeilen, Duplikate und Sortierung."
+        },
+        {
+          "name": "Ergebnis kopieren",
+          "text": "Klicken Sie auf Text kopieren. Verwenden Sie Löschen, um von vorne zu beginnen."
         }
       ]
     }
@@ -79,8 +84,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kostenloser Wortzähler — Textlänge zählen und bewerten",
-      "html": "<p class=\"text-mid\">Mit diesem Wortzähler prüfen Sie schnell die Länge eines beliebigen Textes. Fügen Sie Ihren Inhalt ein, und der Zähler ermittelt sofort Wörter, Zeichen und Absätze. Zusätzlich sehen Sie die geschätzte Lesezeit und ob die Länge zum gewählten Seitentyp passt.</p><p class=\"text-mid mt-3\">Jeder Seitentyp hat einen anderen Zweck - eine Produktbeschreibung beantwortet Käuferfragen, ein Blogartikel behandelt ein Thema ausführlich, und eine Dienstleistungsseite erklärt, was der Kunde erhält. Der Zähler zeigt Bereiche für jeden dieser Typen, basierend auf Analysen von Inhalten, die gut ranken.</p>"
+      "title": "Kostenloser Wort- und Zeichenzähler mit Textwerkzeugen",
+      "html": "<p class=\"text-mid\">Dieses Tool kombiniert einen Wort- und Zeichenzähler mit Textformatierungsfunktionen. Fügen Sie Text ein und sehen Sie Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter und Lesezeit.</p><p class=\"text-mid mt-3\">Unter dem Textfeld finden Sie 10 Werkzeuge: Groß-/Kleinschreibung, Entfernen von Leerzeichen, Leerzeilen, Duplikaten und Sortierung. Alles läuft lokal im Browser.</p>"
     },
     {
       "type": "gap",
@@ -89,28 +94,28 @@
     {
       "type": "sectionSteps",
       "title": "So verwenden Sie den Wort- und Zeichenzähler",
-      "description": "Die Überprüfung der Textlänge dauert weniger als eine Minute:",
+      "description": "Text in drei Schritten analysieren und formatieren:",
       "grid": "four",
       "items": [
         {
-          "icon": "RiListCheck2",
-          "title": "1. Seitentyp wählen",
-          "description": "Wählen Sie im Dropdown-Menü, für welchen Seitentyp Sie schreiben. Jeder Typ hat unterschiedliche empfohlene Wortanzahlen."
-        },
-        {
           "icon": "RiFileTextLine",
-          "title": "2. Text einfügen",
-          "description": "Fügen Sie Text in das große Feld ein oder tippen Sie ihn ein. Das Tool zählt sofort Wörter, Zeichen (mit und ohne Leerzeichen), Absätze und schätzt die Lesezeit."
+          "title": "1. Text einfügen",
+          "description": "Text einfügen oder eingeben. Das Tool zählt sofort Wörter, Zeichen, Sätze, Absätze und einzigartige Wörter."
         },
         {
           "icon": "RiBarChartLine",
-          "title": "3. Bewertung prüfen",
-          "description": "Schauen Sie auf den farbigen Fortschrittsbalken und den Status. Grün bedeutet gute Länge, Gelb - zu kurz, Rot - zu lang."
+          "title": "2. Statistiken prüfen",
+          "description": "Im linken Panel sehen Sie 8 Metriken: Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter, Wortlänge und Lesezeit."
+        },
+        {
+          "icon": "RiTextWrap",
+          "title": "3. Text umwandeln",
+          "description": "Unter dem Textfeld finden Sie 10 Werkzeuge: Groß-/Kleinschreibung, Leerzeichen, Leerzeilen, Duplikate und Sortierung."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Bericht kopieren",
-          "description": "Die Schaltfläche kopiert eine Zusammenfassung mit Wortanzahl, Zeichenanzahl, Absätzen, Lesezeit und Längenbewertung in die Zwischenablage."
+          "title": "4. Ergebnis kopieren",
+          "description": "Klicken Sie auf Text kopieren. Verwenden Sie Löschen, um von vorne zu beginnen."
         }
       ]
     },
@@ -120,34 +125,49 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Was der Zähler misst - Wörter, Zeichen, Lesezeit",
-      "description": "Der Zähler erfasst fünf wichtige Kennzahlen:",
+      "title": "8 Textmetriken",
+      "description": "Der Zähler analysiert Ihren Text anhand von acht Indikatoren:",
       "grid": "two",
       "items": [
         {
           "icon": "RiText",
-          "title": "Wörter",
-          "description": "Gesamtanzahl der Wörter - die wichtigste Kennzahl für die Textlänge."
+          "title": "Words",
+          "description": "Total word count. The primary indicator of text length, useful for content creation, articles and descriptions."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Zeichen (mit Leerzeichen)",
-          "description": "Alle Zeichen einschließlich Leerzeichen. Nützlich bei CMS-Zeichenlimits."
+          "title": "Characters (with spaces)",
+          "description": "All characters including spaces. Useful when a platform has a character limit (e.g., Amazon listings, meta descriptions)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Zeichen (ohne Leerzeichen)",
-          "description": "Nur Buchstaben, Ziffern und Satzzeichen. Wird oft für Druckereien oder Übersetzungsabrechnungen benötigt."
+          "title": "Characters (without spaces)",
+          "description": "Only letters, digits and punctuation. The standard billing unit for translations and print shops."
+        },
+        {
+          "icon": "RiChatQuoteLine",
+          "title": "Sentences",
+          "description": "Number of sentences in the text. Helps assess complexity and readability — shorter sentences are easier to absorb."
         },
         {
           "icon": "RiParagraph",
-          "title": "Absätze",
-          "description": "Anzahl der durch Leerzeilen getrennten Textblöcke. Hilft bei der Bewertung der Textstruktur."
+          "title": "Paragraphs",
+          "description": "Text blocks separated by blank lines. Well-structured paragraphs improve readability on screens."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Unique words",
+          "description": "Number of non-repeating words. A higher ratio of unique to total words indicates richer vocabulary."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Average word length",
+          "description": "Average number of characters per word. An indicator of text complexity — technical texts have longer words than casual ones."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Lesezeit",
-          "description": "Der Lesezeit-Rechner zeigt, wie viele Minuten das Lesen bei einer Durchschnittsgeschwindigkeit von 200 Wörtern pro Minute dauert."
+          "title": "Reading time",
+          "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
         }
       ]
     },
@@ -156,20 +176,62 @@
       "variant": "line"
     },
     {
-      "type": "sectionDemo",
-      "title": "So interpretieren Sie die Ergebnisse",
-      "subtitle": "Bewertungsstatus",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800\">Gute Länge</span><span class=\"text-mid text-sm!\">Text liegt im Bereich</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800\">Unter dem Bereich</span><span class=\"text-mid text-sm!\">Text ist kürzer als üblich</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-800\">Über dem Bereich</span><span class=\"text-mid text-sm!\">Text ist länger als üblich</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Fortschritt</span><span class=\"text-mid\">1200 / 1200-3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
-      "html": "<p class=\"text-mid mb-4\">Der farbige Fortschrittsbalken und Status helfen Ihnen, die Textlänge schnell einzuschätzen:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Gute Länge</strong> (grün) - der Text liegt im ungefähren Bereich für den gewählten Seitentyp.</li><li><strong class=\"text-warning-text\">Unter dem Bereich</strong> (gelb) - der Text ist kürzer als üblich für diesen Seitentyp. Wenn er alle Fragen des Lesers beantwortet, kann die Länge trotzdem ausreichend sein.</li><li><strong class=\"text-error-text\">Über dem Bereich</strong> (rot) - der Text ist länger als üblich. Wenn jeder Absatz neue Informationen liefert, ist die Länge gerechtfertigt.</li></ul><p class=\"text-mid mt-4\">Die Bereiche basieren auf Analysen von Inhalten, die in Suchmaschinen gut ranken. Wenn der Text die Fragen des Lesers beantwortet, ist die Länge unabhängig vom Zählerergebnis angemessen.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Wie viele Wörter sollte ein Text haben - optimale Länge für SEO",
-      "html": "<p class=\"text-mid mb-4\">Die folgenden Bereiche basieren auf Analysen von Inhalten, die in Suchmaschinen gut ranken. Die Textlänge an sich beeinflusst das Google-Ranking nicht - entscheidend ist, ob der Inhalt die Fragen des Lesers beantwortet.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Seitentyp</th><th class=\"py-2 pr-4 font-semibold\">Bereich</th><th class=\"py-2 font-semibold\">Wann kürzer, wann länger?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Produktbeschreibung</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 Wörter</td><td class=\"text-primary-light0 py-2 text-sm\">Einfaches Produkt (z.&nbsp;B. eine Tasse) - 80–150 Wörter. Komplexes Gerät (z.&nbsp;B. ein Laptop) - 300–400 Wörter, weil Käufer mehr Fragen haben.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Dienstleistungsseite</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 Wörter</td><td class=\"text-primary-light0 py-2 text-sm\">Lokale Dienstleistung (z.&nbsp;B. Klempner) - 500–700 Wörter. B2B-Dienstleistung mit Prozess und FAQ - 1.200–1.500 Wörter.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Startseite</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 Wörter</td><td class=\"text-primary-light0 py-2 text-sm\">Die Startseite vermittelt den Hauptnutzen und leitet Besucher weiter - der Text unterstützt die Navigation, er ersetzt keine Unterseiten.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landingpage</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 Wörter</td><td class=\"text-primary-light0 py-2 text-sm\">Einfaches Angebot - 600–1.000 Wörter. Angebot mit Prozessbeschreibung, Varianten und häufigen Fragen - 1.500–2.500 Wörter.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blogartikel</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 Wörter</td><td class=\"text-primary-light0 py-2 text-sm\">Antwort auf eine einfache Frage - 1.200–1.800 Wörter. Komplexes Thema mit vielen Aspekten - 2.000–3.000 Wörter.</td></tr><tr><td class=\"py-2 pr-4\">Ratgeber</td><td class=\"py-2 pr-4 whitespace-nowrap\">2500–6000 Wörter</td><td class=\"text-primary-light0 py-2 text-sm\">Enges Thema - 2.500–3.500 Wörter. Breites Thema mit vielen Schritten und Beispielen - 4.000–6.000 Wörter.</td></tr></tbody></table></div>"
+      "type": "sectionSteps",
+      "title": "10 Textformatierungswerkzeuge",
+      "description": "Unter dem Textfeld finden Sie eine Werkzeugleiste:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiArrowUpLine",
+          "title": "UPPERCASE",
+          "description": "Converts all text to uppercase. Useful for headings, acronyms and highlighting text fragments."
+        },
+        {
+          "icon": "RiArrowDownLine",
+          "title": "lowercase",
+          "description": "Converts all text to lowercase. Useful for normalizing text copied from different sources."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Sentence case",
+          "description": "First letter of each sentence is capitalized, the rest lowercase. Standard format for continuous text."
+        },
+        {
+          "icon": "RiHeading",
+          "title": "Title Case",
+          "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "tOGGLE cASE",
+          "description": "Swaps uppercase to lowercase and vice versa. Useful when text was typed with Caps Lock on."
+        },
+        {
+          "icon": "RiSpace",
+          "title": "Remove extra spaces",
+          "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
+        },
+        {
+          "icon": "RiDeleteRow",
+          "title": "Remove empty lines",
+          "description": "Removes empty and redundant lines from text. Useful for cleaning text copied from websites."
+        },
+        {
+          "icon": "RiFilterLine",
+          "title": "Remove duplicate lines",
+          "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
+        },
+        {
+          "icon": "RiSortAsc",
+          "title": "Sort A→Z",
+          "description": "Sorts text lines alphabetically in ascending order. Useful for organizing lists, keywords and data."
+        },
+        {
+          "icon": "RiSortDesc",
+          "title": "Sort Z→A",
+          "description": "Sorts text lines alphabetically in descending order. Reverse sort order."
+        }
+      ]
     },
     {
       "type": "gap",
@@ -178,38 +240,38 @@
     {
       "type": "sectionSteps",
       "title": "Für wen ist der Wortzähler?",
-      "description": "Ein Wortzähler für Texter und darüber hinaus - hier sind die häufigsten Nutzer:",
+      "description": "Das Tool ist nützlich für alle, die mit Text arbeiten:",
       "grid": "three",
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Texter und Content-Ersteller",
-          "description": "Prüfen Sie, ob der Text im empfohlenen Bereich für einen bestimmten Seitentyp liegt. Der SEO-Wortzähler hilft zu bewerten, ob ein Artikel ausreichend ausgearbeitet ist."
+          "title": "Copywriters and editors",
+          "description": "Count words and characters, check platform limits, quickly change letter case and clean text before publishing."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Blogger",
-          "description": "Beitragslänge im Blick behalten, um Veröffentlichungen konsistent zu halten. Lesezeit vor dem Publizieren prüfen."
+          "title": "Bloggers and content creators",
+          "description": "Monitor post length, check reading time, remove duplicate lines and sort lists."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "E-Commerce-Betreiber",
-          "description": "Produktbeschreibungen auf die Zeichenlimits von Verkaufsplattformen wie Amazon, eBay oder Etsy prüfen."
+          "title": "Store owners",
+          "description": "Verify product descriptions against character limits on platforms (Amazon, eBay, Etsy)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO-Spezialisten",
-          "description": "Seiteninhalte mit der Konkurrenz vergleichen und prüfen, ob die Länge im optimalen Bereich liegt."
+          "title": "SEO specialists",
+          "description": "Analyze content length, count unique words and assess text complexity based on average word length."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Studenten und Akademiker",
-          "description": "Prüfen, ob eine Arbeit das geforderte Wort- oder Zeichenlimit erfüllt."
+          "title": "Students and academics",
+          "description": "Check word or character limits in essays and research papers."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Übersetzer",
-          "description": "Zeichen ohne Leerzeichen zählen - die gängige Abrechnungsgrundlage bei Übersetzungen."
+          "title": "Translators",
+          "description": "Count characters without spaces for quotes (the standard billing unit in translation)."
         }
       ]
     },
@@ -228,38 +290,38 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Was macht diesen Wort- und Zeichenzähler besonders?",
+      "title": "Was macht diesen Wortzähler besonders?",
       "grid": "two",
       "items": [
         {
-          "icon": "RiInfinityLine",
-          "title": "Sechs Seitentypen mit empfohlenen Bereichen",
-          "description": "Produktbeschreibung, Dienstleistungsseite, Startseite, Landingpage, Blogartikel und Ratgeber - jeder Typ hat eigene Bereiche."
+          "icon": "RiBarChartLine",
+          "title": "8 text metrics",
+          "description": "Words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time — all in one panel."
+        },
+        {
+          "icon": "RiTextWrap",
+          "title": "10 formatting tools",
+          "description": "Letter case conversion, removing spaces, empty lines, duplicates and sorting — without installing additional software."
         },
         {
           "icon": "RiUserLine",
-          "title": "Lokale Verarbeitung im Browser",
-          "description": "Ihr Text wird nie an einen Server gesendet - alle Analysen finden lokal auf Ihrem Gerät statt."
-        },
-        {
-          "icon": "RiCheckboxCircleLine",
-          "title": "Textlängen-Bewertung",
-          "description": "Nicht nur Wörter zählen - sondern auch erfahren, ob die Länge für den gewählten Seitentyp passt."
-        },
-        {
-          "icon": "RiBarChartLine",
-          "title": "SEO-basierte Bereiche",
-          "description": "Empfohlene Längen basieren auf Analysen von Inhalten, die in Suchmaschinen gut ranken."
-        },
-        {
-          "icon": "RiTimerLine",
-          "title": "Lesezeit",
-          "description": "Zeigt sofort, wie lange das Lesen des Textes ungefähr dauert."
+          "title": "Local processing in the browser",
+          "description": "Your text is never sent to any server. All analysis and transformation happens locally on your device."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Bericht kopieren",
-          "description": "Die Schaltfläche kopiert eine Zusammenfassung mit allen Statistiken und der Längenbewertung in die Zwischenablage."
+          "title": "Copy and clear text",
+          "description": "Copy the modified text to your clipboard with one click or clear the field to start over."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Instant results",
+          "description": "Statistics update in real time as you type or paste text. No waiting for processing."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "No registration or limits",
+          "description": "The tool is completely free. No registration, login or personal data required."
         }
       ]
     },
@@ -273,34 +335,24 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Beeinflusst die Textlänge das Google-Ranking?",
-          "answer": "Die Textlänge allein ist kein Ranking-Faktor. Google bewertet, ob der Inhalt die Frage des Nutzers beantwortet und für ihn wertvoll ist. Kürzerer Text, der eine Frage umfassend beantwortet, kann gut ranken - entscheidend ist der Wert für den Leser. Die Bereiche in diesem Tool basieren auf Analysen von Inhalten, die in den Suchergebnissen gut abschneiden.",
-          "answerSchemaText": "Die Textlänge ist kein direkter Ranking-Faktor. Google bewertet den Wert des Inhalts für den Nutzer."
-        },
-        {
-          "question": "Warum sind die Wortbereiche so breit?",
-          "answer": "Derselbe Seitentyp kann je nach Themenkomplexität unterschiedliche Längen erfordern. Eine einfache Produktbeschreibung (z. B. eine Tasse) umfasst 80–150 Wörter - nur Material, Fassungsvermögen und Einsatzzweck. Eine Laptop-Beschreibung benötigt 300–400 Wörter, weil Käufer nach Prozessor, Speicher, Bildschirm und Akku fragen. Ähnlich bei Dienstleistungen: Eine lokale Klempner-Seite umfasst 500–700 Wörter, während eine umfassende B2B-Seite mit Prozessschritten und FAQ 1.200–1.500 Wörter erreicht.",
-          "answerSchemaText": "Der Unterschied ergibt sich aus der Themenkomplexität - ein einfaches Produkt braucht weniger Wörter als ein komplexes."
-        },
-        {
-          "question": "Wie interpretiere ich &quot;zu kurz&quot; oder &quot;zu lang&quot;?",
-          "answer": "Die Bewertung zeigt, wo Ihr Text im Vergleich zu typischen Inhalten dieses Typs liegt. Wenn der Text als &quot;zu kurz&quot; markiert ist, aber alle Fragen des Lesers beantwortet - ist die Länge in Ordnung. Wenn er als &quot;zu lang&quot; markiert ist, aber jeder Absatz neue Informationen liefert - ist die Länge gerechtfertigt.",
-          "answerSchemaText": "Die Bewertung zeigt, wo der Text im Vergleich zu typischen Inhalten liegt. Wenn der Text die Fragen des Lesers beantwortet, ist die Länge angemessen."
-        },
-        {
           "question": "Wie funktioniert der Lesezeit-Rechner?",
-          "answer": "Das Tool teilt die Wortanzahl durch 200 - die durchschnittliche Lesegeschwindigkeit für typischen Text. Technischer oder anspruchsvoller Text (z. B. Dokumentation, AGB) wird langsamer gelesen. Ein leichter Lifestyle-Artikel - schneller. Das Ergebnis ist ein Näherungswert, der einschätzen hilft, wie lange ein Leser mit dem Text verbringt.",
-          "answerSchemaText": "Das Tool rechnet mit einer Lesegeschwindigkeit von 200 Wörtern pro Minute. Es handelt sich um einen Näherungswert für typischen Text."
+          "answer": "Das Tool teilt die Wortanzahl durch 200 – die durchschnittliche Lesegeschwindigkeit. Technische Texte werden langsamer gelesen, leichte Artikel schneller. Das Ergebnis ist ein Richtwert.",
+          "answerSchemaText": "Das Tool geht von 200 Wörtern pro Minute aus."
         },
         {
-          "question": "Woher stammen die empfohlenen Bereiche?",
-          "answer": "Die Bereiche basieren auf Analysen von Inhalten, die in Suchmaschinen gut ranken, sowie auf Best Practices der Content-Erstellung. Sie sind bewusst breit, weil derselbe Seitentyp je nach Branche, Themenkomplexität und Leserbedürfnissen unterschiedliche Längen erfordern kann. Die Bereiche dienen als Ausgangspunkt für die Bewertung, ob der Text im typischen Rahmen für einen bestimmten Seitentyp liegt.",
-          "answerSchemaText": "Die Bereiche basieren auf SEO-Analysen und Best Practices der Content-Erstellung."
+          "question": "Was ist der Unterschied zwischen Zeichen mit und ohne Leerzeichen?",
+          "answer": "Zeichen mit Leerzeichen umfasst alle Zeichen einschließlich Leerzeichen. Zeichen ohne Leerzeichen enthält nur Buchstaben, Ziffern und Satzzeichen. Übersetzungsbüros rechnen nach Zeichen ohne Leerzeichen ab.",
+          "answerSchemaText": "Zeichen mit Leerzeichen umfasst alle Zeichen, ohne Leerzeichen nur Buchstaben und Ziffern."
         },
         {
-          "question": "Kann ich den Bericht mit Statistiken kopieren?",
-          "answer": "Ja. Unterhalb der Statistiken finden Sie eine Schaltfläche Bericht kopieren - sie kopiert eine Zusammenfassung mit Wortanzahl, Zeichenanzahl, Absätzen, Lesezeit und Längenbewertung in die Zwischenablage. Sie können die Zusammenfassung in ein Dokument einfügen oder an Kollegen senden.",
-          "answerSchemaText": "Ja. Klicken Sie auf Bericht kopieren unterhalb der Statistiken. Eine Zusammenfassung mit allen Kennzahlen und der Bewertung wird in die Zwischenablage kopiert."
+          "question": "Wie funktioniert die Groß-/Kleinschreibung?",
+          "answer": "Das Tool bietet 5 Modi: GROSSBUCHSTABEN, kleinbuchstaben, Satzanfang groß, Jedes Wort Groß und Umkehren. Klicken Sie den entsprechenden Button in der Werkzeugleiste.",
+          "answerSchemaText": "Das Tool hat 5 Modi für die Groß-/Kleinschreibung."
+        },
+        {
+          "question": "Ist mein Text sicher?",
+          "answer": "Ja. Alle Analyse und Verarbeitung erfolgt lokal in Ihrem Browser. Der Text wird nie an einen Server gesendet.",
+          "answerSchemaText": "Ja. Der Text wird lokal im Browser verarbeitet."
         }
       ]
     },
@@ -310,7 +362,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Weitere Tools entdecken"
+      "title": "Weitere Werkzeuge entdecken"
     },
     {
       "type": "gap",

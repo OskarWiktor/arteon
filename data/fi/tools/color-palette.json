@@ -92,15 +92,18 @@
       "items": [
         {
           "title": "1. Syötä perusväri",
-          "description": "Syötä HEX-koodi (esim. #496ba2) tekstikenttään tai valitse väri värinvalitsimesta. Voit myös käyttää Satunnainen väri -painiketta."
+          "description": "Syötä HEX-koodi (esim. #496ba2) tekstikenttään tai valitse väri värinvalitsimesta. Voit myös käyttää Satunnainen väri -painiketta.",
+          "icon": "RiDropLine"
         },
         {
           "title": "2. Vahvista valintasi",
-          "description": "Update Color -painiketta napsauttamalla työkalu luo automaattisesti 9 palettia eri väriharmoniaskeemoilla."
+          "description": "Update Color -painiketta napsauttamalla työkalu luo automaattisesti 9 palettia eri väriharmoniaskeemoilla.",
+          "icon": "RiCheckboxCircleLine"
         },
         {
           "title": "3. Kopioi tarvitsemasi värit",
-          "description": "Jokaisen värin vieressä on Kopioi-painike – HEX-koodi kopioituu leikepöydälle ja voidaan liittää suoraan projektiin."
+          "description": "Jokaisen värin vieressä on Kopioi-painike – HEX-koodi kopioituu leikepöydälle ja voidaan liittää suoraan projektiin.",
+          "icon": "RiFileCopyLine"
         }
       ]
     },

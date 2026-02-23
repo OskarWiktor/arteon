@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "hu",
   "metadata": {
-    "title": "Ingyenes szó- és karakterszámláló – Szöveghossz SEO-hoz",
-    "description": "Számolja a szavakat, karaktereket és mondatokat bármely szövegben. Elemezze az olvasási időt és a kulcsszósűrűséget SEO-hoz. Ingyenes, korlátlanul használható.",
+    "title": "Ingyenes szó- és karakterszámláló – Számoljon, alakítson és elemezzen",
+    "description": "Ingyenes szó-, karakter-, mondat- és bekezdésszámláló. Kis-/nagybetű módosítás, duplikátumok eltávolítása, sorok rendezése. 8 metrika és 10 szövegeszköz.",
     "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
     "path": "/hu/eszkozok/szo-es-karakterszamlalo"
   },
   "hero": {
-    "title": "Szó- és karakterszámláló hosszértékeléssel",
-    "description": "Illessze be a szöveget, válasszon oldatípust, és az eszköz megmutatja a szavak, karakterek, bekezdések számát, és értékeli, hogy a hossz megfelelő-e a kiválasztott tartalmatípushoz",
+    "title": "Szó- és karakterszámláló szövegformázó eszközökkel",
+    "description": "Illessze be szövegét, és az eszköz megszámolja a szavakat, karaktereket, mondatokat, bekezdéseket, egyedi szavakat és az olvasási időt",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -24,48 +24,55 @@
   },
   "schemas": {
     "software": {
-      "name": "Ingyenes szó- és karakterszámláló SEO értékeléssel",
+      "name": "Ingyenes szó- és karakterszámláló szövegeszközökkel",
       "alternateName": [
-        "Szószámláló szöveghossz-értékeléssel",
-        "Ingyenes karakterszámláló",
-        "Szószámláló eszköz szövegíróknak",
-        "Olvasási idő számoló",
-        "Szószámláló webtartalomhoz",
-        "Ellenőrizze hány szóból áll egy szöveg",
-        "Szószámláló SEO-hoz",
-        "Optimális szöveghossz blogcikkhez"
+        "Online word counter",
+        "Character counter with and without spaces",
+        "Word counting tool for copywriters",
+        "Reading time calculator",
+        "Online letter case converter",
+        "Uppercase to lowercase converter",
+        "Remove duplicate lines from text",
+        "Sort text lines alphabetically"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Ingyenes szó- és karakterszámláló. Ellenőrzi a szavak, karakterek, bekezdések számát és a becsült olvasási időt. Értékeli a szöveghosszt különböző oldatípusokhoz: termékleírás, szolgáltatás oldal, főoldal, landing page, blogcikk, útmutató.",
+      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
       "featureList": [
-        "Szószámlálás",
-        "Karakterszámlálás szóközökkel és anélkül",
-        "Bekezdésszámlálás",
-        "Becsült olvasási idő",
-        "Szöveghossz-értékelés különböző oldatípusokhoz",
-        "Ajánlott tartományok: termékleírás, szolgáltatás oldal, főoldal, landing page, blogcikk, útmutató",
-        "Jelentés másolása vágólapra"
+        "Word count",
+        "Character count with and without spaces",
+        "Sentence and paragraph count",
+        "Unique word count",
+        "Average word length",
+        "Estimated reading time",
+        "Convert to uppercase or lowercase",
+        "Convert to sentence case or title case",
+        "Toggle letter case",
+        "Remove extra spaces",
+        "Remove empty lines and duplicates",
+        "Sort lines A-Z and Z-A",
+        "Copy text to clipboard"
       ]
     },
     "howTo": {
-      "name": "Hogyan használja a szó- és karakterszámlálót",
-      "description": "Ellenőrizze a szöveg hosszát és értékelje, hogy megfelelő-e egy adott oldatípushoz. Tudja meg, hány szóból álljon egy termékleírás, szolgáltatás oldal, blogcikk vagy útmutató.",
+      "name": "Hogyan használja a szószámlálót",
+      "description": "Elemezze és formázza a szöveget három lépésben:",
+      "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Válasszon oldatípust",
-          "text": "Válassza ki a legördülő menüből, milyen típusú oldalhoz ír. Minden típusnak különböző ajánlott szószám-tartománya van."
-        },
-        {
           "name": "Illessze be a szöveget",
-          "text": "Illessze be vagy gépelje a szöveget a szövegmezőbe. Az eszköz automatikusan megszámolja a szavakat, karaktereket (szóközökkel és anélkül), bekezdéseket és megbecsüli az olvasási időt."
+          "text": "Illessze be vagy írja be a szöveget. Az eszköz azonnal megszámolja a szavakat, karaktereket, mondatokat és bekezdéseket."
         },
         {
-          "name": "Ellenőrizze az értékelést",
-          "text": "Nézze meg a színes folyamatsávot és az állapotot. A zöld jó hosszt, a sárga túl rövidet, a piros túl hosszút jelent."
+          "name": "Ellenőrizze a statisztikákat",
+          "text": "A bal oldali panelen 8 metrikát lát: szavak, karakterek, mondatok, bekezdések, egyedi szavak, átlagos szóhossz és olvasási idő."
         },
         {
-          "name": "Másolja a jelentést",
-          "text": "A Jelentés másolása gomb egy összefoglalót másol a vágólapra az összes statisztikával és a hosszértékeléssel."
+          "name": "Alakítsa át a szöveget",
+          "text": "A szövegmező alatt 10 átalakító eszközt talál."
+        },
+        {
+          "name": "Másolja az eredményt",
+          "text": "Kattintson a Szöveg másolása gombra. Használja a Törlés gombot az újrakezdéshez."
         }
       ]
     }
@@ -77,8 +84,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ingyenes szószámláló — számolja és értékelje a szöveghosszt",
-      "html": "<p class=\"text-mid\">Ez a szószámláló eszköz lehetővé teszi bármely szöveg hosszának gyors ellenőrzését. Illessze be a tartalmat, és a számláló megszámolja a szavakat, karaktereket és bekezdéseket. Látni fogja azt is, hány percet vesz igénybe az olvasás, és hogy a hossz megfelel-e a kiválasztott oldatípusnak.</p><p class=\"text-mid mt-3\">Minden oldatípusnak más célja van - egy termékleírás a vásárlók kérdéseire válaszol, egy blogcikk mélyen feldolgoz egy témát, egy szolgáltatás oldal pedig elmagyarázza, mit kap az ügyfél. A számláló tartományokat mutat minden típushoz, a jól rangsoroló tartalom elemzései alapján.</p>"
+      "title": "Ingyenes szó- és karakterszámláló szövegeszközökkel",
+      "html": "<p class=\"text-mid\">Ez az eszköz szó- és karakterszámlálót kombinál szövegformázási funkciókkal. Illessze be a szöveget, és látni fogja a szavak, karakterek, mondatok, bekezdések, egyedi szavak számát és az olvasási időt.</p><p class=\"text-mid mt-3\">A szövegmező alatt 10 eszközt talál: kis-/nagybetű átalakítás, szóközök, üres sorok, duplikátumok eltávolítása és rendezés. Minden helyben, a böngészőben történik.</p>"
     },
     {
       "type": "gap",
@@ -86,29 +93,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Hogyan használja a szó- és karakterszámlálót",
-      "description": "A szöveghossz ellenőrzése kevesebb mint egy percet vesz igénybe:",
+      "title": "Hogyan használja a szószámlálót",
+      "description": "Elemezze és formázza a szöveget három lépésben:",
       "grid": "four",
       "items": [
         {
-          "icon": "RiListCheck2",
-          "title": "1. Válasszon oldatípust",
-          "description": "Válassza ki a legördülő menüből, milyen típusú oldalhoz ír. Minden típusnak különböző ajánlott minimum és maximum szószáma van."
-        },
-        {
           "icon": "RiFileTextLine",
-          "title": "2. Illessze be a szöveget",
-          "description": "Illessze be vagy gépelje a szöveget a jobb oldali nagy mezőbe. Az eszköz azonnal megszámolja a szavakat, karaktereket (szóközökkel és anélkül), bekezdéseket és megbecsüli az olvasási időt."
+          "title": "1. Illessze be a szöveget",
+          "description": "Illessze be vagy írja be a szöveget. Az eszköz azonnal megszámolja a szavakat, karaktereket, mondatokat és bekezdéseket."
         },
         {
           "icon": "RiBarChartLine",
-          "title": "3. Ellenőrizze az értékelést",
-          "description": "Nézze meg a színes folyamatsávot és az állapotot. A zöld jó hosszt, a sárga túl rövidet, a piros túl hosszút jelent. Alatta talál egy hasznos tippet."
+          "title": "2. Ellenőrizze a statisztikákat",
+          "description": "A bal oldali panelen 8 metrikát lát: szavak, karakterek, mondatok, bekezdések, egyedi szavak, átlagos szóhossz és olvasási idő."
+        },
+        {
+          "icon": "RiTextWrap",
+          "title": "3. Alakítsa át a szöveget",
+          "description": "A szövegmező alatt 10 átalakító eszközt talál."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Másolja a jelentést",
-          "description": "A Jelentés másolása gomb egy összefoglalót másol a vágólapra a szószámmal, karakterszámmal, bekezdésekkel, olvasási idővel és hosszértékeléssel."
+          "title": "4. Másolja az eredményt",
+          "description": "Kattintson a Szöveg másolása gombra. Használja a Törlés gombot az újrakezdéshez."
         }
       ]
     },
@@ -118,34 +125,49 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Mit mér a számláló - szavak, karakterek, olvasási idő",
-      "description": "A számláló öt kulcsfontosságú metrikát követ:",
+      "title": "8 szövegmetrika",
+      "description": "A számláló nyolc mutató alapján elemzi a szöveget:",
       "grid": "two",
       "items": [
         {
           "icon": "RiText",
-          "title": "Szavak",
-          "description": "Az összes szó száma. Ez a szöveghossz elsődleges mutatója."
+          "title": "Words",
+          "description": "Total word count. The primary indicator of text length, useful for content creation, articles and descriptions."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Karakterek (szóközökkel)",
-          "description": "Minden karakter beleértve a szóközöket. Hasznos, ha egy CMS karakterkorlátot szab (pl. piactér-listázások)."
+          "title": "Characters (with spaces)",
+          "description": "All characters including spaces. Useful when a platform has a character limit (e.g., Amazon listings, meta descriptions)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Karakterek (szóközök nélkül)",
-          "description": "Csak betűk, számok és írásjelek. Néha nyomdák kérik vagy fordítási számlázáshoz szükséges."
+          "title": "Characters (without spaces)",
+          "description": "Only letters, digits and punctuation. The standard billing unit for translations and print shops."
+        },
+        {
+          "icon": "RiChatQuoteLine",
+          "title": "Sentences",
+          "description": "Number of sentences in the text. Helps assess complexity and readability — shorter sentences are easier to absorb."
         },
         {
           "icon": "RiParagraph",
-          "title": "Bekezdések",
-          "description": "Hány üres sorokkal elválasztott szövegblokk van. Segít értékelni, hogy a szöveg jól van-e strukturalva."
+          "title": "Paragraphs",
+          "description": "Text blocks separated by blank lines. Well-structured paragraphs improve readability on screens."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Unique words",
+          "description": "Number of non-repeating words. A higher ratio of unique to total words indicates richer vocabulary."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Average word length",
+          "description": "Average number of characters per word. An indicator of text complexity — technical texts have longer words than casual ones."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Olvasási idő",
-          "description": "Az olvasási idő számoló megmutatja, hány percbe telik a szöveg elolvasása átlagosan 200 szó/perc sebességgel."
+          "title": "Reading time",
+          "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
         }
       ]
     },
@@ -154,20 +176,62 @@
       "variant": "line"
     },
     {
-      "type": "sectionDemo",
-      "title": "Hogyan értelmezze az eredményeket",
-      "subtitle": "Értékelési állapotok",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">Jó hossz</span><span class=\"text-mid text-sm!\">A szöveg a tartományon belül van</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Tartomány alatt</span><span class=\"text-mid text-sm!\">A szöveg rövidebb a szokásosnál</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Tartomány felett</span><span class=\"text-mid text-sm!\">A szöveg hosszabb a szokásosnál</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Haladás</span><span class=\"text-mid\">1200 / 1200–3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
-      "html": "<p class=\"text-mid mb-4\">A színes folyamatsáv és az állapot segít gyorsan értékelni a szöveghosszt:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Jó hossz</strong> (zöld) - a szöveg a kiválasztott oldatípus megközelítő tartományán belül van.</li><li><strong class=\"text-warning-text\">Tartomány alatt</strong> (sárga) - a szöveg rövidebb a szokásosnál ennél az oldatípusnál. Ha megválaszolja az olvasó összes kérdését, a hossz rendben lehet.</li><li><strong class=\"text-error-text\">Tartomány felett</strong> (piros) - a szöveg hosszabb a szokásosnál. Ha minden bekezdés új információt ad hozzá, a hossz indokolt.</li></ul><p class=\"text-mid mt-4\">A tartományok a keresőmotorokban jól rangsoroló tartalom elemzésein alapulnak. Ha a szöveg megválaszolja az olvasó kérdéseit, a hossz megfelelő, függetlenül a számláló eredményétől.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Hány szóból álljon egy szöveg - optimális hossz SEO-hoz",
-      "html": "<p class=\"text-mid mb-4\">Az alábbi tartományok a keresőmotorokban jól rangsoroló tartalom elemzésein alapulnak. A szöveghossz önmagában nem befolyásolja a Google rangsorolást - az számít, hogy a tartalom megválaszolja-e az olvasó kérdéseit.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Oldatípus</th><th class=\"py-2 pr-4 font-semibold\">Tartomány</th><th class=\"py-2 font-semibold\">Mikor rövidebb, mikor hosszabb?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Termékleírás</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 szó</td><td class=\"text-primary-light0 py-2 text-sm\">Egyszerű termék (pl. bögre) - 80–150 szó. Összetett eszköz (pl. laptop) - 300–400 szó.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Szolgáltatás oldal</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 szó</td><td class=\"text-primary-light0 py-2 text-sm\">Helyi szolgáltatás (pl. vízszerelő) - 500–700 szó. B2B szolgáltatás folyamattal és GYIK-kel - 1200–1500 szó.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Főoldal</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 szó</td><td class=\"text-primary-light0 py-2 text-sm\">A főoldal közvetíti a fő értéket és irányítja a látogatókat tovább.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landing page</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 szó</td><td class=\"text-primary-light0 py-2 text-sm\">Egyszerű ajánlat - 600–1000 szó. Magyarázatot igénylő ajánlat - 1500–2500 szó.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blogcikk</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 szó</td><td class=\"text-primary-light0 py-2 text-sm\">Rövid válasz konkrét kérdésre - 1200 szó. Részletes útmutató - 2500–3000 szó.</td></tr><tr><td class=\"py-2 pr-4\">Útmutató / Tutorial</td><td class=\"py-2 pr-4 whitespace-nowrap\">2000–5000 szó</td><td class=\"text-primary-light0 py-2 text-sm\">Gyakorlati útmutató lépésekkel - 2000–3000 szó. Átfogó enciklopédikus útmutató - 4000–5000 szó.</td></tr></tbody></table></div>"
+      "type": "sectionSteps",
+      "title": "10 szövegformázó eszköz",
+      "description": "A szövegmező alatt átalakító gombokat talál:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiArrowUpLine",
+          "title": "UPPERCASE",
+          "description": "Converts all text to uppercase. Useful for headings, acronyms and highlighting text fragments."
+        },
+        {
+          "icon": "RiArrowDownLine",
+          "title": "lowercase",
+          "description": "Converts all text to lowercase. Useful for normalizing text copied from different sources."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Sentence case",
+          "description": "First letter of each sentence is capitalized, the rest lowercase. Standard format for continuous text."
+        },
+        {
+          "icon": "RiHeading",
+          "title": "Title Case",
+          "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "tOGGLE cASE",
+          "description": "Swaps uppercase to lowercase and vice versa. Useful when text was typed with Caps Lock on."
+        },
+        {
+          "icon": "RiSpace",
+          "title": "Remove extra spaces",
+          "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
+        },
+        {
+          "icon": "RiDeleteRow",
+          "title": "Remove empty lines",
+          "description": "Removes empty and redundant lines from text. Useful for cleaning text copied from websites."
+        },
+        {
+          "icon": "RiFilterLine",
+          "title": "Remove duplicate lines",
+          "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
+        },
+        {
+          "icon": "RiSortAsc",
+          "title": "Sort A→Z",
+          "description": "Sorts text lines alphabetically in ascending order. Useful for organizing lists, keywords and data."
+        },
+        {
+          "icon": "RiSortDesc",
+          "title": "Sort Z→A",
+          "description": "Sorts text lines alphabetically in descending order. Reverse sort order."
+        }
+      ]
     },
     {
       "type": "gap",
@@ -176,38 +240,38 @@
     {
       "type": "sectionSteps",
       "title": "Kinek szól a szószámláló?",
-      "description": "Szószámláló eszköz szövegíróknak és másoknak - íme a leggyakoribb felhasználók:",
+      "description": "Az eszköz hasznos mindenkinek, aki szöveggel dolgozik:",
       "grid": "three",
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Szövegírók és tartalomkészítők",
-          "description": "Ellenőrizze, hogy a szöveg beleért-e az ajánlott tartományba egy adott oldatípushoz. A SEO szószámláló segít értékelni, hogy egy cikk eléggé kidolgozott-e."
+          "title": "Copywriters and editors",
+          "description": "Count words and characters, check platform limits, quickly change letter case and clean text before publishing."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Bloggerek",
-          "description": "Kövesse a bejegyzések hosszát a konzisztens publikálás érdekében. Ellenőrizze az olvasási időt közzététel előtt."
+          "title": "Bloggers and content creators",
+          "description": "Monitor post length, check reading time, remove duplicate lines and sort lists."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "Webshop-tulajdonosok",
-          "description": "Ellenőrizze a termékleírásokat az értékesítési platformok karakterkorlátaival szemben (Amazon, eBay, Etsy)."
+          "title": "Store owners",
+          "description": "Verify product descriptions against character limits on platforms (Amazon, eBay, Etsy)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO specialisták",
-          "description": "Értékelje, hogy az oldal tartalma optimális hosszúságú-e a versenytársakhoz képest."
+          "title": "SEO specialists",
+          "description": "Analyze content length, count unique words and assess text complexity based on average word length."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Diákok és akadémikusok",
-          "description": "Ellenőrizze, hogy egy dolgozat megfelel-e az előírt szó- vagy karakterszám-korlátnak."
+          "title": "Students and academics",
+          "description": "Check word or character limits in essays and research papers."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Fordítók",
-          "description": "Számolja a karaktereket szóközök nélkül a fordítási árajánlat elkészítéséhez (szabványos számlázási egység)."
+          "title": "Translators",
+          "description": "Count characters without spaces for quotes (the standard billing unit in translation)."
         }
       ]
     },
@@ -218,7 +282,7 @@
     {
       "type": "sectionInfo",
       "title": "Karakterkorlátok népszerű platformokon",
-      "html": "<p class=\"text-mid mb-4\">A karakterszámláló hasznos, ha hosszkorlátokkal rendelkező platformokra készít tartalmat:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform / Elem</th><th class=\"py-2 pr-4 font-semibold\">Karakterkorlát</th><th class=\"py-2 font-semibold\">Megjegyzések</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 karakter</td><td class=\"text-primary-light0 py-2 text-sm\">A hosszabb címek levágásra kerülnek a keresési eredményekben.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 karakter</td><td class=\"text-primary-light0 py-2 text-sm\">A link alatt látható leírás a keresési eredményekben.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - termékcím</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 karakter</td><td class=\"text-primary-light0 py-2 text-sm\">Rövid, specifikus cím a legfontosabb kulcsszavakkal.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - felsoroláspontok</td><td class=\"py-2 pr-4 whitespace-nowrap\">500 karakter egyenként</td><td class=\"text-primary-light0 py-2 text-sm\">Legfeljebb 5 pont a termék fő jellemzőivel.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) - bejegyzés</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 karakter</td><td class=\"text-primary-light0 py-2 text-sm\">Szabványos korlát általános felhasználóknak.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn - bejegyzés</td><td class=\"py-2 pr-4 whitespace-nowrap\">3000 karakter</td><td class=\"text-primary-light0 py-2 text-sm\">~210 karakter után megjelenik a \"továbbiak megjelenítése\" link.</td></tr></tbody></table></div>"
+      "html": "<p class=\"text-mid\">Character limits vary by platform.</p>"
     },
     {
       "type": "gap",
@@ -226,38 +290,38 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Mi teszi különlegessé ezt a szó- és karakterszámlálót?",
+      "title": "Mi teszi különlegessé ezt a számlálót?",
       "grid": "two",
       "items": [
         {
-          "icon": "RiInfinityLine",
-          "title": "Hat oldatípus ajánlott tartományokkal",
-          "description": "Termékleírás, szolgáltatás oldal, főoldal, landing page, blogcikk és útmutató - minden típusnak saját, elemzéseken alapuló tartományai vannak."
+          "icon": "RiBarChartLine",
+          "title": "8 text metrics",
+          "description": "Words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time — all in one panel."
+        },
+        {
+          "icon": "RiTextWrap",
+          "title": "10 formatting tools",
+          "description": "Letter case conversion, removing spaces, empty lines, duplicates and sorting — without installing additional software."
         },
         {
           "icon": "RiUserLine",
-          "title": "Helyi feldolgozás a böngészőben",
-          "description": "A szövege soha nem kerül semmilyen szerverre - minden elemzés helyben történik az Ön eszközén."
-        },
-        {
-          "icon": "RiCheckboxCircleLine",
-          "title": "Szöveghossz-értékelés",
-          "description": "Nem csak szavakat számol - információt kap arról, hogy a hossz megfelelő-e a kiválasztott oldatípushoz."
-        },
-        {
-          "icon": "RiBarChartLine",
-          "title": "SEO-alapú tartományok",
-          "description": "Az ajánlott hosszak a keresőmotorokban jól rangsoroló tartalom elemzésein alapulnak."
-        },
-        {
-          "icon": "RiTimerLine",
-          "title": "Olvasási idő",
-          "description": "Azonnal tudja, hány percet vesz igénybe az olvasóknak a szöveg átolvasása."
+          "title": "Local processing in the browser",
+          "description": "Your text is never sent to any server. All analysis and transformation happens locally on your device."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Jelentés másolása",
-          "description": "A Jelentés másolása gomb egy összefoglalót másol az összes statisztikával és a hosszértékeléssel a vágólapra."
+          "title": "Copy and clear text",
+          "description": "Copy the modified text to your clipboard with one click or clear the field to start over."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Instant results",
+          "description": "Statistics update in real time as you type or paste text. No waiting for processing."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "No registration or limits",
+          "description": "The tool is completely free. No registration, login or personal data required."
         }
       ]
     },
@@ -267,38 +331,18 @@
     },
     {
       "type": "faq",
-      "title": "Gyakran ismételt kérdések a szó- és karakterszámlálóról",
+      "title": "Gyakori kérdések a szó- és karakterszámlálóról",
       "openByDefault": 1,
       "items": [
         {
-          "question": "A szöveghossz befolyásolja a Google rangsorolást?",
-          "answer": "A szöveghossz önmagában nem rangsorolási tényező. A Google azt értékeli, hogy a tartalom megválaszolja-e a felhasználó kérdését és értékes-e számára. Egy rövidebb szöveg, amely átfogóan válaszol egy kérdésre, jól rangsorolhat - az számít, ami értékes az olvasó számára. Az ebben az eszközben lévő tartományok a keresési eredményekben jól rangsoroló tartalom elemzésein alapulnak.",
-          "answerSchemaText": "A szöveghossz nem közvetlen rangsorolási tényező. A Google a tartalom értékét értékeli a felhasználó számára."
+          "question": "Hogyan működik az olvasási idő kalkulátor?",
+          "answer": "Az eszköz elosztja a szavak számát 200-zal, az átlagos olvasási sebességgel. Az eredmény közelítő érték.",
+          "answerSchemaText": "Az eszköz percenként 200 szót feltételez."
         },
         {
-          "question": "Miért ilyen szélesek a szótartományok?",
-          "answer": "Ugyanaz az oldatípus különböző hosszakat igényelhet a téma összetettségétől függően. Egy egyszerű termékleírás (pl. bögre) 80–150 szó. Egy laptop leírása 300–400 szó, mert a vásárlók kérdeznek a processzorról, memóriáról, kijelzőről és akkumulátorról.",
-          "answerSchemaText": "A különbség a téma összetettségéből adódik - egyszerű terméknél kevesebb szó kell, mint összetettebb terméknél."
-        },
-        {
-          "question": "Hogyan értelmezzem a \"túl rövid\" vagy \"túl hosszú\" eredményt?",
-          "answer": "Az értékelés megmutatja, hol helyezkedik el a szövege az adott típus tipikus tartalmához képest. Ha a szöveg \"túl rövid\"-nek van jelölve, de megválaszolja az olvasó összes kérdését - a hossz rendben van. Ha \"túl hosszú\", de minden bekezdés új információt ad hozzá - a hossz indokolt.",
-          "answerSchemaText": "Az értékelés megmutatja, hol áll a szöveg a tipikus tartalomhoz képest. Ha a szöveg megválaszolja az olvasó kérdéseit, a hossz megfelelő."
-        },
-        {
-          "question": "Hogyan működik az olvasási idő számoló?",
-          "answer": "Az eszköz elosztja a szószámot 200-zal - az átlagos olvasási sebesség általános szövegnél. Technikai vagy igényes szöveg (pl. dokumentáció, általános szerződési feltételek) lassabban olvasható. Könnyű lifestyle cikk - gyorsabban. Az eredmény közelítő érték.",
-          "answerSchemaText": "Az eszköz átlagosan 200 szó/perc olvasási sebességet feltételez. Ez közelítő érték általános szövegre."
-        },
-        {
-          "question": "Honnan származnak az ajánlott tartományok?",
-          "answer": "A tartományok a keresőmotorokban jól rangsoroló tartalom elemzésein és a tartalomkészítés bevalt gyakorlatain alapulnak. Szándékosan szélesek, mert ugyanaz az oldatípus különböző hosszakat igényelhet az iparágtól, téma-összetettségtől és az olvasói igényektől függően.",
-          "answerSchemaText": "A tartományok SEO elemzéseken és tartalomkészítési bevalt gyakorlatokon alapulnak."
-        },
-        {
-          "question": "Másolhatom a statisztikás jelentést?",
-          "answer": "Igen. A statisztikák alatt talál egy Jelentés másolása gombot - ez egy összefoglalót másol a vágólapra a szószámmal, karakterszámmal, bekezdésekkel, olvasási idővel és hosszértékeléssel. Beillesztheti dokumentumba vagy elküldheti munkatársainak.",
-          "answerSchemaText": "Igen. Kattintson a statisztikák alatti Jelentés másolása gombra. Egy összefoglaló az összes metrikával és értékeléssel a vágólapra kerül."
+          "question": "Biztonságban van a szövegem?",
+          "answer": "Igen. Minden elemzés helyben, a böngészőben történik. A szöveg soha nem kerül szerverre.",
+          "answerSchemaText": "Igen. A szöveg helyben, a böngészőben kerül feldolgozásra."
         }
       ]
     },
@@ -308,7 +352,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Fedezzen fel további eszközöket"
+      "title": "Fedezzen fel más eszközöket"
     },
     {
       "type": "gap",

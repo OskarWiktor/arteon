@@ -98,19 +98,25 @@
       "items": [
         {
           "title": "1. Ange uppgifter",
-          "description": "Fyll i namn, befattning, företag och kontaktuppgifter."
+          "description": "Fyll i namn, befattning, företag och kontaktuppgifter.",
+          "icon": "RiEditLine"
         },
         {
           "title": "2. Anpassa utseendet",
-          "description": "Välj layout, färger, lägg till logotyp och sociala medier-länkar."
+          "description": "Välj layout, färger, lägg till logotyp och sociala medier-länkar.",
+          "icon": "RiPaletteLine"
         },
         {
           "title": "3. Kopiera koden",
-          "description": "Knappen Copy signature kopierar den färdiga koden till urklipp. Klistra bara in i Gmail, Outlook eller annan e-postklient."
+          "description": "Knappen Copy signature kopierar den färdiga koden till urklipp. Klistra bara in i Gmail, Outlook eller annan e-postklient.",
+          "icon": "RiCodeLine"
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Hur fyller man i uppgifterna i signaturen?",
@@ -135,43 +141,64 @@
       "title": "Hur lägger man till CTA-knappar?",
       "html": "<p class=\"text-mid\">En CTA-knapp (call-to-action) är ett klickbart element som leder mottagaren till en vald sida. Det kan vara en länk till bokningskalendern, kontaktformuläret eller ett erbjudande. Generatorn låter dig lägga till två CTA-knappar.</p><h3 class=\"h5 mt-6 mb-3\">Huvudknapp</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Öppna fliken <strong>Buttons</strong> i editorn.</li><li>I sektionen <strong>Primary button</strong> ange texten som mottagaren ser, t.ex. Boka en kostnadsfri konsultation.</li><li>I fältet <strong>CTA link</strong> klistra in den fullständiga URL:en till sidan. Adressen måste börja med https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Sekundär knapp</h3><p class=\"text-mid\">Du kan lägga till en andra CTA-knapp i outline-stil (genomskinlig bakgrund med kantlinje). Fyll i fälten i sektionen <strong>Secondary button</strong> på samma sätt som för huvudknappen.</p><h3 class=\"h5 mt-6 mb-3\">Knappavrundning</h3><p class=\"text-mid\">Längst ner i fliken Buttons hittar du alternativet <strong>Button rounding</strong>. Du kan välja mellan tre varianter: Ingen (skarpa hörn), Lätt (avrundade) eller Full (oval knapp).</p><p class=\"text-mid mt-4\">Om du lämnar båda fälten tomma visas ingen knapp i signaturen. Om du bara fyller i ett fält visas knappen inte heller – båda behövs: text och länk.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Hur lägger man till sociala medier-länkar?",
       "html": "<p class=\"text-mid\">I fliken <strong>Social media</strong> kan du lägga till länkar till dina profiler. Generatorn stöder tolv plattformar: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (tidigare Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram och Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Så gör du</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Öppna fliken <strong>Social media</strong> i editorn.</li><li>Vid varje plattform finns ett fält för URL. Klistra in den fullständiga länken till din profil, t.ex. https://www.linkedin.com/in/dinprofil.</li><li>Fyll bara i de fält som gäller dig. Tomma fält visas inte i signaturen.</li></ol><h3 class=\"h5 mt-6 mb-3\">Sociala medier-ikoner</h3><p class=\"text-mid\">Längst ner i fliken Social media hittar du alternativet <strong>Visa ikoner bredvid plattformsnamnen</strong>. När det aktiveras visas länkarna som färgade SVG-ikoner istället för enbart namn.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Ikonstorlek</strong> – att välja: Liten (16 px), Medium (20 px) eller Stor (24 px).</li><li><strong>Ikonfärg</strong> – Plattformsfärger (standardfärger för varje plattform), Accentfärg (enhetlig accentfärg) eller Textfärg.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Anpassning av utseendet",
       "html": "<p class=\"text-mid\">I fliken <strong>Appearance</strong> kan du anpassa färger, typsnitt och andra visuella element i signaturen.</p><h3 class=\"h5 mt-6 mb-3\">Färgteman</h3><p class=\"text-mid\">Högst upp i fliken hittar du fem fördefinierade teman: Dark, Blue, Purple, Green och Gray. Att klicka på ett tema ställer automatiskt in accent- och textfärg. Det är snabbaste sättet att få ett enhetligt utseende.</p><h3 class=\"h5 mt-6 mb-3\">Färger</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Accentfärg</strong> – används i sidofält/topfält, CTA-knapp och länkar. Du kan välja valfri färg från paletten.</li><li><strong>Textfärg</strong> – färg på all text i signaturen (namn, kontaktuppgifter, klausul).</li><li><strong>Bakgrundsfärg</strong> – bakgrundsfärg för hela signaturen. Standard är vit, men du kan ändra den.</li></ul><h3 class=\"h5 mt-6 mb-3\">Typsnitt och storlek</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Typsnitt</strong> – att välja: Arial, Verdana, Tahoma, Trebuchet MS och Georgia. Alla är e-postsäkra och visas korrekt hos mottagaren.</li><li><strong>Textstorlek</strong> – tre alternativ: Liten (12 px), Standard (14 px) och Större (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Ytterligare inställningar</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Signaturkantlinje</strong> – du kan lägga till kantlinje genom att välja valfri kombination av sidor (vänster, höger, topp, botten). Att markera alla sidor ställer automatiskt in hel kantlinje. Kantlinjen tar accentfärgen.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Textstil – färger och storlekar för enskilda element",
       "html": "<p class=\"text-mid\">I fliken <strong>Text style</strong> kan du individuellt anpassa färg och teckenstorlek för varje textelement i signaturen.</p><h3 class=\"h5 mt-6 mb-3\">Tillgängliga element</h3><p class=\"text-mid\">Bara de element som för närvarande finns i signaturen (har ifyllda uppgifter) visas. För varje element kan du ställa in:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Namn</strong> – visas som standard i accentfärg.</li><li><strong>Befattning</strong> – roll i företaget.</li><li><strong>Företag</strong> – organisationsnamn.</li><li><strong>Kontaktuppgifter</strong> – e-post, telefon, webbplats (etiketter).</li><li><strong>Sociala medier</strong> – profillänkar.</li><li><strong>Juridisk klausul</strong> – juridisk text längst ner i signaturen.</li></ul><h3 class=\"h5 mt-6 mb-3\">Hur ändrar man färg?</h3><p class=\"text-mid\">Vid varje element hittar du en rad färgalternativ. Klicka på en färgruta för att välja den. Du kan också lägga till en egen färg genom att klicka på den färgade rutan med plustecken – välj färg och klicka Spara. Egna färger (upp till 8) delas mellan alla element.</p><p class=\"text-mid mt-3\">Återställningsknappen återställer elementets standardfärg.</p><h3 class=\"h5 mt-6 mb-3\">Hur ändrar man storlek?</h3><p class=\"text-mid\">På den andra raden hittar du storlekskontrollen med knapparna - och +. Värdet visar förskjutningen relativt bastypsnittsstorleken (inställd i fliken Appearance). Intervall: -4 till +4 pixlar.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Avstånd mellan element",
       "html": "<p class=\"text-mid\">I fliken <strong>Spacing</strong> kan du exakt styra avstånden mellan de olika elementen i signaturen.</p><h3 class=\"h5 mt-6 mb-3\">Signaturens inre marginal</h3><p class=\"text-mid\">Högst upp i fliken hittar du alternativet för inre marginal – dvs. avståndet mellan signaturens innehåll och dess kanter. Du kan välja mellan tre värden: 8 px (liten), 16 px (medium) och 24 px (stor).</p><h3 class=\"h5 mt-6 mb-3\">Avstånd mellan element</h3><p class=\"text-mid\">Under marginalen hittar du kontroller för de enskilda elementen i signaturen. Varje kontroll har knappar + och - för att öka eller minska avståndet. Bara alternativ för element som för närvarande finns i signaturen visas.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Efter namn</strong> – avstånd under namnraden.</li><li><strong>Efter befattning/företag</strong> – avstånd under befattnings- och företagsraden.</li><li><strong>Efter extra rad</strong> – avstånd under beskrivningen (om ifylld).</li><li><strong>Efter kontaktuppgifter</strong> – avstånd under e-post, telefon och webbplats.</li><li><strong>Efter sociala medier</strong> – avstånd under profillänkar.</li><li><strong>Efter CTA-knapp</strong> – avstånd under knappen (om aktiverad).</li><li><strong>Före klausul</strong> – avstånd ovanför den juridiska klausultexten.</li></ul><p class=\"text-mid mt-4\">Om du tar bort uppgifter från ett fält (t.ex. rensar telefonnumret) försvinner motsvarande avståndsalternativ automatiskt från fliken.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Juridisk klausul / GDPR – när ska man lägga till?",
       "html": "<p class=\"text-mid\">I fliken <strong>Disclaimer / GDPR</strong> kan du lägga till en juridisk text som visas längst ner i signaturen med mindre teckensnitt.</p><h3 class=\"h5 mt-6 mb-3\">När bör man lägga till en klausul?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Affärskorrespondens</strong> – information om meddelandets konfidentialitet och begäran om radering vid felaktig leverans.</li><li><strong>Branschkrav</strong> – vissa branscher (t.ex. juridik, medicin, finans) kräver specifik information i varje meddelande.</li><li><strong>GDPR</strong> – information om behandling av personuppgifter, om företaget är personuppgiftsansvarig.</li></ul><p class=\"text-mid mt-4\">Som standard är fältet ifyllt med en exempeltext om meddelandets konfidentialitet. Du kan redigera, ta bort eller ersätta den med din egen klausul. Om du lämnar fältet tomt visas ingen klausul i signaturen.</p><h3 class=\"h5 mt-6 mb-3\">Avgränsningslinje</h3><p class=\"text-mid\">Under textfältet hittar du alternativet <strong>Visa avgränsningslinje mellan uppgifter och klausul</strong>. Aktivera det för att lägga till en horisontell linje mellan kontaktuppgifterna och den juridiska klausulen.</p><p class=\"text-mid mt-3\">Efter aktivering visas extra anpassningsalternativ:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Linjestil</strong> – att välja: heldragen (solid), streckad (dashed) eller prickad (dotted).</li><li><strong>Linjetjocklek</strong> – tre alternativ: 1 px, 2 px eller 3 px.</li><li><strong>Linjefärg</strong> – standard grå (#e5e7eb). Du kan välja valfri färg från paletten eller återställa standardfärgen.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Automatisk sparning och återställning av inställningar",
       "html": "<p class=\"text-mid\">Generatorn sparar automatiskt alla inställningar i webbläsarens minne (localStorage). Efter att sidan uppdaterats eller verktyget öppnats igen återställs uppgifter, layout, färger och alla andra alternativ.</p><h3 class=\"h5 mt-6 mb-3\">Hur fungerar automatisk sparning?</h3><p class=\"text-mid\">Varje ändring (text, färg, layout, avstånd) sparas omedelbart i webbläsarens minne. Sparningen sker automatiskt i bakgrunden – utan att klicka på knappar.</p><h3 class=\"h5 mt-6 mb-3\">Hur återställer man inställningarna?</h3><p class=\"text-mid\">Under signaturförhandsvisningen hittar du knappen <strong>Reset appearance</strong>. Efter klick visas ett fönster med bekräftelsebegäran. Att bekräfta återställningen återställer alla uppgifter och inställningar till standardvärden. Denna åtgärd kan inte ångras.</p><h3 class=\"h5 mt-6 mb-3\">Export och import av konfiguration</h3><p class=\"text-mid\">Under signaturförhandsvisningen hittar du ytterligare två knappar: <strong>Export settings</strong> och <strong>Import settings</strong>. Export sparar alla uppgifter, färger, layout, avstånd och textstilar till en JSON-fil. Import låter dig ladda en tidigare sparad konfiguration från fil.</p><p class=\"text-mid mt-3\">Denna funktion är särskilt användbar om du vill flytta signaturkonfigurationen mellan datorer, dela inställningar med kollegor eller behålla en säkerhetskopia av inställningarna innan återställning.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hur man kopierar signaturen till Gmail eller Outlook",
@@ -195,13 +222,19 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Förhandsvisning av signaturen och exportalternativ",
       "html": "<p class=\"text-mid\">Förhandsvisningspanelen visas till höger om editorn och uppdateras automatiskt vid varje ändring. Förhandsvisningen är fäst (sticky) så den syns även när du skrollar genom redigeringsalternativen.</p><h3 class=\"h5 mt-6 mb-3\">Byta förhandsvisningsbakgrund</h3><p class=\"text-mid\">Ovanför förhandsvisningen hittar du tre knappar för att byta bakgrund: <strong>Ljus</strong> (standard grå bakgrund), <strong>Mörk</strong> (mörk bakgrund, användbar för att kontrollera läsbarhet mot mörk bakgrund) och <strong>Schack</strong> (schackmönster, för att se transparens och signaturkanter).</p><h3 class=\"h5 mt-6 mb-3\">Åtgärdsknappar</h3><p class=\"text-mid\">Under förhandsvisningen hittar du flera knappar:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Copy signature (Gmail / Outlook)</strong> – kopierar signaturen som formaterad HTML till urklipp. Klistra in den direkt i signaturinställningarna.</li><li><strong>Copy HTML code</strong> – kopierar rå HTML-kod till urklipp. Användbart om du vill klistra in koden i en HTML-editor eller CMS.</li><li><strong>Download as HTML</strong> – sparar signaturkoden som en .html-fil på disk. Användbart för arkivering eller att skicka till en utvecklare.</li><li><strong>Show HTML code</strong> – öppnar ett modalfönster med signaturens källkod. Du kan granska och kopiera koden direkt från fönstret.</li><li><strong>Export settings</strong> – sparar hela signaturkonfigurationen (uppgifter, färger, layout, avstånd, stilar) till en JSON-fil.</li><li><strong>Import settings</strong> – laddar konfiguration från en JSON-fil. Alla inställningar tillämpas automatiskt.</li><li><strong>Reset appearance</strong> – återställer alla uppgifter och inställningar till standardvärden (efter bekräftelse).</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Vem är e-postsignatur-generatorn till för?",

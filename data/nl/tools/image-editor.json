@@ -99,15 +99,18 @@
       "items": [
         {
           "title": "1. Voeg een afbeelding toe",
-          "description": "Sleep een bestand naar het aangewezen gebied of selecteer een afbeelding van uw apparaat. Ondersteunde formaten: JPG, PNG, WebP."
+          "description": "Sleep een bestand naar het aangewezen gebied of selecteer een afbeelding van uw apparaat. Ondersteunde formaten: JPG, PNG, WebP.",
+          "icon": "RiImageLine"
         },
         {
           "title": "2. Stel afmetingen in",
-          "description": "Voer afmetingen in pixels in of selecteer een kant-en-klaar formaat (Instagram, Facebook, YouTube, LinkedIn, OG-afbeelding)."
+          "description": "Voer afmetingen in pixels in of selecteer een kant-en-klaar formaat (Instagram, Facebook, YouTube, LinkedIn, OG-afbeelding).",
+          "icon": "RiCropLine"
         },
         {
           "title": "3. Download",
-          "description": "Pas het bijsnijden aan, kies het bestandsformaat (JPG, PNG, WebP), stel de kwaliteit in en download de afgewerkte afbeelding."
+          "description": "Pas het bijsnijden aan, kies het bestandsformaat (JPG, PNG, WebP), stel de kwaliteit in en download de afgewerkte afbeelding.",
+          "icon": "RiDownloadLine"
         }
       ]
     },

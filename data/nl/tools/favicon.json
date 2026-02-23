@@ -89,15 +89,18 @@
       "items": [
         {
           "title": "1. Voeg een afbeelding toe",
-          "description": "Sleep een bestand naar het aangewezen gebied of selecteer een afbeelding van uw apparaat. Ondersteunde formaten: PNG, JPG, SVG. Aanbevolen formaat: min. 512×512 pixels."
+          "description": "Sleep een bestand naar het aangewezen gebied of selecteer een afbeelding van uw apparaat. Ondersteunde formaten: PNG, JPG, SVG. Aanbevolen formaat: min. 512×512 pixels.",
+          "icon": "RiImageLine"
         },
         {
           "title": "2. Kies formaten",
-          "description": "Selecteer de pictogramformaten die u nodig heeft. Voor een reguliere website: favicon.ico, 32×32 en 180×180. Voor PWA voegt u 192×192 en 512×512 toe."
+          "description": "Selecteer de pictogramformaten die u nodig heeft. Voor een reguliere website: favicon.ico, 32×32 en 180×180. Voor PWA voegt u 192×192 en 512×512 toe.",
+          "icon": "RiAspectRatioLine"
         },
         {
           "title": "3. Download bestanden",
-          "description": "Na het genereren downloadt u alle bestanden als ZIP of elk pictogram apart. Onder de tool vindt u instructies over hoe u het favicon aan uw site toevoegt."
+          "description": "Na het genereren downloadt u alle bestanden als ZIP of elk pictogram apart. Onder de tool vindt u instructies over hoe u het favicon aan uw site toevoegt.",
+          "icon": "RiDownloadLine"
         }
       ]
     },

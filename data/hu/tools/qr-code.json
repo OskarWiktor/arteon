@@ -99,15 +99,18 @@
       "items": [
         {
           "title": "1. Válassza ki az adattípust",
-          "description": "Válassza ki, mit szeretné kódolni: URL-t, szöveget, vCard névjegykártyát, e-mailt vagy telefonszámot."
+          "description": "Válassza ki, mit szeretné kódolni: URL-t, szöveget, vCard névjegykártyát, e-mailt vagy telefonszámot.",
+          "icon": "RiListCheck2"
         },
         {
           "title": "2. Adja meg az adatokat",
-          "description": "Töltse ki a megfelelő mezőket - weboldal címet, kapcsolattartási adatokat vagy üzenet tartalmát."
+          "description": "Töltse ki a megfelelő mezőket - weboldal címet, kapcsolattartási adatokat vagy üzenet tartalmát.",
+          "icon": "RiEditLine"
         },
         {
           "title": "3. Töltse le a kódot",
-          "description": "Szabályozza a megjelenést (színek, méret, margó) és töltse le PNG vagy SVG formátumban."
+          "description": "Szabályozza a megjelenést (színek, méret, margó) és töltse le PNG vagy SVG formátumban.",
+          "icon": "RiDownloadLine"
         }
       ]
     },

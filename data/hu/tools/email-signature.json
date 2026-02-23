@@ -105,15 +105,18 @@
       "items": [
         {
           "title": "1. Adja meg az adatokat",
-          "description": "Töltse ki a nevét, beosztását, cégét és elérhetőségeit."
+          "description": "Töltse ki a nevét, beosztását, cégét és elérhetőségeit.",
+          "icon": "RiEditLine"
         },
         {
           "title": "2. Szabályozza a megjelenést",
-          "description": "Válasszon elrendezést, színeket, adjon hozzá logót és közösségi média linkeket."
+          "description": "Válasszon elrendezést, színeket, adjon hozzá logót és közösségi média linkeket.",
+          "icon": "RiPaletteLine"
         },
         {
           "title": "3. Másolja a kódot",
-          "description": "Az Aláírás másolása gomb a kész kódot a vágólapra másolja. Egyszerűen illessze be a Gmailbe, Outlookba vagy más e-mail kliensbe."
+          "description": "Az Aláírás másolása gomb a kész kódot a vágólapra másolja. Egyszerűen illessze be a Gmailbe, Outlookba vagy más e-mail kliensbe.",
+          "icon": "RiCodeLine"
         }
       ]
     },

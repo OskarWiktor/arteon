@@ -105,15 +105,18 @@
       "items": [
         {
           "title": "1. Introduceți datele",
-          "description": "Completați numele, funcția, compania și datele de contact."
+          "description": "Completați numele, funcția, compania și datele de contact.",
+          "icon": "RiEditLine"
         },
         {
           "title": "2. Personalizați aspectul",
-          "description": "Alegeți un layout, culori, adăugați un logo și linkuri social media."
+          "description": "Alegeți un layout, culori, adăugați un logo și linkuri social media.",
+          "icon": "RiPaletteLine"
         },
         {
           "title": "3. Copiați codul",
-          "description": "Butonul Copiază semnătura copiază codul gata în clipboard. Pur și simplu lipiți-l în Gmail, Outlook sau alt client de e-mail."
+          "description": "Butonul Copiază semnătura copiază codul gata în clipboard. Pur și simplu lipiți-l în Gmail, Outlook sau alt client de e-mail.",
+          "icon": "RiCodeLine"
         }
       ]
     },

@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/da/vaerktojer", "label": "Værktøjer" },
-    "third": { "href": "/da/vaerktojer/jpg-png-til-webp-konverter", "label": "JPG/PNG til WebP-konverter" }
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/jpg-png-til-webp-konverter",
+      "label": "JPG/PNG til WebP-konverter"
+    }
   },
   "schemas": {
     "software": {
@@ -40,57 +46,99 @@
       "description": "Sådan konverterer du billeder i JPG og PNG til WebP-format. Upload filer, indstil kvaliteten og download de konverterede billeder.",
       "totalTime": "PT2M",
       "steps": [
-        { "name": "Upload billeder", "text": "Træk og slip filer i det markerede område, eller vælg dem fra din enhed. Understøttede formater er JPG og PNG." },
-        { "name": "Indstil kvalitet", "text": "Brug regulatoren til at justere billedkvaliteten (0–100). Højere værdi betyder bedre kvalitet, men større fil." },
-        { "name": "Download konverterede billeder", "text": "Klik på download-knappen ved hvert billede, eller download alle på én gang i en ZIP-fil." }
+        {
+          "name": "Upload billeder",
+          "text": "Træk og slip filer i det markerede område, eller vælg dem fra din enhed. Understøttede formater er JPG og PNG."
+        },
+        {
+          "name": "Indstil kvalitet",
+          "text": "Brug regulatoren til at justere billedkvaliteten (0–100). Højere værdi betyder bedre kvalitet, men større fil."
+        },
+        {
+          "name": "Download konverterede billeder",
+          "text": "Klik på download-knappen ved hvert billede, eller download alle på én gang i en ZIP-fil."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Hvad er WebP-formatet, og hvorfor er det vigtigt?",
       "html": "<p class=\"text-mid\">WebP er et moderne billedformat udviklet af Google, der tilbyder bedre komprimering end JPG og PNG. Billeder i WebP fylder mindre – typisk 25–34 % mindre end JPG og op til 80 % mindre end PNG – med bibeholdt visuel kvalitet.</p><p class=\"text-mid mt-3\">Alle større browsere (Chrome, Firefox, Safari, Edge) understøtter WebP. Brug af dette format betyder hurtigere sideindlæsning, lavere dataforbrug og bedre Core Web Vitals-score – hvilket direkte påvirker placeringen i Googles søgeresultater.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Sådan bruger du JPG/PNG til WebP-konverteren",
       "description": "Konverteringen tager kun et par minutter:",
       "grid": "three",
       "items": [
-        { "title": "1. Upload billeder", "description": "Træk og slip filer i det markerede område, eller vælg dem fra din enhed. Du kan uploade flere billeder samtidig." },
-        { "title": "2. Indstil kvalitet", "description": "Brug regulatoren til at justere billedkvaliteten (0–100). Lavere værdi giver mindre fil, men lavere kvalitet." },
-        { "title": "3. Download resultatet", "description": "Klik på download-knappen ved hvert billede, eller download alle på én gang i en ZIP-fil." }
+        {
+          "title": "1. Upload billeder",
+          "description": "Træk og slip filer i det markerede område, eller vælg dem fra din enhed. Du kan uploade flere billeder samtidig.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Indstil kvalitet",
+          "description": "Brug regulatoren til at justere billedkvaliteten (0–100). Lavere værdi giver mindre fil, men lavere kvalitet.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Download resultatet",
+          "description": "Klik på download-knappen ved hvert billede, eller download alle på én gang i en ZIP-fil.",
+          "icon": "RiDownloadLine"
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Hvordan tilføjer man filer til konvertering?",
       "html": "<p class=\"text-mid\">Værktøjet tilbyder to måder at tilføje filer på:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Træk og slip</strong> – tag filerne fra en mappe på computeren og slip dem på området med teksten &quot;Træk og slip billeder her&quot;. Du kan trække flere filer ad gangen.</li><li><strong>Vælg fra disk</strong> – efter at have klikket på feltet til tilføjelse af filer åbnes et valgvindue. Hold Ctrl (eller Cmd på Mac) nede for at vælge flere filer samtidig.</li></ul><p class=\"text-mid mt-3\">Værktøjet accepterer kun JPG- og PNG-filer. Hvis du ved et uheld tilføjer en fil i et andet format (f.eks. GIF eller BMP), bliver den automatisk sprunget over, og du ser en informationsmeddelelse.</p><p class=\"text-mid mt-3\"><strong>Privatliv:</strong> Alle filer behandles lokalt i browseren. De sendes ingen steder hen – de når aldrig en server. Når du lukker fanen eller browseren, fjernes filerne fra hukommelsen.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Hvad betyder filstatusserne?",
       "html": "<p class=\"text-mid\">Hver fil i køen har en af fire statusser, der informerer om konverteringens fremgang:</p><div class=\"mt-4 space-y-4\"><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Venter</span><p class=\"text-mid\">Filen er i køen og venter på behandling. Konverteringen er endnu ikke begyndt.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Behandler...</span><p class=\"text-mid\">Filen konverteres i øjeblikket. For de fleste billeder tager det et splitsekund, men meget store filer kan kræve et par sekunder.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Færdig</span><p class=\"text-mid\">Konverteringen er gennemført. WebP-filen er klar til download. Ved statussen kan du også se filstørrelsen før og efter konverteringen.</p></div><div class=\"flex items-start gap-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-red-100 text-red-800\">Fejl</span><p class=\"text-mid\">Noget gik galt under konverteringen. Det kan være en beskadiget kildefil eller et hukommelsesproblem i browseren ved meget store billeder. Knappen &quot;Konverter igen&quot; gør det muligt at prøve igen.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Hvordan fungerer Smart Quality?",
       "html": "<p class=\"text-mid\">Smart Quality er en automatisk optimeringsmekanisme, der sikrer, at den resulterende WebP-fil aldrig bliver større end originalen. Den fungerer sådan:</p><ol class=\"text-mid mt-3 ml-6 list-decimal space-y-2\"><li>Værktøjet konverterer billedet med den kvalitet, du har indstillet (f.eks. 80 %).</li><li>Det kontrollerer, om den resulterende fil er mindre end originalen.</li><li>Hvis den er større, sænkes kvaliteten automatisk, og der prøves igen.</li><li>Processen gentages, indtil den resulterende fil er mindre, eller kvaliteten falder under et sikkert minimum.</li></ol><p class=\"text-mid mt-3\">Værktøjet vælger automatisk de optimale indstillinger. Hvis du har et billede, der allerede er stærkt komprimeret (f.eks. en JPG med kvalitet 60 %), justeres parametrene automatisk for stadig at opnå størrelsesbesparelse.</p><p class=\"text-mid mt-3\">Ved hver fil kan du se oplysningen &quot;Anvendt WebP-kvalitet&quot; – det er den faktiske kvalitet efter en eventuel justering af Smart Quality.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Sådan vælger du den rigtige kvalitet til WebP",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kvalitet: 80</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800\">Anbefalet</span></div><p class=\"text-mid text-sm!\">Bedste forhold mellem kvalitet og filstørrelse. Passer til de fleste billeder på web og i e-handel.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kvalitet: 60–70</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Aggressiv komprimering</span></div><p class=\"text-mid text-sm!\">Mindre filer. Passer til thumbnails, ikoner og dekorative baggrunde.</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Kvalitet: 90–100</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Højeste kvalitet</span></div><p class=\"text-mid text-sm!\">Meget høj kvalitet, men større filer. Passer til portfolios og nøglebilleder af produkter.</p></div></div>",
       "html": "<p class=\"text-mid\">Kvalitetsindstillingen bestemmer forholdet mellem visuel kvalitet og filstørrelse. For de fleste webbilleder giver værdien 75–85 de bedste resultater – kvalitetsforskellen er ikke synlig for øjet, og filen kan være 3–5 gange mindre end den originale JPG.</p><p class=\"text-mid mt-3\">For thumbnails, ikoner og dekorative baggrunde kan du sænke kvaliteten til 60–70 uden at miste skarphed. For portfoliobilleder eller nøglebilleder af produkter bevarer værdien 90–95 detaljerne.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Hvordan downloader man de konverterede filer?",
@@ -98,47 +146,90 @@
       "demoHtml": "<div class=\"space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium text-white\" disabled>Konverter</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Download alle</button><button class=\"inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\" disabled>Download som ZIP</button></div><div class=\"flex items-center\"><input type=\"checkbox\" class=\"h-4 w-4 rounded border-neutral-300\" disabled /><span class=\"text-mid pl-2 text-sm!\">Vedhæft CSV-rapport til ZIP</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3 text-sm!\"><p class=\"text-light\">Inputstørrelse: <strong class=\"text-dark\">2.4 MB</strong></p><p class=\"text-light\">Størrelse efter konvertering: <strong class=\"text-dark\">890 KB</strong></p><p class=\"text-light\">Sparet: <strong class=\"text-success-icon\">1.5 MB (~63 %)</strong></p></div></div>",
       "html": "<p class=\"text-mid\">Efter afsluttet konvertering har du flere downloadmuligheder:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Download</strong> (ved hver fil) – downloader den enkelte WebP-fil.</li><li><strong>Download alle</strong> – downloader alle filer én efter én.</li><li><strong>Download som ZIP</strong> – opretter et arkiv med alle filer.</li></ul><p class=\"text-mid mt-3\"><strong>CSV-rapport:</strong> Vedhæft en rapport med konverteringsoversigten til ZIP-arkivet.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Besparelsesrapport – hvad viser den?",
       "html": "<p class=\"text-mid\">Under konverteringsknapperne finder du en oversigt med besparelsesinformation:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Samlet inputstørrelse</strong> – summen af alle originale filers størrelse.</li><li><strong>Samlet størrelse efter konvertering</strong> – summen af alle WebP-filers størrelse.</li><li><strong>Sparet</strong> – hvor meget plads du har vundet ved konverteringen (i KB/MB og procent).</li></ul><p class=\"text-mid mt-3\"><strong>Kopier oversigt:</strong> Knappen kopierer rapporten til udklipsholderen i tekstformat. Du kan indsætte den i noter, e-mail eller dokument – nyttigt ved dokumentation af billedoptimering.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Hvor meget kan man spare ved at konvertere til WebP?",
       "html": "<p class=\"text-mid mb-4\">Besparelserne afhænger af billedtypen og den originale komprimering. Herunder er eksempler for typiske filer:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">JPG-foto (kamera)</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~63 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">PNG-grafik (logo)</p><p class=\"text-light text-sm\">180 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~75 %</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktfoto</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~63 %</p></div></div><p class=\"text-light mt-4 text-sm\">De faktiske besparelser kan variere. Konverteren viser den præcise størrelse før og efter konvertering for hver fil samt en samlet oversigt over besparelserne.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hvem har brug for en WebP-konverter?",
       "grid": "two",
       "items": [
-        { "icon": "RiGlobalLine", "title": "Hjemmesideejere", "description": "Mindre billeder fremskynder sideindlæsningen. Det forbedrer brugeroplevelsen og påvirker placeringen i Google." },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Hjemmesideejere",
+          "description": "Mindre billeder fremskynder sideindlæsningen. Det forbedrer brugeroplevelsen og påvirker placeringen i Google."
+        },
         {
           "icon": "RiShoppingCartLine",
           "title": "E-handelsejere",
           "description": "Mange produktbilleder betyder mange megabyte data. Konvertering til WebP reducerer indlæsningstiden og dataforbruget."
         },
-        { "icon": "RiBloggerLine", "title": "Bloggere", "description": "Artikler med mange billeder indlæses langsommere. WebP reducerer billedstørrelsen med bibeholdt kvalitet." },
-        { "icon": "RiCodeLine", "title": "Webudviklere", "description": "WebP er den moderne standard for webbilleder. Alle større browsere understøtter dette format." }
+        {
+          "icon": "RiBloggerLine",
+          "title": "Bloggere",
+          "description": "Artikler med mange billeder indlæses langsommere. WebP reducerer billedstørrelsen med bibeholdt kvalitet."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Webudviklere",
+          "description": "WebP er den moderne standard for webbilleder. Alle større browsere understøtter dette format."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hvad gør denne WebP-konverter speciel?",
       "grid": "two",
       "items": [
-        { "icon": "RiShieldCheckLine", "title": "Lokal behandling i browseren", "description": "Billeder sendes ikke til nogen server – al behandling sker på din enhed. Din privathed er beskyttet." },
-        { "icon": "RiSpeedLine", "title": "Øjeblikkelig konvertering", "description": "Resultaterne vises med det samme – ingen ventetid i kø og ingen serverbehandling." },
-        { "icon": "RiInfinityLine", "title": "Ingen billedgrænse", "description": "Konvertér så mange billeder, du har brug for. Ingen daglig grænse eller sessionsgrænse." },
-        { "icon": "RiScalesLine", "title": "Justerbar kvalitetsregulator", "description": "Indstil kvaliteten (0–100) for hvert billede og få det bedste forhold mellem størrelse og kvalitet." }
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Lokal behandling i browseren",
+          "description": "Billeder sendes ikke til nogen server – al behandling sker på din enhed. Din privathed er beskyttet."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Øjeblikkelig konvertering",
+          "description": "Resultaterne vises med det samme – ingen ventetid i kø og ingen serverbehandling."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ingen billedgrænse",
+          "description": "Konvertér så mange billeder, du har brug for. Ingen daglig grænse eller sessionsgrænse."
+        },
+        {
+          "icon": "RiScalesLine",
+          "title": "Justerbar kvalitetsregulator",
+          "description": "Indstil kvaliteten (0–100) for hvert billede og få det bedste forhold mellem størrelse og kvalitet."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hvad skal man være opmærksom på?",
@@ -167,7 +258,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om WebP-konverteren",
@@ -200,8 +294,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Udforsk flere værktøjer" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Udforsk flere værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

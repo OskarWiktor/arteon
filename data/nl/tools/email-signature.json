@@ -105,15 +105,18 @@
       "items": [
         {
           "title": "1. Voer gegevens in",
-          "description": "Vul uw naam, functie, bedrijf en contactgegevens in."
+          "description": "Vul uw naam, functie, bedrijf en contactgegevens in.",
+          "icon": "RiEditLine"
         },
         {
           "title": "2. Pas het uiterlijk aan",
-          "description": "Kies een lay-out, kleuren, voeg een logo en social media-links toe."
+          "description": "Kies een lay-out, kleuren, voeg een logo en social media-links toe.",
+          "icon": "RiPaletteLine"
         },
         {
           "title": "3. Kopieer de code",
-          "description": "De knop Kopieer handtekening kopieert de kant-en-klare code naar het klembord. Plak het gewoon in Gmail, Outlook of een andere e-mailclient."
+          "description": "De knop Kopieer handtekening kopieert de kant-en-klare code naar het klembord. Plak het gewoon in Gmail, Outlook of een andere e-mailclient.",
+          "icon": "RiCodeLine"
         }
       ]
     },

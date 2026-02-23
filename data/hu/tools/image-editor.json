@@ -91,15 +91,18 @@
       "items": [
         {
           "title": "1. Adjon hozzá képet",
-          "description": "Húzzon egy fájlt a kijelölt területre, vagy válasszon képet az eszközéről. Támogatott formátumok: JPG, PNG, WebP."
+          "description": "Húzzon egy fájlt a kijelölt területre, vagy válasszon képet az eszközéről. Támogatott formátumok: JPG, PNG, WebP.",
+          "icon": "RiImageLine"
         },
         {
           "title": "2. Állítsa be a méreteket",
-          "description": "Adja meg a méreteket pixelben, vagy válasszon kész formátumot (Instagram, Facebook, YouTube, LinkedIn, OG kép)."
+          "description": "Adja meg a méreteket pixelben, vagy válasszon kész formátumot (Instagram, Facebook, YouTube, LinkedIn, OG kép).",
+          "icon": "RiCropLine"
         },
         {
           "title": "3. Töltse le",
-          "description": "Állítsa be a vágást, válassza ki a fájlformátumot (JPG, PNG, WebP), állítsa be a minőséget és töltse le a kész képet."
+          "description": "Állítsa be a vágást, válassza ki a fájlformátumot (JPG, PNG, WebP), állítsa be a minőséget és töltse le a kész képet.",
+          "icon": "RiDownloadLine"
         }
       ]
     },

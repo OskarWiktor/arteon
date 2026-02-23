@@ -99,15 +99,18 @@
       "items": [
         {
           "title": "1. Adăugați o imagine",
-          "description": "Trageți un fișier în zona desemnată sau selectați o imagine de pe dispozitiv. Formate suportate: JPG, PNG, WebP."
+          "description": "Trageți un fișier în zona desemnată sau selectați o imagine de pe dispozitiv. Formate suportate: JPG, PNG, WebP.",
+          "icon": "RiImageLine"
         },
         {
           "title": "2. Setați dimensiunile",
-          "description": "Introduceți dimensiunile în pixeli sau selectați un format gata făcut (Instagram, Facebook, YouTube, LinkedIn, imagine OG)."
+          "description": "Introduceți dimensiunile în pixeli sau selectați un format gata făcut (Instagram, Facebook, YouTube, LinkedIn, imagine OG).",
+          "icon": "RiCropLine"
         },
         {
           "title": "3. Descărcați",
-          "description": "Ajustați decuparea, alegeți formatul fișierului (JPG, PNG, WebP), setați calitatea și descărcați imaginea finalizată."
+          "description": "Ajustați decuparea, alegeți formatul fișierului (JPG, PNG, WebP), setați calitatea și descărcați imaginea finalizată.",
+          "icon": "RiDownloadLine"
         }
       ]
     },

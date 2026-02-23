@@ -80,15 +80,18 @@
       "items": [
         {
           "title": "1. Încărcați o imagine",
-          "description": "Trageți un fișier în zona desemnată sau selectați-l de pe dispozitiv. Formatele acceptate sunt PNG, JPG și SVG."
+          "description": "Trageți un fișier în zona desemnată sau selectați-l de pe dispozitiv. Formatele acceptate sunt PNG, JPG și SVG.",
+          "icon": "RiUploadLine"
         },
         {
           "title": "2. Așteptați analiza",
-          "description": "Instrumentul va analiza automat imaginea și va extrage până la 12 culori dominante."
+          "description": "Instrumentul va analiza automat imaginea și va extrage până la 12 culori dominante.",
+          "icon": "RiSearchEyeLine"
         },
         {
           "title": "3. Copiați culorile necesare",
-          "description": "Lângă fiecare culoare există un buton de copiere - codul HEX sau RGB merge în clipboard și poate fi lipit direct în proiectul dvs."
+          "description": "Lângă fiecare culoare există un buton de copiere - codul HEX sau RGB merge în clipboard și poate fi lipit direct în proiectul dvs.",
+          "icon": "RiFileCopyLine"
         }
       ]
     },

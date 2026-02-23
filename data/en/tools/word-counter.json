@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "en",
   "metadata": {
-    "title": "Free Word & Character Counter – Check Text Length for SEO",
-    "description": "Count words, characters, paragraphs and reading time instantly. Check optimal text length for SEO – blog posts, product pages, landing pages.",
+    "title": "Free Word & Character Counter Online – Count, Transform & Analyze Text",
+    "description": "Free word, character, sentence and paragraph counter. Change letter case, remove duplicates, sort lines. 8 metrics and 10 text tools in one place.",
     "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
     "path": "/en/tools/word-and-character-counter"
   },
   "hero": {
-    "title": "Word and character counter with length evaluation",
-    "description": "Paste your text, select a page type, and the tool will show word count, character count, paragraphs, and evaluate whether the length is appropriate for that type of content",
+    "title": "Word and character counter with text formatting tools",
+    "description": "Paste your text and the tool will count words, characters, sentences, paragraphs, unique words and reading time. Change letter case, remove duplicates or sort lines with one click",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -24,48 +24,55 @@
   },
   "schemas": {
     "software": {
-      "name": "Free word and character counter with SEO evaluation",
+      "name": "Free word and character counter online with text tools",
       "alternateName": [
-        "Word counter with text length evaluation",
-        "Character counter tool",
+        "Online word counter",
+        "Character counter with and without spaces",
         "Word counting tool for copywriters",
         "Reading time calculator",
-        "Word counter for content writers",
-        "Check how many words a text has",
-        "Word counter for SEO",
-        "Optimal text length for a blog post"
+        "Online letter case converter",
+        "Uppercase to lowercase converter",
+        "Remove duplicate lines from text",
+        "Sort text lines alphabetically"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter. Checks word count, characters, paragraphs, and estimated reading time. Evaluates text length for different page types: product description, service page, homepage, landing page, blog post, guide.",
+      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
       "featureList": [
         "Word count",
         "Character count with and without spaces",
-        "Paragraph count",
+        "Sentence and paragraph count",
+        "Unique word count",
+        "Average word length",
         "Estimated reading time",
-        "Text length evaluation for different page types",
-        "Recommended ranges for: product description, service page, homepage, landing page, blog post, guide",
-        "Copy report to clipboard"
+        "Convert to uppercase or lowercase",
+        "Convert to sentence case or title case",
+        "Toggle letter case",
+        "Remove extra spaces",
+        "Remove empty lines and duplicates",
+        "Sort lines A-Z and Z-A",
+        "Copy text to clipboard"
       ]
     },
     "howTo": {
       "name": "How to use the word and character counter",
-      "description": "Check the length of your text and evaluate whether it is appropriate for a specific page type. Learn how many words a product description, service page, blog post, or guide should have.",
+      "description": "Count words, characters and sentences in your text. Use tools to change letter case, remove duplicates or sort lines.",
+      "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Select a page type",
-          "text": "Choose from the dropdown what type of page you are writing for. Each type has different recommended word count ranges."
-        },
-        {
           "name": "Paste your text",
-          "text": "Paste or type text into the text field. The tool will automatically count words, characters (with and without spaces), paragraphs, and estimate reading time."
+          "text": "Paste or type text into the text field. The tool will automatically count words, characters, sentences, paragraphs, unique words and estimate reading time."
         },
         {
-          "name": "Check the evaluation",
-          "text": "Look at the colored progress bar and status. Green means good length, yellow means too short, red means too long."
+          "name": "Check the statistics",
+          "text": "In the left panel you will see 8 text metrics: words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time."
         },
         {
-          "name": "Copy the report",
-          "text": "The Copy Report button copies a summary with all statistics and the length evaluation to your clipboard."
+          "name": "Use text tools",
+          "text": "Below the text field you will find a toolbar with 10 tools: letter case conversion, removing spaces, empty lines, duplicates and sorting lines."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Click Copy text to transfer the modified text to your clipboard. Use Clear to start over."
         }
       ]
     }
@@ -77,8 +84,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Free word counter — count and evaluate text length",
-      "html": "<p class=\"text-mid\">This word counting tool lets you quickly check the length of any text. Paste your content and the counter will tally words, characters, and paragraphs. You will also see how many minutes it takes to read and whether the length fits the page type you select.</p><p class=\"text-mid mt-3\">Every page type has a different purpose - a product description answers buyer questions, a blog post covers a topic in depth, and a service page explains what the client will receive. The counter shows ranges for each of these types based on analyses of content that ranks well.</p>"
+      "title": "Free word and character counter online with text tools",
+      "html": "<p class=\"text-mid\">This tool combines a word and character counter with a set of text formatting functions. Paste your text and you will see the word count, characters, sentences, paragraphs, unique words and estimated reading time.</p><p class=\"text-mid mt-3\">Below the text field you will find a toolbar with 10 tools: letter case conversion (UPPERCASE, lowercase, Sentence case, Title Case), removing extra spaces, empty lines and duplicates, and alphabetical sorting. All analysis and processing happens locally in your browser.</p>"
     },
     {
       "type": "gap",
@@ -87,28 +94,28 @@
     {
       "type": "sectionSteps",
       "title": "How to use the word and character counter",
-      "description": "Checking text length takes less than a minute:",
+      "description": "Analyze and format text in three steps:",
       "grid": "four",
       "items": [
         {
-          "icon": "RiListCheck2",
-          "title": "1. Select page type",
-          "description": "Choose from the dropdown what type of page you are writing for. Each type has different recommended minimum and maximum word counts."
-        },
-        {
           "icon": "RiFileTextLine",
-          "title": "2. Paste your text",
-          "description": "Paste or type text into the large field on the right. The tool will immediately count words, characters (with and without spaces), paragraphs, and estimate reading time."
+          "title": "1. Paste your text",
+          "description": "Paste or type text into the field on the right. The tool will immediately count words, characters, sentences, paragraphs, unique words and estimate reading time."
         },
         {
           "icon": "RiBarChartLine",
-          "title": "3. Check the evaluation",
-          "description": "Look at the colored progress bar and status. Green means good length, yellow means too short, red means too long. Below you will find a helpful tip."
+          "title": "2. Check the statistics",
+          "description": "In the left panel you will see 8 metrics: words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time."
+        },
+        {
+          "icon": "RiTextWrap",
+          "title": "3. Transform text",
+          "description": "Below the text field you will find a toolbar with 10 tools: letter case conversion, removing spaces, empty lines, duplicates and sorting lines."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Copy the report",
-          "description": "The Copy Report button copies a summary with word count, character count, paragraphs, reading time, and length evaluation to your clipboard."
+          "title": "4. Copy the result",
+          "description": "Click Copy text to transfer the modified text to your clipboard. Use Clear to start over."
         }
       ]
     },
@@ -118,34 +125,49 @@
     },
     {
       "type": "sectionSteps",
-      "title": "What the counter measures - words, characters, reading time",
-      "description": "The counter tracks five key metrics:",
+      "title": "8 text metrics — what the counter measures",
+      "description": "The counter analyzes your text across eight indicators:",
       "grid": "two",
       "items": [
         {
           "icon": "RiText",
           "title": "Words",
-          "description": "Total word count. This is the primary indicator of text length."
+          "description": "Total word count. The primary indicator of text length, useful for content creation, articles and descriptions."
         },
         {
           "icon": "RiSpaceShipLine",
           "title": "Characters (with spaces)",
-          "description": "All characters including spaces. Useful when a CMS has a character limit (e.g., marketplace listings)."
+          "description": "All characters including spaces. Useful when a platform has a character limit (e.g., Amazon listings, meta descriptions)."
         },
         {
           "icon": "RiHashtag",
           "title": "Characters (without spaces)",
-          "description": "Only letters, digits, and punctuation. Sometimes required by print shops or for translation billing."
+          "description": "Only letters, digits and punctuation. The standard billing unit for translations and print shops."
+        },
+        {
+          "icon": "RiChatQuoteLine",
+          "title": "Sentences",
+          "description": "Number of sentences in the text. Helps assess complexity and readability — shorter sentences are easier to absorb."
         },
         {
           "icon": "RiParagraph",
           "title": "Paragraphs",
-          "description": "How many text blocks separated by blank lines you have. Helps assess whether the text is well structured."
+          "description": "Text blocks separated by blank lines. Well-structured paragraphs improve readability on screens."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Unique words",
+          "description": "Number of non-repeating words. A higher ratio of unique to total words indicates richer vocabulary."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Average word length",
+          "description": "Average number of characters per word. An indicator of text complexity — technical texts have longer words than casual ones."
         },
         {
           "icon": "RiTimeLine",
           "title": "Reading time",
-          "description": "The reading time calculator shows how many minutes it takes to read the text at an average speed of 200 words per minute."
+          "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
         }
       ]
     },
@@ -154,20 +176,62 @@
       "variant": "line"
     },
     {
-      "type": "sectionDemo",
-      "title": "How to interpret the results",
-      "subtitle": "Evaluation statuses",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">Good length</span><span class=\"text-mid text-sm!\">Text is within range</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Below range</span><span class=\"text-mid text-sm!\">Text is shorter than typical</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Above range</span><span class=\"text-mid text-sm!\">Text is longer than typical</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Progress</span><span class=\"text-mid\">1200 / 1200–3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
-      "html": "<p class=\"text-mid mb-4\">The colored progress bar and status help you quickly assess text length:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Good length</strong> (green) - the text falls within the approximate range for the selected page type.</li><li><strong class=\"text-warning-text\">Below range</strong> (yellow) - the text is shorter than typical for this page type. If it answers all of the reader's questions, the length may be fine.</li><li><strong class=\"text-error-text\">Above range</strong> (red) - the text is longer than typical. If every paragraph adds new information, the length is justified.</li></ul><p class=\"text-mid mt-4\">The ranges are based on analyses of content that ranks well in search engines. If the text answers the reader's questions, the length is appropriate regardless of the counter result.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "How many words should a text have - optimal length for SEO",
-      "html": "<p class=\"text-mid mb-4\">The ranges below are based on analyses of content that ranks well in search engines. Text length itself does not affect Google rankings - what matters is whether the content answers the reader's questions.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Page type</th><th class=\"py-2 pr-4 font-semibold\">Range</th><th class=\"py-2 font-semibold\">When shorter, when longer?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Product description</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 words</td><td class=\"text-primary-light0 py-2 text-sm\">Simple product (e.g., a mug) - 80–150 words. Complex equipment (e.g., a laptop) - 300–400 words, because buyers have more questions.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Service page</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 words</td><td class=\"text-primary-light0 py-2 text-sm\">Local service (e.g., plumber) - 500–700 words. B2B service with process and FAQ - 1,200–1,500 words.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Homepage</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 words</td><td class=\"text-primary-light0 py-2 text-sm\">The homepage conveys the main value and guides visitors further - the text supports navigation, not to replace subpages.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landing page</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 words</td><td class=\"text-primary-light0 py-2 text-sm\">Simple offer - 600–1,000 words. Offer requiring explanation of process, variants, and objection handling - 1,500–2,500 words.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blog post</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 words</td><td class=\"text-primary-light0 py-2 text-sm\">Answer to a simple question - 1,200–1,800 words. Complex topic with many aspects - 2,000–3,000 words.</td></tr><tr><td class=\"py-2 pr-4\">Guide</td><td class=\"py-2 pr-4 whitespace-nowrap\">2500–6000 words</td><td class=\"text-primary-light0 py-2 text-sm\">Narrow topic - 2,500–3,500 words. Broad topic with many steps and examples - 4,000–6,000 words.</td></tr></tbody></table></div>"
+      "type": "sectionSteps",
+      "title": "10 text formatting tools",
+      "description": "Below the text field you will find a toolbar with buttons for quick text transformation:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiArrowUpLine",
+          "title": "UPPERCASE",
+          "description": "Converts all text to uppercase. Useful for headings, acronyms and highlighting text fragments."
+        },
+        {
+          "icon": "RiArrowDownLine",
+          "title": "lowercase",
+          "description": "Converts all text to lowercase. Useful for normalizing text copied from different sources."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Sentence case",
+          "description": "First letter of each sentence is capitalized, the rest lowercase. Standard format for continuous text."
+        },
+        {
+          "icon": "RiHeading",
+          "title": "Title Case",
+          "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "tOGGLE cASE",
+          "description": "Swaps uppercase to lowercase and vice versa. Useful when text was typed with Caps Lock on."
+        },
+        {
+          "icon": "RiSpace",
+          "title": "Remove extra spaces",
+          "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
+        },
+        {
+          "icon": "RiDeleteRow",
+          "title": "Remove empty lines",
+          "description": "Removes empty and redundant lines from text. Useful for cleaning text copied from websites."
+        },
+        {
+          "icon": "RiFilterLine",
+          "title": "Remove duplicate lines",
+          "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
+        },
+        {
+          "icon": "RiSortAsc",
+          "title": "Sort A→Z",
+          "description": "Sorts text lines alphabetically in ascending order. Useful for organizing lists, keywords and data."
+        },
+        {
+          "icon": "RiSortDesc",
+          "title": "Sort Z→A",
+          "description": "Sorts text lines alphabetically in descending order. Reverse sort order."
+        }
+      ]
     },
     {
       "type": "gap",
@@ -175,39 +239,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Who is the word counter for?",
-      "description": "A word counting tool for copywriters and beyond - here is who uses the counter most:",
+      "title": "Who is this word counter and text tools for?",
+      "description": "The tool is useful for anyone who works with text:",
       "grid": "three",
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Copywriters and content creators",
-          "description": "Check whether the text falls within the recommended range for a specific page type. The SEO word counter helps evaluate whether an article is developed enough."
+          "title": "Copywriters and editors",
+          "description": "Count words and characters, check platform limits, quickly change letter case and clean text before publishing."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Bloggers",
-          "description": "Monitor post length to keep publications consistent. Check reading time before publishing."
+          "title": "Bloggers and content creators",
+          "description": "Monitor post length, check reading time, remove duplicate lines and sort lists."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "E-commerce store owners",
-          "description": "Verify product descriptions against character limits on selling platforms (Amazon, eBay, Etsy)."
+          "title": "Store owners",
+          "description": "Verify product descriptions against character limits on platforms (Amazon, eBay, Etsy)."
         },
         {
           "icon": "RiSearchLine",
           "title": "SEO specialists",
-          "description": "Evaluate whether page content has an optimal length compared to competitors. Analyze the word-to-topic ratio."
+          "description": "Analyze content length, count unique words and assess text complexity based on average word length."
         },
         {
           "icon": "RiGraduationCapLine",
           "title": "Students and academics",
-          "description": "Check whether a paper meets the required word or character limit."
+          "description": "Check word or character limits in essays and research papers."
         },
         {
           "icon": "RiTranslate2",
           "title": "Translators",
-          "description": "Count characters without spaces for translation quotes (a standard billing unit)."
+          "description": "Count characters without spaces for quotes (the standard billing unit in translation)."
         }
       ]
     },
@@ -218,7 +282,7 @@
     {
       "type": "sectionInfo",
       "title": "Character limits on popular platforms",
-      "html": "<p class=\"text-mid mb-4\">The character counter is useful when creating content for platforms with length restrictions:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform / Element</th><th class=\"py-2 pr-4 font-semibold\">Character limit</th><th class=\"py-2 font-semibold\">Notes</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 characters</td><td class=\"text-primary-light0 py-2 text-sm\">Longer titles are truncated in search results.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 characters</td><td class=\"text-primary-light0 py-2 text-sm\">The description visible below the link in search results.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - product title</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 characters</td><td class=\"text-primary-light0 py-2 text-sm\">Short, specific title with the most important keywords.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - bullet points</td><td class=\"py-2 pr-4 whitespace-nowrap\">500 characters each</td><td class=\"text-primary-light0 py-2 text-sm\">Up to 5 bullet points describing key product features.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) - post</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 characters</td><td class=\"text-primary-light0 py-2 text-sm\">Standard limit for regular users.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn - post</td><td class=\"py-2 pr-4 whitespace-nowrap\">3,000 characters</td><td class=\"text-primary-light0 py-2 text-sm\">After ~210 characters a &quot;see more&quot; link appears.</td></tr></tbody></table></div>"
+      "html": "\"\\\"<p class=\\\\\\\"text-mid mb-4\\\\\\\">The character counter is useful when creating content for platforms with length restrictions:</p><div class=\\\\\\\"overflow-x-auto\\\\\\\"><table class=\\\\\\\"text-mid w-full text-left\\\\\\\"><thead><tr class=\\\\\\\"border-b border-neutral-200\\\\\\\"><th class=\\\\\\\"py-2 pr-4 font-semibold\\\\\\\">Platform / Element</th><th class=\\\\\\\"py-2 pr-4 font-semibold\\\\\\\">Character limit</th><th class=\\\\\\\"py-2 font-semibold\\\\\\\">Notes</th></tr></thead><tbody><tr class=\\\\\\\"border-b border-neutral-100\\\\\\\"><td class=\\\\\\\"py-2 pr-4\\\\\\\">Google - meta title</td><td class=\\\\\\\"py-2 pr-4 whitespace-nowrap\\\\\\\">50–60 characters</td><td class=\\\\\\\"text-primary-light0 py-2 text-sm\\\\\\\">Longer titles are truncated in search results.</td></tr><tr class=\\\\\\\"border-b border-neutral-100\\\\\\\"><td class=\\\\\\\"py-2 pr-4\\\\\\\">Google - meta description</td><td class=\\\\\\\"py-2 pr-4 whitespace-nowrap\\\\\\\">150–160 characters</td><td class=\\\\\\\"text-primary-light0 py-2 text-sm\\\\\\\">The description visible below the link in search results.</td></tr><tr class=\\\\\\\"border-b border-neutral-100\\\\\\\"><td class=\\\\\\\"py-2 pr-4\\\\\\\">Amazon - product title</td><td class=\\\\\\\"py-2 pr-4 whitespace-nowrap\\\\\\\">200 characters</td><td class=\\\\\\\"text-primary-light0 py-2 text-sm\\\\\\\">Short, specific title with the most important keywords.</td></tr><tr class=\\\\\\\"border-b border-neutral-100\\\\\\\"><td class=\\\\\\\"py-2 pr-4\\\\\\\">Amazon - bullet points</td><td class=\\\\\\\"py-2 pr-4 whitespace-nowrap\\\\\\\">500 characters each</td><td class=\\\\\\\"text-primary-light0 py-2 text-sm\\\\\\\">Up to 5 bullet points describing key product features.</td></tr><tr class=\\\\\\\"border-b border-neutral-100\\\\\\\"><td class=\\\\\\\"py-2 pr-4\\\\\\\">X (Twitter) - post</td><td class=\\\\\\\"py-2 pr-4 whitespace-nowrap\\\\\\\">280 characters</td><td class=\\\\\\\"text-primary-light0 py-2 text-sm\\\\\\\">Standard limit for regular users.</td></tr><tr><td class=\\\\\\\"py-2 pr-4\\\\\\\">LinkedIn - post</td><td class=\\\\\\\"py-2 pr-4 whitespace-nowrap\\\\\\\">3,000 characters</td><td class=\\\\\\\"text-primary-light0 py-2 text-sm\\\\\\\">After ~210 characters a &quot;see more&quot; link appears.</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -230,34 +294,34 @@
       "grid": "two",
       "items": [
         {
-          "icon": "RiInfinityLine",
-          "title": "Six page types with recommended ranges",
-          "description": "Product description, service page, homepage, landing page, blog post, and guide - each type has its own ranges based on analyses."
+          "icon": "RiBarChartLine",
+          "title": "8 text metrics",
+          "description": "Words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time — all in one panel."
+        },
+        {
+          "icon": "RiTextWrap",
+          "title": "10 formatting tools",
+          "description": "Letter case conversion, removing spaces, empty lines, duplicates and sorting — without installing additional software."
         },
         {
           "icon": "RiUserLine",
           "title": "Local processing in the browser",
-          "description": "Your text is never sent to any server - all analysis happens locally on your device."
-        },
-        {
-          "icon": "RiCheckboxCircleLine",
-          "title": "Text length evaluation",
-          "description": "You don't just count words - you get information on whether the length is appropriate for the selected page type."
-        },
-        {
-          "icon": "RiBarChartLine",
-          "title": "SEO-based ranges",
-          "description": "Recommended lengths are based on analyses of content that ranks well in search engines."
-        },
-        {
-          "icon": "RiTimerLine",
-          "title": "Reading time",
-          "description": "You immediately know how many minutes it will take readers to go through the text."
+          "description": "Your text is never sent to any server. All analysis and transformation happens locally on your device."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Copy report",
-          "description": "The Copy Report button copies a summary with all statistics and the length evaluation to your clipboard."
+          "title": "Copy and clear text",
+          "description": "Copy the modified text to your clipboard with one click or clear the field to start over."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Instant results",
+          "description": "Statistics update in real time as you type or paste text. No waiting for processing."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "No registration or limits",
+          "description": "The tool is completely free. No registration, login or personal data required."
         }
       ]
     },
@@ -271,34 +335,34 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Does text length affect Google rankings?",
-          "answer": "Text length by itself is not a ranking factor. Google evaluates whether the content answers the user's question and is valuable to them. Shorter text that comprehensively answers a question can rank well - what matters is value for the reader. The ranges in this tool are based on analyses of content that ranks well in search results.",
-          "answerSchemaText": "Text length is not a direct ranking factor. Google evaluates the value of content for the user."
-        },
-        {
-          "question": "Why are the word ranges so broad?",
-          "answer": "The same page type may require different lengths depending on topic complexity. A simple product description (e.g., a mug) is 80–150 words - just material, capacity, and use case. A laptop description is 300–400 words because buyers ask about the processor, memory, screen, and battery. Similarly with services: a local plumber's page is 500–700 words, while a comprehensive B2B service implementation page with process steps and FAQ is 1,200–1,500 words.",
-          "answerSchemaText": "The difference comes from topic complexity - a simple product needs fewer words than a complex one."
-        },
-        {
-          "question": "How should I interpret \"too short\" or \"too long\"?",
-          "answer": "The evaluation shows where your text falls relative to typical content of that type. If the text is marked \"too short\" but answers all of the reader's questions - the length is fine. If it is \"too long\" but every paragraph adds new information - the length is justified.",
-          "answerSchemaText": "The evaluation shows where the text falls relative to typical content. If the text answers the reader's questions, the length is appropriate."
-        },
-        {
           "question": "How does the reading time calculator work?",
-          "answer": "The tool divides the word count by 200 - the average reading speed for typical text. Technical or demanding text (e.g., documentation, terms of service) will be read slower. A light lifestyle article - faster. The result is an approximate value that helps estimate how long a reader will spend with the text.",
+          "answer": "The tool divides the word count by 200 — the average reading speed for typical text. Technical or demanding text (e.g., documentation, terms of service) will be read slower. A light lifestyle article — faster. The result is an approximate value that helps estimate how long a reader will spend with the text.",
           "answerSchemaText": "The tool assumes an average reading speed of 200 words per minute. This is an approximate value for typical text."
         },
         {
-          "question": "Where do the recommended ranges come from?",
-          "answer": "The ranges are based on analyses of content that ranks well in search engines and on content creation best practices. They are intentionally broad because the same page type may require different lengths depending on industry, topic complexity, and reader needs. The ranges serve as a starting point for evaluating whether text falls within a typical range for a specific page type.",
-          "answerSchemaText": "The ranges are based on SEO analyses and content creation best practices."
+          "question": "What is the difference between characters with and without spaces?",
+          "answer": "Characters with spaces includes all characters in the text including spaces, tabs and newlines. Characters without spaces includes only letters, digits and punctuation. Platforms like Amazon or eBay have limits in characters with spaces. Translation agencies and print shops bill by characters without spaces.",
+          "answerSchemaText": "Characters with spaces includes all characters, characters without spaces excludes spaces and tabs. The difference matters for platform limits and billing."
         },
         {
-          "question": "Can I copy the report with statistics?",
-          "answer": "Yes. Below the statistics you will find a Copy Report button - it copies a summary with word count, character count, paragraphs, reading time, and length evaluation to your clipboard. You can paste it into a document or send it to collaborators.",
-          "answerSchemaText": "Yes. Click the Copy Report button below the statistics. A summary with all metrics and evaluation will be copied to your clipboard."
+          "question": "How does the letter case conversion work?",
+          "answer": "The tool offers 5 conversion modes: UPPERCASE (all text to uppercase), lowercase (all to lowercase), Sentence case (first letter of each sentence capitalized), Title Case (first letter of each word capitalized) and tOGGLE cASE (swaps uppercase to lowercase and vice versa). Click the appropriate button on the toolbar below the text field.",
+          "answerSchemaText": "The tool has 5 letter case conversion modes: uppercase, lowercase, sentence case, title case and toggle case."
+        },
+        {
+          "question": "What does the 'unique words' metric mean?",
+          "answer": "Unique words is the count of non-repeating words in the text. If the word 'marketing' appears 5 times, it counts as 1 unique word. A high ratio of unique words to total words indicates richer vocabulary and less repetitive text.",
+          "answerSchemaText": "Unique words is the count of non-repeating words. A high ratio to total words indicates richer vocabulary."
+        },
+        {
+          "question": "How does removing duplicate lines work?",
+          "answer": "The function compares each line of text with the others and keeps only the first occurrence. Repeating lines are removed. Useful for cleaning keyword lists, email addresses, spreadsheet data and any collections where duplicates may appear.",
+          "answerSchemaText": "The tool compares text lines and keeps only unique ones, removing repetitions."
+        },
+        {
+          "question": "Is my text safe?",
+          "answer": "Yes. All analysis and text processing happens exclusively in your browser — your text is never sent to any server. The tool does not save or store pasted text. After closing the page, the text is gone permanently.",
+          "answerSchemaText": "Yes. Text is processed locally in the browser and is never sent to a server."
         }
       ]
     },

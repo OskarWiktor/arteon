@@ -99,15 +99,18 @@
       "items": [
         {
           "title": "1. Añada una imagen",
-          "description": "Arrastre un archivo sobre el área designada o seleccione una imagen desde su dispositivo. Formatos admitidos: JPG, PNG, WebP."
+          "description": "Arrastre un archivo sobre el área designada o seleccione una imagen desde su dispositivo. Formatos admitidos: JPG, PNG, WebP.",
+          "icon": "RiImageLine"
         },
         {
           "title": "2. Configure las dimensiones",
-          "description": "Introduzca las dimensiones en píxeles o seleccione un formato predefinido (Instagram, Facebook, YouTube, LinkedIn, imagen OG)."
+          "description": "Introduzca las dimensiones en píxeles o seleccione un formato predefinido (Instagram, Facebook, YouTube, LinkedIn, imagen OG).",
+          "icon": "RiCropLine"
         },
         {
           "title": "3. Descargue",
-          "description": "Ajuste el recorte, elija el formato de archivo (JPG, PNG, WebP), configure la calidad y descargue la imagen terminada."
+          "description": "Ajuste el recorte, elija el formato de archivo (JPG, PNG, WebP), configure la calidad y descargue la imagen terminada.",
+          "icon": "RiDownloadLine"
         }
       ]
     },

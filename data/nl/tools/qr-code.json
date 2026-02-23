@@ -2,19 +2,25 @@
   "toolKey": "qrCode",
   "locale": "nl",
   "metadata": {
-    "title": "Gratis QR-code generator \u2013 PNG & SVG, zonder registratie",
+    "title": "Gratis QR-code generator – PNG & SVG, zonder registratie",
     "description": "Maak QR-codes voor websites, vCards, menu's of flyers in seconden. Exporteer als PNG & SVG. Pas kleuren en formaat aan. Zonder registratie, zonder limieten.",
     "ogImage": "/assets/tools/qr-code-generator/gratis-qr-code-generator-nl.webp",
     "path": "/nl/tools/gratis-qr-code-generator"
   },
   "hero": {
-    "title": "QR-code generator \u2013 Gratis, zonder registratie",
+    "title": "QR-code generator – Gratis, zonder registratie",
     "description": "Maak een QR-code voor een website, vCard-visitekaartje, e-mail, telefoon of tekst. Pas kleuren, formaat en foutcorrectieniveau aan en download een kant-en-klaar PNG- of SVG-bestand.",
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/nl/tools", "label": "Tools" },
-    "third": { "href": "/nl/tools/gratis-qr-code-generator", "label": "Gratis QR-code generator" }
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/gratis-qr-code-generator",
+      "label": "Gratis QR-code generator"
+    }
   },
   "schemas": {
     "software": {
@@ -52,33 +58,66 @@
       "name": "Hoe de gratis QR-code generator te gebruiken",
       "description": "Hoe een QR-code te maken voor een website, vCard-visitekaartje, e-mail of telefoon - van het kiezen van het gegevenstype tot het downloaden van het kant-en-klare bestand voor afdrukken.",
       "steps": [
-        { "name": "Kies het gegevenstype", "text": "Bepaal wat de QR-code moet bevatten: URL, tekst, visitekaartje (vCard), e-mail of telefoonnummer." },
-        { "name": "Voer de gegevens in", "text": "Vul de juiste velden in. Voor URL voert u het websiteadres in; voor vCard geeft u contactgegevens op." },
-        { "name": "Pas het uiterlijk aan", "text": "Kies formaat, marge, code- en achtergrondkleuren en foutcorrectieniveau." },
-        { "name": "Download de code", "text": "De kant-en-klare QR-code kan worden gedownload als PNG-bestand (voor print en web) of SVG (vector, schaalt zonder kwaliteitsverlies)." }
+        {
+          "name": "Kies het gegevenstype",
+          "text": "Bepaal wat de QR-code moet bevatten: URL, tekst, visitekaartje (vCard), e-mail of telefoonnummer."
+        },
+        {
+          "name": "Voer de gegevens in",
+          "text": "Vul de juiste velden in. Voor URL voert u het websiteadres in; voor vCard geeft u contactgegevens op."
+        },
+        {
+          "name": "Pas het uiterlijk aan",
+          "text": "Kies formaat, marge, code- en achtergrondkleuren en foutcorrectieniveau."
+        },
+        {
+          "name": "Download de code",
+          "text": "De kant-en-klare QR-code kan worden gedownload als PNG-bestand (voor print en web) of SVG (vector, schaalt zonder kwaliteitsverlies)."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Wat is een QR-code en hoe werkt het?",
       "html": "<p class=\"text-mid\">Een QR-code (Quick Response) is een tweedimensionale barcode die kan worden gescand met een smartphonecamera. In tegenstelling tot traditionele barcodes slaan QR-codes gegevens zowel horizontaal als verticaal op, waardoor ze aanzienlijk meer informatie kunnen coderen - tot ongeveer 3.000 alfanumerieke tekens.</p><p class=\"text-mid mt-3\">De QR-code werd in 1994 ontwikkeld door het Japanse bedrijf Denso Wave (onderdeel van de Toyota-groep) voor het traceren van auto-onderdelen. Tegenwoordig worden QR-codes breed ingezet in marketing, horeca, logistiek en zakelijke communicatie. Ze werden bijzonder populair tijdens de COVID-19-pandemie, toen restaurants papieren menu's begonnen te vervangen door QR-codes.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Hoe de QR-code generator te gebruiken",
       "description": "Een QR-code maken duurt slechts enkele seconden:",
       "grid": "three",
       "items": [
-        { "title": "1. Kies het gegevenstype", "description": "Selecteer wat u wilt coderen: URL, tekst, vCard-visitekaartje, e-mail of telefoonnummer." },
-        { "title": "2. Voer de gegevens in", "description": "Vul de juiste velden in - websiteadres, contactgegevens of berichtinhoud." },
-        { "title": "3. Download de code", "description": "Pas het uiterlijk aan (kleuren, formaat, marge) en download als PNG of SVG." }
+        {
+          "title": "1. Kies het gegevenstype",
+          "description": "Selecteer wat u wilt coderen: URL, tekst, vCard-visitekaartje, e-mail of telefoonnummer.",
+          "icon": "RiListCheck2"
+        },
+        {
+          "title": "2. Voer de gegevens in",
+          "description": "Vul de juiste velden in - websiteadres, contactgegevens of berichtinhoud.",
+          "icon": "RiEditLine"
+        },
+        {
+          "title": "3. Download de code",
+          "description": "Pas het uiterlijk aan (kleuren, formaat, marge) en download als PNG of SVG.",
+          "icon": "RiDownloadLine"
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "QR-code typen - URL, vCard, e-mail, telefoon, tekst",
@@ -100,18 +139,32 @@
           "title": "vCard-visitekaartje",
           "description": "Een digitaal visitekaartje met contactgegevens (naam, bedrijf, telefoon, e-mail, adres). Na het scannen biedt de telefoon aan om het contact op te slaan. Ideaal voor professionele visitekaartjes."
         },
-        { "icon": "RiMailLine", "title": "e-mail", "description": "Een e-mailadres met optioneel onderwerp en inhoud. Na het scannen opent de telefoon de mail-app met een vooringevuld formulier." },
-        { "icon": "RiPhoneLine", "title": "Telefoon", "description": "Een telefoonnummer. Na het scannen biedt de telefoon aan om te bellen. Handig voor hotlines en klantenservice." }
+        {
+          "icon": "RiMailLine",
+          "title": "e-mail",
+          "description": "Een e-mailadres met optioneel onderwerp en inhoud. Na het scannen opent de telefoon de mail-app met een vooringevuld formulier."
+        },
+        {
+          "icon": "RiPhoneLine",
+          "title": "Telefoon",
+          "description": "Een telefoonnummer. Na het scannen biedt de telefoon aan om te bellen. Handig voor hotlines en klantenservice."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Technische specificaties van de QR-code",
-      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Capaciteit</span><span class=\"text-mid text-sm!\">tot 4.296 tekens</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Foutcorrectie</span><span class=\"text-mid text-sm!\">7% \u2013 30%</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Min. afdrukformaat</span><span class=\"text-mid text-sm!\">2 \u00d7 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Min. contrast</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Marge</span><span class=\"text-mid text-sm!\">min. 4 modules</span></div></div>",
-      "html": "<p class=\"text-mid mb-4\">Kennis van de technische parameters helpt bij het maken van QR-codes die in alle omstandigheden leesbaar zijn:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Gegevenscapaciteit</strong> - een QR-code kan tot 7.089 cijfers, 4.296 alfanumerieke tekens of 2.953 bytes binaire gegevens bevatten. In de praktijk is dit meer dan voldoende voor URL's en visitekaartjes.</li><li><strong>Reed-Solomon foutcorrectie</strong> - een wiskundig algoritme dat het lezen van de code mogelijk maakt zelfs als een deel beschadigd of bedekt is. Niveaus: L (7%), M (15%), Q (25%), H (30%).</li><li><strong>Marge</strong> - het witte gebied rond de code dat nodig is voor correct scannen. Het aanbevolen minimum is 4 modules (code-eenheden).</li><li><strong>Minimaal afdrukformaat</strong> - voor standaard scanomstandigheden moet de code minstens 2\u00d72 cm zijn. Voor groot formaat afdrukken (banners, billboards) schaal dienovereenkomstig op.</li><li><strong>Contrast</strong> - de contrastverhouding tussen code en achtergrond moet minimaal 3:1 zijn. De generator waarschuwt automatisch bij te laag contrast.</li></ul>"
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Capaciteit</span><span class=\"text-mid text-sm!\">tot 4.296 tekens</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Foutcorrectie</span><span class=\"text-mid text-sm!\">7% – 30%</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Min. afdrukformaat</span><span class=\"text-mid text-sm!\">2 × 2 cm</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Min. contrast</span><span class=\"text-mid text-sm!\">3:1</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Marge</span><span class=\"text-mid text-sm!\">min. 4 modules</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Kennis van de technische parameters helpt bij het maken van QR-codes die in alle omstandigheden leesbaar zijn:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Gegevenscapaciteit</strong> - een QR-code kan tot 7.089 cijfers, 4.296 alfanumerieke tekens of 2.953 bytes binaire gegevens bevatten. In de praktijk is dit meer dan voldoende voor URL's en visitekaartjes.</li><li><strong>Reed-Solomon foutcorrectie</strong> - een wiskundig algoritme dat het lezen van de code mogelijk maakt zelfs als een deel beschadigd of bedekt is. Niveaus: L (7%), M (15%), Q (25%), H (30%).</li><li><strong>Marge</strong> - het witte gebied rond de code dat nodig is voor correct scannen. Het aanbevolen minimum is 4 modules (code-eenheden).</li><li><strong>Minimaal afdrukformaat</strong> - voor standaard scanomstandigheden moet de code minstens 2×2 cm zijn. Voor groot formaat afdrukken (banners, billboards) schaal dienovereenkomstig op.</li><li><strong>Contrast</strong> - de contrastverhouding tussen code en achtergrond moet minimaal 3:1 zijn. De generator waarschuwt automatisch bij te laag contrast.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "QR-code toepassingen - visitekaartjes, flyers, restaurantmenu's",
@@ -121,56 +174,145 @@
         {
           "icon": "RiContactsBookLine",
           "title": "Visitekaartjes",
-          "description": "Een vCard-code op een visitekaartje laat de ontvanger het contact opslaan met \u00e9\u00e9n scan, zonder handmatig gegevens in te typen."
+          "description": "Een vCard-code op een visitekaartje laat de ontvanger het contact opslaan met één scan, zonder handmatig gegevens in te typen."
         },
         {
           "icon": "RiRestaurantLine",
-          "title": "Restaurant- en caf\u00e9menu's",
-          "description": "Een QR-code op tafel verwijst naar een digitaal menu. Een hygi\u00ebnische oplossing die populair werd tijdens de COVID-19-pandemie."
+          "title": "Restaurant- en cafémenu's",
+          "description": "Een QR-code op tafel verwijst naar een digitaal menu. Een hygiënische oplossing die populair werd tijdens de COVID-19-pandemie."
         },
-        { "icon": "RiPrinterLine", "title": "Flyers en posters", "description": "QR-code met link naar productpagina, registratieformulier of speciale aanbieding." },
-        { "icon": "RiBuilding2Line", "title": "Productverpakkingen", "description": "Link naar gebruiksaanwijzing, garantiekaart of fabrikantwebsite." },
-        { "icon": "RiHospitalLine", "title": "Artsenpraktijken", "description": "QR-codes op pati\u00ebntkaarten die linken naar het pati\u00ebntportaal of afsprakensysteem." },
-        { "icon": "RiHome4Line", "title": "Vastgoed", "description": "Codes op spandoeken die linken naar de volledige advertentie met fotogalerij en details." },
-        { "icon": "RiTruckLine", "title": "Magazijnen en logistiek", "description": "QR-labels voor het traceren van productbatches, magazijnlocaties en verzendgeschiedenis." },
-        { "icon": "RiShoppingCartLine", "title": "E-commerce", "description": "Codes op verpakkingen die linken naar retourinstructies, klantrecensies of loyaliteitsprogramma's." },
-        { "icon": "RiCalendarEventLine", "title": "Evenementen en conferenties", "description": "Tickets met QR-codes voor snelle verificatie bij de ingang." }
+        {
+          "icon": "RiPrinterLine",
+          "title": "Flyers en posters",
+          "description": "QR-code met link naar productpagina, registratieformulier of speciale aanbieding."
+        },
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Productverpakkingen",
+          "description": "Link naar gebruiksaanwijzing, garantiekaart of fabrikantwebsite."
+        },
+        {
+          "icon": "RiHospitalLine",
+          "title": "Artsenpraktijken",
+          "description": "QR-codes op patiëntkaarten die linken naar het patiëntportaal of afsprakensysteem."
+        },
+        {
+          "icon": "RiHome4Line",
+          "title": "Vastgoed",
+          "description": "Codes op spandoeken die linken naar de volledige advertentie met fotogalerij en details."
+        },
+        {
+          "icon": "RiTruckLine",
+          "title": "Magazijnen en logistiek",
+          "description": "QR-labels voor het traceren van productbatches, magazijnlocaties en verzendgeschiedenis."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "E-commerce",
+          "description": "Codes op verpakkingen die linken naar retourinstructies, klantrecensies of loyaliteitsprogramma's."
+        },
+        {
+          "icon": "RiCalendarEventLine",
+          "title": "Evenementen en conferenties",
+          "description": "Tickets met QR-codes voor snelle verificatie bij de ingang."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "QR-code uiterlijk aanpassen",
       "variant": "left",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Formaat</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Marge</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Codekleur</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Achtergrondkleur</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
-      "html": "<p class=\"text-mid mb-4\">De generator laat u meerdere parameters aanpassen die het uiterlijk en de leesbaarheid van de code be\u00efnvloeden:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Formaat (px)</strong> - codedimensie in pixels. Voor standaard afdrukken (flyers, visitekaartjes) kies 300\u2013500 px. Voor digitaal gebruik is 150\u2013200 px voldoende.</li><li><strong>Marge</strong> - wit gebied rond de code dat nodig is voor correct scannen. Aanbevolen waarde is 2\u20134. Een waarde van 0 kan scannen op een donkere achtergrond bemoeilijken.</li><li><strong>QR-codekleur</strong> - standaard zwart (#000000). U kunt dit wijzigen naar elke donkere kleur die past bij uw visuele identiteit.</li><li><strong>Achtergrondkleur</strong> - standaard wit (#ffffff). U kunt dit wijzigen naar elke lichte kleur. De generator waarschuwt als het contrast te laag is.</li></ul><p class=\"text-mid mt-3\"><strong>Tip:</strong> Zorg voor hoog contrast tussen code en achtergrond (minimaal 3:1). Een donkere code op lichte achtergrond scant het makkelijkst.</p>"
+      "html": "<p class=\"text-mid mb-4\">De generator laat u meerdere parameters aanpassen die het uiterlijk en de leesbaarheid van de code beïnvloeden:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Formaat (px)</strong> - codedimensie in pixels. Voor standaard afdrukken (flyers, visitekaartjes) kies 300–500 px. Voor digitaal gebruik is 150–200 px voldoende.</li><li><strong>Marge</strong> - wit gebied rond de code dat nodig is voor correct scannen. Aanbevolen waarde is 2–4. Een waarde van 0 kan scannen op een donkere achtergrond bemoeilijken.</li><li><strong>QR-codekleur</strong> - standaard zwart (#000000). U kunt dit wijzigen naar elke donkere kleur die past bij uw visuele identiteit.</li><li><strong>Achtergrondkleur</strong> - standaard wit (#ffffff). U kunt dit wijzigen naar elke lichte kleur. De generator waarschuwt als het contrast te laag is.</li></ul><p class=\"text-mid mt-3\"><strong>Tip:</strong> Zorg voor hoog contrast tussen code en achtergrond (minimaal 3:1). Een donkere code op lichte achtergrond scant het makkelijkst.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Foutcorrectieniveaus - L, M, Q, H",
       "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Laag)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Midden)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Kwartiel)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (Hoog)</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
       "html": "<p class=\"text-mid mb-4\">Foutcorrectie is een mechanisme dat het lezen van een QR-code mogelijk maakt zelfs als een deel beschadigd, vuil of bedekt is. De generator gebruikt het Reed-Solomon-algoritme, standaard in QR-codes.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Laag) - 7%</strong> - minste redundantie, code is het meest compact. Kies wanneer de code in ideale omstandigheden wordt gebruikt (scherm, hoogwaardig drukwerk).</li><li><strong>M (Midden) - 15%</strong> - standaardwaarde, goede balans tussen capaciteit en bestendigheid. Geschikt voor de meeste toepassingen.</li><li><strong>Q (Kwartiel) - 25%</strong> - grotere bestendigheid tegen beschadiging. Kies voor codes gedrukt op materialen die vuil kunnen worden.</li><li><strong>H (Hoog) - 30%</strong> - hoogste bestendigheid. Aanbevolen voor buitendrukwerk, verpakkingen en situaties waar de code gedeeltelijk bedekt kan zijn (bijv. een logo in het midden).</li></ul><p class=\"text-mid mt-3\"><strong>Let op:</strong> Een hoger correctieniveau betekent een grotere en complexere code. Bij veel gegevens en niveau H kan de code zeer dicht worden.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionFeatureComparison",
       "title": "PNG vs SVG - welk formaat kiezen voor afdrukken?",
       "plans": [
-        { "id": "png", "name": "PNG (raster)" },
-        { "id": "svg", "name": "SVG (vector)", "highlighted": true }
+        {
+          "id": "png",
+          "name": "PNG (raster)"
+        },
+        {
+          "id": "svg",
+          "name": "SVG (vector)",
+          "highlighted": true
+        }
       ],
       "features": [
-        { "name": "Websites en social media", "values": { "png": true, "svg": true } },
-        { "name": "Flyers en visitekaartjes", "values": { "png": true, "svg": true } },
-        { "name": "Posters en banners (groot formaat)", "values": { "png": false, "svg": true } },
-        { "name": "Schalen zonder kwaliteitsverlies", "values": { "png": false, "svg": true } },
-        { "name": "Bewerken in grafisch programma", "values": { "png": false, "svg": true } },
-        { "name": "Kleiner bestandsformaat", "values": { "png": false, "svg": true } },
-        { "name": "Presentaties", "values": { "png": true, "svg": true } }
+        {
+          "name": "Websites en social media",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Flyers en visitekaartjes",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Posters en banners (groot formaat)",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Schalen zonder kwaliteitsverlies",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Bewerken in grafisch programma",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Kleiner bestandsformaat",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Presentaties",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Tips voor het afdrukken van QR-codes",
@@ -180,19 +322,34 @@
         {
           "icon": "RiRulerLine",
           "title": "Minimaal formaat",
-          "description": "De code moet minstens 2\u00d72 cm zijn voor scannen op korte afstand. Hoe groter de scanafstand, hoe groter de code moet zijn."
+          "description": "De code moet minstens 2×2 cm zijn voor scannen op korte afstand. Hoe groter de scanafstand, hoe groter de code moet zijn."
         },
-        { "icon": "RiContrastLine", "title": "Contrast", "description": "Donkere code op lichte achtergrond. Vermijd pastelkleuren en laag contrast." },
+        {
+          "icon": "RiContrastLine",
+          "title": "Contrast",
+          "description": "Donkere code op lichte achtergrond. Vermijd pastelkleuren en laag contrast."
+        },
         {
           "icon": "RiLayoutGridLine",
           "title": "Marge rond de code",
           "description": "Houd lege ruimte rond de code. Plaats geen andere grafische elementen te dichtbij - de marge is essentieel voor correct scannen."
         },
-        { "icon": "RiEyeLine", "title": "Testen", "description": "Test de code op verschillende telefoons en in verschillende lichtomstandigheden voordat u in bulk afdrukt." },
-        { "icon": "RiShieldCheckLine", "title": "Correctieniveau", "description": "Kies voor buitendrukwerk en materialen die gevoelig zijn voor beschadiging niveau Q of H." }
+        {
+          "icon": "RiEyeLine",
+          "title": "Testen",
+          "description": "Test de code op verschillende telefoons en in verschillende lichtomstandigheden voordat u in bulk afdrukt."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Correctieniveau",
+          "description": "Kies voor buitendrukwerk en materialen die gevoelig zijn voor beschadiging niveau Q of H."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Wat maakt deze QR-code generator bijzonder?",
@@ -205,7 +362,7 @@
         },
         {
           "icon": "RiLockLine",
-          "title": "Vijf gegevenstypen in \u00e9\u00e9n tool",
+          "title": "Vijf gegevenstypen in één tool",
           "description": "URL, tekst, vCard-visitekaartje, e-mail en telefoon - elk type genereert een QR-code in de juiste standaard."
         },
         {
@@ -218,11 +375,22 @@
           "title": "Vier foutcorrectieniveaus",
           "description": "Het Reed-Solomon-algoritme laat u de bestendigheid van de code tegen beschadiging kiezen - van 7% (L) tot 30% (H)."
         },
-        { "icon": "RiEyeLine", "title": "Live voorbeeld", "description": "U ziet het resultaat direct na het invoeren van gegevens, zonder op \"Genereren\" te klikken." },
-        { "icon": "RiDownloadLine", "title": "PNG- en SVG-export", "description": "Download de code in het formaat dat past bij uw gebruik." }
+        {
+          "icon": "RiEyeLine",
+          "title": "Live voorbeeld",
+          "description": "U ziet het resultaat direct na het invoeren van gegevens, zonder op \"Genereren\" te klikken."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "PNG- en SVG-export",
+          "description": "Download de code in het formaat dat past bij uw gebruik."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Veelgestelde vragen over de QR-code generator",
@@ -245,8 +413,8 @@
         },
         {
           "question": "Welk QR-codeformaat moet ik kiezen voor een visitekaartje?",
-          "answer": "Voor drukwerk (visitekaartjes, flyers) moet de code minstens 2\u00d72 cm zijn, optimaal 3\u00d73 cm. In de generator komt dit overeen met een resolutie van 300 px bij standaard afdrukkwaliteit (300 DPI). Kies voor grotere formaten (posters, banners) een groter formaat of SVG-formaat.",
-          "answerSchemaText": "Minstens 2\u00d72 cm (300 px bij 300 DPI). Optimaal 3\u00d73 cm voor visitekaartjes."
+          "answer": "Voor drukwerk (visitekaartjes, flyers) moet de code minstens 2×2 cm zijn, optimaal 3×3 cm. In de generator komt dit overeen met een resolutie van 300 px bij standaard afdrukkwaliteit (300 DPI). Kies voor grotere formaten (posters, banners) een groter formaat of SVG-formaat.",
+          "answerSchemaText": "Minstens 2×2 cm (300 px bij 300 DPI). Optimaal 3×3 cm voor visitekaartjes."
         },
         {
           "question": "Kan ik een logo in het midden van de QR-code plaatsen?",
@@ -261,7 +429,7 @@
         {
           "question": "Kan ik gegenereerde QR-codes commercieel gebruiken?",
           "answer": "Ja. Gegenereerde QR-codes kunnen vrij worden gebruikt in elk project - commercieel en niet-commercieel, zonder licentiebeperkingen.",
-          "answerSchemaText": "Ja, zonder beperkingen in commerci\u00eble en niet-commerci\u00eble projecten."
+          "answerSchemaText": "Ja, zonder beperkingen in commerciële en niet-commerciële projecten."
         },
         {
           "question": "Wat is het verschil tussen een vCard-visitekaartje en een platte tekst QR-code?",
@@ -270,8 +438,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Ontdek andere gratis tools" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ontdek andere gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

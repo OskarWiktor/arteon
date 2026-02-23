@@ -92,15 +92,18 @@
       "items": [
         {
           "title": "1. Zadejte základní barvu",
-          "description": "Zadejte kód HEX (např. #496ba2) do textového pole nebo vyberte barvu z color pickeru. Můžete také použít tlačítko Náhodná barva."
+          "description": "Zadejte kód HEX (např. #496ba2) do textového pole nebo vyberte barvu z color pickeru. Můžete také použít tlačítko Náhodná barva.",
+          "icon": "RiDropLine"
         },
         {
           "title": "2. Potvrďte svůj výběr",
-          "description": "Po kliknutí na tlačítko Update Color nástroj automaticky vygeneruje 9 palet na základě různých schémat barevné harmonie."
+          "description": "Po kliknutí na tlačítko Update Color nástroj automaticky vygeneruje 9 palet na základě různých schémat barevné harmonie.",
+          "icon": "RiCheckboxCircleLine"
         },
         {
           "title": "3. Zkopírujte potřebné barvy",
-          "description": "U každé barvy je tlačítko Kopírovat – kód HEX jde do schránky a můžete jej vložit přímo do projektu."
+          "description": "U každé barvy je tlačítko Kopírovat – kód HEX jde do schránky a můžete jej vložit přímo do projektu.",
+          "icon": "RiFileCopyLine"
         }
       ]
     },

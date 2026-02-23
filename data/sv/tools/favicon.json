@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/sv/verktyg", "label": "Verktyg" },
-    "third": { "href": "/sv/verktyg/gratis-favicon-generator", "label": "Favicon-generator" }
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/gratis-favicon-generator",
+      "label": "Favicon-generator"
+    }
   },
   "schemas": {
     "software": {
@@ -40,51 +46,106 @@
       "description": "Hur man genererar favicon.ico och PNG-ikoner från en bild för webbläsare och mobila enheter.",
       "totalTime": "PT2M",
       "steps": [
-        { "name": "Ladda upp bild", "text": "Dra och släpp filen i det markerade området eller välj den från din enhet. Stödda format är JPG, PNG, SVG och WebP." },
-        { "name": "Beskär bilden", "text": "Justera beskärningsområdet för att välja lämplig del av bilden för favicon." },
-        { "name": "Kontrollera förhandsgranskning", "text": "Se hur favicon ser ut i webbläsarfliken och i olika storlekar." },
-        { "name": "Ladda ner ikoner", "text": "Ladda ner favicon.ico och den kompletta uppsättningen PNG-ikoner i en ZIP-fil." }
+        {
+          "name": "Ladda upp bild",
+          "text": "Dra och släpp filen i det markerade området eller välj den från din enhet. Stödda format är JPG, PNG, SVG och WebP."
+        },
+        {
+          "name": "Beskär bilden",
+          "text": "Justera beskärningsområdet för att välja lämplig del av bilden för favicon."
+        },
+        {
+          "name": "Kontrollera förhandsgranskning",
+          "text": "Se hur favicon ser ut i webbläsarfliken och i olika storlekar."
+        },
+        {
+          "name": "Ladda ner ikoner",
+          "text": "Ladda ner favicon.ico och den kompletta uppsättningen PNG-ikoner i en ZIP-fil."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Vad är en favicon och varför är den viktig?",
       "html": "<p class=\"text-mid\">En favicon är en liten ikon som visas i webbläsarfliken, i bokmärkeslistan och på telefonens startskärm. Det är ett av de första elementen som användaren ser – redan innan sidan laddats klart.</p><p class=\"text-mid mt-3\">En professionell favicon bygger varumärkesigenkänning och gör det enklare för användaren att hitta din sida bland många öppna flikar. Avsaknad av favicon kan ge ett oprofessionellt intryck och minska besökarnas förtroende.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Hur man använder favicon-generatorn",
       "description": "Att generera favicon tar bara några minuter:",
       "grid": "three",
       "items": [
-        { "title": "1. Ladda upp bild", "description": "Dra och släpp filen i det markerade området eller välj den från din enhet. En kvadratisk bild fungerar bäst." },
-        { "title": "2. Beskär och justera", "description": "Justera beskärningsområdet för att välja lämplig del av bilden. Se hur den ser ut i olika storlekar." },
-        { "title": "3. Ladda ner ikoner", "description": "Ladda ner favicon.ico och den kompletta uppsättningen PNG-ikoner i en ZIP-fil. Alla ikoner är redo att användas." }
+        {
+          "title": "1. Ladda upp bild",
+          "description": "Dra och släpp filen i det markerade området eller välj den från din enhet. En kvadratisk bild fungerar bäst.",
+          "icon": "RiImageLine"
+        },
+        {
+          "title": "2. Beskär och justera",
+          "description": "Justera beskärningsområdet för att välja lämplig del av bilden. Se hur den ser ut i olika storlekar.",
+          "icon": "RiAspectRatioLine"
+        },
+        {
+          "title": "3. Ladda ner ikoner",
+          "description": "Ladda ner favicon.ico och den kompletta uppsättningen PNG-ikoner i en ZIP-fil. Alla ikoner är redo att användas.",
+          "icon": "RiDownloadLine"
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Vilka ikoner skapar generatorn?",
       "html": "<p class=\"text-mid mb-6\">Varje storlek har sitt användningsområde:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Klassiskt format som stöds av alla webbläsare. Visas i webbläsarfliken.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16×16 och 32×32 PNG</p><p class=\"text-mid text-sm\">Standardstorlekar för moderna webbläsare. Visas i flikar och bokmärken.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180×180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Ikon för Apple-enheter (iPhone, iPad). Visas när någon lägger till sidan på startskärmen.</p></div><div class=\"rounded-lg border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192×192 och 512×512 PNG</p><p class=\"text-mid text-sm\">Ikoner för webbappar (PWA). Krävs av manifestet och används i appbutiker.</p></div></div><p class=\"text-light mt-6\">Om du inte bygger en PWA räcker det med: favicon.ico, 32×32 PNG och 180×180 PNG. Dessa tre filer täcker de flesta användningsfall.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Vad gör denna favicon-generator speciell?",
       "grid": "two",
       "items": [
-        { "icon": "RiShieldCheckLine", "title": "Lokal bearbetning i webbläsaren", "description": "Bilden laddas inte upp till någon server. All bearbetning sker på din enhet." },
-        { "icon": "RiCheckboxCircleLine", "title": "Uppfyller Lighthouse-krav", "description": "Genererade ikoner uppfyller Google Lighthouse-kraven för storlek och format." },
-        { "icon": "RiDevicesLine", "title": "Ikoner för alla enheter", "description": "En uppsättning filer täcker alla webbläsare, iOS, Android och Windows." },
-        { "icon": "RiInfinityLine", "title": "Utan begränsningar, utan registrering", "description": "Generera så många faviconer du behöver. Utan registrering, utan avgifter." }
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Lokal bearbetning i webbläsaren",
+          "description": "Bilden laddas inte upp till någon server. All bearbetning sker på din enhet."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Uppfyller Lighthouse-krav",
+          "description": "Genererade ikoner uppfyller Google Lighthouse-kraven för storlek och format."
+        },
+        {
+          "icon": "RiDevicesLine",
+          "title": "Ikoner för alla enheter",
+          "description": "En uppsättning filer täcker alla webbläsare, iOS, Android och Windows."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Utan begränsningar, utan registrering",
+          "description": "Generera så många faviconer du behöver. Utan registrering, utan avgifter."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hur använder du favicon-generatorn?",
@@ -113,14 +174,20 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Genereringsalternativ – vad gör vart och ett?",
       "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">PNG-storlekar</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">16x16</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">32x32</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">180x180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Transparent bakgrund (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Bakgrundsfärg:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
       "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Bakgrund (transparent eller färg)</h3><p class=\"text-mid\">Som standard bevarar generatorn transparens. Du kan även välja en specifik bakgrundsfärg.</p></div><div><h3 class=\"h5 mb-2\">Generera manifest (site.webmanifest)</h3><p class=\"text-mid\">En JSON-konfigurationsfil för webbappar (PWA). Om du inte skapar en PWA behövs inte detta alternativ.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hur laddar du ned de genererade filerna?",
@@ -139,7 +206,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Var och hur laddar man upp favicon?",
@@ -161,7 +231,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Vilken källbild fungerar bäst?",
@@ -190,7 +263,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Vanliga frågor om favicon-generatorn",
@@ -218,8 +294,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Utforska fler verktyg" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforska fler verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "sv",
   "metadata": {
-    "title": "Gratis ord- och teckenräknare – SEO-textlängd | Arteon",
-    "description": "Räkna ord, tecken, stycken och lästid omedelbart. Kontrollera optimal textlängd för SEO – blogginlägg, produktsida, landningssida och tjänstesida. Helt gratis.",
+    "title": "Gratis ord- & teckenräknare online – Räkna, transformera & analysera",
+    "description": "Gratis ord-, tecken-, menings- och styckeräknare. Ändra versaler, ta bort dubbletter, sortera rader. 8 mätvärden och 10 textverktyg.",
     "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
     "path": "/sv/verktyg/ord-och-teckenraknare"
   },
   "hero": {
-    "title": "Ord- och teckenräknare med längdbedömning",
-    "description": "Klistra in text, välj sidtyp och verktyget visar antal ord, tecken, stycken och bedömer om längden passar den valda innehållstypen.",
+    "title": "Ord- och teckenräknare med textformateringsverktyg",
+    "description": "Klistra in din text och verktyget räknar ord, tecken, meningar, stycken, unika ord och lästid. Ändra versaler, ta bort dubbletter eller sortera rader",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -24,39 +24,55 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis ord- och teckenräknare",
-      "alternateName": ["Ordräknare med textlängdsbedömning", "Teckenräknare", "Lästidskalkylator", "Ordräknare för SEO"],
+      "name": "Gratis ord- och teckenräknare med textverktyg",
+      "alternateName": [
+        "Online word counter",
+        "Character counter with and without spaces",
+        "Word counting tool for copywriters",
+        "Reading time calculator",
+        "Online letter case converter",
+        "Uppercase to lowercase converter",
+        "Remove duplicate lines from text",
+        "Sort text lines alphabetically"
+      ],
       "applicationSubCategory": "TextApplication",
-      "description": "Gratis ord- och teckenräknare. Kontrollerar antal ord, tecken, stycken och uppskattad lästid. Bedömer textlängden för olika sidtyper.",
+      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
       "featureList": [
-        "Antal ord",
-        "Antal tecken med och utan mellanslag",
-        "Antal stycken",
-        "Uppskattad lästid",
-        "Längdbedömning för olika sidtyper",
-        "Rekommenderade intervall för: produktbeskrivning, tjänstesida, startsida, landningssida, blogginlägg, guide",
-        "Kopiera rapport till urklipp"
+        "Word count",
+        "Character count with and without spaces",
+        "Sentence and paragraph count",
+        "Unique word count",
+        "Average word length",
+        "Estimated reading time",
+        "Convert to uppercase or lowercase",
+        "Convert to sentence case or title case",
+        "Toggle letter case",
+        "Remove extra spaces",
+        "Remove empty lines and duplicates",
+        "Sort lines A-Z and Z-A",
+        "Copy text to clipboard"
       ]
     },
     "howTo": {
-      "name": "Hur man använder ord- och teckenräknaren",
-      "description": "Kontrollera textlängden och bedöm om den passar för en specifik sidtyp.",
+      "name": "Hur du använder ord- och teckenräknaren",
+      "description": "Analysera och formatera text i tre steg:",
+      "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Välj sidtyp",
-          "text": "Välj från listan vilken typ av sida du skriver för. Varje typ har ett eget rekommenderat ordintervall."
-        },
-        {
           "name": "Klistra in text",
-          "text": "Klistra in eller skriv text i textfältet. Verktyget räknar automatiskt ord, tecken, stycken och beräknar lästid."
+          "text": "Klistra in eller skriv text. Verktyget räknar direkt ord, tecken, meningar, stycken och unika ord."
         },
         {
-          "name": "Kontrollera bedömningen",
-          "text": "Titta på den färgkodade indikatorn och statusen. Grönt innebär rätt längd, gult för kort, rött för lång."
+          "name": "Kontrollera statistik",
+          "text": "I vänstra panelen ser du 8 mätvärden: ord, tecken, meningar, stycken, unika ord, ordlängd och lästid."
         },
         {
-          "name": "Kopiera rapporten",
-          "text": "Knappen Kopiera rapport kopierar en sammanfattning med alla statistik och längdbedömning till urklipp."
+          "name": "Transformera text",
+          "text": "Under textfältet hittar du 10 transformationsverktyg."
+        },
+        {
+          "name": "Kopiera resultatet",
+          "text": "Klicka på Kopiera text. Använd Rensa för att börja om."
         }
       ]
     }
@@ -68,8 +84,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Gratis ordräknare – räkna och bedöm textlängden",
-      "html": "<p class=\"text-mid\">Detta verktyg låter dig snabbt kontrollera längden på valfri text. Klistra in innehåll och räknaren räknar ord, tecken och stycken. Du ser också hur många minuter det tar att läsa och om längden passar den valda sidtypen.</p><p class=\"text-mid mt-3\">Varje sidtyp tjänar ett annat syfte – en produktbeskrivning svarar på köparens frågor, ett blogginlägg utforskar ett ämne på djupet och en tjänstesida förklarar vad kunden får. Räknaren visar intervall för var och en av dessa typer baserat på analys av framgångsrikt innehåll.</p>"
+      "title": "Gratis ord- och teckenräknare med textverktyg",
+      "html": "<p class=\"text-mid\">Detta verktyg kombinerar en ord- och teckenräknare med textformateringsfunktioner. Klistra in text och se ord, tecken, meningar, stycken, unika ord och lästid.</p><p class=\"text-mid mt-3\">Under textfältet hittar du 10 verktyg: versalkonvertering, borttagning av mellanslag, tomma rader, dubbletter och sortering. Allt bearbetas lokalt i din webbläsare.</p>"
     },
     {
       "type": "gap",
@@ -77,29 +93,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Hur man använder ord- och teckenräknaren",
-      "description": "Att kontrollera textlängden tar mindre än en minut:",
+      "title": "Hur du använder ord- och teckenräknaren",
+      "description": "Analysera och formatera text i tre steg:",
       "grid": "four",
       "items": [
         {
-          "icon": "RiListCheck2",
-          "title": "1. Välj sidtyp",
-          "description": "Välj från listan vilken typ av sida du skriver för. Varje typ har ett eget rekommenderat ordintervall."
-        },
-        {
           "icon": "RiFileTextLine",
-          "title": "2. Klistra in text",
-          "description": "Klistra in eller skriv text i det stora textfältet till höger. Verktyget räknar omedelbart ord, tecken, stycken och beräknar lästid."
+          "title": "1. Klistra in text",
+          "description": "Klistra in eller skriv text. Verktyget räknar direkt ord, tecken, meningar, stycken och unika ord."
         },
         {
           "icon": "RiBarChartLine",
-          "title": "3. Kontrollera bedömningen",
-          "description": "Titta på den färgkodade indikatorn och statusen. Grönt innebär rätt längd, gult för kort, rött för lång."
+          "title": "2. Kontrollera statistik",
+          "description": "I vänstra panelen ser du 8 mätvärden: ord, tecken, meningar, stycken, unika ord, ordlängd och lästid."
+        },
+        {
+          "icon": "RiTextWrap",
+          "title": "3. Transformera text",
+          "description": "Under textfältet hittar du 10 transformationsverktyg."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Kopiera rapporten",
-          "description": "Knappen Kopiera rapport kopierar en sammanfattning med antal ord, tecken, stycken, lästid och längdbedömning till urklipp."
+          "title": "4. Kopiera resultatet",
+          "description": "Klicka på Kopiera text. Använd Rensa för att börja om."
         }
       ]
     },
@@ -109,34 +125,49 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Vad räknaren mäter – ord, tecken, lästid",
-      "description": "Räknaren följer fem nyckeltal:",
+      "title": "8 textmätvärden",
+      "description": "Räknaren analyserar din text med åtta indikatorer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiText",
-          "title": "Ord",
-          "description": "Totalt antal ord. Huvudindikator för textlängd."
+          "title": "Words",
+          "description": "Total word count. The primary indicator of text length, useful for content creation, articles and descriptions."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Tecken (med mellanslag)",
-          "description": "Alla tecken inklusive mellanslag. Viktigt när CMS har teckengräns."
+          "title": "Characters (with spaces)",
+          "description": "All characters including spaces. Useful when a platform has a character limit (e.g., Amazon listings, meta descriptions)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Tecken (utan mellanslag)",
-          "description": "Endast bokstäver, siffror och symboler. Ibland krävs av tryckerier eller för översättningsfakturering."
+          "title": "Characters (without spaces)",
+          "description": "Only letters, digits and punctuation. The standard billing unit for translations and print shops."
+        },
+        {
+          "icon": "RiChatQuoteLine",
+          "title": "Sentences",
+          "description": "Number of sentences in the text. Helps assess complexity and readability — shorter sentences are easier to absorb."
         },
         {
           "icon": "RiParagraph",
-          "title": "Stycken",
-          "description": "Antal textblock separerade av tomma rader. Hjälper bedöma om texten har bra struktur."
+          "title": "Paragraphs",
+          "description": "Text blocks separated by blank lines. Well-structured paragraphs improve readability on screens."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Unique words",
+          "description": "Number of non-repeating words. A higher ratio of unique to total words indicates richer vocabulary."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Average word length",
+          "description": "Average number of characters per word. An indicator of text complexity — technical texts have longer words than casual ones."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Lästid",
-          "description": "Lästidskalkylatorn visar hur många minuter det tar att läsa texten vid en genomsnittlig hastighet på 200 ord per minut."
+          "title": "Reading time",
+          "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
         }
       ]
     },
@@ -145,20 +176,62 @@
       "variant": "line"
     },
     {
-      "type": "sectionDemo",
-      "title": "Hur tolkas resultaten?",
-      "subtitle": "Bedömningsstatusar",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">Bra längd</span><span class=\"text-mid text-sm!\">Texten är inom intervallet</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Under intervallet</span><span class=\"text-mid text-sm!\">Texten är kortare än typiskt</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Över intervallet</span><span class=\"text-mid text-sm!\">Texten är längre än typiskt</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Framsteg</span><span class=\"text-mid\">1200 / 1200-3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
-      "html": "<p class=\"text-mid mb-4\">Den färgade framstegsfältet och bedömningsstatusen hjälper dig att snabbt bedöma textlängden:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Bra längd</strong> (grön) – texten är inom det vägledande intervallet för den valda sidtypen.</li><li><strong class=\"text-warning-text\">Under intervallet</strong> (gul) – texten är kortare än typiskt för denna sidtyp. Om den besvarar läsarens frågor kan längden vara lämplig.</li><li><strong class=\"text-error-text\">Över intervallet</strong> (röd) – texten är längre än typiskt. Om varje stycke tillför ny information är längden motiverad.</li></ul><p class=\"text-mid mt-4\">Intervallen baseras på analyser av innehåll som rankas bra i sökmotorer. Om texten besvarar läsarens frågor är längden lämplig oavsett resultatet i räknaren.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Hur många ord bör texten ha – optimal längd för SEO",
-      "html": "<p class=\"text-mid mb-4\">Intervallen nedan är baserade på analys av innehåll som presterar bra i sökmotorer. Textlängden i sig påverkar inte positionen i Google – det som spelar roll är om innehållet svarar på läsarens frågor.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Sidtyp</th><th class=\"py-2 pr-4 font-semibold\">Intervall</th><th class=\"py-2 font-semibold\">När kortare, när längre?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Produktbeskrivning</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Enkel produkt – 80–150. Komplex utrustning – 300–400.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Tjänstesida</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Lokal tjänst – 500–700. B2B-tjänst med process och FAQ – 1 200–1 500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Startsida</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Startsidan presenterar nyckelvärde och leder besökare vidare.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landningssida</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Enkelt erbjudande – 600–1 000. Erbjudande som kräver förklaring – 1 500–2 500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blogginlägg</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Kort how-to – 1 200–1 500. Detaljerad guide – 2 500–3 000.</td></tr><tr><td class=\"py-2 pr-4\">Guide / pillar page</td><td class=\"py-2 pr-4 whitespace-nowrap\">3000–7000 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Komplett resurs som täcker ämnet från flera vinklar.</td></tr></tbody></table></div>"
+      "type": "sectionSteps",
+      "title": "10 textformateringsverktyg",
+      "description": "Under textfältet hittar du knappar för snabb transformation:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiArrowUpLine",
+          "title": "UPPERCASE",
+          "description": "Converts all text to uppercase. Useful for headings, acronyms and highlighting text fragments."
+        },
+        {
+          "icon": "RiArrowDownLine",
+          "title": "lowercase",
+          "description": "Converts all text to lowercase. Useful for normalizing text copied from different sources."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Sentence case",
+          "description": "First letter of each sentence is capitalized, the rest lowercase. Standard format for continuous text."
+        },
+        {
+          "icon": "RiHeading",
+          "title": "Title Case",
+          "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "tOGGLE cASE",
+          "description": "Swaps uppercase to lowercase and vice versa. Useful when text was typed with Caps Lock on."
+        },
+        {
+          "icon": "RiSpace",
+          "title": "Remove extra spaces",
+          "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
+        },
+        {
+          "icon": "RiDeleteRow",
+          "title": "Remove empty lines",
+          "description": "Removes empty and redundant lines from text. Useful for cleaning text copied from websites."
+        },
+        {
+          "icon": "RiFilterLine",
+          "title": "Remove duplicate lines",
+          "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
+        },
+        {
+          "icon": "RiSortAsc",
+          "title": "Sort A→Z",
+          "description": "Sorts text lines alphabetically in ascending order. Useful for organizing lists, keywords and data."
+        },
+        {
+          "icon": "RiSortDesc",
+          "title": "Sort Z→A",
+          "description": "Sorts text lines alphabetically in descending order. Reverse sort order."
+        }
+      ]
     },
     {
       "type": "gap",
@@ -166,38 +239,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Vem är ordräknaren till för?",
+      "title": "Vem är ordräknaren för?",
+      "description": "Verktyget är användbart för alla som arbetar med text:",
       "grid": "three",
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Copywriters och innehållsskapare",
-          "description": "Kontrollera om texten är inom rekommenderat intervall för en specifik sidtyp."
+          "title": "Copywriters and editors",
+          "description": "Count words and characters, check platform limits, quickly change letter case and clean text before publishing."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Bloggare",
-          "description": "Följ artikellängden för konsekvens. Kontrollera lästiden innan publicering."
+          "title": "Bloggers and content creators",
+          "description": "Monitor post length, check reading time, remove duplicate lines and sort lists."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "E-handlare",
-          "description": "Verifiera produktbeskrivningar mot teckengränser på försäljningsplattformar."
+          "title": "Store owners",
+          "description": "Verify product descriptions against character limits on platforms (Amazon, eBay, Etsy)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO-specialister",
-          "description": "Bedöm om sidans innehåll har optimal längd jämfört med konkurrenterna."
+          "title": "SEO specialists",
+          "description": "Analyze content length, count unique words and assess text complexity based on average word length."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Studenter och akademiker",
-          "description": "Kontrollera om arbetet uppfyller det krävda ord- eller teckengränsen."
+          "title": "Students and academics",
+          "description": "Check word or character limits in essays and research papers."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Översättare",
-          "description": "Räkna tecken utan mellanslag för översättningspriser."
+          "title": "Translators",
+          "description": "Count characters without spaces for quotes (the standard billing unit in translation)."
         }
       ]
     },
@@ -208,7 +282,7 @@
     {
       "type": "sectionInfo",
       "title": "Teckengränser på populära plattformar",
-      "html": "<p class=\"text-mid mb-4\">Teckenräknaren är användbar vid skapande av innehåll för plattformar med längdbegränsningar:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Plattform / Element</th><th class=\"py-2 pr-4 font-semibold\">Teckengräns</th><th class=\"py-2 font-semibold\">Kommentarer</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 tecken</td><td class=\"text-primary-light0 py-2 text-sm\">Längre titlar klipps av i sökresultaten.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 tecken</td><td class=\"text-primary-light0 py-2 text-sm\">Beskrivning synlig under länken i sökresultaten.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook – inlägg</td><td class=\"py-2 pr-4 whitespace-nowrap\">63 206 tecken</td><td class=\"text-primary-light0 py-2 text-sm\">Längre inlägg döljs bakom Visa mer-knappen.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – bildtext</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 200 tecken</td><td class=\"text-primary-light0 py-2 text-sm\">De första ~125 tecknen är synliga.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – inlägg</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 tecken</td><td class=\"text-primary-light0 py-2 text-sm\">Standardgräns för vanliga konton.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn – inlägg</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 tecken</td><td class=\"text-primary-light0 py-2 text-sm\">De första ~140 tecknen synliga utan att klicka.</td></tr></tbody></table></div>"
+      "html": "<p class=\"text-mid\">Character limits vary by platform.</p>"
     },
     {
       "type": "gap",
@@ -216,38 +290,38 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Vad gör denna ord- och teckenräknare speciell?",
+      "title": "Vad gör denna ordräknare speciell?",
       "grid": "two",
       "items": [
         {
-          "icon": "RiInfinityLine",
-          "title": "Sex sidtyper med rekommenderade intervall",
-          "description": "Produktbeskrivning, tjänstesida, startsida, erbjudandesida, blogartikel och guide – varje typ har egna intervall baserade på analyser."
+          "icon": "RiBarChartLine",
+          "title": "8 text metrics",
+          "description": "Words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time — all in one panel."
+        },
+        {
+          "icon": "RiTextWrap",
+          "title": "10 formatting tools",
+          "description": "Letter case conversion, removing spaces, empty lines, duplicates and sorting — without installing additional software."
         },
         {
           "icon": "RiUserLine",
-          "title": "Lokal bearbetning i webbläsaren",
-          "description": "Text skickas inte till någon server – hela analysen sker lokalt på din enhet."
-        },
-        {
-          "icon": "RiCheckboxCircleLine",
-          "title": "Bedömning av textlängd",
-          "description": "Du räknar inte bara ord, utan får information om längden är lämplig för den givna sidtypen."
-        },
-        {
-          "icon": "RiBarChartLine",
-          "title": "SEO-baserade intervall",
-          "description": "Rekommenderade längder baseras på analyser av innehåll som rankas bra i sökmotorer."
-        },
-        {
-          "icon": "RiTimerLine",
-          "title": "Lästid",
-          "description": "Du vet direkt hur många minuter det tar läsarna att läsa texten."
+          "title": "Local processing in the browser",
+          "description": "Your text is never sent to any server. All analysis and transformation happens locally on your device."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Kopiering av rapport",
-          "description": "Knappen Kopiera rapport överför en sammanfattning med all statistik och längdbedömning till urklipp."
+          "title": "Copy and clear text",
+          "description": "Copy the modified text to your clipboard with one click or clear the field to start over."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Instant results",
+          "description": "Statistics update in real time as you type or paste text. No waiting for processing."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "No registration or limits",
+          "description": "The tool is completely free. No registration, login or personal data required."
         }
       ]
     },
@@ -261,19 +335,14 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Påverkar textlängden positionen i Google?",
-          "answer": "Textlängden i sig är inte en rankingfaktor. Google bedömer om innehållet svarar på användarens frågor och om det är värdefullt för dem.",
-          "answerSchemaText": "Textlängden är inte en direkt rankingfaktor. Google bedömer innehållets värde för användaren."
+          "question": "Hur fungerar lästidsberäknaren?",
+          "answer": "Verktyget delar ordantalet med 200, genomsnittlig läshastighet. Resultatet är ett ungefärligt värde.",
+          "answerSchemaText": "Verktyget antar 200 ord per minut."
         },
         {
-          "question": "Varför är ordintervallen så breda?",
-          "answer": "Samma sidtyp kan kräva olika längd beroende på ämnets komplexitet. En enkel produktbeskrivning är 80–150 ord. En beskrivning av en bärbar dator är 300–400 ord, eftersom köparen har fler frågor.",
-          "answerSchemaText": "Skillnaderna beror på ämnets komplexitet – en enkel produkt kräver färre ord än en komplex."
-        },
-        {
-          "question": "Hur fungerar lästidskalkylatorn?",
-          "answer": "Verktyget delar antalet ord med 200 – den genomsnittliga läshastigheten för vanlig text. Teknisk text läses långsammare. Resultatet är ett ungefärligt värde.",
-          "answerSchemaText": "Verktyget antar en genomsnittlig läshastighet på 200 ord per minut. Det är ett ungefärligt värde."
+          "question": "Är min text säker?",
+          "answer": "Ja. All analys sker lokalt i din webbläsare. Texten skickas aldrig till någon server.",
+          "answerSchemaText": "Ja. Texten bearbetas lokalt i webbläsaren."
         }
       ]
     },

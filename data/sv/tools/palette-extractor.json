@@ -80,15 +80,18 @@
       "items": [
         {
           "title": "1. Ladda upp bild",
-          "description": "Dra och släpp filen i det markerade området eller välj den från din enhet. Stödda format är PNG, JPG och SVG."
+          "description": "Dra och släpp filen i det markerade området eller välj den från din enhet. Stödda format är PNG, JPG och SVG.",
+          "icon": "RiUploadLine"
         },
         {
           "title": "2. Vänta på analysen",
-          "description": "Verktyget analyserar automatiskt bilden och extraherar upp till 12 dominerande färger."
+          "description": "Verktyget analyserar automatiskt bilden och extraherar upp till 12 dominerande färger.",
+          "icon": "RiSearchEyeLine"
         },
         {
           "title": "3. Kopiera de färger du behöver",
-          "description": "Bredvid varje färg finns en kopieringsknapp – HEX- eller RGB-koden går till urklipp och kan klistras in direkt i ditt projekt."
+          "description": "Bredvid varje färg finns en kopieringsknapp – HEX- eller RGB-koden går till urklipp och kan klistras in direkt i ditt projekt.",
+          "icon": "RiFileCopyLine"
         }
       ]
     },
@@ -165,7 +168,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Felsökning av färgextraktorn",

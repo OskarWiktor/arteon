@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "pl",
   "metadata": {
-    "title": "Licznik słów i znaków za darmo – sprawdź długość tekstu",
-    "description": "Policz słowa, znaki, akapity i czas czytania w sekundę. Sprawdź optymalną długość tekstu dla SEO – artykuł, opis produktu, strona usługi.",
+    "title": "Licznik słów i znaków online – policz, przekształć i analizuj tekst",
+    "description": "Darmowy licznik słów, znaków, zdań i akapitów. Zmień wielkość liter, usuń duplikaty, sortuj linie. 8 metryk i 10 narzędzi tekstowych w jednym miejscu.",
     "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
     "path": "/narzedzia/licznik-slow-i-znakow"
   },
   "hero": {
-    "title": "Licznik słów i znaków z oceną długości",
-    "description": "Wklej tekst, wybierz typ strony, a narzędzie pokaże liczbę słów, znaków, akapitów i oceni, czy długość jest odpowiednia dla danego rodzaju treści",
+    "title": "Licznik słów i znaków z narzędziami do formatowania tekstu",
+    "description": "Wklej tekst, a narzędzie policzy słowa, znaki, zdania, akapity, unikalne wyrazy i czas czytania. Zmień wielkość liter, usuń duplikaty lub posortuj linie jednym kliknięciem",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -24,49 +24,55 @@
   },
   "schemas": {
     "software": {
-      "name": "Darmowy licznik słów i znaków online",
+      "name": "Darmowy licznik słów i znaków online z narzędziami tekstowymi",
       "alternateName": [
-        "Licznik słów z oceną długości tekstu",
-        "Licznik znaków online po polsku",
+        "Licznik słów online po polsku",
+        "Licznik znaków ze spacjami i bez spacji",
         "Narzędzie do liczenia słów dla copywriterów",
         "Kalkulator czasu czytania tekstu",
-        "Licznik wyrazów online po polsku",
-        "Sprawdź ile słów ma tekst",
-        "Licznik słów do SEO",
-        "Optymalna długość tekstu dla artykułu"
+        "Konwerter wielkości liter online",
+        "Zamiana małych liter na duże online",
+        "Usuwanie duplikatów linii z tekstu",
+        "Sortowanie linii tekstu alfabetycznie"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Darmowy licznik słów i znaków po polsku. Sprawdza liczbę słów, znaków, akapitów i szacowany czas czytania. Ocenia długość tekstu dla różnych typów stron: opis produktu, strona usługi, strona główna, strona ofertowa, artykuł blogowy, poradnik.",
+      "description": "Darmowy licznik słów i znaków po polsku z narzędziami do formatowania tekstu. Liczy słowa, znaki, zdania, akapity, unikalne wyrazy i czas czytania. Oferuje 10 narzędzi: zamiana wielkości liter, usuwanie spacji, pustych linii, duplikatów oraz sortowanie.",
       "featureList": [
         "Liczenie słów w tekście",
         "Liczenie znaków ze spacjami i bez spacji",
-        "Liczenie akapitów",
+        "Liczenie zdań i akapitów",
+        "Liczenie unikalnych słów",
+        "Średnia długość słowa",
         "Szacowanie czasu czytania",
-        "Ocena długości tekstu dla różnych typów stron",
-        "Zalecenia długości dla: opisu produktu, strony usługi, strony głównej, strony ofertowej, artykułu blogowego, poradnika",
-        "Kopiowanie raportu do schowka"
+        "Zamiana na wielkie lub małe litery",
+        "Zamiana na styl zdania lub tytułu",
+        "Odwracanie wielkości liter",
+        "Usuwanie nadmiarowych spacji",
+        "Usuwanie pustych linii i duplikatów",
+        "Sortowanie linii A-Z i Z-A",
+        "Kopiowanie tekstu do schowka"
       ]
     },
     "howTo": {
       "name": "Jak używać licznika słów i znaków",
-      "description": "Sprawdź długość tekstu i oceń, czy jest odpowiednia dla danego typu strony. Dowiedz się, ile słów powinien mieć opis produktu, strona usługi, artykuł blogowy czy poradnik.",
-      "totalTime": "PT2M",
+      "description": "Policz słowa, znaki i zdania w tekście. Użyj narzędzi do zmiany wielkości liter, usuwania duplikatów lub sortowania linii.",
+      "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Wybierz typ strony",
-          "text": "Wybierz z listy, dla jakiego typu strony piszesz tekst: opis produktu, strona usługi, strona główna, strona ofertowa, artykuł blogowy lub poradnik."
-        },
-        {
           "name": "Wklej tekst",
-          "text": "Wklej lub wpisz tekst w pole tekstowe. Narzędzie automatycznie policzy słowa, znaki, akapity i oszacuje czas czytania."
+          "text": "Wklej lub wpisz tekst w pole tekstowe. Narzędzie automatycznie policzy słowa, znaki, zdania, akapity, unikalne wyrazy i oszacuje czas czytania."
         },
         {
-          "name": "Sprawdź ocenę długości",
-          "text": "Zobacz kolorowy pasek postępu i status oceny. Zielony oznacza dobrą długość, żółty za krótki tekst, czerwony za długi."
+          "name": "Sprawdź statystyki",
+          "text": "W panelu po lewej stronie zobaczysz 8 metryk tekstu: słowa, znaki ze spacjami i bez, zdania, akapity, unikalne słowa, średnią długość słowa i czas czytania."
         },
         {
-          "name": "Skopiuj raport",
-          "text": "Przycisk Kopiuj raport przenosi podsumowanie ze statystykami i oceną do schowka systemowego."
+          "name": "Użyj narzędzi tekstowych",
+          "text": "Pod polem tekstowym znajdziesz pasek z 10 narzędziami: zamiana wielkości liter, usuwanie spacji, pustych linii, duplikatów oraz sortowanie linii."
+        },
+        {
+          "name": "Skopiuj wynik",
+          "text": "Kliknij Kopiuj tekst, aby przenieść zmodyfikowany tekst do schowka. Użyj Wyczyść, aby zacząć od nowa."
         }
       ]
     }
@@ -78,8 +84,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Darmowy licznik słów online - policz i oceń długość tekstu",
-      "html": "<p class=\"text-mid\">Narzędzie do liczenia słów pozwala szybko sprawdzić długość tekstu. Wklej tekst, a licznik policzy słowa, znaki i akapity. Zobaczysz też, ile minut zajmie czytanie i czy długość pasuje do typu strony, który wybierzesz.</p><p class=\"text-mid mt-3\">Każdy typ strony ma inny cel - opis produktu odpowiada na pytania kupującego, artykuł blogowy wyczerpuje temat, a strona usługi wyjaśnia, co klient otrzyma. Licznik pokazuje zakresy dla każdego z tych typów oparte na analizach treści, które dobrze się pozycjonują.</p>"
+      "title": "Darmowy licznik słów i znaków online z narzędziami tekstowymi",
+      "html": "<p class=\"text-mid\">Narzędzie łączy licznik słów i znaków z zestawem funkcji do formatowania tekstu. Wklej tekst, a zobaczysz liczbę słów, znaków, zdań, akapitów, unikalnych wyrazów i szacowany czas czytania.</p><p class=\"text-mid mt-3\">Pod polem tekstowym znajdziesz pasek z 10 narzędziami: zamiana wielkości liter (WIELKIE, małe, Jak w zdaniu, Każde Słowo Wielką), usuwanie nadmiarowych spacji, pustych linii i duplikatów oraz sortowanie linii alfabetycznie. Cała analiza i przetwarzanie tekstu odbywają się lokalnie w przeglądarce.</p>"
     },
     {
       "type": "gap",
@@ -88,28 +94,28 @@
     {
       "type": "sectionSteps",
       "title": "Jak korzystać z licznika słów i znaków?",
-      "description": "Sprawdzenie długości tekstu zajmuje mniej niż minutę:",
+      "description": "Analiza i formatowanie tekstu w trzech krokach:",
       "grid": "four",
       "items": [
         {
-          "icon": "RiListCheck2",
-          "title": "1. Wybierz typ strony",
-          "description": "Wybierz z listy rozwijalnej, dla jakiego typu strony piszesz tekst. Każdy typ ma inne zalecenia dotyczące minimalnej i maksymalnej liczby słów."
-        },
-        {
           "icon": "RiFileTextLine",
-          "title": "2. Wklej tekst",
-          "description": "Wklej lub wpisz tekst w duże pole po prawej stronie. Narzędzie od razu policzy słowa, znaki (ze spacjami i bez), akapity oraz oszacuje czas czytania."
+          "title": "1. Wklej tekst",
+          "description": "Wklej lub wpisz tekst w pole po prawej stronie. Narzędzie od razu policzy słowa, znaki, zdania, akapity, unikalne wyrazy i oszacuje czas czytania."
         },
         {
           "icon": "RiBarChartLine",
-          "title": "3. Sprawdź ocenę",
-          "description": "Zobacz kolorowy pasek postępu i status oceny. Zielony oznacza dobrą długość, żółty za krótki tekst, czerwony za długi. Pod spodem znajdziesz wskazówkę."
+          "title": "2. Sprawdź statystyki",
+          "description": "W panelu po lewej zobaczysz 8 metryk: słowa, znaki ze spacjami i bez, zdania, akapity, unikalne słowa, średnią długość słowa i czas czytania."
+        },
+        {
+          "icon": "RiTextWrap",
+          "title": "3. Przekształć tekst",
+          "description": "Pod polem tekstowym znajdziesz pasek z 10 narzędziami: zamiana wielkości liter, usuwanie spacji, pustych linii, duplikatów i sortowanie linii."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Skopiuj raport",
-          "description": "Przycisk Kopiuj raport przenosi do schowka podsumowanie z liczbą słów, znaków, akapitów, czasem czytania i oceną długości."
+          "title": "4. Skopiuj wynik",
+          "description": "Kliknij Kopiuj tekst, aby przenieść zmodyfikowany tekst do schowka. Użyj Wyczyść, aby zacząć od nowa."
         }
       ]
     },
@@ -119,34 +125,49 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Co mierzy licznik - słowa, znaki, czas czytania",
-      "description": "Licznik mierzy pięć kluczowych metryk:",
+      "title": "8 metryk tekstu - co mierzy licznik?",
+      "description": "Licznik analizuje tekst pod kątem ośmiu wskaźników:",
       "grid": "two",
       "items": [
         {
           "icon": "RiText",
           "title": "Słowa",
-          "description": "Łączna liczba słów (zliczanie słów). To główny wskaźnik długości tekstu."
+          "description": "Łączna liczba słów w tekście. Główny wskaźnik długości, przydatny przy tworzeniu treści na strony, artykuły i opisy."
         },
         {
           "icon": "RiSpaceShipLine",
           "title": "Znaki (ze spacjami)",
-          "description": "Wszystkie znaki łącznie ze spacjami. Przydatne, gdy system CMS ma limit znaków (np. przy opisach na Allegro czy OLX)."
+          "description": "Wszystkie znaki łącznie ze spacjami. Przydatne, gdy platforma ma limit znaków (np. opisy na Allegro, OLX, meta description)."
         },
         {
           "icon": "RiHashtag",
           "title": "Znaki (bez spacji)",
-          "description": "Tylko litery, cyfry i interpunkcja. Czasem wymagane przez drukarnie lub przy rozliczeniach za tekst."
+          "description": "Tylko litery, cyfry i interpunkcja. Standardowa jednostka rozliczeniowa w tłumaczeniach i drukarniach."
+        },
+        {
+          "icon": "RiChatQuoteLine",
+          "title": "Zdania",
+          "description": "Liczba zdań w tekście. Pomaga ocenić złożoność i czytelność - krótsze zdania są łatwiejsze do przyswojenia."
         },
         {
           "icon": "RiParagraph",
           "title": "Akapity",
-          "description": "Ile masz bloków tekstu oddzielonych pustymi liniami. Pomaga ocenić, czy tekst jest dobrze podzielony."
+          "description": "Bloki tekstu oddzielone pustymi liniami. Dobrze podzielony tekst na akapity poprawia czytelność na ekranach."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Unikalne słowa",
+          "description": "Liczba niepowtarzających się słów. Im wyższy stosunek unikalnych słów do wszystkich, tym bogatsze słownictwo tekstu."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Średnia długość słowa",
+          "description": "Średnia liczba znaków na słowo. Wskaźnik złożoności tekstu - teksty techniczne mają dłuższe słowa niż potoczne."
         },
         {
           "icon": "RiTimeLine",
           "title": "Czas czytania",
-          "description": "Kalkulator czasu czytania pokazuje, ile minut zajmie przeczytanie tekstu przy średniej prędkości 200 słów na minutę."
+          "description": "Szacowany czas przeczytania tekstu przy prędkości 200 słów na minutę. Orientacyjna wartość dla typowego tekstu."
         }
       ]
     },
@@ -155,60 +176,98 @@
       "variant": "line"
     },
     {
-      "type": "sectionDemo",
-      "title": "Jak interpretować wyniki?",
-      "subtitle": "Statusy oceny",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">Dobra długość</span><span class=\"text-mid text-sm!\">Tekst mieści się w zakresie</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Poniżej zakresu</span><span class=\"text-mid text-sm!\">Tekst jest krótszy niż typowy</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Powyżej zakresu</span><span class=\"text-mid text-sm!\">Tekst jest dłuższy niż typowy</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Postęp</span><span class=\"text-mid\">1200 / 1200-3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
-      "html": "<p class=\"text-mid mb-4\">Kolorowy pasek postępu i status oceny pomagają szybko ocenić długość tekstu:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Dobra długość</strong> (zielony) - tekst mieści się w orientacyjnym zakresie dla wybranego typu strony.</li><li><strong class=\"text-warning-text\">Poniżej zakresu</strong> (żółty) - tekst jest krótszy niż typowy dla tego typu strony. Jeśli odpowiada na pytania czytelnika, długość może być odpowiednia.</li><li><strong class=\"text-error-text\">Powyżej zakresu</strong> (czerwony) - tekst jest dłuższy niż typowy. Jeśli każdy akapit wnosi nową informację, długość jest uzasadniona.</li></ul><p class=\"text-mid mt-4\">Zakresy opierają się na analizach treści, które dobrze pozycjonują się w wyszukiwarkach. Jeśli tekst odpowiada na pytania czytelnika, długość jest odpowiednia niezależnie od wyniku w liczniku.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Ile słów powinien mieć tekst - optymalna długość dla SEO",
-      "html": "<p class=\"text-mid mb-4\">Poniższe zakresy opierają się na analizach treści, które dobrze pozycjonują się w wyszukiwarkach. Długość tekstu sama w sobie nie wpływa na pozycję w Google - liczy się to, czy treść odpowiada na pytania czytelnika.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Typ strony</th><th class=\"py-2 pr-4 font-semibold\">Zakres</th><th class=\"py-2 font-semibold\">Kiedy krótszy, kiedy dłuższy?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Opis produktu</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 słów</td><td class=\"text-primary-light0 py-2 text-sm\">Prosty produkt (np. kubek) - 80-150 słów. Złożony sprzęt (np. laptop) - 300-400 słów, bo kupujący ma więcej pytań.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Strona usługi</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 słów</td><td class=\"text-primary-light0 py-2 text-sm\">Lokalna usługa (np. hydraulik) - 500-700 słów. Usługa B2B z procesem i FAQ - 1200-1500 słów.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Strona główna</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 słów</td><td class=\"text-primary-light0 py-2 text-sm\">Cel strony głównej to przekazanie głównej wartości i pokierowanie dalej - tekst ma wspierać nawigację, nie zastępować podstrony.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Strona ofertowa</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 słów</td><td class=\"text-primary-light0 py-2 text-sm\">Prosta oferta - 600-1000 słów. Oferta wymagająca wyjaśnienia procesu, wariantów i odpowiedzi na obiekcje - 1500-2500 słów.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Artykuł blogowy</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 słów</td><td class=\"text-primary-light0 py-2 text-sm\">Odpowiedź na proste pytanie - 1200-1800 słów. Kompleksowe zagadnienie z wieloma aspektami - 2000-3000 słów.</td></tr><tr><td class=\"py-2 pr-4\">Poradnik</td><td class=\"py-2 pr-4 whitespace-nowrap\">2500–6000 słów</td><td class=\"text-primary-light0 py-2 text-sm\">Wąski temat - 2500-3500 słów. Szeroki temat z wieloma krokami i przykładami - 4000-6000 słów.</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
+      "type": "sectionSteps",
+      "title": "10 narzędzi do formatowania tekstu",
+      "description": "Pod polem tekstowym znajdziesz pasek z przyciskami do szybkiego przekształcania tekstu:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiArrowUpLine",
+          "title": "WIELKIE LITERY",
+          "description": "Zamienia cały tekst na wielkie litery. Przydatne do nagłówków, akronimów i wyróżnienia fragmentów tekstu."
+        },
+        {
+          "icon": "RiArrowDownLine",
+          "title": "małe litery",
+          "description": "Zamienia cały tekst na małe litery. Użyteczne do normalizacji tekstu skopiowanego z różnych źródeł."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Jak w zdaniu",
+          "description": "Pierwsza litera każdego zdania wielka, reszta mała. Standardowy format tekstu ciągłego."
+        },
+        {
+          "icon": "RiHeading",
+          "title": "Każde Słowo Wielką",
+          "description": "Każde słowo zaczyna się wielką literą. Idealny do tytułów, nagłówków i nazw własnych."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Odwróć wielkość",
+          "description": "Zamienia wielkie litery na małe i odwrotnie. Przydatne, gdy przypadkowo napisano tekst z włączonym Caps Lock."
+        },
+        {
+          "icon": "RiSpace",
+          "title": "Usuń nadmiarowe spacje",
+          "description": "Redukuje wielokrotne spacje do jednej i usuwa spacje na początku i końcu linii."
+        },
+        {
+          "icon": "RiDeleteRow",
+          "title": "Usuń puste linie",
+          "description": "Usuwa puste i nadmiarowe linie z tekstu. Przydatne do czyszczenia tekstu skopiowanego ze stron internetowych."
+        },
+        {
+          "icon": "RiFilterLine",
+          "title": "Usuń duplikaty linii",
+          "description": "Pozostawia tylko unikalne linie, usuwając powtórzenia. Przydatne do czyszczenia list i danych."
+        },
+        {
+          "icon": "RiSortAsc",
+          "title": "Sortuj A→Z",
+          "description": "Sortuje linie tekstu alfabetycznie rosnąco. Przydatne do porządkowania list, słów kluczowych i danych."
+        },
+        {
+          "icon": "RiSortDesc",
+          "title": "Sortuj Z→A",
+          "description": "Sortuje linie tekstu alfabetycznie malejąco. Odwrotna kolejność sortowania."
+        }
+      ]
     },
     {
       "type": "sectionSteps",
-      "title": "Dla kogo jest licznik słów online?",
-      "description": "Narzędzie do liczenia słów dla copywriterów i nie tylko - oto kto najczęściej korzysta z licznika:",
+      "title": "Dla kogo jest licznik słów i narzędzia tekstowe?",
+      "description": "Narzędzie przydaje się każdemu, kto pracuje z tekstem:",
       "grid": "three",
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Copywriterzy i osoby tworzące treści",
-          "description": "Sprawdzają, czy tekst mieści się w zalecanym zakresie dla danego typu strony. Licznik słów do SEO pomaga ocenić, czy artykuł jest wystarczająco rozbudowany."
+          "title": "Copywriterzy i redaktorzy",
+          "description": "Liczenie słów i znaków, sprawdzanie limitów platform, szybka zmiana wielkości liter i czyszczenie tekstu przed publikacją."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Blogerzy",
-          "description": "Kontrolują długość wpisów, żeby utrzymać spójność publikacji. Sprawdzają czas czytania przed publikacją."
+          "title": "Blogerzy i autorzy treści",
+          "description": "Kontrola długości wpisów, sprawdzanie czasu czytania, usuwanie duplikatów linii i sortowanie list."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "Właściciele sklepów internetowych",
-          "description": "Weryfikują opisy produktów pod kątem limitów znaków na platformach sprzedażowych (Allegro, OLX, Amazon)."
+          "title": "Właściciele sklepów",
+          "description": "Weryfikacja opisów produktów pod kątem limitów znaków na platformach (Allegro, OLX, Amazon)."
         },
         {
           "icon": "RiSearchLine",
           "title": "Specjaliści SEO",
-          "description": "Oceniają, czy treści na stronie mają optymalną długość w porównaniu do konkurencji. Analizują stosunek słów do tematyki."
+          "description": "Analiza długości treści, liczenie unikalnych słów i ocena złożoności tekstu na podstawie średniej długości słowa."
         },
         {
           "icon": "RiGraduationCapLine",
           "title": "Studenci i naukowcy",
-          "description": "Sprawdzają, czy praca mieści się w wymaganym limicie słów lub znaków."
+          "description": "Sprawdzanie limitów słów lub znaków w pracach naukowych i esejach."
         },
         {
           "icon": "RiTranslate2",
           "title": "Tłumacze",
-          "description": "Liczą znaki bez spacji do wyceny tłumaczenia (standardowa jednostka rozliczeniowa)."
+          "description": "Liczenie znaków bez spacji do wyceny (standardowa jednostka rozliczeniowa w tłumaczeniach)."
         }
       ]
     },
@@ -231,34 +290,34 @@
       "grid": "two",
       "items": [
         {
-          "icon": "RiInfinityLine",
-          "title": "Sześć typów stron z zalecanymi zakresami",
-          "description": "Opis produktu, strona usługi, strona główna, strona ofertowa, artykuł blogowy i poradnik - każdy typ ma własne zakresy oparte na analizach."
+          "icon": "RiBarChartLine",
+          "title": "8 metryk tekstu",
+          "description": "Słowa, znaki ze spacjami i bez, zdania, akapity, unikalne słowa, średnia długość słowa i czas czytania - wszystko w jednym panelu."
+        },
+        {
+          "icon": "RiTextWrap",
+          "title": "10 narzędzi do formatowania",
+          "description": "Zamiana wielkości liter, usuwanie spacji, pustych linii, duplikatów i sortowanie - bez instalowania dodatkowych programów."
         },
         {
           "icon": "RiUserLine",
           "title": "Przetwarzanie lokalne w przeglądarce",
-          "description": "Tekst nie jest wysyłany na żaden serwer - cała analiza odbywa się lokalnie na urządzeniu."
-        },
-        {
-          "icon": "RiCheckboxCircleLine",
-          "title": "Ocena długości tekstu",
-          "description": "Nie tylko liczysz słowa, ale dostajesz informację, czy długość jest odpowiednia dla danego typu strony."
-        },
-        {
-          "icon": "RiBarChartLine",
-          "title": "Zakresy oparte na SEO",
-          "description": "Zalecane długości bazują na analizach treści, które dobrze pozycjonują się w wyszukiwarkach."
-        },
-        {
-          "icon": "RiTimerLine",
-          "title": "Czas czytania",
-          "description": "Od razu wiesz, ile minut zajmie czytelnikom przeczytanie tekstu."
+          "description": "Tekst nie jest wysyłany na żaden serwer. Cała analiza i transformacja odbywają się lokalnie na urządzeniu."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Kopiowanie raportu",
-          "description": "Przycisk Kopiuj raport przenosi do schowka podsumowanie ze wszystkimi statystykami i oceną długości."
+          "title": "Kopiowanie i czyszczenie tekstu",
+          "description": "Kopiuj zmodyfikowany tekst do schowka jednym kliknięciem lub wyczyść pole, aby zacząć od nowa."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Natychmiastowe wyniki",
+          "description": "Statystyki aktualizują się w czasie rzeczywistym podczas wpisywania lub wklejania tekstu. Bez oczekiwania na przetwarzanie."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "Bez rejestracji i limitów",
+          "description": "Narzędzie jest w pełni darmowe. Nie wymaga rejestracji, logowania ani podawania danych osobowych."
         }
       ]
     },
@@ -272,34 +331,34 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Czy długość tekstu wpływa na pozycję w Google?",
-          "answer": "Długość tekstu sama w sobie nie jest czynnikiem rankingowym. Google ocenia, czy treść odpowiada na pytanie użytkownika i czy jest dla niego wartościowa. Krótszy tekst, który wyczerpująco odpowiada na pytanie, może osiągać dobre pozycje - kluczowa jest wartość dla czytelnika. Zakresy w narzędziu opierają się na analizach treści, które dobrze się pozycjonują.",
-          "answerSchemaText": "Długość tekstu nie jest bezpośrednim czynnikiem rankingowym. Google ocenia wartość treści dla użytkownika."
-        },
-        {
-          "question": "Dlaczego zakresy słów są takie szerokie?",
-          "answer": "Ten sam typ strony może wymagać różnej długości w zależności od złożoności tematu. Opis prostego produktu (np. kubek) to 80-150 słów - wystarczy podać materiał, pojemność i przeznaczenie. Opis laptopa to 300-400 słów, bo kupujący pyta o procesor, pamięć, ekran, baterię. Podobnie z usługami: lokalna usługa hydraulika to 500-700 słów, a kompleksowa usługa wdrożenia systemu B2B z procesem, etapami i FAQ to 1200-1500 słów.",
-          "answerSchemaText": "Różnica wynika ze złożoności tematu - prosty produkt wymaga mniej słów niż złożony."
-        },
-        {
-          "question": "Jak interpretować ocenę \"za krótki\" lub \"za długi\"?",
-          "answer": "Ocena pokazuje, gdzie tekst znajduje się względem typowych treści danego typu. Jeśli tekst jest oznaczony jako \"za krótki\", ale odpowiada na wszystkie pytania czytelnika - długość jest odpowiednia. Jeśli jest \"za długi\", ale każdy akapit wnosi nową informację - długość jest uzasadniona.",
-          "answerSchemaText": "Ocena pokazuje pozycję tekstu względem typowych treści. Jeśli tekst odpowiada na pytania czytelnika, długość jest odpowiednia."
-        },
-        {
           "question": "Jak licznik oblicza czas czytania?",
           "answer": "Narzędzie dzieli liczbę słów przez 200 - to średnia prędkość czytania dla typowego tekstu. Tekst techniczny lub wymagający skupienia (np. dokumentacja, regulamin) będzie czytany wolniej. Lekki artykuł lifestylowy - szybciej. Wynik to orientacyjna wartość, która pomaga ocenić, ile czasu czytelnik spędzi z tekstem.",
           "answerSchemaText": "Narzędzie przyjmuje średnią prędkość czytania 200 słów na minutę. To wartość orientacyjna dla typowego tekstu."
         },
         {
-          "question": "Skąd pochodzą zalecane zakresy?",
-          "answer": "Zakresy opierają się na analizach treści, które dobrze pozycjonują się w wyszukiwarkach, oraz na praktykach tworzenia treści. Są celowo szerokie, ponieważ ten sam typ strony może wymagać różnej długości w zależności od branży, złożoności tematu i potrzeb czytelnika. Zakresy to punkt wyjścia do oceny, czy tekst mieści się w typowym przedziale dla danego typu strony.",
-          "answerSchemaText": "Zakresy opierają się na analizach SEO i praktykach tworzenia treści."
+          "question": "Czym różni się liczenie znaków ze spacjami od liczenia bez spacji?",
+          "answer": "Znaki ze spacjami to wszystkie znaki w tekście łącznie ze spacjami, tabulatorami i znakami nowej linii. Znaki bez spacji to tylko litery, cyfry i interpunkcja. Platformy takie jak Allegro czy OLX mają limity w znakach ze spacjami. Biura tłumaczeń i drukarnie rozliczają się w znakach bez spacji.",
+          "answerSchemaText": "Znaki ze spacjami obejmują wszystkie znaki, znaki bez spacji pomijają spacje i tabulatory. Różnica ma znaczenie przy limitach platform i wycenach."
         },
         {
-          "question": "Czy mogę skopiować raport ze statystykami?",
-          "answer": "Tak. Pod statystykami znajduje się przycisk Kopiuj raport - przenosi do schowka podsumowanie z liczbą słów, znaków, akapitów, czasem czytania i oceną długości. Raport można wkleić do dokumentu lub wysłać współpracownikom.",
-          "answerSchemaText": "Tak. Kliknij przycisk Kopiuj raport pod statystykami. Do schowka trafi podsumowanie ze wszystkimi metrykami i oceną."
+          "question": "Jak działa zamiana wielkości liter?",
+          "answer": "Narzędzie oferuje 5 trybów zamiany: WIELKIE LITERY (cały tekst na wielkie), małe litery (cały na małe), Jak w zdaniu (pierwsza litera zdania wielka), Każde Słowo Wielką (pierwsza litera każdego słowa wielka) i Odwróć wielkość (zamiana wielkich na małe i odwrotnie). Kliknij odpowiedni przycisk na pasku narzędzi pod polem tekstowym.",
+          "answerSchemaText": "Narzędzie ma 5 trybów zamiany wielkości liter: wielkie, małe, jak w zdaniu, każde słowo wielką i odwracanie wielkości."
+        },
+        {
+          "question": "Co oznacza metryka 'unikalne słowa'?",
+          "answer": "Unikalne słowa to liczba niepowtarzających się wyrazów w tekście. Jeśli słowo 'marketing' pojawia się 5 razy, liczy się jako 1 unikalne słowo. Wysoki stosunek unikalnych słów do wszystkich słów wskazuje na bogate słownictwo i mniejszą powtarzalność tekstu.",
+          "answerSchemaText": "Unikalne słowa to liczba niepowtarzających się wyrazów. Wysoki stosunek do ogółu słów wskazuje na bogate słownictwo."
+        },
+        {
+          "question": "Jak działa usuwanie duplikatów linii?",
+          "answer": "Funkcja porównuje każdą linię tekstu z pozostałymi i zachowuje tylko pierwsze wystąpienie. Powtarzające się linie są usuwane. Przydatne do czyszczenia list słów kluczowych, adresów e-mail, danych z arkuszy kalkulacyjnych i wszelkich zbiorów, w których mogą pojawić się duplikaty.",
+          "answerSchemaText": "Narzędzie porównuje linie tekstu i zachowuje tylko unikalne, usuwając powtórzenia."
+        },
+        {
+          "question": "Czy mój tekst jest bezpieczny?",
+          "answer": "Tak. Cała analiza i przetwarzanie tekstu odbywają się wyłącznie w przeglądarce - tekst nie jest wysyłany na żaden serwer. Narzędzie nie zapisuje ani nie przechowuje wklejonego tekstu. Po zamknięciu strony tekst znika bezpowrotnie.",
+          "answerSchemaText": "Tak. Tekst jest przetwarzany lokalnie w przeglądarce i nie jest wysyłany na serwer."
         }
       ]
     },

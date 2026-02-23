@@ -80,15 +80,18 @@
       "items": [
         {
           "title": "1. Töltsön fel egy képet",
-          "description": "Húzzon egy fájlt a kijelölt területre, vagy válassza ki az eszközéről. Támogatott formátumok: PNG, JPG és SVG."
+          "description": "Húzzon egy fájlt a kijelölt területre, vagy válassza ki az eszközéről. Támogatott formátumok: PNG, JPG és SVG.",
+          "icon": "RiUploadLine"
         },
         {
           "title": "2. Várja meg az elemzést",
-          "description": "Az eszköz automatikusan elemzi a képet és kinyeri akár 12 domináns színt."
+          "description": "Az eszköz automatikusan elemzi a képet és kinyeri akár 12 domináns színt.",
+          "icon": "RiSearchEyeLine"
         },
         {
           "title": "3. Másolja a szükséges színeket",
-          "description": "Minden szín mellett van egy másolás gomb - a HEX vagy RGB kód a vágólapra kerül és közvetlenül beilleszthető a projektbe."
+          "description": "Minden szín mellett van egy másolás gomb - a HEX vagy RGB kód a vágólapra kerül és közvetlenül beilleszthető a projektbe.",
+          "icon": "RiFileCopyLine"
         }
       ]
     },

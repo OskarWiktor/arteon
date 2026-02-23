@@ -92,15 +92,18 @@
       "items": [
         {
           "title": "1. Voer de basiskleur in",
-          "description": "Typ een HEX-code (bijv. #496ba2) in het tekstveld of kies een kleur uit de kleurkiezer. U kunt ook de knop Willekeurige kleur gebruiken."
+          "description": "Typ een HEX-code (bijv. #496ba2) in het tekstveld of kies een kleur uit de kleurkiezer. U kunt ook de knop Willekeurige kleur gebruiken.",
+          "icon": "RiDropLine"
         },
         {
           "title": "2. Bevestig uw keuze",
-          "description": "Na het klikken op Kleur bijwerken genereert de tool automatisch 9 paletten op basis van verschillende kleurharmonieschema's."
+          "description": "Na het klikken op Kleur bijwerken genereert de tool automatisch 9 paletten op basis van verschillende kleurharmonieschema's.",
+          "icon": "RiCheckboxCircleLine"
         },
         {
           "title": "3. Kopieer de gewenste kleuren",
-          "description": "Naast elke kleur is een Kopieer-knop – de HEX-code gaat naar het klembord en kan direct in uw project worden geplakt."
+          "description": "Naast elke kleur is een Kopieer-knop – de HEX-code gaat naar het klembord en kan direct in uw project worden geplakt.",
+          "icon": "RiFileCopyLine"
         }
       ]
     },

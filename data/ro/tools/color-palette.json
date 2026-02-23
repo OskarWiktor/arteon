@@ -99,15 +99,18 @@
       "items": [
         {
           "title": "1. Introduceți culoarea de bază",
-          "description": "Tastați un cod HEX (ex. #496ba2) în câmpul de text sau alegeți o culoare din selectorul de culori. Puteți folosi și butonul Culoare aleatorie."
+          "description": "Tastați un cod HEX (ex. #496ba2) în câmpul de text sau alegeți o culoare din selectorul de culori. Puteți folosi și butonul Culoare aleatorie.",
+          "icon": "RiDropLine"
         },
         {
           "title": "2. Confirmați alegerea",
-          "description": "După clic pe butonul Actualizează culoarea, instrumentul va genera automat 9 palete bazate pe diferite scheme de armonie a culorilor."
+          "description": "După clic pe butonul Actualizează culoarea, instrumentul va genera automat 9 palete bazate pe diferite scheme de armonie a culorilor.",
+          "icon": "RiCheckboxCircleLine"
         },
         {
           "title": "3. Copiați culorile necesare",
-          "description": "Lângă fiecare culoare există un buton Copiere – codul HEX merge în clipboard și poate fi lipit direct în proiectul dvs."
+          "description": "Lângă fiecare culoare există un buton Copiere – codul HEX merge în clipboard și poate fi lipit direct în proiectul dvs.",
+          "icon": "RiFileCopyLine"
         }
       ]
     },

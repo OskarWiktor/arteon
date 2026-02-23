@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/en/tools", "label": "Tools" },
-    "third": { "href": "/en/tools/color-palette-generator", "label": "Color palette generator" }
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/color-palette-generator",
+      "label": "Color palette generator"
+    }
   },
   "schemas": {
     "software": {
@@ -45,36 +51,66 @@
       "name": "How to generate a color palette from one base color",
       "description": "How to generate 9 color palettes from one base color: monochromatic, complementary, triadic, pastel, and more. Each color can be copied with its HEX code.",
       "steps": [
-        { "name": "Choose a base color", "text": "Enter a HEX code in the text field or use the color picker to select a color visually." },
-        { "name": "Confirm the color", "text": "Confirm the selected color with the Update Color button - the tool will generate palettes based on your chosen base color." },
+        {
+          "name": "Choose a base color",
+          "text": "Enter a HEX code in the text field or use the color picker to select a color visually."
+        },
+        {
+          "name": "Confirm the color",
+          "text": "Confirm the selected color with the Update Color button - the tool will generate palettes based on your chosen base color."
+        },
         {
           "name": "Browse the palettes",
           "text": "The tool will automatically generate 9 different palettes: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, and minimalist."
         },
-        { "name": "Copy colors", "text": "Next to each color you will find a Copy button - the HEX code is copied to your system clipboard." }
+        {
+          "name": "Copy colors",
+          "text": "Next to each color you will find a Copy button - the HEX code is copied to your system clipboard."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Why generate a color palette?",
       "html": "<p class=\"text-mid\">A consistent color palette is the foundation of every visual project - from a website, through a logo, to printed materials. Manually selecting colors that work together requires knowledge of color theory. The generator does it automatically: you provide one base color (e.g., your logo color), and the tool creates 9 color sets based on proven color harmony schemes.</p><p class=\"text-mid mt-3\">Each generated color comes with its HEX code (e.g., #496ba2) and HSL value (hue, saturation, lightness). The HEX code can be pasted directly into CSS, Figma, Canva, or any graphics application.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "How to use the color palette generator",
       "description": "The whole process takes just a few seconds:",
       "grid": "three",
       "items": [
-        { "title": "1. Enter the base color", "description": "Type a HEX code (e.g., #496ba2) in the text field or pick a color from the color picker. You can also use the Random Color button." },
-        { "title": "2. Confirm your choice", "description": "After clicking the Update Color button, the tool will automatically generate 9 palettes based on different color harmony schemes." },
-        { "title": "3. Copy the colors you need", "description": "Next to each color there is a Copy button - the HEX code goes to the clipboard and can be pasted directly into your project." }
+        {
+          "title": "1. Enter the base color",
+          "description": "Type a HEX code (e.g., #496ba2) in the text field or pick a color from the color picker. You can also use the Random Color button.",
+          "icon": "RiDropLine"
+        },
+        {
+          "title": "2. Confirm your choice",
+          "description": "After clicking the Update Color button, the tool will automatically generate 9 palettes based on different color harmony schemes.",
+          "icon": "RiCheckboxCircleLine"
+        },
+        {
+          "title": "3. Copy the colors you need",
+          "description": "Next to each color there is a Copy button - the HEX code goes to the clipboard and can be pasted directly into your project.",
+          "icon": "RiFileCopyLine"
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "What color schemes does the tool generate?",
@@ -128,14 +164,20 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "What is the color palette generator based on?",
       "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° on the color wheel</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
       "html": "<p class=\"text-mid\">All palettes are created by mathematically transforming the base color in HSL color space. HSL describes a color with three values: hue (H) is the position on the color wheel (0°–360°), saturation (S) determines color intensity, and lightness (L) - how bright or dark the color is.</p><p class=\"text-mid mt-3\">The complementary, triadic, and split-complementary palettes are based on color wheel geometry - colors are placed at equal angular intervals, creating visual balance. The monochromatic, pastel, and dark palettes change only lightness and saturation while keeping the same hue.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Where to use the generated color palettes",
@@ -168,7 +210,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Troubleshooting the palette generator",
@@ -191,7 +236,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Frequently asked questions about the color palette generator",
@@ -224,8 +272,17 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore other tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

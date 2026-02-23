@@ -80,15 +80,18 @@
       "items": [
         {
           "title": "1. Upload een afbeelding",
-          "description": "Sleep een bestand naar het aangewezen gebied of selecteer het van uw apparaat. Ondersteunde formaten zijn PNG, JPG en SVG."
+          "description": "Sleep een bestand naar het aangewezen gebied of selecteer het van uw apparaat. Ondersteunde formaten zijn PNG, JPG en SVG.",
+          "icon": "RiUploadLine"
         },
         {
           "title": "2. Wacht op analyse",
-          "description": "De tool analyseert automatisch de afbeelding en extraheert tot 12 dominante kleuren."
+          "description": "De tool analyseert automatisch de afbeelding en extraheert tot 12 dominante kleuren.",
+          "icon": "RiSearchEyeLine"
         },
         {
           "title": "3. Kopieer de gewenste kleuren",
-          "description": "Naast elke kleur is een kopieerknop - de HEX- of RGB-code gaat naar het klembord en kan direct in uw project worden geplakt."
+          "description": "Naast elke kleur is een kopieerknop - de HEX- of RGB-code gaat naar het klembord en kan direct in uw project worden geplakt.",
+          "icon": "RiFileCopyLine"
         }
       ]
     },

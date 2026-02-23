@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/narzedzia", "label": "Narzędzia" },
-    "third": { "href": "/narzedzia/edytor-zdjec-online", "label": "Darmowy edytor zdjęć online" }
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/edytor-zdjec-online",
+      "label": "Darmowy edytor zdjęć online"
+    }
   },
   "schemas": {
     "software": {
@@ -53,52 +59,94 @@
       "name": "Jak zmienić rozmiar zdjęcia i wykadrować je do mediów społecznościowych",
       "description": "Jak zmienić rozmiar zdjęcia do Instagram (1080x1080, 1080x1350, story), Facebook, LinkedIn i OG image. Konwersja JPG na WebP i tworzenie okrągłych avatarów.",
       "steps": [
-        { "name": "Dodaj zdjęcie", "text": "Przeciągnij plik na wyznaczone pole lub wybierz obraz z dysku. Obsługiwane formaty: JPG, PNG, WebP." },
-        { "name": "Wybierz wymiary lub gotowy format", "text": "Wpisz docelowe wymiary w pikselach lub wybierz gotowy format (np. Instagram post, okładka Facebook, OG image)." },
-        { "name": "Dopasuj kadr", "text": "Przesuń i przybliż obraz, żeby wybrać najlepszy fragment. Jasny obszar na podglądzie pokazuje dokładnie to, co zostanie zapisane." },
-        { "name": "Wybierz format i pobierz", "text": "Wybierz format pliku (JPG, PNG lub WebP), ustaw jakość kompresji i pobierz gotowe zdjęcie." }
+        {
+          "name": "Dodaj zdjęcie",
+          "text": "Przeciągnij plik na wyznaczone pole lub wybierz obraz z dysku. Obsługiwane formaty: JPG, PNG, WebP."
+        },
+        {
+          "name": "Wybierz wymiary lub gotowy format",
+          "text": "Wpisz docelowe wymiary w pikselach lub wybierz gotowy format (np. Instagram post, okładka Facebook, OG image)."
+        },
+        {
+          "name": "Dopasuj kadr",
+          "text": "Przesuń i przybliż obraz, żeby wybrać najlepszy fragment. Jasny obszar na podglądzie pokazuje dokładnie to, co zostanie zapisane."
+        },
+        {
+          "name": "Wybierz format i pobierz",
+          "text": "Wybierz format pliku (JPG, PNG lub WebP), ustaw jakość kompresji i pobierz gotowe zdjęcie."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Zmień rozmiar zdjęcia online - kadrowanie, konwersja i kompresja w jednym narzędziu",
       "html": "<p class=\"text-mid\">Narzędzie do edycji zdjęć online pozwala szybko dopasować obrazy do konkretnych wymiarów. Możesz zmienić rozmiar zdjęcia do dowolnych wymiarów w pikselach, wybrać gotowy format dla mediów społecznościowych lub przyciąć fragment obrazu z precyzyjnym kadrowaniem.</p><p class=\"text-mid mt-3\">Oprócz zmiany rozmiaru narzędzie oferuje konwersję formatów (JPG, PNG, WebP), tworzenie okrągłych avatarów i kontrolę jakości kompresji.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak zmienić rozmiar zdjęcia online?",
       "description": "Edycja zdjęcia zajmuje zaledwie kilka sekund:",
       "grid": "three",
       "items": [
-        { "title": "1. Dodaj zdjęcie", "description": "Przeciągnij plik na wyznaczone pole lub wybierz zdjęcie z dysku. Obsługiwane formaty: JPG, PNG, WebP." },
-        { "title": "2. Ustaw wymiary", "description": "Wpisz wymiary w pikselach lub wybierz gotowy format (Instagram, Facebook, YouTube, LinkedIn, OG image)." },
-        { "title": "3. Pobierz", "description": "Dopasuj kadr, wybierz format pliku (JPG, PNG, WebP), ustaw jakość i pobierz gotowe zdjęcie." }
+        {
+          "title": "1. Dodaj zdjęcie",
+          "description": "Przeciągnij plik na wyznaczone pole lub wybierz zdjęcie z dysku. Obsługiwane formaty: JPG, PNG, WebP.",
+          "icon": "RiImageLine"
+        },
+        {
+          "title": "2. Ustaw wymiary",
+          "description": "Wpisz wymiary w pikselach lub wybierz gotowy format (Instagram, Facebook, YouTube, LinkedIn, OG image).",
+          "icon": "RiCropLine"
+        },
+        {
+          "title": "3. Pobierz",
+          "description": "Dopasuj kadr, wybierz format pliku (JPG, PNG, WebP), ustaw jakość i pobierz gotowe zdjęcie.",
+          "icon": "RiDownloadLine"
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Jak dodać obraz?",
       "html": "<p class=\"text-mid\">Narzędzie przyjmuje obrazy w formatach JPG, PNG i WebP. Możesz dodać zdjęcie na dwa sposoby:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Przeciągnij i upuść</strong> - chwyć plik z folderu na komputerze i upuść go na pole do dodania pliku (pole z przerywaną ramką).</li><li><strong>Wybór z dysku</strong> - po kliknięciu w pole do dodania pliku otworzy się okno wyboru pliku z dysku.</li></ul><p class=\"text-mid mt-3\">Po dodaniu obrazu narzędzie automatycznie odczyta jego oryginalne wymiary i wyświetli podgląd. Możesz teraz przejść do ustawień kadru.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Ustaw wymiary docelowe",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Wymiary w px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Gotowe formaty</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Szerokość (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly /></div><div><label class=\"text-[14px]! font-medium\">Wysokość (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly /></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\" /><span>Zachowaj proporcje (automatyczny drugi wymiar)</span></label></div></div>",
       "html": "<p class=\"text-mid\">W zakładce <strong>Wymiary w px</strong> wpisujesz szerokość i wysokość ręcznie. Opcja <strong>Zachowaj proporcje</strong> automatycznie dostosowuje drugi wymiar.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Wymiary zdjęć do Instagram, Facebook i LinkedIn",
       "html": "<p class=\"text-mid mb-4\">Narzędzie zawiera gotowe formaty z optymalnymi wymiarami dla najpopularniejszych platform:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platforma</th><th class=\"py-2 pr-4 font-semibold\">Format</th><th class=\"py-2 pr-4 font-semibold\">Wymiary (px)</th><th class=\"py-2 font-semibold\">Proporcje</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Post kwadrat</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Post pion</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Post</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Okładka strony</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Post</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Baner profilu</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG image</td><td class=\"py-2 pr-4\">Udostępnianie linków</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Wymiary w tabeli to zalecane rozmiary dla każdej platformy. Narzędzie automatycznie ustawia te wymiary po wybraniu odpowiedniego formatu.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Gotowe formaty - który wybrać?",
@@ -120,7 +168,11 @@
           "title": "Instagram - story / reels (1080x1920)",
           "description": "Pełnoekranowy format pionowy (proporcje 9:16). Używany w relacjach i rolkach. Wypełnia cały ekran telefonu."
         },
-        { "icon": "RiFacebookLine", "title": "Facebook - post (1200x630)", "description": "Optymalny format dla postów na Facebooku i udostępnianych linków. Proporcje zbliżone do 16:9." },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook - post (1200x630)",
+          "description": "Optymalny format dla postów na Facebooku i udostępnianych linków. Proporcje zbliżone do 16:9."
+        },
         {
           "icon": "RiFacebookLine",
           "title": "Facebook - okładka strony (820x360)",
@@ -156,29 +208,45 @@
           "title": "Miniatura artykułu (800x600)",
           "description": "Mniejszy format do miniatur na listach artykułów, w karuzeli produktów lub jako podgląd w wynikach wyszukiwania."
         },
-        { "icon": "RiLayoutGridLine", "title": "Hero sekcji (1920x1080)", "description": "Pełnoekranowy format Full HD. Używany jako tło głównej sekcji na stronach głównych lub stronach ofertowych." }
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Hero sekcji (1920x1080)",
+          "description": "Pełnoekranowy format Full HD. Używany jako tło głównej sekcji na stronach głównych lub stronach ofertowych."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Jak kadrować obraz?",
       "html": "<p class=\"text-mid\">Po ustawieniu docelowych wymiarów na podglądzie pojawia się interaktywny obszar kadru. Jasna część obrazu to fragment, który zostanie zapisany - reszta jest przyciemniona.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Przeciąganie kadru</p><p class=\"text-mid mt-1\">Chwyć jasny obszar i przeciągnij go w dowolne miejsce obrazu. W ten sposób wybierasz, który fragment zdjęcia zostanie wyeksportowany.</p></div><div><p class=\"text-dark font-semibold\">Zmiana rozmiaru przez uchwyty</p><p class=\"text-mid mt-1\">W rogach obszaru kadru znajdują się małe kwadraty (uchwyty). Przeciągając je, zmieniasz wielkość kadru - możesz go powiększyć lub zmniejszyć, zachowując wybrane proporcje.</p></div><div><p class=\"text-dark font-semibold\">Przybliżenie (zoom)</p><p class=\"text-mid mt-1\">W zakładce <strong>Przybliżenie</strong> znajdziesz suwak do regulacji zoomu (100-300%). Wyższa wartość oznacza, że kadr obejmuje mniejszy fragment oryginalnego zdjęcia - przydatne, gdy chcesz wyciąć konkretny detal.</p></div><div><p class=\"text-dark font-semibold\">Precyzyjne ustawienie pozycji</p><p class=\"text-mid mt-1\">W zakładce <strong>Pozycja</strong> możesz ustawić dokładną pozycję kadru w procentach (0-100% dla osi X i Y). Przyciski centrowania pozwalają szybko ustawić kadr na środku obrazu.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Kształty kadru",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Prostokąt</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Kwadrat</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Koło</span></div></div>",
       "html": "<p class=\"text-mid\">W zakładce <strong>Kształty kadru</strong> wybierasz kształt wyeksportowanego obrazu: prostokąt (z wybranymi proporcjami), kwadrat (wymusza 1:1) lub koło (z przezroczystym tłem).</p><p class=\"text-mid mt-3\">Kształt koła tworzy okrągły avatar z przezroczystym tłem poza okręgiem. Narzędzie automatycznie przełączy format na PNG lub WebP, ponieważ JPG nie obsługuje przezroczystości.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Siatka 3x3 - do czego służy?",
       "html": "<p class=\"text-mid\">Na obszarze kadru widoczna jest siatka dzieląca obraz na 9 równych części. To wizualizacja <strong>reguły trójpodziału</strong> - jednej z podstawowych zasad kompozycji fotograficznej.</p><p class=\"text-mid mt-3\">Reguła mówi, że najważniejsze elementy zdjęcia (twarz, produkt, punkt zainteresowania) powinny znajdować się na przecięciach linii siatki lub wzdłuż nich. Taka kompozycja jest bardziej dynamiczna i przyjemna dla oka niż umieszczenie obiektu dokładnie na środku.</p><p class=\"text-mid mt-3\">W zakładce <strong>Kolor siatki</strong> możesz zmienić kolor linii (zielony, biały, czarny, czerwony, żółty), żeby siatka była dobrze widoczna na różnych zdjęciach.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Eksport - jaki format wybrać?",
@@ -200,17 +268,36 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Proporcje (aspect ratio) - co to znaczy?",
       "description": "Proporcje obrazu (aspect ratio) to stosunek jego szerokości do wysokości. Zapisuje się je jako dwie liczby oddzielone dwukropkiem:",
       "grid": "two",
       "items": [
-        { "icon": "RiLayoutGridLine", "title": "1:1 (kwadrat)", "description": "Szerokość równa wysokości. Instagram post kwadrat, zdjęcia profilowe, ikony." },
-        { "icon": "RiAspectRatioLine", "title": "4:5 (pionowy)", "description": "Lekko pionowy format. Instagram post pionowy - zajmuje więcej miejsca w feedzie niż kwadrat." },
-        { "icon": "RiImageLine", "title": "3:2 (klasyczny)", "description": "Tradycyjne proporcje fotografii analogowej. Wiele aparatów cyfrowych też używa tego formatu." },
-        { "icon": "RiCropLine", "title": "16:9 (panoramiczny)", "description": "Standardowy format wideo HD, prezentacji i monitorów. YouTube, Facebook video, banery na stronach." },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "1:1 (kwadrat)",
+          "description": "Szerokość równa wysokości. Instagram post kwadrat, zdjęcia profilowe, ikony."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "4:5 (pionowy)",
+          "description": "Lekko pionowy format. Instagram post pionowy - zajmuje więcej miejsca w feedzie niż kwadrat."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "3:2 (klasyczny)",
+          "description": "Tradycyjne proporcje fotografii analogowej. Wiele aparatów cyfrowych też używa tego formatu."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "16:9 (panoramiczny)",
+          "description": "Standardowy format wideo HD, prezentacji i monitorów. YouTube, Facebook video, banery na stronach."
+        },
         {
           "icon": "RiInstagramLine",
           "title": "9:16 (pionowy pełnoekranowy)",
@@ -218,7 +305,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Najczęstsze pytania dotyczące edytora zdjęć",
@@ -259,9 +349,18 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ],
   "cta": {
     "title": "Potrzebujesz profesjonalnych grafik do mediów społecznościowych?",

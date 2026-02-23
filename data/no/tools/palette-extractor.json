@@ -80,15 +80,18 @@
       "items": [
         {
           "title": "1. Last opp bilde",
-          "description": "Dra og slipp filen i det markerte området, eller velg den fra enheten din. Støttede formater er PNG, JPG og SVG."
+          "description": "Dra og slipp filen i det markerte området, eller velg den fra enheten din. Støttede formater er PNG, JPG og SVG.",
+          "icon": "RiUploadLine"
         },
         {
           "title": "2. Vent på analysen",
-          "description": "Verktøyet analyserer automatisk bildet og trekker ut opptil 12 dominerende farger."
+          "description": "Verktøyet analyserer automatisk bildet og trekker ut opptil 12 dominerende farger.",
+          "icon": "RiSearchEyeLine"
         },
         {
           "title": "3. Kopier fargene du trenger",
-          "description": "Ved hver farge er det en kopierknapp – HEX- eller RGB-koden går til utklippstavlen og kan limes inn direkte i prosjektet ditt."
+          "description": "Ved hver farge er det en kopierknapp – HEX- eller RGB-koden går til utklippstavlen og kan limes inn direkte i prosjektet ditt.",
+          "icon": "RiFileCopyLine"
         }
       ]
     },

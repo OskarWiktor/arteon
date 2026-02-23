@@ -85,15 +85,18 @@
       "items": [
         {
           "title": "1. Adjon hozzá fájlokat",
-          "description": "Húzza a JPG vagy PNG képeket a kijelölt területre, vagy válasszon fájlokat az eszközéről. Egyszerre bármennyi fájlt hozzáadhat."
+          "description": "Húzza a JPG vagy PNG képeket a kijelölt területre, vagy válasszon fájlokat az eszközéről. Egyszerre bármennyi fájlt hozzáadhat.",
+          "icon": "RiUploadLine"
         },
         {
           "title": "2. Állítsa be a minőséget",
-          "description": "Válassza ki a minőségi szintet (alapértelmezett 80%). Az alacsonyabb érték kisebb fájlt jelent. A legtöbb felhasználási esetben a 80% az optimális beállítás."
+          "description": "Válassza ki a minőségi szintet (alapértelmezett 80%). Az alacsonyabb érték kisebb fájlt jelent. A legtöbb felhasználási esetben a 80% az optimális beállítás.",
+          "icon": "RiEqualizerLine"
         },
         {
           "title": "3. Töltse le a WebP-t",
-          "description": "A konverzió után töltse le a fájlokat egyenként vagy ZIP archívumként. Minden fájl mellett látható a megtakarított hely információja."
+          "description": "A konverzió után töltse le a fájlokat egyenként vagy ZIP archívumként. Minden fájl mellett látható a megtakarított hely információja.",
+          "icon": "RiDownloadLine"
         }
       ]
     },

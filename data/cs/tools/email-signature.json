@@ -98,15 +98,18 @@
       "items": [
         {
           "title": "1. Zadejte údaje",
-          "description": "Vyplňte jméno, pozici, firmu a kontaktní údaje."
+          "description": "Vyplňte jméno, pozici, firmu a kontaktní údaje.",
+          "icon": "RiEditLine"
         },
         {
           "title": "2. Přizpůsobte vzhled",
-          "description": "Vyberte rozložení, barvy, přidejte logo a odkazy na sociální sítě."
+          "description": "Vyberte rozložení, barvy, přidejte logo a odkazy na sociální sítě.",
+          "icon": "RiPaletteLine"
         },
         {
           "title": "3. Zkopírujte kód",
-          "description": "Tlačítko Copy signature zkopíruje hotový kód do schránky. Stačí vložit do Gmailu, Outlooku nebo jiného e-mailového klienta."
+          "description": "Tlačítko Copy signature zkopíruje hotový kód do schránky. Stačí vložit do Gmailu, Outlooku nebo jiného e-mailového klienta.",
+          "icon": "RiCodeLine"
         }
       ]
     },
@@ -138,37 +141,55 @@
       "title": "Jak přidat CTA tlačítka?",
       "html": "<p class=\"text-mid\">CTA tlačítko (call-to-action, výzva k akci) je klikatelný prvek, který nasměruje příjemce na vybranou stránku. Může to být odkaz na kalendář schůzek, kontaktní formulář nebo nabídku. Generátor umožňuje přidat dvě CTA tlačítka.</p><h3 class=\"h5 mt-6 mb-3\">Hlavní tlačítko</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Otevřete záložku <strong>Tlačítka</strong> v editoru.</li><li>V sekci <strong>Hlavní tlačítko</strong> zadejte text, který uvidí příjemce, např. Domluvte si bezplatnou konzultaci.</li><li>Do pole <strong>CTA odkaz</strong> vložte úplnou URL adresu. Adresa musí začínat https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Sekundární tlačítko</h3><p class=\"text-mid\">Můžete přidat druhé CTA tlačítko ve stylu outline (průhledné pozadí s okrajem). Vyplňte pole v sekci <strong>Sekundární tlačítko</strong> analogicky.</p><h3 class=\"h5 mt-6 mb-3\">Zaoblení tlačítek</h3><p class=\"text-mid\">Na spodní části záložky Tlačítka najdete možnost <strong>Zaoblení tlačítek</strong>. Na výběr máte tři varianty: Žádné (ostré rohy), Mírné (lehce zaoblené) nebo Plné (oválné tlačítko).</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Jak přidat odkazy na sociální sítě?",
       "html": "<p class=\"text-mid\">V záložce <strong>Sociální sítě</strong> můžete přidat odkazy na své profily. Generátor podporuje dvanáct platforem: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (dříve Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram a Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Jak na to</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Otevřete záložku <strong>Sociální sítě</strong> v editoru.</li><li>U každé platformy najdete pole pro URL adresu. Vložte úplný odkaz na svůj profil.</li><li>Vyplňte pouze ta pole, která vás zajímají. Prázdná pole se v podpisu nezobrazí.</li></ol><h3 class=\"h5 mt-6 mb-3\">Ikony sociálních sítí</h3><p class=\"text-mid\">Ve spodní části záložky najdete možnost <strong>Zobrazit ikony vedle názvů</strong>. Po zapnutí se odkazy zobrazí jako barevné SVG ikony místo samotných názvů.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Velikost ikon</strong> – na výběr: Malé (16 px), Střední (20 px) nebo Velké (24 px).</li><li><strong>Barva ikon</strong> – Barvy platforem (výchozí barvy každé platformy), Barva akcentu (jednotná barva akcentu) nebo Barva textu.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Přizpůsobení vzhledu",
       "html": "<p class=\"text-mid\">V záložce <strong>Vzhled</strong> můžete upravit barvy, písmo a další vizuální prvky podpisu.</p><h3 class=\"h5 mt-6 mb-3\">Barevné motivy</h3><p class=\"text-mid\">Na horní části záložky najdete pět přednastavených motivů: Tmavý, Modrý, Fialový, Zelený a Šedý. Kliknutí na motiv automaticky nastaví barvu akcentu a barvu textu.</p><h3 class=\"h5 mt-6 mb-3\">Barvy</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Barva akcentu</strong> – používá se v postranní/horní liště, CTA tlačítku a odkazech.</li><li><strong>Barva textu</strong> – barva všech textů v podpisu.</li><li><strong>Barva pozadí</strong> – barva pozadí celého podpisu. Ve výchozím nastavení bílá.</li></ul><h3 class=\"h5 mt-6 mb-3\">Písmo a velikost</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Písmo</strong> – na výběr: Arial, Verdana, Tahoma, Trebuchet MS a Georgia. Všechna jsou bezpečná pro e-maily.</li><li><strong>Velikost textu</strong> – tři možnosti: Malá (12 px), Standardní (14 px) a Větší (16 px).</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Styl textu – barvy a velikosti jednotlivých prvků",
       "html": "<p class=\"text-mid\">V záložce <strong>Styl textu</strong> můžete individuálně přizpůsobit barvu a velikost písma pro každý textový prvek v podpisu.</p><h3 class=\"h5 mt-6 mb-3\">Dostupné prvky</h3><p class=\"text-mid\">Viditelné jsou pouze ty prvky, které se aktuálně nacházejí v podpisu (mají vyplněná data). Pro každý prvek můžete nastavit:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Jméno a příjmení</strong> – ve výchozím nastavení zobrazeno barvou akcentu.</li><li><strong>Pozice</strong> – role ve firmě.</li><li><strong>Firma</strong> – název organizace.</li><li><strong>Kontaktní údaje</strong> – e-mail, telefon, web.</li><li><strong>Sociální sítě</strong> – odkazy na profily.</li><li><strong>Právní doložka</strong> – právní text ve spodní části podpisu.</li></ul><h3 class=\"h5 mt-6 mb-3\">Jak změnit barvu?</h3><p class=\"text-mid\">U každého prvku najdete řadu barevných možností. Klikněte na čtverec s barvou pro výběr. Tlačítko s ikonou resetu obnoví výchozí barvu prvku.</p><h3 class=\"h5 mt-6 mb-3\">Jak změnit velikost?</h3><p class=\"text-mid\">Ve druhém řádku najdete ovládání velikosti s tlačítky - a +. Hodnota ukazuje posunutí oproti základní velikosti písma. Rozsah: od -4 do +4 pixelů.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Mezery mezi prvky",
       "html": "<p class=\"text-mid\">V záložce <strong>Mezery</strong> můžete přesně ovládat vzdálenosti mezi jednotlivými prvky podpisu.</p><h3 class=\"h5 mt-6 mb-3\">Vnitřní okraj podpisu</h3><p class=\"text-mid\">Na horní části záložky najdete možnost vnitřního okraje – tedy vzdálenosti mezi obsahem podpisu a jeho okraji. Na výběr máte tři hodnoty: 8 px (malý), 16 px (střední) a 24 px (velký).</p><h3 class=\"h5 mt-6 mb-3\">Mezery mezi prvky</h3><p class=\"text-mid\">Pod vnitřním okrajem najdete ovládací prvky pro jednotlivé prvky podpisu. Každý má tlačítka + a - pro zvětšení nebo zmenšení mezery.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Za jménem a příjmením</strong></li><li><strong>Za pozicí / firmou</strong></li><li><strong>Za dalším řádkem</strong></li><li><strong>Za kontaktními údaji</strong></li><li><strong>Za sociálními sítěmi</strong></li><li><strong>Za CTA tlačítkem</strong></li><li><strong>Před právní doložkou</strong></li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Právní doložka / GDPR – kdy ji přidat?",
       "html": "<p class=\"text-mid\">V záložce <strong>Doložka / GDPR</strong> můžete přidat právní text, který se zobrazí ve spodní části podpisu menším písmem.</p><h3 class=\"h5 mt-6 mb-3\">Kdy se vyplatí doložku přidat?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Obchodní korespondence</strong> – informace o důvěrnosti zprávy a žádost o smazání v případě chybného doručení.</li><li><strong>Oborové požadavky</strong> – některé obory (např. právní, zdravotnický, finanční) vyžadují určité informace v každé zprávě.</li><li><strong>GDPR</strong> – informace o zpracování osobních údajů, pokud je firma správcem dat.</li></ul><p class=\"text-mid mt-4\">Ve výchozím nastavení je pole vyplněno ukázkovým textem. Můžete jej upravit, smazat nebo nahradit vlastní doložkou.</p><h3 class=\"h5 mt-6 mb-3\">Oddělovací linka</h3><p class=\"text-mid\">Pod textovým polem najdete možnost <strong>Zobrazit oddělovací linku</strong>. Po zapnutí se přidá horizontální linka mezi kontaktní údaje a právní doložku.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Automatické ukládání a reset nastavení",

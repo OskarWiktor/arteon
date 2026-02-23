@@ -89,15 +89,18 @@
       "items": [
         {
           "title": "1. Adăugați o imagine",
-          "description": "Trageți un fișier în zona desemnată sau selectați o grafică de pe dispozitiv. Formate suportate: PNG, JPG, SVG. Dimensiune recomandată: min. 512×512 pixeli."
+          "description": "Trageți un fișier în zona desemnată sau selectați o grafică de pe dispozitiv. Formate suportate: PNG, JPG, SVG. Dimensiune recomandată: min. 512×512 pixeli.",
+          "icon": "RiImageLine"
         },
         {
           "title": "2. Alegeți dimensiunile",
-          "description": "Selectați dimensiunile de pictograme necesare. Pentru un site obișnuit: favicon.ico, 32×32 și 180×180. Pentru PWA, adăugați 192×192 și 512×512."
+          "description": "Selectați dimensiunile de pictograme necesare. Pentru un site obișnuit: favicon.ico, 32×32 și 180×180. Pentru PWA, adăugați 192×192 și 512×512.",
+          "icon": "RiAspectRatioLine"
         },
         {
           "title": "3. Descărcați fișierele",
-          "description": "După generare, descărcați toate fișierele ca ZIP sau fiecare pictogramă individual. Sub instrument veți găsi instrucțiuni despre cum să adăugați faviconul pe site."
+          "description": "După generare, descărcați toate fișierele ca ZIP sau fiecare pictogramă individual. Sub instrument veți găsi instrucțiuni despre cum să adăugați faviconul pe site.",
+          "icon": "RiDownloadLine"
         }
       ]
     },

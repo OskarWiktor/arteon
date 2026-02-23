@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/en/tools", "label": "Tools" },
-    "third": { "href": "/en/tools/online-image-editor", "label": "Image editor" }
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/online-image-editor",
+      "label": "Image editor"
+    }
   },
   "schemas": {
     "software": {
@@ -52,52 +58,94 @@
       "name": "How to resize and crop an image for social media",
       "description": "How to resize an image for Instagram (1080x1080, 1080x1350, story), Facebook, LinkedIn, and OG image. JPG to WebP conversion and circular avatar creation.",
       "steps": [
-        { "name": "Add an image", "text": "Drag a file onto the designated area or select an image from your device. Supported formats: JPG, PNG, WebP." },
-        { "name": "Choose dimensions or a preset", "text": "Enter target dimensions in pixels or select a ready-made format (e.g., Instagram post, Facebook cover, OG image)." },
-        { "name": "Adjust the crop", "text": "Move and zoom the image to select the best area. The bright area in the preview shows exactly what will be saved." },
-        { "name": "Choose format and download", "text": "Select the file format (JPG, PNG, or WebP), set compression quality, and download the finished image." }
+        {
+          "name": "Add an image",
+          "text": "Drag a file onto the designated area or select an image from your device. Supported formats: JPG, PNG, WebP."
+        },
+        {
+          "name": "Choose dimensions or a preset",
+          "text": "Enter target dimensions in pixels or select a ready-made format (e.g., Instagram post, Facebook cover, OG image)."
+        },
+        {
+          "name": "Adjust the crop",
+          "text": "Move and zoom the image to select the best area. The bright area in the preview shows exactly what will be saved."
+        },
+        {
+          "name": "Choose format and download",
+          "text": "Select the file format (JPG, PNG, or WebP), set compression quality, and download the finished image."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Resize images instantly — crop, convert and compress in one tool",
       "html": "<p class=\"text-mid\">The image editor lets you quickly adapt images to specific dimensions. You can resize an image to any pixel dimensions, select a ready-made format for social media, or crop a section of the image with precise framing.</p><p class=\"text-mid mt-3\">In addition to resizing, the tool offers format conversion (JPG, PNG, WebP), circular avatar creation, and compression quality control.</p>"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "How to resize an image in seconds",
       "description": "Editing an image takes just a few seconds:",
       "grid": "three",
       "items": [
-        { "title": "1. Add an image", "description": "Drag a file onto the designated area or select an image from your device. Supported formats: JPG, PNG, WebP." },
-        { "title": "2. Set dimensions", "description": "Enter dimensions in pixels or select a ready-made format (Instagram, Facebook, YouTube, LinkedIn, OG image)." },
-        { "title": "3. Download", "description": "Adjust the crop, choose the file format (JPG, PNG, WebP), set quality, and download the finished image." }
+        {
+          "title": "1. Add an image",
+          "description": "Drag a file onto the designated area or select an image from your device. Supported formats: JPG, PNG, WebP.",
+          "icon": "RiImageLine"
+        },
+        {
+          "title": "2. Set dimensions",
+          "description": "Enter dimensions in pixels or select a ready-made format (Instagram, Facebook, YouTube, LinkedIn, OG image).",
+          "icon": "RiCropLine"
+        },
+        {
+          "title": "3. Download",
+          "description": "Adjust the crop, choose the file format (JPG, PNG, WebP), set quality, and download the finished image.",
+          "icon": "RiDownloadLine"
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "How to add an image",
       "html": "<p class=\"text-mid\">The tool accepts images in JPG, PNG, and WebP formats. You can add an image in two ways:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Drag and drop</strong> - grab a file from a folder on your computer and drop it onto the file upload area (the area with a dashed border).</li><li><strong>Select from device</strong> - clicking the file upload area opens a file selection dialog.</li></ul><p class=\"text-mid mt-3\">After adding an image, the tool automatically reads its original dimensions and displays a preview. You can now proceed to crop settings.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Set target dimensions",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Dimensions in px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Ready-made formats</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Width (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly></div><div><label class=\"text-[14px]! font-medium\">Height (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span>Keep proportions (auto second dimension)</span></label></div></div>",
       "html": "<p class=\"text-mid\">In the <strong>Dimensions in px</strong> tab, you enter width and height manually. The <strong>Keep proportions</strong> option automatically adjusts the second dimension.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Image dimensions for Instagram, Facebook, and LinkedIn",
       "html": "<p class=\"text-mid mb-4\">The tool includes ready-made formats with optimal dimensions for the most popular platforms:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform</th><th class=\"py-2 pr-4 font-semibold\">Format</th><th class=\"py-2 pr-4 font-semibold\">Dimensions (px)</th><th class=\"py-2 font-semibold\">Ratio</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Square post</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Portrait post</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Post</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Page cover</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Post</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Profile banner</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG image</td><td class=\"py-2 pr-4\">Link sharing</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Dimensions in the table are recommended sizes for each platform. The tool automatically sets these dimensions when you select the appropriate format.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Ready-made formats - which to choose?",
@@ -119,13 +167,21 @@
           "title": "Instagram - story / reels (1080×1920)",
           "description": "Full-screen vertical format (9:16 ratio). Used in stories and reels. Fills the entire phone screen."
         },
-        { "icon": "RiFacebookLine", "title": "Facebook - post (1200×630)", "description": "Optimal format for Facebook posts and shared links. Ratio close to 16:9." },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook - post (1200×630)",
+          "description": "Optimal format for Facebook posts and shared links. Ratio close to 16:9."
+        },
         {
           "icon": "RiFacebookLine",
           "title": "Facebook - page cover (820×360)",
           "description": "Background photo for a Facebook business page. Wide, panoramic format - may be cropped differently on various devices."
         },
-        { "icon": "RiLinkedinLine", "title": "LinkedIn - post (1200×1200)", "description": "Square format for LinkedIn posts. Looks good in the feed and on mobile devices." },
+        {
+          "icon": "RiLinkedinLine",
+          "title": "LinkedIn - post (1200×1200)",
+          "description": "Square format for LinkedIn posts. Looks good in the feed and on mobile devices."
+        },
         {
           "icon": "RiLinkedinLine",
           "title": "LinkedIn - profile banner (1584×396)",
@@ -136,32 +192,60 @@
           "title": "OG image (1200×630)",
           "description": "Graphic displayed when sharing a link on social media (Open Graph). Standard for Facebook, Twitter, LinkedIn, and other platforms."
         },
-        { "icon": "RiFileImageLine", "title": "Article graphic (1600×900)", "description": "Wide format suitable for blog article headers. 16:9 ratio looks good on text-heavy pages." },
-        { "icon": "RiAspectRatioLine", "title": "Website banner (1920×600)", "description": "Very wide format for website banners. Works as a background under headers or in offer sections." },
-        { "icon": "RiCropLine", "title": "Article thumbnail (800×600)", "description": "Smaller format for thumbnails on article lists, product carousels, or search result previews." },
-        { "icon": "RiLayoutGridLine", "title": "Hero section (1920×1080)", "description": "Full HD full-screen format. Used as the main section background on homepages or offer pages." }
+        {
+          "icon": "RiFileImageLine",
+          "title": "Article graphic (1600×900)",
+          "description": "Wide format suitable for blog article headers. 16:9 ratio looks good on text-heavy pages."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "Website banner (1920×600)",
+          "description": "Very wide format for website banners. Works as a background under headers or in offer sections."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Article thumbnail (800×600)",
+          "description": "Smaller format for thumbnails on article lists, product carousels, or search result previews."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Hero section (1920×1080)",
+          "description": "Full HD full-screen format. Used as the main section background on homepages or offer pages."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "How to crop an image",
       "html": "<p class=\"text-mid\">After setting target dimensions, an interactive crop area appears on the preview. The bright part of the image is the section that will be saved - the rest is dimmed.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Dragging the crop</p><p class=\"text-mid mt-1\">Grab the bright area and drag it to any part of the image. This way you choose which section of the photo will be exported.</p></div><div><p class=\"text-dark font-semibold\">Resizing via handles</p><p class=\"text-mid mt-1\">In the corners of the crop area there are small squares (handles). Dragging them changes the crop size - you can enlarge or shrink it while maintaining the chosen proportions.</p></div><div><p class=\"text-dark font-semibold\">Zoom</p><p class=\"text-mid mt-1\">In the <strong>Zoom</strong> tab you will find a slider to adjust zoom (100–300%). A higher value means the crop covers a smaller section of the original image - useful when you want to cut out a specific detail.</p></div><div><p class=\"text-dark font-semibold\">Precise position control</p><p class=\"text-mid mt-1\">In the <strong>Position</strong> tab you can set the exact crop position in percentages (0–100% for X and Y axes). Centering buttons let you quickly position the crop at the center of the image.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Crop shapes",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Rectangle</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Square</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Circle</span></div></div>",
       "html": "<p class=\"text-mid\">In the <strong>Crop Shapes</strong> tab, you choose the shape of the exported image: rectangle (with selected proportions), square (forces 1:1), or circle (with transparent background).</p><p class=\"text-mid mt-3\">The circle shape creates a round avatar with a transparent background outside the circle. The tool automatically switches the format to PNG or WebP, since JPG does not support transparency.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "3×3 grid - what is it for?",
       "html": "<p class=\"text-mid\">A grid dividing the image into 9 equal parts is visible on the crop area. This is a visualization of the <strong>rule of thirds</strong> - one of the fundamental principles of photographic composition.</p><p class=\"text-mid mt-3\">The rule states that the most important elements of a photo (face, product, point of interest) should be placed at the intersections of the grid lines or along them. Such composition is more dynamic and pleasing to the eye than placing the subject exactly in the center.</p><p class=\"text-mid mt-3\">In the <strong>Grid color</strong> tab you can change the line color (green, white, black, red, yellow) so the grid is clearly visible on different images.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Export - which format to choose?",
@@ -183,17 +267,36 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Aspect ratios - what do they mean?",
       "description": "The aspect ratio is the relationship between the width and height of an image. Written as two numbers separated by a colon:",
       "grid": "two",
       "items": [
-        { "icon": "RiLayoutGridLine", "title": "1:1 (square)", "description": "Width equals height. Instagram square post, profile pictures, icons." },
-        { "icon": "RiAspectRatioLine", "title": "4:5 (portrait)", "description": "Slightly vertical format. Instagram portrait post - takes up more space in the feed than a square." },
-        { "icon": "RiImageLine", "title": "3:2 (classic)", "description": "Traditional analog photography proportions. Many digital cameras also use this format." },
-        { "icon": "RiCropLine", "title": "16:9 (widescreen)", "description": "Standard HD video, presentation, and monitor format. YouTube, Facebook video, website banners." },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "1:1 (square)",
+          "description": "Width equals height. Instagram square post, profile pictures, icons."
+        },
+        {
+          "icon": "RiAspectRatioLine",
+          "title": "4:5 (portrait)",
+          "description": "Slightly vertical format. Instagram portrait post - takes up more space in the feed than a square."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "3:2 (classic)",
+          "description": "Traditional analog photography proportions. Many digital cameras also use this format."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "16:9 (widescreen)",
+          "description": "Standard HD video, presentation, and monitor format. YouTube, Facebook video, website banners."
+        },
         {
           "icon": "RiInstagramLine",
           "title": "9:16 (vertical full-screen)",
@@ -201,7 +304,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Frequently asked questions about the image editor",
@@ -244,8 +350,17 @@
         }
       ]
     },
-    { "type": "gap", "size": "sm" },
-    { "type": "toolsCarousel", "title": "Explore other tools" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore other tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

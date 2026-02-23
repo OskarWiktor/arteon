@@ -85,15 +85,18 @@
       "items": [
         {
           "title": "1. Añada archivos",
-          "description": "Arrastre imágenes JPG o PNG sobre el área designada o seleccione archivos desde su dispositivo. Puede añadir cualquier cantidad de archivos a la vez."
+          "description": "Arrastre imágenes JPG o PNG sobre el área designada o seleccione archivos desde su dispositivo. Puede añadir cualquier cantidad de archivos a la vez.",
+          "icon": "RiUploadLine"
         },
         {
           "title": "2. Configure la calidad",
-          "description": "Elija el nivel de calidad (predeterminado 80%). Un valor más bajo significa un archivo más pequeño. Para la mayoría de los usos, 80% es la configuración óptima."
+          "description": "Elija el nivel de calidad (predeterminado 80%). Un valor más bajo significa un archivo más pequeño. Para la mayoría de los usos, 80% es la configuración óptima.",
+          "icon": "RiEqualizerLine"
         },
         {
           "title": "3. Descargue WebP",
-          "description": "Después de la conversión, descargue los archivos individualmente o como archivo ZIP. Cada archivo muestra información sobre el espacio ahorrado."
+          "description": "Después de la conversión, descargue los archivos individualmente o como archivo ZIP. Cada archivo muestra información sobre el espacio ahorrado.",
+          "icon": "RiDownloadLine"
         }
       ]
     },

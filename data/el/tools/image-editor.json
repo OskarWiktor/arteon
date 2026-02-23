@@ -99,15 +99,18 @@
       "items": [
         {
           "title": "1. Προσθέστε εικόνα",
-          "description": "Σύρετε αρχείο στην καθορισμένη περιοχή ή επιλέξτε εικόνα από τη συσκευή σας. Υποστηριζόμενες μορφές: JPG, PNG, WebP."
+          "description": "Σύρετε αρχείο στην καθορισμένη περιοχή ή επιλέξτε εικόνα από τη συσκευή σας. Υποστηριζόμενες μορφές: JPG, PNG, WebP.",
+          "icon": "RiImageLine"
         },
         {
           "title": "2. Ορίστε διαστάσεις",
-          "description": "Εισάγετε διαστάσεις σε pixels ή επιλέξτε έτοιμη μορφή (Instagram, Facebook, YouTube, LinkedIn, OG image)."
+          "description": "Εισάγετε διαστάσεις σε pixels ή επιλέξτε έτοιμη μορφή (Instagram, Facebook, YouTube, LinkedIn, OG image).",
+          "icon": "RiCropLine"
         },
         {
           "title": "3. Κατεβάστε",
-          "description": "Προσαρμόστε την περικοπή, επιλέξτε μορφή αρχείου (JPG, PNG, WebP), ορίστε ποιότητα και κατεβάστε την έτοιμη εικόνα."
+          "description": "Προσαρμόστε την περικοπή, επιλέξτε μορφή αρχείου (JPG, PNG, WebP), ορίστε ποιότητα και κατεβάστε την έτοιμη εικόνα.",
+          "icon": "RiDownloadLine"
         }
       ]
     },

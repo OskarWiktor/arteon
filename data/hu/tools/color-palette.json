@@ -92,15 +92,18 @@
       "items": [
         {
           "title": "1. Adja meg az alapszínt",
-          "description": "Írjon be egy HEX kódot (pl. #496ba2) a szövegmezőbe, vagy válasszon színt a színválasztóból. Használhatja a Véletlen szín gombot is."
+          "description": "Írjon be egy HEX kódot (pl. #496ba2) a szövegmezőbe, vagy válasszon színt a színválasztóból. Használhatja a Véletlen szín gombot is.",
+          "icon": "RiDropLine"
         },
         {
           "title": "2. Erősítse meg a választást",
-          "description": "A Szín frissítése gombra kattintva az eszköz automatikusan 9 palettát generál különböző színösszhang-sémák alapján."
+          "description": "A Szín frissítése gombra kattintva az eszköz automatikusan 9 palettát generál különböző színösszhang-sémák alapján.",
+          "icon": "RiCheckboxCircleLine"
         },
         {
           "title": "3. Másolja a szükséges színeket",
-          "description": "Minden szín mellett van egy Másolás gomb – a HEX kód a vágólapra kerül és közvetlenül beilleszthető a projektbe."
+          "description": "Minden szín mellett van egy Másolás gomb – a HEX kód a vágólapra kerül és közvetlenül beilleszthető a projektbe.",
+          "icon": "RiFileCopyLine"
         }
       ]
     },

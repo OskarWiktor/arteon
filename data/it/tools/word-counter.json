@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "it",
   "metadata": {
-    "title": "Contatore di parole e caratteri gratuito – testo SEO",
-    "description": "Conta parole, caratteri, paragrafi e tempo di lettura in un istante. Verifica la lunghezza ottimale per la SEO – blog, pagina prodotto, landing page.",
+    "title": "Contatore parole e caratteri gratuito – Contare, trasformare e analizzare",
+    "description": "Contatore gratuito di parole, caratteri, frasi e paragrafi. Cambiare maiuscole, rimuovere duplicati, ordinare righe. 8 metriche e 10 strumenti.",
     "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
     "path": "/it/strumenti/contatore-di-parole-e-caratteri"
   },
   "hero": {
-    "title": "Contatore di parole e caratteri",
-    "description": "Conta parole, caratteri, paragrafi e stima il tempo di lettura. Verifica se la lunghezza del testo è adeguata per la SEO: articolo del blog, pagina servizio o descrizione prodotto.",
+    "title": "Contatore di parole e caratteri con strumenti di formattazione",
+    "description": "Incolla il testo e lo strumento conterà parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura. Cambia maiuscole, rimuovi duplicati o ordina righe",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -24,45 +24,55 @@
   },
   "schemas": {
     "software": {
-      "name": "Contatore di parole e caratteri gratuito con valutazione SEO",
+      "name": "Contatore di parole e caratteri online con strumenti di testo",
       "alternateName": [
-        "Contatore di parole gratuito",
-        "Contatore di caratteri",
-        "Verificatore lunghezza testo SEO",
-        "Contatore di paragrafi",
-        "Strumento di conteggio parole per copywriter",
-        "Calcolatore del tempo di lettura",
-        "Contatore di parole SEO",
-        "Lunghezza ottimale del testo per articolo di blog"
+        "Online word counter",
+        "Character counter with and without spaces",
+        "Word counting tool for copywriters",
+        "Reading time calculator",
+        "Online letter case converter",
+        "Uppercase to lowercase converter",
+        "Remove duplicate lines from text",
+        "Sort text lines alphabetically"
       ],
-      "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "TextApplication",
-      "description": "Contatore di parole e caratteri con valutazione della lunghezza. Verifica se la lunghezza è adeguata per una homepage, un articolo del blog o una descrizione prodotto.",
+      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
       "featureList": [
-        "Contatore di parole e caratteri",
-        "Caratteri con e senza spazi",
-        "Contatore di paragrafi",
-        "Stima del tempo di lettura",
-        "Valutazione della lunghezza per tipo di pagina",
-        "Copia del rapporto",
-        "Esecuzione locale nel browser"
+        "Word count",
+        "Character count with and without spaces",
+        "Sentence and paragraph count",
+        "Unique word count",
+        "Average word length",
+        "Estimated reading time",
+        "Convert to uppercase or lowercase",
+        "Convert to sentence case or title case",
+        "Toggle letter case",
+        "Remove extra spaces",
+        "Remove empty lines and duplicates",
+        "Sort lines A-Z and Z-A",
+        "Copy text to clipboard"
       ]
     },
     "howTo": {
-      "name": "Come verificare la lunghezza del testo per la SEO",
-      "description": "Incolla il tuo testo, seleziona il tipo di pagina e verifica se la lunghezza è ottimale.",
+      "name": "Come usare il contatore di parole",
+      "description": "Analizza e formatta il testo in tre passaggi:",
+      "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Incollare il testo",
-          "text": "Incolla o digita il testo che vuoi analizzare."
+          "name": "Incolla il testo",
+          "text": "Incolla o digita il testo. Lo strumento conterà parole, caratteri, frasi, paragrafi e parole uniche."
         },
         {
-          "name": "Selezionare il tipo di pagina",
-          "text": "Scegli il tipo di pagina (articolo del blog, pagina servizio, homepage, ecc.)."
+          "name": "Controlla le statistiche",
+          "text": "Nel pannello sinistro vedrai 8 metriche: parole, caratteri, frasi, paragrafi, parole uniche, lunghezza media e tempo di lettura."
         },
         {
-          "name": "Verificare i risultati",
-          "text": "Consulta il numero di parole, caratteri, paragrafi, tempo di lettura e la valutazione della lunghezza."
+          "name": "Trasforma il testo",
+          "text": "Sotto il campo di testo troverai 10 strumenti di trasformazione."
+        },
+        {
+          "name": "Copia il risultato",
+          "text": "Clicca su Copia testo. Usa Cancella per ricominciare."
         }
       ]
     }
@@ -74,8 +84,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Perché la lunghezza del testo è importante per la SEO?",
-      "html": "<p class=\"text-mid\">La lunghezza del testo è uno dei fattori che influenzano il posizionamento nei risultati di ricerca. Le pagine troppo corte possono essere percepite come carenti di approfondimento, mentre le pagine eccessivamente lunghe senza una struttura chiara possono scoraggiare i lettori.</p><p class=\"text-mid mt-3\">Questo strumento ti aiuta a verificare se la lunghezza del tuo testo corrisponde alle raccomandazioni per diversi tipi di pagine: articoli del blog, pagine servizio, homepage e descrizioni prodotto. Conta parole, caratteri, paragrafi e stima il tempo di lettura.</p>"
+      "title": "Contatore di parole e caratteri con strumenti di testo",
+      "html": "<p class=\"text-mid\">Questo strumento combina un contatore di parole e caratteri con funzioni di formattazione. Incolla il testo e vedrai parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura.</p><p class=\"text-mid mt-3\">Sotto il campo di testo troverai 10 strumenti: conversione maiuscole, rimozione spazi, righe vuote, duplicati e ordinamento. Tutto viene elaborato localmente nel browser.</p>"
     },
     {
       "type": "gap",
@@ -83,24 +93,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Come usare il contatore",
-      "description": "L'analisi richiede solo pochi secondi:",
-      "grid": "three",
+      "title": "Come usare il contatore di parole",
+      "description": "Analizza e formatta il testo in tre passaggi:",
+      "grid": "four",
       "items": [
         {
           "icon": "RiFileTextLine",
           "title": "1. Incolla il testo",
-          "description": "Incolla o digita il testo che vuoi analizzare."
+          "description": "Incolla o digita il testo. Lo strumento conterà parole, caratteri, frasi, paragrafi e parole uniche."
         },
         {
           "icon": "RiBarChartLine",
-          "title": "2. Scegli il tipo di pagina",
-          "description": "Seleziona il tipo di pagina per ottenere una valutazione della lunghezza adeguata."
+          "title": "2. Controlla le statistiche",
+          "description": "Nel pannello sinistro vedrai 8 metriche: parole, caratteri, frasi, paragrafi, parole uniche, lunghezza media e tempo di lettura."
+        },
+        {
+          "icon": "RiTextWrap",
+          "title": "3. Trasforma il testo",
+          "description": "Sotto il campo di testo troverai 10 strumenti di trasformazione."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "3. Copia il rapporto",
-          "description": "Consulta le statistiche e copia il rapporto se necessario."
+          "title": "4. Copia il risultato",
+          "description": "Clicca su Copia testo. Usa Cancella per ricominciare."
         }
       ]
     },
@@ -110,34 +125,49 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Cosa misura il contatore: parole, caratteri, tempo di lettura",
-      "description": "Il contatore registra cinque metriche chiave:",
+      "title": "8 metriche di testo",
+      "description": "Il contatore analizza il testo con otto indicatori:",
       "grid": "two",
       "items": [
         {
           "icon": "RiText",
-          "title": "Parole",
-          "description": "Numero totale di parole. È l'indicatore principale della lunghezza del testo."
+          "title": "Words",
+          "description": "Total word count. The primary indicator of text length, useful for content creation, articles and descriptions."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Caratteri (con spazi)",
-          "description": "Tutti i caratteri, spazi inclusi. Utile quando un CMS impone un limite di caratteri (es.: schede su marketplace)."
+          "title": "Characters (with spaces)",
+          "description": "All characters including spaces. Useful when a platform has a character limit (e.g., Amazon listings, meta descriptions)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Caratteri (senza spazi)",
-          "description": "Solo lettere, cifre e punteggiatura. A volte richiesto da tipografie o per la fatturazione di traduzioni."
+          "title": "Characters (without spaces)",
+          "description": "Only letters, digits and punctuation. The standard billing unit for translations and print shops."
+        },
+        {
+          "icon": "RiChatQuoteLine",
+          "title": "Sentences",
+          "description": "Number of sentences in the text. Helps assess complexity and readability — shorter sentences are easier to absorb."
         },
         {
           "icon": "RiParagraph",
-          "title": "Paragrafi",
-          "description": "Quanti blocchi di testo separati da righe vuote sono presenti. Aiuta a valutare se il testo è ben strutturato."
+          "title": "Paragraphs",
+          "description": "Text blocks separated by blank lines. Well-structured paragraphs improve readability on screens."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Unique words",
+          "description": "Number of non-repeating words. A higher ratio of unique to total words indicates richer vocabulary."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Average word length",
+          "description": "Average number of characters per word. An indicator of text complexity — technical texts have longer words than casual ones."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Tempo di lettura",
-          "description": "Il calcolatore del tempo di lettura indica quanti minuti servono per leggere il testo a una velocità media di 200 parole al minuto."
+          "title": "Reading time",
+          "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
         }
       ]
     },
@@ -146,20 +176,62 @@
       "variant": "line"
     },
     {
-      "type": "sectionDemo",
-      "title": "Come interpretare i risultati",
-      "subtitle": "Stati di valutazione",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800\">Buona lunghezza</span><span class=\"text-mid text-sm!\">Il testo rientra nell'intervallo consigliato</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800\">Sotto l'intervallo</span><span class=\"text-mid text-sm!\">Il testo è più corto della media</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-800\">Sopra l'intervallo</span><span class=\"text-mid text-sm!\">Il testo è più lungo della media</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Progresso</span><span class=\"text-mid\">1200 / 1200-3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
-      "html": "<p class=\"text-mid mb-4\">La barra di progresso colorata e lo stato ti aiutano a valutare rapidamente la lunghezza del testo:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Buona lunghezza</strong> (verde) - il testo rientra nell'intervallo approssimativo per il tipo di pagina selezionato.</li><li><strong class=\"text-warning-text\">Sotto l'intervallo</strong> (giallo) - il testo è più corto della media per questo tipo di pagina. Se risponde a tutte le domande del lettore, la lunghezza può essere adeguata.</li><li><strong class=\"text-error-text\">Sopra l'intervallo</strong> (rosso) - il testo è più lungo della media. Se ogni paragrafo aggiunge nuove informazioni, la lunghezza è giustificata.</li></ul><p class=\"text-mid mt-4\">Gli intervalli si basano sull'analisi di contenuti ben posizionati nei motori di ricerca. Se il testo risponde alle domande del lettore, la lunghezza è adeguata indipendentemente dal risultato del contatore.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Quante parole deve avere un testo: lunghezza ottimale per la SEO",
-      "html": "<p class=\"text-mid mb-4\">Gli intervalli seguenti si basano sull'analisi di contenuti ben posizionati nei motori di ricerca. La lunghezza del testo di per sé non influenza il posizionamento su Google: ciò che conta è se il contenuto risponde alle domande del lettore.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Tipo di pagina</th><th class=\"py-2 pr-4 font-semibold\">Intervallo</th><th class=\"py-2 font-semibold\">Quando più corto, quando più lungo?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Descrizione prodotto</td><td class=\"py-2 pr-4 whitespace-nowrap\">80-400 parole</td><td class=\"text-primary-light0 py-2 text-sm\">Prodotto semplice (es.: una tazza): 80-150 parole. Apparecchiatura complessa (es.: un laptop): 300-400 parole, perché gli acquirenti hanno più domande.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Pagina servizio</td><td class=\"py-2 pr-4 whitespace-nowrap\">500-1 500 parole</td><td class=\"text-primary-light0 py-2 text-sm\">Servizio locale (es.: idraulico): 500-700 parole. Servizio B2B con processo e FAQ: 1 200-1 500 parole.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Homepage</td><td class=\"py-2 pr-4 whitespace-nowrap\">400-1 000 parole</td><td class=\"text-primary-light0 py-2 text-sm\">La homepage trasmette il valore principale e guida i visitatori: il testo supporta la navigazione, non sostituisce le sottopagine.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landing page</td><td class=\"py-2 pr-4 whitespace-nowrap\">600-2 500 parole</td><td class=\"text-primary-light0 py-2 text-sm\">Offerta semplice: 600-1 000 parole. Offerta che richiede spiegazione del processo, varianti e gestione obiezioni: 1 500-2 500 parole.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Articolo del blog</td><td class=\"py-2 pr-4 whitespace-nowrap\">1 200-3 000 parole</td><td class=\"text-primary-light0 py-2 text-sm\">Dipende dalla complessità dell'argomento. L'articolo deve rispondere in modo esauriente alle domande del lettore.</td></tr><tr><td class=\"py-2 pr-4\">Guida / tutorial</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 500-6 000 parole</td><td class=\"text-primary-light0 py-2 text-sm\">Trattazione approfondita di un argomento con molti aspetti. La lunghezza dipende dall'ampiezza del tema.</td></tr></tbody></table></div>"
+      "type": "sectionSteps",
+      "title": "10 strumenti di formattazione",
+      "description": "Sotto il campo di testo troverai pulsanti di trasformazione:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiArrowUpLine",
+          "title": "UPPERCASE",
+          "description": "Converts all text to uppercase. Useful for headings, acronyms and highlighting text fragments."
+        },
+        {
+          "icon": "RiArrowDownLine",
+          "title": "lowercase",
+          "description": "Converts all text to lowercase. Useful for normalizing text copied from different sources."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Sentence case",
+          "description": "First letter of each sentence is capitalized, the rest lowercase. Standard format for continuous text."
+        },
+        {
+          "icon": "RiHeading",
+          "title": "Title Case",
+          "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "tOGGLE cASE",
+          "description": "Swaps uppercase to lowercase and vice versa. Useful when text was typed with Caps Lock on."
+        },
+        {
+          "icon": "RiSpace",
+          "title": "Remove extra spaces",
+          "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
+        },
+        {
+          "icon": "RiDeleteRow",
+          "title": "Remove empty lines",
+          "description": "Removes empty and redundant lines from text. Useful for cleaning text copied from websites."
+        },
+        {
+          "icon": "RiFilterLine",
+          "title": "Remove duplicate lines",
+          "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
+        },
+        {
+          "icon": "RiSortAsc",
+          "title": "Sort A→Z",
+          "description": "Sorts text lines alphabetically in ascending order. Useful for organizing lists, keywords and data."
+        },
+        {
+          "icon": "RiSortDesc",
+          "title": "Sort Z→A",
+          "description": "Sorts text lines alphabetically in descending order. Reverse sort order."
+        }
+      ]
     },
     {
       "type": "gap",
@@ -167,39 +239,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Per chi è utile il contatore di parole?",
-      "description": "Uno strumento di conteggio parole per copywriter e non solo: ecco chi usa di più il contatore:",
+      "title": "A chi è rivolto il contatore di parole?",
+      "description": "Lo strumento è utile per chiunque lavori con il testo:",
       "grid": "three",
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Copywriter e creatori di contenuti",
-          "description": "Verifica se il testo rientra nell'intervallo consigliato per un tipo di pagina specifico. Il contatore di parole SEO aiuta a valutare se un articolo è sufficientemente sviluppato."
+          "title": "Copywriters and editors",
+          "description": "Count words and characters, check platform limits, quickly change letter case and clean text before publishing."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Blogger",
-          "description": "Controlla la lunghezza degli articoli per mantenere la coerenza. Verifica il tempo di lettura prima della pubblicazione."
+          "title": "Bloggers and content creators",
+          "description": "Monitor post length, check reading time, remove duplicate lines and sort lists."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "E-commerce",
-          "description": "Verifica le descrizioni dei prodotti rispetto ai limiti di caratteri delle piattaforme di vendita (Amazon, eBay, Etsy)."
+          "title": "Store owners",
+          "description": "Verify product descriptions against character limits on platforms (Amazon, eBay, Etsy)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "Specialisti SEO",
-          "description": "Valuta se il contenuto della pagina ha una lunghezza ottimale rispetto alla concorrenza. Analizza il rapporto parole-argomento."
+          "title": "SEO specialists",
+          "description": "Analyze content length, count unique words and assess text complexity based on average word length."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Studenti e accademici",
-          "description": "Verifica se un elaborato rispetta il limite di parole o caratteri richiesto."
+          "title": "Students and academics",
+          "description": "Check word or character limits in essays and research papers."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Traduttori",
-          "description": "Conta i caratteri senza spazi per i preventivi di traduzione (un'unità di fatturazione standard)."
+          "title": "Translators",
+          "description": "Count characters without spaces for quotes (the standard billing unit in translation)."
         }
       ]
     },
@@ -210,7 +282,7 @@
     {
       "type": "sectionInfo",
       "title": "Limiti di caratteri sulle piattaforme popolari",
-      "html": "<p class=\"text-mid mb-4\">Il contatore di caratteri è utile per creare contenuti su piattaforme con restrizioni di lunghezza:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Piattaforma / Elemento</th><th class=\"py-2 pr-4 font-semibold\">Limite di caratteri</th><th class=\"py-2 font-semibold\">Note</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta titolo</td><td class=\"py-2 pr-4 whitespace-nowrap\">50-60 caratteri</td><td class=\"text-primary-light0 py-2 text-sm\">I titoli più lunghi vengono troncati nei risultati di ricerca.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta descrizione</td><td class=\"py-2 pr-4 whitespace-nowrap\">150-160 caratteri</td><td class=\"text-primary-light0 py-2 text-sm\">La descrizione visibile sotto il link nei risultati di ricerca.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon - titolo prodotto</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 caratteri</td><td class=\"text-primary-light0 py-2 text-sm\">Titolo conciso con le parole chiave più importanti.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) - post</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 caratteri</td><td class=\"text-primary-light0 py-2 text-sm\">Limite standard per gli utenti normali.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn - post</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 caratteri</td><td class=\"text-primary-light0 py-2 text-sm\">Dopo circa 210 caratteri appare il link &laquo;vedi altro&raquo;.</td></tr></tbody></table></div>"
+      "html": "<p class=\"text-mid\">Character limits vary by platform.</p>"
     },
     {
       "type": "gap",
@@ -222,34 +294,34 @@
       "grid": "two",
       "items": [
         {
-          "icon": "RiInfinityLine",
-          "title": "Sei tipi di pagina con intervalli consigliati",
-          "description": "Descrizione prodotto, pagina servizio, homepage, landing page, articolo del blog e guida: ogni tipo ha i propri intervalli basati sull'analisi."
+          "icon": "RiBarChartLine",
+          "title": "8 text metrics",
+          "description": "Words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time — all in one panel."
+        },
+        {
+          "icon": "RiTextWrap",
+          "title": "10 formatting tools",
+          "description": "Letter case conversion, removing spaces, empty lines, duplicates and sorting — without installing additional software."
         },
         {
           "icon": "RiUserLine",
-          "title": "Elaborazione locale nel browser",
-          "description": "Il tuo testo non viene mai inviato a un server: tutta l'analisi avviene localmente sul tuo dispositivo."
-        },
-        {
-          "icon": "RiCheckboxCircleLine",
-          "title": "Valutazione della lunghezza del testo",
-          "description": "Non si limita a contare le parole: ottieni un'indicazione sull'adeguatezza della lunghezza per il tipo di pagina selezionato."
-        },
-        {
-          "icon": "RiBarChartLine",
-          "title": "Intervalli basati sulla SEO",
-          "description": "Le lunghezze consigliate si basano sull'analisi di contenuti ben posizionati nei motori di ricerca."
-        },
-        {
-          "icon": "RiTimerLine",
-          "title": "Tempo di lettura",
-          "description": "Scopri immediatamente quanti minuti impiegheranno i lettori per leggere il testo."
+          "title": "Local processing in the browser",
+          "description": "Your text is never sent to any server. All analysis and transformation happens locally on your device."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Copia rapporto",
-          "description": "Il pulsante Copia rapporto copia un riepilogo con il numero di parole, caratteri, paragrafi, tempo di lettura e valutazione della lunghezza negli appunti. Puoi incollarlo in un documento o inviarlo ai collaboratori."
+          "title": "Copy and clear text",
+          "description": "Copy the modified text to your clipboard with one click or clear the field to start over."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Instant results",
+          "description": "Statistics update in real time as you type or paste text. No waiting for processing."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "No registration or limits",
+          "description": "The tool is completely free. No registration, login or personal data required."
         }
       ]
     },
@@ -263,34 +335,14 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Qual è la lunghezza ideale di un articolo del blog?",
-          "answer": "Per la SEO, gli articoli del blog performanti contano generalmente tra 1 500 e 3 000 parole. Gli articoli più lunghi e approfonditi tendono a posizionarsi meglio nei risultati di ricerca, a condizione che il contenuto sia di qualità e risponda all'intento di ricerca.",
-          "answerSchemaText": "Generalmente 1 500-3 000 parole per la SEO. Il contenuto di qualità è essenziale."
+          "question": "Come funziona il calcolo del tempo di lettura?",
+          "answer": "Lo strumento divide il conteggio delle parole per 200, la velocità media di lettura. Il risultato è un valore approssimativo.",
+          "answerSchemaText": "Lo strumento assume 200 parole al minuto."
         },
         {
-          "question": "Qual è la lunghezza ideale di una pagina servizio?",
-          "answer": "Una pagina servizio deve contenere almeno 800-1 500 parole per fornire informazioni sufficienti agli utenti e ai motori di ricerca. Il contenuto deve descrivere chiaramente il servizio, i suoi vantaggi e includere una call to action.",
-          "answerSchemaText": "Minimo 800-1 500 parole. Descrizione chiara, vantaggi e call to action."
-        },
-        {
-          "question": "Come viene calcolato il tempo di lettura?",
-          "answer": "Il tempo di lettura è stimato sulla base di 200-250 parole al minuto, che corrisponde alla velocità di lettura media di un adulto. Il risultato è un'approssimazione: la velocità reale dipende dalla complessità del testo e dal lettore.",
-          "answerSchemaText": "Basato su 200-250 parole/minuto (velocità di lettura media)."
-        },
-        {
-          "question": "I miei dati vengono inviati a un server?",
-          "answer": "No. Tutta l'elaborazione avviene localmente nel tuo browser. Nessun testo viene inviato o memorizzato.",
-          "answerSchemaText": "No. Elaborazione locale nel browser."
-        },
-        {
-          "question": "Lo strumento funziona per tutte le lingue?",
-          "answer": "Sì. Il contatore di parole funziona con qualsiasi lingua che utilizza gli spazi come separatori di parole: italiano, inglese, tedesco, spagnolo, francese, polacco e molte altre.",
-          "answerSchemaText": "Sì, per tutte le lingue che utilizzano gli spazi come separatori."
-        },
-        {
-          "question": "Posso copiare il rapporto con le statistiche?",
-          "answer": "Sì. Sotto le statistiche si trova il pulsante Copia rapporto, che copia un riepilogo con il numero di parole, caratteri, paragrafi, tempo di lettura e valutazione della lunghezza negli appunti. Puoi incollarlo in un documento o inviarlo ai collaboratori.",
-          "answerSchemaText": "Sì. Clicca su Copia rapporto. Un riepilogo con tutte le metriche viene copiato negli appunti."
+          "question": "Il mio testo è sicuro?",
+          "answer": "Sì. Tutta l'analisi avviene localmente nel browser. Il testo non viene mai inviato a nessun server.",
+          "answerSchemaText": "Sì. Il testo viene elaborato localmente nel browser."
         }
       ]
     },

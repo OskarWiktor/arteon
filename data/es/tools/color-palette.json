@@ -92,15 +92,18 @@
       "items": [
         {
           "title": "1. Introduzca el color base",
-          "description": "Escriba un código HEX (p. ej., #496ba2) en el campo de texto o elija un color desde el selector. También puede usar el botón Color aleatorio."
+          "description": "Escriba un código HEX (p. ej., #496ba2) en el campo de texto o elija un color desde el selector. También puede usar el botón Color aleatorio.",
+          "icon": "RiDropLine"
         },
         {
           "title": "2. Confirme su elección",
-          "description": "Después de hacer clic en el botón Actualizar color, la herramienta generará automáticamente 9 paletas basadas en diferentes esquemas de armonía cromática."
+          "description": "Después de hacer clic en el botón Actualizar color, la herramienta generará automáticamente 9 paletas basadas en diferentes esquemas de armonía cromática.",
+          "icon": "RiCheckboxCircleLine"
         },
         {
           "title": "3. Copie los colores que necesite",
-          "description": "Junto a cada color hay un botón Copiar: el código HEX va al portapapeles y puede pegarse directamente en su proyecto."
+          "description": "Junto a cada color hay un botón Copiar: el código HEX va al portapapeles y puede pegarse directamente en su proyecto.",
+          "icon": "RiFileCopyLine"
         }
       ]
     },

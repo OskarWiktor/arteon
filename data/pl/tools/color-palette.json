@@ -99,15 +99,18 @@
       "items": [
         {
           "title": "1. Podaj kolor bazowy",
-          "description": "Wpisz kod HEX (np. #496ba2) w pole tekstowe lub wybierz barwę z próbnika kolorów. Możesz też wylosować kolor przyciskiem Losowy kolor."
+          "description": "Wpisz kod HEX (np. #496ba2) w pole tekstowe lub wybierz barwę z próbnika kolorów. Możesz też wylosować kolor przyciskiem Losowy kolor.",
+          "icon": "RiDropLine"
         },
         {
           "title": "2. Zatwierdź wybór",
-          "description": "Po zatwierdzeniu przyciskiem Zaktualizuj kolor narzędzie automatycznie wygeneruje 9 palet opartych na różnych schematach harmonii barw."
+          "description": "Po zatwierdzeniu przyciskiem Zaktualizuj kolor narzędzie automatycznie wygeneruje 9 palet opartych na różnych schematach harmonii barw.",
+          "icon": "RiCheckboxCircleLine"
         },
         {
           "title": "3. Skopiuj potrzebne kolory",
-          "description": "Przy każdym kolorze znajduje się przycisk Kopiuj - kod HEX trafia do schowka i można go od razu wkleić w projekt."
+          "description": "Przy każdym kolorze znajduje się przycisk Kopiuj - kod HEX trafia do schowka i można go od razu wkleić w projekt.",
+          "icon": "RiFileCopyLine"
         }
       ]
     },

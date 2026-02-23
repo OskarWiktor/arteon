@@ -68,7 +68,7 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
   if (disabled) {
     return (
       <button type={buttonType} disabled aria-disabled="true" className={baseClass}>
-        <span>{children}</span>
+        <span className="flex">{children}</span>
         {Arrow}
       </button>
     );

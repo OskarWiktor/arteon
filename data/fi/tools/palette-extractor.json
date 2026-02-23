@@ -80,15 +80,18 @@
       "items": [
         {
           "title": "1. Lataa kuva",
-          "description": "Vedä ja pudota tiedosto merkittyyn alueeseen tai valitse se laitteeltasi. Tuetut muodot ovat PNG, JPG ja SVG."
+          "description": "Vedä ja pudota tiedosto merkittyyn alueeseen tai valitse se laitteeltasi. Tuetut muodot ovat PNG, JPG ja SVG.",
+          "icon": "RiUploadLine"
         },
         {
           "title": "2. Odota analyysiä",
-          "description": "Työkalu analysoi kuvan automaattisesti ja poimii jopa 12 hallitsevaa väriä."
+          "description": "Työkalu analysoi kuvan automaattisesti ja poimii jopa 12 hallitsevaa väriä.",
+          "icon": "RiSearchEyeLine"
         },
         {
           "title": "3. Kopioi tarvitsemasi värit",
-          "description": "Jokaisen värin vieressä on kopiointipainike – HEX- tai RGB-koodi kopioituu leikepöydälle ja voidaan liittää suoraan projektiin."
+          "description": "Jokaisen värin vieressä on kopiointipainike – HEX- tai RGB-koodi kopioituu leikepöydälle ja voidaan liittää suoraan projektiin.",
+          "icon": "RiFileCopyLine"
         }
       ]
     },
@@ -165,7 +168,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Värien poimijan vianmääritys",

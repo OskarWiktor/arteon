@@ -89,15 +89,18 @@
       "items": [
         {
           "title": "1. Añada una imagen",
-          "description": "Arrastre un archivo sobre el área designada o seleccione un gráfico desde su dispositivo. Formatos admitidos: PNG, JPG, SVG. Tamaño recomendado: mín. 512×512 píxeles."
+          "description": "Arrastre un archivo sobre el área designada o seleccione un gráfico desde su dispositivo. Formatos admitidos: PNG, JPG, SVG. Tamaño recomendado: mín. 512×512 píxeles.",
+          "icon": "RiImageLine"
         },
         {
           "title": "2. Elija los tamaños",
-          "description": "Seleccione los tamaños de icono que necesita. Para un sitio web normal: favicon.ico, 32×32 y 180×180. Para PWA, añada 192×192 y 512×512."
+          "description": "Seleccione los tamaños de icono que necesita. Para un sitio web normal: favicon.ico, 32×32 y 180×180. Para PWA, añada 192×192 y 512×512.",
+          "icon": "RiAspectRatioLine"
         },
         {
           "title": "3. Descargue los archivos",
-          "description": "Después de generar, descargue todos los archivos como ZIP o cada icono individualmente. Debajo de la herramienta encontrará instrucciones para añadir el favicon a su sitio."
+          "description": "Después de generar, descargue todos los archivos como ZIP o cada icono individualmente. Debajo de la herramienta encontrará instrucciones para añadir el favicon a su sitio.",
+          "icon": "RiDownloadLine"
         }
       ]
     },

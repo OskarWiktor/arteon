@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "no",
   "metadata": {
-    "title": "Gratis ord- og tegnteller – Sjekk tekstlengde for SEO",
-    "description": "Tell ord, tegn, avsnitt og lesetid umiddelbart. Sjekk optimal tekstlengde for SEO – blogginnlegg, produktside, landingsside og tjenesteside. Gratis, uten registrering.",
+    "title": "Gratis ord- og tegnteller online – Tell, transformer og analyser",
+    "description": "Gratis ord-, tegn-, setnings- og avsnittsteller. Endre store bokstaver, fjerne duplikater, sortere linjer. 8 målinger og 10 tekstverktøy.",
     "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
     "path": "/no/verktoy/ord-og-tegnteller"
   },
   "hero": {
-    "title": "Ord- og tegnteller med lengdevurdering",
-    "description": "Lim inn tekst, velg sidetype, og verktøyet viser antall ord, tegn, avsnitt og vurderer om lengden passer til den valgte innholdstypen.",
+    "title": "Ord- og tegnteller med tekstformateringsverktøy",
+    "description": "Lim inn teksten din, og verktøyet teller ord, tegn, setninger, avsnitt, unike ord og lesetid. Endre store bokstaver, fjerne duplikater eller sortere linjer",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -24,39 +24,55 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis ord- og tegnteller",
-      "alternateName": ["Ordteller med tekstlengdevurdering", "Tegnteller", "Lesetidskalkulator", "Ordteller for SEO"],
+      "name": "Gratis ord- og tegnteller med tekstverktøy",
+      "alternateName": [
+        "Online word counter",
+        "Character counter with and without spaces",
+        "Word counting tool for copywriters",
+        "Reading time calculator",
+        "Online letter case converter",
+        "Uppercase to lowercase converter",
+        "Remove duplicate lines from text",
+        "Sort text lines alphabetically"
+      ],
       "applicationSubCategory": "TextApplication",
-      "description": "Gratis ord- og tegnteller. Sjekker antall ord, tegn, avsnitt og estimert lesetid. Vurderer tekstlengden for forskjellige sidetyper.",
+      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
       "featureList": [
-        "Antall ord",
-        "Antall tegn med og uten mellomrom",
-        "Antall avsnitt",
-        "Estimert lesetid",
-        "Lengdevurdering for forskjellige sidetyper",
-        "Anbefalte intervaller for: produktbeskrivelse, tjenesteside, forside, landingsside, blogginnlegg, guide",
-        "Kopier rapport til utklippstavle"
+        "Word count",
+        "Character count with and without spaces",
+        "Sentence and paragraph count",
+        "Unique word count",
+        "Average word length",
+        "Estimated reading time",
+        "Convert to uppercase or lowercase",
+        "Convert to sentence case or title case",
+        "Toggle letter case",
+        "Remove extra spaces",
+        "Remove empty lines and duplicates",
+        "Sort lines A-Z and Z-A",
+        "Copy text to clipboard"
       ]
     },
     "howTo": {
       "name": "Slik bruker du ord- og tegntelleren",
-      "description": "Sjekk tekstlengden og vurder om den passer til en bestemt sidetype.",
+      "description": "Analyser og formater tekst i tre trinn:",
+      "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Velg sidetype",
-          "text": "Velg fra listen hvilken type side du skriver for. Hver type har sitt eget anbefalte ordintervall."
-        },
-        {
           "name": "Lim inn tekst",
-          "text": "Lim inn eller skriv tekst i tekstfeltet. Verktøyet teller automatisk ord, tegn, avsnitt og beregner lesetid."
+          "text": "Lim inn eller skriv tekst. Verktøyet teller umiddelbart ord, tegn, setninger, avsnitt og unike ord."
         },
         {
-          "name": "Sjekk vurderingen",
-          "text": "Se på den fargekodede indikatoren og status. Grønn betyr riktig lengde, gul for kort, rød for lang."
+          "name": "Sjekk statistikken",
+          "text": "I venstre panel ser du 8 målinger: ord, tegn, setninger, avsnitt, unike ord, ordlengde og lesetid."
         },
         {
-          "name": "Kopier rapporten",
-          "text": "Knappen Kopier rapport kopierer en sammenfatning med all statistikk og lengdevurdering til utklippstavlen."
+          "name": "Transformer tekst",
+          "text": "Under tekstfeltet finner du 10 transformasjonsverktøy."
+        },
+        {
+          "name": "Kopier resultatet",
+          "text": "Klikk på Kopier tekst. Bruk Tøm for å starte på nytt."
         }
       ]
     }
@@ -68,8 +84,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Gratis ordteller – tell og vurder tekstlengden",
-      "html": "<p class=\"text-mid\">Dette verktøyet lar deg raskt sjekke lengden på en hvilken som helst tekst. Lim inn innhold, og telleren teller ord, tegn og avsnitt. Du ser også hvor mange minutter det tar å lese og om lengden passer til den valgte sidetypen.</p><p class=\"text-mid mt-3\">Hver sidetype tjener et annet formål – en produktbeskrivelse besvarer kjøperens spørsmål, et blogginnlegg utforsker et emne i dybden, og en tjenesteside forklarer hva kunden får. Telleren viser intervaller for hver av disse typene basert på analyse av vellykket innhold.</p>"
+      "title": "Gratis ord- og tegnteller med tekstverktøy",
+      "html": "<p class=\"text-mid\">Dette verktøyet kombinerer en ord- og tegnteller med tekstformateringsfunksjoner. Lim inn tekst og se ord, tegn, setninger, avsnitt, unike ord og lesetid.</p><p class=\"text-mid mt-3\">Under tekstfeltet finner du 10 verktøy: konvertering av store/små bokstaver, fjerning av mellomrom, tomme linjer, duplikater og sortering. Alt behandles lokalt i nettleseren.</p>"
     },
     {
       "type": "gap",
@@ -78,28 +94,28 @@
     {
       "type": "sectionSteps",
       "title": "Slik bruker du ord- og tegntelleren",
-      "description": "Å sjekke tekstlengden tar under ett minutt:",
+      "description": "Analyser og formater tekst i tre trinn:",
       "grid": "four",
       "items": [
         {
-          "icon": "RiListCheck2",
-          "title": "1. Velg sidetype",
-          "description": "Velg fra listen hvilken type side du skriver for. Hver type har sitt eget anbefalte ordintervall."
-        },
-        {
           "icon": "RiFileTextLine",
-          "title": "2. Lim inn tekst",
-          "description": "Lim inn eller skriv tekst i det store tekstfeltet til høyre. Verktøyet teller umiddelbart ord, tegn, avsnitt og beregner lesetid."
+          "title": "1. Lim inn tekst",
+          "description": "Lim inn eller skriv tekst. Verktøyet teller umiddelbart ord, tegn, setninger, avsnitt og unike ord."
         },
         {
           "icon": "RiBarChartLine",
-          "title": "3. Sjekk vurderingen",
-          "description": "Se på den fargekodede indikatoren og status. Grønn betyr riktig lengde, gul for kort, rød for lang."
+          "title": "2. Sjekk statistikken",
+          "description": "I venstre panel ser du 8 målinger: ord, tegn, setninger, avsnitt, unike ord, ordlengde og lesetid."
+        },
+        {
+          "icon": "RiTextWrap",
+          "title": "3. Transformer tekst",
+          "description": "Under tekstfeltet finner du 10 transformasjonsverktøy."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Kopier rapporten",
-          "description": "Knappen Kopier rapport kopierer en sammenfatning med antall ord, tegn, avsnitt, lesetid og lengdevurdering til utklippstavlen."
+          "title": "4. Kopier resultatet",
+          "description": "Klikk på Kopier tekst. Bruk Tøm for å starte på nytt."
         }
       ]
     },
@@ -109,34 +125,49 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Hva telleren måler – ord, tegn, lesetid",
-      "description": "Telleren følger fem nøkkeltall:",
+      "title": "8 tekstmålinger",
+      "description": "Telleren analyserer teksten din med åtte indikatorer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiText",
-          "title": "Ord",
-          "description": "Totalt antall ord. Hovedindikator for tekstlengde."
+          "title": "Words",
+          "description": "Total word count. The primary indicator of text length, useful for content creation, articles and descriptions."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Tegn (med mellomrom)",
-          "description": "Alle tegn inkludert mellomrom. Viktig når CMS har tegngrense."
+          "title": "Characters (with spaces)",
+          "description": "All characters including spaces. Useful when a platform has a character limit (e.g., Amazon listings, meta descriptions)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Tegn (uten mellomrom)",
-          "description": "Bare bokstaver, tall og symboler. Noen ganger krevd av trykkerier eller for oversettelsesfakturering."
+          "title": "Characters (without spaces)",
+          "description": "Only letters, digits and punctuation. The standard billing unit for translations and print shops."
+        },
+        {
+          "icon": "RiChatQuoteLine",
+          "title": "Sentences",
+          "description": "Number of sentences in the text. Helps assess complexity and readability — shorter sentences are easier to absorb."
         },
         {
           "icon": "RiParagraph",
-          "title": "Avsnitt",
-          "description": "Antall tekstblokker atskilt av tomme linjer. Hjelper med å vurdere om teksten har god struktur."
+          "title": "Paragraphs",
+          "description": "Text blocks separated by blank lines. Well-structured paragraphs improve readability on screens."
+        },
+        {
+          "icon": "RiStarLine",
+          "title": "Unique words",
+          "description": "Number of non-repeating words. A higher ratio of unique to total words indicates richer vocabulary."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Average word length",
+          "description": "Average number of characters per word. An indicator of text complexity — technical texts have longer words than casual ones."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Lesetid",
-          "description": "Lesetidskalkulatoren viser hvor mange minutter det tar å lese teksten ved en gjennomsnittlig hastighet på 200 ord per minutt."
+          "title": "Reading time",
+          "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
         }
       ]
     },
@@ -145,20 +176,62 @@
       "variant": "line"
     },
     {
-      "type": "sectionDemo",
-      "title": "Hvordan tolke resultatene?",
-      "subtitle": "Vurderingsstatuser",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-success-bg text-success-text\">God lengde</span><span class=\"text-mid text-sm!\">Teksten er innenfor intervallet</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-warning-bg text-warning-text\">Under intervallet</span><span class=\"text-mid text-sm!\">Teksten er kortere enn typisk</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-error-bg text-error-text\">Over intervallet</span><span class=\"text-mid text-sm!\">Teksten er lengre enn typisk</span></div><div class=\"mt-2 rounded-lg bg-neutral-100 p-3\"><div class=\"mb-1 flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">Fremgang</span><span class=\"text-mid\">1200 / 1200-3000</span></div><div class=\"h-2 w-full rounded-full bg-neutral-200\"><div class=\"bg-success-icon h-2 w-2/5 rounded-full\"></div></div></div></div>",
-      "html": "<p class=\"text-mid mb-4\">Den fargede fremdriftslinjen og vurderingsstatusen hjelper deg raskt å vurdere tekstlengden:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">God lengde</strong> (grønn) – teksten er innenfor det veiledende intervallet for den valgte sidetypen.</li><li><strong class=\"text-warning-text\">Under intervallet</strong> (gul) – teksten er kortere enn typisk for denne sidetypen. Hvis den besvarer leserens spørsmål, kan lengden være passende.</li><li><strong class=\"text-error-text\">Over intervallet</strong> (rød) – teksten er lengre enn typisk. Hvis hvert avsnitt tilfører ny informasjon, er lengden berettiget.</li></ul><p class=\"text-mid mt-4\">Intervallene er basert på analyser av innhold som rangerer godt i søkemotorer. Hvis teksten besvarer leserens spørsmål, er lengden passende uansett resultatet i telleren.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Hvor mange ord bør teksten ha – optimal lengde for SEO",
-      "html": "<p class=\"text-mid mb-4\">Intervallene nedenfor er basert på analyse av innhold som gjør det bra i søkemotorer. Tekstlengden i seg selv påvirker ikke plasseringen i Google – det som teller er om innholdet besvarer leserens spørsmål.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Sidetype</th><th class=\"py-2 pr-4 font-semibold\">Intervall</th><th class=\"py-2 font-semibold\">Når kortere, når lengre?</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Produktbeskrivelse</td><td class=\"py-2 pr-4 whitespace-nowrap\">80–400 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Enkelt produkt – 80–150. Komplekst utstyr – 300–400.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Tjenesteside</td><td class=\"py-2 pr-4 whitespace-nowrap\">500–1500 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Lokal tjeneste – 500–700. B2B-tjeneste med prosess og FAQ – 1 200–1 500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Forside</td><td class=\"py-2 pr-4 whitespace-nowrap\">400–1000 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Forsiden presenterer nøkkelverdi og leder besøkende videre.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landingsside</td><td class=\"py-2 pr-4 whitespace-nowrap\">600–2500 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Enkelt tilbud – 600–1 000. Tilbud som krever forklaring – 1 500–2 500.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blogginnlegg</td><td class=\"py-2 pr-4 whitespace-nowrap\">1200–3000 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Kort how-to – 1 200–1 500. Detaljert guide – 2 500–3 000.</td></tr><tr><td class=\"py-2 pr-4\">Guide / pillar page</td><td class=\"py-2 pr-4 whitespace-nowrap\">3000–7000 ord</td><td class=\"text-primary-light0 py-2 text-sm\">Komplet ressource der dekker emnet fra flere vinkler.</td></tr></tbody></table></div>"
+      "type": "sectionSteps",
+      "title": "10 tekstformateringsverktøy",
+      "description": "Under tekstfeltet finner du knapper for rask transformasjon:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiArrowUpLine",
+          "title": "UPPERCASE",
+          "description": "Converts all text to uppercase. Useful for headings, acronyms and highlighting text fragments."
+        },
+        {
+          "icon": "RiArrowDownLine",
+          "title": "lowercase",
+          "description": "Converts all text to lowercase. Useful for normalizing text copied from different sources."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Sentence case",
+          "description": "First letter of each sentence is capitalized, the rest lowercase. Standard format for continuous text."
+        },
+        {
+          "icon": "RiHeading",
+          "title": "Title Case",
+          "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "tOGGLE cASE",
+          "description": "Swaps uppercase to lowercase and vice versa. Useful when text was typed with Caps Lock on."
+        },
+        {
+          "icon": "RiSpace",
+          "title": "Remove extra spaces",
+          "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
+        },
+        {
+          "icon": "RiDeleteRow",
+          "title": "Remove empty lines",
+          "description": "Removes empty and redundant lines from text. Useful for cleaning text copied from websites."
+        },
+        {
+          "icon": "RiFilterLine",
+          "title": "Remove duplicate lines",
+          "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
+        },
+        {
+          "icon": "RiSortAsc",
+          "title": "Sort A→Z",
+          "description": "Sorts text lines alphabetically in ascending order. Useful for organizing lists, keywords and data."
+        },
+        {
+          "icon": "RiSortDesc",
+          "title": "Sort Z→A",
+          "description": "Sorts text lines alphabetically in descending order. Reverse sort order."
+        }
+      ]
     },
     {
       "type": "gap",
@@ -167,37 +240,38 @@
     {
       "type": "sectionSteps",
       "title": "Hvem er ordtelleren for?",
+      "description": "Verktøyet er nyttig for alle som arbeider med tekst:",
       "grid": "three",
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Tekstforfattere og innholdsprodusenter",
-          "description": "Sjekk om teksten er innenfor det anbefalte intervallet for en bestemt sidetype."
+          "title": "Copywriters and editors",
+          "description": "Count words and characters, check platform limits, quickly change letter case and clean text before publishing."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Bloggere",
-          "description": "Følg artikkellengden for konsistens. Sjekk lesetiden før publisering."
+          "title": "Bloggers and content creators",
+          "description": "Monitor post length, check reading time, remove duplicate lines and sort lists."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "Nettbutikkeiere",
-          "description": "Verifiser produktbeskrivelser mot tegngrenser på salgsplattformer."
+          "title": "Store owners",
+          "description": "Verify product descriptions against character limits on platforms (Amazon, eBay, Etsy)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO-spesialister",
-          "description": "Vurder om sidens innhold har optimal lengde sammenlignet med konkurrentene."
+          "title": "SEO specialists",
+          "description": "Analyze content length, count unique words and assess text complexity based on average word length."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Studenter og akademikere",
-          "description": "Sjekk om oppgaven oppfyller det krevde ord- eller tegnkravet."
+          "title": "Students and academics",
+          "description": "Check word or character limits in essays and research papers."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Oversettere",
-          "description": "Tell tegn uten mellomrom for oversettelsespriser."
+          "title": "Translators",
+          "description": "Count characters without spaces for quotes (the standard billing unit in translation)."
         }
       ]
     },
@@ -208,7 +282,7 @@
     {
       "type": "sectionInfo",
       "title": "Tegngrenser på populære plattformer",
-      "html": "<p class=\"text-mid mb-4\">Tegntelleren er nyttig ved oppretting av innhold for plattformer med lengdebegrensninger:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Plattform / Element</th><th class=\"py-2 pr-4 font-semibold\">Tegngrense</th><th class=\"py-2 font-semibold\">Merknader</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 tegn</td><td class=\"text-primary-light0 py-2 text-sm\">Lengre titler avkortes i søkeresultatene.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 tegn</td><td class=\"text-primary-light0 py-2 text-sm\">Beskrivelse synlig under lenken i søkeresultatene.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook – innlegg</td><td class=\"py-2 pr-4 whitespace-nowrap\">63 206 tegn</td><td class=\"text-primary-light0 py-2 text-sm\">Lengre innlegg skjules bak Se mer-knappen.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – bildetekst</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 200 tegn</td><td class=\"text-primary-light0 py-2 text-sm\">De første ~125 tegnene er synlige.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – innlegg</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 tegn</td><td class=\"text-primary-light0 py-2 text-sm\">Standardgrense for vanlige kontoer.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn – innlegg</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 tegn</td><td class=\"text-primary-light0 py-2 text-sm\">De første ~140 tegnene synlige uten å klikke.</td></tr></tbody></table></div>"
+      "html": "<p class=\"text-mid\">Character limits vary by platform.</p>"
     },
     {
       "type": "gap",
@@ -216,38 +290,38 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Hva gjør denne ord- og tegntelleren spesiell?",
+      "title": "Hva gjør denne ordtelleren spesiell?",
       "grid": "two",
       "items": [
         {
-          "icon": "RiInfinityLine",
-          "title": "Seks sidetyper med anbefalte intervaller",
-          "description": "Produktbeskrivelse, tjenesteside, forside, tilbudsside, bloggartikkel og guide – hver type har egne intervaller basert på analyser."
+          "icon": "RiBarChartLine",
+          "title": "8 text metrics",
+          "description": "Words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time — all in one panel."
+        },
+        {
+          "icon": "RiTextWrap",
+          "title": "10 formatting tools",
+          "description": "Letter case conversion, removing spaces, empty lines, duplicates and sorting — without installing additional software."
         },
         {
           "icon": "RiUserLine",
-          "title": "Lokal behandling i nettleseren",
-          "description": "Tekst sendes ikke til noen server – hele analysen skjer lokalt på enheten din."
-        },
-        {
-          "icon": "RiCheckboxCircleLine",
-          "title": "Vurdering av tekstlengde",
-          "description": "Du teller ikke bare ord, men får informasjon om lengden er passende for den gitte sidetypen."
-        },
-        {
-          "icon": "RiBarChartLine",
-          "title": "SEO-baserte intervaller",
-          "description": "Anbefalte lengder er basert på analyser av innhold som rangerer godt i søkemotorer."
-        },
-        {
-          "icon": "RiTimerLine",
-          "title": "Lesetid",
-          "description": "Du vet med en gang hvor mange minutter det tar leserne å lese teksten."
+          "title": "Local processing in the browser",
+          "description": "Your text is never sent to any server. All analysis and transformation happens locally on your device."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Kopiering av rapport",
-          "description": "Knappen Kopier rapport overfører et sammendrag med all statistikk og lengdevurdering til utklippstavlen."
+          "title": "Copy and clear text",
+          "description": "Copy the modified text to your clipboard with one click or clear the field to start over."
+        },
+        {
+          "icon": "RiTimerLine",
+          "title": "Instant results",
+          "description": "Statistics update in real time as you type or paste text. No waiting for processing."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "No registration or limits",
+          "description": "The tool is completely free. No registration, login or personal data required."
         }
       ]
     },
@@ -261,19 +335,14 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Påvirker tekstlengden plasseringen i Google?",
-          "answer": "Tekstlengden i seg selv er ikke en rangeringsfaktor. Google vurderer om innholdet besvarer brukerens spørsmål og om det er verdifullt for dem.",
-          "answerSchemaText": "Tekstlengden er ikke en direkte rangeringsfaktor. Google vurderer innholdets verdi for brukeren."
-        },
-        {
-          "question": "Hvorfor er ordintervallene så brede?",
-          "answer": "Samme sidetype kan kreve forskjellige lengder avhengig av emnets kompleksitet. En enkel produktbeskrivelse er 80–150 ord. En beskrivelse av en bærbar PC er 300–400 ord, fordi kjøperen har flere spørsmål.",
-          "answerSchemaText": "Forskjellene skyldes emnets kompleksitet – et enkelt produkt krever færre ord enn et komplekst."
-        },
-        {
           "question": "Hvordan fungerer lesetidskalkulatoren?",
-          "answer": "Verktøyet deler antall ord med 200 – den gjennomsnittlige lesehastigheten for normal tekst. Teknisk tekst leses saktere. Resultatet er en omtrentlig verdi.",
-          "answerSchemaText": "Verktøyet antar en gjennomsnittlig lesehastighet på 200 ord per minutt. Det er en omtrentlig verdi."
+          "answer": "Verktøyet deler ordantallet med 200, gjennomsnittlig lesehastighet. Resultatet er en omtrentlig verdi.",
+          "answerSchemaText": "Verktøyet antar 200 ord per minutt."
+        },
+        {
+          "question": "Er teksten min trygg?",
+          "answer": "Ja. All analyse skjer lokalt i nettleseren. Teksten sendes aldri til en server.",
+          "answerSchemaText": "Ja. Teksten behandles lokalt i nettleseren."
         }
       ]
     },
@@ -283,7 +352,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Utforsk flere verktøy"
+      "title": "Utforsk andre verktøy"
     },
     {
       "type": "gap",

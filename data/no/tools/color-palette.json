@@ -92,15 +92,18 @@
       "items": [
         {
           "title": "1. Skriv inn grunnfarge",
-          "description": "Skriv inn en HEX-kode (f.eks. #496ba2) i tekstfeltet, eller velg en farge fra fargevelgeren. Du kan også bruke knappen Tilfeldig farge."
+          "description": "Skriv inn en HEX-kode (f.eks. #496ba2) i tekstfeltet, eller velg en farge fra fargevelgeren. Du kan også bruke knappen Tilfeldig farge.",
+          "icon": "RiDropLine"
         },
         {
           "title": "2. Bekreft valget ditt",
-          "description": "Når du klikker på knappen Update Color, genererer verktøyet automatisk 9 paletter basert på forskjellige fargeharmoniskjemaer."
+          "description": "Når du klikker på knappen Update Color, genererer verktøyet automatisk 9 paletter basert på forskjellige fargeharmoniskjemaer.",
+          "icon": "RiCheckboxCircleLine"
         },
         {
           "title": "3. Kopier fargene du trenger",
-          "description": "Ved hver farge er det en Kopier-knapp – HEX-koden går til utklippstavlen og kan limes inn direkte i prosjektet ditt."
+          "description": "Ved hver farge er det en Kopier-knapp – HEX-koden går til utklippstavlen og kan limes inn direkte i prosjektet ditt.",
+          "icon": "RiFileCopyLine"
         }
       ]
     },

@@ -92,15 +92,18 @@
       "items": [
         {
           "title": "1. Ange grundfärg",
-          "description": "Ange en HEX-kod (t.ex. #496ba2) i textfältet eller välj en färg från färgväljaren. Du kan också använda knappen Slumpmässig färg."
+          "description": "Ange en HEX-kod (t.ex. #496ba2) i textfältet eller välj en färg från färgväljaren. Du kan också använda knappen Slumpmässig färg.",
+          "icon": "RiDropLine"
         },
         {
           "title": "2. Bekräfta ditt val",
-          "description": "Efter att du klickat på knappen Update Color genererar verktyget automatiskt 9 paletter baserade på olika färgharmonischeman."
+          "description": "Efter att du klickat på knappen Update Color genererar verktyget automatiskt 9 paletter baserade på olika färgharmonischeman.",
+          "icon": "RiCheckboxCircleLine"
         },
         {
           "title": "3. Kopiera de färger du behöver",
-          "description": "Bredvid varje färg finns en Kopiera-knapp – HEX-koden går till urklipp och kan klistras in direkt i ditt projekt."
+          "description": "Bredvid varje färg finns en Kopiera-knapp – HEX-koden går till urklipp och kan klistras in direkt i ditt projekt.",
+          "icon": "RiFileCopyLine"
         }
       ]
     },

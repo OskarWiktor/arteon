@@ -79,15 +79,18 @@
       "items": [
         {
           "title": "1. Wgraj obraz",
-          "description": "Przeciągnij plik na wyznaczone pole lub wybierz go z dysku. Obsługiwane formaty to PNG, JPG i SVG."
+          "description": "Przeciągnij plik na wyznaczone pole lub wybierz go z dysku. Obsługiwane formaty to PNG, JPG i SVG.",
+          "icon": "RiUploadLine"
         },
         {
           "title": "2. Poczekaj na analizę",
-          "description": "Narzędzie automatycznie przeanalizuje obraz i wyciągnie z niego do 12 dominujących kolorów."
+          "description": "Narzędzie automatycznie przeanalizuje obraz i wyciągnie z niego do 12 dominujących kolorów.",
+          "icon": "RiSearchEyeLine"
         },
         {
           "title": "3. Skopiuj potrzebne kolory",
-          "description": "Przy każdym kolorze znajduje się przycisk kopiowania - kod HEX lub RGB trafia do schowka i można go od razu wkleić w projekt."
+          "description": "Przy każdym kolorze znajduje się przycisk kopiowania - kod HEX lub RGB trafia do schowka i można go od razu wkleić w projekt.",
+          "icon": "RiFileCopyLine"
         }
       ]
     },

@@ -88,15 +88,18 @@
       "items": [
         {
           "title": "1. Dodaj obraz",
-          "description": "Przeciągnij plik na wyznaczone pole lub wybierz grafikę z dysku. Obsługiwane formaty: PNG, JPG, SVG. Zalecany rozmiar: min. 512x512 pikseli."
+          "description": "Przeciągnij plik na wyznaczone pole lub wybierz grafikę z dysku. Obsługiwane formaty: PNG, JPG, SVG. Zalecany rozmiar: min. 512x512 pikseli.",
+          "icon": "RiImageLine"
         },
         {
           "title": "2. Wybierz rozmiary",
-          "description": "Zaznacz potrzebne rozmiary ikon. Dla zwykłej strony wystarczą: favicon.ico, 32x32 i 180x180. Dla PWA dodaj też 192x192 i 512x512."
+          "description": "Zaznacz potrzebne rozmiary ikon. Dla zwykłej strony wystarczą: favicon.ico, 32x32 i 180x180. Dla PWA dodaj też 192x192 i 512x512.",
+          "icon": "RiAspectRatioLine"
         },
         {
           "title": "3. Pobierz pliki",
-          "description": "Po wygenerowaniu pobierz wszystkie pliki jako ZIP lub każdą ikonę osobno. Poniżej narzędzia znajdziesz instrukcję, jak wgrać favicon na stronę."
+          "description": "Po wygenerowaniu pobierz wszystkie pliki jako ZIP lub każdą ikonę osobno. Poniżej narzędzia znajdziesz instrukcję, jak wgrać favicon na stronę.",
+          "icon": "RiDownloadLine"
         }
       ]
     },
