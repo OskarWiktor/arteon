@@ -5,7 +5,7 @@
     "title": "Δωρεάν Δημιουργός Υπογραφής Email – HTML για Gmail & Outlook",
     "description": "Δημιουργήστε επαγγελματική υπογραφή e-mail σε HTML χωρίς κώδικα. Προσθέστε στοιχεία επικοινωνίας, λογότυπο, κοινωνικά δίκτυα και αντιγράψτε σε Gmail ή Outlook.",
     "ogImage": "/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp",
-    "path": "/el/ergaleia/dorean-dimiourgia-ypografis-e-mail"
+    "path": "/el/ergaleia/dorean-dimiourgia-ypografis-email"
   },
   "hero": {
     "title": "Δημιουργήστε επαγγελματική υπογραφή e-mail σε HTML",
@@ -18,7 +18,7 @@
       "label": "Εργαλεία"
     },
     "third": {
-      "href": "/el/ergaleia/dorean-dimiourgia-ypografis-e-mail",
+      "href": "/el/ergaleia/dorean-dimiourgia-ypografis-email",
       "label": "Δημιουργός υπογραφής e-mail"
     }
   },

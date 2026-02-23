@@ -52,6 +52,7 @@ import { useLocale } from '@/lib/LocaleContext';
 export default function EmailSignatureGenerator() {
   const locale = useLocale();
   const t = ui[locale];
+
   const defaultSignature = useMemo(() => getDefaultSignature(locale), [locale]);
   const [config, setConfig] = useState<SignatureConfig>(defaultSignature);
   const [styleConfig, setStyleConfig] = useState<StyleConfig>(DEFAULT_STYLE);

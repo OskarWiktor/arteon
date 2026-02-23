@@ -17,7 +17,12 @@ const TOOL_COMPONENTS: Record<string, ReturnType<typeof dynamic>> = {
 };
 
 export default function DynamicToolRenderer({ toolKey }: { toolKey: string }) {
-  const Component = TOOL_COMPONENTS[toolKey];
-  if (!Component) return null;
+  // Map toolKey with hyphens to camelCase component keys
+  const mappedKey = toolKey === 'e-mailSignature' ? 'emailSignature' : toolKey;
+
+  const Component = TOOL_COMPONENTS[mappedKey];
+  if (!Component) {
+    return null;
+  }
   return <Component />;
 }
