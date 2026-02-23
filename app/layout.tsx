@@ -13,7 +13,7 @@ import FocusManager from '@/components/systems/FocusManager';
 import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 import { getDictionary } from '@/lib/i18n/get-dictionary';
-import { LOCALE_CONFIG, SUPPORTED_LOCALES } from '@/lib/i18n/locale-config';
+import { SUPPORTED_LOCALES } from '@/lib/i18n/locale-config';
 import type { Locale } from '@/types/locale';
 
 import './globals.css';
@@ -29,7 +29,7 @@ const instrumentSans = Instrument_Sans({
 const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
 const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
 const METRICOOL_HASH = process.env.METRICOOL_HASH;
-const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT || 'ca-pub-7845947936813012';
+/* AdSense client ID is defined in components/ui/AdSense.tsx */
 
 const ORG_LOGO = toAbsoluteUrl('/icon-512x512.png');
 const metadataBase = new URL(siteUrl);
@@ -104,8 +104,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const lang: Locale = SUPPORTED_LOCALES.find((l) => l !== 'pl' && pathname.startsWith(`/${l}`)) ?? 'pl';
   const dict = await getDictionary(lang);
 
-  const toolBasePaths = Object.values(LOCALE_CONFIG).map((c) => c.toolsBasePath);
-  const isAdPage = toolBasePaths.some((base) => pathname === base || pathname.startsWith(base + '/')) || pathname.startsWith('/edukacja/');
+  /* AdSense script is loaded dynamically by the <AdSense> component itself,
+     so it works correctly with SPA (client-side) navigation. */
 
   return (
     <html lang={lang} className={instrumentSans.variable}>
@@ -143,8 +143,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <script id="schema-org-organization" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
 
         <script id="schema-org-website" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
-
-        {isAdPage && <Script src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} strategy="afterInteractive" crossOrigin="anonymous" />}
 
         {/* dns-prefetch fallback for browsers that don't support preconnect */}
         <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />

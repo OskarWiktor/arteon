@@ -5,6 +5,7 @@ import type { AdSenseProps } from '@/types/ui';
 export type { AdVariant, AdSenseProps } from '@/types/ui';
 
 const AD_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT || 'ca-pub-7845947936813012';
+const AD_SCRIPT_SRC = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${AD_CLIENT}`;
 
 const PRESETS = {
   'tool-banner': { slot: '7551147298' },
@@ -26,9 +27,55 @@ declare global {
   }
 }
 
+/* ------------------------------------------------------------------ */
+/*  Singleton script loader                                           */
+/* ------------------------------------------------------------------ */
+
+let scriptState: 'idle' | 'loading' | 'ready' | 'error' = 'idle';
+const readyCallbacks: Array<() => void> = [];
+
+function onScriptReady(cb: () => void) {
+  if (scriptState === 'ready') {
+    cb();
+  } else {
+    readyCallbacks.push(cb);
+  }
+}
+
+function flushReady() {
+  scriptState = 'ready';
+  for (const cb of readyCallbacks.splice(0)) cb();
+}
+
+function ensureAdScript() {
+  if (scriptState !== 'idle') return;
+  if (typeof document === 'undefined') return;
+
+  const alreadyPresent = Array.from(document.scripts).some((s) => s.src.includes('adsbygoogle.js'));
+  if (alreadyPresent) {
+    flushReady();
+    return;
+  }
+
+  scriptState = 'loading';
+  const script = document.createElement('script');
+  script.async = true;
+  script.crossOrigin = 'anonymous';
+  script.src = AD_SCRIPT_SRC;
+  script.onload = () => flushReady();
+  script.onerror = () => {
+    scriptState = 'error';
+  };
+  document.head.appendChild(script);
+}
+
 /**
  * AdSense ad component — uses direct DOM injection to match Google's
  * intended flow: create <ins> → append to DOM → push() immediately.
+ *
+ * The component self-loads the adsbygoogle.js script (singleton) so it
+ * works correctly with SPA (client-side) navigation — no server-side
+ * conditional loading needed.
  *
  * No React rendering of <ins> (avoids SSR hydration / auto-scan conflicts).
  * The container <div> is React-managed; the <ins> inside is DOM-managed.
@@ -45,10 +92,11 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
     const container = containerRef.current;
     if (!container || pushed.current) return;
 
+    ensureAdScript();
+
     const tryRender = () => {
       if (pushed.current) return true;
 
-      // Auto/fluid units can collapse to 0px if pushed while hidden (e.g. responsive sidebars).
       if (variant !== 'tool-banner' && container.getBoundingClientRect().width === 0) {
         return false;
       }
@@ -92,17 +140,26 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
       return pushed.current;
     };
 
-    if (tryRender()) return;
+    const attemptWithScript = () => {
+      if (tryRender()) return;
 
-    if (typeof ResizeObserver === 'undefined') return;
+      if (typeof ResizeObserver !== 'undefined') {
+        const observer = new ResizeObserver(() => {
+          if (tryRender()) observer.disconnect();
+        });
+        observer.observe(container);
+        cleanups.push(() => observer.disconnect());
+      }
+    };
 
-    const observer = new ResizeObserver(() => {
-      if (tryRender()) observer.disconnect();
-    });
+    const cleanups: Array<() => void> = [];
 
-    observer.observe(container);
-    return () => observer.disconnect();
-  }, [variant, slot]);
+    onScriptReady(attemptWithScript);
+
+    return () => {
+      for (const fn of cleanups) fn();
+    };
+  }, [variant, slot, isInArticleVariant]);
 
   if (variant === 'tool-banner') {
     return <div ref={containerRef} className={`flex min-h-[90px] items-center justify-center ${className}`} />;
