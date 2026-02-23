@@ -229,7 +229,7 @@ export default function ToolsIndexPage() {
               icon: <RiCropLine className="h-8 w-8" />,
               title: 'Editor de imagini',
               topImageAlt: 'Editor de imagini Arteon',
-              topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
+              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagini-ro.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Decupați imaginile perfect pentru social media sau site-ul dvs. Alegeți un format predefinit sau introduceți dimensiuni personalizate — descărcați în PNG, JPG sau WebP.</p>

@@ -184,7 +184,7 @@ export default function ToolsIndexPage() {
               icon: <RiCropLine className="h-8 w-8" />,
               title: 'Bilderedigerer',
               topImageAlt: 'Bilderedigerer Arteon',
-              topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
+              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/bilderedigerer-no.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Beskjaer bildet perfekt for sosiale medier eller nettsiden. Velg et ferdig format eller skriv inn egne pikselstorrelser -- last ned som PNG, JPG eller WebP.</p>

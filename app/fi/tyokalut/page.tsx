@@ -187,7 +187,7 @@ export default function ToolsIndexPage() {
               icon: <RiCropLine className="h-8 w-8" />,
               title: 'Kuvaeditori',
               topImageAlt: 'Kuvaeditori Arteon',
-              topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
+              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/kuvaeditori-fi.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Rajaa kuva täydellisesti sosiaalista mediaa tai verkkosivustoa varten. Valitse valmis muoto tai syötä omat pikselikoot – lataa PNG-, JPG- tai WebP-muodossa.</p>

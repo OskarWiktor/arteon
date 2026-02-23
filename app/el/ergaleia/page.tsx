@@ -197,7 +197,7 @@ export default function ToolsIndexPage() {
               icon: <RiCropLine className="h-8 w-8" />,
               title: 'Επεξεργασία εικόνας',
               topImageAlt: 'Επεξεργασία εικόνας Arteon',
-              topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
+              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/epexergasia-eikonas-el.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Περικόψτε την εικόνα σας για μέσα κοινωνικής δικτύωσης ή ιστοσελίδα. Επιλέξτε προκαθορισμένη μορφή ή εισάγετε προσαρμοσμένες διαστάσεις – κατεβάστε σε PNG, JPG ή WebP.</p>

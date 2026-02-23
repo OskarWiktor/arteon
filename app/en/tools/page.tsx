@@ -228,7 +228,7 @@ export default function ToolsIndexPage() {
               icon: <RiCropLine className="h-8 w-8" />,
               title: 'Online image editor',
               topImageAlt: 'Online image editor Arteon',
-              topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
+              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/online-image-editor-en.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Prepare the perfect crop for social media or your website. Choose a ready-made format or enter custom pixel dimensions and download the image in PNG, JPG, or WebP.</p>

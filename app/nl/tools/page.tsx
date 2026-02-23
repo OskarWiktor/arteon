@@ -203,7 +203,7 @@ export default function ToolsIndexPage() {
               icon: <RiCropLine className="h-8 w-8" />,
               title: 'Afbeeldingeneditor',
               topImageAlt: 'Afbeeldingeneditor Arteon',
-              topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
+              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/afbeeldingeneditor-nl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Snijd afbeeldingen perfect bij voor social media of uw website. Kies een vooraf ingesteld formaat of voer aangepaste pixelafmetingen in — download als PNG, JPG of WebP.</p>

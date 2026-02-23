@@ -202,7 +202,7 @@ export default function ToolsIndexPage() {
               icon: <RiCropLine className="h-8 w-8" />,
               title: 'Editor obrazku',
               topImageAlt: 'Editor obrazku Arteon',
-              topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
+              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/editor-obrazku-cs.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Oriznete obrazek presne pro socialni site nebo web. Vyberte prednastaveny format nebo zadejte vlastni rozmery v pixelech — stahnete v PNG, JPG nebo WebP.</p>

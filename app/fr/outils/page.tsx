@@ -231,7 +231,7 @@ export default function ToolsIndexPage() {
               icon: <RiCropLine className="h-8 w-8" />,
               title: "Éditeur d'images en ligne",
               topImageAlt: "Éditeur d'images en ligne Arteon",
-              topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
+              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/editeur-d-images-en-ligne-fr.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Recadrez vos images au format idéal pour les réseaux sociaux ou votre site. Choisissez un format prédéfini ou saisissez vos dimensions – export en PNG, JPG ou WebP.</p>

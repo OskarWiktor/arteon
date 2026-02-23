@@ -230,7 +230,7 @@ export default function ToolsIndexPage() {
               icon: <RiCropLine className="h-8 w-8" />,
               title: 'Online-Bildeditor',
               topImageAlt: 'Online-Bildeditor Arteon',
-              topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
+              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/online-bildeditor-de.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Schneiden Sie Bilder passgenau für Social Media oder Ihre Website zu. Wählen Sie ein fertiges Format oder geben Sie eigene Pixelmaße ein - Download als PNG, JPG oder WebP.</p>

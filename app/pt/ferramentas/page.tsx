@@ -230,7 +230,7 @@ export default function ToolsIndexPage() {
               icon: <RiCropLine className="h-8 w-8" />,
               title: 'Editor de imagens online',
               topImageAlt: 'Editor de imagens online Arteon',
-              topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
+              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagens-online-pt.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Recorte as suas imagens no formato ideal para redes sociais ou o seu site. Escolha um formato predefinido ou introduza as suas dimensões – exportação em PNG, JPG ou WebP.</p>
