@@ -219,7 +219,7 @@ export default function ToolsIndexPage() {
               icon: <RiAppsLine className="h-8 w-8" />,
               title: 'Favicon- & pictogramgenerator',
               topImageAlt: 'Favicon-generator Arteon',
-              topImageSrc: '/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp',
+              topImageSrc: '/assets/tools/favicon-generator/gratis-favicon-generator-nl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>

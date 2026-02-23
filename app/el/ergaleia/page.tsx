@@ -213,7 +213,7 @@ export default function ToolsIndexPage() {
               icon: <RiAppsLine className="h-8 w-8" />,
               title: 'Δημιουργία favicon',
               topImageAlt: 'Δημιουργία favicon Arteon',
-              topImageSrc: '/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp',
+              topImageSrc: '/assets/tools/favicon-generator/dorean-dimiourgia-favicon-el.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>

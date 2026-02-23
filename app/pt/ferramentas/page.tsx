@@ -246,7 +246,7 @@ export default function ToolsIndexPage() {
               icon: <RiAppsLine className="h-8 w-8" />,
               title: 'Gerador de favicon',
               topImageAlt: 'Gerador de favicon Arteon',
-              topImageSrc: '/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp',
+              topImageSrc: '/assets/tools/favicon-generator/gerador-de-favicon-gratuito-pt.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
