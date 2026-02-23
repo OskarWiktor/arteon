@@ -370,7 +370,7 @@ export default function ToolsIndexPage() {
               icon: <RiContrast2Line className="h-8 w-8" />,
               title: 'Verificator contrast culori',
               topImageAlt: 'Verificator contrast culori Arteon',
-              topImageSrc: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
+              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/verificator-contrast-culori-ro.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -389,7 +389,7 @@ export default function ToolsIndexPage() {
               icon: <RiPantoneLine className="h-8 w-8" />,
               title: 'Extractor de culori din imagine',
               topImageAlt: 'Extractor de culori din imagine Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
+              topImageSrc: '/assets/tools/image-color-extractor/extractor-culori-din-imagine-ro.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Încărcați o fotografie sau un logo — instrumentul va extrage culorile dominante. Copiați codurile HEX cu un singur clic și utilizați-le oriunde.</p>

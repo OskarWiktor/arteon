@@ -379,7 +379,7 @@ export default function ToolsIndexPage() {
               icon: <RiContrast2Line className="h-8 w-8" />,
               title: 'Comprobador de contraste y legibilidad de colores',
               topImageAlt: 'Comprobador de contraste de colores Arteon',
-              topImageSrc: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
+              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/comprobador-de-contraste-de-colores-es.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -398,7 +398,7 @@ export default function ToolsIndexPage() {
               icon: <RiPantoneLine className="h-8 w-8" />,
               title: 'Extractor de colores de imagen',
               topImageAlt: 'Extractor de colores de imagen Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
+              topImageSrc: '/assets/tools/image-color-extractor/extractor-de-colores-de-imagen-es.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Suba una foto o logotipo y la herramienta extraerá los colores dominantes. Copie los códigos HEX con un solo clic y Úselos donde quiera.</p>

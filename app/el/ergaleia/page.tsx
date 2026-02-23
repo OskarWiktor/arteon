@@ -329,7 +329,7 @@ export default function ToolsIndexPage() {
               icon: <RiContrast2Line className="h-8 w-8" />,
               title: 'Έλεγχος αντίθεσης χρωμάτων',
               topImageAlt: 'Έλεγχος αντίθεσης χρωμάτων Arteon',
-              topImageSrc: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
+              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/elegkhos-kontrast-chromaton-el.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -348,7 +348,7 @@ export default function ToolsIndexPage() {
               icon: <RiPantoneLine className="h-8 w-8" />,
               title: 'Εξαγωγή χρωμάτων από εικόνα',
               topImageAlt: 'Εξαγωγή χρωμάτων από εικόνα Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
+              topImageSrc: '/assets/tools/image-color-extractor/exagogi-chromaton-apo-eikona-el.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Ανεβάστε μια φωτογραφία ή λογότυπο – το εργαλείο θα εξάγει τα κυρίαρχα χρώματα. Αντιγράψτε κωδικούς HEX με ένα κλικ και χρησιμοποιήστε τους οπουδήποτε.</p>

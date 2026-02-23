@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Gratis fargekontrastsjekker – Sjekk WCAG 2.1-samsvar",
     "description": "Sjekk om tekst- og bakgrunnsfargene dine er lesbare i henhold til WCAG 2.1. Skriv inn HEX-, RGB- eller HSL-kode, se kontrastforholdet og bruk automatisk.",
-    "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
+    "ogImage": "/assets/tools/color-contrast-and-readability-checker/fargekontrastsjekker-no.webp",
     "path": "/no/verktoy/fargekontrastsjekker"
   },
   "hero": {

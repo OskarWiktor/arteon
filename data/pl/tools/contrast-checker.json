@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Tester kontrastu kolorów WCAG – sprawdź czytelność tekstu",
     "description": "Sprawdź czy kolory tekstu i tła są czytelne według WCAG 2.1. Wpisz kody HEX, RGB lub HSL, zobacz współczynnik kontrastu i użyj automatycznej korekty.",
-    "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
+    "ogImage": "/assets/tools/color-contrast-and-readability-checker/kontrast-i-czytelnosc-kolorow-pl.webp",
     "path": "/narzedzia/kontrast-i-czytelnosc-kolorow"
   },
   "hero": {

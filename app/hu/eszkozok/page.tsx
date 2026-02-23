@@ -351,7 +351,7 @@ export default function ToolsIndexPage() {
               icon: <RiContrast2Line className="h-8 w-8" />,
               title: 'Színkontraszt ellenőrző',
               topImageAlt: 'Színkontraszt ellenőrző Arteon',
-              topImageSrc: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
+              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/szinkontraszt-ellenorzo-hu.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -370,7 +370,7 @@ export default function ToolsIndexPage() {
               icon: <RiPantoneLine className="h-8 w-8" />,
               title: 'Színkinyerő képből',
               topImageAlt: 'Színkinyerő képből Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
+              topImageSrc: '/assets/tools/image-color-extractor/szinkinyero-kepbol-hu.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Töltsön fel egy fényképet vagy logót — az eszköz kinyeri a domináns színeket. Másolja a HEX kódokat egyetlen kattintással és használja őket bárhol.</p>

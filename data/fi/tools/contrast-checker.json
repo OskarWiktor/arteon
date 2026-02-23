@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Ilmainen värikontrastin tarkistus – WCAG 2.1 -yhteensopivuus",
     "description": "Tarkista, ovatko teksti- ja taustavärisi luettavia WCAG 2.1:n mukaan. Syötä HEX-, RGB- tai HSL-koodi, katso kontrastisuhde ja käytä automaattista korjausta.",
-    "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
+    "ogImage": "/assets/tools/color-contrast-and-readability-checker/varikontrasti-tarkistus-fi.webp",
     "path": "/fi/tyokalut/varikontrasti-tarkistus"
   },
   "hero": {

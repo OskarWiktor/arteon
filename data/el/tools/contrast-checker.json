@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Δωρεάν Έλεγχος Αντίθεσης Χρωμάτων – Συμμόρφωση WCAG 2.1",
     "description": "Ελέγξτε αν τα χρώματα κειμένου και φόντου είναι αναγνώσιμα σύμφωνα με το WCAG 2.1. Εισάγετε κωδικούς HEX, RGB ή HSL, δείτε την αναλογία αντίθεσης και.",
-    "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
+    "ogImage": "/assets/tools/color-contrast-and-readability-checker/elegkhos-kontrast-chromaton-el.webp",
     "path": "/el/ergaleia/elegkhos-kontrast-chromaton"
   },
   "hero": {

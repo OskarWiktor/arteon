@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Kontrola kontrastu barev zdarma – Soulad s WCAG 2.1",
     "description": "Zkontrolujte, zda jsou barvy textu a pozadí čitelné podle WCAG 2.1. Zadejte kód HEX, RGB nebo HSL, zobrazte poměr kontrastu a použijte automatickou opravu.",
-    "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
+    "ogImage": "/assets/tools/color-contrast-and-readability-checker/kontrola-kontrastu-barev-cs.webp",
     "path": "/cs/nastroje/kontrola-kontrastu-barev"
   },
   "hero": {

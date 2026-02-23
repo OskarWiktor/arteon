@@ -307,7 +307,7 @@ export default function ToolsIndexPage() {
               icon: <RiContrast2Line className="h-8 w-8" />,
               title: 'Fargkontrastkontroll',
               topImageAlt: 'Fargkontrastkontroll Arteon',
-              topImageSrc: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
+              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/fargkontrastkontroll-sv.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -326,7 +326,7 @@ export default function ToolsIndexPage() {
               icon: <RiPantoneLine className="h-8 w-8" />,
               title: 'Fargextraktor fran bild',
               topImageAlt: 'Fargextraktor fran bild Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
+              topImageSrc: '/assets/tools/image-color-extractor/fargextraktor-fran-bild-sv.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Ladda upp ett foto eller logotyp -- verktyget extraherar de dominerande fargerna. Kopiera HEX-koder med ett klick och anvand dem var som helst.</p>

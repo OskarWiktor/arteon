@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Free Color Contrast Checker – WCAG 2.1 Compliance",
     "description": "Check if your text and background colors meet WCAG 2.1 standards. Enter HEX, RGB or HSL codes, see the contrast ratio and auto-fix colors for accessibility.",
-    "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
+    "ogImage": "/assets/tools/color-contrast-and-readability-checker/color-contrast-checker-en.webp",
     "path": "/en/tools/color-contrast-checker"
   },
   "hero": {

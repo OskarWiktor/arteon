@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Ingyenes színkontraszt ellenőrző – WCAG 2.1 megfelelőség",
     "description": "Tesztelje a színkontrasztot a WCAG 2.1 szabvány szerint. Ellenőrizze a szöveg olvashatóságát és kapjon automatikus színillesztési javaslatokat.",
-    "ogImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp",
+    "ogImage": "/assets/tools/color-contrast-and-readability-checker/szinkontraszt-ellenorzo-hu.webp",
     "path": "/hu/eszkozok/szinkontraszt-ellenorzo"
   },
   "hero": {

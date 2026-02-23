@@ -340,7 +340,7 @@ export default function ToolsIndexPage() {
               icon: <RiContrast2Line className="h-8 w-8" />,
               title: 'Kontrola kontrastu barev',
               topImageAlt: 'Kontrola kontrastu barev Arteon',
-              topImageSrc: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
+              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/kontrola-kontrastu-barev-cs.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -359,7 +359,7 @@ export default function ToolsIndexPage() {
               icon: <RiPantoneLine className="h-8 w-8" />,
               title: 'Extraktor barev z obrazku',
               topImageAlt: 'Extraktor barev z obrazku Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
+              topImageSrc: '/assets/tools/image-color-extractor/extraktor-barev-z-obrazku-cs.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Nahrajte fotografii nebo logo — nastroj extrahuje dominantni barvy. Zkopirujte HEX kody jednim kliknutim a pouzijte je kdekoliv.</p>

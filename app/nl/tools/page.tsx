@@ -346,7 +346,7 @@ export default function ToolsIndexPage() {
               icon: <RiContrast2Line className="h-8 w-8" />,
               title: 'Kleurcontrast checker',
               topImageAlt: 'Kleurcontrast checker Arteon',
-              topImageSrc: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
+              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/kleurcontrast-checker-nl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -365,7 +365,7 @@ export default function ToolsIndexPage() {
               icon: <RiPantoneLine className="h-8 w-8" />,
               title: 'Kleurextractor uit afbeelding',
               topImageAlt: 'Kleurextractor uit afbeelding Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
+              topImageSrc: '/assets/tools/image-color-extractor/kleurextractor-uit-afbeelding-nl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Upload een foto of logo — de tool extraheert de dominante kleuren. Kopieer HEX-codes met één klik en gebruik ze overal.</p>

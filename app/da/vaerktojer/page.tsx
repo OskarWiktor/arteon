@@ -314,7 +314,7 @@ export default function ToolsIndexPage() {
               icon: <RiContrast2Line className="h-8 w-8" />,
               title: 'Farvekontrastkontrol',
               topImageAlt: 'Farvekontrastkontrol Arteon',
-              topImageSrc: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
+              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/farvekontrastkontrol-da.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -333,7 +333,7 @@ export default function ToolsIndexPage() {
               icon: <RiPantoneLine className="h-8 w-8" />,
               title: 'Farveudtraekker fra billede',
               topImageAlt: 'Farveudtraekker fra billede Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
+              topImageSrc: '/assets/tools/image-color-extractor/farveudtraekker-fra-billede-da.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Upload et foto eller logo -- vaerktojet udtraekker de dominerende farver. Kopier HEX-koder med et klik og brug dem hvor som helst.</p>
