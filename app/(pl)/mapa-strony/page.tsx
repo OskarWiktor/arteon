@@ -246,25 +246,22 @@ function buildBlogCategoriesFromArticles(articles: ArticlePreview[]): NavItem[] 
   const categoryMap = new Map<string, NavItem>();
 
   for (const article of articles) {
-    const categories = Array.isArray(article.category) ? article.category : article.category ? [article.category] : ['Inne'];
+    const categoryName = article.primaryCategory || 'Inne';
+    const catSlug = slugify(categoryName);
 
-    for (const catName of categories) {
-      const catSlug = slugify(catName);
-
-      if (!categoryMap.has(catSlug)) {
-        categoryMap.set(catSlug, {
-          title: catName,
-          href: `/edukacja/${catSlug}`,
-          children: [],
-        });
-      }
-
-      const categoryItem = categoryMap.get(catSlug)!;
-      categoryItem.children!.push({
-        title: article.title,
-        href: `/edukacja/${getPrimaryCategorySlug(article)}/${article.slug}`,
+    if (!categoryMap.has(catSlug)) {
+      categoryMap.set(catSlug, {
+        title: categoryName,
+        href: `/edukacja/${catSlug}`,
+        children: [],
       });
     }
+
+    const categoryItem = categoryMap.get(catSlug)!;
+    categoryItem.children!.push({
+      title: article.title,
+      href: `/edukacja/${getPrimaryCategorySlug(article)}/${article.slug}`,
+    });
   }
 
   return Array.from(categoryMap.values()).sort((a, b) => a.title.localeCompare(b.title, 'pl'));

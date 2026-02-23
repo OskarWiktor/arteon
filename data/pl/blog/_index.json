@@ -5,8 +5,6 @@
     "excerpt": "Błąd 404 pojawia się, gdy strona nie istnieje. Wyjaśniamy, skąd biorą się takie błędy, jak je znaleźć w Google Search Console, kiedy wymagają reakcji i co umieścić na stronie błędu, by użytkownicy mogli wrócić do treści.",
     "cover": "/assets/blog/czym-jest-strona-bledu-404-i-dlaczego-warto-ja-zaprojektowac/czym-jest-strona-bledu-404-i-dlaczego-warto-ja-zaprojektowac.webp",
     "primaryCategory": "Strony",
-    "category": ["UX"],
-    "tags": ["błąd 404", "strona błędu", "UX", "nawigacja", "SEO", "użyteczność"],
     "readingTime": 11,
     "datePublished": "2026-01-17",
     "seo": {
@@ -21,8 +19,6 @@
     "excerpt": "Kanibalizacja słów kluczowych występuje, gdy kilka stron w jednej witrynie konkuruje o te same frazy w Google. Wyjaśniamy, dlaczego to problem dla SEO, jak wykryć kanibalizację w Search Console i jak ją naprawić.",
     "cover": "/assets/blog/czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac/czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac.webp",
     "primaryCategory": "SEO",
-    "category": ["Treści"],
-    "tags": ["SEO", "słowa kluczowe", "optymalizacja", "treści", "ranking", "widoczność"],
     "readingTime": 11,
     "datePublished": "2026-01-17",
     "seo": {
@@ -37,8 +33,6 @@
     "excerpt": "Regulamin sklepu internetowego określa zasady korzystania ze sklepu i zawierania umów. Wyjaśniamy, jakie elementy musi zawierać zgodnie z polskim prawem i na co zwrócić uwagę przy jego tworzeniu lub aktualizacji w sklepie.",
     "cover": "/assets/blog/co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac/co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac.webp",
     "primaryCategory": "Sklepy",
-    "category": ["Bezpieczeństwo"],
-    "tags": ["regulamin", "sklep internetowy", "e-commerce", "prawo konsumenckie", "RODO", "prawa konsumenta"],
     "readingTime": 10,
     "datePublished": "2026-01-02",
     "seo": {
@@ -53,8 +47,6 @@
     "excerpt": "Newsletter to regularna wiadomość e-mail wysyłana do osób, które wyraziły zgodę. Wyjaśniamy, jakie korzyści może przynieść firmie i na co zwrócić uwagę przy jego prowadzeniu oraz zbieraniu subskrybentów.",
     "cover": "/assets/blog/co-to-jest-newsletter-i-czy-warto-go-prowadzic/co-to-jest-newsletter-i-czy-warto-go-prowadzic.webp",
     "primaryCategory": "Marketing",
-    "category": ["Treści"],
-    "tags": ["newsletter", "e-mail marketing", "marketing", "komunikacja", "klienci", "sprzedaz"],
     "readingTime": 10,
     "datePublished": "2026-01-02",
     "seo": {
@@ -69,8 +61,6 @@
     "excerpt": "Szybkość ładowania strony wpływa na pozycję w Google i doświadczenie użytkowników. Wyjaśniamy, jak działają wskaźniki Core Web Vitals, co oznaczają dla właściciela strony i dlaczego warto je regularnie monitorować w praktyce.",
     "cover": "/assets/blog/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google.webp",
     "primaryCategory": "SEO",
-    "category": ["Widoczność", "Strony"],
-    "tags": ["SEO", "szybkosc strony", "Core Web Vitals", "wydajnosc", "UX", "Google", "optymalizacja"],
     "readingTime": 11,
     "datePublished": "2026-01-02",
     "seo": {
@@ -85,8 +75,6 @@
     "excerpt": "Ścieżka nawigacji pokazuje użytkownikowi, gdzie się znajduje w strukturze witryny. Wyjaśniamy, jak działa, dlaczego ułatwia poruszanie się po stronie, jak wpływa na widoczność w Google i kiedy warto ją dodać do swojej witryny.",
     "cover": "/assets/blog/czym-jest-sciezka-nawigacji-na-stronie-i-dlaczego-warto-ja-miec/czym-jest-sciezka-nawigacji-na-stronie-i-dlaczego-warto-ja-miec.webp",
     "primaryCategory": "UX",
-    "category": ["SEO", "Strony", "Dostępność"],
-    "tags": ["UX", "SEO", "nawigacja", "struktura strony", "Google", "dostepnosc"],
     "readingTime": 10,
     "datePublished": "2026-01-01",
     "seo": {
@@ -101,8 +89,6 @@
     "excerpt": "Strony z odpowiednią ilością pustej przestrzeni są łatwiejsze do czytania. Wyjaśniamy, jak odstępy między elementami wpływają na odbiór treści, gdzie je stosować i jak ocenić, czy witryna ma właściwe proporcje i dobry układ.",
     "cover": "/assets/blog/dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc/dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc.webp",
     "primaryCategory": "UX",
-    "category": ["Grafika", "Dostępność"],
-    "tags": ["UX", "projektowanie stron", "czytelnosc", "typografia", "dostepnosc", "layout"],
     "readingTime": 11,
     "datePublished": "2026-01-01",
     "seo": {
@@ -117,8 +103,6 @@
     "excerpt": "WordPress napędza ponad 40% stron na świecie, co czyni go częstym celem ataków. Wyjaśniamy, dlaczego aktualizacje są tak ważne, co się dzieje, gdy strona pozostaje nieaktualna i na co zwrócić uwagę przy utrzymaniu swojej witryny.",
     "cover": "/assets/blog/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa.webp",
     "primaryCategory": "Bezpieczeństwo",
-    "category": ["Strony"],
-    "tags": ["WordPress", "bezpieczenstwo", "aktualizacje", "strony internetowe", "wtyczki", "motywy", "hosting", "backup"],
     "readingTime": 11,
     "datePublished": "2026-01-01",
     "seo": {
@@ -133,8 +117,6 @@
     "excerpt": "Darmowa dostawa czy niższa cena produktu? To częsty dylemat w e-commerce. Porównujemy obie strategie cenowe, analizujemy badania i pokazujemy, kiedy która opcja działa lepiej dla różnych typów sklepów internetowych w Polsce.",
     "cover": "/assets/blog/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu.webp",
     "primaryCategory": "Sklepy",
-    "category": ["Psychologia"],
-    "tags": ["darmowa dostawa", "strategia cenowa", "e-commerce", "konwersja", "porzucone koszyki", "psychologia zakupów", "sklep internetowy", "ceny"],
     "readingTime": 11,
     "datePublished": "2025-12-31",
     "seo": {
@@ -149,8 +131,6 @@
     "excerpt": "Czcionki szeryfowe i bezszeryfowe różnią się wyglądem i zastosowaniem. Wyjaśniamy, skąd wzięły się te dwa style, jak wpływają na czytelność i odbiór tekstu oraz kiedy wybrać którą - w druku i na ekranie monitora komputera.",
     "cover": "/assets/blog/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych.webp",
     "primaryCategory": "Grafika",
-    "category": ["Branding", "UX"],
-    "tags": ["czcionki", "fonty", "typografia", "serif", "sans-serif", "branding", "identyfikacja wizualna", "czytelność", "druk", "strony internetowe"],
     "readingTime": 12,
     "datePublished": "2025-12-31",
     "seo": {
@@ -165,8 +145,6 @@
     "excerpt": "Paradoks wyboru to zjawisko, w którym zbyt wiele opcji prowadzi do paraliżu decyzyjnego. Wyjaśniamy, jak działa ten mechanizm, dlaczego mniej opcji może zwiększyć sprzedaż i jak projektować ofertę produktową w swoim sklepie.",
     "cover": "/assets/blog/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz.webp",
     "primaryCategory": "Psychologia",
-    "category": ["Sklepy", "UX"],
-    "tags": ["paradoks wyboru", "choice overload", "psychologia sprzedaży", "decyzje zakupowe", "UX", "konwersja", "oferta", "e-commerce"],
     "readingTime": 12,
     "datePublished": "2025-12-31",
     "seo": {
@@ -181,8 +159,6 @@
     "excerpt": "Efekt zakotwiczenia to mechanizm, w którym pierwsza cena wpływa na ocenę wszystkich kolejnych. Wyjaśniamy, jak działa zakotwiczenie, dlaczego pierwsza cena ma znaczenie i jak firmy wykorzystują ten mechanizm w codziennej praktyce.",
     "cover": "/assets/blog/efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci/efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci.webp",
     "primaryCategory": "Psychologia",
-    "category": ["Marketing", "Sklepy"],
-    "tags": ["efekt zakotwiczenia", "anchoring", "psychologia cen", "pricing", "sprzedaż", "marketing", "decyzje zakupowe", "psychologia sprzedaży"],
     "readingTime": 11,
     "datePublished": "2025-12-31",
     "seo": {
@@ -197,8 +173,6 @@
     "excerpt": "Social proof to mechanizm psychologiczny, przez który ludzie kierują się zachowaniami innych. Wyjaśniamy, jak działa, jakie są jego rodzaje i jak wykorzystać go na stronie, by zwiększyć zaufanie klientów i sprzedaż w sklepie.",
     "cover": "/assets/blog/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje.webp",
     "primaryCategory": "Psychologia",
-    "category": ["Marketing", "UX"],
-    "tags": ["social proof", "społeczny dowód słuszności", "opinie klientów", "recenzje", "psychologia", "marketing", "zaufanie", "konwersja"],
     "readingTime": 11,
     "datePublished": "2025-12-26",
     "seo": {
@@ -213,8 +187,6 @@
     "excerpt": "Mapa strony pokazuje strukturę witryny w jednym miejscu. Wyjaśniamy, czym różni się od sitemap.xml, jakie korzyści daje użytkownikom i SEO, kto z niej korzysta oraz jak powinna wyglądać poprawnie zaprojektowana mapa strony.",
     "cover": "/assets/blog/mapa-strony-dla-uzytkownikow-dlaczego-warto-ja-miec/mapa-strony-dla-uzytkownikow-dlaczego-warto-ja-miec.webp",
     "primaryCategory": "UX",
-    "category": ["SEO", "Strony"],
-    "tags": ["mapa strony", "sitemap", "nawigacja", "UX", "dostępność", "struktura strony", "linkowanie wewnętrzne", "SEO"],
     "readingTime": 10,
     "datePublished": "2025-12-26",
     "seo": {
@@ -229,8 +201,6 @@
     "excerpt": "Linkowanie wewnętrzne łączy podstrony witryny i wspiera SEO. Wyjaśniamy, jak działa, dlaczego ma znaczenie dla pozycjonowania, czym są klastry tematyczne i jak pisać anchor texty, które wspierają widoczność witryny w Google.",
     "cover": "/assets/blog/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony.webp",
     "primaryCategory": "SEO",
-    "category": ["Widoczność", "Treści"],
-    "tags": ["linkowanie wewnętrzne", "SEO", "klastry tematyczne", "anchor text", "struktura strony", "pozycjonowanie", "nawigacja", "breadcrumbs", "PageRank", "crawl budget"],
     "readingTime": 11,
     "datePublished": "2025-12-25",
     "seo": {
@@ -245,8 +215,6 @@
     "excerpt": "Kontrast kolorów decyduje o czytelności tekstu na stronie. Wyjaśniamy, czym jest kontrast, co oznaczają poziomy WCAG AA i AAA, kto korzysta z dobrego kontrastu oraz jak sprawdzić i poprawić kolory na swojej stronie internetowej.",
     "cover": "/assets/blog/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie.webp",
     "primaryCategory": "Dostępność",
-    "category": ["UX", "Grafika"],
-    "tags": ["kontrast kolorów", "WCAG", "dostępność", "czytelność", "kolory na stronie", "AA", "AAA", "accessibility", "UX", "relative luminance", "współczynnik kontrastu"],
     "readingTime": 11,
     "datePublished": "2025-12-24",
     "seo": {
@@ -261,8 +229,6 @@
     "excerpt": "Content marketing to strategia polegająca na tworzeniu wartościowych treści, które przyciągają potencjalnych klientów. Wyjaśniamy, jak działa, jakie formy może przyjąć i jak zacząć stosować go w swojej firmie lub sklepie.",
     "cover": "/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp",
     "primaryCategory": "Marketing",
-    "category": ["Treści", "SEO"],
-    "tags": ["content marketing", "marketing treści", "strategia marketingowa", "blog firmowy", "pozyskiwanie klientów", "SEO", "artykuły eksperckie"],
     "readingTime": 10,
     "datePublished": "2025-12-23",
     "seo": {
@@ -277,8 +243,6 @@
     "excerpt": "E-mail marketing to opłacalny kanał komunikacji z klientami. Wyjaśniamy, dlaczego warto go stosować, jakie rodzaje e-maili przynoszą najlepsze efekty i na co zwrócić uwagę przy planowaniu kampanii mailingowej dla małej firmy.",
     "cover": "/assets/blog/e-mail-marketing-dla-malych-firm/e-mail-marketing-dla-malych-firm.webp",
     "primaryCategory": "Marketing",
-    "category": ["Treści"],
-    "tags": ["e-mail marketing", "newsletter", "mailing", "marketing dla firm", "komunikacja z klientami", "automatyzacja marketingu", "RODO"],
     "readingTime": 10,
     "datePublished": "2025-12-23",
     "seo": {
@@ -293,8 +257,6 @@
     "excerpt": "Przed publikacją strony warto upewnić się, że wszystko działa poprawnie. Dowiesz się, co sprawdzić w zakresie treści, funkcjonalności, wydajności, SEO i kwestii prawnych przed uruchomieniem nowej witryny internetowej w sieci.",
     "cover": "/assets/blog/co-sprawdzic-przed-uruchomieniem-strony/co-sprawdzic-przed-uruchomieniem-strony.webp",
     "primaryCategory": "Strony",
-    "category": ["SEO"],
-    "tags": ["uruchomienie strony", "publikacja strony", "pre-launch", "weryfikacja strony", "meta dane", "formularze", "wydajność", "SEO techniczne", "polityka prywatności", "RODO"],
     "readingTime": 10,
     "datePublished": "2025-12-23",
     "seo": {
@@ -309,8 +271,6 @@
     "excerpt": "Grafika w mediach społecznościowych decyduje, czy ktoś zatrzyma się na poście. Dowiesz się, jak przygotować grafiki, które przyciągają uwagę, budują spójny wizerunek marki i jakie wymiary stosować na różnych platformach.",
     "cover": "/assets/blog/jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych/jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych.webp",
     "primaryCategory": "Grafika",
-    "category": ["Grafika", "Marketing"],
-    "tags": ["media społecznościowe", "grafika", "posty", "Facebook", "Instagram", "LinkedIn", "wymiary grafik", "spójność wizualna", "szablony postów"],
     "readingTime": 10,
     "datePublished": "2025-12-23",
     "seo": {
@@ -325,8 +285,6 @@
     "excerpt": "Domena to adres strony w internecie, a hosting to miejsce, gdzie strona jest przechowywana. Dowiesz się, jak wybrać obie te usługi, na co zwrócić uwagę przy zakupie i jakich błędów unikać przy ich wyborze dla swojej firmy.",
     "cover": "/assets/blog/jak-wybrac-domene-i-hosting-dla-strony-firmowej/jak-wybrac-domene-i-hosting-dla-strony-firmowej.webp",
     "primaryCategory": "Strony",
-    "category": ["Bezpieczeństwo"],
-    "tags": ["domena", "hosting", "strona firmowa", "serwer", "adres strony", "rejestracja domeny", "wybór hostingu", "strona internetowa"],
     "readingTime": 10,
     "datePublished": "2025-12-22",
     "seo": {
@@ -341,8 +299,6 @@
     "excerpt": "Strona internetowa to inwestycja, która powinna przynosić efekty. Dowiesz się, jakie wskaźniki mierzyć w Google Analytics, jak interpretować dane o ruchu i konwersjach oraz kiedy warto zlecić analizę doświadczonemu specjaliście.",
     "cover": "/assets/blog/jak-mierzyc-skutecznosc-strony-internetowej/jak-mierzyc-skutecznosc-strony-internetowej.webp",
     "primaryCategory": "SEO",
-    "category": ["Widoczność", "Strony"],
-    "tags": ["analityka", "Google Analytics", "wskaźniki strony", "ruch na stronie", "konwersje", "współczynnik odrzuceń", "czas na stronie", "mierzenie efektów"],
     "readingTime": 10,
     "datePublished": "2025-12-21",
     "seo": {
@@ -357,8 +313,6 @@
     "excerpt": "Google Moja Firma pozwala lokalnym firmom wyświetlać się w Mapach Google i wynikach wyszukiwania. Dowiesz się, jak założyć profil, jakie informacje uzupełnić i jak skutecznie zdobywać pozytywne opinie od swoich klientów.",
     "cover": "/assets/blog/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma.webp",
     "primaryCategory": "SEO",
-    "category": ["Widoczność"],
-    "tags": ["Google Moja Firma", "Google Business Profile", "lokalne SEO", "Mapy Google", "opinie klientów", "wizytówka Google", "pozycjonowanie lokalne", "widoczność w Google"],
     "readingTime": 10,
     "datePublished": "2025-12-21",
     "seo": {
@@ -373,8 +327,6 @@
     "excerpt": "Responsywność strony to jej zdolność do dopasowania się do różnych rozmiarów ekranów. Wyjaśniamy, czym jest responsywność, jak wpływa na użytkowników i SEO oraz jak sprawdzić, czy dana strona lub witryna jest responsywna.",
     "cover": "/assets/blog/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie.webp",
     "primaryCategory": "UX",
-    "category": ["Strony", "SEO"],
-    "tags": ["responsywność", "RWD", "mobile-first", "UX", "strona mobilna", "SEO", "Google", "strona internetowa"],
     "readingTime": 10,
     "datePublished": "2025-12-21",
     "seo": {
@@ -389,8 +341,6 @@
     "excerpt": "Certyfikat SSL to podstawa bezpieczeństwa każdej strony internetowej. Dowiesz się, czym jest SSL, jak działa szyfrowanie, jak wpływa na zaufanie użytkowników i SEO oraz jakie są rodzaje certyfikatów dostępnych na rynku w Polsce.",
     "cover": "/assets/blog/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje.webp",
     "primaryCategory": "Bezpieczeństwo",
-    "category": ["SEO", "Strony"],
-    "tags": ["SSL", "certyfikat SSL", "HTTPS", "bezpieczeństwo strony", "szyfrowanie", "SEO", "zaufanie użytkowników", "strona internetowa"],
     "readingTime": 10,
     "datePublished": "2025-12-21",
     "seo": {
@@ -405,8 +355,6 @@
     "excerpt": "Meta title i description to krótkie teksty w wynikach wyszukiwania Google. Dowiesz się, czym są, dlaczego mają znaczenie dla SEO, jak je napisać i jakich błędów unikać, żeby zwiększyć klikalność strony w wynikach wyszukiwarki.",
     "cover": "/assets/blog/meta-title-i-description-jak-je-napisac/meta-title-i-description-jak-je-napisac.webp",
     "primaryCategory": "SEO",
-    "category": ["Treści", "Strony", "Widoczność"],
-    "tags": ["meta title", "meta description", "SEO", "wyniki wyszukiwania", "Google", "klikalność", "CTR", "optymalizacja"],
     "readingTime": 10,
     "datePublished": "2025-12-21",
     "seo": {
@@ -421,8 +369,6 @@
     "excerpt": "Wizytówki, ulotki, katalogi, teczki - które materiały drukowane przydadzą się firmie? Znajdziesz tu wskazówki, od czego zacząć, jak zaplanować spójny zestaw i jak jakość papieru wpływa na wizerunek Twojej marki w praktyce.",
     "cover": "/assets/blog/materialy-drukowane-dla-firmy-ktore-zamowic/materialy-drukowane-dla-firmy-ktore-zamowic.webp",
     "primaryCategory": "Druk",
-    "category": ["Branding", "Grafika"],
-    "tags": ["materiały drukowane", "wizytówki", "ulotki", "katalogi", "teczki ofertowe", "papier firmowy", "identyfikacja wizualna", "branding"],
     "readingTime": 9,
     "datePublished": "2025-12-21",
     "seo": {
@@ -437,8 +383,6 @@
     "excerpt": "Kody QR łączą materiały drukowane z treściami online. Znajdziesz tu konkretne wskazówki: gdzie kod QR działa najlepiej, czego unikać przy projektowaniu, jak wygenerować kod i jak testować go przed drukiem reklamowych materiałów.",
     "cover": "/assets/blog/kody-qr-w-materialach-reklamowych/kody-qr-w-materialach-reklamowych.webp",
     "primaryCategory": "Grafika",
-    "category": ["Marketing", "Druk"],
-    "tags": ["kod QR", "QR code", "materiały reklamowe", "ulotki", "wizytówki", "plakaty", "marketing offline", "druk"],
     "readingTime": 10,
     "datePublished": "2025-12-21",
     "seo": {
@@ -453,8 +397,6 @@
     "excerpt": "Praktyczny przewodnik po doborze kolorów na stronę lub sklep internetowy. Znajdziesz tu konkretne kroki, dane z badań i narzędzia online, które pomogą wybrać odpowiednią paletę kolorów wspierającą cele biznesowe Twojej firmy.",
     "cover": "/assets/blog/jak-dobrac-kolory-do-strony-internetowej/jak-dobrac-kolory-do-strony-internetowej.webp",
     "primaryCategory": "Grafika",
-    "category": ["Branding", "UX", "Strony"],
-    "tags": ["kolory na stronie", "paleta kolorów", "koło barw", "zasada 60-30-10", "kontrast kolorów", "identyfikacja wizualna", "branding", "UX design", "konwersja"],
     "readingTime": 8,
     "datePublished": "2025-12-21",
     "seo": {
@@ -469,18 +411,6 @@
     "excerpt": "Pozycjonowanie sklepu internetowego wymaga innego podejścia niż SEO strony firmowej. Zobacz, jak przygotować strukturę, treści i techniczne podstawy sklepu, żeby działania SEO przełożyły się na lepszą widoczność w Google.",
     "cover": "/assets/blog/jak-przygotowac-sklep-internetowy-do-pozycjonowania/jak-przygotowac-sklep-internetowy-do-pozycjonowania.webp",
     "primaryCategory": "SEO",
-    "category": ["Sklepy", "Widoczność", "Treści"],
-    "tags": [
-      "pozycjonowanie sklepu",
-      "seo e-commerce",
-      "sklep internetowy",
-      "opisy produktów",
-      "struktura kategorii",
-      "dane strukturalne",
-      "linkowanie wewnętrzne",
-      "blog w sklepie",
-      "seo techniczne"
-    ],
     "readingTime": 11,
     "datePublished": "2025-12-20",
     "seo": {
@@ -495,8 +425,6 @@
     "excerpt": "Stopka mailowa to wizytówka w każdym e-mailu. Wyjaśniamy, co powinna zawierać, jakich błędów unikać i jak stworzyć podpis za pomocą generatora.",
     "cover": "/assets/blog/jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy/jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy.webp",
     "primaryCategory": "Branding",
-    "category": ["Grafika"],
-    "tags": ["stopka mailowa", "podpis e-mail", "email signature", "branding", "identyfikacja wizualna", "gmail", "outlook", "profesjonalny e-mail", "komunikacja firmowa"],
     "readingTime": 10,
     "datePublished": "2025-12-19",
     "seo": {
@@ -511,8 +439,6 @@
     "excerpt": "Favicon to mała ikonka przy nazwie strony w przeglądarce. Wyjaśniamy, jakie pliki są potrzebne i jak przygotować zestaw ikon za pomocą generatora.",
     "cover": "/assets/blog/favicon-i-ikony-strony-co-przygotowac/favicon-i-ikony-strony-co-przygotowac.webp",
     "primaryCategory": "Zdjęcia",
-    "category": ["Grafika", "Strony", "SEO"],
-    "tags": ["favicon", "ikona strony", "apple-touch-icon", "pwa", "lighthouse", "manifest.json", "przeglądarki", "seo", "web Grafika"],
     "readingTime": 10,
     "datePublished": "2025-12-19",
     "seo": {
@@ -527,8 +453,6 @@
     "excerpt": "Dobrze zaplanowane FAQ skraca drogę do decyzji i pomaga przechwytywać ruch z długich zapytań. Zobacz, skąd brać pytania, jak je grupować, jak pisać odpowiedzi oraz kiedy stosować FAQ schema i linki wewnętrzne na stronie.",
     "cover": "/assets/blog/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony.webp",
     "primaryCategory": "SEO",
-    "category": ["Treści", "Strony", "Widoczność"],
-    "tags": ["faq", "faq seo", "pytania i odpowiedzi", "schema faq", "linkowanie wewnętrzne", "long tail", "copywriting", "google search console", "struktura treści", "konwersja"],
     "readingTime": 10,
     "datePublished": "2025-12-18",
     "seo": {
@@ -543,8 +467,6 @@
     "excerpt": "Kolor wpływa na to, czy klient zaufa marce i zdecyduje się na zakup. Wyjaśniamy mechanizmy psychologiczne percepcji kolorów, pokazujemy wyniki testów A/B oraz jak różne branże wykorzystują kolorystykę w codziennej praktyce.",
     "cover": "/assets/blog/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow.webp",
     "primaryCategory": "Grafika",
-    "category": ["Psychologia", "Branding"],
-    "tags": ["psychologia kolorów", "kolorystyka", "branding", "konwersja", "UX", "identyfikacja wizualna", "testy A/B", "e-commerce", "CTA", "WCAG"],
     "readingTime": 10,
     "datePublished": "2025-12-09",
     "seo": {
@@ -559,8 +481,6 @@
     "excerpt": "SEO nie działa natychmiast - ale dlaczego? Wyjaśniamy mechanizmy za czasem potrzebnym na efekty: jak Google indeksuje strony, dlaczego nowe domeny potrzebują więcej czasu i co wpływa na tempo wyników w różnych branżach w Polsce.",
     "cover": "/assets/blog/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty.webp",
     "primaryCategory": "SEO",
-    "category": ["Widoczność", "Strony"],
-    "tags": ["pozycjonowanie", "SEO", "czas SEO", "efekty SEO", "Google", "indeksowanie", "autorytet domeny", "lokalne SEO", "e-commerce SEO"],
     "readingTime": 10,
     "datePublished": "2025-12-09",
     "seo": {
@@ -575,8 +495,6 @@
     "excerpt": "Blog na stronie lokalnej firmy wpływa na to, jak Google ocenia wiarygodność firmy. Wyjaśniamy, dlaczego treści edukacyjne wzmacniają widoczność, jak blog wpływa na pozycję w Google Maps i kiedy taka inwestycja się opłaca.",
     "cover": "/assets/blog/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google.webp",
     "primaryCategory": "SEO",
-    "category": ["Treści", "Strony"],
-    "tags": ["blog firmowy", "lokalne SEO", "content marketing", "Google Maps", "widoczność w Google", "małe firmy", "treści na stronę"],
     "readingTime": 10,
     "datePublished": "2025-12-09",
     "seo": {
@@ -591,7 +509,6 @@
     "excerpt": "Zdjęcia i grafiki potrafią ważyć więcej niż cała reszta strony razem wzięta. Wyjaśniamy, jak wybrać format (JPEG, PNG, WebP, AVIF), dobrać rozmiar i kompresję, aby strona ładowała się szybko i wyglądała dobrze w wynikach Google.",
     "cover": "/assets/blog/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp.webp",
     "primaryCategory": "Zdjęcia",
-    "category": ["SEO", "Strony"],
     "readingTime": 10,
     "datePublished": "2025-11-29",
     "seo": {
@@ -606,19 +523,6 @@
     "excerpt": "Treści na stronie wpływają na pozycję w Google. Wyjaśniamy zasady SEO, strukturę nagłówków, intencję użytkownika i pokazujemy przykłady z różnych branż.",
     "cover": "/assets/blog/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google.webp",
     "primaryCategory": "SEO",
-    "category": ["Treści", "Strony"],
-    "tags": [
-      "seo copywriting",
-      "treści seo",
-      "pozycjonowanie",
-      "content marketing",
-      "pisanie tekstów",
-      "intencja użytkownika",
-      "eeat",
-      "meta description",
-      "struktura nagłówków",
-      "linkowanie wewnętrzne"
-    ],
     "readingTime": 22,
     "datePublished": "2025-10-29",
     "seo": {
@@ -633,8 +537,6 @@
     "excerpt": "Identyfikacja wizualna buduje wiarygodność, skraca decyzje zakupowe i wzmacnia rozpoznawalność marki. Zobacz, jak logo, kolorystyka i typografia wpływają na zaufanie klientów oraz co powinien zawierać profesjonalny brandbook.",
     "cover": "/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp",
     "primaryCategory": "Grafika",
-    "category": ["Branding"],
-    "tags": ["identyfikacja wizualna", "identyfikacja wizualna firmy", "logo", "kolorystyka", "typografia", "brandbook", "zaufanie klientów", "branding", "spójność wizualna"],
     "readingTime": 9,
     "datePublished": "2025-10-28",
     "seo": {
@@ -649,8 +551,6 @@
     "excerpt": "Strona nie wyświetla się w Google? Sprawdź najczęstsze błędy wpływające na indeksację: robots.txt, sitemap.xml, meta tagi noindex, szybkość ładowania i jakość treści. Kompletny przewodnik z rozwiązaniami tych problemów w witrynie.",
     "cover": "/assets/blog/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic.webp",
     "primaryCategory": "SEO",
-    "category": ["Widoczność", "Strony"],
-    "tags": ["google", "indeksacja", "google search console", "pozycjonowanie", "robot google", "widoczność strony", "sitemap", "plik robots.txt", "algorytm google", "strona internetowa"],
     "readingTime": 13,
     "datePublished": "2025-10-17",
     "seo": {

@@ -5,8 +5,6 @@
       "title": "Materiały drukowane dla firmy: które zamówić na start?",
       "excerpt": "Wizytówki, ulotki, katalogi, teczki - które materiały drukowane przydadzą się firmie? Znajdziesz tu wskazówki, od czego zacząć, jak zaplanować spójny zestaw i jak jakość papieru wpływa na wizerunek Twojej marki w praktyce.",
       "primaryCategory": "Druk",
-      "category": ["Branding", "Grafika"],
-      "tags": ["materiały drukowane", "wizytówki", "ulotki", "katalogi", "teczki ofertowe", "papier firmowy", "identyfikacja wizualna", "branding"],
       "seo": {
         "title": "Materiały drukowane dla firmy: które zamówić na start? - Arteon",
         "description": "Wizytówki, ulotki, katalogi, teczki - wyjaśniamy, które materiały drukowane są potrzebne na start firmy i jak je zaplanować.",
@@ -26,22 +24,18 @@
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335"
-        },
-        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego materiały drukowane nadal działają? Mechanizm psychologiczny</h2><p>W erze cyfrowej materiały drukowane mogą wydawać się przestarzałe. Ale badania neurobiologiczne pokazują coś zaskakującego: mózg inaczej przetwarza informacje z papieru niż z ekranu.</p><br/><p>Według badań opublikowanych w <a class='underline' href='https://www.sciencedirect.com/science/article/abs/pii/S0747563214000648' target='_blank' rel='noopener noreferrer'>Computers in Human Behavior</a>, czytanie z papieru angażuje więcej zmysłów - dotyk, zapach tuszu, ciężar materiału. To zjawisko nazywa się <span data-tooltip='Multisensory engagement to zaangażowanie wielu zmysłów jednocześnie, co prowadzi do głębszego przetwarzania informacji i lepszego zapamiętywania.'>multisensory engagement</span>. Im więcej zmysłów zaangażowanych, tym lepiej zapamiętujemy treść.</p><br/><p>Dane potwierdzają skuteczność. Według <a class='underline' href='https://www.marketingprofs.com/charts/2022/48311/direct-mail-vs-email-marketing-how-response-rates-compare' target='_blank' rel='noopener noreferrer'>MarketingProfs</a>, na 100 wysłanych ulotek pocztą średnio 4-5 osób odpowiada (dzwoni, odwiedza stronę, składa zamówienie). W przypadku e-maili marketingowych ta liczba spada do 1 osoby na 1000 wysłanych wiadomości - różnica rzędu 40-50x.</p><br/><h3 class='h5 mb-3 mt-4'>Efekt dotyku w sprzedaży</h3><p>Badania <a class='underline' href='https://www.jstor.org/stable/10.1086/655419' target='_blank' rel='noopener noreferrer'>Journal of Consumer Research</a> wykazały, że fizyczny kontakt z produktem lub materiałem marketingowym zwiększa poczucie własności i skłonność do zakupu. Wizytówka wręczona osobiście nie jest tylko nośnikiem danych kontaktowych - to fizyczny przedmiot, który klient zabiera ze sobą i który zostaje na jego biurku.</p><br/><p>Kancelaria prawna, która wręcza klientowi teczkę z ofertą na grubym papierze, sygnalizuje: jesteśmy profesjonalni, dbamy o szczegóły, możesz nam zaufać. To samo PDF-em wysłanym e-mailem tego wrażenia nie zrobi.</p>",
           "breakAfter": true
         },
         {
+          "type": "ad",
+          "slot": "9459125335"
+        },
+        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Papiery i wykończenia: co warto wiedzieć?</h2><p>Jakość materiałów drukowanych zależy nie tylko od projektu, ale też od wyboru papieru i wykończenia. Te elementy wpływają na odbiór marki - grubsza wizytówka z lakierem UV robi zupełnie inne wrażenie niż cienki kartonik z taniego papieru.</p><br/><h3 class='h5 mb-3 mt-4'>Gramatura papieru</h3><p><span data-tooltip='Gramatura to masa papieru wyrażona w gramach na metr kwadratowy (g/m²). Im wyższa gramatura, tym grubszy i sztywniejszy papier.'>Gramatura</span> określa grubość i sztywność papieru. Podstawowe zakresy:</p><br/><ul class='list-disc ml-5'><li><strong>90-120 g/m²</strong> - papier biurowy, nadaje się do papieru firmowego i wkładek do teczek</li><li><strong>170-250 g/m²</strong> - ulotki, foldery, strony katalogów</li><li><strong>300-400 g/m²</strong> - wizytówki, okładki katalogów, teczki ofertowe</li></ul><br/><h3 class='h5 mb-3 mt-4'>Rodzaje papieru</h3><ul class='list-disc ml-5'><li><strong>Kreda matowa</strong> - gładka powierzchnia bez połysku, elegancki wygląd, dobrze przyjmuje nadruk</li><li><strong>Kreda błyszcząca</strong> - intensywniejsze kolory, ale odbija światło (utrudnia czytanie)</li><li><strong>Offset</strong> - papier bez powłoki, naturalny w dotyku, dobry do pisania (np. papier firmowy)</li></ul><br/><h3 class='h5 mb-3 mt-4'>Wykończenia specjalne</h3><ul class='list-disc ml-5'><li><strong>Folia matowa/błyszcząca</strong> - chroni nadruk i nadaje elegancki wygląd</li><li><strong>Lakier UV wybiórczy</strong> - błyszcząca warstwa na wybranych elementach (np. logo), efekt premium</li><li><strong>Tłoczenie/hot stamping</strong> - wytłoczony wzór lub metaliczna folia, używane w materiałach premium</li><li><strong>Zaokrąglone rogi</strong> - delikatny akcent wyróżniający wizytówkę</li></ul><br/><p>Wykończenia specjalne podnoszą koszt, ale znacząco wpływają na odbiór marki. Warto je rozważyć przy wizytówkach i teczkach ofertowych - materiałach, które wręczasz osobiście.</p>",
           "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335"
         },
         {
           "type": "richtext",
@@ -54,13 +48,13 @@
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335"
-        },
-        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Katalog: dla kogo ma sens?</h2><p><a class='inline-link' href='/uslugi/projekty-graficzne/projekt-katalogu'>Katalog</a> to rozbudowany materiał prezentujący ofertę firmy. Może mieć od kilku do kilkudziesięciu stron.</p><br/><p><strong>Katalog sprawdza się, gdy:</strong></p><br/><ul class='list-disc ml-5'><li>Masz szeroki asortyment produktów lub usług</li><li>Działasz w branży B2B i prowadzisz dłuższe procesy sprzedażowe</li><li>Uczestniczysz w targach branżowych</li><li>Chcesz zostawić profesjonalny materiał po spotkaniu z klientem</li></ul><br/><p><strong>Co powinien zawierać katalog?</strong></p><br/><ul class='list-disc ml-5'><li>Krótkie wprowadzenie o firmie</li><li>Prezentację produktów/usług z opisami i zdjęciami</li><li>Dane kontaktowe</li><li>Opcjonalnie: cennik, referencje, case studies</li></ul><br/><p>Katalog to inwestycja - wymaga większej ilości pracy i większego budżetu niż ulotka. Warto go rozważyć, gdy masz już ustabilizowaną ofertę i potrzebujesz profesjonalnego materiału do prezentacji.</p>",
           "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335"
         },
         {
           "type": "richtext",
@@ -71,10 +65,6 @@
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Budżetowanie: ile kosztują materiały drukowane?</h2><p>Koszt materiałów drukowanych zależy od trzech czynników: projektu graficznego, nakładu i jakości wykonania (papier, wykończenia).</p><br/><h3 class='h5 mb-3 mt-4'>Orientacyjne koszty druku (bez projektu)</h3><ul class='list-disc ml-5'><li><strong>Wizytówki (100 szt.)</strong> - 50-150 zł (zależnie od papieru i wykończeń)</li><li><strong>Ulotki A5 (500 szt.)</strong> - 150-300 zł</li><li><strong>Foldery A4 składane (250 szt.)</strong> - 300-600 zł</li><li><strong>Katalog 16 stron A4 (100 szt.)</strong> - 800-2000 zł</li><li><strong>Teczka ofertowa A4 (50 szt.)</strong> - 400-1000 zł</li></ul><br/><h3 class='h5 mb-3 mt-4'>Co wpływa na cenę?</h3><ul class='list-disc ml-5'><li><strong>Nakład</strong> - im więcej sztuk, tym niższa cena jednostkowa (efekt skali)</li><li><strong>Gramatura i rodzaj papieru</strong> - kreda 350g kosztuje więcej niż 170g</li><li><strong>Wykończenia</strong> - folia, lakier UV, tłoczenie znacząco podnoszą cenę</li><li><strong>Format</strong> - niestandardowe wymiary mogą być droższe</li></ul><br/><h3 class='h5 mb-3 mt-4'>Jak zaplanować budżet?</h3><p>Zacznij od minimum (wizytówki), a kolejne materiały dodawaj w miarę potrzeb. Lepiej mieć mniej materiałów w dobrej jakości niż dużo słabych. Pamiętaj też o koszcie projektu graficznego - dobrze zaprojektowany materiał działa skuteczniej.</p>",
           "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335"
         },
         {
           "type": "richtext",

@@ -8,8 +8,7 @@ const articles = getAllArticlePreviews();
 export default function ArticlesList({ filterCategorySlug }: { filterCategorySlug?: string }) {
   const items = filterCategorySlug
     ? articles.filter((a) => {
-        const allCats = [a.primaryCategory, ...(a.category || [])].filter(Boolean) as string[];
-        return allCats.some((c) => slugify(c) === filterCategorySlug);
+        return a.primaryCategory && slugify(a.primaryCategory) === filterCategorySlug;
       })
     : articles;
 

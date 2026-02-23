@@ -40,8 +40,7 @@ export default function ArticlesCarousel({ articles, max = 10, title = 'Edukacja
       list = slugsArray.map((s) => map.get(s)).filter(Boolean) as ArticlePreview[];
     } else if (categorySlug) {
       list = sourceArticles.filter((a) => {
-        const allCats = [a.primaryCategory, ...(a.category || [])].filter(Boolean) as string[];
-        return allCats.some((c) => slugify(c) === categorySlug);
+        return a.primaryCategory && slugify(a.primaryCategory) === categorySlug;
       });
     } else {
       list = sourceArticles;

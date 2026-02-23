@@ -5,8 +5,6 @@
       "title": "Czym jest strona błędu 404 i dlaczego warto ją zaprojektować?",
       "excerpt": "Błąd 404 pojawia się, gdy strona nie istnieje. Wyjaśniamy, skąd biorą się takie błędy, jak je znaleźć w Google Search Console, kiedy wymagają reakcji i co umieścić na stronie błędu, by użytkownicy mogli wrócić do treści.",
       "primaryCategory": "Strony",
-      "category": ["UX"],
-      "tags": ["błąd 404", "strona błędu", "UX", "nawigacja", "SEO", "użyteczność"],
       "seo": {
         "title": "Czym jest strona błędu 404 i dlaczego warto ją zaprojektować? - Arteon",
         "description": "Błąd 404 oznacza, że strona nie istnieje. Wyjaśniamy, skąd się bierze, jak go znaleźć w Google Search Console i co umieścić na stronie błędu.",
@@ -26,22 +24,18 @@
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335"
-        },
-        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Skąd biorą się błędy 404?</h2><p>Błąd 404 pojawia się w kilku sytuacjach. Żeby zrozumieć, czy wymaga reakcji, trzeba najpierw wiedzieć, skąd się wziął.</p><br/><h3 class='h5 mb-3 mt-4'>Strona została usunięta lub przeniesiona</h3><p>Gdy usuwasz stronę ze swojej witryny lub zmieniasz jej adres, wszystkie linki prowadzące do starego adresu przestają działać. Dotyczy to <a class='inline-link' href='/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony'>linków wewnętrznych</a>, linków z zewnętrznych serwisów, zakładek użytkowników i wyników wyszukiwania Google.</p><br/><p>Rozwiązanie: przekierowanie 301. To ustawienie, które mówi przeglądarce i Google: ta strona jest teraz pod innym adresem. Przeglądarka automatycznie przenosi użytkownika w nowe miejsce.</p><br/><h3 class='h5 mb-3 mt-4'>Literówka w adresie</h3><p>Użytkownik może błędnie wpisać adres w pasku przeglądarki. Może też kliknąć link, który ktoś źle skopiował. W obu przypadkach żądanie trafia pod adres, który nigdy nie istniał.</p><br/><h3 class='h5 mb-3 mt-4'>Zmiana struktury witryny</h3><p>Przy redesignie, zmianie systemu (np. z WordPress na inny CMS) lub reorganizacji treści często zmieniają się adresy URL. Jeśli nowa struktura nie uwzględnia przekierowań ze starych adresów, wszystkie historyczne linki przestają działać. </p><br/><h3 class='h5 mb-3 mt-4'>Wycofany produkt w sklepie</h3><p>W sklepach internetowych usunięcie produktu z katalogu powoduje błąd 404 na jego stronie. Jeśli produkt był linkowany z innych stron, kampanii reklamowych lub wyników wyszukiwania, użytkownicy trafią na błąd. </p>",
           "breakAfter": true
         },
         {
+          "type": "ad",
+          "slot": "9459125335"
+        },
+        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak znaleźć błędy 404 w Google Search Console?</h2><p>Google Search Console to darmowe narzędzie, które pokazuje, jakie błędy 404 wykrywa Google na danej witrynie. Poniżej dokładna instrukcja, jak je znaleźć.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 1: Otwórz raport Strony</h3><p>W <a class='underline' href='https://search.google.com/search-console' target='_blank' rel='noopener noreferrer'>Google Search Console</a> wybierz swoją witrynę. W menu po lewej stronie kliknij Indeksowanie, potem Strony.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 2: Znajdź błędy 404</h3><p>Na wykresie zobaczysz podział stron na kategorie. Szukaj pozycji Nie znaleziono (404) w sekcji Dlaczego strony nie są indeksowane. Kliknij tę pozycję, żeby zobaczyć listę konkretnych adresów.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 3: Sprawdź szczegóły każdego błędu</h3><p>Dla każdego adresu możesz kliknąć ikonę lupy (Sprawdź adres URL). Zobaczysz:</p><br/><ul class='list-disc ml-5'><li><strong>Kiedy Google ostatnio próbował otworzyć stronę</strong> - data ostatniego skanowania</li><li><strong>Skąd Google znalazł link</strong> - czy z innej strony danej witryny, z zewnętrznego serwisu, czy z sitemapy</li></ul><br/><p>Te informacje pomagają ustalić, czy błąd wymaga reakcji. </p>",
           "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335"
         },
         {
           "type": "richtext",
@@ -66,10 +60,6 @@
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Przykład: jak obsłużyć usunięty produkt w sklepie?</h2><p>Poniżej pokazujemy przykład hipotetyczny, który ilustruje różne podejścia do obsługi usuniętego produktu w <a class='inline-link' href='/uslugi/sklepy-internetowe'>sklepie internetowym</a>.</p><br/><h3 class='h5 mb-3 mt-4'>Sytuacja</h3><p>Sklep z elektroniką wycofuje ze sprzedaży model słuchawek Sony WH-1000XM4. Strona produktu miała linki z kilku blogów technologicznych i generowała ruch z Google.</p><br/><h3 class='h5 mb-3 mt-4'>Opcja 1: Przekierowanie 301 na następcę</h3><p>Jeśli w ofercie jest nowszy model (np. WH-1000XM5), przekierowanie 301 ze starego adresu na nowy przenosi część wartości SEO. Użytkownicy szukający starego modelu trafiają na aktualny produkt.</p><br/><h3 class='h5 mb-3 mt-4'>Opcja 2: Przekierowanie 301 na kategorię</h3><p>Jeśli nie ma bezpośredniego następcy, przekierowanie na stronę kategorii (np. /sluchawki-bezprzewodowe) daje użytkownikowi możliwość wyboru innego produktu.</p><br/><h3 class='h5 mb-3 mt-4'>Opcja 3: Kod 410 Gone</h3><p>Jeśli produkt nie wróci do sprzedaży i strona nie miała wartościowych linków, kod 410 informuje Google, że strona została celowo usunięta. Google szybciej usuwa ją z indeksu.</p><br/><h3 class='h5 mb-3 mt-4'>Opcja 4: Strona z informacją</h3><p>Strona z kodem 200, która informuje o wycofaniu produktu i proponuje alternatywy. Uwaga: jeśli treść jest minimalna (tylko komunikat Produkt wycofany), Google może oznaczyć ją jako soft 404.</p>",
           "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335"
         },
         {
           "type": "richtext",
@@ -124,8 +114,6 @@
       "title": "Co sprawdzić przed uruchomieniem nowej strony internetowej?",
       "excerpt": "Przed publikacją strony warto upewnić się, że wszystko działa poprawnie. Dowiesz się, co sprawdzić w zakresie treści, funkcjonalności, wydajności, SEO i kwestii prawnych przed uruchomieniem nowej witryny internetowej w sieci.",
       "primaryCategory": "Strony",
-      "category": ["SEO"],
-      "tags": ["uruchomienie strony", "publikacja strony", "pre-launch", "weryfikacja strony", "meta dane", "formularze", "wydajność", "SEO techniczne", "polityka prywatności", "RODO"],
       "seo": {
         "title": "Co sprawdzić przed uruchomieniem nowej strony internetowej? - Arteon",
         "description": "Przed publikacją strony warto sprawdzić treści, funkcjonalność, wydajność, SEO i kwestie prawne. Lista kontrolna.",
@@ -145,22 +133,18 @@
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335"
-        },
-        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego warto sprawdzić stronę przed publikacją?</h2><p>Publikacja strony z błędami może kosztować więcej niż kilka godzin poświęconych na weryfikację. Niedziałający formularz kontaktowy oznacza utracone zapytania od potencjalnych klientów. Brakujące meta dane sprawiają, że strona gorzej prezentuje się w wynikach wyszukiwania. Wolno ładujące się zdjęcia zniechęcają użytkowników, zanim zdążą zobaczyć ofertę.</p><br/><p>Strona internetowa to często pierwszy kontakt potencjalnego klienta z firmą. Jeśli formularz nie działa, użytkownik nie wyśle zapytania. Jeśli strona ładuje się 10 sekund, większość osób zamknie kartę. Jeśli brakuje polityki prywatności, firma naraża się na kary.</p><br/><p>Sprawdzenie strony przed publikacją to inwestycja kilku godzin, która zapobiega problemom trwającym tygodnie lub miesiące.</p>",
           "breakAfter": true
         },
         {
+          "type": "ad",
+          "slot": "9459125335"
+        },
+        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Treści i meta dane</h2><p>Treści to fundament strony - to one przekazują informacje i przekonują do działania. Meta dane (title i description) decydują o tym, jak strona prezentuje się w wynikach wyszukiwania Google. Więcej o pisaniu treści pod SEO znajdziesz w artykule <a class='inline-link' href='/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google'>jak pisać treści, aby być wyżej w Google</a>.</p><br/><p><strong>Tytuły stron (meta title)</strong></p><br/><p>Każda podstrona powinna mieć unikalny tytuł, który opisuje jej zawartość. Tytuł pojawia się w karcie przeglądarki i w wynikach wyszukiwania. Optymalna długość to 50-60 znaków - dłuższe tytuły mogą zostać ucięte. Do sprawdzenia długości tytułów i opisów możesz użyć naszego <a class='inline-link' href='/narzedzia/licznik-dlugosci-meta-title-i-description'>licznika meta title i description</a>.</p><br/><p>Przykład: zamiast generycznego tytułu typu Strona główna, lepszy będzie Kancelaria Prawna Nowak - Prawo Cywilne i Rodzinne | Kraków.</p><br/><p><strong>Opisy stron (meta description)</strong></p><br/><p>Opis pojawia się pod tytułem w wynikach wyszukiwania. Powinien zachęcać do kliknięcia i zawierać najważniejsze informacje o stronie. Optymalna długość to 150-160 znaków.</p><br/><p>Opis nie wpływa bezpośrednio na pozycję w Google, ale wpływa na to, czy użytkownik kliknie w wynik. Dobrze napisany opis zwiększa liczbę wejść na stronę.</p><br/><p><strong>Treści na stronach</strong></p><br/><p>Przeczytaj wszystkie teksty jeszcze raz. Sprawdź, czy nie ma literówek, błędów interpunkcyjnych i niezrozumiałych sformułowań. Upewnij się, że dane kontaktowe (adres, telefon, e-mail) są aktualne i poprawne. Błędny numer telefonu na stronie kontaktowej to stracone połączenia od klientów.</p><br/><p><strong>Nagłówki</strong></p><br/><p>Struktura nagłówków (H1, H2, H3) powinna być logiczna. Każda strona powinna mieć dokładnie jeden nagłówek H1, który opisuje główny temat. Nagłówki niższego poziomu (H2, H3) organizują treść w sekcje.</p>",
           "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335"
         },
         {
           "type": "richtext",
@@ -187,13 +171,13 @@
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335"
-        },
-        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dostępność i doświadczenie użytkownika</h2><p>Dostępność (accessibility) to zapewnienie, że strona jest użyteczna dla jak najszerszego grona odbiorców - w tym osób z niepełnosprawnościami wzroku, słuchu czy ruchu.</p><br/><p><strong>Kontrast kolorów</strong></p><br/><p>Tekst powinien być czytelny na tle, na którym się znajduje. Standard WCAG zaleca współczynnik kontrastu minimum 4,5:1 dla zwykłego tekstu i 3:1 dla dużego tekstu. Jasny tekst na jasnym tle lub ciemny na ciemnym to częsty problem, który łatwo przeoczyć. Do sprawdzenia kontrastu możesz użyć naszego <a class='inline-link' href='/narzedzia/kontrast-i-czytelnosc-kolorow'>testera kontrastu kolorów WCAG</a>. Więcej o znaczeniu kontrastu wyjaśniamy w artykule <a class='inline-link' href='/edukacja/grafika/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie'>dlaczego kontrast kolorów na stronie ma znaczenie</a>.</p><br/><p><strong>Teksty alternatywne dla zdjęć (atrybut alt)</strong></p><br/><p>Każde zdjęcie na stronie powinno mieć opis alternatywny (atrybut alt). Ten tekst jest odczytywany przez czytniki ekranowe używane przez osoby niewidome i wyświetlany, gdy zdjęcie nie może się załadować. Opis powinien opisywać zawartość zdjęcia, a nie powtarzać nazwy pliku.</p><br/><p><strong>Nawigacja klawiaturą</strong></p><br/><p>Sprawdź, czy można poruszać się po stronie używając klawiatury (klawisz Tab). Wszystkie interaktywne elementy - linki, przyciski, pola formularzy - powinny być dostępne i widoczne przy nawigacji klawiaturą. To ważne dla osób, które nie mogą używać myszy.</p><br/><p><strong>Czytelność treści</strong></p><br/><p>Rozmiar czcionki powinien wynosić minimum 16 pikseli dla tekstu podstawowego. Akapity nie powinny być zbyt szerokie - optymalna długość linii to 50-75 znaków. Odstępy między wierszami (line-height) powinny wynosić przynajmniej 1,5 wartości rozmiaru czcionki. Więcej o wpływie <a class='inline-link' href='/edukacja/ux/dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc'>pustej przestrzeni na czytelność strony</a> wyjaśniamy w osobnym artykule.</p><br/><p><strong>Favicon</strong></p><br/><p>Favicon to mała ikonka wyświetlana na karcie przeglądarki obok tytułu strony. Jej brak sprawia, że strona wygląda niedokończenie. Favicon powinien być czytelny w małym rozmiarze (16x16 i 32x32 pikseli). Jeśli potrzebujesz stworzyć favicon, skorzystaj z naszego <a class='inline-link' href='/narzedzia/darmowy-generator-favicon-ico'>generatora favicon</a>. Więcej o faviconie i jego roli wyjaśniamy w artykule <a class='inline-link' href='/edukacja/grafika/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie'>czym jest favicon i jak go przygotować</a>.</p>",
           "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335"
         },
         {
           "type": "richtext",
@@ -244,8 +228,6 @@
       "title": "Jak wybrać domenę i hosting dla strony firmowej?",
       "excerpt": "Domena to adres strony w internecie, a hosting to miejsce, gdzie strona jest przechowywana. Dowiesz się, jak wybrać obie te usługi, na co zwrócić uwagę przy zakupie i jakich błędów unikać przy ich wyborze dla swojej firmy.",
       "primaryCategory": "Strony",
-      "category": ["Bezpieczeństwo"],
-      "tags": ["domena", "hosting", "strona firmowa", "serwer", "adres strony", "rejestracja domeny", "wybór hostingu", "strona internetowa"],
       "seo": {
         "title": "Jak wybrać domenę i hosting dla strony firmowej? - Arteon",
         "description": "Domena i hosting to podstawa każdej strony firmowej. Wyjaśniamy, jak je wybrać i na co zwrócić uwagę przed zakupem.",
@@ -265,22 +247,18 @@
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335"
-        },
-        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Czym jest domena i hosting?</h2><p><strong>Domena</strong> to adres strony internetowej - ciąg znaków, który wpisujesz w przeglądarkę, żeby wejść na stronę. Przykłady: google.pl, allegro.pl, mojafirma.com. Domena składa się z nazwy (np. mojafirma) i rozszerzenia (np. .pl, .com, .eu).</p><br/><p>Domenę kupujesz (a właściwie wynajmujesz) na określony czas - zwykle na rok lub dłużej. Po tym czasie musisz ją odnowić, inaczej ktoś inny może ją zarejestrować.</p><br/><p><strong>Hosting</strong> to usługa, która zapewnia miejsce na serwerze, gdzie przechowywane są pliki strony - teksty, zdjęcia, kod. Kiedy ktoś wpisuje adres strony w przeglądarkę, serwer hostingowy wysyła mu te pliki, a przeglądarka wyświetla stronę.</p><br/><p>Można to porównać do adresu i budynku. Domena to adres (ul. Główna 10), a hosting to budynek, w którym mieści się firma. Klient zna adres i wie, dokąd przyjść - ale potrzebuje też miejsca, gdzie faktycznie coś znajdzie.</p>",
           "breakAfter": true
         },
         {
+          "type": "ad",
+          "slot": "9459125335"
+        },
+        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak wybrać dobrą domenę dla firmy?</h2><p>Domena to pierwszy kontakt klienta z firmą w internecie. Powinna być łatwa do zapamiętania, prosta do wpisania i powiązana z nazwą firmy lub branżą.</p><br/><p><strong>Krótka i prosta</strong></p><br/><p>Im krótsza domena, tym łatwiej ją zapamiętać i wpisać bez błędów. Unikaj długich nazw z wieloma wyrazami, myślnikami czy cyframi. Zamiast najlepsza-pizzeria-w-krakowie-2024.pl lepiej pizzeria-krakow.pl lub nawet samo pizzeriakrakow.pl.</p><br/><p><strong>Zgodna z nazwą firmy</strong></p><br/><p>Jeśli firma ma rozpoznawalną nazwę, domena powinna ją odzwierciedlać. Klienci szukający Kancelaria Nowak będą wpisywać kancelarianowak.pl, a nie prawnik-z-krakowa.pl. Spójność między nazwą firmy a domeną buduje zaufanie.</p><br/><p><strong>Odpowiednie rozszerzenie</strong></p><br/><p>Dla polskich firm naturalnym wyborem jest .pl - klienci kojarzą je z lokalnymi usługami. Rozszerzenie .com sprawdza się, gdy firma działa międzynarodowo lub gdy .pl jest już zajęte. Istnieją też rozszerzenia branżowe (.shop, .law, .restaurant), ale są mniej rozpoznawalne i mogą kosztować więcej.</p><br/><p><strong>Bez polskich znaków</strong></p><br/><p>Technicznie możliwe jest zarejestrowanie domeny z polskimi znakami (np. żółć.pl), ale w praktyce lepiej ich unikać. Polskie znaki w domenie są konwertowane na tzw. punycode - specjalny format zrozumiały dla serwerów DNS. W praktyce wygląda to tak:</p><br/><ul class='list-disc ml-5'><li>Domena <strong>żółć.pl</strong> zamienia się w <strong>xn--kda4b0koi.pl</strong></li><li>Domena <strong>łódź.pl</strong> zamienia się w <strong>xn--d1a0d.pl</strong></li><li>Domena <strong>kraków.pl</strong> zamienia się w <strong>xn--krakw-3ta.pl</strong></li></ul><br/><p>Taki adres może pojawić się w linkach, e-mailach czy systemach analitycznych. Wygląda nieczytelnie i może budzić nieufność - niektórzy użytkownicy mogą pomyśleć, że to spam lub podejrzana strona. Dodatkowo nie każdy system poprawnie obsługuje polskie znaki, co może powodować problemy z przekierowaniami, certyfikatami SSL czy integracjami z innymi usługami.</p><br/><p><strong>Sprawdź dostępność</strong></p><br/><p>Zanim zdecydujesz się na nazwę, sprawdź, czy domena jest wolna. Możesz to zrobić na stronie dowolnego rejestratora domen (np. home.pl, OVH, nazwa.pl). Jeśli wybrana nazwa jest zajęta, zastanów się nad innym rozszerzeniem lub lekką modyfikacją nazwy.</p>",
           "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335"
         },
         {
           "type": "richtext",

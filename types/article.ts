@@ -15,8 +15,6 @@ export type Article = {
   excerpt?: string;
   cover?: string;
   primaryCategory?: string;
-  category?: string[];
-  tags?: string[];
   author?: { name: string; url?: string };
   readingTime?: number;
   datePublished?: string;
@@ -84,4 +82,4 @@ export type Article = {
   cta?: ProjectCTA;
 };
 
-export type ArticlePreview = Pick<Article, 'slug' | 'title' | 'excerpt' | 'cover' | 'primaryCategory' | 'category' | 'tags' | 'readingTime' | 'datePublished' | 'seo'>;
+export type ArticlePreview = Pick<Article, 'slug' | 'title' | 'excerpt' | 'cover' | 'primaryCategory' | 'readingTime' | 'datePublished' | 'seo'>;

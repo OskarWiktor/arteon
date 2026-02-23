@@ -74,6 +74,9 @@ export const EDUCATION_REDIRECTS: Record<string, string> = {
   '/edukacja/grafika/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych': '/edukacja/grafika/czcionki-szeryfowe-vs-bezszeryfowe',
   '/edukacja/psychologia/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje': '/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci',
   '/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty': '/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony',
+  // Redirects for removed secondary categories to main education page (2026-02-23)
+  '/edukacja/tresci': '/edukacja',
+  '/edukacja/widocznosc': '/edukacja',
 };
 
 /**

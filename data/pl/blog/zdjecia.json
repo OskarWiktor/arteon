@@ -5,8 +5,6 @@
       "title": "Favicon: co to za ikona, jak ją stworzyć i przygotować, aby działała poprawnie?",
       "excerpt": "Favicon to mała ikonka przy nazwie strony w przeglądarce. Wyjaśniamy, jakie pliki są potrzebne i jak przygotować zestaw ikon za pomocą generatora.",
       "primaryCategory": "Zdjęcia",
-      "category": ["Grafika", "Strony", "SEO"],
-      "tags": ["favicon", "ikona strony", "apple-touch-icon", "pwa", "lighthouse", "manifest.json", "przeglądarki", "seo", "web Grafika"],
       "seo": {
         "title": "Favicon: co to jest i jak ją przygotować? - Arteon",
         "description": "Favicon to ikona strony wyświetlana w przeglądarce. Wyjaśniamy, jakie pliki są potrzebne i jak przygotować zestaw ikon.",
@@ -26,22 +24,18 @@
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335"
-        },
-        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co to jest favicon i dlaczego warto go mieć?</h2><p>Favicon to mały obrazek (najczęściej 16x16 lub 32x32 pikseli), który przeglądarka wyświetla przy nazwie Twojej strony.</p><br/><p>Kiedy ktoś ma otwartych 20 zakładek w przeglądarce, to właśnie favicon pomaga szybko znaleźć Twoją stronę. Bez niego użytkownik widzi tylko generyczną ikonkę - i Twoja strona ginie w tłumie.</p><br/><h3 class='h5 mb-3 mt-4'>Gdzie wyświetla się favicon?</h3><ul class='list-disc ml-5'><li><strong>Zakładki przeglądarki</strong> - mała ikonka przy tytule strony</li><li><strong>Lista ulubionych/zakładek</strong> - pomaga szybko rozpoznać stronę</li><li><strong>Historia przeglądania</strong> - ułatwia nawigację</li><li><strong>Wyniki wyszukiwania Google</strong> - na urządzeniach mobilnych favicon pojawia się przy wyniku</li><li><strong>Ekran główny telefonu</strong> - gdy użytkownik doda stronę jako skrót</li></ul><br/><h3 class='h5 mb-3 mt-4'>Dlaczego to ważne?</h3><ul class='list-disc ml-5'><li><strong>Rozpoznawalność</strong> - użytkownik od razu wie, która zakładka to Twoja strona</li><li><strong>Profesjonalizm</strong> - strona bez favicon wygląda na niedokończoną lub amatorską</li><li><strong>Spójność z <a class='inline-link' href='/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow'>identyfikacją wizualną</a></strong> - favicon powinien być spójny z <a class='inline-link' href='/uslugi/projekty-graficzne/projekt-logo'>logo firmy</a></li><li><strong>SEO i Lighthouse</strong> - Google Lighthouse sprawdza, czy favicon jest poprawnie skonfigurowany</li><li><strong><span data-tooltip='PWA (Progressive Web App) to strona internetowa, która może działać jak aplikacja mobilna - można ją zainstalować na telefonie.'>PWA</span></strong> - jeśli chcesz, żeby użytkownicy mogli dodać Twoją stronę do ekranu głównego telefonu, potrzebujesz odpowiednich ikon</li></ul>",
           "breakAfter": true
         },
         {
+          "type": "ad",
+          "slot": "9459125335"
+        },
+        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jakie pliki są potrzebne i dlaczego jest ich tyle?</h2><p>Tu zaczyna się zamieszanie. Kiedyś wystarczył jeden plik <code>favicon.ico</code>. Dziś, żeby wszystko działało poprawnie na wszystkich urządzeniach i w każdej przeglądarce, potrzebujesz kilku plików. Dlaczego? Ponieważ różne urządzenia i systemy operacyjne mają różne wymagania dotyczące rozmiaru i formatu ikon.</p><br/><h3 class='h5 mb-3 mt-4'>Jak przeglądarka wybiera właściwy plik?</h3><p>Przeglądarka szuka ikon w określonej kolejności. Najpierw sprawdza tagi <code>&lt;link&gt;</code> w sekcji <code>&lt;head&gt;</code> HTML, gdzie możesz wskazać konkretne pliki dla różnych kontekstów. Jeśli nie znajdzie odpowiedniego tagu, szuka pliku <code>favicon.ico</code> w głównym katalogu strony. Urządzenia Apple szukają <code>apple-touch-icon.png</code>, a Android korzysta z pliku <code>manifest.json</code> (lub <code>site.webmanifest</code>).</p><br/><h3 class='h5 mb-3 mt-4'>Pliki podstawowe</h3><ul class='list-disc ml-5'><li><strong>favicon.ico</strong> - klasyczny format <span data-tooltip='Format ICO to kontener, który może zawierać wiele obrazów w różnych rozmiarach i głębiach kolorów w jednym pliku.'>ICO</span> rozpoznawany przez wszystkie przeglądarki. Może zawierać kilka rozmiarów w jednym pliku (np. 16x16 i 32x32).</li><li><strong>favicon-16x16.png</strong> - mała wersja w formacie PNG, używana w zakładkach przeglądarki.</li><li><strong>favicon-32x32.png</strong> - nieco większa wersja, używana w niektórych kontekstach (np. skróty na pulpicie Windows).</li></ul><br/><h3 class='h5 mb-3 mt-4'>Ikony dla urządzeń Apple</h3><p>Urządzenia Apple (iPhone, iPad) mają własny system ikon dla stron dodanych do ekranu głównego. Szukają pliku <code>apple-touch-icon.png</code> o rozmiarze 180x180 pikseli. Jeśli go nie znajdą, wyświetlą miniaturowy zrzut ekranu strony - co wygląda nieprofesjonalnie.</p><br/><h3 class='h5 mb-3 mt-4'>Ikony dla Android i PWA</h3><p>Android korzysta z pliku <code>site.webmanifest</code> (lub <code>manifest.json</code>), który zawiera informacje o ikonie w różnych rozmiarach (192x192 i 512x512 pikseli). Ten sam plik jest wymagany dla <span data-tooltip='PWA (Progressive Web App) to strona internetowa, która może działać jak aplikacja mobilna - można ją zainstalować na telefonie.'>Progressive Web Apps</span>.</p><br/><p>Brzmi skomplikowanie? Spokojnie - nasz <a class='inline-link' href='/narzedzia/darmowy-generator-favicon-ico'>generator favicon</a> przygotuje wszystkie te pliki automatycznie z jednego obrazka źródłowego.</p>",
           "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335"
         },
         {
           "type": "richtext",
@@ -54,22 +48,18 @@
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335"
-        },
-        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Instrukcja: jak stworzyć favicon w generatorze Arteon</h2><p>Nasz <a class='inline-link' href='/narzedzia/darmowy-generator-favicon-ico'>darmowy generator favicon</a> działa w przeglądarce. Nie musisz niczego instalować ani zakładać konta.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 1: Otwórz generator</h3><p>Wejdź na stronę <a class='inline-link' href='/narzedzia/darmowy-generator-favicon-ico'>Generator favicon</a>.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 2: Wrzuć swój obrazek</h3><p>Kliknij w obszar do przesyłania pliku i wybierz obrazek ze swojego komputera. Najlepiej sprawdza się kwadratowy obrazek o rozmiarze co najmniej 512x512 pikseli. Może to być Twoje logo lub uproszczona jego wersja.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 3: Zobacz podgląd</h3><p>Generator pokaże Ci, jak favicon będzie wyglądał w różnych rozmiarach. Jeśli coś jest nieczytelne - wróć do poprzedniego kroku i użyj prostszej grafiki.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 4: Pobierz paczkę</h3><p>Kliknij przycisk Pobierz. Dostaniesz plik ZIP ze wszystkimi potrzebnymi plikami: favicon.ico, favicon-16x16.png, favicon-32x32.png, apple-touch-icon.png, android-chrome-192x192.png, android-chrome-512x512.png i site.webmanifest.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 5: Wgraj pliki na serwer</h3><p>Rozpakuj ZIP i wgraj pliki do głównego folderu swojej strony (tam, gdzie jest index.html). Większość hostingów pozwala to zrobić przez panel administracyjny.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 6: Dodaj tagi do HTML</h3><p>W sekcji <code>&lt;head&gt;</code> swojej strony dodaj odpowiednie tagi (generator poda Ci gotowy kod do skopiowania). Jeśli używasz WordPressa lub innego CMSa, poszukaj opcji Favicon lub Site Icon w ustawieniach.</p>",
           "breakAfter": true
         },
         {
+          "type": "ad",
+          "slot": "9459125335"
+        },
+        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak sprawdzić, czy favicon działa?</h2><p>Po wgraniu plików warto sprawdzić, czy wszystko jest w porządku:</p><br/><ul class='list-disc ml-5'><li><strong>Otwórz stronę w przeglądarce</strong> - zobacz, czy favicon pojawia się w zakładce. Czasem trzeba wyczyścić cache (Ctrl+F5).</li><li><strong>Użyj Lighthouse</strong> - w Chrome DevTools (F12) przejdź do zakładki Lighthouse i uruchom audyt. Sprawdź, czy nie ma błędów związanych z favicon.</li><li><strong>Sprawdź na telefonie</strong> - dodaj stronę do ekranu głównego na iPhone i Androidzie. Czy wyświetla się ładna ikonka?</li></ul>",
           "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335"
         },
         {
           "type": "richtext",
@@ -141,7 +131,6 @@
       "title": "Jak zoptymalizować zdjęcia na stronę WWW, aby była szybsza - rozmiary, formaty i WebP",
       "excerpt": "Zdjęcia i grafiki potrafią ważyć więcej niż cała reszta strony razem wzięta. Wyjaśniamy, jak wybrać format (JPEG, PNG, WebP, AVIF), dobrać rozmiar i kompresję, aby strona ładowała się szybko i wyglądała dobrze w wynikach Google.",
       "primaryCategory": "Zdjęcia",
-      "category": ["SEO", "Strony"],
       "seo": {
         "title": "Optymalizacja zdjęć na stronę WWW: formaty i WebP - Arteon",
         "description": "Optymalizacja zdjęć przyspiesza stronę i poprawia ocenę Google. Wyjaśniamy formaty, rozmiary i konwersję do WebP.",
@@ -161,21 +150,17 @@
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335"
-        },
-        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego optymalizacja zdjęć ma tak duży wpływ na szybkość strony i SEO?</h2><p>Według dokumentacji Google, obrazy są jedną z najczęstszych przyczyn wolnego ładowania strony - szczególnie na urządzeniach mobilnych (zobacz wskazówki w <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://pagespeed.web.dev/'>PageSpeed Insights</a> oraz dokumentację <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://web.dev/articles/image-optimization'>„Image Optimization” w Google Developers</a> ). Lekkie grafiki oznaczają:</p><br/><ul class='list-disc ml-5'><li>krótszy czas ładowania strony,</li><li>lepsze wskaźniki Core Web Vitals (LCP, INP, CLS),</li><li>dłuższy czas spędzony na stronie przez użytkownika,</li><li>pośrednio lepszy wynik pozycjonowania strony.</li></ul><br/><p><strong>Co to jest LCP, CLS i INP?</strong> LCP (Largest Contentful Paint) mówi, jak szybko wczytuje się największy element na stronie (często jest to właśnie zdjęcie). CLS (Cumulative Layout Shift) to „skakanie” układu podczas ładowania. INP (Interaction to Next Paint) pokazuje, czy strona szybko reaguje na kliknięcia.</p><br/><p>Algorytm wyszukiwarki nie patrzy tylko na słowa kluczowe. Bierze pod uwagę również doświadczenie użytkownika: czy strona ładuje się szybko, czy obrazy nie skaczą po ekranie, czy na telefonie wszystko jest czytelne. Odpowiednia optymalizacja zdjęć to jeden z najprostszych sposobów, aby wpłynąć na szybkość ładowania bez przebudowy całego serwisu.</p>",
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jakie formaty zdjęć na stronę WWW wybrać? JPEG, PNG, SVG i WebP</h2><p>Zanim zaczniesz optymalizować zdjęcia, warto zrozumieć, czym różnią się najpopularniejsze formaty plików graficznych.</p>"
-        },
-        {
           "type": "ad",
           "slot": "9459125335"
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jakie formaty zdjęć na stronę WWW wybrać? JPEG, PNG, SVG i WebP</h2><p>Zanim zaczniesz optymalizować zdjęcia, warto zrozumieć, czym różnią się najpopularniejsze formaty plików graficznych.</p>"
         },
         {
           "type": "richtext",
@@ -186,10 +171,6 @@
           "html": "<h3 class='h5 mb-3 mt-4'>PNG - gdy ważna jest przejrzystość i ostre krawędzie</h3><p>Format PNG najlepiej sprawdza się tam, gdzie liczy się ostrość i przezroczystość:</p><br/><ul class='list-disc ml-5'><li>logotypy na przezroczystym tle,</li><li>ikony, elementy UI, diagramy, wykresy.</li></ul><br/><p>PNG stosuje kompresję bezstratną, więc zachowuje pełną jakość grafiki, ale rozmiar pliku potrafi być dużo większy niż przy JPEG. Jeśli używasz PNG tylko do zdjęć, prawdopodobnie niepotrzebnie obciążasz serwer.</p>"
         },
         {
-          "type": "ad",
-          "slot": "9459125335"
-        },
-        {
           "type": "richtext",
           "html": "<h3 class='h5 mb-3 mt-4'>SVG - grafiki wektorowe, które skalują się bez utraty jakości</h3><p>SVG to format wektorowy. Nie przechowuje pikseli, tylko zestaw komend opisujących kształty. Sprawdza się najlepiej w:</p><br/><ul class='list-disc ml-5'><li>prostych ikon,</li><li>logotypów,</li><li>prostych ilustracji.</li></ul><br/><p>Zaletą SVG jest to, że grafiki wektorowych nie tracą jakości przy powiększaniu i zazwyczaj ważą bardzo mało. Warunek: plik musi być poprawnie eksportowany.</p>"
         },
@@ -197,10 +178,6 @@
           "type": "richtext",
           "html": "<h3 class='h5 mb-3 mt-4'>WebP - format nowej generacji opracowany przez Google</h3><p>WebP to nowoczesny format plików opracowany przez Google (szczegóły znajdziesz w dokumentacji <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://developers.google.com/speed/webp/docs/webp_study'>„WebP Compression Study”</a> ). Umożliwia:</p><br/><ul class='list-disc ml-5'><li>kompresję stratną i bezstratną,</li><li>obsługę przezroczystości (jak PNG),</li><li>znaczne zmniejszenie rozmiaru pliku przy zachowaniu tej samej jakości obrazu.</li></ul><br/><p>W praktyce zdjęcia w formacie WebP potrafią być nawet o 25-35% lżejsze niż ich odpowiedniki w JPEG/PNG, a czasem więcej. Dzięki temu:</p><br/><ul class='list-disc ml-5'><li>zdjęcia na Twojej stronie ładują się szybciej,</li><li>poprawia się czas ładowania całej witryny,</li><li>rośnie wynik w PageSpeed Insights i jakość Core Web Vitals.</li></ul><br/><p>Nic dziwnego, że Google wprost rekomenduje używanie formatów obrazów nowej generacji - takich jak WebP lub AVIF (dane znajdziesz w <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://developer.chrome.com/docs/lighthouse/overview/'>raporcie Lighthouse</a> i wytycznych <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://web.dev/articles/serve-images-webp'>„Serve images in next-gen formats”</a> ).</p><br/><p>Jeśli masz już zdjęcia w formacie JPG lub PNG i chcesz szybko sprawdzić, ile możesz zyskać, możesz od razu przekonwertować je do WebP. Skorzystaj z darmowego narzędzia:</p><br/><p><a class='inline-link' href='/narzedzia/jpg-png-na-webp-bez-limitu'>Konwerter JPG/PNG na WebP online bez limitu</a> - dodajesz pliki, wybierasz jakość i pobierasz lżejsze obrazy gotowe do wgrania na stronę.</p>",
           "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335"
         },
         {
           "type": "richtext",
@@ -225,10 +202,6 @@
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Responsive images - srcset i lazy loading</h2><p>Nowoczesne strony wyświetlają się na różnych urządzeniach: od telefonów z ekranem 375 px do monitorów 4K. Wysyłanie tego samego obrazu 1920 px na telefon to marnotrawstwo transferu.</p><br/><h3 class='h5 mb-3 mt-4'>Atrybut srcset</h3><p><span data-tooltip='srcset to atrybut HTML, który pozwala zdefiniować kilka wersji tego samego obrazu w różnych rozmiarach. Przeglądarka wybiera najodpowiedniejszą wersję.'>Srcset</span> to atrybut HTML, który pozwala zdefiniować kilka wersji obrazu. Przeglądarka sama wybiera odpowiednią wersję na podstawie szerokości ekranu i gęstości pikseli. Dzięki temu telefon pobierze wersję 400 px zamiast 1200 px - oszczędność nawet 70% transferu.</p><br/><h3 class='h5 mb-3 mt-4'>Lazy loading</h3><p><span data-tooltip='Lazy loading to technika, w której obrazy ładują się dopiero, gdy użytkownik przewinie do nich stronę, zamiast ładować wszystkie na starcie'>Lazy loading</span> to technika opóźnionego ładowania obrazów. Zamiast pobierać wszystkie obrazy na starcie, przeglądarka ładuje je dopiero, gdy użytkownik przewinie do nich stronę.</p><br/><p>W nowoczesnym HTML wystarczy dodać atrybut <code>loading=&quot;lazy&quot;</code> do znacznika img. Lazy loading jest szczególnie ważny dla stron z wieloma obrazami (blogi, sklepy). Poprawia czas pierwszego ładowania (LCP) i zmniejsza zużycie transferu.</p><br/><p>Źródło: <a class='underline' target='_blank' rel='noopener noreferrer' href='https://web.dev/articles/browser-level-image-lazy-loading'>web.dev - Browser-level image lazy loading</a></p>",
           "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335"
         },
         {
           "type": "richtext",

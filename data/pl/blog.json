@@ -5,8 +5,6 @@
       "title": "Czym jest strona błędu 404 i dlaczego warto ją zaprojektować?",
       "excerpt": "Błąd 404 pojawia się, gdy strona nie istnieje. Wyjaśniamy, skąd biorą się takie błędy, jak je znaleźć w Google Search Console, kiedy wymagają reakcji i co umieścić na stronie błędu, by użytkownicy mogli wrócić do treści.",
       "primaryCategory": "Strony",
-      "category": ["UX"],
-      "tags": ["błąd 404", "strona błędu", "UX", "nawigacja", "SEO", "użyteczność"],
       "seo": {
         "title": "Czym jest strona błędu 404 i dlaczego warto ją zaprojektować? - Arteon",
         "description": "Błąd 404 oznacza, że strona nie istnieje. Wyjaśniamy, skąd się bierze, jak go znaleźć w Google Search Console i co umieścić na stronie błędu.",
@@ -116,8 +114,6 @@
       "title": "Czym jest kanibalizacja słów kluczowych i jak jej unikać?",
       "excerpt": "Kanibalizacja słów kluczowych występuje, gdy kilka stron w jednej witrynie konkuruje o te same frazy w Google. Wyjaśniamy, dlaczego to problem dla SEO, jak wykryć kanibalizację w Search Console i jak ją naprawić.",
       "primaryCategory": "SEO",
-      "category": ["Treści"],
-      "tags": ["SEO", "słowa kluczowe", "optymalizacja", "treści", "ranking", "widoczność"],
       "seo": {
         "title": "Czym jest kanibalizacja słów kluczowych i jak jej unikać? - Arteon",
         "description": "Kanibalizacja słów kluczowych to konkurencja między własnymi stronami o te same frazy. Wyjaśniamy, jak ją wykryć w Google Search Console i jak naprawić.",
@@ -227,8 +223,6 @@
       "title": "Co to jest regulamin sklepu internetowego i co musi zawierać?",
       "excerpt": "Regulamin sklepu internetowego określa zasady korzystania ze sklepu i zawierania umów. Wyjaśniamy, jakie elementy musi zawierać zgodnie z polskim prawem i na co zwrócić uwagę przy jego tworzeniu lub aktualizacji w sklepie.",
       "primaryCategory": "Sklepy",
-      "category": ["Bezpieczeństwo"],
-      "tags": ["regulamin", "sklep internetowy", "e-commerce", "prawo konsumenckie", "RODO", "prawa konsumenta"],
       "seo": {
         "title": "Co to jest regulamin sklepu internetowego i co musi zawierać? - Arteon",
         "description": "Regulamin sklepu internetowego musi zawierać określone elementy zgodnie z polskim prawem. Wyjaśniamy obowiązkowe zapisy i wymagania prawne dla e-commerce.",
@@ -358,8 +352,6 @@
       "title": "Co to jest newsletter i czy warto go prowadzić?",
       "excerpt": "Newsletter to regularna wiadomość e-mail wysyłana do osób, które wyraziły zgodę. Wyjaśniamy, jakie korzyści może przynieść firmie i na co zwrócić uwagę przy jego prowadzeniu oraz zbieraniu subskrybentów.",
       "primaryCategory": "Marketing",
-      "category": ["Treści"],
-      "tags": ["newsletter", "e-mail marketing", "marketing", "komunikacja", "klienci", "sprzedaz"],
       "seo": {
         "title": "Co to jest newsletter i czy warto go prowadzić? - Arteon",
         "description": "Newsletter to regularny e-mail do subskrybentów. Wyjaśniamy, jakie korzyści przynosi firmie i na co zwrócić uwagę przy jego prowadzeniu.",
@@ -479,8 +471,6 @@
       "title": "Dlaczego szybkość ładowania strony wpływa na pozycję w Google?",
       "excerpt": "Szybkość ładowania strony wpływa na pozycję w Google i doświadczenie użytkowników. Wyjaśniamy, jak działają wskaźniki Core Web Vitals, co oznaczają dla właściciela strony i dlaczego warto je regularnie monitorować w praktyce.",
       "primaryCategory": "SEO",
-      "category": ["Widoczność", "Strony"],
-      "tags": ["SEO", "szybkosc strony", "Core Web Vitals", "wydajnosc", "UX", "Google", "optymalizacja"],
       "seo": {
         "title": "Dlaczego szybkość ładowania strony wpływa na pozycję w Google? - Arteon",
         "description": "Szybkość ładowania strony wpływa na pozycję w Google. Wyjaśniamy wskaźniki Core Web Vitals (LCP, CLS, INP) i pokazujemy, na co zwrócić uwagę.",
@@ -595,8 +585,6 @@
       "title": "Czym jest ścieżka nawigacji na stronie i dlaczego warto ją mieć?",
       "excerpt": "Ścieżka nawigacji pokazuje użytkownikowi, gdzie się znajduje w strukturze witryny. Wyjaśniamy, jak działa, dlaczego ułatwia poruszanie się po stronie, jak wpływa na widoczność w Google i kiedy warto ją dodać do swojej witryny.",
       "primaryCategory": "UX",
-      "category": ["SEO", "Strony", "Dostępność"],
-      "tags": ["UX", "SEO", "nawigacja", "struktura strony", "Google", "dostepnosc"],
       "seo": {
         "title": "Czym jest ścieżka nawigacji na stronie i dlaczego warto ją mieć? - Arteon",
         "description": "Ścieżka nawigacji (breadcrumbs) ułatwia poruszanie się po stronie i może być wyświetlana w wynikach Google. Wyjaśniamy, jak działa i kiedy warto ją wdrożyć.",
@@ -697,8 +685,6 @@
       "title": "Dlaczego pusta przestrzeń na stronie zwiększa czytelność?",
       "excerpt": "Strony z odpowiednią ilością pustej przestrzeni są łatwiejsze do czytania. Wyjaśniamy, jak odstępy między elementami wpływają na odbiór treści, gdzie je stosować i jak ocenić, czy witryna ma właściwe proporcje i dobry układ.",
       "primaryCategory": "UX",
-      "category": ["Grafika", "Dostępność"],
-      "tags": ["UX", "projektowanie stron", "czytelnosc", "typografia", "dostepnosc", "layout"],
       "seo": {
         "title": "Dlaczego pusta przestrzeń na stronie zwiększa czytelność? - Arteon",
         "description": "Pusta przestrzeń na stronie wpływa na czytelność i odbiór treści. Wyjaśniamy rodzaje odstępów, gdzie je stosować i jak ocenić proporcje.",
@@ -794,8 +780,6 @@
       "title": "Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa?",
       "excerpt": "WordPress napędza ponad 40% stron na świecie, co czyni go częstym celem ataków. Wyjaśniamy, dlaczego aktualizacje są tak ważne, co się dzieje, gdy strona pozostaje nieaktualna i na co zwrócić uwagę przy utrzymaniu swojej witryny.",
       "primaryCategory": "Bezpieczeństwo",
-      "category": ["Strony"],
-      "tags": ["WordPress", "bezpieczenstwo", "aktualizacje", "strony internetowe", "wtyczki", "motywy", "hosting", "backup"],
       "seo": {
         "title": "Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa? - Arteon",
         "description": "Regularne aktualizacje WordPressa, wtyczek i motywów chronią stronę przed atakami. Wyjaśniamy mechanizmy zagrożeń i dobre praktyki utrzymania.",
@@ -896,8 +880,6 @@
       "title": "Darmowa dostawa vs niższa cena: co bardziej przekonuje do zakupu?",
       "excerpt": "Darmowa dostawa czy niższa cena produktu? To częsty dylemat w e-commerce. Porównujemy obie strategie cenowe, analizujemy badania i pokazujemy, kiedy która opcja działa lepiej dla różnych typów sklepów internetowych w Polsce.",
       "primaryCategory": "Sklepy",
-      "category": ["Psychologia"],
-      "tags": ["darmowa dostawa", "strategia cenowa", "e-commerce", "konwersja", "porzucone koszyki", "psychologia zakupów", "sklep internetowy", "ceny"],
       "seo": {
         "title": "Darmowa dostawa vs niższa cena: co bardziej przekonuje do zakupu? - Arteon",
         "description": "Porównanie dwóch strategii cenowych w e-commerce: darmowa dostawa i niższa cena produktu. Wyjaśniamy, która opcja skuteczniej przekonuje klientów.",
@@ -998,8 +980,6 @@
       "title": "Czcionki szeryfowe i bezszeryfowe: czym się różnią i kiedy używać których?",
       "excerpt": "Czcionki szeryfowe i bezszeryfowe różnią się wyglądem i zastosowaniem. Wyjaśniamy, skąd wzięły się te dwa style, jak wpływają na czytelność i odbiór tekstu oraz kiedy wybrać którą - w druku i na ekranie monitora komputera.",
       "primaryCategory": "Grafika",
-      "category": ["Branding", "UX"],
-      "tags": ["czcionki", "fonty", "typografia", "serif", "sans-serif", "branding", "identyfikacja wizualna", "czytelność", "druk", "strony internetowe"],
       "seo": {
         "title": "Czcionki szeryfowe i bezszeryfowe: czym się różnią i kiedy używać których? - Arteon",
         "description": "Czcionki szeryfowe i bezszeryfowe różnią się wyglądem i zastosowaniem. Wyjaśniamy, jak wpływają na czytelność i kiedy używać których.",
@@ -1115,8 +1095,6 @@
       "title": "Czym jest paradoks wyboru i dlaczego mniej opcji może zwiększyć sprzedaż?",
       "excerpt": "Paradoks wyboru to zjawisko, w którym zbyt wiele opcji prowadzi do paraliżu decyzyjnego. Wyjaśniamy, jak działa ten mechanizm, dlaczego mniej opcji może zwiększyć sprzedaż i jak projektować ofertę produktową w swoim sklepie.",
       "primaryCategory": "Psychologia",
-      "category": ["Sklepy", "UX"],
-      "tags": ["paradoks wyboru", "choice overload", "psychologia sprzedaży", "decyzje zakupowe", "UX", "konwersja", "oferta", "e-commerce"],
       "seo": {
         "title": "Czym jest paradoks wyboru i dlaczego mniej opcji może zwiększyć sprzedaż? - Arteon",
         "description": "Paradoks wyboru pokazuje, jak zbyt wiele opcji utrudnia decyzje zakupowe. Wyjaśniamy, jak projektować ofertę ułatwiającą wybór.",
@@ -1222,8 +1200,6 @@
       "title": "Efekt zakotwiczenia: jak pierwsza cena wpływa na postrzeganie wartości?",
       "excerpt": "Efekt zakotwiczenia to mechanizm, w którym pierwsza cena wpływa na ocenę wszystkich kolejnych. Wyjaśniamy, jak działa zakotwiczenie, dlaczego pierwsza cena ma znaczenie i jak firmy wykorzystują ten mechanizm w codziennej praktyce.",
       "primaryCategory": "Psychologia",
-      "category": ["Marketing", "Sklepy"],
-      "tags": ["efekt zakotwiczenia", "anchoring", "psychologia cen", "pricing", "sprzedaż", "marketing", "decyzje zakupowe", "psychologia sprzedaży"],
       "seo": {
         "title": "Efekt zakotwiczenia: jak pierwsza cena wpływa na postrzeganie wartości? - Arteon",
         "description": "Efekt zakotwiczenia to mechanizm, w którym pierwsza cena kształtuje postrzeganie wartości. Wyjaśniamy, jak firmy wykorzystują go w sprzedaży.",
@@ -1329,8 +1305,6 @@
       "title": "Czym jest social proof i dlaczego opinie innych wpływają na nasze decyzje?",
       "excerpt": "Social proof to mechanizm psychologiczny, przez który ludzie kierują się zachowaniami innych. Wyjaśniamy, jak działa, jakie są jego rodzaje i jak wykorzystać go na stronie, by zwiększyć zaufanie klientów i sprzedaż w sklepie.",
       "primaryCategory": "Psychologia",
-      "category": ["Marketing", "UX"],
-      "tags": ["social proof", "społeczny dowód słuszności", "opinie klientów", "recenzje", "psychologia", "marketing", "zaufanie", "konwersja"],
       "seo": {
         "title": "Czym jest social proof i dlaczego opinie innych wpływają na nasze decyzje? - Arteon",
         "description": "Social proof (społeczny dowód słuszności) to mechanizm psychologiczny budujący zaufanie. Wyjaśniamy, jak wykorzystać go na stronie internetowej.",
@@ -1431,8 +1405,6 @@
       "title": "Mapa strony dla użytkowników: dlaczego warto ją mieć i jak powinna wyglądać?",
       "excerpt": "Mapa strony pokazuje strukturę witryny w jednym miejscu. Wyjaśniamy, czym różni się od sitemap.xml, jakie korzyści daje użytkownikom i SEO, kto z niej korzysta oraz jak powinna wyglądać poprawnie zaprojektowana mapa strony.",
       "primaryCategory": "UX",
-      "category": ["SEO", "Strony"],
-      "tags": ["mapa strony", "sitemap", "nawigacja", "UX", "dostępność", "struktura strony", "linkowanie wewnętrzne", "SEO"],
       "seo": {
         "title": "Mapa strony dla użytkowników: dlaczego warto ją mieć i jak powinna wyglądać? - Arteon",
         "description": "Mapa strony dla użytkowników ułatwia nawigację i różni się od sitemap.xml. Wyjaśniamy, jakie korzyści daje i jak ją zaprojektować.",
@@ -1528,8 +1500,6 @@
       "title": "Czym jest linkowanie wewnętrzne i jak wpływa na SEO strony?",
       "excerpt": "Linkowanie wewnętrzne łączy podstrony witryny i wspiera SEO. Wyjaśniamy, jak działa, dlaczego ma znaczenie dla pozycjonowania, czym są klastry tematyczne i jak pisać anchor texty, które wspierają widoczność witryny w Google.",
       "primaryCategory": "SEO",
-      "category": ["Widoczność", "Treści"],
-      "tags": ["linkowanie wewnętrzne", "SEO", "klastry tematyczne", "anchor text", "struktura strony", "pozycjonowanie", "nawigacja", "breadcrumbs", "PageRank", "crawl budget"],
       "seo": {
         "title": "Czym jest linkowanie wewnętrzne i jak wpływa na SEO strony? - Arteon",
         "description": "Linkowanie wewnętrzne wpływa na pozycjonowanie strony i pomaga budować klastry tematyczne. Wyjaśniamy, jak stosować linki wewnętrzne.",
@@ -1630,8 +1600,6 @@
       "title": "Kontrast kolorów na stronie: dlaczego ma znaczenie i jak go sprawdzić?",
       "excerpt": "Kontrast kolorów decyduje o czytelności tekstu na stronie. Wyjaśniamy, czym jest kontrast, co oznaczają poziomy WCAG AA i AAA, kto korzysta z dobrego kontrastu oraz jak sprawdzić i poprawić kolory na swojej stronie internetowej.",
       "primaryCategory": "Dostępność",
-      "category": ["UX", "Grafika"],
-      "tags": ["kontrast kolorów", "WCAG", "dostępność", "czytelność", "kolory na stronie", "AA", "AAA", "accessibility", "UX", "relative luminance", "współczynnik kontrastu"],
       "seo": {
         "title": "Kontrast kolorów na stronie: znaczenie i weryfikacja - Arteon",
         "description": "Kontrast kolorów wpływa na czytelność i dostępność strony. Wyjaśniamy wzór WCAG, poziomy AA i AAA oraz jak sprawdzić kontrast.",
@@ -1747,8 +1715,6 @@
       "title": "Czym jest content marketing i jak pomaga firmom pozyskiwać klientów?",
       "excerpt": "Content marketing to strategia polegająca na tworzeniu wartościowych treści, które przyciągają potencjalnych klientów. Wyjaśniamy, jak działa, jakie formy może przyjąć i jak zacząć stosować go w swojej firmie lub sklepie.",
       "primaryCategory": "Marketing",
-      "category": ["Treści", "SEO"],
-      "tags": ["content marketing", "marketing treści", "strategia marketingowa", "blog firmowy", "pozyskiwanie klientów", "SEO", "artykuły eksperckie"],
       "seo": {
         "title": "Content marketing: czym jest i jak działa? - Arteon",
         "description": "Content marketing to strategia oparta na tworzeniu wartościowych treści. Wyjaśniamy, jak działa i jak zacząć go stosować w firmie.",
@@ -1863,8 +1829,6 @@
       "title": "E-mail marketing dla małych firm: dlaczego warto i na co zwrócić uwagę?",
       "excerpt": "E-mail marketing to opłacalny kanał komunikacji z klientami. Wyjaśniamy, dlaczego warto go stosować, jakie rodzaje e-maili przynoszą najlepsze efekty i na co zwrócić uwagę przy planowaniu kampanii mailingowej dla małej firmy.",
       "primaryCategory": "Marketing",
-      "category": ["Treści"],
-      "tags": ["e-mail marketing", "newsletter", "mailing", "marketing dla firm", "komunikacja z klientami", "automatyzacja marketingu", "RODO"],
       "seo": {
         "title": "E-mail marketing dla małych firm: poradnik - Arteon",
         "description": "E-mail marketing jest skuteczny dla małych firm dzięki niskim kosztom i bezpośredniemu dostępowi do klientów. Wyjaśniamy, jak zacząć.",
@@ -1979,8 +1943,6 @@
       "title": "Co sprawdzić przed uruchomieniem nowej strony internetowej?",
       "excerpt": "Przed publikacją strony warto upewnić się, że wszystko działa poprawnie. Dowiesz się, co sprawdzić w zakresie treści, funkcjonalności, wydajności, SEO i kwestii prawnych przed uruchomieniem nowej witryny internetowej w sieci.",
       "primaryCategory": "Strony",
-      "category": ["SEO"],
-      "tags": ["uruchomienie strony", "publikacja strony", "pre-launch", "weryfikacja strony", "meta dane", "formularze", "wydajność", "SEO techniczne", "polityka prywatności", "RODO"],
       "seo": {
         "title": "Co sprawdzić przed uruchomieniem nowej strony internetowej? - Arteon",
         "description": "Przed publikacją strony warto sprawdzić treści, funkcjonalność, wydajność, SEO i kwestie prawne. Lista kontrolna.",
@@ -2095,8 +2057,6 @@
       "title": "Jak przygotować grafikę do postów w mediach społecznościowych?",
       "excerpt": "Grafika w mediach społecznościowych decyduje, czy ktoś zatrzyma się na poście. Dowiesz się, jak przygotować grafiki, które przyciągają uwagę, budują spójny wizerunek marki i jakie wymiary stosować na różnych platformach.",
       "primaryCategory": "Grafika",
-      "category": ["Grafika", "Marketing"],
-      "tags": ["media społecznościowe", "grafika", "posty", "Facebook", "Instagram", "LinkedIn", "wymiary grafik", "spójność wizualna", "szablony postów"],
       "seo": {
         "title": "Grafika do postów w mediach społecznościowych - Arteon",
         "description": "Wymiary grafik na Facebooku, Instagramie i LinkedIn różnią się między platformami. Wyjaśniamy aktualne rozmiary i zasady spójności.",
@@ -2206,8 +2166,6 @@
       "title": "Jak wybrać domenę i hosting dla strony firmowej?",
       "excerpt": "Domena to adres strony w internecie, a hosting to miejsce, gdzie strona jest przechowywana. Dowiesz się, jak wybrać obie te usługi, na co zwrócić uwagę przy zakupie i jakich błędów unikać przy ich wyborze dla swojej firmy.",
       "primaryCategory": "Strony",
-      "category": ["Bezpieczeństwo"],
-      "tags": ["domena", "hosting", "strona firmowa", "serwer", "adres strony", "rejestracja domeny", "wybór hostingu", "strona internetowa"],
       "seo": {
         "title": "Jak wybrać domenę i hosting dla strony firmowej? - Arteon",
         "description": "Domena i hosting to podstawa każdej strony firmowej. Wyjaśniamy, jak je wybrać i na co zwrócić uwagę przed zakupem.",
@@ -2317,8 +2275,6 @@
       "title": "Jak mierzyć skuteczność strony internetowej? Podstawy analityki",
       "excerpt": "Strona internetowa to inwestycja, która powinna przynosić efekty. Dowiesz się, jakie wskaźniki mierzyć w Google Analytics, jak interpretować dane o ruchu i konwersjach oraz kiedy warto zlecić analizę doświadczonemu specjaliście.",
       "primaryCategory": "SEO",
-      "category": ["Widoczność", "Strony"],
-      "tags": ["analityka", "Google Analytics", "wskaźniki strony", "ruch na stronie", "konwersje", "współczynnik odrzuceń", "czas na stronie", "mierzenie efektów"],
       "seo": {
         "title": "Jak mierzyć skuteczność strony? Podstawy analityki - Arteon",
         "description": "Analityka strony pomaga ocenić jej skuteczność. Wyjaśniamy kluczowe wskaźniki, Google Analytics i kiedy zlecić analizę.",
@@ -2433,8 +2389,6 @@
       "title": "Jak założyć i zoptymalizować profil Google Moja Firma?",
       "excerpt": "Google Moja Firma pozwala lokalnym firmom wyświetlać się w Mapach Google i wynikach wyszukiwania. Dowiesz się, jak założyć profil, jakie informacje uzupełnić i jak skutecznie zdobywać pozytywne opinie od swoich klientów.",
       "primaryCategory": "SEO",
-      "category": ["Widoczność"],
-      "tags": ["Google Moja Firma", "Google Business Profile", "lokalne SEO", "Mapy Google", "opinie klientów", "wizytówka Google", "pozycjonowanie lokalne", "widoczność w Google"],
       "seo": {
         "title": "Jak założyć i zoptymalizować profil Google Moja Firma? - Arteon",
         "description": "Profil Google Moja Firma pomaga wyróżnić się w mapach Google. Wyjaśniamy, jak go założyć, uzupełnić i zdobywać opinie.",
@@ -2544,8 +2498,6 @@
       "title": "Czym jest responsywność strony i dlaczego ma znaczenie?",
       "excerpt": "Responsywność strony to jej zdolność do dopasowania się do różnych rozmiarów ekranów. Wyjaśniamy, czym jest responsywność, jak wpływa na użytkowników i SEO oraz jak sprawdzić, czy dana strona lub witryna jest responsywna.",
       "primaryCategory": "UX",
-      "category": ["Strony", "SEO"],
-      "tags": ["responsywność", "RWD", "mobile-first", "UX", "strona mobilna", "SEO", "Google", "strona internetowa"],
       "seo": {
         "title": "Czym jest responsywność strony i dlaczego ma znaczenie? - Arteon",
         "description": "Responsywność strony wpływa na użytkowników i SEO. Wyjaśniamy, czym jest i jak sprawdzić, czy strona dostosowuje się do ekranów.",
@@ -2659,8 +2611,6 @@
       "title": "Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje?",
       "excerpt": "Certyfikat SSL to podstawa bezpieczeństwa każdej strony internetowej. Dowiesz się, czym jest SSL, jak działa szyfrowanie, jak wpływa na zaufanie użytkowników i SEO oraz jakie są rodzaje certyfikatów dostępnych na rynku w Polsce.",
       "primaryCategory": "Bezpieczeństwo",
-      "category": ["SEO", "Strony"],
-      "tags": ["SSL", "certyfikat SSL", "HTTPS", "bezpieczeństwo strony", "szyfrowanie", "SEO", "zaufanie użytkowników", "strona internetowa"],
       "seo": {
         "title": "Certyfikat SSL: co to jest i dlaczego jest ważny? - Arteon",
         "description": "Certyfikat SSL szyfruje połączenie i wpływa na bezpieczeństwo oraz SEO. Wyjaśniamy, jak działa i jak sprawdzić jego obecność.",
@@ -2775,8 +2725,6 @@
       "title": "Meta title i description: jak je napisać, żeby strona wyświetlała się lepiej w Google?",
       "excerpt": "Meta title i description to krótkie teksty w wynikach wyszukiwania Google. Dowiesz się, czym są, dlaczego mają znaczenie dla SEO, jak je napisać i jakich błędów unikać, żeby zwiększyć klikalność strony w wynikach wyszukiwarki.",
       "primaryCategory": "SEO",
-      "category": ["Treści", "Strony", "Widoczność"],
-      "tags": ["meta title", "meta description", "SEO", "wyniki wyszukiwania", "Google", "klikalność", "CTR", "optymalizacja"],
       "seo": {
         "title": "Meta title i description: jak je dobrze napisać? - Arteon",
         "description": "Meta title i description wpływają na SEO i klikalność w Google. Wyjaśniamy, jak je napisać i jakich błędów unikać.",
@@ -2882,8 +2830,6 @@
       "title": "Materiały drukowane dla firmy: które zamówić na start?",
       "excerpt": "Wizytówki, ulotki, katalogi, teczki - które materiały drukowane przydadzą się firmie? Znajdziesz tu wskazówki, od czego zacząć, jak zaplanować spójny zestaw i jak jakość papieru wpływa na wizerunek Twojej marki w praktyce.",
       "primaryCategory": "Druk",
-      "category": ["Branding", "Grafika"],
-      "tags": ["materiały drukowane", "wizytówki", "ulotki", "katalogi", "teczki ofertowe", "papier firmowy", "identyfikacja wizualna", "branding"],
       "seo": {
         "title": "Materiały drukowane dla firmy: które zamówić na start? - Arteon",
         "description": "Wizytówki, ulotki, katalogi, teczki - wyjaśniamy, które materiały drukowane są potrzebne na start firmy i jak je zaplanować.",
@@ -2994,8 +2940,6 @@
       "title": "Kody QR w materiałach reklamowych: gdzie je stosować i na co uważać?",
       "excerpt": "Kody QR łączą materiały drukowane z treściami online. Znajdziesz tu konkretne wskazówki: gdzie kod QR działa najlepiej, czego unikać przy projektowaniu, jak wygenerować kod i jak testować go przed drukiem reklamowych materiałów.",
       "primaryCategory": "Grafika",
-      "category": ["Marketing", "Druk"],
-      "tags": ["kod QR", "QR code", "materiały reklamowe", "ulotki", "wizytówki", "plakaty", "marketing offline", "druk"],
       "seo": {
         "title": "Kody QR w materiałach reklamowych: poradnik - Arteon",
         "description": "Kod QR na ulotce lub wizytówce może ułatwić kontakt. Wyjaśniamy, kiedy ma sens, jakich błędów unikać i jak go stworzyć.",
@@ -3175,8 +3119,6 @@
       "title": "Jak dobrać kolory do strony internetowej lub sklepu?",
       "excerpt": "Praktyczny przewodnik po doborze kolorów na stronę lub sklep internetowy. Znajdziesz tu konkretne kroki, dane z badań i narzędzia online, które pomogą wybrać odpowiednią paletę kolorów wspierającą cele biznesowe Twojej firmy.",
       "primaryCategory": "Grafika",
-      "category": ["Branding", "UX", "Strony"],
-      "tags": ["kolory na stronie", "paleta kolorów", "koło barw", "zasada 60-30-10", "kontrast kolorów", "identyfikacja wizualna", "branding", "UX design", "konwersja"],
       "seo": {
         "title": "Jak dobrać kolory do strony internetowej lub sklepu? - Arteon",
         "description": "Praktyczny przewodnik po doborze kolorów na stronę. Konkretne kroki, dane z badań i narzędzia do wyboru palety kolorów.",
@@ -3332,18 +3274,6 @@
       "title": "Jak przygotować sklep internetowy do pozycjonowania?",
       "excerpt": "Pozycjonowanie sklepu internetowego wymaga innego podejścia niż SEO strony firmowej. Zobacz, jak przygotować strukturę, treści i techniczne podstawy sklepu, żeby działania SEO przełożyły się na lepszą widoczność w Google.",
       "primaryCategory": "SEO",
-      "category": ["Sklepy", "Widoczność", "Treści"],
-      "tags": [
-        "pozycjonowanie sklepu",
-        "seo e-commerce",
-        "sklep internetowy",
-        "opisy produktów",
-        "struktura kategorii",
-        "dane strukturalne",
-        "linkowanie wewnętrzne",
-        "blog w sklepie",
-        "seo techniczne"
-      ],
       "seo": {
         "title": "Jak przygotować sklep internetowy do pozycjonowania? - Arteon",
         "description": "Przygotowanie sklepu do SEO obejmuje strukturę kategorii, opisy produktów, filtry i dane strukturalne. Wyjaśniamy kluczowe elementy.",
@@ -3459,8 +3389,6 @@
       "title": "Jak przygotować profesjonalną stopkę mailową?",
       "excerpt": "Stopka mailowa to wizytówka w każdym e-mailu. Wyjaśniamy, co powinna zawierać, jakich błędów unikać i jak stworzyć podpis za pomocą generatora.",
       "primaryCategory": "Branding",
-      "category": ["Grafika"],
-      "tags": ["stopka mailowa", "podpis e-mail", "email signature", "branding", "identyfikacja wizualna", "gmail", "outlook", "profesjonalny e-mail", "komunikacja firmowa"],
       "seo": {
         "title": "Jak przygotować profesjonalną stopkę mailową? - Arteon",
         "description": "Firmowa stopka e-mail powinna zawierać dane kontaktowe i wyglądać profesjonalnie. Wyjaśniamy kluczowe elementy i typowe błędy.",
@@ -3589,8 +3517,6 @@
       "title": "Favicon: co to za ikona, jak ją stworzyć i przygotować, aby działała poprawnie?",
       "excerpt": "Favicon to mała ikonka przy nazwie strony w przeglądarce. Wyjaśniamy, jakie pliki są potrzebne i jak przygotować zestaw ikon za pomocą generatora.",
       "primaryCategory": "Zdjęcia",
-      "category": ["Grafika", "Strony", "SEO"],
-      "tags": ["favicon", "ikona strony", "apple-touch-icon", "pwa", "lighthouse", "manifest.json", "przeglądarki", "seo", "web Grafika"],
       "seo": {
         "title": "Favicon: co to jest i jak ją przygotować? - Arteon",
         "description": "Favicon to ikona strony wyświetlana w przeglądarce. Wyjaśniamy, jakie pliki są potrzebne i jak przygotować zestaw ikon.",
@@ -3717,8 +3643,6 @@
       "title": "FAQ na stronie: jak pisać pytania, które wspierają pozycję strony?",
       "excerpt": "Dobrze zaplanowane FAQ skraca drogę do decyzji i pomaga przechwytywać ruch z długich zapytań. Zobacz, skąd brać pytania, jak je grupować, jak pisać odpowiedzi oraz kiedy stosować FAQ schema i linki wewnętrzne na stronie.",
       "primaryCategory": "SEO",
-      "category": ["Treści", "Strony", "Widoczność"],
-      "tags": ["faq", "faq seo", "pytania i odpowiedzi", "schema faq", "linkowanie wewnętrzne", "long tail", "copywriting", "google search console", "struktura treści", "konwersja"],
       "seo": {
         "title": "FAQ na stronie: jak pisać pytania wspierające SEO? - Arteon",
         "description": "FAQ na stronie wspiera SEO i konwersję. Wyjaśniamy, skąd brać pytania, jak pisać odpowiedzi i kiedy używać FAQ schema.",
@@ -3837,8 +3761,6 @@
       "title": "Jak kolorystyka wpływa na decyzje zakupowe klientów?",
       "excerpt": "Kolor wpływa na to, czy klient zaufa marce i zdecyduje się na zakup. Wyjaśniamy mechanizmy psychologiczne percepcji kolorów, pokazujemy wyniki testów A/B oraz jak różne branże wykorzystują kolorystykę w codziennej praktyce.",
       "primaryCategory": "Grafika",
-      "category": ["Psychologia", "Branding"],
-      "tags": ["psychologia kolorów", "kolorystyka", "branding", "konwersja", "UX", "identyfikacja wizualna", "testy A/B", "e-commerce", "CTA", "WCAG"],
       "seo": {
         "title": "Jak kolorystyka wpływa na decyzje zakupowe klientów? - Arteon",
         "description": "Kolory wpływają na decyzje zakupowe klientów. Wyjaśniamy mechanizmy psychologiczne i pokazujemy przykłady z różnych branż.",
@@ -3934,8 +3856,6 @@
       "title": "Ile czasu trwa pozycjonowanie strony firmowej i kiedy widać efekty?",
       "excerpt": "SEO nie działa natychmiast - ale dlaczego? Wyjaśniamy mechanizmy za czasem potrzebnym na efekty: jak Google indeksuje strony, dlaczego nowe domeny potrzebują więcej czasu i co wpływa na tempo wyników w różnych branżach w Polsce.",
       "primaryCategory": "SEO",
-      "category": ["Widoczność", "Strony"],
-      "tags": ["pozycjonowanie", "SEO", "czas SEO", "efekty SEO", "Google", "indeksowanie", "autorytet domeny", "lokalne SEO", "e-commerce SEO"],
       "seo": {
         "title": "Ile czasu trwa pozycjonowanie strony firmowej? Mechanizmy i realne terminy - Arteon",
         "description": "Wyjaśniamy, dlaczego SEO wymaga czasu: mechanizmy indeksowania Google, budowanie autorytetu domeny i realne terminy dla różnych branż.",
@@ -4044,8 +3964,6 @@
       "title": "Czy lokalne firmy potrzebują bloga na stronie internetowej, aby rosnąć w Google?",
       "excerpt": "Blog na stronie lokalnej firmy wpływa na to, jak Google ocenia wiarygodność firmy. Wyjaśniamy, dlaczego treści edukacyjne wzmacniają widoczność, jak blog wpływa na pozycję w Google Maps i kiedy taka inwestycja się opłaca.",
       "primaryCategory": "SEO",
-      "category": ["Treści", "Strony"],
-      "tags": ["blog firmowy", "lokalne SEO", "content marketing", "Google Maps", "widoczność w Google", "małe firmy", "treści na stronę"],
       "seo": {
         "title": "Blog na stronie lokalnej firmy: jak wpływa na widoczność w Google? - Arteon",
         "description": "Wyjaśniamy mechanizmy: jak blog wpływa na widoczność lokalnej firmy w Google i Google Maps, i kiedy inwestycja w treści ma sens.",
@@ -4153,7 +4071,6 @@
       "title": "Jak zoptymalizować zdjęcia na stronę WWW, aby była szybsza - rozmiary, formaty i WebP",
       "excerpt": "Zdjęcia i grafiki potrafią ważyć więcej niż cała reszta strony razem wzięta. Wyjaśniamy, jak wybrać format (JPEG, PNG, WebP, AVIF), dobrać rozmiar i kompresję, aby strona ładowała się szybko i wyglądała dobrze w wynikach Google.",
       "primaryCategory": "Zdjęcia",
-      "category": ["SEO", "Strony"],
       "seo": {
         "title": "Optymalizacja zdjęć na stronę WWW: formaty i WebP - Arteon",
         "description": "Optymalizacja zdjęć przyspiesza stronę i poprawia ocenę Google. Wyjaśniamy formaty, rozmiary i konwersję do WebP.",
@@ -4275,19 +4192,6 @@
       "title": "Jak pisać treści na stronie internetowej, aby być wyżej w wyszukiwarce Google?",
       "excerpt": "Treści na stronie wpływają na pozycję w Google. Wyjaśniamy zasady SEO, strukturę nagłówków, intencję użytkownika i pokazujemy przykłady z różnych branż.",
       "primaryCategory": "SEO",
-      "category": ["Treści", "Strony"],
-      "tags": [
-        "seo copywriting",
-        "treści seo",
-        "pozycjonowanie",
-        "content marketing",
-        "pisanie tekstów",
-        "intencja użytkownika",
-        "eeat",
-        "meta description",
-        "struktura nagłówków",
-        "linkowanie wewnętrzne"
-      ],
       "seo": {
         "title": "Jak pisać treści na stronę, aby być wyżej w Google? - Arteon",
         "description": "Treści na stronie wpływają na pozycję w Google. Wyjaśniamy zasady SEO, strukturę nagłówków i intencję użytkownika z przykładami.",
@@ -4481,8 +4385,6 @@
       "title": "Jak identyfikacja wizualna firmy zwiększa zaufanie wśród klientów?",
       "excerpt": "Identyfikacja wizualna buduje wiarygodność, skraca decyzje zakupowe i wzmacnia rozpoznawalność marki. Zobacz, jak logo, kolorystyka i typografia wpływają na zaufanie klientów oraz co powinien zawierać profesjonalny brandbook.",
       "primaryCategory": "Grafika",
-      "category": ["Branding"],
-      "tags": ["identyfikacja wizualna", "identyfikacja wizualna firmy", "logo", "kolorystyka", "typografia", "brandbook", "zaufanie klientów", "branding", "spójność wizualna"],
       "seo": {
         "title": "Identyfikacja wizualna firmy a zaufanie klientów - Arteon",
         "description": "Spójna identyfikacja wizualna, logo, kolorystyka i typografia wzmacniają wiarygodność i skracają decyzje zakupowe. Praktyczne wskazówki dla firm.",
@@ -4607,8 +4509,6 @@
       "title": "Dlaczego strona internetowa nie wyświetla się w Google i jak to naprawić?",
       "excerpt": "Strona nie wyświetla się w Google? Sprawdź najczęstsze błędy wpływające na indeksację: robots.txt, sitemap.xml, meta tagi noindex, szybkość ładowania i jakość treści. Kompletny przewodnik z rozwiązaniami tych problemów w witrynie.",
       "primaryCategory": "SEO",
-      "category": ["Widoczność", "Strony"],
-      "tags": ["google", "indeksacja", "google search console", "pozycjonowanie", "robot google", "widoczność strony", "sitemap", "plik robots.txt", "algorytm google", "strona internetowa"],
       "seo": {
         "title": "Strona nie wyświetla się w Google? Przyczyny i rozwiązania - Arteon",
         "description": "Strona internetowa nie wyświetla się w Google? Sprawdź najczęstsze błędy, które wpływają na wyniki wyszukiwania. Wyjaśniamy przyczyny i rozwiązania.",

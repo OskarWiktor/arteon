@@ -159,8 +159,7 @@ export async function generateMetadata({ params }: { params: { category: string 
 export default function EdukacjaCategoryPage({ params }: { params: { category: string } }) {
   const cats = getCategoriesWithCount();
   const hasAny = getAllArticlePreviews().some((a) => {
-    const allCats = [a.primaryCategory, ...(a.category || [])].filter(Boolean) as string[];
-    return allCats.some((c) => slugify(c) === params.category);
+    return a.primaryCategory && slugify(a.primaryCategory) === params.category;
   });
 
   if (!hasAny) {
@@ -194,8 +193,7 @@ export default function EdukacjaCategoryPage({ params }: { params: { category: s
               '@type': 'ItemList',
               itemListElement: getAllArticlePreviews()
                 .filter((a) => {
-                  const allCats = [a.primaryCategory, ...(a.category || [])].filter(Boolean) as string[];
-                  return allCats.some((c) => slugify(c) === params.category);
+                  return a.primaryCategory && slugify(a.primaryCategory) === params.category;
                 })
                 .map((a, i) => ({
                   '@type': 'ListItem',

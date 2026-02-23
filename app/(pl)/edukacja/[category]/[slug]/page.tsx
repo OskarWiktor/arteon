@@ -13,7 +13,6 @@ import CTABanner from '@/components/sections/CTABanner';
 
 import type { Article } from '@/types/article';
 import { getAllArticlePreviews, findArticleBySlug, getPrimaryCategorySlug } from '@/lib/blogDataService';
-import { slugify } from '@/utils/slugify';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 import CodeBlock from '@/components/ui/CodeBlock';
 import TableBlock from '@/components/ui/TableBlock';
@@ -73,8 +72,8 @@ function jsonLd(article: Article) {
     },
     datePublished: article.datePublished,
     dateModified: article.dateModified || article.datePublished,
-    articleSection: article.category,
-    keywords: (article.tags || []).join(', '),
+    articleSection: article.primaryCategory,
+    keywords: '',
   } as const;
 }
 
@@ -280,10 +279,9 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
 
 export async function generateStaticParams() {
   const items = getAllArticlePreviews();
-  return items.flatMap((a) => {
-    const cats = (a.category || []).map((c) => slugify(c));
-    const uniqueCats = Array.from(new Set([getPrimaryCategorySlug(a), ...cats]));
-    return uniqueCats.map((category) => ({ category, slug: a.slug }));
+  return items.map((a) => {
+    const category = getPrimaryCategorySlug(a);
+    return { category, slug: a.slug };
   });
 }
 
@@ -320,10 +318,7 @@ export default function ArticlePage({ params }: { params: { category: string; sl
   const articlePreviews = getAllArticlePreviews();
 
   const canonicalCat = getPrimaryCategorySlug(article);
-  const categoryLabel =
-    (article.primaryCategory && slugify(article.primaryCategory) === canonicalCat ? article.primaryCategory : null) ||
-    article.category?.find((c) => slugify(c) === canonicalCat) ||
-    canonicalCat.replace(/-/g, ' ').toUpperCase();
+  const categoryLabel = article.primaryCategory || canonicalCat.replace(/-/g, ' ').toUpperCase();
 
   const articlesCarouselTitle = `Sprawdź inne artykuły na temat: ${categoryLabel}`;
   if (params.category !== canonicalCat) {
@@ -360,7 +355,6 @@ export default function ArticlePage({ params }: { params: { category: string; sl
               {article.datePublished ? <Badge text={`Publikacja: ${article.datePublished}`} /> : null}
               {article.dateModified && article.dateModified !== article.datePublished ? <Badge text={`Aktualizacja: ${article.dateModified}`} /> : null}
               {article.readingTime ? <Badge text={`${article.readingTime} min czytania`} /> : null}
-              {article.category?.map((c) => <Badge key={c} text={c} />)}
             </div>
           </header>
 

@@ -48,12 +48,11 @@ export function getAllArticlePreviews(): ArticlePreview[] {
 export function getCategoriesWithCount() {
   const map = new Map<string, { label: string; slug: string; count: number }>();
   for (const a of previews) {
-    const allCats = [a.primaryCategory, ...(a.category || [])].filter(Boolean) as string[];
-    const unique = Array.from(new Set(allCats.map((c) => slugify(c))));
-    for (const slug of unique) {
-      const label = allCats.find((c) => slugify(c) === slug) || slug;
-      const prev = map.get(slug);
-      map.set(slug, { label, slug, count: (prev?.count || 0) + 1 });
+    // Only use primary category, not secondary categories
+    if (a.primaryCategory) {
+      const primarySlug = slugify(a.primaryCategory);
+      const prev = map.get(primarySlug);
+      map.set(primarySlug, { label: a.primaryCategory, slug: primarySlug, count: (prev?.count || 0) + 1 });
     }
   }
   return Array.from(map.values()).sort((a, b) => a.label.localeCompare(b.label));
