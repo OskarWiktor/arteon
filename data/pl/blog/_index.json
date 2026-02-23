@@ -102,7 +102,7 @@
     "title": "Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa?",
     "excerpt": "WordPress napędza ponad 40% stron na świecie, co czyni go częstym celem ataków. Wyjaśniamy, dlaczego aktualizacje są tak ważne, co się dzieje, gdy strona pozostaje nieaktualna i na co zwrócić uwagę przy utrzymaniu swojej witryny.",
     "cover": "/assets/blog/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa.webp",
-    "primaryCategory": "Bezpieczeństwo",
+    "primaryCategory": "Strony",
     "readingTime": 11,
     "datePublished": "2026-01-01",
     "seo": {
@@ -214,7 +214,7 @@
     "title": "Kontrast kolorów na stronie: dlaczego ma znaczenie i jak go sprawdzić?",
     "excerpt": "Kontrast kolorów decyduje o czytelności tekstu na stronie. Wyjaśniamy, czym jest kontrast, co oznaczają poziomy WCAG AA i AAA, kto korzysta z dobrego kontrastu oraz jak sprawdzić i poprawić kolory na swojej stronie internetowej.",
     "cover": "/assets/blog/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie.webp",
-    "primaryCategory": "Dostępność",
+    "primaryCategory": "Strony",
     "readingTime": 11,
     "datePublished": "2025-12-24",
     "seo": {
@@ -340,7 +340,7 @@
     "title": "Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje?",
     "excerpt": "Certyfikat SSL to podstawa bezpieczeństwa każdej strony internetowej. Dowiesz się, czym jest SSL, jak działa szyfrowanie, jak wpływa na zaufanie użytkowników i SEO oraz jakie są rodzaje certyfikatów dostępnych na rynku w Polsce.",
     "cover": "/assets/blog/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje.webp",
-    "primaryCategory": "Bezpieczeństwo",
+    "primaryCategory": "Strony",
     "readingTime": 10,
     "datePublished": "2025-12-21",
     "seo": {
@@ -368,7 +368,7 @@
     "title": "Materiały drukowane dla firmy: które zamówić na start?",
     "excerpt": "Wizytówki, ulotki, katalogi, teczki - które materiały drukowane przydadzą się firmie? Znajdziesz tu wskazówki, od czego zacząć, jak zaplanować spójny zestaw i jak jakość papieru wpływa na wizerunek Twojej marki w praktyce.",
     "cover": "/assets/blog/materialy-drukowane-dla-firmy-ktore-zamowic/materialy-drukowane-dla-firmy-ktore-zamowic.webp",
-    "primaryCategory": "Druk",
+    "primaryCategory": "Grafika",
     "readingTime": 9,
     "datePublished": "2025-12-21",
     "seo": {
@@ -424,7 +424,7 @@
     "title": "Jak przygotować profesjonalną stopkę mailową?",
     "excerpt": "Stopka mailowa to wizytówka w każdym e-mailu. Wyjaśniamy, co powinna zawierać, jakich błędów unikać i jak stworzyć podpis za pomocą generatora.",
     "cover": "/assets/blog/jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy/jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy.webp",
-    "primaryCategory": "Branding",
+    "primaryCategory": "Marketing",
     "readingTime": 10,
     "datePublished": "2025-12-19",
     "seo": {
@@ -438,7 +438,7 @@
     "title": "Favicon: co to za ikona, jak ją stworzyć i przygotować, aby działała poprawnie?",
     "excerpt": "Favicon to mała ikonka przy nazwie strony w przeglądarce. Wyjaśniamy, jakie pliki są potrzebne i jak przygotować zestaw ikon za pomocą generatora.",
     "cover": "/assets/blog/favicon-i-ikony-strony-co-przygotowac/favicon-i-ikony-strony-co-przygotowac.webp",
-    "primaryCategory": "Zdjęcia",
+    "primaryCategory": "Strony",
     "readingTime": 10,
     "datePublished": "2025-12-19",
     "seo": {
@@ -508,7 +508,7 @@
     "title": "Jak zoptymalizować zdjęcia na stronę WWW, aby była szybsza - rozmiary, formaty i WebP",
     "excerpt": "Zdjęcia i grafiki potrafią ważyć więcej niż cała reszta strony razem wzięta. Wyjaśniamy, jak wybrać format (JPEG, PNG, WebP, AVIF), dobrać rozmiar i kompresję, aby strona ładowała się szybko i wyglądała dobrze w wynikach Google.",
     "cover": "/assets/blog/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp.webp",
-    "primaryCategory": "Zdjęcia",
+    "primaryCategory": "Strony",
     "readingTime": 10,
     "datePublished": "2025-11-29",
     "seo": {

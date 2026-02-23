@@ -779,7 +779,7 @@
       "slug": "dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa",
       "title": "Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa?",
       "excerpt": "WordPress napędza ponad 40% stron na świecie, co czyni go częstym celem ataków. Wyjaśniamy, dlaczego aktualizacje są tak ważne, co się dzieje, gdy strona pozostaje nieaktualna i na co zwrócić uwagę przy utrzymaniu swojej witryny.",
-      "primaryCategory": "Bezpieczeństwo",
+      "primaryCategory": "Strony",
       "seo": {
         "title": "Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa? - Arteon",
         "description": "Regularne aktualizacje WordPressa, wtyczek i motywów chronią stronę przed atakami. Wyjaśniamy mechanizmy zagrożeń i dobre praktyki utrzymania.",
@@ -1599,7 +1599,7 @@
       "slug": "kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie",
       "title": "Kontrast kolorów na stronie: dlaczego ma znaczenie i jak go sprawdzić?",
       "excerpt": "Kontrast kolorów decyduje o czytelności tekstu na stronie. Wyjaśniamy, czym jest kontrast, co oznaczają poziomy WCAG AA i AAA, kto korzysta z dobrego kontrastu oraz jak sprawdzić i poprawić kolory na swojej stronie internetowej.",
-      "primaryCategory": "Dostępność",
+      "primaryCategory": "Strony",
       "seo": {
         "title": "Kontrast kolorów na stronie: znaczenie i weryfikacja - Arteon",
         "description": "Kontrast kolorów wpływa na czytelność i dostępność strony. Wyjaśniamy wzór WCAG, poziomy AA i AAA oraz jak sprawdzić kontrast.",
@@ -2610,7 +2610,7 @@
       "slug": "czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje",
       "title": "Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje?",
       "excerpt": "Certyfikat SSL to podstawa bezpieczeństwa każdej strony internetowej. Dowiesz się, czym jest SSL, jak działa szyfrowanie, jak wpływa na zaufanie użytkowników i SEO oraz jakie są rodzaje certyfikatów dostępnych na rynku w Polsce.",
-      "primaryCategory": "Bezpieczeństwo",
+      "primaryCategory": "Strony",
       "seo": {
         "title": "Certyfikat SSL: co to jest i dlaczego jest ważny? - Arteon",
         "description": "Certyfikat SSL szyfruje połączenie i wpływa na bezpieczeństwo oraz SEO. Wyjaśniamy, jak działa i jak sprawdzić jego obecność.",
@@ -2829,7 +2829,7 @@
       "slug": "materialy-drukowane-dla-firmy-ktore-zamowic",
       "title": "Materiały drukowane dla firmy: które zamówić na start?",
       "excerpt": "Wizytówki, ulotki, katalogi, teczki - które materiały drukowane przydadzą się firmie? Znajdziesz tu wskazówki, od czego zacząć, jak zaplanować spójny zestaw i jak jakość papieru wpływa na wizerunek Twojej marki w praktyce.",
-      "primaryCategory": "Druk",
+      "primaryCategory": "Grafika",
       "seo": {
         "title": "Materiały drukowane dla firmy: które zamówić na start? - Arteon",
         "description": "Wizytówki, ulotki, katalogi, teczki - wyjaśniamy, które materiały drukowane są potrzebne na start firmy i jak je zaplanować.",
@@ -3388,7 +3388,7 @@
       "slug": "jak-przygotowac-profesjonalna-stopke-mailowa",
       "title": "Jak przygotować profesjonalną stopkę mailową?",
       "excerpt": "Stopka mailowa to wizytówka w każdym e-mailu. Wyjaśniamy, co powinna zawierać, jakich błędów unikać i jak stworzyć podpis za pomocą generatora.",
-      "primaryCategory": "Branding",
+      "primaryCategory": "Marketing",
       "seo": {
         "title": "Jak przygotować profesjonalną stopkę mailową? - Arteon",
         "description": "Firmowa stopka e-mail powinna zawierać dane kontaktowe i wyglądać profesjonalnie. Wyjaśniamy kluczowe elementy i typowe błędy.",
@@ -3516,7 +3516,7 @@
       "slug": "favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie",
       "title": "Favicon: co to za ikona, jak ją stworzyć i przygotować, aby działała poprawnie?",
       "excerpt": "Favicon to mała ikonka przy nazwie strony w przeglądarce. Wyjaśniamy, jakie pliki są potrzebne i jak przygotować zestaw ikon za pomocą generatora.",
-      "primaryCategory": "Zdjęcia",
+      "primaryCategory": "Strony",
       "seo": {
         "title": "Favicon: co to jest i jak ją przygotować? - Arteon",
         "description": "Favicon to ikona strony wyświetlana w przeglądarce. Wyjaśniamy, jakie pliki są potrzebne i jak przygotować zestaw ikon.",
@@ -4070,7 +4070,7 @@
       "slug": "jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp",
       "title": "Jak zoptymalizować zdjęcia na stronę WWW, aby była szybsza - rozmiary, formaty i WebP",
       "excerpt": "Zdjęcia i grafiki potrafią ważyć więcej niż cała reszta strony razem wzięta. Wyjaśniamy, jak wybrać format (JPEG, PNG, WebP, AVIF), dobrać rozmiar i kompresję, aby strona ładowała się szybko i wyglądała dobrze w wynikach Google.",
-      "primaryCategory": "Zdjęcia",
+      "primaryCategory": "Strony",
       "seo": {
         "title": "Optymalizacja zdjęć na stronę WWW: formaty i WebP - Arteon",
         "description": "Optymalizacja zdjęć przyspiesza stronę i poprawia ocenę Google. Wyjaśniamy formaty, rozmiary i konwersję do WebP.",
