@@ -4,7 +4,7 @@
     "url": "URL-adres",
     "text": "Tekst",
     "vcard": "Visitekaartje (vCard)",
-    "email": "E-mail",
+    "email": "e-mail",
     "phone": "Telefoon"
   },
   "urlPlaceholder": "https://www.uw-website.nl",
@@ -34,7 +34,7 @@
     "organization": "Bedrijf (optioneel)",
     "title": "Functie (optioneel)",
     "phone": "Telefoon (optioneel)",
-    "email": "E-mail (optioneel)",
+    "email": "e-mail (optioneel)",
     "website": "Website (optioneel)",
     "address": "Adres (optioneel)"
   },

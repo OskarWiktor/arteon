@@ -159,7 +159,7 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'JPG/PNG till WebP-konverterare',
               topImageAlt: 'JPG/PNG till WebP-konverterare Arteon',
-              topImageSrc: '/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -283,7 +283,7 @@ export default function ToolsIndexPage() {
               icon: <RiQrCodeLine className="h-8 w-8" />,
               title: 'Gratis QR-kodgenerator',
               topImageAlt: 'Gratis QR-kodgenerator Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
+              topImageSrc: '/assets/tools/qr-code-generator/gratis-qr-kodgenerator-sv.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Skapa en QR-kod for en webbplats, vCard, restaurangmeny eller flygblad. Exportera till PNG och SVG -- utan inloggning, utan begransningar.</p>

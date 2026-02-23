@@ -64,7 +64,7 @@
   "contactForm": {
     "nameLabel": "Prenume și nume",
     "namePlaceholder": "Ion Popescu",
-    "emailLabel": "E-mail",
+    "emailLabel": "e-mail",
     "emailPlaceholder": "ion.popescu@gmail.com",
     "subjectLabel": "Subiect",
     "subjectPlaceholder": "ex. Raport eroare | Sugestie instrument | Întrebare",

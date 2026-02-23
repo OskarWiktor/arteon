@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Kostenloser QR-Code-Generator – PNG & SVG, ohne Anmeldung",
     "description": "Erstellen Sie QR-Codes für Websites, vCards, Speisekarten oder Flyer in Sekunden. Export als PNG & SVG. Farben und Größe anpassen. Ohne Anmeldung, ohne Limits.",
-    "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
+    "ogImage": "/assets/tools/qr-code-generator/kostenloser-qr-code-generator-de.webp",
     "path": "/de/werkzeuge/kostenloser-qr-code-generator"
   },
   "hero": {
@@ -78,7 +78,7 @@
       "description": "Jeder Datentyp hat ein eigenes Formular mit den relevanten Eingabefeldern:",
       "grid": "three",
       "items": [
-        { "icon": "RiGlobalLine", "title": "URL", "description": "Nutzer direkt zu einer Webseite, Landingpage oder einem Online-Shop weiterleiten. Der gescannte Link öffnet sich im Browser." },
+        { "icon": "RiGlobalLine", "title": "URL", "description": "Nutzer direkt zu einer Website, Landingpage oder einem Online-Shop weiterleiten. Der gescannte Link öffnet sich im Browser." },
         { "icon": "RiFileTextLine", "title": "Freitext", "description": "Beliebiger Text — Notizen, Anleitungen, WLAN-Zugangsdaten oder kurze Nachrichten." },
         { "icon": "RiContactsLine", "title": "vCard (Visitenkarte)", "description": "Name, Telefon, E-Mail, Adresse und Website als Kontakt. Beim Scannen wird der Kontakt automatisch gespeichert." },
         { "icon": "RiMailLine", "title": "E-Mail", "description": "Empfänger, Betreff und Nachrichtentext als vorgefüllte E-Mail. Beim Scannen öffnet sich das E-Mail-Programm." },

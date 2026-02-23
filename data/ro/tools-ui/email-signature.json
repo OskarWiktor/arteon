@@ -62,7 +62,7 @@
     "companyPlaceholder": "Compania / brandul dvs.",
     "extraLine": "Linie suplimentară (scurtă descriere)",
     "extraLinePlaceholder": "Ex. Creez site-uri web rapide și funcționale.",
-    "email": "E-mail *",
+    "email": "e-mail *",
     "emailPlaceholder": "ion.popescu@example.com",
     "phone": "Telefon",
     "phonePlaceholder": "+40 721 234 567",
@@ -183,7 +183,7 @@
   },
   "labels": {
     "tel": "Tel.",
-    "email": "E-mail",
+    "email": "e-mail",
     "website": "Web",
     "address": "Adresă"
   },

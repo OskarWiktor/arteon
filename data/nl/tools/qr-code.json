@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Gratis QR-code generator \u2013 PNG & SVG, zonder registratie",
     "description": "Maak QR-codes voor websites, vCards, menu's of flyers in seconden. Exporteer als PNG & SVG. Pas kleuren en formaat aan. Zonder registratie, zonder limieten.",
-    "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
+    "ogImage": "/assets/tools/qr-code-generator/gratis-qr-code-generator-nl.webp",
     "path": "/nl/tools/gratis-qr-code-generator"
   },
   "hero": {
@@ -100,7 +100,7 @@
           "title": "vCard-visitekaartje",
           "description": "Een digitaal visitekaartje met contactgegevens (naam, bedrijf, telefoon, e-mail, adres). Na het scannen biedt de telefoon aan om het contact op te slaan. Ideaal voor professionele visitekaartjes."
         },
-        { "icon": "RiMailLine", "title": "E-mail", "description": "Een e-mailadres met optioneel onderwerp en inhoud. Na het scannen opent de telefoon de mail-app met een vooringevuld formulier." },
+        { "icon": "RiMailLine", "title": "e-mail", "description": "Een e-mailadres met optioneel onderwerp en inhoud. Na het scannen opent de telefoon de mail-app met een vooringevuld formulier." },
         { "icon": "RiPhoneLine", "title": "Telefoon", "description": "Een telefoonnummer. Na het scannen biedt de telefoon aan om te bellen. Handig voor hotlines en klantenservice." }
       ]
     },

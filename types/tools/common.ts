@@ -30,6 +30,7 @@ export type ToolDefinition = {
   section: ToolsSectionKey;
   icon: IconType;
   image: string;
+  images?: Record<Locale, string>;
   desktopOnly: boolean;
   locales: Record<Locale, ToolLocaleText>;
 };

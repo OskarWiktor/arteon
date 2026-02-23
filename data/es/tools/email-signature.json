@@ -1,5 +1,5 @@
 {
-  "toolKey": "emailSignature",
+  "toolKey": "e-mailSignature",
   "locale": "es",
   "metadata": {
     "title": "Generador de firma de correo gratis – HTML Gmail y Outlook",
@@ -19,7 +19,7 @@
   "schemas": {
     "software": {
       "name": "Generador gratuito de firma de correo HTML",
-      "alternateName": ["Generador de firma de correo HTML", "Creador de firma de correo electrónico", "Generador de pie de email gratuito"],
+      "alternateName": ["Generador de firma de correo HTML", "Creador de firma de correo electrónico", "Generador de pie de e-mail gratuito"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
       "description": "Generador gratuito de firma de correo HTML. Añada datos de contacto, enlace CTA y perfiles de redes sociales, luego copie el código listo en Gmail, Outlook y otros clientes de correo.",
@@ -76,7 +76,7 @@
     {
       "type": "sectionInfo",
       "title": "¿Por qué tener una firma de correo profesional?",
-      "html": "<p class=\"text-mid\">Una firma de correo (también llamada pie de email) es un bloque de información al final de cada mensaje enviado. Contiene datos de contacto, cargo, nombre de la empresa y, a menudo, un enlace al sitio web o calendario de reuniones.</p><p class=\"text-mid mt-3\">El destinatario no tiene que buscar el número de teléfono en mensajes anteriores: todos los datos están disponibles de inmediato. Una firma de correo profesional también muestra que cuida los detalles y mantiene una imagen de empresa coherente en la correspondencia empresarial.</p>"
+      "html": "<p class=\"text-mid\">Una firma de correo (también llamada pie de e-mail) es un bloque de información al final de cada mensaje enviado. Contiene datos de contacto, cargo, nombre de la empresa y, a menudo, un enlace al sitio web o calendario de reuniones.</p><p class=\"text-mid mt-3\">El destinatario no tiene que buscar el número de teléfono en mensajes anteriores: todos los datos están disponibles de inmediato. Una firma de correo profesional también muestra que cuida los detalles y mantiene una imagen de empresa coherente en la correspondencia empresarial.</p>"
     },
     { "type": "gap", "size": "sm" },
     {
@@ -125,7 +125,7 @@
     {
       "type": "sectionInfo",
       "title": "Aviso legal: cuándo añadirlo",
-      "html": "<p class=\"text-mid\">En la pestaña <strong>Aviso legal</strong> puede añadir texto legal que aparecerá en la parte inferior de la firma en fuente más pequeña.</p><h3 class=\"h5 mt-6 mb-3\">Cuándo añadir un aviso legal</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Correspondencia empresarial</strong> - aviso de confidencialidad y solicitud de eliminación en caso de entrega incorrecta.</li><li><strong>Requisitos sectoriales</strong> - algunos sectores (p. ej., legal, médico, financiero) requieren información específica en cada mensaje.</li><li><strong>RGPD</strong> - información sobre el tratamiento de datos personales, si la empresa es responsable del tratamiento.</li></ul><p class=\"text-mid mt-4\">Por defecto, el campo está relleno con un texto de confidencialidad de ejemplo. Puede editarlo, eliminarlo o reemplazarlo con su propio aviso legal. Si deja el campo vacío, no aparecerá ningún aviso en la firma.</p><h3 class=\"h5 mt-6 mb-3\">Línea separadora</h3><p class=\"text-mid\">Debajo del campo de texto encontrará la opción <strong>Mostrar divisor entre datos de contacto y aviso legal</strong>. Actívela para añadir una línea horizontal entre los datos de contacto y el aviso legal.</p><p class=\"text-mid mt-3\">Después de activar la línea, aparecen opciones de personalización adicionales:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Estilo de línea</strong> - opciones: solida, discontinua o punteada.</li><li><strong>Grosor de línea</strong> - tres opciones: 1 px, 2 px o 3 px.</li><li><strong>Color de línea</strong> - gris por defecto (#e5e7eb). Puede elegir cualquier color de la paleta o restaurar el predeterminado haciendo clic en el botón Predeterminado.</li></ul>"
+      "html": "<p class=\"text-mid\">En la pestaña <strong>Aviso legal</strong> puede añadir texto legal que aparecerá en la parte inferior de la firma en fuente más pequeña.</p><h3 class=\"h5 mt-6 mb-3\">Cuándo añadir un aviso legal</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Correspondencia empresarial</strong> - aviso de confidencialidad y solicitud de eliminación en caso de entrega incorrecta.</li><li><strong>Requisitos sectoriales</strong> - algúnos sectores (p. ej., legal, médico, financiero) requieren información específica en cada mensaje.</li><li><strong>RGPD</strong> - información sobre el tratamiento de datos personales, si la empresa es responsable del tratamiento.</li></ul><p class=\"text-mid mt-4\">Por defecto, el campo está relleno con un texto de confidencialidad de ejemplo. Puede editarlo, eliminarlo o reemplazarlo con su propio aviso legal. Si deja el campo vacío, no aparecerá ningún aviso en la firma.</p><h3 class=\"h5 mt-6 mb-3\">Línea separadora</h3><p class=\"text-mid\">Debajo del campo de texto encontrará la opción <strong>Mostrar divisor entre datos de contacto y aviso legal</strong>. Actívela para añadir una línea horizontal entre los datos de contacto y el aviso legal.</p><p class=\"text-mid mt-3\">Después de activar la línea, aparecen opciones de personalización adicionales:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Estilo de línea</strong> - opciones: solida, discontinua o punteada.</li><li><strong>Grosor de línea</strong> - tres opciones: 1 px, 2 px o 3 px.</li><li><strong>Color de línea</strong> - gris por defecto (#e5e7eb). Puede elegir cualquier color de la paleta o restaurar el predeterminado haciendo clic en el botón Predeterminado.</li></ul>"
     },
     { "type": "gap", "variant": "line" },
     {
@@ -175,7 +175,7 @@
     {
       "type": "sectionSteps",
       "title": "¿Para quién es el creador de firmas de correo?",
-      "description": "La herramienta de firma de correo es útil para cualquiera que envíe emails empresariales:",
+      "description": "La herramienta de firma de correo es útil para cualquiera que envíe e-mails empresariales:",
       "grid": "two",
       "items": [
         { "icon": "RiBriefcaseLine", "title": "Emprendedores y freelancers", "description": "Una firma profesional en cada mensaje sin contratar a un diseñador." },

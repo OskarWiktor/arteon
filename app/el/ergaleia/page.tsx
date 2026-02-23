@@ -179,7 +179,7 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'Μετατροπέας JPG/PNG σε WebP',
               topImageAlt: 'Μετατροπέας JPG/PNG σε WebP Arteon',
-              topImageSrc: '/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -305,7 +305,7 @@ export default function ToolsIndexPage() {
               icon: <RiQrCodeLine className="h-8 w-8" />,
               title: 'Δωρεάν δημιουργία κωδικού QR',
               topImageAlt: 'Δημιουργία κωδικού QR Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
+              topImageSrc: '/assets/tools/qr-code-generator/dorean-dimiourgia-kodikou-qr-el.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Δημιουργήστε κωδικό QR για ιστοσελίδα, vCard, μενού εστιατορίου ή φυλλάδιο. Εξαγωγή σε PNG και SVG – χωρίς σύνδεση, χωρίς περιορισμούς.</p>

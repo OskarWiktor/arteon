@@ -62,7 +62,7 @@
     "companyPlaceholder": "A sua empresa / marca",
     "extraLine": "Linha adicional (breve descrição)",
     "extraLinePlaceholder": "Ex. Crio sites rápidos e funcionais.",
-    "email": "E-mail *",
+    "email": "e-mail *",
     "emailPlaceholder": "joao.silva@example.com",
     "phone": "Telefone",
     "phonePlaceholder": "+351 912 345 678",
@@ -183,7 +183,7 @@
   },
   "labels": {
     "tel": "Tel.",
-    "email": "E-mail",
+    "email": "e-mail",
     "website": "Web",
     "address": "Morada"
   },

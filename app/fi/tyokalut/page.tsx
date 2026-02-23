@@ -169,7 +169,7 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'JPG/PNG–WebP-muunnin',
               topImageAlt: 'JPG/PNG WebP-muunnin Arteon',
-              topImageSrc: '/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -293,7 +293,7 @@ export default function ToolsIndexPage() {
               icon: <RiQrCodeLine className="h-8 w-8" />,
               title: 'Ilmainen QR-koodigeneraattori',
               topImageAlt: 'Ilmainen QR-koodigeneraattori Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
+              topImageSrc: '/assets/tools/qr-code-generator/ilmainen-qr-koodi-generaattori-fi.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Luo QR-koodi verkkosivulle, vCard-käyntikortille, ravintolan ruokalistalle tai esitteelle. Vie PNG- ja SVG-muotoon – ilman kirjautumista, ilman rajoituksia.</p>

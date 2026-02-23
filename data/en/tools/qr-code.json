@@ -2,13 +2,13 @@
   "toolKey": "qrCode",
   "locale": "en",
   "metadata": {
-    "title": "Free QR Code Generator – PNG & SVG, No Signup",
+    "title": "Free QR-Code Generator – PNG & SVG, No Signup",
     "description": "Create QR codes for websites, vCards, menus or flyers in seconds. Export as PNG & SVG. Customize colors and size. No signup, no limits.",
-    "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
+    "ogImage": "/assets/tools/qr-code-generator/free-qr-code-generator-en.webp",
     "path": "/en/tools/free-qr-code-generator"
   },
   "hero": {
-    "title": "QR Code Generator – Free, No Signup Required",
+    "title": "QR-Code Generator – Free, No Signup Required",
     "description": "Create a QR code for a website, vCard business card, email, phone, or text. Customize colors, size, and error correction level, then download a ready PNG or SVG file.",
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },

@@ -159,7 +159,7 @@
         {
           "icon": "RiLayoutGridLine",
           "title": "2. Elija los tamaños de icono",
-          "description": "Seleccione qué tamaños de icono necesita. Puede seleccionar todos o solo algunos. Para un sitio web normal: favicon.ico, 32×32 y 180×180."
+          "description": "Seleccione qué tamaños de icono necesita. Puede seleccionar todos o solo algúnos. Para un sitio web normal: favicon.ico, 32×32 y 180×180."
         },
         {
           "icon": "RiSettings3Line",

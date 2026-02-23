@@ -55,7 +55,7 @@
     "companyPlaceholder": "Η εταιρεία / το brand σας",
     "extraLine": "Επιπλέον γραμμή (σύντομη περιγραφή)",
     "extraLinePlaceholder": "Π.χ. Δημιουργώ γρήγορες και λειτουργικές ιστοσελίδες.",
-    "email": "Email *",
+    "email": "e-mail *",
     "emailPlaceholder": "giannis.papadopoulos@example.com",
     "phone": "Τηλέφωνο",
     "phonePlaceholder": "+30 21 0000 0000",
@@ -149,7 +149,7 @@
     "size": "Μέγεθος"
   },
   "preview": {
-    "title": "Προεπισκόπηση υπογραφής email",
+    "title": "Προεπισκόπηση υπογραφής e-mail",
     "helper": "Τεχνική προεπισκόπηση - συμβατή με Gmail, Outlook και τους περισσότερους email clients.",
     "copySuccess": "Αντιγράφηκε - επικολλήστε στο Gmail",
     "copyError": "Σφάλμα αντιγραφής",
@@ -157,7 +157,7 @@
     "copyRawButton": "Αντιγραφή κώδικα HTML",
     "copyRawSuccess": "Ο κώδικας HTML αντιγράφηκε",
     "downloadButton": "Λήψη ως HTML",
-    "requiredFields": "Για να αντιγράψετε την υπογραφή, συμπληρώστε τουλάχιστον το ονοματεπώνυμο και το email.",
+    "requiredFields": "Για να αντιγράψετε την υπογραφή, συμπληρώστε τουλάχιστον το ονοματεπώνυμο και το e-mail.",
     "resetButton": "Επαναφορά εμφάνισης",
     "resetModalTitle": "Επαναφορά ρυθμίσεων;",
     "resetModalDescription": "Όλα τα δεδομένα και οι ρυθμίσεις υπογραφής θα επαναφερθούν στις προεπιλογές. Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.",
@@ -176,7 +176,7 @@
   },
   "labels": {
     "tel": "Τηλ.",
-    "email": "Email",
+    "email": "e-mail",
     "website": "Ιστοσελίδα",
     "address": "Διεύθυνση"
   },

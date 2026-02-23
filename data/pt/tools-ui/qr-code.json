@@ -4,7 +4,7 @@
     "url": "Endereço URL",
     "text": "Texto",
     "vcard": "Cartão de visita (vCard)",
-    "email": "E-mail",
+    "email": "e-mail",
     "phone": "Telefone"
   },
   "urlPlaceholder": "https://www.o-seu-site.pt",
@@ -34,7 +34,7 @@
     "organization": "Empresa (opcional)",
     "title": "Cargo (opcional)",
     "phone": "Telefone (opcional)",
-    "email": "E-mail (opcional)",
+    "email": "e-mail (opcional)",
     "website": "Site web (opcional)",
     "address": "Morada (opcional)"
   },

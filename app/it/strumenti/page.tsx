@@ -213,7 +213,7 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'Convertitore JPG/PNG in WebP',
               topImageAlt: 'Convertitore JPG/PNG in WebP Arteon',
-              topImageSrc: '/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -349,7 +349,7 @@ export default function ToolsIndexPage() {
               icon: <RiQrCodeLine className="h-8 w-8" />,
               title: 'Generatore di codici QR gratuito',
               topImageAlt: 'Generatore di codici QR gratuito Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
+              topImageSrc: '/assets/tools/qr-code-generator/generatore-di-codici-qr-gratuito-it.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Crea un codice QR per un sito web, una vCard, un menu o un volantino. Esporta in PNG e SVG \u2013 senza registrazione, senza limiti.</p>

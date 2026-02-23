@@ -4,12 +4,12 @@
   "metadata": {
     "title": "Generator gratuit coduri QR – Descărcați PNG și SVG",
     "description": "Creați coduri QR pentru site-uri web, vCard, meniuri sau pliante în câteva secunde. Export PNG și SVG. Personalizați culorile și dimensiunea.",
-    "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
+    "ogImage": "/assets/tools/qr-code-generator/generator-coduri-qr-gratuit-ro.webp",
     "path": "/ro/instrumente/generator-coduri-qr-gratuit"
   },
   "hero": {
     "title": "Generator de coduri QR – Gratuit, fără înregistrare",
-    "description": "Creați un cod QR pentru un site web, carte de vizită vCard, email, telefon sau text. Personalizați culorile, dimensiunea și nivelul de corecție a erorilor, apoi descărcați fișierul PNG sau SVG.",
+    "description": "Creați un cod QR pentru un site web, carte de vizită vCard, e-mail, telefon sau text. Personalizați culorile, dimensiunea și nivelul de corecție a erorilor, apoi descărcați fișierul PNG sau SVG.",
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
   "breadcrumbs": {
@@ -43,7 +43,7 @@
         "Cod QR pentru URL (site web)",
         "Cod QR pentru text simplu",
         "Cod QR vCard (date de contact)",
-        "Cod QR pentru email (adresă, subiect, conținut)",
+        "Cod QR pentru e-mail (adresă, subiect, conținut)",
         "Cod QR pentru număr de telefon",
         "Culori personalizabile pentru cod și fundal",
         "Selectare dimensiune cod în pixeli",
@@ -56,11 +56,11 @@
     },
     "howTo": {
       "name": "Cum să folosiți generatorul gratuit de coduri QR",
-      "description": "Cum să creați un cod QR pentru un site web, carte de vizită vCard, email sau telefon - de la alegerea tipului de date până la descărcarea fișierului gata de tipărit.",
+      "description": "Cum să creați un cod QR pentru un site web, carte de vizită vCard, e-mail sau telefon - de la alegerea tipului de date până la descărcarea fișierului gata de tipărit.",
       "steps": [
         {
           "name": "Alegeți tipul de date",
-          "text": "Decideți ce ar trebui să conțină codul QR: URL, text, carte de vizită (vCard), email sau număr de telefon."
+          "text": "Decideți ce ar trebui să conțină codul QR: URL, text, carte de vizită (vCard), e-mail sau număr de telefon."
         },
         {
           "name": "Introduceți datele",
@@ -99,7 +99,7 @@
       "items": [
         {
           "title": "1. Alegeți tipul de date",
-          "description": "Selectați ce doriți să codificați: URL, text, carte de vizită vCard, email sau număr de telefon."
+          "description": "Selectați ce doriți să codificați: URL, text, carte de vizită vCard, e-mail sau număr de telefon."
         },
         {
           "title": "2. Introduceți datele",
@@ -117,7 +117,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tipuri de coduri QR - URL, vCard, email, telefon, text",
+      "title": "Tipuri de coduri QR - URL, vCard, e-mail, telefon, text",
       "description": "Generatorul gratuit de coduri QR acceptă cinci tipuri de date - fiecare util în situații diferite:",
       "grid": "two",
       "items": [
@@ -134,12 +134,12 @@
         {
           "icon": "RiContactsBookLine",
           "title": "Carte de vizită vCard",
-          "description": "O carte de vizită digitală cu date de contact (nume, companie, telefon, email, adresă). După scanare, telefonul oferă salvarea contactului. Ideal pentru cărți de vizită profesionale."
+          "description": "O carte de vizită digitală cu date de contact (nume, companie, telefon, e-mail, adresă). După scanare, telefonul oferă salvarea contactului. Ideal pentru cărți de vizită profesionale."
         },
         {
           "icon": "RiMailLine",
-          "title": "Email",
-          "description": "O adresă de email cu subiect și conținut opțional. După scanare, telefonul deschide aplicația de email cu formularul pre-completat."
+          "title": "e-mail",
+          "description": "O adresă de e-mail cu subiect și conținut opțional. După scanare, telefonul deschide aplicația de e-mail cu formularul pre-completat."
         },
         {
           "icon": "RiPhoneLine",
@@ -360,7 +360,7 @@
         {
           "icon": "RiLockLine",
           "title": "Cinci tipuri de date într-un singur instrument",
-          "description": "URL, text, carte de vizită vCard, email și telefon - fiecare tip generează un cod QR în standardul corespunzător."
+          "description": "URL, text, carte de vizită vCard, e-mail și telefon - fiecare tip generează un cod QR în standardul corespunzător."
         },
         {
           "icon": "RiStackLine",
@@ -430,7 +430,7 @@
         },
         {
           "question": "Care este diferența dintre o carte de vizită vCard și un cod QR text simplu?",
-          "answer": "Un cod QR vCard conține date de contact într-un format standardizat (nume, companie, telefon, email, adresă). După scanare, telefonul oferă automat salvarea contactului în agenda telefonului. Un cod text afișează datele ca text simplu - fără opțiunea de salvare automată.",
+          "answer": "Un cod QR vCard conține date de contact într-un format standardizat (nume, companie, telefon, e-mail, adresă). După scanare, telefonul oferă automat salvarea contactului în agenda telefonului. Un cod text afișează datele ca text simplu - fără opțiunea de salvare automată.",
           "answerSchemaText": "vCard salvează contactul automat. Codul QR text doar afișează textul."
         }
       ]

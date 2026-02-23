@@ -189,7 +189,7 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'JPG/PNG WebP konverter',
               topImageAlt: 'JPG/PNG WebP konverter Arteon',
-              topImageSrc: '/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -325,7 +325,7 @@ export default function ToolsIndexPage() {
               icon: <RiQrCodeLine className="h-8 w-8" />,
               title: 'Ingyenes QR-kód generátor',
               topImageAlt: 'Ingyenes QR-kód generátor Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
+              topImageSrc: '/assets/tools/qr-code-generator/ingyenes-qr-kod-generator-hu.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Hozzon létre QR-kódot weboldalhoz, vCard-hoz, étterem étlapjához vagy szórólaphoz. Export PNG és SVG formátumban — regisztráció és korlátozás nélkül.</p>

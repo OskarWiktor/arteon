@@ -184,7 +184,7 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'Konvertor JPG/PNG na WebP',
               topImageAlt: 'Konvertor JPG/PNG na WebP Arteon',
-              topImageSrc: '/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -314,7 +314,7 @@ export default function ToolsIndexPage() {
               icon: <RiQrCodeLine className="h-8 w-8" />,
               title: 'Generator QR kodu zdarma',
               topImageAlt: 'Generator QR kodu zdarma Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
+              topImageSrc: '/assets/tools/qr-code-generator/generator-qr-kodu-zdarma-cs.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Vytvorte QR kod pro web, vCard, menu restaurace nebo letak. Export do PNG a SVG — bez prihlaseni, bez limitu.</p>

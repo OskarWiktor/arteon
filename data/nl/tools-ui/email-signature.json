@@ -62,7 +62,7 @@
     "companyPlaceholder": "Uw bedrijf / merk",
     "extraLine": "Extra regel (korte beschrijving)",
     "extraLinePlaceholder": "Bijv. Ik maak snelle en functionele websites.",
-    "email": "E-mail *",
+    "email": "e-mail *",
     "emailPlaceholder": "jan.devries@example.com",
     "phone": "Telefoon",
     "phonePlaceholder": "+31 6 12345678",
@@ -183,7 +183,7 @@
   },
   "labels": {
     "tel": "Tel.",
-    "email": "E-mail",
+    "email": "e-mail",
     "website": "Web",
     "address": "Adres"
   },

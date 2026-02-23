@@ -64,7 +64,7 @@
   "contactForm": {
     "nameLabel": "Voor- en achternaam",
     "namePlaceholder": "Jan de Vries",
-    "emailLabel": "E-mail",
+    "emailLabel": "e-mail",
     "emailPlaceholder": "jan.devries@gmail.com",
     "subjectLabel": "Onderwerp",
     "subjectPlaceholder": "bijv. Bugrapport | Tool-suggestie | Vraag",

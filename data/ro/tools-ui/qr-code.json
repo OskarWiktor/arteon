@@ -4,7 +4,7 @@
     "url": "Adresă URL",
     "text": "Text",
     "vcard": "Carte de vizită (vCard)",
-    "email": "E-mail",
+    "email": "e-mail",
     "phone": "Telefon"
   },
   "urlPlaceholder": "https://www.site-ul-dvs.ro",
@@ -34,7 +34,7 @@
     "organization": "Companie (opțional)",
     "title": "Funcție (opțional)",
     "phone": "Telefon (opțional)",
-    "email": "E-mail (opțional)",
+    "email": "e-mail (opțional)",
     "website": "Site web (opțional)",
     "address": "Adresă (opțional)"
   },

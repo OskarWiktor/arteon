@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Gerador de códigos QR gratuito – PNG e SVG, sem registo",
     "description": "Crie códigos QR para sites, vCards, menus ou flyers em segundos. Exportação em PNG e SVG. Personalize cores e tamanho. Sem registo, sem limites.",
-    "ogImage": "/assets/tools/narzedzia-generator-kodu-qr.webp",
+    "ogImage": "/assets/tools/qr-code-generator/gerador-de-codigos-qr-gratuito-pt.webp",
     "path": "/pt/ferramentas/gerador-de-codigos-qr-gratuito"
   },
   "hero": {
@@ -83,7 +83,7 @@
         { "icon": "RiGlobalLine", "title": "URL / Site", "description": "Redirecione os utilizadores para o seu site, landing page ou loja online." },
         { "icon": "RiContactsLine", "title": "vCard", "description": "Cartão de visita digital – a digitalização adiciona os seus dados aos contactos do telefone." },
         { "icon": "RiFileTextLine", "title": "Texto", "description": "Texto livre – código Wi-Fi, mensagem, instruções ou qualquer outro texto curto." },
-        { "icon": "RiMailLine", "title": "E-mail", "description": "Abre a aplicação de e-mail com o endereço, o assunto e o corpo pré-preenchidos." },
+        { "icon": "RiMailLine", "title": "e-mail", "description": "Abre a aplicação de e-mail com o endereço, o assunto e o corpo pré-preenchidos." },
         { "icon": "RiPhoneLine", "title": "Telefone", "description": "Chamada direta – a digitalização inicia uma chamada para o número indicado." },
         { "icon": "RiPaletteLine", "title": "Personalização", "description": "Cores de primeiro plano e de fundo livremente configuráveis." }
       ]

@@ -211,7 +211,7 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'Convertor JPG/PNG în WebP',
               topImageAlt: 'Convertor JPG/PNG în WebP Arteon',
-              topImageSrc: '/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -344,7 +344,7 @@ export default function ToolsIndexPage() {
               icon: <RiQrCodeLine className="h-8 w-8" />,
               title: 'Generator gratuit de coduri QR',
               topImageAlt: 'Generator gratuit de coduri QR Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
+              topImageSrc: '/assets/tools/qr-code-generator/generator-coduri-qr-gratuit-ro.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Creați un cod QR pentru un site web, vCard, meniu de restaurant sau pliant. Export PNG și SVG — fără înregistrare, fără limite.</p>

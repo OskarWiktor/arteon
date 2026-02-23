@@ -64,7 +64,7 @@
   "contactForm": {
     "nameLabel": "Nome completo",
     "namePlaceholder": "João Silva",
-    "emailLabel": "E-mail",
+    "emailLabel": "e-mail",
     "emailPlaceholder": "joao.silva@gmail.com",
     "subjectLabel": "Assunto",
     "subjectPlaceholder": "ex. Relatório de erro | Sugestão de ferramenta | Pergunta",

@@ -19,13 +19,13 @@
     },
     "third": {
       "href": "/nl/tools/gratis-e-mailhandtekening-generator",
-      "label": "E-mailhandtekening generator"
+      "label": "e-mailhandtekening generator"
     }
   },
   "schemas": {
     "software": {
       "name": "Gratis e-mailhandtekening generator",
-      "alternateName": ["HTML e-mailhandtekening generator", "E-mailhandtekening maker", "E-mail footer generator"],
+      "alternateName": ["HTML e-mailhandtekening generator", "e-mailhandtekening maker", "e-mail footer generator"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
       "description": "Gratis HTML e-mailhandtekening generator. Voeg contactgegevens, CTA-link en social media-profielen toe en kopieer vervolgens de kant-en-klare code naar Gmail, Outlook en andere e-mailclients.",
@@ -124,7 +124,7 @@
     {
       "type": "sectionInfo",
       "title": "Hoe handtekeninggegevens in te vullen",
-      "html": "<p class=\"text-mid\">Het tabblad <strong>Gegevens</strong> bevat alle velden die u kunt invullen. Slechts twee zijn verplicht: naam en e-mailadres. De overige velden zijn optioneel en verschijnen alleen in de handtekening wanneer ze zijn ingevuld.</p><h3 class=\"h5 mt-6 mb-3\">Velden in het tabblad Gegevens</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Regel boven naam</strong> - extra tekst weergegeven boven de naam. U kunt de bedrijfsnaam, tagline of slogan invoeren.</li><li><strong>Avatar / logo (afbeeldings-URL)</strong> - URL naar een profielfoto of bedrijfslogo. De afbeelding moet vierkant zijn (min. 120×120 px) en openbaar toegankelijk. Na het plakken van de URL verschijnen extra opties: <strong>Avatarvorm</strong> (rond, afgerond of vierkant) en <strong>Avatarformaat</strong> (klein - 40 px, medium - 56 px, groot - 72 px).</li><li><strong>Volledige naam</strong> - verplicht veld. Voer uw volledige naam in.</li><li><strong>Naamtag</strong> - korte tekst naast de naam, bijv. voornaamwoorden of afgekorte titel.</li><li><strong>Functietitel</strong> - uw rol in het bedrijf, bijv. Sales Manager, Marketing Specialist.</li><li><strong>Bedrijfsnaam</strong> - de naam van de organisatie die u vertegenwoordigt.</li><li><strong>Extra regel</strong> - een korte beschrijving van wat u doet of aanbiedt.</li><li><strong>E-mail</strong> - verplicht veld. Voer uw zakelijke e-mailadres in.</li><li><strong>Telefoon</strong> - contactnummer. Elk formaat, bijv. +31 20 123 4567.</li><li><strong>Website</strong> - volledige URL van uw website, beginnend met https://.</li><li><strong>Adres</strong> - fysiek bedrijfsadres (straat, stad, postcode).</li><li><strong>Formele gegevens</strong> - KvK-nummer, licentienummer of andere gegevens die in uw branche vereist zijn.</li></ul>"
+      "html": "<p class=\"text-mid\">Het tabblad <strong>Gegevens</strong> bevat alle velden die u kunt invullen. Slechts twee zijn verplicht: naam en e-mailadres. De overige velden zijn optioneel en verschijnen alleen in de handtekening wanneer ze zijn ingevuld.</p><h3 class=\"h5 mt-6 mb-3\">Velden in het tabblad Gegevens</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Regel boven naam</strong> - extra tekst weergegeven boven de naam. U kunt de bedrijfsnaam, tagline of slogan invoeren.</li><li><strong>Avatar / logo (afbeeldings-URL)</strong> - URL naar een profielfoto of bedrijfslogo. De afbeelding moet vierkant zijn (min. 120×120 px) en openbaar toegankelijk. Na het plakken van de URL verschijnen extra opties: <strong>Avatarvorm</strong> (rond, afgerond of vierkant) en <strong>Avatarformaat</strong> (klein - 40 px, medium - 56 px, groot - 72 px).</li><li><strong>Volledige naam</strong> - verplicht veld. Voer uw volledige naam in.</li><li><strong>Naamtag</strong> - korte tekst naast de naam, bijv. voornaamwoorden of afgekorte titel.</li><li><strong>Functietitel</strong> - uw rol in het bedrijf, bijv. Sales Manager, Marketing Specialist.</li><li><strong>Bedrijfsnaam</strong> - de naam van de organisatie die u vertegenwoordigt.</li><li><strong>Extra regel</strong> - een korte beschrijving van wat u doet of aanbiedt.</li><li><strong>e-mail</strong> - verplicht veld. Voer uw zakelijke e-mailadres in.</li><li><strong>Telefoon</strong> - contactnummer. Elk formaat, bijv. +31 20 123 4567.</li><li><strong>Website</strong> - volledige URL van uw website, beginnend met https://.</li><li><strong>Adres</strong> - fysiek bedrijfsadres (straat, stad, postcode).</li><li><strong>Formele gegevens</strong> - KvK-nummer, licentienummer of andere gegevens die in uw branche vereist zijn.</li></ul>"
     },
     {
       "type": "gap",
@@ -217,7 +217,7 @@
         {
           "icon": "RiSettings3Line",
           "title": "2. Open handtekeninginstellingen",
-          "description": "In Gmail: Instellingen → Alle instellingen bekijken → Handtekening. In Outlook: Bestand → Opties → E-mail → Handtekeningen."
+          "description": "In Gmail: Instellingen → Alle instellingen bekijken → Handtekening. In Outlook: Bestand → Opties → e-mail → Handtekeningen."
         },
         {
           "icon": "RiSaveLine",
