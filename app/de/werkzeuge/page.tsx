@@ -321,7 +321,7 @@ export default function ToolsIndexPage() {
               icon: <RiMailLine className="h-8 w-8" />,
               title: 'Kostenloser HTML-E-Mail-Signatur-Generator',
               topImageAlt: 'Kostenloser HTML-E-Mail-Signatur-Generator Arteon',
-              topImageSrc: '/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp',
+              topImageSrc: '/assets/tools/free-html-email-signature-generator/kostenloser-e-mail-signatur-generator-de.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>

@@ -288,7 +288,7 @@ export default function ToolsIndexPage() {
               icon: <RiMailLine className="h-8 w-8" />,
               title: 'Generator podpisu e-mailu zdarma',
               topImageAlt: 'Generator podpisu e-mailu zdarma Arteon',
-              topImageSrc: '/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp',
+              topImageSrc: '/assets/tools/free-html-email-signature-generator/generator-podpisu-emailu-zdarma-cs.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Vytvorte profesionalni podpis e-mailu za par minut. Zadejte sve udaje, vyberte barvy a zkopirujte hotovy HTML kod do Gmailu, Outlooku nebo jineho e-mailoveho klienta.</p>

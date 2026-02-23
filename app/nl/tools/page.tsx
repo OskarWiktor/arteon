@@ -292,7 +292,7 @@ export default function ToolsIndexPage() {
               icon: <RiMailLine className="h-8 w-8" />,
               title: 'Gratis HTML-e-mailhandtekening generator',
               topImageAlt: 'Gratis HTML-e-mailhandtekening generator Arteon',
-              topImageSrc: '/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp',
+              topImageSrc: '/assets/tools/free-html-email-signature-generator/gratis-e-mailhandtekening-generator-nl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>

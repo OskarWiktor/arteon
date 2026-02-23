@@ -259,7 +259,7 @@ export default function ToolsIndexPage() {
               icon: <RiMailLine className="h-8 w-8" />,
               title: 'Gratis HTML e-postsignatur-generator',
               topImageAlt: 'Gratis e-postsignatur-generator Arteon',
-              topImageSrc: '/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp',
+              topImageSrc: '/assets/tools/free-html-email-signature-generator/gratis-e-postsignatur-generator-sv.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Skapa en professionell e-postsignatur pa nagra minuter. Ange dina uppgifter, valj farger och kopiera den fardiga HTML-koden till Gmail, Outlook eller annan e-postklient.</p>

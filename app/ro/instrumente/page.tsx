@@ -318,7 +318,7 @@ export default function ToolsIndexPage() {
               icon: <RiMailLine className="h-8 w-8" />,
               title: 'Generator gratuit de semnătură e-mail HTML',
               topImageAlt: 'Generator gratuit de semnătură e-mail HTML Arteon',
-              topImageSrc: '/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp',
+              topImageSrc: '/assets/tools/free-html-email-signature-generator/generator-semnatura-email-gratuit-ro.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Creați o semnătură e-mail profesională în câteva minute. Introduceți datele, alegeți culorile și copiați codul HTML în Gmail, Outlook sau alt client de e-mail.</p>

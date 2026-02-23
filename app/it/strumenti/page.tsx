@@ -323,7 +323,7 @@ export default function ToolsIndexPage() {
               icon: <RiMailLine className="h-8 w-8" />,
               title: 'Generatore di firma e-mail HTML gratuito',
               topImageAlt: 'Generatore di firma e-mail HTML gratuito Arteon',
-              topImageSrc: '/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp',
+              topImageSrc: '/assets/tools/free-html-email-signature-generator/generatore-di-firma-email-gratuito-it.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Crea una firma e-mail professionale in pochi minuti. Inserisci i tuoi dati, scegli i colori e copia il codice HTML in Gmail, Outlook o qualsiasi altro client di posta.</p>

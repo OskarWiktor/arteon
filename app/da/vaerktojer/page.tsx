@@ -266,7 +266,7 @@ export default function ToolsIndexPage() {
               icon: <RiMailLine className="h-8 w-8" />,
               title: 'Gratis HTML e-mail-signatur-generator',
               topImageAlt: 'Gratis e-mail-signatur-generator Arteon',
-              topImageSrc: '/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp',
+              topImageSrc: '/assets/tools/free-html-email-signature-generator/gratis-e-mail-signatur-generator-da.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Opret en professionel e-mail-signatur pa fa minutter. Indtast dine oplysninger, vaelg farver og kopier den faerdige HTML-kode til Gmail, Outlook eller en anden e-mail-klient.</p>

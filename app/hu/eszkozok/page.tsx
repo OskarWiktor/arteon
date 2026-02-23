@@ -299,7 +299,7 @@ export default function ToolsIndexPage() {
               icon: <RiMailLine className="h-8 w-8" />,
               title: 'Ingyenes HTML e-mail aláírás generátor',
               topImageAlt: 'Ingyenes HTML e-mail aláírás generátor Arteon',
-              topImageSrc: '/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp',
+              topImageSrc: '/assets/tools/free-html-email-signature-generator/ingyenes-email-alairas-generator-hu.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Készítsen professzionális e-mail aláírást percek alatt. Adja meg adatait, válasszon színeket, és másolja a kész HTML kódot a Gmailbe, Outlookba vagy más e-mail kliensbe.</p>
