@@ -69,9 +69,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Proč je důležité oříznout obrázek na správný poměr stran?",
-      "html": "<p class=\"text-mid\">Každá platforma má své požadavky na rozměry obrázků. Profilový obrázek na Instagramu je čtverec (1:1), obálka Facebooku je široká (820×312 px) a náhled na YouTube je 16:9. Nahrání obrázku se špatným poměrem stran vede k automatickému oříznutí – což často odstraní důležitou část obrázku.</p><p class=\"text-mid mt-3\">Tento editor vám umožní připravit obrázek se správným poměrem stran před nahráním. Vyberte přednastavený formát nebo zadejte vlastní rozměry a získáte přesně ořízaný obrázek.</p>"
+      "html": "<p class=\"text-mid\">Každá platforma má své požadavky na rozměry obrázků. Profilový obrázek na Instagramu je čtverec (1:1), obálka Facebooku je široká (820×312 px) a náhled na YouTube je 16:9. Nahrání obrázku se špatným poměrem stran vede k automatickému oříznutí – což často odstraní důležitou část obrázku.</p><p class=\"text-mid mt-3\">Tento editor vám umožní připravit obrázek se správným poměrem stran před nahráním. Vyberte přednastavený formát nebo zadejte vlastní rozměry a získáte přesně ořízaný obrázek.</p>",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/editor-obrazku-cs.webp",
+      "imageAlt": "Online editor obrázků – Arteon"
     },
     {
       "type": "gap",
@@ -289,6 +291,18 @@
           "answerSchemaText": "Ne. Obrázek se zpracovává v prohlížeči. Neodesílá se na žádný server."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad na novou funkci, našli jste chybu nebo chcete navrhnout jiný nástroj, který by usnadnil vaši práci? Napište nám – odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/editor-obrazku-cs.webp",
+      "imageAlt": "Online editor obrázků – Arteon",
+      "defaultSubject": "Feedback: Online editor obrázků"
     },
     {
       "type": "gap",

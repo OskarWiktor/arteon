@@ -71,9 +71,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Hvad er meta-titel og meta-beskrivelse?",
-      "html": "<p class=\"text-mid\">Meta-titel og meta-beskrivelse er to korte tekster, der beskriver indholdet på en webside. De vises ikke direkte på siden, men dukker op i Googles søgeresultater som titlen (blåt link) og beskrivelsen (grå tekst under titlen).</p><p class=\"text-mid mt-3\">Velskrevne meta-tags fungerer som en annonce for din side i søgeresultaterne – de fanger opmærksomhed og øger sandsynligheden for klik. Dårligt skrevne eller afkortede tags kan afskrække fra at klikke, selv om selve siden er værdifuld.</p>"
+      "html": "<p class=\"text-mid\">Meta-titel og meta-beskrivelse er to korte tekster, der beskriver indholdet på en webside. De vises ikke direkte på siden, men dukker op i Googles søgeresultater som titlen (blåt link) og beskrivelsen (grå tekst under titlen).</p><p class=\"text-mid mt-3\">Velskrevne meta-tags fungerer som en annonce for din side i søgeresultaterne – de fanger opmærksomhed og øger sandsynligheden for klik. Dårligt skrevne eller afkortede tags kan afskrække fra at klikke, selv om selve siden er værdifuld.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Meta titel og beskrivelse kontrol – Arteon"
     },
     {
       "type": "gap",
@@ -269,6 +271,18 @@
           "answerSchemaText": "Meta-titel: 50–60 tegn (~580px). Meta-beskrivelse: 120–160 tegn (~920px). Omtrentlige værdier."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé til en ny funktion, fundet en fejl eller vil foreslå et andet værktøj, der ville gøre dit arbejde lettere? Skriv til os – vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Meta titel og beskrivelse kontrol – Arteon",
+      "defaultSubject": "Feedback: Meta titel og beskrivelse kontrol"
     },
     {
       "type": "gap",

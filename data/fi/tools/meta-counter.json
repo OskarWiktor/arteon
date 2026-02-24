@@ -71,9 +71,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Mitä ovat meta-otsikko ja meta-kuvaus?",
-      "html": "<p class=\"text-mid\">Meta-otsikko ja meta-kuvaus ovat kaksi lyhyttä tekstiä, jotka kuvaavat verkkosivun sisältöä. Ne eivät näy suoraan sivulla, mutta näkyvät Googlen hakutuloksissa otsikkona (sininen linkki) ja kuvauksena (harmaa teksti otsikon alla).</p><p class=\"text-mid mt-3\">Hyvin kirjoitetut meta-tunnisteet toimivat sivun mainoksena hakutuloksissa – ne herättävät huomion ja lisäävät klikkauksen todennäköisyyttä. Huonosti kirjoitetut tai katkaistut tunnisteet voivat karkottaa klikkaajat, vaikka itse sivu olisi arvokas.</p>"
+      "html": "<p class=\"text-mid\">Meta-otsikko ja meta-kuvaus ovat kaksi lyhyttä tekstiä, jotka kuvaavat verkkosivun sisältöä. Ne eivät näy suoraan sivulla, mutta näkyvät Googlen hakutuloksissa otsikkona (sininen linkki) ja kuvauksena (harmaa teksti otsikon alla).</p><p class=\"text-mid mt-3\">Hyvin kirjoitetut meta-tunnisteet toimivat sivun mainoksena hakutuloksissa – ne herättävät huomion ja lisäävät klikkauksen todennäköisyyttä. Huonosti kirjoitetut tai katkaistut tunnisteet voivat karkottaa klikkaajat, vaikka itse sivu olisi arvokas.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Meta-otsikon ja kuvauksen tarkistus – Arteon"
     },
     {
       "type": "gap",
@@ -269,6 +271,18 @@
           "answerSchemaText": "Meta-otsikko: 50–60 merkkiä (~580px). Meta-kuvaus: 120–160 merkkiä (~920px). Likimmääräisiä arvoja."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea uudelle ominaisuudelle, löysitkö virheen tai haluatko ehdottaa toista työkalua, joka helpottaisi työtäsi? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Meta-otsikon ja kuvauksen tarkistus – Arteon",
+      "defaultSubject": "Feedback: Meta-otsikon ja kuvauksen tarkistus"
     },
     {
       "type": "gap",

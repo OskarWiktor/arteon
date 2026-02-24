@@ -85,9 +85,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Czym jest kod QR i jak działa?",
-      "html": "<p class=\"text-mid\">Kod QR (Quick Response) to dwuwymiarowy kod kreskowy, który można zeskanować aparatem smartfona. W przeciwieństwie do tradycyjnych kodów kreskowych, QR przechowuje dane zarówno w poziomie, jak i w pionie, co pozwala zakodować znacznie więcej informacji - do około 3000 znaków alfanumerycznych.</p><p class=\"text-mid mt-3\">Kod QR został opracowany w 1994 roku przez japońską firmę Denso Wave (część grupy Toyota) do śledzenia części samochodowych. Dziś kody QR są powszechnie stosowane w marketingu, gastronomii, logistyce i komunikacji biznesowej. Szczególną popularność zyskały podczas pandemii COVID-19, gdy restauracje zaczęły masowo zastępować papierowe menu kodami QR.</p>"
+      "html": "<p class=\"text-mid\">Kod QR (Quick Response) to dwuwymiarowy kod kreskowy, który można zeskanować aparatem smartfona. W przeciwieństwie do tradycyjnych kodów kreskowych, QR przechowuje dane zarówno w poziomie, jak i w pionie, co pozwala zakodować znacznie więcej informacji - do około 3000 znaków alfanumerycznych.</p><p class=\"text-mid mt-3\">Kod QR został opracowany w 1994 roku przez japońską firmę Denso Wave (część grupy Toyota) do śledzenia części samochodowych. Dziś kody QR są powszechnie stosowane w marketingu, gastronomii, logistyce i komunikacji biznesowej. Szczególną popularność zyskały podczas pandemii COVID-19, gdy restauracje zaczęły masowo zastępować papierowe menu kodami QR.</p>",
+      "imageSrc": "/assets/tools/qr-code-generator/darmowy-generator-kodow-qr-pl.webp",
+      "imageAlt": "Generator kodów QR online – Arteon"
     },
     {
       "type": "gap",
@@ -436,6 +438,18 @@
           "answer": "Kod QR z wizytówką vCard zawiera dane kontaktowe w ustandaryzowanym formacie (imię, nazwisko, firma, telefon, e-mail, adres). Po zeskanowaniu telefon automatycznie zaproponuje zapisanie kontaktu w książce adresowej. Kod z tekstem wyświetli dane jako zwykły napis - bez możliwości automatycznego zapisu."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie, które ułatwiłoby Twoją pracę? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/qr-code-generator/darmowy-generator-kodow-qr-pl.webp",
+      "imageAlt": "Generator kodów QR online – Arteon",
+      "defaultSubject": "Feedback: Generator kodów QR"
     },
     {
       "type": "gap",

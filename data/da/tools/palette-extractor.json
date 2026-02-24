@@ -64,9 +64,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Hvorfor udtrække farver fra et billede?",
-      "html": "<p class=\"mb-4\">Ethvert foto, logo eller grafik indeholder farver, der kan bruges som en færdig farvepalet. Udtrækeren analyserer billedet og viser hvilke farver der dominerer – sammen med HEX-koder og RGB-værdier klar til indsættelse i dit projekt.</p><p class=\"mb-4\">I praksis betyder det, at i stedet for manuelt at plukke farver i et grafikprogram (pixel for pixel), uploader du ét billede og får en ordnet liste med op til 12 farver. Det er nyttigt ved valg af farver til en hjemmeside, skabelse af konsekvent grafik til sociale medier eller opbygning af visuel identitet fra eksisterende materialer.</p><p>Al analyse sker lokalt i browseren – billedet sendes ikke til nogen server.</p>"
+      "html": "<p class=\"mb-4\">Ethvert foto, logo eller grafik indeholder farver, der kan bruges som en færdig farvepalet. Udtrækeren analyserer billedet og viser hvilke farver der dominerer – sammen med HEX-koder og RGB-værdier klar til indsættelse i dit projekt.</p><p class=\"mb-4\">I praksis betyder det, at i stedet for manuelt at plukke farver i et grafikprogram (pixel for pixel), uploader du ét billede og får en ordnet liste med op til 12 farver. Det er nyttigt ved valg af farver til en hjemmeside, skabelse af konsekvent grafik til sociale medier eller opbygning af visuel identitet fra eksisterende materialer.</p><p>Al analyse sker lokalt i browseren – billedet sendes ikke til nogen server.</p>",
+      "imageSrc": "/assets/tools/image-color-extractor/farveudtraekker-fra-billede-da.webp",
+      "imageAlt": "Farveudtrækker fra billede – Arteon"
     },
     {
       "type": "gap",
@@ -291,6 +293,18 @@
           "answerSchemaText": "PNG, JPG og SVG. PNG med gennemsigtig baggrund giver de bedste resultater."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé til en ny funktion, fundet en fejl eller vil foreslå et andet værktøj, der ville gøre dit arbejde lettere? Skriv til os – vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/image-color-extractor/farveudtraekker-fra-billede-da.webp",
+      "imageAlt": "Farveudtrækker fra billede – Arteon",
+      "defaultSubject": "Feedback: Farveudtrækker fra billede"
     },
     {
       "type": "gap",

@@ -71,9 +71,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Vad är meta-titel och meta-beskrivning?",
-      "html": "<p class=\"text-mid\">Meta-titel och meta-beskrivning är två korta texter som beskriver innehållet på en webbsida. De visas inte direkt på sidan, utan dyker upp i Googles sökresultat som titel (blå länk) och beskrivning (grå text under titeln).</p><p class=\"text-mid mt-3\">Välskrivna meta-taggar fungerar som en annons för din sida i sökresultaten – de fångar uppmärksamhet och ökar sannolikheten för klick. Dåligt skrivna eller avkortade taggar kan avskräcka från att klicka, även om själva sidan är värdefull.</p>"
+      "html": "<p class=\"text-mid\">Meta-titel och meta-beskrivning är två korta texter som beskriver innehållet på en webbsida. De visas inte direkt på sidan, utan dyker upp i Googles sökresultat som titel (blå länk) och beskrivning (grå text under titeln).</p><p class=\"text-mid mt-3\">Välskrivna meta-taggar fungerar som en annons för din sida i sökresultaten – de fångar uppmärksamhet och ökar sannolikheten för klick. Dåligt skrivna eller avkortade taggar kan avskräcka från att klicka, även om själva sidan är värdefull.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Meta titel och beskrivning kontroll – Arteon"
     },
     {
       "type": "gap",
@@ -278,6 +280,18 @@
           "answerSchemaText": "Meta-beskrivningen är inte en direkt rankingfaktor, men en bra beskrivning kan öka CTR och indirekt påverka positionen."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss att förbättra våra verktyg",
+      "description": "Har du en idé för en ny funktion, hittat en bugg eller vill föreslå ett annat verktyg som skulle göra ditt arbete enklare? Skriv till oss – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Meta titel och beskrivning kontroll – Arteon",
+      "defaultSubject": "Feedback: Meta titel och beskrivning kontroll"
     },
     {
       "type": "gap",

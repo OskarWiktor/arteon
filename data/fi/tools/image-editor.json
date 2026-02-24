@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/fi/tyokalut", "label": "Työkalut" },
-    "third": { "href": "/fi/tyokalut/kuvaeditori", "label": "Kuvaeditori" }
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/kuvaeditori",
+      "label": "Kuvaeditori"
+    }
   },
   "schemas": {
     "software": {
@@ -38,87 +44,171 @@
       "description": "Näin rajaat kuvan mihin tahansa kuvasuhteeseen ja muutat kokoa sosiaaliseen mediaan tai verkkoon.",
       "totalTime": "PT2M",
       "steps": [
-        { "name": "Lataa kuva", "text": "Vedä ja pudota tiedosto merkittyyn alueeseen tai valitse se laitteeltasi." },
-        { "name": "Valitse kuvamuoto", "text": "Valitse valmis muoto tietylle alustalle tai syötä omat mitat." },
-        { "name": "Säädä rajausaluetta", "text": "Siirrä ja muuta rajauskehyksen kokoa valitaksesi kuvan halutun osan." },
-        { "name": "Lataa tulos", "text": "Napsauta latauspainiketta saadaksesi rajatun kuvan PNG- tai JPG-muodossa." }
+        {
+          "name": "Lataa kuva",
+          "text": "Vedä ja pudota tiedosto merkittyyn alueeseen tai valitse se laitteeltasi."
+        },
+        {
+          "name": "Valitse kuvamuoto",
+          "text": "Valitse valmis muoto tietylle alustalle tai syötä omat mitat."
+        },
+        {
+          "name": "Säädä rajausaluetta",
+          "text": "Siirrä ja muuta rajauskehyksen kokoa valitaksesi kuvan halutun osan."
+        },
+        {
+          "name": "Lataa tulos",
+          "text": "Napsauta latauspainiketta saadaksesi rajatun kuvan PNG- tai JPG-muodossa."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
     {
-      "type": "sectionInfo",
-      "title": "Miksi kuvien rajaaminen oikeaan kuvasuhteeseen on tärkeää?",
-      "html": "<p class=\"text-mid\">Jokaisella alustalla on omat vaatimuksensa kuvan mitoille. Instagramin profiilikuva on neliö (1:1), Facebookin kansikuva on leveä (820×312 px) ja YouTuben pikkukuva on 16:9. Väärän kuvasuhteen kuvan lataaminen johtaa automaattiseen rajaukseen – joka usein poistaa kuvan tärkeän osan.</p><p class=\"text-mid mt-3\">Tämä editori mahdollistaa kuvan valmistelun oikealla kuvasuhteella ennen latausta. Valitse valmis muoto tai syötä omat mitat ja saat tarkasti rajatun kuvan.</p>"
+      "type": "gap",
+      "variant": "line"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionBasic",
+      "title": "Miksi kuvien rajaaminen oikeaan kuvasuhteeseen on tärkeää?",
+      "html": "<p class=\"text-mid\">Jokaisella alustalla on omat vaatimuksensa kuvan mitoille. Instagramin profiilikuva on neliö (1:1), Facebookin kansikuva on leveä (820×312 px) ja YouTuben pikkukuva on 16:9. Väärän kuvasuhteen kuvan lataaminen johtaa automaattiseen rajaukseen – joka usein poistaa kuvan tärkeän osan.</p><p class=\"text-mid mt-3\">Tämä editori mahdollistaa kuvan valmistelun oikealla kuvasuhteella ennen latausta. Valitse valmis muoto tai syötä omat mitat ja saat tarkasti rajatun kuvan.</p>",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/kuvaeditori-fi.webp",
+      "imageAlt": "Online-kuvaeditori – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Näin käytät kuvaeditooria",
       "description": "Rajaus ja koon muuttaminen kestää vain muutaman minuutin:",
       "grid": "four",
       "items": [
-        { "icon": "RiUploadLine", "title": "1. Lataa kuva", "description": "Vedä ja pudota tiedosto merkittyyn alueeseen tai valitse se laitteeltasi. Tuetut muodot ovat JPG, PNG ja WebP." },
-        { "icon": "RiCropLine", "title": "2. Valitse kuvamuoto", "description": "Valitse valmis muoto tietylle alustalle (Instagram, Facebook, LinkedIn, YouTube) tai syötä omat mitat." },
-        { "icon": "RiDragMoveLine", "title": "3. Säädä aluetta", "description": "Siirrä ja muuta rajauskehyksen kokoa. Kuva näkyy reaaliajassa, joten näet tuloksen heti." },
-        { "icon": "RiDownloadLine", "title": "4. Lataa tulos", "description": "Napsauta latauspainiketta. Rajattu kuva on saatavilla PNG- tai JPG-muodossa." }
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Lataa kuva",
+          "description": "Vedä ja pudota tiedosto merkittyyn alueeseen tai valitse se laitteeltasi. Tuetut muodot ovat JPG, PNG ja WebP."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "2. Valitse kuvamuoto",
+          "description": "Valitse valmis muoto tietylle alustalle (Instagram, Facebook, LinkedIn, YouTube) tai syötä omat mitat."
+        },
+        {
+          "icon": "RiDragMoveLine",
+          "title": "3. Säädä aluetta",
+          "description": "Siirrä ja muuta rajauskehyksen kokoa. Kuva näkyy reaaliajassa, joten näet tuloksen heti."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "4. Lataa tulos",
+          "description": "Napsauta latauspainiketta. Rajattu kuva on saatavilla PNG- tai JPG-muodossa."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Miten kuva lisätään?",
       "html": "<p class=\"text-mid\">Työkalu hyväksyy kuvat JPG-, PNG- ja WebP-muodoissa. Kuvan voi lisätä kahdella tavalla:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Vetämällä ja pudottamalla</strong> – tartu tiedostoon kansiosta ja pudota se tiedoston lisäyskenttään (katkoviivakehyksinen kenttä).</li><li><strong>Valitsemalla levyltä</strong> – kentän napsauttamisen jälkeen avautuu tiedostonvalintaikkuna.</li></ul><p class=\"text-mid mt-3\">Kuvan lisäämisen jälkeen työkalu lukee automaattisesti sen alkuperäiset mitat ja näyttää esikatselun. Nyt voit siirtyä rajausasetuksiin.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Aseta kohdemitat",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Mitat px:ssä</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Valmiit muodot</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Leveys (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly /></div><div><label class=\"text-[14px]! font-medium\">Korkeus (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly /></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\" /><span>Säilytä kuvasuhde (automaattinen toinen mitta)</span></label></div></div>",
       "html": "<p class=\"text-mid\">Välilehdessä <strong>Mitat px:ssä</strong> syötät leveyden ja korkeuden manuaalisesti. Valinta <strong>Säilytä kuvasuhde</strong> säätää automaattisesti toisen mitan.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Kuvamitat Instagramiin, Facebookiin ja LinkedIniin",
       "html": "<p class=\"text-mid mb-4\">Työkalu sisältää valmiit muodot optimaalisilla mitoilla suosituimmille alustoille:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Alusta</th><th class=\"py-2 pr-4 font-semibold\">Muoto</th><th class=\"py-2 pr-4 font-semibold\">Mitat (px)</th><th class=\"py-2 font-semibold\">Kuvasuhde</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Neliöjulkaisu</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Pystyjulkaisu</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Julkaisu</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Sivun kansikuva</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Julkaisu</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Profiilin banneri</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG image</td><td class=\"py-2 pr-4\">Linkin jakaminen</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Valmiit muodot sosiaaliseen mediaan",
       "description": "Editori tarjoaa valmiit muodot suosituimmille alustoille:",
       "grid": "three",
       "items": [
-        { "icon": "RiInstagramLine", "title": "Instagram", "description": "Neliö (1:1), tarina ja reels (9:16), vaakasuora (1.91:1), pystysuora (4:5)." },
-        { "icon": "RiFacebookLine", "title": "Facebook", "description": "Kansikuva (820×312), julkaisu (1200×630), tarina (1080×1920), profiilikuva (1:1)." },
-        { "icon": "RiLinkedinLine", "title": "LinkedIn", "description": "Kansikuva (1584×396), julkaisu (1200×1200), profiilikuva (1:1)." },
-        { "icon": "RiYoutubeLine", "title": "YouTube", "description": "Pikkukuva (1280×720), kanavabanneri (2560×1440)." },
-        { "icon": "RiTwitterXLine", "title": "X (Twitter)", "description": "Julkaisu (1600×900), otsikkokuva (1500×500), profiilikuva (1:1)." },
-        { "icon": "RiImageLine", "title": "Mukautettu", "description": "Syötä mikä tahansa leveys ja korkeus pikseleinä tai valitse vapaa kuvasuhde." }
+        {
+          "icon": "RiInstagramLine",
+          "title": "Instagram",
+          "description": "Neliö (1:1), tarina ja reels (9:16), vaakasuora (1.91:1), pystysuora (4:5)."
+        },
+        {
+          "icon": "RiFacebookLine",
+          "title": "Facebook",
+          "description": "Kansikuva (820×312), julkaisu (1200×630), tarina (1080×1920), profiilikuva (1:1)."
+        },
+        {
+          "icon": "RiLinkedinLine",
+          "title": "LinkedIn",
+          "description": "Kansikuva (1584×396), julkaisu (1200×1200), profiilikuva (1:1)."
+        },
+        {
+          "icon": "RiYoutubeLine",
+          "title": "YouTube",
+          "description": "Pikkukuva (1280×720), kanavabanneri (2560×1440)."
+        },
+        {
+          "icon": "RiTwitterXLine",
+          "title": "X (Twitter)",
+          "description": "Julkaisu (1600×900), otsikkokuva (1500×500), profiilikuva (1:1)."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Mukautettu",
+          "description": "Syötä mikä tahansa leveys ja korkeus pikseleinä tai valitse vapaa kuvasuhde."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Miten kuva rajataan?",
       "html": "<p class=\"text-mid\">Kohdemittojen asettamisen jälkeen esikatseluun ilmestyy interaktiivinen rajausalue. Kuvan vaalea osa on tallennettava osa – loput on tummennettu.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Rajauksen vetäminen</p><p class=\"text-mid mt-1\">Tartu vaaleaan alueeseen ja vedä se haluamaasi kohtaan kuvassa. Näin valitset, mikä osa valokuvasta viedään.</p></div><div><p class=\"text-dark font-semibold\">Koon muuttaminen kahvoilla</p><p class=\"text-mid mt-1\">Rajausalueen kulmissa on pieniä neliöitä (kahvoja). Vetämällä niitä muutat rajauksen kokoa – voit suurentaa tai pienentää sitä säilyttäen valitut mittasuhteet.</p></div><div><p class=\"text-dark font-semibold\">Lähennys (zoom)</p><p class=\"text-mid mt-1\">Välilehdessä <strong>Lähennys</strong> löydät liukusäätimen zoomin säätöön (100–300 %). Suurempi arvo tarkoittaa, että rajaus kattaa pienemmän osan alkuperäisestä kuvasta.</p></div><div><p class=\"text-dark font-semibold\">Tarkka sijainnin asetus</p><p class=\"text-mid mt-1\">Välilehdessä <strong>Sijainti</strong> voit asettaa rajauksen tarkan sijainnin prosentteina (0–100 % X- ja Y-akseleille). Keskityspainikkeet mahdollistavat rajauksen nopean keskittämisen.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Rajausmuodot",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Suorakulmio</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Neliö</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Ympyrä</span></div></div>",
       "html": "<p class=\"text-mid\">Välilehdessä <strong>Rajausmuodot</strong> valitset viedyn kuvan muodon: suorakulmio (valituilla mittasuhteilla), neliö (pakottaa 1:1) tai ympyrä (läpinäkyvällä taustalla).</p><p class=\"text-mid mt-3\">Ympyrämuoto luo pyöreän avatarin, jossa ympyrän ulkopuolinen alue on läpinäkyvä. Työkalu vaihtaa muodon automaattisesti PNG:hen tai WebP:hen, koska JPG ei tue läpinäkyvyyttä.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "3×3-ruudukko – mihin sitä käytetään?",
       "html": "<p class=\"text-mid\">Rajausalueella näkyy ruudukko, joka jakaa kuvan 9 yhtä suureen osaan. Se on <strong>kolmannessäännön</strong> visualisointi – yksi valokuvauksen peruskomposition säännöistä.</p><p class=\"text-mid mt-3\">Sääntö sanoo, että kuvan tärkeimmät elementit (kasvot, tuote, kiinnostava kohde) tulisi sijoittaa ruudukon viivojen leikkauspisteisiin tai niiden suuntaisesti. Tällainen sommittelu on dynaamisempi ja silmää miellyttävämpi kuin kohteen sijoittaminen tarkalleen keskelle.</p><p class=\"text-mid mt-3\">Välilehdessä <strong>Ruudukon väri</strong> voit vaihtaa viivojen väriä (vihreä, valkoinen, musta, punainen, keltainen), jotta ruudukko näkyy hyvin erilaisissa valokuvissa.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Vienti – mikä muoto valita?",
@@ -140,19 +230,41 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Kuka tarvitsee kuvaeditooria?",
       "grid": "two",
       "items": [
-        { "icon": "RiMegaphoneLine", "title": "Sosiaalisen median vastaavat", "description": "Valmistele kuvat oikealla kuvasuhteella jokaiselle alustalle ilman grafiikkaohjelmistoa." },
-        { "icon": "RiShoppingBagLine", "title": "Verkkokaupan omistajat", "description": "Rajaa tuotekuvat samaan kuvasuhteeseen ammattimaisen ulkoasun saamiseksi luetteloihin." },
-        { "icon": "RiBloggerLine", "title": "Bloggaajat", "description": "Valmistele otsikkokuvat ja artikkelikuvat oikealla kuvasuhteella." },
-        { "icon": "RiCodeLine", "title": "Verkkokehittäjät", "description": "Rajaa kuvat nopeasti omiin mittoihin ilman grafiikkaohjelmiston avaamista." }
+        {
+          "icon": "RiMegaphoneLine",
+          "title": "Sosiaalisen median vastaavat",
+          "description": "Valmistele kuvat oikealla kuvasuhteella jokaiselle alustalle ilman grafiikkaohjelmistoa."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Verkkokaupan omistajat",
+          "description": "Rajaa tuotekuvat samaan kuvasuhteeseen ammattimaisen ulkoasun saamiseksi luetteloihin."
+        },
+        {
+          "icon": "RiBloggerLine",
+          "title": "Bloggaajat",
+          "description": "Valmistele otsikkokuvat ja artikkelikuvat oikealla kuvasuhteella."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Verkkokehittäjät",
+          "description": "Rajaa kuvat nopeasti omiin mittoihin ilman grafiikkaohjelmiston avaamista."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Usein kysytyt kysymykset kuvaeditorista",
@@ -180,8 +292,29 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Tutustu muihin työkaluihin" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea uudelle ominaisuudelle, löysitkö virheen tai haluatko ehdottaa toista työkalua, joka helpottaisi työtäsi? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/kuvaeditori-fi.webp",
+      "imageAlt": "Online-kuvaeditori – Arteon",
+      "defaultSubject": "Feedback: Online-kuvaeditori"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tutustu muihin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

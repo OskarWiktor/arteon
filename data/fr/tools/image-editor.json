@@ -77,9 +77,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Recadrer vos images pour chaque plateforme",
-      "html": "<p class=\"text-mid\">Chaque plateforme a ses propres exigences en matière d'images – Instagram privilégie les images carrées ou verticales, Facebook a des dimensions de couverture spécifiques, LinkedIn attend des tailles de bannière précises. L'éditeur propose des modèles prêts à l'emploi pour tous les formats courants et permet également de saisir des dimensions personnalisées.</p><p class=\"text-mid mt-3\">L'outil fonctionne entièrement dans votre navigateur – aucune image n'est envoyée à un serveur. Vous pouvez ajuster le zoom et la position du cadrage et télécharger le résultat dans trois formats : PNG (sans perte, avec transparence), JPG (fichier plus léger, sans transparence) et WebP (compression optimale).</p>"
+      "html": "<p class=\"text-mid\">Chaque plateforme a ses propres exigences en matière d'images – Instagram privilégie les images carrées ou verticales, Facebook a des dimensions de couverture spécifiques, LinkedIn attend des tailles de bannière précises. L'éditeur propose des modèles prêts à l'emploi pour tous les formats courants et permet également de saisir des dimensions personnalisées.</p><p class=\"text-mid mt-3\">L'outil fonctionne entièrement dans votre navigateur – aucune image n'est envoyée à un serveur. Vous pouvez ajuster le zoom et la position du cadrage et télécharger le résultat dans trois formats : PNG (sans perte, avec transparence), JPG (fichier plus léger, sans transparence) et WebP (compression optimale).</p>",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/editeur-d-images-en-ligne-fr.webp",
+      "imageAlt": "Éditeur d'images en ligne – Arteon"
     },
     {
       "type": "gap",
@@ -318,6 +320,18 @@
           "answerSchemaText": "JPG ne prend pas en charge la transparence. La forme cercle nécessite PNG ou WebP."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée pour une nouvelle fonctionnalité, trouvé un bug ou souhaitez suggérer un autre outil qui faciliterait votre travail ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/editeur-d-images-en-ligne-fr.webp",
+      "imageAlt": "Éditeur d'images en ligne – Arteon",
+      "defaultSubject": "Feedback: Éditeur d'images en ligne"
     },
     {
       "type": "gap",

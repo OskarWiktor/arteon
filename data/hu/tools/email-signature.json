@@ -89,9 +89,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Miért legyen professzionális e-mail aláírása?",
-      "html": "<p class=\"text-mid\">Az e-mail aláírás (más néven e-mail lábléc) egy információs blokk minden elküldött üzenet végén. Tartalmazza a kapcsolattartói adatokat, beosztást, cégnevet és gyakran egy linket a weboldalra vagy találkozónaptárra.</p><p class=\"text-mid mt-3\">A címzettnek nem kell a korábbi üzenetekben keresnie a telefonszámot - minden adat könnyen elérhető. A professzionális e-mail aláírás azt is mutatja, hogy odafigyel a részletekre és következetes cégképet tart fenn az üzleti levelezésben.</p>"
+      "html": "<p class=\"text-mid\">Az e-mail aláírás (más néven e-mail lábléc) egy információs blokk minden elküldött üzenet végén. Tartalmazza a kapcsolattartói adatokat, beosztást, cégnevet és gyakran egy linket a weboldalra vagy találkozónaptárra.</p><p class=\"text-mid mt-3\">A címzettnek nem kell a korábbi üzenetekben keresnie a telefonszámot - minden adat könnyen elérhető. A professzionális e-mail aláírás azt is mutatja, hogy odafigyel a részletekre és következetes cégképet tart fenn az üzleti levelezésben.</p>",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/ingyenes-email-alairas-generator-hu.webp",
+      "imageAlt": "Email aláírás generátor – Arteon"
     },
     {
       "type": "gap",
@@ -388,6 +390,18 @@
           "answer": "A Jogi nyilatkozat fülben kapcsolja be az Elválasztó vonal megjelenítése opciót. További beállítások jelennek meg: vonal stílus (folytonos, szaggatott, pontozott), vastagság (1-3 px) és szín (alapértelmezésben szürke vagy bármely szín a palettából)."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen nekünk fejleszteni eszközeinket",
+      "description": "Van ötlete egy új funkcióhoz, hibát talált, vagy szeretne javasolni egy másik eszközt, amely megkönnyítené a munkáját? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/ingyenes-email-alairas-generator-hu.webp",
+      "imageAlt": "Email aláírás generátor – Arteon",
+      "defaultSubject": "Feedback: Email aláírás generátor"
     },
     {
       "type": "gap",

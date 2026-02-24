@@ -76,9 +76,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Pourquoi une signature e-mail professionnelle ?",
-      "html": "<p class=\"text-mid\">Une signature e-mail est bien plus que de simples coordonnées en bas d'un message. Elle contient votre nom, votre poste, votre entreprise, vos coordonnées et éventuellement un lien CTA ou des profils de réseaux sociaux. Une signature cohérente et professionnelle renforce l'image de marque dans chaque e-mail envoyé.</p><p class=\"text-mid mt-3\">En moyenne, un employé de bureau envoie 30 à 40 e-mails par jour. Chacun de ces e-mails est une occasion de présenter votre marque, de placer un lien CTA et de donner au destinataire un accès direct à vos profils de réseaux sociaux. Avec cet outil, créez une signature à la hauteur de ces exigences.</p>"
+      "html": "<p class=\"text-mid\">Une signature e-mail est bien plus que de simples coordonnées en bas d'un message. Elle contient votre nom, votre poste, votre entreprise, vos coordonnées et éventuellement un lien CTA ou des profils de réseaux sociaux. Une signature cohérente et professionnelle renforce l'image de marque dans chaque e-mail envoyé.</p><p class=\"text-mid mt-3\">En moyenne, un employé de bureau envoie 30 à 40 e-mails par jour. Chacun de ces e-mails est une occasion de présenter votre marque, de placer un lien CTA et de donner au destinataire un accès direct à vos profils de réseaux sociaux. Avec cet outil, créez une signature à la hauteur de ces exigences.</p>",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/generateur-de-signature-email-gratuit-fr.webp",
+      "imageAlt": "Générateur de signature email – Arteon"
     },
     {
       "type": "gap",
@@ -393,6 +395,18 @@
           "answerSchemaText": "Nom et adresse e-mail doivent être remplis."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée pour une nouvelle fonctionnalité, trouvé un bug ou souhaitez suggérer un autre outil qui faciliterait votre travail ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/generateur-de-signature-email-gratuit-fr.webp",
+      "imageAlt": "Générateur de signature email – Arteon",
+      "defaultSubject": "Feedback: Générateur de signature email"
     },
     {
       "type": "gap",

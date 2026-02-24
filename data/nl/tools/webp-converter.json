@@ -69,9 +69,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Wat is WebP en waarom afbeeldingen converteren?",
-      "html": "<p class=\"mb-4\">WebP is een afbeeldingsformaat gemaakt door Google waarmee bestanden tot 25–35% kleiner worden dan JPG en PNG - met vergelijkbare visuele kwaliteit. Kleinere bestanden betekenen snellere paginalading, wat zich vertaalt in betere gebruikerservaring en hogere scores in <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"mb-4\">Het WebP-formaat wordt ondersteund door alle moderne browsers: Chrome, Firefox, Safari (vanaf versie 14) en Edge. Als u een website, webwinkel of blog beheert, is het converteren van afbeeldingen naar WebP een van de eenvoudigste manieren om de prestaties te verbeteren.</p><p>De converter ondersteunt zowel JPG-foto's als PNG-afbeeldingen (inclusief die met transparantie). U kunt elk aantal bestanden tegelijk converteren - alles wordt lokaal in de browser verwerkt, zonder naar een server te worden gestuurd.</p>"
+      "html": "<p class=\"mb-4\">WebP is een afbeeldingsformaat gemaakt door Google waarmee bestanden tot 25–35% kleiner worden dan JPG en PNG - met vergelijkbare visuele kwaliteit. Kleinere bestanden betekenen snellere paginalading, wat zich vertaalt in betere gebruikerservaring en hogere scores in <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"mb-4\">Het WebP-formaat wordt ondersteund door alle moderne browsers: Chrome, Firefox, Safari (vanaf versie 14) en Edge. Als u een website, webwinkel of blog beheert, is het converteren van afbeeldingen naar WebP een van de eenvoudigste manieren om de prestaties te verbeteren.</p><p>De converter ondersteunt zowel JPG-foto's als PNG-afbeeldingen (inclusief die met transparantie). U kunt elk aantal bestanden tegelijk converteren - alles wordt lokaal in de browser verwerkt, zonder naar een server te worden gestuurd.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
+      "imageAlt": "JPG/PNG naar WebP converter – Arteon"
     },
     {
       "type": "gap",
@@ -311,6 +313,18 @@
           "answerSchemaText": "Ja, kleinere bestanden verbeteren LCP en Core Web Vitals-scores."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heeft u een idee voor een nieuwe functie, een bug gevonden of wilt u een andere tool voorstellen die uw werk gemakkelijker zou maken? Schrijf ons – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
+      "imageAlt": "JPG/PNG naar WebP converter – Arteon",
+      "defaultSubject": "Feedback: JPG/PNG naar WebP converter"
     },
     {
       "type": "gap",

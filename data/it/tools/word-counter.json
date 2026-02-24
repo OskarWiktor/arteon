@@ -83,9 +83,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Contatore di parole e caratteri con strumenti di testo",
-      "html": "<p class=\"text-mid\">Questo strumento combina un contatore di parole e caratteri con funzioni di formattazione. Incolla il testo e vedrai parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura.</p><p class=\"text-mid mt-3\">Sotto il campo di testo troverai 10 strumenti: conversione maiuscole, rimozione spazi, righe vuote, duplicati e ordinamento. Tutto viene elaborato localmente nel browser.</p>"
+      "html": "<p class=\"text-mid\">Questo strumento combina un contatore di parole e caratteri con funzioni di formattazione. Incolla il testo e vedrai parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura.</p><p class=\"text-mid mt-3\">Sotto il campo di testo troverai 10 strumenti: conversione maiuscole, rimozione spazi, righe vuote, duplicati e ordinamento. Tutto viene elaborato localmente nel browser.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageAlt": "Contatore di parole e caratteri – Arteon"
     },
     {
       "type": "gap",
@@ -345,6 +347,18 @@
           "answerSchemaText": "Sì. Il testo viene elaborato localmente nel browser."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea per una nuova funzionalità, hai trovato un bug o vuoi suggerire un altro strumento che renderebbe il tuo lavoro più facile? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageAlt": "Contatore di parole e caratteri – Arteon",
+      "defaultSubject": "Feedback: Contatore di parole e caratteri"
     },
     {
       "type": "gap",

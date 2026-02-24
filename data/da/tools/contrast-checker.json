@@ -72,9 +72,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Hvorfor er farvelæsbarhed vigtig?",
-      "html": "<p class=\"text-mid\">Læsbarhed er forskellen i lysstyrke mellem tekstfarven og baggrundsfarven. Jo større forskel, jo lettere er det at læse teksten. For lav kontrast gør indholdet svært at læse – især for personer med synsnedsættelse, ældre eller under vanskelige lysforhold.</p><p class=\"text-mid mt-3\">Ifølge <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Verdenssundhedsorganisationen (WHO)</a> har ca. 2,2 milliarder mennesker i verden en eller anden form for synsnedsættelse.</p><p class=\"text-mid mt-3\">Værktøjet beregner kontrastforholdet med formlen defineret i <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1</a> – internationale retningslinjer for digital tilgængelighed.</p>"
+      "html": "<p class=\"text-mid\">Læsbarhed er forskellen i lysstyrke mellem tekstfarven og baggrundsfarven. Jo større forskel, jo lettere er det at læse teksten. For lav kontrast gør indholdet svært at læse – især for personer med synsnedsættelse, ældre eller under vanskelige lysforhold.</p><p class=\"text-mid mt-3\">Ifølge <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Verdenssundhedsorganisationen (WHO)</a> har ca. 2,2 milliarder mennesker i verden en eller anden form for synsnedsættelse.</p><p class=\"text-mid mt-3\">Værktøjet beregner kontrastforholdet med formlen defineret i <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1</a> – internationale retningslinjer for digital tilgængelighed.</p>",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/farvekontrastkontrol-da.webp",
+      "imageAlt": "Farvekontrastkontrol – Arteon"
     },
     {
       "type": "gap",
@@ -358,6 +360,18 @@
           "answer": "Ikke altid. Niveau AA (4.5:1 for normal tekst) er det minimum, der kræves af tilgængelighedsforskrifter i EU. Niveau AAA (7:1) giver bedre læsbarhed, men er sværere at opnå. For kritisk indhold – advarsler, sikkerhedsinstruktioner – overvej at opnå AAA."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé til en ny funktion, fundet en fejl eller vil foreslå et andet værktøj, der ville gøre dit arbejde lettere? Skriv til os – vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/farvekontrastkontrol-da.webp",
+      "imageAlt": "Farvekontrastkontrol – Arteon",
+      "defaultSubject": "Feedback: Farvekontrastkontrol"
     },
     {
       "type": "gap",

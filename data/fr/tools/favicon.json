@@ -64,9 +64,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Pourquoi chaque site a besoin d'un favicon ?",
-      "html": "<p class=\"text-mid\">Un favicon est bien plus qu'une petite icône – c'est un élément essentiel de l'identité de marque sur le web. Les navigateurs l'affichent dans l'onglet, les utilisateurs le voient dans les favoris et l'historique, et Lighthouse vérifie sa présence comme bonne pratique. Sans favicon, un site paraît incomplet.</p><p class=\"text-mid mt-3\">Les sites modernes ont besoin de favicons en plusieurs tailles : un favicon.ico pour les anciens navigateurs, des icônes PNG pour les navigateurs de bureau, un Apple Touch Icon pour les appareils iOS et des icônes plus grandes pour les installations PWA sur Android. Cet outil génère tous les fichiers requis à partir d'une seule image.</p>"
+      "html": "<p class=\"text-mid\">Un favicon est bien plus qu'une petite icône – c'est un élément essentiel de l'identité de marque sur le web. Les navigateurs l'affichent dans l'onglet, les utilisateurs le voient dans les favoris et l'historique, et Lighthouse vérifie sa présence comme bonne pratique. Sans favicon, un site paraît incomplet.</p><p class=\"text-mid mt-3\">Les sites modernes ont besoin de favicons en plusieurs tailles : un favicon.ico pour les anciens navigateurs, des icônes PNG pour les navigateurs de bureau, un Apple Touch Icon pour les appareils iOS et des icônes plus grandes pour les installations PWA sur Android. Cet outil génère tous les fichiers requis à partir d'une seule image.</p>",
+      "imageSrc": "/assets/tools/favicon-generator/generateur-de-favicon-gratuit-fr.webp",
+      "imageAlt": "Générateur de favicon – Arteon"
     },
     {
       "type": "gap",
@@ -321,6 +323,18 @@
           "answerSchemaText": "Les navigateurs mettent les favicons en cache. Videz le cache ou ajoutez un paramètre de version."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée pour une nouvelle fonctionnalité, trouvé un bug ou souhaitez suggérer un autre outil qui faciliterait votre travail ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/favicon-generator/generateur-de-favicon-gratuit-fr.webp",
+      "imageAlt": "Générateur de favicon – Arteon",
+      "defaultSubject": "Feedback: Générateur de favicon"
     },
     {
       "type": "gap",

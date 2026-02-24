@@ -73,9 +73,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Hvad er en QR-kode, og hvordan virker den?",
-      "html": "<p class=\"text-mid\">En QR-kode (Quick Response) er en todimensionel stregkode, der kan scannes med en mobiltelefons kamera. I modsætning til traditionelle stregkoder lagrer QR-koder data horisontalt og vertikalt, hvilket muliggør kodning af mere information – op til ca. 3.000 alfanumeriske tegn.</p><p class=\"text-mid mt-3\">QR-koden blev udviklet i 1994 af det japanske firma Denso Wave (en del af Toyota-koncernen) til sporing af bildele. I dag bruges QR-koder bredt inden for marketing, gæstfrihed, logistik og forretningskommunikation.</p>"
+      "html": "<p class=\"text-mid\">En QR-kode (Quick Response) er en todimensionel stregkode, der kan scannes med en mobiltelefons kamera. I modsætning til traditionelle stregkoder lagrer QR-koder data horisontalt og vertikalt, hvilket muliggør kodning af mere information – op til ca. 3.000 alfanumeriske tegn.</p><p class=\"text-mid mt-3\">QR-koden blev udviklet i 1994 af det japanske firma Denso Wave (en del af Toyota-koncernen) til sporing af bildele. I dag bruges QR-koder bredt inden for marketing, gæstfrihed, logistik og forretningskommunikation.</p>",
+      "imageSrc": "/assets/tools/qr-code-generator/gratis-qr-kode-generator-da.webp",
+      "imageAlt": "QR-kode generator – Arteon"
     },
     {
       "type": "gap",
@@ -397,6 +399,18 @@
           "answerSchemaText": "Ja, uden begrænsninger i kommercielle og ikke-kommercielle projekter."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé til en ny funktion, fundet en fejl eller vil foreslå et andet værktøj, der ville gøre dit arbejde lettere? Skriv til os – vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/qr-code-generator/gratis-qr-kode-generator-da.webp",
+      "imageAlt": "QR-kode generator – Arteon",
+      "defaultSubject": "Feedback: QR-kode generator"
     },
     {
       "type": "gap",

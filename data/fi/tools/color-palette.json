@@ -76,9 +76,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Miksi luoda väripaletti?",
-      "html": "<p class=\"text-mid\">Yhtenäinen väripaletti on jokaisen visuaalisen projektin perusta – verkkosivuista logoihin ja painotuotteisiin. Yhteensopivien värien manuaalinen valinta vaatii väriteorian tuntemusta. Generaattori automatisoi tämän prosessin: syötät perusvärin (esim. logon värin), ja työkalu luo 9 värisarjaa hyväksi havaituilla väriharmoniaskeemoilla.</p><p class=\"text-mid mt-3\">Jokaisella luodulla värillä on oma HEX-koodinsa (esim. #496ba2) ja HSL-arvo (hue, saturation, lightness). HEX-koodi voidaan liittää suoraan CSS:ään, Figmaan, Canvaan tai mihin tahansa grafiikkasovellukseen.</p>"
+      "html": "<p class=\"text-mid\">Yhtenäinen väripaletti on jokaisen visuaalisen projektin perusta – verkkosivuista logoihin ja painotuotteisiin. Yhteensopivien värien manuaalinen valinta vaatii väriteorian tuntemusta. Generaattori automatisoi tämän prosessin: syötät perusvärin (esim. logon värin), ja työkalu luo 9 värisarjaa hyväksi havaituilla väriharmoniaskeemoilla.</p><p class=\"text-mid mt-3\">Jokaisella luodulla värillä on oma HEX-koodinsa (esim. #496ba2) ja HSL-arvo (hue, saturation, lightness). HEX-koodi voidaan liittää suoraan CSS:ään, Figmaan, Canvaan tai mihin tahansa grafiikkasovellukseen.</p>",
+      "imageSrc": "/assets/tools/color-palette-generator/varipaletti-generaattori-fi.webp",
+      "imageAlt": "Väripalettien generaattori – Arteon"
     },
     {
       "type": "gap",
@@ -266,6 +268,18 @@
           "answerSchemaText": "Generaattori on ilmainen eikä vaadi kirjautumista. Värit luodaan paikallisesti selaimessa."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea uudelle ominaisuudelle, löysitkö virheen tai haluatko ehdottaa toista työkalua, joka helpottaisi työtäsi? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/color-palette-generator/varipaletti-generaattori-fi.webp",
+      "imageAlt": "Väripalettien generaattori – Arteon",
+      "defaultSubject": "Feedback: Väripalettien generaattori"
     },
     {
       "type": "gap",

@@ -81,9 +81,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Dlaczego czytelność kolorów ma znaczenie?",
-      "html": "<p class=\"text-mid\">Czytelność to różnica jasności między kolorem tekstu a kolorem tła. Im większa ta różnica, tym łatwiej odczytać tekst. Zbyt niski kontrast sprawia, że treść staje się trudna do przeczytania - szczególnie dla osób z wadami wzroku, osób starszych lub w trudnych warunkach oświetleniowych (np. na telefonie w pełnym słońcu).</p><p class=\"text-mid mt-3\">Według <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Światowej Organizacji Zdrowia (WHO)</a>, około 2,2 miliarda ludzi na świecie ma różne formy zaburzeń widzenia. Do tego dochodzą miliony osób z daltonizmem (około 8% mężczyzn i 0,5% kobiet) oraz osoby, których wzrok osłabł z wiekiem.</p><p class=\"text-mid mt-3\">Narzędzie oblicza współczynnik kontrastu według wzoru określonego w standardzie <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Web Content Accessibility Guidelines)</a> - międzynarodowych wytycznych dostępności cyfrowej. Wynik pozwala obiektywnie ocenić, czy kolory są wystarczająco czytelne, niezależnie od ustawień monitora czy indywidualnego postrzegania barw.</p>"
+      "html": "<p class=\"text-mid\">Czytelność to różnica jasności między kolorem tekstu a kolorem tła. Im większa ta różnica, tym łatwiej odczytać tekst. Zbyt niski kontrast sprawia, że treść staje się trudna do przeczytania - szczególnie dla osób z wadami wzroku, osób starszych lub w trudnych warunkach oświetleniowych (np. na telefonie w pełnym słońcu).</p><p class=\"text-mid mt-3\">Według <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Światowej Organizacji Zdrowia (WHO)</a>, około 2,2 miliarda ludzi na świecie ma różne formy zaburzeń widzenia. Do tego dochodzą miliony osób z daltonizmem (około 8% mężczyzn i 0,5% kobiet) oraz osoby, których wzrok osłabł z wiekiem.</p><p class=\"text-mid mt-3\">Narzędzie oblicza współczynnik kontrastu według wzoru określonego w standardzie <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Web Content Accessibility Guidelines)</a> - międzynarodowych wytycznych dostępności cyfrowej. Wynik pozwala obiektywnie ocenić, czy kolory są wystarczająco czytelne, niezależnie od ustawień monitora czy indywidualnego postrzegania barw.</p>",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/kontrast-i-czytelnosc-kolorow-pl.webp",
+      "imageAlt": "Tester kontrastu kolorów WCAG – Arteon"
     },
     {
       "type": "gap",
@@ -383,6 +385,18 @@
           "answer": "Najważniejsze do sprawdzenia: tekst na tle głównym, tekst na banerach i sekcjach kolorowych, przyciski (kolor tekstu i tła przycisku względem tła strony), linki oraz ikony. Szczególną uwagę warto zwrócić na elementy, które pojawiają się na różnych tłach w zależności od sekcji."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie, które ułatwiłoby Twoją pracę? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/kontrast-i-czytelnosc-kolorow-pl.webp",
+      "imageAlt": "Tester kontrastu kolorów WCAG – Arteon",
+      "defaultSubject": "Feedback: Tester kontrastu kolorów"
     },
     {
       "type": "gap",

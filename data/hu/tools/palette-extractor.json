@@ -64,9 +64,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Miért érdemes színeket kinyerni egy képből?",
-      "html": "<p class=\"mb-4\">Minden fénykép, logó vagy grafika tartalmaz színeket, amelyek kész színpalettaként szolgálhatnak. A kinyaró elemzi a képet és megmutatja, mely színek dominálnak - HEX kódokkal és RGB értékekkel, amelyek készen állnak a projektbe illesztésre.</p><p class=\"mb-4\">A gyakorlatban ez azt jelenti, hogy ahelyett, hogy kézileg mintavenné a színeket egy grafikus alkalmazásban (pixelenként), feltölt egyetlen képet és kap egy rendezett listát akár 12 színről. Ez hasznos, ha színeket választ egy weboldalhoz, konzisztens közösségi média grafikákat készít, vagy vizuális identitást épít meglévő anyagokból.</p><p>Az egész elemzés helyben történik a böngészőben - a kép nem kerül semmilyen szerverre.</p>"
+      "html": "<p class=\"mb-4\">Minden fénykép, logó vagy grafika tartalmaz színeket, amelyek kész színpalettaként szolgálhatnak. A kinyaró elemzi a képet és megmutatja, mely színek dominálnak - HEX kódokkal és RGB értékekkel, amelyek készen állnak a projektbe illesztésre.</p><p class=\"mb-4\">A gyakorlatban ez azt jelenti, hogy ahelyett, hogy kézileg mintavenné a színeket egy grafikus alkalmazásban (pixelenként), feltölt egyetlen képet és kap egy rendezett listát akár 12 színről. Ez hasznos, ha színeket választ egy weboldalhoz, konzisztens közösségi média grafikákat készít, vagy vizuális identitást épít meglévő anyagokból.</p><p>Az egész elemzés helyben történik a böngészőben - a kép nem kerül semmilyen szerverre.</p>",
+      "imageSrc": "/assets/tools/image-color-extractor/szinkinyero-kepbol-hu.webp",
+      "imageAlt": "Színkinyerő képből – Arteon"
     },
     {
       "type": "gap",
@@ -301,6 +303,18 @@
           "answerSchemaText": "A színek egyenként másolhatók a minden szín melletti másolás gombbal."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen nekünk fejleszteni eszközeinket",
+      "description": "Van ötlete egy új funkcióhoz, hibát talált, vagy szeretne javasolni egy másik eszközt, amely megkönnyítené a munkáját? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/image-color-extractor/szinkinyero-kepbol-hu.webp",
+      "imageAlt": "Színkinyerő képből – Arteon",
+      "defaultSubject": "Feedback: Színkinyerő képből"
     },
     {
       "type": "gap",

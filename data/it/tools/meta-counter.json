@@ -63,9 +63,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Perché verificare la lunghezza del meta titolo e della descrizione?",
-      "html": "<p class=\"text-mid\">Il meta titolo e la meta descrizione sono i primi elementi che gli utenti vedono nei risultati di ricerca Google. Un titolo troncato o una descrizione tagliata possono ridurre il tasso di clic e penalizzare il posizionamento della tua pagina.</p><p class=\"text-mid mt-3\">Questo strumento verifica il numero di caratteri, il numero di parole e la larghezza in pixel del tuo titolo e della tua descrizione. Mostra un'anteprima in tempo reale dell'aspetto della tua pagina nei risultati Google, permettendoti di ottimizzare ogni elemento prima della pubblicazione.</p>"
+      "html": "<p class=\"text-mid\">Il meta titolo e la meta descrizione sono i primi elementi che gli utenti vedono nei risultati di ricerca Google. Un titolo troncato o una descrizione tagliata possono ridurre il tasso di clic e penalizzare il posizionamento della tua pagina.</p><p class=\"text-mid mt-3\">Questo strumento verifica il numero di caratteri, il numero di parole e la larghezza in pixel del tuo titolo e della tua descrizione. Mostra un'anteprima in tempo reale dell'aspetto della tua pagina nei risultati Google, permettendoti di ottimizzare ogni elemento prima della pubblicazione.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Verificatore meta titolo e descrizione – Arteon"
     },
     {
       "type": "gap",
@@ -266,6 +268,18 @@
           "answerSchemaText": "No. Elaborazione locale nel browser."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea per una nuova funzionalità, hai trovato un bug o vuoi suggerire un altro strumento che renderebbe il tuo lavoro più facile? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Verificatore meta titolo e descrizione – Arteon",
+      "defaultSubject": "Feedback: Verificatore meta titolo e descrizione"
     },
     {
       "type": "gap",

@@ -69,9 +69,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Mi az a WebP és miért érdemes konvertálni a képeket?",
-      "html": "<p class=\"mb-4\">A WebP egy Google által létrehozott képformátum, amely lehetővé teszi a képfájlok méretének akár 25–35%-os csökkentését JPG-hez és PNG-hez képest - összehasonlítható vizuális minőség mellett. Kisebb fájlok gyorsabb oldalbetöltést jelentenek, ami jobb felhasználói élményt és magasabb pontszámokat eredményez a <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>-ban.</p><p class=\"mb-4\">A WebP formátumot minden modern böngésző támogatja: Chrome, Firefox, Safari (a 14-es verziótól) és Edge. Ha weboldalt, webáruházat vagy blogot üzemeltet, a képek WebP-re konvertálása az egyik legegyszerűbb módja a webhely teljesítményének javítására.</p><p>A konverter támogatja mind a JPG fotókat, mind a PNG grafikákat (beleértve az átlátszóakat is). Egyszerre bármennyi fájlt konvertálhat - mindegyik helyben, a böngészőben kerül feldolgozásra, szerverre küldés nélkül.</p>"
+      "html": "<p class=\"mb-4\">A WebP egy Google által létrehozott képformátum, amely lehetővé teszi a képfájlok méretének akár 25–35%-os csökkentését JPG-hez és PNG-hez képest - összehasonlítható vizuális minőség mellett. Kisebb fájlok gyorsabb oldalbetöltést jelentenek, ami jobb felhasználói élményt és magasabb pontszámokat eredményez a <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>-ban.</p><p class=\"mb-4\">A WebP formátumot minden modern böngésző támogatja: Chrome, Firefox, Safari (a 14-es verziótól) és Edge. Ha weboldalt, webáruházat vagy blogot üzemeltet, a képek WebP-re konvertálása az egyik legegyszerűbb módja a webhely teljesítményének javítására.</p><p>A konverter támogatja mind a JPG fotókat, mind a PNG grafikákat (beleértve az átlátszóakat is). Egyszerre bármennyi fájlt konvertálhat - mindegyik helyben, a böngészőben kerül feldolgozásra, szerverre küldés nélkül.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
+      "imageAlt": "JPG/PNG WebP konverter – Arteon"
     },
     {
       "type": "gap",
@@ -311,6 +313,18 @@
           "answerSchemaText": "Igen, a kisebb fájlok javítják az LCP-t és a Core Web Vitals pontszámokat."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen nekünk fejleszteni eszközeinket",
+      "description": "Van ötlete egy új funkcióhoz, hibát talált, vagy szeretne javasolni egy másik eszközt, amely megkönnyítené a munkáját? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
+      "imageAlt": "JPG/PNG WebP konverter – Arteon",
+      "defaultSubject": "Feedback: JPG/PNG WebP konverter"
     },
     {
       "type": "gap",

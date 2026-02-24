@@ -83,9 +83,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Wat is een QR-code en hoe werkt het?",
-      "html": "<p class=\"text-mid\">Een QR-code (Quick Response) is een tweedimensionale barcode die kan worden gescand met een smartphonecamera. In tegenstelling tot traditionele barcodes slaan QR-codes gegevens zowel horizontaal als verticaal op, waardoor ze aanzienlijk meer informatie kunnen coderen - tot ongeveer 3.000 alfanumerieke tekens.</p><p class=\"text-mid mt-3\">De QR-code werd in 1994 ontwikkeld door het Japanse bedrijf Denso Wave (onderdeel van de Toyota-groep) voor het traceren van auto-onderdelen. Tegenwoordig worden QR-codes breed ingezet in marketing, horeca, logistiek en zakelijke communicatie. Ze werden bijzonder populair tijdens de COVID-19-pandemie, toen restaurants papieren menu's begonnen te vervangen door QR-codes.</p>"
+      "html": "<p class=\"text-mid\">Een QR-code (Quick Response) is een tweedimensionale barcode die kan worden gescand met een smartphonecamera. In tegenstelling tot traditionele barcodes slaan QR-codes gegevens zowel horizontaal als verticaal op, waardoor ze aanzienlijk meer informatie kunnen coderen - tot ongeveer 3.000 alfanumerieke tekens.</p><p class=\"text-mid mt-3\">De QR-code werd in 1994 ontwikkeld door het Japanse bedrijf Denso Wave (onderdeel van de Toyota-groep) voor het traceren van auto-onderdelen. Tegenwoordig worden QR-codes breed ingezet in marketing, horeca, logistiek en zakelijke communicatie. Ze werden bijzonder populair tijdens de COVID-19-pandemie, toen restaurants papieren menu's begonnen te vervangen door QR-codes.</p>",
+      "imageSrc": "/assets/tools/qr-code-generator/gratis-qr-code-generator-nl.webp",
+      "imageAlt": "QR-code generator – Arteon"
     },
     {
       "type": "gap",
@@ -437,6 +439,18 @@
           "answerSchemaText": "vCard slaat contact automatisch op. Tekst-QR toont alleen tekst."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heeft u een idee voor een nieuwe functie, een bug gevonden of wilt u een andere tool voorstellen die uw werk gemakkelijker zou maken? Schrijf ons – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/qr-code-generator/gratis-qr-code-generator-nl.webp",
+      "imageAlt": "QR-code generator – Arteon",
+      "defaultSubject": "Feedback: QR-code generator"
     },
     {
       "type": "gap",

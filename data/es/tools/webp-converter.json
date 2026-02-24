@@ -69,9 +69,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "¿Qué es WebP y por qué convertir imágenes?",
-      "html": "<p class=\"text-mid mb-4\">WebP es un formato de imagen creado por Google que permite reducir el tamaño de los archivos de imagen hasta un 25-35% en comparación con JPG y PNG, manteniendo una calidad visual comparable. Los archivos más pequeños significan una carga de página más rápida, lo que se traduce en una mejor experiencia de usuario y puntuaciones más altas en <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"text-mid mb-4\">El formato WebP es compatible con todos los navegadores modernos: Chrome, Firefox, Safari (desde la versión 14) y Edge. Si tiene un sitio web, tienda online o blog, convertir imágenes a WebP es una de las formas más sencillas de mejorar el rendimiento del sitio.</p><p class=\"text-mid\">El convertidor admite tanto fotos JPG como gráficos PNG (incluidos los que tienen transparencia). Puede convertir cualquier número de archivos a la vez: todos se procesan localmente en el navegador, sin enviarse a un servidor.</p>"
+      "html": "<p class=\"text-mid mb-4\">WebP es un formato de imagen creado por Google que permite reducir el tamaño de los archivos de imagen hasta un 25-35% en comparación con JPG y PNG, manteniendo una calidad visual comparable. Los archivos más pequeños significan una carga de página más rápida, lo que se traduce en una mejor experiencia de usuario y puntuaciones más altas en <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"text-mid mb-4\">El formato WebP es compatible con todos los navegadores modernos: Chrome, Firefox, Safari (desde la versión 14) y Edge. Si tiene un sitio web, tienda online o blog, convertir imágenes a WebP es una de las formas más sencillas de mejorar el rendimiento del sitio.</p><p class=\"text-mid\">El convertidor admite tanto fotos JPG como gráficos PNG (incluidos los que tienen transparencia). Puede convertir cualquier número de archivos a la vez: todos se procesan localmente en el navegador, sin enviarse a un servidor.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "Convertidor JPG/PNG a WebP – Arteon"
     },
     {
       "type": "gap",
@@ -321,6 +323,18 @@
           "answerSchemaText": "La imagen original ya estaba muy comprimida. Mantenga el formato original o baje la calidad."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea para una nueva función, encontraste un error o quieres sugerir otra herramienta que facilite tu trabajo? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "Convertidor JPG/PNG a WebP – Arteon",
+      "defaultSubject": "Feedback: Convertidor JPG/PNG a WebP"
     },
     {
       "type": "gap",

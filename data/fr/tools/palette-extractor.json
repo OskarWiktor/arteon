@@ -63,9 +63,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Extraire les couleurs dominantes d'une image",
-      "html": "<p class=\"text-mid\">L'extracteur de couleurs analyse votre image et identifie les couleurs dominantes. Le résultat est une palette de couleurs avec des codes HEX copiables en un clic – prête à être utilisée dans vos projets de design, votre site web ou vos publications sur les réseaux sociaux.</p><p class=\"text-mid mt-3\">L'outil est particulièrement utile pour créer une palette de marque à partir d'un logo, trouver les couleurs dominantes d'une photo pour un schéma de couleurs cohérent, ou simplement identifier les couleurs d'une image que vous aimez.</p>"
+      "html": "<p class=\"text-mid\">L'extracteur de couleurs analyse votre image et identifie les couleurs dominantes. Le résultat est une palette de couleurs avec des codes HEX copiables en un clic – prête à être utilisée dans vos projets de design, votre site web ou vos publications sur les réseaux sociaux.</p><p class=\"text-mid mt-3\">L'outil est particulièrement utile pour créer une palette de marque à partir d'un logo, trouver les couleurs dominantes d'une photo pour un schéma de couleurs cohérent, ou simplement identifier les couleurs d'une image que vous aimez.</p>",
+      "imageSrc": "/assets/tools/image-color-extractor/extracteur-de-couleurs-d-image-fr.webp",
+      "imageAlt": "Extracteur de couleurs d'image – Arteon"
     },
     {
       "type": "gap",
@@ -300,6 +302,18 @@
           "answerSchemaText": "Actuellement, les couleurs se copient une par une via le bouton à côté de chaque couleur."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée pour une nouvelle fonctionnalité, trouvé un bug ou souhaitez suggérer un autre outil qui faciliterait votre travail ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/image-color-extractor/extracteur-de-couleurs-d-image-fr.webp",
+      "imageAlt": "Extracteur de couleurs d'image – Arteon",
+      "defaultSubject": "Feedback: Extracteur de couleurs d'image"
     },
     {
       "type": "gap",

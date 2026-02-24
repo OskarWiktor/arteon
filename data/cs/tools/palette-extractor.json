@@ -64,9 +64,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Proč extrahovat barvy z obrázku?",
-      "html": "<p class=\"mb-4\">Každá fotografie, logo nebo grafika obsahuje barvy, které mohou sloužit jako hotová barevná paleta. Extraktor analyzuje obrázek a zobrazí, které barvy dominují – spolu s kódy HEX a hodnotami RGB připravenými k vložení do vašeho projektu.</p><p class=\"mb-4\">V praxi to znamená, že místo ručního vzorkování barev v grafickém programu (pixel po pixelu) nahrajete jeden obrázek a získáte uspořádaný seznam až 12 barev. To je užitečné při výběru barev pro web, tvorbě konzistentní grafiky pro sociální sítě nebo budování vizuální identity z existujících materiálů.</p><p>Veškerá analýza probíhá lokálně v prohlížeči – obrázek se neodesílá na žádný server.</p>"
+      "html": "<p class=\"mb-4\">Každá fotografie, logo nebo grafika obsahuje barvy, které mohou sloužit jako hotová barevná paleta. Extraktor analyzuje obrázek a zobrazí, které barvy dominují – spolu s kódy HEX a hodnotami RGB připravenými k vložení do vašeho projektu.</p><p class=\"mb-4\">V praxi to znamená, že místo ručního vzorkování barev v grafickém programu (pixel po pixelu) nahrajete jeden obrázek a získáte uspořádaný seznam až 12 barev. To je užitečné při výběru barev pro web, tvorbě konzistentní grafiky pro sociální sítě nebo budování vizuální identity z existujících materiálů.</p><p>Veškerá analýza probíhá lokálně v prohlížeči – obrázek se neodesílá na žádný server.</p>",
+      "imageSrc": "/assets/tools/image-color-extractor/extraktor-barev-z-obrazku-cs.webp",
+      "imageAlt": "Extraktor barev z obrázku – Arteon"
     },
     {
       "type": "gap",
@@ -291,6 +293,18 @@
           "answerSchemaText": "PNG, JPG a SVG. PNG s průhledným pozadím dává nejlepší výsledky."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad na novou funkci, našli jste chybu nebo chcete navrhnout jiný nástroj, který by usnadnil vaši práci? Napište nám – odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/image-color-extractor/extraktor-barev-z-obrazku-cs.webp",
+      "imageAlt": "Extraktor barev z obrázku – Arteon",
+      "defaultSubject": "Feedback: Extraktor barev z obrázku"
     },
     {
       "type": "gap",

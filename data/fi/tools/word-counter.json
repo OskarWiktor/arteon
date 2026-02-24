@@ -83,9 +83,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Ilmainen sana- ja merkkilaskuri tekstityökaluilla",
-      "html": "<p class=\"text-mid\">Tämä työkalu yhdistää sana- ja merkkilaskurin tekstinmuokkaustoimintoihin. Liitä teksti ja näet sanat, merkit, lauseet, kappaleet, uniikit sanat ja lukuajan.</p><p class=\"text-mid mt-3\">Tekstikentän alla löydät 10 työkalua: kirjainkoon muunto, välilyöntien, tyhjien rivien, duplikaattien poisto ja lajittelu. Kaikki tapahtuu paikallisesti selaimessa.</p>"
+      "html": "<p class=\"text-mid\">Tämä työkalu yhdistää sana- ja merkkilaskurin tekstinmuokkaustoimintoihin. Liitä teksti ja näet sanat, merkit, lauseet, kappaleet, uniikit sanat ja lukuajan.</p><p class=\"text-mid mt-3\">Tekstikentän alla löydät 10 työkalua: kirjainkoon muunto, välilyöntien, tyhjien rivien, duplikaattien poisto ja lajittelu. Kaikki tapahtuu paikallisesti selaimessa.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageAlt": "Sana- ja merkkimäärälaskuri – Arteon"
     },
     {
       "type": "gap",
@@ -345,6 +347,18 @@
           "answerSchemaText": "Kyllä. Teksti käsitellään paikallisesti selaimessa."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea uudelle ominaisuudelle, löysitkö virheen tai haluatko ehdottaa toista työkalua, joka helpottaisi työtäsi? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageAlt": "Sana- ja merkkimäärälaskuri – Arteon",
+      "defaultSubject": "Feedback: Sana- ja merkkimäärälaskuri"
     },
     {
       "type": "gap",

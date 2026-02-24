@@ -73,9 +73,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Wat is een favicon en waarom zou u er een moeten hebben?",
-      "html": "<p class=\"mb-4\">Een favicon is een klein pictogram dat op het browsertabblad verschijnt naast de paginatitel. U ziet het ook in bladwijzers, browsegeschiedenis en op het startscherm van de telefoon wanneer iemand de site als snelkoppeling toevoegt.</p><p class=\"mb-4\">Deze kleine afbeelding vervult een belangrijke functie - het helpt gebruikers een site snel te herkennen tussen vele open tabbladen. Wanneer iemand een dozijn tabbladen open heeft in de browser, is het favicon vaak het enige zichtbare element dat de site identificeert.</p><p>De generator maakt een complete pictogrammenset: een klassiek favicon.ico-bestand voor browsers, PNG-pictogrammen in verschillende formaten en een apple-touch-icon voor Apple-apparaten. Als u een webapp (PWA) bouwt, kunt u ook 192x192- en 512x512-pictogrammen genereren samen met een manifestbestand.</p>"
+      "html": "<p class=\"mb-4\">Een favicon is een klein pictogram dat op het browsertabblad verschijnt naast de paginatitel. U ziet het ook in bladwijzers, browsegeschiedenis en op het startscherm van de telefoon wanneer iemand de site als snelkoppeling toevoegt.</p><p class=\"mb-4\">Deze kleine afbeelding vervult een belangrijke functie - het helpt gebruikers een site snel te herkennen tussen vele open tabbladen. Wanneer iemand een dozijn tabbladen open heeft in de browser, is het favicon vaak het enige zichtbare element dat de site identificeert.</p><p>De generator maakt een complete pictogrammenset: een klassiek favicon.ico-bestand voor browsers, PNG-pictogrammen in verschillende formaten en een apple-touch-icon voor Apple-apparaten. Als u een webapp (PWA) bouwt, kunt u ook 192x192- en 512x512-pictogrammen genereren samen met een manifestbestand.</p>",
+      "imageSrc": "/assets/tools/favicon-generator/gratis-favicon-generator-nl.webp",
+      "imageAlt": "Favicon generator – Arteon"
     },
     {
       "type": "gap",
@@ -320,6 +322,18 @@
           "answerSchemaText": "Browsers cachen favicons agressief. Wis de cache of voeg een versieparameter toe."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heeft u een idee voor een nieuwe functie, een bug gevonden of wilt u een andere tool voorstellen die uw werk gemakkelijker zou maken? Schrijf ons – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/favicon-generator/gratis-favicon-generator-nl.webp",
+      "imageAlt": "Favicon generator – Arteon",
+      "defaultSubject": "Feedback: Favicon generator"
     },
     {
       "type": "gap",

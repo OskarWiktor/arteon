@@ -83,9 +83,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Po co generować paletę kolorów?",
-      "html": "<p class=\"text-mid\">Spójna paleta kolorów to podstawa każdego projektu wizualnego - od strony internetowej, przez logo, po materiały drukowane. Ręczne dobieranie barw, które do siebie pasują, wymaga znajomości teorii koloru. Generator robi to automatycznie: podajesz jeden kolor bazowy (np. kolor swojego logo), a narzędzie tworzy 9 zestawów kolorów opartych na sprawdzonych schematach harmonii barw.</p><p class=\"text-mid mt-3\">Każdy wygenerowany kolor ma podany kod HEX (np. #496ba2) i wartość HSL (odcień, nasycenie, jasność). Kod HEX możesz wkleić bezpośrednio do CSS, Figmy, Canvy lub dowolnego programu graficznego.</p>"
+      "html": "<p class=\"text-mid\">Spójna paleta kolorów to podstawa każdego projektu wizualnego - od strony internetowej, przez logo, po materiały drukowane. Ręczne dobieranie barw, które do siebie pasują, wymaga znajomości teorii koloru. Generator robi to automatycznie: podajesz jeden kolor bazowy (np. kolor swojego logo), a narzędzie tworzy 9 zestawów kolorów opartych na sprawdzonych schematach harmonii barw.</p><p class=\"text-mid mt-3\">Każdy wygenerowany kolor ma podany kod HEX (np. #496ba2) i wartość HSL (odcień, nasycenie, jasność). Kod HEX możesz wkleić bezpośrednio do CSS, Figmy, Canvy lub dowolnego programu graficznego.</p>",
+      "imageSrc": "/assets/tools/color-palette-generator/generator-palet-kolorow-pl.webp",
+      "imageAlt": "Generator palet kolorów online – Arteon"
     },
     {
       "type": "gap",
@@ -278,6 +280,18 @@
           "answerSchemaText": "Generator jest darmowy, nie wymaga logowania. Kolory generowane są lokalnie w przeglądarce."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie, które ułatwiłoby Twoją pracę? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/color-palette-generator/generator-palet-kolorow-pl.webp",
+      "imageAlt": "Generator palet kolorów online – Arteon",
+      "defaultSubject": "Feedback: Generator palet kolorów"
     },
     {
       "type": "gap",

@@ -82,9 +82,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Why does color readability matter?",
-      "html": "<p class=\"text-mid\">Readability is the luminance difference between the text color and the background color. The greater the difference, the easier it is to read the text. Too low contrast makes content hard to read - especially for people with vision impairments, older adults, or in difficult lighting conditions (e.g., on a phone in direct sunlight).</p><p class=\"text-mid mt-3\">According to the <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">World Health Organization (WHO)</a>, approximately 2.2 billion people worldwide have some form of vision impairment. In addition, millions have color blindness (about 8% of men and 0.5% of women), and many more experience age-related vision decline.</p><p class=\"text-mid mt-3\">The tool calculates the contrast ratio using the formula specified in the <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Web Content Accessibility Guidelines)</a> - international digital accessibility guidelines. The result allows an objective assessment of whether colors are readable enough, regardless of monitor settings or individual color perception.</p>"
+      "html": "<p class=\"text-mid\">Readability is the luminance difference between the text color and the background color. The greater the difference, the easier it is to read the text. Too low contrast makes content hard to read - especially for people with vision impairments, older adults, or in difficult lighting conditions (e.g., on a phone in direct sunlight).</p><p class=\"text-mid mt-3\">According to the <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">World Health Organization (WHO)</a>, approximately 2.2 billion people worldwide have some form of vision impairment. In addition, millions have color blindness (about 8% of men and 0.5% of women), and many more experience age-related vision decline.</p><p class=\"text-mid mt-3\">The tool calculates the contrast ratio using the formula specified in the <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Web Content Accessibility Guidelines)</a> - international digital accessibility guidelines. The result allows an objective assessment of whether colors are readable enough, regardless of monitor settings or individual color perception.</p>",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/color-contrast-checker-en.webp",
+      "imageAlt": "Color contrast checker – Arteon"
     },
     {
       "type": "gap",
@@ -379,6 +381,18 @@
           "answer": "Most important: text on the main background, text on banners and colored sections, buttons (text color and button background relative to page background), links, and icons. Pay special attention to elements that appear on different backgrounds depending on the section."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea for a new feature, found a bug, or want to suggest another tool that would make your work easier? Write to us – we respond within 24 hours.",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/color-contrast-checker-en.webp",
+      "imageAlt": "Color contrast checker – Arteon",
+      "defaultSubject": "Feedback: Color contrast checker"
     },
     {
       "type": "gap",

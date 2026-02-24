@@ -83,9 +83,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Ce este un cod QR și cum funcționează?",
-      "html": "<p class=\"text-mid\">Un cod QR (Quick Response) este un cod de bare bidimensional care poate fi scanat cu camera unui smartphone. Spre deosebire de codurile de bare tradiționale, codurile QR stochează date atât orizontal cât și vertical, permițându-le să codifice semnificativ mai multe informații - până la aproximativ 3.000 de caractere alfanumerice.</p><p class=\"text-mid mt-3\">Codul QR a fost dezvoltat în 1994 de compania japoneză Denso Wave (parte a grupului Toyota) pentru urmărirea pieselor auto. Astăzi, codurile QR sunt utilizate pe scară largă în marketing, ospitalitate, logistică și comunicare de afaceri. Au căpătat o popularitate deosebită în timpul pandemiei COVID-19, când restaurantele au început să înlocuiască meniurile de hârtie cu coduri QR.</p>"
+      "html": "<p class=\"text-mid\">Un cod QR (Quick Response) este un cod de bare bidimensional care poate fi scanat cu camera unui smartphone. Spre deosebire de codurile de bare tradiționale, codurile QR stochează date atât orizontal cât și vertical, permițându-le să codifice semnificativ mai multe informații - până la aproximativ 3.000 de caractere alfanumerice.</p><p class=\"text-mid mt-3\">Codul QR a fost dezvoltat în 1994 de compania japoneză Denso Wave (parte a grupului Toyota) pentru urmărirea pieselor auto. Astăzi, codurile QR sunt utilizate pe scară largă în marketing, ospitalitate, logistică și comunicare de afaceri. Au căpătat o popularitate deosebită în timpul pandemiei COVID-19, când restaurantele au început să înlocuiască meniurile de hârtie cu coduri QR.</p>",
+      "imageSrc": "/assets/tools/qr-code-generator/generator-coduri-qr-gratuit-ro.webp",
+      "imageAlt": "Generator coduri QR – Arteon"
     },
     {
       "type": "gap",
@@ -437,6 +439,18 @@
           "answerSchemaText": "vCard salvează contactul automat. Codul QR text doar afișează textul."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să îmbunătățim instrumentele noastre",
+      "description": "Aveți o idee pentru o nouă funcție, ați găsit o eroare sau doriți să sugerați un alt instrument care v-ar ușura munca? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/qr-code-generator/generator-coduri-qr-gratuit-ro.webp",
+      "imageAlt": "Generator coduri QR – Arteon",
+      "defaultSubject": "Feedback: Generator coduri QR"
     },
     {
       "type": "gap",

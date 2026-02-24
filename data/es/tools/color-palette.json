@@ -76,9 +76,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "¿Por qué generar una paleta de colores?",
-      "html": "<p class=\"text-mid\">Una paleta de colores coherente es la base de todo proyecto visual, desde un sitio web, pasando por un logotipo, hasta materiales impresos. Seleccionar manualmente colores que funcionen juntos requiere conocimientos de teoría del color. El generador lo hace automáticamente: usted proporciona un color base (p. ej., el color de su logotipo) y la herramienta crea 9 conjuntos de colores basados en esquemas de armonía cromática probados.</p><p class=\"text-mid mt-3\">Cada color generado viene con su código HEX (p. ej., #496ba2) y valor HSL (tono, saturación, luminosidad). El código HEX se puede pegar directamente en CSS, Figma, Canva o cualquier aplicación gráfica.</p>"
+      "html": "<p class=\"text-mid\">Una paleta de colores coherente es la base de todo proyecto visual, desde un sitio web, pasando por un logotipo, hasta materiales impresos. Seleccionar manualmente colores que funcionen juntos requiere conocimientos de teoría del color. El generador lo hace automáticamente: usted proporciona un color base (p. ej., el color de su logotipo) y la herramienta crea 9 conjuntos de colores basados en esquemas de armonía cromática probados.</p><p class=\"text-mid mt-3\">Cada color generado viene con su código HEX (p. ej., #496ba2) y valor HSL (tono, saturación, luminosidad). El código HEX se puede pegar directamente en CSS, Figma, Canva o cualquier aplicación gráfica.</p>",
+      "imageSrc": "/assets/tools/color-palette-generator/generador-de-paletas-de-colores-es.webp",
+      "imageAlt": "Generador de paletas de colores – Arteon"
     },
     {
       "type": "gap",
@@ -271,6 +273,18 @@
           "answerSchemaText": "El generador es gratuito y no requiere inicio de sesión. Los colores se generan localmente en el navegador."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea para una nueva función, encontraste un error o quieres sugerir otra herramienta que facilite tu trabajo? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/color-palette-generator/generador-de-paletas-de-colores-es.webp",
+      "imageAlt": "Generador de paletas de colores – Arteon",
+      "defaultSubject": "Feedback: Generador de paletas de colores"
     },
     {
       "type": "gap",

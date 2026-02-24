@@ -70,9 +70,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Perché una firma e-mail professionale?",
-      "html": "<p class=\"text-mid\">Una firma e-mail è molto più di semplici dati di contatto in fondo a un messaggio. Contiene il tuo nome, il tuo ruolo, la tua azienda, i tuoi recapiti e eventualmente un link CTA o profili social. Una firma coerente e professionale rafforza l'immagine del brand in ogni e-mail inviata.</p><p class=\"text-mid mt-3\">In media, un impiegato d'ufficio invia 30-40 e-mail al giorno. Ognuna di queste e-mail è un'occasione per presentare il tuo brand, inserire un link CTA e dare al destinatario un accesso diretto ai tuoi profili social. Con questo strumento, crea una firma all'altezza di queste esigenze.</p>"
+      "html": "<p class=\"text-mid\">Una firma e-mail è molto più di semplici dati di contatto in fondo a un messaggio. Contiene il tuo nome, il tuo ruolo, la tua azienda, i tuoi recapiti e eventualmente un link CTA o profili social. Una firma coerente e professionale rafforza l'immagine del brand in ogni e-mail inviata.</p><p class=\"text-mid mt-3\">In media, un impiegato d'ufficio invia 30-40 e-mail al giorno. Ognuna di queste e-mail è un'occasione per presentare il tuo brand, inserire un link CTA e dare al destinatario un accesso diretto ai tuoi profili social. Con questo strumento, crea una firma all'altezza di queste esigenze.</p>",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/generatore-di-firma-email-gratuito-it.webp",
+      "imageAlt": "Generatore di firma email – Arteon"
     },
     {
       "type": "gap",
@@ -410,6 +412,18 @@
           "answerSchemaText": "Nome e indirizzo e-mail devono essere compilati."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea per una nuova funzionalità, hai trovato un bug o vuoi suggerire un altro strumento che renderebbe il tuo lavoro più facile? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/generatore-di-firma-email-gratuito-it.webp",
+      "imageAlt": "Generatore di firma email – Arteon",
+      "defaultSubject": "Feedback: Generatore di firma email"
     },
     {
       "type": "gap",

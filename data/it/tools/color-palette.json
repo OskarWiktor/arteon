@@ -71,9 +71,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Generare palette da un singolo colore",
-      "html": "<p class=\"text-mid\">Il generatore di palette crea 9 palette diverse da un singolo colore base, basandosi sulla teoria dei colori. Ogni palette ha una composizione diversa - dalle variazioni monocromatiche ai colori complementari contrastanti.</p><p class=\"text-mid mt-3\">Tutti i calcoli si basano sullo spazio colore HSL (tonalità, Saturazione, luminosità). La tonalità determina il colore base, la saturazione l'intensita e la luminosità il carattere chiaro o scuro. Questo modello corrisponde alla percezione umana dei colori e si presta perfettamente alla generazione di palette.</p>"
+      "html": "<p class=\"text-mid\">Il generatore di palette crea 9 palette diverse da un singolo colore base, basandosi sulla teoria dei colori. Ogni palette ha una composizione diversa - dalle variazioni monocromatiche ai colori complementari contrastanti.</p><p class=\"text-mid mt-3\">Tutti i calcoli si basano sullo spazio colore HSL (tonalità, Saturazione, luminosità). La tonalità determina il colore base, la saturazione l'intensita e la luminosità il carattere chiaro o scuro. Questo modello corrisponde alla percezione umana dei colori e si presta perfettamente alla generazione di palette.</p>",
+      "imageSrc": "/assets/tools/color-palette-generator/generatore-di-palette-di-colori-it.webp",
+      "imageAlt": "Generatore di palette di colori – Arteon"
     },
     {
       "type": "gap",
@@ -271,6 +273,18 @@
           "answerSchemaText": "Triadica: 3 colori a 120 gradi. Complementare divisa: colore base + 2 vicini del complementare."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea per una nuova funzionalità, hai trovato un bug o vuoi suggerire un altro strumento che renderebbe il tuo lavoro più facile? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/color-palette-generator/generatore-di-palette-di-colori-it.webp",
+      "imageAlt": "Generatore di palette di colori – Arteon",
+      "defaultSubject": "Feedback: Generatore di palette di colori"
     },
     {
       "type": "gap",

@@ -83,9 +83,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Mi az a QR-kód és hogyan működik?",
-      "html": "<p class=\"text-mid\">A QR-kód (Quick Response) egy kétdimenziós vonalkód, amely okostelefon kamerával olvasható. A hagyományos vonalkódokkal ellentétben a QR-kódok vízszintesen és függőlegesen egyaránt tárolnak adatokat, így lényegesen több információt kódolhatnak - közelítőleg 3000 alfanumerikus karakterig.</p><p class=\"text-mid mt-3\">A QR-kódot 1994-ben fejlesztette ki a japán Denso Wave cég (a Toyota csoport része) autóalkatrészek követésére. Ma a QR-kódokat széles körben használják a marketingben, a vendéglátásban, a logisztikában és az üzleti kommunikációban. Különös népszerűségre tettek szert a COVID-19 járvány idején, amikor az éttermek papír menüiket QR-kódokra cserélték.</p>"
+      "html": "<p class=\"text-mid\">A QR-kód (Quick Response) egy kétdimenziós vonalkód, amely okostelefon kamerával olvasható. A hagyományos vonalkódokkal ellentétben a QR-kódok vízszintesen és függőlegesen egyaránt tárolnak adatokat, így lényegesen több információt kódolhatnak - közelítőleg 3000 alfanumerikus karakterig.</p><p class=\"text-mid mt-3\">A QR-kódot 1994-ben fejlesztette ki a japán Denso Wave cég (a Toyota csoport része) autóalkatrészek követésére. Ma a QR-kódokat széles körben használják a marketingben, a vendéglátásban, a logisztikában és az üzleti kommunikációban. Különös népszerűségre tettek szert a COVID-19 járvány idején, amikor az éttermek papír menüiket QR-kódokra cserélték.</p>",
+      "imageSrc": "/assets/tools/qr-code-generator/ingyenes-qr-kod-generator-hu.webp",
+      "imageAlt": "QR-kód generátor – Arteon"
     },
     {
       "type": "gap",
@@ -437,6 +439,18 @@
           "answerSchemaText": "A vCard automatikusan menti a névjegyet. A szöveges QR csak szöveget jelenít meg."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen nekünk fejleszteni eszközeinket",
+      "description": "Van ötlete egy új funkcióhoz, hibát talált, vagy szeretne javasolni egy másik eszközt, amely megkönnyítené a munkáját? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/qr-code-generator/ingyenes-qr-kod-generator-hu.webp",
+      "imageAlt": "QR-kód generátor – Arteon",
+      "defaultSubject": "Feedback: QR-kód generátor"
     },
     {
       "type": "gap",

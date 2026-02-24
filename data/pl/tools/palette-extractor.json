@@ -63,9 +63,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Po co wyciągać kolory z obrazu?",
-      "html": "<p class=\"text-mid mb-4\">Każde zdjęcie, logo czy grafika zawiera barwy, które można wykorzystać jako gotową paletę kolorów. Ekstraktor analizuje obraz i pokazuje, które kolory na nim dominują - wraz z kodami HEX i wartościami RGB gotowymi do wklejenia w projekt.</p><p class=\"text-mid mb-4\">W praktyce oznacza to, że zamiast ręcznie próbkować kolory w programie graficznym (pixel po pikselu), wgrywasz jedno zdjęcie i dostajesz uporządkowaną listę do 12 barw. To przydaje się przy dobieraniu kolorów do strony internetowej, tworzeniu spójnych grafik do mediów społecznościowych lub budowaniu identyfikacji wizualnej na podstawie istniejącego materiału.</p><p class=\"text-mid\">Cała analiza odbywa się lokalnie w przeglądarce - obraz nie jest wysyłany na żaden serwer.</p>"
+      "html": "<p class=\"text-mid mb-4\">Każde zdjęcie, logo czy grafika zawiera barwy, które można wykorzystać jako gotową paletę kolorów. Ekstraktor analizuje obraz i pokazuje, które kolory na nim dominują - wraz z kodami HEX i wartościami RGB gotowymi do wklejenia w projekt.</p><p class=\"text-mid mb-4\">W praktyce oznacza to, że zamiast ręcznie próbkować kolory w programie graficznym (pixel po pikselu), wgrywasz jedno zdjęcie i dostajesz uporządkowaną listę do 12 barw. To przydaje się przy dobieraniu kolorów do strony internetowej, tworzeniu spójnych grafik do mediów społecznościowych lub budowaniu identyfikacji wizualnej na podstawie istniejącego materiału.</p><p class=\"text-mid\">Cała analiza odbywa się lokalnie w przeglądarce - obraz nie jest wysyłany na żaden serwer.</p>",
+      "imageSrc": "/assets/tools/image-color-extractor/ekstraktor-kolorow-z-obrazu-pl.webp",
+      "imageAlt": "Ekstraktor kolorów z obrazu – Arteon"
     },
     {
       "type": "gap",
@@ -294,6 +296,18 @@
           "answer": "Obecnie narzędzie pozwala kopiować kolory pojedynczo - przy każdym kolorze znajduje się przycisk, który kopiuje kod HEX do schowka. Skopiowany kod można od razu wkleić do Figmy, Photoshopa, CSS lub innego programu."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie, które ułatwiłoby Twoją pracę? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/image-color-extractor/ekstraktor-kolorow-z-obrazu-pl.webp",
+      "imageAlt": "Ekstraktor kolorów z obrazu – Arteon",
+      "defaultSubject": "Feedback: Ekstraktor kolorów z obrazu"
     },
     {
       "type": "gap",

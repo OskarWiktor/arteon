@@ -83,9 +83,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Gratis ord- och teckenräknare med textverktyg",
-      "html": "<p class=\"text-mid\">Detta verktyg kombinerar en ord- och teckenräknare med textformateringsfunktioner. Klistra in text och se ord, tecken, meningar, stycken, unika ord och lästid.</p><p class=\"text-mid mt-3\">Under textfältet hittar du 10 verktyg: versalkonvertering, borttagning av mellanslag, tomma rader, dubbletter och sortering. Allt bearbetas lokalt i din webbläsare.</p>"
+      "html": "<p class=\"text-mid\">Detta verktyg kombinerar en ord- och teckenräknare med textformateringsfunktioner. Klistra in text och se ord, tecken, meningar, stycken, unika ord och lästid.</p><p class=\"text-mid mt-3\">Under textfältet hittar du 10 verktyg: versalkonvertering, borttagning av mellanslag, tomma rader, dubbletter och sortering. Allt bearbetas lokalt i din webbläsare.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageAlt": "Ord- och teckenräknare – Arteon"
     },
     {
       "type": "gap",
@@ -345,6 +347,18 @@
           "answerSchemaText": "Ja. Texten bearbetas lokalt i webbläsaren."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss att förbättra våra verktyg",
+      "description": "Har du en idé för en ny funktion, hittat en bugg eller vill föreslå ett annat verktyg som skulle göra ditt arbete enklare? Skriv till oss – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageAlt": "Ord- och teckenräknare – Arteon",
+      "defaultSubject": "Feedback: Ord- och teckenräknare"
     },
     {
       "type": "gap",

@@ -73,9 +73,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "¿Qué es un favicon y por qué debería tener uno?",
-      "html": "<p class=\"text-mid mb-4\">Un favicon es un pequeño icono que aparece en la pestaña del navegador junto al título de la página. También lo ve en los marcadores, el historial de navegación y en la pantalla de inicio del teléfono cuando alguien añade el sitio como acceso directo.</p><p class=\"text-mid mb-4\">Este pequeño gráfico cumple una función importante: ayuda a los usuarios a reconocer rápidamente un sitio entre muchas pestañas abiertas. Cuando alguien tiene una docena de pestañas abiertas en el navegador, el favicon suele ser el único elemento visible que identifica el sitio.</p><p class=\"text-mid\">El generador crea un conjunto completo de iconos: un archivo favicon.ico clásico para navegadores, iconos PNG en varios tamaños y un apple-touch-icon para dispositivos Apple. Si está construyendo una aplicación web (PWA), también puede generar iconos de 192x192 y 512x512 junto con un archivo manifest.</p>"
+      "html": "<p class=\"text-mid mb-4\">Un favicon es un pequeño icono que aparece en la pestaña del navegador junto al título de la página. También lo ve en los marcadores, el historial de navegación y en la pantalla de inicio del teléfono cuando alguien añade el sitio como acceso directo.</p><p class=\"text-mid mb-4\">Este pequeño gráfico cumple una función importante: ayuda a los usuarios a reconocer rápidamente un sitio entre muchas pestañas abiertas. Cuando alguien tiene una docena de pestañas abiertas en el navegador, el favicon suele ser el único elemento visible que identifica el sitio.</p><p class=\"text-mid\">El generador crea un conjunto completo de iconos: un archivo favicon.ico clásico para navegadores, iconos PNG en varios tamaños y un apple-touch-icon para dispositivos Apple. Si está construyendo una aplicación web (PWA), también puede generar iconos de 192x192 y 512x512 junto con un archivo manifest.</p>",
+      "imageSrc": "/assets/tools/favicon-generator/generador-de-favicon-gratuito-es.webp",
+      "imageAlt": "Generador de favicon – Arteon"
     },
     {
       "type": "gap",
@@ -320,6 +322,18 @@
           "answerSchemaText": "Los navegadores almacenan en caché los favicons agresivamente. Limpie la caché o añada un parámetro de versión."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea para una nueva función, encontraste un error o quieres sugerir otra herramienta que facilite tu trabajo? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/favicon-generator/generador-de-favicon-gratuito-es.webp",
+      "imageAlt": "Generador de favicon – Arteon",
+      "defaultSubject": "Feedback: Generador de favicon"
     },
     {
       "type": "gap",

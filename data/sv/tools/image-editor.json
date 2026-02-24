@@ -69,9 +69,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Varför är det viktigt att beskära bilder till rätt bildförhållande?",
-      "html": "<p class=\"text-mid\">Varje plattform har sina egna krav på bildmått. En profilbild på Instagram är kvadratisk (1:1), ett Facebook-omslag är brett (820×312 px) och en YouTube-miniatyrbild är 16:9. Att ladda upp en bild med fel bildförhållande leder till automatisk beskärning – som ofta tar bort en viktig del av bilden.</p><p class=\"text-mid mt-3\">Denna redigerare låter dig förbereda en bild med rätt bildförhållande innan uppladdning. Välj ett färdigt format eller ange egna mått och få en exakt beskuren bild.</p>"
+      "html": "<p class=\"text-mid\">Varje plattform har sina egna krav på bildmått. En profilbild på Instagram är kvadratisk (1:1), ett Facebook-omslag är brett (820×312 px) och en YouTube-miniatyrbild är 16:9. Att ladda upp en bild med fel bildförhållande leder till automatisk beskärning – som ofta tar bort en viktig del av bilden.</p><p class=\"text-mid mt-3\">Denna redigerare låter dig förbereda en bild med rätt bildförhållande innan uppladdning. Välj ett färdigt format eller ange egna mått och få en exakt beskuren bild.</p>",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/bildredigerare-sv.webp",
+      "imageAlt": "Online bildredigerare – Arteon"
     },
     {
       "type": "gap",
@@ -114,20 +116,29 @@
       "title": "Hur lägger man till en bild?",
       "html": "<p class=\"text-mid\">Verktyget accepterar bilder i formaten JPG, PNG och WebP. Du kan lägga till en bild på två sätt:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Dra och släpp</strong> – ta tag i filen från en mapp och släpp den på fältet för att lägga till filer (fältet med streckad ram).</li><li><strong>Välj från disk</strong> – efter att du klickat på fältet öppnas ett fönster för att välja en fil från disken.</li></ul><p class=\"text-mid mt-3\">Efter att bilden lagts till läser verktyget automatiskt dess originaldimensioner och visar en förhandsvisning. Nu kan du gå vidare till beskärningsinställningarna.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Ställ in måldimensioner",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Dimensioner i px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Färdiga format</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Bredd (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly /></div><div><label class=\"text-[14px]! font-medium\">Höjd (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly /></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\" /><span>Behåll proportioner (automatisk andra dimension)</span></label></div></div>",
       "html": "<p class=\"text-mid\">I fliken <strong>Dimensioner i px</strong> anger du bredd och höjd manuellt. Alternativet <strong>Behåll proportioner</strong> anpassar automatiskt den andra dimensionen.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Bilddimensioner för Instagram, Facebook och LinkedIn",
       "html": "<p class=\"text-mid mb-4\">Verktyget innehåller färdiga format med optimala dimensioner för de populäraste plattformarna:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Plattform</th><th class=\"py-2 pr-4 font-semibold\">Format</th><th class=\"py-2 pr-4 font-semibold\">Dimensioner (px)</th><th class=\"py-2 font-semibold\">Bildformat</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Kvadratiskt inlägg</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Stående inlägg</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Inlägg</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Sidomslag</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Inlägg</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Profilbanner</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG image</td><td class=\"py-2 pr-4\">Länkdelning</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Färdiga format för sociala medier",
@@ -175,20 +186,29 @@
       "title": "Hur beskär man en bild?",
       "html": "<p class=\"text-mid\">Efter att måldimensionerna ställts in visas ett interaktivt beskärningsområde i förhandsvisningen. Den ljusa delen av bilden är den del som sparas – resten är mörklagd.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Dra beskärningen</p><p class=\"text-mid mt-1\">Ta tag i det ljusa området och dra det till önskat ställe på bilden. På så sätt väljer du vilken del av fotografiet som exporteras.</p></div><div><p class=\"text-dark font-semibold\">Ändra storlek med handtag</p><p class=\"text-mid mt-1\">I hörnen av beskärningsområdet finns små fyrkanter (handtag). Genom att dra dem ändrar du beskärningens storlek medan proportionerna behålls.</p></div><div><p class=\"text-dark font-semibold\">Zoom</p><p class=\"text-mid mt-1\">I fliken <strong>Zoom</strong> hittar du ett reglage för att justera zoom (100–300 %). Ett högre värde innebär att beskärningen täcker en mindre del av originalbilden.</p></div><div><p class=\"text-dark font-semibold\">Exakt positionsinställning</p><p class=\"text-mid mt-1\">I fliken <strong>Position</strong> kan du ställa in den exakta positionen i procent (0–100 % för X- och Y-axeln). Centreringsknapparna centrerar beskärningen snabbt.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Beskärningsformer",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Rektangel</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Kvadrat</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Cirkel</span></div></div>",
       "html": "<p class=\"text-mid\">I fliken <strong>Beskärningsformer</strong> väljer du formen på den exporterade bilden: rektangel (med valda proportioner), kvadrat (tvingar 1:1) eller cirkel (med transparent bakgrund).</p><p class=\"text-mid mt-3\">Cirkelformen skapar en rund avatar med transparent bakgrund utanför cirkeln. Verktyget byter automatiskt format till PNG eller WebP, eftersom JPG inte stöder transparens.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "3×3-rutnät – vad används det till?",
       "html": "<p class=\"text-mid\">På beskärningsområdet syns ett rutnät som delar bilden i 9 lika delar. Det är en visualisering av <strong>tredjdelsregeln</strong> – en av grundreglerna för fotografisk komposition.</p><p class=\"text-mid mt-3\">Regeln säger att de viktigaste elementen i fotografiet (ansikte, produkt, intressepunkt) bör ligga vid rutnätslinjernas skärningspunkter eller längs dem. En sådan komposition är mer dynamisk och behaglig för ögat än att placera objektet exakt i mitten.</p><p class=\"text-mid mt-3\">I fliken <strong>Rutnätsfärg</strong> kan du ändra linjernas färg (grön, vit, svart, röd, gul), så att rutnätet syns tydligt på olika fotografier.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Export – vilket format ska du välja?",
@@ -271,6 +291,18 @@
           "answerSchemaText": "Nej. Bilden bearbetas i webbläsaren. Den skickas inte till någon server."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss att förbättra våra verktyg",
+      "description": "Har du en idé för en ny funktion, hittat en bugg eller vill föreslå ett annat verktyg som skulle göra ditt arbete enklare? Skriv till oss – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/bildredigerare-sv.webp",
+      "imageAlt": "Online bildredigerare – Arteon",
+      "defaultSubject": "Feedback: Online bildredigerare"
     },
     {
       "type": "gap",

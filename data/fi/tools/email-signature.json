@@ -82,9 +82,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Miksi tarvitset ammattimaisen sähköpostiallekirjoituksen?",
-      "html": "<p class=\"text-mid\">Sähköpostiallekirjoitus (kutsutaan myös sähköpostin alatunnisteeksi) on tietolohko jokaisen lähetetyn viestin alareunassa. Se sisältää yhteystiedot, tittelin, yrityksen nimen ja usein linkin verkkosivulle tai ajanvarauskalenteriin.</p><p class=\"text-mid mt-3\">Vastaanottajan ei tarvitse etsiä puhelinnumeroa aiemmista viesteistä – kaikki tiedot ovat helposti saatavilla. Ammattimainen sähköpostiallekirjoitus osoittaa myös, että kiinnität huomiota yksityiskohtiin ja ylläpidät yhtenäistä yritysimago liikeviestinnässä.</p>"
+      "html": "<p class=\"text-mid\">Sähköpostiallekirjoitus (kutsutaan myös sähköpostin alatunnisteeksi) on tietolohko jokaisen lähetetyn viestin alareunassa. Se sisältää yhteystiedot, tittelin, yrityksen nimen ja usein linkin verkkosivulle tai ajanvarauskalenteriin.</p><p class=\"text-mid mt-3\">Vastaanottajan ei tarvitse etsiä puhelinnumeroa aiemmista viesteistä – kaikki tiedot ovat helposti saatavilla. Ammattimainen sähköpostiallekirjoitus osoittaa myös, että kiinnität huomiota yksityiskohtiin ja ylläpidät yhtenäistä yritysimago liikeviestinnässä.</p>",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/ilmainen-sahkopostiallekirjoitus-generaattori-fi.webp",
+      "imageAlt": "Sähköpostiallekirjoitusgeneraattori – Arteon"
     },
     {
       "type": "gap",
@@ -344,6 +346,18 @@
           "answer": "Kyllä. Generaattori ei vaadi kirjautumista tai rekisteröitymistä. Jokainen tiimin jäsen voi avata työkalun, täyttää omat tietonsa ja kopioida valmiin allekirjoituksen. Määritykset voidaan myös viedä JSON-tiedostona ja jakaa kollegoille."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea uudelle ominaisuudelle, löysitkö virheen tai haluatko ehdottaa toista työkalua, joka helpottaisi työtäsi? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/ilmainen-sahkopostiallekirjoitus-generaattori-fi.webp",
+      "imageAlt": "Sähköpostiallekirjoitusgeneraattori – Arteon",
+      "defaultSubject": "Feedback: Sähköpostiallekirjoitusgeneraattori"
     },
     {
       "type": "gap",

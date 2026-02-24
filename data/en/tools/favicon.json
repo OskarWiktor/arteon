@@ -73,9 +73,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "What is a favicon and why should you have one?",
-      "html": "<p class=\"mb-4\">A favicon is a small icon that appears on the browser tab next to the page title. You also see it in bookmarks, browsing history, and on the phone home screen when someone adds the site as a shortcut.</p><p class=\"mb-4\">This small graphic serves an important function - it helps users quickly recognize a site among many open tabs. When someone has a dozen tabs open in the browser, the favicon is often the only visible element identifying the site.</p><p>The generator creates a complete icon set: a classic favicon.ico file for browsers, PNG icons in various sizes, and an apple-touch-icon for Apple devices. If you are building a web app (PWA), you can also generate 192x192 and 512x512 icons along with a manifest file.</p>"
+      "html": "<p class=\"mb-4\">A favicon is a small icon that appears on the browser tab next to the page title. You also see it in bookmarks, browsing history, and on the phone home screen when someone adds the site as a shortcut.</p><p class=\"mb-4\">This small graphic serves an important function - it helps users quickly recognize a site among many open tabs. When someone has a dozen tabs open in the browser, the favicon is often the only visible element identifying the site.</p><p>The generator creates a complete icon set: a classic favicon.ico file for browsers, PNG icons in various sizes, and an apple-touch-icon for Apple devices. If you are building a web app (PWA), you can also generate 192x192 and 512x512 icons along with a manifest file.</p>",
+      "imageSrc": "/assets/tools/favicon-generator/free-favicon-generator-en.webp",
+      "imageAlt": "Favicon generator – Arteon"
     },
     {
       "type": "gap",
@@ -320,6 +322,18 @@
           "answerSchemaText": "Browsers cache favicons aggressively. Clear cache or add a version parameter."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea for a new feature, found a bug, or want to suggest another tool that would make your work easier? Write to us – we respond within 24 hours.",
+      "imageSrc": "/assets/tools/favicon-generator/free-favicon-generator-en.webp",
+      "imageAlt": "Favicon generator – Arteon",
+      "defaultSubject": "Feedback: Favicon generator"
     },
     {
       "type": "gap",

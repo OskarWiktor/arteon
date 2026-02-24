@@ -83,9 +83,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Gratis ord- og tegnteller med tekstverktøy",
-      "html": "<p class=\"text-mid\">Dette verktøyet kombinerer en ord- og tegnteller med tekstformateringsfunksjoner. Lim inn tekst og se ord, tegn, setninger, avsnitt, unike ord og lesetid.</p><p class=\"text-mid mt-3\">Under tekstfeltet finner du 10 verktøy: konvertering av store/små bokstaver, fjerning av mellomrom, tomme linjer, duplikater og sortering. Alt behandles lokalt i nettleseren.</p>"
+      "html": "<p class=\"text-mid\">Dette verktøyet kombinerer en ord- og tegnteller med tekstformateringsfunksjoner. Lim inn tekst og se ord, tegn, setninger, avsnitt, unike ord og lesetid.</p><p class=\"text-mid mt-3\">Under tekstfeltet finner du 10 verktøy: konvertering av store/små bokstaver, fjerning av mellomrom, tomme linjer, duplikater og sortering. Alt behandles lokalt i nettleseren.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageAlt": "Ord- og tegnteller – Arteon"
     },
     {
       "type": "gap",
@@ -345,6 +347,18 @@
           "answerSchemaText": "Ja. Teksten behandles lokalt i nettleseren."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé til en ny funksjon, funnet en feil eller vil foreslå et annet verktøy som ville gjøre arbeidet ditt enklere? Skriv til oss – vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageAlt": "Ord- og tegnteller – Arteon",
+      "defaultSubject": "Feedback: Ord- og tegnteller"
     },
     {
       "type": "gap",

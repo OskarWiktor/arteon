@@ -77,9 +77,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Porque é que o contraste de cores é importante?",
-      "html": "<p class=\"text-mid\">Um contraste insuficiente entre o texto e o fundo torna o conteúdo difícil de ler – em especial para pessoas com deficiência visual, utilizadores idosos ou aqueles que consultam o seu site num ecrã ao sol. As diretrizes WCAG 2.1 definem limiares mínimos de contraste para garantir a acessibilidade.</p><p class=\"text-mid mt-3\">Esta ferramenta calcula o rácio de contraste entre duas cores, avalia a conformidade WCAG (AA e AAA) para texto normal, texto grande e ícones, e propõe uma função de ajuste automático para encontrar cores conformes.</p>"
+      "html": "<p class=\"text-mid\">Um contraste insuficiente entre o texto e o fundo torna o conteúdo difícil de ler – em especial para pessoas com deficiência visual, utilizadores idosos ou aqueles que consultam o seu site num ecrã ao sol. As diretrizes WCAG 2.1 definem limiares mínimos de contraste para garantir a acessibilidade.</p><p class=\"text-mid mt-3\">Esta ferramenta calcula o rácio de contraste entre duas cores, avalia a conformidade WCAG (AA e AAA) para texto normal, texto grande e ícones, e propõe uma função de ajuste automático para encontrar cores conformes.</p>",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/verificador-de-contraste-de-cores-pt.webp",
+      "imageAlt": "Verificador de contraste de cores – Arteon"
     },
     {
       "type": "gap",
@@ -377,6 +379,18 @@
           "answerSchemaText": "Verifique primeiro o texto sobre o fundo principal, banners, botões, links e ícones."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar nossas ferramentas",
+      "description": "Tem uma ideia para uma nova funcionalidade, encontrou um bug ou quer sugerir outra ferramenta que facilitaria seu trabalho? Escreva-nos – respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/verificador-de-contraste-de-cores-pt.webp",
+      "imageAlt": "Verificador de contraste de cores – Arteon",
+      "defaultSubject": "Feedback: Verificador de contraste de cores"
     },
     {
       "type": "gap",

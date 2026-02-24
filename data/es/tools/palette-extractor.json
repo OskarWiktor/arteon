@@ -64,9 +64,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "¿Por qué extraer colores de una imagen?",
-      "html": "<p class=\"text-mid mb-4\">Cada foto, logotipo o gráfico contiene colores que pueden servir como una paleta de colores lista para usar. El extractor analiza la imagen y muestra qué colores predominan, junto con códigos HEX y valores RGB listos para pegar en su proyecto.</p><p class=\"text-mid mb-4\">En la práctica, esto significa que en lugar de muestrear colores manualmente en una aplicación gráfica (píxel por píxel), sube una imagen y obtiene una lista organizada de hasta 12 colores. Esto es útil al seleccionar colores para un sitio web, crear gráficos coherentes para redes sociales o construir una identidad visual a partir de material existente.</p><p class=\"text-mid\">Todo el análisis se realiza localmente en el navegador: la imagen no se envía a ningún servidor.</p>"
+      "html": "<p class=\"text-mid mb-4\">Cada foto, logotipo o gráfico contiene colores que pueden servir como una paleta de colores lista para usar. El extractor analiza la imagen y muestra qué colores predominan, junto con códigos HEX y valores RGB listos para pegar en su proyecto.</p><p class=\"text-mid mb-4\">En la práctica, esto significa que en lugar de muestrear colores manualmente en una aplicación gráfica (píxel por píxel), sube una imagen y obtiene una lista organizada de hasta 12 colores. Esto es útil al seleccionar colores para un sitio web, crear gráficos coherentes para redes sociales o construir una identidad visual a partir de material existente.</p><p class=\"text-mid\">Todo el análisis se realiza localmente en el navegador: la imagen no se envía a ningún servidor.</p>",
+      "imageSrc": "/assets/tools/image-color-extractor/extractor-de-colores-de-imagen-es.webp",
+      "imageAlt": "Extractor de colores de imagen – Arteon"
     },
     {
       "type": "gap",
@@ -301,6 +303,18 @@
           "answerSchemaText": "Actualmente se copian uno a uno con el botón junto a cada color."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea para una nueva función, encontraste un error o quieres sugerir otra herramienta que facilite tu trabajo? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/image-color-extractor/extractor-de-colores-de-imagen-es.webp",
+      "imageAlt": "Extractor de colores de imagen – Arteon",
+      "defaultSubject": "Feedback: Extractor de colores de imagen"
     },
     {
       "type": "gap",

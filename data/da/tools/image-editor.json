@@ -69,9 +69,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Hvorfor er det vigtigt at beskære billeder til det rigtige billedformat?",
-      "html": "<p class=\"text-mid\">Hver platform har sine egne krav til billedmål. Et profilbillede på Instagram er kvadratisk (1:1), et Facebook-cover er bredt (820×312 px), og et YouTube-thumbnail er 16:9. Upload af et billede med forkert billedformat fører til automatisk beskæring – som ofte fjerner en vigtig del af billedet.</p><p class=\"text-mid mt-3\">Denne redigering lader dig forberede et billede med det rigtige billedformat inden upload. Vælg et færdigt format eller indtast egne mål og få et nøjagtigt beskåret billede.</p>"
+      "html": "<p class=\"text-mid\">Hver platform har sine egne krav til billedmål. Et profilbillede på Instagram er kvadratisk (1:1), et Facebook-cover er bredt (820×312 px), og et YouTube-thumbnail er 16:9. Upload af et billede med forkert billedformat fører til automatisk beskæring – som ofte fjerner en vigtig del af billedet.</p><p class=\"text-mid mt-3\">Denne redigering lader dig forberede et billede med det rigtige billedformat inden upload. Vælg et færdigt format eller indtast egne mål og få et nøjagtigt beskåret billede.</p>",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/billedrediger-da.webp",
+      "imageAlt": "Online billedrediger – Arteon"
     },
     {
       "type": "gap",
@@ -184,20 +186,29 @@
       "title": "Hvordan beskærer man et billede?",
       "html": "<p class=\"text-mid\">Efter indstilling af målmålene vises et interaktivt beskæringsområde på forhåndsvisningen. Den lyse del af billedet er den del, der gemmes – resten er mørklagt.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Træk beskæringen</p><p class=\"text-mid mt-1\">Tag fat i det lyse område og træk det til det ønskede sted på billedet. På denne måde vælger du, hvilken del der eksporteres.</p></div><div><p class=\"text-dark font-semibold\">Ændr størrelse med håndtag</p><p class=\"text-mid mt-1\">I hjørnerne af beskæringsområdet findes små firkanter (håndtag). Ved at trække dem ændrer du beskæringens størrelse, mens proportionerne bevares.</p></div><div><p class=\"text-dark font-semibold\">Zoom</p><p class=\"text-mid mt-1\">I fanen <strong>Zoom</strong> finder du en skyder til regulering af zoom (100–300 %). En højere værdi betyder, at beskæringen dækker en mindre del af billedet.</p></div><div><p class=\"text-dark font-semibold\">Præcis positionsindstilling</p><p class=\"text-mid mt-1\">I fanen <strong>Position</strong> kan du indstille den nøjagtige position i procent (0–100 % for X- og Y-aksen). Centreringsknapperne centrerer beskæringen hurtigt.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Beskæringsformer",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Rektangel</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Kvadrat</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Cirkel</span></div></div>",
       "html": "<p class=\"text-mid\">I fanen <strong>Beskæringsformer</strong> vælger du formen på det eksporterede billede: rektangel (med valgte proportioner), kvadrat (tvinger 1:1) eller cirkel (med gennemsigtig baggrund).</p><p class=\"text-mid mt-3\">Cirkelformen skaber en rund avatar med gennemsigtig baggrund uden for cirklen. Værktøjet skifter automatisk format til PNG eller WebP, da JPG ikke understøtter gennemsigtighed.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "3×3-gitter – hvad bruges det til?",
       "html": "<p class=\"text-mid\">På beskæringsområdet er der synligt et gitter, der deler billedet i 9 lige store dele. Det er en visualisering af <strong>tredjedelsreglen</strong> – en af de grundlæggende regler for fotografisk komposition.</p><p class=\"text-mid mt-3\">Reglen siger, at de vigtigste elementer (ansigt, produkt, interessepunkt) bør ligge på skæringspunkterne af gitterlinjerne eller langs dem. Sådan en komposition er mere dynamisk og behagelig for øjet end at placere objektet præcist i midten.</p><p class=\"text-mid mt-3\">I fanen <strong>Gitterfarve</strong> kan du ændre farven på linjerne (grøn, hvid, sort, rød, gul), så gitteret er tydeligt synligt på forskellige fotografier.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Eksport – hvilket format skal man vælge?",
@@ -219,7 +230,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hvem har brug for en billedredigering?",
@@ -277,6 +291,18 @@
           "answerSchemaText": "Nej. Billedet behandles i browseren. Det sendes ikke til nogen server."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé til en ny funktion, fundet en fejl eller vil foreslå et andet værktøj, der ville gøre dit arbejde lettere? Skriv til os – vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/billedrediger-da.webp",
+      "imageAlt": "Online billedrediger – Arteon",
+      "defaultSubject": "Feedback: Online billedrediger"
     },
     {
       "type": "gap",

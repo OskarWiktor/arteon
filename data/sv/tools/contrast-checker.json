@@ -72,9 +72,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Varför är färgläsbarhet viktig?",
-      "html": "<p class=\"text-mid\">Läsbarhet är skillnaden i ljusstyrka mellan textfärgen och bakgrundsfärgen. Ju större skillnad, desto lättare är det att läsa texten. För låg kontrast gör innehållet svårt att läsa – särskilt för personer med synnedsättning, äldre eller under svåra ljusförhållanden.</p><p class=\"text-mid mt-3\">Enligt <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Världshälsoorganisationen (WHO)</a> har cirka 2,2 miljarder människor i världen någon form av synnedsättning.</p><p class=\"text-mid mt-3\">Verktyget beräknar kontrastförhållandet med formeln definierad i <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1</a> – internationella riktlinjer för digital tillgänglighet.</p>"
+      "html": "<p class=\"text-mid\">Läsbarhet är skillnaden i ljusstyrka mellan textfärgen och bakgrundsfärgen. Ju större skillnad, desto lättare är det att läsa texten. För låg kontrast gör innehållet svårt att läsa – särskilt för personer med synnedsättning, äldre eller under svåra ljusförhållanden.</p><p class=\"text-mid mt-3\">Enligt <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Världshälsoorganisationen (WHO)</a> har cirka 2,2 miljarder människor i världen någon form av synnedsättning.</p><p class=\"text-mid mt-3\">Verktyget beräknar kontrastförhållandet med formeln definierad i <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1</a> – internationella riktlinjer för digital tillgänglighet.</p>",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/fargkontrastkontroll-sv.webp",
+      "imageAlt": "Färgkontrastkontroll – Arteon"
     },
     {
       "type": "gap",
@@ -358,6 +360,18 @@
           "answer": "Inte alltid. Nivå AA (4.5:1 för vanlig text) är det minimum som krävs av tillgänglighetsföreskrifter i EU. Nivå AAA (7:1) ger bättre läsbarhet men är svårare att uppnå. För kritiskt innehåll – varningar, säkerhetsinstruktioner – överväg att uppnå AAA."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss att förbättra våra verktyg",
+      "description": "Har du en idé för en ny funktion, hittat en bugg eller vill föreslå ett annat verktyg som skulle göra ditt arbete enklare? Skriv till oss – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/fargkontrastkontroll-sv.webp",
+      "imageAlt": "Färgkontrastkontroll – Arteon",
+      "defaultSubject": "Feedback: Färgkontrastkontroll"
     },
     {
       "type": "gap",

@@ -13,7 +13,9 @@ import LazyToolsCarousel from '@/components/sections/tools/LazyToolsCarousel';
 import FaqPanels from '@/components/ui/FaqPanels';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
+import SectionBasic from '@/components/ui/sections/SectionBasic';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
+import ToolContactForm from '@/components/sections/tools/ToolContactForm';
 import SectionDemo from '@/components/ui/sections/SectionDemo';
 import SectionTabs from '@/components/ui/sections/SectionTabs';
 import SectionFeatureComparison from '@/components/ui/sections/SectionFeatureComparison';
@@ -139,6 +141,16 @@ function renderBlock(block: ToolContentBlock, idx: number, pageUrl: string): Rea
 
     case 'toolsCarousel':
       return <LazyToolsCarousel key={`carousel-${idx}`} title={block.title} />;
+
+    case 'sectionBasic':
+      return (
+        <SectionBasic key={`basic-${idx}`} title={block.title} imageSrc={block.imageSrc} imageAlt={block.imageAlt} variant={block.variant}>
+          <div dangerouslySetInnerHTML={{ __html: block.html }} />
+        </SectionBasic>
+      );
+
+    case 'contactForm':
+      return <ToolContactForm key={`contact-${idx}`} title={block.title} description={block.description} imageSrc={block.imageSrc} imageAlt={block.imageAlt} defaultSubject={block.defaultSubject} />;
 
     default:
       return null;

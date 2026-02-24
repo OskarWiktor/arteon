@@ -82,9 +82,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Hvorfor trenger du en profesjonell e-postsignatur?",
-      "html": "<p class=\"text-mid\">E-postsignaturen (også kalt e-postbunntekst) er en informasjonsblokk nederst i hver sendt melding. Den inneholder kontaktinformasjon, stilling, bedriftsnavn og ofte en lenke til nettsiden eller bookingkalenderen.</p><p class=\"text-mid mt-3\">Mottakeren trenger ikke lete etter telefonnummeret i tidligere meldinger – all informasjon er lett tilgjengelig. En profesjonell e-postsignatur viser også at du er opptatt av detaljer og opprettholder et konsekvent bedriftsimage i forretningskommunikasjonen.</p>"
+      "html": "<p class=\"text-mid\">E-postsignaturen (også kalt e-postbunntekst) er en informasjonsblokk nederst i hver sendt melding. Den inneholder kontaktinformasjon, stilling, bedriftsnavn og ofte en lenke til nettsiden eller bookingkalenderen.</p><p class=\"text-mid mt-3\">Mottakeren trenger ikke lete etter telefonnummeret i tidligere meldinger – all informasjon er lett tilgjengelig. En profesjonell e-postsignatur viser også at du er opptatt av detaljer og opprettholder et konsekvent bedriftsimage i forretningskommunikasjonen.</p>",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/gratis-e-postsignatur-generator-no.webp",
+      "imageAlt": "E-postsignatur generator – Arteon"
     },
     {
       "type": "gap",
@@ -344,6 +346,18 @@
           "answer": "Ja. Generatoren krever ingen innlogging eller registrering. Hvert teammedlem kan åpne verktøyet, fylle ut sine opplysninger og kopiere den ferdige signaturen. Konfigurasjonen kan også eksporteres som JSON-fil og deles med kollegaer."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé til en ny funksjon, funnet en feil eller vil foreslå et annet verktøy som ville gjøre arbeidet ditt enklere? Skriv til oss – vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/gratis-e-postsignatur-generator-no.webp",
+      "imageAlt": "E-postsignatur generator – Arteon",
+      "defaultSubject": "Feedback: E-postsignatur generator"
     },
     {
       "type": "gap",

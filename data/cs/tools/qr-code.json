@@ -73,9 +73,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Co je QR kód a jak funguje?",
-      "html": "<p class=\"text-mid\">QR kód (Quick Response) je dvourozměrný čárový kód, který lze naskenovat kamerou mobilního telefonu. Na rozdíl od tradičních čárových kódů ukládá QR kód data horizontálně i vertikálně, což umožňuje zakódovat více informací – až přibližně 3 000 alfanumerických znaků.</p><p class=\"text-mid mt-3\">QR kód byl vyvinut v roce 1994 japonskou firmou Denso Wave (součást skupiny Toyota) pro sledování automobilových dílů. Dnes se QR kódy široce používají v marketingu, pohostinství, logistice a obchodní komunikaci.</p>"
+      "html": "<p class=\"text-mid\">QR kód (Quick Response) je dvourozměrný čárový kód, který lze naskenovat kamerou mobilního telefonu. Na rozdíl od tradičních čárových kódů ukládá QR kód data horizontálně i vertikálně, což umožňuje zakódovat více informací – až přibližně 3 000 alfanumerických znaků.</p><p class=\"text-mid mt-3\">QR kód byl vyvinut v roce 1994 japonskou firmou Denso Wave (součást skupiny Toyota) pro sledování automobilových dílů. Dnes se QR kódy široce používají v marketingu, pohostinství, logistice a obchodní komunikaci.</p>",
+      "imageSrc": "/assets/tools/qr-code-generator/generator-qr-kodu-zdarma-cs.webp",
+      "imageAlt": "Generátor QR kódů – Arteon"
     },
     {
       "type": "gap",
@@ -397,6 +399,18 @@
           "answerSchemaText": "Ano, bez omezení v komerčních i nekomerčních projektech."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad na novou funkci, našli jste chybu nebo chcete navrhnout jiný nástroj, který by usnadnil vaši práci? Napište nám – odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/qr-code-generator/generator-qr-kodu-zdarma-cs.webp",
+      "imageAlt": "Generátor QR kódů – Arteon",
+      "defaultSubject": "Feedback: Generátor QR kódů"
     },
     {
       "type": "gap",

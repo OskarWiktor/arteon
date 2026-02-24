@@ -64,9 +64,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Why extract colors from an image?",
-      "html": "<p class=\"mb-4\">Every photo, logo, or graphic contains colors that can serve as a ready-made color palette. The extractor analyzes the image and shows which colors dominate - along with HEX codes and RGB values ready to paste into your project.</p><p class=\"mb-4\">In practice, this means that instead of manually sampling colors in a graphics application (pixel by pixel), you upload one image and get an organized list of up to 12 colors. This is useful when selecting colors for a website, creating consistent social media graphics, or building a visual identity from existing material.</p><p>All analysis happens locally in the browser - the image is not sent to any server.</p>"
+      "html": "<p class=\"mb-4\">Every photo, logo, or graphic contains colors that can serve as a ready-made color palette. The extractor analyzes the image and shows which colors dominate - along with HEX codes and RGB values ready to paste into your project.</p><p class=\"mb-4\">In practice, this means that instead of manually sampling colors in a graphics application (pixel by pixel), you upload one image and get an organized list of up to 12 colors. This is useful when selecting colors for a website, creating consistent social media graphics, or building a visual identity from existing material.</p><p>All analysis happens locally in the browser - the image is not sent to any server.</p>",
+      "imageSrc": "/assets/tools/image-color-extractor/image-color-extractor-en.webp",
+      "imageAlt": "Image color extractor – Arteon"
     },
     {
       "type": "gap",
@@ -301,6 +303,18 @@
           "answerSchemaText": "Colors are copied individually via the copy button next to each color."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea for a new feature, found a bug, or want to suggest another tool that would make your work easier? Write to us – we respond within 24 hours.",
+      "imageSrc": "/assets/tools/image-color-extractor/image-color-extractor-en.webp",
+      "imageAlt": "Image color extractor – Arteon",
+      "defaultSubject": "Feedback: Image color extractor"
     },
     {
       "type": "gap",

@@ -72,9 +72,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Miksi värien luettavuus on tärkeää?",
-      "html": "<p class=\"text-mid\">Luettavuus on tekstivärin ja taustavärin välinen kirkkausero. Mitä suurempi ero, sitä helpompi teksti on lukea. Liian matala kontrasti tekee sisällöstä vaikeasti luettavaa – erityisesti henkilöille, joilla on näkövamma, ikääntyneille tai vaikeissa valaistusolosuhteissa.</p><p class=\"text-mid mt-3\"><a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Maailman terveysjärjestön (WHO)</a> mukaan noin 2,2 miljardilla ihmisellä maailmassa on jonkinlainen näkövamma.</p><p class=\"text-mid mt-3\">Työkalu laskee kontrastisuhteen <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1</a> -standardissa määritellyllä kaavalla – kansainvälisillä digitaalisen saavutettavuuden ohjeilla.</p>"
+      "html": "<p class=\"text-mid\">Luettavuus on tekstivärin ja taustavärin välinen kirkkausero. Mitä suurempi ero, sitä helpompi teksti on lukea. Liian matala kontrasti tekee sisällöstä vaikeasti luettavaa – erityisesti henkilöille, joilla on näkövamma, ikääntyneille tai vaikeissa valaistusolosuhteissa.</p><p class=\"text-mid mt-3\"><a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Maailman terveysjärjestön (WHO)</a> mukaan noin 2,2 miljardilla ihmisellä maailmassa on jonkinlainen näkövamma.</p><p class=\"text-mid mt-3\">Työkalu laskee kontrastisuhteen <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1</a> -standardissa määritellyllä kaavalla – kansainvälisillä digitaalisen saavutettavuuden ohjeilla.</p>",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/varikontrasti-tarkistus-fi.webp",
+      "imageAlt": "Värikontrastin tarkistus – Arteon"
     },
     {
       "type": "gap",
@@ -358,6 +360,18 @@
           "answer": "Ei aina. Taso AA (4.5:1 normaalille tekstille) on vähimmäisvaatimus EU:n saavutettavuussäädösten mukaan. Taso AAA (7:1) tarjoaa paremman luettavuuden, mutta on vaikeampi saavuttaa. Kriittiselle sisällölle – varoitukset, turvallisuusohjeet – kannattaa pyrkiä AAA-tasoon."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea uudelle ominaisuudelle, löysitkö virheen tai haluatko ehdottaa toista työkalua, joka helpottaisi työtäsi? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/varikontrasti-tarkistus-fi.webp",
+      "imageAlt": "Värikontrastin tarkistus – Arteon",
+      "defaultSubject": "Feedback: Värikontrastin tarkistus"
     },
     {
       "type": "gap",

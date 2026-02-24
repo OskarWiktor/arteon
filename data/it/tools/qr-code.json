@@ -75,9 +75,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Perché usare i codici QR?",
-      "html": "<p class=\"text-mid\">I codici QR sono diventati uno strumento essenziale per collegare il mondo fisico a quello digitale. Permettono agli utenti di accedere istantaneamente a un sito web, aggiungere dati di contatto alla rubrica o consultare un menu, semplicemente scansionando il codice con il telefono.</p><p class=\"text-mid mt-3\">Questo strumento genera codici QR per diversi tipi di contenuto: URL, vCard, testo, e-mail e telefono. Puoi personalizzare i colori e la dimensione, poi scaricare il codice in PNG (per il web) o SVG (per la stampa).</p>"
+      "html": "<p class=\"text-mid\">I codici QR sono diventati uno strumento essenziale per collegare il mondo fisico a quello digitale. Permettono agli utenti di accedere istantaneamente a un sito web, aggiungere dati di contatto alla rubrica o consultare un menu, semplicemente scansionando il codice con il telefono.</p><p class=\"text-mid mt-3\">Questo strumento genera codici QR per diversi tipi di contenuto: URL, vCard, testo, e-mail e telefono. Puoi personalizzare i colori e la dimensione, poi scaricare il codice in PNG (per il web) o SVG (per la stampa).</p>",
+      "imageSrc": "/assets/tools/qr-code-generator/generatore-di-codici-qr-gratuito-it.webp",
+      "imageAlt": "Generatore di codici QR – Arteon"
     },
     {
       "type": "gap",
@@ -434,6 +436,18 @@
           "answerSchemaText": "vCard = formato di contatto standardizzato con salvataggio automatico. Testo = solo testo semplice."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea per una nuova funzionalità, hai trovato un bug o vuoi suggerire un altro strumento che renderebbe il tuo lavoro più facile? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/qr-code-generator/generatore-di-codici-qr-gratuito-it.webp",
+      "imageAlt": "Generatore di codici QR – Arteon",
+      "defaultSubject": "Feedback: Generatore di codici QR"
     },
     {
       "type": "gap",

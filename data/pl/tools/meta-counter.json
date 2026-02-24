@@ -79,9 +79,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Czym są meta title i meta description?",
-      "html": "<p class=\"text-mid\">Meta title i meta description to dwa krótkie teksty, które opisują zawartość strony internetowej. Nie widać ich bezpośrednio na stronie, ale pojawiają się w wynikach wyszukiwania Google jako tytuł (niebieski link) i opis (szary tekst pod tytułem).</p><p class=\"text-mid mt-3\">Dobrze napisane meta tagi działają jak reklama strony w wynikach wyszukiwania - przyciągają uwagę i zwiększają szansę na kliknięcie. Źle napisane lub obcięte przez Google mogą zniechęcić, nawet jeśli sama strona jest wartościowa.</p>"
+      "html": "<p class=\"text-mid\">Meta title i meta description to dwa krótkie teksty, które opisują zawartość strony internetowej. Nie widać ich bezpośrednio na stronie, ale pojawiają się w wynikach wyszukiwania Google jako tytuł (niebieski link) i opis (szary tekst pod tytułem).</p><p class=\"text-mid mt-3\">Dobrze napisane meta tagi działają jak reklama strony w wynikach wyszukiwania - przyciągają uwagę i zwiększają szansę na kliknięcie. Źle napisane lub obcięte przez Google mogą zniechęcić, nawet jeśli sama strona jest wartościowa.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Licznik długości meta title i description – Arteon"
     },
     {
       "type": "gap",
@@ -287,6 +289,18 @@
           "answer": "Skróć tytuł, zachowując najważniejsze słowa na początku. Usuń zbędne słowa (np. \"najlepszy\", \"profesjonalny\") i skup się na konkretnej wartości dla użytkownika. Jeśli dodajesz nazwę marki, umieść ją na końcu po separatorze."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie, które ułatwiłoby Twoją pracę? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Licznik długości meta title i description – Arteon",
+      "defaultSubject": "Feedback: Licznik meta title i description"
     },
     {
       "type": "gap",

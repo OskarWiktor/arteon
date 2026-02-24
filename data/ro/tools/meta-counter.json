@@ -80,9 +80,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Ce sunt meta title și meta description?",
-      "html": "<p class=\"text-mid\">Meta title și meta description sunt două texte scurte care descriu conținutul unei pagini web. Nu sunt vizibile direct pe pagină, dar apar în rezultatele căutării Google ca titlu (link albastru) și descriere (text gri sub titlu).</p><p class=\"text-mid mt-3\">Meta tag-urile bine scrise funcționează ca o reclamă pentru pagina dvs. în rezultatele căutării - atrag atenția și cresc șansa de clic. Tag-urile slab scrise sau trunchiate pot descuraja clicurile, chiar dacă pagina în sine este valoroasă.</p>"
+      "html": "<p class=\"text-mid\">Meta title și meta description sunt două texte scurte care descriu conținutul unei pagini web. Nu sunt vizibile direct pe pagină, dar apar în rezultatele căutării Google ca titlu (link albastru) și descriere (text gri sub titlu).</p><p class=\"text-mid mt-3\">Meta tag-urile bine scrise funcționează ca o reclamă pentru pagina dvs. în rezultatele căutării - atrag atenția și cresc șansa de clic. Tag-urile slab scrise sau trunchiate pot descuraja clicurile, chiar dacă pagina în sine este valoroasă.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Verificator meta titlu și descriere – Arteon"
     },
     {
       "type": "gap",
@@ -288,6 +290,18 @@
           "answerSchemaText": "Scurtați titlul, păstrați cuvintele importante la început și mutați numele brandului la sfârșit."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să îmbunătățim instrumentele noastre",
+      "description": "Aveți o idee pentru o nouă funcție, ați găsit o eroare sau doriți să sugerați un alt instrument care v-ar ușura munca? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Verificator meta titlu și descriere – Arteon",
+      "defaultSubject": "Feedback: Verificator meta titlu și descriere"
     },
     {
       "type": "gap",

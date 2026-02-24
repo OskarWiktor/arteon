@@ -69,9 +69,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Hvorfor er det viktig å beskjære bilder til riktig bildeformat?",
-      "html": "<p class=\"text-mid\">Hver plattform har sine egne krav til bildemål. Et profilbilde på Instagram er kvadratisk (1:1), et Facebook-cover er bredt (820×312 px), og et YouTube-miniatyrbilde er 16:9. Opplasting av et bilde med feil bildeformat fører til automatisk beskjæring – som ofte fjerner en viktig del av bildet.</p><p class=\"text-mid mt-3\">Denne redigereren lar deg forberede et bilde med riktig bildeformat før opplasting. Velg et ferdig format eller skriv inn egne mål og få et nøyaktig beskjært bilde.</p>"
+      "html": "<p class=\"text-mid\">Hver plattform har sine egne krav til bildemål. Et profilbilde på Instagram er kvadratisk (1:1), et Facebook-cover er bredt (820×312 px), og et YouTube-miniatyrbilde er 16:9. Opplasting av et bilde med feil bildeformat fører til automatisk beskjæring – som ofte fjerner en viktig del av bildet.</p><p class=\"text-mid mt-3\">Denne redigereren lar deg forberede et bilde med riktig bildeformat før opplasting. Velg et ferdig format eller skriv inn egne mål og få et nøyaktig beskjært bilde.</p>",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/bilderedigerer-no.webp",
+      "imageAlt": "Online bilderedigerer – Arteon"
     },
     {
       "type": "gap",
@@ -114,20 +116,29 @@
       "title": "Hvordan legger man til et bilde?",
       "html": "<p class=\"text-mid\">Verktøyet godtar bilder i formatene JPG, PNG og WebP. Du kan legge til et bilde på to måter:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Dra og slipp</strong> – ta tak i filen fra en mappe og slipp den på feltet for filopplasting (feltet med stiplet ramme).</li><li><strong>Velg fra disk</strong> – etter å ha klikket på feltet åpnes et vindu for å velge en fil fra disken.</li></ul><p class=\"text-mid mt-3\">Etter at bildet er lagt til, leser verktøyet automatisk dets opprinnelige dimensjoner og viser en forhåndsvisning. Nå kan du gå videre til beskjæringsinnstillingene.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Angi måldimensjoner",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><button class=\"bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white\"><span>Dimensjoner i px</span></button><button class=\"flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100\"><span>Ferdige formater</span></button></div><div class=\"space-y-3\"><div class=\"grid gap-3 md:grid-cols-2\"><div><label class=\"text-[14px]! font-medium\">Bredde (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1080\" readonly /></div><div><label class=\"text-[14px]! font-medium\">Høyde (px)</label><input type=\"number\" class=\"mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!\" value=\"1350\" readonly /></div></div><label class=\"flex items-center gap-2 text-[14px]! font-medium\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\" /><span>Behold proporsjoner (automatisk andre dimensjon)</span></label></div></div>",
       "html": "<p class=\"text-mid\">I fanen <strong>Dimensjoner i px</strong> skriver du inn bredde og høyde manuelt. Alternativet <strong>Behold proporsjoner</strong> tilpasser automatisk den andre dimensjonen.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Bildedimensjoner for Instagram, Facebook og LinkedIn",
       "html": "<p class=\"text-mid mb-4\">Verktøyet inneholder ferdige formater med optimale dimensjoner for de mest populære plattformene:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Plattform</th><th class=\"py-2 pr-4 font-semibold\">Format</th><th class=\"py-2 pr-4 font-semibold\">Dimensjoner (px)</th><th class=\"py-2 font-semibold\">Bildeformat</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Kvadratisk innlegg</td><td class=\"py-2 pr-4\">1080 x 1080</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Stående innlegg</td><td class=\"py-2 pr-4\">1080 x 1350</td><td class=\"py-2\">4:5</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram</td><td class=\"py-2 pr-4\">Story / Reels</td><td class=\"py-2 pr-4\">1080 x 1920</td><td class=\"py-2\">9:16</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Innlegg</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Facebook</td><td class=\"py-2 pr-4\">Sideforside</td><td class=\"py-2 pr-4\">820 x 360</td><td class=\"py-2\">~2.3:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Innlegg</td><td class=\"py-2 pr-4\">1200 x 1200</td><td class=\"py-2\">1:1</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn</td><td class=\"py-2 pr-4\">Profilbanner</td><td class=\"py-2 pr-4\">1584 x 396</td><td class=\"py-2\">4:1</td></tr><tr><td class=\"py-2 pr-4\">OG image</td><td class=\"py-2 pr-4\">Lenkdeling</td><td class=\"py-2 pr-4\">1200 x 630</td><td class=\"py-2\">~1.9:1</td></tr></tbody></table></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Ferdige formater for sosiale medier",
@@ -175,20 +186,29 @@
       "title": "Hvordan beskjærer man et bilde?",
       "html": "<p class=\"text-mid\">Etter at måldimensjonene er angitt, vises et interaktivt beskjæringsområde på forhåndsvisningen. Den lyse delen av bildet er delen som lagres – resten er mørklagt.</p><div class=\"mt-4 space-y-4\"><div><p class=\"text-dark font-semibold\">Dra beskjæringen</p><p class=\"text-mid mt-1\">Ta tak i det lyse området og dra det til ønsket sted på bildet. Slik velger du hvilken del av fotografiet som eksporteres.</p></div><div><p class=\"text-dark font-semibold\">Endre størrelse med håndtak</p><p class=\"text-mid mt-1\">I hjørnene av beskjæringsområdet finnes det små firkanter (håndtak). Ved å dra dem endrer du størrelsen på beskjæringen, mens proporsjonene bevares.</p></div><div><p class=\"text-dark font-semibold\">Zoom</p><p class=\"text-mid mt-1\">I fanen <strong>Zoom</strong> finner du en glidebryter for regulering av zoom (100–300 %). En høyere verdi betyr at beskjæringen dekker en mindre del av originalbildet.</p></div><div><p class=\"text-dark font-semibold\">Presis posisjonsinnstilling</p><p class=\"text-mid mt-1\">I fanen <strong>Posisjon</strong> kan du angi den nøyaktige posisjonen i prosent (0–100 % for X- og Y-aksen). Sentreringsknappene gjør det enkelt å sentrere beskjæringen raskt.</p></div></div>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Beskjæringsformer",
       "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Rektangel</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Kvadrat</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Sirkel</span></div></div>",
       "html": "<p class=\"text-mid\">I fanen <strong>Beskjæringsformer</strong> velger du formen på det eksporterte bildet: rektangel (med valgte proporsjoner), kvadrat (tvinger 1:1) eller sirkel (med gjennomsiktig bakgrunn).</p><p class=\"text-mid mt-3\">Sirkelformen lager en rund avatar med gjennomsiktig bakgrunn utenfor sirkelen. Verktøyet bytter automatisk format til PNG eller WebP, siden JPG ikke støtter gjennomsiktighet.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "3×3-rutenett – hva brukes det til?",
       "html": "<p class=\"text-mid\">På beskjæringsområdet er det synlig et rutenett som deler bildet i 9 like deler. Det er en visualisering av <strong>tredjedelsregelen</strong> – en av grunnreglene for fotografisk komposisjon.</p><p class=\"text-mid mt-3\">Regelen sier at de viktigste elementene i fotografiet (ansikt, produkt, interessepunkt) bør ligge i krysningspunktene til rutenettlinjene eller langs dem. En slik komposisjon er mer dynamisk og behagelig for øyet enn å plassere objektet nøyaktig i midten.</p><p class=\"text-mid mt-3\">I fanen <strong>Rutenettfarge</strong> kan du endre fargen på linjene (grønn, hvit, svart, rød, gul), slik at rutenettet er godt synlig på ulike fotografier.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTabs",
       "title": "Eksport – hvilket format velge?",
@@ -210,7 +230,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Hvem trenger en bilderedigerer?",
@@ -268,6 +291,18 @@
           "answerSchemaText": "Nei. Bildet behandles i nettleseren. Det sendes ikke til noen server."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé til en ny funksjon, funnet en feil eller vil foreslå et annet verktøy som ville gjøre arbeidet ditt enklere? Skriv til oss – vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/bilderedigerer-no.webp",
+      "imageAlt": "Online bilderedigerer – Arteon",
+      "defaultSubject": "Feedback: Online bilderedigerer"
     },
     {
       "type": "gap",

@@ -76,9 +76,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Proč generovat barevnou paletu?",
-      "html": "<p class=\"text-mid\">Konzistentní barevná paleta je základem každého vizuálního projektu – od webu přes logo po tiskové materiály. Ruční výběr barev, které spolu fungují, vyžaduje znalost teorie barev. Generátor tento proces automatizuje: zadáte jednu základní barvu (např. barvu vašeho loga) a nástroj vygeneruje 9 sad barev na základě ověřených schémat barevné harmonie.</p><p class=\"text-mid mt-3\">Každá vygenerovaná barva má svůj kód HEX (např. #496ba2) a hodnotu HSL (hue, saturation, lightness). Kód HEX lze vložit přímo do CSS, Figma, Canva nebo jakékoliv grafické aplikace.</p>"
+      "html": "<p class=\"text-mid\">Konzistentní barevná paleta je základem každého vizuálního projektu – od webu přes logo po tiskové materiály. Ruční výběr barev, které spolu fungují, vyžaduje znalost teorie barev. Generátor tento proces automatizuje: zadáte jednu základní barvu (např. barvu vašeho loga) a nástroj vygeneruje 9 sad barev na základě ověřených schémat barevné harmonie.</p><p class=\"text-mid mt-3\">Každá vygenerovaná barva má svůj kód HEX (např. #496ba2) a hodnotu HSL (hue, saturation, lightness). Kód HEX lze vložit přímo do CSS, Figma, Canva nebo jakékoliv grafické aplikace.</p>",
+      "imageSrc": "/assets/tools/color-palette-generator/generator-barevnych-palet-cs.webp",
+      "imageAlt": "Generátor barevných palet – Arteon"
     },
     {
       "type": "gap",
@@ -266,6 +268,18 @@
           "answerSchemaText": "Generátor je zdarma, nevyžaduje přihlášení. Barvy se generují lokálně v prohlížeči."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad na novou funkci, našli jste chybu nebo chcete navrhnout jiný nástroj, který by usnadnil vaši práci? Napište nám – odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/color-palette-generator/generator-barevnych-palet-cs.webp",
+      "imageAlt": "Generátor barevných palet – Arteon",
+      "defaultSubject": "Feedback: Generátor barevných palet"
     },
     {
       "type": "gap",

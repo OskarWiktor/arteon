@@ -70,9 +70,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Farbpaletten aus einer einzigen Farbe generieren",
-      "html": "<p class=\"text-mid\">Der Farbpaletten-Generator erstellt aus einer einzigen Basisfarbe 9 verschiedene Farbpaletten auf Grundlage der Farbtheorie. Jede Palette hat eine andere Zusammensetzung - von monochromatischen Variationen bis hin zu kontrastierenden Komplementärfarben.</p><p class=\"text-mid mt-3\">Alle Berechnungen basieren auf dem HSL-Farbraum (Hue, Saturation, Lightness). Der Farbton bestimmt die Grundfarbe, die Sättigung die Intensität und die Helligkeit, wie hell oder dunkel die Farbe erscheint. Dieses Modell entspricht der menschlichen Farbwahrnehmung und eignet sich hervorragend für die Palettengenerierung.</p>"
+      "html": "<p class=\"text-mid\">Der Farbpaletten-Generator erstellt aus einer einzigen Basisfarbe 9 verschiedene Farbpaletten auf Grundlage der Farbtheorie. Jede Palette hat eine andere Zusammensetzung - von monochromatischen Variationen bis hin zu kontrastierenden Komplementärfarben.</p><p class=\"text-mid mt-3\">Alle Berechnungen basieren auf dem HSL-Farbraum (Hue, Saturation, Lightness). Der Farbton bestimmt die Grundfarbe, die Sättigung die Intensität und die Helligkeit, wie hell oder dunkel die Farbe erscheint. Dieses Modell entspricht der menschlichen Farbwahrnehmung und eignet sich hervorragend für die Palettengenerierung.</p>",
+      "imageSrc": "/assets/tools/color-palette-generator/farbpaletten-generator-de.webp",
+      "imageAlt": "Farbpaletten-Generator – Arteon"
     },
     {
       "type": "gap",
@@ -271,6 +273,18 @@
           "answerSchemaText": "Triadisch: 3 Farben à 120° Abstand. Split-komplementär: Basisfarbe + 2 Nachbarn des Komplements."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Tools zu verbessern",
+      "description": "Haben Sie eine Idee für eine neue Funktion, einen Fehler gefunden oder möchten Sie ein anderes Tool vorschlagen, das Ihre Arbeit erleichtern würde? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/color-palette-generator/farbpaletten-generator-de.webp",
+      "imageAlt": "Farbpaletten-Generator – Arteon",
+      "defaultSubject": "Feedback: Farbpaletten-Generator"
     },
     {
       "type": "gap",

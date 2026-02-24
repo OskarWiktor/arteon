@@ -83,9 +83,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Gratis ord- og tegntæller med tekstværktøjer",
-      "html": "<p class=\"text-mid\">Dette værktøj kombinerer en ord- og tegntæller med tekstformateringsfunktioner. Indsæt tekst og se ord, tegn, sætninger, afsnit, unikke ord og læsetid.</p><p class=\"text-mid mt-3\">Under tekstfeltet finder du 10 værktøjer: konvertering af store/små bogstaver, fjernelse af mellemrum, tomme linjer, duplikater og sortering. Alt behandles lokalt i din browser.</p>"
+      "html": "<p class=\"text-mid\">Dette værktøj kombinerer en ord- og tegntæller med tekstformateringsfunktioner. Indsæt tekst og se ord, tegn, sætninger, afsnit, unikke ord og læsetid.</p><p class=\"text-mid mt-3\">Under tekstfeltet finder du 10 værktøjer: konvertering af store/små bogstaver, fjernelse af mellemrum, tomme linjer, duplikater og sortering. Alt behandles lokalt i din browser.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageAlt": "Ord- og tegntæller – Arteon"
     },
     {
       "type": "gap",
@@ -345,6 +347,18 @@
           "answerSchemaText": "Ja. Teksten behandles lokalt i browseren."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé til en ny funktion, fundet en fejl eller vil foreslå et andet værktøj, der ville gøre dit arbejde lettere? Skriv til os – vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageAlt": "Ord- og tegntæller – Arteon",
+      "defaultSubject": "Feedback: Ord- og tegntæller"
     },
     {
       "type": "gap",

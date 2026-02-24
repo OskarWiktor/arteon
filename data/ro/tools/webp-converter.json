@@ -69,9 +69,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Ce este WebP și de ce să convertiți imaginile?",
-      "html": "<p class=\"mb-4\">WebP este un format de imagine creat de Google care permite reducerea dimensiunii fișierelor de imagine cu până la 25–35% comparativ cu JPG și PNG - menținând o calitate vizuală comparabilă. Fișiere mai mici înseamnă încărcare mai rapidă a paginilor, ceea ce se traduce în experiență mai bună pentru utilizator și scoruri mai mari în <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"mb-4\">Formatul WebP este suportat de toate browserele moderne: Chrome, Firefox, Safari (de la versiunea 14) și Edge. Dacă aveți un site web, magazin sau blog, conversia imaginilor în WebP este una dintre cele mai simple modalități de a îmbunătăți performanța site-ului.</p><p>Convertorul suportă atât fotografii JPG cât și grafice PNG (inclusiv cele cu transparență). Puteți converti orice număr de fișiere simultan - toate sunt procesate local în browser, fără a fi trimise la un server.</p>"
+      "html": "<p class=\"mb-4\">WebP este un format de imagine creat de Google care permite reducerea dimensiunii fișierelor de imagine cu până la 25–35% comparativ cu JPG și PNG - menținând o calitate vizuală comparabilă. Fișiere mai mici înseamnă încărcare mai rapidă a paginilor, ceea ce se traduce în experiență mai bună pentru utilizator și scoruri mai mari în <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"mb-4\">Formatul WebP este suportat de toate browserele moderne: Chrome, Firefox, Safari (de la versiunea 14) și Edge. Dacă aveți un site web, magazin sau blog, conversia imaginilor în WebP este una dintre cele mai simple modalități de a îmbunătăți performanța site-ului.</p><p>Convertorul suportă atât fotografii JPG cât și grafice PNG (inclusiv cele cu transparență). Puteți converti orice număr de fișiere simultan - toate sunt procesate local în browser, fără a fi trimise la un server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
+      "imageAlt": "Convertor JPG/PNG în WebP – Arteon"
     },
     {
       "type": "gap",
@@ -311,6 +313,18 @@
           "answerSchemaText": "Da, fișiere mai mici îmbunătățesc LCP și scorurile Core Web Vitals."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să îmbunătățim instrumentele noastre",
+      "description": "Aveți o idee pentru o nouă funcție, ați găsit o eroare sau doriți să sugerați un alt instrument care v-ar ușura munca? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
+      "imageAlt": "Convertor JPG/PNG în WebP – Arteon",
+      "defaultSubject": "Feedback: Convertor JPG/PNG în WebP"
     },
     {
       "type": "gap",

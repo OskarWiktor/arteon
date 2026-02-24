@@ -73,9 +73,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Mikä on QR-koodi ja miten se toimii?",
-      "html": "<p class=\"text-mid\">QR-koodi (Quick Response) on kaksiulotteinen viivakoodi, joka voidaan skannata puhelimen kameralla. Toisin kuin perinteiset viivakoodit, QR-koodit tallentavat tietoa sekä vaaka- että pystysuunnassa, mikä mahdollistaa enemmän tiedon koodaamisen – jopa n. 3 000 aakkosnumeerista merkkiä.</p><p class=\"text-mid mt-3\">QR-koodin kehitti vuonna 1994 japanilainen Denso Wave (osa Toyota-konsernia) autonosien seurantaan. Nykyään QR-koodeja käytetään laajasti markkinoinnissa, ravintola-alalla, logistiikassa ja yritysviestinnässä.</p>"
+      "html": "<p class=\"text-mid\">QR-koodi (Quick Response) on kaksiulotteinen viivakoodi, joka voidaan skannata puhelimen kameralla. Toisin kuin perinteiset viivakoodit, QR-koodit tallentavat tietoa sekä vaaka- että pystysuunnassa, mikä mahdollistaa enemmän tiedon koodaamisen – jopa n. 3 000 aakkosnumeerista merkkiä.</p><p class=\"text-mid mt-3\">QR-koodin kehitti vuonna 1994 japanilainen Denso Wave (osa Toyota-konsernia) autonosien seurantaan. Nykyään QR-koodeja käytetään laajasti markkinoinnissa, ravintola-alalla, logistiikassa ja yritysviestinnässä.</p>",
+      "imageSrc": "/assets/tools/qr-code-generator/ilmainen-qr-koodi-generaattori-fi.webp",
+      "imageAlt": "QR-koodin generaattori – Arteon"
     },
     {
       "type": "gap",
@@ -397,6 +399,18 @@
           "answerSchemaText": "Kyllä, ilman rajoituksia kaupallisissa ja ei-kaupallisissa projekteissa."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea uudelle ominaisuudelle, löysitkö virheen tai haluatko ehdottaa toista työkalua, joka helpottaisi työtäsi? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/qr-code-generator/ilmainen-qr-koodi-generaattori-fi.webp",
+      "imageAlt": "QR-koodin generaattori – Arteon",
+      "defaultSubject": "Feedback: QR-koodin generaattori"
     },
     {
       "type": "gap",

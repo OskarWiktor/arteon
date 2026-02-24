@@ -67,9 +67,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Co je formát WebP a proč je důležitý?",
-      "html": "<p class=\"text-mid\">WebP je moderní obrázkový formát vyvinutý společností Google, který nabízí lepší kompresi než JPG a PNG. Obrázky ve WebP zabírají méně místa na disku – obvykle o 25–34 % méně než JPG a až o 80 % méně než PNG – při zachování vizuální kvality.</p><p class=\"text-mid mt-3\">Všechny hlavní prohlížeče (Chrome, Firefox, Safari, Edge) podporují WebP. Použití tohoto formátu znamená rychlejší načítání stránek, nižší spotřebu dat a lepší skóre Core Web Vitals – což přímo ovlivňuje pozici ve výsledcích vyhledávání Google.</p>"
+      "html": "<p class=\"text-mid\">WebP je moderní obrázkový formát vyvinutý společností Google, který nabízí lepší kompresi než JPG a PNG. Obrázky ve WebP zabírají méně místa na disku – obvykle o 25–34 % méně než JPG a až o 80 % méně než PNG – při zachování vizuální kvality.</p><p class=\"text-mid mt-3\">Všechny hlavní prohlížeče (Chrome, Firefox, Safari, Edge) podporují WebP. Použití tohoto formátu znamená rychlejší načítání stránek, nižší spotřebu dat a lepší skóre Core Web Vitals – což přímo ovlivňuje pozici ve výsledcích vyhledávání Google.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Konvertor JPG/PNG na WebP – Arteon"
     },
     {
       "type": "gap",
@@ -294,6 +296,18 @@
           "answerSchemaText": "Ano. Chrome, Firefox, Safari 14+ a Edge všechny podporují WebP."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad na novou funkci, našli jste chybu nebo chcete navrhnout jiný nástroj, který by usnadnil vaši práci? Napište nám – odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Konvertor JPG/PNG na WebP – Arteon",
+      "defaultSubject": "Feedback: Konvertor JPG/PNG na WebP"
     },
     {
       "type": "gap",

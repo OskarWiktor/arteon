@@ -70,9 +70,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Porquê uma assinatura de e-mail profissional?",
-      "html": "<p class=\"text-mid\">Uma assinatura de e-mail é muito mais do que simples dados de contacto no fim de uma mensagem. Contém o seu nome, cargo, empresa, contactos e eventualmente um link CTA ou perfis de redes sociais. Uma assinatura coerente e profissional reforça a imagem de marca em cada e-mail enviado.</p><p class=\"text-mid mt-3\">Em média, um profissional de escritório envia 30 a 40 e-mails por dia. Cada um desses e-mails é uma oportunidade para apresentar a sua marca, colocar um link CTA e dar ao destinatário acesso direto aos seus perfis de redes sociais. Com esta ferramenta, crie uma assinatura à altura dessas exigências.</p>"
+      "html": "<p class=\"text-mid\">Uma assinatura de e-mail é muito mais do que simples dados de contacto no fim de uma mensagem. Contém o seu nome, cargo, empresa, contactos e eventualmente um link CTA ou perfis de redes sociais. Uma assinatura coerente e profissional reforça a imagem de marca em cada e-mail enviado.</p><p class=\"text-mid mt-3\">Em média, um profissional de escritório envia 30 a 40 e-mails por dia. Cada um desses e-mails é uma oportunidade para apresentar a sua marca, colocar um link CTA e dar ao destinatário acesso direto aos seus perfis de redes sociais. Com esta ferramenta, crie uma assinatura à altura dessas exigências.</p>",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/gerador-de-assinatura-de-email-gratuito-pt.webp",
+      "imageAlt": "Gerador de assinatura de email – Arteon"
     },
     {
       "type": "gap",
@@ -387,6 +389,18 @@
           "answerSchemaText": "Nome e endereço de e-mail devem estar preenchidos."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar nossas ferramentas",
+      "description": "Tem uma ideia para uma nova funcionalidade, encontrou um bug ou quer sugerir outra ferramenta que facilitaria seu trabalho? Escreva-nos – respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/gerador-de-assinatura-de-email-gratuito-pt.webp",
+      "imageAlt": "Gerador de assinatura de email – Arteon",
+      "defaultSubject": "Feedback: Gerador de assinatura de email"
     },
     {
       "type": "gap",

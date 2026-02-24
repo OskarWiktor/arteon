@@ -89,9 +89,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Dlaczego warto mieć profesjonalną stopkę mailową?",
-      "html": "<p class=\"text-mid\">Stopka mailowa (nazywana też podpisem e-mail lub sygnaturką) to blok informacji na końcu każdej wysyłanej wiadomości. Zawiera dane kontaktowe, stanowisko, nazwę firmy i często link do strony internetowej lub kalendarza spotkań.</p><p class=\"text-mid mt-3\">Odbiorca nie musi szukać numeru telefonu w poprzednich wiadomościach - wszystkie dane ma pod ręką. Profesjonalny podpis mailowy pokazuje też, że dbasz o szczegóły i spójny wizerunek firmy w korespondencji biznesowej.</p>"
+      "html": "<p class=\"text-mid\">Stopka mailowa (nazywana też podpisem e-mail lub sygnaturką) to blok informacji na końcu każdej wysyłanej wiadomości. Zawiera dane kontaktowe, stanowisko, nazwę firmy i często link do strony internetowej lub kalendarza spotkań.</p><p class=\"text-mid mt-3\">Odbiorca nie musi szukać numeru telefonu w poprzednich wiadomościach - wszystkie dane ma pod ręką. Profesjonalny podpis mailowy pokazuje też, że dbasz o szczegóły i spójny wizerunek firmy w korespondencji biznesowej.</p>",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/darmowy-generator-stopki-mailowej-pl.webp",
+      "imageAlt": "Generator stopki mailowej online – Arteon"
     },
     {
       "type": "gap",
@@ -387,6 +389,18 @@
           "answer": "W zakładce Klauzula / RODO włącz opcję Pokaż linię oddzielającą. Pojawią się dodatkowe opcje: styl linii (ciągła, kreskowana, kropkowana), grubość (1-3 px) i kolor (domyślny szary lub dowolny wybrany z palety)."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie, które ułatwiłoby Twoją pracę? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/darmowy-generator-stopki-mailowej-pl.webp",
+      "imageAlt": "Generator stopki mailowej online – Arteon",
+      "defaultSubject": "Feedback: Generator stopki mailowej"
     },
     {
       "type": "gap",

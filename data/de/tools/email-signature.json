@@ -77,9 +77,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Warum eine professionelle E-Mail-Signatur?",
-      "html": "<p class=\"text-mid\">Eine E-Mail-Signatur ist mehr als nur Kontaktdaten am Ende einer Nachricht. Sie enthält Ihren Namen, Ihre Position, Ihr Unternehmen, Kontaktinformationen und optional einen CTA-Link oder Social-Media-Profile. Eine konsistente, professionell gestaltete Signatur stärkt den Markenauftritt in jeder gesendeten E-Mail.</p><p class=\"text-mid mt-3\">Im Durchschnitt versendet ein Büroangestellter 30–40 E-Mails pro Tag. Jede dieser E-Mails ist eine Gelegenheit, Ihre Marke zu präsentieren, einen CTA-Link zu platzieren und dem Empfänger den direkten Zugang zu Ihren Social-Media-Profilen zu ermöglichen. Mit diesem Tool erstellen Sie eine Signatur, die diesen Anforderungen gerecht wird.</p>"
+      "html": "<p class=\"text-mid\">Eine E-Mail-Signatur ist mehr als nur Kontaktdaten am Ende einer Nachricht. Sie enthält Ihren Namen, Ihre Position, Ihr Unternehmen, Kontaktinformationen und optional einen CTA-Link oder Social-Media-Profile. Eine konsistente, professionell gestaltete Signatur stärkt den Markenauftritt in jeder gesendeten E-Mail.</p><p class=\"text-mid mt-3\">Im Durchschnitt versendet ein Büroangestellter 30–40 E-Mails pro Tag. Jede dieser E-Mails ist eine Gelegenheit, Ihre Marke zu präsentieren, einen CTA-Link zu platzieren und dem Empfänger den direkten Zugang zu Ihren Social-Media-Profilen zu ermöglichen. Mit diesem Tool erstellen Sie eine Signatur, die diesen Anforderungen gerecht wird.</p>",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/kostenloser-e-mail-signatur-generator-de.webp",
+      "imageAlt": "E-Mail-Signatur-Generator – Arteon"
     },
     {
       "type": "gap",
@@ -379,6 +381,18 @@
           "answerSchemaText": "Name und E-Mail-Adresse müssen ausgefüllt sein."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Tools zu verbessern",
+      "description": "Haben Sie eine Idee für eine neue Funktion, einen Fehler gefunden oder möchten Sie ein anderes Tool vorschlagen, das Ihre Arbeit erleichtern würde? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/kostenloser-e-mail-signatur-generator-de.webp",
+      "imageAlt": "E-Mail-Signatur-Generator – Arteon",
+      "defaultSubject": "Feedback: E-Mail-Signatur-Generator"
     },
     {
       "type": "gap",

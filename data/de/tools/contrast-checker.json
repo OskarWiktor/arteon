@@ -75,9 +75,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Warum ist Farblesbarkeit wichtig?",
-      "html": "<p class=\"text-mid\">Lesbarkeit hängt vom Helligkeitsunterschied zwischen Text- und Hintergrundfarbe ab. Je größer dieser Unterschied, desto leichter ist der Text zu lesen. Zu geringer Kontrast erschwert das Lesen - besonders für Menschen mit Sehbeeinträchtigungen, ältere Personen oder bei schwierigen Lichtverhältnissen.</p><p class=\"text-mid mt-3\">Laut der <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Weltgesundheitsorganisation (WHO)</a> haben weltweit etwa 2,2 Milliarden Menschen eine Form von Sehbeeinträchtigung.</p><p class=\"text-mid mt-3\">Das Kontrastverhältnis wird nach der <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1-Formel</a> berechnet. Es beschreibt den Helligkeitsunterschied zwischen zwei Farben auf einer Skala von 1:1 (kein Unterschied) bis 21:1 (maximaler Unterschied).</p>"
+      "html": "<p class=\"text-mid\">Lesbarkeit hängt vom Helligkeitsunterschied zwischen Text- und Hintergrundfarbe ab. Je größer dieser Unterschied, desto leichter ist der Text zu lesen. Zu geringer Kontrast erschwert das Lesen - besonders für Menschen mit Sehbeeinträchtigungen, ältere Personen oder bei schwierigen Lichtverhältnissen.</p><p class=\"text-mid mt-3\">Laut der <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Weltgesundheitsorganisation (WHO)</a> haben weltweit etwa 2,2 Milliarden Menschen eine Form von Sehbeeinträchtigung.</p><p class=\"text-mid mt-3\">Das Kontrastverhältnis wird nach der <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1-Formel</a> berechnet. Es beschreibt den Helligkeitsunterschied zwischen zwei Farben auf einer Skala von 1:1 (kein Unterschied) bis 21:1 (maximaler Unterschied).</p>",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/farbkontrast-checker-de.webp",
+      "imageAlt": "Farbkontrast-Checker – Arteon"
     },
     {
       "type": "gap",
@@ -381,6 +383,18 @@
           "answerSchemaText": "Zuerst prüfen: Text auf Haupthintergrund, Banner, Buttons, Links und Icons."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Tools zu verbessern",
+      "description": "Haben Sie eine Idee für eine neue Funktion, einen Fehler gefunden oder möchten Sie ein anderes Tool vorschlagen, das Ihre Arbeit erleichtern würde? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/farbkontrast-checker-de.webp",
+      "imageAlt": "Farbkontrast-Checker – Arteon",
+      "defaultSubject": "Feedback: Farbkontrast-Checker"
     },
     {
       "type": "gap",

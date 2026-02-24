@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/pt/ferramentas", "label": "Ferramentas" },
-    "third": { "href": "/pt/ferramentas/gerador-de-codigos-qr-gratuito", "label": "Gerador QR" }
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/gerador-de-codigos-qr-gratuito",
+      "label": "Gerador QR"
+    }
   },
   "schemas": {
     "software": {
@@ -48,54 +54,116 @@
       "name": "Como criar um código QR",
       "description": "Introduza o conteúdo (URL, vCard, texto), personalize as cores e o tamanho, depois transfira o código QR em PNG ou SVG.",
       "steps": [
-        { "name": "Escolher o tipo de conteúdo", "text": "Selecione o tipo de código QR: URL, vCard, texto, e-mail ou telefone." },
-        { "name": "Introduzir o conteúdo", "text": "Introduza o URL, os dados de contacto ou o texto que o código QR deve conter." },
-        { "name": "Personalizar e transferir", "text": "Ajuste as cores e o tamanho, depois transfira o código QR em PNG ou SVG." }
+        {
+          "name": "Escolher o tipo de conteúdo",
+          "text": "Selecione o tipo de código QR: URL, vCard, texto, e-mail ou telefone."
+        },
+        {
+          "name": "Introduzir o conteúdo",
+          "text": "Introduza o URL, os dados de contacto ou o texto que o código QR deve conter."
+        },
+        {
+          "name": "Personalizar e transferir",
+          "text": "Ajuste as cores e o tamanho, depois transfira o código QR em PNG ou SVG."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
     {
-      "type": "sectionInfo",
-      "title": "Porquê utilizar códigos QR?",
-      "html": "<p class=\"text-mid\">Os códigos QR tornaram-se uma ferramenta essencial para ligar o mundo físico ao mundo digital. Permitem aos utilizadores aceder instantaneamente a um site, adicionar dados de contacto aos seus contactos ou consultar um menu – simplesmente digitalizando o código com o telefone.</p><p class=\"text-mid mt-3\">Esta ferramenta gera códigos QR para diferentes tipos de conteúdo: URL, vCards, texto, e-mail e telefone. Pode personalizar as cores e o tamanho, depois transferir o código em PNG (para a web) ou SVG (para impressão).</p>"
+      "type": "gap",
+      "variant": "line"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionBasic",
+      "title": "Porquê utilizar códigos QR?",
+      "html": "<p class=\"text-mid\">Os códigos QR tornaram-se uma ferramenta essencial para ligar o mundo físico ao mundo digital. Permitem aos utilizadores aceder instantaneamente a um site, adicionar dados de contacto aos seus contactos ou consultar um menu – simplesmente digitalizando o código com o telefone.</p><p class=\"text-mid mt-3\">Esta ferramenta gera códigos QR para diferentes tipos de conteúdo: URL, vCards, texto, e-mail e telefone. Pode personalizar as cores e o tamanho, depois transferir o código em PNG (para a web) ou SVG (para impressão).</p>",
+      "imageSrc": "/assets/tools/qr-code-generator/gerador-de-codigos-qr-gratuito-pt.webp",
+      "imageAlt": "Gerador de códigos QR – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Como usar o gerador",
       "description": "A criação de um código QR demora apenas alguns segundos:",
       "grid": "three",
       "items": [
-        { "icon": "RiQrCodeLine", "title": "1. Escolher o tipo", "description": "Selecione o tipo de conteúdo: URL, vCard, texto, e-mail ou telefone." },
-        { "icon": "RiSettings3Line", "title": "2. Introduzir e personalizar", "description": "Introduza o conteúdo, ajuste as cores e o tamanho do código QR." },
-        { "icon": "RiDownloadLine", "title": "3. Transferir", "description": "Transfira o código QR em PNG ou SVG." }
+        {
+          "icon": "RiQrCodeLine",
+          "title": "1. Escolher o tipo",
+          "description": "Selecione o tipo de conteúdo: URL, vCard, texto, e-mail ou telefone."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "2. Introduzir e personalizar",
+          "description": "Introduza o conteúdo, ajuste as cores e o tamanho do código QR."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "3. Transferir",
+          "description": "Transfira o código QR em PNG ou SVG."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Tipos de códigos QR",
       "description": "Escolha o tipo de conteúdo adequado à sua necessidade:",
       "grid": "three",
       "items": [
-        { "icon": "RiGlobalLine", "title": "URL / Site", "description": "Redirecione os utilizadores para o seu site, landing page ou loja online." },
-        { "icon": "RiContactsLine", "title": "vCard", "description": "Cartão de visita digital – a digitalização adiciona os seus dados aos contactos do telefone." },
-        { "icon": "RiFileTextLine", "title": "Texto", "description": "Texto livre – código Wi-Fi, mensagem, instruções ou qualquer outro texto curto." },
-        { "icon": "RiMailLine", "title": "e-mail", "description": "Abre a aplicação de e-mail com o endereço, o assunto e o corpo pré-preenchidos." },
-        { "icon": "RiPhoneLine", "title": "Telefone", "description": "Chamada direta – a digitalização inicia uma chamada para o número indicado." },
-        { "icon": "RiPaletteLine", "title": "Personalização", "description": "Cores de primeiro plano e de fundo livremente configuráveis." }
+        {
+          "icon": "RiGlobalLine",
+          "title": "URL / Site",
+          "description": "Redirecione os utilizadores para o seu site, landing page ou loja online."
+        },
+        {
+          "icon": "RiContactsLine",
+          "title": "vCard",
+          "description": "Cartão de visita digital – a digitalização adiciona os seus dados aos contactos do telefone."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Texto",
+          "description": "Texto livre – código Wi-Fi, mensagem, instruções ou qualquer outro texto curto."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "e-mail",
+          "description": "Abre a aplicação de e-mail com o endereço, o assunto e o corpo pré-preenchidos."
+        },
+        {
+          "icon": "RiPhoneLine",
+          "title": "Telefone",
+          "description": "Chamada direta – a digitalização inicia uma chamada para o número indicado."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Personalização",
+          "description": "Cores de primeiro plano e de fundo livremente configuráveis."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "PNG ou SVG – que formato escolher?",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>PNG</strong> – imagem raster. Ideal para a web, e-mails e apresentações.</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>SVG</strong> – imagem vetorial. Ideal para impressão (flyers, cartazes, cartões de visita). Qualidade perfeita em qualquer tamanho.</span></div></div>",
       "html": "<p class=\"text-mid\">A escolha do formato depende da utilização prevista:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>PNG</strong> – para a web, e-mails e apresentações. Tamanho recomendado: 200–400 px.</li><li><strong>SVG</strong> – para impressão. Escalável sem perda de qualidade, ideal para flyers, cartazes e cartões de visita.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Aplicações dos códigos QR: cartões de visita, flyers, menus",
@@ -112,24 +180,47 @@
           "title": "Menus de restaurante",
           "description": "Um código QR na mesa redireciona para o menu digital. Uma solução higiénica muito difundida desde a pandemia de COVID-19."
         },
-        { "icon": "RiPrinterLine", "title": "Flyers e cartazes", "description": "Código QR com link para uma página de produto, formulário de inscrição ou oferta especial." },
-        { "icon": "RiBuilding2Line", "title": "Embalagens de produtos", "description": "Link para o manual de utilização, cartão de garantia ou site do fabricante." },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Flyers e cartazes",
+          "description": "Código QR com link para uma página de produto, formulário de inscrição ou oferta especial."
+        },
+        {
+          "icon": "RiBuilding2Line",
+          "title": "Embalagens de produtos",
+          "description": "Link para o manual de utilização, cartão de garantia ou site do fabricante."
+        },
         {
           "icon": "RiHospitalLine",
           "title": "Consultórios médicos",
           "description": "Códigos QR nos cartões de paciente que redirecionam para o portal do paciente ou sistema de marcação de consultas."
         },
-        { "icon": "RiHome4Line", "title": "Imobiliário", "description": "Códigos nos painéis que redirecionam para o anúncio completo com galeria de fotos e detalhes." },
-        { "icon": "RiTruckLine", "title": "Armazéns e logística", "description": "Etiquetas QR para rastrear lotes de produtos, localizações de armazenamento e histórico de envios." },
+        {
+          "icon": "RiHome4Line",
+          "title": "Imobiliário",
+          "description": "Códigos nos painéis que redirecionam para o anúncio completo com galeria de fotos e detalhes."
+        },
+        {
+          "icon": "RiTruckLine",
+          "title": "Armazéns e logística",
+          "description": "Etiquetas QR para rastrear lotes de produtos, localizações de armazenamento e histórico de envios."
+        },
         {
           "icon": "RiShoppingCartLine",
           "title": "E-commerce",
           "description": "Códigos nas embalagens que redirecionam para instruções de devolução, avaliações de clientes ou programas de fidelização."
         },
-        { "icon": "RiCalendarEventLine", "title": "Eventos e conferências", "description": "Bilhetes com códigos QR para verificação rápida na entrada." }
+        {
+          "icon": "RiCalendarEventLine",
+          "title": "Eventos e conferências",
+          "description": "Bilhetes com códigos QR para verificação rápida na entrada."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Personalização da aparência do código QR",
@@ -137,32 +228,90 @@
       "demoHtml": "<div class=\"space-y-3\"><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Tamanho</span><span class=\"inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium\">300 px</span></div><div class=\"flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Margem</span><span class=\"inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium\">4</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Cor do código</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #000000\"></span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-dark text-sm! font-medium\">Cor de fundo</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div>",
       "html": "<p class=\"text-mid mb-4\">O gerador permite personalizar vários parâmetros que afetam a aparência e a legibilidade do código:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tamanho (px)</strong> – dimensão do código em píxeis. Para impressão standard (flyers, cartões de visita), escolha 300-500 px. Para uso digital, 150-200 px são suficientes.</li><li><strong>Margem</strong> – zona branca à volta do código necessária para uma digitalização correta. O valor recomendado é 2-4. Um valor de 0 pode dificultar a digitalização em fundo escuro.</li><li><strong>Cor do código QR</strong> – preto por predefinição (#000000). Pode alterá-la para qualquer cor escura que corresponda à sua identidade visual.</li><li><strong>Cor de fundo</strong> – branco por predefinição (#ffffff). Pode alterá-la para qualquer cor clara. O gerador avisará se o contraste for demasiado fraco.</li></ul><p class=\"text-mid mt-3\"><strong>Dica:</strong> Mantenha contraste elevado entre o código e o fundo (mínimo 3:1). Um código escuro em fundo claro digitaliza-se mais facilmente.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Níveis de correção de erros: L, M, Q, H",
       "demoHtml": "<div class=\"space-y-2\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">L (Baixo)</span><span class=\"inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium\">7%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 7%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">M (Médio)</span><span class=\"inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800\">15%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 15%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">Q (Quartil)</span><span class=\"inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium\">25%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 25%; min-width: 12px\"></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><div class=\"mb-2 flex items-center justify-between\"><span class=\"text-dark text-sm! font-medium\">H (Alto)</span><span class=\"inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium\">30%</span></div><div class=\"h-2 w-full rounded-full bg-neutral-100\"><div class=\"bg-primary h-2 rounded-full\" style=\"width: 30%; min-width: 12px\"></div></div></div></div>",
       "html": "<p class=\"text-mid mb-4\">A correção de erros é um mecanismo que permite ler um código QR mesmo quando uma parte está danificada, suja ou oculta. O gerador utiliza o algoritmo Reed-Solomon, um padrão para códigos QR.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>L (Baixo) – 7 %</strong> – redundância mínima, o código é mais compacto. A escolher quando o código será utilizado em condições ideais (ecrã, impressão de alta qualidade).</li><li><strong>M (Médio) – 15 %</strong> – valor predefinido, bom equilíbrio entre capacidade e resistência. Adequado para a maioria dos usos.</li><li><strong>Q (Quartil) – 25 %</strong> – resistência acrescida a danos. A escolher para códigos impressos em materiais suscetíveis de se sujar.</li><li><strong>H (Alto) – 30 %</strong> – resistência máxima. Recomendado para suportes exteriores, embalagens e situações em que o código pode ficar parcialmente oculto (ex.: logótipo ao centro).</li></ul><p class=\"text-mid mt-3\"><strong>Nota:</strong> Um nível de correção mais elevado significa um código maior e mais complexo. Com grandes quantidades de dados e o nível H, o código pode tornar-se muito denso.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionFeatureComparison",
       "title": "PNG vs SVG: que formato escolher para impressão?",
       "plans": [
-        { "id": "png", "name": "PNG (raster)" },
-        { "id": "svg", "name": "SVG (vetorial)", "highlighted": true }
+        {
+          "id": "png",
+          "name": "PNG (raster)"
+        },
+        {
+          "id": "svg",
+          "name": "SVG (vetorial)",
+          "highlighted": true
+        }
       ],
       "features": [
-        { "name": "Sites e redes sociais", "values": { "png": true, "svg": true } },
-        { "name": "Flyers e cartões de visita", "values": { "png": true, "svg": true } },
-        { "name": "Cartazes e faixas (grande formato)", "values": { "png": false, "svg": true } },
-        { "name": "Escalável sem perda de qualidade", "values": { "png": false, "svg": true } },
-        { "name": "Edição em software gráfico", "values": { "png": false, "svg": true } },
-        { "name": "Tamanho de ficheiro reduzido", "values": { "png": false, "svg": true } },
-        { "name": "Apresentações", "values": { "png": true, "svg": true } }
+        {
+          "name": "Sites e redes sociais",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Flyers e cartões de visita",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        },
+        {
+          "name": "Cartazes e faixas (grande formato)",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Escalável sem perda de qualidade",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Edição em software gráfico",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Tamanho de ficheiro reduzido",
+          "values": {
+            "png": false,
+            "svg": true
+          }
+        },
+        {
+          "name": "Apresentações",
+          "values": {
+            "png": true,
+            "svg": true
+          }
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Dicas para impressão de códigos QR",
@@ -174,17 +323,32 @@
           "title": "Tamanho mínimo",
           "description": "O código deve medir pelo menos 2x2 cm para digitalização a curta distância. Quanto maior a distância de digitalização, maior deve ser o código."
         },
-        { "icon": "RiContrastLine", "title": "Contraste", "description": "Código escuro em fundo claro. Evite cores pastel e contraste fraco." },
+        {
+          "icon": "RiContrastLine",
+          "title": "Contraste",
+          "description": "Código escuro em fundo claro. Evite cores pastel e contraste fraco."
+        },
         {
           "icon": "RiLayoutGridLine",
           "title": "Margem à volta do código",
           "description": "Conserve um espaço vazio à volta do código. Não coloque outros elementos gráficos demasiado perto: a margem é essencial para uma digitalização correta."
         },
-        { "icon": "RiEyeLine", "title": "Testes", "description": "Antes da impressão em massa, teste o código em diferentes telefones e em diversas condições de iluminação." },
-        { "icon": "RiShieldCheckLine", "title": "Nível de correção", "description": "Para impressão exterior e materiais sujeitos a desgaste, escolha o nível Q ou H." }
+        {
+          "icon": "RiEyeLine",
+          "title": "Testes",
+          "description": "Antes da impressão em massa, teste o código em diferentes telefones e em diversas condições de iluminação."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Nível de correção",
+          "description": "Para impressão exterior e materiais sujeitos a desgaste, escolha o nível Q ou H."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "O que torna este gerador especial?",
@@ -205,12 +369,27 @@
           "title": "Personalização da aparência",
           "description": "Cores do código e do fundo, tamanho em píxeis, margem e nível de correção de erros: cada parâmetro é configurável."
         },
-        { "icon": "RiPaletteLine", "title": "Quatro níveis de correção de erros", "description": "O algoritmo Reed-Solomon permite escolher a resistência do código a danos: de 7 % (L) a 30 % (H)." },
-        { "icon": "RiEyeLine", "title": "Pré-visualização em tempo real", "description": "Veja o resultado imediatamente após a introdução, sem clicar em Gerar." },
-        { "icon": "RiDownloadLine", "title": "Exportação PNG e SVG", "description": "Transfira o código no formato adequado ao seu uso." }
+        {
+          "icon": "RiPaletteLine",
+          "title": "Quatro níveis de correção de erros",
+          "description": "O algoritmo Reed-Solomon permite escolher a resistência do código a danos: de 7 % (L) a 30 % (H)."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Pré-visualização em tempo real",
+          "description": "Veja o resultado imediatamente após a introdução, sem clicar em Gerar."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Exportação PNG e SVG",
+          "description": "Transfira o código no formato adequado ao seu uso."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Perguntas frequentes sobre o gerador de códigos QR",
@@ -258,8 +437,29 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Descubra outras ferramentas" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar nossas ferramentas",
+      "description": "Tem uma ideia para uma nova funcionalidade, encontrou um bug ou quer sugerir outra ferramenta que facilitaria seu trabalho? Escreva-nos – respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/qr-code-generator/gerador-de-codigos-qr-gratuito-pt.webp",
+      "imageAlt": "Gerador de códigos QR – Arteon",
+      "defaultSubject": "Feedback: Gerador de códigos QR"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descubra outras ferramentas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

@@ -75,9 +75,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Képek átméretezése - vágás, konvertálás és tömörítés egy eszközben",
-      "html": "<p class=\"text-mid\">A képszerkesztő lehetővé teszi képek gyors igazítását adott méretekhez. Átméretezhet képet bármilyen pixelméretre, választhat kész formátumot közösségi médiához, vagy kivághat egy részletet pontos keretezéssel.</p><p class=\"text-mid mt-3\">Az átméretezés mellett az eszköz formátumkonverziót (JPG, PNG, WebP), kör alakú avatar készítést és tömörítési minőségszabályozást is kínál.</p>"
+      "html": "<p class=\"text-mid\">A képszerkesztő lehetővé teszi képek gyors igazítását adott méretekhez. Átméretezhet képet bármilyen pixelméretre, választhat kész formátumot közösségi médiához, vagy kivághat egy részletet pontos keretezéssel.</p><p class=\"text-mid mt-3\">Az átméretezés mellett az eszköz formátumkonverziót (JPG, PNG, WebP), kör alakú avatar készítést és tömörítési minőségszabályozást is kínál.</p>",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/kepszerkeszto-hu.webp",
+      "imageAlt": "Online képszerkesztő – Arteon"
     },
     {
       "type": "gap",
@@ -345,6 +347,18 @@
     {
       "type": "gap",
       "size": "sm"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen nekünk fejleszteni eszközeinket",
+      "description": "Van ötlete egy új funkcióhoz, hibát talált, vagy szeretne javasolni egy másik eszközt, amely megkönnyítené a munkáját? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/kepszerkeszto-hu.webp",
+      "imageAlt": "Online képszerkesztő – Arteon",
+      "defaultSubject": "Feedback: Online képszerkesztő"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

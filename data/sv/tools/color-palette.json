@@ -76,9 +76,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Varför generera en färgpalett?",
-      "html": "<p class=\"text-mid\">En konsekvent färgpalett är grunden för varje visuellt projekt – från webbplatser, via logotyper, till tryckt material. Att manuellt välja färger som fungerar tillsammans kräver kunskap om färgteori. Generatorn automatiserar denna process: du anger en grundfärg (t.ex. färgen på din logotyp) och verktyget genererar 9 uppsättningar färger baserade på beprövade färgharmonischeman.</p><p class=\"text-mid mt-3\">Varje genererad färg har sin HEX-kod (t.ex. #496ba2) och HSL-värde (hue, saturation, lightness). HEX-koden kan klistras in direkt i CSS, Figma, Canva eller valfri grafisk applikation.</p>"
+      "html": "<p class=\"text-mid\">En konsekvent färgpalett är grunden för varje visuellt projekt – från webbplatser, via logotyper, till tryckt material. Att manuellt välja färger som fungerar tillsammans kräver kunskap om färgteori. Generatorn automatiserar denna process: du anger en grundfärg (t.ex. färgen på din logotyp) och verktyget genererar 9 uppsättningar färger baserade på beprövade färgharmonischeman.</p><p class=\"text-mid mt-3\">Varje genererad färg har sin HEX-kod (t.ex. #496ba2) och HSL-värde (hue, saturation, lightness). HEX-koden kan klistras in direkt i CSS, Figma, Canva eller valfri grafisk applikation.</p>",
+      "imageSrc": "/assets/tools/color-palette-generator/fargpalettgenerator-sv.webp",
+      "imageAlt": "Färgpalettgenerator – Arteon"
     },
     {
       "type": "gap",
@@ -266,6 +268,18 @@
           "answerSchemaText": "Generatorn är gratis, kräver ingen inloggning. Färger genereras lokalt i webbläsaren."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss att förbättra våra verktyg",
+      "description": "Har du en idé för en ny funktion, hittat en bugg eller vill föreslå ett annat verktyg som skulle göra ditt arbete enklare? Skriv till oss – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/color-palette-generator/fargpalettgenerator-sv.webp",
+      "imageAlt": "Färgpalettgenerator – Arteon",
+      "defaultSubject": "Feedback: Färgpalettgenerator"
     },
     {
       "type": "gap",

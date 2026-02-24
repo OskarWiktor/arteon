@@ -83,9 +83,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Kostenloser Wort- und Zeichenzähler mit Textwerkzeugen",
-      "html": "<p class=\"text-mid\">Dieses Tool kombiniert einen Wort- und Zeichenzähler mit Textformatierungsfunktionen. Fügen Sie Text ein und sehen Sie Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter und Lesezeit.</p><p class=\"text-mid mt-3\">Unter dem Textfeld finden Sie 10 Werkzeuge: Groß-/Kleinschreibung, Entfernen von Leerzeichen, Leerzeilen, Duplikaten und Sortierung. Alles läuft lokal im Browser.</p>"
+      "html": "<p class=\"text-mid\">Dieses Tool kombiniert einen Wort- und Zeichenzähler mit Textformatierungsfunktionen. Fügen Sie Text ein und sehen Sie Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter und Lesezeit.</p><p class=\"text-mid mt-3\">Unter dem Textfeld finden Sie 10 Werkzeuge: Groß-/Kleinschreibung, Entfernen von Leerzeichen, Leerzeilen, Duplikaten und Sortierung. Alles läuft lokal im Browser.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageAlt": "Wort- und Zeichenzähler – Arteon"
     },
     {
       "type": "gap",
@@ -355,6 +357,18 @@
           "answerSchemaText": "Ja. Der Text wird lokal im Browser verarbeitet."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Tools zu verbessern",
+      "description": "Haben Sie eine Idee für eine neue Funktion, einen Fehler gefunden oder möchten Sie ein anderes Tool vorschlagen, das Ihre Arbeit erleichtern würde? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageAlt": "Wort- und Zeichenzähler – Arteon",
+      "defaultSubject": "Feedback: Wort- und Zeichenzähler"
     },
     {
       "type": "gap",

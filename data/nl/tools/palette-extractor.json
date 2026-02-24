@@ -64,9 +64,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Waarom kleuren uit een afbeelding extraheren?",
-      "html": "<p class=\"mb-4\">Elke foto, logo of afbeelding bevat kleuren die kunnen dienen als een kant-en-klaar kleurenpalet. De extractor analyseert de afbeelding en toont welke kleuren domineren - samen met HEX-codes en RGB-waarden die klaar zijn om in uw project te plakken.</p><p class=\"mb-4\">In de praktijk betekent dit dat u in plaats van handmatig kleuren te samplen in een grafische applicatie (pixel voor pixel), één afbeelding uploadt en een georganiseerde lijst van tot 12 kleuren krijgt. Dit is handig bij het selecteren van kleuren voor een website, het maken van consistente social media-afbeeldingen of het opbouwen van een visuele identiteit vanuit bestaand materiaal.</p><p>Alle analyse vindt lokaal plaats in de browser - de afbeelding wordt niet naar een server gestuurd.</p>"
+      "html": "<p class=\"mb-4\">Elke foto, logo of afbeelding bevat kleuren die kunnen dienen als een kant-en-klaar kleurenpalet. De extractor analyseert de afbeelding en toont welke kleuren domineren - samen met HEX-codes en RGB-waarden die klaar zijn om in uw project te plakken.</p><p class=\"mb-4\">In de praktijk betekent dit dat u in plaats van handmatig kleuren te samplen in een grafische applicatie (pixel voor pixel), één afbeelding uploadt en een georganiseerde lijst van tot 12 kleuren krijgt. Dit is handig bij het selecteren van kleuren voor een website, het maken van consistente social media-afbeeldingen of het opbouwen van een visuele identiteit vanuit bestaand materiaal.</p><p>Alle analyse vindt lokaal plaats in de browser - de afbeelding wordt niet naar een server gestuurd.</p>",
+      "imageSrc": "/assets/tools/image-color-extractor/kleurextractor-uit-afbeelding-nl.webp",
+      "imageAlt": "Kleurextractor uit afbeelding – Arteon"
     },
     {
       "type": "gap",
@@ -301,6 +303,18 @@
           "answerSchemaText": "Kleuren worden individueel gekopieerd via de kopieerknop naast elke kleur."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heeft u een idee voor een nieuwe functie, een bug gevonden of wilt u een andere tool voorstellen die uw werk gemakkelijker zou maken? Schrijf ons – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/image-color-extractor/kleurextractor-uit-afbeelding-nl.webp",
+      "imageAlt": "Kleurextractor uit afbeelding – Arteon",
+      "defaultSubject": "Feedback: Kleurextractor uit afbeelding"
     },
     {
       "type": "gap",

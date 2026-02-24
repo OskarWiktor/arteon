@@ -89,9 +89,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "¿Por qué tener una firma de correo profesional?",
-      "html": "<p class=\"text-mid\">Una firma de correo (también llamada pie de e-mail) es un bloque de información al final de cada mensaje enviado. Contiene datos de contacto, cargo, nombre de la empresa y, a menudo, un enlace al sitio web o calendario de reuniones.</p><p class=\"text-mid mt-3\">El destinatario no tiene que buscar el número de teléfono en mensajes anteriores: todos los datos están disponibles de inmediato. Una firma de correo profesional también muestra que cuida los detalles y mantiene una imagen de empresa coherente en la correspondencia empresarial.</p>"
+      "html": "<p class=\"text-mid\">Una firma de correo (también llamada pie de e-mail) es un bloque de información al final de cada mensaje enviado. Contiene datos de contacto, cargo, nombre de la empresa y, a menudo, un enlace al sitio web o calendario de reuniones.</p><p class=\"text-mid mt-3\">El destinatario no tiene que buscar el número de teléfono en mensajes anteriores: todos los datos están disponibles de inmediato. Una firma de correo profesional también muestra que cuida los detalles y mantiene una imagen de empresa coherente en la correspondencia empresarial.</p>",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/generador-de-firma-de-correo-gratuito-es.webp",
+      "imageAlt": "Generador de firma de correo – Arteon"
     },
     {
       "type": "gap",
@@ -387,6 +389,18 @@
           "answer": "El generador ofrece iconos SVG integrados para doce plataformas: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram y Pinterest. Active la opción Mostrar iconos en la pestaña Redes sociales. Puede elegir el tamaño de los iconos y su color (colores de plataforma, color de acento o color de texto)."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea para una nueva función, encontraste un error o quieres sugerir otra herramienta que facilite tu trabajo? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/generador-de-firma-de-correo-gratuito-es.webp",
+      "imageAlt": "Generador de firma de correo – Arteon",
+      "defaultSubject": "Feedback: Generador de firma de correo"
     },
     {
       "type": "gap",

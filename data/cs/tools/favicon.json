@@ -71,9 +71,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Co je favicon a proč je důležitá?",
-      "html": "<p class=\"text-mid\">Favicon je malá ikona, která se zobrazuje v záložce prohlížeče, v seznamu záložek a na domovské obrazovce telefonu. Je to jeden z prvních prvků, které uživatel uvidí – ještě před načtením stránky.</p><p class=\"text-mid mt-3\">Profesionální favicon buduje rozpoznatelnost značky a usnadňuje uživateli najít vaši stránku mezi mnoha otevřenými záložkami. Absence favicon může působit neprofesionálně a snížit důvěru návštěvníků.</p>"
+      "html": "<p class=\"text-mid\">Favicon je malá ikona, která se zobrazuje v záložce prohlížeče, v seznamu záložek a na domovské obrazovce telefonu. Je to jeden z prvních prvků, které uživatel uvidí – ještě před načtením stránky.</p><p class=\"text-mid mt-3\">Profesionální favicon buduje rozpoznatelnost značky a usnadňuje uživateli najít vaši stránku mezi mnoha otevřenými záložkami. Absence favicon může působit neprofesionálně a snížit důvěru návštěvníků.</p>",
+      "imageSrc": "/assets/tools/favicon-generator/generator-favicon-zdarma-cs.webp",
+      "imageAlt": "Generátor favicon – Arteon"
     },
     {
       "type": "gap",
@@ -293,6 +295,18 @@
           "answerSchemaText": "Umístěte soubory ikon do kořenové složky webu a přidejte HTML tagy do sekce head."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad na novou funkci, našli jste chybu nebo chcete navrhnout jiný nástroj, který by usnadnil vaši práci? Napište nám – odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/favicon-generator/generator-favicon-zdarma-cs.webp",
+      "imageAlt": "Generátor favicon – Arteon",
+      "defaultSubject": "Feedback: Generátor favicon"
     },
     {
       "type": "gap",

@@ -76,9 +76,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Miért generáljon színpalettát?",
-      "html": "<p class=\"text-mid\">Az egységes színpaletta minden vizuális projekt alapja – a weboldaltól a logón át a nyomtatott anyagokig. Az egymással jól működő színek kézi kiválasztása színelméleti ismereteket igényel. A generátor ezt automatikusan végzi: Ön megad egy alapszínt (pl. a logó színét), és az eszköz 9 színkészletet hoz létre bevált színösszhang-sémák alapján.</p><p class=\"text-mid mt-3\">Minden generált szín tartalmazza a HEX kódját (pl. #496ba2) és HSL értékét (színezet, telítettség, világosság). A HEX kód közvetlenül beilleszthető CSS-be, Figmába, Canvába vagy bármely grafikus alkalmazásba.</p>"
+      "html": "<p class=\"text-mid\">Az egységes színpaletta minden vizuális projekt alapja – a weboldaltól a logón át a nyomtatott anyagokig. Az egymással jól működő színek kézi kiválasztása színelméleti ismereteket igényel. A generátor ezt automatikusan végzi: Ön megad egy alapszínt (pl. a logó színét), és az eszköz 9 színkészletet hoz létre bevált színösszhang-sémák alapján.</p><p class=\"text-mid mt-3\">Minden generált szín tartalmazza a HEX kódját (pl. #496ba2) és HSL értékét (színezet, telítettség, világosság). A HEX kód közvetlenül beilleszthető CSS-be, Figmába, Canvába vagy bármely grafikus alkalmazásba.</p>",
+      "imageSrc": "/assets/tools/color-palette-generator/szinpaletta-generator-hu.webp",
+      "imageAlt": "Színpaletta generátor – Arteon"
     },
     {
       "type": "gap",
@@ -271,6 +273,18 @@
           "answerSchemaText": "A generátor ingyenes, nem igényel bejelentkezést. A színek helyben generálódnak a böngészőben."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen nekünk fejleszteni eszközeinket",
+      "description": "Van ötlete egy új funkcióhoz, hibát talált, vagy szeretne javasolni egy másik eszközt, amely megkönnyítené a munkáját? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/color-palette-generator/szinpaletta-generator-hu.webp",
+      "imageAlt": "Színpaletta generátor – Arteon",
+      "defaultSubject": "Feedback: Színpaletta generátor"
     },
     {
       "type": "gap",

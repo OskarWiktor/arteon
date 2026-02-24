@@ -83,9 +83,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Contador de palavras e caracteres com ferramentas de texto",
-      "html": "<p class=\"text-mid\">Esta ferramenta combina um contador de palavras e caracteres com funções de formatação. Cole o texto e verá palavras, caracteres, frases, parágrafos, palavras únicas e tempo de leitura.</p><p class=\"text-mid mt-3\">Abaixo do campo de texto encontrará 10 ferramentas: conversão de maiúsculas, remoção de espaços, linhas vazias, duplicados e ordenação. Tudo é processado localmente no navegador.</p>"
+      "html": "<p class=\"text-mid\">Esta ferramenta combina um contador de palavras e caracteres com funções de formatação. Cole o texto e verá palavras, caracteres, frases, parágrafos, palavras únicas e tempo de leitura.</p><p class=\"text-mid mt-3\">Abaixo do campo de texto encontrará 10 ferramentas: conversão de maiúsculas, remoção de espaços, linhas vazias, duplicados e ordenação. Tudo é processado localmente no navegador.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageAlt": "Contador de palavras e caracteres – Arteon"
     },
     {
       "type": "gap",
@@ -350,6 +352,18 @@
           "answerSchemaText": "Sim. O texto é processado localmente no navegador."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar nossas ferramentas",
+      "description": "Tem uma ideia para uma nova funcionalidade, encontrou um bug ou quer sugerir outra ferramenta que facilitaria seu trabalho? Escreva-nos – respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageAlt": "Contador de palavras e caracteres – Arteon",
+      "defaultSubject": "Feedback: Contador de palavras e caracteres"
     },
     {
       "type": "gap",

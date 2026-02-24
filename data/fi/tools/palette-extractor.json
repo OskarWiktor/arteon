@@ -64,9 +64,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Miksi poimia värejä kuvasta?",
-      "html": "<p class=\"mb-4\">Jokainen valokuva, logo tai grafiikka sisältää värejä, joita voi käyttää valmiina väripalettina. Poimija analysoi kuvan ja näyttää, mitkä värit hallitsevat – yhdessä HEX-koodien ja RGB-arvojen kanssa, valmiina liitettäväksi projektiin.</p><p class=\"mb-4\">Käytännössä tämä tarkoittaa, että sen sijaan, että poimit värejä manuaalisesti grafiikkaohjelmassa (pikseli pikseliltä), lataat yhden kuvan ja saat järjestetyn listan jopa 12 väristä. Tämä on hyödyllistä verkkosivuston värien valinnassa, yhtenäisen sosiaalisen median grafiikan luomisessa tai visuaalisen identiteetin rakentamisessa olemassa olevista materiaaleista.</p><p>Kaikki analyysi tapahtuu paikallisesti selaimessa – kuvaa ei lähetetä palvelimelle.</p>"
+      "html": "<p class=\"mb-4\">Jokainen valokuva, logo tai grafiikka sisältää värejä, joita voi käyttää valmiina väripalettina. Poimija analysoi kuvan ja näyttää, mitkä värit hallitsevat – yhdessä HEX-koodien ja RGB-arvojen kanssa, valmiina liitettäväksi projektiin.</p><p class=\"mb-4\">Käytännössä tämä tarkoittaa, että sen sijaan, että poimit värejä manuaalisesti grafiikkaohjelmassa (pikseli pikseliltä), lataat yhden kuvan ja saat järjestetyn listan jopa 12 väristä. Tämä on hyödyllistä verkkosivuston värien valinnassa, yhtenäisen sosiaalisen median grafiikan luomisessa tai visuaalisen identiteetin rakentamisessa olemassa olevista materiaaleista.</p><p>Kaikki analyysi tapahtuu paikallisesti selaimessa – kuvaa ei lähetetä palvelimelle.</p>",
+      "imageSrc": "/assets/tools/image-color-extractor/varien-poiminta-kuvasta-fi.webp",
+      "imageAlt": "Värien poiminta kuvasta – Arteon"
     },
     {
       "type": "gap",
@@ -291,6 +293,18 @@
           "answerSchemaText": "PNG, JPG ja SVG. Läpinäkyvä tausta PNG-muodossa tuottaa parhaat tulokset."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea uudelle ominaisuudelle, löysitkö virheen tai haluatko ehdottaa toista työkalua, joka helpottaisi työtäsi? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/image-color-extractor/varien-poiminta-kuvasta-fi.webp",
+      "imageAlt": "Värien poiminta kuvasta – Arteon",
+      "defaultSubject": "Feedback: Värien poiminta kuvasta"
     },
     {
       "type": "gap",

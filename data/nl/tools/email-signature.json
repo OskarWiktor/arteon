@@ -89,9 +89,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Waarom een professionele e-mailhandtekening?",
-      "html": "<p class=\"text-mid\">Een e-mailhandtekening (ook wel e-mail footer genoemd) is een informatieblok aan het einde van elk verzonden bericht. Het bevat contactgegevens, functietitel, bedrijfsnaam en vaak een link naar de website of vergaderkalender.</p><p class=\"text-mid mt-3\">De ontvanger hoeft niet naar het telefoonnummer te zoeken in eerdere berichten - alle details zijn direct beschikbaar. Een professionele e-mailhandtekening toont ook dat u aandacht besteedt aan details en een consistent bedrijfsimago handhaaft in zakelijke correspondentie.</p>"
+      "html": "<p class=\"text-mid\">Een e-mailhandtekening (ook wel e-mail footer genoemd) is een informatieblok aan het einde van elk verzonden bericht. Het bevat contactgegevens, functietitel, bedrijfsnaam en vaak een link naar de website of vergaderkalender.</p><p class=\"text-mid mt-3\">De ontvanger hoeft niet naar het telefoonnummer te zoeken in eerdere berichten - alle details zijn direct beschikbaar. Een professionele e-mailhandtekening toont ook dat u aandacht besteedt aan details en een consistent bedrijfsimago handhaaft in zakelijke correspondentie.</p>",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/gratis-e-mailhandtekening-generator-nl.webp",
+      "imageAlt": "E-mailhandtekening generator – Arteon"
     },
     {
       "type": "gap",
@@ -388,6 +390,18 @@
           "answer": "Schakel in het tabblad Disclaimer / Juridisch de optie Scheidingslijn tonen in. Extra opties verschijnen: lijnstijl (doorgetrokken, gestreept, gestippeld), dikte (1-3 px) en kleur (standaard grijs of elke kleur uit het palet)."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heeft u een idee voor een nieuwe functie, een bug gevonden of wilt u een andere tool voorstellen die uw werk gemakkelijker zou maken? Schrijf ons – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/gratis-e-mailhandtekening-generator-nl.webp",
+      "imageAlt": "E-mailhandtekening generator – Arteon",
+      "defaultSubject": "Feedback: E-mailhandtekening generator"
     },
     {
       "type": "gap",

@@ -64,9 +64,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Pourquoi convertir JPG et PNG en WebP ?",
-      "html": "<p class=\"text-mid\">Le format WebP offre des fichiers nettement plus légers que JPG et PNG à qualité visuelle égale. Des images plus légères signifient des temps de chargement plus rapides pour votre site, de meilleurs Core Web Vitals et une meilleure expérience utilisateur. Google recommande WebP comme format privilégié pour les images web.</p><p class=\"text-mid mt-3\">Par rapport au JPG, WebP fournit des fichiers en moyenne 25 à 35 % plus légers à qualité égale. Par rapport au PNG, l'économie peut être encore plus importante en compression avec perte. WebP prend en charge la compression avec et sans perte ainsi que la transparence (canal alpha).</p>"
+      "html": "<p class=\"text-mid\">Le format WebP offre des fichiers nettement plus légers que JPG et PNG à qualité visuelle égale. Des images plus légères signifient des temps de chargement plus rapides pour votre site, de meilleurs Core Web Vitals et une meilleure expérience utilisateur. Google recommande WebP comme format privilégié pour les images web.</p><p class=\"text-mid mt-3\">Par rapport au JPG, WebP fournit des fichiers en moyenne 25 à 35 % plus légers à qualité égale. Par rapport au PNG, l'économie peut être encore plus importante en compression avec perte. WebP prend en charge la compression avec et sans perte ainsi que la transparence (canal alpha).</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Convertisseur JPG/PNG en WebP – Arteon"
     },
     {
       "type": "gap",
@@ -312,6 +314,18 @@
           "answerSchemaText": "L'image originale était déjà très compressée. Conservez le format original ou baissez la qualité."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée pour une nouvelle fonctionnalité, trouvé un bug ou souhaitez suggérer un autre outil qui faciliterait votre travail ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Convertisseur JPG/PNG en WebP – Arteon",
+      "defaultSubject": "Feedback: Convertisseur JPG/PNG en WebP"
     },
     {
       "type": "gap",

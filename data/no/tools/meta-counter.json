@@ -71,9 +71,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Hva er meta-tittel og meta-beskrivelse?",
-      "html": "<p class=\"text-mid\">Meta-tittel og meta-beskrivelse er to korte tekster som beskriver innholdet på en nettside. De vises ikke direkte på siden, men dukker opp i Googles søkeresultater som tittelen (blå lenke) og beskrivelsen (grå tekst under tittelen).</p><p class=\"text-mid mt-3\">Velskrevne meta-tagger fungerer som en annonse for siden din i søkeresultatene – de fanger oppmerksomhet og øker sannsynligheten for klikk. Dårlig skrevne eller avkortede tagger kan avskrekke fra å klikke, selv om selve siden er verdifull.</p>"
+      "html": "<p class=\"text-mid\">Meta-tittel og meta-beskrivelse er to korte tekster som beskriver innholdet på en nettside. De vises ikke direkte på siden, men dukker opp i Googles søkeresultater som tittelen (blå lenke) og beskrivelsen (grå tekst under tittelen).</p><p class=\"text-mid mt-3\">Velskrevne meta-tagger fungerer som en annonse for siden din i søkeresultatene – de fanger oppmerksomhet og øker sannsynligheten for klikk. Dårlig skrevne eller avkortede tagger kan avskrekke fra å klikke, selv om selve siden er verdifull.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Meta tittel og beskrivelse sjekker – Arteon"
     },
     {
       "type": "gap",
@@ -269,6 +271,18 @@
           "answerSchemaText": "Meta-tittel: 50–60 tegn (~580px). Meta-beskrivelse: 120–160 tegn (~920px). Omtrentlige verdier."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé til en ny funksjon, funnet en feil eller vil foreslå et annet verktøy som ville gjøre arbeidet ditt enklere? Skriv til oss – vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Meta tittel og beskrivelse sjekker – Arteon",
+      "defaultSubject": "Feedback: Meta tittel og beskrivelse sjekker"
     },
     {
       "type": "gap",

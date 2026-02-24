@@ -64,9 +64,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "De ce să extrageți culori dintr-o imagine?",
-      "html": "<p class=\"mb-4\">Fiecare fotografie, logo sau grafic conține culori care pot servi drept paletă de culori gata făcută. Extractorul analizează imaginea și arată care culori domină - împreună cu coduri HEX și valori RGB gata de utilizat în proiectul dvs.</p><p class=\"mb-4\">În practică, aceasta înseamnă că în loc să selectați manual culori într-o aplicație grafică (pixel cu pixel), încărcați o singură imagine și obțineți o listă organizată de până la 12 culori. Aceasta este utilă când selectați culori pentru un site web, creați grafice consistente pentru social media sau construiți o identitate vizuală din material existent.</p><p>Toată analiza are loc local în browser - imaginea nu este trimisă la niciun server.</p>"
+      "html": "<p class=\"mb-4\">Fiecare fotografie, logo sau grafic conține culori care pot servi drept paletă de culori gata făcută. Extractorul analizează imaginea și arată care culori domină - împreună cu coduri HEX și valori RGB gata de utilizat în proiectul dvs.</p><p class=\"mb-4\">În practică, aceasta înseamnă că în loc să selectați manual culori într-o aplicație grafică (pixel cu pixel), încărcați o singură imagine și obțineți o listă organizată de până la 12 culori. Aceasta este utilă când selectați culori pentru un site web, creați grafice consistente pentru social media sau construiți o identitate vizuală din material existent.</p><p>Toată analiza are loc local în browser - imaginea nu este trimisă la niciun server.</p>",
+      "imageSrc": "/assets/tools/image-color-extractor/extractor-culori-din-imagine-ro.webp",
+      "imageAlt": "Extractor culori din imagine – Arteon"
     },
     {
       "type": "gap",
@@ -301,6 +303,18 @@
           "answerSchemaText": "Culorile se copiază individual prin butonul de copiere de lângă fiecare culoare."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să îmbunătățim instrumentele noastre",
+      "description": "Aveți o idee pentru o nouă funcție, ați găsit o eroare sau doriți să sugerați un alt instrument care v-ar ușura munca? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/image-color-extractor/extractor-culori-din-imagine-ro.webp",
+      "imageAlt": "Extractor culori din imagine – Arteon",
+      "defaultSubject": "Feedback: Extractor culori din imagine"
     },
     {
       "type": "gap",

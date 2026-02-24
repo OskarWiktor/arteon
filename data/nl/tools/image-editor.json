@@ -83,9 +83,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Afbeeldingen schalen - bijsnijden, converteren en comprimeren in één tool",
-      "html": "<p class=\"text-mid\">De afbeeldingeneditor laat u snel afbeeldingen aanpassen aan specifieke afmetingen. U kunt een afbeelding schalen naar elke pixelafmeting, een kant-en-klaar formaat voor social media selecteren, of een deel van de afbeelding bijsnijden met precieze kadrering.</p><p class=\"text-mid mt-3\">Naast schalen biedt de tool formaatconversie (JPG, PNG, WebP), ronde avatar-creatie en compressiekwaliteitscontrole.</p>"
+      "html": "<p class=\"text-mid\">De afbeeldingeneditor laat u snel afbeeldingen aanpassen aan specifieke afmetingen. U kunt een afbeelding schalen naar elke pixelafmeting, een kant-en-klaar formaat voor social media selecteren, of een deel van de afbeelding bijsnijden met precieze kadrering.</p><p class=\"text-mid mt-3\">Naast schalen biedt de tool formaatconversie (JPG, PNG, WebP), ronde avatar-creatie en compressiekwaliteitscontrole.</p>",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/afbeeldingeneditor-nl.webp",
+      "imageAlt": "Online afbeeldingeneditor – Arteon"
     },
     {
       "type": "gap",
@@ -353,6 +355,18 @@
     {
       "type": "gap",
       "size": "sm"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heeft u een idee voor een nieuwe functie, een bug gevonden of wilt u een andere tool voorstellen die uw werk gemakkelijker zou maken? Schrijf ons – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/afbeeldingeneditor-nl.webp",
+      "imageAlt": "Online afbeeldingeneditor – Arteon",
+      "defaultSubject": "Feedback: Online afbeeldingeneditor"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

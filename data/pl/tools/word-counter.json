@@ -83,9 +83,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Darmowy licznik słów i znaków online z narzędziami tekstowymi",
-      "html": "<p class=\"text-mid\">Narzędzie łączy licznik słów i znaków z zestawem funkcji do formatowania tekstu. Wklej tekst, a zobaczysz liczbę słów, znaków, zdań, akapitów, unikalnych wyrazów i szacowany czas czytania.</p><p class=\"text-mid mt-3\">Pod polem tekstowym znajdziesz pasek z 10 narzędziami: zamiana wielkości liter (WIELKIE, małe, Jak w zdaniu, Każde Słowo Wielką), usuwanie nadmiarowych spacji, pustych linii i duplikatów oraz sortowanie linii alfabetycznie. Cała analiza i przetwarzanie tekstu odbywają się lokalnie w przeglądarce.</p>"
+      "html": "<p class=\"text-mid\">Narzędzie łączy licznik słów i znaków z zestawem funkcji do formatowania tekstu. Wklej tekst, a zobaczysz liczbę słów, znaków, zdań, akapitów, unikalnych wyrazów i szacowany czas czytania.</p><p class=\"text-mid mt-3\">Pod polem tekstowym znajdziesz pasek z 10 narzędziami: zamiana wielkości liter (WIELKIE, małe, Jak w zdaniu, Każde Słowo Wielką), usuwanie nadmiarowych spacji, pustych linii i duplikatów oraz sortowanie linii alfabetycznie. Cała analiza i przetwarzanie tekstu odbywają się lokalnie w przeglądarce.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageAlt": "Licznik słów i znaków online – Arteon"
     },
     {
       "type": "gap",
@@ -361,6 +363,18 @@
           "answerSchemaText": "Tak. Tekst jest przetwarzany lokalnie w przeglądarce i nie jest wysyłany na serwer."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie, które ułatwiłoby Twoją pracę? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageAlt": "Licznik słów i znaków online – Arteon",
+      "defaultSubject": "Feedback: Licznik słów i znaków"
     },
     {
       "type": "gap",

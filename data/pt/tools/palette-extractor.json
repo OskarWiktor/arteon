@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/pt/ferramentas", "label": "Ferramentas" },
-    "third": { "href": "/pt/ferramentas/extrator-de-cores-de-imagem", "label": "Extrator de cores" }
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/extrator-de-cores-de-imagem",
+      "label": "Extrator de cores"
+    }
   },
   "schemas": {
     "software": {
@@ -29,39 +35,74 @@
       "name": "Como extrair as cores de uma imagem",
       "description": "Importe uma imagem e obtenha uma paleta de cores dominantes com códigos HEX copiáveis.",
       "steps": [
-        { "name": "Importar uma imagem", "text": "Arraste e largue uma imagem ou selecione um ficheiro PNG, JPG ou SVG." },
-        { "name": "Ver a paleta", "text": "A ferramenta extrai automaticamente as cores dominantes da imagem." },
-        { "name": "Copiar os códigos", "text": "Clique em Copiar para copiar o código HEX de uma cor para a área de transferência." }
+        {
+          "name": "Importar uma imagem",
+          "text": "Arraste e largue uma imagem ou selecione um ficheiro PNG, JPG ou SVG."
+        },
+        {
+          "name": "Ver a paleta",
+          "text": "A ferramenta extrai automaticamente as cores dominantes da imagem."
+        },
+        {
+          "name": "Copiar os códigos",
+          "text": "Clique em Copiar para copiar o código HEX de uma cor para a área de transferência."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
     {
-      "type": "sectionInfo",
-      "title": "Extrair as cores dominantes de uma imagem",
-      "html": "<p class=\"text-mid\">O extrator de cores analisa a sua imagem e identifica as cores dominantes. O resultado é uma paleta de cores com códigos HEX copiáveis com um clique – pronta a ser utilizada nos seus projetos de design, no seu site ou nas suas publicações nas redes sociais.</p><p class=\"text-mid mt-3\">A ferramenta é particularmente útil para criar uma paleta de marca a partir de um logótipo, encontrar as cores dominantes de uma foto para um esquema de cores coerente, ou simplesmente identificar as cores de uma imagem que gosta.</p>"
+      "type": "gap",
+      "variant": "line"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionBasic",
+      "title": "Extrair as cores dominantes de uma imagem",
+      "html": "<p class=\"text-mid\">O extrator de cores analisa a sua imagem e identifica as cores dominantes. O resultado é uma paleta de cores com códigos HEX copiáveis com um clique – pronta a ser utilizada nos seus projetos de design, no seu site ou nas suas publicações nas redes sociais.</p><p class=\"text-mid mt-3\">A ferramenta é particularmente útil para criar uma paleta de marca a partir de um logótipo, encontrar as cores dominantes de uma foto para um esquema de cores coerente, ou simplesmente identificar as cores de uma imagem que gosta.</p>",
+      "imageSrc": "/assets/tools/image-color-extractor/extrator-de-cores-de-imagem-pt.webp",
+      "imageAlt": "Extrator de cores de imagem – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Como usar o extrator",
       "description": "A extração demora apenas alguns segundos:",
       "grid": "three",
       "items": [
-        { "icon": "RiUploadLine", "title": "1. Importar uma imagem", "description": "Arraste e largue uma imagem ou selecione um ficheiro PNG, JPG ou SVG." },
-        { "icon": "RiPaletteLine", "title": "2. Ver a paleta", "description": "A ferramenta extrai automaticamente as cores dominantes da imagem." },
-        { "icon": "RiFileCopyLine", "title": "3. Copiar os códigos", "description": "Clique em Copiar para copiar o código HEX para a área de transferência." }
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Importar uma imagem",
+          "description": "Arraste e largue uma imagem ou selecione um ficheiro PNG, JPG ou SVG."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "2. Ver a paleta",
+          "description": "A ferramenta extrai automaticamente as cores dominantes da imagem."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "3. Copiar os códigos",
+          "description": "Clique em Copiar para copiar o código HEX para a área de transferência."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Como se apresenta uma paleta de cores extraída?",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Exemplo de cores extraídas de uma imagem de natureza</p></div>",
       "html": "<p class=\"text-mid mb-4\">Após a importação de uma imagem, o extrator apresenta uma lista de cores dominantes ordenadas da mais à menos presente. Cada cor é acompanhada do seu código HEX e do seu valor RGB – prontos a ser colados em CSS, Figma ou qualquer aplicação gráfica.</p><p class=\"text-mid\">O número de cores extraídas depende do conteúdo da imagem. Uma foto de paisagem produzirá uma paleta mais rica (8–12 cores), enquanto um logótipo simples a duas cores dará menos elementos.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Que imagens dão os melhores resultados?",
@@ -90,7 +131,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTimeline",
       "title": "Como funciona a extração de cores?",
@@ -118,7 +162,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Resolução de problemas do extrator de cores",
@@ -146,7 +193,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "O que torna este extrator especial?",
@@ -174,7 +224,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Onde utilizar as cores extraídas de uma imagem?",
@@ -202,7 +255,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Perguntas frequentes sobre o extrator de cores",
@@ -240,8 +296,29 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Descubra outras ferramentas" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar nossas ferramentas",
+      "description": "Tem uma ideia para uma nova funcionalidade, encontrou um bug ou quer sugerir outra ferramenta que facilitaria seu trabalho? Escreva-nos – respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/image-color-extractor/extrator-de-cores-de-imagem-pt.webp",
+      "imageAlt": "Extrator de cores de imagem – Arteon",
+      "defaultSubject": "Feedback: Extrator de cores de imagem"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descubra outras ferramentas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

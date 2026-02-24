@@ -81,9 +81,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "¿Por qué importa la legibilidad del color?",
-      "html": "<p class=\"text-mid\">La legibilidad es la diferencia de luminancia entre el color del texto y el color del fondo. Cuanto mayor sea la diferencia, más fácil será leer el texto. Un contraste demasiado bajo hace que el contenido sea difícil de leer, especialmente para personas con deficiencias visuales, personas mayores o en condiciones de iluminación difíciles (p. ej., en un teléfono bajo luz solar directa).</p><p class=\"text-mid mt-3\">Según la <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Organización Mundial de la Salud (OMS)</a>, aproximadamente 2.200 millones de personas en todo el mundo tienen algún tipo de deficiencia visual. Además, millones padecen daltonismo (alrededor del 8 % de los hombres y el 0,5 % de las mujeres), y muchos más experimentan un deterioro visual relacionado con la edad.</p><p class=\"text-mid mt-3\">La herramienta calcula la relación de contraste utilizando la fórmula especificada en las <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Web Content Accessibility Guidelines)</a> – directrices internacionales de accesibilidad digital. El resultado permite una evaluación objetiva de si los colores son lo suficientemente legibles, independientemente de la configuración del monitor o la percepción individual del color.</p>"
+      "html": "<p class=\"text-mid\">La legibilidad es la diferencia de luminancia entre el color del texto y el color del fondo. Cuanto mayor sea la diferencia, más fácil será leer el texto. Un contraste demasiado bajo hace que el contenido sea difícil de leer, especialmente para personas con deficiencias visuales, personas mayores o en condiciones de iluminación difíciles (p. ej., en un teléfono bajo luz solar directa).</p><p class=\"text-mid mt-3\">Según la <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Organización Mundial de la Salud (OMS)</a>, aproximadamente 2.200 millones de personas en todo el mundo tienen algún tipo de deficiencia visual. Además, millones padecen daltonismo (alrededor del 8 % de los hombres y el 0,5 % de las mujeres), y muchos más experimentan un deterioro visual relacionado con la edad.</p><p class=\"text-mid mt-3\">La herramienta calcula la relación de contraste utilizando la fórmula especificada en las <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Web Content Accessibility Guidelines)</a> – directrices internacionales de accesibilidad digital. El resultado permite una evaluación objetiva de si los colores son lo suficientemente legibles, independientemente de la configuración del monitor o la percepción individual del color.</p>",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/comprobador-de-contraste-de-colores-es.webp",
+      "imageAlt": "Comprobador de contraste de colores – Arteon"
     },
     {
       "type": "gap",
@@ -386,6 +388,18 @@
           "answerSchemaText": "Herramientas de desarrollo del navegador (clic derecho → Inspeccionar → Styles) o extensiones como ColorZilla."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea para una nueva función, encontraste un error o quieres sugerir otra herramienta que facilite tu trabajo? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/comprobador-de-contraste-de-colores-es.webp",
+      "imageAlt": "Comprobador de contraste de colores – Arteon",
+      "defaultSubject": "Feedback: Comprobador de contraste de colores"
     },
     {
       "type": "gap",

@@ -71,9 +71,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Hvad er en favicon, og hvorfor er den vigtig?",
-      "html": "<p class=\"text-mid\">En favicon er et lille ikon, der vises i browserfanen, i bogmærkelisten og på telefonens startskærm. Det er et af de første elementer, brugeren ser – allerede inden siden er helt indlæst.</p><p class=\"text-mid mt-3\">En professionel favicon opbygger brandgenkendelse og gør det lettere for brugeren at finde din side blandt mange åbne faner. Mangel på favicon kan give et uprofessionelt indtryk og reducere besøgendes tillid.</p>"
+      "html": "<p class=\"text-mid\">En favicon er et lille ikon, der vises i browserfanen, i bogmærkelisten og på telefonens startskærm. Det er et af de første elementer, brugeren ser – allerede inden siden er helt indlæst.</p><p class=\"text-mid mt-3\">En professionel favicon opbygger brandgenkendelse og gør det lettere for brugeren at finde din side blandt mange åbne faner. Mangel på favicon kan give et uprofessionelt indtryk og reducere besøgendes tillid.</p>",
+      "imageSrc": "/assets/tools/favicon-generator/gratis-favicon-generator-da.webp",
+      "imageAlt": "Favicon generator – Arteon"
     },
     {
       "type": "gap",
@@ -293,6 +295,18 @@
           "answerSchemaText": "Placer ikonfilerne i rodmappen og tilføj HTML-tags i head-sektionen."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé til en ny funktion, fundet en fejl eller vil foreslå et andet værktøj, der ville gøre dit arbejde lettere? Skriv til os – vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/favicon-generator/gratis-favicon-generator-da.webp",
+      "imageAlt": "Favicon generator – Arteon",
+      "defaultSubject": "Feedback: Favicon generator"
     },
     {
       "type": "gap",

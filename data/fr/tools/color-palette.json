@@ -71,9 +71,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Générer des palettes à partir d'une seule couleur",
-      "html": "<p class=\"text-mid\">Le générateur de palettes crée 9 palettes différentes à partir d'une seule couleur de base, en s'appuyant sur la théorie des couleurs. Chaque palette a une composition différente – des variations monochromatiques aux couleurs complémentaires contrastantes.</p><p class=\"text-mid mt-3\">Tous les calculs reposent sur l'espace colorimétrique HSL (Teinte, Saturation, Luminosité). La teinte détermine la couleur de base, la saturation l'intensité et la luminosité le caractère clair ou foncé. Ce modèle correspond à la perception humaine des couleurs et se prête parfaitement à la génération de palettes.</p>"
+      "html": "<p class=\"text-mid\">Le générateur de palettes crée 9 palettes différentes à partir d'une seule couleur de base, en s'appuyant sur la théorie des couleurs. Chaque palette a une composition différente – des variations monochromatiques aux couleurs complémentaires contrastantes.</p><p class=\"text-mid mt-3\">Tous les calculs reposent sur l'espace colorimétrique HSL (Teinte, Saturation, Luminosité). La teinte détermine la couleur de base, la saturation l'intensité et la luminosité le caractère clair ou foncé. Ce modèle correspond à la perception humaine des couleurs et se prête parfaitement à la génération de palettes.</p>",
+      "imageSrc": "/assets/tools/color-palette-generator/generateur-de-palettes-de-couleurs-fr.webp",
+      "imageAlt": "Générateur de palettes de couleurs – Arteon"
     },
     {
       "type": "gap",
@@ -271,6 +273,18 @@
           "answerSchemaText": "Triadique : 3 couleurs à 120°. Complémentaire divisée : couleur de base + 2 voisins du complément."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée pour une nouvelle fonctionnalité, trouvé un bug ou souhaitez suggérer un autre outil qui faciliterait votre travail ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/color-palette-generator/generateur-de-palettes-de-couleurs-fr.webp",
+      "imageAlt": "Générateur de palettes de couleurs – Arteon",
+      "defaultSubject": "Feedback: Générateur de palettes de couleurs"
     },
     {
       "type": "gap",

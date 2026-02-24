@@ -76,9 +76,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Waarom een kleurpalet genereren?",
-      "html": "<p class=\"text-mid\">Een consistent kleurpalet is de basis van elk visueel project – van een website, via een logo, tot drukwerk. Het handmatig selecteren van kleuren die goed samenwerken vereist kennis van kleurentheorie. De generator doet dit automatisch: u geeft één basiskleur op (bijv. uw logkleur) en de tool creëert 9 kleurensets op basis van bewezen kleurharmonieschema's.</p><p class=\"text-mid mt-3\">Elke gegenereerde kleur komt met zijn HEX-code (bijv. #496ba2) en HSL-waarde (tint, verzadiging, lichtheid). De HEX-code kan direct worden geplakt in CSS, Figma, Canva of een grafische applicatie.</p>"
+      "html": "<p class=\"text-mid\">Een consistent kleurpalet is de basis van elk visueel project – van een website, via een logo, tot drukwerk. Het handmatig selecteren van kleuren die goed samenwerken vereist kennis van kleurentheorie. De generator doet dit automatisch: u geeft één basiskleur op (bijv. uw logkleur) en de tool creëert 9 kleurensets op basis van bewezen kleurharmonieschema's.</p><p class=\"text-mid mt-3\">Elke gegenereerde kleur komt met zijn HEX-code (bijv. #496ba2) en HSL-waarde (tint, verzadiging, lichtheid). De HEX-code kan direct worden geplakt in CSS, Figma, Canva of een grafische applicatie.</p>",
+      "imageSrc": "/assets/tools/color-palette-generator/kleurpalettengenerator-nl.webp",
+      "imageAlt": "Kleurpalettengenerator – Arteon"
     },
     {
       "type": "gap",
@@ -271,6 +273,18 @@
           "answerSchemaText": "De generator is gratis, vereist geen login. Kleuren worden lokaal in de browser gegenereerd."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heeft u een idee voor een nieuwe functie, een bug gevonden of wilt u een andere tool voorstellen die uw werk gemakkelijker zou maken? Schrijf ons – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/color-palette-generator/kleurpalettengenerator-nl.webp",
+      "imageAlt": "Kleurpalettengenerator – Arteon",
+      "defaultSubject": "Feedback: Kleurpalettengenerator"
     },
     {
       "type": "gap",

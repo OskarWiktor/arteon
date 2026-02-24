@@ -82,9 +82,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "¿Qué es un código QR y cómo funciona?",
-      "html": "<p class=\"text-mid\">Un código QR (Quick Response) es un código de barras bidimensional que puede escanearse con la cámara de un smartphone. A diferencia de los códigos de barras tradicionales, los códigos QR almacenan datos tanto horizontal como verticalmente, lo que les permite codificar significativamente más información: hasta aproximadamente 3.000 caracteres alfanuméricos.</p><p class=\"text-mid mt-3\">El código QR fue desarrollado en 1994 por la empresa japonesa Denso Wave (parte del grupo Toyota) para el seguimiento de piezas de automóviles. Hoy, los códigos QR se utilizan ampliamente en marketing, hostelería, logística y comunicación empresarial. Ganaron especial popularidad durante la pandemia de COVID-19, cuando los restaurantes comenzaron a sustituir los menús de papel por códigos QR.</p>"
+      "html": "<p class=\"text-mid\">Un código QR (Quick Response) es un código de barras bidimensional que puede escanearse con la cámara de un smartphone. A diferencia de los códigos de barras tradicionales, los códigos QR almacenan datos tanto horizontal como verticalmente, lo que les permite codificar significativamente más información: hasta aproximadamente 3.000 caracteres alfanuméricos.</p><p class=\"text-mid mt-3\">El código QR fue desarrollado en 1994 por la empresa japonesa Denso Wave (parte del grupo Toyota) para el seguimiento de piezas de automóviles. Hoy, los códigos QR se utilizan ampliamente en marketing, hostelería, logística y comunicación empresarial. Ganaron especial popularidad durante la pandemia de COVID-19, cuando los restaurantes comenzaron a sustituir los menús de papel por códigos QR.</p>",
+      "imageSrc": "/assets/tools/qr-code-generator/generador-de-codigos-qr-gratuito-es.webp",
+      "imageAlt": "Generador de códigos QR – Arteon"
     },
     {
       "type": "gap",
@@ -436,6 +438,18 @@
           "answerSchemaText": "vCard = formato de contacto estandarizado con guardado automático. Texto = solo texto plano."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea para una nueva función, encontraste un error o quieres sugerir otra herramienta que facilite tu trabajo? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/qr-code-generator/generador-de-codigos-qr-gratuito-es.webp",
+      "imageAlt": "Generador de códigos QR – Arteon",
+      "defaultSubject": "Feedback: Generador de códigos QR"
     },
     {
       "type": "gap",

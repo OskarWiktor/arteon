@@ -71,9 +71,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Gerar paletas a partir de uma única cor",
-      "html": "<p class=\"text-mid\">O gerador de paletas cria 9 paletas diferentes a partir de uma única cor de base, apoiando-se na teoria das cores. Cada paleta tem uma composição diferente – das variações monocromáticas às cores complementares contrastantes.</p><p class=\"text-mid mt-3\">Todos os cálculos baseiam-se no espaço cromático HSL (Tonalidade, Saturação, Luminosidade). A tonalidade determina a cor de base, a saturação a intensidade e a luminosidade o caráter claro ou escuro. Este modelo corresponde à perceção humana das cores e presta-se perfeitamente à geração de paletas.</p>"
+      "html": "<p class=\"text-mid\">O gerador de paletas cria 9 paletas diferentes a partir de uma única cor de base, apoiando-se na teoria das cores. Cada paleta tem uma composição diferente – das variações monocromáticas às cores complementares contrastantes.</p><p class=\"text-mid mt-3\">Todos os cálculos baseiam-se no espaço cromático HSL (Tonalidade, Saturação, Luminosidade). A tonalidade determina a cor de base, a saturação a intensidade e a luminosidade o caráter claro ou escuro. Este modelo corresponde à perceção humana das cores e presta-se perfeitamente à geração de paletas.</p>",
+      "imageSrc": "/assets/tools/color-palette-generator/gerador-de-paletas-de-cores-pt.webp",
+      "imageAlt": "Gerador de paletas de cores – Arteon"
     },
     {
       "type": "gap",
@@ -271,6 +273,18 @@
           "answerSchemaText": "Triádica: 3 cores a 120°. Complementar dividida: cor de base + 2 vizinhos do complemento."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar nossas ferramentas",
+      "description": "Tem uma ideia para uma nova funcionalidade, encontrou um bug ou quer sugerir outra ferramenta que facilitaria seu trabalho? Escreva-nos – respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/color-palette-generator/gerador-de-paletas-de-cores-pt.webp",
+      "imageAlt": "Gerador de paletas de cores – Arteon",
+      "defaultSubject": "Feedback: Gerador de paletas de cores"
     },
     {
       "type": "gap",

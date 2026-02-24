@@ -82,9 +82,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Miért fontos a színek olvashatósága?",
-      "html": "<p class=\"text-mid\">Az olvashatóság a szövegszín és a háttérszín közötti fényerősség-különbség. Minél nagyobb a különbség, annál könnyebb a szöveget olvasni. A túl alacsony kontraszt megnehezíti a tartalom olvasását – különösen a látássérültek, idősek vagy nehéz fényviszonyok között (pl. telefonon közvetlen napfényben).</p><p class=\"text-mid mt-3\">Az <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Egészségügyi Világszervezet (WHO)</a> szerint világszerte mintegy 2,2 milliárd embernek van valamilyen látási problémája. Emellett milliók színtévesztők (a férfiak mintegy 8%-a és a nők 0,5%-a), és sokan tapasztalnak életkorral összefüggő látásromlást.</p><p class=\"text-mid mt-3\">Az eszköz a <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Webtartalom Akadálymentességi Irányelvek)</a> – a nemzetközi digitális akadálymentességi irányelvek – által meghatározott képlettel számítja ki a kontrasztarányt. Az eredmény objektiív értékelést tesz lehetővé arról, hogy a színek elég olvashatóak-e, függetlenül a monitor beállításaitól vagy az egyéni színérzékeléstől.</p>"
+      "html": "<p class=\"text-mid\">Az olvashatóság a szövegszín és a háttérszín közötti fényerősség-különbség. Minél nagyobb a különbség, annál könnyebb a szöveget olvasni. A túl alacsony kontraszt megnehezíti a tartalom olvasását – különösen a látássérültek, idősek vagy nehéz fényviszonyok között (pl. telefonon közvetlen napfényben).</p><p class=\"text-mid mt-3\">Az <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Egészségügyi Világszervezet (WHO)</a> szerint világszerte mintegy 2,2 milliárd embernek van valamilyen látási problémája. Emellett milliók színtévesztők (a férfiak mintegy 8%-a és a nők 0,5%-a), és sokan tapasztalnak életkorral összefüggő látásromlást.</p><p class=\"text-mid mt-3\">Az eszköz a <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Webtartalom Akadálymentességi Irányelvek)</a> – a nemzetközi digitális akadálymentességi irányelvek – által meghatározott képlettel számítja ki a kontrasztarányt. Az eredmény objektiív értékelést tesz lehetővé arról, hogy a színek elég olvashatóak-e, függetlenül a monitor beállításaitól vagy az egyéni színérzékeléstől.</p>",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/szinkontraszt-ellenorzo-hu.webp",
+      "imageAlt": "Színkontraszt ellenőrző – Arteon"
     },
     {
       "type": "gap",
@@ -379,6 +381,18 @@
           "answer": "A legfontosabbak: szöveg a fő háttéren, szöveg bannereken és színes szekciókon, gombok (szövegszín és gombháttér az oldal hátteréhez képest), linkek és ikonok. Különös figyelmet fordítson azokra az elemekre, amelyek különböző háttereken jelennek meg a szekciótól függően."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen nekünk fejleszteni eszközeinket",
+      "description": "Van ötlete egy új funkcióhoz, hibát talált, vagy szeretne javasolni egy másik eszközt, amely megkönnyítené a munkáját? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/szinkontraszt-ellenorzo-hu.webp",
+      "imageAlt": "Színkontraszt ellenőrző – Arteon",
+      "defaultSubject": "Feedback: Színkontraszt ellenőrző"
     },
     {
       "type": "gap",

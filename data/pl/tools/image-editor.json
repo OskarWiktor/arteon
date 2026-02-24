@@ -84,9 +84,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Zmień rozmiar zdjęcia online - kadrowanie, konwersja i kompresja w jednym narzędziu",
-      "html": "<p class=\"text-mid\">Narzędzie do edycji zdjęć online pozwala szybko dopasować obrazy do konkretnych wymiarów. Możesz zmienić rozmiar zdjęcia do dowolnych wymiarów w pikselach, wybrać gotowy format dla mediów społecznościowych lub przyciąć fragment obrazu z precyzyjnym kadrowaniem.</p><p class=\"text-mid mt-3\">Oprócz zmiany rozmiaru narzędzie oferuje konwersję formatów (JPG, PNG, WebP), tworzenie okrągłych avatarów i kontrolę jakości kompresji.</p>"
+      "html": "<p class=\"text-mid\">Narzędzie do edycji zdjęć online pozwala szybko dopasować obrazy do konkretnych wymiarów. Możesz zmienić rozmiar zdjęcia do dowolnych wymiarów w pikselach, wybrać gotowy format dla mediów społecznościowych lub przyciąć fragment obrazu z precyzyjnym kadrowaniem.</p><p class=\"text-mid mt-3\">Oprócz zmiany rozmiaru narzędzie oferuje konwersję formatów (JPG, PNG, WebP), tworzenie okrągłych avatarów i kontrolę jakości kompresji.</p>",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/edytor-zdjec-online-pl.webp",
+      "imageAlt": "Edytor zdjęć online – Arteon"
     },
     {
       "type": "gap",
@@ -348,6 +350,18 @@
           "answer": "Proporcje (aspect ratio) określają stosunek szerokości do wysokości obrazu. Na przykład 4:5 oznacza, że szerokość stanowi 4 części, a wysokość 5 części. Format 16:9 to typowe proporcje filmów i prezentacji. Instagram post pionowy używa proporcji 4:5, natomiast story i reels - 9:16."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie, które ułatwiłoby Twoją pracę? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/edytor-zdjec-online-pl.webp",
+      "imageAlt": "Edytor zdjęć online – Arteon",
+      "defaultSubject": "Feedback: Edytor zdjęć online"
     },
     {
       "type": "gap",

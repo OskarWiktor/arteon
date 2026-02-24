@@ -77,9 +77,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Perché il contrasto dei colori è importante?",
-      "html": "<p class=\"text-mid\">Un contrasto insufficiente tra il testo e lo sfondo rende il contenuto difficile da leggere, in particolare per le persone ipovedenti, gli utenti anziani o chi consulta il tuo sito su uno schermo al sole. Le linee guida WCAG 2.1 definiscono soglie minime di contrasto per garantire l'accessibilità.</p><p class=\"text-mid mt-3\">Questo strumento calcola il rapporto di contrasto tra due colori, valuta la conformità WCAG (AA e AAA) per il testo normale, il testo grande e le icone, e propone una funzione di adattamento automatico per trovare colori conformi.</p>"
+      "html": "<p class=\"text-mid\">Un contrasto insufficiente tra il testo e lo sfondo rende il contenuto difficile da leggere, in particolare per le persone ipovedenti, gli utenti anziani o chi consulta il tuo sito su uno schermo al sole. Le linee guida WCAG 2.1 definiscono soglie minime di contrasto per garantire l'accessibilità.</p><p class=\"text-mid mt-3\">Questo strumento calcola il rapporto di contrasto tra due colori, valuta la conformità WCAG (AA e AAA) per il testo normale, il testo grande e le icone, e propone una funzione di adattamento automatico per trovare colori conformi.</p>",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/verificatore-contrasto-colori-it.webp",
+      "imageAlt": "Verificatore contrasto colori – Arteon"
     },
     {
       "type": "gap",
@@ -377,6 +379,18 @@
           "answerSchemaText": "Verifica prima il testo sullo sfondo principale, i banner, i pulsanti, i link e le icone."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea per una nuova funzionalità, hai trovato un bug o vuoi suggerire un altro strumento che renderebbe il tuo lavoro più facile? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/verificatore-contrasto-colori-it.webp",
+      "imageAlt": "Verificatore contrasto colori – Arteon",
+      "defaultSubject": "Feedback: Verificatore contrasto colori"
     },
     {
       "type": "gap",

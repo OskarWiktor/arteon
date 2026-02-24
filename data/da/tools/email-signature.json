@@ -82,9 +82,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Hvorfor har du brug for en professionel e-mail-signatur?",
-      "html": "<p class=\"text-mid\">E-mail-signaturen (også kaldet e-mail-sidefod) er en informationsblok i bunden af hver sendt besked. Den indeholder kontaktoplysninger, stilling, virksomhedsnavn og ofte et link til hjemmesiden eller bookingkalenderen.</p><p class=\"text-mid mt-3\">Modtageren behøver ikke lede efter telefonnummeret i tidligere beskeder – alle oplysninger er let tilgængelige. En professionel e-mail-signatur viser også at du går op i detaljer og opretholder et konsekvent virksomhedsimage i forretningskommunikationen.</p>"
+      "html": "<p class=\"text-mid\">E-mail-signaturen (også kaldet e-mail-sidefod) er en informationsblok i bunden af hver sendt besked. Den indeholder kontaktoplysninger, stilling, virksomhedsnavn og ofte et link til hjemmesiden eller bookingkalenderen.</p><p class=\"text-mid mt-3\">Modtageren behøver ikke lede efter telefonnummeret i tidligere beskeder – alle oplysninger er let tilgængelige. En professionel e-mail-signatur viser også at du går op i detaljer og opretholder et konsekvent virksomhedsimage i forretningskommunikationen.</p>",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/gratis-e-mail-signatur-generator-da.webp",
+      "imageAlt": "E-mail signatur generator – Arteon"
     },
     {
       "type": "gap",
@@ -344,6 +346,18 @@
           "answer": "Ja. Generatoren kræver ingen login eller registrering. Hvert teammedlem kan åbne værktøjet, udfylde sine oplysninger og kopiere den færdige signatur. Konfigurationen kan også eksporteres som JSON-fil og deles med kolleger."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé til en ny funktion, fundet en fejl eller vil foreslå et andet værktøj, der ville gøre dit arbejde lettere? Skriv til os – vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/gratis-e-mail-signatur-generator-da.webp",
+      "imageAlt": "E-mail signatur generator – Arteon",
+      "defaultSubject": "Feedback: E-mail signatur generator"
     },
     {
       "type": "gap",

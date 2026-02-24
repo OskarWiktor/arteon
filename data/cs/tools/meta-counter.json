@@ -2,126 +2,161 @@
   "toolKey": "metaCounter",
   "locale": "cs",
   "metadata": {
-    "title": "Kontrola meta titulku a popisu zdarma \u2013 \u0160\u00ed\u0159ka v pixelech",
-    "description": "Zkontrolujte d\u00e9lku meta titulku a popisu ve znac\u00edch i pixelech. N\u00e1hled Google SERP pom\u016f\u017ee vyhnout se o\u0159\u00edzan\u00fdm \u00faryvk\u016fm. Bez registrace, lok\u00e1ln\u011b v prohl\u00ed\u017ee\u010di.",
+    "title": "Kontrola meta titulku a popisu zdarma – Šířka v pixelech",
+    "description": "Zkontrolujte délku meta titulku a popisu ve znacích i pixelech. Náhled Google SERP pomůže vyhnout se ořízaným úryvkům. Bez registrace, lokálně v prohlížeči.",
     "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
     "path": "/cs/nastroje/kontrola-meta-titulku-a-popisu"
   },
   "hero": {
-    "title": "Zkontrolujte d\u00e9lku titulku a popisu str\u00e1nky v Google",
-    "description": "Zadejte titulek a popis a n\u00e1stroj spo\u010d\u00edt\u00e1 po\u010det znak\u016f, slov, \u0161\u00ed\u0159ku v pixelech a uk\u00e1\u017ee, zda d\u00e9lka odpov\u00edd\u00e1 doporu\u010den\u00fdm SEO praktik\u00e1m.",
+    "title": "Zkontrolujte délku titulku a popisu stránky v Google",
+    "description": "Zadejte titulek a popis a nástroj spočítá počet znaků, slov, šířku v pixelech a ukáže, zda délka odpovídá doporučeným SEO praktikám.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/cs/nastroje", "label": "N\u00e1stroje" },
-    "third": { "href": "/cs/nastroje/kontrola-meta-titulku-a-popisu", "label": "Kontrola meta titulku a popisu" }
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/kontrola-meta-titulku-a-popisu",
+      "label": "Kontrola meta titulku a popisu"
+    }
   },
   "schemas": {
     "software": {
-      "name": "Kontrola d\u00e9lky meta titulku a popisu zdarma",
+      "name": "Kontrola délky meta titulku a popisu zdarma",
       "alternateName": [
-        "Kontrola meta titulku a popisu s n\u00e1hledem Google",
-        "N\u00e1hled \u00faryvk\u016f Google",
-        "Kontrola d\u00e9lky SEO titulku v pixelech",
-        "N\u00e1stroj pro kontrolu d\u00e9lky meta tag\u016f",
-        "N\u00e1stroj pro n\u00e1hled Google SERP"
+        "Kontrola meta titulku a popisu s náhledem Google",
+        "Náhled úryvků Google",
+        "Kontrola délky SEO titulku v pixelech",
+        "Nástroj pro kontrolu délky meta tagů",
+        "Nástroj pro náhled Google SERP"
       ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "SEOTool",
-      "description": "Bezplatn\u00e1 kontrola d\u00e9lky meta titulku a popisu. Kontroluje po\u010det znak\u016f, slov a \u0161\u00ed\u0159ku v pixelech. Zobrazuje n\u00e1hled, jak titulek a popis vypadaj\u00ed ve v\u00fdsledc\u00edch vyhled\u00e1v\u00e1n\u00ed Google.",
+      "description": "Bezplatná kontrola délky meta titulku a popisu. Kontroluje počet znaků, slov a šířku v pixelech. Zobrazuje náhled, jak titulek a popis vypadají ve výsledcích vyhledávání Google.",
       "featureList": [
-        "Po\u010d\u00edtadlo znak\u016f pro meta titulek",
-        "Po\u010d\u00edtadlo znak\u016f pro meta popis",
-        "M\u011b\u0159en\u00ed \u0161\u00ed\u0159ky v pixelech (odpov\u00edd\u00e1 Google)",
-        "Po\u010d\u00edtadlo slov pro titulek a popis",
-        "N\u00e1hled v\u00fdsledk\u016f vyhled\u00e1v\u00e1n\u00ed Google",
-        "Barevn\u00e9 hodnocen\u00ed d\u00e9lky (p\u0159\u00edli\u0161 kr\u00e1tk\u00e9 / dobr\u00e9 / p\u0159\u00edli\u0161 dlouh\u00e9)",
-        "Upozorn\u011bn\u00ed na o\u0159\u00edzan\u00ed titulku a popisu",
-        "Doporu\u010den\u00ed optim\u00e1ln\u00ed d\u00e9lky",
-        "Lok\u00e1ln\u00ed zpracov\u00e1n\u00ed v prohl\u00ed\u017ee\u010di"
+        "Počítadlo znaků pro meta titulek",
+        "Počítadlo znaků pro meta popis",
+        "Měření šířky v pixelech (odpovídá Google)",
+        "Počítadlo slov pro titulek a popis",
+        "Náhled výsledků vyhledávání Google",
+        "Barevné hodnocení délky (příliš krátké / dobré / příliš dlouhé)",
+        "Upozornění na ořízaní titulku a popisu",
+        "Doporučení optimální délky",
+        "Lokální zpracování v prohlížeči"
       ]
     },
     "howTo": {
-      "name": "Jak zkontrolovat d\u00e9lku meta titulku a popisu",
-      "description": "Zkontrolujte d\u00e9lku meta titulku a popisu v pixelech a znac\u00edch. Zjist\u011bte, kolik znak\u016f by m\u011bl m\u00edt titulek (50\u201360) a popis (120\u2013160) a jak se vyhnout o\u0159\u00edzan\u00ed v Google.",
+      "name": "Jak zkontrolovat délku meta titulku a popisu",
+      "description": "Zkontrolujte délku meta titulku a popisu v pixelech a znacích. Zjistěte, kolik znaků by měl mít titulek (50–60) a popis (120–160) a jak se vyhnout ořízaní v Google.",
       "totalTime": "PT3M",
       "steps": [
         {
           "name": "Zadejte meta titulek",
-          "text": "Vlo\u017ete nebo napi\u0161te titulek str\u00e1nky do pole Meta titulek. N\u00e1stroj automaticky spo\u010d\u00edt\u00e1 po\u010det znak\u016f, slov a \u0161\u00ed\u0159ku v pixelech."
+          "text": "Vložte nebo napište titulek stránky do pole Meta titulek. Nástroj automaticky spočítá počet znaků, slov a šířku v pixelech."
         },
-        { "name": "Zadejte meta popis", "text": "P\u0159idejte popis str\u00e1nky do pole Meta popis. Uvid\u00edte stejn\u00e9 metriky." },
-        { "name": "Zkontrolujte n\u00e1hled Google", "text": "Pod\u00edvejte se, jak titulek a popis vypadaj\u00ed v simulovan\u00fdch v\u00fdsledc\u00edch vyhled\u00e1v\u00e1n\u00ed Google." },
         {
-          "name": "Upravte podle doporu\u010den\u00ed",
-          "text": "Pokud stav ukazuje P\u0159\u00edli\u0161 kr\u00e1tk\u00e9 nebo P\u0159\u00edli\u0161 dlouh\u00e9, upravte text a sledujte zm\u011bny v re\u00e1ln\u00e9m \u010dase."
+          "name": "Zadejte meta popis",
+          "text": "Přidejte popis stránky do pole Meta popis. Uvidíte stejné metriky."
+        },
+        {
+          "name": "Zkontrolujte náhled Google",
+          "text": "Podívejte se, jak titulek a popis vypadají v simulovaných výsledcích vyhledávání Google."
+        },
+        {
+          "name": "Upravte podle doporučení",
+          "text": "Pokud stav ukazuje Příliš krátké nebo Příliš dlouhé, upravte text a sledujte změny v reálném čase."
         }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
     {
-      "type": "sectionInfo",
-      "title": "Co je meta titulek a meta popis?",
-      "html": "<p class=\"text-mid\">Meta titulek a meta popis jsou dva kr\u00e1tk\u00e9 texty, kter\u00e9 popisuj\u00ed obsah webov\u00e9 str\u00e1nky. Nezobrazuj\u00ed se p\u0159\u00edmo na str\u00e1nce, ale objevuj\u00ed se ve v\u00fdsledc\u00edch vyhled\u00e1v\u00e1n\u00ed Google jako titulek (modr\u00fd odkaz) a popis (\u0161ed\u00fd text pod titulkem).</p><p class=\"text-mid mt-3\">Dob\u0159e napsan\u00e9 meta tagy funguj\u00ed jako reklama va\u0161\u00ed str\u00e1nky ve v\u00fdsledc\u00edch vyhled\u00e1v\u00e1n\u00ed \u2013 upoutaj\u00ed pozornost a zvy\u0161uj\u00ed pravd\u011bpodobnost proklik\u016f. \u0160patn\u011b napsan\u00e9 nebo o\u0159\u00edzan\u00e9 tagy mohou odradit od kliknut\u00ed, i kdy\u017e je samotn\u00e1 str\u00e1nka hodnotn\u00e1.</p>"
+      "type": "gap",
+      "variant": "line"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionBasic",
+      "title": "Co je meta titulek a meta popis?",
+      "html": "<p class=\"text-mid\">Meta titulek a meta popis jsou dva krátké texty, které popisují obsah webové stránky. Nezobrazují se přímo na stránce, ale objevují se ve výsledcích vyhledávání Google jako titulek (modrý odkaz) a popis (šedý text pod titulkem).</p><p class=\"text-mid mt-3\">Dobře napsané meta tagy fungují jako reklama vaší stránky ve výsledcích vyhledávání – upoutají pozornost a zvyšují pravděpodobnost prokliků. Špatně napsané nebo ořízané tagy mohou odradit od kliknutí, i když je samotná stránka hodnotná.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Kontrola meta titulku a popisu – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
-      "title": "Jak pou\u017e\u00edt kontrolu meta titulku a popisu",
-      "description": "Kontrola d\u00e9lky meta tag\u016f zabere minutu:",
+      "title": "Jak použít kontrolu meta titulku a popisu",
+      "description": "Kontrola délky meta tagů zabere minutu:",
       "grid": "four",
       "items": [
         {
           "icon": "RiPencilLine",
-          "title": "1. Zadejte titulek str\u00e1nky",
-          "description": "Vlo\u017ete nebo napi\u0161te meta titulek do prvn\u00edho pole. N\u00e1stroj okam\u017eit\u011b zobraz\u00ed t\u0159i metriky: po\u010det znak\u016f, slov a \u0161\u00ed\u0159ku v pixelech."
+          "title": "1. Zadejte titulek stránky",
+          "description": "Vložte nebo napište meta titulek do prvního pole. Nástroj okamžitě zobrazí tři metriky: počet znaků, slov a šířku v pixelech."
         },
         {
           "icon": "RiFileTextLine",
-          "title": "2. Zadejte popis str\u00e1nky",
-          "description": "P\u0159idejte meta popis do druh\u00e9ho pole. Uvid\u00edte stejn\u00e9 metriky. Pole je v\u011bt\u0161\u00ed, proto\u017ee popisy jsou del\u0161\u00ed ne\u017e titulky."
+          "title": "2. Zadejte popis stránky",
+          "description": "Přidejte meta popis do druhého pole. Uvidíte stejné metriky. Pole je větší, protože popisy jsou delší než titulky."
         },
         {
           "icon": "RiEyeLine",
-          "title": "3. Zkontrolujte n\u00e1hled",
-          "description": "Vpravo (desktop) nebo dole (mobil) uvid\u00edte n\u00e1hled, jak titulek a popis vypadaj\u00ed ve v\u00fdsledc\u00edch Google."
+          "title": "3. Zkontrolujte náhled",
+          "description": "Vpravo (desktop) nebo dole (mobil) uvidíte náhled, jak titulek a popis vypadají ve výsledcích Google."
         },
         {
           "icon": "RiToolsLine",
-          "title": "4. Upravte podle doporu\u010den\u00ed",
-          "description": "Pokud stav ukazuje P\u0159\u00edli\u0161 kr\u00e1tk\u00e9 nebo P\u0159\u00edli\u0161 dlouh\u00e9, upravte text. Zm\u011bny jsou vid\u011bt okam\u017eit\u011b."
+          "title": "4. Upravte podle doporučení",
+          "description": "Pokud stav ukazuje Příliš krátké nebo Příliš dlouhé, upravte text. Změny jsou vidět okamžitě."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
-      "title": "Kolik znak\u016f by m\u011bl m\u00edt meta titulek a popis?",
-      "html": "<p class=\"text-mid mb-4\">Google o\u0159ez\u00e1v\u00e1 titulky a popisy, kter\u00e9 jsou p\u0159\u00edli\u0161 dlouh\u00e9. N\u00ed\u017ee jsou doporu\u010den\u00e9 rozsahy, kter\u00e9 sni\u017euj\u00ed riziko o\u0159\u00edzan\u00ed textu ve v\u00fdsledc\u00edch vyhled\u00e1v\u00e1n\u00ed.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Prvek</th><th class=\"py-2 pr-4 font-semibold\">Znaky</th><th class=\"py-2 pr-4 font-semibold\">Pixely</th><th class=\"py-2 font-semibold\">Pozn\u00e1mky</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta titulek</td><td class=\"py-2 pr-4 whitespace-nowrap\">50\u201360 znak\u016f</td><td class=\"py-2 pr-4 whitespace-nowrap\">do ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Nejd\u016fle\u017eit\u011bj\u0161\u00ed kl\u00ed\u010dov\u00e1 slova na za\u010d\u00e1tek. N\u00e1zev zna\u010dky na konec.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta popis</td><td class=\"py-2 pr-4 whitespace-nowrap\">120\u2013160 znak\u016f</td><td class=\"py-2 pr-4 whitespace-nowrap\">do ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">Vejde se 2\u20133 kr\u00e1tk\u00e9 v\u011bty. Zakon\u010dete v\u00fdzvu k akci.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Jedn\u00e1 se o p\u0159ibli\u017en\u00e9 hodnoty \u2013 Google nezve\u0159ej\u0148uje p\u0159esn\u00e9 limity a m\u016f\u017ee je upravit v z\u00e1vislosti na za\u0159\u00edzen\u00ed a kontextu dotazu.</p>"
+      "title": "Kolik znaků by měl mít meta titulek a popis?",
+      "html": "<p class=\"text-mid mb-4\">Google ořezává titulky a popisy, které jsou příliš dlouhé. Níže jsou doporučené rozsahy, které snižují riziko ořízaní textu ve výsledcích vyhledávání.</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Prvek</th><th class=\"py-2 pr-4 font-semibold\">Znaky</th><th class=\"py-2 pr-4 font-semibold\">Pixely</th><th class=\"py-2 font-semibold\">Poznámky</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">Meta titulek</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 znaků</td><td class=\"py-2 pr-4 whitespace-nowrap\">do ~580 px</td><td class=\"text-primary-light0 py-2 text-sm\">Nejdůležitější klíčová slova na začátek. Název značky na konec.</td></tr><tr><td class=\"py-2 pr-4 font-medium\">Meta popis</td><td class=\"py-2 pr-4 whitespace-nowrap\">120–160 znaků</td><td class=\"py-2 pr-4 whitespace-nowrap\">do ~920 px</td><td class=\"text-primary-light0 py-2 text-sm\">Vejde se 2–3 krátké věty. Zakončete výzvu k akci.</td></tr></tbody></table></div><p class=\"text-mid mt-4 text-sm\">Jedná se o přibližné hodnoty – Google nezveřejňuje přesné limity a může je upravit v závislosti na zařízení a kontextu dotazu.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
-      "title": "Jak interpretovat v\u00fdsledky",
-      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta titulek</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Znaky: <strong>52</strong></span><span class=\"text-mid\">Slova: <strong>7</strong></span><span class=\"text-mid\">Pixely: <strong>456px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Spr\u00e1vn\u00e1 d\u00e9lka</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta popis</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Znaky: <strong>142</strong></span><span class=\"text-mid\">Slova: <strong>21</strong></span><span class=\"text-mid\">Pixely: <strong>812px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Spr\u00e1vn\u00e1 d\u00e9lka</span></div></div>",
-      "html": "<p class=\"text-mid mb-4\">N\u00e1stroj zobrazuje t\u0159i metriky pro ka\u017ed\u00e9 pole spolu s barevn\u00fdm hodnocen\u00edm d\u00e9lky:</p><h3 class=\"h5 mt-6 mb-2\">Metriky</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Znaky</strong> \u2013 celkov\u00fd po\u010det znak\u016f (v\u010detn\u011b mezer). Snadno srozumiteln\u00e9, ale m\u00e9n\u011b p\u0159esn\u00e9 ne\u017e pixely.</li><li><strong>Slova</strong> \u2013 po\u010det slov. U\u017eite\u010dn\u00e9 pro rychl\u00e9 posouzen\u00ed d\u00e9lky.</li><li><strong>\u0160\u00ed\u0159ka (px)</strong> \u2013 \u0161\u00ed\u0159ka textu v pixelech. To je hodnota, kterou Google skute\u010dn\u011b pou\u017e\u00edv\u00e1 p\u0159i o\u0159ez\u00e1v\u00e1n\u00ed.</li></ul><h3 class=\"h5 mt-6 mb-2\">Stavy hodnocen\u00ed</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Spr\u00e1vn\u00e1 d\u00e9lka</strong> (zelen\u00e1) \u2013 text je v doporu\u010den\u00e9m rozsahu. Google by jej m\u011bl zobrazit cel\u00fd.</li><li><strong class=\"text-warning-text\">P\u0159\u00edli\u0161 kr\u00e1tk\u00e9</strong> (\u017elut\u00e1) \u2013 text je p\u0159\u00edli\u0161 kr\u00e1tk\u00fd. Je prostor pro dal\u0161\u00ed informace, kter\u00e9 mohou podpo\u0159it prokliky.</li><li><strong class=\"text-error-text\">P\u0159\u00edli\u0161 dlouh\u00e9</strong> (\u010derven\u00e1) \u2013 text p\u0159ekra\u010duje doporu\u010den\u00fd rozsah. Google jej m\u016f\u017ee o\u0159\u00edznout. Zva\u017ete zkr\u00e1cen\u00ed.</li><li><strong class=\"text-light\">\u017d\u00e1dn\u00e1 data</strong> (\u0161ed\u00e1) \u2013 pole je pr\u00e1zdn\u00e9. Zadejte text pro zobrazen\u00ed anal\u00fdzy.</li></ul>"
+      "title": "Jak interpretovat výsledky",
+      "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta titulek</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Znaky: <strong>52</strong></span><span class=\"text-mid\">Slova: <strong>7</strong></span><span class=\"text-mid\">Pixely: <strong>456px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Správná délka</span></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark mb-2 text-sm! font-medium\">Meta popis</p><div class=\"flex flex-wrap gap-2 text-sm!\"><span class=\"text-mid\">Znaky: <strong>142</strong></span><span class=\"text-mid\">Slova: <strong>21</strong></span><span class=\"text-mid\">Pixely: <strong>812px</strong></span></div><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-green-100 text-green-800 mt-2\">Správná délka</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Nástroj zobrazuje tři metriky pro každé pole spolu s barevným hodnocením délky:</p><h3 class=\"h5 mt-6 mb-2\">Metriky</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Znaky</strong> – celkový počet znaků (včetně mezer). Snadno srozumitelné, ale méně přesné než pixely.</li><li><strong>Slova</strong> – počet slov. Užitečné pro rychlé posouzení délky.</li><li><strong>Šířka (px)</strong> – šířka textu v pixelech. To je hodnota, kterou Google skutečně používá při ořezávání.</li></ul><h3 class=\"h5 mt-6 mb-2\">Stavy hodnocení</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong class=\"text-success-text\">Správná délka</strong> (zelená) – text je v doporučeném rozsahu. Google by jej měl zobrazit celý.</li><li><strong class=\"text-warning-text\">Příliš krátké</strong> (žlutá) – text je příliš krátký. Je prostor pro další informace, které mohou podpořit prokliky.</li><li><strong class=\"text-error-text\">Příliš dlouhé</strong> (červená) – text překračuje doporučený rozsah. Google jej může oříznout. Zvažte zkrácení.</li><li><strong class=\"text-light\">Žádná data</strong> (šedá) – pole je prázdné. Zadejte text pro zobrazení analýzy.</li></ul>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Proč je šířka v pixelech důležitější než počet znaků?",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">iiiiiiiiiiiiiiii (16 znaků)</p><div class=\"bg-success-icon mt-1 h-3 w-1/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~64px šířky</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">WWWWWWWWWWWWWWWW (16 znaků)</p><div class=\"bg-error-icon mt-1 h-3 w-3/4 rounded-full\"></div><p class=\"text-light mt-1 text-xs!\">~256px šířky</p></div></div>",
       "html": "<p class=\"text-mid\">Různá písmena mají různou šířku. Porovnejte &quot;iiii&quot; a &quot;WWWW&quot; – obě mají 4 znaky, ale vizuální šířka je zcela jiná. Google měří šířku textu v pixelech, ne ve znacích.</p><p class=\"text-mid mt-3\">Proto titulek s mnoha úzkými písmeny (i, l, t, f) může být delší než titulek se širokými písmeny (W, M, O), přestože mají stejný počet znaků. Nástroj zobrazuje obě hodnoty: počet znaků (snáze pochopitelný) a šířku v pixelech (přesnější pro Google).</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Náhled snippetu – co zobrazuje?",
       "html": "<p class=\"text-mid\">Náhled (snippet preview) simuluje, jak titulek a popis stránky vypadají ve výsledcích vyhledávání Google. Jedná se o orientační vizualizaci – skutečný vzhled se může mírně lišit v závislosti na zařízení a prohlížeči.</p><h3 class=\"h5 mt-6 mb-2\">Prvky náhledu</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> – adresa stránky zobrazená nad titulkem. Můžete ji zadat do volitelného pole pro realističtější náhled.</li><li><strong>Titulek</strong> – modrý nadpis. Pokud je příliš dlouhý, nástroj ho automaticky ořízne a přidá tři tečky.</li><li><strong>Popis</strong> – šedý text pod titulkem. Také se ořízne, pokud překročí limit.</li></ul><h3 class=\"h5 mt-6 mb-2\">Co náhled neukazuje</h3><p class=\"text-mid\">Náhled nezahrnuje všechny prvky, které Google může přidat k výsledku: data, hvězdičková hodnocení, odkazy na podstránky ani rozšířené fragmenty. Jde o zjednodušenou verzi zaměřenou na délku textu.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Nejčastější problémy a řešení",
@@ -144,90 +179,128 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Pro koho je kontrola meta tagů určena?",
-      "description": "Kontrola meta tag\u016f je u\u017eite\u010dn\u00e1 pro ka\u017ed\u00e9ho, kdo tvo\u0159\u00ed obsah webu:",
+      "description": "Kontrola meta tagů je užitečná pro každého, kdo tvoří obsah webu:",
       "grid": "two",
       "items": [
         {
           "icon": "RiShoppingBagLine",
-          "title": "Majitel\u00e9 web\u016f a e-shop\u016f",
-          "description": "Zkontrolujte, zda se titulky a popisy neo\u0159ez\u00e1vaj\u00ed ve v\u00fdsledc\u00edch Google p\u0159ed publikov\u00e1n\u00edm nov\u00e9 str\u00e1nky nebo produktu."
+          "title": "Majitelé webů a e-shopů",
+          "description": "Zkontrolujte, zda se titulky a popisy neořezávají ve výsledcích Google před publikováním nové stránky nebo produktu."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO specialist\u00e9",
-          "description": "Testujte r\u016fzn\u00e9 verze titulk\u016f a popis\u016f, kontrolujte n\u00e1hled v\u00fdsledk\u016f vyhled\u00e1v\u00e1n\u00ed a ov\u011b\u0159ujte dodr\u017een\u00ed doporu\u010den\u00ed."
+          "title": "SEO specialisté",
+          "description": "Testujte různé verze titulků a popisů, kontrolujte náhled výsledků vyhledávání a ověřujte dodržení doporučení."
         },
-        { "icon": "RiEditLine", "title": "Copywrite\u0159i", "description": "Pi\u0161te titulky a popisy, kter\u00e9 se vejdou do limit\u016f a podpo\u0159\u00ed prokliky." },
-        { "icon": "RiCodeLine", "title": "Weboví v\u00fdvoj\u00e1\u0159i", "description": "Ov\u011b\u0159te meta tagy p\u0159ed nasazen\u00edm str\u00e1nky do produkce." }
+        {
+          "icon": "RiEditLine",
+          "title": "Copywriteři",
+          "description": "Pište titulky a popisy, které se vejdou do limitů a podpoří prokliky."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Weboví vývojáři",
+          "description": "Ověřte meta tagy před nasazením stránky do produkce."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
-      "title": "\u010c\u00edm je tato kontrola meta titulku a popisu v\u00fdjime\u010dn\u00e1?",
+      "title": "Čím je tato kontrola meta titulku a popisu výjimečná?",
       "grid": "two",
       "items": [
         {
           "icon": "RiRuler2Line",
-          "title": "M\u011b\u0159en\u00ed v pixelech",
-          "description": "Nepo\u010d\u00edt\u00e1me jen znaky \u2013 m\u011b\u0159\u00edme skute\u010dnou \u0161\u00ed\u0159ku textu jako Google."
+          "title": "Měření v pixelech",
+          "description": "Nepočítáme jen znaky – měříme skutečnou šířku textu jako Google."
         },
         {
           "icon": "RiEyeLine",
-          "title": "N\u00e1hled Google",
-          "description": "Pod\u00edvejte se, jak titulek a popis vypadaj\u00ed ve v\u00fdsledc\u00edch vyhled\u00e1v\u00e1n\u00ed p\u0159ed publikov\u00e1n\u00edm str\u00e1nky."
+          "title": "Náhled Google",
+          "description": "Podívejte se, jak titulek a popis vypadají ve výsledcích vyhledávání před publikováním stránky."
         },
         {
           "icon": "RiCheckboxCircleLine",
-          "title": "Barevn\u00e9 hodnocen\u00ed",
-          "description": "Okam\u017eit\u011b zjist\u00edte, zda je text p\u0159\u00edli\u0161 kr\u00e1tk\u00fd, spr\u00e1vn\u00fd, nebo p\u0159\u00edli\u0161 dlouh\u00fd."
+          "title": "Barevné hodnocení",
+          "description": "Okamžitě zjistíte, zda je text příliš krátký, správný, nebo příliš dlouhý."
         },
         {
           "icon": "RiInfinityLine",
-          "title": "Pixely a po\u010det znak\u016f pohromad\u011b",
-          "description": "N\u00e1stroj zobrazuje ob\u011b hodnoty sou\u010dasn\u011b \u2013 m\u016f\u017eete porovnat, zda se titulek vejde do obou limit\u016f."
+          "title": "Pixely a počet znaků pohromadě",
+          "description": "Nástroj zobrazuje obě hodnoty současně – můžete porovnat, zda se titulek vejde do obou limitů."
         },
         {
           "icon": "RiUserLine",
           "title": "Titulek a popis v jednom pohledu",
-          "description": "Zkontrolujte meta titulek a popis sou\u010dasn\u011b, bez p\u0159ep\u00edn\u00e1n\u00ed z\u00e1lo\u017eek."
+          "description": "Zkontrolujte meta titulek a popis současně, bez přepínání záložek."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
-      "title": "\u010casto kladen\u00e9 ot\u00e1zky o kontrole meta titulku a popisu",
+      "title": "Často kladené otázky o kontrole meta titulku a popisu",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Pro\u010d n\u00e1stroj zobrazuje \u0161\u00ed\u0159ku v pixelech a ne jen po\u010det znak\u016f?",
-          "answer": "R\u016fzn\u00e9 znaky maj\u00ed r\u016fznou \u0161\u00ed\u0159ku. P\u00edsmeno &quot;i&quot; zab\u00edr\u00e1 mnohem m\u00e9n\u011b m\u00edsta ne\u017e &quot;m&quot; nebo &quot;W&quot;. Google o\u0159ez\u00e1v\u00e1 titulky a popisy na z\u00e1klad\u011b \u0161\u00ed\u0159ky v pixelech, ne po\u010dtu znak\u016f.",
-          "answerSchemaText": "Google o\u0159ez\u00e1v\u00e1 na z\u00e1klad\u011b \u0161\u00ed\u0159ky v pixelech, ne po\u010dtu znak\u016f. R\u016fzn\u00e9 znaky maj\u00ed r\u016fznou \u0161\u00ed\u0159ku."
+          "question": "Proč nástroj zobrazuje šířku v pixelech a ne jen počet znaků?",
+          "answer": "Různé znaky mají různou šířku. Písmeno &quot;i&quot; zabírá mnohem méně místa než &quot;m&quot; nebo &quot;W&quot;. Google ořezává titulky a popisy na základě šířky v pixelech, ne počtu znaků.",
+          "answerSchemaText": "Google ořezává na základě šířky v pixelech, ne počtu znaků. Různé znaky mají různou šířku."
         },
         {
-          "question": "Zobrazuje Google v\u017edy m\u016fj meta titulek a popis?",
-          "answer": "Ne v\u017edy. Google m\u016f\u017ee zm\u011bnit zobrazen\u00fd titulek nebo popis, pokud zjist\u00ed n\u011bco vhodn\u011bj\u0161\u00edho pro dotaz u\u017eivatele. \u010casto p\u0159eb\u00edr\u00e1 \u00faryvky z obsahu str\u00e1nky. Dob\u0159e napsan\u00e9 meta tagy zvy\u0161uj\u00ed pravd\u011bpodobnost, \u017ee je Google pou\u017eije, ale 100% z\u00e1ruka neexistuje.",
-          "answerSchemaText": "Ne v\u017edy. Google m\u016f\u017ee zm\u011bnit zobrazen\u00fd titulek nebo popis, aby l\u00e9pe odpov\u00eddal dotazu."
+          "question": "Zobrazuje Google vždy můj meta titulek a popis?",
+          "answer": "Ne vždy. Google může změnit zobrazený titulek nebo popis, pokud zjistí něco vhodnějšího pro dotaz uživatele. Často přebírá úryvky z obsahu stránky. Dobře napsané meta tagy zvyšují pravděpodobnost, že je Google použije, ale 100% záruka neexistuje.",
+          "answerSchemaText": "Ne vždy. Google může změnit zobrazený titulek nebo popis, aby lépe odpovídal dotazu."
         },
         {
-          "question": "Jak\u00e1 je optim\u00e1ln\u00ed d\u00e9lka meta titulku a meta popisu?",
-          "answer": "Meta titulek by m\u011bl m\u00edt p\u0159ibli\u017en\u011b 50\u201360 znak\u016f (do ~580 pixel\u016f \u0161\u00ed\u0159ky). Meta popis nejl\u00e9pe funguje p\u0159i 120\u2013160 znac\u00edch (do ~920 pixel\u016f). Jedn\u00e1 se o p\u0159ibli\u017en\u00e9 hodnoty \u2013 Google nezve\u0159ej\u0148uje p\u0159esn\u00e9 limity.",
-          "answerSchemaText": "Meta titulek: 50\u201360 znak\u016f (~580px). Meta popis: 120\u2013160 znak\u016f (~920px). P\u0159ibli\u017en\u00e9 hodnoty."
+          "question": "Jaká je optimální délka meta titulku a meta popisu?",
+          "answer": "Meta titulek by měl mít přibližně 50–60 znaků (do ~580 pixelů šířky). Meta popis nejlépe funguje při 120–160 znacích (do ~920 pixelů). Jedná se o přibližné hodnoty – Google nezveřejňuje přesné limity.",
+          "answerSchemaText": "Meta titulek: 50–60 znaků (~580px). Meta popis: 120–160 znaků (~920px). Přibližné hodnoty."
         },
         {
-          "question": "Ovliv\u0148uje meta popis pozici str\u00e1nky v Google?",
-          "answer": "Meta popis nen\u00ed p\u0159\u00edm\u00fdm faktorem hodnocen\u00ed \u2013 Google jej nepou\u017e\u00edv\u00e1 k ur\u010den\u00ed pozice str\u00e1nky. Nicm\u00e9n\u011b dobr\u00fd popis zvy\u0161uje m\u00edru prokliku z v\u00fdsledk\u016f vyhled\u00e1v\u00e1n\u00ed a vy\u0161\u0161\u00ed CTR m\u016f\u017ee nep\u0159\u00edmo ovlivnit pozici.",
-          "answerSchemaText": "Meta popis nen\u00ed p\u0159\u00edm\u00fdm faktorem hodnocen\u00ed, ale dobr\u00fd popis m\u016f\u017ee zv\u00fd\u0161it CTR a nep\u0159\u00edmo ovlivnit pozici."
+          "question": "Ovlivňuje meta popis pozici stránky v Google?",
+          "answer": "Meta popis není přímým faktorem hodnocení – Google jej nepoužívá k určení pozice stránky. Nicméně dobrý popis zvyšuje míru prokliku z výsledků vyhledávání a vyšší CTR může nepřímo ovlivnit pozici.",
+          "answerSchemaText": "Meta popis není přímým faktorem hodnocení, ale dobrý popis může zvýšit CTR a nepřímo ovlivnit pozici."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Objevte dal\u0161\u00ed n\u00e1stroje" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad na novou funkci, našli jste chybu nebo chcete navrhnout jiný nástroj, který by usnadnil vaši práci? Napište nám – odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Kontrola meta titulku a popisu – Arteon",
+      "defaultSubject": "Feedback: Kontrola meta titulku a popisu"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Objevte další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

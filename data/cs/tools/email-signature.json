@@ -82,9 +82,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Proč potřebujete profesionální e-mailový podpis?",
-      "html": "<p class=\"text-mid\">E-mailový podpis (také známý jako patička e-mailu) je blok informací na konci každé odeslané zprávy. Obsahuje kontaktní údaje, pracovní pozici, název firmy a často odkaz na web nebo kalendář schůzek.</p><p class=\"text-mid mt-3\">Příjemce nemusí hledat telefonní číslo v předchozích zprávách – všechny údaje jsou snadno dostupné. Profesionální e-mailový podpis také ukazuje, že dbáte na detaily a udržujete konzistentní image firmy v obchodní komunikaci.</p>"
+      "html": "<p class=\"text-mid\">E-mailový podpis (také známý jako patička e-mailu) je blok informací na konci každé odeslané zprávy. Obsahuje kontaktní údaje, pracovní pozici, název firmy a často odkaz na web nebo kalendář schůzek.</p><p class=\"text-mid mt-3\">Příjemce nemusí hledat telefonní číslo v předchozích zprávách – všechny údaje jsou snadno dostupné. Profesionální e-mailový podpis také ukazuje, že dbáte na detaily a udržujete konzistentní image firmy v obchodní komunikaci.</p>",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/generator-podpisu-emailu-zdarma-cs.webp",
+      "imageAlt": "Generátor podpisu emailu – Arteon"
     },
     {
       "type": "gap",
@@ -344,6 +346,18 @@
           "answer": "Ano. Generátor nevyžaduje přihlášení ani registraci. Každý člen týmu může otevřít nástroj, vyplnit své údaje a zkopírovat hotový podpis. Konfiguraci lze také exportovat jako JSON soubor a sdílet s kolegy."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad na novou funkci, našli jste chybu nebo chcete navrhnout jiný nástroj, který by usnadnil vaši práci? Napište nám – odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/generator-podpisu-emailu-zdarma-cs.webp",
+      "imageAlt": "Generátor podpisu emailu – Arteon",
+      "defaultSubject": "Feedback: Generátor podpisu emailu"
     },
     {
       "type": "gap",

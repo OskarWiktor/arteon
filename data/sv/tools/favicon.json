@@ -71,9 +71,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Vad är en favicon och varför är den viktig?",
-      "html": "<p class=\"text-mid\">En favicon är en liten ikon som visas i webbläsarfliken, i bokmärkeslistan och på telefonens startskärm. Det är ett av de första elementen som användaren ser – redan innan sidan laddats klart.</p><p class=\"text-mid mt-3\">En professionell favicon bygger varumärkesigenkänning och gör det enklare för användaren att hitta din sida bland många öppna flikar. Avsaknad av favicon kan ge ett oprofessionellt intryck och minska besökarnas förtroende.</p>"
+      "html": "<p class=\"text-mid\">En favicon är en liten ikon som visas i webbläsarfliken, i bokmärkeslistan och på telefonens startskärm. Det är ett av de första elementen som användaren ser – redan innan sidan laddats klart.</p><p class=\"text-mid mt-3\">En professionell favicon bygger varumärkesigenkänning och gör det enklare för användaren att hitta din sida bland många öppna flikar. Avsaknad av favicon kan ge ett oprofessionellt intryck och minska besökarnas förtroende.</p>",
+      "imageSrc": "/assets/tools/favicon-generator/gratis-favicon-generator-sv.webp",
+      "imageAlt": "Favicon-generator – Arteon"
     },
     {
       "type": "gap",
@@ -293,6 +295,18 @@
           "answerSchemaText": "Placera ikonfilerna i rotmappen och lägg till HTML-taggar i head-sektionen."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss att förbättra våra verktyg",
+      "description": "Har du en idé för en ny funktion, hittat en bugg eller vill föreslå ett annat verktyg som skulle göra ditt arbete enklare? Skriv till oss – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/favicon-generator/gratis-favicon-generator-sv.webp",
+      "imageAlt": "Favicon-generator – Arteon",
+      "defaultSubject": "Feedback: Favicon-generator"
     },
     {
       "type": "gap",

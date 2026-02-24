@@ -72,9 +72,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Porque verificar o comprimento do meta título e da descrição?",
-      "html": "<p class=\"text-mid\">O meta título e a meta descrição são os primeiros elementos que os utilizadores veem nos resultados de pesquisa Google. Um título truncado ou uma descrição cortada pode reduzir a taxa de cliques e prejudicar o referenciamento da sua página.</p><p class=\"text-mid mt-3\">Esta ferramenta verifica o número de caracteres, o número de palavras e a largura em píxeis do seu título e descrição. Mostra uma pré-visualização em tempo real da aparência da sua página nos resultados Google, permitindo otimizar cada elemento antes da publicação.</p>"
+      "html": "<p class=\"text-mid\">O meta título e a meta descrição são os primeiros elementos que os utilizadores veem nos resultados de pesquisa Google. Um título truncado ou uma descrição cortada pode reduzir a taxa de cliques e prejudicar o referenciamento da sua página.</p><p class=\"text-mid mt-3\">Esta ferramenta verifica o número de caracteres, o número de palavras e a largura em píxeis do seu título e descrição. Mostra uma pré-visualização em tempo real da aparência da sua página nos resultados Google, permitindo otimizar cada elemento antes da publicação.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Verificador de meta título e descrição – Arteon"
     },
     {
       "type": "gap",
@@ -275,6 +277,18 @@
           "answerSchemaText": "Não. Processamento local no navegador."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar nossas ferramentas",
+      "description": "Tem uma ideia para uma nova funcionalidade, encontrou um bug ou quer sugerir outra ferramenta que facilitaria seu trabalho? Escreva-nos – respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Verificador de meta título e descrição – Arteon",
+      "defaultSubject": "Feedback: Verificador de meta título e descrição"
     },
     {
       "type": "gap",

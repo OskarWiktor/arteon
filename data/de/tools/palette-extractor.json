@@ -63,9 +63,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Farben aus jedem Bild extrahieren",
-      "html": "<p class=\"text-mid\">Der Bild-Farbextraktor analysiert Ihr Bild und identifiziert die dominanten Farben. Das Ergebnis ist eine Palette mit HEX- und RGB-Codes, die Sie direkt in Ihrem Design, Ihrer Website oder Ihren Druckmaterialien verwenden können.</p><p class=\"text-mid mt-3\">Das Tool eignet sich für die Analyse von Fotos, Logos, Illustrationen und Screenshots. Laden Sie ein Bild hoch, und in wenigen Sekunden sehen Sie die wichtigsten Farben als übersichtliche Palette - mit kopierbaren Codes.</p><p class=\"text-mid mt-3\">Das Bild wird lokal in Ihrem Browser verarbeitet - es wird nicht an einen Server gesendet. Nach dem Schließen des Tabs werden alle Daten aus dem Speicher entfernt.</p>"
+      "html": "<p class=\"text-mid\">Der Bild-Farbextraktor analysiert Ihr Bild und identifiziert die dominanten Farben. Das Ergebnis ist eine Palette mit HEX- und RGB-Codes, die Sie direkt in Ihrem Design, Ihrer Website oder Ihren Druckmaterialien verwenden können.</p><p class=\"text-mid mt-3\">Das Tool eignet sich für die Analyse von Fotos, Logos, Illustrationen und Screenshots. Laden Sie ein Bild hoch, und in wenigen Sekunden sehen Sie die wichtigsten Farben als übersichtliche Palette - mit kopierbaren Codes.</p><p class=\"text-mid mt-3\">Das Bild wird lokal in Ihrem Browser verarbeitet - es wird nicht an einen Server gesendet. Nach dem Schließen des Tabs werden alle Daten aus dem Speicher entfernt.</p>",
+      "imageSrc": "/assets/tools/image-color-extractor/bild-farbextraktor-de.webp",
+      "imageAlt": "Bild-Farbextraktor – Arteon"
     },
     {
       "type": "gap",
@@ -297,6 +299,18 @@
           "answerSchemaText": "Nein, das Tool bestimmt die optimale Anzahl automatisch (bis zu 12 Farben)."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Tools zu verbessern",
+      "description": "Haben Sie eine Idee für eine neue Funktion, einen Fehler gefunden oder möchten Sie ein anderes Tool vorschlagen, das Ihre Arbeit erleichtern würde? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/image-color-extractor/bild-farbextraktor-de.webp",
+      "imageAlt": "Bild-Farbextraktor – Arteon",
+      "defaultSubject": "Feedback: Bild-Farbextraktor"
     },
     {
       "type": "gap",

@@ -80,9 +80,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "¿Qué son el meta título y la meta descripción?",
-      "html": "<p class=\"text-mid\">El meta título y la meta descripción son dos textos cortos que describen el contenido de una página web. No son visibles directamente en la página, pero aparecen en los resultados de búsqueda de Google como el título (enlace azul) y la descripción (texto gris debajo del título).</p><p class=\"text-mid mt-3\">Unas meta etiquetas bien escritas funcionan como un anuncio de su página en los resultados de búsqueda: atraen la atención y aumentan la probabilidad de un clic. Unas etiquetas mal escritas o truncadas pueden desanimar los clics, incluso si la página en sí es valiosa.</p>"
+      "html": "<p class=\"text-mid\">El meta título y la meta descripción son dos textos cortos que describen el contenido de una página web. No son visibles directamente en la página, pero aparecen en los resultados de búsqueda de Google como el título (enlace azul) y la descripción (texto gris debajo del título).</p><p class=\"text-mid mt-3\">Unas meta etiquetas bien escritas funcionan como un anuncio de su página en los resultados de búsqueda: atraen la atención y aumentan la probabilidad de un clic. Unas etiquetas mal escritas o truncadas pueden desanimar los clics, incluso si la página en sí es valiosa.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Verificador de meta título y descripción – Arteon"
     },
     {
       "type": "gap",
@@ -288,6 +290,18 @@
           "answerSchemaText": "Acorte el título, mantenga las palabras importantes al principio y mueva el nombre de marca al final."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea para una nueva función, encontraste un error o quieres sugerir otra herramienta que facilite tu trabajo? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageAlt": "Verificador de meta título y descripción – Arteon",
+      "defaultSubject": "Feedback: Verificador de meta título y descripción"
     },
     {
       "type": "gap",

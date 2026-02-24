@@ -50,6 +50,7 @@ export interface ToolPageData {
 
 export type ToolContentBlock =
   | SectionInfoBlock
+  | SectionBasicBlock
   | SectionStepsBlock
   | SectionDemoBlock
   | SectionTabsBlock
@@ -57,12 +58,22 @@ export type ToolContentBlock =
   | SectionTimelineBlock
   | GapBlock
   | FaqBlock
-  | ToolsCarouselBlock;
+  | ToolsCarouselBlock
+  | ContactFormBlock;
 
 export interface SectionInfoBlock {
   type: 'sectionInfo';
   title: string;
   html: string;
+}
+
+export interface SectionBasicBlock {
+  type: 'sectionBasic';
+  title: string;
+  html: string;
+  imageSrc: string;
+  imageAlt: string;
+  variant?: 'left' | 'right';
 }
 
 export interface SectionStepsBlock {
@@ -143,4 +154,13 @@ export interface SectionTimelineBlock {
 export interface ToolsCarouselBlock {
   type: 'toolsCarousel';
   title: string;
+}
+
+export interface ContactFormBlock {
+  type: 'contactForm';
+  title: string;
+  description: string;
+  imageSrc: string;
+  imageAlt: string;
+  defaultSubject: string;
 }

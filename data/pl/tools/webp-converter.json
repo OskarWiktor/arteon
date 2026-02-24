@@ -69,9 +69,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Co to jest WebP i dlaczego warto konwertować obrazy?",
-      "html": "<p class=\"text-mid mb-4\">WebP to format obrazów stworzony przez Google, który pozwala zmniejszyć rozmiar plików graficznych nawet o 25-35% w porównaniu z JPG i PNG - przy zachowaniu porównywalnej jakości wizualnej. Mniejsze pliki oznaczają szybsze ładowanie strony, co przekłada się na lepsze doświadczenie użytkowników i wyższe wyniki w <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"text-mid mb-4\">Format WebP jest wspierany przez wszystkie nowoczesne przeglądarki: Chrome, Firefox, Safari (od wersji 14) i Edge. Jeśli prowadzisz stronę internetową, sklep online lub bloga, konwersja obrazów do WebP to jeden z najprostszych sposobów na poprawę wydajności witryny.</p><p class=\"text-mid\">Konwerter obsługuje zarówno zdjęcia JPG, jak i grafiki PNG (w tym te z przezroczystością). Możesz przekonwertować dowolną liczbę plików naraz - wszystkie zostaną przetworzone lokalnie w przeglądarce, bez wysyłania na serwer.</p>"
+      "html": "<p class=\"text-mid mb-4\">WebP to format obrazów stworzony przez Google, który pozwala zmniejszyć rozmiar plików graficznych nawet o 25-35% w porównaniu z JPG i PNG - przy zachowaniu porównywalnej jakości wizualnej. Mniejsze pliki oznaczają szybsze ładowanie strony, co przekłada się na lepsze doświadczenie użytkowników i wyższe wyniki w <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"text-mid mb-4\">Format WebP jest wspierany przez wszystkie nowoczesne przeglądarki: Chrome, Firefox, Safari (od wersji 14) i Edge. Jeśli prowadzisz stronę internetową, sklep online lub bloga, konwersja obrazów do WebP to jeden z najprostszych sposobów na poprawę wydajności witryny.</p><p class=\"text-mid\">Konwerter obsługuje zarówno zdjęcia JPG, jak i grafiki PNG (w tym te z przezroczystością). Możesz przekonwertować dowolną liczbę plików naraz - wszystkie zostaną przetworzone lokalnie w przeglądarce, bez wysyłania na serwer.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter JPG/PNG na WebP – Arteon"
     },
     {
       "type": "gap",
@@ -314,6 +316,18 @@
           "answer": "Jeśli widzisz ostrzeżenie, że plik wynikowy jest większy niż oryginał, oznacza to, że oryginalny obraz był już bardzo mocno skompresowany. W takim przypadku konwersja do WebP nie przyniesie oszczędności - lepiej zostać przy oryginalnym formacie lub spróbować niższej jakości."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie, które ułatwiłoby Twoją pracę? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter JPG/PNG na WebP – Arteon",
+      "defaultSubject": "Feedback: Konwerter JPG/PNG na WebP"
     },
     {
       "type": "gap",

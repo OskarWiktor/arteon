@@ -67,9 +67,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Hva er WebP-formatet, og hvorfor er det viktig?",
-      "html": "<p class=\"text-mid\">WebP er et moderne bildeformat utviklet av Google som tilbyr bedre komprimering enn JPG og PNG. Bilder i WebP tar mindre plass – typisk 25–34 % mindre enn JPG og opptil 80 % mindre enn PNG – med bevart visuell kvalitet.</p><p class=\"text-mid mt-3\">Alle store nettlesere (Chrome, Firefox, Safari, Edge) støtter WebP. Bruk av dette formatet betyr raskere sidelasting, lavere dataforbruk og bedre Core Web Vitals-score – noe som direkte påvirker plasseringen i Googles søkeresultater.</p>"
+      "html": "<p class=\"text-mid\">WebP er et moderne bildeformat utviklet av Google som tilbyr bedre komprimering enn JPG og PNG. Bilder i WebP tar mindre plass – typisk 25–34 % mindre enn JPG og opptil 80 % mindre enn PNG – med bevart visuell kvalitet.</p><p class=\"text-mid mt-3\">Alle store nettlesere (Chrome, Firefox, Safari, Edge) støtter WebP. Bruk av dette formatet betyr raskere sidelasting, lavere dataforbruk og bedre Core Web Vitals-score – noe som direkte påvirker plasseringen i Googles søkeresultater.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
+      "imageAlt": "JPG/PNG til WebP konverterer – Arteon"
     },
     {
       "type": "gap",
@@ -293,6 +295,18 @@
           "answerSchemaText": "Ja. Chrome, Firefox, Safari 14+ og Edge støtter alle WebP."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé til en ny funksjon, funnet en feil eller vil foreslå et annet verktøy som ville gjøre arbeidet ditt enklere? Skriv til oss – vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
+      "imageAlt": "JPG/PNG til WebP konverterer – Arteon",
+      "defaultSubject": "Feedback: JPG/PNG til WebP konverterer"
     },
     {
       "type": "gap",

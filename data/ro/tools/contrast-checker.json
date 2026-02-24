@@ -82,9 +82,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "De ce contează lizibilitatea culorilor?",
-      "html": "<p class=\"text-mid\">Lizibilitatea este diferența de luminanță dintre culoarea textului și culoarea fundalului. Cu cât diferența este mai mare, cu atât textul este mai ușor de citit. Un contrast prea scăzut face conținutul greu de citit – în special pentru persoanele cu deficiențe de vedere, persoanele în vârstă sau în condiții dificile de iluminare (ex. pe telefon în lumina directă a soarelui).</p><p class=\"text-mid mt-3\">Conform <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Organizației Mondiale a Sănătății (OMS)</a>, aproximativ 2,2 miliarde de persoane din întreaga lume au o formă de deficiență de vedere. În plus, milioane au daltonism (aproximativ 8% dintre bărbați și 0,5% dintre femei), iar mulți alții experimentează scăderea vederii legată de vârstă.</p><p class=\"text-mid mt-3\">Instrumentul calculează raportul de contrast folosind formula specificată în <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Ghidul de accesibilitate a conținutului web)</a> – ghidul internațional de accesibilitate digitală. Rezultatul permite o evaluare obiectivă a lizibilității culorilor, indiferent de setările monitorului sau percepția individuală a culorilor.</p>"
+      "html": "<p class=\"text-mid\">Lizibilitatea este diferența de luminanță dintre culoarea textului și culoarea fundalului. Cu cât diferența este mai mare, cu atât textul este mai ușor de citit. Un contrast prea scăzut face conținutul greu de citit – în special pentru persoanele cu deficiențe de vedere, persoanele în vârstă sau în condiții dificile de iluminare (ex. pe telefon în lumina directă a soarelui).</p><p class=\"text-mid mt-3\">Conform <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Organizației Mondiale a Sănătății (OMS)</a>, aproximativ 2,2 miliarde de persoane din întreaga lume au o formă de deficiență de vedere. În plus, milioane au daltonism (aproximativ 8% dintre bărbați și 0,5% dintre femei), iar mulți alții experimentează scăderea vederii legată de vârstă.</p><p class=\"text-mid mt-3\">Instrumentul calculează raportul de contrast folosind formula specificată în <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Ghidul de accesibilitate a conținutului web)</a> – ghidul internațional de accesibilitate digitală. Rezultatul permite o evaluare obiectivă a lizibilității culorilor, indiferent de setările monitorului sau percepția individuală a culorilor.</p>",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/verificator-contrast-culori-ro.webp",
+      "imageAlt": "Verificator contrast culori – Arteon"
     },
     {
       "type": "gap",
@@ -379,6 +381,18 @@
           "answer": "Cele mai importante: textul pe fundalul principal, textul pe bannere și secțiuni colorate, butoanele (culoarea textului și fundalul butonului în raport cu fundalul paginii), linkurile și pictogramele. Acordați atenție specială elementelor care apar pe fundaluri diferite în funcție de secțiune."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să îmbunătățim instrumentele noastre",
+      "description": "Aveți o idee pentru o nouă funcție, ați găsit o eroare sau doriți să sugerați un alt instrument care v-ar ușura munca? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/verificator-contrast-culori-ro.webp",
+      "imageAlt": "Verificator contrast culori – Arteon",
+      "defaultSubject": "Feedback: Verificator contrast culori"
     },
     {
       "type": "gap",

@@ -73,9 +73,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Ce este un favicon și de ce ar trebui să aveți unul?",
-      "html": "<p class=\"mb-4\">Un favicon este o pictogramă mică care apare pe tab-ul browserului lângă titlul paginii. O vedeți și în semne de carte, istoricul navigării și pe ecranul de start al telefonului când cineva adaugă site-ul ca shortcut.</p><p class=\"mb-4\">Această grafică mică servește o funcție importantă - ajută utilizatorii să recunoască rapid un site printre multe tab-uri deschise. Când cineva are o duzină de tab-uri deschise în browser, faviconul este adesea singurul element vizibil care identifică site-ul.</p><p>Generatorul creează un set complet de pictograme: un fișier clasic favicon.ico pentru browsere, pictograme PNG în diferite dimensiuni și un apple-touch-icon pentru dispozitivele Apple. Dacă construiți o aplicație web (PWA), puteți genera și pictograme 192x192 și 512x512 împreună cu un fișier manifest.</p>"
+      "html": "<p class=\"mb-4\">Un favicon este o pictogramă mică care apare pe tab-ul browserului lângă titlul paginii. O vedeți și în semne de carte, istoricul navigării și pe ecranul de start al telefonului când cineva adaugă site-ul ca shortcut.</p><p class=\"mb-4\">Această grafică mică servește o funcție importantă - ajută utilizatorii să recunoască rapid un site printre multe tab-uri deschise. Când cineva are o duzină de tab-uri deschise în browser, faviconul este adesea singurul element vizibil care identifică site-ul.</p><p>Generatorul creează un set complet de pictograme: un fișier clasic favicon.ico pentru browsere, pictograme PNG în diferite dimensiuni și un apple-touch-icon pentru dispozitivele Apple. Dacă construiți o aplicație web (PWA), puteți genera și pictograme 192x192 și 512x512 împreună cu un fișier manifest.</p>",
+      "imageSrc": "/assets/tools/favicon-generator/generator-favicon-gratuit-ro.webp",
+      "imageAlt": "Generator favicon – Arteon"
     },
     {
       "type": "gap",
@@ -320,6 +322,18 @@
           "answerSchemaText": "Browserele cache-uiesc agresiv faviconurile. Goliți cache-ul sau adăugați un parametru de versiune."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să îmbunătățim instrumentele noastre",
+      "description": "Aveți o idee pentru o nouă funcție, ați găsit o eroare sau doriți să sugerați un alt instrument care v-ar ușura munca? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/favicon-generator/generator-favicon-gratuit-ro.webp",
+      "imageAlt": "Generator favicon – Arteon",
+      "defaultSubject": "Feedback: Generator favicon"
     },
     {
       "type": "gap",

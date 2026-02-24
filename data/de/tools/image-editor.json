@@ -68,9 +68,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Bilder für jede Plattform zuschneiden",
-      "html": "<p class=\"text-mid\">Jede Plattform hat eigene Bildanforderungen - Instagram bevorzugt quadratische oder vertikale Bilder, Facebook hat spezifische Cover-Maße, LinkedIn erwartet bestimmte Bannergrößen. Der Bildeditor bietet fertige Vorlagen für alle gängigen Formate und ermöglicht auch benutzerdefinierte Pixelmaße.</p><p class=\"text-mid mt-3\">Das Tool arbeitet vollständig in Ihrem Browser - es werden keine Bilder an einen Server gesendet. Sie können Zoom und Position des Bildausschnitts anpassen und das Ergebnis in drei Formaten herunterladen: PNG (verlustfrei, mit Transparenz), JPG (kleinere Datei, ohne Transparenz) und WebP (optimale Komprimierung).</p>"
+      "html": "<p class=\"text-mid\">Jede Plattform hat eigene Bildanforderungen - Instagram bevorzugt quadratische oder vertikale Bilder, Facebook hat spezifische Cover-Maße, LinkedIn erwartet bestimmte Bannergrößen. Der Bildeditor bietet fertige Vorlagen für alle gängigen Formate und ermöglicht auch benutzerdefinierte Pixelmaße.</p><p class=\"text-mid mt-3\">Das Tool arbeitet vollständig in Ihrem Browser - es werden keine Bilder an einen Server gesendet. Sie können Zoom und Position des Bildausschnitts anpassen und das Ergebnis in drei Formaten herunterladen: PNG (verlustfrei, mit Transparenz), JPG (kleinere Datei, ohne Transparenz) und WebP (optimale Komprimierung).</p>",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/online-bildeditor-de.webp",
+      "imageAlt": "Online-Bildeditor – Arteon"
     },
     {
       "type": "gap",
@@ -303,6 +305,18 @@
           "answerSchemaText": "JPG unterstützt keine Transparenz. Kreisform erfordert PNG oder WebP."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Tools zu verbessern",
+      "description": "Haben Sie eine Idee für eine neue Funktion, einen Fehler gefunden oder möchten Sie ein anderes Tool vorschlagen, das Ihre Arbeit erleichtern würde? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/online-bildeditor-de.webp",
+      "imageAlt": "Online-Bildeditor – Arteon",
+      "defaultSubject": "Feedback: Online-Bildeditor"
     },
     {
       "type": "gap",

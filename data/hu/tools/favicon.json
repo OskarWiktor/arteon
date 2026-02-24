@@ -73,9 +73,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Mi az a favicon és miért érdemes rendelkeznie eggyel?",
-      "html": "<p class=\"mb-4\">A favicon egy kis ikon, amely a böngészőfülön jelenik meg az oldal címe mellett. Láthatja a könyvjelzőkben, a böngészési előzményekben és a telefon kezdőképernyőjén is, amikor valaki parancsikónként adja hozzá az oldalt.</p><p class=\"mb-4\">Ez a kis grafika fontos funkciót tölt be - segít a felhasználóknak gyorsan felismerni egy oldalt sok nyitott fül között. Amikor valakinek tucat fül van nyitva a böngészőben, a favicon gyakran az egyetlen látható elem, amely azonosítja az oldalt.</p><p>A generátor teljes ikonkészletet hoz létre: klasszikus favicon.ico fájlt böngészőkhöz, PNG ikonokat különböző méretekben és apple-touch-icont Apple eszközökhöz. Ha webalkalmazást (PWA) épít, 192x192 és 512x512 ikonokat is generálhat manifest fájllal együtt.</p>"
+      "html": "<p class=\"mb-4\">A favicon egy kis ikon, amely a böngészőfülön jelenik meg az oldal címe mellett. Láthatja a könyvjelzőkben, a böngészési előzményekben és a telefon kezdőképernyőjén is, amikor valaki parancsikónként adja hozzá az oldalt.</p><p class=\"mb-4\">Ez a kis grafika fontos funkciót tölt be - segít a felhasználóknak gyorsan felismerni egy oldalt sok nyitott fül között. Amikor valakinek tucat fül van nyitva a böngészőben, a favicon gyakran az egyetlen látható elem, amely azonosítja az oldalt.</p><p>A generátor teljes ikonkészletet hoz létre: klasszikus favicon.ico fájlt böngészőkhöz, PNG ikonokat különböző méretekben és apple-touch-icont Apple eszközökhöz. Ha webalkalmazást (PWA) épít, 192x192 és 512x512 ikonokat is generálhat manifest fájllal együtt.</p>",
+      "imageSrc": "/assets/tools/favicon-generator/ingyenes-favicon-generator-hu.webp",
+      "imageAlt": "Favicon generátor – Arteon"
     },
     {
       "type": "gap",
@@ -320,6 +322,18 @@
           "answerSchemaText": "A böngészők agresszíven cache-elik a faviconokat. Törölje a cache-t vagy adjon hozzá verzióparamétert."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen nekünk fejleszteni eszközeinket",
+      "description": "Van ötlete egy új funkcióhoz, hibát talált, vagy szeretne javasolni egy másik eszközt, amely megkönnyítené a munkáját? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/favicon-generator/ingyenes-favicon-generator-hu.webp",
+      "imageAlt": "Favicon generátor – Arteon",
+      "defaultSubject": "Feedback: Favicon generátor"
     },
     {
       "type": "gap",

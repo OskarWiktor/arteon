@@ -82,9 +82,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Waarom is kleurleesbaarheid belangrijk?",
-      "html": "<p class=\"text-mid\">Leesbaarheid is het luminantieverschil tussen de tekstkleur en de achtergrondkleur. Hoe groter het verschil, hoe makkelijker de tekst te lezen is. Te laag contrast maakt inhoud moeilijk leesbaar – vooral voor mensen met een visuele beperking, ouderen of bij moeilijke lichtomstandigheden (bijv. op een telefoon in direct zonlicht).</p><p class=\"text-mid mt-3\">Volgens de <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Wereldgezondheidsorganisatie (WHO)</a> hebben ongeveer 2,2 miljard mensen wereldwijd een vorm van visuele beperking. Daarnaast hebben miljoenen kleurenblindheid (ongeveer 8% van de mannen en 0,5% van de vrouwen) en velen ervaren leeftijdsgerelateerde achteruitgang van het gezichtsvermogen.</p><p class=\"text-mid mt-3\">De tool berekent de contrastverhouding met de formule uit <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Web Content Accessibility Guidelines)</a> – internationale richtlijnen voor digitale toegankelijkheid. Het resultaat maakt een objectieve beoordeling mogelijk of kleuren leesbaar genoeg zijn, ongeacht monitorinstellingen of individuele kleurwaarneming.</p>"
+      "html": "<p class=\"text-mid\">Leesbaarheid is het luminantieverschil tussen de tekstkleur en de achtergrondkleur. Hoe groter het verschil, hoe makkelijker de tekst te lezen is. Te laag contrast maakt inhoud moeilijk leesbaar – vooral voor mensen met een visuele beperking, ouderen of bij moeilijke lichtomstandigheden (bijv. op een telefoon in direct zonlicht).</p><p class=\"text-mid mt-3\">Volgens de <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Wereldgezondheidsorganisatie (WHO)</a> hebben ongeveer 2,2 miljard mensen wereldwijd een vorm van visuele beperking. Daarnaast hebben miljoenen kleurenblindheid (ongeveer 8% van de mannen en 0,5% van de vrouwen) en velen ervaren leeftijdsgerelateerde achteruitgang van het gezichtsvermogen.</p><p class=\"text-mid mt-3\">De tool berekent de contrastverhouding met de formule uit <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1 (Web Content Accessibility Guidelines)</a> – internationale richtlijnen voor digitale toegankelijkheid. Het resultaat maakt een objectieve beoordeling mogelijk of kleuren leesbaar genoeg zijn, ongeacht monitorinstellingen of individuele kleurwaarneming.</p>",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/kleurcontrast-checker-nl.webp",
+      "imageAlt": "Kleurcontrast checker – Arteon"
     },
     {
       "type": "gap",
@@ -379,6 +381,18 @@
           "answer": "Het belangrijkst: tekst op de hoofdachtergrond, tekst op banners en gekleurde secties, knoppen (tekstkleur en knopachtergrond ten opzichte van de pagina-achtergrond), links en pictogrammen. Let vooral op elementen die op verschillende achtergronden verschijnen, afhankelijk van de sectie."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heeft u een idee voor een nieuwe functie, een bug gevonden of wilt u een andere tool voorstellen die uw werk gemakkelijker zou maken? Schrijf ons – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/kleurcontrast-checker-nl.webp",
+      "imageAlt": "Kleurcontrast checker – Arteon",
+      "defaultSubject": "Feedback: Kleurcontrast checker"
     },
     {
       "type": "gap",

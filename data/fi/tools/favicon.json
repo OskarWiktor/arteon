@@ -71,9 +71,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Mikä on favicon ja miksi se on tärkeä?",
-      "html": "<p class=\"text-mid\">Favicon on pieni kuvake, joka näkyy selaimen välilehdessä, kirjanmerkkipalkkissa ja puhelimen aloitusnäytöllä. Se on yksi ensimmäisistä elementeistä, jotka käyttäjä näkee – jo ennen sivun täydellistä latautumista.</p><p class=\"text-mid mt-3\">Ammattimainen favicon rakentaa brändin tunnistettavuutta ja helpottaa käyttäjää löytämään sivun monien avoimien välilehtien joukosta. Faviconin puuttuminen voi antaa epäammattimaisen vaikutelman ja vähentää kävijöiden luottamusta.</p>"
+      "html": "<p class=\"text-mid\">Favicon on pieni kuvake, joka näkyy selaimen välilehdessä, kirjanmerkkipalkkissa ja puhelimen aloitusnäytöllä. Se on yksi ensimmäisistä elementeistä, jotka käyttäjä näkee – jo ennen sivun täydellistä latautumista.</p><p class=\"text-mid mt-3\">Ammattimainen favicon rakentaa brändin tunnistettavuutta ja helpottaa käyttäjää löytämään sivun monien avoimien välilehtien joukosta. Faviconin puuttuminen voi antaa epäammattimaisen vaikutelman ja vähentää kävijöiden luottamusta.</p>",
+      "imageSrc": "/assets/tools/favicon-generator/ilmainen-favicon-generaattori-fi.webp",
+      "imageAlt": "Favicon-generaattori – Arteon"
     },
     {
       "type": "gap",
@@ -293,6 +295,18 @@
           "answerSchemaText": "Sijoita kuvaketiedostot juurikansioon ja lisää HTML-tunnisteet head-osioon."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea uudelle ominaisuudelle, löysitkö virheen tai haluatko ehdottaa toista työkalua, joka helpottaisi työtäsi? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/favicon-generator/ilmainen-favicon-generaattori-fi.webp",
+      "imageAlt": "Favicon-generaattori – Arteon",
+      "defaultSubject": "Feedback: Favicon-generaattori"
     },
     {
       "type": "gap",

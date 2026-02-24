@@ -72,9 +72,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Proč je čitelnost barev důležitá?",
-      "html": "<p class=\"text-mid\">Čitelnost je rozdíl jasu mezi barvou textu a barvou pozadí. Čím větší rozdíl, tím snáze se text čte. Příliš nízký kontrast ztěžuje čtení obsahu – zejména pro osoby se zrakovým postižením, starší lidi nebo v obtížných světelných podmínkách.</p><p class=\"text-mid mt-3\">Podle <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Světové zdravotnické organizace (WHO)</a> má přibližně 2,2 miliardy lidí na světě nějakou formu zrakového postižení.</p><p class=\"text-mid mt-3\">Nástroj vypočítá poměr kontrastu pomocí vzorce definovaného v <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1</a> – mezinárodních pokynech pro digitální přístupnost.</p>"
+      "html": "<p class=\"text-mid\">Čitelnost je rozdíl jasu mezi barvou textu a barvou pozadí. Čím větší rozdíl, tím snáze se text čte. Příliš nízký kontrast ztěžuje čtení obsahu – zejména pro osoby se zrakovým postižením, starší lidi nebo v obtížných světelných podmínkách.</p><p class=\"text-mid mt-3\">Podle <a href=\"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Světové zdravotnické organizace (WHO)</a> má přibližně 2,2 miliardy lidí na světě nějakou formu zrakového postižení.</p><p class=\"text-mid mt-3\">Nástroj vypočítá poměr kontrastu pomocí vzorce definovaného v <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WCAG 2.1</a> – mezinárodních pokynech pro digitální přístupnost.</p>",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/kontrola-kontrastu-barev-cs.webp",
+      "imageAlt": "Kontrola kontrastu barev – Arteon"
     },
     {
       "type": "gap",
@@ -358,6 +360,18 @@
           "answer": "Ne vždy. Úroveň AA (4.5:1 pro běžný text) je minimum vyžadované předpisy o přístupnosti v EU. Úroveň AAA (7:1) poskytuje lepší čitelnost, ale je obtížnější ji dosáhnout. Pro kritický obsah – varování, bezpečnostní pokyny – zvažte dosažení AAA."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad na novou funkci, našli jste chybu nebo chcete navrhnout jiný nástroj, který by usnadnil vaši práci? Napište nám – odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/color-contrast-and-readability-checker/kontrola-kontrastu-barev-cs.webp",
+      "imageAlt": "Kontrola kontrastu barev – Arteon",
+      "defaultSubject": "Feedback: Kontrola kontrastu barev"
     },
     {
       "type": "gap",

@@ -67,9 +67,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Mikä on WebP-muoto ja miksi se on tärkeä?",
-      "html": "<p class=\"text-mid\">WebP on Googlen kehittämä moderni kuvamuoto, joka tarjoaa paremman pakkauksen kuin JPG ja PNG. WebP-kuvat vievät vähemmän tilaa – tyypillisesti 25–34 % vähemmän kuin JPG ja jopa 80 % vähemmän kuin PNG – visuaalisen laadun säilyessä.</p><p class=\"text-mid mt-3\">Kaikki suuret selaimet (Chrome, Firefox, Safari, Edge) tukevat WebP-muotoa. Tämän muodon käyttö tarkoittaa nopeampaa sivun latautumista, vähäisempää tiedonsiirtoa ja parempaa Core Web Vitals -pistemäärää – mikä vaikuttaa suoraan sijoitukseen Googlen hakutuloksissa.</p>"
+      "html": "<p class=\"text-mid\">WebP on Googlen kehittämä moderni kuvamuoto, joka tarjoaa paremman pakkauksen kuin JPG ja PNG. WebP-kuvat vievät vähemmän tilaa – tyypillisesti 25–34 % vähemmän kuin JPG ja jopa 80 % vähemmän kuin PNG – visuaalisen laadun säilyessä.</p><p class=\"text-mid mt-3\">Kaikki suuret selaimet (Chrome, Firefox, Safari, Edge) tukevat WebP-muotoa. Tämän muodon käyttö tarkoittaa nopeampaa sivun latautumista, vähäisempää tiedonsiirtoa ja parempaa Core Web Vitals -pistemäärää – mikä vaikuttaa suoraan sijoitukseen Googlen hakutuloksissa.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
+      "imageAlt": "JPG/PNG WebP-muunnin – Arteon"
     },
     {
       "type": "gap",
@@ -293,6 +295,18 @@
           "answerSchemaText": "Kyllä. Chrome, Firefox, Safari 14+ ja Edge tukevat kaikki WebP-muotoa."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea uudelle ominaisuudelle, löysitkö virheen tai haluatko ehdottaa toista työkalua, joka helpottaisi työtäsi? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
+      "imageAlt": "JPG/PNG WebP-muunnin – Arteon",
+      "defaultSubject": "Feedback: JPG/PNG WebP-muunnin"
     },
     {
       "type": "gap",

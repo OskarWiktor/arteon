@@ -83,9 +83,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Bezplatné počítadlo slov a znaků s textovými nástroji",
-      "html": "<p class=\"text-mid\">Tento nástroj kombinuje počítadlo slov a znaků s funkcemi pro formátování textu. Vložte text a uvidíte slova, znaky, věty, odstavce, unikátní slova a čas čtení.</p><p class=\"text-mid mt-3\">Pod textovým polem najdete 10 nástrojů: změna velikosti písmen, odstranění mezer, prázdných řádků, duplikátů a řazení. Vše probíhá lokálně v prohlížeči.</p>"
+      "html": "<p class=\"text-mid\">Tento nástroj kombinuje počítadlo slov a znaků s funkcemi pro formátování textu. Vložte text a uvidíte slova, znaky, věty, odstavce, unikátní slova a čas čtení.</p><p class=\"text-mid mt-3\">Pod textovým polem najdete 10 nástrojů: změna velikosti písmen, odstranění mezer, prázdných řádků, duplikátů a řazení. Vše probíhá lokálně v prohlížeči.</p>",
+      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageAlt": "Počítadlo slov a znaků – Arteon"
     },
     {
       "type": "gap",
@@ -345,6 +347,18 @@
           "answerSchemaText": "Ano. Text je zpracován lokálně v prohlížeči."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad na novou funkci, našli jste chybu nebo chcete navrhnout jiný nástroj, který by usnadnil vaši práci? Napište nám – odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageAlt": "Počítadlo slov a znaků – Arteon",
+      "defaultSubject": "Feedback: Počítadlo slov a znaků"
     },
     {
       "type": "gap",

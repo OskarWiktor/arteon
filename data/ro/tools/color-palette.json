@@ -83,9 +83,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "De ce să generați o paletă de culori?",
-      "html": "<p class=\"text-mid\">O paletă de culori consecventă este baza oricărui proiect vizual – de la un site web, la un logo, la materiale tipărite. Selectarea manuală a culorilor care funcționează împreună necesită cunoștințe de teoria culorilor. Generatorul face acest lucru automat: furnizați o culoare de bază (ex. culoarea logo-ului), iar instrumentul creează 9 seturi de culori bazate pe scheme dovedite de armonie a culorilor.</p><p class=\"text-mid mt-3\">Fiecare culoare generată vine cu codul HEX (ex. #496ba2) și valoarea HSL (nuanță, saturație, luminozitate). Codul HEX poate fi lipit direct în CSS, Figma, Canva sau orice aplicație grafică.</p>"
+      "html": "<p class=\"text-mid\">O paletă de culori consecventă este baza oricărui proiect vizual – de la un site web, la un logo, la materiale tipărite. Selectarea manuală a culorilor care funcționează împreună necesită cunoștințe de teoria culorilor. Generatorul face acest lucru automat: furnizați o culoare de bază (ex. culoarea logo-ului), iar instrumentul creează 9 seturi de culori bazate pe scheme dovedite de armonie a culorilor.</p><p class=\"text-mid mt-3\">Fiecare culoare generată vine cu codul HEX (ex. #496ba2) și valoarea HSL (nuanță, saturație, luminozitate). Codul HEX poate fi lipit direct în CSS, Figma, Canva sau orice aplicație grafică.</p>",
+      "imageSrc": "/assets/tools/color-palette-generator/generator-de-palete-de-culori-ro.webp",
+      "imageAlt": "Generator de palete de culori – Arteon"
     },
     {
       "type": "gap",
@@ -278,6 +280,18 @@
           "answerSchemaText": "Generatorul este gratuit, nu necesită autentificare. Culorile sunt generate local în browser."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să îmbunătățim instrumentele noastre",
+      "description": "Aveți o idee pentru o nouă funcție, ați găsit o eroare sau doriți să sugerați un alt instrument care v-ar ușura munca? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/color-palette-generator/generator-de-palete-de-culori-ro.webp",
+      "imageAlt": "Generator de palete de culori – Arteon",
+      "defaultSubject": "Feedback: Generator de palete de culori"
     },
     {
       "type": "gap",

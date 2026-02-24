@@ -68,9 +68,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Ritaglia le tue immagini per ogni piattaforma",
-      "html": "<p class=\"text-mid\">Ogni piattaforma ha le proprie esigenze in termini di immagini: Instagram predilige le immagini quadrate o verticali, Facebook ha dimensioni di copertina specifiche, LinkedIn richiede dimensioni di banner precise. L'editor offre modelli pronti all'uso per tutti i formati comuni e permette anche di inserire dimensioni personalizzate.</p><p class=\"text-mid mt-3\">Lo strumento funziona interamente nel tuo browser: nessuna immagine viene inviata a un server. Puoi regolare lo zoom e la posizione del ritaglio e scaricare il risultato in tre formati: PNG (senza perdita, con trasparenza), JPG (file più leggero, senza trasparenza) e WebP (compressione ottimale).</p>"
+      "html": "<p class=\"text-mid\">Ogni piattaforma ha le proprie esigenze in termini di immagini: Instagram predilige le immagini quadrate o verticali, Facebook ha dimensioni di copertina specifiche, LinkedIn richiede dimensioni di banner precise. L'editor offre modelli pronti all'uso per tutti i formati comuni e permette anche di inserire dimensioni personalizzate.</p><p class=\"text-mid mt-3\">Lo strumento funziona interamente nel tuo browser: nessuna immagine viene inviata a un server. Puoi regolare lo zoom e la posizione del ritaglio e scaricare il risultato in tre formati: PNG (senza perdita, con trasparenza), JPG (file più leggero, senza trasparenza) e WebP (compressione ottimale).</p>",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/editor-di-immagini-online-it.webp",
+      "imageAlt": "Editor di immagini online – Arteon"
     },
     {
       "type": "gap",
@@ -309,6 +311,18 @@
           "answerSchemaText": "JPG non supporta la trasparenza. La forma cerchio richiede PNG o WebP."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea per una nuova funzionalità, hai trovato un bug o vuoi suggerire un altro strumento che renderebbe il tuo lavoro più facile? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/editor-di-immagini-online-it.webp",
+      "imageAlt": "Editor di immagini online – Arteon",
+      "defaultSubject": "Feedback: Editor di immagini online"
     },
     {
       "type": "gap",

@@ -64,9 +64,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Warum braucht jede Website ein Favicon?",
-      "html": "<p class=\"text-mid\">Ein Favicon ist mehr als ein kleines Symbol - es ist ein wesentlicher Teil der Markenidentität im Web. Browser zeigen es im Tab an, Nutzer sehen es in Lesezeichen und im Verlauf, und Lighthouse prüft seine Präsenz als Best Practice. Ohne Favicon wirkt eine Website unvollständig.</p><p class=\"text-mid mt-3\">Moderne Websites benötigen Favicons in mehreren Größen: ein favicon.ico für ältere Browser, PNG-Symbole für Desktop-Browser, ein Apple Touch Icon für iOS-Geräte und größere Symbole für PWA-Installationen auf Android. Dieses Tool generiert alle erforderlichen Dateien aus einem einzigen Bild.</p>"
+      "html": "<p class=\"text-mid\">Ein Favicon ist mehr als ein kleines Symbol - es ist ein wesentlicher Teil der Markenidentität im Web. Browser zeigen es im Tab an, Nutzer sehen es in Lesezeichen und im Verlauf, und Lighthouse prüft seine Präsenz als Best Practice. Ohne Favicon wirkt eine Website unvollständig.</p><p class=\"text-mid mt-3\">Moderne Websites benötigen Favicons in mehreren Größen: ein favicon.ico für ältere Browser, PNG-Symbole für Desktop-Browser, ein Apple Touch Icon für iOS-Geräte und größere Symbole für PWA-Installationen auf Android. Dieses Tool generiert alle erforderlichen Dateien aus einem einzigen Bild.</p>",
+      "imageSrc": "/assets/tools/favicon-generator/kostenloser-favicon-generator-de.webp",
+      "imageAlt": "Favicon-Generator – Arteon"
     },
     {
       "type": "gap",
@@ -293,6 +295,18 @@
           "answerSchemaText": "Browser cachen Favicons aggressiv. Cache leeren oder Versionsparameter hinzufügen."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Tools zu verbessern",
+      "description": "Haben Sie eine Idee für eine neue Funktion, einen Fehler gefunden oder möchten Sie ein anderes Tool vorschlagen, das Ihre Arbeit erleichtern würde? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/favicon-generator/kostenloser-favicon-generator-de.webp",
+      "imageAlt": "Favicon-Generator – Arteon",
+      "defaultSubject": "Feedback: Favicon-Generator"
     },
     {
       "type": "gap",

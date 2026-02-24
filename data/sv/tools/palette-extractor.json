@@ -64,9 +64,11 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
+      "type": "sectionBasic",
       "title": "Varför extrahera färger från en bild?",
-      "html": "<p class=\"mb-4\">Varje foto, logotyp eller grafik innehåller färger som kan användas som en färdig färgpalett. Extraktorn analyserar bilden och visar vilka färger som dominerar – tillsammans med HEX-koder och RGB-värden redo att klistras in i ditt projekt.</p><p class=\"mb-4\">I praktiken innebär detta att istället för att manuellt plocka färger i ett grafikprogram (pixel för pixel), laddar du upp en bild och får en ordnad lista med upp till 12 färger. Detta är användbart vid val av färger för en webbplats, skapande av konsekvent grafik för sociala medier eller uppbyggnad av visuell identitet från befintligt material.</p><p>All analys sker lokalt i webbläsaren – bilden skickas inte till någon server.</p>"
+      "html": "<p class=\"mb-4\">Varje foto, logotyp eller grafik innehåller färger som kan användas som en färdig färgpalett. Extraktorn analyserar bilden och visar vilka färger som dominerar – tillsammans med HEX-koder och RGB-värden redo att klistras in i ditt projekt.</p><p class=\"mb-4\">I praktiken innebär detta att istället för att manuellt plocka färger i ett grafikprogram (pixel för pixel), laddar du upp en bild och får en ordnad lista med upp till 12 färger. Detta är användbart vid val av färger för en webbplats, skapande av konsekvent grafik för sociala medier eller uppbyggnad av visuell identitet från befintligt material.</p><p>All analys sker lokalt i webbläsaren – bilden skickas inte till någon server.</p>",
+      "imageSrc": "/assets/tools/image-color-extractor/fargextraktor-fran-bild-sv.webp",
+      "imageAlt": "Färgextraktor från bild – Arteon"
     },
     {
       "type": "gap",
@@ -291,6 +293,18 @@
           "answerSchemaText": "PNG, JPG och SVG. PNG med transparent bakgrund ger bäst resultat."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss att förbättra våra verktyg",
+      "description": "Har du en idé för en ny funktion, hittat en bugg eller vill föreslå ett annat verktyg som skulle göra ditt arbete enklare? Skriv till oss – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/image-color-extractor/fargextraktor-fran-bild-sv.webp",
+      "imageAlt": "Färgextraktor från bild – Arteon",
+      "defaultSubject": "Feedback: Färgextraktor från bild"
     },
     {
       "type": "gap",

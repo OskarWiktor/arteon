@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/it/strumenti", "label": "Strumenti" },
-    "third": { "href": "/it/strumenti/estrattore-di-colori-da-immagine", "label": "Estrattore di colori" }
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/estrattore-di-colori-da-immagine",
+      "label": "Estrattore di colori"
+    }
   },
   "schemas": {
     "software": {
@@ -36,39 +42,74 @@
       "name": "Come estrarre i colori da un'immagine",
       "description": "Carica un'immagine e ottieni una palette di colori dominanti con codici HEX copiabili.",
       "steps": [
-        { "name": "Caricare un'immagine", "text": "Trascina e rilascia un'immagine o seleziona un file PNG, JPG o SVG." },
-        { "name": "Visualizzare la palette", "text": "Lo strumento estrae automaticamente i colori dominanti dall'immagine." },
-        { "name": "Copiare i codici", "text": "Clicca su Copia per copiare il codice HEX di un colore negli appunti." }
+        {
+          "name": "Caricare un'immagine",
+          "text": "Trascina e rilascia un'immagine o seleziona un file PNG, JPG o SVG."
+        },
+        {
+          "name": "Visualizzare la palette",
+          "text": "Lo strumento estrae automaticamente i colori dominanti dall'immagine."
+        },
+        {
+          "name": "Copiare i codici",
+          "text": "Clicca su Copia per copiare il codice HEX di un colore negli appunti."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
     {
-      "type": "sectionInfo",
-      "title": "Estrarre i colori dominanti da un'immagine",
-      "html": "<p class=\"text-mid\">L'estrattore di colori analizza la tua immagine e identifica i colori dominanti. Il risultato e una palette di colori con codici HEX copiabili con un clic, pronta per essere utilizzata nei tuoi progetti di design, nel tuo sito web o nelle tue pubblicazioni sui social media.</p><p class=\"text-mid mt-3\">Lo strumento e particolarmente utile per creare una palette di brand partendo da un logo, trovare i colori dominanti di una foto per uno schema cromatico coerente, o semplicemente identificare i colori di un'immagine che ti piace.</p>"
+      "type": "gap",
+      "variant": "line"
     },
-    { "type": "gap", "size": "sm" },
+    {
+      "type": "sectionBasic",
+      "title": "Estrarre i colori dominanti da un'immagine",
+      "html": "<p class=\"text-mid\">L'estrattore di colori analizza la tua immagine e identifica i colori dominanti. Il risultato e una palette di colori con codici HEX copiabili con un clic, pronta per essere utilizzata nei tuoi progetti di design, nel tuo sito web o nelle tue pubblicazioni sui social media.</p><p class=\"text-mid mt-3\">Lo strumento e particolarmente utile per creare una palette di brand partendo da un logo, trovare i colori dominanti di una foto per uno schema cromatico coerente, o semplicemente identificare i colori di un'immagine che ti piace.</p>",
+      "imageSrc": "/assets/tools/image-color-extractor/estrattore-di-colori-da-immagine-it.webp",
+      "imageAlt": "Estrattore di colori da immagine – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
     {
       "type": "sectionSteps",
       "title": "Come usare l'estrattore",
       "description": "L'estrazione richiede solo pochi secondi:",
       "grid": "three",
       "items": [
-        { "icon": "RiUploadLine", "title": "1. Carica un'immagine", "description": "Trascina e rilascia un'immagine o seleziona un file PNG, JPG o SVG." },
-        { "icon": "RiPaletteLine", "title": "2. Visualizza la palette", "description": "Lo strumento estrae automaticamente i colori dominanti dall'immagine." },
-        { "icon": "RiFileCopyLine", "title": "3. Copia i codici", "description": "Clicca su Copia per copiare il codice HEX negli appunti." }
+        {
+          "icon": "RiUploadLine",
+          "title": "1. Carica un'immagine",
+          "description": "Trascina e rilascia un'immagine o seleziona un file PNG, JPG o SVG."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "2. Visualizza la palette",
+          "description": "Lo strumento estrae automaticamente i colori dominanti dall'immagine."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "3. Copia i codici",
+          "description": "Clicca su Copia per copiare il codice HEX negli appunti."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionDemo",
       "title": "Come si presenta una palette di colori estratta?",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"grid grid-cols-4 gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2C5F2D\"></div><span class=\"text-mid text-xs!\">#2C5F2D</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #97BC62\"></div><span class=\"text-mid text-xs!\">#97BC62</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DAA520\"></div><span class=\"text-mid text-xs!\">#DAA520</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #4169E1\"></div><span class=\"text-mid text-xs!\">#4169E1</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #8B4513\"></div><span class=\"text-mid text-xs!\">#8B4513</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #DC143C\"></div><span class=\"text-mid text-xs!\">#DC143C</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #2F4F4F\"></div><span class=\"text-mid text-xs!\">#2F4F4F</span></div><div class=\"flex flex-col items-center gap-1\"><div class=\"h-10 w-full rounded-lg border border-neutral-200\" style=\"background-color: #FF6347\"></div><span class=\"text-mid text-xs!\">#FF6347</span></div></div><p class=\"text-light text-xs!\">Esempio di colori estratti da un'immagine naturalistica</p></div>",
       "html": "<p class=\"text-mid mb-4\">Dopo il caricamento di un'immagine, l'estrattore mostra un elenco di colori dominanti ordinati dal più al meno presente. Ogni colore e accompagnato dal suo codice HEX e dal valore RGB, pronti per essere incollati in CSS, Figma o qualsiasi applicazione grafica.</p><p class=\"text-mid\">Il numero di colori estratti dipende dal contenuto dell'immagine. Una foto paesaggistica produrra una palette più ricca (8-12 colori), mentre un logo semplice a due colori dara meno elementi.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Quali immagini danno i migliori risultati?",
@@ -97,7 +138,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTimeline",
       "title": "Come funziona l'estrazione dei colori?",
@@ -125,7 +169,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Risoluzione dei problemi dell'estrattore di colori",
@@ -153,7 +200,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Cosa rende speciale questo estrattore?",
@@ -181,7 +231,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Dove usare i colori estratti da un'immagine?",
@@ -209,7 +262,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Domande frequenti sull'estrattore di colori",
@@ -247,8 +303,29 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Scopri altri strumenti" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea per una nuova funzionalità, hai trovato un bug o vuoi suggerire un altro strumento che renderebbe il tuo lavoro più facile? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/image-color-extractor/estrattore-di-colori-da-immagine-it.webp",
+      "imageAlt": "Estrattore di colori da immagine – Arteon",
+      "defaultSubject": "Feedback: Estrattore di colori da immagine"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Scopri altri strumenti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }
