@@ -19,7 +19,6 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 import SectionTabs from '@/components/ui/sections/SectionTabs';
 import SectionFeatureComparison from '@/components/ui/sections/SectionFeatureComparison';
 import SectionTimeline from '@/components/ui/sections/SectionTimeline';
-import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import AdSense from '@/components/ui/AdSense';
 
@@ -220,37 +219,37 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
         ) : (
           (tool ?? <DynamicToolRenderer toolKey={data.toolKey} />)
         )}
-      </ToolEditorLayout>
 
-      <Wrapper>
-        {(() => {
-          const adPositions = new Set<number>();
-          let contentCount = 0;
-          data.contentBlocks.forEach((block, idx) => {
-            if (block.type !== 'gap') {
-              contentCount++;
-              if (contentCount % AD_SECTION_INTERVAL === 0) {
-                adPositions.add(idx);
+        <div className="mx-auto w-full max-w-[1420px] px-[3%]">
+          {(() => {
+            const adPositions = new Set<number>();
+            let contentCount = 0;
+            data.contentBlocks.forEach((block, idx) => {
+              if (block.type !== 'gap') {
+                contentCount++;
+                if (contentCount % AD_SECTION_INTERVAL === 0) {
+                  adPositions.add(idx);
+                }
               }
-            }
-          });
+            });
 
-          return data.contentBlocks.map((block, idx) => {
-            const node = renderBlock(block, idx, pageUrl);
-            if (adPositions.has(idx)) {
-              return (
-                <Fragment key={`block-ad-${idx}`}>
-                  {node}
-                  <div className="not-prose mt-8 flex justify-center">
-                    <AdSense variant="tool-banner" />
-                  </div>
-                </Fragment>
-              );
-            }
-            return node;
-          });
-        })()}
-      </Wrapper>
+            return data.contentBlocks.map((block, idx) => {
+              const node = renderBlock(block, idx, pageUrl);
+              if (adPositions.has(idx)) {
+                return (
+                  <Fragment key={`block-ad-${idx}`}>
+                    {node}
+                    <div className="not-prose mt-8 flex justify-center">
+                      <AdSense variant="tool-banner" />
+                    </div>
+                  </Fragment>
+                );
+              }
+              return node;
+            });
+          })()}
+        </div>
+      </ToolEditorLayout>
 
       {data.cta && (
         <CTABanner
