@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Contador de palabras y caracteres gratis – Contar, transformar y analizar texto",
     "description": "Contador gratuito de palabras, caracteres, oraciones y párrafos. Cambiar mayúsculas, eliminar duplicados, ordenar líneas. 8 métricas y 10 herramientas.",
-    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palabras-y-caracteres-es.webp",
     "path": "/es/herramientas/contador-de-palabras-y-caracteres"
   },
   "hero": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Contador de palabras y caracteres con herramientas de texto",
       "html": "<p class=\"text-mid\">Esta herramienta combina un contador de palabras y caracteres con funciones de formato. Pega tu texto y verás palabras, caracteres, oraciones, párrafos, palabras únicas y tiempo de lectura.</p><p class=\"text-mid mt-3\">Debajo del campo de texto encontrarás 10 herramientas: conversión de mayúsculas, eliminación de espacios, líneas vacías, duplicados y ordenación. Todo se procesa localmente en tu navegador.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palabras-y-caracteres-es.webp",
       "imageAlt": "Contador de palabras y caracteres – Arteon"
     },
     {
@@ -366,7 +366,7 @@
       "type": "contactForm",
       "title": "Ayúdanos a mejorar nuestras herramientas",
       "description": "¿Tienes una idea para una nueva función, encontraste un error o quieres sugerir otra herramienta que facilite tu trabajo? Escríbenos – respondemos en 24 horas.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palabras-y-caracteres-es.webp",
       "imageAlt": "Contador de palabras y caracteres – Arteon",
       "defaultSubject": "Feedback: Contador de palabras y caracteres"
     },

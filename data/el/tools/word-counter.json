@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Δωρεάν μετρητής λέξεων και χαρακτήρων – Μετρήστε, μετασχηματίστε και αναλύστε",
     "description": "Δωρεάν μετρητής λέξεων, χαρακτήρων, προτάσεων και παραγράφων. Αλλαγή κεφαλαίων, αφαίρεση διπλοτύπων, ταξινόμηση. 8 μετρικές και 10 εργαλεία.",
-    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/metritis-lexeon-kai-charaktiron-el.webp",
     "path": "/el/ergaleia/metritis-lexeon-kai-charaktiron"
   },
   "hero": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Δωρεάν μετρητής λέξεων και χαρακτήρων με εργαλεία",
       "html": "<p class=\"text-mid\">Αυτό το εργαλείο συνδυάζει μετρητή λέξεων και χαρακτήρων με λειτουργίες μορφοποίησης. Επικολλήστε κείμενο και θα δείτε λέξεις, χαρακτήρες, προτάσεις, παραγράφους, μοναδικές λέξεις και χρόνο ανάγνωσης.</p><p class=\"text-mid mt-3\">Κάτω από το πεδίο κειμένου θα βρείτε 10 εργαλεία. Όλα επεξεργάζονται τοπικά στον περιηγητή.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/metritis-lexeon-kai-charaktiron-el.webp",
       "imageAlt": "Μετρητής λέξεων και χαρακτήρων – Arteon"
     },
     {
@@ -356,7 +356,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε μια ιδέα για μια νέα λειτουργία, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε ένα άλλο εργαλείο που θα διευκόλυνε τη δουλειά σας; Γράψτε μας – απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/metritis-lexeon-kai-charaktiron-el.webp",
       "imageAlt": "Μετρητής λέξεων και χαρακτήρων – Arteon",
       "defaultSubject": "Feedback: Μετρητής λέξεων και χαρακτήρων"
     },

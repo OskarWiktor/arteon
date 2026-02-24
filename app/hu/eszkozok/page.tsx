@@ -270,7 +270,7 @@ export default function ToolsIndexPage() {
               icon: <RiArticleLine className="h-8 w-8" />,
               title: 'Szó- és karakterszámláló',
               topImageAlt: 'Szó- és karakterszámláló Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-slow-i-znakow.webp',
+              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/szo-es-karakterszamlalo-hu.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>

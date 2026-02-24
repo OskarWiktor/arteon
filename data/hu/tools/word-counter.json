@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Ingyenes szó- és karakterszámláló – Számoljon, alakítson és elemezzen",
     "description": "Ingyenes szó-, karakter-, mondat- és bekezdésszámláló. Kis-/nagybetű módosítás, duplikátumok eltávolítása, sorok rendezése. 8 metrika és 10 szövegeszköz.",
-    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/szo-es-karakterszamlalo-hu.webp",
     "path": "/hu/eszkozok/szo-es-karakterszamlalo"
   },
   "hero": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Ingyenes szó- és karakterszámláló szövegeszközökkel",
       "html": "<p class=\"text-mid\">Ez az eszköz szó- és karakterszámlálót kombinál szövegformázási funkciókkal. Illessze be a szöveget, és látni fogja a szavak, karakterek, mondatok, bekezdések, egyedi szavak számát és az olvasási időt.</p><p class=\"text-mid mt-3\">A szövegmező alatt 10 eszközt talál: kis-/nagybetű átalakítás, szóközök, üres sorok, duplikátumok eltávolítása és rendezés. Minden helyben, a böngészőben történik.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/szo-es-karakterszamlalo-hu.webp",
       "imageAlt": "Szó- és karakterszámláló – Arteon"
     },
     {
@@ -356,7 +356,7 @@
       "type": "contactForm",
       "title": "Segítsen nekünk fejleszteni eszközeinket",
       "description": "Van ötlete egy új funkcióhoz, hibát talált, vagy szeretne javasolni egy másik eszközt, amely megkönnyítené a munkáját? Írjon nekünk – 24 órán belül válaszolunk.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/szo-es-karakterszamlalo-hu.webp",
       "imageAlt": "Szó- és karakterszámláló – Arteon",
       "defaultSubject": "Feedback: Szó- és karakterszámláló"
     },

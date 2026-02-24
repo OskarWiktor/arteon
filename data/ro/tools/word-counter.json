@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Contor cuvinte și caractere gratuit – Numărați, transformați și analizați",
     "description": "Contor gratuit de cuvinte, caractere, propoziții și paragrafe. Schimbați majusculele, eliminați duplicatele, sortați liniile. 8 metrici și 10 instrumente.",
-    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contor-cuvinte-si-caractere-ro.webp",
     "path": "/ro/instrumente/contor-cuvinte-si-caractere"
   },
   "hero": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Contor de cuvinte și caractere cu instrumente text",
       "html": "<p class=\"text-mid\">Acest instrument combină un contor de cuvinte și caractere cu funcții de formatare. Lipiți textul și veți vedea cuvinte, caractere, propoziții, paragrafe, cuvinte unice și timp de citire.</p><p class=\"text-mid mt-3\">Sub câmpul de text veți găsi 10 instrumente: conversie majuscule, eliminare spații, linii goale, duplicate și sortare. Totul se procesează local în browser.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contor-cuvinte-si-caractere-ro.webp",
       "imageAlt": "Contor de cuvinte și caractere – Arteon"
     },
     {
@@ -356,7 +356,7 @@
       "type": "contactForm",
       "title": "Ajutați-ne să îmbunătățim instrumentele noastre",
       "description": "Aveți o idee pentru o nouă funcție, ați găsit o eroare sau doriți să sugerați un alt instrument care v-ar ușura munca? Scrieți-ne – răspundem în 24 de ore.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contor-cuvinte-si-caractere-ro.webp",
       "imageAlt": "Contor de cuvinte și caractere – Arteon",
       "defaultSubject": "Feedback: Contor de cuvinte și caractere"
     },

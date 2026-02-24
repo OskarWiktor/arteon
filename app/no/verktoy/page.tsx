@@ -242,7 +242,7 @@ export default function ToolsIndexPage() {
               icon: <RiArticleLine className="h-8 w-8" />,
               title: 'Ord- og tegnteller',
               topImageAlt: 'Ord- og tegnteller Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-slow-i-znakow.webp',
+              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegnteller-no.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Sjekk tekstlengden og vurder om den passer for en forside, tjenesteside, blogginnlegg eller produktbeskrivelse. Verktoyet teller ord, tegn, avsnitt og lesetid.</p>

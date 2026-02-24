@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Gratis ord- & teckenräknare online – Räkna, transformera & analysera",
     "description": "Gratis ord-, tecken-, menings- och styckeräknare. Ändra versaler, ta bort dubbletter, sortera rader. 8 mätvärden och 10 textverktyg.",
-    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-och-teckenraknare-sv.webp",
     "path": "/sv/verktyg/ord-och-teckenraknare"
   },
   "hero": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Gratis ord- och teckenräknare med textverktyg",
       "html": "<p class=\"text-mid\">Detta verktyg kombinerar en ord- och teckenräknare med textformateringsfunktioner. Klistra in text och se ord, tecken, meningar, stycken, unika ord och lästid.</p><p class=\"text-mid mt-3\">Under textfältet hittar du 10 verktyg: versalkonvertering, borttagning av mellanslag, tomma rader, dubbletter och sortering. Allt bearbetas lokalt i din webbläsare.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-och-teckenraknare-sv.webp",
       "imageAlt": "Ord- och teckenräknare – Arteon"
     },
     {
@@ -356,7 +356,7 @@
       "type": "contactForm",
       "title": "Hjälp oss att förbättra våra verktyg",
       "description": "Har du en idé för en ny funktion, hittat en bugg eller vill föreslå ett annat verktyg som skulle göra ditt arbete enklare? Skriv till oss – vi svarar inom 24 timmar.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-och-teckenraknare-sv.webp",
       "imageAlt": "Ord- och teckenräknare – Arteon",
       "defaultSubject": "Feedback: Ord- och teckenräknare"
     },

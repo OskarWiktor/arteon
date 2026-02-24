@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Gratis woorden- & tekenteller online – Tellen, transformeren & analyseren",
     "description": "Gratis woorden-, teken-, zin- en alineateller. Hoofdletters wijzigen, duplicaten verwijderen, regels sorteren. 8 statistieken en 10 teksttools.",
-    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/woorden-en-tekenteller-nl.webp",
     "path": "/nl/tools/woorden-en-tekenteller"
   },
   "hero": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Gratis woorden- en tekenteller met teksttools",
       "html": "<p class=\"text-mid\">Deze tool combineert een woorden- en tekenteller met tekstopmaakfuncties. Plak uw tekst en u ziet woorden, tekens, zinnen, alinea's, unieke woorden en leestijd.</p><p class=\"text-mid mt-3\">Onder het tekstveld vindt u 10 tools: hoofdletterconversie, verwijdering van spaties, lege regels, duplicaten en sortering. Alles wordt lokaal in uw browser verwerkt.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/woorden-en-tekenteller-nl.webp",
       "imageAlt": "Woord- en tekenteller – Arteon"
     },
     {
@@ -356,7 +356,7 @@
       "type": "contactForm",
       "title": "Help ons onze tools te verbeteren",
       "description": "Heeft u een idee voor een nieuwe functie, een bug gevonden of wilt u een andere tool voorstellen die uw werk gemakkelijker zou maken? Schrijf ons – we reageren binnen 24 uur.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/woorden-en-tekenteller-nl.webp",
       "imageAlt": "Woord- en tekenteller – Arteon",
       "defaultSubject": "Feedback: Woord- en tekenteller"
     },

@@ -235,7 +235,7 @@ export default function ToolsIndexPage() {
               icon: <RiArticleLine className="h-8 w-8" />,
               title: 'Ord- och teckenraknare',
               topImageAlt: 'Ord- och teckenraknare Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-slow-i-znakow.webp',
+              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-och-teckenraknare-sv.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Kontrollera textlangden och bedom om den passar for en startsida, tjanstesida, blogginlagg eller produktbeskrivning. Verktyget raknar ord, tecken, stycken och lastid.</p>

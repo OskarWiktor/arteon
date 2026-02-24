@@ -242,7 +242,7 @@ export default function ToolsIndexPage() {
               icon: <RiArticleLine className="h-8 w-8" />,
               title: 'Ord- og tegntaeller',
               topImageAlt: 'Ord- og tegntaeller Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-slow-i-znakow.webp',
+              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegntaeller-da.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Kontroller tekstlaengden og vurder om den passer til en forside, serviceside, blogindlaeg eller produktbeskrivelse. Vaerktojet taeller ord, tegn, afsnit og laesetid.</p>

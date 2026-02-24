@@ -255,7 +255,7 @@ export default function ToolsIndexPage() {
               icon: <RiArticleLine className="h-8 w-8" />,
               title: 'Μετρητής λέξεων και χαρακτήρων',
               topImageAlt: 'Μετρητής λέξεων και χαρακτήρων Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-slow-i-znakow.webp',
+              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/metritis-lexeon-kai-charaktiron-el.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>

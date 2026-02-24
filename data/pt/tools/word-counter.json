@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Contador de palavras e caracteres grátis – Contar, transformar e analisar texto",
     "description": "Contador gratuito de palavras, caracteres, frases e parágrafos. Alterar maiúsculas, remover duplicados, ordenar linhas. 8 métricas e 10 ferramentas.",
-    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palavras-e-caracteres-pt.webp",
     "path": "/pt/ferramentas/contador-de-palavras-e-caracteres"
   },
   "hero": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Contador de palavras e caracteres com ferramentas de texto",
       "html": "<p class=\"text-mid\">Esta ferramenta combina um contador de palavras e caracteres com funções de formatação. Cole o texto e verá palavras, caracteres, frases, parágrafos, palavras únicas e tempo de leitura.</p><p class=\"text-mid mt-3\">Abaixo do campo de texto encontrará 10 ferramentas: conversão de maiúsculas, remoção de espaços, linhas vazias, duplicados e ordenação. Tudo é processado localmente no navegador.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palavras-e-caracteres-pt.webp",
       "imageAlt": "Contador de palavras e caracteres – Arteon"
     },
     {
@@ -361,7 +361,7 @@
       "type": "contactForm",
       "title": "Ajude-nos a melhorar nossas ferramentas",
       "description": "Tem uma ideia para uma nova funcionalidade, encontrou um bug ou quer sugerir outra ferramenta que facilitaria seu trabalho? Escreva-nos – respondemos em 24 horas.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palavras-e-caracteres-pt.webp",
       "imageAlt": "Contador de palavras e caracteres – Arteon",
       "defaultSubject": "Feedback: Contador de palavras e caracteres"
     },

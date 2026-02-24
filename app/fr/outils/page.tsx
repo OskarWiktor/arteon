@@ -294,7 +294,7 @@ export default function ToolsIndexPage() {
               icon: <RiArticleLine className="h-8 w-8" />,
               title: 'Compteur de mots et caractères',
               topImageAlt: 'Compteur de mots et caractères Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-slow-i-znakow.webp',
+              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/compteur-de-mots-et-caracteres-fr.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>

@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Compteur de mots et caractères gratuit – Compter, transformer et analyser",
     "description": "Compteur gratuit de mots, caractères, phrases et paragraphes. Changer la casse, supprimer les doublons, trier les lignes. 8 métriques et 10 outils.",
-    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/compteur-de-mots-et-caracteres-fr.webp",
     "path": "/fr/outils/compteur-de-mots-et-caracteres"
   },
   "hero": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Compteur de mots et caractères avec outils de texte",
       "html": "<p class=\"text-mid\">Cet outil combine un compteur de mots et caractères avec des fonctions de formatage. Collez votre texte et vous verrez les mots, caractères, phrases, paragraphes, mots uniques et temps de lecture.</p><p class=\"text-mid mt-3\">Sous le champ de texte, vous trouverez 10 outils : conversion de casse, suppression des espaces, lignes vides, doublons et tri. Tout est traité localement dans votre navigateur.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/compteur-de-mots-et-caracteres-fr.webp",
       "imageAlt": "Compteur de mots et caractères – Arteon"
     },
     {
@@ -366,7 +366,7 @@
       "type": "contactForm",
       "title": "Aidez-nous à améliorer nos outils",
       "description": "Vous avez une idée pour une nouvelle fonctionnalité, trouvé un bug ou souhaitez suggérer un autre outil qui faciliterait votre travail ? Écrivez-nous – nous répondons sous 24 heures.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/compteur-de-mots-et-caracteres-fr.webp",
       "imageAlt": "Compteur de mots et caractères – Arteon",
       "defaultSubject": "Feedback: Compteur de mots et caractères"
     },

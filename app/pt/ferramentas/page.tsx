@@ -290,7 +290,7 @@ export default function ToolsIndexPage() {
               icon: <RiArticleLine className="h-8 w-8" />,
               title: 'Contador de palavras e caracteres',
               topImageAlt: 'Contador de palavras e caracteres Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-slow-i-znakow.webp',
+              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palavras-e-caracteres-pt.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>

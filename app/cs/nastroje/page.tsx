@@ -262,7 +262,7 @@ export default function ToolsIndexPage() {
               icon: <RiArticleLine className="h-8 w-8" />,
               title: 'Pocitadlo slov a znaku',
               topImageAlt: 'Pocitadlo slov a znaku Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-slow-i-znakow.webp',
+              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/pocitadlo-slov-a-znaku-cs.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Zkontrolujte delku textu a vyhodnotte, zda se hodi pro hlavni stranku, stranku sluzeb, clanek na blog nebo popis produktu. Nastroj pocita slova, znaky, odstavce a dobu cteni.</p>

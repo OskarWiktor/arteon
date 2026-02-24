@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Gratis ord- og tegnteller online – Tell, transformer og analyser",
     "description": "Gratis ord-, tegn-, setnings- og avsnittsteller. Endre store bokstaver, fjerne duplikater, sortere linjer. 8 målinger og 10 tekstverktøy.",
-    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegnteller-no.webp",
     "path": "/no/verktoy/ord-og-tegnteller"
   },
   "hero": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Gratis ord- og tegnteller med tekstverktøy",
       "html": "<p class=\"text-mid\">Dette verktøyet kombinerer en ord- og tegnteller med tekstformateringsfunksjoner. Lim inn tekst og se ord, tegn, setninger, avsnitt, unike ord og lesetid.</p><p class=\"text-mid mt-3\">Under tekstfeltet finner du 10 verktøy: konvertering av store/små bokstaver, fjerning av mellomrom, tomme linjer, duplikater og sortering. Alt behandles lokalt i nettleseren.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegnteller-no.webp",
       "imageAlt": "Ord- og tegnteller – Arteon"
     },
     {
@@ -356,7 +356,7 @@
       "type": "contactForm",
       "title": "Hjelp oss å forbedre verktøyene våre",
       "description": "Har du en idé til en ny funksjon, funnet en feil eller vil foreslå et annet verktøy som ville gjøre arbeidet ditt enklere? Skriv til oss – vi svarer innen 24 timer.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegnteller-no.webp",
       "imageAlt": "Ord- og tegnteller – Arteon",
       "defaultSubject": "Feedback: Ord- og tegnteller"
     },

@@ -292,7 +292,7 @@ export default function ToolsIndexPage() {
               icon: <RiArticleLine className="h-8 w-8" />,
               title: 'Wort- & Zeichenzähler',
               topImageAlt: 'Wort- und Zeichenzähler Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-slow-i-znakow.webp',
+              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/wort-und-zeichenzaehler-de.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>

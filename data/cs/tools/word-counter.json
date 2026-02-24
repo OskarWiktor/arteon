@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Bezplatné počítadlo slov a znaků – Počítat, transformovat a analyzovat",
     "description": "Bezplatné počítadlo slov, znaků, vět a odstavců. Změna velikosti písmen, odstranění duplikátů, řazení řádků. 8 metrik a 10 nástrojů.",
-    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/pocitadlo-slov-a-znaku-cs.webp",
     "path": "/cs/nastroje/pocitadlo-slov-a-znaku"
   },
   "hero": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Bezplatné počítadlo slov a znaků s textovými nástroji",
       "html": "<p class=\"text-mid\">Tento nástroj kombinuje počítadlo slov a znaků s funkcemi pro formátování textu. Vložte text a uvidíte slova, znaky, věty, odstavce, unikátní slova a čas čtení.</p><p class=\"text-mid mt-3\">Pod textovým polem najdete 10 nástrojů: změna velikosti písmen, odstranění mezer, prázdných řádků, duplikátů a řazení. Vše probíhá lokálně v prohlížeči.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/pocitadlo-slov-a-znaku-cs.webp",
       "imageAlt": "Počítadlo slov a znaků – Arteon"
     },
     {
@@ -356,7 +356,7 @@
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad na novou funkci, našli jste chybu nebo chcete navrhnout jiný nástroj, který by usnadnil vaši práci? Napište nám – odpovídáme do 24 hodin.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/pocitadlo-slov-a-znaku-cs.webp",
       "imageAlt": "Počítadlo slov a znaků – Arteon",
       "defaultSubject": "Feedback: Počítadlo slov a znaků"
     },

@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Ilmainen sana- ja merkkilaskuri – Laske, muunna ja analysoi",
     "description": "Ilmainen sana-, merkki-, lause- ja kappalelasku. Muuta kirjainkoko, poista duplikaatit, lajittele rivit. 8 mittaria ja 10 tekstityökalua.",
-    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/sana-ja-merkkilaskuri-fi.webp",
     "path": "/fi/tyokalut/sana-ja-merkkilaskuri"
   },
   "hero": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Ilmainen sana- ja merkkilaskuri tekstityökaluilla",
       "html": "<p class=\"text-mid\">Tämä työkalu yhdistää sana- ja merkkilaskurin tekstinmuokkaustoimintoihin. Liitä teksti ja näet sanat, merkit, lauseet, kappaleet, uniikit sanat ja lukuajan.</p><p class=\"text-mid mt-3\">Tekstikentän alla löydät 10 työkalua: kirjainkoon muunto, välilyöntien, tyhjien rivien, duplikaattien poisto ja lajittelu. Kaikki tapahtuu paikallisesti selaimessa.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/sana-ja-merkkilaskuri-fi.webp",
       "imageAlt": "Sana- ja merkkimäärälaskuri – Arteon"
     },
     {
@@ -356,7 +356,7 @@
       "type": "contactForm",
       "title": "Auta meitä parantamaan työkalujamme",
       "description": "Onko sinulla idea uudelle ominaisuudelle, löysitkö virheen tai haluatko ehdottaa toista työkalua, joka helpottaisi työtäsi? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/sana-ja-merkkilaskuri-fi.webp",
       "imageAlt": "Sana- ja merkkimäärälaskuri – Arteon",
       "defaultSubject": "Feedback: Sana- ja merkkimäärälaskuri"
     },

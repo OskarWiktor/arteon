@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Contatore parole e caratteri gratuito – Contare, trasformare e analizzare",
     "description": "Contatore gratuito di parole, caratteri, frasi e paragrafi. Cambiare maiuscole, rimuovere duplicati, ordinare righe. 8 metriche e 10 strumenti.",
-    "ogImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+    "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contatore-di-parole-e-caratteri-it.webp",
     "path": "/it/strumenti/contatore-di-parole-e-caratteri"
   },
   "hero": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Contatore di parole e caratteri con strumenti di testo",
       "html": "<p class=\"text-mid\">Questo strumento combina un contatore di parole e caratteri con funzioni di formattazione. Incolla il testo e vedrai parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura.</p><p class=\"text-mid mt-3\">Sotto il campo di testo troverai 10 strumenti: conversione maiuscole, rimozione spazi, righe vuote, duplicati e ordinamento. Tutto viene elaborato localmente nel browser.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contatore-di-parole-e-caratteri-it.webp",
       "imageAlt": "Contatore di parole e caratteri – Arteon"
     },
     {
@@ -356,7 +356,7 @@
       "type": "contactForm",
       "title": "Aiutaci a migliorare i nostri strumenti",
       "description": "Hai un'idea per una nuova funzionalità, hai trovato un bug o vuoi suggerire un altro strumento che renderebbe il tuo lavoro più facile? Scrivici – rispondiamo entro 24 ore.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp",
+      "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contatore-di-parole-e-caratteri-it.webp",
       "imageAlt": "Contatore di parole e caratteri – Arteon",
       "defaultSubject": "Feedback: Contatore di parole e caratteri"
     },
