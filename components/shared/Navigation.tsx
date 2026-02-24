@@ -62,9 +62,9 @@ export default function Navigation() {
       />
 
       <Wrapper>
-        <nav className="flex h-14 items-center justify-between md:h-16 lg:h-18" aria-label={t.mainNavigation}>
+        <nav className="flex h-12 items-center justify-between md:h-14 lg:h-16" aria-label={t.mainNavigation}>
           <Link href={isPl ? '/' : localeConfig.toolsIndexHref}>
-            <Image src="/assets/arteon-logo.webp" width={120} height={40} alt={t.logoAlt} priority sizes="120px" />
+            <Image src="/assets/arteon-logo.webp" width={100} height={30} alt={t.logoAlt} priority sizes="100px" />
           </Link>
 
           <DesktopNavigation />
@@ -101,7 +101,7 @@ export default function Navigation() {
               </button>
             )}
             <IconButton onClick={toggleMenu} label={isOpen ? t.closeMenu : t.openMenu} aria-expanded={isOpen} size="md" className="block h-auto w-auto p-1">
-              {isOpen ? <RiCloseLine width={28} height={28} aria-hidden="true" /> : <RiMenuLine width={28} height={28} aria-hidden="true" />}
+              {isOpen ? <RiCloseLine width={24} height={24} aria-hidden="true" /> : <RiMenuLine width={24} height={24} aria-hidden="true" />}
             </IconButton>
           </div>
         </nav>

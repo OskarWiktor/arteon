@@ -23,7 +23,7 @@ export default function SectionInfoBanner({ items, animated = false, speed = 40 
   const duplicatedItems = animated ? [...items, ...items] : items;
 
   const renderItem = (item: InfoBannerItem, index: number) => (
-    <span key={index} className="mr-6 flex items-center gap-2 text-sm font-medium text-white">
+    <span key={index} className="mr-6 flex items-center gap-2 !text-xs font-medium text-white">
       {item.icon && <span className="text-accent">{item.icon}</span>}
       <span>
         {item.text}
