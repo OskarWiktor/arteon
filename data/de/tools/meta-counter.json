@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Kostenloser Meta-Tag-Checker – Pixelbreite prüfen",
     "description": "Prüfen Sie Meta-Titel und Beschreibung: Zeichenanzahl, Pixelbreite und Google-Vorschau. Vermeiden Sie abgeschnittene Snippets in den Suchergebnissen.",
-    "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+    "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-beschreibung-laengenpruefer-de.webp",
     "path": "/de/werkzeuge/meta-titel-beschreibung-laengenpruefer"
   },
   "hero": {
@@ -83,7 +83,7 @@
       "type": "sectionBasic",
       "title": "Warum Meta-Titel und Beschreibung optimieren?",
       "html": "<p class=\"text-mid\">Der Meta-Titel und die Meta-Beschreibung sind die ersten Elemente, die Nutzer in den Google-Suchergebnissen sehen. Ein abgeschnittener Titel oder eine unvollständige Beschreibung können die Klickrate erheblich senken. Mit diesem Tool prüfen Sie sofort, ob Ihre Texte im empfohlenen Bereich liegen.</p><p class=\"text-mid mt-3\">Meta-Tags beschreiben den Seiteninhalt für Suchmaschinen und Nutzer. Der Meta-Titel erscheint als klickbare blaue Überschrift in den Suchergebnissen, die Beschreibung als grauer Text darunter. Gut geschriebene Meta-Tags erhöhen die Chance, dass jemand auf Ihre Seite klickt.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageSrc": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-beschreibung-laengenpruefer-de.webp",
       "imageAlt": "Meta-Titel und Beschreibung Prüfer – Arteon"
     },
     {
@@ -307,7 +307,7 @@
       "type": "contactForm",
       "title": "Helfen Sie uns, unsere Tools zu verbessern",
       "description": "Haben Sie eine Idee für eine neue Funktion, einen Fehler gefunden oder möchten Sie ein anderes Tool vorschlagen, das Ihre Arbeit erleichtern würde? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageSrc": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-beschreibung-laengenpruefer-de.webp",
       "imageAlt": "Meta-Titel und Beschreibung Prüfer – Arteon",
       "defaultSubject": "Feedback: Meta-Titel und Beschreibung Prüfer"
     },

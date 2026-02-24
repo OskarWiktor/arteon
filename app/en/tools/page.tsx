@@ -272,7 +272,7 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Meta title & description checker',
               topImageAlt: 'Meta title and description checker Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-title-description-length-checker-en.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Check character count, word count, pixel width, and preview how your page looks in Google. Avoid truncated titles and descriptions and fine-tune your SEO content.</p>

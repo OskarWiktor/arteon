@@ -229,7 +229,7 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Meta-otsikon ja -kuvauksen tarkistus',
               topImageAlt: 'Meta-otsikon ja -kuvauksen tarkistus Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-otsikko-ja-kuvaus-tarkistus-fi.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Tarkista merkkien ja sanojen määrä sekä pikselileveys – Google-esikatselulla. Vältä katkenneet otsikot ja kuvaukset hakutuloksissa.</p>

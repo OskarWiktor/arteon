@@ -254,7 +254,7 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Meta cím és leírás ellenőrző',
               topImageAlt: 'Meta cím és leírás ellenőrző Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-cim-es-leiras-ellenorzo-hu.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Ellenőrizze a karakterszámot, szószámot és pixelszélességet — Google előnézettel. Kerülje el a csonkolt címeket és leírásokat a keresési eredményekben.</p>

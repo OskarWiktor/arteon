@@ -273,7 +273,7 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Verificator meta titlu și descriere',
               topImageAlt: 'Verificator meta titlu și descriere Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/verificator-meta-titlu-si-descriere-ro.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Verificați numărul de caractere, numărul de cuvinte și lățimea în pixeli — cu previzualizare Google. Evitați titlurile și descrierile trunchiate în rezultatele căutării.</p>

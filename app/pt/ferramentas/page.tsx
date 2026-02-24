@@ -274,7 +274,7 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Verificador de meta título e descrição',
               topImageAlt: 'Verificador de meta título e descrição Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/verificador-de-meta-titulo-e-descricao-pt.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Verifique o número de caracteres, palavras e a largura em píxeis – com pré-visualização da aparência da sua página nos resultados Google. Evite títulos e descrições truncados.</p>

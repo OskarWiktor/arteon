@@ -239,7 +239,7 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Έλεγχος meta τίτλου και περιγραφής',
               topImageAlt: 'Έλεγχος meta τίτλου και περιγραφής Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/elegkhos-meta-titlou-kai-perigrafis-el.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Ελέγξτε τον αριθμό χαρακτήρων και λέξεων καθώς και το πλάτος σε pixel – με προεπισκόπηση Google. Αποφύγετε κομμένους τίτλους και περιγραφές στα αποτελέσματα αναζήτησης.</p>

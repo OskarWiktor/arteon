@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Δωρεάν Έλεγχος Meta Title & Description – Πλάτος σε Pixel",
     "description": "Ελέγξτε το μήκος meta title και description σε χαρακτήρες και pixels. Η προεπισκόπηση Google SERP σας βοηθά να αποφύγετε περικομμένα snippets.",
-    "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+    "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/elegkhos-meta-titlou-kai-perigrafis-el.webp",
     "path": "/el/ergaleia/elegkhos-meta-titlou-kai-perigrafis"
   },
   "hero": {
@@ -83,7 +83,7 @@
       "type": "sectionBasic",
       "title": "Τι είναι meta title και meta description;",
       "html": "<p class=\"text-mid\">Τα meta title και meta description είναι δύο σύντομα κείμενα που περιγράφουν το περιεχόμενο μιας ιστοσελίδας. Δεν είναι ορατά απευθείας στη σελίδα αλλά εμφανίζονται στα αποτελέσματα αναζήτησης Google ως τίτλος (μπλε σύνδεσμος) και περιγραφή (γκρι κείμενο κάτω από τον τίτλο).</p><p class=\"text-mid mt-3\">Καλογραμμένα meta tags λειτουργούν σαν διαφήμιση της σελίδας σας στα αποτελέσματα αναζήτησης — τραβούν την προσοχή και αυξάνουν την πιθανότητα κλικ. Κακογραμμένα ή περικομμένα tags μπορούν να αποθαρρύνουν τα κλικ, ακόμα και αν η σελίδα είναι πολύτιμη.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageSrc": "/assets/tools/free-meta-title-and-description-checker-pixel-width/elegkhos-meta-titlou-kai-perigrafis-el.webp",
       "imageAlt": "Έλεγχος meta τίτλου και περιγραφής – Arteon"
     },
     {
@@ -299,7 +299,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε μια ιδέα για μια νέα λειτουργία, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε ένα άλλο εργαλείο που θα διευκόλυνε τη δουλειά σας; Γράψτε μας – απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageSrc": "/assets/tools/free-meta-title-and-description-checker-pixel-width/elegkhos-meta-titlou-kai-perigrafis-el.webp",
       "imageAlt": "Έλεγχος meta τίτλου και περιγραφής – Arteon",
       "defaultSubject": "Feedback: Έλεγχος meta τίτλου και περιγραφής"
     },

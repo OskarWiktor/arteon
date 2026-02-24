@@ -246,7 +246,7 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Kontrola meta titulku a popisu',
               topImageAlt: 'Kontrola meta titulku a popisu Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/kontrola-meta-titulku-a-popisu-cs.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Zkontrolujte pocet znaku, pocet slov a sirku v pixelech — s nahledem Google. Vyhnete se oriznutym titulkum a popisum ve vysledcich vyhledavani.</p>

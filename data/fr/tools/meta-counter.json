@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Vérificateur de méta titre et description gratuit – SEO",
     "description": "Vérifiez la longueur de votre méta titre et description en caractères et pixels. Aperçu Google pour éviter les snippets tronqués.",
-    "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+    "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/verificateur-meta-titre-et-description-fr.webp",
     "path": "/fr/outils/verificateur-meta-titre-et-description"
   },
   "hero": {
@@ -75,7 +75,7 @@
       "type": "sectionBasic",
       "title": "Pourquoi vérifier la longueur du méta titre et de la description ?",
       "html": "<p class=\"text-mid\">Le méta titre et la méta description sont les premiers éléments que les utilisateurs voient dans les résultats de recherche Google. Un titre tronqué ou une description coupée peut réduire le taux de clics et nuire au référencement de votre page.</p><p class=\"text-mid mt-3\">Cet outil vérifie le nombre de caractères, le nombre de mots et la largeur en pixels de votre titre et description. Il affiche un aperçu en temps réel de l'apparence de votre page dans les résultats Google, vous permettant d'optimiser chaque élément avant publication.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageSrc": "/assets/tools/free-meta-title-and-description-checker-pixel-width/verificateur-meta-titre-et-description-fr.webp",
       "imageAlt": "Vérificateur de méta titre et description – Arteon"
     },
     {
@@ -286,7 +286,7 @@
       "type": "contactForm",
       "title": "Aidez-nous à améliorer nos outils",
       "description": "Vous avez une idée pour une nouvelle fonctionnalité, trouvé un bug ou souhaitez suggérer un autre outil qui faciliterait votre travail ? Écrivez-nous – nous répondons sous 24 heures.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageSrc": "/assets/tools/free-meta-title-and-description-checker-pixel-width/verificateur-meta-titre-et-description-fr.webp",
       "imageAlt": "Vérificateur de méta titre et description – Arteon",
       "defaultSubject": "Feedback: Vérificateur de méta titre et description"
     },

@@ -274,7 +274,7 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Meta-Tag-Checker',
               topImageAlt: 'Meta-Titel- und Beschreibungs-Checker Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-beschreibung-laengenpruefer-de.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>

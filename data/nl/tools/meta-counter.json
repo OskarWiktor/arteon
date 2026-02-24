@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Gratis meta title & description checker – Pixelbreedte",
     "description": "Controleer de lengte van uw meta title en description in tekens en pixels. Google SERP-preview helpt u afgekapte titels en beschrijvingen in zoekresultaten te vermijden.",
-    "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+    "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-beschrijving-checker-nl.webp",
     "path": "/nl/tools/meta-title-description-lengte-checker"
   },
   "hero": {
@@ -83,7 +83,7 @@
       "type": "sectionBasic",
       "title": "Wat zijn meta title en meta description?",
       "html": "<p class=\"text-mid\">Meta title en meta description zijn twee korte teksten die de inhoud van een webpagina beschrijven. Ze zijn niet direct zichtbaar op de pagina maar verschijnen in Google zoekresultaten als de titel (blauwe link) en beschrijving (grijze tekst onder de titel).</p><p class=\"text-mid mt-3\">Goed geschreven meta tags werken als een advertentie voor uw pagina in zoekresultaten - ze trekken de aandacht en verhogen de kans op een klik. Slecht geschreven of afgekapte tags kunnen kliks ontmoedigen, zelfs als de pagina zelf waardevol is.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageSrc": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-beschrijving-checker-nl.webp",
       "imageAlt": "Meta titel en beschrijving checker – Arteon"
     },
     {
@@ -299,7 +299,7 @@
       "type": "contactForm",
       "title": "Help ons onze tools te verbeteren",
       "description": "Heeft u een idee voor een nieuwe functie, een bug gevonden of wilt u een andere tool voorstellen die uw werk gemakkelijker zou maken? Schrijf ons – we reageren binnen 24 uur.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageSrc": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-beschrijving-checker-nl.webp",
       "imageAlt": "Meta titel en beschrijving checker – Arteon",
       "defaultSubject": "Feedback: Meta titel en beschrijving checker"
     },

@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Kontrola meta titulku a popisu zdarma – Šířka v pixelech",
     "description": "Zkontrolujte délku meta titulku a popisu ve znacích i pixelech. Náhled Google SERP pomůže vyhnout se ořízaným úryvkům. Bez registrace, lokálně v prohlížeči.",
-    "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+    "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/kontrola-meta-titulku-a-popisu-cs.webp",
     "path": "/cs/nastroje/kontrola-meta-titulku-a-popisu"
   },
   "hero": {
@@ -80,7 +80,7 @@
       "type": "sectionBasic",
       "title": "Co je meta titulek a meta popis?",
       "html": "<p class=\"text-mid\">Meta titulek a meta popis jsou dva krátké texty, které popisují obsah webové stránky. Nezobrazují se přímo na stránce, ale objevují se ve výsledcích vyhledávání Google jako titulek (modrý odkaz) a popis (šedý text pod titulkem).</p><p class=\"text-mid mt-3\">Dobře napsané meta tagy fungují jako reklama vaší stránky ve výsledcích vyhledávání – upoutají pozornost a zvyšují pravděpodobnost prokliků. Špatně napsané nebo ořízané tagy mohou odradit od kliknutí, i když je samotná stránka hodnotná.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageSrc": "/assets/tools/free-meta-title-and-description-checker-pixel-width/kontrola-meta-titulku-a-popisu-cs.webp",
       "imageAlt": "Kontrola meta titulku a popisu – Arteon"
     },
     {
@@ -286,7 +286,7 @@
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad na novou funkci, našli jste chybu nebo chcete navrhnout jiný nástroj, který by usnadnil vaši práci? Napište nám – odpovídáme do 24 hodin.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageSrc": "/assets/tools/free-meta-title-and-description-checker-pixel-width/kontrola-meta-titulku-a-popisu-cs.webp",
       "imageAlt": "Kontrola meta titulku a popisu – Arteon",
       "defaultSubject": "Feedback: Kontrola meta titulku a popisu"
     },

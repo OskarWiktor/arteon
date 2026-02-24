@@ -247,7 +247,7 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Meta-titel & beschrijving checker',
               topImageAlt: 'Meta-titel en beschrijving checker Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-beschrijving-checker-nl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Controleer het aantal tekens, woorden en pixelbreedte — met Google-voorbeeld. Vermijd afgekapte titels en beschrijvingen in zoekresultaten.</p>

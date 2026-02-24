@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Meta-otsikon ja -kuvauksen pituustarkistus – Pikseleinä",
     "description": "Tarkista meta-otsikon ja -kuvauksen pituus merkkeinä ja pikseleinä. Googlen hakutulosesikatselu auttaa välttämään katkenneita otsikoita ja kuvauksia hakutuloksissa.",
-    "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+    "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-otsikko-ja-kuvaus-tarkistus-fi.webp",
     "path": "/fi/tyokalut/meta-otsikko-ja-kuvaus-tarkistus"
   },
   "hero": {
@@ -74,7 +74,7 @@
       "type": "sectionBasic",
       "title": "Mitä ovat meta-otsikko ja meta-kuvaus?",
       "html": "<p class=\"text-mid\">Meta-otsikko ja meta-kuvaus ovat kaksi lyhyttä tekstiä, jotka kuvaavat verkkosivun sisältöä. Ne eivät näy suoraan sivulla, mutta näkyvät Googlen hakutuloksissa otsikkona (sininen linkki) ja kuvauksena (harmaa teksti otsikon alla).</p><p class=\"text-mid mt-3\">Hyvin kirjoitetut meta-tunnisteet toimivat sivun mainoksena hakutuloksissa – ne herättävät huomion ja lisäävät klikkauksen todennäköisyyttä. Huonosti kirjoitetut tai katkaistut tunnisteet voivat karkottaa klikkaajat, vaikka itse sivu olisi arvokas.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageSrc": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-otsikko-ja-kuvaus-tarkistus-fi.webp",
       "imageAlt": "Meta-otsikon ja kuvauksen tarkistus – Arteon"
     },
     {
@@ -280,7 +280,7 @@
       "type": "contactForm",
       "title": "Auta meitä parantamaan työkalujamme",
       "description": "Onko sinulla idea uudelle ominaisuudelle, löysitkö virheen tai haluatko ehdottaa toista työkalua, joka helpottaisi työtäsi? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageSrc": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-otsikko-ja-kuvaus-tarkistus-fi.webp",
       "imageAlt": "Meta-otsikon ja kuvauksen tarkistus – Arteon",
       "defaultSubject": "Feedback: Meta-otsikon ja kuvauksen tarkistus"
     },

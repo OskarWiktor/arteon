@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Free Meta Title & Description Checker – Pixel Width",
     "description": "Check your meta title and description length in characters and pixels. Google SERP preview helps you avoid truncated snippets. No signup.",
-    "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+    "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-title-description-length-checker-en.webp",
     "path": "/en/tools/meta-title-description-length-checker"
   },
   "hero": {
@@ -83,7 +83,7 @@
       "type": "sectionBasic",
       "title": "What are meta title and meta description?",
       "html": "<p class=\"text-mid\">Meta title and meta description are two short texts that describe the content of a web page. They are not visible directly on the page but appear in Google search results as the title (blue link) and description (gray text below the title).</p><p class=\"text-mid mt-3\">Well-written meta tags work like an ad for your page in search results - they attract attention and increase the chance of a click. Poorly written or truncated tags can discourage clicks, even if the page itself is valuable.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageSrc": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-title-description-length-checker-en.webp",
       "imageAlt": "Meta title and description checker – Arteon"
     },
     {
@@ -299,7 +299,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea for a new feature, found a bug, or want to suggest another tool that would make your work easier? Write to us – we respond within 24 hours.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageSrc": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-title-description-length-checker-en.webp",
       "imageAlt": "Meta title and description checker – Arteon",
       "defaultSubject": "Feedback: Meta title and description checker"
     },

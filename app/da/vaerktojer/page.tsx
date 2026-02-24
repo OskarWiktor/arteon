@@ -226,7 +226,7 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Meta-titel og beskrivelseskontrol',
               topImageAlt: 'Meta-titel og beskrivelseskontrol Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-og-beskrivelse-kontrol-da.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Kontroller antal tegn, antal ord og pixelbredde -- med Google-forhadsvisning. Undga afkortede titler og beskrivelser i sogeresultaterne.</p>

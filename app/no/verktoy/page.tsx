@@ -226,7 +226,7 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Meta-tittel- og beskrivelsessjekker',
               topImageAlt: 'Meta-tittel- og beskrivelsessjekker Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-tittel-og-beskrivelse-sjekker-no.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Sjekk antall tegn, antall ord og pikselbredde -- med Google-forhaandsvisning. Unngaa avkortede titler og beskrivelser i sokeresultatene.</p>

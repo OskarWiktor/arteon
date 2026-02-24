@@ -275,7 +275,7 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Vérificateur de méta titre et description',
               topImageAlt: 'Vérificateur de méta titre et description Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/verificateur-meta-titre-et-description-fr.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>

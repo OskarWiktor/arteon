@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Ingyenes meta title és description ellenőrző – Pixelek",
     "description": "Ellenőrizze a meta title és description hosszát karakterekben és pixelekben. A Google SERP előnézet segít elkerülni a csonkolt címeket és leírásokat a keresőben.",
-    "ogImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+    "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-cim-es-leiras-ellenorzo-hu.webp",
     "path": "/hu/eszkozok/meta-title-description-hossz-ellenorzo"
   },
   "hero": {
@@ -83,7 +83,7 @@
       "type": "sectionBasic",
       "title": "Mi az a meta title és meta description?",
       "html": "<p class=\"text-mid\">A meta title és meta description két rövid szöveg, amely leírja egy weboldal tartalmát. Nem láthatók közvetlenül az oldalon, de megjelennek a Google keresési eredményekben címként (kék link) és leírásként (szürke szöveg a cím alatt).</p><p class=\"text-mid mt-3\">A jól megírt meta tagek reklámként működnek az oldalához a keresési eredményekben - felkeltik a figyelmet és növelik a kattintás esélyét. A rosszul megírt vagy levágott tagek elriaszthatják a kattintásokat, még ha maga az oldal értékes is.</p>",
-      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageSrc": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-cim-es-leiras-ellenorzo-hu.webp",
       "imageAlt": "Meta cím és leírás ellenőrző – Arteon"
     },
     {
@@ -299,7 +299,7 @@
       "type": "contactForm",
       "title": "Segítsen nekünk fejleszteni eszközeinket",
       "description": "Van ötlete egy új funkcióhoz, hibát talált, vagy szeretne javasolni egy másik eszközt, amely megkönnyítené a munkáját? Írjon nekünk – 24 órán belül válaszolunk.",
-      "imageSrc": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp",
+      "imageSrc": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-cim-es-leiras-ellenorzo-hu.webp",
       "imageAlt": "Meta cím és leírás ellenőrző – Arteon",
       "defaultSubject": "Feedback: Meta cím és leírás ellenőrző"
     },
