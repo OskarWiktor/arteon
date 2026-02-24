@@ -166,7 +166,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
   }
 
   if (variant === 'vertical') {
-    return <div ref={containerRef} className={`min-h-[600px] w-[160px] ${className}`} />;
+    return <div ref={containerRef} className={`inline-block min-h-[600px] w-[160px] ${className}`} />;
   }
 
   if (isInArticleVariant) {
