@@ -118,7 +118,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
         ins.setAttribute('data-full-width-responsive', 'true');
       } else if (variant === 'vertical') {
         ins.style.display = 'inline-block';
-        ins.style.width = '300px';
+        ins.style.width = '160px';
         ins.style.height = '600px';
       } else if (variant === 'autorelaxed') {
         ins.style.display = 'block';
@@ -166,7 +166,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
   }
 
   if (variant === 'vertical') {
-    return <div ref={containerRef} className={`mx-auto min-h-[600px] w-[300px] ${className}`} />;
+    return <div ref={containerRef} className={`mx-auto min-h-[400px] w-[240px] ${className}`} />;
   }
 
   if (isInArticleVariant) {
