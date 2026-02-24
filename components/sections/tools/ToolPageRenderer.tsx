@@ -15,7 +15,6 @@ import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionBasic from '@/components/ui/sections/SectionBasic';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
-import ToolContactForm from '@/components/sections/tools/ToolContactForm';
 import SectionDemo from '@/components/ui/sections/SectionDemo';
 import SectionTabs from '@/components/ui/sections/SectionTabs';
 import SectionFeatureComparison from '@/components/ui/sections/SectionFeatureComparison';
@@ -29,8 +28,9 @@ import { getToolAlternates, getToolSoftwareSchema, getToolHowToSchema, getToolWe
 import { getToolHref } from '@/lib/i18n/tool-registry';
 import { getToolIcon } from '@/lib/tools/icon-registry';
 import { DESKTOP_ONLY_UI } from '@/lib/i18n/locales';
+import ToolContactForm from './ToolContactForm';
 
-const AD_SECTION_INTERVAL = 4;
+const AD_SECTION_INTERVAL = 3;
 
 const DESKTOP_ONLY_TOOLS = new Set(['jpgToWebp', 'imageResize', 'favicon', 'emailSignature']);
 
