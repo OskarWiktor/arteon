@@ -213,7 +213,7 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'Konwerter JPG/PNG na WebP',
               topImageAlt: 'Konwerter JPG/PNG na WebP Arteon',
-              topImageSrc: '/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -231,7 +231,7 @@ export default function ToolsIndexPage() {
               icon: <RiCropLine className="h-8 w-8" />,
               title: 'Edytor zdjęć online',
               topImageAlt: 'Edytor zdjęć online Arteon',
-              topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
+              topImageSrc: '/assets/tools/online-image-editor/edytor-zdjec-online-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -250,7 +250,7 @@ export default function ToolsIndexPage() {
               icon: <RiAppsLine className="h-8 w-8" />,
               title: 'Generator favicon i ikon dla strony',
               topImageAlt: 'Generator favicon i ikon dla strony Arteon',
-              topImageSrc: '/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp',
+              topImageSrc: '/assets/tools/free-favicon-generator/darmowy-generator-favicon-ico-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -278,7 +278,7 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Licznik długości meta title i description',
               topImageAlt: 'Licznik długości meta title i description Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
+              topImageSrc: '/assets/tools/meta-title-description-length-checker/licznik-dlugosci-meta-title-i-description-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Sprawdź liczbę znaków, słów i szerokość w pikselach oraz podgląd wyniku w Google. Łatwiej unikniesz uciętych tytułów i opisów i szybciej dopasujesz treści pod SEO.</p>
@@ -294,7 +294,7 @@ export default function ToolsIndexPage() {
               icon: <RiArticleLine className="h-8 w-8" />,
               title: 'Licznik słów i znaków',
               topImageAlt: 'Licznik słów i znaków Arteon',
-              topImageSrc: '/assets/tools/narzedzia-licznik-slow-i-znakow.webp',
+              topImageSrc: '/assets/tools/word-and-character-counter/licznik-slow-i-znakow-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -323,7 +323,7 @@ export default function ToolsIndexPage() {
               icon: <RiMailLine className="h-8 w-8" />,
               title: 'Darmowy generator stopki mailowej HTML',
               topImageAlt: 'Darmowy generator stopki mailowej HTML Arteon',
-              topImageSrc: '/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp',
+              topImageSrc: '/assets/tools/free-email-signature-generator/darmowy-generator-stopki-mailowej-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Zbuduj profesjonalny podpis e-mail w kilka minut. Wpisz dane, wybierz kolory i skopiuj gotowy kod HTML do Gmaila, Outlooka i innych klientów pocztowych.</p>
@@ -349,7 +349,7 @@ export default function ToolsIndexPage() {
               icon: <RiQrCodeLine className="h-8 w-8" />,
               title: 'Darmowy generator kodów QR',
               topImageAlt: 'Darmowy generator kodów QR Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
+              topImageSrc: '/assets/tools/free-qr-code-generator/darmowy-generator-kodow-qr-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Stwórz kod QR do strony, wizytówki vCard, menu restauracji lub ulotki. Eksport PNG i SVG, bez logowania, bez limitu.</p>
@@ -375,7 +375,7 @@ export default function ToolsIndexPage() {
               icon: <RiContrast2Line className="h-8 w-8" />,
               title: 'Kontrast i czytelność kolorów',
               topImageAlt: 'Kontrast i czytelność kolorów Arteon',
-              topImageSrc: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
+              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/kontrast-i-czytelnosc-kolorow-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -394,7 +394,7 @@ export default function ToolsIndexPage() {
               icon: <RiPantoneLine className="h-8 w-8" />,
               title: 'Ekstraktor kolorów z obrazu',
               topImageAlt: 'Ekstraktor kolorów z obrazu Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
+              topImageSrc: '/assets/tools/image-color-extractor/ekstraktor-kolorow-z-obrazu-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Wgraj zdjęcie lub logo, a narzędzie wyciągnie dominujące kolory. Skopiuj kody HEX jednym kliknięciem i użyj w dowolnym miejscu.</p>
@@ -410,7 +410,7 @@ export default function ToolsIndexPage() {
               icon: <RiPaletteLine className="h-8 w-8" />,
               title: 'Generator palet kolorów',
               topImageAlt: 'Generator palet kolorów Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
+              topImageSrc: '/assets/tools/color-palette-generator/generator-palet-kolorow-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Wybierz jeden kolor bazowy i wygeneruj 9 palet kolorów: monochromatyczną, komplementarną, triadyczną, pastelową, ciemną i inne. Kopiuj kody HEX jednym kliknięciem.</p>
