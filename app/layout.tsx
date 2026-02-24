@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    siteName: 'Arteon',
+    siteName: 'arteonagency.pl',
     url: siteUrl,
     images: [
       {

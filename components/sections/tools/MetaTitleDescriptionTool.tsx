@@ -57,7 +57,7 @@ export default function MetaTitleDescriptionTool() {
   const t = ui[locale];
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [url, setUrl] = useState(locale === 'pl' ? 'www.twojadomena.pl/podstrona' : locale === 'de' ? 'www.ihredomain.de/seite' : 'www.yourdomain.com/page');
+  const [url, setUrl] = useState('arteonagency.pl/podstrona');
 
   const titleAnalysis = useMemo(() => analyzeTitle(title, t), [title, t]);
   const descriptionAnalysis = useMemo(() => analyzeDescription(description, t), [description, t]);
@@ -116,10 +116,38 @@ export default function MetaTitleDescriptionTool() {
             <ToolHelper>{t.previewHelper}</ToolHelper>
           </div>
 
-          <div className="rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-sm shadow-inner">
-            <p className="text-mid truncate text-[13px]!">{url || t.urlPlaceholder}</p>
-            <p className="text-mid mt-1 line-clamp-2 text-[18px]! font-normal">{previewTitle}</p>
-            <p className="text-light mt-1 line-clamp-3 text-[13px]! leading-snug">{previewDescription}</p>
+          <div className="rounded-2xl border border-neutral-200 bg-white p-4 text-sm shadow-inner">
+            <div className="flex gap-3">
+              {/* Favicon w kole z ramką - osobna kolumna */}
+              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border border-neutral-300 bg-white p-1">
+                <img src="/favicon-32x32.png" alt="Arteon" className="h-8 w-8 rounded-sm" />
+              </div>
+
+              {/* Nazwa strony, URL i kropki - środkowa kolumna */}
+              <div className="min-w-0 flex-1">
+                {/* Nazwa strony nad linkiem */}
+                <p className="text-xs text-neutral-600">Arteon</p>
+
+                {/* URL z 3 kropkami */}
+                <div className="flex items-center gap-1">
+                  <p className="text-mid truncate text-[13px]!">{url || t.urlPlaceholder}</p>
+                  <div className="ml-3 flex flex-col gap-0.5">
+                    <div className="h-0.5 w-0.5 rounded-full bg-neutral-500"></div>
+                    <div className="h-0.5 w-0.5 rounded-full bg-neutral-500"></div>
+                    <div className="h-0.5 w-0.5 rounded-full bg-neutral-500"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Tytuł i opis - osobny div bez pustej przestrzeni */}
+            <div className="mt-2">
+              {/* Tytuł - niebieski i grubszy */}
+              <p className="line-clamp-2 text-[22px]! leading-tight font-[500]! text-blue-900">{previewTitle}</p>
+
+              {/* Opis - większy i pogrubiony */}
+              <p className="mt-1 line-clamp-3 text-[14px]! leading-snug font-medium text-neutral-700">{previewDescription}</p>
+            </div>
           </div>
         </ToolSection>
       </div>
