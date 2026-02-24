@@ -60,6 +60,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/en/about',
     contactHref: '/en/contact',
     privacyHref: '/en/privacy-policy',
+    termsHref: '/en/terms-of-service',
   },
   de: {
     lang: 'de',
@@ -71,6 +72,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/de/ueber-uns',
     contactHref: '/de/kontakt',
     privacyHref: '/de/datenschutzrichtlinie',
+    termsHref: '/de/nutzungsbedingungen',
   },
   es: {
     lang: 'es',
@@ -82,6 +84,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/es/sobre-nosotros',
     contactHref: '/es/contacto',
     privacyHref: '/es/politica-de-privacidad',
+    termsHref: '/es/terminos-de-servicio',
   },
   fr: {
     lang: 'fr',
@@ -93,6 +96,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/fr/a-propos',
     contactHref: '/fr/contact',
     privacyHref: '/fr/politique-de-confidentialite',
+    termsHref: '/fr/conditions-utilisation',
   },
   pt: {
     lang: 'pt',
@@ -104,6 +108,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/pt/sobre-nos',
     contactHref: '/pt/contacto',
     privacyHref: '/pt/politica-de-privacidade',
+    termsHref: '/pt/termos-de-servico',
   },
   it: {
     lang: 'it',
@@ -115,6 +120,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/it/chi-siamo',
     contactHref: '/it/contatto',
     privacyHref: '/it/informativa-sulla-privacy',
+    termsHref: '/it/termini-di-servizio',
   },
   ro: {
     lang: 'ro',
@@ -126,6 +132,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/ro/despre-noi',
     contactHref: '/ro/contact',
     privacyHref: '/ro/politica-de-confidentialitate',
+    termsHref: '/ro/termeni-si-conditii',
   },
   nl: {
     lang: 'nl',
@@ -137,6 +144,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/nl/over-ons',
     contactHref: '/nl/contact',
     privacyHref: '/nl/privacybeleid',
+    termsHref: '/nl/gebruiksvoorwaarden',
   },
   hu: {
     lang: 'hu',
@@ -148,6 +156,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/hu/rolunk',
     contactHref: '/hu/kapcsolat',
     privacyHref: '/hu/adatvedelmi-iranyelvek',
+    termsHref: '/hu/felhasznalasi-feltetelek',
   },
   cs: {
     lang: 'cs',
@@ -159,6 +168,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/cs/o-nas',
     contactHref: '/cs/kontakt',
     privacyHref: '/cs/zasady-ochrany-soukromi',
+    termsHref: '/cs/podminky-pouzivani',
   },
   sv: {
     lang: 'sv',
@@ -170,6 +180,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/sv/om-oss',
     contactHref: '/sv/kontakt',
     privacyHref: '/sv/integritetspolicy',
+    termsHref: '/sv/anvandarvillkor',
   },
   da: {
     lang: 'da',
@@ -181,6 +192,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/da/om-os',
     contactHref: '/da/kontakt',
     privacyHref: '/da/privatlivspolitik',
+    termsHref: '/da/brugsvilkar',
   },
   no: {
     lang: 'no',
@@ -192,6 +204,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/no/om-oss',
     contactHref: '/no/kontakt',
     privacyHref: '/no/personvernpolicy',
+    termsHref: '/no/bruksvilkar',
   },
   fi: {
     lang: 'fi',
@@ -203,6 +216,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/fi/tietoa-meista',
     contactHref: '/fi/yhteystiedot',
     privacyHref: '/fi/tietosuojakaytanto',
+    termsHref: '/fi/kayttoehdot',
   },
   el: {
     lang: 'el',
@@ -214,6 +228,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/el/sxetika-me-emas',
     contactHref: '/el/epikoinonia',
     privacyHref: '/el/politiki-aporritou',
+    termsHref: '/el/oroi-chrisis',
   },
 };
 

@@ -1,0 +1,79 @@
+{
+  "slug": "nutzungsbedingungen",
+  "metadata": {
+    "title": "Nutzungsbedingungen – Arteon Kostenlose Online-Tools",
+    "description": "Nutzungsbedingungen für die kostenlosen Online-Tools von Arteon. Erfahren Sie mehr über Nutzungsbedingungen, geistiges Eigentum, Haftungsausschlüsse und Haftung."
+  },
+  "hero": {
+    "title": "Nutzungsbedingungen",
+    "description": "Nutzungsbedingungen für die kostenlosen Online-Tools von Arteon"
+  },
+  "version": "24.02.2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "1. Einleitung",
+      "content": "Diese Nutzungsbedingungen regeln Ihre Nutzung der kostenlosen Online-Tools von Arteon auf arteonagency.pl. Durch die Nutzung unserer Tools stimmen Sie diesen Bedingungen zu."
+    },
+    {
+      "id": "provider",
+      "title": "2. Dienstanbieter",
+      "content": "Unternehmen: Arteon | Registrierte Adresse: Zagacie, ul. Jasminowa 36, 32-070, Polen | Steuer-ID (NIP): 9442284430 | Kontakt: kontakt@arteonagency.pl"
+    },
+    {
+      "id": "scope",
+      "title": "3. Leistungsumfang",
+      "content": "Wir bieten kostenlose browserbasierte Tools für Bildverarbeitung (WebP-Konverter, Bildeditor, Favicon-Generator), Farbanalyse (Kontrastprüfer, Palettengenerator, Farbextraktor), Textdienstprogramme (Wortzähler, Meta-Tag-Prüfer) und Kommunikationstools (E-Mail-Signatur-Generator, QR-Code-Generator). Alle Tools laufen vollständig in Ihrem Browser. Ihre Dateien werden lokal verarbeitet und niemals auf unsere Server hochgeladen."
+    },
+    {
+      "id": "account",
+      "title": "4. Kein Konto erforderlich",
+      "content": "Unsere Tools erfordern keine Registrierung, Anmeldung oder Zahlung. Sie können sie sofort ohne Kontoerstellung nutzen."
+    },
+    {
+      "id": "ip",
+      "title": "5. Geistiges Eigentum",
+      "content": "Die Tools und das Website-Design sind Eigentum von Arteon. Inhalte, die Sie mit unseren Tools erstellen, gehören Ihnen. Sie dürfen die Ergebnisse für jeden Zweck verwenden, einschließlich kommerzieller Nutzung."
+    },
+    {
+      "id": "disclaimer",
+      "title": "6. Gewährleistungsausschluss",
+      "content": "Unsere Tools werden ohne Gewährleistung jeglicher Art bereitgestellt. Wir garantieren keine ununterbrochene Verfügbarkeit, fehlerfreien Betrieb oder Eignung für einen bestimmten Zweck."
+    },
+    {
+      "id": "liability",
+      "title": "7. Haftungsbeschränkung",
+      "content": "Arteon haftet nicht für Schäden, die aus der Nutzung unserer Tools entstehen, einschließlich, aber nicht beschränkt auf Datenverlust, Geschäftsunterbrechung oder indirekte Schäden."
+    },
+    {
+      "id": "advertising",
+      "title": "8. Werbung",
+      "content": "Wir zeigen Werbung über Google AdSense an, um Entwicklungs- und Hosting-Kosten zu decken. Die Anzeige von Werbung erfordert Ihre Zustimmung über das Cookie-Banner."
+    },
+    {
+      "id": "privacy",
+      "title": "9. Datenschutz",
+      "content": "Ihre Privatsphäre ist uns wichtig. Bitte lesen Sie unsere Datenschutzrichtlinie für Details zur Datenerfassung und -verarbeitung."
+    },
+    {
+      "id": "changes",
+      "title": "10. Änderungen der Bedingungen",
+      "content": "Wir können diese Bedingungen jederzeit aktualisieren. Die aktuelle Version ist immer auf dieser Seite verfügbar. Die fortgesetzte Nutzung unserer Tools bedeutet die Annahme aller Änderungen."
+    },
+    {
+      "id": "law",
+      "title": "11. Anwendbares Recht",
+      "content": "Diese Bedingungen unterliegen polnischem Recht. Streitigkeiten werden von den zuständigen Gerichten in Polen entschieden."
+    },
+    {
+      "id": "contact",
+      "title": "12. Kontakt",
+      "content": "Bei Fragen zu diesen Bedingungen kontaktieren Sie uns unter kontakt@arteonagency.pl."
+    }
+  ],
+  "cta": {
+    "title": "Zurück zu den Tools",
+    "description": "10 kostenlose Online-Tools für die Arbeit mit Bildern, Text und Farben",
+    "btnOne": "Tools"
+  }
+}

@@ -55,6 +55,11 @@
       "key": "privacy",
       "href": "/da/privatlivspolitik",
       "label": "Privatlivspolitik"
+    },
+    {
+      "key": "terms",
+      "href": "/da/brugsvilkar",
+      "label": "Brugsvilkar"
     }
   ],
   "breadcrumbs": {

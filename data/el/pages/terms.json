@@ -1,0 +1,79 @@
+{
+  "slug": "oroi-chrisis",
+  "metadata": {
+    "title": "Oroi Chrisis – Arteon Dorean Diadiktyaka Ergaleia",
+    "description": "Oroi chrisis gia ta dorean diadiktyaka ergaleia tis Arteon. Mathete gia tous orous chrisis, ta pneumatika dikaiomata, tis apopoiiseis kai tin euthyni."
+  },
+  "hero": {
+    "title": "Oroi Chrisis",
+    "description": "Oroi chrisis gia ta dorean diadiktyaka ergaleia tis Arteon"
+  },
+  "version": "24.02.2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "1. Eisagogi",
+      "content": "Autoi oi Oroi Chrisis diepoyn ti chrisi ton dorean diadiktyakon ergaleion pou parechontai apo tin Arteon sto arteonagency.pl. Chrisimopoiontas ta ergaleia mas, symfonite me autous tous orous."
+    },
+    {
+      "id": "provider",
+      "title": "2. Parochos Ypiresion",
+      "content": "Etaireia: Arteon | Katagegrammeni diefthinsi: Zagacie, ul. Jasminowa 36, 32-070, Polonia | NIP: 9442284430 | Epikoinonia: kontakt@arteonagency.pl"
+    },
+    {
+      "id": "scope",
+      "title": "3. Evros Ypiresion",
+      "content": "Parechoume dorean ergaleia vasismena se programma periigisis gia epexergasia eikonon (metatropeas WebP, epexergastis eikonon, dimiourgia favicon), analysi chromaton (elegchos kontrast, dimiourgia paletas, exagogi chromaton), voithitika keimenou (metriti lexeon, elegchos meta tags) kai ergaleia epikoinonias (dimiourgia ypografis email, dimiourgia kodikou QR). Ola ta ergaleia ektelountai entolos ston programma periigisis sas. Ta archeia sas epexergazontai topika kai den fortononai pote stous exypiretes mas."
+    },
+    {
+      "id": "account",
+      "title": "4. Den Apaiteitai Logariasmos",
+      "content": "Ta ergaleia mas den apaitoun eggraphi, syndesi i pliromi. Mporite na ta chrisimopoiisete amesos choris na dimiourgisete logariasmo."
+    },
+    {
+      "id": "ip",
+      "title": "5. Pneumatika Dikaiomata",
+      "content": "Ta ergaleia kai o schediasmos tou istoselidas einai idioktisia tis Arteon. To periechomeno pou dimiourgite chrisimopoiontas ta ergaleia mas sas anikei. Mporite na chrisimopoiisete ta apotelesmata gia opoiondipote skopo, symperilamvanomenou tou emporikou."
+    },
+    {
+      "id": "disclaimer",
+      "title": "6. Apopoiisi Eggyiseon",
+      "content": "Ta ergaleia mas parechontai os echoun choris eggyiseis opoioudipote eidous. Den eggyomaste adialeipti diathesimotita, leitourgia choris sfalmata i katallilotita gia sygkekrimeno skopo."
+    },
+    {
+      "id": "liability",
+      "title": "7. Periorismoi Euthynis",
+      "content": "I Arteon den einai ypeuthyni gia opoiesdipote zimies pou prokyptyoun apo ti chrisi ton ergaleion mas, symperilamvanomenis alla ochi perioristika tis apoleia dedomenon, diakopis ergasion i opoiondhpote emeson zimion."
+    },
+    {
+      "id": "advertising",
+      "title": "8. Diafimisi",
+      "content": "Emfanizoume diafimiseis meso Google AdSense gia na kalypsouyme ta exoda anaptyxis kai filoxenias. I emfanisi diafimiseon apaitei ti synainesi sas meso tou banner cookies."
+    },
+    {
+      "id": "privacy",
+      "title": "9. Idiotikoita",
+      "content": "I idiotikoita sas einai simantiki gia emas. Parakalume diavasete tin Politiki Idiotikoitas mas gia leptomereies schetika me ti syllogi kai epexergasia dedomenon."
+    },
+    {
+      "id": "changes",
+      "title": "10. Allages stous Orous",
+      "content": "Mporoume na enimerososume autous tous orous opoiadipote stigmi. I trexousa ekdosi einai panta diathesimi se auti ti selida. I synechis chrisi ton ergaleion mas synista apodoxi opoiondhpote allagon."
+    },
+    {
+      "id": "law",
+      "title": "11. Efarmosteo Dikaio",
+      "content": "Autoi oi oroi diepontai apo to poloniko dikaio. Opoiesdipote diafores tha epilyontai apo ta armoda dikastiria stin Polonia."
+    },
+    {
+      "id": "contact",
+      "title": "12. Epikoinonia",
+      "content": "Gia erotiseis schetika me autous tous orous, epikoinoniste mazi mas sto kontakt@arteonagency.pl."
+    }
+  ],
+  "cta": {
+    "title": "Epistrofi sta ergaleia",
+    "description": "10 dorean diadiktyaka ergaleia gia ergasia me eikones, keimeno kai chromata",
+    "btnOne": "Ergaleia"
+  }
+}

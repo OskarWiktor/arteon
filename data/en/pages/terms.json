@@ -1,0 +1,79 @@
+{
+  "slug": "terms-of-service",
+  "metadata": {
+    "title": "Terms of Service – Arteon Free Online Tools",
+    "description": "Terms of service for Arteon free online tools. Learn about usage conditions, intellectual property, disclaimers, and liability for our browser-based tools."
+  },
+  "hero": {
+    "title": "Terms of Service",
+    "description": "Usage conditions for Arteon free online tools"
+  },
+  "version": "24.02.2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "1. Introduction",
+      "content": "These Terms of Service govern your use of the free online tools provided by Arteon at arteonagency.pl. By using our tools, you agree to these terms."
+    },
+    {
+      "id": "provider",
+      "title": "2. Service Provider",
+      "content": "Company: Arteon | Registered address: Zagacie, ul. Jasminowa 36, 32-070, Poland | Tax ID (NIP): 9442284430 | Contact: kontakt@arteonagency.pl"
+    },
+    {
+      "id": "scope",
+      "title": "3. Scope of Services",
+      "content": "We provide free browser-based tools for image processing (WebP converter, image editor, favicon generator), color analysis (contrast checker, palette generator, color extractor), text utilities (word counter, meta tag checker), and communication tools (email signature generator, QR code generator). All tools run entirely in your browser. Your files are processed locally and are never uploaded to our servers."
+    },
+    {
+      "id": "account",
+      "title": "4. No Account Required",
+      "content": "Our tools do not require registration, login, or payment. You can use them immediately without creating an account."
+    },
+    {
+      "id": "ip",
+      "title": "5. Intellectual Property",
+      "content": "The tools and website design are owned by Arteon. Content you create using our tools belongs to you. You may use the output for any purpose, including commercial use."
+    },
+    {
+      "id": "disclaimer",
+      "title": "6. Disclaimer of Warranties",
+      "content": "Our tools are provided as is without warranties of any kind. We do not guarantee uninterrupted availability, error-free operation, or fitness for a particular purpose."
+    },
+    {
+      "id": "liability",
+      "title": "7. Limitation of Liability",
+      "content": "Arteon is not liable for any damages arising from the use of our tools, including but not limited to data loss, business interruption, or any indirect damages."
+    },
+    {
+      "id": "advertising",
+      "title": "8. Advertising",
+      "content": "We display advertisements via Google AdSense to cover development and hosting costs. Ad display requires your consent via the cookie banner."
+    },
+    {
+      "id": "privacy",
+      "title": "9. Privacy",
+      "content": "Your privacy is important to us. Please review our Privacy Policy for details on data collection and processing."
+    },
+    {
+      "id": "changes",
+      "title": "10. Changes to Terms",
+      "content": "We may update these terms at any time. The current version is always available on this page. Continued use of our tools constitutes acceptance of any changes."
+    },
+    {
+      "id": "law",
+      "title": "11. Governing Law",
+      "content": "These terms are governed by Polish law. Any disputes shall be resolved by the competent courts in Poland."
+    },
+    {
+      "id": "contact",
+      "title": "12. Contact",
+      "content": "For questions about these terms, contact us at kontakt@arteonagency.pl."
+    }
+  ],
+  "cta": {
+    "title": "Back to tools",
+    "description": "10 free online tools for working with images, text, and colors",
+    "btnOne": "Tools"
+  }
+}

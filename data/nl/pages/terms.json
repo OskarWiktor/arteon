@@ -1,0 +1,79 @@
+{
+  "slug": "gebruiksvoorwaarden",
+  "metadata": {
+    "title": "Gebruiksvoorwaarden – Arteon Gratis Online Tools",
+    "description": "Gebruiksvoorwaarden voor de gratis online tools van Arteon. Lees meer over gebruiksvoorwaarden, intellectueel eigendom, disclaimers en aansprakelijkheid."
+  },
+  "hero": {
+    "title": "Gebruiksvoorwaarden",
+    "description": "Gebruiksvoorwaarden voor de gratis online tools van Arteon"
+  },
+  "version": "24.02.2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "1. Inleiding",
+      "content": "Deze Gebruiksvoorwaarden regelen uw gebruik van de gratis online tools die door Arteon worden aangeboden op arteonagency.pl. Door onze tools te gebruiken, gaat u akkoord met deze voorwaarden."
+    },
+    {
+      "id": "provider",
+      "title": "2. Dienstverlener",
+      "content": "Bedrijf: Arteon | Geregistreerd adres: Zagacie, ul. Jasminowa 36, 32-070, Polen | NIP: 9442284430 | Contact: kontakt@arteonagency.pl"
+    },
+    {
+      "id": "scope",
+      "title": "3. Omvang van Diensten",
+      "content": "Wij bieden gratis browsergebaseerde tools voor beeldverwerking (WebP-converter, afbeeldingseditor, favicon-generator), kleuranalyse (contrastchecker, palettengenerator, kleurextractor), teksthulpmiddelen (woordenteller, meta-tag checker) en communicatietools (e-mailhandtekening generator, QR-code generator). Alle tools draaien volledig in uw browser. Uw bestanden worden lokaal verwerkt en worden nooit naar onze servers geupload."
+    },
+    {
+      "id": "account",
+      "title": "4. Geen Account Vereist",
+      "content": "Onze tools vereisen geen registratie, inloggen of betaling. U kunt ze direct gebruiken zonder een account aan te maken."
+    },
+    {
+      "id": "ip",
+      "title": "5. Intellectueel Eigendom",
+      "content": "De tools en het websiteontwerp zijn eigendom van Arteon. Inhoud die u maakt met onze tools behoort aan u toe. U mag de resultaten voor elk doel gebruiken, inclusief commercieel gebruik."
+    },
+    {
+      "id": "disclaimer",
+      "title": "6. Uitsluiting van Garanties",
+      "content": "Onze tools worden geleverd zoals ze zijn zonder enige garantie. Wij garanderen geen ononderbroken beschikbaarheid, foutloze werking of geschiktheid voor een bepaald doel."
+    },
+    {
+      "id": "liability",
+      "title": "7. Beperking van Aansprakelijkheid",
+      "content": "Arteon is niet aansprakelijk voor schade die voortvloeit uit het gebruik van onze tools, inclusief maar niet beperkt tot gegevensverlies, bedrijfsonderbreking of indirecte schade."
+    },
+    {
+      "id": "advertising",
+      "title": "8. Advertenties",
+      "content": "Wij tonen advertenties via Google AdSense om ontwikkelings- en hostingkosten te dekken. Het tonen van advertenties vereist uw toestemming via de cookiebanner."
+    },
+    {
+      "id": "privacy",
+      "title": "9. Privacy",
+      "content": "Uw privacy is belangrijk voor ons. Raadpleeg ons Privacybeleid voor details over gegevensverzameling en -verwerking."
+    },
+    {
+      "id": "changes",
+      "title": "10. Wijzigingen in Voorwaarden",
+      "content": "Wij kunnen deze voorwaarden op elk moment bijwerken. De huidige versie is altijd beschikbaar op deze pagina. Voortgezet gebruik van onze tools betekent acceptatie van eventuele wijzigingen."
+    },
+    {
+      "id": "law",
+      "title": "11. Toepasselijk Recht",
+      "content": "Deze voorwaarden vallen onder Pools recht. Geschillen worden beslecht door de bevoegde rechtbanken in Polen."
+    },
+    {
+      "id": "contact",
+      "title": "12. Contact",
+      "content": "Voor vragen over deze voorwaarden kunt u contact met ons opnemen via kontakt@arteonagency.pl."
+    }
+  ],
+  "cta": {
+    "title": "Terug naar tools",
+    "description": "10 gratis online tools voor het werken met afbeeldingen, tekst en kleuren",
+    "btnOne": "Tools"
+  }
+}

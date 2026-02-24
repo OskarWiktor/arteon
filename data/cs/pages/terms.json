@@ -1,0 +1,79 @@
+{
+  "slug": "podminky-pouzivani",
+  "metadata": {
+    "title": "Podminky Pouzivani – Arteon Bezplatne Online Nastroje",
+    "description": "Podminky pouzivani pro bezplatne online nastroje Arteon. Zjistete vice o podminkach pouzivani, dusevnim vlastnictvi, vylouceni odpovednosti a zodpovednosti."
+  },
+  "hero": {
+    "title": "Podminky Pouzivani",
+    "description": "Podminky pouzivani bezplatnych online nastroju Arteon"
+  },
+  "version": "24.02.2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "1. Uvod",
+      "content": "Tyto Podminky Pouzivani upravuji vase pouzivani bezplatnych online nastroju poskytovanych spolecnosti Arteon na arteonagency.pl. Pouzivanim nasich nastroju souhlasite s temito podminkami."
+    },
+    {
+      "id": "provider",
+      "title": "2. Poskytovatel Sluzeb",
+      "content": "Spolecnost: Arteon | Registrovana adresa: Zagacie, ul. Jasminowa 36, 32-070, Polsko | NIP: 9442284430 | Kontakt: kontakt@arteonagency.pl"
+    },
+    {
+      "id": "scope",
+      "title": "3. Rozsah Sluzeb",
+      "content": "Poskytujeme bezplatne nastroje zalozene na prohlizeci pro zpracovani obrazu (WebP konvertor, editor obrazku, generator favicon), analyzu barev (kontrola kontrastu, generator palet, extraktor barev), textove nastroje (pocitadlo slov, kontrola meta tagu) a komunikacni nastroje (generator e-mailoveho podpisu, generator QR kodu). Vsechny nastroje bezi zcela ve vasem prohlizeci. Vase soubory jsou zpracovavany lokalne a nikdy nejsou nahravany na nase servery."
+    },
+    {
+      "id": "account",
+      "title": "4. Neni Potreba Ucet",
+      "content": "Nase nastroje nevyzaduji registraci, prihlaseni ani platbu. Muzete je pouzivat okamzite bez vytvareni uctu."
+    },
+    {
+      "id": "ip",
+      "title": "5. Dusevni Vlastnictvi",
+      "content": "Nastroje a design webu jsou vlastnictvim Arteon. Obsah, ktery vytvorite pomoci nasich nastroju, patri vam. Vysledky muzete pouzit pro jakykoli ucel, vcetne komercniho vyuziti."
+    },
+    {
+      "id": "disclaimer",
+      "title": "6. Vylouceni Zaruk",
+      "content": "Nase nastroje jsou poskytovany tak, jak jsou, bez zaruk jakehokoliv druhu. Nezarucujeme nepretrzitou dostupnost, bezchybny provoz ani vhodnost pro konkretni ucel."
+    },
+    {
+      "id": "liability",
+      "title": "7. Omezeni Odpovednosti",
+      "content": "Arteon neni odpovedny za zadne skody vznikle pouzivanim nasich nastroju, vcetne, ale nejen, ztraty dat, preruseni podnikani nebo neprimych skod."
+    },
+    {
+      "id": "advertising",
+      "title": "8. Reklama",
+      "content": "Zobrazujeme reklamy prostrednictvim Google AdSense k pokryti nakladu na vyvoj a hosting. Zobrazeni reklam vyzaduje vas souhlas prostrednictvim cookie banneru."
+    },
+    {
+      "id": "privacy",
+      "title": "9. Soukromi",
+      "content": "Vase soukromi je pro nas dulezite. Prostudujte si nase Zasady ochrany soukromi pro podrobnosti o shromazdovani a zpracovani dat."
+    },
+    {
+      "id": "changes",
+      "title": "10. Zmeny Podminek",
+      "content": "Tyto podminky muzeme kdykoliv aktualizovat. Aktualni verze je vzdy k dispozici na teto strance. Pokracovani v pouzivani nasich nastroju znamena prijeti vsech zmen."
+    },
+    {
+      "id": "law",
+      "title": "11. Rozhodne Pravo",
+      "content": "Tyto podminky se ridi polskym pravem. Veskere spory budou reseny prislusnymi soudy v Polsku."
+    },
+    {
+      "id": "contact",
+      "title": "12. Kontakt",
+      "content": "S dotazy ohledne techto podminek nas kontaktujte na kontakt@arteonagency.pl."
+    }
+  ],
+  "cta": {
+    "title": "Zpet k nastrojum",
+    "description": "10 bezplatnych online nastroju pro praci s obrazky, textem a barvami",
+    "btnOne": "Nastroje"
+  }
+}

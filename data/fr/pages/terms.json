@@ -1,0 +1,79 @@
+{
+  "slug": "conditions-utilisation",
+  "metadata": {
+    "title": "Conditions d'Utilisation – Outils en Ligne Gratuits Arteon",
+    "description": "Conditions d'utilisation des outils en ligne gratuits d'Arteon. Decouvrez les conditions d'utilisation, la propriete intellectuelle, les avertissements et la responsabilite."
+  },
+  "hero": {
+    "title": "Conditions d'Utilisation",
+    "description": "Conditions d'utilisation des outils en ligne gratuits d'Arteon"
+  },
+  "version": "24.02.2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "1. Introduction",
+      "content": "Ces Conditions d'Utilisation regissent votre utilisation des outils en ligne gratuits fournis par Arteon sur arteonagency.pl. En utilisant nos outils, vous acceptez ces conditions."
+    },
+    {
+      "id": "provider",
+      "title": "2. Fournisseur de Services",
+      "content": "Entreprise: Arteon | Adresse enregistree: Zagacie, ul. Jasminowa 36, 32-070, Pologne | NIP: 9442284430 | Contact: kontakt@arteonagency.pl"
+    },
+    {
+      "id": "scope",
+      "title": "3. Etendue des Services",
+      "content": "Nous fournissons des outils gratuits bases sur navigateur pour le traitement d'images (convertisseur WebP, editeur d'images, generateur de favicon), l'analyse des couleurs (verificateur de contraste, generateur de palettes, extracteur de couleurs), les utilitaires de texte (compteur de mots, verificateur de balises meta) et les outils de communication (generateur de signature email, generateur de codes QR). Tous les outils fonctionnent entierement dans votre navigateur. Vos fichiers sont traites localement et ne sont jamais telecharges sur nos serveurs."
+    },
+    {
+      "id": "account",
+      "title": "4. Aucun Compte Requis",
+      "content": "Nos outils ne necessitent pas d'inscription, de connexion ou de paiement. Vous pouvez les utiliser immediatement sans creer de compte."
+    },
+    {
+      "id": "ip",
+      "title": "5. Propriete Intellectuelle",
+      "content": "Les outils et le design du site web sont la propriete d'Arteon. Le contenu que vous creez avec nos outils vous appartient. Vous pouvez utiliser les resultats a toute fin, y compris commerciale."
+    },
+    {
+      "id": "disclaimer",
+      "title": "6. Exclusion de Garanties",
+      "content": "Nos outils sont fournis tels quels sans garantie d'aucune sorte. Nous ne garantissons pas une disponibilite ininterrompue, un fonctionnement sans erreur ou une adequation a un usage particulier."
+    },
+    {
+      "id": "liability",
+      "title": "7. Limitation de Responsabilite",
+      "content": "Arteon n'est pas responsable des dommages resultant de l'utilisation de nos outils, y compris mais sans s'y limiter, la perte de donnees, l'interruption d'activite ou tout dommage indirect."
+    },
+    {
+      "id": "advertising",
+      "title": "8. Publicite",
+      "content": "Nous affichons des publicites via Google AdSense pour couvrir les couts de developpement et d'hebergement. L'affichage des publicites necessite votre consentement via la banniere de cookies."
+    },
+    {
+      "id": "privacy",
+      "title": "9. Confidentialite",
+      "content": "Votre vie privee est importante pour nous. Veuillez consulter notre Politique de Confidentialite pour plus de details sur la collecte et le traitement des donnees."
+    },
+    {
+      "id": "changes",
+      "title": "10. Modifications des Conditions",
+      "content": "Nous pouvons mettre a jour ces conditions a tout moment. La version actuelle est toujours disponible sur cette page. L'utilisation continue de nos outils constitue l'acceptation de toute modification."
+    },
+    {
+      "id": "law",
+      "title": "11. Droit Applicable",
+      "content": "Ces conditions sont regies par le droit polonais. Tout litige sera resolu par les tribunaux competents en Pologne."
+    },
+    {
+      "id": "contact",
+      "title": "12. Contact",
+      "content": "Pour toute question concernant ces conditions, contactez-nous a kontakt@arteonagency.pl."
+    }
+  ],
+  "cta": {
+    "title": "Retour aux outils",
+    "description": "10 outils en ligne gratuits pour travailler avec des images, du texte et des couleurs",
+    "btnOne": "Outils"
+  }
+}

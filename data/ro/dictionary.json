@@ -54,7 +54,12 @@
     {
       "key": "privacy",
       "href": "/ro/politica-de-confidentialitate",
-      "label": "Politica de confidențialitate"
+      "label": "Politica de confidentialitate"
+    },
+    {
+      "key": "terms",
+      "href": "/ro/termeni-si-conditii",
+      "label": "Termeni si conditii"
     }
   ],
   "breadcrumbs": {

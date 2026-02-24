@@ -55,6 +55,11 @@
       "key": "privacy",
       "href": "/nl/privacybeleid",
       "label": "Privacybeleid"
+    },
+    {
+      "key": "terms",
+      "href": "/nl/gebruiksvoorwaarden",
+      "label": "Gebruiksvoorwaarden"
     }
   ],
   "breadcrumbs": {

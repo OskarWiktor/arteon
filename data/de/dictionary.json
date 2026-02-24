@@ -55,6 +55,11 @@
       "key": "privacy",
       "href": "/de/datenschutzrichtlinie",
       "label": "Datenschutzrichtlinie"
+    },
+    {
+      "key": "terms",
+      "href": "/de/nutzungsbedingungen",
+      "label": "Nutzungsbedingungen"
     }
   ],
   "breadcrumbs": {

@@ -1,0 +1,79 @@
+{
+  "slug": "bruksvilkar",
+  "metadata": {
+    "title": "Bruksvilkar – Arteon Gratis Nettverktoy",
+    "description": "Bruksvilkar for Arteons gratis nettverktoy. Les om bruksvilkar, immaterielle rettigheter, ansvarsfraskrivelser og ansvar."
+  },
+  "hero": {
+    "title": "Bruksvilkar",
+    "description": "Bruksvilkar for Arteons gratis nettverktoy"
+  },
+  "version": "24.02.2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "1. Innledning",
+      "content": "Disse Bruksvilkarene regulerer din bruk av de gratis nettverktoyene som tilbys av Arteon pa arteonagency.pl. Ved a bruke vare verktoy godtar du disse vilkarene."
+    },
+    {
+      "id": "provider",
+      "title": "2. Tjenesteleverandor",
+      "content": "Selskap: Arteon | Registrert adresse: Zagacie, ul. Jasminowa 36, 32-070, Polen | NIP: 9442284430 | Kontakt: kontakt@arteonagency.pl"
+    },
+    {
+      "id": "scope",
+      "title": "3. Tjenestenes Omfang",
+      "content": "Vi tilbyr gratis nettleserbaserte verktoy for bildebehandling (WebP-konverterer, bilderedigerer, favicon-generator), fargeanalyse (kontrastsjekker, palettgenerator, fargeutrekker), tekstverktoy (ordteller, meta-tag-sjekker) og kommunikasjonsverktoy (e-postsignatur-generator, QR-kode-generator). Alle verktoy kjorer helt i nettleseren din. Filene dine behandles lokalt og lastes aldri opp til vare servere."
+    },
+    {
+      "id": "account",
+      "title": "4. Ingen Konto Nodvendig",
+      "content": "Vare verktoy krever ikke registrering, innlogging eller betaling. Du kan bruke dem umiddelbart uten a opprette en konto."
+    },
+    {
+      "id": "ip",
+      "title": "5. Immaterielle Rettigheter",
+      "content": "Verktoyene og nettstedets design eies av Arteon. Innhold du oppretter med vare verktoy tilhorer deg. Du kan bruke resultatene til ethvert formal, inkludert kommersiell bruk."
+    },
+    {
+      "id": "disclaimer",
+      "title": "6. Garantifraskrivelse",
+      "content": "Vare verktoy leveres som de er uten garantier av noe slag. Vi garanterer ikke uavbrutt tilgjengelighet, feilfri drift eller egnethet for et bestemt formal."
+    },
+    {
+      "id": "liability",
+      "title": "7. Ansvarsbegrensning",
+      "content": "Arteon er ikke ansvarlig for skader som oppstar fra bruken av vare verktoy, inkludert men ikke begrenset til datatap, forretningsavbrudd eller indirekte skader."
+    },
+    {
+      "id": "advertising",
+      "title": "8. Reklame",
+      "content": "Vi viser annonser via Google AdSense for a dekke utviklings- og hostingkostnader. Visning av annonser krever ditt samtykke via cookie-banneret."
+    },
+    {
+      "id": "privacy",
+      "title": "9. Personvern",
+      "content": "Ditt personvern er viktig for oss. Les var Personvernpolicy for detaljer om datainnsamling og -behandling."
+    },
+    {
+      "id": "changes",
+      "title": "10. Endringer i Vilkar",
+      "content": "Vi kan oppdatere disse vilkarene nar som helst. Den gjeldende versjonen er alltid tilgjengelig pa denne siden. Fortsatt bruk av vare verktoy utgjor aksept av eventuelle endringer."
+    },
+    {
+      "id": "law",
+      "title": "11. Gjeldende Lov",
+      "content": "Disse vilkarene er underlagt polsk lov. Eventuelle tvister skal avgores av kompetente domstoler i Polen."
+    },
+    {
+      "id": "contact",
+      "title": "12. Kontakt",
+      "content": "For sporsmal om disse vilkarene, kontakt oss pa kontakt@arteonagency.pl."
+    }
+  ],
+  "cta": {
+    "title": "Tilbake til verktoyene",
+    "description": "10 gratis nettverktoy for a jobbe med bilder, tekst og farger",
+    "btnOne": "Verktoy"
+  }
+}

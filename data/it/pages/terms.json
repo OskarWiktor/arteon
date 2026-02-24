@@ -1,0 +1,79 @@
+{
+  "slug": "termini-di-servizio",
+  "metadata": {
+    "title": "Termini di Servizio – Strumenti Online Gratuiti Arteon",
+    "description": "Termini di servizio per gli strumenti online gratuiti di Arteon. Scopri le condizioni d'uso, la proprieta intellettuale, le esclusioni e la responsabilita."
+  },
+  "hero": {
+    "title": "Termini di Servizio",
+    "description": "Condizioni d'uso degli strumenti online gratuiti di Arteon"
+  },
+  "version": "24.02.2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "1. Introduzione",
+      "content": "Questi Termini di Servizio regolano l'utilizzo degli strumenti online gratuiti forniti da Arteon su arteonagency.pl. Utilizzando i nostri strumenti, accetti questi termini."
+    },
+    {
+      "id": "provider",
+      "title": "2. Fornitore del Servizio",
+      "content": "Azienda: Arteon | Indirizzo registrato: Zagacie, ul. Jasminowa 36, 32-070, Polonia | NIP: 9442284430 | Contatto: kontakt@arteonagency.pl"
+    },
+    {
+      "id": "scope",
+      "title": "3. Ambito dei Servizi",
+      "content": "Forniamo strumenti gratuiti basati su browser per l'elaborazione delle immagini (convertitore WebP, editor di immagini, generatore di favicon), analisi dei colori (verificatore di contrasto, generatore di palette, estrattore di colori), utilita di testo (contatore di parole, verificatore di meta tag) e strumenti di comunicazione (generatore di firma email, generatore di codici QR). Tutti gli strumenti funzionano interamente nel tuo browser. I tuoi file vengono elaborati localmente e non vengono mai caricati sui nostri server."
+    },
+    {
+      "id": "account",
+      "title": "4. Nessun Account Richiesto",
+      "content": "I nostri strumenti non richiedono registrazione, accesso o pagamento. Puoi utilizzarli immediatamente senza creare un account."
+    },
+    {
+      "id": "ip",
+      "title": "5. Proprieta Intellettuale",
+      "content": "Gli strumenti e il design del sito web sono di proprieta di Arteon. I contenuti che crei utilizzando i nostri strumenti appartengono a te. Puoi utilizzare i risultati per qualsiasi scopo, incluso l'uso commerciale."
+    },
+    {
+      "id": "disclaimer",
+      "title": "6. Esclusione di Garanzie",
+      "content": "I nostri strumenti sono forniti cosi come sono senza garanzie di alcun tipo. Non garantiamo disponibilita ininterrotta, funzionamento senza errori o idoneita per uno scopo particolare."
+    },
+    {
+      "id": "liability",
+      "title": "7. Limitazione di Responsabilita",
+      "content": "Arteon non e responsabile per eventuali danni derivanti dall'uso dei nostri strumenti, inclusi ma non limitati a perdita di dati, interruzione dell'attivita o danni indiretti."
+    },
+    {
+      "id": "advertising",
+      "title": "8. Pubblicita",
+      "content": "Mostriamo pubblicita tramite Google AdSense per coprire i costi di sviluppo e hosting. La visualizzazione degli annunci richiede il tuo consenso tramite il banner dei cookie."
+    },
+    {
+      "id": "privacy",
+      "title": "9. Privacy",
+      "content": "La tua privacy e importante per noi. Consulta la nostra Informativa sulla Privacy per dettagli sulla raccolta e l'elaborazione dei dati."
+    },
+    {
+      "id": "changes",
+      "title": "10. Modifiche ai Termini",
+      "content": "Possiamo aggiornare questi termini in qualsiasi momento. La versione attuale e sempre disponibile su questa pagina. L'uso continuato dei nostri strumenti costituisce accettazione di eventuali modifiche."
+    },
+    {
+      "id": "law",
+      "title": "11. Legge Applicabile",
+      "content": "Questi termini sono regolati dalla legge polacca. Eventuali controversie saranno risolte dai tribunali competenti in Polonia."
+    },
+    {
+      "id": "contact",
+      "title": "12. Contatto",
+      "content": "Per domande su questi termini, contattaci a kontakt@arteonagency.pl."
+    }
+  ],
+  "cta": {
+    "title": "Torna agli strumenti",
+    "description": "10 strumenti online gratuiti per lavorare con immagini, testo e colori",
+    "btnOne": "Strumenti"
+  }
+}

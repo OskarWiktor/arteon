@@ -55,6 +55,11 @@
       "key": "privacy",
       "href": "/it/informativa-sulla-privacy",
       "label": "Informativa sulla privacy"
+    },
+    {
+      "key": "terms",
+      "href": "/it/termini-di-servizio",
+      "label": "Termini di servizio"
     }
   ],
   "breadcrumbs": {

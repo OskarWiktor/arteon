@@ -1,0 +1,79 @@
+{
+  "slug": "felhasznalasi-feltetelek",
+  "metadata": {
+    "title": "Felhasznalasi Feltetelek – Arteon Ingyenes Online Eszkozok",
+    "description": "Felhasznalasi feltetelek az Arteon ingyenes online eszkozeihez. Ismerje meg a hasznalati felteteleket, szellemi tulajdont, felelossegkorlatozast."
+  },
+  "hero": {
+    "title": "Felhasznalasi Feltetelek",
+    "description": "Az Arteon ingyenes online eszkozeinek hasznalati feltetelei"
+  },
+  "version": "24.02.2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "1. Bevezetes",
+      "content": "Ezek a Felhasznalasi Feltetelek szabalyozzak az Arteon altal az arteonagency.pl oldalon biztositott ingyenes online eszkozok hasznalatat. Eszkozeink hasznalataval elfogadja ezeket a felteteleket."
+    },
+    {
+      "id": "provider",
+      "title": "2. Szolgaltato",
+      "content": "Ceg: Arteon | Bejegyzett cim: Zagacie, ul. Jasminowa 36, 32-070, Lengyelorszag | NIP: 9442284430 | Kapcsolat: kontakt@arteonagency.pl"
+    },
+    {
+      "id": "scope",
+      "title": "3. Szolgaltatasok Kore",
+      "content": "Ingyenes bongeszo-alapu eszkozoket biztositunk kepfeldolgozashoz (WebP konverter, kepszerkeszto, favicon generator), szinelemzeshez (kontraszt ellenorzo, paletta generator, szin kinyero), szoveges segdeszközökhöz (szoszamlalo, meta tag ellenorzo) es kommunikacios eszkozokhöz (e-mail alairas generator, QR kod generator). Minden eszkoz teljes egeszeben a bongeszojeben fut. Fajljait helyileg dolgozzuk fel, es soha nem toltjuk fel szervereinkre."
+    },
+    {
+      "id": "account",
+      "title": "4. Nincs Szukseg Fiokra",
+      "content": "Eszkozeink nem igenylik a regisztraciot, bejelentkezest vagy fizetes. Azonnal hasznalhatja oket fiok letrehozasa nelkul."
+    },
+    {
+      "id": "ip",
+      "title": "5. Szellemi Tulajdon",
+      "content": "Az eszkozok es a weboldal dizajnja az Arteon tulajdona. Az eszkozeinkkel letrehozott tartalom az One. Az eredmenyeket barmilyen celra felhasznalhatja, beleertve a kereskedelmi hasznalatat is."
+    },
+    {
+      "id": "disclaimer",
+      "title": "6. Garancia Kizarasa",
+      "content": "Eszkozeinket ugy biztositjuk, ahogy vannak, mindennemű garancia nelkul. Nem garantaljuk a megszakitas nelkuli elerheto seget, hibamentes mukodest vagy egy adott celra valo alkalmassagot."
+    },
+    {
+      "id": "liability",
+      "title": "7. Felelosseg Korlatozasa",
+      "content": "Az Arteon nem felelos az eszkozeink hasznalatbol eredo karokert, beleertve, de nem korlatozva az adatvesztesre, uzleti megszakitasra vagy barmilyen kozvetett karokra."
+    },
+    {
+      "id": "advertising",
+      "title": "8. Hirdetesek",
+      "content": "Hirdeteseket jelenitunk meg a Google AdSense-en keresztul a fejlesztesi es tarhelykoltségek fedezesere. A hirdetesek megjelenitese az On hozzajarulasaval tortenik a cookie banneren keresztul."
+    },
+    {
+      "id": "privacy",
+      "title": "9. Adatvedelem",
+      "content": "Az On maganelete fontos szamunkra. Kerem, tekintse at Adatvedelmi Iranyelveink az adatgyujtes es -feldolgozas reszleteirol."
+    },
+    {
+      "id": "changes",
+      "title": "10. Feltetelek Modositasa",
+      "content": "Ezeket a felteteleket barmikor frissithetjuk. Az aktualis verzio mindig elerheto ezen az oldalon. Eszkozeink tovabb hasznalata a valtozasok elfogadasat jelenti."
+    },
+    {
+      "id": "law",
+      "title": "11. Alkalmazando Jog",
+      "content": "Ezekre a feltetelekre a lengyel jog az iranyadó. Barmilyen vitat a lengyelorszagi illetékes birosagok dontenek el."
+    },
+    {
+      "id": "contact",
+      "title": "12. Kapcsolat",
+      "content": "A feltetelekkel kapcsolatos kerdesekert forduljon hozzank a kontakt@arteonagency.pl cimen."
+    }
+  ],
+  "cta": {
+    "title": "Vissza az eszkozokhöz",
+    "description": "10 ingyenes online eszkoz kepekkel, szoveggel es szinekkel valo munkához",
+    "btnOne": "Eszkozok"
+  }
+}

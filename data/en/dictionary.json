@@ -55,6 +55,11 @@
       "key": "privacy",
       "href": "/en/privacy-policy",
       "label": "Privacy Policy"
+    },
+    {
+      "key": "terms",
+      "href": "/en/terms-of-service",
+      "label": "Terms of Service"
     }
   ],
   "breadcrumbs": {

@@ -1,0 +1,79 @@
+{
+  "slug": "kayttoehdot",
+  "metadata": {
+    "title": "Kayttoehdot – Arteon Ilmaiset Verkkotyokalut",
+    "description": "Kayttoehdot Arteonin ilmaisille verkkotyokaluille. Lue kayttoehdoista, immateriaalioikeuksista, vastuuvapauslausekkeista ja vastuusta."
+  },
+  "hero": {
+    "title": "Kayttoehdot",
+    "description": "Arteonin ilmaisten verkkotyokalujen kayttoehdot"
+  },
+  "version": "24.02.2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "1. Johdanto",
+      "content": "Nama Kayttoehdot saatelevat Arteonin arteonagency.pl-sivustolla tarjoamien ilmaisten verkkotyokalujen kayttoa. Kayttamalla tyokalujamme hyvaksyt nama ehdot."
+    },
+    {
+      "id": "provider",
+      "title": "2. Palveluntarjoaja",
+      "content": "Yritys: Arteon | Rekisteroity osoite: Zagacie, ul. Jasminowa 36, 32-070, Puola | NIP: 9442284430 | Yhteystiedot: kontakt@arteonagency.pl"
+    },
+    {
+      "id": "scope",
+      "title": "3. Palvelujen Laajuus",
+      "content": "Tarjoamme ilmaisia selainpohjaisia tyokaluja kuvankasittelyyn (WebP-muunnin, kuvaeditori, favicon-generaattori), varianalyysiin (kontrastin tarkistus, palettien generaattori, varien poiminta), tekstityokaluihin (sanalaskuri, meta-tunnisteiden tarkistus) ja viestintatyokaluihin (sahkopostiallekirjoitusgeneraattori, QR-koodigeneraattori). Kaikki tyokalut toimivat kokonaan selaimessasi. Tiedostosi kasitellaan paikallisesti eika niita koskaan ladattu palvelimillemme."
+    },
+    {
+      "id": "account",
+      "title": "4. Tilia Ei Tarvita",
+      "content": "Tyokalumme eivat vaadi rekisteroitymista, kirjautumista tai maksua. Voit kayttaa niita valittomasti ilman tilin luomista."
+    },
+    {
+      "id": "ip",
+      "title": "5. Immateriaalioikeudet",
+      "content": "Tyokalut ja verkkosivuston suunnittelu ovat Arteonin omaisuutta. Tyokaluillamme luomasi sisalto kuuluu sinulle. Voit kayttaa tuloksia mihin tahansa tarkoitukseen, mukaan lukien kaupalliseen kayttoon."
+    },
+    {
+      "id": "disclaimer",
+      "title": "6. Takuuvapauslauseke",
+      "content": "Tyokalumme tarjotaan sellaisinaan ilman minkaan laisia takuita. Emme takaa keskeytymattomaan saatavuutta, virheetonta toimintaa tai soveltuvuutta tiettyyn tarkoitukseen."
+    },
+    {
+      "id": "liability",
+      "title": "7. Vastuunrajoitus",
+      "content": "Arteon ei ole vastuussa mistaan vahingoista, jotka aiheutuvat tyokalujemme kaytosta, mukaan lukien mutta ei rajoittuen tietojen menetykseen, liiketoiminnan keskeytymiseen tai valillisiin vahinkoihin."
+    },
+    {
+      "id": "advertising",
+      "title": "8. Mainonta",
+      "content": "Naytamme mainoksia Google AdSensen kautta kehitys- ja hosting-kustannusten kattamiseksi. Mainosten nayttaminen edellyttaa suostumustasi evastebannerin kautta."
+    },
+    {
+      "id": "privacy",
+      "title": "9. Yksityisyys",
+      "content": "Yksityisyytesi on meille tarkeaa. Lue Tietosuojakaytantomme saadaksesi lisatietoja tietojen keruusta ja kasittelysta."
+    },
+    {
+      "id": "changes",
+      "title": "10. Ehtojen Muutokset",
+      "content": "Voimme paivittaa naita ehtoja milloin tahansa. Nykyinen versio on aina saatavilla talla sivulla. Tyokalujemme jatkuva kaytto merkitsee muutosten hyvaksymista."
+    },
+    {
+      "id": "law",
+      "title": "11. Sovellettava Laki",
+      "content": "Naita ehtoja saatelee Puolan laki. Mahdolliset riidat ratkaistaan Puolan toimivaltaisissa tuomioistuimissa."
+    },
+    {
+      "id": "contact",
+      "title": "12. Yhteystiedot",
+      "content": "Naita ehtoja koskevissa kysymyksissa ota yhteytta kontakt@arteonagency.pl."
+    }
+  ],
+  "cta": {
+    "title": "Takaisin tyokaluihin",
+    "description": "10 ilmaista verkkotyokalua kuvien, tekstin ja varien kanssa tyoskentelyyn",
+    "btnOne": "Tyokalut"
+  }
+}

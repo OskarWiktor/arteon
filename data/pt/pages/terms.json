@@ -1,0 +1,79 @@
+{
+  "slug": "termos-de-servico",
+  "metadata": {
+    "title": "Termos de Servico – Ferramentas Online Gratuitas Arteon",
+    "description": "Termos de servico para as ferramentas online gratuitas da Arteon. Conheca as condicoes de uso, propriedade intelectual, isencoes e responsabilidade."
+  },
+  "hero": {
+    "title": "Termos de Servico",
+    "description": "Condicoes de uso das ferramentas online gratuitas da Arteon"
+  },
+  "version": "24.02.2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "1. Introducao",
+      "content": "Estes Termos de Servico regem o uso das ferramentas online gratuitas fornecidas pela Arteon em arteonagency.pl. Ao usar nossas ferramentas, voce concorda com estes termos."
+    },
+    {
+      "id": "provider",
+      "title": "2. Fornecedor do Servico",
+      "content": "Empresa: Arteon | Endereco registrado: Zagacie, ul. Jasminowa 36, 32-070, Polonia | NIP: 9442284430 | Contato: kontakt@arteonagency.pl"
+    },
+    {
+      "id": "scope",
+      "title": "3. Ambito dos Servicos",
+      "content": "Fornecemos ferramentas gratuitas baseadas em navegador para processamento de imagens (conversor WebP, editor de imagens, gerador de favicon), analise de cores (verificador de contraste, gerador de paletas, extrator de cores), utilitarios de texto (contador de palavras, verificador de meta tags) e ferramentas de comunicacao (gerador de assinatura de email, gerador de codigos QR). Todas as ferramentas funcionam inteiramente no seu navegador. Seus arquivos sao processados localmente e nunca sao enviados para nossos servidores."
+    },
+    {
+      "id": "account",
+      "title": "4. Sem Conta Necessaria",
+      "content": "Nossas ferramentas nao requerem registro, login ou pagamento. Voce pode usa-las imediatamente sem criar uma conta."
+    },
+    {
+      "id": "ip",
+      "title": "5. Propriedade Intelectual",
+      "content": "As ferramentas e o design do site sao propriedade da Arteon. O conteudo que voce cria usando nossas ferramentas pertence a voce. Voce pode usar os resultados para qualquer finalidade, incluindo uso comercial."
+    },
+    {
+      "id": "disclaimer",
+      "title": "6. Isencao de Garantias",
+      "content": "Nossas ferramentas sao fornecidas como estao, sem garantias de qualquer tipo. Nao garantimos disponibilidade ininterrupta, operacao sem erros ou adequacao a um proposito especifico."
+    },
+    {
+      "id": "liability",
+      "title": "7. Limitacao de Responsabilidade",
+      "content": "A Arteon nao e responsavel por quaisquer danos decorrentes do uso de nossas ferramentas, incluindo, mas nao se limitando a, perda de dados, interrupcao de negocios ou quaisquer danos indiretos."
+    },
+    {
+      "id": "advertising",
+      "title": "8. Publicidade",
+      "content": "Exibimos anuncios atraves do Google AdSense para cobrir os custos de desenvolvimento e hospedagem. A exibicao de anuncios requer seu consentimento atraves do banner de cookies."
+    },
+    {
+      "id": "privacy",
+      "title": "9. Privacidade",
+      "content": "Sua privacidade e importante para nos. Por favor, revise nossa Politica de Privacidade para detalhes sobre coleta e processamento de dados."
+    },
+    {
+      "id": "changes",
+      "title": "10. Alteracoes nos Termos",
+      "content": "Podemos atualizar estes termos a qualquer momento. A versao atual esta sempre disponivel nesta pagina. O uso continuado de nossas ferramentas constitui aceitacao de quaisquer alteracoes."
+    },
+    {
+      "id": "law",
+      "title": "11. Lei Aplicavel",
+      "content": "Estes termos sao regidos pela lei polonesa. Quaisquer disputas serao resolvidas pelos tribunais competentes na Polonia."
+    },
+    {
+      "id": "contact",
+      "title": "12. Contato",
+      "content": "Para perguntas sobre estes termos, entre em contato conosco em kontakt@arteonagency.pl."
+    }
+  ],
+  "cta": {
+    "title": "Voltar as ferramentas",
+    "description": "10 ferramentas online gratuitas para trabalhar com imagens, texto e cores",
+    "btnOne": "Ferramentas"
+  }
+}

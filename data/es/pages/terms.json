@@ -1,0 +1,79 @@
+{
+  "slug": "terminos-de-servicio",
+  "metadata": {
+    "title": "Terminos de Servicio – Herramientas Online Gratuitas de Arteon",
+    "description": "Terminos de servicio para las herramientas online gratuitas de Arteon. Conoce las condiciones de uso, propiedad intelectual, exenciones y responsabilidad."
+  },
+  "hero": {
+    "title": "Terminos de Servicio",
+    "description": "Condiciones de uso de las herramientas online gratuitas de Arteon"
+  },
+  "version": "24.02.2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "1. Introduccion",
+      "content": "Estos Terminos de Servicio rigen el uso de las herramientas online gratuitas proporcionadas por Arteon en arteonagency.pl. Al usar nuestras herramientas, aceptas estos terminos."
+    },
+    {
+      "id": "provider",
+      "title": "2. Proveedor del Servicio",
+      "content": "Empresa: Arteon | Direccion registrada: Zagacie, ul. Jasminowa 36, 32-070, Polonia | NIP: 9442284430 | Contacto: kontakt@arteonagency.pl"
+    },
+    {
+      "id": "scope",
+      "title": "3. Alcance de los Servicios",
+      "content": "Proporcionamos herramientas gratuitas basadas en navegador para procesamiento de imagenes (convertidor WebP, editor de imagenes, generador de favicon), analisis de colores (verificador de contraste, generador de paletas, extractor de colores), utilidades de texto (contador de palabras, verificador de meta tags) y herramientas de comunicacion (generador de firmas de email, generador de codigos QR). Todas las herramientas funcionan completamente en tu navegador. Tus archivos se procesan localmente y nunca se suben a nuestros servidores."
+    },
+    {
+      "id": "account",
+      "title": "4. Sin Cuenta Requerida",
+      "content": "Nuestras herramientas no requieren registro, inicio de sesion ni pago. Puedes usarlas inmediatamente sin crear una cuenta."
+    },
+    {
+      "id": "ip",
+      "title": "5. Propiedad Intelectual",
+      "content": "Las herramientas y el diseno del sitio web son propiedad de Arteon. El contenido que crees usando nuestras herramientas te pertenece. Puedes usar los resultados para cualquier proposito, incluyendo uso comercial."
+    },
+    {
+      "id": "disclaimer",
+      "title": "6. Exencion de Garantias",
+      "content": "Nuestras herramientas se proporcionan tal cual sin garantias de ningun tipo. No garantizamos disponibilidad ininterrumpida, funcionamiento sin errores ni idoneidad para un proposito particular."
+    },
+    {
+      "id": "liability",
+      "title": "7. Limitacion de Responsabilidad",
+      "content": "Arteon no es responsable de ningun dano derivado del uso de nuestras herramientas, incluyendo pero no limitado a perdida de datos, interrupcion del negocio o danos indirectos."
+    },
+    {
+      "id": "advertising",
+      "title": "8. Publicidad",
+      "content": "Mostramos anuncios a traves de Google AdSense para cubrir los costos de desarrollo y alojamiento. La visualizacion de anuncios requiere tu consentimiento a traves del banner de cookies."
+    },
+    {
+      "id": "privacy",
+      "title": "9. Privacidad",
+      "content": "Tu privacidad es importante para nosotros. Por favor, revisa nuestra Politica de Privacidad para detalles sobre la recopilacion y procesamiento de datos."
+    },
+    {
+      "id": "changes",
+      "title": "10. Cambios en los Terminos",
+      "content": "Podemos actualizar estos terminos en cualquier momento. La version actual siempre esta disponible en esta pagina. El uso continuado de nuestras herramientas constituye la aceptacion de cualquier cambio."
+    },
+    {
+      "id": "law",
+      "title": "11. Ley Aplicable",
+      "content": "Estos terminos se rigen por la ley polaca. Cualquier disputa sera resuelta por los tribunales competentes en Polonia."
+    },
+    {
+      "id": "contact",
+      "title": "12. Contacto",
+      "content": "Para preguntas sobre estos terminos, contactanos en kontakt@arteonagency.pl."
+    }
+  ],
+  "cta": {
+    "title": "Volver a las herramientas",
+    "description": "10 herramientas online gratuitas para trabajar con imagenes, texto y colores",
+    "btnOne": "Herramientas"
+  }
+}

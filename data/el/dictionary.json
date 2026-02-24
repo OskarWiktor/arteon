@@ -50,7 +50,10 @@
     "save": "Αποθήκευση"
   },
   "skipToContent": "Μετάβαση στο περιεχόμενο",
-  "legal": [{ "key": "privacy", "href": "/el/politiki-aporritou", "label": "Πολιτική απορρήτου" }],
+  "legal": [
+    { "key": "privacy", "href": "/el/politiki-aporritou", "label": "Politiki aporritou" },
+    { "key": "terms", "href": "/el/oroi-chrisis", "label": "Oroi chrisis" }
+  ],
   "breadcrumbs": { "home": "Αρχική", "ariaLabel": "πλοήγηση breadcrumbs" },
   "contactForm": {
     "nameLabel": "Ονοματεπώνυμο",

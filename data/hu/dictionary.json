@@ -54,7 +54,12 @@
     {
       "key": "privacy",
       "href": "/hu/adatvedelmi-iranyelvek",
-      "label": "Adatvédelmi irányelvek"
+      "label": "Adatvedelmi iranyelvek"
+    },
+    {
+      "key": "terms",
+      "href": "/hu/felhasznalasi-feltetelek",
+      "label": "Felhasznalasi feltetelek"
     }
   ],
   "breadcrumbs": {

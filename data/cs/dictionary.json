@@ -54,7 +54,12 @@
     {
       "key": "privacy",
       "href": "/cs/zasady-ochrany-soukromi",
-      "label": "Zásady ochrany soukromí"
+      "label": "Zasady ochrany soukromi"
+    },
+    {
+      "key": "terms",
+      "href": "/cs/podminky-pouzivani",
+      "label": "Podminky pouzivani"
     }
   ],
   "breadcrumbs": {

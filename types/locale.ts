@@ -10,6 +10,7 @@ export type LocaleConfig = {
   aboutHref?: string;
   contactHref?: string;
   privacyHref?: string;
+  termsHref?: string;
 };
 
 export type LegalLink = {

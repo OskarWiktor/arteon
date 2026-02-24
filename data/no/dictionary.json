@@ -55,6 +55,11 @@
       "key": "privacy",
       "href": "/no/personvernpolicy",
       "label": "Personvernpolicy"
+    },
+    {
+      "key": "terms",
+      "href": "/no/bruksvilkar",
+      "label": "Bruksvilkar"
     }
   ],
   "breadcrumbs": {

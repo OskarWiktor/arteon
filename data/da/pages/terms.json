@@ -1,0 +1,79 @@
+{
+  "slug": "brugsvilkar",
+  "metadata": {
+    "title": "Brugsvilkar – Arteon Gratis Onlinevaerktojer",
+    "description": "Brugsvilkar for Arteons gratis onlinevaerktojer. Laes om brugsvilkar, immaterielle rettigheder, ansvarsfraskrivelser og ansvar."
+  },
+  "hero": {
+    "title": "Brugsvilkar",
+    "description": "Brugsvilkar for Arteons gratis onlinevaerktojer"
+  },
+  "version": "24.02.2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "1. Indledning",
+      "content": "Disse Brugsvilkar regulerer din brug af de gratis onlinevaerktojer, der leveres af Arteon pa arteonagency.pl. Ved at bruge vores vaerktojer accepterer du disse vilkar."
+    },
+    {
+      "id": "provider",
+      "title": "2. Tjenesteudbyder",
+      "content": "Virksomhed: Arteon | Registreret adresse: Zagacie, ul. Jasminowa 36, 32-070, Polen | NIP: 9442284430 | Kontakt: kontakt@arteonagency.pl"
+    },
+    {
+      "id": "scope",
+      "title": "3. Tjenesternes Omfang",
+      "content": "Vi leverer gratis browserbaserede vaerktojer til billedbehandling (WebP-konverter, billedredigering, favicon-generator), farveanalyse (kontrastkontrol, paletgenerator, farveudtraekker), tekstvaerktojer (ordtaeller, meta-tag-kontrol) og kommunikationsvaerktojer (e-mail-signatur-generator, QR-kode-generator). Alle vaerktojer korer helt i din browser. Dine filer behandles lokalt og uploades aldrig til vores servere."
+    },
+    {
+      "id": "account",
+      "title": "4. Ingen Konto Paakraevet",
+      "content": "Vores vaerktojer kraever ikke registrering, login eller betaling. Du kan bruge dem med det samme uden at oprette en konto."
+    },
+    {
+      "id": "ip",
+      "title": "5. Immaterielle Rettigheder",
+      "content": "Vaerktojerne og webstedets design ejes af Arteon. Indhold, du opretter med vores vaerktojer, tilhorer dig. Du ma bruge resultaterne til ethvert formal, herunder kommerciel brug."
+    },
+    {
+      "id": "disclaimer",
+      "title": "6. Garantifraskrivelse",
+      "content": "Vores vaerktojer leveres som de er uden garantier af nogen art. Vi garanterer ikke uafbrudt tilgaengelighed, fejlfri drift eller egnethed til et bestemt formal."
+    },
+    {
+      "id": "liability",
+      "title": "7. Ansvarsbegransning",
+      "content": "Arteon er ikke ansvarlig for skader, der opstår som folge af brugen af vores vaerktojer, herunder men ikke begraenset til datatab, forretningsafbrydelse eller indirekte skader."
+    },
+    {
+      "id": "advertising",
+      "title": "8. Reklamer",
+      "content": "Vi viser reklamer via Google AdSense for at daekke udviklings- og hostingomkostninger. Visning af reklamer kraever dit samtykke via cookie-banneret."
+    },
+    {
+      "id": "privacy",
+      "title": "9. Privatliv",
+      "content": "Dit privatliv er vigtigt for os. Laes venligst vores Privatlivspolitik for detaljer om dataindsamling og -behandling."
+    },
+    {
+      "id": "changes",
+      "title": "10. AEndringer af Vilkar",
+      "content": "Vi kan opdatere disse vilkar nar som helst. Den aktuelle version er altid tilgaengelig pa denne side. Fortsat brug af vores vaerktojer udgor accept af eventuelle aendringer."
+    },
+    {
+      "id": "law",
+      "title": "11. Gaeldende Lov",
+      "content": "Disse vilkar er underlagt polsk lov. Eventuelle tvister skal afgores af de kompetente domstole i Polen."
+    },
+    {
+      "id": "contact",
+      "title": "12. Kontakt",
+      "content": "For sporgsmal om disse vilkar, kontakt os pa kontakt@arteonagency.pl."
+    }
+  ],
+  "cta": {
+    "title": "Tilbage til vaerktojerne",
+    "description": "10 gratis onlinevaerktojer til at arbejde med billeder, tekst og farver",
+    "btnOne": "Vaerktojer"
+  }
+}

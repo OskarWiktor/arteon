@@ -55,6 +55,11 @@
       "key": "privacy",
       "href": "/sv/integritetspolicy",
       "label": "Integritetspolicy"
+    },
+    {
+      "key": "terms",
+      "href": "/sv/anvandarvillkor",
+      "label": "Anvandarvillkor"
     }
   ],
   "breadcrumbs": {

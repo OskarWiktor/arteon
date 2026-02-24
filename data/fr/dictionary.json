@@ -54,7 +54,12 @@
     {
       "key": "privacy",
       "href": "/fr/politique-de-confidentialite",
-      "label": "Politique de confidentialité"
+      "label": "Politique de confidentialite"
+    },
+    {
+      "key": "terms",
+      "href": "/fr/conditions-utilisation",
+      "label": "Conditions d'utilisation"
     }
   ],
   "breadcrumbs": {

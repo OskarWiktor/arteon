@@ -54,7 +54,12 @@
     {
       "key": "privacy",
       "href": "/fi/tietosuojakaytanto",
-      "label": "Tietosuojakäytäntö"
+      "label": "Tietosuojakaytanto"
+    },
+    {
+      "key": "terms",
+      "href": "/fi/kayttoehdot",
+      "label": "Kayttoehdot"
     }
   ],
   "breadcrumbs": {
