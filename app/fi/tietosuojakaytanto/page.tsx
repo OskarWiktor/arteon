@@ -40,7 +40,7 @@ export default function PrivacyPolicyPage() {
               NIP: <strong>9442284430</strong>, REGON: <strong>528888241</strong>
             </p>
             <p>
-              Yhteystiedot: <strong>kontakt@arteonagency.pl</strong>, puh.: <strong>+48 516 466 255</strong>.
+              Yhteystiedot: <strong>contact@arteonagency.com</strong>, puh.: <strong>+48 516 466 255</strong>.
             </p>
           </SectionInfo>
           <Gap variant="line" size="sm" />

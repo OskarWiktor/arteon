@@ -44,6 +44,10 @@
         "Egyedi szavak számlálása",
         "Átlagos szóhossz",
         "Becsült olvasási idő",
+        "Becsült beszédidő",
+        "Szótagszámlálás",
+        "Flesch-Kincaid olvashatósági pontszám",
+        "Nyelvspecifikus olvashatósági képletek (16 nyelv)",
         "Nagybetűsre vagy kisbetűsre konvertálás",
         "Mondatstílusra vagy címstílusra konvertálás",
         "Kis-/nagybetűk megfordítása",
@@ -64,7 +68,7 @@
         },
         {
           "name": "Ellenőrizze a statisztikákat",
-          "text": "A bal oldali panelen 8 metrikát lát: szavak, karakterek, mondatok, bekezdések, egyedi szavak, átlagos szóhossz és olvasási idő."
+          "text": "A bal oldali panelen 11 metrikát lát: szavak, karakterek, mondatok, bekezdések, egyedi szavak, átlagos szóhossz és olvasási idő."
         },
         {
           "name": "Alakítsa át a szöveget",
@@ -107,7 +111,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Ellenőrizze a statisztikákat",
-          "description": "A bal oldali panelen 8 metrikát lát: szavak, karakterek, mondatok, bekezdések, egyedi szavak, átlagos szóhossz és olvasási idő."
+          "description": "A bal oldali panelen 11 metrikát lát: szavak, karakterek, mondatok, bekezdések, egyedi szavak, átlagos szóhossz és olvasási idő."
         },
         {
           "icon": "RiTextWrap",
@@ -127,7 +131,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "8 szövegmetrika",
+      "title": "11 szövegmetrika",
       "description": "A számláló nyolc mutató alapján elemzi a szöveget:",
       "grid": "two",
       "items": [

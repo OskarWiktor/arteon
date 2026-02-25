@@ -25,6 +25,14 @@ function getPaletteMeta(t: (typeof ui)[keyof typeof ui]): Record<PaletteGroupId,
     'deep-dark': t.palettes.deepDark,
     'material-tonal': t.palettes.materialTonal,
     'apple-minimal': t.palettes.appleMinimal,
+    tetradic: t.palettes.tetradic,
+    'warm-shift': t.palettes.warmShift,
+    'cool-shift': t.palettes.coolShift,
+    'earth-tones': t.palettes.earthTones,
+    'neon-vibrant': t.palettes.neonVibrant,
+    'vintage-muted': t.palettes.vintageMuted,
+    'high-contrast': t.palettes.highContrast,
+    'sunset-gradient': t.palettes.sunsetGradient,
   };
 }
 

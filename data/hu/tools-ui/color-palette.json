@@ -47,6 +47,38 @@
     "appleMinimal": {
       "label": "Minimalista paletta (Apple ihlette)",
       "description": "Egy élénk színhangsúly és több nagyon világos és finom semleges tónus, jellemző összetétel a sok fehér térrel és finom árnyékokkal rendelkező felületeknél."
+    },
+    "tetradic": {
+      "label": "Tetrádikus (négyzet) paletta",
+      "description": "Négy árnyalat 90 távolságra a színkörön (egy négyzet csúcsai)  gazdag és kiegyensúlyozott, ideális összetett UI-témákhoz és adatvizualizációhoz."
+    },
+    "warmShift": {
+      "label": "Meleg tónusú paletta",
+      "description": "A spektrum meleg vége felé eltolt színek (piros, narancs, sárga)  energiát, melegséget és megközelíthetőséget sugall."
+    },
+    "coolShift": {
+      "label": "Hűvös tónusú paletta",
+      "description": "A spektrum hűvös vége felé eltolt színek (kék, türkiz, lila)  nyugalmat, professzionalizmust és bizalmat közvetít."
+    },
+    "earthTones": {
+      "label": "Földszínű paletta",
+      "description": "Alacsony telítettségű barnák, olívák és okkerek, természeti tájak ihlette  tökéletes ökológiai márkákhoz és rusztikus esztétikához."
+    },
+    "neonVibrant": {
+      "label": "Neon vibráló paletta",
+      "description": "Maximális telítettségű színek elektromos intenzitással  merész marketinghez, játék-interfészekhez és figyelemfelkeltő designokhoz."
+    },
+    "vintageMuted": {
+      "label": "Vintage tompított paletta",
+      "description": "Telítetlenített, enyhén meleg tónusok, amelyek régi nyomatokra és retro fényképezésre emlékeztetnek  ideális örökségi márkákhoz és nosztalgikus esztétikához."
+    },
+    "highContrast": {
+      "label": "Magas kontrasztú paletta",
+      "description": "Extrém fényességtartomány a közel feketétől a közel fehérig az alap árnyalattal  kiváló akadálymentes designokhoz és erős vizuális hierarchiához."
+    },
+    "sunsetGradient": {
+      "label": "Naplemente gradiens paletta",
+      "description": "Sima árnyalatváltás meleg tónusoktól a hűvösig, természetes naplementét utánozva  remek hero szekciókhoz, hátterekhez és kreatív projektekhez."
     }
   }
 }

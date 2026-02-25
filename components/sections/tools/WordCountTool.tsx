@@ -21,6 +21,7 @@ import {
   sortLinesAsc,
   sortLinesDesc,
 } from '@/lib/tools/text/wordCount';
+import { getReadabilityLabel, getReadabilityColor } from '@/lib/tools/text/readability';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 import { useLocale } from '@/lib/LocaleContext';
 import { ui } from '@/lib/i18n/tools/word-count';
@@ -32,7 +33,9 @@ export default function WordCountTool() {
 
   const { copy, copied } = useCopyToClipboard();
 
-  const metrics = useMemo(() => analyzeText(text), [text]);
+  const metrics = useMemo(() => analyzeText(text, locale), [text, locale]);
+  const readabilityLabel = useMemo(() => getReadabilityLabel(metrics.fleschScore, locale), [metrics.fleschScore, locale]);
+  const readabilityColor = useMemo(() => getReadabilityColor(metrics.fleschScore), [metrics.fleschScore]);
 
   const toolbarActions: { key: string; label: string; fn: (t: string) => string }[] = [
     { key: 'uppercase', label: t.uppercase, fn: toUpperCase },
@@ -65,6 +68,20 @@ export default function WordCountTool() {
             <ToolStatRow label={t.uniqueWords} value={metrics.uniqueWords} />
             <ToolStatRow label={t.avgWordLength} value={metrics.avgWordLength} />
             <ToolStatRow label={t.readingTime} value={formatReadingTime(metrics.readingTimeMinutes, locale)} />
+            <ToolStatRow label={t.speakingTime} value={formatReadingTime(metrics.speakingTimeMinutes, locale)} />
+            <ToolStatRow label={t.syllables} value={metrics.syllables} />
+            <ToolStatRow
+              label={t.readability}
+              value={
+                metrics.fleschScore !== null ? (
+                  <span className={readabilityColor}>
+                    {metrics.fleschScore} — {readabilityLabel}
+                  </span>
+                ) : (
+                  '—'
+                )
+              }
+            />
           </div>
 
           <div className="flex gap-2">

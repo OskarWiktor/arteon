@@ -2,14 +2,14 @@
   "toolKey": "colorPalette",
   "locale": "en",
   "metadata": {
-    "title": "Free Color Palette Generator – 9 Schemes",
-    "description": "Generate 9 color palettes from one color: monochromatic, complementary, triadic, pastel and more. Copy HEX codes in one click.",
+    "title": "Free Color Palette Generator – 17 Schemes from One Color",
+    "description": "Generate 17 color palettes from one color: monochromatic, complementary, triadic, tetradic, earth tones, neon, vintage & more. Copy HEX codes in one click.",
     "ogImage": "/assets/tools/color-palette-generator/color-palette-generator-en.webp",
     "path": "/en/tools/color-palette-generator"
   },
   "hero": {
-    "title": "Generate 9 color palettes from a single base color",
-    "description": "Enter one base color, and the tool will generate 9 harmonious color palettes: monochromatic, complementary, triadic, pastel, and more. Each color can be copied with its HEX code.",
+    "title": "Generate 17 color palettes from a single base color",
+    "description": "Enter one base color, and the tool will generate 17 harmonious color palettes: monochromatic, complementary, triadic, tetradic, warm, cool, earth tones, neon, vintage, high contrast, sunset gradient and more. Each color can be copied with its HEX code.",
     "backgroundImage": "/assets/tools/color-palette-generator/color-palette-generator-en.webp"
   },
   "breadcrumbs": {
@@ -24,17 +24,34 @@
   },
   "schemas": {
     "software": {
-      "name": "Color Palette Generator – 9 Color Schemes",
-      "alternateName": ["Color scheme generator", "Color palette creator", "Color matching tool", "Color harmony generator", "HEX color palette tool"],
+      "name": "Color Palette Generator – 17 Color Schemes",
+      "alternateName": [
+        "Color scheme generator",
+        "Color palette creator",
+        "Color matching tool",
+        "Color harmony generator",
+        "HEX color palette tool",
+        "Earth tones palette generator",
+        "Neon color palette maker",
+        "Vintage color scheme tool"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Free color palette generator. Enter one HEX color and the tool will generate 9 schemes: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, and minimalist. Each color can be copied with its HEX code and HSL value.",
+      "description": "Free color palette generator. Enter one HEX color and the tool will generate 17 schemes: monochromatic, analogous, complementary, triadic, split-complementary, tetradic, warm shift, cool shift, earth tones, neon vibrant, vintage muted, high contrast, sunset gradient, pastel, dark, tonal, and minimalist.",
       "featureList": [
         "Monochromatic scheme – shades of one color",
         "Analogous scheme – neighboring colors on the color wheel",
         "Complementary scheme – opposite colors",
         "Triadic scheme – 3 colors at equal intervals",
-        "Split-complementary scheme – base color and 2 neighbors of its complement",
+        "Split-complementary scheme – softer complementary variant",
+        "Tetradic (square) scheme – 4 colors at 90° intervals",
+        "Warm shift – reds, oranges, yellows",
+        "Cool shift – blues, teals, purples",
+        "Earth tones – browns, olives, ochres",
+        "Neon vibrant – maximum saturation colors",
+        "Vintage muted – desaturated retro tones",
+        "High contrast – near-black to near-white range",
+        "Sunset gradient – warm-to-cool hue rotation",
         "Pastel palette – light, muted shades",
         "Dark palette – deep colors for dark themes",
         "Tonal palette – lightness scale of one hue",
@@ -49,7 +66,7 @@
     },
     "howTo": {
       "name": "How to generate a color palette from one base color",
-      "description": "How to generate 9 color palettes from one base color: monochromatic, complementary, triadic, pastel, and more. Each color can be copied with its HEX code.",
+      "description": "How to generate 17 color palettes from one base color: monochromatic, complementary, triadic, tetradic, earth tones, neon, vintage, and more. Each color can be copied with its HEX code.",
       "steps": [
         {
           "name": "Choose a base color",
@@ -61,7 +78,7 @@
         },
         {
           "name": "Browse the palettes",
-          "text": "The tool will automatically generate 9 different palettes: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, and minimalist."
+          "text": "The tool will automatically generate 17 different palettes based on color theory principles, including monochromatic, complementary, triadic, tetradic, earth tones, neon, vintage, and more."
         },
         {
           "name": "Copy colors",
@@ -78,7 +95,7 @@
     {
       "type": "sectionBasic",
       "title": "Why generate a color palette?",
-      "html": "<p class=\"text-mid\">A consistent color palette is the foundation of every visual project - from a website, through a logo, to printed materials. Manually selecting colors that work together requires knowledge of color theory. The generator does it automatically: you provide one base color (e.g., your logo color), and the tool creates 9 color sets based on proven color harmony schemes.</p><p class=\"text-mid mt-3\">Each generated color comes with its HEX code (e.g., #496ba2) and HSL value (hue, saturation, lightness). The HEX code can be pasted directly into CSS, Figma, Canva, or any graphics application.</p>",
+      "html": "<p class=\"text-mid\">A consistent color palette is the foundation of every visual project - from a website, through a logo, to printed materials. Manually selecting colors that work together requires knowledge of color theory. The generator does it automatically: you provide one base color (e.g., your logo color), and the tool creates 17 color sets based on proven color harmony schemes.</p><p class=\"text-mid mt-3\">Each generated color comes with its HEX code (e.g., #496ba2) and HSL value (hue, saturation, lightness). The HEX code can be pasted directly into CSS, Figma, Canva, or any graphics application.</p>",
       "imageSrc": "/assets/tools/color-palette-generator/color-palette-generator-en.webp",
       "imageAlt": "Color palette generator – Arteon"
     },
@@ -99,7 +116,7 @@
         },
         {
           "title": "2. Confirm your choice",
-          "description": "After clicking the Update Color button, the tool will automatically generate 9 palettes based on different color harmony schemes.",
+          "description": "After clicking the Update Color button, the tool will automatically generate 17 palettes based on different color harmony schemes.",
           "icon": "RiCheckboxCircleLine"
         },
         {
@@ -116,7 +133,7 @@
     {
       "type": "sectionSteps",
       "title": "What color schemes does the tool generate?",
-      "description": "The generator creates 9 palette types - each based on a different color theory principle:",
+      "description": "The generator creates 17 palette types - each based on a different color theory principle:",
       "grid": "two",
       "items": [
         {
@@ -163,6 +180,46 @@
           "icon": "RiContractLeftRightLine",
           "title": "Minimalist palette",
           "description": "One bold color accent and several very light, soft neutrals. The rest of the palette stays muted. Works well in modern interfaces with lots of white space - typical product and landing page style."
+        },
+        {
+          "icon": "RiGridLine",
+          "title": "Tetradic (square) palette",
+          "description": "Four hues spaced 90° apart on the color wheel. Rich and balanced, ideal for complex UI themes, dashboards, and data visualization where you need multiple distinct colors."
+        },
+        {
+          "icon": "RiFireLine",
+          "title": "Warm shift palette",
+          "description": "Colors shifted toward reds, oranges, and yellows. Evokes energy, warmth, and approachability. Great for food brands, hospitality, and energetic marketing campaigns."
+        },
+        {
+          "icon": "RiSnowflakeLine",
+          "title": "Cool shift palette",
+          "description": "Colors shifted toward blues, teals, and purples. Conveys calm, professionalism, and trust. Popular in fintech, healthcare, and corporate branding."
+        },
+        {
+          "icon": "RiSeedlingLine",
+          "title": "Earth tones palette",
+          "description": "Low-saturation browns, olives, and ochres inspired by natural landscapes. Perfect for organic brands, eco-friendly products, craft businesses, and rustic aesthetics."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Neon vibrant palette",
+          "description": "Maximum saturation colors with electric intensity. Designed for bold marketing, gaming interfaces, nightlife brands, and attention-grabbing designs."
+        },
+        {
+          "icon": "RiAncientGateLine",
+          "title": "Vintage muted palette",
+          "description": "Desaturated, slightly warm tones reminiscent of aged prints and retro photography. Ideal for heritage brands, artisan products, and nostalgic aesthetics."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "High contrast palette",
+          "description": "Extreme lightness range from near-black to near-white with the base hue. Excellent for accessible designs, strong visual hierarchy, and WCAG-compliant interfaces."
+        },
+        {
+          "icon": "RiSunLine",
+          "title": "Sunset gradient palette",
+          "description": "A smooth hue rotation through warm to cool tones, mimicking a natural sunset. Great for hero sections, backgrounds, creative projects, and festival branding."
         }
       ]
     },
@@ -224,7 +281,7 @@
         {
           "icon": "RiRefreshLine",
           "title": "Palettes don't change after entering a color",
-          "description": "Simply typing a HEX code does not automatically generate palettes - you need to confirm the change with the Update Color button. Only after confirmation does the tool recalculate all 9 schemes."
+          "description": "Simply typing a HEX code does not automatically generate palettes - you need to confirm the change with the Update Color button. Only after confirmation does the tool recalculate all 17 schemes."
         },
         {
           "icon": "RiErrorWarningLine",

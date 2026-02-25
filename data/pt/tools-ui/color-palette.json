@@ -47,6 +47,38 @@
     "appleMinimal": {
       "label": "Paleta minimalista (inspirada em Apple)",
       "description": "Um acento de cor vivo e vários neutros muito claros e suaves, uma composição típica de interfaces com muito espaço branco e sombras subtis."
+    },
+    "tetradic": {
+      "label": "Paleta tetrádica (quadrada)",
+      "description": "Quatro tons espaçados 90 no círculo cromático (vértices de um quadrado)  rica e equilibrada, ideal para temas UI complexos e visualização de dados."
+    },
+    "warmShift": {
+      "label": "Paleta de tons quentes",
+      "description": "Cores deslocadas para a extremidade quente do espectro (vermelhos, laranjas, amarelos)  evoca energia, calor e acessibilidade."
+    },
+    "coolShift": {
+      "label": "Paleta de tons frios",
+      "description": "Cores deslocadas para a extremidade fria do espectro (azuis, turquesas, roxos)  transmite calma, profissionalismo e confiança."
+    },
+    "earthTones": {
+      "label": "Paleta de tons terrosos",
+      "description": "Castanhos, olivas e ocres de baixa saturação inspirados em paisagens naturais  perfeita para marcas ecológicas e estética rústica."
+    },
+    "neonVibrant": {
+      "label": "Paleta néon vibrante",
+      "description": "Cores de saturação máxima com intensidade elétrica  projetada para marketing ousado, interfaces de jogos e designs chamativos."
+    },
+    "vintageMuted": {
+      "label": "Paleta vintage suave",
+      "description": "Tons dessaturados e ligeiramente quentes que lembram impressões antigas e fotografia retro  ideal para marcas com herança e estética nostálgica."
+    },
+    "highContrast": {
+      "label": "Paleta de alto contraste",
+      "description": "Faixa extrema de luminosidade do quase preto ao quase branco com o tom base  excelente para designs acessíveis e forte hierarquia visual."
+    },
+    "sunsetGradient": {
+      "label": "Paleta gradiente pôr do sol",
+      "description": "Uma rotação suave de tons quentes a frios, imitando um pôr do sol natural  ótima para seções hero, fundos e projetos criativos."
     }
   }
 }

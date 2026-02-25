@@ -47,6 +47,38 @@
     "appleMinimal": {
       "label": "Minimalistisk palett (inspirerad av Apple)",
       "description": "En djärv färgaccent och många mycket ljusa, mjuka neutrala toner – layout typisk för gränssnitt med mycket vitt utrymme och subtila skuggor."
+    },
+    "tetradic": {
+      "label": "Tetradisk (kvadrat) palett",
+      "description": "Fyra nyanser med 90 mellanrum på färghjulet (hörn av en kvadrat)  rik och balanserad, idealisk för komplexa UI-teman och datavisualisering."
+    },
+    "warmShift": {
+      "label": "Varm palett",
+      "description": "Färger förskjutna mot den varma änden av spektrumet (röd, orange, gul)  utstrålar energi, värme och tillgänglighet."
+    },
+    "coolShift": {
+      "label": "Kall palett",
+      "description": "Färger förskjutna mot den kalla änden av spektrumet (blå, turkos, lila)  förmedlar lugn, professionalism och förtroende."
+    },
+    "earthTones": {
+      "label": "Jordtonspalett",
+      "description": "Lågt mättade bruna, oliv- och ockratoner inspirerade av naturliga landskap  perfekt för ekologiska varumärken och rustik estetik."
+    },
+    "neonVibrant": {
+      "label": "Neon vibrerande palett",
+      "description": "Maximalt mättade färger med elektrisk intensitet  designad för djärv marknadsföring, spelgränssnitt och iögonfallande design."
+    },
+    "vintageMuted": {
+      "label": "Vintage dämpad palett",
+      "description": "Omättade, svagt varma toner som påminner om gamla tryck och retrofotografi  idealisk för arvsvarumärken och nostalgisk estetik."
+    },
+    "highContrast": {
+      "label": "Högkontrast palett",
+      "description": "Extremt ljusstyrkeomfång från nästan svart till nästan vitt med basnyansen  utmärkt för tillgängliga designer och stark visuell hierarki."
+    },
+    "sunsetGradient": {
+      "label": "Solnedgångs-gradientpalett",
+      "description": "En mjuk nyanskiftning från varma till kalla toner som efterliknar en naturlig solnedgång  perfekt för hero-sektioner, bakgrunder och kreativa projekt."
     }
   }
 }

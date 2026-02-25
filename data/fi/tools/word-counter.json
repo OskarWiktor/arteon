@@ -44,6 +44,10 @@
         "Uniikkien sanojen laskenta",
         "Keskimääräinen sanan pituus",
         "Arvioitu lukuaika",
+        "Arvioitu puheaika",
+        "Tavulaskenta",
+        "Flesch-Kincaid luettavuuspistemäärä",
+        "Kielikohtaiset luettavuuskaavat (16 kieltä)",
         "Muunna isoiksi tai pieniksi kirjaimiksi",
         "Muunna lause- tai otsikkotyyliin",
         "Käännä kirjainkoko",
@@ -64,7 +68,7 @@
         },
         {
           "name": "Tarkista tilastot",
-          "text": "Vasemmassa paneelissa näet 8 mittaria: sanat, merkit, lauseet, kappaleet, uniikit sanat, sanapituus ja lukuaika."
+          "text": "Vasemmassa paneelissa näet 11 mittaria: sanat, merkit, lauseet, kappaleet, uniikit sanat, sanapituus ja lukuaika."
         },
         {
           "name": "Muunna teksti",
@@ -107,7 +111,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Tarkista tilastot",
-          "description": "Vasemmassa paneelissa näet 8 mittaria: sanat, merkit, lauseet, kappaleet, uniikit sanat, sanapituus ja lukuaika."
+          "description": "Vasemmassa paneelissa näet 11 mittaria: sanat, merkit, lauseet, kappaleet, uniikit sanat, sanapituus ja lukuaika."
         },
         {
           "icon": "RiTextWrap",
@@ -127,7 +131,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "8 tekstimittaria",
+      "title": "11 tekstimittaria",
       "description": "Laskuri analysoi tekstiä kahdeksalla mittarilla:",
       "grid": "two",
       "items": [

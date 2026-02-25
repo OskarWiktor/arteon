@@ -40,7 +40,7 @@ export default function PrivacyPolicyPage() {
               ΑΦΜ: <strong>9442284430</strong>, REGON: <strong>528888241</strong>
             </p>
             <p>
-              Επικοινωνία: <strong>kontakt@arteonagency.pl</strong>, τηλ.: <strong>+48 516 466 255</strong>.
+              Επικοινωνία: <strong>contact@arteonagency.com</strong>, τηλ.: <strong>+48 516 466 255</strong>.
             </p>
           </SectionInfo>
           <Gap variant="line" size="sm" />

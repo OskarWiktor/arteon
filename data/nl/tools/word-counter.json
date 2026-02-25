@@ -44,6 +44,10 @@
         "Unieke woorden tellen",
         "Gemiddelde woordlengte",
         "Geschatte leestijd",
+        "Geschatte spreektijd",
+        "Lettergreeptelling",
+        "Flesch-Kincaid leesbaarheidscore",
+        "Taalspecifieke leesbaarheidsformules (16 talen)",
         "Omzetten naar hoofdletters of kleine letters",
         "Omzetten naar zinsstijl of titelstijl",
         "Hoofdletters/kleine letters omkeren",
@@ -64,7 +68,7 @@
         },
         {
           "name": "Controleer de statistieken",
-          "text": "In het linkerpaneel ziet u 8 statistieken: woorden, tekens, zinnen, alinea's, unieke woorden, woordlengte en leestijd."
+          "text": "In het linkerpaneel ziet u 11 statistieken: woorden, tekens, zinnen, alinea's, unieke woorden, woordlengte en leestijd."
         },
         {
           "name": "Transformeer tekst",
@@ -107,7 +111,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Controleer de statistieken",
-          "description": "In het linkerpaneel ziet u 8 statistieken: woorden, tekens, zinnen, alinea's, unieke woorden, woordlengte en leestijd."
+          "description": "In het linkerpaneel ziet u 11 statistieken: woorden, tekens, zinnen, alinea's, unieke woorden, woordlengte en leestijd."
         },
         {
           "icon": "RiTextWrap",
@@ -127,7 +131,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "8 tekststatistieken",
+      "title": "11 tekststatistieken",
       "description": "De teller analyseert uw tekst op acht indicatoren:",
       "grid": "two",
       "items": [

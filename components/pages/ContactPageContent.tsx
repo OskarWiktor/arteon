@@ -16,6 +16,7 @@ export default function ContactPageContent({ locale }: { locale: Locale }) {
   if (!data) return null;
 
   const config = LOCALE_CONFIG[locale];
+  const email = locale === 'pl' ? 'kontakt@arteonagency.pl' : 'contact@arteonagency.com';
 
   return (
     <>
@@ -27,8 +28,8 @@ export default function ContactPageContent({ locale }: { locale: Locale }) {
         <SectionInfo title={data.intro.title}>
           <p>
             {data.intro.textBefore}{' '}
-            <a href="mailto:kontakt@arteonagency.pl" className="inline-link">
-              kontakt@arteonagency.pl
+            <a href={`mailto:${email}`} className="inline-link">
+              {email}
             </a>
             {data.intro.textAfter}
           </p>
@@ -48,7 +49,7 @@ export default function ContactPageContent({ locale }: { locale: Locale }) {
               icon: <RiMailLine className="h-6 w-6" />,
               description: (
                 <p>
-                  <a href="mailto:kontakt@arteonagency.pl">kontakt@arteonagency.pl</a>
+                  <a href={`mailto:${email}`}>{email}</a>
                 </p>
               ),
             },

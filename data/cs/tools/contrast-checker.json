@@ -25,7 +25,14 @@
   "schemas": {
     "software": {
       "name": "Tester kontrastu barev a čitelnosti textu – WCAG",
-      "alternateName": ["Tester čitelnosti barev", "Kontrola kontrastu textu a pozadí", "Kalkulátor kontrastu barev", "Tester kontrastu WCAG"],
+      "alternateName": [
+        "Tester čitelnosti barev",
+        "Kontrola kontrastu textu a pozadí",
+        "Kalkulátor kontrastu barev",
+        "Tester kontrastu WCAG",
+        "ADA nástroj pro kontrast barev",
+        "Section 508 kontrola kontrastu"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
       "description": "Zkontrolujte, zda jsou barvy textu a pozadí čitelné pro všechny uživatele. Nástroj vypočítá poměr kontrastu podle standardu WCAG a ukáže, zda splňujete požadavky přístupnosti.",
@@ -221,6 +228,20 @@
         },
         {
           "name": "Vyžadováno zákonem (směrnice EU)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Požadováno dle US ADA / Section 508",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Požadováno dle UK Equality Act 2010",
           "values": {
             "aa": true,
             "aaa": false

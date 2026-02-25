@@ -44,6 +44,10 @@
         "Contagem de palavras únicas",
         "Comprimento médio das palavras",
         "Tempo de leitura estimado",
+        "Tempo de fala estimado",
+        "Contagem de sílabas",
+        "Pontuação de legibilidade Flesch-Kincaid",
+        "Fórmulas de legibilidade adaptadas (16 idiomas)",
         "Converter para maiúsculas ou minúsculas",
         "Converter para estilo de frase ou de título",
         "Inverter maiúsculas/minúsculas",
@@ -64,7 +68,7 @@
         },
         {
           "name": "Verifique as estatísticas",
-          "text": "No painel esquerdo verá 8 métricas: palavras, caracteres, frases, parágrafos, palavras únicas, comprimento médio e tempo de leitura."
+          "text": "No painel esquerdo verá 11 métricas: palavras, caracteres, frases, parágrafos, palavras únicas, comprimento médio e tempo de leitura."
         },
         {
           "name": "Transforme o texto",
@@ -107,7 +111,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Verifique as estatísticas",
-          "description": "No painel esquerdo verá 8 métricas: palavras, caracteres, frases, parágrafos, palavras únicas, comprimento médio e tempo de leitura."
+          "description": "No painel esquerdo verá 11 métricas: palavras, caracteres, frases, parágrafos, palavras únicas, comprimento médio e tempo de leitura."
         },
         {
           "icon": "RiTextWrap",
@@ -127,7 +131,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "8 métricas de texto",
+      "title": "11 métricas de texto",
       "description": "O contador analisa o texto com oito indicadores:",
       "grid": "two",
       "items": [

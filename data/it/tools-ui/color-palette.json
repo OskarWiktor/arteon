@@ -47,6 +47,38 @@
     "appleMinimal": {
       "label": "Palette minimalista (ispirata ad Apple)",
       "description": "Un accento di colore vivace e diversi neutri molto chiari e delicati, una composizione tipica di interfacce con molto spazio bianco e ombre sottili."
+    },
+    "tetradic": {
+      "label": "Palette tetradica (quadrata)",
+      "description": "Quattro tonalità distanziate di 90 sulla ruota dei colori (vertici di un quadrato)  ricca ed equilibrata, ideale per temi UI complessi e visualizzazione dati."
+    },
+    "warmShift": {
+      "label": "Palette toni caldi",
+      "description": "Colori spostati verso l'estremità calda dello spettro (rossi, aranci, gialli)  evoca energia, calore e accessibilità."
+    },
+    "coolShift": {
+      "label": "Palette toni freddi",
+      "description": "Colori spostati verso l'estremità fredda dello spettro (blu, turchese, viola)  comunica calma, professionalità e fiducia."
+    },
+    "earthTones": {
+      "label": "Palette toni terra",
+      "description": "Marroni, oliva e ocra a bassa saturazione ispirati ai paesaggi naturali  perfetta per marchi ecologici e estetica rustica."
+    },
+    "neonVibrant": {
+      "label": "Palette neon vibrante",
+      "description": "Colori a saturazione massima con intensità elettrica  progettata per marketing audace, interfacce gaming e design d'impatto."
+    },
+    "vintageMuted": {
+      "label": "Palette vintage smorzata",
+      "description": "Toni desaturati e leggermente caldi che ricordano stampe antiche e fotografia retro  ideale per marchi con eredità e estetica nostalgica."
+    },
+    "highContrast": {
+      "label": "Palette alto contrasto",
+      "description": "Gamma estrema di luminosità dal quasi nero al quasi bianco con la tonalità base  eccellente per design accessibili e forte gerarchia visiva."
+    },
+    "sunsetGradient": {
+      "label": "Palette gradiente tramonto",
+      "description": "Una rotazione fluida delle tonalità da toni caldi a freddi, imitando un tramonto naturale  ideale per sezioni hero, sfondi e progetti creativi."
     }
   }
 }

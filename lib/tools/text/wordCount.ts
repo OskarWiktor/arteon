@@ -1,6 +1,7 @@
 import type { Locale } from '@/types/locale';
 import type { TextMetrics } from '@/types/tools/text';
 export type { TextMetrics } from '@/types/tools/text';
+import { calculateReadability, calculateSpeakingTime } from './readability';
 
 // ---------------------------------------------------------------------------
 // Core counting helpers
@@ -47,8 +48,9 @@ export function calculateReadingTime(words: number): number {
   return Math.max(1, Math.ceil(words / WORDS_PER_MINUTE));
 }
 
-export function analyzeText(text: string): TextMetrics {
+export function analyzeText(text: string, locale: Locale = 'en'): TextMetrics {
   const words = countWords(text);
+  const readability = calculateReadability(text, locale);
   return {
     words,
     charsWithSpaces: countCharsWithSpaces(text),
@@ -58,6 +60,10 @@ export function analyzeText(text: string): TextMetrics {
     uniqueWords: countUniqueWords(text),
     avgWordLength: calculateAvgWordLength(text),
     readingTimeMinutes: calculateReadingTime(words),
+    syllables: readability.syllables,
+    fleschScore: readability.fleschScore,
+    fleschGrade: readability.fleschGrade,
+    speakingTimeMinutes: calculateSpeakingTime(words),
   };
 }
 

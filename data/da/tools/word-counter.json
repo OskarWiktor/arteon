@@ -44,6 +44,10 @@
         "Optælling af unikke ord",
         "Gennemsnitlig ordlængde",
         "Estimeret læsetid",
+        "Anslået taletid",
+        "Stavelsestælling",
+        "Flesch-Kincaid læsbarhedsscore",
+        "Sprogspecifikke læsbarhedsformler (16 sprog)",
         "Konvertér til store eller små bogstaver",
         "Konvertér til sætnings- eller titelstil",
         "Invertér store/små bogstaver",
@@ -64,7 +68,7 @@
         },
         {
           "name": "Tjek statistikken",
-          "text": "I venstre panel ser du 8 målinger: ord, tegn, sætninger, afsnit, unikke ord, ordlængde og læsetid."
+          "text": "I venstre panel ser du 11 målinger: ord, tegn, sætninger, afsnit, unikke ord, ordlængde og læsetid."
         },
         {
           "name": "Transformer tekst",
@@ -107,7 +111,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Tjek statistikken",
-          "description": "I venstre panel ser du 8 målinger: ord, tegn, sætninger, afsnit, unikke ord, ordlængde og læsetid."
+          "description": "I venstre panel ser du 11 målinger: ord, tegn, sætninger, afsnit, unikke ord, ordlængde og læsetid."
         },
         {
           "icon": "RiTextWrap",
@@ -127,7 +131,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "8 tekstmålinger",
+      "title": "11 tekstmålinger",
       "description": "Tælleren analyserer din tekst med otte indikatorer:",
       "grid": "two",
       "items": [

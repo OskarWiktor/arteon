@@ -47,6 +47,38 @@
     "appleMinimal": {
       "label": "Paleta minimalista (inspirada en Apple)",
       "description": "Un acento de color llamativo y varios neutros muy claros y suaves, un diseño típico de interfaces con mucho espacio en blanco y sombras sutiles."
+    },
+    "tetradic": {
+      "label": "Paleta tetrádica (cuadrada)",
+      "description": "Cuatro tonos separados 90 en el círculo cromático  rica y equilibrada, ideal para temas UI complejos y visualización de datos."
+    },
+    "warmShift": {
+      "label": "Paleta de tonos cálidos",
+      "description": "Colores desplazados hacia el extremo cálido del espectro (rojos, naranjas, amarillos)  evoca energía, calidez y cercanía."
+    },
+    "coolShift": {
+      "label": "Paleta de tonos fríos",
+      "description": "Colores desplazados hacia el extremo frío del espectro (azules, turquesas, morados)  transmite calma, profesionalismo y confianza."
+    },
+    "earthTones": {
+      "label": "Paleta de tonos tierra",
+      "description": "Marrones, olivas y ocres de baja saturación inspirados en paisajes naturales  perfecta para marcas ecológicas y estética rústica."
+    },
+    "neonVibrant": {
+      "label": "Paleta neón vibrante",
+      "description": "Colores de máxima saturación con intensidad eléctrica  diseñada para marketing audaz, interfaces de juegos y diseños llamativos."
+    },
+    "vintageMuted": {
+      "label": "Paleta vintage apagada",
+      "description": "Tonos desaturados y ligeramente cálidos que recuerdan impresiones antiguas y fotografía retro  ideal para marcas con herencia y estética nostálgica."
+    },
+    "highContrast": {
+      "label": "Paleta de alto contraste",
+      "description": "Rango extremo de luminosidad desde casi negro hasta casi blanco con el tono base  excelente para diseños accesibles y fuerte jerarquía visual."
+    },
+    "sunsetGradient": {
+      "label": "Paleta gradiente atardecer",
+      "description": "Una rotación suave de tonos de cálidos a fríos, imitando un atardecer natural  ideal para secciones hero, fondos y proyectos creativos."
     }
   }
 }

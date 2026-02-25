@@ -44,6 +44,10 @@
         "Räkning av unika ord",
         "Genomsnittlig ordlängd",
         "Uppskattad lästid",
+        "Uppskattad taltid",
+        "Stavelseräkning",
+        "Flesch-Kincaid läsbarhetspoäng",
+        "Språkspecifika läsbarhetsformler (16 språk)",
         "Konvertera till versaler eller gemener",
         "Konvertera till menings- eller titelstil",
         "Invertera versaler/gemener",
@@ -64,7 +68,7 @@
         },
         {
           "name": "Kontrollera statistik",
-          "text": "I vänstra panelen ser du 8 mätvärden: ord, tecken, meningar, stycken, unika ord, ordlängd och lästid."
+          "text": "I vänstra panelen ser du 11 mätvärden: ord, tecken, meningar, stycken, unika ord, ordlängd och lästid."
         },
         {
           "name": "Transformera text",
@@ -107,7 +111,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Kontrollera statistik",
-          "description": "I vänstra panelen ser du 8 mätvärden: ord, tecken, meningar, stycken, unika ord, ordlängd och lästid."
+          "description": "I vänstra panelen ser du 11 mätvärden: ord, tecken, meningar, stycken, unika ord, ordlängd och lästid."
         },
         {
           "icon": "RiTextWrap",
@@ -127,7 +131,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "8 textmätvärden",
+      "title": "11 textmätvärden",
       "description": "Räknaren analyserar din text med åtta indikatorer:",
       "grid": "two",
       "items": [

@@ -2,14 +2,14 @@
   "toolKey": "colorPalette",
   "locale": "fi",
   "metadata": {
-    "title": "Ilmainen väripalettien generaattori – 9 skeemaa",
-    "description": "Luo 9 väripalettia yhdestä väristä: monokromaattinen, komplementaarinen, triadinen, pastellinen ja muita. Kopioi HEX-koodit yhdellä napsautuksella.",
+    "title": "Ilmainen väripalettien generaattori – 17 skeemaa",
+    "description": "Luo 17 väripalettia yhdestä väristä: monokromaattinen, komplementaarinen, triadinen, pastellinen ja muita. Kopioi HEX-koodit yhdellä napsautuksella.",
     "ogImage": "/assets/tools/color-palette-generator/varipaletti-generaattori-fi.webp",
     "path": "/fi/tyokalut/varipaletti-generaattori"
   },
   "hero": {
-    "title": "Luo 9 väripalettia yhdestä perusväristä",
-    "description": "Syötä perusväri, ja työkalu luo 9 harmonista väripalettia: monokromaattinen, komplementaarinen, triadinen, pastelli ja muita. Jokainen väri voidaan kopioida HEX-koodillaan.",
+    "title": "Luo 17 väripalettia yhdestä perusväristä",
+    "description": "Syötä perusväri, ja työkalu luo 17 harmonista väripalettia: monokromaattinen, komplementaarinen, triadinen, pastelli ja muita. Jokainen väri voidaan kopioida HEX-koodillaan.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Väripalettien generaattori – 9 väriskeemaa",
+      "name": "Väripalettien generaattori – 17 väriskeemaa",
       "alternateName": ["Väriskeemojen generaattori", "Värigeneraattori", "Värien sovitustyökalu", "Väriharmonian generaattori"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Ilmainen väripalettien generaattori. Syötä yksi HEX-väri ja työkalu luo 9 skeemaa: monokromaattinen, analoginen, komplementaarinen, triadinen, jaettu komplementaarinen, pastellinen, tumma, tonaalinen ja minimalistinen. Jokainen väri voidaan kopioida HEX-koodilla ja HSL-arvolla.",
+      "description": "Ilmainen väripalettien generaattori. Syötä yksi HEX-väri ja työkalu luo 17 skeemaa: monokromaattinen, analoginen, komplementaarinen, triadinen, jaettu komplementaarinen, pastellinen, tumma, tonaalinen ja minimalistinen. Jokainen väri voidaan kopioida HEX-koodilla ja HSL-arvolla.",
       "featureList": [
         "Monokromaattinen skeema – yhden värin sävyt",
         "Analoginen skeema – vierekkäiset värit väriympyrällä",
@@ -49,7 +49,7 @@
     },
     "howTo": {
       "name": "Näin luot väripaletin perusväristä",
-      "description": "Näin luot 9 väripalettia perusväristä: monokromaattinen, komplementaarinen, triadinen, pastelli ja muita.",
+      "description": "Näin luot 17 väripalettia perusväristä: monokromaattinen, komplementaarinen, triadinen, pastelli ja muita.",
       "steps": [
         {
           "name": "Valitse perusväri",
@@ -61,7 +61,7 @@
         },
         {
           "name": "Selaa paletteja",
-          "text": "Työkalu luo automaattisesti 9 erilaista palettia: monokromaattinen, analoginen, komplementaarinen, triadinen, jaettu komplementaarinen, pastelli, tumma, tonaalinen ja minimalistinen."
+          "text": "Työkalu luo automaattisesti 17 erilaista palettia: monokromaattinen, analoginen, komplementaarinen, triadinen, jaettu komplementaarinen, pastelli, tumma, tonaalinen ja minimalistinen."
         },
         {
           "name": "Kopioi värit",
@@ -78,7 +78,7 @@
     {
       "type": "sectionBasic",
       "title": "Miksi luoda väripaletti?",
-      "html": "<p class=\"text-mid\">Yhtenäinen väripaletti on jokaisen visuaalisen projektin perusta – verkkosivuista logoihin ja painotuotteisiin. Yhteensopivien värien manuaalinen valinta vaatii väriteorian tuntemusta. Generaattori automatisoi tämän prosessin: syötät perusvärin (esim. logon värin), ja työkalu luo 9 värisarjaa hyväksi havaituilla väriharmoniaskeemoilla.</p><p class=\"text-mid mt-3\">Jokaisella luodulla värillä on oma HEX-koodinsa (esim. #496ba2) ja HSL-arvo (hue, saturation, lightness). HEX-koodi voidaan liittää suoraan CSS:ään, Figmaan, Canvaan tai mihin tahansa grafiikkasovellukseen.</p>",
+      "html": "<p class=\"text-mid\">Yhtenäinen väripaletti on jokaisen visuaalisen projektin perusta – verkkosivuista logoihin ja painotuotteisiin. Yhteensopivien värien manuaalinen valinta vaatii väriteorian tuntemusta. Generaattori automatisoi tämän prosessin: syötät perusvärin (esim. logon värin), ja työkalu luo 17 värisarjaa hyväksi havaituilla väriharmoniaskeemoilla.</p><p class=\"text-mid mt-3\">Jokaisella luodulla värillä on oma HEX-koodinsa (esim. #496ba2) ja HSL-arvo (hue, saturation, lightness). HEX-koodi voidaan liittää suoraan CSS:ään, Figmaan, Canvaan tai mihin tahansa grafiikkasovellukseen.</p>",
       "imageSrc": "/assets/tools/color-palette-generator/varipaletti-generaattori-fi.webp",
       "imageAlt": "Väripalettien generaattori – Arteon"
     },
@@ -99,7 +99,7 @@
         },
         {
           "title": "2. Vahvista valintasi",
-          "description": "Update Color -painiketta napsauttamalla työkalu luo automaattisesti 9 palettia eri väriharmoniaskeemoilla.",
+          "description": "Update Color -painiketta napsauttamalla työkalu luo automaattisesti 17 palettia eri väriharmoniaskeemoilla.",
           "icon": "RiCheckboxCircleLine"
         },
         {
@@ -116,7 +116,7 @@
     {
       "type": "sectionSteps",
       "title": "Mitkä väriskeemoja työkalu luo?",
-      "description": "Generaattori luo 9 tyyppistä palettia – kukin perustuu eri väriteorian periaatteeseen:",
+      "description": "Generaattori luo 17 tyyppistä palettia – kukin perustuu eri väriteorian periaatteeseen:",
       "grid": "two",
       "items": [
         {
@@ -219,7 +219,7 @@
         {
           "icon": "RiRefreshLine",
           "title": "Paletit eivät muutu värin syöttämisen jälkeen",
-          "description": "Pelkkä HEX-koodin syöttäminen ei luo paletteja automaattisesti – muutos on vahvistettava painamalla <strong>Päivitä väri</strong>. Vasta vahvistuksen jälkeen työkalu laskee kaikki 9 skeemaa."
+          "description": "Pelkkä HEX-koodin syöttäminen ei luo paletteja automaattisesti – muutos on vahvistettava painamalla <strong>Päivitä väri</strong>. Vasta vahvistuksen jälkeen työkalu laskee kaikki 17 skeemaa."
         },
         {
           "icon": "RiErrorWarningLine",

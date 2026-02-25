@@ -47,6 +47,38 @@
     "appleMinimal": {
       "label": "Minimalistische Palette (Apple inspiriert)",
       "description": "Ein kräftiger Farbakzent und mehrere sehr helle, weiche Neutraltöne - ein Layout, typisch für Oberflächen mit viel Weißraum und dezenten Schatten."
+    },
+    "tetradic": {
+      "label": "Tetradische (Quadrat) Palette",
+      "description": "Vier Farbtöne im Abstand von 90 auf dem Farbkreis (Ecken eines Quadrats)  reich und ausgewogen, ideal für komplexe UI-Themes und Datenvisualisierung."
+    },
+    "warmShift": {
+      "label": "Warme Palette",
+      "description": "Farben, die zum warmen Ende des Spektrums verschoben sind (Rot, Orange, Gelb)  vermittelt Energie, Wärme und Zugänglichkeit."
+    },
+    "coolShift": {
+      "label": "Kühle Palette",
+      "description": "Farben, die zum kühlen Ende des Spektrums verschoben sind (Blau, Türkis, Violett)  vermittelt Ruhe, Professionalität und Vertrauen."
+    },
+    "earthTones": {
+      "label": "Erdtöne-Palette",
+      "description": "Gering gesättigte Braun-, Oliv- und Ockertöne, inspiriert von natürlichen Landschaften  perfekt für Öko-Marken und rustikale Ästhetik."
+    },
+    "neonVibrant": {
+      "label": "Neon-Palette",
+      "description": "Maximal gesättigte Farben mit elektrischer Intensität  entwickelt für mutiges Marketing, Gaming-Interfaces und auffällige Designs."
+    },
+    "vintageMuted": {
+      "label": "Vintage-Palette",
+      "description": "Entsättigte, leicht warme Töne, die an alte Drucke und Retro-Fotografie erinnern  ideal für traditionsreiche Marken und nostalgische Ästhetik."
+    },
+    "highContrast": {
+      "label": "Hochkontrast-Palette",
+      "description": "Extremer Helligkeitsbereich von fast Schwarz bis fast Weiß mit dem Basisfarbton  hervorragend für barrierefreie Designs und starke visuelle Hierarchie."
+    },
+    "sunsetGradient": {
+      "label": "Sonnenuntergang-Palette",
+      "description": "Eine fließende Farbtonrotation von warmen zu kühlen Tönen, die einen natürlichen Sonnenuntergang nachahmt  ideal für Hero-Bereiche, Hintergründe und kreative Projekte."
     }
   }
 }

@@ -2,14 +2,14 @@
   "toolKey": "colorPalette",
   "locale": "ro",
   "metadata": {
-    "title": "Generator gratuit de palete de culori – 9 scheme",
-    "description": "Generați 9 palete de culori dintr-o culoare: monocromatică, complementară, triadică, pastel și altele. Copiați codurile HEX cu un clic.",
+    "title": "Generator gratuit de palete de culori – 17 scheme",
+    "description": "Generați 17 palete de culori dintr-o culoare: monocromatică, complementară, triadică, pastel și altele. Copiați codurile HEX cu un clic.",
     "ogImage": "/assets/tools/color-palette-generator/generator-de-palete-de-culori-ro.webp",
     "path": "/ro/instrumente/generator-de-palete-de-culori"
   },
   "hero": {
-    "title": "Generează 9 palete de culori dintr-o singură culoare de bază",
-    "description": "Introduceți o culoare de bază, iar instrumentul va genera 9 palete armonioase: monocromatică, complementară, triadică, pastel și altele. Fiecare culoare poate fi copiată cu codul HEX.",
+    "title": "Generează 17 palete de culori dintr-o singură culoare de bază",
+    "description": "Introduceți o culoare de bază, iar instrumentul va genera 17 palete armonioase: monocromatică, complementară, triadică, pastel și altele. Fiecare culoare poate fi copiată cu codul HEX.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Generator de palete de culori – 9 scheme de culori",
+      "name": "Generator de palete de culori – 17 scheme de culori",
       "alternateName": [
         "Generator de scheme de culori",
         "Generator de culori HEX",
@@ -35,7 +35,7 @@
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Generator gratuit de palete de culori. Introduceți o culoare HEX și instrumentul va genera 9 scheme: monocromatică, analogă, complementară, triadică, complementară împărțită, pastel, întunecată, tonală și minimalistă. Fiecare culoare poate fi copiată cu codul HEX și valoarea HSL.",
+      "description": "Generator gratuit de palete de culori. Introduceți o culoare HEX și instrumentul va genera 17 scheme: monocromatică, analogă, complementară, triadică, complementară împărțită, pastel, întunecată, tonală și minimalistă. Fiecare culoare poate fi copiată cu codul HEX și valoarea HSL.",
       "featureList": [
         "Schemă monocromatică – nuanțe ale unei culori",
         "Schemă analogă – culori vecine pe roata culorilor",
@@ -56,7 +56,7 @@
     },
     "howTo": {
       "name": "Cum să generați o paletă de culori dintr-o culoare de bază",
-      "description": "Cum să generați 9 palete de culori dintr-o culoare de bază: monocromatică, complementară, triadică, pastel și altele. Fiecare culoare poate fi copiată cu codul HEX.",
+      "description": "Cum să generați 17 palete de culori dintr-o culoare de bază: monocromatică, complementară, triadică, pastel și altele. Fiecare culoare poate fi copiată cu codul HEX.",
       "steps": [
         {
           "name": "Alegeți o culoare de bază",
@@ -68,7 +68,7 @@
         },
         {
           "name": "Răsfoiți paletele",
-          "text": "Instrumentul va genera automat 9 palete diferite: monocromatică, analogică, complementară, triadică, split-complementară, pastel, întunecata, tonală și minimalistă."
+          "text": "Instrumentul va genera automat 17 palete diferite: monocromatică, analogică, complementară, triadică, split-complementară, pastel, întunecata, tonală și minimalistă."
         },
         {
           "name": "Copiați culorile",
@@ -85,7 +85,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să generați o paletă de culori?",
-      "html": "<p class=\"text-mid\">O paletă de culori consecventă este baza oricărui proiect vizual – de la un site web, la un logo, la materiale tipărite. Selectarea manuală a culorilor care funcționează împreună necesită cunoștințe de teoria culorilor. Generatorul face acest lucru automat: furnizați o culoare de bază (ex. culoarea logo-ului), iar instrumentul creează 9 seturi de culori bazate pe scheme dovedite de armonie a culorilor.</p><p class=\"text-mid mt-3\">Fiecare culoare generată vine cu codul HEX (ex. #496ba2) și valoarea HSL (nuanță, saturație, luminozitate). Codul HEX poate fi lipit direct în CSS, Figma, Canva sau orice aplicație grafică.</p>",
+      "html": "<p class=\"text-mid\">O paletă de culori consecventă este baza oricărui proiect vizual – de la un site web, la un logo, la materiale tipărite. Selectarea manuală a culorilor care funcționează împreună necesită cunoștințe de teoria culorilor. Generatorul face acest lucru automat: furnizați o culoare de bază (ex. culoarea logo-ului), iar instrumentul creează 17 seturi de culori bazate pe scheme dovedite de armonie a culorilor.</p><p class=\"text-mid mt-3\">Fiecare culoare generată vine cu codul HEX (ex. #496ba2) și valoarea HSL (nuanță, saturație, luminozitate). Codul HEX poate fi lipit direct în CSS, Figma, Canva sau orice aplicație grafică.</p>",
       "imageSrc": "/assets/tools/color-palette-generator/generator-de-palete-de-culori-ro.webp",
       "imageAlt": "Generator de palete de culori – Arteon"
     },
@@ -106,7 +106,7 @@
         },
         {
           "title": "2. Confirmați alegerea",
-          "description": "După clic pe butonul Actualizează culoarea, instrumentul va genera automat 9 palete bazate pe diferite scheme de armonie a culorilor.",
+          "description": "După clic pe butonul Actualizează culoarea, instrumentul va genera automat 17 palete bazate pe diferite scheme de armonie a culorilor.",
           "icon": "RiCheckboxCircleLine"
         },
         {
@@ -123,7 +123,7 @@
     {
       "type": "sectionSteps",
       "title": "Ce scheme de culori generează instrumentul?",
-      "description": "Generatorul creează 9 tipuri de palete – fiecare bazată pe un principiu diferit al teoriei culorilor:",
+      "description": "Generatorul creează 17 tipuri de palete – fiecare bazată pe un principiu diferit al teoriei culorilor:",
       "grid": "two",
       "items": [
         {
@@ -231,7 +231,7 @@
         {
           "icon": "RiRefreshLine",
           "title": "Paletele nu se schimbă după introducerea culorii",
-          "description": "Simpla tastare a unui cod HEX nu generează automat paletele – trebuie să confirmați schimbarea cu butonul Actualizează culoarea. Doar după confirmare instrumentul recalculează toate cele 9 scheme."
+          "description": "Simpla tastare a unui cod HEX nu generează automat paletele – trebuie să confirmați schimbarea cu butonul Actualizează culoarea. Doar după confirmare instrumentul recalculează toate cele 17 scheme."
         },
         {
           "icon": "RiErrorWarningLine",

@@ -31,7 +31,9 @@
         "Textkontrast-Checker WCAG 2.1",
         "AA- und AAA-Kontrast-Checker",
         "Farben auf Barrierefreiheit prüfen",
-        "Farben auf Lesbarkeit prüfen"
+        "Farben auf Lesbarkeit prüfen",
+        "ADA Farbkontrast-Tool",
+        "Section 508 Kontrast-Checker"
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
@@ -229,6 +231,20 @@
         },
         {
           "name": "Gesetzlich vorgeschrieben (EU-Richtlinie)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Erforderlich nach US ADA / Section 508",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Erforderlich nach UK Equality Act 2010",
           "values": {
             "aa": true,
             "aaa": false

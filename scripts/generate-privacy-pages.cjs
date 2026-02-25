@@ -17,7 +17,7 @@ const PAGES = {
       {
         title: '1. Υπεύθυνος επεξεργασίας',
         content:
-          '<p>Υπεύθυνος επεξεργασίας προσωπικών δεδομένων είναι η Arteon με έδρα στον Δήμο Czernichów, Zagacie, ul. Jasminowa 36, 32-070, Πολωνία.</p><p>ΑΦΜ: <strong>9442284430</strong>, REGON: <strong>528888241</strong></p><p>Επικοινωνία: <strong>kontakt@arteonagency.pl</strong>, τηλ.: <strong>+48 516 466 255</strong>.</p>',
+          '<p>Υπεύθυνος επεξεργασίας προσωπικών δεδομένων είναι η Arteon με έδρα στον Δήμο Czernichów, Zagacie, ul. Jasminowa 36, 32-070, Πολωνία.</p><p>ΑΦΜ: <strong>9442284430</strong>, REGON: <strong>528888241</strong></p><p>Επικοινωνία: <strong>contact@arteonagency.com</strong>, τηλ.: <strong>+48 516 466 255</strong>.</p>',
       },
       {
         title: '2. Εύρος δεδομένων',
@@ -69,7 +69,7 @@ const PAGES = {
       {
         title: '1. Администратор на данни',
         content:
-          '<p>Администратор на лични данни е Arteon със седалище в община Czernichów, Zagacie, ул. Jasminowa 36, 32-070, Полша.</p><p>ДДС номер: <strong>9442284430</strong>, REGON: <strong>528888241</strong></p><p>Контакт: <strong>kontakt@arteonagency.pl</strong>, тел.: <strong>+48 516 466 255</strong>.</p>',
+          '<p>Администратор на лични данни е Arteon със седалище в община Czernichów, Zagacie, ул. Jasminowa 36, 32-070, Полша.</p><p>ДДС номер: <strong>9442284430</strong>, REGON: <strong>528888241</strong></p><p>Контакт: <strong>contact@arteonagency.com</strong>, тел.: <strong>+48 516 466 255</strong>.</p>',
       },
       {
         title: '2. Обхват на данните',
@@ -118,7 +118,7 @@ const PAGES = {
       {
         title: '1. Mai kula da bayanai',
         content:
-          '<p>Mai kula da bayanan sirri shine Arteon da ke zaune a \u0199asar Czernichów, Zagacie, ul. Jasminowa 36, 32-070, Poland.</p><p>NIP: <strong>9442284430</strong>, REGON: <strong>528888241</strong></p><p>Tuntuɓa: <strong>kontakt@arteonagency.pl</strong>, waya: <strong>+48 516 466 255</strong>.</p>',
+          '<p>Mai kula da bayanan sirri shine Arteon da ke zaune a \u0199asar Czernichów, Zagacie, ul. Jasminowa 36, 32-070, Poland.</p><p>NIP: <strong>9442284430</strong>, REGON: <strong>528888241</strong></p><p>Tuntuɓa: <strong>contact@arteonagency.com</strong>, waya: <strong>+48 516 466 255</strong>.</p>',
       },
       {
         title: '2. Irin bayanan da ake tattarawa',
@@ -167,7 +167,7 @@ const PAGES = {
       {
         title: '1. Olùdarí dátà',
         content:
-          '<p>Olùdarí dátà tìkan ni Arteon tí ilé iṣẹ́ rẹ̀ wà ní àgbègbè Czernichów, Zagacie, ul. Jasminowa 36, 32-070, Poland.</p><p>NIP: <strong>9442284430</strong>, REGON: <strong>528888241</strong></p><p>Ìkànsí: <strong>kontakt@arteonagency.pl</strong>, tẹlifóònù: <strong>+48 516 466 255</strong>.</p>',
+          '<p>Olùdarí dátà tìkan ni Arteon tí ilé iṣẹ́ rẹ̀ wà ní àgbègbè Czernichów, Zagacie, ul. Jasminowa 36, 32-070, Poland.</p><p>NIP: <strong>9442284430</strong>, REGON: <strong>528888241</strong></p><p>Ìkànsí: <strong>contact@arteonagency.com</strong>, tẹlifóònù: <strong>+48 516 466 255</strong>.</p>',
       },
       {
         title: '2. Ìwọ̀n dátà tí a ń kó jọ',
@@ -216,7 +216,7 @@ const PAGES = {
       {
         title: '1. Databestuurder',
         content:
-          '<p>Die bestuurder van persoonlike data is Arteon met hoofkantoor in die gemeente Czernichów, Zagacie, ul. Jasminowa 36, 32-070, Pole.</p><p>BTW-nommer: <strong>9442284430</strong>, REGON: <strong>528888241</strong></p><p>Kontak: <strong>kontakt@arteonagency.pl</strong>, tel.: <strong>+48 516 466 255</strong>.</p>',
+          '<p>Die bestuurder van persoonlike data is Arteon met hoofkantoor in die gemeente Czernichów, Zagacie, ul. Jasminowa 36, 32-070, Pole.</p><p>BTW-nommer: <strong>9442284430</strong>, REGON: <strong>528888241</strong></p><p>Kontak: <strong>contact@arteonagency.com</strong>, tel.: <strong>+48 516 466 255</strong>.</p>',
       },
       {
         title: '2. Omvang van data',

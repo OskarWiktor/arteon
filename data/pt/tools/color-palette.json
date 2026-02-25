@@ -2,14 +2,14 @@
   "toolKey": "colorPalette",
   "locale": "pt",
   "metadata": {
-    "title": "Gerador gratuito de paletas de cores – 9 esquemas",
-    "description": "Gere 9 paletas de cores a partir de uma cor: monocromática, complementar, triádica, pastel e mais. Copie os códigos HEX com um clique.",
+    "title": "Gerador gratuito de paletas de cores – 17 esquemas",
+    "description": "Gere 17 paletas de cores a partir de uma cor: monocromática, complementar, triádica, pastel e mais. Copie os códigos HEX com um clique.",
     "ogImage": "/assets/tools/color-palette-generator/gerador-de-paletas-de-cores-pt.webp",
     "path": "/pt/ferramentas/gerador-de-paletas-de-cores"
   },
   "hero": {
-    "title": "Gere 9 paletas de cores a partir de uma cor base",
-    "description": "Escolha uma cor de base e gere 9 paletas harmoniosas. Monocromática, complementar, triádica, pastel, escura e mais – todos os cálculos são executados localmente no seu navegador.",
+    "title": "Gere 17 paletas de cores a partir de uma cor base",
+    "description": "Escolha uma cor de base e gere 17 paletas harmoniosas. Monocromática, complementar, triádica, pastel, escura e mais – todos os cálculos são executados localmente no seu navegador.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Gerador de paletas de cores – 9 esquemas de cores",
+      "name": "Gerador de paletas de cores – 17 esquemas de cores",
       "alternateName": [
         "Gerador de paletas gratuito",
         "Esquemas de cores a partir de uma cor",
@@ -36,7 +36,7 @@
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Gerador gratuito de paletas de cores. Introduza uma cor HEX e a ferramenta gerará 9 esquemas: monocromático, análogo, complementar, triádico, complementar dividido, pastel, escuro, tonal e minimalista. Cada cor pode ser copiada com o código HEX e valor HSL.",
+      "description": "Gerador gratuito de paletas de cores. Introduza uma cor HEX e a ferramenta gerará 17 esquemas: monocromático, análogo, complementar, triádico, complementar dividido, pastel, escuro, tonal e minimalista. Cada cor pode ser copiada com o código HEX e valor HSL.",
       "featureList": [
         "Esquema monocromático – tons de uma cor",
         "Esquema análogo – cores vizinhas na roda cromática",
@@ -57,7 +57,7 @@
     },
     "howTo": {
       "name": "Como gerar paletas de cores a partir de uma cor",
-      "description": "Escolha uma cor de base e obtenha 9 paletas harmoniosas com códigos HEX copiáveis.",
+      "description": "Escolha uma cor de base e obtenha 17 paletas harmoniosas com códigos HEX copiáveis.",
       "steps": [
         {
           "name": "Escolher a cor de base",
@@ -65,7 +65,7 @@
         },
         {
           "name": "Ver as paletas",
-          "text": "A ferramenta gera automaticamente 9 paletas com várias cores harmoniosas cada."
+          "text": "A ferramenta gera automaticamente 17 paletas com várias cores harmoniosas cada."
         },
         {
           "name": "Copiar os códigos HEX",
@@ -82,7 +82,7 @@
     {
       "type": "sectionBasic",
       "title": "Gerar paletas a partir de uma única cor",
-      "html": "<p class=\"text-mid\">O gerador de paletas cria 9 paletas diferentes a partir de uma única cor de base, apoiando-se na teoria das cores. Cada paleta tem uma composição diferente – das variações monocromáticas às cores complementares contrastantes.</p><p class=\"text-mid mt-3\">Todos os cálculos baseiam-se no espaço cromático HSL (Tonalidade, Saturação, Luminosidade). A tonalidade determina a cor de base, a saturação a intensidade e a luminosidade o caráter claro ou escuro. Este modelo corresponde à perceção humana das cores e presta-se perfeitamente à geração de paletas.</p>",
+      "html": "<p class=\"text-mid\">O gerador de paletas cria 17 paletas diferentes a partir de uma única cor de base, apoiando-se na teoria das cores. Cada paleta tem uma composição diferente – das variações monocromáticas às cores complementares contrastantes.</p><p class=\"text-mid mt-3\">Todos os cálculos baseiam-se no espaço cromático HSL (Tonalidade, Saturação, Luminosidade). A tonalidade determina a cor de base, a saturação a intensidade e a luminosidade o caráter claro ou escuro. Este modelo corresponde à perceção humana das cores e presta-se perfeitamente à geração de paletas.</p>",
       "imageSrc": "/assets/tools/color-palette-generator/gerador-de-paletas-de-cores-pt.webp",
       "imageAlt": "Gerador de paletas de cores – Arteon"
     },
@@ -104,7 +104,7 @@
         {
           "icon": "RiColorFilterLine",
           "title": "2. Ver as paletas",
-          "description": "A ferramenta gera automaticamente 9 paletas com várias cores harmoniosas."
+          "description": "A ferramenta gera automaticamente 17 paletas com várias cores harmoniosas."
         },
         {
           "icon": "RiFileCopyLine",
@@ -119,7 +119,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "9 tipos de paletas – qual convém ao seu projeto?",
+      "title": "17 tipos de paletas – qual convém ao seu projeto?",
       "description": "Cada paleta tem um caráter diferente:",
       "grid": "three",
       "items": [
@@ -228,7 +228,7 @@
         {
           "icon": "RiRefreshLine",
           "title": "As paletas não mudam após introduzir uma cor",
-          "description": "Simplesmente digitar um código HEX não gera automaticamente as paletas: deve confirmar a alteração com o botão Atualizar cor. Só após a confirmação é que a ferramenta recalcula os 9 esquemas."
+          "description": "Simplesmente digitar um código HEX não gera automaticamente as paletas: deve confirmar a alteração com o botão Atualizar cor. Só após a confirmação é que a ferramenta recalcula os 17 esquemas."
         },
         {
           "icon": "RiErrorWarningLine",
@@ -253,8 +253,8 @@
       "items": [
         {
           "question": "Quantas paletas a ferramenta gera?",
-          "answer": "A ferramenta gera 9 paletas diferentes a partir de uma única cor de base: monocromática, análoga, complementar, triádica, complementar dividida, pastel, escura, tonal (Material Design) e minimalista (estilo Apple).",
-          "answerSchemaText": "9 paletas: monocromática, análoga, complementar, triádica, complementar dividida, pastel, escura, tonal, minimalista."
+          "answer": "A ferramenta gera 17 paletas diferentes a partir de uma única cor de base: monocromática, análoga, complementar, triádica, complementar dividida, pastel, escura, tonal (Material Design) e minimalista (estilo Apple).",
+          "answerSchemaText": "17 paletas: monocromática, análoga, complementar, triádica, complementar dividida, pastel, escura, tonal, minimalista."
         },
         {
           "question": "O que é uma paleta monocromática?",

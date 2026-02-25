@@ -47,6 +47,38 @@
     "appleMinimal": {
       "label": "Minimalistinen paletti (Apple-henkinen)",
       "description": "Näkyvä väriaksentti ja useita hyvin vaaleita, pehmeitä neutraaleja sävyjä – asettelu tyypillinen käyttöliittymille, joissa on paljon valkoista tilaa ja hienovaraisia varjoja."
+    },
+    "tetradic": {
+      "label": "Tetradinen (neliö) paletti",
+      "description": "Neljä sävyä 90 välein väriympyrällä (neliön kärjet)  rikas ja tasapainoinen, ihanteellinen monimutkaisiin UI-teemoihin ja datavisualisointiin."
+    },
+    "warmShift": {
+      "label": "Lämmin paletti",
+      "description": "Värit siirretty spektrin lämpimään päähän (punaiset, oranssit, keltaiset)  herättää energiaa, lämpöä ja lähestyttävyyttä."
+    },
+    "coolShift": {
+      "label": "Viileä paletti",
+      "description": "Värit siirretty spektrin viileään päähän (siniset, turkoosit, violetit)  viestii rauhallisuutta, ammattimaisuutta ja luottamusta."
+    },
+    "earthTones": {
+      "label": "Maasävypaletti",
+      "description": "Matalasti kyllästetyt ruskeat, oliivit ja okrat luonnonmaisemista inspiroituneina  täydellinen ekologisille brändeille ja maalaismaiselle estetiikalle."
+    },
+    "neonVibrant": {
+      "label": "Neon-värikäs paletti",
+      "description": "Maksimaalisesti kyllästetyt värit sähköisellä intensiteetillä  suunniteltu rohkeaan markkinointiin, peliliittymiin ja huomiota herättäviin designeihin."
+    },
+    "vintageMuted": {
+      "label": "Vintage-vaimennettu paletti",
+      "description": "Kyllästämättömät, hieman lämpimät sävyt jotka muistuttavat vanhoja painatuksia ja retro-valokuvausta  ihanteellinen perintöbrändeille ja nostalgiselle estetiikalle."
+    },
+    "highContrast": {
+      "label": "Korkean kontrastin paletti",
+      "description": "Äärimmäinen kirkkausväli lähes mustasta lähes valkoiseen perussävyllä  erinomainen esteettömiin suunnitelmiin ja vahvaan visuaaliseen hierarkiaan."
+    },
+    "sunsetGradient": {
+      "label": "Auringonlasku-liukuväripaletti",
+      "description": "Tasainen sävykierto lämpimistä viileisiin sävyihin, luonnollista auringonlaskua jäljitellen  loistava hero-osioihin, taustoihin ja luoviin projekteihin."
     }
   }
 }

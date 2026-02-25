@@ -32,7 +32,10 @@
         "Color contrast calculator",
         "WCAG contrast tester",
         "Color accessibility checker",
-        "Are my colors readable"
+        "ADA color contrast tool",
+        "Section 508 contrast checker",
+        "Are my colors readable",
+        "A11y contrast ratio calculator"
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
@@ -228,7 +231,21 @@
           }
         },
         {
-          "name": "Legally required (EU directive)",
+          "name": "Required by EU Web Accessibility Directive",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Required by US ADA / Section 508",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Required by UK Equality Act 2010",
           "values": {
             "aa": true,
             "aaa": false
@@ -308,6 +325,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "International accessibility laws that require color contrast",
+      "html": "<p class=\"text-mid mb-4\">Color contrast is not just a best practice — it is a legal requirement in many countries. Here are the key regulations that reference WCAG contrast standards:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>European Union — Web Accessibility Directive (2016/2102)</strong>: All public sector websites and apps must meet WCAG 2.1 Level AA. The <a href=\"https://ec.europa.eu/social/main.jsp?catId=1202\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">European Accessibility Act (2019/882)</a> extends this to private sector products and services from June 2025.</li><li><strong>United States — ADA &amp; Section 508</strong>: The Americans with Disabilities Act (ADA) and Section 508 of the Rehabilitation Act require federal agencies and organizations receiving federal funding to meet WCAG 2.0 AA standards. Courts have increasingly applied ADA requirements to commercial websites.</li><li><strong>United Kingdom — Equality Act 2010</strong>: Public sector bodies must meet WCAG 2.1 AA under the <a href=\"https://www.legislation.gov.uk/uksi/2018/952/contents/made\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Public Sector Bodies Accessibility Regulations 2018</a>. The Equality Act also covers private sector services.</li><li><strong>Canada — Accessible Canada Act (2019)</strong>: Federal organizations must ensure digital accessibility. Ontario's AODA requires WCAG 2.0 AA compliance for all public and large private organizations.</li><li><strong>Australia — Disability Discrimination Act (1992)</strong>: Australian courts have ruled that websites must be accessible, referencing WCAG standards in multiple landmark cases.</li><li><strong>Japan — JIS X 8341-3</strong>: Japan's accessibility standard is based on WCAG 2.0 and applies to government and public-facing websites.</li></ul><p class=\"text-mid mt-3\">Regardless of your location, meeting WCAG 2.1 Level AA contrast requirements protects your organization from legal risk and ensures your content reaches the widest possible audience.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "What makes this contrast and readability checker special?",
       "grid": "two",
@@ -379,6 +405,18 @@
         {
           "question": "Which color pairs on my site should I check first?",
           "answer": "Most important: text on the main background, text on banners and colored sections, buttons (text color and button background relative to page background), links, and icons. Pay special attention to elements that appear on different backgrounds depending on the section."
+        },
+        {
+          "question": "Is color contrast legally required in the United States?",
+          "answer": "Yes. The Americans with Disabilities Act (ADA) and Section 508 of the Rehabilitation Act require digital accessibility. Courts have increasingly ruled that commercial websites must be accessible under ADA Title III. The standard referenced is WCAG 2.0/2.1 Level AA, which includes minimum contrast ratios of 4.5:1 for normal text and 3:1 for large text."
+        },
+        {
+          "question": "What is the difference between WCAG 2.0, 2.1, and 2.2?",
+          "answer": "WCAG 2.0 (2008) established the original contrast requirements. WCAG 2.1 (2018) added criteria for mobile accessibility, cognitive disabilities, and low vision. WCAG 2.2 (2023) adds further criteria but does not change the contrast ratio thresholds. The contrast requirements (1.4.3 and 1.4.6) remain the same across all versions."
+        },
+        {
+          "question": "Does this tool work for dark mode designs?",
+          "answer": "Yes. The tool checks the contrast ratio between any two colors regardless of which is lighter. For dark mode, you would typically enter a light text color and a dark background color. The same WCAG thresholds apply — 4.5:1 for normal text (AA) and 7:1 (AAA)."
         }
       ]
     },

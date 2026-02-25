@@ -44,6 +44,10 @@
         "Počítání unikátních slov",
         "Průměrná délka slova",
         "Odhadovaný čas čtení",
+        "Odhadovaná doba mluvení",
+        "Počítání slabik",
+        "Flesch-Kincaid skóre čitelnosti",
+        "Jazykově specifické vzorce čitelnosti (16 jazyků)",
         "Převod na velká nebo malá písmena",
         "Převod na styl věty nebo nadpisu",
         "Obrácení velikosti písmen",
@@ -64,7 +68,7 @@
         },
         {
           "name": "Zkontrolujte statistiky",
-          "text": "V levém panelu uvidíte 8 metrik: slova, znaky, věty, odstavce, unikátní slova, průměrnou délku a čas čtení."
+          "text": "V levém panelu uvidíte 11 metrik: slova, znaky, věty, odstavce, unikátní slova, průměrnou délku a čas čtení."
         },
         {
           "name": "Transformujte text",
@@ -107,7 +111,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Zkontrolujte statistiky",
-          "description": "V levém panelu uvidíte 8 metrik: slova, znaky, věty, odstavce, unikátní slova, průměrnou délku a čas čtení."
+          "description": "V levém panelu uvidíte 11 metrik: slova, znaky, věty, odstavce, unikátní slova, průměrnou délku a čas čtení."
         },
         {
           "icon": "RiTextWrap",
@@ -127,7 +131,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "8 textových metrik",
+      "title": "11 textových metrik",
       "description": "Počítadlo analyzuje text pomocí osmi ukazatelů:",
       "grid": "two",
       "items": [

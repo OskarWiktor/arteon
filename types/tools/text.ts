@@ -9,6 +9,10 @@ export interface TextMetrics {
   uniqueWords: number;
   avgWordLength: number;
   readingTimeMinutes: number;
+  syllables: number;
+  fleschScore: number | null;
+  fleschGrade: number | null;
+  speakingTimeMinutes: number;
 }
 
 export type FieldMetrics = {

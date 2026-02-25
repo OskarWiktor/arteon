@@ -44,6 +44,10 @@
         "Conteggio parole uniche",
         "Lunghezza media delle parole",
         "Tempo di lettura stimato",
+        "Tempo di parlato stimato",
+        "Conteggio sillabe",
+        "Punteggio di leggibilità Flesch-Kincaid",
+        "Formule di leggibilità adattate (16 lingue)",
         "Conversione in maiuscolo o minuscolo",
         "Conversione in stile frase o titolo",
         "Inversione maiuscole/minuscole",
@@ -64,7 +68,7 @@
         },
         {
           "name": "Controlla le statistiche",
-          "text": "Nel pannello sinistro vedrai 8 metriche: parole, caratteri, frasi, paragrafi, parole uniche, lunghezza media e tempo di lettura."
+          "text": "Nel pannello sinistro vedrai 11 metriche: parole, caratteri, frasi, paragrafi, parole uniche, lunghezza media e tempo di lettura."
         },
         {
           "name": "Trasforma il testo",
@@ -107,7 +111,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Controlla le statistiche",
-          "description": "Nel pannello sinistro vedrai 8 metriche: parole, caratteri, frasi, paragrafi, parole uniche, lunghezza media e tempo di lettura."
+          "description": "Nel pannello sinistro vedrai 11 metriche: parole, caratteri, frasi, paragrafi, parole uniche, lunghezza media e tempo di lettura."
         },
         {
           "icon": "RiTextWrap",
@@ -127,7 +131,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "8 metriche di testo",
+      "title": "11 metriche di testo",
       "description": "Il contatore analizza il testo con otto indicatori:",
       "grid": "two",
       "items": [

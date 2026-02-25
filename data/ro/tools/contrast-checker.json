@@ -32,7 +32,9 @@
         "Calculator de contrast culori",
         "Tester de contrast WCAG",
         "Verificator de accesibilitate a culorilor",
-        "Sunt culorile mele lizibile"
+        "Sunt culorile mele lizibile",
+        "Instrument contrast culori ADA",
+        "Verificator contrast Section 508"
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
@@ -229,6 +231,20 @@
         },
         {
           "name": "Obligatoriu legal (directiva UE)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Cerut de ADA / Secțiunea 508 SUA",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Cerut de UK Equality Act 2010",
           "values": {
             "aa": true,
             "aaa": false

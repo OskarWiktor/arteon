@@ -8,7 +8,24 @@ export type PaletteColor = {
   hsl: HSL;
 };
 
-export type PaletteGroupId = 'monochromatic' | 'analogous' | 'complementary' | 'triadic' | 'split-complementary' | 'soft-pastel' | 'deep-dark' | 'material-tonal' | 'apple-minimal';
+export type PaletteGroupId =
+  | 'monochromatic'
+  | 'analogous'
+  | 'complementary'
+  | 'triadic'
+  | 'split-complementary'
+  | 'soft-pastel'
+  | 'deep-dark'
+  | 'material-tonal'
+  | 'apple-minimal'
+  | 'tetradic'
+  | 'warm-shift'
+  | 'cool-shift'
+  | 'earth-tones'
+  | 'neon-vibrant'
+  | 'vintage-muted'
+  | 'high-contrast'
+  | 'sunset-gradient';
 
 export type PaletteGroup = {
   id: PaletteGroupId;

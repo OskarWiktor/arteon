@@ -42,7 +42,7 @@ export default function PoliticaDePrivacidadePage() {
               NIF (NIP)&nbsp;: <strong>9442284430</strong>, REGON&nbsp;: <strong>528888241</strong>
             </p>
             <p>
-              Contacto&nbsp;: <strong>kontakt@arteonagency.pl</strong>, tel.&nbsp;: <strong>+48 516 466 255</strong>.
+              Contacto&nbsp;: <strong>contact@arteonagency.com</strong>, tel.&nbsp;: <strong>+48 516 466 255</strong>.
             </p>
           </SectionInfo>
 

@@ -18,7 +18,7 @@
     {
       "id": "provider",
       "title": "2. Fornecedor do Servico",
-      "content": "Empresa: Arteon | Endereco registrado: Zagacie, ul. Jasminowa 36, 32-070, Polonia | NIP: 9442284430 | Contato: kontakt@arteonagency.pl"
+      "content": "Empresa: Arteon | Endereco registrado: Zagacie, ul. Jasminowa 36, 32-070, Polonia | NIP: 9442284430 | Contato: contact@arteonagency.com"
     },
     {
       "id": "scope",
@@ -68,7 +68,7 @@
     {
       "id": "contact",
       "title": "12. Contato",
-      "content": "Para perguntas sobre estes termos, entre em contato conosco em kontakt@arteonagency.pl."
+      "content": "Para perguntas sobre estes termos, entre em contato conosco em contact@arteonagency.com."
     }
   ],
   "cta": {

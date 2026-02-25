@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "en",
   "metadata": {
-    "title": "Word, Character and Reading Time Counter with Text Formatting",
-    "description": "Free word, character, sentence, paragraph and reading time counter with letter case converter. Check your text length and format it.",
+    "title": "Word Counter with Readability Score (Flesch-Kincaid) & Text Tools",
+    "description": "Free word, character & syllable counter with Flesch-Kincaid readability score, reading time, speaking time & 10 text formatting tools. No signup.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/word-and-character-counter-en.webp",
     "path": "/en/tools/word-and-character-counter"
   },
   "hero": {
-    "title": "Count words and characters – check reading time and format text",
-    "description": "Paste your text and the tool will count words, characters, sentences, paragraphs, unique words and reading time. Change letter case, remove duplicates or sort lines with one click",
+    "title": "Count words, characters & readability – Flesch-Kincaid score, reading time and text tools",
+    "description": "Paste your text and the tool will count words, characters, syllables, sentences, paragraphs, unique words, reading time, speaking time and calculate a Flesch-Kincaid readability score. Change letter case, remove duplicates or sort lines with one click.",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/word-and-character-counter-en.webp"
   },
   "breadcrumbs": {
@@ -24,19 +24,21 @@
   },
   "schemas": {
     "software": {
-      "name": "Word, Character and Reading Time Counter with Text Formatting",
+      "name": "Word Counter with Readability Score (Flesch-Kincaid) & Text Tools",
       "alternateName": [
         "Online word counter",
         "Character counter with and without spaces",
         "Word counting tool for copywriters",
         "Reading time calculator",
+        "Flesch-Kincaid readability checker",
+        "Syllable counter online",
+        "Speaking time calculator",
         "Online letter case converter",
-        "Uppercase to lowercase converter",
-        "Remove duplicate lines from text",
-        "Sort text lines alphabetically"
+        "Text readability score tool",
+        "Remove duplicate lines from text"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
+      "description": "Free word and character counter with Flesch-Kincaid readability scoring, syllable counting, reading and speaking time estimation, and 10 text formatting tools. All processing runs locally in your browser.",
       "featureList": [
         "Word count",
         "Character count with and without spaces",
@@ -44,6 +46,10 @@
         "Unique word count",
         "Average word length",
         "Estimated reading time",
+        "Estimated speaking time",
+        "Syllable count",
+        "Flesch-Kincaid readability score",
+        "Language-adapted readability formulas (16 languages)",
         "Convert to uppercase or lowercase",
         "Convert to sentence case or title case",
         "Toggle letter case",
@@ -55,7 +61,7 @@
     },
     "howTo": {
       "name": "How to use the word and character counter",
-      "description": "Count words, characters and sentences in your text. Use tools to change letter case, remove duplicates or sort lines.",
+      "description": "Count words, characters, syllables and sentences in your text. Check Flesch-Kincaid readability, reading time and speaking time. Use tools to change letter case, remove duplicates or sort lines.",
       "totalTime": "PT1M",
       "steps": [
         {
@@ -64,7 +70,7 @@
         },
         {
           "name": "Check the statistics",
-          "text": "In the left panel you will see 8 text metrics: words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time."
+          "text": "In the left panel you will see 11 text metrics: words, characters with and without spaces, sentences, paragraphs, unique words, average word length, reading time, speaking time, syllables, and Flesch-Kincaid readability score."
         },
         {
           "name": "Use text tools",
@@ -85,7 +91,7 @@
     {
       "type": "sectionBasic",
       "title": "Free word and character counter online with text tools",
-      "html": "<p class=\"text-mid\">This tool combines a word and character counter with a set of text formatting functions. Paste your text and you will see the word count, characters, sentences, paragraphs, unique words and estimated reading time.</p><p class=\"text-mid mt-3\">Below the text field you will find a toolbar with 10 tools: letter case conversion (UPPERCASE, lowercase, Sentence case, Title Case), removing extra spaces, empty lines and duplicates, and alphabetical sorting. All analysis and processing happens locally in your browser.</p>",
+      "html": "<p class=\"text-mid\">This tool combines a word and character counter with Flesch-Kincaid readability analysis and a set of text formatting functions. Paste your text and you will see the word count, characters, syllables, sentences, paragraphs, unique words, estimated reading time, speaking time, and a color-coded readability score.</p><p class=\"text-mid mt-3\">The <strong>Flesch-Kincaid readability score</strong> (0–100) tells you how easy your text is to read. Scores above 70 indicate easy reading (suitable for a broad audience), while scores below 30 indicate academic-level complexity. The tool uses language-adapted formulas for 16 languages, including Amstad (German), Fernandez-Huerta (Spanish), and Gulpease (Italian).</p><p class=\"text-mid mt-3\">Below the text field you will find a toolbar with 10 tools: letter case conversion (UPPERCASE, lowercase, Sentence case, Title Case), removing extra spaces, empty lines and duplicates, and alphabetical sorting. All analysis and processing happens locally in your browser.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/word-and-character-counter-en.webp",
       "imageAlt": "Word and character counter – Arteon"
     },
@@ -107,7 +113,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Check the statistics",
-          "description": "In the left panel you will see 8 metrics: words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time."
+          "description": "In the left panel you will see 11 metrics: words, characters, sentences, paragraphs, unique words, average word length, reading time, speaking time, syllables and Flesch-Kincaid readability score."
         },
         {
           "icon": "RiTextWrap",
@@ -127,8 +133,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "8 text metrics — what the counter measures",
-      "description": "The counter analyzes your text across eight indicators:",
+      "title": "11 text metrics — what the counter measures",
+      "description": "The counter analyzes your text across eleven indicators:",
       "grid": "two",
       "items": [
         {
@@ -170,6 +176,21 @@
           "icon": "RiTimeLine",
           "title": "Reading time",
           "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
+        },
+        {
+          "icon": "RiMicLine",
+          "title": "Speaking time",
+          "description": "Estimated time to speak the text aloud at 130 words per minute. Useful for speeches, presentations and video scripts."
+        },
+        {
+          "icon": "RiInputMethodLine",
+          "title": "Syllables",
+          "description": "Total syllable count using language-aware heuristics. A key input for readability formulas and poetry analysis."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Readability (Flesch-Kincaid)",
+          "description": "A 0-100 score indicating how easy the text is to read. Above 70 = easy, 50-70 = moderate, below 30 = academic. Color-coded for quick assessment."
         }
       ]
     },
@@ -297,8 +318,8 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "8 text metrics",
-          "description": "Words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time — all in one panel."
+          "title": "11 text metrics + readability score",
+          "description": "Words, characters, syllables, sentences, paragraphs, unique words, reading time, speaking time, and a Flesch-Kincaid readability score — all in one panel."
         },
         {
           "icon": "RiTextWrap",
@@ -365,6 +386,21 @@
           "question": "Is my text safe?",
           "answer": "Yes. All analysis and text processing happens exclusively in your browser — your text is never sent to any server. The tool does not save or store pasted text. After closing the page, the text is gone permanently.",
           "answerSchemaText": "Yes. Text is processed locally in the browser and is never sent to a server."
+        },
+        {
+          "question": "What is the Flesch-Kincaid readability score?",
+          "answer": "The Flesch Reading Ease score is a number from 0 to 100 that indicates how easy a text is to read. It is calculated from the average sentence length and average syllables per word. A score of 90-100 means very easy (5th-grade level), 70-89 means easy (6th-7th grade), 50-69 means moderate, 30-49 means difficult (college level), and 0-29 means very difficult (academic). This tool uses language-adapted formulas: Amstad for German, Fernandez-Huerta for Spanish/Portuguese, Flesch-Douma for Dutch, Gulpease for Italian, and Kandel-Moles for French.",
+          "answerSchemaText": "The Flesch Reading Ease score (0-100) measures text readability based on sentence length and syllables per word. Higher scores mean easier text."
+        },
+        {
+          "question": "How is speaking time calculated?",
+          "answer": "Speaking time is estimated by dividing the word count by 130 — the average speaking rate for presentations and public speaking. This is slower than the 200 words per minute used for reading time, because spoken delivery includes natural pauses, emphasis, and breathing.",
+          "answerSchemaText": "Speaking time is calculated at 130 words per minute, the average rate for presentations."
+        },
+        {
+          "question": "How accurate is the syllable counter?",
+          "answer": "The tool uses language-specific heuristics to count syllables. For English, it handles silent-e, common suffixes (-ed, -es, -le), and diphthongs. For other languages, it recognizes language-specific diphthongs and vowel patterns (e.g., German ei/au/eu, French ou/ai/oi, Greek αι/ει/οι). The count is approximate but sufficient for readability scoring and text analysis.",
+          "answerSchemaText": "The syllable counter uses language-specific heuristics for 16 languages, handling diphthongs and silent letters."
         }
       ]
     },

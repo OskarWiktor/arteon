@@ -42,7 +42,7 @@ export default function DatenschutzrichtliniePage() {
               Steuernummer (NIP): <strong>9442284430</strong>, REGON: <strong>528888241</strong>
             </p>
             <p>
-              Kontakt: <strong>kontakt@arteonagency.pl</strong>, Tel.: <strong>+48 516 466 255</strong>.
+              Kontakt: <strong>contact@arteonagency.com</strong>, Tel.: <strong>+48 516 466 255</strong>.
             </p>
           </SectionInfo>
 

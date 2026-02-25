@@ -31,7 +31,9 @@
         "Herramienta de verificación de legibilidad",
         "Calculadora de contraste de colores",
         "Probador de contraste WCAG",
-        "Comprobador de accesibilidad de colores"
+        "Comprobador de accesibilidad de colores",
+        "Herramienta de contraste de color ADA",
+        "Verificador de contraste Section 508"
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
@@ -228,6 +230,20 @@
         },
         {
           "name": "Legalmente obligatorio (directiva UE)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Requerido por ADA / Sección 508 de EE.UU.",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Requerido por UK Equality Act 2010",
           "values": {
             "aa": true,
             "aaa": false

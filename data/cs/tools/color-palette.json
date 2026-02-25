@@ -2,14 +2,14 @@
   "toolKey": "colorPalette",
   "locale": "cs",
   "metadata": {
-    "title": "Bezplatný generátor barevných palet – 9 schémat",
-    "description": "Vygenerujte 9 barevných palet z jedné barvy: monochromatickou, komplementární, triádickou, pastelovou a další. Zkopírujte kódy HEX jedním klikem.",
+    "title": "Bezplatný generátor barevných palet – 17 schémat",
+    "description": "Vygenerujte 17 barevných palet z jedné barvy: monochromatickou, komplementární, triádickou, pastelovou a další. Zkopírujte kódy HEX jedním klikem.",
     "ogImage": "/assets/tools/color-palette-generator/generator-barevnych-palet-cs.webp",
     "path": "/cs/nastroje/generator-barevnych-palet"
   },
   "hero": {
-    "title": "Vygenerujte 9 barevných palet z jedné základní barvy",
-    "description": "Zadejte jednu základní barvu a nástroj vygeneruje 9 harmonických barevných palet: monochromatickou, komplementární, triádickou, pastelovou a další. Každou barvu lze zkopírovat s jejím kódem HEX.",
+    "title": "Vygenerujte 17 barevných palet z jedné základní barvy",
+    "description": "Zadejte jednu základní barvu a nástroj vygeneruje 17 harmonických barevných palet: monochromatickou, komplementární, triádickou, pastelovou a další. Každou barvu lze zkopírovat s jejím kódem HEX.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Generátor barevných palet – 9 barevných schémat",
+      "name": "Generátor barevných palet – 17 barevných schémat",
       "alternateName": ["Generátor barevných schémat", "Generátor barev", "Nástroj pro ladění barev", "Generátor barevné harmonie"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Bezplatný generátor barevných palet. Zadejte jednu barvu HEX a nástroj vygeneruje 9 schémat: monochromatické, sousedící, komplementární, triádické, dělené komplementární, pastelové, tmavé, tónové a minimalistické. Každou barvu lze zkopírovat s kódem HEX a hodnotou HSL.",
+      "description": "Bezplatný generátor barevných palet. Zadejte jednu barvu HEX a nástroj vygeneruje 17 schémat: monochromatické, sousedící, komplementární, triádické, dělené komplementární, pastelové, tmavé, tónové a minimalistické. Každou barvu lze zkopírovat s kódem HEX a hodnotou HSL.",
       "featureList": [
         "Monochromatické schéma – odstíny jedné barvy",
         "Sousedící schéma – barvy sousedící na barevném kruhu",
@@ -49,7 +49,7 @@
     },
     "howTo": {
       "name": "Jak vygenerovat barevnou paletu z jedné základní barvy",
-      "description": "Jak vygenerovat 9 barevných palet z jedné základní barvy: monochromatickou, komplementární, triádickou, pastelovou a další.",
+      "description": "Jak vygenerovat 17 barevných palet z jedné základní barvy: monochromatickou, komplementární, triádickou, pastelovou a další.",
       "steps": [
         {
           "name": "Vyberte základní barvu",
@@ -61,7 +61,7 @@
         },
         {
           "name": "Prohlédněte si palety",
-          "text": "Nástroj automaticky vygeneruje 9 různých palet: monochromatickou, sousedící, komplementární, triádickou, dělenou komplementární, pastelovou, tmavou, tónovou a minimalistickou."
+          "text": "Nástroj automaticky vygeneruje 17 různých palet: monochromatickou, sousedící, komplementární, triádickou, dělenou komplementární, pastelovou, tmavou, tónovou a minimalistickou."
         },
         {
           "name": "Zkopírujte barvy",
@@ -78,7 +78,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč generovat barevnou paletu?",
-      "html": "<p class=\"text-mid\">Konzistentní barevná paleta je základem každého vizuálního projektu – od webu přes logo po tiskové materiály. Ruční výběr barev, které spolu fungují, vyžaduje znalost teorie barev. Generátor tento proces automatizuje: zadáte jednu základní barvu (např. barvu vašeho loga) a nástroj vygeneruje 9 sad barev na základě ověřených schémat barevné harmonie.</p><p class=\"text-mid mt-3\">Každá vygenerovaná barva má svůj kód HEX (např. #496ba2) a hodnotu HSL (hue, saturation, lightness). Kód HEX lze vložit přímo do CSS, Figma, Canva nebo jakékoliv grafické aplikace.</p>",
+      "html": "<p class=\"text-mid\">Konzistentní barevná paleta je základem každého vizuálního projektu – od webu přes logo po tiskové materiály. Ruční výběr barev, které spolu fungují, vyžaduje znalost teorie barev. Generátor tento proces automatizuje: zadáte jednu základní barvu (např. barvu vašeho loga) a nástroj vygeneruje 17 sad barev na základě ověřených schémat barevné harmonie.</p><p class=\"text-mid mt-3\">Každá vygenerovaná barva má svůj kód HEX (např. #496ba2) a hodnotu HSL (hue, saturation, lightness). Kód HEX lze vložit přímo do CSS, Figma, Canva nebo jakékoliv grafické aplikace.</p>",
       "imageSrc": "/assets/tools/color-palette-generator/generator-barevnych-palet-cs.webp",
       "imageAlt": "Generátor barevných palet – Arteon"
     },
@@ -99,7 +99,7 @@
         },
         {
           "title": "2. Potvrďte svůj výběr",
-          "description": "Po kliknutí na tlačítko Update Color nástroj automaticky vygeneruje 9 palet na základě různých schémat barevné harmonie.",
+          "description": "Po kliknutí na tlačítko Update Color nástroj automaticky vygeneruje 17 palet na základě různých schémat barevné harmonie.",
           "icon": "RiCheckboxCircleLine"
         },
         {
@@ -116,7 +116,7 @@
     {
       "type": "sectionSteps",
       "title": "Jaká barevná schémata nástroj generuje?",
-      "description": "Generátor vytváří 9 typů palet – každý založený na jiném principu teorie barev:",
+      "description": "Generátor vytváří 17 typů palet – každý založený na jiném principu teorie barev:",
       "grid": "two",
       "items": [
         {
@@ -219,7 +219,7 @@
         {
           "icon": "RiRefreshLine",
           "title": "Palety se nemění po zadání barvy",
-          "description": "Samotné zadání HEX kódu negeneruje palety automaticky – změnu je třeba potvrdit tlačítkem <strong>Aktualizovat barvu</strong>. Teprve po potvrzení nástroj přepočítá všech 9 schémat."
+          "description": "Samotné zadání HEX kódu negeneruje palety automaticky – změnu je třeba potvrdit tlačítkem <strong>Aktualizovat barvu</strong>. Teprve po potvrzení nástroj přepočítá všech 17 schémat."
         },
         {
           "icon": "RiErrorWarningLine",

@@ -32,7 +32,9 @@
         "Kleurcontrast calculator",
         "WCAG contrast tester",
         "Kleurtoegankelijkheid checker",
-        "Zijn mijn kleuren leesbaar"
+        "Zijn mijn kleuren leesbaar",
+        "ADA kleurcontrast tool",
+        "Section 508 contrast checker"
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
@@ -229,6 +231,20 @@
         },
         {
           "name": "Wettelijk verplicht (EU-richtlijn)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Vereist door US ADA / Section 508",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Vereist door UK Equality Act 2010",
           "values": {
             "aa": true,
             "aaa": false

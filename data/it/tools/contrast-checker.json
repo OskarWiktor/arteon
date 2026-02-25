@@ -32,7 +32,9 @@
         "Strumento di accessibilità dei colori",
         "Calcolatore del contrasto dei colori",
         "Test di leggibilità dei colori",
-        "I colori sono leggibili"
+        "I colori sono leggibili",
+        "Strumento contrasto colore ADA",
+        "Verificatore contrasto Section 508"
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
@@ -225,6 +227,20 @@
         },
         {
           "name": "Legalmente obbligatorio (direttiva UE)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Richiesto da ADA / Sezione 508 (USA)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Richiesto da UK Equality Act 2010",
           "values": {
             "aa": true,
             "aaa": false

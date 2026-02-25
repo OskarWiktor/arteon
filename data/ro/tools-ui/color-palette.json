@@ -47,6 +47,38 @@
     "appleMinimal": {
       "label": "Paletă minimalistă (inspirată de Apple)",
       "description": "Un accent de culoare viu și mai multe nuanțe neutre foarte deschise și delicate, o compoziție tipică interfețelor cu mult spațiu alb și umbre subtile."
+    },
+    "tetradic": {
+      "label": "Paletă tetradică (pătrat)",
+      "description": "Patru nuanțe distanțate la 90 pe roata culorilor (vârfurile unui pătrat)  bogată și echilibrată, ideală pentru teme UI complexe și vizualizare de date."
+    },
+    "warmShift": {
+      "label": "Paletă tonuri calde",
+      "description": "Culori deplasate spre capătul cald al spectrului (roșu, portocaliu, galben)  evocă energie, căldură și accesibilitate."
+    },
+    "coolShift": {
+      "label": "Paletă tonuri reci",
+      "description": "Culori deplasate spre capătul rece al spectrului (albastru, turcoaz, violet)  comunică calm, profesionalism și încredere."
+    },
+    "earthTones": {
+      "label": "Paletă tonuri pământii",
+      "description": "Maro, olive și ocru cu saturație scăzută inspirate din peisaje naturale  perfectă pentru branduri ecologice și estetică rustică."
+    },
+    "neonVibrant": {
+      "label": "Paletă neon vibrantă",
+      "description": "Culori cu saturație maximă și intensitate electrică  proiectată pentru marketing îndrăzneț, interfețe gaming și designuri care atrag atenția."
+    },
+    "vintageMuted": {
+      "label": "Paletă vintage estompată",
+      "description": "Tonuri desaturate și ușor calde care amintesc de tipărituri vechi și fotografie retro  ideală pentru branduri cu tradiție și estetică nostalgică."
+    },
+    "highContrast": {
+      "label": "Paletă contrast ridicat",
+      "description": "Gamă extremă de luminozitate de la aproape negru la aproape alb cu nuanța de bază  excelentă pentru designuri accesibile și ierarhie vizuală puternică."
+    },
+    "sunsetGradient": {
+      "label": "Paletă gradient apus",
+      "description": "O rotație fluidă a nuanțelor de la tonuri calde la reci, imitând un apus natural  ideală pentru secțiuni hero, fundaluri și proiecte creative."
     }
   }
 }

@@ -2,14 +2,14 @@
   "toolKey": "colorPalette",
   "locale": "da",
   "metadata": {
-    "title": "Gratis farvepaletgenerator – 9 skemaer",
-    "description": "Generér 9 farvepaletter fra én farve: monokromatisk, komplementær, triadisk, pastel og flere. Kopiér HEX-koder med ét klik.",
+    "title": "Gratis farvepaletgenerator – 17 skemaer",
+    "description": "Generér 17 farvepaletter fra én farve: monokromatisk, komplementær, triadisk, pastel og flere. Kopiér HEX-koder med ét klik.",
     "ogImage": "/assets/tools/color-palette-generator/farvepaletgenerator-da.webp",
     "path": "/da/vaerktojer/farvepaletgenerator"
   },
   "hero": {
-    "title": "Generér 9 farvepaletter fra én grundfarve",
-    "description": "Indtast én grundfarve, og værktøjet genererer 9 harmoniske farvepaletter: monokromatisk, komplementær, triadisk, pastel og flere. Hver farve kan kopieres med sin HEX-kode.",
+    "title": "Generér 17 farvepaletter fra én grundfarve",
+    "description": "Indtast én grundfarve, og værktøjet genererer 17 harmoniske farvepaletter: monokromatisk, komplementær, triadisk, pastel og flere. Hver farve kan kopieres med sin HEX-kode.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Farvepaletgenerator – 9 farveskemaer",
+      "name": "Farvepaletgenerator – 17 farveskemaer",
       "alternateName": ["Farveskemagenerator", "Farvegenerator", "Farvematchingsværktøj", "Farveharmonigenerator"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Gratis farvepaletgenerator. Indtast én HEX-farve, og værktøjet genererer 9 skemaer: monokromatisk, tilstødende, komplementær, triadisk, splittet komplementær, pastel, mørk, tonal og minimalistisk. Hver farve kan kopieres med sin HEX-kode og HSL-værdi.",
+      "description": "Gratis farvepaletgenerator. Indtast én HEX-farve, og værktøjet genererer 17 skemaer: monokromatisk, tilstødende, komplementær, triadisk, splittet komplementær, pastel, mørk, tonal og minimalistisk. Hver farve kan kopieres med sin HEX-kode og HSL-værdi.",
       "featureList": [
         "Monokromatisk skema – nuancer af én farve",
         "Tilstødende skema – farver ved siden af hinanden på farvehjulet",
@@ -49,7 +49,7 @@
     },
     "howTo": {
       "name": "Sådan genererer du en farvepalet fra én grundfarve",
-      "description": "Sådan genererer du 9 farvepaletter fra én grundfarve: monokromatisk, komplementær, triadisk, pastel og flere.",
+      "description": "Sådan genererer du 17 farvepaletter fra én grundfarve: monokromatisk, komplementær, triadisk, pastel og flere.",
       "steps": [
         {
           "name": "Vælg grundfarve",
@@ -61,7 +61,7 @@
         },
         {
           "name": "Gennemse paletterne",
-          "text": "Værktøjet genererer automatisk 9 forskellige paletter: monokromatisk, tilstødende, komplementær, triadisk, splittet komplementær, pastel, mørk, tonal og minimalistisk."
+          "text": "Værktøjet genererer automatisk 17 forskellige paletter: monokromatisk, tilstødende, komplementær, triadisk, splittet komplementær, pastel, mørk, tonal og minimalistisk."
         },
         {
           "name": "Kopiér farver",
@@ -78,7 +78,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor generere en farvepalet?",
-      "html": "<p class=\"text-mid\">En konsekvent farvepalet er grundlaget for ethvert visuelt projekt – fra hjemmesider, via logoer, til trykt materiale. Manuel udvælgelse af farver, der fungerer sammen, kræver viden om farveteori. Generatoren automatiserer denne proces: du angiver én grundfarve (f.eks. farven på dit logo), og værktøjet genererer 9 sæt farver baseret på gennemprøvede farveharmoniskemaer.</p><p class=\"text-mid mt-3\">Hver genereret farve har sin HEX-kode (f.eks. #496ba2) og HSL-værdi (hue, saturation, lightness). HEX-koden kan indsættes direkte i CSS, Figma, Canva eller enhver grafisk applikation.</p>",
+      "html": "<p class=\"text-mid\">En konsekvent farvepalet er grundlaget for ethvert visuelt projekt – fra hjemmesider, via logoer, til trykt materiale. Manuel udvælgelse af farver, der fungerer sammen, kræver viden om farveteori. Generatoren automatiserer denne proces: du angiver én grundfarve (f.eks. farven på dit logo), og værktøjet genererer 17 sæt farver baseret på gennemprøvede farveharmoniskemaer.</p><p class=\"text-mid mt-3\">Hver genereret farve har sin HEX-kode (f.eks. #496ba2) og HSL-værdi (hue, saturation, lightness). HEX-koden kan indsættes direkte i CSS, Figma, Canva eller enhver grafisk applikation.</p>",
       "imageSrc": "/assets/tools/color-palette-generator/farvepaletgenerator-da.webp",
       "imageAlt": "Farvepaletgenerator – Arteon"
     },
@@ -99,7 +99,7 @@
         },
         {
           "title": "2. Bekræft dit valg",
-          "description": "Når du klikker på knappen Update Color, genererer værktøjet automatisk 9 paletter baseret på forskellige farveharmoniskemaer.",
+          "description": "Når du klikker på knappen Update Color, genererer værktøjet automatisk 17 paletter baseret på forskellige farveharmoniskemaer.",
           "icon": "RiCheckboxCircleLine"
         },
         {
@@ -116,7 +116,7 @@
     {
       "type": "sectionSteps",
       "title": "Hvilke farveskemaer genererer værktøjet?",
-      "description": "Generatoren skaber 9 typer paletter – hver baseret på et andet princip inden for farveteorien:",
+      "description": "Generatoren skaber 17 typer paletter – hver baseret på et andet princip inden for farveteorien:",
       "grid": "two",
       "items": [
         {
@@ -219,7 +219,7 @@
         {
           "icon": "RiRefreshLine",
           "title": "Paletterne ændrer sig ikke efter indtastning af farve",
-          "description": "Indtastning af en HEX-kode genererer ikke paletter automatisk – du skal bekræfte ændringen med knappen <strong>Opdater farve</strong>. Først derefter beregner værktøjet alle 9 skemaer."
+          "description": "Indtastning af en HEX-kode genererer ikke paletter automatisk – du skal bekræfte ændringen med knappen <strong>Opdater farve</strong>. Først derefter beregner værktøjet alle 17 skemaer."
         },
         {
           "icon": "RiErrorWarningLine",

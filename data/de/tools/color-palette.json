@@ -2,14 +2,14 @@
   "toolKey": "colorPalette",
   "locale": "de",
   "metadata": {
-    "title": "Kostenloser Farbpaletten-Generator – 9 Schemata",
-    "description": "9 Farbpaletten aus einer Farbe generieren: monochromatisch, komplementär, triadisch, Pastell und mehr. HEX-Codes mit einem Klick kopieren.",
+    "title": "Kostenloser Farbpaletten-Generator – 17 Schemata",
+    "description": "17 Farbpaletten aus einer Farbe generieren: monochromatisch, komplementär, triadisch, Pastell und mehr. HEX-Codes mit einem Klick kopieren.",
     "ogImage": "/assets/tools/color-palette-generator/farbpaletten-generator-de.webp",
     "path": "/de/werkzeuge/farbpaletten-generator"
   },
   "hero": {
-    "title": "9 Farbpaletten aus einer Grundfarbe generieren",
-    "description": "Wählen Sie eine Basisfarbe und generieren Sie 9 harmonische Farbpaletten. Monochromatisch, komplementär, triadisch, Pastell, dunkel und mehr - alle Berechnungen laufen lokal in Ihrem Browser.",
+    "title": "17 Farbpaletten aus einer Grundfarbe generieren",
+    "description": "Wählen Sie eine Basisfarbe und generieren Sie 17 harmonische Farbpaletten. Monochromatisch, komplementär, triadisch, Pastell, dunkel und mehr - alle Berechnungen laufen lokal in Ihrem Browser.",
     "backgroundImage": "/assets/tools/color-palette-generator/farbpaletten-generator-de.webp"
   },
   "breadcrumbs": {
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Farbpaletten-Generator – 9 Farbschemata",
+      "name": "Farbpaletten-Generator – 17 Farbschemata",
       "alternateName": [
         "Kostenloser Farbpaletten-Generator",
         "Farbschemata aus einer Farbe generieren",
@@ -35,7 +35,7 @@
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Kostenloser Farbpaletten-Generator. Geben Sie eine HEX-Farbe ein und das Tool generiert 9 Schemata: monochromatisch, analog, komplementär, triadisch, gespalten-komplementär, Pastell, dunkel, tonal und minimalistisch. Jede Farbe kann mit HEX-Code und HSL-Wert kopiert werden.",
+      "description": "Kostenloser Farbpaletten-Generator. Geben Sie eine HEX-Farbe ein und das Tool generiert 17 Schemata: monochromatisch, analog, komplementär, triadisch, gespalten-komplementär, Pastell, dunkel, tonal und minimalistisch. Jede Farbe kann mit HEX-Code und HSL-Wert kopiert werden.",
       "featureList": [
         "Monochromatisches Schema – Abstufungen einer Farbe",
         "Analoges Schema – benachbarte Farben auf dem Farbkreis",
@@ -56,7 +56,7 @@
     },
     "howTo": {
       "name": "So generieren Sie Farbpaletten aus einer Farbe",
-      "description": "Wählen Sie eine Basisfarbe und erhalten Sie 9 harmonische Farbpaletten mit kopierbaren HEX-Codes.",
+      "description": "Wählen Sie eine Basisfarbe und erhalten Sie 17 harmonische Farbpaletten mit kopierbaren HEX-Codes.",
       "steps": [
         {
           "name": "Basisfarbe wählen",
@@ -64,7 +64,7 @@
         },
         {
           "name": "Paletten ansehen",
-          "text": "Das Tool generiert automatisch 9 Paletten mit jeweils mehreren harmonischen Farben."
+          "text": "Das Tool generiert automatisch 17 Paletten mit jeweils mehreren harmonischen Farben."
         },
         {
           "name": "HEX-Codes kopieren",
@@ -81,7 +81,7 @@
     {
       "type": "sectionBasic",
       "title": "Farbpaletten aus einer einzigen Farbe generieren",
-      "html": "<p class=\"text-mid\">Der Farbpaletten-Generator erstellt aus einer einzigen Basisfarbe 9 verschiedene Farbpaletten auf Grundlage der Farbtheorie. Jede Palette hat eine andere Zusammensetzung - von monochromatischen Variationen bis hin zu kontrastierenden Komplementärfarben.</p><p class=\"text-mid mt-3\">Alle Berechnungen basieren auf dem HSL-Farbraum (Hue, Saturation, Lightness). Der Farbton bestimmt die Grundfarbe, die Sättigung die Intensität und die Helligkeit, wie hell oder dunkel die Farbe erscheint. Dieses Modell entspricht der menschlichen Farbwahrnehmung und eignet sich hervorragend für die Palettengenerierung.</p>",
+      "html": "<p class=\"text-mid\">Der Farbpaletten-Generator erstellt aus einer einzigen Basisfarbe 17 verschiedene Farbpaletten auf Grundlage der Farbtheorie. Jede Palette hat eine andere Zusammensetzung - von monochromatischen Variationen bis hin zu kontrastierenden Komplementärfarben.</p><p class=\"text-mid mt-3\">Alle Berechnungen basieren auf dem HSL-Farbraum (Hue, Saturation, Lightness). Der Farbton bestimmt die Grundfarbe, die Sättigung die Intensität und die Helligkeit, wie hell oder dunkel die Farbe erscheint. Dieses Modell entspricht der menschlichen Farbwahrnehmung und eignet sich hervorragend für die Palettengenerierung.</p>",
       "imageSrc": "/assets/tools/color-palette-generator/farbpaletten-generator-de.webp",
       "imageAlt": "Farbpaletten-Generator – Arteon"
     },
@@ -103,7 +103,7 @@
         {
           "icon": "RiColorFilterLine",
           "title": "2. Paletten ansehen",
-          "description": "Das Tool generiert automatisch 9 Paletten mit jeweils mehreren harmonischen Farben."
+          "description": "Das Tool generiert automatisch 17 Paletten mit jeweils mehreren harmonischen Farben."
         },
         {
           "icon": "RiFileCopyLine",
@@ -118,7 +118,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "9 Palettentypen - welche passt zu Ihrem Projekt?",
+      "title": "17 Palettentypen - welche passt zu Ihrem Projekt?",
       "description": "Jede Palette hat einen anderen Charakter und eignet sich für unterschiedliche Anwendungen:",
       "grid": "three",
       "items": [
@@ -253,8 +253,8 @@
       "items": [
         {
           "question": "Wie viele Paletten generiert das Tool?",
-          "answer": "Das Tool generiert 9 verschiedene Paletten aus einer einzigen Basisfarbe: monochromatisch, analog, komplementär, triadisch, split-komplementär, Pastell, dunkel, tonal (Material Design) und minimalistisch (Apple-Stil).",
-          "answerSchemaText": "9 Paletten: monochromatisch, analog, komplementär, triadisch, split-komplementär, Pastell, dunkel, tonal, minimalistisch."
+          "answer": "Das Tool generiert 17 verschiedene Paletten aus einer einzigen Basisfarbe: monochromatisch, analog, komplementär, triadisch, split-komplementär, Pastell, dunkel, tonal (Material Design) und minimalistisch (Apple-Stil).",
+          "answerSchemaText": "17 Paletten: monochromatisch, analog, komplementär, triadisch, split-komplementär, Pastell, dunkel, tonal, minimalistisch."
         },
         {
           "question": "Was ist eine monochromatische Palette?",

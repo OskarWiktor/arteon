@@ -2,14 +2,14 @@
   "toolKey": "colorPalette",
   "locale": "es",
   "metadata": {
-    "title": "Generador gratuito de paletas de colores – 9 esquemas",
-    "description": "Genere 9 paletas de colores a partir de un color: monocromática, complementaria, triádica, pastel y más. Copie los códigos HEX con un clic.",
+    "title": "Generador gratuito de paletas de colores – 17 esquemas",
+    "description": "Genere 17 paletas de colores a partir de un color: monocromática, complementaria, triádica, pastel y más. Copie los códigos HEX con un clic.",
     "ogImage": "/assets/tools/color-palette-generator/generador-de-paletas-de-colores-es.webp",
     "path": "/es/herramientas/generador-de-paletas-de-colores"
   },
   "hero": {
-    "title": "Genera 9 paletas de colores a partir de un color base",
-    "description": "Introduzca un color base y la herramienta generará 9 paletas de colores armoniosas: monocromática, complementaria, triádica, pastel y más. Cada color se puede copiar con su código HEX.",
+    "title": "Genera 17 paletas de colores a partir de un color base",
+    "description": "Introduzca un color base y la herramienta generará 17 paletas de colores armoniosas: monocromática, complementaria, triádica, pastel y más. Cada color se puede copiar con su código HEX.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Generador de paletas de colores – 9 esquemas de color",
+      "name": "Generador de paletas de colores – 17 esquemas de color",
       "alternateName": ["Generador de esquemas de colores", "Generador de colores HEX", "Creador de paletas de colores", "Herramienta de combinación de colores", "Generador de armonía de colores"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Generador gratuito de paletas de colores. Introduzca un color HEX y la herramienta generará 9 esquemas: monocromático, análogo, complementario, triádico, complementario dividido, pastel, oscuro, tonal y minimalista. Cada color se puede copiar con su código HEX y valor HSL.",
+      "description": "Generador gratuito de paletas de colores. Introduzca un color HEX y la herramienta generará 17 esquemas: monocromático, análogo, complementario, triádico, complementario dividido, pastel, oscuro, tonal y minimalista. Cada color se puede copiar con su código HEX y valor HSL.",
       "featureList": [
         "Esquema monocromático – tonos de un color",
         "Esquema análogo – colores adyacentes en la rueda de colores",
@@ -49,7 +49,7 @@
     },
     "howTo": {
       "name": "Cómo generar una paleta de colores a partir de un color base",
-      "description": "Cómo generar 9 paletas de colores a partir de un color base: monocromática, complementaria, triádica, pastel y más. Cada color se puede copiar con su código HEX.",
+      "description": "Cómo generar 17 paletas de colores a partir de un color base: monocromática, complementaria, triádica, pastel y más. Cada color se puede copiar con su código HEX.",
       "steps": [
         {
           "name": "Elija un color base",
@@ -61,7 +61,7 @@
         },
         {
           "name": "Explore las paletas",
-          "text": "La herramienta generará automáticamente 9 paletas diferentes: monocromática, análoga, complementaria, triádica, complementaria dividida, pastel, oscura, tonal y minimalista."
+          "text": "La herramienta generará automáticamente 17 paletas diferentes: monocromática, análoga, complementaria, triádica, complementaria dividida, pastel, oscura, tonal y minimalista."
         },
         {
           "name": "Copie los colores",
@@ -78,7 +78,7 @@
     {
       "type": "sectionBasic",
       "title": "¿Por qué generar una paleta de colores?",
-      "html": "<p class=\"text-mid\">Una paleta de colores coherente es la base de todo proyecto visual, desde un sitio web, pasando por un logotipo, hasta materiales impresos. Seleccionar manualmente colores que funcionen juntos requiere conocimientos de teoría del color. El generador lo hace automáticamente: usted proporciona un color base (p. ej., el color de su logotipo) y la herramienta crea 9 conjuntos de colores basados en esquemas de armonía cromática probados.</p><p class=\"text-mid mt-3\">Cada color generado viene con su código HEX (p. ej., #496ba2) y valor HSL (tono, saturación, luminosidad). El código HEX se puede pegar directamente en CSS, Figma, Canva o cualquier aplicación gráfica.</p>",
+      "html": "<p class=\"text-mid\">Una paleta de colores coherente es la base de todo proyecto visual, desde un sitio web, pasando por un logotipo, hasta materiales impresos. Seleccionar manualmente colores que funcionen juntos requiere conocimientos de teoría del color. El generador lo hace automáticamente: usted proporciona un color base (p. ej., el color de su logotipo) y la herramienta crea 17 conjuntos de colores basados en esquemas de armonía cromática probados.</p><p class=\"text-mid mt-3\">Cada color generado viene con su código HEX (p. ej., #496ba2) y valor HSL (tono, saturación, luminosidad). El código HEX se puede pegar directamente en CSS, Figma, Canva o cualquier aplicación gráfica.</p>",
       "imageSrc": "/assets/tools/color-palette-generator/generador-de-paletas-de-colores-es.webp",
       "imageAlt": "Generador de paletas de colores – Arteon"
     },
@@ -99,7 +99,7 @@
         },
         {
           "title": "2. Confirme su elección",
-          "description": "Después de hacer clic en el botón Actualizar color, la herramienta generará automáticamente 9 paletas basadas en diferentes esquemas de armonía cromática.",
+          "description": "Después de hacer clic en el botón Actualizar color, la herramienta generará automáticamente 17 paletas basadas en diferentes esquemas de armonía cromática.",
           "icon": "RiCheckboxCircleLine"
         },
         {
@@ -116,7 +116,7 @@
     {
       "type": "sectionSteps",
       "title": "¿Qué esquemas de color genera la herramienta?",
-      "description": "El generador crea 9 tipos de paleta, cada uno basado en un principio diferente de la teoría del color:",
+      "description": "El generador crea 17 tipos de paleta, cada uno basado en un principio diferente de la teoría del color:",
       "grid": "two",
       "items": [
         {
@@ -224,7 +224,7 @@
         {
           "icon": "RiRefreshLine",
           "title": "Las paletas no cambian después de introducir un color",
-          "description": "Simplemente escribir un código HEX no genera paletas automáticamente: necesita confirmar el cambio con el botón Actualizar color. Solo después de la confirmación la herramienta recalcula los 9 esquemas."
+          "description": "Simplemente escribir un código HEX no genera paletas automáticamente: necesita confirmar el cambio con el botón Actualizar color. Solo después de la confirmación la herramienta recalcula los 17 esquemas."
         },
         {
           "icon": "RiErrorWarningLine",

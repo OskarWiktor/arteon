@@ -47,6 +47,38 @@
     "appleMinimal": {
       "label": "Minimalistisk palet (inspireret af Apple)",
       "description": "Én markant farveaccent og mange meget lyse, bløde neutrale toner – layout typisk for grænseflader med meget hvidt rum og subtile skygger."
+    },
+    "tetradic": {
+      "label": "Tetradisk (kvadrat) palet",
+      "description": "Fire nuancer med 90 mellemrum på farvehjulet (hjørner af en kvadrat)  rig og afbalanceret, ideel til komplekse UI-temaer og datavisualisering."
+    },
+    "warmShift": {
+      "label": "Varm palet",
+      "description": "Farver forskudt mod den varme ende af spektret (rød, orange, gul)  udstråler energi, varme og tilgængelighed."
+    },
+    "coolShift": {
+      "label": "Kold palet",
+      "description": "Farver forskudt mod den kolde ende af spektret (blå, turkis, lilla)  formidler ro, professionalisme og tillid."
+    },
+    "earthTones": {
+      "label": "Jordtoner palet",
+      "description": "Lavt mættede brune, oliven- og okertoner inspireret af naturlige landskaber  perfekt til økologiske mærker og rustik æstetik."
+    },
+    "neonVibrant": {
+      "label": "Neon vibrant palet",
+      "description": "Maksimalt mættede farver med elektrisk intensitet  designet til dristig markedsføring, spilgrænseflader og iøjnefaldende designs."
+    },
+    "vintageMuted": {
+      "label": "Vintage dæmpet palet",
+      "description": "Umættede, let varme toner der minder om gamle tryk og retro fotografi  ideel til arvsmærker og nostalgisk æstetik."
+    },
+    "highContrast": {
+      "label": "Høj kontrast palet",
+      "description": "Ekstremt lysstyrkeområde fra næsten sort til næsten hvid med basisnuancen  fremragende til tilgængelige designs og stærk visuel hierarki."
+    },
+    "sunsetGradient": {
+      "label": "Solnedgangs-gradient palet",
+      "description": "En blød nuancerotation fra varme til kolde toner, der efterligner en naturlig solnedgang  perfekt til hero-sektioner, baggrunde og kreative projekter."
     }
   }
 }

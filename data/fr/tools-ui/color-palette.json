@@ -47,6 +47,38 @@
     "appleMinimal": {
       "label": "Palette minimaliste (inspirée Apple)",
       "description": "Un accent de couleur vif et plusieurs neutres très clairs et doux, un agencement typique des interfaces avec beaucoup d'espace blanc et des ombres subtiles."
+    },
+    "tetradic": {
+      "label": "Palette tétradique (carrée)",
+      "description": "Quatre teintes espacées de 90 sur le cercle chromatique (sommets d'un carré)  riche et équilibrée, idéale pour les thèmes UI complexes et la visualisation de données."
+    },
+    "warmShift": {
+      "label": "Palette de tons chauds",
+      "description": "Couleurs décalées vers l'extrémité chaude du spectre (rouges, oranges, jaunes)  évoque l'énergie, la chaleur et l'accessibilité."
+    },
+    "coolShift": {
+      "label": "Palette de tons froids",
+      "description": "Couleurs décalées vers l'extrémité froide du spectre (bleus, turquoises, violets)  transmet le calme, le professionnalisme et la confiance."
+    },
+    "earthTones": {
+      "label": "Palette de tons terreux",
+      "description": "Bruns, olives et ocres peu saturés inspirés des paysages naturels  parfaite pour les marques écologiques et l'esthétique rustique."
+    },
+    "neonVibrant": {
+      "label": "Palette néon vibrante",
+      "description": "Couleurs à saturation maximale avec une intensité électrique  conçue pour le marketing audacieux, les interfaces de jeux et les designs percutants."
+    },
+    "vintageMuted": {
+      "label": "Palette vintage atténuée",
+      "description": "Tons désaturés et légèrement chauds rappelant les impressions anciennes et la photographie rétro  idéale pour les marques patrimoniales et l'esthétique nostalgique."
+    },
+    "highContrast": {
+      "label": "Palette haut contraste",
+      "description": "Gamme de luminosité extrême du quasi-noir au quasi-blanc avec la teinte de base  excellente pour les designs accessibles et une forte hiérarchie visuelle."
+    },
+    "sunsetGradient": {
+      "label": "Palette dégradé coucher de soleil",
+      "description": "Une rotation douce des teintes des tons chauds aux tons froids, imitant un coucher de soleil naturel  idéale pour les sections hero, les arrière-plans et les projets créatifs."
     }
   }
 }

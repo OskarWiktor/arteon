@@ -47,6 +47,38 @@
     "appleMinimal": {
       "label": "Minimalistisk palett (inspirert av Apple)",
       "description": "En markant fargeaksent og mange veldig lyse, myke nøytrale toner – layout typisk for grensesnitt med mye hvitt rom og subtile skygger."
+    },
+    "tetradic": {
+      "label": "Tetradisk (kvadrat) palett",
+      "description": "Fire nyanser med 90 mellomrom på fargehjulet (hjørner av et kvadrat)  rik og balansert, ideell for komplekse UI-temaer og datavisualisering."
+    },
+    "warmShift": {
+      "label": "Varm palett",
+      "description": "Farger forskjøvet mot den varme enden av spekteret (rød, oransje, gul)  utstråler energi, varme og tilgjengelighet."
+    },
+    "coolShift": {
+      "label": "Kald palett",
+      "description": "Farger forskjøvet mot den kalde enden av spekteret (blå, turkis, lilla)  formidler ro, profesjonalitet og tillit."
+    },
+    "earthTones": {
+      "label": "Jordtoner palett",
+      "description": "Lavt mettede brune, oliven- og okkertoner inspirert av naturlige landskap  perfekt for økologiske merker og rustikk estetikk."
+    },
+    "neonVibrant": {
+      "label": "Neon vibrant palett",
+      "description": "Maksimalt mettede farger med elektrisk intensitet  designet for dristig markedsføring, spillgrensesnitt og iøynefallende design."
+    },
+    "vintageMuted": {
+      "label": "Vintage dempet palett",
+      "description": "Umettede, lett varme toner som minner om gamle trykk og retro fotografi  ideell for arvsmerker og nostalgisk estetikk."
+    },
+    "highContrast": {
+      "label": "Høy kontrast palett",
+      "description": "Ekstremt lysstyrkeområde fra nesten svart til nesten hvitt med basisnyansen  utmerket for tilgjengelige design og sterk visuell hierarki."
+    },
+    "sunsetGradient": {
+      "label": "Solnedgangs-gradient palett",
+      "description": "En myk nyanseskiftning fra varme til kalde toner, som etterligner en naturlig solnedgang  perfekt for hero-seksjoner, bakgrunner og kreative prosjekter."
     }
   }
 }

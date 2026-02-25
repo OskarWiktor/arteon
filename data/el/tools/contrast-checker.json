@@ -32,7 +32,9 @@
         "Υπολογιστής αντίθεσης χρωμάτων",
         "Ελεγκτής αντίθεσης WCAG",
         "Έλεγχος προσβασιμότητας χρωμάτων",
-        "Είναι αναγνώσιμα τα χρώματά μου"
+        "Είναι αναγνώσιμα τα χρώματά μου",
+        "Εργαλείο αντίθεσης χρωμάτων ADA",
+        "Ελεγκτής αντίθεσης Section 508"
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
@@ -229,6 +231,20 @@
         },
         {
           "name": "Νομικά απαιτούμενο (Οδηγία ΕΕ)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Απαιτείται από US ADA / Section 508",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Απαιτείται από UK Equality Act 2010",
           "values": {
             "aa": true,
             "aaa": false

@@ -44,6 +44,10 @@
         "Einzigartige Wörter zählen",
         "Durchschnittliche Wortlänge",
         "Geschätzte Lesezeit",
+        "Geschätzte Sprechzeit",
+        "Silbenzählung",
+        "Flesch-Kincaid-Lesbarkeitsindex",
+        "Sprachspezifische Lesbarkeitsformeln (16 Sprachen)",
         "In Groß- oder Kleinbuchstaben umwandeln",
         "In Satz- oder Titelschreibweise umwandeln",
         "Groß-/Kleinschreibung umkehren",
@@ -64,7 +68,7 @@
         },
         {
           "name": "Statistiken prüfen",
-          "text": "Im linken Panel sehen Sie 8 Metriken: Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter, Wortlänge und Lesezeit."
+          "text": "Im linken Panel sehen Sie 11 Metriken: Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter, Wortlänge und Lesezeit."
         },
         {
           "name": "Text umwandeln",
@@ -107,7 +111,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Statistiken prüfen",
-          "description": "Im linken Panel sehen Sie 8 Metriken: Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter, Wortlänge und Lesezeit."
+          "description": "Im linken Panel sehen Sie 11 Metriken: Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter, Wortlänge und Lesezeit."
         },
         {
           "icon": "RiTextWrap",
@@ -127,7 +131,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "8 Textmetriken",
+      "title": "11 Textmetriken",
       "description": "Der Zähler analysiert Ihren Text anhand von acht Indikatoren:",
       "grid": "two",
       "items": [

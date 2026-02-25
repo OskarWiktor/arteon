@@ -44,6 +44,10 @@
         "Telling av unike ord",
         "Gjennomsnittlig ordlengde",
         "Estimert lesetid",
+        "Estimert taletid",
+        "Stavelsestelling",
+        "Flesch-Kincaid lesbarhetspoeng",
+        "Språkspesifikke lesbarhetsformler (16 språk)",
         "Konverter til store eller små bokstaver",
         "Konverter til setnings- eller tittelstil",
         "Inverter store/små bokstaver",
@@ -64,7 +68,7 @@
         },
         {
           "name": "Sjekk statistikken",
-          "text": "I venstre panel ser du 8 målinger: ord, tegn, setninger, avsnitt, unike ord, ordlengde og lesetid."
+          "text": "I venstre panel ser du 11 målinger: ord, tegn, setninger, avsnitt, unike ord, ordlengde og lesetid."
         },
         {
           "name": "Transformer tekst",
@@ -107,7 +111,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Sjekk statistikken",
-          "description": "I venstre panel ser du 8 målinger: ord, tegn, setninger, avsnitt, unike ord, ordlengde og lesetid."
+          "description": "I venstre panel ser du 11 målinger: ord, tegn, setninger, avsnitt, unike ord, ordlengde og lesetid."
         },
         {
           "icon": "RiTextWrap",
@@ -127,7 +131,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "8 tekstmålinger",
+      "title": "11 tekstmålinger",
       "description": "Telleren analyserer teksten din med åtte indikatorer:",
       "grid": "two",
       "items": [

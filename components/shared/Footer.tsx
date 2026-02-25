@@ -14,7 +14,8 @@ const ORG = {
   name: 'Arteon',
   phoneE164: '+48516466255',
   phoneDisplay: '516 466 255',
-  email: 'kontakt@arteonagency.pl',
+  emailPl: 'kontakt@arteonagency.pl',
+  emailIntl: 'contact@arteonagency.com',
 };
 
 function FooterSchemas() {
@@ -26,7 +27,7 @@ function FooterSchemas() {
     url: siteUrl,
     image: toAbsoluteUrl('/icon-512x512.png'),
     telephone: ORG.phoneE164,
-    email: 'kontakt@arteonagency.pl',
+    email: ORG.emailPl,
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
@@ -216,8 +217,8 @@ export default function Footer() {
                   </a>
                 </p>
                 <p>
-                  <a href={`mailto:${ORG.email}`} className="hover-underline">
-                    {ORG.email}
+                  <a href={`mailto:${ORG.emailPl}`} className="hover-underline">
+                    {ORG.emailPl}
                   </a>
                 </p>
               </address>

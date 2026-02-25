@@ -47,6 +47,38 @@
     "appleMinimal": {
       "label": "Paleta minimalistyczna (inspirowana Apple)",
       "description": "Jeden mocny akcent kolorystyczny i kilka bardzo jasnych, miękkich neutrali - układ typowy dla interfejsów z dużą ilością bieli i subtelnych cieni."
+    },
+    "tetradic": {
+      "label": "Paleta tetradyczna (kwadratowa)",
+      "description": "Cztery odcienie rozmieszczone co 90 na kole barw (wierzchołki kwadratu)  bogata i zrównoważona, idealna do złożonych motywów UI i wizualizacji danych."
+    },
+    "warmShift": {
+      "label": "Paleta ciepłych tonów",
+      "description": "Kolory przesunięte w stronę ciepłego końca spektrum (czerwienie, pomarańcze, żółcie)  wywołuje energię, ciepło i przystępność."
+    },
+    "coolShift": {
+      "label": "Paleta chłodnych tonów",
+      "description": "Kolory przesunięte w stronę chłodnego końca spektrum (błękity, turkusy, fiolety)  komunikuje spokój, profesjonalizm i zaufanie."
+    },
+    "earthTones": {
+      "label": "Paleta ziemistych tonów",
+      "description": "Nisko nasycone brązy, oliwki i ochry inspirowane naturalnymi krajobrazami  idealna dla marek ekologicznych i rustykalnej estetyki."
+    },
+    "neonVibrant": {
+      "label": "Paleta neonowa",
+      "description": "Kolory o maksymalnym nasyceniu z elektryczną intensywnością  zaprojektowana dla odważnego marketingu, interfejsów gier i przyciągających uwagę projektów."
+    },
+    "vintageMuted": {
+      "label": "Paleta vintage",
+      "description": "Wytłumione, lekko ciepłe tony przypominające stare druki i retro fotografię  idealna dla marek z tradycją i nostalgicznej estetyki."
+    },
+    "highContrast": {
+      "label": "Paleta o wysokim kontraście",
+      "description": "Ekstremalny zakres jasności od prawie czerni do prawie bieli z odcieniem bazowym  doskonała dla dostępnych projektów i silnej hierarchii wizualnej."
+    },
+    "sunsetGradient": {
+      "label": "Paleta gradientu zachodu słońca",
+      "description": "Płynna rotacja odcieni od ciepłych do chłodnych tonów, naśladująca naturalny zachód słońca  świetna do sekcji hero, teł i projektów kreatywnych."
     }
   }
 }

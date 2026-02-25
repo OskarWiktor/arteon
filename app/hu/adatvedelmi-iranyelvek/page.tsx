@@ -42,7 +42,7 @@ export default function AdatvedelmiIranyelvekPage() {
               Adószám (NIP): <strong>9442284430</strong>, REGON: <strong>528888241</strong>
             </p>
             <p>
-              Kapcsolat: <strong>kontakt@arteonagency.pl</strong>, tel.: <strong>+48 516 466 255</strong>.
+              Kapcsolat: <strong>contact@arteonagency.com</strong>, tel.: <strong>+48 516 466 255</strong>.
             </p>
           </SectionInfo>
 

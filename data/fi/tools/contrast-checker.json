@@ -25,7 +25,14 @@
   "schemas": {
     "software": {
       "name": "Värikontrastin ja tekstin luettavuuden tarkistus – WCAG",
-      "alternateName": ["Värien luettavuustesteri", "Tekstin ja taustan kontrastin tarkistus", "Värikontrastilaskin", "WCAG-kontrastin testeri"],
+      "alternateName": [
+        "Värien luettavuustesteri",
+        "Tekstin ja taustan kontrastin tarkistus",
+        "Värikontrastilaskin",
+        "WCAG-kontrastin testeri",
+        "ADA värikontrasti-työkalu",
+        "Section 508 kontrasti-tarkistus"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
       "description": "Tarkista, ovatko tekstin ja taustan värit luettavia kaikille käyttäjille. Työkalu laskee kontrastisuhteen WCAG-standardin mukaisesti ja näyttää, täytätkö saavutettavuusvaatimukset.",
@@ -221,6 +228,20 @@
         },
         {
           "name": "Lakisääteinen vaatimus (EU-direktiivi)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Vaadittu US ADA / Section 508 mukaan",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Vaadittu UK Equality Act 2010 mukaan",
           "values": {
             "aa": true,
             "aaa": false

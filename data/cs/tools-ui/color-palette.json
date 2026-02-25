@@ -47,6 +47,38 @@
     "appleMinimal": {
       "label": "Minimalistická paleta (inspirováno Apple)",
       "description": "Jeden výrazný barevný akcent a řada velmi světlých, jemných neutrálních tónů – rozvržení typické pro rozhraní s velkým množstvím bílého prostoru a jemnými stíny."
+    },
+    "tetradic": {
+      "label": "Tetradická (čtvercová) paleta",
+      "description": "Čtyři odstíny vzdálené 90 na barevném kruhu (vrcholy čtverce)  bohatá a vyvážená, ideální pro složitá UI témata a vizualizaci dat."
+    },
+    "warmShift": {
+      "label": "Paleta teplých tónů",
+      "description": "Barvy posunuté k teplému konci spektra (červená, oranžová, žlutá)  evokuje energii, teplo a přístupnost."
+    },
+    "coolShift": {
+      "label": "Paleta studených tónů",
+      "description": "Barvy posunuté ke studenému konci spektra (modrá, tyrkysová, fialová)  vyjadřuje klid, profesionalitu a důvěru."
+    },
+    "earthTones": {
+      "label": "Paleta zemitých tónů",
+      "description": "Nízce saturované hnědé, olivové a okrové tóny inspirované přírodními krajinami  perfektní pro ekologické značky a rustikální estetiku."
+    },
+    "neonVibrant": {
+      "label": "Neonová vibrantní paleta",
+      "description": "Maximálně saturované barvy s elektrickou intenzitou  navržená pro odvážný marketing, herní rozhraní a poutavé designy."
+    },
+    "vintageMuted": {
+      "label": "Vintage tlumená paleta",
+      "description": "Desaturované, mírně teplé tóny připomínající staré tisky a retro fotografii  ideální pro tradiční značky a nostalgickou estetiku."
+    },
+    "highContrast": {
+      "label": "Paleta vysokého kontrastu",
+      "description": "Extrémní rozsah jasu od téměř černé po téměř bílou se základním odstínem  vynikající pro přístupné designy a silnou vizuální hierarchii."
+    },
+    "sunsetGradient": {
+      "label": "Paleta gradientu západu slunce",
+      "description": "Plynulá rotace odstínů od teplých po studené tóny, napodobující přirozený západ slunce  skvělá pro hero sekce, pozadí a kreativní projekty."
     }
   }
 }

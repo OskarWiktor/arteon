@@ -2,14 +2,14 @@
   "toolKey": "colorPalette",
   "locale": "hu",
   "metadata": {
-    "title": "Ingyenes színpaletta-generátor – 9 séma",
-    "description": "9 színpaletta generálása egy színből: monokromatikus, komplementer, triádikus, pasztell és több. HEX kódok másolása egy kattintással.",
+    "title": "Ingyenes színpaletta-generátor – 17 séma",
+    "description": "17 színpaletta generálása egy színből: monokromatikus, komplementer, triádikus, pasztell és több. HEX kódok másolása egy kattintással.",
     "ogImage": "/assets/tools/color-palette-generator/szinpaletta-generator-hu.webp",
     "path": "/hu/eszkozok/szinpaletta-generator"
   },
   "hero": {
-    "title": "Generáljon 9 színpalettát egyetlen alapszínből",
-    "description": "Adjon meg egyetlen alapszínt, és az eszköz 9 harmonikus színpalettát generál: monokromatikus, komplementár, triádikus, pasztell és még sok más. Minden szín másolható a HEX kódjával.",
+    "title": "Generáljon 17 színpalettát egyetlen alapszínből",
+    "description": "Adjon meg egyetlen alapszínt, és az eszköz 17 harmonikus színpalettát generál: monokromatikus, komplementár, triádikus, pasztell és még sok más. Minden szín másolható a HEX kódjával.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Színpaletta-generátor – 9 színséma",
+      "name": "Színpaletta-generátor – 17 színséma",
       "alternateName": ["Színséma generátor", "HEX színgenerátor", "Színpaletta készítő", "Színillesztő eszköz", "Színpaletta ingyenes", "Színösszhang generátor"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Ingyenes színpaletta-generátor. Adjon meg egy HEX színt, és az eszköz 9 sémát generál: monokromatikus, analóg, komplementer, triádikus, osztott komplementer, pasztell, sötét, tonális és minimalista. Minden szín másolható a HEX kóddal és HSL értékkel.",
+      "description": "Ingyenes színpaletta-generátor. Adjon meg egy HEX színt, és az eszköz 17 sémát generál: monokromatikus, analóg, komplementer, triádikus, osztott komplementer, pasztell, sötét, tonális és minimalista. Minden szín másolható a HEX kóddal és HSL értékkel.",
       "featureList": [
         "Monokromatikus séma – egy szín árnyalatai",
         "Analóg séma – szomszédos színek a színkörön",
@@ -49,7 +49,7 @@
     },
     "howTo": {
       "name": "Hogyan generáljon színpalettát egyetlen alapszínből",
-      "description": "Hogyan generáljon 9 színpalettát egyetlen alapszínből: monokromatikus, komplementár, triádikus, pasztell és még sok más. Minden szín másolható HEX kóddal.",
+      "description": "Hogyan generáljon 17 színpalettát egyetlen alapszínből: monokromatikus, komplementár, triádikus, pasztell és még sok más. Minden szín másolható HEX kóddal.",
       "steps": [
         {
           "name": "Válasszon alapszínt",
@@ -61,7 +61,7 @@
         },
         {
           "name": "Böngéssze a palettákat",
-          "text": "Az eszköz automatikusan 9 különböző palettát generál: monokromatikus, analóg, komplementár, triádikus, osztott komplementár, pasztell, sötét, tonális és minimalista."
+          "text": "Az eszköz automatikusan 17 különböző palettát generál: monokromatikus, analóg, komplementár, triádikus, osztott komplementár, pasztell, sötét, tonális és minimalista."
         },
         {
           "name": "Másolja a színeket",
@@ -78,7 +78,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért generáljon színpalettát?",
-      "html": "<p class=\"text-mid\">Az egységes színpaletta minden vizuális projekt alapja – a weboldaltól a logón át a nyomtatott anyagokig. Az egymással jól működő színek kézi kiválasztása színelméleti ismereteket igényel. A generátor ezt automatikusan végzi: Ön megad egy alapszínt (pl. a logó színét), és az eszköz 9 színkészletet hoz létre bevált színösszhang-sémák alapján.</p><p class=\"text-mid mt-3\">Minden generált szín tartalmazza a HEX kódját (pl. #496ba2) és HSL értékét (színezet, telítettség, világosság). A HEX kód közvetlenül beilleszthető CSS-be, Figmába, Canvába vagy bármely grafikus alkalmazásba.</p>",
+      "html": "<p class=\"text-mid\">Az egységes színpaletta minden vizuális projekt alapja – a weboldaltól a logón át a nyomtatott anyagokig. Az egymással jól működő színek kézi kiválasztása színelméleti ismereteket igényel. A generátor ezt automatikusan végzi: Ön megad egy alapszínt (pl. a logó színét), és az eszköz 17 színkészletet hoz létre bevált színösszhang-sémák alapján.</p><p class=\"text-mid mt-3\">Minden generált szín tartalmazza a HEX kódját (pl. #496ba2) és HSL értékét (színezet, telítettség, világosság). A HEX kód közvetlenül beilleszthető CSS-be, Figmába, Canvába vagy bármely grafikus alkalmazásba.</p>",
       "imageSrc": "/assets/tools/color-palette-generator/szinpaletta-generator-hu.webp",
       "imageAlt": "Színpaletta generátor – Arteon"
     },
@@ -99,7 +99,7 @@
         },
         {
           "title": "2. Erősítse meg a választást",
-          "description": "A Szín frissítése gombra kattintva az eszköz automatikusan 9 palettát generál különböző színösszhang-sémák alapján.",
+          "description": "A Szín frissítése gombra kattintva az eszköz automatikusan 17 palettát generál különböző színösszhang-sémák alapján.",
           "icon": "RiCheckboxCircleLine"
         },
         {
@@ -116,7 +116,7 @@
     {
       "type": "sectionSteps",
       "title": "Milyen színsémákat generál az eszköz?",
-      "description": "A generátor 9 palettatípust hoz létre – mindegyik a színelmélet más elvén alapul:",
+      "description": "A generátor 17 palettatípust hoz létre – mindegyik a színelmélet más elvén alapul:",
       "grid": "two",
       "items": [
         {
@@ -224,7 +224,7 @@
         {
           "icon": "RiRefreshLine",
           "title": "A paletták nem változnak a szín bevitele után",
-          "description": "A HEX kód egyszerű beírása nem generál automatikusan palettákat – meg kell erősítenie a változást a Szín frissítése gombbal. Csak a megerősítés után számítja újra az eszköz mind a 9 sémát."
+          "description": "A HEX kód egyszerű beírása nem generál automatikusan palettákat – meg kell erősítenie a változást a Szín frissítése gombbal. Csak a megerősítés után számítja újra az eszköz mind a 17 sémát."
         },
         {
           "icon": "RiErrorWarningLine",

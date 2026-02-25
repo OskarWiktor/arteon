@@ -32,7 +32,9 @@
         "Színkontraszt kalkulátor",
         "WCAG kontraszt tesztelő",
         "Szín akadálymentességi ellenőrző",
-        "Olvashatóak-e a színeim"
+        "Olvashatóak-e a színeim",
+        "ADA színkontraszt eszköz",
+        "Section 508 kontraszt ellenőrző"
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
@@ -229,6 +231,20 @@
         },
         {
           "name": "Jogilag kötelező (EU irányelv)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Szükséges az US ADA / Section 508 szerint",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Szükséges az UK Equality Act 2010 szerint",
           "values": {
             "aa": true,
             "aaa": false

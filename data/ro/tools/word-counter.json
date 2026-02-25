@@ -44,6 +44,10 @@
         "Numărare cuvinte unice",
         "Lungimea medie a cuvintelor",
         "Timp de citire estimat",
+        "Timp de vorbire estimat",
+        "Numărare silabe",
+        "Scor de lizibilitate Flesch-Kincaid",
+        "Formule de lizibilitate adaptate (16 limbi)",
         "Conversie în majuscule sau minuscule",
         "Conversie în stil de propoziție sau de titlu",
         "Inversarea majusculelor/minusculelor",
@@ -64,7 +68,7 @@
         },
         {
           "name": "Verificați statisticile",
-          "text": "În panoul din stânga veți vedea 8 metrici: cuvinte, caractere, propoziții, paragrafe, cuvinte unice, lungime medie și timp de citire."
+          "text": "În panoul din stânga veți vedea 11 metrici: cuvinte, caractere, propoziții, paragrafe, cuvinte unice, lungime medie și timp de citire."
         },
         {
           "name": "Transformați textul",
@@ -107,7 +111,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Verificați statisticile",
-          "description": "În panoul din stânga veți vedea 8 metrici: cuvinte, caractere, propoziții, paragrafe, cuvinte unice, lungime medie și timp de citire."
+          "description": "În panoul din stânga veți vedea 11 metrici: cuvinte, caractere, propoziții, paragrafe, cuvinte unice, lungime medie și timp de citire."
         },
         {
           "icon": "RiTextWrap",
@@ -127,7 +131,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "8 metrici text",
+      "title": "11 metrici text",
       "description": "Contorul analizează textul cu opt indicatori:",
       "grid": "two",
       "items": [

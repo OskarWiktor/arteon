@@ -47,6 +47,38 @@
     "appleMinimal": {
       "label": "Minimalistisch palet (geïnspireerd door Apple)",
       "description": "Een levendig kleuraccent en meerdere zeer lichte en zachte neutrale tinten, een compositie typisch voor interfaces met veel witruimte en subtiele schaduwen."
+    },
+    "tetradic": {
+      "label": "Tetradisch (vierkant) palet",
+      "description": "Vier tinten met 90 tussenruimte op het kleurenwiel (hoekpunten van een vierkant)  rijk en evenwichtig, ideaal voor complexe UI-thema's en datavisualisatie."
+    },
+    "warmShift": {
+      "label": "Warm palet",
+      "description": "Kleuren verschoven naar het warme einde van het spectrum (rood, oranje, geel)  roept energie, warmte en toegankelijkheid op."
+    },
+    "coolShift": {
+      "label": "Koel palet",
+      "description": "Kleuren verschoven naar het koele einde van het spectrum (blauw, turquoise, paars) — straalt rust, professionaliteit en vertrouwen uit."
+    },
+    "earthTones": {
+      "label": "Aardetinten palet",
+      "description": "Laag verzadigde bruinen, olijven en okers geïnspireerd door natuurlijke landschappen  perfect voor ecologische merken en rustieke esthetiek."
+    },
+    "neonVibrant": {
+      "label": "Neon vibrerend palet",
+      "description": "Maximaal verzadigde kleuren met elektrische intensiteit  ontworpen voor gedurfd marketing, gaming-interfaces en opvallende designs."
+    },
+    "vintageMuted": {
+      "label": "Vintage gedempt palet",
+      "description": "Onverzadigde, licht warme tonen die doen denken aan oude drukken en retro fotografie  ideaal voor erfgoedmerken en nostalgische esthetiek."
+    },
+    "highContrast": {
+      "label": "Hoog contrast palet",
+      "description": "Extreem helderheidsbereik van bijna zwart tot bijna wit met de basistint  uitstekend voor toegankelijke ontwerpen en sterke visuele hiërarchie."
+    },
+    "sunsetGradient": {
+      "label": "Zonsondergang gradiënt palet",
+      "description": "Een vloeiende tintrotatie van warme naar koele tonen, als een natuurlijke zonsondergang  geweldig voor hero-secties, achtergronden en creatieve projecten."
     }
   }
 }

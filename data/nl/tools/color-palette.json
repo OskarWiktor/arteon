@@ -2,14 +2,14 @@
   "toolKey": "colorPalette",
   "locale": "nl",
   "metadata": {
-    "title": "Gratis kleurpalettengenerator – 9 schema's",
-    "description": "Genereer 9 kleurpaletten uit één kleur: monochromatisch, complementair, triadisch, pastel en meer. Kopieer HEX-codes met één klik.",
+    "title": "Gratis kleurpalettengenerator – 17 schema's",
+    "description": "Genereer 17 kleurpaletten uit één kleur: monochromatisch, complementair, triadisch, pastel en meer. Kopieer HEX-codes met één klik.",
     "ogImage": "/assets/tools/color-palette-generator/kleurpalettengenerator-nl.webp",
     "path": "/nl/tools/kleurpalettengenerator"
   },
   "hero": {
-    "title": "Genereer 9 kleurpaletten vanuit één basiskleur",
-    "description": "Voer één basiskleur in en de tool genereert 9 harmonieuze kleurpaletten: monochromatisch, complementair, triadisch, pastel en meer. Elke kleur kan worden gekopieerd met zijn HEX-code.",
+    "title": "Genereer 17 kleurpaletten vanuit één basiskleur",
+    "description": "Voer één basiskleur in en de tool genereert 17 harmonieuze kleurpaletten: monochromatisch, complementair, triadisch, pastel en meer. Elke kleur kan worden gekopieerd met zijn HEX-code.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Kleurpalettengenerator – 9 kleurschema's",
+      "name": "Kleurpalettengenerator – 17 kleurschema's",
       "alternateName": ["Kleurschema generator", "HEX kleurgenerator", "Kleurpalet maker", "Kleurafstemmingstool", "Kleurpalet gratis", "Kleurharmonie generator"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Gratis kleurpalettengenerator. Voer één HEX-kleur in en de tool genereert 9 schema's: monochromatisch, analoog, complementair, triadisch, gesplitst-complementair, pastel, donker, tonaal en minimalistisch. Elke kleur kan worden gekopieerd met de HEX-code en HSL-waarde.",
+      "description": "Gratis kleurpalettengenerator. Voer één HEX-kleur in en de tool genereert 17 schema's: monochromatisch, analoog, complementair, triadisch, gesplitst-complementair, pastel, donker, tonaal en minimalistisch. Elke kleur kan worden gekopieerd met de HEX-code en HSL-waarde.",
       "featureList": [
         "Monochromatisch schema – tinten van één kleur",
         "Analoog schema – naburige kleuren op het kleurenwiel",
@@ -49,7 +49,7 @@
     },
     "howTo": {
       "name": "Hoe een kleurpalet te genereren uit één basiskleur",
-      "description": "Hoe 9 kleurpaletten te genereren uit één basiskleur: monochromatisch, complementair, triadisch, pastel en meer. Elke kleur kan worden gekopieerd met zijn HEX-code.",
+      "description": "Hoe 17 kleurpaletten te genereren uit één basiskleur: monochromatisch, complementair, triadisch, pastel en meer. Elke kleur kan worden gekopieerd met zijn HEX-code.",
       "steps": [
         {
           "name": "Kies een basiskleur",
@@ -61,7 +61,7 @@
         },
         {
           "name": "Bekijk de paletten",
-          "text": "De tool genereert automatisch 9 verschillende paletten: monochromatisch, analoog, complementair, triadisch, split-complementair, pastel, donker, tonaal en minimalistisch."
+          "text": "De tool genereert automatisch 17 verschillende paletten: monochromatisch, analoog, complementair, triadisch, split-complementair, pastel, donker, tonaal en minimalistisch."
         },
         {
           "name": "Kopieer kleuren",
@@ -78,7 +78,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom een kleurpalet genereren?",
-      "html": "<p class=\"text-mid\">Een consistent kleurpalet is de basis van elk visueel project – van een website, via een logo, tot drukwerk. Het handmatig selecteren van kleuren die goed samenwerken vereist kennis van kleurentheorie. De generator doet dit automatisch: u geeft één basiskleur op (bijv. uw logkleur) en de tool creëert 9 kleurensets op basis van bewezen kleurharmonieschema's.</p><p class=\"text-mid mt-3\">Elke gegenereerde kleur komt met zijn HEX-code (bijv. #496ba2) en HSL-waarde (tint, verzadiging, lichtheid). De HEX-code kan direct worden geplakt in CSS, Figma, Canva of een grafische applicatie.</p>",
+      "html": "<p class=\"text-mid\">Een consistent kleurpalet is de basis van elk visueel project – van een website, via een logo, tot drukwerk. Het handmatig selecteren van kleuren die goed samenwerken vereist kennis van kleurentheorie. De generator doet dit automatisch: u geeft één basiskleur op (bijv. uw logkleur) en de tool creëert 17 kleurensets op basis van bewezen kleurharmonieschema's.</p><p class=\"text-mid mt-3\">Elke gegenereerde kleur komt met zijn HEX-code (bijv. #496ba2) en HSL-waarde (tint, verzadiging, lichtheid). De HEX-code kan direct worden geplakt in CSS, Figma, Canva of een grafische applicatie.</p>",
       "imageSrc": "/assets/tools/color-palette-generator/kleurpalettengenerator-nl.webp",
       "imageAlt": "Kleurpalettengenerator – Arteon"
     },
@@ -99,7 +99,7 @@
         },
         {
           "title": "2. Bevestig uw keuze",
-          "description": "Na het klikken op Kleur bijwerken genereert de tool automatisch 9 paletten op basis van verschillende kleurharmonieschema's.",
+          "description": "Na het klikken op Kleur bijwerken genereert de tool automatisch 17 paletten op basis van verschillende kleurharmonieschema's.",
           "icon": "RiCheckboxCircleLine"
         },
         {
@@ -116,7 +116,7 @@
     {
       "type": "sectionSteps",
       "title": "Welke kleurschema's genereert de tool?",
-      "description": "De generator creëert 9 palettypen – elk gebaseerd op een ander principe uit de kleurentheorie:",
+      "description": "De generator creëert 17 palettypen – elk gebaseerd op een ander principe uit de kleurentheorie:",
       "grid": "two",
       "items": [
         {
@@ -224,7 +224,7 @@
         {
           "icon": "RiRefreshLine",
           "title": "Paletten veranderen niet na invoer van kleur",
-          "description": "Het simpelweg typen van een HEX-code genereert niet automatisch paletten – u moet de wijziging bevestigen met de knop Kleur bijwerken. Pas na bevestiging herberekent de tool alle 9 schema's."
+          "description": "Het simpelweg typen van een HEX-code genereert niet automatisch paletten – u moet de wijziging bevestigen met de knop Kleur bijwerken. Pas na bevestiging herberekent de tool alle 17 schema's."
         },
         {
           "icon": "RiErrorWarningLine",

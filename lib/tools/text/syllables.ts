@@ -1,0 +1,229 @@
+import type { Locale } from '@/types/locale';
+
+// ---------------------------------------------------------------------------
+// Per-language syllable counting heuristics
+// ---------------------------------------------------------------------------
+
+/**
+ * Count syllables in a single word using language-specific rules.
+ * Falls back to a generic vowel-group heuristic for unsupported languages.
+ */
+export function countSyllablesInWord(word: string, locale: Locale = 'en'): number {
+  const w = word.toLowerCase().replace(/[^a-zA-Z\u00C0-\u024F\u0370-\u03FF\u0400-\u04FF\u00E0-\u00FF]/g, '');
+  if (!w) return 0;
+
+  switch (locale) {
+    case 'en':
+      return countSyllablesEN(w);
+    case 'de':
+      return countSyllablesDE(w);
+    case 'fr':
+      return countSyllablesFR(w);
+    case 'es':
+    case 'pt':
+    case 'it':
+    case 'ro':
+      return countSyllablesRomance(w);
+    case 'nl':
+      return countSyllablesNL(w);
+    case 'pl':
+    case 'cs':
+      return countSyllablesSlavic(w);
+    case 'sv':
+    case 'da':
+    case 'no':
+    case 'fi':
+      return countSyllablesNordic(w);
+    case 'hu':
+      return countSyllablesHU(w);
+    case 'el':
+      return countSyllablesEL(w);
+    default:
+      return countSyllablesGeneric(w);
+  }
+}
+
+/**
+ * Count total syllables in a text string.
+ */
+export function countSyllables(text: string, locale: Locale = 'en'): number {
+  if (!text.trim()) return 0;
+  const words = text.trim().split(/\s+/);
+  return words.reduce((sum, word) => sum + countSyllablesInWord(word, locale), 0);
+}
+
+// ---------------------------------------------------------------------------
+// English syllable counter
+// ---------------------------------------------------------------------------
+
+function countSyllablesEN(word: string): number {
+  if (word.length <= 2) return 1;
+
+  let w = word;
+
+  // Remove trailing silent-e
+  if (w.endsWith('e') && !w.endsWith('le') && !w.endsWith('ee') && !w.endsWith('ie')) {
+    w = w.slice(0, -1);
+  }
+
+  // Count vowel groups
+  const vowelGroups = w.match(/[aeiouy]+/gi);
+  let count = vowelGroups ? vowelGroups.length : 1;
+
+  // Adjustments for common patterns
+  if (word.endsWith('le') && word.length > 2 && !/[aeiouy]/.test(word[word.length - 3])) {
+    count++;
+  }
+  if (word.endsWith('ed') && !word.endsWith('ted') && !word.endsWith('ded')) {
+    count = Math.max(1, count - 1);
+  }
+  if (word.endsWith('es') && !word.endsWith('ses') && !word.endsWith('zes') && !word.endsWith('ces') && !word.endsWith('xes')) {
+    count = Math.max(1, count - 1);
+  }
+
+  // Common suffixes that add a syllable
+  if (/tion$|sion$|cian$/.test(word)) {
+    // already counted as vowel group, no change needed
+  }
+
+  return Math.max(1, count);
+}
+
+// ---------------------------------------------------------------------------
+// German syllable counter
+// ---------------------------------------------------------------------------
+
+function countSyllablesDE(word: string): number {
+  if (word.length <= 2) return 1;
+
+  // German diphthongs count as one syllable: ei, au, eu, äu, ie
+  let w = word;
+  w = w.replace(/ei/g, 'X').replace(/au/g, 'X').replace(/eu/g, 'X').replace(/äu/g, 'X').replace(/ie/g, 'X');
+
+  const vowelGroups = w.match(/[aeiouyäöüX]+/gi);
+  return Math.max(1, vowelGroups ? vowelGroups.length : 1);
+}
+
+// ---------------------------------------------------------------------------
+// French syllable counter
+// ---------------------------------------------------------------------------
+
+function countSyllablesFR(word: string): number {
+  if (word.length <= 2) return 1;
+
+  let w = word;
+
+  // French silent-e at end (unless preceded by consonant cluster that needs it)
+  if (w.endsWith('e') && !w.endsWith('ée') && !w.endsWith('ie') && w.length > 2) {
+    w = w.slice(0, -1);
+  }
+  if (w.endsWith('es') && w.length > 3) {
+    w = w.slice(0, -2);
+  }
+  if (w.endsWith('ent') && w.length > 4) {
+    w = w.slice(0, -3);
+  }
+
+  // French diphthongs
+  w = w.replace(/ou/g, 'X').replace(/ai/g, 'X').replace(/ei/g, 'X').replace(/au/g, 'X').replace(/eau/g, 'X').replace(/oi/g, 'X');
+
+  const vowelGroups = w.match(/[aeiouyàâéèêëïîôùûüæœX]+/gi);
+  return Math.max(1, vowelGroups ? vowelGroups.length : 1);
+}
+
+// ---------------------------------------------------------------------------
+// Romance languages (ES, PT, IT, RO) syllable counter
+// ---------------------------------------------------------------------------
+
+function countSyllablesRomance(word: string): number {
+  if (word.length <= 2) return 1;
+
+  // Common Romance diphthongs
+  let w = word;
+  w = w.replace(/ia/g, 'YA').replace(/ie/g, 'YE').replace(/io/g, 'YO').replace(/iu/g, 'YU');
+  w = w.replace(/ua/g, 'WA').replace(/ue/g, 'WE').replace(/ui/g, 'WI').replace(/uo/g, 'WO');
+  w = w.replace(/ai/g, 'X').replace(/ei/g, 'X').replace(/oi/g, 'X').replace(/au/g, 'X').replace(/eu/g, 'X');
+
+  const vowelGroups = w.match(/[aeiouyàáâãéèêíîóôõúùûäëïöüăîâșțX]+/gi);
+  return Math.max(1, vowelGroups ? vowelGroups.length : 1);
+}
+
+// ---------------------------------------------------------------------------
+// Dutch syllable counter
+// ---------------------------------------------------------------------------
+
+function countSyllablesNL(word: string): number {
+  if (word.length <= 2) return 1;
+
+  let w = word;
+  // Dutch diphthongs
+  w = w.replace(/ij/g, 'X').replace(/ei/g, 'X').replace(/au/g, 'X').replace(/ou/g, 'X').replace(/eu/g, 'X').replace(/oe/g, 'X').replace(/ie/g, 'X').replace(/ui/g, 'X');
+
+  const vowelGroups = w.match(/[aeiouyëïöüX]+/gi);
+  return Math.max(1, vowelGroups ? vowelGroups.length : 1);
+}
+
+// ---------------------------------------------------------------------------
+// Slavic languages (PL, CS) syllable counter
+// ---------------------------------------------------------------------------
+
+function countSyllablesSlavic(word: string): number {
+  if (word.length <= 1) return 1;
+
+  // In Polish/Czech, each vowel is typically one syllable
+  // Vowels: a, e, i, o, u, y (PL), á, é, í, ó, ú, ů, ý, ě (CS), ą, ę, ó (PL)
+  const vowels = word.match(/[aeiouyąęóáéíúůýě]+/gi);
+  return Math.max(1, vowels ? vowels.length : 1);
+}
+
+// ---------------------------------------------------------------------------
+// Nordic languages (SV, DA, NO, FI) syllable counter
+// ---------------------------------------------------------------------------
+
+function countSyllablesNordic(word: string): number {
+  if (word.length <= 2) return 1;
+
+  // Nordic vowels including å, ä, ö (SV), æ, ø, å (DA/NO), ä, ö, y (FI)
+  const vowelGroups = word.match(/[aeiouyåäöæø]+/gi);
+  return Math.max(1, vowelGroups ? vowelGroups.length : 1);
+}
+
+// ---------------------------------------------------------------------------
+// Hungarian syllable counter
+// ---------------------------------------------------------------------------
+
+function countSyllablesHU(word: string): number {
+  if (word.length <= 1) return 1;
+
+  // Hungarian: each vowel = one syllable (no diphthongs in standard Hungarian)
+  const vowels = word.match(/[aáeéiíoóöőuúüű]/gi);
+  return Math.max(1, vowels ? vowels.length : 1);
+}
+
+// ---------------------------------------------------------------------------
+// Greek syllable counter
+// ---------------------------------------------------------------------------
+
+function countSyllablesEL(word: string): number {
+  if (word.length <= 1) return 1;
+
+  // Greek diphthongs: αι, ει, οι, ου, αυ, ευ, ηυ
+  let w = word;
+  w = w.replace(/αι/g, 'X').replace(/ει/g, 'X').replace(/οι/g, 'X').replace(/ου/g, 'X');
+  w = w.replace(/αυ/g, 'X').replace(/ευ/g, 'X').replace(/ηυ/g, 'X');
+
+  const vowels = w.match(/[αεηιοωυάέήίόώύϊϋΐΰX]/gi);
+  return Math.max(1, vowels ? vowels.length : 1);
+}
+
+// ---------------------------------------------------------------------------
+// Generic fallback syllable counter
+// ---------------------------------------------------------------------------
+
+function countSyllablesGeneric(word: string): number {
+  if (word.length <= 2) return 1;
+
+  // Generic: count groups of characters that look like vowels
+  const vowelGroups = word.match(/[aeiouyàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿ]+/gi);
+  return Math.max(1, vowelGroups ? vowelGroups.length : 1);
+}

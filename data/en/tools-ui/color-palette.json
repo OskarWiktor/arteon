@@ -47,6 +47,38 @@
     "appleMinimal": {
       "label": "Minimalist palette (Apple inspired)",
       "description": "One bold color accent and several very light, soft neutrals - a layout typical of interfaces with plenty of white space and subtle shadows."
+    },
+    "tetradic": {
+      "label": "Tetradic (square) palette",
+      "description": "Four hues spaced 90° apart on the color wheel (vertices of a square) - rich and balanced, ideal for complex UI themes and data visualization."
+    },
+    "warmShift": {
+      "label": "Warm shift palette",
+      "description": "Colors shifted toward the warm end of the spectrum (reds, oranges, yellows) - evokes energy, warmth, and approachability."
+    },
+    "coolShift": {
+      "label": "Cool shift palette",
+      "description": "Colors shifted toward the cool end of the spectrum (blues, teals, purples) - conveys calm, professionalism, and trust."
+    },
+    "earthTones": {
+      "label": "Earth tones palette",
+      "description": "Low-saturation browns, olives, and ochres inspired by natural landscapes - perfect for organic brands, eco-friendly products, and rustic aesthetics."
+    },
+    "neonVibrant": {
+      "label": "Neon vibrant palette",
+      "description": "Maximum saturation colors with electric intensity - designed for bold marketing, gaming interfaces, and attention-grabbing designs."
+    },
+    "vintageMuted": {
+      "label": "Vintage muted palette",
+      "description": "Desaturated, slightly warm tones reminiscent of aged prints and retro photography - ideal for heritage brands and nostalgic aesthetics."
+    },
+    "highContrast": {
+      "label": "High contrast palette",
+      "description": "Extreme lightness range from near-black to near-white with the base hue - excellent for accessible designs and strong visual hierarchy."
+    },
+    "sunsetGradient": {
+      "label": "Sunset gradient palette",
+      "description": "A smooth hue rotation through warm to cool tones, mimicking a natural sunset - great for hero sections, backgrounds, and creative projects."
     }
   }
 }

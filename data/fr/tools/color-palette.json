@@ -2,14 +2,14 @@
   "toolKey": "colorPalette",
   "locale": "fr",
   "metadata": {
-    "title": "Générateur gratuit de palettes de couleurs – 9 schémas",
-    "description": "Générez 9 palettes de couleurs à partir d'une couleur : monochromatique, complémentaire, triadique, pastel et plus. Copiez les codes HEX en un clic.",
+    "title": "Générateur gratuit de palettes de couleurs – 17 schémas",
+    "description": "Générez 17 palettes de couleurs à partir d'une couleur : monochromatique, complémentaire, triadique, pastel et plus. Copiez les codes HEX en un clic.",
     "ogImage": "/assets/tools/color-palette-generator/generateur-de-palettes-de-couleurs-fr.webp",
     "path": "/fr/outils/generateur-de-palettes-de-couleurs"
   },
   "hero": {
-    "title": "Générez 9 palettes de couleurs à partir d'une couleur de base",
-    "description": "Choisissez une couleur de base et générez 9 palettes harmonieuses. Monochromatique, complémentaire, triadique, pastel, sombre et plus – tous les calculs s'exécutent localement dans votre navigateur.",
+    "title": "Générez 17 palettes de couleurs à partir d'une couleur de base",
+    "description": "Choisissez une couleur de base et générez 17 palettes harmonieuses. Monochromatique, complémentaire, triadique, pastel, sombre et plus – tous les calculs s'exécutent localement dans votre navigateur.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Générateur de palettes de couleurs – 9 schémas de couleurs",
+      "name": "Générateur de palettes de couleurs – 17 schémas de couleurs",
       "alternateName": [
         "Générateur de palettes gratuit",
         "Schémas de couleurs à partir d'une couleur",
@@ -36,7 +36,7 @@
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Générateur gratuit de palettes de couleurs. Saisissez une couleur HEX et l'outil générera 9 schémas : monochromatique, analogue, complémentaire, triadique, complémentaire divisé, pastel, sombre, tonal et minimaliste. Chaque couleur peut être copiée avec son code HEX et sa valeur HSL.",
+      "description": "Générateur gratuit de palettes de couleurs. Saisissez une couleur HEX et l'outil générera 17 schémas : monochromatique, analogue, complémentaire, triadique, complémentaire divisé, pastel, sombre, tonal et minimaliste. Chaque couleur peut être copiée avec son code HEX et sa valeur HSL.",
       "featureList": [
         "Schéma monochromatique – nuances d'une couleur",
         "Schéma analogue – couleurs voisines sur la roue chromatique",
@@ -57,7 +57,7 @@
     },
     "howTo": {
       "name": "Comment générer des palettes de couleurs à partir d'une couleur",
-      "description": "Choisissez une couleur de base et obtenez 9 palettes harmonieuses avec des codes HEX copiables.",
+      "description": "Choisissez une couleur de base et obtenez 17 palettes harmonieuses avec des codes HEX copiables.",
       "steps": [
         {
           "name": "Choisir la couleur de base",
@@ -65,7 +65,7 @@
         },
         {
           "name": "Voir les palettes",
-          "text": "L'outil génère automatiquement 9 palettes avec plusieurs couleurs harmonieuses chacune."
+          "text": "L'outil génère automatiquement 17 palettes avec plusieurs couleurs harmonieuses chacune."
         },
         {
           "name": "Copier les codes HEX",
@@ -82,7 +82,7 @@
     {
       "type": "sectionBasic",
       "title": "Générer des palettes à partir d'une seule couleur",
-      "html": "<p class=\"text-mid\">Le générateur de palettes crée 9 palettes différentes à partir d'une seule couleur de base, en s'appuyant sur la théorie des couleurs. Chaque palette a une composition différente – des variations monochromatiques aux couleurs complémentaires contrastantes.</p><p class=\"text-mid mt-3\">Tous les calculs reposent sur l'espace colorimétrique HSL (Teinte, Saturation, Luminosité). La teinte détermine la couleur de base, la saturation l'intensité et la luminosité le caractère clair ou foncé. Ce modèle correspond à la perception humaine des couleurs et se prête parfaitement à la génération de palettes.</p>",
+      "html": "<p class=\"text-mid\">Le générateur de palettes crée 17 palettes différentes à partir d'une seule couleur de base, en s'appuyant sur la théorie des couleurs. Chaque palette a une composition différente – des variations monochromatiques aux couleurs complémentaires contrastantes.</p><p class=\"text-mid mt-3\">Tous les calculs reposent sur l'espace colorimétrique HSL (Teinte, Saturation, Luminosité). La teinte détermine la couleur de base, la saturation l'intensité et la luminosité le caractère clair ou foncé. Ce modèle correspond à la perception humaine des couleurs et se prête parfaitement à la génération de palettes.</p>",
       "imageSrc": "/assets/tools/color-palette-generator/generateur-de-palettes-de-couleurs-fr.webp",
       "imageAlt": "Générateur de palettes de couleurs – Arteon"
     },
@@ -104,7 +104,7 @@
         {
           "icon": "RiColorFilterLine",
           "title": "2. Voir les palettes",
-          "description": "L'outil génère automatiquement 9 palettes avec plusieurs couleurs harmonieuses."
+          "description": "L'outil génère automatiquement 17 palettes avec plusieurs couleurs harmonieuses."
         },
         {
           "icon": "RiFileCopyLine",
@@ -119,7 +119,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "9 types de palettes – laquelle convient à votre projet ?",
+      "title": "17 types de palettes – laquelle convient à votre projet ?",
       "description": "Chaque palette a un caractère différent :",
       "grid": "three",
       "items": [
@@ -228,7 +228,7 @@
         {
           "icon": "RiRefreshLine",
           "title": "Les palettes ne changent pas après la saisie d'une couleur",
-          "description": "Simplement taper un code HEX ne génère pas automatiquement les palettes : vous devez confirmer le changement avec le bouton Mettre à jour la couleur. Ce n'est qu'après confirmation que l'outil recalcule les 9 schémas."
+          "description": "Simplement taper un code HEX ne génère pas automatiquement les palettes : vous devez confirmer le changement avec le bouton Mettre à jour la couleur. Ce n'est qu'après confirmation que l'outil recalcule les 17 schémas."
         },
         {
           "icon": "RiErrorWarningLine",
@@ -253,8 +253,8 @@
       "items": [
         {
           "question": "Combien de palettes l'outil génère-t-il ?",
-          "answer": "L'outil génère 9 palettes différentes à partir d'une seule couleur de base : monochromatique, analogue, complémentaire, triadique, complémentaire divisée, pastel, sombre, tonale (Material Design) et minimaliste (style Apple).",
-          "answerSchemaText": "9 palettes : monochromatique, analogue, complémentaire, triadique, complémentaire divisée, pastel, sombre, tonale, minimaliste."
+          "answer": "L'outil génère 17 palettes différentes à partir d'une seule couleur de base : monochromatique, analogue, complémentaire, triadique, complémentaire divisée, pastel, sombre, tonale (Material Design) et minimaliste (style Apple).",
+          "answerSchemaText": "17 palettes : monochromatique, analogue, complémentaire, triadique, complémentaire divisée, pastel, sombre, tonale, minimaliste."
         },
         {
           "question": "Qu'est-ce qu'une palette monochromatique ?",

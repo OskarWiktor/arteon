@@ -25,7 +25,14 @@
   "schemas": {
     "software": {
       "name": "Färgkontrast- och textläsbarhetskontroll – WCAG",
-      "alternateName": ["Färgläsbarhetstestare", "Kontrastkontroll för text och bakgrund", "Färgkontrastkalkylator", "WCAG-kontrasttestare"],
+      "alternateName": [
+        "Färgläsbarhetstestare",
+        "Kontrastkontroll för text och bakgrund",
+        "Färgkontrastkalkylator",
+        "WCAG-kontrasttestare",
+        "ADA färgkontrast-verktyg",
+        "Section 508 kontrast-kontroll"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
       "description": "Kontrollera om text- och bakgrundsfärger är läsbara för alla användare. Verktyget beräknar kontrastförhållandet enligt WCAG-standarden och visar om du uppfyller tillgänglighetskraven.",
@@ -221,6 +228,20 @@
         },
         {
           "name": "Lagstadgat krav (EU-direktiv)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Krävs enligt US ADA / Section 508",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Krävs enligt UK Equality Act 2010",
           "values": {
             "aa": true,
             "aaa": false

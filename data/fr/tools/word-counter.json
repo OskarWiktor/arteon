@@ -44,6 +44,10 @@
         "Comptage de mots uniques",
         "Longueur moyenne des mots",
         "Temps de lecture estimé",
+        "Temps de parole estimé",
+        "Comptage de syllabes",
+        "Score de lisibilité Flesch-Kincaid",
+        "Formules de lisibilité adaptées (16 langues)",
         "Conversion en majuscules ou minuscules",
         "Conversion en style de phrase ou de titre",
         "Inversion de la casse",
@@ -64,7 +68,7 @@
         },
         {
           "name": "Vérifiez les statistiques",
-          "text": "Dans le panneau gauche, vous verrez 8 métriques : mots, caractères, phrases, paragraphes, mots uniques, longueur moyenne et temps de lecture."
+          "text": "Dans le panneau gauche, vous verrez 11 métriques : mots, caractères, phrases, paragraphes, mots uniques, longueur moyenne et temps de lecture."
         },
         {
           "name": "Transformez le texte",
@@ -107,7 +111,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Vérifiez les statistiques",
-          "description": "Dans le panneau gauche, vous verrez 8 métriques : mots, caractères, phrases, paragraphes, mots uniques, longueur moyenne et temps de lecture."
+          "description": "Dans le panneau gauche, vous verrez 11 métriques : mots, caractères, phrases, paragraphes, mots uniques, longueur moyenne et temps de lecture."
         },
         {
           "icon": "RiTextWrap",
@@ -127,7 +131,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "8 métriques de texte",
+      "title": "11 métriques de texte",
       "description": "Le compteur analyse votre texte selon huit indicateurs :",
       "grid": "two",
       "items": [
