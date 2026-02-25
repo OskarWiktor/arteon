@@ -132,6 +132,15 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Lesbarkeitsformeln für deutsche Texte",
+      "html": "<p class=\"text-mid mb-4\">Für deutsche Texte verwendet dieses Tool die <strong>Amstad-Formel</strong> — eine Adaption des Flesch-Index speziell für die deutsche Sprache:</p><p class=\"text-mid mb-4\"><code class=\"rounded bg-black/5 px-2 py-1\">180 − ASL − 58,5 × ASW</code></p><p class=\"text-mid mb-4\">ASL ist die durchschnittliche Satzlänge (Wörter pro Satz), ASW die durchschnittliche Silbenzahl pro Wort. Die angepassten Koeffizienten berücksichtigen, dass deutsche Wörter im Durchschnitt länger sind als englische — vor allem durch zusammengesetzte Wörter (Komposita).</p><p class=\"text-mid\">Zusätzlich existiert die <strong>Wiener Sachtextformel</strong>, die in Österreich und der Schweiz verbreitet ist und speziell für Sachtexte entwickelt wurde.</p>"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 Textmetriken – was der Zähler misst",
       "description": "Der Zähler analysiert Ihren Text anhand von elf Indikatoren:",
@@ -391,6 +400,18 @@
           "question": "Wie genau ist der Silbenzähler?",
           "answer": "Das Tool verwendet sprachspezifische Heuristiken. Für Deutsch erkennt es Diphthonge (ei, au, eu, äu), Umlaute und typische Silbenstrukturen zusammengesetzter Wörter. Für Englisch werden stille Buchstaben, Suffixe (-ed, -es, -le) und Diphthonge berücksichtigt. Die Zählung ist approximativ, aber ausreichend für Lesbarkeitsbewertungen.",
           "answerSchemaText": "Der Silbenzähler nutzt sprachspezifische Heuristiken für 16 Sprachen einschließlich deutscher Diphthonge und Komposita."
+        },
+        {
+          "question": "Wie verbessere ich die Lesbarkeit meines Textes?",
+          "answer": "Halten Sie Sätze unter 20 Wörtern. Ersetzen Sie Fachbegriffe durch Alltagswörter. Teilen Sie lange Absätze auf und verwenden Sie Aufzählungen. Im Deutschen: achten Sie besonders auf zusammengesetzte Substantive — lösen Sie lange Komposita wenn möglich auf."
+        },
+        {
+          "question": "Funktioniert die Wortzählung für deutsche Texte?",
+          "answer": "Ja. Das Tool zählt Wörter in Deutsch korrekt, einschließlich Umlaute (ä, ö, ü) und ß. Die Silbenzählung verwendet deutsche Regeln, die die längeren Komposita berücksichtigen."
+        },
+        {
+          "question": "Welche Textlänge ist für SEO im DACH-Raum optimal?",
+          "answer": "Für informative Artikel: 1.500–2.500 Wörter. Deutsche Texte sind durch Komposita und längere Satzkonstruktionen oft kürzer in der Wortzahl als vergleichbare englische Texte. Für Produktseiten: 300–600 Wörter."
         }
       ]
     },

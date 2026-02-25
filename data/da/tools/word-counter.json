@@ -134,6 +134,15 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Sådan fungerer læsbarhedsvurderingen",
+      "html": "<p class=\"text-mid mb-4\">Værktøjet beregner en læsbarhedsscore baseret på gennemsnitlig sætningslængde og gennemsnitligt antal stavelser per ord. Resultatet vises på en skala fra 0 til 100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Meget let. Korte sætninger, almindelige ord.</li><li><strong>70–89</strong> — Let. Samtalesprog egnet til et bredt publikum.</li><li><strong>50–69</strong> — Moderat. Standard forretnings- og journalistisk skrift.</li><li><strong>30–49</strong> — Svært. Lange sætninger, specialiseret ordforråd.</li><li><strong>0–29</strong> — Meget svært. Akademiske og juridiske tekster.</li></ul><p class=\"text-mid mt-3\">For dansk bruges en forenklet Flesch-tilpasning med danske stavelsesregler. Skandinaviske sprog har generelt kortere ord end engelsk, så scoren kan være lidt højere for sammenlignelig tekst.</p>"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 tekstmetrikker – hvad tælleren måler",
       "description": "Tælleren analyserer din tekst med elleve indikatorer:",
@@ -383,6 +392,18 @@
           "question": "Hvor præcis er stavelsestælleren?",
           "answer": "Værktøjet bruger sprogspecifikke heuristikker der genkender danske diftonger og lydmønstre.",
           "answerSchemaText": "Sprogspecifikke heuristikker."
+        },
+        {
+          "question": "Hvordan forbedrer jeg læsbarheden af min tekst?",
+          "answer": "Hold sætninger under 20 ord, erstat fagudtryk med dagligdags ord, opdel lange afsnit og brug punktopstillinger. Hvert afsnit bør indeholde én pointe."
+        },
+        {
+          "question": "Virker ordoptællingen for dansk tekst?",
+          "answer": "Ja. Værktøjet tæller ord i dansk korrekt, inklusiv ord med danske specialtegn (æ, ø, å). Stavelsesoptællingen bruger danske regler."
+        },
+        {
+          "question": "Hvad er den ideelle længde for et blogindlæg til SEO?",
+          "answer": "For dansk SEO: 1.200–2.000 ord for informative artikler. Kvalitet og relevans er vigtigere end ordantal. For produktsider er 300–500 ord tilstrækkeligt."
         }
       ]
     },

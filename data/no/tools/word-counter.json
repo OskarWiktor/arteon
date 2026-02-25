@@ -134,6 +134,15 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Slik fungerer lesbarhetsvurderingen",
+      "html": "<p class=\"text-mid mb-4\">Verktøyet beregner en lesbarhetsscore basert på gjennomsnittlig setningslengde og gjennomsnittlig antall stavelser per ord. Resultatet vises på en skala fra 0 til 100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Veldig lett. Korte setninger, vanlige ord.</li><li><strong>70–89</strong> — Lett. Samtalesprak egnet for et bredt publikum.</li><li><strong>50–69</strong> — Moderat. Standard forretnings- og journalistisk skriving.</li><li><strong>30–49</strong> — Vanskelig. Lange setninger, spesialisert ordforrad.</li><li><strong>0–29</strong> — Veldig vanskelig. Akademiske og juridiske tekster.</li></ul><p class=\"text-mid mt-3\">For norsk brukes en forenklet Flesch-tilpasning med norske stavelsesregler. Norske tekster har gjennomgaende kortere ord enn engelske, sa scoren kan vaere noe hoyere for sammenlignbar tekst.</p>"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 tekstmålinger – hva telleren måler",
       "description": "Telleren analyserer teksten din med elleve indikatorer:",
@@ -383,6 +392,18 @@
           "question": "Hvor nøyaktig er stavelsestalleren?",
           "answer": "Verktøyet bruker språkspesifikke heuristikker som gjenkjenner norske diftonger og lydmønstre.",
           "answerSchemaText": "Språkspesifikke heuristikker."
+        },
+        {
+          "question": "Hvordan forbedrer jeg lesbarheten i teksten min?",
+          "answer": "Hold setninger under 20 ord. Erstatt faguttrykk med hverdagsord. Del opp lange avsnitt og bruk punktlister. Hvert avsnitt bor inneholde ett poeng."
+        },
+        {
+          "question": "Fungerer ordtelleren for norsk tekst?",
+          "answer": "Ja. Verktøyet teller ord på norsk korrekt, inkludert norske spesialtegn (æ, ø, å). Stavelsestellingen bruker norske regler."
+        },
+        {
+          "question": "Hva er den ideelle lengden for et blogginnlegg for SEO?",
+          "answer": "For norsk SEO: 1 200–2 000 ord for informative artikler. Kvalitet og relevans er viktigere enn ordantall. For produktsider: 300–500 ord."
         }
       ]
     },

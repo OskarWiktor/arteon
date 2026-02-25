@@ -134,6 +134,15 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje hodnocení čitelnosti textu",
+      "html": "<p class=\"text-mid mb-4\">Nástroj počítá skóre čitelnosti na základě průměrné délky vět a průměrného počtu slabik na slovo. Výsledek se zobrazuje na stupnici 0–100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Velmi snadný text. Krátké věty, běžná slova.</li><li><strong>70–89</strong> — Snadný. Konverzační jazyk vhodný pro široké publikum.</li><li><strong>50–69</strong> — Středně náročný. Běžné obchodní a novinářské texty.</li><li><strong>30–49</strong> — Náročný. Dlouhé věty, odborná slovní zásoba.</li><li><strong>0–29</strong> — Velmi náročný. Akademické a právní texty.</li></ul><p class=\"text-mid mt-3\">Pro češtinu nástroj používá zjednodušenou adaptaci Fleschova vzorce s českými pravidly počítání slabik.</p>"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 textovych metrik – co pocitadlo meri",
       "description": "Pocitadlo analyzuje text pomoci jedenacti ukazatelu:",
@@ -383,6 +392,18 @@
           "question": "Jak presny je pocitadlo slabik?",
           "answer": "Nastroj pouziva heuristiky specificke pro dany jazyk. Pro cestinu rozpoznava souhlaskove skupiny a slabikotvorné souhlasky (r, l).",
           "answerSchemaText": "Jazykove heuristiky."
+        },
+        {
+          "question": "Jak zvýšit skóre čitelnosti textu?",
+          "answer": "Zkraťte věty pod 20 slov, nahrazujte odborné termíny běžnými slovy, rozdělujte dlouhé odstavce a používejte odrážky. Každý odstavec by měl obsahovat jednu myšlenku."
+        },
+        {
+          "question": "Funguje počítání slov pro český text?",
+          "answer": "Ano. Nástroj správně počítá slova v češtině, včetně slov s diakritickými znaménky (č, ř, ž, š atd.). Počítání slabik používá česká pravidla."
+        },
+        {
+          "question": "Jaká je ideální délka blogového článku pro SEO?",
+          "answer": "Pro české vyhledávače 1 200–2 000 slov pro informativní články. Klíčová je kvalita a relevance. Pro produktové stránky stačí 300–500 slov."
         }
       ]
     },

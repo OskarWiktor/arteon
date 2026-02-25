@@ -132,6 +132,15 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Indice Gulpease per la leggibilità in italiano",
+      "html": "<p class=\"text-mid mb-4\">Per i testi in italiano, questo strumento utilizza l’<strong>Indice Gulpease</strong> — una formula di leggibilità sviluppata specificamente per la lingua italiana:</p><p class=\"text-mid mb-4\"><code class=\"rounded bg-black/5 px-2 py-1\">89 + (300 × frasi − 10 × caratteri) / parole</code></p><p class=\"text-mid mb-4\">A differenza del Flesch che si basa sulle sillabe, il Gulpease usa il numero di caratteri per parola, risultando più preciso per l’italiano.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>80–100</strong> — Facile. Comprensibile dalla scuola elementare.</li><li><strong>60–79</strong> — Medio. Adatto alla scuola media.</li><li><strong>40–59</strong> — Difficile. Richiede istruzione superiore.</li><li><strong>0–39</strong> — Molto difficile. Testi accademici e giuridici.</li></ul>"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 metriche di testo – cosa misura il contatore",
       "description": "Il contatore analizza il tuo testo con undici indicatori:",
@@ -381,6 +390,18 @@
           "question": "Il contatore di sillabe è preciso?",
           "answer": "Lo strumento usa euristiche italiane che riconoscono dittonghi, iati e regole di sillabificazione. Il risultato è approssimativo ma sufficiente per l’analisi.",
           "answerSchemaText": "Usa euristiche italiane con dittonghi e iati."
+        },
+        {
+          "question": "Come migliorare la leggibilità del testo?",
+          "answer": "Mantenere le frasi sotto le 20 parole. Sostituire i termini tecnici con parole comuni. Dividere i paragrafi lunghi e usare elenchi puntati. Ogni paragrafo dovrebbe contenere una sola idea."
+        },
+        {
+          "question": "Il contatore funziona per l’italiano?",
+          "answer": "Sì. Lo strumento conta correttamente le parole in italiano, compresi i caratteri accentati. Il conteggio delle sillabe utilizza regole specifiche per l’italiano."
+        },
+        {
+          "question": "Qual è la lunghezza ideale per un articolo SEO in italiano?",
+          "answer": "Per articoli informativi: 1.200–2.000 parole. Per pagine prodotto: 300–500 parole. La qualità e la pertinenza contano più della lunghezza."
         }
       ]
     },

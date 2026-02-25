@@ -132,6 +132,15 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Fórmula de legibilidad Fernández-Huerta para español",
+      "html": "<p class=\"text-mid mb-4\">Para textos en español, esta herramienta utiliza la <strong>fórmula Fernández-Huerta</strong> — una adaptación del índice Flesch diseñada específicamente para el castellano:</p><p class=\"text-mid mb-4\"><code class=\"rounded bg-black/5 px-2 py-1\">206,84 − 60 × (sílabas/palabras) − 1,02 × (palabras/oraciones)</code></p><p class=\"text-mid mb-4\">Los coeficientes se ajustan porque el español tiene una estructura silábica más regular que el inglés. Las palabras españolas tienden a ser más largas pero con patrones de acentuación predecibles.</p><p class=\"text-mid\">Para contenido web en español, un buen objetivo es un puntaje entre 60 y 70.</p>"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 métricas de texto – qué mide el contador",
       "description": "El contador analiza tu texto con once indicadores:",
@@ -386,6 +395,18 @@
           "question": "¿Qué tan preciso es el contador de sílabas?",
           "answer": "La herramienta usa heurísticas específicas del español que reconocen diptongos (ai, ei, oi, au, eu), hiatos y reglas de silabificación del castellano. El conteo es aproximado pero suficiente para puntuaciones de legibilidad y análisis de texto.",
           "answerSchemaText": "El contador usa heurísticas del español que reconocen diptongos e hiatos. Aproximado pero suficiente para análisis."
+        },
+        {
+          "question": "¿Cómo mejoro la legibilidad de mi texto?",
+          "answer": "Mantenga las oraciones por debajo de 20 palabras. Sustituya términos técnicos por palabras cotidianas. Divida párrafos largos y use viñetas. Cada párrafo debe contener una sola idea."
+        },
+        {
+          "question": "¿Funciona el conteo de palabras para español?",
+          "answer": "Sí. La herramienta cuenta palabras en español correctamente, incluyendo caracteres especiales (ñ, acentos). El conteo de sílabas usa reglas específicas del castellano."
+        },
+        {
+          "question": "¿Cuál es la longitud ideal de un artículo para SEO en español?",
+          "answer": "Para artículos informativos: 1.200–2.000 palabras. Para páginas de producto: 300–500 palabras. La calidad y relevancia son más importantes que la extensión."
         }
       ]
     },

@@ -134,6 +134,15 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Så fungerar läsbarhetsbedömningen",
+      "html": "<p class=\"text-mid mb-4\">Verktyget beräknar en läsbarhetspoäng baserad på genomsnittlig meningslängd och genomsnittligt antal stavelser per ord. Resultatet visas på en skala från 0 till 100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Mycket lätt. Korta meningar, vanliga ord.</li><li><strong>70–89</strong> — Lätt. Samtalssprak lämpligt för en bred publik.</li><li><strong>50–69</strong> — Måttligt. Affärs- och journalistiska texter.</li><li><strong>30–49</strong> — Svårt. Långa meningar, specialiserat ordforrad.</li><li><strong>0–29</strong> — Mycket svårt. Akademiska och juridiska texter.</li></ul><p class=\"text-mid mt-3\">För svenska används en förenklad Flesch-anpassning med svenska stavelseregler. Svenska och norska har generellt kortare ord än engelska, så poängen kan vara något högre för jämförbar text.</p>"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 textmatvarden – vad raknaren mater",
       "description": "Raknaren analyserar din text med elva indikatorer:",
@@ -383,6 +392,18 @@
           "question": "Hur exakt ar stavelseraknaren?",
           "answer": "Verktyget anvander sprakspecifika heuristiker som kanner igen svenska diftonger och sammansatta ord.",
           "answerSchemaText": "Sprakspecifika heuristiker."
+        },
+        {
+          "question": "Hur förbättrar jag läsbarheten i min text?",
+          "answer": "Håll meningar under 20 ord. Ersätt facktermer med vardagliga ord. Dela upp långa stycken och använd punktlistor. Varje stycke bör innehålla en enda poang."
+        },
+        {
+          "question": "Fungerar ordräknaren för svenska?",
+          "answer": "Ja. Verktyget räknar ord på svenska korrekt, inklusive svenska specialtecken (å, ä, ö). Stavelsesräkningen använder svenska regler."
+        },
+        {
+          "question": "Vad är den idealiska längden för ett SEO-blogginlägg?",
+          "answer": "För informativa artiklar på svenska: 1 200–2 000 ord. Kvalitet och relevans är viktigare än ordantal. För produktsidor: 300–500 ord."
         }
       ]
     },

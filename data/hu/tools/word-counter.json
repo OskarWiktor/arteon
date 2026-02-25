@@ -134,6 +134,15 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hogyan működik az olvashatósági értékelés",
+      "html": "<p class=\"text-mid mb-4\">Az eszköz az olvashatósági pontszámot az átlagos mondathossz és az átlagos szótagszám alapján számítja. Az eredmény 0–100 skálán jelenik meg:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Nagyon könnyű. Rövid mondatok, hétköznapi szavak.</li><li><strong>70–89</strong> — Könnyű. Társalgási nyelv.</li><li><strong>50–69</strong> — Közepes. Általános üzleti és újságírói szövegek.</li><li><strong>30–49</strong> — Nehéz. Hosszú mondatok, szaknyelv.</li><li><strong>0–29</strong> — Nagyon nehéz. Tudományos és jogi szövegek.</li></ul><p class=\"text-mid mt-3\">A magyar nyelv agglutináló jellegű — a ragozások és összetett szavak hosszabb szavakat eredményeznek. Az eszköz egyszerűsített Flesch-adaptációt használ magyar szótagolási szabályokkal.</p>"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 szovegmetrika – mit mer a szamlalo?",
       "description": "A szamlalo tizenegy mutatoval elemzi a szoveget:",
@@ -383,6 +392,18 @@
           "question": "Mennyire pontos a szotagszamlalo?",
           "answer": "Nyelvspecifikus heurisztikakat hasznal. A magyar eseteban figyelembe veszi a maganhangzo-szabalyokat.",
           "answerSchemaText": "Nyelvspecifikus heurisztikak."
+        },
+        {
+          "question": "Hogyan javíthatom a szövegem olvashatóságát?",
+          "answer": "Tartsa a mondatokat 20 szó alatt. Cserélje a szakszavakat hétköznapi kifejezésekre. Bontsa kisebb részekre a hosszú bekezdéseket és használjon felsorolásokat."
+        },
+        {
+          "question": "Működik a szószámláló magyar szövegekhez?",
+          "answer": "Igen. Az eszköz helyesen számolja a magyar szavakat, beleértve az ékezeteket (á, é, í, ó, ö, ő, ú, ü, ű) és az összetett szavakat. A szótagolás magyar szabályokat követ."
+        },
+        {
+          "question": "Mi az ideális blogcikk-hossz a magyar SEO-hoz?",
+          "answer": "Információs cikkekhez 1 200–2 000 szó. A magyar összetett szavak tömörebbé teszik a szöveget, ezért a szószám alacsonyabb lehet, mint angolul. Termekoldalakhoz 300–500 szó elegendő."
         }
       ]
     },

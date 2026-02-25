@@ -132,6 +132,15 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Fórmula de legibilidade para português",
+      "html": "<p class=\"text-mid mb-4\">Para textos em português, esta ferramenta utiliza uma adaptação da <strong>fórmula Fernández-Huerta</strong>, ajustada para a estrutura silábica do português:</p><p class=\"text-mid mb-4\"><code class=\"rounded bg-black/5 px-2 py-1\">206,84 − 60 × (sílabas/palavras) − 1,02 × (palavras/frases)</code></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Muito fácil. Frases curtas, palavras comuns.</li><li><strong>70–89</strong> — Fácil. Linguagem conversacional.</li><li><strong>50–69</strong> — Moderado. Textos comerciais e jornalísticos.</li><li><strong>30–49</strong> — Difícil. Frases longas, vocabulário especializado.</li><li><strong>0–29</strong> — Muito difícil. Textos académicos e jurídicos.</li></ul><p class=\"text-mid mt-3\">O movimento de <strong>Linguagem Simples</strong> no Brasil incentiva textos governamentais acessíveis. Um bom objetivo para conteúdo web é 60 a 70.</p>"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 métricas de texto – o que o contador mede",
       "description": "O contador analisa o seu texto com onze indicadores:",
@@ -381,6 +390,18 @@
           "question": "O contador de sílabas é preciso?",
           "answer": "A ferramenta usa heurísticas adaptadas ao português que reconhecem ditongos, hiatos e regras de silabificação. O resultado é aproximado mas suficiente para análise de legibilidade.",
           "answerSchemaText": "Usa heurísticas do português com reconhecimento de ditongos e hiatos."
+        },
+        {
+          "question": "Como melhorar a legibilidade do meu texto?",
+          "answer": "Mantenha as frases abaixo de 20 palavras. Substitua termos técnicos por palavras correntes. Divida parágrafos longos e use listas. Cada parágrafo deve conter uma única ideia."
+        },
+        {
+          "question": "O contador funciona para português?",
+          "answer": "Sim. A ferramenta conta corretamente as palavras em português, incluindo caracteres acentuados e cedilhas. A contagem de sílabas utiliza regras específicas do português."
+        },
+        {
+          "question": "Qual é o comprimento ideal de um artigo para SEO em português?",
+          "answer": "Para artigos informativos: 1 200 a 2 000 palavras. Para páginas de produto: 300 a 500 palavras. A qualidade e a relevância são mais importantes do que a extensão."
         }
       ]
     },

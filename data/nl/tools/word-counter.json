@@ -132,6 +132,15 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Flesch-Douma: leesbaarheidsscore voor Nederlands",
+      "html": "<p class=\"text-mid mb-4\">Voor Nederlandse teksten gebruikt deze tool de <strong>Flesch-Douma formule</strong> — een aanpassing van de Flesch Reading Ease specifiek voor het Nederlands:</p><p class=\"text-mid mb-4\"><code class=\"rounded bg-black/5 px-2 py-1\">206,835 − 0,93 × ASL − 77 × ASW</code></p><p class=\"text-mid mb-4\">ASL is de gemiddelde zinslengte, ASW het gemiddeld aantal lettergrepen per woord.</p><p class=\"text-mid\">De <strong>Heldere Taal</strong>-beweging in Nederland en België promoot begrijpelijke overheidscommunicatie. Een Flesch-Douma score van 60–70 is een goed doel voor webcontent.</p>"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 tekststatistieken – wat de teller meet",
       "description": "De teller analyseert je tekst op elf indicatoren:",
@@ -381,6 +390,18 @@
           "question": "Hoe nauwkeurig is de lettergreepteller?",
           "answer": "De tool gebruikt Nederlandse heuristieken die tweeklanken herkennen (ei, au, eu, ij, ou, oe) en rekening houden met samenstellingen. Het resultaat is een benadering die voldoende nauwkeurig is voor leesbaarheidanalyse.",
           "answerSchemaText": "Gebruikt Nederlandse heuristieken met tweeklanken en samenstellingen."
+        },
+        {
+          "question": "Hoe verbeter ik de leesbaarheid van mijn tekst?",
+          "answer": "Houd zinnen onder 20 woorden. Vervang vakjargon door alledaagse woorden. Splits lange alinea’s op en gebruik opsommingstekens. Elke alinea moet één kernpunt bevatten."
+        },
+        {
+          "question": "Werkt de woordteller voor Nederlands?",
+          "answer": "Ja. De tool telt woorden in het Nederlands correct, inclusief speciale tekens. De lettergreeptelling gebruikt Nederlandse regels."
+        },
+        {
+          "question": "Wat is de ideale lengte voor een SEO-blogartikel?",
+          "answer": "Voor informatieve artikelen in het Nederlands: 1.200–2.000 woorden. Kwaliteit en relevantie zijn belangrijker dan woordenaantal. Voor productpagina’s: 300–500 woorden."
         }
       ]
     },

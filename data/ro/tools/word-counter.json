@@ -134,6 +134,15 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cum funcționează evaluarea lizibilității",
+      "html": "<p class=\"text-mid mb-4\">Instrumentul calculează un scor de lizibilitate pe baza lungimii medii a propozițiilor și a numărului mediu de silabe per cuvânt. Rezultatul apare pe o scară de la 0 la 100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Foarte ușor. Propoziții scurte, cuvinte comune.</li><li><strong>70–89</strong> — Ușor. Limbaj conversațional pentru un public larg.</li><li><strong>50–69</strong> — Moderat. Texte de afaceri și jurnalistice.</li><li><strong>30–49</strong> — Dificil. Propoziții lungi, vocabular specializat.</li><li><strong>0–29</strong> — Foarte dificil. Texte academice și juridice.</li></ul><p class=\"text-mid mt-3\">Pentru limba română se folosește o adaptare Flesch cu reguli de silabisire românești. Un scor de 60–70 este un obiectiv bun pentru conținutul web.</p>"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 metrici text – ce masoara contorul",
       "description": "Contorul analizeaza textul cu unsprezece indicatori:",
@@ -383,6 +392,18 @@
           "question": "Cat de precis este contorul de silabe?",
           "answer": "Instrumentul foloseste euristici specifice limbii care recunosc diftongi si modele de vocale.",
           "answerSchemaText": "Euristici lingvistice cu diftongi si vocale."
+        },
+        {
+          "question": "Cum îmbunătățesc lizibilitatea textului meu?",
+          "answer": "Păstrați propozițiile sub 20 de cuvinte. Înlocuiți termenii tehnici cu cuvinte uzuale. Împărțiți paragrafele lungi și folosiți liste cu marcatori. Fiecare paragraf ar trebui să conțină o singură idee."
+        },
+        {
+          "question": "Funcționează numărătorul de cuvinte pentru română?",
+          "answer": "Da. Instrumentul numără corect cuvintele în limba română, inclusiv caracterele cu diacritice (ă, â, î, ș, ț). Numărarea silabelor folosește reguli românești."
+        },
+        {
+          "question": "Care este lungimea ideală pentru un articol SEO în română?",
+          "answer": "Pentru articole informative: 1 200–2 000 de cuvinte. Pentru pagini de produs: 300–500 de cuvinte. Calitatea și relevanța sunt mai importante decât numărul de cuvinte."
         }
       ]
     },
