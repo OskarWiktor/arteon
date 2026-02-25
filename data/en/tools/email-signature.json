@@ -25,10 +25,17 @@
   "schemas": {
     "software": {
       "name": "HTML Email Signature Generator – Email Signature Creator",
-      "alternateName": ["HTML email signature generator", "Email signature creator", "Email footer generator"],
+      "alternateName": [
+        "HTML email signature generator",
+        "Email signature creator",
+        "Email footer generator",
+        "Email signature builder",
+        "Business email signature maker",
+        "Free email sign-off generator"
+      ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Free HTML email signature generator. Add contact details, CTA link, and social media profiles, then copy the ready signature code into Gmail, Outlook, and other email clients.",
+      "description": "Free HTML email signature generator and creator. Add your contact details, a call-to-action link, and social media profiles, then copy the ready signature code into Gmail, Outlook, Apple Mail, or any other email client. No login required.",
       "featureList": [
         "Contact details (name, title, company)",
         "Phone, email, and website URL",
@@ -48,37 +55,37 @@
       ]
     },
     "howTo": {
-      "name": "How to use the email signature generator",
-      "description": "How to create a professional HTML email signature using the free Arteon generator.",
+      "name": "How to create and use a professional email signature",
+      "description": "Step-by-step guide to building a professional HTML email signature with the free Arteon email footer creator.",
       "totalTime": "PT5M",
       "steps": [
         {
-          "name": "Choose a signature layout",
-          "text": "Select one of eight available layouts: Standard, Top bar, Labels left, Centered, Compact, Two columns, Minimalist, or Bottom bar."
+          "name": "Pick a signature layout",
+          "text": "Choose one of eight ready-made layouts: Standard, Top bar, Labels left, Centered, Compact, Two columns, Minimalist, or Bottom bar. Each layout arranges the same details in a different way."
         },
         {
-          "name": "Fill in contact details",
-          "text": "In the Details tab, enter your name, title, company, email, phone, and website URL. Optionally add an avatar or logo - after entering the image URL, you can choose shape (round, rounded, square) and size (40, 56, or 72 px)."
+          "name": "Enter your contact details",
+          "text": "Open the Details tab. Type your name, job title, company name, email address, phone number, and website URL. You can also add a profile photo or company logo by pasting an image URL."
         },
         {
-          "name": "Add CTA buttons",
-          "text": "In the Buttons tab, add text and URL for the main button. Optionally add a second outline-style button and choose button rounding."
+          "name": "Add call-to-action buttons",
+          "text": "Open the Buttons tab. Enter the text and link for the main button, for example Schedule a free call. You can add a second button in outline style and choose the button shape."
         },
         {
           "name": "Add social media links",
-          "text": "In the Social Media tab, paste URLs to your profiles. Supported platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest."
+          "text": "Open the Social Media tab. Paste the URLs of your profiles on LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, or Pinterest."
         },
         {
-          "name": "Customize appearance",
-          "text": "In the Appearance tab, choose a color theme, font, and text size. In the Text Style tab, change colors and sizes of individual elements."
+          "name": "Customize the look",
+          "text": "Open the Appearance tab. Pick a color theme, font, and text size. In the Text Style tab you can change the color and size of each element individually."
         },
         {
-          "name": "Add disclaimer and configure separator",
-          "text": "In the Disclaimer / Legal tab, enter legal text and configure the separator line - choose style (solid, dashed, dotted), thickness (1–3 px), and color."
+          "name": "Add a legal disclaimer",
+          "text": "Open the Disclaimer / Legal tab. Enter a confidentiality notice, GDPR statement, or other legal text. Set the separator line style, thickness, and color."
         },
         {
-          "name": "Preview and copy signature",
-          "text": "The signature preview is available on light, dark, or checkerboard background. The Copy signature (Gmail / Outlook) button copies the ready code to clipboard. Also available: Copy HTML code, Download as HTML, View HTML code, and export configuration as JSON file."
+          "name": "Preview and copy your signature",
+          "text": "Check the live preview on a light, dark, or checkerboard background. Click Copy signature (Gmail / Outlook) to copy the formatted code. Then paste it in your email client settings."
         }
       ]
     }
@@ -90,8 +97,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Why have a professional email signature?",
-      "html": "<p class=\"text-mid\">An email signature (also called an email footer) is a block of information at the end of every sent message. It contains contact details, job title, company name, and often a link to the website or meeting calendar.</p><p class=\"text-mid mt-3\">The recipient does not have to search for the phone number in previous messages - all details are readily available. A professional email signature also shows that you pay attention to details and maintain a consistent company image in business correspondence.</p>",
+      "title": "Why use a professional email signature?",
+      "html": "<p class=\"text-mid\">An email signature is a small block of text at the bottom of every message you send. Some people call it an email footer or a signature block. It shows your name, job title, company, and contact details. Many signatures also include a link to a website, a booking calendar, or social media profiles.</p>\n<p class=\"text-mid mt-3\">Why does this matter? The average office worker sends between 30 and 40 emails each day. Every one of those emails is a chance to share your contact information, build your brand, and make it easy for the reader to reach you. A clear, well-designed email sign-off saves the recipient time. They do not need to search old messages for your phone number or website address.</p>\n<p class=\"text-mid mt-3\">A professional signature block also builds trust. It shows that you care about details and keep a consistent company image in all business correspondence. In many countries, business emails must include specific legal information such as a company registration number or tax ID. Your email footer is the simplest place to add those details.</p>",
       "imageSrc": "/assets/tools/free-html-email-signature-generator/free-email-signature-generator-en.webp",
       "imageAlt": "Email signature generator – Arteon"
     },
@@ -101,23 +108,23 @@
     },
     {
       "type": "sectionSteps",
-      "title": "How to use the email signature generator",
-      "description": "Creating a professional email signature takes just a few minutes:",
+      "title": "How to create an email signature in three steps",
+      "description": "Building a professional email footer takes just a few minutes:",
       "grid": "three",
       "items": [
         {
-          "title": "1. Enter details",
-          "description": "Fill in your name, title, company, and contact details.",
+          "title": "1. Enter your details",
+          "description": "Fill in your name, job title, company name, and contact information. Add a profile photo or logo if you like.",
           "icon": "RiEditLine"
         },
         {
-          "title": "2. Customize appearance",
-          "description": "Choose a layout, colors, add a logo, and social media links.",
+          "title": "2. Customize the design",
+          "description": "Pick a layout, choose colors, add social media links, and set up a call-to-action button.",
           "icon": "RiPaletteLine"
         },
         {
-          "title": "3. Copy the code",
-          "description": "The Copy signature button copies the ready code to clipboard. Just paste it in Gmail, Outlook, or another email client.",
+          "title": "3. Copy and paste",
+          "description": "Click the Copy signature button. Then paste the formatted code into Gmail, Outlook, Apple Mail, or any other email client.",
           "icon": "RiCodeLine"
         }
       ]
@@ -128,8 +135,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "How to fill in signature details",
-      "html": "<p class=\"text-mid\">The <strong>Details</strong> tab contains all the fields you can fill in. Only two are required: name and email address. The remaining fields are optional and will appear in the signature only when filled in.</p><h3 class=\"h5 mt-6 mb-3\">Fields in the Details tab</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Line above name</strong> - additional text displayed above the name. You can enter the company name, tagline, or slogan.</li><li><strong>Avatar / logo (image URL)</strong> - URL to a profile photo or company logo. The image should be square (min. 120×120 px) and publicly accessible online. After pasting the URL, additional options appear: <strong>Avatar shape</strong> (round, rounded, or square) and <strong>Avatar size</strong> (small - 40 px, medium - 56 px, large - 72 px).</li><li><strong>Full name</strong> - required field. Enter your full name.</li><li><strong>Name tag</strong> - short text next to the name, e.g., pronouns or abbreviated title.</li><li><strong>Job title</strong> - your role in the company, e.g., Sales Manager, Marketing Specialist.</li><li><strong>Company name</strong> - the name of the organization you represent.</li><li><strong>Additional line</strong> - a short description of what you do or what you offer.</li><li><strong>Email</strong> - required field. Enter your business email address.</li><li><strong>Phone</strong> - contact number. Any format, e.g., +1 555 000 000.</li><li><strong>Website</strong> - full URL of your website, starting with https://.</li><li><strong>Address</strong> - physical company address (street, city, postal code).</li><li><strong>Formal details</strong> - tax ID, license number, or other details required in your industry.</li></ul>"
+      "title": "How to fill in your signature details",
+      "html": "<p class=\"text-mid\">The <strong>Details</strong> tab holds all the fields you can fill in. Only two are required: your name and your email address. Every other field is optional. If you leave a field empty, it will not appear in your signature.</p>\n<h3 class=\"h5 mt-6 mb-3\">Available fields</h3>\n<ul class=\"text-mid list-disc space-y-2 pl-6\">\n<li><strong>Line above name</strong> — extra text shown above your name. Use it for your company name, a tagline, or a short slogan.</li>\n<li><strong>Avatar / logo (image URL)</strong> — paste a link to your profile photo or company logo. The image should be square (at least 120 × 120 pixels) and publicly accessible. After you paste the link, you can choose the <strong>shape</strong> (round, rounded, or square) and the <strong>size</strong> (small — 40 px, medium — 56 px, large — 72 px).</li>\n<li><strong>Full name</strong> — required. Enter your first and last name.</li>\n<li><strong>Name tag</strong> — a short label next to your name, such as pronouns or an abbreviated title.</li>\n<li><strong>Job title</strong> — your role in the company, for example Sales Manager or Marketing Specialist.</li>\n<li><strong>Company name</strong> — the organization you work for.</li>\n<li><strong>Additional line</strong> — a brief description of what you do or what you offer.</li>\n<li><strong>Email</strong> — required. Enter your business email address.</li>\n<li><strong>Phone</strong> — your contact number in any format, for example +1 555 000 000.</li>\n<li><strong>Website</strong> — the full URL of your site, starting with https://.</li>\n<li><strong>Address</strong> — your company's physical address (street, city, postal code).</li>\n<li><strong>Formal details</strong> — tax ID number, registration number, license number, or any other details your industry or country requires. This field is especially important for legal compliance — see the section on legal requirements below.</li>\n</ul>"
     },
     {
       "type": "gap",
@@ -137,9 +144,9 @@
     },
     {
       "type": "sectionDemo",
-      "title": "Signature layouts - which to choose?",
+      "title": "Signature layouts — which one should you choose?",
       "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Signature layout</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">John Smith</p><p class=\"text-mid text-sm\">Web Developer</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">john@example.com</p><p class=\"text-mid\">+1 555 000 000</p></div></div></div>",
-      "html": "<p class=\"text-mid\">The generator offers eight ready-made layouts. Each presents the same information in a different way.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> - classic vertical layout, fits most use cases.</li><li><strong>Top bar</strong> - a horizontal bar separates the signature from the content.</li><li><strong>Labels left</strong> - two columns: labels and values.</li><li><strong>Centered</strong> - formal appearance, content centered.</li><li><strong>Compact</strong> - everything in one line, minimal height.</li><li><strong>Two columns</strong> - details on the left, contact info on the right.</li><li><strong>Minimalist</strong> - only the most important information.</li><li><strong>Bottom bar</strong> - colored bar with contact at the bottom of the signature.</li></ul>"
+      "html": "<p class=\"text-mid\">The signature builder offers eight ready-made layouts. Each one presents the same information in a different arrangement. Here is a quick guide to help you decide:</p>\n<ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\">\n<li><strong>Standard</strong> — a classic vertical layout. It works for most use cases and is the safest choice if you are not sure.</li>\n<li><strong>Top bar</strong> — a colored horizontal bar sits above the signature. Good for adding a bold accent to your brand.</li>\n<li><strong>Labels left</strong> — two columns: labels on the left, values on the right. Great when you have many fields and want a clean look.</li>\n<li><strong>Centered</strong> — all content is centered. This gives a formal, polished appearance. Popular with law firms, consultants, and agencies.</li>\n<li><strong>Compact</strong> — everything fits in a few lines with minimal height. Best for people who want a short, simple footer.</li>\n<li><strong>Two columns</strong> — personal details on the left, contact info on the right. Works well when you have a logo or avatar.</li>\n<li><strong>Minimalist</strong> — shows only the essentials: name, title, and email. Ideal if you prefer a clean, lightweight sign-off.</li>\n<li><strong>Bottom bar</strong> — a colored bar with contact information appears at the bottom. A good way to close the signature with a visual accent.</li>\n</ul>"
     },
     {
       "type": "gap",
@@ -147,8 +154,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "How to add CTA buttons",
-      "html": "<p class=\"text-mid\">A CTA button (call-to-action) is a clickable element that directs the recipient to a chosen page. It can be a link to a meeting calendar, contact form, or offer. The generator allows adding two CTA buttons.</p><h3 class=\"h5 mt-6 mb-3\">Main button</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Open the <strong>Buttons</strong> tab in the editor.</li><li>In the <strong>Main button</strong> section, enter the text the recipient will see, e.g., Schedule a free consultation.</li><li>In the <strong>CTA link</strong> field, paste the full URL. The address must start with https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Secondary button</h3><p class=\"text-mid\">You can add a second CTA button in outline style (transparent background with border). Fill in the fields in the <strong>Secondary button</strong> section the same way as for the main button.</p><h3 class=\"h5 mt-6 mb-3\">Button rounding</h3><p class=\"text-mid\">At the bottom of the Buttons tab you will find the <strong>Button rounding</strong> option. Three variants are available: None (sharp corners), Slight (slightly rounded), or Full (oval button).</p><p class=\"text-mid mt-4\">If you leave both fields empty, the button will not appear in the signature. If you fill in only one field, the button will also not be visible - both text and link are needed.</p>"
+      "title": "How to add call-to-action buttons",
+      "html": "<p class=\"text-mid\">A CTA button (call to action) is a clickable element that sends the reader to a page you choose. It can link to a meeting calendar, a contact form, a product page, or a special offer. The email signature creator lets you add two CTA buttons.</p>\n<h3 class=\"h5 mt-6 mb-3\">Main button</h3>\n<ol class=\"text-mid list-decimal space-y-2 pl-6\">\n<li>Open the <strong>Buttons</strong> tab in the editor.</li>\n<li>In the <strong>Main button</strong> section, type the text the reader will see, for example <em>Schedule a free consultation</em>.</li>\n<li>In the <strong>CTA link</strong> field, paste the full URL. The address must start with https://.</li>\n</ol>\n<h3 class=\"h5 mt-6 mb-3\">Secondary button</h3>\n<p class=\"text-mid\">You can add a second button in outline style (a transparent background with a visible border). Fill in the fields in the <strong>Secondary button</strong> section the same way as for the main button.</p>\n<h3 class=\"h5 mt-6 mb-3\">Button shape</h3>\n<p class=\"text-mid\">At the bottom of the Buttons tab you will find the <strong>Button rounding</strong> option. Three shapes are available: None (sharp corners), Slight (gently rounded), or Full (oval shape).</p>\n<p class=\"text-mid mt-4\">If you leave both fields (text and link) empty, the button will not show in the signature. Both fields are needed for the button to appear.</p>"
     },
     {
       "type": "gap",
@@ -157,7 +164,7 @@
     {
       "type": "sectionInfo",
       "title": "How to add social media links",
-      "html": "<p class=\"text-mid\">In the <strong>Social Media</strong> tab you can add links to your profiles. The generator supports twelve platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (formerly Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">How to do it</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Open the <strong>Social Media</strong> tab in the editor.</li><li>Next to each platform you will find a URL field. Paste the full link to your profile, e.g., https://www.linkedin.com/in/yourprofile.</li><li>Fill in only the fields you need. Empty fields will not appear in the signature.</li></ol><h3 class=\"h5 mt-6 mb-3\">Social media icons</h3><p class=\"text-mid\">At the bottom of the Social Media tab you will find the <strong>Show icons next to service names</strong> option. When enabled, links will display as colored SVG icons instead of just names.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Icon size</strong> - options: Small (16 px), Medium (20 px), or Large (24 px).</li><li><strong>Icon color</strong> - Platform colors (default colors for each platform), Accent color (uniform accent color), or Text color.</li></ul>"
+      "html": "<p class=\"text-mid\">The <strong>Social Media</strong> tab lets you add links to your profiles. The signature builder supports twelve platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (formerly Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest.</p>\n<h3 class=\"h5 mt-6 mb-3\">Adding your profiles</h3>\n<ol class=\"text-mid list-decimal space-y-2 pl-6\">\n<li>Open the <strong>Social Media</strong> tab.</li>\n<li>Next to each platform you will see a URL field. Paste the full link to your profile, for example https://www.linkedin.com/in/yourprofile.</li>\n<li>Fill in only the platforms you use. Empty fields will not appear in the signature.</li>\n</ol>\n<h3 class=\"h5 mt-6 mb-3\">Social media icons</h3>\n<p class=\"text-mid\">At the bottom of the tab you will find the <strong>Show icons next to service names</strong> toggle. When you turn it on, links appear as colorful SVG icons instead of plain text names.</p>\n<ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\">\n<li><strong>Icon size</strong> — Small (16 px), Medium (20 px), or Large (24 px).</li>\n<li><strong>Icon color</strong> — Platform colors (each platform keeps its own color), Accent color (all icons use your chosen accent), or Text color (icons match the text).</li>\n</ul>"
     },
     {
       "type": "gap",
@@ -165,8 +172,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Appearance customization",
-      "html": "<p class=\"text-mid\">In the <strong>Appearance</strong> tab you can customize colors, font, and other visual elements of the signature.</p><h3 class=\"h5 mt-6 mb-3\">Color themes</h3><p class=\"text-mid\">At the top of the tab you will find five ready-made themes: Dark, Blue, Purple, Green, and Gray. Clicking a theme automatically sets the accent color and text color. This is the quickest way to achieve a consistent signature look.</p><h3 class=\"h5 mt-6 mb-3\">Colors</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Accent color</strong> - used in the side/top bar, CTA button, and links. You can choose any color from the palette.</li><li><strong>Text color</strong> - color of all text in the signature (name, contact details, disclaimer).</li><li><strong>Background color</strong> - background color of the entire signature. White by default, but you can change it.</li></ul><h3 class=\"h5 mt-6 mb-3\">Font and size</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Font</strong> - options: Arial, Verdana, Tahoma, Trebuchet MS, and Georgia. All are email-safe and will display correctly for the recipient.</li><li><strong>Text size</strong> - three options: Small (12 px), Standard (14 px), and Larger (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Additional settings</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Signature border</strong> - you can add a border to the signature by selecting any combination of sides (left, right, top, bottom). Selecting all sides automatically sets a full border. The border uses the accent color.</li></ul>"
+      "title": "How to customize the appearance",
+      "html": "<p class=\"text-mid\">The <strong>Appearance</strong> tab lets you change colors, fonts, and other visual elements of your signature block.</p>\n<h3 class=\"h5 mt-6 mb-3\">Color themes</h3>\n<p class=\"text-mid\">At the top of the tab you will find five ready-made themes: Dark, Blue, Purple, Green, and Gray. Click a theme to apply its accent color and text color instantly. This is the fastest way to get a consistent look.</p>\n<h3 class=\"h5 mt-6 mb-3\">Individual colors</h3>\n<ul class=\"text-mid list-disc space-y-2 pl-6\">\n<li><strong>Accent color</strong> — used for the side bar or top bar, the CTA button, and links. Pick any color from the palette.</li>\n<li><strong>Text color</strong> — the color of all text in the signature (name, contact details, disclaimer).</li>\n<li><strong>Background color</strong> — the background of the entire signature. White by default, but you can change it to match your brand.</li>\n</ul>\n<h3 class=\"h5 mt-6 mb-3\">Font and text size</h3>\n<ul class=\"text-mid list-disc space-y-2 pl-6\">\n<li><strong>Font</strong> — choose from Arial, Verdana, Tahoma, Trebuchet MS, or Georgia. All five are email-safe fonts. They will display correctly on the recipient's device.</li>\n<li><strong>Text size</strong> — three options: Small (12 px), Standard (14 px), or Larger (16 px).</li>\n</ul>\n<h3 class=\"h5 mt-6 mb-3\">Signature border</h3>\n<p class=\"text-mid\">You can add a border to any side of the signature: left, right, top, or bottom. Select all four sides to create a full border. The border uses your accent color. A left-side border is a popular choice — it adds a clean vertical accent without taking much space.</p>"
     },
     {
       "type": "gap",
@@ -174,8 +181,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Text style - colors and sizes of individual elements",
-      "html": "<p class=\"text-mid\">In the <strong>Text Style</strong> tab you can individually customize the color and font size for each text element in the signature.</p><h3 class=\"h5 mt-6 mb-3\">Available elements</h3><p class=\"text-mid\">Only elements that currently have content in the signature are visible. For each element you can set:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Name</strong> - displayed in accent color by default.</li><li><strong>Job title</strong> - role in the company.</li><li><strong>Company</strong> - organization name.</li><li><strong>Contact details</strong> - email, phone, website (labels).</li><li><strong>Social media</strong> - profile links.</li><li><strong>Legal disclaimer</strong> - legal text at the bottom of the signature.</li></ul><h3 class=\"h5 mt-6 mb-3\">How to change color</h3><p class=\"text-mid\">Next to each element you will find a row of color options. Click a color square to select it. You can also add a custom color by clicking the colored square with a plus - choose a color and click Save. Custom colors (up to 8) are shared between all elements.</p><p class=\"text-mid mt-3\">The reset icon button restores the default color of the element.</p><h3 class=\"h5 mt-6 mb-3\">How to change size</h3><p class=\"text-mid\">In the second row you will find a size control with - and + buttons. The value shows the offset relative to the base font size (set in the Appearance tab). Range: from -4 to +4 pixels.</p>"
+      "title": "Text style — colors and sizes for each element",
+      "html": "<p class=\"text-mid\">The <strong>Text Style</strong> tab gives you fine control over the color and font size of each text element in the signature.</p>\n<h3 class=\"h5 mt-6 mb-3\">Which elements can you style?</h3>\n<p class=\"text-mid\">Only elements that have content are visible. For each one you can set a custom color and a size offset:</p>\n<ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\">\n<li><strong>Name</strong> — shown in the accent color by default.</li>\n<li><strong>Job title</strong> — your role in the company.</li>\n<li><strong>Company</strong> — the organization name.</li>\n<li><strong>Contact details</strong> — email, phone, website labels.</li>\n<li><strong>Social media</strong> — profile links.</li>\n<li><strong>Legal disclaimer</strong> — the legal text at the bottom.</li>\n</ul>\n<h3 class=\"h5 mt-6 mb-3\">Changing the color</h3>\n<p class=\"text-mid\">Next to each element you will see a row of color options. Click a color square to select it. You can also add a custom color: click the square with the plus icon, pick a color, and click Save. Custom colors (up to eight) are shared across all elements. The reset button restores the default color.</p>\n<h3 class=\"h5 mt-6 mb-3\">Changing the size</h3>\n<p class=\"text-mid\">Below the color row you will find size controls with minus and plus buttons. The number shows the offset from the base font size you set in the Appearance tab. The range is from −4 to +4 pixels.</p>"
     },
     {
       "type": "gap",
@@ -184,7 +191,7 @@
     {
       "type": "sectionInfo",
       "title": "Spacing between elements",
-      "html": "<p class=\"text-mid\">In the <strong>Spacing</strong> tab you can precisely control the distances between individual signature elements.</p><h3 class=\"h5 mt-6 mb-3\">Inner signature padding</h3><p class=\"text-mid\">At the top of the tab you will find the inner padding option - the distance between the signature content and its edges. Three values are available: 8 px (small), 16 px (medium), and 24 px (large).</p><h3 class=\"h5 mt-6 mb-3\">Spacing between elements</h3><p class=\"text-mid\">Below the padding you will find controls for individual signature elements. Each control has + and - buttons to increase or decrease the spacing. Only options for elements currently in the signature are visible.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>After name</strong> - spacing below the name line.</li><li><strong>After title / company</strong> - spacing below the title and company name line.</li><li><strong>After additional line</strong> - spacing below the description (if filled in).</li><li><strong>After contact details</strong> - spacing below email, phone, and website.</li><li><strong>After social media</strong> - spacing below profile links.</li><li><strong>After CTA button</strong> - spacing below the button (if enabled).</li><li><strong>Before disclaimer</strong> - spacing above the legal disclaimer text.</li></ul><p class=\"text-mid mt-4\">If you clear a field (e.g., remove the phone number), the corresponding spacing option will automatically disappear from the tab.</p>"
+      "html": "<p class=\"text-mid\">The <strong>Spacing</strong> tab lets you control the exact distance between each part of the signature.</p>\n<h3 class=\"h5 mt-6 mb-3\">Inner padding</h3>\n<p class=\"text-mid\">At the top of the tab you will find the padding option. This sets the gap between the signature content and its outer edges. Three values are available: 8 px (small), 16 px (medium), and 24 px (large).</p>\n<h3 class=\"h5 mt-6 mb-3\">Element spacing</h3>\n<p class=\"text-mid\">Below the padding you will see controls for individual elements. Each control has plus and minus buttons to increase or decrease the gap. Only the elements that are currently in the signature are listed.</p>\n<ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\">\n<li><strong>After name</strong> — space below the name line.</li>\n<li><strong>After title / company</strong> — space below the job title and company line.</li>\n<li><strong>After additional line</strong> — space below the extra description.</li>\n<li><strong>After contact details</strong> — space below the email, phone, and website.</li>\n<li><strong>After social media</strong> — space below the profile links.</li>\n<li><strong>After CTA button</strong> — space below the call-to-action button.</li>\n<li><strong>Before disclaimer</strong> — space above the legal text.</li>\n</ul>\n<p class=\"text-mid mt-4\">If you remove a field (for example, delete the phone number), the matching spacing option disappears from the tab automatically.</p>"
     },
     {
       "type": "gap",
@@ -192,8 +199,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Legal disclaimer - when to add it",
-      "html": "<p class=\"text-mid\">In the <strong>Disclaimer / Legal</strong> tab you can add legal text that will appear at the bottom of the signature in smaller font.</p><h3 class=\"h5 mt-6 mb-3\">When to add a disclaimer</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Business correspondence</strong> - confidentiality notice and request to delete in case of incorrect delivery.</li><li><strong>Industry requirements</strong> - some industries (e.g., legal, medical, financial) require specific information in every message.</li><li><strong>GDPR</strong> - information about personal data processing, if the company is a data controller.</li></ul><p class=\"text-mid mt-4\">By default, the field is filled with a sample confidentiality text. You can edit, delete, or replace it with your own disclaimer. If you leave the field empty, no disclaimer will appear in the signature.</p><h3 class=\"h5 mt-6 mb-3\">Separator line</h3><p class=\"text-mid\">Below the text field you will find the <strong>Show divider between contact details and disclaimer</strong> option. Enable it to add a horizontal line between contact details and the legal disclaimer.</p><p class=\"text-mid mt-3\">After enabling the line, additional customization options appear:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Line style</strong> - options: solid, dashed, or dotted.</li><li><strong>Line thickness</strong> - three options: 1 px, 2 px, or 3 px.</li><li><strong>Line color</strong> - default gray (#e5e7eb). You can choose any color from the palette or restore the default by clicking the Default button.</li></ul>"
+      "title": "Legal disclaimer — when and why to add one",
+      "html": "<p class=\"text-mid\">The <strong>Disclaimer / Legal</strong> tab lets you add legal text that appears at the bottom of the signature in a smaller font.</p>\n<h3 class=\"h5 mt-6 mb-3\">When should you add a disclaimer?</h3>\n<ul class=\"text-mid list-disc space-y-2 pl-6\">\n<li><strong>Business correspondence</strong> — a confidentiality notice asks the reader to delete the message if they received it by mistake.</li>\n<li><strong>Regulated industries</strong> — some fields, such as law, medicine, and finance, require specific information in every email.</li>\n<li><strong>Data protection</strong> — a short GDPR or privacy note tells the reader how you handle personal data.</li>\n<li><strong>Legal compliance</strong> — in many EU countries, company emails must include registration details. The disclaimer area is a natural place for these.</li>\n</ul>\n<p class=\"text-mid mt-4\">By default, the field contains a sample confidentiality text. You can edit it, delete it, or replace it with your own wording. If you leave the field empty, no disclaimer will appear.</p>\n<h3 class=\"h5 mt-6 mb-3\">Separator line</h3>\n<p class=\"text-mid\">Below the text field you will find the <strong>Show divider between contact details and disclaimer</strong> toggle. Turn it on to add a horizontal line above the legal text.</p>\n<p class=\"text-mid mt-3\">After you enable the line, three extra options appear:</p>\n<ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\">\n<li><strong>Line style</strong> — solid, dashed, or dotted.</li>\n<li><strong>Line thickness</strong> — 1 px, 2 px, or 3 px.</li>\n<li><strong>Line color</strong> — default gray (#e5e7eb). You can choose any color or click Default to reset it.</li>\n</ul>"
     },
     {
       "type": "gap",
@@ -201,8 +208,35 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Auto-save and resetting settings",
-      "html": "<p class=\"text-mid\">The generator automatically saves all settings in browser memory (localStorage). After refreshing the page or reopening the tool, data, layout, colors, and all other options will be restored.</p><h3 class=\"h5 mt-6 mb-3\">How does auto-save work?</h3><p class=\"text-mid\">Every change (text, color, layout, spacing) is immediately saved in browser memory. Saving happens automatically in the background - without clicking any buttons.</p><h3 class=\"h5 mt-6 mb-3\">How to reset settings</h3><p class=\"text-mid\">Below the signature preview you will find a <strong>Reset appearance</strong> button. After clicking, a confirmation dialog will appear. Confirming the reset will restore all data and settings to default values. This operation cannot be undone.</p><h3 class=\"h5 mt-6 mb-3\">Export and import configuration</h3><p class=\"text-mid\">Below the signature preview you will find two additional buttons: <strong>Export settings</strong> and <strong>Import settings</strong>. Export saves all data, colors, layout, spacing, and text styles to a JSON file. Import loads a previously saved configuration from a file.</p><p class=\"text-mid mt-3\">This feature is especially useful when you want to transfer the signature configuration between computers, share settings with colleagues, or keep a backup of your settings before a reset.</p>"
+      "title": "Email signature legal requirements around the world",
+      "html": "<p class=\"text-mid\">In many countries, business emails must include certain company details by law. An email signature is the easiest way to meet these requirements. Below is a summary of the most common rules. This is general information, not legal advice — always check the current regulations in your country or consult a lawyer.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">European Union — E-Commerce Directive</h3>\n<p class=\"text-mid\">The EU E-Commerce Directive (2000/31/EC, Article 5) requires businesses that operate in the EU to clearly identify themselves in electronic communications. This means your emails should include your company name, geographic address, and a way to contact you. Most EU member states have turned this directive into local laws with even more specific requirements.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">GDPR and data protection</h3>\n<p class=\"text-mid\">If your email signature contains personal data, such as a photo or a personal phone number, the General Data Protection Regulation (GDPR) may apply. Companies that process personal data should consider adding a short privacy notice or a link to their privacy policy. This is especially relevant for businesses that act as data controllers.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">United Kingdom</h3>\n<p class=\"text-mid\">Under the Companies Act 2006 (Section 82), every business email sent by a UK limited company must show the company's registered name, registration number, registered office address, and the place of registration (for example, England and Wales). These rules also apply to LLPs under similar regulations. Use the <strong>Formal details</strong> field in the generator to add this information.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">Germany, Austria, and Switzerland</h3>\n<p class=\"text-mid\">Germany has some of the strictest email signature rules in the EU. Under §35a GmbHG, every email from a GmbH must include the company name, legal form, registered office, court of registration, HRB number, and the names of all managing directors. Similar rules apply to other legal forms under §37a HGB and §80 AktG. Austria follows comparable rules under §14 UGB. Switzerland recommends including the UID number but is less strict. See the German-language version of this page for a full breakdown.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">France, Belgium, and Luxembourg</h3>\n<p class=\"text-mid\">French commercial law (Article R123-237 of the Code de commerce) requires business emails to show the company name, legal form, share capital, SIREN or SIRET number, RCS registration city, and registered office. Belgium requires the KBO/BCE number, and Luxembourg requires the RCS Luxembourg number. See the French-language version for detailed guidance.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">United States and Canada</h3>\n<p class=\"text-mid\">The United States does not mandate a specific email signature format for regular business emails. However, the CAN-SPAM Act requires commercial promotional emails to include a valid physical postal address. In Canada, CASL (Canada's Anti-Spam Legislation) requires clear sender identification and contact information in commercial messages. Adding your company address and contact details to every email is a good practice even when it is not legally required.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">Other countries at a glance</h3>\n<p class=\"text-mid\">Here is a brief overview of what several other countries require in business email signatures:</p>\n<ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\">\n<li><strong>Spain</strong> — NIF/CIF number, registered address (LSSI, Article 10).</li>\n<li><strong>Italy</strong> — Partita IVA, Codice Fiscale, REA number (Camera di Commercio requirements).</li>\n<li><strong>Netherlands</strong> — KvK number, legal name, registered office (Handelsregisterwet 2007).</li>\n<li><strong>Portugal</strong> — NIF number, company details (Decreto-Lei 7/2004).</li>\n<li><strong>Poland</strong> — KRS number, NIP, REGON for sp. z o.o. and S.A. companies.</li>\n<li><strong>Romania</strong> — CUI, J-number, registered office (Legea 365/2002).</li>\n<li><strong>Czech Republic</strong> — IČO and DIČ numbers, registered office.</li>\n<li><strong>Sweden</strong> — Organisationsnummer, registered office (Lag 2002:562).</li>\n<li><strong>Denmark</strong> — CVR number (E-handelsloven).</li>\n<li><strong>Norway</strong> — Organisasjonsnummer, MVA status (E-handelsloven).</li>\n<li><strong>Finland</strong> — Y-tunnus / Business ID (Laki 458/2002).</li>\n<li><strong>Hungary</strong> — Cégjegyzékszám, registered office (2001/CVIII. tv.).</li>\n<li><strong>Greece</strong> — ΑΦΜ (AFM) number, ΓΕΜΗ registration (PD 131/2003).</li>\n<li><strong>Australia</strong> — accurate sender information (Spam Act 2003).</li>\n<li><strong>Ireland</strong> — company name, registration number (Companies Act 2014, s.150).</li>\n</ul>\n<p class=\"text-mid mt-4\">The <strong>Formal details</strong> field in the email signature builder is designed for exactly this purpose. Enter your country-specific registration numbers there, and they will appear in every email you send.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Best practices for a professional email signature",
+      "html": "<p class=\"text-mid\">A good email footer is clear, consistent, and easy to read. Here are the most important tips to follow when you build your signature.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">Keep it short</h3>\n<p class=\"text-mid\">Aim for four to seven lines of contact information. A long signature can overwhelm the reader and push the actual message out of view, especially on mobile phones. Include only the details that matter: name, title, company, one phone number, email, and website.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">Use two or three colors at most</h3>\n<p class=\"text-mid\">Too many colors make the signature look cluttered. Pick an accent color that matches your brand and keep the rest of the text in a dark, neutral tone. The Appearance tab in the email signature maker lets you set these colors in seconds.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">Make the name and title stand out</h3>\n<p class=\"text-mid\">Your name should be the most prominent element. Use the accent color or a slightly larger font for it. The Text Style tab lets you adjust the color and size of each element independently.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">Always include a call to action</h3>\n<p class=\"text-mid\">A CTA button turns every email into a gentle marketing message. Link it to a meeting calendar, a portfolio, a contact form, or a current offer. Even a simple \"Visit our website\" can drive traffic.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">Choose email-safe fonts</h3>\n<p class=\"text-mid\">Not all fonts work in every email client. The generator offers five fonts that render correctly in Gmail, Outlook, Apple Mail, and Thunderbird: Arial, Verdana, Tahoma, Trebuchet MS, and Georgia. Avoid decorative or web-only fonts — they will be replaced by a default font on the recipient's device.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">Think about mobile screens</h3>\n<p class=\"text-mid\">More than half of all emails are opened on a phone. Keep your signature narrow, use a reasonable text size (14 px is a good default), and avoid elements that rely on wide layouts. The Standard and Compact layouts work best on small screens.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">Host images on your own domain</h3>\n<p class=\"text-mid\">If you add a logo or avatar, use an image hosted on your own website or a reliable CDN. Avoid link shorteners, Google Drive, or Dropbox links — some email clients block images from untrusted sources. The image should be square, at least 120 × 120 pixels, and in JPG, PNG, or WebP format.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How to use the Formal Details field for legal compliance",
+      "html": "<p class=\"text-mid\">The <strong>Formal details</strong> field in the Details tab is a multi-line text area where you can enter any registration numbers, tax IDs, or other legal identifiers your country requires.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">What to enter — examples by business type</h3>\n<ul class=\"text-mid list-disc space-y-2 pl-6\">\n<li><strong>UK limited company</strong> — Company No. 12345678 | Registered in England and Wales | Registered office: 10 Example Street, London, EC1A 1BB</li>\n<li><strong>German GmbH</strong> — HRB 12345, Amtsgericht Berlin | Geschäftsführer: Max Mustermann</li>\n<li><strong>French SARL / SAS</strong> — SIREN 123 456 789 | RCS Paris | Capital social: 10 000 EUR</li>\n<li><strong>Italian company</strong> — P.IVA 01234567890 | C.F. RSSMRA80A01H501U | REA MI-1234567</li>\n<li><strong>Dutch BV</strong> — KvK 12345678 | BTW NL001234567B01</li>\n<li><strong>US LLC / Corporation</strong> — EIN 12-3456789 | 123 Main St, New York, NY 10001</li>\n<li><strong>Freelancer / sole trader</strong> — Tax ID or VAT number, business license number if required.</li>\n</ul>\n<p class=\"text-mid mt-4\">If your country is not listed, check the legal requirements section above or consult your local business authority. The text you enter here will appear at the bottom of your email footer, right before the legal disclaimer.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Auto-save and resetting your settings",
+      "html": "<p class=\"text-mid\">The email signature builder saves your work automatically in your browser's local storage. When you refresh the page or come back later, all your data, layout, colors, and other options will still be there.</p>\n<h3 class=\"h5 mt-6 mb-3\">How does auto-save work?</h3>\n<p class=\"text-mid\">Every change you make — text, color, layout, spacing — is saved to your browser's memory right away. There are no save buttons to click. It all happens in the background.</p>\n<h3 class=\"h5 mt-6 mb-3\">How to reset everything</h3>\n<p class=\"text-mid\">Below the signature preview you will find a <strong>Reset appearance</strong> button. When you click it, a confirmation dialog will appear. If you confirm, all data and settings go back to their default values. This action cannot be undone.</p>\n<h3 class=\"h5 mt-6 mb-3\">Export and import your configuration</h3>\n<p class=\"text-mid\">Below the preview you will also find <strong>Export settings</strong> and <strong>Import settings</strong> buttons. Export saves everything — your data, colors, layout, spacing, and text styles — to a JSON file. Import loads a previously saved configuration from a file.</p>\n<p class=\"text-mid mt-3\">This feature is useful when you want to:</p>\n<ul class=\"text-mid mt-1 list-disc space-y-1 pl-6\">\n<li>Move your signature setup to a different computer.</li>\n<li>Share settings with coworkers so the whole team uses the same design.</li>\n<li>Keep a backup before you reset or make big changes.</li>\n</ul>"
     },
     {
       "type": "gap",
@@ -211,13 +245,13 @@
     {
       "type": "sectionSteps",
       "title": "How to copy the signature to Gmail or Outlook",
-      "description": "When the signature is ready, it only takes a few steps to add it to your email client:",
+      "description": "When your email footer is ready, follow these three steps to add it to your email client:",
       "grid": "three",
       "items": [
         {
           "icon": "RiClipboardLine",
           "title": "1. Copy the code",
-          "description": "The Copy signature (Gmail / Outlook) button copies the signature to clipboard as formatted HTML, ready to paste."
+          "description": "Click the Copy signature (Gmail / Outlook) button below the preview. This copies the signature as formatted HTML, ready to paste."
         },
         {
           "icon": "RiSettings3Line",
@@ -227,7 +261,7 @@
         {
           "icon": "RiSaveLine",
           "title": "3. Paste and save",
-          "description": "In the signature field, use Ctrl+V (Windows) or Cmd+V (Mac). The signature will appear with all colors and formatting. Save changes."
+          "description": "In the signature field, press Ctrl + V (Windows) or Cmd + V (Mac). Your signature will appear with all colors and formatting. Save your changes."
         }
       ]
     },
@@ -238,7 +272,7 @@
     {
       "type": "sectionInfo",
       "title": "Signature preview and export options",
-      "html": "<p class=\"text-mid\">The preview panel displays on the right side of the editor and automatically updates with every change. The preview is sticky, so it remains visible even while scrolling through editing options.</p><h3 class=\"h5 mt-6 mb-3\">Switching preview background</h3><p class=\"text-mid\">Above the preview you will find three background change buttons: <strong>Light</strong> (default gray background), <strong>Dark</strong> (dark background, useful for checking readability on dark backgrounds), and <strong>Checkerboard</strong> (checkerboard pattern, lets you see transparency and signature edges).</p><h3 class=\"h5 mt-6 mb-3\">Action buttons</h3><p class=\"text-mid\">Below the preview you will find several buttons:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Copy signature (Gmail / Outlook)</strong> - copies the signature to clipboard as formatted HTML. Paste it directly in signature settings.</li><li><strong>Copy HTML code</strong> - copies the raw HTML code of the signature to clipboard. Useful when you want to paste code in an HTML editor or CMS.</li><li><strong>Download as HTML</strong> - saves the signature code as an .html file to disk. Useful for archiving or sharing with a developer.</li><li><strong>View HTML code</strong> - opens a modal with the full HTML source code of the signature. You can review the code and copy it directly from the modal.</li><li><strong>Export settings</strong> - saves the full signature configuration (data, colors, layout, spacing, styles) to a JSON file.</li><li><strong>Import settings</strong> - loads a configuration from a JSON file. All settings will be automatically applied.</li><li><strong>Reset appearance</strong> - restores all data and settings to default values (after confirmation).</li></ul>"
+      "html": "<p class=\"text-mid\">The preview panel sits on the right side of the editor. It updates automatically every time you make a change. The panel is sticky, so it stays visible even while you scroll through the editing options.</p>\n<h3 class=\"h5 mt-6 mb-3\">Preview backgrounds</h3>\n<p class=\"text-mid\">Above the preview you will find three background buttons: <strong>Light</strong> (default gray), <strong>Dark</strong> (dark background — useful for checking readability), and <strong>Checkerboard</strong> (shows transparency and edges clearly).</p>\n<h3 class=\"h5 mt-6 mb-3\">Action buttons</h3>\n<p class=\"text-mid\">Below the preview you will find several buttons:</p>\n<ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\">\n<li><strong>Copy signature (Gmail / Outlook)</strong> — copies the signature as formatted HTML. Paste it directly into your email client's signature settings.</li>\n<li><strong>Copy HTML code</strong> — copies the raw HTML source code. Useful when you need to paste the code into an HTML editor or a CMS.</li>\n<li><strong>Download as HTML</strong> — saves the signature as an .html file. Handy for archiving or sharing with a developer.</li>\n<li><strong>View HTML code</strong> — opens a popup with the full source code. You can review and copy it from there.</li>\n<li><strong>Export settings</strong> — saves your entire configuration (data, colors, layout, spacing, text styles) as a JSON file.</li>\n<li><strong>Import settings</strong> — loads a configuration from a JSON file. All settings are applied automatically.</li>\n<li><strong>Reset appearance</strong> — restores all data and settings to their defaults (after you confirm).</li>\n</ul>"
     },
     {
       "type": "gap",
@@ -246,29 +280,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Who is the email signature creator for?",
-      "description": "The email signature tool is useful for anyone who sends business emails:",
+      "title": "Who is this email signature creator for?",
+      "description": "The signature builder is useful for anyone who sends business emails:",
       "grid": "two",
       "items": [
         {
           "icon": "RiBriefcaseLine",
-          "title": "Entrepreneurs and freelancers",
-          "description": "A professional signature in every message without hiring a designer."
+          "title": "Business owners and freelancers",
+          "description": "Get a polished email footer in every message without hiring a designer or writing any code."
         },
         {
           "icon": "RiTeamLine",
           "title": "Company teams",
-          "description": "Each employee creates their own signature in the same style. Consistent identity across the entire company."
+          "description": "Every team member builds their own signature in the same style. Export the JSON config and share it so the whole team matches."
         },
         {
           "icon": "RiHandCoinLine",
-          "title": "Sales representatives",
-          "description": "A CTA button with a link to a calendar or offer increases the chances of booking a meeting."
+          "title": "Sales and marketing",
+          "description": "A CTA button with a link to a calendar or an offer turns every email into a lead generation opportunity."
         },
         {
           "icon": "RiScales3Line",
-          "title": "Lawyers, accountants, doctors",
-          "description": "Ability to add a legal disclaimer, license number, tax ID, or other details required in the industry."
+          "title": "Lawyers, accountants, and doctors",
+          "description": "Add a legal disclaimer, license number, tax ID, or other details your profession requires."
         }
       ]
     },
@@ -278,7 +312,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "What makes this HTML email signature generator special?",
+      "title": "What makes this email signature builder special?",
       "grid": "three",
       "items": [
         {
@@ -289,12 +323,12 @@
         {
           "icon": "RiUserLine",
           "title": "Auto-save in browser",
-          "description": "Every change is automatically saved in browser memory. After refreshing the page, the signature remains available."
+          "description": "Every change is saved to your browser automatically. Your signature stays there when you come back."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Export and import configuration",
-          "description": "The full signature configuration can be exported as a JSON file and shared with colleagues."
+          "title": "Export and import",
+          "description": "Save the full configuration as a JSON file and share it with coworkers or move it to another device."
         },
         {
           "icon": "RiAppsLine",
@@ -303,28 +337,28 @@
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Advanced customization",
-          "description": "Avatar shape and size, line styling, individual text colors and sizes."
+          "title": "Deep customization",
+          "description": "Avatar shape and size, separator line style, individual text colors, font size offsets, and signature borders."
         },
         {
           "icon": "RiFileCodeLine",
           "title": "Multiple export options",
-          "description": "Copy HTML, download file, source code preview, JSON configuration export/import."
+          "description": "Copy formatted HTML, copy raw code, download as a file, view source, or export the full config as JSON."
         },
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy",
-          "description": "Data is not sent to a server. The generator works entirely in the browser."
+          "title": "Full privacy",
+          "description": "Your data never leaves your browser. The generator runs entirely on your device — nothing is sent to a server."
         },
         {
           "icon": "RiMailCheckLine",
-          "title": "Compatibility",
-          "description": "Generated HTML code works in Gmail, Outlook, Apple Mail, and Thunderbird."
+          "title": "Works everywhere",
+          "description": "The generated HTML code is compatible with Gmail, Outlook, Apple Mail, Thunderbird, and other popular email clients."
         },
         {
           "icon": "RiEyeLine",
           "title": "Live preview",
-          "description": "Every change is instantly visible on light, dark, or checkerboard background."
+          "description": "Every change you make is instantly visible on a light, dark, or checkerboard background."
         }
       ]
     },
@@ -339,55 +373,75 @@
       "items": [
         {
           "question": "Does the signature work in Gmail, Outlook, and Apple Mail?",
-          "answer": "Yes. Signatures generated by the generator use HTML tables that display correctly in all popular email clients: Gmail, Outlook (desktop and web), Apple Mail, Thunderbird. The layout adapts to different devices, including smartphones."
+          "answer": "Yes. The email footer builder generates HTML tables that display correctly in all major email clients: Gmail, Outlook (desktop and web), Apple Mail, and Thunderbird. The layout adapts to different screen sizes, including smartphones."
         },
         {
-          "question": "Can I add a company logo?",
-          "answer": "Yes. In the Details tab, paste the URL of an image (logo or profile photo). The image should be square (min. 120×120 px) and publicly accessible online. After pasting the URL, options for shape (round, rounded, square) and size (40, 56, or 72 px) will appear."
+          "question": "Can I add a company logo or profile photo?",
+          "answer": "Yes. In the Details tab, paste the URL of your image (logo or photo). The image should be square (at least 120 × 120 pixels) and publicly accessible — for example, hosted on your own website. After you paste the URL, options for shape (round, rounded, square) and size (40, 56, or 72 px) will appear."
         },
         {
-          "question": "How do I copy the signature to an email client?",
-          "answer": "The Copy signature (Gmail / Outlook) button below the preview copies the signature to clipboard as formatted HTML. In Gmail or Outlook signature settings, just use Ctrl+V (Windows) or Cmd+V (Mac)."
+          "question": "How do I copy the signature to my email client?",
+          "answer": "Click the Copy signature (Gmail / Outlook) button below the preview. This copies the signature as formatted HTML. Then open your email client's signature settings and press Ctrl + V (Windows) or Cmd + V (Mac) to paste it."
         },
         {
-          "question": "Can I use the generator to create signatures for an entire team?",
-          "answer": "Yes. The generator does not require login or registration. Each person on the team can open the tool, fill in their details, and copy the ready signature. To maintain visual consistency, agree on shared settings: the same layout, color theme, and font. You can also export the configuration as a JSON file and share it with colleagues - they just need to import the file and change only their personal details."
+          "question": "Can I create signatures for an entire team?",
+          "answer": "Yes. The generator does not require login or registration. Each person on the team can open the tool, enter their details, and copy the result. To keep the design consistent, agree on a layout, color theme, and font. You can also export the configuration as a JSON file and share it — each person just imports it and changes their personal details."
         },
         {
-          "question": "Can I add custom social media icons?",
-          "answer": "The generator offers built-in SVG icons for twelve platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest. Enable the Show icons option in the Social Media tab. You can choose icon size and color (platform colors, accent color, or text color)."
+          "question": "What social media platforms are supported?",
+          "answer": "The signature maker supports twelve platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (formerly Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest. You can display them as text links or as colorful SVG icons."
         },
         {
-          "question": "The copy button is inactive - why?",
-          "answer": "To copy the signature, fill in at least two fields: name and email address. Check that both fields are filled in."
+          "question": "The copy button is inactive — why?",
+          "answer": "You need to fill in at least two fields: your name and your email address. Check that both fields have content."
         },
         {
-          "question": "Avatar or logo is not displaying - what to do?",
-          "answer": "The image must be publicly accessible online. The URL should point directly to an image file (ending in .jpg, .png, or .webp). Images from Google Drive or Dropbox require a special sharing link."
+          "question": "My avatar or logo is not showing — what should I do?",
+          "answer": "The image must be publicly accessible on the internet. The URL should point directly to an image file (ending in .jpg, .png, or .webp). Images hosted on Google Drive or Dropbox need a special sharing link — a regular sharing URL will not work."
         },
         {
-          "question": "The signature looks different for the recipient - why?",
-          "answer": "Different email clients (Gmail, Outlook, Apple Mail) may slightly differ in how they render HTML. The generator uses safe styles that work in most programs. If you see major differences, make sure you are pasting the signature using Ctrl+V, not Paste as plain text."
+          "question": "The signature looks different for the recipient — why?",
+          "answer": "Different email clients (Gmail, Outlook, Apple Mail) may render HTML slightly differently. The generator uses safe, widely supported styles. If you see major differences, make sure you are pasting the signature with Ctrl + V, not using Paste as plain text."
         },
         {
-          "question": "CTA button is not appearing - what to do?",
-          "answer": "The button requires both fields: text and link. Check that in the Buttons tab both fields are filled in and the URL starts with https://."
+          "question": "The CTA button is not showing — what should I do?",
+          "answer": "The button needs both fields: text and link. Check that in the Buttons tab both fields are filled in and the URL starts with https://."
         },
         {
-          "question": "How to export or import signature settings?",
-          "answer": "Below the signature preview you will find Export settings and Import settings buttons. Export saves the full configuration (data, colors, layout, spacing, text styles) to a JSON file. Import loads the configuration from a file and automatically applies all settings."
+          "question": "How do I export or import my settings?",
+          "answer": "Below the signature preview you will find Export settings and Import settings buttons. Export saves everything (data, colors, layout, spacing, text styles) to a JSON file. Import loads it back and applies all settings automatically."
         },
         {
-          "question": "How to view the source code of the generated signature?",
-          "answer": "The View HTML code button below the signature preview opens a modal with the full HTML source code. You can review and copy the code directly from the modal. Alternatively, the Copy HTML code button copies the raw code to clipboard, and Download as HTML saves it as a file."
+          "question": "How do I view the HTML source code?",
+          "answer": "Click the View HTML code button below the preview. A popup with the full source code will open. You can review and copy it from there. You can also use Copy HTML code to get the raw code in your clipboard, or Download as HTML to save it as a file."
         },
         {
           "question": "Can I change the avatar shape and size?",
-          "answer": "Yes. After pasting the image URL in the Data tab, additional options appear: Avatar shape (round, rounded, square) and Avatar size (small - 40 px, medium - 56 px, large - 72 px). Settings are applied in all signature layouts."
+          "answer": "Yes. After you paste an image URL in the Details tab, extra options appear: Avatar shape (round, rounded, or square) and Avatar size (small — 40 px, medium — 56 px, large — 72 px). These settings apply to all layouts."
         },
         {
-          "question": "How to change the separator line style?",
-          "answer": "In the Disclaimer / Legal tab, enable the Show separator line option. Additional options will appear: line style (solid, dashed, dotted), thickness (1–3 px), and color (default gray or any color chosen from the palette)."
+          "question": "How do I change the separator line style?",
+          "answer": "In the Disclaimer / Legal tab, turn on the Show separator line toggle. New options will appear: line style (solid, dashed, or dotted), thickness (1–3 px), and color (default gray or any color you choose from the palette)."
+        },
+        {
+          "question": "What legal information should my email signature contain?",
+          "answer": "It depends on your country. In the EU, business emails typically must include the company name, registered office, and registration number. The UK requires the company number and registered address. Germany adds the names of managing directors. The US requires a physical address in commercial emails. Check the legal requirements section on this page for a full overview, and use the Formal details field to add the required information."
+        },
+        {
+          "question": "How do I make my signature mobile-friendly?",
+          "answer": "Keep the signature short (four to seven lines), use a standard text size (14 px), and choose a layout that works well on narrow screens — Standard and Compact are the safest options. Avoid very wide layouts like Two columns if many of your recipients read emails on their phones."
+        },
+        {
+          "question": "Where should I host my logo or profile image?",
+          "answer": "The best option is your own website or a reliable CDN. Upload the image there and use the direct URL. Avoid link shorteners, Google Drive, or Dropbox — some email clients block images from these sources. The image should be square, at least 120 × 120 px, and in JPG, PNG, or WebP format."
+        },
+        {
+          "question": "Can I use different signatures for different email accounts?",
+          "answer": "Yes. The generator saves settings per browser session. You can create one signature, export the configuration as JSON, then reset and create a different one. Import the saved JSON whenever you need to switch back. In Gmail and Outlook, you can also set up multiple signatures and choose which one to use for each email."
+        },
+        {
+          "question": "What is the ideal email signature length?",
+          "answer": "A good email footer has four to seven lines of contact information. This includes your name, title, company, one phone number, email, and website. Adding a CTA button and a legal disclaimer is fine, but try not to exceed eight to ten total lines. A shorter signature loads faster and looks better on mobile devices."
         }
       ]
     },
@@ -398,7 +452,7 @@
     {
       "type": "contactForm",
       "title": "Help us improve our tools",
-      "description": "Have an idea for a new feature, found a bug, or want to suggest another tool that would make your work easier? Write to us – we respond within 24 hours.",
+      "description": "Have an idea for a new feature, found a bug, or want to suggest another tool that would make your work easier? Write to us — we respond within 24 hours.",
       "imageSrc": "/assets/tools/free-html-email-signature-generator/free-email-signature-generator-en.webp",
       "imageAlt": "Email signature generator – Arteon",
       "defaultSubject": "Feedback: Email signature generator"

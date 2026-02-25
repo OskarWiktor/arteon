@@ -25,10 +25,18 @@
   "schemas": {
     "software": {
       "name": "HTML-sähköpostiallekirjoitusgeneraattori – allekirjoituksen luoja",
-      "alternateName": ["HTML-sähköpostiallekirjoitusgeneraattori", "Sähköpostin alatunnisteen generaattori"],
+      "alternateName": [
+        "Ilmainen sähköpostin allekirjoitus generaattori",
+        "HTML-allekirjoituksen luoja",
+        "Sähköpostin allekirjoitus Gmailiin",
+        "Sähköpostin allekirjoitus Outlookiin",
+        "Ammattimainen sähköpostin allekirjoitus",
+        "Sähköpostin alatunniste generaattori",
+        "Työkalu sähköpostin allekirjoitukseen"
+      ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Ilmainen HTML-sähköpostiallekirjoitusgeneraattori. Lisää yhteystiedot, CTA-linkki ja sosiaalisen median profiilit, kopioi sitten valmis allekirjoituskoodi Gmailiin, Outlookiin ja muihin sähköpostiohjelmiin.",
+      "description": "Ilmainen HTML-sähköpostin allekirjoitus generaattori ja ammattimaisen alatunnisteen luoja. Lisää yhteystiedot, CTA-linkki ja sosiaalisen median profiilit. Kopioi koodi Gmailiin, Outlookiin, Apple Mailiin tai mihin tahansa sähköpostiohjelmaan. Ilman rekisteröitymistä.",
       "featureList": [
         "Yhteystiedot (nimi, titteli, yritys)",
         "Puhelin, sähköposti ja verkkosivuston URL",
@@ -86,10 +94,10 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Miksi tarvitset ammattimaisen sähköpostiallekirjoituksen?",
-      "html": "<p class=\"text-mid\">Sähköpostiallekirjoitus (kutsutaan myös sähköpostin alatunnisteeksi) on tietolohko jokaisen lähetetyn viestin alareunassa. Se sisältää yhteystiedot, tittelin, yrityksen nimen ja usein linkin verkkosivulle tai ajanvarauskalenteriin.</p><p class=\"text-mid mt-3\">Vastaanottajan ei tarvitse etsiä puhelinnumeroa aiemmista viesteistä – kaikki tiedot ovat helposti saatavilla. Ammattimainen sähköpostiallekirjoitus osoittaa myös, että kiinnität huomiota yksityiskohtiin ja ylläpidät yhtenäistä yritysimago liikeviestinnässä.</p>",
-      "imageSrc": "/assets/tools/free-html-email-signature-generator/ilmainen-sahkopostiallekirjoitus-generaattori-fi.webp",
-      "imageAlt": "Sähköpostiallekirjoitusgeneraattori – Arteon"
+      "title": "Miksi käyttää ammattimaista sähköpostin allekirjoitusta?",
+      "html": "<p class=\"text-mid\">Sähköpostin allekirjoitus on lyhyt tekstilohko jokaisen lähettämäsi viestin lopussa. Sitä kutsutaan myös sähköpostin alatunnisteeksi tai allekirjoituslohkoksi. Se sisältää nimesi, nimikkeesi, yrityksesi ja yhteystietosi. Monet allekirjoitukset sisältävät myös linkin verkkosivustolle, tapaamisten kalenteriin tai sosiaalisen median profiileihin.</p><p class=\"text-mid mt-3\">Keskimäärin toimistotyöntekijä lähettää 30–40 sähköpostia päivässä. Jokainen viesti on mahdollisuus jakaa yhteystietosi, vahvistaa brändiäsi ja helpottaa vastaanottajan yhteydenottoa. Hyvin suunniteltu alatunniste säästää vastaanottajan aikaa — hänen ei tarvitse etsiä puhelinnumeroasi vanhoista viesteistä.</p><p class=\"text-mid mt-3\">Suomessa laki edellyttää, että liiketoimintasähköpostit sisältävät tiettyjä yritystietoja. Y-tunnus on tärkeimpiä tietoja. Sähköpostin allekirjoitus on yksinkertaisin paikka sisällyttää ne.</p>",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/ilmainen-sahkopostin-allekirjoitus-generaattori-fi.webp",
+      "imageAlt": "Sähköpostin allekirjoitus generaattori – Arteon"
     },
     {
       "type": "gap",
@@ -97,24 +105,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Näin käytät sähköpostiallekirjoitusgeneraattoria",
-      "description": "Ammattimaisen sähköpostiallekirjoituksen luominen kestää vain muutaman minuutin:",
-      "grid": "three",
+      "title": "Luo sähköpostin allekirjoitus neljässä vaiheessa",
+      "description": "Ammattimaisen alatunnisteen luominen vie alle viisi minuuttia:",
+      "grid": "four",
       "items": [
         {
+          "icon": "RiMailLine",
           "title": "1. Syötä tiedot",
-          "description": "Täytä nimi, titteli, yritys ja yhteystiedot.",
-          "icon": "RiEditLine"
+          "description": "Nimi, nimike, yritys, yhteystiedot ja valinnaisesti sosiaalisen median linkit."
         },
         {
-          "title": "2. Mukauta ulkoasua",
-          "description": "Valitse asettelu, värit, lisää logo ja sosiaalisen median linkit.",
-          "icon": "RiPaletteLine"
+          "icon": "RiPaletteLine",
+          "title": "2. Muokkaa ulkoasua",
+          "description": "Valitse asettelu, värimaailma, fontti ja säädä välejä."
         },
         {
-          "title": "3. Kopioi koodi",
-          "description": "Copy signature -painike kopioi valmiin koodin leikepöydälle. Liitä se Gmailiin, Outlookiin tai muuhun sähköpostiohjelmaan.",
-          "icon": "RiCodeLine"
+          "icon": "RiLinksLine",
+          "title": "3. Lisää CTA ja some",
+          "description": "Lisää toimintapainike ja linkit sosiaalisen median profiileihisi."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Kopioi ja liitä",
+          "description": "Kopioi allekirjoitus ja liitä se Gmailiin, Outlookiin tai muuhun sähköpostiohjelmaan."
         }
       ]
     },
@@ -124,18 +137,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Miten täyttää allekirjoituksen tiedot?",
-      "html": "<p class=\"text-mid\">Välilehdellä <strong>Tiedot</strong> löydät kaikki kentät, jotka voit täyttää. Vain kaksi on pakollisia: nimi ja sähköpostiosoite. Muut kentät ovat valinnaisia ja näkyvät allekirjoituksessa vain, jos täytät ne.</p><h3 class=\"h5 mt-6 mb-3\">Tiedot-välilehden kentät</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Rivi nimen yläpuolella</strong> – lisäteksti nimen yläpuolella. Voit kirjoittaa yrityksen nimen, sloganin tai motton.</li><li><strong>Avatar / logo (kuvan URL)</strong> – profiilikuvan tai yrityksen logon URL-osoite. Kuvan tulisi olla neliö (min. 120×120 px) ja julkisesti saatavilla.</li><li><strong>Nimi</strong> – pakollinen kenttä.</li><li><strong>Tunniste nimen vieressä</strong> – lyhyt teksti nimen vieressä, esim. pronominit tai lyhennetty titteli.</li><li><strong>Asema</strong> – rooli yrityksessä.</li><li><strong>Yrityksen nimi</strong> – organisaation nimi.</li><li><strong>Lisärivi</strong> – lyhyt kuvaus toiminnastasi tai tarjonnastasi.</li><li><strong>Sähköposti</strong> – pakollinen kenttä.</li><li><strong>Puhelin</strong> – yhteystietonumero vapaassa muodossa.</li><li><strong>Verkkosivusto</strong> – täydellinen URL-osoite alkaen https://.</li><li><strong>Osoite</strong> – yrityksen fyysinen osoite.</li><li><strong>Viralliset tiedot</strong> – Y-tunnus, lisenssinumero tai muut alan vaatimukset.</li></ul>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionDemo",
-      "title": "Allekirjoituksen asettelut – minkä valitsisit?",
-      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Allekirjoituksen asettelu</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div></div>",
-      "html": "<p class=\"text-mid\">Generaattori tarjoaa kahdeksan esimääritettyä asettelua. Jokainen asettelu esittää samat tiedot eri tavalla.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> – klassinen pystyasettelu, sopii useimpiin käyttötilanteisiin.</li><li><strong>Top bar</strong> – vaakasuora viiva erottaa allekirjoituksen sisällöstä.</li><li><strong>Labels left</strong> – kaksi saraketta: tunnisteet ja arvot.</li><li><strong>Centered</strong> – muodollinen ulkoasu, sisältö keskitetty.</li><li><strong>Compact</strong> – kaikki yhdellä rivillä, minimaalinen korkeus.</li><li><strong>Two columns</strong> – tiedot vasemmalla, yhteystiedot oikealla.</li><li><strong>Minimalist</strong> – vain perustiedot.</li><li><strong>Bottom bar</strong> – värillinen rivi yhteystiedoilla allekirjoituksen alareunassa.</li></ul>"
+      "title": "Näin täytät allekirjoituksen tiedot",
+      "html": "<p class=\"text-mid\"><strong>Tiedot</strong>-välilehdellä löydät kaikki käytettävissä olevat kentät. Vain kaksi on pakollisia: nimi ja sähköpostiosoite. Muut ovat valinnaisia ja näkyvät allekirjoituksessa vain täytettyinä.</p><h3 class=\"h5 mt-6 mb-3\">Käytettävissä olevat kentät</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Rivi nimen yläpuolella</strong> — lisäteksti nimen yläpuolella: yrityksen nimi, iskulause tai motto.</li><li><strong>Avatar / logo (kuvan URL)</strong> — URL profiilikuvaan tai logoon. Kuvan on oltava neliö (min. 120 × 120 px) ja julkisesti saatavilla. Liittämisen jälkeen voit valita <strong>muodon</strong> (pyöreä, pyöristetty, neliö) ja <strong>koon</strong> (pieni — 40 px, keskikokoinen — 56 px, suuri — 72 px).</li><li><strong>Koko nimi</strong> — pakollinen kenttä.</li><li><strong>Tunniste nimen vieressä</strong> — lyhyt teksti nimen vieressä, esim. pronominit tai lyhennetty nimike.</li><li><strong>Nimike</strong> — roolisi yrityksessä, esim. Myyntijohtaja.</li><li><strong>Yritys</strong> — organisaation nimi.</li><li><strong>Lisärivi</strong> — lyhyt kuvaus toiminnastasi tai tarjonnastasi.</li><li><strong>Sähköposti</strong> — pakollinen kenttä. Ammatillinen sähköpostiosoitteesi.</li><li><strong>Puhelin</strong> — yhteystietonumero missä tahansa muodossa, esim. +358 9 123 4567.</li><li><strong>Verkkosivusto</strong> — täydellinen URL, joka alkaa https://.</li><li><strong>Osoite</strong> — yrityksen käyntiosoite.</li><li><strong>Viralliset tiedot</strong> — Y-tunnus, ALV-tunnus tai muut lain vaatimat tiedot. Tämä kenttä on tärkeä Suomen lakisääteisten vaatimusten täyttämiseksi.</li></ul>"
     },
     {
       "type": "gap",
@@ -143,8 +146,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Miten lisätä CTA-painikkeet?",
-      "html": "<p class=\"text-mid\">CTA-painike (call-to-action, toimintakehotus) on klikattava elementti, joka ohjaa vastaanottajan valitulle sivulle. Se voi olla linkki tapaamiskalenteriin, yhteydenottolomakkeeseen tai tarjoukseen. Generaattori mahdollistaa kahden CTA-painikkeen lisäämisen.</p><h3 class=\"h5 mt-6 mb-3\">Ensisijainen painike</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Avaa <strong>Painikkeet</strong>-välilehti editorissa.</li><li>Kohdassa <strong>Ensisijainen painike</strong> kirjoita teksti, jonka vastaanottaja näkee, esim. Varaa ilmainen konsultaatio.</li><li>Kenttään <strong>CTA-linkki</strong> liitä täydellinen URL-osoite alkaen https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Toissijainen painike</h3><p class=\"text-mid\">Voit lisätä toisen CTA-painikkeen outline-tyylillä (läpinäkyvä tausta reunuksella). Täytä kentät vastaavasti.</p><h3 class=\"h5 mt-6 mb-3\">Painikkeiden pyöristys</h3><p class=\"text-mid\">Painikkeet-välilehden alaosasta löydät vaihtoehdon <strong>Painikkeiden pyöristys</strong>. Kolme vaihtoehtoa: Ei (terävät kulmat), Kevyt (kevyesti pyöristetty) tai Täysi (soikea painike).</p>"
+      "title": "Lakisääteiset vaatimukset sähköpostin allekirjoituksille Suomessa",
+      "html": "<p class=\"text-mid\">Suomessa liiketoimintasähköpostien on sisällettävä tiettyjä yritystietoja. Sähköpostin allekirjoitus on yksinkertaisin tapa täyttää nämä vaatimukset. Alla on yhteenveto tärkeimmistä säännöistä. Kyseessä on yleinen tieto, ei juridinen neuvonta — tarkista aina voimassa oleva lainsäädäntö.</p><h3 class=\"h5 mt-6 mb-3\">Kaupparekisterilaki ja sähköisen viestinnän palvelulaki</h3><p class=\"text-mid\">Suomen lainsäädännön mukaan yritysten on ilmoitettava liikekirjeenvaihdossaan:</p><ul class=\"text-mid mt-2 list-disc space-y-1 pl-6\"><li>Yrityksen toiminimi ja yhtiömuoto (Oy, Oyj, Ay, Ky, tmi jne.)</li><li>Y-tunnus</li><li>Kotipaikka</li><li>ALV-tunnus (FI + 8 numeroa), jos arvonlisäverovelvollinen</li></ul><p class=\"text-mid mt-3\">Käytä generaattorin <strong>Viralliset tiedot</strong> -kenttää näiden tietojen syöttämiseen.</p><h3 class=\"h5 mt-6 mb-3\">Osakeyhtiöt (Oy ja Oyj)</h3><p class=\"text-mid\">Osakeyhtiöiden on lisäksi ilmoitettava osakepääoma ja mahdollinen selvitystila liikekirjeenvaihdossaan. On hyvä käytäntö sisällyttää nämä tiedot sähköpostin allekirjoitukseen.</p><h3 class=\"h5 mt-6 mb-3\">Yksityiset elinkeinonharjoittajat (toiminimet)</h3><p class=\"text-mid\">Toiminimillä ei ole yhtä tiukkoja vaatimuksia kuin osakeyhtiöillä, mutta on suositeltavaa ilmoittaa Y-tunnus ja osoite liikekirjeenvaihdossa.</p><h3 class=\"h5 mt-6 mb-3\">GDPR ja tietosuoja</h3><p class=\"text-mid\">Jos sähköpostin allekirjoitus sisältää henkilötietoja (valokuva, henkilökohtainen puhelinnumero), sovelletaan GDPR:ää (yleistä tietosuoja-asetusta). Rekisterinpitäjinä toimivien yritysten tulisi harkita lyhyen tietosuojailmoituksen tai tietosuojakäytäntöön johtavan linkin lisäämistä. Generaattori tarjoaa kenttää <strong>Vastuuvapauslauseke / GDPR</strong> tätä tarkoitusta varten.</p>"
     },
     {
       "type": "gap",
@@ -152,8 +155,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Miten lisätä sosiaalisen median linkit?",
-      "html": "<p class=\"text-mid\">Välilehdellä <strong>Sosiaalinen media</strong> voit lisätä linkit profiileihisi. Generaattori tukee kahtatoista alustaa: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (entinen Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram ja Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Näin teet</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Avaa <strong>Sosiaalinen media</strong> -välilehti editorissa.</li><li>Kunkin alustan kohdalla on URL-kenttä. Liitä täydellinen linkki profiiliisi.</li><li>Täytä vain ne kentät, jotka ovat sinulle relevantteja. Tyhjät kentät eivät näy allekirjoituksessa.</li></ol><h3 class=\"h5 mt-6 mb-3\">Sosiaalisen median kuvakkeet</h3><p class=\"text-mid\">Välilehden alaosasta löydät vaihtoehdon <strong>Näytä kuvakkeet nimien vieressä</strong>. Käytössä linkit näkyvät värillisinä SVG-kuvakkeina pelkkien nimien sijaan.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Kuvakkeen koko</strong> – vaihtoehdot: Pieni (16 px), Keskikokoinen (20 px) tai Suuri (24 px).</li><li><strong>Kuvakkeen väri</strong> – Alustavärit (oletusvärit), Korostusväri (yhtenäinen) tai Tekstin väri.</li></ul>"
+      "title": "Näin täytät Viralliset tiedot -kentän — esimerkkejä",
+      "html": "<p class=\"text-mid\">Kenttä <strong>Viralliset tiedot</strong> Tiedot-välilehdellä on moniriviinen tekstikenttä lakisääteisille tunnisteille. Esimerkkejä:</p><ul class=\"text-mid mt-3 list-disc space-y-3 pl-6\"><li><strong>Oy</strong> — Esimerkki Oy | Y-tunnus 1234567-8 | ALV FI12345678 | Kotipaikka: Helsinki | Osakepääoma 2 500 EUR</li><li><strong>Oyj</strong> — Esimerkki Oyj | Y-tunnus 8765432-1 | Helsinki</li><li><strong>Tmi</strong> — Matti Meikäläinen Tmi | Y-tunnus 1234567-8 | Helsinki</li></ul><p class=\"text-mid mt-4\">Syötetty teksti näkyy allekirjoituksen lopussa, juuri ennen vastuuvapauslauseketta.</p>"
     },
     {
       "type": "gap",
@@ -161,8 +164,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ulkoasun mukauttaminen",
-      "html": "<p class=\"text-mid\">Välilehdellä <strong>Ulkoasu</strong> voit mukauttaa värejä, fonttia ja muita visuaalisia elementtejä.</p><h3 class=\"h5 mt-6 mb-3\">Väriteemat</h3><p class=\"text-mid\">Välilehden yläosassa on viisi esimääritettyä teemaa: Tumma, Sininen, Violetti, Vihreä ja Harmaa. Teeman napsauttaminen asettaa automaattisesti korostusvärin ja tekstin värin.</p><h3 class=\"h5 mt-6 mb-3\">Värit</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Korostusväri</strong> – käytetään sivupalkissa/yläpalkissa, CTA-painikkeessa ja linkeissä.</li><li><strong>Tekstin väri</strong> – kaikkien tekstien väri allekirjoituksessa.</li><li><strong>Taustaväri</strong> – allekirjoituksen tausta. Oletusarvoisesti valkoinen.</li></ul><h3 class=\"h5 mt-6 mb-3\">Fontti ja koko</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Fontti</strong> – vaihtoehdot: Arial, Verdana, Tahoma, Trebuchet MS ja Georgia. Kaikki ovat sähköpostiturvallisia.</li><li><strong>Tekstin koko</strong> – kolme vaihtoehtoa: Pieni (12 px), Normaali (14 px) ja Suurempi (16 px).</li></ul>"
+      "title": "Näin lisäät CTA-painikkeita",
+      "html": "<p class=\"text-mid\">CTA-painike (toimintakehotus) on klikattava elementti, joka ohjaa vastaanottajan valitsemallesi sivulle: tapaamisten kalenteri, yhteydenottolomake tai tarjous. Luoja tukee kahta CTA-painiketta.</p><h3 class=\"h5 mt-6 mb-3\">Pääpainike</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Avaa <strong>Painikkeet</strong>-välilehti.</li><li>Kirjoita teksti, jonka vastaanottaja näkee, esim. <em>Varaa tapaaminen</em>.</li><li>Liitä täydellinen URL <strong>CTA-linkki</strong>-kenttään. Osoitteen on alettava https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Toissijainen painike</h3><p class=\"text-mid\">Voit lisätä toisen painikkeen ääriviivityylillä (läpinäkyvä tausta reunuksella). Täytä <strong>Toissijainen painike</strong> -osion kentät samalla tavalla.</p><h3 class=\"h5 mt-6 mb-3\">Painikkeen muoto</h3><p class=\"text-mid\">Välilehden alaosassa <strong>Pyöristys</strong>-vaihtoehto tarjoaa kolme muotoa: Ei (suorat kulmat), Kevyt (kevyesti pyöristetty) tai Täysi (soikea).</p>"
     },
     {
       "type": "gap",
@@ -170,8 +173,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Tekstityyli – yksittäisten elementtien värit ja koot",
-      "html": "<p class=\"text-mid\">Välilehdellä <strong>Tekstityyli</strong> voit mukauttaa kunkin tekstielementin väriä ja fonttikokoa erikseen.</p><h3 class=\"h5 mt-6 mb-3\">Käytettävissä olevat elementit</h3><p class=\"text-mid\">Vain ne elementit, jotka ovat tällä hetkellä allekirjoituksessa, ovat näkyvissä. Jokaiselle elementille voit asettaa:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Nimi</strong> – näkyy oletuksena korostusvärillä.</li><li><strong>Asema</strong> – rooli yrityksessä.</li><li><strong>Yritys</strong> – organisaation nimi.</li><li><strong>Yhteystiedot</strong> – sähköposti, puhelin, verkkosivusto.</li><li><strong>Sosiaalinen media</strong> – linkit profiileihin.</li><li><strong>Oikeudellinen lauseke</strong> – juridinen teksti alaosassa.</li></ul><h3 class=\"h5 mt-6 mb-3\">Värin vaihtaminen</h3><p class=\"text-mid\">Kunkin elementin kohdalla on värivaihtoehtoja. Napsauta värineliötä valitaksesi. Palautuspainike palauttaa oletusvärin.</p><h3 class=\"h5 mt-6 mb-3\">Koon vaihtaminen</h3><p class=\"text-mid\">Toisella rivillä on koon säätö painikkeilla - ja +. Alue: -4:stä +4 pikseliin.</p>"
+      "title": "Näin lisäät sosiaalisen median linkkejä",
+      "html": "<p class=\"text-mid\"><strong>Sosiaalinen media</strong> -välilehdellä voit lisätä linkkejä profiileihisi. Luoja tukee kahtatoista alustaa: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (entinen Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram ja Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Näin teet</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Avaa <strong>Sosiaalinen media</strong> -välilehti.</li><li>Liitä kunkin alustan viereen profiilin täydellinen URL.</li><li>Täytä vain käyttämäsi alustat. Tyhjät kentät eivät näy.</li></ol><h3 class=\"h5 mt-6 mb-3\">Kuvakkeet</h3><p class=\"text-mid\">Ota käyttöön <strong>Näytä kuvakkeet nimien vieressä</strong> värikuvakkeiden näyttämiseksi tekstin sijaan.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Koko</strong> — Pieni (16 px), Keskikokoinen (20 px) tai Suuri (24 px).</li><li><strong>Väri</strong> — Alustan värit, Korostusväri (yhtenäinen) tai Tekstin väri.</li></ul>"
     },
     {
       "type": "gap",
@@ -179,8 +182,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Elementtien väliset etäisyydet",
-      "html": "<p class=\"text-mid\">Välilehdellä <strong>Etäisyydet</strong> voit tarkasti säätää allekirjoituksen elementtien välisiä etäisyyksiä.</p><h3 class=\"h5 mt-6 mb-3\">Sisäinen marginaali</h3><p class=\"text-mid\">Välilehden yläosassa on sisäisen marginaalin vaihtoehto – etäisyys allekirjoituksen sisällön ja reunojen välillä. Kolme arvoa: 8 px (pieni), 16 px (keskikokoinen) ja 24 px (suuri).</p><h3 class=\"h5 mt-6 mb-3\">Elementtien väliset etäisyydet</h3><p class=\"text-mid\">Marginaalin alla on säädöt yksittäisille elementeille painikkeilla + ja -.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Nimen jälkeen</strong></li><li><strong>Aseman / yrityksen jälkeen</strong></li><li><strong>Lisärivin jälkeen</strong></li><li><strong>Yhteystietojen jälkeen</strong></li><li><strong>Sosiaalisen median jälkeen</strong></li><li><strong>CTA-painikkeen jälkeen</strong></li><li><strong>Ennen oikeudellista lauseketta</strong></li></ul>"
+      "title": "Ulkoasun muokkaaminen",
+      "html": "<p class=\"text-mid\"><strong>Ulkoasu</strong>-välilehdellä voit muuttaa värejä, fonttia ja muita visuaalisia elementtejä.</p><h3 class=\"h5 mt-6 mb-3\">Väriteemat</h3><p class=\"text-mid\">Välilehden yläosassa on viisi esiasetettua teemaa: Tumma, Sininen, Violetti, Vihreä ja Harmaa. Yksi napsautus soveltaa automaattisesti korostus- ja tekstivärin.</p><h3 class=\"h5 mt-6 mb-3\">Yksittäiset värit</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Korostusväri</strong> — sivupalkille tai yläpalkille, CTA-painikkeelle ja linkeille.</li><li><strong>Tekstin väri</strong> — kaikkien allekirjoituksen tekstien väri.</li><li><strong>Taustaväri</strong> — allekirjoituksen tausta. Oletuksena valkoinen.</li></ul><h3 class=\"h5 mt-6 mb-3\">Fontti ja koko</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Fontti</strong> — Arial, Verdana, Tahoma, Trebuchet MS tai Georgia. Kaikki ovat sähköpostiturvallisuuden mukaisia.</li><li><strong>Koko</strong> — Pieni (12 px), Standardi (14 px) tai Suurempi (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Allekirjoituksen reunus</h3><p class=\"text-mid\">Voit lisätä reunuksen mille tahansa puolelle: vasemmalle, oikealle, ylhäälle tai alhaalle. Reunus käyttää korostusväriä.</p>"
     },
     {
       "type": "gap",
@@ -188,8 +191,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Oikeudellinen lauseke / GDPR – milloin lisätä?",
-      "html": "<p class=\"text-mid\">Välilehdellä <strong>Lauseke / GDPR</strong> voit lisätä juridisen tekstin, joka näkyy allekirjoituksen alaosassa pienemmällä fontilla.</p><h3 class=\"h5 mt-6 mb-3\">Milloin lauseke kannattaa lisätä?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Liikekirjeenvaihto</strong> – tieto viestin luottamuksellisuudesta ja pyyntö poistaa virheellisen toimituksen yhteydessä.</li><li><strong>Toimialavaatimukset</strong> – tietyt toimialat (esim. oikeudellinen, lääketieteellinen, rahoitus) vaativat tiettyjä tietoja jokaisessa viestissä.</li><li><strong>GDPR</strong> – tieto henkilötietojen käsittelystä, jos yritys on rekisterinpitäjä.</li></ul><p class=\"text-mid mt-4\">Oletusarvoisesti kenttä on täytetty esimerkkitekstillä. Voit muokata, poistaa tai korvata sen omalla lausekkeellasi.</p><h3 class=\"h5 mt-6 mb-3\">Erotteluviiva</h3><p class=\"text-mid\">Tekstikentän alla on vaihtoehto <strong>Näytä erotteluviiva</strong>. Käytössä se lisää vaakaviivan yhteystietojen ja oikeudellisen lausekkeen väliin.</p>"
+      "title": "Vastuuvapauslauseke ja GDPR",
+      "html": "<p class=\"text-mid\"><strong>Vastuuvapauslauseke / GDPR</strong> -välilehdellä voit lisätä juridisen tekstin, joka näkyy allekirjoituksen lopussa pienemmällä fontilla.</p><h3 class=\"h5 mt-6 mb-3\">Milloin lisätä vastuuvapauslauseke?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Liikekirjeenvaihto</strong> — luottamuksellisuusilmoitus virheellisen vastaanoton varalta.</li><li><strong>Toimialavaatimukset</strong> — tietyt alat (lakiala, lääketiede, rahoitus) vaativat erityistietoja.</li><li><strong>GDPR</strong> — tiedot henkilötietojen käsittelystä.</li></ul><p class=\"text-mid mt-4\">Oletuksena kenttä sisältää esimerkkitekstin. Voit muokata, poistaa tai korvata sen.</p><h3 class=\"h5 mt-6 mb-3\">Erotin viiva</h3><p class=\"text-mid\">Ota käyttöön <strong>Näytä erotin viiva</strong> lisätäksesi vaakasuoran viivan juridisen tekstin yläpuolelle. Vaihtoehdot: tyyli (yhtenäinen, katkoviiva, pisteviiva), paksuus (1–3 px) ja väri.</p>"
     },
     {
       "type": "gap",
@@ -197,8 +200,17 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Automaattinen tallennus ja asetusten nollaus",
-      "html": "<p class=\"text-mid\">Generaattori tallentaa automaattisesti kaikki asetukset selaimen muistiin (localStorage). Sivun päivittämisen tai työkalun uudelleen avaamisen jälkeen tiedot, asettelu, värit ja kaikki muut asetukset palautetaan.</p><h3 class=\"h5 mt-6 mb-3\">Miten automaattinen tallennus toimii?</h3><p class=\"text-mid\">Jokainen muutos (teksti, väri, asettelu, etäisyydet) tallentuu välittömästi selaimen muistiin. Tallennus tapahtuu automaattisesti taustalla.</p><h3 class=\"h5 mt-6 mb-3\">Miten nollata asetukset?</h3><p class=\"text-mid\">Esikatselun alla on <strong>Nollaa ulkoasu</strong> -painike. Vahvistus palauttaa kaikki tiedot ja asetukset oletusarvoihin. Toimintoa ei voi peruuttaa.</p><h3 class=\"h5 mt-6 mb-3\">Konfiguraation vienti ja tuonti</h3><p class=\"text-mid\">Esikatselun alla on kaksi lisäpainiketta: <strong>Vie asetukset</strong> ja <strong>Tuo asetukset</strong>. Vienti tallentaa kaiken konfiguraation JSON-tiedostoon. Tuonti lataa aiemmin tallennetun konfiguraation.</p>"
+      "title": "Vinkkejä tehokkaaseen sähköpostin allekirjoitukseen",
+      "html": "<p class=\"text-mid\">Hyvä sähköpostin alatunniste on selkeä, johdonmukainen ja helppolukuinen. Tärkeimmät suositukset:</p><h3 class=\"h5 mt-6 mb-3\">Ole ytimekäs</h3><p class=\"text-mid\">Neljästä seitsemään riviä yhteystietoja riittää. Liian pitkä allekirjoitus työntää viestin sisällön alas, erityisesti mobiilissa.</p><h3 class=\"h5 mt-6 mb-3\">Korkeintaan kaksi–kolme väriä</h3><p class=\"text-mid\">Liian monet värit antavat sotkuisen vaikutelman. Valitse yksi korostusväri brändisi mukaan ja pidä loput tummissa, neutraaleissa sävyissä.</p><h3 class=\"h5 mt-6 mb-3\">Sisällytä aina toimintapainike</h3><p class=\"text-mid\">CTA-painike tekee jokaisesta sähköpostista viestintämahdollisuuden. Linkitä se kalenteriin, portfolioon tai yhteydenottolomakkeeseen.</p><h3 class=\"h5 mt-6 mb-3\">Valitse sähköpostiturvallisia fontteja</h3><p class=\"text-mid\">Generaattori tarjoaa viisi turvallista fonttia: Arial, Verdana, Tahoma, Trebuchet MS ja Georgia.</p><h3 class=\"h5 mt-6 mb-3\">Isännöi kuvat omalla domainillasi</h3><p class=\"text-mid\">Jos lisäät logon tai profiilikuvan, käytä kuvaa omalla verkkosivustollasi tai luotettavalla CDN:llä. Vältä linkinlyhentäjiä, Google Drivea tai Dropboxia.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Automaattinen tallennus ja palautus",
+      "html": "<p class=\"text-mid\">Luoja tallentaa työsi automaattisesti selaimen muistiin (localStorage). Kun päivität sivun tai palaat myöhemmin, kaikki tiedot ja asetukset ovat tallella.</p><h3 class=\"h5 mt-6 mb-3\">Palauttaminen</h3><p class=\"text-mid\">Esikatselun alla on painike <strong>Palauta ulkoasu</strong>. Vahvistuksen jälkeen kaikki palautetaan oletusarvoihin.</p><h3 class=\"h5 mt-6 mb-3\">Asetusten vienti ja tuonti</h3><p class=\"text-mid\">Painikkeet <strong>Vie asetukset</strong> ja <strong>Tuo asetukset</strong> mahdollistavat täydellisen konfiguraation tallentamisen ja palauttamisen JSON-tiedostona.</p>"
     },
     {
       "type": "gap",
@@ -207,23 +219,23 @@
     {
       "type": "sectionSteps",
       "title": "Näin kopioit allekirjoituksen Gmailiin tai Outlookiin",
-      "description": "Kun allekirjoitus on valmis, sen lisääminen sähköpostiohjelmaan vaatii vain muutaman vaiheen:",
+      "description": "Kun alatunniste on valmis, seuraa näitä kolmea vaihetta:",
       "grid": "three",
       "items": [
         {
           "icon": "RiClipboardLine",
           "title": "1. Kopioi koodi",
-          "description": "Copy signature -painike kopioi allekirjoituksen leikepöydälle muotoiltuna HTML:nä, valmiina liitettäväksi."
+          "description": "Napsauta Kopioi allekirjoitus (Gmail / Outlook). Allekirjoitus kopioidaan muotoiltuna HTML:nä."
         },
         {
           "icon": "RiSettings3Line",
           "title": "2. Avaa allekirjoitusasetukset",
-          "description": "Gmailissa: Settings > See all settings > Signature. Outlookissa: File > Options > Mail > Signatures."
+          "description": "Gmailissa: Asetukset → Kaikki asetukset → Allekirjoitus. Outlookissa: Tiedosto → Asetukset → Sähköposti → Allekirjoitukset."
         },
         {
           "icon": "RiSaveLine",
           "title": "3. Liitä ja tallenna",
-          "description": "Käytä allekirjoituskentässä Ctrl+V (Windows) tai Cmd+V (Mac). Allekirjoitus näkyy kaikkine väreineen ja muotoiluineen. Tallenna muutokset."
+          "description": "Allekirjoituskentässä paina Ctrl + V (Windows) tai Cmd + V (Mac). Allekirjoitus näkyy kaikkine väreineen. Tallenna."
         }
       ]
     },
@@ -232,38 +244,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "Allekirjoituksen esikatselu ja vientivaihtoehdot",
-      "html": "<p class=\"text-mid\">Esikatselupaneeli näkyy editorin oikealla puolella ja päivittyy automaattisesti jokaisen muutoksen yhteydessä. Esikatselu on kiinnitetty näyttöön (sticky), joten se on näkyvissä myös vieritettäessä.</p><h3 class=\"h5 mt-6 mb-3\">Esikatselun taustan vaihtaminen</h3><p class=\"text-mid\">Esikatselun yläpuolella on kolme painiketta taustan vaihtamiseen: <strong>Vaalea</strong> (oletusharmaa tausta), <strong>Tumma</strong> (tumma tausta luettavuuden tarkistamiseen) ja <strong>Ruudukko</strong> (ruudukkokuvio läpinäkyvyyden ja reunojen näkemiseen).</p><h3 class=\"h5 mt-6 mb-3\">Toimintapainikkeet</h3><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Kopioi allekirjoitus (Gmail / Outlook)</strong> – kopioi allekirjoituksen muotoiltuna HTML:nä leikepöydälle.</li><li><strong>Kopioi HTML-koodi</strong> – kopioi raaka HTML-koodin leikepöydälle.</li><li><strong>Lataa HTML-tiedostona</strong> – tallentaa allekirjoituskoodin .html-tiedostona.</li><li><strong>Näytä HTML-koodi</strong> – avaa modaalin lähdekoodilla.</li><li><strong>Vie asetukset</strong> – tallentaa koko konfiguraation JSON-tiedostoon.</li><li><strong>Tuo asetukset</strong> – lataa konfiguraation JSON-tiedostosta.</li><li><strong>Nollaa ulkoasu</strong> – palauttaa kaikki tiedot ja asetukset oletusarvoihin (vahvistuksen jälkeen).</li></ul>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
-      "title": "Kenelle sähköpostiallekirjoitusgeneraattori on tarkoitettu?",
+      "title": "Kenelle tämä generaattori on tarkoitettu?",
+      "description": "Työkalu on hyödyllinen kaikille, jotka lähettävät liiketoimintasähköposteja:",
       "grid": "two",
       "items": [
         {
           "icon": "RiBriefcaseLine",
           "title": "Yrittäjät ja freelancerit",
-          "description": "Ammattimainen allekirjoitus jokaisessa viestissä ilman graafisen suunnittelijan tarvetta."
+          "description": "Ammattimainen allekirjoitus jokaisessa viestissä ilman suunnittelijaa tai teknistä osaamista."
         },
         {
           "icon": "RiTeamLine",
           "title": "Yritystiimit",
-          "description": "Jokainen työntekijä luo allekirjoituksen samalla tyylillä. Yhtenäinen identiteetti koko yrityksessä."
+          "description": "Jokainen tiimin jäsen luo oman allekirjoituksensa samalla tyylillä. Vie JSON-konfiguraatio tiimin yhtenäistämiseksi."
         },
         {
           "icon": "RiHandCoinLine",
-          "title": "Myyjat",
-          "description": "CTA-painike linkillä kalenteriin tai tarjoukseen lisää varattujen tapaamisten todennäköisyyttä."
+          "title": "Myyjät",
+          "description": "CTA-painike kalenteriin tai tarjoukseen muuttaa jokaisen sähköpostin liiketoimintamahdollisuudeksi."
         },
         {
           "icon": "RiScales3Line",
-          "title": "Lakimiehet, tilintarkastajat, lääkärit",
-          "description": "Mahdollisuus lisätä oikeudellisia lausekkeita, lisenssitietoja tai muita toimialakohtaisia tietoja."
+          "title": "Lakimiehet, kirjanpitäjät, lääkärit",
+          "description": "Lisää vastuuvapauslauseke, lisenssitunnus, Y-tunnus tai muut ammatilliset vaatimukset."
         }
       ]
     },
@@ -273,23 +277,23 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Mikä tekee tästä sähköpostiallekirjoitusgeneraattorista erityisen?",
+      "title": "Mikä tekee tästä luojasta erityisen?",
       "grid": "three",
       "items": [
         {
           "icon": "RiInfinityLine",
           "title": "Kahdeksan asettelua",
-          "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist ja bottom bar."
+          "description": "Standardi, Yläpalkki, Tunnisteet vasemmalla, Keskitetty, Kompakti, Kaksi saraketta, Minimalistinen ja Alapalkki."
         },
         {
           "icon": "RiUserLine",
-          "title": "Automaattinen tallennus selaimessa",
-          "description": "Jokainen muutos tallentuu automaattisesti selaimen muistiin. Allekirjoitus säilyy sivun päivittämisen jälkeen."
+          "title": "Automaattinen tallennus",
+          "description": "Jokainen muutos tallentuu automaattisesti selaimeen."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Konfiguraation vienti ja tuonti",
-          "description": "Koko allekirjoituksen konfiguraatio voidaan viedä JSON-tiedostona ja jakaa kollegoille."
+          "title": "Vienti ja tuonti",
+          "description": "Tallenna koko konfiguraatio JSON-tiedostona ja jaa kollegoille."
         },
         {
           "icon": "RiAppsLine",
@@ -298,28 +302,23 @@
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Edistynyt mukauttaminen",
-          "description": "Avatarin muoto ja koko, viivojen tyylittely, yksilölliset värit ja tekstikoot."
-        },
-        {
-          "icon": "RiFileCodeLine",
-          "title": "Useita vientivaihtoehtoja",
-          "description": "HTML-kopiointi, tiedoston lataus, lähdekoodin esikatselu, JSON-konfiguraation vienti/tuonti."
+          "title": "Yksityiskohtainen muokkaus",
+          "description": "Avatarin muoto ja koko, viivatyyli, yksilölliset värit ja koot, allekirjoituksen reunus."
         },
         {
           "icon": "RiShieldCheckLine",
-          "title": "Yksityisyys",
-          "description": "Tietoja ei lähetetä palvelimelle. Generaattori toimii kokonaan selaimessa."
+          "title": "Täysi yksityisyys",
+          "description": "Tietosi eivät koskaan poistu selaimesta. Generaattori toimii kokonaan laitteellasi."
         },
         {
           "icon": "RiMailCheckLine",
           "title": "Yhteensopivuus",
-          "description": "Luotu HTML-koodi toimii Gmailissa, Outlookissa, Apple Mailissa ja Thunderbirdissä."
+          "description": "Generoitu HTML-koodi toimii Gmailissa, Outlookissa, Apple Mailissa ja Thunderbirdissä."
         },
         {
           "icon": "RiEyeLine",
           "title": "Reaaliaikainen esikatselu",
-          "description": "Jokainen muutos näkyy välittömästi vaalealla, tummalla tai ruudukkotaustalla."
+          "description": "Jokainen muutos näkyy heti vaalealla, tummalla tai ruutukuviotaustalla."
         }
       ]
     },
@@ -329,24 +328,48 @@
     },
     {
       "type": "faq",
-      "title": "Usein kysytyt kysymykset sähköpostiallekirjoitusgeneraattorista",
+      "title": "Usein kysyttyä sähköpostin allekirjoitus generaattorista",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Toimiiko allekirjoitus Gmailissa, Outlookissa ja Apple Mailissa?",
-          "answer": "Kyllä. Työkalun luoma allekirjoitus käyttää HTML-taulukoita, jotka näkyvät oikein kaikissa suosituissa sähköpostiohjelmissa: Gmail, Outlook (työpöytä ja verkko), Apple Mail, Thunderbird."
+          "question": "Miten lisään allekirjoituksen Gmailiin?",
+          "answer": "Napsauta Kopioi allekirjoitus (Gmail / Outlook). Avaa Gmail → Asetukset → Kaikki asetukset → Allekirjoitus. Liitä Ctrl + V (tai Cmd + V). Värit, linkit ja kuvakkeet säilyvät automaattisesti.",
+          "answerSchemaText": "Kopioi allekirjoitus, Gmail → Asetukset → Allekirjoitus, Ctrl+V."
         },
         {
-          "question": "Voinko lisätä yrityksen logon?",
-          "answer": "Kyllä. Details-välilehdellä syötä kuvan URL (logo tai profiilikuva). Kuvan tulee olla neliömäinen (vähintään 120x120 px) ja julkisesti saatavilla internetissä."
+          "question": "Toimiiko se Outlookissa?",
+          "answer": "Kyllä. Outlook Desktop: Tiedosto → Asetukset → Sähköposti → Allekirjoitukset → Liitä. Outlook Web: Asetukset → Sähköposti → Kirjoita ja vastaa → Allekirjoitus.",
+          "answerSchemaText": "Kyllä. Desktop: Tiedosto → Asetukset → Allekirjoitukset. Web: Asetukset → Sähköposti → Allekirjoitus."
         },
         {
-          "question": "Miten allekirjoitus kopioidaan sähköpostiohjelmaan?",
-          "answer": "Esikatselun alla oleva Copy signature -painike kopioi allekirjoituksen leikepöydälle muotoiltuna HTML:nä. Gmailin tai Outlookin allekirjoitusasetuksissa käytä Ctrl+V (Windows) tai Cmd+V (Mac)."
+          "question": "Mitä virallisia tietoja allekirjoituksessani pitää olla?",
+          "answer": "Suomessa yritysten on ilmoitettava Y-tunnus, toiminimi ja kotipaikka. Osakeyhtiöiden tulisi ilmoittaa myös osakepääoma. Toiminimet — Y-tunnus ja osoite. Katso lakisääteiset vaatimukset -osio tällä sivulla.",
+          "answerSchemaText": "Y-tunnus, toiminimi, kotipaikka. Oy: osakepääoma. Tmi: Y-tunnus, osoite. Katso lakivaatimukset."
         },
         {
-          "question": "Voinko käyttää generaattoria koko tiimin allekirjoitusten luomiseen?",
-          "answer": "Kyllä. Generaattori ei vaadi kirjautumista tai rekisteröitymistä. Jokainen tiimin jäsen voi avata työkalun, täyttää omat tietonsa ja kopioida valmiin allekirjoituksen. Määritykset voidaan myös viedä JSON-tiedostona ja jakaa kollegoille."
+          "question": "Talletetaanko tietoni?",
+          "answer": "Kaikki tiedot pysyvät selaimen muistissa (localStorage). Mitään ei lähetetä palvelimelle. Voit viedä ja tuoda asetukset.",
+          "answerSchemaText": "Paikallisesti selaimessa. Ei palvelinta. Vienti/tuonti mahdollista."
+        },
+        {
+          "question": "Voinko lisätä sosiaalisen median linkkejä?",
+          "answer": "Kyllä. Generaattori tukee kahtatoista alustaa: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram ja Pinterest.",
+          "answerSchemaText": "12 alustaa: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest."
+        },
+        {
+          "question": "Kopiointipainike on epäaktiivinen — miksi?",
+          "answer": "Kopiointia varten täytyy täyttää vähintään kaksi kenttää: nimi ja sähköpostiosoite.",
+          "answerSchemaText": "Nimi ja sähköpostiosoite on täytettävä."
+        },
+        {
+          "question": "Miten teen allekirjoituksesta mobiiliystävällisen?",
+          "answer": "Pidä allekirjoitus lyhyenä (neljästä seitsemään riviä), käytä vakiotekstikokooa (14 px) ja valitse kapeille näytöille sopiva asettelu. Standardi ja Kompakti ovat parhaat vaihtoehdot.",
+          "answerSchemaText": "Lyhyt, 14 px, Standardi tai Kompakti asettelu."
+        },
+        {
+          "question": "Missä logoni pitäisi isännöidä?",
+          "answer": "Omalla verkkosivustollasi tai luotettavalla CDN:llä. Vältä Google Drivea, Dropboxia tai linkinlyhentäjiä. Kuvan on oltava neliö, vähintään 120 × 120 px, JPG-, PNG- tai WebP-muodossa.",
+          "answerSchemaText": "Omalla sivustollasi tai CDN:llä. Neliö, min. 120 × 120 px, JPG/PNG/WebP."
         }
       ]
     },
@@ -357,10 +380,10 @@
     {
       "type": "contactForm",
       "title": "Auta meitä parantamaan työkalujamme",
-      "description": "Onko sinulla idea uudelle ominaisuudelle, löysitkö virheen tai haluatko ehdottaa toista työkalua, joka helpottaisi työtäsi? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
-      "imageSrc": "/assets/tools/free-html-email-signature-generator/ilmainen-sahkopostiallekirjoitus-generaattori-fi.webp",
-      "imageAlt": "Sähköpostiallekirjoitusgeneraattori – Arteon",
-      "defaultSubject": "Feedback: Sähköpostiallekirjoitusgeneraattori"
+      "description": "Onko sinulla idea uuteen ominaisuuteen, löysitkö virheen tai haluatko ehdottaa toista työkalua? Kirjoita meille — vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/ilmainen-sahkopostin-allekirjoitus-generaattori-fi.webp",
+      "imageAlt": "Sähköpostin allekirjoitus generaattori – Arteon",
+      "defaultSubject": "Palaute: Sähköpostin allekirjoitus generaattori"
     },
     {
       "type": "gap",

@@ -29,13 +29,15 @@
         "E-Mail-Signatur erstellen kostenlos",
         "HTML-Signatur-Generator",
         "Gmail-Signatur-Generator",
-        "Outlook-Signatur-Generator",
+        "Outlook-Signatur erstellen",
         "Professionelle E-Mail-Signatur",
-        "E-Mail-Fußzeile erstellen"
+        "E-Mail-Fußzeile erstellen",
+        "Geschäftliche E-Mail-Signatur Generator",
+        "E-Mail-Signatur-Ersteller"
       ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Kostenloser HTML-E-Mail-Signatur-Generator. Fügen Sie Kontaktdaten, CTA-Link und Social-Media-Profile hinzu, kopieren Sie dann den fertigen Signaturcode in Gmail, Outlook und andere E-Mail-Clients.",
+      "description": "Kostenloser HTML-E-Mail-Signatur-Generator und -Ersteller. Fügen Sie Kontaktdaten, CTA-Link und Social-Media-Profile hinzu. Kopieren Sie den fertigen Signaturcode in Gmail, Outlook, Apple Mail oder andere E-Mail-Clients. Ohne Anmeldung.",
       "featureList": [
         "Kontaktdaten (Name, Position, Unternehmen)",
         "Telefon, E-Mail und Website-URL",
@@ -84,8 +86,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Warum eine professionelle E-Mail-Signatur?",
-      "html": "<p class=\"text-mid\">Eine E-Mail-Signatur ist mehr als nur Kontaktdaten am Ende einer Nachricht. Sie enthält Ihren Namen, Ihre Position, Ihr Unternehmen, Kontaktinformationen und optional einen CTA-Link oder Social-Media-Profile. Eine konsistente, professionell gestaltete Signatur stärkt den Markenauftritt in jeder gesendeten E-Mail.</p><p class=\"text-mid mt-3\">Im Durchschnitt versendet ein Büroangestellter 30–40 E-Mails pro Tag. Jede dieser E-Mails ist eine Gelegenheit, Ihre Marke zu präsentieren, einen CTA-Link zu platzieren und dem Empfänger den direkten Zugang zu Ihren Social-Media-Profilen zu ermöglichen. Mit diesem Tool erstellen Sie eine Signatur, die diesen Anforderungen gerecht wird.</p>",
+      "title": "Warum brauchen Sie eine professionelle E-Mail-Signatur?",
+      "html": "<p class=\"text-mid\">Eine E-Mail-Signatur ist ein kurzer Textblock am Ende jeder Nachricht, die Sie versenden. Manche nennen sie E-Mail-Fußzeile oder Signaturblock. Sie zeigt Ihren Namen, Ihre Position, Ihr Unternehmen und Ihre Kontaktdaten. Viele Signaturen enthalten auch Links zur Website, zum Terminkalender oder zu Social-Media-Profilen.</p>\n<p class=\"text-mid mt-3\">Im Durchschnitt versendet ein Büroangestellter 30 bis 40 E-Mails pro Tag. Jede dieser Nachrichten ist eine Gelegenheit, Ihre Marke zu präsentieren und dem Empfänger den Zugang zu Ihren Kontaktdaten zu erleichtern. Eine gut gestaltete E-Mail-Fußzeile spart dem Empfänger Zeit — er muss nicht in alten Nachrichten nach Ihrer Telefonnummer suchen.</p>\n<p class=\"text-mid mt-3\">Darüber hinaus ist eine geschäftliche E-Mail-Signatur in Deutschland, Österreich und der Schweiz nicht nur eine Frage des guten Stils. Unternehmen sind gesetzlich verpflichtet, bestimmte Angaben in geschäftlichen E-Mails zu machen. Die Signatur ist der einfachste Ort, um diese Pflichtangaben unterzubringen.</p>",
       "imageSrc": "/assets/tools/free-html-email-signature-generator/kostenloser-e-mail-signatur-generator-de.webp",
       "imageAlt": "E-Mail-Signatur-Generator – Arteon"
     },
@@ -95,29 +97,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "So verwenden Sie den Signatur-Generator",
-      "description": "Die Erstellung einer Signatur dauert weniger als 5 Minuten:",
+      "title": "So erstellen Sie eine E-Mail-Signatur in vier Schritten",
+      "description": "Die Erstellung einer professionellen E-Mail-Fußzeile dauert weniger als fünf Minuten:",
       "grid": "four",
       "items": [
         {
           "icon": "RiMailLine",
           "title": "1. Daten eingeben",
-          "description": "Füllen Sie Name, Position, Unternehmen, Kontaktdaten und optional Social-Media-Links aus."
+          "description": "Tragen Sie Name, Position, Unternehmen, Kontaktdaten und optional Social-Media-Links ein."
         },
         {
           "icon": "RiPaletteLine",
           "title": "2. Design anpassen",
-          "description": "Wählen Sie Layout, Farbschema, Schriftart und passen Sie Abstände und Textstile an."
+          "description": "Wählen Sie ein Layout, ein Farbschema, eine Schriftart und passen Sie Abstände und Textstile an."
         },
         {
           "icon": "RiLinksLine",
           "title": "3. CTA und Social Media",
-          "description": "Fügen Sie optional einen Aktionslink und Social-Media-Profile hinzu."
+          "description": "Fügen Sie optional einen Aktionsbutton und Links zu Ihren Social-Media-Profilen hinzu."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Kopieren",
-          "description": "Kopieren Sie die Signatur und fügen Sie sie in Gmail, Outlook oder einen anderen Client ein."
+          "title": "4. Kopieren und einfügen",
+          "description": "Kopieren Sie die Signatur und fügen Sie sie in Gmail, Outlook oder einen anderen E-Mail-Client ein."
         }
       ]
     },
@@ -126,10 +128,9 @@
       "variant": "line"
     },
     {
-      "type": "sectionDemo",
-      "title": "Was kann die Signatur enthalten?",
-      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-primary-light0 text-sm!\">👤</span><div class=\"text-mid text-sm!\"><strong>Persönliche Daten</strong> - Name, Position, Unternehmen, Abteilung</div></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-primary-light0 text-sm!\">📱</span><div class=\"text-mid text-sm!\"><strong>Kontaktdaten</strong> — Telefon, E-Mail, Website, Postadresse</div></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-primary-light0 text-sm!\">🖼️</span><div class=\"text-mid text-sm!\"><strong>Bilder</strong> - Profilbild und/oder Firmenlogo (URL)</div></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-primary-light0 text-sm!\">🌐</span><div class=\"text-mid text-sm!\"><strong>Social Media</strong> - 12 Plattformen mit automatischen Icons</div></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-primary-light0 text-sm!\">🔗</span><div class=\"text-mid text-sm!\"><strong>CTA-Link</strong> - Aktionsbutton (z. B. Termin vereinbaren)</div></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-primary-light0 text-sm!\">🛡️</span><div class=\"text-mid text-sm!\"><strong>Disclaimer</strong> - Rechtlicher Hinweis / DSGVO-Information</div></div></div>",
-      "html": "<p class=\"text-mid mb-4\">Der Signatur-Generator bietet umfangreiche Anpassungsmöglichkeiten für alle Elemente einer professionellen E-Mail-Signatur:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Persönliche Daten</strong> - Name, Position, Unternehmen und Abteilung.</li><li><strong>Kontaktdaten</strong> — Telefon, E-Mail, Website und Postadresse.</li><li><strong>Visuelle Elemente</strong> - Profilbild, Firmenlogo, Farbschema und Schriftart.</li><li><strong>Social Media</strong> - Links zu 12 Plattformen mit automatisch generierten Icons.</li><li><strong>CTA-Button</strong> - optionaler Aktionslink mit benutzerdefiniertem Text und URL.</li><li><strong>Disclaimer</strong> - rechtlicher Hinweis in kleinerer Schrift am Ende der Signatur.</li></ul>"
+      "type": "sectionInfo",
+      "title": "Pflichtangaben in geschäftlichen E-Mails — Deutschland, Österreich, Schweiz",
+      "html": "<p class=\"text-mid\">In Deutschland, Österreich und der Schweiz müssen geschäftliche E-Mails bestimmte Angaben enthalten. Diese Pflichtangaben entsprechen weitgehend den Anforderungen an das Impressum einer Website. Eine E-Mail-Signatur ist der einfachste Weg, diese Vorschriften zu erfüllen.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">Deutschland — GmbH (§35a GmbHG)</h3>\n<p class=\"text-mid\">Jede geschäftliche E-Mail einer GmbH muss folgende Angaben enthalten:</p>\n<ul class=\"text-mid mt-2 list-disc space-y-1 pl-6\">\n<li>Vollständiger Firmenname mit Rechtsformzusatz (z. B. Musterfirma GmbH)</li>\n<li>Sitz der Gesellschaft (Ort der Registrierung)</li>\n<li>Registergericht und HRB-Nummer (z. B. Amtsgericht München, HRB 12345)</li>\n<li>Name aller Geschäftsführer</li>\n<li>Falls vorhanden: Vorsitzender des Aufsichtsrats</li>\n</ul>\n<p class=\"text-mid mt-3\">Verwenden Sie das Feld <strong>Formale Daten</strong> im Generator, um diese Angaben einzutragen. Sie erscheinen dann automatisch in jeder Signatur.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">Deutschland — Einzelkaufleute und Personengesellschaften (§37a HGB)</h3>\n<p class=\"text-mid\">Für eingetragene Kaufleute (e.K.), OHG und KG gelten ähnliche Regeln. Pflichtangaben sind:</p>\n<ul class=\"text-mid mt-2 list-disc space-y-1 pl-6\">\n<li>Firma (Handelsname)</li>\n<li>Rechtsformzusatz</li>\n<li>Sitz der Gesellschaft</li>\n<li>Registergericht und Handelsregisternummer</li>\n</ul>\n\n<h3 class=\"h5 mt-6 mb-3\">Deutschland — Aktiengesellschaft (§80 AktG)</h3>\n<p class=\"text-mid\">Für eine AG kommen weitere Angaben hinzu: die Namen aller Vorstandsmitglieder, der Vorsitzende des Aufsichtsrats sowie das Grundkapital und der Gesamtbetrag der ausstehenden Einlagen.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">Deutschland — Freiberufler und Kleinunternehmer</h3>\n<p class=\"text-mid\">Freiberufler ohne Handelsregistereintrag sind nicht an §35a GmbHG oder §37a HGB gebunden. Dennoch ist es ratsam, Name, Adresse und Steuernummer (oder USt-IdNr.) in der E-Mail-Fußzeile anzugeben. Dies schafft Vertrauen und erfüllt die Anforderungen der E-Commerce-Richtlinie der EU.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">Österreich — §14 UGB</h3>\n<p class=\"text-mid\">In Österreich gelten vergleichbare Vorschriften nach dem Unternehmensgesetzbuch (UGB). Pflichtangaben in geschäftlichen E-Mails:</p>\n<ul class=\"text-mid mt-2 list-disc space-y-1 pl-6\">\n<li>Firma (Name des Unternehmens)</li>\n<li>Rechtsform</li>\n<li>Sitz des Unternehmens</li>\n<li>Firmenbuchnummer und Firmenbuchgericht</li>\n</ul>\n<p class=\"text-mid mt-3\">Zusätzlich empfiehlt es sich, die UID-Nummer (Umsatzsteuer-Identifikationsnummer) anzugeben.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">Schweiz</h3>\n<p class=\"text-mid\">Die Schweiz hat keine so strengen gesetzlichen Anforderungen an E-Mail-Signaturen wie Deutschland oder Österreich. Das Obligationenrecht (OR) und das Bundesgesetz gegen den unlauteren Wettbewerb (UWG) empfehlen jedoch, den Firmennamen, die Rechtsform und die Unternehmens-Identifikationsnummer (UID) in geschäftlichen E-Mails anzugeben. Für Unternehmen, die mit EU-Kunden arbeiten, ist es sinnvoll, die Signatur an die strengeren EU-Vorschriften anzupassen.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">Bußgelder bei Verstößen</h3>\n<p class=\"text-mid\">In Deutschland können fehlende Pflichtangaben als Ordnungswidrigkeit geahndet werden. Das Registergericht kann ein Zwangsgeld von bis zu 5.000 EUR verhängen. Darüber hinaus können Wettbewerber Abmahnungen aussprechen, die zusätzliche Kosten verursachen. Eine vollständige E-Mail-Signatur mit allen Pflichtangaben ist daher nicht nur eine Formalität, sondern ein wichtiger Schutz vor rechtlichen Problemen.</p>\n\n<h3 class=\"h5 mt-6 mb-3\">DSGVO und Datenschutz</h3>\n<p class=\"text-mid\">Wenn Ihre E-Mail-Signatur personenbezogene Daten enthält (z. B. ein Foto oder eine private Telefonnummer), gelten die Bestimmungen der DSGVO. Unternehmen, die als Verantwortliche im Sinne der DSGVO agieren, sollten einen kurzen Datenschutzhinweis oder einen Link zur Datenschutzerklärung in der Signatur ergänzen. Der Generator bietet dafür das Feld <strong>Disclaimer / DSGVO</strong> an.</p>"
     },
     {
       "type": "gap",
@@ -137,8 +138,27 @@
     },
     {
       "type": "sectionInfo",
+      "title": "Pflichtangaben richtig eintragen — Beispiele für das Feld Formale Daten",
+      "html": "<p class=\"text-mid\">Das Feld <strong>Formale Daten</strong> im Tab Daten ist ein mehrzeiliges Textfeld für Ihre gesetzlichen Pflichtangaben. Hier sind Beispiele für verschiedene Rechtsformen:</p>\n<ul class=\"text-mid mt-3 list-disc space-y-3 pl-6\">\n<li><strong>GmbH</strong> — Musterfirma GmbH | Sitz: Berlin | AG Berlin, HRB 12345 | Geschäftsführer: Max Mustermann</li>\n<li><strong>AG</strong> — Muster AG | Sitz: München | AG München, HRB 67890 | Vorstand: Max Mustermann (Vors.), Erika Musterfrau | AR-Vorsitzender: Dr. Hans Beispiel</li>\n<li><strong>e.K.</strong> — Max Mustermann e.K. | Sitz: Hamburg | AG Hamburg, HRA 11111</li>\n<li><strong>GmbH &amp; Co. KG</strong> — Musterfirma GmbH &amp; Co. KG | Sitz: Köln | AG Köln, HRA 22222 | Komplementärin: Musterfirma Verwaltungs-GmbH, AG Köln, HRB 33333</li>\n<li><strong>Österreichische GmbH</strong> — Musterfirma GmbH | Sitz: Wien | FN 123456a, Handelsgericht Wien | UID: ATU12345678</li>\n<li><strong>Schweizer AG</strong> — Muster AG | Sitz: Zürich | CHE-123.456.789 (UID)</li>\n<li><strong>Freiberufler</strong> — Max Mustermann | USt-IdNr.: DE123456789 | Musterstraße 1, 10115 Berlin</li>\n</ul>\n<p class=\"text-mid mt-4\">Tragen Sie Ihre Angaben in das Feld <strong>Formale Daten</strong> ein. Der Text erscheint am Ende der Signatur, direkt vor dem rechtlichen Hinweis.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionDemo",
       "title": "Welche Daten kann die Signatur enthalten?",
-      "html": "<p class=\"text-mid\">Im Tab <strong>Daten</strong> finden Sie alle Felder, die Sie ausfüllen können. Nur zwei Felder sind erforderlich: Name und E-Mail-Adresse. Alle anderen Felder sind optional und erscheinen nur in der Signatur, wenn sie ausgefüllt sind.</p><h3 class=\"h5 mt-6 mb-3\">Felder im Tab Daten</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Zeile über dem Namen</strong> – zusätzlicher Text über dem Namen, z. B. Firmenname oder Slogan.</li><li><strong>Avatar / Logo (Bild-URL)</strong> – URL zu einem Profilbild oder Firmenlogo. Das Bild sollte quadratisch (min. 120×120 px) und öffentlich zugänglich sein. Nach Eingabe der URL können Sie Form (rund, abgerundet, quadratisch) und Größe (40, 56 oder 72 px) wählen.</li><li><strong>Name</strong> – Pflichtfeld. Ihr vollständiger Name.</li><li><strong>Tag neben dem Namen</strong> – kurzer Text neben dem Namen, z. B. Pronomen oder Kurzbezeichnung.</li><li><strong>Position</strong> – Ihre Rolle im Unternehmen.</li><li><strong>Unternehmen</strong> – Name der Organisation.</li><li><strong>Zusätzliche Zeile</strong> – kurze Beschreibung Ihrer Tätigkeit oder Ihres Angebots.</li><li><strong>E-Mail</strong> – Pflichtfeld. Ihre geschäftliche E-Mail-Adresse.</li><li><strong>Telefon</strong> – Kontaktnummer in beliebigem Format.</li><li><strong>Website</strong> – vollständige URL Ihrer Website (https://...).</li><li><strong>Adresse</strong> – Firmenadresse (Straße, Stadt, PLZ).</li><li><strong>Formale Daten</strong> – USt-IdNr., Handelsregisternummer oder branchenspezifische Pflichtangaben.</li></ul>"
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-primary-light0 text-sm!\">👤</span><div class=\"text-mid text-sm!\"><strong>Persönliche Daten</strong> — Name, Position, Unternehmen, Abteilung</div></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-primary-light0 text-sm!\">📱</span><div class=\"text-mid text-sm!\"><strong>Kontaktdaten</strong> — Telefon, E-Mail, Website, Postadresse</div></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-primary-light0 text-sm!\">🖼️</span><div class=\"text-mid text-sm!\"><strong>Bilder</strong> — Profilbild und/oder Firmenlogo (URL)</div></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-primary-light0 text-sm!\">🌐</span><div class=\"text-mid text-sm!\"><strong>Social Media</strong> — 12 Plattformen mit automatischen Icons</div></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-primary-light0 text-sm!\">🔗</span><div class=\"text-mid text-sm!\"><strong>CTA-Link</strong> — Aktionsbutton (z. B. Termin vereinbaren)</div></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-primary-light0 text-sm!\">🛡️</span><div class=\"text-mid text-sm!\"><strong>Pflichtangaben &amp; Disclaimer</strong> — Handelsregister, USt-IdNr., DSGVO-Hinweis</div></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Der Signatur-Generator bietet umfangreiche Möglichkeiten zur Gestaltung aller Elemente einer geschäftlichen E-Mail-Signatur:</p>\n<ul class=\"text-mid list-disc space-y-2 pl-5\">\n<li><strong>Persönliche Daten</strong> — Name, Position, Unternehmen und Abteilung.</li>\n<li><strong>Kontaktdaten</strong> — Telefon, E-Mail, Website und Postadresse.</li>\n<li><strong>Visuelle Elemente</strong> — Profilbild, Firmenlogo, Farbschema und Schriftart.</li>\n<li><strong>Social Media</strong> — Links zu 12 Plattformen mit automatisch generierten Icons.</li>\n<li><strong>CTA-Button</strong> — optionaler Aktionslink mit eigenem Text und URL.</li>\n<li><strong>Pflichtangaben</strong> — Handelsregisternummer, USt-IdNr. und weitere gesetzlich vorgeschriebene Daten.</li>\n<li><strong>Disclaimer</strong> — rechtlicher Hinweis (z. B. Vertraulichkeit, DSGVO) in kleinerer Schrift.</li>\n</ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Welche Felder stehen im Tab Daten zur Verfügung?",
+      "html": "<p class=\"text-mid\">Im Tab <strong>Daten</strong> finden Sie alle Felder, die Sie ausfüllen können. Nur zwei sind Pflichtfelder: Name und E-Mail-Adresse. Alle anderen Felder sind optional. Leere Felder erscheinen nicht in der Signatur.</p>\n<h3 class=\"h5 mt-6 mb-3\">Übersicht der Felder</h3>\n<ul class=\"text-mid list-disc space-y-2 pl-6\">\n<li><strong>Zeile über dem Namen</strong> — zusätzlicher Text über dem Namen, z. B. Firmenname oder Slogan.</li>\n<li><strong>Avatar / Logo (Bild-URL)</strong> — URL zu einem Profilbild oder Firmenlogo. Das Bild sollte quadratisch sein (mindestens 120 × 120 Pixel) und öffentlich zugänglich. Nach Eingabe der URL können Sie die <strong>Form</strong> (rund, abgerundet, quadratisch) und die <strong>Größe</strong> (klein — 40 px, mittel — 56 px, groß — 72 px) wählen.</li>\n<li><strong>Name</strong> — Pflichtfeld. Ihr vollständiger Name.</li>\n<li><strong>Tag neben dem Namen</strong> — kurzer Text neben dem Namen, z. B. Pronomen oder Kurzbezeichnung.</li>\n<li><strong>Position</strong> — Ihre Rolle im Unternehmen, z. B. Geschäftsführer, Vertriebsleiter.</li>\n<li><strong>Unternehmen</strong> — Name Ihrer Organisation.</li>\n<li><strong>Zusätzliche Zeile</strong> — kurze Beschreibung Ihrer Tätigkeit oder Ihres Angebots.</li>\n<li><strong>E-Mail</strong> — Pflichtfeld. Ihre geschäftliche E-Mail-Adresse.</li>\n<li><strong>Telefon</strong> — Kontaktnummer in beliebigem Format, z. B. +49 30 12345678.</li>\n<li><strong>Website</strong> — vollständige URL Ihrer Website (muss mit https:// beginnen).</li>\n<li><strong>Adresse</strong> — Geschäftsadresse (Straße, PLZ, Ort).</li>\n<li><strong>Formale Daten</strong> — Handelsregisternummer, USt-IdNr., Geschäftsführer oder andere Pflichtangaben. Dieses Feld ist besonders wichtig für die Einhaltung der gesetzlichen Vorschriften in Deutschland, Österreich und der Schweiz.</li>\n</ul>"
     },
     {
       "type": "gap",
@@ -147,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "CTA-Buttons hinzufügen",
-      "html": "<p class=\"text-mid\">Ein CTA-Button (Call to Action) ist ein klickbares Element, das den Empfänger zu einer bestimmten Seite weiterleitet – z. B. Terminkalender, Kontaktformular oder Angebot. Der Generator unterstützt zwei CTA-Buttons.</p><h3 class=\"h5 mt-6 mb-3\">Hauptbutton</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Öffnen Sie den Tab <strong>Buttons</strong> im Editor.</li><li>Geben Sie den Buttontext ein, z. B. Termin vereinbaren.</li><li>Fügen Sie die Ziel-URL ein (muss mit https:// beginnen).</li></ol><h3 class=\"h5 mt-6 mb-3\">Zusätzlicher Button</h3><p class=\"text-mid\">Optional können Sie einen zweiten Button im Outline-Stil (transparenter Hintergrund mit Rahmen) hinzufügen. Füllen Sie die Felder im Abschnitt <strong>Zusätzlicher Button</strong> analog zum Hauptbutton aus.</p><p class=\"text-mid mt-4\">Wenn beide Felder (Text und Link) leer bleiben, wird der Button nicht angezeigt. Beide Felder müssen ausgefüllt sein, damit der Button erscheint.</p>"
+      "html": "<p class=\"text-mid\">Ein CTA-Button (Call to Action) ist ein klickbares Element, das den Empfänger zu einer Seite Ihrer Wahl weiterleitet. Das kann ein Terminkalender, ein Kontaktformular oder ein Angebot sein. Der Signatur-Ersteller unterstützt zwei CTA-Buttons.</p>\n<h3 class=\"h5 mt-6 mb-3\">Hauptbutton</h3>\n<ol class=\"text-mid list-decimal space-y-2 pl-6\">\n<li>Öffnen Sie den Tab <strong>Buttons</strong>.</li>\n<li>Geben Sie den Buttontext ein, z. B. <em>Termin vereinbaren</em>.</li>\n<li>Fügen Sie die Ziel-URL ein. Die Adresse muss mit https:// beginnen.</li>\n</ol>\n<h3 class=\"h5 mt-6 mb-3\">Zusätzlicher Button</h3>\n<p class=\"text-mid\">Sie können einen zweiten Button im Outline-Stil hinzufügen (transparenter Hintergrund mit Rahmen). Füllen Sie die Felder im Abschnitt <strong>Zusätzlicher Button</strong> auf die gleiche Weise aus.</p>\n<h3 class=\"h5 mt-6 mb-3\">Form der Buttons</h3>\n<p class=\"text-mid\">Am unteren Rand des Tabs finden Sie die Option <strong>Abrundung</strong>. Drei Varianten stehen zur Wahl: Keine (eckig), Leicht (sanft abgerundet) oder Voll (oval).</p>\n<p class=\"text-mid mt-4\">Wenn beide Felder (Text und Link) leer bleiben, wird der Button nicht angezeigt. Beide Angaben sind nötig.</p>"
     },
     {
       "type": "gap",
@@ -156,7 +176,7 @@
     {
       "type": "sectionInfo",
       "title": "Social-Media-Links hinzufügen",
-      "html": "<p class=\"text-mid\">Im Tab <strong>Social Media</strong> können Sie Links zu Ihren Profilen hinzufügen. Der Generator unterstützt zwölf Plattformen: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (ehemals Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram und Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">So funktioniert es</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Öffnen Sie den Tab <strong>Social Media</strong> im Editor.</li><li>Fügen Sie bei jeder Plattform die vollständige Profil-URL ein.</li><li>Füllen Sie nur die Felder aus, die Sie benötigen. Leere Felder erscheinen nicht in der Signatur.</li></ol><h3 class=\"h5 mt-6 mb-3\">Icon-Optionen</h3><p class=\"text-mid\">Aktivieren Sie <strong>Icons neben Plattformnamen anzeigen</strong>, um farbige SVG-Icons statt reiner Textnamen anzuzeigen. Sie können die Icon-Größe (16, 20 oder 24 px) und den Farbmodus (Plattformfarben, Akzentfarbe oder Textfarbe) wählen.</p>"
+      "html": "<p class=\"text-mid\">Im Tab <strong>Social Media</strong> können Sie Links zu Ihren Profilen eintragen. Der Signatur-Ersteller unterstützt zwölf Plattformen: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (ehemals Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram und Pinterest.</p>\n<h3 class=\"h5 mt-6 mb-3\">So funktioniert es</h3>\n<ol class=\"text-mid list-decimal space-y-2 pl-6\">\n<li>Öffnen Sie den Tab <strong>Social Media</strong>.</li>\n<li>Fügen Sie bei jeder Plattform die vollständige Profil-URL ein.</li>\n<li>Füllen Sie nur die Plattformen aus, die Sie nutzen. Leere Felder erscheinen nicht in der Signatur.</li>\n</ol>\n<h3 class=\"h5 mt-6 mb-3\">Icon-Einstellungen</h3>\n<p class=\"text-mid\">Aktivieren Sie <strong>Icons neben Plattformnamen anzeigen</strong>, um farbige SVG-Icons statt reiner Textnamen zu sehen.</p>\n<ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\">\n<li><strong>Icon-Größe</strong> — Klein (16 px), Mittel (20 px) oder Groß (24 px).</li>\n<li><strong>Icon-Farbe</strong> — Plattformfarben (Originalfarben), Akzentfarbe (einheitlich) oder Textfarbe.</li>\n</ul>"
     },
     {
       "type": "gap",
@@ -164,8 +184,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Rechtlicher Hinweis / DSGVO",
-      "html": "<p class=\"text-mid\">Im Tab <strong>Disclaimer / DSGVO</strong> können Sie einen rechtlichen Hinweis einfügen, der in kleinerer Schrift am Ende der Signatur erscheint.</p><h3 class=\"h5 mt-6 mb-3\">Wann ist ein Disclaimer sinnvoll?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Geschäftskorrespondenz</strong> – Vertraulichkeitshinweis und Bitte um Löschung bei Fehlzustellung.</li><li><strong>Branchenanforderungen</strong> – bestimmte Branchen (Recht, Medizin, Finanzen) erfordern spezifische Angaben.</li><li><strong>DSGVO</strong> – Hinweis zur Verarbeitung personenbezogener Daten.</li></ul><h3 class=\"h5 mt-6 mb-3\">Trennlinie</h3><p class=\"text-mid\">Aktivieren Sie <strong>Trennlinie anzeigen</strong>, um eine horizontale Linie zwischen Kontaktdaten und Disclaimer einzufügen. Sie können Stil (durchgezogen, gestrichelt, gepunktet), Dicke (1–3 px) und Farbe anpassen.</p>"
+      "title": "Erscheinungsbild anpassen",
+      "html": "<p class=\"text-mid\">Im Tab <strong>Erscheinungsbild</strong> können Sie Farben, Schriftart und andere visuelle Elemente der Signatur einstellen.</p>\n<h3 class=\"h5 mt-6 mb-3\">Farbthemen</h3>\n<p class=\"text-mid\">Oben im Tab finden Sie fünf fertige Themen: Dunkel, Blau, Violett, Grün und Grau. Ein Klick auf ein Thema setzt automatisch die Akzent- und Textfarbe. Das ist der schnellste Weg zu einem einheitlichen Erscheinungsbild.</p>\n<h3 class=\"h5 mt-6 mb-3\">Einzelne Farben</h3>\n<ul class=\"text-mid list-disc space-y-2 pl-6\">\n<li><strong>Akzentfarbe</strong> — wird für die Seitenleiste, den CTA-Button und Links verwendet.</li>\n<li><strong>Textfarbe</strong> — Farbe aller Texte in der Signatur.</li>\n<li><strong>Hintergrundfarbe</strong> — Hintergrund der gesamten Signatur. Standardmäßig weiß.</li>\n</ul>\n<h3 class=\"h5 mt-6 mb-3\">Schriftart und Größe</h3>\n<ul class=\"text-mid list-disc space-y-2 pl-6\">\n<li><strong>Schriftart</strong> — Arial, Verdana, Tahoma, Trebuchet MS oder Georgia. Alle fünf sind E-Mail-sichere Schriftarten.</li>\n<li><strong>Textgröße</strong> — Klein (12 px), Standard (14 px) oder Größer (16 px).</li>\n</ul>\n<h3 class=\"h5 mt-6 mb-3\">Signaturrahmen</h3>\n<p class=\"text-mid\">Sie können einen Rahmen an jeder Seite der Signatur hinzufügen: links, rechts, oben oder unten. Wählen Sie alle vier Seiten für einen vollständigen Rahmen. Der Rahmen verwendet die Akzentfarbe.</p>"
     },
     {
       "type": "gap",
@@ -173,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Personalisierung des Erscheinungsbilds",
-      "html": "<p class=\"text-mid\">Im Tab <strong>Erscheinungsbild</strong> können Sie Farben, Schriftart und andere visuelle Elemente der Signatur anpassen.</p><h3 class=\"h5 mt-6 mb-3\">Farbthemen</h3><p class=\"text-mid\">Oben im Tab finden Sie fünf vorgefertigte Themen: Dunkel, Blau, Violett, Grün und Grau. Ein Klick auf ein Thema setzt automatisch die Akzentfarbe und Textfarbe. Das ist der schnellste Weg zu einem einheitlichen Erscheinungsbild.</p><h3 class=\"h5 mt-6 mb-3\">Farben</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Akzentfarbe</strong> – wird für die Seitenleiste/obere Leiste, CTA-Button und Links verwendet. Sie können eine beliebige Farbe aus der Palette wählen.</li><li><strong>Textfarbe</strong> – Farbe aller Texte in der Signatur (Name, Kontaktdaten, Disclaimer).</li><li><strong>Hintergrundfarbe</strong> – Farbe des gesamten Signaturhintergrunds. Standardmäßig weiß, kann aber geändert werden.</li></ul><h3 class=\"h5 mt-6 mb-3\">Schriftart und Größe</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Schriftart</strong> – Auswahl: Arial, Verdana, Tahoma, Trebuchet MS und Georgia. Alle sind E-Mail-sicher und werden beim Empfänger korrekt angezeigt.</li><li><strong>Textgröße</strong> – drei Optionen: Klein (12 px), Standard (14 px) und Größer (16 px).</li></ul>"
+      "title": "Textstil — Farben und Größen einzelner Elemente",
+      "html": "<p class=\"text-mid\">Im Tab <strong>Textstil</strong> können Sie für jedes Element der Signatur individuell Farbe und Schriftgröße einstellen.</p>\n<h3 class=\"h5 mt-6 mb-3\">Welche Elemente können Sie anpassen?</h3>\n<p class=\"text-mid\">Es werden nur Elemente angezeigt, die aktuell Daten enthalten:</p>\n<ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\">\n<li><strong>Name</strong> — standardmäßig in der Akzentfarbe.</li>\n<li><strong>Position</strong> — Ihre Rolle im Unternehmen.</li>\n<li><strong>Unternehmen</strong> — Organisationsname.</li>\n<li><strong>Kontaktdaten</strong> — E-Mail, Telefon, Website.</li>\n<li><strong>Social Media</strong> — Profillinks.</li>\n<li><strong>Disclaimer</strong> — rechtlicher Hinweis.</li>\n</ul>\n<h3 class=\"h5 mt-6 mb-3\">Farbe ändern</h3>\n<p class=\"text-mid\">Bei jedem Element finden Sie Farboptionen. Klicken Sie auf ein Farbquadrat, um es auszuwählen. Sie können auch eigene Farben hinzufügen (bis zu 8), die für alle Elemente gelten. Die Reset-Taste stellt die Standardfarbe wieder her.</p>\n<h3 class=\"h5 mt-6 mb-3\">Größe ändern</h3>\n<p class=\"text-mid\">Unter den Farben finden Sie Minus- und Plus-Tasten für die Größe. Der Wert zeigt die Abweichung von der Basisschriftgröße (eingestellt im Tab Erscheinungsbild). Bereich: −4 bis +4 Pixel.</p>"
     },
     {
       "type": "gap",
@@ -182,8 +202,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Textstil – Farben und Größen einzelner Elemente",
-      "html": "<p class=\"text-mid\">Im Tab <strong>Textstil</strong> können Sie für jedes Textelement in der Signatur individuell Farbe und Schriftgröße anpassen.</p><h3 class=\"h5 mt-6 mb-3\">Verfügbare Elemente</h3><p class=\"text-mid\">Es werden nur Elemente angezeigt, die aktuell Daten enthalten. Für jedes Element können Sie einstellen:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Name</strong> – wird standardmäßig in der Akzentfarbe angezeigt.</li><li><strong>Position</strong> – Ihre Rolle im Unternehmen.</li><li><strong>Unternehmen</strong> – Name der Organisation.</li><li><strong>Kontaktdaten</strong> – E-Mail, Telefon, Website (Labels).</li><li><strong>Social Media</strong> – Links zu Profilen.</li><li><strong>Disclaimer</strong> – rechtlicher Hinweis am Ende der Signatur.</li></ul><h3 class=\"h5 mt-6 mb-3\">Farbe ändern</h3><p class=\"text-mid\">Bei jedem Element finden Sie eine Reihe von Farboptionen. Klicken Sie auf ein Farbquadrat, um es auszuwählen. Sie können auch eine eigene Farbe hinzufügen, indem Sie auf das Farbquadrat mit dem Pluszeichen klicken – Farbe wählen und Speichern klicken. Eigene Farben (bis zu 8) werden zwischen allen Elementen geteilt.</p><p class=\"text-mid mt-3\">Der Button mit dem Reset-Icon setzt die Standardfarbe des Elements zurück.</p><h3 class=\"h5 mt-6 mb-3\">Größe ändern</h3><p class=\"text-mid\">In der zweiten Zeile finden Sie die Größensteuerung mit Buttons - und +. Der Wert zeigt die Abweichung von der Basisschriftgröße (eingestellt im Tab Erscheinungsbild). Bereich: -4 bis +4 Pixel.</p>"
+      "title": "Abstände zwischen den Elementen einstellen",
+      "html": "<p class=\"text-mid\">Im Tab <strong>Abstände</strong> können Sie die Abstände zwischen den einzelnen Teilen der Signatur genau steuern.</p>\n<h3 class=\"h5 mt-6 mb-3\">Innenabstand</h3>\n<p class=\"text-mid\">Oben im Tab finden Sie die Innenabstand-Option. Sie legt den Abstand zwischen dem Inhalt und dem Rand der Signatur fest. Drei Werte stehen zur Wahl: 8 px (klein), 16 px (mittel), 24 px (groß).</p>\n<h3 class=\"h5 mt-6 mb-3\">Elementabstände</h3>\n<p class=\"text-mid\">Darunter finden Sie Steuerelemente für jedes Element. Jedes hat Plus- und Minus-Tasten. Es werden nur Optionen für Elemente angezeigt, die in der Signatur vorhanden sind:</p>\n<ul class=\"text-mid mt-3 list-disc space-y-1 pl-6\">\n<li><strong>Nach dem Namen</strong></li>\n<li><strong>Nach Position / Unternehmen</strong></li>\n<li><strong>Nach der zusätzlichen Zeile</strong></li>\n<li><strong>Nach den Kontaktdaten</strong></li>\n<li><strong>Nach Social Media</strong></li>\n<li><strong>Nach dem CTA-Button</strong></li>\n<li><strong>Vor dem Disclaimer</strong></li>\n</ul>"
     },
     {
       "type": "gap",
@@ -191,8 +211,17 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Abstände zwischen Elementen",
-      "html": "<p class=\"text-mid\">Im Tab <strong>Abstände</strong> können Sie die Abstände zwischen den einzelnen Elementen der Signatur präzise steuern.</p><h3 class=\"h5 mt-6 mb-3\">Innenabstand der Signatur</h3><p class=\"text-mid\">Oben im Tab finden Sie die Option für den Innenabstand – also den Abstand zwischen dem Inhalt der Signatur und ihren Rändern. Drei Werte stehen zur Verfügung: 8 px (klein), 16 px (mittel) und 24 px (groß).</p><h3 class=\"h5 mt-6 mb-3\">Abstände zwischen Elementen</h3><p class=\"text-mid\">Unterhalb des Innenabstands finden Sie Steuerelemente für die einzelnen Signaturelemente. Jedes Steuerelement hat Buttons + und - zum Vergrößern oder Verkleinern des Abstands. Es werden nur Optionen für Elemente angezeigt, die aktuell in der Signatur vorhanden sind.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Nach dem Namen</strong> – Abstand unter der Namenszeile.</li><li><strong>Nach Position / Unternehmen</strong> – Abstand unter Position und Firmenname.</li><li><strong>Nach der zusätzlichen Zeile</strong> – Abstand unter der Beschreibung (falls ausgefüllt).</li><li><strong>Nach den Kontaktdaten</strong> – Abstand unter E-Mail, Telefon und Website.</li><li><strong>Nach Social Media</strong> – Abstand unter den Profillinks.</li><li><strong>Nach dem CTA-Button</strong> – Abstand unter dem Button (falls aktiviert).</li><li><strong>Vor dem Disclaimer</strong> – Abstand über dem rechtlichen Hinweis.</li></ul><p class=\"text-mid mt-4\">Wenn Sie Daten aus einem Feld entfernen (z. B. Telefonnummer löschen), verschwindet die entsprechende Abstandsoption automatisch aus dem Tab.</p>"
+      "title": "Rechtlicher Hinweis und DSGVO",
+      "html": "<p class=\"text-mid\">Im Tab <strong>Disclaimer / DSGVO</strong> können Sie einen rechtlichen Text einfügen, der in kleinerer Schrift am Ende der Signatur erscheint.</p>\n<h3 class=\"h5 mt-6 mb-3\">Wann ist ein Disclaimer sinnvoll?</h3>\n<ul class=\"text-mid list-disc space-y-2 pl-6\">\n<li><strong>Geschäftliche E-Mails</strong> — ein Vertraulichkeitshinweis bittet den Empfänger bei Fehlzustellung um Löschung der Nachricht.</li>\n<li><strong>Branchenanforderungen</strong> — bestimmte Branchen (Recht, Medizin, Finanzen) verlangen spezifische Angaben in jeder Nachricht.</li>\n<li><strong>DSGVO</strong> — ein kurzer Hinweis auf die Verarbeitung personenbezogener Daten, wenn Ihr Unternehmen als Verantwortlicher agiert.</li>\n</ul>\n<p class=\"text-mid mt-4\">Standardmäßig enthält das Feld einen Beispieltext. Sie können ihn bearbeiten, löschen oder durch Ihren eigenen Text ersetzen. Bei leerem Feld erscheint kein Disclaimer.</p>\n<h3 class=\"h5 mt-6 mb-3\">Trennlinie</h3>\n<p class=\"text-mid\">Aktivieren Sie <strong>Trennlinie anzeigen</strong>, um eine horizontale Linie zwischen Kontaktdaten und Disclaimer einzufügen. Drei Optionen stehen zur Verfügung: Stil (durchgezogen, gestrichelt, gepunktet), Dicke (1–3 px) und Farbe.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Tipps für eine professionelle E-Mail-Signatur",
+      "html": "<p class=\"text-mid\">Eine gute E-Mail-Fußzeile ist klar, einheitlich und leicht zu lesen. Hier sind die wichtigsten Empfehlungen:</p>\n<h3 class=\"h5 mt-6 mb-3\">Kurz und übersichtlich</h3>\n<p class=\"text-mid\">Vier bis sieben Zeilen Kontaktdaten reichen aus. Eine lange Signatur kann den eigentlichen Nachrichteninhalt verdrängen, besonders auf dem Smartphone. Beschränken Sie sich auf Name, Position, Unternehmen, eine Telefonnummer, E-Mail und Website.</p>\n<h3 class=\"h5 mt-6 mb-3\">Höchstens zwei bis drei Farben</h3>\n<p class=\"text-mid\">Zu viele Farben wirken unruhig. Wählen Sie eine Akzentfarbe, die zu Ihrer Marke passt, und halten Sie den Rest in einem dunklen, neutralen Ton.</p>\n<h3 class=\"h5 mt-6 mb-3\">Immer einen CTA-Button verwenden</h3>\n<p class=\"text-mid\">Ein Aktionsbutton verwandelt jede E-Mail in eine sanfte Marketing-Botschaft. Verlinken Sie ihn mit Ihrem Terminkalender, Portfolio oder Kontaktformular.</p>\n<h3 class=\"h5 mt-6 mb-3\">E-Mail-sichere Schriftarten wählen</h3>\n<p class=\"text-mid\">Nicht alle Schriftarten werden in jedem E-Mail-Client korrekt angezeigt. Der Generator bietet fünf sichere Schriftarten: Arial, Verdana, Tahoma, Trebuchet MS und Georgia.</p>\n<h3 class=\"h5 mt-6 mb-3\">Bilder auf der eigenen Website hosten</h3>\n<p class=\"text-mid\">Falls Sie ein Logo oder Profilbild verwenden, hosten Sie es auf Ihrer eigenen Website oder einem zuverlässigen CDN. Vermeiden Sie Link-Verkürzer, Google Drive oder Dropbox — einige E-Mail-Clients blockieren Bilder aus nicht vertrauenswürdigen Quellen.</p>"
     },
     {
       "type": "gap",
@@ -201,7 +230,7 @@
     {
       "type": "sectionInfo",
       "title": "Automatisches Speichern und Zurücksetzen",
-      "html": "<p class=\"text-mid\">Alle Einstellungen werden automatisch im Browser gespeichert (localStorage). Nach dem Neuladen der Seite bleiben Daten, Layout, Farben und alle anderen Optionen erhalten.</p><p class=\"text-mid mt-3\">Unter der Vorschau finden Sie den Button <strong>Design zurücksetzen</strong>, der alle Daten und Einstellungen auf die Standardwerte zurücksetzt (nach Bestätigung). Die Konfiguration kann auch als JSON-Datei exportiert und auf einem anderen Gerät importiert werden.</p>"
+      "html": "<p class=\"text-mid\">Der Signatur-Ersteller speichert Ihre Arbeit automatisch im Browser-Speicher (localStorage). Wenn Sie die Seite neu laden oder später zurückkehren, sind alle Daten, das Layout, die Farben und alle anderen Einstellungen noch vorhanden.</p>\n<h3 class=\"h5 mt-6 mb-3\">Zurücksetzen</h3>\n<p class=\"text-mid\">Unter der Vorschau finden Sie den Button <strong>Design zurücksetzen</strong>. Nach Bestätigung werden alle Daten und Einstellungen auf die Standardwerte zurückgesetzt. Diese Aktion kann nicht rückgängig gemacht werden.</p>\n<h3 class=\"h5 mt-6 mb-3\">Konfiguration exportieren und importieren</h3>\n<p class=\"text-mid\">Die Buttons <strong>Einstellungen exportieren</strong> und <strong>Einstellungen importieren</strong> ermöglichen den Transfer der Signatur zwischen Geräten. Der Export speichert alle Daten als JSON-Datei. Der Import lädt eine gespeicherte Konfiguration und wendet sie sofort an.</p>\n<p class=\"text-mid mt-3\">Besonders nützlich, wenn Sie die Signatur auf einen anderen Computer übertragen, Einstellungen mit Kollegen teilen oder eine Sicherungskopie erstellen möchten.</p>"
     },
     {
       "type": "gap",
@@ -210,55 +239,23 @@
     {
       "type": "sectionSteps",
       "title": "Signatur in Gmail oder Outlook einfügen",
-      "description": "Wenn die Signatur fertig ist, fügen Sie sie in wenigen Schritten in Ihren E-Mail-Client ein:",
+      "description": "Wenn die Signatur fertig ist, fügen Sie sie in drei Schritten in Ihren E-Mail-Client ein:",
       "grid": "three",
       "items": [
         {
           "icon": "RiClipboardLine",
           "title": "1. Signatur kopieren",
-          "description": "Der Button Signatur kopieren (Gmail / Outlook) überträgt die Signatur als formatierten HTML-Text in die Zwischenablage."
+          "description": "Klicken Sie auf Signatur kopieren (Gmail / Outlook). Die Signatur wird als formatierter HTML-Text in die Zwischenablage kopiert."
         },
         {
           "icon": "RiSettings3Line",
-          "title": "2. Signatur-Einstellungen öffnen",
+          "title": "2. Einstellungen öffnen",
           "description": "In Gmail: Einstellungen → Alle Einstellungen → Signatur. In Outlook: Datei → Optionen → E-Mail → Signaturen."
         },
         {
           "icon": "RiSaveLine",
           "title": "3. Einfügen und speichern",
-          "description": "Im Signaturfeld Strg+V (Windows) oder Cmd+V (Mac) drücken. Die Signatur erscheint mit allen Farben und Formatierungen. Änderungen speichern."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Für wen ist der Signatur-Generator?",
-      "description": "Das Tool eignet sich für alle, die geschäftliche E-Mails versenden:",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiUserLine",
-          "title": "Unternehmer und Freelancer",
-          "description": "Professionelle Signatur in jeder E-Mail – ohne Designkosten."
-        },
-        {
-          "icon": "RiGlobalLine",
-          "title": "Teams und Unternehmen",
-          "description": "Jeder Mitarbeiter erstellt eine eigene Signatur im einheitlichen Firmenstil."
-        },
-        {
-          "icon": "RiLinksLine",
-          "title": "Vertrieb und Marketing",
-          "description": "CTA-Button mit Link zum Kalender oder Angebot erhöht die Konversionsrate."
-        },
-        {
-          "icon": "RiShieldCheckLine",
-          "title": "Rechtsanwälte, Ärzte, Berater",
-          "description": "Disclaimer, Lizenznummern und branchenspezifische Pflichtangaben direkt in der Signatur."
+          "description": "Im Signaturfeld Strg + V (Windows) oder Cmd + V (Mac) drücken. Die Signatur erscheint mit allen Farben und Formatierungen. Änderungen speichern."
         }
       ]
     },
@@ -269,7 +266,7 @@
     {
       "type": "sectionInfo",
       "title": "Vorschau und Exportoptionen",
-      "html": "<p class=\"text-mid\">Das Vorschau-Panel wird rechts neben dem Editor angezeigt und aktualisiert sich automatisch bei jeder Änderung. Die Vorschau ist am Bildschirm fixiert (sticky) und bleibt auch beim Scrollen durch die Bearbeitungsoptionen sichtbar.</p><h3 class=\"h5 mt-6 mb-3\">Hintergrund der Vorschau</h3><p class=\"text-mid\">Über der Vorschau finden Sie drei Buttons zur Hintergrundauswahl: <strong>Hell</strong> (Standard-grauer Hintergrund), <strong>Dunkel</strong> (dunkler Hintergrund, nützlich zur Überprüfung der Lesbarkeit) und <strong>Schachbrett</strong> (Schachbrettmuster, zeigt Transparenz und Ränder der Signatur).</p><h3 class=\"h5 mt-6 mb-3\">Aktionsbuttons</h3><p class=\"text-mid\">Unter der Vorschau finden Sie mehrere Buttons:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Signatur kopieren (Gmail / Outlook)</strong> – kopiert die Signatur als formatierten HTML-Text in die Zwischenablage. Einfach in das Signaturfeld einfügen (Strg+V / Cmd+V).</li><li><strong>HTML-Code kopieren</strong> – kopiert den reinen HTML-Quellcode. Ideal für HTML-Editoren oder CMS-Systeme.</li><li><strong>Als HTML herunterladen</strong> – speichert den Signaturcode als .html-Datei. Nützlich zur Archivierung oder Weitergabe an Entwickler.</li><li><strong>HTML-Code anzeigen</strong> – öffnet ein modales Fenster mit dem vollständigen HTML-Quellcode. Code kann direkt aus dem Fenster kopiert werden.</li><li><strong>Einstellungen exportieren</strong> – speichert die vollständige Konfiguration (Daten, Farben, Layout, Abstände, Textstile) als JSON-Datei.</li><li><strong>Einstellungen importieren</strong> – lädt eine Konfiguration aus einer JSON-Datei. Alle Einstellungen werden automatisch angewendet.</li><li><strong>Design zurücksetzen</strong> – setzt alle Daten und Einstellungen auf die Standardwerte zurück (nach Bestätigung).</li></ul>"
+      "html": "<p class=\"text-mid\">Das Vorschau-Panel befindet sich rechts neben dem Editor und aktualisiert sich automatisch bei jeder Änderung. Es ist am Bildschirm fixiert und bleibt auch beim Scrollen sichtbar.</p>\n<h3 class=\"h5 mt-6 mb-3\">Hintergrund wechseln</h3>\n<p class=\"text-mid\">Über der Vorschau finden Sie drei Buttons: <strong>Hell</strong> (Standard-Grau), <strong>Dunkel</strong> (dunkler Hintergrund) und <strong>Schachbrett</strong> (Transparenz und Ränder prüfen).</p>\n<h3 class=\"h5 mt-6 mb-3\">Verfügbare Aktionen</h3>\n<ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\">\n<li><strong>Signatur kopieren (Gmail / Outlook)</strong> — kopiert als formatierten HTML-Text.</li>\n<li><strong>HTML-Code kopieren</strong> — kopiert den reinen Quellcode.</li>\n<li><strong>Als HTML herunterladen</strong> — speichert als .html-Datei.</li>\n<li><strong>HTML-Code anzeigen</strong> — öffnet ein Fenster mit dem Quellcode.</li>\n<li><strong>Einstellungen exportieren</strong> — speichert die Konfiguration als JSON.</li>\n<li><strong>Einstellungen importieren</strong> — lädt eine JSON-Konfiguration.</li>\n<li><strong>Design zurücksetzen</strong> — setzt alles auf Standardwerte zurück.</li>\n</ul>"
     },
     {
       "type": "gap",
@@ -277,7 +274,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Was macht diesen Signatur-Generator besonders?",
+      "title": "Für wen ist der E-Mail-Signatur-Generator?",
+      "description": "Der Signatur-Ersteller eignet sich für alle, die geschäftliche E-Mails versenden:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiUserLine",
+          "title": "Unternehmer und Freiberufler",
+          "description": "Professionelle Signatur in jeder E-Mail — ohne Designkosten und ohne technische Kenntnisse."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Teams und Unternehmen",
+          "description": "Jeder Mitarbeiter erstellt eine eigene Signatur im einheitlichen Firmenstil. Die JSON-Konfiguration lässt sich teilen."
+        },
+        {
+          "icon": "RiLinksLine",
+          "title": "Vertrieb und Marketing",
+          "description": "Ein CTA-Button mit Link zum Terminkalender oder Angebot macht jede E-Mail zu einer Verkaufschance."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Rechtsanwälte, Ärzte, Steuerberater",
+          "description": "Disclaimer, Pflichtangaben und branchenspezifische Daten direkt in der E-Mail-Fußzeile."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Was macht diesen E-Mail-Signatur-Ersteller besonders?",
       "grid": "two",
       "items": [
         {
@@ -288,12 +317,12 @@
         {
           "icon": "RiPaletteLine",
           "title": "Vollständige Anpassung",
-          "description": "Farbschema, Schriftart, Schriftgröße, Abstände und individuelle Textstile."
+          "description": "Farbschema, Schriftart, Schriftgröße, Abstände, Rahmen und individuelle Textstile für jedes Element."
         },
         {
           "icon": "RiCodeLine",
           "title": "Zwei Kopiermethoden",
-          "description": "Formatierter Text für Gmail/Outlook oder reiner HTML-Code für technische Setups."
+          "description": "Formatierter Text für Gmail und Outlook oder reiner HTML-Code für technische Setups."
         },
         {
           "icon": "RiShieldCheckLine",
@@ -303,12 +332,12 @@
         {
           "icon": "RiDownloadLine",
           "title": "Export und Import",
-          "description": "Signatureinstellungen als Datei exportieren und auf einem anderen Gerät importieren."
+          "description": "Signatur-Einstellungen als JSON-Datei exportieren und auf einem anderen Gerät importieren."
         },
         {
           "icon": "RiInfinityLine",
-          "title": "Ohne Limits",
-          "description": "Beliebig viele Signaturen erstellen — ohne Registrierung und ohne Einschränkungen."
+          "title": "Ohne Einschränkungen",
+          "description": "Beliebig viele Signaturen erstellen — ohne Registrierung, ohne Limits, ohne versteckte Kosten."
         }
       ]
     },
@@ -323,68 +352,73 @@
       "items": [
         {
           "question": "Wie füge ich die Signatur in Gmail ein?",
-          "answer": "Klicken Sie auf Signatur kopieren (Gmail / Outlook), öffnen Sie Gmail → Einstellungen → Alle Einstellungen → Signatur, und fügen Sie die Signatur mit Strg+V (oder Cmd+V) ein. Die Formatierung wird automatisch übernommen - Farben, Links und Social-Media-Icons bleiben erhalten.",
-          "answerSchemaText": "Signatur kopieren, Gmail → Einstellungen → Signatur öffnen, Strg+V einfügen."
+          "answer": "Klicken Sie auf Signatur kopieren (Gmail / Outlook). Öffnen Sie Gmail → Einstellungen → Alle Einstellungen → Signatur. Fügen Sie die Signatur mit Strg + V (oder Cmd + V) ein. Farben, Links und Icons werden automatisch übernommen.",
+          "answerSchemaText": "Signatur kopieren, Gmail → Einstellungen → Signatur, Strg+V einfügen."
         },
         {
           "question": "Funktioniert die Signatur in Outlook?",
-          "answer": "Ja. In Outlook Desktop: Datei → Optionen → E-Mail → Signaturen → Einfügen. In Outlook Web (OWA): Einstellungen → E-Mail → Verfassen und Antworten → E-Mail-Signatur. Beide Varianten unterstützen den formatierten Text.",
+          "answer": "Ja. In Outlook Desktop: Datei → Optionen → E-Mail → Signaturen → Einfügen. In Outlook Web (OWA): Einstellungen → E-Mail → Verfassen und Antworten → E-Mail-Signatur. Beide Varianten unterstützen formatierten Text.",
           "answerSchemaText": "Ja. Desktop: Datei → Optionen → Signaturen. Web: Einstellungen → E-Mail → Signatur."
         },
         {
-          "question": "Welche Layouts stehen zur Verfügung?",
-          "answer": "8 Layouts: Standard, Oberer Balken, Beschriftungen links, Zentriert, Kompakt, Zwei Spalten, Minimalistisch und Unterer Balken. Jedes Layout hat eine andere Anordnung von Kontaktdaten, Profilbild und Social-Media-Icons.",
+          "question": "Welche Layouts gibt es?",
+          "answer": "8 Layouts: Standard, Oberer Balken, Beschriftungen links, Zentriert, Kompakt, Zwei Spalten, Minimalistisch und Unterer Balken. Jedes Layout ordnet die Kontaktdaten, das Profilbild und die Social-Media-Icons anders an.",
           "answerSchemaText": "8 Layouts: Standard, Oberer Balken, Links, Zentriert, Kompakt, Zwei Spalten, Minimalistisch, Unterer Balken."
         },
         {
           "question": "Kann ich Social-Media-Links hinzufügen?",
-          "answer": "Ja. Sie können Links zu LinkedIn, Instagram, Facebook, TikTok, YouTube, X (Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram und Pinterest hinzufügen. Nur Plattformen mit eingegebener URL erscheinen in der Signatur.",
+          "answer": "Ja. Der Generator unterstützt zwölf Plattformen: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram und Pinterest. Nur Plattformen mit eingegebener URL erscheinen in der Signatur.",
           "answerSchemaText": "12 Plattformen: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest."
         },
         {
-          "question": "Kann ich ein Profilbild oder Firmenlogo einfügen?",
-          "answer": "Ja. Sie können eine Bild-URL für Ihr Profilbild und/oder Firmenlogo angeben. Das Bild wird in der Signatur angezeigt. Verwenden Sie eine öffentlich zugängliche URL (z. B. von Ihrer Website).",
-          "answerSchemaText": "Ja. Profilbild und Firmenlogo über URL einfügen."
+          "question": "Welche Pflichtangaben muss meine E-Mail-Signatur enthalten?",
+          "answer": "Das hängt von der Rechtsform und dem Land ab. In Deutschland muss eine GmbH unter anderem den Firmennamen, den Sitz, das Registergericht, die HRB-Nummer und die Namen aller Geschäftsführer angeben. In Österreich gelten ähnliche Regeln. Verwenden Sie das Feld Formale Daten, um diese Angaben einzutragen. Eine ausführliche Übersicht finden Sie im Abschnitt Pflichtangaben auf dieser Seite.",
+          "answerSchemaText": "Abhängig von Rechtsform und Land. GmbH: Firmenname, Sitz, HRB-Nr., Geschäftsführer. Feld Formale Daten verwenden."
         },
         {
           "question": "Werden meine Daten gespeichert?",
-          "answer": "Alle Daten werden lokal in Ihrem Browser gespeichert (localStorage). Nichts wird an einen Server gesendet. Sie können die Einstellungen exportieren und importieren, um die Signatur zwischen Geräten zu übertragen.",
+          "answer": "Alle Daten werden lokal in Ihrem Browser gespeichert (localStorage). Nichts wird an einen Server gesendet. Sie können die Einstellungen als JSON-Datei exportieren und auf einem anderen Gerät importieren.",
           "answerSchemaText": "Lokal im Browser (localStorage). Keine Serverübertragung. Export/Import möglich."
         },
         {
-          "question": "Was ist ein CTA-Link in der Signatur?",
-          "answer": "Ein CTA-Link (Call to Action) ist ein optionaler Button oder Link am Ende der Signatur - z. B. Termin vereinbaren, Angebot anfordern oder Portfolio ansehen. Er leitet den Empfänger direkt zu einer gewünschten Seite weiter.",
+          "question": "Was ist ein CTA-Button in der Signatur?",
+          "answer": "Ein CTA-Button (Call to Action) ist ein optionaler Aktionsbutton am Ende der Signatur. Er leitet den Empfänger direkt zu einer Seite Ihrer Wahl weiter — z. B. Termin vereinbaren, Angebot anfordern oder Portfolio ansehen.",
           "answerSchemaText": "Ein optionaler Aktionslink wie Termin vereinbaren am Ende der Signatur."
         },
         {
-          "question": "Kann ich einen rechtlichen Hinweis hinzufügen?",
-          "answer": "Ja. Das Tool enthält ein Feld für einen rechtlichen Hinweis (Disclaimer). Der Text wird in kleinerer Schrift unter der Signatur angezeigt - z. B. Vertraulichkeitshinweise oder DSGVO-Informationen.",
-          "answerSchemaText": "Ja. Eigenes Feld für Disclaimer/DSGVO-Hinweis unter der Signatur."
+          "question": "Kann ich einen DSGVO-Hinweis hinzufügen?",
+          "answer": "Ja. Das Feld Disclaimer / DSGVO ist speziell für rechtliche Hinweise vorgesehen. Der Text erscheint in kleinerer Schrift unter der Signatur. Sie können dort Vertraulichkeitshinweise, Datenschutzinformationen oder andere rechtliche Texte eintragen.",
+          "answerSchemaText": "Ja. Eigenes Feld für Disclaimer / DSGVO-Hinweis unter der Signatur."
         },
         {
-          "question": "Wie exportiere oder importiere ich die Signatur-Einstellungen?",
-          "answer": "Unter der Vorschau finden Sie die Buttons Einstellungen exportieren und Einstellungen importieren. Der Export speichert die vollständige Konfiguration (Daten, Farben, Layout, Abstände, Textstile) als JSON-Datei. Der Import lädt die Konfiguration aus einer Datei und wendet alle Einstellungen automatisch an.",
-          "answerSchemaText": "Export als JSON-Datei, Import lädt die Konfiguration und wendet sie automatisch an."
+          "question": "Wie exportiere oder importiere ich die Einstellungen?",
+          "answer": "Unter der Vorschau finden Sie die Buttons Einstellungen exportieren und Einstellungen importieren. Der Export speichert die gesamte Konfiguration als JSON-Datei. Der Import lädt die Konfiguration und wendet sie sofort an.",
+          "answerSchemaText": "Export als JSON-Datei, Import lädt und wendet die Konfiguration an."
         },
         {
-          "question": "Wie kann ich den HTML-Quellcode der Signatur anzeigen?",
-          "answer": "Der Button HTML-Code anzeigen unter der Vorschau öffnet ein modales Fenster mit dem vollständigen HTML-Quellcode. Sie können den Code direkt aus dem Fenster kopieren. Alternativ kopiert HTML-Code kopieren den Code in die Zwischenablage, und Als HTML herunterladen speichert ihn als Datei.",
-          "answerSchemaText": "Button HTML-Code anzeigen öffnet ein Fenster mit dem Quellcode. Alternativ kopieren oder als Datei herunterladen."
-        },
-        {
-          "question": "Kann ich Form und Größe des Avatars ändern?",
-          "answer": "Ja. Nach Eingabe der Bild-URL im Tab Daten erscheinen zusätzliche Optionen: Form des Avatars (rund, abgerundet, quadratisch) und Größe des Avatars (klein - 40 px, mittel - 56 px, groß - 72 px). Die Einstellungen gelten für alle Layouts.",
-          "answerSchemaText": "Ja. Form (rund, abgerundet, quadratisch) und Größe (40, 56 oder 72 px) wählbar."
+          "question": "Kann ich die Form und Größe des Avatars ändern?",
+          "answer": "Ja. Nach Eingabe der Bild-URL im Tab Daten erscheinen Optionen: Form (rund, abgerundet, quadratisch) und Größe (klein — 40 px, mittel — 56 px, groß — 72 px). Die Einstellungen gelten für alle Layouts.",
+          "answerSchemaText": "Ja. Form (rund, abgerundet, quadratisch) und Größe (40, 56, 72 px) wählbar."
         },
         {
           "question": "Wie ändere ich den Stil der Trennlinie?",
-          "answer": "Im Tab Disclaimer / DSGVO aktivieren Sie die Option Trennlinie anzeigen. Anschließend können Sie Stil (durchgezogen, gestrichelt, gepunktet), Dicke (1–3 px) und Farbe (Standard-Grau oder beliebige Farbe aus der Palette) einstellen.",
+          "answer": "Im Tab Disclaimer / DSGVO aktivieren Sie Trennlinie anzeigen. Dann können Sie Stil (durchgezogen, gestrichelt, gepunktet), Dicke (1–3 px) und Farbe einstellen.",
           "answerSchemaText": "Trennlinie aktivieren, dann Stil, Dicke und Farbe einstellen."
         },
         {
-          "question": "Der Kopier-Button ist inaktiv – warum?",
-          "answer": "Zum Kopieren der Signatur müssen mindestens zwei Felder ausgefüllt sein: Name und E-Mail-Adresse. Prüfen Sie, ob beide Felder Daten enthalten.",
+          "question": "Der Kopier-Button ist inaktiv — warum?",
+          "answer": "Zum Kopieren müssen mindestens zwei Felder ausgefüllt sein: Name und E-Mail-Adresse. Prüfen Sie, ob beide Daten enthalten.",
           "answerSchemaText": "Name und E-Mail-Adresse müssen ausgefüllt sein."
+        },
+        {
+          "question": "Wie mache ich meine Signatur mobilfreundlich?",
+          "answer": "Halten Sie die Signatur kurz (vier bis sieben Zeilen), verwenden Sie eine Standardgröße von 14 px und wählen Sie ein Layout, das auf schmalen Bildschirmen gut aussieht. Standard und Kompakt eignen sich am besten für mobile Geräte.",
+          "answerSchemaText": "Kurz halten, 14 px Schriftgröße, Standard- oder Kompakt-Layout verwenden."
+        },
+        {
+          "question": "Wo sollte ich mein Logo hosten?",
+          "answer": "Am besten auf Ihrer eigenen Website oder einem zuverlässigen CDN. Vermeiden Sie Google Drive, Dropbox oder Link-Verkürzer — einige E-Mail-Clients blockieren Bilder aus diesen Quellen. Das Bild sollte quadratisch, mindestens 120 × 120 px und im Format JPG, PNG oder WebP sein.",
+          "answerSchemaText": "Auf der eigenen Website oder einem CDN. Quadratisch, min. 120 × 120 px, JPG/PNG/WebP."
         }
       ]
     },
@@ -395,7 +429,7 @@
     {
       "type": "contactForm",
       "title": "Helfen Sie uns, unsere Tools zu verbessern",
-      "description": "Haben Sie eine Idee für eine neue Funktion, einen Fehler gefunden oder möchten Sie ein anderes Tool vorschlagen, das Ihre Arbeit erleichtern würde? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "description": "Haben Sie eine Idee für eine neue Funktion, einen Fehler gefunden oder möchten Sie ein anderes Tool vorschlagen? Schreiben Sie uns — wir antworten innerhalb von 24 Stunden.",
       "imageSrc": "/assets/tools/free-html-email-signature-generator/kostenloser-e-mail-signatur-generator-de.webp",
       "imageAlt": "E-Mail-Signatur-Generator – Arteon",
       "defaultSubject": "Feedback: E-Mail-Signatur-Generator"

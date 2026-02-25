@@ -25,10 +25,19 @@
   "schemas": {
     "software": {
       "name": "Gerador de assinatura de e-mail HTML – criador de assinatura",
-      "alternateName": ["Criar assinatura de e-mail gratuito", "Gerador de assinatura HTML", "Gerador de assinatura Gmail", "Gerador de assinatura Outlook", "Assinatura de e-mail profissional"],
+      "alternateName": [
+        "Criar assinatura de e-mail gratuito",
+        "Gerador de assinatura HTML",
+        "Gerador de assinatura Gmail",
+        "Gerador de assinatura Outlook",
+        "Assinatura de e-mail profissional",
+        "Criador de rodapé de e-mail",
+        "Gerador de assinatura de correio eletrónico",
+        "Ferramenta gratuita de assinatura de email"
+      ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Gerador gratuito de assinatura de e-mail HTML. Adicione dados de contacto, link CTA e perfis de redes sociais, depois copie o código da assinatura para o Gmail, Outlook e outros clientes de e-mail.",
+      "description": "Gerador gratuito de assinatura de e-mail HTML e criador de rodapé profissional. Adicione dados de contacto, link CTA e perfis de redes sociais. Copie o código para Gmail, Outlook, Apple Mail ou qualquer outro cliente. Sem registo.",
       "featureList": [
         "Dados de contacto (nome, cargo, empresa)",
         "Telefone, e-mail e URL do site",
@@ -77,8 +86,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Porquê uma assinatura de e-mail profissional?",
-      "html": "<p class=\"text-mid\">Uma assinatura de e-mail é muito mais do que simples dados de contacto no fim de uma mensagem. Contém o seu nome, cargo, empresa, contactos e eventualmente um link CTA ou perfis de redes sociais. Uma assinatura coerente e profissional reforça a imagem de marca em cada e-mail enviado.</p><p class=\"text-mid mt-3\">Em média, um profissional de escritório envia 30 a 40 e-mails por dia. Cada um desses e-mails é uma oportunidade para apresentar a sua marca, colocar um link CTA e dar ao destinatário acesso direto aos seus perfis de redes sociais. Com esta ferramenta, crie uma assinatura à altura dessas exigências.</p>",
+      "title": "Porquê utilizar uma assinatura de e-mail profissional?",
+      "html": "<p class=\"text-mid\">Uma assinatura de e-mail é um pequeno bloco de texto no final de cada mensagem que envia. Também é conhecida como rodapé de e-mail ou bloco de assinatura. Mostra o seu nome, cargo, empresa e dados de contacto. Muitas assinaturas incluem ainda um link para o site, uma agenda de reuniões ou perfis de redes sociais.</p><p class=\"text-mid mt-3\">Em média, um profissional envia entre 30 e 40 e-mails por dia. Cada uma dessas mensagens é uma oportunidade para partilhar os seus contactos, reforçar a sua marca e facilitar a comunicação. Um rodapé bem concebido poupa tempo ao destinatário — não precisa de procurar o seu número de telefone em mensagens anteriores.</p><p class=\"text-mid mt-3\">Além disso, em Portugal e no Brasil, a legislação exige que os e-mails comerciais contenham determinadas informações sobre a empresa. A assinatura de e-mail é o local mais simples para cumprir estas obrigações.</p>",
       "imageSrc": "/assets/tools/free-html-email-signature-generator/gerador-de-assinatura-de-email-gratuito-pt.webp",
       "imageAlt": "Gerador de assinatura de email – Arteon"
     },
@@ -88,28 +97,28 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Como usar o gerador de assinatura",
-      "description": "A criação de uma assinatura demora menos de 5 minutos:",
+      "title": "Como criar uma assinatura de e-mail em quatro passos",
+      "description": "A criação de um rodapé profissional demora menos de cinco minutos:",
       "grid": "four",
       "items": [
         {
           "icon": "RiMailLine",
-          "title": "1. Introduzir os dados",
-          "description": "Preencha nome, cargo, empresa, contactos e opcionalmente links de redes sociais."
+          "title": "1. Introduza os dados",
+          "description": "Nome, cargo, empresa, contactos e, opcionalmente, links de redes sociais."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "2. Personalizar o design",
-          "description": "Escolha o layout, o esquema de cores, o tipo de letra e ajuste os espaçamentos e estilos de texto."
+          "title": "2. Personalize o design",
+          "description": "Escolha um layout, um esquema de cores, um tipo de letra e ajuste os espaçamentos."
         },
         {
           "icon": "RiLinksLine",
-          "title": "3. CTA e redes sociais",
-          "description": "Adicione opcionalmente um link de ação e perfis de redes sociais."
+          "title": "3. Adicione CTA e redes",
+          "description": "Adicione um botão de ação e links para os seus perfis de redes sociais."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Copiar",
+          "title": "4. Copie e cole",
           "description": "Copie a assinatura e cole-a no Gmail, Outlook ou qualquer outro cliente."
         }
       ]
@@ -121,8 +130,8 @@
     {
       "type": "sectionDemo",
       "title": "O que pode conter a assinatura?",
-      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Dados pessoais</strong> – nome, cargo, empresa, departamento</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Contactos</strong> – telefone, e-mail, site, morada</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Imagens</strong> – foto de perfil e/ou logótipo da empresa (URL)</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Redes sociais</strong> – 12 plataformas com ícones automáticos</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Link CTA</strong> – botão de ação (ex.: Marcar reunião)</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Disclaimer</strong> – aviso legal / informação RGPD</span></div></div>",
-      "html": "<p class=\"text-mid mb-4\">O gerador oferece inúmeras opções de personalização para todos os elementos de uma assinatura de e-mail profissional:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Dados pessoais</strong> – nome, cargo, empresa e departamento.</li><li><strong>Contactos</strong> – telefone, e-mail, site e morada.</li><li><strong>Elementos visuais</strong> – foto de perfil, logótipo, esquema de cores e tipo de letra.</li><li><strong>Redes sociais</strong> – links para 12 plataformas com ícones gerados automaticamente.</li><li><strong>Botão CTA</strong> – link de ação opcional com texto e URL personalizados.</li><li><strong>Disclaimer</strong> – aviso legal em tamanho reduzido na parte inferior da assinatura.</li></ul>"
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Dados pessoais</strong> — nome, cargo, empresa, departamento</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Contactos</strong> — telefone, e-mail, site, morada</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Imagens</strong> — foto de perfil e/ou logótipo (URL)</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Redes sociais</strong> — 12 plataformas com ícones automáticos</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Botão CTA</strong> — botão de ação (ex.: Marcar reunião)</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Dados legais e aviso</strong> — NIF, CNPJ, certidão permanente, RGPD/LGPD</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">O gerador oferece inúmeras opções para personalizar cada elemento de uma assinatura de e-mail profissional:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Dados pessoais</strong> — nome, cargo, empresa e departamento.</li><li><strong>Contactos</strong> — telefone, e-mail, site e morada.</li><li><strong>Elementos visuais</strong> — foto de perfil, logótipo, esquema de cores e tipo de letra.</li><li><strong>Redes sociais</strong> — links para 12 plataformas com ícones gerados automaticamente.</li><li><strong>Botão CTA</strong> — link de ação opcional com texto e URL personalizados.</li><li><strong>Dados legais</strong> — NIF, CNPJ, número de registo ou outros identificadores exigidos por lei.</li><li><strong>Aviso legal</strong> — cláusula de confidencialidade ou informação RGPD/LGPD em tamanho reduzido.</li></ul>"
     },
     {
       "type": "gap",
@@ -131,7 +140,25 @@
     {
       "type": "sectionInfo",
       "title": "Como preencher os dados da assinatura",
-      "html": "<p class=\"text-mid\">No separador <strong>Dados</strong>, encontra todos os campos a preencher. Apenas dois são obrigatórios: nome e endereço de e-mail. Os restantes campos são opcionais e só aparecem na assinatura se estiverem preenchidos.</p><h3 class=\"h5 mt-6 mb-3\">Campos do separador Dados</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Linha acima do nome</strong> – texto adicional apresentado acima do nome. Pode inscrever o nome da empresa, um slogan ou uma frase de efeito.</li><li><strong>Avatar / logótipo (URL da imagem)</strong> – URL de uma foto de perfil ou logótipo da empresa. A imagem deve ser quadrada (mín. 120x120 px) e acessível publicamente online. Após colar o URL, surgem opções adicionais: <strong>Forma do avatar</strong> (redondo, arredondado ou quadrado) e <strong>Tamanho do avatar</strong> (pequeno – 40 px, médio – 56 px, grande – 72 px).</li><li><strong>Nome completo</strong> – campo obrigatório. Introduza o seu nome completo.</li><li><strong>Tag junto ao nome</strong> – texto curto junto ao nome, ex.: pronomes ou título abreviado.</li><li><strong>Cargo</strong> – o seu papel na empresa, ex.: Diretor comercial, Especialista de marketing.</li><li><strong>Nome da empresa</strong> – o nome da organização que representa.</li><li><strong>Linha adicional</strong> – uma breve descrição da sua atividade ou da sua oferta.</li><li><strong>E-mail</strong> – campo obrigatório. Introduza o seu endereço de e-mail profissional.</li><li><strong>Telefone</strong> – número de contacto. Formato livre, ex.: +351 912 345 678.</li><li><strong>Site</strong> – URL completo do seu site, começando por https://.</li><li><strong>Morada</strong> – morada física da empresa (rua, cidade, código postal).</li><li><strong>Dados legais</strong> – NIF, número de licença ou outros dados exigidos pelo seu setor.</li></ul>"
+      "html": "<p class=\"text-mid\">No separador <strong>Dados</strong>, encontra todos os campos disponíveis. Apenas dois são obrigatórios: o nome e o endereço de e-mail. Os restantes são opcionais e só aparecem na assinatura se estiverem preenchidos.</p><h3 class=\"h5 mt-6 mb-3\">Campos disponíveis</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Linha acima do nome</strong> — texto adicional sobre o nome: nome da empresa, slogan ou frase de efeito.</li><li><strong>Avatar / logótipo (URL da imagem)</strong> — URL de uma foto de perfil ou logótipo. A imagem deve ser quadrada (mín. 120 × 120 px) e acessível publicamente. Após colar o URL, pode escolher a <strong>forma</strong> (redondo, arredondado, quadrado) e o <strong>tamanho</strong> (pequeno — 40 px, médio — 56 px, grande — 72 px).</li><li><strong>Nome completo</strong> — campo obrigatório.</li><li><strong>Tag junto ao nome</strong> — texto curto junto ao nome, ex.: pronomes ou título abreviado.</li><li><strong>Cargo</strong> — o seu papel na empresa, ex.: Diretor comercial.</li><li><strong>Empresa</strong> — nome da organização.</li><li><strong>Linha adicional</strong> — breve descrição da sua atividade ou oferta.</li><li><strong>E-mail</strong> — campo obrigatório. O seu endereço profissional.</li><li><strong>Telefone</strong> — número de contacto em qualquer formato, ex.: +351 912 345 678.</li><li><strong>Site</strong> — URL completo começando por https://.</li><li><strong>Morada</strong> — morada física da empresa.</li><li><strong>Dados legais</strong> — NIF, CNPJ, número de licença ou outros dados exigidos pelo seu setor. Este campo é fundamental para o cumprimento legal em Portugal e no Brasil.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Requisitos legais para assinaturas de e-mail — Portugal e Brasil",
+      "html": "<p class=\"text-mid\">Em Portugal e no Brasil, os e-mails comerciais devem conter determinadas informações sobre a empresa. A assinatura de e-mail é a forma mais simples de cumprir estes requisitos. Abaixo encontra um resumo das principais obrigações. Trata-se de informação geral, não de aconselhamento jurídico — verifique sempre a legislação em vigor no seu país.</p><h3 class=\"h5 mt-6 mb-3\">Portugal — Decreto-Lei n.º 7/2004</h3><p class=\"text-mid\">A Lei do Comércio Eletrónico portuguesa exige que as empresas que operam em Portugal incluam nas suas comunicações eletrónicas:</p><ul class=\"text-mid mt-2 list-disc space-y-1 pl-6\"><li>Denominação social ou nome comercial</li><li>NIF (Número de Identificação Fiscal)</li><li>Sede social</li><li>Endereço de correio eletrónico de contacto</li><li>Número de registo na Conservatória (certidão permanente), se aplicável</li></ul><p class=\"text-mid mt-3\">Para empresários em nome individual, é obrigatório indicar o NIF. Para sociedades (Lda., S.A.), recomenda-se incluir também o NIPC e os dados do registo comercial.</p><p class=\"text-mid mt-3\">Utilize o campo <strong>Dados legais</strong> do gerador para inserir estas informações.</p><h3 class=\"h5 mt-6 mb-3\">Brasil — Marco Civil da Internet e LGPD</h3><p class=\"text-mid\">No Brasil, embora não exista uma lei tão detalhada quanto a europeia para assinaturas de e-mail, é boa prática incluir o CNPJ (Cadastro Nacional da Pessoa Jurídica), a razão social e o endereço da sede. A Lei Geral de Proteção de Dados (LGPD — Lei n.º 13.709/2018) pode exigir um aviso de privacidade ou link para a política de privacidade em comunicações comerciais que envolvam dados pessoais.</p><p class=\"text-mid mt-3\">Para profissionais liberais, recomenda-se incluir o CPF ou o número de inscrição no conselho profissional (OAB, CRM, CRC, etc.).</p><h3 class=\"h5 mt-6 mb-3\">Angola, Moçambique e Cabo Verde</h3><p class=\"text-mid\">Nestes países, as obrigações legais para assinaturas de e-mail são menos detalhadas. Contudo, é recomendável incluir o NIF local, a denominação social e a morada da sede nas comunicações comerciais. Isto reforça a confiança e facilita o contacto.</p><h3 class=\"h5 mt-6 mb-3\">RGPD e proteção de dados</h3><p class=\"text-mid\">Em Portugal (e em toda a UE), se a assinatura contiver dados pessoais (foto, número de telemóvel pessoal), aplica-se o Regulamento Geral sobre a Proteção de Dados (RGPD). As empresas que atuam como responsáveis pelo tratamento devem considerar incluir um aviso de privacidade ou um link para a política de privacidade. O gerador oferece o campo <strong>Aviso legal</strong> para este efeito.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como preencher o campo Dados legais — exemplos por país",
+      "html": "<p class=\"text-mid\">O campo <strong>Dados legais</strong> no separador Dados é uma área de texto multilinha onde pode introduzir os seus identificadores legais. Exemplos:</p><ul class=\"text-mid mt-3 list-disc space-y-3 pl-6\"><li><strong>Lda. (Portugal)</strong> — Empresa Exemplo, Lda. | NIF 501234567 | Conservatória do Registo Comercial de Lisboa, n.º 12345 | Rua do Exemplo 10, 1000-001 Lisboa</li><li><strong>S.A. (Portugal)</strong> — Empresa Exemplo, S.A. | NIPC 501234567 | Capital social: 50 000 EUR</li><li><strong>Empresário individual (Portugal)</strong> — João Silva | NIF 123456789 | Rua do Exemplo 10, 1000-001 Lisboa</li><li><strong>Ltda. (Brasil)</strong> — Empresa Exemplo Ltda. | CNPJ 12.345.678/0001-90 | Av. Paulista 1000, São Paulo – SP, 01310-100</li><li><strong>S.A. (Brasil)</strong> — Empresa Exemplo S.A. | CNPJ 12.345.678/0001-90 | Brasília – DF</li><li><strong>Profissional liberal (Brasil)</strong> — Maria Silva | CPF 123.456.789-00 | OAB/SP 12345 | São Paulo – SP</li><li><strong>Angola</strong> — Empresa Exemplo, Lda. | NIF 5417123456 | Luanda</li></ul><p class=\"text-mid mt-4\">O texto introduzido aparece no final da assinatura, imediatamente antes do aviso legal.</p>"
     },
     {
       "type": "gap",
@@ -140,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Como adicionar botões CTA",
-      "html": "<p class=\"text-mid\">Um botão CTA (apelo à ação) é um elemento clicável que redireciona o destinatário para uma página à sua escolha. Pode ser um link para um calendário de reuniões, um formulário de contacto ou uma oferta. O gerador permite adicionar dois botões CTA.</p><h3 class=\"h5 mt-6 mb-3\">Botão principal</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Abra o separador <strong>Botões</strong> no editor.</li><li>Na secção <strong>Botão principal</strong>, introduza o texto que o destinatário verá, ex.: Marcar reunião.</li><li>No campo <strong>Link CTA</strong>, cole o URL completo. O endereço deve começar por https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Botão secundário</h3><p class=\"text-mid\">Pode adicionar um segundo botão CTA em estilo outline (fundo transparente com contorno). Preencha os campos da secção <strong>Botão secundário</strong> da mesma forma que o botão principal.</p><h3 class=\"h5 mt-6 mb-3\">Arredondamento dos botões</h3><p class=\"text-mid\">Na parte inferior do separador Botões, encontra a opção <strong>Arredondamento dos botões</strong>. Três variantes estão disponíveis: Nenhum (cantos retos), Ligeiro (ligeiramente arredondado) ou Completo (botão oval).</p><p class=\"text-mid mt-4\">Se deixar ambos os campos vazios, o botão não aparecerá na assinatura. Se preencher apenas um campo, o botão também não será visível – ambos são necessários: texto e link.</p>"
+      "html": "<p class=\"text-mid\">Um botão CTA (apelo à ação) é um elemento clicável que redireciona o destinatário para uma página à sua escolha: agenda de reuniões, formulário de contacto ou oferta. O criador de assinaturas permite adicionar dois botões CTA.</p><h3 class=\"h5 mt-6 mb-3\">Botão principal</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Abra o separador <strong>Botões</strong>.</li><li>Introduza o texto que o destinatário verá, ex.: <em>Marcar reunião</em>.</li><li>Cole o URL completo no campo <strong>Link CTA</strong>. O endereço deve começar por https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Botão secundário</h3><p class=\"text-mid\">Pode adicionar um segundo botão em estilo contorno (fundo transparente com rebordo). Preencha os campos da secção <strong>Botão secundário</strong> da mesma forma.</p><h3 class=\"h5 mt-6 mb-3\">Arredondamento dos botões</h3><p class=\"text-mid\">Na parte inferior do separador, a opção <strong>Arredondamento</strong> oferece três formas: Nenhum (cantos retos), Ligeiro (ligeiramente arredondado) ou Completo (oval).</p><p class=\"text-mid mt-4\">Se deixar ambos os campos vazios (texto e link), o botão não aparece. Ambos são necessários.</p>"
     },
     {
       "type": "gap",
@@ -148,17 +175,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Como adicionar os links de redes sociais",
-      "html": "<p class=\"text-mid\">No separador <strong>Redes sociais</strong>, pode adicionar links para os seus perfis. O gerador suporta doze plataformas: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (antigo Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram e Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Como fazer</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Abra o separador <strong>Redes sociais</strong> no editor.</li><li>Junto a cada plataforma, encontra um campo URL. Cole o link completo para o seu perfil, ex.: https://www.linkedin.com/in/meuperfil.</li><li>Preencha apenas os campos necessários. Os campos vazios não aparecerão na assinatura.</li></ol><h3 class=\"h5 mt-6 mb-3\">Ícones de redes sociais</h3><p class=\"text-mid\">Na parte inferior do separador Redes sociais, encontra a opção <strong>Mostrar ícones junto aos nomes dos serviços</strong>. Quando ativada, os links são apresentados como ícones SVG a cores em vez de simples nomes.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Tamanho do ícone</strong> – opções: Pequeno (16 px), Médio (20 px) ou Grande (24 px).</li><li><strong>Cor do ícone</strong> – Cores da plataforma (cores predefinidas), Cor de destaque (cor de destaque uniforme) ou Cor do texto.</li></ul>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Aviso legal: quando adicioná-lo",
-      "html": "<p class=\"text-mid\">No separador <strong>Aviso legal</strong>, pode adicionar um texto jurídico que aparecerá na parte inferior da assinatura em letra reduzida.</p><h3 class=\"h5 mt-6 mb-3\">Quando adicionar um aviso legal</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Correspondência profissional</strong> – aviso de confidencialidade e pedido de eliminação em caso de envio errado.</li><li><strong>Requisitos setoriais</strong> – certos setores (ex.: jurídico, médico, financeiro) exigem informações específicas em cada mensagem.</li><li><strong>RGPD</strong> – informação sobre o tratamento de dados pessoais, se a empresa é responsável pelo tratamento.</li></ul><p class=\"text-mid mt-4\">Por predefinição, o campo está preenchido com um texto de confidencialidade de exemplo. Pode modificá-lo, eliminá-lo ou substituí-lo pelo seu próprio aviso. Se o campo estiver vazio, nenhum aviso aparecerá na assinatura.</p>"
+      "title": "Como adicionar links de redes sociais",
+      "html": "<p class=\"text-mid\">No separador <strong>Redes sociais</strong>, pode adicionar links para os seus perfis. O criador de assinaturas suporta doze plataformas: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (antigo Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram e Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Como fazer</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Abra o separador <strong>Redes sociais</strong>.</li><li>Junto a cada plataforma, cole o URL completo do seu perfil.</li><li>Preencha apenas as plataformas que utiliza. Os campos vazios não aparecem na assinatura.</li></ol><h3 class=\"h5 mt-6 mb-3\">Ícones de redes sociais</h3><p class=\"text-mid\">Ative <strong>Mostrar ícones junto aos nomes</strong> para ver ícones SVG a cores em vez de texto.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Tamanho</strong> — Pequeno (16 px), Médio (20 px) ou Grande (24 px).</li><li><strong>Cor</strong> — Cores da plataforma, Cor de destaque (uniforme) ou Cor do texto.</li></ul>"
     },
     {
       "type": "gap",
@@ -167,7 +185,7 @@
     {
       "type": "sectionInfo",
       "title": "Personalização da aparência",
-      "html": "<p class=\"text-mid\">No separador <strong>Aparência</strong>, pode personalizar as cores, o tipo de letra e outros elementos visuais da assinatura.</p><h3 class=\"h5 mt-6 mb-3\">Temas de cores</h3><p class=\"text-mid\">No topo do separador, encontra cinco temas predefinidos: Escuro, Azul, Roxo, Verde e Cinzento. Um clique num tema define automaticamente a cor de destaque e a cor do texto. É a forma mais rápida de obter uma assinatura coerente.</p><h3 class=\"h5 mt-6 mb-3\">Cores</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Cor de destaque</strong> – utilizada para a barra lateral/superior, o botão CTA e os links. Pode escolher qualquer cor da paleta.</li><li><strong>Cor do texto</strong> – cor de todos os textos da assinatura (nome, contactos, aviso legal).</li><li><strong>Cor de fundo</strong> – cor de fundo de toda a assinatura. Branco por predefinição, mas modificável.</li></ul><h3 class=\"h5 mt-6 mb-3\">Tipo de letra e tamanho</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Tipo de letra</strong> – opções: Arial, Verdana, Tahoma, Trebuchet MS e Georgia. Todos são compatíveis com os clientes de e-mail e serão apresentados corretamente no destinatário.</li><li><strong>Tamanho do texto</strong> – três opções: Pequeno (12 px), Standard (14 px) e Maior (16 px).</li></ul>"
+      "html": "<p class=\"text-mid\">No separador <strong>Aparência</strong>, pode personalizar cores, tipo de letra e outros elementos visuais.</p><h3 class=\"h5 mt-6 mb-3\">Temas de cores</h3><p class=\"text-mid\">No topo do separador, cinco temas predefinidos: Escuro, Azul, Roxo, Verde e Cinzento. Um clique aplica automaticamente a cor de destaque e a cor do texto.</p><h3 class=\"h5 mt-6 mb-3\">Cores individuais</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Cor de destaque</strong> — para a barra lateral ou superior, o botão CTA e os links.</li><li><strong>Cor do texto</strong> — cor de todos os textos da assinatura.</li><li><strong>Cor de fundo</strong> — fundo da assinatura. Branco por predefinição.</li></ul><h3 class=\"h5 mt-6 mb-3\">Tipo de letra e tamanho</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Tipo de letra</strong> — Arial, Verdana, Tahoma, Trebuchet MS ou Georgia. Todos são compatíveis com clientes de e-mail.</li><li><strong>Tamanho</strong> — Pequeno (12 px), Standard (14 px) ou Maior (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Rebordo da assinatura</h3><p class=\"text-mid\">Pode adicionar um rebordo em qualquer lado: esquerdo, direito, superior ou inferior. O rebordo utiliza a cor de destaque.</p>"
     },
     {
       "type": "gap",
@@ -175,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Estilo de texto: cores e tamanhos dos elementos individuais",
-      "html": "<p class=\"text-mid\">No separador <strong>Estilo de texto</strong>, pode personalizar individualmente a cor e o tamanho do tipo de letra de cada elemento textual da assinatura.</p><h3 class=\"h5 mt-6 mb-3\">Elementos disponíveis</h3><p class=\"text-mid\">Apenas os elementos que contêm dados são apresentados. Para cada elemento, pode configurar:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Nome completo</strong> – apresentado por predefinição na cor de destaque.</li><li><strong>Cargo</strong> – o seu papel na empresa.</li><li><strong>Empresa</strong> – nome da organização.</li><li><strong>Contactos</strong> – e-mail, telefone, site (labels).</li><li><strong>Redes sociais</strong> – links para os perfis.</li><li><strong>Aviso legal</strong> – texto jurídico na parte inferior da assinatura.</li></ul><h3 class=\"h5 mt-6 mb-3\">Como mudar a cor</h3><p class=\"text-mid\">Junto a cada elemento, encontra uma fila de opções de cor. Clique num quadrado de cor para o selecionar. Também pode adicionar uma cor personalizada clicando no quadrado com o sinal de mais: escolha uma cor e clique em Guardar. As cores personalizadas (até 8) são partilhadas entre todos os elementos.</p><p class=\"text-mid mt-3\">O botão com o ícone de reposição restaura a cor predefinida do elemento.</p><h3 class=\"h5 mt-6 mb-3\">Como mudar o tamanho</h3><p class=\"text-mid\">Na segunda linha, encontra o controlo de tamanho com os botões - e +. O valor indica o desvio em relação ao tamanho base do tipo de letra (definido no separador Aparência). Intervalo: de -4 a +4 píxeis.</p>"
+      "title": "Estilo de texto — cores e tamanhos por elemento",
+      "html": "<p class=\"text-mid\">No separador <strong>Estilo de texto</strong>, pode ajustar individualmente a cor e o tamanho de cada elemento textual.</p><h3 class=\"h5 mt-6 mb-3\">Elementos disponíveis</h3><p class=\"text-mid\">Apenas os elementos com dados são apresentados:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Nome</strong> — na cor de destaque por predefinição.</li><li><strong>Cargo</strong> — o seu papel na empresa.</li><li><strong>Empresa</strong> — nome da organização.</li><li><strong>Contactos</strong> — e-mail, telefone, site.</li><li><strong>Redes sociais</strong> — links para perfis.</li><li><strong>Aviso legal</strong> — texto jurídico no final.</li></ul><h3 class=\"h5 mt-6 mb-3\">Alterar a cor</h3><p class=\"text-mid\">Junto a cada elemento, clique num quadrado de cor para o selecionar. Pode também adicionar cores personalizadas (até 8), partilhadas entre todos os elementos. O botão de reposição restaura a cor predefinida.</p><h3 class=\"h5 mt-6 mb-3\">Alterar o tamanho</h3><p class=\"text-mid\">Abaixo das cores, botões de menos e mais ajustam o tamanho. O valor indica o desvio em relação ao tamanho base (definido no separador Aparência). Intervalo: de −4 a +4 píxeis.</p>"
     },
     {
       "type": "gap",
@@ -184,8 +202,26 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Espaçamentos entre os elementos",
-      "html": "<p class=\"text-mid\">No separador <strong>Espaçamentos</strong>, pode controlar precisamente as distâncias entre os elementos individuais da assinatura.</p><h3 class=\"h5 mt-6 mb-3\">Margem interior da assinatura</h3><p class=\"text-mid\">No topo do separador, encontra a opção de margem interior – ou seja, a distância entre o conteúdo da assinatura e os seus limites. Três valores estão disponíveis: 8 px (pequeno), 16 px (médio) e 24 px (grande).</p><h3 class=\"h5 mt-6 mb-3\">Espaçamentos entre os elementos</h3><p class=\"text-mid\">Abaixo da margem, encontra controlos para os elementos individuais da assinatura. Cada controlo tem botões + e - para aumentar ou diminuir o espaçamento. Apenas as opções dos elementos atualmente presentes na assinatura são apresentadas.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Após o nome</strong> – espaço abaixo da linha do nome.</li><li><strong>Após o cargo / empresa</strong> – espaço abaixo da linha do cargo e do nome da empresa.</li><li><strong>Após a linha adicional</strong> – espaço abaixo da descrição (se preenchida).</li><li><strong>Após os contactos</strong> – espaço abaixo do e-mail, telefone e site.</li><li><strong>Após as redes sociais</strong> – espaço abaixo dos links para os perfis.</li><li><strong>Após o botão CTA</strong> – espaço abaixo do botão (se ativado).</li><li><strong>Antes do aviso legal</strong> – espaço acima do texto jurídico.</li></ul><p class=\"text-mid mt-4\">Se remover os dados de um campo (ex.: apagar o telefone), a opção de espaçamento correspondente desaparece automaticamente do separador.</p>"
+      "title": "Espaçamentos entre elementos",
+      "html": "<p class=\"text-mid\">No separador <strong>Espaçamentos</strong>, pode controlar a distância exata entre cada parte da assinatura.</p><h3 class=\"h5 mt-6 mb-3\">Margem interior</h3><p class=\"text-mid\">No topo, a opção de margem interior define a distância entre o conteúdo e os limites da assinatura. Três valores: 8 px (pequeno), 16 px (médio) e 24 px (grande).</p><h3 class=\"h5 mt-6 mb-3\">Espaçamentos por elemento</h3><p class=\"text-mid\">Abaixo, controlos com botões mais e menos para cada elemento presente na assinatura:</p><ul class=\"text-mid mt-3 list-disc space-y-1 pl-6\"><li><strong>Após o nome</strong></li><li><strong>Após o cargo / empresa</strong></li><li><strong>Após a linha adicional</strong></li><li><strong>Após os contactos</strong></li><li><strong>Após as redes sociais</strong></li><li><strong>Após o botão CTA</strong></li><li><strong>Antes do aviso legal</strong></li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Aviso legal e RGPD/LGPD",
+      "html": "<p class=\"text-mid\">No separador <strong>Aviso legal</strong>, pode adicionar um texto jurídico que aparece no final da assinatura em letra reduzida.</p><h3 class=\"h5 mt-6 mb-3\">Quando adicionar um aviso?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Correspondência profissional</strong> — aviso de confidencialidade pedindo a eliminação em caso de envio errado.</li><li><strong>Requisitos setoriais</strong> — certos setores (jurídico, médico, financeiro) exigem menções específicas.</li><li><strong>RGPD (Portugal/UE)</strong> — informação sobre o tratamento de dados pessoais.</li><li><strong>LGPD (Brasil)</strong> — aviso sobre o tratamento de dados pessoais ao abrigo da Lei Geral de Proteção de Dados.</li></ul><p class=\"text-mid mt-4\">Por predefinição, o campo contém um texto de exemplo. Pode editá-lo, eliminá-lo ou substituí-lo pelo seu próprio aviso.</p><h3 class=\"h5 mt-6 mb-3\">Linha separadora</h3><p class=\"text-mid\">Ative <strong>Mostrar linha separadora</strong> para adicionar uma linha horizontal acima do texto jurídico. Opções: estilo (contínua, tracejada, pontilhada), espessura (1–3 px) e cor.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Boas práticas para uma assinatura de e-mail eficaz",
+      "html": "<p class=\"text-mid\">Um bom rodapé de e-mail é claro, coerente e fácil de ler. Eis as recomendações essenciais:</p><h3 class=\"h5 mt-6 mb-3\">Seja breve</h3><p class=\"text-mid\">Quatro a sete linhas de dados de contacto são suficientes. Uma assinatura demasiado longa empurra o conteúdo da mensagem para baixo, sobretudo no telemóvel.</p><h3 class=\"h5 mt-6 mb-3\">Duas ou três cores no máximo</h3><p class=\"text-mid\">Demasiadas cores dão um aspeto desordenado. Escolha uma cor de destaque que combine com a sua marca e mantenha o restante num tom escuro e neutro.</p><h3 class=\"h5 mt-6 mb-3\">Inclua sempre um apelo à ação</h3><p class=\"text-mid\">Um botão CTA transforma cada e-mail num canal de comunicação ativo. Ligue-o a uma agenda de reuniões, um portfólio ou um formulário de contacto.</p><h3 class=\"h5 mt-6 mb-3\">Escolha tipos de letra compatíveis</h3><p class=\"text-mid\">O gerador oferece cinco tipos de letra seguros: Arial, Verdana, Tahoma, Trebuchet MS e Georgia. Evite tipos de letra decorativos — serão substituídos por uma fonte padrão no dispositivo do destinatário.</p><h3 class=\"h5 mt-6 mb-3\">Aloje as imagens no seu próprio domínio</h3><p class=\"text-mid\">Se adicionar um logótipo ou avatar, use uma imagem alojada no seu site ou num CDN fiável. Evite encurtadores de links, Google Drive ou Dropbox — alguns clientes de e-mail bloqueiam imagens destas fontes.</p>"
     },
     {
       "type": "gap",
@@ -194,7 +230,7 @@
     {
       "type": "sectionInfo",
       "title": "Gravação automática e reposição",
-      "html": "<p class=\"text-mid\">O gerador grava automaticamente todas as definições na memória do navegador (localStorage). Após atualizar a página ou reabrir a ferramenta, os dados, o layout, as cores e todas as outras opções serão restaurados.</p><h3 class=\"h5 mt-6 mb-3\">Como funciona a gravação automática</h3><p class=\"text-mid\">Cada alteração (texto, cor, layout, espaçamento) é imediatamente gravada na memória do navegador. A gravação faz-se automaticamente em segundo plano, sem clicar em nenhum botão.</p><h3 class=\"h5 mt-6 mb-3\">Como repor as definições</h3><p class=\"text-mid\">Abaixo da pré-visualização da assinatura, encontra o botão <strong>Repor aparência</strong>. Um clique abre uma janela de confirmação. Confirmar a reposição restaura todos os dados e definições para os valores predefinidos. Esta operação é irreversível.</p><h3 class=\"h5 mt-6 mb-3\">Exportar e importar a configuração</h3><p class=\"text-mid\">Abaixo da pré-visualização da assinatura, encontra dois botões adicionais: <strong>Exportar definições</strong> e <strong>Importar definições</strong>. A exportação guarda todos os dados, cores, layout, espaçamentos e estilos de texto num ficheiro JSON. A importação carrega uma configuração previamente guardada a partir de um ficheiro.</p><p class=\"text-mid mt-3\">Esta função é particularmente útil para transferir a configuração da assinatura entre computadores, partilhar as definições com colegas ou manter uma cópia de segurança dos seus ajustes antes de uma reposição.</p>"
+      "html": "<p class=\"text-mid\">O criador de assinaturas grava automaticamente o seu trabalho na memória do navegador (localStorage). Ao atualizar a página ou regressar mais tarde, todos os dados, cores e definições são restaurados.</p><h3 class=\"h5 mt-6 mb-3\">Repor</h3><p class=\"text-mid\">Abaixo da pré-visualização, o botão <strong>Repor aparência</strong> restaura todos os dados e definições para os valores predefinidos após confirmação. Esta ação é irreversível.</p><h3 class=\"h5 mt-6 mb-3\">Exportar e importar a configuração</h3><p class=\"text-mid\">Os botões <strong>Exportar definições</strong> e <strong>Importar definições</strong> permitem guardar e restaurar a configuração completa através de um ficheiro JSON. Útil para transferir a assinatura entre computadores ou partilhá-la com colegas.</p>"
     },
     {
       "type": "gap",
@@ -203,13 +239,13 @@
     {
       "type": "sectionSteps",
       "title": "Como copiar a assinatura para o Gmail ou Outlook",
-      "description": "Quando a assinatura estiver pronta, bastam alguns passos para a adicionar ao seu cliente de e-mail:",
+      "description": "Quando o rodapé estiver pronto, siga estes três passos:",
       "grid": "three",
       "items": [
         {
           "icon": "RiClipboardLine",
           "title": "1. Copie o código",
-          "description": "O botão Copiar a assinatura (Gmail / Outlook) copia a assinatura para a área de transferência em HTML formatado, pronto a colar."
+          "description": "Clique em Copiar a assinatura (Gmail / Outlook). A assinatura é copiada como HTML formatado para a área de transferência."
         },
         {
           "icon": "RiSettings3Line",
@@ -219,7 +255,7 @@
         {
           "icon": "RiSaveLine",
           "title": "3. Cole e guarde",
-          "description": "No campo de assinatura, utilize Ctrl+V (Windows) ou Cmd+V (Mac). A assinatura aparecerá com todas as cores e formatação. Guarde as alterações."
+          "description": "No campo de assinatura, utilize Ctrl + V (Windows) ou Cmd + V (Mac). A assinatura aparece com todas as cores e formatação. Guarde as alterações."
         }
       ]
     },
@@ -229,8 +265,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Pré-visualização da assinatura e opções de exportação",
-      "html": "<p class=\"text-mid\">O painel de pré-visualização apresenta-se à direita do editor e atualiza-se automaticamente a cada alteração. A pré-visualização é fixa no ecrã (sticky) e permanece visível mesmo ao deslocar as opções de edição.</p><h3 class=\"h5 mt-6 mb-3\">Mudança de fundo da pré-visualização</h3><p class=\"text-mid\">Acima da pré-visualização, encontra três botões de mudança de fundo: <strong>Claro</strong> (fundo cinzento predefinido), <strong>Escuro</strong> (fundo escuro, útil para verificar a legibilidade em fundo escuro) e <strong>Grelha</strong> (padrão em grelha, permite ver a transparência e os limites da assinatura).</p><h3 class=\"h5 mt-6 mb-3\">Botões de ação</h3><p class=\"text-mid\">Abaixo da pré-visualização, encontra vários botões:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Copiar a assinatura (Gmail / Outlook)</strong> – copia a assinatura em HTML formatado para a área de transferência. Cole-a diretamente nas definições de assinatura.</li><li><strong>Copiar código HTML</strong> – copia o código HTML bruto para a área de transferência. Útil para colar num editor HTML ou CMS.</li><li><strong>Transferir como HTML</strong> – guarda o código da assinatura como ficheiro .html no disco. Útil para arquivo ou partilha com um programador.</li><li><strong>Mostrar código HTML</strong> – abre uma janela modal com o código fonte da assinatura. Pode consultá-lo e copiá-lo diretamente a partir da janela.</li><li><strong>Exportar definições</strong> – guarda a configuração completa da assinatura (dados, cores, layout, espaçamentos, estilos) num ficheiro JSON.</li><li><strong>Importar definições</strong> – carrega a configuração a partir de um ficheiro JSON. Todas as definições são aplicadas automaticamente.</li><li><strong>Repor aparência</strong> – restaura todos os dados e definições para os valores predefinidos (após confirmação).</li></ul>"
+      "title": "Pré-visualização e opções de exportação",
+      "html": "<p class=\"text-mid\">O painel de pré-visualização apresenta-se à direita do editor e atualiza-se automaticamente a cada alteração. Está fixo no ecrã (sticky) e permanece visível ao deslocar as opções.</p><h3 class=\"h5 mt-6 mb-3\">Fundos de pré-visualização</h3><p class=\"text-mid\">Acima da pré-visualização, três botões: <strong>Claro</strong> (fundo cinzento), <strong>Escuro</strong> (para verificar a legibilidade) e <strong>Grelha</strong> (mostra transparência e limites).</p><h3 class=\"h5 mt-6 mb-3\">Botões de ação</h3><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Copiar a assinatura (Gmail / Outlook)</strong> — copia como HTML formatado.</li><li><strong>Copiar código HTML</strong> — copia o código fonte.</li><li><strong>Transferir como HTML</strong> — guarda como ficheiro .html.</li><li><strong>Mostrar código HTML</strong> — abre uma janela com o código fonte.</li><li><strong>Exportar definições</strong> — guarda a configuração como ficheiro JSON.</li><li><strong>Importar definições</strong> — carrega uma configuração de um ficheiro JSON.</li><li><strong>Repor aparência</strong> — restaura os valores predefinidos.</li></ul>"
     },
     {
       "type": "gap",
@@ -245,22 +281,22 @@
         {
           "icon": "RiBriefcaseLine",
           "title": "Empresários e freelancers",
-          "description": "Uma assinatura profissional em cada mensagem sem recorrer a um designer."
+          "description": "Assinatura profissional em cada mensagem, sem recorrer a um designer nem escrever código."
         },
         {
           "icon": "RiTeamLine",
           "title": "Equipas de empresa",
-          "description": "Cada colaborador cria a sua própria assinatura no mesmo estilo. Identidade coerente em toda a empresa."
+          "description": "Cada colaborador cria a sua assinatura no mesmo estilo. Exporte a configuração JSON para uniformizar toda a equipa."
         },
         {
           "icon": "RiHandCoinLine",
           "title": "Comerciais",
-          "description": "Um botão CTA com link para um calendário ou uma oferta aumenta as hipóteses de conseguir uma reunião."
+          "description": "Um botão CTA com link para agenda ou catálogo transforma cada e-mail numa oportunidade de negócio."
         },
         {
           "icon": "RiScales3Line",
           "title": "Advogados, contabilistas, médicos",
-          "description": "Possibilidade de adicionar aviso legal, número de licença, NIF ou outros dados exigidos pelo setor."
+          "description": "Adicione aviso legal, número de cédula profissional, NIF ou outros dados exigidos pelo seu setor."
         }
       ]
     },
@@ -270,7 +306,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "O que torna este gerador especial?",
+      "title": "O que torna este gerador de assinaturas especial?",
       "grid": "three",
       "items": [
         {
@@ -280,13 +316,13 @@
         },
         {
           "icon": "RiUserLine",
-          "title": "Gravação automática no navegador",
-          "description": "Cada alteração é automaticamente gravada na memória do navegador. Após atualizar, a assinatura permanece disponível."
+          "title": "Gravação automática",
+          "description": "Cada alteração é automaticamente gravada no navegador. Após atualizar, a assinatura permanece disponível."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Exportar e importar a configuração",
-          "description": "A configuração completa pode ser exportada num ficheiro JSON e partilhada com colegas."
+          "title": "Exportar e importar",
+          "description": "Guarde a configuração completa num ficheiro JSON e partilhe-a com colegas."
         },
         {
           "icon": "RiAppsLine",
@@ -296,16 +332,16 @@
         {
           "icon": "RiPaletteLine",
           "title": "Personalização avançada",
-          "description": "Forma e tamanho do avatar, estilo de linha, cores e tamanhos de texto individuais."
+          "description": "Forma e tamanho do avatar, estilo de linha, cores e tamanhos individuais, rebordo da assinatura."
         },
         {
           "icon": "RiFileCodeLine",
           "title": "Múltiplas opções de exportação",
-          "description": "Copiar HTML, transferir ficheiro, pré-visualização do código fonte, exportação/importação da configuração JSON."
+          "description": "Copiar HTML, transferir ficheiro, ver código fonte, exportar/importar configuração JSON."
         },
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacidade",
+          "title": "Privacidade total",
           "description": "Os dados não são enviados para nenhum servidor. O gerador funciona inteiramente no navegador."
         },
         {
@@ -331,7 +367,7 @@
       "items": [
         {
           "question": "Como inserir a assinatura no Gmail?",
-          "answer": "Clique em Copiar a assinatura (Gmail / Outlook), abra Gmail → Definições → Ver todas as definições → Assinatura, depois cole com Ctrl+V (ou Cmd+V). A formatação é automaticamente mantida – cores, links e ícones de redes sociais permanecem intactos.",
+          "answer": "Clique em Copiar a assinatura (Gmail / Outlook). Abra Gmail → Definições → Ver todas as definições → Assinatura. Cole com Ctrl + V (ou Cmd + V). As cores, links e ícones são automaticamente mantidos.",
           "answerSchemaText": "Copiar a assinatura, Gmail → Definições → Assinatura, Ctrl+V."
         },
         {
@@ -340,59 +376,54 @@
           "answerSchemaText": "Sim. Desktop: Ficheiro → Opções → Assinaturas. Web: Definições → Correio → Assinatura."
         },
         {
-          "question": "Que layouts estão disponíveis?",
-          "answer": "8 layouts: Standard, Barra superior, Labels à esquerda, Centrado, Compacto, Duas colunas, Minimalista e Barra inferior. Cada layout organiza de forma diferente os dados de contacto, a foto de perfil e os ícones de redes sociais.",
-          "answerSchemaText": "8 layouts: Standard, Barra sup., Labels esq., Centrado, Compacto, Duas colunas, Minimalista, Barra inf."
+          "question": "Que dados legais devo incluir na minha assinatura?",
+          "answer": "Depende do seu país e forma jurídica. Em Portugal, as sociedades devem indicar NIF, dados do registo comercial e sede. No Brasil, o CNPJ e a razão social. Consulte a secção de requisitos legais nesta página e utilize o campo Dados legais do gerador.",
+          "answerSchemaText": "Segundo o país: NIF em Portugal, CNPJ no Brasil. Ver secção de requisitos legais."
         },
         {
           "question": "Posso adicionar links de redes sociais?",
-          "answer": "Sim. Pode adicionar links para LinkedIn, Instagram, Facebook, TikTok, YouTube, X (Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram e Pinterest. Apenas as plataformas com URL preenchido aparecem na assinatura.",
+          "answer": "Sim. O gerador suporta doze plataformas: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram e Pinterest. Apenas as plataformas com URL aparecem na assinatura.",
           "answerSchemaText": "12 plataformas: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest."
         },
         {
-          "question": "Posso adicionar uma foto de perfil ou um logótipo?",
-          "answer": "Sim. Pode indicar um URL de imagem para a sua foto de perfil e/ou o logótipo da empresa. A imagem aparece na assinatura. Utilize um URL acessível publicamente (ex.: a partir do seu site).",
-          "answerSchemaText": "Sim. Foto de perfil e logótipo via URL."
-        },
-        {
           "question": "Os meus dados são armazenados?",
-          "answer": "Todos os dados são armazenados localmente no seu navegador (localStorage). Nada é enviado para um servidor. Pode exportar e importar as definições para transferir a assinatura entre dispositivos.",
-          "answerSchemaText": "Localmente no navegador (localStorage). Sem envio para servidor. Exportação/importação possível."
+          "answer": "Todos os dados ficam na memória do navegador (localStorage). Nada é enviado para um servidor. Pode exportar e importar as definições para transferir a assinatura entre dispositivos.",
+          "answerSchemaText": "Localmente no navegador. Sem envio para servidor. Exportação/importação possível."
         },
         {
-          "question": "O que é um link CTA na assinatura?",
-          "answer": "Um link CTA (Call to Action) é um botão ou link opcional na parte inferior da assinatura – ex.: Marcar reunião, Pedir orçamento ou Ver portfólio. Redireciona o destinatário diretamente para uma página à sua escolha.",
-          "answerSchemaText": "Um link de ação opcional como Marcar reunião na parte inferior da assinatura."
+          "question": "O que é um botão CTA na assinatura?",
+          "answer": "Um botão CTA (apelo à ação) é um link opcional no final da assinatura, por exemplo Marcar reunião, Pedir orçamento ou Ver portfólio. Redireciona o destinatário para uma página à sua escolha.",
+          "answerSchemaText": "Um link de ação opcional como Marcar reunião no final da assinatura."
         },
         {
-          "question": "Posso adicionar um aviso legal?",
-          "answer": "Sim. A ferramenta inclui um campo para aviso legal (disclaimer). O texto é apresentado em tamanho mais pequeno sob a assinatura – ex.: avisos de confidencialidade ou informações RGPD.",
-          "answerSchemaText": "Sim. Campo dedicado para disclaimer/RGPD sob a assinatura."
+          "question": "O botão de cópia está inativo — porquê?",
+          "answer": "Para copiar a assinatura, preencha pelo menos dois campos: nome e endereço de e-mail.",
+          "answerSchemaText": "Nome e endereço de e-mail devem estar preenchidos."
         },
         {
-          "question": "Como exportar ou importar as definições da assinatura?",
-          "answer": "Abaixo da pré-visualização da assinatura, encontra os botões Exportar definições e Importar definições. A exportação guarda a configuração completa (dados, cores, layout, espaçamentos, estilos de texto) num ficheiro JSON. A importação carrega a configuração a partir de um ficheiro e aplica automaticamente todas as definições.",
-          "answerSchemaText": "Exportação em ficheiro JSON, importação carrega a configuração e aplica-a automaticamente."
+          "question": "Como tornar a assinatura compatível com telemóveis?",
+          "answer": "Mantenha a assinatura curta (quatro a sete linhas), use um tamanho de texto padrão (14 px) e escolha um layout adequado a ecrãs estreitos. Standard e Compacto são as melhores opções.",
+          "answerSchemaText": "Curta, 14 px, layout Standard ou Compacto."
         },
         {
-          "question": "Como visualizar o código fonte da assinatura gerada?",
-          "answer": "O botão Mostrar código HTML abaixo da pré-visualização abre uma janela modal com o código fonte HTML completo. Pode consultá-lo e copiá-lo diretamente a partir da janela. Em alternativa, Copiar código HTML copia o código para a área de transferência, e Transferir como HTML guarda-o como ficheiro.",
-          "answerSchemaText": "Botão Mostrar código HTML abre uma janela com o código fonte. Cópia ou transferência também disponíveis."
+          "question": "Onde devo alojar o meu logótipo?",
+          "answer": "No seu próprio site ou num CDN fiável. Evite Google Drive, Dropbox ou encurtadores de links. A imagem deve ser quadrada, pelo menos 120 × 120 px, em formato JPG, PNG ou WebP.",
+          "answerSchemaText": "No seu site ou num CDN. Quadrada, mín. 120 × 120 px, JPG/PNG/WebP."
+        },
+        {
+          "question": "Como exporto ou importo as definições?",
+          "answer": "Abaixo da pré-visualização encontra os botões Exportar definições e Importar definições. O primeiro guarda a configuração completa como ficheiro JSON. O segundo carrega e aplica automaticamente.",
+          "answerSchemaText": "Exportar como JSON, importar carrega e aplica a configuração."
         },
         {
           "question": "Posso alterar a forma e o tamanho do avatar?",
-          "answer": "Sim. Após colar o URL de uma imagem no separador Dados, surgem opções adicionais: Forma do avatar (redondo, arredondado, quadrado) e Tamanho do avatar (pequeno – 40 px, médio – 56 px, grande – 72 px). As definições aplicam-se a todos os layouts.",
-          "answerSchemaText": "Sim. Forma (redondo, arredondado, quadrado) e tamanho (40, 56 ou 72 px) configuráveis."
+          "answer": "Sim. Após colar um URL de imagem no separador Dados, surgem opções: forma (redondo, arredondado, quadrado) e tamanho (pequeno — 40 px, médio — 56 px, grande — 72 px).",
+          "answerSchemaText": "Sim. Forma (redondo, arredondado, quadrado) e tamanho (40, 56, 72 px)."
         },
         {
-          "question": "Como alterar o estilo da linha de separação?",
-          "answer": "No separador Aviso legal, ative a opção Mostrar linha de separação. Surgem opções adicionais: estilo de linha (contínua, tracejada, pontilhada), espessura (1–3 px) e cor (cinzento por predefinição ou qualquer cor da paleta).",
-          "answerSchemaText": "Ativar a linha de separação, depois configurar estilo, espessura e cor."
-        },
-        {
-          "question": "O botão de cópia está inativo – porquê?",
-          "answer": "Para copiar a assinatura, preencha pelo menos dois campos: nome e endereço de e-mail. Verifique se ambos os campos contêm dados.",
-          "answerSchemaText": "Nome e endereço de e-mail devem estar preenchidos."
+          "question": "Como altero o estilo da linha separadora?",
+          "answer": "No separador Aviso legal, ative Mostrar linha separadora. Surgem opções: estilo (contínua, tracejada, pontilhada), espessura (1–3 px) e cor.",
+          "answerSchemaText": "Ativar a linha, depois configurar estilo, espessura e cor."
         }
       ]
     },
@@ -402,8 +433,8 @@
     },
     {
       "type": "contactForm",
-      "title": "Ajude-nos a melhorar nossas ferramentas",
-      "description": "Tem uma ideia para uma nova funcionalidade, encontrou um bug ou quer sugerir outra ferramenta que facilitaria seu trabalho? Escreva-nos – respondemos em 24 horas.",
+      "title": "Ajude-nos a melhorar as nossas ferramentas",
+      "description": "Tem uma ideia para uma nova funcionalidade, encontrou um bug ou quer sugerir outra ferramenta? Escreva-nos — respondemos em 24 horas.",
       "imageSrc": "/assets/tools/free-html-email-signature-generator/gerador-de-assinatura-de-email-gratuito-pt.webp",
       "imageAlt": "Gerador de assinatura de email – Arteon",
       "defaultSubject": "Feedback: Gerador de assinatura de email"

@@ -25,10 +25,18 @@
   "schemas": {
     "software": {
       "name": "Generator stopki email HTML – kreator podpisu mailowego",
-      "alternateName": ["Generator podpisu e-mail HTML", "Kreator sygnaturki email", "Generator stopki email po polsku", "Kreator podpisu mailowego online"],
+      "alternateName": [
+        "Generator podpisu e-mail HTML",
+        "Kreator sygnaturki email",
+        "Generator stopki email po polsku",
+        "Kreator podpisu mailowego",
+        "Darmowy generator podpisu e-mail",
+        "Generator stopki mailowej HTML",
+        "Narzędzie do tworzenia podpisu email"
+      ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Darmowy generator stopki mailowej HTML po polsku. Dodaj dane kontaktowe, link CTA i profile w mediach społecznościowych, a następnie skopiuj gotowy kod podpisu do Gmaila, Outlooka i innych klientów pocztowych.",
+      "description": "Darmowy generator stopki e-mail HTML i kreator profesjonalnego podpisu mailowego. Dodaj dane kontaktowe, link CTA i profile social media. Skopiuj gotowy kod do Gmaila, Outlooka, Apple Mail lub innego klienta. Bez rejestracji.",
       "featureList": [
         "Dane kontaktowe (imię, nazwisko, stanowisko, firma)",
         "Telefon, e-mail i adres strony WWW",
@@ -90,10 +98,10 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Dlaczego warto mieć profesjonalną stopkę mailową?",
-      "html": "<p class=\"text-mid\">Stopka mailowa (nazywana też podpisem e-mail lub sygnaturką) to blok informacji na końcu każdej wysyłanej wiadomości. Zawiera dane kontaktowe, stanowisko, nazwę firmy i często link do strony internetowej lub kalendarza spotkań.</p><p class=\"text-mid mt-3\">Odbiorca nie musi szukać numeru telefonu w poprzednich wiadomościach - wszystkie dane ma pod ręką. Profesjonalny podpis mailowy pokazuje też, że dbasz o szczegóły i spójny wizerunek firmy w korespondencji biznesowej.</p>",
+      "title": "Po co profesjonalna stopka mailowa?",
+      "html": "<p class=\"text-mid\">Stopka mailowa to krótki blok tekstu na końcu każdej wiadomości, którą wysyłasz. Niektórzy nazywają ją podpisem e-mail, sygnaturką lub stopką korespondencyjną. Zawiera imię i nazwisko, stanowisko, firmę oraz dane kontaktowe. Wiele sygnaturek zawiera także link do strony internetowej, kalendarza spotkań lub profili w mediach społecznościowych.</p><p class=\"text-mid mt-3\">Przeciętny pracownik biurowy wysyła od 30 do 40 e-maili dziennie. Każda z tych wiadomości to szansa na udostępnienie danych kontaktowych, wzmocnienie marki i ułatwienie odbiorcy nawiązania kontaktu. Dobrze zaprojektowana stopka oszczędza czas odbiorcy — nie musi szukać numeru telefonu w starszych wiadomościach.</p><p class=\"text-mid mt-3\">W Polsce profesjonalny podpis e-mail to nie tylko kwestia wizerunku. Spółki prawa handlowego (sp. z o.o., S.A.) są zobowiązane do zamieszczania określonych danych w korespondencji handlowej. Stopka mailowa jest najprostszym sposobem na spełnienie tych wymogów.</p>",
       "imageSrc": "/assets/tools/free-html-email-signature-generator/darmowy-generator-stopki-mailowej-pl.webp",
-      "imageAlt": "Generator stopki mailowej online – Arteon"
+      "imageAlt": "Generator stopki mailowej – Arteon"
     },
     {
       "type": "gap",
@@ -101,24 +109,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Jak korzystać z generatora stopki mailowej?",
-      "description": "Stworzenie profesjonalnego podpisu email to kilka minut:",
-      "grid": "three",
+      "title": "Jak stworzyć stopkę mailową w czterech krokach",
+      "description": "Stworzenie profesjonalnego podpisu e-mail zajmuje mniej niż pięć minut:",
+      "grid": "four",
       "items": [
         {
+          "icon": "RiMailLine",
           "title": "1. Wpisz dane",
-          "description": "Uzupełnij imię, nazwisko, stanowisko, firmę i dane kontaktowe.",
-          "icon": "RiEditLine"
+          "description": "Imię i nazwisko, stanowisko, firma, dane kontaktowe i opcjonalnie linki do mediów społecznościowych."
         },
         {
+          "icon": "RiPaletteLine",
           "title": "2. Dostosuj wygląd",
-          "description": "Wybierz układ, kolory, dodaj logo i linki do mediów społecznościowych.",
-          "icon": "RiPaletteLine"
+          "description": "Wybierz układ, schemat kolorów, czcionkę i dostosuj odstępy."
         },
         {
-          "title": "3. Skopiuj kod",
-          "description": "Przycisk Kopiuj stopkę przenosi gotowy kod do schowka. Wystarczy wkleić w ustawieniach Gmail, Outlook lub innego klienta.",
-          "icon": "RiCodeLine"
+          "icon": "RiLinksLine",
+          "title": "3. Dodaj CTA i social media",
+          "description": "Dodaj przycisk akcji i linki do profili w mediach społecznościowych."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Skopiuj i wklej",
+          "description": "Skopiuj stopkę i wklej ją do Gmaila, Outlooka lub innego klienta pocztowego."
         }
       ]
     },
@@ -127,19 +140,10 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "Jak wypełnić dane w stopce?",
-      "html": "<p class=\"text-mid\">W zakładce <strong>Dane</strong> znajdziesz wszystkie pola, które możesz uzupełnić. Tylko dwa z nich są wymagane: imię i nazwisko oraz adres e-mail. Pozostałe pola są opcjonalne i pojawią się w stopce tylko wtedy, gdy je wypełnisz.</p><h3 class=\"h5 mt-6 mb-3\">Pola w zakładce Dane</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Linia nad imieniem</strong> - dodatkowy tekst wyświetlany nad imieniem i nazwiskiem. Możesz tu wpisać nazwę firmy, hasło lub slogan.</li><li><strong>Avatar / logo (URL obrazu)</strong> - adres URL do zdjęcia profilowego lub logo firmy. Obraz powinien być kwadratowy (min. 120x120 px) i publicznie dostępny w internecie. Po wklejeniu adresu URL pojawią się dodatkowe opcje: <strong>Kształt avatara</strong> (okrągły, zaokrąglony lub kwadratowy) oraz <strong>Rozmiar avatara</strong> (mały - 40 px, średni - 56 px, duży - 72 px).</li><li><strong>Imię i nazwisko</strong> - pole wymagane. Wpisz swoje pełne imię i nazwisko.</li><li><strong>Tag przy imieniu</strong> - krótki tekst obok imienia, np. zaimki lub skrócone stanowisko.</li><li><strong>Stanowisko</strong> - rola w firmie, np. Kierownik sprzedaży, Specjalista ds. marketingu.</li><li><strong>Nazwa firmy</strong> - nazwa organizacji, którą reprezentujesz.</li><li><strong>Dodatkowa linia</strong> - krótki opis tego, czym się zajmujesz lub co oferujesz.</li><li><strong>E-mail</strong> - pole wymagane. Wpisz swój służbowy adres e-mail.</li><li><strong>Telefon</strong> - numer kontaktowy. Format dowolny, np. +48 600 000 000.</li><li><strong>Strona internetowa</strong> - pełny adres URL swojej strony, zaczynający się od https://.</li><li><strong>Adres</strong> - fizyczny adres firmy (ulica, miasto, kod pocztowy).</li><li><strong>Dane formalne</strong> - NIP, REGON, numer licencji lub inne dane wymagane w branży.</li></ul>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionDemo",
-      "title": "Układy stopki - który wybrać?",
-      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Układ stopki</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Pasek akcentu</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Pasek u góry</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Etykiety z lewej</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">Wyśrodkowany</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">Jan Kowalski</p><p class=\"text-mid text-sm\">Web Developer</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">jan@example.com</p><p class=\"text-mid\">+48 600 000 000</p></div></div></div>",
-      "html": "<p class=\"text-mid\">Generator oferuje osiem gotowych układów. Każdy prezentuje te same dane w inny sposób.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> - klasyczny układ pionowy, pasuje do większości zastosowań.</li><li><strong>Pasek u góry</strong> - poziomy pasek oddziela stopkę od treści.</li><li><strong>Etykiety z lewej</strong> - dwie kolumny: etykiety i wartości.</li><li><strong>Wyśrodkowany</strong> - formalny charakter, dane na środku.</li><li><strong>Kompaktowy</strong> - wszystko w jednej linii, minimalna wysokość.</li><li><strong>Dwie kolumny</strong> - dane po lewej, kontakt po prawej.</li><li><strong>Minimalistyczny</strong> - tylko najważniejsze informacje.</li><li><strong>Pasek na dole</strong> - kolorowy pasek z kontaktem na dole stopki.</li></ul>"
+      "title": "Co może zawierać stopka mailowa?",
+      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Dane osobowe</strong> — imię, nazwisko, stanowisko, firma</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Kontakt</strong> — telefon, e-mail, strona www, adres</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Grafika</strong> — zdjęcie profilowe i/lub logo firmy (URL)</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Social media</strong> — 12 platform z automatycznymi ikonami</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Przycisk CTA</strong> — przycisk akcji (np. Umów spotkanie)</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Dane formalne i klauzula</strong> — KRS, NIP, REGON, klauzula RODO</span></div></div>",
+      "html": "<p class=\"text-mid mb-4\">Generator oferuje rozbudowane możliwości personalizacji każdego elementu profesjonalnej stopki mailowej:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Dane osobowe</strong> — imię i nazwisko, stanowisko, firma i dział.</li><li><strong>Dane kontaktowe</strong> — telefon, e-mail, strona www i adres pocztowy.</li><li><strong>Elementy wizualne</strong> — zdjęcie profilowe, logo, schemat kolorów i czcionka.</li><li><strong>Social media</strong> — linki do 12 platform z automatycznie generowanymi ikonami.</li><li><strong>Przycisk CTA</strong> — opcjonalny link akcji z własnym tekstem i adresem URL.</li><li><strong>Dane formalne</strong> — KRS, NIP, REGON lub inne dane wymagane przez prawo lub branżę.</li><li><strong>Klauzula</strong> — nota prawna (poufność, RODO) w mniejszym rozmiarze czcionki.</li></ul>"
     },
     {
       "type": "gap",
@@ -147,8 +151,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Jak dodać przyciski CTA?",
-      "html": "<p class=\"text-mid\">Przycisk CTA (z ang. call-to-action, czyli wezwanie do działania) to klikalny element, który kieruje odbiorcę do wybranej strony. Może to być link do kalendarza spotkań, formularza kontaktowego lub oferty. Generator umożliwia dodanie dwóch przycisków CTA.</p><h3 class=\"h5 mt-6 mb-3\">Przycisk główny</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Otwórz zakładkę <strong>Przyciski</strong> w edytorze.</li><li>W sekcji <strong>Przycisk główny</strong> wpisz tekst, który zobaczy odbiorca, np. Umów bezpłatną konsultację.</li><li>W polu <strong>Link CTA</strong> wklej pełny adres URL strony. Adres musi zaczynać się od https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Przycisk dodatkowy</h3><p class=\"text-mid\">Możesz dodać drugi przycisk CTA w stylu outline (przezroczyste tło z obramowaniem). Wypełnij pola w sekcji <strong>Przycisk dodatkowy</strong> analogicznie jak dla przycisku głównego.</p><h3 class=\"h5 mt-6 mb-3\">Zaokrąglenie przycisków</h3><p class=\"text-mid\">Na dole zakładki Przyciski znajdziesz opcję <strong>Zaokrąglenie przycisków</strong>. Do wyboru masz trzy warianty: Brak (ostre rogi), Lekkie (delikatnie zaokrąglone) lub Pełne (owalny przycisk).</p><p class=\"text-mid mt-4\">Jeśli zostawisz oba pola puste, przycisk nie pojawi się w stopce. Jeśli wypełnisz tylko jedno pole, przycisk również nie będzie widoczny - potrzebne są oba: tekst i link.</p>"
+      "title": "Jak wypełnić dane podpisu",
+      "html": "<p class=\"text-mid\">W zakładce <strong>Dane</strong> znajdziesz wszystkie dostępne pola. Tylko dwa są obowiązkowe: imię i nazwisko oraz adres e-mail. Pozostałe pola są opcjonalne i pojawiają się w stopce tylko wtedy, gdy je wypełnisz.</p><h3 class=\"h5 mt-6 mb-3\">Dostępne pola</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Linia nad nazwiskiem</strong> — dodatkowy tekst nad nazwiskiem: nazwa firmy, slogan lub hasło.</li><li><strong>Avatar / logo (URL obrazka)</strong> — adres URL zdjęcia profilowego lub logo. Obrazek powinien być kwadratowy (min. 120 × 120 px) i publicznie dostępny. Po wklejeniu URL możesz wybrać <strong>kształt</strong> (okrągły, zaokrąglony, kwadratowy) i <strong>rozmiar</strong> (mały — 40 px, średni — 56 px, duży — 72 px).</li><li><strong>Imię i nazwisko</strong> — pole obowiązkowe.</li><li><strong>Tag obok nazwiska</strong> — krótki tekst obok nazwiska, np. zaimki lub skrócony tytuł.</li><li><strong>Stanowisko</strong> — Twoja rola w firmie, np. Dyrektor handlowy, Specjalista ds. marketingu.</li><li><strong>Firma</strong> — nazwa organizacji.</li><li><strong>Dodatkowa linia</strong> — krótki opis działalności lub oferty.</li><li><strong>E-mail</strong> — pole obowiązkowe. Służbowy adres e-mail.</li><li><strong>Telefon</strong> — numer kontaktowy w dowolnym formacie, np. +48 22 123 45 67.</li><li><strong>Strona www</strong> — pełny adres URL zaczynający się od https://.</li><li><strong>Adres</strong> — adres siedziby firmy (ulica, kod pocztowy, miasto).</li><li><strong>Dane formalne</strong> — KRS, NIP, REGON, numer licencji lub inne dane wymagane przez prawo. To pole jest szczególnie ważne dla spółek prawa handlowego — szczegóły poniżej.</li></ul>"
     },
     {
       "type": "gap",
@@ -156,8 +160,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Jak dodać linki do mediów społecznościowych?",
-      "html": "<p class=\"text-mid\">W zakładce <strong>Media społecznościowe</strong> możesz dodać linki do swoich profili. Generator obsługuje dwanaście platform: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (dawniej Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram i Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Jak to zrobić</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Otwórz zakładkę <strong>Media społecznościowe</strong> w edytorze.</li><li>Przy każdej platformie znajdziesz pole na adres URL. Wklej pełny link do swojego profilu, np. https://www.linkedin.com/in/twojprofil.</li><li>Wypełnij tylko te pola, które Cię interesują. Puste pola nie pojawią się w stopce.</li></ol><h3 class=\"h5 mt-6 mb-3\">Ikony mediów społecznościowych</h3><p class=\"text-mid\">Na dole zakładki Media społecznościowe znajdziesz opcję <strong>Pokaż ikony obok nazw serwisów</strong>. Po jej włączeniu linki wyświetlą się jako kolorowe ikony SVG zamiast samych nazw.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Rozmiar ikon</strong> - do wyboru: Małe (16 px), Średnie (20 px) lub Duże (24 px).</li><li><strong>Kolor ikon</strong> - Kolory platform (domyślne kolory każdej platformy), Kolor akcentu (jednolity kolor akcentu) lub Kolor tekstu.</li></ul>"
+      "title": "Wymogi prawne dotyczące stopek mailowych w Polsce",
+      "html": "<p class=\"text-mid\">W Polsce korespondencja handlowa spółek musi zawierać określone dane identyfikacyjne. Stopka mailowa jest najprostszym sposobem na spełnienie tych wymogów. Poniżej przedstawiamy najważniejsze przepisy. To informacja ogólna, nie porada prawna — zawsze sprawdzaj aktualne przepisy lub skonsultuj się z prawnikiem.</p><h3 class=\"h5 mt-6 mb-3\">Spółka z ograniczoną odpowiedzialnością (sp. z o.o.)</h3><p class=\"text-mid\">Zgodnie z art. 206 §1 Kodeksu spółek handlowych (KSH), każda wiadomość handlowa spółki z o.o. musi zawierać:</p><ul class=\"text-mid mt-2 list-disc space-y-1 pl-6\"><li>Firmę (pełną nazwę) spółki, w tym oznaczenie formy prawnej</li><li>Siedzibę i adres spółki</li><li>Numer KRS (Krajowy Rejestr Sądowy)</li><li>NIP (Numer Identyfikacji Podatkowej)</li><li>Wysokość kapitału zakładowego</li></ul><p class=\"text-mid mt-3\">Wpisz te dane w pole <strong>Dane formalne</strong> w generatorze — pojawią się automatycznie w każdej stopce.</p><h3 class=\"h5 mt-6 mb-3\">Spółka akcyjna (S.A.)</h3><p class=\"text-mid\">Zgodnie z art. 374 §1 KSH, spółka akcyjna musi podawać te same dane co sp. z o.o., a dodatkowo wysokość kapitału zakładowego wpłaconego.</p><h3 class=\"h5 mt-6 mb-3\">Jednoosobowa działalność gospodarcza</h3><p class=\"text-mid\">Osoby prowadzące jednoosobową działalność gospodarczą (JDG) nie podlegają bezpośrednio przepisom KSH dotyczącym korespondencji handlowej. Mimo to zaleca się umieszczanie w stopce: imienia i nazwiska, NIP, adresu siedziby oraz numeru REGON. To buduje zaufanie i spełnia ogólne wymogi Prawa przedsiębiorców.</p><h3 class=\"h5 mt-6 mb-3\">Spółki osobowe (jawna, partnerska, komandytowa)</h3><p class=\"text-mid\">Spółki osobowe wpisane do KRS podlegają analogicznym obowiązkom — muszą podawać firmę, siedzibę, numer KRS i NIP w korespondencji handlowej.</p><h3 class=\"h5 mt-6 mb-3\">Konsekwencje braku danych</h3><p class=\"text-mid\">Brak wymaganych danych w korespondencji handlowej może skutkować grzywną do 5 000 PLN nakładaną przez sąd rejestrowy (art. 595 §1 KSH). Ponadto kontrahenci mogą kwestionować ważność oświadczeń woli składanych bez prawidłowej identyfikacji nadawcy. Kompletna stopka z danymi formalnymi to nie tylko formalność — to ochrona przed problemami prawnymi.</p><h3 class=\"h5 mt-6 mb-3\">RODO i ochrona danych osobowych</h3><p class=\"text-mid\">Jeśli stopka mailowa zawiera dane osobowe (zdjęcie, prywatny numer telefonu), zastosowanie może mieć RODO (Rozporządzenie o Ochronie Danych Osobowych). Firmy działające jako administratorzy danych powinny rozważyć dodanie krótkiej klauzuli informacyjnej lub linku do polityki prywatności. Generator oferuje do tego pole <strong>Klauzula / RODO</strong>.</p>"
     },
     {
       "type": "gap",
@@ -165,8 +169,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Personalizacja wyglądu",
-      "html": "<p class=\"text-mid\">W zakładce <strong>Wygląd</strong> możesz dostosować kolory, czcionkę i inne elementy wizualne stopki.</p><h3 class=\"h5 mt-6 mb-3\">Motywy kolorystyczne</h3><p class=\"text-mid\">Na górze zakładki znajdziesz pięć gotowych motywów: Ciemny, Niebieski, Fioletowy, Zielony i Szary. Kliknięcie motywu automatycznie ustawia kolor akcentu i kolor tekstu. To najszybszy sposób na spójny wygląd stopki.</p><h3 class=\"h5 mt-6 mb-3\">Kolory</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Kolor akcentu</strong> - używany w pasku bocznym/górnym, przycisku CTA i linkach. Możesz wybrać dowolny kolor z palety.</li><li><strong>Kolor tekstu</strong> - kolor wszystkich tekstów w stopce (imię, dane kontaktowe, klauzula).</li><li><strong>Kolor tła</strong> - kolor tła całej stopki. Domyślnie biały, ale możesz go zmienić.</li></ul><h3 class=\"h5 mt-6 mb-3\">Czcionka i rozmiar</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Czcionka</strong> - do wyboru: Arial, Verdana, Tahoma, Trebuchet MS i Georgia. Wszystkie są bezpieczne dla e-maili i wyświetlą się poprawnie u odbiorcy.</li><li><strong>Rozmiar tekstu</strong> - trzy opcje: Mały (12 px), Standard (14 px) i Większy (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Dodatkowe ustawienia</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Ramka stopki</strong> - możesz dodać ramkę do stopki wybierając dowolną kombinację stron (lewa, prawa, góra, dół). Zaznaczenie wszystkich stron automatycznie ustawia pełną ramkę. Ramka przyjmuje kolor akcentu.</li></ul>"
+      "title": "Jak wypełnić pole Dane formalne — przykłady",
+      "html": "<p class=\"text-mid\">Pole <strong>Dane formalne</strong> w zakładce Dane to wieloliniowe pole tekstowe na dane identyfikacyjne firmy. Przykłady:</p><ul class=\"text-mid mt-3 list-disc space-y-3 pl-6\"><li><strong>Sp. z o.o.</strong> — Firma Przykład sp. z o.o. | KRS 0000123456 | NIP 1234567890 | REGON 123456789 | Kapitał zakładowy: 5 000 PLN | ul. Przykładowa 10, 00-001 Warszawa</li><li><strong>S.A.</strong> — Firma Przykład S.A. | KRS 0000654321 | NIP 9876543210 | Kapitał zakładowy: 100 000 PLN (wpłacony w całości) | ul. Marszałkowska 1, 00-624 Warszawa</li><li><strong>JDG</strong> — Jan Kowalski | NIP 1234567890 | REGON 123456789 | ul. Kwiatowa 5, 30-001 Kraków</li><li><strong>Sp. jawna</strong> — Kowalski i Nowak sp.j. | KRS 0000111111 | NIP 1111111111 | Poznań</li><li><strong>Sp. komandytowa</strong> — Firma Przykład sp. z o.o. sp.k. | KRS 0000222222 | NIP 2222222222 | Wrocław</li></ul><p class=\"text-mid mt-4\">Tekst wpisany w tym polu pojawi się na końcu stopki, tuż przed klauzulą prawną.</p>"
     },
     {
       "type": "gap",
@@ -174,8 +178,35 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Styl tekstu - kolory i rozmiary poszczególnych elementów",
-      "html": "<p class=\"text-mid\">W zakładce <strong>Styl tekstu</strong> możesz indywidualnie dostosować kolor i rozmiar czcionki dla każdego elementu tekstowego w stopce.</p><h3 class=\"h5 mt-6 mb-3\">Dostępne elementy</h3><p class=\"text-mid\">Widoczne są tylko te elementy, które aktualnie znajdują się w stopce (mają wypełnione dane). Dla każdego elementu możesz ustawić:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Imię i nazwisko</strong> - domyślnie wyświetlane w kolorze akcentu.</li><li><strong>Stanowisko</strong> - rola w firmie.</li><li><strong>Firma</strong> - nazwa organizacji.</li><li><strong>Dane kontaktowe</strong> - e-mail, telefon, strona (etykiety).</li><li><strong>Media społecznościowe</strong> - linki do profili.</li><li><strong>Klauzula prawna</strong> - tekst prawny na dole stopki.</li></ul><h3 class=\"h5 mt-6 mb-3\">Jak zmienić kolor?</h3><p class=\"text-mid\">Przy każdym elemencie znajdziesz rząd opcji kolorów. Kliknij kwadrat z kolorem, aby go wybrać. Możesz też dodać własny kolor klikając kolorowy kwadrat z plusem - wybierz kolor i kliknij Zapisz. Własne kolory (do 8) są współdzielone między wszystkimi elementami.</p><p class=\"text-mid mt-3\">Przycisk z ikoną resetu przywraca domyślny kolor elementu.</p><h3 class=\"h5 mt-6 mb-3\">Jak zmienić rozmiar?</h3><p class=\"text-mid\">W drugiej linii znajdziesz kontrolkę rozmiaru z przyciskami - i +. Wartość pokazuje przesunięcie względem bazowego rozmiaru czcionki (ustawionego w zakładce Wygląd). Zakres: od -4 do +4 pikseli.</p>"
+      "title": "Jak dodać przyciski CTA",
+      "html": "<p class=\"text-mid\">Przycisk CTA (wezwanie do działania) to klikalny element, który kieruje odbiorcę na wybraną stronę: kalendarz spotkań, formularz kontaktowy lub ofertę. Kreator stopek pozwala dodać dwa przyciski CTA.</p><h3 class=\"h5 mt-6 mb-3\">Przycisk główny</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Otwórz zakładkę <strong>Przyciski</strong>.</li><li>Wpisz tekst, który zobaczy odbiorca, np. <em>Umów bezpłatną konsultację</em>.</li><li>Wklej pełny adres URL w pole <strong>Link CTA</strong>. Adres musi zaczynać się od https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Przycisk dodatkowy</h3><p class=\"text-mid\">Możesz dodać drugi przycisk w stylu obramowania (przezroczyste tło z ramką). Wypełnij pola w sekcji <strong>Przycisk dodatkowy</strong> w ten sam sposób.</p><h3 class=\"h5 mt-6 mb-3\">Kształt przycisków</h3><p class=\"text-mid\">Na dole zakładki znajdziesz opcję <strong>Zaokrąglenie</strong>. Trzy warianty: Brak (ostre rogi), Lekkie (delikatnie zaokrąglone) lub Pełne (owalny kształt).</p><p class=\"text-mid mt-4\">Jeśli oba pola (tekst i link) pozostaną puste, przycisk nie pojawi się w stopce. Potrzebne są oba.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak dodać linki do mediów społecznościowych",
+      "html": "<p class=\"text-mid\">W zakładce <strong>Social media</strong> możesz dodać linki do profili. Kreator obsługuje dwanaście platform: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (dawniej Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram i Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Jak to zrobić</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Otwórz zakładkę <strong>Social media</strong>.</li><li>Obok każdej platformy wklej pełny adres URL profilu.</li><li>Wypełnij tylko te platformy, z których korzystasz. Puste pola nie pojawiają się w stopce.</li></ol><h3 class=\"h5 mt-6 mb-3\">Ikony social media</h3><p class=\"text-mid\">Włącz <strong>Pokaż ikony obok nazw</strong>, aby zamiast tekstu wyświetlać kolorowe ikony SVG.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Rozmiar</strong> — Mały (16 px), Średni (20 px) lub Duży (24 px).</li><li><strong>Kolor</strong> — Kolory platformy, Kolor akcentu (jednolity) lub Kolor tekstu.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Dostosowanie wyglądu",
+      "html": "<p class=\"text-mid\">W zakładce <strong>Wygląd</strong> możesz zmieniać kolory, czcionkę i inne elementy wizualne stopki.</p><h3 class=\"h5 mt-6 mb-3\">Motywy kolorystyczne</h3><p class=\"text-mid\">Na górze zakładki znajdziesz pięć gotowych motywów: Ciemny, Niebieski, Fioletowy, Zielony i Szary. Jedno kliknięcie automatycznie ustawia kolor akcentu i kolor tekstu.</p><h3 class=\"h5 mt-6 mb-3\">Indywidualne kolory</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Kolor akcentu</strong> — używany w bocznym/górnym pasku, przycisku CTA i linkach.</li><li><strong>Kolor tekstu</strong> — kolor wszystkich tekstów w stopce.</li><li><strong>Kolor tła</strong> — tło stopki. Domyślnie białe.</li></ul><h3 class=\"h5 mt-6 mb-3\">Czcionka i rozmiar</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Czcionka</strong> — Arial, Verdana, Tahoma, Trebuchet MS lub Georgia. Wszystkie pięć to czcionki bezpieczne dla e-maili.</li><li><strong>Rozmiar</strong> — Mały (12 px), Standardowy (14 px) lub Większy (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Obramowanie stopki</h3><p class=\"text-mid\">Możesz dodać ramkę z dowolnej strony: lewej, prawej, górnej lub dolnej. Ramka używa koloru akcentu.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Styl tekstu — kolory i rozmiary poszczególnych elementów",
+      "html": "<p class=\"text-mid\">W zakładce <strong>Styl tekstu</strong> możesz indywidualnie dostosować kolor i rozmiar każdego elementu tekstowego.</p><h3 class=\"h5 mt-6 mb-3\">Dostępne elementy</h3><p class=\"text-mid\">Wyświetlane są tylko elementy, które zawierają dane:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Nazwisko</strong> — domyślnie w kolorze akcentu.</li><li><strong>Stanowisko</strong> — Twoja rola w firmie.</li><li><strong>Firma</strong> — nazwa organizacji.</li><li><strong>Dane kontaktowe</strong> — e-mail, telefon, strona www.</li><li><strong>Social media</strong> — linki do profili.</li><li><strong>Klauzula</strong> — tekst prawny na dole.</li></ul><h3 class=\"h5 mt-6 mb-3\">Zmiana koloru</h3><p class=\"text-mid\">Obok każdego elementu są opcje kolorystyczne. Kliknij kwadrat, aby go wybrać. Możesz też dodać własne kolory (do 8), współdzielone między wszystkimi elementami. Przycisk resetu przywraca domyślny kolor.</p><h3 class=\"h5 mt-6 mb-3\">Zmiana rozmiaru</h3><p class=\"text-mid\">Pod kolorami znajdują się przyciski minus i plus do regulacji rozmiaru. Wartość pokazuje odchylenie od rozmiaru bazowego (ustawionego w zakładce Wygląd). Zakres: od −4 do +4 pikseli.</p>"
     },
     {
       "type": "gap",
@@ -184,7 +215,7 @@
     {
       "type": "sectionInfo",
       "title": "Odstępy między elementami",
-      "html": "<p class=\"text-mid\">W zakładce <strong>Odstępy</strong> możesz precyzyjnie kontrolować odległości między poszczególnymi elementami stopki.</p><h3 class=\"h5 mt-6 mb-3\">Margines wewnętrzny stopki</h3><p class=\"text-mid\">Na górze zakładki znajdziesz opcję marginesu wewnętrznego - czyli odstępu między zawartością stopki a jej krawędziami. Do wyboru masz trzy wartości: 8 px (mały), 16 px (średni) i 24 px (duży).</p><h3 class=\"h5 mt-6 mb-3\">Odstępy między elementami</h3><p class=\"text-mid\">Poniżej marginesu znajdziesz kontrolki dla poszczególnych elementów stopki. Każda kontrolka ma przyciski + i - do zwiększania lub zmniejszania odstępu. Widoczne są tylko opcje dla elementów, które aktualnie znajdują się w stopce.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Po imieniu i nazwisku</strong> - odstęp pod linią z imieniem.</li><li><strong>Po stanowisku / firmie</strong> - odstęp pod linią ze stanowiskiem i nazwą firmy.</li><li><strong>Po dodatkowej linii</strong> - odstęp pod opisem (jeśli jest wypełniony).</li><li><strong>Po danych kontaktowych</strong> - odstęp pod e-mailem, telefonem i stroną.</li><li><strong>Po mediach społecznościowych</strong> - odstęp pod linkami do profili.</li><li><strong>Po przycisku CTA</strong> - odstęp pod przyciskiem (jeśli jest włączony).</li><li><strong>Przed klauzulą</strong> - odstęp nad tekstem klauzuli prawnej.</li></ul><p class=\"text-mid mt-4\">Jeśli usuniesz dane z jakiegoś pola (np. wyczyścisz telefon), odpowiednia opcja odstępu automatycznie zniknie z zakładki.</p>"
+      "html": "<p class=\"text-mid\">W zakładce <strong>Odstępy</strong> możesz precyzyjnie kontrolować odległość między poszczególnymi częściami stopki.</p><h3 class=\"h5 mt-6 mb-3\">Padding wewnętrzny</h3><p class=\"text-mid\">Na górze zakładki znajduje się opcja paddingu. Określa odstęp między treścią a krawędziami stopki. Trzy wartości: 8 px (mały), 16 px (średni) i 24 px (duży).</p><h3 class=\"h5 mt-6 mb-3\">Odstępy elementów</h3><ul class=\"text-mid mt-3 list-disc space-y-1 pl-6\"><li><strong>Po nazwisku</strong></li><li><strong>Po stanowisku / firmie</strong></li><li><strong>Po dodatkowej linii</strong></li><li><strong>Po danych kontaktowych</strong></li><li><strong>Po social media</strong></li><li><strong>Po przycisku CTA</strong></li><li><strong>Przed klauzulą</strong></li></ul>"
     },
     {
       "type": "gap",
@@ -192,8 +223,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Klauzula prawna / RODO - kiedy dodać?",
-      "html": "<p class=\"text-mid\">W zakładce <strong>Klauzula / RODO</strong> możesz dodać tekst prawny, który pojawi się na dole stopki mniejszą czcionką.</p><h3 class=\"h5 mt-6 mb-3\">Kiedy warto dodać klauzulę?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Korespondencja biznesowa</strong> - informacja o poufności wiadomości i prośba o usunięcie w przypadku błędnego doręczenia.</li><li><strong>Wymogi branżowe</strong> - niektóre branże (np. prawnicza, medyczna, finansowa) wymagają określonych informacji w każdej wiadomości.</li><li><strong>RODO</strong> - informacja o przetwarzaniu danych osobowych, jeśli firma jest administratorem danych.</li></ul><p class=\"text-mid mt-4\">Domyślnie pole jest wypełnione przykładowym tekstem o poufności wiadomości. Możesz go edytować, usunąć lub zastąpić własną klauzulą. Jeśli zostawisz pole puste, klauzula nie pojawi się w stopce.</p><h3 class=\"h5 mt-6 mb-3\">Linia oddzielająca</h3><p class=\"text-mid\">Pod polem tekstowym znajdziesz opcję <strong>Pokaż linię oddzielającą dane od klauzuli</strong>. Włącz ją, aby dodać poziomą linię między danymi kontaktowymi a klauzulą prawną.</p><p class=\"text-mid mt-3\">Po włączeniu linii pojawią się dodatkowe opcje personalizacji:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Styl linii</strong> - do wyboru: ciągła (solid), kreskowana (dashed) lub kropkowana (dotted).</li><li><strong>Grubość linii</strong> - trzy opcje: 1 px, 2 px lub 3 px.</li><li><strong>Kolor linii</strong> - domyślnie szary (#e5e7eb). Możesz wybrać dowolny kolor z palety lub przywrócić domyślny klikając przycisk Domyślny.</li></ul>"
+      "title": "Klauzula prawna i RODO",
+      "html": "<p class=\"text-mid\">W zakładce <strong>Klauzula / RODO</strong> możesz dodać tekst prawny, który pojawi się na dole stopki w mniejszym rozmiarze czcionki.</p><h3 class=\"h5 mt-6 mb-3\">Kiedy dodać klauzulę?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Korespondencja handlowa</strong> — informacja o poufności z prośbą o usunięcie wiadomości w przypadku pomyłki.</li><li><strong>Wymagania branżowe</strong> — niektóre branże (prawo, medycyna, finanse) wymagają określonych informacji w każdej wiadomości.</li><li><strong>RODO</strong> — klauzula informacyjna o przetwarzaniu danych osobowych, jeśli firma jest administratorem danych.</li></ul><p class=\"text-mid mt-4\">Domyślnie pole zawiera przykładowy tekst. Możesz go edytować, usunąć lub zastąpić własną klauzulą.</p><h3 class=\"h5 mt-6 mb-3\">Linia oddzielająca</h3><p class=\"text-mid\">Włącz <strong>Pokaż linię oddzielającą</strong>, aby dodać poziomą linię nad tekstem prawnym. Opcje: styl (ciągły, kreskowany, kropkowany), grubość (1–3 px) i kolor.</p>"
     },
     {
       "type": "gap",
@@ -201,8 +232,17 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Automatyczny zapis i resetowanie ustawień",
-      "html": "<p class=\"text-mid\">Generator automatycznie zapisuje wszystkie ustawienia w pamięci przeglądarki (localStorage). Po odświeżeniu strony lub ponownym otwarciu narzędzia dane, układ, kolory i wszystkie inne opcje zostaną przywrócone.</p><h3 class=\"h5 mt-6 mb-3\">Jak działa automatyczny zapis?</h3><p class=\"text-mid\">Każda zmiana (tekst, kolor, układ, odstępy) jest natychmiast zapisywana w pamięci przeglądarki. Zapis dzieje się automatycznie w tle - bez klikania przycisków.</p><h3 class=\"h5 mt-6 mb-3\">Jak zresetować ustawienia?</h3><p class=\"text-mid\">Pod podglądem stopki znajdziesz przycisk <strong>Resetuj wygląd</strong>. Po kliknięciu pojawi się okno z prośbą o potwierdzenie. Zatwierdzenie resetu przywróci wszystkie dane i ustawienia do wartości domyślnych (przykładowe dane Jana Kowalskiego). Tej operacji nie można cofnąć.</p><h3 class=\"h5 mt-6 mb-3\">Eksport i import konfiguracji</h3><p class=\"text-mid\">Pod podglądem stopki znajdziesz dwa dodatkowe przyciski: <strong>Eksportuj ustawienia</strong> i <strong>Importuj ustawienia</strong>. Eksport zapisuje wszystkie dane, kolory, układ, odstępy i style tekstu do pliku JSON. Import pozwala wczytać wcześniej zapisaną konfigurację z pliku.</p><p class=\"text-mid mt-3\">Ta funkcja jest szczególnie przydatna, gdy chcesz przenieść konfigurację stopki między komputerami, udostępnić ustawienia współpracownikom lub zachować kopię zapasową swoich ustawień przed resetem.</p>"
+      "title": "Wskazówki do stworzenia profesjonalnej stopki mailowej",
+      "html": "<p class=\"text-mid\">Dobra stopka mailowa jest przejrzysta, spójna i łatwa do odczytania. Oto najważniejsze wskazówki:</p><h3 class=\"h5 mt-6 mb-3\">Bądź zwięzły</h3><p class=\"text-mid\">Od czterech do siedmiu linii danych kontaktowych to optymalny zakres. Zbyt długa stopka wypycha treść wiadomości poza ekran, szczególnie na telefonach.</p><h3 class=\"h5 mt-6 mb-3\">Dwa, trzy kolory maksymalnie</h3><p class=\"text-mid\">Zbyt wiele kolorów sprawia, że stopka wygląda chaotycznie. Wybierz kolor akcentu zgodny z identyfikacją wizualną firmy i utrzymaj resztę w ciemnych, neutralnych tonach.</p><h3 class=\"h5 mt-6 mb-3\">Zawsze dodawaj przycisk akcji</h3><p class=\"text-mid\">Przycisk CTA zamienia każdego e-maila w delikatny komunikat marketingowy. Podlinkuj go do kalendarza spotkań, portfolio lub formularza kontaktowego.</p><h3 class=\"h5 mt-6 mb-3\">Wybieraj czcionki bezpieczne dla e-maili</h3><p class=\"text-mid\">Generator oferuje pięć bezpiecznych czcionek: Arial, Verdana, Tahoma, Trebuchet MS i Georgia. Unikaj czcionek dekoracyjnych — zostaną zastąpione domyślną czcionką u odbiorcy.</p><h3 class=\"h5 mt-6 mb-3\">Hostuj obrazki na własnej domenie</h3><p class=\"text-mid\">Jeśli dodajesz logo lub zdjęcie profilowe, użyj obrazka hostowanego na własnej stronie lub niezawodnym CDN. Unikaj skracaczy linków, Google Drive czy Dropbox — niektóre programy pocztowe blokują obrazy z tych źródeł.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Automatyczny zapis i resetowanie",
+      "html": "<p class=\"text-mid\">Generator stopek automatycznie zapisuje pracę w pamięci przeglądarki (localStorage). Po odświeżeniu strony lub powrocie później wszystkie dane, kolory i ustawienia są zachowane.</p><h3 class=\"h5 mt-6 mb-3\">Resetowanie</h3><p class=\"text-mid\">Pod podglądem znajdziesz przycisk <strong>Resetuj wygląd</strong>. Po potwierdzeniu wszystkie dane i ustawienia zostaną przywrócone do wartości domyślnych. Tej operacji nie można cofnąć.</p><h3 class=\"h5 mt-6 mb-3\">Eksport i import konfiguracji</h3><p class=\"text-mid\">Przyciski <strong>Eksportuj ustawienia</strong> i <strong>Importuj ustawienia</strong> pozwalają zapisać i przywrócić pełną konfigurację za pomocą pliku JSON. Przydatne, gdy chcesz przenieść stopkę na inny komputer lub udostępnić ustawienia współpracownikom.</p>"
     },
     {
       "type": "gap",
@@ -210,24 +250,24 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Jak skopiować stopkę do Gmail lub Outlook?",
-      "description": "Gdy stopka jest gotowa, wystarczy kilka kroków, żeby dodać ją do klienta pocztowego:",
+      "title": "Jak skopiować stopkę do Gmaila lub Outlooka",
+      "description": "Gdy podpis jest gotowy, wykonaj trzy kroki:",
       "grid": "three",
       "items": [
         {
           "icon": "RiClipboardLine",
           "title": "1. Skopiuj kod",
-          "description": "Przycisk Kopiuj stopkę (Gmail / Outlook) przenosi stopkę do schowka jako sformatowany HTML, gotowy do wklejenia."
+          "description": "Kliknij Kopiuj podpis (Gmail / Outlook). Stopka zostanie skopiowana jako sformatowany HTML do schowka."
         },
         {
           "icon": "RiSettings3Line",
           "title": "2. Otwórz ustawienia podpisu",
-          "description": "W Gmail: Ustawienia → Zobacz wszystkie ustawienia → Podpis. W Outlook: Plik → Opcje → Poczta → Podpisy."
+          "description": "W Gmailu: Ustawienia → Zobacz wszystkie ustawienia → Podpis. W Outlooku: Plik → Opcje → Poczta → Podpisy."
         },
         {
           "icon": "RiSaveLine",
           "title": "3. Wklej i zapisz",
-          "description": "W polu podpisu użyj skrótu Ctrl+V (Windows) lub Cmd+V (Mac). Stopka pojawi się ze wszystkimi kolorami i formatowaniem. Zapisz zmiany."
+          "description": "W polu podpisu naciśnij Ctrl + V (Windows) lub Cmd + V (Mac). Stopka pojawi się ze wszystkimi kolorami i formatowaniem. Zapisz zmiany."
         }
       ]
     },
@@ -237,8 +277,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Podgląd stopki i opcje eksportu",
-      "html": "<p class=\"text-mid\">Panel podglądu wyświetla się po prawej stronie edytora i automatycznie aktualizuje się przy każdej zmianie. Podgląd jest przypięty do ekranu (sticky), więc widoczny nawet podczas przewijania opcji edycji.</p><h3 class=\"h5 mt-6 mb-3\">Przełączanie tła podglądu</h3><p class=\"text-mid\">Nad podglądem znajdziesz trzy przyciski zmiany tła: <strong>Jasne</strong> (domyślne szare tło), <strong>Ciemne</strong> (ciemne tło, przydatne do sprawdzenia czytelności na ciemnym tle) i <strong>Szachownica</strong> (wzór szachownicy, pozwala zobaczyć przezroczystość i krawędzie stopki).</p><h3 class=\"h5 mt-6 mb-3\">Przyciski akcji</h3><p class=\"text-mid\">Pod podglądem znajdziesz kilka przycisków:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Kopiuj stopkę (Gmail / Outlook)</strong> - kopiuje stopkę jako sformatowany HTML do schowka. Wklej ją bezpośrednio w ustawieniach podpisu.</li><li><strong>Kopiuj kod HTML</strong> - kopiuje surowy kod HTML stopki do schowka. Przydatne, gdy chcesz wkleić kod w edytorze HTML lub systemie CMS.</li><li><strong>Pobierz jako HTML</strong> - zapisuje kod stopki jako plik .html na dysku. Przydatne do archiwizacji lub przekazania programiście.</li><li><strong>Pokaż kod HTML</strong> - otwiera okno modalne z kodem źródłowym stopki. Możesz przejrzeć kod i skopiować go bezpośrednio z okna.</li><li><strong>Eksportuj ustawienia</strong> - zapisuje pełną konfigurację stopki (dane, kolory, układ, odstępy, style) do pliku JSON.</li><li><strong>Importuj ustawienia</strong> - wczytuje konfigurację z pliku JSON. Wszystkie ustawienia zostaną automatycznie zastosowane.</li><li><strong>Resetuj wygląd</strong> - przywraca wszystkie dane i ustawienia do wartości domyślnych (po potwierdzeniu).</li></ul>"
+      "title": "Podgląd i opcje eksportu",
+      "html": "<p class=\"text-mid\">Panel podglądu znajduje się po prawej stronie edytora i aktualizuje się automatycznie przy każdej zmianie. Jest przyklejony do ekranu (sticky) i pozostaje widoczny nawet podczas przewijania opcji.</p><h3 class=\"h5 mt-6 mb-3\">Tła podglądu</h3><p class=\"text-mid\">Nad podglądem znajdują się trzy przyciski: <strong>Jasne</strong> (domyślne szare), <strong>Ciemne</strong> (do sprawdzenia czytelności) i <strong>Szachownica</strong> (pokazuje przezroczystość i krawędzie).</p><h3 class=\"h5 mt-6 mb-3\">Przyciski akcji</h3><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Kopiuj podpis (Gmail / Outlook)</strong> — kopiuje jako sformatowany HTML.</li><li><strong>Kopiuj kod HTML</strong> — kopiuje surowy kod źródłowy.</li><li><strong>Pobierz jako HTML</strong> — zapisuje jako plik .html.</li><li><strong>Pokaż kod HTML</strong> — otwiera okno z kodem źródłowym.</li><li><strong>Eksportuj ustawienia</strong> — zapisuje konfigurację jako plik JSON.</li><li><strong>Importuj ustawienia</strong> — wczytuje konfigurację z pliku JSON.</li><li><strong>Resetuj wygląd</strong> — przywraca wartości domyślne.</li></ul>"
     },
     {
       "type": "gap",
@@ -246,29 +286,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Dla kogo jest kreator podpisu email?",
-      "description": "Narzędzie do tworzenia stopek mailowych przydaje się każdemu, kto wysyła służbowe e-maile:",
+      "title": "Dla kogo jest ten generator stopek mailowych?",
+      "description": "Narzędzie jest przydatne dla każdego, kto wysyła biznesowe e-maile:",
       "grid": "two",
       "items": [
         {
           "icon": "RiBriefcaseLine",
           "title": "Przedsiębiorcy i freelancerzy",
-          "description": "Profesjonalna sygnaturka we wszystkich wiadomościach bez zlecania projektowania."
+          "description": "Profesjonalna stopka w każdej wiadomości, bez projektanta i bez pisania kodu."
         },
         {
           "icon": "RiTeamLine",
           "title": "Zespoły firmowe",
-          "description": "Każdy pracownik tworzy własną stopkę w tym samym stylu. Spójna identyfikacja w całej firmie."
+          "description": "Każdy pracownik tworzy własną stopkę w tym samym stylu. Wyeksportuj konfigurację JSON i udostępnij zespołowi."
         },
         {
           "icon": "RiHandCoinLine",
-          "title": "Handlowcy i sprzedawcy",
-          "description": "Przycisk CTA z linkiem do kalendarza lub oferty zwiększa szanse na umówienie spotkania."
+          "title": "Dział sprzedaży i marketingu",
+          "description": "Przycisk CTA z linkiem do kalendarza lub oferty zamienia każdego e-maila w okazję sprzedażową."
         },
         {
           "icon": "RiScales3Line",
           "title": "Prawnicy, księgowi, lekarze",
-          "description": "Możliwość dodania klauzuli prawnej, numeru licencji, NIP lub innych danych wymaganych w branży."
+          "description": "Dodaj klauzulę poufności, numer licencji, NIP lub inne dane wymagane przez branżę."
         }
       ]
     },
@@ -278,53 +318,48 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Co wyróżnia generator podpisu email HTML?",
+      "title": "Co wyróżnia ten kreator stopek?",
       "grid": "three",
       "items": [
         {
           "icon": "RiInfinityLine",
-          "title": "Osiem układów stopki",
-          "description": "Standard, pasek u góry, etykiety z lewej, wyśrodkowany, kompaktowy, dwie kolumny, minimalistyczny i pasek na dole."
+          "title": "Osiem układów",
+          "description": "Standardowy, Pasek górny, Etykiety po lewej, Wycentrowany, Kompaktowy, Dwie kolumny, Minimalistyczny i Pasek dolny."
         },
         {
           "icon": "RiUserLine",
-          "title": "Automatyczny zapis w przeglądarce",
-          "description": "Każda zmiana zapisuje się automatycznie w pamięci przeglądarki. Po odświeżeniu strony stopka pozostaje dostępna."
+          "title": "Automatyczny zapis",
+          "description": "Każda zmiana jest automatycznie zapisywana w przeglądarce."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Eksport i import konfiguracji",
-          "description": "Pełna konfiguracja stopki może być wyeksportowana jako plik JSON i udostępniona współpracownikom."
+          "title": "Eksport i import",
+          "description": "Zapisz pełną konfigurację jako plik JSON i udostępnij współpracownikom."
         },
         {
           "icon": "RiAppsLine",
-          "title": "12 platform społecznościowych",
+          "title": "12 platform social media",
           "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram i Pinterest."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Zaawansowana personalizacja",
-          "description": "Kształt i rozmiar avatara, stylizacja linii, indywidualne kolory i rozmiary tekstu."
-        },
-        {
-          "icon": "RiFileCodeLine",
-          "title": "Wiele opcji eksportu",
-          "description": "Kopiowanie HTML, pobieranie pliku, podgląd kodu źródłowego, eksport/import konfiguracji JSON."
+          "title": "Rozbudowana personalizacja",
+          "description": "Kształt i rozmiar avatara, styl linii, indywidualne kolory i rozmiary, obramowanie stopki."
         },
         {
           "icon": "RiShieldCheckLine",
-          "title": "Prywatność",
-          "description": "Dane nie są wysyłane na serwer. Generator działa w całości w przeglądarce."
+          "title": "Pełna prywatność",
+          "description": "Dane nie opuszczają przeglądarki. Generator działa całkowicie na urządzeniu użytkownika."
         },
         {
           "icon": "RiMailCheckLine",
           "title": "Kompatybilność",
-          "description": "Wygenerowany kod HTML działa w Gmail, Outlook, Apple Mail i Thunderbird."
+          "description": "Wygenerowany kod HTML działa w Gmailu, Outlooku, Apple Mail i Thunderbird."
         },
         {
           "icon": "RiEyeLine",
           "title": "Podgląd na żywo",
-          "description": "Każda zmiana widoczna natychmiast na jasnym, ciemnym lub szachownicowym tle."
+          "description": "Każda zmiana jest widoczna natychmiast na jasnym, ciemnym lub szachownicowym tle."
         }
       ]
     },
@@ -334,59 +369,58 @@
     },
     {
       "type": "faq",
-      "title": "Najczęstsze pytania dotyczące generatora stopek mailowych",
+      "title": "Najczęściej zadawane pytania o generator stopki mailowej",
+      "openByDefault": 1,
       "items": [
         {
-          "question": "Czy stopka będzie działać w Gmail, Outlook i Apple Mail?",
-          "answer": "Tak. Stopki generowane przez generator używają tabel HTML, które poprawnie wyświetlają się we wszystkich popularnych klientach pocztowych: Gmail, Outlook (desktop i web), Apple Mail, Thunderbird. Układ dopasowuje się do różnych urządzeń, w tym smartfonów."
+          "question": "Jak wkleić stopkę w Gmailu?",
+          "answer": "Kliknij Kopiuj podpis (Gmail / Outlook). Otwórz Gmail → Ustawienia → Zobacz wszystkie ustawienia → Podpis. Wklej za pomocą Ctrl + V (lub Cmd + V). Kolory, linki i ikony zostaną automatycznie zachowane.",
+          "answerSchemaText": "Skopiuj podpis, Gmail → Ustawienia → Podpis, Ctrl+V."
         },
         {
-          "question": "Czy mogę dodać logo firmy?",
-          "answer": "Tak. W zakładce Dane wklej adres URL do obrazu (logo lub zdjęcie profilowe). Obraz powinien być kwadratowy (min. 120x120 px) i publicznie dostępny w internecie. Po wklejeniu URL pojawią się opcje wyboru kształtu (okrągły, zaokrąglony, kwadratowy) i rozmiaru (40, 56 lub 72 px)."
+          "question": "Czy stopka działa w Outlooku?",
+          "answer": "Tak. W Outlooku Desktop: Plik → Opcje → Poczta → Podpisy → Wklej. W Outlooku Web (OWA): Ustawienia → Poczta → Tworzenie i odpowiedzi → Podpis.",
+          "answerSchemaText": "Tak. Desktop: Plik → Opcje → Podpisy. Web: Ustawienia → Poczta → Podpis."
         },
         {
-          "question": "Jak skopiować stopkę do programu pocztowego?",
-          "answer": "Przycisk Kopiuj stopkę (Gmail / Outlook) pod podglądem przenosi stopkę do schowka jako sformatowany HTML. W ustawieniach podpisu w Gmail lub Outlook wystarczy użyć skrótu Ctrl+V (Windows) lub Cmd+V (Mac)."
+          "question": "Jakie dane formalne musi zawierać moja stopka?",
+          "answer": "Zależy to od formy prawnej. Sp. z o.o. musi podawać firmę, siedzibę, KRS, NIP i kapitał zakładowy (art. 206 KSH). S.A. wymaga tych samych danych plus wysokość kapitału wpłaconego. JDG — zalecane: imię i nazwisko, NIP, adres. Szczegóły znajdziesz w sekcji o wymogach prawnych na tej stronie.",
+          "answerSchemaText": "Sp. z o.o.: firma, siedziba, KRS, NIP, kapitał. JDG: imię, NIP, adres. Szczegóły w sekcji wymogów prawnych."
         },
         {
-          "question": "Czy mogę użyć generatora do stworzenia stopek dla całego zespołu?",
-          "answer": "Tak. Generator nie wymaga logowania ani rejestracji. Każda osoba w zespole może otworzyć narzędzie, uzupełnić swoje dane i skopiować gotową stopkę. Aby zachować spójność wizualną, ustalcie wspólne ustawienia: ten sam układ, motyw kolorystyczny i czcionkę. Możesz też wyeksportować konfigurację jako plik JSON i udostępnić go współpracownikom - wystarczy, że zaimportują plik i zmienią tylko swoje dane osobowe."
+          "question": "Czy mogę dodać linki do social media?",
+          "answer": "Tak. Generator obsługuje dwanaście platform: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram i Pinterest. Tylko platformy z podanym URL pojawiają się w stopce.",
+          "answerSchemaText": "12 platform: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest."
         },
         {
-          "question": "Czy mogę dodać własne ikony mediów społecznościowych?",
-          "answer": "Generator oferuje wbudowane ikony SVG dla dwunastu platform: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram i Pinterest. Włącz opcję Pokaż ikony w zakładce Media społecznościowe. Możesz wybrać rozmiar ikon i ich kolor (kolory platform, kolor akcentu lub kolor tekstu)."
+          "question": "Czy moje dane są gdzieś przechowywane?",
+          "answer": "Wszystkie dane są przechowywane wyłącznie w pamięci przeglądarki (localStorage). Nic nie jest wysyłane na serwer. Możesz eksportować i importować ustawienia, aby przenieść stopkę między urządzeniami.",
+          "answerSchemaText": "Lokalnie w przeglądarce. Bez wysyłania na serwer. Eksport/import możliwy."
         },
         {
-          "question": "Przycisk kopiowania jest nieaktywny - dlaczego?",
-          "answer": "Aby skopiować stopkę, uzupełnij przynajmniej dwa pola: imię i nazwisko oraz adres e-mail. Sprawdź, czy oba pola są wypełnione."
+          "question": "Przycisk kopiowania jest nieaktywny — dlaczego?",
+          "answer": "Aby skopiować stopkę, musisz wypełnić co najmniej dwa pola: imię i nazwisko oraz adres e-mail.",
+          "answerSchemaText": "Imię i nazwisko oraz adres e-mail muszą być wypełnione."
         },
         {
-          "question": "Avatar lub logo nie wyświetla się - co zrobić?",
-          "answer": "Obraz musi być publicznie dostępny w internecie. Adres URL powinien prowadzić bezpośrednio do pliku graficznego (kończyć się na .jpg, .png lub .webp). Obrazy z Google Drive lub Dropbox wymagają specjalnego linku do udostępniania."
+          "question": "Jak uczynić stopkę przyjazną dla urządzeń mobilnych?",
+          "answer": "Utrzymuj stopkę krótką (cztery do siedmiu linii), używaj standardowego rozmiaru tekstu (14 px) i wybierz układ dopasowany do wąskich ekranów. Standardowy i Kompaktowy sprawdzają się najlepiej na telefonach.",
+          "answerSchemaText": "Krótka, 14 px, układ Standardowy lub Kompaktowy."
         },
         {
-          "question": "Stopka wygląda inaczej u odbiorcy - dlaczego?",
-          "answer": "Różne klienty pocztowe (Gmail, Outlook, Apple Mail) mogą nieznacznie różnić się w wyświetlaniu HTML. Generator używa bezpiecznych stylów, które działają w większości programów. Jeśli widzisz duże różnice, upewnij się, że wklejasz stopkę używając Ctrl+V, a nie Wklej jako zwykły tekst."
+          "question": "Gdzie hostować logo?",
+          "answer": "Na własnej stronie internetowej lub niezawodnym CDN. Unikaj Google Drive, Dropbox czy skracaczy linków. Obrazek powinien być kwadratowy, co najmniej 120 × 120 px, w formacie JPG, PNG lub WebP.",
+          "answerSchemaText": "Na własnej stronie lub CDN. Kwadratowy, min. 120 × 120 px, JPG/PNG/WebP."
         },
         {
-          "question": "Przycisk CTA nie pojawia się - co zrobić?",
-          "answer": "Przycisk wymaga obu pól: tekstu i linku. Sprawdź, czy w zakładce Przyciski oba pola są wypełnione i czy adres URL zaczyna się od https://."
+          "question": "Jak wyeksportować lub zaimportować ustawienia?",
+          "answer": "Pod podglądem znajdziesz przyciski Eksportuj ustawienia i Importuj ustawienia. Eksport zapisuje pełną konfigurację jako plik JSON. Import wczytuje ją i automatycznie stosuje.",
+          "answerSchemaText": "Eksport jako JSON, import wczytuje i stosuje konfigurację."
         },
         {
-          "question": "Jak wyeksportować lub zaimportować ustawienia stopki?",
-          "answer": "Pod podglądem stopki znajdziesz przyciski Eksportuj ustawienia i Importuj ustawienia. Eksport zapisuje pełną konfigurację (dane, kolory, układ, odstępy, style tekstu) do pliku JSON. Import wczytuje konfigurację z pliku i automatycznie zastosowuje wszystkie ustawienia."
-        },
-        {
-          "question": "Jak podejrzeć kod źródłowy wygenerowanej stopki?",
-          "answer": "Przycisk Pokaż kod HTML pod podglądem stopki otwiera okno modalne z pełnym kodem źródłowym HTML. Można go przejrzeć i skopiować bezpośrednio z okna. Alternatywnie przycisk Kopiuj kod HTML przenosi surowy kod do schowka, a Pobierz jako HTML zapisuje go jako plik."
-        },
-        {
-          "question": "Czy mogę zmienić kształt i rozmiar avatara?",
-          "answer": "Tak. Po wklejeniu adresu URL obrazu w zakładce Dane pojawią się dodatkowe opcje: Kształt avatara (okrągły, zaokrąglony, kwadratowy) oraz Rozmiar avatara (mały - 40 px, średni - 56 px, duży - 72 px). Ustawienia są stosowane we wszystkich układach stopki."
-        },
-        {
-          "question": "Jak zmienić styl linii oddzielającej klauzulę?",
-          "answer": "W zakładce Klauzula / RODO włącz opcję Pokaż linię oddzielającą. Pojawią się dodatkowe opcje: styl linii (ciągła, kreskowana, kropkowana), grubość (1-3 px) i kolor (domyślny szary lub dowolny wybrany z palety)."
+          "question": "Co to jest klauzula RODO w stopce?",
+          "answer": "Klauzula RODO to krótka informacja o przetwarzaniu danych osobowych, wymagana gdy firma jest administratorem danych. Generator ma osobne pole Klauzula / RODO, w którym możesz wpisać własny tekst lub link do polityki prywatności.",
+          "answerSchemaText": "Informacja o przetwarzaniu danych osobowych. Osobne pole w generatorze."
         }
       ]
     },
@@ -396,10 +430,10 @@
     },
     {
       "type": "contactForm",
-      "title": "Pomóż nam ulepszyć narzędzia",
-      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie, które ułatwiłoby Twoją pracę? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "title": "Pomóż nam ulepszyć nasze narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas — odpowiadamy w ciągu 24 godzin.",
       "imageSrc": "/assets/tools/free-html-email-signature-generator/darmowy-generator-stopki-mailowej-pl.webp",
-      "imageAlt": "Generator stopki mailowej online – Arteon",
+      "imageAlt": "Generator stopki mailowej – Arteon",
       "defaultSubject": "Feedback: Generator stopki mailowej"
     },
     {
@@ -408,7 +442,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Sprawdź inne narzędzia"
+      "title": "Poznaj inne narzędzia"
     },
     {
       "type": "gap",

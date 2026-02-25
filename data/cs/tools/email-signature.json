@@ -25,10 +25,18 @@
   "schemas": {
     "software": {
       "name": "Generátor HTML e-mailového podpisu – tvůrce podpisu",
-      "alternateName": ["Generátor HTML e-mailového podpisu", "Generátor patičky e-mailu"],
+      "alternateName": [
+        "Generátor e-mailového podpisu HTML",
+        "Tvůrce e-mailového podpisu zdarma",
+        "Generátor podpisu pro Gmail",
+        "Generátor podpisu pro Outlook",
+        "Profesionální e-mailový podpis",
+        "Nástroj na tvorbu e-mailové patičky",
+        "Bezplatný generátor podpisu e-mailu"
+      ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Bezplatný generátor HTML e-mailového podpisu. Přidejte kontaktní údaje, CTA odkaz a profily na sociálních sítích, poté zkopírujte hotový kód podpisu do Gmailu, Outlooku a dalších e-mailových klientů.",
+      "description": "Bezplatný generátor HTML e-mailového podpisu a tvůrce profesionální patičky. Přidejte kontaktní údaje, CTA odkaz a profily na sociálních sítích. Zkopírujte kód do Gmailu, Outlooku, Apple Mailu nebo jiného klienta. Bez registrace.",
       "featureList": [
         "Kontaktní údaje (jméno, pozice, firma)",
         "Telefon, e-mail a URL webu",
@@ -86,10 +94,10 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Proč potřebujete profesionální e-mailový podpis?",
-      "html": "<p class=\"text-mid\">E-mailový podpis (také známý jako patička e-mailu) je blok informací na konci každé odeslané zprávy. Obsahuje kontaktní údaje, pracovní pozici, název firmy a často odkaz na web nebo kalendář schůzek.</p><p class=\"text-mid mt-3\">Příjemce nemusí hledat telefonní číslo v předchozích zprávách – všechny údaje jsou snadno dostupné. Profesionální e-mailový podpis také ukazuje, že dbáte na detaily a udržujete konzistentní image firmy v obchodní komunikaci.</p>",
-      "imageSrc": "/assets/tools/free-html-email-signature-generator/generator-podpisu-emailu-zdarma-cs.webp",
-      "imageAlt": "Generátor podpisu emailu – Arteon"
+      "title": "Proč používat profesionální e-mailový podpis?",
+      "html": "<p class=\"text-mid\">E-mailový podpis je krátký textový blok na konci každé zprávy, kterou odešlete. Někdy se mu říká e-mailová patička nebo podpisový blok. Obsahuje vaše jméno, funkci, firmu a kontaktní údaje. Mnoho podpisů zahrnuje i odkaz na web, kalendář schůzek nebo profily na sociálních sítích.</p><p class=\"text-mid mt-3\">Průměrný kancelářský pracovník odešle denně 30 až 40 e-mailů. Každá zpráva je příležitostí sdílet kontaktní údaje, posílit značku a usnadnit příjemci komunikaci. Dobře navržená patička příjemci šetří čas — nemusí hledat telefonní číslo ve starších zprávách.</p><p class=\"text-mid mt-3\">V České republice a na Slovensku navíc zákon vyžaduje, aby obchodní e-maily obsahovaly určité údaje o firmě. IČO, DIČ a sídlo patří mezi nejdůležitější. E-mailový podpis je nejjednodušší místo, kam je uvést.</p>",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/generator-emailoveho-podpisu-zdarma-cs.webp",
+      "imageAlt": "Generátor e-mailového podpisu – Arteon"
     },
     {
       "type": "gap",
@@ -97,24 +105,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Jak použít generátor podpisu e-mailu",
-      "description": "Vytvoření profesionálního e-mailového podpisu zabere jen pár minut:",
-      "grid": "three",
+      "title": "Jak vytvořit e-mailový podpis ve čtyřech krocích",
+      "description": "Tvorba profesionální patičky zabere méně než pět minut:",
+      "grid": "four",
       "items": [
         {
+          "icon": "RiMailLine",
           "title": "1. Zadejte údaje",
-          "description": "Vyplňte jméno, pozici, firmu a kontaktní údaje.",
-          "icon": "RiEditLine"
+          "description": "Jméno, funkce, firma, kontakty a volitelně odkazy na sociální sítě."
         },
         {
-          "title": "2. Přizpůsobte vzhled",
-          "description": "Vyberte rozložení, barvy, přidejte logo a odkazy na sociální sítě.",
-          "icon": "RiPaletteLine"
+          "icon": "RiPaletteLine",
+          "title": "2. Upravte vzhled",
+          "description": "Vyberte rozložení, barevné schéma, písmo a nastavte mezery."
         },
         {
-          "title": "3. Zkopírujte kód",
-          "description": "Tlačítko Copy signature zkopíruje hotový kód do schránky. Stačí vložit do Gmailu, Outlooku nebo jiného e-mailového klienta.",
-          "icon": "RiCodeLine"
+          "icon": "RiLinksLine",
+          "title": "3. Přidejte CTA a sítě",
+          "description": "Přidejte akční tlačítko a odkazy na profily na sociálních sítích."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Zkopírujte a vložte",
+          "description": "Zkopírujte podpis a vložte ho do Gmailu, Outlooku nebo jiného klienta."
         }
       ]
     },
@@ -124,18 +137,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Jak vyplnit údaje v podpisu?",
-      "html": "<p class=\"text-mid\">V záložce <strong>Údaje</strong> najdete všechna pole, která můžete vyplnit. Povinná jsou pouze dvě: jméno a příjmení a e-mailová adresa. Ostatní pole jsou volitelná a v podpisu se zobrazí pouze tehdy, pokud je vyplníte.</p><h3 class=\"h5 mt-6 mb-3\">Pole v záložce Údaje</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Řádek nad jménem</strong> – dodatečný text zobrazený nad jménem a příjmením. Můžete sem napsat název firmy, heslo nebo slogan.</li><li><strong>Avatar / logo (URL obrázku)</strong> – adresa URL profilového obrázku nebo loga firmy. Obrázek by měl být čtvercový (min. 120×120 px) a veřejně dostupný na internetu.</li><li><strong>Jméno a příjmení</strong> – povinné pole.</li><li><strong>Tag u jména</strong> – krátký text vedle jména, např. zájmena nebo zkrácená pozice.</li><li><strong>Pozice</strong> – role ve firmě, např. Vedoucí prodeje, Marketingový specialista.</li><li><strong>Název firmy</strong> – název organizace, kterou zastupujete.</li><li><strong>Další řádek</strong> – krátký popis toho, čím se zabýváte nebo co nabízíte.</li><li><strong>E-mail</strong> – povinné pole. Zadejte svou pracovní e-mailovou adresu.</li><li><strong>Telefon</strong> – kontaktní číslo. Formát libovolný, např. +420 600 000 000.</li><li><strong>Web</strong> – úplná URL adresa vašeho webu začínající https://.</li><li><strong>Adresa</strong> – fyzická adresa firmy (ulice, město, PSČ).</li><li><strong>Formální údaje</strong> – IČO, DIČ, číslo licence nebo jiné údaje vyžadované v oboru.</li></ul>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionDemo",
-      "title": "Rozložení podpisu – které zvolit?",
-      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Rozložení podpisu</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div></div>",
-      "html": "<p class=\"text-mid\">Generátor nabízí osm přednastavených rozložení. Každé prezentuje stejné informace jiným způsobem.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> – klasické vertikální rozložení, vhodné pro většinu použití.</li><li><strong>Top bar</strong> – horizontální lišta odděluje podpis od obsahu.</li><li><strong>Labels left</strong> – dva sloupce: popisky a hodnoty.</li><li><strong>Centered</strong> – formální vzhled, obsah na středu.</li><li><strong>Compact</strong> – vše v jednom řádku, minimální výška.</li><li><strong>Two columns</strong> – údaje vlevo, kontakty vpravo.</li><li><strong>Minimalist</strong> – jen základní informace.</li><li><strong>Bottom bar</strong> – barevná lišta s kontakty ve spodní části podpisu.</li></ul>"
+      "title": "Jak vyplnit údaje podpisu",
+      "html": "<p class=\"text-mid\">Na kartě <strong>Údaje</strong> najdete všechna dostupná pole. Pouze dvě jsou povinná: jméno a e-mailová adresa. Ostatní jsou volitelná a v podpisu se zobrazí pouze při vyplnění.</p><h3 class=\"h5 mt-6 mb-3\">Dostupná pole</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Řádek nad jménem</strong> — doplňující text nad jménem: název firmy, slogan nebo motto.</li><li><strong>Avatar / logo (URL obrázku)</strong> — URL profilového snímku nebo loga. Obrázek musí být čtvercový (min. 120 × 120 px) a veřejně přístupný. Po vložení URL si zvolíte <strong>tvar</strong> (kulatý, zaoblený, čtvercový) a <strong>velikost</strong> (malá — 40 px, střední — 56 px, velká — 72 px).</li><li><strong>Celé jméno</strong> — povinné pole.</li><li><strong>Značka vedle jména</strong> — krátký text vedle jména, např. zkratka titulu.</li><li><strong>Funkce</strong> — vaše pozice ve firmě, např. Obchodní ředitel.</li><li><strong>Firma</strong> — název organizace.</li><li><strong>Doplňující řádek</strong> — stručný popis vaší činnosti nebo nabídky.</li><li><strong>E-mail</strong> — povinné pole. Vaše pracovní e-mailová adresa.</li><li><strong>Telefon</strong> — kontaktní číslo v libovolném formátu, např. +420 221 234 567.</li><li><strong>Web</strong> — úplná URL adresa začínající https://.</li><li><strong>Adresa</strong> — adresa sídla firmy.</li><li><strong>Formální údaje</strong> — IČO, DIČ nebo jiné údaje vyžadované zákonem. Toto pole je klíčové pro splnění právních povinností v ČR a SR.</li></ul>"
     },
     {
       "type": "gap",
@@ -143,8 +146,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Jak přidat CTA tlačítka?",
-      "html": "<p class=\"text-mid\">CTA tlačítko (call-to-action, výzva k akci) je klikatelný prvek, který nasměruje příjemce na vybranou stránku. Může to být odkaz na kalendář schůzek, kontaktní formulář nebo nabídku. Generátor umožňuje přidat dvě CTA tlačítka.</p><h3 class=\"h5 mt-6 mb-3\">Hlavní tlačítko</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Otevřete záložku <strong>Tlačítka</strong> v editoru.</li><li>V sekci <strong>Hlavní tlačítko</strong> zadejte text, který uvidí příjemce, např. Domluvte si bezplatnou konzultaci.</li><li>Do pole <strong>CTA odkaz</strong> vložte úplnou URL adresu. Adresa musí začínat https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Sekundární tlačítko</h3><p class=\"text-mid\">Můžete přidat druhé CTA tlačítko ve stylu outline (průhledné pozadí s okrajem). Vyplňte pole v sekci <strong>Sekundární tlačítko</strong> analogicky.</p><h3 class=\"h5 mt-6 mb-3\">Zaoblení tlačítek</h3><p class=\"text-mid\">Na spodní části záložky Tlačítka najdete možnost <strong>Zaoblení tlačítek</strong>. Na výběr máte tři varianty: Žádné (ostré rohy), Mírné (lehce zaoblené) nebo Plné (oválné tlačítko).</p>"
+      "title": "Právní požadavky na e-mailové podpisy — Česko a Slovensko",
+      "html": "<p class=\"text-mid\">V České republice a na Slovensku musí obchodní e-maily obsahovat určité identifikační údaje firmy. E-mailový podpis je nejjednodušší způsob, jak těmto požadavkům vyhovět. Níže uvádíme souhrn hlavních pravidel. Jedná se o obecné informace, nikoli právní poradenství — vždy ověřte platné předpisy.</p><h3 class=\"h5 mt-6 mb-3\">Česká republika — zákon č. 89/2012 Sb. a 90/2012 Sb.</h3><p class=\"text-mid\">Občanský zákoník a zákon o obchodních korporacích vyžadují, aby obchodní korespondence právnických osob obsahovala:</p><ul class=\"text-mid mt-2 list-disc space-y-1 pl-6\"><li>Obchodní firmu (název) a právní formu (s.r.o., a.s., k.s. apod.)</li><li>Sídlo společnosti</li><li>IČO (identifikační číslo osoby)</li><li>DIČ (daňové identifikační číslo), pokud je plátcem DPH</li><li>Zápis v obchodním rejstříku (označení soudu a spisová značka)</li></ul><p class=\"text-mid mt-3\">Zadejte tyto údaje do pole <strong>Formální údaje</strong> v generátoru — zobrazí se automaticky v každém podpisu.</p><h3 class=\"h5 mt-6 mb-3\">Slovensko — zákon č. 513/1991 Zb. (Obchodný zákonník)</h3><p class=\"text-mid\">Na Slovensku platí obdobná pravidla. Obchodní společnosti musí v korespondenci uvádět:</p><ul class=\"text-mid mt-2 list-disc space-y-1 pl-6\"><li>Obchodnú firmu a právnu formu</li><li>Sídlo</li><li>IČO</li><li>DIČ (případně IČ DPH)</li><li>Zápis v obchodnom registri (označenie súdu a oddiel/vložka)</li></ul><h3 class=\"h5 mt-6 mb-3\">OSVČ / Živnostníci</h3><p class=\"text-mid\">Osoby samostatně výdělečně činné (OSVČ) v ČR a živnostníci na Slovensku nemají tak přísné povinnosti jako právnické osoby, ale doporučuje se uvádět: celé jméno, IČO, DIČ (je-li plátce DPH) a adresu provozovny. Zvyšuje to důvěryhodnost a odpovídá obecným požadavkům zákona o elektronickém obchodu.</p><h3 class=\"h5 mt-6 mb-3\">GDPR a ochrana osobních údajů</h3><p class=\"text-mid\">Pokud e-mailový podpis obsahuje osobní údaje (fotografie, soukromé telefonní číslo), uplatní se Obecné nařízení o ochraně osobních údajů (GDPR). Firmy jednající jako správci údajů by měly zvážit přidání krátkého prohlášení o ochraně soukromí nebo odkazu na zásady ochrany osobních údajů. Generátor nabízí pole <strong>Právní doložka / GDPR</strong>.</p>"
     },
     {
       "type": "gap",
@@ -152,8 +155,26 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Jak přidat odkazy na sociální sítě?",
-      "html": "<p class=\"text-mid\">V záložce <strong>Sociální sítě</strong> můžete přidat odkazy na své profily. Generátor podporuje dvanáct platforem: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (dříve Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram a Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Jak na to</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Otevřete záložku <strong>Sociální sítě</strong> v editoru.</li><li>U každé platformy najdete pole pro URL adresu. Vložte úplný odkaz na svůj profil.</li><li>Vyplňte pouze ta pole, která vás zajímají. Prázdná pole se v podpisu nezobrazí.</li></ol><h3 class=\"h5 mt-6 mb-3\">Ikony sociálních sítí</h3><p class=\"text-mid\">Ve spodní části záložky najdete možnost <strong>Zobrazit ikony vedle názvů</strong>. Po zapnutí se odkazy zobrazí jako barevné SVG ikony místo samotných názvů.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Velikost ikon</strong> – na výběr: Malé (16 px), Střední (20 px) nebo Velké (24 px).</li><li><strong>Barva ikon</strong> – Barvy platforem (výchozí barvy každé platformy), Barva akcentu (jednotná barva akcentu) nebo Barva textu.</li></ul>"
+      "title": "Jak vyplnit pole Formální údaje — příklady",
+      "html": "<p class=\"text-mid\">Pole <strong>Formální údaje</strong> na kartě Údaje je víceřádkové textové pole pro právní identifikátory. Příklady:</p><ul class=\"text-mid mt-3 list-disc space-y-3 pl-6\"><li><strong>s.r.o. (ČR)</strong> — Firma Příklad s.r.o. | IČO 12345678 | DIČ CZ12345678 | Zapsaná u Městského soudu v Praze, sp. zn. C 12345 | Sídlo: Příkladná 10, 110 00 Praha</li><li><strong>a.s. (ČR)</strong> — Firma Příklad a.s. | IČO 87654321 | Zapsaná u Krajského soudu v Brně, sp. zn. B 54321 | Praha</li><li><strong>OSVČ (ČR)</strong> — Jan Novák | IČO 12345678 | DIČ CZ1234567890 | Příkladná 5, 120 00 Praha</li><li><strong>s.r.o. (SR)</strong> — Firma Príklad s.r.o. | IČO 12345678 | DIČ 2012345678 | OR Okresného súdu Bratislava I, odd. Sro, vl.č. 12345/B | Bratislava</li><li><strong>Živnostník (SR)</strong> — Ján Novák | IČO 12345678 | DIČ 1012345678 | Bratislava</li></ul><p class=\"text-mid mt-4\">Zadaný text se zobrazí na konci podpisu, těsně před právní doložkou.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak přidat CTA tlačítka",
+      "html": "<p class=\"text-mid\">CTA tlačítko (výzva k akci) je klikatelný prvek, který přesměruje příjemce na vámi zvolenou stránku: kalendář schůzek, kontaktní formulář nebo nabídku. Tvůrce podpisů umožňuje přidat dvě CTA tlačítka.</p><h3 class=\"h5 mt-6 mb-3\">Hlavní tlačítko</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Otevřete kartu <strong>Tlačítka</strong>.</li><li>Zadejte text, který příjemce uvidí, např. <em>Domluvit schůzku</em>.</li><li>Vložte úplnou URL adresu do pole <strong>CTA odkaz</strong>. Adresa musí začínat https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Sekundární tlačítko</h3><p class=\"text-mid\">Můžete přidat druhé tlačítko v obrysovém stylu (průhledné pozadí s rámečkem). Vyplňte pole v části <strong>Sekundární tlačítko</strong> stejným způsobem.</p><h3 class=\"h5 mt-6 mb-3\">Tvar tlačítek</h3><p class=\"text-mid\">Ve spodní části karty nabízí možnost <strong>Zaoblení</strong> tři tvary: Žádné (ostré rohy), Mírné (lehce zaoblené) nebo Plné (oválné).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak přidat odkazy na sociální sítě",
+      "html": "<p class=\"text-mid\">Na kartě <strong>Sociální sítě</strong> můžete přidat odkazy na své profily. Tvůrce podporuje dvanáct platforem: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (dříve Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram a Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Jak na to</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Otevřete kartu <strong>Sociální sítě</strong>.</li><li>U každé platformy vložte úplnou URL adresu profilu.</li><li>Vyplňte pouze platformy, které používáte. Prázdná pole se nezobrazí.</li></ol><h3 class=\"h5 mt-6 mb-3\">Ikony</h3><p class=\"text-mid\">Zapněte <strong>Zobrazit ikony vedle názvů</strong> pro zobrazení barevných SVG ikon místo textu.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Velikost</strong> — Malá (16 px), Střední (20 px) nebo Velká (24 px).</li><li><strong>Barva</strong> — Barvy platformy, Barva akcentu (jednotná) nebo Barva textu.</li></ul>"
     },
     {
       "type": "gap",
@@ -162,7 +183,7 @@
     {
       "type": "sectionInfo",
       "title": "Přizpůsobení vzhledu",
-      "html": "<p class=\"text-mid\">V záložce <strong>Vzhled</strong> můžete upravit barvy, písmo a další vizuální prvky podpisu.</p><h3 class=\"h5 mt-6 mb-3\">Barevné motivy</h3><p class=\"text-mid\">Na horní části záložky najdete pět přednastavených motivů: Tmavý, Modrý, Fialový, Zelený a Šedý. Kliknutí na motiv automaticky nastaví barvu akcentu a barvu textu.</p><h3 class=\"h5 mt-6 mb-3\">Barvy</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Barva akcentu</strong> – používá se v postranní/horní liště, CTA tlačítku a odkazech.</li><li><strong>Barva textu</strong> – barva všech textů v podpisu.</li><li><strong>Barva pozadí</strong> – barva pozadí celého podpisu. Ve výchozím nastavení bílá.</li></ul><h3 class=\"h5 mt-6 mb-3\">Písmo a velikost</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Písmo</strong> – na výběr: Arial, Verdana, Tahoma, Trebuchet MS a Georgia. Všechna jsou bezpečná pro e-maily.</li><li><strong>Velikost textu</strong> – tři možnosti: Malá (12 px), Standardní (14 px) a Větší (16 px).</li></ul>"
+      "html": "<p class=\"text-mid\">Na kartě <strong>Vzhled</strong> můžete měnit barvy, písmo a další vizuální prvky.</p><h3 class=\"h5 mt-6 mb-3\">Barevná schémata</h3><p class=\"text-mid\">V horní části karty je pět přednastavených schémat: Tmavé, Modré, Fialové, Zelené a Šedé. Jedno kliknutí automaticky nastaví barvu akcentu a textu.</p><h3 class=\"h5 mt-6 mb-3\">Individuální barvy</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Barva akcentu</strong> — pro boční nebo horní lištu, CTA tlačítko a odkazy.</li><li><strong>Barva textu</strong> — barva všech textů v podpisu.</li><li><strong>Barva pozadí</strong> — pozadí podpisu. Výchozí je bílá.</li></ul><h3 class=\"h5 mt-6 mb-3\">Písmo a velikost</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Písmo</strong> — Arial, Verdana, Tahoma, Trebuchet MS nebo Georgia. Všechna jsou bezpečná pro e-mail.</li><li><strong>Velikost</strong> — Malá (12 px), Standardní (14 px) nebo Větší (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Rámeček podpisu</h3><p class=\"text-mid\">Rámeček můžete přidat na libovolnou stranu: levou, pravou, horní nebo dolní. Rámeček používá barvu akcentu.</p>"
     },
     {
       "type": "gap",
@@ -170,8 +191,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Styl textu – barvy a velikosti jednotlivých prvků",
-      "html": "<p class=\"text-mid\">V záložce <strong>Styl textu</strong> můžete individuálně přizpůsobit barvu a velikost písma pro každý textový prvek v podpisu.</p><h3 class=\"h5 mt-6 mb-3\">Dostupné prvky</h3><p class=\"text-mid\">Viditelné jsou pouze ty prvky, které se aktuálně nacházejí v podpisu (mají vyplněná data). Pro každý prvek můžete nastavit:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Jméno a příjmení</strong> – ve výchozím nastavení zobrazeno barvou akcentu.</li><li><strong>Pozice</strong> – role ve firmě.</li><li><strong>Firma</strong> – název organizace.</li><li><strong>Kontaktní údaje</strong> – e-mail, telefon, web.</li><li><strong>Sociální sítě</strong> – odkazy na profily.</li><li><strong>Právní doložka</strong> – právní text ve spodní části podpisu.</li></ul><h3 class=\"h5 mt-6 mb-3\">Jak změnit barvu?</h3><p class=\"text-mid\">U každého prvku najdete řadu barevných možností. Klikněte na čtverec s barvou pro výběr. Tlačítko s ikonou resetu obnoví výchozí barvu prvku.</p><h3 class=\"h5 mt-6 mb-3\">Jak změnit velikost?</h3><p class=\"text-mid\">Ve druhém řádku najdete ovládání velikosti s tlačítky - a +. Hodnota ukazuje posunutí oproti základní velikosti písma. Rozsah: od -4 do +4 pixelů.</p>"
+      "title": "Právní doložka a GDPR",
+      "html": "<p class=\"text-mid\">Na kartě <strong>Právní doložka / GDPR</strong> můžete přidat právní text, který se zobrazí na konci podpisu menším písmem.</p><h3 class=\"h5 mt-6 mb-3\">Kdy přidat doložku?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Obchodní korespondence</strong> — upozornění na důvěrnost s žádostí o smazání při chybném doručení.</li><li><strong>Oborové požadavky</strong> — některé obory (právo, medicína, finance) vyžadují specifické informace.</li><li><strong>GDPR</strong> — informace o zpracování osobních údajů.</li></ul><p class=\"text-mid mt-4\">Výchozí text je ukázkový. Můžete ho upravit, smazat nebo nahradit vlastním.</p><h3 class=\"h5 mt-6 mb-3\">Oddělovací čára</h3><p class=\"text-mid\">Zapněte <strong>Zobrazit oddělovací čáru</strong> pro přidání vodorovné čáry nad právním textem. Možnosti: styl (plná, čárkovaná, tečkovaná), tloušťka (1–3 px) a barva.</p>"
     },
     {
       "type": "gap",
@@ -179,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Mezery mezi prvky",
-      "html": "<p class=\"text-mid\">V záložce <strong>Mezery</strong> můžete přesně ovládat vzdálenosti mezi jednotlivými prvky podpisu.</p><h3 class=\"h5 mt-6 mb-3\">Vnitřní okraj podpisu</h3><p class=\"text-mid\">Na horní části záložky najdete možnost vnitřního okraje – tedy vzdálenosti mezi obsahem podpisu a jeho okraji. Na výběr máte tři hodnoty: 8 px (malý), 16 px (střední) a 24 px (velký).</p><h3 class=\"h5 mt-6 mb-3\">Mezery mezi prvky</h3><p class=\"text-mid\">Pod vnitřním okrajem najdete ovládací prvky pro jednotlivé prvky podpisu. Každý má tlačítka + a - pro zvětšení nebo zmenšení mezery.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Za jménem a příjmením</strong></li><li><strong>Za pozicí / firmou</strong></li><li><strong>Za dalším řádkem</strong></li><li><strong>Za kontaktními údaji</strong></li><li><strong>Za sociálními sítěmi</strong></li><li><strong>Za CTA tlačítkem</strong></li><li><strong>Před právní doložkou</strong></li></ul>"
+      "title": "Tipy pro efektivní e-mailový podpis",
+      "html": "<p class=\"text-mid\">Dobrá e-mailová patička je přehledná, konzistentní a snadno čitelná. Nejdůležitější doporučení:</p><h3 class=\"h5 mt-6 mb-3\">Buďte struční</h3><p class=\"text-mid\">Čtyři až sedm řádků kontaktních údajů stačí. Příliš dlouhý podpis odsune obsah zprávy, zejména na mobilech.</p><h3 class=\"h5 mt-6 mb-3\">Maximálně dvě až tři barvy</h3><p class=\"text-mid\">Příliš mnoho barev působí chaoticky. Zvolte jednu barvu akcentu odpovídající vaší značce a zbytek nechte v tmavých, neutrálních tónech.</p><h3 class=\"h5 mt-6 mb-3\">Vždy přidejte akční tlačítko</h3><p class=\"text-mid\">CTA tlačítko z každého e-mailu vytvoří komunikační příležitost. Propojte ho s kalendářem, portfoliem nebo kontaktním formulářem.</p><h3 class=\"h5 mt-6 mb-3\">Používejte bezpečná písma</h3><p class=\"text-mid\">Generátor nabízí pět bezpečných písem: Arial, Verdana, Tahoma, Trebuchet MS a Georgia.</p><h3 class=\"h5 mt-6 mb-3\">Obrázky hostujte na vlastní doméně</h3><p class=\"text-mid\">Pokud přidáte logo nebo avatar, použijte obrázek hostovaný na vlastním webu nebo spolehlivém CDN. Vyhněte se zkracovačům odkazů, Google Disku nebo Dropboxu.</p>"
     },
     {
       "type": "gap",
@@ -188,17 +209,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Právní doložka / GDPR – kdy ji přidat?",
-      "html": "<p class=\"text-mid\">V záložce <strong>Doložka / GDPR</strong> můžete přidat právní text, který se zobrazí ve spodní části podpisu menším písmem.</p><h3 class=\"h5 mt-6 mb-3\">Kdy se vyplatí doložku přidat?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Obchodní korespondence</strong> – informace o důvěrnosti zprávy a žádost o smazání v případě chybného doručení.</li><li><strong>Oborové požadavky</strong> – některé obory (např. právní, zdravotnický, finanční) vyžadují určité informace v každé zprávě.</li><li><strong>GDPR</strong> – informace o zpracování osobních údajů, pokud je firma správcem dat.</li></ul><p class=\"text-mid mt-4\">Ve výchozím nastavení je pole vyplněno ukázkovým textem. Můžete jej upravit, smazat nebo nahradit vlastní doložkou.</p><h3 class=\"h5 mt-6 mb-3\">Oddělovací linka</h3><p class=\"text-mid\">Pod textovým polem najdete možnost <strong>Zobrazit oddělovací linku</strong>. Po zapnutí se přidá horizontální linka mezi kontaktní údaje a právní doložku.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Automatické ukládání a reset nastavení",
-      "html": "<p class=\"text-mid\">Generátor automaticky ukládá všechna nastavení v paměti prohlížeče (localStorage). Po obnovení stránky nebo opětovném otevření nástroje se data, rozložení, barvy a všechny ostatní možnosti obnoví.</p><h3 class=\"h5 mt-6 mb-3\">Jak funguje automatické ukládání?</h3><p class=\"text-mid\">Každá změna (text, barva, rozložení, mezery) se okamžitě ukládá v paměti prohlížeče. Ukládání probíhá automaticky na pozadí – bez klikání na tlačítka.</p><h3 class=\"h5 mt-6 mb-3\">Jak resetovat nastavení?</h3><p class=\"text-mid\">Pod náhledem podpisu najdete tlačítko <strong>Resetovat vzhled</strong>. Po kliknutí se zobrazí okno s žádostí o potvrzení. Potvrzení resetu obnoví všechna data a nastavení na výchozí hodnoty. Tuto operaci nelze vrátit zpět.</p><h3 class=\"h5 mt-6 mb-3\">Export a import konfigurace</h3><p class=\"text-mid\">Pod náhledem podpisu najdete dvě další tlačítka: <strong>Exportovat nastavení</strong> a <strong>Importovat nastavení</strong>. Export uloží všechna data, barvy, rozložení, mezery a styly textu do souboru JSON. Import umožní načíst dříve uloženou konfiguraci ze souboru.</p>"
+      "title": "Automatické ukládání a obnovení",
+      "html": "<p class=\"text-mid\">Tvůrce podpisů automaticky ukládá práci do paměti prohlížeče (localStorage). Při obnovení stránky nebo pozdějším návratu jsou všechna data a nastavení zachována.</p><h3 class=\"h5 mt-6 mb-3\">Obnovení výchozích hodnot</h3><p class=\"text-mid\">Pod náhledem najdete tlačítko <strong>Obnovit vzhled</strong>. Po potvrzení se vše vrátí na výchozí hodnoty.</p><h3 class=\"h5 mt-6 mb-3\">Export a import konfigurace</h3><p class=\"text-mid\">Tlačítka <strong>Exportovat nastavení</strong> a <strong>Importovat nastavení</strong> umožňují uložit a obnovit kompletní konfiguraci přes JSON soubor.</p>"
     },
     {
       "type": "gap",
@@ -207,23 +219,23 @@
     {
       "type": "sectionSteps",
       "title": "Jak zkopírovat podpis do Gmailu nebo Outlooku",
-      "description": "Po dokončení podpisu stačí pár kroků k přidání do e-mailového klienta:",
+      "description": "Když je patička hotová, postupujte takto:",
       "grid": "three",
       "items": [
         {
           "icon": "RiClipboardLine",
           "title": "1. Zkopírujte kód",
-          "description": "Tlačítko Copy signature zkopíruje podpis do schránky jako formátovaný HTML, připravený k vložení."
+          "description": "Klikněte na Kopírovat podpis (Gmail / Outlook). Podpis se zkopíruje jako formátovaný HTML."
         },
         {
           "icon": "RiSettings3Line",
           "title": "2. Otevřete nastavení podpisu",
-          "description": "V Gmailu: Settings > See all settings > Signature. V Outlooku: File > Options > Mail > Signatures."
+          "description": "V Gmailu: Nastavení → Všechna nastavení → Podpis. V Outlooku: Soubor → Možnosti → Pošta → Podpisy."
         },
         {
           "icon": "RiSaveLine",
           "title": "3. Vložte a uložte",
-          "description": "V poli podpisu použijte Ctrl+V (Windows) nebo Cmd+V (Mac). Podpis se zobrazí se všemi barvami a formátováním. Uložte změny."
+          "description": "V poli podpisu stiskněte Ctrl + V (Windows) nebo Cmd + V (Mac). Podpis se zobrazí se všemi barvami. Uložte."
         }
       ]
     },
@@ -232,38 +244,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "Náhled podpisu a možnosti exportu",
-      "html": "<p class=\"text-mid\">Panel náhledu se zobrazuje vpravo od editoru a automaticky se aktualizuje při každé změně. Náhled je připnutý k obrazovce (sticky), takže je viditelný i při rolování.</p><h3 class=\"h5 mt-6 mb-3\">Přepínání pozadí náhledu</h3><p class=\"text-mid\">Nad náhledem najdete tři tlačítka pro změnu pozadí: <strong>Světlé</strong> (výchozí šedé pozadí), <strong>Tmavé</strong> (tmavé pozadí, užitečné pro kontrolu čitelnosti) a <strong>Šachovnice</strong> (vzor šachovnice, zobrazí průhlednost a okraje podpisu).</p><h3 class=\"h5 mt-6 mb-3\">Akční tlačítka</h3><p class=\"text-mid\">Pod náhledem najdete několik tlačítek:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Kopírovat podpis (Gmail / Outlook)</strong> – zkopíruje podpis jako formátovaný HTML do schránky.</li><li><strong>Kopírovat HTML kód</strong> – zkopíruje surový HTML kód podpisu do schránky.</li><li><strong>Stáhnout jako HTML</strong> – uloží kód podpisu jako soubor .html na disk.</li><li><strong>Zobrazit HTML kód</strong> – otevře modální okno se zdrojovým kódem podpisu.</li><li><strong>Exportovat nastavení</strong> – uloží celou konfiguraci podpisu do souboru JSON.</li><li><strong>Importovat nastavení</strong> – načte konfiguraci ze souboru JSON.</li><li><strong>Resetovat vzhled</strong> – obnoví všechna data a nastavení na výchozí hodnoty (po potvrzení).</li></ul>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
-      "title": "Pro koho je generátor podpisu e-mailu určen?",
+      "title": "Pro koho je tento generátor?",
+      "description": "Nástroj je užitečný pro každého, kdo posílá obchodní e-maily:",
       "grid": "two",
       "items": [
         {
           "icon": "RiBriefcaseLine",
           "title": "Podnikatelé a freelanceři",
-          "description": "Profesionální podpis v každé zprávě bez potřeby grafika."
+          "description": "Profesionální podpis v každé zprávě bez grafika a technických znalostí."
         },
         {
           "icon": "RiTeamLine",
           "title": "Firemní týmy",
-          "description": "Každý zaměstnanec si vytvoří podpis ve stejném stylu. Konzistentní identita v celé firmě."
+          "description": "Každý kolega vytvoří vlastní podpis ve stejném stylu. Exportujte JSON pro sjednocení celého týmu."
         },
         {
           "icon": "RiHandCoinLine",
-          "title": "Obchodní zástupci",
-          "description": "CTA tlačítko s odkazem na kalendář nebo nabídku zvyšuje pravděpodobnost rezervace schůzky."
+          "title": "Obchodníci",
+          "description": "CTA tlačítko s odkazem na kalendář nebo nabídku z každého e-mailu vytvoří obchodní příležitost."
         },
         {
           "icon": "RiScales3Line",
-          "title": "Právníci, účetní, lékaři",
-          "description": "Možnost přidat právní doložky, čísla licencí nebo jiné údaje vyžadované v oboru."
+          "title": "Advokáti, účetní, lékaři",
+          "description": "Přidejte právní doložku, číslo licence, IČO nebo jiné údaje požadované vaší profesí."
         }
       ]
     },
@@ -273,53 +277,48 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Čím je tento generátor podpisu e-mailu výjimečný?",
+      "title": "Co dělá tento tvůrce podpisů výjimečným?",
       "grid": "three",
       "items": [
         {
           "icon": "RiInfinityLine",
-          "title": "Osm rozložení podpisu",
-          "description": "Standard, horní lišta, etikety vlevo, vycentrovaný, kompaktní, dva sloupce, minimalistický a spodní lišta."
+          "title": "Osm rozložení",
+          "description": "Standardní, Horní lišta, Popisky vlevo, Centrované, Kompaktní, Dva sloupce, Minimalistické a Dolní lišta."
         },
         {
           "icon": "RiUserLine",
-          "title": "Automatické ukládání v prohlížeči",
-          "description": "Každá změna se automaticky ukládá v paměti prohlížeče. Po obnovení stránky podpis zůstává dostupný."
+          "title": "Automatické ukládání",
+          "description": "Každá změna se automaticky uloží v prohlížeči."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Export a import konfigurace",
-          "description": "Celá konfigurace podpisu může být exportována jako soubor JSON a sdílena s kolegy."
+          "title": "Export a import",
+          "description": "Uložte kompletní konfiguraci jako JSON soubor a sdílejte s kolegy."
         },
         {
           "icon": "RiAppsLine",
-          "title": "12 sociálních platforem",
+          "title": "12 sociálních sítí",
           "description": "LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram a Pinterest."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Pokročilé přizpůsobení",
-          "description": "Tvar a velikost avatara, stylizace linií, individuální barvy a velikosti textu."
-        },
-        {
-          "icon": "RiFileCodeLine",
-          "title": "Mnoho možností exportu",
-          "description": "Kopírování HTML, stahování souboru, náhled zdrojového kódu, export/import konfigurace JSON."
+          "title": "Detailní přizpůsobení",
+          "description": "Tvar a velikost avataru, styl čáry, individuální barvy a velikosti, rámeček podpisu."
         },
         {
           "icon": "RiShieldCheckLine",
-          "title": "Soukromí",
-          "description": "Data se neodesílají na server. Generátor funguje zcela v prohlížeči."
+          "title": "Plné soukromí",
+          "description": "Data neopouštějí prohlížeč. Generátor běží výhradně na vašem zařízení."
         },
         {
           "icon": "RiMailCheckLine",
           "title": "Kompatibilita",
-          "description": "Vygenerovaný HTML kód funguje v Gmailu, Outlooku, Apple Mailu i Thunderbirdu."
+          "description": "Vygenerovaný HTML kód funguje v Gmailu, Outlooku, Apple Mailu a Thunderbirdu."
         },
         {
           "icon": "RiEyeLine",
           "title": "Náhled v reálném čase",
-          "description": "Každá změna viditelná okamžitě na světlém, tmavém nebo šachovnicovém pozadí."
+          "description": "Každá změna je okamžitě viditelná na světlém, tmavém nebo šachovnicovém pozadí."
         }
       ]
     },
@@ -329,24 +328,48 @@
     },
     {
       "type": "faq",
-      "title": "Často kladené otázky o generátoru podpisu e-mailu",
+      "title": "Časté otázky ke generátoru e-mailového podpisu",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Funguje podpis v Gmailu, Outlooku a Apple Mailu?",
-          "answer": "Ano. Podpis generovaný nástrojem používá HTML tabulky, které se správně zobrazují ve všech populárních e-mailových klientech: Gmail, Outlook (desktop i web), Apple Mail, Thunderbird."
+          "question": "Jak vložím podpis do Gmailu?",
+          "answer": "Klikněte na Kopírovat podpis (Gmail / Outlook). Otevřete Gmail → Nastavení → Všechna nastavení → Podpis. Vložte pomocí Ctrl + V (nebo Cmd + V). Barvy, odkazy a ikony se automaticky zachovají.",
+          "answerSchemaText": "Zkopírovat podpis, Gmail → Nastavení → Podpis, Ctrl+V."
         },
         {
-          "question": "Mohu přidat logo firmy?",
-          "answer": "Ano. V záložce Details vložte URL obrázku (logo nebo profilová fotka). Obrázek by měl být čtvercový (alespoň 120x120 px) a veřejně dostupný na internetu."
+          "question": "Funguje to v Outlooku?",
+          "answer": "Ano. V Outlook Desktop: Soubor → Možnosti → Pošta → Podpisy → Vložit. V Outlook Web: Nastavení → Pošta → Psaní a odpovědi → Podpis.",
+          "answerSchemaText": "Ano. Desktop: Soubor → Možnosti → Podpisy. Web: Nastavení → Pošta → Podpis."
         },
         {
-          "question": "Jak zkopírovat podpis do e-mailového klienta?",
-          "answer": "Tlačítko Copy signature pod náhledem zkopíruje podpis do schránky jako formátovaný HTML. V nastavení podpisu Gmailu nebo Outlooku stačí použít Ctrl+V (Windows) nebo Cmd+V (Mac)."
+          "question": "Jaké formální údaje musí můj podpis obsahovat?",
+          "answer": "V ČR musí obchodní společnosti uvádět obchodní firmu, sídlo, IČO, DIČ a údaje o zápisu v obchodním rejstříku. Na Slovensku platí obdobná pravidla. OSVČ — doporučuje se IČO a adresa. Podrobnosti najdete v sekci o právních požadavcích na této stránce.",
+          "answerSchemaText": "ČR: firma, sídlo, IČO, DIČ, rejstřík. SR: obdobně. OSVČ: IČO, adresa. Viz sekce právní požadavky."
         },
         {
-          "question": "Mohu použít generátor pro vytvoření podpisů pro celý tým?",
-          "answer": "Ano. Generátor nevyžaduje přihlášení ani registraci. Každý člen týmu může otevřít nástroj, vyplnit své údaje a zkopírovat hotový podpis. Konfiguraci lze také exportovat jako JSON soubor a sdílet s kolegy."
+          "question": "Jsou moje data uložena?",
+          "answer": "Všechna data zůstávají v paměti prohlížeče (localStorage). Nic se neposílá na server. Nastavení můžete exportovat a importovat.",
+          "answerSchemaText": "Lokálně v prohlížeči. Bez serveru. Export/import možný."
+        },
+        {
+          "question": "Mohu přidat odkazy na sociální sítě?",
+          "answer": "Ano. Generátor podporuje dvanáct platforem: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram a Pinterest.",
+          "answerSchemaText": "12 platforem: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest."
+        },
+        {
+          "question": "Tlačítko kopírování je neaktivní — proč?",
+          "answer": "Pro kopírování musí být vyplněna alespoň dvě pole: jméno a e-mailová adresa.",
+          "answerSchemaText": "Jméno a e-mail musí být vyplněny."
+        },
+        {
+          "question": "Jak udělám podpis vhodný pro mobily?",
+          "answer": "Udržujte podpis krátký (čtyři až sedm řádků), používejte standardní velikost textu (14 px) a zvolte rozložení vhodné pro úzké obrazovky. Standardní a Kompaktní jsou nejlepší volby.",
+          "answerSchemaText": "Krátký, 14 px, Standardní nebo Kompaktní rozložení."
+        },
+        {
+          "question": "Kde hostovat logo?",
+          "answer": "Na vlastním webu nebo spolehlivém CDN. Vyhněte se Google Disku, Dropboxu nebo zkracovačům. Obrázek musí být čtvercový, alespoň 120 × 120 px, ve formátu JPG, PNG nebo WebP.",
+          "answerSchemaText": "Na vlastním webu nebo CDN. Čtverec, min. 120 × 120 px, JPG/PNG/WebP."
         }
       ]
     },
@@ -357,10 +380,10 @@
     {
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
-      "description": "Máte nápad na novou funkci, našli jste chybu nebo chcete navrhnout jiný nástroj, který by usnadnil vaši práci? Napište nám – odpovídáme do 24 hodin.",
-      "imageSrc": "/assets/tools/free-html-email-signature-generator/generator-podpisu-emailu-zdarma-cs.webp",
-      "imageAlt": "Generátor podpisu emailu – Arteon",
-      "defaultSubject": "Feedback: Generátor podpisu emailu"
+      "description": "Máte nápad na novou funkci, našli jste chybu nebo chcete navrhnout jiný nástroj? Napište nám — odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/generator-emailoveho-podpisu-zdarma-cs.webp",
+      "imageAlt": "Generátor e-mailového podpisu – Arteon",
+      "defaultSubject": "Zpětná vazba: Generátor e-mailového podpisu"
     },
     {
       "type": "gap",

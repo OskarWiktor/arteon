@@ -25,10 +25,18 @@
   "schemas": {
     "software": {
       "name": "HTML e-mail-signatur-generator – signaturskaber",
-      "alternateName": ["HTML e-mail-signatur-generator", "Generator til e-mail-sidefod"],
+      "alternateName": [
+        "Gratis e-mail signatur generator",
+        "HTML-signatur skaber",
+        "E-mail signatur til Gmail",
+        "E-mail signatur til Outlook",
+        "Professionel e-mail signatur",
+        "E-mail sidefod generator",
+        "Værktøj til e-mail signatur"
+      ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Gratis HTML e-mail-signatur-generator. Tilføj kontaktoplysninger, CTA-link og sociale medie-profiler, kopiér derefter den færdige signaturkode til Gmail, Outlook og andre e-mail-klienter.",
+      "description": "Gratis HTML e-mail signatur generator og skaber af professionelle sidefødder. Tilføj kontaktoplysninger, CTA-link og sociale medieprofiler. Kopiér koden til Gmail, Outlook, Apple Mail eller enhver anden e-mailklient. Uden registrering.",
       "featureList": [
         "Kontaktoplysninger (navn, stilling, virksomhed)",
         "Telefon, e-mail og webadresse",
@@ -86,8 +94,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Hvorfor har du brug for en professionel e-mail-signatur?",
-      "html": "<p class=\"text-mid\">E-mail-signaturen (også kaldet e-mail-sidefod) er en informationsblok i bunden af hver sendt besked. Den indeholder kontaktoplysninger, stilling, virksomhedsnavn og ofte et link til hjemmesiden eller bookingkalenderen.</p><p class=\"text-mid mt-3\">Modtageren behøver ikke lede efter telefonnummeret i tidligere beskeder – alle oplysninger er let tilgængelige. En professionel e-mail-signatur viser også at du går op i detaljer og opretholder et konsekvent virksomhedsimage i forretningskommunikationen.</p>",
+      "title": "Hvorfor bruge en professionel e-mail signatur?",
+      "html": "<p class=\"text-mid\">En e-mail signatur er en kort tekstblok nederst i hver besked, du sender. Den kaldes også e-mail sidefod eller signaturblok. Den viser dit navn, titel, virksomhed og kontaktoplysninger. Mange signaturer indeholder også et link til hjemmesiden, en mødebooking eller sociale medieprofiler.</p><p class=\"text-mid mt-3\">I gennemsnit sender en kontormedarbejder 30 til 40 e-mails om dagen. Hver besked er en mulighed for at dele kontaktoplysninger, styrke brandet og gøre det nemt for modtageren at kontakte dig. En veldesignet sidefod sparer modtageren tid — de behøver ikke lede efter dit telefonnummer i gamle beskeder.</p><p class=\"text-mid mt-3\">I Danmark kræver loven desuden, at forretnings-e-mails indeholder visse virksomhedsoplysninger. CVR-nummer og selskabsform hører til de vigtigste. E-mail signaturen er det enkleste sted at inkludere dem.</p>",
       "imageSrc": "/assets/tools/free-html-email-signature-generator/gratis-e-mail-signatur-generator-da.webp",
       "imageAlt": "E-mail signatur generator – Arteon"
     },
@@ -97,24 +105,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Sådan bruger du e-mail-signatur-generatoren",
-      "description": "At oprette en professionel e-mail-signatur tager kun få minutter:",
-      "grid": "three",
+      "title": "Opret en e-mail signatur i fire trin",
+      "description": "At oprette en professionel sidefod tager mindre end fem minutter:",
+      "grid": "four",
       "items": [
         {
+          "icon": "RiMailLine",
           "title": "1. Indtast oplysninger",
-          "description": "Udfyld navn, stilling, virksomhed og kontaktoplysninger.",
-          "icon": "RiEditLine"
+          "description": "Navn, titel, virksomhed, kontaktoplysninger og valgfrit sociale medielinks."
         },
         {
-          "title": "2. Tilpas udseendet",
-          "description": "Vælg layout, farver, tilføj logo og sociale medie-links.",
-          "icon": "RiPaletteLine"
+          "icon": "RiPaletteLine",
+          "title": "2. Tilpas designet",
+          "description": "Vælg layout, farveskema, skrifttype og justér afstandene."
         },
         {
-          "title": "3. Kopiér koden",
-          "description": "Knappen Copy signature kopierer den færdige kode til udklipsholder. Indsæt bare i Gmail, Outlook eller en anden e-mail-klient.",
-          "icon": "RiCodeLine"
+          "icon": "RiLinksLine",
+          "title": "3. Tilføj CTA og sociale medier",
+          "description": "Tilføj en handlingsknap og links til dine sociale medieprofiler."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Kopiér og indsæt",
+          "description": "Kopiér signaturen og indsæt den i Gmail, Outlook eller en anden e-mailklient."
         }
       ]
     },
@@ -124,18 +137,26 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Sådan udfylder du oplysningerne i signaturen",
-      "html": "<p class=\"text-mid\">I fanen <strong>Oplysninger</strong> finder du alle felter, du kan udfylde. Kun to er obligatoriske: navn og e-mailadresse. De øvrige felter er valgfrie og vises kun i signaturen, hvis du udfylder dem.</p><h3 class=\"h5 mt-6 mb-3\">Felter i fanen Oplysninger</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Linje over navnet</strong> – ekstra tekst over navn. Du kan skrive firmanavn, slogan eller motto.</li><li><strong>Avatar / logo (billed-URL)</strong> – URL til profilbillede eller firmalogo. Billedet bør være kvadratisk (min. 120×120 px) og offentligt tilgængeligt.</li><li><strong>Navn</strong> – obligatorisk felt.</li><li><strong>Tag ved navn</strong> – kort tekst ved siden af navnet, f.eks. pronominer eller forkortet titel.</li><li><strong>Stilling</strong> – rolle i virksomheden.</li><li><strong>Firmanavn</strong> – organisationens navn.</li><li><strong>Ekstra linje</strong> – kort beskrivelse af din aktivitet eller tilbud.</li><li><strong>E-mail</strong> – obligatorisk felt.</li><li><strong>Telefon</strong> – kontaktnummer i valgfrit format.</li><li><strong>Hjemmeside</strong> – fuld URL startende med https://.</li><li><strong>Adresse</strong> – fysisk firmaadresse.</li><li><strong>Formelle oplysninger</strong> – CVR-nummer, licens eller andre branchekrav.</li></ul>"
+      "title": "Sådan udfylder du signaturens oplysninger",
+      "html": "<p class=\"text-mid\">Under fanen <strong>Oplysninger</strong> finder du alle tilgængelige felter. Kun to er påkrævede: navn og e-mailadresse. De øvrige er valgfrie og vises kun i signaturen, hvis de er udfyldt.</p><h3 class=\"h5 mt-6 mb-3\">Tilgængelige felter</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Linje over navnet</strong> — ekstra tekst over navnet: virksomhedsnavn, slogan eller motto.</li><li><strong>Avatar / logo (billed-URL)</strong> — URL til profilbillede eller logo. Billedet skal være kvadratisk (min. 120 × 120 px) og offentligt tilgængeligt. Efter indsætning kan du vælge <strong>form</strong> (rund, afrundet, kvadratisk) og <strong>størrelse</strong> (lille — 40 px, medium — 56 px, stor — 72 px).</li><li><strong>Fulde navn</strong> — påkrævet felt.</li><li><strong>Mærke ved siden af navnet</strong> — kort tekst ved siden af navnet, f.eks. pronominer eller forkortet titel.</li><li><strong>Titel</strong> — din rolle i virksomheden, f.eks. Salgsdirektør.</li><li><strong>Virksomhed</strong> — organisationens navn.</li><li><strong>Ekstra linje</strong> — kort beskrivelse af din aktivitet eller dit tilbud.</li><li><strong>E-mail</strong> — påkrævet felt. Din professionelle e-mailadresse.</li><li><strong>Telefon</strong> — kontaktnummer i valgfrit format, f.eks. +45 12 34 56 78.</li><li><strong>Hjemmeside</strong> — fuld URL, der starter med https://.</li><li><strong>Adresse</strong> — virksomhedens adresse.</li><li><strong>Formelle oplysninger</strong> — CVR-nummer, SE-nummer eller andre lovpligtige oplysninger. Dette felt er vigtigt for at overholde lovkravene i Danmark.</li></ul>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionDemo",
-      "title": "Signaturlayouts – hvilket skal du vælge?",
-      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Signaturlayout</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Accent bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Top bar</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Labels left</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centered</span></div></div>",
-      "html": "<p class=\"text-mid\">Generatoren tilbyder otte foruddefinerede layouts. Hvert layout præsenterer de samme oplysninger på en anden måde.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> – klassisk vertikalt layout, passer til de fleste brugsscenarier.</li><li><strong>Top bar</strong> – vandret linje adskiller signaturen fra indholdet.</li><li><strong>Labels left</strong> – to kolonner: etiketter og værdier.</li><li><strong>Centered</strong> – formelt udseende, indhold centreret.</li><li><strong>Compact</strong> – alt på én linje, minimal højde.</li><li><strong>Two columns</strong> – oplysninger til venstre, kontakter til højre.</li><li><strong>Minimalist</strong> – kun grundlæggende oplysninger.</li><li><strong>Bottom bar</strong> – farvet linje med kontakter i bunden af signaturen.</li></ul>"
+      "type": "sectionInfo",
+      "title": "Lovkrav til e-mail signaturer i Danmark",
+      "html": "<p class=\"text-mid\">I Danmark skal forretnings-e-mails indeholde visse virksomhedsoplysninger. E-mail signaturen er den enkleste måde at opfylde disse krav. Nedenfor opsummeres de vigtigste regler. Dette er generel information, ikke juridisk rådgivning — kontrollér altid gældende lovgivning.</p><h3 class=\"h5 mt-6 mb-3\">E-handelsloven og selskabsloven</h3><p class=\"text-mid\">Ifølge dansk lovgivning skal virksomheder i deres forretningskorrespondance angive:</p><ul class=\"text-mid mt-2 list-disc space-y-1 pl-6\"><li>Virksomhedens navn og selskabsform (ApS, A/S, I/S, enkeltmandsvirksomhed osv.)</li><li>CVR-nummer</li><li>Hjemsted</li><li>SE-nummer (momsregistrering), hvis momspligtig</li></ul><p class=\"text-mid mt-3\">Brug feltet <strong>Formelle oplysninger</strong> i generatoren til at angive disse data.</p><h3 class=\"h5 mt-6 mb-3\">Anpartsselskaber (ApS) og aktieselskaber (A/S)</h3><p class=\"text-mid\">ApS og A/S skal desuden angive selskabskapital og eventuel likvidationsstatus i forretningsdokumenter. Det er god praksis at medtage disse oplysninger i e-mail signaturen.</p><h3 class=\"h5 mt-6 mb-3\">Enkeltmandsvirksomheder</h3><p class=\"text-mid\">Enkeltmandsvirksomheder har ikke lige så strenge krav som selskaber, men det anbefales at angive CVR-nummer og adresse i forretningskorrespondancen.</p><h3 class=\"h5 mt-6 mb-3\">GDPR og databeskyttelse</h3><p class=\"text-mid\">Hvis e-mail signaturen indeholder personoplysninger (foto, privat telefonnummer), gælder GDPR (databeskyttelsesforordningen). Virksomheder, der er dataansvarlige, bør overveje at tilføje en kort privatlivserklæring eller et link til privatlivspolitikken. Generatoren tilbyder feltet <strong>Ansvarsfraskrivelse / GDPR</strong> til dette formål.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Sådan udfylder du feltet Formelle oplysninger — eksempler",
+      "html": "<p class=\"text-mid\">Feltet <strong>Formelle oplysninger</strong> under fanen Oplysninger er et flerlinjet tekstfelt til juridiske identifikatorer. Eksempler:</p><ul class=\"text-mid mt-3 list-disc space-y-3 pl-6\"><li><strong>ApS</strong> — Eksempel ApS | CVR 12345678 | SE 12345678 | Hjemsted: København | Selskabskapital 50.000 DKK</li><li><strong>A/S</strong> — Eksempel A/S | CVR 87654321 | Hjemsted: Aarhus</li><li><strong>Enkeltmandsvirksomhed</strong> — Jens Hansen | CVR 12345678 | København</li></ul><p class=\"text-mid mt-4\">Den indtastede tekst vises nederst i signaturen, lige før ansvarsfraskrivelsen.</p>"
     },
     {
       "type": "gap",
@@ -144,7 +165,7 @@
     {
       "type": "sectionInfo",
       "title": "Sådan tilføjer du CTA-knapper",
-      "html": "<p class=\"text-mid\">En CTA-knap (call-to-action) er et klikbart element, der leder modtageren til en valgt side. Det kan være et link til en mødekalender, kontaktformular eller tilbud. Generatoren gør det muligt at tilføje to CTA-knapper.</p><h3 class=\"h5 mt-6 mb-3\">Primær knap</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Åbn fanen <strong>Knapper</strong> i editoren.</li><li>I sektionen <strong>Primær knap</strong> indtast teksten, som modtageren vil se, f.eks. Book gratis konsultation.</li><li>I feltet <strong>CTA-link</strong> indsæt den fulde URL-adresse. Adressen skal starte med https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Sekundær knap</h3><p class=\"text-mid\">Du kan tilføje en anden CTA-knap i outline-stil (gennemsigtig baggrund med kant). Udfyld felterne analogt.</p><h3 class=\"h5 mt-6 mb-3\">Afrunding af knapper</h3><p class=\"text-mid\">I bunden af fanen Knapper finder du muligheden <strong>Afrunding af knapper</strong>. Tre varianter: Ingen (skarpe hjørner), Let (let afrundet) eller Fuld (oval knap).</p>"
+      "html": "<p class=\"text-mid\">En CTA-knap (opfordring til handling) er et klikbart element, der leder modtageren til en side efter dit valg: mødebooking, kontaktformular eller tilbud. Skaberen understøtter to CTA-knapper.</p><h3 class=\"h5 mt-6 mb-3\">Hovedknap</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Åbn fanen <strong>Knapper</strong>.</li><li>Indtast den tekst, modtageren vil se, f.eks. <em>Book et møde</em>.</li><li>Indsæt den fulde URL i feltet <strong>CTA-link</strong>. Adressen skal starte med https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Sekundær knap</h3><p class=\"text-mid\">Du kan tilføje en anden knap i konturstil (gennemsigtig baggrund med kant). Udfyld felterne under <strong>Sekundær knap</strong> på samme måde.</p><h3 class=\"h5 mt-6 mb-3\">Knapform</h3><p class=\"text-mid\">Nederst på fanen tilbyder <strong>Afrunding</strong> tre former: Ingen (skarpe hjørner), Let (let afrundet) eller Fuld (oval).</p>"
     },
     {
       "type": "gap",
@@ -152,8 +173,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Sådan tilføjer du links til sociale medier",
-      "html": "<p class=\"text-mid\">I fanen <strong>Sociale medier</strong> kan du tilføje links til dine profiler. Generatoren understøtter tolv platforme: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (tidligere Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram og Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Sådan gør du</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Åbn fanen <strong>Sociale medier</strong> i editoren.</li><li>Ved hver platform finder du et felt til URL-adresse. Indsæt det fulde link til din profil.</li><li>Udfyld kun de felter, der er relevante for dig. Tomme felter vises ikke i signaturen.</li></ol><h3 class=\"h5 mt-6 mb-3\">Ikoner for sociale medier</h3><p class=\"text-mid\">I bunden af fanen finder du muligheden <strong>Vis ikoner ved siden af navne</strong>. Når den er aktiveret, vises links som farvede SVG-ikoner i stedet for bare navne.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Ikonstørrelse</strong> – valgmuligheder: Små (16 px), Mellemstore (20 px) eller Store (24 px).</li><li><strong>Ikonfarve</strong> – Platformfarver (standardfarver), Accentfarve (ensartet) eller Tekstfarve.</li></ul>"
+      "title": "Sådan tilføjer du sociale medielinks",
+      "html": "<p class=\"text-mid\">Under fanen <strong>Sociale medier</strong> kan du tilføje links til dine profiler. Skaberen understøtter tolv platforme: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (tidl. Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram og Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Sådan gør du</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Åbn fanen <strong>Sociale medier</strong>.</li><li>Indsæt den fulde profil-URL ved siden af hver platform.</li><li>Udfyld kun de platforme, du bruger. Tomme felter vises ikke.</li></ol><h3 class=\"h5 mt-6 mb-3\">Ikoner</h3><p class=\"text-mid\">Aktivér <strong>Vis ikoner ved siden af navne</strong> for at se farvede SVG-ikoner i stedet for tekst.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Størrelse</strong> — Lille (16 px), Medium (20 px) eller Stor (24 px).</li><li><strong>Farve</strong> — Platformfarver, Accentfarve (ensartet) eller Tekstfarve.</li></ul>"
     },
     {
       "type": "gap",
@@ -161,8 +182,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Tilpasning af udseende",
-      "html": "<p class=\"text-mid\">I fanen <strong>Udseende</strong> kan du tilpasse farver, skrifttype og andre visuelle elementer.</p><h3 class=\"h5 mt-6 mb-3\">Farvetemaer</h3><p class=\"text-mid\">Øverst i fanen finder du fem foruddefinerede temaer: Mørk, Blå, Lilla, Grøn og Grå. Et klik på et tema indstiller automatisk accentfarve og tekstfarve.</p><h3 class=\"h5 mt-6 mb-3\">Farver</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Accentfarve</strong> – bruges i sidebjælke/topbjælke, CTA-knap og links.</li><li><strong>Tekstfarve</strong> – farve på alle tekster i signaturen.</li><li><strong>Baggrundsfarve</strong> – signaturens baggrund. Standard hvid.</li></ul><h3 class=\"h5 mt-6 mb-3\">Skrifttype og størrelse</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Skrifttype</strong> – valgmuligheder: Arial, Verdana, Tahoma, Trebuchet MS og Georgia. Alle er e-mail-sikre.</li><li><strong>Tekststørrelse</strong> – tre muligheder: Lille (12 px), Standard (14 px) og Større (16 px).</li></ul>"
+      "title": "Tilpas udseendet",
+      "html": "<p class=\"text-mid\">Under fanen <strong>Udseende</strong> kan du ændre farver, skrifttype og andre visuelle elementer.</p><h3 class=\"h5 mt-6 mb-3\">Farvetemaer</h3><p class=\"text-mid\">Øverst på fanen er fem forudindstillede temaer: Mørk, Blå, Lilla, Grøn og Grå. Et klik anvender automatisk accent- og tekstfarve.</p><h3 class=\"h5 mt-6 mb-3\">Individuelle farver</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Accentfarve</strong> — til sidepanelet eller toppen, CTA-knappen og links.</li><li><strong>Tekstfarve</strong> — farve for al tekst i signaturen.</li><li><strong>Baggrundsfarve</strong> — signaturens baggrund. Hvid som standard.</li></ul><h3 class=\"h5 mt-6 mb-3\">Skrifttype og størrelse</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Skrifttype</strong> — Arial, Verdana, Tahoma, Trebuchet MS eller Georgia. Alle er e-mail-sikre.</li><li><strong>Størrelse</strong> — Lille (12 px), Standard (14 px) eller Større (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Signaturens kant</h3><p class=\"text-mid\">Du kan tilføje en kant på enhver side: venstre, højre, øvre eller nedre. Kanten bruger accentfarven.</p>"
     },
     {
       "type": "gap",
@@ -170,8 +191,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Tekststil – farver og størrelser for de enkelte elementer",
-      "html": "<p class=\"text-mid\">I fanen <strong>Tekststil</strong> kan du individuelt tilpasse farve og skriftstørrelse for hvert tekstelement i signaturen.</p><h3 class=\"h5 mt-6 mb-3\">Tilgængelige elementer</h3><p class=\"text-mid\">Kun de elementer, der aktuelt findes i signaturen, er synlige. For hvert element kan du indstille:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Navn</strong> – vises som standard i accentfarve.</li><li><strong>Stilling</strong> – rolle i virksomheden.</li><li><strong>Firma</strong> – organisationens navn.</li><li><strong>Kontaktoplysninger</strong> – e-mail, telefon, hjemmeside.</li><li><strong>Sociale medier</strong> – links til profiler.</li><li><strong>Juridisk klausul</strong> – juridisk tekst i bunden.</li></ul><h3 class=\"h5 mt-6 mb-3\">Sådan ændrer du farve</h3><p class=\"text-mid\">Ved hvert element finder du farveindstillinger. Klik på en farvefirkant for at vælge. Nulstilknappen gendanner standardfarven.</p><h3 class=\"h5 mt-6 mb-3\">Sådan ændrer du størrelse</h3><p class=\"text-mid\">I anden række finder du størrelsesjustering med knapperne - og +. Interval: fra -4 til +4 pixels.</p>"
+      "title": "Ansvarsfraskrivelse og GDPR",
+      "html": "<p class=\"text-mid\">Under fanen <strong>Ansvarsfraskrivelse / GDPR</strong> kan du tilføje en juridisk tekst, der vises nederst i signaturen med mindre skrift.</p><h3 class=\"h5 mt-6 mb-3\">Hvornår tilføje en ansvarsfraskrivelse?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Forretningskorrespondance</strong> — fortrolighedsmeddelelse med anmodning om sletning ved fejlagtig modtagelse.</li><li><strong>Branchekrav</strong> — visse brancher (jura, medicin, finans) kræver specifikke oplysninger.</li><li><strong>GDPR</strong> — information om behandling af personoplysninger.</li></ul><p class=\"text-mid mt-4\">Som standard indeholder feltet en eksempeltekst. Du kan redigere, slette eller erstatte den.</p><h3 class=\"h5 mt-6 mb-3\">Skillelinje</h3><p class=\"text-mid\">Aktivér <strong>Vis skillelinje</strong> for at tilføje en vandret linje over den juridiske tekst. Muligheder: stil (heltrukket, stiplet, prikket), tykkelse (1–3 px) og farve.</p>"
     },
     {
       "type": "gap",
@@ -179,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Afstande mellem elementer",
-      "html": "<p class=\"text-mid\">I fanen <strong>Afstande</strong> kan du præcist styre afstandene mellem de enkelte elementer i signaturen.</p><h3 class=\"h5 mt-6 mb-3\">Indre margen</h3><p class=\"text-mid\">Øverst i fanen finder du muligheden for indre margen – afstanden mellem signaturens indhold og kanter. Tre værdier: 8 px (lille), 16 px (mellem) og 24 px (stor).</p><h3 class=\"h5 mt-6 mb-3\">Afstande mellem elementer</h3><p class=\"text-mid\">Under margenen finder du justeringer for de enkelte elementer med knapperne + og -.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Efter navn</strong></li><li><strong>Efter stilling / firma</strong></li><li><strong>Efter ekstra linje</strong></li><li><strong>Efter kontaktoplysninger</strong></li><li><strong>Efter sociale medier</strong></li><li><strong>Efter CTA-knap</strong></li><li><strong>Før juridisk klausul</strong></li></ul>"
+      "title": "Tips til en effektiv e-mail signatur",
+      "html": "<p class=\"text-mid\">En god e-mail sidefod er tydelig, konsistent og let at læse. De vigtigste anbefalinger:</p><h3 class=\"h5 mt-6 mb-3\">Vær kortfattet</h3><p class=\"text-mid\">Fire til syv linjer med kontaktoplysninger er tilstrækkeligt. En for lang signatur skubber beskedens indhold ned, især på mobilen.</p><h3 class=\"h5 mt-6 mb-3\">Højst to til tre farver</h3><p class=\"text-mid\">For mange farver giver et rodet indtryk. Vælg én accentfarve, der matcher dit brand, og hold resten i mørke, neutrale toner.</p><h3 class=\"h5 mt-6 mb-3\">Medtag altid en handlingsknap</h3><p class=\"text-mid\">En CTA-knap gør hver e-mail til en kommunikationsmulighed. Link den til en kalender, portefølje eller kontaktformular.</p><h3 class=\"h5 mt-6 mb-3\">Vælg e-mail-sikre skrifttyper</h3><p class=\"text-mid\">Generatoren tilbyder fem sikre skrifttyper: Arial, Verdana, Tahoma, Trebuchet MS og Georgia.</p><h3 class=\"h5 mt-6 mb-3\">Host billeder på dit eget domæne</h3><p class=\"text-mid\">Hvis du tilføjer et logo eller en avatar, brug et billede på din egen hjemmeside eller et pålideligt CDN. Undgå linkforkortere, Google Drive eller Dropbox.</p>"
     },
     {
       "type": "gap",
@@ -188,17 +209,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Juridisk klausul / GDPR – hvornår skal den tilføjes?",
-      "html": "<p class=\"text-mid\">I fanen <strong>Klausul / GDPR</strong> kan du tilføje en juridisk tekst, der vises i bunden af signaturen med mindre skrift.</p><h3 class=\"h5 mt-6 mb-3\">Hvornår er det værd at tilføje en klausul?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Forretningskorrespondance</strong> – oplysning om fortrolighed og anmodning om sletning ved fejlagtig levering.</li><li><strong>Branchekrav</strong> – visse brancher (f.eks. juridisk, medicinsk, finansiel) kræver bestemte oplysninger i hver besked.</li><li><strong>GDPR</strong> – oplysning om behandling af persondata, hvis virksomheden er dataansvarlig.</li></ul><p class=\"text-mid mt-4\">Som standard er feltet udfyldt med en eksempeltekst. Du kan redigere, slette eller erstatte den med din egen klausul.</p><h3 class=\"h5 mt-6 mb-3\">Adskillelseslinje</h3><p class=\"text-mid\">Under tekstfeltet finder du muligheden <strong>Vis adskillelseslinje</strong>. Aktivering tilføjer en vandret linje mellem kontaktoplysninger og juridisk klausul.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Automatisk lagring og nulstilling af indstillinger",
-      "html": "<p class=\"text-mid\">Generatoren gemmer automatisk alle indstillinger i browserens hukommelse (localStorage). Når du genindlæser siden eller åbner værktøjet igen, gendannes data, layout, farver og alle andre indstillinger.</p><h3 class=\"h5 mt-6 mb-3\">Sådan fungerer automatisk lagring</h3><p class=\"text-mid\">Enhver ændring (tekst, farve, layout, afstande) gemmes øjeblikkeligt i browserens hukommelse. Lagring sker automatisk i baggrunden.</p><h3 class=\"h5 mt-6 mb-3\">Sådan nulstiller du indstillinger</h3><p class=\"text-mid\">Under forhåndsvisningen finder du knappen <strong>Nulstil udseende</strong>. Bekræftelse gendanner alle data og indstillinger til standardværdier. Handlingen kan ikke fortrydes.</p><h3 class=\"h5 mt-6 mb-3\">Eksport og import af konfiguration</h3><p class=\"text-mid\">Under forhåndsvisningen finder du to ekstra knapper: <strong>Eksportér indstillinger</strong> og <strong>Importér indstillinger</strong>. Eksport gemmer al konfiguration til en JSON-fil. Import indlæser en tidligere gemt konfiguration.</p>"
+      "title": "Automatisk lagring og nulstilling",
+      "html": "<p class=\"text-mid\">Skaberen gemmer automatisk dit arbejde i browserens hukommelse (localStorage). Når du genindlæser siden eller vender tilbage senere, er alle data og indstillinger bevaret.</p><h3 class=\"h5 mt-6 mb-3\">Nulstille</h3><p class=\"text-mid\">Under forhåndsvisningen finder du knappen <strong>Nulstil udseende</strong>. Efter bekræftelse nulstilles alt til standardværdierne.</p><h3 class=\"h5 mt-6 mb-3\">Eksportér og importér konfiguration</h3><p class=\"text-mid\">Knapperne <strong>Eksportér indstillinger</strong> og <strong>Importér indstillinger</strong> gør det muligt at gemme og gendanne den komplette konfiguration via en JSON-fil.</p>"
     },
     {
       "type": "gap",
@@ -207,23 +219,23 @@
     {
       "type": "sectionSteps",
       "title": "Sådan kopierer du signaturen til Gmail eller Outlook",
-      "description": "Når signaturen er færdig, kræves der kun et par trin for at tilføje den til e-mail-klienten:",
+      "description": "Når sidefoden er klar, følg disse tre trin:",
       "grid": "three",
       "items": [
         {
           "icon": "RiClipboardLine",
           "title": "1. Kopiér koden",
-          "description": "Knappen Copy signature kopierer signaturen til udklipsholder som formateret HTML, klar til indsættelse."
+          "description": "Klik på Kopiér signatur (Gmail / Outlook). Signaturen kopieres som formateret HTML."
         },
         {
           "icon": "RiSettings3Line",
           "title": "2. Åbn signaturindstillinger",
-          "description": "I Gmail: Settings > See all settings > Signature. I Outlook: File > Options > Mail > Signatures."
+          "description": "I Gmail: Indstillinger → Alle indstillinger → Signatur. I Outlook: Filer → Indstillinger → Mail → Signaturer."
         },
         {
           "icon": "RiSaveLine",
           "title": "3. Indsæt og gem",
-          "description": "I signaturfeltet brug Ctrl+V (Windows) eller Cmd+V (Mac). Signaturen vises med alle farver og formatering. Gem ændringerne."
+          "description": "I signaturfeltet tryk Ctrl + V (Windows) eller Cmd + V (Mac). Signaturen vises med alle farver. Gem."
         }
       ]
     },
@@ -232,38 +244,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "Forhåndsvisning af signatur og eksportmuligheder",
-      "html": "<p class=\"text-mid\">Forhåndsvisningspanelet vises til højre for editoren og opdateres automatisk ved enhver ændring. Forhåndsvisningen er fastgjort til skærmen (sticky), så den er synlig selv under scrolling.</p><h3 class=\"h5 mt-6 mb-3\">Skift forhåndsvisningsbaggrund</h3><p class=\"text-mid\">Over forhåndsvisningen finder du tre knapper til at skifte baggrund: <strong>Lys</strong> (standard grå baggrund), <strong>Mørk</strong> (mørk baggrund til kontrol af læsbarhed) og <strong>Skakbræt</strong> (skakbrætmønster til at se gennemsigtighed og kanter).</p><h3 class=\"h5 mt-6 mb-3\">Handlingsknapper</h3><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Kopiér signatur (Gmail / Outlook)</strong> – kopierer signaturen som formateret HTML til udklipsholder.</li><li><strong>Kopiér HTML-kode</strong> – kopierer rå HTML-kode til udklipsholder.</li><li><strong>Download som HTML</strong> – gemmer signaturkoden som .html-fil.</li><li><strong>Vis HTML-kode</strong> – åbner et modalt vindue med kildekoden.</li><li><strong>Eksportér indstillinger</strong> – gemmer hele konfigurationen som JSON-fil.</li><li><strong>Importér indstillinger</strong> – indlæser konfiguration fra JSON-fil.</li><li><strong>Nulstil udseende</strong> – gendanner alle data og indstillinger til standardværdier (efter bekræftelse).</li></ul>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
-      "title": "Hvem er e-mail-signatur-generatoren til?",
+      "title": "Hvem er denne generator til?",
+      "description": "Værktøjet er nyttigt for alle, der sender forretnings-e-mails:",
       "grid": "two",
       "items": [
         {
           "icon": "RiBriefcaseLine",
-          "title": "Virksomhedsejere og freelancere",
-          "description": "Professionel signatur i hver besked uden behov for grafisk designer."
+          "title": "Iværksættere og freelancere",
+          "description": "Professionel signatur i hver besked uden designer eller teknisk viden."
         },
         {
           "icon": "RiTeamLine",
           "title": "Virksomhedsteams",
-          "description": "Hver medarbejder opretter en signatur i samme stil. Konsekvent identitet i hele virksomheden."
+          "description": "Hver medarbejder opretter sin egen signatur i samme stil. Eksportér JSON-konfigurationen for at standardisere hele teamet."
         },
         {
           "icon": "RiHandCoinLine",
           "title": "Sælgere",
-          "description": "CTA-knap med link til kalender eller tilbud øger sandsynligheden for bookede møder."
+          "description": "En CTA-knap med link til kalender eller tilbud gør hver e-mail til en forretningsmulighed."
         },
         {
           "icon": "RiScales3Line",
           "title": "Advokater, revisorer, læger",
-          "description": "Mulighed for at tilføje juridiske klausuler, licensnumre eller andre branchespecifikke oplysninger."
+          "description": "Tilføj ansvarsfraskrivelse, licensnummer, CVR-nummer eller andre faglige krav."
         }
       ]
     },
@@ -273,23 +277,23 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Hvad gør denne e-mail-signatur-generator speciel?",
+      "title": "Hvad gør denne skaber speciel?",
       "grid": "three",
       "items": [
         {
           "icon": "RiInfinityLine",
-          "title": "Otte signaturlayouts",
-          "description": "Standard, top bar, labels left, centered, compact, two columns, minimalist og bottom bar."
+          "title": "Otte layouts",
+          "description": "Standard, Øvre bjælke, Etiketter venstre, Centreret, Kompakt, To kolonner, Minimalistisk og Nedre bjælke."
         },
         {
           "icon": "RiUserLine",
-          "title": "Automatisk lagring i browser",
-          "description": "Enhver ændring gemmes automatisk i browserens hukommelse. Signaturen forbliver tilgængelig efter genindlæsning."
+          "title": "Automatisk lagring",
+          "description": "Hver ændring gemmes automatisk i browseren."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Eksport og import af konfiguration",
-          "description": "Hele signaturkonfigurationen kan eksporteres som JSON-fil og deles med kolleger."
+          "title": "Eksport og import",
+          "description": "Gem den komplette konfiguration som JSON-fil og del med kolleger."
         },
         {
           "icon": "RiAppsLine",
@@ -298,18 +302,13 @@
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Avanceret tilpasning",
-          "description": "Avatarform og -størrelse, linjestilisering, individuelle farver og tekststørrelser."
-        },
-        {
-          "icon": "RiFileCodeLine",
-          "title": "Mange eksportmuligheder",
-          "description": "HTML-kopiering, fildownload, kildekodevisning, eksport/import af JSON-konfiguration."
+          "title": "Detaljeret tilpasning",
+          "description": "Avatarform og størrelse, linjestil, individuelle farver og størrelser, signaturkant."
         },
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privatlivsbeskyttelse",
-          "description": "Data sendes ikke til nogen server. Generatoren fungerer udelukkende i browseren."
+          "title": "Fuld privatlivsbeskyttelse",
+          "description": "Dine data forlader aldrig browseren. Generatoren kører helt på din enhed."
         },
         {
           "icon": "RiMailCheckLine",
@@ -318,8 +317,8 @@
         },
         {
           "icon": "RiEyeLine",
-          "title": "Live forhåndsvisning",
-          "description": "Enhver ændring synlig øjeblikkeligt på lys, mørk eller skakbrætbaggrund."
+          "title": "Forhåndsvisning i realtid",
+          "description": "Hver ændring er synlig med det samme på lys, mørk eller skaktern baggrund."
         }
       ]
     },
@@ -329,24 +328,48 @@
     },
     {
       "type": "faq",
-      "title": "Ofte stillede spørgsmål om e-mail-signatur-generatoren",
+      "title": "Ofte stillede spørgsmål om e-mail signatur generatoren",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Virker signaturen i Gmail, Outlook og Apple Mail?",
-          "answer": "Ja. Signaturen genereret af værktøjet bruger HTML-tabeller, der vises korrekt i alle populære e-mail-klienter: Gmail, Outlook (desktop og web), Apple Mail, Thunderbird."
+          "question": "Hvordan indsætter jeg signaturen i Gmail?",
+          "answer": "Klik på Kopiér signatur (Gmail / Outlook). Åbn Gmail → Indstillinger → Alle indstillinger → Signatur. Indsæt med Ctrl + V (eller Cmd + V). Farver, links og ikoner bevares automatisk.",
+          "answerSchemaText": "Kopiér signatur, Gmail → Indstillinger → Signatur, Ctrl+V."
         },
         {
-          "question": "Kan jeg tilføje virksomhedens logo?",
-          "answer": "Ja. I fanen Details indsætter du billedets URL (logo eller profilbillede). Billedet bør være kvadratisk (mindst 120x120 px) og offentligt tilgængeligt på internettet."
+          "question": "Fungerer det i Outlook?",
+          "answer": "Ja. I Outlook Desktop: Filer → Indstillinger → Mail → Signaturer → Indsæt. I Outlook Web: Indstillinger → Mail → Skriv og svar → Signatur.",
+          "answerSchemaText": "Ja. Desktop: Filer → Indstillinger → Signaturer. Web: Indstillinger → Mail → Signatur."
         },
         {
-          "question": "Hvordan kopierer man signaturen til e-mail-klienten?",
-          "answer": "Knappen Copy signature under forhåndsvisningen kopierer signaturen til udklipsholder som formateret HTML. I Gmail eller Outlooks signaturindstillinger brug bare Ctrl+V (Windows) eller Cmd+V (Mac)."
+          "question": "Hvilke formelle oplysninger skal signaturen indeholde?",
+          "answer": "I Danmark skal virksomheder angive CVR-nummer, virksomhedsnavn og hjemsted. ApS og A/S bør også angive selskabskapital. Enkeltmandsvirksomheder — CVR-nummer og adresse. Se afsnittet om lovkrav på denne side.",
+          "answerSchemaText": "CVR-nummer, navn, hjemsted. ApS/A/S: selskabskapital. Enkeltmand: CVR, adresse. Se lovkrav."
         },
         {
-          "question": "Kan jeg bruge generatoren til at oprette signaturer for hele teamet?",
-          "answer": "Ja. Generatoren kræver ingen login eller registrering. Hvert teammedlem kan åbne værktøjet, udfylde sine oplysninger og kopiere den færdige signatur. Konfigurationen kan også eksporteres som JSON-fil og deles med kolleger."
+          "question": "Gemmes mine data?",
+          "answer": "Alle data forbliver i browserens hukommelse (localStorage). Intet sendes til en server. Du kan eksportere og importere indstillinger.",
+          "answerSchemaText": "Lokalt i browseren. Ingen server. Eksport/import mulig."
+        },
+        {
+          "question": "Kan jeg tilføje sociale medielinks?",
+          "answer": "Ja. Generatoren understøtter tolv platforme: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram og Pinterest.",
+          "answerSchemaText": "12 platforme: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest."
+        },
+        {
+          "question": "Kopieringsknappen er inaktiv — hvorfor?",
+          "answer": "For at kopiere skal mindst to felter være udfyldt: navn og e-mailadresse.",
+          "answerSchemaText": "Navn og e-mailadresse skal være udfyldt."
+        },
+        {
+          "question": "Hvordan gør jeg signaturen mobilvenlig?",
+          "answer": "Hold signaturen kort (fire til syv linjer), brug standard tekststørrelse (14 px) og vælg et layout, der fungerer på smalle skærme. Standard og Kompakt er bedst.",
+          "answerSchemaText": "Kort, 14 px, Standard eller Kompakt layout."
+        },
+        {
+          "question": "Hvor skal jeg hoste logoet?",
+          "answer": "På din egen hjemmeside eller et pålideligt CDN. Undgå Google Drive, Dropbox eller linkforkortere. Billedet skal være kvadratisk, mindst 120 × 120 px, i JPG-, PNG- eller WebP-format.",
+          "answerSchemaText": "På din hjemmeside eller CDN. Kvadratisk, min. 120 × 120 px, JPG/PNG/WebP."
         }
       ]
     },
@@ -357,7 +380,7 @@
     {
       "type": "contactForm",
       "title": "Hjælp os med at forbedre vores værktøjer",
-      "description": "Har du en idé til en ny funktion, fundet en fejl eller vil foreslå et andet værktøj, der ville gøre dit arbejde lettere? Skriv til os – vi svarer inden for 24 timer.",
+      "description": "Har du en idé til en ny funktion, fundet en fejl eller vil foreslå et andet værktøj? Skriv til os — vi svarer inden for 24 timer.",
       "imageSrc": "/assets/tools/free-html-email-signature-generator/gratis-e-mail-signatur-generator-da.webp",
       "imageAlt": "E-mail signatur generator – Arteon",
       "defaultSubject": "Feedback: E-mail signatur generator"
@@ -368,7 +391,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Udforsk flere værktøjer"
+      "title": "Opdag flere værktøjer"
     },
     {
       "type": "gap",

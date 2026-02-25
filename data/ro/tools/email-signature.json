@@ -25,10 +25,18 @@
   "schemas": {
     "software": {
       "name": "Generator de semnătură e-mail HTML – creator de semnătură",
-      "alternateName": ["Generator de semnătură e-mail HTML", "Creator de semnătură e-mail", "Generator de subsol e-mail"],
+      "alternateName": [
+        "Generator de semnătură e-mail HTML",
+        "Creator de semnătură e-mail gratuit",
+        "Generator semnătură Gmail",
+        "Generator semnătură Outlook",
+        "Semnătură e-mail profesională",
+        "Creator subsol e-mail",
+        "Instrument gratuit semnătură email"
+      ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Generator gratuit de semnătură e-mail HTML. Adăugați date de contact, link CTA și profiluri de rețele sociale, apoi copiați codul de semnătură gata în Gmail, Outlook și alți clienți de e-mail.",
+      "description": "Generator gratuit de semnătură e-mail HTML și creator de subsol profesional. Adăugați date de contact, link CTA și profiluri social media. Copiați codul în Gmail, Outlook, Apple Mail sau orice alt client. Fără înregistrare.",
       "featureList": [
         "Date de contact (nume, funcție, companie)",
         "Telefon, email și URL site web",
@@ -90,10 +98,10 @@
     },
     {
       "type": "sectionBasic",
-      "title": "De ce să aveți o semnătură e-mail profesională?",
-      "html": "<p class=\"text-mid\">O semnătură e-mail (numită și subsol de e-mail) este un bloc de informații la sfârșitul fiecărui mesaj trimis. Conține date de contact, funcția, numele companiei și adesea un link către website sau calendarul de întâlniri.</p><p class=\"text-mid mt-3\">Destinatarul nu trebuie să caute numărul de telefon în mesajele anterioare - toate detaliile sunt ușor disponibile. O semnătură e-mail profesională arată și că acordați atenție detaliilor și mențineți o imagine consecventă a companiei în corespondența de afaceri.</p>",
+      "title": "De ce să folosiți o semnătură de e-mail profesională?",
+      "html": "<p class=\"text-mid\">O semnătură de e-mail este un mic bloc de text la sfârșitul fiecărui mesaj pe care îl trimiteți. Mai este numită subsol de e-mail sau bloc de semnătură. Conține numele, funcția, compania și datele de contact. Multe semnături includ și un link către site, un calendar de întâlniri sau profiluri de social media.</p><p class=\"text-mid mt-3\">În medie, un profesionist trimite între 30 și 40 de e-mailuri pe zi. Fiecare mesaj este o oportunitate de a partaja datele de contact, de a consolida brandul și de a facilita comunicarea. Un subsol bine conceput economisește timp destinatarului — nu mai trebuie să caute numărul de telefon în mesajele vechi.</p><p class=\"text-mid mt-3\">În plus, în România, legislația cere ca e-mailurile comerciale să conțină anumite informații despre companie. CUI-ul, numărul de ordine din Registrul Comerțului și sediul social sunt printre datele cele mai importante. Semnătura de e-mail este locul cel mai simplu pentru a le include.</p>",
       "imageSrc": "/assets/tools/free-html-email-signature-generator/generator-semnatura-email-gratuit-ro.webp",
-      "imageAlt": "Generator semnătură email – Arteon"
+      "imageAlt": "Generator semnătură e-mail – Arteon"
     },
     {
       "type": "gap",
@@ -101,24 +109,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Cum să folosiți generatorul de semnătură e-mail",
-      "description": "Crearea unei semnături e-mail profesionale durează doar câteva minute:",
-      "grid": "three",
+      "title": "Cum creați o semnătură de e-mail în patru pași",
+      "description": "Crearea unui subsol profesional durează mai puțin de cinci minute:",
+      "grid": "four",
       "items": [
         {
+          "icon": "RiMailLine",
           "title": "1. Introduceți datele",
-          "description": "Completați numele, funcția, compania și datele de contact.",
-          "icon": "RiEditLine"
+          "description": "Nume, funcție, companie, date de contact și, opțional, linkuri social media."
         },
         {
-          "title": "2. Personalizați aspectul",
-          "description": "Alegeți un layout, culori, adăugați un logo și linkuri social media.",
-          "icon": "RiPaletteLine"
+          "icon": "RiPaletteLine",
+          "title": "2. Personalizați designul",
+          "description": "Alegeți un aspect, o schemă de culori, un font și ajustați spațierile."
         },
         {
-          "title": "3. Copiați codul",
-          "description": "Butonul Copiază semnătura copiază codul gata în clipboard. Pur și simplu lipiți-l în Gmail, Outlook sau alt client de e-mail.",
-          "icon": "RiCodeLine"
+          "icon": "RiLinksLine",
+          "title": "3. Adăugați CTA și rețele",
+          "description": "Adăugați un buton de acțiune și linkuri către profilurile de social media."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Copiați și lipiți",
+          "description": "Copiați semnătura și lipiți-o în Gmail, Outlook sau orice alt client de e-mail."
         }
       ]
     },
@@ -128,18 +141,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Cum să completați datele semnăturii",
-      "html": "<p class=\"text-mid\">Tab-ul <strong>Date</strong> conține toate câmpurile pe care le puteți completa. Doar două sunt obligatorii: numele și adresa de e-mail. Restul câmpurilor sunt opționale și vor apărea în semnătură doar când sunt completate.</p><h3 class=\"h5 mt-6 mb-3\">Câmpuri în tab-ul Date</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Linie deasupra numelui</strong> - text suplimentar afișat deasupra numelui. Puteți introduce numele companiei, tagline-ul sau sloganul.</li><li><strong>Avatar / logo (URL imagine)</strong> - URL către o fotografie de profil sau logo-ul companiei. Imaginea ar trebui să fie pătrată (min. 120×120 px) și accesibilă public. După lipirea URL-ului, apar opțiuni suplimentare: <strong>Forma avatarului</strong> (rotund, rotunjit sau pătrat) și <strong>Dimensiunea avatarului</strong> (mic - 40 px, mediu - 56 px, mare - 72 px).</li><li><strong>Nume complet</strong> - câmp obligatoriu. Introduceți numele complet.</li><li><strong>Etichetă nume</strong> - text scurt lângă nume, ex. pronume sau titlu abreviat.</li><li><strong>Funcție</strong> - rolul în companie, ex. Manager Vânzări, Specialist Marketing.</li><li><strong>Numele companiei</strong> - numele organizației pe care o reprezentați.</li><li><strong>Linie suplimentară</strong> - o scurtă descriere a ceea ce faceți sau oferiți.</li><li><strong>E-mail</strong> - câmp obligatoriu. Introduceți adresa de e-mail de afaceri.</li><li><strong>Telefon</strong> - număr de contact. Orice format, ex. +40 123 456 789.</li><li><strong>Website</strong> - URL-ul complet al website-ului, începând cu https://.</li><li><strong>Adresă</strong> - adresa fizică a companiei (stradă, oraș, cod poștal).</li><li><strong>Detalii oficiale</strong> - CUI, număr licență sau alte detalii cerute în industria dvs.</li></ul>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionDemo",
-      "title": "Layouturi de semnătură - pe care să-l alegeți?",
-      "demoHtml": "<div class=\"space-y-3\"><p class=\"text-dark text-sm! font-medium uppercase\">Layout semnătură</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">Standard</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Bară accent</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Bară sus</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Etichete stânga</span><span class=\"inline-flex items-center rounded-full font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">Centrat</span></div><div class=\"mt-4 rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark font-semibold\">Ion Popescu</p><p class=\"text-mid text-sm\">Dezvoltator Web</p><p class=\"text-mid text-sm\">Arteon Agency</p><div class=\"mt-2 text-sm\"><p class=\"text-mid\">ion@exemplu.ro</p><p class=\"text-mid\">+40 123 456 789</p></div></div></div>",
-      "html": "<p class=\"text-mid\">Generatorul oferă opt layouturi gata făcute. Fiecare prezintă aceleași informații într-un mod diferit.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Standard</strong> - layout vertical clasic, potrivit pentru majoritatea cazurilor.</li><li><strong>Bară sus</strong> - o bară orizontală separă semnătura de conținut.</li><li><strong>Etichete stânga</strong> - două coloane: etichete și valori.</li><li><strong>Centrat</strong> - aspect formal, conținut centrat.</li><li><strong>Compact</strong> - totul pe o singură linie, înălțime minimă.</li><li><strong>Două coloane</strong> - detalii în stânga, date de contact în dreapta.</li><li><strong>Minimalist</strong> - doar cele mai importante informații.</li><li><strong>Bară jos</strong> - bară colorată cu contact la baza semnăturii.</li></ul>"
+      "title": "Cum completați datele semnăturii",
+      "html": "<p class=\"text-mid\">În fila <strong>Date</strong> găsiți toate câmpurile disponibile. Doar două sunt obligatorii: numele și adresa de e-mail. Celelalte sunt opționale și apar în semnătură doar dacă sunt completate.</p><h3 class=\"h5 mt-6 mb-3\">Câmpuri disponibile</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Linie deasupra numelui</strong> — text suplimentar deasupra numelui: denumirea companiei, slogan sau motto.</li><li><strong>Avatar / logo (URL imagine)</strong> — URL-ul unei fotografii de profil sau al unui logo. Imaginea trebuie să fie pătrată (min. 120 × 120 px) și accesibilă public. După lipire puteți alege <strong>forma</strong> (rotundă, rotunjită, pătrată) și <strong>dimensiunea</strong> (mică — 40 px, medie — 56 px, mare — 72 px).</li><li><strong>Nume complet</strong> — câmp obligatoriu.</li><li><strong>Etichetă lângă nume</strong> — text scurt lângă nume, de exemplu pronume sau titlu prescurtat.</li><li><strong>Funcție</strong> — rolul dumneavoastră în companie, de exemplu Director comercial.</li><li><strong>Companie</strong> — numele organizației.</li><li><strong>Linie suplimentară</strong> — scurtă descriere a activității sau a ofertei.</li><li><strong>E-mail</strong> — câmp obligatoriu. Adresa de e-mail profesională.</li><li><strong>Telefon</strong> — număr de contact în orice format, de exemplu +40 21 123 4567.</li><li><strong>Site web</strong> — URL complet care începe cu https://.</li><li><strong>Adresă</strong> — adresa sediului (stradă, cod poștal, localitate).</li><li><strong>Date legale</strong> — CUI, număr de ordine din Registrul Comerțului (J-number), sediul social sau alte date cerute de lege. Acest câmp este esențial pentru conformitatea legală în România.</li></ul>"
     },
     {
       "type": "gap",
@@ -147,8 +150,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Cum să adăugați butoane CTA",
-      "html": "<p class=\"text-mid\">Un buton CTA (call-to-action) este un element clicabil care direcționează destinatarul către o pagină aleasă. Poate fi un link către calendarul de întâlniri, formular de contact sau ofertă. Generatorul permite adăugarea a două butoane CTA.</p><h3 class=\"h5 mt-6 mb-3\">Buton principal</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Deschideți tab-ul <strong>Butoane</strong> în editor.</li><li>În secțiunea <strong>Buton principal</strong>, introduceți textul pe care destinatarul îl va vedea, ex. Programează o consultație gratuită.</li><li>În câmpul <strong>Link CTA</strong>, lipiți URL-ul complet. Adresa trebuie să înceapă cu https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Buton secundar</h3><p class=\"text-mid\">Puteți adăuga un al doilea buton CTA cu stil outline (fundal transparent cu bordură). Completați câmpurile din secțiunea <strong>Buton secundar</strong> la fel ca pentru butonul principal.</p><h3 class=\"h5 mt-6 mb-3\">Rotunjirea butoanelor</h3><p class=\"text-mid\">La baza tab-ului Butoane veți găsi opțiunea <strong>Rotunjire buton</strong>. Trei variante sunt disponibile: Fără (colțuri drepte), Ușoară (ușor rotunjit) sau Completă (buton oval).</p><p class=\"text-mid mt-4\">Dacă lăsați ambele câmpuri goale, butonul nu va apărea în semnătură. Dacă completați doar un câmp, butonul nu va fi vizibil - sunt necesare atât textul cât și linkul.</p>"
+      "title": "Cerințe legale pentru semnăturile de e-mail în România",
+      "html": "<p class=\"text-mid\">În România, e-mailurile comerciale trebuie să conțină anumite informații despre companie. Semnătura de e-mail este modalitatea cea mai simplă de a respecta aceste cerințe. Mai jos găsiți un rezumat al principalelor obligații. Acestea sunt informații generale, nu consultanță juridică — verificați întotdeauna legislația în vigoare.</p><h3 class=\"h5 mt-6 mb-3\">Legea nr. 365/2002 privind comerțul electronic</h3><p class=\"text-mid\">Conform acestei legi, orice comunicare comercială electronică trebuie să permită identificarea clară a expeditorului. Companiile trebuie să includă:</p><ul class=\"text-mid mt-2 list-disc space-y-1 pl-6\"><li>Denumirea societății și forma juridică (SRL, SA, SNC etc.)</li><li>CUI (Codul Unic de Identificare) sau CIF</li><li>Numărul de ordine din Registrul Comerțului (de exemplu J40/12345/2020)</li><li>Sediul social</li><li>Capitalul social (pentru SRL și SA)</li></ul><p class=\"text-mid mt-3\">Utilizați câmpul <strong>Date legale</strong> din generator pentru a introduce aceste informații.</p><h3 class=\"h5 mt-6 mb-3\">Legea societăților nr. 31/1990</h3><p class=\"text-mid\">Această lege impune societăților comerciale obligația de a menționa în corespondența comercială denumirea, forma juridică, sediul social, numărul din Registrul Comerțului și CUI-ul. Nerespectarea acestor obligații poate atrage sancțiuni administrative.</p><h3 class=\"h5 mt-6 mb-3\">PFA și II (Persoane Fizice Autorizate și Întreprinderi Individuale)</h3><p class=\"text-mid\">PFA-urile și II-urile nu sunt supuse acelorași obligații ca societățile comerciale, dar este recomandat să includă în semnătură: numele complet, CUI-ul, numărul de înregistrare și adresa sediului profesional. Acest lucru crește încrederea și respectă cerințele generale ale Legii comerțului electronic.</p><h3 class=\"h5 mt-6 mb-3\">Republica Moldova</h3><p class=\"text-mid\">În Republica Moldova, obligațiile legale pentru semnăturile de e-mail sunt mai puțin detaliate. Totuși, este recomandat să includeți IDNO-ul (Numărul de Identificare de Stat), denumirea societății și adresa sediului în corespondența comercială.</p><h3 class=\"h5 mt-6 mb-3\">GDPR și protecția datelor</h3><p class=\"text-mid\">Dacă semnătura de e-mail conține date cu caracter personal (fotografie, număr de telefon personal), se aplică Regulamentul General privind Protecția Datelor (GDPR). Companiile care acționează în calitate de operatori de date ar trebui să adauge o scurtă notă de confidențialitate sau un link către politica de confidențialitate. Generatorul oferă câmpul <strong>Disclaimer / GDPR</strong> în acest scop.</p>"
     },
     {
       "type": "gap",
@@ -156,8 +159,26 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Cum să adăugați linkuri social media",
-      "html": "<p class=\"text-mid\">În tab-ul <strong>Social Media</strong> puteți adăuga linkuri către profilurile dvs. Generatorul suportă douăsprezece platforme: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (fostul Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram și Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Cum se face</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Deschideți tab-ul <strong>Social Media</strong> în editor.</li><li>Lângă fiecare platformă veți găsi un câmp URL. Lipiți linkul complet către profilul dvs., ex. https://www.linkedin.com/in/profiluldvs.</li><li>Completați doar câmpurile de care aveți nevoie. Câmpurile goale nu vor apărea în semnătură.</li></ol><h3 class=\"h5 mt-6 mb-3\">Pictograme social media</h3><p class=\"text-mid\">La baza tab-ului Social Media veți găsi opțiunea <strong>Afișează pictograme lângă numele serviciilor</strong>. Când este activată, linkurile se vor afișa ca pictograme SVG colorate în loc de doar nume.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Dimensiune pictogramă</strong> - opțiuni: Mic (16 px), Mediu (20 px) sau Mare (24 px).</li><li><strong>Culoare pictogramă</strong> - Culori platformă (culori implicite pentru fiecare platformă), Culoare accent (culoare accent uniformă) sau Culoare text.</li></ul>"
+      "title": "Cum completați câmpul Date legale — exemple",
+      "html": "<p class=\"text-mid\">Câmpul <strong>Date legale</strong> din fila Date este o zonă de text cu mai multe rânduri pentru identificatorii legali. Exemple:</p><ul class=\"text-mid mt-3 list-disc space-y-3 pl-6\"><li><strong>SRL</strong> — Firma Exemplu SRL | CUI RO12345678 | J40/12345/2020 | Sediu: Str. Exemplu 10, București | Capital social: 200 RON</li><li><strong>SA</strong> — Firma Exemplu SA | CUI RO87654321 | J40/54321/2015 | Sediu: Bd. Unirii 100, București</li><li><strong>PFA</strong> — Ion Popescu PFA | CUI 12345678 | F40/12345/2022 | București</li><li><strong>Republica Moldova</strong> — Firma Exemplu SRL | IDNO 1234567890123 | Chișinău</li></ul><p class=\"text-mid mt-4\">Textul introdus apare la sfârșitul semnăturii, chiar înainte de disclaimer.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cum adăugați butoane CTA",
+      "html": "<p class=\"text-mid\">Un buton CTA (apel la acțiune) este un element pe care se poate face clic și care direcționează destinatarul către o pagină la alegere: calendar de întâlniri, formular de contact sau ofertă. Creatorul de semnături permite adăugarea a două butoane CTA.</p><h3 class=\"h5 mt-6 mb-3\">Butonul principal</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Deschideți fila <strong>Butoane</strong>.</li><li>Introduceți textul pe care îl va vedea destinatarul, de exemplu <em>Programează o consultație</em>.</li><li>Lipiți URL-ul complet în câmpul <strong>Link CTA</strong>. Adresa trebuie să înceapă cu https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Butonul secundar</h3><p class=\"text-mid\">Puteți adăuga un al doilea buton în stil contur (fundal transparent cu bordură). Completați câmpurile din secțiunea <strong>Buton secundar</strong> în același mod.</p><h3 class=\"h5 mt-6 mb-3\">Forma butoanelor</h3><p class=\"text-mid\">În partea de jos a filei, opțiunea <strong>Rotunjire</strong> oferă trei forme: Niciuna (colțuri drepte), Ușoară (ușor rotunjit) sau Completă (oval).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cum adăugați linkuri social media",
+      "html": "<p class=\"text-mid\">În fila <strong>Social media</strong> puteți adăuga linkuri către profilurile dvs. Creatorul de semnături suportă douăsprezece platforme: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (fostul Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram și Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Cum funcționează</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Deschideți fila <strong>Social media</strong>.</li><li>Lângă fiecare platformă, lipiți URL-ul complet al profilului.</li><li>Completați doar platformele pe care le utilizați. Câmpurile goale nu apar în semnătură.</li></ol><h3 class=\"h5 mt-6 mb-3\">Pictograme social media</h3><p class=\"text-mid\">Activați <strong>Afișează pictograme lângă nume</strong> pentru a vedea pictograme SVG color în locul textului.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Dimensiune</strong> — Mică (16 px), Medie (20 px) sau Mare (24 px).</li><li><strong>Culoare</strong> — Culorile platformei, Culoare de accent (uniformă) sau Culoarea textului.</li></ul>"
     },
     {
       "type": "gap",
@@ -166,7 +187,7 @@
     {
       "type": "sectionInfo",
       "title": "Personalizarea aspectului",
-      "html": "<p class=\"text-mid\">În tab-ul <strong>Aspect</strong> puteți personaliza culorile, fontul și alte elemente vizuale ale semnăturii.</p><h3 class=\"h5 mt-6 mb-3\">Teme de culori</h3><p class=\"text-mid\">În partea de sus a tab-ului veți găsi cinci teme gata făcute: Întunecat, Albastru, Violet, Verde și Gri. Făcând clic pe o temă se setează automat culoarea accent și culoarea textului. Aceasta este cea mai rapidă modalitate de a obține un aspect consistent al semnăturii.</p><h3 class=\"h5 mt-6 mb-3\">Culori</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Culoare accent</strong> - folosită în bara laterală/sus, butonul CTA și linkuri. Puteți alege orice culoare din paletă.</li><li><strong>Culoare text</strong> - culoarea tuturor textelor din semnătură (nume, date de contact, disclaimer).</li><li><strong>Culoare fundal</strong> - culoarea de fundal a întregii semnături. Alb implicit, dar poate fi schimbată.</li></ul><h3 class=\"h5 mt-6 mb-3\">Font și dimensiune</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Font</strong> - opțiuni: Arial, Verdana, Tahoma, Trebuchet MS și Georgia. Toate sunt sigure pentru e-mail și se vor afișa corect la destinatar.</li><li><strong>Dimensiune text</strong> - trei opțiuni: Mic (12 px), Standard (14 px) și Mai mare (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Setări suplimentare</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Bordură semnătură</strong> - puteți adăuga o bordură semnăturii selectând orice combinație de laturi (stânga, dreapta, sus, jos). Selectarea tuturor laturilor setează automat o bordură completă. Bordura folosește culoarea accent.</li></ul>"
+      "html": "<p class=\"text-mid\">În fila <strong>Aspect</strong> puteți modifica culorile, fontul și alte elemente vizuale.</p><h3 class=\"h5 mt-6 mb-3\">Teme de culori</h3><p class=\"text-mid\">În partea de sus a filei, cinci teme predefinite: Întunecat, Albastru, Violet, Verde și Gri. Un clic aplică automat culoarea de accent și culoarea textului.</p><h3 class=\"h5 mt-6 mb-3\">Culori individuale</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Culoare de accent</strong> — pentru bara laterală sau superioară, butonul CTA și linkuri.</li><li><strong>Culoarea textului</strong> — culoarea tuturor textelor din semnătură.</li><li><strong>Culoare de fundal</strong> — fundalul semnăturii. Alb implicit.</li></ul><h3 class=\"h5 mt-6 mb-3\">Font și dimensiune</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Font</strong> — Arial, Verdana, Tahoma, Trebuchet MS sau Georgia. Toate sunt sigure pentru e-mail.</li><li><strong>Dimensiune</strong> — Mică (12 px), Standard (14 px) sau Mai mare (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Bordura semnăturii</h3><p class=\"text-mid\">Puteți adăuga o bordură pe orice parte: stânga, dreapta, sus sau jos. Bordura folosește culoarea de accent.</p>"
     },
     {
       "type": "gap",
@@ -174,8 +195,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Stil text - culori și dimensiuni ale elementelor individuale",
-      "html": "<p class=\"text-mid\">În tab-ul <strong>Stil Text</strong> puteți personaliza individual culoarea și dimensiunea fontului pentru fiecare element text al semnăturii.</p><h3 class=\"h5 mt-6 mb-3\">Elemente disponibile</h3><p class=\"text-mid\">Sunt vizibile doar elementele care au conținut în semnătură. Pentru fiecare element puteți seta:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Nume</strong> - afișat implicit în culoarea accent.</li><li><strong>Funcție</strong> - rolul în companie.</li><li><strong>Companie</strong> - numele organizației.</li><li><strong>Date de contact</strong> - e-mail, telefon, website (etichete).</li><li><strong>Social media</strong> - linkuri profiluri.</li><li><strong>Disclaimer legal</strong> - text legal la baza semnăturii.</li></ul><h3 class=\"h5 mt-6 mb-3\">Cum să schimbați culoarea</h3><p class=\"text-mid\">Lângă fiecare element veți găsi un rând de opțiuni de culoare. Faceți clic pe un pătrat de culoare pentru a-l selecta. Puteți adăuga și o culoare personalizată făcând clic pe pătratul colorat cu plus - alegeți o culoare și faceți clic pe Salvează. Culorile personalizate (până la 8) sunt partajate între toate elementele.</p><p class=\"text-mid mt-3\">Butonul pictogramă de resetare restaurează culoarea implicită a elementului.</p><h3 class=\"h5 mt-6 mb-3\">Cum să schimbați dimensiunea</h3><p class=\"text-mid\">Pe al doilea rând veți găsi un control de dimensiune cu butoane - și +. Valoarea arată decalajul relativ la dimensiunea fontului de bază (setată în tab-ul Aspect). Interval: de la -4 la +4 pixeli.</p>"
+      "title": "Stil text — culori și dimensiuni pe element",
+      "html": "<p class=\"text-mid\">În fila <strong>Stil text</strong> puteți ajusta individual culoarea și dimensiunea fiecărui element textual.</p><h3 class=\"h5 mt-6 mb-3\">Elemente disponibile</h3><p class=\"text-mid\">Sunt afișate doar elementele care conțin date:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Nume</strong> — implicit în culoarea de accent.</li><li><strong>Funcție</strong></li><li><strong>Companie</strong></li><li><strong>Date de contact</strong></li><li><strong>Social media</strong></li><li><strong>Disclaimer</strong></li></ul><h3 class=\"h5 mt-6 mb-3\">Modificarea culorii</h3><p class=\"text-mid\">Lângă fiecare element sunt opțiuni de culoare. Faceți clic pe un pătrat pentru a-l selecta. Puteți adăuga și culori personalizate (până la 8), partajate între toate elementele.</p><h3 class=\"h5 mt-6 mb-3\">Modificarea dimensiunii</h3><p class=\"text-mid\">Sub culori, butoanele minus și plus ajustează dimensiunea. Valoarea arată abaterea față de dimensiunea de bază. Interval: de la −4 la +4 pixeli.</p>"
     },
     {
       "type": "gap",
@@ -183,8 +204,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Spațiere între elemente",
-      "html": "<p class=\"text-mid\">În tab-ul <strong>Spațiere</strong> puteți controla precis distanțele dintre elementele individuale ale semnăturii.</p><h3 class=\"h5 mt-6 mb-3\">Padding interior semnătură</h3><p class=\"text-mid\">În partea de sus a tab-ului veți găsi opțiunea de padding interior - distanța dintre conținutul semnăturii și marginile sale. Trei valori sunt disponibile: 8 px (mic), 16 px (mediu) și 24 px (mare).</p><h3 class=\"h5 mt-6 mb-3\">Spațiere între elemente</h3><p class=\"text-mid\">Sub padding veți găsi controale pentru elementele individuale ale semnăturii. Fiecare control are butoane + și - pentru a crește sau reduce spațierea. Sunt vizibile doar opțiunile pentru elementele prezente în semnătură.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>După nume</strong> - spațierea sub linia numelui.</li><li><strong>După funcție / companie</strong> - spațierea sub linia funcției și companiei.</li><li><strong>După linia suplimentară</strong> - spațierea sub descriere (dacă este completată).</li><li><strong>După date de contact</strong> - spațierea sub e-mail, telefon și website.</li><li><strong>După social media</strong> - spațierea sub linkurile profilurilor.</li><li><strong>După butonul CTA</strong> - spațierea sub buton (dacă este activat).</li><li><strong>Înainte de disclaimer</strong> - spațierea deasupra textului legal.</li></ul><p class=\"text-mid mt-4\">Dacă goliți un câmp (ex. eliminați numărul de telefon), opțiunea de spațiere corespunzătoare va dispărea automat din tab.</p>"
+      "title": "Spațierile între elemente",
+      "html": "<p class=\"text-mid\">În fila <strong>Spațieri</strong> puteți controla distanța exactă între fiecare parte a semnăturii.</p><h3 class=\"h5 mt-6 mb-3\">Margine interioară</h3><p class=\"text-mid\">În partea de sus, opțiunea de margine interioară definește distanța între conținut și marginile semnăturii. Trei valori: 8 px (mică), 16 px (medie) și 24 px (mare).</p><h3 class=\"h5 mt-6 mb-3\">Spațieri pe element</h3><ul class=\"text-mid mt-3 list-disc space-y-1 pl-6\"><li><strong>După nume</strong></li><li><strong>După funcție / companie</strong></li><li><strong>După linia suplimentară</strong></li><li><strong>După datele de contact</strong></li><li><strong>După social media</strong></li><li><strong>După butonul CTA</strong></li><li><strong>Înainte de disclaimer</strong></li></ul>"
     },
     {
       "type": "gap",
@@ -192,8 +213,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Disclaimer legal - când să-l adăugați",
-      "html": "<p class=\"text-mid\">În tab-ul <strong>Disclaimer / Legal</strong> puteți adăuga text legal care va apărea la baza semnăturii cu font mai mic.</p><h3 class=\"h5 mt-6 mb-3\">Când să adăugați un disclaimer</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Corespondență de afaceri</strong> - notificare de confidențialitate și cerere de ștergere în caz de livrare incorectă.</li><li><strong>Cerințe industriale</strong> - unele industrii (ex. juridic, medical, financiar) necesită informații specifice în fiecare mesaj.</li><li><strong>GDPR</strong> - informații despre prelucrarea datelor personale, dacă compania este operator de date.</li></ul><p class=\"text-mid mt-4\">Implicit, câmpul este completat cu un text exemplu de confidențialitate. Puteți edita, șterge sau înlocui cu propriul disclaimer. Dacă lăsați câmpul gol, niciun disclaimer nu va apărea în semnătură.</p><h3 class=\"h5 mt-6 mb-3\">Linie separatoare</h3><p class=\"text-mid\">Sub câmpul de text veți găsi opțiunea <strong>Afișează separator între datele de contact și disclaimer</strong>. Activați-o pentru a adăuga o linie orizontală între datele de contact și disclaimerul legal.</p><p class=\"text-mid mt-3\">După activarea liniei, apar opțiuni suplimentare de personalizare:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Stil linie</strong> - opțiuni: solid, punctat sau întrerupt.</li><li><strong>Grosime linie</strong> - trei opțiuni: 1 px, 2 px sau 3 px.</li><li><strong>Culoare linie</strong> - gri implicit (#e5e7eb). Puteți alege orice culoare din paletă sau restaura valoarea implicită făcând clic pe butonul Implicit.</li></ul>"
+      "title": "Disclaimer și GDPR",
+      "html": "<p class=\"text-mid\">În fila <strong>Disclaimer / GDPR</strong> puteți adăuga un text juridic care apare la sfârșitul semnăturii cu caractere mai mici.</p><h3 class=\"h5 mt-6 mb-3\">Când adăugați un disclaimer?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Corespondență comercială</strong> — notificare de confidențialitate cu solicitarea ștergerii în caz de primire eronată.</li><li><strong>Cerințe de sector</strong> — anumite domenii (juridic, medical, financiar) cer mențiuni specifice.</li><li><strong>GDPR</strong> — informare privind prelucrarea datelor cu caracter personal.</li></ul><p class=\"text-mid mt-4\">Implicit, câmpul conține un text exemplu. Îl puteți edita, șterge sau înlocui cu propriul text.</p><h3 class=\"h5 mt-6 mb-3\">Linie separatoare</h3><p class=\"text-mid\">Activați <strong>Afișează linia separatoare</strong> pentru a adăuga o linie orizontală deasupra textului juridic. Opțiuni: stil (continuă, întreruptă, punctată), grosime (1–3 px) și culoare.</p>"
     },
     {
       "type": "gap",
@@ -201,8 +222,17 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Salvare automată și resetarea setărilor",
-      "html": "<p class=\"text-mid\">Generatorul salvează automat toate setările în memoria browserului (localStorage). După reîmprospătarea paginii sau redeschiderea instrumentului, datele, layoutul, culorile și toate celelalte opțiuni vor fi restaurate.</p><h3 class=\"h5 mt-6 mb-3\">Cum funcționează salvarea automată?</h3><p class=\"text-mid\">Fiecare modificare (text, culoare, layout, spațiere) este salvată imediat în memoria browserului. Salvarea are loc automat în fundal - fără a apăsa vreun buton.</p><h3 class=\"h5 mt-6 mb-3\">Cum să resetați setările</h3><p class=\"text-mid\">Sub previzualizarea semnăturii veți găsi un buton <strong>Resetare aspect</strong>. După clic, va apărea un dialog de confirmare. Confirmarea resetării va restaura toate datele și setările la valorile implicite. Această operație nu poate fi anulată.</p><h3 class=\"h5 mt-6 mb-3\">Export și import configurație</h3><p class=\"text-mid\">Sub previzualizarea semnăturii veți găsi două butoane suplimentare: <strong>Export setări</strong> și <strong>Import setări</strong>. Exportul salvează toate datele, culorile, layoutul, spațierea și stilurile de text într-un fișier JSON. Importul încarcă o configurație salvată anterior dintr-un fișier.</p><p class=\"text-mid mt-3\">Această funcție este deosebit de utilă când doriți să transferați configurația semnăturii între computere, să partajați setările cu colegii sau să păstrați o copie de siguranță înainte de resetare.</p>"
+      "title": "Bune practici pentru o semnătură de e-mail eficientă",
+      "html": "<p class=\"text-mid\">Un subsol bun de e-mail este clar, coerent și ușor de citit. Iată cele mai importante recomandări:</p><h3 class=\"h5 mt-6 mb-3\">Fiți concis</h3><p class=\"text-mid\">Patru până la șapte rânduri de date de contact sunt suficiente. O semnătură prea lungă împinge conținutul mesajului în jos, mai ales pe telefon.</p><h3 class=\"h5 mt-6 mb-3\">Maximum două-trei culori</h3><p class=\"text-mid\">Prea multe culori dau un aspect dezordonat. Alegeți o culoare de accent în acord cu brandul și păstrați restul în tonuri întunecate și neutre.</p><h3 class=\"h5 mt-6 mb-3\">Includeți întotdeauna un buton de acțiune</h3><p class=\"text-mid\">Un buton CTA transformă fiecare e-mail într-o oportunitate de comunicare. Legați-l de un calendar, portfolio sau formular de contact.</p><h3 class=\"h5 mt-6 mb-3\">Alegeți fonturi compatibile cu e-mailul</h3><p class=\"text-mid\">Generatorul oferă cinci fonturi sigure: Arial, Verdana, Tahoma, Trebuchet MS și Georgia.</p><h3 class=\"h5 mt-6 mb-3\">Găzduiți imaginile pe propriul domeniu</h3><p class=\"text-mid\">Dacă adăugați un logo sau avatar, utilizați o imagine găzduită pe propriul site sau pe un CDN de încredere. Evitați scurtătoarele de linkuri, Google Drive sau Dropbox.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Salvare automată și resetare",
+      "html": "<p class=\"text-mid\">Creatorul de semnături salvează automat munca în memoria browserului (localStorage). La reîmprospătarea paginii sau la revenire ulterioară, toate datele și setările sunt păstrate.</p><h3 class=\"h5 mt-6 mb-3\">Resetare</h3><p class=\"text-mid\">Sub previzualizare, butonul <strong>Resetează aspectul</strong> readuce toate datele și setările la valorile implicite după confirmare.</p><h3 class=\"h5 mt-6 mb-3\">Export și import configurație</h3><p class=\"text-mid\">Butoanele <strong>Exportă setările</strong> și <strong>Importă setările</strong> permit salvarea și restaurarea configurației complete prin fișier JSON.</p>"
     },
     {
       "type": "gap",
@@ -210,24 +240,24 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Cum să copiați semnătura în Gmail sau Outlook",
-      "description": "Când semnătura este gata, trebuie doar câțiva pași pentru a o adăuga la clientul de e-mail:",
+      "title": "Cum copiați semnătura în Gmail sau Outlook",
+      "description": "Când subsolul este gata, urmați acești trei pași:",
       "grid": "three",
       "items": [
         {
           "icon": "RiClipboardLine",
           "title": "1. Copiați codul",
-          "description": "Butonul Copiază semnătura (Gmail / Outlook) copiază semnătura în clipboard ca HTML formatat, gata de lipit."
+          "description": "Faceți clic pe Copiază semnătura (Gmail / Outlook). Semnătura este copiată ca HTML formatat."
         },
         {
           "icon": "RiSettings3Line",
-          "title": "2. Deschideți setările semnăturii",
-          "description": "În Gmail: Setări → Vezi toate setările → Semnătură. În Outlook: Fișier → Opțiuni → Mail → Semnături."
+          "title": "2. Deschideți setările de semnătură",
+          "description": "În Gmail: Setări → Toate setările → Semnătură. În Outlook: Fișier → Opțiuni → Corespondență → Semnături."
         },
         {
           "icon": "RiSaveLine",
           "title": "3. Lipiți și salvați",
-          "description": "În câmpul de semnătură, folosiți Ctrl+V (Windows) sau Cmd+V (Mac). Semnătura va apărea cu toate culorile și formatarea. Salvați modificările."
+          "description": "În câmpul de semnătură apăsați Ctrl + V (Windows) sau Cmd + V (Mac). Semnătura apare cu toate culorile. Salvați."
         }
       ]
     },
@@ -236,39 +266,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "Previzualizare semnătură și opțiuni de export",
-      "html": "<p class=\"text-mid\">Panoul de previzualizare se afișează în partea dreaptă a editorului și se actualizează automat cu fiecare modificare. Previzualizarea este fixă, deci rămâne vizibilă chiar și când derulați prin opțiunile de editare.</p><h3 class=\"h5 mt-6 mb-3\">Comutare fundal previzualizare</h3><p class=\"text-mid\">Deasupra previzualizării veți găsi trei butoane de schimbare fundal: <strong>Deschis</strong> (fundal gri implicit), <strong>Întunecat</strong> (fundal întunecat, util pentru verificarea lizibilității pe fundaluri întunecate) și <strong>Tablă de șah</strong> (model tablă de șah, permite vizualizarea transparenței și marginilor semnăturii).</p><h3 class=\"h5 mt-6 mb-3\">Butoane de acțiune</h3><p class=\"text-mid\">Sub previzualizare veți găsi mai multe butoane:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Copiază semnătura (Gmail / Outlook)</strong> - copiază semnătura în clipboard ca HTML formatat. Lipiți-o direct în setările semnăturii.</li><li><strong>Copiază cod HTML</strong> - copiază codul HTML brut al semnăturii în clipboard. Util când doriți să lipiți codul într-un editor HTML sau CMS.</li><li><strong>Descarcă ca HTML</strong> - salvează codul semnăturii ca fișier .html pe disc. Util pentru arhivare sau partajare cu un dezvoltator.</li><li><strong>Vizualizează cod HTML</strong> - deschide un modal cu codul sursă HTML complet al semnăturii. Puteți revizui codul și copia direct din modal.</li><li><strong>Export setări</strong> - salvează configurația completă a semnăturii (date, culori, layout, spațiere, stiluri) într-un fișier JSON.</li><li><strong>Import setări</strong> - încarcă o configurație dintr-un fișier JSON. Toate setările vor fi aplicate automat.</li><li><strong>Resetare aspect</strong> - restaurează toate datele și setările la valorile implicite (după confirmare).</li></ul>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
-      "title": "Cui se adresează creatorul de semnătură e-mail?",
-      "description": "Instrumentul de semnătură e-mail este util pentru oricine trimite emailuri de afaceri:",
+      "title": "Pentru cine este util acest generator?",
+      "description": "Instrumentul este util pentru oricine trimite e-mailuri profesionale:",
       "grid": "two",
       "items": [
         {
           "icon": "RiBriefcaseLine",
           "title": "Antreprenori și freelanceri",
-          "description": "O semnătură profesională în fiecare mesaj fără a angaja un designer."
+          "description": "Semnătură profesională în fiecare mesaj, fără designer sau cunoștințe tehnice."
         },
         {
           "icon": "RiTeamLine",
           "title": "Echipe de companie",
-          "description": "Fiecare angajat își creează propria semnătură în același stil. Identitate consecventă în toată compania."
+          "description": "Fiecare coleg creează propria semnătură în același stil. Exportați configurația JSON pentru a uniformiza echipa."
         },
         {
           "icon": "RiHandCoinLine",
-          "title": "Reprezentanți de vânzări",
-          "description": "Un buton CTA cu link către calendar sau ofertă crește șansele de a programa o întâlnire."
+          "title": "Vânzări și marketing",
+          "description": "Un buton CTA cu link către calendar sau ofertă transformă fiecare e-mail într-o oportunitate."
         },
         {
           "icon": "RiScales3Line",
           "title": "Avocați, contabili, medici",
-          "description": "Posibilitate de a adăuga disclaimer legal, număr licență, CUI sau alte detalii cerute în industrie."
+          "description": "Adăugați disclaimer, număr de licență, CUI sau alte date cerute de profesie."
         }
       ]
     },
@@ -278,23 +299,23 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Ce face special acest generator de semnătură e-mail HTML?",
+      "title": "Ce face special acest creator de semnături?",
       "grid": "three",
       "items": [
         {
           "icon": "RiInfinityLine",
-          "title": "Opt layouturi de semnătură",
-          "description": "Standard, bară sus, etichete stânga, centrat, compact, două coloane, minimalist și bară jos."
+          "title": "Opt aspecte",
+          "description": "Standard, Bară superioară, Etichete stânga, Centrat, Compact, Două coloane, Minimalist și Bară inferioară."
         },
         {
           "icon": "RiUserLine",
-          "title": "Salvare automată în browser",
-          "description": "Fiecare modificare este salvată automat în memoria browserului. După reîmprospătarea paginii, semnătura rămâne disponibilă."
+          "title": "Salvare automată",
+          "description": "Fiecare modificare este salvată automat în browser."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Export și import configurație",
-          "description": "Configurația completă a semnăturii poate fi exportată ca fișier JSON și partajată cu colegii."
+          "title": "Export și import",
+          "description": "Salvați configurația completă ca fișier JSON și partajați-o cu colegii."
         },
         {
           "icon": "RiAppsLine",
@@ -304,17 +325,12 @@
         {
           "icon": "RiPaletteLine",
           "title": "Personalizare avansată",
-          "description": "Formă și dimensiune avatar, stilizare linie, culori și dimensiuni individuale text."
-        },
-        {
-          "icon": "RiFileCodeLine",
-          "title": "Opțiuni multiple de export",
-          "description": "Copiere HTML, descărcare fișier, previzualizare cod sursă, export/import configurație JSON."
+          "description": "Formă și dimensiune avatar, stil linie, culori și dimensiuni individuale, bordură semnătură."
         },
         {
           "icon": "RiShieldCheckLine",
-          "title": "Confidențialitate",
-          "description": "Datele nu sunt trimise la un server. Generatorul funcționează complet în browser."
+          "title": "Confidențialitate totală",
+          "description": "Datele nu părăsesc niciodată browserul. Generatorul funcționează integral pe dispozitiv."
         },
         {
           "icon": "RiMailCheckLine",
@@ -323,8 +339,8 @@
         },
         {
           "icon": "RiEyeLine",
-          "title": "Previzualizare live",
-          "description": "Fiecare modificare este instant vizibilă pe fundal deschis, întunecat sau tablă de șah."
+          "title": "Previzualizare în timp real",
+          "description": "Fiecare modificare este vizibilă instant pe fundal deschis, întunecat sau în tablă de șah."
         }
       ]
     },
@@ -338,56 +354,44 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Semnătura funcționează în Gmail, Outlook și Apple Mail?",
-          "answer": "Da. Semnăturile generate de generator folosesc tabele HTML care se afișează corect în toți clienții de e-mail populari: Gmail, Outlook (desktop și web), Apple Mail, Thunderbird. Layoutul se adaptează la diferite dispozitive, inclusiv smartphone-uri."
+          "question": "Cum inserez semnătura în Gmail?",
+          "answer": "Faceți clic pe Copiază semnătura (Gmail / Outlook). Deschideți Gmail → Setări → Toate setările → Semnătură. Lipiți cu Ctrl + V (sau Cmd + V). Culorile, linkurile și pictogramele sunt păstrate automat.",
+          "answerSchemaText": "Copiați semnătura, Gmail → Setări → Semnătură, Ctrl+V."
         },
         {
-          "question": "Pot adăuga un logo al companiei?",
-          "answer": "Da. În tab-ul Date, lipiți URL-ul unei imagini (logo sau fotografie de profil). Imaginea ar trebui să fie pătrată (min. 120×120 px) și accesibilă public. După lipirea URL-ului, vor apărea opțiuni pentru formă (rotund, rotunjit, pătrat) și dimensiune (40, 56 sau 72 px)."
+          "question": "Funcționează în Outlook?",
+          "answer": "Da. În Outlook Desktop: Fișier → Opțiuni → Corespondență → Semnături → Lipire. În Outlook Web: Setări → Corespondență → Compunere și răspuns → Semnătură.",
+          "answerSchemaText": "Da. Desktop: Fișier → Opțiuni → Semnături. Web: Setări → Corespondență → Semnătură."
         },
         {
-          "question": "Cum copiez semnătura într-un client de e-mail?",
-          "answer": "Butonul Copiază semnătura (Gmail / Outlook) de sub previzualizare copiază semnătura în clipboard ca HTML formatat. În setările de semnătură Gmail sau Outlook, pur și simplu folosiți Ctrl+V (Windows) sau Cmd+V (Mac)."
+          "question": "Ce date legale trebuie să conțină semnătura mea?",
+          "answer": "În România, societățile comerciale trebuie să includă denumirea, forma juridică, CUI-ul, numărul de ordine din Registrul Comerțului și sediul social. PFA-urile — CUI-ul și adresa. Consultați secțiunea de cerințe legale pe această pagină.",
+          "answerSchemaText": "SRL/SA: denumire, CUI, J-number, sediu. PFA: CUI, adresă. Vezi secțiunea cerințe legale."
         },
         {
-          "question": "Pot folosi generatorul pentru a crea semnături pentru o echipă întreagă?",
-          "answer": "Da. Generatorul nu necesită autentificare sau înregistrare. Fiecare persoană din echipă poate deschide instrumentul, completa datele sale și copia semnătura gata. Pentru a menține consistența vizuală, conveniți asupra setărilor comune: același layout, temă de culori și font. Puteți exporta configurația ca fișier JSON și o puteți partaja cu colegii - aceștia trebuie doar să importe fișierul și să schimbe doar datele personale."
+          "question": "Datele mele sunt stocate?",
+          "answer": "Toate datele rămân în memoria browserului (localStorage). Nimic nu este trimis la un server. Puteți exporta și importa setările.",
+          "answerSchemaText": "Local în browser. Fără server. Export/import posibil."
         },
         {
-          "question": "Pot adăuga pictograme social media personalizate?",
-          "answer": "Generatorul oferă pictograme SVG integrate pentru douăsprezece platforme: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram și Pinterest. Activați opțiunea Afișează pictograme în tab-ul Social Media. Puteți alege dimensiunea și culoarea pictogramei (culori platformă, culoare accent sau culoare text)."
+          "question": "Pot adăuga linkuri social media?",
+          "answer": "Da. Generatorul suportă douăsprezece platforme: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram și Pinterest.",
+          "answerSchemaText": "12 platforme: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest."
         },
         {
-          "question": "Butonul de copiere este inactiv - de ce?",
-          "answer": "Pentru a copia semnătura, completați cel puțin două câmpuri: numele și adresa de e-mail. Verificați că ambele câmpuri sunt completate."
+          "question": "Butonul de copiere este inactiv — de ce?",
+          "answer": "Trebuie completate cel puțin două câmpuri: numele și adresa de e-mail.",
+          "answerSchemaText": "Numele și adresa de e-mail trebuie completate."
         },
         {
-          "question": "Avatarul sau logo-ul nu se afișează - ce să fac?",
-          "answer": "Imaginea trebuie să fie accesibilă public. URL-ul trebuie să indice direct către un fișier imagine (terminând în .jpg, .png sau .webp). Imaginile de pe Google Drive sau Dropbox necesită un link special de partajare."
+          "question": "Cum fac semnătura potrivită pentru mobil?",
+          "answer": "Păstrați semnătura scurtă (patru-șapte rânduri), folosiți dimensiunea standard de 14 px și alegeți un aspect potrivit ecranelor înguste. Standard și Compact sunt cele mai bune opțiuni.",
+          "answerSchemaText": "Scurtă, 14 px, aspect Standard sau Compact."
         },
         {
-          "question": "Semnătura arată diferit la destinatar - de ce?",
-          "answer": "Diferiți clienți de e-mail (Gmail, Outlook, Apple Mail) pot diferi ușor în modul în care redau HTML. Generatorul folosește stiluri sigure care funcționează în majoritatea programelor. Dacă vedeți diferențe majore, asigurați-vă că lipiți semnătura folosind Ctrl+V, nu Lipire ca text simplu."
-        },
-        {
-          "question": "Butonul CTA nu apare - ce să fac?",
-          "answer": "Butonul necesită ambele câmpuri: text și link. Verificați că în tab-ul Butoane ambele câmpuri sunt completate și URL-ul începe cu https://."
-        },
-        {
-          "question": "Cum să export sau import setările semnăturii?",
-          "answer": "Sub previzualizarea semnăturii veți găsi butoanele Export setări și Import setări. Exportul salvează configurația completă (date, culori, layout, spațiere, stiluri text) într-un fișier JSON. Importul încarcă configurația dintr-un fișier și aplică automat toate setările."
-        },
-        {
-          "question": "Cum să vizualizez codul sursă al semnăturii generate?",
-          "answer": "Butonul Vizualizează cod HTML de sub previzualizare deschide un modal cu codul sursă HTML complet. Puteți revizui și copia codul direct din modal. Alternativ, butonul Copiază cod HTML copiază codul brut în clipboard, iar Descarcă ca HTML îl salvează ca fișier."
-        },
-        {
-          "question": "Pot schimba forma și dimensiunea avatarului?",
-          "answer": "Da. După lipirea URL-ului imaginii în tab-ul Date, apar opțiuni suplimentare: Forma avatarului (rotund, rotunjit, pătrat) și Dimensiunea avatarului (mic - 40 px, mediu - 56 px, mare - 72 px). Setările se aplică în toate layouturile de semnătură."
-        },
-        {
-          "question": "Cum să schimb stilul liniei separatoare?",
-          "answer": "În tab-ul Disclaimer / Legal, activați opțiunea Afișează linie separatoare. Vor apărea opțiuni suplimentare: stil linie (solid, punctat, întrerupt), grosime (1-3 px) și culoare (gri implicit sau orice culoare aleasă din paletă)."
+          "question": "Unde găzduiesc logo-ul?",
+          "answer": "Pe propriul site sau pe un CDN de încredere. Evitați Google Drive, Dropbox sau scurtătoare de linkuri. Imaginea trebuie să fie pătrată, min. 120 × 120 px, în format JPG, PNG sau WebP.",
+          "answerSchemaText": "Pe site-ul propriu sau CDN. Pătrată, min. 120 × 120 px, JPG/PNG/WebP."
         }
       ]
     },
@@ -398,10 +402,10 @@
     {
       "type": "contactForm",
       "title": "Ajutați-ne să îmbunătățim instrumentele noastre",
-      "description": "Aveți o idee pentru o nouă funcție, ați găsit o eroare sau doriți să sugerați un alt instrument care v-ar ușura munca? Scrieți-ne – răspundem în 24 de ore.",
+      "description": "Aveți o idee pentru o funcționalitate nouă, ați găsit un bug sau doriți să sugerați un alt instrument? Scrieți-ne — răspundem în 24 de ore.",
       "imageSrc": "/assets/tools/free-html-email-signature-generator/generator-semnatura-email-gratuit-ro.webp",
-      "imageAlt": "Generator semnătură email – Arteon",
-      "defaultSubject": "Feedback: Generator semnătură email"
+      "imageAlt": "Generator semnătură e-mail – Arteon",
+      "defaultSubject": "Feedback: Generator semnătură e-mail"
     },
     {
       "type": "gap",

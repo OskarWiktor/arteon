@@ -25,10 +25,19 @@
   "schemas": {
     "software": {
       "name": "Generatore di firma e-mail HTML – creatore di firma",
-      "alternateName": ["Creare una firma e-mail gratis", "Generatore di firma HTML", "Generatore di firma Gmail", "Generatore di firma Outlook", "Firma e-mail professionale"],
+      "alternateName": [
+        "Creare firma e-mail gratuita",
+        "Generatore di firma HTML",
+        "Generatore di firma Gmail",
+        "Generatore di firma Outlook",
+        "Firma e-mail professionale",
+        "Creatore di piè di pagina e-mail",
+        "Strumento gratuito per firma e-mail",
+        "Firma elettronica per e-mail aziendale"
+      ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Generatore gratuito di firma e-mail HTML. Aggiungi dati di contatto, link CTA e profili social, poi copia il codice firma pronto in Gmail, Outlook e altri client di posta.",
+      "description": "Generatore gratuito di firma e-mail HTML e creatore di piè di pagina professionale. Aggiungi dati di contatto, link CTA e profili social. Copia il codice in Gmail, Outlook, Apple Mail o qualsiasi altro client. Senza registrazione.",
       "featureList": [
         "Dati di contatto (nome, titolo, azienda)",
         "Telefono, email e URL del sito web",
@@ -77,10 +86,10 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Perché una firma e-mail professionale?",
-      "html": "<p class=\"text-mid\">Una firma e-mail è molto più di semplici dati di contatto in fondo a un messaggio. Contiene il tuo nome, il tuo ruolo, la tua azienda, i tuoi recapiti e eventualmente un link CTA o profili social. Una firma coerente e professionale rafforza l'immagine del brand in ogni e-mail inviata.</p><p class=\"text-mid mt-3\">In media, un impiegato d'ufficio invia 30-40 e-mail al giorno. Ognuna di queste e-mail è un'occasione per presentare il tuo brand, inserire un link CTA e dare al destinatario un accesso diretto ai tuoi profili social. Con questo strumento, crea una firma all'altezza di queste esigenze.</p>",
+      "title": "Perché usare una firma e-mail professionale?",
+      "html": "<p class=\"text-mid\">Una firma e-mail è un piccolo blocco di testo in fondo a ogni messaggio che invii. Viene chiamata anche piè di pagina e-mail o blocco firma. Mostra il tuo nome, il ruolo, l'azienda e i dati di contatto. Molte firme includono anche un link al sito web, un calendario appuntamenti o i profili social.</p><p class=\"text-mid mt-3\">In media, un professionista invia tra 30 e 40 e-mail al giorno. Ognuno di quei messaggi è un'opportunità per condividere i propri contatti, rafforzare il marchio e semplificare la comunicazione. Un piè di pagina ben progettato fa risparmiare tempo al destinatario — non deve cercare il tuo numero di telefono nei messaggi precedenti.</p><p class=\"text-mid mt-3\">In Italia, inoltre, la legge richiede che le e-mail aziendali contengano determinate informazioni sull'impresa. La Partita IVA, il Codice Fiscale e il numero REA sono tra i dati più importanti. La firma e-mail è il posto più semplice dove inserirli.</p>",
       "imageSrc": "/assets/tools/free-html-email-signature-generator/generatore-di-firma-email-gratuito-it.webp",
-      "imageAlt": "Generatore di firma email – Arteon"
+      "imageAlt": "Generatore di firma e-mail – Arteon"
     },
     {
       "type": "gap",
@@ -88,28 +97,28 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Come usare il generatore di firma",
-      "description": "La creazione di una firma richiede meno di 5 minuti:",
+      "title": "Come creare una firma e-mail in quattro passaggi",
+      "description": "Creare un piè di pagina professionale richiede meno di cinque minuti:",
       "grid": "four",
       "items": [
         {
           "icon": "RiMailLine",
           "title": "1. Inserisci i dati",
-          "description": "Inserisci nome, ruolo, azienda, recapiti e opzionalmente link social."
+          "description": "Nome, ruolo, azienda, contatti e, facoltativamente, link ai profili social."
         },
         {
           "icon": "RiPaletteLine",
           "title": "2. Personalizza il design",
-          "description": "Scegli il layout, lo schema di colori, il font e regola spaziature e stili di testo."
+          "description": "Scegli un layout, uno schema di colori, un font e regola gli spaziamenti."
         },
         {
           "icon": "RiLinksLine",
-          "title": "3. CTA e social",
-          "description": "Aggiungi opzionalmente un link di azione e profili social."
+          "title": "3. Aggiungi CTA e social",
+          "description": "Aggiungi un pulsante d'azione e link ai tuoi profili social."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Copia",
+          "title": "4. Copia e incolla",
           "description": "Copia la firma e incollala in Gmail, Outlook o qualsiasi altro client."
         }
       ]
@@ -119,71 +128,9 @@
       "variant": "line"
     },
     {
-      "type": "sectionSteps",
-      "title": "8 layout - quale fa per te?",
-      "description": "Ogni layout organizza gli elementi in modo diverso:",
-      "grid": "four",
-      "items": [
-        {
-          "icon": "RiLayoutLine",
-          "title": "Standard",
-          "description": "Disposizione classica con foto profilo a sinistra e dati a destra."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Barra superiore",
-          "description": "Barra colorata in alto con nome e ruolo, dati sotto."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Etichette a sinistra",
-          "description": "Etichette (telefono, e-mail, sito web) a sinistra, valori a destra."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Centrato",
-          "description": "Tutti gli elementi centrati - ideale per settori creativi."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Compatto",
-          "description": "Risparmio di spazio - tutte le informazioni in poche righe."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Due colonne",
-          "description": "Foto e nome a sinistra, dati e social a destra."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Minimalista",
-          "description": "Ridotto all'essenziale - nome, ruolo e un link."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Barra inferiore",
-          "description": "Dati in alto, barra colorata con CTA e social in basso."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionDemo",
-      "title": "Cosa può contenere la firma?",
-      "demoHtml": "<div class=\"space-y-2\"><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Dati personali</strong> - nome, ruolo, azienda, reparto</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Recapiti</strong> - telefono, e-mail, sito web, indirizzo postale</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Immagini</strong> - foto profilo e/o logo aziendale (URL)</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Social media</strong> - 12 piattaforme con icone automatiche</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Link CTA</strong> - pulsante di azione (es. Prenota consulenza)</span></div><div class=\"flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3\"><span class=\"text-mid text-sm!\"><strong>Disclaimer</strong> - avviso legale / informativa GDPR</span></div></div>",
-      "html": "<p class=\"text-mid mb-4\">Il generatore offre numerose opzioni di personalizzazione per tutti gli elementi di una firma e-mail professionale:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Dati personali</strong> - nome, ruolo, azienda e reparto.</li><li><strong>Recapiti</strong> - telefono, e-mail, sito web e indirizzo postale.</li><li><strong>Elementi visivi</strong> - foto profilo, logo, schema di colori e font.</li><li><strong>Social media</strong> - link a 12 piattaforme con icone generate automaticamente.</li><li><strong>Pulsante CTA</strong> - link di azione opzionale con testo e URL personalizzati.</li><li><strong>Disclaimer</strong> - avviso legale in dimensioni ridotte in fondo alla firma.</li></ul>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionInfo",
       "title": "Come compilare i dati della firma",
-      "html": "<p class=\"text-mid\">Nella scheda <strong>Dati</strong> trovi tutti i campi compilabili. Solo due sono obbligatori: nome e cognome e indirizzo e-mail. I campi opzionali appariranno nella firma solo se compilati.</p><h3 class=\"h5 mt-6 mb-3\">Campi nella scheda Dati</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Riga sopra il nome</strong> - testo aggiuntivo sopra il nome, ad es. nome dell'azienda, motto o slogan.</li><li><strong>Avatar / logo (URL immagine)</strong> - URL di una foto profilo o del logo aziendale. L'immagine deve essere quadrata (min. 120x120 px) e accessibile pubblicamente. Dopo aver inserito l'URL appariranno le opzioni: <strong>Forma avatar</strong> (rotondo, arrotondato o quadrato) e <strong>Dimensione avatar</strong> (piccolo 40 px, medio 56 px, grande 72 px).</li><li><strong>Nome e cognome</strong> - campo obbligatorio.</li><li><strong>Tag accanto al nome</strong> - breve testo accanto al nome, ad es. pronomi o ruolo abbreviato.</li><li><strong>Ruolo</strong> - posizione in azienda, ad es. Responsabile vendite, Specialista marketing.</li><li><strong>Nome azienda</strong> - nome dell'organizzazione.</li><li><strong>Riga aggiuntiva</strong> - breve descrizione di cosa fai o offri.</li><li><strong>E-mail</strong> - campo obbligatorio. Inserisci l'indirizzo e-mail aziendale.</li><li><strong>Telefono</strong> - numero di contatto. Formato libero, ad es. +39 02 1234567.</li><li><strong>Sito web</strong> - URL completo del sito, che inizia con https://.</li><li><strong>Indirizzo</strong> - indirizzo fisico dell'azienda (via, citta, CAP).</li><li><strong>Dati formali</strong> - P.IVA, codice fiscale, numero di licenza o altri dati richiesti dal settore.</li></ul>"
+      "html": "<p class=\"text-mid\">Nella scheda <strong>Dati</strong> trovi tutti i campi disponibili. Solo due sono obbligatori: il nome e l'indirizzo e-mail. Tutti gli altri sono facoltativi e appaiono nella firma solo se compilati.</p><h3 class=\"h5 mt-6 mb-3\">Campi disponibili</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Riga sopra il nome</strong> — testo aggiuntivo sopra il nome: nome dell'azienda, slogan o frase ad effetto.</li><li><strong>Avatar / logo (URL immagine)</strong> — URL di una foto profilo o logo. L'immagine deve essere quadrata (min. 120 × 120 px) e accessibile pubblicamente. Dopo aver incollato l'URL puoi scegliere la <strong>forma</strong> (rotonda, arrotondata, quadrata) e la <strong>dimensione</strong> (piccola — 40 px, media — 56 px, grande — 72 px).</li><li><strong>Nome completo</strong> — campo obbligatorio.</li><li><strong>Tag accanto al nome</strong> — testo breve, come pronomi o titolo abbreviato.</li><li><strong>Ruolo</strong> — la tua posizione in azienda, es. Direttore commerciale.</li><li><strong>Azienda</strong> — nome dell'organizzazione.</li><li><strong>Riga aggiuntiva</strong> — breve descrizione della tua attività o offerta.</li><li><strong>E-mail</strong> — campo obbligatorio. Il tuo indirizzo professionale.</li><li><strong>Telefono</strong> — numero di contatto in qualsiasi formato, es. +39 02 1234567.</li><li><strong>Sito web</strong> — URL completo che inizia con https://.</li><li><strong>Indirizzo</strong> — indirizzo dell'azienda (via, città, CAP).</li><li><strong>Dati legali</strong> — Partita IVA, Codice Fiscale, numero REA, PEC o altri dati richiesti dal settore. Questo campo è fondamentale per la conformità legale in Italia — vedi la sezione dedicata qui sotto.</li></ul>"
     },
     {
       "type": "gap",
@@ -191,8 +138,26 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Come aggiungere pulsanti CTA",
-      "html": "<p class=\"text-mid\">Il pulsante CTA (call-to-action) e un elemento cliccabile che indirizza il destinatario a una pagina scelta, ad es. un calendario appuntamenti, un modulo di contatto o un'offerta. Il generatore permette di aggiungere due pulsanti CTA.</p><h3 class=\"h5 mt-6 mb-3\">Pulsante principale</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Apri la scheda <strong>Pulsanti</strong> nell'editor.</li><li>Nella sezione <strong>Pulsante principale</strong> inserisci il testo visibile al destinatario, ad es. Prenota una consulenza gratuita.</li><li>Nel campo <strong>Link CTA</strong> incolla l'URL completo della pagina. L'indirizzo deve iniziare con https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Pulsante secondario</h3><p class=\"text-mid\">Puoi aggiungere un secondo pulsante CTA in stile outline (sfondo trasparente con bordo). Compila i campi nella sezione <strong>Pulsante secondario</strong> come per il pulsante principale.</p><h3 class=\"h5 mt-6 mb-3\">Arrotondamento pulsanti</h3><p class=\"text-mid\">In fondo alla scheda Pulsanti trovi l'opzione <strong>Arrotondamento pulsanti</strong>. Tre varianti: Nessuno (angoli retti), Leggero (leggermente arrotondato) o Pieno (pulsante ovale).</p>"
+      "title": "Obblighi legali per le firme e-mail in Italia",
+      "html": "<p class=\"text-mid\">In Italia, le e-mail aziendali devono contenere determinate informazioni sull'impresa. La firma e-mail è il modo più semplice per rispettare questi obblighi. Di seguito un riepilogo delle principali norme. Si tratta di informazioni generali, non di consulenza legale — verifica sempre la normativa vigente.</p><h3 class=\"h5 mt-6 mb-3\">Partita IVA</h3><p class=\"text-mid\">L'obbligo di indicare la Partita IVA (P.IVA) in tutte le comunicazioni commerciali è previsto dal DPR 633/1972. Ogni e-mail inviata a fini commerciali deve contenere il numero di Partita IVA dell'impresa. Questo vale per tutti i tipi di aziende: imprese individuali, società di persone e società di capitali.</p><h3 class=\"h5 mt-6 mb-3\">Codice Fiscale e numero REA</h3><p class=\"text-mid\">Le società iscritte al Registro delle Imprese devono indicare anche:</p><ul class=\"text-mid mt-2 list-disc space-y-1 pl-6\"><li>Codice Fiscale (C.F.) — se diverso dalla P.IVA</li><li>Numero REA — il numero di iscrizione al Repertorio Economico Amministrativo presso la Camera di Commercio locale</li><li>Sede legale</li><li>Capitale sociale e stato di liquidazione (per S.r.l. e S.p.A.)</li></ul><h3 class=\"h5 mt-6 mb-3\">PEC — Posta Elettronica Certificata</h3><p class=\"text-mid\">L'Italia ha un sistema unico di posta elettronica certificata (PEC) con valore legale equivalente alla raccomandata con ricevuta di ritorno. Tutte le imprese e i professionisti iscritti a un ordine professionale devono avere un indirizzo PEC. Sebbene non sia obbligatorio inserirlo nella firma di ogni e-mail ordinaria, includerlo è una buona pratica perché facilita le comunicazioni ufficiali.</p><p class=\"text-mid mt-3\">Se hai un indirizzo PEC, puoi aggiungerlo nel campo <strong>Riga aggiuntiva</strong> o nel campo <strong>Dati legali</strong> del generatore.</p><h3 class=\"h5 mt-6 mb-3\">Obblighi specifici per forma giuridica</h3><ul class=\"text-mid mt-2 list-disc space-y-2 pl-6\"><li><strong>S.r.l.</strong> — denominazione, sede legale, ufficio del Registro delle Imprese, P.IVA, C.F., numero REA, capitale sociale, stato di liquidazione se applicabile.</li><li><strong>S.p.A.</strong> — come S.r.l., più i nomi degli amministratori e l'organo di controllo (se presente).</li><li><strong>Ditta individuale</strong> — P.IVA, C.F. (se diverso), sede, eventuale iscrizione all'Albo.</li><li><strong>Professionista (libero professionista)</strong> — P.IVA, iscrizione all'ordine professionale (es. Ordine degli Avvocati, Albo dei Dottori Commercialisti).</li></ul><h3 class=\"h5 mt-6 mb-3\">Sanzioni</h3><p class=\"text-mid\">L'omissione della Partita IVA nelle comunicazioni commerciali è sanzionabile con un'ammenda da 258,23 a 2.065,83 EUR (art. 35 DPR 633/1972). La Camera di Commercio può inoltre verificare la conformità delle comunicazioni aziendali.</p><h3 class=\"h5 mt-6 mb-3\">GDPR e protezione dei dati</h3><p class=\"text-mid\">Se la firma e-mail contiene dati personali (foto, numero di cellulare personale), si applica il Regolamento Generale sulla Protezione dei Dati (GDPR). Le aziende che agiscono come titolari del trattamento dovrebbero considerare l'aggiunta di un breve avviso sulla privacy o un link all'informativa. Il generatore offre il campo <strong>Disclaimer / GDPR</strong> a questo scopo.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come compilare il campo Dati legali — esempi per tipo di azienda",
+      "html": "<p class=\"text-mid\">Il campo <strong>Dati legali</strong> nella scheda Dati è un'area di testo multiriga dove puoi inserire i tuoi identificatori legali. Esempi:</p><ul class=\"text-mid mt-3 list-disc space-y-3 pl-6\"><li><strong>S.r.l.</strong> — Azienda Esempio S.r.l. | P.IVA 01234567890 | C.F. 01234567890 | REA MI-1234567 | Sede: Via Roma 10, 20100 Milano | Cap. soc. 10.000 EUR i.v.</li><li><strong>S.p.A.</strong> — Azienda Esempio S.p.A. | P.IVA 01234567890 | REA RM-9876543 | Sede: Via del Corso 100, 00186 Roma | Cap. soc. 100.000 EUR i.v.</li><li><strong>Ditta individuale</strong> — Mario Rossi | P.IVA 01234567890 | Via Garibaldi 5, 50123 Firenze</li><li><strong>Professionista</strong> — Avv. Mario Rossi | P.IVA 01234567890 | Foro di Milano | PEC: mario.rossi@pec.it</li><li><strong>S.n.c. / S.a.s.</strong> — Esempio S.n.c. di M. Rossi &amp; C. | P.IVA 01234567890 | REA TO-1111111 | Torino</li></ul><p class=\"text-mid mt-4\">Il testo inserito appare in fondo alla firma, subito prima del disclaimer.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come aggiungere i pulsanti CTA",
+      "html": "<p class=\"text-mid\">Un pulsante CTA (call to action) è un elemento cliccabile che indirizza il destinatario a una pagina a tua scelta: calendario appuntamenti, modulo di contatto o offerta. Il creatore di firme permette di aggiungere due pulsanti CTA.</p><h3 class=\"h5 mt-6 mb-3\">Pulsante principale</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Apri la scheda <strong>Pulsanti</strong>.</li><li>Inserisci il testo che il destinatario vedrà, es. <em>Prenota una consulenza</em>.</li><li>Incolla l'URL completo nel campo <strong>Link CTA</strong>. L'indirizzo deve iniziare con https://.</li></ol><h3 class=\"h5 mt-6 mb-3\">Pulsante secondario</h3><p class=\"text-mid\">Puoi aggiungere un secondo pulsante in stile contorno (sfondo trasparente con bordo). Compila i campi della sezione <strong>Pulsante secondario</strong> allo stesso modo.</p><h3 class=\"h5 mt-6 mb-3\">Forma dei pulsanti</h3><p class=\"text-mid\">In fondo alla scheda, l'opzione <strong>Arrotondamento</strong> offre tre forme: Nessuno (angoli retti), Leggero (leggermente arrotondato) o Completo (ovale).</p><p class=\"text-mid mt-4\">Se entrambi i campi (testo e link) rimangono vuoti, il pulsante non appare. Servono entrambi.</p>"
     },
     {
       "type": "gap",
@@ -201,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Come aggiungere link ai social media",
-      "html": "<p class=\"text-mid\">Nella scheda <strong>Social media</strong> puoi aggiungere link ai tuoi profili. Il generatore supporta dodici piattaforme: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (ex Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram e Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Come fare</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Apri la scheda <strong>Social media</strong> nell'editor.</li><li>Accanto a ogni piattaforma trovi un campo per l'URL. Incolla il link completo al tuo profilo, ad es. https://www.linkedin.com/in/tuoprofilo.</li><li>Compila solo i campi che ti interessano. I campi vuoti non appariranno nella firma.</li></ol><h3 class=\"h5 mt-6 mb-3\">Icone social media</h3><p class=\"text-mid\">In fondo alla scheda Social media trovi l'opzione <strong>Mostra icone accanto ai nomi</strong>. Attivandola, i link appariranno come icone SVG colorate anziche come semplici nomi.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Dimensione icone</strong> - a scelta: Piccole (16 px), Medie (20 px) o Grandi (24 px).</li><li><strong>Colore icone</strong> - Colori piattaforme (colori predefiniti), Colore accento (colore uniforme) o Colore testo.</li></ul>"
+      "html": "<p class=\"text-mid\">Nella scheda <strong>Social media</strong> puoi aggiungere link ai tuoi profili. Il creatore di firme supporta dodici piattaforme: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (ex Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram e Pinterest.</p><h3 class=\"h5 mt-6 mb-3\">Come fare</h3><ol class=\"text-mid list-decimal space-y-2 pl-6\"><li>Apri la scheda <strong>Social media</strong>.</li><li>Accanto a ogni piattaforma, incolla l'URL completo del tuo profilo.</li><li>Compila solo le piattaforme che usi. I campi vuoti non appaiono nella firma.</li></ol><h3 class=\"h5 mt-6 mb-3\">Icone social</h3><p class=\"text-mid\">Attiva <strong>Mostra icone accanto ai nomi</strong> per visualizzare icone SVG a colori al posto del testo.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Dimensione</strong> — Piccola (16 px), Media (20 px) o Grande (24 px).</li><li><strong>Colore</strong> — Colori della piattaforma, Colore di accento (uniforme) o Colore del testo.</li></ul>"
     },
     {
       "type": "gap",
@@ -210,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Personalizzazione dell'aspetto",
-      "html": "<p class=\"text-mid\">Nella scheda <strong>Aspetto</strong> puoi personalizzare colori, font e altri elementi visivi della firma.</p><h3 class=\"h5 mt-6 mb-3\">Temi di colore</h3><p class=\"text-mid\">In cima alla scheda trovi cinque temi pronti: Scuro, Blu, Viola, Verde e Grigio. Cliccando su un tema si impostano automaticamente il colore accento e il colore testo.</p><h3 class=\"h5 mt-6 mb-3\">Colori</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Colore accento</strong> - usato nella barra laterale/superiore, pulsante CTA e link.</li><li><strong>Colore testo</strong> - colore di tutti i testi nella firma.</li><li><strong>Colore sfondo</strong> - colore di sfondo dell'intera firma.</li></ul><h3 class=\"h5 mt-6 mb-3\">Font e dimensione</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Font</strong> - a scelta: Arial, Verdana, Tahoma, Trebuchet MS e Georgia. Tutti sicuri per le e-mail.</li><li><strong>Dimensione testo</strong> - tre opzioni: Piccolo (12 px), Standard (14 px) e Maggiore (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Impostazioni aggiuntive</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Bordo firma</strong> - puoi aggiungere un bordo scegliendo qualsiasi combinazione di lati (sinistra, destra, sopra, sotto). Il bordo assume il colore accento.</li></ul>"
+      "html": "<p class=\"text-mid\">Nella scheda <strong>Aspetto</strong> puoi modificare colori, font e altri elementi visivi.</p><h3 class=\"h5 mt-6 mb-3\">Temi di colore</h3><p class=\"text-mid\">In alto nella scheda, cinque temi predefiniti: Scuro, Blu, Viola, Verde e Grigio. Un clic applica automaticamente il colore di accento e il colore del testo.</p><h3 class=\"h5 mt-6 mb-3\">Colori individuali</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Colore di accento</strong> — per la barra laterale o superiore, il pulsante CTA e i link.</li><li><strong>Colore del testo</strong> — colore di tutti i testi della firma.</li><li><strong>Colore di sfondo</strong> — sfondo della firma. Bianco di default.</li></ul><h3 class=\"h5 mt-6 mb-3\">Font e dimensione</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Font</strong> — Arial, Verdana, Tahoma, Trebuchet MS o Georgia. Tutti compatibili con i client di posta.</li><li><strong>Dimensione</strong> — Piccola (12 px), Standard (14 px) o Più grande (16 px).</li></ul><h3 class=\"h5 mt-6 mb-3\">Bordo della firma</h3><p class=\"text-mid\">Puoi aggiungere un bordo su qualsiasi lato: sinistro, destro, superiore o inferiore. Il bordo usa il colore di accento.</p>"
     },
     {
       "type": "gap",
@@ -218,8 +183,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Stile del testo - colori e dimensioni dei singoli elementi",
-      "html": "<p class=\"text-mid\">Nella scheda <strong>Stile testo</strong> puoi personalizzare individualmente il colore e la dimensione del font per ogni elemento testuale della firma.</p><h3 class=\"h5 mt-6 mb-3\">Elementi disponibili</h3><p class=\"text-mid\">Sono visibili solo gli elementi attualmente presenti nella firma (con dati compilati). Per ogni elemento puoi impostare:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Nome e cognome</strong> - per impostazione predefinita nel colore accento.</li><li><strong>Ruolo</strong> - posizione in azienda.</li><li><strong>Azienda</strong> - nome dell'organizzazione.</li><li><strong>Dati di contatto</strong> - e-mail, telefono, sito web (etichette).</li><li><strong>Social media</strong> - link ai profili.</li><li><strong>Disclaimer legale</strong> - testo legale in fondo alla firma.</li></ul><h3 class=\"h5 mt-6 mb-3\">Come cambiare il colore?</h3><p class=\"text-mid\">Accanto a ogni elemento trovi una riga di opzioni colore. Clicca su un quadrato colorato per selezionarlo. Puoi anche aggiungere un colore personalizzato cliccando il quadrato con il +. I colori personalizzati (fino a 8) sono condivisi tra tutti gli elementi.</p><h3 class=\"h5 mt-6 mb-3\">Come cambiare la dimensione?</h3><p class=\"text-mid\">Nella seconda riga trovi il controllo dimensione con pulsanti - e +. Il valore indica lo scostamento rispetto alla dimensione base del font. Intervallo: da -4 a +4 pixel.</p>"
+      "title": "Stile del testo — colori e dimensioni per elemento",
+      "html": "<p class=\"text-mid\">Nella scheda <strong>Stile testo</strong> puoi regolare individualmente colore e dimensione di ogni elemento testuale.</p><h3 class=\"h5 mt-6 mb-3\">Elementi disponibili</h3><p class=\"text-mid\">Appaiono solo gli elementi che contengono dati:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Nome</strong> — nel colore di accento di default.</li><li><strong>Ruolo</strong> — la tua posizione in azienda.</li><li><strong>Azienda</strong> — nome dell'organizzazione.</li><li><strong>Contatti</strong> — e-mail, telefono, sito web.</li><li><strong>Social media</strong> — link ai profili.</li><li><strong>Disclaimer</strong> — testo legale in fondo.</li></ul><h3 class=\"h5 mt-6 mb-3\">Cambiare il colore</h3><p class=\"text-mid\">Accanto a ogni elemento ci sono opzioni colore. Clicca su un quadrato per selezionarlo. Puoi anche aggiungere colori personalizzati (fino a 8), condivisi tra tutti gli elementi. Il pulsante di reset ripristina il colore predefinito.</p><h3 class=\"h5 mt-6 mb-3\">Cambiare la dimensione</h3><p class=\"text-mid\">Sotto i colori, pulsanti meno e più regolano la dimensione. Il valore indica lo scarto rispetto alla dimensione base (definita in Aspetto). Intervallo: da −4 a +4 pixel.</p>"
     },
     {
       "type": "gap",
@@ -228,7 +193,7 @@
     {
       "type": "sectionInfo",
       "title": "Spaziature tra gli elementi",
-      "html": "<p class=\"text-mid\">Nella scheda <strong>Spaziature</strong> puoi controllare con precisione le distanze tra i singoli elementi della firma.</p><h3 class=\"h5 mt-6 mb-3\">Margine interno della firma</h3><p class=\"text-mid\">In cima alla scheda trovi l'opzione del margine interno, ovvero la distanza tra il contenuto della firma e i suoi bordi. Tre valori a scelta: 8 px (piccolo), 16 px (medio) e 24 px (grande).</p><h3 class=\"h5 mt-6 mb-3\">Spaziature tra gli elementi</h3><p class=\"text-mid\">Sotto il margine trovi i controlli per i singoli elementi della firma. Ogni controllo ha pulsanti + e - per aumentare o diminuire la spaziatura.</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Dopo nome e cognome</strong></li><li><strong>Dopo ruolo / azienda</strong></li><li><strong>Dopo riga aggiuntiva</strong></li><li><strong>Dopo dati di contatto</strong></li><li><strong>Dopo social media</strong></li><li><strong>Dopo pulsante CTA</strong></li><li><strong>Prima del disclaimer</strong></li></ul>"
+      "html": "<p class=\"text-mid\">Nella scheda <strong>Spaziature</strong> puoi controllare la distanza esatta tra ogni parte della firma.</p><h3 class=\"h5 mt-6 mb-3\">Margine interno</h3><p class=\"text-mid\">In alto, l'opzione di margine interno definisce la distanza tra il contenuto e i bordi della firma. Tre valori: 8 px (piccolo), 16 px (medio) e 24 px (grande).</p><h3 class=\"h5 mt-6 mb-3\">Spaziature per elemento</h3><p class=\"text-mid\">Sotto, controlli con pulsanti più e meno per ogni elemento presente nella firma:</p><ul class=\"text-mid mt-3 list-disc space-y-1 pl-6\"><li><strong>Dopo il nome</strong></li><li><strong>Dopo il ruolo / azienda</strong></li><li><strong>Dopo la riga aggiuntiva</strong></li><li><strong>Dopo i contatti</strong></li><li><strong>Dopo i social media</strong></li><li><strong>Dopo il pulsante CTA</strong></li><li><strong>Prima del disclaimer</strong></li></ul>"
     },
     {
       "type": "gap",
@@ -236,8 +201,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Disclaimer legale / GDPR - quando aggiungerlo?",
-      "html": "<p class=\"text-mid\">Nella scheda <strong>Disclaimer / GDPR</strong> puoi aggiungere un testo legale che apparira in fondo alla firma in dimensioni ridotte.</p><h3 class=\"h5 mt-6 mb-3\">Quando conviene aggiungere un disclaimer?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Corrispondenza aziendale</strong> - informazione sulla riservatezza del messaggio.</li><li><strong>Requisiti di settore</strong> - alcuni settori (legale, medico, finanziario) richiedono informazioni specifiche in ogni messaggio.</li><li><strong>GDPR</strong> - informativa sul trattamento dei dati personali.</li></ul><h3 class=\"h5 mt-6 mb-3\">Linea separatrice</h3><p class=\"text-mid\">Sotto il campo di testo trovi l'opzione <strong>Mostra linea separatrice tra dati e disclaimer</strong>. Dopo l'attivazione appaiono opzioni aggiuntive:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Stile linea</strong> - continua (solid), tratteggiata (dashed) o punteggiata (dotted).</li><li><strong>Spessore linea</strong> - 1 px, 2 px o 3 px.</li><li><strong>Colore linea</strong> - grigio predefinito (#e5e7eb) o qualsiasi colore dalla palette.</li></ul>"
+      "title": "Disclaimer legale e GDPR",
+      "html": "<p class=\"text-mid\">Nella scheda <strong>Disclaimer / GDPR</strong> puoi aggiungere un testo legale che appare in fondo alla firma in caratteri più piccoli.</p><h3 class=\"h5 mt-6 mb-3\">Quando aggiungere un disclaimer?</h3><ul class=\"text-mid list-disc space-y-2 pl-6\"><li><strong>Corrispondenza aziendale</strong> — avviso di riservatezza che chiede la cancellazione in caso di invio errato.</li><li><strong>Requisiti di settore</strong> — alcuni settori (legale, medico, finanziario) richiedono menzioni specifiche.</li><li><strong>GDPR</strong> — informativa sul trattamento dei dati personali, se l'azienda agisce come titolare del trattamento.</li></ul><p class=\"text-mid mt-4\">Di default, il campo contiene un testo di esempio. Puoi modificarlo, eliminarlo o sostituirlo con il tuo.</p><h3 class=\"h5 mt-6 mb-3\">Linea separatrice</h3><p class=\"text-mid\">Attiva <strong>Mostra linea separatrice</strong> per aggiungere una linea orizzontale sopra il testo legale. Opzioni: stile (continua, tratteggiata, punteggiata), spessore (1–3 px) e colore.</p>"
     },
     {
       "type": "gap",
@@ -245,8 +210,17 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Salvataggio automatico e ripristino delle impostazioni",
-      "html": "<p class=\"text-mid\">Il generatore salva automaticamente tutte le impostazioni nella memoria del browser (localStorage). Dopo l'aggiornamento della pagina o la riapertura dello strumento, dati, layout, colori e tutte le altre opzioni verranno ripristinati.</p><h3 class=\"h5 mt-6 mb-3\">Come funziona il salvataggio automatico?</h3><p class=\"text-mid\">Ogni modifica (testo, colore, layout, spaziature) viene salvata istantaneamente nella memoria del browser, in modo automatico e in background.</p><h3 class=\"h5 mt-6 mb-3\">Come ripristinare le impostazioni?</h3><p class=\"text-mid\">Sotto l'anteprima della firma trovi il pulsante <strong>Ripristina aspetto</strong>. Dopo il clic apparira una finestra di conferma. Il ripristino riporta tutti i dati e le impostazioni ai valori predefiniti. L'operazione non puo essere annullata.</p><h3 class=\"h5 mt-6 mb-3\">Esportazione e importazione della configurazione</h3><p class=\"text-mid\">Sotto l'anteprima trovi anche i pulsanti <strong>Esporta impostazioni</strong> e <strong>Importa impostazioni</strong>. L'esportazione salva tutti i dati, colori, layout, spaziature e stili di testo in un file JSON. L'importazione permette di caricare una configurazione salvata in precedenza.</p>"
+      "title": "Buone pratiche per una firma e-mail efficace",
+      "html": "<p class=\"text-mid\">Un buon piè di pagina è chiaro, coerente e facile da leggere. Ecco i consigli più importanti:</p><h3 class=\"h5 mt-6 mb-3\">Sii breve</h3><p class=\"text-mid\">Da quattro a sette righe di dati di contatto sono sufficienti. Una firma troppo lunga spinge il contenuto del messaggio verso il basso, soprattutto su smartphone.</p><h3 class=\"h5 mt-6 mb-3\">Due o tre colori al massimo</h3><p class=\"text-mid\">Troppi colori danno un aspetto disordinato. Scegli un colore di accento in linea con il tuo brand e mantieni il resto in toni scuri e neutri.</p><h3 class=\"h5 mt-6 mb-3\">Includi sempre un pulsante d'azione</h3><p class=\"text-mid\">Un pulsante CTA trasforma ogni e-mail in un'opportunità commerciale. Collegalo a un calendario appuntamenti, un portfolio o un modulo di contatto.</p><h3 class=\"h5 mt-6 mb-3\">Scegli font compatibili</h3><p class=\"text-mid\">Il generatore offre cinque font sicuri: Arial, Verdana, Tahoma, Trebuchet MS e Georgia. Evita font decorativi — verranno sostituiti con un font predefinito sul dispositivo del destinatario.</p><h3 class=\"h5 mt-6 mb-3\">Ospita le immagini sul tuo dominio</h3><p class=\"text-mid\">Se aggiungi un logo o un avatar, usa un'immagine ospitata sul tuo sito o su un CDN affidabile. Evita link accorciati, Google Drive o Dropbox.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Salvataggio automatico e ripristino",
+      "html": "<p class=\"text-mid\">Il creatore di firme salva automaticamente il tuo lavoro nella memoria del browser (localStorage). Quando aggiorni la pagina o torni più tardi, tutti i dati, colori e impostazioni sono ancora presenti.</p><h3 class=\"h5 mt-6 mb-3\">Ripristinare</h3><p class=\"text-mid\">Sotto l'anteprima, il pulsante <strong>Ripristina aspetto</strong> riporta tutto ai valori predefiniti dopo conferma. L'azione è irreversibile.</p><h3 class=\"h5 mt-6 mb-3\">Esportare e importare la configurazione</h3><p class=\"text-mid\">I pulsanti <strong>Esporta impostazioni</strong> e <strong>Importa impostazioni</strong> permettono di salvare e ripristinare la configurazione completa tramite un file JSON. Utile per trasferire la firma tra computer o condividerla con colleghi.</p>"
     },
     {
       "type": "gap",
@@ -255,23 +229,23 @@
     {
       "type": "sectionSteps",
       "title": "Come copiare la firma in Gmail o Outlook",
-      "description": "Quando la firma è pronta, bastano pochi passaggi per aggiungerla al tuo client di posta:",
+      "description": "Quando il piè di pagina è pronto, segui questi tre passaggi:",
       "grid": "three",
       "items": [
         {
           "icon": "RiClipboardLine",
           "title": "1. Copia il codice",
-          "description": "Il pulsante Copia firma (Gmail / Outlook) copia la firma negli appunti in HTML formattato, pronto da incollare."
+          "description": "Clicca su Copia firma (Gmail / Outlook). La firma viene copiata come HTML formattato negli appunti."
         },
         {
           "icon": "RiSettings3Line",
           "title": "2. Apri le impostazioni firma",
-          "description": "In Gmail: Impostazioni > Visualizza tutte le impostazioni > Firma. In Outlook: File > Opzioni > Posta > Firme."
+          "description": "In Gmail: Impostazioni → Visualizza tutte le impostazioni → Firma. In Outlook: File → Opzioni → Posta → Firme."
         },
         {
           "icon": "RiSaveLine",
           "title": "3. Incolla e salva",
-          "description": "Nel campo firma, usa Ctrl+V (Windows) o Cmd+V (Mac). La firma apparirà con tutti i colori e la formattazione. Salva le modifiche."
+          "description": "Nel campo firma premi Ctrl + V (Windows) o Cmd + V (Mac). La firma appare con tutti i colori e la formattazione. Salva le modifiche."
         }
       ]
     },
@@ -280,30 +254,39 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Anteprima e opzioni di esportazione",
+      "html": "<p class=\"text-mid\">Il pannello di anteprima si trova a destra dell'editor e si aggiorna automaticamente a ogni modifica. È fissato allo schermo (sticky) e rimane visibile anche scorrendo le opzioni.</p><h3 class=\"h5 mt-6 mb-3\">Sfondi di anteprima</h3><p class=\"text-mid\">Sopra l'anteprima ci sono tre pulsanti: <strong>Chiaro</strong> (grigio di default), <strong>Scuro</strong> (per verificare la leggibilità) e <strong>Scacchiera</strong> (mostra trasparenza e bordi).</p><h3 class=\"h5 mt-6 mb-3\">Pulsanti d'azione</h3><ul class=\"text-mid mt-3 list-disc space-y-2 pl-6\"><li><strong>Copia firma (Gmail / Outlook)</strong> — copia come HTML formattato.</li><li><strong>Copia codice HTML</strong> — copia il codice sorgente.</li><li><strong>Scarica come HTML</strong> — salva come file .html.</li><li><strong>Mostra codice HTML</strong> — apre una finestra con il codice sorgente.</li><li><strong>Esporta impostazioni</strong> — salva la configurazione come file JSON.</li><li><strong>Importa impostazioni</strong> — carica una configurazione da un file JSON.</li><li><strong>Ripristina aspetto</strong> — riporta tutto ai valori predefiniti.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
-      "title": "Per chi è utile il generatore di firma?",
+      "title": "A chi è destinato questo generatore di firma e-mail?",
       "description": "Lo strumento è utile per chiunque invii e-mail professionali:",
       "grid": "two",
       "items": [
         {
           "icon": "RiBriefcaseLine",
-          "title": "Imprenditori e freelance",
-          "description": "Una firma professionale in ogni messaggio senza ricorrere a un designer."
+          "title": "Imprenditori e freelancer",
+          "description": "Firma professionale in ogni messaggio, senza bisogno di un designer né di competenze tecniche."
         },
         {
           "icon": "RiTeamLine",
           "title": "Team aziendali",
-          "description": "Ogni dipendente crea la propria firma nello stesso stile. Identità coerente in tutta l'azienda."
+          "description": "Ogni collaboratore crea la propria firma nello stesso stile. Esporta la configurazione JSON per uniformare tutto il team."
         },
         {
           "icon": "RiHandCoinLine",
           "title": "Commerciali",
-          "description": "Un pulsante CTA con link a un calendario o un'offerta aumenta le possibilità di ottenere un appuntamento."
+          "description": "Un pulsante CTA con link al calendario o al catalogo trasforma ogni e-mail in un'opportunità di vendita."
         },
         {
           "icon": "RiScales3Line",
           "title": "Avvocati, commercialisti, medici",
-          "description": "Possibilità di aggiungere un avviso legale, numero di licenza, P.IVA o altri dati richiesti dal settore."
+          "description": "Aggiungi disclaimer, numero di iscrizione all'albo, P.IVA o altri dati richiesti dalla tua professione."
         }
       ]
     },
@@ -313,23 +296,23 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Cosa rende speciale questo generatore?",
+      "title": "Cosa rende speciale questo creatore di firme?",
       "grid": "three",
       "items": [
         {
           "icon": "RiInfinityLine",
           "title": "Otto layout",
-          "description": "Standard, Barra superiore, Etichette a sinistra, Centrato, Compatto, Due colonne, Minimalista e Barra inferiore."
+          "description": "Standard, Barra superiore, Label a sinistra, Centrato, Compatto, Due colonne, Minimalista e Barra inferiore."
         },
         {
           "icon": "RiUserLine",
-          "title": "Salvataggio automatico nel browser",
-          "description": "Ogni modifica viene salvata automaticamente nella memoria del browser. Dopo l'aggiornamento, la firma resta disponibile."
+          "title": "Salvataggio automatico",
+          "description": "Ogni modifica è salvata automaticamente nel browser. Dopo il refresh, la firma è ancora lì."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Esportare e importare la configurazione",
-          "description": "La configurazione completa può essere esportata in file JSON e condivisa con i colleghi."
+          "title": "Esportazione e importazione",
+          "description": "Salva la configurazione completa come file JSON e condividila con i colleghi."
         },
         {
           "icon": "RiAppsLine",
@@ -339,27 +322,27 @@
         {
           "icon": "RiPaletteLine",
           "title": "Personalizzazione avanzata",
-          "description": "Forma e dimensione dell'avatar, stile linea, colori e dimensioni testo individuali."
+          "description": "Forma e dimensione avatar, stile linea, colori e dimensioni individuali, bordo firma."
         },
         {
           "icon": "RiFileCodeLine",
           "title": "Molteplici opzioni di esportazione",
-          "description": "Copiare l'HTML, scaricare il file, anteprima del codice sorgente, esportazione/importazione della configurazione JSON."
+          "description": "Copia HTML, scarica file, visualizza codice sorgente, esporta/importa configurazione JSON."
         },
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy",
-          "description": "I dati non vengono inviati a nessun server. Il generatore funziona interamente nel browser."
+          "title": "Privacy totale",
+          "description": "I tuoi dati non escono dal browser. Il generatore funziona interamente sul tuo dispositivo."
         },
         {
           "icon": "RiMailCheckLine",
-          "title": "compatibilità",
+          "title": "Compatibilità",
           "description": "Il codice HTML generato funziona in Gmail, Outlook, Apple Mail e Thunderbird."
         },
         {
           "icon": "RiEyeLine",
           "title": "Anteprima in tempo reale",
-          "description": "Ogni modifica è visibile istantaneamente su sfondo chiaro, scuro o a scacchi."
+          "description": "Ogni modifica è visibile istantaneamente su sfondo chiaro, scuro o a scacchiera."
         }
       ]
     },
@@ -374,48 +357,58 @@
       "items": [
         {
           "question": "Come inserire la firma in Gmail?",
-          "answer": "Clicca su Copia firma (Gmail / Outlook), apri Gmail > Impostazioni > Tutte le impostazioni > Firma, poi incolla con Ctrl+V (o Cmd+V). La formattazione viene automaticamente conservata: colori, link e icone social restano intatti.",
-          "answerSchemaText": "Copiare la firma, Gmail > Impostazioni > Firma, Ctrl+V."
+          "answer": "Clicca su Copia firma (Gmail / Outlook). Apri Gmail → Impostazioni → Visualizza tutte le impostazioni → Firma. Incolla con Ctrl + V (o Cmd + V). Colori, link e icone vengono mantenuti automaticamente.",
+          "answerSchemaText": "Copia la firma, Gmail → Impostazioni → Firma, Ctrl+V."
         },
         {
           "question": "La firma funziona in Outlook?",
-          "answer": "Sì. In Outlook Desktop: File > Opzioni > Posta > Firme > Incolla. In Outlook Web (OWA): Impostazioni > Posta > Composizione e risposta > Firma. Entrambe le varianti supportano il testo formattato.",
-          "answerSchemaText": "Sì. Desktop: File > Opzioni > Firme. Web: Impostazioni > Posta > Firma."
+          "answer": "Sì. In Outlook Desktop: File → Opzioni → Posta → Firme → Incolla. In Outlook Web (OWA): Impostazioni → Posta → Composizione e risposta → Firma. Entrambe le varianti supportano testo formattato.",
+          "answerSchemaText": "Sì. Desktop: File → Opzioni → Firme. Web: Impostazioni → Posta → Firma."
         },
         {
-          "question": "Quali layout sono disponibili?",
-          "answer": "8 layout: Standard, Barra superiore, Etichette a sinistra, Centrato, Compatto, Due colonne, Minimalista e Barra inferiore. Ogni layout organizza diversamente i dati, la foto profilo e le icone social.",
-          "answerSchemaText": "8 layout: Standard, Barra sup., Etichette sx, Centrato, Compatto, Due colonne, Minimalista, Barra inf."
+          "question": "Quali dati legali devo includere nella firma?",
+          "answer": "In Italia, le aziende devono indicare la Partita IVA, il Codice Fiscale (se diverso), il numero REA, la sede legale e il capitale sociale (per S.r.l. e S.p.A.). È consigliato anche l'indirizzo PEC. Consulta la sezione sugli obblighi legali in questa pagina e usa il campo Dati legali del generatore.",
+          "answerSchemaText": "P.IVA, C.F., REA, sede legale, capitale sociale. Consigliato anche PEC. Usare il campo Dati legali."
         },
         {
-          "question": "Posso aggiungere link social?",
-          "answer": "Sì. Puoi aggiungere link a LinkedIn, Instagram, Facebook, TikTok, YouTube, X (Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram e Pinterest. Solo le piattaforme con un URL inserito appaiono nella firma.",
+          "question": "Che cos'è la PEC e devo includerla?",
+          "answer": "La PEC (Posta Elettronica Certificata) è un sistema italiano di e-mail con valore legale. Tutte le imprese e i professionisti iscritti a un ordine devono averne una. Includerla nella firma non è obbligatorio, ma è una buona pratica per facilitare le comunicazioni ufficiali.",
+          "answerSchemaText": "E-mail certificata con valore legale. Obbligatoria per imprese e professionisti. Buona pratica includerla nella firma."
+        },
+        {
+          "question": "Posso aggiungere link ai social media?",
+          "answer": "Sì. Il generatore supporta dodici piattaforme: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram e Pinterest. Solo le piattaforme con URL appaiono nella firma.",
           "answerSchemaText": "12 piattaforme: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest."
         },
         {
-          "question": "Posso aggiungere una foto profilo o un logo?",
-          "answer": "Sì. Puoi indicare un URL immagine per la tua foto profilo e/o il logo aziendale. L'immagine appare nella firma. Usa un URL accessibile pubblicamente (es. dal tuo sito web).",
-          "answerSchemaText": "Sì. Foto profilo e logo tramite URL."
+          "question": "I miei dati vengono salvati?",
+          "answer": "Tutti i dati restano nella memoria del browser (localStorage). Nulla viene inviato a un server. Puoi esportare e importare le impostazioni per trasferire la firma tra dispositivi.",
+          "answerSchemaText": "Localmente nel browser. Nessun invio al server. Esportazione/importazione possibile."
         },
         {
-          "question": "I miei dati vengono archiviati?",
-          "answer": "Tutti i dati vengono memorizzati localmente nel tuo browser (localStorage). Nulla viene inviato a un server. Puoi esportare e importare le impostazioni per trasferire la firma da un dispositivo all'altro.",
-          "answerSchemaText": "Localmente nel browser (localStorage). Nessun invio server. Esportazione/importazione possibile."
-        },
-        {
-          "question": "Cos'e un link CTA nella firma?",
-          "answer": "Un link CTA (Call to Action) è un pulsante o link opzionale in fondo alla firma, ad es. Prenota consulenza, Richiedi preventivo o Visualizza portfolio. Reindirizza il destinatario direttamente a una pagina di tua scelta.",
-          "answerSchemaText": "Un link di azione opzionale come Prenota consulenza in fondo alla firma."
-        },
-        {
-          "question": "Posso aggiungere un avviso legale?",
-          "answer": "Sì. Lo strumento include un campo per un avviso legale (disclaimer). Il testo viene mostrato in dimensioni ridotte sotto la firma, ad es. avviso di riservatezza o informativa GDPR.",
-          "answerSchemaText": "Sì. Campo dedicato per disclaimer/GDPR sotto la firma."
-        },
-        {
-          "question": "Il pulsante di copia e disattivato - perche?",
-          "answer": "Per copiare la firma, compila almeno due campi: nome e indirizzo e-mail. Verifica che entrambi i campi contengano dati.",
+          "question": "Il pulsante di copia è inattivo — perché?",
+          "answer": "Per copiare la firma devono essere compilati almeno due campi: nome e indirizzo e-mail.",
           "answerSchemaText": "Nome e indirizzo e-mail devono essere compilati."
+        },
+        {
+          "question": "Come rendere la firma adatta ai dispositivi mobili?",
+          "answer": "Mantieni la firma breve (da quattro a sette righe), usa una dimensione di testo standard (14 px) e scegli un layout adatto a schermi stretti. Standard e Compatto sono le migliori opzioni.",
+          "answerSchemaText": "Breve, 14 px, layout Standard o Compatto."
+        },
+        {
+          "question": "Dove ospitare il logo o la foto?",
+          "answer": "Sul tuo sito web o un CDN affidabile. Evita Google Drive, Dropbox o link accorciati. L'immagine deve essere quadrata, almeno 120 × 120 px, in formato JPG, PNG o WebP.",
+          "answerSchemaText": "Sul tuo sito o un CDN. Quadrata, min. 120 × 120 px, JPG/PNG/WebP."
+        },
+        {
+          "question": "Come esportare o importare le impostazioni?",
+          "answer": "Sotto l'anteprima trovi i pulsanti Esporta impostazioni e Importa impostazioni. Il primo salva la configurazione completa come file JSON. Il secondo la carica e applica automaticamente.",
+          "answerSchemaText": "Esportare come JSON, importare carica e applica la configurazione."
+        },
+        {
+          "question": "Posso modificare forma e dimensione dell'avatar?",
+          "answer": "Sì. Dopo aver incollato un URL immagine nella scheda Dati, appaiono le opzioni: forma (rotonda, arrotondata, quadrata) e dimensione (piccola — 40 px, media — 56 px, grande — 72 px).",
+          "answerSchemaText": "Sì. Forma (rotonda, arrotondata, quadrata) e dimensione (40, 56, 72 px)."
         }
       ]
     },
@@ -426,10 +419,10 @@
     {
       "type": "contactForm",
       "title": "Aiutaci a migliorare i nostri strumenti",
-      "description": "Hai un'idea per una nuova funzionalità, hai trovato un bug o vuoi suggerire un altro strumento che renderebbe il tuo lavoro più facile? Scrivici – rispondiamo entro 24 ore.",
+      "description": "Hai un'idea per una nuova funzionalità, hai trovato un bug o vuoi suggerire un altro strumento? Scrivici — rispondiamo entro 24 ore.",
       "imageSrc": "/assets/tools/free-html-email-signature-generator/generatore-di-firma-email-gratuito-it.webp",
-      "imageAlt": "Generatore di firma email – Arteon",
-      "defaultSubject": "Feedback: Generatore di firma email"
+      "imageAlt": "Generatore di firma e-mail – Arteon",
+      "defaultSubject": "Feedback: Generatore di firma e-mail"
     },
     {
       "type": "gap",
