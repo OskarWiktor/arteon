@@ -2,13 +2,13 @@
   "toolKey": "emailSignature",
   "locale": "ro",
   "metadata": {
-    "title": "Generator gratuit semnătură e-mail – HTML pentru Gmail",
-    "description": "Creați o semnătură profesională HTML pentru e-mail fără programare. Adăugați datele de contact, logo și rețele sociale, apoi copiați codul în Gmail sau Outlook.",
+    "title": "Generator gratuit de semnătură e-mail HTML – creează semnătură",
+    "description": "Creați o semnătură e-mail HTML fără autentificare și înregistrare. Personalizare completă, machete gata făcute, previzualizare live și cod HTML gata.",
     "ogImage": "/assets/tools/free-html-email-signature-generator/generator-semnatura-email-gratuit-ro.webp",
     "path": "/ro/instrumente/generator-semnatura-email-gratuit"
   },
   "hero": {
-    "title": "Creați o semnătură e-mail HTML profesională",
+    "title": "Creează o semnătură e-mail HTML – copiază în Gmail sau Outlook",
     "description": "Construiți o semnătură e-mail profesională în câteva minute. Introduceți datele, alegeți culorile și copiați codul HTML gata în Gmail, Outlook sau orice client de e-mail.",
     "backgroundImage": "/assets/tools/free-html-email-signature-generator/generator-semnatura-email-gratuit-ro.webp"
   },
@@ -24,27 +24,27 @@
   },
   "schemas": {
     "software": {
-      "name": "Generator gratuit de semnătură e-mail",
+      "name": "Generator de semnătură e-mail HTML – creator de semnătură",
       "alternateName": ["Generator de semnătură e-mail HTML", "Creator de semnătură e-mail", "Generator de subsol e-mail"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Generator gratuit de semnătură e-mail HTML. Adăugați date de contact, link CTA și profiluri social media, apoi copiați codul gata în Gmail, Outlook și alte clienți de e-mail.",
+      "description": "Generator gratuit de semnătură e-mail HTML. Adăugați date de contact, link CTA și profiluri de rețele sociale, apoi copiați codul de semnătură gata în Gmail, Outlook și alți clienți de e-mail.",
       "featureList": [
         "Date de contact (nume, funcție, companie)",
-        "Telefon, e-mail și URL website",
-        "Logo sau poză de profil cu opțiuni de formă și dimensiune",
-        "Pictograme social media (12 platforme: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
+        "Telefon, email și URL site web",
+        "Logo sau fotografie de profil cu opțiuni de formă și dimensiune",
+        "Pictograme rețele sociale (12 platforme: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
         "Culori personalizabile (text, accent, fundal)",
         "Stil de text individual pentru fiecare element al semnăturii",
-        "Buton CTA cu text și link personalizat",
+        "Buton CTA cu text și link personalizate",
         "Stilizare linie separatoare (stil, grosime, culoare)",
-        "Previzualizare live cu comutare fundal (deschis, întunecat, tablă de șah)",
+        "Previzualizare live a semnăturii cu schimbare de fundal (deschis, întunecat, tablă de șah)",
         "Previzualizare cod sursă HTML în modal",
         "Copiere cod HTML în clipboard",
         "Descărcare semnătură ca fișier HTML",
         "Export și import configurație ca fișier JSON",
         "Compatibil cu Gmail, Outlook, Apple Mail",
-        "Instrument gratuit, fără autentificare"
+        "Instrument gratuit fără înregistrare"
       ]
     },
     "howTo": {

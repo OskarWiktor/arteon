@@ -2,13 +2,13 @@
   "toolKey": "favicon",
   "locale": "de",
   "metadata": {
-    "title": "Favicon-Generator kostenlos – favicon.ico aus einem Bild",
-    "description": "Erstellen Sie favicon.ico und alle erforderlichen Favicon-Größen aus einem einzigen Bild. Browser- und Lighthouse-konform. Lokale Verarbeitung im Browser.",
+    "title": "Kostenloser Website-Icon-Generator – favicon.ico erstellen",
+    "description": "Erstellen Sie ein komplettes favicon.ico-Set für Ihre Website aus einem einzigen Bild. Alle erforderlichen Größen ohne Anmeldung und Registrierung.",
     "ogImage": "/assets/tools/favicon-generator/kostenloser-favicon-generator-de.webp",
     "path": "/de/werkzeuge/kostenloser-favicon-generator"
   },
   "hero": {
-    "title": "Favicon-Generator",
+    "title": "Favicon.ico für Ihre Website aus einem einzigen Bild erstellen",
     "description": "Erstellen Sie aus einem einzigen Bild favicon.ico und PNG-Symbole in allen erforderlichen Größen. Konform mit Browser- und Lighthouse-Anforderungen - alles läuft lokal in Ihrem Browser.",
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
@@ -24,19 +24,24 @@
   },
   "schemas": {
     "software": {
-      "name": "Favicon-Generator — favicon.ico und PNG-Symbole",
+      "name": "Favicon.ico-Generator für Websites",
       "alternateName": ["Favicon erstellen kostenlos", "favicon.ico Generator", "Apple Touch Icon Generator", "PWA-Icons erstellen", "Favicon aus Bild generieren", "Website-Symbol erstellen"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "FaviconGenerator",
-      "description": "Kostenloser Favicon-Generator. favicon.ico und PNG-Symbole 16x16, 32x32, 180x180, 192x192 und 512x512. site.webmanifest optional. Lighthouse-konform.",
+      "description": "Kostenloser Favicon-Generator. Erstellen Sie favicon.ico und PNG-Icons 16x16, 32x32, 180x180, 192x192 und 512x512 ohne Limits und ohne Dateien an einen Server zu senden. Verarbeitung erfolgt lokal im Browser.",
       "featureList": [
-        "favicon.ico (16x16 + 32x32 kombiniert)",
-        "PNG-Symbole: 16x16, 32x32, 180x180, 192x192, 512x512",
-        "Apple Touch Icon (180x180)",
-        "Android/PWA-Symbole (192x192, 512x512)",
-        "Optionaler site.webmanifest",
-        "ZIP-Download aller Dateien",
-        "Lokale Verarbeitung im Browser"
+        "Generierung von favicon.ico (16x16, 32x32, 48x48 in einer Datei)",
+        "Generierung von PNG-Icons 16x16 und 32x32",
+        "Generierung von apple-touch-icon 180x180",
+        "Generierung von PWA-Icons 192x192 und 512x512",
+        "Unterstützung von PNG-, JPG- und SVG-Quellbildern",
+        "Konfiguration der Hintergrundfarbe",
+        "Generierung der manifest.json-Datei für PWA",
+        "Alle Dateien als ZIP herunterladen",
+        "Einzelne Dateien herunterladen",
+        "Lighthouse-konform",
+        "Verarbeitung im Browser (Dateien werden nicht an Server gesendet)",
+        "Kostenloses Tool ohne Anmeldung"
       ]
     },
     "howTo": {

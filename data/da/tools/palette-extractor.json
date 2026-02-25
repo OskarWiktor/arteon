@@ -2,13 +2,13 @@
   "toolKey": "paletteExtractor",
   "locale": "da",
   "metadata": {
-    "title": "Gratis farveudtrækker fra billede – Palet fra ethvert foto",
-    "description": "Upload et foto eller logo og udtræk op til 12 dominerende farver med HEX- og RGB-koder. Velegnet til UI-design, branding og indhold til sociale medier.",
+    "title": "Gratis farveudtrækker fra billede – farvepalet fra foto",
+    "description": "Upload et foto og værktøjet genererer en palet af dominerende farver. Færdige HEX- og RGB-koder, fuld privatliv og ingen begrænsninger.",
     "ogImage": "/assets/tools/image-color-extractor/farveudtraekker-fra-billede-da.webp",
     "path": "/da/vaerktojer/farveudtraekker-fra-billede"
   },
   "hero": {
-    "title": "Farveudtrækker fra billede – hent palet fra ethvert foto",
+    "title": "Udtræk farver fra et billede – få en palet med HEX-koder",
     "description": "Upload et foto, logo eller grafik, og værktøjet udtrækker op til 12 dominerende farver med HEX- og RGB-koder. Analysen sker lokalt i din browser.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Farveudtrækker fra billede – gratis paletgenerator",
+      "name": "Farveudtrækker fra billede – farvepalet fra foto",
       "alternateName": ["Udtræk farvepalet fra foto eller logo"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",

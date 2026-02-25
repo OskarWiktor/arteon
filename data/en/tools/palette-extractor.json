@@ -2,13 +2,13 @@
   "toolKey": "paletteExtractor",
   "locale": "en",
   "metadata": {
-    "title": "Free Image Color Extractor – Palette From Any Photo",
-    "description": "Upload a photo or logo and extract up to 12 dominant colors with HEX and RGB codes. Perfect for UI, branding and social media. No signup, no limits.",
+    "title": "Free Image Color Extractor – Get Color Palette From Photo",
+    "description": "Upload a photo and the tool will generate a palette of dominant colors. Ready HEX and RGB codes, full privacy and no limits.",
     "ogImage": "/assets/tools/image-color-extractor/image-color-extractor-en.webp",
     "path": "/en/tools/image-color-extractor"
   },
   "hero": {
-    "title": "Image Color Extractor – Get a Palette From Any Photo",
+    "title": "Extract colors from any image – get a palette with HEX codes",
     "description": "Upload a photo, logo, or graphic, and the tool will extract up to 12 dominant colors with HEX and RGB codes. Analysis happens locally in your browser.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Image color extractor — get a palette from any photo",
+      "name": "Image Color Extractor – Color Palette From Photo",
       "alternateName": ["Extract color palette from a photo or logo"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
-      "description": "Free image color extractor. Upload a photo, logo, or graphic and get a palette of up to 12 dominant colors with HEX and RGB codes. Processing happens in the browser - files are not sent to a server.",
+      "description": "Free image color extractor. Upload a photo, logo, or graphic and get a palette of up to 12 dominant colors with HEX and RGB codes. Processing happens in the browser – files are not sent to a server.",
       "featureList": [
         "Automatic extraction of up to 12 dominant colors",
         "Analysis of photos, logos, and vector graphics",
@@ -36,7 +36,7 @@
         "Copy color code to clipboard",
         "Support for PNG, JPG, and SVG files",
         "Ignores transparent pixels in PNG files",
-        "Local processing in the browser - image is not sent to a server"
+        "Local processing in the browser – image is not sent to a server"
       ]
     },
     "howTo": {

@@ -2,13 +2,13 @@
   "toolKey": "wordCounter",
   "locale": "sv",
   "metadata": {
-    "title": "Gratis ord- & teckenräknare online – Räkna, transformera & analysera",
-    "description": "Gratis ord-, tecken-, menings- och styckeräknare. Ändra versaler, ta bort dubbletter, sortera rader. 8 mätvärden och 10 textverktyg.",
+    "title": "Ord-, tecken- och läsetidsräknare med textformatering",
+    "description": "Gratis räknare för ord, tecken, meningar, stycken och lästid med versalkonverterare. Kontrollera textlängden och ändra bokstäver.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-och-teckenraknare-sv.webp",
     "path": "/sv/verktyg/ord-och-teckenraknare"
   },
   "hero": {
-    "title": "Ord- och teckenräknare med textformateringsverktyg",
+    "title": "Räkna ord och tecken – kontrollera lästid och formatera text",
     "description": "Klistra in din text och verktyget räknar ord, tecken, meningar, stycken, unika ord och lästid. Ändra versaler, ta bort dubbletter eller sortera rader",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis ord- och teckenräknare med textverktyg",
+      "name": "Ord-, tecken- och läsetidsräknare med textformatering",
       "alternateName": [
         "Online word counter",
         "Character counter with and without spaces",
@@ -36,21 +36,21 @@
         "Sort text lines alphabetically"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
+      "description": "Gratis ord- och teckenräknare med textformateringsverktyg. Räknar ord, tecken, meningar, stycken, unika ord och lästid. Erbjuder 10 verktyg: versalkonvertering, borttagning av mellanslag, tomma rader, dubbletter och sortering.",
       "featureList": [
-        "Word count",
-        "Character count with and without spaces",
-        "Sentence and paragraph count",
-        "Unique word count",
-        "Average word length",
-        "Estimated reading time",
-        "Convert to uppercase or lowercase",
-        "Convert to sentence case or title case",
-        "Toggle letter case",
-        "Remove extra spaces",
-        "Remove empty lines and duplicates",
-        "Sort lines A-Z and Z-A",
-        "Copy text to clipboard"
+        "Räkning av ord",
+        "Räkning av tecken med och utan mellanslag",
+        "Räkning av meningar och stycken",
+        "Räkning av unika ord",
+        "Genomsnittlig ordlängd",
+        "Uppskattad lästid",
+        "Konvertera till versaler eller gemener",
+        "Konvertera till menings- eller titelstil",
+        "Invertera versaler/gemener",
+        "Ta bort överflödiga mellanslag",
+        "Ta bort tomma rader och dubbletter",
+        "Sortera rader A–Z och Z–A",
+        "Kopiera text till urklipp"
       ]
     },
     "howTo": {

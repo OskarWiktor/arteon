@@ -2,13 +2,13 @@
   "toolKey": "qrCode",
   "locale": "nl",
   "metadata": {
-    "title": "Gratis QR-code generator – PNG & SVG, zonder registratie",
-    "description": "Maak QR-codes voor websites, vCards, menu's of flyers in seconden. Exporteer als PNG & SVG. Pas kleuren en formaat aan. Zonder registratie, zonder limieten.",
+    "title": "Gratis QR-codegenerator zonder login en registratie",
+    "description": "Genereer een QR-code voor uw website, vCard-visitekaartje of drukwerk. Plak een link, kies de codekleur, grootte en download de QR-code in PNG en SVG.",
     "ogImage": "/assets/tools/qr-code-generator/gratis-qr-code-generator-nl.webp",
     "path": "/nl/tools/gratis-qr-code-generator"
   },
   "hero": {
-    "title": "QR-code generator – Gratis, zonder registratie",
+    "title": "Maak een QR-code voor website, vCard of drukwerk – PNG & SVG",
     "description": "Maak een QR-code voor een website, vCard-visitekaartje, e-mail, telefoon of tekst. Pas kleuren, formaat en foutcorrectieniveau aan en download een kant-en-klaar PNG- of SVG-bestand.",
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis QR-code generator — PNG en SVG",
+      "name": "QR-codegenerator zonder login en registratie",
       "alternateName": [
         "QR-code maker gratis",
         "vCard QR-code generator",
@@ -38,18 +38,18 @@
       ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "QRCodeGenerator",
-      "description": "Maak een QR-code voor een website, visitekaartje, menu of flyer. Kies het gegevenstype, pas kleuren en formaat aan en download een PNG- of SVG-bestand.",
+      "description": "Maak een QR-code voor een website, visitekaartje, menu of flyer. Kies het gegevenstype, pas kleuren en grootte aan en download het PNG- of SVG-bestand.",
       "featureList": [
         "QR-code voor URL (website)",
         "QR-code voor platte tekst",
-        "vCard QR-code (contactgegevens)",
+        "vCard-QR-code (contactgegevens)",
         "QR-code voor e-mail (adres, onderwerp, inhoud)",
         "QR-code voor telefoonnummer",
         "Aanpasbare code- en achtergrondkleuren",
-        "Codeformaat selectie in pixels",
+        "Keuze van codegrootte in pixels",
         "Export naar PNG-formaat (raster)",
         "Export naar SVG-formaat (vector)",
-        "Live code-voorbeeld",
+        "Live codevoorbeeld",
         "Lokale verwerking in de browser",
         "Reed-Solomon foutcorrectie"
       ]

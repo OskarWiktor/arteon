@@ -2,13 +2,13 @@
   "toolKey": "qrCode",
   "locale": "no",
   "metadata": {
-    "title": "Gratis QR-kode-generator – PNG og SVG, uten registrering",
-    "description": "Opprett en QR-kode for en nettside, vCard-visittkort, meny eller flyer på noen sekunder. Eksporter til PNG og SVG. Tilpass farger, størrelse og feilkorrigering.",
+    "title": "Gratis QR-kodegenerator uten innlogging og registrering",
+    "description": "Generer en QR-kode for nettsiden din, vCard-visittkort eller trykk. Lim inn en lenke, velg kodefarge, størrelse og last ned QR-koden i PNG og SVG.",
     "ogImage": "/assets/tools/qr-code-generator/gratis-qr-kode-generator-no.webp",
     "path": "/no/verktoy/gratis-qr-kode-generator"
   },
   "hero": {
-    "title": "QR-kode-generator – gratis, uten registrering",
+    "title": "Lag en QR-kode for nettside, vCard eller trykk – PNG og SVG",
     "description": "Opprett en QR-kode for en nettside, vCard-visittkort, e-post, telefon eller tekst. Tilpass farger, størrelse og feilkorreksjonsnivå, og last deretter ned en ferdig PNG- eller SVG-fil.",
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
@@ -24,24 +24,24 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis QR-kode-generator",
+      "name": "QR-kodegenerator uten innlogging og registrering",
       "alternateName": ["QR-kodeskaper", "vCard QR-kodegenerator", "Gratis QR-generator", "QR-kodeverktøy"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "QRCodeGenerator",
-      "description": "Opprett en QR-kode for en nettside, visittkort, meny eller flyer. Velg datatype, tilpass farger og størrelse, og last deretter ned en PNG- eller SVG-fil.",
+      "description": "Lag en QR-kode for nettside, visittkort, meny eller flygeblad. Velg datatype, tilpass farger og størrelse, last deretter ned PNG- eller SVG-fil.",
       "featureList": [
-        "QR-kode for URL (nettsider)",
+        "QR-kode for URL (nettside)",
         "QR-kode for vanlig tekst",
-        "QR-kode vCard (kontaktinformasjon)",
+        "QR-kode vCard (kontaktopplysninger)",
         "QR-kode for e-post (adresse, emne, innhold)",
         "QR-kode for telefonnummer",
         "Tilpassbare farger for kode og bakgrunn",
         "Valg av kodestørrelse i piksler",
         "Eksport til PNG-format (raster)",
         "Eksport til SVG-format (vektor)",
-        "Direktevisning av koden",
+        "Live forhåndsvisning av koden",
         "Lokal behandling i nettleseren",
-        "Reed-Solomon feilkorreksjon"
+        "Reed-Solomon feilretting"
       ]
     },
     "howTo": {

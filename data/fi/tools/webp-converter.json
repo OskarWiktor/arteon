@@ -2,13 +2,13 @@
   "toolKey": "jpgToWebp",
   "locale": "fi",
   "metadata": {
-    "title": "Ilmainen JPG/PNG–WebP-muunnin – Nopea, ilman rajoituksia",
-    "description": "Pienennä kuvakokoa laadun heikkenemättä. Muunna JPG ja PNG WebP-muotoon ja nopeuta verkkosivustoasi. Ilman rekisteröitymistä, toimii selaimessa.",
+    "title": "Ilmainen JPG- ja PNG-WebP-muunnin ilman tiedostorajoituksia",
+    "description": "Muunna JPG tai PNG WebP-muotoon ja pienennä kuvakokoa laadun kärsimättä. Täysi yksityisyys, ei rajoituksia eikä rekisteröitymistä.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/jpg-png-webp-muunnin"
   },
   "hero": {
-    "title": "Muunna kuvat WebP-muotoon – pienennä kokoa laadun heikkenemättä",
+    "title": "Muunna JPG ja PNG WebP-muotoon – pienennä kokoa laadun kärsimättä",
     "description": "Lataa kuvia JPG- tai PNG-muodossa, ja työkalu muuntaa ne WebP-muotoon. Pienemmät tiedostot, sama laatu, nopeampi verkkosivusto.",
     "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
@@ -24,21 +24,20 @@
   },
   "schemas": {
     "software": {
-      "name": "Ilmainen JPG/PNG WebP-muunnin",
+      "name": "JPG/PNG-WebP-muunnin – ei tiedostorajoituksia",
       "alternateName": ["Kuvamuunnin WebP-muotoon", "JPG WebP-muunnin", "PNG WebP-muunnin"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Ilmainen JPG- ja PNG-muunnin WebP-muotoon. Pienennä kuvakokoa jopa 90 % ilman näkyvää laadun heikkenemistä. Kaikki käsittely tapahtuu selaimessa – tiedostoja ei lähetetä palvelimelle.",
+      "description": "Ilmainen JPG- ja PNG-WebP-muunnin. Pienennä kuvakokoa jopa 35 %, paranna sivun latausnopeutta ja Core Web Vitals -tuloksia. Muunnos tapahtuu selaimessa – tiedostoja ei lähetetä palvelimelle.",
       "featureList": [
-        "JPG:n muuntaminen WebP-muotoon",
-        "PNG:n muuntaminen WebP-muotoon",
-        "Useiden kuvien erämuuntaminen samanaikaisesti",
-        "Laadunsäädin (0–100)",
-        "Alkuperäisen ja WebP-koon vertailu",
-        "Lataus vedä-ja-pudota-toiminnolla tai tiedoston valinnalla",
-        "Esikatselu ennen ja jälkeen muuntamisen",
-        "Jokaisen kuvan lataus tai kaikki ZIP-tiedostona",
-        "Paikallinen käsittely selaimessa"
+        "JPG-muunnos WebP-muotoon",
+        "PNG-muunnos WebP-muotoon",
+        "Laatutason säätö (60–95 %)",
+        "Useiden tiedostojen erämuunnos",
+        "Koon esikatselu ennen ja jälkeen muunnoksen",
+        "Yksittäisten tiedostojen lataus",
+        "Kaikkien tiedostojen lataus ZIP-pakettina",
+        "Paikallinen käsittely selaimessa (tiedostoja ei lähetetä palvelimelle)"
       ]
     },
     "howTo": {

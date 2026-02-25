@@ -2,13 +2,13 @@
   "toolKey": "metaCounter",
   "locale": "ro",
   "metadata": {
-    "title": "Verificator gratuit meta title și description – Pixeli",
-    "description": "Verificați lățimea în pixeli a meta title și meta description cu previzualizare Google în timp real. Optimizați fragmentele pentru motoarele de căutare.",
+    "title": "Contor gratuit al lungimii meta titlu și descriere în pixeli",
+    "description": "Verificați dacă meta titlul și descrierea au lungimea corectă conform regulilor Google. Contor cu previzualizare live și sfaturi.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/verificator-meta-titlu-si-descriere-ro.webp",
     "path": "/ro/instrumente/verificator-lungime-meta-title-si-description"
   },
   "hero": {
-    "title": "Verificați lungimea titlului și descrierii paginii în Google",
+    "title": "Verifică lungimea meta titlului și descrierii – previzualizare Google",
     "description": "Introduceți un titlu și o descriere, iar instrumentul va calcula numărul de caractere, cuvinte, lățimea în pixeli și va arăta dacă lungimea respectă cele mai bune practici SEO",
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Verificator gratuit meta title și description",
+      "name": "Contor al lungimii meta titlu și descriere în pixeli",
       "alternateName": [
         "Verificator meta title și description cu previzualizare Google",
         "Previzualizare snippet Google",
@@ -37,16 +37,16 @@
       ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "SEOTool",
-      "description": "Verificator gratuit lungime meta title și description. Verifică numărul de caractere, cuvinte și lățimea în pixeli. Afișează o previzualizare a modului în care titlul și descrierea apar în rezultatele căutării Google.",
+      "description": "Contor gratuit al lungimii meta titlu și descriere. Verifică numărul de caractere, cuvinte și lățimea în pixeli. Afișează o previzualizare a modului în care titlul și descrierea apar în rezultatele căutării Google.",
       "featureList": [
-        "Contor caractere pentru meta title",
-        "Contor caractere pentru meta description",
-        "Măsurare lățime pixeli (compatibil Google)",
-        "Contor cuvinte pentru titlu și descriere",
-        "Previzualizare rezultate căutare Google",
-        "Evaluare lungime colorată (prea scurt / optim / prea lung)",
-        "Avertizare trunchere pentru titlu și descriere",
-        "Recomandări lungime optimă",
+        "Contor de caractere pentru meta titlu",
+        "Contor de caractere pentru meta descriere",
+        "Măsurare a lățimii în pixeli (compatibilă cu Google)",
+        "Contor de cuvinte pentru titlu și descriere",
+        "Previzualizare a rezultatelor căutării Google",
+        "Evaluare a lungimii cu cod de culori (prea scurt / optim / prea lung)",
+        "Avertizare de trunchiere a titlului și descrierii",
+        "Recomandări privind lungimea optimă",
         "Procesare locală în browser"
       ]
     },

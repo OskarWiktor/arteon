@@ -2,13 +2,13 @@
   "toolKey": "e-mailSignature",
   "locale": "es",
   "metadata": {
-    "title": "Generador de firma de correo gratis – HTML Gmail y Outlook",
-    "description": "Cree una firma de correo HTML profesional sin programar. Añada datos de contacto, logo, redes sociales y copie en Gmail u Outlook. Sin registro, sin límites.",
+    "title": "Generador gratuito de firma de correo HTML – crea tu firma",
+    "description": "Cree una firma de correo HTML sin registro ni inicio de sesión. Personalización completa, diseños listos, vista previa en vivo y código HTML listo.",
     "ogImage": "/assets/tools/free-html-email-signature-generator/generador-de-firma-de-correo-gratuito-es.webp",
     "path": "/es/herramientas/generador-de-firma-de-correo-gratuito"
   },
   "hero": {
-    "title": "Cree una firma de correo HTML profesional",
+    "title": "Crea una firma de correo HTML – copia a Gmail u Outlook",
     "description": "Construya una firma de correo profesional en minutos. Introduzca sus datos, elija colores y copie el código HTML listo en Gmail, Outlook o cualquier cliente de correo.",
     "backgroundImage": "/assets/tools/free-html-email-signature-generator/generador-de-firma-de-correo-gratuito-es.webp"
   },
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Generador gratuito de firma de correo HTML",
+      "name": "Generador de firma de correo HTML – creador de firma",
       "alternateName": ["Generador de firma de correo HTML", "Creador de firma de correo electrónico", "Generador de pie de e-mail gratuito"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Generador gratuito de firma de correo HTML. Añada datos de contacto, enlace CTA y perfiles de redes sociales, luego copie el código listo en Gmail, Outlook y otros clientes de correo.",
+      "description": "Generador gratuito de firma de correo HTML. Añada datos de contacto, enlace CTA y perfiles de redes sociales, luego copie el código de firma listo en Gmail, Outlook y otros clientes de correo.",
       "featureList": [
         "Datos de contacto (nombre, cargo, empresa)",
         "Teléfono, correo electrónico y URL del sitio web",
@@ -38,13 +38,13 @@
         "Estilo de texto individual para cada elemento de la firma",
         "Botón CTA con texto y enlace personalizados",
         "Estilo de línea separadora (estilo, grosor, color)",
-        "Vista previa en vivo con cambio de fondo (claro, oscuro, cuadrícula)",
-        "Vista previa del código fuente HTML en modal",
+        "Vista previa de firma en vivo con cambio de fondo (claro, oscuro, ajedrez)",
+        "Vista previa del código HTML en modal",
         "Copiar código HTML al portapapeles",
         "Descargar firma como archivo HTML",
         "Exportar e importar configuración como archivo JSON",
         "Compatible con Gmail, Outlook, Apple Mail",
-        "Herramienta gratuita, sin registro"
+        "Herramienta gratuita sin registro"
       ]
     },
     "howTo": {

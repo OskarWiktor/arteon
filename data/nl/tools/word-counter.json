@@ -2,13 +2,13 @@
   "toolKey": "wordCounter",
   "locale": "nl",
   "metadata": {
-    "title": "Gratis woorden- & tekenteller online – Tellen, transformeren & analyseren",
-    "description": "Gratis woorden-, teken-, zin- en alineateller. Hoofdletters wijzigen, duplicaten verwijderen, regels sorteren. 8 statistieken en 10 teksttools.",
+    "title": "Woord-, teken- en leestijdteller met tekstopmaak",
+    "description": "Gratis teller voor woorden, tekens, zinnen, alinea's en leestijd met hoofdletterconverter. Controleer de tekstlengte en wijzig de letters.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/woorden-en-tekenteller-nl.webp",
     "path": "/nl/tools/woorden-en-tekenteller"
   },
   "hero": {
-    "title": "Woorden- en tekenteller met tekstopmaaktools",
+    "title": "Tel woorden en tekens – controleer leestijd en formatteer tekst",
     "description": "Plak uw tekst en de tool telt woorden, tekens, zinnen, alinea's, unieke woorden en leestijd. Wijzig hoofdletters, verwijder duplicaten of sorteer regels",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis woorden- en tekenteller online met teksttools",
+      "name": "Woord-, teken- en leestijdteller met tekstopmaak",
       "alternateName": [
         "Online word counter",
         "Character counter with and without spaces",
@@ -36,21 +36,21 @@
         "Sort text lines alphabetically"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
+      "description": "Gratis woord- en tekenteller met tekstopmaaktools. Telt woorden, tekens, zinnen, alinea's, unieke woorden en leestijd. Biedt 10 tools: hoofdletterconversie, spaties verwijderen, lege regels, duplicaten en sortering.",
       "featureList": [
-        "Word count",
-        "Character count with and without spaces",
-        "Sentence and paragraph count",
-        "Unique word count",
-        "Average word length",
-        "Estimated reading time",
-        "Convert to uppercase or lowercase",
-        "Convert to sentence case or title case",
-        "Toggle letter case",
-        "Remove extra spaces",
-        "Remove empty lines and duplicates",
-        "Sort lines A-Z and Z-A",
-        "Copy text to clipboard"
+        "Woorden tellen",
+        "Tekens tellen met en zonder spaties",
+        "Zinnen en alinea's tellen",
+        "Unieke woorden tellen",
+        "Gemiddelde woordlengte",
+        "Geschatte leestijd",
+        "Omzetten naar hoofdletters of kleine letters",
+        "Omzetten naar zinsstijl of titelstijl",
+        "Hoofdletters/kleine letters omkeren",
+        "Overbodige spaties verwijderen",
+        "Lege regels en duplicaten verwijderen",
+        "Regels A–Z en Z–A sorteren",
+        "Tekst naar klembord kopiëren"
       ]
     },
     "howTo": {

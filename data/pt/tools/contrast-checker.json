@@ -2,13 +2,13 @@
   "toolKey": "contrastChecker",
   "locale": "pt",
   "metadata": {
-    "title": "Verificador de contraste de cores gratuito – WCAG 2.1",
-    "description": "Verifique a legibilidade das cores de texto e fundo segundo WCAG 2.1. Rácio de contraste, avaliação AA/AAA e correção automática de cores.",
+    "title": "Verificador gratuito de contraste de cores e legibilidade do texto",
+    "description": "Verifique se as suas cores têm bom contraste e legibilidade segundo WCAG 2.1 AA e AAA. Adicione cores e use a correção automática de contraste.",
     "ogImage": "/assets/tools/color-contrast-and-readability-checker/verificador-de-contraste-de-cores-pt.webp",
     "path": "/pt/ferramentas/verificador-de-contraste-de-cores"
   },
   "hero": {
-    "title": "Verificador de contraste de cores",
+    "title": "Verifique o contraste de cores e a legibilidade segundo WCAG",
     "description": "Verifique se as suas cores de texto e fundo são legíveis segundo as normas WCAG 2.1. Rácio de contraste, avaliação AA/AAA e ajuste automático das cores.",
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Verificador de contraste e legibilidade de cores — WCAG 2.1",
+      "name": "Verificador de contraste de cores e legibilidade do texto – WCAG",
       "alternateName": [
         "Verificador de contraste WCAG",
         "Testador de acessibilidade de cores",
@@ -36,15 +36,21 @@
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
-      "description": "Verificador de contraste de cores segundo as WCAG 2.1. Calcula o rácio de contraste, avalia a conformidade AA/AAA e propõe ajuste automático das cores.",
+      "description": "Verifique se as cores do texto e do fundo são legíveis para todos os utilizadores. A ferramenta calcula a relação de contraste segundo a norma WCAG e mostra se cumpre os requisitos de acessibilidade.",
       "featureList": [
-        "Cálculo do rácio de contraste",
-        "Avaliação WCAG AA e AAA",
-        "Texto normal, texto grande e ícones",
-        "Função de ajuste automático",
-        "Suporte HEX, RGB, HSL",
-        "Pré-visualização em tempo real",
-        "Execução local no navegador"
+        "Cálculo da relação de contraste",
+        "Verificação de conformidade com WCAG 2.1 nível AA",
+        "Verificação de conformidade com WCAG 2.1 nível AAA",
+        "Teste para texto normal",
+        "Teste para texto grande e cabeçalhos",
+        "Teste para ícones e componentes de interface",
+        "Suporte do formato de cor HEX",
+        "Suporte dos formatos de cor RGB e RGBA",
+        "Suporte dos formatos de cor HSL e HSLA",
+        "Seletor de cores para escolha visual",
+        "Pré-visualização do texto em tempo real",
+        "Função de ajuste automático da cor",
+        "Processamento local no navegador"
       ]
     },
     "howTo": {

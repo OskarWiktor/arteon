@@ -2,13 +2,13 @@
   "toolKey": "metaCounter",
   "locale": "en",
   "metadata": {
-    "title": "Free Meta Title & Description Checker – Pixel Width",
-    "description": "Check your meta title and description length in characters and pixels. Google SERP preview helps you avoid truncated snippets. No signup.",
+    "title": "Free Meta Title and Description Length Checker in Pixels",
+    "description": "Check if your meta title and description have the right length per Google guidelines. Checker with live preview and tips.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-title-description-length-checker-en.webp",
     "path": "/en/tools/meta-title-description-length-checker"
   },
   "hero": {
-    "title": "Check your page title and description length in Google",
+    "title": "Check meta title and description length – Google SERP preview",
     "description": "Enter a title and description, and the tool will calculate character count, word count, pixel width, and show whether the length meets SEO best practices",
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Free meta title and description length checker",
+      "name": "Meta Title and Description Length Checker in Pixels",
       "alternateName": [
         "Meta title and description checker with Google preview",
         "Google snippet preview tool",

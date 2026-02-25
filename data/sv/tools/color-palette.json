@@ -2,13 +2,13 @@
   "toolKey": "colorPalette",
   "locale": "sv",
   "metadata": {
-    "title": "Gratis färgpalettgenerator – 9 paletter från en färg",
-    "description": "Generera 9 harmoniska färgpaletter från en grundfärg: monokromatisk, komplementär, triadisk, pastell och fler. Kopiera HEX-, RGB- och HSL-koder med ett klick.",
+    "title": "Gratis färgpalettgenerator – 9 scheman",
+    "description": "Generera 9 färgpaletter från en färg: monokromatisk, komplementär, triadisk, pastell och fler. Kopiera HEX-koder med ett klick.",
     "ogImage": "/assets/tools/color-palette-generator/fargpalettgenerator-sv.webp",
     "path": "/sv/verktyg/fargpalettgenerator"
   },
   "hero": {
-    "title": "Färgpalettgenerator",
+    "title": "Generera 9 färgpaletter från en enda grundfärg",
     "description": "Ange en grundfärg och verktyget genererar 9 harmoniska färgpaletter: monokromatisk, komplementär, triadisk, pastell och fler. Varje färg kan kopieras med sin HEX-kod.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
@@ -24,17 +24,17 @@
   },
   "schemas": {
     "software": {
-      "name": "Färgpalettgenerator",
+      "name": "Färgpalettgenerator – 9 färgscheman",
       "alternateName": ["Färgschemagenerator", "Färggenerator", "Färgmatchningsverktyg", "Färgharmonigenerator"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Gratis färgpalettgenerator. Ange en HEX-färg och verktyget genererar 9 scheman: monokromatiskt, angränsande, komplementärt, triadiskt, delat komplementärt, pastell, mörkt, tonalt och minimalistiskt.",
+      "description": "Gratis färgpalettgenerator. Ange en HEX-färg och verktyget genererar 9 scheman: monokromatiskt, angränsande, komplementärt, triadiskt, delat komplementärt, pastell, mörkt, tonalt och minimalistiskt. Varje färg kan kopieras med sin HEX-kod och HSL-värde.",
       "featureList": [
         "Monokromatiskt schema – nyanser av en färg",
         "Angränsande schema – färger bredvid varandra på färghjulet",
         "Komplementärt schema – motsatta färger",
         "Triadiskt schema – 3 färger med jämna mellanrum",
-        "Delat komplementärt schema",
+        "Delat komplementärt schema – grundfärg och 2 grannar till dess komplement",
         "Pastellpalett – mjuka, avsaturerade nyanser",
         "Mörk palett – djupa färger för mörka teman",
         "Tonal palett – ljusstyrkenivåer av en färg",

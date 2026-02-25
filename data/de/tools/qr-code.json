@@ -2,13 +2,13 @@
   "toolKey": "qrCode",
   "locale": "de",
   "metadata": {
-    "title": "Kostenloser QR-Code-Generator – PNG & SVG, ohne Anmeldung",
-    "description": "Erstellen Sie QR-Codes für Websites, vCards, Speisekarten oder Flyer in Sekunden. Export als PNG & SVG. Farben und Größe anpassen. Ohne Anmeldung, ohne Limits.",
+    "title": "Kostenloser QR-Code-Generator ohne Anmeldung und Registrierung",
+    "description": "Generieren Sie einen QR-Code für Ihre Website, vCard-Visitenkarte oder zum Drucken. Link einfügen, Codefarbe und Größe wählen und fertigen QR-Code als PNG und SVG herunterladen.",
     "ogImage": "/assets/tools/qr-code-generator/kostenloser-qr-code-generator-de.webp",
     "path": "/de/werkzeuge/kostenloser-qr-code-generator"
   },
   "hero": {
-    "title": "Kostenloser QR-Code-Generator",
+    "title": "QR-Code erstellen für Website, vCard oder Druck – PNG & SVG",
     "description": "Erstellen Sie QR-Codes für Websites, Visitenkarten, Speisekarten und Flyer. Passen Sie Größe, Farben und Fehlerkorrekturstufe an. Export als PNG und SVG - ohne Anmeldung, ohne Limits.",
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Kostenloser QR-Code-Generator — PNG und SVG",
+      "name": "QR-Code-Generator ohne Anmeldung und Registrierung",
       "alternateName": [
         "QR-Code erstellen kostenlos",
         "vCard-QR-Code-Generator",
@@ -35,15 +35,20 @@
       ],
       "applicationCategory": "UtilityApplication",
       "applicationSubCategory": "QRCodeGenerator",
-      "description": "Kostenloser QR-Code-Generator. Erstellen Sie QR-Codes für URLs, vCards, E-Mail, Telefon und Freitext. Export als PNG und SVG. Anpassbare Farben, Größe und Fehlerkorrektur.",
+      "description": "Erstellen Sie einen QR-Code für Website, Visitenkarte, Speisekarte oder Flyer. Datentyp wählen, Farben und Größe anpassen, dann fertige PNG- oder SVG-Datei herunterladen.",
       "featureList": [
-        "5 Datentypen: URL, Text, vCard, E-Mail, Telefon",
-        "Export als PNG und SVG",
-        "4 Fehlerkorrekturstufen (L, M, Q, H)",
-        "Anpassbare QR-Code-Farbe und Hintergrundfarbe",
-        "Kontrastwarnung bei zu geringem Farbunterschied",
-        "Einstellbare Größe und Rand",
-        "Lokale Verarbeitung im Browser"
+        "QR-Code für URL (Website)",
+        "QR-Code für einfachen Text",
+        "vCard-QR-Code (Kontaktdaten)",
+        "QR-Code für E-Mail (Adresse, Betreff, Inhalt)",
+        "QR-Code für Telefonnummer",
+        "Anpassbare Code- und Hintergrundfarben",
+        "Auswahl der Codegröße in Pixeln",
+        "Export im PNG-Format (Raster)",
+        "Export im SVG-Format (Vektor)",
+        "Live-Codevorschau",
+        "Lokale Verarbeitung im Browser",
+        "Reed-Solomon-Fehlerkorrektur"
       ]
     },
     "howTo": {

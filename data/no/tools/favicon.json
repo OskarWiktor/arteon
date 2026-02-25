@@ -2,13 +2,13 @@
   "toolKey": "favicon",
   "locale": "no",
   "metadata": {
-    "title": "Gratis favicon-generator – ICO og PNG fra ett bilde",
-    "description": "Generer favicon.ico og PNG-ikoner fra ett enkelt bilde, i samsvar med nettleser- og Lighthouse-krav. Uten registrering, kjører i nettleseren.",
+    "title": "Gratis nettside-ikongenerator – lag favicon.ico",
+    "description": "Lag et komplett favicon.ico-sett for nettsiden din fra et enkelt bilde. Alle nødvendige størrelser uten innlogging og registrering.",
     "ogImage": "/assets/tools/favicon-generator/gratis-favicon-generator-no.webp",
     "path": "/no/verktoy/gratis-favicon-generator"
   },
   "hero": {
-    "title": "Generer favicon.ico og PNG-ikoner fra ett bilde",
+    "title": "Lag favicon.ico for nettsiden din fra ett enkelt bilde",
     "description": "Last opp et bilde, og verktøyet genererer favicon.ico og et komplett sett med PNG-ikoner for nettlesere, mobile enheter og Lighthouse.",
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
@@ -24,21 +24,24 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis favicon-generator",
+      "name": "Favicon.ico-generator for nettsider",
       "alternateName": ["Favicon.ico-generator", "Nettikongenerator", "Favicon-verktøy", "Favicon-generator fra bilde"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "FaviconGenerator",
-      "description": "Gratis favicon-generator. Last opp et bilde og få favicon.ico og et komplett sett med PNG-ikoner for nettlesere, mobile enheter og PWA.",
+      "description": "Gratis favicon-generator. Lag favicon.ico og PNG-ikoner 16x16, 32x32, 180x180, 192x192 og 512x512 uten begrensninger og uten å sende filer til en server. Behandlingen skjer lokalt i nettleseren.",
       "featureList": [
-        "Generering av favicon.ico (16×16, 32×32, 48×48 px)",
-        "PNG-ikoner for nettlesere (16×16 til 512×512 px)",
-        "Apple Touch Icon (180×180 px)",
-        "Android/PWA-ikoner (192×192, 512×512 px)",
-        "Microsoft-ikoner (150×150, 310×310 px)",
-        "Beskjæring og størrelsesendring av kildebilde",
-        "Forhåndsvisning i sanntid",
-        "Nedlasting av alle ikoner i ZIP",
-        "Lokal behandling i nettleseren"
+        "Generering av favicon.ico (16x16, 32x32, 48x48 i én fil)",
+        "Generering av PNG-ikoner 16x16 og 32x32",
+        "Generering av apple-touch-icon 180x180",
+        "Generering av PWA-ikoner 192x192 og 512x512",
+        "Støtte for PNG-, JPG- og SVG-kildebilder",
+        "Konfigurasjon av bakgrunnsfarge",
+        "Generering av manifest.json-fil for PWA",
+        "Nedlasting av alle filer som ZIP",
+        "Nedlasting av individuelle filer",
+        "Lighthouse-kompatibel",
+        "Behandling i nettleseren (filer sendes ikke til server)",
+        "Gratis verktøy uten innlogging"
       ]
     },
     "howTo": {

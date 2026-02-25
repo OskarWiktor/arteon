@@ -2,13 +2,13 @@
   "toolKey": "imageResize",
   "locale": "no",
   "metadata": {
-    "title": "Gratis bilderedigerer – Beskjær for sosiale medier",
-    "description": "Beskjær og tilpass bilder til Instagram, Facebook, LinkedIn og mer. Velg et ferdig format eller skriv inn egne mål. Uten registrering, uten begrensninger.",
+    "title": "Gratis beskjæring, størrelsesendring og konvertering av bilder",
+    "description": "Endre størrelse, beskjær og konverter bildet ditt gratis. Bruk ferdige formater for sosiale medier og last ned JPG, PNG eller WebP.",
     "ogImage": "/assets/tools/free-image-editor-crop-resize-and-convert/bilderedigerer-no.webp",
     "path": "/no/verktoy/bilderedigerer"
   },
   "hero": {
-    "title": "Beskjær og tilpass bilder til ethvert bildeformat",
+    "title": "Endre størrelse, beskjær og konverter bilder online – gratis",
     "description": "Last opp et bilde, velg et ferdig format for sosiale medier eller skriv inn egne mål, og last ned det beskjærte bildet.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -24,19 +24,26 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis bilderedigerer – beskjæring og størrelsesendring",
+      "name": "Bilderedigerer – beskjæring, størrelsesendring og konvertering",
       "alternateName": ["Bildebeskjæringsverktøy", "Størrelsesendring av bilder for sosiale medier"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Gratis bilderedigerer som lar deg beskjære og endre størrelse på bilder for sosiale medier, nettsider og andre formål.",
+      "description": "Gratis online bilderedigerer for størrelsesendring, beskjæring og formatkonvertering. Ferdige formater for Instagram, Facebook og LinkedIn. Runde avatarer. Eksport til JPG, PNG og WebP med kvalitetskontroll. Lokal behandling i nettleseren.",
       "featureList": [
-        "Beskjæring av bilde til ethvert bildeformat",
-        "Ferdige formater for Instagram, Facebook, LinkedIn, YouTube",
-        "Egne mål i bredde og høyde",
-        "Rotasjon og speiling av bilde",
-        "Forhåndsvisning i sanntid",
-        "Nedlasting som PNG eller JPG",
-        "Lokal behandling i nettleseren"
+        "Endre størrelse på bilder til vilkårlige mål",
+        "Beskjæring med interaktivt områdevalg",
+        "Ferdige Instagram-formater (kvadratisk innlegg, stående innlegg, story, reels)",
+        "Ferdige Facebook-formater (innlegg, sideomslag)",
+        "Ferdige LinkedIn-formater (innlegg, profilbanner)",
+        "Ferdige webformater (OG-bilde, hero, banner, miniatyrbilde)",
+        "Beskjæringsformer: rektangel, kvadrat, sirkel (rund avatar)",
+        "3x3-rutenett (tredjedelsregelen) med fargevalg",
+        "Beskjæringszoom 100–300 %",
+        "Nøyaktig beskjæringsposisjon (X, Y) med sentrering",
+        "Formatkonvertering: JPG, PNG, WebP",
+        "Komprimeringskvalitet 60–100 %",
+        "Lokal behandling i nettleseren",
+        "Gratis verktøy uten innlogging"
       ]
     },
     "howTo": {

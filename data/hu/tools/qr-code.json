@@ -2,13 +2,13 @@
   "toolKey": "qrCode",
   "locale": "hu",
   "metadata": {
-    "title": "Ingyenes QR-kód generátor – PNG és SVG, regisztráció nélkül",
-    "description": "Generáljon QR kódot bármilyen linkhez, szöveghez vagy névjegyhez. Töltse le PNG és SVG formátumban. Ingyenes, regisztráció nélkül, korlátlan használattal.",
+    "title": "Ingyenes QR-kód generátor bejelentkezés és regisztráció nélkül",
+    "description": "Generáljon QR-kódot weboldalához, vCard-névjegyéhez vagy nyomtatáshoz. Illesszen be egy linket, válassza ki a kód színét, méretét és töltse le a kész QR-kódot PNG és SVG formátumban.",
     "ogImage": "/assets/tools/qr-code-generator/ingyenes-qr-kod-generator-hu.webp",
     "path": "/hu/eszkozok/ingyenes-qr-kod-generator"
   },
   "hero": {
-    "title": "QR-kód generátor – Ingyenes, regisztráció nélkül",
+    "title": "Készítsen QR-kódot weboldalhoz, vCard-hoz vagy nyomtatáshoz",
     "description": "Készítsen QR-kódot weboldalhoz, vCard névjegykártyához, e-mailhez, telefonhoz vagy szöveghez. Szabályozza a színeket, méretet és hibajavítási szintet, majd töltse le a kész PNG vagy SVG fájlt.",
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Ingyenes QR-kód generátor — PNG és SVG",
+      "name": "QR-kód generátor bejelentkezés és regisztráció nélkül",
       "alternateName": [
         "QR-kód készítő ingyen",
         "vCard QR-kód generátor",
@@ -38,18 +38,18 @@
       ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "QRCodeGenerator",
-      "description": "Készítsen QR-kódot weboldalhoz, névjegykártyához, menühöz vagy szórólaphoz. Válassza ki az adattípust, szabályozza a színeket és méretet, majd töltse le a PNG vagy SVG fájlt.",
+      "description": "Hozzon létre QR-kódot weboldalhoz, névjegyhez, menühöz vagy szórólaphoz. Válassza ki az adattípust, szabja testre a színeket és méretet, majd töltse le a kész PNG vagy SVG fájlt.",
       "featureList": [
         "QR-kód URL-hez (weboldal)",
         "QR-kód egyszerű szöveghez",
         "vCard QR-kód (kapcsolattartási adatok)",
-        "QR-kód e-mailhez (cím, tárgy, szövegtörzs)",
+        "QR-kód emailhez (cím, tárgy, tartalom)",
         "QR-kód telefonszámhoz",
         "Testreszabható kód- és háttérszínek",
         "Kódméret kiválasztása pixelben",
-        "Exportálás PNG formátumba (raszteres)",
-        "Exportálás SVG formátumba (vektoros)",
-        "Élő kód előnézet",
+        "Exportálás PNG formátumba (raszter)",
+        "Exportálás SVG formátumba (vektor)",
+        "Élő kódelőnézet",
         "Helyi feldolgozás a böngészőben",
         "Reed-Solomon hibajavítás"
       ]

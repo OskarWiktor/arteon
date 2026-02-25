@@ -2,13 +2,13 @@
   "toolKey": "qrCode",
   "locale": "fi",
   "metadata": {
-    "title": "Ilmainen QR-koodigeneraattori – PNG ja SVG | Arteon",
-    "description": "Luo QR-koodi verkkosivulle, vCard-käyntikortille, ruokalistalle tai esitteelle. Vie PNG- ja SVG-muotoon, mukauta värejä ja kokoa. Ilman rekisteröitymistä.",
+    "title": "Ilmainen QR-koodigeneraattori ilman kirjautumista ja rekisteröitymistä",
+    "description": "Luo QR-koodi verkkosivullesi, vCard-käyntikortille tai tulostukseen. Liitä linkki, valitse koodin väri, koko ja lataa valmis QR-koodi PNG- ja SVG-muodossa.",
     "ogImage": "/assets/tools/qr-code-generator/ilmainen-qr-koodi-generaattori-fi.webp",
     "path": "/fi/tyokalut/ilmainen-qr-koodi-generaattori"
   },
   "hero": {
-    "title": "QR-koodigeneraattori – ilmainen, ilman rekisteröitymistä",
+    "title": "Luo QR-koodi verkkosivulle, vCard-kortille tai tulostukseen",
     "description": "Luo QR-koodi verkkosivulle, vCard-käyntikortille, sähköpostille, puhelinnumerolle tai tekstille. Mukauta värejä, kokoa ja virheenkorjaustasoa ja lataa sitten valmis PNG- tai SVG-tiedosto.",
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
@@ -24,24 +24,24 @@
   },
   "schemas": {
     "software": {
-      "name": "Ilmainen QR-koodigeneraattori",
+      "name": "QR-koodigeneraattori ilman kirjautumista ja rekisteröitymistä",
       "alternateName": ["QR-koodin luoja", "vCard QR-koodigeneraattori", "Ilmainen QR-generaattori", "QR-koodityökalu"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "QRCodeGenerator",
-      "description": "Luo QR-koodi verkkosivulle, käyntikortille, ruokalistalle tai esitteelle. Valitse tietotyyppi, mukauta värejä ja kokoa ja lataa sitten PNG- tai SVG-tiedosto.",
+      "description": "Luo QR-koodi verkkosivulle, käyntikortille, menulle tai esitteelle. Valitse tietotyyppi, mukauta värejä ja kokoa, lataa sitten valmis PNG- tai SVG-tiedosto.",
       "featureList": [
-        "QR-koodi URL-osoitteelle (verkkosivut)",
+        "QR-koodi URL-osoitteelle (verkkosivu)",
         "QR-koodi tavalliselle tekstille",
-        "QR-koodi vCard (yhteystiedot)",
+        "vCard QR-koodi (yhteystiedot)",
         "QR-koodi sähköpostille (osoite, aihe, sisältö)",
         "QR-koodi puhelinnumerolle",
-        "Mukautettavat värit koodille ja taustalle",
+        "Mukautettavat koodin ja taustan värit",
         "Koodin koon valinta pikseleinä",
-        "Vienti PNG-muotoon (rasteri)",
-        "Vienti SVG-muotoon (vektori)",
-        "Koodin reaaliaikainen esikatselu",
+        "Vienti PNG-muotoon (rasterikuva)",
+        "Vienti SVG-muotoon (vektorikuva)",
+        "Reaaliaikainen koodin esikatselu",
         "Paikallinen käsittely selaimessa",
-        "Reed-Solomon-virheenkorjaus"
+        "Reed-Solomon virheenkorjaus"
       ]
     },
     "howTo": {

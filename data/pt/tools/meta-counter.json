@@ -2,13 +2,13 @@
   "toolKey": "metaCounter",
   "locale": "pt",
   "metadata": {
-    "title": "Verificador de meta título e descrição gratuito – SEO",
-    "description": "Verifique o comprimento do meta título e descrição em caracteres e píxeis. Pré-visualização Google para evitar snippets truncados nos resultados de pesquisa.",
+    "title": "Contador gratuito de comprimento de meta título e descrição em pixels",
+    "description": "Verifique se o meta título e a descrição têm o comprimento correto segundo as diretrizes do Google. Contador com pré-visualização em tempo real e dicas.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/verificador-de-meta-titulo-e-descricao-pt.webp",
     "path": "/pt/ferramentas/verificador-de-meta-titulo-e-descricao"
   },
   "hero": {
-    "title": "Verificador de meta título e descrição",
+    "title": "Verifique o comprimento do meta título e descrição – pré-visualização",
     "description": "Verifique o número de caracteres, palavras e a largura em píxeis dos seus meta títulos e descrições. Pré-visualização em tempo real da aparência da sua página nos resultados Google.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Verificador de meta título e descrição — pré-visualização Google",
+      "name": "Contador de comprimento de meta título e descrição em pixels",
       "alternateName": [
         "Verificador de meta título com pré-visualização Google",
         "Contador de caracteres meta título",
@@ -37,14 +37,17 @@
       ],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "SEOTool",
-      "description": "Verificador de meta título e descrição com pré-visualização Google. Mostra o número de caracteres, palavras e largura em píxeis para evitar títulos e descrições truncados.",
+      "description": "Contador gratuito de comprimento de meta título e descrição. Verifica o número de caracteres, palavras e largura em pixels. Mostra uma pré-visualização de como o título e a descrição aparecem nos resultados de pesquisa do Google.",
       "featureList": [
-        "Contador de caracteres e palavras",
-        "Medição da largura em píxeis",
-        "Pré-visualização do resultado Google (SERP)",
-        "Avaliação do comprimento (demasiado curto / bom / demasiado longo)",
-        "URL opcional na pré-visualização",
-        "Execução local no navegador"
+        "Contador de caracteres para meta título",
+        "Contador de caracteres para meta descrição",
+        "Medição de largura em pixels (compatível com Google)",
+        "Contador de palavras para título e descrição",
+        "Pré-visualização dos resultados de pesquisa do Google",
+        "Avaliação de comprimento com código de cores (muito curto / ótimo / muito longo)",
+        "Aviso de truncamento do título e da descrição",
+        "Recomendações de comprimento ideal",
+        "Processamento local no navegador"
       ]
     },
     "howTo": {

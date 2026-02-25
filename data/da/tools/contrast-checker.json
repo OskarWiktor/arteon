@@ -2,13 +2,13 @@
   "toolKey": "contrastChecker",
   "locale": "da",
   "metadata": {
-    "title": "Gratis farvekontrastkontrol – WCAG 2.1-overholdelse",
-    "description": "Kontrollér om dine tekst- og baggrundsfarver er læsbare ifølge WCAG 2.1. Indtast HEX-, RGB- eller HSL-kode, se kontrastforholdet og brug automatisk korrektion.",
+    "title": "Gratis farvekontrast- og tekstlæsbarhedskontrol",
+    "description": "Kontrollér om dine farver har god kontrast og læsbarhed ifølge WCAG 2.1 AA og AAA. Tilføj farver og brug automatisk kontrastkorrektion.",
     "ogImage": "/assets/tools/color-contrast-and-readability-checker/farvekontrastkontrol-da.webp",
     "path": "/da/vaerktojer/farvekontrastkontrol"
   },
   "hero": {
-    "title": "Kontrol af farvekontrast og læsbarhed",
+    "title": "Kontrollér farvekontrast og læsbarhed ifølge WCAG-standarder",
     "description": "Indtast tekst- og baggrundsfarve, og værktøjet viser om kontrasten er tilstrækkelig. Beregningerne er baseret på den internationale tilgængelighedsstandard WCAG 2.1.",
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
@@ -24,19 +24,21 @@
   },
   "schemas": {
     "software": {
-      "name": "Kontrol af farvekontrast og læsbarhed",
+      "name": "Farvekontrast- og tekstlæsbarhedskontrol – WCAG",
       "alternateName": ["Farvelæsbarhedstester", "Kontrastkontrol for tekst og baggrund", "Farvekontrastkalkulator", "WCAG-kontrasttester"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
-      "description": "Kontrollér om tekst- og baggrundsfarver er læsbare for alle brugere. Værktøjet beregner kontrastforholdet ifølge WCAG 2.1 og viser om det opfylder tilgængelighedskravene.",
+      "description": "Kontrollér om tekst- og baggrundsfarver er læsbare for alle brugere. Værktøjet beregner kontrastforholdet ifølge WCAG-standarden og viser om du opfylder tilgængelighedskravene.",
       "featureList": [
         "Beregning af kontrastforhold",
-        "Kontrol af WCAG 2.1 Niveau AA-overholdelse",
-        "Kontrol af WCAG 2.1 Niveau AAA-overholdelse",
-        "Test af normal tekst",
-        "Test af stor tekst og overskrifter",
-        "Test af ikoner og UI-komponenter",
-        "Understøttelse af HEX, RGB, RGBA, HSL, HSLA-formater",
+        "Kontrol af WCAG 2.1 niveau AA",
+        "Kontrol af WCAG 2.1 niveau AAA",
+        "Test for normal tekst",
+        "Test for stor tekst og overskrifter",
+        "Test for ikoner og UI-komponenter",
+        "Understøttelse af HEX-farveformat",
+        "Understøttelse af RGB- og RGBA-farveformater",
+        "Understøttelse af HSL- og HSLA-farveformater",
         "Farvevælger til visuelt valg",
         "Live forhåndsvisning af tekst",
         "Automatisk farvetilpasningsfunktion",

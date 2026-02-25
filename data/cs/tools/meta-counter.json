@@ -2,13 +2,13 @@
   "toolKey": "metaCounter",
   "locale": "cs",
   "metadata": {
-    "title": "Kontrola meta titulku a popisu zdarma – Šířka v pixelech",
-    "description": "Zkontrolujte délku meta titulku a popisu ve znacích i pixelech. Náhled Google SERP pomůže vyhnout se ořízaným úryvkům. Bez registrace, lokálně v prohlížeči.",
+    "title": "Bezplatná kontrola délky meta titulku a popisu v pixelech",
+    "description": "Zkontrolujte, zda meta titulek a popis mají správnou délku podle pokynů Google. Kontrola s živým náhledem a tipy.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/kontrola-meta-titulku-a-popisu-cs.webp",
     "path": "/cs/nastroje/kontrola-meta-titulku-a-popisu"
   },
   "hero": {
-    "title": "Zkontrolujte délku titulku a popisu stránky v Google",
+    "title": "Zkontrolujte délku meta titulku a popisu – náhled v Google",
     "description": "Zadejte titulek a popis a nástroj spočítá počet znaků, slov, šířku v pixelech a ukáže, zda délka odpovídá doporučeným SEO praktikám.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Kontrola délky meta titulku a popisu zdarma",
+      "name": "Kontrola délky meta titulku a popisu v pixelech",
       "alternateName": [
         "Kontrola meta titulku a popisu s náhledem Google",
         "Náhled úryvků Google",
@@ -42,7 +42,7 @@
         "Počítadlo slov pro titulek a popis",
         "Náhled výsledků vyhledávání Google",
         "Barevné hodnocení délky (příliš krátké / dobré / příliš dlouhé)",
-        "Upozornění na ořízaní titulku a popisu",
+        "Upozornění na oříznutí titulku a popisu",
         "Doporučení optimální délky",
         "Lokální zpracování v prohlížeči"
       ]

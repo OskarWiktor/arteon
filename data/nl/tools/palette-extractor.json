@@ -2,13 +2,13 @@
   "toolKey": "paletteExtractor",
   "locale": "nl",
   "metadata": {
-    "title": "Gratis kleurextractor uit afbeelding – Palet van elke foto",
-    "description": "Haal het kleurenpalet uit elke foto of afbeelding. Ontvang HEX-, RGB- en HSL-codes voor elke gedetecteerde kleur. Gratis, zonder registratie of limiet.",
+    "title": "Gratis kleurextractor uit afbeelding – kleurenpalet uit foto",
+    "description": "Upload een foto en de tool genereert een palet van dominante kleuren. Kant-en-klare HEX- en RGB-codes, volledige privacy en geen limieten.",
     "ogImage": "/assets/tools/image-color-extractor/kleurextractor-uit-afbeelding-nl.webp",
     "path": "/nl/tools/kleurextractor-uit-afbeelding"
   },
   "hero": {
-    "title": "Kleurextractor uit afbeelding – Haal een palet uit elke foto",
+    "title": "Extraheer kleuren uit een afbeelding – verkrijg palet met HEX-codes",
     "description": "Upload een foto, logo of afbeelding en de tool extraheert tot 12 dominante kleuren met HEX- en RGB-codes. Analyse vindt lokaal plaats in uw browser.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
@@ -24,19 +24,19 @@
   },
   "schemas": {
     "software": {
-      "name": "Kleurextractor uit afbeelding — gratis palettengenerator",
+      "name": "Kleurextractor uit afbeelding – kleurenpalet uit foto",
       "alternateName": ["Extraheer kleurenpalet uit een foto of logo"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
-      "description": "Gratis kleurextractor uit afbeeldingen. Upload een foto, logo of afbeelding en krijg een palet van tot 12 dominante kleuren met HEX- en RGB-codes. Verwerking vindt plaats in de browser - bestanden worden niet naar een server gestuurd.",
+      "description": "Gratis kleurextractor uit afbeelding. Upload een foto, logo of afbeelding en ontvang een palet van maximaal 12 dominante kleuren met HEX- en RGB-codes. Verwerking in de browser – bestanden worden niet naar een server verzonden.",
       "featureList": [
-        "Automatische extractie van tot 12 dominante kleuren",
+        "Automatische extractie van maximaal 12 dominante kleuren",
         "Analyse van foto's, logo's en vectorafbeeldingen",
         "Kleurcodes in HEX- en RGB-formaat",
-        "Kleurcode kopiëren naar klembord",
+        "Kleurcode naar klembord kopiëren",
         "Ondersteuning voor PNG-, JPG- en SVG-bestanden",
         "Negeert transparante pixels in PNG-bestanden",
-        "Lokale verwerking in de browser - afbeelding wordt niet naar een server gestuurd"
+        "Lokale verwerking in de browser – afbeelding wordt niet naar server verzonden"
       ]
     },
     "howTo": {

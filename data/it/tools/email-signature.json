@@ -2,13 +2,13 @@
   "toolKey": "emailSignature",
   "locale": "it",
   "metadata": {
-    "title": "Generatore di firma e-mail gratuito – HTML Gmail",
-    "description": "Crea una firma e-mail HTML professionale senza programmare. Aggiungi dati di contatto, logo, social media e copia in Gmail o Outlook.",
+    "title": "Generatore gratuito di firma e-mail HTML – crea la tua firma",
+    "description": "Crea una firma e-mail HTML senza login e registrazione. Personalizzazione completa, layout pronti, anteprima dal vivo e codice HTML pronto.",
     "ogImage": "/assets/tools/free-html-email-signature-generator/generatore-di-firma-email-gratuito-it.webp",
     "path": "/it/strumenti/generatore-di-firma-email-gratuito"
   },
   "hero": {
-    "title": "Generatore di firma e-mail",
+    "title": "Crea una firma e-mail HTML – copia in Gmail o Outlook",
     "description": "Crea una firma e-mail professionale in pochi minuti. Inserisci i tuoi dati, scegli i colori e il layout, poi copia il codice HTML in Gmail, Outlook o qualsiasi altro client di posta.",
     "backgroundImage": "/assets/tools/free-html-email-signature-generator/generatore-di-firma-email-gratuito-it.webp"
   },
@@ -24,21 +24,27 @@
   },
   "schemas": {
     "software": {
-      "name": "Generatore di firma e-mail HTML - Gmail e Outlook",
+      "name": "Generatore di firma e-mail HTML – creatore di firma",
       "alternateName": ["Creare una firma e-mail gratis", "Generatore di firma HTML", "Generatore di firma Gmail", "Generatore di firma Outlook", "Firma e-mail professionale"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Generatore gratuito di firma e-mail HTML. 8 layout, colori personalizzabili, icone social media, link CTA. Per Gmail, Outlook e altri client. Esecuzione locale.",
+      "description": "Generatore gratuito di firma e-mail HTML. Aggiungi dati di contatto, link CTA e profili social, poi copia il codice firma pronto in Gmail, Outlook e altri client di posta.",
       "featureList": [
-        "8 layout: Standard, Barra superiore, Etichette a sinistra, Centrato, Compatto, Due colonne, Minimalista, Barra inferiore",
-        "Colori e font personalizzabili",
-        "Icone social media (12 piattaforme)",
-        "Pulsante CTA / Link di azione",
-        "Foto profilo e logo aziendale",
-        "Avviso legale / Disclaimer",
-        "Esportazione e importazione delle impostazioni",
-        "Copia in testo formattato o codice HTML",
-        "Esecuzione locale nel browser"
+        "Dati di contatto (nome, titolo, azienda)",
+        "Telefono, email e URL del sito web",
+        "Logo o foto profilo con opzioni di forma e dimensione",
+        "Icone social media (12 piattaforme: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
+        "Colori personalizzabili (testo, accento, sfondo)",
+        "Stile di testo individuale per ogni elemento della firma",
+        "Pulsante CTA con testo e link personalizzati",
+        "Stile della linea separatrice (stile, spessore, colore)",
+        "Anteprima dal vivo della firma con cambio sfondo (chiaro, scuro, scacchiera)",
+        "Anteprima del codice sorgente HTML in modale",
+        "Copia del codice HTML negli appunti",
+        "Download della firma come file HTML",
+        "Esportazione e importazione della configurazione come file JSON",
+        "Compatibile con Gmail, Outlook, Apple Mail",
+        "Strumento gratuito senza registrazione"
       ]
     },
     "howTo": {

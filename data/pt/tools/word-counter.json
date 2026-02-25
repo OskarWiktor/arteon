@@ -2,13 +2,13 @@
   "toolKey": "wordCounter",
   "locale": "pt",
   "metadata": {
-    "title": "Contador de palavras e caracteres grátis – Contar, transformar e analisar texto",
-    "description": "Contador gratuito de palavras, caracteres, frases e parágrafos. Alterar maiúsculas, remover duplicados, ordenar linhas. 8 métricas e 10 ferramentas.",
+    "title": "Contador de palavras, caracteres e tempo de leitura com formatação de texto",
+    "description": "Contador gratuito de palavras, caracteres, frases, parágrafos e tempo de leitura com conversor de maiúsculas. Verifique o comprimento do texto e altere as letras.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palavras-e-caracteres-pt.webp",
     "path": "/pt/ferramentas/contador-de-palavras-e-caracteres"
   },
   "hero": {
-    "title": "Contador de palavras e caracteres com ferramentas de formatação",
+    "title": "Conte palavras e caracteres – verifique tempo de leitura e formate",
     "description": "Cole o texto e a ferramenta contará palavras, caracteres, frases, parágrafos, palavras únicas e tempo de leitura. Altere maiúsculas, remova duplicados ou ordene linhas",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Contador de palavras e caracteres online com ferramentas de texto",
+      "name": "Contador de palavras, caracteres e tempo de leitura com formatação de texto",
       "alternateName": [
         "Online word counter",
         "Character counter with and without spaces",
@@ -36,21 +36,21 @@
         "Sort text lines alphabetically"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
+      "description": "Contador gratuito de palavras e caracteres com ferramentas de formatação de texto. Conta palavras, caracteres, frases, parágrafos, palavras únicas e tempo de leitura. Oferece 10 ferramentas: conversão de maiúsculas, remoção de espaços, linhas vazias, duplicados e ordenação.",
       "featureList": [
-        "Word count",
-        "Character count with and without spaces",
-        "Sentence and paragraph count",
-        "Unique word count",
-        "Average word length",
-        "Estimated reading time",
-        "Convert to uppercase or lowercase",
-        "Convert to sentence case or title case",
-        "Toggle letter case",
-        "Remove extra spaces",
-        "Remove empty lines and duplicates",
-        "Sort lines A-Z and Z-A",
-        "Copy text to clipboard"
+        "Contagem de palavras",
+        "Contagem de caracteres com e sem espaços",
+        "Contagem de frases e parágrafos",
+        "Contagem de palavras únicas",
+        "Comprimento médio das palavras",
+        "Tempo de leitura estimado",
+        "Converter para maiúsculas ou minúsculas",
+        "Converter para estilo de frase ou de título",
+        "Inverter maiúsculas/minúsculas",
+        "Remover espaços desnecessários",
+        "Remover linhas vazias e duplicados",
+        "Ordenar linhas A–Z e Z–A",
+        "Copiar texto para a área de transferência"
       ]
     },
     "howTo": {

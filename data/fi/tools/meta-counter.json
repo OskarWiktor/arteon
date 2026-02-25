@@ -2,13 +2,13 @@
   "toolKey": "metaCounter",
   "locale": "fi",
   "metadata": {
-    "title": "Meta-otsikon ja -kuvauksen pituustarkistus – Pikseleinä",
-    "description": "Tarkista meta-otsikon ja -kuvauksen pituus merkkeinä ja pikseleinä. Googlen hakutulosesikatselu auttaa välttämään katkenneita otsikoita ja kuvauksia hakutuloksissa.",
+    "title": "Ilmainen meta-otsikon ja kuvauksen pituustarkistus pikseleinä",
+    "description": "Tarkista, onko meta-otsikolla ja kuvauksella oikea pituus Googlen ohjeiden mukaan. Tarkistus reaaliaikaisella esikatselulla ja vihjeillä.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-otsikko-ja-kuvaus-tarkistus-fi.webp",
     "path": "/fi/tyokalut/meta-otsikko-ja-kuvaus-tarkistus"
   },
   "hero": {
-    "title": "Tarkista sivun otsikon ja kuvauksen pituus Googlessa",
+    "title": "Tarkista meta-otsikon ja kuvauksen pituus – Google-esikatselu",
     "description": "Syötä otsikko ja kuvaus, ja työkalu laskee merkkien ja sanojen määrän, leveyden pikseleinä ja näyttää, onko pituus suositeltujen SEO-käytäntöjen mukainen.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
@@ -24,20 +24,20 @@
   },
   "schemas": {
     "software": {
-      "name": "Ilmainen meta-otsikon ja -kuvauksen pituuden tarkistus",
+      "name": "Meta-otsikon ja kuvauksen pituustarkistus pikseleinä",
       "alternateName": ["Meta-otsikon ja -kuvauksen tarkistus Google-esikatselulla", "Google SERP -esikatselu", "SEO-otsikon leveyden tarkistus pikseleinä"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "SEOTool",
-      "description": "Ilmainen meta-otsikon ja -kuvauksen pituuden tarkistus. Tarkistaa merkkien ja sanojen määrän sekä leveyden pikseleinä. Näyttää esikatselun siitä, miten otsikko ja kuvaus näkyvät Googlen hakutuloksissa.",
+      "description": "Ilmainen meta-otsikon ja kuvauksen pituustarkistus. Tarkistaa merkkien, sanojen määrän ja leveyden pikseleinä. Näyttää esikatselun otsikon ja kuvauksen ulkoasusta Googlen hakutuloksissa.",
       "featureList": [
-        "Meta-otsikon merkkilaskuri",
-        "Meta-kuvauksen merkkilaskuri",
-        "Leveyden mittaus pikseleinä (vastaa Googlea)",
-        "Otsikon ja kuvauksen sanalaskuri",
+        "Merkkilaskuri meta-otsikolle",
+        "Merkkilaskuri meta-kuvaukselle",
+        "Pikselileveysmittaus (Google-yhteensopiva)",
+        "Sanalaskuri otsikolle ja kuvaukselle",
         "Googlen hakutulosten esikatselu",
-        "Värikoodattu pituusarvio (liian lyhyt / hyvä / liian pitkä)",
+        "Värikoodattu pituusarviointi (liian lyhyt / optimaalinen / liian pitkä)",
         "Varoitus otsikon ja kuvauksen katkaisusta",
-        "Optimaalisen pituuden suositus",
+        "Suositukset optimaalisesta pituudesta",
         "Paikallinen käsittely selaimessa"
       ]
     },

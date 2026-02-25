@@ -8,7 +8,7 @@
     "path": "/narzedzia/generator-palet-kolorow"
   },
   "hero": {
-    "title": "Generator palet kolorów",
+    "title": "Wygeneruj 9 palet kolorów z jednego koloru bazowego",
     "description": "Podaj jeden kolor bazowy, a narzędzie wygeneruje 9 harmonijnych palet kolorów: monochromatyczną, komplementarną, triadyczną, pastelową i inne. Każdy kolor można skopiować z kodem HEX.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Generator palet kolorów",
+      "name": "Generator palet kolorów – 9 schematów kolorystycznych",
       "alternateName": [
         "Generator schematów kolorów",
         "Generator kolorów online",

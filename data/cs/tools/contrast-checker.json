@@ -2,13 +2,13 @@
   "toolKey": "contrastChecker",
   "locale": "cs",
   "metadata": {
-    "title": "Kontrola kontrastu barev zdarma – Soulad s WCAG 2.1",
-    "description": "Zkontrolujte, zda jsou barvy textu a pozadí čitelné podle WCAG 2.1. Zadejte kód HEX, RGB nebo HSL, zobrazte poměr kontrastu a použijte automatickou opravu.",
+    "title": "Bezplatný tester kontrastu barev a čitelnosti textu",
+    "description": "Zkontrolujte, zda vaše barvy mají dobrý kontrast a čitelnost podle WCAG 2.1 AA a AAA. Přidejte barvy a použijte automatickou opravu kontrastu.",
     "ogImage": "/assets/tools/color-contrast-and-readability-checker/kontrola-kontrastu-barev-cs.webp",
     "path": "/cs/nastroje/kontrola-kontrastu-barev"
   },
   "hero": {
-    "title": "Kontrola kontrastu a čitelnosti barev",
+    "title": "Zkontrolujte kontrast barev a čitelnost textu podle WCAG",
     "description": "Zadejte barvu textu a pozadí a nástroj ukáže, zda je kontrast dostatečný. Výpočty jsou založeny na mezinárodním standardu přístupnosti WCAG 2.1.",
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
@@ -24,22 +24,24 @@
   },
   "schemas": {
     "software": {
-      "name": "Kontrola kontrastu a čitelnosti barev",
+      "name": "Tester kontrastu barev a čitelnosti textu – WCAG",
       "alternateName": ["Tester čitelnosti barev", "Kontrola kontrastu textu a pozadí", "Kalkulátor kontrastu barev", "Tester kontrastu WCAG"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
-      "description": "Zkontrolujte, zda jsou barvy textu a pozadí čitelné pro všechny uživatele. Nástroj vypočítá poměr kontrastu podle WCAG 2.1 a ukáže, zda splňuje požadavky přístupnosti.",
+      "description": "Zkontrolujte, zda jsou barvy textu a pozadí čitelné pro všechny uživatele. Nástroj vypočítá poměr kontrastu podle standardu WCAG a ukáže, zda splňujete požadavky přístupnosti.",
       "featureList": [
         "Výpočet poměru kontrastu",
-        "Kontrola souladu s WCAG 2.1 Úroveň AA",
-        "Kontrola souladu s WCAG 2.1 Úroveň AAA",
-        "Test běžného textu",
-        "Test velkého textu a nadpisů",
-        "Test ikon a UI komponent",
-        "Podpora formátu HEX, RGB, RGBA, HSL, HSLA",
-        "Výběr barev pomocí color pickeru",
+        "Kontrola souladu s WCAG 2.1 úroveň AA",
+        "Kontrola souladu s WCAG 2.1 úroveň AAA",
+        "Testování pro běžný text",
+        "Testování pro velký text a nadpisy",
+        "Testování pro ikony a prvky rozhraní",
+        "Podpora formátu barev HEX",
+        "Podpora formátů barev RGB a RGBA",
+        "Podpora formátů barev HSL a HSLA",
+        "Výběr barev pro vizuální volbu",
         "Živý náhled textu",
-        "Funkce automatického přizpůsobení barev",
+        "Funkce automatického přizpůsobení barvy",
         "Lokální zpracování v prohlížeči"
       ]
     },

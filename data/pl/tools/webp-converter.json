@@ -2,13 +2,13 @@
   "toolKey": "jpgToWebp",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter JPG/PNG na WebP za darmo – bez limitu plików",
-    "description": "Zmniejsz wagę zdjęć nawet o 35% bez utraty jakości. Konwersja JPG i PNG na WebP odbywa się lokalnie – pliki nie opuszczają Twojego urządzenia.",
+    "title": "Darmowy konwerter JPG i PNG na WebP bez limitu plików",
+    "description": "Zamień format JPG lub PNG na WebP i zmniejsz wagę zdjęć bez utraty jakości. Pełna prywatności bez limitu i rejestracji",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/jpg-png-na-webp-bez-limitu"
   },
   "hero": {
-    "title": "Konwerter JPG/PNG na WebP – za darmo, bez limitu",
+    "title": "Zamień JPG i PNG na WebP – zmniejsz wagę zdjęć bez utraty jakości",
     "description": "Zmniejsz wagę zdjęć nawet o 35% bez utraty jakości. Dodaj pliki, wybierz poziom jakości i pobierz obrazy w formacie WebP. Cała konwersja odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
@@ -24,8 +24,8 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter JPG i PNG na WebP online - darmowy, bez limitu",
-      "alternateName": ["Konwerter JPG na WebP i PNG na WebP"],
+      "name": "Konwerter JPG/PNG na WebP – bez limitu plików",
+      "alternateName": ["Konwerter JPG na WebP i PNG na WebP", "Zamień zdjęcia na format WebP", "Kompresja obrazów do WebP", "Narzędzie do konwersji grafik na WebP"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Darmowy konwerter JPG i PNG na WebP online po polsku. Zmniejsz wagę zdjęć nawet o 35%, popraw prędkość ładowania strony i wyniki Core Web Vitals. Konwersja odbywa się w przeglądarce - pliki nie są wysyłane na serwer.",

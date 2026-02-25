@@ -2,13 +2,13 @@
   "toolKey": "metaCounter",
   "locale": "da",
   "metadata": {
-    "title": "Gratis meta-titel & beskrivelseskontrol – Bredde i pixels",
-    "description": "Kontrollér længden af meta-titel og beskrivelse i tegn og pixels. Google SERP-forhåndsvisning hjælper dig med at undgå afkortede titler og beskrivelser i søgeresultater.",
+    "title": "Gratis kontrol af meta-titel og beskrivelseslængde i pixels",
+    "description": "Kontrollér om din meta-titel og beskrivelse har den rigtige længde ifølge Googles retningslinjer. Kontrol med live forhåndsvisning og tips.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-og-beskrivelse-kontrol-da.webp",
     "path": "/da/vaerktojer/meta-titel-og-beskrivelse-kontrol"
   },
   "hero": {
-    "title": "Kontrollér længden af sidens titel og beskrivelse i Google",
+    "title": "Kontrollér meta-titel og beskrivelseslængde – Google-forhåndsvisning",
     "description": "Indtast titel og beskrivelse, og værktøjet tæller antal tegn, ord, bredde i pixels og viser om længden stemmer overens med anbefalede SEO-praksisser.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis kontrol af meta-titel og beskrivelseslængde",
+      "name": "Kontrol af meta-titel og beskrivelseslængde i pixels",
       "alternateName": ["Meta-titel og beskrivelseskontrol med Google-forhåndsvisning", "Google SERP-forhåndsvisning", "SEO-titelbreddekontrol i pixels"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "SEOTool",

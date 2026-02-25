@@ -2,13 +2,13 @@
   "toolKey": "metaCounter",
   "locale": "no",
   "metadata": {
-    "title": "Gratis meta-tittel- og beskrivelsessjekker – Piksler",
-    "description": "Sjekk lengden på meta-tittel og beskrivelse i tegn og piksler. Forhåndsvis Google-søkeresultater og unngå avkortede titler og beskrivelser i søkeresultatene.",
+    "title": "Gratis kontroll av metatittel og beskrivelseslengde i piksler",
+    "description": "Sjekk om metatittelen og beskrivelsen har riktig lengde i henhold til Googles retningslinjer. Kontroll med live forhåndsvisning og tips.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-tittel-og-beskrivelse-sjekker-no.webp",
     "path": "/no/verktoy/meta-tittel-og-beskrivelse-sjekker"
   },
   "hero": {
-    "title": "Sjekk lengden på sidens tittel og beskrivelse i Google",
+    "title": "Sjekk metatittel og beskrivelseslengde – Google-forhåndsvisning",
     "description": "Skriv inn tittel og beskrivelse, og verktøyet teller antall tegn, ord, bredde i piksler og viser om lengden er i samsvar med anbefalte SEO-praksiser.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
@@ -24,20 +24,20 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis sjekk av meta-tittel- og beskrivelseslengde",
+      "name": "Kontroll av metatittel og beskrivelseslengde i piksler",
       "alternateName": ["Meta-tittel- og beskrivelsessjekker med Google-forhåndsvisning", "Google SERP-forhåndsvisning", "SEO-tittelbreddesjekk i piksler"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "SEOTool",
-      "description": "Gratis sjekk av meta-tittel- og beskrivelseslengde. Sjekker antall tegn, ord og bredde i piksler. Viser forhåndsvisning av hvordan tittel og beskrivelse vises i Googles søkeresultater.",
+      "description": "Gratis kontroll av metatittel- og beskrivelseslengde. Sjekker antall tegn, ord og bredde i piksler. Viser forhåndsvisning av hvordan tittelen og beskrivelsen vises i Googles søkeresultater.",
       "featureList": [
-        "Tegnteller for meta-tittel",
-        "Tegnteller for meta-beskrivelse",
-        "Breddemåling i piksler (tilsvarer Google)",
+        "Tegnteller for metatittel",
+        "Tegnteller for metabeskrivelse",
+        "Pikselbreddemåling (Google-kompatibel)",
         "Ordteller for tittel og beskrivelse",
         "Forhåndsvisning av Google-søkeresultater",
-        "Fargekodet lengdevurdering (for kort / god / for lang)",
+        "Fargekodad lengdevurdering (for kort / optimal / for lang)",
         "Advarsel ved avkorting av tittel og beskrivelse",
-        "Anbefaling av optimal lengde",
+        "Anbefalinger for optimal lengde",
         "Lokal behandling i nettleseren"
       ]
     },

@@ -2,13 +2,13 @@
   "toolKey": "jpgToWebp",
   "locale": "es",
   "metadata": {
-    "title": "Convertidor JPG/PNG a WebP gratis – sin límites",
-    "description": "Reduzca el tamaño de las imágenes hasta un 35% sin perder calidad. Conversión JPG/PNG a WebP local – los archivos no salen de su dispositivo.",
+    "title": "Convertidor gratuito de JPG y PNG a WebP sin límite de archivos",
+    "description": "Convierta JPG o PNG a WebP y reduzca el tamaño de las imágenes sin pérdida de calidad. Privacidad total, sin límites y sin registro.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-jpg-png-a-webp"
   },
   "hero": {
-    "title": "Convertidor JPG/PNG a WebP – gratis, sin límites",
+    "title": "Convierte JPG y PNG a WebP – reduce el tamaño sin perder calidad",
     "description": "Reduzca el tamaño de las imágenes hasta un 35% sin perder calidad. Añada archivos, elija el nivel de calidad y descargue las imágenes en formato WebP. Toda la conversión se realiza localmente en el navegador.",
     "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
@@ -24,20 +24,20 @@
   },
   "schemas": {
     "software": {
-      "name": "Convertidor de JPG y PNG a WebP — gratuito, sin límites",
+      "name": "Convertidor JPG/PNG a WebP – sin límite de archivos",
       "alternateName": "Convertidor de JPG a WebP y PNG a WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertidor gratuito de JPG y PNG a WebP. Reduzca el tamaño de las imágenes hasta un 35%, mejore la velocidad de carga y las puntuaciones de Core Web Vitals. La conversión se realiza en el navegador: los archivos no se envían a un servidor.",
+      "description": "Convertidor gratuito de JPG y PNG a WebP. Reduzca el tamaño de las imágenes hasta un 35 %, mejore la velocidad de carga y los resultados de Core Web Vitals. La conversión se realiza en el navegador – los archivos no se envían a un servidor.",
       "featureList": [
         "Conversión de JPG a WebP",
         "Conversión de PNG a WebP",
-        "Ajuste del nivel de calidad (60-95%)",
-        "Conversión por lotes de varios archivos",
+        "Ajuste del nivel de calidad (60–95 %)",
+        "Conversión por lotes de múltiples archivos",
         "Vista previa del tamaño antes y después de la conversión",
-        "Descarga individual de archivos",
+        "Descarga de archivos individuales",
         "Descarga de todos los archivos como ZIP",
-        "Procesamiento local en el navegador (los archivos no se envían a un servidor)"
+        "Procesamiento local en el navegador (los archivos no se envían al servidor)"
       ]
     },
     "howTo": {

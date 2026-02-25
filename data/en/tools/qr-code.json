@@ -2,13 +2,13 @@
   "toolKey": "qrCode",
   "locale": "en",
   "metadata": {
-    "title": "Free QR-Code Generator – PNG & SVG, No Signup",
-    "description": "Create QR codes for websites, vCards, menus or flyers in seconds. Export as PNG & SVG. Customize colors and size. No signup, no limits.",
+    "title": "Free QR Code Generator Without Login or Registration",
+    "description": "Generate a QR code for your website, vCard business card or print. Paste a link, choose code color, size and download a ready QR code in PNG and SVG.",
     "ogImage": "/assets/tools/qr-code-generator/free-qr-code-generator-en.webp",
     "path": "/en/tools/free-qr-code-generator"
   },
   "hero": {
-    "title": "QR-Code Generator – Free, No Signup Required",
+    "title": "Create a QR code for website, vCard or print – PNG & SVG",
     "description": "Create a QR code for a website, vCard business card, email, phone, or text. Customize colors, size, and error correction level, then download a ready PNG or SVG file.",
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Free QR code generator — PNG and SVG export",
+      "name": "QR Code Generator Without Login or Registration",
       "alternateName": [
         "QR code creator tool",
         "vCard QR code generator",
@@ -38,7 +38,7 @@
       ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "QRCodeGenerator",
-      "description": "Create a QR code for a website, business card, menu, or flyer. Choose the data type, customize colors and size, then download a PNG or SVG file.",
+      "description": "Create a QR code for a website, business card, menu, or flyer. Choose the data type, customize colors and size, then download a ready PNG or SVG file.",
       "featureList": [
         "QR code for URL (website)",
         "QR code for plain text",

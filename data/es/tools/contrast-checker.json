@@ -2,13 +2,13 @@
   "toolKey": "contrastChecker",
   "locale": "es",
   "metadata": {
-    "title": "Comprobador de contraste de colores gratis – WCAG 2.1",
-    "description": "Compruebe si los colores de texto y fondo son legibles según WCAG 2.1. Ratio de contraste, evaluación AA/AAA y corrección automática de colores.",
+    "title": "Comprobador gratuito de contraste de colores y legibilidad del texto",
+    "description": "Compruebe si sus colores tienen buen contraste y legibilidad según WCAG 2.1 AA y AAA. Añada colores y utilice la corrección automática del contraste.",
     "ogImage": "/assets/tools/color-contrast-and-readability-checker/comprobador-de-contraste-de-colores-es.webp",
     "path": "/es/herramientas/comprobador-de-contraste-de-colores"
   },
   "hero": {
-    "title": "Comprobador de contraste y legibilidad de colores",
+    "title": "Comprueba el contraste de colores y legibilidad según WCAG",
     "description": "Introduzca un color de texto y de fondo, y la herramienta mostrará si el contraste es suficiente. Los cálculos se basan en el estándar internacional de accesibilidad WCAG 2.1, que define valores mínimos de contraste para diferentes tipos de contenido.",
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Comprobador de contraste y legibilidad de colores — WCAG 2.1",
+      "name": "Comprobador de contraste de colores y legibilidad del texto – WCAG",
       "alternateName": [
         "Probador de legibilidad de colores",
         "Comprobador de contraste de texto y fondo",
@@ -35,20 +35,20 @@
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
-      "description": "Compruebe si los colores de texto y fondo son legibles para todos los usuarios. La herramienta calcula la relación de contraste según WCAG 2.1 y muestra si cumple con los requisitos de accesibilidad.",
+      "description": "Compruebe si los colores del texto y del fondo son legibles para todos los usuarios. La herramienta calcula la relación de contraste según el estándar WCAG y muestra si cumple los requisitos de accesibilidad.",
       "featureList": [
         "Cálculo de la relación de contraste",
-        "Verificación de conformidad WCAG 2.1 Nivel AA",
-        "Verificación de conformidad WCAG 2.1 Nivel AAA",
-        "Prueba de texto normal",
-        "Prueba de texto grande y encabezados",
-        "Prueba de iconos y componentes de interfaz",
+        "Verificación de conformidad con WCAG 2.1 nivel AA",
+        "Verificación de conformidad con WCAG 2.1 nivel AAA",
+        "Prueba para texto normal",
+        "Prueba para texto grande y encabezados",
+        "Prueba para iconos y componentes de interfaz",
         "Soporte de formato de color HEX",
-        "Soporte de formato de color RGB y RGBA",
-        "Soporte de formato de color HSL y HSLA",
+        "Soporte de formatos de color RGB y RGBA",
+        "Soporte de formatos de color HSL y HSLA",
         "Selector de color para selección visual",
-        "Vista previa de texto en vivo",
-        "Función de coincidencia automática de colores",
+        "Vista previa del texto en vivo",
+        "Función de ajuste automático del color",
         "Procesamiento local en el navegador"
       ]
     },

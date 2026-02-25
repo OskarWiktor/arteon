@@ -2,13 +2,13 @@
   "toolKey": "imageResize",
   "locale": "it",
   "metadata": {
-    "title": "Editor di immagini gratuito – ritaglia e ridimensiona",
-    "description": "Ritaglia e ridimensiona le immagini in pochi secondi. Modelli per Instagram, Facebook, LinkedIn. Converti JPG in WebP. Avatar rotondi.",
+    "title": "Ritaglio, ridimensionamento e conversione di immagini gratis",
+    "description": "Ridimensiona, ritaglia e converti la tua immagine gratis. Usa formati pronti per i social media e scarica JPG, PNG o WebP.",
     "ogImage": "/assets/tools/free-image-editor-crop-resize-and-convert/editor-di-immagini-online-it.webp",
     "path": "/it/strumenti/editor-di-immagini-online"
   },
   "hero": {
-    "title": "Editor di immagini – ritaglia e ridimensiona gratis",
+    "title": "Ridimensiona, ritaglia e converti immagini online – editor gratuito",
     "description": "Ritaglia e ridimensiona le tue immagini per i social media, i siti web e i materiali stampati. Modelli pronti per Instagram, Facebook e LinkedIn - oppure inserisci le tue dimensioni personalizzate.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -24,19 +24,26 @@
   },
   "schemas": {
     "software": {
-      "name": "Editor di immagini gratuito — ritaglia, ridimensiona e converti",
+      "name": "Editor di immagini – ritaglio, ridimensionamento e conversione",
       "alternateName": ["Ritagliare immagini gratis", "Ridimensionare immagini gratis", "Ritagliare immagini Instagram", "Dimensione copertina Facebook", "Creare banner LinkedIn"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Ritaglia e ridimensiona le tue immagini per i social media e i siti web. Modelli per Instagram, Facebook, LinkedIn. Tre forme di ritaglio, esportazione in PNG, JPG, WebP.",
+      "description": "Editor di immagini online gratuito per ridimensionare, ritagliare e convertire formati. Preset per Instagram, Facebook e LinkedIn. Creazione di avatar circolari. Esportazione in JPG, PNG e WebP con controllo qualità. Elaborazione locale nel browser.",
       "featureList": [
-        "Modelli per Instagram, Facebook, LinkedIn, OG Image",
-        "Tre forme di ritaglio: rettangolo, quadrato, cerchio",
-        "Dimensioni personalizzate in pixel",
-        "Controllo dello zoom e della posizione",
-        "Esportazione in PNG, JPG, WebP",
-        "Regolazione della qualità per JPG e WebP",
-        "Esecuzione locale nel browser"
+        "Ridimensionamento immagini a qualsiasi dimensione",
+        "Ritaglio con selezione area interattiva",
+        "Formati predefiniti per Instagram (post quadrato, post verticale, story, reels)",
+        "Formati predefiniti per Facebook (post, copertina pagina)",
+        "Formati predefiniti per LinkedIn (post, banner profilo)",
+        "Formati predefiniti per web (immagine OG, hero, banner, miniatura)",
+        "Forme di ritaglio: rettangolo, quadrato, cerchio (avatar rotondo)",
+        "Griglia 3x3 (regola dei terzi) con scelta colore",
+        "Zoom ritaglio 100–300 %",
+        "Posizione precisa del ritaglio (X, Y) con centratura",
+        "Conversione formati: JPG, PNG, WebP",
+        "Controllo qualità compressione 60–100 %",
+        "Elaborazione locale nel browser",
+        "Strumento gratuito senza registrazione"
       ]
     },
     "howTo": {

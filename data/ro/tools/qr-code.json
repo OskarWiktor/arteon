@@ -2,13 +2,13 @@
   "toolKey": "qrCode",
   "locale": "ro",
   "metadata": {
-    "title": "Generator gratuit coduri QR – Descărcați PNG și SVG",
-    "description": "Creați coduri QR pentru site-uri web, vCard, meniuri sau pliante în câteva secunde. Export PNG și SVG. Personalizați culorile și dimensiunea.",
+    "title": "Generator gratuit de coduri QR fără autentificare și înregistrare",
+    "description": "Generați un cod QR pentru site-ul dvs., carte de vizită vCard sau tipărire. Lipiți un link, alegeți culoarea codului, dimensiunea și descărcați codul QR în PNG și SVG.",
     "ogImage": "/assets/tools/qr-code-generator/generator-coduri-qr-gratuit-ro.webp",
     "path": "/ro/instrumente/generator-coduri-qr-gratuit"
   },
   "hero": {
-    "title": "Generator de coduri QR – Gratuit, fără înregistrare",
+    "title": "Creează un cod QR pentru site, carte de vizită vCard sau tipărire",
     "description": "Creați un cod QR pentru un site web, carte de vizită vCard, e-mail, telefon sau text. Personalizați culorile, dimensiunea și nivelul de corecție a erorilor, apoi descărcați fișierul PNG sau SVG.",
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Generator gratuit de coduri QR — PNG și SVG",
+      "name": "Generator de coduri QR fără autentificare și înregistrare",
       "alternateName": [
         "Creator de coduri QR gratuit",
         "Generator de coduri QR vCard",
@@ -43,7 +43,7 @@
         "Cod QR pentru URL (site web)",
         "Cod QR pentru text simplu",
         "Cod QR vCard (date de contact)",
-        "Cod QR pentru e-mail (adresă, subiect, conținut)",
+        "Cod QR pentru email (adresă, subiect, conținut)",
         "Cod QR pentru număr de telefon",
         "Culori personalizabile pentru cod și fundal",
         "Selectare dimensiune cod în pixeli",

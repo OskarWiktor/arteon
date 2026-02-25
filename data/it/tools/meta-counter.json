@@ -2,13 +2,13 @@
   "toolKey": "metaCounter",
   "locale": "it",
   "metadata": {
-    "title": "Verificatore di meta titolo e descrizione gratuito – SEO",
-    "description": "Controlla la lunghezza del meta titolo e della descrizione in caratteri e pixel. Anteprima Google per evitare snippet troncati nei risultati di ricerca.",
+    "title": "Contatore gratuito della lunghezza di meta titolo e descrizione in pixel",
+    "description": "Verifica se il meta titolo e la descrizione hanno la lunghezza corretta secondo le linee guida di Google. Contatore con anteprima dal vivo e suggerimenti.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/verificatore-meta-titolo-e-descrizione-it.webp",
     "path": "/it/strumenti/verificatore-meta-titolo-e-descrizione"
   },
   "hero": {
-    "title": "Verificatore di meta titolo e descrizione",
+    "title": "Verifica la lunghezza del meta titolo e descrizione – anteprima Google",
     "description": "Controlla il numero di caratteri, di parole e la larghezza in pixel dei tuoi meta titoli e descrizioni. Anteprima in tempo reale dell'aspetto della tua pagina nei risultati Google.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
@@ -24,18 +24,21 @@
   },
   "schemas": {
     "software": {
-      "name": "Verificatore di meta titolo e descrizione — anteprima Google",
+      "name": "Contatore della lunghezza di meta titolo e descrizione in pixel",
       "alternateName": ["Verificatore meta titolo con anteprima Google", "Contatore caratteri meta titolo", "Anteprima SERP Google", "Verificatore lunghezza SEO"],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "SEOTool",
-      "description": "Verificatore di meta titolo e descrizione con anteprima Google. Mostra il numero di caratteri, di parole e la larghezza in pixel per evitare titoli e descrizioni troncati.",
+      "description": "Contatore gratuito della lunghezza di meta titolo e descrizione. Verifica il numero di caratteri, parole e larghezza in pixel. Mostra un'anteprima di come titolo e descrizione appaiono nei risultati di ricerca di Google.",
       "featureList": [
-        "Contatore di caratteri e parole",
-        "Misurazione della larghezza in pixel",
-        "Anteprima del risultato Google (SERP)",
-        "Valutazione della lunghezza (troppo corto / buona / troppo lungo)",
-        "URL opzionale nell'anteprima",
-        "Esecuzione locale nel browser"
+        "Contatore di caratteri per il meta titolo",
+        "Contatore di caratteri per la meta descrizione",
+        "Misurazione della larghezza in pixel (compatibile con Google)",
+        "Contatore di parole per titolo e descrizione",
+        "Anteprima dei risultati di ricerca Google",
+        "Valutazione della lunghezza con codice colore (troppo corto / ottimale / troppo lungo)",
+        "Avviso di troncamento del titolo e della descrizione",
+        "Raccomandazioni sulla lunghezza ottimale",
+        "Elaborazione locale nel browser"
       ]
     },
     "howTo": {

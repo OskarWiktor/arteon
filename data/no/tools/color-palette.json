@@ -2,13 +2,13 @@
   "toolKey": "colorPalette",
   "locale": "no",
   "metadata": {
-    "title": "Gratis fargepalettgenerator – 9 paletter fra en farge",
-    "description": "Generer 9 harmoniske fargepaletter fra én grunnfarge: monokromatisk, komplementær, triadisk, pastell og flere. Kopier HEX-, RGB- og HSL-koder med ett klikk.",
+    "title": "Gratis fargepalettgenerator – 9 skjemaer",
+    "description": "Generer 9 fargepaletter fra én farge: monokromatisk, komplementær, triadisk, pastell og flere. Kopier HEX-koder med ett klikk.",
     "ogImage": "/assets/tools/color-palette-generator/fargepalettgenerator-no.webp",
     "path": "/no/verktoy/fargepalettgenerator"
   },
   "hero": {
-    "title": "Fargepalettgenerator",
+    "title": "Generer 9 fargepaletter fra én grunnfarge",
     "description": "Skriv inn en grunnfarge, og verktøyet genererer 9 harmoniske fargepaletter: monokromatisk, komplementær, triadisk, pastell og flere. Hver farge kan kopieres med sin HEX-kode.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
@@ -24,26 +24,26 @@
   },
   "schemas": {
     "software": {
-      "name": "Fargepalettgenerator",
+      "name": "Fargepalettgenerator – 9 fargeskjemaer",
       "alternateName": ["Fargeskemagenerator", "Fargegenerator", "Fargetilpassingsverktøy", "Fargeharmonigenerator"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Gratis fargepalettgenerator. Skriv inn en HEX-farge, og verktøyet genererer 9 skjemaer: monokromatisk, tilstøtende, komplementær, triadisk, splittet komplementær, pastell, mørk, tonal og minimalistisk.",
+      "description": "Gratis fargepalettgenerator. Skriv inn én HEX-farge, og verktøyet genererer 9 skjemaer: monokromatisk, tilgrensende, komplementær, triadisk, delt komplementær, pastell, mørk, tonal og minimalistisk. Hver farge kan kopieres med sin HEX-kode og HSL-verdi.",
       "featureList": [
-        "Monokromatisk skjema – nyanser av en farge",
-        "Tilstøtende skjema – farger ved siden av hverandre på fargehjulet",
-        "Komplementært skjema – motstående farger",
-        "Triadisk skjema – 3 farger med lik avstand",
-        "Splittet komplementært skjema",
-        "Pastellpalett – myke, desaturerte nyanser",
+        "Monokromatisk skjema – nyanser av én farge",
+        "Tilgrensende skjema – farger ved siden av hverandre på fargehjulet",
+        "Komplementært skjema – motsatte farger",
+        "Triadisk skjema – 3 farger med like mellomrom",
+        "Delt komplementært skjema – grunnfarge og 2 naboer til komplementet",
+        "Pastellpalett – myke, dempede nyanser",
         "Mørk palett – dype farger for mørke temaer",
-        "Tonal palett – lysstyrkenivåer av en farge",
+        "Tonal palett – lysstyrkeskala for én farge",
         "Minimalistisk palett – sterk aksent og nøytrale farger",
         "Grunnfarge i HEX-format",
         "Fargevelger for visuelt valg",
         "Tilfeldig startfarge",
-        "Kopier HEX-kode til utklippstavle",
-        "HSL-verdi vist ved hver farge",
+        "Kopier HEX-kode til utklippstavlen",
+        "HSL-verdi vist ved siden av hver farge",
         "Lokal behandling i nettleseren"
       ]
     },

@@ -2,13 +2,13 @@
   "toolKey": "favicon",
   "locale": "nl",
   "metadata": {
-    "title": "Gratis favicon-generator – Favicon.ico van elke foto",
-    "description": "Maak favicon.ico en PNG-pictogrammen van elke JPG-, PNG- of WebP-afbeelding. Upload, pas het bijsnijdkader aan en download direct. Zonder registratie.",
+    "title": "Gratis website-icongenerator – maak favicon.ico",
+    "description": "Maak een complete favicon.ico-set voor uw website vanuit één afbeelding. Alle vereiste formaten zonder login en registratie.",
     "ogImage": "/assets/tools/favicon-generator/gratis-favicon-generator-nl.webp",
     "path": "/nl/tools/gratis-favicon-generator"
   },
   "hero": {
-    "title": "Favicon-generator – Maak gratis favicon.ico",
+    "title": "Maak favicon.ico voor uw website vanuit één afbeelding",
     "description": "Genereer favicon.ico en een complete set PNG-pictogrammen voor uw website vanuit één afbeelding. Alle verwerking vindt lokaal in de browser plaats.",
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
@@ -24,24 +24,24 @@
   },
   "schemas": {
     "software": {
-      "name": "Favicon-generator - gratis pictogrammaker voor websites",
+      "name": "Favicon.ico-generator voor websites",
       "alternateName": ["Favicon.ico en PNG-pictogramgenerator"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "FaviconGenerator",
       "description": "Gratis favicon-generator. Maak favicon.ico en PNG-pictogrammen 16x16, 32x32, 180x180, 192x192 en 512x512 zonder limieten en zonder bestanden naar een server te sturen. Verwerking vindt lokaal in de browser plaats.",
       "featureList": [
-        "Genereer favicon.ico (16x16, 32x32, 48x48 in één bestand)",
-        "Genereer PNG-pictogrammen 16x16 en 32x32",
-        "Genereer apple-touch-icon 180x180",
-        "Genereer PWA-pictogrammen 192x192 en 512x512",
+        "Generatie van favicon.ico (16x16, 32x32, 48x48 in één bestand)",
+        "Generatie van PNG-pictogrammen 16x16 en 32x32",
+        "Generatie van apple-touch-icon 180x180",
+        "Generatie van PWA-pictogrammen 192x192 en 512x512",
         "Ondersteuning voor PNG-, JPG- en SVG-bronafbeeldingen",
-        "Achtergrondkleurconfiguratie",
-        "Genereer manifest.json-bestand voor PWA",
-        "Download alle bestanden als ZIP",
-        "Download individuele bestanden",
-        "Lighthouse-conformiteit",
-        "Browserverwerking (bestanden worden niet naar een server gestuurd)",
-        "Gratis tool, geen login vereist"
+        "Configuratie van achtergrondkleur",
+        "Generatie van manifest.json-bestand voor PWA",
+        "Alle bestanden als ZIP downloaden",
+        "Individuele bestanden downloaden",
+        "Lighthouse-conform",
+        "Verwerking in de browser (bestanden worden niet naar server verzonden)",
+        "Gratis tool zonder registratie"
       ]
     },
     "howTo": {

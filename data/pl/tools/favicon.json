@@ -2,13 +2,13 @@
   "toolKey": "favicon",
   "locale": "pl",
   "metadata": {
-    "title": "Generator favicon za darmo – stwórz favicon.ico z obrazu",
-    "description": "Stwórz favicon.ico i kompletny zestaw favicon dla swojej strony z jednego obrazu. Wszystkie wymagane rozmiary w jednym kliknięciu.",
+    "title": "Darmowy generator ikony dla strony - stwórz favicon.ico",
+    "description": "Stwórz kompletny zestaw favicon.ico dla swojej witryny internetowej z jednego obrazu. Wszystkie wymagane rozmiary bez logowania i rejestracji.",
     "ogImage": "/assets/tools/favicon-generator/darmowy-generator-favicon-ico-pl.webp",
     "path": "/narzedzia/darmowy-generator-favicon-ico"
   },
   "hero": {
-    "title": "Generator favicon – stwórz favicon.ico za darmo",
+    "title": "Stwórz favicon.ico dla swojej strony z jednego obrazu",
     "description": "Wygeneruj favicon.ico i kompletny zestaw ikon PNG dla swojej strony z jednego obrazu. Całe przetwarzanie odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
@@ -24,8 +24,8 @@
   },
   "schemas": {
     "software": {
-      "name": "Generator favicon online - darmowy kreator ikon dla strony",
-      "alternateName": "Generator favicon.ico i ikon PNG",
+      "name": "Generator favicon.ico dla strony internetowej",
+      "alternateName": ["Kreator favicon dla strony internetowej", "Generator ikony witryny favicon.ico", "Narzędzie do tworzenia favicon", "Favicon generator online"],
       "applicationSubCategory": "IconGenerator",
       "description": "Darmowy generator favicon online po polsku. Twórz favicon.ico oraz ikony PNG 16x16, 32x32, 180x180, 192x192 i 512x512 bez limitów i bez wysyłania plików na serwer. Przetwarzanie odbywa się lokalnie w przeglądarce.",
       "featureList": [

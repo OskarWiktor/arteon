@@ -2,13 +2,13 @@
   "toolKey": "colorPalette",
   "locale": "en",
   "metadata": {
-    "title": "Free Color Palette Generator – 9 Palettes From One Color",
-    "description": "Generate 9 color palettes from one base color: monochromatic, complementary, triadic, pastel and more. Copy HEX codes in one click. No signup, no limits.",
+    "title": "Free Color Palette Generator – 9 Schemes",
+    "description": "Generate 9 color palettes from one color: monochromatic, complementary, triadic, pastel and more. Copy HEX codes in one click.",
     "ogImage": "/assets/tools/color-palette-generator/color-palette-generator-en.webp",
     "path": "/en/tools/color-palette-generator"
   },
   "hero": {
-    "title": "Color palette generator",
+    "title": "Generate 9 color palettes from a single base color",
     "description": "Enter one base color, and the tool will generate 9 harmonious color palettes: monochromatic, complementary, triadic, pastel, and more. Each color can be copied with its HEX code.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
@@ -24,21 +24,21 @@
   },
   "schemas": {
     "software": {
-      "name": "Color palette generator",
+      "name": "Color Palette Generator – 9 Color Schemes",
       "alternateName": ["Color scheme generator", "Color palette creator", "Color matching tool", "Color harmony generator", "HEX color palette tool"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
       "description": "Free color palette generator. Enter one HEX color and the tool will generate 9 schemes: monochromatic, analogous, complementary, triadic, split-complementary, pastel, dark, tonal, and minimalist. Each color can be copied with its HEX code and HSL value.",
       "featureList": [
-        "Monochromatic scheme - shades of one color",
-        "Analogous scheme - neighboring colors on the color wheel",
-        "Complementary scheme - opposite colors",
-        "Triadic scheme - 3 colors at equal intervals",
-        "Split-complementary scheme - base color and 2 neighbors of its complement",
-        "Pastel palette - light, muted shades",
-        "Dark palette - deep colors for dark themes",
-        "Tonal palette - lightness scale of one hue",
-        "Minimalist palette - strong accent with light neutrals",
+        "Monochromatic scheme – shades of one color",
+        "Analogous scheme – neighboring colors on the color wheel",
+        "Complementary scheme – opposite colors",
+        "Triadic scheme – 3 colors at equal intervals",
+        "Split-complementary scheme – base color and 2 neighbors of its complement",
+        "Pastel palette – light, muted shades",
+        "Dark palette – deep colors for dark themes",
+        "Tonal palette – lightness scale of one hue",
+        "Minimalist palette – strong accent with light neutrals",
         "Base color in HEX format",
         "Color picker for visual selection",
         "Random starting color",

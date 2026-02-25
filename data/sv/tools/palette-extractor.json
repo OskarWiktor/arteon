@@ -2,13 +2,13 @@
   "toolKey": "paletteExtractor",
   "locale": "sv",
   "metadata": {
-    "title": "Gratis färgextraktor från bild – Palett från valfritt foto",
-    "description": "Ladda upp ett foto eller en logotyp och extrahera upp till 12 dominerande färger med HEX- och RGB-koder. Passar för UI, varumärke och sociala medier.",
+    "title": "Gratis färgextraktor från bild – färgpalett från foto",
+    "description": "Ladda upp ett foto och verktyget genererar en palett av dominerande färger. Färdiga HEX- och RGB-koder, full integritet och inga begränsningar.",
     "ogImage": "/assets/tools/image-color-extractor/fargextraktor-fran-bild-sv.webp",
     "path": "/sv/verktyg/fargextraktor-fran-bild"
   },
   "hero": {
-    "title": "Färgextraktor från bild – hämta palett från valfritt foto",
+    "title": "Extrahera färger från en bild – få palett med HEX-koder",
     "description": "Ladda upp ett foto, en logotyp eller grafik och verktyget extraherar upp till 12 dominerande färger med HEX- och RGB-koder. Analysen sker lokalt i din webbläsare.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Färgextraktor från bild – gratis palettgenerator",
+      "name": "Färgextraktor från bild – färgpalett från foto",
       "alternateName": ["Extrahera färgpalett från foto eller logotyp"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
-      "description": "Gratis färgextraktor från bild. Ladda upp ett foto, en logotyp eller grafik och få en palett med upp till 12 dominerande färger med HEX- och RGB-koder. Bearbetningen sker i webbläsaren – filer skickas inte till någon server.",
+      "description": "Gratis färgextraktor från bild. Ladda upp ett foto, logotyp eller grafik och få en palett med upp till 12 dominerande färger med HEX- och RGB-koder. Bearbetningen sker i webbläsaren – filer skickas inte till någon server.",
       "featureList": [
         "Automatisk extraktion av upp till 12 dominerande färger",
         "Analys av foton, logotyper och vektorgrafik",

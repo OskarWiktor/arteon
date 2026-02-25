@@ -2,13 +2,13 @@
   "toolKey": "metaCounter",
   "locale": "el",
   "metadata": {
-    "title": "Δωρεάν Έλεγχος Meta Title & Description – Πλάτος σε Pixel",
-    "description": "Ελέγξτε το μήκος meta title και description σε χαρακτήρες και pixels. Η προεπισκόπηση Google SERP σας βοηθά να αποφύγετε περικομμένα snippets.",
+    "title": "Δωρεάν μετρητής μήκους meta τίτλου και περιγραφής σε pixels",
+    "description": "Ελέγξτε αν ο meta τίτλος και η περιγραφή έχουν σωστό μήκος σύμφωνα με τις οδηγίες της Google. Μετρητής με ζωντανή προεπισκόπηση και συμβουλές.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/elegkhos-meta-titlou-kai-perigrafis-el.webp",
     "path": "/el/ergaleia/elegkhos-meta-titlou-kai-perigrafis"
   },
   "hero": {
-    "title": "Ελέγξτε το μήκος τίτλου και περιγραφής σελίδας στο Google",
+    "title": "Ελέγξτε το μήκος meta τίτλου και περιγραφής – προεπισκόπηση Google",
     "description": "Εισάγετε τίτλο και περιγραφή και το εργαλείο θα υπολογίσει αριθμό χαρακτήρων, αριθμό λέξεων, πλάτος σε pixels και θα δείξει αν το μήκος πληροί τις βέλτιστες πρακτικές SEO",
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Δωρεάν έλεγχος μήκους meta title και description",
+      "name": "Μετρητής μήκους meta τίτλου και περιγραφής σε pixels",
       "alternateName": [
         "Έλεγχος meta title και description με προεπισκόπηση Google",
         "Προεπισκόπηση snippet Google",
@@ -37,15 +37,15 @@
       ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "SEOTool",
-      "description": "Δωρεάν έλεγχος μήκους meta title και description. Ελέγχει αριθμό χαρακτήρων, αριθμό λέξεων και πλάτος σε pixels. Δείχνει προεπισκόπηση του πώς εμφανίζονται ο τίτλος και η περιγραφή στα αποτελέσματα αναζήτησης Google.",
+      "description": "Δωρεάν μετρητής μήκους meta τίτλου και περιγραφής. Ελέγχει τον αριθμό χαρακτήρων, λέξεων και πλάτος σε pixels. Δείχνει προεπισκόπηση του πώς εμφανίζονται ο τίτλος και η περιγραφή στα αποτελέσματα αναζήτησης της Google.",
       "featureList": [
-        "Μετρητής χαρακτήρων για meta title",
-        "Μετρητής χαρακτήρων για meta description",
+        "Μετρητής χαρακτήρων για meta τίτλο",
+        "Μετρητής χαρακτήρων για meta περιγραφή",
         "Μέτρηση πλάτους σε pixels (συμβατό με Google)",
         "Μετρητής λέξεων για τίτλο και περιγραφή",
         "Προεπισκόπηση αποτελεσμάτων αναζήτησης Google",
-        "Αξιολόγηση μήκους με χρωματική κωδικοποίηση (πολύ κοντό / βέλτιστο / πολύ μακρύ)",
-        "Προειδοποίηση περικοπής για τίτλο και περιγραφή",
+        "Χρωματική αξιολόγηση μήκους (πολύ σύντομο / βέλτιστο / πολύ μεγάλο)",
+        "Προειδοποίηση περικοπής τίτλου και περιγραφής",
         "Συστάσεις βέλτιστου μήκους",
         "Τοπική επεξεργασία στον browser"
       ]

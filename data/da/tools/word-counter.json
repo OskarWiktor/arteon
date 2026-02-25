@@ -2,13 +2,13 @@
   "toolKey": "wordCounter",
   "locale": "da",
   "metadata": {
-    "title": "Gratis ord- & tegntæller online – Tæl, transformer og analyser",
-    "description": "Gratis ord-, tegn-, sætnings- og afsnitstæller. Skift store bogstaver, fjern duplikater, sortér linjer. 8 målinger og 10 tekstværktøjer.",
+    "title": "Ord-, tegn- og læsetidstæller med tekstformatering",
+    "description": "Gratis tæller for ord, tegn, sætninger, afsnit og læsetid med store/små bogstaver-konverter. Kontrollér tekstlængden og ændr bogstaverne.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegntaeller-da.webp",
     "path": "/da/vaerktojer/ord-og-tegntaeller"
   },
   "hero": {
-    "title": "Ord- og tegntæller med tekstformateringsværktøjer",
+    "title": "Tæl ord og tegn – kontrollér læsetid og formatér tekst",
     "description": "Indsæt din tekst, og værktøjet tæller ord, tegn, sætninger, afsnit, unikke ord og læsetid. Skift store bogstaver, fjern duplikater eller sortér linjer",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis ord- og tegntæller med tekstværktøjer",
+      "name": "Ord-, tegn- og læsetidstæller med tekstformatering",
       "alternateName": [
         "Online word counter",
         "Character counter with and without spaces",
@@ -36,21 +36,21 @@
         "Sort text lines alphabetically"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
+      "description": "Gratis ord- og tegntæller med tekstformateringsværktøjer. Tæller ord, tegn, sætninger, afsnit, unikke ord og læsetid. Tilbyder 10 værktøjer: ændring af store/små bogstaver, fjernelse af mellemrum, tomme linjer, duplikater og sortering.",
       "featureList": [
-        "Word count",
-        "Character count with and without spaces",
-        "Sentence and paragraph count",
-        "Unique word count",
-        "Average word length",
-        "Estimated reading time",
-        "Convert to uppercase or lowercase",
-        "Convert to sentence case or title case",
-        "Toggle letter case",
-        "Remove extra spaces",
-        "Remove empty lines and duplicates",
-        "Sort lines A-Z and Z-A",
-        "Copy text to clipboard"
+        "Optælling af ord",
+        "Optælling af tegn med og uden mellemrum",
+        "Optælling af sætninger og afsnit",
+        "Optælling af unikke ord",
+        "Gennemsnitlig ordlængde",
+        "Estimeret læsetid",
+        "Konvertér til store eller små bogstaver",
+        "Konvertér til sætnings- eller titelstil",
+        "Invertér store/små bogstaver",
+        "Fjern overflødige mellemrum",
+        "Fjern tomme linjer og duplikater",
+        "Sortér linjer A–Z og Z–A",
+        "Kopiér tekst til udklipsholder"
       ]
     },
     "howTo": {

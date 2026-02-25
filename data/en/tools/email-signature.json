@@ -2,13 +2,13 @@
   "toolKey": "emailSignature",
   "locale": "en",
   "metadata": {
-    "title": "Free Email Signature Generator – HTML for Gmail & Outlook",
-    "description": "Create a professional HTML email signature without coding. Add contact details, logo, social media links and copy to Gmail or Outlook. No signup, no limits.",
+    "title": "Free HTML Email Signature Generator – Create Email Signature",
+    "description": "Create an HTML email signature without login or registration. Full customization, ready-made layouts, live preview and ready HTML code.",
     "ogImage": "/assets/tools/free-html-email-signature-generator/free-email-signature-generator-en.webp",
     "path": "/en/tools/free-email-signature-generator"
   },
   "hero": {
-    "title": "Create a professional HTML email signature",
+    "title": "Build an HTML email signature – copy to Gmail or Outlook",
     "description": "Build a professional email signature in minutes. Enter your details, choose colors, and copy the ready HTML code into Gmail, Outlook, or any email client.",
     "backgroundImage": "/assets/tools/free-html-email-signature-generator/free-email-signature-generator-en.webp"
   },
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Free email signature generator — HTML for Gmail and Outlook",
+      "name": "HTML Email Signature Generator – Email Signature Creator",
       "alternateName": ["HTML email signature generator", "Email signature creator", "Email footer generator"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Free HTML email signature generator. Add contact details, CTA link, and social media profiles, then copy the ready code into Gmail, Outlook, and other email clients.",
+      "description": "Free HTML email signature generator. Add contact details, CTA link, and social media profiles, then copy the ready signature code into Gmail, Outlook, and other email clients.",
       "featureList": [
         "Contact details (name, title, company)",
         "Phone, email, and website URL",

@@ -2,13 +2,13 @@
   "toolKey": "imageResize",
   "locale": "en",
   "metadata": {
-    "title": "Free Image Editor – Crop, Resize & Convert in Seconds",
-    "description": "Resize and crop images in seconds. Ready-made templates for Instagram, Facebook, LinkedIn. Convert JPG to WebP. Create circular avatars. No signup, no limits.",
+    "title": "Free Image Cropping, Resizing and Conversion",
+    "description": "Resize, crop and convert your image for free. Use ready-made formats for social media and download JPG, PNG or WebP.",
     "ogImage": "/assets/tools/free-image-editor-crop-resize-and-convert/online-image-editor-en.webp",
     "path": "/en/tools/online-image-editor"
   },
   "hero": {
-    "title": "Free Image Editor – Crop, Resize & Convert",
+    "title": "Resize, crop and convert your image online – free editor",
     "description": "Resize, crop, and convert images for Instagram, Facebook, and LinkedIn. Ready-made formats, circular avatars, export to JPG, PNG, and WebP. Local processing in the browser.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Free image editor — crop, resize and convert",
+      "name": "Image Editor – Cropping, Resizing and Conversion",
       "alternateName": [
         "Image resizer for social media",
         "Image cropper tool",
@@ -36,7 +36,7 @@
       ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Free image editor for resizing, cropping, and format conversion. Ready-made presets for Instagram, Facebook, and LinkedIn. Circular avatar creation. Export to JPG, PNG, and WebP with quality control. Local processing in the browser.",
+      "description": "Free online image editor for resizing, cropping and format conversion. Ready-made presets for Instagram, Facebook and LinkedIn. Circular avatar creation. Export to JPG, PNG and WebP with quality control. Local processing in the browser.",
       "featureList": [
         "Resize images to any dimensions",
         "Crop with interactive area selection",

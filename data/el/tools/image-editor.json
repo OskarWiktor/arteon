@@ -2,13 +2,13 @@
   "toolKey": "imageResize",
   "locale": "el",
   "metadata": {
-    "title": "Δωρεάν Επεξεργαστής Εικόνων – Περικοπή, Αλλαγή Μεγέθους &",
-    "description": "Αλλάξτε μέγεθος και περικόψτε εικόνες σε δευτερόλεπτα. Έτοιμα πρότυπα για Instagram, Facebook, LinkedIn. Μετατροπή JPG σε WebP. Δημιουργία στρογγυλών avatar.",
+    "title": "Δωρεάν περικοπή, αλλαγή μεγέθους και μετατροπή εικόνας",
+    "description": "Αλλάξτε μέγεθος, περικόψτε και μετατρέψτε την εικόνα σας δωρεάν. Χρησιμοποιήστε έτοιμες μορφές για κοινωνικά δίκτυα και κατεβάστε JPG, PNG ή WebP.",
     "ogImage": "/assets/tools/free-image-editor-crop-resize-and-convert/epexergasia-eikonas-el.webp",
     "path": "/el/ergaleia/epexergasia-eikonas"
   },
   "hero": {
-    "title": "Δωρεάν Επεξεργαστής Εικόνων – Περικοπή, Αλλαγή Μεγέθους & Μετατροπή",
+    "title": "Αλλάξτε μέγεθος, περικόψτε και μετατρέψτε εικόνες online – δωρεάν",
     "description": "Αλλάξτε μέγεθος, περικόψτε και μετατρέψτε εικόνες για Instagram, Facebook και LinkedIn. Έτοιμες μορφές, στρογγυλά avatar, εξαγωγή σε JPG, PNG και WebP. Τοπική επεξεργασία στον browser.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Δωρεάν επεξεργαστής εικόνων",
+      "name": "Επεξεργαστής εικόνας – περικοπή, αλλαγή μεγέθους και μετατροπή",
       "alternateName": [
         "Αλλαγή μεγέθους εικόνων",
         "Περικοπή εικόνων",
@@ -36,22 +36,22 @@
       ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Δωρεάν επεξεργαστής εικόνων για αλλαγή μεγέθους, περικοπή και μετατροπή μορφής. Έτοιμες ρυθμίσεις για Instagram, Facebook και LinkedIn. Δημιουργία στρογγυλών avatar. Εξαγωγή σε JPG, PNG και WebP με έλεγχο ποιότητας. Τοπική επεξεργασία στον browser.",
+      "description": "Δωρεάν online επεξεργαστής εικόνας για αλλαγή μεγέθους, περικοπή και μετατροπή μορφών. Έτοιμα preset για Instagram, Facebook και LinkedIn. Δημιουργία στρογγυλών avatar. Εξαγωγή σε JPG, PNG και WebP με έλεγχο ποιότητας. Τοπική επεξεργασία στον browser.",
       "featureList": [
         "Αλλαγή μεγέθους εικόνων σε οποιεσδήποτε διαστάσεις",
         "Περικοπή με διαδραστική επιλογή περιοχής",
-        "Έτοιμες μορφές Instagram (τετράγωνο post, portrait post, story, reels)",
+        "Έτοιμες μορφές Instagram (τετράγωνο post, κατακόρυφο post, story, reels)",
         "Έτοιμες μορφές Facebook (post, εξώφυλλο σελίδας)",
         "Έτοιμες μορφές LinkedIn (post, banner προφίλ)",
-        "Έτοιμες μορφές web (OG image, hero, banner, thumbnail)",
+        "Έτοιμες μορφές web (OG εικόνα, hero, banner, μικρογραφία)",
         "Σχήματα περικοπής: ορθογώνιο, τετράγωνο, κύκλος (στρογγυλό avatar)",
         "Πλέγμα 3x3 (κανόνας τρίτων) με επιλογή χρώματος",
-        "Zoom περικοπής 100–300%",
+        "Zoom περικοπής 100–300 %",
         "Ακριβής θέση περικοπής (X, Y) με κεντράρισμα",
-        "Μετατροπή μορφής: JPG, PNG, WebP",
-        "Έλεγχος ποιότητας συμπίεσης 60–100%",
+        "Μετατροπή μορφών: JPG, PNG, WebP",
+        "Έλεγχος ποιότητας συμπίεσης 60–100 %",
         "Τοπική επεξεργασία στον browser",
-        "Δωρεάν εργαλείο, χωρίς σύνδεση"
+        "Δωρεάν εργαλείο χωρίς εγγραφή"
       ]
     },
     "howTo": {

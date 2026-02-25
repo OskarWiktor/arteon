@@ -2,13 +2,13 @@
   "toolKey": "imageResize",
   "locale": "pt",
   "metadata": {
-    "title": "Editor de imagens gratuito – recortar e redimensionar",
-    "description": "Recorte e redimensione imagens em segundos. Modelos para Instagram, Facebook, LinkedIn. Converta JPG para WebP. Avatares redondos. Sem registo, sem limites.",
+    "title": "Corte, redimensionamento e conversão de imagens grátis",
+    "description": "Redimensione, corte e converta a sua imagem gratuitamente. Use formatos prontos para redes sociais e transfira JPG, PNG ou WebP.",
     "ogImage": "/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagens-online-pt.webp",
     "path": "/pt/ferramentas/editor-de-imagens-online"
   },
   "hero": {
-    "title": "Editor de imagens – recortar e redimensionar gratis",
+    "title": "Redimensione, recorte e converta imagens online – editor gratuito",
     "description": "Recorte e redimensione as suas imagens para redes sociais, sites e materiais impressos. Modelos prontos para Instagram, Facebook e LinkedIn – ou introduza as suas próprias dimensões.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Editor de imagens gratuito — recortar, redimensionar e converter",
+      "name": "Editor de imagens – corte, redimensionamento e conversão",
       "alternateName": [
         "Recortar imagens gratuito",
         "Redimensionar imagens gratuito",
@@ -37,15 +37,22 @@
       ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Recorte e redimensione as suas imagens para redes sociais e sites. Modelos para Instagram, Facebook, LinkedIn. Três formas de recorte, exportação em PNG, JPG, WebP.",
+      "description": "Editor de imagens online gratuito para redimensionar, cortar e converter formatos. Presets para Instagram, Facebook e LinkedIn. Criação de avatares circulares. Exportação para JPG, PNG e WebP com controlo de qualidade. Processamento local no navegador.",
       "featureList": [
-        "Modelos para Instagram, Facebook, LinkedIn, OG Image",
-        "Três formas de recorte: retângulo, quadrado, círculo",
-        "Dimensões personalizadas em píxeis",
-        "Controlo de zoom e posição",
-        "Exportação em PNG, JPG, WebP",
-        "Ajuste de qualidade para JPG e WebP",
-        "Execução local no navegador"
+        "Redimensionar imagens para qualquer dimensão",
+        "Corte com seleção de área interativa",
+        "Formatos predefinidos para Instagram (post quadrado, post retrato, story, reels)",
+        "Formatos predefinidos para Facebook (post, capa de página)",
+        "Formatos predefinidos para LinkedIn (post, banner de perfil)",
+        "Formatos predefinidos para web (imagem OG, hero, banner, miniatura)",
+        "Formas de corte: retângulo, quadrado, círculo (avatar redondo)",
+        "Grelha 3x3 (regra dos terços) com seleção de cor",
+        "Zoom de corte 100–300 %",
+        "Posição precisa do corte (X, Y) com centralização",
+        "Conversão de formatos: JPG, PNG, WebP",
+        "Controlo de qualidade de compressão 60–100 %",
+        "Processamento local no navegador",
+        "Ferramenta gratuita sem registo"
       ]
     },
     "howTo": {

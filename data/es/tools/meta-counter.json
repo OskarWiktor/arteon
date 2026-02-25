@@ -2,13 +2,13 @@
   "toolKey": "metaCounter",
   "locale": "es",
   "metadata": {
-    "title": "Verificador de meta título y descripción gratis – SEO",
-    "description": "Compruebe la longitud de meta título y descripción en caracteres y píxeles. Vista previa de Google para evitar textos truncados en los resultados.",
+    "title": "Contador gratuito de longitud de meta título y descripción en píxeles",
+    "description": "Compruebe si su meta título y descripción tienen la longitud adecuada según las directrices de Google. Contador con vista previa en vivo y sugerencias.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/verificador-de-meta-titulo-y-descripcion-es.webp",
     "path": "/es/herramientas/verificador-de-meta-titulo-y-descripcion"
   },
   "hero": {
-    "title": "Compruebe la longitud del título y la descripción de su página en Google",
+    "title": "Verifica la longitud del meta título y descripción – vista previa Google",
     "description": "Introduzca un título y una descripción, y la herramienta calculará el número de caracteres, el número de palabras, el ancho en píxeles y mostrará si la longitud cumple con las mejores prácticas SEO",
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Verificador gratuito de meta título y descripción",
+      "name": "Contador de longitud de meta título y descripción en píxeles",
       "alternateName": [
         "Verificador de meta título y descripción con vista previa de Google",
         "Vista previa de snippet de Google",
@@ -37,15 +37,15 @@
       ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "SEOTool",
-      "description": "Verificador gratuito de longitud de meta título y descripción. Comprueba el número de caracteres, el número de palabras y el ancho en píxeles. Muestra una vista previa de cómo aparecen el título y la descripción en los resultados de búsqueda de Google.",
+      "description": "Contador gratuito de longitud de meta título y descripción. Comprueba el número de caracteres, palabras y ancho en píxeles. Muestra una vista previa de cómo aparecen el título y la descripción en los resultados de búsqueda de Google.",
       "featureList": [
         "Contador de caracteres para meta título",
         "Contador de caracteres para meta descripción",
         "Medición de ancho en píxeles (compatible con Google)",
         "Contador de palabras para título y descripción",
         "Vista previa de resultados de búsqueda de Google",
-        "Evaluación de longitud codificada por colores (demasiado corto / óptimo / demasiado largo)",
-        "Aviso de truncamiento para título y descripción",
+        "Evaluación de longitud con código de colores (muy corto / óptimo / muy largo)",
+        "Advertencia de truncamiento de título y descripción",
         "Recomendaciones de longitud óptima",
         "Procesamiento local en el navegador"
       ]

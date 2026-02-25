@@ -2,13 +2,13 @@
   "toolKey": "colorPalette",
   "locale": "fr",
   "metadata": {
-    "title": "Générateur de palettes de couleurs gratuit – 9 palettes",
-    "description": "Générez 9 palettes de couleurs à partir d'une couleur : monochromatique, complémentaire, triadique, pastel, sombre et plus. Codes HEX copiables en un clic.",
+    "title": "Générateur gratuit de palettes de couleurs – 9 schémas",
+    "description": "Générez 9 palettes de couleurs à partir d'une couleur : monochromatique, complémentaire, triadique, pastel et plus. Copiez les codes HEX en un clic.",
     "ogImage": "/assets/tools/color-palette-generator/generateur-de-palettes-de-couleurs-fr.webp",
     "path": "/fr/outils/generateur-de-palettes-de-couleurs"
   },
   "hero": {
-    "title": "Générateur de palettes de couleurs",
+    "title": "Générez 9 palettes de couleurs à partir d'une couleur de base",
     "description": "Choisissez une couleur de base et générez 9 palettes harmonieuses. Monochromatique, complémentaire, triadique, pastel, sombre et plus – tous les calculs s'exécutent localement dans votre navigateur.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Générateur de palettes de couleurs — 9 palettes à partir d'une couleur",
+      "name": "Générateur de palettes de couleurs – 9 schémas de couleurs",
       "alternateName": [
         "Générateur de palettes gratuit",
         "Schémas de couleurs à partir d'une couleur",
@@ -36,14 +36,23 @@
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Générez des palettes de couleurs à partir d'une seule couleur de base. 9 types : monochromatique, analogue, complémentaire, triadique, complémentaire divisée, pastel, sombre, tonale et minimaliste.",
+      "description": "Générateur gratuit de palettes de couleurs. Saisissez une couleur HEX et l'outil générera 9 schémas : monochromatique, analogue, complémentaire, triadique, complémentaire divisé, pastel, sombre, tonal et minimaliste. Chaque couleur peut être copiée avec son code HEX et sa valeur HSL.",
       "featureList": [
-        "9 types de palettes à partir d'une couleur de base",
-        "Monochromatique, analogue, complémentaire, triadique, complémentaire divisée",
-        "Palettes pastel, sombre, tonale et minimaliste",
-        "Codes HEX copiables en un clic",
-        "Calculs basés sur l'espace colorimétrique HSL",
-        "Exécution locale dans le navigateur"
+        "Schéma monochromatique – nuances d'une couleur",
+        "Schéma analogue – couleurs voisines sur la roue chromatique",
+        "Schéma complémentaire – couleurs opposées",
+        "Schéma triadique – 3 couleurs à intervalles égaux",
+        "Schéma complémentaire divisé – couleur de base et 2 voisines de l'opposée",
+        "Palette pastel – tons clairs et adoucis",
+        "Palette sombre – couleurs profondes pour thèmes sombres",
+        "Palette tonale – échelle de luminosité d'une teinte",
+        "Palette minimaliste – accent fort avec neutres clairs",
+        "Couleur de base au format HEX",
+        "Sélecteur de couleur pour choix visuel",
+        "Couleur de départ aléatoire",
+        "Copier le code HEX dans le presse-papiers",
+        "Valeur HSL affichée à côté de chaque couleur",
+        "Traitement local dans le navigateur"
       ]
     },
     "howTo": {

@@ -2,13 +2,13 @@
   "toolKey": "favicon",
   "locale": "es",
   "metadata": {
-    "title": "Generador de favicon gratis – cree favicon.ico al instante",
-    "description": "Cree favicon.ico y todos los tamaños de favicon necesarios a partir de una sola imagen. Compatible con navegadores y Lighthouse.",
+    "title": "Generador gratuito de icono para sitio web – crear favicon.ico",
+    "description": "Cree un conjunto completo de favicon.ico para su sitio web a partir de una sola imagen. Todos los tamaños necesarios sin registro ni inicio de sesión.",
     "ogImage": "/assets/tools/favicon-generator/generador-de-favicon-gratuito-es.webp",
     "path": "/es/herramientas/generador-de-favicon-gratuito"
   },
   "hero": {
-    "title": "Generador de favicon – cree favicon.ico gratis",
+    "title": "Crea favicon.ico para tu sitio web a partir de una imagen",
     "description": "Genere favicon.ico y un conjunto completo de iconos PNG para su sitio web a partir de una sola imagen. Todo el procesamiento se realiza localmente en el navegador.",
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
@@ -24,24 +24,24 @@
   },
   "schemas": {
     "software": {
-      "name": "Generador de favicon — crea favicon.ico desde cualquier imagen",
+      "name": "Generador de favicon.ico para sitios web",
       "alternateName": "Generador de favicon.ico e iconos PNG",
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "FaviconGenerator",
       "description": "Generador gratuito de favicon. Cree favicon.ico e iconos PNG 16x16, 32x32, 180x180, 192x192 y 512x512 sin límites y sin enviar archivos a un servidor. El procesamiento se realiza localmente en el navegador.",
       "featureList": [
-        "Generar favicon.ico (16x16, 32x32, 48x48 en un archivo)",
-        "Generar iconos PNG 16x16 y 32x32",
-        "Generar apple-touch-icon 180x180",
-        "Generar iconos PWA 192x192 y 512x512",
-        "Soporte de imágenes fuente PNG, JPG y SVG",
-        "Configuración de color de fondo",
-        "Generar archivo manifest.json para PWA",
+        "Generación de favicon.ico (16x16, 32x32, 48x48 en un archivo)",
+        "Generación de iconos PNG 16x16 y 32x32",
+        "Generación de apple-touch-icon 180x180",
+        "Generación de iconos PWA 192x192 y 512x512",
+        "Soporte para imágenes PNG, JPG y SVG como fuente",
+        "Configuración del color de fondo",
+        "Generación del archivo manifest.json para PWA",
         "Descargar todos los archivos como ZIP",
         "Descargar archivos individuales",
         "Conformidad con Lighthouse",
-        "Procesamiento en el navegador (los archivos no se envían a un servidor)",
-        "Herramienta gratuita, sin registro"
+        "Procesamiento en el navegador (los archivos no se envían al servidor)",
+        "Herramienta gratuita sin registro"
       ]
     },
     "howTo": {

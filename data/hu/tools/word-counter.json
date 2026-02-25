@@ -2,13 +2,13 @@
   "toolKey": "wordCounter",
   "locale": "hu",
   "metadata": {
-    "title": "Ingyenes szó- és karakterszámláló – Számoljon, alakítson és elemezzen",
-    "description": "Ingyenes szó-, karakter-, mondat- és bekezdésszámláló. Kis-/nagybetű módosítás, duplikátumok eltávolítása, sorok rendezése. 8 metrika és 10 szövegeszköz.",
+    "title": "Szó-, karakter- és olvasásiidő-számláló szövegformázással",
+    "description": "Ingyenes szó-, karakter-, mondat-, bekezdés- és olvasásiidő-számláló kis- és nagybetű-konverterrel. Ellenőrizze a szöveg hosszát és módosítsa a betűket.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/szo-es-karakterszamlalo-hu.webp",
     "path": "/hu/eszkozok/szo-es-karakterszamlalo"
   },
   "hero": {
-    "title": "Szó- és karakterszámláló szövegformázó eszközökkel",
+    "title": "Számolja a szavakat és karaktereket – olvasási idő és formázás",
     "description": "Illessze be szövegét, és az eszköz megszámolja a szavakat, karaktereket, mondatokat, bekezdéseket, egyedi szavakat és az olvasási időt",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Ingyenes szó- és karakterszámláló szövegeszközökkel",
+      "name": "Szó-, karakter- és olvasásiidő-számláló szövegformázással",
       "alternateName": [
         "Online word counter",
         "Character counter with and without spaces",
@@ -36,21 +36,21 @@
         "Sort text lines alphabetically"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
+      "description": "Ingyenes szó- és karakterszámláló szövegformázó eszközökkel. Megszámolja a szavakat, karaktereket, mondatokat, bekezdéseket, egyedi szavakat és az olvasási időt. 10 eszközt kínál: kis-/nagybetű-konverzió, szóközök, üres sorok, duplikátumok eltávolítása és rendezés.",
       "featureList": [
-        "Word count",
-        "Character count with and without spaces",
-        "Sentence and paragraph count",
-        "Unique word count",
-        "Average word length",
-        "Estimated reading time",
-        "Convert to uppercase or lowercase",
-        "Convert to sentence case or title case",
-        "Toggle letter case",
-        "Remove extra spaces",
-        "Remove empty lines and duplicates",
-        "Sort lines A-Z and Z-A",
-        "Copy text to clipboard"
+        "Szavak számlálása",
+        "Karakterek számlálása szóközökkel és anélkül",
+        "Mondatok és bekezdések számlálása",
+        "Egyedi szavak számlálása",
+        "Átlagos szóhossz",
+        "Becsült olvasási idő",
+        "Nagybetűsre vagy kisbetűsre konvertálás",
+        "Mondatstílusra vagy címstílusra konvertálás",
+        "Kis-/nagybetűk megfordítása",
+        "Felesleges szóközök eltávolítása",
+        "Üres sorok és duplikátumok eltávolítása",
+        "Sorok rendezése A–Z és Z–A",
+        "Szöveg vágólapra másolása"
       ]
     },
     "howTo": {

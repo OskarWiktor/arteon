@@ -2,13 +2,13 @@
   "toolKey": "metaCounter",
   "locale": "nl",
   "metadata": {
-    "title": "Gratis meta title & description checker – Pixelbreedte",
-    "description": "Controleer de lengte van uw meta title en description in tekens en pixels. Google SERP-preview helpt u afgekapte titels en beschrijvingen in zoekresultaten te vermijden.",
+    "title": "Gratis metatitel- en beschrijvingslengte checker in pixels",
+    "description": "Controleer of uw metatitel en beschrijving de juiste lengte hebben volgens de Google-richtlijnen. Checker met live preview en tips.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-beschrijving-checker-nl.webp",
     "path": "/nl/tools/meta-title-description-lengte-checker"
   },
   "hero": {
-    "title": "Controleer de lengte van uw paginatitel en beschrijving in Google",
+    "title": "Controleer de lengte van metatitel en beschrijving – Google-voorbeeld",
     "description": "Voer een titel en beschrijving in en de tool berekent het aantal tekens, woorden, pixelbreedte en toont of de lengte voldoet aan SEO best practices",
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis meta title en description lengte checker",
+      "name": "Metatitel- en beschrijvingslengte checker in pixels",
       "alternateName": [
         "Meta title en description checker met Google preview",
         "Google snippet preview",
@@ -37,15 +37,15 @@
       ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "SEOTool",
-      "description": "Gratis meta title en description lengte checker. Controleert aantal tekens, woorden en pixelbreedte. Toont een preview van hoe de titel en beschrijving verschijnen in Google zoekresultaten.",
+      "description": "Gratis metatitel- en beschrijvingslengte checker. Controleert het aantal tekens, woorden en breedte in pixels. Toont een voorbeeld van hoe de titel en beschrijving verschijnen in de Google-zoekresultaten.",
       "featureList": [
-        "Tekenteller voor meta title",
-        "Tekenteller voor meta description",
+        "Tekenteller voor metatitel",
+        "Tekenteller voor metabeschrijving",
         "Pixelbreedte meting (Google-compatibel)",
         "Woordenteller voor titel en beschrijving",
-        "Google zoekresultaten preview",
-        "Kleurgecodeerde lengte-evaluatie (te kort / optimaal / te lang)",
-        "Afkapwaarschuwing voor titel en beschrijving",
+        "Google-zoekresultaten voorbeeld",
+        "Kleurgecodeerde lengtebeoordeling (te kort / optimaal / te lang)",
+        "Waarschuwing bij afkapping van titel en beschrijving",
         "Aanbevelingen voor optimale lengte",
         "Lokale verwerking in de browser"
       ]

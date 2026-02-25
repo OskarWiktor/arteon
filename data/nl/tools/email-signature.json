@@ -2,13 +2,13 @@
   "toolKey": "emailSignature",
   "locale": "nl",
   "metadata": {
-    "title": "Gratis e-mailhandtekening generator – HTML voor Gmail",
-    "description": "Maak een professionele HTML e-mailhandtekening zonder te coderen. Voeg contactgegevens, logo en sociale media links toe en kopieer naar Gmail of Outlook.",
+    "title": "Gratis HTML e-mailhandtekening generator – handtekening maken",
+    "description": "Maak een HTML e-mailhandtekening zonder login en registratie. Volledige aanpassing, kant-en-klare layouts, live preview en kant-en-klare HTML-code.",
     "ogImage": "/assets/tools/free-html-email-signature-generator/gratis-e-mailhandtekening-generator-nl.webp",
     "path": "/nl/tools/gratis-e-mailhandtekening-generator"
   },
   "hero": {
-    "title": "Maak een professionele HTML e-mailhandtekening",
+    "title": "Maak een HTML e-mailhandtekening – kopieer naar Gmail of Outlook",
     "description": "Bouw een professionele e-mailhandtekening in enkele minuten. Voer uw gegevens in, kies kleuren en kopieer de kant-en-klare HTML-code naar Gmail, Outlook of elke e-mailclient.",
     "backgroundImage": "/assets/tools/free-html-email-signature-generator/gratis-e-mailhandtekening-generator-nl.webp"
   },
@@ -24,27 +24,27 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis e-mailhandtekening generator",
+      "name": "HTML e-mailhandtekening generator – handtekeningmaker",
       "alternateName": ["HTML e-mailhandtekening generator", "e-mailhandtekening maker", "e-mail footer generator"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Gratis HTML e-mailhandtekening generator. Voeg contactgegevens, CTA-link en social media-profielen toe en kopieer vervolgens de kant-en-klare code naar Gmail, Outlook en andere e-mailclients.",
+      "description": "Gratis HTML e-mailhandtekening generator. Voeg contactgegevens, CTA-link en social media-profielen toe, kopieer vervolgens de kant-en-klare handtekeningcode naar Gmail, Outlook en andere e-mailclients.",
       "featureList": [
         "Contactgegevens (naam, functie, bedrijf)",
         "Telefoon, e-mail en website-URL",
-        "Logo of profielfoto met vorm- en formaatopties",
-        "Social media-pictogrammen (12 platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
+        "Logo of profielfoto met vorm- en maatkeuze",
+        "Social media-pictogrammen (12 platformen: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
         "Aanpasbare kleuren (tekst, accent, achtergrond)",
         "Individuele tekststijl voor elk handtekeningelement",
-        "CTA-knop met aangepaste tekst en link",
-        "Scheidingslijnstijl (stijl, dikte, kleur)",
-        "Live handtekeningpreview met achtergrondwisseling (licht, donker, schaakbord)",
-        "HTML-broncode preview in modal",
+        "CTA-knop met eigen tekst en link",
+        "Scheidingslijn styling (stijl, dikte, kleur)",
+        "Live handtekening preview met achtergrondwisseling (licht, donker, schaakbord)",
+        "HTML-broncode preview in modaal venster",
         "HTML-code naar klembord kopiëren",
-        "Handtekening downloaden als HTML-bestand",
+        "Handtekening als HTML-bestand downloaden",
         "Configuratie exporteren en importeren als JSON-bestand",
         "Compatibel met Gmail, Outlook, Apple Mail",
-        "Gratis tool, geen login vereist"
+        "Gratis tool zonder registratie"
       ]
     },
     "howTo": {

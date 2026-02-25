@@ -2,13 +2,13 @@
   "toolKey": "contrastChecker",
   "locale": "de",
   "metadata": {
-    "title": "Kostenloser Farbkontrast-Checker – WCAG 2.1",
-    "description": "Prüfen Sie die Lesbarkeit von Text- und Hintergrundfarben gemäß WCAG 2.1. Kontrastverhältnis, AA/AAA-Bewertung und automatische Farbkorrektur.",
+    "title": "Kostenloser Farbkontrast- und Textlesbarkeits-Checker",
+    "description": "Prüfen Sie, ob Ihre Farben guten Kontrast und Lesbarkeit gemäß WCAG 2.1 AA und AAA haben. Farben eingeben und automatische Kontrastkorrektur nutzen.",
     "ogImage": "/assets/tools/color-contrast-and-readability-checker/farbkontrast-checker-de.webp",
     "path": "/de/werkzeuge/farbkontrast-checker"
   },
   "hero": {
-    "title": "Farbkontrast-Checker",
+    "title": "Farbkontrast und Textlesbarkeit nach WCAG-Standards prüfen",
     "description": "Geben Sie eine Text- und Hintergrundfarbe ein, und das Tool zeigt, ob der Kontrast ausreichend ist. Die Berechnung basiert auf dem internationalen Barrierefreiheitsstandard WCAG 2.1.",
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Farbkontrast-Checker",
+      "name": "Farbkontrast- und Textlesbarkeits-Checker – WCAG",
       "alternateName": [
         "WCAG-Kontrastprüfer",
         "Lesbarkeitstest für Farben",
@@ -35,14 +35,20 @@
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
-      "description": "Prüfen Sie, ob Text- und Hintergrundfarben für alle Nutzer lesbar sind. Das Tool berechnet das Kontrastverhältnis gemäß WCAG 2.1 und zeigt, ob die Barrierefreiheitsanforderungen erfüllt sind.",
+      "description": "Prüfen Sie, ob Text- und Hintergrundfarben für alle Nutzer lesbar sind. Das Tool berechnet das Kontrastverhältnis nach WCAG-Standard und zeigt, ob die Barrierefreiheitsanforderungen erfüllt sind.",
       "featureList": [
-        "Kontrastberechnung (1:1 bis 21:1)",
-        "WCAG 2.1 AA- und AAA-Bewertung",
-        "Prüfung für normalen Text, großen Text und Symbole",
-        "Automatische Farbvorschläge (Auto-Match)",
-        "Unterstützung für HEX, RGB, RGBA, HSL, HSLA",
-        "Echtzeit-Vorschau beim Tippen",
+        "Berechnung des Kontrastverhältnisses",
+        "Prüfung der WCAG 2.1 Stufe AA",
+        "Prüfung der WCAG 2.1 Stufe AAA",
+        "Test für normalen Text",
+        "Test für großen Text und Überschriften",
+        "Test für Icons und UI-Komponenten",
+        "Unterstützung des HEX-Farbformats",
+        "Unterstützung der Farbformate RGB und RGBA",
+        "Unterstützung der Farbformate HSL und HSLA",
+        "Farbwähler zur visuellen Auswahl",
+        "Live-Textvorschau",
+        "Automatische Farbanpassungsfunktion",
         "Lokale Verarbeitung im Browser"
       ]
     },

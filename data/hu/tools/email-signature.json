@@ -2,13 +2,13 @@
   "toolKey": "emailSignature",
   "locale": "hu",
   "metadata": {
-    "title": "Ingyenes e-mail aláírás generátor – HTML a Gmailhez",
-    "description": "Készítsen professzionális HTML e-mail aláírást programozás és kódolás nélkül. Adjon hozzá adatokat, logót és közösségi média linkeket. Ingyenes, fiók nélkül.",
+    "title": "Ingyenes HTML e-mail aláírás generátor – aláírás készítése",
+    "description": "Hozzon létre HTML e-mail aláírást bejelentkezés és regisztráció nélkül. Teljes testreszabás, kész elrendezések, élő előnézet és kész HTML kód.",
     "ogImage": "/assets/tools/free-html-email-signature-generator/ingyenes-email-alairas-generator-hu.webp",
     "path": "/hu/eszkozok/ingyenes-email-alairas-generator"
   },
   "hero": {
-    "title": "Készítsen professzionális HTML e-mail aláírást",
+    "title": "Készítsen HTML e-mail aláírást – másolja Gmailbe vagy Outlookba",
     "description": "Építsen professzionális e-mail aláírást percek alatt. Adja meg adatait, válasszon színeket, és másolja a kész HTML kódot a Gmailbe, Outlookba vagy bármely e-mail kliensbe.",
     "backgroundImage": "/assets/tools/free-html-email-signature-generator/ingyenes-email-alairas-generator-hu.webp"
   },
@@ -24,27 +24,27 @@
   },
   "schemas": {
     "software": {
-      "name": "Ingyenes e-mail aláírás generátor",
+      "name": "HTML e-mail aláírás generátor – aláírás készítő",
       "alternateName": ["HTML e-mail aláírás generátor", "E-mail aláírás készítő", "E-mail lábléc generátor"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Ingyenes HTML e-mail aláírás generátor. Adjon hozzá kapcsolattartói adatokat, CTA linket és közösségi média profilokat, majd másolja a kész kódot a Gmailbe, Outlookba és más e-mail kliensekbe.",
+      "description": "Ingyenes HTML e-mail aláírás generátor. Adja hozzá kapcsolattartási adatait, CTA linket és közösségi média profiljait, majd másolja a kész aláíráskódot a Gmailbe, Outlookba és más levelezőkbe.",
       "featureList": [
-        "Kapcsolattartói adatok (név, beosztás, cég)",
+        "Kapcsolattartási adatok (név, beosztás, cég)",
         "Telefon, e-mail és weboldal URL",
-        "Logó vagy profilkép forma- és méretbeállításokkal",
+        "Logó vagy profilkép forma- és méretválasztással",
         "Közösségi média ikonok (12 platform: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
-        "Testreszabható színek (szöveg, kiemelés, háttér)",
-        "Egyedi szövegstílus minden aláírás elemhez",
-        "CTA gomb egyedi szöveggel és linkkel",
+        "Testreszabható színek (szöveg, hangsúly, háttér)",
+        "Egyedi szövegstílus minden aláírás-elemhez",
+        "CTA gomb egyéni szöveggel és linkkel",
         "Elválasztó vonal stílusa (stílus, vastagság, szín)",
         "Élő aláírás előnézet háttérváltással (világos, sötét, sakktábla)",
-        "HTML forráskód előnézet modálban",
-        "HTML kód másolása vágólapra",
+        "HTML forráskód előnézet modális ablakban",
+        "HTML kód másolása a vágólapra",
         "Aláírás letöltése HTML fájlként",
         "Konfiguráció exportálása és importálása JSON fájlként",
-        "Kompatibilis Gmail, Outlook, Apple Mail alkalmazásokkal",
-        "Ingyenes eszköz, bejelentkezés nélkül"
+        "Kompatibilis a Gmail, Outlook, Apple Mail alkalmazásokkal",
+        "Ingyenes eszköz bejelentkezés nélkül"
       ]
     },
     "howTo": {

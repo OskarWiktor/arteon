@@ -2,13 +2,13 @@
   "toolKey": "contrastChecker",
   "locale": "it",
   "metadata": {
-    "title": "Verificatore di contrasto colori gratuito – WCAG 2.1",
-    "description": "Verifica la leggibilità dei colori di testo e sfondo secondo WCAG 2.1. Rapporto di contrasto, valutazione AA/AAA e correzione automatica dei colori.",
+    "title": "Verificatore gratuito di contrasto colori e leggibilità del testo",
+    "description": "Verifica se i tuoi colori hanno un buon contrasto e leggibilità secondo WCAG 2.1 AA e AAA. Aggiungi colori e usa la correzione automatica del contrasto.",
     "ogImage": "/assets/tools/color-contrast-and-readability-checker/verificatore-contrasto-colori-it.webp",
     "path": "/it/strumenti/verificatore-contrasto-colori"
   },
   "hero": {
-    "title": "Verificatore di contrasto colori",
+    "title": "Verifica il contrasto dei colori e la leggibilità secondo WCAG",
     "description": "Verifica se i colori del testo e dello sfondo sono leggibili secondo le norme WCAG 2.1. Rapporto di contrasto, valutazione AA/AAA e adattamento automatico dei colori.",
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Verificatore di contrasto e leggibilità dei colori — WCAG 2.1",
+      "name": "Verificatore di contrasto colori e leggibilità del testo – WCAG",
       "alternateName": [
         "Verificatore di contrasto WCAG",
         "Test di accessibilità dei colori",
@@ -36,15 +36,21 @@
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
-      "description": "Verificatore di contrasto colori secondo WCAG 2.1. Calcola il rapporto di contrasto, valuta la conformità AA/AAA e propone un adattamento automatico dei colori.",
+      "description": "Verifica se i colori del testo e dello sfondo sono leggibili per tutti gli utenti. Lo strumento calcola il rapporto di contrasto secondo lo standard WCAG e mostra se soddisfi i requisiti di accessibilità.",
       "featureList": [
         "Calcolo del rapporto di contrasto",
-        "Valutazione WCAG AA e AAA",
-        "Testo normale, testo grande e icone",
-        "Funzione di adattamento automatico",
-        "Supporto HEX, RGB, HSL",
-        "Anteprima in tempo reale",
-        "Esecuzione locale nel browser"
+        "Verifica della conformità WCAG 2.1 livello AA",
+        "Verifica della conformità WCAG 2.1 livello AAA",
+        "Test per il testo normale",
+        "Test per il testo grande e i titoli",
+        "Test per icone e componenti dell'interfaccia",
+        "Supporto del formato colore HEX",
+        "Supporto dei formati colore RGB e RGBA",
+        "Supporto dei formati colore HSL e HSLA",
+        "Selettore colori per la scelta visuale",
+        "Anteprima del testo dal vivo",
+        "Funzione di regolazione automatica del colore",
+        "Elaborazione locale nel browser"
       ]
     },
     "howTo": {

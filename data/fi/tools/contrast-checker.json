@@ -2,13 +2,13 @@
   "toolKey": "contrastChecker",
   "locale": "fi",
   "metadata": {
-    "title": "Ilmainen värikontrastin tarkistus – WCAG 2.1 -yhteensopivuus",
-    "description": "Tarkista, ovatko teksti- ja taustavärisi luettavia WCAG 2.1:n mukaan. Syötä HEX-, RGB- tai HSL-koodi, katso kontrastisuhde ja käytä automaattista korjausta.",
+    "title": "Ilmainen värikontrastin ja tekstin luettavuuden tarkistus",
+    "description": "Tarkista, onko väreissäsi hyvä kontrasti ja luettavuus WCAG 2.1 AA ja AAA mukaan. Lisää värejä ja käytä automaattista kontrastikorjausta.",
     "ogImage": "/assets/tools/color-contrast-and-readability-checker/varikontrasti-tarkistus-fi.webp",
     "path": "/fi/tyokalut/varikontrasti-tarkistus"
   },
   "hero": {
-    "title": "Värikontrastin ja luettavuuden tarkistus",
+    "title": "Tarkista värikontrasti ja luettavuus WCAG-standardien mukaan",
     "description": "Syötä tekstin ja taustan väri, ja työkalu näyttää, onko kontrasti riittävä. Laskelmat perustuvat kansainväliseen saavutettavuusstandardiin WCAG 2.1.",
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
@@ -24,22 +24,24 @@
   },
   "schemas": {
     "software": {
-      "name": "Värikontrastin ja luettavuuden tarkistus",
+      "name": "Värikontrastin ja tekstin luettavuuden tarkistus – WCAG",
       "alternateName": ["Värien luettavuustesteri", "Tekstin ja taustan kontrastin tarkistus", "Värikontrastilaskin", "WCAG-kontrastin testeri"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
-      "description": "Tarkista, ovatko teksti- ja taustavärit luettavia kaikille käyttäjille. Työkalu laskee kontrastisuhteen WCAG 2.1:n mukaan ja näyttää, täyttääkö se saavutettavuusvaatimukset.",
+      "description": "Tarkista, ovatko tekstin ja taustan värit luettavia kaikille käyttäjille. Työkalu laskee kontrastisuhteen WCAG-standardin mukaisesti ja näyttää, täytätkö saavutettavuusvaatimukset.",
       "featureList": [
         "Kontrastisuhteen laskenta",
-        "WCAG 2.1 -tason AA yhteensopivuuden tarkistus",
-        "WCAG 2.1 -tason AAA yhteensopivuuden tarkistus",
-        "Normaalin tekstin testi",
-        "Suuren tekstin ja otsikoiden testi",
-        "Kuvakkeiden ja käyttöliittymäkomponenttien testi",
-        "Tuki HEX-, RGB-, RGBA-, HSL- ja HSLA-muodoille",
-        "Värinvalitsin visuaaliseen valintaan",
+        "WCAG 2.1 tason AA tarkistus",
+        "WCAG 2.1 tason AAA tarkistus",
+        "Tavallisen tekstin testaus",
+        "Suuren tekstin ja otsikoiden testaus",
+        "Kuvakkeiden ja käyttöliittymäkomponenttien testaus",
+        "HEX-värimuodon tuki",
+        "RGB- ja RGBA-värimuotojen tuki",
+        "HSL- ja HSLA-värimuotojen tuki",
+        "Värivalitsin visuaaliseen valintaan",
         "Reaaliaikainen tekstin esikatselu",
-        "Automaattinen värin sovitustoiminto",
+        "Automaattinen värien sovitustoiminto",
         "Paikallinen käsittely selaimessa"
       ]
     },

@@ -2,13 +2,13 @@
   "toolKey": "wordCounter",
   "locale": "el",
   "metadata": {
-    "title": "Δωρεάν μετρητής λέξεων και χαρακτήρων – Μετρήστε, μετασχηματίστε και αναλύστε",
-    "description": "Δωρεάν μετρητής λέξεων, χαρακτήρων, προτάσεων και παραγράφων. Αλλαγή κεφαλαίων, αφαίρεση διπλοτύπων, ταξινόμηση. 8 μετρικές και 10 εργαλεία.",
+    "title": "Μετρητής λέξεων, χαρακτήρων και χρόνου ανάγνωσης με μορφοποίηση κειμένου",
+    "description": "Δωρεάν μετρητής λέξεων, χαρακτήρων, προτάσεων, παραγράφων και χρόνου ανάγνωσης με μετατροπέα κεφαλαίων. Ελέγξτε το μήκος κειμένου και αλλάξτε τα γράμματα.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/metritis-lexeon-kai-charaktiron-el.webp",
     "path": "/el/ergaleia/metritis-lexeon-kai-charaktiron"
   },
   "hero": {
-    "title": "Μετρητής λέξεων και χαρακτήρων με εργαλεία μορφοποίησης",
+    "title": "Μετρήστε λέξεις και χαρακτήρες – ελέγξτε χρόνο ανάγνωσης",
     "description": "Επικολλήστε κείμενο και το εργαλείο θα μετρήσει λέξεις, χαρακτήρες, προτάσεις, παραγράφους, μοναδικές λέξεις και χρόνο ανάγνωσης",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Δωρεάν μετρητής λέξεων και χαρακτήρων με εργαλεία κειμένου",
+      "name": "Μετρητής λέξεων, χαρακτήρων και χρόνου ανάγνωσης με μορφοποίηση κειμένου",
       "alternateName": [
         "Online word counter",
         "Character counter with and without spaces",
@@ -36,21 +36,21 @@
         "Sort text lines alphabetically"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
+      "description": "Δωρεάν μετρητής λέξεων και χαρακτήρων με εργαλεία μορφοποίησης κειμένου. Μετρά λέξεις, χαρακτήρες, προτάσεις, παραγράφους, μοναδικές λέξεις και χρόνο ανάγνωσης. Προσφέρει 10 εργαλεία: μετατροπή κεφαλαίων, αφαίρεση κενών, κενών γραμμών, διπλοτύπων και ταξινόμηση.",
       "featureList": [
-        "Word count",
-        "Character count with and without spaces",
-        "Sentence and paragraph count",
-        "Unique word count",
-        "Average word length",
-        "Estimated reading time",
-        "Convert to uppercase or lowercase",
-        "Convert to sentence case or title case",
-        "Toggle letter case",
-        "Remove extra spaces",
-        "Remove empty lines and duplicates",
-        "Sort lines A-Z and Z-A",
-        "Copy text to clipboard"
+        "Μέτρηση λέξεων",
+        "Μέτρηση χαρακτήρων με και χωρίς κενά",
+        "Μέτρηση προτάσεων και παραγράφων",
+        "Μέτρηση μοναδικών λέξεων",
+        "Μέσο μήκος λέξης",
+        "Εκτιμώμενος χρόνος ανάγνωσης",
+        "Μετατροπή σε κεφαλαία ή πεζά",
+        "Μετατροπή σε στυλ πρότασης ή τίτλου",
+        "Αντιστροφή κεφαλαίων/πεζών",
+        "Αφαίρεση περιττών κενών",
+        "Αφαίρεση κενών γραμμών και διπλοτύπων",
+        "Ταξινόμηση γραμμών Α–Ω και Ω–Α",
+        "Αντιγραφή κειμένου στο πρόχειρο"
       ]
     },
     "howTo": {

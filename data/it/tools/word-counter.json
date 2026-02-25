@@ -2,13 +2,13 @@
   "toolKey": "wordCounter",
   "locale": "it",
   "metadata": {
-    "title": "Contatore parole e caratteri gratuito – Contare, trasformare e analizzare",
-    "description": "Contatore gratuito di parole, caratteri, frasi e paragrafi. Cambiare maiuscole, rimuovere duplicati, ordinare righe. 8 metriche e 10 strumenti.",
+    "title": "Contatore di parole, caratteri e tempo di lettura con formattazione del testo",
+    "description": "Contatore gratuito di parole, caratteri, frasi, paragrafi e tempo di lettura con convertitore di maiuscole. Controlla la lunghezza del testo e modifica le lettere.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contatore-di-parole-e-caratteri-it.webp",
     "path": "/it/strumenti/contatore-di-parole-e-caratteri"
   },
   "hero": {
-    "title": "Contatore di parole e caratteri con strumenti di formattazione",
+    "title": "Conta parole e caratteri – verifica tempo di lettura e formatta",
     "description": "Incolla il testo e lo strumento conterà parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura. Cambia maiuscole, rimuovi duplicati o ordina righe",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Contatore di parole e caratteri online con strumenti di testo",
+      "name": "Contatore di parole, caratteri e tempo di lettura con formattazione del testo",
       "alternateName": [
         "Online word counter",
         "Character counter with and without spaces",
@@ -36,21 +36,21 @@
         "Sort text lines alphabetically"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
+      "description": "Contatore gratuito di parole e caratteri con strumenti di formattazione del testo. Conta parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura. Offre 10 strumenti: conversione maiuscole, rimozione spazi, righe vuote, duplicati e ordinamento.",
       "featureList": [
-        "Word count",
-        "Character count with and without spaces",
-        "Sentence and paragraph count",
-        "Unique word count",
-        "Average word length",
-        "Estimated reading time",
-        "Convert to uppercase or lowercase",
-        "Convert to sentence case or title case",
-        "Toggle letter case",
-        "Remove extra spaces",
-        "Remove empty lines and duplicates",
-        "Sort lines A-Z and Z-A",
-        "Copy text to clipboard"
+        "Conteggio parole",
+        "Conteggio caratteri con e senza spazi",
+        "Conteggio frasi e paragrafi",
+        "Conteggio parole uniche",
+        "Lunghezza media delle parole",
+        "Tempo di lettura stimato",
+        "Conversione in maiuscolo o minuscolo",
+        "Conversione in stile frase o titolo",
+        "Inversione maiuscole/minuscole",
+        "Rimozione spazi superflui",
+        "Rimozione righe vuote e duplicati",
+        "Ordinamento righe A–Z e Z–A",
+        "Copia del testo negli appunti"
       ]
     },
     "howTo": {

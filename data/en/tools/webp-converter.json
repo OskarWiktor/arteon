@@ -2,13 +2,13 @@
   "toolKey": "jpgToWebp",
   "locale": "en",
   "metadata": {
-    "title": "Free JPG/PNG to WebP Converter – No Limits, No Upload",
-    "description": "Reduce image size by up to 35% without quality loss. JPG and PNG to WebP conversion runs locally – files never leave your device. No signup, no limits.",
+    "title": "Free JPG and PNG to WebP Converter Without File Limits",
+    "description": "Convert JPG or PNG to WebP and reduce image size without quality loss. Full privacy, no limits and no registration.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/jpg-png-to-webp-unlimited"
   },
   "hero": {
-    "title": "JPG/PNG to WebP Converter – Free, No Limits",
+    "title": "Convert JPG and PNG to WebP – reduce image size without quality loss",
     "description": "Reduce image file size by up to 35% without losing quality. Add files, choose quality level, and download images in WebP format. All conversion happens locally in the browser.",
     "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
@@ -24,15 +24,15 @@
   },
   "schemas": {
     "software": {
-      "name": "JPG and PNG to WebP converter — free, no limits",
+      "name": "JPG/PNG to WebP Converter – No File Limits",
       "alternateName": ["JPG to WebP and PNG to WebP converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Free JPG and PNG to WebP converter. Reduce image file size by up to 35%, improve page load speed and Core Web Vitals scores. Conversion happens in the browser - files are not sent to a server.",
+      "description": "Free JPG and PNG to WebP converter. Reduce image file size by up to 35%, improve page load speed and Core Web Vitals scores. Conversion happens in the browser – files are not sent to a server.",
       "featureList": [
         "JPG to WebP conversion",
         "PNG to WebP conversion",
-        "Quality level adjustment (1–100%)",
+        "Quality level adjustment (60–95%)",
         "Batch conversion of multiple files",
         "Size preview before and after conversion",
         "Individual file download",

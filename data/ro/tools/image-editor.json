@@ -2,13 +2,13 @@
   "toolKey": "imageResize",
   "locale": "ro",
   "metadata": {
-    "title": "Editor gratuit de imagini – Decupare și conversie rapidă",
-    "description": "Decupați, redimensionați și convertiți imagini între formatele JPG, PNG și WebP. Ajustați calitatea și proporțiile fără software extern. Gratuit, fără cont.",
+    "title": "Decupare, redimensionare și conversie de imagini gratuit",
+    "description": "Redimensionați, decupați și convertiți imaginea gratuit. Folosiți formate predefinite pentru rețelele sociale și descărcați JPG, PNG sau WebP.",
     "ogImage": "/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagini-ro.webp",
     "path": "/ro/instrumente/editor-de-imagini"
   },
   "hero": {
-    "title": "Editor de imagini gratuit – Decupare, redimensionare și conversie",
+    "title": "Redimensionează, decupează și convertește imaginea online – gratuit",
     "description": "Redimensionați, decupați și convertiți imagini pentru Instagram, Facebook și LinkedIn. Formate gata făcute, avataruri circulare, export în JPG, PNG și WebP. Procesare locală în browser.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Editor de imagini gratuit",
+      "name": "Editor de imagini – decupare, redimensionare și conversie",
       "alternateName": [
         "Redimensionare imagini",
         "Decupare imagini",
@@ -36,22 +36,22 @@
       ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Editor de imagini gratuit pentru redimensionare, decupare și conversie format. Preset-uri gata făcute pentru Instagram, Facebook și LinkedIn. Creare avatar circular. Export în JPG, PNG și WebP cu control al calității. Procesare locală în browser.",
+      "description": "Editor de imagini online gratuit pentru redimensionare, decupare și conversie de formate. Presetări pentru Instagram, Facebook și LinkedIn. Creare de avataruri circulare. Export în JPG, PNG și WebP cu control al calității. Procesare locală în browser.",
       "featureList": [
         "Redimensionare imagini la orice dimensiuni",
         "Decupare cu selecție interactivă a zonei",
-        "Formate gata făcute Instagram (post pătrat, post portret, story, reels)",
-        "Formate gata făcute Facebook (post, copertă pagină)",
-        "Formate gata făcute LinkedIn (post, banner profil)",
-        "Formate gata făcute web (imagine OG, hero, banner, miniatură)",
+        "Formate predefinite pentru Instagram (post pătrat, post portret, story, reels)",
+        "Formate predefinite pentru Facebook (post, copertă pagină)",
+        "Formate predefinite pentru LinkedIn (post, banner profil)",
+        "Formate predefinite pentru web (imagine OG, hero, banner, miniatură)",
         "Forme de decupare: dreptunghi, pătrat, cerc (avatar rotund)",
         "Grilă 3x3 (regula treimilor) cu selecție culoare",
-        "Zoom decupare 100–300%",
+        "Zoom decupare 100–300 %",
         "Poziție precisă decupare (X, Y) cu centrare",
-        "Conversie format: JPG, PNG, WebP",
-        "Control calitate compresie 60–100%",
+        "Conversie formate: JPG, PNG, WebP",
+        "Control calitate compresie 60–100 %",
         "Procesare locală în browser",
-        "Instrument gratuit, fără autentificare"
+        "Instrument gratuit fără înregistrare"
       ]
     },
     "howTo": {

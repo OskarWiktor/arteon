@@ -2,13 +2,13 @@
   "toolKey": "favicon",
   "locale": "en",
   "metadata": {
-    "title": "Free Favicon Generator – Create favicon.ico From Any Image",
-    "description": "Create favicon.ico and a complete favicon set for your website from a single image. All required sizes in one click. Runs locally in your browser.",
+    "title": "Free Website Icon Generator – Create favicon.ico",
+    "description": "Create a complete favicon.ico set for your website from a single image. All required sizes without login or registration.",
     "ogImage": "/assets/tools/favicon-generator/free-favicon-generator-en.webp",
     "path": "/en/tools/free-favicon-generator"
   },
   "hero": {
-    "title": "Favicon Generator – Create favicon.ico for Free",
+    "title": "Create favicon.ico for your website from a single image",
     "description": "Generate favicon.ico and a complete set of PNG icons for your website from a single image. All processing happens locally in the browser.",
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
@@ -24,8 +24,8 @@
   },
   "schemas": {
     "software": {
-      "name": "Favicon generator — create favicon.ico from any image",
-      "alternateName": ["Favicon.ico generator", "Create favicon from image", "Free favicon creator"],
+      "name": "Favicon.ico Generator for Websites",
+      "alternateName": ["Favicon.ico generator", "Create favicon from image", "Free favicon creator", "Website icon generator"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "FaviconGenerator",
       "description": "Free favicon generator. Create favicon.ico and PNG icons 16x16, 32x32, 180x180, 192x192, and 512x512 without limits and without sending files to a server. Processing happens locally in the browser.",

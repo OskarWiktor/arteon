@@ -2,13 +2,13 @@
   "toolKey": "wordCounter",
   "locale": "en",
   "metadata": {
-    "title": "Free Word & Character Counter Online – Count, Transform & Analyze Text",
-    "description": "Free word, character, sentence and paragraph counter. Change letter case, remove duplicates, sort lines. 8 metrics and 10 text tools in one place.",
+    "title": "Word, Character and Reading Time Counter with Text Formatting",
+    "description": "Free word, character, sentence, paragraph and reading time counter with letter case converter. Check your text length and format it.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/word-and-character-counter-en.webp",
     "path": "/en/tools/word-and-character-counter"
   },
   "hero": {
-    "title": "Word and character counter with text formatting tools",
+    "title": "Count words and characters – check reading time and format text",
     "description": "Paste your text and the tool will count words, characters, sentences, paragraphs, unique words and reading time. Change letter case, remove duplicates or sort lines with one click",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Free word and character counter online with text tools",
+      "name": "Word, Character and Reading Time Counter with Text Formatting",
       "alternateName": [
         "Online word counter",
         "Character counter with and without spaces",

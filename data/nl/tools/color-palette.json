@@ -2,13 +2,13 @@
   "toolKey": "colorPalette",
   "locale": "nl",
   "metadata": {
-    "title": "Gratis kleurpalettengenerator – 9 paletten uit één kleur",
-    "description": "Genereer 9 harmonische kleurpaletten uit één basiskleur: monochromatisch, complementair, triadisch, pastel en meer. Kopieer HEX-, RGB- en HSL-codes met één klik.",
+    "title": "Gratis kleurpalettengenerator – 9 schema's",
+    "description": "Genereer 9 kleurpaletten uit één kleur: monochromatisch, complementair, triadisch, pastel en meer. Kopieer HEX-codes met één klik.",
     "ogImage": "/assets/tools/color-palette-generator/kleurpalettengenerator-nl.webp",
     "path": "/nl/tools/kleurpalettengenerator"
   },
   "hero": {
-    "title": "Kleurpalettengenerator",
+    "title": "Genereer 9 kleurpaletten vanuit één basiskleur",
     "description": "Voer één basiskleur in en de tool genereert 9 harmonieuze kleurpaletten: monochromatisch, complementair, triadisch, pastel en meer. Elke kleur kan worden gekopieerd met zijn HEX-code.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
@@ -24,25 +24,25 @@
   },
   "schemas": {
     "software": {
-      "name": "Kleurpalettengenerator",
+      "name": "Kleurpalettengenerator – 9 kleurschema's",
       "alternateName": ["Kleurschema generator", "HEX kleurgenerator", "Kleurpalet maker", "Kleurafstemmingstool", "Kleurpalet gratis", "Kleurharmonie generator"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Gratis kleurpalettengenerator. Voer één HEX-kleur in en de tool genereert 9 schema's: monochromatisch, analoog, complementair, triadisch, split-complementair, pastel, donker, tonaal en minimalistisch. Elke kleur kan worden gekopieerd met zijn HEX-code en HSL-waarde.",
+      "description": "Gratis kleurpalettengenerator. Voer één HEX-kleur in en de tool genereert 9 schema's: monochromatisch, analoog, complementair, triadisch, gesplitst-complementair, pastel, donker, tonaal en minimalistisch. Elke kleur kan worden gekopieerd met de HEX-code en HSL-waarde.",
       "featureList": [
         "Monochromatisch schema – tinten van één kleur",
         "Analoog schema – naburige kleuren op het kleurenwiel",
         "Complementair schema – tegenovergestelde kleuren",
         "Triadisch schema – 3 kleuren op gelijke afstanden",
-        "Split-complementair schema – basiskleur en 2 buren van het complement",
+        "Gesplitst-complementair schema – basiskleur en 2 buren van het complement",
         "Pastelpalet – lichte, gedempte tinten",
         "Donker palet – diepe kleuren voor donkere thema's",
         "Tonaal palet – lichtschaal van één tint",
-        "Minimalistisch palet – sterk accent met lichte neutralen",
+        "Minimalistisch palet – sterk accent met lichte neutrale tinten",
         "Basiskleur in HEX-formaat",
         "Kleurkiezer voor visuele selectie",
         "Willekeurige startkleur",
-        "HEX-code kopiëren naar klembord",
+        "HEX-code naar klembord kopiëren",
         "HSL-waarde weergegeven naast elke kleur",
         "Lokale verwerking in de browser"
       ]

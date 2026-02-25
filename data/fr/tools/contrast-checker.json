@@ -2,13 +2,13 @@
   "toolKey": "contrastChecker",
   "locale": "fr",
   "metadata": {
-    "title": "Vérificateur de contraste des couleurs gratuit – WCAG 2.1",
-    "description": "Vérifiez la lisibilité des couleurs de texte et d'arrière-plan selon WCAG 2.1. Ratio de contraste, évaluation AA/AAA et correction automatique.",
+    "title": "Vérificateur gratuit de contraste des couleurs et de lisibilité du texte",
+    "description": "Vérifiez si vos couleurs ont un bon contraste et une bonne lisibilité selon WCAG 2.1 AA et AAA. Ajoutez des couleurs et utilisez la correction automatique du contraste.",
     "ogImage": "/assets/tools/color-contrast-and-readability-checker/verificateur-de-contraste-des-couleurs-fr.webp",
     "path": "/fr/outils/verificateur-de-contraste-des-couleurs"
   },
   "hero": {
-    "title": "Vérificateur de contraste des couleurs",
+    "title": "Vérifiez le contraste des couleurs et la lisibilité selon WCAG",
     "description": "Vérifiez si vos couleurs de texte et d'arrière-plan sont lisibles selon les normes WCAG 2.1. Rapport de contraste, évaluation AA/AAA et ajustement automatique des couleurs.",
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Vérificateur de contraste et lisibilité des couleurs — WCAG 2.1",
+      "name": "Vérificateur de contraste des couleurs et de lisibilité du texte – WCAG",
       "alternateName": [
         "Vérificateur de contraste WCAG",
         "Testeur d'accessibilité des couleurs",
@@ -36,15 +36,21 @@
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
-      "description": "Vérificateur de contraste des couleurs selon WCAG 2.1. Calcule le rapport de contraste, évalue la conformité AA/AAA et propose un ajustement automatique des couleurs.",
+      "description": "Vérifiez si les couleurs du texte et de l'arrière-plan sont lisibles pour tous les utilisateurs. L'outil calcule le rapport de contraste selon la norme WCAG et indique si vous respectez les exigences d'accessibilité.",
       "featureList": [
         "Calcul du rapport de contraste",
-        "Évaluation WCAG AA et AAA",
-        "Texte normal, texte grand et icônes",
-        "Fonction d'ajustement automatique",
-        "Prise en charge HEX, RGB, HSL",
-        "Aperçu en temps réel",
-        "Exécution locale dans le navigateur"
+        "Vérification de conformité WCAG 2.1 niveau AA",
+        "Vérification de conformité WCAG 2.1 niveau AAA",
+        "Test pour le texte normal",
+        "Test pour le grand texte et les titres",
+        "Test pour les icônes et composants d'interface",
+        "Prise en charge du format de couleur HEX",
+        "Prise en charge des formats de couleur RGB et RGBA",
+        "Prise en charge des formats de couleur HSL et HSLA",
+        "Sélecteur de couleur pour choix visuel",
+        "Aperçu du texte en direct",
+        "Fonction d'ajustement automatique de la couleur",
+        "Traitement local dans le navigateur"
       ]
     },
     "howTo": {

@@ -2,13 +2,13 @@
   "toolKey": "jpgToWebp",
   "locale": "hu",
   "metadata": {
-    "title": "Ingyenes JPG/PNG WebP konverter – Korlátlan fájlokkal",
-    "description": "Konvertáljon JPG és PNG képeket WebP formátumba fájlkorlát nélkül. Válassza ki a minőséget és töltse le az összeset ZIP-ben. Regisztráció nélkül, ingyenes.",
+    "title": "Ingyenes JPG és PNG WebP konverter fájllimit nélkül",
+    "description": "Konvertálja a JPG vagy PNG fájlokat WebP formátumba, és csökkentse a képek méretét minőségromlás nélkül. Teljes adatvédelem, korlátok és regisztráció nélkül.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/jpg-png-webp-konverter"
   },
   "hero": {
-    "title": "JPG/PNG WebP konverter – Ingyenes, korlátlan",
+    "title": "Alakítsa át JPG és PNG fájlokat WebP-be – csökkentse a méretet",
     "description": "Csökkentse a képfájlok méretét akár 35%-kal minőségromlás nélkül. Adjon hozzá fájlokat, válassza ki a minőségi szintet, és töltse le a képeket WebP formátumban. Minden konverzió helyben történik a böngészőben.",
     "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
@@ -24,19 +24,19 @@
   },
   "schemas": {
     "software": {
-      "name": "JPG és PNG WebP konverter - ingyenes, korlátlan",
+      "name": "JPG/PNG WebP konverter – fájllimit nélkül",
       "alternateName": ["JPG WebP-re és PNG WebP-re konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Ingyenes JPG és PNG WebP konverter. Csökkentse a képfájlok méretét akár 35%-kal, javítsa a betöltési sebességet és a Core Web Vitals pontszámokat. A konverzió a böngészőben történik - a fájlok nem kerülnek szerverre.",
+      "description": "Ingyenes JPG és PNG WebP konverter. Csökkentse a képek méretét akár 35%-kal, javítsa az oldalbetöltési sebességet és a Core Web Vitals eredményeket. A konverzió a böngészőben történik – a fájlok nem kerülnek szerverre.",
       "featureList": [
-        "JPG WebP-re konvertálás",
-        "PNG WebP-re konvertálás",
-        "Minőségi szint beállítása (1–100%)",
-        "Több fájl kötegelt konvertálása",
+        "JPG konvertálása WebP-re",
+        "PNG konvertálása WebP-re",
+        "Minőségi szint beállítása (60–95 %)",
+        "Több fájl kötegelt konverziója",
         "Méret előnézet konverzió előtt és után",
-        "Egyedi fájl letöltés",
-        "Összes fájl letöltése ZIP-ként",
+        "Egyedi fájlok letöltése",
+        "Összes fájl letöltése ZIP-ben",
         "Helyi feldolgozás a böngészőben (a fájlok nem kerülnek szerverre)"
       ]
     },

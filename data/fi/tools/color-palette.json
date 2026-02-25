@@ -2,13 +2,13 @@
   "toolKey": "colorPalette",
   "locale": "fi",
   "metadata": {
-    "title": "Ilmainen väripalettien generaattori – 9 palettia yhdestä",
-    "description": "Luo 9 harmonista väripalettia yhdestä perusväristä: monokromaattinen, komplementaarinen, triadinen, pastelli ja muita. Kopioi HEX- ja RGB-koodit yhdellä klikkauksella.",
+    "title": "Ilmainen väripalettien generaattori – 9 skeemaa",
+    "description": "Luo 9 väripalettia yhdestä väristä: monokromaattinen, komplementaarinen, triadinen, pastellinen ja muita. Kopioi HEX-koodit yhdellä napsautuksella.",
     "ogImage": "/assets/tools/color-palette-generator/varipaletti-generaattori-fi.webp",
     "path": "/fi/tyokalut/varipaletti-generaattori"
   },
   "hero": {
-    "title": "Väripalettien generaattori",
+    "title": "Luo 9 väripalettia yhdestä perusväristä",
     "description": "Syötä perusväri, ja työkalu luo 9 harmonista väripalettia: monokromaattinen, komplementaarinen, triadinen, pastelli ja muita. Jokainen väri voidaan kopioida HEX-koodillaan.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
@@ -24,26 +24,26 @@
   },
   "schemas": {
     "software": {
-      "name": "Väripalettien generaattori",
+      "name": "Väripalettien generaattori – 9 väriskeemaa",
       "alternateName": ["Väriskeemojen generaattori", "Värigeneraattori", "Värien sovitustyökalu", "Väriharmonian generaattori"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Ilmainen väripalettien generaattori. Syötä HEX-väri, ja työkalu luo 9 skeemaa: monokromaattinen, analoginen, komplementaarinen, triadinen, jaettu komplementaarinen, pastelli, tumma, tonaalinen ja minimalistinen.",
+      "description": "Ilmainen väripalettien generaattori. Syötä yksi HEX-väri ja työkalu luo 9 skeemaa: monokromaattinen, analoginen, komplementaarinen, triadinen, jaettu komplementaarinen, pastellinen, tumma, tonaalinen ja minimalistinen. Jokainen väri voidaan kopioida HEX-koodilla ja HSL-arvolla.",
       "featureList": [
-        "Monokromaattinen skeema – yhden värin sävyjä",
-        "Analoginen skeema – väripyörällä vierekkiset värit",
+        "Monokromaattinen skeema – yhden värin sävyt",
+        "Analoginen skeema – vierekkäiset värit väriympyrällä",
         "Komplementaarinen skeema – vastakkaiset värit",
-        "Triadinen skeema – 3 väriä tasavälein",
-        "Jaettu komplementaarinen skeema",
-        "Pastellipaletti – pehmeät, himmennetyt sävyt",
-        "Tumma paletti – syvät värit tummiin teemoihin",
-        "Tonaalinen paletti – yhden värin kirkkaustasoja",
-        "Minimalistinen paletti – voimakas korostus ja neutraalit värit",
+        "Triadinen skeema – 3 väriä tasaisin välein",
+        "Jaettu komplementaarinen skeema – perusväri ja komplementin 2 naapuria",
+        "Pastellipaletti – vaaleat, hillityt sävyt",
+        "Tumma paletti – syvät värit tummille teemoille",
+        "Tonaalinen paletti – yhden sävyn kirkkausasteikko",
+        "Minimalistinen paletti – vahva korostus ja vaaleat neutraalit",
         "Perusväri HEX-muodossa",
-        "Värinvalitsin visuaaliseen valintaan",
+        "Värivalitsin visuaaliseen valintaan",
         "Satunnainen aloitusväri",
-        "Kopioi HEX-koodi leikepöydälle",
-        "HSL-arvo näkyy jokaisessa värissä",
+        "HEX-koodin kopiointi leikepöydälle",
+        "HSL-arvo jokaisen värin vieressä",
         "Paikallinen käsittely selaimessa"
       ]
     },

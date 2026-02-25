@@ -2,13 +2,13 @@
   "toolKey": "contrastChecker",
   "locale": "pl",
   "metadata": {
-    "title": "Tester kontrastu kolorów WCAG – sprawdź czytelność tekstu",
-    "description": "Sprawdź czy kolory tekstu i tła są czytelne według WCAG 2.1. Wpisz kody HEX, RGB lub HSL, zobacz współczynnik kontrastu i użyj automatycznej korekty.",
+    "title": "Darmowy tester kontrastu kolorów i czytelności tekstu",
+    "description": "Sprawdź czy kolory mają dobry kontrast i czytelność według wytycznych WCAG 2.1 AA i AAA. Dodaj kolory i użyj automatycznej korekty kontrastu.",
     "ogImage": "/assets/tools/color-contrast-and-readability-checker/kontrast-i-czytelnosc-kolorow-pl.webp",
     "path": "/narzedzia/kontrast-i-czytelnosc-kolorow"
   },
   "hero": {
-    "title": "Kontrast i czytelność kolorów",
+    "title": "Sprawdź kontrast kolorów i czytelność tekstu według WCAG",
     "description": "Wpisz kolor tekstu i tła, a narzędzie pokaże, czy kontrast jest wystarczający. Obliczenia opierają się na międzynarodowym standardzie dostępności WCAG 2.1, który określa minimalne wartości kontrastu dla różnych typów treści.",
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Kontrast i czytelność kolorów online",
+      "name": "Tester kontrastu kolorów i czytelności tekstu WCAG",
       "alternateName": [
         "Tester czytelności kolorów",
         "Sprawdzanie kontrastu tekstu i tła",

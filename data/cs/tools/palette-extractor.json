@@ -2,13 +2,13 @@
   "toolKey": "paletteExtractor",
   "locale": "cs",
   "metadata": {
-    "title": "Extraktor barev z obrázku zdarma – Paleta z jakékoliv fotky",
-    "description": "Nahrajte fotografii nebo logo a extrahujte až 12 dominantních barev s kódy HEX a RGB. Vhodné pro UI, branding a sociální sítě. Bez registrace, bez limitů.",
+    "title": "Bezplatný extraktor barev z obrázku – paleta barev z fotky",
+    "description": "Nahrajte fotografii a nástroj vygeneruje paletu dominantních barev. Hotové kódy HEX a RGB, plné soukromí a bez limitů.",
     "ogImage": "/assets/tools/image-color-extractor/extraktor-barev-z-obrazku-cs.webp",
     "path": "/cs/nastroje/extraktor-barev-z-obrazku"
   },
   "hero": {
-    "title": "Extraktor barev z obrázku – získejte paletu z jakékoliv fotky",
+    "title": "Extrahujte barvy z obrázku – získejte paletu s kódy HEX",
     "description": "Nahrajte fotografii, logo nebo grafiku a nástroj extrahuje až 12 dominantních barev s kódy HEX a RGB. Analýza probíhá lokálně ve vašem prohlížeči.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Extraktor barev z obrázku – bezplatný generátor palety",
+      "name": "Extraktor barev z obrázku – paleta barev z fotky",
       "alternateName": ["Extrahování barevné palety z fotky nebo loga"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
@@ -35,7 +35,7 @@
         "Kódy barev ve formátu HEX a RGB",
         "Kopírování kódu barvy do schránky",
         "Podpora souborů PNG, JPG a SVG",
-        "Ignorování průhledných pixelů v PNG souborech",
+        "Ignorování průhledných pixelů v souborech PNG",
         "Lokální zpracování v prohlížeči – obrázek se neodesílá na server"
       ]
     },

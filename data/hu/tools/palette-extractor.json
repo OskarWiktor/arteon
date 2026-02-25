@@ -2,13 +2,13 @@
   "toolKey": "paletteExtractor",
   "locale": "hu",
   "metadata": {
-    "title": "Ingyenes színkinyaró képből – Paletta bármely fényképből",
-    "description": "Nyerje ki a színpalettát bármely fényképből vagy képből. Kapjon HEX, RGB és HSL kódokat minden azonosított színhez. Ingyenes, regisztráció és korlát nélkül.",
+    "title": "Ingyenes képszínkinyerő – színpaletta fényképből",
+    "description": "Töltsön fel egy fényképet, és az eszköz létrehozza a domináns színek palettáját. Kész HEX és RGB kódok, teljes adatvédelem és korlátok nélkül.",
     "ogImage": "/assets/tools/image-color-extractor/szinkinyero-kepbol-hu.webp",
     "path": "/hu/eszkozok/szinkinyero-kepbol"
   },
   "hero": {
-    "title": "Színkinyaró képből – Kapjon palettát bármely fényképből",
+    "title": "Nyerjen ki színeket képből – kapjon palettát HEX kódokkal",
     "description": "Töltsön fel egy fényképet, logót vagy grafikát, és az eszköz kinyeri akár 12 domináns színt HEX és RGB kódokkal. Az elemzés helyben történik a böngészőben.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
@@ -24,19 +24,19 @@
   },
   "schemas": {
     "software": {
-      "name": "Színkinyaró képből — ingyenes palettagenerátor",
+      "name": "Képszínkinyerő – színpaletta fényképből",
       "alternateName": ["Színpaletta kinyarése fényképből vagy logóból"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
-      "description": "Ingyenes színkinyaró képből. Töltsön fel fényképet, logót vagy grafikát, és kapjon palettát akár 12 domináns színnel HEX és RGB kódokkal. A feldolgozás a böngészőben történik - a fájlok nem kerülnek szerverre.",
+      "description": "Ingyenes képszínkinyerő. Töltsön fel egy fényképet, logót vagy grafikát, és kapjon egy palettát legfeljebb 12 domináns színnel HEX és RGB kódokkal. A feldolgozás a böngészőben történik – a fájlok nem kerülnek szerverre.",
       "featureList": [
-        "Akár 12 domináns szín automatikus kinyarése",
-        "Fényképek, logók és vektorgrafikák elemzése",
+        "Legfeljebb 12 domináns szín automatikus kinyerése",
+        "Fényképek, logók és vektorgrafika elemzése",
         "Színkódok HEX és RGB formátumban",
-        "Színkód másolása vágólapra",
+        "Színkód másolása a vágólapra",
         "PNG, JPG és SVG fájlok támogatása",
         "Átlátszó pixelek figyelmen kívül hagyása PNG fájlokban",
-        "Helyi feldolgozás a böngészőben - a kép nem kerül szerverre"
+        "Helyi feldolgozás a böngészőben – a kép nem kerül szerverre"
       ]
     },
     "howTo": {

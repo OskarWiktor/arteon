@@ -2,13 +2,13 @@
   "toolKey": "colorPalette",
   "locale": "es",
   "metadata": {
-    "title": "Generador de paletas de colores gratis – 9 paletas",
-    "description": "Genere 9 paletas de colores a partir de un color: monocromática, complementaria, triádica, pastel, oscura y más. Copie códigos HEX con un clic.",
+    "title": "Generador gratuito de paletas de colores – 9 esquemas",
+    "description": "Genere 9 paletas de colores a partir de un color: monocromática, complementaria, triádica, pastel y más. Copie los códigos HEX con un clic.",
     "ogImage": "/assets/tools/color-palette-generator/generador-de-paletas-de-colores-es.webp",
     "path": "/es/herramientas/generador-de-paletas-de-colores"
   },
   "hero": {
-    "title": "Generador de paletas de colores",
+    "title": "Genera 9 paletas de colores a partir de un color base",
     "description": "Introduzca un color base y la herramienta generará 9 paletas de colores armoniosas: monocromática, complementaria, triádica, pastel y más. Cada color se puede copiar con su código HEX.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
@@ -24,26 +24,26 @@
   },
   "schemas": {
     "software": {
-      "name": "Generador de paletas de colores",
+      "name": "Generador de paletas de colores – 9 esquemas de color",
       "alternateName": ["Generador de esquemas de colores", "Generador de colores HEX", "Creador de paletas de colores", "Herramienta de combinación de colores", "Generador de armonía de colores"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
       "description": "Generador gratuito de paletas de colores. Introduzca un color HEX y la herramienta generará 9 esquemas: monocromático, análogo, complementario, triádico, complementario dividido, pastel, oscuro, tonal y minimalista. Cada color se puede copiar con su código HEX y valor HSL.",
       "featureList": [
-        "Esquema monocromático - tonos de un solo color",
-        "Esquema análogo - colores vecinos en la rueda cromática",
-        "Esquema complementario - colores opuestos",
-        "Esquema triádico - 3 colores a intervalos iguales",
-        "Esquema complementario dividido - color base y 2 vecinos de su complementario",
-        "Paleta pastel - tonos claros y suaves",
-        "Paleta oscura - colores profundos para temas oscuros",
-        "Paleta tonal - escala de luminosidad de un tono",
-        "Paleta minimalista - acento fuerte con neutros claros",
+        "Esquema monocromático – tonos de un color",
+        "Esquema análogo – colores adyacentes en la rueda de colores",
+        "Esquema complementario – colores opuestos",
+        "Esquema triádico – 3 colores a intervalos iguales",
+        "Esquema complementario dividido – color base y 2 vecinos del opuesto",
+        "Paleta pastel – tonos claros y suaves",
+        "Paleta oscura – colores profundos para temas oscuros",
+        "Paleta tonal – escala de luminosidad de un tono",
+        "Paleta minimalista – acento fuerte con neutros claros",
         "Color base en formato HEX",
         "Selector de color para selección visual",
         "Color inicial aleatorio",
         "Copiar código HEX al portapapeles",
-        "Valor HSL mostrado junto a cada color",
+        "Valor HSL junto a cada color",
         "Procesamiento local en el navegador"
       ]
     },

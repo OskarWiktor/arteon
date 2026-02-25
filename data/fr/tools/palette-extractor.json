@@ -2,13 +2,13 @@
   "toolKey": "paletteExtractor",
   "locale": "fr",
   "metadata": {
-    "title": "Extracteur de couleurs d'image gratuit – palette de photos",
-    "description": "Importez une photo ou un logo et extrayez jusqu'à 12 couleurs dominantes avec codes HEX et RGB. Idéal pour l'UI, le branding et les réseaux sociaux.",
+    "title": "Extracteur gratuit de couleurs d'image – palette de couleurs depuis photo",
+    "description": "Importez une photo et l'outil générera une palette de couleurs dominantes. Codes HEX et RGB prêts, confidentialité totale et sans limites.",
     "ogImage": "/assets/tools/image-color-extractor/extracteur-de-couleurs-d-image-fr.webp",
     "path": "/fr/outils/extracteur-de-couleurs-d-image"
   },
   "hero": {
-    "title": "Extracteur de couleurs d'image",
+    "title": "Extrayez les couleurs d'une image – obtenez une palette HEX",
     "description": "Importez une photo ou un logo et l'outil extraira les couleurs dominantes. Copiez les codes HEX en un clic – idéal pour l'UI, le branding et les réseaux sociaux.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
@@ -24,18 +24,19 @@
   },
   "schemas": {
     "software": {
-      "name": "Extracteur de couleurs d'image — palette depuis vos photos",
+      "name": "Extracteur de couleurs d'image – palette de couleurs depuis photo",
       "alternateName": ["Palette de couleurs à partir d'une image", "Extracteur de couleurs dominantes", "Générateur de palette à partir d'une photo"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
-      "description": "Extracteur de couleurs gratuit. Importez une photo ou un logo et obtenez une palette de jusqu'à 12 couleurs dominantes (HEX et RGB). Exécution locale.",
+      "description": "Extracteur gratuit de couleurs d'image. Importez une photo, un logo ou un graphique et obtenez une palette de jusqu'à 12 couleurs dominantes avec codes HEX et RGB. Le traitement se fait dans le navigateur – les fichiers ne sont pas envoyés à un serveur.",
       "featureList": [
-        "Extraction de jusqu'à 12 couleurs dominantes",
-        "Codes HEX et RGB",
-        "Copie en un clic",
-        "Prise en charge PNG, JPG/JPEG, SVG",
-        "Exécution locale dans le navigateur",
-        "Sans inscription et sans limite"
+        "Extraction automatique de jusqu'à 12 couleurs dominantes",
+        "Analyse de photos, logos et graphiques vectoriels",
+        "Codes couleur au format HEX et RGB",
+        "Copier le code couleur dans le presse-papiers",
+        "Prise en charge des fichiers PNG, JPG et SVG",
+        "Ignore les pixels transparents dans les fichiers PNG",
+        "Traitement local dans le navigateur – l'image n'est pas envoyée au serveur"
       ]
     },
     "howTo": {

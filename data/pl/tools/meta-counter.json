@@ -2,13 +2,13 @@
   "toolKey": "metaCounter",
   "locale": "pl",
   "metadata": {
-    "title": "Licznik meta title i description – długość w pikselach",
-    "description": "Sprawdź długość meta title i description w znakach i pikselach. Podgląd wyniku w Google pomoże uniknąć obcięcia tekstu w wynikach wyszukiwania.",
+    "title": "Darmowy licznik długości meta title i description w pikselach",
+    "description": "Sprawdź czy meta title i description ma dobrą długość według wytycznych Google. Licznik z podglądem wyniku na żywo i podpowiedziami",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/licznik-dlugosci-meta-title-i-description-pl.webp",
     "path": "/narzedzia/licznik-dlugosci-meta-title-i-description"
   },
   "hero": {
-    "title": "Sprawdź długość tytułu i opisu strony w Google",
+    "title": "Sprawdź długość meta title i description – podgląd w Google",
     "description": "Wpisz tytuł i opis strony, a narzędzie obliczy liczbę znaków, słów, szerokość w pikselach i pokaże, czy długość jest zgodna z zasadami SEO",
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Darmowy licznik meta title i description online",
+      "name": "Licznik długości meta title i description w pikselach",
       "alternateName": [
         "Licznik meta title i meta description z podglądem Google",
         "Podgląd wyniku w Google po polsku",

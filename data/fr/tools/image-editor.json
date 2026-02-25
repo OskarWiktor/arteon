@@ -2,13 +2,13 @@
   "toolKey": "imageResize",
   "locale": "fr",
   "metadata": {
-    "title": "Éditeur d'images gratuit – recadrer et redimensionner",
-    "description": "Recadrez et redimensionnez vos images en quelques secondes. Modèles pour Instagram, Facebook, LinkedIn. Convertissez JPG en WebP.",
+    "title": "Recadrage, redimensionnement et conversion d'images gratuits",
+    "description": "Redimensionnez, recadrez et convertissez votre image gratuitement. Utilisez des formats prêts pour les réseaux sociaux et téléchargez en JPG, PNG ou WebP.",
     "ogImage": "/assets/tools/free-image-editor-crop-resize-and-convert/editeur-d-images-en-ligne-fr.webp",
     "path": "/fr/outils/editeur-d-images-en-ligne"
   },
   "hero": {
-    "title": "Éditeur d'images — recadrer et redimensionner",
+    "title": "Redimensionnez, recadrez et convertissez vos images en ligne",
     "description": "Recadrez et redimensionnez vos images pour les réseaux sociaux, les sites web et les supports imprimés. Modèles prêts à l'emploi pour Instagram, Facebook et LinkedIn – ou saisissez vos propres dimensions.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Éditeur d'images gratuit — recadrer, redimensionner et convertir",
+      "name": "Éditeur d'images – recadrage, redimensionnement et conversion",
       "alternateName": [
         "Recadrer des images gratuitement",
         "Redimensionner des images gratuitement",
@@ -37,15 +37,22 @@
       ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Recadrez et redimensionnez vos images pour les réseaux sociaux et les sites web. Modèles pour Instagram, Facebook, LinkedIn. Trois formes de recadrage, export en PNG, JPG, WebP.",
+      "description": "Éditeur d'images en ligne gratuit pour le redimensionnement, le recadrage et la conversion de formats. Préréglages pour Instagram, Facebook et LinkedIn. Création d'avatars circulaires. Export en JPG, PNG et WebP avec contrôle qualité. Traitement local dans le navigateur.",
       "featureList": [
-        "Modèles pour Instagram, Facebook, LinkedIn, OG Image",
-        "Trois formes de recadrage : rectangle, carré, cercle",
-        "Dimensions personnalisées en pixels",
-        "Contrôle du zoom et de la position",
-        "Export en PNG, JPG, WebP",
-        "Réglage de la qualité pour JPG et WebP",
-        "Exécution locale dans le navigateur"
+        "Redimensionner les images à n'importe quelle taille",
+        "Recadrage avec sélection de zone interactive",
+        "Formats prédéfinis pour Instagram (post carré, post portrait, story, reels)",
+        "Formats prédéfinis pour Facebook (post, couverture de page)",
+        "Formats prédéfinis pour LinkedIn (post, bannière de profil)",
+        "Formats prédéfinis pour le web (image OG, hero, bannière, miniature)",
+        "Formes de recadrage : rectangle, carré, cercle (avatar rond)",
+        "Grille 3x3 (règle des tiers) avec choix de couleur",
+        "Zoom de recadrage 100–300 %",
+        "Position précise du recadrage (X, Y) avec centrage",
+        "Conversion de formats : JPG, PNG, WebP",
+        "Contrôle de la qualité de compression 60–100 %",
+        "Traitement local dans le navigateur",
+        "Outil gratuit sans inscription"
       ]
     },
     "howTo": {

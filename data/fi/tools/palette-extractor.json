@@ -2,13 +2,13 @@
   "toolKey": "paletteExtractor",
   "locale": "fi",
   "metadata": {
-    "title": "Ilmainen värien poiminta kuvasta – HEX- ja RGB-koodit",
-    "description": "Lataa valokuva tai logo ja poimi jopa 12 hallitsevaa väriä HEX- ja RGB-koodeilla. Sopii käyttöliittymäsuunnitteluun, brändäykseen ja sosiaaliseen mediaan.",
+    "title": "Ilmainen värien poiminta kuvasta – väripaletti valokuvasta",
+    "description": "Lataa valokuva ja työkalu luo hallitsevien värien paletin. Valmiit HEX- ja RGB-koodit, täysi yksityisyys eikä rajoituksia.",
     "ogImage": "/assets/tools/image-color-extractor/varien-poiminta-kuvasta-fi.webp",
     "path": "/fi/tyokalut/varien-poiminta-kuvasta"
   },
   "hero": {
-    "title": "Värien poiminta kuvasta – poimi paletti mistä tahansa valokuvasta",
+    "title": "Poimi värit kuvasta – saat paletin HEX-koodeilla",
     "description": "Lataa valokuva, logo tai grafiikka, ja työkalu poimii jopa 12 hallitsevaa väriä HEX- ja RGB-koodeilla. Analyysi tapahtuu paikallisesti selaimessasi.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
@@ -24,16 +24,16 @@
   },
   "schemas": {
     "software": {
-      "name": "Värien poiminta kuvasta – ilmainen palettigeneraattori",
+      "name": "Värien poiminta kuvasta – väripaletti valokuvasta",
       "alternateName": ["Poimi väripaletti valokuvasta tai logosta"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
-      "description": "Ilmainen värien poiminta kuvasta. Lataa valokuva, logo tai grafiikka ja saat paletin, jossa on jopa 12 hallitsevaa väriä HEX- ja RGB-koodeilla. Käsittely tapahtuu selaimessa – tiedostoja ei lähetetä palvelimelle.",
+      "description": "Ilmainen värien poiminta kuvasta. Lataa valokuva, logo tai grafiikka ja saat paletin jopa 12 hallitsevasta väristä HEX- ja RGB-koodeilla. Käsittely tapahtuu selaimessa – tiedostoja ei lähetetä palvelimelle.",
       "featureList": [
-        "Automaattinen jopa 12 hallitsevan värin poiminta",
-        "Kuvien, logojen ja vektorigrafiikan analyysi",
+        "Automaattinen poiminta jopa 12 hallitsevasta väristä",
+        "Valokuvien, logojen ja vektorigrafiikan analysointi",
         "Värikoodit HEX- ja RGB-muodossa",
-        "Kopioi värikoodi leikepöydälle",
+        "Värikoodin kopiointi leikepöydälle",
         "Tuki PNG-, JPG- ja SVG-tiedostoille",
         "Ohittaa läpinäkyvät pikselit PNG-tiedostoissa",
         "Paikallinen käsittely selaimessa – kuvaa ei lähetetä palvelimelle"

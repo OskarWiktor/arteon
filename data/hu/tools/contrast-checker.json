@@ -2,13 +2,13 @@
   "toolKey": "contrastChecker",
   "locale": "hu",
   "metadata": {
-    "title": "Ingyenes színkontraszt ellenőrző – WCAG 2.1 megfelelőség",
-    "description": "Tesztelje a színkontrasztot a WCAG 2.1 szabvány szerint. Ellenőrizze a szöveg olvashatóságát és kapjon automatikus színillesztési javaslatokat.",
+    "title": "Ingyenes színkontraszt- és szövegolvashatóság-ellenőrző",
+    "description": "Ellenőrizze, hogy a színei jó kontrasztúak és olvashatóak-e a WCAG 2.1 AA és AAA szerint. Adjon hozzá színeket és használja az automatikus kontrasztkorrekciót.",
     "ogImage": "/assets/tools/color-contrast-and-readability-checker/szinkontraszt-ellenorzo-hu.webp",
     "path": "/hu/eszkozok/szinkontraszt-ellenorzo"
   },
   "hero": {
-    "title": "Színkontraszt és olvashatóság ellenőrző",
+    "title": "Ellenőrizze a színkontrasztot és az olvashatóságot a WCAG szerint",
     "description": "Adjon meg egy szöveg- és háttérszínt, és az eszköz megmutatja, hogy a kontraszt megfelelő-e. A számítások a WCAG 2.1 nemzetközi akadálymentességi szabványon alapulnak, amely minimális kontrasztrtékeket határoz meg különböző tartalomtipusokhoz.",
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Színkontraszt és olvashatóság ellenőrző — WCAG 2.1",
+      "name": "Színkontraszt- és szövegolvashatóság-ellenőrző – WCAG",
       "alternateName": [
         "Színolvashatóság tesztelő",
         "Szöveg és háttér kontraszt ellenőrző",
@@ -36,20 +36,20 @@
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
-      "description": "Ellenőrizze, hogy a szöveg- és háttérszínek minden felhasználó számára olvashatóak-e. Az eszköz a WCAG 2.1 szerint számítja ki a kontrasztarányt, és megmutatja, hogy megfelel-e az akadálymentességi követelményeknek.",
+      "description": "Ellenőrizze, hogy a szöveg és háttér színei olvashatóak-e minden felhasználó számára. Az eszköz kiszámítja a kontrasztarányt a WCAG szabvány szerint, és megmutatja, teljesíti-e az akadálymentességi követelményeket.",
       "featureList": [
-        "Kontrasztarány számítás",
-        "WCAG 2.1 AA szintű megfelelőség ellenőrzés",
-        "WCAG 2.1 AAA szintű megfelelőség ellenőrzés",
+        "Kontrasztarány kiszámítása",
+        "WCAG 2.1 AA szintű megfelelőség ellenőrzése",
+        "WCAG 2.1 AAA szintű megfelelőség ellenőrzése",
         "Normál szöveg tesztelése",
         "Nagy szöveg és címsorok tesztelése",
-        "Ikonok és UI-komponensek tesztelése",
-        "HEX színformátum támogatás",
-        "RGB és RGBA színformátum támogatás",
-        "HSL és HSLA színformátum támogatás",
+        "Ikonok és felületi elemek tesztelése",
+        "HEX színformátum támogatása",
+        "RGB és RGBA színformátum támogatása",
+        "HSL és HSLA színformátum támogatása",
         "Színválasztó vizuális kiválasztáshoz",
-        "Élő szöveg előnézet",
-        "Automatikus színillesztsi funkció",
+        "Élő szövegelőnézet",
+        "Automatikus színillesztési funkció",
         "Helyi feldolgozás a böngészőben"
       ]
     },

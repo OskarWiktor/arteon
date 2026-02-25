@@ -2,13 +2,13 @@
   "toolKey": "imageResize",
   "locale": "de",
   "metadata": {
-    "title": "Kostenloser Bildeditor – Zuschneiden und Größe ändern",
-    "description": "Bilder zuschneiden und skalieren in Sekunden. Vorlagen für Instagram, Facebook, LinkedIn. JPG zu WebP konvertieren. Runde Avatare erstellen.",
+    "title": "Kostenloses Zuschneiden, Größenänderung und Konvertierung von Bildern",
+    "description": "Bildgröße ändern, zuschneiden und Format konvertieren – kostenlos. Fertige Formate für Social Media, Export als JPG, PNG oder WebP.",
     "ogImage": "/assets/tools/free-image-editor-crop-resize-and-convert/online-bildeditor-de.webp",
     "path": "/de/werkzeuge/online-bildeditor"
   },
   "hero": {
-    "title": "Bildeditor – Zuschneiden und Größe ändern",
+    "title": "Bilder online zuschneiden, skalieren und konvertieren – kostenlos",
     "description": "Schneiden Sie Bilder für Social Media, Websites und Druckmaterialien zu und ändern Sie die Größe. Fertige Vorlagen für Instagram, Facebook und LinkedIn - oder eigene Pixelmaße eingeben.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -24,19 +24,26 @@
   },
   "schemas": {
     "software": {
-      "name": "Bildeditor — Zuschneiden, Größe ändern und konvertieren",
+      "name": "Bildeditor – Zuschneiden, Größenänderung und Konvertierung",
       "alternateName": ["Bilder zuschneiden Tool", "Bildgröße ändern kostenlos", "Instagram-Bilder zuschneiden", "Facebook-Cover-Größe", "LinkedIn-Banner erstellen", "Runde Avatare erstellen"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Bilder zuschneiden und skalieren für Social Media und Websites. Fertige Größenvorlagen für Instagram, Facebook, LinkedIn. Drei Zuschnittsformen, Export als PNG, JPG, WebP.",
+      "description": "Kostenloser Online-Bildeditor zum Ändern der Größe, Zuschneiden und Konvertieren von Formaten. Fertige Presets für Instagram, Facebook und LinkedIn. Runde Avatare erstellen. Export als JPG, PNG und WebP mit Qualitätskontrolle. Lokale Verarbeitung im Browser.",
       "featureList": [
-        "Fertige Vorlagen für Instagram, Facebook, LinkedIn, OG Image",
-        "Drei Zuschnittsformen: Rechteck, Quadrat, Kreis",
-        "Benutzerdefinierte Pixelmaße",
-        "Zoom- und Positionssteuerung",
-        "Export als PNG, JPG, WebP",
-        "Qualitätseinstellung für JPG und WebP",
-        "Lokale Verarbeitung im Browser"
+        "Bildgröße auf beliebige Maße ändern",
+        "Zuschneiden mit interaktiver Bereichsauswahl",
+        "Fertige Instagram-Formate (quadratischer Post, Hochformat-Post, Story, Reels)",
+        "Fertige Facebook-Formate (Post, Seitencover)",
+        "Fertige LinkedIn-Formate (Post, Profilbanner)",
+        "Fertige Web-Formate (OG-Image, Hero, Banner, Miniatur)",
+        "Zuschnittsformen: Rechteck, Quadrat, Kreis (runder Avatar)",
+        "3x3-Raster (Drittelregel) mit Farbauswahl",
+        "Zuschnitt-Zoom 100–300 %",
+        "Präzise Zuschnittsposition (X, Y) mit Zentrierung",
+        "Formatkonvertierung: JPG, PNG, WebP",
+        "Kompressionsqualität 60–100 %",
+        "Lokale Verarbeitung im Browser",
+        "Kostenloses Tool ohne Anmeldung"
       ]
     },
     "howTo": {

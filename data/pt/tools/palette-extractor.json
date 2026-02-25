@@ -2,13 +2,13 @@
   "toolKey": "paletteExtractor",
   "locale": "pt",
   "metadata": {
-    "title": "Extrator de cores de imagem gratuito – paleta de fotos",
-    "description": "Importe uma foto ou logo e extraia até 12 cores dominantes com códigos HEX e RGB. Ideal para UI, branding e redes sociais. Sem registo, sem limites.",
+    "title": "Extrator gratuito de cores de imagem – paleta de cores a partir de foto",
+    "description": "Carregue uma foto e a ferramenta gerará uma paleta de cores dominantes. Códigos HEX e RGB prontos, privacidade total e sem limites.",
     "ogImage": "/assets/tools/image-color-extractor/extrator-de-cores-de-imagem-pt.webp",
     "path": "/pt/ferramentas/extrator-de-cores-de-imagem"
   },
   "hero": {
-    "title": "Extrator de cores de imagem",
+    "title": "Extraia cores de qualquer imagem – obtenha paleta com códigos HEX",
     "description": "Importe uma foto ou logótipo e a ferramenta extrairá as cores dominantes. Copie os códigos HEX com um clique – ideal para UI, branding e redes sociais.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
@@ -24,12 +24,20 @@
   },
   "schemas": {
     "software": {
-      "name": "Extrator de cores de imagem — paleta a partir de fotos",
+      "name": "Extrator de cores de imagem – paleta de cores a partir de foto",
       "alternateName": ["Paleta de cores a partir de uma imagem", "Extrator de cores dominantes", "Gerador de paleta a partir de uma foto"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
-      "description": "Extrator de cores gratuito. Importe uma foto ou logótipo e obtenha uma paleta de até 12 cores dominantes (HEX e RGB). Execução local.",
-      "featureList": ["Extração de até 12 cores dominantes", "Códigos HEX e RGB", "Cópia com um clique", "Suporte PNG, JPG/JPEG, SVG", "Execução local no navegador", "Sem registo e sem limite"]
+      "description": "Extrator gratuito de cores de imagem. Carregue uma foto, logótipo ou gráfico e obtenha uma paleta de até 12 cores dominantes com códigos HEX e RGB. O processamento ocorre no navegador – os ficheiros não são enviados para um servidor.",
+      "featureList": [
+        "Extração automática de até 12 cores dominantes",
+        "Análise de fotos, logótipos e gráficos vetoriais",
+        "Códigos de cor no formato HEX e RGB",
+        "Copiar código de cor para a área de transferência",
+        "Suporte para ficheiros PNG, JPG e SVG",
+        "Ignora pixels transparentes em ficheiros PNG",
+        "Processamento local no navegador – a imagem não é enviada para o servidor"
+      ]
     },
     "howTo": {
       "name": "Como extrair as cores de uma imagem",

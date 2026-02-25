@@ -2,13 +2,13 @@
   "toolKey": "colorPalette",
   "locale": "hu",
   "metadata": {
-    "title": "Ingyenes színpaletta generátor – 9 paletta egyetlen színből",
-    "description": "Generáljon 9 harmonikus színpalettát egyetlen alapszínből: monokromatikus, komplementer, triádikus, pasztell és más. Másolja a HEX-, RGB- és HSL-kódokat egy kattintással.",
+    "title": "Ingyenes színpaletta-generátor – 9 séma",
+    "description": "9 színpaletta generálása egy színből: monokromatikus, komplementer, triádikus, pasztell és több. HEX kódok másolása egy kattintással.",
     "ogImage": "/assets/tools/color-palette-generator/szinpaletta-generator-hu.webp",
     "path": "/hu/eszkozok/szinpaletta-generator"
   },
   "hero": {
-    "title": "Színpaletta generátor",
+    "title": "Generáljon 9 színpalettát egyetlen alapszínből",
     "description": "Adjon meg egyetlen alapszínt, és az eszköz 9 harmonikus színpalettát generál: monokromatikus, komplementár, triádikus, pasztell és még sok más. Minden szín másolható a HEX kódjával.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
@@ -24,25 +24,25 @@
   },
   "schemas": {
     "software": {
-      "name": "Színpaletta generátor",
+      "name": "Színpaletta-generátor – 9 színséma",
       "alternateName": ["Színséma generátor", "HEX színgenerátor", "Színpaletta készítő", "Színillesztő eszköz", "Színpaletta ingyenes", "Színösszhang generátor"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Ingyenes színpaletta generátor. Adjon meg egy HEX színt, és az eszköz 9 sémát generál: monokromatikus, analóg, komplementár, triádikus, osztott komplementár, pasztell, sötét, tonális és minimalista. Minden szín másolható HEX kóddal és HSL értékkel.",
+      "description": "Ingyenes színpaletta-generátor. Adjon meg egy HEX színt, és az eszköz 9 sémát generál: monokromatikus, analóg, komplementer, triádikus, osztott komplementer, pasztell, sötét, tonális és minimalista. Minden szín másolható a HEX kóddal és HSL értékkel.",
       "featureList": [
-        "Monokromatikus séma – egyetlen szín árnyalatai",
+        "Monokromatikus séma – egy szín árnyalatai",
         "Analóg séma – szomszédos színek a színkörön",
-        "Komplementár séma – szemben álló színek",
+        "Komplementer séma – szemben lévő színek",
         "Triádikus séma – 3 szín egyenlő távolságra",
-        "Osztott komplementár séma – alapszín és a komplement 2 szomszédja",
-        "Pasztell paletta – világos, tömpített árnyalatok",
+        "Osztott komplementer séma – alapszín és az ellentétes 2 szomszédja",
+        "Pasztell paletta – világos, tompított árnyalatok",
         "Sötét paletta – mély színek sötét témákhoz",
-        "Tonális paletta – egyetlen árnyalat világossági skálája",
-        "Minimalista paletta – erős akcentus világos neutrálisokkal",
+        "Tonális paletta – egy árnyalat fényerő-skálája",
+        "Minimalista paletta – erős hangsúly világos semleges tónusokkal",
         "Alapszín HEX formátumban",
         "Színválasztó vizuális kiválasztáshoz",
         "Véletlenszerű kezdőszín",
-        "HEX kód másolása vágólapra",
+        "HEX kód másolása a vágólapra",
         "HSL érték megjelenítve minden szín mellett",
         "Helyi feldolgozás a böngészőben"
       ]

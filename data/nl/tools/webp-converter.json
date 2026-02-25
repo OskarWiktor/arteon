@@ -2,13 +2,13 @@
   "toolKey": "jpgToWebp",
   "locale": "nl",
   "metadata": {
-    "title": "Gratis JPG/PNG naar WebP-converter – Zonder limieten",
-    "description": "Converteer JPG- en PNG-afbeeldingen naar WebP-formaat zonder bestandslimiet. Kies het kwaliteitsniveau en download als ZIP. Gratis, zonder registratie.",
+    "title": "Gratis JPG- en PNG-naar-WebP-converter zonder bestandslimiet",
+    "description": "Converteer JPG of PNG naar WebP en verklein afbeeldingen zonder kwaliteitsverlies. Volledige privacy, geen limieten en geen registratie.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/jpg-png-naar-webp-converter"
   },
   "hero": {
-    "title": "JPG/PNG naar WebP-converter – Gratis, zonder limieten",
+    "title": "Converteer JPG en PNG naar WebP – verklein zonder kwaliteitsverlies",
     "description": "Verklein afbeeldingsbestanden tot 35% zonder kwaliteitsverlies. Voeg bestanden toe, kies het kwaliteitsniveau en download afbeeldingen in WebP-formaat. Alle conversie vindt lokaal in de browser plaats.",
     "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
@@ -24,20 +24,20 @@
   },
   "schemas": {
     "software": {
-      "name": "JPG en PNG naar WebP-converter - gratis, zonder limieten",
+      "name": "JPG/PNG-naar-WebP-converter – zonder bestandslimiet",
       "alternateName": ["JPG naar WebP en PNG naar WebP-converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Gratis JPG en PNG naar WebP-converter. Verklein afbeeldingsbestanden tot 35%, verbeter laadsnelheid en Core Web Vitals-scores. Conversie vindt plaats in de browser - bestanden worden niet naar een server gestuurd.",
+      "description": "Gratis JPG- en PNG-naar-WebP-converter. Verklein afbeeldingen tot 35 %, verbeter de laadsnelheid en Core Web Vitals-scores. De conversie vindt plaats in de browser – bestanden worden niet naar een server verzonden.",
       "featureList": [
-        "JPG naar WebP-conversie",
-        "PNG naar WebP-conversie",
-        "Kwaliteitsniveau aanpassing (1–100%)",
+        "Conversie van JPG naar WebP",
+        "Conversie van PNG naar WebP",
+        "Kwaliteitsniveau aanpassen (60–95 %)",
         "Batchconversie van meerdere bestanden",
-        "Formaatvoorbeeld voor en na conversie",
-        "Individuele bestandsdownload",
-        "Alle bestanden downloaden als ZIP",
-        "Lokale verwerking in de browser (bestanden worden niet naar een server gestuurd)"
+        "Groottevoorbeeld voor en na conversie",
+        "Individuele bestanden downloaden",
+        "Alle bestanden als ZIP downloaden",
+        "Lokale verwerking in de browser (bestanden worden niet naar server verzonden)"
       ]
     },
     "howTo": {

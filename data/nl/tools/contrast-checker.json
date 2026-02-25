@@ -2,13 +2,13 @@
   "toolKey": "contrastChecker",
   "locale": "nl",
   "metadata": {
-    "title": "Gratis kleurcontrast checker – WCAG 2.1-conformiteit",
-    "description": "Test het kleurcontrast volgens de WCAG 2.1-standaard. Controleer de leesbaarheid van tekst en ontvang automatische aanpassuggesties voor kleuren.",
+    "title": "Gratis kleurcontrast- en tekstleesbaarheid checker",
+    "description": "Controleer of uw kleuren goed contrast en leesbaarheid hebben volgens WCAG 2.1 AA en AAA. Voeg kleuren toe en gebruik automatische contrastcorrectie.",
     "ogImage": "/assets/tools/color-contrast-and-readability-checker/kleurcontrast-checker-nl.webp",
     "path": "/nl/tools/kleurcontrast-checker"
   },
   "hero": {
-    "title": "Kleurcontrast en leesbaarheid checker",
+    "title": "Controleer kleurcontrast en leesbaarheid volgens WCAG-normen",
     "description": "Voer een tekst- en achtergrondkleur in en de tool laat zien of het contrast voldoende is. Berekeningen zijn gebaseerd op de internationale toegankelijkheidsstandaard WCAG 2.1, die minimale contrastwaarden definieert voor verschillende inhoudstypen.",
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Kleurcontrast en leesbaarheid checker — WCAG 2.1",
+      "name": "Kleurcontrast- en tekstleesbaarheid checker – WCAG",
       "alternateName": [
         "Kleurleesbaarheid tester",
         "Tekst- en achtergrondcontrast checker",
@@ -36,20 +36,20 @@
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
-      "description": "Controleer of tekst- en achtergrondkleuren leesbaar zijn voor alle gebruikers. De tool berekent de contrastverhouding volgens WCAG 2.1 en toont of u voldoet aan de toegankelijkheidseisen.",
+      "description": "Controleer of tekst- en achtergrondkleuren leesbaar zijn voor alle gebruikers. De tool berekent de contrastverhouding volgens de WCAG-standaard en toont of u voldoet aan de toegankelijkheidseisen.",
       "featureList": [
-        "Berekening van contrastverhouding",
-        "WCAG 2.1 Niveau AA conformiteitscontrole",
-        "WCAG 2.1 Niveau AAA conformiteitscontrole",
-        "Testen van normale tekst",
-        "Testen van grote tekst en koppen",
-        "Testen van pictogrammen en UI-componenten",
-        "Ondersteuning HEX-kleurformaat",
-        "Ondersteuning RGB- en RGBA-kleurformaat",
-        "Ondersteuning HSL- en HSLA-kleurformaat",
+        "Berekening van de contrastverhouding",
+        "Controle van WCAG 2.1 niveau AA",
+        "Controle van WCAG 2.1 niveau AAA",
+        "Test voor normale tekst",
+        "Test voor grote tekst en koppen",
+        "Test voor pictogrammen en UI-componenten",
+        "Ondersteuning van HEX-kleurformaat",
+        "Ondersteuning van RGB- en RGBA-kleurformaten",
+        "Ondersteuning van HSL- en HSLA-kleurformaten",
         "Kleurkiezer voor visuele selectie",
         "Live tekstvoorbeeld",
-        "Automatische kleurafstemmingsfunctie",
+        "Automatische kleuraanpassingsfunctie",
         "Lokale verwerking in de browser"
       ]
     },

@@ -2,13 +2,13 @@
   "toolKey": "qrCode",
   "locale": "fr",
   "metadata": {
-    "title": "Générateur de codes QR gratuit – PNG et SVG",
-    "description": "Créez des codes QR pour sites web, vCards, menus ou flyers en quelques secondes. Export en PNG et SVG. Personnalisez couleurs et taille.",
+    "title": "Générateur gratuit de codes QR sans inscription ni connexion",
+    "description": "Générez un code QR pour votre site web, carte vCard ou impression. Collez un lien, choisissez la couleur du code, la taille et téléchargez le code QR en PNG et SVG.",
     "ogImage": "/assets/tools/qr-code-generator/generateur-de-codes-qr-gratuit-fr.webp",
     "path": "/fr/outils/generateur-de-codes-qr-gratuit"
   },
   "hero": {
-    "title": "Générateur de codes QR",
+    "title": "Créez un code QR pour site web, vCard ou impression – PNG et SVG",
     "description": "Créez des codes QR pour des sites web, des vCards, des menus ou des flyers. Personnalisez les couleurs et la taille, puis téléchargez en PNG ou SVG – tout s'exécute localement dans votre navigateur.",
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Générateur de codes QR gratuit — PNG et SVG",
+      "name": "Générateur de codes QR sans inscription ni connexion",
       "alternateName": [
         "Générateur de codes QR gratuit",
         "Code QR pour site web",
@@ -40,14 +40,20 @@
       ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "QRCodeGenerator",
-      "description": "Générateur de codes QR gratuit. Créez des codes QR pour URL, vCards, texte, e-mail et téléphone. Couleurs et taille personnalisables. Export en PNG et SVG.",
+      "description": "Créez un code QR pour un site web, une carte de visite, un menu ou un dépliant. Choisissez le type de données, personnalisez les couleurs et la taille, puis téléchargez le fichier PNG ou SVG.",
       "featureList": [
-        "Codes QR pour URL, vCard, texte, e-mail, téléphone",
-        "Couleurs personnalisables (premier plan et arrière-plan)",
-        "Taille réglable",
-        "Export en PNG et SVG",
-        "Exécution locale dans le navigateur",
-        "Sans inscription et sans limite"
+        "Code QR pour URL (site web)",
+        "Code QR pour texte brut",
+        "Code QR vCard (coordonnées)",
+        "Code QR pour e-mail (adresse, objet, contenu)",
+        "Code QR pour numéro de téléphone",
+        "Couleurs personnalisables pour le code et le fond",
+        "Choix de la taille du code en pixels",
+        "Export au format PNG (raster)",
+        "Export au format SVG (vecteur)",
+        "Aperçu du code en direct",
+        "Traitement local dans le navigateur",
+        "Correction d'erreurs Reed-Solomon"
       ]
     },
     "howTo": {

@@ -2,13 +2,13 @@
   "toolKey": "emailSignature",
   "locale": "cs",
   "metadata": {
-    "title": "Generátor podpisu e-mailu zdarma – HTML pro Gmail a Outlook",
-    "description": "Vytvořte profesionální HTML e-mailový podpis bez softwaru. Přidejte kontaktní údaje, logo, odkazy na sociální sítě a zkopírujte do Gmailu nebo Outlooku.",
+    "title": "Bezplatný generátor HTML e-mailového podpisu – vytvořte podpis",
+    "description": "Vytvořte HTML e-mailový podpis bez přihlášení a registrace. Plná personalizace, hotové rozložení, živý náhled a hotový HTML kód.",
     "ogImage": "/assets/tools/free-html-email-signature-generator/generator-podpisu-emailu-zdarma-cs.webp",
     "path": "/cs/nastroje/generator-podpisu-emailu-zdarma"
   },
   "hero": {
-    "title": "Vytvořte profesionální HTML e-mailový podpis",
+    "title": "Vytvořte HTML e-mailový podpis – zkopírujte do Gmailu či Outlooku",
     "description": "Vytvořte profesionální e-mailový podpis za pár minut. Zadejte své údaje, vyberte barvy a zkopírujte hotový HTML kód do Gmailu, Outlooku nebo jiného e-mailového klienta.",
     "backgroundImage": "/assets/tools/free-html-email-signature-generator/generator-podpisu-emailu-zdarma-cs.webp"
   },
@@ -24,24 +24,27 @@
   },
   "schemas": {
     "software": {
-      "name": "Generátor podpisu e-mailu zdarma",
+      "name": "Generátor HTML e-mailového podpisu – tvůrce podpisu",
       "alternateName": ["Generátor HTML e-mailového podpisu", "Generátor patičky e-mailu"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Bezplatný generátor HTML e-mailového podpisu. Přidejte kontaktní údaje, CTA tlačítko a profily na sociálních sítích, poté zkopírujte hotový kód do Gmailu, Outlooku a dalších e-mailových klientů.",
+      "description": "Bezplatný generátor HTML e-mailového podpisu. Přidejte kontaktní údaje, CTA odkaz a profily na sociálních sítích, poté zkopírujte hotový kód podpisu do Gmailu, Outlooku a dalších e-mailových klientů.",
       "featureList": [
         "Kontaktní údaje (jméno, pozice, firma)",
         "Telefon, e-mail a URL webu",
         "Logo nebo profilový obrázek s volbou tvaru a velikosti",
-        "Ikony sociálních sítí (12 platforem)",
+        "Ikony sociálních sítí (12 platforem: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
         "Přizpůsobitelné barvy (text, akcent, pozadí)",
+        "Individuální styl textu pro každý prvek podpisu",
         "CTA tlačítko s vlastním textem a odkazem",
-        "Živý náhled podpisu",
+        "Styl oddělovací linky (styl, tloušťka, barva)",
+        "Živý náhled podpisu s přepínáním pozadí (světlé, tmavé, šachovnice)",
+        "Náhled HTML zdrojového kódu v okně",
         "Kopírování HTML kódu do schránky",
         "Stažení podpisu jako HTML soubor",
         "Export a import konfigurace jako JSON soubor",
         "Kompatibilita s Gmail, Outlook, Apple Mail",
-        "Bezplatný nástroj, bez přihlášení"
+        "Bezplatný nástroj bez přihlášení"
       ]
     },
     "howTo": {

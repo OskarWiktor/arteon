@@ -2,13 +2,13 @@
   "toolKey": "paletteExtractor",
   "locale": "no",
   "metadata": {
-    "title": "Gratis fargeutrekker fra bilde – Palett fra ethvert foto",
-    "description": "Last opp et foto eller logo og trekk ut opptil 12 dominerende farger med HEX- og RGB-koder. Egnet for UI, merkevarebygging og sosiale medier.",
+    "title": "Gratis fargeutrekker fra bilde – fargepalett fra foto",
+    "description": "Last opp et foto og verktøyet genererer en palett av dominerende farger. Ferdige HEX- og RGB-koder, fullt personvern og ingen begrensninger.",
     "ogImage": "/assets/tools/image-color-extractor/fargeutrekker-fra-bilde-no.webp",
     "path": "/no/verktoy/fargeutrekker-fra-bilde"
   },
   "hero": {
-    "title": "Fargeutrekker fra bilde – hent palett fra ethvert foto",
+    "title": "Trekk ut farger fra et bilde – få palett med HEX-koder",
     "description": "Last opp et foto, logo eller grafikk, og verktøyet trekker ut opptil 12 dominerende farger med HEX- og RGB-koder. Analysen skjer lokalt i nettleseren din.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
@@ -24,16 +24,16 @@
   },
   "schemas": {
     "software": {
-      "name": "Fargeutrekker fra bilde – gratis palettgenerator",
+      "name": "Fargeutrekker fra bilde – fargepalett fra foto",
       "alternateName": ["Trekk ut fargepalett fra foto eller logo"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
       "description": "Gratis fargeutrekker fra bilde. Last opp et foto, logo eller grafikk og få en palett med opptil 12 dominerende farger med HEX- og RGB-koder. Behandlingen skjer i nettleseren – filer sendes ikke til noen server.",
       "featureList": [
-        "Automatisk uttrekking av opptil 12 dominerende farger",
+        "Automatisk utrekking av opptil 12 dominerende farger",
         "Analyse av bilder, logoer og vektorgrafikk",
         "Fargekoder i HEX- og RGB-format",
-        "Kopier fargekode til utklippstavle",
+        "Kopier fargekode til utklippstavlen",
         "Støtte for PNG-, JPG- og SVG-filer",
         "Ignorerer gjennomsiktige piksler i PNG-filer",
         "Lokal behandling i nettleseren – bildet sendes ikke til server"

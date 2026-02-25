@@ -2,13 +2,13 @@
   "toolKey": "emailSignature",
   "locale": "fr",
   "metadata": {
-    "title": "Générateur de signature e-mail gratuit – HTML",
-    "description": "Créez une signature e-mail HTML professionnelle sans coder. Ajoutez coordonnées, logo, réseaux sociaux et copiez dans Gmail ou Outlook.",
+    "title": "Générateur gratuit de signature e-mail HTML – créer une signature",
+    "description": "Créez une signature e-mail HTML sans inscription ni connexion. Personnalisation complète, mises en page prêtes, aperçu en direct et code HTML prêt.",
     "ogImage": "/assets/tools/free-html-email-signature-generator/generateur-de-signature-email-gratuit-fr.webp",
     "path": "/fr/outils/generateur-de-signature-email-gratuit"
   },
   "hero": {
-    "title": "Générateur de signature e-mail",
+    "title": "Créez une signature e-mail HTML – copiez dans Gmail ou Outlook",
     "description": "Créez une signature e-mail professionnelle en quelques minutes. Renseignez vos données, choisissez les couleurs et la mise en page, puis copiez le code HTML dans Gmail, Outlook ou tout autre client de messagerie.",
     "backgroundImage": "/assets/tools/free-html-email-signature-generator/generateur-de-signature-email-gratuit-fr.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Générateur de signature e-mail HTML – Gmail et Outlook",
+      "name": "Générateur de signature e-mail HTML – créateur de signature",
       "alternateName": [
         "Créer une signature e-mail gratuitement",
         "Générateur de signature HTML",
@@ -34,17 +34,23 @@
       ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Générateur gratuit de signature e-mail HTML. 8 mises en page, couleurs personnalisables, icônes de réseaux sociaux, lien CTA. Pour Gmail, Outlook et autres clients. Exécution locale.",
+      "description": "Générateur gratuit de signature e-mail HTML. Ajoutez vos coordonnées, un lien CTA et vos profils de réseaux sociaux, puis copiez le code de signature prêt dans Gmail, Outlook et d'autres clients de messagerie.",
       "featureList": [
-        "8 mises en page : Standard, Barre supérieure, Labels à gauche, Centré, Compact, Deux colonnes, Minimaliste, Barre inférieure",
-        "Couleurs et polices personnalisables",
-        "Icônes de réseaux sociaux (12 plateformes)",
-        "Bouton CTA / Lien d'action",
-        "Photo de profil et logo d'entreprise",
-        "Mention légale / Disclaimer",
-        "Export et import des paramètres",
-        "Copie en texte formaté ou code HTML",
-        "Exécution locale dans le navigateur"
+        "Coordonnées (nom, poste, entreprise)",
+        "Téléphone, e-mail et URL du site web",
+        "Logo ou photo de profil avec choix de forme et taille",
+        "Icônes de réseaux sociaux (12 plateformes : LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
+        "Couleurs personnalisables (texte, accent, arrière-plan)",
+        "Style de texte individuel pour chaque élément de signature",
+        "Bouton CTA avec texte et lien personnalisés",
+        "Style de ligne séparatrice (style, épaisseur, couleur)",
+        "Aperçu de la signature en direct avec changement d'arrière-plan (clair, sombre, damier)",
+        "Aperçu du code source HTML dans une fenêtre modale",
+        "Copier le code HTML dans le presse-papiers",
+        "Télécharger la signature en fichier HTML",
+        "Export et import de la configuration en fichier JSON",
+        "Compatible avec Gmail, Outlook, Apple Mail",
+        "Outil gratuit sans inscription"
       ]
     },
     "howTo": {

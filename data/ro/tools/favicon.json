@@ -2,13 +2,13 @@
   "toolKey": "favicon",
   "locale": "ro",
   "metadata": {
-    "title": "Generator gratuit de favicon – Favicon.ico din orice imagine",
-    "description": "Creați un favicon.ico din orice imagine JPG, PNG sau WebP. Încărcați fișierul, ajustați zona de decupare și descărcați favicon-ul gata de utilizare.",
+    "title": "Generator gratuit de pictogramă pentru site – creează favicon.ico",
+    "description": "Creați un set complet de favicon.ico pentru site-ul dvs. dintr-o singură imagine. Toate dimensiunile necesare fără autentificare și înregistrare.",
     "ogImage": "/assets/tools/favicon-generator/generator-favicon-gratuit-ro.webp",
     "path": "/ro/instrumente/generator-favicon-gratuit"
   },
   "hero": {
-    "title": "Generator de favicon – Creați favicon.ico gratuit",
+    "title": "Creează favicon.ico pentru site-ul tău dintr-o singură imagine",
     "description": "Generați favicon.ico și un set complet de pictograme PNG pentru site-ul dvs. dintr-o singură imagine. Toată procesarea are loc local în browser.",
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
@@ -24,24 +24,24 @@
   },
   "schemas": {
     "software": {
-      "name": "Generator de favicon - creator gratuit de pictograme pentru site-uri web",
+      "name": "Generator de favicon.ico pentru site-uri web",
       "alternateName": ["Generator favicon.ico și pictograme PNG"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "FaviconGenerator",
-      "description": "Generator gratuit de favicon. Creați favicon.ico și pictograme PNG 16x16, 32x32, 180x180, 192x192 și 512x512 fără limite și fără a trimite fișiere la un server. Procesarea are loc local în browser.",
+      "description": "Generator gratuit de favicon. Creați favicon.ico și pictograme PNG 16x16, 32x32, 180x180, 192x192 și 512x512 fără limite și fără trimiterea fișierelor pe server. Procesarea se face local în browser.",
       "featureList": [
-        "Generare favicon.ico (16x16, 32x32, 48x48 într-un singur fișier)",
+        "Generare favicon.ico (16x16, 32x32, 48x48 într-un fișier)",
         "Generare pictograme PNG 16x16 și 32x32",
         "Generare apple-touch-icon 180x180",
         "Generare pictograme PWA 192x192 și 512x512",
-        "Suport pentru imagini sursă PNG, JPG și SVG",
-        "Configurare culoare fundal",
+        "Suport pentru imagini PNG, JPG și SVG ca sursă",
+        "Configurare culoare de fundal",
         "Generare fișier manifest.json pentru PWA",
         "Descărcare toate fișierele ca ZIP",
         "Descărcare fișiere individuale",
-        "Conformitate Lighthouse",
-        "Procesare în browser (fișierele nu sunt trimise la un server)",
-        "Instrument gratuit, fără autentificare"
+        "Conformitate cu Lighthouse",
+        "Procesare în browser (fișierele nu sunt trimise pe server)",
+        "Instrument gratuit fără înregistrare"
       ]
     },
     "howTo": {

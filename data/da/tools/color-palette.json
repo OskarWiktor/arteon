@@ -2,13 +2,13 @@
   "toolKey": "colorPalette",
   "locale": "da",
   "metadata": {
-    "title": "Gratis farvepaletgenerator – 9 paletter fra én farve",
-    "description": "Generér 9 harmoniske farvepaletter fra én grundfarve: monokromatisk, komplementær, triadisk, pastel og flere. Kopiér HEX-, RGB- og HSL-koder med ét klik.",
+    "title": "Gratis farvepaletgenerator – 9 skemaer",
+    "description": "Generér 9 farvepaletter fra én farve: monokromatisk, komplementær, triadisk, pastel og flere. Kopiér HEX-koder med ét klik.",
     "ogImage": "/assets/tools/color-palette-generator/farvepaletgenerator-da.webp",
     "path": "/da/vaerktojer/farvepaletgenerator"
   },
   "hero": {
-    "title": "Farvepaletgenerator",
+    "title": "Generér 9 farvepaletter fra én grundfarve",
     "description": "Indtast én grundfarve, og værktøjet genererer 9 harmoniske farvepaletter: monokromatisk, komplementær, triadisk, pastel og flere. Hver farve kan kopieres med sin HEX-kode.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
@@ -24,17 +24,17 @@
   },
   "schemas": {
     "software": {
-      "name": "Farvepaletgenerator",
+      "name": "Farvepaletgenerator – 9 farveskemaer",
       "alternateName": ["Farveskemagenerator", "Farvegenerator", "Farvematchingsværktøj", "Farveharmonigenerator"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Gratis farvepaletgenerator. Indtast én HEX-farve, og værktøjet genererer 9 skemaer: monokromatisk, tilstødende, komplementær, triadisk, splittet komplementær, pastel, mørk, tonal og minimalistisk.",
+      "description": "Gratis farvepaletgenerator. Indtast én HEX-farve, og værktøjet genererer 9 skemaer: monokromatisk, tilstødende, komplementær, triadisk, splittet komplementær, pastel, mørk, tonal og minimalistisk. Hver farve kan kopieres med sin HEX-kode og HSL-værdi.",
       "featureList": [
         "Monokromatisk skema – nuancer af én farve",
         "Tilstødende skema – farver ved siden af hinanden på farvehjulet",
         "Komplementært skema – modsatte farver",
         "Triadisk skema – 3 farver med lige mellemrum",
-        "Splittet komplementært skema",
+        "Splittet komplementært skema – grundfarve og 2 naboer til komplementet",
         "Pastelpalet – bløde, afsaturerede nuancer",
         "Mørk palet – dybe farver til mørke temaer",
         "Tonal palet – lysstyrkeniveauer af én farve",

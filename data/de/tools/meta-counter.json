@@ -2,13 +2,13 @@
   "toolKey": "metaCounter",
   "locale": "de",
   "metadata": {
-    "title": "Kostenloser Meta-Tag-Checker – Pixelbreite prüfen",
-    "description": "Prüfen Sie Meta-Titel und Beschreibung: Zeichenanzahl, Pixelbreite und Google-Vorschau. Vermeiden Sie abgeschnittene Snippets in den Suchergebnissen.",
+    "title": "Kostenloser Meta-Titel- und Beschreibungs-Längenprüfer in Pixeln",
+    "description": "Prüfen Sie, ob Meta-Titel und Beschreibung die richtige Länge nach Google-Richtlinien haben. Prüfer mit Live-Vorschau und Tipps.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-beschreibung-laengenpruefer-de.webp",
     "path": "/de/werkzeuge/meta-titel-beschreibung-laengenpruefer"
   },
   "hero": {
-    "title": "Meta-Tag-Checker",
+    "title": "Meta-Titel und Beschreibung prüfen – Live-Vorschau in Google",
     "description": "Prüfen Sie Zeichenanzahl und Pixelbreite und sehen Sie in der Vorschau, wie Ihre Seite in den Google-Suchergebnissen erscheint. So vermeiden Sie abgeschnittene Titel und Beschreibungen.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Meta-Tag-Checker — Titel und Beschreibung prüfen",
+      "name": "Meta-Titel- und Beschreibungs-Längenprüfer in Pixeln",
       "alternateName": [
         "Meta-Titel- und Beschreibungschecker mit Google-Vorschau",
         "Google-Snippet-Vorschau-Tool",

@@ -2,13 +2,13 @@
   "toolKey": "qrCode",
   "locale": "sv",
   "metadata": {
-    "title": "Gratis QR-kodgenerator – PNG och SVG, utan registrering",
-    "description": "Skapa en QR-kod för en webbplats, vCard-visitkort, meny eller flygblad på några sekunder. Exportera till PNG och SVG. Anpassa färger, storlek och felkorrigering.",
+    "title": "Gratis QR-kodgenerator utan inloggning och registrering",
+    "description": "Generera en QR-kod för din webbplats, vCard-visitkort eller utskrift. Klistra in en länk, välj kodfärg, storlek och ladda ner QR-koden i PNG och SVG.",
     "ogImage": "/assets/tools/qr-code-generator/gratis-qr-kodgenerator-sv.webp",
     "path": "/sv/verktyg/gratis-qr-kodgenerator"
   },
   "hero": {
-    "title": "QR-kodgenerator – gratis, utan registrering",
+    "title": "Skapa en QR-kod för webbplats, vCard eller utskrift – PNG & SVG",
     "description": "Skapa en QR-kod för en webbplats, vCard-visitkort, e-post, telefon eller text. Anpassa färger, storlek och felkorrigeringsnivå, ladda sedan ner en färdig PNG- eller SVG-fil.",
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis QR-kodgenerator",
+      "name": "QR-kodgenerator utan inloggning och registrering",
       "alternateName": ["QR-kodskapare", "vCard QR-kodgenerator", "Gratis QR-generator", "QR-kodverktyg"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "QRCodeGenerator",
-      "description": "Skapa en QR-kod för en webbplats, visitkort, meny eller flygblad. Välj datatyp, anpassa färger och storlek, ladda sedan ner en PNG- eller SVG-fil.",
+      "description": "Skapa en QR-kod för webbplats, visitkort, meny eller flygblad. Välj datatyp, anpassa färger och storlek, ladda sedan ner PNG- eller SVG-fil.",
       "featureList": [
         "QR-kod för URL (webbplatser)",
         "QR-kod för vanlig text",

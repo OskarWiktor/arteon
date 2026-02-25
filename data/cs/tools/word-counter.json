@@ -2,13 +2,13 @@
   "toolKey": "wordCounter",
   "locale": "cs",
   "metadata": {
-    "title": "Bezplatné počítadlo slov a znaků – Počítat, transformovat a analyzovat",
-    "description": "Bezplatné počítadlo slov, znaků, vět a odstavců. Změna velikosti písmen, odstranění duplikátů, řazení řádků. 8 metrik a 10 nástrojů.",
+    "title": "Počítadlo slov, znaků a času čtení s formátováním textu",
+    "description": "Bezplatné počítadlo slov, znaků, vět, odstavců a času čtení s konvertorem velikosti písmen. Zkontrolujte délku textu a změňte písmena.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/pocitadlo-slov-a-znaku-cs.webp",
     "path": "/cs/nastroje/pocitadlo-slov-a-znaku"
   },
   "hero": {
-    "title": "Počítadlo slov a znaků s nástroji pro formátování textu",
+    "title": "Spočítejte slova a znaky – zkontrolujte čas čtení a formátujte",
     "description": "Vložte text a nástroj spočítá slova, znaky, věty, odstavce, unikátní slova a čas čtení. Změňte velikost písmen, odstraňte duplikáty nebo seřaďte řádky",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Bezplatné počítadlo slov a znaků s textovými nástroji",
+      "name": "Počítadlo slov, znaků a času čtení s formátováním textu",
       "alternateName": [
         "Online word counter",
         "Character counter with and without spaces",
@@ -36,21 +36,21 @@
         "Sort text lines alphabetically"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
+      "description": "Bezplatné počítadlo slov a znaků s nástroji pro formátování textu. Počítá slova, znaky, věty, odstavce, unikátní slova a čas čtení. Nabízí 10 nástrojů: převod velikosti písmen, odstranění mezer, prázdných řádků, duplikátů a řazení.",
       "featureList": [
-        "Word count",
-        "Character count with and without spaces",
-        "Sentence and paragraph count",
-        "Unique word count",
-        "Average word length",
-        "Estimated reading time",
-        "Convert to uppercase or lowercase",
-        "Convert to sentence case or title case",
-        "Toggle letter case",
-        "Remove extra spaces",
-        "Remove empty lines and duplicates",
-        "Sort lines A-Z and Z-A",
-        "Copy text to clipboard"
+        "Počítání slov",
+        "Počítání znaků s mezerami a bez mezer",
+        "Počítání vět a odstavců",
+        "Počítání unikátních slov",
+        "Průměrná délka slova",
+        "Odhadovaný čas čtení",
+        "Převod na velká nebo malá písmena",
+        "Převod na styl věty nebo nadpisu",
+        "Obrácení velikosti písmen",
+        "Odstranění nadbytečných mezer",
+        "Odstranění prázdných řádků a duplikátů",
+        "Řazení řádků A–Z a Z–A",
+        "Kopírování textu do schránky"
       ]
     },
     "howTo": {

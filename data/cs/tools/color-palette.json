@@ -2,13 +2,13 @@
   "toolKey": "colorPalette",
   "locale": "cs",
   "metadata": {
-    "title": "Generátor barevných palet zdarma – 9 palet z jedné barvy",
-    "description": "Vygenerujte 9 barevných palet z jedné základní barvy: monochromatickou, komplementární, triádickou, pastelovou a další. Zkopírujte kódy HEX jedním klikem.",
+    "title": "Bezplatný generátor barevných palet – 9 schémat",
+    "description": "Vygenerujte 9 barevných palet z jedné barvy: monochromatickou, komplementární, triádickou, pastelovou a další. Zkopírujte kódy HEX jedním klikem.",
     "ogImage": "/assets/tools/color-palette-generator/generator-barevnych-palet-cs.webp",
     "path": "/cs/nastroje/generator-barevnych-palet"
   },
   "hero": {
-    "title": "Generátor barevných palet",
+    "title": "Vygenerujte 9 barevných palet z jedné základní barvy",
     "description": "Zadejte jednu základní barvu a nástroj vygeneruje 9 harmonických barevných palet: monochromatickou, komplementární, triádickou, pastelovou a další. Každou barvu lze zkopírovat s jejím kódem HEX.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
@@ -24,17 +24,17 @@
   },
   "schemas": {
     "software": {
-      "name": "Generátor barevných palet",
+      "name": "Generátor barevných palet – 9 barevných schémat",
       "alternateName": ["Generátor barevných schémat", "Generátor barev", "Nástroj pro ladění barev", "Generátor barevné harmonie"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Bezplatný generátor barevných palet. Zadejte jednu barvu HEX a nástroj vygeneruje 9 schémat: monochromatické, sousedící, komplementární, triádické, dělené komplementární, pastelové, tmavé, tónové a minimalistické.",
+      "description": "Bezplatný generátor barevných palet. Zadejte jednu barvu HEX a nástroj vygeneruje 9 schémat: monochromatické, sousedící, komplementární, triádické, dělené komplementární, pastelové, tmavé, tónové a minimalistické. Každou barvu lze zkopírovat s kódem HEX a hodnotou HSL.",
       "featureList": [
         "Monochromatické schéma – odstíny jedné barvy",
         "Sousedící schéma – barvy sousedící na barevném kruhu",
         "Komplementární schéma – protilehlé barvy",
         "Triádické schéma – 3 barvy v rovnoměrných intervalech",
-        "Dělené komplementární schéma",
+        "Dělené komplementární schéma – základní barva a 2 sousední k protilehlé",
         "Pastelová paleta – jemné, desaturované odstíny",
         "Tmavá paleta – hluboké barvy pro tmavé motivy",
         "Tónová paleta – stupně jasu jedné barvy",

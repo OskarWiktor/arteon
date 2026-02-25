@@ -2,13 +2,13 @@
   "toolKey": "qrCode",
   "locale": "cs",
   "metadata": {
-    "title": "Generátor QR kódu zdarma – PNG a SVG, bez registrace",
-    "description": "Vytvořte QR kód pro web, vCard, menu nebo leták během pár sekund. Export do PNG a SVG. Úprava barev a velikosti. Bez registrace, bez limitů.",
+    "title": "Bezplatný generátor QR kódů bez přihlášení a registrace",
+    "description": "Vygenerujte QR kód pro svůj web, vizitku vCard nebo k tisku. Vložte odkaz, vyberte barvu kódu, velikost a stáhněte hotový QR kód v PNG a SVG.",
     "ogImage": "/assets/tools/qr-code-generator/generator-qr-kodu-zdarma-cs.webp",
     "path": "/cs/nastroje/generator-qr-kodu-zdarma"
   },
   "hero": {
-    "title": "Generátor QR kódu – zdarma, bez registrace",
+    "title": "Vytvořte QR kód pro web, vizitku vCard nebo tisk – PNG a SVG",
     "description": "Vytvořte QR kód pro web, vizitku vCard, e-mail, telefon nebo text. Upravte barvy, velikost a úroveň korekce chyb, poté stáhněte hotový soubor PNG nebo SVG.",
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Generátor QR kódu zdarma",
+      "name": "Generátor QR kódů bez přihlášení a registrace",
       "alternateName": ["Tvůrce QR kódů", "Generátor QR kódu vCard", "Bezplatný generátor QR", "Nástroj na QR kódy"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "QRCodeGenerator",
-      "description": "Vytvořte QR kód pro web, vizitky, menu nebo letáky. Vyberte typ dat, upravte barvy a velikost, poté stáhněte soubor PNG nebo SVG.",
+      "description": "Vytvořte QR kód pro web, vizitku, menu nebo leták. Vyberte typ dat, upravte barvy a velikost, poté stáhněte hotový soubor PNG nebo SVG.",
       "featureList": [
         "QR kód pro URL (webové stránky)",
         "QR kód pro prostý text",

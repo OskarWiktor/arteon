@@ -2,13 +2,13 @@
   "toolKey": "contrastChecker",
   "locale": "ro",
   "metadata": {
-    "title": "Verificator gratuit de contrast culori – Test WCAG 2.1",
-    "description": "Testați contrastul culorilor conform standardului WCAG 2.1. Verificați lizibilitatea textului și obțineți sugestii automate de potrivire a culorilor.",
+    "title": "Verificator gratuit de contrast culori și lizibilitate text",
+    "description": "Verificați dacă culorile au contrast și lizibilitate bune conform WCAG 2.1 AA și AAA. Adăugați culori și utilizați corecția automată a contrastului.",
     "ogImage": "/assets/tools/color-contrast-and-readability-checker/verificator-contrast-culori-ro.webp",
     "path": "/ro/instrumente/verificator-contrast-culori"
   },
   "hero": {
-    "title": "Verificator de contrast și lizibilitate a culorilor",
+    "title": "Verifică contrastul culorilor și lizibilitatea conform WCAG",
     "description": "Introduceți o culoare de text și una de fundal, iar instrumentul va arăta dacă contrastul este suficient. Calculele se bazează pe standardul internațional de accesibilitate WCAG 2.1, care definește valori minime de contrast pentru diferite tipuri de conținut.",
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Verificator de contrast și lizibilitate a culorilor — WCAG 2.1",
+      "name": "Verificator de contrast culori și lizibilitate text – WCAG",
       "alternateName": [
         "Tester de lizibilitate a culorilor",
         "Verificator contrast text și fundal",
@@ -36,20 +36,20 @@
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
-      "description": "Verificați dacă culorile textului și fundalului sunt lizibile pentru toți utilizatorii. Instrumentul calculează raportul de contrast conform WCAG 2.1 și arată dacă îndepliniți cerințele de accesibilitate.",
+      "description": "Verificați dacă culorile textului și fundalului sunt lizibile pentru toți utilizatorii. Instrumentul calculează raportul de contrast conform standardului WCAG și arată dacă îndepliniți cerințele de accesibilitate.",
       "featureList": [
         "Calculul raportului de contrast",
-        "Verificare conformitate WCAG 2.1 Nivel AA",
-        "Verificare conformitate WCAG 2.1 Nivel AAA",
-        "Testare text normal",
-        "Testare text mare și titluri",
-        "Testare pictograme și componente UI",
+        "Verificare conformitate WCAG 2.1 nivel AA",
+        "Verificare conformitate WCAG 2.1 nivel AAA",
+        "Testare pentru text normal",
+        "Testare pentru text mare și titluri",
+        "Testare pentru pictograme și componente UI",
         "Suport format culoare HEX",
-        "Suport format culoare RGB și RGBA",
-        "Suport format culoare HSL și HSLA",
-        "Selector de culori pentru selecție vizuală",
+        "Suport formate culoare RGB și RGBA",
+        "Suport formate culoare HSL și HSLA",
+        "Selector de culori pentru alegere vizuală",
         "Previzualizare text în timp real",
-        "Funcție de potrivire automată a culorilor",
+        "Funcție de ajustare automată a culorii",
         "Procesare locală în browser"
       ]
     },

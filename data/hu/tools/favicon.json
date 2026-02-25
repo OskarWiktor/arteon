@@ -2,13 +2,13 @@
   "toolKey": "favicon",
   "locale": "hu",
   "metadata": {
-    "title": "Ingyenes favicon generátor – Favicon.ico bármely képből",
-    "description": "Készítsen favicon.ico-t bármilyen JPG, PNG vagy WebP képből. Töltse fel a fájlt, állítsa be a kivágási területet és töltse le a kész favicont.",
+    "title": "Ingyenes weboldal-ikon generátor – favicon.ico létrehozása",
+    "description": "Hozzon létre teljes favicon.ico készletet weboldalához egyetlen képből. Minden szükséges méret bejelentkezés és regisztráció nélkül.",
     "ogImage": "/assets/tools/favicon-generator/ingyenes-favicon-generator-hu.webp",
     "path": "/hu/eszkozok/ingyenes-favicon-generator"
   },
   "hero": {
-    "title": "Favicon generátor – Készítsen favicon.ico-t ingyen",
+    "title": "Készítsen favicon.ico-t weboldalához egyetlen képből",
     "description": "Generáljon favicon.ico-t és teljes PNG ikonkészletet weboldalához egyetlen képből. Minden feldolgozás helyben történik a böngészőben.",
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
@@ -24,24 +24,24 @@
   },
   "schemas": {
     "software": {
-      "name": "Favicon generátor - ingyenes ikonkészítő weboldalakhoz",
+      "name": "Favicon.ico generátor weboldalakhoz",
       "alternateName": ["Favicon.ico és PNG ikon generátor"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "FaviconGenerator",
-      "description": "Ingyenes favicon generátor. Készítsen favicon.ico-t és PNG ikonokat 16x16, 32x32, 180x180, 192x192 és 512x512 méretben korlátozás nélkül, fájlok szerverre küldése nélkül. A feldolgozás helyben történik a böngészőben.",
+      "description": "Ingyenes favicon generátor. Hozzon létre favicon.ico-t és PNG ikonokat 16x16, 32x32, 180x180, 192x192 és 512x512 méretben korlátok nélkül és fájlok szerverre küldése nélkül. A feldolgozás helyben, a böngészőben történik.",
       "featureList": [
-        "Favicon.ico generálás (16x16, 32x32, 48x48 egy fájlban)",
+        "Favicon.ico generálása (16x16, 32x32, 48x48 egy fájlban)",
         "PNG ikonok generálása 16x16 és 32x32",
-        "Apple-touch-icon generálás 180x180",
-        "PWA ikonok generálása 192x192 és 512x512",
-        "PNG, JPG és SVG forrásképek támogatása",
-        "Háttérszín beállítás",
+        "Apple-touch-icon 180x180 generálása",
+        "PWA ikonok 192x192 és 512x512 generálása",
+        "PNG, JPG és SVG forráskép támogatása",
+        "Háttérszín beállítása",
         "Manifest.json fájl generálása PWA-hoz",
-        "Összes fájl letöltése ZIP-ként",
+        "Összes fájl letöltése ZIP-ben",
         "Egyedi fájlok letöltése",
-        "Lighthouse megfelelőség",
-        "Böngésző alapú feldolgozás (fájlok nem kerülnek szerverre)",
-        "Ingyenes eszköz, bejelentkezés nélkül"
+        "Lighthouse-kompatibilis",
+        "Feldolgozás a böngészőben (a fájlok nem kerülnek szerverre)",
+        "Ingyenes eszköz bejelentkezés nélkül"
       ]
     },
     "howTo": {

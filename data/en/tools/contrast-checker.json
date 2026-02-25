@@ -2,13 +2,13 @@
   "toolKey": "contrastChecker",
   "locale": "en",
   "metadata": {
-    "title": "Free Color Contrast Checker – WCAG 2.1 Compliance",
-    "description": "Check if your text and background colors meet WCAG 2.1 standards. Enter HEX, RGB or HSL codes, see the contrast ratio and auto-fix colors for accessibility.",
+    "title": "Free Color Contrast and Text Readability Checker",
+    "description": "Check if your colors have good contrast and readability per WCAG 2.1 AA and AAA. Add colors and use automatic contrast correction.",
     "ogImage": "/assets/tools/color-contrast-and-readability-checker/color-contrast-checker-en.webp",
     "path": "/en/tools/color-contrast-checker"
   },
   "hero": {
-    "title": "Color contrast and readability checker",
+    "title": "Check color contrast and text readability per WCAG standards",
     "description": "Enter a text and background color, and the tool will show whether contrast is sufficient. Calculations are based on the international accessibility standard WCAG 2.1, which defines minimum contrast values for different content types.",
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Color contrast and readability checker — WCAG 2.1",
+      "name": "Color Contrast and Text Readability Checker – WCAG",
       "alternateName": [
         "Color readability tester",
         "Text and background contrast checker",
@@ -36,7 +36,7 @@
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "AccessibilityTool",
-      "description": "Check if text and background colors are readable for all users. The tool calculates contrast ratio per WCAG 2.1 and shows whether you meet accessibility requirements.",
+      "description": "Check if text and background colors are readable for all users. The tool calculates contrast ratio per WCAG standard and shows whether you meet accessibility requirements.",
       "featureList": [
         "Contrast ratio calculation",
         "WCAG 2.1 Level AA compliance check",

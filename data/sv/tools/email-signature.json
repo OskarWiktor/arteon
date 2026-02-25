@@ -2,13 +2,13 @@
   "toolKey": "emailSignature",
   "locale": "sv",
   "metadata": {
-    "title": "Gratis e-postsignatur-generator – HTML för Gmail och Outlook",
-    "description": "Skapa en professionell HTML e-postsignatur utan programvara. Lägg till kontaktuppgifter, logotyp, sociala medier-länkar och kopiera till Gmail eller Outlook.",
+    "title": "Gratis HTML e-postsignatur-generator – skapa signatur",
+    "description": "Skapa en HTML e-postsignatur utan inloggning och registrering. Full anpassning, färdiga layouter, liveförhandsgranskning och färdig HTML-kod.",
     "ogImage": "/assets/tools/free-html-email-signature-generator/gratis-e-postsignatur-generator-sv.webp",
     "path": "/sv/verktyg/gratis-e-postsignatur-generator"
   },
   "hero": {
-    "title": "Skapa en professionell HTML e-postsignatur",
+    "title": "Skapa en HTML e-postsignatur – kopiera till Gmail eller Outlook",
     "description": "Skapa en professionell e-postsignatur på några minuter. Ange dina uppgifter, välj färger och kopiera den färdiga HTML-koden till Gmail, Outlook eller annan e-postklient.",
     "backgroundImage": "/assets/tools/free-html-email-signature-generator/gratis-e-postsignatur-generator-sv.webp"
   },
@@ -24,24 +24,27 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis e-postsignatur-generator",
+      "name": "HTML e-postsignatur-generator – signaturskapare",
       "alternateName": ["HTML e-postsignatur-generator", "Generator för e-postsidfot"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Gratis HTML e-postsignatur-generator. Lägg till kontaktuppgifter, CTA-knapp och sociala medier-profiler, kopiera sedan den färdiga koden till Gmail, Outlook och andra e-postklienter.",
+      "description": "Gratis HTML e-postsignatur-generator. Lägg till kontaktuppgifter, CTA-länk och sociala medieprofiler, kopiera sedan den färdiga signaturkoden till Gmail, Outlook och andra e-postklienter.",
       "featureList": [
         "Kontaktuppgifter (namn, befattning, företag)",
         "Telefon, e-post och webbadress",
         "Logotyp eller profilbild med val av form och storlek",
-        "Ikoner för sociala medier (12 plattformar)",
+        "Sociala medier-ikoner (12 plattformar: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
         "Anpassningsbara färger (text, accent, bakgrund)",
+        "Individuell textstil för varje signaturelement",
         "CTA-knapp med egen text och länk",
-        "Liveförhandsgranskning av signaturen",
+        "Skiljelinjens stil (stil, tjocklek, färg)",
+        "Liveförhandsgranskning av signaturen med bakgrundsbyte (ljus, mörk, schackbräde)",
+        "HTML-källkodsförhandsgranskning i modal",
         "Kopiera HTML-kod till urklipp",
         "Ladda ner signatur som HTML-fil",
         "Exportera och importera konfiguration som JSON-fil",
-        "Kompatibilitet med Gmail, Outlook, Apple Mail",
-        "Gratis verktyg, utan inloggning"
+        "Kompatibel med Gmail, Outlook, Apple Mail",
+        "Gratis verktyg utan inloggning"
       ]
     },
     "howTo": {

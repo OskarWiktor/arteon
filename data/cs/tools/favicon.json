@@ -2,13 +2,13 @@
   "toolKey": "favicon",
   "locale": "cs",
   "metadata": {
-    "title": "Generátor favicon zdarma – ICO a PNG z jednoho obrázku",
-    "description": "Z jednoho obrázku vygenerujte favicon.ico a PNG ikony 16×16 až 512×512 v souladu s požadavky prohlížečů a Lighthouse. Bez registrace, funguje v prohlížeči.",
+    "title": "Bezplatný generátor ikony pro web – vytvořte favicon.ico",
+    "description": "Vytvořte kompletní sadu favicon.ico pro svůj web z jednoho obrázku. Všechny potřebné velikosti bez přihlášení a registrace.",
     "ogImage": "/assets/tools/favicon-generator/generator-favicon-zdarma-cs.webp",
     "path": "/cs/nastroje/generator-favicon-zdarma"
   },
   "hero": {
-    "title": "Vygenerujte favicon.ico a PNG ikony z jednoho obrázku",
+    "title": "Vytvořte favicon.ico pro svůj web z jednoho obrázku",
     "description": "Nahrajte obrázek a nástroj vygeneruje favicon.ico a kompletní sadu PNG ikon potřebných pro prohlížeče, mobilní zařízení a Lighthouse.",
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
@@ -24,21 +24,24 @@
   },
   "schemas": {
     "software": {
-      "name": "Generátor favicon zdarma",
+      "name": "Generátor favicon.ico pro webové stránky",
       "alternateName": ["Generátor favicon.ico", "Generátor ikon pro web", "Nástroj na favicon", "Generátor favicon z obrázku"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "FaviconGenerator",
-      "description": "Bezplatný generátor favicon. Nahrajte jeden obrázek a získejte favicon.ico a kompletní sadu PNG ikon pro prohlížeče, mobilní zařízení a PWA.",
+      "description": "Bezplatný generátor favicon. Vytvořte favicon.ico a PNG ikony 16x16, 32x32, 180x180, 192x192 a 512x512 bez limitů a bez odesílání souborů na server. Zpracování probíhá lokálně v prohlížeči.",
       "featureList": [
-        "Generování favicon.ico (16×16, 32×32, 48×48 px)",
-        "PNG ikony pro prohlížeče (16×16 až 512×512 px)",
-        "Apple Touch ikona (180×180 px)",
-        "Android/PWA ikony (192×192, 512×512 px)",
-        "Microsoft ikony (150×150, 310×310 px)",
-        "Ořez a změna velikosti zdrojového obrázku",
-        "Náhled v reálném čase",
-        "Stažení všech ikon v ZIP",
-        "Lokální zpracování v prohlížeči"
+        "Generování favicon.ico (16x16, 32x32, 48x48 v jednom souboru)",
+        "Generování PNG ikon 16x16 a 32x32",
+        "Generování apple-touch-icon 180x180",
+        "Generování PWA ikon 192x192 a 512x512",
+        "Podpora PNG, JPG a SVG zdrojových obrázků",
+        "Nastavení barvy pozadí",
+        "Generování souboru manifest.json pro PWA",
+        "Stažení všech souborů jako ZIP",
+        "Stažení jednotlivých souborů",
+        "Soulad s Lighthouse",
+        "Zpracování v prohlížeči (soubory se neodesílají na server)",
+        "Bezplatný nástroj bez přihlášení"
       ]
     },
     "howTo": {

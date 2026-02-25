@@ -2,13 +2,13 @@
   "toolKey": "wordCounter",
   "locale": "fi",
   "metadata": {
-    "title": "Ilmainen sana- ja merkkilaskuri – Laske, muunna ja analysoi",
-    "description": "Ilmainen sana-, merkki-, lause- ja kappalelasku. Muuta kirjainkoko, poista duplikaatit, lajittele rivit. 8 mittaria ja 10 tekstityökalua.",
+    "title": "Sana-, merkki- ja lukuaikalaskuri tekstin muotoilulla",
+    "description": "Ilmainen sanojen, merkkien, lauseiden, kappaleiden ja lukuajan laskuri kirjainkoon muuntimella. Tarkista tekstin pituus ja muuta kirjaimet.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/sana-ja-merkkilaskuri-fi.webp",
     "path": "/fi/tyokalut/sana-ja-merkkilaskuri"
   },
   "hero": {
-    "title": "Sana- ja merkkilaskuri tekstinmuokkaustyökaluilla",
+    "title": "Laske sanat ja merkit – tarkista lukuaika ja muotoile teksti",
     "description": "Liitä teksti ja työkalu laskee sanat, merkit, lauseet, kappaleet, uniikit sanat ja lukuajan. Muuta kirjainkoko, poista duplikaatit tai lajittele rivit",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Ilmainen sana- ja merkkilaskuri tekstityökaluilla",
+      "name": "Sana-, merkki- ja lukuaikalaskuri tekstin muotoilulla",
       "alternateName": [
         "Online word counter",
         "Character counter with and without spaces",
@@ -36,21 +36,21 @@
         "Sort text lines alphabetically"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
+      "description": "Ilmainen sana- ja merkkilaskuri tekstin muotoilutyökaluilla. Laskee sanat, merkit, lauseet, kappaleet, uniikit sanat ja lukuajan. Tarjoaa 10 työkalua: kirjainkoon muunnos, välilyöntien, tyhjien rivien ja kaksoiskappaleiden poisto sekä lajittelu.",
       "featureList": [
-        "Word count",
-        "Character count with and without spaces",
-        "Sentence and paragraph count",
-        "Unique word count",
-        "Average word length",
-        "Estimated reading time",
-        "Convert to uppercase or lowercase",
-        "Convert to sentence case or title case",
-        "Toggle letter case",
-        "Remove extra spaces",
-        "Remove empty lines and duplicates",
-        "Sort lines A-Z and Z-A",
-        "Copy text to clipboard"
+        "Sanojen laskenta",
+        "Merkkien laskenta välilyönneillä ja ilman",
+        "Lauseiden ja kappaleiden laskenta",
+        "Uniikkien sanojen laskenta",
+        "Keskimääräinen sanan pituus",
+        "Arvioitu lukuaika",
+        "Muunna isoiksi tai pieniksi kirjaimiksi",
+        "Muunna lause- tai otsikkotyyliin",
+        "Käännä kirjainkoko",
+        "Poista ylimääräiset välilyönnit",
+        "Poista tyhjät rivit ja kaksoiskappaleet",
+        "Lajittele rivit A–Z ja Z–A",
+        "Kopioi teksti leikepöydälle"
       ]
     },
     "howTo": {

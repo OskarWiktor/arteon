@@ -2,13 +2,13 @@
   "toolKey": "wordCounter",
   "locale": "fr",
   "metadata": {
-    "title": "Compteur de mots et caractères gratuit – Compter, transformer et analyser",
-    "description": "Compteur gratuit de mots, caractères, phrases et paragraphes. Changer la casse, supprimer les doublons, trier les lignes. 8 métriques et 10 outils.",
+    "title": "Compteur de mots, caractères et temps de lecture avec mise en forme du texte",
+    "description": "Compteur gratuit de mots, caractères, phrases, paragraphes et temps de lecture avec convertisseur de casse. Vérifiez la longueur de votre texte et modifiez les lettres.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/compteur-de-mots-et-caracteres-fr.webp",
     "path": "/fr/outils/compteur-de-mots-et-caracteres"
   },
   "hero": {
-    "title": "Compteur de mots et caractères avec outils de formatage",
+    "title": "Comptez mots et caractères – vérifiez le temps de lecture et formatez",
     "description": "Collez votre texte et l'outil comptera les mots, caractères, phrases, paragraphes, mots uniques et temps de lecture. Changez la casse, supprimez les doublons ou triez les lignes",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Compteur de mots et caractères en ligne avec outils de texte",
+      "name": "Compteur de mots, caractères et temps de lecture avec mise en forme du texte",
       "alternateName": [
         "Online word counter",
         "Character counter with and without spaces",
@@ -36,21 +36,21 @@
         "Sort text lines alphabetically"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
+      "description": "Compteur gratuit de mots et caractères avec outils de mise en forme du texte. Compte les mots, caractères, phrases, paragraphes, mots uniques et temps de lecture. Propose 10 outils : conversion de casse, suppression des espaces, lignes vides, doublons et tri.",
       "featureList": [
-        "Word count",
-        "Character count with and without spaces",
-        "Sentence and paragraph count",
-        "Unique word count",
-        "Average word length",
-        "Estimated reading time",
-        "Convert to uppercase or lowercase",
-        "Convert to sentence case or title case",
-        "Toggle letter case",
-        "Remove extra spaces",
-        "Remove empty lines and duplicates",
-        "Sort lines A-Z and Z-A",
-        "Copy text to clipboard"
+        "Comptage de mots",
+        "Comptage de caractères avec et sans espaces",
+        "Comptage de phrases et paragraphes",
+        "Comptage de mots uniques",
+        "Longueur moyenne des mots",
+        "Temps de lecture estimé",
+        "Conversion en majuscules ou minuscules",
+        "Conversion en style de phrase ou de titre",
+        "Inversion de la casse",
+        "Suppression des espaces superflus",
+        "Suppression des lignes vides et des doublons",
+        "Tri des lignes A–Z et Z–A",
+        "Copie du texte dans le presse-papiers"
       ]
     },
     "howTo": {

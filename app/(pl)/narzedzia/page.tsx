@@ -144,7 +144,7 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 9,
-        name: 'Licznik słów i znaków online',
+        name: 'Licznik słów, znaków i czasu czytania z formatowaniem tekstu ',
         description: 'Darmowy licznik słów i znaków z oceną długości tekstu. Sprawdź, czy tekst ma odpowiednią długość dla strony głównej, opisu usługi, artykułu lub opisu produktu.',
         url: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow'),
         applicationCategory: 'DeveloperApplication',

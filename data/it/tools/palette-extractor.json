@@ -2,13 +2,13 @@
   "toolKey": "paletteExtractor",
   "locale": "it",
   "metadata": {
-    "title": "Estrattore di colori da immagine gratuito – palette da foto",
-    "description": "Carica una foto o un logo ed estrai fino a 12 colori dominanti con codici HEX e RGB. Ideale per UI, branding e social media. Senza registrazione, senza limiti.",
+    "title": "Estrattore gratuito di colori da immagine – palette colori da foto",
+    "description": "Carica una foto e lo strumento genererà una palette di colori dominanti. Codici HEX e RGB pronti, privacy totale e senza limiti.",
     "ogImage": "/assets/tools/image-color-extractor/estrattore-di-colori-da-immagine-it.webp",
     "path": "/it/strumenti/estrattore-di-colori-da-immagine"
   },
   "hero": {
-    "title": "Estrattore di colori da immagine",
+    "title": "Estrai i colori da qualsiasi immagine – ottieni palette con codici HEX",
     "description": "Carica una foto o un logo e lo strumento estrarra i colori dominanti. Copia i codici HEX con un clic - ideale per UI, branding e social media.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
@@ -24,18 +24,19 @@
   },
   "schemas": {
     "software": {
-      "name": "Estrattore di colori da immagine — palette da foto e loghi",
+      "name": "Estrattore di colori da immagine – palette colori da foto",
       "alternateName": ["Palette di colori da un'immagine", "Estrattore di colori dominanti", "Generatore di palette da una foto"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
-      "description": "Estrattore di colori gratuito. Carica una foto o un logo e ottieni una palette di fino a 12 colori dominanti (HEX e RGB). Esecuzione locale.",
+      "description": "Estrattore gratuito di colori da immagine. Carica una foto, un logo o un'immagine e ottieni una palette di fino a 12 colori dominanti con codici HEX e RGB. L'elaborazione avviene nel browser – i file non vengono inviati a un server.",
       "featureList": [
-        "Estrazione di fino a 12 colori dominanti",
-        "Codici HEX e RGB",
-        "Copia con un clic",
-        "Supporto PNG, JPG/JPEG, SVG",
-        "Esecuzione locale nel browser",
-        "Senza registrazione e senza limiti"
+        "Estrazione automatica di fino a 12 colori dominanti",
+        "Analisi di foto, loghi e grafica vettoriale",
+        "Codici colore in formato HEX e RGB",
+        "Copia del codice colore negli appunti",
+        "Supporto per file PNG, JPG e SVG",
+        "Ignora i pixel trasparenti nei file PNG",
+        "Elaborazione locale nel browser – l'immagine non viene inviata al server"
       ]
     },
     "howTo": {

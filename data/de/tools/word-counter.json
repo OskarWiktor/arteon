@@ -2,13 +2,13 @@
   "toolKey": "wordCounter",
   "locale": "de",
   "metadata": {
-    "title": "Kostenloser Wort- & Zeichenzähler online – Zählen, Umwandeln & Analysieren",
-    "description": "Kostenloser Wort-, Zeichen-, Satz- und Absatzzähler. Groß-/Kleinschreibung ändern, Duplikate entfernen, Zeilen sortieren. 8 Metriken und 10 Textwerkzeuge.",
+    "title": "Wort-, Zeichen- und Lesezeiträhler mit Textformatierung",
+    "description": "Kostenloser Zähler für Wörter, Zeichen, Sätze, Absätze und Lesezeit mit Groß-/Kleinschreibungskonverter. Textlänge prüfen und Buchstaben ändern.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/wort-und-zeichenzaehler-de.webp",
     "path": "/de/werkzeuge/wort-und-zeichenzaehler"
   },
   "hero": {
-    "title": "Wort- und Zeichenzähler mit Textformatierungswerkzeugen",
+    "title": "Wörter und Zeichen zählen – Lesezeit prüfen und Text formatieren",
     "description": "Text einfügen – das Tool zählt Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter und Lesezeit. Groß-/Kleinschreibung ändern, Duplikate entfernen oder Zeilen sortieren",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Kostenloser Wort- und Zeichenzähler online mit Textwerkzeugen",
+      "name": "Wort-, Zeichen- und Lesezeiträhler mit Textformatierung",
       "alternateName": [
         "Online word counter",
         "Character counter with and without spaces",
@@ -36,21 +36,21 @@
         "Sort text lines alphabetically"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
+      "description": "Kostenloser Wort- und Zeichenzähler mit Textformatierungswerkzeugen. Zählt Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter und Lesezeit. Bietet 10 Werkzeuge: Groß-/Kleinschreibung, Leerzeichen entfernen, Leerzeilen, Duplikate und Sortierung.",
       "featureList": [
-        "Word count",
-        "Character count with and without spaces",
-        "Sentence and paragraph count",
-        "Unique word count",
-        "Average word length",
-        "Estimated reading time",
-        "Convert to uppercase or lowercase",
-        "Convert to sentence case or title case",
-        "Toggle letter case",
-        "Remove extra spaces",
-        "Remove empty lines and duplicates",
-        "Sort lines A-Z and Z-A",
-        "Copy text to clipboard"
+        "Wörter zählen",
+        "Zeichen mit und ohne Leerzeichen zählen",
+        "Sätze und Absätze zählen",
+        "Einzigartige Wörter zählen",
+        "Durchschnittliche Wortlänge",
+        "Geschätzte Lesezeit",
+        "In Groß- oder Kleinbuchstaben umwandeln",
+        "In Satz- oder Titelschreibweise umwandeln",
+        "Groß-/Kleinschreibung umkehren",
+        "Überflüssige Leerzeichen entfernen",
+        "Leerzeilen und Duplikate entfernen",
+        "Zeilen A–Z und Z–A sortieren",
+        "Text in Zwischenablage kopieren"
       ]
     },
     "howTo": {

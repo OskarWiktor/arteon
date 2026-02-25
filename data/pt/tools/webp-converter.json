@@ -2,13 +2,13 @@
   "toolKey": "jpgToWebp",
   "locale": "pt",
   "metadata": {
-    "title": "Conversor JPG/PNG para WebP gratuito – sem limites",
-    "description": "Reduza o tamanho das imagens até 35% sem perda de qualidade. Conversão JPG/PNG para WebP local – os ficheiros nunca saem do seu dispositivo.",
+    "title": "Conversor gratuito de JPG e PNG para WebP sem limite de ficheiros",
+    "description": "Converta JPG ou PNG para WebP e reduza o tamanho das imagens sem perda de qualidade. Privacidade total, sem limites e sem registo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-jpg-png-para-webp"
   },
   "hero": {
-    "title": "Conversor JPG/PNG para WebP",
+    "title": "Converta JPG e PNG para WebP – reduza o tamanho sem perder qualidade",
     "description": "Converta as suas imagens JPG e PNG para o formato WebP e reduza o tamanho dos ficheiros até 35% sem perda de qualidade visível. Tudo é executado localmente no seu navegador.",
     "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
@@ -24,19 +24,20 @@
   },
   "schemas": {
     "software": {
-      "name": "Conversor JPG e PNG para WebP — gratuito, sem limites",
+      "name": "Conversor JPG/PNG para WebP – sem limite de ficheiros",
       "alternateName": ["Conversor WebP gratuito", "Converter JPG para WebP", "Converter PNG para WebP", "Converter imagens para WebP", "Compressão de imagens WebP"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Conversor gratuito de JPG e PNG para WebP. Reduza o tamanho dos ficheiros até 35% sem perda de qualidade. Processamento em lote, otimização automática, execução local.",
+      "description": "Conversor gratuito de JPG e PNG para WebP. Reduza o tamanho das imagens até 35 %, melhore a velocidade de carregamento e os resultados Core Web Vitals. A conversão ocorre no navegador – os ficheiros não são enviados para um servidor.",
       "featureList": [
-        "Converter ficheiros JPG e PNG para WebP",
-        "Reduzir o tamanho dos ficheiros até 35%",
-        "Qualidade ajustável (60–95%)",
-        "Otimização automática se o ficheiro de saída for maior",
-        "Processamento em lote com transferência ZIP",
-        "Execução local no navegador",
-        "Sem registo e sem limites"
+        "Conversão de JPG para WebP",
+        "Conversão de PNG para WebP",
+        "Ajuste do nível de qualidade (60–95 %)",
+        "Conversão em lote de múltiplos ficheiros",
+        "Pré-visualização do tamanho antes e depois da conversão",
+        "Download de ficheiros individuais",
+        "Download de todos os ficheiros como ZIP",
+        "Processamento local no navegador (os ficheiros não são enviados para o servidor)"
       ]
     },
     "howTo": {

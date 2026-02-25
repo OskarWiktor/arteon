@@ -2,13 +2,13 @@
   "toolKey": "jpgToWebp",
   "locale": "ro",
   "metadata": {
-    "title": "Convertor gratuit JPG/PNG în WebP – Fără limite, fără upload",
-    "description": "Convertiți imagini JPG și PNG în format WebP fără limită de fișiere. Alegeți nivelul de calitate, descărcați totul ca arhivă ZIP. Gratuit, fără înregistrare.",
+    "title": "Convertor gratuit JPG și PNG în WebP fără limită de fișiere",
+    "description": "Convertiți JPG sau PNG în WebP și reduceți dimensiunea imaginilor fără pierderi de calitate. Confidențialitate totală, fără limite și fără înregistrare.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-jpg-png-in-webp"
   },
   "hero": {
-    "title": "Convertor JPG/PNG în WebP – Gratuit, fără limite",
+    "title": "Convertește JPG și PNG în WebP – reduce dimensiunea fără pierderi",
     "description": "Reduceți dimensiunea fișierelor de imagine cu până la 35% fără pierderi de calitate. Adăugați fișiere, alegeți nivelul de calitate și descărcați imaginile în format WebP. Toată conversia are loc local în browser.",
     "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
@@ -24,20 +24,20 @@
   },
   "schemas": {
     "software": {
-      "name": "Convertor JPG și PNG în WebP - gratuit, fără limite",
+      "name": "Convertor JPG/PNG în WebP – fără limită de fișiere",
       "alternateName": ["Convertor JPG în WebP și PNG în WebP"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertor gratuit JPG și PNG în WebP. Reduceți dimensiunea fișierelor de imagine cu până la 35%, îmbunătățiți viteza de încărcare și scorurile Core Web Vitals. Conversia are loc în browser - fișierele nu sunt trimise la un server.",
+      "description": "Convertor gratuit JPG și PNG în WebP. Reduceți dimensiunea imaginilor cu până la 35 %, îmbunătățiți viteza de încărcare și scorurile Core Web Vitals. Conversia se face în browser – fișierele nu sunt trimise pe server.",
       "featureList": [
         "Conversie JPG în WebP",
         "Conversie PNG în WebP",
-        "Ajustarea nivelului de calitate (1–100%)",
+        "Reglare nivel calitate (60–95 %)",
         "Conversie în lot a mai multor fișiere",
         "Previzualizare dimensiune înainte și după conversie",
-        "Descărcare individuală a fișierelor",
+        "Descărcare fișiere individuale",
         "Descărcare toate fișierele ca ZIP",
-        "Procesare locală în browser (fișierele nu sunt trimise la un server)"
+        "Procesare locală în browser (fișierele nu sunt trimise pe server)"
       ]
     },
     "howTo": {

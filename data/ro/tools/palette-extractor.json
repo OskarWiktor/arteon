@@ -2,13 +2,13 @@
   "toolKey": "paletteExtractor",
   "locale": "ro",
   "metadata": {
-    "title": "Extractor gratuit de culori din imagine – Paletă automată",
-    "description": "Extrageți paleta de culori din orice fotografie sau imagine. Obțineți codurile HEX, RGB și HSL pentru fiecare culoare identificată. Gratuit, fără înregistrare.",
+    "title": "Extractor gratuit de culori din imagine – paletă de culori din foto",
+    "description": "Încărcați o fotografie și instrumentul va genera o paletă de culori dominante. Coduri HEX și RGB gata, confidențialitate totală și fără limite.",
     "ogImage": "/assets/tools/image-color-extractor/extractor-culori-din-imagine-ro.webp",
     "path": "/ro/instrumente/extractor-culori-din-imagine"
   },
   "hero": {
-    "title": "Extractor de culori din imagine – Obțineți o paletă din orice fotografie",
+    "title": "Extrage culorile din orice imagine – obține paleta cu coduri HEX",
     "description": "Încărcați o fotografie, un logo sau un grafic, iar instrumentul va extrage până la 12 culori dominante cu coduri HEX și RGB. Analiza are loc local în browser.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
@@ -24,19 +24,19 @@
   },
   "schemas": {
     "software": {
-      "name": "Extractor de culori din imagine — paletă gratuită din fotografii",
+      "name": "Extractor de culori din imagine – paletă de culori din foto",
       "alternateName": ["Extrageți paleta de culori dintr-o fotografie sau un logo"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
-      "description": "Extractor gratuit de culori din imagine. Încărcați o fotografie, un logo sau un grafic și obțineți o paletă de până la 12 culori dominante cu coduri HEX și RGB. Procesarea are loc în browser - fișierele nu sunt trimise la un server.",
+      "description": "Extractor gratuit de culori din imagine. Încărcați o fotografie, un logo sau un grafic și obțineți o paletă de până la 12 culori dominante cu coduri HEX și RGB. Procesarea se face în browser – fișierele nu sunt trimise pe server.",
       "featureList": [
-        "Extragere automată a până la 12 culori dominante",
-        "Analiza fotografiilor, logourilor și graficelor vectoriale",
-        "Coduri de culori în format HEX și RGB",
-        "Copiere cod culoare în clipboard",
+        "Extracție automată a până la 12 culori dominante",
+        "Analiză de fotografii, logouri și grafică vectorială",
+        "Coduri de culoare în format HEX și RGB",
+        "Copierea codului de culoare în clipboard",
         "Suport pentru fișiere PNG, JPG și SVG",
-        "Ignoră pixelii transparenți în fișierele PNG",
-        "Procesare locală în browser - imaginea nu este trimisă la un server"
+        "Ignoră pixelii transparenți din fișierele PNG",
+        "Procesare locală în browser – imaginea nu este trimisă pe server"
       ]
     },
     "howTo": {

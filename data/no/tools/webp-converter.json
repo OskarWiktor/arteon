@@ -2,13 +2,13 @@
   "toolKey": "jpgToWebp",
   "locale": "no",
   "metadata": {
-    "title": "Gratis JPG/PNG til WebP-konverterer – Uten begrensninger",
-    "description": "Reduser bildestørrelsen uten kvalitetstap. Konverter JPG og PNG til WebP og gjør nettsiden raskere. Uten registrering, kjører i nettleseren.",
+    "title": "Gratis JPG- og PNG-til-WebP-konverterer uten filbegrensning",
+    "description": "Konverter JPG eller PNG til WebP og reduser bildestørrelsen uten kvalitetstap. Fullt personvern, ingen begrensninger og ingen registrering.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/jpg-png-til-webp-konverterer"
   },
   "hero": {
-    "title": "Konverter bilder til WebP – reduser størrelsen uten kvalitetstap",
+    "title": "Konverter JPG og PNG til WebP – reduser størrelsen uten kvalitetstap",
     "description": "Last opp bilder i JPG- eller PNG-format, og verktøyet konverterer dem til WebP. Mindre filer, samme kvalitet, raskere nettside.",
     "backgroundImage": "/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp"
   },
@@ -24,21 +24,20 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis JPG/PNG til WebP-konverterer",
+      "name": "JPG/PNG-til-WebP-konverterer – uten filbegrensning",
       "alternateName": ["Bildekonverterer til WebP", "JPG til WebP-konverterer", "PNG til WebP-konverterer"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Gratis konverterer for JPG og PNG til WebP. Reduser bildestørrelsen med opptil 90 % uten synlig kvalitetstap. All behandling skjer i nettleseren – filer sendes ikke til noen server.",
+      "description": "Gratis JPG- og PNG-til-WebP-konverterer. Reduser bildestørrelsen med opptil 35 %, forbedre lastehastigheten og Core Web Vitals-resultatene. Konverteringen skjer i nettleseren – filer sendes ikke til noen server.",
       "featureList": [
         "Konvertering av JPG til WebP",
         "Konvertering av PNG til WebP",
-        "Batchkonvertering av flere bilder samtidig",
-        "Kvalitetsregulator (0–100)",
-        "Sammenligning av original- og WebP-størrelse",
-        "Opplasting via dra-og-slipp eller filvalg",
-        "Forhåndsvisning før og etter konvertering",
-        "Nedlasting av hvert bilde eller alle i ZIP",
-        "Lokal behandling i nettleseren"
+        "Justering av kvalitetsnivå (60–95 %)",
+        "Batchkonvertering av flere filer",
+        "Størrelsesforhåndsvisning før og etter konvertering",
+        "Nedlasting av individuelle filer",
+        "Nedlasting av alle filer som ZIP",
+        "Lokal behandling i nettleseren (filer sendes ikke til server)"
       ]
     },
     "howTo": {

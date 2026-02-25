@@ -2,13 +2,13 @@
   "toolKey": "qrCode",
   "locale": "pl",
   "metadata": {
-    "title": "Generator kodów QR za darmo – PNG i SVG, bez rejestracji",
-    "description": "Stwórz kod QR do strony, wizytówki vCard, menu lub ulotki w kilka sekund. Eksport do PNG i SVG. Personalizacja kolorów i rozmiaru. Bez rejestracji, bez limitu.",
+    "title": "Darmowy generator kodów QR bez logowania i rejestracji",
+    "description": "Wygeneruj kod QR dla swojej strony, wizytówki vCard lub do druku. Wklej link, wybierz kolor kodu, rozmiar i pobierz gotowy kod QR w PNG i SVG.",
     "ogImage": "/assets/tools/qr-code-generator/darmowy-generator-kodow-qr-pl.webp",
     "path": "/narzedzia/darmowy-generator-kodow-qr"
   },
   "hero": {
-    "title": "Generator kodów QR – za darmo, bez rejestracji",
+    "title": "Stwórz kod QR do strony, wizytówki vCard lub druku",
     "description": "Stwórz kod QR do strony WWW, wizytówki vCard, e-maila, telefonu lub tekstu. Dostosuj kolory, rozmiar i poziom korekcji błędów, a następnie pobierz gotowy plik PNG lub SVG.",
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Darmowy generator kodów QR online",
+      "name": "Generator kodów QR bez logowania i rejestracji",
       "alternateName": [
         "Kreator kodów QR online",
         "Generator QR do wizytówki vCard",

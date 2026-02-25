@@ -2,13 +2,13 @@
   "toolKey": "metaCounter",
   "locale": "sv",
   "metadata": {
-    "title": "Gratis meta-titel & beskrivningskontroll – Bredd i pixlar",
-    "description": "Kontrollera längden på meta-titel och beskrivning i tecken och pixlar. Google SERP-förhandsgranskning hjälper dig undvika avkortade titlar och beskrivningar.",
+    "title": "Gratis kontroll av metatitel och beskrivningslängd i pixlar",
+    "description": "Kontrollera om din metatitel och beskrivning har rätt längd enligt Googles riktlinjer. Kontroll med liveförhandsgranskning och tips.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-och-beskrivning-kontroll-sv.webp",
     "path": "/sv/verktyg/meta-titel-och-beskrivning-kontroll"
   },
   "hero": {
-    "title": "Kontrollera längden på sidans titel och beskrivning i Google",
+    "title": "Kontrollera metatitel och beskrivningslängd – Google-förhandsgranskning",
     "description": "Ange titel och beskrivning och verktyget räknar antal tecken, ord, bredd i pixlar och visar om längden överensstämmer med rekommenderade SEO-praxis.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
@@ -24,20 +24,20 @@
   },
   "schemas": {
     "software": {
-      "name": "Gratis kontroll av meta-titel och beskrivningslängd",
+      "name": "Kontroll av metatitel och beskrivningslängd i pixlar",
       "alternateName": ["Meta-titel och beskrivningskontroll med Google-förhandsgranskning", "Google SERP-förhandsgranskning", "SEO-titelbreddskontroll i pixlar"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "SEOTool",
-      "description": "Gratis kontroll av meta-titel och beskrivningslängd. Kontrollerar antal tecken, ord och bredd i pixlar. Visar förhandsgranskning av hur titel och beskrivning visas i Googles sökresultat.",
+      "description": "Gratis kontroll av metatitel- och beskrivningslängd. Kontrollerar antal tecken, ord och bredd i pixlar. Visar en förhandsgranskning av hur titeln och beskrivningen visas i Googles sökresultat.",
       "featureList": [
-        "Teckenräknare för meta-titel",
-        "Teckenräknare för meta-beskrivning",
-        "Breddmätning i pixlar (motsvarar Google)",
+        "Teckenräknare för metatitel",
+        "Teckenräknare för metabeskrivning",
+        "Pixelbreddmätning (Google-kompatibel)",
         "Ordräknare för titel och beskrivning",
-        "Förhandsgranskning av Google-sökresultat",
-        "Färgkodad längdbedömning (för kort / bra / för lång)",
+        "Förhandsgranskning av Googles sökresultat",
+        "Färgkodad längdbedömning (för kort / optimal / för lång)",
         "Varning vid avkortning av titel och beskrivning",
-        "Rekommendation av optimal längd",
+        "Rekommendationer för optimal längd",
         "Lokal bearbetning i webbläsaren"
       ]
     },

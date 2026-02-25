@@ -2,13 +2,13 @@
   "toolKey": "favicon",
   "locale": "fi",
   "metadata": {
-    "title": "Ilmainen favicon-generaattori – ICO ja PNG yhdestä kuvasta",
-    "description": "Luo favicon.ico ja PNG-kuvakkeet 16×16–512×512 yhdestä kuvasta selain- ja Lighthouse-vaatimusten mukaisesti. Ilman rekisteröitymistä, käsittely tapahtuu selaimessa.",
+    "title": "Ilmainen verkkosivuston kuvakegeneraattori – luo favicon.ico",
+    "description": "Luo täydellinen favicon.ico-setti verkkosivullesi yhdestä kuvasta. Kaikki tarvittavat koot ilman kirjautumista ja rekisteröitymistä.",
     "ogImage": "/assets/tools/favicon-generator/ilmainen-favicon-generaattori-fi.webp",
     "path": "/fi/tyokalut/ilmainen-favicon-generaattori"
   },
   "hero": {
-    "title": "Luo favicon.ico ja PNG-kuvakkeet yhdestä kuvasta",
+    "title": "Luo favicon.ico verkkosivullesi yhdestä kuvasta",
     "description": "Lataa kuva, ja työkalu luo favicon.ico-tiedoston ja täydellisen PNG-kuvakesarjan selaimille, mobiililaitteille ja Lighthouselle.",
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
@@ -24,21 +24,24 @@
   },
   "schemas": {
     "software": {
-      "name": "Ilmainen favicon-generaattori",
+      "name": "Favicon.ico-generaattori verkkosivuille",
       "alternateName": ["Favicon.ico-generaattori", "Verkkokuvakegeneraattori", "Favicon-työkalu", "Favicon-generaattori kuvasta"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "FaviconGenerator",
-      "description": "Ilmainen favicon-generaattori. Lataa kuva ja saat favicon.ico-tiedoston ja täydellisen PNG-kuvakesarjan selaimille, mobiililaitteille ja PWA:lle.",
+      "description": "Ilmainen favicon-generaattori. Luo favicon.ico ja PNG-kuvakkeet 16x16, 32x32, 180x180, 192x192 ja 512x512 ilman rajoituksia ja lähettämättä tiedostoja palvelimelle. Käsittely tapahtuu paikallisesti selaimessa.",
       "featureList": [
-        "Favicon.ico-tiedoston luonti (16×16, 32×32, 48×48 px)",
-        "PNG-kuvakkeet selaimille (16×16–512×512 px)",
-        "Apple Touch Icon (180×180 px)",
-        "Android/PWA-kuvakkeet (192×192, 512×512 px)",
-        "Microsoft-kuvakkeet (150×150, 310×310 px)",
-        "Lähdekuvan rajaus ja koon muuttaminen",
-        "Reaaliaikainen esikatselu",
-        "Kaikkien kuvakkeiden lataus ZIP-tiedostona",
-        "Paikallinen käsittely selaimessa"
+        "Favicon.ico-tiedoston luominen (16x16, 32x32, 48x48 yhdessä tiedostossa)",
+        "PNG-kuvakkeiden luominen 16x16 ja 32x32",
+        "Apple-touch-icon 180x180 luominen",
+        "PWA-kuvakkeiden 192x192 ja 512x512 luominen",
+        "PNG-, JPG- ja SVG-lähdekuvien tuki",
+        "Taustavärin määritys",
+        "Manifest.json-tiedoston luominen PWA:lle",
+        "Kaikkien tiedostojen lataus ZIP-pakettina",
+        "Yksittäisten tiedostojen lataus",
+        "Lighthouse-yhteensopiva",
+        "Käsittely selaimessa (tiedostoja ei lähetetä palvelimelle)",
+        "Ilmainen työkalu ilman kirjautumista"
       ]
     },
     "howTo": {

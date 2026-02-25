@@ -2,13 +2,13 @@
   "toolKey": "emailSignature",
   "locale": "fi",
   "metadata": {
-    "title": "Ilmainen sähköpostiallekirjoitusgeneraattori – HTML",
-    "description": "Luo ammattimainen HTML-sähköpostiallekirjoitus ilman ohjelmistoa. Lisää yhteystiedot, logo, sosiaalisen median linkit ja kopioi Gmailiin tai Outlookiin.",
+    "title": "Ilmainen HTML-sähköpostiallekirjoitusgeneraattori – luo allekirjoitus",
+    "description": "Luo HTML-sähköpostiallekirjoitus ilman kirjautumista ja rekisteröitymistä. Täysi mukauttaminen, valmiit asettelut, reaaliaikainen esikatselu ja valmis HTML-koodi.",
     "ogImage": "/assets/tools/free-html-email-signature-generator/ilmainen-sahkopostiallekirjoitus-generaattori-fi.webp",
     "path": "/fi/tyokalut/ilmainen-sahkopostiallekirjoitus-generaattori"
   },
   "hero": {
-    "title": "Luo ammattimainen HTML-sähköpostiallekirjoitus",
+    "title": "Luo HTML-sähköpostiallekirjoitus – kopioi Gmailiin tai Outlookiin",
     "description": "Luo ammattimainen sähköpostiallekirjoitus muutamassa minuutissa. Syötä tietosi, valitse värit ja kopioi valmis HTML-koodi Gmailiin, Outlookiin tai muuhun sähköpostiohjelmaan.",
     "backgroundImage": "/assets/tools/free-html-email-signature-generator/ilmainen-sahkopostiallekirjoitus-generaattori-fi.webp"
   },
@@ -24,24 +24,27 @@
   },
   "schemas": {
     "software": {
-      "name": "Ilmainen sähköpostiallekirjoitusgeneraattori",
+      "name": "HTML-sähköpostiallekirjoitusgeneraattori – allekirjoituksen luoja",
       "alternateName": ["HTML-sähköpostiallekirjoitusgeneraattori", "Sähköpostin alatunnisteen generaattori"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Ilmainen HTML-sähköpostiallekirjoitusgeneraattori. Lisää yhteystiedot, CTA-painike ja sosiaalisen median profiilit, kopioi sitten valmis koodi Gmailiin, Outlookiin ja muihin sähköpostiohjelmiin.",
+      "description": "Ilmainen HTML-sähköpostiallekirjoitusgeneraattori. Lisää yhteystiedot, CTA-linkki ja sosiaalisen median profiilit, kopioi sitten valmis allekirjoituskoodi Gmailiin, Outlookiin ja muihin sähköpostiohjelmiin.",
       "featureList": [
         "Yhteystiedot (nimi, titteli, yritys)",
-        "Puhelin, sähköposti ja verkko-osoite",
-        "Logo tai profiilikuva muodon ja koon valinnalla",
-        "Sosiaalisen median kuvakkeet (12 alustaa)",
+        "Puhelin, sähköposti ja verkkosivuston URL",
+        "Logo tai profiilikuva muoto- ja kokovaihtoehdoilla",
+        "Sosiaalisen median kuvakkeet (12 alustaa: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
         "Mukautettavat värit (teksti, korostus, tausta)",
+        "Yksilöllinen tekstityyli jokaiselle allekirjoituselementille",
         "CTA-painike omalla tekstillä ja linkillä",
-        "Allekirjoituksen reaaliaikainen esikatselu",
-        "Kopioi HTML-koodi leikepöydälle",
-        "Lataa allekirjoitus HTML-tiedostona",
-        "Vie ja tuo määritykset JSON-tiedostona",
-        "Yhteensopivuus Gmailin, Outlookin ja Apple Mailin kanssa",
-        "Ilmainen työkalu, ilman kirjautumista"
+        "Erotusviivan tyyli (tyyli, paksuus, väri)",
+        "Reaaliaikainen allekirjoituksen esikatselu taustan vaihdolla (vaalea, tumma, shakkilauta)",
+        "HTML-lähdekoodin esikatselu modaalissa",
+        "HTML-koodin kopiointi leikepöydälle",
+        "Allekirjoituksen lataus HTML-tiedostona",
+        "Konfiguraation vienti ja tuonti JSON-tiedostona",
+        "Yhteensopiva Gmailin, Outlookin ja Apple Mailin kanssa",
+        "Ilmainen työkalu ilman kirjautumista"
       ]
     },
     "howTo": {

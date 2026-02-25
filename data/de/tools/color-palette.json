@@ -2,13 +2,13 @@
   "toolKey": "colorPalette",
   "locale": "de",
   "metadata": {
-    "title": "Farbpaletten-Generator kostenlos – 9 Paletten aus 1 Farbe",
-    "description": "Generieren Sie 9 Farbpaletten aus einer Farbe: monochromatisch, komplementär, triadisch, Pastell, dunkel und mehr. HEX-Codes mit einem Klick kopieren.",
+    "title": "Kostenloser Farbpaletten-Generator – 9 Schemata",
+    "description": "9 Farbpaletten aus einer Farbe generieren: monochromatisch, komplementär, triadisch, Pastell und mehr. HEX-Codes mit einem Klick kopieren.",
     "ogImage": "/assets/tools/color-palette-generator/farbpaletten-generator-de.webp",
     "path": "/de/werkzeuge/farbpaletten-generator"
   },
   "hero": {
-    "title": "Farbpaletten-Generator",
+    "title": "9 Farbpaletten aus einer Grundfarbe generieren",
     "description": "Wählen Sie eine Basisfarbe und generieren Sie 9 harmonische Farbpaletten. Monochromatisch, komplementär, triadisch, Pastell, dunkel und mehr - alle Berechnungen laufen lokal in Ihrem Browser.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Farbpaletten-Generator — 9 Paletten aus einer Farbe",
+      "name": "Farbpaletten-Generator – 9 Farbschemata",
       "alternateName": [
         "Kostenloser Farbpaletten-Generator",
         "Farbschemata aus einer Farbe generieren",
@@ -35,13 +35,22 @@
       ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Generieren Sie Farbpaletten aus einer einzigen Basisfarbe. 9 Palettentypen: monochromatisch, analog, komplementär, triadisch, split-komplementär, Pastell, dunkel, tonal und minimalistisch.",
+      "description": "Kostenloser Farbpaletten-Generator. Geben Sie eine HEX-Farbe ein und das Tool generiert 9 Schemata: monochromatisch, analog, komplementär, triadisch, gespalten-komplementär, Pastell, dunkel, tonal und minimalistisch. Jede Farbe kann mit HEX-Code und HSL-Wert kopiert werden.",
       "featureList": [
-        "9 Palettentypen aus einer Basisfarbe",
-        "Monochromatisch, analog, komplementär, triadisch, split-komplementär",
-        "Pastell-, Dunkel-, Tonal- und minimalistische Paletten",
-        "HEX-Codes mit einem Klick kopieren",
-        "Berechnungen basierend auf dem HSL-Farbraum",
+        "Monochromatisches Schema – Abstufungen einer Farbe",
+        "Analoges Schema – benachbarte Farben auf dem Farbkreis",
+        "Komplementäres Schema – gegenüberliegende Farben",
+        "Triadisches Schema – 3 Farben in gleichen Abständen",
+        "Gespalten-komplementäres Schema – Basisfarbe und 2 Nachbarn der Gegenfarbe",
+        "Pastellpalette – helle, gedämpfte Töne",
+        "Dunkle Palette – tiefe Farben für dunkle Themen",
+        "Tonale Palette – Helligkeitsskala eines Farbtons",
+        "Minimalistische Palette – starker Akzent und helle Neutraltöne",
+        "Basisfarbe im HEX-Format",
+        "Farbwähler zur visuellen Auswahl",
+        "Zufällige Startfarbe",
+        "HEX-Code in die Zwischenablage kopieren",
+        "HSL-Wert neben jeder Farbe angezeigt",
         "Lokale Verarbeitung im Browser"
       ]
     },

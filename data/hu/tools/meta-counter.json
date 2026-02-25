@@ -2,13 +2,13 @@
   "toolKey": "metaCounter",
   "locale": "hu",
   "metadata": {
-    "title": "Ingyenes meta title és description ellenőrző – Pixelek",
-    "description": "Ellenőrizze a meta title és description hosszát karakterekben és pixelekben. A Google SERP előnézet segít elkerülni a csonkolt címeket és leírásokat a keresőben.",
+    "title": "Ingyenes meta cím és leírás hossz-ellenőrző pixelben",
+    "description": "Ellenőrizze, hogy a meta cím és leírás megfelelő hosszúságú-e a Google irányelvei szerint. Ellenőrző élő előnézettel és tippekkel.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-cim-es-leiras-ellenorzo-hu.webp",
     "path": "/hu/eszkozok/meta-title-description-hossz-ellenorzo"
   },
   "hero": {
-    "title": "Ellenőrizze az oldalcím és leírás hosszát a Google-ben",
+    "title": "Ellenőrizze a meta cím és leírás hosszát – Google-előnézet",
     "description": "Adjon meg egy címet és leírást, és az eszköz kiszámítja a karakterszámot, szószámot, pixelszélességet, és megmutatja, hogy a hossz megfelel-e a SEO bevalt gyakorlatoknak",
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Ingyenes meta title és description hossz ellenőrző",
+      "name": "Meta cím és leírás hossz-ellenőrző pixelben",
       "alternateName": [
         "Meta title és description ellenőrző Google előnézettel",
         "Google snippet előnézet",
@@ -37,16 +37,16 @@
       ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "SEOTool",
-      "description": "Ingyenes meta title és description hossz ellenőrző. Ellenőrzi a karakterszámot, szószámot és pixelszélességet. Megjeleníti, hogyan jelenik meg a cím és leírás a Google keresési eredményekben.",
+      "description": "Ingyenes meta cím és leírás hossz-ellenőrző. Ellenőrzi a karakterek, szavak számát és a szélességet pixelben. Megjeleníti az előnézetet, hogyan jelenik meg a cím és leírás a Google keresési eredményeiben.",
       "featureList": [
-        "Karakterszámláló meta title-hoz",
-        "Karakterszámláló meta descriptionhöz",
+        "Karakterszámláló a meta címhez",
+        "Karakterszámláló a meta leíráshoz",
         "Pixelszélesség mérés (Google-kompatibilis)",
-        "Szószámláló címhez és leíráshoz",
+        "Szószámláló a címhez és leíráshoz",
         "Google keresési eredmények előnézete",
         "Színkódolt hosszértékelés (túl rövid / optimális / túl hosszú)",
-        "Levágási figyelmeztetés címhez és leíráshoz",
-        "Optimális hossz ajánlások",
+        "Figyelmeztetés a cím és leírás csonkolására",
+        "Optimális hosszra vonatkozó javaslatok",
         "Helyi feldolgozás a böngészőben"
       ]
     },

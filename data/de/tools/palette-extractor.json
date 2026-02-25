@@ -2,13 +2,13 @@
   "toolKey": "paletteExtractor",
   "locale": "de",
   "metadata": {
-    "title": "Bild-Farbextraktor kostenlos – Palette aus Fotos",
-    "description": "Laden Sie ein Foto oder Logo hoch und extrahieren Sie bis zu 12 dominante Farben mit HEX- und RGB-Codes. Ideal für UI, Branding und Social Media.",
+    "title": "Kostenloser Bild-Farbextraktor – Farbpalette aus Foto",
+    "description": "Laden Sie ein Foto hoch und das Tool generiert eine Palette dominanter Farben. Fertige HEX- und RGB-Codes, volle Privatsphäre und keine Limits.",
     "ogImage": "/assets/tools/image-color-extractor/bild-farbextraktor-de.webp",
     "path": "/de/werkzeuge/bild-farbextraktor"
   },
   "hero": {
-    "title": "Bild-Farbextraktor",
+    "title": "Farben aus Bildern extrahieren – Palette mit HEX-Codes erhalten",
     "description": "Laden Sie ein Foto oder Logo hoch und das Tool extrahiert die dominanten Farben. Kopieren Sie HEX- und RGB-Codes mit einem einzigen Klick.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
@@ -24,18 +24,19 @@
   },
   "schemas": {
     "software": {
-      "name": "Bild-Farbextraktor — Farbpalette aus Fotos und Logos",
+      "name": "Bild-Farbextraktor – Farbpalette aus Foto",
       "alternateName": ["Farben aus Bildern extrahieren", "Farbpaletten-Extraktor", "Dominante Farben aus einem Foto", "Farbcodes aus Bildern auslesen", "Farben aus Logo extrahieren"],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
-      "description": "Kostenloser Bild-Farbextraktor. Laden Sie ein Foto oder Logo hoch und erhalten Sie eine Palette von bis zu 12 dominanten Farben mit HEX- und RGB-Codes. Verarbeitung lokal im Browser.",
+      "description": "Kostenloser Bild-Farbextraktor. Laden Sie ein Foto, Logo oder eine Grafik hoch und erhalten Sie eine Palette von bis zu 12 dominanten Farben mit HEX- und RGB-Codes. Verarbeitung im Browser – Dateien werden nicht an einen Server gesendet.",
       "featureList": [
-        "Extraktion von bis zu 12 dominanten Farben",
-        "HEX- und RGB-Codes für jede Farbe",
-        "Ein-Klick-Kopieren der Farbcodes",
-        "Unterstützung für JPG, PNG und WebP",
-        "Lokale Verarbeitung im Browser",
-        "Kostenlos, ohne Registrierung"
+        "Automatische Extraktion von bis zu 12 dominanten Farben",
+        "Analyse von Fotos, Logos und Vektorgrafiken",
+        "Farbcodes im HEX- und RGB-Format",
+        "Farbcode in die Zwischenablage kopieren",
+        "Unterstützung von PNG-, JPG- und SVG-Dateien",
+        "Ignoriert transparente Pixel in PNG-Dateien",
+        "Lokale Verarbeitung im Browser – Bild wird nicht an Server gesendet"
       ]
     },
     "howTo": {

@@ -2,13 +2,13 @@
   "toolKey": "emailSignature",
   "locale": "pt",
   "metadata": {
-    "title": "Gerador de assinatura de e-mail gratuito – HTML Gmail",
-    "description": "Crie uma assinatura de e-mail HTML profissional sem programar. Adicione dados de contacto, logo, redes sociais e copie para o Gmail ou Outlook.",
+    "title": "Gerador gratuito de assinatura de e-mail HTML – criar assinatura",
+    "description": "Crie uma assinatura de e-mail HTML sem registo nem login. Personalização completa, layouts prontos, pré-visualização ao vivo e código HTML pronto.",
     "ogImage": "/assets/tools/free-html-email-signature-generator/gerador-de-assinatura-de-email-gratuito-pt.webp",
     "path": "/pt/ferramentas/gerador-de-assinatura-de-email-gratuito"
   },
   "hero": {
-    "title": "Gerador de assinatura de e-mail",
+    "title": "Crie uma assinatura de e-mail HTML – copie para Gmail ou Outlook",
     "description": "Crie uma assinatura de e-mail profissional em minutos. Preencha os seus dados, escolha as cores e o layout, depois copie o código HTML para o Gmail, Outlook ou qualquer outro cliente de e-mail.",
     "backgroundImage": "/assets/tools/free-html-email-signature-generator/gerador-de-assinatura-de-email-gratuito-pt.webp"
   },
@@ -24,21 +24,27 @@
   },
   "schemas": {
     "software": {
-      "name": "Gerador de assinatura de e-mail HTML – Gmail e Outlook",
+      "name": "Gerador de assinatura de e-mail HTML – criador de assinatura",
       "alternateName": ["Criar assinatura de e-mail gratuito", "Gerador de assinatura HTML", "Gerador de assinatura Gmail", "Gerador de assinatura Outlook", "Assinatura de e-mail profissional"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "EmailSignatureGenerator",
-      "description": "Gerador gratuito de assinatura de e-mail HTML. 8 layouts, cores personalizáveis, ícones de redes sociais, link CTA. Para Gmail, Outlook e outros clientes. Execução local.",
+      "description": "Gerador gratuito de assinatura de e-mail HTML. Adicione dados de contacto, link CTA e perfis de redes sociais, depois copie o código da assinatura para o Gmail, Outlook e outros clientes de e-mail.",
       "featureList": [
-        "8 layouts: Standard, Barra superior, Labels à esquerda, Centrado, Compacto, Duas colunas, Minimalista, Barra inferior",
-        "Cores e tipos de letra personalizáveis",
-        "Ícones de redes sociais (12 plataformas)",
-        "Botão CTA / Link de ação",
-        "Foto de perfil e logótipo da empresa",
-        "Aviso legal / Disclaimer",
-        "Exportação e importação de definições",
-        "Cópia em texto formatado ou código HTML",
-        "Execução local no navegador"
+        "Dados de contacto (nome, cargo, empresa)",
+        "Telefone, e-mail e URL do site",
+        "Logótipo ou foto de perfil com opções de forma e tamanho",
+        "Ícones de redes sociais (12 plataformas: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, Pinterest)",
+        "Cores personalizáveis (texto, destaque, fundo)",
+        "Estilo de texto individual para cada elemento da assinatura",
+        "Botão CTA com texto e link personalizados",
+        "Estilo de linha separadora (estilo, espessura, cor)",
+        "Pré-visualização ao vivo da assinatura com mudança de fundo (claro, escuro, xadrez)",
+        "Pré-visualização do código HTML em modal",
+        "Copiar código HTML para a área de transferência",
+        "Transferir assinatura como ficheiro HTML",
+        "Exportar e importar configuração como ficheiro JSON",
+        "Compatível com Gmail, Outlook, Apple Mail",
+        "Ferramenta gratuita sem registo"
       ]
     },
     "howTo": {

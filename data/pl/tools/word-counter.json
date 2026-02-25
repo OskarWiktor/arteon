@@ -2,13 +2,13 @@
   "toolKey": "wordCounter",
   "locale": "pl",
   "metadata": {
-    "title": "Licznik słów i znaków online – policz, przekształć i analizuj tekst",
-    "description": "Darmowy licznik słów, znaków, zdań i akapitów. Zmień wielkość liter, usuń duplikaty, sortuj linie. 8 metryk i 10 narzędzi tekstowych w jednym miejscu.",
+    "title": "Licznik słów, znaków i czasu czytania z formatowaniem tekstu",
+    "description": "Darmowy licznik słów, znaków, zdań, akapitów i czasu czytanie z konwertorem wielkości liter. Sprawdź długość swojego tekstu i zmień litery.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/licznik-slow-i-znakow-pl.webp",
     "path": "/narzedzia/licznik-slow-i-znakow"
   },
   "hero": {
-    "title": "Licznik słów i znaków z narzędziami do formatowania tekstu",
+    "title": "Policz słowa i znaki – sprawdź czas czytania i sformatuj tekst",
     "description": "Wklej tekst, a narzędzie policzy słowa, znaki, zdania, akapity, unikalne wyrazy i czas czytania. Zmień wielkość liter, usuń duplikaty lub posortuj linie jednym kliknięciem",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Darmowy licznik słów i znaków online z narzędziami tekstowymi",
+      "name": "Licznik słów, znaków i czasu czytania z formatowaniem tekstu",
       "alternateName": [
         "Licznik słów online po polsku",
         "Licznik znaków ze spacjami i bez spacji",
@@ -84,10 +84,10 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Darmowy licznik słów i znaków online z narzędziami tekstowymi",
+      "title": "Licznik słów, znaków i czasu czytania z formatowaniem tekstu",
       "html": "<p class=\"text-mid\">Narzędzie łączy licznik słów i znaków z zestawem funkcji do formatowania tekstu. Wklej tekst, a zobaczysz liczbę słów, znaków, zdań, akapitów, unikalnych wyrazów i szacowany czas czytania.</p><p class=\"text-mid mt-3\">Pod polem tekstowym znajdziesz pasek z 10 narzędziami: zamiana wielkości liter (WIELKIE, małe, Jak w zdaniu, Każde Słowo Wielką), usuwanie nadmiarowych spacji, pustych linii i duplikatów oraz sortowanie linii alfabetycznie. Cała analiza i przetwarzanie tekstu odbywają się lokalnie w przeglądarce.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/licznik-slow-i-znakow-pl.webp",
-      "imageAlt": "Licznik słów i znaków online – Arteon"
+      "imageAlt": "Licznik słów, znaków i czasu czytania z formatowaniem tekstu – Arteon"
     },
     {
       "type": "gap",
@@ -373,7 +373,7 @@
       "title": "Pomóż nam ulepszyć narzędzia",
       "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie, które ułatwiłoby Twoją pracę? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/licznik-slow-i-znakow-pl.webp",
-      "imageAlt": "Licznik słów i znaków online – Arteon",
+      "imageAlt": "Licznik słów, znaków i czasu czytania z formatowaniem tekstu – Arteon",
       "defaultSubject": "Feedback: Licznik słów i znaków"
     },
     {

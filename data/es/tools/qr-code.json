@@ -2,13 +2,13 @@
   "toolKey": "qrCode",
   "locale": "es",
   "metadata": {
-    "title": "Generador de códigos QR gratis – PNG y SVG, sin registro",
-    "description": "Cree códigos QR para sitios web, vCards, menús o folletos en segundos. Exporte a PNG y SVG. Personalice colores y tamaño. Sin registro, sin límites.",
+    "title": "Generador gratuito de códigos QR sin registro ni inicio de sesión",
+    "description": "Genere un código QR para su sitio web, tarjeta vCard o impresión. Pegue un enlace, elija el color del código, el tamaño y descargue el código QR en PNG y SVG.",
     "ogImage": "/assets/tools/qr-code-generator/generador-de-codigos-qr-gratuito-es.webp",
     "path": "/es/herramientas/generador-de-codigos-qr-gratuito"
   },
   "hero": {
-    "title": "Generador de códigos QR – gratis, sin registro",
+    "title": "Crea un código QR para web, vCard o impresión – PNG y SVG",
     "description": "Cree un código QR para un sitio web, tarjeta de visita vCard, correo electrónico, teléfono o texto. Personalice colores, tamaño y nivel de corrección de errores, y descargue un archivo PNG o SVG listo.",
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Generador gratuito de códigos QR — PNG y SVG",
+      "name": "Generador de códigos QR sin registro ni inicio de sesión",
       "alternateName": [
         "Creador de códigos QR gratuito",
         "Generador de códigos QR vCard",
@@ -37,18 +37,18 @@
       ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "QRCodeGenerator",
-      "description": "Cree un código QR para un sitio web, tarjeta de visita, menú o folleto. Elija el tipo de datos, personalice colores y tamaño, y descargue un archivo PNG o SVG.",
+      "description": "Cree un código QR para un sitio web, tarjeta de visita, menú o folleto. Elija el tipo de datos, personalice colores y tamaño, luego descargue el archivo PNG o SVG.",
       "featureList": [
         "Código QR para URL (sitio web)",
         "Código QR para texto plano",
         "Código QR vCard (datos de contacto)",
-        "Código QR para correo electrónico (dirección, asunto, cuerpo)",
+        "Código QR para email (dirección, asunto, cuerpo)",
         "Código QR para número de teléfono",
-        "Colores personalizables del código y fondo",
+        "Colores personalizables para código y fondo",
         "Selección de tamaño del código en píxeles",
-        "Exportación a formato PNG (ráster)",
-        "Exportación a formato SVG (vectorial)",
-        "Vista previa en vivo del código",
+        "Exportación a formato PNG (raster)",
+        "Exportación a formato SVG (vector)",
+        "Vista previa del código en vivo",
         "Procesamiento local en el navegador",
         "Corrección de errores Reed-Solomon"
       ]

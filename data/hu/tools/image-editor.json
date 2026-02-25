@@ -2,13 +2,13 @@
   "toolKey": "imageResize",
   "locale": "hu",
   "metadata": {
-    "title": "Ingyenes képszerkesztő – Vágás, átméretezés és konvertálás",
-    "description": "Vágjon ki, méretezzen át és konvertáljon képeket JPG, PNG és WebP formátumok között. Állítsa be a minőséget és az arányokat. Ingyenes, fiók nélkül használható.",
+    "title": "Ingyenes képvágás, átméretezés és konvertálás",
+    "description": "Méretezze át, vágja ki és konvertálja képét ingyen. Használjon kész formátumokat a közösségi médiához, és töltse le JPG, PNG vagy WebP formátumban.",
     "ogImage": "/assets/tools/free-image-editor-crop-resize-and-convert/kepszerkeszto-hu.webp",
     "path": "/hu/eszkozok/kepszerkeszto"
   },
   "hero": {
-    "title": "Ingyenes képszerkesztő – Vágás, átméretezés és konvertálás",
+    "title": "Méretezze át, vágja ki és konvertálja a képet online – ingyen",
     "description": "Méretezze át, vágja ki és konvertálja a képeket Instagramhoz, Facebookhoz és LinkedInhez. Kész formátumok, kör alakú avatarok, export JPG, PNG és WebP formátumba. Helyi feldolgozás a böngészőben.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -24,26 +24,26 @@
   },
   "schemas": {
     "software": {
-      "name": "Ingyenes képszerkesztő",
+      "name": "Képszerkesztő – vágás, átméretezés és konvertálás",
       "alternateName": ["Kép átméretező", "Kép vágó", "Instagram képméret eszköz", "Facebook képméret eszköz", "JPG WebP konverter", "Kör alakú profilkép eszköz", "Képtömörítés"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Ingyenes képszerkesztő átméretezéshez, vágáshoz és formátumkonverzióhoz. Kész presetek Instagramhoz, Facebookhoz és LinkedInhez. Kör alakú avatar készítés. Export JPG, PNG és WebP formátumba minőségszabályozással. Helyi feldolgozás a böngészőben.",
+      "description": "Ingyenes online képszerkesztő átméretezéshez, vágáshoz és formátumkonverzióhoz. Kész presetek az Instagram, Facebook és LinkedIn számára. Kör alakú avatarok készítése. Export JPG, PNG és WebP formátumba minőségszabályozással. Helyi feldolgozás a böngészőben.",
       "featureList": [
         "Képek átméretezése bármilyen méretre",
-        "Vágás interaktív területkijelöléssel",
+        "Vágás interaktív terület kijelöléssel",
         "Kész Instagram-formátumok (négyzetes poszt, álló poszt, story, reels)",
-        "Kész Facebook-formátumok (poszt, oldalboritó)",
-        "Kész LinkedIn-formátumok (poszt, profilbanner)",
-        "Kész webformátumok (OG kép, hero, banner, bélyegkép)",
+        "Kész Facebook-formátumok (poszt, oldal borítókép)",
+        "Kész LinkedIn-formátumok (poszt, profil banner)",
+        "Kész web-formátumok (OG kép, hero, banner, miniatűr)",
         "Vágási formák: téglalap, négyzet, kör (kerek avatar)",
         "3x3 rács (harmadolás szabálya) színválasztással",
-        "Vágási zoom 100–300%",
+        "Vágás zoom 100–300 %",
         "Pontos vágási pozíció (X, Y) középre igazítással",
         "Formátumkonverzió: JPG, PNG, WebP",
-        "Tömörítési minőségszabályozás 60–100%",
+        "Tömörítési minőség szabályozása 60–100 %",
         "Helyi feldolgozás a böngészőben",
-        "Ingyenes eszköz, bejelentkezés nélkül"
+        "Ingyenes eszköz bejelentkezés nélkül"
       ]
     },
     "howTo": {

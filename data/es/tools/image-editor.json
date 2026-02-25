@@ -2,13 +2,13 @@
   "toolKey": "imageResize",
   "locale": "es",
   "metadata": {
-    "title": "Editor de imágenes gratis – recortar y redimensionar",
-    "description": "Redimensione y recorte imágenes en segundos. Plantillas para Instagram, Facebook, LinkedIn. Convierta JPG a WebP. Avatares circulares.",
+    "title": "Recorte, cambio de tamaño y conversión de imágenes gratis",
+    "description": "Cambie el tamaño, recorte y convierta su imagen gratis. Utilice formatos listos para redes sociales y descargue JPG, PNG o WebP.",
     "ogImage": "/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagenes-en-linea-es.webp",
     "path": "/es/herramientas/editor-de-imagenes-en-linea"
   },
   "hero": {
-    "title": "Editor de imágenes – recortar y redimensionar gratis",
+    "title": "Redimensiona, recorta y convierte imágenes online – editor gratuito",
     "description": "Redimensione, recorte y convierta imágenes para Instagram, Facebook y LinkedIn. Formatos predefinidos, avatares circulares, exportación a JPG, PNG y WebP. Procesamiento local en el navegador.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Editor de imágenes gratuito — recortar, redimensionar y convertir",
+      "name": "Editor de imágenes – recorte, cambio de tamaño y conversión",
       "alternateName": [
         "Redimensionador de imágenes gratuito",
         "Recortador de imágenes",
@@ -36,22 +36,22 @@
       ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Editor de imágenes gratuito para redimensionar, recortar y convertir formatos. Formatos predefinidos para Instagram, Facebook y LinkedIn. Creación de avatares circulares. Exportación a JPG, PNG y WebP con control de calidad. Procesamiento local en el navegador.",
+      "description": "Editor de imágenes en línea gratuito para cambiar el tamaño, recortar y convertir formatos. Presets para Instagram, Facebook y LinkedIn. Creación de avatares circulares. Exportación a JPG, PNG y WebP con control de calidad. Procesamiento local en el navegador.",
       "featureList": [
-        "Redimensionar imágenes a cualquier dimensión",
-        "Recortar con selección de área interactiva",
-        "Formatos predefinidos de Instagram (post cuadrado, post vertical, story, reels)",
-        "Formatos predefinidos de Facebook (post, portada de página)",
-        "Formatos predefinidos de LinkedIn (post, banner de perfil)",
-        "Formatos predefinidos web (imagen OG, hero, banner, miniatura)",
+        "Cambiar el tamaño de imágenes a cualquier dimensión",
+        "Recorte con selección de área interactiva",
+        "Formatos predefinidos para Instagram (post cuadrado, post vertical, story, reels)",
+        "Formatos predefinidos para Facebook (post, portada de página)",
+        "Formatos predefinidos para LinkedIn (post, banner de perfil)",
+        "Formatos predefinidos para web (imagen OG, hero, banner, miniatura)",
         "Formas de recorte: rectángulo, cuadrado, círculo (avatar redondo)",
-        "Cuadrícula 3x3 (regla de los tercios) con selección de color",
-        "Zoom de recorte 100-300%",
+        "Cuadrícula 3x3 (regla de tercios) con selección de color",
+        "Zoom de recorte 100–300 %",
         "Posición precisa de recorte (X, Y) con centrado",
-        "Conversión de formato: JPG, PNG, WebP",
-        "Control de calidad de compresión 60-100%",
+        "Conversión de formatos: JPG, PNG, WebP",
+        "Control de calidad de compresión 60–100 %",
         "Procesamiento local en el navegador",
-        "Herramienta gratuita, sin registro"
+        "Herramienta gratuita sin registro"
       ]
     },
     "howTo": {

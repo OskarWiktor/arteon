@@ -2,13 +2,13 @@
   "toolKey": "metaCounter",
   "locale": "fr",
   "metadata": {
-    "title": "Vérificateur de méta titre et description gratuit – SEO",
-    "description": "Vérifiez la longueur de votre méta titre et description en caractères et pixels. Aperçu Google pour éviter les snippets tronqués.",
+    "title": "Compteur gratuit de longueur de meta titre et description en pixels",
+    "description": "Vérifiez si votre meta titre et description ont la bonne longueur selon les recommandations Google. Compteur avec aperçu en direct et conseils.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/verificateur-meta-titre-et-description-fr.webp",
     "path": "/fr/outils/verificateur-meta-titre-et-description"
   },
   "hero": {
-    "title": "Vérificateur de méta titre et description",
+    "title": "Vérifiez la longueur du méta titre et description – aperçu Google",
     "description": "Vérifiez le nombre de caractères, de mots et la largeur en pixels de vos méta titres et descriptions. Aperçu en temps réel de l'apparence de votre page dans les résultats Google.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Vérificateur de méta titre et description — aperçu Google",
+      "name": "Compteur de longueur de meta titre et description en pixels",
       "alternateName": [
         "Vérificateur de méta titre avec aperçu Google",
         "Compteur de caractères méta titre",
@@ -37,14 +37,17 @@
       ],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "SEOTool",
-      "description": "Vérificateur de méta titre et description avec aperçu Google. Affiche le nombre de caractères, de mots et la largeur en pixels pour éviter les titres et descriptions tronqués.",
+      "description": "Compteur gratuit de longueur de meta titre et description. Vérifie le nombre de caractères, de mots et la largeur en pixels. Affiche un aperçu de l'apparence du titre et de la description dans les résultats de recherche Google.",
       "featureList": [
-        "Compteur de caractères et de mots",
-        "Mesure de la largeur en pixels",
-        "Aperçu du résultat Google (SERP)",
-        "Évaluation de la longueur (trop court / bonne / trop long)",
-        "URL optionnelle dans l'aperçu",
-        "Exécution locale dans le navigateur"
+        "Compteur de caractères pour le meta titre",
+        "Compteur de caractères pour la meta description",
+        "Mesure de la largeur en pixels (compatible Google)",
+        "Compteur de mots pour le titre et la description",
+        "Aperçu des résultats de recherche Google",
+        "Évaluation de la longueur par code couleur (trop court / optimal / trop long)",
+        "Avertissement de troncature du titre et de la description",
+        "Recommandations de longueur optimale",
+        "Traitement local dans le navigateur"
       ]
     },
     "howTo": {
