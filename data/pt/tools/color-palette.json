@@ -42,6 +42,14 @@
         "Esquema análogo – cores vizinhas na roda cromática",
         "Esquema complementar – cores opostas",
         "Esquema triádico – 3 cores a intervalos iguais",
+        "Esquema tetrádico – 4 cores a 90°",
+        "Mudança quente – vermelhos, laranjas, amarelos",
+        "Mudança fria – azuis, turquesas, violetas",
+        "Tons de terra – castanhos, olivas, ocres",
+        "Néon – saturação máxima",
+        "Vintage – tons retro dessaturados",
+        "Alto contraste – preto a branco",
+        "Gradiente pôr do sol",
         "Esquema complementar dividido – cor base e 2 vizinhas da oposta",
         "Paleta pastel – tons claros e suaves",
         "Paleta escura – cores profundas para temas escuros",
@@ -119,54 +127,94 @@
     },
     {
       "type": "sectionSteps",
-      "title": "17 tipos de paletas – qual convém ao seu projeto?",
-      "description": "Cada paleta tem um caráter diferente:",
-      "grid": "three",
+      "title": "17 tipos de paletas – qual combina com o seu projeto?",
+      "description": "O gerador cria 17 esquemas cromáticos baseados na teoria das cores. Cada um segue uma lógica diferente:",
+      "grid": "two",
       "items": [
         {
-          "icon": "RiPaletteLine",
-          "title": "Monocromática",
-          "description": "Variações de uma tonalidade em luminosidade e saturação. Elegante, harmoniosa, profissional."
+          "icon": "RiStackLine",
+          "title": "Paleta monocromática",
+          "description": "Vários níveis de luminosidade de uma única tonalidade. As cores transmitem coesão e serenidade. Adequada para relatórios corporativos, sites institucionais e projetos que pedem sobriedade visual."
         },
         {
-          "icon": "RiColorFilterLine",
-          "title": "Análoga",
-          "description": "Cores vizinhas no círculo cromático. Transição suave e natural."
+          "icon": "RiPaletteLine",
+          "title": "Paleta análoga",
+          "description": "Cores vizinhas no círculo cromático (cerca de 30° de distância). Transições suaves sem contraste brusco. Apreciada em ilustrações editoriais, blogs e materiais narrativos."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Paleta complementar",
+          "description": "A cor base e a sua oposta no círculo (180°). Produz o maior contraste visual. Útil para botões de ação, banners promocionais e elementos que precisam de destaque imediato."
+        },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Paleta triádica",
+          "description": "Três cores espaçadas de 120° formando um triângulo equilátero. Combinação vibrante e equilibrada. Funciona bem para identidade de marcas criativas e campanhas publicitárias."
+        },
+        {
+          "icon": "RiCursorLine",
+          "title": "Paleta complementar dividida",
+          "description": "Em vez do complemento direto, usam-se os dois vizinhos deste. O contraste permanece evidente mas menos agressivo. Uma opção segura quando o esquema complementar parece intenso demais."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Paleta pastel",
+          "description": "Saturação reduzida e luminosidade alta produzem tons suaves e delicados. Comum na cosmética, na moda infantil e na confeitaria artesanal."
+        },
+        {
+          "icon": "RiMoonLine",
+          "title": "Paleta escura",
+          "description": "Saturação elevada e luminosidade baixa. Tons profundos e intensos para interfaces em modo escuro, marcas premium e produtos que visam exclusividade."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Paleta tonal",
+          "description": "Uma escala de luminosidade da mesma tonalidade, do muito claro ao muito escuro. Corresponde aos níveis de cor dos design systems (ex.: 50 a 900). Indispensável para construir bibliotecas de componentes UI."
+        },
+        {
+          "icon": "RiContractLeftRightLine",
+          "title": "Paleta minimalista",
+          "description": "Um acento cromático forte rodeado de neutros claros. Estilo típico de páginas de produto e landing pages contemporâneas com bastante espaço em branco."
+        },
+        {
+          "icon": "RiGridLine",
+          "title": "Paleta tetrádica (quadrada)",
+          "description": "Quatro tonalidades a 90° de distância no círculo cromático. Rica e equilibrada – especialmente indicada para dashboards, visualizações de dados e interfaces complexas que exigem muitas cores distintas."
+        },
+        {
+          "icon": "RiFireLine",
+          "title": "Paleta quente",
+          "description": "Tonalidades deslocadas para vermelhos, laranjas e amarelos. Transmite energia, calor e proximidade. Comum na restauração, na hotelaria e em campanhas de marketing dinâmicas."
+        },
+        {
+          "icon": "RiSnowflakeLine",
+          "title": "Paleta fria",
+          "description": "Tonalidades deslocadas para azuis, turquesas e violetas. Comunica calma, profissionalismo e confiança. Presente em fintech, saúde e branding corporativo."
+        },
+        {
+          "icon": "RiSeedlingLine",
+          "title": "Paleta tons de terra",
+          "description": "Castanhos, olivas e ocres pouco saturados inspirados em paisagens naturais. Indicada para marcas biológicas, produtos artesanais e uma estética rústica e autêntica."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Paleta néon",
+          "description": "Cores com saturação máxima e intensidade elétrica. Concebida para marketing arrojado, interfaces de jogos, marcas de vida noturna e designs que exigem atenção imediata."
+        },
+        {
+          "icon": "RiAncientGateLine",
+          "title": "Paleta vintage",
+          "description": "Tons dessaturados e ligeiramente quentes que evocam impressões antigas e fotografia retrô. Ideal para marcas com história, produtos artesanais e uma estética nostálgica."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Complementar",
-          "description": "Cor de base + cor oposta (180°). Contraste máximo para designs dinâmicos."
+          "title": "Paleta alto contraste",
+          "description": "Amplitude de luminosidade extrema do quase preto ao quase branco com a tonalidade base. Excelente para designs acessíveis, hierarquia visual forte e interfaces em conformidade com as WCAG."
         },
         {
-          "icon": "RiMagicLine",
-          "title": "Triádica",
-          "description": "Três cores a 120° de intervalo. Equilibrada com forte contraste visual."
-        },
-        {
-          "icon": "RiSearchLine",
-          "title": "Complementar dividida",
-          "description": "Cor de base + os dois vizinhos do complemento. Contraste mais subtil."
-        },
-        {
-          "icon": "RiPaintBrushLine",
-          "title": "Pastel",
-          "description": "Luminosidade elevada, saturação reduzida. Suave, arejada – ideal para designs amigáveis."
-        },
-        {
-          "icon": "RiSettings3Line",
-          "title": "Escura",
-          "description": "Luminosidade baixa, tons profundos. Profissional – adequada ao modo escuro e marcas premium."
-        },
-        {
-          "icon": "RiRefreshLine",
-          "title": "Tonal (Material Design)",
-          "description": "Luminosidade graduada numa mesma tonalidade. Semelhante ao sistema de cores do Google Material Design."
-        },
-        {
-          "icon": "RiInfinityLine",
-          "title": "Minimalista (Apple)",
-          "description": "Base neutra com acento colorido. Limpa, moderna – inspirada no estilo Apple."
+          "icon": "RiSunLine",
+          "title": "Paleta pôr do sol",
+          "description": "Rotação fluida de tonalidades do quente para o frio, imitando um pôr do sol natural. Perfeita para secções hero, fundos com gradiente e projetos criativos."
         }
       ]
     },
@@ -179,6 +227,15 @@
       "title": "Como funciona o espaço cromático HSL",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">Exemplo: HSL(210, 80%, 50%)</p><div class=\"mt-2 flex items-center gap-3\"><div class=\"h-10 w-10 rounded\" style=\"background-color: hsl(210, 80%, 50%)\"></div><div class=\"text-mid text-sm!\"><p>H = 210° (tonalidade azul)</p><p>S = 80% (intensa)</p><p>L = 50% (luminosidade média)</p></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">Mesma tonalidade, luminosidade diferente</p><div class=\"mt-2 flex gap-1\"><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 90%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 70%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 50%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 30%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 10%)\"></div></div><p class=\"text-light mt-1 text-xs!\">L: 90% → 70% → 50% → 30% → 10%</p></div></div>",
       "html": "<p class=\"text-mid\">Todas as paletas desta ferramenta baseiam-se no espaço cromático HSL (Tonalidade, Saturação, Luminosidade). Contrariamente ao HEX ou RGB, o HSL descreve as cores tal como as percecionamos:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Hue (H)</strong> – a tonalidade no círculo cromático (0°–360°). 0° = vermelho, 120° = verde, 240° = azul.</li><li><strong>Saturation (S)</strong> – a intensidade. 0% = cinzento, 100% = cor plenamente saturada.</li><li><strong>Lightness (L)</strong> – a luminosidade. 0% = preto, 50% = cor normal, 100% = branco.</li></ul><p class=\"text-mid mt-3\">Ao modificar seletivamente estes valores, obtêm-se paletas harmoniosas. As paletas monocromáticas variam apenas L, as análogas apenas H e as complementares invertem H em 180°.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cor no design e cultura portuguesa e brasileira",
+      "html": "<p class=\"text-mid mb-4\">O mundo lusófono tem uma relação rica com a cor:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Azulejo português</strong> — os azulejos azuis e brancos são uma das expressões artísticas mais reconhecíveis de Portugal. Este esquema complementar de alto contraste funciona tanto em fachadas como em interfaces digitais.</li><li><strong>Carnaval brasileiro</strong> — as cores vibrantes do Carnaval (amarelo, verde, roxo, laranja) representam energia e celebração. Marcas brasileiras frequentemente incorporam estas paletas quentes.</li><li><strong>Tradição tropical</strong> — a biodiversidade brasileira inspira paletas de verdes intensos, azuis oceânicos e laranjas solares que são comuns no design gráfico da região.</li></ul>"
     },
     {
       "type": "gap",
@@ -253,33 +310,49 @@
       "items": [
         {
           "question": "Quantas paletas a ferramenta gera?",
-          "answer": "A ferramenta gera 17 paletas diferentes a partir de uma única cor de base: monocromática, análoga, complementar, triádica, complementar dividida, pastel, escura, tonal (Material Design) e minimalista (estilo Apple).",
-          "answerSchemaText": "17 paletas: monocromática, análoga, complementar, triádica, complementar dividida, pastel, escura, tonal, minimalista."
+          "answer": "A ferramenta gera 17 paletas diferentes a partir de uma única cor de base: monocromática, análoga, complementar, triádica, complementar dividida, tetrádica (quadrada), quente, fria, tons de terra, néon, vintage, alto contraste, pôr do sol, pastel, escura, tonal e minimalista.",
+          "answerSchemaText": "17 paletas: monocromática, análoga, complementar, triádica, complementar dividida, tetrádica, quente, fria, tons de terra, néon, vintage, alto contraste, pôr do sol, pastel, escura, tonal, minimalista.",
+          "description": ""
         },
         {
           "question": "O que é uma paleta monocromática?",
           "answer": "Uma paleta monocromática é composta por variações de uma única tonalidade – todas as cores partilham a mesma tonalidade (H no modelo HSL) e variam apenas em luminosidade e saturação. Estas paletas são harmoniosas e particularmente adequadas para designs profissionais.",
-          "answerSchemaText": "Uma paleta de uma única tonalidade com variações de luminosidade e saturação."
+          "answerSchemaText": "Uma paleta de uma única tonalidade com variações de luminosidade e saturação.",
+          "description": ""
         },
         {
           "question": "O que é uma paleta complementar?",
           "answer": "Uma paleta complementar combina a cor de base com o seu complemento – a cor oposta no círculo cromático (desfasamento de 180°). Este contraste é um dos princípios fundamentais da teoria das cores e produz um efeito vivo e dinâmico.",
-          "answerSchemaText": "A cor de base e a cor oposta no círculo cromático (180°)."
+          "answerSchemaText": "A cor de base e a cor oposta no círculo cromático (180°).",
+          "description": ""
         },
         {
           "question": "Posso copiar as cores geradas?",
           "answer": "Sim. Clique numa cor na paleta para copiar o seu código HEX para a área de transferência. Utilize-o diretamente em CSS, Figma, Adobe ou outras ferramentas de design.",
-          "answerSchemaText": "Sim, clique numa cor para copiar o código HEX."
+          "answerSchemaText": "Sim, clique numa cor para copiar o código HEX.",
+          "description": ""
         },
         {
           "question": "O que é o espaço cromático HSL?",
           "answer": "HSL significa Hue (tonalidade), Saturation (saturação) e Lightness (luminosidade). Contrariamente ao RGB, o HSL descreve as cores tal como as percecionamos: a tonalidade determina a cor de base, a saturação a intensidade e a luminosidade indica se a cor é clara ou escura. Todas as paletas desta ferramenta baseiam-se em cálculos HSL.",
-          "answerSchemaText": "HSL = Tonalidade, Saturação, Luminosidade. Um modelo de cor baseado na perceção humana."
+          "answerSchemaText": "HSL = Tonalidade, Saturação, Luminosidade. Um modelo de cor baseado na perceção humana.",
+          "description": ""
         },
         {
           "question": "Qual a diferença entre triádica e complementar dividida?",
           "answer": "Uma paleta triádica utiliza três cores equidistantes no círculo cromático (120° de intervalo). Uma paleta complementar dividida utiliza, em vez do complemento direto, os dois vizinhos do complemento – o que produz um contraste mais subtil.",
-          "answerSchemaText": "Triádica: 3 cores a 120°. Complementar dividida: cor de base + 2 vizinhos do complemento."
+          "answerSchemaText": "Triádica: 3 cores a 120°. Complementar dividida: cor de base + 2 vizinhos do complemento.",
+          "description": ""
+        },
+        {
+          "question": "Qual tipo de paleta é melhor para um site corporativo?",
+          "answer": "Paletas monocromáticas ou tonais funcionam bem para sites corporativos porque oferecem uma hierarquia visual unificada e serena. Use a paleta tonal para construir um sistema completo de fundos, textos, bordas e acentos a partir de uma única cor da marca.",
+          "answerSchemaText": "Monocromática ou tonal para hierarquia unificada."
+        },
+        {
+          "question": "Posso usar as paletas geradas em projetos comerciais?",
+          "answer": "Sim. Pode usar as paletas de cores geradas em qualquer projeto — comercial e não comercial, sem restrições de licença.",
+          "answerSchemaText": "Sim, sem restrições."
         }
       ]
     },
@@ -307,5 +380,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Precisa de uma identidade visual coerente?",
+    "description": "Criamos logótipos, sistemas de cores e materiais corporativos — de cartões de visita a templates para redes sociais.",
+    "btnOne": "Os nossos serviços",
+    "btnOneLink": "/pt/contacto",
+    "btnTwo": "Contacte-nos",
+    "btnTwoLink": "/pt/contacto",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

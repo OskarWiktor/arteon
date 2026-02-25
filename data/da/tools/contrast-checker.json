@@ -321,6 +321,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Tilgængelighedskrav i Danmark",
+      "html": "<p class=\"text-mid mb-4\">Danmark har implementeret EU's webtilgængelighedsdirektiv gennem <strong>Webtilgængelighedsloven (Lov nr. 692 af 8. juni 2018)</strong>. Loven kræver, at alle offentlige organers websteder og mobilapplikationer overholder WCAG 2.1 niveau AA.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Offentlig sektor</strong> — alle statslige, regionale og kommunale websteder skal overholde WCAG 2.1 AA. Digitaliseringsstyrelsen fører tilsyn.</li><li><strong>EU's tilgængelighedslov (EAA)</strong> — fra juni 2025 udvides kravene til den private sektor: webshops, banker, transporttjenester og medieplatforme.</li><li><strong>Skandinavisk kontekst</strong> — Danmark, Sverige og Norge deler en stærk tilgængelighedskultur. Danske virksomheder, der opererer i hele Skandinavien, bør opfylde det strengeste krav (Norges lov dækker også den private sektor).</li></ul><p class=\"text-mid mt-3\">Kontrastforholdet 4,5:1 for normal tekst og 3:1 for stor tekst er lovkrav. Dette værktøj kontrollerer netop disse tærskler.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Hvad kendetegner farvekontrasttesteren?",
       "grid": "two",
@@ -381,6 +390,30 @@
         {
           "question": "Skal jeg opfylde kontrastniveau AAA?",
           "answer": "Ikke altid. Niveau AA (4.5:1 for normal tekst) er det minimum, der kræves af tilgængelighedsforskrifter i EU. Niveau AAA (7:1) giver bedre læsbarhed, men er sværere at opnå. For kritisk indhold – advarsler, sikkerhedsinstruktioner – overvej at opnå AAA."
+        },
+        {
+          "question": "Kræver dansk lov farvekontrast på websites?",
+          "answer": "Ja. Webtilgængelighedsloven (Lov nr. 692/2018) kræver, at offentlige websites overholder WCAG 2.1 AA, inkludert kontrastforhold på 4,5:1 for normal tekst og 3:1 for stor tekst. Fra juni 2025 udvider EU's tilgængelighedslov kravet til den private sektor."
+        },
+        {
+          "question": "Hvad er WCAG-standarden?",
+          "answer": "WCAG (Web Content Accessibility Guidelines) er internationale retningslinjer for webtilgængelighed udviklet af W3C. De definerer bl.a. minimumkontrastværdier, overskriftsstruktur og tastaturunderstøttelse. Danske love refererer til WCAG via den europæiske standard EN 301 549."
+        },
+        {
+          "question": "Hvordan finder jeg farvekoder fra min hjemmeside?",
+          "answer": "I browseren (Chrome, Firefox, Edge) kan du åbne udviklerværktøjer (højreklik > Inspicér). Under fanen Styles kan du se farverne på siden. Alternativt kan browserudvidelser som ColorZilla lade dig vælge farven på ethvert element."
+        },
+        {
+          "question": "Virker dette værktøj til mørk tilstand?",
+          "answer": "Ja. Værktøjet tjekker kontrastforholdet mellem to farver uanset hvilken der er lysere. For mørk tilstand indtaster du en lys tekstfarve og en mørk baggrundsfarve. De samme WCAG-tærskler gælder — 4,5:1 for normal tekst (AA) og 7:1 (AAA)."
+        },
+        {
+          "question": "Hvad er forskellen mellem WCAG-niveau AA og AAA?",
+          "answer": "AA kræver 4,5:1 kontrast for normal tekst og 3:1 for stor tekst — dette er det lovmæssige minimum. AAA kræver 7:1 for normal tekst og 4,5:1 for stor tekst — bedre læsbarhed, men sværere at opnå. For kritisk indhold (advarsler, sikkerhedsinstruktioner) anbefales AAA."
+        },
+        {
+          "question": "Hvilke farvepar på min hjemmeside skal jeg tjekke først?",
+          "answer": "Vigtigst: tekst på hovedbaggrunden, tekst på bannere og farvede sektioner, knapper (tekstfarve og knapbaggrund i forhold til sidebaggrunden), links og ikoner."
         }
       ]
     },
@@ -408,5 +441,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Har du brug for en tilgængelig hjemmeside?",
+    "description": "Vi designer hjemmesider med alle brugere i tankerne — korrekt farvekontrast, læsbar typografi og logisk struktur.",
+    "btnOne": "Se vores tjenester",
+    "btnOneLink": "/da/kontakt",
+    "btnTwo": "Kontakt os",
+    "btnTwoLink": "/da/kontakt",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

@@ -39,6 +39,14 @@
         "Mörk palett – djupa färger för mörka teman",
         "Tonal palett – ljusstyrkenivåer av en färg",
         "Minimalistisk palett – stark accent och neutrala färger",
+        "Tetradiskt schema – 4 farger pa 90°",
+        "Varm forskjutning – rott, orange, gult",
+        "Kall forskjutning – blatt, turkos, lila",
+        "Jordtoner – brunt, oliv, ockra",
+        "Neon – maximal mattnad",
+        "Vintage – avmattade retrotoner",
+        "Hog kontrast – svart till vitt",
+        "Solnedgangsgradient",
         "Grundfärg i HEX-format",
         "Färgväljare för visuellt val",
         "Slumpmässig startfärg",
@@ -163,6 +171,46 @@
           "icon": "RiContractLeftRightLine",
           "title": "Minimalistisk palett",
           "description": "En stark färgaccent och flera mycket ljusa neutrala färger. Hela paletten förblir lugn. Fungerar bra i moderna gränssnitt med mycket vitt utrymme."
+        },
+        {
+          "icon": "RiGridLine",
+          "title": "Tetradisk (kvadrat) palett",
+          "description": "Fyra nyanser med 90° mellanrum pa farhjulet. Rik och balanserad – ideal for komplexa grenssnitt och datavisualisering."
+        },
+        {
+          "icon": "RiFireLine",
+          "title": "Varm palett",
+          "description": "Farger forskjutna mot rott, orange och gult. Framkallar energi och varme."
+        },
+        {
+          "icon": "RiSnowflakeLine",
+          "title": "Kall palett",
+          "description": "Farger forskjutna mot blatt, turkos och lila. Kommunicerar lugn och professionalism."
+        },
+        {
+          "icon": "RiSeedlingLine",
+          "title": "Jordtoner",
+          "description": "Lagt mattade bruna, oliv- och ockratoner inspirerade av naturlandskap."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Neonpalett",
+          "description": "Maximalt mattade farger med elektrisk intensitet."
+        },
+        {
+          "icon": "RiAncientGateLine",
+          "title": "Vintagepalett",
+          "description": "Avmattade, svagt varma toner som paminner om gamla tryck och retrofotografi."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Hogkontrastpalett",
+          "description": "Extremt ljusstyrkeomfang. Utmarkt for tillgangliga designs och WCAG-kompatibla grenssnitt."
+        },
+        {
+          "icon": "RiSunLine",
+          "title": "Solnedgangsgradiont",
+          "description": "Mjuk nyansrotation fran varmt till kallt, som en naturlig solnedgang."
         }
       ]
     },
@@ -175,6 +223,15 @@
       "title": "Vad bygger färgpalettgeneratorn på?",
       "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° på färghjulet</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
       "html": "<p class=\"text-mid\">Alla paletter skapas genom matematisk transformation av grundfärgen i HSL-färgrymden. HSL beskriver en färg med tre värden: hue (H) är positionen på färghjulet (0°–360°), saturation (S) bestämmer färgens styrka och lightness (L) – hur ljus eller mörk färgen är.</p><p class=\"text-mid mt-3\">Komplementära, triadiska och delade komplementära paletter baseras på färghjulets geometri – färger placeras med jämna vinkelintervall, vilket skapar visuell balans. Monokromatiska, pastell- och mörka paletter ändrar bara ljusstyrka och mättnad medan samma kulör bibehålls.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Färg i svensk design och kultur",
+      "html": "<p class=\"text-mid mb-4\">Sverige har en stark designtradition med distinkt färganvändning:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Skandinavisk minimalism</strong> — svenska designmärken använder dämpade, ljusa paletter med begränsade accentfärger. Vitt, ljust trä och milda pasteller dominerar.</li><li><strong>Dalahäst</strong> — den berömda Dalahästen med sin djupröda färg och folkloristiska mönster visar att traditionella färger kan bli kraftfulla varumärkessymboler.</li><li><strong>Nordiskt ljus</strong> — det låga vintervinklade ljuset och midnattssolen påverkar svenska färgval. Högkontrastpaletter är populära för läsbarhet under mörka vintrar.</li></ul>"
     },
     {
       "type": "gap",
@@ -245,27 +302,42 @@
         {
           "question": "I vilket format ska grundfärgen vara?",
           "answer": "Generatorn accepterar färger i HEX-format – förkortad (t.ex. #F50) och full (t.ex. #FF5500). Bredvid textfältet finns en färgväljare som låter dig välja färg visuellt. Genererade paletter visar HEX-kod och HSL-värde för varje färg.",
-          "answerSchemaText": "Generatorn accepterar HEX-färger (#RGB eller #RRGGBB). Varje genererad färg har HEX-kod och HSL-värde."
+          "answerSchemaText": "Generatorn accepterar HEX-färger (#RGB eller #RRGGBB). Varje genererad färg har HEX-kod och HSL-värde.",
+          "description": ""
         },
         {
           "question": "Hur många färger finns i varje palett?",
           "answer": "Varje palett innehåller 4 till 6 färger. Antalet beror på schematypen – monokromatiska och tonala paletter genererar fler nyanser, medan komplementära och triadiska paletter fokuserar på färre kontrasterande färger.",
-          "answerSchemaText": "Varje palett innehåller 4 till 6 färger, beroende på schematypen."
+          "answerSchemaText": "Varje palett innehåller 4 till 6 färger, beroende på schematypen.",
+          "description": ""
         },
         {
           "question": "Vad är HSL-färgrymden och hur läser man den?",
           "answer": "HSL är ett sätt att beskriva färger med tre värden: H (nyans, 0°–360° på färghjulet), S (mättnad, 0%–100%) och L (ljusstyrka, 0%–100%). Generatorn visar HSL-värden bredvid varje färg, vilket gör det lättare att förstå hur färgerna i paletten skiljer sig – t.ex. ändrar en monokromatisk palett bara ljusstyrkan (L), medan nyansen (H) förblir densamma.",
-          "answerSchemaText": "HSL beskriver färger via nyans (H), mättnad (S) och ljusstyrka (L). Generatorn visar dessa värden bredvid varje färg i paletten."
+          "answerSchemaText": "HSL beskriver färger via nyans (H), mättnad (S) och ljusstyrka (L). Generatorn visar dessa värden bredvid varje färg i paletten.",
+          "description": ""
         },
         {
           "question": "Kan jag använda genererade paletter kommersiellt?",
           "answer": "Ja. Du kan använda genererade färgpaletter i valfritt projekt – kommersiellt och icke-kommersiellt, utan licensbegränsningar.",
-          "answerSchemaText": "Ja, genererade paletter kan användas utan begränsningar i kommersiella och icke-kommersiella projekt."
+          "answerSchemaText": "Ja, genererade paletter kan användas utan begränsningar i kommersiella och icke-kommersiella projekt.",
+          "description": ""
         },
         {
           "question": "Kräver färgpalettgeneratorn inloggning eller betalning?",
           "answer": "Generatorn är helt gratis och kräver ingen inloggning eller registrering. Färger genereras lokalt i webbläsaren – ingen data skickas till externa servrar.",
-          "answerSchemaText": "Generatorn är gratis, kräver ingen inloggning. Färger genereras lokalt i webbläsaren."
+          "answerSchemaText": "Generatorn är gratis, kräver ingen inloggning. Färger genereras lokalt i webbläsaren.",
+          "description": ""
+        },
+        {
+          "question": "Vilken paletttyp är bäst för en företagswebbplats?",
+          "answer": "Monokromatiska eller tonala paletter fungerar bra för företagssajter eftersom de ger en enhetlig, lugn visuell hierarki. Använd den tonala paletten för att bygga ett komplett system av bakgrund, text, ramar och accentfärger från en enda varumärkesfärg.",
+          "answerSchemaText": "Monokromatisk eller tonal för enhetlig hierarki."
+        },
+        {
+          "question": "Kan jag använda de genererade paletterna kommersiellt?",
+          "answer": "Ja. Du kan använda de genererade färgpaletterna i vilket projekt som helst — kommersiellt och icke-kommersiellt, utan licensbegränsningar.",
+          "answerSchemaText": "Ja, utan begränsningar."
         }
       ]
     },
@@ -293,5 +365,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Behöver du en enhetlig visuell identitet?",
+    "description": "Vi designar logotyper, färgsystem och varumärkesmaterial — från visitkort till mallar för sociala medier.",
+    "btnOne": "Våra tjänster",
+    "btnOneLink": "/sv/kontakt",
+    "btnTwo": "Kontakta oss",
+    "btnTwoLink": "/sv/kontakt",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

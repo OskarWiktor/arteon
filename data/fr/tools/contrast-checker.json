@@ -226,21 +226,21 @@
           }
         },
         {
-          "name": "Légalement obligatoire (directive UE)",
+          "name": "Obligatoire par le RGAA 4.1 (secteur public + grandes entreprises)",
           "values": {
             "aa": true,
             "aaa": false
           }
         },
         {
-          "name": "Requis par ADA / Section 508 (États-Unis)",
+          "name": "Obligatoire par l'Acte européen d'accessibilité (secteur privé dès VI 2025)",
           "values": {
             "aa": true,
             "aaa": false
           }
         },
         {
-          "name": "Requis par UK Equality Act 2010",
+          "name": "Obligatoire par la directive UE 2016/2102 (secteur public)",
           "values": {
             "aa": true,
             "aaa": false
@@ -314,6 +314,24 @@
       "type": "sectionInfo",
       "title": "Lisibilité des couleurs pour les personnes daltoniennes",
       "html": "<p class=\"text-mid mb-4\">Le daltonisme est un trouble de la perception des couleurs qui touche environ 8 % des hommes et 0,5 % des femmes. Les personnes daltoniennes peuvent avoir du mal à distinguer certaines paires de couleurs, même si le contraste de luminosité est suffisant.</p><p class=\"text-mid mb-4\">Types les plus courants de daltonisme :</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deutéranopie</strong> – difficulté à distinguer le vert du rouge (forme la plus courante)</li><li><strong>Protanopie</strong> – difficulté à percevoir le rouge</li><li><strong>Tritanopie</strong> – difficulté à percevoir le bleu et le jaune (rare)</li></ul><p class=\"text-mid mt-3\">Cet outil vérifie le contraste de luminosité, qui est important pour tous les utilisateurs. Cependant, lors de la conception, il convient d'éviter les combinaisons de couleurs problématiques (par ex. texte rouge sur fond vert) et de ne pas se fier uniquement à la couleur pour transmettre de l'information – utilisez aussi des formes, des icônes et du texte.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Obligations légales d'accessibilité en France, Belgique et Suisse",
+      "html": "<p class=\"text-mid mb-4\">La France dispose d'un cadre réglementaire parmi les plus stricts d'Europe en matière d'accessibilité numérique :</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>France — RGAA 4.1</strong> (Référentiel Général d'Amélioration de l'Accessibilité) : basé sur les WCAG 2.1 AA, il s'applique aux administrations publiques et aux entreprises dont le chiffre d'affaires dépasse 250 millions d'euros. Les amendes atteignent 50 000 € par infraction.</li><li><strong>Loi Européenne sur l'Accessibilité (EAA)</strong> — depuis juin 2025, les obligations s'étendent au secteur privé : e-commerce, banques, transports et plateformes médias.</li><li><strong>Belgique</strong> — le Bestuursdecreet (Flandre) et les équivalents wallons/bruxellois imposent WCAG 2.1 AA aux sites publics.</li><li><strong>Suisse</strong> — la LHand (Loi sur l'égalité pour les handicapés) couvre l'administration fédérale. La norme eCH-0059 recommande WCAG 2.1 AA.</li></ul><p class=\"text-mid mt-3\">Le ratio de contraste de 4,5:1 pour le texte courant et 3:1 pour le grand texte est requis par l'ensemble de ces réglementations.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Législation française sur le contraste des couleurs et l'accessibilité numérique",
+      "html": "<p class=\"text-mid mb-4\">En France, le contraste des couleurs est une <strong>obligation légale</strong>, avec des sanctions financières pouvant atteindre 50 000 € par service non conforme.</p><h3 class=\"h5 mb-2 mt-4\">RGAA 4.1 (Référentiel Général d'Amélioration de l'Accessibilité)</h3><p class=\"text-mid mb-4\">Le RGAA est le référentiel français d'accessibilité numérique, basé sur les WCAG 2.1 niveau AA. Il s'applique aux services publics et aux entreprises réalisant un chiffre d'affaires supérieur à 250 millions d'euros. Les critères 3.2 et 3.3 du RGAA portent spécifiquement sur le contraste des couleurs : 4,5:1 pour le texte normal et 3:1 pour le texte agrandi.</p><h3 class=\"h5 mb-2\">Loi pour une République numérique (2016)</h3><p class=\"text-mid mb-4\">Cette loi étend les obligations d'accessibilité aux organismes publics et aux délégataires de service public. Elle impose la publication d'une déclaration d'accessibilité et d'un schéma pluriannuel. Le défaut de conformité peut entraîner une sanction de <strong>50 000 € par service</strong>.</p><h3 class=\"h5 mb-2\">Acte européen d'accessibilité (2019/882)</h3><p class=\"text-mid mb-4\">À partir du <strong>28 juin 2025</strong>, le secteur privé est également concerné : commerce en ligne, banque, transport, livres numériques et bornes libre-service. Les entreprises françaises vendant en ligne devront respecter WCAG 2.1 AA.</p><h3 class=\"h5 mb-2\">Belgique et Suisse francophone</h3><p class=\"text-mid\">En Belgique, le Bestuursdecreet (décret de gouvernance) impose WCAG 2.1 AA aux services publics flamands et wallons. En Suisse, la norme eCH-0059 et la Loi fédérale sur l'égalité pour les handicapés (LHand) encadrent l'accessibilité numérique du secteur public.</p>"
     },
     {
       "type": "gap",
@@ -399,6 +417,37 @@
           "question": "Quelles paires de couleurs de mon site vérifier en priorité ?",
           "answer": "Les plus importantes : le texte sur le fond principal, le texte sur les bannières et sections colorées, les boutons (couleur du texte et fond du bouton par rapport au fond de la page), les liens et les icônes. Portez une attention particulière aux éléments qui apparaissent sur des fonds différents selon les sections.",
           "answerSchemaText": "Vérifiez d'abord le texte sur le fond principal, les bannières, les boutons, les liens et les icônes."
+        },
+        {
+          "question": "Le contraste des couleurs est-il légalement obligatoire en France ?",
+          "answer": "Oui. Le RGAA 4.1 impose aux services publics et aux grandes entreprises (CA > 250 M€) de respecter WCAG 2.1 niveau AA, incluant un contraste minimum de 4,5:1 pour le texte normal. Le non-respect peut entraîner une amende de 50 000 € par service. À partir de juin 2025, l'Acte européen d'accessibilité étend ces obligations au secteur privé.",
+          "answerSchemaText": "Oui. RGAA impose WCAG 2.1 AA. Amende jusqu'à 50 000 €. EAA étend au privé dès 2025."
+        },
+        {
+          "question": "Qu'est-ce que le RGAA et comment concerne-t-il le contraste ?",
+          "answer": "Le RGAA (Référentiel Général d'Amélioration de l'Accessibilité) est le référentiel français basé sur WCAG 2.1. Ses critères 3.2 et 3.3 portent spécifiquement sur le contraste : 4,5:1 pour le texte normal et 3:1 pour le texte agrandi et les composants d'interface. Chaque page publique doit afficher une déclaration d'accessibilité mentionnant le niveau de conformité.",
+          "answerSchemaText": "Référentiel français basé sur WCAG 2.1. Critères 3.2/3.3 : 4,5:1 texte normal, 3:1 texte agrandi."
+        },
+        {
+          "question": "Cet outil fonctionne-t-il pour les designs en mode sombre ?",
+          "answer": "Oui. L'outil vérifie le rapport de contraste entre deux couleurs quelconques, quelle que soit celle qui est la plus claire. Pour un mode sombre, saisissez une couleur de texte claire et une couleur de fond foncée. Les mêmes seuils WCAG s'appliquent : 4,5:1 pour le texte normal (AA) et 7:1 (AAA).",
+          "answerSchemaText": "Oui. Mêmes seuils WCAG pour le mode sombre."
+        },
+        {
+          "question": "Le RGAA impose-t-il un contraste de couleur minimum ?",
+          "answer": "Oui. Le RGAA 4.1 exige un ratio de contraste de 4,5:1 pour le texte courant et 3:1 pour le grand texte, conformément aux WCAG 2.1 AA. Le non-respect peut entraîner une amende pouvant atteindre 50 000 € par infraction."
+        },
+        {
+          "question": "Mon site belge ou suisse est-il aussi concerné ?",
+          "answer": "Oui. En Belgique, le Bestuursdecreet (Flandre) et les décrets wallons/bruxellois imposent WCAG 2.1 AA aux sites publics. En Suisse, la LHand couvre l'administration fédérale et la norme eCH-0059 recommande WCAG 2.1 AA. L'EAA étend les obligations au privé depuis juin 2025."
+        },
+        {
+          "question": "Comment tester le contraste d'un texte sur une image ?",
+          "answer": "Identifiez la zone la plus claire de l'image où le texte apparaît et testez cette couleur contre votre couleur de texte. Pour garantir la lisibilité, ajoutez un fond semi-transparent ou une ombre derrière le texte."
+        },
+        {
+          "question": "Quelle est la couleur grise minimale sur fond blanc ?",
+          "answer": "Le gris le plus foncé qui passe WCAG AA sur blanc pur (#ffffff) est #767676 avec un ratio de 4,54:1. Les gris plus clairs comme #999999 (2,85:1) échouent. Pour AAA (7:1), il faut au moins #595959."
         }
       ]
     },
@@ -426,5 +475,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Besoin d'un site web accessible ?",
+    "description": "Nous concevons des sites pour tous les utilisateurs — contraste de couleurs adapté, typographie lisible et structure logique. La loi RGAA impose l'accessibilité numérique.",
+    "btnOne": "Nos services",
+    "btnOneLink": "/fr/contact",
+    "btnTwo": "Nous contacter",
+    "btnTwoLink": "/fr/contact",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

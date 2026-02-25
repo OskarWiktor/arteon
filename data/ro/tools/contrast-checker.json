@@ -324,6 +324,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Cerințe de accesibilitate în România",
+      "html": "<p class=\"text-mid mb-4\">România a transpus directiva europeană privind accesibilitatea web prin <strong>OUG 112/2018</strong>, ulterior modificată prin Legea 198/2019.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Sectorul public</strong> — site-urile instituțiilor publice, autorităților locale și entităților finanțate din fonduri publice trebuie să respecte EN 301 549, care face referire la WCAG 2.1 nivel AA.</li><li><strong>ANCOM</strong> — Autoritatea Națională pentru Administrare și Reglementare în Comunicații monitorizează conformitatea.</li><li><strong>Actul European de Accesibilitate (EAA)</strong> — din iunie 2025, obligațiile se extind la sectorul privat: magazine online, servicii bancare, transport și platforme media.</li><li><strong>Piața digitală emergentă</strong> — România are una dintre cele mai rapide creșteri de digitalizare din UE, ceea ce face accesibilitatea deosebit de importantă pe măsură ce tot mai multe servicii se mută online.</li></ul><p class=\"text-mid mt-3\">Raportul de contrast de 4,5:1 pentru text normal și 3:1 pentru text mare este cerut de toate reglementările menționate.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Ce face special acest verificator de contrast?",
       "grid": "two",
@@ -395,6 +404,18 @@
         {
           "question": "Ce perechi de culori de pe site-ul meu ar trebui să verific mai întâi?",
           "answer": "Cele mai importante: textul pe fundalul principal, textul pe bannere și secțiuni colorate, butoanele (culoarea textului și fundalul butonului în raport cu fundalul paginii), linkurile și pictogramele. Acordați atenție specială elementelor care apar pe fundaluri diferite în funcție de secțiune."
+        },
+        {
+          "question": "Legislația română cere contrast de culori pe site-uri?",
+          "answer": "Da. OUG 112/2018 obligă site-urile instituțiilor publice să respecte EN 301 549, care face referire la WCAG 2.1 nivel AA. Aceasta include un raport de contrast de 4,5:1 pentru text normal și 3:1 pentru text mare. Din iunie 2025, EAA extinde obligația la sectorul privat."
+        },
+        {
+          "question": "Cum găsesc codurile de culoare de pe site-ul meu?",
+          "answer": "În browser (Chrome, Firefox, Edge) deschideți instrumentele de dezvoltare (clic dreapta > Inspectare). În fila Stiluri puteți vedea culorile paginii. Alternativ, extensii precum ColorZilla permit selectarea culorii oricărui element."
+        },
+        {
+          "question": "Funcționează acest instrument pentru design în mod întunecat?",
+          "answer": "Da. Instrumentul verifică raportul de contrast între oricare două culori, indiferent care este mai deschisă. Pentru modul întunecat, introduceți o culoare de text deschisă și un fundal întunecat. Aceleași praguri WCAG se aplică."
         }
       ]
     },
@@ -422,5 +443,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Aveți nevoie de un site accesibil?",
+    "description": "Creăm site-uri web gândite pentru toți utilizatorii — contrast de culori adecvat, tipografie lizibilă și structură logică.",
+    "btnOne": "Serviciile noastre",
+    "btnOneLink": "/ro/contact",
+    "btnTwo": "Contactați-ne",
+    "btnTwoLink": "/ro/contact",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

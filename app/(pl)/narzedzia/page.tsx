@@ -250,7 +250,7 @@ export default function ToolsIndexPage() {
               icon: <RiAppsLine className="h-8 w-8" />,
               title: 'Generator favicon i ikon dla strony',
               topImageAlt: 'Generator favicon i ikon dla strony Arteon',
-              topImageSrc: '/assets/tools/free-favicon-generator/darmowy-generator-favicon-ico-pl.webp',
+              topImageSrc: '/assets/tools/favicon-generator/darmowy-generator-favicon-ico-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -323,7 +323,7 @@ export default function ToolsIndexPage() {
               icon: <RiMailLine className="h-8 w-8" />,
               title: 'Darmowy generator stopki mailowej HTML',
               topImageAlt: 'Darmowy generator stopki mailowej HTML Arteon',
-              topImageSrc: '/assets/tools/free-email-signature-generator/darmowy-generator-stopki-mailowej-pl.webp',
+              topImageSrc: '/assets/tools/free-html-email-signature-generator/darmowy-generator-stopki-mailowej-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Zbuduj profesjonalny podpis e-mail w kilka minut. Wpisz dane, wybierz kolory i skopiuj gotowy kod HTML do Gmaila, Outlooka i innych klientów pocztowych.</p>
@@ -349,7 +349,7 @@ export default function ToolsIndexPage() {
               icon: <RiQrCodeLine className="h-8 w-8" />,
               title: 'Darmowy generator kodów QR',
               topImageAlt: 'Darmowy generator kodów QR Arteon',
-              topImageSrc: '/assets/tools/free-qr-code-generator/darmowy-generator-kodow-qr-pl.webp',
+              topImageSrc: '/assets/tools/qr-code-generator/darmowy-generator-kodow-qr-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Stwórz kod QR do strony, wizytówki vCard, menu restauracji lub ulotki. Eksport PNG i SVG, bez logowania, bez limitu.</p>

@@ -230,21 +230,21 @@
           }
         },
         {
-          "name": "Gesetzlich vorgeschrieben (EU-Richtlinie)",
+          "name": "Vorgeschrieben durch BITV 2.0 (Bundesbehörden)",
           "values": {
             "aa": true,
             "aaa": false
           }
         },
         {
-          "name": "Erforderlich nach US ADA / Section 508",
+          "name": "Vorgeschrieben durch BFSG (Privatsektor ab VI 2025)",
           "values": {
             "aa": true,
             "aaa": false
           }
         },
         {
-          "name": "Erforderlich nach UK Equality Act 2010",
+          "name": "Vorgeschrieben durch EU-Richtlinie 2016/2102",
           "values": {
             "aa": true,
             "aaa": false
@@ -318,6 +318,15 @@
       "type": "sectionInfo",
       "title": "Farblesbarkeit für Farbenblinde",
       "html": "<p class=\"text-mid\">Etwa 8 % der Männer und 0,5 % der Frauen haben eine Farbsehschwäche. Die häufigste Form ist die Rot-Grün-Schwäche (Deuteranomalie), bei der rote und grüne Töne schwer zu unterscheiden sind.</p><p class=\"text-mid mt-3\">Der WCAG-Kontrasttest prüft nur den Helligkeitsunterschied, nicht die Farbunterscheidung. Beachten Sie daher zusätzlich: Verwenden Sie nie nur Farbe allein, um Informationen zu vermitteln (z.&nbsp;B. &quot;rote Felder sind Pflichtfelder&quot;). Ergänzen Sie Farbe stets durch Beschriftungen, Muster oder Symbole.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Deutsche Barrierefreiheitsgesetze und Farbkontrast",
+      "html": "<p class=\"text-mid mb-4\">In Deutschland ist Farbkontrast nicht nur eine Empfehlung - es ist eine <strong>gesetzliche Pflicht</strong>, die sich ab 2025 deutlich verschärft.</p><h3 class=\"h5 mb-2 mt-4\">BITV 2.0 (Barrierefreie-Informationstechnik-Verordnung)</h3><p class=\"text-mid mb-4\">Verpflichtet alle Bundesbehörden zur Einhaltung von WCAG 2.1 Level AA. Das bedeutet ein Mindestkontrastverhältnis von 4,5:1 für normalen Text und 3:1 für großen Text und UI-Elemente. Die Überwachungsstelle des Bundes für Barrierefreiheit von Informationstechnik prüft die Einhaltung.</p><h3 class=\"h5 mb-2\">BFSG (Barrierefreiheitsstärkungsgesetz)</h3><p class=\"text-mid mb-4\">Ab dem <strong>28. Juni 2025</strong> müssen auch private Unternehmen digitale Produkte und Dienstleistungen barrierefrei gestalten. Das BFSG setzt den Europäischen Barrierefreiheitsakt (EAA) in deutsches Recht um. Betroffen sind Webshops, Banking-Apps, E-Books, Ticketsysteme und Selbstbedienungsterminals. Verstöße können Bußgelder nach sich ziehen.</p><h3 class=\"h5 mb-2\">BGG (Behindertengleichstellungsgesetz)</h3><p class=\"text-mid mb-4\">Sichert die digitale Barrierefreiheit für Menschen mit Behinderungen im öffentlichen Sektor. Zusammen mit der BITV bildet es die Grundlage der deutschen Barrierefreiheitsanforderungen.</p><h3 class=\"h5 mb-2\">DACH-Region: Österreich und Schweiz</h3><p class=\"text-mid\">In Österreich gilt das Web-Zugänglichkeits-Gesetz (WZG), das ebenfalls WCAG 2.1 AA vorschreibt. Die Schweiz setzt auf die eCH-Standards und das Behindertengleichstellungsgesetz (BehiG). Für Unternehmen im DACH-Raum bedeutet dies: WCAG 2.1 AA ist in allen drei Ländern der verbindliche Mindeststandard.</p>"
     },
     {
       "type": "gap",
@@ -403,6 +412,33 @@
           "question": "Welche Farbpaare auf meiner Website sollte ich zuerst prüfen?",
           "answer": "Am wichtigsten: Text auf dem Haupthintergrund, Text auf Bannern und farbigen Abschnitten, Buttons (Textfarbe und Button-Hintergrund gegenüber dem Seitenhintergrund), Links und Icons. Achten Sie besonders auf Elemente, die je nach Abschnitt auf unterschiedlichen Hintergründen erscheinen.",
           "answerSchemaText": "Zuerst prüfen: Text auf Haupthintergrund, Banner, Buttons, Links und Icons."
+        },
+        {
+          "question": "Ist Farbkontrast in Deutschland gesetzlich vorgeschrieben?",
+          "answer": "Ja. Die BITV 2.0 verpflichtet Bundesbehörden zur Einhaltung von WCAG 2.1 Level AA - das bedeutet mindestens 4,5:1 für normalen Text. Ab dem 28. Juni 2025 erweitert das Barrierefreiheitsstärkungsgesetz (BFSG) diese Pflicht auf private Unternehmen: Webshops, Banking-Apps, E-Books und Ticketsysteme müssen barrierefrei sein.",
+          "answerSchemaText": "Ja. BITV 2.0 für Bundesbehörden, BFSG ab Juni 2025 für den Privatsektor."
+        },
+        {
+          "question": "Was ändert das BFSG ab Juni 2025 für mein Unternehmen?",
+          "answer": "Das Barrierefreiheitsstärkungsgesetz setzt den Europäischen Barrierefreiheitsakt in deutsches Recht um. Ab dem 28. Juni 2025 müssen private Unternehmen, die digitale Produkte oder Dienstleistungen anbieten, WCAG 2.1 Level AA erfüllen. Das betrifft Kontrast, Schriftgrößen, Tastaturnavigation und andere Barrierefreiheitsaspekte. Kleinstunternehmen (unter 10 Mitarbeiter, unter 2 Mio. € Umsatz) können unter bestimmten Bedingungen ausgenommen sein.",
+          "answerSchemaText": "BFSG verpflichtet ab Juni 2025 private Unternehmen zu WCAG 2.1 AA."
+        },
+        {
+          "question": "Funktioniert das Tool auch für Dark-Mode-Designs?",
+          "answer": "Ja. Das Tool prüft das Kontrastverhältnis zwischen beliebigen zwei Farben, unabhängig davon, welche heller ist. Für Dark Mode geben Sie eine helle Textfarbe und eine dunkle Hintergrundfarbe ein. Die gleichen WCAG-Schwellenwerte gelten: 4,5:1 für normalen Text (AA) und 7:1 (AAA).",
+          "answerSchemaText": "Ja. Gleiche WCAG-Schwellenwerte gelten für Dark Mode."
+        },
+        {
+          "question": "Wie wirkt sich das BFSG auf meine Website aus?",
+          "answer": "Das Barrierefreiheitsstärkungsgesetz (BFSG) ist seit Juni 2025 in Kraft. Es verpflichtet Anbieter von Produkten und Dienstleistungen im Online-Handel zur digitalen Barrierefreiheit. Die referenzierte Norm EN 301 549 verweist auf WCAG 2.1 AA — einschließlich der Kontrast-Schwellenwerte 4,5:1 und 3:1, die dieses Tool prüft."
+        },
+        {
+          "question": "Muss ich als Schweizer Unternehmen die gleichen Standards erfüllen?",
+          "answer": "Ja. Das Schweizer BehiG (Behindertengleichstellungsgesetz) gilt für die Bundesverwaltung und bundesnahe Betriebe. Die eCH-Standards empfehlen WCAG 2.1 AA. Wenn Sie Kunden in der EU bedienen, gelten zusätzlich die EU-Vorschriften (EAA ab Juni 2025)."
+        },
+        {
+          "question": "Was ist der minimale sichere Grauton auf weißem Hintergrund?",
+          "answer": "Der dunkelste Grauton, der WCAG AA auf reinem Weiß (#ffffff) besteht, ist #767676 mit einem Verhältnis von 4,54:1. Hellere Töne wie #999999 (2,85:1) fallen durch. Für AAA (7:1) benötigen Sie mindestens #595959."
         }
       ]
     },
@@ -430,5 +466,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Brauchen Sie eine barrierefreie Website?",
+    "description": "Wir erstellen Websites für alle Nutzer — mit korrektem Farbkontrast, lesbarer Typografie und logischer Struktur. Ab Juni 2025 verlangt das BFSG digitale Barrierefreiheit.",
+    "btnOne": "Unsere Leistungen",
+    "btnOneLink": "/de/kontakt",
+    "btnTwo": "Kontakt aufnehmen",
+    "btnTwoLink": "/de/kontakt",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

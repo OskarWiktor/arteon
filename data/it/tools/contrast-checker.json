@@ -320,6 +320,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Requisiti di accessibilità in Italia",
+      "html": "<p class=\"text-mid mb-4\">L’Italia ha una delle legislazioni sull’accessibilità digitale più consolidate d’Europa:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Legge Stanca (L. 4/2004)</strong> — impone l’accessibilità dei siti web della pubblica amministrazione secondo le linee guida AgID, basate sulle WCAG 2.1 AA.</li><li><strong>Decreto Legislativo 106/2018</strong> — recepisce la direttiva UE sull’accessibilità web, estendendo gli obblighi a enti pubblici e concessionari di servizi pubblici.</li><li><strong>Obbligo per il settore privato (2025)</strong> — dal giugno 2025 le aziende con fatturato superiore a 500 milioni di euro devono rendere accessibili i propri servizi digitali. L’AgID è l’organismo di vigilanza.</li><li><strong>Legge Europea sull’Accessibilità (EAA)</strong> — estende ulteriormente gli obblighi a e-commerce, servizi bancari, trasporti e piattaforme multimediali.</li></ul><p class=\"text-mid mt-3\">Il rapporto di contrasto minimo di 4,5:1 per il testo normale e 3:1 per il testo grande è richiesto da tutte le normative citate.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Cosa rende speciale questo verificatore?",
       "grid": "two",
@@ -399,6 +408,22 @@
           "question": "Quali coppie di colori del mio sito verificare per prime?",
           "answer": "Le più importanti: il testo sullo sfondo principale, il testo sui banner e le sezioni colorate, i pulsanti (colore del testo e sfondo del pulsante rispetto allo sfondo della pagina), i link e le icone. Presta particolare attenzione agli elementi che appaiono su sfondi diversi nelle varie sezioni.",
           "answerSchemaText": "Verifica prima il testo sullo sfondo principale, i banner, i pulsanti, i link e le icone."
+        },
+        {
+          "question": "La Legge Stanca impone un contrasto minimo?",
+          "answer": "Sì. La Legge 4/2004 e le linee guida AgID richiedono che i siti web della pubblica amministrazione rispettino le WCAG 2.1 AA, che includono un rapporto di contrasto minimo di 4,5:1 per il testo normale e 3:1 per il testo grande."
+        },
+        {
+          "question": "Dal 2025 anche i siti privati devono essere accessibili?",
+          "answer": "Sì. La Legge Europea sull'Accessibilità (EAA), in vigore da giugno 2025, estende gli obblighi al settore privato: e-commerce, servizi bancari, trasporti e piattaforme multimediali. In Italia, le aziende con fatturato superiore a 500 milioni di euro sono già soggette all'obbligo."
+        },
+        {
+          "question": "Come trovo i codici colore del mio sito web?",
+          "answer": "Nel browser (Chrome, Firefox, Edge) apri gli strumenti di sviluppo (clic destro > Ispeziona). Nella scheda Stili puoi vedere i colori della pagina. In alternativa, estensioni come ColorZilla permettono di selezionare il colore di qualsiasi elemento."
+        },
+        {
+          "question": "Funziona per il design in modalità scura?",
+          "answer": "Sì. Lo strumento verifica il rapporto di contrasto tra due colori qualsiasi, indipendentemente da quale sia più chiaro. Per la modalità scura, inserisci un colore di testo chiaro e uno sfondo scuro. Valgono le stesse soglie WCAG."
         }
       ]
     },
@@ -426,5 +451,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Hai bisogno di un sito web accessibile?",
+    "description": "Progettiamo siti web pensati per tutti gli utenti — contrasto colori adeguato, tipografia leggibile e struttura logica. La Legge Stanca impone l'accessibilità digitale.",
+    "btnOne": "I nostri servizi",
+    "btnOneLink": "/it/contatti",
+    "btnTwo": "Contattaci",
+    "btnTwoLink": "/it/contatti",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

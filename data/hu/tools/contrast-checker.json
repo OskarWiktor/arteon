@@ -324,6 +324,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Akadálymentesítési követelmények Magyarországon",
+      "html": "<p class=\"text-mid mb-4\">Magyarország az EU webes akadálymentesítési irányelvét az <strong>1998. évi XXVI. törvény (Akadálymentesítési törvény)</strong> módosításával ültette át. A digitális akadálymentesítés szabályozása azonban korlátozott a fizikai akadálymentesítéshez képest.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Közszféra</strong> — a 2018/1784. Korm. rendelet előírja az EN 301 549 szabvány teljesítését, amely a WCAG 2.1 AA szintre hivatkozik. Az állami, önkormányzati és közintézményi weboldalakra vonatkozik.</li><li><strong>Európai Akadálymentesítési Irányelv (EAA)</strong> — 2025 júniusától a követelmények kiterjednek a magánszektorra: webáruházak, banki szolgáltatások, közlekedés és médiaplatformok.</li><li><strong>Magyar sajátosság</strong> — a digitális akadálymentesítés felügyelete egyelőre kevésbé kidolgozott, mint Nyugat-Európában, de az EAA hatálybalépése várhatóan felgyorsítja a fejlődést.</li></ul><p class=\"text-mid mt-3\">A kontraszt arány 4,5:1 a normál szöveghez és 3:1 a nagy szöveghez az összes fenti előírás által megkövetelt érték.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Mi teszi különlegessé ezt a kontraszt ellenőrzőt?",
       "grid": "two",
@@ -395,6 +404,18 @@
         {
           "question": "Melyik színpárokat ellenőrizzem először a weboldalamon?",
           "answer": "A legfontosabbak: szöveg a fő háttéren, szöveg bannereken és színes szekciókon, gombok (szövegszín és gombháttér az oldal hátteréhez képest), linkek és ikonok. Különös figyelmet fordítson azokra az elemekre, amelyek különböző háttereken jelennek meg a szekciótól függően."
+        },
+        {
+          "question": "A magyar jog megköveteli a színkontrasztot a weboldalakon?",
+          "answer": "Igen. A 2018/1784. Korm. rendelet előírja az EN 301 549 szabvány teljesítését a közszféra weboldalai számára, amely a WCAG 2.1 AA szintre hivatkozik. Ez magában foglalja a 4,5:1 kontrasztarányt normál szöveghez és 3:1-et nagy szöveghez. Az Európai Akadálymentesítési Irányelv (EAA) 2025 júniusától a magánszektorra is kiterjeszti a kötelezettséget."
+        },
+        {
+          "question": "Hogyan találom meg a weboldalam színkódjait?",
+          "answer": "A böngészőben (Chrome, Firefox, Edge) nyissa meg a fejlesztői eszközöket (jobb klikk > Vizsgálat). A Stílusok fülön láthatja az oldalon használt színeket. Alternatívaként a ColorZilla bővítmény lehetővé teszi bármely elem színének kiválasztását."
+        },
+        {
+          "question": "Működik ez az eszköz sötét módú tervezéshez?",
+          "answer": "Igen. Az eszköz bármely két szín kontrasztarányát ellenőrzi, függetlenül attól, melyik a világosabb. Sötét módhoz adjon meg világos szövegszínt és sötét háttérszínt. Ugyanazok a WCAG küszöbértékek érvényesek."
         }
       ]
     },
@@ -422,5 +443,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Akadálymentes weboldalt keres?",
+    "description": "Minden felhasználóra gondolva tervezzük a weboldalakat — megfelelő színkontraszt, olvasható tipográfia és logikus struktúra.",
+    "btnOne": "Szolgáltatásaink",
+    "btnOneLink": "/hu/kapcsolat",
+    "btnTwo": "Kapcsolat",
+    "btnTwoLink": "/hu/kapcsolat",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

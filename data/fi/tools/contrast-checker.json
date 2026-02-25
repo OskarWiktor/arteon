@@ -321,6 +321,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Saavutettavuusvaatimukset Suomessa",
+      "html": "<p class=\"text-mid mb-4\">Suomi on implementoinut EU:n saavutettavuusdirektiivin <strong>Lailla digitaalisten palvelujen tarjoamisesta (306/2019)</strong>. Laki edellyttää julkisen sektorin verkkopalveluilta WCAG 2.1 AA -tason noudattamista.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Julkinen sektori</strong> — valtion, kuntien ja hyvinvointialueiden verkkopalvelujen on täytettävä WCAG 2.1 AA. Etelä-Suomen aluehallintovirasto (AVI) valvoo noudattamista.</li><li><strong>EU:n esteettömyysdirektiivi (EAA)</strong> — kesäkuusta 2025 alkaen vaatimukset laajenevat yksityiselle sektorille: verkkokaupat, pankit, liikennepalvelut ja mediapalvelut.</li><li><strong>Suomalainen erityispiirre</strong> — Suomen digitaalinen julkishallinto on Euroopan edistyneimpiä. Suurin osa viranomaispalveluista toimii verkossa, mikä tekee saavutettavuudesta erityisen tärkeää.</li></ul><p class=\"text-mid mt-3\">Kontrastisuhde 4,5:1 tavalliselle tekstille ja 3:1 suurelle tekstille on lakisääteinen vaatimus.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Mikä erottaa värikontrastin tarkistuksen?",
       "grid": "two",
@@ -381,6 +390,30 @@
         {
           "question": "Pitääkö saavuttaa kontastitaso AAA?",
           "answer": "Ei aina. Taso AA (4.5:1 normaalille tekstille) on vähimmäisvaatimus EU:n saavutettavuussäädösten mukaan. Taso AAA (7:1) tarjoaa paremman luettavuuden, mutta on vaikeampi saavuttaa. Kriittiselle sisällölle – varoitukset, turvallisuusohjeet – kannattaa pyrkiä AAA-tasoon."
+        },
+        {
+          "question": "Vaatiiko Suomen laki värikontrastia verkkosivuilla?",
+          "answer": "Kyllä. Laki digitaalisten palvelujen tarjoamisesta (306/2019) edellyttää julkisen sektorin verkkosivujen noudattavan EN 301 549 -standardia, joka viittaa WCAG 2.1 AA:han. Tämä sisältää kontrastisuhteen 4,5:1 tavalliselle tekstille ja 3:1 suurelle tekstille. EU:n esteettömyysdirektiivi laajentaa vaatimuksen yksityiselle sektorille kesäkuusta 2025."
+        },
+        {
+          "question": "Mikä on WCAG-standardi?",
+          "answer": "WCAG (Web Content Accessibility Guidelines) on W3C:n kehittämä kansainvälinen verkkosisällön saavutettavuusohjeisto. Se määrittelee mm. vähimmäiskontrastiarvot, otsikkorakenteen ja näppäimistötuen. Suomen laki viittaa WCAG:hen eurooppalaisen EN 301 549 -standardin kautta."
+        },
+        {
+          "question": "Miten löydän verkkosivuni värikoodit?",
+          "answer": "Selaimessa (Chrome, Firefox, Edge) avaa kehittäjätyökalut (oikea klikkaus > Tutki). Styles-välilehdellä näet sivun värit. Vaihtoehtoisesti ColorZilla-laajennus mahdollistaa minkä tahansa elementin värin valinnan."
+        },
+        {
+          "question": "Toimiiko tämä työkalu tumman tilan suunnitteluun?",
+          "answer": "Kyllä. Työkalu laskee kontrastisuhteen minkä tahansa kahden värin välillä riippumatta siitä, kumpi on vaaleampi. Tummassa tilassa syötä vaalea tekstiväri ja tumma taustaväri. Samat WCAG-kynnysarvot pätevät."
+        },
+        {
+          "question": "Mikä on turvallinen harmaan vähimmäissävy valkoisella taustalla?",
+          "answer": "Tummin harmaa, joka läpäisee WCAG AA:n puhtaalla valkoisella (#ffffff), on #767676 suhteella 4,54:1. Vaaleammat sävyt kuten #999999 (2,85:1) eivät läpäise. AAA-vaatimukseen (7:1) tarvitaan vähintään #595959."
+        },
+        {
+          "question": "Mikä ero on WCAG 2.1 ja 2.2 välillä?",
+          "answer": "WCAG 2.1 (2018) lisäsi kriteerejä mobiilisaavutettavuudelle ja heikkonäköisyydelle. WCAG 2.2 (2023) lisää kriteerejä fokuksen näkyvyydelle ja vetotoiminnoille, mutta ei muuta kontrastirajoja. Kontrastivaatimukset (1.4.3 ja 1.4.6) pysyvät samoina."
         }
       ]
     },
@@ -408,5 +441,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Tarvitsetko saavutettavan verkkosivuston?",
+    "description": "Suunnittelemme verkkosivustoja kaikki käyttäjät huomioiden — oikea värikontrasti, luettava typografia ja looginen rakenne.",
+    "btnOne": "Palvelumme",
+    "btnOneLink": "/fi/yhteystiedot",
+    "btnTwo": "Ota yhteyttä",
+    "btnTwoLink": "/fi/yhteystiedot",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

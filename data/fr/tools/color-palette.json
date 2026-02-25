@@ -42,6 +42,14 @@
         "Schéma analogue – couleurs voisines sur la roue chromatique",
         "Schéma complémentaire – couleurs opposées",
         "Schéma triadique – 3 couleurs à intervalles égaux",
+        "Schéma tétradique – 4 couleurs à 90°",
+        "Décalage chaud – rouges, oranges, jaunes",
+        "Décalage froid – bleus, turquoises, violets",
+        "Tons terre – bruns, olives, ocres",
+        "Néon – saturation maximale",
+        "Vintage – tons rétro désaturés",
+        "Haut contraste – noir à blanc",
+        "Dégradé coucher de soleil",
         "Schéma complémentaire divisé – couleur de base et 2 voisines de l'opposée",
         "Palette pastel – tons clairs et adoucis",
         "Palette sombre – couleurs profondes pour thèmes sombres",
@@ -120,53 +128,93 @@
     {
       "type": "sectionSteps",
       "title": "17 types de palettes – laquelle convient à votre projet ?",
-      "description": "Chaque palette a un caractère différent :",
-      "grid": "three",
+      "description": "Le générateur crée 17 schémas de couleurs fondés sur la théorie chromatique. Chacun suit une logique différente :",
+      "grid": "two",
       "items": [
         {
-          "icon": "RiPaletteLine",
-          "title": "Monochromatique",
-          "description": "Variations d'une teinte en luminosité et saturation. Élégante, harmonieuse, professionnelle."
+          "icon": "RiStackLine",
+          "title": "Palette monochromatique",
+          "description": "Plusieurs niveaux de luminosité d'une seule teinte. Les couleurs restent cohérentes et apaisantes. Adaptée aux rapports annuels, sites institutionnels et projets nécessitant une sobriété visuelle."
         },
         {
-          "icon": "RiColorFilterLine",
-          "title": "Analogue",
-          "description": "Couleurs voisines sur le cercle chromatique. Transition douce et naturelle."
+          "icon": "RiPaletteLine",
+          "title": "Palette analogue",
+          "description": "Couleurs voisines sur le cercle chromatique (décalage d'environ 30°). Transitions douces sans contraste brutal. Appréciée pour les illustrations éditoriales, les blogs et les supports narratifs."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Palette complémentaire",
+          "description": "La couleur de base et son opposée sur le cercle (180°). Produit le contraste visuel le plus fort. Utile pour les boutons d'action, les bannières promotionnelles et les éléments qui doivent attirer l'attention."
+        },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Palette triadique",
+          "description": "Trois couleurs espacées de 120° formant un triangle équilatéral. Combinaison vive et équilibrée. Fonctionne bien pour l'identité de marques créatives et les campagnes publicitaires."
+        },
+        {
+          "icon": "RiCursorLine",
+          "title": "Palette complémentaire divisée",
+          "description": "Au lieu du complément direct, on utilise ses deux voisins. Le contraste reste net mais moins abrupt. Un bon compromis quand le schéma complémentaire paraît trop intense."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Palette pastel",
+          "description": "Saturation réduite et luminosité élevée produisent des tons doux et aériens. Courante dans la cosmétique, la mode enfantine et la pâtisserie artisanale."
+        },
+        {
+          "icon": "RiMoonLine",
+          "title": "Palette sombre",
+          "description": "Saturation élevée et luminosité basse. Des teintes profondes et intenses pour les interfaces en mode sombre, les marques haut de gamme et les produits qui visent l'exclusivité."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Palette tonale",
+          "description": "Une échelle de luminosité d'une même teinte, du très clair au très foncé. Correspond aux niveaux de couleur des systèmes de design (par ex. 50 à 900). Indispensable pour construire des bibliothèques de composants UI."
+        },
+        {
+          "icon": "RiContractLeftRightLine",
+          "title": "Palette minimaliste",
+          "description": "Un accent chromatique prononcé entouré de neutres clairs. Style typique des pages produit et des landing pages contemporaines avec beaucoup d'espace blanc."
+        },
+        {
+          "icon": "RiGridLine",
+          "title": "Palette tétradique (carrée)",
+          "description": "Quatre teintes espacées de 90° sur le cercle chromatique. Riche et équilibrée – particulièrement adaptée aux tableaux de bord, aux visualisations de données et aux interfaces complexes nécessitant de nombreuses couleurs distinctes."
+        },
+        {
+          "icon": "RiFireLine",
+          "title": "Palette chaude",
+          "description": "Teintes décalées vers les rouges, oranges et jaunes. Transmet énergie, chaleur et convivialité. Courante dans la restauration, l'hôtellerie et les campagnes marketing dynamiques."
+        },
+        {
+          "icon": "RiSnowflakeLine",
+          "title": "Palette froide",
+          "description": "Teintes décalées vers les bleus, turquoises et violets. Communique calme, professionnalisme et confiance. Répandue dans la fintech, la santé et le branding corporate."
+        },
+        {
+          "icon": "RiSeedlingLine",
+          "title": "Palette terre",
+          "description": "Bruns, olives et ocres peu saturés inspirés des paysages naturels. Convient aux marques bio, aux produits artisanaux et à l'esthétique rustique."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Palette néon",
+          "description": "Couleurs à saturation maximale avec une intensité électrique. Conçue pour le marketing audacieux, les interfaces de jeux vidéo et les designs qui captent le regard."
+        },
+        {
+          "icon": "RiAncientGateLine",
+          "title": "Palette vintage",
+          "description": "Tons désaturés et légèrement chauds rappelant les impressions anciennes et la photographie rétro. Idéale pour les marques patrimoniales, les produits artisanaux et l'esthétique nostalgique."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Complémentaire",
-          "description": "Couleur de base + couleur opposée (180°). Contraste maximum pour des designs dynamiques."
+          "title": "Palette haut contraste",
+          "description": "Étendue de luminosité extrême du presque noir au presque blanc avec la teinte de base. Excellente pour les designs accessibles, la hiérarchie visuelle forte et les interfaces conformes aux WCAG."
         },
         {
-          "icon": "RiMagicLine",
-          "title": "Triadique",
-          "description": "Trois couleurs à 120° d'écart. Équilibrée avec un fort contraste visuel."
-        },
-        {
-          "icon": "RiSearchLine",
-          "title": "Complémentaire divisée",
-          "description": "Couleur de base + les deux voisins du complément. Contraste plus subtil."
-        },
-        {
-          "icon": "RiPaintBrushLine",
-          "title": "Pastel",
-          "description": "Luminosité élevée, saturation réduite. Douce, aérienne – idéale pour des designs amicaux."
-        },
-        {
-          "icon": "RiSettings3Line",
-          "title": "Sombre",
-          "description": "Luminosité basse, tons profonds. Professionnelle – adaptée au mode sombre et aux marques premium."
-        },
-        {
-          "icon": "RiRefreshLine",
-          "title": "Tonale (Material Design)",
-          "description": "Luminosité graduée sur une même teinte. Similaire au système de couleurs de Google Material Design."
-        },
-        {
-          "icon": "RiInfinityLine",
-          "title": "Minimaliste (Apple)",
-          "description": "Base neutre avec un accent coloré. Propre, moderne – inspiré du style Apple."
+          "icon": "RiSunLine",
+          "title": "Palette dégradé coucher de soleil",
+          "description": "Rotation fluide des teintes du chaud vers le froid, imitant un coucher de soleil naturel. Parfaite pour les sections héros, les arrière-plans et les projets créatifs."
         }
       ]
     },
@@ -179,6 +227,15 @@
       "title": "Comment fonctionne l'espace colorimétrique HSL",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">Exemple : HSL(210, 80%, 50%)</p><div class=\"mt-2 flex items-center gap-3\"><div class=\"h-10 w-10 rounded\" style=\"background-color: hsl(210, 80%, 50%)\"></div><div class=\"text-mid text-sm!\"><p>H = 210° (teinte bleue)</p><p>S = 80% (intense)</p><p>L = 50% (luminosité moyenne)</p></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">Même teinte, luminosité différente</p><div class=\"mt-2 flex gap-1\"><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 90%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 70%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 50%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 30%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 10%)\"></div></div><p class=\"text-light mt-1 text-xs!\">L : 90% → 70% → 50% → 30% → 10%</p></div></div>",
       "html": "<p class=\"text-mid\">Toutes les palettes de cet outil reposent sur l'espace colorimétrique HSL (Teinte, Saturation, Luminosité). Contrairement à HEX ou RGB, HSL décrit les couleurs telles que nous les percevons :</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Hue (H)</strong> – la teinte sur le cercle chromatique (0°–360°). 0° = rouge, 120° = vert, 240° = bleu.</li><li><strong>Saturation (S)</strong> – l'intensité. 0% = gris, 100% = couleur pleinement saturée.</li><li><strong>Lightness (L)</strong> – la luminosité. 0% = noir, 50% = couleur normale, 100% = blanc.</li></ul><p class=\"text-mid mt-3\">En modifiant sélectivement ces valeurs, on obtient des palettes harmonieuses. Les palettes monochromatiques ne varient que L, les analogues que H, et les complémentaires inversent H de 180°.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "La couleur dans le design et l’art français",
+      "html": "<p class=\"text-mid mb-4\">La France a profondément influencé la théorie et la pratique de la couleur :</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Impressionnisme</strong> — Monet, Renoir et Cézanne ont révolutionné l’usage de la couleur en peignant la lumière naturelle. Leurs palettes de bleus, violets et jaunes doux restent une référence en design graphique.</li><li><strong>Haute couture</strong> — les maisons de mode parisiennes lancent chaque saison des couleurs tendance qui influencent le design numérique. Le « noir chic », le « rose poudré » et le « bleu marine » sont des classiques français.</li><li><strong>Le tricolore</strong> — bleu, blanc, rouge. Cette combinaison est utilisée en branding pour évoquer l’identité française, la qualité et le savoir-faire.</li></ul>"
     },
     {
       "type": "gap",
@@ -253,33 +310,49 @@
       "items": [
         {
           "question": "Combien de palettes l'outil génère-t-il ?",
-          "answer": "L'outil génère 17 palettes différentes à partir d'une seule couleur de base : monochromatique, analogue, complémentaire, triadique, complémentaire divisée, pastel, sombre, tonale (Material Design) et minimaliste (style Apple).",
-          "answerSchemaText": "17 palettes : monochromatique, analogue, complémentaire, triadique, complémentaire divisée, pastel, sombre, tonale, minimaliste."
+          "answer": "L'outil génère 17 palettes différentes à partir d'une seule couleur de base : monochromatique, analogue, complémentaire, triadique, complémentaire divisée, tétradique (carrée), chaude, froide, terre, néon, vintage, haut contraste, dégradé coucher de soleil, pastel, sombre, tonale et minimaliste.",
+          "answerSchemaText": "17 palettes : monochromatique, analogue, complémentaire, triadique, complémentaire divisée, tétradique, chaude, froide, terre, néon, vintage, haut contraste, coucher de soleil, pastel, sombre, tonale, minimaliste.",
+          "description": ""
         },
         {
           "question": "Qu'est-ce qu'une palette monochromatique ?",
           "answer": "Une palette monochromatique est composée de variations d'une seule teinte – toutes les couleurs partagent la même teinte (H dans le modèle HSL) et varient uniquement en luminosité et saturation. Ces palettes sont harmonieuses et particulièrement adaptées aux designs professionnels.",
-          "answerSchemaText": "Une palette d'une seule teinte avec des variations de luminosité et saturation."
+          "answerSchemaText": "Une palette d'une seule teinte avec des variations de luminosité et saturation.",
+          "description": ""
         },
         {
           "question": "Qu'est-ce qu'une palette complémentaire ?",
           "answer": "Une palette complémentaire combine la couleur de base avec son complément – la couleur opposée sur le cercle chromatique (décalage de 180°). Ce contraste est l'un des principes fondamentaux de la théorie des couleurs et produit un effet vif et dynamique.",
-          "answerSchemaText": "La couleur de base et la couleur opposée sur le cercle chromatique (180°)."
+          "answerSchemaText": "La couleur de base et la couleur opposée sur le cercle chromatique (180°).",
+          "description": ""
         },
         {
           "question": "Puis-je copier les couleurs générées ?",
           "answer": "Oui. Cliquez sur une couleur dans la palette pour copier son code HEX dans le presse-papiers. Utilisez-le directement dans CSS, Figma, Adobe ou d'autres outils de design.",
-          "answerSchemaText": "Oui, cliquez sur une couleur pour copier le code HEX."
+          "answerSchemaText": "Oui, cliquez sur une couleur pour copier le code HEX.",
+          "description": ""
         },
         {
           "question": "Qu'est-ce que l'espace colorimétrique HSL ?",
           "answer": "HSL signifie Hue (teinte), Saturation et Lightness (luminosité). Contrairement à RGB, HSL décrit les couleurs telles que nous les percevons : la teinte détermine la couleur de base, la saturation l'intensité, et la luminosité indique si la couleur est claire ou foncée. Toutes les palettes de cet outil reposent sur des calculs HSL.",
-          "answerSchemaText": "HSL = Teinte, Saturation, Luminosité. Un modèle de couleur basé sur la perception humaine."
+          "answerSchemaText": "HSL = Teinte, Saturation, Luminosité. Un modèle de couleur basé sur la perception humaine.",
+          "description": ""
         },
         {
           "question": "Quelle différence entre triadique et complémentaire divisée ?",
           "answer": "Une palette triadique utilise trois couleurs équidistantes sur le cercle chromatique (120° d'écart). Une palette complémentaire divisée utilise, au lieu du complément direct, les deux voisins du complément – ce qui produit un contraste plus subtil.",
-          "answerSchemaText": "Triadique : 3 couleurs à 120°. Complémentaire divisée : couleur de base + 2 voisins du complément."
+          "answerSchemaText": "Triadique : 3 couleurs à 120°. Complémentaire divisée : couleur de base + 2 voisins du complément.",
+          "description": ""
+        },
+        {
+          "question": "Quel type de palette convient le mieux à un site corporate ?",
+          "answer": "Les palettes monochromatiques ou tonales conviennent aux sites corporate car elles offrent une hiérarchie visuelle unifiée et apaisante. Utilisez la palette tonale pour construire un système complet d’arrière-plans, de textes, de bordures et d’accents à partir d’une seule couleur de marque.",
+          "answerSchemaText": "Monochromatique ou tonale pour une hiérarchie unifiée."
+        },
+        {
+          "question": "Comment convertir les codes HEX en RGB ?",
+          "answer": "L’outil affiche le code HEX et la valeur HSL de chaque couleur. Pour convertir en RGB, utilisez les outils de développement de votre navigateur — entrez le code HEX dans le sélecteur de couleur et la valeur RGB s’affiche automatiquement.",
+          "answerSchemaText": "L’outil montre HEX et HSL. Utilisez les outils navigateur pour RGB."
         }
       ]
     },
@@ -307,5 +380,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Besoin d'une identité visuelle cohérente ?",
+    "description": "Nous concevons logos, systèmes de couleurs et supports de marque — des cartes de visite aux modèles pour les réseaux sociaux.",
+    "btnOne": "Nos services",
+    "btnOneLink": "/fr/contact",
+    "btnTwo": "Nous contacter",
+    "btnTwoLink": "/fr/contact",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

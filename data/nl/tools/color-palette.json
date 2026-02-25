@@ -34,6 +34,14 @@
         "Analoog schema – naburige kleuren op het kleurenwiel",
         "Complementair schema – tegenovergestelde kleuren",
         "Triadisch schema – 3 kleuren op gelijke afstanden",
+        "Tetradisch schema – 4 kleuren op 90°",
+        "Warme verschuiving – rood, oranje, geel",
+        "Koele verschuiving – blauw, turquoise, paars",
+        "Aardetinten – bruin, olijf, oker",
+        "Neon – maximale verzadiging",
+        "Vintage – desatureerde retrotinten",
+        "Hoog contrast – zwart tot wit",
+        "Zonsondergang-gradiënt",
         "Gesplitst-complementair schema – basiskleur en 2 buren van het complement",
         "Pastelpalet – lichte, gedempte tinten",
         "Donker palet – diepe kleuren voor donkere thema's",
@@ -163,6 +171,46 @@
           "icon": "RiContractLeftRightLine",
           "title": "Minimalistisch palet",
           "description": "Eén vetgedrukt kleuraccent en meerdere zeer lichte, zachte neutralen. De rest van het palet blijft gedempt. Werkt goed in moderne interfaces met veel witruimte – typische product- en landingspaginastijl."
+        },
+        {
+          "icon": "RiGridLine",
+          "title": "Tetradisch (vierkant) palet",
+          "description": "Vier tinten op 90° afstand op het kleurenwiel. Rijk en evenwichtig – ideaal voor complexe interfaces, dashboards en datavisualisatie."
+        },
+        {
+          "icon": "RiFireLine",
+          "title": "Warm palet",
+          "description": "Kleuren verschoven naar rood, oranje en geel. Roept energie, warmte en toegankelijkheid op. Ideaal voor horecamerken en marketingcampagnes."
+        },
+        {
+          "icon": "RiSnowflakeLine",
+          "title": "Koel palet",
+          "description": "Kleuren verschoven naar blauw, turquoise en paars. Communiceert rust, professionaliteit en vertrouwen. Populair in fintech, gezondheidszorg en corporate branding."
+        },
+        {
+          "icon": "RiSeedlingLine",
+          "title": "Aardetinten palet",
+          "description": "Laag verzadigde bruinen, olijven en okers geïnspireerd door natuurlandschappen. Ideaal voor eco-merken en ambachtelijke producten. De Nederlandse Stijl-traditie (De Stijl) maakte aardse tinten populair naast de primaire kleuren."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Neon palet",
+          "description": "Maximaal verzadigde kleuren met elektrische intensiteit. Voor gewaagde marketing, gaming-interfaces en opvallende ontwerpen."
+        },
+        {
+          "icon": "RiAncientGateLine",
+          "title": "Vintage palet",
+          "description": "Onverzadigde, licht warme tonen die doen denken aan oude drukken en retro-fotografie."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Hoog contrast palet",
+          "description": "Extreem helderheidsbereik van bijna zwart tot bijna wit. Uitstekend voor toegankelijke ontwerpen en WCAG-conforme interfaces."
+        },
+        {
+          "icon": "RiSunLine",
+          "title": "Zonsondergang gradiënt",
+          "description": "Vloeiende tintrotatie van warm naar koel. Ideaal voor hero-secties, achtergronden en creatieve projecten."
         }
       ]
     },
@@ -175,6 +223,15 @@
       "title": "Waarop is de palettengenerator gebaseerd?",
       "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (tint)</span><span class=\"text-mid\">0°–360° op het kleurenwiel</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (verzadiging)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lichtheid)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
       "html": "<p class=\"text-mid\">Alle paletten worden gecreëerd door wiskundige transformatie van de basiskleur in de HSL-kleurruimte. HSL beschrijft een kleur met drie waarden: tint (H) is de positie op het kleurenwiel (0°–360°), verzadiging (S) bepaalt de kleurintensiteit, en lichtheid (L) – hoe licht of donker de kleur is.</p><p class=\"text-mid mt-3\">De complementaire, triadische en split-complementaire paletten zijn gebaseerd op de geometrie van het kleurenwiel – kleuren worden op gelijke hoekafstanden geplaatst, wat visueel evenwicht creëert. De monochromatische, pastel- en donkere paletten veranderen alleen lichtheid en verzadiging terwijl dezelfde tint behouden blijft.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kleur in het Nederlandse design en kunst",
+      "html": "<p class=\"text-mid mb-4\">Nederland heeft een unieke kleurtraditie:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Gouden Eeuw</strong> — Vermeer gebruikte ultramarijns blauw en warm geel in composities die tot de meest bestudeerde kleurcombinaties in de kunstgeschiedenis behoren. Rembrandt’s chiaroscuro toont de kracht van extreem helderheidscontrast.</li><li><strong>De Stijl</strong> — Mondriaan reduceerde kleur tot de drie primaire kleuren (rood, geel, blauw) plus zwart en wit. Dit principe vormt de basis van veel moderne designsystemen.</li><li><strong>Delfts blauw</strong> — het iconische blauw-wit van Delfts aardewerk is een complementair kleurenschema dat al vier eeuwen lang herkenbaar is.</li></ul>"
     },
     {
       "type": "gap",
@@ -250,27 +307,37 @@
         {
           "question": "In welk formaat moet de basiskleur zijn?",
           "answer": "De generator accepteert kleuren in HEX-formaat – zowel kort (bijv. #F50) als volledig (bijv. #FF5500). Naast het tekstveld vindt u een kleurkiezer waarmee u visueel een kleur kunt kiezen. Gegenereerde paletten tonen de HEX-code en HSL-waarde van elke kleur.",
-          "answerSchemaText": "De generator accepteert HEX-kleuren (#RGB of #RRGGBB). Elke gegenereerde kleur heeft een HEX-code en HSL-waarde."
+          "answerSchemaText": "De generator accepteert HEX-kleuren (#RGB of #RRGGBB). Elke gegenereerde kleur heeft een HEX-code en HSL-waarde.",
+          "description": ""
         },
         {
           "question": "Hoeveel kleuren bevat elk palet?",
           "answer": "Elk palet bevat 4 tot 6 kleuren. Het aantal hangt af van het schematype – monochromatische en tonale paletten genereren meer tinten (een lichtschaal van één tint), terwijl complementaire en triadische paletten zich richten op minder contrasterende kleuren.",
-          "answerSchemaText": "Elk palet bevat 4 tot 6 kleuren, afhankelijk van het schematype."
+          "answerSchemaText": "Elk palet bevat 4 tot 6 kleuren, afhankelijk van het schematype.",
+          "description": ""
         },
         {
           "question": "Wat is de HSL-kleurruimte en hoe lees je die?",
           "answer": "HSL is een manier om kleur te beschrijven met drie waarden: H (tint, 0°–360° op het kleurenwiel), S (verzadiging, 0%–100%) en L (lichtheid, 0%–100%). De generator toont HSL-waarden naast elke kleur, waardoor het makkelijker wordt om te begrijpen hoe de kleuren in het palet van elkaar verschillen.",
-          "answerSchemaText": "HSL beschrijft kleur via tint (H), verzadiging (S) en lichtheid (L). De generator toont deze waarden naast elke kleur."
+          "answerSchemaText": "HSL beschrijft kleur via tint (H), verzadiging (S) en lichtheid (L). De generator toont deze waarden naast elke kleur.",
+          "description": ""
         },
         {
           "question": "Kan ik de gegenereerde paletten commercieel gebruiken?",
           "answer": "Ja. U kunt de gegenereerde kleurpaletten gebruiken in elk project – commercieel en niet-commercieel, zonder licentiebeperkingen.",
-          "answerSchemaText": "Ja, gegenereerde paletten kunnen zonder beperkingen worden gebruikt in commerciële en niet-commerciële projecten."
+          "answerSchemaText": "Ja, gegenereerde paletten kunnen zonder beperkingen worden gebruikt in commerciële en niet-commerciële projecten.",
+          "description": ""
         },
         {
           "question": "Vereist de generator login of betaling?",
           "answer": "De generator is volledig gratis en vereist geen login of registratie. Kleuren worden lokaal in de browser gegenereerd – er worden geen gegevens naar externe servers gestuurd.",
-          "answerSchemaText": "De generator is gratis, vereist geen login. Kleuren worden lokaal in de browser gegenereerd."
+          "answerSchemaText": "De generator is gratis, vereist geen login. Kleuren worden lokaal in de browser gegenereerd.",
+          "description": ""
+        },
+        {
+          "question": "Welk palettetype is het beste voor een bedrijfswebsite?",
+          "answer": "Monochrome of tonale paletten werken goed voor bedrijfssites omdat ze een uniforme, rustige visuele hiërarchie bieden. Gebruik het tonale palet om een compleet systeem van achtergrond, tekst, rand en accentkleuren op te bouwen vanuit één merkkleur.",
+          "answerSchemaText": "Monochroom of tonaal voor uniforme hiërarchie."
         }
       ]
     },
@@ -298,5 +365,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Een consistente merkidentiteit nodig?",
+    "description": "Wij ontwerpen logo's, kleursystemen en bedrijfsmaterialen — van visitekaartjes tot social media templates.",
+    "btnOne": "Onze diensten",
+    "btnOneLink": "/nl/contact",
+    "btnTwo": "Neem contact op",
+    "btnTwoLink": "/nl/contact",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

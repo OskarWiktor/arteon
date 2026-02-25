@@ -2,14 +2,14 @@
   "toolKey": "colorPalette",
   "locale": "pl",
   "metadata": {
-    "title": "Darmowy generator palet kolorów – 9 schematów",
-    "description": "Wygeneruj 9 palet kolorów z jednego koloru: monochromatyczną, komplementarną, triadyczną, pastelową i inne. Skopiuj kody HEX jednym kliknięciem.",
+    "title": "Darmowy generator palet kolorów – 17 schematów",
+    "description": "Wygeneruj 17 palet kolorów z jednego koloru: monochromatyczną, komplementarną, triadyczną, pastelową i inne. Skopiuj kody HEX jednym kliknięciem.",
     "ogImage": "/assets/tools/color-palette-generator/generator-palet-kolorow-pl.webp",
     "path": "/narzedzia/generator-palet-kolorow"
   },
   "hero": {
-    "title": "Wygeneruj 9 palet kolorów z jednego koloru bazowego",
-    "description": "Podaj jeden kolor bazowy, a narzędzie wygeneruje 9 harmonijnych palet kolorów: monochromatyczną, komplementarną, triadyczną, pastelową i inne. Każdy kolor można skopiować z kodem HEX.",
+    "title": "Wygeneruj 17 palet kolorów z jednego koloru bazowego",
+    "description": "Podaj jeden kolor bazowy, a narzędzie wygeneruje 17 harmonijnych palet kolorów: monochromatyczną, komplementarną, triadyczną, pastelową i inne. Każdy kolor można skopiować z kodem HEX.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
   },
   "breadcrumbs": {
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Generator palet kolorów – 9 schematów kolorystycznych",
+      "name": "Generator palet kolorów – 17 schematów kolorystycznych",
       "alternateName": [
         "Generator schematów kolorów",
         "Generator kolorów online",
@@ -35,12 +35,20 @@
         "Color palette generator"
       ],
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Darmowy generator palet kolorów online. Wpisz jeden kolor HEX, a narzędzie wygeneruje 9 schematów: monochromatyczny, analogiczny, komplementarny, triadyczny, rozłożony komplementarny, pastelowy, ciemny, tonalny i minimalistyczny. Każdy kolor można skopiować wraz z kodem HEX i wartością HSL.",
+      "description": "Darmowy generator palet kolorów online. Wpisz jeden kolor HEX, a narzędzie wygeneruje 17 schematów: monochromatyczny, analogiczny, komplementarny, triadyczny, rozłożony komplementarny, pastelowy, ciemny, tonalny i minimalistyczny. Każdy kolor można skopiować wraz z kodem HEX i wartością HSL.",
       "featureList": [
         "Schemat monochromatyczny – odcienie jednego koloru",
         "Schemat analogiczny – kolory sąsiadujące na kole barw",
         "Schemat komplementarny – kolory przeciwstawne",
         "Schemat triadyczny – 3 kolory w równych odstępach",
+        "Schemat tetradyczny – 4 kolory co 90°",
+        "Paleta ciepła – czerwienie, pomarańcze, żółcie",
+        "Paleta chłodna – błękity, morskie, fiolety",
+        "Paleta ziemista – brązy, oliwki, ochry",
+        "Paleta neonowa – maksymalne nasycenie",
+        "Paleta vintage – stonowane tony retro",
+        "Paleta wysokokontrastowa – od czerni do bieli",
+        "Paleta gradientu zachodu słońca",
         "Schemat rozłożony komplementarny – kolor bazowy i 2 sąsiednie do przeciwstawnego",
         "Paleta pastelowa – jasne, stonowane odcienie",
         "Paleta ciemna – głębokie kolory do ciemnych motywów",
@@ -56,7 +64,7 @@
     },
     "howTo": {
       "name": "Jak wygenerować paletę kolorów z jednego koloru bazowego",
-      "description": "Jak wygenerować 9 palet kolorów z jednego koloru bazowego: monochromatyczny, komplementarny, triadyczny, pastelowy i inne. Każdy kolor można skopiować wraz z kodem HEX.",
+      "description": "Jak wygenerować 17 palet kolorów z jednego koloru bazowego: monochromatyczny, komplementarny, triadyczny, pastelowy i inne. Każdy kolor można skopiować wraz z kodem HEX.",
       "steps": [
         {
           "name": "Wybierz kolor bazowy",
@@ -68,7 +76,7 @@
         },
         {
           "name": "Przeglądaj palety",
-          "text": "Narzędzie automatycznie wygeneruje 9 różnych palet: monochromatyczną, analogiczną, komplementarną, triadyczną, rozłożoną komplementarną, pastelową, ciemną, tonalną i minimalistyczną."
+          "text": "Narzędzie automatycznie wygeneruje 17 różnych palet: monochromatyczną, analogiczną, komplementarną, triadyczną, rozłożoną komplementarną, pastelową, ciemną, tonalną i minimalistyczną."
         },
         {
           "name": "Skopiuj kolory",
@@ -85,7 +93,7 @@
     {
       "type": "sectionBasic",
       "title": "Po co generować paletę kolorów?",
-      "html": "<p class=\"text-mid\">Spójna paleta kolorów to podstawa każdego projektu wizualnego - od strony internetowej, przez logo, po materiały drukowane. Ręczne dobieranie barw, które do siebie pasują, wymaga znajomości teorii koloru. Generator robi to automatycznie: podajesz jeden kolor bazowy (np. kolor swojego logo), a narzędzie tworzy 9 zestawów kolorów opartych na sprawdzonych schematach harmonii barw.</p><p class=\"text-mid mt-3\">Każdy wygenerowany kolor ma podany kod HEX (np. #496ba2) i wartość HSL (odcień, nasycenie, jasność). Kod HEX możesz wkleić bezpośrednio do CSS, Figmy, Canvy lub dowolnego programu graficznego.</p>",
+      "html": "<p class=\"text-mid\">Spójna paleta kolorów to podstawa każdego projektu wizualnego - od strony internetowej, przez logo, po materiały drukowane. Ręczne dobieranie barw, które do siebie pasują, wymaga znajomości teorii koloru. Generator robi to automatycznie: podajesz jeden kolor bazowy (np. kolor swojego logo), a narzędzie tworzy 17 zestawów kolorów opartych na sprawdzonych schematach harmonii barw.</p><p class=\"text-mid mt-3\">Każdy wygenerowany kolor ma podany kod HEX (np. #496ba2) i wartość HSL (odcień, nasycenie, jasność). Kod HEX możesz wkleić bezpośrednio do CSS, Figmy, Canvy lub dowolnego programu graficznego.</p>",
       "imageSrc": "/assets/tools/color-palette-generator/generator-palet-kolorow-pl.webp",
       "imageAlt": "Generator palet kolorów online – Arteon"
     },
@@ -106,7 +114,7 @@
         },
         {
           "title": "2. Zatwierdź wybór",
-          "description": "Po zatwierdzeniu przyciskiem Zaktualizuj kolor narzędzie automatycznie wygeneruje 9 palet opartych na różnych schematach harmonii barw.",
+          "description": "Po zatwierdzeniu przyciskiem Zaktualizuj kolor narzędzie automatycznie wygeneruje 17 palet opartych na różnych schematach harmonii barw.",
           "icon": "RiCheckboxCircleLine"
         },
         {
@@ -123,7 +131,7 @@
     {
       "type": "sectionSteps",
       "title": "Jakie schematy kolorów generuje narzędzie?",
-      "description": "Generator tworzy 9 typów palet - każda oparta na innej zasadzie teorii koloru:",
+      "description": "Generator tworzy 17 typów palet - każda oparta na innej zasadzie teorii koloru:",
       "grid": "two",
       "items": [
         {
@@ -170,6 +178,46 @@
           "icon": "RiContractLeftRightLine",
           "title": "Paleta minimalistyczna",
           "description": "Jeden wyrazisty akcent kolorystyczny i kilka bardzo jasnych, miękkich neutrali. Reszta palety pozostaje stonowana. Sprawdza się w nowoczesnych interfejsach z dużą ilością białej przestrzeni - typowy styl stron produktowych i landing page'y."
+        },
+        {
+          "icon": "RiGridLine",
+          "title": "Paleta tetradyczna (kwadratowa)",
+          "description": "Cztery odcienie rozmieszczone co 90° na kole barw. Bogata i zrównoważona – idealna do złożonych interfejsów, dashboardów i wizualizacji danych, gdzie potrzeba wielu odróżnialnych kolorów."
+        },
+        {
+          "icon": "RiFireLine",
+          "title": "Paleta ciepła",
+          "description": "Kolory przesunięte w stronę czerwieni, pomarańczy i żółci. Wywołuje poczucie energii, ciepła i przystępności. Świetna do marek gastronomicznych, hotelarstwa i energetycznych kampanii marketingowych."
+        },
+        {
+          "icon": "RiSnowflakeLine",
+          "title": "Paleta chłodna",
+          "description": "Kolory przesunięte w stronę błękitów, morskich zieleni i fioletów. Komunikuje spokój, profesjonalizm i zaufanie. Popularna w fintech, ochronie zdrowia i brandingu korporacyjnym."
+        },
+        {
+          "icon": "RiSeedlingLine",
+          "title": "Paleta ziemista",
+          "description": "Nisko nasycone brązy, oliwki i ochry inspirowane naturalnymi krajobrazami. Idealna do marek ekologicznych, produktów organicznych, rzemieślniczych biznesów i rustykalnej estetyki."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Paleta neonowa",
+          "description": "Kolory o maksymalnym nasyceniu z elektryczną intensywnością. Zaprojektowana do odważnego marketingu, interfejsów gier, marek nocnego życia i projektów przyciągających uwagę."
+        },
+        {
+          "icon": "RiAncientGateLine",
+          "title": "Paleta vintage",
+          "description": "Odbarwione, lekko ciepłe tony przypominające stare druki i fotografię retro. Idealna do marek z tradycją, produktów rzemieślniczych i nostalgicznej estetyki."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Paleta wysokokontrastowa",
+          "description": "Ekstremalny zakres jasności od prawie czarnego do prawie białego z odcieniem koloru bazowego. Doskonała do dostępnych projektów, silnej hierarchii wizualnej i interfejsów zgodnych z WCAG."
+        },
+        {
+          "icon": "RiSunLine",
+          "title": "Paleta gradientu zachodu słońca",
+          "description": "Płynna rotacja odcieni od ciepłych do chłodnych, naśladująca naturalny zachód słońca. Świetna do sekcji hero, teł, kreatywnych projektów i brandingu festiwalowego."
         }
       ]
     },
@@ -231,7 +279,7 @@
         {
           "icon": "RiRefreshLine",
           "title": "Palety nie zmieniają się po wpisaniu koloru",
-          "description": "Sam wpis kodu HEX nie generuje palet automatycznie - zmianę trzeba zatwierdzić przyciskiem <strong>Zaktualizuj kolor</strong>. Dopiero po zatwierdzeniu narzędzie przelicza wszystkie 9 schematów."
+          "description": "Sam wpis kodu HEX nie generuje palet automatycznie - zmianę trzeba zatwierdzić przyciskiem <strong>Zaktualizuj kolor</strong>. Dopiero po zatwierdzeniu narzędzie przelicza wszystkie 17 schematów."
         },
         {
           "icon": "RiErrorWarningLine",
@@ -257,27 +305,32 @@
         {
           "question": "W jakim formacie podać kolor bazowy w generatorze palet?",
           "answer": "Generator przyjmuje kolory w formacie HEX - zarówno w wersji skróconej (np. #F50), jak i pełnej (np. #FF5500). Obok pola tekstowego znajdziesz próbnik kolorów, który pozwala wybrać barwę wizualnie. Wygenerowane palety pokazują kod HEX i wartość HSL każdego koloru.",
-          "answerSchemaText": "Generator przyjmuje kolory w formacie HEX (#RGB lub #RRGGBB). Każdy wygenerowany kolor ma podany kod HEX i wartość HSL."
+          "answerSchemaText": "Generator przyjmuje kolory w formacie HEX (#RGB lub #RRGGBB). Każdy wygenerowany kolor ma podany kod HEX i wartość HSL.",
+          "description": ""
         },
         {
           "question": "Ile kolorów zawiera każda paleta kolorów?",
           "answer": "Każda paleta zawiera od 4 do 6 kolorów. Liczba zależy od typu schematu - palety monochromatyczne i tonalne generują więcej odcieni (skala jasności jednej barwy), a palety komplementarne i triadyczne skupiają się na mniejszej liczbie kontrastujących barw.",
-          "answerSchemaText": "Każda paleta zawiera od 4 do 6 kolorów, w zależności od typu schematu kolorystycznego."
+          "answerSchemaText": "Każda paleta zawiera od 4 do 6 kolorów, w zależności od typu schematu kolorystycznego.",
+          "description": ""
         },
         {
           "question": "Czym jest przestrzeń kolorów HSL i jak ją czytać?",
           "answer": "HSL to sposób zapisu koloru za pomocą trzech wartości: H (odcień, 0°–360° na kole barw), S (nasycenie, 0%–100%) i L (jasność, 0%–100%). Generator wyświetla wartości HSL obok każdego koloru, co ułatwia zrozumienie, jak poszczególne barwy w palecie różnią się od siebie - np. paleta monochromatyczna zmienia tylko jasność (L), zachowując ten sam odcień (H).",
-          "answerSchemaText": "HSL to zapis koloru przez odcień (H), nasycenie (S) i jasność (L). Generator wyświetla te wartości obok każdego koloru w palecie."
+          "answerSchemaText": "HSL to zapis koloru przez odcień (H), nasycenie (S) i jasność (L). Generator wyświetla te wartości obok każdego koloru w palecie.",
+          "description": ""
         },
         {
           "question": "Czy wygenerowane palety kolorów mogę wykorzystać komercyjnie?",
           "answer": "Tak. Wygenerowane palety kolorów możesz wykorzystać w dowolnych projektach - komercyjnych i niekomercyjnych, bez ograniczeń licencyjnych.",
-          "answerSchemaText": "Tak, wygenerowane palety można wykorzystać bez ograniczeń w projektach komercyjnych i niekomercyjnych."
+          "answerSchemaText": "Tak, wygenerowane palety można wykorzystać bez ograniczeń w projektach komercyjnych i niekomercyjnych.",
+          "description": ""
         },
         {
           "question": "Czy generator palet kolorów wymaga logowania lub opłat?",
           "answer": "Generator jest w pełni darmowy i nie wymaga logowania ani rejestracji. Kolory generowane są lokalnie w przeglądarce - żadne dane nie są wysyłane na zewnętrzne serwery.",
-          "answerSchemaText": "Generator jest darmowy, nie wymaga logowania. Kolory generowane są lokalnie w przeglądarce."
+          "answerSchemaText": "Generator jest darmowy, nie wymaga logowania. Kolory generowane są lokalnie w przeglądarce.",
+          "description": ""
         }
       ]
     },

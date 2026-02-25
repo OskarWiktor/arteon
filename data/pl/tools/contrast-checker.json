@@ -227,7 +227,21 @@
           }
         },
         {
-          "name": "Wymagany prawnie (dyrektywa UE)",
+          "name": "Wymagany przez polską Ustawę o dostępności cyfrowej (2019)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Wymagany przez Europejski Akt Dostępności (od VI 2025, sektor prywatny)",
+          "values": {
+            "aa": true,
+            "aaa": false
+          }
+        },
+        {
+          "name": "Wymagany przez dyrektywę UE o dostępności stron (2016/2102)",
           "values": {
             "aa": true,
             "aaa": false
@@ -301,6 +315,15 @@
       "type": "sectionInfo",
       "title": "Czytelność kolorów dla osób z daltonizmem",
       "html": "<p class=\"text-mid mb-4\">Daltonizm (ślepota barw) to zaburzenie widzenia kolorów, które dotyczy około 8% mężczyzn i 0,5% kobiet. Osoby z daltonizmem mogą mieć trudności z rozróżnieniem niektórych par kolorów, nawet jeśli kontrast jasności jest wystarczający.</p><p class=\"text-mid mb-4\">Najczęstsze typy daltonizmu:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deuteranopia</strong> - trudności z rozróżnieniem zieleni i czerwieni (najczęstsza forma)</li><li><strong>Protanopia</strong> - trudności z widzeniem czerwieni</li><li><strong>Tritanopia</strong> - trudności z widzeniem niebieskiego i żółtego (rzadka)</li></ul><p class=\"text-mid mt-3\">To narzędzie sprawdza kontrast jasności, który jest ważny dla wszystkich użytkowników. Jednak przy projektowaniu warto dodatkowo unikać problematycznych kombinacji kolorów (np. czerwony tekst na zielonym tle) i nie polegać wyłącznie na kolorze do przekazywania informacji - używaj też kształtów, ikon, tekstu.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Polskie przepisy dotyczące kontrastu kolorów i dostępności cyfrowej",
+      "html": "<p class=\"text-mid mb-4\">W Polsce kontrast kolorów to nie tylko dobra praktyka projektowa - to <strong>wymóg prawny</strong>. Przepisy nakładają konkretne obowiązki na podmioty publiczne, a od 2025 roku także na sektor prywatny.</p><h3 class=\"h5 mb-2 mt-4\">Ustawa o dostępności cyfrowej (4 kwietnia 2019)</h3><p class=\"text-mid mb-4\">Nakłada na podmioty publiczne obowiazek zapewnienia dostepnosci stron internetowych i aplikacji mobilnych zgodnie z WCAG 2.1 poziom AA. Dotyczy to m.in. urzedow, szkol, szpitali, jednostek samorzadu terytorialnego i spolek komunalnych. Minimalny kontrast tekstu wynosi 4.5:1 (tekst zwykly) i 3:1 (tekst duzy, ikony).</p><h3 class=\"h5 mb-2\">Ustawa o zapewnianiu dostepnosci osobom ze szczegolnymi potrzebami (19 lipca 2019)</h3><p class=\"text-mid mb-4\">Rozszerza obowiazki dostepnosci na wszystkie podmioty publiczne - nie tylko w zakresie cyfrowym, ale tez architektonicznym i informacyjno-komunikacyjnym. Kazdy obywatel moze zlozyc wniosek o zapewnienie dostepnosci, a podmiot ma 14 dni na odpowiedz.</p><h3 class=\"h5 mb-2\">Europejski Akt Dostepnosci (dyrektywa 2019/882)</h3><p class=\"text-mid mb-4\">Od <strong>28 czerwca 2025</strong> wymogi dostepnosci obejmuja rowniez sektor prywatny: sklepy internetowe, bankowosc online, uslugi transportowe, e-booki i terminale platnicze. Polskie firmy prowadzace sprzedaz online musza zapewnic kontrast kolorow zgodny z WCAG 2.1 AA.</p><h3 class=\"h5 mb-2\">KRI (Krajowe Ramy Interoperacyjnosci)</h3><p class=\"text-mid\">Rozporzadzenie Rady Ministrow z 2012 r. (nowelizowane w 2017) wymaga, aby systemy teleinformatyczne podmiotow publicznych spelnialy standard WCAG 2.0 poziom AA. W praktyce kontrole prowadzi Ministerstwo Cyfryzacji, a wyniki publikowane sa w corocznych raportach dostepnosci.</p>"
     },
     {
       "type": "gap",
@@ -383,6 +406,22 @@
         {
           "question": "Które pary kolorów na stronie warto sprawdzić w pierwszej kolejności?",
           "answer": "Najważniejsze do sprawdzenia: tekst na tle głównym, tekst na banerach i sekcjach kolorowych, przyciski (kolor tekstu i tła przycisku względem tła strony), linki oraz ikony. Szczególną uwagę warto zwrócić na elementy, które pojawiają się na różnych tłach w zależności od sekcji."
+        },
+        {
+          "question": "Czy kontrast kolorów jest wymagany prawnie w Polsce?",
+          "answer": "Tak. Ustawa o dostępności cyfrowej z 2019 roku zobowiązuje podmioty publiczne do spełnienia WCAG 2.1 poziom AA. Oznacza to minimalny kontrast 4.5:1 dla tekstu zwykłego i 3:1 dla tekstu dużego. Od 28 czerwca 2025 Europejski Akt Dostępności rozszerza te wymagania na sektor prywatny - sklepy internetowe, bankowość online i usługi transportowe."
+        },
+        {
+          "question": "Co zmienia Europejski Akt Dostępności (EAA) od czerwca 2025?",
+          "answer": "Europejski Akt Dostępności (dyrektywa 2019/882) rozszerza obowiązek dostępności cyfrowej na sektor prywatny. Od 28 czerwca 2025 firmy oferujące usługi online - e-commerce, bankowość, transport, e-booki - muszą zapewnić dostępność zgodną z WCAG 2.1 AA. Dotyczy to również kontrastu kolorów na stronach i w aplikacjach."
+        },
+        {
+          "question": "Czym różnią się wersje WCAG 2.0, 2.1 i 2.2?",
+          "answer": "WCAG 2.0 (2008) ustaliło podstawowe wymagania kontrastu. WCAG 2.1 (2018) dodało kryteria dla urządzeń mobilnych i osób z zaburzeniami poznawczymi. WCAG 2.2 (2023) wprowadza dodatkowe kryteria, ale progi kontrastu (4.5:1, 3:1, 7:1) pozostają takie same we wszystkich wersjach. Polska ustawa o dostępności cyfrowej odwołuje się do WCAG 2.1."
+        },
+        {
+          "question": "Czy narzędzie działa dla ciemnych motywów stron (dark mode)?",
+          "answer": "Tak. Narzędzie sprawdza współczynnik kontrastu między dowolnymi dwoma kolorami, niezależnie od tego, który jest jaśniejszy. W ciemnym motywie wpisujesz jasny kolor tekstu i ciemny kolor tła. Obowiązują te same progi WCAG - 4.5:1 dla tekstu zwykłego (AA) i 7:1 (AAA)."
         }
       ]
     },

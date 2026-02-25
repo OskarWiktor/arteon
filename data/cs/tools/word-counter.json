@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "cs",
   "metadata": {
-    "title": "Počítadlo slov, znaků a času čtení s formátováním textu",
-    "description": "Bezplatné počítadlo slov, znaků, vět, odstavců a času čtení s konvertorem velikosti písmen. Zkontrolujte délku textu a změňte písmena.",
+    "title": "Pocitadlo slov s citelnosti Flesch-Kincaid a textovymi nastroji",
+    "description": "Bezplatne pocitadlo slov, znaku a slabik s hodnocenim Flesch-Kincaid, dobou cteni, dobou mluveni a 10 formatovacimi nastroji. Bez registrace.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/pocitadlo-slov-a-znaku-cs.webp",
     "path": "/cs/nastroje/pocitadlo-slov-a-znaku"
   },
   "hero": {
-    "title": "Spočítejte slova a znaky – zkontrolujte čas čtení a formátujte",
-    "description": "Vložte text a nástroj spočítá slova, znaky, věty, odstavce, unikátní slova a čas čtení. Změňte velikost písmen, odstraňte duplikáty nebo seřaďte řádky",
+    "title": "Pocitejte slova, znaky a citelnost – Flesch-Kincaid, doba cteni a textove nastroje",
+    "description": "Vlozte text a nastroj spocita slova, znaky, slabiky, vety, odstavce, unikatni slova, dobu cteni, dobu mluveni a vypocita skore citelnosti Flesch-Kincaid.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -33,7 +33,11 @@
         "Online letter case converter",
         "Uppercase to lowercase converter",
         "Remove duplicate lines from text",
-        "Sort text lines alphabetically"
+        "Sort text lines alphabetically",
+        "Kontrola citelnosti Flesch-Kincaid",
+        "Pocitadlo slabik online",
+        "Kalkulacka doby mluveni",
+        "Nastroj citelnosti textu"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Bezplatné počítadlo slov a znaků s nástroji pro formátování textu. Počítá slova, znaky, věty, odstavce, unikátní slova a čas čtení. Nabízí 10 nástrojů: převod velikosti písmen, odstranění mezer, prázdných řádků, duplikátů a řazení.",
@@ -68,7 +72,7 @@
         },
         {
           "name": "Zkontrolujte statistiky",
-          "text": "V levém panelu uvidíte 11 metrik: slova, znaky, věty, odstavce, unikátní slova, průměrnou délku a čas čtení."
+          "text": "V levem panelu uvidite 11 metrik: slova, znaky s mezerami a bez, vety, odstavce, unikatni slova, prumerna delka, doba cteni, doba mluveni, slabiky a skore Flesch-Kincaid."
         },
         {
           "name": "Transformujte text",
@@ -89,7 +93,7 @@
     {
       "type": "sectionBasic",
       "title": "Bezplatné počítadlo slov a znaků s textovými nástroji",
-      "html": "<p class=\"text-mid\">Tento nástroj kombinuje počítadlo slov a znaků s funkcemi pro formátování textu. Vložte text a uvidíte slova, znaky, věty, odstavce, unikátní slova a čas čtení.</p><p class=\"text-mid mt-3\">Pod textovým polem najdete 10 nástrojů: změna velikosti písmen, odstranění mezer, prázdných řádků, duplikátů a řazení. Vše probíhá lokálně v prohlížeči.</p>",
+      "html": "<p class=\"text-mid\">Tento nastroj kombinuje pocitadlo slov a znaku s analyzou citelnosti Flesch-Kincaid a funkcemi formatovani textu. Vlozte text a uvidite pocet slov, znaku, slabik, vet, odstavcu, unikatnich slov, dobu cteni, dobu mluveni a barevne kodovane skore citelnosti.</p><p class=\"text-mid mt-3\"><strong>Skore Flesch-Kincaid</strong> (0–100) ukazuje, jak snadno se text cte. Hodnoty nad 70 znamenaji snadne cteni, pod 30 akademickou uroven.</p><p class=\"text-mid mt-3\">Pod textovym polem najdete 10 nastroju: prevod velkych/malych pismen, odstraneni mezer, prazdnych radku, duplicit a razeni. Vse probiha lokalne v prohlizeci.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/pocitadlo-slov-a-znaku-cs.webp",
       "imageAlt": "Počítadlo slov a znaků – Arteon"
     },
@@ -111,7 +115,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Zkontrolujte statistiky",
-          "description": "V levém panelu uvidíte 11 metrik: slova, znaky, věty, odstavce, unikátní slova, průměrnou délku a čas čtení."
+          "description": "V levem panelu uvidite 11 metrik: slova, znaky s mezerami a bez, vety, odstavce, unikatni slova, prumerna delka, doba cteni, doba mluveni, slabiky a skore Flesch-Kincaid."
         },
         {
           "icon": "RiTextWrap",
@@ -131,8 +135,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 textových metrik",
-      "description": "Počítadlo analyzuje text pomocí osmi ukazatelů:",
+      "title": "11 textovych metrik – co pocitadlo meri",
+      "description": "Pocitadlo analyzuje text pomoci jedenacti ukazatelu:",
       "grid": "two",
       "items": [
         {
@@ -174,6 +178,21 @@
           "icon": "RiTimeLine",
           "title": "Reading time",
           "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
+        },
+        {
+          "icon": "RiMicLine",
+          "title": "Doba mluveni",
+          "description": "Odhadovana doba mluveni pri 130 slovech za minutu. Pro prezentace a projevy."
+        },
+        {
+          "icon": "RiInputMethodLine",
+          "title": "Slabiky",
+          "description": "Celkovy pocet slabik s jazykovymi heuristikami. Klicovy parametr pro vzorce citelnosti."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Citelnost (Flesch-Kincaid)",
+          "description": "Skore 0–100. Nad 70 = snadne, 50–70 = stredni, pod 30 = akademicke. Barevne kodovano."
         }
       ]
     },
@@ -296,13 +315,13 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Co dělá toto počítadlo výjimečným?",
+      "title": "Co dela toto pocitadlo vyjimecnym?",
       "grid": "two",
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "8 text metrics",
-          "description": "Words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time — all in one panel."
+          "title": "11 metrik + skore citelnosti",
+          "description": "Slova, znaky, slabiky, vety, odstavce, unikatni slova, doba cteni, mluveni a Flesch-Kincaid."
         },
         {
           "icon": "RiTextWrap",
@@ -349,6 +368,21 @@
           "question": "Je můj text v bezpečí?",
           "answer": "Ano. Veškerá analýza probíhá lokálně v prohlížeči. Text se nikdy neodesílá na server.",
           "answerSchemaText": "Ano. Text je zpracován lokálně v prohlížeči."
+        },
+        {
+          "question": "Co je skore Flesch-Kincaid?",
+          "answer": "Flesch Reading Ease (0–100) ukazuje snadnost cteni. 90–100 = velmi snadne, 70–89 = snadne, 50–69 = stredni, 30–49 = obtizne, 0–29 = velmi obtizne.",
+          "answerSchemaText": "Flesch Reading Ease (0–100)."
+        },
+        {
+          "question": "Jak se pocita doba mluveni?",
+          "answer": "Pocet slov se deli 130 – prumernou rychlosti pri prezentacich.",
+          "answerSchemaText": "130 slov za minutu."
+        },
+        {
+          "question": "Jak presny je pocitadlo slabik?",
+          "answer": "Nastroj pouziva heuristiky specificke pro dany jazyk. Pro cestinu rozpoznava souhlaskove skupiny a slabikotvorné souhlasky (r, l).",
+          "answerSchemaText": "Jazykove heuristiky."
         }
       ]
     },
@@ -376,5 +410,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Potřebujete profesionální texty pro svůj web?",
+    "description": "Píšeme texty, které se dobře umisťují ve vyhledávačích a přesvědčují k akci. Popisy služeb, blogové články a webový obsah.",
+    "btnOne": "Naše služby",
+    "btnOneLink": "/cs/nastroje",
+    "btnTwo": "Kontakt",
+    "btnTwoLink": "/cs/kontakt",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

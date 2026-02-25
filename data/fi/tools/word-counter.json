@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "fi",
   "metadata": {
-    "title": "Sana-, merkki- ja lukuaikalaskuri tekstin muotoilulla",
-    "description": "Ilmainen sanojen, merkkien, lauseiden, kappaleiden ja lukuajan laskuri kirjainkoon muuntimella. Tarkista tekstin pituus ja muuta kirjaimet.",
+    "title": "Sanalaskuri Flesch-Kincaid-luettavuudella ja tekstityökaluilla",
+    "description": "Ilmainen sana-, merkki- ja tavulaskuri Flesch-Kincaid-pisteillä, lukuajalla, puheajalla ja 10 muotoilutyökalulla. Ilman rekisteröitymistä.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/sana-ja-merkkilaskuri-fi.webp",
     "path": "/fi/tyokalut/sana-ja-merkkilaskuri"
   },
   "hero": {
-    "title": "Laske sanat ja merkit – tarkista lukuaika ja muotoile teksti",
-    "description": "Liitä teksti ja työkalu laskee sanat, merkit, lauseet, kappaleet, uniikit sanat ja lukuajan. Muuta kirjainkoko, poista duplikaatit tai lajittele rivit",
+    "title": "Laske sanat, merkit ja luettavuus – Flesch-Kincaid, lukuaika ja tekstityökalut",
+    "description": "Liitä teksti ja työkalu laskee sanat, merkit, tavut, lauseet, kappaleet, uniikit sanat, lukuajan, puheajan ja Flesch-Kincaid-luettavuuspistemäärän.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -33,7 +33,11 @@
         "Online letter case converter",
         "Uppercase to lowercase converter",
         "Remove duplicate lines from text",
-        "Sort text lines alphabetically"
+        "Sort text lines alphabetically",
+        "Flesch-Kincaid luettavuustarkistus",
+        "Tavulaskuri",
+        "Puheaikalaskin",
+        "Luettavuustyökalu"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Ilmainen sana- ja merkkilaskuri tekstin muotoilutyökaluilla. Laskee sanat, merkit, lauseet, kappaleet, uniikit sanat ja lukuajan. Tarjoaa 10 työkalua: kirjainkoon muunnos, välilyöntien, tyhjien rivien ja kaksoiskappaleiden poisto sekä lajittelu.",
@@ -68,7 +72,7 @@
         },
         {
           "name": "Tarkista tilastot",
-          "text": "Vasemmassa paneelissa näet 11 mittaria: sanat, merkit, lauseet, kappaleet, uniikit sanat, sanapituus ja lukuaika."
+          "text": "Vasemmassa paneelissa näet 11 mittaria: sanat, merkit välilyönneillä ja ilman, lauseet, kappaleet, uniikit sanat, sanan pituus, lukuaika, puheaika, tavut ja Flesch-Kincaid-pisteet."
         },
         {
           "name": "Muunna teksti",
@@ -89,7 +93,7 @@
     {
       "type": "sectionBasic",
       "title": "Ilmainen sana- ja merkkilaskuri tekstityökaluilla",
-      "html": "<p class=\"text-mid\">Tämä työkalu yhdistää sana- ja merkkilaskurin tekstinmuokkaustoimintoihin. Liitä teksti ja näet sanat, merkit, lauseet, kappaleet, uniikit sanat ja lukuajan.</p><p class=\"text-mid mt-3\">Tekstikentän alla löydät 10 työkalua: kirjainkoon muunto, välilyöntien, tyhjien rivien, duplikaattien poisto ja lajittelu. Kaikki tapahtuu paikallisesti selaimessa.</p>",
+      "html": "<p class=\"text-mid\">Tämä työkalu yhdistää sana- ja merkkilaskurin Flesch-Kincaid-luettavuusanalyysiin ja tekstin muotoilutyökaluihin. Liitä teksti nähdäksesi sanat, merkit, tavut, lauseet, kappaleet, uniikit sanat, lukuajan, puheajan ja värikoodatun luettavuuspistemäärän.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid-luettavuuspistemäärä</strong> (0–100) kertoo, kuinka helppoa teksti on lukea. Yli 70 tarkoittaa helppoa, alle 30 akateemista tasoa. Suomen <strong>laki digitaalisten palvelujen tarjoamisesta (306/2019)</strong> edellyttää saavutettavuutta julkisilta palveluilta – hyvä luettavuus on osa saavutettavuutta.</p><p class=\"text-mid mt-3\">Tekstikentän alla on 10 työkalua: kirjainkoon muunnos, välilyöntien, tyhjien rivien, kaksoiskappalerivien poisto ja lajittelu. Kaikki käsittely tapahtuu paikallisesti selaimessa.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/sana-ja-merkkilaskuri-fi.webp",
       "imageAlt": "Sana- ja merkkimäärälaskuri – Arteon"
     },
@@ -111,7 +115,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Tarkista tilastot",
-          "description": "Vasemmassa paneelissa näet 11 mittaria: sanat, merkit, lauseet, kappaleet, uniikit sanat, sanapituus ja lukuaika."
+          "description": "Vasemmassa paneelissa näet 11 mittaria: sanat, merkit välilyönneillä ja ilman, lauseet, kappaleet, uniikit sanat, sanan pituus, lukuaika, puheaika, tavut ja Flesch-Kincaid-pisteet."
         },
         {
           "icon": "RiTextWrap",
@@ -131,8 +135,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 tekstimittaria",
-      "description": "Laskuri analysoi tekstiä kahdeksalla mittarilla:",
+      "title": "11 tekstimittaria – mitä laskuri mittaa",
+      "description": "Laskuri analysoi tekstin yhdellätoista mittarilla:",
       "grid": "two",
       "items": [
         {
@@ -174,6 +178,21 @@
           "icon": "RiTimeLine",
           "title": "Reading time",
           "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
+        },
+        {
+          "icon": "RiMicLine",
+          "title": "Puheaika",
+          "description": "Arvioitu puheaika 130 sanalla minuutissa. Esityksiin ja puheisiin."
+        },
+        {
+          "icon": "RiInputMethodLine",
+          "title": "Tavut",
+          "description": "Tavujen kokonaismäärä kielikohtaisilla heuristiikoilla."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Luettavuus (Flesch-Kincaid)",
+          "description": "Pisteet 0–100. Yli 70 = helppo, 50–70 = keskitaso, alle 30 = akateeminen. Värikoodattu."
         }
       ]
     },
@@ -296,13 +315,13 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Mikä tekee tästä laskurista erityisen?",
+      "title": "Mikä tekee tästä sanalaskurista erityisen?",
       "grid": "two",
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "8 text metrics",
-          "description": "Words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time — all in one panel."
+          "title": "11 mittaria + luettavuuspisteet",
+          "description": "Sanat, merkit, tavut, lauseet, kappaleet, uniikit sanat, lukuaika, puheaika ja Flesch-Kincaid."
         },
         {
           "icon": "RiTextWrap",
@@ -349,6 +368,21 @@
           "question": "Onko tekstini turvassa?",
           "answer": "Kyllä. Kaikki analyysi tapahtuu paikallisesti selaimessa. Tekstiä ei koskaan lähetetä palvelimelle.",
           "answerSchemaText": "Kyllä. Teksti käsitellään paikallisesti selaimessa."
+        },
+        {
+          "question": "Mikä on Flesch-Kincaid-pistemäärä?",
+          "answer": "Flesch Reading Ease (0–100) kertoo luettavuuden. 90–100 = erittäin helppo, 70–89 = helppo, 50–69 = keskitaso, 30–49 = vaikea, 0–29 = erittäin vaikea.",
+          "answerSchemaText": "Flesch Reading Ease (0–100)."
+        },
+        {
+          "question": "Miten puheaika lasketaan?",
+          "answer": "Sanojen määrä jaetaan 130:llä – keskivertopuhenopeus esityksissä.",
+          "answerSchemaText": "130 sanaa minuutissa."
+        },
+        {
+          "question": "Kuinka tarkka tavulaskuri on?",
+          "answer": "Työkalu käyttää kielikohtaisia heuristiikkoja jotka tunnistavat suomen kielen diftongit ja vokaalisäännöt.",
+          "answerSchemaText": "Kielikohtaiset heuristiikat."
         }
       ]
     },
@@ -376,5 +410,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Tarvitsetko ammattimaista sisältöä verkkosivuillesi?",
+    "description": "Kirjoitamme tekstejä, jotka sijoittuvat hyvin Googlessa ja vakuuttavat kävijät toimimaan. Palvelukuvaukset, blogiartikkelit ja verkkosisältö.",
+    "btnOne": "Palvelumme",
+    "btnOneLink": "/fi/yhteystiedot",
+    "btnTwo": "Ota yhteyttä",
+    "btnTwoLink": "/fi/yhteystiedot",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

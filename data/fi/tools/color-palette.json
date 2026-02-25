@@ -39,6 +39,14 @@
         "Tumma paletti – syvät värit tummille teemoille",
         "Tonaalinen paletti – yhden sävyn kirkkausasteikko",
         "Minimalistinen paletti – vahva korostus ja vaaleat neutraalit",
+        "Tetradinen kaava – 4 varia 90° valein",
+        "Lammin siirtyma – punaiset, oranssit, keltaiset",
+        "Viilea siirtyma – siniset, turkoosit, violetit",
+        "Maanlaheisetsavyt – ruskeat, oliivit, okrat",
+        "Neon – maksimaalinen kyllaisyys",
+        "Vintage – haalistetut retrosavyt",
+        "Korkea kontrasti – mustasta valkoiseen",
+        "Auringonlaskugradientti",
         "Perusväri HEX-muodossa",
         "Värivalitsin visuaaliseen valintaan",
         "Satunnainen aloitusväri",
@@ -163,6 +171,46 @@
           "icon": "RiContractLeftRightLine",
           "title": "Minimalistinen paletti",
           "description": "Yksi voimakas värikorostus ja useita hyvin vaaleita neutraaleja värejä. Koko paletti pysyy rauhallisena. Toimii hyvin modernissa käyttöliittymissä, joissa on paljon valkoista tilaa."
+        },
+        {
+          "icon": "RiGridLine",
+          "title": "Tetradinen (nelio) paletti",
+          "description": "Nelja savya 90° valein varipyoralla. Rikas ja tasapainoinen – ihanteellinen monimutkaisiin kayttoliittymiin ja datan visualisointiin."
+        },
+        {
+          "icon": "RiFireLine",
+          "title": "Lammin paletti",
+          "description": "Varit siirretty kohti punaisia, oransseja ja keltaisia. Herattaa energiaa ja lampoa."
+        },
+        {
+          "icon": "RiSnowflakeLine",
+          "title": "Viilea paletti",
+          "description": "Varit siirretty kohti sinisia, turkooseja ja violetteja. Viestii rauhaa ja ammattimaisuutta."
+        },
+        {
+          "icon": "RiSeedlingLine",
+          "title": "Maanlaheinen paletti",
+          "description": "Matalasti kyllastettyja ruskeita, oliiveja ja okroja luonnonmaisemien inspiroimana."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Neonpaletti",
+          "description": "Maksimaalisesti kyllastetyt varit sahkoisella intensiteetilla."
+        },
+        {
+          "icon": "RiAncientGateLine",
+          "title": "Vintagepaletti",
+          "description": "Haalistetut, lievästi lampimat savyt jotka muistuttavat vanhoja painatuksia ja retrovalokuvausta."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Korkean kontrastin paletti",
+          "description": "Aarimmäinen kirkkausjakauma. Erinomainen saavutettaviin suunnitelmiin ja WCAG-yhteensopiviin kayttoliittymiin."
+        },
+        {
+          "icon": "RiSunLine",
+          "title": "Auringonlaskugradientti",
+          "description": "Pehmea savyn kierto lampimasta viileaan, luonnollisen auringonlaskun tavoin."
         }
       ]
     },
@@ -175,6 +223,15 @@
       "title": "Mihin väripalettien generaattori perustuu?",
       "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° väripyörällä</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
       "html": "<p class=\"text-mid\">Kaikki paletit luodaan perusvärin matemaattisella muunnoksella HSL-väriavaruudessa. HSL kuvaa väriä kolmella arvolla: hue (H) on sijainti väripyörällä (0°–360°), saturation (S) määrittää värin voimakkuuden ja lightness (L) – kuinka vaalea tai tumma väri on.</p><p class=\"text-mid mt-3\">Komplementaariset, triadiset ja jaetut komplementaariset paletit perustuvat väripyörän geometriaan – värit sijoitetaan tasaisilla kulmaväleillä, mikä luo visuaalisen tasapainon. Monokromaattiset, pastelli- ja tummat paletit muuttavat vain kirkkautta ja kylläisyyttä säilyttäen saman sävyn.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Värit suomalaisessa muotoilussa",
+      "html": "<p class=\"text-mid mb-4\">Suomalainen muotoilu tunnetaan omintakeisesta värikäyttöstään:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Marimekko</strong> — rohkeat, suurikuvioiset printit käyttävät punaista, mustaa ja kirkkaita päävärejä tavalla, joka on tullut suomalaisen muotoilun tunnusmerkiksi.</li><li><strong>Saunakulttuurin puusävyt</strong> — lämpimät koivun, männyn ja tervan sävyt muodostavat luonnollisen palatin, jota käytetään laajalti sisäarkkitehtuurissa ja tuotesuunnittelussa.</li><li><strong>Arktinen valo</strong> — Suomen pitkät talvet ja kesän ylipitkä päivänvalo vaikuttavat värivalintoihin. Vaaleita, korkeakontrastisia paletteja suositaan luettavuuden vuoksi.</li></ul>"
     },
     {
       "type": "gap",
@@ -245,27 +302,42 @@
         {
           "question": "Missä muodossa perusväri pitää syöttää?",
           "answer": "Generaattori hyväksyy värit HEX-muodossa – lyhennettynä (esim. #F50) ja täydellisinä (esim. #FF5500). Tekstikentän vieressä on värinvalitsin, jolla värin voi valita visuaalisesti. Luodut paletit näyttävät HEX-koodin ja HSL-arvon jokaiselle värille.",
-          "answerSchemaText": "Generaattori hyväksyy HEX-värit (#RGB tai #RRGGBB). Jokaisella luodulla värillä on HEX-koodi ja HSL-arvo."
+          "answerSchemaText": "Generaattori hyväksyy HEX-värit (#RGB tai #RRGGBB). Jokaisella luodulla värillä on HEX-koodi ja HSL-arvo.",
+          "description": ""
         },
         {
           "question": "Kuinka monta väriä jokaisessa paletissa on?",
           "answer": "Jokainen paletti sisältää 4–6 väriä. Määrä riippuu skeematyypistä – monokromaattiset ja tonaaliset paletit luovat enemmän sävyjä, kun taas komplementaariset ja triadiset paletit keskittyvät harvempiin kontrastivareihin.",
-          "answerSchemaText": "Jokainen paletti sisältää 4–6 väriä skeematyypistä riippuen."
+          "answerSchemaText": "Jokainen paletti sisältää 4–6 väriä skeematyypistä riippuen.",
+          "description": ""
         },
         {
           "question": "Mikä on HSL-väriavaruus ja miten sitä luetaan?",
           "answer": "HSL on tapa kuvata värejä kolmella arvolla: H (sävy, 0°–360° väriympyrällä), S (kylläisyys, 0%–100%) ja L (valoisuus, 0%–100%). Generaattori näyttää HSL-arvot jokaisen värin vieressä, mikä helpottaa ymmärtämään, miten paletin värit eroavat toisistaan – esim. monokromaattinen paletti muuttaa vain valoisuutta (L), säilyttäen saman sävyn (H).",
-          "answerSchemaText": "HSL kuvaa värejä sävyn (H), kylläisyyden (S) ja valoisuuden (L) avulla. Generaattori näyttää nämä arvot jokaisen värin vieressä paletissa."
+          "answerSchemaText": "HSL kuvaa värejä sävyn (H), kylläisyyden (S) ja valoisuuden (L) avulla. Generaattori näyttää nämä arvot jokaisen värin vieressä paletissa.",
+          "description": ""
         },
         {
           "question": "Voinko käyttää luotuja paletteja kaupallisesti?",
           "answer": "Kyllä. Luotuja väripaletteja voi käyttää missä tahansa projektissa – kaupallisessa ja ei-kaupallisessa, ilman lisenssirajoituksia.",
-          "answerSchemaText": "Kyllä, luotuja paletteja voi käyttää rajoituksetta kaupallisissa ja ei-kaupallisissa projekteissa."
+          "answerSchemaText": "Kyllä, luotuja paletteja voi käyttää rajoituksetta kaupallisissa ja ei-kaupallisissa projekteissa.",
+          "description": ""
         },
         {
           "question": "Vaatiiko väripalettien generaattori kirjautumisen tai maksun?",
           "answer": "Generaattori on täysin ilmainen eikä vaadi kirjautumista tai rekisteröitymistä. Värit luodaan paikallisesti selaimessa – tietoja ei lähetetä ulkoisille palvelimille.",
-          "answerSchemaText": "Generaattori on ilmainen eikä vaadi kirjautumista. Värit luodaan paikallisesti selaimessa."
+          "answerSchemaText": "Generaattori on ilmainen eikä vaadi kirjautumista. Värit luodaan paikallisesti selaimessa.",
+          "description": ""
+        },
+        {
+          "question": "Mikä palettiTyyppi sopii parhaiten yrityssivustolle?",
+          "answer": "Monokromaattiset tai tonaaliset paletit toimivat hyvin yrityksille, koska ne tarjoavat yhtenäisen, rauhallisen visuaalisen hierarkian. Käytä tonaalista palettia rakentaaksesi täydellisen järjestelmän taustaväreistä, teksteistä, reunoista ja korostusväreistä yhdestä brändiväristä.",
+          "answerSchemaText": "Monokromaattiset tai tonaaliset paletit yhtenäiseen hierarkiaan."
+        },
+        {
+          "question": "Voinko käyttää paletteja kaupallisesti?",
+          "answer": "Kyllä. Voit käyttää generoituja väripaletteja missä tahansa projektissa — kaupallisessa ja ei-kaupallisessa, ilman lisenssirajoituksia.",
+          "answerSchemaText": "Kyllä, ilman rajoituksia."
         }
       ]
     },
@@ -293,5 +365,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Tarvitsetko yhtenäisen brändi-identiteetin?",
+    "description": "Suunnittelemme logoja, värijärjestelmiä ja yritysmateriaaleja — käyntikorteista sosiaalisen median pohjiin.",
+    "btnOne": "Palvelumme",
+    "btnOneLink": "/fi/yhteystiedot",
+    "btnTwo": "Ota yhteyttä",
+    "btnTwoLink": "/fi/yhteystiedot",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

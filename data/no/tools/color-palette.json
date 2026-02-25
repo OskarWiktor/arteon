@@ -39,6 +39,14 @@
         "Mørk palett – dype farger for mørke temaer",
         "Tonal palett – lysstyrkeskala for én farge",
         "Minimalistisk palett – sterk aksent og nøytrale farger",
+        "Tetradisk skjema – 4 farger pa 90°",
+        "Varm forskyvning – rodt, oransje, gult",
+        "Kald forskyvning – blatt, turkis, fiolett",
+        "Jordtoner – brunt, oliven, okker",
+        "Neon – maksimal metning",
+        "Vintage – avmettede retrotoner",
+        "Hoy kontrast – svart til hvitt",
+        "Solnedgangsgradient",
         "Grunnfarge i HEX-format",
         "Fargevelger for visuelt valg",
         "Tilfeldig startfarge",
@@ -163,6 +171,46 @@
           "icon": "RiContractLeftRightLine",
           "title": "Minimalistisk palett",
           "description": "En sterk fargeaksent og flere veldig lyse nøytrale farger. Hele paletten forblir rolig. Fungerer godt i moderne grensesnitt med mye hvitt rom."
+        },
+        {
+          "icon": "RiGridLine",
+          "title": "Tetradisk (kvadrat) palett",
+          "description": "Fire nyanser med 90° mellomrom. Rik og balansert – ideell for komplekse grensesnitt og datavisualisering."
+        },
+        {
+          "icon": "RiFireLine",
+          "title": "Varm palett",
+          "description": "Farger forskjovet mot rodt, oransje og gult. Fremkaller energi og varme."
+        },
+        {
+          "icon": "RiSnowflakeLine",
+          "title": "Kald palett",
+          "description": "Farger forskjovet mot blatt, turkis og fiolett. Kommuniserer ro og profesjonalisme."
+        },
+        {
+          "icon": "RiSeedlingLine",
+          "title": "Jordtoner",
+          "description": "Lavt mettede brune, oliven- og okkertoner inspirert av naturlandskap."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Neonpalett",
+          "description": "Maksimalt mettede farger med elektrisk intensitet."
+        },
+        {
+          "icon": "RiAncientGateLine",
+          "title": "Vintagepalett",
+          "description": "Avmettede, lett varme toner som minner om gamle trykk og retrofotografi."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Hoykontrastpalett",
+          "description": "Ekstremt lysstyrkespenn. Utmerket for tilgjengelige design og WCAG-kompatible grensesnitt."
+        },
+        {
+          "icon": "RiSunLine",
+          "title": "Solnedgangsgradient",
+          "description": "Myk nyanserotasjon fra varmt til kaldt, som en naturlig solnedgang."
         }
       ]
     },
@@ -175,6 +223,15 @@
       "title": "Hva bygger fargepalettgeneratoren på?",
       "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° på fargehjulet</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
       "html": "<p class=\"text-mid\">Alle paletter skapes gjennom matematisk transformasjon av grunnfargen i HSL-fargerommet. HSL beskriver en farge med tre verdier: hue (H) er posisjonen på fargehjulet (0°–360°), saturation (S) bestemmer fargens styrke, og lightness (L) – hvor lys eller mørk fargen er.</p><p class=\"text-mid mt-3\">Komplementære, triadiske og splittede komplementære paletter er basert på fargehjulets geometri – farger plasseres med like vinkelintervaller, noe som skaper visuell balanse. Monokromatiske, pastell- og mørke paletter endrer bare lysstyrke og metning, mens samme kulør beholdes.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Farger i norsk design og natur",
+      "html": "<p class=\"text-mid mb-4\">Norges natur og kulturtradisjoner gir unike fargeinspirasjoner:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Fjorder og nordlys</strong> — de dype blågrønne fjordene og nordlysets grønne, lilla og rosa bånd inspirerer kølige, atmosfæriske paletter som brukes i norsk reiseliv- og naturbranding.</li><li><strong>Bunad-tekstiler</strong> — tradisjonelle norske bunader bruker rike røde, blå og grønne farger i komplekse mønstre som varierer fra region til region.</li><li><strong>Edvard Munch</strong> — Munchs ekspresjonistiske bruk av intens rød, gul og blå viser at sterke fargekontraster kan kommunisere følelser direkte.</li></ul>"
     },
     {
       "type": "gap",
@@ -245,27 +302,42 @@
         {
           "question": "I hvilket format skal grunnfargen være?",
           "answer": "Generatoren godtar farger i HEX-format – forkortet (f.eks. #F50) og fullt (f.eks. #FF5500). Ved tekstfeltet er det en fargevelger som lar deg velge farge visuelt. Genererte paletter viser HEX-kode og HSL-verdi for hver farge.",
-          "answerSchemaText": "Generatoren godtar HEX-farger (#RGB eller #RRGGBB). Hver generert farge har HEX-kode og HSL-verdi."
+          "answerSchemaText": "Generatoren godtar HEX-farger (#RGB eller #RRGGBB). Hver generert farge har HEX-kode og HSL-verdi.",
+          "description": ""
         },
         {
           "question": "Hvor mange farger er det i hver palett?",
           "answer": "Hver palett inneholder 4 til 6 farger. Antallet avhenger av skjematypen – monokromatiske og tonale paletter genererer flere nyanser, mens komplementære og triadiske paletter fokuserer på færre kontrasterende farger.",
-          "answerSchemaText": "Hver palett inneholder 4 til 6 farger, avhengig av skjematypen."
+          "answerSchemaText": "Hver palett inneholder 4 til 6 farger, avhengig av skjematypen.",
+          "description": ""
         },
         {
           "question": "Hva er HSL-fargerommet og hvordan leser man det?",
           "answer": "HSL er en måte å beskrive farger med tre verdier: H (nyanse, 0°–360° på fargehjulet), S (metning, 0%–100%) og L (lyshet, 0%–100%). Generatoren viser HSL-verdier ved siden av hver farge, noe som gjør det lettere å forstå hvordan fargene i paletten skiller seg – f.eks. endrer en monokromatisk palett kun lysheten (L), mens nyansen (H) forblir den samme.",
-          "answerSchemaText": "HSL beskriver farger via nyanse (H), metning (S) og lyshet (L). Generatoren viser disse verdiene ved siden av hver farge i paletten."
+          "answerSchemaText": "HSL beskriver farger via nyanse (H), metning (S) og lyshet (L). Generatoren viser disse verdiene ved siden av hver farge i paletten.",
+          "description": ""
         },
         {
           "question": "Kan jeg bruke genererte paletter kommersielt?",
           "answer": "Ja. Du kan bruke genererte fargepaletter i ethvert prosjekt – kommersielt og ikke-kommersielt, uten lisens-begrensninger.",
-          "answerSchemaText": "Ja, genererte paletter kan brukes uten begrensninger i kommersielle og ikke-kommersielle prosjekter."
+          "answerSchemaText": "Ja, genererte paletter kan brukes uten begrensninger i kommersielle og ikke-kommersielle prosjekter.",
+          "description": ""
         },
         {
           "question": "Krever fargepalettgeneratoren innlogging eller betaling?",
           "answer": "Generatoren er helt gratis og krever ingen innlogging eller registrering. Farger genereres lokalt i nettleseren – ingen data sendes til eksterne servere.",
-          "answerSchemaText": "Generatoren er gratis, krever ingen innlogging. Farger genereres lokalt i nettleseren."
+          "answerSchemaText": "Generatoren er gratis, krever ingen innlogging. Farger genereres lokalt i nettleseren.",
+          "description": ""
+        },
+        {
+          "question": "Hvilken palettetype passer best for en bedriftsnettside?",
+          "answer": "Monokromatiske eller tonale paletter fungerer godt for bedriftssider fordi de gir et enhetlig, rolig visuelt hierarki. Bruk den tonale paletten til å bygge et komplett system av bakgrunn, tekst, kanter og aksentfarger fra én merkefarge.",
+          "answerSchemaText": "Monokromatisk eller tonal for enhetlig hierarki."
+        },
+        {
+          "question": "Kan jeg bruke de genererte palettene kommersielt?",
+          "answer": "Ja. Du kan bruke de genererte fargepalettene i et hvilket som helst prosjekt — kommersielt og ikke-kommersielt, uten lisensbegrensninger.",
+          "answerSchemaText": "Ja, uten begrensninger."
         }
       ]
     },
@@ -293,5 +365,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Trenger du en helhetlig visuell identitet?",
+    "description": "Vi designer logoer, fargesystemer og profilmateriell — fra visittkort til maler for sosiale medier.",
+    "btnOne": "Våre tjenester",
+    "btnOneLink": "/no/kontakt",
+    "btnTwo": "Kontakt oss",
+    "btnTwoLink": "/no/kontakt",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "hu",
   "metadata": {
-    "title": "Szó-, karakter- és olvasásiidő-számláló szövegformázással",
-    "description": "Ingyenes szó-, karakter-, mondat-, bekezdés- és olvasásiidő-számláló kis- és nagybetű-konverterrel. Ellenőrizze a szöveg hosszát és módosítsa a betűket.",
+    "title": "Szoszamlalo Flesch-Kincaid olvashatosaggal es szovegeszközökkel",
+    "description": "Ingyenes szo-, karakter- es szotagszamlalo Flesch-Kincaid olvashatosaggal, olvasasi idovel, beszedidovel es 10 formazoeszkozzel. Regisztracio nelkul.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/szo-es-karakterszamlalo-hu.webp",
     "path": "/hu/eszkozok/szo-es-karakterszamlalo"
   },
   "hero": {
-    "title": "Számolja a szavakat és karaktereket – olvasási idő és formázás",
-    "description": "Illessze be szövegét, és az eszköz megszámolja a szavakat, karaktereket, mondatokat, bekezdéseket, egyedi szavakat és az olvasási időt",
+    "title": "Szamold meg a szavakat, karaktereket es olvashatosagot – Flesch-Kincaid, olvasasi ido es szovegeszközök",
+    "description": "Illeszd be a szoveget, es az eszkoz megszamolja a szavakat, karaktereket, szotagokat, mondatokat, bekezdéseket, egyedi szavakat, olvasasi es beszedidot, es kiszamitja a Flesch-Kincaid olvashatosagi pontszamot.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -33,7 +33,11 @@
         "Online letter case converter",
         "Uppercase to lowercase converter",
         "Remove duplicate lines from text",
-        "Sort text lines alphabetically"
+        "Sort text lines alphabetically",
+        "Flesch-Kincaid olvashatosag-ellenorzo",
+        "Szotagszamlalo online",
+        "Beszedido kalkulator",
+        "Szoveg olvashatosagi eszkoz"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Ingyenes szó- és karakterszámláló szövegformázó eszközökkel. Megszámolja a szavakat, karaktereket, mondatokat, bekezdéseket, egyedi szavakat és az olvasási időt. 10 eszközt kínál: kis-/nagybetű-konverzió, szóközök, üres sorok, duplikátumok eltávolítása és rendezés.",
@@ -68,7 +72,7 @@
         },
         {
           "name": "Ellenőrizze a statisztikákat",
-          "text": "A bal oldali panelen 11 metrikát lát: szavak, karakterek, mondatok, bekezdések, egyedi szavak, átlagos szóhossz és olvasási idő."
+          "text": "A bal oldali panelen 11 metrikat latsz: szavak, karakterek szokozokkel es nelkul, mondatok, bekezdések, egyedi szavak, atlagos szohossz, olvasasi ido, beszedido, szotagok es Flesch-Kincaid pontszam."
         },
         {
           "name": "Alakítsa át a szöveget",
@@ -89,7 +93,7 @@
     {
       "type": "sectionBasic",
       "title": "Ingyenes szó- és karakterszámláló szövegeszközökkel",
-      "html": "<p class=\"text-mid\">Ez az eszköz szó- és karakterszámlálót kombinál szövegformázási funkciókkal. Illessze be a szöveget, és látni fogja a szavak, karakterek, mondatok, bekezdések, egyedi szavak számát és az olvasási időt.</p><p class=\"text-mid mt-3\">A szövegmező alatt 10 eszközt talál: kis-/nagybetű átalakítás, szóközök, üres sorok, duplikátumok eltávolítása és rendezés. Minden helyben, a böngészőben történik.</p>",
+      "html": "<p class=\"text-mid\">Ez az eszkoz otvozi a szo- es karakterszamlalot a Flesch-Kincaid olvashatosagi elemzessel es szovegformazo funkciokkal. Illeszd be a szoveget, es megjelenik a szavak, karakterek, szotagok, mondatok, bekezdések, egyedi szavak, olvasasi ido, beszedido es a szinkodolt olvashatosagi pontszam.</p><p class=\"text-mid mt-3\">A <strong>Flesch-Kincaid olvashatosagi pontszam</strong> (0–100) megmutatja, mennyire konnyu olvasni a szoveget. 70 feletti pontszam konnyu olvasast, 30 alatti akademiai szintet jelent.</p><p class=\"text-mid mt-3\">A szovegmezo alatt 10 eszkozt talalsz: kis-nagybetu atalakitas, szokozok, ures sorok, duplikatumok eltavolitasa es rendezes. Minden feldolgozas helyben, a bongeszoben tortenik.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/szo-es-karakterszamlalo-hu.webp",
       "imageAlt": "Szó- és karakterszámláló – Arteon"
     },
@@ -111,7 +115,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Ellenőrizze a statisztikákat",
-          "description": "A bal oldali panelen 11 metrikát lát: szavak, karakterek, mondatok, bekezdések, egyedi szavak, átlagos szóhossz és olvasási idő."
+          "description": "A bal oldali panelen 11 metrikat latsz: szavak, karakterek szokozokkel es nelkul, mondatok, bekezdések, egyedi szavak, atlagos szohossz, olvasasi ido, beszedido, szotagok es Flesch-Kincaid pontszam."
         },
         {
           "icon": "RiTextWrap",
@@ -131,8 +135,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 szövegmetrika",
-      "description": "A számláló nyolc mutató alapján elemzi a szöveget:",
+      "title": "11 szovegmetrika – mit mer a szamlalo?",
+      "description": "A szamlalo tizenegy mutatoval elemzi a szoveget:",
       "grid": "two",
       "items": [
         {
@@ -174,6 +178,21 @@
           "icon": "RiTimeLine",
           "title": "Reading time",
           "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
+        },
+        {
+          "icon": "RiMicLine",
+          "title": "Beszedido",
+          "description": "Becsult beszedido 130 szo/perc sebesseggel. Eloadasokhoz es prezentaciokhoz."
+        },
+        {
+          "icon": "RiInputMethodLine",
+          "title": "Szotagok",
+          "description": "Összesen szotagok szama nyelvspecifikus heurisztikakkal."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Olvashatosag (Flesch-Kincaid)",
+          "description": "Pontszam 0–100. 70 felett = konnyu, 50–70 = kozepes, 30 alatt = akademiai. Szinkodolt."
         }
       ]
     },
@@ -296,13 +315,13 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Mi teszi különlegessé ezt a számlálót?",
+      "title": "Mi teszi kulonlegesse ezt a szoszamlalot?",
       "grid": "two",
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "8 text metrics",
-          "description": "Words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time — all in one panel."
+          "title": "11 metrika + olvashatosagi pontszam",
+          "description": "Szavak, karakterek, szotagok, mondatok, bekezdések, egyedi szavak, olvasasi ido, beszedido es Flesch-Kincaid."
         },
         {
           "icon": "RiTextWrap",
@@ -349,6 +368,21 @@
           "question": "Biztonságban van a szövegem?",
           "answer": "Igen. Minden elemzés helyben, a böngészőben történik. A szöveg soha nem kerül szerverre.",
           "answerSchemaText": "Igen. A szöveg helyben, a böngészőben kerül feldolgozásra."
+        },
+        {
+          "question": "Mi az a Flesch-Kincaid pontszam?",
+          "answer": "A Flesch Reading Ease (0–100) azt mutatja, mennyire konnyu olvasni a szoveget. 90–100 = nagyon konnyu, 70–89 = konnyu, 50–69 = kozepes, 30–49 = nehez, 0–29 = nagyon nehez.",
+          "answerSchemaText": "Flesch Reading Ease (0–100), magasabb = konnyebb."
+        },
+        {
+          "question": "Hogyan szamitja a beszedidot?",
+          "answer": "A szavakat elosztja 130-cal – az atlagos prezentacios beszedsebességgel.",
+          "answerSchemaText": "130 szo/perc."
+        },
+        {
+          "question": "Mennyire pontos a szotagszamlalo?",
+          "answer": "Nyelvspecifikus heurisztikakat hasznal. A magyar eseteban figyelembe veszi a maganhangzo-szabalyokat.",
+          "answerSchemaText": "Nyelvspecifikus heurisztikak."
         }
       ]
     },
@@ -376,5 +410,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Professzionális tartalomra van szüksége weboldalához?",
+    "description": "Olyan szövegeket írunk, amelyek jól rangsorolnak a Google-ben és cselekvésre ösztönzik a látogatókat. Szolgáltatásleírások, blogcikkek és webtartalmak.",
+    "btnOne": "Szolgáltatásaink",
+    "btnOneLink": "/hu/kapcsolat",
+    "btnTwo": "Kapcsolat",
+    "btnTwoLink": "/hu/kapcsolat",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

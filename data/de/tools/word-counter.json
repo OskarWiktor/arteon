@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "de",
   "metadata": {
-    "title": "Wort-, Zeichen- und Lesezeiträhler mit Textformatierung",
-    "description": "Kostenloser Zähler für Wörter, Zeichen, Sätze, Absätze und Lesezeit mit Groß-/Kleinschreibungskonverter. Textlänge prüfen und Buchstaben ändern.",
+    "title": "Wortzähler mit Flesch-Kincaid Lesbarkeitsindex & Texttools",
+    "description": "Kostenloser Wort-, Zeichen- & Silbenzähler mit Flesch-Kincaid Lesbarkeitsbewertung, Lesezeit, Sprechzeit & 10 Textformatierungs-Tools. Ohne Anmeldung.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/wort-und-zeichenzaehler-de.webp",
     "path": "/de/werkzeuge/wort-und-zeichenzaehler"
   },
   "hero": {
-    "title": "Wörter und Zeichen zählen – Lesezeit prüfen und Text formatieren",
-    "description": "Text einfügen – das Tool zählt Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter und Lesezeit. Groß-/Kleinschreibung ändern, Duplikate entfernen oder Zeilen sortieren",
+    "title": "Wörter, Zeichen & Lesbarkeit zählen – Flesch-Kincaid-Index, Lesezeit und Textwerkzeuge",
+    "description": "Text einfügen – das Tool zählt Wörter, Zeichen, Silben, Sätze, Absätze, einzigartige Wörter, Lesezeit, Sprechzeit und berechnet den Flesch-Kincaid-Lesbarkeitsindex. Groß-/Kleinschreibung ändern, Duplikate entfernen oder Zeilen sortieren.",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/wort-und-zeichenzaehler-de.webp"
   },
   "breadcrumbs": {
@@ -24,19 +24,21 @@
   },
   "schemas": {
     "software": {
-      "name": "Wort-, Zeichen- und Lesezeiträhler mit Textformatierung",
+      "name": "Wortzähler mit Flesch-Kincaid Lesbarkeitsindex & Texttools",
       "alternateName": [
-        "Online word counter",
-        "Character counter with and without spaces",
-        "Word counting tool for copywriters",
-        "Reading time calculator",
-        "Online letter case converter",
-        "Uppercase to lowercase converter",
-        "Remove duplicate lines from text",
-        "Sort text lines alphabetically"
+        "Online Wortzähler",
+        "Zeichenzähler mit und ohne Leerzeichen",
+        "Wortzähler für Texter und Redakteure",
+        "Lesezeit-Rechner",
+        "Flesch-Kincaid Lesbarkeitsprüfer",
+        "Silbenzähler online",
+        "Sprechzeit-Rechner",
+        "Groß-Kleinschreibung Konverter",
+        "Lesbarkeits-Tool für Texte",
+        "Duplikate aus Text entfernen"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Kostenloser Wort- und Zeichenzähler mit Textformatierungswerkzeugen. Zählt Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter und Lesezeit. Bietet 10 Werkzeuge: Groß-/Kleinschreibung, Leerzeichen entfernen, Leerzeilen, Duplikate und Sortierung.",
+      "description": "Kostenloser Wort- und Zeichenzähler mit Flesch-Kincaid Lesbarkeitsbewertung, Silbenzählung, Lese- und Sprechzeitschätzung und 10 Textformatierungswerkzeugen. Verarbeitung lokal im Browser.",
       "featureList": [
         "Wörter zählen",
         "Zeichen mit und ohne Leerzeichen zählen",
@@ -46,7 +48,7 @@
         "Geschätzte Lesezeit",
         "Geschätzte Sprechzeit",
         "Silbenzählung",
-        "Flesch-Kincaid-Lesbarkeitsindex",
+        "Flesch-Kincaid-Lesbarkeitsindex (Amstad-Formel für Deutsch)",
         "Sprachspezifische Lesbarkeitsformeln (16 Sprachen)",
         "In Groß- oder Kleinbuchstaben umwandeln",
         "In Satz- oder Titelschreibweise umwandeln",
@@ -59,7 +61,7 @@
     },
     "howTo": {
       "name": "So verwenden Sie den Wort- und Zeichenzähler",
-      "description": "Text in drei Schritten analysieren und formatieren:",
+      "description": "Wörter, Zeichen, Silben und Sätze zählen. Flesch-Kincaid-Lesbarkeit, Lesezeit und Sprechzeit prüfen. Text mit 10 Werkzeugen formatieren.",
       "totalTime": "PT1M",
       "steps": [
         {
@@ -68,7 +70,7 @@
         },
         {
           "name": "Statistiken prüfen",
-          "text": "Im linken Panel sehen Sie 11 Metriken: Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter, Wortlänge und Lesezeit."
+          "text": "Im linken Panel sehen Sie 11 Textmetriken: Wörter, Zeichen mit und ohne Leerzeichen, Sätze, Absätze, einzigartige Wörter, Wortlänge, Lesezeit, Sprechzeit, Silben und Flesch-Kincaid-Lesbarkeitsindex."
         },
         {
           "name": "Text umwandeln",
@@ -89,7 +91,7 @@
     {
       "type": "sectionBasic",
       "title": "Kostenloser Wort- und Zeichenzähler mit Textwerkzeugen",
-      "html": "<p class=\"text-mid\">Dieses Tool kombiniert einen Wort- und Zeichenzähler mit Textformatierungsfunktionen. Fügen Sie Text ein und sehen Sie Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter und Lesezeit.</p><p class=\"text-mid mt-3\">Unter dem Textfeld finden Sie 10 Werkzeuge: Groß-/Kleinschreibung, Entfernen von Leerzeichen, Leerzeilen, Duplikaten und Sortierung. Alles läuft lokal im Browser.</p>",
+      "html": "<p class=\"text-mid\">Dieses Tool kombiniert einen Wort- und Zeichenzähler mit Flesch-Kincaid-Lesbarkeitsanalyse und Textformatierungsfunktionen. Fügen Sie Text ein und sehen Sie Wörter, Zeichen, Silben, Sätze, Absätze, einzigartige Wörter, Lesezeit, Sprechzeit und einen farbcodierten Lesbarkeitsindex.</p><p class=\"text-mid mt-3\">Der <strong>Flesch-Kincaid-Lesbarkeitsindex</strong> (0–100) zeigt, wie leicht Ihr Text zu lesen ist. Für deutsche Texte wird die <strong>Amstad-Formel</strong> verwendet: 180 − ASL − 58,5 × ASW. Werte über 70 bedeuten leichte Lesbarkeit, unter 30 akademisches Niveau.</p><p class=\"text-mid mt-3\">Unter dem Textfeld finden Sie 10 Werkzeuge: Groß-/Kleinschreibung (GROSSBUCHSTABEN, kleinbuchstaben, Satzanfang, Titelschreibweise), Leerzeichen, Leerzeilen und Duplikate entfernen sowie alphabetisches Sortieren. Alles läuft lokal im Browser.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/wort-und-zeichenzaehler-de.webp",
       "imageAlt": "Wort- und Zeichenzähler – Arteon"
     },
@@ -111,7 +113,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Statistiken prüfen",
-          "description": "Im linken Panel sehen Sie 11 Metriken: Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter, Wortlänge und Lesezeit."
+          "description": "Im linken Panel sehen Sie 11 Textmetriken: Wörter, Zeichen mit und ohne Leerzeichen, Sätze, Absätze, einzigartige Wörter, Wortlänge, Lesezeit, Sprechzeit, Silben und Flesch-Kincaid-Lesbarkeitsindex."
         },
         {
           "icon": "RiTextWrap",
@@ -131,49 +133,64 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 Textmetriken",
-      "description": "Der Zähler analysiert Ihren Text anhand von acht Indikatoren:",
+      "title": "11 Textmetriken – was der Zähler misst",
+      "description": "Der Zähler analysiert Ihren Text anhand von elf Indikatoren:",
       "grid": "two",
       "items": [
         {
           "icon": "RiText",
-          "title": "Words",
-          "description": "Total word count. The primary indicator of text length, useful for content creation, articles and descriptions."
+          "title": "Wörter",
+          "description": "Gesamtzahl der Wörter. Der wichtigste Indikator für die Textlänge, nützlich für Artikel, Beschreibungen und Content-Erstellung."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Characters (with spaces)",
-          "description": "All characters including spaces. Useful when a platform has a character limit (e.g., Amazon listings, meta descriptions)."
+          "title": "Zeichen (mit Leerzeichen)",
+          "description": "Alle Zeichen einschließlich Leerzeichen. Nützlich bei Zeichenlimits auf Plattformen (z.B. Amazon-Titel, Meta-Descriptions)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Characters (without spaces)",
-          "description": "Only letters, digits and punctuation. The standard billing unit for translations and print shops."
+          "title": "Zeichen (ohne Leerzeichen)",
+          "description": "Nur Buchstaben, Ziffern und Satzzeichen. Die Standard-Abrechnungseinheit bei Übersetzungsbüros und Druckereien."
         },
         {
           "icon": "RiChatQuoteLine",
-          "title": "Sentences",
-          "description": "Number of sentences in the text. Helps assess complexity and readability — shorter sentences are easier to absorb."
+          "title": "Sätze",
+          "description": "Anzahl der Sätze im Text. Hilft bei der Bewertung von Komplexität und Lesbarkeit – kürzere Sätze sind leichter verständlich."
         },
         {
           "icon": "RiParagraph",
-          "title": "Paragraphs",
-          "description": "Text blocks separated by blank lines. Well-structured paragraphs improve readability on screens."
+          "title": "Absätze",
+          "description": "Textblöcke, getrennt durch Leerzeilen. Gut strukturierte Absätze verbessern die Lesbarkeit auf Bildschirmen."
         },
         {
           "icon": "RiStarLine",
-          "title": "Unique words",
-          "description": "Number of non-repeating words. A higher ratio of unique to total words indicates richer vocabulary."
+          "title": "Einzigartige Wörter",
+          "description": "Anzahl nicht-wiederholender Wörter. Ein höheres Verhältnis zeigt reichhaltigeres Vokabular an."
         },
         {
           "icon": "RiRulerLine",
-          "title": "Average word length",
-          "description": "Average number of characters per word. An indicator of text complexity — technical texts have longer words than casual ones."
+          "title": "Durchschnittliche Wortlänge",
+          "description": "Durchschnittliche Zeichenzahl pro Wort. Bei deutschen Texten oft höher durch zusammengesetzte Wörter (Komposita)."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Reading time",
-          "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
+          "title": "Lesezeit",
+          "description": "Geschätzte Lesezeit bei 200 Wörtern pro Minute. Ein Richtwert für typischen Fließtext."
+        },
+        {
+          "icon": "RiMicLine",
+          "title": "Sprechzeit",
+          "description": "Geschätzte Sprechzeit bei 130 Wörtern pro Minute. Nützlich für Reden, Präsentationen und Videoskripte."
+        },
+        {
+          "icon": "RiInputMethodLine",
+          "title": "Silben",
+          "description": "Gesamtzahl der Silben mit sprachspezifischen Heuristiken. Erkennt deutsche Diphthonge (ei, au, eu, äu). Schlüsselparameter für Lesbarkeitsformeln."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Lesbarkeit (Flesch-Kincaid)",
+          "description": "Ein Wert von 0–100, der die Lesbarkeit anzeigt. Über 70 = leicht, 50–70 = mittel, unter 30 = akademisch. Farbcodiert für schnelle Bewertung. Für Deutsch wird die Amstad-Formel verwendet."
         }
       ]
     },
@@ -189,53 +206,53 @@
       "items": [
         {
           "icon": "RiArrowUpLine",
-          "title": "UPPERCASE",
-          "description": "Converts all text to uppercase. Useful for headings, acronyms and highlighting text fragments."
+          "title": "GROSSBUCHSTABEN",
+          "description": "Wandelt den gesamten Text in Großbuchstaben um. Nützlich für Überschriften, Akronyme und Hervorhebungen."
         },
         {
           "icon": "RiArrowDownLine",
-          "title": "lowercase",
-          "description": "Converts all text to lowercase. Useful for normalizing text copied from different sources."
+          "title": "kleinbuchstaben",
+          "description": "Wandelt den gesamten Text in Kleinbuchstaben um. Nützlich zum Normalisieren von Text aus verschiedenen Quellen."
         },
         {
           "icon": "RiEditLine",
-          "title": "Sentence case",
-          "description": "First letter of each sentence is capitalized, the rest lowercase. Standard format for continuous text."
+          "title": "Satzanfang groß",
+          "description": "Erster Buchstabe jedes Satzes groß, Rest klein. Standardformat für Fließtext."
         },
         {
           "icon": "RiHeading",
-          "title": "Title Case",
-          "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
+          "title": "Titelschreibweise",
+          "description": "Jedes Wort beginnt mit einem Großbuchstaben. Ideal für Titel, Überschriften und Eigennamen."
         },
         {
           "icon": "RiArrowLeftRightLine",
-          "title": "tOGGLE cASE",
-          "description": "Swaps uppercase to lowercase and vice versa. Useful when text was typed with Caps Lock on."
+          "title": "Umkehren",
+          "description": "Tauscht Groß- gegen Kleinbuchstaben und umgekehrt. Nützlich bei versehentlich aktivierter Feststelltaste."
         },
         {
           "icon": "RiSpace",
-          "title": "Remove extra spaces",
-          "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
+          "title": "Überflüssige Leerzeichen entfernen",
+          "description": "Reduziert mehrfache Leerzeichen auf eines und entfernt Leerzeichen am Zeilenanfang und -ende."
         },
         {
           "icon": "RiDeleteRow",
-          "title": "Remove empty lines",
-          "description": "Removes empty and redundant lines from text. Useful for cleaning text copied from websites."
+          "title": "Leerzeilen entfernen",
+          "description": "Entfernt leere und überflüssige Zeilen. Nützlich zum Bereinigen von kopierten Texten."
         },
         {
           "icon": "RiFilterLine",
-          "title": "Remove duplicate lines",
-          "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
+          "title": "Duplikate entfernen",
+          "description": "Behält nur einzigartige Zeilen und entfernt Wiederholungen. Nützlich zum Bereinigen von Listen."
         },
         {
           "icon": "RiSortAsc",
-          "title": "Sort A→Z",
-          "description": "Sorts text lines alphabetically in ascending order. Useful for organizing lists, keywords and data."
+          "title": "Sortieren A→Z",
+          "description": "Sortiert Textzeilen alphabetisch aufsteigend. Nützlich für Listen, Schlüsselwörter und Daten."
         },
         {
           "icon": "RiSortDesc",
-          "title": "Sort Z→A",
-          "description": "Sorts text lines alphabetically in descending order. Reverse sort order."
+          "title": "Sortieren Z→A",
+          "description": "Sortiert Textzeilen alphabetisch absteigend. Umgekehrte Sortierreihenfolge."
         }
       ]
     },
@@ -245,39 +262,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Für wen ist der Wortzähler?",
+      "title": "Für wen ist der Wortzähler gedacht?",
       "description": "Das Tool ist nützlich für alle, die mit Text arbeiten:",
       "grid": "three",
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Copywriters and editors",
-          "description": "Count words and characters, check platform limits, quickly change letter case and clean text before publishing."
+          "title": "Texter und Redakteure",
+          "description": "Wörter und Zeichen zählen, Plattformlimits prüfen, Groß-/Kleinschreibung ändern und Text vor der Veröffentlichung bereinigen."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Bloggers and content creators",
-          "description": "Monitor post length, check reading time, remove duplicate lines and sort lists."
+          "title": "Blogger und Content-Ersteller",
+          "description": "Beitragslänge kontrollieren, Lesbarkeit und Lesezeit prüfen, Duplikate entfernen und Listen sortieren."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "Store owners",
-          "description": "Verify product descriptions against character limits on platforms (Amazon, eBay, Etsy)."
+          "title": "Shop-Betreiber",
+          "description": "Produktbeschreibungen gegen Zeichenlimits auf Plattformen prüfen (Amazon, eBay, Otto)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO specialists",
-          "description": "Analyze content length, count unique words and assess text complexity based on average word length."
+          "title": "SEO-Spezialisten",
+          "description": "Textlänge analysieren, Flesch-Kincaid-Lesbarkeit prüfen, einzigartige Wörter zählen und Textkomplexität bewerten."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Students and academics",
-          "description": "Check word or character limits in essays and research papers."
+          "title": "Studenten und Wissenschaftler",
+          "description": "Wort- oder Zeichenlimits in Hausarbeiten und wissenschaftlichen Texten prüfen. Lesbarkeit der Abschlussarbeit bewerten."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Translators",
-          "description": "Count characters without spaces for quotes (the standard billing unit in translation)."
+          "title": "Übersetzer",
+          "description": "Zeichen ohne Leerzeichen zählen – die Standard-Abrechnungseinheit im Übersetzungswesen."
         }
       ]
     },
@@ -301,33 +318,33 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "8 text metrics",
-          "description": "Words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time — all in one panel."
+          "title": "11 Textmetriken + Lesbarkeitsindex",
+          "description": "Wörter, Zeichen, Silben, Sätze, Absätze, einzigartige Wörter, Lesezeit, Sprechzeit und Flesch-Kincaid – alles in einem Panel."
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 formatting tools",
-          "description": "Letter case conversion, removing spaces, empty lines, duplicates and sorting — without installing additional software."
+          "title": "10 Formatierungswerkzeuge",
+          "description": "Groß-/Kleinschreibung, Leerzeichen, Leerzeilen, Duplikate und Sortierung – ohne zusätzliche Software."
         },
         {
           "icon": "RiUserLine",
-          "title": "Local processing in the browser",
-          "description": "Your text is never sent to any server. All analysis and transformation happens locally on your device."
+          "title": "Lokale Verarbeitung im Browser",
+          "description": "Ihr Text wird nie an einen Server gesendet. Analyse und Transformation erfolgen lokal auf Ihrem Gerät."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Copy and clear text",
-          "description": "Copy the modified text to your clipboard with one click or clear the field to start over."
+          "title": "Text kopieren und löschen",
+          "description": "Kopierten Text mit einem Klick in die Zwischenablage übertragen oder das Feld löschen."
         },
         {
           "icon": "RiTimerLine",
-          "title": "Instant results",
-          "description": "Statistics update in real time as you type or paste text. No waiting for processing."
+          "title": "Sofortige Ergebnisse",
+          "description": "Statistiken aktualisieren sich in Echtzeit beim Tippen oder Einfügen. Kein Warten auf Verarbeitung."
         },
         {
           "icon": "RiLockLine",
-          "title": "No registration or limits",
-          "description": "The tool is completely free. No registration, login or personal data required."
+          "title": "Ohne Registrierung und Limits",
+          "description": "Das Tool ist komplett kostenlos. Keine Registrierung, kein Login, keine persönlichen Daten erforderlich."
         }
       ]
     },
@@ -342,23 +359,38 @@
       "items": [
         {
           "question": "Wie funktioniert der Lesezeit-Rechner?",
-          "answer": "Das Tool teilt die Wortanzahl durch 200 – die durchschnittliche Lesegeschwindigkeit. Technische Texte werden langsamer gelesen, leichte Artikel schneller. Das Ergebnis ist ein Richtwert.",
-          "answerSchemaText": "Das Tool geht von 200 Wörtern pro Minute aus."
+          "answer": "Das Tool teilt die Wortanzahl durch 200 – die durchschnittliche Lesegeschwindigkeit für typischen Text. Technische Texte werden langsamer gelesen, leichte Artikel schneller. Das Ergebnis ist ein Richtwert.",
+          "answerSchemaText": "Das Tool rechnet mit 200 Wörtern pro Minute als durchschnittliche Lesegeschwindigkeit."
         },
         {
           "question": "Was ist der Unterschied zwischen Zeichen mit und ohne Leerzeichen?",
-          "answer": "Zeichen mit Leerzeichen umfasst alle Zeichen einschließlich Leerzeichen. Zeichen ohne Leerzeichen enthält nur Buchstaben, Ziffern und Satzzeichen. Übersetzungsbüros rechnen nach Zeichen ohne Leerzeichen ab.",
-          "answerSchemaText": "Zeichen mit Leerzeichen umfasst alle Zeichen, ohne Leerzeichen nur Buchstaben und Ziffern."
+          "answer": "Zeichen mit Leerzeichen umfasst alle Zeichen einschließlich Leerzeichen, Tabulatoren und Zeilenumbrüchen. Zeichen ohne Leerzeichen enthält nur Buchstaben, Ziffern und Satzzeichen. Übersetzungsbüros rechnen nach Zeichen ohne Leerzeichen ab. Plattformen wie Amazon haben Limits in Zeichen mit Leerzeichen.",
+          "answerSchemaText": "Zeichen mit Leerzeichen umfasst alle Zeichen; ohne Leerzeichen nur Buchstaben und Ziffern. Relevant für Abrechnungen und Plattformlimits."
         },
         {
           "question": "Wie funktioniert die Groß-/Kleinschreibung?",
-          "answer": "Das Tool bietet 5 Modi: GROSSBUCHSTABEN, kleinbuchstaben, Satzanfang groß, Jedes Wort Groß und Umkehren. Klicken Sie den entsprechenden Button in der Werkzeugleiste.",
-          "answerSchemaText": "Das Tool hat 5 Modi für die Groß-/Kleinschreibung."
+          "answer": "Das Tool bietet 5 Modi: GROSSBUCHSTABEN (alles groß), kleinbuchstaben (alles klein), Satzanfang groß (erster Buchstabe jedes Satzes), Titelschreibweise (jedes Wort groß) und Umkehren (Groß wird klein und umgekehrt). Klicken Sie den gewünschten Button in der Werkzeugleiste.",
+          "answerSchemaText": "Das Tool hat 5 Modi: GROSS, klein, Satzanfang, Titelschreibweise und Umkehren."
         },
         {
           "question": "Ist mein Text sicher?",
-          "answer": "Ja. Alle Analyse und Verarbeitung erfolgt lokal in Ihrem Browser. Der Text wird nie an einen Server gesendet.",
-          "answerSchemaText": "Ja. Der Text wird lokal im Browser verarbeitet."
+          "answer": "Ja. Alle Analyse und Verarbeitung erfolgt ausschließlich in Ihrem Browser – der Text wird nie an einen Server gesendet. Das Tool speichert keinen eingefügten Text. Nach dem Schließen der Seite ist der Text unwiederbringlich weg.",
+          "answerSchemaText": "Ja. Der Text wird lokal im Browser verarbeitet und nie an einen Server gesendet."
+        },
+        {
+          "question": "Was ist der Flesch-Kincaid-Lesbarkeitsindex?",
+          "answer": "Der Flesch Reading Ease ist eine Zahl von 0 bis 100, die anzeigt, wie leicht ein Text zu lesen ist. Für deutsche Texte wird die Amstad-Formel verwendet: 180 − ASL − 58,5 × ASW (ASL = durchschnittliche Satzlänge, ASW = durchschnittliche Silben pro Wort). Werte von 90–100 bedeuten sehr leicht, 70–89 leicht, 50–69 mittel, 30–49 schwierig, 0–29 sehr schwierig. Deutsche Texte haben durch zusammengesetzte Wörter (Komposita) oft mehr Silben pro Wort.",
+          "answerSchemaText": "Der Flesch-Kincaid-Index (0–100) misst die Lesbarkeit. Für Deutsch wird die Amstad-Formel verwendet. Höherer Wert = leichterer Text."
+        },
+        {
+          "question": "Wie wird die Sprechzeit berechnet?",
+          "answer": "Die Sprechzeit wird berechnet, indem die Wortanzahl durch 130 geteilt wird – die durchschnittliche Sprechgeschwindigkeit bei Präsentationen und Reden. Das ist langsamer als 200 Wörter pro Minute beim Lesen, da Sprechen natürliche Pausen, Betonungen und Atempausen beinhaltet.",
+          "answerSchemaText": "Die Sprechzeit wird bei 130 Wörtern pro Minute berechnet – dem Durchschnitt für Präsentationen."
+        },
+        {
+          "question": "Wie genau ist der Silbenzähler?",
+          "answer": "Das Tool verwendet sprachspezifische Heuristiken. Für Deutsch erkennt es Diphthonge (ei, au, eu, äu), Umlaute und typische Silbenstrukturen zusammengesetzter Wörter. Für Englisch werden stille Buchstaben, Suffixe (-ed, -es, -le) und Diphthonge berücksichtigt. Die Zählung ist approximativ, aber ausreichend für Lesbarkeitsbewertungen.",
+          "answerSchemaText": "Der Silbenzähler nutzt sprachspezifische Heuristiken für 16 Sprachen einschließlich deutscher Diphthonge und Komposita."
         }
       ]
     },
@@ -386,5 +418,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Brauchen Sie professionelle Texte für Ihre Website?",
+    "description": "Wir schreiben Texte, die in Google ranken und zum Handeln überzeugen. Leistungsbeschreibungen, Blogartikel und Webinhalte.",
+    "btnOne": "Unsere Leistungen",
+    "btnOneLink": "/de/kontakt",
+    "btnTwo": "Kontakt aufnehmen",
+    "btnTwoLink": "/de/kontakt",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

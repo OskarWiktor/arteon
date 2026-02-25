@@ -312,6 +312,24 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Understanding the Flesch-Kincaid readability score",
+      "html": "<p class=\"text-mid mb-4\">The Flesch Reading Ease score measures how easy a text is to read on a scale from 0 to 100. It is calculated from two factors: average sentence length (words per sentence) and average word complexity (syllables per word).</p><p class=\"text-mid mb-4\">The formula for English is: <code class=\"rounded bg-black/5 px-2 py-1\">206.835 − 1.015 × ASL − 84.6 × ASW</code> where ASL is average sentence length and ASW is average syllables per word.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Very easy. Short sentences, common words. Understood by 11-year-olds.</li><li><strong>70–89</strong> — Easy. Conversational language. Suitable for a broad audience.</li><li><strong>50–69</strong> — Moderate. Standard business and journalism writing.</li><li><strong>30–49</strong> — Difficult. Long sentences, specialized vocabulary. College-level reading.</li><li><strong>0–29</strong> — Very difficult. Academic papers, legal documents, technical specifications.</li></ul><p class=\"text-mid mt-3\">This tool adapts the formula per language: Amstad for German, Fernández-Huerta for Spanish, Flesch-Douma for Dutch, Gulpease for Italian, and Kandel-Moles for French.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Why readability matters for SEO",
+      "html": "<p class=\"text-mid mb-4\">Search engines prioritize content that satisfies user intent. Readable text directly affects key engagement metrics:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Dwell time</strong> — visitors stay longer on pages they can read comfortably. Google interprets longer visits as a quality signal.</li><li><strong>Bounce rate</strong> — dense, hard-to-read text drives visitors away. A Flesch score below 30 on a general-audience page often correlates with high bounce rates.</li><li><strong>Featured snippets</strong> — Google tends to pull clear, concise answers into featured snippets. Shorter sentences and direct language increase the chance of being selected.</li><li><strong>Mobile readability</strong> — on small screens, long sentences and complex vocabulary are even harder to follow. Aiming for a Flesch score of 60+ improves the mobile experience.</li></ul><p class=\"text-mid mt-3\">A good target for web content is a Flesch score between 60 and 70 — clear enough for most readers, detailed enough to convey expertise.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "What makes this word and character counter special?",
       "grid": "two",
@@ -401,6 +419,21 @@
           "question": "How accurate is the syllable counter?",
           "answer": "The tool uses language-specific heuristics to count syllables. For English, it handles silent-e, common suffixes (-ed, -es, -le), and diphthongs. For other languages, it recognizes language-specific diphthongs and vowel patterns (e.g., German ei/au/eu, French ou/ai/oi, Greek αι/ει/οι). The count is approximate but sufficient for readability scoring and text analysis.",
           "answerSchemaText": "The syllable counter uses language-specific heuristics for 16 languages, handling diphthongs and silent letters."
+        },
+        {
+          "question": "What Flesch score should I aim for in web content?",
+          "answer": "For general web content (blogs, service pages, product descriptions), aim for a Flesch Reading Ease score between 60 and 70. This range is clear enough for most readers while still conveying expertise. For specialized audiences (developers, scientists, legal professionals), scores of 40-50 are acceptable. For instructions or support content, target 70+ for maximum clarity.",
+          "answerSchemaText": "Aim for 60-70 for general web content, 40-50 for specialized audiences, and 70+ for instructions."
+        },
+        {
+          "question": "How is speaking time different from reading time?",
+          "answer": "Reading time assumes 200 words per minute — the average silent reading speed. Speaking time uses 130 words per minute — the natural pace for presentations, podcasts, and public speaking, which includes pauses, emphasis, and breathing. A 1,000-word text takes about 5 minutes to read but 7.5 minutes to speak aloud.",
+          "answerSchemaText": "Reading time: 200 wpm (silent reading). Speaking time: 130 wpm (includes pauses and emphasis)."
+        },
+        {
+          "question": "Can I use this tool for languages other than English?",
+          "answer": "Yes. The tool supports 16 languages with adapted readability formulas: Amstad for German, Fernandez-Huerta for Spanish and Portuguese, Flesch-Douma for Dutch, Gulpease for Italian, and Kandel-Moles for French. For other supported languages (Polish, Czech, Hungarian, Romanian, Greek, Swedish, Danish, Norwegian, Finnish), a simplified Flesch adaptation is used. Word, character, and sentence counting works for all languages.",
+          "answerSchemaText": "Yes. 16 languages supported with language-adapted readability formulas and syllable counting."
         }
       ]
     },
@@ -428,5 +461,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Need professional content for your website?",
+    "description": "We write texts that rank well in Google and convince visitors to act. Service descriptions, blog articles and web content.",
+    "btnOne": "Our services",
+    "btnOneLink": "/en/contact",
+    "btnTwo": "Get in touch",
+    "btnTwoLink": "/en/contact",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

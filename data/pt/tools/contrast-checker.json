@@ -320,6 +320,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Requisitos de acessibilidade em Portugal e no Brasil",
+      "html": "<p class=\"text-mid mb-4\">Portugal e o Brasil possuem legislações distintas mas convergentes em matéria de acessibilidade digital:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Portugal — DL 83/2018</strong>: transpõe a diretiva europeia de acessibilidade web. Obriga organismos públicos a cumprir a norma EN 301 549, que referencia as WCAG 2.1 nível AA.</li><li><strong>Lei Europeia de Acessibilidade (EAA)</strong> — desde junho de 2025, as obrigações estendem-se ao setor privado: comércio eletrónico, banca, transportes e plataformas de media.</li><li><strong>Brasil — Lei Brasileira de Inclusão (13.146/2015)</strong>: exige que sítios web de organismos públicos e de empresas com presença digital significativa sejam acessíveis.</li><li><strong>Brasil — eMAG</strong> (Modelo de Acessibilidade em Governo Eletrônico): referencia as WCAG e define diretrizes específicas para portais governamentais brasileiros.</li></ul><p class=\"text-mid mt-3\">O rácio de contraste de 4,5:1 para texto normal e 3:1 para texto grande é exigido por todas as regulamentações acima.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "O que torna este verificador especial?",
       "grid": "two",
@@ -399,6 +408,22 @@
           "question": "Que pares de cores do meu site verificar primeiro?",
           "answer": "Os mais importantes: o texto sobre o fundo principal, o texto sobre banners e secções coloridas, os botões (cor do texto e fundo do botão em relação ao fundo da página), os links e os ícones. Preste atenção especial aos elementos que aparecem sobre fundos diferentes conforme as secções.",
           "answerSchemaText": "Verifique primeiro o texto sobre o fundo principal, banners, botões, links e ícones."
+        },
+        {
+          "question": "A legislação portuguesa exige contraste de cores?",
+          "answer": "Sim. O DL 83/2018 obriga os organismos públicos a cumprir a norma EN 301 549, que referencia as WCAG 2.1 nível AA. Isto inclui um rácio de contraste mínimo de 4,5:1 para texto normal e 3:1 para texto grande. Desde junho de 2025, a EAA estende a obrigação ao setor privado."
+        },
+        {
+          "question": "Os sites brasileiros também devem cumprir o contraste?",
+          "answer": "Sim. A Lei Brasileira de Inclusão (13.146/2015) exige acessibilidade digital para organismos públicos e empresas com presença digital significativa. O eMAG (Modelo de Acessibilidade em Governo Eletrônico) referencia as WCAG e define diretrizes específicas para portais governamentais."
+        },
+        {
+          "question": "Como encontro os códigos de cor do meu site?",
+          "answer": "No browser (Chrome, Firefox, Edge) abra as ferramentas de programador (clique direito > Inspecionar). No separador Estilos pode ver as cores da página. Em alternativa, extensões como ColorZilla permitem selecionar a cor de qualquer elemento."
+        },
+        {
+          "question": "Funciona para design em modo escuro?",
+          "answer": "Sim. A ferramenta verifica o rácio de contraste entre quaisquer duas cores. Para modo escuro, introduza uma cor de texto clara e um fundo escuro. Os mesmos limiares WCAG aplicam-se: 4,5:1 para texto normal (AA) e 7:1 (AAA)."
         }
       ]
     },
@@ -426,5 +451,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Precisa de um site acessível?",
+    "description": "Criamos sites pensados para todos os utilizadores — contraste de cores adequado, tipografia legível e estrutura lógica.",
+    "btnOne": "Os nossos serviços",
+    "btnOneLink": "/pt/contacto",
+    "btnTwo": "Contacte-nos",
+    "btnTwoLink": "/pt/contacto",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

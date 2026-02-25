@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "sv",
   "metadata": {
-    "title": "Ord-, tecken- och läsetidsräknare med textformatering",
-    "description": "Gratis räknare för ord, tecken, meningar, stycken och lästid med versalkonverterare. Kontrollera textlängden och ändra bokstäver.",
+    "title": "Ordraknare med Flesch-Kincaid lasbarhet & textverktyg",
+    "description": "Gratis ord-, tecken- och stavelseraknare med Flesch-Kincaid poang, lastid, taltid och 10 formateringsverktyg. Utan registrering.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-och-teckenraknare-sv.webp",
     "path": "/sv/verktyg/ord-och-teckenraknare"
   },
   "hero": {
-    "title": "Räkna ord och tecken – kontrollera lästid och formatera text",
-    "description": "Klistra in din text och verktyget räknar ord, tecken, meningar, stycken, unika ord och lästid. Ändra versaler, ta bort dubbletter eller sortera rader",
+    "title": "Rakna ord, tecken och lasbarhet – Flesch-Kincaid, lastid och textverktyg",
+    "description": "Klistra in din text och verktyget raknar ord, tecken, stavelser, meningar, stycken, unika ord, lastid, taltid och beraknar Flesch-Kincaid lasbarhetspoang.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -33,7 +33,11 @@
         "Online letter case converter",
         "Uppercase to lowercase converter",
         "Remove duplicate lines from text",
-        "Sort text lines alphabetically"
+        "Sort text lines alphabetically",
+        "Flesch-Kincaid lasbarhetskontroll",
+        "Stavelseraknare online",
+        "Taltidskalkylator",
+        "Lasbarhetsverktyg"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Gratis ord- och teckenräknare med textformateringsverktyg. Räknar ord, tecken, meningar, stycken, unika ord och lästid. Erbjuder 10 verktyg: versalkonvertering, borttagning av mellanslag, tomma rader, dubbletter och sortering.",
@@ -68,7 +72,7 @@
         },
         {
           "name": "Kontrollera statistik",
-          "text": "I vänstra panelen ser du 11 mätvärden: ord, tecken, meningar, stycken, unika ord, ordlängd och lästid."
+          "text": "I vansterpanelen ser du 11 matvarden: ord, tecken med och utan mellanslag, meningar, stycken, unika ord, ordlangd, lastid, taltid, stavelser och Flesch-Kincaid poang."
         },
         {
           "name": "Transformera text",
@@ -89,7 +93,7 @@
     {
       "type": "sectionBasic",
       "title": "Gratis ord- och teckenräknare med textverktyg",
-      "html": "<p class=\"text-mid\">Detta verktyg kombinerar en ord- och teckenräknare med textformateringsfunktioner. Klistra in text och se ord, tecken, meningar, stycken, unika ord och lästid.</p><p class=\"text-mid mt-3\">Under textfältet hittar du 10 verktyg: versalkonvertering, borttagning av mellanslag, tomma rader, dubbletter och sortering. Allt bearbetas lokalt i din webbläsare.</p>",
+      "html": "<p class=\"text-mid\">Det har verktyget kombinerar en ord- och teckenraknare med Flesch-Kincaid lasbarhetsanalys och textformateringsverktyg. Klistra in din text for att se ord, tecken, stavelser, meningar, stycken, unika ord, lastid, taltid och en fargkodad lasbarhetspoang.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid lasbarhetspoang</strong> (0–100) visar hur latt texten ar att lasa. Poang over 70 innebar lattlast text, under 30 akademisk niva.</p><p class=\"text-mid mt-3\">Under textfaltet finns 10 verktyg: versalkonvertering, borttagning av mellanslag, tomma rader, dubbletter och sortering. All bearbetning sker lokalt i webblasaren.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-och-teckenraknare-sv.webp",
       "imageAlt": "Ord- och teckenräknare – Arteon"
     },
@@ -111,7 +115,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Kontrollera statistik",
-          "description": "I vänstra panelen ser du 11 mätvärden: ord, tecken, meningar, stycken, unika ord, ordlängd och lästid."
+          "description": "I vansterpanelen ser du 11 matvarden: ord, tecken med och utan mellanslag, meningar, stycken, unika ord, ordlangd, lastid, taltid, stavelser och Flesch-Kincaid poang."
         },
         {
           "icon": "RiTextWrap",
@@ -131,8 +135,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 textmätvärden",
-      "description": "Räknaren analyserar din text med åtta indikatorer:",
+      "title": "11 textmatvarden – vad raknaren mater",
+      "description": "Raknaren analyserar din text med elva indikatorer:",
       "grid": "two",
       "items": [
         {
@@ -174,6 +178,21 @@
           "icon": "RiTimeLine",
           "title": "Reading time",
           "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
+        },
+        {
+          "icon": "RiMicLine",
+          "title": "Taltid",
+          "description": "Uppskattad taltid vid 130 ord per minut. For presentationer och tal."
+        },
+        {
+          "icon": "RiInputMethodLine",
+          "title": "Stavelser",
+          "description": "Totalt antal stavelser med sprakspecifika heuristiker."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Lasbarhet (Flesch-Kincaid)",
+          "description": "Poang 0–100. Over 70 = latt, 50–70 = medel, under 30 = akademiskt. Fargkodad."
         }
       ]
     },
@@ -296,13 +315,13 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Vad gör denna ordräknare speciell?",
+      "title": "Vad gor denna ordraknare speciell?",
       "grid": "two",
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "8 text metrics",
-          "description": "Words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time — all in one panel."
+          "title": "11 matvarden + lasbarhetspoang",
+          "description": "Ord, tecken, stavelser, meningar, stycken, unika ord, lastid, taltid och Flesch-Kincaid."
         },
         {
           "icon": "RiTextWrap",
@@ -349,6 +368,21 @@
           "question": "Är min text säker?",
           "answer": "Ja. All analys sker lokalt i din webbläsare. Texten skickas aldrig till någon server.",
           "answerSchemaText": "Ja. Texten bearbetas lokalt i webbläsaren."
+        },
+        {
+          "question": "Vad ar Flesch-Kincaid poang?",
+          "answer": "Flesch Reading Ease (0–100) visar lasbarhet. 90–100 = mycket latt, 70–89 = latt, 50–69 = medel, 30–49 = svar, 0–29 = mycket svar.",
+          "answerSchemaText": "Flesch Reading Ease (0–100)."
+        },
+        {
+          "question": "Hur beraknas taltiden?",
+          "answer": "Antalet ord delas med 130 – genomsnittlig talhastighet vid presentationer.",
+          "answerSchemaText": "130 ord per minut."
+        },
+        {
+          "question": "Hur exakt ar stavelseraknaren?",
+          "answer": "Verktyget anvander sprakspecifika heuristiker som kanner igen svenska diftonger och sammansatta ord.",
+          "answerSchemaText": "Sprakspecifika heuristiker."
         }
       ]
     },
@@ -376,5 +410,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Behöver du professionellt innehåll till din webbplats?",
+    "description": "Vi skriver texter som rankar bra i Google och övertygar besökare att agera. Tjänstebeskrivningar, bloggartiklar och webbinnehåll.",
+    "btnOne": "Våra tjänster",
+    "btnOneLink": "/sv/kontakt",
+    "btnTwo": "Kontakta oss",
+    "btnTwoLink": "/sv/kontakt",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

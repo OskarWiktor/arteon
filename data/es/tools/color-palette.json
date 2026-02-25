@@ -34,6 +34,14 @@
         "Esquema análogo – colores adyacentes en la rueda de colores",
         "Esquema complementario – colores opuestos",
         "Esquema triádico – 3 colores a intervalos iguales",
+        "Esquema tetrádico – 4 colores a 90°",
+        "Desplazamiento cálido – rojos, naranjas, amarillos",
+        "Desplazamiento frío – azules, turquesas, violetas",
+        "Tonos tierra – marrones, olivas, ocres",
+        "Neón – saturación máxima",
+        "Vintage – tonos retro desaturados",
+        "Alto contraste – negro a blanco",
+        "Gradiente atardecer",
         "Esquema complementario dividido – color base y 2 vecinos del opuesto",
         "Paleta pastel – tonos claros y suaves",
         "Paleta oscura – colores profundos para temas oscuros",
@@ -163,6 +171,46 @@
           "icon": "RiContractLeftRightLine",
           "title": "Paleta minimalista",
           "description": "Un acento de color audaz y varios neutros muy claros y suaves. El resto de la paleta permanece atenuado. Funciona bien en interfaces modernas con mucho espacio en blanco: estilo típico de páginas de producto y landing pages."
+        },
+        {
+          "icon": "RiGridLine",
+          "title": "Paleta tetrádica (cuadrada)",
+          "description": "Cuatro tonos separados 90° en el círculo cromático. Rica y equilibrada – ideal para interfaces complejas, dashboards y visualización de datos."
+        },
+        {
+          "icon": "RiFireLine",
+          "title": "Paleta cálida",
+          "description": "Colores desplazados hacia rojos, naranjas y amarillos. Evoca energía, calidez y cercanía. Perfecta para marcas gastronómicas, hotelería y campañas de marketing."
+        },
+        {
+          "icon": "RiSnowflakeLine",
+          "title": "Paleta fría",
+          "description": "Colores desplazados hacia azules, turquesas y violetas. Transmite calma, profesionalismo y confianza. Popular en fintech, salud y branding corporativo."
+        },
+        {
+          "icon": "RiSeedlingLine",
+          "title": "Paleta de tonos tierra",
+          "description": "Marrones, olivas y ocres de baja saturación inspirados en paisajes naturales. Ideal para marcas ecológicas, productos artesanales y estética rústica."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Paleta neón",
+          "description": "Colores de máxima saturación con intensidad eléctrica. Para marketing atrevido, interfaces de juegos, marcas de vida nocturna y diseños llamativos."
+        },
+        {
+          "icon": "RiAncientGateLine",
+          "title": "Paleta vintage",
+          "description": "Tonos desaturados y ligeramente cálidos que recuerdan impresiones antiguas y fotografía retro. Ideal para marcas con tradición y estética nostálgica."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Paleta de alto contraste",
+          "description": "Rango extremo de luminosidad, desde casi negro hasta casi blanco. Excelente para diseños accesibles, jerarquía visual fuerte e interfaces WCAG."
+        },
+        {
+          "icon": "RiSunLine",
+          "title": "Paleta degradado atardecer",
+          "description": "Rotación suave de tonos de cálidos a fríos, imitando un atardecer natural. Ideal para secciones hero, fondos y proyectos creativos."
         }
       ]
     },
@@ -175,6 +223,15 @@
       "title": "¿En qué se basa el generador de paletas de colores?",
       "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (tono)</span><span class=\"text-mid\">0°–360° en la rueda cromática</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturación)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (luminosidad)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
       "html": "<p class=\"text-mid\">Todas las paletas se crean transformando matemáticamente el color base en el espacio de color HSL. HSL describe un color con tres valores: el tono (H) es la posición en la rueda cromática (0°-360°), la saturación (S) determina la intensidad del color y la luminosidad (L) indica lo claro u oscuro que es el color.</p><p class=\"text-mid mt-3\">Las paletas complementaria, triádica y complementaria dividida se basan en la geometría de la rueda cromática: los colores se colocan a intervalos angulares iguales, creando un equilibrio visual. Las paletas monocromática, pastel y oscura cambian solo la luminosidad y la saturación manteniendo el mismo tono.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "El color en el arte y la cultura hispánica",
+      "html": "<p class=\"text-mid mb-4\">El mundo hispanohablante tiene una relación rica y diversa con el color:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Gaudí y la policáromia</strong> — los mosaicos del Park Güell y la Sagrada Familia combinan cientos de colores en patrones orgánicos. Este enfoque demuestra que paletas complejas pueden funcionar cuando existe un sistema de color coherente.</li><li><strong>Tradición mediterránea</strong> — los tonos cálidos del sur de España (terracota, ocre, blanco encalado, azul cerámico) forman una paleta reconocible en arquitectura y diseño gráfico.</li><li><strong>Textiles latinoamericanos</strong> — los tejidos mayas, aztecas y andinos utilizan combinaciones vibrantes de rojo, turquesa, amarillo y violeta que inspiran marcas contemporáneas.</li></ul>"
     },
     {
       "type": "gap",
@@ -250,27 +307,42 @@
         {
           "question": "¿En qué formato debe estar el color base?",
           "answer": "El generador acepta colores en formato HEX, tanto corto (p. ej., #F50) como completo (p. ej., #FF5500). Junto al campo de texto encontrará un selector de color que le permite elegir un color visualmente. Las paletas generadas muestran el código HEX y el valor HSL de cada color.",
-          "answerSchemaText": "El generador acepta colores HEX (#RGB o #RRGGBB). Cada color generado tiene un código HEX y un valor HSL."
+          "answerSchemaText": "El generador acepta colores HEX (#RGB o #RRGGBB). Cada color generado tiene un código HEX y un valor HSL.",
+          "description": ""
         },
         {
           "question": "¿Cuántos colores contiene cada paleta?",
           "answer": "Cada paleta contiene de 4 a 6 colores. El número depende del tipo de esquema: las paletas monocromáticas y tonales generan más matices (una escala de luminosidad de un tono), mientras que las paletas complementarias y triádicas se centran en menos colores contrastantes.",
-          "answerSchemaText": "Cada paleta contiene de 4 a 6 colores, dependiendo del tipo de esquema."
+          "answerSchemaText": "Cada paleta contiene de 4 a 6 colores, dependiendo del tipo de esquema.",
+          "description": ""
         },
         {
           "question": "¿Qué es el espacio de color HSL y cómo se lee?",
           "answer": "HSL es una forma de describir el color usando tres valores: H (tono, 0°-360° en la rueda cromática), S (saturación, 0%-100%) y L (luminosidad, 0%-100%). El generador muestra los valores HSL junto a cada color, lo que facilita entender cómo difieren los colores de la paleta; por ejemplo, una paleta monocromática cambia solo la luminosidad (L) manteniendo el mismo tono (H).",
-          "answerSchemaText": "HSL describe el color mediante tono (H), saturación (S) y luminosidad (L). El generador muestra estos valores junto a cada color."
+          "answerSchemaText": "HSL describe el color mediante tono (H), saturación (S) y luminosidad (L). El generador muestra estos valores junto a cada color.",
+          "description": ""
         },
         {
           "question": "¿Puedo usar las paletas generadas comercialmente?",
           "answer": "Sí. Puede usar las paletas de colores generadas en cualquier proyecto, comercial y no comercial, sin restricciones de licencia.",
-          "answerSchemaText": "Sí, las paletas generadas pueden usarse sin restricciones en proyectos comerciales y no comerciales."
+          "answerSchemaText": "Sí, las paletas generadas pueden usarse sin restricciones en proyectos comerciales y no comerciales.",
+          "description": ""
         },
         {
           "question": "¿El generador de paletas de colores requiere inicio de sesión o pago?",
           "answer": "El generador es completamente gratuito y no requiere inicio de sesión ni registro. Los colores se generan localmente en el navegador: no se envían datos a servidores externos.",
-          "answerSchemaText": "El generador es gratuito y no requiere inicio de sesión. Los colores se generan localmente en el navegador."
+          "answerSchemaText": "El generador es gratuito y no requiere inicio de sesión. Los colores se generan localmente en el navegador.",
+          "description": ""
+        },
+        {
+          "question": "¿Qué tipo de paleta es mejor para un sitio corporativo?",
+          "answer": "Las paletas monocromáticas o tonales funcionan bien para sitios corporativos porque proporcionan una jerarquía visual unificada y tranquila. Usa la paleta tonal para construir un sistema completo de fondos, texto, bordes y acentos a partir de un solo color de marca.",
+          "answerSchemaText": "Monocromática o tonal para jerarquía unificada."
+        },
+        {
+          "question": "¿Cómo construyo una paleta de modo oscuro?",
+          "answer": "Comienza con la paleta tonal de tu color de marca. Usa los tonos más oscuros (baja luminosidad) como fondos y los más claros como texto. Verifica cada combinación texto-fondo con un verificador de contraste para cumplir WCAG AA (4,5:1 para texto normal).",
+          "answerSchemaText": "Paleta tonal: oscuros para fondo, claros para texto. Verificar contraste."
         }
       ]
     },
@@ -298,5 +370,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "¿Necesitas una identidad visual para tu marca?",
+    "description": "Diseñamos logotipos, sistemas de color y materiales corporativos — desde tarjetas de visita hasta plantillas para redes sociales.",
+    "btnOne": "Nuestros servicios",
+    "btnOneLink": "/es/contacto",
+    "btnTwo": "Contáctanos",
+    "btnTwoLink": "/es/contacto",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

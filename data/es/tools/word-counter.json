@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "es",
   "metadata": {
-    "title": "Contador de palabras, caracteres y tiempo de lectura con formato de texto",
-    "description": "Contador gratuito de palabras, caracteres, oraciones, párrafos y tiempo de lectura con conversor de mayúsculas. Comprueba la longitud del texto y cambia las letras.",
+    "title": "Contador de palabras con legibilidad Flesch-Kincaid y herramientas de texto",
+    "description": "Contador gratuito de palabras, caracteres y sílabas con puntuación Flesch-Kincaid, tiempo de lectura, tiempo de habla y 10 herramientas de formato. Sin registro.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palabras-y-caracteres-es.webp",
     "path": "/es/herramientas/contador-de-palabras-y-caracteres"
   },
   "hero": {
-    "title": "Cuenta palabras y caracteres – verifica tiempo de lectura y formatea",
-    "description": "Pega tu texto y la herramienta contará palabras, caracteres, oraciones, párrafos, palabras únicas y tiempo de lectura. Cambia mayúsculas, elimina duplicados u ordena líneas",
+    "title": "Cuenta palabras, caracteres y legibilidad – Flesch-Kincaid, tiempo de lectura y herramientas de texto",
+    "description": "Pega tu texto y la herramienta contará palabras, caracteres, sílabas, oraciones, párrafos, palabras únicas, tiempo de lectura, tiempo de habla y calculará la puntuación de legibilidad Flesch-Kincaid. Cambia mayúsculas, elimina duplicados o ordena líneas con un clic.",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palabras-y-caracteres-es.webp"
   },
   "breadcrumbs": {
@@ -24,19 +24,21 @@
   },
   "schemas": {
     "software": {
-      "name": "Contador de palabras, caracteres y tiempo de lectura con formato de texto",
+      "name": "Contador de palabras con legibilidad Flesch-Kincaid y herramientas de texto",
       "alternateName": [
-        "Online word counter",
-        "Character counter with and without spaces",
-        "Word counting tool for copywriters",
-        "Reading time calculator",
-        "Online letter case converter",
-        "Uppercase to lowercase converter",
-        "Remove duplicate lines from text",
-        "Sort text lines alphabetically"
+        "Contador de palabras online",
+        "Contador de caracteres con y sin espacios",
+        "Herramienta de conteo de palabras para redactores",
+        "Calculadora de tiempo de lectura",
+        "Verificador de legibilidad Flesch-Kincaid",
+        "Contador de sílabas online",
+        "Calculadora de tiempo de habla",
+        "Conversor de mayúsculas y minúsculas",
+        "Herramienta de legibilidad de textos",
+        "Eliminar líneas duplicadas del texto"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Contador gratuito de palabras y caracteres con herramientas de formato de texto. Cuenta palabras, caracteres, oraciones, párrafos, palabras únicas y tiempo de lectura. Ofrece 10 herramientas: conversión de mayúsculas, eliminación de espacios, líneas vacías, duplicados y ordenación.",
+      "description": "Contador gratuito de palabras y caracteres con puntuación de legibilidad Flesch-Kincaid (fórmula Fernández-Huerta para español), conteo de sílabas, estimación de tiempo de lectura y habla, y 10 herramientas de formateo. Procesamiento local en el navegador.",
       "featureList": [
         "Conteo de palabras",
         "Conteo de caracteres con y sin espacios",
@@ -45,13 +47,13 @@
         "Longitud promedio de palabra",
         "Tiempo de lectura estimado",
         "Tiempo de habla estimado",
-        "Recuento de sílabas",
-        "Puntuación de legibilidad Flesch-Kincaid",
+        "Conteo de sílabas",
+        "Puntuación de legibilidad Flesch-Kincaid (Fernández-Huerta para español)",
         "Fórmulas de legibilidad adaptadas (16 idiomas)",
         "Convertir a mayúsculas o minúsculas",
-        "Convertir a estilo de oración o de título",
+        "Convertir a formato de oración o título",
         "Invertir mayúsculas/minúsculas",
-        "Eliminar espacios innecesarios",
+        "Eliminar espacios extra",
         "Eliminar líneas vacías y duplicados",
         "Ordenar líneas A–Z y Z–A",
         "Copiar texto al portapapeles"
@@ -59,7 +61,7 @@
     },
     "howTo": {
       "name": "Cómo usar el contador de palabras",
-      "description": "Analiza y formatea texto en tres pasos:",
+      "description": "Cuenta palabras, caracteres, sílabas y oraciones. Verifica la legibilidad Flesch-Kincaid, el tiempo de lectura y el tiempo de habla. Formatea texto con 10 herramientas.",
       "totalTime": "PT1M",
       "steps": [
         {
@@ -68,7 +70,7 @@
         },
         {
           "name": "Revisa las estadísticas",
-          "text": "En el panel izquierdo verás 11 métricas: palabras, caracteres, oraciones, párrafos, palabras únicas, longitud media y tiempo de lectura."
+          "text": "En el panel izquierdo verás 11 métricas: palabras, caracteres con y sin espacios, oraciones, párrafos, palabras únicas, longitud promedio, tiempo de lectura, tiempo de habla, sílabas y puntuación Flesch-Kincaid."
         },
         {
           "name": "Transforma el texto",
@@ -89,7 +91,7 @@
     {
       "type": "sectionBasic",
       "title": "Contador de palabras y caracteres con herramientas de texto",
-      "html": "<p class=\"text-mid\">Esta herramienta combina un contador de palabras y caracteres con funciones de formato. Pega tu texto y verás palabras, caracteres, oraciones, párrafos, palabras únicas y tiempo de lectura.</p><p class=\"text-mid mt-3\">Debajo del campo de texto encontrarás 10 herramientas: conversión de mayúsculas, eliminación de espacios, líneas vacías, duplicados y ordenación. Todo se procesa localmente en tu navegador.</p>",
+      "html": "<p class=\"text-mid\">Esta herramienta combina un contador de palabras y caracteres con análisis de legibilidad Flesch-Kincaid y funciones de formateo de texto. Pega tu texto y verás el conteo de palabras, caracteres, sílabas, oraciones, párrafos, palabras únicas, tiempo de lectura, tiempo de habla y una puntuación de legibilidad con código de color.</p><p class=\"text-mid mt-3\">La <strong>puntuación Flesch-Kincaid</strong> (0–100) indica qué tan fácil es leer tu texto. Para textos en español se usa la <strong>fórmula Fernández-Huerta</strong>: 206,84 − 60 × (sílabas/palabras) − 1,02 × (palabras/oraciones). Puntuaciones superiores a 70 indican lectura fácil; inferiores a 30 indican nivel académico.</p><p class=\"text-mid mt-3\">Debajo del campo de texto encontrarás 10 herramientas: conversión de mayúsculas/minúsculas, eliminación de espacios, líneas vacías, duplicados y ordenación alfabética. Todo el procesamiento ocurre localmente en tu navegador.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palabras-y-caracteres-es.webp",
       "imageAlt": "Contador de palabras y caracteres – Arteon"
     },
@@ -111,7 +113,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Revisa las estadísticas",
-          "description": "En el panel izquierdo verás 11 métricas: palabras, caracteres, oraciones, párrafos, palabras únicas, longitud media y tiempo de lectura."
+          "description": "En el panel izquierdo verás 11 métricas: palabras, caracteres con y sin espacios, oraciones, párrafos, palabras únicas, longitud promedio, tiempo de lectura, tiempo de habla, sílabas y puntuación Flesch-Kincaid."
         },
         {
           "icon": "RiTextWrap",
@@ -131,49 +133,64 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 métricas de texto",
-      "description": "El contador analiza tu texto con ocho indicadores:",
+      "title": "11 métricas de texto – qué mide el contador",
+      "description": "El contador analiza tu texto con once indicadores:",
       "grid": "two",
       "items": [
         {
           "icon": "RiText",
-          "title": "Words",
-          "description": "Total word count. The primary indicator of text length, useful for content creation, articles and descriptions."
+          "title": "Palabras",
+          "description": "Total de palabras. El indicador principal de longitud del texto, útil para artículos, descripciones y creación de contenido."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Characters (with spaces)",
-          "description": "All characters including spaces. Useful when a platform has a character limit (e.g., Amazon listings, meta descriptions)."
+          "title": "Caracteres (con espacios)",
+          "description": "Todos los caracteres incluyendo espacios. Útil cuando una plataforma tiene límite de caracteres (Amazon, meta descriptions)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Characters (without spaces)",
-          "description": "Only letters, digits and punctuation. The standard billing unit for translations and print shops."
+          "title": "Caracteres (sin espacios)",
+          "description": "Solo letras, dígitos y puntuación. Unidad estándar de facturación en traducciones e imprentas."
         },
         {
           "icon": "RiChatQuoteLine",
-          "title": "Sentences",
-          "description": "Number of sentences in the text. Helps assess complexity and readability — shorter sentences are easier to absorb."
+          "title": "Oraciones",
+          "description": "Número de oraciones en el texto. Ayuda a evaluar la complejidad y legibilidad – las oraciones más cortas son más fáciles de absorber."
         },
         {
           "icon": "RiParagraph",
-          "title": "Paragraphs",
-          "description": "Text blocks separated by blank lines. Well-structured paragraphs improve readability on screens."
+          "title": "Párrafos",
+          "description": "Bloques de texto separados por líneas en blanco. Los párrafos bien estructurados mejoran la legibilidad en pantallas."
         },
         {
           "icon": "RiStarLine",
-          "title": "Unique words",
-          "description": "Number of non-repeating words. A higher ratio of unique to total words indicates richer vocabulary."
+          "title": "Palabras únicas",
+          "description": "Número de palabras no repetidas. Una mayor proporción de palabras únicas indica un vocabulario más rico."
         },
         {
           "icon": "RiRulerLine",
-          "title": "Average word length",
-          "description": "Average number of characters per word. An indicator of text complexity — technical texts have longer words than casual ones."
+          "title": "Longitud promedio de palabra",
+          "description": "Promedio de caracteres por palabra. Un indicador de complejidad – los textos técnicos tienen palabras más largas."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Reading time",
-          "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
+          "title": "Tiempo de lectura",
+          "description": "Tiempo estimado de lectura a 200 palabras por minuto. Valor aproximado para texto típico."
+        },
+        {
+          "icon": "RiMicLine",
+          "title": "Tiempo de habla",
+          "description": "Tiempo estimado para hablar el texto a 130 palabras por minuto. Útil para discursos, presentaciones y guiones de video."
+        },
+        {
+          "icon": "RiInputMethodLine",
+          "title": "Sílabas",
+          "description": "Total de sílabas usando heurísticas del idioma español. Reconoce diptongos (ai, ei, oi, au, eu) e hiatos. Parámetro clave para fórmulas de legibilidad."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Legibilidad (Flesch-Kincaid)",
+          "description": "Puntuación de 0–100 que indica la facilidad de lectura. Más de 70 = fácil, 50–70 = moderado, menos de 30 = académico. Con código de color para evaluación rápida."
         }
       ]
     },
@@ -189,53 +206,53 @@
       "items": [
         {
           "icon": "RiArrowUpLine",
-          "title": "UPPERCASE",
-          "description": "Converts all text to uppercase. Useful for headings, acronyms and highlighting text fragments."
+          "title": "MAYÚSCULAS",
+          "description": "Convierte todo el texto a mayúsculas. Útil para encabezados, acrónimos y resaltar fragmentos."
         },
         {
           "icon": "RiArrowDownLine",
-          "title": "lowercase",
-          "description": "Converts all text to lowercase. Useful for normalizing text copied from different sources."
+          "title": "minúsculas",
+          "description": "Convierte todo el texto a minúsculas. Útil para normalizar texto de diferentes fuentes."
         },
         {
           "icon": "RiEditLine",
-          "title": "Sentence case",
-          "description": "First letter of each sentence is capitalized, the rest lowercase. Standard format for continuous text."
+          "title": "Tipo oración",
+          "description": "Primera letra de cada oración en mayúscula, el resto en minúscula. Formato estándar para texto continuo."
         },
         {
           "icon": "RiHeading",
-          "title": "Title Case",
-          "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
+          "title": "Tipo Título",
+          "description": "Cada palabra comienza con mayúscula. Ideal para títulos, encabezados y nombres propios."
         },
         {
           "icon": "RiArrowLeftRightLine",
-          "title": "tOGGLE cASE",
-          "description": "Swaps uppercase to lowercase and vice versa. Useful when text was typed with Caps Lock on."
+          "title": "iNVERTIR",
+          "description": "Intercambia mayúsculas por minúsculas y viceversa. Útil cuando el texto se escribió con Bloq Mayús activado."
         },
         {
           "icon": "RiSpace",
-          "title": "Remove extra spaces",
-          "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
+          "title": "Eliminar espacios extra",
+          "description": "Reduce espacios múltiples a uno y elimina espacios al inicio y final de cada línea."
         },
         {
           "icon": "RiDeleteRow",
-          "title": "Remove empty lines",
-          "description": "Removes empty and redundant lines from text. Useful for cleaning text copied from websites."
+          "title": "Eliminar líneas vacías",
+          "description": "Elimina líneas vacías y redundantes. Útil para limpiar texto copiado de sitios web."
         },
         {
           "icon": "RiFilterLine",
-          "title": "Remove duplicate lines",
-          "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
+          "title": "Eliminar líneas duplicadas",
+          "description": "Mantiene solo líneas únicas, eliminando repeticiones. Útil para limpiar listas y datos."
         },
         {
           "icon": "RiSortAsc",
-          "title": "Sort A→Z",
-          "description": "Sorts text lines alphabetically in ascending order. Useful for organizing lists, keywords and data."
+          "title": "Ordenar A→Z",
+          "description": "Ordena líneas alfabéticamente en orden ascendente. Útil para organizar listas y datos."
         },
         {
           "icon": "RiSortDesc",
-          "title": "Sort Z→A",
-          "description": "Sorts text lines alphabetically in descending order. Reverse sort order."
+          "title": "Ordenar Z→A",
+          "description": "Ordena líneas alfabéticamente en orden descendente. Orden inverso."
         }
       ]
     },
@@ -251,33 +268,33 @@
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Copywriters and editors",
-          "description": "Count words and characters, check platform limits, quickly change letter case and clean text before publishing."
+          "title": "Redactores y editores",
+          "description": "Contar palabras y caracteres, verificar límites de plataformas, cambiar mayúsculas y limpiar texto antes de publicar."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Bloggers and content creators",
-          "description": "Monitor post length, check reading time, remove duplicate lines and sort lists."
+          "title": "Bloggers y creadores de contenido",
+          "description": "Controlar la longitud de publicaciones, verificar legibilidad y tiempo de lectura, eliminar duplicados y ordenar listas."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "Store owners",
-          "description": "Verify product descriptions against character limits on platforms (Amazon, eBay, Etsy)."
+          "title": "Propietarios de tiendas",
+          "description": "Verificar descripciones de productos contra límites de caracteres en plataformas (Amazon, MercadoLibre, eBay)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO specialists",
-          "description": "Analyze content length, count unique words and assess text complexity based on average word length."
+          "title": "Especialistas SEO",
+          "description": "Analizar longitud del contenido, puntuación Flesch-Kincaid, contar palabras únicas y evaluar complejidad del texto."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Students and academics",
-          "description": "Check word or character limits in essays and research papers."
+          "title": "Estudiantes y académicos",
+          "description": "Verificar límites de palabras o caracteres en ensayos e investigaciones. Evaluar legibilidad de la tesis."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Translators",
-          "description": "Count characters without spaces for quotes (the standard billing unit in translation)."
+          "title": "Traductores",
+          "description": "Contar caracteres sin espacios para presupuestos (la unidad estándar de facturación en traducción)."
         }
       ]
     },
@@ -288,7 +305,7 @@
     {
       "type": "sectionInfo",
       "title": "Límites de caracteres en plataformas populares",
-      "html": "<p class=\"text-mid\">Character limits vary by platform.</p>"
+      "html": "<p class=\"text-mid mb-4\">El contador de caracteres es útil al crear contenido para plataformas con restricciones de longitud:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Plataforma / Elemento</th><th class=\"py-2 pr-4 font-semibold\">Límite de caracteres</th><th class=\"py-2 font-semibold\">Notas</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Los títulos más largos se truncan en los resultados de búsqueda.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">La descripción visible debajo del enlace en los resultados.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon – título de producto</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Título breve con las palabras clave más importantes.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">MercadoLibre – título</td><td class=\"py-2 pr-4 whitespace-nowrap\">60 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Títulos concisos mejoran la visibilidad en búsquedas.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – publicación</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Incluye enlaces y menciones en el conteo.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – pie de foto</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 200 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Solo las primeras 2 líneas son visibles antes de &quot;más&quot;.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">LinkedIn – publicación</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Las primeras 150 caracteres son visibles en el feed.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">YouTube – título de video</td><td class=\"py-2 pr-4 whitespace-nowrap\">100 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Recomendado: menos de 70 para evitar truncamiento.</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -296,38 +313,38 @@
     },
     {
       "type": "sectionSteps",
-      "title": "¿Qué hace especial a este contador?",
+      "title": "¿Qué hace especial a este contador de palabras?",
       "grid": "two",
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "8 text metrics",
-          "description": "Words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time — all in one panel."
+          "title": "11 métricas + puntuación de legibilidad",
+          "description": "Palabras, caracteres, sílabas, oraciones, párrafos, palabras únicas, tiempo de lectura, tiempo de habla y Flesch-Kincaid – todo en un panel."
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 formatting tools",
-          "description": "Letter case conversion, removing spaces, empty lines, duplicates and sorting — without installing additional software."
+          "title": "10 herramientas de formateo",
+          "description": "Cambio de mayúsculas, eliminación de espacios, líneas vacías, duplicados y ordenación – sin instalar software adicional."
         },
         {
           "icon": "RiUserLine",
-          "title": "Local processing in the browser",
-          "description": "Your text is never sent to any server. All analysis and transformation happens locally on your device."
+          "title": "Procesamiento local en el navegador",
+          "description": "Tu texto nunca se envía a ningún servidor. Todo el análisis y la transformación ocurren localmente en tu dispositivo."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Copy and clear text",
-          "description": "Copy the modified text to your clipboard with one click or clear the field to start over."
+          "title": "Copiar y limpiar texto",
+          "description": "Copia el texto modificado al portapapeles con un clic o limpia el campo para empezar de nuevo."
         },
         {
           "icon": "RiTimerLine",
-          "title": "Instant results",
-          "description": "Statistics update in real time as you type or paste text. No waiting for processing."
+          "title": "Resultados instantáneos",
+          "description": "Las estadísticas se actualizan en tiempo real mientras escribes o pegas texto. Sin espera de procesamiento."
         },
         {
           "icon": "RiLockLine",
-          "title": "No registration or limits",
-          "description": "The tool is completely free. No registration, login or personal data required."
+          "title": "Sin registro ni límites",
+          "description": "La herramienta es completamente gratuita. No requiere registro, inicio de sesión ni datos personales."
         }
       ]
     },
@@ -341,24 +358,34 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "¿Cómo funciona el calculador de tiempo de lectura?",
-          "answer": "La herramienta divide el número de palabras por 200, la velocidad media de lectura. El resultado es un valor aproximado.",
-          "answerSchemaText": "La herramienta asume 200 palabras por minuto."
+          "question": "¿Cómo calcula el tiempo de lectura?",
+          "answer": "La herramienta divide el número de palabras por 200 – la velocidad de lectura promedio para texto típico. Textos técnicos se leen más lento, artículos ligeros más rápido. El resultado es un valor aproximado.",
+          "answerSchemaText": "La herramienta asume 200 palabras por minuto como velocidad de lectura promedio."
         },
         {
           "question": "¿Cuál es la diferencia entre caracteres con y sin espacios?",
-          "answer": "Con espacios incluye todos los caracteres. Sin espacios solo letras, dígitos y puntuación. Las agencias de traducción cobran por caracteres sin espacios.",
-          "answerSchemaText": "Con espacios incluye todos los caracteres, sin espacios excluye espacios."
+          "answer": "Caracteres con espacios incluye todos los caracteres del texto incluyendo espacios, tabulaciones y saltos de línea. Caracteres sin espacios incluye solo letras, dígitos y puntuación. Las agencias de traducción facturan por caracteres sin espacios. Plataformas como Amazon tienen límites en caracteres con espacios.",
+          "answerSchemaText": "Caracteres con espacios incluye todo; sin espacios solo letras y dígitos. Relevante para facturación y límites de plataformas."
         },
         {
-          "question": "¿Cómo funciona la conversión de mayúsculas?",
-          "answer": "La herramienta ofrece 5 modos: MAYÚSCULAS, minúsculas, Como en oración, Cada Palabra y Invertir. Haz clic en el botón correspondiente.",
-          "answerSchemaText": "La herramienta tiene 5 modos de conversión de mayúsculas."
+          "question": "¿Es seguro mi texto?",
+          "answer": "Sí. Todo el análisis y procesamiento ocurre exclusivamente en tu navegador – el texto nunca se envía a ningún servidor. La herramienta no guarda ni almacena el texto pegado. Al cerrar la página, el texto desaparece permanentemente.",
+          "answerSchemaText": "Sí. El texto se procesa localmente en el navegador y nunca se envía a un servidor."
         },
         {
-          "question": "¿Mi texto está seguro?",
-          "answer": "Sí. Todo el análisis se realiza localmente en tu navegador. El texto nunca se envía a ningún servidor.",
-          "answerSchemaText": "Sí. El texto se procesa localmente en el navegador."
+          "question": "¿Qué es la puntuación de legibilidad Flesch-Kincaid?",
+          "answer": "El índice Flesch Reading Ease es un número de 0 a 100 que indica qué tan fácil es leer un texto. Para español se usa la fórmula Fernández-Huerta: 206,84 − 60 × (sílabas/palabras) − 1,02 × (palabras/oraciones). Una puntuación de 90–100 significa muy fácil, 70–89 fácil, 50–69 moderado, 30–49 difícil y 0–29 muy difícil.",
+          "answerSchemaText": "El Flesch Reading Ease (0–100) mide la legibilidad. Para español se usa Fernández-Huerta. Mayor puntuación = texto más fácil."
+        },
+        {
+          "question": "¿Cómo se calcula el tiempo de habla?",
+          "answer": "El tiempo de habla se estima dividiendo el número de palabras por 130 – la velocidad promedio de habla en presentaciones. Es más lento que las 200 palabras por minuto del tiempo de lectura, porque hablar incluye pausas naturales, énfasis y respiración.",
+          "answerSchemaText": "El tiempo de habla se calcula a 130 palabras por minuto, el promedio para presentaciones."
+        },
+        {
+          "question": "¿Qué tan preciso es el contador de sílabas?",
+          "answer": "La herramienta usa heurísticas específicas del español que reconocen diptongos (ai, ei, oi, au, eu), hiatos y reglas de silabificación del castellano. El conteo es aproximado pero suficiente para puntuaciones de legibilidad y análisis de texto.",
+          "answerSchemaText": "El contador usa heurísticas del español que reconocen diptongos e hiatos. Aproximado pero suficiente para análisis."
         }
       ]
     },
@@ -386,5 +413,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "¿Necesitas contenido profesional para tu web?",
+    "description": "Escribimos textos que se posicionan en Google y convencen a los visitantes. Descripciones de servicios, artículos de blog y contenido web.",
+    "btnOne": "Nuestros servicios",
+    "btnOneLink": "/es/contacto",
+    "btnTwo": "Contáctanos",
+    "btnTwoLink": "/es/contacto",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

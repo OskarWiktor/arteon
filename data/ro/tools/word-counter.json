@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "ro",
   "metadata": {
-    "title": "Contor de cuvinte, caractere și timp de citire cu formatarea textului",
-    "description": "Contor gratuit de cuvinte, caractere, propoziții, paragrafe și timp de citire cu convertor de litere mari. Verificați lungimea textului și schimbați literele.",
+    "title": "Contor de cuvinte cu scor Flesch-Kincaid si instrumente text",
+    "description": "Contor gratuit de cuvinte, caractere si silabe cu scor Flesch-Kincaid, timp de citire, timp de vorbire si 10 instrumente de formatare. Fara inregistrare.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contor-cuvinte-si-caractere-ro.webp",
     "path": "/ro/instrumente/contor-cuvinte-si-caractere"
   },
   "hero": {
-    "title": "Numără cuvinte și caractere – verifică timpul de citire și formatează",
-    "description": "Lipiți textul și instrumentul va număra cuvinte, caractere, propoziții, paragrafe, cuvinte unice și timp de citire. Schimbați majusculele, eliminați duplicatele sau sortați liniile",
+    "title": "Numara cuvinte, caractere si lizibilitate – scor Flesch-Kincaid, timp de citire si instrumente text",
+    "description": "Lipeste textul si instrumentul va numara cuvinte, caractere, silabe, propozitii, paragrafe, cuvinte unice, timp de citire, timp de vorbire si va calcula scorul de lizibilitate Flesch-Kincaid.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -33,7 +33,11 @@
         "Online letter case converter",
         "Uppercase to lowercase converter",
         "Remove duplicate lines from text",
-        "Sort text lines alphabetically"
+        "Sort text lines alphabetically",
+        "Verificator lizibilitate Flesch-Kincaid",
+        "Contor de silabe online",
+        "Calculator timp de vorbire",
+        "Instrument lizibilitate text"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Contor gratuit de cuvinte și caractere cu instrumente de formatare a textului. Numără cuvinte, caractere, propoziții, paragrafe, cuvinte unice și timp de citire. Oferă 10 instrumente: conversie litere, eliminare spații, linii goale, duplicate și sortare.",
@@ -68,7 +72,7 @@
         },
         {
           "name": "Verificați statisticile",
-          "text": "În panoul din stânga veți vedea 11 metrici: cuvinte, caractere, propoziții, paragrafe, cuvinte unice, lungime medie și timp de citire."
+          "text": "In panoul din stanga vei vedea 11 metrici: cuvinte, caractere cu si fara spatii, propozitii, paragrafe, cuvinte unice, lungime medie, timp de citire, timp de vorbire, silabe si scor Flesch-Kincaid."
         },
         {
           "name": "Transformați textul",
@@ -89,7 +93,7 @@
     {
       "type": "sectionBasic",
       "title": "Contor de cuvinte și caractere cu instrumente text",
-      "html": "<p class=\"text-mid\">Acest instrument combină un contor de cuvinte și caractere cu funcții de formatare. Lipiți textul și veți vedea cuvinte, caractere, propoziții, paragrafe, cuvinte unice și timp de citire.</p><p class=\"text-mid mt-3\">Sub câmpul de text veți găsi 10 instrumente: conversie majuscule, eliminare spații, linii goale, duplicate și sortare. Totul se procesează local în browser.</p>",
+      "html": "<p class=\"text-mid\">Acest instrument combina un contor de cuvinte si caractere cu analiza lizibilitatii Flesch-Kincaid si functii de formatare text. Lipeste textul pentru a vedea cuvinte, caractere, silabe, propozitii, paragrafe, cuvinte unice, timp de citire, timp de vorbire si un scor de lizibilitate colorat.</p><p class=\"text-mid mt-3\"><strong>Scorul Flesch-Kincaid</strong> (0–100) arata cat de usor este de citit textul. Scoruri peste 70 inseamna text usor, sub 30 nivel academic. Instrumentul foloseste formule adaptate pentru 16 limbi.</p><p class=\"text-mid mt-3\">Sub campul de text vei gasi 10 instrumente: conversie majuscule/minuscule, eliminare spatii, linii goale, duplicate si sortare. Toata procesarea are loc local in browser.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contor-cuvinte-si-caractere-ro.webp",
       "imageAlt": "Contor de cuvinte și caractere – Arteon"
     },
@@ -111,7 +115,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Verificați statisticile",
-          "description": "În panoul din stânga veți vedea 11 metrici: cuvinte, caractere, propoziții, paragrafe, cuvinte unice, lungime medie și timp de citire."
+          "description": "In panoul din stanga vei vedea 11 metrici: cuvinte, caractere cu si fara spatii, propozitii, paragrafe, cuvinte unice, lungime medie, timp de citire, timp de vorbire, silabe si scor Flesch-Kincaid."
         },
         {
           "icon": "RiTextWrap",
@@ -131,8 +135,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 metrici text",
-      "description": "Contorul analizează textul cu opt indicatori:",
+      "title": "11 metrici text – ce masoara contorul",
+      "description": "Contorul analizeaza textul cu unsprezece indicatori:",
       "grid": "two",
       "items": [
         {
@@ -174,6 +178,21 @@
           "icon": "RiTimeLine",
           "title": "Reading time",
           "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
+        },
+        {
+          "icon": "RiMicLine",
+          "title": "Timp de vorbire",
+          "description": "Timp estimat la 130 cuvinte pe minut. Util pentru discursuri si prezentari."
+        },
+        {
+          "icon": "RiInputMethodLine",
+          "title": "Silabe",
+          "description": "Total silabe cu euristici lingvistice. Parametru cheie pentru formulele de lizibilitate."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Lizibilitate (Flesch-Kincaid)",
+          "description": "Scor 0–100. Peste 70 = usor, 50–70 = moderat, sub 30 = academic. Codat prin culori."
         }
       ]
     },
@@ -296,13 +315,13 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Ce face special acest contor?",
+      "title": "Ce face acest contor special?",
       "grid": "two",
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "8 text metrics",
-          "description": "Words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time — all in one panel."
+          "title": "11 metrici + scor lizibilitate",
+          "description": "Cuvinte, caractere, silabe, propozitii, paragrafe, cuvinte unice, timp citire, timp vorbire si Flesch-Kincaid."
         },
         {
           "icon": "RiTextWrap",
@@ -349,6 +368,21 @@
           "question": "Textul meu este în siguranță?",
           "answer": "Da. Toată analiza se face local în browser. Textul nu este niciodată trimis la un server.",
           "answerSchemaText": "Da. Textul este procesat local în browser."
+        },
+        {
+          "question": "Ce este scorul Flesch-Kincaid?",
+          "answer": "Scorul Flesch Reading Ease (0–100) indica usurinta de citire. 90–100 = foarte usor, 70–89 = usor, 50–69 = moderat, 30–49 = dificil, 0–29 = foarte dificil.",
+          "answerSchemaText": "Flesch Reading Ease (0–100) masoara lizibilitatea."
+        },
+        {
+          "question": "Cum se calculeaza timpul de vorbire?",
+          "answer": "Timpul de vorbire imparte cuvintele la 130 – viteza medie la prezentari.",
+          "answerSchemaText": "130 cuvinte pe minut."
+        },
+        {
+          "question": "Cat de precis este contorul de silabe?",
+          "answer": "Instrumentul foloseste euristici specifice limbii care recunosc diftongi si modele de vocale.",
+          "answerSchemaText": "Euristici lingvistice cu diftongi si vocale."
         }
       ]
     },
@@ -376,5 +410,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Aveți nevoie de conținut profesional pentru site?",
+    "description": "Scriem texte care se clasează bine în Google și conving vizitatorii să acționeze. Descrieri de servicii, articole de blog și conținut web.",
+    "btnOne": "Serviciile noastre",
+    "btnOneLink": "/ro/contact",
+    "btnTwo": "Contactați-ne",
+    "btnTwoLink": "/ro/contact",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

@@ -321,6 +321,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Tillgänglighetskrav i Sverige",
+      "html": "<p class=\"text-mid mb-4\">Sverige har implementerat EU:s webbtillgänglighetsdirektiv genom <strong>DOS-lagen (2018:1937)</strong> — Lagen om tillgänglighet till digital offentlig service.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Offentlig sektor</strong> — alla statliga, regionala och kommunala webbplatser och appar ska uppfylla WCAG 2.1 nivå AA. Myndigheten för digital förvaltning (DIGG) övervakar efterlevnaden.</li><li><strong>EU:s tillgänglighetsdirektiv (EAA)</strong> — från juni 2025 utvidgas kraven till den privata sektorn: e-handel, banker, transporttjänster och medieplattformar.</li><li><strong>Svensk tillgänglighetskultur</strong> — Sverige har en stark tradition av inkluderande design. Många svenska företag uppfyller redan WCAG AA frivilligt, och konsumenter förväntar sig tillgängliga digitala tjänster.</li></ul><p class=\"text-mid mt-3\">Kontrastförhållandet 4,5:1 för normal text och 3:1 för stor text är ett lagkrav. Detta verktyg kontrollerar exakt dessa tröskelvärden.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Vad utmärker färgkontrasttestaren?",
       "grid": "two",
@@ -381,6 +390,30 @@
         {
           "question": "Måste jag uppfylla kontrastnivå AAA?",
           "answer": "Inte alltid. Nivå AA (4.5:1 för vanlig text) är det minimum som krävs av tillgänglighetsföreskrifter i EU. Nivå AAA (7:1) ger bättre läsbarhet men är svårare att uppnå. För kritiskt innehåll – varningar, säkerhetsinstruktioner – överväg att uppnå AAA."
+        },
+        {
+          "question": "Kräver svensk lag färgkontrast på webbplatser?",
+          "answer": "Ja. DOS-lagen (2018:1937) kräver att offentliga webbplatser uppfyller WCAG 2.1 AA, inklusive kontrastförhållandet 4,5:1 för normal text och 3:1 för stor text. Från juni 2025 utvidgar EU:s tillgänglighetsdirektiv (EAA) kravet till den privata sektorn."
+        },
+        {
+          "question": "Vad är WCAG-standarden?",
+          "answer": "WCAG (Web Content Accessibility Guidelines) är internationella riktlinjer för webbtillgänglighet som utvecklats av W3C. De definierar bland annat minimikontrastkrav, rubrikstruktur och tangentbordsstöd. Svensk lag hänvisar till WCAG via den europeiska standarden EN 301 549."
+        },
+        {
+          "question": "Hur hittar jag färgkoderna på min webbplats?",
+          "answer": "I webbläsaren (Chrome, Firefox, Edge) öppnar du utvecklarverktygen (högerklicka > Inspektera). Under fliken Stilar kan du se sidans färger. Alternativt kan webbläsartillägg som ColorZilla välja färgen på valfritt element."
+        },
+        {
+          "question": "Fungerar det här verktyget för mörkt läge?",
+          "answer": "Ja. Verktyget kontrollerar kontrastförhållandet mellan två valfria färger oavsett vilken som är ljusare. För mörkt läge anger du en ljus textfärg och en mörk bakgrundsfärg. Samma WCAG-tröskelvärden gäller."
+        },
+        {
+          "question": "Vad är skillnaden mellan WCAG AA och AAA?",
+          "answer": "AA kräver 4,5:1 kontrast för normal text och 3:1 för stor text — detta är det lagstadgade minimumet. AAA kräver 7:1 för normal text och 4,5:1 för stor text — bättre läsbarhet men svårare att uppnå."
+        },
+        {
+          "question": "Vilka färgpar bör jag kontrollera först?",
+          "answer": "Viktigast: text mot huvudbakgrunden, text på banners och färgade sektioner, knappar (textfärg och knappbakgrund mot sidans bakgrund), länkar och ikoner."
         }
       ]
     },
@@ -408,5 +441,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Behöver du en tillgänglig webbplats?",
+    "description": "Vi bygger webbplatser för alla användare — korrekt färgkontrast, läsbar typografi och logisk struktur. DOS-lagen kräver digital tillgänglighet.",
+    "btnOne": "Våra tjänster",
+    "btnOneLink": "/sv/kontakt",
+    "btnTwo": "Kontakta oss",
+    "btnTwoLink": "/sv/kontakt",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

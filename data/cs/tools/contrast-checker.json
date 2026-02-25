@@ -321,6 +321,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Právní požadavky na přístupnost v České republice",
+      "html": "<p class=\"text-mid mb-4\">Česká republika implementovala směrnici EU o přístupnosti webu prostřednictvím <strong>Zákona č. 99/2019 Sb. o přístupnosti internetových stránek a mobilních aplikací</strong>. Zákon vyžaduje, aby veřejné instituce splňovaly normu EN 301 549, která odkazuje na WCAG 2.1 úrovně AA.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Veřejný sektor</strong> — od roku 2020 musí weby státní správy, krajů, obcí a organizací zřízených zákonem splňovat WCAG 2.1 AA.</li><li><strong>Evropský akt o přístupnosti (EAA)</strong> — od června 2025 se povinnost rozšiřuje na soukromý sektor: e-shopy, bankovnictví, dopravní služby a mediální platformy.</li><li><strong>Slovensko</strong> — zákon č. 95/2019 Z. z. stanovuje obdobné požadavky. Pokud obsluhujete český i slovenský trh, platí pro oba stejné standardy WCAG 2.1 AA.</li></ul><p class=\"text-mid mt-3\">Kontrastní poměr 4,5:1 pro běžný text a 3:1 pro velký text je vyžadován všemi výše uvedenými předpisy. Tento nástroj kontroluje přesně tyto prahy.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Čím se tester kontrastu a čitelnosti barev vyznačuje?",
       "grid": "two",
@@ -381,6 +390,30 @@
         {
           "question": "Musím splnit úroveň kontrastu AAA?",
           "answer": "Ne vždy. Úroveň AA (4.5:1 pro běžný text) je minimum vyžadované předpisy o přístupnosti v EU. Úroveň AAA (7:1) poskytuje lepší čitelnost, ale je obtížnější ji dosáhnout. Pro kritický obsah – varování, bezpečnostní pokyny – zvažte dosažení AAA."
+        },
+        {
+          "question": "Vyžaduje český zákon splnění kontrastu barev?",
+          "answer": "Ano. Zákon č. 99/2019 Sb. vyžaduje, aby veřejné webové stránky splňovaly normu EN 301 549, která odkazuje na WCAG 2.1 AA. To zahrnuje minimální kontrast 4,5:1 pro běžný text a 3:1 pro velký text. Od června 2025 Evropský akt o přístupnosti rozšiřuje povinnost i na soukromý sektor."
+        },
+        {
+          "question": "Co je standard WCAG a proč na něj odkazují české zákony?",
+          "answer": "WCAG (Web Content Accessibility Guidelines) je mezinárodní soubor pokynů pro přístupnost webu vyvinutý organizací W3C. Definuje mimo jiné minimální kontrastní hodnoty, strukturu nadpisů a podporu klávesnice. České zákony odkazují na WCAG prostřednictvím evropské normy EN 301 549."
+        },
+        {
+          "question": "Jak zjistím barvy použité na své webové stránce?",
+          "answer": "V prohlížeči (Chrome, Firefox, Edge) otevřete vývojářské nástroje (pravým kliknutím > Prozkoumat). Na kartě Styly vidíte barvy použité na stránce. Rozšíření jako ColorZilla umožňují vybrat barvu libovolného prvku bez otevírání kódu."
+        },
+        {
+          "question": "Funguje tento nástroj pro tmavý režim?",
+          "answer": "Ano. Nástroj kontroluje kontrastní poměr mezi libovolnými dvěma barvami bez ohledu na to, která je světlejší. Pro tmavý režim zadejte světlou barvu textu a tmavé pozadí. Platí stejné prahy WCAG — 4,5:1 pro běžný text (AA) a 7:1 (AAA)."
+        },
+        {
+          "question": "Jaký je rozdíl mezi WCAG 2.0, 2.1 a 2.2?",
+          "answer": "WCAG 2.0 (2008) zavedlo původní požadavky na kontrast. WCAG 2.1 (2018) přidalo kritéria pro mobilní přístupnost a zhoršené vidění. WCAG 2.2 (2023) přidává další kritéria, ale nemění prahy kontrastního poměru. Požadavky na kontrast (1.4.3 a 1.4.6) zůstávají stejné ve všech verzích."
+        },
+        {
+          "question": "Kde najdu kódy barev z mého webu?",
+          "answer": "V prohlížeči otevřete vývojářské nástroje (Ctrl+Shift+I). V panelu Styly uvidíte barvy prvků. Alternativně použijte rozšíření jako ColorZilla pro výběr barvy kliknutím na libovolný prvek stránky."
         }
       ]
     },
@@ -408,5 +441,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Potřebujete přístupný web?",
+    "description": "Navrhujeme webové stránky s ohledem na všechny uživatele — správný barevný kontrast, čitelná typografie a logická struktura.",
+    "btnOne": "Webové stránky",
+    "btnOneLink": "/cs/nastroje",
+    "btnTwo": "Kontakt",
+    "btnTwoLink": "/cs/kontakt",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

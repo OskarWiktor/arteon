@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "no",
   "metadata": {
-    "title": "Ord-, tegn- og lesetidsteller med tekstformatering",
-    "description": "Gratis teller for ord, tegn, setninger, avsnitt og lesetid med konverter for store/små bokstaver. Sjekk tekstlengden og endre bokstavene.",
+    "title": "Ordteller med Flesch-Kincaid lesbarhet & tekstverkty",
+    "description": "Gratis ord-, tegn- og stavelsesteller med Flesch-Kincaid poeng, lesetid, taletid og 10 formateringsverktøy. Uten registrering.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegnteller-no.webp",
     "path": "/no/verktoy/ord-og-tegnteller"
   },
   "hero": {
-    "title": "Tell ord og tegn – sjekk lesetid og formater tekst",
-    "description": "Lim inn teksten din, og verktøyet teller ord, tegn, setninger, avsnitt, unike ord og lesetid. Endre store bokstaver, fjerne duplikater eller sortere linjer",
+    "title": "Tell ord, tegn og lesbarhet – Flesch-Kincaid, lesetid og tekstverktøy",
+    "description": "Lim inn teksten din og verktøyet teller ord, tegn, stavelser, setninger, avsnitt, unike ord, lesetid, taletid og beregner Flesch-Kincaid lesbarhetspoeng.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -33,7 +33,11 @@
         "Online letter case converter",
         "Uppercase to lowercase converter",
         "Remove duplicate lines from text",
-        "Sort text lines alphabetically"
+        "Sort text lines alphabetically",
+        "Flesch-Kincaid lesbarhetskontroll",
+        "Stavelsesteller online",
+        "Taletidskalkulator",
+        "Lesbarhetsverktøy"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Gratis ord- og tegnteller med tekstformateringsverktøy. Teller ord, tegn, setninger, avsnitt, unike ord og lesetid. Tilbyr 10 verktøy: endring av store/små bokstaver, fjerning av mellomrom, tomme linjer, duplikater og sortering.",
@@ -68,7 +72,7 @@
         },
         {
           "name": "Sjekk statistikken",
-          "text": "I venstre panel ser du 11 målinger: ord, tegn, setninger, avsnitt, unike ord, ordlengde og lesetid."
+          "text": "I venstre panel ser du 11 målinger: ord, tegn med og uten mellomrom, setninger, avsnitt, unike ord, ordlengde, lesetid, taletid, stavelser og Flesch-Kincaid poeng."
         },
         {
           "name": "Transformer tekst",
@@ -89,7 +93,7 @@
     {
       "type": "sectionBasic",
       "title": "Gratis ord- og tegnteller med tekstverktøy",
-      "html": "<p class=\"text-mid\">Dette verktøyet kombinerer en ord- og tegnteller med tekstformateringsfunksjoner. Lim inn tekst og se ord, tegn, setninger, avsnitt, unike ord og lesetid.</p><p class=\"text-mid mt-3\">Under tekstfeltet finner du 10 verktøy: konvertering av store/små bokstaver, fjerning av mellomrom, tomme linjer, duplikater og sortering. Alt behandles lokalt i nettleseren.</p>",
+      "html": "<p class=\"text-mid\">Dette verktøyet kombinerer en ord- og tegnteller med Flesch-Kincaid lesbarhetsanalyse og tekstformateringsverktøy. Lim inn teksten for å se ord, tegn, stavelser, setninger, avsnitt, unike ord, lesetid, taletid og en fargekodet lesbarhetspoeng.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid lesbarhetspoeng</strong> (0–100) viser hvor lett teksten er å lese. Poeng over 70 betyr lettlest tekst, under 30 akademisk nivå. Norge har gjennom <strong>Forskrift om universell utforming av IKT</strong> strengere tilgjengelighetskrav enn EU – god lesbarhet er en del av universell utforming.</p><p class=\"text-mid mt-3\">Under tekstfeltet finner du 10 verktøy: bokstavkonvertering, fjerning av mellomrom, tomme linjer, duplikater og sortering. Alt kjøres lokalt i nettleseren.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegnteller-no.webp",
       "imageAlt": "Ord- og tegnteller – Arteon"
     },
@@ -111,7 +115,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Sjekk statistikken",
-          "description": "I venstre panel ser du 11 målinger: ord, tegn, setninger, avsnitt, unike ord, ordlengde og lesetid."
+          "description": "I venstre panel ser du 11 målinger: ord, tegn med og uten mellomrom, setninger, avsnitt, unike ord, ordlengde, lesetid, taletid, stavelser og Flesch-Kincaid poeng."
         },
         {
           "icon": "RiTextWrap",
@@ -131,8 +135,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 tekstmålinger",
-      "description": "Telleren analyserer teksten din med åtte indikatorer:",
+      "title": "11 tekstmålinger – hva telleren måler",
+      "description": "Telleren analyserer teksten din med elleve indikatorer:",
       "grid": "two",
       "items": [
         {
@@ -174,6 +178,21 @@
           "icon": "RiTimeLine",
           "title": "Reading time",
           "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
+        },
+        {
+          "icon": "RiMicLine",
+          "title": "Taletid",
+          "description": "Estimert taletid ved 130 ord per minutt. For presentasjoner og taler."
+        },
+        {
+          "icon": "RiInputMethodLine",
+          "title": "Stavelser",
+          "description": "Totalt stavelser med språkspesifikke heuristikker."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Lesbarhet (Flesch-Kincaid)",
+          "description": "Poeng 0–100. Over 70 = lett, 50–70 = middels, under 30 = akademisk. Fargekodet."
         }
       ]
     },
@@ -301,8 +320,8 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "8 text metrics",
-          "description": "Words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time — all in one panel."
+          "title": "11 målinger + lesbarhetspoeng",
+          "description": "Ord, tegn, stavelser, setninger, avsnitt, unike ord, lesetid, taletid og Flesch-Kincaid."
         },
         {
           "icon": "RiTextWrap",
@@ -349,6 +368,21 @@
           "question": "Er teksten min trygg?",
           "answer": "Ja. All analyse skjer lokalt i nettleseren. Teksten sendes aldri til en server.",
           "answerSchemaText": "Ja. Teksten behandles lokalt i nettleseren."
+        },
+        {
+          "question": "Hva er Flesch-Kincaid poeng?",
+          "answer": "Flesch Reading Ease (0–100) viser lesbarhet. 90–100 = veldig lett, 70–89 = lett, 50–69 = middels, 30–49 = vanskelig, 0–29 = veldig vanskelig.",
+          "answerSchemaText": "Flesch Reading Ease (0–100)."
+        },
+        {
+          "question": "Hvordan beregnes taletiden?",
+          "answer": "Antall ord deles med 130 – gjennomsnittlig talehastighet.",
+          "answerSchemaText": "130 ord per minutt."
+        },
+        {
+          "question": "Hvor nøyaktig er stavelsestalleren?",
+          "answer": "Verktøyet bruker språkspesifikke heuristikker som gjenkjenner norske diftonger og lydmønstre.",
+          "answerSchemaText": "Språkspesifikke heuristikker."
         }
       ]
     },
@@ -376,5 +410,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Trenger du profesjonelt innhold til nettsiden?",
+    "description": "Vi skriver tekster som rangerer godt i Google og overbeviser besøkende til handling. Tjenestebeskrivelser, bloggartikler og webinnhold.",
+    "btnOne": "Våre tjenester",
+    "btnOneLink": "/no/kontakt",
+    "btnTwo": "Kontakt oss",
+    "btnTwoLink": "/no/kontakt",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

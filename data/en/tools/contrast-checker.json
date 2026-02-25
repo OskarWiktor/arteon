@@ -334,6 +334,66 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "How the contrast ratio is calculated",
+      "html": "<p class=\"text-mid mb-4\">The contrast ratio uses relative luminance — how bright a color appears to the human eye. The WCAG 2.1 formula is:</p><p class=\"text-mid mb-4\"><code class=\"rounded bg-black/5 px-2 py-1\">(L1 + 0.05) / (L2 + 0.05)</code></p><p class=\"text-mid mb-4\">L1 is the luminance of the lighter color, L2 of the darker. Luminance is derived by converting sRGB to linear light, then weighting channels: 0.2126 × R + 0.7152 × G + 0.0722 × B.</p><p class=\"text-mid\">The result ranges from 1:1 (identical) to 21:1 (black on white). This removes subjectivity — the ratio stays the same regardless of monitor, lighting, or personal vision.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "WCAG 2.2 and WCAG 3.0 (APCA): what is changing?",
+      "html": "<p class=\"text-mid mb-4\"><strong>WCAG 2.2</strong> (October 2023) adds criteria for focus appearance and dragging movements but does not change contrast thresholds. Success Criteria 1.4.3 and 1.4.6 remain identical to WCAG 2.1.</p><p class=\"text-mid mb-4\"><strong>WCAG 3.0</strong> is an early draft proposing APCA (Advanced Perceptual Contrast Algorithm). APCA accounts for font size, weight, and polarity (light-on-dark vs dark-on-light) for a more accurate score.</p><p class=\"text-mid\">WCAG 3.0 is years from becoming a recommendation. For now, WCAG 2.1 AA (4.5:1 / 3:1) remains the legal standard worldwide. This tool uses the current WCAG formula.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Common contrast mistakes to avoid",
+      "description": "These patterns appear frequently in web design and often fail WCAG checks:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPaletteLine",
+          "title": "Light gray text on white",
+          "description": "Gray #999 on white #fff gives only 2.8:1 — well below 4.5:1. Use at least #767676 for AA on white backgrounds."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "White text over photographs",
+          "description": "Photos have varying brightness. White text may vanish on a bright region. Add a semi-transparent dark overlay or text shadow."
+        },
+        {
+          "icon": "RiText",
+          "title": "Thin font weights under 400",
+          "description": "Lighter weights make text harder to read at the same ratio. If using thin fonts, aim higher than the bare minimum."
+        },
+        {
+          "icon": "RiInputMethodLine",
+          "title": "Low-contrast placeholder text",
+          "description": "Form placeholders are often very faint. If the placeholder conveys instructions, it should meet 4.5:1."
+        },
+        {
+          "icon": "RiColorFilterLine",
+          "title": "Untested brand colors",
+          "description": "A brand color may look bold on its own but fail when used as text on certain backgrounds. Always test the actual pairing."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Links on colored sections",
+          "description": "Links inside colored banners or cards often fail. Check the link against its section background, not the page background."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "What makes this contrast and readability checker special?",
       "grid": "two",
@@ -417,6 +477,22 @@
         {
           "question": "Does this tool work for dark mode designs?",
           "answer": "Yes. The tool checks the contrast ratio between any two colors regardless of which is lighter. For dark mode, you would typically enter a light text color and a dark background color. The same WCAG thresholds apply — 4.5:1 for normal text (AA) and 7:1 (AAA)."
+        },
+        {
+          "question": "What is a safe minimum text color on a white background?",
+          "answer": "The darkest gray that still passes WCAG AA on pure white (#ffffff) is #767676, which gives exactly 4.54:1. Anything lighter — for example #999999 at 2.85:1 — fails. For AAA compliance (7:1) you need at least #595959."
+        },
+        {
+          "question": "Does the European Accessibility Act (EAA) affect my website?",
+          "answer": "If you sell products or services to consumers in the EU, yes. The EAA (Directive 2019/882) took effect in June 2025 and extends accessibility obligations beyond public sector to private e-commerce, banking, transport, and media. It references the EN 301 549 standard, which maps to WCAG 2.1 AA — including the 4.5:1 and 3:1 contrast thresholds checked by this tool."
+        },
+        {
+          "question": "How do I test contrast for text over a gradient or image?",
+          "answer": "Pick the lightest area of the background where text appears and test against your text color. That worst-case spot determines whether the combination passes. For gradients, check both endpoints. For images, the safest approach is to add a solid or semi-transparent overlay behind the text."
+        },
+        {
+          "question": "What is APCA and should I use it instead of WCAG contrast?",
+          "answer": "APCA (Advanced Perceptual Contrast Algorithm) is a proposed replacement for the current WCAG contrast formula, developed as part of the WCAG 3.0 draft. It considers font size, weight, and text polarity for a more perceptually accurate score. However, WCAG 3.0 is not yet a W3C Recommendation and no law currently references APCA. Until it is finalized, use the WCAG 2.1 formula — which is what this tool calculates."
         }
       ]
     },
@@ -444,5 +520,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Need an accessible website?",
+    "description": "We build websites with every user in mind — proper color contrast, readable typography, logical structure and WCAG compliance.",
+    "btnOne": "Our services",
+    "btnOneLink": "/en/contact",
+    "btnTwo": "Get in touch",
+    "btnTwoLink": "/en/contact",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

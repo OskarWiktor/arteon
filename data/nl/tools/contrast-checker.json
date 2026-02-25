@@ -324,6 +324,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Toegankelijkheidsvereisten in Nederland en België",
+      "html": "<p class=\"text-mid mb-4\">Nederland en België hebben uitgebreide regelgeving voor digitale toegankelijkheid:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Nederland — Besluit digitale toegankelijkheid overheid</strong>: verplicht overheidswebsites en -apps om te voldoen aan WCAG 2.1 niveau AA. Logius voert de monitoring uit.</li><li><strong>Tijdelijk besluit digitale toegankelijkheid</strong> — overgangsregeling die de naleving stapsgewijs uitbreidt naar meer overheidsinstanties.</li><li><strong>België — Bestuursdecreet (Vlaanderen)</strong>: verplicht Vlaamse overheidssites tot WCAG 2.1 AA. Wallonië en Brussel hebben vergelijkbare besluiten.</li><li><strong>EU-Toegankelijkheidswet (EAA)</strong> — vanaf juni 2025 gelden de eisen ook voor de private sector: webshops, banken, vervoersdiensten en mediaplatforms.</li></ul><p class=\"text-mid mt-3\">De contrastverhouding van 4,5:1 voor normale tekst en 3:1 voor grote tekst is een wettelijke verplichting in beide landen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Wat maakt deze contrast checker bijzonder?",
       "grid": "two",
@@ -395,6 +404,22 @@
         {
           "question": "Welke kleurparen op mijn site moet ik het eerst controleren?",
           "answer": "Het belangrijkst: tekst op de hoofdachtergrond, tekst op banners en gekleurde secties, knoppen (tekstkleur en knopachtergrond ten opzichte van de pagina-achtergrond), links en pictogrammen. Let vooral op elementen die op verschillende achtergronden verschijnen, afhankelijk van de sectie."
+        },
+        {
+          "question": "Vereist de Nederlandse wet kleurcontrast op websites?",
+          "answer": "Ja. Het Besluit digitale toegankelijkheid overheid verplicht overheidswebsites om te voldoen aan WCAG 2.1 AA, inclusief een contrastverhouding van 4,5:1 voor normale tekst en 3:1 voor grote tekst. Vanaf juni 2025 breidt de EU-Toegankelijkheidswet (EAA) de verplichting uit naar de private sector."
+        },
+        {
+          "question": "Geldt dit ook voor Belgische websites?",
+          "answer": "Ja. In Vlaanderen verplicht het Bestuursdecreet WCAG 2.1 AA voor overheidssites. Wallonië en Brussel hebben vergelijkbare regelgeving. De EAA geldt vanaf juni 2025 ook voor de private sector in heel de EU."
+        },
+        {
+          "question": "Hoe vind ik kleurcodes van mijn website?",
+          "answer": "In de browser (Chrome, Firefox, Edge) open je de ontwikkelaarstools (rechtermuisklik > Inspecteren). Op het tabblad Styles zie je de kleuren van de pagina. Als alternatief kun je een extensie zoals ColorZilla gebruiken."
+        },
+        {
+          "question": "Wat is de veiligste grijstint op een witte achtergrond?",
+          "answer": "De donkerste grijstint die WCAG AA haalt op puur wit (#ffffff) is #767676 met een verhouding van 4,54:1. Lichtere tinten zoals #999999 (2,85:1) zakken. Voor AAA (7:1) is minimaal #595959 nodig."
         }
       ]
     },
@@ -422,5 +447,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Een toegankelijke website nodig?",
+    "description": "Wij ontwerpen websites voor alle gebruikers — correct kleurcontrast, leesbare typografie en logische structuur.",
+    "btnOne": "Onze diensten",
+    "btnOneLink": "/nl/contact",
+    "btnTwo": "Neem contact op",
+    "btnTwoLink": "/nl/contact",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

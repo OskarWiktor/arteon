@@ -41,6 +41,14 @@
         "Analoges Schema – benachbarte Farben auf dem Farbkreis",
         "Komplementäres Schema – gegenüberliegende Farben",
         "Triadisches Schema – 3 Farben in gleichen Abständen",
+        "Tetradisches Schema – 4 Farben in 90°",
+        "Warme Verschiebung – Rot, Orange, Gelb",
+        "Kühle Verschiebung – Blau, Türkis, Violett",
+        "Erdtöne – Braun, Oliv, Ocker",
+        "Neon – maximale Sättigung",
+        "Vintage – entsättigte Retro-Töne",
+        "Hochkontrast – Schwarz bis Weiß",
+        "Sonnenuntergang-Gradient",
         "Gespalten-komplementäres Schema – Basisfarbe und 2 Nachbarn der Gegenfarbe",
         "Pastellpalette – helle, gedämpfte Töne",
         "Dunkle Palette – tiefe Farben für dunkle Themen",
@@ -118,54 +126,94 @@
     },
     {
       "type": "sectionSteps",
-      "title": "17 Palettentypen - welche passt zu Ihrem Projekt?",
-      "description": "Jede Palette hat einen anderen Charakter und eignet sich für unterschiedliche Anwendungen:",
-      "grid": "three",
+      "title": "17 Palettentypen – welche passt zu Ihrem Projekt?",
+      "description": "Der Generator erstellt 17 Farbschemata auf Basis der Farbtheorie. Jedes Schema folgt einer anderen Logik:",
+      "grid": "two",
       "items": [
         {
-          "icon": "RiPaletteLine",
-          "title": "Monochromatisch",
-          "description": "Variationen eines Farbtons in Helligkeit und Sättigung. Elegant, harmonisch, professionell."
+          "icon": "RiStackLine",
+          "title": "Monochromatische Palette",
+          "description": "Mehrere Helligkeitsstufen eines einzigen Farbtons. Die Farben wirken ruhig und zusammengehörig. Geeignet für Geschäftsberichte, juristische Websites und Projekte, bei denen visuelle Zurückhaltung gewünscht ist."
         },
         {
-          "icon": "RiColorFilterLine",
-          "title": "Analog",
-          "description": "Benachbarte Farben auf dem Farbkreis. Sanfter, natürlicher Übergang ohne harten Kontrast."
+          "icon": "RiPaletteLine",
+          "title": "Analoge Palette",
+          "description": "Farben, die auf dem Farbkreis direkt nebeneinander liegen (ca. 30° Abstand). Weiche Übergänge ohne harten Kontrast. Beliebt für Illustrationen, Infografiken und redaktionelle Layouts."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Komplementäre Palette",
+          "description": "Die Basisfarbe und ihr Gegenstück auf dem Farbkreis (180° Versatz). Erzeugt maximalen visuellen Kontrast. Nützlich für Call-to-Action-Buttons, Warnhinweise und Elemente, die sofort ins Auge fallen sollen."
+        },
+        {
+          "icon": "RiSparklingLine",
+          "title": "Triadische Palette",
+          "description": "Drei Farben im 120°-Abstand auf dem Farbkreis bilden ein gleichseitiges Dreieck. Lebendig und ausgewogen zugleich. Bewährt in der Markenidentität junger Unternehmen und kreativer Agenturen."
+        },
+        {
+          "icon": "RiCursorLine",
+          "title": "Split-komplementäre Palette",
+          "description": "Statt der direkten Komplementärfarbe werden deren zwei Nachbarn verwendet. Der Kontrast bleibt deutlich, wirkt aber weniger hart. Eine sichere Wahl, wenn komplementärer Kontrast zu intensiv erscheint."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Pastellpalette",
+          "description": "Niedrige Sättigung und hohe Helligkeit ergeben weiche, zurückhaltende Töne. Häufig anzutreffen in der Kosmetikbranche, bei Kinderprodukten und in der Gastronomie."
+        },
+        {
+          "icon": "RiMoonLine",
+          "title": "Dunkle Palette",
+          "description": "Hohe Sättigung bei niedriger Helligkeit. Tiefe, intensive Farben für Dark-Mode-Oberflächen, Premium-Marken und Produkte, die Exklusivität vermitteln sollen."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Tonale Palette",
+          "description": "Eine Helligkeitsskala desselben Farbtons von sehr hell bis sehr dunkel. Entspricht den Farbstufen in Designsystemen (z. B. 50 bis 900). Unverzichtbar beim Aufbau von UI-Komponentenbibliotheken."
+        },
+        {
+          "icon": "RiContractLeftRightLine",
+          "title": "Minimalistische Palette",
+          "description": "Ein kräftiger Farbakzent umgeben von hellen, neutralen Tönen. Typisch für moderne Produktseiten und Landing Pages mit viel Weißraum."
+        },
+        {
+          "icon": "RiGridLine",
+          "title": "Tetradische (Quadrat-)Palette",
+          "description": "Vier Farbtöne im 90°-Abstand auf dem Farbkreis. Reich und ausgewogen – besonders geeignet für Dashboards, Datenvisualisierungen und komplexe Interfaces, die viele unterscheidbare Farben benötigen."
+        },
+        {
+          "icon": "RiFireLine",
+          "title": "Warme Palette",
+          "description": "Farbtöne verschoben in Richtung Rot, Orange und Gelb. Vermittelt Energie, Wärme und Nahbarkeit. Bewährt in der Gastronomie, im Hotelgewerbe und bei aktivierenden Werbekampagnen."
+        },
+        {
+          "icon": "RiSnowflakeLine",
+          "title": "Kühle Palette",
+          "description": "Farbtöne verschoben in Richtung Blau, Türkis und Violett. Strahlt Ruhe, Sachlichkeit und Vertrauen aus. Verbreitet im Finanzsektor, Gesundheitswesen und bei Unternehmensauftritten."
+        },
+        {
+          "icon": "RiSeedlingLine",
+          "title": "Erdtöne-Palette",
+          "description": "Gering gesättigte Braun-, Oliv- und Ockertöne, inspiriert von Naturlandschaften. Passt zu ökologischen Marken, handwerklichen Betrieben und rustikaler Ästhetik."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Neon-Palette",
+          "description": "Maximal gesättigte Farben mit elektrischer Intensität. Entwickelt für auffälliges Marketing, Gaming-Interfaces, Nachtleben-Marken und Designs, die Aufmerksamkeit erzwingen."
+        },
+        {
+          "icon": "RiAncientGateLine",
+          "title": "Vintage-Palette",
+          "description": "Entsättigte, leicht warme Töne, die an alte Drucke und Retro-Fotografie erinnern. Geeignet für Traditionsmarken, handwerkliche Produkte und nostalgische Gestaltung."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Komplementär",
-          "description": "Basisfarbe + gegenüberliegende Farbe (180°). Maximaler Kontrast für dynamische, lebhafte Designs."
+          "title": "Hochkontrast-Palette",
+          "description": "Extremer Helligkeitsumfang von fast Schwarz bis fast Weiß mit dem Grundfarbton. Hervorragend für barrierefreie Designs, klare visuelle Hierarchie und WCAG-konforme Oberflächen."
         },
         {
-          "icon": "RiMagicLine",
-          "title": "Triadisch",
-          "description": "Drei Farben im gleichmäßigen 120°-Abstand. Ausgewogen mit starkem visuellen Kontrast."
-        },
-        {
-          "icon": "RiSearchLine",
-          "title": "Split-komplementär",
-          "description": "Basisfarbe + die zwei Nachbarn des Komplements. Subtilerer Kontrast als rein komplementär."
-        },
-        {
-          "icon": "RiPaintBrushLine",
-          "title": "Pastell",
-          "description": "Hohe Helligkeit, reduzierte Sättigung. Weich, luftig - ideal für freundliche und feminine Designs."
-        },
-        {
-          "icon": "RiSettings3Line",
-          "title": "Dunkel",
-          "description": "Geringe Helligkeit, tiefe Töne. Professionell, ernst - geeignet für Dark-Mode-Designs und Premium-Marken."
-        },
-        {
-          "icon": "RiRefreshLine",
-          "title": "Tonal (Material Design)",
-          "description": "Abgestufte Helligkeit bei gleichem Farbton. Ähnelt dem Farbsystem von Google Material Design."
-        },
-        {
-          "icon": "RiInfinityLine",
-          "title": "Minimalistisch (Apple)",
-          "description": "Neutrale Basis mit einem farbigen Akzent. Sauber, modern - inspiriert vom Apple-Designstil."
+          "icon": "RiSunLine",
+          "title": "Sonnenuntergang-Gradient",
+          "description": "Fließende Farbtonrotation von warm nach kühl, inspiriert von natürlichen Sonnenuntergängen. Ideal für Hero-Sektionen, Hintergrundverläufe und kreative Projekte."
         }
       ]
     },
@@ -178,6 +226,15 @@
       "title": "Wie der HSL-Farbraum funktioniert",
       "demoHtml": "<div class=\"space-y-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">Beispiel: HSL(210, 80%, 50%)</p><div class=\"mt-2 flex items-center gap-3\"><div class=\"h-10 w-10 rounded\" style=\"background-color: hsl(210, 80%, 50%)\"></div><div class=\"text-mid text-sm!\"><p>H = 210° (Blauton)</p><p>S = 80% (kräftig)</p><p>L = 50% (mittlere Helligkeit)</p></div></div></div><div class=\"rounded-lg border border-neutral-200 bg-white p-3\"><p class=\"text-dark text-sm! font-medium\">Gleicher Farbton, andere Helligkeit</p><div class=\"mt-2 flex gap-1\"><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 90%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 70%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 50%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 30%)\"></div><div class=\"h-8 flex-1 rounded\" style=\"background-color: hsl(210, 80%, 10%)\"></div></div><p class=\"text-light mt-1 text-xs!\">L: 90% → 70% → 50% → 30% → 10%</p></div></div>",
       "html": "<p class=\"text-mid\">Alle Paletten in diesem Tool basieren auf dem HSL-Farbraum (Hue, Saturation, Lightness). Im Gegensatz zu HEX oder RGB beschreibt HSL Farben so, wie wir sie wahrnehmen:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>Hue (H)</strong> - der Farbton auf dem Farbkreis (0°–360°). 0° = Rot, 120° = Grün, 240° = Blau.</li><li><strong>Saturation (S)</strong> - die Sättigung. 0% = Grau, 100% = volle Farbintensität.</li><li><strong>Lightness (L)</strong> - die Helligkeit. 0% = Schwarz, 50% = Normalfarbe, 100% = Weiß.</li></ul><p class=\"text-mid mt-3\">Durch gezielte Änderung einzelner Werte lassen sich harmonische Paletten erzeugen. Monochromatische Paletten ändern nur L, analoge nur H, und komplementäre spiegeln H um 180°.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Farbtraditionen im deutschen Design",
+      "html": "<p class=\"text-mid mb-4\">Deutschland hat die Farbtheorie und das Design maßgeblich geprägt:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Bauhaus</strong> — Johannes Itten entwickelte am Bauhaus seinen Farbkreis und die Lehre der Farbkontraste. Paul Klee und Wassily Kandinsky erforschten die Beziehung zwischen Farbe und Form. Diese Prinzipien fließen bis heute in Designsysteme ein.</li><li><strong>RAL-Farbsystem</strong> — der deutsche Industriestandard für Farben. RAL-Nummern werden in Architektur, Fahrzeugbau und Produktdesign als verbindliche Referenz verwendet.</li><li><strong>Deutsche Flaggenfarben</strong> — Schwarz, Rot und Gold haben eine Geschichte, die bis zu den Befreiungskriegen zurückreicht. Ihre Kombination wird im Markendesign bewusst oder als kulturelle Referenz eingesetzt.</li></ul>"
     },
     {
       "type": "gap",
@@ -222,8 +279,8 @@
       "items": [
         {
           "icon": "RiContrastLine",
-          "title": "9 Palettentypen",
-          "description": "Monochromatisch, analog, komplementär, triadisch, split-komplementär, Pastell, dunkel, tonal und minimalistisch."
+          "title": "17 Palettentypen",
+          "description": "Von monochromatisch über komplementär und triadisch bis hin zu Erdtönen, Neon, Vintage und Hochkontrast – 17 Schemata auf Basis der Farbtheorie."
         },
         {
           "icon": "RiMagicLine",
@@ -253,33 +310,49 @@
       "items": [
         {
           "question": "Wie viele Paletten generiert das Tool?",
-          "answer": "Das Tool generiert 17 verschiedene Paletten aus einer einzigen Basisfarbe: monochromatisch, analog, komplementär, triadisch, split-komplementär, Pastell, dunkel, tonal (Material Design) und minimalistisch (Apple-Stil).",
-          "answerSchemaText": "17 Paletten: monochromatisch, analog, komplementär, triadisch, split-komplementär, Pastell, dunkel, tonal, minimalistisch."
+          "answer": "Das Tool generiert 17 verschiedene Paletten aus einer einzigen Basisfarbe: monochromatisch, analog, komplementär, triadisch, split-komplementär, tetradisch (Quadrat), warm, kühl, Erdtöne, Neon, Vintage, Hochkontrast, Sonnenuntergang-Gradient, Pastell, dunkel, tonal und minimalistisch.",
+          "answerSchemaText": "17 Paletten: monochromatisch, analog, komplementär, triadisch, split-komplementär, tetradisch, warm, kühl, Erdtöne, Neon, Vintage, Hochkontrast, Sonnenuntergang, Pastell, dunkel, tonal, minimalistisch.",
+          "description": ""
         },
         {
           "question": "Was ist eine monochromatische Palette?",
           "answer": "Eine monochromatische Palette besteht aus Variationen eines einzigen Farbtons - alle Farben haben denselben Farbton (H im HSL-Modell) und unterscheiden sich nur in Helligkeit und Sättigung. Diese Paletten sind harmonisch und eignen sich besonders für professionelle Designs.",
-          "answerSchemaText": "Eine Palette aus einem Farbton mit Variationen in Helligkeit und Sättigung."
+          "answerSchemaText": "Eine Palette aus einem Farbton mit Variationen in Helligkeit und Sättigung.",
+          "description": ""
         },
         {
           "question": "Was ist eine komplementäre Palette?",
           "answer": "Eine komplementäre Palette kombiniert die Basisfarbe mit ihrem Komplement - der auf dem Farbkreis gegenüberliegenden Farbe (180°-Versatz). Dieser Kontrast gehört zu den grundlegenden Prinzipien der Farbtheorie und erzeugt einen lebhaften, dynamischen Effekt.",
-          "answerSchemaText": "Die Basisfarbe plus die gegenüberliegende Farbe auf dem Farbkreis (180°-Versatz)."
+          "answerSchemaText": "Die Basisfarbe plus die gegenüberliegende Farbe auf dem Farbkreis (180°-Versatz).",
+          "description": ""
         },
         {
           "question": "Kann ich die generierten Farben kopieren?",
           "answer": "Ja. Klicken Sie auf eine Farbe in der Palette, um den HEX-Code in die Zwischenablage zu kopieren. Sie können die Codes direkt in CSS, Figma, Adobe oder anderen Design-Tools verwenden.",
-          "answerSchemaText": "Ja, klicken Sie auf eine Farbe, um den HEX-Code zu kopieren."
+          "answerSchemaText": "Ja, klicken Sie auf eine Farbe, um den HEX-Code zu kopieren.",
+          "description": ""
         },
         {
           "question": "Was ist der HSL-Farbraum?",
           "answer": "HSL steht für Hue (Farbton), Saturation (Sättigung) und Lightness (Helligkeit). Im Gegensatz zu RGB beschreibt HSL Farben so, wie wir sie wahrnehmen: der Farbton bestimmt die Grundfarbe, die Sättigung die Intensität und die Helligkeit, wie hell oder dunkel die Farbe ist. Alle Paletten in diesem Tool basieren auf HSL-Berechnungen.",
-          "answerSchemaText": "HSL = Hue, Saturation, Lightness. Ein Farbmodell, das Farben nach menschlicher Wahrnehmung beschreibt."
+          "answerSchemaText": "HSL = Hue, Saturation, Lightness. Ein Farbmodell, das Farben nach menschlicher Wahrnehmung beschreibt.",
+          "description": ""
         },
         {
           "question": "Was ist der Unterschied zwischen triadisch und split-komplementär?",
           "answer": "Eine triadische Palette verwendet drei Farben, die auf dem Farbkreis gleichmäßig verteilt sind (je 120° Abstand). Eine split-komplementäre Palette nimmt statt des direkten Komplements die beiden Nachbarfarben des Komplements - das ergibt einen etwas subtileren Kontrast als das komplementäre Schema.",
-          "answerSchemaText": "Triadisch: 3 Farben à 120° Abstand. Split-komplementär: Basisfarbe + 2 Nachbarn des Komplements."
+          "answerSchemaText": "Triadisch: 3 Farben à 120° Abstand. Split-komplementär: Basisfarbe + 2 Nachbarn des Komplements.",
+          "description": ""
+        },
+        {
+          "question": "Welcher Palettentyp eignet sich am besten für eine Unternehmenswebsite?",
+          "answer": "Monochromatische oder tonale Paletten eignen sich gut für Unternehmensseiten, da sie eine einheitliche, ruhige visuelle Hierarchie bieten. Nutzen Sie die tonale Palette, um ein vollständiges System aus Hintergrund, Text, Rand und Akzentfarben aus einer einzigen Markenfarbe aufzubauen.",
+          "answerSchemaText": "Monochromatische oder tonale Paletten für einheitliche Hierarchie."
+        },
+        {
+          "question": "Kann ich die HEX-Codes in RGB umrechnen?",
+          "answer": "Das Tool zeigt neben dem HEX-Code auch den HSL-Wert jeder Farbe an. Für die Umrechnung in RGB können Sie die Entwicklertools Ihres Browsers verwenden — geben Sie den HEX-Code im Farbwähler ein und der RGB-Wert wird automatisch angezeigt.",
+          "answerSchemaText": "Das Tool zeigt HEX und HSL. Entwicklertools für RGB-Umrechnung nutzen."
         }
       ]
     },
@@ -307,5 +380,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Brauchen Sie eine einheitliche Markenidentität?",
+    "description": "Wir gestalten Logos, Farbsysteme und Firmenmaterialien — von Visitenkarten bis zu Social-Media-Vorlagen.",
+    "btnOne": "Unsere Leistungen",
+    "btnOneLink": "/de/kontakt",
+    "btnTwo": "Kontakt aufnehmen",
+    "btnTwoLink": "/de/kontakt",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

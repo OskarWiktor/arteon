@@ -39,6 +39,14 @@
         "Mørk palet – dybe farver til mørke temaer",
         "Tonal palet – lysstyrkeniveauer af én farve",
         "Minimalistisk palet – stærk accent og neutrale farver",
+        "Tetradisk skema – 4 farver pa 90°",
+        "Varm forskydning – rodt, orange, gult",
+        "Kold forskydning – blat, turkis, violet",
+        "Jordtoner – brun, oliven, okker",
+        "Neon – maksimal maetning",
+        "Vintage – afmaettede retrotoner",
+        "Hoj kontrast – sort til hvid",
+        "Solnedgangsgradient",
         "Grundfarve i HEX-format",
         "Farvevælger til visuelt valg",
         "Tilfældig startfarve",
@@ -163,6 +171,46 @@
           "icon": "RiContractLeftRightLine",
           "title": "Minimalistisk palet",
           "description": "Én stærk farveaccent og flere meget lyse neutrale farver. Hele paletten forbliver rolig. Fungerer godt i moderne interfaces med meget hvidt rum."
+        },
+        {
+          "icon": "RiGridLine",
+          "title": "Tetradisk (kvadrat) palet",
+          "description": "Fire nuancer med 90° mellemrum. Rig og afbalanceret – ideel til komplekse interfaces og datavisualisering."
+        },
+        {
+          "icon": "RiFireLine",
+          "title": "Varm palet",
+          "description": "Farver forskudt mod rodt, orange og gult. Fremkalder energi og varme."
+        },
+        {
+          "icon": "RiSnowflakeLine",
+          "title": "Kold palet",
+          "description": "Farver forskudt mod blat, turkis og violet. Kommunikerer ro og professionalisme."
+        },
+        {
+          "icon": "RiSeedlingLine",
+          "title": "Jordtoner",
+          "description": "Lavt maettede brune, oliven- og okker-toner inspireret af naturlandskaber."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Neonpalet",
+          "description": "Maksimalt maettede farver med elektrisk intensitet."
+        },
+        {
+          "icon": "RiAncientGateLine",
+          "title": "Vintagepalet",
+          "description": "Afmaettede, let varme toner der minder om gamle tryk og retro-fotografi."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Hojkontrastpalet",
+          "description": "Ekstremt lysstyrkeomrade. Fremragende til tilgaengelige designs og WCAG-graneflader."
+        },
+        {
+          "icon": "RiSunLine",
+          "title": "Solnedgangsgradient",
+          "description": "Blod nuancerotation fra varmt til koldt som en naturlig solnedgang."
         }
       ]
     },
@@ -175,6 +223,15 @@
       "title": "Hvad bygger farvepaletgeneratoren på?",
       "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° på farvehjulet</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
       "html": "<p class=\"text-mid\">Alle paletter skabes gennem matematisk transformation af grundfarven i HSL-farverummet. HSL beskriver en farve med tre værdier: hue (H) er positionen på farvehjulet (0°–360°), saturation (S) bestemmer farvens styrke, og lightness (L) – hvor lys eller mørk farven er.</p><p class=\"text-mid mt-3\">Komplementære, triadiske og splittede komplementære paletter er baseret på farvehjulets geometri – farver placeres med lige vinkelintervaller, hvilket skaber visuel balance. Monokromatiske, pastel- og mørke paletter ændrer kun lysstyrke og mætning, mens samme kulør bibeholdes.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Farver i dansk design og kultur",
+      "html": "<p class=\"text-mid mb-4\">Dansk design er verdenskendt for sin brug af farver:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Hygge-farver</strong> — varme, dæmpede tøner som karamel, varm grå og blød hvid definerer den danske hygge-æstetik. Disse farver skaber tryghed og intimitet.</li><li><strong>Royal Copenhagen</strong> — det ikoniske blå-hvide porcelæn har påvirket dansk farveæstetik i over 200 år. Cobaltblåt på hvidt er en dansk designklassiker.</li><li><strong>Nordisk minimalisme</strong> — skandinavisk design foretrækker lyse, neutrale paletter med få kontrastfarver. Hvidt, lyst træ og accentfarver i bløde pasteller.</li></ul>"
     },
     {
       "type": "gap",
@@ -245,27 +302,42 @@
         {
           "question": "I hvilket format skal grundfarven være?",
           "answer": "Generatoren accepterer farver i HEX-format – forkortet (f.eks. #F50) og fuld (f.eks. #FF5500). Ved tekstfeltet er der en farvevælger, der lader dig vælge farve visuelt. Genererede paletter viser HEX-kode og HSL-værdi for hver farve.",
-          "answerSchemaText": "Generatoren accepterer HEX-farver (#RGB eller #RRGGBB). Hver genereret farve har HEX-kode og HSL-værdi."
+          "answerSchemaText": "Generatoren accepterer HEX-farver (#RGB eller #RRGGBB). Hver genereret farve har HEX-kode og HSL-værdi.",
+          "description": ""
         },
         {
           "question": "Hvor mange farver er der i hver palet?",
           "answer": "Hver palet indeholder 4 til 6 farver. Antallet afhænger af skematypen – monokromatiske og tonale paletter genererer flere nuancer, mens komplementære og triadiske paletter fokuserer på færre kontrasterende farver.",
-          "answerSchemaText": "Hver palet indeholder 4 til 6 farver, afhængigt af skematypen."
+          "answerSchemaText": "Hver palet indeholder 4 til 6 farver, afhængigt af skematypen.",
+          "description": ""
         },
         {
           "question": "Hvad er HSL-farverummet, og hvordan læser man det?",
           "answer": "HSL er en måde at beskrive farver med tre værdier: H (nuance, 0°–360° på farvehjulet), S (mætning, 0%–100%) og L (lysstyrke, 0%–100%). Generatoren viser HSL-værdier ved siden af hver farve, hvilket gør det lettere at forstå, hvordan farverne i paletten adskiller sig – f.eks. ændrer en monokromatisk palet kun lysstyrken (L), mens nuancen (H) forbliver den samme.",
-          "answerSchemaText": "HSL beskriver farver via nuance (H), mætning (S) og lysstyrke (L). Generatoren viser disse værdier ved siden af hver farve i paletten."
+          "answerSchemaText": "HSL beskriver farver via nuance (H), mætning (S) og lysstyrke (L). Generatoren viser disse værdier ved siden af hver farve i paletten.",
+          "description": ""
         },
         {
           "question": "Kan jeg bruge genererede paletter kommercielt?",
           "answer": "Ja. Du kan bruge genererede farvepaletter i ethvert projekt – kommercielt og ikke-kommercielt, uden licensbegrænsninger.",
-          "answerSchemaText": "Ja, genererede paletter kan bruges uden begrænsninger i kommercielle og ikke-kommercielle projekter."
+          "answerSchemaText": "Ja, genererede paletter kan bruges uden begrænsninger i kommercielle og ikke-kommercielle projekter.",
+          "description": ""
         },
         {
           "question": "Kræver farvepaletgeneratoren login eller betaling?",
           "answer": "Generatoren er helt gratis og kræver ingen login eller registrering. Farver genereres lokalt i browseren – ingen data sendes til eksterne servere.",
-          "answerSchemaText": "Generatoren er gratis, kræver ingen login. Farver genereres lokalt i browseren."
+          "answerSchemaText": "Generatoren er gratis, kræver ingen login. Farver genereres lokalt i browseren.",
+          "description": ""
+        },
+        {
+          "question": "Hvilken palettetype er bedst til en virksomhedshjemmeside?",
+          "answer": "Monokromatiske eller tonale paletter fungerer godt til virksomhedssider, da de giver et ensartet, roligt visuelt hierarki. Brug den tonale palette til at bygge et komplet system af baggrund, tekst, kanter og accentfarver fra én brandfarve.",
+          "answerSchemaText": "Monokromatiske eller tonale paletter for ensartet hierarki."
+        },
+        {
+          "question": "Kan jeg bruge de genererede paletter kommercielt?",
+          "answer": "Ja. Du kan bruge de genererede farvepaletter i ethvert projekt — kommercielt og ikke-kommercielt, uden licensbegrænsninger.",
+          "answerSchemaText": "Ja, uden begrænsninger."
         }
       ]
     },
@@ -293,5 +365,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Har du brug for en visuel identitet til dit brand?",
+    "description": "Vi designer logoer, farvepaletter og brandmaterialer — fra visitkort til skabeloner til sociale medier.",
+    "btnOne": "Se vores tjenester",
+    "btnOneLink": "/da/kontakt",
+    "btnTwo": "Kontakt os",
+    "btnTwoLink": "/da/kontakt",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

@@ -39,6 +39,14 @@
         "Sötét paletta – mély színek sötét témákhoz",
         "Tonális paletta – egy árnyalat fényerő-skálája",
         "Minimalista paletta – erős hangsúly világos semleges tónusokkal",
+        "Tetradikus sema – 4 szin 90°-ra",
+        "Meleg eltolas – vorosok, narancsok, sargak",
+        "Hideg eltolas – kekek, turkizek, lilak",
+        "Foldszinek – barnak, olivak, okkerek",
+        "Neon – maximalis telitettseg",
+        "Vintage – telitetlen retro tonusok",
+        "Magas kontraszt – feketetol fehérig",
+        "Naplemente gradiens",
         "Alapszín HEX formátumban",
         "Színválasztó vizuális kiválasztáshoz",
         "Véletlenszerű kezdőszín",
@@ -163,6 +171,46 @@
           "icon": "RiContractLeftRightLine",
           "title": "Minimalista paletta",
           "description": "Egyetlen merész színakcentus és több nagyon világos, lágy neutrális. A paletta többi része tömpített marad. Jól működik modern, sok fehér térrel rendelkező felületeken – tipikus termék- és landing page stílus."
+        },
+        {
+          "icon": "RiGridLine",
+          "title": "Tetradikus (negyzetes) paletta",
+          "description": "Negy arnyalat 90° tavolságra a szinkereken. Gazdag es kiegyensulyozott – idealis osszetett feluletek es adatvizualizacio szamara."
+        },
+        {
+          "icon": "RiFireLine",
+          "title": "Meleg paletta",
+          "description": "Szinek a vorosok, narancssargak es sargak fele eltolva. Energiat es melegsaget idez."
+        },
+        {
+          "icon": "RiSnowflakeLine",
+          "title": "Hideg paletta",
+          "description": "Szinek a kekek, turkizek es lilaak fele eltolva. Nyugalmat es professzionalizmust kozvetit."
+        },
+        {
+          "icon": "RiSeedlingLine",
+          "title": "Foldszinu paletta",
+          "description": "Alacsony telitettsegu barnak, olivak es okkerek, termeszeti tajak altal inspiralva."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Neon paletta",
+          "description": "Maximalis telitettsegu szinek elektromos intenzitassal."
+        },
+        {
+          "icon": "RiAncientGateLine",
+          "title": "Vintage paletta",
+          "description": "Telitetlen, enyhon meleg tonusok, amelyek regi nyomatokra es retro fenykepezesre emlekeztetnek."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Magas kontrasztu paletta",
+          "description": "Extrem fenyerosseg-tartomany. Kituno akadalymentes tervezeshez es WCAG-kompatibilis feluletekhez."
+        },
+        {
+          "icon": "RiSunLine",
+          "title": "Naplemente gradiens paletta",
+          "description": "Finom arnyalat-rotacio melegtol hideig, termeszetes naplementet utanozva."
         }
       ]
     },
@@ -175,6 +223,15 @@
       "title": "Min alapul a paletta generátor?",
       "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (színezet)</span><span class=\"text-mid\">0°–360° a színkörön</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (telítettség)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (világosság)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
       "html": "<p class=\"text-mid\">Minden paletta az alapszín matematikai transzformálásával jön létre a HSL színtérben. A HSL három értékkel írja le a színt: a színezet (H) a pozíció a színkörön (0°–360°), a telítettség (S) a szín intenzitását határozza meg, a világosság (L) pedig azt, hogy milyen világos vagy sötét a szín.</p><p class=\"text-mid mt-3\">A komplementár, triádikus és osztott komplementár paletták a színkör geometriáján alapulnak – a színek egyenlő szögtávolságokra kerülnek, vizuális egyensúlyt hozva létre. A monokromatikus, pasztell és sötét paletták csak a világosságot és telítettséget változtatják, megtartva ugyanazt a színezetet.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Színek a magyar művészetben és kultúrában",
+      "html": "<p class=\"text-mid mb-4\">Magyarország színes kultúrális örökséggel rendelkezik:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Magyar hímzés</strong> — a kalocsai és matyó hímzések élénk pirosakat, kékeket és zöldeket használnak, amelyek inspirálják a kortárs magyar márkaidentitásokat.</li><li><strong>Herendi porcelán</strong> — a világhírű herendi porcelán jellegzetes zöld, kék és arany mintázatai a prémium design szimbólumai.</li><li><strong>Magyar szecesszió</strong> — Lechner Ödön építészete és a Zsolnay kerámiák irizáló máza egyedi színpalettát teremtett, amely a modern magyar designban is megjelenik.</li></ul>"
     },
     {
       "type": "gap",
@@ -250,27 +307,42 @@
         {
           "question": "Milyen formátumban kell megadni az alapszínt?",
           "answer": "A generátor HEX formátumú színeket fogad el – rövid (pl. #F50) és teljes (pl. #FF5500) formátumban egyaránt. A szövegmező mellett talál egy színválasztót, amellyel vizuálisan választhat színt. A generált paletták minden szín HEX kódját és HSL értékét mutatják.",
-          "answerSchemaText": "A generátor HEX színeket fogad el (#RGB vagy #RRGGBB). Minden generált szín HEX kóddal és HSL értékkel rendelkezik."
+          "answerSchemaText": "A generátor HEX színeket fogad el (#RGB vagy #RRGGBB). Minden generált szín HEX kóddal és HSL értékkel rendelkezik.",
+          "description": ""
         },
         {
           "question": "Hány színt tartalmaz minden paletta?",
           "answer": "Minden paletta 4-6 színt tartalmaz. A szám a sématípustól függ – a monokromatikus és tonális paletták több árnyalatot generálnak (egyetlen színezet világossági skálája), míg a komplementár és triádikus paletták kevesebb kontrasztáló színre összpontosítanak.",
-          "answerSchemaText": "Minden paletta 4-6 színt tartalmaz, a sématípustól függően."
+          "answerSchemaText": "Minden paletta 4-6 színt tartalmaz, a sématípustól függően.",
+          "description": ""
         },
         {
           "question": "Mi a HSL színtér és hogyan kell olvasni?",
           "answer": "A HSL a szín leírásának egy módja három értékkel: H (színezet, 0°–360° a színkörön), S (telítettség, 0%–100%) és L (világosság, 0%–100%). A generátor HSL értékeket jelenít meg minden szín mellett, megkönnyítve annak megértését, hogy a paletta színei miben különböznek.",
-          "answerSchemaText": "A HSL a színt színezet (H), telítettség (S) és világosság (L) értékekkel írja le. A generátor ezeket az értékeket jeleníti meg minden szín mellett."
+          "answerSchemaText": "A HSL a színt színezet (H), telítettség (S) és világosság (L) értékekkel írja le. A generátor ezeket az értékeket jeleníti meg minden szín mellett.",
+          "description": ""
         },
         {
           "question": "Használhatom a generált palettákat kereskedelmi célra?",
           "answer": "Igen. A generált színpalettákat bármely projektben használhatja – kereskedelmi és nem kereskedelmi célra, licenckorlátozás nélkül.",
-          "answerSchemaText": "Igen, a generált paletták korlátozás nélkül használhatók kereskedelmi és nem kereskedelmi projektekben."
+          "answerSchemaText": "Igen, a generált paletták korlátozás nélkül használhatók kereskedelmi és nem kereskedelmi projektekben.",
+          "description": ""
         },
         {
           "question": "A generátor igényel bejelentkezést vagy fizetést?",
           "answer": "A generátor teljesen ingyenes és nem igényel bejelentkezést vagy regisztrációt. A színek helyben generálódnak a böngészőben – semmilyen adat nem kerül külső szerverekre.",
-          "answerSchemaText": "A generátor ingyenes, nem igényel bejelentkezést. A színek helyben generálódnak a böngészőben."
+          "answerSchemaText": "A generátor ingyenes, nem igényel bejelentkezést. A színek helyben generálódnak a böngészőben.",
+          "description": ""
+        },
+        {
+          "question": "Melyik palettatípus a legjobb vállalati weboldalhoz?",
+          "answer": "A monokromatikus vagy tonális paletta jól működik vállalati oldalakhoz, mert egységes, nyugodt vizuális hierarchiát biztosít. Használja a tonális palettát háttér, szöveg, szegély és kiemelő színek teljes rendszerének felépítéséhez egyetlen márkaszínből.",
+          "answerSchemaText": "Monokromatikus vagy tonális paletta egységes hierarchiához."
+        },
+        {
+          "question": "Használhatom a palettákat kereskedelmi célra?",
+          "answer": "Igen. A generált színpalettákat bármely projektben használhatja — kereskedelmi és nem kereskedelmi célra, licenckorlátozás nélkül.",
+          "answerSchemaText": "Igen, korlátozás nélkül."
         }
       ]
     },
@@ -298,5 +370,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Egységes márkaidentitásra van szüksége?",
+    "description": "Logókat, színrendszereket és vállalati anyagokat tervezünk — névjegykártyáktól a közösségi média sablonokig.",
+    "btnOne": "Szolgáltatásaink",
+    "btnOneLink": "/hu/kapcsolat",
+    "btnTwo": "Kapcsolat",
+    "btnTwoLink": "/hu/kapcsolat",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

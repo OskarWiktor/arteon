@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "pl",
   "metadata": {
-    "title": "Licznik słów, znaków i czasu czytania z formatowaniem tekstu",
-    "description": "Darmowy licznik słów, znaków, zdań, akapitów i czasu czytanie z konwertorem wielkości liter. Sprawdź długość swojego tekstu i zmień litery.",
+    "title": "Licznik słów z czytelnością Flesch-Kincaid, sylabami i czasem mówienia",
+    "description": "Darmowy licznik słów, znaków i sylab z wynikiem czytelności Flesch-Kincaid, czasem czytania, czasem mówienia i 10 narzędziami do formatowania tekstu. Bez rejestracji.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/licznik-slow-i-znakow-pl.webp",
     "path": "/narzedzia/licznik-slow-i-znakow"
   },
   "hero": {
-    "title": "Policz słowa i znaki – sprawdź czas czytania i sformatuj tekst",
-    "description": "Wklej tekst, a narzędzie policzy słowa, znaki, zdania, akapity, unikalne wyrazy i czas czytania. Zmień wielkość liter, usuń duplikaty lub posortuj linie jednym kliknięciem",
+    "title": "Policz słowa, znaki i czytelność – wynik Flesch-Kincaid, czas czytania i narzędzia tekstowe",
+    "description": "Wklej tekst, a narzędzie policzy słowa, znaki, sylaby, zdania, akapity, unikalne wyrazy, czas czytania, czas mówienia i obliczy wynik czytelności Flesch-Kincaid. Zmień wielkość liter, usuń duplikaty lub posortuj linie jednym kliknięciem.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -24,19 +24,21 @@
   },
   "schemas": {
     "software": {
-      "name": "Licznik słów, znaków i czasu czytania z formatowaniem tekstu",
+      "name": "Licznik słów z czytelnością Flesch-Kincaid i narzędziami tekstowymi",
       "alternateName": [
         "Licznik słów online po polsku",
         "Licznik znaków ze spacjami i bez spacji",
         "Narzędzie do liczenia słów dla copywriterów",
         "Kalkulator czasu czytania tekstu",
+        "Sprawdzanie czytelności Flesch-Kincaid",
+        "Licznik sylab online",
+        "Kalkulator czasu mówienia",
         "Konwerter wielkości liter online",
-        "Zamiana małych liter na duże online",
-        "Usuwanie duplikatów linii z tekstu",
-        "Sortowanie linii tekstu alfabetycznie"
+        "Narzędzie do oceny czytelności tekstu",
+        "Usuwanie duplikatów linii z tekstu"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Darmowy licznik słów i znaków po polsku z narzędziami do formatowania tekstu. Liczy słowa, znaki, zdania, akapity, unikalne wyrazy i czas czytania. Oferuje 10 narzędzi: zamiana wielkości liter, usuwanie spacji, pustych linii, duplikatów oraz sortowanie.",
+      "description": "Darmowy licznik słów i znaków z oceną czytelności Flesch-Kincaid, liczeniem sylab, szacowaniem czasu czytania i mówienia oraz 10 narzędziami do formatowania tekstu. Przetwarzanie lokalne w przeglądarce.",
       "featureList": [
         "Liczenie słów w tekście",
         "Liczenie znaków ze spacjami i bez spacji",
@@ -44,6 +46,10 @@
         "Liczenie unikalnych słów",
         "Średnia długość słowa",
         "Szacowanie czasu czytania",
+        "Szacowanie czasu mówienia",
+        "Liczenie sylab",
+        "Wynik czytelności Flesch-Kincaid",
+        "Formuły czytelności dostosowane do języka (16 języków)",
         "Zamiana na wielkie lub małe litery",
         "Zamiana na styl zdania lub tytułu",
         "Odwracanie wielkości liter",
@@ -55,7 +61,7 @@
     },
     "howTo": {
       "name": "Jak używać licznika słów i znaków",
-      "description": "Policz słowa, znaki i zdania w tekście. Użyj narzędzi do zmiany wielkości liter, usuwania duplikatów lub sortowania linii.",
+      "description": "Policz słowa, znaki, sylaby i zdania. Sprawdź czytelność Flesch-Kincaid, czas czytania i czas mówienia. Użyj narzędzi do formatowania tekstu.",
       "totalTime": "PT1M",
       "steps": [
         {
@@ -64,7 +70,7 @@
         },
         {
           "name": "Sprawdź statystyki",
-          "text": "W panelu po lewej stronie zobaczysz 8 metryk tekstu: słowa, znaki ze spacjami i bez, zdania, akapity, unikalne słowa, średnią długość słowa i czas czytania."
+          "text": "W panelu po lewej stronie zobaczysz 11 metryk tekstu: słowa, znaki ze spacjami i bez, zdania, akapity, unikalne słowa, średnią długość słowa, czas czytania, czas mówienia, sylaby i wynik czytelności Flesch-Kincaid."
         },
         {
           "name": "Użyj narzędzi tekstowych",
@@ -85,7 +91,7 @@
     {
       "type": "sectionBasic",
       "title": "Licznik słów, znaków i czasu czytania z formatowaniem tekstu",
-      "html": "<p class=\"text-mid\">Narzędzie łączy licznik słów i znaków z zestawem funkcji do formatowania tekstu. Wklej tekst, a zobaczysz liczbę słów, znaków, zdań, akapitów, unikalnych wyrazów i szacowany czas czytania.</p><p class=\"text-mid mt-3\">Pod polem tekstowym znajdziesz pasek z 10 narzędziami: zamiana wielkości liter (WIELKIE, małe, Jak w zdaniu, Każde Słowo Wielką), usuwanie nadmiarowych spacji, pustych linii i duplikatów oraz sortowanie linii alfabetycznie. Cała analiza i przetwarzanie tekstu odbywają się lokalnie w przeglądarce.</p>",
+      "html": "<p class=\"text-mid\">Narzędzie łączy licznik słów i znaków z analizą czytelności Flesch-Kincaid i zestawem funkcji do formatowania tekstu. Wklej tekst, a zobaczysz liczbę słów, znaków, sylab, zdań, akapitów, unikalnych wyrazów, szacowany czas czytania, czas mówienia i kolorowy wskaźnik czytelności.</p><p class=\"text-mid mt-3\"><strong>Wynik czytelności Flesch-Kincaid</strong> (0–100) mówi, jak łatwy do czytania jest tekst. Wynik powyżej 70 oznacza łatwy tekst (dla szerokiej publiczności), a poniżej 30 – poziom akademicki. Narzędzie używa formuł dostosowanych do 16 języków, w tym Amstad (niemiecki), Fernández-Huerta (hiszpański) i Gulpease (włoski).</p><p class=\"text-mid mt-3\">Pod polem tekstowym znajdziesz pasek z 10 narzędziami: zamiana wielkości liter (WIELKIE, małe, Jak w zdaniu, Każde Słowo Wielką), usuwanie nadmiarowych spacji, pustych linii i duplikatów oraz sortowanie linii alfabetycznie. Cała analiza i przetwarzanie tekstu odbywają się lokalnie w przeglądarce.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/licznik-slow-i-znakow-pl.webp",
       "imageAlt": "Licznik słów, znaków i czasu czytania z formatowaniem tekstu – Arteon"
     },
@@ -107,7 +113,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Sprawdź statystyki",
-          "description": "W panelu po lewej zobaczysz 8 metryk: słowa, znaki ze spacjami i bez, zdania, akapity, unikalne słowa, średnią długość słowa i czas czytania."
+          "description": "W panelu po lewej stronie zobaczysz 11 metryk tekstu: słowa, znaki ze spacjami i bez, zdania, akapity, unikalne słowa, średnią długość słowa, czas czytania, czas mówienia, sylaby i wynik czytelności Flesch-Kincaid."
         },
         {
           "icon": "RiTextWrap",
@@ -127,8 +133,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "8 metryk tekstu - co mierzy licznik?",
-      "description": "Licznik analizuje tekst pod kątem ośmiu wskaźników:",
+      "title": "11 metryk tekstu – co mierzy licznik?",
+      "description": "Licznik analizuje tekst pod kątem jedenastu wskaźników:",
       "grid": "two",
       "items": [
         {
@@ -149,7 +155,7 @@
         {
           "icon": "RiChatQuoteLine",
           "title": "Zdania",
-          "description": "Liczba zdań w tekście. Pomaga ocenić złożoność i czytelność - krótsze zdania są łatwiejsze do przyswojenia."
+          "description": "Liczba zdań w tekście. Pomaga ocenić złożoność i czytelność – krótsze zdania są łatwiejsze do przyswojenia."
         },
         {
           "icon": "RiParagraph",
@@ -164,12 +170,27 @@
         {
           "icon": "RiRulerLine",
           "title": "Średnia długość słowa",
-          "description": "Średnia liczba znaków na słowo. Wskaźnik złożoności tekstu - teksty techniczne mają dłuższe słowa niż potoczne."
+          "description": "Średnia liczba znaków na słowo. Wskaźnik złożoności tekstu – teksty techniczne mają dłuższe słowa niż potoczne."
         },
         {
           "icon": "RiTimeLine",
           "title": "Czas czytania",
           "description": "Szacowany czas przeczytania tekstu przy prędkości 200 słów na minutę. Orientacyjna wartość dla typowego tekstu."
+        },
+        {
+          "icon": "RiMicLine",
+          "title": "Czas mówienia",
+          "description": "Szacowany czas wygłoszenia tekstu przy 130 słowach na minutę. Przydatny do przemówień, prezentacji i scenariuszy wideo."
+        },
+        {
+          "icon": "RiInputMethodLine",
+          "title": "Sylaby",
+          "description": "Łączna liczba sylab obliczona za pomocą heurystyk językowych. Kluczowy parametr formuł czytelności i analizy poezji."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Czytelność (Flesch-Kincaid)",
+          "description": "Wynik 0–100 wskazujący łatwość czytania tekstu. Powyżej 70 = łatwy, 50–70 = umiarkowany, poniżej 30 = akademicki. Kolorowy wskaźnik ułatwia szybką ocenę."
         }
       ]
     },
@@ -249,7 +270,7 @@
         {
           "icon": "RiBloggerLine",
           "title": "Blogerzy i autorzy treści",
-          "description": "Kontrola długości wpisów, sprawdzanie czasu czytania, usuwanie duplikatów linii i sortowanie list."
+          "description": "Kontrola długości wpisów, sprawdzanie czytelności i czasu czytania, usuwanie duplikatów linii i sortowanie list."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -259,12 +280,12 @@
         {
           "icon": "RiSearchLine",
           "title": "Specjaliści SEO",
-          "description": "Analiza długości treści, liczenie unikalnych słów i ocena złożoności tekstu na podstawie średniej długości słowa."
+          "description": "Analiza długości treści, wynik czytelności Flesch-Kincaid, liczenie unikalnych słów i ocena złożoności tekstu."
         },
         {
           "icon": "RiGraduationCapLine",
           "title": "Studenci i naukowcy",
-          "description": "Sprawdzanie limitów słów lub znaków w pracach naukowych i esejach."
+          "description": "Sprawdzanie limitów słów lub znaków w pracach naukowych. Ocena czytelności pracy dyplomowej."
         },
         {
           "icon": "RiTranslate2",
@@ -293,13 +314,13 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "8 metryk tekstu",
-          "description": "Słowa, znaki ze spacjami i bez, zdania, akapity, unikalne słowa, średnia długość słowa i czas czytania - wszystko w jednym panelu."
+          "title": "11 metryk tekstu + wynik czytelności",
+          "description": "Słowa, znaki, sylaby, zdania, akapity, unikalne słowa, czas czytania, czas mówienia i wynik Flesch-Kincaid – wszystko w jednym panelu."
         },
         {
           "icon": "RiTextWrap",
           "title": "10 narzędzi do formatowania",
-          "description": "Zamiana wielkości liter, usuwanie spacji, pustych linii, duplikatów i sortowanie - bez instalowania dodatkowych programów."
+          "description": "Zamiana wielkości liter, usuwanie spacji, pustych linii, duplikatów i sortowanie – bez instalowania dodatkowych programów."
         },
         {
           "icon": "RiUserLine",
@@ -334,13 +355,13 @@
       "items": [
         {
           "question": "Jak licznik oblicza czas czytania?",
-          "answer": "Narzędzie dzieli liczbę słów przez 200 - to średnia prędkość czytania dla typowego tekstu. Tekst techniczny lub wymagający skupienia (np. dokumentacja, regulamin) będzie czytany wolniej. Lekki artykuł lifestylowy - szybciej. Wynik to orientacyjna wartość, która pomaga ocenić, ile czasu czytelnik spędzi z tekstem.",
+          "answer": "Narzędzie dzieli liczbę słów przez 200 – to średnia prędkość czytania dla typowego tekstu. Tekst techniczny lub wymagający skupienia (np. dokumentacja, regulamin) będzie czytany wolniej. Lekki artykuł lifestylowy – szybciej. Wynik to orientacyjna wartość, która pomaga ocenić, ile czasu czytelnik spędzi z tekstem.",
           "answerSchemaText": "Narzędzie przyjmuje średnią prędkość czytania 200 słów na minutę. To wartość orientacyjna dla typowego tekstu."
         },
         {
           "question": "Czym różni się liczenie znaków ze spacjami od liczenia bez spacji?",
           "answer": "Znaki ze spacjami to wszystkie znaki w tekście łącznie ze spacjami, tabulatorami i znakami nowej linii. Znaki bez spacji to tylko litery, cyfry i interpunkcja. Platformy takie jak Allegro czy OLX mają limity w znakach ze spacjami. Biura tłumaczeń i drukarnie rozliczają się w znakach bez spacji.",
-          "answerSchemaText": "Znaki ze spacjami obejmują wszystkie znaki, znaki bez spacji pomijają spacje i tabulatory. Różnica ma znaczenie przy limitach platform i wycenach."
+          "answerSchemaText": "Znaki ze spacjami obejmują wszystkie znaki, znaki bez spacji pomijają spacje i tabulatory."
         },
         {
           "question": "Jak działa zamiana wielkości liter?",
@@ -348,8 +369,8 @@
           "answerSchemaText": "Narzędzie ma 5 trybów zamiany wielkości liter: wielkie, małe, jak w zdaniu, każde słowo wielką i odwracanie wielkości."
         },
         {
-          "question": "Co oznacza metryka 'unikalne słowa'?",
-          "answer": "Unikalne słowa to liczba niepowtarzających się wyrazów w tekście. Jeśli słowo 'marketing' pojawia się 5 razy, liczy się jako 1 unikalne słowo. Wysoki stosunek unikalnych słów do wszystkich słów wskazuje na bogate słownictwo i mniejszą powtarzalność tekstu.",
+          "question": "Co oznacza metryka unikalne słowa?",
+          "answer": "Unikalne słowa to liczba niepowtarzających się wyrazów w tekście. Jeśli słowo marketing pojawia się 5 razy, liczy się jako 1 unikalne słowo. Wysoki stosunek unikalnych słów do wszystkich słów wskazuje na bogate słownictwo i mniejszą powtarzalność tekstu.",
           "answerSchemaText": "Unikalne słowa to liczba niepowtarzających się wyrazów. Wysoki stosunek do ogółu słów wskazuje na bogate słownictwo."
         },
         {
@@ -359,8 +380,23 @@
         },
         {
           "question": "Czy mój tekst jest bezpieczny?",
-          "answer": "Tak. Cała analiza i przetwarzanie tekstu odbywają się wyłącznie w przeglądarce - tekst nie jest wysyłany na żaden serwer. Narzędzie nie zapisuje ani nie przechowuje wklejonego tekstu. Po zamknięciu strony tekst znika bezpowrotnie.",
+          "answer": "Tak. Cała analiza i przetwarzanie tekstu odbywają się wyłącznie w przeglądarce – tekst nie jest wysyłany na żaden serwer. Narzędzie nie zapisuje ani nie przechowuje wklejonego tekstu. Po zamknięciu strony tekst znika bezpowrotnie.",
           "answerSchemaText": "Tak. Tekst jest przetwarzany lokalnie w przeglądarce i nie jest wysyłany na serwer."
+        },
+        {
+          "question": "Czym jest wynik czytelności Flesch-Kincaid?",
+          "answer": "Wynik Flesch Reading Ease to liczba od 0 do 100, która wskazuje, jak łatwy do czytania jest tekst. Jest obliczany na podstawie średniej długości zdania i średniej liczby sylab na słowo. Wynik 90–100 oznacza bardzo łatwy tekst (poziom szkoły podstawowej), 70–89 to łatwy, 50–69 umiarkowany, 30–49 trudny (poziom uczelni), a 0–29 bardzo trudny (akademicki). Narzędzie używa formuł dostosowanych do języka: Amstad dla niemieckiego, Fernández-Huerta dla hiszpańskiego/portugalskiego, Flesch-Douma dla holenderskiego, Gulpease dla włoskiego i Kandel-Moles dla francuskiego.",
+          "answerSchemaText": "Wynik Flesch Reading Ease (0–100) mierzy czytelność tekstu na podstawie długości zdań i sylab na słowo. Wyższy wynik = łatwiejszy tekst."
+        },
+        {
+          "question": "Jak obliczany jest czas mówienia?",
+          "answer": "Czas mówienia to szacunek uzyskany przez podzielenie liczby słów przez 130 – średnią prędkość mówienia podczas prezentacji i wystąpień publicznych. Jest wolniejszy niż 200 słów na minutę przyjmowane dla czasu czytania, ponieważ mowa wymaga naturalnych pauz, akcentowania i oddychania.",
+          "answerSchemaText": "Czas mówienia obliczany jest przy 130 słowach na minutę – średniej prędkości dla prezentacji."
+        },
+        {
+          "question": "Jak dokładny jest licznik sylab?",
+          "answer": "Narzędzie używa heurystyk specyficznych dla każdego języka. Dla angielskiego obsługuje nieme -e, typowe przyrostki (-ed, -es, -le) i dwugłoski. Dla innych języków rozpoznaje charakterystyczne dyftongi i wzorce samogłoskowe (np. niemieckie ei/au/eu, francuskie ou/ai/oi, greckie αι/ει/οι). Wynik jest przybliżony, ale wystarczający do oceny czytelności i analizy tekstu.",
+          "answerSchemaText": "Licznik sylab używa heurystyk specyficznych dla 16 języków, obsługujących dwugłoski i nieme litery."
         }
       ]
     },

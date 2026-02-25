@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "it",
   "metadata": {
-    "title": "Contatore di parole, caratteri e tempo di lettura con formattazione del testo",
-    "description": "Contatore gratuito di parole, caratteri, frasi, paragrafi e tempo di lettura con convertitore di maiuscole. Controlla la lunghezza del testo e modifica le lettere.",
+    "title": "Contatore di parole con leggibilità Flesch-Kincaid e strumenti testo",
+    "description": "Contatore gratuito di parole, caratteri e sillabe con punteggio Flesch-Kincaid (Gulpease), tempo di lettura, tempo di parlato e 10 strumenti di formattazione.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contatore-di-parole-e-caratteri-it.webp",
     "path": "/it/strumenti/contatore-di-parole-e-caratteri"
   },
   "hero": {
-    "title": "Conta parole e caratteri – verifica tempo di lettura e formatta",
-    "description": "Incolla il testo e lo strumento conterà parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura. Cambia maiuscole, rimuovi duplicati o ordina righe",
+    "title": "Conta parole, caratteri e leggibilità – indice Gulpease, tempo di lettura e strumenti testo",
+    "description": "Incolla il tuo testo e lo strumento conterà parole, caratteri, sillabe, frasi, paragrafi, parole uniche, tempo di lettura, tempo di parlato e calcolerà il punteggio di leggibilità. Cambia maiuscole/minuscole, rimuovi duplicati o ordina le righe.",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contatore-di-parole-e-caratteri-it.webp"
   },
   "breadcrumbs": {
@@ -24,42 +24,44 @@
   },
   "schemas": {
     "software": {
-      "name": "Contatore di parole, caratteri e tempo di lettura con formattazione del testo",
+      "name": "Contatore di parole con leggibilità Flesch-Kincaid (Gulpease) e strumenti testo",
       "alternateName": [
-        "Online word counter",
-        "Character counter with and without spaces",
-        "Word counting tool for copywriters",
-        "Reading time calculator",
-        "Online letter case converter",
-        "Uppercase to lowercase converter",
-        "Remove duplicate lines from text",
-        "Sort text lines alphabetically"
+        "Contatore di parole online",
+        "Contatore di caratteri con e senza spazi",
+        "Strumento conteggio parole per copywriter",
+        "Calcolatore tempo di lettura",
+        "Indice di leggibilità Gulpease",
+        "Contatore di sillabe online",
+        "Calcolatore tempo di parlato",
+        "Convertitore maiuscole minuscole",
+        "Strumento leggibilità testo",
+        "Rimuovi righe duplicate"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Contatore gratuito di parole e caratteri con strumenti di formattazione del testo. Conta parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura. Offre 10 strumenti: conversione maiuscole, rimozione spazi, righe vuote, duplicati e ordinamento.",
+      "description": "Contatore gratuito di parole con indice di leggibilità Gulpease (specifico per l’italiano), conteggio sillabe, stima tempo di lettura e parlato, e 10 strumenti di formattazione. Elaborazione locale nel browser.",
       "featureList": [
         "Conteggio parole",
         "Conteggio caratteri con e senza spazi",
         "Conteggio frasi e paragrafi",
         "Conteggio parole uniche",
-        "Lunghezza media delle parole",
+        "Lunghezza media parola",
         "Tempo di lettura stimato",
         "Tempo di parlato stimato",
         "Conteggio sillabe",
-        "Punteggio di leggibilità Flesch-Kincaid",
+        "Indice Gulpease (specifico per l’italiano)",
         "Formule di leggibilità adattate (16 lingue)",
-        "Conversione in maiuscolo o minuscolo",
-        "Conversione in stile frase o titolo",
-        "Inversione maiuscole/minuscole",
-        "Rimozione spazi superflui",
-        "Rimozione righe vuote e duplicati",
-        "Ordinamento righe A–Z e Z–A",
-        "Copia del testo negli appunti"
+        "Convertire in maiuscolo o minuscolo",
+        "Convertire in formato frase o titolo",
+        "Invertire maiuscole/minuscole",
+        "Rimuovere spazi extra",
+        "Rimuovere righe vuote e duplicati",
+        "Ordinare righe A–Z e Z–A",
+        "Copiare testo negli appunti"
       ]
     },
     "howTo": {
       "name": "Come usare il contatore di parole",
-      "description": "Analizza e formatta il testo in tre passaggi:",
+      "description": "Conta parole, caratteri, sillabe e frasi. Verifica la leggibilità Gulpease, il tempo di lettura e il tempo di parlato.",
       "totalTime": "PT1M",
       "steps": [
         {
@@ -68,7 +70,7 @@
         },
         {
           "name": "Controlla le statistiche",
-          "text": "Nel pannello sinistro vedrai 11 metriche: parole, caratteri, frasi, paragrafi, parole uniche, lunghezza media e tempo di lettura."
+          "text": "Nel pannello sinistro vedrai 11 metriche: parole, caratteri con e senza spazi, frasi, paragrafi, parole uniche, lunghezza media, tempo di lettura, tempo di parlato, sillabe e indice di leggibilità."
         },
         {
           "name": "Trasforma il testo",
@@ -89,7 +91,7 @@
     {
       "type": "sectionBasic",
       "title": "Contatore di parole e caratteri con strumenti di testo",
-      "html": "<p class=\"text-mid\">Questo strumento combina un contatore di parole e caratteri con funzioni di formattazione. Incolla il testo e vedrai parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura.</p><p class=\"text-mid mt-3\">Sotto il campo di testo troverai 10 strumenti: conversione maiuscole, rimozione spazi, righe vuote, duplicati e ordinamento. Tutto viene elaborato localmente nel browser.</p>",
+      "html": "<p class=\"text-mid\">Questo strumento combina un contatore di parole e caratteri con analisi di leggibilità e funzioni di formattazione testo. Incolla il tuo testo per vedere parole, caratteri, sillabe, frasi, paragrafi, parole uniche, tempo di lettura, tempo di parlato e un punteggio di leggibilità colorato.</p><p class=\"text-mid mt-3\">Per i testi in italiano lo strumento utilizza l’<strong>indice Gulpease</strong>: 89 + (300 × frasi − 10 × caratteri) / parole. A differenza del Flesch-Kincaid standard, il Gulpease è stato sviluppato specificamente per la lingua italiana. Un punteggio superiore a 80 indica un testo facile per chi ha la licenza elementare; inferiore a 40 è leggibile solo per laureati.</p><p class=\"text-mid mt-3\">Sotto il campo di testo troverai 10 strumenti: conversione maiuscole/minuscole, rimozione spazi, righe vuote, duplicati e ordinamento. Tutto avviene localmente nel browser.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contatore-di-parole-e-caratteri-it.webp",
       "imageAlt": "Contatore di parole e caratteri – Arteon"
     },
@@ -111,7 +113,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Controlla le statistiche",
-          "description": "Nel pannello sinistro vedrai 11 metriche: parole, caratteri, frasi, paragrafi, parole uniche, lunghezza media e tempo di lettura."
+          "description": "Nel pannello sinistro vedrai 11 metriche: parole, caratteri con e senza spazi, frasi, paragrafi, parole uniche, lunghezza media, tempo di lettura, tempo di parlato, sillabe e indice di leggibilità."
         },
         {
           "icon": "RiTextWrap",
@@ -131,49 +133,64 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 metriche di testo",
-      "description": "Il contatore analizza il testo con otto indicatori:",
+      "title": "11 metriche di testo – cosa misura il contatore",
+      "description": "Il contatore analizza il tuo testo con undici indicatori:",
       "grid": "two",
       "items": [
         {
           "icon": "RiText",
-          "title": "Words",
-          "description": "Total word count. The primary indicator of text length, useful for content creation, articles and descriptions."
+          "title": "Parole",
+          "description": "Totale delle parole. L’indicatore principale della lunghezza del testo."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Characters (with spaces)",
-          "description": "All characters including spaces. Useful when a platform has a character limit (e.g., Amazon listings, meta descriptions)."
+          "title": "Caratteri (con spazi)",
+          "description": "Tutti i caratteri inclusi gli spazi. Utile per limiti di piattaforme (Amazon, meta description)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Characters (without spaces)",
-          "description": "Only letters, digits and punctuation. The standard billing unit for translations and print shops."
+          "title": "Caratteri (senza spazi)",
+          "description": "Solo lettere, cifre e punteggiatura. Unità standard di fatturazione per traduzioni e tipografie."
         },
         {
           "icon": "RiChatQuoteLine",
-          "title": "Sentences",
-          "description": "Number of sentences in the text. Helps assess complexity and readability — shorter sentences are easier to absorb."
+          "title": "Frasi",
+          "description": "Numero di frasi. Le frasi più brevi migliorano la leggibilità."
         },
         {
           "icon": "RiParagraph",
-          "title": "Paragraphs",
-          "description": "Text blocks separated by blank lines. Well-structured paragraphs improve readability on screens."
+          "title": "Paragrafi",
+          "description": "Blocchi di testo separati da righe vuote. Paragrafi ben strutturati migliorano la leggibilità su schermo."
         },
         {
           "icon": "RiStarLine",
-          "title": "Unique words",
-          "description": "Number of non-repeating words. A higher ratio of unique to total words indicates richer vocabulary."
+          "title": "Parole uniche",
+          "description": "Numero di parole non ripetute. Un rapporto più alto indica un vocabolario più ricco."
         },
         {
           "icon": "RiRulerLine",
-          "title": "Average word length",
-          "description": "Average number of characters per word. An indicator of text complexity — technical texts have longer words than casual ones."
+          "title": "Lunghezza media parola",
+          "description": "Media di caratteri per parola. Indicatore di complessità del testo."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Reading time",
-          "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
+          "title": "Tempo di lettura",
+          "description": "Tempo stimato di lettura a 200 parole al minuto."
+        },
+        {
+          "icon": "RiMicLine",
+          "title": "Tempo di parlato",
+          "description": "Tempo stimato a 130 parole al minuto. Utile per discorsi, presentazioni e video."
+        },
+        {
+          "icon": "RiInputMethodLine",
+          "title": "Sillabe",
+          "description": "Totale sillabe con euristiche italiane. L’indice Gulpease utilizza il conteggio dei caratteri anziché delle sillabe, ma il dato è utile per confronti interlinguistici."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Leggibilità (Gulpease)",
+          "description": "Punteggio 0–100. Sopra 80 = facile (licenza elementare), 60–80 = medio (licenza media), sotto 40 = difficile (diploma universitario). Codice colore per valutazione rapida."
         }
       ]
     },
@@ -189,53 +206,53 @@
       "items": [
         {
           "icon": "RiArrowUpLine",
-          "title": "UPPERCASE",
-          "description": "Converts all text to uppercase. Useful for headings, acronyms and highlighting text fragments."
+          "title": "MAIUSCOLE",
+          "description": "Converte tutto in maiuscolo. Utile per intestazioni e acronimi."
         },
         {
           "icon": "RiArrowDownLine",
-          "title": "lowercase",
-          "description": "Converts all text to lowercase. Useful for normalizing text copied from different sources."
+          "title": "minuscole",
+          "description": "Converte tutto in minuscolo. Per normalizzare testo da fonti diverse."
         },
         {
           "icon": "RiEditLine",
-          "title": "Sentence case",
-          "description": "First letter of each sentence is capitalized, the rest lowercase. Standard format for continuous text."
+          "title": "Frase",
+          "description": "Prima lettera di ogni frase maiuscola, il resto minuscolo."
         },
         {
           "icon": "RiHeading",
-          "title": "Title Case",
-          "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
+          "title": "Titolo",
+          "description": "Ogni parola inizia con maiuscola. Per titoli e nomi propri."
         },
         {
           "icon": "RiArrowLeftRightLine",
-          "title": "tOGGLE cASE",
-          "description": "Swaps uppercase to lowercase and vice versa. Useful when text was typed with Caps Lock on."
+          "title": "iNVERTI",
+          "description": "Scambia maiuscole e minuscole."
         },
         {
           "icon": "RiSpace",
-          "title": "Remove extra spaces",
-          "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
+          "title": "Rimuovi spazi extra",
+          "description": "Riduce spazi multipli a uno solo."
         },
         {
           "icon": "RiDeleteRow",
-          "title": "Remove empty lines",
-          "description": "Removes empty and redundant lines from text. Useful for cleaning text copied from websites."
+          "title": "Rimuovi righe vuote",
+          "description": "Elimina righe vuote e ridondanti."
         },
         {
           "icon": "RiFilterLine",
-          "title": "Remove duplicate lines",
-          "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
+          "title": "Rimuovi duplicati",
+          "description": "Mantiene solo righe uniche."
         },
         {
           "icon": "RiSortAsc",
-          "title": "Sort A→Z",
-          "description": "Sorts text lines alphabetically in ascending order. Useful for organizing lists, keywords and data."
+          "title": "Ordina A→Z",
+          "description": "Ordina le righe in ordine alfabetico crescente."
         },
         {
           "icon": "RiSortDesc",
-          "title": "Sort Z→A",
-          "description": "Sorts text lines alphabetically in descending order. Reverse sort order."
+          "title": "Ordina Z→A",
+          "description": "Ordina le righe in ordine alfabetico decrescente."
         }
       ]
     },
@@ -245,39 +262,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "A chi è rivolto il contatore di parole?",
+      "title": "A chi si rivolge il contatore di parole?",
       "description": "Lo strumento è utile per chiunque lavori con il testo:",
       "grid": "three",
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Copywriters and editors",
-          "description": "Count words and characters, check platform limits, quickly change letter case and clean text before publishing."
+          "title": "Copywriter e redattori",
+          "description": "Contare parole e caratteri, verificare limiti piattaforme, cambiare maiuscole e pulire il testo."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Bloggers and content creators",
-          "description": "Monitor post length, check reading time, remove duplicate lines and sort lists."
+          "title": "Blogger e content creator",
+          "description": "Controllare la lunghezza dei post, verificare leggibilità e tempo di lettura."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "Store owners",
-          "description": "Verify product descriptions against character limits on platforms (Amazon, eBay, Etsy)."
+          "title": "Proprietari di negozi",
+          "description": "Verificare le descrizioni prodotti rispetto ai limiti (Amazon, eBay)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO specialists",
-          "description": "Analyze content length, count unique words and assess text complexity based on average word length."
+          "title": "Specialisti SEO",
+          "description": "Analizzare lunghezza contenuti, indice Gulpease e complessità del testo."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Students and academics",
-          "description": "Check word or character limits in essays and research papers."
+          "title": "Studenti e accademici",
+          "description": "Verificare limiti di parole in tesi e articoli. Valutare la leggibilità."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Translators",
-          "description": "Count characters without spaces for quotes (the standard billing unit in translation)."
+          "title": "Traduttori",
+          "description": "Contare caratteri senza spazi per preventivi di traduzione."
         }
       ]
     },
@@ -301,33 +318,33 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "8 text metrics",
-          "description": "Words, characters with and without spaces, sentences, paragraphs, unique words, average word length and reading time — all in one panel."
+          "title": "11 metriche + indice Gulpease",
+          "description": "Parole, caratteri, sillabe, frasi, paragrafi, parole uniche, tempo di lettura, tempo di parlato e leggibilità – tutto in un pannello."
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 formatting tools",
-          "description": "Letter case conversion, removing spaces, empty lines, duplicates and sorting — without installing additional software."
+          "title": "10 strumenti di formattazione",
+          "description": "Conversione maiuscole, rimozione spazi, righe vuote, duplicati e ordinamento – senza software aggiuntivo."
         },
         {
           "icon": "RiUserLine",
-          "title": "Local processing in the browser",
-          "description": "Your text is never sent to any server. All analysis and transformation happens locally on your device."
+          "title": "Elaborazione locale nel browser",
+          "description": "Il tuo testo non viene mai inviato a un server. Analisi e trasformazione avvengono localmente."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Copy and clear text",
-          "description": "Copy the modified text to your clipboard with one click or clear the field to start over."
+          "title": "Copia e cancella",
+          "description": "Copia il testo negli appunti con un clic o cancella il campo."
         },
         {
           "icon": "RiTimerLine",
-          "title": "Instant results",
-          "description": "Statistics update in real time as you type or paste text. No waiting for processing."
+          "title": "Risultati istantanei",
+          "description": "Le statistiche si aggiornano in tempo reale. Nessuna attesa."
         },
         {
           "icon": "RiLockLine",
-          "title": "No registration or limits",
-          "description": "The tool is completely free. No registration, login or personal data required."
+          "title": "Senza registrazione",
+          "description": "Lo strumento è completamente gratuito. Nessuna registrazione richiesta."
         }
       ]
     },
@@ -341,14 +358,29 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Come funziona il calcolo del tempo di lettura?",
-          "answer": "Lo strumento divide il conteggio delle parole per 200, la velocità media di lettura. Il risultato è un valore approssimativo.",
+          "question": "Come viene calcolato il tempo di lettura?",
+          "answer": "Lo strumento divide il numero di parole per 200 – la velocità media di lettura. Testi tecnici vengono letti più lentamente.",
           "answerSchemaText": "Lo strumento assume 200 parole al minuto."
         },
         {
-          "question": "Il mio testo è sicuro?",
-          "answer": "Sì. Tutta l'analisi avviene localmente nel browser. Il testo non viene mai inviato a nessun server.",
-          "answerSchemaText": "Sì. Il testo viene elaborato localmente nel browser."
+          "question": "Il mio testo è al sicuro?",
+          "answer": "Sì. Tutta l’analisi avviene nel browser. Il testo non viene mai inviato a un server.",
+          "answerSchemaText": "Sì. Elaborazione locale, nessun invio a server."
+        },
+        {
+          "question": "Cos’è l’indice Gulpease?",
+          "answer": "L’indice Gulpease è una formula di leggibilità sviluppata specificamente per la lingua italiana. La formula è: 89 + (300 × frasi − 10 × caratteri) / parole. A differenza del Flesch-Kincaid, usa il conteggio dei caratteri invece delle sillabe. Punteggi sopra 80 indicano testo facile per la licenza elementare, 60–80 per la licenza media, sotto 40 richiede un diploma universitario.",
+          "answerSchemaText": "L’indice Gulpease (0–100) è specifico per l’italiano. Usa caratteri anziché sillabe."
+        },
+        {
+          "question": "Come viene calcolato il tempo di parlato?",
+          "answer": "Il tempo di parlato divide le parole per 130 – la velocità media nelle presentazioni.",
+          "answerSchemaText": "Calcolato a 130 parole al minuto."
+        },
+        {
+          "question": "Il contatore di sillabe è preciso?",
+          "answer": "Lo strumento usa euristiche italiane che riconoscono dittonghi, iati e regole di sillabificazione. Il risultato è approssimativo ma sufficiente per l’analisi.",
+          "answerSchemaText": "Usa euristiche italiane con dittonghi e iati."
         }
       ]
     },
@@ -376,5 +408,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Hai bisogno di contenuti professionali per il tuo sito?",
+    "description": "Scriviamo testi che si posizionano bene su Google e convincono i visitatori ad agire. Descrizioni di servizi, articoli blog e contenuti web.",
+    "btnOne": "I nostri servizi",
+    "btnOneLink": "/it/contatti",
+    "btnTwo": "Contattaci",
+    "btnTwoLink": "/it/contatti",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

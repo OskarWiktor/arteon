@@ -39,6 +39,14 @@
         "Tmavá paleta – hluboké barvy pro tmavé motivy",
         "Tónová paleta – stupně jasu jedné barvy",
         "Minimalistická paleta – výrazný akcent a neutrální barvy",
+        "Tetradicky schema – 4 barvy po 90°",
+        "Teply posun – cervene, oranzove, zlute",
+        "Studeny posun – modre, tyrkysove, fialove",
+        "Zemite tony – hnede, olivove, okrove",
+        "Neon – maximalni nasyceni",
+        "Vintage – odsycene retro tony",
+        "Vysoky kontrast – cerna az bila",
+        "Gradient zapadu slunce",
         "Základní barva ve formátu HEX",
         "Color picker pro vizuální výběr",
         "Náhodná počáteční barva",
@@ -163,6 +171,46 @@
           "icon": "RiContractLeftRightLine",
           "title": "Minimalistická paleta",
           "description": "Jeden výrazný barevný akcent a několik velmi světlých neutrálních barev. Celá paleta zůstává klidná. Funguje dobře v moderních rozhraních s velkým množstvím bílého prostoru."
+        },
+        {
+          "icon": "RiGridLine",
+          "title": "Tetradicky (ctvercovy) paleta",
+          "description": "Ctyri odstiny v 90° intervalech na barevnem kruhu. Bohata a vyvazena."
+        },
+        {
+          "icon": "RiFireLine",
+          "title": "Tepla paleta",
+          "description": "Barvy posunute k cervenym, oranzovym a zlutym. Vyvolava energii a teplo."
+        },
+        {
+          "icon": "RiSnowflakeLine",
+          "title": "Studena paleta",
+          "description": "Barvy posunute k modrym, tyrkysovym a fialovym. Sdeluje klid a profesionalitu."
+        },
+        {
+          "icon": "RiSeedlingLine",
+          "title": "Zemite tony",
+          "description": "Nizce nasycene hnede, olivove a okrove tony inspirovane prirodnimi krajinami."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Neonova paleta",
+          "description": "Maximalne nasycene barvy s elektrickou intenzitou."
+        },
+        {
+          "icon": "RiAncientGateLine",
+          "title": "Vintage paleta",
+          "description": "Odsycene, mirne teple tony pripominajici stare tisky a retro fotografii."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Vysoky kontrast",
+          "description": "Extremni rozsah jasu. Vynikajici pro pristupne designy a WCAG rozhrani."
+        },
+        {
+          "icon": "RiSunLine",
+          "title": "Gradient zapadu slunce",
+          "description": "Plynula rotace odstinu od teplych k studenym."
         }
       ]
     },
@@ -175,6 +223,15 @@
       "title": "Na čem je generátor barevných palet založen?",
       "demoHtml": "<div class=\"space-y-4\"><div class=\"mx-auto h-40 w-40 rounded-full\" style=\"background: conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))\"></div><div class=\"space-y-1\"><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">H (hue)</span><span class=\"text-mid\">0°–360° na barevném kruhu</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">S (saturation)</span><span class=\"text-mid\">0%–100%</span></div><div class=\"flex items-center justify-between text-sm!\"><span class=\"text-dark font-medium\">L (lightness)</span><span class=\"text-mid\">0%–100%</span></div></div></div>",
       "html": "<p class=\"text-mid\">Všechny palety vznikají matematickou transformací základní barvy v barevném prostoru HSL. HSL popisuje barvu třemi hodnotami: hue (H) je pozice na barevném kruhu (0°–360°), saturation (S) určuje sílu barvy a lightness (L) – jak světlá nebo tmavá barva je.</p><p class=\"text-mid mt-3\">Komplementární, triádické a dělené komplementární palety jsou založeny na geometrii barevného kruhu – barvy jsou umístěny v rovnoměrných úhlových intervalech, čímž vytváří vizuální rovnováhu. Monochromatické, pastelové a tmavé palety mění pouze jas a saturaci při zachování stejného odstínu.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Barvy v českém designu a umění",
+      "html": "<p class=\"text-mid mb-4\">Střední Evropa má bohatou tradici práce s barvou:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Český kubismus</strong> — unikátní architektonický a designový směr, který kombinoval geometrické formy s výraznými barvami. Pražské kubistické fasády používají hluboké okrové, šedé a terakotové tóny.</li><li><strong>Alfons Mucha</strong> — jeho secesní plakáty využívají tlumené pastelky, zlaté akcenty a organické přechody barev.</li><li><strong>České sklo</strong> — tradiční bohemské křišťálové sklo je známé svými sytými červenými, modrými a zelenými odstíny.</li></ul>"
     },
     {
       "type": "gap",
@@ -245,27 +302,42 @@
         {
           "question": "V jakém formátu má být základní barva?",
           "answer": "Generátor přijímá barvy ve formátu HEX – zkráceném (např. #F50) i plném (např. #FF5500). U textového pole najdete color picker pro vizuální výběr barvy. Vygenerované palety zobrazují kód HEX a hodnotu HSL každé barvy.",
-          "answerSchemaText": "Generátor přijímá HEX barvy (#RGB nebo #RRGGBB). Každá vygenerovaná barva má kód HEX a hodnotu HSL."
+          "answerSchemaText": "Generátor přijímá HEX barvy (#RGB nebo #RRGGBB). Každá vygenerovaná barva má kód HEX a hodnotu HSL.",
+          "description": ""
         },
         {
           "question": "Kolik barev je v každé paletě?",
           "answer": "Každá paleta obsahuje 4 až 6 barev. Počet závisí na typu schématu – monochromatické a tónové palety generují více odstínů, zatímco komplementární a triádické palety se zaměřují na méně kontrastních barev.",
-          "answerSchemaText": "Každá paleta obsahuje 4 až 6 barev, v závislosti na typu schématu."
+          "answerSchemaText": "Každá paleta obsahuje 4 až 6 barev, v závislosti na typu schématu.",
+          "description": ""
         },
         {
           "question": "Co je barevný prostor HSL a jak ho číst?",
           "answer": "HSL je způsob zápisu barvy pomocí tří hodnot: H (odstín, 0°–360° na barevném kruhu), S (sytost, 0%–100%) a L (světlost, 0%–100%). Generátor zobrazuje hodnoty HSL vedle každé barvy, což usnadňuje pochopení, jak se jednotlivé barvy v paletě liší – např. monochromatická paleta mění pouze světlost (L), přičemž zachovává stejný odstín (H).",
-          "answerSchemaText": "HSL je zápis barvy pomocí odstínu (H), sytosti (S) a světlosti (L). Generátor zobrazuje tyto hodnoty vedle každé barvy v paletě."
+          "answerSchemaText": "HSL je zápis barvy pomocí odstínu (H), sytosti (S) a světlosti (L). Generátor zobrazuje tyto hodnoty vedle každé barvy v paletě.",
+          "description": ""
         },
         {
           "question": "Mohu vygenerované palety použít komerčně?",
           "answer": "Ano. Vygenerované barevné palety můžete použít v jakémkoliv projektu – komerčním i nekomerčním, bez licenčních omezení.",
-          "answerSchemaText": "Ano, vygenerované palety lze používat bez omezení v komerčních i nekomerčních projektech."
+          "answerSchemaText": "Ano, vygenerované palety lze používat bez omezení v komerčních i nekomerčních projektech.",
+          "description": ""
         },
         {
           "question": "Vyžaduje generátor barevných palet přihlášení nebo platbu?",
           "answer": "Generátor je zcela zdarma a nevyžaduje přihlášení ani registraci. Barvy se generují lokálně v prohlížeči – žádná data se neodesílají na externí servery.",
-          "answerSchemaText": "Generátor je zdarma, nevyžaduje přihlášení. Barvy se generují lokálně v prohlížeči."
+          "answerSchemaText": "Generátor je zdarma, nevyžaduje přihlášení. Barvy se generují lokálně v prohlížeči.",
+          "description": ""
+        },
+        {
+          "question": "Jaký typ palety je nejlepší pro firemní web?",
+          "answer": "Monochromatické nebo tonální palety fungují dobře pro firemní stránky, protože poskytují jednotnou, klidnou vizuální hierarchii. Použijte tonální paletu k vybudování kompletnho systému pozadí, textu, ohraničení a akcentních odstínů z jediné firemní barvy.",
+          "answerSchemaText": "Monochromatické nebo tonální palety pro jednotnou hierarchii."
+        },
+        {
+          "question": "Mohu generované palety použít komerčně?",
+          "answer": "Ano. Generované barevné palety můžete použít v jakémkoli projektu — komerčním i nekomerčním, bez licenčních omezení.",
+          "answerSchemaText": "Ano, bez omezení."
         }
       ]
     },
@@ -293,5 +365,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "Potřebujete vizuální identitu pro svou značku?",
+    "description": "Navrhujeme loga, systémy barev a firemní materiály — od vizitek po šablony pro sociální sítě.",
+    "btnOne": "Naše služby",
+    "btnOneLink": "/cs/nastroje",
+    "btnTwo": "Kontakt",
+    "btnTwoLink": "/cs/kontakt",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }

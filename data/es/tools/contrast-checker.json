@@ -229,21 +229,21 @@
           }
         },
         {
-          "name": "Legalmente obligatorio (directiva UE)",
+          "name": "Obligatorio por Real Decreto 1112/2018 (sector público)",
           "values": {
             "aa": true,
             "aaa": false
           }
         },
         {
-          "name": "Requerido por ADA / Sección 508 de EE.UU.",
+          "name": "Obligatorio por Acta Europea de Accesibilidad (sector privado desde VI 2025)",
           "values": {
             "aa": true,
             "aaa": false
           }
         },
         {
-          "name": "Requerido por UK Equality Act 2010",
+          "name": "Obligatorio por directiva UE 2016/2102 (sector público)",
           "values": {
             "aa": true,
             "aaa": false
@@ -317,6 +317,15 @@
       "type": "sectionInfo",
       "title": "Legibilidad del color para personas con daltonismo",
       "html": "<p class=\"text-mid mb-4\">El daltonismo es un trastorno de la percepción del color que afecta a aproximadamente el 8 % de los hombres y el 0,5 % de las mujeres. Las personas con daltonismo pueden tener dificultades para distinguir ciertos pares de colores, incluso si el contraste de luminancia es suficiente.</p><p class=\"text-mid mb-4\">Tipos más comunes de daltonismo:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Deuteranopía</strong> – dificultad para distinguir entre verde y rojo (la forma más común)</li><li><strong>Protanopía</strong> – dificultad para ver el color rojo</li><li><strong>Tritanopía</strong> – dificultad para ver azul y amarillo (poco frecuente)</li></ul><p class=\"text-mid mt-3\">Esta herramienta comprueba el contraste de luminancia, que es importante para todos los usuarios. Sin embargo, al diseñar, conviene evitar combinaciones de colores problemáticas (p. ej., texto rojo sobre fondo verde) y no depender únicamente del color para transmitir información: use también formas, iconos y texto.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Legislación española sobre contraste de color y accesibilidad digital",
+      "html": "<p class=\"text-mid mb-4\">En España, el contraste de color es una <strong>obligación legal</strong> para el sector público, y desde 2025 también para el privado.</p><h3 class=\"h5 mb-2 mt-4\">Real Decreto 1112/2018</h3><p class=\"text-mid mb-4\">Transpone la Directiva europea de accesibilidad web a la legislación española. Todos los sitios web y aplicaciones móviles del sector público deben cumplir la norma EN 301 549, que referencia WCAG 2.1 nivel AA. Esto incluye un contraste mínimo de 4,5:1 para texto normal y 3:1 para texto grande.</p><h3 class=\"h5 mb-2\">Ley General de derechos de personas con discapacidad (RDL 1/2013)</h3><p class=\"text-mid mb-4\">Garantiza la igualdad de oportunidades y no discriminación de las personas con discapacidad en todos los ámbitos, incluidos los servicios digitales. Establece que las administraciones públicas deben adoptar las medidas necesarias para que sus servicios sean accesibles.</p><h3 class=\"h5 mb-2\">Acta Europea de Accesibilidad (2019/882)</h3><p class=\"text-mid mb-4\">Desde el <strong>28 de junio de 2025</strong>, el sector privado también debe cumplir requisitos de accesibilidad: comercio electrónico, banca online, transporte, libros electrónicos y terminales de autoservicio. Las empresas españolas que vendan online deberán respetar WCAG 2.1 AA.</p><h3 class=\"h5 mb-2\">Latinoamérica</h3><p class=\"text-mid\">En México, la NOM-DGTI-SEGOB regula la accesibilidad de sitios gubernamentales. En Argentina, la Ley de Accesibilidad de la Información (26.653) exige WCAG 2.0 AA para sitios públicos. El estándar WCAG 2.1 AA es la referencia común en toda la región hispanohablante.</p>"
     },
     {
       "type": "gap",
@@ -402,6 +411,33 @@
           "question": "¿Dónde puedo obtener los códigos de color de mi sitio web?",
           "answer": "En el navegador (Chrome, Firefox, Edge), abra las herramientas de desarrollo (clic derecho → Inspeccionar). En la pestaña Styles verá los colores utilizados en la página. Alternativamente, extensiones del navegador como ColorZilla permiten obtener el color de cualquier elemento sin entrar en el código.",
           "answerSchemaText": "Herramientas de desarrollo del navegador (clic derecho → Inspeccionar → Styles) o extensiones como ColorZilla."
+        },
+        {
+          "question": "¿Es el contraste de color legalmente obligatorio en España?",
+          "answer": "Sí. El Real Decreto 1112/2018 exige que los sitios web del sector público cumplan la norma EN 301 549 (WCAG 2.1 nivel AA), que incluye un contraste mínimo de 4,5:1 para texto normal. Desde junio de 2025, el Acta Europea de Accesibilidad extiende estos requisitos al sector privado: tiendas online, banca y transporte.",
+          "answerSchemaText": "Sí. Real Decreto 1112/2018 para el sector público. EAA desde 2025 para el privado."
+        },
+        {
+          "question": "¿Qué norma técnica aplica en España para el contraste?",
+          "answer": "España referencia la norma europea EN 301 549, que a su vez incorpora los criterios WCAG 2.1 nivel AA. Los umbrales de contraste son: 4,5:1 para texto normal (criterio 1.4.3), 3:1 para texto grande (criterio 1.4.3), y 3:1 para componentes de interfaz (criterio 1.4.11). El Real Decreto 1112/2018 establece EN 301 549 como el estándar de referencia.",
+          "answerSchemaText": "Norma EN 301 549 (WCAG 2.1 AA). Contraste: 4,5:1 texto normal, 3:1 texto grande."
+        },
+        {
+          "question": "¿Funciona esta herramienta para diseños en modo oscuro?",
+          "answer": "Sí. La herramienta comprueba la relación de contraste entre dos colores cualesquiera, independientemente de cuál sea más claro. Para modo oscuro, introduzca un color de texto claro y un color de fondo oscuro. Los mismos umbrales WCAG aplican: 4,5:1 para texto normal (AA) y 7:1 (AAA).",
+          "answerSchemaText": "Sí. Mismos umbrales WCAG para modo oscuro."
+        },
+        {
+          "question": "¿Cómo afecta la EAA a mi sitio web en España?",
+          "answer": "La Ley Europea de Accesibilidad (EAA) está en vigor desde junio de 2025. Obliga a empresas del sector privado que operan en la UE — comercio electrónico, banca, transporte — a garantizar la accesibilidad digital. La norma referenciada es EN 301 549, que mapea a WCAG 2.1 AA, incluidos los umbrales de contraste 4,5:1 y 3:1."
+        },
+        {
+          "question": "¿Los sitios web en Latinoamérica también deben cumplir el contraste?",
+          "answer": "Varios países tienen legislación: Argentina (Ley 26.653), Colombia (Resolución 1519/2020) y México (normas en desarrollo). Todos referencian WCAG. Aunque la aplicación varía, los umbrales de contraste 4,5:1 y 3:1 son universales."
+        },
+        {
+          "question": "¿Cuál es el color gris mínimo seguro sobre fondo blanco?",
+          "answer": "El gris más oscuro que pasa WCAG AA sobre blanco (#ffffff) es #767676, con una relación exacta de 4,54:1. Grises más claros como #999999 (2,85:1) no cumplen. Para AAA (7:1) se necesita al menos #595959."
         }
       ]
     },
@@ -429,5 +465,15 @@
       "type": "gap",
       "size": "sm"
     }
-  ]
+  ],
+  "cta": {
+    "title": "¿Necesitas un sitio web accesible?",
+    "description": "Creamos sitios web pensando en todos los usuarios — contraste de color adecuado, tipografía legible y estructura lógica.",
+    "btnOne": "Nuestros servicios",
+    "btnOneLink": "/es/contacto",
+    "btnTwo": "Contáctanos",
+    "btnTwoLink": "/es/contacto",
+    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
+    "overlay": "black"
+  }
 }
