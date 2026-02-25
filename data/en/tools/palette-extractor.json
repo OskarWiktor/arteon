@@ -10,7 +10,7 @@
   "hero": {
     "title": "Extract colors from any image – get a palette with HEX codes",
     "description": "Upload a photo, logo, or graphic, and the tool will extract up to 12 dominant colors with HEX and RGB codes. Analysis happens locally in your browser.",
-    "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
+    "backgroundImage": "/assets/tools/image-color-extractor/image-color-extractor-en.webp"
   },
   "breadcrumbs": {
     "second": {

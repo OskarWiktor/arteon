@@ -10,7 +10,7 @@
   "hero": {
     "title": "Farbkontrast und Textlesbarkeit nach WCAG-Standards prüfen",
     "description": "Geben Sie eine Text- und Hintergrundfarbe ein, und das Tool zeigt, ob der Kontrast ausreichend ist. Die Berechnung basiert auf dem internationalen Barrierefreiheitsstandard WCAG 2.1.",
-    "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
+    "backgroundImage": "/assets/tools/color-contrast-and-readability-checker/farbkontrast-checker-de.webp"
   },
   "breadcrumbs": {
     "second": {

@@ -10,7 +10,7 @@
   "hero": {
     "title": "Count words and characters – check reading time and format text",
     "description": "Paste your text and the tool will count words, characters, sentences, paragraphs, unique words and reading time. Change letter case, remove duplicates or sort lines with one click",
-    "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
+    "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/word-and-character-counter-en.webp"
   },
   "breadcrumbs": {
     "second": {

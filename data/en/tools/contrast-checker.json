@@ -10,7 +10,7 @@
   "hero": {
     "title": "Check color contrast and text readability per WCAG standards",
     "description": "Enter a text and background color, and the tool will show whether contrast is sufficient. Calculations are based on the international accessibility standard WCAG 2.1, which defines minimum contrast values for different content types.",
-    "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
+    "backgroundImage": "/assets/tools/color-contrast-and-readability-checker/color-contrast-checker-en.webp"
   },
   "breadcrumbs": {
     "second": {

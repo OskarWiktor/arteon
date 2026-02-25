@@ -231,7 +231,7 @@ export default function ToolsIndexPage() {
               icon: <RiCropLine className="h-8 w-8" />,
               title: 'Edytor zdjęć online',
               topImageAlt: 'Edytor zdjęć online Arteon',
-              topImageSrc: '/assets/tools/online-image-editor/edytor-zdjec-online-pl.webp',
+              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/edytor-zdjec-online-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -278,7 +278,7 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Licznik długości meta title i description',
               topImageAlt: 'Licznik długości meta title i description Arteon',
-              topImageSrc: '/assets/tools/meta-title-description-length-checker/licznik-dlugosci-meta-title-i-description-pl.webp',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/licznik-dlugosci-meta-title-i-description-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Sprawdź liczbę znaków, słów i szerokość w pikselach oraz podgląd wyniku w Google. Łatwiej unikniesz uciętych tytułów i opisów i szybciej dopasujesz treści pod SEO.</p>
@@ -294,7 +294,7 @@ export default function ToolsIndexPage() {
               icon: <RiArticleLine className="h-8 w-8" />,
               title: 'Licznik słów i znaków',
               topImageAlt: 'Licznik słów i znaków Arteon',
-              topImageSrc: '/assets/tools/word-and-character-counter/licznik-slow-i-znakow-pl.webp',
+              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/licznik-slow-i-znakow-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>

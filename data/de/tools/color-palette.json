@@ -10,7 +10,7 @@
   "hero": {
     "title": "9 Farbpaletten aus einer Grundfarbe generieren",
     "description": "Wählen Sie eine Basisfarbe und generieren Sie 9 harmonische Farbpaletten. Monochromatisch, komplementär, triadisch, Pastell, dunkel und mehr - alle Berechnungen laufen lokal in Ihrem Browser.",
-    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+    "backgroundImage": "/assets/tools/color-palette-generator/farbpaletten-generator-de.webp"
   },
   "breadcrumbs": {
     "second": {

@@ -10,7 +10,7 @@
   "hero": {
     "title": "Conta parole e caratteri – verifica tempo di lettura e formatta",
     "description": "Incolla il testo e lo strumento conterà parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura. Cambia maiuscole, rimuovi duplicati o ordina righe",
-    "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
+    "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contatore-di-parole-e-caratteri-it.webp"
   },
   "breadcrumbs": {
     "second": {

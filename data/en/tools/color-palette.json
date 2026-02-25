@@ -10,7 +10,7 @@
   "hero": {
     "title": "Generate 9 color palettes from a single base color",
     "description": "Enter one base color, and the tool will generate 9 harmonious color palettes: monochromatic, complementary, triadic, pastel, and more. Each color can be copied with its HEX code.",
-    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+    "backgroundImage": "/assets/tools/color-palette-generator/color-palette-generator-en.webp"
   },
   "breadcrumbs": {
     "second": {

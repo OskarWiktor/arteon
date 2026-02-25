@@ -10,7 +10,7 @@
   "hero": {
     "title": "Cuenta palabras y caracteres – verifica tiempo de lectura y formatea",
     "description": "Pega tu texto y la herramienta contará palabras, caracteres, oraciones, párrafos, palabras únicas y tiempo de lectura. Cambia mayúsculas, elimina duplicados u ordena líneas",
-    "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
+    "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palabras-y-caracteres-es.webp"
   },
   "breadcrumbs": {
     "second": {

@@ -10,7 +10,7 @@
   "hero": {
     "title": "Farben aus Bildern extrahieren – Palette mit HEX-Codes erhalten",
     "description": "Laden Sie ein Foto oder Logo hoch und das Tool extrahiert die dominanten Farben. Kopieren Sie HEX- und RGB-Codes mit einem einzigen Klick.",
-    "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
+    "backgroundImage": "/assets/tools/image-color-extractor/bild-farbextraktor-de.webp"
   },
   "breadcrumbs": {
     "second": {

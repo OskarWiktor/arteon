@@ -10,7 +10,7 @@
   "hero": {
     "title": "Wörter und Zeichen zählen – Lesezeit prüfen und Text formatieren",
     "description": "Text einfügen – das Tool zählt Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter und Lesezeit. Groß-/Kleinschreibung ändern, Duplikate entfernen oder Zeilen sortieren",
-    "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
+    "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/wort-und-zeichenzaehler-de.webp"
   },
   "breadcrumbs": {
     "second": {

@@ -10,7 +10,7 @@
   "hero": {
     "title": "Lag favicon.ico for nettsiden din fra ett enkelt bilde",
     "description": "Last opp et bilde, og verktøyet genererer favicon.ico og et komplett sett med PNG-ikoner for nettlesere, mobile enheter og Lighthouse.",
-    "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
+    "backgroundImage": "/assets/tools/favicon-generator/gratis-favicon-generator-no.webp"
   },
   "breadcrumbs": {
     "second": {

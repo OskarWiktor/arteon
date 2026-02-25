@@ -10,7 +10,7 @@
   "hero": {
     "title": "Comptez mots et caractères – vérifiez le temps de lecture et formatez",
     "description": "Collez votre texte et l'outil comptera les mots, caractères, phrases, paragraphes, mots uniques et temps de lecture. Changez la casse, supprimez les doublons ou triez les lignes",
-    "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
+    "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/compteur-de-mots-et-caracteres-fr.webp"
   },
   "breadcrumbs": {
     "second": {
