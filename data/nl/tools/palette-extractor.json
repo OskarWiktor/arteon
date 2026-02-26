@@ -268,6 +268,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kleuren extraheren uit Nederlandse landschappen en architectuur",
+      "html": "<p class=\"text-mid mb-4\">Het Nederlandse landschap levert verrassend gevarieerde kleurpaletten op. Tulpenvelden in het voorjaar bieden felle strepen van rood, geel, roze, paars en wit — een enkele foto bevat genoeg kleurinformatie voor een compleet ontwerp. De Waddeneilanden brengen een heel ander register: zandbeige, helmgroen, staalgrijs en de blauwe weidsheid van lucht en zee. De Veluwe in de herfst levert warm goud, roestbruin, mosgroen en het paars van de heide.</p><p class=\"text-mid mb-4\">De architectuur van Nederlandse steden is een rijk bronmateriaal voor kleurextractie. De grachtenpanden van Amsterdam tonen donkerrood, donkergroen, crème en wit met zwarte kozijnen. Delfts blauw aardewerk inspireert een monochromatisch palet in blauwtinten. De kubuswoningen van Rotterdam brengen felgeel, grijs beton en hemelsblauw samen in een moderne compositie.</p><p class=\"text-mid\">Upload een foto van een Nederlandse stad of landschap naar de extractor en gebruik de verkregen HEX-codes als basis voor projecten op het gebied van toerisme, horeca of regionaal branding. Een foto van de Kinderdijk-molens levert een palet van groen gras, bruin hout, wit pleisterwerk en de grijsblauwe lucht van Zuid-Holland.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kleurextractie voor Nederlandse e-commerce en productfotografie",
+      "html": "<p class=\"text-mid mb-4\">Visuele consistentie in een webshop bouwt vertrouwen en professionaliteit op. De kleurextractor analyseert een productfoto en levert de dominante kleuren als HEX- en RGB-codes. Deze waarden zijn direct bruikbaar voor achtergronden, banners en social media-visuals — zo krijgt het hele assortiment een uniforme visuele identiteit.</p><p class=\"text-mid mb-4\">Nederlandse food- en drankmerken hebben uitgesproken kleuridentiteiten. Kaasproducenten gebruiken warm geel, oranje en crème. Bloemenmerken werken met de felle kleuren van tulpen, rozen en pioenrozen. Biologische merken kiezen voor gedempte groentinten, natuurlijk bruin en roomwit. Upload een foto van de verpakking of het product — de geëxtraheerde codes worden de kleurenbasis van de hele shop.</p><p class=\"text-mid\">Productfoto's op een witte achtergrond leveren de meest nauwkeurige resultaten op, omdat de extractor alleen de kleuren van het product zelf vastlegt. Bij lifestyle-foto's met decoratie en achtergrond worden ook die kleuren meegenomen. Snijd de afbeelding bij tot het relevante gebied of gebruik een PNG-bestand met transparante achtergrond om de extractie te concentreren op de kleuren die er toe doen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kleurpaletten uit Nederlandse interieurs — extractie voor design",
+      "html": "<p class=\"text-mid mb-4\">Interieurontwerpers en stylisten gebruiken referentiefoto's als eerste stap in het ontwerpproces. De extractor zet een foto van een ruimte om in concrete HEX-codes die direct in presentaties, websites of moodboards passen. Een foto van een Amsterdams grachtenpand levert typisch: donker parketbruin, wit stucwerk, plantengroen en een kleuraccent van kussens of kunst.</p><p class=\"text-mid mb-4\">In het Nederlandse interieurdesign zijn twee hoofdstromen zichtbaar. De Scandinavisch geïnspireerde minimalistische stijl werkt met wit, licht hout, betongrijs en accenten in mosterdgeel of saliegroen. De industriële stijl zet in op zichtbaar beton, staal, baksteenrood en warm hout als contrast. Beide richtingen produceren paletten met lage verzadiging die de extractor nauwkeurig uit één enkele ruimtefoto haalt.</p><p class=\"text-mid\">Hotels, restaurants en kantoren profiteren bijzonder van deze methode. De website van een boutique hotel in de Jordaan moet qua kleur aansluiten bij de werkelijke uitstraling van de ruimtes. Upload een foto van de lobby of een kamer, extraheer 6–8 dominante kleuren en gebruik deze als kleursysteem voor de gehele website — van homepagina tot reserveringspagina.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Veelgestelde vragen over de kleurextractor",
       "openByDefault": 1,

@@ -268,6 +268,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Színkinyerés magyar tájakból és építészetből",
+      "html": "<p class=\"text-mid mb-4\">A magyar tájak évszakonként és régiónként eltérő színpalettákat kínálnak. A Balaton nyáron türkizkéket, nádas zöldet, homokos bézst és napsütötte aranyat ad. Az Alföld aratáskor arany búzamezőket, ég kékjét, földút barnáját és szélmalom fehérjét mutatja. A Tokaji borvidék ősszel meleg aranyat, vöröset, narancssárgát és a szőlőlevelek sárgáját hozza.</p><p class=\"text-mid mb-4\">A magyar építészet gazdag forrás a színkinyeréshez. Budapest Belvárosának épületei szecessziós díszítésekkel, pasztellsárga, rózsaszín és zöld homlokzatokkal, terrakotta tetőkkel és kovácsoltvas fekete erkélyekkel rendelkeznek. Eger barokk épületei meleg ockert, fehéret és bordót mutatnak. Szentendre kis színes házai — sárga, kék, rózsaszín és narancs — egyetlen fénykép alapján gazdag, telített palettát eredményeznek.</p><p class=\"text-mid\">Töltsön fel egy magyar tájképet vagy városi fotót a kinyerőbe, és másodpercek alatt megkapja a megfelelő HEX kódokat. A Halászbástya fotója budai panorámával palettát ad fehér mészkőből, szürke Dunából, zöld Gellért-hegyből és a terrakotta tetők meleg narancsából — színek, amelyek azonnal használhatók turisztikai, gasztronómiai vagy regionális branding projektekhez.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Színkinyerés magyar webshopokhoz és termékfotózáshoz",
+      "html": "<p class=\"text-mid mb-4\">A vizuális egységesség egy webáruházban bizalmat és professzionális megjelenést épít. A színkinyerő elemez egy termékfotót és visszaadja a domináns színeket HEX és RGB kódokként. Ezeket az értékeket közvetlenül használhatja termékkártyák háttereihez, promóciós bannerekhez és közösségi média grafikákhoz — az egész katalógus egységes vizuális identitást kap.</p><p class=\"text-mid mb-4\">A magyar élelmiszer- és italmárkáknak erős színidentitásuk van. A paprika márkák tüzes pirosat, narancsot és meleg sárgát használnak. A tokaji borok aranyat, borostyánt és mézszínt választanak. A mangalica termékek meleg barnát, krémfehéret és természetes zöldet alkalmaznak. A hungarikum márkák — kolbász, lekvár, pálinka — hagyományos színekkel dolgoznak. Töltse fel a termék vagy csomagolás fotóját — a kinyert kódok az egész bolt színalapjává válnak.</p><p class=\"text-mid\">A fehér háttéren készült termékfotók adják a legpontosabb eredményeket, mert a kinyerő csak a termék saját színeit rögzíti. Életmód-fotóknál dekorációval és háttérrel ezek a tónusok is bekerülnek az elemzésbe. Vágja ki a képet a lényeges területre feltöltés előtt, vagy használjon PNG fájlt átlátszó háttérrel a kinyerés fókuszálásához a fontos színekre.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Színpaletták magyar belső terekből — kinyerés tervezéshez",
+      "html": "<p class=\"text-mid mb-4\">Belsőépítészek és lakberendezők referenciafotókat használnak a tervezési folyamat első lépéseként. A kinyerő egy szobafotót konkrét HEX kódokká alakít, amelyek közvetlenül beilleszthetők prezentációkba, weboldalakba vagy moodboardokba. Egy budapesti romkocsma fotója tipikusan ad: kopott téglaszínt, patinás zöldet, vintage fa barnát és neonszínű akcenteket.</p><p class=\"text-mid mb-4\">A magyar belsőépítészet két pólus között mozog. A modern budapesti stílus betonszürkével, feketével, fehérrel és egy-két erős akcenttel dolgozik — korall, türkiz vagy mustársárga. A vidéki magyar stílus melegebb tónusokat hoz — tölgyfa barnáját, kézműves kerámia földszíneit, hímzett textíliák pirosát és kékjét. Mindkét irány olyan palettákat eredményez, amelyeket a kinyerő pontosan megragad egyetlen belső térfotóból.</p><p class=\"text-mid\">Szállodák, éttermek és irodák különösen profitálnak ebből a módszerből. Egy balatoni wellness hotel weboldalának tükröznie kell a terek valódi színeit. Töltse fel a lobby, a szoba vagy az étterem fotóját, nyerjen ki 6–8 domináns színt, és használja ezeket az egész weboldal színrendszereként — a főoldaltól a foglalási oldalig.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Gyakran ismételt kérdések a színkinyaróról",
       "openByDefault": 1,

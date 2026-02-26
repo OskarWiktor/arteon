@@ -268,6 +268,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Extrair cores de paisagens e arquitetura lusófona",
+      "html": "<p class=\"text-mid mb-4\">As paisagens do mundo lusófono oferecem paletas cromáticas prontas para extração a partir de uma única fotografia. As fachadas de azulejos de Lisboa combinam azul cobalto e branco sobre paredes em tons de ocre, rosa e verde pálido. As falésias do Algarve trazem arenito dourado, azul oceano, branco de cal e verde de figueira. O Rio de Janeiro adiciona uma paleta tropical — verde mata atlântica, azul-turquesa da baía, granito cinzento e areia dourada.</p><p class=\"text-mid mb-4\">A arquitetura colonial brasileira é uma fonte rica de inspiração cromática. As casas de Olinda e Ouro Preto exibem fachadas em amarelo, azul, verde e rosa sobre molduras brancas. O Pelourinho em Salvador combina cores vibrantes com pedra calcária e ferro forjado escuro. Os Açores oferecem uma paleta diferente — preto basáltico, branco de cal, hortênsias azuis e verde intenso de pastagens.</p><p class=\"text-mid\">Carregue uma foto de qualquer paisagem ou cidade lusófona no extrator e obtenha os códigos HEX correspondentes em segundos. Uma foto da Torre de Belém produzirá tons de calcário creme, céu azul claro, água do Tejo em verde-acinzentado e detalhes em pedra dourada — cores diretamente utilizáveis em projetos de turismo, gastronomia ou branding regional.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Extração de cores para e-commerce e fotografia de produto no mercado lusófono",
+      "html": "<p class=\"text-mid mb-4\">A coerência visual de uma loja online reforça a confiança do comprador. O extrator analisa uma foto de produto e devolve as cores dominantes como códigos HEX e RGB. Estes valores aplicam-se diretamente a fundos de fichas de produto, banners promocionais e grafismos para redes sociais — todo o catálogo mantém assim uma identidade cromática unificada.</p><p class=\"text-mid mb-4\">As marcas lusófonas de alimentação e bebidas têm identidades cromáticas fortes. Os rótulos de Vinho do Porto usam bordô profundo, dourado e preto. Os produtores de azeite alentejano escolhem verde folha, dourado e creme. As marcas brasileiras de café apostam em castanho torrado, bege e verde-escuro. Carregue uma foto do rótulo ou do produto — os códigos extraídos tornam-se a paleta base de toda a loja.</p><p class=\"text-mid\">As fotos sobre fundo branco dão os resultados mais precisos porque o extrator capta apenas as cores do produto. Em fotos ambientadas com decoração e fundos coloridos, essas tonalidades também são incluídas na análise. Recorte a imagem na zona de interesse antes de carregar ou utilize um ficheiro PNG com fundo transparente para concentrar a extração nas cores relevantes.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Paletas de interiores lusófonos — extração de cores para design",
+      "html": "<p class=\"text-mid mb-4\">Arquitetos de interiores e decoradores usam fotos de referência como primeiro passo do processo criativo. O extrator converte essa foto em códigos HEX concretos, prontos para inserir numa apresentação, num site ou num moodboard. Uma foto de um apartamento lisboeta produzirá tipicamente: branco de cal das paredes, azulejo azul e branco, madeira de pinho mel e um acento de tecido em verde ou mostarda.</p><p class=\"text-mid mb-4\">O design de interiores lusófono apresenta duas correntes principais. O estilo lisboeta contemporâneo combina paredes brancas, chão hidráulico em padrões geométricos, madeira clara e acessórios em latão — uma paleta limpa com acentos gráficos. O estilo brasileiro moderno trabalha com betão aparente, madeira tropical escura, plantas tropicais verdes e têxteis em tons terrosos. Ambas as abordagens geram paletas que o extrator capta fielmente a partir de uma única fotografia de ambiente.</p><p class=\"text-mid\">Hotéis, restaurantes e lojas beneficiam diretamente deste método. O site de uma quinta alentejana deve refletir as cores reais do espaço. Carregue uma foto da sala, do quarto ou do jardim, extraia 6–8 cores dominantes e utilize-as como sistema cromático de todo o site — da página inicial à página de reservas.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Perguntas frequentes sobre o extrator de cores",
       "openByDefault": 1,

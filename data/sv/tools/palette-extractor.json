@@ -268,6 +268,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Extrahera färger från svenska landskap och arkitektur",
+      "html": "<p class=\"text-mid mb-4\">Svenska landskap ger färgpaletter som varierar kraftigt med årstid och region. Stockholms skärgård på sommaren levererar havsblått, klippgrått, tallgrön och solblekat trä. Dalarnas röda stugor mot gröna ängar och vit knutar bildar en av Sveriges mest igenkännliga paletter. Lappland på vintern ger snövitt, midnattsblått, grangrön och det svaga rosa skimret av gryningsljus.</p><p class=\"text-mid mb-4\">Svensk arkitektur erbjuder rika färgkällor för extraktion. Gamla stans fasader i Stockholm visar ockra, terrakotta, senfgul och dovt grönt. Göteborgs hamnkvarter kombinerar rött tegel, grått stål och havets blågröna toner. Moderna stadsdelar som Malmö Västra Hamnen presenterar vitt, ljusgrått, glas och accenter i klara färger. En enda foto av en svensk stadsbild ger tillräckligt med färginformation för ett helt designprojekt.</p><p class=\"text-mid\">Ladda upp ett foto av ett svenskt landskap eller en stadsbild till extraktorn och använd de erhållna HEX-koderna som grund för projekt inom turism, restaurang eller regionalt varumärkesbyggande. Ett foto av Visby ringmur ger en palette av kalkstensgrått, murgrönsgrönt, rosenrosa och Östersjöns blågrå ton.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Färgextraktion för svensk e-handel och produktfotografi",
+      "html": "<p class=\"text-mid mb-4\">Visuell konsekvens i en webbshop bygger förtroende och professionellt intryck. Färgextraktorn analyserar ett produktfoto och levererar de dominanta färgerna som HEX- och RGB-koder. Dessa värden används direkt för bakgrunder, banners och grafik till sociala medier — hela sortimentet får en enhetlig visuell identitet.</p><p class=\"text-mid mb-4\">Svenska designmärken har tydliga färgidentiteter som går att extrahera och återanvända. Möbelföretag arbetar med ljust trä, vitt och dova accenter. Livsmedelsföretag använder naturliga toner — lingonrött, smörigt gult, grönt av dill och gräddig vit. Frilufts- och naturmärken kombinerar jordtoner med signalstarka accenter i orange eller gult. Ladda upp en produktbild eller förpackningsfoto — de extraherade koderna blir färgbasen för hela butiken.</p><p class=\"text-mid\">Produktfoton på vit bakgrund ger de mest exakta resultaten eftersom extraktorn bara fångar produktens egna färger. Vid lifestylebilder med dekor och bakgrund inkluderas även dessa toner. Beskär bilden till det relevanta området innan uppladdning eller använd en PNG-fil med transparent bakgrund för att fokusera extraktionen på de färger som spelar roll.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Färgpaletter från svenska interiörer — extraktion för design",
+      "html": "<p class=\"text-mid mb-4\">Inredningsarkitekter och stylister använder referensfoton som första steg i designprocessen. Extraktorn omvandlar ett rumsfoto till konkreta HEX-koder som passar direkt i presentationer, webbplatser eller moodboards. Ett foto av en klassisk svensk stuga ger typiskt: Falu rödfärg, vitmålade knutar, björkträ i ljust gult och textilier i blått och vitt.</p><p class=\"text-mid mb-4\">Svensk inredningsdesign rör sig mellan två poler. Den minimalistiska nordiska stilen arbetar med vitt, ljust björkträ, betongrått och enstaka accenter i senapsgult eller dov rosa. Sommarstugan (stugan) bjuder en annan palett — rött trä, vitmålade möbler, blå textilier och grönskan utanför fönstret. Båda stilarna producerar paletter som extraktorn fångar exakt från ett enda inredningsfoto.</p><p class=\"text-mid\">Hotell, restauranger och kontor drar särskild nytta av denna metod. En webbplats för ett boutiquehotell på Gotland bör spegla rummens faktiska färger. Ladda upp ett foto av lobbyn eller ett rum, extrahera 6–8 dominanta färger och använd dem som färgsystem för hela webbplatsen — från startsida till bokningssida.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanliga frågor om färgextraktorn från bild",
       "openByDefault": 1,

@@ -268,6 +268,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Extraire des couleurs de paysages et d'architectures français",
+      "html": "<p class=\"text-mid mb-4\">Les paysages français offrent des palettes de couleurs variées, prêtes à être extraites d'une simple photo. La Provence livre des champs de lavande violet pâle, des murs d'ocre doré, des volets bleu ciel et des toits de tuile terracotta. La Côte d'Azur apporte le turquoise de la Méditerranée, le blanc des façades et le rose des bougainvilliers. Les falaises d'Étretat en Normandie donnent un tout autre registre : blanc crayeux, vert gazon, bleu-gris de la Manche et brun sable.</p><p class=\"text-mid mb-4\">L'architecture parisienne constitue une source riche pour l'extraction de couleurs. Les immeubles haussmanniens combinent pierre de taille crème, toits en zinc gris bleuté, balcons en fer forgé noir et volets vert sauge. Un seul cliché d'un boulevard parisien fournit une palette élégante et cohérente, immédiatement utilisable pour un projet lié au luxe, à la mode ou au tourisme.</p><p class=\"text-mid\">Les villages de Bretagne, d'Alsace et du Pays basque ont chacun leurs couleurs distinctives. Les maisons à colombages alsaciennes mêlent jaune, rose et bleu sur des poutres sombres. Les volets rouges du Pays basque se détachent sur des murs blancs immaculés. Téléversez une photo de n'importe quelle région française et l'extracteur vous livrera les codes HEX correspondants en quelques secondes.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Extraction de couleurs pour le e-commerce et la photographie produit en France",
+      "html": "<p class=\"text-mid mb-4\">La cohérence visuelle d'une boutique en ligne renforce la confiance des acheteurs. L'extracteur de couleurs analyse une photo de produit et renvoie les teintes dominantes en codes HEX et RGB. Ces valeurs servent directement pour les arrière-plans de fiches produits, les bannières promotionnelles et les visuels pour les réseaux sociaux — l'ensemble du catalogue adopte ainsi une identité chromatique unifiée.</p><p class=\"text-mid mb-4\">Les marques françaises de cosmétique, de vin et de gastronomie possèdent des palettes reconnaissables. Les étiquettes de vin bordelais utilisent bordeaux profond, or et noir. Les marques de fromage français privilégient le crème, le jaune paille et le vert feuille. Les cosmétiques de luxe misent sur le rose poudré, le blanc nacré et l'or. Téléversez une photo d'étiquette ou de packaging — les codes extraits deviennent la palette de votre boutique.</p><p class=\"text-mid\">Pour des résultats précis, utilisez des photos produit sur fond blanc ou des fichiers PNG avec fond transparent. Quand l'image contient un décor ou un arrière-plan coloré, l'extracteur inclut aussi ces teintes. Recadrez l'image sur le produit avant de la téléverser pour concentrer l'analyse sur les couleurs qui comptent.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Palettes de couleurs d'intérieurs français — extraction pour le design",
+      "html": "<p class=\"text-mid mb-4\">Les architectes d'intérieur et décorateurs utilisent des photos de référence comme point de départ d'un projet. L'extracteur transforme une photo d'intérieur en codes HEX concrets, prêts à être intégrés dans une présentation, un site web ou un moodboard. Une photo d'appartement haussmannien livrera typiquement : blanc cassé des moulures, gris perle des murs, parquet miel et un accent de velours bleu ou vert sauge.</p><p class=\"text-mid mb-4\">Le design d'intérieur français oscille entre deux courants. Le style parisien contemporain mêle blanc, noir, bois clair et touches de laiton doré — une palette sobre avec un accent métallique. Le style provençal puise dans les couleurs du sud : lavande, ocre jaune, terre cuite et blanc chaux. Ces deux approches génèrent des palettes que l'extracteur capture fidèlement à partir d'une seule photographie de pièce.</p><p class=\"text-mid\">Les hôtels, restaurants et boutiques tirent un bénéfice direct de cette méthode. Le site web d'un restaurant gastronomique doit refléter l'atmosphère de la salle. Téléversez une photo de l'espace, extrayez les 6 à 8 couleurs dominantes et utilisez-les comme système chromatique de l'ensemble du site — du menu aux réservations.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Questions fréquentes sur l'extracteur de couleurs",
       "openByDefault": 1,

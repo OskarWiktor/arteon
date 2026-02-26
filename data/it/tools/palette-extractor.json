@@ -268,6 +268,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Estrarre colori da paesaggi e architettura italiana",
+      "html": "<p class=\"text-mid mb-4\">I paesaggi italiani offrono palette cromatiche pronte da estrarre con una sola foto. Le Cinque Terre regalano pastelli vivaci — rosa, giallo, arancione e terracotta — su sfondi di mare turchese e vegetazione mediterranea. Le colline toscane portano ocra dorata, verde oliva, marrone terra di Siena e il blu pallido del cielo estivo. Le Dolomiti introducono grigi di roccia, verdi di abete e i toni rosa dell'enrosadira al tramonto.</p><p class=\"text-mid mb-4\">L'architettura italiana è una fonte ricchissima di ispirazione cromatica. Venezia offre facciate in tonalità di rosso mattone, giallo ocra, rosa cipria e verde acqua riflesso nei canali. Roma combina il travertino color crema del Colosseo con l'arancione delle facciate di Trastevere e il verde scuro dei pini marittimi. Milano presenta una palette più sobria — grigio pietra, bianco Duomo, nero ferro e accenti di vetro blu.</p><p class=\"text-mid\">Caricate una foto di qualsiasi scorcio italiano nell'estrattore e otterrete i codici HEX corrispondenti in pochi secondi. Una foto della Costiera Amalfitana produrrà una palette di azzurro, bianco, giallo limone e rosa bouganvillea — colori immediatamente utilizzabili per progetti legati al turismo, alla gastronomia o al branding regionale.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Estrazione colori per e-commerce e fotografia di prodotto in Italia",
+      "html": "<p class=\"text-mid mb-4\">La coerenza cromatica di un negozio online costruisce fiducia e professionalità. L'estrattore analizza una foto di prodotto e restituisce i colori dominanti come codici HEX e RGB. Questi valori si usano direttamente per sfondi delle schede prodotto, banner promozionali e grafiche per i social media — così l'intero catalogo mantiene un'identità visiva uniforme.</p><p class=\"text-mid mb-4\">I marchi italiani del food e del vino hanno identità cromatiche forti. Le etichette di Barolo e Brunello usano bordeaux profondo, oro e nero. I produttori di olio d'oliva toscano scelgono verde foglia, oro e crema. I marchi di pasta fresca puntano su giallo grano, bianco farina e rosso pomodoro. Caricate una foto della confezione o del prodotto — i codici estratti diventano la base cromatica dell'intero shop.</p><p class=\"text-mid\">Le foto su sfondo bianco danno i risultati più precisi perché l'estrattore cattura solo i colori del prodotto. Nelle foto ambientate con decorazioni e sfondi colorati, anche quei toni vengono inclusi nell'analisi. Ritagliate l'immagine sulla zona di interesse prima di caricarla, oppure usate un file PNG con sfondo trasparente per concentrare l'estrazione sui colori che contano.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Palette cromatiche da interni italiani — estrazione per il design",
+      "html": "<p class=\"text-mid mb-4\">Architetti e interior designer partono spesso da una foto di riferimento per definire la direzione cromatica di un progetto. L'estrattore converte quella foto in codici HEX concreti, pronti da inserire in una presentazione, un sito web o un moodboard. Una foto di un loft milanese produrrà tipicamente: grigio cemento, nero acciaio, legno noce caldo e un accento di verde pianta.</p><p class=\"text-mid mb-4\">Il design d'interni italiano presenta due correnti principali. Lo stile industriale milanese lavora con cemento a vista, metallo, vetro e legno grezzo — una palette a bassa saturazione con forti contrasti di luminosità. Lo stile toscano tradizionale porta muri in pietra color miele, terracotta, legno d'olivo e tessuti in lino naturale — toni caldi e terrosi che l'estrattore cattura fedelmente da una singola fotografia di ambiente.</p><p class=\"text-mid\">Hotel, ristoranti e showroom beneficiano direttamente di questo metodo. Il sito web di un agriturismo toscano deve riflettere i colori reali della struttura. Caricate una foto della sala, della camera o del giardino, estraete 6–8 colori dominanti e usateli come sistema cromatico dell'intero sito — dalla home page alla pagina di prenotazione.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Domande frequenti sull'estrattore di colori",
       "openByDefault": 1,
