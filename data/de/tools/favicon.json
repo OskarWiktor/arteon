@@ -255,6 +255,25 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Favicon in den Google-Suchergebnissen — Anforderungen und Anzeige",
+      "html": "<p class=\"text-mid mb-4\">Google zeigt Favicons neben der URL in den Suchergebnissen an. In mobilen Ergebnissen erscheint das Website-Symbol seit 2019. Auf dem Desktop zeigt Google Favicons seit Januar 2020. Das Favicon ist damit ein sichtbares Markenelement in jeder Google-Suche.</p><p class=\"text-mid mb-4\">Die Anforderungen von Google an Favicons sind klar definiert. Das Symbol muss mindestens 48×48 Pixel groß sein. Die Form muss quadratisch sein. Das Bild muss auf weißem Hintergrund deutlich erkennbar bleiben. Google lehnt Symbole mit unangemessenem oder leerem Inhalt ab.</p><p class=\"text-mid mb-4\">Der Googlebot crawlt und indexiert Favicons unabhängig vom Seiteninhalt. Die Aktualisierung des Favicons in den Suchergebnissen kann mehrere Tage bis Wochen dauern. Die Favicon-Datei darf nicht in der robots.txt blockiert sein — andernfalls kann Google die neue Version nicht abrufen.</p><p class=\"text-mid\">Bing zeigt ebenfalls Favicons in seinen Suchergebnissen. DuckDuckGo stellt Websitesymbole neben jedem Ergebnislink dar. Ein vollständiger Favicon-Satz sorgt für ein einheitliches Markenbild in allen großen Suchmaschinen. Nutzer erkennen vertraute Favicons schneller, was zu höheren Klickraten beiträgt.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Favicon und Markenidentität im DACH-Raum",
+      "html": "<p class=\"text-mid mb-4\">Corporate Design hat in Deutschland, Österreich und der Schweiz einen hohen Stellenwert. Ein Favicon, das farblich und gestalterisch zum Firmenlogo passt, stärkt die Wiedererkennung in Browser-Tabs, Lesezeichen und auf dem Smartphone-Startbildschirm.</p><p class=\"text-mid mb-4\">Wenn ein Nutzer zehn oder mehr Tabs geöffnet hat, bleibt das Favicon das einzige sichtbare Element zur Identifikation der Website. Farbliche Konsistenz zwischen Favicon und Unternehmenslogo verbessert die Markenerinnerung. Eine vereinfachte Version des Logos oder der erste Buchstabe funktioniert bei kleinen Pixelgrößen am besten.</p><p class=\"text-mid mb-4\">In Shopware, TYPO3 und Contao lässt sich das Favicon in den allgemeinen Seiteneinstellungen hinterlegen. Online-Shops auf diesen Plattformen profitieren von einem professionellen Favicon, das Vertrauen signalisiert und den Shop in Preisvergleichsportalen visuell hervorhebt.</p><p class=\"text-mid\">Die BITV 2.0 (Barrierefreie-Informationstechnik-Verordnung) fordert ausreichenden Kontrast für visuelle Elemente auf Webseiten öffentlicher Stellen. Das Favicon muss auf hellen und dunklen Hintergründen erkennbar sein. Kontraststarke Farben und einfache Formen erfüllen diese Anforderung zuverlässig.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Favicon-Formate und Browser-Caching",
+      "html": "<p class=\"text-mid mb-4\">Drei Favicon-Formate prägen die moderne Webentwicklung: ICO, PNG und SVG. Jedes Format erfüllt einen bestimmten Zweck im Browser-Ökosystem.</p><p class=\"text-mid mb-4\">ICO ist das ursprüngliche Favicon-Format. Eine ICO-Datei kann mehrere Größen (16, 32 und 48 Pixel) in einem einzigen Container enthalten. Jeder große Browser unterstützt ICO, was es zur kompatibelsten Option macht. PNG bietet höhere Bildqualität bei kleinerer Dateigröße. Moderne Browser bevorzugen PNG-Favicons, die über Link-Tags im HTML-Head deklariert werden.</p><p class=\"text-mid mb-4\">SVG-Favicons sind die neueste Option. Chrome unterstützt SVG-Favicons seit Version 80, Firefox seit Version 41. SVG skaliert verlustfrei auf jede Größe. SVG-Favicons unterstützen außerdem den Dark Mode über die CSS-Media-Query prefers-color-scheme — das Symbol kann seine Farben automatisch anpassen. Safari unterstützt SVG-Favicons Anfang 2025 noch nicht.</p><p class=\"text-mid\">Browser cachen Favicons aggressiv und unabhängig vom Seiten-Cache. Cache-Strategien nutzen den Header Cache-Control mit max-age=604800 oder einen Versionsparameter (/favicon.ico?v=2). Die Gesamtgröße aller Favicon-Dateien sollte unter 20 KB bleiben. Der Lighthouse-Audit in den Chrome DevTools prüft die Existenz und Gültigkeit des Favicons.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Häufig gestellte Fragen zum Favicon-Generator",
       "openByDefault": 1,

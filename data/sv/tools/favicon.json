@@ -273,6 +273,25 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Favicon i Googles sökresultat",
+      "html": "<p class=\"text-mid mb-4\">Google visar favicons bredvid webbplatsens URL i sökresultaten. Mobila sökresultat har visat favicons sedan 2019. Skrivbordsresultat följde i januari 2020. Favicon är därmed ett synligt varumärkeselement i varje Google-sökning.</p><p class=\"text-mid mb-4\">Google ställer specifika krav på visning av favicons. Ikonen måste vara minst 48×48 pixlar. Den måste vara kvadratisk. Bilden måste vara tydligt synlig mot vit bakgrund. Google avvisar ikoner med olämpligt eller tomt innehåll.</p><p class=\"text-mid mb-4\">Googlebot crawlar och indexerar favicons oberoende av sidinnehållet. Uppdatering av favicon i sökresultaten kan ta flera dagar till veckor. Favicon-filen får inte vara blockerad i robots.txt — annars kan Google inte hämta den nya versionen.</p><p class=\"text-mid\">Bing visar också favicons i sina sökresultat. DuckDuckGo visar webbplatsikoner bredvid varje resultatlänk. En komplett uppsättning favicons säkerställer ett enhetligt varumärkesutseende i alla stora sökmotorer. Användare känner igen bekanta favicons snabbare, vilket bidrar till högre klickfrekvens.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Favicon och varumärkesidentitet i Sverige",
+      "html": "<p class=\"text-mid mb-4\">Skandinavisk designminimalism präglar svenska webbplatser. Ett rent och enkelt favicon passar denna estetik och stärker igenkänningen i webbläsarflikar, bokmärken och på mobilens startskärm. När en användare har tio eller fler flikar öppna förblir favicon det enda synliga element som identifierar webbplatsen.</p><p class=\"text-mid mb-4\">Visuell konsistens mellan favicon och logotyp förbättrar varumärkeserinran. En förenklad version av logotypen eller dess första bokstav fungerar bäst vid små pixelstorlekar. Färgerna i favicon bör matcha företagets grafiska profil.</p><p class=\"text-mid mb-4\">Svenska e-handelsplattformar som Quickbutik och WooCommerce möjliggör favicon-konfiguration i temainställningarna. Webbutiker med ett professionellt favicon signalerar trovärdighet och sticker ut på prisjämförelsesajter.</p><p class=\"text-mid\">DOS-lagen (Lagen om tillgänglighet till digital offentlig service) kräver tillräcklig kontrast för visuella element på offentliga webbplatser. Favicon måste vara läsbart i både ljust och mörkt läge. Kontrastrika färger och enkla former uppfyller detta krav på ett tillförlitligt sätt.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Favicon för PWA och mobila enheter",
+      "html": "<p class=\"text-mid mb-4\">Progressive Web Apps kräver ytterligare ikoner utöver standardfavicon. Filen manifest.json måste innehålla en ikonarray med storlekarna 192×192 och 512×512 pixlar i PNG-format.</p><p class=\"text-mid mb-4\">Maskable icons är en speciell ikontyp för Android-enheter. Operativsystemet beskär maskable icons till olika former — cirklar, rundade kvadrater eller droppar. Den säkra zonen täcker de inre 80 procenten av bildytan. Alla väsentliga grafiska element måste ligga inom denna zon för att undvika beskärning.</p><p class=\"text-mid mb-4\">Apple kräver en separat apple-touch-icon-fil på 180×180 pixlar. Denna fil måste deklareras i HTML-headern — iOS läser den inte från manifestfilen.</p><p class=\"text-mid mb-4\">Sverige har en av Europas högsta smartphonepenetrationer. Svenska banker som Swedbank och SEB erbjuder app-liknande upplevelser via webbläsaren. PWA-tekniken möjliggör snabb åtkomst från telefonens startskärm utan installation via en appbutik.</p><p class=\"text-mid\">Lighthouse-granskningen i Chrome DevTools kontrollerar förekomsten och giltigheten av favicon och PWA-ikoner. Ett saknat eller ogiltigt favicon genererar en varning i PWA-kategorin i granskningen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanliga frågor om favicon-generatorn",
       "openByDefault": 1,

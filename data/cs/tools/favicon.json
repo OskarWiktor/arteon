@@ -273,6 +273,25 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Favicon ve výsledcích vyhledávání Google a Seznam.cz",
+      "html": "<p class=\"text-mid mb-4\">Google zobrazuje favicony vedle URL adresy webu ve výsledcích vyhledávání. Mobilní výsledky ukazují favicony od roku 2019. Desktopové výsledky následovaly v lednu 2020. Favicon je viditelným prvkem značky v každém vyhledávání na Googlu.</p><p class=\"text-mid mb-4\">Google stanovuje konkrétní požadavky na zobrazení faviconů. Ikona musí mít rozměry alespoň 48×48 pixelů. Musí být čtvercová. Obrázek musí zůstat zřetelně viditelný na bílém pozadí. Google odmítá ikony s nevhodným nebo prázdným obsahem.</p><p class=\"text-mid mb-4\">Googlebot prochází a indexuje favicony nezávisle na obsahu stránky. Aktualizace faviconu ve výsledcích může trvat několik dní až týdnů. Soubor favicon nesmí být zablokován v robots.txt — jinak Google nemůže získat novou verzi.</p><p class=\"text-mid\">Seznam.cz — český vyhledávač s podílem na trhu kolem 25 % — rovněž zobrazuje favicony v seznamu výsledků. Profesionální favicon zvyšuje rozpoznatelnost značky v obou vyhledávačích současně. Bing a DuckDuckGo také ukazují favicony vedle každého odkazu ve výsledcích.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Favicon a vizuální identita značky v Česku",
+      "html": "<p class=\"text-mid mb-4\">Vizuální konzistence mezi faviconem a logotypem posiluje zapamatovatelnost značky. Ikona se zobrazuje v kartách prohlížeče, v záložkách, v historii prohlížení a na domovské obrazovce telefonu. Když má uživatel deset nebo více karet otevřených, favicon zůstává jediným viditelným prvkem identifikujícím web.</p><p class=\"text-mid mb-4\">V českém e-commerce se favicon zobrazuje u výsledků srovnávačů cen. Na Heureka.cz a Zboží.cz odlišuje obchod od konkurence a signalizuje profesionalitu. Shoptet — nejrozšířenější český e-shopový systém — umožňuje nastavení faviconu v administraci v sekci vzhled šablony. WooCommerce a PrestaShop nabízejí stejnou možnost.</p><p class=\"text-mid mb-4\">Zákon o přístupnosti webových stránek veřejných institucí vyžaduje dostatečný kontrast pro vizuální prvky. Favicon musí být čitelný v světlém i tmavém režimu. Kontrastní barvy a jednoduché tvary tento požadavek spolehlivě splňují.</p><p class=\"text-mid\">Firmy poskytující služby — od advokátních kanceláří po zubní ordinace — budují důvěru klientů již na úrovni ikony v kartě prohlížeče. Absence faviconu nebo výchozí ikona prohlížeče může naznačovat nízkou úroveň profesionality.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Favicon pro PWA a mobilní zařízení",
+      "html": "<p class=\"text-mid mb-4\">Progressive Web Apps vyžadují další ikony nad rámec standardního faviconu. Soubor manifest.json musí obsahovat pole ikon s rozměry 192×192 a 512×512 pixelů ve formátu PNG.</p><p class=\"text-mid mb-4\">Maskable ikony jsou speciální typ ikony pro zařízení s Androidem. Operační systém ořezává maskable ikony do různých tvarů — kruhů, zaoblených čtverců nebo kapek. Bezpečná zóna pokrývá vnitřních 80 % plochy obrázku. Všechny podstatné grafické prvky musí být uvnitř této zóny, aby nedošlo k oříznutí.</p><p class=\"text-mid mb-4\">Apple vyžaduje samostatný soubor apple-touch-icon o rozměrech 180×180 pixelů. Tento soubor musí být deklarován v sekci head dokumentu HTML — iOS ho nečte ze souboru manifest.</p><p class=\"text-mid mb-4\">Česko má vysokou penetraci chytrých telefonů. České banky jako Česká spořitelna a ČSOB a e-shopy využívají technologii PWA pro rychlý přístup z domovské obrazovky telefonu bez instalace z obchodu s aplikacemi.</p><p class=\"text-mid\">Audit Lighthouse v nástrojích pro vývojáře Chrome ověřuje přítomnost a platnost faviconu a ikon PWA. Chybějící nebo neplatný favicon generuje varování v kategorii PWA auditu.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o generátoru favicon",
       "openByDefault": 1,

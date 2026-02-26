@@ -283,6 +283,25 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Favicon nos resultados de pesquisa do Google",
+      "html": "<p class=\"text-mid mb-4\">O Google apresenta os favicons junto ao URL do site nos resultados de pesquisa. Os resultados em dispositivos móveis mostram favicons desde 2019. Os resultados em computador incluem-nos desde janeiro de 2020. O favicon é um elemento visual da marca presente em cada pesquisa no Google.</p><p class=\"text-mid mb-4\">O Google define requisitos específicos para a apresentação de favicons. O ícone deve ter pelo menos 48×48 píxeis. Deve ser quadrado. A imagem deve ser claramente visível sobre fundo branco. O Google rejeita ícones com conteúdo inadequado ou vazio.</p><p class=\"text-mid mb-4\">O Googlebot rastreia e indexa os favicons de forma independente do conteúdo da página. A atualização do favicon nos resultados pode demorar de vários dias a várias semanas. O ficheiro favicon não deve estar bloqueado no robots.txt — caso contrário, o Google não conseguirá obter a nova versão.</p><p class=\"text-mid\">O Bing também apresenta favicons nos seus resultados. O DuckDuckGo mostra os ícones do site junto a cada ligação. Um conjunto completo de favicons garante uma aparência de marca coerente em todos os motores de pesquisa. Os utilizadores reconhecem os favicons familiares mais rapidamente, o que contribui para uma maior taxa de cliques.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Favicon e identidade visual da marca em Portugal e no Brasil",
+      "html": "<p class=\"text-mid mb-4\">A coerência visual entre o favicon e o logótipo fortalece a memorização da marca. O ícone aparece nos separadores do navegador, nos favoritos, no histórico de navegação e no ecrã inicial do telemóvel. Quando um utilizador tem dez ou mais separadores abertos, o favicon é o único elemento visível que identifica o site.</p><p class=\"text-mid mb-4\">Em Portugal, plataformas como Shopify e WooCommerce permitem configurar o favicon nas definições do tema. No Brasil, Loja Integrada e Nuvemshop facilitam a personalização visual das lojas online. O Brasil é um mercado mobile-first — mais de 80 % dos acessos à internet provêm de smartphones, tornando o favicon no ecrã inicial ainda mais relevante.</p><p class=\"text-mid mb-4\">Sites de comparação como Buscapé e Zoom exibem favicons nos resultados, aumentando a diferenciação visual entre os vendedores. Um favicon profissional sinaliza credibilidade e destaca a loja entre dezenas de resultados concorrentes.</p><p class=\"text-mid\">As empresas de serviços — desde escritórios de advocacia até clínicas médicas — constroem confiança já ao nível do ícone no separador do navegador. A ausência de favicon ou o ícone predefinido do navegador pode sugerir falta de profissionalismo.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Favicon para PWA e dispositivos móveis",
+      "html": "<p class=\"text-mid mb-4\">As Progressive Web Apps requerem ícones adicionais para além do favicon padrão. O ficheiro manifest.json deve incluir um array de ícones com dimensões 192×192 e 512×512 píxeis em formato PNG.</p><p class=\"text-mid mb-4\">Os ícones maskable são um tipo especial de ícone para dispositivos Android. O sistema operativo recorta os ícones maskable em diferentes formas — círculos, quadrados arredondados ou gotas. A zona segura cobre os 80 % interiores da superfície da imagem. Todos os elementos gráficos essenciais devem estar dentro desta zona para evitar o recorte.</p><p class=\"text-mid mb-4\">A Apple exige um ficheiro apple-touch-icon separado de 180×180 píxeis. Este ficheiro deve ser declarado na secção head do HTML — o iOS não o lê a partir do ficheiro manifest.</p><p class=\"text-mid mb-4\">O Brasil lidera a adoção de PWA na América Latina. Magazine Luiza, Mercado Livre e iFood utilizam tecnologia PWA para oferecer experiências rápidas e similares a aplicações nativas. Em Portugal, bancos e serviços adotam progressivamente esta tecnologia.</p><p class=\"text-mid\">A auditoria Lighthouse nas ferramentas de desenvolvimento do Chrome verifica a presença e a validade do favicon e dos ícones PWA. Um favicon ausente ou inválido gera um aviso na categoria PWA da auditoria.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Perguntas frequentes sobre o gerador de favicon",
       "openByDefault": 1,

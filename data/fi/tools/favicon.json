@@ -273,6 +273,25 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Favicon Googlen hakutuloksissa",
+      "html": "<p class=\"text-mid mb-4\">Google näyttää faviconit verkkosivuston URL-osoitteen vieressä hakutuloksissa. Mobiilihakutulokset ovat näyttäneet faviconeja vuodesta 2019. Työpöytätulokset seurasivat tammikuussa 2020. Favicon on siten näkyvä brändielementti jokaisessa Google-haussa.</p><p class=\"text-mid mb-4\">Google asettaa tarkat vaatimukset faviconien näyttämiselle. Kuvakkeen on oltava vähintään 48×48 pikseliä. Sen on oltava neliö. Kuvan on oltava selkeästi näkyvä valkoisella taustalla. Google hylkää kuvakkeet, joissa on sopimatonta tai tyhjää sisältöä.</p><p class=\"text-mid mb-4\">Googlebot indeksoi faviconit sivun sisällöstä riippumatta. Faviconin päivitys hakutuloksissa voi kestää useista päivistä viikkoihin. Favicon-tiedostoa ei saa estää robots.txt-tiedostossa — muuten Google ei voi hakea uutta versiota.</p><p class=\"text-mid\">Bing näyttää myös faviconeja hakutuloksissaan. DuckDuckGo näyttää sivustokuvakkeet jokaisen tuloslinkin vieressä. Täydellinen favicon-kokoelma varmistaa yhtenäisen brändi-ilmeen kaikissa suurissa hakukoneissa. Käyttäjät tunnistavat tutut faviconit nopeammin, mikä edistää korkeampaa klikkausprosenttia.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Favicon ja brändi-identiteetti Suomessa",
+      "html": "<p class=\"text-mid mb-4\">Suomalainen muotoiluperinne arvostaa selkeyttä ja toiminnallisuutta. Yksinkertainen favicon sopii tähän estetiikkaan ja vahvistaa tunnistettavuutta välilehdissä, kirjanmerkeissä ja puhelimen aloitusnäytössä. Kun käyttäjällä on kymmenen tai enemmän välilehteä auki, favicon on ainoa näkyvä elementti, joka tunnistaa verkkosivuston.</p><p class=\"text-mid mb-4\">Visuaalinen yhdenmukaisuus faviconin ja logon välillä parantaa brändin muistamista. Yksinkertaistettu versio logosta tai sen ensimmäinen kirjain toimii parhaiten pienissä pikselikokoissa. Faviconin värien tulisi vastata yrityksen graafista ohjeistoa.</p><p class=\"text-mid mb-4\">Verkkokauppa-alustoja kuten Vilkas, MyCashflow ja WooCommerce käytetään laajasti Suomessa. Favicon asetetaan teeman asetuksissa. Ammattimaisella faviconilla varustetut verkkokaupat viestivät luotettavuutta ja erottuvat hintavertailusivuilla.</p><p class=\"text-mid\">Saavutettavuuslaki (Laki digitaalisten palvelujen tarjoamisesta) edellyttää riittävää kontrastia kaikissa visuaalisissa elementeissä julkisten organisaatioiden verkkosivuilla. Favicon on oltava luettavissa sekä vaaleassa että tummassa tilassa. Kontrastiset värit ja yksinkertaiset muodot täyttävät tämän vaatimuksen luotettavasti.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Favicon PWA:lle ja mobiililaitteille",
+      "html": "<p class=\"text-mid mb-4\">Progressive Web Apps vaativat lisäkuvakkeita standardifaviconin lisäksi. Manifest.json-tiedoston on sisällettävä kuvakejoukko kokoina 192×192 ja 512×512 pikseliä PNG-muodossa.</p><p class=\"text-mid mb-4\">Maskable-kuvakkeet ovat erityinen kuvaketyyppi Android-laitteille. Käyttöjärjestelmä rajaa maskable-kuvakkeet eri muotoihin — ympyröiksi, pyöristetyiksi neliöiksi tai pisaroiksi. Turvavyöhyke kattaa kuvan sisemmät 80 prosenttia. Kaikkien olennaisten graafisten elementtien on sijaittava tämän vyöhykkeen sisällä rajauksen välttämiseksi.</p><p class=\"text-mid mb-4\">Apple vaatii erillisen apple-touch-icon-tiedoston kooltaan 180×180 pikseliä. Tämä tiedosto on ilmoitettava HTML-head-osiossa — iOS ei lue sitä manifest-tiedostosta.</p><p class=\"text-mid mb-4\">Suomessa älypuhelinten käyttöaste on Euroopan korkeimpia. Suomalaiset pankit kuten OP ja Nordea tarjoavat sovelluksen kaltaisia kokemuksia selaimen kautta. PWA-teknologia mahdollistaa nopean pääsyn puhelimen aloitusnäytöltä ilman asennusta sovelluskaupasta.</p><p class=\"text-mid\">Lighthouse-tarkastus Chrome DevToolsissa varmistaa faviconin ja PWA-kuvakkeiden olemassaolon ja oikeellisuuden. Puuttuva tai virheellinen favicon aiheuttaa varoituksen PWA-kategoriassa.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset favicon-generaattorista",
       "openByDefault": 1,

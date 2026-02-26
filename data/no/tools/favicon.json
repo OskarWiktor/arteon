@@ -273,6 +273,25 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Favicon i Googles søkeresultater",
+      "html": "<p class=\"text-mid mb-4\">Google viser favicons ved siden av nettstedets URL i søkeresultatene. Mobile søkeresultater har vist favicons siden 2019. Skrivebordsresultater fulgte i januar 2020. Favicon er dermed et synlig merkevarelement i hvert Google-søk.</p><p class=\"text-mid mb-4\">Google stiller spesifikke krav til visning av favicons. Ikonet må være minst 48×48 piksler. Det må være kvadratisk. Bildet må være tydelig synlig på hvit bakgrunn. Google avviser ikoner med upassende eller tomt innhold.</p><p class=\"text-mid mb-4\">Googlebot crawler og indekserer favicons uavhengig av sideinnholdet. Oppdatering av favicon i søkeresultatene kan ta flere dager til uker. Favicon-filen må ikke være blokkert i robots.txt — ellers kan Google ikke hente den nye versjonen.</p><p class=\"text-mid\">Bing viser også favicons i sine søkeresultater. DuckDuckGo viser nettstedikoner ved siden av hver resultatlenke. Et komplett sett med favicons sikrer et enhetlig merkevareutseende i alle store søkemotorer. Brukere gjenkjenner kjente favicons raskere, noe som bidrar til høyere klikkfrekvens.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Favicon og merkevareidentitet i Norge",
+      "html": "<p class=\"text-mid mb-4\">Norsk designtradisjon verdsetter renhet og funksjonalitet. Et rent og enkelt favicon gjenspeiler disse verdiene og styrker gjenkjennelsen i nettleserfaner, bokmerker og på mobilens startskjerm. Når en bruker har ti eller flere faner åpne, forblir favicon det eneste synlige elementet som identifiserer nettstedet.</p><p class=\"text-mid mb-4\">Visuell konsistens mellom favicon og logo forbedrer merkevaregjenkjennelsen. En forenklet versjon av logoen eller den første bokstaven fungerer best ved små pikselstørrelser. Fargene i favicon bør samsvare med bedriftens grafiske profil.</p><p class=\"text-mid mb-4\">Norske netthandelsplattformer som Mystore og WooCommerce støtter favicon-konfigurasjon i temainnstillingene. Nettbutikker med et profesjonelt favicon signaliserer troverdighet og skiller seg ut på prissammenligningssider.</p><p class=\"text-mid\">Universell utforming er lovpålagt i Norge gjennom likestillings- og diskrimineringsloven. Alle visuelle elementer på offentlige nettsteder må ha tilstrekkelig kontrast. Favicon må være lesbart i både lys og mørk modus. Kontrastrike farger og enkle former oppfyller dette kravet på en pålitelig måte.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Favicon for PWA og mobile enheter",
+      "html": "<p class=\"text-mid mb-4\">Progressive Web Apps krever ytterligere ikoner utover standard favicon. Filen manifest.json må inneholde et ikonarray med størrelsene 192×192 og 512×512 piksler i PNG-format.</p><p class=\"text-mid mb-4\">Maskable icons er en spesiell ikontype for Android-enheter. Operativsystemet beskjærer maskable icons til ulike former — sirkler, avrundede firkanter eller dråper. Den sikre sonen dekker de indre 80 prosentene av bildeflaten. Alle vesentlige grafiske elementer må ligge innenfor denne sonen for å unngå beskjæring.</p><p class=\"text-mid mb-4\">Apple krever en separat apple-touch-icon-fil på 180×180 piksler. Denne filen må deklareres i HTML-hodet — iOS leser den ikke fra manifestfilen.</p><p class=\"text-mid mb-4\">Norge har svært høy smarttelefonpenetrasjon. Norske banker som DNB og SpareBank 1 tilbyr app-lignende opplevelser via nettleseren. PWA-teknologien muliggjør rask tilgang fra telefonens startskjerm uten installasjon via en appbutikk.</p><p class=\"text-mid\">Lighthouse-revisjon i Chrome DevTools kontrollerer tilstedeværelsen og gyldigheten av favicon og PWA-ikoner. Et manglende eller ugyldig favicon genererer en advarsel i PWA-kategorien i revisjonen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stilte spørsmål om favicon-generatoren",
       "openByDefault": 1,
