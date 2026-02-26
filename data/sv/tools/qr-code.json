@@ -369,6 +369,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "QR-koder for betalningar i Sverige - Swish och Bankgirot",
+      "html": "<p class=\"text-mid mb-4\">I Sverige har Swish blivit det dominerande mobila betalningssystemet. Swish anvander QR-koder som ett av sina betalningssatt: butiker, restauranger och marknadsstand visar en QR-kod pa disken eller skermen. Kunden skannar koden med Swish-appen och bekraftar beloppet. Detta ar sarskilt praktiskt pa marknader, evenemang och mindre foretag dar kortterminaler inte alltid finns tillgangliga.</p><p class=\"text-mid mb-4\">For fakturor och bankoverforingar stoder svenska banker EPC QR-standarden (European Payments Council). En QR-kod pa fakturan innehaller mottagarens bankkontonummer, belopp och betalningsreferens. Kunden skannar koden med sin bankapp och bekraftar den forifyllda overforingen. Handelsbanken, SEB, Swedbank och Nordea stoder denna funktion i sina mobilappar.</p><p class=\"text-mid\">For foretag innebar det att en QR-kod pa fakturan forkortar betalningscykeln avsevart. Kunder behover inte skriva av kontonummer manuellt, vilket minskar risken for fel. Det ar sarskilt vardefullt for egenforetagare, hantverkare och smaforetagare som regelbundet skickar fakturor.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "QR-koder i svensk marknadsforing och besoksnaring",
+      "html": "<p class=\"text-mid mb-4\">Svenska restauranger och kaféer behovde QR-menyer under COVID-19-pandemin, och manga har behallit losningen. En QR-kod pa bordet leder gasten till en digital meny som kan uppdateras i realtid - sarskilt praktiskt for lunchrestauranger med dagliga rattar och sasongsmenyer.</p><p class=\"text-mid mb-4\">Inom turism anvander museer, kulturarvsplatser och turistbyraer QR-koder pa informationsskyltar. Besokaren skannar koden och far tillgang till detaljerade beskrivningar, ljudguider och interaktiva kartor pa flera sprak. Pa Tradera och andra svenska marknadsplatser kan saljare placera QR-koder pa forpackningar med lankar till produktsidor eller returinstruktioner.</p><p class=\"text-mid\">For lokal marknadsforing placerar foretagare QR-koder pa skyltfonster, flygblad och reklamskyltar. En kod med lank till Google Foretagsprofil, bokningssida eller specialerbjudande gor det enkelt for forbipasserande att ta kontakt - aven utanfor oppettiderna.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Regler och dataskydd for QR-koder i Sverige",
+      "html": "<p class=\"text-mid mb-4\">QR-koder som innehaller personuppgifter - till exempel visitkort med namn, telefonnummer och e-postadress - omfattas av dataskyddsforordningen (GDPR). Integritetsskyddsmyndigheten (IMY) rekommenderar att tillämpa principen om uppgiftsminimering: koda bara de uppgifter i QR-koden som ar absolut nodvandiga for det avsedda andamalet.</p><p class=\"text-mid mb-4\">Webbsidor som nas via en QR-kod maste uppfylla svenska lagkrav: integritetspolicy, cookiepolicy och samtyckesbanderoll. Anvandaren som skannar en QR-kod och landar pa en webbplats maste informeras om behandlingen av sina personuppgifter i enlighet med GDPR.</p><p class=\"text-mid\">For foretag som skickar fakturor med QR-koder maste de kodade uppgifterna overensstamma med den tryckta informationen pa dokumentet. Svensk konsumentlagstiftning skyddar koparen mot vilseledande information: innehallet som ar tillgangligt via QR-koden maste vara korrekt och aktuellt.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanliga frågor om QR-kodgeneratorn",
       "openByDefault": 1,

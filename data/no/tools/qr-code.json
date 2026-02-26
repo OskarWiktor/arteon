@@ -369,6 +369,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "QR-koder for betalinger i Norge - Vipps og bankoverforinger",
+      "html": "<p class=\"text-mid mb-4\">I Norge er Vipps den mest brukte mobile betalingslosningen. Vipps stotter QR-koder som betalingsmetode: butikker, restauranter og markedsboder viser en QR-kode pa disken eller skjermen. Kunden skanner koden med Vipps-appen og bekrefter belopet. Dette er saerlig praktisk pa markeder, festivaler og hos mindre bedrifter uten kortterminal.</p><p class=\"text-mid mb-4\">For fakturaer og bankoverforinger stotter norske banker EPC QR-standarden (European Payments Council). En QR-kode pa fakturaen inneholder mottakerens kontonummer, belop og betalingsreferanse. Kunden skanner koden med bankappen sin og bekrefter den forhåndsutfylte overforingen. DNB, Nordea, SpareBank 1 og Handelsbanken stotter denne funksjonen i sine mobilapper.</p><p class=\"text-mid\">For bedrifter betyr dette at en QR-kode pa fakturaen forkorter betalingssyklusen betraktelig. Kunder trenger ikke taste kontonumre manuelt, noe som reduserer risikoen for feil. Det er saerlig verdifullt for selvstendig naeringsdrivende, handverkere og smabedrifter som regelmessig sender fakturaer.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "QR-koder i norsk markedsforing og reiseliv",
+      "html": "<p class=\"text-mid mb-4\">Norske restauranter og kaféer tok i bruk QR-menyer under COVID-19-pandemien, og mange har beholdt losningen. En QR-kode pa bordet leder gjesten til en digital meny som kan oppdateres i sanntid. Det er saerlig praktisk for lunsjrestauranter med daglige retter og sesongmenyer.</p><p class=\"text-mid mb-4\">Innen reiseliv bruker museer, kulturminnestaeder og turistkontorer QR-koder pa informasjonsskilt. Den besoekende skanner koden og far tilgang til detaljerte beskrivelser, lydguider og interaktive kart pa flere sprak. Pa FINN.no og andre norske markedsplasser kan selgere plassere QR-koder pa emballasje med lenker til produktsider eller returinstruksjoner.</p><p class=\"text-mid\">For lokal markedsforing plasserer bedrifter QR-koder pa butikkvinduer, flyere og reklameskilt. En kode med lenke til Google Bedriftsprofil, bookingside eller spesialtilbud gjor det enkelt for forbipasserende a ta kontakt - ogsa utenfor apningstidene.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Regler og personvern for QR-koder i Norge",
+      "html": "<p class=\"text-mid mb-4\">QR-koder som inneholder personopplysninger - for eksempel visittkort med navn, telefonnummer og e-postadresse - er underlagt personvernforordningen (GDPR). Datatilsynet anbefaler a anvende prinsippet om dataminimering: kod bare de opplysningene i QR-koden som er absolutt nodvendige for det tiltenkte formalet.</p><p class=\"text-mid mb-4\">Nettsider som er tilgjengelige via en QR-kode, ma oppfylle norske lovkrav: personvernerklaering, informasjonskapselpolicy og samtykkebanner. Brukeren som skanner en QR-kode og havner pa en nettside, ma informeres om behandlingen av sine personopplysninger i samsvar med GDPR.</p><p class=\"text-mid\">For bedrifter som sender fakturaer med QR-koder, ma de kodede opplysningene stemme overens med den trykte informasjonen pa dokumentet. Norsk forbrukerlovgivning beskytter kjoperen mot villedende informasjon: innholdet som er tilgjengelig via QR-koden, ma vaere korrekt og oppdatert.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stilte spørsmål om QR-kode-generatoren",
       "openByDefault": 1,

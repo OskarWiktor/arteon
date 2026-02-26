@@ -394,6 +394,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "QR-codes voor betalingen in Nederland en Belgie",
+      "html": "<p class=\"text-mid mb-4\">In Nederland heeft iDEAL een QR-variant gelanceerd waarmee klanten betalingen kunnen starten door een code te scannen met hun banking-app. De code bevat het rekeningnummer van de ontvanger, het bedrag en de betalingsreferentie. Dit maakt handmatige invoer van IBAN-nummers overbodig en vermindert fouten bij overschrijvingen.</p><p class=\"text-mid mb-4\">Tikkie, de populaire betaalapp van ABN AMRO, maakt eveneens gebruik van QR-codes. Gebruikers kunnen een betaalverzoek delen als QR-code op een scherm, poster of factuur. De ontvanger scant de code en wordt doorgestuurd naar de betaalpagina. In Belgie biedt Payconiq vergelijkbare functionaliteit: winkels en horecagelegenheden tonen een QR-code op de toonbank of tafel voor contactloos betalen.</p><p class=\"text-mid\">Het EPC QR-standaard (European Payments Council) wordt door de meeste Nederlandse en Belgische banken ondersteund voor SEPA-overboekingen. Een QR-code op een factuur met de IBAN, het bedrag en de referentie verkort de betalingscyclus aanzienlijk. Dit is vooral nuttig voor zzp'ers, kleine bedrijven en horecaondernemers die regelmatig facturen versturen.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "QR-codes in marketing, horeca en evenementen in de Benelux",
+      "html": "<p class=\"text-mid mb-4\">Nederlandse en Belgische restaurants hebben QR-menus breed omarmd sinds de COVID-19-pandemie. Een QR-code op de tafel leidt gasten naar een digitale menukaart die in realtime kan worden bijgewerkt. Dit bespaart drukkosten en maakt het mogelijk om seizoensgerechten, dagmenu's en allergeeninformatie direct aan te passen.</p><p class=\"text-mid mb-4\">Op festivals, beurzen en evenementen in de Benelux vervangen QR-codes op badges en polsbandjes de traditionele papieren tickets. Bezoekers scannen hun code bij de ingang voor snelle toegangscontrole. Bol.com en andere webwinkels plaatsen QR-codes op verpakkingen met links naar retourinstructies, productrecensies of loyaliteitsprogramma's.</p><p class=\"text-mid\">Voor lokale marketing plaatsen ondernemers QR-codes op etalages, flyers en reclameborden. Een code met een link naar het Google Bedrijfsprofiel, een reserveringspagina of een speciale aanbieding maakt het voor voorbijgangers gemakkelijk om contact op te nemen - ook buiten openingstijden.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Regelgeving en gegevensbescherming voor QR-codes in de Benelux",
+      "html": "<p class=\"text-mid mb-4\">QR-codes die persoonsgegevens bevatten - bijvoorbeeld visitekaartjes met naam, telefoonnummer en e-mailadres - vallen onder de Algemene Verordening Gegevensbescherming (AVG). De Autoriteit Persoonsgegevens (AP) in Nederland en de Gegevensbeschermingsautoriteit (GBA) in Belgie bevelen aan om het beginsel van dataminimalisatie toe te passen: codeer in de QR-code alleen de gegevens die strikt noodzakelijk zijn voor het beoogde doel.</p><p class=\"text-mid mb-4\">Webpagina's die via een QR-code bereikbaar zijn, moeten voldoen aan de wettelijke verplichtingen: privacyverklaring, cookiebeleid en toestemmingsbanner. De gebruiker die een QR-code scant en op een website terechtkomt, moet worden geinformeerd over de verwerking van zijn persoonsgegevens conform de AVG.</p><p class=\"text-mid\">Voor bedrijven die facturen met QR-codes versturen, moeten de gecodeerde gegevens overeenkomen met de gedrukte informatie op het document. De Nederlandse en Belgische consumentenwetgeving beschermt de koper tegen misleidende informatie: de inhoud die via de QR-code toegankelijk is, moet nauwkeurig en actueel zijn.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Veelgestelde vragen over de QR-code generator",
       "openByDefault": 1,

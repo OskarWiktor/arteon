@@ -397,6 +397,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Codici QR nei pagamenti e nella fatturazione elettronica in Italia",
+      "html": "<p class=\"text-mid mb-4\">In Italia i codici QR sono diventati parte integrante del sistema dei pagamenti pubblici. PagoPA, la piattaforma nazionale per i pagamenti verso la Pubblica Amministrazione, utilizza codici QR sugli avvisi di pagamento. Il cittadino scansiona il codice con l'app della banca o con l'app IO e completa il pagamento di tributi, bolli, multe e servizi comunali senza digitare manualmente i dati.</p><p class=\"text-mid mb-4\">La fattura elettronica, obbligatoria in Italia dal 2019 per tutte le operazioni B2B e B2C, puo includere un codice QR per la verifica fiscale. Il codice contiene il numero di fattura, la partita IVA dell'emittente e del destinatario, e l'importo totale. Questo sistema facilita i controlli da parte dell'Agenzia delle Entrate e velocizza la riconciliazione dei pagamenti.</p><p class=\"text-mid\">Per i professionisti e le piccole imprese italiane, un codice QR sulla fattura con i dati IBAN e l'importo precompilato riduce i tempi di incasso. Il cliente scansiona il codice con l'app bancaria e conferma il bonifico SEPA in pochi secondi, eliminando errori di trascrizione.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Codici QR nel marketing, turismo e agroalimentare in Italia",
+      "html": "<p class=\"text-mid mb-4\">L'Italia, con il suo patrimonio culturale e gastronomico, offre numerose opportunita per l'utilizzo dei codici QR. I musei, i siti archeologici e i monumenti UNESCO utilizzano codici QR accanto alle opere e ai pannelli informativi. Il visitatore scansiona il codice e accede a descrizioni dettagliate, audioguide multilingue e contenuti di approfondimento.</p><p class=\"text-mid mb-4\">Nel settore agroalimentare, i codici QR sulle etichette dei prodotti DOP (Denominazione di Origine Protetta) e IGP (Indicazione Geografica Protetta) consentono al consumatore di verificare la filiera produttiva. Il codice rimanda alla scheda del prodotto con informazioni su origine, metodo di produzione e certificazioni. Questo rafforza la trasparenza e la fiducia del consumatore nei prodotti italiani di qualita.</p><p class=\"text-mid\">Nella ristorazione, i menu digitali con codice QR sono diffusi in tutta Italia. Bar, ristoranti e pizzerie li utilizzano per aggiornare menu e prezzi in tempo reale. Per il marketing locale, un codice QR su un volantino o una vetrina indirizza i clienti verso offerte speciali, pagine di prenotazione o profili Google dell'attivita.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Normative e protezione dei dati per i codici QR in Italia",
+      "html": "<p class=\"text-mid mb-4\">I codici QR che contengono dati personali - ad esempio biglietti da visita vCard con nome, telefono e indirizzo e-mail - sono soggetti al Regolamento Generale sulla Protezione dei Dati (GDPR). Il Garante per la protezione dei dati personali raccomanda di applicare il principio di minimizzazione: nel codice QR vanno inseriti solo i dati strettamente necessari per lo scopo previsto.</p><p class=\"text-mid mb-4\">Le pagine web raggiungibili tramite codice QR devono rispettare gli obblighi di legge italiani: informativa sulla privacy, cookie policy e banner di consenso. L'utente che scansiona un codice QR e atterra su un sito web deve essere informato sul trattamento dei propri dati personali in conformita al GDPR e al Codice della Privacy italiano.</p><p class=\"text-mid\">Per la tracciabilita alimentare, i codici QR sulle confezioni dei prodotti devono contenere informazioni accurate e aggiornate. Il Codice del Consumo italiano tutela l'acquirente da informazioni fuorvianti: il contenuto accessibile tramite QR deve corrispondere alle caratteristiche reali del prodotto.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Domande frequenti sul generatore di codici QR",
       "openByDefault": 1,

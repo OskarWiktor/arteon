@@ -354,6 +354,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "GiroCode und EPC-QR - QR-Codes für SEPA-Überweisungen im DACH-Raum",
+      "html": "<p class=\"text-mid mb-4\">Im deutschsprachigen Raum hat sich der EPC-QR-Standard (European Payments Council) als praktisches Zahlungsmittel etabliert. In Deutschland wird er unter dem Namen GiroCode vermarktet und von Sparkassen, Volksbanken, der Deutschen Bank und weiteren Kreditinstituten unterstützt. Der QR-Code enthält die IBAN des Empfängers, den Überweisungsbetrag, den Verwendungszweck und optional den BIC. Der Kunde scannt den Code mit seiner Banking-App und bestätigt die vorausgefüllte Überweisung.</p><p class=\"text-mid mb-4\">In Österreich unterstützen Raiffeisenbanken und die Erste Bank den EPC-QR-Standard ebenfalls. In der Schweiz ergänzt der Swiss QR Code auf Einzahlungsscheinen das System: Seit 2020 hat er die klassischen Einzahlungsscheine vollständig abgelöst. Der Swiss QR Code enthält alle Zahlungsinformationen und wird von allen Schweizer Banken akzeptiert.</p><p class=\"text-mid\">Für Unternehmen im DACH-Raum bedeutet das: Ein QR-Code auf der Rechnung verkürzt den Zahlungszyklus erheblich. Kunden müssen keine Kontonummern abtippen und machen weniger Fehler bei der Überweisung. Das ist besonders nützlich für Freiberufler, Handwerker und kleine Betriebe, die regelmässig Rechnungen stellen.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "QR-Codes im deutschen Marketing und Einzelhandel",
+      "html": "<p class=\"text-mid mb-4\">In Deutschland nutzen Unternehmen QR-Codes in vielen Bereichen des täglichen Geschäftslebens. Die Deutsche Bahn druckt QR-Codes auf Online-Tickets und Fahrkarten, die am Bahnsteig oder im Zug gescannt werden. Restaurants und Cafes setzen digitale Speisekarten mit QR-Codes ein - ein Trend, der seit der COVID-19-Pandemie bestehen geblieben ist.</p><p class=\"text-mid mb-4\">Im Einzelhandel erscheinen QR-Codes auf Produktverpackungen mit Links zu Bedienungsanleitungen, Garantieinformationen oder Kundenbewertungen. Auf Messen und Veranstaltungen ersetzen QR-Codes auf Namensschildern den Austausch gedruckter Visitenkarten. Der Empfänger scannt den vCard-Code und speichert den Kontakt direkt im Smartphone.</p><p class=\"text-mid\">Lokale Unternehmen nutzen QR-Codes auf Flyern, Plakaten und Schaufenstern. Ein Code mit Link zum Google-Unternehmensprofil oder zur Terminbuchung erleichtert Kunden den Kontakt - besonders ausserhalb der Geschäftszeiten.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Datenschutz und rechtliche Aspekte von QR-Codes in Deutschland",
+      "html": "<p class=\"text-mid mb-4\">QR-Codes, die personenbezogene Daten enthalten - etwa vCard-Visitenkarten mit Name, Telefonnummer und E-Mail-Adresse - unterliegen der Datenschutz-Grundverordnung (DSGVO). Wer solche Codes erstellt und verbreitet, ist als Verantwortlicher für die enthaltenen Daten zu betrachten. Der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI) empfiehlt, nur die unbedingt notwendigen Daten in einen QR-Code aufzunehmen.</p><p class=\"text-mid mb-4\">Bei QR-Codes mit URLs ist zu beachten, dass die verlinkte Webseite den gesetzlichen Anforderungen entsprechen muss: Impressumspflicht nach TMG, Datenschutzerklärung und Cookie-Consent. Nutzer, die einen QR-Code scannen und auf eine Webseite gelangen, müssen dort ordnungsgemäss über die Datenverarbeitung informiert werden.</p><p class=\"text-mid\">Für geschäftliche Rechnungen mit QR-Codes gelten die GoBD (Grundsätze zur ordnungsmässigen Führung und Aufbewahrung von Büchern). Der QR-Code auf einer Rechnung darf die steuerrelevanten Angaben nicht verfälschen und muss mit den gedruckten Rechnungsdaten übereinstimmen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Häufig gestellte Fragen zum QR-Code-Generator",
       "openByDefault": 1,

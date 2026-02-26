@@ -369,6 +369,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "QR-koodit maksuissa ja laskutuksessa Suomessa",
+      "html": "<p class=\"text-mid mb-4\">Suomessa MobilePay ja Siirto ovat yleisimmat mobiilimaksujarjestelmat. MobilePay tukee QR-koodeja maksutapana: kaupat, ravintolat ja torikauppiaat nayttavat QR-koodin tiskilla tai naytolla. Asiakas skannaa koodin MobilePay-sovelluksella ja vahvistaa summan. Tama on erityisen kaytannollista markkinoilla, tapahtumissa ja pienyrityksissa, joilla ei ole korttipaatetta.</p><p class=\"text-mid mb-4\">Laskuissa ja tilisiirroissa suomalaiset pankit tukevat EPC QR -standardia (European Payments Council). Laskuun tulostettu QR-koodi sisaltaa vastaanottajan tilinumeron, summan ja maksuviitteen. Asiakas skannaa koodin pankkisovelluksellaan ja vahvistaa esitaytetyn siirron. Nordea, OP, Danske Bank ja S-Pankki tukevat tata toimintoa mobiilisovelluksissaan.</p><p class=\"text-mid\">Yrityksille tama tarkoittaa, etta QR-koodi laskussa lyhentaa maksuaikaa merkittavasti. Asiakkaiden ei tarvitse syottaa tilinumeroita kasiin, mika vahentaa virheiden riskia. Se on erityisen arvokasta yrittajille, kasitoilaisille ja pienyrityksille, jotka lahettavat laskuja saannollisesti.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "QR-koodit suomalaisessa markkinoinnissa ja matkailussa",
+      "html": "<p class=\"text-mid mb-4\">Suomalaiset ravintolat ja kahvilat ottivat QR-menut kayttoon COVID-19-pandemian aikana, ja monet ovat sailyttaneet ratkaisun. QR-koodi poydassa ohjaa vieraan digitaaliseen menuun, jota voidaan paivittaa reaaliajassa. Tama on erityisen kaytannollista lounasravintoloille, joissa paivan tarjoukset ja kausiruoat vaihtuvat usein.</p><p class=\"text-mid mb-4\">Matkailualalla museot, kulttuurikohteet ja matkailutoimistot kayttavat QR-koodeja opastauluissa. Kavijaenskannaa koodin ja saa kayttoonsa yksityiskohtaisia kuvauksia, aanioppaita ja interaktiivisia karttoja useilla kielilla. Tori.fi:ssa ja muilla suomalaisilla markkinapaikoilla myyjat voivat sijoittaa QR-koodeja pakkauksiin, jotka linkittavat tuotesivuille tai palautusohjeisiin.</p><p class=\"text-mid\">Paikallisessa markkinoinnissa yrittajat sijoittavat QR-koodeja nayteikkunoihin, esitteisiin ja mainoskyltteihin. Koodi, jossa on linkki Google Yritysprofiilin, varaussivulle tai erikoistarjoukseen, helpottaa ohikulkijoiden yhteydenottoa - myos aukioloaikojen ulkopuolella.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Saannokset ja tietosuoja QR-koodeille Suomessa",
+      "html": "<p class=\"text-mid mb-4\">QR-koodit, jotka sisaltavat henkilotietoja - esimerkiksi kayntikortit, joissa on nimi, puhelinnumero ja sahkopostiosoite - kuuluvat yleisen tietosuoja-asetuksen (GDPR) piiriin. Tietosuojavaltuutetun toimisto suosittelee tietojen minimoinnin periaatteen soveltamista: QR-koodiin tulee sisallyttaa vain ne tiedot, jotka ovat valttamattomia aiottuun tarkoitukseen.</p><p class=\"text-mid mb-4\">QR-koodin kautta saavutettavien verkkosivujen on taytettava Suomen lainsaadannon vaatimukset: tietosuojaseloste, evastekaytanto ja suostumusbanneri. Kayttaja, joka skannaa QR-koodin ja patyy verkkosivustolle, on informoitava henkilotietojensa kasittelysta GDPR:n mukaisesti.</p><p class=\"text-mid\">Yrityksille, jotka lahettavat laskuja QR-koodeilla, koodattujen tietojen on vastattava asiakirjaan painettuja tietoja. Suomen kuluttajansuojalainsaadanto suojaa ostajaa harhaanjohtavilta tiedoilta: QR-koodin kautta saatavilla olevan sisallon on oltava tarkkaa ja ajantasaista.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset QR-koodigeneraattorista",
       "openByDefault": 1,

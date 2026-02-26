@@ -397,6 +397,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Codigos QR nos pagamentos e faturacao em Portugal e no Brasil",
+      "html": "<p class=\"text-mid mb-4\">Em Portugal, o MB WAY tornou-se o principal sistema de pagamentos moveis. Embora o MB WAY funcione principalmente com numeros de telefone, os codigos QR complementam o ecossistema financeiro portugues. O padrao EPC QR (European Payments Council) permite codificar o IBAN do beneficiario, o montante e a referencia de pagamento num codigo bidimensional. Bancos como a Caixa Geral de Depositos, o Millennium BCP e o Novo Banco suportam a leitura de codigos EPC QR nas suas aplicacoes moveis.</p><p class=\"text-mid mb-4\">A fatura eletronica em Portugal, obrigatoria para transacoes com a Administracao Publica e progressivamente alargada ao setor privado, pode incluir codigos QR com os dados de pagamento. O cliente digitaliza o codigo com a aplicacao bancaria e confirma a transferencia pre-preenchida, eliminando erros na transcricao de numeros de conta.</p><p class=\"text-mid\">No Brasil, o Pix revolucionou os pagamentos instantaneos desde 2020. O sistema do Banco Central utiliza codigos QR como metodo principal de pagamento em comercios fisicos e online. O comerciante exibe um codigo QR estatico (valor fixo) ou dinamico (valor variavel), e o cliente digitaliza-o com a aplicacao bancaria para concluir a transacao em segundos.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Codigos QR no marketing, turismo e restauracao no mundo lusofono",
+      "html": "<p class=\"text-mid mb-4\">Os restaurantes e cafes portugueses adotaram amplamente os menus QR durante a pandemia de COVID-19. Em zonas turisticas como Lisboa, Porto e o Algarve, os menus digitais com codigo QR oferecem frequentemente versoes em varios idiomas para os visitantes internacionais. Esta solucao permite atualizar pratos e precos em tempo real sem reimprimir as ementas.</p><p class=\"text-mid mb-4\">No enoturismo, as quintas e adegas do Douro, Alentejo e Dao utilizam codigos QR nas etiquetas das garrafas. O codigo direciona para a ficha tecnica do vinho: casta, ano de colheita, notas de prova e sugestoes de harmonizacao. Os postos de turismo e monumentos historicos colocam codigos QR nos paineis informativos para oferecer conteudos multilingues, audioguias e mapas interativos.</p><p class=\"text-mid\">Para o marketing local, um codigo QR num folheto, montra ou cartaz publicitario direciona o cliente para uma oferta especial, pagina de reservas ou perfil do Google Business. Em feiras profissionais e eventos, os codigos QR nos crachas substituem a troca de cartoes de visita impressos.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Regulamentacao e protecao de dados para codigos QR em Portugal",
+      "html": "<p class=\"text-mid mb-4\">Os codigos QR que contem dados pessoais - por exemplo, cartoes de visita vCard com nome, telefone e endereco de e-mail - estao sujeitos ao Regulamento Geral sobre a Protecao de Dados (RGPD). A Comissao Nacional de Protecao de Dados (CNPD) recomenda a aplicacao do principio de minimizacao: incluir no codigo QR apenas os dados estritamente necessarios para a finalidade prevista.</p><p class=\"text-mid mb-4\">As paginas web acessiveis atraves de um codigo QR devem cumprir as obrigacoes legais portuguesas: politica de privacidade, politica de cookies e banner de consentimento. O utilizador que digitaliza um codigo QR e acede a um site deve ser informado sobre o tratamento dos seus dados pessoais em conformidade com o RGPD.</p><p class=\"text-mid\">Para as empresas que emitem faturas com codigo QR, os dados codificados devem corresponder a informacao impressa no documento. A legislacao portuguesa de defesa do consumidor protege o comprador contra informacoes enganosas: o conteudo acessivel atraves do codigo QR deve ser preciso e atualizado.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Perguntas frequentes sobre o gerador de códigos QR",
       "openByDefault": 1,

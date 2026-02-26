@@ -394,6 +394,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Coduri QR in plati si facturare in Romania",
+      "html": "<p class=\"text-mid mb-4\">In Romania, codurile QR castiga teren in tranzactiile financiare. Bancile romanesti - BRD, BCR, ING, Raiffeisen, Banca Transilvania - sustin standardul EPC QR (European Payments Council) pentru transferurile SEPA. Codul QR de pe factura contine IBAN-ul beneficiarului, suma si referinta de plata. Clientul scaneaza codul cu aplicatia bancara si confirma transferul precompletat, fara a introduce manual numere de cont.</p><p class=\"text-mid mb-4\">Sistemul e-Factura, obligatoriu in Romania pentru tranzactiile B2B si B2G, poate include coduri QR pentru verificarea autenticitatii documentului. Destinatarul scaneaza codul si verifica datele facturii direct in sistemul ANAF. Acest lucru accelereaza procesarea platilor si reduce erorile de transcriere.</p><p class=\"text-mid\">Pentru intreprinderile mici si mijlocii, liber-profesionisti si mestesugari, un cod QR pe factura cu datele IBAN si suma precompletata reduce timpul de incasare. Clientul scaneaza codul cu aplicatia bancara si confirma transferul SEPA in cateva secunde.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Coduri QR in marketingul si turismul din Romania",
+      "html": "<p class=\"text-mid mb-4\">Restaurantele si cafenelele romanesti au adoptat pe scara larga meniurile QR in timpul pandemiei COVID-19. In zonele turistice precum Bucuresti, Brasov, Sibiu si litoralul Marii Negre, meniurile digitale cu cod QR ofera frecvent versiuni in mai multe limbi pentru vizitatorii internationali. Aceasta solutie permite actualizarea preturilor si preparatelor in timp real.</p><p class=\"text-mid mb-4\">In turismul cultural, muzeele, monumentele istorice si cetatile medievale din Transilvania utilizeaza coduri QR pe panourile informative. Vizitatorul scaneaza codul si acceseaza descrieri detaliate, ghiduri audio si continut multimedia in mai multe limbi. Pe eMAG.ro, OLX.ro si alte piete romanesti, vanzatorii pot plasa coduri QR pe ambalaje cu linkuri catre paginile de produs sau instructiunile de retur.</p><p class=\"text-mid\">Pentru marketingul local, un cod QR pe un pliant, vitrina sau panou publicitar directioneaza clientul catre o oferta speciala, pagina de rezervare sau profilul Google Business. La targuri si evenimente profesionale, codurile QR de pe ecusoane inlocuiesc schimbul de carti de vizita tiparite.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Reglementari si protectia datelor pentru coduri QR in Romania",
+      "html": "<p class=\"text-mid mb-4\">Codurile QR care contin date personale - de exemplu, carti de vizita vCard cu nume, telefon si adresa de e-mail - sunt supuse Regulamentului General privind Protectia Datelor (GDPR). Autoritatea Nationala de Supraveghere a Prelucrarii Datelor cu Caracter Personal (ANSPDCP) recomanda aplicarea principiului minimizarii datelor: in codul QR trebuie incluse doar datele strict necesare pentru scopul prevazut.</p><p class=\"text-mid mb-4\">Paginile web accesibile prin cod QR trebuie sa respecte obligatiile legale romanesti: politica de confidentialitate, politica de cookie-uri si banner de consimtamant. Utilizatorul care scaneaza un cod QR si acceseaza un site web trebuie informat despre prelucrarea datelor sale personale in conformitate cu GDPR.</p><p class=\"text-mid\">Autoritatea Nationala pentru Protectia Consumatorilor (ANPC) protejeaza cumparatorul impotriva informatiilor inselatoare. Continutul accesibil prin codul QR de pe ambalaje, facturi sau materiale publicitare trebuie sa fie precis, actualizat si in concordanta cu caracteristicile reale ale produsului sau serviciului.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Întrebări frecvente despre generatorul de coduri QR",
       "openByDefault": 1,

@@ -369,6 +369,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "QR-koder til betalinger i Danmark - MobilePay og bankoverfoersler",
+      "html": "<p class=\"text-mid mb-4\">I Danmark er MobilePay den mest udbredte mobile betalingslosning. MobilePay understotter QR-koder som betalingsmetode: butikker, restauranter og markedsstande viser en QR-kode pa disken eller skaermen. Kunden scanner koden med MobilePay-appen og bekraefter belobet. Dette er saerligt praktisk pa loppemarkeder, festivaler og hos mindre virksomheder uden kortterminaler.</p><p class=\"text-mid mb-4\">For fakturaer og bankoverfoersler understotter danske banker EPC QR-standarden (European Payments Council). En QR-kode pa fakturaen indeholder modtagerens kontonummer, belob og betalingsreference. Kunden scanner koden med sin bankapp og bekraefter den forudfyldte overfoersel. Danske Bank, Nordea, Jyske Bank og Nykredit understotter denne funktion i deres mobilapps.</p><p class=\"text-mid\">For virksomheder betyder det, at en QR-kode pa fakturaen forkorter betalingscyklussen markant. Kunder behover ikke taste kontonumre manuelt, hvilket reducerer risikoen for fejl. Det er saerligt vaerdifuldt for selvstaendige, handvaerkere og smavirksomheder, der regelmaessigt sender fakturaer.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "QR-koder i dansk markedsfoering og gastronomi",
+      "html": "<p class=\"text-mid mb-4\">Danske restauranter og caféer adopterede QR-menuer under COVID-19-pandemien, og mange har beholdt losningen. En QR-kode pa bordet leder gaesten til en digital menu, der kan opdateres i realtid. Det er saerligt praktisk for frokostrestauranter med daglige retter og saasonmenuer.</p><p class=\"text-mid mb-4\">Inden for turisme anvender museer, kulturarvsstaeder og turistkontorer QR-koder pa informationsskilte. Den besogende scanner koden og far adgang til detaljerede beskrivelser, lydguides og interaktive kort pa flere sprog. Pa DBA.dk og andre danske markedspladser kan saelgere placere QR-koder pa emballage med links til produktsider eller returinstruktioner.</p><p class=\"text-mid\">For lokal markedsfoering placerer virksomheder QR-koder pa butiksvinduer, flyers og reklameskilte. En kode med link til Google Virksomhedsprofil, bookingside eller specialtilbud goer det nemt for forbipasserende at tage kontakt - ogsa uden for abningstiderne.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Regler og databeskyttelse for QR-koder i Danmark",
+      "html": "<p class=\"text-mid mb-4\">QR-koder, der indeholder personoplysninger - for eksempel visitkort med navn, telefonnummer og e-mailadresse - er omfattet af databeskyttelsesforordningen (GDPR). Datatilsynet anbefaler at anvende princippet om dataminimering: kod kun de oplysninger i QR-koden, der er absolut nodvendige for det tilsigtede formal.</p><p class=\"text-mid mb-4\">Websider, der er tilgaengelige via en QR-kode, skal overholde danske lovkrav: privatlivspolitik, cookiepolitik og samtykkebanderoll. Brugeren, der scanner en QR-kode og lander pa en hjemmeside, skal informeres om behandlingen af sine personoplysninger i overensstemmelse med GDPR.</p><p class=\"text-mid\">For virksomheder, der sender fakturaer med QR-koder, skal de kodede oplysninger stemme overens med de trykte oplysninger pa dokumentet. Dansk forbrugerlovgivning beskytter koberen mod vildledende information: indholdet, der er tilgaengeligt via QR-koden, skal vaere korrekt og ajourfort.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om QR-kode-generatoren",
       "openByDefault": 1,

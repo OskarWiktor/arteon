@@ -401,6 +401,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kody QR w polskim biznesie - przelewy, faktury i KSeF",
+      "html": "<p class=\"text-mid mb-4\">W Polsce kody QR odgrywają rosnącą rolę w codziennych transakcjach finansowych. Standard Polski QR, stosowany przez większość banków, pozwala zakodować w dwuwymiarowym kodzie kreskowym numer IBAN, kwotę przelewu i tytuł płatności. Wystarczy zeskanować kod aparatem telefonu w aplikacji bankowej, aby automatycznie wypełnić formularz przelewu. To rozwiązanie eliminuje błędy przy ręcznym przepisywaniu numerów kont i przyspiesza realizację płatności.</p><p class=\"text-mid mb-4\">Krajowy System e-Faktur (KSeF) wprowadza obowiązek umieszczania kodów QR na fakturach ustrukturyzowanych. Kod zawiera numer faktury, NIP wystawcy i odbiorcy oraz kwotę brutto. Dzięki temu odbiorca może szybko zweryfikować autentyczność dokumentu, skanując go smartfonem. To istotna zmiana dla polskich przedsiębiorców, księgowych i biur rachunkowych.</p><p class=\"text-mid\">Warto wiedzieć, że BLIK - najpopularniejszy system płatności mobilnych w Polsce - nie korzysta z kodów QR. BLIK opiera się na jednorazowych kodach sześciocyfrowych wpisywanych ręcznie. Kody QR na przelewach bankowych i fakturach KSeF to osobny standard, niezwiązany z systemem BLIK.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kody QR w polskim marketingu i gastronomii",
+      "html": "<p class=\"text-mid mb-4\">Menu QR w polskich restauracjach i kawiarniach stały się powszechne podczas pandemii COVID-19. Wiele lokali gastronomicznych utrzymało to rozwiązanie, choć część wróciła do tradycyjnych kart menu. Kod QR na stoliku kierujący do cyfrowego menu sprawdza się szczególnie w lokalach z często zmienianą ofertą - pozwala aktualizować pozycje i ceny bez ponownego druku.</p><p class=\"text-mid mb-4\">W handlu internetowym kody QR pojawiają się na opakowaniach produktów z platformy Allegro i innych sklepów online. Sprzedawcy umieszczają kody z linkiem do strony produktu, instrukcji obsługi lub formularza zwrotu. Na wydarzeniach branżowych i konferencjach w Polsce coraz częściej stosuje się kody QR na identyfikatorach uczestników i materiałach promocyjnych.</p><p class=\"text-mid\">Lokalne firmy w mniejszych miastach wykorzystują kody QR na ulotkach i banerach reklamowych. Zakodowany numer telefonu lub link do wizytówki Google Maps ułatwia klientom kontakt z firmą po zobaczeniu reklamy na przystanku autobusowym czy tablicy ogłoszeń.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Ochrona danych osobowych i dobre praktyki QR w Polsce",
+      "html": "<p class=\"text-mid mb-4\">Kody QR zawierające dane osobowe - na przykład wizytówki vCard z imieniem, nazwiskiem, numerem telefonu i adresem e-mail - podlegają przepisom RODO (Rozporządzenie o Ochronie Danych Osobowych). Osoba, która generuje i rozpowszechnia taki kod, staje się administratorem danych osobowych w nim zawartych. Urząd Ochrony Danych Osobowych (UODO) zaleca stosowanie zasady minimalizacji: w kodzie QR należy umieszczać tylko te dane, które są niezbędne w danym kontekście.</p><p class=\"text-mid mb-4\">Przed wydrukowaniem materiałów z kodem QR warto przetestować go na kilku różnych smartfonach. Starsze telefony mogą mieć trudności z odczytem kodów o niskim kontraście lub małym rozmiarze. Dobrą praktyką jest też regularne sprawdzanie, czy docelowy link nadal działa - szczególnie gdy kod został wydrukowany na materiałach o długim cyklu życia, takich jak wizytówki lub katalogi firmowe.</p><p class=\"text-mid\">Przy kodowaniu adresów URL w kodach QR kierujących do stron firmowych należy upewnić się, że strona docelowa spełnia wymogi RODO dotyczące polityki prywatności i plików cookies. Użytkownik, który skanuje kod QR i trafia na stronę internetową, powinien zostać poinformowany o przetwarzaniu jego danych zgodnie z obowiązującymi przepisami.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Najczęstsze pytania dotyczące generatora kodów QR",
       "openByDefault": 1,

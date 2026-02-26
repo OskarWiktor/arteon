@@ -393,6 +393,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Codigos QR en pagos y facturacion en Espana y Latinoamerica",
+      "html": "<p class=\"text-mid mb-4\">En Espana, Bizum se ha convertido en el sistema de pagos moviles mas utilizado, pero su funcionamiento se basa en numeros de telefono, no en codigos QR. Sin embargo, los codigos QR estan ganando terreno en otros ambitos financieros. El estandar EPC QR (European Payments Council) permite codificar el IBAN del beneficiario, el importe y la referencia de pago en un codigo bidimensional. Bancos como CaixaBank, BBVA y Santander admiten la lectura de codigos EPC QR en sus aplicaciones moviles para transferencias SEPA.</p><p class=\"text-mid mb-4\">En el Pais Vasco, el sistema TicketBAI obliga a los comercios a generar facturas con un codigo QR de verificacion fiscal. Este codigo permite a la Hacienda Foral comprobar la autenticidad de cada transaccion. La factura electronica, progresivamente obligatoria en toda Espana, tambien integra codigos QR con los datos esenciales del pago.</p><p class=\"text-mid\">En Latinoamerica, Mercado Pago utiliza codigos QR como metodo de pago en comercios fisicos de Argentina, Mexico, Brasil y Colombia. El comerciante muestra un codigo QR impreso o en pantalla, y el cliente lo escanea con la aplicacion para completar el pago. Este sistema es especialmente popular en puestos de mercado y pequenos comercios donde no hay terminal de tarjetas.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Codigos QR en marketing, turismo y hosteleria en el mundo hispanohablante",
+      "html": "<p class=\"text-mid mb-4\">Los restaurantes y bares espanoles adoptaron masivamente los menus QR durante la pandemia de COVID-19. Muchos establecimientos mantienen esta solucion porque permite actualizar precios y platos sin reimprimir las cartas. En zonas turisticas como Barcelona, Madrid, las Islas Canarias y la Costa del Sol, los menus QR suelen ofrecer versiones en varios idiomas para los visitantes internacionales.</p><p class=\"text-mid mb-4\">En el sector turistico, los codigos QR aparecen en museos, monumentos historicos y oficinas de turismo. El visitante escanea el codigo junto a una obra o un panel informativo y accede a descripciones detalladas, audioguias y contenidos multimedia. Las bodegas y denominaciones de origen utilizan codigos QR en las etiquetas de vino para mostrar la ficha tecnica, notas de cata y maridajes recomendados.</p><p class=\"text-mid\">Para el marketing local, un codigo QR en un escaparate, un folleto o un cartel publicitario dirige al cliente hacia una oferta especial, una pagina de reservas o el perfil de Google Business del establecimiento. En ferias y eventos profesionales, los codigos QR en las acreditaciones sustituyen el intercambio de tarjetas de visita impresas.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Regulaciones y proteccion de datos para codigos QR en Espana",
+      "html": "<p class=\"text-mid mb-4\">Los codigos QR que contienen datos personales - por ejemplo, tarjetas de visita vCard con nombre, telefono y direccion de correo electronico - estan sujetos al Reglamento General de Proteccion de Datos (RGPD). La Agencia Espanola de Proteccion de Datos (AEPD) recomienda aplicar el principio de minimizacion: incluir en el codigo QR solo los datos estrictamente necesarios para el fin previsto.</p><p class=\"text-mid mb-4\">Las paginas web accesibles a traves de un codigo QR deben cumplir con la legislacion espanola: aviso legal, politica de privacidad y banner de consentimiento de cookies. La Ley de Servicios de la Sociedad de la Informacion (LSSI) exige que el usuario sea informado sobre el tratamiento de sus datos al acceder a un sitio web, independientemente de como haya llegado a el.</p><p class=\"text-mid\">Para los comercios que emiten facturas con codigo QR, los datos codificados deben coincidir con la informacion impresa en el documento. La normativa de consumo espanola protege al comprador frente a informaciones enganosas: el contenido accesible mediante el codigo QR debe ser preciso, actualizado y coherente con las caracteristicas reales del producto o servicio.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Preguntas frecuentes sobre el generador de códigos QR",
       "openByDefault": 1,

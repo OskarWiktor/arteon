@@ -397,6 +397,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Codes QR dans les paiements et la facturation en France",
+      "html": "<p class=\"text-mid mb-4\">En France, les codes QR gagnent du terrain dans les transactions financières. Le standard EPC QR (European Payments Council) permet d'encoder dans un code bidimensionnel l'IBAN du beneficiaire, le montant du virement et la reference de paiement. Les banques francaises comme BNP Paribas, Credit Agricole et Societe Generale prennent en charge la lecture des codes EPC QR dans leurs applications mobiles.</p><p class=\"text-mid mb-4\">La facturation electronique, progressivement obligatoire pour les entreprises francaises, integre de plus en plus les codes QR. Le code imprime sur la facture contient les informations de paiement essentielles : IBAN, montant TTC et reference. Le client scanne le code avec son application bancaire et valide le virement pre-rempli, sans saisie manuelle de coordonnees bancaires.</p><p class=\"text-mid\">Pour les commercants et artisans, un code QR sur le comptoir ou la facture remplace la necessite d'un terminal de paiement. C'est une solution particulierement avantageuse pour les marches, les brocantes et les petits commerces ou l'investissement dans un TPE n'est pas rentable.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Codes QR dans le marketing, le tourisme et la restauration en France",
+      "html": "<p class=\"text-mid mb-4\">Les restaurants et cafes francais ont largement adopte les menus QR depuis la pandemie de COVID-19. En France, cette pratique s'accompagne d'une obligation reglementaire : les etablissements doivent informer les clients sur la presence d'allergenes dans leurs plats. Un menu numerique accessible par code QR permet de mettre a jour ces informations en temps reel, sans reimprimer les cartes.</p><p class=\"text-mid mb-4\">Dans le secteur viticole, les domaines et chateaux utilisent des codes QR sur les etiquettes de bouteilles. Le code renvoie vers la fiche du vin : cepage, millesime, notes de degustation et accords mets-vins. Les offices de tourisme placent des codes QR sur les panneaux d'information pour diriger les visiteurs vers des contenus multilingues, des audioguides ou des plans interactifs.</p><p class=\"text-mid\">Les salons professionnels et evenements culturels en France integrent egalement les codes QR : badges d'acces, programmes numeriques, liens vers les exposants. Pour le marketing local, un code QR sur une affiche dans le metro parisien ou une vitrine de boutique dirige les passants vers une offre speciale ou une page de reservation.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Reglementation et protection des donnees pour les codes QR en France",
+      "html": "<p class=\"text-mid mb-4\">Les codes QR contenant des donnees personnelles - par exemple une carte de visite vCard avec nom, telephone et adresse e-mail - sont soumis au Reglement General sur la Protection des Donnees (RGPD). La CNIL (Commission Nationale de l'Informatique et des Libertes) recommande d'appliquer le principe de minimisation : n'encoder dans le code QR que les donnees strictement necessaires dans le contexte d'utilisation.</p><p class=\"text-mid mb-4\">Les pages web accessibles via un code QR doivent respecter les obligations legales francaises : mentions legales, politique de confidentialite et bandeau de consentement aux cookies. L'utilisateur qui scanne un code QR et accede a un site web doit etre informe du traitement de ses donnees conformement au RGPD et a la loi Informatique et Libertes.</p><p class=\"text-mid\">Pour les commercants utilisant des caisses certifiees NF525, les tickets de caisse peuvent integrer un code QR de verification. Ce code permet au client de verifier l'authenticite du ticket et au fisc de controler la conformite des transactions enregistrees.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Questions fréquentes sur le générateur de codes QR",
       "openByDefault": 1,

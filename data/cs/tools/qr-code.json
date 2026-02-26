@@ -369,6 +369,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "QR kody v platbach a fakturaci v Cesku - standard SPAYD",
+      "html": "<p class=\"text-mid mb-4\">Ceska republika ma vlastni standard pro platebni QR kody - SPAYD (Short Payment Descriptor). Tento format, vyvinuty Ceskou bankovni asociaci, umoznuje zakodovat cislo uctu ve formatu IBAN, castku, menu, variabilni symbol a zpravu pro prijemce do jednoho QR kodu. Vsechny hlavni ceske banky - Ceska sporitelna, CSOB, Komercni banka, Moneta a Fio banka - podporuji cteni SPAYD QR kodu ve svych mobilnich aplikacich.</p><p class=\"text-mid mb-4\">Pro ceske podnikatele a zivnostniky je QR kod na fakture praktickym nastrojem. Zakaznik naskenuje kod mobilni aplikaci sve banky a potvrdidpredem vyplneny prevod. Odpadaji chyby pri rucnim opisovani cisel uctu a variabilnich symbolu. To je zvlaste dulezite pro male firmy, remeslniky a freelancery, kteri pravidelne vystavuji faktury.</p><p class=\"text-mid\">SPAYD je ceska specialita, ktera neni bezne pouzivana v jinych zemich. V ramci Evropy se obvykle vyuziva standard EPC QR (European Payments Council) pro SEPA prevody. Cesky SPAYD je vsak plne kompatibilni s domacim bankovnim systemem a nabizi rozsirenejsi moznosti kodovaani - napriklad variabilni, specificky a konstantni symbol.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "QR kody v ceskem marketingu a gastronomii",
+      "html": "<p class=\"text-mid mb-4\">Ceske restaurace a kavárny siroce zavedly QR menu behem pandemie COVID-19. Mnoho provozoven si toto reseni ponechalo, protoze umoznuje aktualizovat ceny a nabidku bez opakovaneho tisku jidelnich listku. V turistickych oblastech jako Praha, Cesky Krumlov a Karlovy Vary jsou QR menu casto dostupna ve vice jazycich pro zahranicni navstevniky.</p><p class=\"text-mid mb-4\">V ceskem e-commerce se QR kody objevuji na obalazkach zasilek s odkazy na produktove stranky, navody k pouziti nebo formulare pro vraceni zbozi. Na Heureka.cz a Bazos.cz mohou prodejci vyuzivat QR kody pro snadnejsi komunikaci se zakazniky. Na veletrzich a konferencich nahrazuji QR kody na jmenovkach vymenu tistenych vizitek.</p><p class=\"text-mid\">Pro lokalni marketing umistuji podnikatele QR kody na vylohy, letaky a reklamni tabule. Kod s odkazem na Google Firemni profil, rezervacni stranku nebo aktualni nabidku umoznuje kolemjdoucim snadno navazat kontakt - i mimo oteviraci dobu.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Pravni aspekty a ochrana dat pro QR kody v Cesku",
+      "html": "<p class=\"text-mid mb-4\">QR kody obsahujici osobni udaje - napriklad vizitky vCard se jmenem, telefonem a e-mailovou adresou - podlehaji Obecnemu narizeni o ochrane osobnich udaju (GDPR). Urad pro ochranu osobnich udaju (UOOU) doporucuje uplatnovani zasady minimalizace: do QR kodu je treba zakolodat pouze ty udaje, ktere jsou nezbytne pro dany ucel.</p><p class=\"text-mid mb-4\">Webove stranky pristupne pres QR kod musi splnovat ceske pravni pozadavky: zasady ochrany soukromi, zasady cookies a souhlas se zpracovanim. Uzivatel, ktery naskenuje QR kod a dostane se na webovou stranku, musi byt informovan o zpracovani svych osobnich udaju v souladu s GDPR.</p><p class=\"text-mid\">Historicky ceska elektronicka evidence trzeb (EET) vyzadovala QR kody na uctenkach pro overeni transakci. Prestože EET byla zrusena, zkusenosti s QR kody na dokladech ovlivnily cesky obchodni zvyk a mnozi podnikatele pokracuji v pouzivani QR kodu na fakturach a uctenkach pro pohodli zakazniku.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o generátoru QR kódu",
       "openByDefault": 1,

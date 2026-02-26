@@ -394,6 +394,51 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "QR codes in mobile payments - a global overview",
+      "html": "<p class=\"text-mid mb-4\">QR codes have become a primary payment method in many parts of the world. In China, Alipay and WeChat Pay process billions of transactions monthly through QR code scanning. India's Unified Payments Interface (UPI) uses QR codes at street vendors, shops and restaurants across the country. In Brazil, the Pix instant payment system relies on QR codes for person-to-person and point-of-sale transfers.</p><p class=\"text-mid mb-4\">In Europe, the European Payments Council introduced the EPC QR standard (also called GiroCode) for SEPA bank transfers. The code embeds the recipient's IBAN, payment amount, and reference number. Banks in Germany, Austria, the Netherlands and other eurozone countries support scanning EPC QR codes directly in their mobile apps. This eliminates manual data entry and reduces transfer errors.</p><p class=\"text-mid\">QR-based payments are growing because they require no specialized hardware. A printed QR code on a countertop replaces an expensive card terminal. This makes QR payments especially attractive for small businesses, market stalls, and service providers in regions where card infrastructure is limited.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "QR codes on invoices and financial documents",
+      "html": "<p class=\"text-mid mb-4\">Governments and financial institutions worldwide are adopting QR codes on invoices to speed up payment processing and reduce errors. The EPC QR standard encodes IBAN, BIC, amount, and payment reference in a single scannable code. Recipients scan the QR code with their banking app and confirm the pre-filled transfer - no manual typing required.</p><p class=\"text-mid mb-4\">Several countries have made QR codes on invoices mandatory or strongly encouraged. Italy's fattura elettronica system includes QR codes for tax verification. The Czech Republic uses the SPAYD (Short Payment Descriptor) standard, which encodes payment details in a compact QR format supported by all major Czech banks. Poland's KSeF electronic invoicing system places QR codes on structured invoices for authenticity verification.</p><p class=\"text-mid\">For businesses, adding a QR code to invoices shortens the average payment cycle. Clients can pay immediately after receiving the document instead of manually copying account numbers. This is especially useful for freelancers, small businesses, and service providers who issue invoices regularly.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "QR codes in marketing - tracking campaign performance",
+      "html": "<p class=\"text-mid mb-4\">Marketers use QR codes to bridge offline and online campaigns. A QR code on a flyer, poster, or product packaging directs customers to a landing page, promotional offer, or app download. By encoding URLs with UTM parameters (source, medium, campaign name), businesses can track exactly how many scans each printed material generates in Google Analytics or similar tools.</p><p class=\"text-mid mb-4\">Creating a unique QR code for each campaign channel makes it possible to compare performance. A code on a trade show banner, a code in a magazine ad, and a code on product packaging each get a different UTM tag. This reveals which offline channel drives the most website visits, sign-ups, or purchases.</p><p class=\"text-mid\">Keep the encoded URL as short as possible. Longer URLs produce denser QR codes with smaller modules, which can be harder to scan at a distance or on small print. Use a URL shortener or redirect through a clean path on your domain to keep the code compact and easy to read.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Static vs. dynamic QR codes - when do you need each?",
+      "html": "<p class=\"text-mid mb-4\">A static QR code embeds the target data (URL, text, contact) directly into the code pattern. Once printed, the encoded content cannot be changed. Static codes have no expiration date, require no internet connection to decode, and work independently of any external service. This generator creates static QR codes.</p><p class=\"text-mid mb-4\">A dynamic QR code contains a short redirect URL that points to an intermediary server. The server forwards the scanner to the actual destination. This allows the owner to change the destination URL after printing, track scan counts and locations, and run A/B tests. Dynamic codes require a paid subscription to a QR management platform.</p><p class=\"text-mid\">Static codes are the right choice for business cards, product packaging, fixed URLs, permanent signage, and any situation where the destination will not change. Dynamic codes suit time-limited campaigns, menus with rotating content, or scenarios where scan analytics are essential for decision-making.</p>"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "QR code accessibility and inclusive design",
+      "html": "<p class=\"text-mid mb-4\">Accessible QR code placement benefits all users, including people with disabilities. Print QR codes at a minimum size of 3x3 cm to give users with motor impairments a larger target area for their camera. Place codes at a height reachable from a seated position - between 90 cm and 120 cm from the floor - so wheelchair users can scan them without assistance.</p><p class=\"text-mid mb-4\">High contrast between the code and its background is essential for users with low vision. A dark code on a white or very light background with a contrast ratio of at least 4.5:1 aligns with WCAG (Web Content Accessibility Guidelines) recommendations. Avoid placing QR codes on textured, patterned, or reflective surfaces that may interfere with camera focus.</p><p class=\"text-mid\">Always provide a text alternative near the QR code. A short line like \"Scan this code or visit example.com/menu\" ensures that screen reader users and people who cannot use a camera still have access to the same information. This practice also helps in situations where scanning is impractical, such as poor lighting or a damaged print.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about the QR code generator",
       "openByDefault": 1,
