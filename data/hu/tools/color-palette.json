@@ -234,9 +234,17 @@
       "html": "<p class=\"text-mid mb-4\">A Zsolnay kerámia Pécsett egyedi színvilágot teremtett az európai iparművészetben. Az eozin máz — egy irizáló, fémes felület — zöld, arany, vörös és lila fényt ver vissza a megvilágítástól függően. Ez az anyag azt mutatja, hogy egyetlen szín több árnyalatot hordozhat a környezettől függően. A paletta generátor tonális módja hasonló elvet követ: egy alapszínből több világossági fokozatot hoz létre.</p><p class=\"text-mid mb-4\">Csontváry Kosztka Tivadar festészete intenzív, telített színeket használt. A Magányos cédrus (1907) mély kékjei, élénk zöldjei és meleg sárgái olyan kontrasztokat teremtenek, amelyek szinte vibráló hatást keltenek. Csontváry színhasználata bizonyítja, hogy erős színellentétek érzelmeket közvetítenek közvetlenül — ez az elv a komplementer és triádikus paletták alapja.</p><p class=\"text-mid\">Lechner Ödön szecessziós épületei — a budapesti Iparművészeti Múzeum és a Postatakarékpénztár — Zsolnay kerámiával borított tetőkkel keltik fel a figyelmet. Türkiz, sárga, zöld és fehér csempék alkotnak geometrikus mintákat, amelyek a magyar népi motívumokat modern formába öntik. Ez a színkombináció — több élénk szín harmonikus rendszerben — megmutatja, hogy a komplex paletták működnek, ha következetes mintázat tartja össze őket.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Színszimbolika a magyar kultúrában",
       "html": "<p class=\"text-mid mb-4\">A magyar zászló piros, fehér és zöld sávjai mélyen gyökereznek a nemzeti identitásban. A piros az erőt jelképezi, a fehér a hűséget, a zöld a reményt. Brandépítésben a magyar piacra ezek a színek azonnal felismerhetőséget és bizalmat keltenek. Számos magyar élelmiszer- és italgyártó márka használja ezt a hármas kombinációt vizuális identitásának alapjaként.</p><p class=\"text-mid mb-4\">A magyar népi hímzés gazdag színvilágot kínál. A kalocsai hímzés élénk pirosakat, kékeket, zöldeket és sárgákat kombinál virágmintákban. A matyó hímzés jellegzetes rózsái sötét alapon jelennek meg — piros, narancs és pink árnyalatok feketén vagy sötétkéken. Ezek a népi paletták azt mutatják, hogy sok telített szín harmonikusan működhet együtt, ha ismétlődő minták és kiegyensúlyozott arányok tartják össze a kompozíciót.</p><p class=\"text-mid\">A magyar ünnepeknek megvannak a saját színkódjaik. Karácsony pirosat, aranyat és sötétzöldet hoz. Húsvét pasztelleket használ — halvány sárgát, rózsaszínt és zöldet a tojásfestésben és a tavaszi dekorációban. A busójárás Mohácson ijesztő maszkokkal dolgozik — fekete, piros és természetes fa színek dominálnak. A szüreti fesztiválok aranyat, bordót és narancsot hoznak. Ezek a kulturális paletták konkrét kiindulópontot kínálnak szezonális kampányokhoz.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionInfo",

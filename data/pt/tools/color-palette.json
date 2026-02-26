@@ -238,9 +238,17 @@
       "html": "<p class=\"text-mid mb-4\">O azulejo é a assinatura visual de Portugal. Desde o século XV, painéis de cerâmica azul e branca cobrem fachadas de igrejas, estações de comboio e palácios. O contraste entre o azul cobalto e o fundo branco cria um esquema cromático de alta legibilidade — o mesmo princípio que torna interfaces digitais claras e fáceis de navegar. A Estação de São Bento no Porto e o Mosteiro dos Jerónimos em Lisboa são exemplos icónicos desta paleta monocromática em azul.</p><p class=\"text-mid mb-4\">O estilo Manuelino trouxe outra dimensão cromática à arquitetura portuguesa. Pedra calcária branca esculpida com motivos marítimos — cordas, algas, esferas armilares — ganha profundidade através de sombras naturais que criam gradientes de bege, creme e cinzento. Esta lição de cor através da textura aplica-se ao design digital: variações subtis de luminosidade numa só tonalidade produzem hierarquia visual sem necessidade de múltiplas cores.</p><p class=\"text-mid\">No Brasil, o Modernismo de Tarsila do Amaral revolucionou o uso da cor. Obras como Abaporu (1928) utilizam verdes tropicais, amarelos intensos e azuis profundos que capturam a paisagem brasileira. Estes contrastes quentes e saturados inspiram paletas contemporâneas para marcas que procuram transmitir energia e autenticidade.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Simbolismo das cores na cultura portuguesa e brasileira",
       "html": "<p class=\"text-mid mb-4\">A bandeira portuguesa combina verde e vermelho com o amarelo da esfera armilar. O verde representa esperança e os oceanos que os navegadores cruzaram. O vermelho simboliza o sangue dos que lutaram pela nação. No branding para o mercado português, esta combinação evoca patriotismo, tradição e descoberta. Marcas de turismo, gastronomia e produtos regionais utilizam estes tons como ponto de partida.</p><p class=\"text-mid mb-4\">No Brasil, o verde e amarelo da bandeira têm um significado diferente — riqueza natural e ouro. O azul do globo celeste e o branco das estrelas completam a paleta. O futebol brasileiro tornou o amarelo-canário num símbolo reconhecido mundialmente. Marcas brasileiras de desporto, lazer e entretenimento utilizam frequentemente este amarelo vibrante como cor principal.</p><p class=\"text-mid\">As festas populares lusófonas têm paletas próprias. O Carnaval brasileiro explode com amarelo, verde, roxo, laranja e rosa — cores que transmitem alegria e celebração. As festas dos Santos Populares em Portugal decoram as ruas com manjerico verde, balões coloridos e sardinhas pintadas em todas as cores do arco-íris. O Natal lusófono mistura vermelho, dourado e verde escuro. Conhecer estes códigos culturais permite criar esquemas de cores que falam diretamente ao público-alvo.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionInfo",

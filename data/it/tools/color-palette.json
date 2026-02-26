@@ -238,9 +238,17 @@
       "html": "<p class=\"text-mid mb-4\">L'Italia ha plasmato il linguaggio del colore per secoli. Nel Rinascimento, Tiziano Vecellio sviluppò la tecnica della velatura — strati sottilissimi di pigmento trasparente sovrapposti per creare profondità e luminosità. Leonardo da Vinci perfezionò lo sfumato, una transizione graduale tra i toni che elimina i contorni netti. Raffaello combinava rosa tenui, azzurri e ori in composizioni equilibrate. Questi principi di transizione cromatica si ritrovano nei gradienti e nelle palette tonali del design digitale moderno.</p><p class=\"text-mid mb-4\">Il Futurismo italiano portò una nuova energia cromatica. Giacomo Balla e Umberto Boccioni usavano colori puri e contrastanti per rappresentare velocità e dinamismo. Rosso acceso accanto a blu elettrico, giallo brillante su fondi neri. Queste combinazioni audaci dimostrano che i contrasti forti possono trasmettere movimento ed emozione senza creare confusione visiva.</p><p class=\"text-mid\">I maestri vetrai di Murano lavorano il colore da oltre settecento anni. I rossi rubino ottenuti con oro colloidale, i blu cobalto e gli ori a foglia sono tonalità uniche, impossibili da replicare con altri materiali. Questa tradizione artigianale insegna che ogni mezzo — vetro, schermo, carta — ha una propria gamma cromatica. Il generatore di palette lavora nello spazio HSL digitale, ma le armonie che produce si ispirano agli stessi principi di equilibrio tra tonalità, saturazione e luminosità.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Simbolismo dei colori nella cultura italiana",
       "html": "<p class=\"text-mid mb-4\">Il verde, il bianco e il rosso del tricolore italiano derivano dalla bandiera della Repubblica Cispadana del 1797. Il verde rappresenta la speranza, il bianco la fede, il rosso l'amore. Nel branding rivolto al mercato italiano, questa combinazione evoca immediatamente italianità, qualità e tradizione. Molti marchi alimentari e del made in Italy la utilizzano come riferimento cromatico diretto o indiretto.</p><p class=\"text-mid mb-4\">Ogni regione italiana ha una propria identità cromatica. La Toscana si riconosce nei toni della terra di Siena, dell'ocra e del verde oliva. La Sicilia porta arancioni vivaci, gialli solari e blu del Mediterraneo. La Liguria combina il rosa dei palazzi di Portofino con il turchese del mare. Queste palette regionali offrono ispirazione concreta per progetti di design legati al turismo, all'enogastronomia e al lifestyle.</p><p class=\"text-mid\">Le festività italiane hanno codici cromatici precisi. Il Natale italiano privilegia rosso intenso, oro e verde scuro. Il Carnevale di Venezia esplode con oro, viola, blu royal e cremisi — colori che richiamano le maschere e i costumi storici. La Pasqua si esprime con pastelli delicati: giallo primula, rosa cipria, verde menta e lilla. Conoscere questi riferimenti culturali aiuta a creare schemi di colori che parlano al pubblico italiano.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionInfo",

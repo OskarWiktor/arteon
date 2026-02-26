@@ -237,9 +237,17 @@
       "html": "<p class=\"text-mid mb-4\">Deutschland hat die moderne Farbtheorie entscheidend mitgeprägt. Am Bauhaus in Weimar und Dessau entwickelte Johannes Itten seinen Farbkreis mit sieben Kontrastarten — Hell-Dunkel, Warm-Kalt, Komplementär und vier weiteren. Paul Klee analysierte Farbverläufe als musikalische Strukturen. Wassily Kandinsky verband Farben mit geometrischen Formen: Gelb gehörte zum Dreieck, Blau zum Kreis, Rot zum Quadrat. Diese Zuordnungen beeinflussen bis heute, wie Designer Farbpaletten mit Formen kombinieren.</p><p class=\"text-mid mb-4\">Der Expressionismus brachte eine andere Farbsprache hervor. Die Künstlergruppe Die Brücke — Ernst Ludwig Kirchner, Emil Nolde und Karl Schmidt-Rottluff — setzte reine, unvermischte Farbtöne direkt nebeneinander. Kräftiges Rot neben tiefem Blau, leuchtendes Gelb neben Schwarz. Diese expressiven Kontraste zeigen, dass starke Farbgegensätze Spannung und Emotion erzeugen, ohne chaotisch zu wirken.</p><p class=\"text-mid\">Das RAL-Farbsystem entstand 1927 als industrieller Standard. Heute umfasst RAL Classic rund 215 Farbtöne mit verbindlichen Nummern. Architekten, Fahrzeughersteller und Produktdesigner in Deutschland, Österreich und der Schweiz nutzen RAL-Nummern als gemeinsame Referenz. Wer eine Farbpalette für den DACH-Markt erstellt, kann die generierten HEX-Werte mit den nächstliegenden RAL-Tönen abgleichen.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Farbsymbolik in der deutschen Kultur",
       "html": "<p class=\"text-mid mb-4\">Schwarz, Rot und Gold bilden die deutschen Nationalfarben. Sie gehen auf das Lützowsche Freikorps der Befreiungskriege zurück — schwarze Uniformen mit roten Aufschlägen und goldenen Knöpfen. Heute stehen die drei Farben für Einheit und demokratische Tradition. Im Markendesign transportieren sie sofort eine deutsche Identität.</p><p class=\"text-mid mb-4\">Grün hat in Deutschland eine besondere politische Bedeutung. Die Umweltbewegung, Waldschutz und Nachhaltigkeit sind eng mit Grüntönen verbunden. Ökologische Produkte und Biomarken setzen auf gedämpftes Blattgrün, Moos und Salbei statt auf grelle Neonvarianten. Diese natürlichen Grüntöne lassen sich mit dem Palettengenerator als analoge oder monochromatische Abstufungen erzeugen.</p><p class=\"text-mid\">Weihnachten bringt in Deutschland Tiefrot, Tannengrün und Gold zusammen. Karneval in Köln und Mainz hingegen lebt von Gelb, Rot, Weiß und kräftigem Blau. Regionale Feste haben eigene Farbtraditionen — das Oktoberfest verbindet Weiß und Bayerisches Blau mit warmen Holztönen. Wer saisonale Kampagnen für den deutschen Markt gestaltet, findet in diesen kulturellen Paletten einen verlässlichen Ausgangspunkt.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionInfo",

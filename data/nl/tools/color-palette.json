@@ -234,9 +234,17 @@
       "html": "<p class=\"text-mid mb-4\">Nederland heeft de westerse kleurtraditie fundamenteel beïnvloed. Tijdens de Gouden Eeuw schilderde Johannes Vermeer met ultramarijn blauw en warm geel in composities die tot de meest bestudeerde kleurcombinaties in de kunstgeschiedenis behoren. Het Meisje met de Parel toont hoe een beperkt palet — blauw, geel, crème en donkerbruin — een tijdloos beeld kan creëren. Rembrandt van Rijn gebruikte clair-obscur om dramatische helderheidscontrasten te maken met minimale kleuren.</p><p class=\"text-mid mb-4\">De Stijl-beweging bracht een radicale vereenvoudiging. Piet Mondriaan reduceerde zijn palette tot drie primaire kleuren — rood, geel en blauw — plus zwart en wit. Gerrit Rietveld paste dezelfde kleuren toe op meubels en architectuur. Dit principe van kleurreductie vormt de basis van moderne designsystemen: een beperkt aantal basiskleuren met duidelijke functies levert een helder en consistent visueel systeem op.</p><p class=\"text-mid\">Delfts blauw is misschien wel het bekendste Nederlandse kleurenschema. Sinds de zeventiende eeuw versieren blauwe motieven op wit aardewerk huizen in heel Nederland en daarbuiten. Dit monochromatische schema in blauwtinten toont dat variaties in toon en helderheid binnen één kleur voldoende zijn om rijke, gedetailleerde ontwerpen te maken — precies wat de monochromatische palette van de generator biedt.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Kleursymboliek in de Nederlandse cultuur",
       "html": "<p class=\"text-mid mb-4\">Oranje is de kleur van Nederland. Het verwijst naar het Huis van Oranje-Nassau en is zichtbaar bij elke nationale gelegenheid — van Koningsdag tot voetbalwedstrijden van het Nederlands elftal. In branding voor de Nederlandse markt roept oranje onmiddellijk herkenning, trots en feestelijkheid op. Merken die de Nederlandse markt bedienen, gebruiken oranje als accentkleur of als primaire kleur om een directe verbinding te leggen.</p><p class=\"text-mid mb-4\">Tulpen hebben Nederland een bijzonder kleurenbewustzijn gegeven. De tulpenmanie van de zeventiende eeuw maakte zeldzame kleuren letterlijk kostbaar. Vandaag inspireren tulpenvelden paletten van levendig rood, geel, roze, paars en wit — een analogisch kleurenschema dat van warm naar koel beweegt. Deze natuurlijke kleurovergangen zijn eenvoudig na te bootsen met de analoge palette van de generator.</p><p class=\"text-mid\">Nederlandse feestdagen hebben eigen kleurcodes. Koningsdag brengt oranje in alle mogelijke tinten. Sinterklaas combineert rood, wit en goud. Kerst in Nederland mengt donkergroen, rood en goud met kaarslichtwarm geel. Carnaval in het zuiden gebruikt felgekleurde combinaties die per regio verschillen. Deze seizoensgebonden paletten bieden concrete inspiratie voor campagnes gericht op het Nederlandse publiek.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionInfo",

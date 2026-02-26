@@ -234,9 +234,17 @@
       "html": "<p class=\"text-mid mb-4\">Carl Larsson formade hur världen ser på svenska färger. Hans akvareller från hemmet i Sundborn — ljusa gula väggar, röda detaljer, vitmålade möbler och gröna växter — skapade en färgpalett som blev synonymt med svenskt hem. Dessa varma men dämpade toner återkommer i skandinavisk inredningsdesign än idag. En analog palett med gult, rött och grönt fångar denna estetik.</p><p class=\"text-mid mb-4\">Swedish Grace-rörelsen på 1920-talet kombinerade klassisk elegans med nordisk enkelhet. Mjuka pasteller — puderrosa, ljusblått, mintgrönt och grädde — dominerade porslin, textil och möbler. Josef Frank, verksam på Svenskt Tenn, skapade tyger med botaniska mönster i hundratals färgtoner. Hans arbete visar att komplexa färgkombinationer kan vara harmoniska när de delar liknande mättnad och ljushet.</p><p class=\"text-mid\">Falurött (Falu rödfärg) är kanske Sveriges mest kända kulör. Den djupt röda färgen har täckt svenska trähus sedan 1500-talet. Pigmentet kommer från koppargruvan i Falun och ger en varm, jordig röd ton som kontrasterar vackert mot vit knutar och gröna landskap. Denna kombination — rött, vitt och naturens grönt — är en av de mest igenkännliga svenska färgpaletterna.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Färgsymbolik i svensk kultur",
       "html": "<p class=\"text-mid mb-4\">Blått och gult bildar den svenska flaggan och symboliserar himmel och sol (eller guld). I varumärkesbyggande för den svenska marknaden skapar dessa färger omedelbar igenkänning. Blått står för pålitlighet och stabilitet. Gult signalerar optimism och värme. Tillsammans bildar de ett komplementärt färgschema med stark visuell kontrast.</p><p class=\"text-mid mb-4\">Midsommar är Sveriges mest färgstarka högtid. Gult och blått från flaggan blandas med grönt från björklöv, vitt från midsommarstången och rosa och lila från ängsblommor. Denna naturliga palett inspirerar säsongsbetonade kampanjer och sommarrelaterad design. Palettgeneratorn kan utgå från en gul eller grön baston och bygga analoga eller triadiska scheman som fångar midsommarkänslan.</p><p class=\"text-mid\">Lucia i december har en helt annan färgpalett. Vitt dominerar — vita klänningar, stearinljus och snö. Rött syns i sidenband och glögg. Gyllene toner kommer från levande ljus och pepparkakor. Denna vintriga kombination av vitt, rött och guld återkommer i julkampanjer och högtidsrelaterad design riktad mot den svenska marknaden.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionInfo",

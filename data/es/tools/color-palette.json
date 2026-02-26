@@ -234,9 +234,17 @@
       "html": "<p class=\"text-mid mb-4\">El mundo hispanohablante ha producido algunos de los usos más audaces del color en la historia del arte. Antoni Gaudí cubrió el Park Güell y la Sagrada Familia con miles de fragmentos cerámicos de colores — un mosaico llamado trencadís. Cada pieza tiene un tono distinto, pero el conjunto forma patrones armónicos. Este enfoque demuestra que paletas complejas funcionan cuando existe un sistema de color coherente detrás.</p><p class=\"text-mid mb-4\">Pablo Picasso atravesó etapas cromáticas que transformaron la pintura moderna. Su Periodo Azul (1901–1904) usó tonos fríos de azul y verde para transmitir melancolía. El Periodo Rosa (1904–1906) cambió a naranjas cálidos, rosas suaves y ocres. Estos ciclos muestran cómo una paleta limitada puede definir un estado emocional completo. Salvador Dalí, en cambio, combinaba colores saturados con espacios vacíos para crear tensión visual — un principio que funciona igual de bien en interfaces digitales.</p><p class=\"text-mid\">La arquitectura mediterránea del sur de España ofrece otra lección de color. Los pueblos blancos de Andalucía contrastan fachadas encaladas con macetas de geranios rojos, puertas azul cerámico y tejas de terracota. Este esquema de alto contraste sobre fondo neutro es una de las combinaciones más reconocibles del diseño español.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Simbolismo del color en el mundo hispanohablante",
       "html": "<p class=\"text-mid mb-4\">Rojo y amarillo forman la bandera española y transmiten pasión, energía y calidez. En el diseño para el mercado español, estos colores generan reconocimiento inmediato. El rojo también domina la tradición del flamenco — vestidos, abanicos y carteles usan un rojo profundo que evoca intensidad emocional. El amarillo albero, inspirado en la arena de las plazas de toros, es otro tono característico del sur de España.</p><p class=\"text-mid mb-4\">En América Latina, los colores tienen raíces precolombinas. Los textiles mayas combinaban turquesa, rojo cinabrio y amarillo ocre con significados rituales. Los tejidos andinos de Perú y Bolivia utilizan fucsia, naranja y violeta intensos extraídos de tintes naturales. Estas combinaciones vibrantes inspiran marcas contemporáneas que buscan transmitir autenticidad y conexión cultural.</p><p class=\"text-mid\">El Día de los Muertos en México despliega una paleta inconfundible: naranja de la flor de cempasúchil, morado, rosa mexicano, verde lima y amarillo brillante. Estas combinaciones festivas demuestran que los contrastes cromáticos fuertes pueden transmitir alegría y celebración. El generador de paletas triádicas y complementarias divididas ofrece esquemas con este tipo de energía visual.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionInfo",

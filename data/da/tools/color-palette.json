@@ -234,9 +234,17 @@
       "html": "<p class=\"text-mid mb-4\">Dansk design har formet den moderne forståelse af farve i funktionelt design. Arne Jacobsen skabte møbler i præcist udvalgte farver — Ægget og Svanen findes i dæmpede toner af grøn, blå, grå og sort, der matcher specifikke arkitektoniske rum. Jacobsens tilgang viser at farve ikke er dekoration, men en integreret del af formgivningen.</p><p class=\"text-mid mb-4\">Vilhelm Hammershøi malede interiører i ekstrem farvereduktion — grå, hvid, bleg blå og svage brune toner. Hans kunst demonstrerer at minimal farvevariation kan skabe dyb atmosfære og stemning. Denne monokromatiske tilgang svarer til generatorens tonale og monochromatiske paletter, der bygger hierarki gennem lysstyrkeforskelle alene.</p><p class=\"text-mid\">CoBrA-bevægelsen (1948–1951) med Asger Jorn bragte den modsatte energi — eksplosive farver, rå strøg og spontane kombinationer af rød, gul, blå og grøn. Jorns værker viser at stærke farvekontraster kan kommunikere vitalitet og følelse direkte. Komplementære og triadiske paletter fra generatoren producerer lignende energiske farveskemaer.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Farvesymbolik i dansk kultur",
       "html": "<p class=\"text-mid mb-4\">Dannebrog — det røde flag med det hvide kors — er verdens ældste stadig brugte nationalflag. Rød og hvid er dybt forankret i dansk identitet. I branding for det danske marked kommunikerer disse to farver øjeblikkeligt danskhed, tradition og troværdighed. Mange danske fødevare- og mejeribrands bruger rød-hvide farveskemaer som direkte reference.</p><p class=\"text-mid mb-4\">Hygge har sin egen farvepalet. Varme, dæmpede toner dominerer — karamel, varm grå, blød cremefarve, sennepsgul og dæmpet bordeaux. Disse farver efterligner stearinlysets varme glød og uldtæppets bløde tekstur. En analog palet baseret på varme gule og orange toner fanger hygge-æstetikken. Palettegeneratoren kan udgå fra en varm sennepstone og bygge analoge variationer.</p><p class=\"text-mid\">Danske højtider har tydelige farvekoder. Jul i Danmark bringer rød, hvid, grøn og gylden sammen — med nisser, gran og stearinlys. Fastelavn bruger stærke farver: gul, rød, lilla og grøn. Sankt Hans Aften midsommer associeres med grønt løv, orange bål og lang skandinavisk skumring. Disse sæsonbestemte paletter giver konkret inspiration til kampagner rettet mod det danske publikum.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionInfo",
