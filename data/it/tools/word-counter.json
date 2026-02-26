@@ -371,6 +371,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Lunghezza ideale dei contenuti per il web italiano",
+      "html": "<p class=\"text-mid mb-4\">Gli articoli di blog in italiano ottengono i migliori risultati nei motori di ricerca con una lunghezza di 1 200–2 000 parole. Articoli più brevi (600–1 000 parole) funzionano per guide pratiche e risposte a domande specifiche. Gli articoli sotto le 500 parole raramente raggiungono posizioni elevate, a meno che non rispondano a una query molto precisa.</p><p class=\"text-mid mb-4\">Le schede prodotto nei negozi italiani dovrebbero contenere 150–300 parole. Su Amazon.it, i punti elenco possono avere fino a 500 caratteri ciascuno — usate questo spazio per vantaggi concreti del prodotto. Le pagine di categoria beneficiano di 200–400 parole per aiutare i motori di ricerca a contestualizzare la pagina.</p><p class=\"text-mid\">Le pagine di servizi (studio dentistico, studio legale, impresa edile) necessitano di 500–800 parole con informazioni concrete: gamma di servizi, area di intervento, modalità di contatto. Il conteggio delle parole da solo non è un indicatore di qualità — un testo conciso di 600 parole con informazioni utili supera un testo di 2 000 parole pieno di generalità.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "La cartella editoriale e le norme di traduzione in Italia",
+      "html": "<p class=\"text-mid mb-4\">L'industria della traduzione in Italia utilizza la cartella come unità di fatturazione. Una cartella standard corrisponde a 1 800 battute (caratteri spazi inclusi), equivalenti a circa 250–300 parole. Prima di richiedere un preventivo di traduzione, incollate il testo nel contatore e verificate il numero di caratteri con spazi per stimare il costo. Un testo di 18 000 caratteri con spazi corrisponde a 10 cartelle.</p><p class=\"text-mid mb-4\">Le case editrici italiane misurano i manoscritti in cartelle editoriali. Redattori e correttori di bozze usano il contatore di caratteri per valutare rapidamente il volume di un manoscritto prima di proporre una tariffa. La cartella è anche l'unità standard per il lavoro di editing e revisione di testi.</p><p class=\"text-mid\">Le università italiane esprimono i requisiti per tesi e dissertazioni in numero di parole o caratteri. Una tesi triennale conta generalmente 30 000–50 000 parole, una tesi magistrale 50 000–80 000 parole, una tesi di dottorato oltre 80 000 parole. I requisiti variano tra atenei e facoltà — consultate il regolamento del vostro corso di studi.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Leggibilità in italiano — comprendere l'indice Gulpease",
+      "html": "<p class=\"text-mid mb-4\">L'indice Gulpease è la formula di leggibilità sviluppata specificamente per la lingua italiana. A differenza della formula Flesch originale, Gulpease conta le lettere invece delle sillabe, il che lo rende più preciso per l'italiano. La scala va da 0 a 100: un punteggio superiore a 60 indica un testo facilmente leggibile, tra 40 e 60 un testo di media difficoltà, sotto 40 un testo difficile adatto a lettori con istruzione superiore.</p><p class=\"text-mid mb-4\">Per i contenuti web in italiano, puntate a un Gulpease di 60 o superiore. L'italiano accademico e letterario tende a usare frasi lunghe e complesse con numerose proposizioni subordinate. Questa struttura è naturale nella scrittura formale italiana, ma riduce la leggibilità su schermo. Frasi di 15–20 parole e paragrafi di 3–4 frasi migliorano significativamente l'esperienza di lettura.</p><p class=\"text-mid\">La lunghezza media delle parole in italiano è di 5–6 caratteri, simile al francese e leggermente superiore all'inglese (4–5 caratteri). Confrontate i punteggi di leggibilità solo all'interno della stessa lingua. Un Gulpease di 55 per un testo italiano non è direttamente confrontabile con un Flesch di 55 per un testo inglese, perché le formule usano coefficienti e metriche di input differenti.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Domande frequenti sul contatore di parole",
       "openByDefault": 1,

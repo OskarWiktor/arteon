@@ -371,6 +371,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Ideale Textlänge für deutschsprachige Webseiten",
+      "html": "<p class=\"text-mid mb-4\">Ausführliche Blogartikel im deutschsprachigen Raum erzielen die besten Suchergebnisse bei einer Länge von 1 500–2 500 Wörtern. Standardbeiträge mit 800–1 200 Wörtern eignen sich für Anleitungen und Antworten auf konkrete Fragen. Beiträge unter 500 Wörtern erreichen selten hohe Positionen, es sei denn, sie beantworten eine sehr spezifische Suchanfrage.</p><p class=\"text-mid mb-4\">Produktbeschreibungen in deutschen Online-Shops sollten 150–300 Wörter umfassen. Auf Amazon.de können Aufzählungspunkte jeweils 500 Zeichen lang sein — nutzen Sie diesen Platz für konkrete Produktvorteile statt allgemeiner Phrasen. Kategoriebeschreibungen mit 200–400 Wörtern helfen Suchmaschinen, die Seite thematisch einzuordnen.</p><p class=\"text-mid\">Dienstleistungsseiten (z. B. Zahnarztpraxis, Kanzlei, Handwerksbetrieb) benötigen 500–800 Wörter mit konkreten Informationen: Leistungsumfang, Einzugsgebiet, Erreichbarkeit. Die Wortanzahl allein ist kein Qualitätsmerkmal — ein prägnanter Text mit 600 Wörtern und konkreten Informationen übertrifft einen aufgeblähten Text mit 2 000 Wörtern ohne Mehrwert.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Normzeilen, Normseiten und Zeichenzählung in der DACH-Region",
+      "html": "<p class=\"text-mid mb-4\">Übersetzungsbüros in Deutschland, Österreich und der Schweiz rechnen in Normzeilen oder Normseiten ab. Eine Normzeile umfasst 55 Zeichen einschließlich Leerzeichen. Eine Normseite besteht aus 30 Normzeilen, also 1 650 Zeichen. Manche Büros verwenden alternativ 1 800 Zeichen pro Seite. Vor einer Übersetzungsanfrage lohnt es sich, den Text in den Zähler einzufügen und die Zeichenanzahl mit Leerzeichen zu prüfen.</p><p class=\"text-mid mb-4\">Verlage und Druckereien arbeiten mit dem Druckbogen (16 Seiten) und dem Verlagszeichen. Ein Manuskript wird oft in Normseiten gemessen — 1 800 Zeichen inkl. Leerzeichen pro Seite ist der gängige Standard. Lektoren und Korrektoren nutzen den Zeichenzähler, um den Umfang eines Manuskripts schnell einzuschätzen.</p><p class=\"text-mid\">An deutschsprachigen Universitäten werden Abschlussarbeiten in Wörtern oder Zeichen bemessen. Eine Bachelorarbeit umfasst typischerweise 8 000–12 000 Wörter, eine Masterarbeit 15 000–25 000 Wörter, eine Dissertation über 50 000 Wörter. Die Anforderungen variieren zwischen Fakultäten — prüfen Sie die Prüfungsordnung Ihrer Hochschule.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Lesbarkeit im Deutschen — die Amstad-Formel verstehen",
+      "html": "<p class=\"text-mid mb-4\">Deutsch bildet zusammengesetzte Wörter durch Aneinanderreihung: &quot;Krankenversicherungsvergleichsportal&quot; ist ein einziges Wort mit 37 Zeichen. Die Original-Flesch-Formel würde solche Wörter als extrem schwierig einstufen, obwohl jeder Deutschsprachige sie problemlos versteht. Die Amstad-Formel passt die Koeffizienten an, um dieser Eigenheit der deutschen Sprache gerecht zu werden.</p><p class=\"text-mid mb-4\">Ein gutes Ziel für deutsche Webinhalte ist ein Amstad-Wert zwischen 60 und 70. Werte über 70 deuten auf sehr einfache Sprache hin (geeignet für breites Publikum). Werte unter 40 signalisieren wissenschaftliche oder juristische Texte. Kurze Sätze (15–20 Wörter) und kurze Absätze (3–4 Sätze) verbessern die Lesbarkeit auf Bildschirmen erheblich.</p><p class=\"text-mid\">Die durchschnittliche Wortlänge im Deutschen liegt bei 6–7 Zeichen — deutlich höher als die 4–5 Zeichen im Englischen. Das liegt an den zusammengesetzten Wörtern und an grammatischen Endungen (Deklinationen, Konjugationen). Vergleichen Sie Lesbarkeitswerte daher nur innerhalb derselben Sprache. Ein Amstad-Wert von 55 für einen deutschen Text entspricht einem höheren Leseniveau als ein Flesch-Wert von 55 für einen englischen Text.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Häufig gestellte Fragen zum Wort- und Zeichenzähler",
       "openByDefault": 1,

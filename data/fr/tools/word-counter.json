@@ -371,6 +371,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Longueur idéale du contenu pour le web francophone",
+      "html": "<p class=\"text-mid mb-4\">Les articles de blog francophones performent le mieux entre 1 200 et 2 000 mots. Les articles courts (600–1 000 mots) fonctionnent pour les guides pratiques et les réponses à des questions précises. Les articles de moins de 500 mots atteignent rarement les premières positions, sauf pour des requêtes très spécifiques.</p><p class=\"text-mid mb-4\">Les fiches produit dans les boutiques françaises doivent contenir 150–300 mots. Sur Cdiscount et La Redoute, les descriptions détaillées avec des caractéristiques précises convertissent mieux que les textes courts et vagues. Les pages de catégories bénéficient de 200–400 mots pour aider les moteurs de recherche à comprendre le contexte thématique.</p><p class=\"text-mid\">Les pages de services (cabinet d'avocats, cabinet médical, artisan) nécessitent 500–800 mots avec des informations concrètes : périmètre d'intervention, tarifs indicatifs, zone géographique, coordonnées. Le nombre de mots seul n'est pas un critère de qualité — un texte concis de 600 mots avec des informations utiles surpasse un texte de 2 000 mots rempli de généralités.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Le feuillet, la norme AFNOR et le comptage de caractères en France",
+      "html": "<p class=\"text-mid mb-4\">L'industrie de la traduction en France utilise le feuillet comme unité de facturation. Un feuillet standard correspond à 1 500 signes espaces comprises (environ 250 mots). Avant de demander un devis de traduction, collez votre texte dans le compteur et vérifiez le nombre de caractères avec espaces pour estimer le coût. Un texte de 15 000 caractères avec espaces représente 10 feuillets.</p><p class=\"text-mid mb-4\">Les maisons d'édition françaises mesurent les manuscrits en feuillets ou en signes. Le signe est le terme français pour le caractère — espaces comprises ou non selon le contexte. Les correcteurs et relecteurs utilisent le compteur de caractères pour évaluer rapidement le volume d'un manuscrit avant de proposer un tarif.</p><p class=\"text-mid\">Les universités francophones expriment les exigences de mémoires et thèses en nombre de mots ou de signes. Un mémoire de licence compte généralement 30 000–50 000 mots, un mémoire de master 50 000–80 000 mots, une thèse de doctorat plus de 80 000 mots. En Belgique et en Suisse romande, les exigences peuvent différer — consultez le règlement de votre établissement.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Lisibilité en français — comprendre la formule Kandel-Moles",
+      "html": "<p class=\"text-mid mb-4\">Le français académique et littéraire utilise traditionnellement des phrases longues avec des propositions subordonnées imbriquées. Cette construction est naturelle en français, mais elle réduit la lisibilité sur écran. La formule Kandel-Moles adapte les coefficients de Flesch pour tenir compte de cette particularité linguistique. Un score Kandel-Moles entre 60 et 70 correspond à un texte clair et accessible pour un large public.</p><p class=\"text-mid mb-4\">Pour le contenu web en français, visez des phrases de 15–20 mots et des paragraphes de 3–4 phrases. Les phrases de plus de 25 mots doivent être divisées en deux. Le français a des mots légèrement plus longs que l'anglais (moyenne de 5–6 caractères contre 4–5), ce qui signifie que les scores de lisibilité seront naturellement un peu plus bas à difficulté comparable.</p><p class=\"text-mid\">Le ratio de mots uniques est un bon indicateur de la richesse du vocabulaire. Dans un texte de 1 000 mots, 400–500 mots uniques indiquent un vocabulaire varié. Si le ratio descend sous 30 %, le texte peut sembler répétitif — remplacez les mots récurrents par des synonymes ou reformulez les phrases pour réduire la redondance.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Questions fréquentes sur le compteur de mots",
       "openByDefault": 1,

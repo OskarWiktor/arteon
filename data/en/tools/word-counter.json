@@ -371,6 +371,51 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "How word count affects content performance",
+      "html": "<p class=\"text-mid mb-4\">Long-form blog posts (1,500–2,500 words) consistently rank higher in search results than short articles. They cover topics in more depth, attract more backlinks, and keep readers on the page longer. Standard informational posts (800–1,200 words) work well for focused how-to guides and answers to specific questions. Posts under 500 words rarely rank unless they target a very narrow query.</p><p class=\"text-mid mb-4\">Product descriptions perform best at 150–300 words. Shorter descriptions leave buyers without enough information. Longer descriptions work for technical products where specifications need detailed explanation. Landing pages vary more: a simple lead-generation page may need only 200–400 words, while a sales page for a high-value service can run 1,500–3,000 words.</p><p class=\"text-mid\">Word count is a guideline, not a target. A 2,000-word article padded with filler performs worse than a focused 800-word article packed with useful information. Use the word counter to track length, but prioritize value density — the amount of useful information per paragraph. If you can say it in fewer words without losing meaning, the shorter version is better.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Characters with vs. without spaces — when each metric matters",
+      "html": "<p class=\"text-mid mb-4\">The translation industry bills by characters without spaces in most European markets. One standard page is typically 1,500–1,800 characters without spaces, depending on the country and agency. Before ordering a translation, paste your text into the counter and check the character count to estimate the cost accurately.</p><p class=\"text-mid mb-4\">Social media platforms count characters including spaces. Twitter/X allows 280 characters with spaces. Instagram captions can be up to 2,200 characters. LinkedIn posts allow 3,000 characters, but the &quot;see more&quot; truncation happens at around 210. When writing for these platforms, the &quot;characters with spaces&quot; metric is the one that matters.</p><p class=\"text-mid\">Academic submissions use different units depending on the institution. Most universities set word limits (e.g., 10,000-word dissertation chapter), but some European institutions and grant applications specify character counts. Patent filings in some jurisdictions also use character-based limits. Always check which unit your institution requires and use the matching metric in the counter.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Why readability formulas differ across languages",
+      "html": "<p class=\"text-mid mb-4\">The original Flesch Reading Ease formula was designed for English, where shorter words generally mean simpler vocabulary. This assumption breaks down in other languages. German builds compound words by joining smaller words together — &quot;Suchmaschinenoptimierung&quot; (search engine optimization) is one word with 25 letters, but it is not inherently difficult. The Amstad formula adjusts for this by using different coefficient weights.</p><p class=\"text-mid mb-4\">Romance languages have their own adaptations. Italian uses the Gulpease index, which operates on a reversed scale and counts letters instead of syllables. French uses Kandel-Moles, which adjusts for the language's naturally longer sentences. Spanish and Portuguese share the Fernández-Huerta formula, adapted from Flesch with coefficients tuned for syllable patterns common in these languages.</p><p class=\"text-mid\">This means a score of 60 in English is not the same difficulty level as 60 in German or Italian. Each formula is calibrated to its own language, so compare scores only within the same language. This tool automatically selects the correct formula based on the interface language, giving you an accurate readability assessment without manual configuration.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Using text metrics to improve your writing",
+      "html": "<p class=\"text-mid mb-4\">The unique word ratio reveals vocabulary richness. In a 1,000-word text, 400–500 unique words indicates varied language. Below 300 unique words, the text may sound repetitive. If your ratio is low, look for repeated phrases and replace them with synonyms or restructure sentences to reduce redundancy.</p><p class=\"text-mid mb-4\">Average word length signals text complexity. General web content typically averages 4–5 characters per word in English. If your average exceeds 6, the text may contain too many technical terms or unnecessarily long words for a general audience. This does not apply to specialized content (medical, legal, scientific), where longer terminology is expected and appropriate.</p><p class=\"text-mid\">Sentence count combined with word count gives you the average sentence length. If the average exceeds 20–25 words, readability drops noticeably. The fix is straightforward: find sentences longer than 25 words and split them. A practical workflow is: paste your draft into the tool, check the readability score, identify long sentences, shorten them, then re-check the score. Two or three rounds of this process typically raise the score by 10–15 points.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Speaking time and reading time — preparing content for different formats",
+      "html": "<p class=\"text-mid mb-4\">Reading time assumes 200 words per minute — the average speed for silent reading of non-technical text. A 1,000-word blog post takes about 5 minutes to read. A 2,500-word in-depth guide takes about 12.5 minutes. Displaying reading time at the top of an article helps set reader expectations and can reduce bounce rates, because visitors know the time commitment before they start.</p><p class=\"text-mid mb-4\">Speaking time uses 130 words per minute — the natural pace for presentations, podcasts, and video narration. This pace includes natural pauses, emphasis, and breathing. A 1,000-word script takes about 7.5 minutes to deliver. Professional audiobook narration runs at about 150 words per minute, slightly faster than presentations because it flows more continuously.</p><p class=\"text-mid\">Use speaking time to plan video and podcast content before recording. If you need a 10-minute YouTube video, write a script of approximately 1,300 words. For a 20-minute podcast episode, aim for 2,600 words. For conference presentations, 100–120 words per minute is a safer estimate, because speakers pause for audience reactions and slide transitions. A 15-minute talk needs roughly 1,500–1,800 words of script.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about the word and character counter",
       "openByDefault": 1,

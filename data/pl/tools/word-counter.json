@@ -371,6 +371,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Ile słów powinien mieć tekst na stronę internetową",
+      "html": "<p class=\"text-mid mb-4\">Artykuł blogowy w polskim internecie osiąga najlepsze wyniki w wyszukiwarkach przy długości 1 500–2 500 słów. Krótsze wpisy (800–1 200 słów) sprawdzają się jako odpowiedzi na konkretne pytania i poradniki krok po kroku. Wpisy poniżej 500 słów rzadko zdobywają wysokie pozycje, chyba że odpowiadają na bardzo precyzyjne zapytanie.</p><p class=\"text-mid mb-4\">Opisy produktów w polskich sklepach internetowych powinny mieć 150–300 słów. Krótszy opis nie daje wystarczającej ilości informacji dla kupującego ani dla algorytmu Google. Dłuższy opis sprawdza się przy produktach technicznych, gdzie specyfikacja wymaga szczegółowego wyjaśnienia. Na Allegro opis produktu może mieć do 4 000 znaków — warto wykorzystać ten limit, zamiast wstawiać jednozdaniowe opisy.</p><p class=\"text-mid\">Strony usługowe (np. strona dentysty, kancelarii prawnej, firmy budowlanej) potrzebują 500–800 słów z konkretnymi informacjami: zakres usług, ceny orientacyjne, obszar działania, dane kontaktowe. Sam licznik słów nie wystarczy — gęstość wartości merytorycznej jest ważniejsza niż sama liczba. Tekst 2 000 słów wypełniony powtórzeniami i ogólnikami pozycjonuje się gorzej niż zwięzły tekst 800 słów z konkretnymi informacjami.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Znaki ze spacjami i bez spacji — kiedy która metryka ma znaczenie",
+      "html": "<p class=\"text-mid mb-4\">Biura tłumaczeń w Polsce rozliczają się w stronach normowych. Jedna strona normowa to 1 800 znaków ze spacjami lub 1 500 znaków bez spacji — w zależności od biura i umowy. Przed zleceniem tłumaczenia wklej tekst do licznika i sprawdź liczbę znaków, aby oszacować koszt. Przy tekście 18 000 znaków ze spacjami to dokładnie 10 stron normowych.</p><p class=\"text-mid mb-4\">Wydawnictwa i drukarnie w Polsce używają pojęcia arkusza wydawniczego — to 40 000 znaków ze spacjami. Jedno wydanie książki to zwykle 8–15 arkuszy wydawniczych, czyli 320 000–600 000 znaków. Redaktorzy i korektorzy korzystają z licznika znaków, żeby szybko ocenić objętość rękopisu.</p><p class=\"text-mid\">Uczelnie w Polsce określają wymagania dotyczące prac dyplomowych w znakach ze spacjami. Praca licencjacka to zwykle 60 000–80 000 znaków, praca magisterska 80 000–120 000 znaków, a praca doktorska powyżej 150 000 znaków. Wymagania różnią się między uczelniami i wydziałami — zawsze sprawdź regulamin swojej uczelni. Licznik znaków pozwala na bieżąco kontrolować, ile jeszcze brakuje do wymaganego minimum.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Czytelność tekstu po polsku — jak interpretować wynik Flescha",
+      "html": "<p class=\"text-mid mb-4\">Polski jest językiem fleksyjnym — słowa mają końcówki odmian (przypadki, czasy, osoby), przez co są średnio dłuższe niż w angielskim. Polskie słowo ma przeciętnie 6–7 znaków, angielskie 4–5. To oznacza, że wynik Flescha dla polskiego tekstu będzie naturalnie niższy niż dla angielskiego tekstu o porównywalnej trudności. Dobry cel dla treści webowych po polsku to wynik 45–60, a nie 60–70 jak w angielskim.</p><p class=\"text-mid mb-4\">Krótkie zdania (15–20 słów) i krótkie akapity (3–4 zdania) poprawiają czytelność na ekranach. Na urządzeniach mobilnych długie bloki tekstu są szczególnie trudne do przyswojenia. Każde zdanie powyżej 25 słów warto rozbić na dwa krótsze. Narzędzie pokazuje średnią długość zdania w metryce &quot;Zdania&quot; — jeśli masz 200 słów w 8 zdaniach, to średnia wynosi 25 słów, co jest na granicy dobrej czytelności.</p><p class=\"text-mid\">Wysoki stosunek unikalnych słów do ogólnej liczby słów wskazuje na bogate słownictwo i mniejszą powtarzalność. W tekście 1 000 słów dobry wynik to 400–500 unikalnych wyrazów. Jeśli stosunek spada poniżej 30%, tekst może brzmieć monotonnie i powtarzalnie — warto wtedy użyć synonimów lub przeformułować zdania.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Najczęstsze pytania dotyczące licznika słów i znaków",
       "openByDefault": 1,

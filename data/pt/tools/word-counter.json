@@ -371,6 +371,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Comprimento ideal do conteúdo para sites em português",
+      "html": "<p class=\"text-mid mb-4\">Os artigos de blog em português alcançam os melhores resultados nos motores de busca com 1 200–2 000 palavras. Artigos mais curtos (600–1 000 palavras) funcionam para guias práticos e respostas a perguntas específicas. Artigos com menos de 500 palavras raramente alcançam posições elevadas, a não ser que respondam a uma consulta muito específica.</p><p class=\"text-mid mb-4\">As fichas de produto em lojas portuguesas e brasileiras devem conter 150–300 palavras. No Mercado Livre (Brasil), o título tem um limite de 60 caracteres e a descrição permite texto extenso — aproveite esse espaço com informações detalhadas sobre características, materiais e dimensões. No OLX Portugal, os títulos de anúncio têm limite de 70 caracteres.</p><p class=\"text-mid\">As páginas de serviços (escritório de advocacia, clínica dentária, empresa de construção) precisam de 500–800 palavras com informações concretas: âmbito dos serviços, área de atuação, contactos. A contagem de palavras por si só não é um indicador de qualidade — um texto conciso de 600 palavras com informações úteis supera um texto de 2 000 palavras cheio de generalidades.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Lauda, caracteres e normas de tradução no mundo lusófono",
+      "html": "<p class=\"text-mid mb-4\">A indústria da tradução em Portugal utiliza a lauda como unidade de faturação. Uma lauda padrão corresponde a 1 800 caracteres com espaços (aproximadamente 250–300 palavras). No Brasil, a prática varia: algumas agências faturam por palavra, outras por lauda de 1 000 ou 1 800 caracteres. Antes de pedir um orçamento, cole o texto no contador e verifique o número de caracteres com espaços para estimar o custo.</p><p class=\"text-mid mb-4\">As editoras portuguesas e brasileiras medem os manuscritos em laudas ou em número de palavras. Revisores e preparadores de texto usam o contador de caracteres para avaliar rapidamente o volume de um manuscrito antes de apresentar um orçamento de trabalho.</p><p class=\"text-mid\">As universidades lusófonas expressam os requisitos de dissertações em número de palavras ou caracteres. Em Portugal, uma dissertação de mestrado conta tipicamente 30 000–50 000 palavras. No Brasil, os requisitos variam entre programas de pós-graduação — consulte o regulamento do seu curso. O contador de caracteres permite acompanhar o progresso em tempo real durante a escrita.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Legibilidade em português — a fórmula Fernández-Huerta adaptada",
+      "html": "<p class=\"text-mid mb-4\">O português partilha a fórmula Fernández-Huerta com o espanhol, uma vez que ambas as línguas têm padrões silábicos semelhantes. Os coeficientes são ajustados para ter em conta as palavras ligeiramente mais longas do português em comparação com o inglês (média de 5–6 caracteres por palavra contra 4–5). Um bom objetivo para conteúdo web em português é uma pontuação entre 55 e 65.</p><p class=\"text-mid mb-4\">O português académico e jornalístico tende a usar frases longas com múltiplas orações subordinadas. Esta estrutura é natural no registo formal, mas reduz a legibilidade em ecrãs. Para textos web, aponte para frases de 15–20 palavras e parágrafos de 3–4 frases. As frases com mais de 25 palavras devem ser divididas em duas mais curtas.</p><p class=\"text-mid\">O português europeu (PT-PT) e o português brasileiro (PT-BR) diferem em vocabulário, ortografia e estilo. Os textos para audiências portuguesas tendem a usar um registo mais formal, enquanto os textos para o Brasil podem adotar um tom mais direto e coloquial. O contador de palavras analisa a estrutura do texto independentemente da variante regional — as métricas de comprimento e legibilidade são válidas para qualquer variante do português.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Perguntas frequentes sobre o contador de palavras",
       "openByDefault": 1,

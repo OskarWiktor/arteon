@@ -373,6 +373,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Lungimea ideală a textului pentru site-uri românești",
+      "html": "<p class=\"text-mid mb-4\">Articolele de blog în limba română obțin cele mai bune rezultate în motoarele de căutare la o lungime de 1 200–2 000 de cuvinte. Articolele mai scurte (600–1 000 de cuvinte) funcționează pentru ghiduri practice și răspunsuri la întrebări specifice. Articolele sub 500 de cuvinte ajung rareori pe poziții înalte, cu excepția cazului în care răspund unei interogări foarte specifice.</p><p class=\"text-mid mb-4\">Descrierile de produse în magazinele online românești trebuie să conțină 150–300 de cuvinte. Pe eMAG.ro, titlurile de produse au limite de caractere — folosiți acest spațiu pentru informații concrete despre caracteristici, materiale și dimensiuni. Pe OLX.ro, titlurile de anunțuri au o limită de circa 70 de caractere.</p><p class=\"text-mid\">Paginile de servicii (cabinet dentar, cabinet de avocatură, firmă de construcții) au nevoie de 500–800 de cuvinte cu informații concrete: gamă de servicii, zonă de acoperire, date de contact. Numărul de cuvinte în sine nu este un indicator de calitate — un text concis de 600 de cuvinte cu informații utile depășește un text umflat de 2 000 de cuvinte fără valoare adăugată.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Pagina standard și normele de traducere în România",
+      "html": "<p class=\"text-mid mb-4\">Agențiile de traduceri din România facturează pe pagină standard sau pe cuvânt. O pagină standard corespunde la 1 800 de caractere cu spații (aproximativ 250–300 de cuvinte). Înainte de a solicita o ofertă de preț, lipiți textul în contor și verificați numărul de caractere cu spații pentru a estima costul. Un text de 18 000 de caractere cu spații corespunde exact 10 pagini standard.</p><p class=\"text-mid mb-4\">Editurile românești măsoară manuscrisele în pagini standard sau număr de cuvinte. Redactorii și corectorii folosesc contorul de caractere pentru a evalua rapid volumul unui manuscris înainte de a propune un tarif. Pagina standard este și unitatea obișnuită pentru munca de redactare și corectură în România.</p><p class=\"text-mid\">Universitățile românești exprimă cerințele pentru lucrări de licență și disertații în număr de cuvinte sau caractere. O lucrare de licență necesită de obicei 30 000–50 000 de caractere cu spații, o disertație de master 50 000–80 000 de caractere, iar o teză de doctorat peste 100 000 de caractere. Cerințele variază între universități — verificați întotdeauna regulamentul programului dumneavoastră de studii.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Lizibilitate în română — diacritice și structura flexionară",
+      "html": "<p class=\"text-mid mb-4\">Româna este o limbă flexionară cu diacritice specifice: ă, â, î, ș, ț. Aceste caractere ocupă fiecare o poziție, la fel ca literele de bază — nu afectează numărarea caracterelor. Cuvintul mediu în română are 5–6 caractere, similar cu franceza și italiana. Acest lucru înseamnă că scorurile Flesch pentru texte românești vor fi ușor mai scăzute decât pentru texte engleze de dificultate comparabilă.</p><p class=\"text-mid mb-4\">Un obiectiv bun pentru conținut web în română este un scor Flesch între 50 și 60. Propozițiile scurte (15–20 de cuvinte) și paragrafele scurte (3–4 propoziții) îmbunătățesc semnificativ lizibilitatea pe ecrane. Stilul academic și jurnalistic românesc tinde să folosească propoziții lungi cu multiple subordonate. Această structură este naturală în registrul formal, dar reduce lizibilitatea pe dispozitive digitale.</p><p class=\"text-mid\">Comparați scorurile de lizibilitate doar în cadrul aceleiași limbi. Un scor Flesch de 55 pentru un text românesc nu corespunde aceluiași grad de dificultate ca 55 pentru un text englezesc, deoarece formulele folosesc coeficienți diferiți. Instrumentul selectează automat formula corectă în funcție de limba interfeței.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Întrebări frecvente despre contorul de cuvinte",
       "openByDefault": 1,

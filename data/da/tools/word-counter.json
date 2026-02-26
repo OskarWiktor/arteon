@@ -373,6 +373,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Ideel tekstlængde for danske hjemmesider",
+      "html": "<p class=\"text-mid mb-4\">Blogindlæg på dansk opnår de bedste søgeresultater ved en længde på 1 200–2 000 ord. Kortere indlæg (600–1 000 ord) fungerer til praktiske guides og svar på specifikke spørgsmål. Indlæg under 500 ord når sjældent høje positioner, medmindre de besvarer en meget specifik søgeforespørgsel.</p><p class=\"text-mid mb-4\">Produktbeskrivelser i danske webshops bør indeholde 150–300 ord. På DBA.dk har annoncetitler en grænse på ca. 60 tegn. Kategoribeskrivelser med 200–400 ord hjælper søgemaskiner med at forstå sidens tematik. På Proshop og andre danske platforme er detaljerede produktbeskrivelser en konkurrencefordel.</p><p class=\"text-mid\">Servicesider (tandlægeklinik, advokatkontor, håndværker) har brug for 500–800 ord med konkret information: tjenesteydelser, dækningsområde, kontaktoplysninger. Antallet af ord alene er ikke en kvalitetsindikator — en kortfattet tekst på 600 ord med nyttig information overgår en oppustet tekst på 2 000 ord uden merværdi.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Standardside og oversættelsesnormer i Danmark",
+      "html": "<p class=\"text-mid mb-4\">Oversættelsesbureauer i Danmark afregner per ord eller per standardside. En standardside svarer til 1 500 tegn inklusive mellemrum (cirka 200–250 ord). Inden du anmoder om et tilbud, skal du indsætte teksten i tælleren og kontrollere antallet af tegn med mellemrum for at estimere omkostningerne. En tekst med 15 000 tegn inklusive mellemrum svarer til 10 standardsider.</p><p class=\"text-mid mb-4\">Danske forlag måler manuskripter i standardsider eller antal ord. Redaktører og korrekturlæsere bruger tegntælleren til hurtigt at vurdere et manuskripts omfang, inden de foreslår en pris. Standardsiden er også den sædvanlige enhed for redaktions- og korrekturarbejde i Danmark.</p><p class=\"text-mid\">Danske universiteter angiver krav til opgaver i antal ord. Et bachelorprojekt omfatter typisk 10 000–15 000 ord, et kandidatspeciale 15 000–25 000 ord og en ph.d.-afhandling over 50 000 ord. Kravene varierer mellem uddannelsesinstitutioner og fakulteter — tjek altid studieordningen for din uddannelse.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Læsbarhed på dansk — LIX-indekset",
+      "html": "<p class=\"text-mid mb-4\">Danmark bruger LIX (Læsbarheds-IndeX) som standard for tekstens sværhedsgrad. LIX beregnes ved at lægge andelen af lange ord (mere end 6 tegn) sammen med den gennemsnitlige sætningslængde. Et LIX under 25 betyder meget let tekst, 25–35 let, 35–45 middel, 45–55 svær og over 55 meget svær. For webindhold på dansk er målet et LIX under 40.</p><p class=\"text-mid mb-4\">Dette værktøj bruger en Flesch-tilpasning for dansk, som fungerer på lignende måde, men med en 0–100-skala. Korte sætninger (15–20 ord) og korte afsnit (3–4 sætninger) forbedrer læsbarheden på skærme markant. Dansk har sammensatte ord (f.eks. &quot;søgemaskineoptimering&quot;, &quot;boligforsikringsselskab&quot;), der øger den gennemsnitlige ordlængde uden at teksten nødvendigvis bliver sværere.</p><p class=\"text-mid\">Den gennemsnitlige ordlængde i danske tekster ligger på 5–6 tegn — højere end engelskens 4–5 tegn. Det skyldes sammensætninger og bøjningsendelser. Sammenlign derfor kun læsbarhedsværdier inden for det samme sprog. Et Flesch-værdi på 55 for en dansk tekst svarer ikke til den samme sværhedsgrad som 55 for en engelsk tekst.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om ord- og tegntælleren",
       "openByDefault": 1,

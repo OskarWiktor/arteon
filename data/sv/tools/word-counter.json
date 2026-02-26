@@ -373,6 +373,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Ideal textlängd för svenska webbplatser",
+      "html": "<p class=\"text-mid mb-4\">Långa bloggartiklar på svenska presterar bäst i sökresultaten vid 1 200–2 000 ord. Kortare inlägg (600–1 000 ord) fungerar för praktiska guider och svar på specifika frågor. Inlägg under 500 ord når sällan höga positioner, om de inte besvarar en mycket specifik sökfråga.</p><p class=\"text-mid mb-4\">Produktbeskrivningar i svenska webbutiker bör innehålla 150–300 ord. På Tradera har annonsrubriker en gräns på 80 tecken, på Blocket 70 tecken. Kategoribeskrivningar med 200–400 ord hjälper sökmotorer att förstå sidans tematik. På CDON och andra svenska marknadsplatser är detaljerade produktbeskrivningar en konkurrensfördel.</p><p class=\"text-mid\">Tjänstesidor (tandläkarmottagning, advokatbyrå, hantverkare) behöver 500–800 ord med konkret information: tjänsteutbud, upptagningsområde, kontaktuppgifter. Antalet ord i sig är inget kvalitetsmått — en koncis text på 600 ord med användbar information överträffar en utdragen text på 2 000 ord utan mervärde.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Standardsida och översättningsnormer i Sverige",
+      "html": "<p class=\"text-mid mb-4\">Översättningsbyråer i Sverige debiterar per ord eller per standardsida. En standardsida motsvarar 1 500 tecken inklusive mellanslag (cirka 200–250 ord). Innan du begär en offert, klistra in texten i räknaren och kontrollera antalet tecken med mellanslag för att uppskatta kostnaden. En text med 15 000 tecken inklusive mellanslag motsvarar 10 standardsidor.</p><p class=\"text-mid mb-4\">Svenska förlag mäter manuskript i standardsidor eller antal ord. Redaktörer och korrekturläsare använder teckenräknaren för att snabbt bedöma ett manuskripts omfång innan de föreslår ett pris. Standardsidan är också den vanliga enheten för redigerings- och korrekturarbete i Sverige.</p><p class=\"text-mid\">Svenska universitet anger krav på uppsatser i antal ord. En kandidatuppsats omfattar vanligtvis 10 000–15 000 ord, en masteruppsats 15 000–25 000 ord och en doktorsavhandling över 50 000 ord. Kraven varierar mellan lärosäten och fakulteter — kontrollera alltid kursplanen för din utbildning.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Läsbarhet på svenska — LIX-indexet och Flesch-anpassningen",
+      "html": "<p class=\"text-mid mb-4\">Sverige har en egen läsbarhetsstandard: LIX (Läsbarhetsindex), utvecklat av Carl-Hugo Björnsson på 1960-talet. LIX räknas ut genom att addera andelen långa ord (mer än 6 tecken) till den genomsnittliga meningslängden. Ett LIX under 30 betyder mycket lättläst text, 30–40 lättläst, 40–50 medel, 50–60 svår och över 60 mycket svår. För webbinnehåll på svenska är målet LIX under 40.</p><p class=\"text-mid mb-4\">Detta verktyg använder en Flesch-anpassning för svenska, som fungerar på ett liknande sätt men med en 0–100-skala. Korta meningar (15–20 ord) och korta stycken (3–4 meningar) förbättrar läsbarheten på skärmar avsevärt. Svenska har sammansatta ord (t.ex. &quot;sökmotoroptimering&quot;, &quot;hemförsäkringsjämförelse&quot;) som ökar den genomsnittliga ordlängden utan att texten nödvändigtvis blir svårare.</p><p class=\"text-mid\">Den genomsnittliga ordlängden i svenska texter ligger på 5–6 tecken — högre än engelskans 4–5 tecken. Det beror på sammansättningar och böjningsändelser. Jämför därför läsbarhetsvärden bara inom samma språk. Ett Flesch-värde på 55 för en svensk text motsvarar inte samma svårighetsgrad som 55 för en engelsk text.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanliga frågor om ord- och teckenräknaren",
       "openByDefault": 1,

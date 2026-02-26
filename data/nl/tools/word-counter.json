@@ -371,6 +371,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Ideale tekstlengte voor Nederlandstalige websites",
+      "html": "<p class=\"text-mid mb-4\">Uitgebreide blogartikelen in het Nederlands presteren het best bij een lengte van 1 200–2 000 woorden. Kortere artikelen (600–1 000 woorden) werken goed voor praktische handleidingen en antwoorden op specifieke vragen. Artikelen onder de 500 woorden bereiken zelden hoge posities, tenzij ze een zeer specifieke zoekvraag beantwoorden.</p><p class=\"text-mid mb-4\">Productbeschrijvingen in Nederlandse webshops moeten 150–300 woorden bevatten. Op Bol.com kunnen bullet points elk 500 tekens lang zijn — gebruik die ruimte voor concrete productvoordelen in plaats van algemene zinnen. Categoriebeschrijvingen van 200–400 woorden helpen zoekmachines om de pagina thematisch in te delen.</p><p class=\"text-mid\">Dienstenpagina's (tandartspraktijk, advocatenkantoor, aannemersbedrijf) hebben 500–800 woorden nodig met concrete informatie: dienstenaanbod, werkgebied, bereikbaarheid. Het aantal woorden alleen is geen kwaliteitsindicator — een beknopte tekst van 600 woorden met nuttige informatie presteert beter dan een opgeblazen tekst van 2 000 woorden zonder meerwaarde.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Standaardbladzijde en vertaalnormen in Nederland en België",
+      "html": "<p class=\"text-mid mb-4\">Vertaalbureaus in Nederland en België rekenen af per woord of per standaardbladzijde. Een standaardbladzijde telt 1 800 tekens inclusief spaties (ongeveer 250–300 woorden). Voordat u een vertaalofferte aanvraagt, plak uw tekst in de teller en controleer het aantal tekens met spaties om de kosten te schatten. Een tekst van 18 000 tekens met spaties is precies 10 standaardbladzijden.</p><p class=\"text-mid mb-4\">Uitgeverijen in Nederland en Vlaanderen meten manuscripten in standaardbladzijden of in woorden. Redacteurs en correctoren gebruiken de tekenteller om snel het volume van een manuscript in te schatten voordat ze een tarief voorstellen. De standaardbladzijde is ook de gebruikelijke eenheid voor redactie- en correctiewerk.</p><p class=\"text-mid\">Nederlandse en Vlaamse universiteiten stellen eisen aan scripties in woorden. Een bachelorscriptie telt doorgaans 8 000–12 000 woorden, een masterscriptie 15 000–25 000 woorden en een proefschrift meer dan 50 000 woorden. De eisen verschillen per faculteit — raadpleeg het onderwijs- en examenreglement van uw opleiding.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Leesbaarheid in het Nederlands — de Flesch-Douma formule",
+      "html": "<p class=\"text-mid mb-4\">De Flesch-Douma formule is de Nederlandse aanpassing van Flesch Reading Ease. De coëfficiënten zijn aangepast om rekening te houden met de samengestelde woorden die kenmerkend zijn voor het Nederlands. Een woord als &quot;zoekmachineoptimalisatie&quot; is 24 tekens lang, maar voor een Nederlandstalige lezer niet moeilijk. De Flesch-Douma formule houdt hier rekening mee door andere gewichten te gebruiken.</p><p class=\"text-mid mb-4\">Een goed doel voor Nederlandstalige webcontent is een Flesch-Douma score tussen 60 en 70. Scores boven 70 wijzen op zeer eenvoudige taal (geschikt voor een breed publiek). Scores onder 40 duiden op academische of juridische teksten. Korte zinnen (15–20 woorden) en korte alinea's (3–4 zinnen) verbeteren de leesbaarheid op beeldschermen aanzienlijk.</p><p class=\"text-mid\">De gemiddelde woordlengte in het Nederlands ligt bij 6–7 tekens — hoger dan de 4–5 tekens in het Engels. Dit komt door de samengestelde woorden en grammaticale uitgangen. Vergelijk leesbaarheidsscores daarom alleen binnen dezelfde taal. Een Flesch-Douma score van 55 voor een Nederlandse tekst is niet direct vergelijkbaar met een Flesch score van 55 voor een Engelse tekst, omdat de formules verschillende coëfficiënten en inputmetriken gebruiken.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Veelgestelde vragen over de woorden- en tekenteller",
       "openByDefault": 1,
