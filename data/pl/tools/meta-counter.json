@@ -264,6 +264,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Jak pisać meta title i description dla polskich stron internetowych",
+      "html": "<p class=\"text-mid mb-4\">Polskie znaki diakrytyczne — ą, ę, ó, ź, ż, ł, ć, ś, ń — mają zbliżoną szerokość pikselową do swoich łacińskich odpowiedników. Litera ł zajmuje mniej więcej tyle co l, a ż tyle co z. W praktyce oznacza to, że limity pikselowe dla polskich tytułów są takie same jak dla angielskich. Warto to jednak weryfikować w narzędziu, bo pojedyncze znaki mogą nieznacznie różnić się szerokością w zależności od czcionki renderowanej przez Google.</p><p class=\"text-mid mb-4\">Większość polskich stron korzysta z WordPressa. Wtyczki Yoast SEO i Rank Math pozwalają ustawić meta title i description bezpośrednio w edytorze wpisu lub strony. Shoper i IdoSell — popularne polskie platformy sklepowe — mają osobne pola na tytuł SEO i opis w ustawieniach każdego produktu i kategorii. PrestaShop, używany przez wiele polskich sklepów, pozwala edytować meta tagi w zakładce SEO danej strony lub produktu.</p><p class=\"text-mid\">Przy pisaniu meta tagów po polsku unikaj niepotrzebnych anglicyzmów. Zamiast &quot;free tool&quot; napisz &quot;darmowe narzędzie&quot;. Zamiast &quot;best&quot; użyj &quot;sprawdzony&quot; lub &quot;skuteczny&quot;. Frazy kluczowe powinny brzmieć naturalnie w zdaniu — Google rozpoznaje sztuczne upychanie słów kluczowych i może obniżyć ocenę strony.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Meta tagi dla polskiego e-commerce — Allegro, własny sklep, marketplace",
+      "html": "<p class=\"text-mid mb-4\">Tytuł strony produktowej w sklepie internetowym powinien zawierać markę, nazwę produktu i kluczowy atrybut. Przykład: &quot;Nike Air Max 90 — buty męskie do biegania, rozmiar 42&quot;. Taki tytuł zawiera markę, model, kategorię i rozmiar — cztery informacje, które użytkownik widzi od razu w wynikach wyszukiwania.</p><p class=\"text-mid mb-4\">Opisy kategorii w polskich sklepach często są zbyt ogólne. Zamiast &quot;Buty damskie — nasz sklep&quot; napisz &quot;Buty damskie — ponad 300 modeli od Nike, Adidas i New Balance. Darmowa dostawa od 200 zł&quot;. Taki opis sygnalizuje szerokość oferty i podaje konkretną korzyść. Meta description kategorii powinien zachęcać do kliknięcia, nie tylko opisywać zawartość.</p><p class=\"text-mid\">Sezonowość ma znaczenie. Przed Black Friday, Bożym Narodzeniem czy sezonem Back to School warto zaktualizować tytuły i opisy kluczowych kategorii. Dodaj informację o promocji lub rabacie bezpośrednio w meta description — użytkownicy widzą ją w wynikach Google i chętniej klikają, gdy widzą konkretną ofertę.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Optymalizacja meta tagów dla lokalnego SEO w Polsce",
+      "html": "<p class=\"text-mid mb-4\">Lokalne firmy usługowe powinny umieszczać nazwę miasta w meta title. Struktura sprawdzona w praktyce: &quot;[Usługa] [Miasto] — [Nazwa firmy]&quot;. Przykład: &quot;Dentysta Kraków — Gabinet Stomatologiczny NowyUśmiech&quot;. Taki tytuł zawiera frazę kluczową z miastem na początku, co zwiększa szanse na wyświetlenie w lokalnych wynikach wyszukiwania.</p><p class=\"text-mid mb-4\">Meta description dla strony lokalnej firmy powinien zawierać adres lub dzielnicę, godziny otwarcia i główną korzyść. Przykład: &quot;Gabinet stomatologiczny w centrum Krakowa, ul. Floriańska. Zapisy online, bez kolejek. Poniedziałek–piątek 8:00–18:00&quot;. Google często wyświetla te informacje w rozszerzonych wynikach, więc warto je mieć zarówno w meta description, jak i na stronie.</p><p class=\"text-mid\">Spójność między meta tagami strony a wizytówką Google Business Profile jest ważna. Jeśli w tytule strony masz &quot;Dentysta Kraków&quot;, a w wizytówce Google widnieje &quot;Stomatolog Kraków-Podgórze&quot;, Google może mieć problem z powiązaniem obu źródeł. Użyj tej samej nazwy firmy i tego samego formatu adresu w obu miejscach.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Najczęstsze pytania dotyczące licznika długości tytułu i opisu meta tagów",
       "openByDefault": 1,

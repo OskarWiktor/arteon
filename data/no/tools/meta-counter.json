@@ -251,6 +251,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Skrive meta-tagger for norske nettsider",
+      "html": "<p class=\"text-mid mb-4\">Norske spesialtegn — æ, ø, å — har en pikselbredde som ligner grunnbokstavene. I praksis betyr det at de anbefalte pikselgrensene for norske titler er de samme som for engelske. Sjekk likevel i verktøyet, fordi sammensatte ord som &quot;søkemotoroptimalisering&quot; eller &quot;boligforsikringsselskap&quot; bruker vesentlig flere piksler enn korte engelske begreper.</p><p class=\"text-mid mb-4\">WordPress er det mest brukte CMS-et i Norge. Tilleggene Yoast SEO og Rank Math legger til en meta-boks under editoren der du skriver tittel og beskrivelse. Shopify er populært blant norske nettbutikker og har dedikerte SEO-felt for hvert produkt og kategori. Et viktig norsk aspekt er valget mellom bokmål og nynorsk — meta-taggene bør skrives på samme målform som resten av nettstedet for å sikre konsistens med innholdet.</p><p class=\"text-mid\">Unngå unødvendige anglisismer i norske meta-tagger. &quot;Gratis frakt&quot; fungerer bedre enn &quot;Free shipping&quot; for et norsk publikum. &quot;Bestill time&quot; er mer naturlig enn &quot;Book now&quot;. Nøkkelordene bør samsvare med det norske brukere faktisk skriver i Google — bruk Googles autofullføring for å sjekke hvilke formuleringer som er vanligst i din bransje.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Meta-tagger for norsk netthandel",
+      "html": "<p class=\"text-mid mb-4\">Produktsidens tittel i en norsk nettbutikk bør følge en tydelig struktur: Merke + Produktnavn + Nøkkelegenskap. Eksempel: &quot;Helly Hansen Odin Mountain 3L Shell — skalljakke, vanntett, blå&quot;. Denne tittelen inneholder merke, modell, kategori, egenskap og farge — fem opplysninger som kjøperen ser direkte i søkeresultatene.</p><p class=\"text-mid mb-4\">Kategoribeskrivelser overses ofte i norske nettbutikker. I stedet for &quot;Skalljakker — vår butikk&quot; skriv: &quot;Over 60 skalljakker fra Helly Hansen, Norrøna og Bergans. Gratis frakt over 500 kr&quot;. Teksten viser sortimentets bredde, nevner kjente merker og angir en konkret fordel. Google viser kategoribeskrivelser ved brede søk med høyt volum.</p><p class=\"text-mid\">FINN.no, Elkjøp og Prisjakt har egne regler for produkttitler. På din egen nettside har du full kontroll. Bruk dette verktøyet til å sjekke lengden før publisering — spesielt før Black Friday, julehandelen eller januarsalget, når oppdaterte meta-tagger kan øke klikkfrekvensen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Lokal SEO i Norge — optimalisering for byer og regioner",
+      "html": "<p class=\"text-mid mb-4\">Lokale tjenesteytere bør inkludere bynavnet i meta-tittelen. Anbefalt struktur: &quot;[Tjeneste] [By] — [Firmanavn]&quot;. Eksempel: &quot;Tannlege Oslo Grünerløkka — Tannklinikken Smil&quot;. Tittelen inneholder den lokale søkefrasen i begynnelsen, der den har størst SEO-verdi. For bedrifter med flere lokasjoner lønner det seg å opprette en egen side per by med unik tittel og beskrivelse.</p><p class=\"text-mid mb-4\">Meta-beskrivelsen for en lokal bedrift bør inneholde adresse eller bydel, åpningstider og en konkret fordel. Eksempel: &quot;Tannklinikk på Grünerløkka i Oslo. Bestill time online, korte ventetider. Mandag–fredag 8–17&quot;. Google viser ofte denne informasjonen i utvidede søkeresultater, noe som hjelper den søkende med å ta en beslutning uten å besøke nettsiden.</p><p class=\"text-mid\">Bransjer med sterk lokal SEO i Norge omfatter restaurant, helse, eiendom, advokater og håndverkere. Sørg for at Google Bedriftsprofilen og nettsiden bruker samme firmanavn og adresseformat. Avvik mellom disse kildene kan gjøre det vanskeligere for Google å koble dem sammen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stilte spørsmål om meta-tittel- og beskrivelsessjekkerern",
       "openByDefault": 1,

@@ -252,6 +252,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Psaní meta tagů pro české weby",
+      "html": "<p class=\"text-mid mb-4\">České znaky s háčky a čárkami — č, ř, š, ž, ě, á, é, í, ó, ú, ý, ů — mají podobnou šířku v pixelech jako jejich základní protějšky. Písmeno č zabírá přibližně stejně jako c, ř jako r. V praxi to znamená, že doporučené pixelové limity pro české titulky jsou stejné jako pro anglické. Ověřte si to ale v nástroji, protože některé kombinace znaků mohou být o něco širší v závislosti na fontu, který Google používá.</p><p class=\"text-mid mb-4\">WordPress dominuje českému trhu. Pluginy Yoast SEO a Rank Math přidávají meta box pod editor, kde zadáte titulek a popis. Shoptet — nejpoužívanější česká e-shopová platforma — má vlastní pole pro SEO titulek a popis u každého produktu a kategorie. PrestaShop a WooCommerce jsou další populární volby pro české online obchody.</p><p class=\"text-mid\">Při psaní českých meta tagů se vyhněte zbytečným anglicismům. &quot;Doprava zdarma&quot; funguje lépe než &quot;Free shipping&quot; pro české publikum. &quot;Objednat nyní&quot; je přirozenější než &quot;Buy now&quot;. Klíčová slova by měla odpovídat výrazům, které čeští uživatelé skutečně zadávají do Googlu — použijte funkci automatického doplňování Google pro ověření nejčastějších formulací ve vašem oboru.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Meta tagy pro český e-shop",
+      "html": "<p class=\"text-mid mb-4\">Titulek produktové stránky v českém e-shopu by měl sledovat jasnou strukturu: Značka + Název produktu + Klíčový atribut. Příklad: &quot;Bosch Aku vrtačka GSR 18V-60 — 18V, 2x 4Ah baterie&quot;. Tento titulek obsahuje značku, model, napětí a příslušenství — čtyři informace, které kupující okamžitě vidí ve výsledcích vyhledávání.</p><p class=\"text-mid mb-4\">Popisy kategorií jsou v českých e-shopech často opomíjeny. Místo &quot;Aku vrtačky — náš obchod&quot; napište: &quot;Přes 60 aku vrtaček od Bosch, Makita a DeWalt. Doprava zdarma od 1 000 Kč&quot;. Tento text ukazuje šíři sortimentu, jmenuje známé značky a uvádí konkrétní výhodu. Google zobrazuje popisy kategorií u širokých vyhledávání s vysokým objemem.</p><p class=\"text-mid\">Heureka.cz, Zboží.cz a Mall.cz mají vlastní pravidla pro titulky produktů. Na vlastním webu máte plnou kontrolu. Použijte tento nástroj ke kontrole délky před publikací — zejména před Black Friday, Vánocemi nebo lednovými výprodeji, kdy aktualizované meta tagy mohou zvýšit míru prokliku.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Lokální SEO v Česku — optimalizace pro města a regiony",
+      "html": "<p class=\"text-mid mb-4\">Místní firmy poskytující služby by měly zahrnout název města do meta titulku. Osvědčená struktura: &quot;[Služba] [Město] — [Název firmy]&quot;. Příklad: &quot;Zubař Praha 2 — Zubní klinika Úsměv&quot;. Tento titulek obsahuje lokální vyhledávací frázi na začátku, kde má největší SEO hodnotu. Pro firmy s více pobočkami se vyplatí vytvořit samostatnou stránku pro každé město s unikátním titulkem a popisem.</p><p class=\"text-mid mb-4\">Meta description místní firmy by měl obsahovat adresu nebo čtvrť, otevírací dobu a konkrétní výhodu. Příklad: &quot;Zubní klinika na Vinohradech v Praze. Online objednání, krátké čekací doby. Pondělí–pátek 8:00–18:00&quot;. Google často zobrazuje tyto informace v rozšířených výsledcích, což pomáhá hledajícímu rozhodnout se bez návštěvy webu.</p><p class=\"text-mid\">V Česku lokální vyhledávání často zahrnuje městskou část nebo okres: &quot;zubař Praha Vinohrady&quot;, &quot;instalatér Brno-střed&quot;. Obory se silným lokálním SEO v Česku zahrnují gastronomii, zdravotnictví, realitní služby, advokáty a řemeslníky. Zajistěte, aby Firemní profil Google a webové stránky používaly stejný název firmy a formát adresy.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o kontrole meta titulku a popisu",
       "openByDefault": 1,

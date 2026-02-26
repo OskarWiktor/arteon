@@ -260,6 +260,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Escribir meta tags para sitios hispanohablantes",
+      "html": "<p class=\"text-mid mb-4\">Los caracteres especiales del español — ñ, á, é, í, ó, ú, ü y ¿ ¡ — tienen un ancho en píxeles similar al de sus equivalentes sin acento. Un título con muchos acentos no será significativamente más ancho que uno sin ellos. Sin embargo, conviene verificarlo en la herramienta, porque algunas combinaciones de caracteres pueden producir resultados inesperados según la fuente que Google usa para renderizar.</p><p class=\"text-mid mb-4\">WordPress domina el mercado hispanohablante. Los plugins Yoast SEO y Rank Math permiten definir el título y la descripción directamente en el editor de cada página o entrada. PrestaShop es popular en España, mientras que en Latinoamérica Tiendanube, Shopify y WooCommerce tienen una presencia fuerte. Cada plataforma tiene campos dedicados para los meta tags — verifique que el tema no los sobrescriba.</p><p class=\"text-mid\">Al escribir meta tags en español, tenga en cuenta las diferencias entre España y Latinoamérica. En España se busca &quot;móvil&quot;, en México &quot;celular&quot;, en Argentina &quot;celu&quot;. &quot;Ordenador&quot; en España es &quot;computadora&quot; en la mayoría de países latinoamericanos. Adapte las palabras clave del título y la descripción al mercado objetivo — use la función de autocompletar de Google en el país correspondiente para verificar qué términos usa su audiencia.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Meta tags para e-commerce en el mundo hispanohablante",
+      "html": "<p class=\"text-mid mb-4\">El título de una página de producto debe seguir una estructura coherente: Marca + Nombre del producto + Atributo clave. Ejemplo: &quot;Samsung Galaxy S24 Ultra — smartphone 256 GB, titanio negro&quot;. Este título contiene marca, modelo, capacidad y color — cuatro datos que el comprador ve de inmediato en los resultados de búsqueda.</p><p class=\"text-mid mb-4\">Las descripciones de categoría suelen estar descuidadas en las tiendas hispanas. En lugar de &quot;Smartphones — nuestra tienda&quot;, escriba: &quot;Más de 80 smartphones Samsung, Apple y Xiaomi. Envío gratis a partir de 50 €&quot;. Este texto señala la amplitud de la oferta, cita marcas conocidas y menciona un beneficio concreto. Las descripciones de categoría aparecen en Google para búsquedas amplias y de alto volumen.</p><p class=\"text-mid\">Amazon.es, El Corte Inglés, MercadoLibre y Falabella tienen reglas propias para títulos de producto. En su propio sitio web, usted tiene control total. Use esta herramienta para verificar la longitud antes de publicar — especialmente antes del Black Friday, Buen Fin (México), CyberMonday o rebajas de temporada, cuando meta tags actualizados pueden aumentar la tasa de clics.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SEO local en el mundo hispanohablante",
+      "html": "<p class=\"text-mid mb-4\">Los negocios locales de servicios deben incluir el nombre de la ciudad en el meta title. Estructura recomendada: &quot;[Servicio] [Ciudad] — [Nombre del negocio]&quot;. Ejemplo: &quot;Dentista Madrid Centro — Clínica Dental Sonríe&quot;. Este título contiene la consulta local al principio, donde tiene mayor valor para el posicionamiento. Para empresas con varias sedes, cree una página dedicada por ciudad con título y descripción únicos.</p><p class=\"text-mid mb-4\">La meta description de un negocio local debe contener dirección o barrio, horario y una ventaja concreta. Ejemplo: &quot;Clínica dental en el centro de Madrid, calle Gran Vía. Cita online, sin esperas. Lunes a viernes 9:00–20:00&quot;. Google muestra estas informaciones en los resultados enriquecidos, lo que ayuda al usuario a decidir sin visitar el sitio.</p><p class=\"text-mid\">En Latinoamérica, las búsquedas locales incluyen a menudo la colonia o delegación además de la ciudad: &quot;dentista Polanco&quot;, &quot;plomero Providencia Santiago&quot;. Los sectores con fuerte SEO local en el mundo hispano incluyen gastronomía, turismo, servicios médicos, abogados e inmobiliaria. Asegúrese de que el Perfil de Empresa de Google y el sitio web utilicen la misma denominación y el mismo formato de dirección.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Preguntas frecuentes sobre el verificador de meta título y descripción",
       "openByDefault": 1,

@@ -250,6 +250,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Escrever meta tags para sites lusófonos",
+      "html": "<p class=\"text-mid mb-4\">Os acentos e caracteres especiais do português — á, â, ã, à, é, ê, í, ó, ô, õ, ú, ç — têm uma largura em píxeis semelhante à dos seus equivalentes sem acento. Um título com muitos acentos não será significativamente mais largo do que um sem eles. Verifique sempre na ferramenta, porque algumas combinações podem produzir resultados inesperados conforme a fonte usada pelo Google.</p><p class=\"text-mid mb-4\">WordPress domina o mercado lusófono. Os plugins Yoast SEO e Rank Math permitem definir o título e a descrição diretamente no editor de cada página ou artigo. No Brasil, Nuvemshop (Tiendanube) e Loja Integrada são plataformas populares com campos dedicados para meta tags. Em Portugal, WooCommerce e Shopify são as escolhas mais comuns para lojas online.</p><p class=\"text-mid\">Ao escrever meta tags em português, tenha em conta as diferenças entre PT-PT e PT-BR. Em Portugal pesquisa-se &quot;telemóvel&quot;, no Brasil &quot;celular&quot;. &quot;Autocarro&quot; em Portugal é &quot;ônibus&quot; no Brasil. &quot;Descontos&quot; funciona em ambos os mercados, mas &quot;promoções&quot; é mais comum no Brasil. Adapte as palavras-chave do título e da descrição ao mercado-alvo — use a função de preenchimento automático do Google no país correspondente para verificar que termos o seu público utiliza.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Meta tags para e-commerce no mercado lusófono",
+      "html": "<p class=\"text-mid mb-4\">O título de uma página de produto deve seguir uma estrutura coerente: Marca + Nome do Produto + Atributo Chave. Exemplo: &quot;Nespresso Vertuo Next — máquina de café, cápsulas, preto mate&quot;. Este título contém marca, modelo, categoria e cor — quatro informações que o comprador vê de imediato nos resultados de pesquisa.</p><p class=\"text-mid mb-4\">As descrições de categoria são frequentemente negligenciadas nas lojas lusófonas. Em vez de &quot;Máquinas de café — a nossa loja&quot;, escreva: &quot;Mais de 40 máquinas de café Nespresso, DeLonghi e Philips. Envio grátis acima de 50 €&quot;. Este texto comunica a profundidade do sortido, cita marcas reconhecidas e menciona uma vantagem concreta.</p><p class=\"text-mid\">Mercado Livre (Brasil), Worten e FNAC (Portugal) têm regras próprias para títulos de produto. No seu próprio site, tem controlo total. Use esta ferramenta para verificar o comprimento antes de publicar — especialmente antes da Black Friday, Natal ou saldos de estação, quando meta tags atualizados podem aumentar a taxa de cliques.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SEO local no mundo lusófono",
+      "html": "<p class=\"text-mid mb-4\">Os negócios locais de serviços devem incluir o nome da cidade no meta title. Estrutura recomendada: &quot;[Serviço] [Cidade] — [Nome do negócio]&quot;. Exemplo: &quot;Dentista Lisboa Campo Grande — Clínica Dentária Sorrir&quot;. Este título contém a pesquisa local no início, onde tem maior valor para o posicionamento. Para empresas com várias localizações, crie uma página dedicada por cidade com título e descrição únicos.</p><p class=\"text-mid mb-4\">A meta description de um negócio local deve conter morada ou bairro, horário e uma vantagem concreta. Exemplo: &quot;Clínica dentária em Campo Grande, Lisboa. Marcação online, sem filas de espera. Segunda a sexta 9:00–19:00&quot;. O Google mostra frequentemente estas informações nos resultados enriquecidos, ajudando o utilizador a decidir sem visitar o site.</p><p class=\"text-mid\">No Brasil, as pesquisas locais incluem frequentemente o bairro além da cidade: &quot;dentista Pinheiros São Paulo&quot;, &quot;encanador Copacabana Rio&quot;. Os setores com forte SEO local no mundo lusófono incluem gastronomia, turismo, serviços médicos, advocacia e imobiliário. Certifique-se de que o Perfil da Empresa no Google e o site utilizam a mesma denominação e o mesmo formato de morada.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Perguntas frequentes sobre o verificador de meta título",
       "openByDefault": 1,

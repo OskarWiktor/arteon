@@ -251,6 +251,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Skrive meta-tags for danske hjemmesider",
+      "html": "<p class=\"text-mid mb-4\">Danske specialtegn — æ, ø, å — har en pixelbredde, der ligner deres grundbogstaver. I praksis betyder det, at de anbefalede pixelgrænser for danske titler er de samme som for engelske. Tjek alligevel i værktøjet, fordi sammensatte ord som &quot;søgemaskineoptimering&quot; eller &quot;ejendomsmæglerforening&quot; bruger væsentligt flere pixels end korte engelske udtryk.</p><p class=\"text-mid mb-4\">WordPress er det mest brugte CMS i Danmark. Plugins som Yoast SEO og Rank Math tilføjer en meta-boks under editoren, hvor du kan skrive titel og beskrivelse. Shopify er populært blandt danske webshops og har dedikerede SEO-felter for hvert produkt og kategori. Sitecore bruges af mange større danske virksomheder og organisationer — det har egne felter for meta-titel og beskrivelse i sideegenskaberne.</p><p class=\"text-mid\">Undgå unødvendige anglicismer i danske meta-tags. &quot;Gratis levering&quot; fungerer bedre end &quot;Free shipping&quot; for et dansk publikum. &quot;Bestil tid&quot; er mere naturligt end &quot;Book now&quot;. Nøgleordene bør matche de udtryk, som danske brugere faktisk skriver i Google — brug Googles autofuldførelse til at kontrollere, hvilke formuleringer der er mest almindelige i din branche.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Meta-tags for dansk e-handel",
+      "html": "<p class=\"text-mid mb-4\">Produktsidens titel i en dansk webshop bør følge en klar struktur: Mærke + Produktnavn + Nøgleegenskab. Eksempel: &quot;Bang &amp; Olufsen Beoplay H95 — trådløse hovedtelefoner, aktiv støjreduktion&quot;. Denne titel indeholder mærke, model, kategori og nøglefunktion — fire oplysninger, som køberen ser med det samme i søgeresultaterne.</p><p class=\"text-mid mb-4\">Kategoribeskrivelser bliver ofte overset i danske webshops. I stedet for &quot;Hovedtelefoner — vores butik&quot; skriv: &quot;Over 50 hovedtelefoner fra Bang &amp; Olufsen, Sony og Jabra. Gratis levering over 500 kr&quot;. Teksten viser sortimentets bredde, nævner kendte mærker og angiver en konkret fordel. Google viser kategoribeskrivelser ved brede søgninger med højt volumen.</p><p class=\"text-mid\">DBA.dk, Proshop og PriceRunner har egne regler for produkttitler. På din egen hjemmeside har du fuld kontrol. Brug dette værktøj til at tjekke længden inden publicering — især før Black Friday, julehandlen eller januarudsalget, hvor opdaterede meta-tags kan øge klikraten.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Lokal SEO i Danmark — optimering for byer og regioner",
+      "html": "<p class=\"text-mid mb-4\">Lokale servicevirksomheder bør inkludere bynavnet i meta-titlen. Anbefalet struktur: &quot;[Tjeneste] [By] — [Virksomhedsnavn]&quot;. Eksempel: &quot;Tandlæge København Østerbro — Tandklinikken Smil&quot;. Titlen indeholder den lokale søgefrase i begyndelsen, hvor den har størst SEO-værdi. For virksomheder med flere lokationer lønner det sig at oprette en separat side per by med unik titel og beskrivelse.</p><p class=\"text-mid mb-4\">Meta-beskrivelsen for en lokal virksomhed bør indeholde adresse eller bydel, åbningstider og en konkret fordel. Eksempel: &quot;Tandklinik på Østerbro i København. Book online, korte ventetider. Mandag–fredag 8–17&quot;. Google viser ofte disse oplysninger i udvidede søgeresultater, hvilket hjælper den søgende med at træffe en beslutning uden at besøge hjemmesiden.</p><p class=\"text-mid\">Brancher med stærk lokal SEO i Danmark omfatter restaurant, sundhed, ejendomsmæglere, advokater og håndværkere. Sørg for, at Google Virksomhedsprofilen og hjemmesiden bruger det samme virksomhedsnavn og adresseformat. Uoverensstemmelser mellem disse kilder kan gøre det sværere for Google at forbinde dem.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om meta-titel og beskrivelseskontrollen",
       "openByDefault": 1,

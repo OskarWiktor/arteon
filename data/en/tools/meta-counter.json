@@ -260,6 +260,51 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Writing meta titles that earn clicks — beyond character limits",
+      "html": "<p class=\"text-mid mb-4\">A title that fits within 580 pixels is only the first step. The next step is making it compelling enough to click. Front-load the primary keyword — put the most important words at the very beginning of the title. Users scan search results quickly, and words at the start get the most attention. Numbers attract the eye: &quot;9 free SEO tools&quot; outperforms &quot;Free SEO tools for your website&quot; in click-through rate.</p><p class=\"text-mid mb-4\">The title tag and the H1 heading on the page do not need to be identical. The title tag is for search results — it should contain the target keyword and a reason to click. The H1 is for visitors already on the page — it can be longer, more descriptive, or use a different phrasing. Google compares the two and may rewrite your title if they are too different, so keep them thematically aligned.</p><p class=\"text-mid\">Place the brand name at the end of the title, after a separator like &quot;|&quot; or &quot;—&quot;. The brand adds trust but rarely drives clicks on its own. Exception: if the brand is well-known and relevant to the query (e.g., &quot;Nike running shoes&quot;), the brand name can go first. Remove filler adjectives like &quot;best&quot;, &quot;top&quot;, &quot;amazing&quot; — they waste pixel space and rarely influence click behavior.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Meta descriptions that drive click-through rate",
+      "html": "<p class=\"text-mid mb-4\">A meta description is a short ad for your page. It should answer the question: why should the searcher click this result instead of the nine others on the page? Start with the main benefit or answer. If the page is a guide, say what the reader will learn. If it is a product page, mention the key feature or price range. If it is a service page, state the outcome.</p><p class=\"text-mid mb-4\">Use active voice and direct language. &quot;Learn how to optimize your meta tags in 5 minutes&quot; is stronger than &quot;This article discusses meta tag optimization methods.&quot; End the description with a call to action: &quot;Check your titles now&quot;, &quot;Compare prices&quot;, &quot;Read the full guide&quot;. The call to action gives the searcher a clear next step.</p><p class=\"text-mid\">Google sometimes ignores your meta description and generates its own snippet from the page content. This happens more often when the description does not match the search query. To reduce this, write descriptions that closely match the main keywords the page targets. If a page targets multiple queries, consider updating the description when you notice Google overriding it for high-traffic terms.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Meta tags for e-commerce: product pages, category pages, and homepages",
+      "html": "<p class=\"text-mid mb-4\">Product page titles should follow a consistent structure: Brand + Product Name + Key Attribute. Example: &quot;Nike Air Max 90 — Men's Running Shoes, Size 10&quot;. This format gives the searcher brand, model, category and size in one glance. Avoid stuffing multiple keywords — one clear, specific title outperforms a list of synonyms.</p><p class=\"text-mid mb-4\">Category page descriptions should signal the breadth of the selection. &quot;Shop 200+ running shoes from Nike, Adidas, and New Balance. Free shipping over $50&quot; tells the searcher three things: variety, brands, and a benefit. Compare that to &quot;Running shoes — our store&quot;, which says almost nothing. Category descriptions are often neglected, but they appear in search results for broad, high-volume queries.</p><p class=\"text-mid\">Homepage meta tags serve a different purpose. The homepage title should position the brand and its primary offering: &quot;Arteon — Web Design, SEO and Branding Agency&quot;. The description should summarize what the business does and for whom. Avoid duplicate descriptions across pages — Google may flag them as low quality. Each page needs a unique description that matches its specific content.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How Google rewrites your title tag — and how to prevent it",
+      "html": "<p class=\"text-mid mb-4\">Since August 2021, Google uses an automated system to generate the title shown in search results. In many cases, Google will use your title tag as-is. But if the system decides the title is not a good match for the query, it will rewrite it — pulling text from the H1, other headings, anchor text of links pointing to the page, or even the page content.</p><p class=\"text-mid mb-4\">Common triggers for title rewrites include: the title is too long and gets truncated, the title does not match the page content, the title contains repetitive boilerplate (e.g., every page starts with the brand name), or the title is stuffed with keywords. Half-empty titles also get rewritten — if your title is only 20 characters, Google assumes it is incomplete and will try to improve it.</p><p class=\"text-mid\">To reduce the chance of rewrites, keep the title within the recommended pixel width, make sure it closely matches the H1 heading, and avoid repeating the site name at both the beginning and end. Use this checker tool to verify the length before publishing. If Google still rewrites a title, check in Google Search Console under the &quot;Page Indexing&quot; report — it shows the title Google actually displays.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Meta tags across platforms: WordPress, Shopify, and custom sites",
+      "html": "<p class=\"text-mid mb-4\">In WordPress, the most common way to set meta tags is through an SEO plugin. Yoast SEO and Rank Math both add a meta box below the content editor where you can type the title and description. The plugin shows a live preview and character count. If you do not fill in these fields, the plugin will auto-generate a title from the post title and a description from the first paragraph — which is rarely optimal.</p><p class=\"text-mid mb-4\">Shopify stores set the meta title and description in the SEO section at the bottom of each product, collection, and page editor. The default title is the product name plus the store name. For better results, customize each title to include the brand, a key feature, and the product type. Shopify also allows bulk editing through CSV import, which is useful for stores with hundreds of products.</p><p class=\"text-mid\">For custom-built sites (React, Next.js, static HTML), meta tags live in the HTML &lt;head&gt; section. In Next.js, use the metadata export or the Head component. In plain HTML, add &lt;title&gt; and &lt;meta name=&quot;description&quot;&gt; tags. The key pitfall with custom sites is forgetting to set unique meta tags for dynamically generated pages — product pages, blog posts, filtered listings. Test each page type by viewing the source code or using Google Search Console's URL Inspection tool.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about the meta title and description checker",
       "openByDefault": 1,

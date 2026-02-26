@@ -260,6 +260,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Scrierea meta tagurilor pentru site-uri românești",
+      "html": "<p class=\"text-mid mb-4\">Caracterele românești — ă, â, î, ș, ț — au o lățime în pixeli similară cu echivalentele lor de bază. Litera ș ocupă aproximativ același spațiu ca s, iar ț ca t. În practică, aceasta înseamnă că limitele de pixeli recomandate pentru titluri românești sunt aceleași ca pentru cele în engleză. Verificați totuși în instrument, deoarece unele combinații de caractere pot produce rezultate ușor diferite în funcție de fontul pe care Google îl folosește.</p><p class=\"text-mid mb-4\">WordPress domină piața românească a CMS-urilor. Plugin-urile Yoast SEO și Rank Math adaugă o casetă meta sub editor, unde puteți introduce titlul și descrierea. Gomag — cea mai populară platformă românească de e-commerce — are câmpuri dedicate pentru titlu SEO și descriere la fiecare produs și categorie. PrestaShop și WooCommerce sunt alte alegeri frecvente pentru magazinele online românești.</p><p class=\"text-mid\">La scrierea meta tagurilor în română, evitați anglicismele inutile. &quot;Livrare gratuită&quot; funcționează mai bine decât &quot;Free shipping&quot; pentru publicul român. &quot;Programează o consultație&quot; este mai natural decât &quot;Book now&quot;. Cuvintele cheie trebuie să corespundă termenilor pe care utilizatorii români îi introduc efectiv în Google — folosiți funcția de completare automată Google pentru a verifica cele mai frecvente formulări din domeniul dumneavoastră.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Meta taguri pentru e-commerce-ul românesc",
+      "html": "<p class=\"text-mid mb-4\">Titlul paginii de produs într-un magazin online românesc trebuie să urmeze o structură clară: Brand + Nume Produs + Atribut Cheie. Exemplu: &quot;Bosch Bormasina GSR 18V-60 — 18V, 2x 4Ah acumulator&quot;. Acest titlu conține marca, modelul, voltajul și dotarea — patru informații pe care cumpărătorul le vede imediat în rezultatele căutării.</p><p class=\"text-mid mb-4\">Descrierile de categorii sunt adesea neglijate în magazinele românești. În loc de &quot;Bormasini — magazinul nostru&quot;, scrieți: &quot;Peste 60 de bormasini de la Bosch, Makita și DeWalt. Transport gratuit de la 200 lei&quot;. Acest text arată lățimea sortimentului, menționează branduri cunoscute și indică un avantaj concret.</p><p class=\"text-mid\">eMAG.ro, OLX.ro și Cel.ro au reguli proprii pentru titlurile produselor. Pe propriul site aveți control total. Folosiți acest instrument pentru a verifica lungimea înainte de publicare — mai ales înainte de Black Friday, Crăciun sau reducerile de sezon, când meta taguri actualizate pot crește rata de click.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SEO local în România — optimizare pentru orașe și regiuni",
+      "html": "<p class=\"text-mid mb-4\">Afacerile locale de servicii trebuie să includă numele orașului în meta title. Structura recomandată: &quot;[Serviciu] [Oraș] — [Numele afacerii]&quot;. Exemplu: &quot;Dentist București Sector 1 — Clinica Dentară Zâmbet&quot;. Acest titlu conține interogarea locală la început, unde are cea mai mare valoare SEO. Pentru afaceri cu mai multe locații, creați o pagină dedicată per oraș cu titlu și descriere unice.</p><p class=\"text-mid mb-4\">Meta description-ul unei afaceri locale trebuie să conțină adresa sau cartierul, programul și un avantaj concret. Exemplu: &quot;Clinică dentară în Sectorul 1, București. Programare online, fără așteptare. Luni–vineri 9:00–19:00&quot;. Google afișează frecvent aceste informații în rezultatele îmbogățite, ajutând utilizatorul să decidă fără a vizita site-ul.</p><p class=\"text-mid\">În România, căutările locale includ adesea cartierul sau sectorul pe lângă oraș: &quot;dentist Militari&quot;, &quot;instalator Floreasca&quot;. Sectoarele cu SEO local puternic în România includ gastronomia, turismul, serviciile medicale, avocatura și imobiliarele. Asigurați-vă că Profilul Companiei pe Google și site-ul web folosesc aceeași denumire și același format de adresă.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Întrebări frecvente despre verificatorul meta title și description",
       "openByDefault": 1,

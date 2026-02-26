@@ -255,6 +255,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Skriva meta-taggar för svenska webbplatser",
+      "html": "<p class=\"text-mid mb-4\">Svenska tecken — å, ä, ö — har en pixelbredd som liknar deras grundbokstäver a och o. I praktiken innebär det att de rekommenderade pixelgränserna för svenska titlar är desamma som för engelska. Kontrollera ändå i verktyget, eftersom sammansatta ord som &quot;sökmotoroptimering&quot; eller &quot;hemförsäkringsjämförelse&quot; förbrukar betydligt fler pixlar än korta engelska termer.</p><p class=\"text-mid mb-4\">WordPress är det mest använda CMS:et i Sverige. Tilläggen Yoast SEO och Rank Math lägger till en meta-ruta under editorn där du skriver titel och beskrivning. Shopify är populärt bland svenska e-handlare och har dedikerade SEO-fält för varje produkt och kollektion. Umbraco används av många svenska företag och kommuner — det har egna fält för meta-titel och beskrivning i sidegenskaperna.</p><p class=\"text-mid\">Undvik onödiga anglicismer i svenska meta-taggar. &quot;Fri frakt&quot; fungerar bättre än &quot;Free shipping&quot; för en svensk publik. &quot;Boka tid&quot; är mer naturligt än &quot;Book now&quot;. Nyckelorden bör matcha de termer som svenska användare faktiskt skriver in i Google — använd Googles autokomplettering för att kontrollera vilka formuleringar som är vanligast i din bransch.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Meta-taggar för svensk e-handel",
+      "html": "<p class=\"text-mid mb-4\">Produktsidans titel i en svensk webbutik bör följa en tydlig struktur: Varumärke + Produktnamn + Nyckelattribut. Exempel: &quot;IKEA KALLAX Hylla — 4 fack, vitlaserad ek, 77x77 cm&quot;. Denna titel innehåller varumärke, modell, material och mått — fyra uppgifter som köparen ser direkt i sökresultaten.</p><p class=\"text-mid mb-4\">Kategoribeskrivningar förbises ofta i svenska webbutiker. I stället för &quot;Hyllor — vår butik&quot; skriv: &quot;Över 120 hyllor och förvaringslösningar från IKEA, String och Montana. Fri frakt över 500 kr&quot;. Texten visar sortimentets bredd, nämner kända varumärken och anger en konkret fördel. Google visar kategoribeskrivningar vid breda sökningar med hög volym.</p><p class=\"text-mid\">CDON, Tradera och Prisjakt har egna regler för produkttitlar. På din egen webbplats har du full kontroll. Använd detta verktyg för att kontrollera längden innan publicering — särskilt inför Black Friday, julhandeln, mellandagsrean eller vårens kampanjer, när uppdaterade meta-taggar kan öka klickfrekvensen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Lokal SEO i Sverige — optimering för städer och regioner",
+      "html": "<p class=\"text-mid mb-4\">Lokala tjänsteföretag bör inkludera stadens namn i meta-titeln. Rekommenderad struktur: &quot;[Tjänst] [Stad] — [Företagsnamn]&quot;. Exempel: &quot;Tandläkare Stockholm Södermalm — Kliniken Leende&quot;. Titeln innehåller den lokala sökfrasen i början, där den har störst SEO-värde. För företag med flera kontor lönar det sig att skapa en separat sida per stad med unik titel och beskrivning.</p><p class=\"text-mid mb-4\">Meta-beskrivningen för ett lokalt företag bör innehålla adress eller stadsdel, öppettider och en konkret fördel. Exempel: &quot;Tandläkarklinik på Södermalm i Stockholm. Boka online, korta väntetider. Måndag–fredag 8–18&quot;. Google visar ofta denna information i utökade sökresultat, vilket hjälper den sökande att fatta beslut utan att besöka webbplatsen.</p><p class=\"text-mid\">Branscher med stark lokal SEO i Sverige inkluderar restaurang, hälso- och sjukvård, fastigheter, juridiska tjänster och hantverkare. Se till att Google Företagsprofilen och webbplatsen använder samma företagsnamn och adressformat. Inkonsekvenser mellan dessa källor kan göra det svårare för Google att koppla ihop dem.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanliga frågor om meta-titel och beskrivningskontrollen",
       "openByDefault": 1,

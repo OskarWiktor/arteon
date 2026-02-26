@@ -260,6 +260,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Meta tags schrijven voor Nederlandstalige websites",
+      "html": "<p class=\"text-mid mb-4\">Het Nederlands heeft geen speciale diakritische tekens die de pixelbreedte significant beïnvloeden. Wel kent de taal veel samengestelde woorden — &quot;zoekmachineoptimalisatie&quot;, &quot;ziektekostenverzekering&quot;, &quot;woningbouwvereniging&quot; — die aanzienlijk meer pixels verbruiken dan korte Engelse termen. Controleer de breedte altijd in de tool, want een lang samengesteld woord kan het verschil maken tussen een titel die past en een die wordt afgekapt.</p><p class=\"text-mid mb-4\">WordPress is het meest gebruikte CMS in Nederland en België. De plugins Yoast SEO (een Nederlands product) en Rank Math voegen een meta-vak toe onder de editor waar u titel en beschrijving kunt invoeren. Lightspeed is populair voor Nederlandse webshops en biedt SEO-velden per product en categorie. Magento wordt veel gebruikt door grotere Nederlandse retailers.</p><p class=\"text-mid\">Houd bij het schrijven van Nederlandse meta tags rekening met de verschillen tussen Belgisch-Nederlands en Nederlands-Nederlands. In België zoekt men &quot;gsm&quot; in plaats van &quot;mobiel&quot;, &quot;poetsvrouw&quot; in plaats van &quot;schoonmaakster&quot;. Gebruik de Google-zoeksuggesties in het betreffende land om te controleren welke termen uw doelgroep daadwerkelijk gebruikt.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Meta tags voor Nederlandse en Belgische e-commerce",
+      "html": "<p class=\"text-mid mb-4\">Producttitels in Nederlandse webshops moeten een duidelijke structuur volgen: Merk + Productnaam + Kenmerk. Voorbeeld: &quot;Philips Airfryer XXL HD9650 — heteluchtfriteuse, 1,4 kg, zwart&quot;. Deze titel bevat merk, model, type, capaciteit en kleur — vijf gegevens die de koper direct ziet in de zoekresultaten.</p><p class=\"text-mid mb-4\">Categoriebeschrijvingen worden in Nederlandse webshops vaak over het hoofd gezien. In plaats van &quot;Airfryers — onze winkel&quot; schrijft u: &quot;Meer dan 30 airfryers van Philips, Tefal en Ninja. Gratis verzending vanaf 50 €&quot;. Deze tekst toont de breedte van het assortiment, noemt bekende merken en vermeldt een concreet voordeel. Google toont categoriebeschrijvingen bij brede zoekopdrachten met hoog volume.</p><p class=\"text-mid\">Bol.com, Coolblue en Marktplaats hebben eigen regels voor producttitels. Op uw eigen website heeft u volledige controle. Gebruik deze tool om titels en beschrijvingen te controleren voordat u publiceert — vooral voor Sinterklaas, Black Friday, de Winteruitverkoop of Koningsdag-acties, wanneer bijgewerkte meta tags de klikfrequentie kunnen verhogen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Lokale SEO in Nederland en België",
+      "html": "<p class=\"text-mid mb-4\">Lokale dienstverleners profiteren van plaatsnamen in de meta title. Aanbevolen structuur: &quot;[Dienst] [Stad] — [Bedrijfsnaam]&quot;. Voorbeeld: &quot;Tandarts Amsterdam Zuid — Tandartspraktijk De Gracht&quot;. Deze titel bevat de lokale zoekopdracht aan het begin, waar deze de meeste SEO-waarde heeft. Voor bedrijven met meerdere vestigingen loont het een aparte pagina per stad te maken met een unieke titel en beschrijving.</p><p class=\"text-mid mb-4\">De meta description van een lokaal bedrijf moet adres of wijk, openingstijden en een concreet voordeel bevatten. Voorbeeld: &quot;Tandartspraktijk in Amsterdam-Zuid, nabij het Vondelpark. Online afspraak maken, korte wachttijden. Ma–vr 8:00–18:00&quot;. Google toont deze informatie vaak in verrijkte zoekresultaten, waardoor de zoeker kan beslissen zonder de website te bezoeken.</p><p class=\"text-mid\">In België zijn de zoekpatronen anders dan in Nederland. Vlaamse gebruikers zoeken soms in het Frans of gebruiken Belgisch-Nederlandse termen. Branches met sterke lokale SEO in de Benelux zijn horeca, gezondheidszorg, vastgoed, juridische diensten en ambachtelijke bedrijven. Zorg ervoor dat het Google Bedrijfsprofiel en de website dezelfde bedrijfsnaam en hetzelfde adresformaat gebruiken.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Veelgestelde vragen over de meta title en description checker",
       "openByDefault": 1,
