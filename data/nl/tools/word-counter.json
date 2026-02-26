@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "nl",
   "metadata": {
-    "title": "Woordteller met Flesch-Kincaid leesbaarheid & teksttools",
-    "description": "Gratis woord-, teken- en lettergreepteller met Flesch-Kincaid score, leestijd, spreektijd en 10 opmaaktools. Zonder registratie.",
+    "title": "Woord-, teken- en leestijdteller met tekstopmaak",
+    "description": "Gratis teller voor woorden, tekens, zinnen, alinea's en leestijd met hoofdletterconverter. Controleer de tekstlengte en wijzig de letters.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/woorden-en-tekenteller-nl.webp",
     "path": "/nl/tools/woorden-en-tekenteller"
   },
   "hero": {
-    "title": "Tel woorden, tekens en leesbaarheid – Flesch-Douma, leestijd en teksttools",
-    "description": "Plak je tekst en de tool telt woorden, tekens, lettergrepen, zinnen, alinea’s, unieke woorden, leestijd, spreektijd en berekent de Flesch-Douma leesbaarheidsscore.",
+    "title": "Tel woorden en tekens – controleer leestijd en formatteer tekst",
+    "description": "Plak uw tekst en de tool telt woorden, tekens, zinnen, alinea's, unieke woorden en leestijd. Wijzig hoofdletters, verwijder duplicaten of sorteer regels",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/woorden-en-tekenteller-nl.webp"
   },
   "breadcrumbs": {
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Woordteller met Flesch-Kincaid leesbaarheid & teksttools",
+      "name": "Woord-, teken- en leestijdteller met tekstopmaak",
       "alternateName": [
         "Online woordteller",
         "Tekenteller met en zonder spaties",
@@ -38,7 +38,7 @@
         "Dubbele regels verwijderen"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Gratis woordteller met Flesch-Douma leesbaarheidsscore (specifiek voor Nederlands), lettergreeptelling, lees- en spreektijdschatting en 10 opmaaktools. Lokale verwerking in de browser.",
+      "description": "Gratis woord- en tekenteller met tekstopmaaktools. Telt woorden, tekens, zinnen, alinea's, unieke woorden en leestijd. Biedt 10 tools: hoofdletterconversie, spaties verwijderen, lege regels, duplicaten en sortering.",
       "featureList": [
         "Woorden tellen",
         "Tekens met en zonder spaties",

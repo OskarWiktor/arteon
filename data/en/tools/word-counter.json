@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "en",
   "metadata": {
-    "title": "Word Counter with Readability Score (Flesch-Kincaid) & Text Tools",
-    "description": "Free word, character & syllable counter with Flesch-Kincaid readability score, reading time, speaking time & 10 text formatting tools. No signup.",
+    "title": "Word, Character and Reading Time Counter with Text Formatting",
+    "description": "Free word, character, sentence, paragraph and reading time counter with letter case converter. Check your text length and format it.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/word-and-character-counter-en.webp",
     "path": "/en/tools/word-and-character-counter"
   },
   "hero": {
-    "title": "Count words, characters & readability – Flesch-Kincaid score, reading time and text tools",
-    "description": "Paste your text and the tool will count words, characters, syllables, sentences, paragraphs, unique words, reading time, speaking time and calculate a Flesch-Kincaid readability score. Change letter case, remove duplicates or sort lines with one click.",
+    "title": "Count words and characters – check reading time and format text",
+    "description": "Paste your text and the tool will count words, characters, sentences, paragraphs, unique words and reading time. Change letter case, remove duplicates or sort lines with one click",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/word-and-character-counter-en.webp"
   },
   "breadcrumbs": {
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Word Counter with Readability Score (Flesch-Kincaid) & Text Tools",
+      "name": "Word, Character and Reading Time Counter with Text Formatting",
       "alternateName": [
         "Online word counter",
         "Character counter with and without spaces",
@@ -38,7 +38,7 @@
         "Remove duplicate lines from text"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter with Flesch-Kincaid readability scoring, syllable counting, reading and speaking time estimation, and 10 text formatting tools. All processing runs locally in your browser.",
+      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
       "featureList": [
         "Word count",
         "Character count with and without spaces",

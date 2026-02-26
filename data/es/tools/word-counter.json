@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "es",
   "metadata": {
-    "title": "Contador de palabras con legibilidad Flesch-Kincaid y herramientas de texto",
-    "description": "Contador gratuito de palabras, caracteres y sílabas con puntuación Flesch-Kincaid, tiempo de lectura, tiempo de habla y 10 herramientas de formato. Sin registro.",
+    "title": "Contador de palabras, caracteres y tiempo de lectura con formato de texto",
+    "description": "Contador gratuito de palabras, caracteres, oraciones, párrafos y tiempo de lectura con conversor de mayúsculas. Comprueba la longitud del texto y cambia las letras.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palabras-y-caracteres-es.webp",
     "path": "/es/herramientas/contador-de-palabras-y-caracteres"
   },
   "hero": {
-    "title": "Cuenta palabras, caracteres y legibilidad – Flesch-Kincaid, tiempo de lectura y herramientas de texto",
-    "description": "Pega tu texto y la herramienta contará palabras, caracteres, sílabas, oraciones, párrafos, palabras únicas, tiempo de lectura, tiempo de habla y calculará la puntuación de legibilidad Flesch-Kincaid. Cambia mayúsculas, elimina duplicados o ordena líneas con un clic.",
+    "title": "Cuenta palabras y caracteres – verifica tiempo de lectura y formatea",
+    "description": "Pega tu texto y la herramienta contará palabras, caracteres, oraciones, párrafos, palabras únicas y tiempo de lectura. Cambia mayúsculas, elimina duplicados u ordena líneas",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palabras-y-caracteres-es.webp"
   },
   "breadcrumbs": {
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Contador de palabras con legibilidad Flesch-Kincaid y herramientas de texto",
+      "name": "Contador de palabras, caracteres y tiempo de lectura con formato de texto",
       "alternateName": [
         "Contador de palabras online",
         "Contador de caracteres con y sin espacios",
@@ -38,7 +38,7 @@
         "Eliminar líneas duplicadas del texto"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Contador gratuito de palabras y caracteres con puntuación de legibilidad Flesch-Kincaid (fórmula Fernández-Huerta para español), conteo de sílabas, estimación de tiempo de lectura y habla, y 10 herramientas de formateo. Procesamiento local en el navegador.",
+      "description": "Contador gratuito de palabras y caracteres con herramientas de formato de texto. Cuenta palabras, caracteres, oraciones, párrafos, palabras únicas y tiempo de lectura. Ofrece 10 herramientas: conversión de mayúsculas, eliminación de espacios, líneas vacías, duplicados y ordenación.",
       "featureList": [
         "Conteo de palabras",
         "Conteo de caracteres con y sin espacios",

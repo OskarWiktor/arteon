@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "cs",
   "metadata": {
-    "title": "Počítadlo slov s čitelností Flesch-Kincaid a textovými nástroji",
-    "description": "Bezplatné počítadlo slov, znaků a slabik s hodnocením Flesch-Kincaid, dobou čtení, dobou mluvení a 10 formátovacími nástroji. Bez registrace.",
+    "title": "Počítadlo slov, znaků a času čtení s formátováním textu",
+    "description": "Bezplatné počítadlo slov, znaků, vět, odstavců a času čtení s konvertorem velikosti písmen. Zkontrolujte délku textu a změňte písmena.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/pocitadlo-slov-a-znaku-cs.webp",
     "path": "/cs/nastroje/pocitadlo-slov-a-znaku"
   },
   "hero": {
-    "title": "Počítejte slova, znaky a čitelnost – Flesch-Kincaid, doba čtení a textové nástroje",
-    "description": "Vložte text a nástroj spočítá slova, znaky, slabiky, věty, odstavce, unikátní slova, dobu čtení, dobu mluvení a vypočítá skóre čitelnosti Flesch-Kincaid.",
+    "title": "Spočítejte slova a znaky – zkontrolujte čas čtení a formátujte",
+    "description": "Vložte text a nástroj spočítá slova, znaky, věty, odstavce, unikátní slova a čas čtení. Změňte velikost písmen, odstraňte duplikáty nebo seřaďte řádky",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {

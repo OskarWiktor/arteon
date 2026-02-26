@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "ro",
   "metadata": {
-    "title": "Contor de cuvinte cu scor Flesch-Kincaid și instrumente text",
-    "description": "Contor gratuit de cuvinte, caractere și silabe cu scor Flesch-Kincaid, timp de citire, timp de vorbire și 10 instrumente de formatare. Fără înregistrare.",
+    "title": "Contor de cuvinte, caractere și timp de citire cu formatarea textului",
+    "description": "Contor gratuit de cuvinte, caractere, propoziții, paragrafe și timp de citire cu convertor de litere mari. Verificați lungimea textului și schimbați literele.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contor-cuvinte-si-caractere-ro.webp",
     "path": "/ro/instrumente/contor-cuvinte-si-caractere"
   },
   "hero": {
-    "title": "Numără cuvinte, caractere și lizibilitate – scor Flesch-Kincaid, timp de citire și instrumente text",
-    "description": "Lipește textul și instrumentul va număra cuvinte, caractere, silabe, propoziții, paragrafe, cuvinte unice, timp de citire, timp de vorbire și va calcula scorul de lizibilitate Flesch-Kincaid.",
+    "title": "Numără cuvinte și caractere – verifică timpul de citire și formatează",
+    "description": "Lipiți textul și instrumentul va număra cuvinte, caractere, propoziții, paragrafe, cuvinte unice și timp de citire. Schimbați majusculele, eliminați duplicatele sau sortați liniile",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {

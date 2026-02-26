@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "fi",
   "metadata": {
-    "title": "Sanalaskuri Flesch-Kincaid-luettavuudella ja tekstityökaluilla",
-    "description": "Ilmainen sana-, merkki- ja tavulaskuri Flesch-Kincaid-pisteillä, lukuajalla, puheajalla ja 10 muotoilutyökalulla. Ilman rekisteröitymistä.",
+    "title": "Sana-, merkki- ja lukuaikalaskuri tekstin muotoilulla",
+    "description": "Ilmainen sanojen, merkkien, lauseiden, kappaleiden ja lukuajan laskuri kirjainkoon muuntimella. Tarkista tekstin pituus ja muuta kirjaimet.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/sana-ja-merkkilaskuri-fi.webp",
     "path": "/fi/tyokalut/sana-ja-merkkilaskuri"
   },
   "hero": {
-    "title": "Laske sanat, merkit ja luettavuus – Flesch-Kincaid, lukuaika ja tekstityökalut",
-    "description": "Liitä teksti ja työkalu laskee sanat, merkit, tavut, lauseet, kappaleet, uniikit sanat, lukuajan, puheajan ja Flesch-Kincaid-luettavuuspistemäärän.",
+    "title": "Laske sanat ja merkit – tarkista lukuaika ja muotoile teksti",
+    "description": "Liitä teksti ja työkalu laskee sanat, merkit, lauseet, kappaleet, uniikit sanat ja lukuajan. Muuta kirjainkoko, poista duplikaatit tai lajittele rivit",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {

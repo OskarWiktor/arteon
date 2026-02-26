@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "pl",
   "metadata": {
-    "title": "Licznik słów z czytelnością Flesch-Kincaid, sylabami i czasem mówienia",
-    "description": "Darmowy licznik słów, znaków i sylab z wynikiem czytelności Flesch-Kincaid, czasem czytania, czasem mówienia i 10 narzędziami do formatowania tekstu. Bez rejestracji.",
+    "title": "Licznik słów, znaków i czasu czytania z formatowaniem tekstu",
+    "description": "Darmowy licznik słów, znaków, zdań, akapitów i czasu czytanie z konwertorem wielkości liter. Sprawdź długość swojego tekstu i zmień litery.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/licznik-slow-i-znakow-pl.webp",
     "path": "/narzedzia/licznik-slow-i-znakow"
   },
   "hero": {
-    "title": "Policz słowa, znaki i czytelność – wynik Flesch-Kincaid, czas czytania i narzędzia tekstowe",
-    "description": "Wklej tekst, a narzędzie policzy słowa, znaki, sylaby, zdania, akapity, unikalne wyrazy, czas czytania, czas mówienia i obliczy wynik czytelności Flesch-Kincaid. Zmień wielkość liter, usuń duplikaty lub posortuj linie jednym kliknięciem.",
+    "title": "Policz słowa i znaki – sprawdź czas czytania i sformatuj tekst",
+    "description": "Wklej tekst, a narzędzie policzy słowa, znaki, zdania, akapity, unikalne wyrazy i czas czytania. Zmień wielkość liter, usuń duplikaty lub posortuj linie jednym kliknięciem",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Licznik słów z czytelnością Flesch-Kincaid i narzędziami tekstowymi",
+      "name": "Licznik słów, znaków i czasu czytania z formatowaniem tekstu",
       "alternateName": [
         "Licznik słów online po polsku",
         "Licznik znaków ze spacjami i bez spacji",
@@ -38,7 +38,7 @@
         "Usuwanie duplikatów linii z tekstu"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Darmowy licznik słów i znaków z oceną czytelności Flesch-Kincaid, liczeniem sylab, szacowaniem czasu czytania i mówienia oraz 10 narzędziami do formatowania tekstu. Przetwarzanie lokalne w przeglądarce.",
+      "description": "Darmowy licznik słów i znaków po polsku z narzędziami do formatowania tekstu. Liczy słowa, znaki, zdania, akapity, unikalne wyrazy i czas czytania. Oferuje 10 narzędzi: zamiana wielkości liter, usuwanie spacji, pustych linii, duplikatów oraz sortowanie.",
       "featureList": [
         "Liczenie słów w tekście",
         "Liczenie znaków ze spacjami i bez spacji",
@@ -135,6 +135,10 @@
       "type": "sectionInfo",
       "title": "Jak działa ocena czytelności Flesch-Kincaid",
       "html": "<p class=\"text-mid mb-4\">Narzędzie oblicza wynik czytelności na podstawie średniej długości zdania i średniej liczby sylab na słowo. Wynik wyświetlany jest na skali od 0 do 100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Bardzo łatwy. Krótkie zdania, proste słowa.</li><li><strong>70–89</strong> — Łatwy. Język potoczny, zrozumiały dla szerokiej publiczności.</li><li><strong>50–69</strong> — Umiarkowany. Teksty biznesowe i dziennikarskie.</li><li><strong>30–49</strong> — Trudny. Długie zdania, specjalistyczne słownictwo.</li><li><strong>0–29</strong> — Bardzo trudny. Teksty akademickie i prawne.</li></ul><p class=\"text-mid mt-3\">Dla języka polskiego narzędzie stosuje uproszczoną adaptację wzoru Flescha z polskimi regułami liczenia sylab. Polski jako język fleksyjny ma dłuższe słowa niż angielski, dlatego wyniki mogą być niższe przy porównywalnej trudności tekstu. Dobry cel dla treści webowych to wynik 50–60.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionSteps",
@@ -260,6 +264,10 @@
           "description": "Sortuje linie tekstu alfabetycznie malejąco. Odwrotna kolejność sortowania."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionSteps",

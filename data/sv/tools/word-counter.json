@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "sv",
   "metadata": {
-    "title": "Ordräknare med Flesch-Kincaid läsbarhet & textverktyg",
-    "description": "Gratis ord-, tecken- och stavelseräknare med Flesch-Kincaid poäng, lästid, taltid och 10 formateringsverktyg. Utan registrering.",
+    "title": "Ord-, tecken- och läsetidsräknare med textformatering",
+    "description": "Gratis räknare för ord, tecken, meningar, stycken och lästid med versalkonverterare. Kontrollera textlängden och ändra bokstäver.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-och-teckenraknare-sv.webp",
     "path": "/sv/verktyg/ord-och-teckenraknare"
   },
   "hero": {
-    "title": "Räkna ord, tecken och läsbarhet – Flesch-Kincaid, lästid och textverktyg",
-    "description": "Klistra in din text och verktyget räknar ord, tecken, stavelser, meningar, stycken, unika ord, lästid, taltid och beräknar Flesch-Kincaid läsbarhetspoäng.",
+    "title": "Räkna ord och tecken – kontrollera lästid och formatera text",
+    "description": "Klistra in din text och verktyget räknar ord, tecken, meningar, stycken, unika ord och lästid. Ändra versaler, ta bort dubbletter eller sortera rader",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {

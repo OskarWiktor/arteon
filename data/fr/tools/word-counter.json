@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "fr",
   "metadata": {
-    "title": "Compteur de mots avec lisibilité Flesch-Kincaid et outils texte",
-    "description": "Compteur gratuit de mots, caractères et syllabes avec score Flesch-Kincaid, temps de lecture, temps de parole et 10 outils de formatage. Sans inscription.",
+    "title": "Compteur de mots, caractères et temps de lecture avec mise en forme du texte",
+    "description": "Compteur gratuit de mots, caractères, phrases, paragraphes et temps de lecture avec convertisseur de casse. Vérifiez la longueur de votre texte et modifiez les lettres.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/compteur-de-mots-et-caracteres-fr.webp",
     "path": "/fr/outils/compteur-de-mots-et-caracteres"
   },
   "hero": {
-    "title": "Comptez mots, caractères et lisibilité – score Flesch-Kincaid, temps de lecture et outils texte",
-    "description": "Collez votre texte et l’outil comptera les mots, caractères, syllabes, phrases, paragraphes, mots uniques, temps de lecture, temps de parole et calculera le score de lisibilité Flesch-Kincaid. Changez la casse, supprimez les doublons ou triez les lignes en un clic.",
+    "title": "Comptez mots et caractères – vérifiez le temps de lecture et formatez",
+    "description": "Collez votre texte et l'outil comptera les mots, caractères, phrases, paragraphes, mots uniques et temps de lecture. Changez la casse, supprimez les doublons ou triez les lignes",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/compteur-de-mots-et-caracteres-fr.webp"
   },
   "breadcrumbs": {
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Compteur de mots avec lisibilité Flesch-Kincaid et outils texte",
+      "name": "Compteur de mots, caractères et temps de lecture avec mise en forme du texte",
       "alternateName": [
         "Compteur de mots en ligne",
         "Compteur de caractères avec et sans espaces",
@@ -38,7 +38,7 @@
         "Supprimer les lignes en double"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Compteur gratuit de mots et caractères avec score de lisibilité Flesch-Kincaid (formule Kandel-Moles pour le français), comptage de syllabes, estimation du temps de lecture et de parole, et 10 outils de formatage. Traitement local dans le navigateur.",
+      "description": "Compteur gratuit de mots et caractères avec outils de mise en forme du texte. Compte les mots, caractères, phrases, paragraphes, mots uniques et temps de lecture. Propose 10 outils : conversion de casse, suppression des espaces, lignes vides, doublons et tri.",
       "featureList": [
         "Comptage de mots",
         "Comptage de caractères avec et sans espaces",

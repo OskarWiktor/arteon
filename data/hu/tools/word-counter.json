@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "hu",
   "metadata": {
-    "title": "Szószámláló Flesch-Kincaid olvashatósággal és szövegeszközökkel",
-    "description": "Ingyenes szó-, karakter- és szótagszámláló Flesch-Kincaid olvashatósággal, olvasási idővel, beszédidővel és 10 formázóeszközzel. Regisztráció nélkül.",
+    "title": "Szó-, karakter- és olvasásiidő-számláló szövegformázással",
+    "description": "Ingyenes szó-, karakter-, mondat-, bekezdés- és olvasásiidő-számláló kis- és nagybetű-konverterrel. Ellenőrizze a szöveg hosszát és módosítsa a betűket.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/szo-es-karakterszamlalo-hu.webp",
     "path": "/hu/eszkozok/szo-es-karakterszamlalo"
   },
   "hero": {
-    "title": "Számold meg a szavakat, karaktereket és olvashatóságot – Flesch-Kincaid, olvasási idő és szövegeszközök",
-    "description": "Illeszd be a szöveget, és az eszköz megszámolja a szavakat, karaktereket, szótagokat, mondatokat, bekezdéseket, egyedi szavakat, olvasási és beszédidőt, és kiszámítja a Flesch-Kincaid olvashatósági pontszámot.",
+    "title": "Számolja a szavakat és karaktereket – olvasási idő és formázás",
+    "description": "Illessze be szövegét, és az eszköz megszámolja a szavakat, karaktereket, mondatokat, bekezdéseket, egyedi szavakat és az olvasási időt",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {

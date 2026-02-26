@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "da",
   "metadata": {
-    "title": "Ordtæller med Flesch-Kincaid læsbarhed & tekstværktøjer",
-    "description": "Gratis ord-, tegn- og stavelsestæller med Flesch-Kincaid score, læsetid, taletid og 10 formateringsværktøjer. Uden registrering.",
+    "title": "Ord-, tegn- og læsetidstæller med tekstformatering",
+    "description": "Gratis tæller for ord, tegn, sætninger, afsnit og læsetid med store/små bogstaver-konverter. Kontrollér tekstlængden og ændr bogstaverne.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegntaeller-da.webp",
     "path": "/da/vaerktojer/ord-og-tegntaeller"
   },
   "hero": {
-    "title": "Tæl ord, tegn og læsbarhed – Flesch-Kincaid, læsetid og tekstværktøjer",
-    "description": "Indsæt din tekst og værktøjet tæller ord, tegn, stavelser, sætninger, afsnit, unikke ord, læsetid, taletid og beregner Flesch-Kincaid læsbarhedsscore.",
+    "title": "Tæl ord og tegn – kontrollér læsetid og formatér tekst",
+    "description": "Indsæt din tekst, og værktøjet tæller ord, tegn, sætninger, afsnit, unikke ord og læsetid. Skift store bogstaver, fjern duplikater eller sortér linjer",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {

@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "de",
   "metadata": {
-    "title": "Wortzähler mit Flesch-Kincaid Lesbarkeitsindex & Texttools",
-    "description": "Kostenloser Wort-, Zeichen- & Silbenzähler mit Flesch-Kincaid Lesbarkeitsbewertung, Lesezeit, Sprechzeit & 10 Textformatierungs-Tools. Ohne Anmeldung.",
+    "title": "Wort-, Zeichen- und Lesezeiträhler mit Textformatierung",
+    "description": "Kostenloser Zähler für Wörter, Zeichen, Sätze, Absätze und Lesezeit mit Groß-/Kleinschreibungskonverter. Textlänge prüfen und Buchstaben ändern.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/wort-und-zeichenzaehler-de.webp",
     "path": "/de/werkzeuge/wort-und-zeichenzaehler"
   },
   "hero": {
-    "title": "Wörter, Zeichen & Lesbarkeit zählen – Flesch-Kincaid-Index, Lesezeit und Textwerkzeuge",
-    "description": "Text einfügen – das Tool zählt Wörter, Zeichen, Silben, Sätze, Absätze, einzigartige Wörter, Lesezeit, Sprechzeit und berechnet den Flesch-Kincaid-Lesbarkeitsindex. Groß-/Kleinschreibung ändern, Duplikate entfernen oder Zeilen sortieren.",
+    "title": "Wörter und Zeichen zählen – Lesezeit prüfen und Text formatieren",
+    "description": "Text einfügen – das Tool zählt Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter und Lesezeit. Groß-/Kleinschreibung ändern, Duplikate entfernen oder Zeilen sortieren",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/wort-und-zeichenzaehler-de.webp"
   },
   "breadcrumbs": {
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Wortzähler mit Flesch-Kincaid Lesbarkeitsindex & Texttools",
+      "name": "Wort-, Zeichen- und Lesezeiträhler mit Textformatierung",
       "alternateName": [
         "Online Wortzähler",
         "Zeichenzähler mit und ohne Leerzeichen",
@@ -38,7 +38,7 @@
         "Duplikate aus Text entfernen"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Kostenloser Wort- und Zeichenzähler mit Flesch-Kincaid Lesbarkeitsbewertung, Silbenzählung, Lese- und Sprechzeitschätzung und 10 Textformatierungswerkzeugen. Verarbeitung lokal im Browser.",
+      "description": "Kostenloser Wort- und Zeichenzähler mit Textformatierungswerkzeugen. Zählt Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter und Lesezeit. Bietet 10 Werkzeuge: Groß-/Kleinschreibung, Leerzeichen entfernen, Leerzeilen, Duplikate und Sortierung.",
       "featureList": [
         "Wörter zählen",
         "Zeichen mit und ohne Leerzeichen zählen",

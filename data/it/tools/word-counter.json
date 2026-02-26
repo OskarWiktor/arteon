@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "it",
   "metadata": {
-    "title": "Contatore di parole con leggibilità Flesch-Kincaid e strumenti testo",
-    "description": "Contatore gratuito di parole, caratteri e sillabe con punteggio Flesch-Kincaid (Gulpease), tempo di lettura, tempo di parlato e 10 strumenti di formattazione.",
+    "title": "Contatore di parole, caratteri e tempo di lettura con formattazione del testo",
+    "description": "Contatore gratuito di parole, caratteri, frasi, paragrafi e tempo di lettura con convertitore di maiuscole. Controlla la lunghezza del testo e modifica le lettere.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contatore-di-parole-e-caratteri-it.webp",
     "path": "/it/strumenti/contatore-di-parole-e-caratteri"
   },
   "hero": {
-    "title": "Conta parole, caratteri e leggibilità – indice Gulpease, tempo di lettura e strumenti testo",
-    "description": "Incolla il tuo testo e lo strumento conterà parole, caratteri, sillabe, frasi, paragrafi, parole uniche, tempo di lettura, tempo di parlato e calcolerà il punteggio di leggibilità. Cambia maiuscole/minuscole, rimuovi duplicati o ordina le righe.",
+    "title": "Conta parole e caratteri – verifica tempo di lettura e formatta",
+    "description": "Incolla il testo e lo strumento conterà parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura. Cambia maiuscole, rimuovi duplicati o ordina righe",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contatore-di-parole-e-caratteri-it.webp"
   },
   "breadcrumbs": {
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Contatore di parole con leggibilità Flesch-Kincaid (Gulpease) e strumenti testo",
+      "name": "Contatore di parole, caratteri e tempo di lettura con formattazione del testo",
       "alternateName": [
         "Contatore di parole online",
         "Contatore di caratteri con e senza spazi",
@@ -38,7 +38,7 @@
         "Rimuovi righe duplicate"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Contatore gratuito di parole con indice di leggibilità Gulpease (specifico per l’italiano), conteggio sillabe, stima tempo di lettura e parlato, e 10 strumenti di formattazione. Elaborazione locale nel browser.",
+      "description": "Contatore gratuito di parole e caratteri con strumenti di formattazione del testo. Conta parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura. Offre 10 strumenti: conversione maiuscole, rimozione spazi, righe vuote, duplicati e ordinamento.",
       "featureList": [
         "Conteggio parole",
         "Conteggio caratteri con e senza spazi",
