@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "cs",
   "metadata": {
-    "title": "Pocitadlo slov s citelnosti Flesch-Kincaid a textovymi nastroji",
-    "description": "Bezplatne pocitadlo slov, znaku a slabik s hodnocenim Flesch-Kincaid, dobou cteni, dobou mluveni a 10 formatovacimi nastroji. Bez registrace.",
+    "title": "Počítadlo slov s čitelností Flesch-Kincaid a textovými nástroji",
+    "description": "Bezplatné počítadlo slov, znaků a slabik s hodnocením Flesch-Kincaid, dobou čtení, dobou mluvení a 10 formátovacími nástroji. Bez registrace.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/pocitadlo-slov-a-znaku-cs.webp",
     "path": "/cs/nastroje/pocitadlo-slov-a-znaku"
   },
   "hero": {
-    "title": "Pocitejte slova, znaky a citelnost – Flesch-Kincaid, doba cteni a textove nastroje",
-    "description": "Vlozte text a nastroj spocita slova, znaky, slabiky, vety, odstavce, unikatni slova, dobu cteni, dobu mluveni a vypocita skore citelnosti Flesch-Kincaid.",
+    "title": "Počítejte slova, znaky a čitelnost – Flesch-Kincaid, doba čtení a textové nástroje",
+    "description": "Vložte text a nástroj spočítá slova, znaky, slabiky, věty, odstavce, unikátní slova, dobu čtení, dobu mluvení a vypočítá skóre čitelnosti Flesch-Kincaid.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -26,18 +26,18 @@
     "software": {
       "name": "Počítadlo slov, znaků a času čtení s formátováním textu",
       "alternateName": [
-        "Online word counter",
-        "Character counter with and without spaces",
-        "Word counting tool for copywriters",
-        "Reading time calculator",
-        "Online letter case converter",
-        "Uppercase to lowercase converter",
-        "Remove duplicate lines from text",
-        "Sort text lines alphabetically",
-        "Kontrola citelnosti Flesch-Kincaid",
-        "Pocitadlo slabik online",
-        "Kalkulacka doby mluveni",
-        "Nastroj citelnosti textu"
+        "Počítadlo slov online",
+        "Počítadlo znaků s mezerami a bez mezer",
+        "Nástroj pro počítání slov pro copywritery",
+        "Kalkulačka doby čtení",
+        "Převod velikosti písmen online",
+        "Kontrola čitelnosti Flesch-Kincaid",
+        "Počítadlo slabik online",
+        "Kalkulačka doby mluvení",
+        "Nástroj čitelnosti textu",
+        "Odstranění duplicitních řádků",
+        "Řazení řádků abecedně",
+        "Bezplatné počítadlo slov a znaků"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Bezplatné počítadlo slov a znaků s nástroji pro formátování textu. Počítá slova, znaky, věty, odstavce, unikátní slova a čas čtení. Nabízí 10 nástrojů: převod velikosti písmen, odstranění mezer, prázdných řádků, duplikátů a řazení.",
@@ -144,64 +144,64 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 textovych metrik – co pocitadlo meri",
-      "description": "Pocitadlo analyzuje text pomoci jedenacti ukazatelu:",
+      "title": "11 textových metrik – co počítadlo měří",
+      "description": "Počítadlo analyzuje text pomocí jedenácti ukazatelů:",
       "grid": "two",
       "items": [
         {
           "icon": "RiText",
-          "title": "Words",
-          "description": "Total word count. The primary indicator of text length, useful for content creation, articles and descriptions."
+          "title": "Slova",
+          "description": "Celkový počet slov. Primární ukazatel délky textu, užitečný pro tvorbu obsahu, článků a popisů."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Characters (with spaces)",
-          "description": "All characters including spaces. Useful when a platform has a character limit (e.g., Amazon listings, meta descriptions)."
+          "title": "Znaky (s mezerami)",
+          "description": "Všechny znaky včetně mezer. Užitečné, když platforma má limit znaků (např. Heureka, Amazon, metapopisy)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Characters (without spaces)",
-          "description": "Only letters, digits and punctuation. The standard billing unit for translations and print shops."
+          "title": "Znaky (bez mezer)",
+          "description": "Pouze písmena, číslice a interpunkce. Standardní fakturační jednotka pro překlady a tiskárny."
         },
         {
           "icon": "RiChatQuoteLine",
-          "title": "Sentences",
-          "description": "Number of sentences in the text. Helps assess complexity and readability — shorter sentences are easier to absorb."
+          "title": "Věty",
+          "description": "Počet vět v textu. Pomáhá posoudit složitost a čitelnost — kratší věty se lépe vstřebávají."
         },
         {
           "icon": "RiParagraph",
-          "title": "Paragraphs",
-          "description": "Text blocks separated by blank lines. Well-structured paragraphs improve readability on screens."
+          "title": "Odstavce",
+          "description": "Textové bloky oddělené prázdnými řádky. Dobře strukturované odstavce zlepšují čitelnost na obrazovkách."
         },
         {
           "icon": "RiStarLine",
-          "title": "Unique words",
-          "description": "Number of non-repeating words. A higher ratio of unique to total words indicates richer vocabulary."
+          "title": "Unikátní slova",
+          "description": "Počet neopakujících se slov. Vyšší podíl unikátních slov naznačuje bohatší slovní zásobu."
         },
         {
           "icon": "RiRulerLine",
-          "title": "Average word length",
-          "description": "Average number of characters per word. An indicator of text complexity — technical texts have longer words than casual ones."
+          "title": "Průměrná délka slova",
+          "description": "Průměrný počet znaků na slovo. Ukazatel složitosti textu — odborné texty obsahují delší slova."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Reading time",
-          "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
+          "title": "Doba čtení",
+          "description": "Odhadovaná doba čtení při 200 slovech za minutu. Přibližná hodnota pro typický text."
         },
         {
           "icon": "RiMicLine",
-          "title": "Doba mluveni",
-          "description": "Odhadovana doba mluveni pri 130 slovech za minutu. Pro prezentace a projevy."
+          "title": "Doba mluvení",
+          "description": "Odhadovaná doba mluvení při 130 slovech za minutu. Pro prezentace a projevy."
         },
         {
           "icon": "RiInputMethodLine",
           "title": "Slabiky",
-          "description": "Celkovy pocet slabik s jazykovymi heuristikami. Klicovy parametr pro vzorce citelnosti."
+          "description": "Celkový počet slabik s jazykovými heuristikami. Klíčový parametr pro vzorce čitelnosti."
         },
         {
           "icon": "RiSpeedLine",
-          "title": "Citelnost (Flesch-Kincaid)",
-          "description": "Skore 0–100. Nad 70 = snadne, 50–70 = stredni, pod 30 = akademicke. Barevne kodovano."
+          "title": "Čitelnost (Flesch-Kincaid)",
+          "description": "Skóre 0–100. Nad 70 = snadné, 50–70 = střední, pod 30 = akademické. Barevně kódováno."
         }
       ]
     },
@@ -217,53 +217,53 @@
       "items": [
         {
           "icon": "RiArrowUpLine",
-          "title": "UPPERCASE",
-          "description": "Converts all text to uppercase. Useful for headings, acronyms and highlighting text fragments."
+          "title": "VELKÁ PÍSMENA",
+          "description": "Převede veškerý text na velká písmena. Užitečné pro nadpisy, zkratky a zvýraznění textu."
         },
         {
           "icon": "RiArrowDownLine",
-          "title": "lowercase",
-          "description": "Converts all text to lowercase. Useful for normalizing text copied from different sources."
+          "title": "malá písmena",
+          "description": "Převede veškerý text na malá písmena. Užitečné pro normalizaci textu zkopírovaného z různých zdrojů."
         },
         {
           "icon": "RiEditLine",
-          "title": "Sentence case",
-          "description": "First letter of each sentence is capitalized, the rest lowercase. Standard format for continuous text."
+          "title": "Větný styl",
+          "description": "První písmeno každé věty je velké, zbytek malý. Standardní formát pro průběžný text."
         },
         {
           "icon": "RiHeading",
-          "title": "Title Case",
-          "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
+          "title": "Styl nadpisu",
+          "description": "Každé slovo začíná velkým písmenem. Ideální pro nadpisy a vlastní jména."
         },
         {
           "icon": "RiArrowLeftRightLine",
-          "title": "tOGGLE cASE",
-          "description": "Swaps uppercase to lowercase and vice versa. Useful when text was typed with Caps Lock on."
+          "title": "pROHODIT",
+          "description": "Zamění velká písmena za malá a naopak. Užitečné, když byl text napsán se zapnutým Caps Lock."
         },
         {
           "icon": "RiSpace",
-          "title": "Remove extra spaces",
-          "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
+          "title": "Odstranit nadbytečné mezery",
+          "description": "Sníží vícenásobné mezery na jednu a odstraní mezery na začátku a konci řádků."
         },
         {
           "icon": "RiDeleteRow",
-          "title": "Remove empty lines",
-          "description": "Removes empty and redundant lines from text. Useful for cleaning text copied from websites."
+          "title": "Odstranit prázdné řádky",
+          "description": "Odstraní prázdné a nadbytečné řádky z textu. Užitečné pro čištění textu zkopírovaného z webů."
         },
         {
           "icon": "RiFilterLine",
-          "title": "Remove duplicate lines",
-          "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
+          "title": "Odstranit duplicitní řádky",
+          "description": "Ponechá pouze unikátní řádky a odstraní opakování. Užitečné pro čištění seznamů a dat."
         },
         {
           "icon": "RiSortAsc",
-          "title": "Sort A→Z",
-          "description": "Sorts text lines alphabetically in ascending order. Useful for organizing lists, keywords and data."
+          "title": "Řadit A→Z",
+          "description": "Seřadí řádky abecedně vzestupně. Užitečné pro organizaci seznamů a dat."
         },
         {
           "icon": "RiSortDesc",
-          "title": "Sort Z→A",
-          "description": "Sorts text lines alphabetically in descending order. Reverse sort order."
+          "title": "Řadit Z→A",
+          "description": "Seřadí řádky abecedně sestupně. Obrácené řazení."
         }
       ]
     },
@@ -279,33 +279,33 @@
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Copywriters and editors",
-          "description": "Count words and characters, check platform limits, quickly change letter case and clean text before publishing."
+          "title": "Copywriteři a redaktoři",
+          "description": "Počítání slov a znaků, kontrola limitů platforem, rychlá změna velikosti písmen a čištění textu před publikováním."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Bloggers and content creators",
-          "description": "Monitor post length, check reading time, remove duplicate lines and sort lists."
+          "title": "Blogeři a tvůrci obsahu",
+          "description": "Sledování délky příspěvků, kontrola doby čtení, odstraňování duplicitních řádků a řazení seznamů."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "Store owners",
-          "description": "Verify product descriptions against character limits on platforms (Amazon, eBay, Etsy)."
+          "title": "Majitelé obchodů",
+          "description": "Kontrola popisů produktů vůči limitům znaků na platformách (Heureka, Bazoš, Amazon)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO specialists",
-          "description": "Analyze content length, count unique words and assess text complexity based on average word length."
+          "title": "SEO specialisté",
+          "description": "Analýza délky obsahu, počítání unikátních slov a posouzení složitosti textu na základě průměrné délky slova."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Students and academics",
-          "description": "Check word or character limits in essays and research papers."
+          "title": "Studenti a akademici",
+          "description": "Kontrola limitů slov nebo znaků v esejích a vědeckých pracích."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Translators",
-          "description": "Count characters without spaces for quotes (the standard billing unit in translation)."
+          "title": "Překladatelé",
+          "description": "Počítání znaků bez mezer pro cenové nabídky (standardní fakturační jednotka v překladatelství)."
         }
       ]
     },
@@ -316,7 +316,16 @@
     {
       "type": "sectionInfo",
       "title": "Limity znaků na populárních platformách",
-      "html": "<p class=\"text-mid\">Character limits vary by platform.</p>"
+      "html": "<p class=\"text-mid mb-4\">Počítadlo znaků je užitečné při tvorbě obsahu pro platformy s omezenou délkou:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platforma / Prvek</th><th class=\"py-2 pr-4 font-semibold\">Limit znaků</th><th class=\"py-2 font-semibold\">Poznámky</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 znaků</td><td class=\"text-primary-light0 py-2 text-sm\">Delší titulky jsou ve výsledcích vyhledávání zkráceny.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 znaků</td><td class=\"text-primary-light0 py-2 text-sm\">Viditelný popis pod odkazem ve výsledcích vyhledávání.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Heureka.cz – název produktu</td><td class=\"py-2 pr-4 whitespace-nowrap\">150 znaků</td><td class=\"text-primary-light0 py-2 text-sm\">Stručný název s nejdůležitějšími klíčovými slovy.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Bazoš.cz – titulek inzerátu</td><td class=\"py-2 pr-4 whitespace-nowrap\">60 znaků</td><td class=\"text-primary-light0 py-2 text-sm\">Krátké titulky zlepšují viditelnost ve vyhledávání.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – příspěvek</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 znaků</td><td class=\"text-primary-light0 py-2 text-sm\">Zahrnuje odkazy a zmínky do počtu.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – popisek</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 200 znaků</td><td class=\"text-primary-light0 py-2 text-sm\">Po ~125 znacích se zobrazí odkaz &laquo;více&raquo;.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn – příspěvek</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 znaků</td><td class=\"text-primary-light0 py-2 text-sm\">Po ~210 znacích se zobrazí odkaz &laquo;zobrazit více&raquo;.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Proč je čitelnost důležitá pro SEO",
+      "html": "<p class=\"text-mid mb-4\">Vyhledávače upřednostňují obsah, který splňuje záměr uživatele. Čitelný text přímo ovlivňuje klíčové metriky zapojení:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Čas strávený na stránce</strong> — návštěvníci zůstávají déle na stránkách, které se snadno čtou. Google interpretuje delší návštěvy jako signál kvality.</li><li><strong>Míra okamžitého opuštění</strong> — hutný, těžko čitelný text odrazuje návštěvníky. Skóre čitelnosti pod 30 na obecné stránce často koreluje s vysokou mírou opuštění.</li><li><strong>Zvýrazněné úryvky</strong> — Google vybírá jasné, stručné odpovědi pro zvýrazněné úryvky. Kratší věty a přímý jazyk zvyšují šanci na výběr.</li><li><strong>Mobilní čitelnost</strong> — na malých obrazovkách jsou dlouhé věty a složitá slovní zásoba ještě hůře sledovatelné. Skóre 60+ zlepšuje mobilní zážitek.</li></ul><p class=\"text-mid mt-3\">Dobrý cíl pro webový obsah je skóre čitelnosti mezi 60 a 70 — dostatečně srozumitelné pro většinu čtenářů, dostatečně podrobné pro sdělení odbornosti.</p>"
     },
     {
       "type": "gap",
@@ -324,38 +333,38 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Co dela toto pocitadlo vyjimecnym?",
+      "title": "Co dělá toto počítadlo výjimečným?",
       "grid": "two",
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "11 metrik + skore citelnosti",
-          "description": "Slova, znaky, slabiky, vety, odstavce, unikatni slova, doba cteni, mluveni a Flesch-Kincaid."
+          "title": "11 metrik + skóre čitelnosti",
+          "description": "Slova, znaky, slabiky, věty, odstavce, unikátní slova, doba čtení, mluvení a Flesch-Kincaid."
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 formatting tools",
-          "description": "Letter case conversion, removing spaces, empty lines, duplicates and sorting — without installing additional software."
+          "title": "10 formátovacích nástrojů",
+          "description": "Převod velikosti písmen, odstranění mezer, prázdných řádků, duplikátů a řazení — bez instalace dalšího softwaru."
         },
         {
           "icon": "RiUserLine",
-          "title": "Local processing in the browser",
-          "description": "Your text is never sent to any server. All analysis and transformation happens locally on your device."
+          "title": "Lokální zpracování v prohlížeči",
+          "description": "Váš text není nikdy odeslán na žádný server. Veškerá analýza a transformace probíhá lokálně na vašem zařízení."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Copy and clear text",
-          "description": "Copy the modified text to your clipboard with one click or clear the field to start over."
+          "title": "Kopírovat a smazat text",
+          "description": "Zkopírujte upravený text do schránky jedním kliknutím nebo vymažte pole pro nový začátek."
         },
         {
           "icon": "RiTimerLine",
-          "title": "Instant results",
-          "description": "Statistics update in real time as you type or paste text. No waiting for processing."
+          "title": "Okamžité výsledky",
+          "description": "Statistiky se aktualizují v reálném čase, jak píšete nebo vkládáte text. Žádné čekání."
         },
         {
           "icon": "RiLockLine",
-          "title": "No registration or limits",
-          "description": "The tool is completely free. No registration, login or personal data required."
+          "title": "Bez registrace a limitů",
+          "description": "Nástroj je zcela zdarma. Nevyžaduje registraci, přihlášení ani osobní údaje."
         }
       ]
     },
@@ -379,19 +388,19 @@
           "answerSchemaText": "Ano. Text je zpracován lokálně v prohlížeči."
         },
         {
-          "question": "Co je skore Flesch-Kincaid?",
-          "answer": "Flesch Reading Ease (0–100) ukazuje snadnost cteni. 90–100 = velmi snadne, 70–89 = snadne, 50–69 = stredni, 30–49 = obtizne, 0–29 = velmi obtizne.",
+          "question": "Co je skóre Flesch-Kincaid?",
+          "answer": "Flesch Reading Ease (0–100) ukazuje snadnost čtení. 90–100 = velmi snadné, 70–89 = snadné, 50–69 = střední, 30–49 = obtížné, 0–29 = velmi obtížné.",
           "answerSchemaText": "Flesch Reading Ease (0–100)."
         },
         {
-          "question": "Jak se pocita doba mluveni?",
-          "answer": "Pocet slov se deli 130 – prumernou rychlosti pri prezentacich.",
+          "question": "Jak se počítá doba mluvení?",
+          "answer": "Počet slov se dělí 130 – průměrnou rychlostí při prezentacích.",
           "answerSchemaText": "130 slov za minutu."
         },
         {
-          "question": "Jak presny je pocitadlo slabik?",
-          "answer": "Nastroj pouziva heuristiky specificke pro dany jazyk. Pro cestinu rozpoznava souhlaskove skupiny a slabikotvorné souhlasky (r, l).",
-          "answerSchemaText": "Jazykove heuristiky."
+          "question": "Jak přesné je počítadlo slabik?",
+          "answer": "Nástroj používá heuristiky specifické pro daný jazyk. Pro češtinu rozpoznává souhláskové skupiny a slabikotvorné souhlásky (r, l).",
+          "answerSchemaText": "Jazykové heuristiky."
         },
         {
           "question": "Jak zvýšit skóre čitelnosti textu?",
@@ -404,6 +413,14 @@
         {
           "question": "Jaká je ideální délka blogového článku pro SEO?",
           "answer": "Pro české vyhledávače 1 200–2 000 slov pro informativní články. Klíčová je kvalita a relevance. Pro produktové stránky stačí 300–500 slov."
+        },
+        {
+          "question": "Jaké skóre čitelnosti bych měl cílit pro webový obsah?",
+          "answer": "Pro obecný webový obsah (blogy, stránky služeb, popisy produktů) cílte na 60 až 70. Pro odborné publikum (lékaři, právníci, inženýři) je 40–50 přijatelné. Pro návody a podpůrný obsah cílte na 70+ pro maximální srozumitelnost."
+        },
+        {
+          "question": "Jaký je rozdíl mezi dobou čtení a dobou mluvení?",
+          "answer": "Doba čtení předpokládá 200 slov za minutu — průměrnou rychlost tichého čtení. Doba mluvení používá 130 slov za minutu, přirozené tempo pro prezentace a podcasty, včetně pauz a dýchání. Text o 1 000 slovech zabere přibližně 5 minut na přečtení, ale 7,5 minuty na přednesení."
         }
       ]
     },

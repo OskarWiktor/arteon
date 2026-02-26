@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "hu",
   "metadata": {
-    "title": "Szoszamlalo Flesch-Kincaid olvashatosaggal es szovegeszközökkel",
-    "description": "Ingyenes szo-, karakter- es szotagszamlalo Flesch-Kincaid olvashatosaggal, olvasasi idovel, beszedidovel es 10 formazoeszkozzel. Regisztracio nelkul.",
+    "title": "Szószámláló Flesch-Kincaid olvashatósággal és szövegeszközökkel",
+    "description": "Ingyenes szó-, karakter- és szótagszámláló Flesch-Kincaid olvashatósággal, olvasási idővel, beszédidővel és 10 formázóeszközzel. Regisztráció nélkül.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/szo-es-karakterszamlalo-hu.webp",
     "path": "/hu/eszkozok/szo-es-karakterszamlalo"
   },
   "hero": {
-    "title": "Szamold meg a szavakat, karaktereket es olvashatosagot – Flesch-Kincaid, olvasasi ido es szovegeszközök",
-    "description": "Illeszd be a szoveget, es az eszkoz megszamolja a szavakat, karaktereket, szotagokat, mondatokat, bekezdéseket, egyedi szavakat, olvasasi es beszedidot, es kiszamitja a Flesch-Kincaid olvashatosagi pontszamot.",
+    "title": "Számold meg a szavakat, karaktereket és olvashatóságot – Flesch-Kincaid, olvasási idő és szövegeszközök",
+    "description": "Illeszd be a szöveget, és az eszköz megszámolja a szavakat, karaktereket, szótagokat, mondatokat, bekezdéseket, egyedi szavakat, olvasási és beszédidőt, és kiszámítja a Flesch-Kincaid olvashatósági pontszámot.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -26,18 +26,18 @@
     "software": {
       "name": "Szó-, karakter- és olvasásiidő-számláló szövegformázással",
       "alternateName": [
-        "Online word counter",
-        "Character counter with and without spaces",
-        "Word counting tool for copywriters",
-        "Reading time calculator",
-        "Online letter case converter",
-        "Uppercase to lowercase converter",
-        "Remove duplicate lines from text",
-        "Sort text lines alphabetically",
-        "Flesch-Kincaid olvashatosag-ellenorzo",
-        "Szotagszamlalo online",
-        "Beszedido kalkulator",
-        "Szoveg olvashatosagi eszkoz"
+        "Szószámláló online",
+        "Karakterszámláló szóközökkel és anélkül",
+        "Szószámláló eszköz copywritereknek",
+        "Olvasási idő kalkulátor",
+        "Kis-/nagybetű átalakító online",
+        "Flesch-Kincaid olvashatóság-ellenőrző",
+        "Szótagszámláló online",
+        "Beszédidő kalkulátor",
+        "Szöveg olvashatósági eszköz",
+        "Ismétlődő sorok eltávolítása",
+        "Sorok rendezése ábécérendben",
+        "Ingyenes szó- és karakterszámláló"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Ingyenes szó- és karakterszámláló szövegformázó eszközökkel. Megszámolja a szavakat, karaktereket, mondatokat, bekezdéseket, egyedi szavakat és az olvasási időt. 10 eszközt kínál: kis-/nagybetű-konverzió, szóközök, üres sorok, duplikátumok eltávolítása és rendezés.",
@@ -144,64 +144,64 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 szovegmetrika – mit mer a szamlalo?",
-      "description": "A szamlalo tizenegy mutatoval elemzi a szoveget:",
+      "title": "11 szövegmetrika – mit mér a számláló?",
+      "description": "A számláló tizenegy mutatóval elemzi a szöveget:",
       "grid": "two",
       "items": [
         {
           "icon": "RiText",
-          "title": "Words",
-          "description": "Total word count. The primary indicator of text length, useful for content creation, articles and descriptions."
+          "title": "Szavak",
+          "description": "A szavak összes száma. A szöveg hosszának elsődleges mutatója, hasznos tartalomkészítéshez, cikkekhez és leírásokhoz."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Characters (with spaces)",
-          "description": "All characters including spaces. Useful when a platform has a character limit (e.g., Amazon listings, meta descriptions)."
+          "title": "Karakterek (szóközökkel)",
+          "description": "Minden karakter beleértve a szóközöket. Hasznos, ha egy platformnak karakterkorlátja van (pl. eMAG, Amazon, metaleírások)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Characters (without spaces)",
-          "description": "Only letters, digits and punctuation. The standard billing unit for translations and print shops."
+          "title": "Karakterek (szóközök nélkül)",
+          "description": "Csak betűk, számok és írásjelek. A fordítások és nyomdák szabványos számlázási egysége."
         },
         {
           "icon": "RiChatQuoteLine",
-          "title": "Sentences",
-          "description": "Number of sentences in the text. Helps assess complexity and readability — shorter sentences are easier to absorb."
+          "title": "Mondatok",
+          "description": "A mondatok száma a szövegben. Segít felmérni a bonyolultságot és olvashatóságot — a rövidebb mondatok könnyebben befogadhatók."
         },
         {
           "icon": "RiParagraph",
-          "title": "Paragraphs",
-          "description": "Text blocks separated by blank lines. Well-structured paragraphs improve readability on screens."
+          "title": "Bekezdések",
+          "description": "Üres sorokkal elválasztott szövegblokkok. A jól strukturt bekezdések javítják a képernyőn való olvashatóságot."
         },
         {
           "icon": "RiStarLine",
-          "title": "Unique words",
-          "description": "Number of non-repeating words. A higher ratio of unique to total words indicates richer vocabulary."
+          "title": "Egyedi szavak",
+          "description": "A nem ismétlődő szavak száma. Az egyedi szavak magasabb aránya gazdagabb szókincset jelez."
         },
         {
           "icon": "RiRulerLine",
-          "title": "Average word length",
-          "description": "Average number of characters per word. An indicator of text complexity — technical texts have longer words than casual ones."
+          "title": "Átlagos szóhossz",
+          "description": "A karakterek átlagos száma szavanként. A szöveg bonyolultságának mutatója — a technikai szövegek hosszabb szavakat tartalmaznak."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Reading time",
-          "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
+          "title": "Olvasási idő",
+          "description": "Becsült olvasási idő 200 szó/perc sebességgel. Közelítő érték tipikus szöveghez."
         },
         {
           "icon": "RiMicLine",
-          "title": "Beszedido",
-          "description": "Becsult beszedido 130 szo/perc sebesseggel. Eloadasokhoz es prezentaciokhoz."
+          "title": "Beszédidő",
+          "description": "Becsült beszédidő 130 szó/perc sebességgel. Előadásokhoz és prezentációkhoz."
         },
         {
           "icon": "RiInputMethodLine",
-          "title": "Szotagok",
-          "description": "Összesen szotagok szama nyelvspecifikus heurisztikakkal."
+          "title": "Szótagok",
+          "description": "Összes szótagszám nyelvspecifikus heurisztikákkal."
         },
         {
           "icon": "RiSpeedLine",
-          "title": "Olvashatosag (Flesch-Kincaid)",
-          "description": "Pontszam 0–100. 70 felett = konnyu, 50–70 = kozepes, 30 alatt = akademiai. Szinkodolt."
+          "title": "Olvashatóság (Flesch-Kincaid)",
+          "description": "Pontszám 0–100. 70 felett = könnyű, 50–70 = közepes, 30 alatt = akadémiai. Színkódolt."
         }
       ]
     },
@@ -217,53 +217,53 @@
       "items": [
         {
           "icon": "RiArrowUpLine",
-          "title": "UPPERCASE",
-          "description": "Converts all text to uppercase. Useful for headings, acronyms and highlighting text fragments."
+          "title": "NAGYBETŰS",
+          "description": "Az egész szöveget nagybetűssé alakítja. Hasznos címekhez, rövidítésekhez és szövegrészek kiemeléséhez."
         },
         {
           "icon": "RiArrowDownLine",
-          "title": "lowercase",
-          "description": "Converts all text to lowercase. Useful for normalizing text copied from different sources."
+          "title": "kisbetűs",
+          "description": "Az egész szöveget kisbetűssé alakítja. Hasznos különböző forrásokból másolt szöveg normalizálásához."
         },
         {
           "icon": "RiEditLine",
-          "title": "Sentence case",
-          "description": "First letter of each sentence is capitalized, the rest lowercase. Standard format for continuous text."
+          "title": "Mondatstílus",
+          "description": "Minden mondat első betűje nagy, a többi kis. Szabványos formátum folyamatos szöveghez."
         },
         {
           "icon": "RiHeading",
-          "title": "Title Case",
-          "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
+          "title": "Címstílus",
+          "description": "Minden szó nagybetűvel kezdődik. Ideális címekhez, fejlécekhez és tulajdonnevekhez."
         },
         {
           "icon": "RiArrowLeftRightLine",
-          "title": "tOGGLE cASE",
-          "description": "Swaps uppercase to lowercase and vice versa. Useful when text was typed with Caps Lock on."
+          "title": "fORDÍTOTT",
+          "description": "A nagybetűket kisbetűkre cseréli és fordítva. Hasznos, ha a szöveget bekapcsolt Caps Lock-kal írták."
         },
         {
           "icon": "RiSpace",
-          "title": "Remove extra spaces",
-          "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
+          "title": "Extra szóközök eltávolítása",
+          "description": "A többszörös szóközöket egyre csökkenti, és eltávolítja a sorok elején és végén lévő szóközöket."
         },
         {
           "icon": "RiDeleteRow",
-          "title": "Remove empty lines",
-          "description": "Removes empty and redundant lines from text. Useful for cleaning text copied from websites."
+          "title": "Üres sorok eltávolítása",
+          "description": "Eltávolítja az üres és felesleges sorokat a szövegből. Hasznos weboldalakról másolt szöveg tisztításához."
         },
         {
           "icon": "RiFilterLine",
-          "title": "Remove duplicate lines",
-          "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
+          "title": "Ismétlődő sorok eltávolítása",
+          "description": "Csak az egyedi sorokat tartja meg, eltávolítva az ismétléseket. Hasznos listák és adatok tisztításához."
         },
         {
           "icon": "RiSortAsc",
-          "title": "Sort A→Z",
-          "description": "Sorts text lines alphabetically in ascending order. Useful for organizing lists, keywords and data."
+          "title": "Rendezés A→Z",
+          "description": "A sorokat ábécérendbe rendezi növekvően. Hasznos listák és adatok rendezéséhez."
         },
         {
           "icon": "RiSortDesc",
-          "title": "Sort Z→A",
-          "description": "Sorts text lines alphabetically in descending order. Reverse sort order."
+          "title": "Rendezés Z→A",
+          "description": "A sorokat ábécérendbe rendezi csökkenően. Fordított rendezési sorrend."
         }
       ]
     },
@@ -279,33 +279,33 @@
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Copywriters and editors",
-          "description": "Count words and characters, check platform limits, quickly change letter case and clean text before publishing."
+          "title": "Szövegírók és szerkesztők",
+          "description": "Szavak és karakterek számlálása, platformkorlátok ellenőrzése, gyors betűméret-váltás és szövegtisztítás publikálás előtt."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Bloggers and content creators",
-          "description": "Monitor post length, check reading time, remove duplicate lines and sort lists."
+          "title": "Bloggerek és tartalomkészítők",
+          "description": "Bejegyzéshossz figyelemmel kísérése, olvasási idő ellenőrzése, ismétlődő sorok eltávolítása és listák rendezése."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "Store owners",
-          "description": "Verify product descriptions against character limits on platforms (Amazon, eBay, Etsy)."
+          "title": "Bolt tulajdonosok",
+          "description": "Termékleírások ellenőrzése a platformok karakterkorlátaihoz képest (Jófogás, Amazon, eBay)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO specialists",
-          "description": "Analyze content length, count unique words and assess text complexity based on average word length."
+          "title": "SEO-szakemberek",
+          "description": "Tartalom hosszának elemzése, egyedi szavak számlálása és a szöveg bonyolultságának felmérése az átlagos szóhossz alapján."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Students and academics",
-          "description": "Check word or character limits in essays and research papers."
+          "title": "Diákok és kutatók",
+          "description": "Szó- vagy karakterkorlátok ellenőrzése esszékben és kutatási dolgozatokban."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Translators",
-          "description": "Count characters without spaces for quotes (the standard billing unit in translation)."
+          "title": "Fordítók",
+          "description": "Karakterek számlálása szóközök nélkül árajánlatokhoz (a fordítóipar szabványos számlázási egysége)."
         }
       ]
     },
@@ -316,7 +316,16 @@
     {
       "type": "sectionInfo",
       "title": "Karakterkorlátok népszerű platformokon",
-      "html": "<p class=\"text-mid\">Character limits vary by platform.</p>"
+      "html": "<p class=\"text-mid mb-4\">A karakterszámláló hasznos, ha olyan platformokra készítesz tartalmat, amelyeknek hosszúsági korlátai vannak:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform / Elem</th><th class=\"py-2 pr-4 font-semibold\">Karakterkorlát</th><th class=\"py-2 font-semibold\">Megjegyzések</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 karakter</td><td class=\"text-primary-light0 py-2 text-sm\">A hosszabb címek csonkolódnak a keresési eredményekben.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 karakter</td><td class=\"text-primary-light0 py-2 text-sm\">A link alatti látható leírás a keresési eredményekben.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Jófogás.hu – hirdetéscím</td><td class=\"py-2 pr-4 whitespace-nowrap\">60 karakter</td><td class=\"text-primary-light0 py-2 text-sm\">A rövid címek javítják a keresési láthatóságot.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – bejegyzés</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 karakter</td><td class=\"text-primary-light0 py-2 text-sm\">A linkek és említések beleszámítanak.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – képaláírás</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 200 karakter</td><td class=\"text-primary-light0 py-2 text-sm\">~125 karakter után megjelenik a &laquo;tovább&raquo; link.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn – bejegyzés</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 karakter</td><td class=\"text-primary-light0 py-2 text-sm\">~210 karakter után megjelenik a &laquo;több megjelenítése&raquo; link.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miért fontos az olvashatóság a SEO szempontjából",
+      "html": "<p class=\"text-mid mb-4\">A keresőmotorok a felhasználói szándékot kielégítő tartalmakat részesítik előnyben. Az olvasható szöveg közvetlenül befolyásolja a kulcsfontosságú elköteleződési mutatókat:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Oldalon töltött idő</strong> — a látogatók tovább maradnak a könnyen olvasható oldalakon. A Google a hosszabb látogatásokat minőségi jelzésként értelmezi.</li><li><strong>Visszafordulási arány</strong> — a sűrű, nehezen olvasható szöveg elriasztja a látogatókat. Egy 30 alatti Flesch-pontszám általános oldalon gyakran magas visszafordulási aránnyal jár együtt.</li><li><strong>Kiemelt részletek</strong> — a Google világos, tömör válaszokat választ a kiemelt részletekhez. A rövidebb mondatok és a közvetlen nyelvezet növeli a kiválasztás esélyét.</li><li><strong>Mobil olvashatóság</strong> — kis képernyőkön a hosszú mondatok és a komplex szókincs még nehezebben követhető. A 60+ pontos érték javítja a mobil élményt.</li></ul><p class=\"text-mid mt-3\">Egy jó cél webes tartalomhoz az 50–60 közötti Flesch-pontszám — elég világos a legtöbb olvasó számára, elég részletes a szakértelem közvetítéséhez.</p>"
     },
     {
       "type": "gap",
@@ -324,38 +333,38 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Mi teszi kulonlegesse ezt a szoszamlalot?",
+      "title": "Mi teszi különlegessé ezt a szószámlálót?",
       "grid": "two",
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "11 metrika + olvashatosagi pontszam",
-          "description": "Szavak, karakterek, szotagok, mondatok, bekezdések, egyedi szavak, olvasasi ido, beszedido es Flesch-Kincaid."
+          "title": "11 metrika + olvashatósági pontszám",
+          "description": "Szavak, karakterek, szótagok, mondatok, bekezdések, egyedi szavak, olvasási idő, beszédidő és Flesch-Kincaid."
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 formatting tools",
-          "description": "Letter case conversion, removing spaces, empty lines, duplicates and sorting — without installing additional software."
+          "title": "10 formázó eszköz",
+          "description": "Betűméret-átalakítás, szóközök, üres sorok, ismétlődések eltávolítása és rendezés — további szoftver telepítése nélkül."
         },
         {
           "icon": "RiUserLine",
-          "title": "Local processing in the browser",
-          "description": "Your text is never sent to any server. All analysis and transformation happens locally on your device."
+          "title": "Helyi feldolgozás a böngészőben",
+          "description": "A szöveged soha nem kerül semmilyen szerverre. Minden elemzés és átalakítás helyben történik az eszközödön."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Copy and clear text",
-          "description": "Copy the modified text to your clipboard with one click or clear the field to start over."
+          "title": "Másolás és törlés",
+          "description": "Másold a módosított szöveget a vágólapra egy kattintással, vagy töröld a mezőt az újrakezdéshez."
         },
         {
           "icon": "RiTimerLine",
-          "title": "Instant results",
-          "description": "Statistics update in real time as you type or paste text. No waiting for processing."
+          "title": "Azonnali eredmények",
+          "description": "A statisztikák valós időben frissülnek, ahogy írsz vagy beilleszt szöveget. Nincs várakozás."
         },
         {
           "icon": "RiLockLine",
-          "title": "No registration or limits",
-          "description": "The tool is completely free. No registration, login or personal data required."
+          "title": "Regisztráció és korlátozás nélkül",
+          "description": "Az eszköz teljesen ingyenes. Nem igényel regisztrációt, bejelentkezést vagy személyes adatokat."
         }
       ]
     },
@@ -379,19 +388,19 @@
           "answerSchemaText": "Igen. A szöveg helyben, a böngészőben kerül feldolgozásra."
         },
         {
-          "question": "Mi az a Flesch-Kincaid pontszam?",
-          "answer": "A Flesch Reading Ease (0–100) azt mutatja, mennyire konnyu olvasni a szoveget. 90–100 = nagyon konnyu, 70–89 = konnyu, 50–69 = kozepes, 30–49 = nehez, 0–29 = nagyon nehez.",
-          "answerSchemaText": "Flesch Reading Ease (0–100), magasabb = konnyebb."
+          "question": "Mi az a Flesch-Kincaid pontszám?",
+          "answer": "A Flesch Reading Ease (0–100) azt mutatja, mennyire könnyű olvasni a szöveget. 90–100 = nagyon könnyű, 70–89 = könnyű, 50–69 = közepes, 30–49 = nehéz, 0–29 = nagyon nehéz.",
+          "answerSchemaText": "Flesch Reading Ease (0–100), magasabb = könnyebb."
         },
         {
-          "question": "Hogyan szamitja a beszedidot?",
-          "answer": "A szavakat elosztja 130-cal – az atlagos prezentacios beszedsebességgel.",
-          "answerSchemaText": "130 szo/perc."
+          "question": "Hogyan számítja a beszédidőt?",
+          "answer": "A szavakat elosztja 130-cal – az átlagos prezentációs beszédsebességgel.",
+          "answerSchemaText": "130 szó/perc."
         },
         {
-          "question": "Mennyire pontos a szotagszamlalo?",
-          "answer": "Nyelvspecifikus heurisztikakat hasznal. A magyar eseteban figyelembe veszi a maganhangzo-szabalyokat.",
-          "answerSchemaText": "Nyelvspecifikus heurisztikak."
+          "question": "Mennyire pontos a szótagszámláló?",
+          "answer": "Nyelvspecifikus heurisztikákat használ. A magyar esetében figyelembe veszi a magánhangzó-szabályokat.",
+          "answerSchemaText": "Nyelvspecifikus heurisztikák."
         },
         {
           "question": "Hogyan javíthatom a szövegem olvashatóságát?",
@@ -403,7 +412,15 @@
         },
         {
           "question": "Mi az ideális blogcikk-hossz a magyar SEO-hoz?",
-          "answer": "Információs cikkekhez 1 200–2 000 szó. A magyar összetett szavak tömörebbé teszik a szöveget, ezért a szószám alacsonyabb lehet, mint angolul. Termekoldalakhoz 300–500 szó elegendő."
+          "answer": "Információs cikkekhez 1 200–2 000 szó. A magyar összetett szavak tömörebbé teszik a szöveget, ezért a szószám alacsonyabb lehet, mint angolul. Termékoldalakhoz 300–500 szó elegendő."
+        },
+        {
+          "question": "Milyen olvashatósági pontszámot érdemes célozni webes tartalomhoz?",
+          "answer": "Általános webes tartalomhoz (blogok, szolgáltatásoldalak, termékleírások) célozzon 50–60 pontot. Szakmai közönségnek (orvosok, jogászok, mérnökök) 30–50 is elfogadható. Útmutatókhoz és támogatási tartalomhoz célozzon 60+ pontot a maximális érthetőség érdekében."
+        },
+        {
+          "question": "Mi a különbség az olvasási idő és a beszédidő között?",
+          "answer": "Az olvasási idő 200 szó/perc sebességgel számol — az átlagos csendes olvasási sebesség. A beszédidő 130 szó/perc sebességet használ, ami a természetes tempó prezentációkhoz és podcastokhoz, beleértve a szüneteket és a légzést. Egy 1 000 szavas szöveg kb. 5 percet vesz igénybe olvasásra, de 7,5 percet beszédre."
         }
       ]
     },

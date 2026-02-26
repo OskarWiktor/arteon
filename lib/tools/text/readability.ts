@@ -13,6 +13,21 @@ export interface ReadabilityResult {
 }
 
 /**
+ * Derive an approximate school-grade level from a 0-100 readability score.
+ * Used for locales with adapted Flesch formulas (DE, ES/PT/RO, NL, FR)
+ * so the grade reflects the localized score rather than the US-calibrated formula.
+ */
+function scoreToGrade(score: number): number {
+  if (score >= 90) return 3; // elementary
+  if (score >= 80) return 5;
+  if (score >= 70) return 6;
+  if (score >= 60) return 8;
+  if (score >= 50) return 10;
+  if (score >= 30) return 13; // college
+  return 16; // graduate / specialist
+}
+
+/**
  * Calculate Flesch Reading Ease and Flesch-Kincaid Grade Level.
  *
  * Requires at least 1 sentence and 1 word to produce a meaningful result.
@@ -20,11 +35,13 @@ export interface ReadabilityResult {
  *
  * Language-adapted formulas are used where available:
  * - DE: Amstad formula
- * - ES: Fernández-Huerta formula
+ * - ES/PT/RO: Fernández-Huerta formula (Romance languages)
  * - NL: Flesch-Douma formula
- * - IT: Gulpease index (mapped to 0-100 scale)
+ * - IT: Gulpease index (native Italian, character-based)
  * - FR: Kandel-Moles adaptation
- * - All others: standard Flesch formula
+ * - SV/DA/NO: LIX (Björnsson Readability Index) mapped to 0-100 scale
+ * - EN and others (PL, CS, HU, FI, EL): standard Flesch formula
+ *   (approximate — no established native adaptation exists for these languages)
  */
 export function calculateReadability(text: string, locale: Locale = 'en'): ReadabilityResult {
   const words = countWords(text);
@@ -45,39 +62,58 @@ export function calculateReadability(text: string, locale: Locale = 'en'): Reada
     case 'de': {
       // Amstad formula for German
       fleschScore = 180 - ASL - 58.5 * ASW;
-      fleschGrade = 0.39 * ASL + 11.8 * ASW - 15.59;
+      fleschGrade = scoreToGrade(fleschScore);
       break;
     }
     case 'es':
-    case 'pt': {
-      // Fernández-Huerta formula (Spanish/Portuguese)
+    case 'pt':
+    case 'ro': {
+      // Fernández-Huerta formula (Spanish/Portuguese/Romanian)
+      // Romanian is a Romance language with similar syllable structure
       fleschScore = 206.84 - 60 * ASW - 1.02 * ASL;
-      fleschGrade = 0.39 * ASL + 11.8 * ASW - 15.59;
+      fleschGrade = scoreToGrade(fleschScore);
       break;
     }
     case 'nl': {
       // Flesch-Douma formula (Dutch)
       fleschScore = 206.835 - 0.93 * ASL - 77 * ASW;
-      fleschGrade = 0.39 * ASL + 11.8 * ASW - 15.59;
+      fleschGrade = scoreToGrade(fleschScore);
       break;
     }
     case 'it': {
-      // Gulpease index (Italian) — native scale 0-100
+      // Gulpease index (Italian) — native scale 0-100, character-based
       const chars = text.replace(/\s/g, '').length;
       const gulpease = 89 + (300 * sentences - 10 * chars) / words;
-      // Map Gulpease to approximate Flesch scale (Gulpease 100=easy → Flesch 100)
       fleschScore = Math.min(100, Math.max(0, gulpease));
-      fleschGrade = 0.39 * ASL + 11.8 * ASW - 15.59;
+      // Gulpease grade: approximate education level (elementary=3, middle=7, high=11, university=15)
+      fleschGrade = gulpease >= 80 ? 3 : gulpease >= 60 ? 7 : gulpease >= 40 ? 11 : 15;
       break;
     }
     case 'fr': {
       // Kandel-Moles adaptation (French)
       fleschScore = 207 - 1.015 * ASL - 73.6 * ASW;
-      fleschGrade = 0.39 * ASL + 11.8 * ASW - 15.59;
+      fleschGrade = scoreToGrade(fleschScore);
+      break;
+    }
+    case 'sv':
+    case 'da':
+    case 'no': {
+      // LIX — Björnsson Readability Index (standard for Scandinavian languages)
+      // LIX = ASL + (percentage of words longer than 6 characters)
+      const wordList = text.match(/\p{L}+/gu) || [];
+      const longWords = wordList.filter((w) => w.length > 6).length;
+      const longPct = wordList.length > 0 ? (longWords / wordList.length) * 100 : 0;
+      const lix = ASL + longPct;
+      // Map LIX (typically 20-60) to Flesch-like 0-100 scale (inverted: low LIX = easy)
+      fleschScore = Math.max(0, Math.min(100, 100 - (lix - 20) * 1.67));
+      // LIX grade mapping: <25=children, 25-35=easy, 35-45=average, 45-55=difficult, >55=very difficult
+      fleschGrade = lix < 25 ? 3 : lix < 35 ? 6 : lix < 45 ? 9 : lix < 55 ? 13 : 16;
       break;
     }
     default: {
-      // Standard Flesch formulas (EN, PL, and all others)
+      // Standard Flesch formulas (EN, PL, CS, HU, FI, EL)
+      // For PL/CS/HU/FI/EL no established native adaptation exists;
+      // the standard formula with locale-specific syllable heuristics is approximate.
       fleschScore = 206.835 - 1.015 * ASL - 84.6 * ASW;
       fleschGrade = 0.39 * ASL + 11.8 * ASW - 15.59;
       break;
@@ -114,34 +150,53 @@ const READABILITY_LABELS: Record<Locale, { veryEasy: string; easy: string; moder
   el: { veryEasy: 'Πολύ εύκολο', easy: 'Εύκολο', moderate: 'Μέτριο', difficult: 'Δύσκολο', veryDifficult: 'Πολύ δύσκολο' },
 };
 
+// Locale-aware thresholds for readability labels.
+// Most locales use the standard Flesch thresholds (90/70/50/30).
+// Italian Gulpease has its own education-level-based scale.
+const READABILITY_THRESHOLDS: Partial<Record<Locale, [number, number, number, number]>> = {
+  it: [80, 60, 40, 20], // Gulpease: 80+ elementary, 60+ middle school, 40+ high school, <40 university
+};
+
+const DEFAULT_THRESHOLDS: [number, number, number, number] = [90, 70, 50, 30];
+
 /**
  * Get a human-readable readability label based on the Flesch score.
  *
- * Scale:
+ * Default scale (most locales):
  *  90-100  Very easy (5th grade)
  *  70-89   Easy (6th-7th grade)
  *  50-69   Moderate (8th-9th grade)
  *  30-49   Difficult (college level)
  *   0-29   Very difficult (academic)
+ *
+ * Italian Gulpease scale:
+ *  80-100  Very easy (elementary)
+ *  60-79   Easy (middle school)
+ *  40-59   Moderate (high school)
+ *  20-39   Difficult (university)
+ *   0-19   Very difficult (specialist)
  */
 export function getReadabilityLabel(score: number | null, locale: Locale = 'en'): string {
   if (score === null) return '—';
   const labels = READABILITY_LABELS[locale];
-  if (score >= 90) return labels.veryEasy;
-  if (score >= 70) return labels.easy;
-  if (score >= 50) return labels.moderate;
-  if (score >= 30) return labels.difficult;
+  const [veryEasy, easy, moderate, difficult] = READABILITY_THRESHOLDS[locale] ?? DEFAULT_THRESHOLDS;
+  if (score >= veryEasy) return labels.veryEasy;
+  if (score >= easy) return labels.easy;
+  if (score >= moderate) return labels.moderate;
+  if (score >= difficult) return labels.difficult;
   return labels.veryDifficult;
 }
 
 /**
  * Get a CSS-friendly color class for the readability score.
+ * Uses locale-aware thresholds to match getReadabilityLabel.
  */
-export function getReadabilityColor(score: number | null): string {
+export function getReadabilityColor(score: number | null, locale: Locale = 'en'): string {
   if (score === null) return 'text-neutral-400';
-  if (score >= 70) return 'text-green-600';
-  if (score >= 50) return 'text-yellow-600';
-  if (score >= 30) return 'text-orange-500';
+  const [, easy, moderate, difficult] = READABILITY_THRESHOLDS[locale] ?? DEFAULT_THRESHOLDS;
+  if (score >= easy) return 'text-green-600';
+  if (score >= moderate) return 'text-yellow-600';
+  if (score >= difficult) return 'text-orange-500';
   return 'text-red-500';
 }
 

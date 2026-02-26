@@ -314,7 +314,16 @@
     {
       "type": "sectionInfo",
       "title": "Limiti di caratteri sulle piattaforme popolari",
-      "html": "<p class=\"text-mid\">Character limits vary by platform.</p>"
+      "html": "<p class=\"text-mid mb-4\">Il contatore di caratteri è utile per creare contenuti su piattaforme con restrizioni di lunghezza:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Piattaforma / Elemento</th><th class=\"py-2 pr-4 font-semibold\">Limite di caratteri</th><th class=\"py-2 font-semibold\">Note</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 caratteri</td><td class=\"text-primary-light0 py-2 text-sm\">Titoli più lunghi vengono troncati nei risultati di ricerca.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 caratteri</td><td class=\"text-primary-light0 py-2 text-sm\">Descrizione visibile sotto il link nei risultati di ricerca.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon.it – titolo prodotto</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 caratteri</td><td class=\"text-primary-light0 py-2 text-sm\">Titolo breve con le parole chiave più importanti.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Subito.it – titolo annuncio</td><td class=\"py-2 pr-4 whitespace-nowrap\">50 caratteri</td><td class=\"text-primary-light0 py-2 text-sm\">Titoli concisi migliorano la visibilità nelle ricerche.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – post</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 caratteri</td><td class=\"text-primary-light0 py-2 text-sm\">Include link e menzioni nel conteggio.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – didascalia</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 200 caratteri</td><td class=\"text-primary-light0 py-2 text-sm\">Dopo circa 125 caratteri appare il link &laquo;altro&raquo;.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn – post</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 caratteri</td><td class=\"text-primary-light0 py-2 text-sm\">Dopo ~210 caratteri appare il link &laquo;vedi altro&raquo;.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Perché la leggibilità è importante per la SEO",
+      "html": "<p class=\"text-mid mb-4\">I motori di ricerca privilegiano i contenuti che soddisfano l'intento dell'utente. Un testo leggibile incide direttamente sulle metriche di engagement:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tempo sulla pagina</strong> — i visitatori restano più a lungo sulle pagine facili da leggere. Google interpreta le visite più lunghe come segnale di qualità.</li><li><strong>Frequenza di rimbalzo</strong> — un testo denso e difficile allontana i lettori. Un punteggio Gulpease sotto 40 su una pagina generalista spesso correla con un alto tasso di rimbalzo.</li><li><strong>Snippet in primo piano</strong> — Google tende a selezionare risposte chiare e concise. Frasi brevi e linguaggio diretto aumentano la probabilità di essere selezionati.</li><li><strong>Leggibilità mobile</strong> — su schermi piccoli, frasi lunghe e vocabolario complesso sono ancora più difficili da seguire. Un Gulpease di 60+ migliora l'esperienza mobile.</li></ul><p class=\"text-mid mt-3\">Un buon obiettivo per i contenuti web è un Gulpease tra 60 e 80 — chiaro per la maggior parte dei lettori, abbastanza dettagliato per trasmettere competenza.</p>"
     },
     {
       "type": "gap",
@@ -402,6 +411,14 @@
         {
           "question": "Qual è la lunghezza ideale per un articolo SEO in italiano?",
           "answer": "Per articoli informativi: 1.200–2.000 parole. Per pagine prodotto: 300–500 parole. La qualità e la pertinenza contano più della lunghezza."
+        },
+        {
+          "question": "Quale punteggio Gulpease dovrei raggiungere per i contenuti web?",
+          "answer": "Per contenuti web generici (blog, pagine servizi, descrizioni prodotto) puntate a un Gulpease tra 60 e 80. Questo intervallo è chiaro per la maggior parte dei lettori. Per pubblico specialistico (medici, avvocati, ingegneri) anche 40–60 è accettabile. Per istruzioni e supporto, puntate a 80+ per la massima chiarezza."
+        },
+        {
+          "question": "Qual è la differenza tra tempo di lettura e tempo di parlato?",
+          "answer": "Il tempo di lettura usa 200 parole al minuto — la velocità media di lettura silenziosa. Il tempo di parlato usa 130 parole al minuto, il ritmo naturale per presentazioni e podcast, che include pause e respiro. Un testo di 1.000 parole richiede circa 5 minuti di lettura ma 7,5 minuti di parlato."
         }
       ]
     },

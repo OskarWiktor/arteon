@@ -321,6 +321,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Pourquoi la lisibilité est importante pour le SEO",
+      "html": "<p class=\"text-mid mb-4\">Les moteurs de recherche privilégient le contenu qui satisfait l'intention de l'utilisateur. Un texte lisible affecte directement les métriques d'engagement clés :</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Temps passé sur la page</strong> — les visiteurs restent plus longtemps sur les pages faciles à lire. Google interprète les visites prolongées comme un signal de qualité.</li><li><strong>Taux de rebond</strong> — un texte dense et difficile fait fuir les lecteurs. Un score Flesch inférieur à 30 sur une page grand public est souvent corrélé à un taux de rebond élevé.</li><li><strong>Extraits en vedette</strong> — Google sélectionne des réponses claires et concises pour les extraits en vedette. Des phrases plus courtes et un langage direct augmentent les chances d'être sélectionné.</li><li><strong>Lisibilité mobile</strong> — sur les petits écrans, les phrases longues et le vocabulaire complexe sont encore plus difficiles à suivre. Viser un score de 60+ améliore l'expérience mobile.</li></ul><p class=\"text-mid mt-3\">Un bon objectif pour le contenu web est un score Flesch entre 60 et 70 — suffisamment clair pour la plupart des lecteurs, suffisamment détaillé pour transmettre l'expertise.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Qu’est-ce qui rend ce compteur de mots spécial ?",
       "grid": "two",

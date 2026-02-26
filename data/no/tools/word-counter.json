@@ -2,7 +2,7 @@
   "toolKey": "wordCounter",
   "locale": "no",
   "metadata": {
-    "title": "Ordteller med Flesch-Kincaid lesbarhet & tekstverkty",
+    "title": "Ordteller med Flesch-Kincaid lesbarhet & tekstverktøy",
     "description": "Gratis ord-, tegn- og stavelsesteller med Flesch-Kincaid poeng, lesetid, taletid og 10 formateringsverktøy. Uten registrering.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegnteller-no.webp",
     "path": "/no/verktoy/ord-og-tegnteller"
@@ -26,18 +26,18 @@
     "software": {
       "name": "Ord-, tegn- og lesetidsteller med tekstformatering",
       "alternateName": [
-        "Online word counter",
-        "Character counter with and without spaces",
-        "Word counting tool for copywriters",
-        "Reading time calculator",
-        "Online letter case converter",
-        "Uppercase to lowercase converter",
-        "Remove duplicate lines from text",
-        "Sort text lines alphabetically",
+        "Ordteller online",
+        "Tegnteller med og uten mellomrom",
+        "Ordtellerverktøy for tekstforfattere",
+        "Lesetidskalkulator",
+        "Store/små bokstaver konverter",
         "Flesch-Kincaid lesbarhetskontroll",
         "Stavelsesteller online",
         "Taletidskalkulator",
-        "Lesbarhetsverktøy"
+        "Lesbarhetsverktøy",
+        "Fjern duplikater fra tekst",
+        "Sorter tekstlinjer alfabetisk",
+        "Gratis ord- og tegnteller"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Gratis ord- og tegnteller med tekstformateringsverktøy. Teller ord, tegn, setninger, avsnitt, unike ord og lesetid. Tilbyr 10 verktøy: endring av store/små bokstaver, fjerning av mellomrom, tomme linjer, duplikater og sortering.",
@@ -150,43 +150,43 @@
       "items": [
         {
           "icon": "RiText",
-          "title": "Words",
-          "description": "Total word count. The primary indicator of text length, useful for content creation, articles and descriptions."
+          "title": "Ord",
+          "description": "Totalt antall ord. Den primære indikatoren for tekstlengde, nyttig for innholdsproduksjon, artikler og beskrivelser."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Characters (with spaces)",
-          "description": "All characters including spaces. Useful when a platform has a character limit (e.g., Amazon listings, meta descriptions)."
+          "title": "Tegn (med mellomrom)",
+          "description": "Alle tegn inkludert mellomrom. Nyttig når en plattform har en tegngrense (f.eks. Finn.no, Amazon, metabeskrivelser)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Characters (without spaces)",
-          "description": "Only letters, digits and punctuation. The standard billing unit for translations and print shops."
+          "title": "Tegn (uten mellomrom)",
+          "description": "Bare bokstaver, tall og tegnsetting. Standardenheten for fakturering ved oversettelser og trykkerier."
         },
         {
           "icon": "RiChatQuoteLine",
-          "title": "Sentences",
-          "description": "Number of sentences in the text. Helps assess complexity and readability — shorter sentences are easier to absorb."
+          "title": "Setninger",
+          "description": "Antall setninger i teksten. Hjelper med å vurdere kompleksitet og lesbarhet — kortere setninger er lettere å ta til seg."
         },
         {
           "icon": "RiParagraph",
-          "title": "Paragraphs",
-          "description": "Text blocks separated by blank lines. Well-structured paragraphs improve readability on screens."
+          "title": "Avsnitt",
+          "description": "Tekstblokker adskilt med tomme linjer. Velstrukturerte avsnitt forbedrer lesbarheten på skjermer."
         },
         {
           "icon": "RiStarLine",
-          "title": "Unique words",
-          "description": "Number of non-repeating words. A higher ratio of unique to total words indicates richer vocabulary."
+          "title": "Unike ord",
+          "description": "Antall ikke-gjentatte ord. En høyere andel unike ord indikerer et rikere ordforråd."
         },
         {
           "icon": "RiRulerLine",
-          "title": "Average word length",
-          "description": "Average number of characters per word. An indicator of text complexity — technical texts have longer words than casual ones."
+          "title": "Gjennomsnittlig ordlengde",
+          "description": "Gjennomsnittlig antall tegn per ord. En indikator på tekstkompleksitet — tekniske tekster har lengre ord."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Reading time",
-          "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
+          "title": "Lesetid",
+          "description": "Estimert lesetid ved 200 ord per minutt. En omtrentlig verdi for typisk tekst."
         },
         {
           "icon": "RiMicLine",
@@ -217,53 +217,53 @@
       "items": [
         {
           "icon": "RiArrowUpLine",
-          "title": "UPPERCASE",
-          "description": "Converts all text to uppercase. Useful for headings, acronyms and highlighting text fragments."
+          "title": "STORE BOKSTAVER",
+          "description": "Konverterer all tekst til store bokstaver. Nyttig for overskrifter, forkortelser og markering av tekst."
         },
         {
           "icon": "RiArrowDownLine",
-          "title": "lowercase",
-          "description": "Converts all text to lowercase. Useful for normalizing text copied from different sources."
+          "title": "små bokstaver",
+          "description": "Konverterer all tekst til små bokstaver. Nyttig for normalisering av tekst kopiert fra ulike kilder."
         },
         {
           "icon": "RiEditLine",
-          "title": "Sentence case",
-          "description": "First letter of each sentence is capitalized, the rest lowercase. Standard format for continuous text."
+          "title": "Setningsstil",
+          "description": "Første bokstav i hver setning er stor, resten små. Standardformat for løpende tekst."
         },
         {
           "icon": "RiHeading",
-          "title": "Title Case",
-          "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
+          "title": "Tittelstil",
+          "description": "Hvert ord begynner med stor bokstav. Ideelt for titler, overskrifter og egennavn."
         },
         {
           "icon": "RiArrowLeftRightLine",
-          "title": "tOGGLE cASE",
-          "description": "Swaps uppercase to lowercase and vice versa. Useful when text was typed with Caps Lock on."
+          "title": "oMVENDT",
+          "description": "Bytter store bokstaver til små og omvendt. Nyttig når tekst ble skrevet med Caps Lock på."
         },
         {
           "icon": "RiSpace",
-          "title": "Remove extra spaces",
-          "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
+          "title": "Fjern ekstra mellomrom",
+          "description": "Reduserer flere mellomrom til ett og fjerner mellomrom i begynnelsen og slutten av hver linje."
         },
         {
           "icon": "RiDeleteRow",
-          "title": "Remove empty lines",
-          "description": "Removes empty and redundant lines from text. Useful for cleaning text copied from websites."
+          "title": "Fjern tomme linjer",
+          "description": "Fjerner tomme og overflødige linjer fra teksten. Nyttig for rengjering av tekst kopiert fra nettsider."
         },
         {
           "icon": "RiFilterLine",
-          "title": "Remove duplicate lines",
-          "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
+          "title": "Fjern duplikater",
+          "description": "Beholder bare unike linjer og fjerner gjentagelser. Nyttig for rengjering av lister og data."
         },
         {
           "icon": "RiSortAsc",
-          "title": "Sort A→Z",
-          "description": "Sorts text lines alphabetically in ascending order. Useful for organizing lists, keywords and data."
+          "title": "Sorter A→Å",
+          "description": "Sorterer linjer alfabetisk i stigende rekkefølge. Nyttig for organisering av lister og data."
         },
         {
           "icon": "RiSortDesc",
-          "title": "Sort Z→A",
-          "description": "Sorts text lines alphabetically in descending order. Reverse sort order."
+          "title": "Sorter Å→A",
+          "description": "Sorterer linjer alfabetisk i synkende rekkefølge. Omvendt sorteringsrekkefølge."
         }
       ]
     },
@@ -279,33 +279,33 @@
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Copywriters and editors",
-          "description": "Count words and characters, check platform limits, quickly change letter case and clean text before publishing."
+          "title": "Tekstforfattere og redaktører",
+          "description": "Tell ord og tegn, sjekk plattformgrenser, bytt raskt bokstavstørrelse og rens tekst før publisering."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Bloggers and content creators",
-          "description": "Monitor post length, check reading time, remove duplicate lines and sort lists."
+          "title": "Bloggere og innholdsskapere",
+          "description": "Overvåk innleggslengde, sjekk lesetid, fjern duplikater og sorter lister."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "Store owners",
-          "description": "Verify product descriptions against character limits on platforms (Amazon, eBay, Etsy)."
+          "title": "Butikkeiere",
+          "description": "Kontroller produktbeskrivelser mot tegngrenser på plattformer (Finn.no, Amazon, eBay)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO specialists",
-          "description": "Analyze content length, count unique words and assess text complexity based on average word length."
+          "title": "SEO-spesialister",
+          "description": "Analyser innholdslengde, tell unike ord og vurder tekstkompleksitet basert på gjennomsnittlig ordlengde."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Students and academics",
-          "description": "Check word or character limits in essays and research papers."
+          "title": "Studenter og akademikere",
+          "description": "Sjekk ord- eller tegngrenser i oppgaver og forskningsrapporter."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Translators",
-          "description": "Count characters without spaces for quotes (the standard billing unit in translation)."
+          "title": "Oversettere",
+          "description": "Tell tegn uten mellomrom for tilbud (standardenheten for fakturering i oversettelse)."
         }
       ]
     },
@@ -316,7 +316,16 @@
     {
       "type": "sectionInfo",
       "title": "Tegngrenser på populære plattformer",
-      "html": "<p class=\"text-mid\">Character limits vary by platform.</p>"
+      "html": "<p class=\"text-mid mb-4\">Tegntelleren er nyttig når du lager innhold for plattformer med lengdebegrensninger:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Plattform / Element</th><th class=\"py-2 pr-4 font-semibold\">Tegngrense</th><th class=\"py-2 font-semibold\">Merknader</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 tegn</td><td class=\"text-primary-light0 py-2 text-sm\">Lengre titler kuttes i søkeresultatene.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 tegn</td><td class=\"text-primary-light0 py-2 text-sm\">Synlig beskrivelse under lenken i søkeresultatene.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Finn.no – annonsetittel</td><td class=\"py-2 pr-4 whitespace-nowrap\">60 tegn</td><td class=\"text-primary-light0 py-2 text-sm\">Korte titler forbedrer synligheten i søk.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – innlegg</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 tegn</td><td class=\"text-primary-light0 py-2 text-sm\">Inkluderer lenker og omtaler i tellingen.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – bildetekst</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 200 tegn</td><td class=\"text-primary-light0 py-2 text-sm\">Etter ~125 tegn vises lenken &laquo;mer&raquo;.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn – innlegg</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 tegn</td><td class=\"text-primary-light0 py-2 text-sm\">Etter ~210 tegn vises lenken &laquo;se mer&raquo;.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvorfor lesbarhet er viktig for SEO",
+      "html": "<p class=\"text-mid mb-4\">Søkemotorer prioriterer innhold som oppfyller brukerens søkehensikt. Lesbar tekst påvirker direkte viktige engasjementsmålinger:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tid på siden</strong> — besøkende blir lenger på sider som er lette å lese. Google tolker lengre besøk som kvalitetssignal.</li><li><strong>Avvisningsrate</strong> — tett, vanskelig tekst driver besøkende bort. En lesbarhetspoeng under 30 på en generell side korrelerer ofte med høy avvisningsrate.</li><li><strong>Utvalgte utdrag</strong> — Google velger klare, konsise svar til utvalgte utdrag. Kortere setninger og direkte språk øker sjansen for å bli valgt.</li><li><strong>Mobil lesbarhet</strong> — på små skjermer er lange setninger og komplekst ordforråd enda vanskeligere å følge. En poeng på 60+ forbedrer mobilopplevelsen.</li></ul><p class=\"text-mid mt-3\">Et godt mål for nettinnhold er en lesbarhetspoeng mellom 60 og 70 — tydelig nok for de fleste lesere, detaljert nok til å formidle ekspertise.</p>"
     },
     {
       "type": "gap",
@@ -334,28 +343,28 @@
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 formatting tools",
-          "description": "Letter case conversion, removing spaces, empty lines, duplicates and sorting — without installing additional software."
+          "title": "10 formateringsverktøy",
+          "description": "Bokstavstørrelsekonvertering, fjerning av mellomrom, tomme linjer, duplikater og sortering — uten ekstra programvare."
         },
         {
           "icon": "RiUserLine",
-          "title": "Local processing in the browser",
-          "description": "Your text is never sent to any server. All analysis and transformation happens locally on your device."
+          "title": "Lokal behandling i nettleseren",
+          "description": "Teksten din sendes aldri til noen server. All analyse og transformasjon skjer lokalt på enheten din."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Copy and clear text",
-          "description": "Copy the modified text to your clipboard with one click or clear the field to start over."
+          "title": "Kopier og tøm tekst",
+          "description": "Kopier den endrede teksten til utklippstavlen med ett klikk eller tøm feltet for å starte på nytt."
         },
         {
           "icon": "RiTimerLine",
-          "title": "Instant results",
-          "description": "Statistics update in real time as you type or paste text. No waiting for processing."
+          "title": "Umiddelbare resultater",
+          "description": "Statistikken oppdateres i sanntid mens du skriver eller limer inn tekst. Ingen venting."
         },
         {
           "icon": "RiLockLine",
-          "title": "No registration or limits",
-          "description": "The tool is completely free. No registration, login or personal data required."
+          "title": "Uten registrering eller begrensninger",
+          "description": "Verktøyet er helt gratis. Ingen registrering, innlogging eller personopplysninger kreves."
         }
       ]
     },
@@ -404,6 +413,14 @@
         {
           "question": "Hva er den ideelle lengden for et blogginnlegg for SEO?",
           "answer": "For norsk SEO: 1 200–2 000 ord for informative artikler. Kvalitet og relevans er viktigere enn ordantall. For produktsider: 300–500 ord."
+        },
+        {
+          "question": "Hvilken lesbarhetspoeng bør jeg sikte på for nettinnhold?",
+          "answer": "For generelt nettinnhold (blogger, tjenestesider, produktbeskrivelser) sikt på 60 til 70. For spesialistpublikum (leger, jurister, ingeniører) er 40–50 akseptabelt. For instruksjoner og støtteinnhold sikt på 70+ for maksimal tydelighet."
+        },
+        {
+          "question": "Hva er forskjellen mellom lesetid og taletid?",
+          "answer": "Lesetid antar 200 ord per minutt — gjennomsnittlig stille lesehastighet. Taletid bruker 130 ord per minutt, det naturlige tempoet for presentasjoner og podkaster, inkludert pauser og pusting. En tekst på 1 000 ord tar cirka 5 minutter å lese men 7,5 minutter å snakke."
         }
       ]
     },

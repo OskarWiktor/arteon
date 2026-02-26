@@ -321,6 +321,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Por qué la legibilidad importa para el SEO",
+      "html": "<p class=\"text-mid mb-4\">Los motores de búsqueda priorizan el contenido que satisface la intención del usuario. El texto legible afecta directamente a las métricas clave de engagement:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tiempo en página</strong> — los visitantes permanecen más tiempo en páginas fáciles de leer. Google interpreta las visitas más largas como señal de calidad.</li><li><strong>Tasa de rebote</strong> — el texto denso y difícil aleja a los lectores. Una puntuación Flesch por debajo de 30 en una página general suele correlacionarse con altas tasas de rebote.</li><li><strong>Fragmentos destacados</strong> — Google tiende a seleccionar respuestas claras y concisas para los fragmentos destacados. Las frases más cortas y el lenguaje directo aumentan la probabilidad de ser seleccionado.</li><li><strong>Legibilidad móvil</strong> — en pantallas pequeñas, las frases largas y el vocabulario complejo son aún más difíciles de seguir. Apuntar a una puntuación de 60+ mejora la experiencia móvil.</li></ul><p class=\"text-mid mt-3\">Un buen objetivo para contenido web es una puntuación Flesch entre 60 y 70 — suficientemente claro para la mayoría de los lectores, suficientemente detallado para transmitir experiencia.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "¿Qué hace especial a este contador de palabras?",
       "grid": "two",

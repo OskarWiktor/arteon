@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "sv",
   "metadata": {
-    "title": "Ordraknare med Flesch-Kincaid lasbarhet & textverktyg",
-    "description": "Gratis ord-, tecken- och stavelseraknare med Flesch-Kincaid poang, lastid, taltid och 10 formateringsverktyg. Utan registrering.",
+    "title": "Ordräknare med Flesch-Kincaid läsbarhet & textverktyg",
+    "description": "Gratis ord-, tecken- och stavelseräknare med Flesch-Kincaid poäng, lästid, taltid och 10 formateringsverktyg. Utan registrering.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-och-teckenraknare-sv.webp",
     "path": "/sv/verktyg/ord-och-teckenraknare"
   },
   "hero": {
-    "title": "Rakna ord, tecken och lasbarhet – Flesch-Kincaid, lastid och textverktyg",
-    "description": "Klistra in din text och verktyget raknar ord, tecken, stavelser, meningar, stycken, unika ord, lastid, taltid och beraknar Flesch-Kincaid lasbarhetspoang.",
+    "title": "Räkna ord, tecken och läsbarhet – Flesch-Kincaid, lästid och textverktyg",
+    "description": "Klistra in din text och verktyget räknar ord, tecken, stavelser, meningar, stycken, unika ord, lästid, taltid och beräknar Flesch-Kincaid läsbarhetspoäng.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -26,18 +26,18 @@
     "software": {
       "name": "Ord-, tecken- och läsetidsräknare med textformatering",
       "alternateName": [
-        "Online word counter",
-        "Character counter with and without spaces",
-        "Word counting tool for copywriters",
-        "Reading time calculator",
-        "Online letter case converter",
-        "Uppercase to lowercase converter",
-        "Remove duplicate lines from text",
-        "Sort text lines alphabetically",
-        "Flesch-Kincaid lasbarhetskontroll",
-        "Stavelseraknare online",
+        "Ordräknare online",
+        "Teckenräknare med och utan mellanslag",
+        "Ordräkningsverktyg för copywriters",
+        "Lästidskalkylator",
+        "Versalkonverterare online",
+        "Flesch-Kincaid läsbarhetskontroll",
+        "Stavelseräknare online",
         "Taltidskalkylator",
-        "Lasbarhetsverktyg"
+        "Läsbarhetsverktyg",
+        "Ta bort dubbletter från text",
+        "Sortera textrader alfabetiskt",
+        "Gratis ord- och teckenräknare"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Gratis ord- och teckenräknare med textformateringsverktyg. Räknar ord, tecken, meningar, stycken, unika ord och lästid. Erbjuder 10 verktyg: versalkonvertering, borttagning av mellanslag, tomma rader, dubbletter och sortering.",
@@ -93,7 +93,7 @@
     {
       "type": "sectionBasic",
       "title": "Gratis ord- och teckenräknare med textverktyg",
-      "html": "<p class=\"text-mid\">Det har verktyget kombinerar en ord- och teckenraknare med Flesch-Kincaid lasbarhetsanalys och textformateringsverktyg. Klistra in din text for att se ord, tecken, stavelser, meningar, stycken, unika ord, lastid, taltid och en fargkodad lasbarhetspoang.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid lasbarhetspoang</strong> (0–100) visar hur latt texten ar att lasa. Poang over 70 innebar lattlast text, under 30 akademisk niva.</p><p class=\"text-mid mt-3\">Under textfaltet finns 10 verktyg: versalkonvertering, borttagning av mellanslag, tomma rader, dubbletter och sortering. All bearbetning sker lokalt i webblasaren.</p>",
+      "html": "<p class=\"text-mid\">Det här verktyget kombinerar en ord- och teckenräknare med Flesch-Kincaid läsbarhetsanalys och textformateringsverktyg. Klistra in din text för att se ord, tecken, stavelser, meningar, stycken, unika ord, lästid, taltid och en färgkodad läsbarhetspoäng.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid läsbarhetspoäng</strong> (0–100) visar hur lätt texten är att läsa. Poäng över 70 innebär lättläst text, under 30 akademisk nivå.</p><p class=\"text-mid mt-3\">Under textfältet finns 10 verktyg: versalkonvertering, borttagning av mellanslag, tomma rader, dubbletter och sortering. All bearbetning sker lokalt i webbläsaren.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-och-teckenraknare-sv.webp",
       "imageAlt": "Ord- och teckenräknare – Arteon"
     },
@@ -115,7 +115,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Kontrollera statistik",
-          "description": "I vansterpanelen ser du 11 matvarden: ord, tecken med och utan mellanslag, meningar, stycken, unika ord, ordlangd, lastid, taltid, stavelser och Flesch-Kincaid poang."
+          "description": "I vänsterpanelen ser du 11 mätvärden: ord, tecken med och utan mellanslag, meningar, stycken, unika ord, ordlängd, lästid, taltid, stavelser och Flesch-Kincaid poäng."
         },
         {
           "icon": "RiTextWrap",
@@ -144,64 +144,64 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 textmatvarden – vad raknaren mater",
-      "description": "Raknaren analyserar din text med elva indikatorer:",
+      "title": "11 textmätvärden – vad räknaren mäter",
+      "description": "Räknaren analyserar din text med elva indikatorer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiText",
-          "title": "Words",
-          "description": "Total word count. The primary indicator of text length, useful for content creation, articles and descriptions."
+          "title": "Ord",
+          "description": "Totalt antal ord. Den primära indikatorn för textlängd, användbar för innehållsskapande, artiklar och beskrivningar."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Characters (with spaces)",
-          "description": "All characters including spaces. Useful when a platform has a character limit (e.g., Amazon listings, meta descriptions)."
+          "title": "Tecken (med mellanslag)",
+          "description": "Alla tecken inklusive mellanslag. Användbart när en plattform har en teckengräns (t.ex. Amazon, metabeskrivningar)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Characters (without spaces)",
-          "description": "Only letters, digits and punctuation. The standard billing unit for translations and print shops."
+          "title": "Tecken (utan mellanslag)",
+          "description": "Bara bokstäver, siffror och skiljetecken. Standardenheten för fakturering vid översättningar och tryckerier."
         },
         {
           "icon": "RiChatQuoteLine",
-          "title": "Sentences",
-          "description": "Number of sentences in the text. Helps assess complexity and readability — shorter sentences are easier to absorb."
+          "title": "Meningar",
+          "description": "Antal meningar i texten. Hjälper till att bedöma komplexitet och läsbarhet — kortare meningar är lättare att ta till sig."
         },
         {
           "icon": "RiParagraph",
-          "title": "Paragraphs",
-          "description": "Text blocks separated by blank lines. Well-structured paragraphs improve readability on screens."
+          "title": "Stycken",
+          "description": "Textblock separerade med tomma rader. Välstrukturerade stycken förbättrar läsbarheten på skärmar."
         },
         {
           "icon": "RiStarLine",
-          "title": "Unique words",
-          "description": "Number of non-repeating words. A higher ratio of unique to total words indicates richer vocabulary."
+          "title": "Unika ord",
+          "description": "Antal icke-upprepade ord. En högre andel unika ord tyder på ett rikare ordförråd."
         },
         {
           "icon": "RiRulerLine",
-          "title": "Average word length",
-          "description": "Average number of characters per word. An indicator of text complexity — technical texts have longer words than casual ones."
+          "title": "Genomsnittlig ordlängd",
+          "description": "Genomsnittligt antal tecken per ord. En indikator på textkomplexitet — tekniska texter har längre ord."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Reading time",
-          "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
+          "title": "Lästid",
+          "description": "Uppskattad lästid vid 200 ord per minut. Ett ungefärligt värde för typisk text."
         },
         {
           "icon": "RiMicLine",
           "title": "Taltid",
-          "description": "Uppskattad taltid vid 130 ord per minut. For presentationer och tal."
+          "description": "Uppskattad taltid vid 130 ord per minut. För presentationer och tal."
         },
         {
           "icon": "RiInputMethodLine",
           "title": "Stavelser",
-          "description": "Totalt antal stavelser med sprakspecifika heuristiker."
+          "description": "Totalt antal stavelser med språkspecifika heuristiker."
         },
         {
           "icon": "RiSpeedLine",
-          "title": "Lasbarhet (Flesch-Kincaid)",
-          "description": "Poang 0–100. Over 70 = latt, 50–70 = medel, under 30 = akademiskt. Fargkodad."
+          "title": "Läsbarhet (Flesch-Kincaid)",
+          "description": "Poäng 0–100. Över 70 = lätt, 50–70 = medel, under 30 = akademiskt. Färgkodad."
         }
       ]
     },
@@ -217,53 +217,53 @@
       "items": [
         {
           "icon": "RiArrowUpLine",
-          "title": "UPPERCASE",
-          "description": "Converts all text to uppercase. Useful for headings, acronyms and highlighting text fragments."
+          "title": "VERSALER",
+          "description": "Konverterar all text till versaler. Användbart för rubriker, förkortningar och markering av textfragment."
         },
         {
           "icon": "RiArrowDownLine",
-          "title": "lowercase",
-          "description": "Converts all text to lowercase. Useful for normalizing text copied from different sources."
+          "title": "gemener",
+          "description": "Konverterar all text till gemener. Användbart för att normalisera text kopierad från olika källor."
         },
         {
           "icon": "RiEditLine",
-          "title": "Sentence case",
-          "description": "First letter of each sentence is capitalized, the rest lowercase. Standard format for continuous text."
+          "title": "Meningsstil",
+          "description": "Första bokstaven i varje mening är versal, resten gemener. Standardformat för löpande text."
         },
         {
           "icon": "RiHeading",
-          "title": "Title Case",
-          "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
+          "title": "Titelstil",
+          "description": "Varje ord börjar med versal. Perfekt för titlar, rubriker och egennamn."
         },
         {
           "icon": "RiArrowLeftRightLine",
-          "title": "tOGGLE cASE",
-          "description": "Swaps uppercase to lowercase and vice versa. Useful when text was typed with Caps Lock on."
+          "title": "iNVERTERA",
+          "description": "Växlar versaler till gemener och tvärtom. Användbart när text skrevs med Caps Lock aktiverat."
         },
         {
           "icon": "RiSpace",
-          "title": "Remove extra spaces",
-          "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
+          "title": "Ta bort extra mellanslag",
+          "description": "Reducerar flera mellanslag till ett och tar bort mellanslag i början och slutet av varje rad."
         },
         {
           "icon": "RiDeleteRow",
-          "title": "Remove empty lines",
-          "description": "Removes empty and redundant lines from text. Useful for cleaning text copied from websites."
+          "title": "Ta bort tomma rader",
+          "description": "Tar bort tomma och överflödiga rader från texten. Användbart för att rensa text kopierad från webbsidor."
         },
         {
           "icon": "RiFilterLine",
-          "title": "Remove duplicate lines",
-          "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
+          "title": "Ta bort dubbletter",
+          "description": "Behåller bara unika rader och tar bort upprepningar. Användbart för att rensa listor och data."
         },
         {
           "icon": "RiSortAsc",
-          "title": "Sort A→Z",
-          "description": "Sorts text lines alphabetically in ascending order. Useful for organizing lists, keywords and data."
+          "title": "Sortera A→Z",
+          "description": "Sorterar rader alfabetiskt i stigande ordning. Användbart för att organisera listor och data."
         },
         {
           "icon": "RiSortDesc",
-          "title": "Sort Z→A",
-          "description": "Sorts text lines alphabetically in descending order. Reverse sort order."
+          "title": "Sortera Z→A",
+          "description": "Sorterar rader alfabetiskt i fallande ordning. Omvänd sorteringsordning."
         }
       ]
     },
@@ -279,33 +279,33 @@
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Copywriters and editors",
-          "description": "Count words and characters, check platform limits, quickly change letter case and clean text before publishing."
+          "title": "Copywriters och redaktörer",
+          "description": "Räkna ord och tecken, kontrollera plattformsgränser, ändra versaler snabbt och rensa text innan publicering."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Bloggers and content creators",
-          "description": "Monitor post length, check reading time, remove duplicate lines and sort lists."
+          "title": "Bloggare och innehållsskapare",
+          "description": "Övervaka inläggslängd, kontrollera lästid, ta bort dubbletter och sortera listor."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "Store owners",
-          "description": "Verify product descriptions against character limits on platforms (Amazon, eBay, Etsy)."
+          "title": "Butiksägare",
+          "description": "Kontrollera produktbeskrivningar mot teckengränser på plattformar (Tradera, Blocket, Amazon)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO specialists",
-          "description": "Analyze content length, count unique words and assess text complexity based on average word length."
+          "title": "SEO-specialister",
+          "description": "Analysera innehållslängd, räkna unika ord och bedöma textkomplexitet baserat på genomsnittlig ordlängd."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Students and academics",
-          "description": "Check word or character limits in essays and research papers."
+          "title": "Studenter och akademiker",
+          "description": "Kontrollera ord- eller teckengränser i uppsatser och forskningsrapporter."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Translators",
-          "description": "Count characters without spaces for quotes (the standard billing unit in translation)."
+          "title": "Översättare",
+          "description": "Räkna tecken utan mellanslag för offerter (standardenheten för fakturering vid översättning)."
         }
       ]
     },
@@ -316,7 +316,16 @@
     {
       "type": "sectionInfo",
       "title": "Teckengränser på populära plattformar",
-      "html": "<p class=\"text-mid\">Character limits vary by platform.</p>"
+      "html": "<p class=\"text-mid mb-4\">Teckenräknaren är användbar när du skapar innehåll för plattformar med längdbegränsningar:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Plattform / Element</th><th class=\"py-2 pr-4 font-semibold\">Teckengräns</th><th class=\"py-2 font-semibold\">Anmärkningar</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 tecken</td><td class=\"text-primary-light0 py-2 text-sm\">Längre titlar trunkeras i sökresultaten.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 tecken</td><td class=\"text-primary-light0 py-2 text-sm\">Synlig beskrivning under länken i sökresultaten.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Tradera – annonsrubrik</td><td class=\"py-2 pr-4 whitespace-nowrap\">80 tecken</td><td class=\"text-primary-light0 py-2 text-sm\">Korta titlar förbättrar synligheten i sökningar.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blocket – annonsrubrik</td><td class=\"py-2 pr-4 whitespace-nowrap\">70 tecken</td><td class=\"text-primary-light0 py-2 text-sm\">Koncis rubrik med de viktigaste nyckelorden.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – inlägg</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 tecken</td><td class=\"text-primary-light0 py-2 text-sm\">Inkluderar länkar och omnämnanden i räkningen.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – bildtext</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 200 tecken</td><td class=\"text-primary-light0 py-2 text-sm\">Efter ~125 tecken visas länken &laquo;mer&raquo;.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn – inlägg</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 tecken</td><td class=\"text-primary-light0 py-2 text-sm\">Efter ~210 tecken visas länken &laquo;visa mer&raquo;.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Varför läsbarhet är viktigt för SEO",
+      "html": "<p class=\"text-mid mb-4\">Sökmotorer prioriterar innehåll som uppfyller användarens avsikt. Läsbar text påverkar direkt viktiga engagemangsmått:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tid på sidan</strong> — besökare stannar längre på sidor som är lätta att läsa. Google tolkar längre besök som kvalitetssignal.</li><li><strong>Avvisningsfrekvens</strong> — kompakt, svårläst text driver bort besökare. En läsbarhetspoäng under 30 på en allmän sida korrelerar ofta med hög avvisningsfrekvens.</li><li><strong>Utvalda utdrag</strong> — Google väljer tydliga, koncisa svar till utvalda utdrag. Kortare meningar och direkt språk ökar chansen att bli utvald.</li><li><strong>Mobil läsbarhet</strong> — på små skärmar är långa meningar och komplext ordförråd ännu svårare att följa. En poäng på 60+ förbättrar mobilupplevelsen.</li></ul><p class=\"text-mid mt-3\">Ett bra mål för webbinnehåll är en läsbarhetspoäng mellan 60 och 70 — tillräckligt tydligt för de flesta läsare, tillräckligt detaljerat för att förmedla expertis.</p>"
     },
     {
       "type": "gap",
@@ -324,38 +333,38 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Vad gor denna ordraknare speciell?",
+      "title": "Vad gör denna ordräknare speciell?",
       "grid": "two",
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "11 matvarden + lasbarhetspoang",
-          "description": "Ord, tecken, stavelser, meningar, stycken, unika ord, lastid, taltid och Flesch-Kincaid."
+          "title": "11 mätvärden + läsbarhetspoäng",
+          "description": "Ord, tecken, stavelser, meningar, stycken, unika ord, lästid, taltid och LIX-läsbarhetspoäng — allt i en panel."
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 formatting tools",
-          "description": "Letter case conversion, removing spaces, empty lines, duplicates and sorting — without installing additional software."
+          "title": "10 formateringsverktyg",
+          "description": "Versalkonvertering, borttagning av mellanslag, tomma rader, dubbletter och sortering — utan extra programvara."
         },
         {
           "icon": "RiUserLine",
-          "title": "Local processing in the browser",
-          "description": "Your text is never sent to any server. All analysis and transformation happens locally on your device."
+          "title": "Lokal bearbetning i webbläsaren",
+          "description": "Din text skickas aldrig till någon server. All analys och transformation sker lokalt på din enhet."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Copy and clear text",
-          "description": "Copy the modified text to your clipboard with one click or clear the field to start over."
+          "title": "Kopiera och rensa text",
+          "description": "Kopiera den ändrade texten till urklipp med ett klick eller rensa fältet för att börja om."
         },
         {
           "icon": "RiTimerLine",
-          "title": "Instant results",
-          "description": "Statistics update in real time as you type or paste text. No waiting for processing."
+          "title": "Omedelbara resultat",
+          "description": "Statistiken uppdateras i realtid när du skriver eller klistrar in text. Ingen väntan."
         },
         {
           "icon": "RiLockLine",
-          "title": "No registration or limits",
-          "description": "The tool is completely free. No registration, login or personal data required."
+          "title": "Utan registrering eller begränsningar",
+          "description": "Verktyget är helt gratis. Ingen registrering, inloggning eller personuppgifter krävs."
         }
       ]
     },
@@ -379,19 +388,19 @@
           "answerSchemaText": "Ja. Texten bearbetas lokalt i webbläsaren."
         },
         {
-          "question": "Vad ar Flesch-Kincaid poang?",
-          "answer": "Flesch Reading Ease (0–100) visar lasbarhet. 90–100 = mycket latt, 70–89 = latt, 50–69 = medel, 30–49 = svar, 0–29 = mycket svar.",
+          "question": "Vad är Flesch-Kincaid poäng?",
+          "answer": "Flesch Reading Ease (0–100) visar läsbarhet. 90–100 = mycket lätt, 70–89 = lätt, 50–69 = medel, 30–49 = svår, 0–29 = mycket svår.",
           "answerSchemaText": "Flesch Reading Ease (0–100)."
         },
         {
-          "question": "Hur beraknas taltiden?",
+          "question": "Hur beräknas taltiden?",
           "answer": "Antalet ord delas med 130 – genomsnittlig talhastighet vid presentationer.",
           "answerSchemaText": "130 ord per minut."
         },
         {
-          "question": "Hur exakt ar stavelseraknaren?",
-          "answer": "Verktyget anvander sprakspecifika heuristiker som kanner igen svenska diftonger och sammansatta ord.",
-          "answerSchemaText": "Sprakspecifika heuristiker."
+          "question": "Hur exakt är stavelseräknaren?",
+          "answer": "Verktyget använder språkspecifika heuristiker som känner igen svenska diftonger och sammansatta ord.",
+          "answerSchemaText": "Språkspecifika heuristiker."
         },
         {
           "question": "Hur förbättrar jag läsbarheten i min text?",
@@ -404,6 +413,14 @@
         {
           "question": "Vad är den idealiska längden för ett SEO-blogginlägg?",
           "answer": "För informativa artiklar på svenska: 1 200–2 000 ord. Kvalitet och relevans är viktigare än ordantal. För produktsidor: 300–500 ord."
+        },
+        {
+          "question": "Vilken läsbarhetspoäng bör jag sikta på för webbinnehåll?",
+          "answer": "För allmänt webbinnehåll (bloggar, tjänstesidor, produktbeskrivningar) sikta på 60 till 70. För specialistpublik (läkare, jurister, ingenjörer) är 40–50 acceptabelt. För instruktioner och support, sikta på 70+ för maximal tydlighet."
+        },
+        {
+          "question": "Vad är skillnaden mellan lästid och taltid?",
+          "answer": "Lästid utgår från 200 ord per minut — genomsnittlig tyst läshastighet. Taltid använder 130 ord per minut, den naturliga takten för presentationer och poddar, inklusive pauser och andning. En text på 1 000 ord tar cirka 5 minuter att läsa men 7,5 minuter att tala."
         }
       ]
     },

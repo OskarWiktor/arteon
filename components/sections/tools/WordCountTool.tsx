@@ -35,7 +35,7 @@ export default function WordCountTool() {
 
   const metrics = useMemo(() => analyzeText(text, locale), [text, locale]);
   const readabilityLabel = useMemo(() => getReadabilityLabel(metrics.fleschScore, locale), [metrics.fleschScore, locale]);
-  const readabilityColor = useMemo(() => getReadabilityColor(metrics.fleschScore), [metrics.fleschScore]);
+  const readabilityColor = useMemo(() => getReadabilityColor(metrics.fleschScore, locale), [metrics.fleschScore, locale]);
 
   const toolbarActions: { key: string; label: string; fn: (t: string) => string }[] = [
     { key: 'uppercase', label: t.uppercase, fn: toUpperCase },

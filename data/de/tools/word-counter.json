@@ -321,6 +321,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Warum Lesbarkeit für SEO wichtig ist",
+      "html": "<p class=\"text-mid mb-4\">Suchmaschinen priorisieren Inhalte, die die Suchintention erfüllen. Lesbarer Text wirkt sich direkt auf wichtige Engagement-Metriken aus:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Verweildauer</strong> — Besucher bleiben länger auf Seiten, die sie bequem lesen können. Google interpretiert längere Besuche als Qualitätssignal.</li><li><strong>Absprungrate</strong> — dichter, schwer lesbarer Text vertreibt Besucher. Ein Amstad-Wert unter 30 auf einer allgemeinen Seite korreliert häufig mit hoher Absprungrate.</li><li><strong>Featured Snippets</strong> — Google wählt klare, prägnante Antworten für Featured Snippets. Kürzere Sätze und direkte Sprache erhöhen die Chance, ausgewählt zu werden.</li><li><strong>Mobile Lesbarkeit</strong> — auf kleinen Bildschirmen sind lange Sätze und komplexes Vokabular noch schwerer zu verfolgen. Ein Wert von 60+ verbessert die mobile Erfahrung.</li></ul><p class=\"text-mid mt-3\">Ein gutes Ziel für Webinhalte ist ein Amstad-Wert zwischen 60 und 70 — verständlich genug für die meisten Leser, detailliert genug, um Expertise zu vermitteln.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Was macht diesen Wortzähler besonders?",
       "grid": "two",

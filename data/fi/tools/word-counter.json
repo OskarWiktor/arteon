@@ -26,18 +26,18 @@
     "software": {
       "name": "Sana-, merkki- ja lukuaikalaskuri tekstin muotoilulla",
       "alternateName": [
-        "Online word counter",
-        "Character counter with and without spaces",
-        "Word counting tool for copywriters",
-        "Reading time calculator",
-        "Online letter case converter",
-        "Uppercase to lowercase converter",
-        "Remove duplicate lines from text",
-        "Sort text lines alphabetically",
+        "Sanalaskuri verkossa",
+        "Merkkilaskuri välilyönneillä ja ilman",
+        "Sanalaskurityökalu copywritereille",
+        "Lukuaikalaskin",
+        "Kirjainkoon muunnin verkossa",
         "Flesch-Kincaid luettavuustarkistus",
         "Tavulaskuri",
         "Puheaikalaskin",
-        "Luettavuustyökalu"
+        "Luettavuustyökalu",
+        "Poista kaksoisrivit tekstistä",
+        "Lajittele tekstirivit aakkosjärjestykseen",
+        "Ilmainen sana- ja merkkilaskuri"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Ilmainen sana- ja merkkilaskuri tekstin muotoilutyökaluilla. Laskee sanat, merkit, lauseet, kappaleet, uniikit sanat ja lukuajan. Tarjoaa 10 työkalua: kirjainkoon muunnos, välilyöntien, tyhjien rivien ja kaksoiskappaleiden poisto sekä lajittelu.",
@@ -150,43 +150,43 @@
       "items": [
         {
           "icon": "RiText",
-          "title": "Words",
-          "description": "Total word count. The primary indicator of text length, useful for content creation, articles and descriptions."
+          "title": "Sanat",
+          "description": "Sanojen kokonaismäärä. Tärkein tekstin pituuden mittari, hyödyllinen sisällöntuotannossa, artikkeleissa ja kuvauksissa."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Characters (with spaces)",
-          "description": "All characters including spaces. Useful when a platform has a character limit (e.g., Amazon listings, meta descriptions)."
+          "title": "Merkit (välilyönneillä)",
+          "description": "Kaikki merkit mukaan lukien välilyönnit. Hyödyllinen, kun alustalla on merkkiraja (esim. Amazon, metakuvaukset)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Characters (without spaces)",
-          "description": "Only letters, digits and punctuation. The standard billing unit for translations and print shops."
+          "title": "Merkit (ilman välilyöntejä)",
+          "description": "Vain kirjaimet, numerot ja välimerkit. Käännösten ja painotalojen vakiolaskutusyksikkö."
         },
         {
           "icon": "RiChatQuoteLine",
-          "title": "Sentences",
-          "description": "Number of sentences in the text. Helps assess complexity and readability — shorter sentences are easier to absorb."
+          "title": "Lauseet",
+          "description": "Lauseiden määrä tekstissä. Auttaa arvioimaan monimutkaisuutta ja luettavuutta — lyhyemmät lauseet ovat helpompia omaksua."
         },
         {
           "icon": "RiParagraph",
-          "title": "Paragraphs",
-          "description": "Text blocks separated by blank lines. Well-structured paragraphs improve readability on screens."
+          "title": "Kappaleet",
+          "description": "Tyhjillä riveillä erotetut tekstilohkot. Hyvin jäsennetyt kappaleet parantavat luettavuutta näytöillä."
         },
         {
           "icon": "RiStarLine",
-          "title": "Unique words",
-          "description": "Number of non-repeating words. A higher ratio of unique to total words indicates richer vocabulary."
+          "title": "Uniikit sanat",
+          "description": "Ei-toistuvien sanojen määrä. Suurempi uniikkien sanojen osuus kertoo rikkaammasta sanastosta."
         },
         {
           "icon": "RiRulerLine",
-          "title": "Average word length",
-          "description": "Average number of characters per word. An indicator of text complexity — technical texts have longer words than casual ones."
+          "title": "Keskimääräinen sanan pituus",
+          "description": "Keskimääräinen merkkimäärä per sana. Tekstin monimutkaisuuden mittari — tekniset tekstit sisältävät pidempiä sanoja."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Reading time",
-          "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
+          "title": "Lukuaika",
+          "description": "Arvioitu lukuaika 200 sanalla minuutissa. Likiarvo tyypilliselle tekstille."
         },
         {
           "icon": "RiMicLine",
@@ -217,53 +217,53 @@
       "items": [
         {
           "icon": "RiArrowUpLine",
-          "title": "UPPERCASE",
-          "description": "Converts all text to uppercase. Useful for headings, acronyms and highlighting text fragments."
+          "title": "ISOT KIRJAIMET",
+          "description": "Muuntaa kaiken tekstin isoiksi kirjaimiksi. Hyödyllinen otsikoissa, lyhenteissä ja tekstin korostamisessa."
         },
         {
           "icon": "RiArrowDownLine",
-          "title": "lowercase",
-          "description": "Converts all text to lowercase. Useful for normalizing text copied from different sources."
+          "title": "pienet kirjaimet",
+          "description": "Muuntaa kaiken tekstin pieniksi kirjaimiksi. Hyödyllinen eri lähteistä kopioidun tekstin normalisointiin."
         },
         {
           "icon": "RiEditLine",
-          "title": "Sentence case",
-          "description": "First letter of each sentence is capitalized, the rest lowercase. Standard format for continuous text."
+          "title": "Lausemuoto",
+          "description": "Jokaisen lauseen ensimmäinen kirjain on iso, loput pieniä. Vakiomuoto jatkuvalle tekstille."
         },
         {
           "icon": "RiHeading",
-          "title": "Title Case",
-          "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
+          "title": "Otsikkomuoto",
+          "description": "Jokainen sana alkaa isolla kirjaimella. Ihanteellinen otsikoille ja erisnimille."
         },
         {
           "icon": "RiArrowLeftRightLine",
-          "title": "tOGGLE cASE",
-          "description": "Swaps uppercase to lowercase and vice versa. Useful when text was typed with Caps Lock on."
+          "title": "kÄÄNTEINEN",
+          "description": "Vaihtaa isot kirjaimet pieniksi ja päinvastoin. Hyödyllinen, kun teksti kirjoitettiin Caps Lock päällä."
         },
         {
           "icon": "RiSpace",
-          "title": "Remove extra spaces",
-          "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
+          "title": "Poista ylimääräiset välit",
+          "description": "Vähentää useat välilyönnit yhteen ja poistaa välit rivien alusta ja lopusta."
         },
         {
           "icon": "RiDeleteRow",
-          "title": "Remove empty lines",
-          "description": "Removes empty and redundant lines from text. Useful for cleaning text copied from websites."
+          "title": "Poista tyhjät rivit",
+          "description": "Poistaa tyhjät ja ylimääräiset rivit tekstistä. Hyödyllinen verkkosivuilta kopioidun tekstin puhdistamiseen."
         },
         {
           "icon": "RiFilterLine",
-          "title": "Remove duplicate lines",
-          "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
+          "title": "Poista kaksoiskappalerivit",
+          "description": "Säilyttää vain uniikit rivit ja poistaa toistot. Hyödyllinen listojen ja datan puhdistamiseen."
         },
         {
           "icon": "RiSortAsc",
-          "title": "Sort A→Z",
-          "description": "Sorts text lines alphabetically in ascending order. Useful for organizing lists, keywords and data."
+          "title": "Lajittele A→Ö",
+          "description": "Lajittelee rivit aakkosjärjestykseen nousevasti. Hyödyllinen listojen ja datan järjestämiseen."
         },
         {
           "icon": "RiSortDesc",
-          "title": "Sort Z→A",
-          "description": "Sorts text lines alphabetically in descending order. Reverse sort order."
+          "title": "Lajittele Ö→A",
+          "description": "Lajittelee rivit aakkosjärjestykseen laskevasti. Käänteinen lajittelujärjestys."
         }
       ]
     },
@@ -279,33 +279,33 @@
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Copywriters and editors",
-          "description": "Count words and characters, check platform limits, quickly change letter case and clean text before publishing."
+          "title": "Copywriterit ja editorit",
+          "description": "Laske sanat ja merkit, tarkista alustojen rajat, vaihda kirjainkokoa nopeasti ja puhdista teksti ennen julkaisua."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Bloggers and content creators",
-          "description": "Monitor post length, check reading time, remove duplicate lines and sort lists."
+          "title": "Bloggaajat ja sisällöntuottajat",
+          "description": "Seuraa julkaisun pituutta, tarkista lukuaika, poista kaksoiskappalerivit ja lajittele listoja."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "Store owners",
-          "description": "Verify product descriptions against character limits on platforms (Amazon, eBay, Etsy)."
+          "title": "Kaupan omistajat",
+          "description": "Tarkista tuotekuvaukset alustojen merkkirajoja vasten (Tori.fi, Amazon, eBay)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO specialists",
-          "description": "Analyze content length, count unique words and assess text complexity based on average word length."
+          "title": "SEO-asiantuntijat",
+          "description": "Analysoi sisällön pituutta, laske uniikit sanat ja arvioi tekstin monimutkaisuutta sanan keskipituuden perusteella."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Students and academics",
-          "description": "Check word or character limits in essays and research papers."
+          "title": "Opiskelijat ja tutkijat",
+          "description": "Tarkista sana- tai merkkirajat esseissä ja tutkimusjulkaisuissa."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Translators",
-          "description": "Count characters without spaces for quotes (the standard billing unit in translation)."
+          "title": "Kääntäjät",
+          "description": "Laske merkit ilman välilyöntejä tarjouksia varten (käännösalan vakiolaskutusyksikkö)."
         }
       ]
     },
@@ -316,7 +316,16 @@
     {
       "type": "sectionInfo",
       "title": "Merkkirajoitukset suosituilla alustoilla",
-      "html": "<p class=\"text-mid\">Character limits vary by platform.</p>"
+      "html": "<p class=\"text-mid mb-4\">Merkkilaskuri on hyödyllinen luotaessa sisältöä alustoille, joilla on pituusrajoituksia:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Alusta / Elementti</th><th class=\"py-2 pr-4 font-semibold\">Merkkirajoitus</th><th class=\"py-2 font-semibold\">Huomautukset</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 merkkiä</td><td class=\"text-primary-light0 py-2 text-sm\">Pidemmät otsikot katkaistaan hakutuloksissa.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 merkkiä</td><td class=\"text-primary-light0 py-2 text-sm\">Näkyvä kuvaus linkin alla hakutuloksissa.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Tori.fi – ilmoituksen otsikko</td><td class=\"py-2 pr-4 whitespace-nowrap\">60 merkkiä</td><td class=\"text-primary-light0 py-2 text-sm\">Lyhyet otsikot parantavat näkyvyyttä hauissa.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – julkaisu</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 merkkiä</td><td class=\"text-primary-light0 py-2 text-sm\">Sisältää linkit ja maininnat laskennassa.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – kuvateksti</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 200 merkkiä</td><td class=\"text-primary-light0 py-2 text-sm\">Noin 125 merkin jälkeen näkyy &laquo;lisää&raquo;-linkki.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn – julkaisu</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 merkkiä</td><td class=\"text-primary-light0 py-2 text-sm\">Noin 210 merkin jälkeen näkyy &laquo;näytä lisää&raquo;-linkki.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miksi luettavuus on tärkeää SEO:lle",
+      "html": "<p class=\"text-mid mb-4\">Hakukoneet priorisoivat sisältöä, joka vastaa käyttäjän hakuaikomusta. Luettava teksti vaikuttaa suoraan tärkeisiin sitoutumismittareihin:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Sivulla vietetty aika</strong> — kävijät viipyvät pidempään sivuilla, joita on helppo lukea. Google tulkitsee pidemmät vierailut laatusignaaliksi.</li><li><strong>Välitön poistumisprosentti</strong> — tiheä, vaikealukuinen teksti karkottaa kävijöitä. Luettavuuspistemäärä alle 30 yleissivulla korreloi usein korkean poistumisprosentin kanssa.</li><li><strong>Esitellyt katkelmat</strong> — Google valitsee selkeitä, ytimekkäitä vastauksia esillepantuihin katkelmiin. Lyhyemmät virkkeet ja suora kieli lisäävät mahdollisuutta tulla valituksi.</li><li><strong>Mobiililuettavuus</strong> — pienillä näytöillä pitkät virkkeet ja monimutkainen sanasto ovat vielä vaikeampia seurata. Pisteet 60+ parantavat mobiilikokomusta.</li></ul><p class=\"text-mid mt-3\">Hyvä tavoite verkkosisällölle on luettavuuspisteet 60–70 — riittävän selkeä useimmille lukijoille, riittävän yksityiskohtainen asiantuntemuksen välittämiseen.</p>"
     },
     {
       "type": "gap",
@@ -334,28 +343,28 @@
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 formatting tools",
-          "description": "Letter case conversion, removing spaces, empty lines, duplicates and sorting — without installing additional software."
+          "title": "10 muokkaustyökalua",
+          "description": "Kirjainkoon muunnos, välilyöntien, tyhjien rivien ja kaksoiskappalerivien poisto sekä lajittelu — ilman lisäohjelmistoa."
         },
         {
           "icon": "RiUserLine",
-          "title": "Local processing in the browser",
-          "description": "Your text is never sent to any server. All analysis and transformation happens locally on your device."
+          "title": "Paikallinen käsittely selaimessa",
+          "description": "Tekstiäsi ei koskaan lähetetä mihinkään palvelimelle. Kaikki analyysi ja muunnos tapahtuu paikallisesti laitteellasi."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Copy and clear text",
-          "description": "Copy the modified text to your clipboard with one click or clear the field to start over."
+          "title": "Kopioi ja tyhjennä teksti",
+          "description": "Kopioi muokattu teksti leikepöydälle yhdellä napsautuksella tai tyhjennä kenttä aloittaaksesi alusta."
         },
         {
           "icon": "RiTimerLine",
-          "title": "Instant results",
-          "description": "Statistics update in real time as you type or paste text. No waiting for processing."
+          "title": "Välittömät tulokset",
+          "description": "Tilastot päivittyvät reaaliajassa kirjoittaessasi tai liittäessäsi tekstiä. Ei odottelua."
         },
         {
           "icon": "RiLockLine",
-          "title": "No registration or limits",
-          "description": "The tool is completely free. No registration, login or personal data required."
+          "title": "Ei rekisteröitymistä tai rajoituksia",
+          "description": "Työkalu on täysin ilmainen. Ei vaadi rekisteröitymistä, kirjautumista tai henkilötietoja."
         }
       ]
     },
@@ -404,6 +413,14 @@
         {
           "question": "Mikä on ihannepituus blogikirjoitukselle SEO:ssa?",
           "answer": "Suomenkieliselle informatiiviselle sisällölle 1 200–2 000 sanaa. Suomen yhdyssanat tiivistävät sisältöä, joten sanamäärä voi olla pienempi kuin englanniksi. Tuotesivuille riittää 300–500 sanaa."
+        },
+        {
+          "question": "Mihin luettavuuspisteisiin minun pitäisi pyrkiä verkkosisällössä?",
+          "answer": "Yleiseen verkkosisältöön (blogit, palvelusivut, tuotekuvaukset) pyri 60–70 pisteeseen. Erikoisyleisölle (lääkärit, lakimiehet, insinöörit) 40–50 on hyväksyttävä. Ohjeisiin ja tukisisältöön pyri 70+ pisteeseen maksimaalisen selkeyden vuoksi."
+        },
+        {
+          "question": "Mikä ero on lukuajalla ja puheajalla?",
+          "answer": "Lukuaika olettaa 200 sanaa minuutissa — keskimääräinen hiljainen lukunopeus. Puheaika käyttää 130 sanaa minuutissa, luonnollista tahtia esityksille ja podcasteille, sisältäen tauot ja hengityksen. 1 000 sanan teksti kestää noin 5 minuuttia lukea mutta 7,5 minuuttia puhua."
         }
       ]
     },

@@ -314,7 +314,16 @@
     {
       "type": "sectionInfo",
       "title": "Limites de caracteres em plataformas populares",
-      "html": "<p class=\"text-mid\">Character limits vary by platform.</p>"
+      "html": "<p class=\"text-mid mb-4\">O contador de caracteres é útil para criar conteúdo em plataformas com restrições de comprimento:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Plataforma / Elemento</th><th class=\"py-2 pr-4 font-semibold\">Limite de caracteres</th><th class=\"py-2 font-semibold\">Notas</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Títulos mais longos são truncados nos resultados de pesquisa.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Descrição visível abaixo do link nos resultados de pesquisa.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amazon – título de produto</td><td class=\"py-2 pr-4 whitespace-nowrap\">200 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Título conciso com as palavras-chave mais importantes.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">OLX – título de anúncio</td><td class=\"py-2 pr-4 whitespace-nowrap\">70 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Títulos curtos melhoram a visibilidade nas pesquisas.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – publicação</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Inclui links e menções na contagem.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – legenda</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 200 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Após ~125 caracteres aparece o link &laquo;mais&raquo;.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn – publicação</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 caracteres</td><td class=\"text-primary-light0 py-2 text-sm\">Após ~210 caracteres aparece o link &laquo;ver mais&raquo;.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Por que a legibilidade é importante para SEO",
+      "html": "<p class=\"text-mid mb-4\">Os motores de busca priorizam conteúdo que satisfaz a intenção do utilizador. Texto legível afeta diretamente as métricas de engagement:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tempo na página</strong> — os visitantes permanecem mais tempo em páginas fáceis de ler. O Google interpreta visitas mais longas como sinal de qualidade.</li><li><strong>Taxa de rejeição</strong> — texto denso e difícil afasta os leitores. Uma pontuação Flesch abaixo de 30 numa página geral correlaciona-se frequentemente com altas taxas de rejeição.</li><li><strong>Snippets em destaque</strong> — o Google tende a selecionar respostas claras e concisas. Frases mais curtas e linguagem direta aumentam a probabilidade de ser selecionado.</li><li><strong>Legibilidade móvel</strong> — em ecrãs pequenos, frases longas e vocabulário complexo são ainda mais difíceis de seguir. Uma pontuação de 60+ melhora a experiência móvel.</li></ul><p class=\"text-mid mt-3\">Um bom objetivo para conteúdo web é uma pontuação Flesch entre 60 e 70 — suficientemente claro para a maioria dos leitores, suficientemente detalhado para transmitir experiência.</p>"
     },
     {
       "type": "gap",
@@ -402,6 +411,14 @@
         {
           "question": "Qual é o comprimento ideal de um artigo para SEO em português?",
           "answer": "Para artigos informativos: 1 200 a 2 000 palavras. Para páginas de produto: 300 a 500 palavras. A qualidade e a relevância são mais importantes do que a extensão."
+        },
+        {
+          "question": "Que pontuação Flesch devo almejar para conteúdo web?",
+          "answer": "Para conteúdo web geral (blogs, páginas de serviços, descrições de produtos) aponte para 60 a 70. Para público especializado (médicos, advogados, engenheiros) 40 a 50 é aceitável. Para instruções e suporte, aponte 70+ para máxima clareza."
+        },
+        {
+          "question": "Qual é a diferença entre tempo de leitura e tempo de fala?",
+          "answer": "O tempo de leitura usa 200 palavras por minuto — a velocidade média de leitura silenciosa. O tempo de fala usa 130 palavras por minuto, o ritmo natural para apresentações e podcasts, que inclui pausas e respiração. Um texto de 1 000 palavras demora cerca de 5 minutos a ler mas 7,5 minutos a falar."
         }
       ]
     },

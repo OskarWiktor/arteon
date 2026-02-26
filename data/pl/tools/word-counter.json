@@ -132,6 +132,11 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Jak działa ocena czytelności Flesch-Kincaid",
+      "html": "<p class=\"text-mid mb-4\">Narzędzie oblicza wynik czytelności na podstawie średniej długości zdania i średniej liczby sylab na słowo. Wynik wyświetlany jest na skali od 0 do 100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Bardzo łatwy. Krótkie zdania, proste słowa.</li><li><strong>70–89</strong> — Łatwy. Język potoczny, zrozumiały dla szerokiej publiczności.</li><li><strong>50–69</strong> — Umiarkowany. Teksty biznesowe i dziennikarskie.</li><li><strong>30–49</strong> — Trudny. Długie zdania, specjalistyczne słownictwo.</li><li><strong>0–29</strong> — Bardzo trudny. Teksty akademickie i prawne.</li></ul><p class=\"text-mid mt-3\">Dla języka polskiego narzędzie stosuje uproszczoną adaptację wzoru Flescha z polskimi regułami liczenia sylab. Polski jako język fleksyjny ma dłuższe słowa niż angielski, dlatego wyniki mogą być niższe przy porównywalnej trudności tekstu. Dobry cel dla treści webowych to wynik 50–60.</p>"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 metryk tekstu – co mierzy licznik?",
       "description": "Licznik analizuje tekst pod kątem jedenastu wskaźników:",
@@ -302,6 +307,15 @@
       "type": "sectionInfo",
       "title": "Limity znaków na popularnych platformach",
       "html": "<p class=\"text-mid mb-4\">Licznik znaków przydaje się przy tworzeniu treści dla platform z ograniczeniami długości:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platforma / Element</th><th class=\"py-2 pr-4 font-semibold\">Limit znaków</th><th class=\"py-2 font-semibold\">Uwagi</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50-60 znaków</td><td class=\"text-primary-light0 py-2 text-sm\">Dłuższe tytuły są obcinane w wynikach wyszukiwania.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google - meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150-160 znaków</td><td class=\"text-primary-light0 py-2 text-sm\">Opis widoczny pod linkiem w wynikach wyszukiwania.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Allegro - tytuł oferty</td><td class=\"py-2 pr-4 whitespace-nowrap\">50 znaków</td><td class=\"text-primary-light0 py-2 text-sm\">Krótki, konkretny tytuł z najważniejszymi słowami kluczowymi.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Allegro - opis produktu</td><td class=\"py-2 pr-4 whitespace-nowrap\">4000 znaków</td><td class=\"text-primary-light0 py-2 text-sm\">Opis widoczny na karcie produktu.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">OLX - tytuł ogłoszenia</td><td class=\"py-2 pr-4 whitespace-nowrap\">70 znaków</td><td class=\"text-primary-light0 py-2 text-sm\">Tytuł widoczny w wynikach wyszukiwania.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">OLX - opis ogłoszenia</td><td class=\"py-2 pr-4 whitespace-nowrap\">9000 znaków</td><td class=\"text-primary-light0 py-2 text-sm\">Pełny opis oferty.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) - post</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 znaków</td><td class=\"text-primary-light0 py-2 text-sm\">Standardowy limit dla zwykłych użytkowników.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn - post</td><td class=\"py-2 pr-4 whitespace-nowrap\">3000 znaków</td><td class=\"text-primary-light0 py-2 text-sm\">Po ~210 znakach pojawia się &quot;zobacz więcej&quot;.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Dlaczego czytelność ma znaczenie dla SEO",
+      "html": "<p class=\"text-mid mb-4\">Wyszukiwarki priorytetowo traktują treści spełniające intencję użytkownika. Czytelny tekst wpływa na kluczowe wskaźniki zaangażowania:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Czas na stronie</strong> — odwiedzający spędzają więcej czasu na stronach, które łatwo się czyta. Google interpretuje dłuższe wizyty jako sygnał jakości.</li><li><strong>Współczynnik odrzuceń</strong> — gęsty, trudny tekst odpycha czytelników. Wynik Flesch poniżej 30 na stronie ogólnej często koreluje z wysokim współczynnikiem odrzuceń.</li><li><strong>Fragmenty wyróżnione</strong> — Google wybiera jasne, zwięzłe odpowiedzi do fragmentów wyróżnionych. Krótsze zdania i bezpośredni język zwiększają szanse na wybór.</li><li><strong>Czytelność mobilna</strong> — na małych ekranach długie zdania i złożone słownictwo są jeszcze trudniejsze. Wynik Flesch 60+ poprawia doświadczenie mobilne.</li></ul><p class=\"text-mid mt-3\">Dobry cel dla treści webowych to wynik Flesch między 50 a 60 — wystarczająco jasny dla większości czytelników, a jednocześnie na tyle merytoryczny, by budować eksperckość.</p>"
     },
     {
       "type": "gap",

@@ -314,7 +314,16 @@
     {
       "type": "sectionInfo",
       "title": "Tekenlimites op populaire platforms",
-      "html": "<p class=\"text-mid\">Character limits vary by platform.</p>"
+      "html": "<p class=\"text-mid mb-4\">De tekenteller is handig bij het maken van content voor platforms met lengtebeperkingen:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platform / Element</th><th class=\"py-2 pr-4 font-semibold\">Tekenlimiet</th><th class=\"py-2 font-semibold\">Opmerkingen</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 tekens</td><td class=\"text-primary-light0 py-2 text-sm\">Langere titels worden afgekapt in zoekresultaten.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 tekens</td><td class=\"text-primary-light0 py-2 text-sm\">Zichtbare beschrijving onder de link in zoekresultaten.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Bol.com – producttitel</td><td class=\"py-2 pr-4 whitespace-nowrap\">150 tekens</td><td class=\"text-primary-light0 py-2 text-sm\">Beknopte titel met de belangrijkste zoekwoorden.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Marktplaats – advertentietitel</td><td class=\"py-2 pr-4 whitespace-nowrap\">60 tekens</td><td class=\"text-primary-light0 py-2 text-sm\">Korte titels verbeteren de zichtbaarheid in zoekresultaten.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – bericht</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 tekens</td><td class=\"text-primary-light0 py-2 text-sm\">Links en vermeldingen tellen mee.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – bijschrift</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 200 tekens</td><td class=\"text-primary-light0 py-2 text-sm\">Na ~125 tekens verschijnt de link &laquo;meer&raquo;.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn – bericht</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 tekens</td><td class=\"text-primary-light0 py-2 text-sm\">Na ~210 tekens verschijnt de link &laquo;meer weergeven&raquo;.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Waarom leesbaarheid belangrijk is voor SEO",
+      "html": "<p class=\"text-mid mb-4\">Zoekmachines geven voorrang aan content die de zoekintentie vervult. Leesbare tekst heeft direct invloed op belangrijke engagementcijfers:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Verblijftijd</strong> — bezoekers blijven langer op pagina's die gemakkelijk te lezen zijn. Google interpreteert langere bezoeken als kwaliteitssignaal.</li><li><strong>Bouncepercentage</strong> — compacte, moeilijk leesbare tekst jaagt bezoekers weg. Een Flesch-Douma score onder 30 op een algemene pagina correleert vaak met een hoog bouncepercentage.</li><li><strong>Uitgelichte fragmenten</strong> — Google selecteert heldere, beknopte antwoorden voor uitgelichte fragmenten. Kortere zinnen en directe taal verhogen de kans om geselecteerd te worden.</li><li><strong>Mobiele leesbaarheid</strong> — op kleine schermen zijn lange zinnen en complex vocabulaire nog moeilijker te volgen. Een score van 60+ verbetert de mobiele ervaring.</li></ul><p class=\"text-mid mt-3\">Een goed doel voor webcontent is een Flesch-Douma score tussen 60 en 70 — helder genoeg voor de meeste lezers, gedetailleerd genoeg om expertise over te brengen.</p>"
     },
     {
       "type": "gap",
@@ -402,6 +411,14 @@
         {
           "question": "Wat is de ideale lengte voor een SEO-blogartikel?",
           "answer": "Voor informatieve artikelen in het Nederlands: 1.200–2.000 woorden. Kwaliteit en relevantie zijn belangrijker dan woordenaantal. Voor productpagina’s: 300–500 woorden."
+        },
+        {
+          "question": "Welke Flesch-Douma score moet ik nastreven voor webcontent?",
+          "answer": "Voor algemene webcontent (blogs, dienstpagina's, productbeschrijvingen) mik op 60 tot 70. Dit bereik is helder voor de meeste lezers. Voor specialistisch publiek (artsen, juristen, ingenieurs) is 40–50 acceptabel. Voor instructies en supportcontent mik op 70+ voor maximale duidelijkheid."
+        },
+        {
+          "question": "Wat is het verschil tussen leestijd en spreektijd?",
+          "answer": "Leestijd gaat uit van 200 woorden per minuut — de gemiddelde stille leessnelheid. Spreektijd gebruikt 130 woorden per minuut, het natuurlijke tempo voor presentaties en podcasts, inclusief pauzes en ademhaling. Een tekst van 1.000 woorden kost circa 5 minuten om te lezen maar 7,5 minuten om uit te spreken."
         }
       ]
     },

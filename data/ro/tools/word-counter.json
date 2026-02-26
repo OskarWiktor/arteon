@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "ro",
   "metadata": {
-    "title": "Contor de cuvinte cu scor Flesch-Kincaid si instrumente text",
-    "description": "Contor gratuit de cuvinte, caractere si silabe cu scor Flesch-Kincaid, timp de citire, timp de vorbire si 10 instrumente de formatare. Fara inregistrare.",
+    "title": "Contor de cuvinte cu scor Flesch-Kincaid și instrumente text",
+    "description": "Contor gratuit de cuvinte, caractere și silabe cu scor Flesch-Kincaid, timp de citire, timp de vorbire și 10 instrumente de formatare. Fără înregistrare.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contor-cuvinte-si-caractere-ro.webp",
     "path": "/ro/instrumente/contor-cuvinte-si-caractere"
   },
   "hero": {
-    "title": "Numara cuvinte, caractere si lizibilitate – scor Flesch-Kincaid, timp de citire si instrumente text",
-    "description": "Lipeste textul si instrumentul va numara cuvinte, caractere, silabe, propozitii, paragrafe, cuvinte unice, timp de citire, timp de vorbire si va calcula scorul de lizibilitate Flesch-Kincaid.",
+    "title": "Numără cuvinte, caractere și lizibilitate – scor Flesch-Kincaid, timp de citire și instrumente text",
+    "description": "Lipește textul și instrumentul va număra cuvinte, caractere, silabe, propoziții, paragrafe, cuvinte unice, timp de citire, timp de vorbire și va calcula scorul de lizibilitate Flesch-Kincaid.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -26,18 +26,18 @@
     "software": {
       "name": "Contor de cuvinte, caractere și timp de citire cu formatarea textului",
       "alternateName": [
-        "Online word counter",
-        "Character counter with and without spaces",
-        "Word counting tool for copywriters",
-        "Reading time calculator",
-        "Online letter case converter",
-        "Uppercase to lowercase converter",
-        "Remove duplicate lines from text",
-        "Sort text lines alphabetically",
+        "Contor de cuvinte online",
+        "Contor de caractere cu și fără spații",
+        "Instrument de numărare cuvinte pentru copywriteri",
+        "Calculator timp de citire",
+        "Convertor majuscule minuscule online",
         "Verificator lizibilitate Flesch-Kincaid",
         "Contor de silabe online",
         "Calculator timp de vorbire",
-        "Instrument lizibilitate text"
+        "Instrument lizibilitate text",
+        "Elimină linii duplicate din text",
+        "Sortare linii text alfabetic",
+        "Numărător de cuvinte și caractere gratuit"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Contor gratuit de cuvinte și caractere cu instrumente de formatare a textului. Numără cuvinte, caractere, propoziții, paragrafe, cuvinte unice și timp de citire. Oferă 10 instrumente: conversie litere, eliminare spații, linii goale, duplicate și sortare.",
@@ -93,7 +93,7 @@
     {
       "type": "sectionBasic",
       "title": "Contor de cuvinte și caractere cu instrumente text",
-      "html": "<p class=\"text-mid\">Acest instrument combina un contor de cuvinte si caractere cu analiza lizibilitatii Flesch-Kincaid si functii de formatare text. Lipeste textul pentru a vedea cuvinte, caractere, silabe, propozitii, paragrafe, cuvinte unice, timp de citire, timp de vorbire si un scor de lizibilitate colorat.</p><p class=\"text-mid mt-3\"><strong>Scorul Flesch-Kincaid</strong> (0–100) arata cat de usor este de citit textul. Scoruri peste 70 inseamna text usor, sub 30 nivel academic. Instrumentul foloseste formule adaptate pentru 16 limbi.</p><p class=\"text-mid mt-3\">Sub campul de text vei gasi 10 instrumente: conversie majuscule/minuscule, eliminare spatii, linii goale, duplicate si sortare. Toata procesarea are loc local in browser.</p>",
+      "html": "<p class=\"text-mid\">Acest instrument combină un contor de cuvinte și caractere cu analiza lizibilității Flesch-Kincaid și funcții de formatare text. Lipește textul pentru a vedea cuvinte, caractere, silabe, propoziții, paragrafe, cuvinte unice, timp de citire, timp de vorbire și un scor de lizibilitate colorat.</p><p class=\"text-mid mt-3\"><strong>Scorul Flesch-Kincaid</strong> (0–100) arată cât de ușor este de citit textul. Scoruri peste 70 înseamnă text ușor, sub 30 nivel academic. Instrumentul folosește formule adaptate pentru 16 limbi.</p><p class=\"text-mid mt-3\">Sub câmpul de text vei găsi 10 instrumente: conversie majuscule/minuscule, eliminare spații, linii goale, duplicate și sortare. Toată procesarea are loc local în browser.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contor-cuvinte-si-caractere-ro.webp",
       "imageAlt": "Contor de cuvinte și caractere – Arteon"
     },
@@ -115,7 +115,7 @@
         {
           "icon": "RiBarChartLine",
           "title": "2. Verificați statisticile",
-          "description": "In panoul din stanga vei vedea 11 metrici: cuvinte, caractere cu si fara spatii, propozitii, paragrafe, cuvinte unice, lungime medie, timp de citire, timp de vorbire, silabe si scor Flesch-Kincaid."
+          "description": "În panoul din stânga vei vedea 11 metrici: cuvinte, caractere cu și fără spații, propoziții, paragrafe, cuvinte unice, lungime medie, timp de citire, timp de vorbire, silabe și scor Flesch-Kincaid."
         },
         {
           "icon": "RiTextWrap",
@@ -144,64 +144,64 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 metrici text – ce masoara contorul",
-      "description": "Contorul analizeaza textul cu unsprezece indicatori:",
+      "title": "11 metrici text – ce măsoară contorul",
+      "description": "Contorul analizează textul cu unsprezece indicatori:",
       "grid": "two",
       "items": [
         {
           "icon": "RiText",
-          "title": "Words",
-          "description": "Total word count. The primary indicator of text length, useful for content creation, articles and descriptions."
+          "title": "Cuvinte",
+          "description": "Numărul total de cuvinte. Indicatorul principal al lungimii textului, util pentru crearea de conținut, articole și descrieri de produse."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Characters (with spaces)",
-          "description": "All characters including spaces. Useful when a platform has a character limit (e.g., Amazon listings, meta descriptions)."
+          "title": "Caractere (cu spații)",
+          "description": "Toate caracterele, inclusiv spațiile. Util când o platformă are o limită de caractere (eMAG, descrieri meta, Amazon)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Characters (without spaces)",
-          "description": "Only letters, digits and punctuation. The standard billing unit for translations and print shops."
+          "title": "Caractere (fără spații)",
+          "description": "Doar litere, cifre și semne de punctuație. Unitatea standard de facturare pentru traduceri și tipografii."
         },
         {
           "icon": "RiChatQuoteLine",
-          "title": "Sentences",
-          "description": "Number of sentences in the text. Helps assess complexity and readability — shorter sentences are easier to absorb."
+          "title": "Propoziții",
+          "description": "Numărul de propoziții din text. Ajută la evaluarea complexității și lizibilității — propozițiile mai scurte sunt mai ușor de absorbit."
         },
         {
           "icon": "RiParagraph",
-          "title": "Paragraphs",
-          "description": "Text blocks separated by blank lines. Well-structured paragraphs improve readability on screens."
+          "title": "Paragrafe",
+          "description": "Blocuri de text separate prin linii goale. Paragrafele bine structurate îmbunătățesc lizibilitatea pe ecrane."
         },
         {
           "icon": "RiStarLine",
-          "title": "Unique words",
-          "description": "Number of non-repeating words. A higher ratio of unique to total words indicates richer vocabulary."
+          "title": "Cuvinte unice",
+          "description": "Numărul de cuvinte care nu se repetă. O proporție mai mare de cuvinte unice indică un vocabular mai bogat."
         },
         {
           "icon": "RiRulerLine",
-          "title": "Average word length",
-          "description": "Average number of characters per word. An indicator of text complexity — technical texts have longer words than casual ones."
+          "title": "Lungimea medie a cuvintelor",
+          "description": "Numărul mediu de caractere pe cuvânt. Un indicator al complexității textului — textele tehnice au cuvinte mai lungi."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Reading time",
-          "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
+          "title": "Timp de citire",
+          "description": "Timp estimat de citire la 200 de cuvinte pe minut. Valoare aproximativă pentru text tipic."
         },
         {
           "icon": "RiMicLine",
           "title": "Timp de vorbire",
-          "description": "Timp estimat la 130 cuvinte pe minut. Util pentru discursuri si prezentari."
+          "description": "Timp estimat la 130 cuvinte pe minut. Util pentru discursuri și prezentări."
         },
         {
           "icon": "RiInputMethodLine",
           "title": "Silabe",
-          "description": "Total silabe cu euristici lingvistice. Parametru cheie pentru formulele de lizibilitate."
+          "description": "Total silabe cu euristici lingvistice. Parametru-cheie pentru formulele de lizibilitate."
         },
         {
           "icon": "RiSpeedLine",
           "title": "Lizibilitate (Flesch-Kincaid)",
-          "description": "Scor 0–100. Peste 70 = usor, 50–70 = moderat, sub 30 = academic. Codat prin culori."
+          "description": "Scor 0–100. Peste 70 = ușor, 50–70 = moderat, sub 30 = academic. Codat prin culori."
         }
       ]
     },
@@ -217,53 +217,53 @@
       "items": [
         {
           "icon": "RiArrowUpLine",
-          "title": "UPPERCASE",
-          "description": "Converts all text to uppercase. Useful for headings, acronyms and highlighting text fragments."
+          "title": "MAJUSCULE",
+          "description": "Convertește tot textul în majuscule. Util pentru titluri, acronime și evidențierea fragmentelor."
         },
         {
           "icon": "RiArrowDownLine",
-          "title": "lowercase",
-          "description": "Converts all text to lowercase. Useful for normalizing text copied from different sources."
+          "title": "minuscule",
+          "description": "Convertește tot textul în minuscule. Util pentru normalizarea textului copiat din surse diferite."
         },
         {
           "icon": "RiEditLine",
-          "title": "Sentence case",
-          "description": "First letter of each sentence is capitalized, the rest lowercase. Standard format for continuous text."
+          "title": "Stil propoziție",
+          "description": "Prima literă a fiecărei propoziții este majusculă, restul minuscule. Format standard pentru text continuu."
         },
         {
           "icon": "RiHeading",
-          "title": "Title Case",
-          "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
+          "title": "Stil Titlu",
+          "description": "Fiecare cuvânt începe cu majusculă. Ideal pentru titluri, anteturi și nume proprii."
         },
         {
           "icon": "RiArrowLeftRightLine",
-          "title": "tOGGLE cASE",
-          "description": "Swaps uppercase to lowercase and vice versa. Useful when text was typed with Caps Lock on."
+          "title": "iNVERSARE",
+          "description": "Schimbă majusculele cu minuscule și invers. Util când textul a fost scris cu Caps Lock activat."
         },
         {
           "icon": "RiSpace",
-          "title": "Remove extra spaces",
-          "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
+          "title": "Elimină spațiile extra",
+          "description": "Reduce spațiile multiple la unul singur și elimină spațiile de la începutul și sfârșitul fiecărei linii."
         },
         {
           "icon": "RiDeleteRow",
-          "title": "Remove empty lines",
-          "description": "Removes empty and redundant lines from text. Useful for cleaning text copied from websites."
+          "title": "Elimină liniile goale",
+          "description": "Elimină liniile goale și redundante din text. Util pentru curățarea textului copiat de pe site-uri."
         },
         {
           "icon": "RiFilterLine",
-          "title": "Remove duplicate lines",
-          "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
+          "title": "Elimină liniile duplicate",
+          "description": "Păstrează doar liniile unice, eliminând repetițiile. Util pentru curățarea listelor și datelor."
         },
         {
           "icon": "RiSortAsc",
-          "title": "Sort A→Z",
-          "description": "Sorts text lines alphabetically in ascending order. Useful for organizing lists, keywords and data."
+          "title": "Sortare A→Z",
+          "description": "Sortează liniile alfabetic în ordine crescătoare. Util pentru organizarea listelor și datelor."
         },
         {
           "icon": "RiSortDesc",
-          "title": "Sort Z→A",
-          "description": "Sorts text lines alphabetically in descending order. Reverse sort order."
+          "title": "Sortare Z→A",
+          "description": "Sortează liniile alfabetic în ordine descrescătoare. Ordine inversă."
         }
       ]
     },
@@ -279,33 +279,33 @@
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Copywriters and editors",
-          "description": "Count words and characters, check platform limits, quickly change letter case and clean text before publishing."
+          "title": "Copywriteri și editori",
+          "description": "Numărarea cuvintelor și caracterelor, verificarea limitelor platformelor, schimbarea rapidă a majusculelor și curățarea textului înainte de publicare."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Bloggers and content creators",
-          "description": "Monitor post length, check reading time, remove duplicate lines and sort lists."
+          "title": "Bloggeri și creatori de conținut",
+          "description": "Monitorizarea lungimii postărilor, verificarea timpului de citire, eliminarea liniilor duplicate și sortarea listelor."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "Store owners",
-          "description": "Verify product descriptions against character limits on platforms (Amazon, eBay, Etsy)."
+          "title": "Proprietari de magazine",
+          "description": "Verificarea descrierilor de produse față de limitele de caractere pe platforme (eMAG, OLX, Amazon)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO specialists",
-          "description": "Analyze content length, count unique words and assess text complexity based on average word length."
+          "title": "Specialiști SEO",
+          "description": "Analiza lungimii conținutului, numărarea cuvintelor unice și evaluarea complexității textului."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Students and academics",
-          "description": "Check word or character limits in essays and research papers."
+          "title": "Studenți și cercetători",
+          "description": "Verificarea limitelor de cuvinte sau caractere în eseuri, lucrări de licență și cercetări academice."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Translators",
-          "description": "Count characters without spaces for quotes (the standard billing unit in translation)."
+          "title": "Traducători",
+          "description": "Numărarea caracterelor fără spații pentru ofertele de preț (unitatea standard de facturare în traduceri)."
         }
       ]
     },
@@ -316,7 +316,16 @@
     {
       "type": "sectionInfo",
       "title": "Limite de caractere pe platformele populare",
-      "html": "<p class=\"text-mid\">Character limits vary by platform.</p>"
+      "html": "<p class=\"text-mid mb-4\">Contorul de caractere este util pentru crearea de conținut pe platforme cu restricții de lungime:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Platformă / Element</th><th class=\"py-2 pr-4 font-semibold\">Limită de caractere</th><th class=\"py-2 font-semibold\">Note</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 caractere</td><td class=\"text-primary-light0 py-2 text-sm\">Titlurile mai lungi sunt trunchiate în rezultatele căutării.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 caractere</td><td class=\"text-primary-light0 py-2 text-sm\">Descrierea vizibilă sub link în rezultatele căutării.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">eMAG – titlu produs</td><td class=\"py-2 pr-4 whitespace-nowrap\">150 caractere</td><td class=\"text-primary-light0 py-2 text-sm\">Titlu concis cu cele mai importante cuvinte cheie.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">OLX.ro – titlu anunț</td><td class=\"py-2 pr-4 whitespace-nowrap\">70 caractere</td><td class=\"text-primary-light0 py-2 text-sm\">Titlurile scurte îmbunătățesc vizibilitatea în căutări.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – postare</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 caractere</td><td class=\"text-primary-light0 py-2 text-sm\">Include link-uri și mențiuni în numărătoare.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – legendă</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 200 caractere</td><td class=\"text-primary-light0 py-2 text-sm\">După ~125 caractere apare link-ul &laquo;mai mult&raquo;.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn – postare</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 caractere</td><td class=\"text-primary-light0 py-2 text-sm\">După ~210 caractere apare link-ul &laquo;vezi mai mult&raquo;.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "De ce lizibilitatea contează pentru SEO",
+      "html": "<p class=\"text-mid mb-4\">Motoarele de căutare prioritizează conținutul care satisface intenția utilizatorului. Textul lizibil afectează direct metricile de engagement:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Timpul pe pagină</strong> — vizitatorii petrec mai mult timp pe paginile ușor de citit. Google interpretează vizitele mai lungi ca semnal de calitate.</li><li><strong>Rata de respingere</strong> — textul dens și dificil alungă cititorii. Un scor Flesch sub 30 pe o pagină generală se corelează adesea cu rate mari de respingere.</li><li><strong>Fragmente recomandate</strong> — Google tinde să selecteze răspunsuri clare și concise. Propozițiile mai scurte și limbajul direct cresc șansele de a fi selectat.</li><li><strong>Lizibilitate mobilă</strong> — pe ecrane mici, propozițiile lungi și vocabularul complex sunt și mai greu de urmărit. Un scor de 60+ îmbunătățește experiența mobilă.</li></ul><p class=\"text-mid mt-3\">Un obiectiv bun pentru conținut web este un scor Flesch între 60 și 70 — suficient de clar pentru majoritatea cititorilor, suficient de detaliat pentru a transmite expertiză.</p>"
     },
     {
       "type": "gap",
@@ -329,33 +338,33 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "11 metrici + scor lizibilitate",
-          "description": "Cuvinte, caractere, silabe, propozitii, paragrafe, cuvinte unice, timp citire, timp vorbire si Flesch-Kincaid."
+          "title": "11 metrici + scor de lizibilitate",
+          "description": "Cuvinte, caractere, silabe, propoziții, paragrafe, cuvinte unice, timp de citire, timp de vorbire și Flesch-Kincaid — totul într-un singur panou."
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 formatting tools",
-          "description": "Letter case conversion, removing spaces, empty lines, duplicates and sorting — without installing additional software."
+          "title": "10 instrumente de formatare",
+          "description": "Conversie majuscule, eliminare spații, linii goale, duplicate și sortare — fără a instala software suplimentar."
         },
         {
           "icon": "RiUserLine",
-          "title": "Local processing in the browser",
-          "description": "Your text is never sent to any server. All analysis and transformation happens locally on your device."
+          "title": "Procesare locală în browser",
+          "description": "Textul nu este trimis niciodată la un server. Toată analiza și transformarea au loc local pe dispozitivul tău."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Copy and clear text",
-          "description": "Copy the modified text to your clipboard with one click or clear the field to start over."
+          "title": "Copiază și șterge textul",
+          "description": "Copiază textul modificat în clipboard cu un singur clic sau șterge câmpul pentru a reîncepe."
         },
         {
           "icon": "RiTimerLine",
-          "title": "Instant results",
-          "description": "Statistics update in real time as you type or paste text. No waiting for processing."
+          "title": "Rezultate instantanee",
+          "description": "Statisticile se actualizează în timp real pe măsură ce scrii sau lipești text. Fără așteptare."
         },
         {
           "icon": "RiLockLine",
-          "title": "No registration or limits",
-          "description": "The tool is completely free. No registration, login or personal data required."
+          "title": "Fără înregistrare sau limite",
+          "description": "Instrumentul este complet gratuit. Nu necesită înregistrare, autentificare sau date personale."
         }
       ]
     },
@@ -380,18 +389,18 @@
         },
         {
           "question": "Ce este scorul Flesch-Kincaid?",
-          "answer": "Scorul Flesch Reading Ease (0–100) indica usurinta de citire. 90–100 = foarte usor, 70–89 = usor, 50–69 = moderat, 30–49 = dificil, 0–29 = foarte dificil.",
-          "answerSchemaText": "Flesch Reading Ease (0–100) masoara lizibilitatea."
+          "answer": "Scorul Flesch Reading Ease (0–100) indică ușurința de citire. 90–100 = foarte ușor, 70–89 = ușor, 50–69 = moderat, 30–49 = dificil, 0–29 = foarte dificil.",
+          "answerSchemaText": "Flesch Reading Ease (0–100) măsoară lizibilitatea."
         },
         {
-          "question": "Cum se calculeaza timpul de vorbire?",
-          "answer": "Timpul de vorbire imparte cuvintele la 130 – viteza medie la prezentari.",
+          "question": "Cum se calculează timpul de vorbire?",
+          "answer": "Timpul de vorbire împarte cuvintele la 130 – viteza medie la prezentări.",
           "answerSchemaText": "130 cuvinte pe minut."
         },
         {
-          "question": "Cat de precis este contorul de silabe?",
-          "answer": "Instrumentul foloseste euristici specifice limbii care recunosc diftongi si modele de vocale.",
-          "answerSchemaText": "Euristici lingvistice cu diftongi si vocale."
+          "question": "Cât de precis este contorul de silabe?",
+          "answer": "Instrumentul folosește euristici specifice limbii care recunosc diftongi și modele de vocale.",
+          "answerSchemaText": "Euristici lingvistice cu diftongi și vocale."
         },
         {
           "question": "Cum îmbunătățesc lizibilitatea textului meu?",
@@ -404,6 +413,14 @@
         {
           "question": "Care este lungimea ideală pentru un articol SEO în română?",
           "answer": "Pentru articole informative: 1 200–2 000 de cuvinte. Pentru pagini de produs: 300–500 de cuvinte. Calitatea și relevanța sunt mai importante decât numărul de cuvinte."
+        },
+        {
+          "question": "Ce scor de lizibilitate ar trebui să vizez pentru conținut web?",
+          "answer": "Pentru conținut web general (bloguri, pagini de servicii, descrieri de produse) vizați un scor între 60 și 70. Pentru public specializat (medici, avocați, ingineri) 40–50 este acceptabil. Pentru instrucțiuni și suport, vizați 70+ pentru claritate maximă."
+        },
+        {
+          "question": "Care este diferența dintre timpul de citire și timpul de vorbire?",
+          "answer": "Timpul de citire folosește 200 de cuvinte pe minut — viteza medie de citire silențioasă. Timpul de vorbire folosește 130 de cuvinte pe minut, ritmul natural pentru prezentări și podcasturi, care include pauze și respirație. Un text de 1 000 de cuvinte durează circa 5 minute de citit, dar 7,5 minute de vorbit."
         }
       ]
     },

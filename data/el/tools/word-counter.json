@@ -26,18 +26,18 @@
     "software": {
       "name": "Μετρητής λέξεων, χαρακτήρων και χρόνου ανάγνωσης με μορφοποίηση κειμένου",
       "alternateName": [
-        "Online word counter",
-        "Character counter with and without spaces",
-        "Word counting tool for copywriters",
-        "Reading time calculator",
-        "Online letter case converter",
-        "Uppercase to lowercase converter",
-        "Remove duplicate lines from text",
-        "Sort text lines alphabetically",
+        "Μετρητής λέξεων online",
+        "Μετρητής χαρακτήρων με και χωρίς κενά",
+        "Εργαλείο μέτρησης λέξεων για copywriters",
+        "Υπολογιστής χρόνου ανάγνωσης",
+        "Μετατροπέας κεφαλαίων/πεζών online",
         "Έλεγχος αναγνωσιμότητας Flesch-Kincaid",
         "Μετρητής συλλαβών online",
         "Υπολογιστής χρόνου ομιλίας",
-        "Εργαλείο αναγνωσιμότητας"
+        "Εργαλείο αναγνωσιμότητας",
+        "Αφαίρεση διπλότυπων γραμμών",
+        "Ταξινόμηση γραμμών αλφαβητικά",
+        "Δωρεάν μετρητής λέξεων και χαρακτήρων"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Δωρεάν μετρητής λέξεων και χαρακτήρων με εργαλεία μορφοποίησης κειμένου. Μετρά λέξεις, χαρακτήρες, προτάσεις, παραγράφους, μοναδικές λέξεις και χρόνο ανάγνωσης. Προσφέρει 10 εργαλεία: μετατροπή κεφαλαίων, αφαίρεση κενών, κενών γραμμών, διπλοτύπων και ταξινόμηση.",
@@ -150,43 +150,43 @@
       "items": [
         {
           "icon": "RiText",
-          "title": "Words",
-          "description": "Total word count. The primary indicator of text length, useful for content creation, articles and descriptions."
+          "title": "Λέξεις",
+          "description": "Συνολικός αριθμός λέξεων. Ο κύριος δείκτης μήκους κειμένου, χρήσιμος για δημιουργία περιεχομένου, άρθρα και περιγραφές."
         },
         {
           "icon": "RiSpaceShipLine",
-          "title": "Characters (with spaces)",
-          "description": "All characters including spaces. Useful when a platform has a character limit (e.g., Amazon listings, meta descriptions)."
+          "title": "Χαρακτήρες (με κενά)",
+          "description": "Όλοι οι χαρακτήρες συμπεριλαμβανομένων των κενών. Χρήσιμο όταν μια πλατφόρμα έχει όριο χαρακτήρων (π.χ. Skroutz, Amazon, μετα-περιγραφές)."
         },
         {
           "icon": "RiHashtag",
-          "title": "Characters (without spaces)",
-          "description": "Only letters, digits and punctuation. The standard billing unit for translations and print shops."
+          "title": "Χαρακτήρες (χωρίς κενά)",
+          "description": "Μόνο γράμματα, ψηφία και σημεία στίξης. Η τυπική μονάδα χρέωσης για μεταφράσεις και τυπογραφεία."
         },
         {
           "icon": "RiChatQuoteLine",
-          "title": "Sentences",
-          "description": "Number of sentences in the text. Helps assess complexity and readability — shorter sentences are easier to absorb."
+          "title": "Προτάσεις",
+          "description": "Αριθμός προτάσεων στο κείμενο. Βοηθά στην αξιολόγηση πολυπλοκότητας και αναγνωσιμότητας — οι πιο σύντομες προτάσεις αφομοιώνονται πιο εύκολα."
         },
         {
           "icon": "RiParagraph",
-          "title": "Paragraphs",
-          "description": "Text blocks separated by blank lines. Well-structured paragraphs improve readability on screens."
+          "title": "Παράγραφοι",
+          "description": "Μπλοκ κειμένου χωρισμένα με κενές γραμμές. Οι καλά δομημένες παράγραφοι βελτιώνουν την αναγνωσιμότητα σε οθόνες."
         },
         {
           "icon": "RiStarLine",
-          "title": "Unique words",
-          "description": "Number of non-repeating words. A higher ratio of unique to total words indicates richer vocabulary."
+          "title": "Μοναδικές λέξεις",
+          "description": "Αριθμός μη επαναλαμβανόμενων λέξεων. Υψηλότερη αναλογία μοναδικών λέξεων υποδεικνύει πλουσιότερο λεξιλόγιο."
         },
         {
           "icon": "RiRulerLine",
-          "title": "Average word length",
-          "description": "Average number of characters per word. An indicator of text complexity — technical texts have longer words than casual ones."
+          "title": "Μέσο μήκος λέξης",
+          "description": "Μέσος αριθμός χαρακτήρων ανά λέξη. Δείκτης πολυπλοκότητας κειμένου — τα τεχνικά κείμενα έχουν μεγαλύτερες λέξεις."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Reading time",
-          "description": "Estimated time to read the text at 200 words per minute. An approximate value for typical text."
+          "title": "Χρόνος ανάγνωσης",
+          "description": "Εκτιμώμενος χρόνος ανάγνωσης με 200 λέξεις/λεπτό. Προσεγγιστική τιμή για τυπικό κείμενο."
         },
         {
           "icon": "RiMicLine",
@@ -217,53 +217,53 @@
       "items": [
         {
           "icon": "RiArrowUpLine",
-          "title": "UPPERCASE",
-          "description": "Converts all text to uppercase. Useful for headings, acronyms and highlighting text fragments."
+          "title": "ΚΕΦΑΛΑΙΑ",
+          "description": "Μετατρέπει όλο το κείμενο σε κεφαλαία. Χρήσιμο για επικεφαλίδες, ακρωνύμια και επισήμανση κειμένου."
         },
         {
           "icon": "RiArrowDownLine",
-          "title": "lowercase",
-          "description": "Converts all text to lowercase. Useful for normalizing text copied from different sources."
+          "title": "πεζά",
+          "description": "Μετατρέπει όλο το κείμενο σε πεζά. Χρήσιμο για κανονικοποίηση κειμένου από διάφορες πηγές."
         },
         {
           "icon": "RiEditLine",
-          "title": "Sentence case",
-          "description": "First letter of each sentence is capitalized, the rest lowercase. Standard format for continuous text."
+          "title": "Στυλ πρότασης",
+          "description": "Το πρώτο γράμμα κάθε πρότασης είναι κεφαλαίο, τα υπόλοιπα πεζά. Τυπική μορφή για συνεχές κείμενο."
         },
         {
           "icon": "RiHeading",
-          "title": "Title Case",
-          "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
+          "title": "Στυλ τίτλου",
+          "description": "Κάθε λέξη ξεκινά με κεφαλαίο. Ιδανικό για τίτλους, επικεφαλίδες και κύρια ονόματα."
         },
         {
           "icon": "RiArrowLeftRightLine",
-          "title": "tOGGLE cASE",
-          "description": "Swaps uppercase to lowercase and vice versa. Useful when text was typed with Caps Lock on."
+          "title": "αΝΤΙΣΤΡΟΦΗ",
+          "description": "Αλλάζει τα κεφαλαία σε πεζά και αντίστροφα. Χρήσιμο όταν το κείμενο γράφτηκε με Caps Lock ενεργοποιημένο."
         },
         {
           "icon": "RiSpace",
-          "title": "Remove extra spaces",
-          "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
+          "title": "Αφαίρεση επιπλέον κενών",
+          "description": "Μειώνει τα πολλαπλά κενά σε ένα και αφαιρεί κενά από την αρχή και το τέλος κάθε γραμμής."
         },
         {
           "icon": "RiDeleteRow",
-          "title": "Remove empty lines",
-          "description": "Removes empty and redundant lines from text. Useful for cleaning text copied from websites."
+          "title": "Αφαίρεση κενών γραμμών",
+          "description": "Αφαιρεί κενές και περιττές γραμμές από το κείμενο. Χρήσιμο για καθαρισμό κειμένου από ιστοσελίδες."
         },
         {
           "icon": "RiFilterLine",
-          "title": "Remove duplicate lines",
-          "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
+          "title": "Αφαίρεση διπλότυπων γραμμών",
+          "description": "Διατηρεί μόνο τις μοναδικές γραμμές και αφαιρεί τις επαναλήψεις. Χρήσιμο για καθαρισμό λιστών και δεδομένων."
         },
         {
           "icon": "RiSortAsc",
-          "title": "Sort A→Z",
-          "description": "Sorts text lines alphabetically in ascending order. Useful for organizing lists, keywords and data."
+          "title": "Ταξινόμηση Α→Ω",
+          "description": "Ταξινομεί τις γραμμές αλφαβητικά σε αύξουσα σειρά. Χρήσιμο για οργάνωση λιστών και δεδομένων."
         },
         {
           "icon": "RiSortDesc",
-          "title": "Sort Z→A",
-          "description": "Sorts text lines alphabetically in descending order. Reverse sort order."
+          "title": "Ταξινόμηση Ω→Α",
+          "description": "Ταξινομεί τις γραμμές αλφαβητικά σε φθίνουσα σειρά. Αντίστροφη σειρά ταξινόμησης."
         }
       ]
     },
@@ -279,33 +279,33 @@
       "items": [
         {
           "icon": "RiEditLine",
-          "title": "Copywriters and editors",
-          "description": "Count words and characters, check platform limits, quickly change letter case and clean text before publishing."
+          "title": "Copywriters και συντάκτες",
+          "description": "Μέτρηση λέξεων και χαρακτήρων, έλεγχος ορίων πλατφορμών, γρήγορη αλλαγή πεζών/κεφαλαίων και καθαρισμός κειμένου πριν τη δημοσίευση."
         },
         {
           "icon": "RiBloggerLine",
-          "title": "Bloggers and content creators",
-          "description": "Monitor post length, check reading time, remove duplicate lines and sort lists."
+          "title": "Bloggers και δημιουργοί περιεχομένου",
+          "description": "Παρακολούθηση μήκους δημοσιεύσεων, έλεγχος χρόνου ανάγνωσης, αφαίρεση διπλότυπων γραμμών και ταξινόμηση λιστών."
         },
         {
           "icon": "RiShoppingBagLine",
-          "title": "Store owners",
-          "description": "Verify product descriptions against character limits on platforms (Amazon, eBay, Etsy)."
+          "title": "Ιδιοκτήτες καταστημάτων",
+          "description": "Έλεγχος περιγραφών προϊόντων σε σχέση με τα όρια χαρακτήρων πλατφορμών (Skroutz, Amazon, eBay)."
         },
         {
           "icon": "RiSearchLine",
-          "title": "SEO specialists",
-          "description": "Analyze content length, count unique words and assess text complexity based on average word length."
+          "title": "Ειδικοί SEO",
+          "description": "Ανάλυση μήκους περιεχομένου, μέτρηση μοναδικών λέξεων και αξιολόγηση πολυπλοκότητας κειμένου."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Students and academics",
-          "description": "Check word or character limits in essays and research papers."
+          "title": "Φοιτητές και ακαδημαϊκοί",
+          "description": "Έλεγχος ορίων λέξεων ή χαρακτήρων σε δοκίμια και ερευνητικές εργασίες."
         },
         {
           "icon": "RiTranslate2",
-          "title": "Translators",
-          "description": "Count characters without spaces for quotes (the standard billing unit in translation)."
+          "title": "Μεταφραστές",
+          "description": "Μέτρηση χαρακτήρων χωρίς κενά για προσφορές (η τυπική μονάδα χρέωσης στη μετάφραση)."
         }
       ]
     },
@@ -316,7 +316,16 @@
     {
       "type": "sectionInfo",
       "title": "Όρια χαρακτήρων σε δημοφιλείς πλατφόρμες",
-      "html": "<p class=\"text-mid\">Character limits vary by platform.</p>"
+      "html": "<p class=\"text-mid mb-4\">Ο μετρητής χαρακτήρων είναι χρήσιμος για τη δημιουργία περιεχομένου σε πλατφόρμες με περιορισμούς μήκους:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Πλατφόρμα / Στοιχείο</th><th class=\"py-2 pr-4 font-semibold\">Όριο χαρακτήρων</th><th class=\"py-2 font-semibold\">Σημειώσεις</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta title</td><td class=\"py-2 pr-4 whitespace-nowrap\">50–60 χαρακτήρες</td><td class=\"text-primary-light0 py-2 text-sm\">Μεγαλύτεροι τίτλοι περικόπτονται στα αποτελέσματα αναζήτησης.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Google – meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">150–160 χαρακτήρες</td><td class=\"text-primary-light0 py-2 text-sm\">Ορατή περιγραφή κάτω από τον σύνδεσμο στα αποτελέσματα αναζήτησης.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Skroutz.gr – τίτλος προϊόντος</td><td class=\"py-2 pr-4 whitespace-nowrap\">150 χαρακτήρες</td><td class=\"text-primary-light0 py-2 text-sm\">Σύντομος τίτλος με τις σημαντικότερες λέξεις-κλειδιά.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">X (Twitter) – δημοσίευση</td><td class=\"py-2 pr-4 whitespace-nowrap\">280 χαρακτήρες</td><td class=\"text-primary-light0 py-2 text-sm\">Περιλαμβάνει συνδέσμους και αναφορές στην καταμέτρηση.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Instagram – λεζάντα</td><td class=\"py-2 pr-4 whitespace-nowrap\">2 200 χαρακτήρες</td><td class=\"text-primary-light0 py-2 text-sm\">Μετά από ~125 χαρακτήρες εμφανίζεται ο σύνδεσμος &laquo;περισσότερα&raquo;.</td></tr><tr><td class=\"py-2 pr-4\">LinkedIn – δημοσίευση</td><td class=\"py-2 pr-4 whitespace-nowrap\">3 000 χαρακτήρες</td><td class=\"text-primary-light0 py-2 text-sm\">Μετά από ~210 χαρακτήρες εμφανίζεται ο σύνδεσμος &laquo;δείτε περισσότερα&raquo;.</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Γιατί η αναγνωσιμότητα είναι σημαντική για το SEO",
+      "html": "<p class=\"text-mid mb-4\">Οι μηχανές αναζήτησης δίνουν προτεραιότητα στο περιεχόμενο που ικανοποιεί την πρόθεση του χρήστη. Το αναγνώσιμο κείμενο επηρεάζει άμεσα σημαντικές μετρικές αλληλεπίδρασης:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Χρόνος στη σελίδα</strong> — οι επισκέπτες μένουν περισσότερο σε σελίδες που διαβάζονται εύκολα. Η Google ερμηνεύει τις μεγαλύτερες επισκέψεις ως σήμα ποιότητας.</li><li><strong>Ποσοστό εγκατάλειψης</strong> — πυκνό, δυσνόητο κείμενο απομακρύνει τους επισκέπτες. Βαθμολογία κάτω από 30 σε γενική σελίδα συχνά συσχετίζεται με υψηλό ποσοστό εγκατάλειψης.</li><li><strong>Προτεινόμενα αποσπάσματα</strong> — η Google επιλέγει σαφείς, συνοπτικές απαντήσεις. Πιο σύντομες προτάσεις και άμεση γλώσσα αυξάνουν την πιθανότητα επιλογής.</li><li><strong>Αναγνωσιμότητα σε κινητά</strong> — σε μικρές οθόνες, οι μακριές προτάσεις και το σύνθετο λεξιλόγιο είναι ακόμα πιο δύσκολα. Βαθμολογία 60+ βελτιώνει την εμπειρία κινητού.</li></ul><p class=\"text-mid mt-3\">Ένας καλός στόχος για περιεχόμενο ιστού είναι βαθμολογία αναγνωσιμότητας μεταξύ 60 και 70 — αρκετά σαφές για τους περισσότερους αναγνώστες, αρκετά λεπτομερές για να μεταδώσει εμπειρία.</p>"
     },
     {
       "type": "gap",
@@ -334,28 +343,28 @@
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 formatting tools",
-          "description": "Letter case conversion, removing spaces, empty lines, duplicates and sorting — without installing additional software."
+          "title": "10 εργαλεία μορφοποίησης",
+          "description": "Μετατροπή πεζών/κεφαλαίων, αφαίρεση κενών, κενών γραμμών, διπλοτύπων και ταξινόμηση — χωρίς εγκατάσταση λογισμικού."
         },
         {
           "icon": "RiUserLine",
-          "title": "Local processing in the browser",
-          "description": "Your text is never sent to any server. All analysis and transformation happens locally on your device."
+          "title": "Τοπική επεξεργασία στο πρόγραμμα περιήγησης",
+          "description": "Το κείμενό σας δεν αποστέλλεται ποτέ σε κανέναν διακομιστή. Όλη η ανάλυση και ο μετασχηματισμός γίνεται τοπικά στη συσκευή σας."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "Copy and clear text",
-          "description": "Copy the modified text to your clipboard with one click or clear the field to start over."
+          "title": "Αντιγραφή και εκκαθάριση κειμένου",
+          "description": "Αντιγράψτε το τροποποιημένο κείμενο στο πρόχειρο με ένα κλικ ή καθαρίστε το πεδίο για νέα αρχή."
         },
         {
           "icon": "RiTimerLine",
-          "title": "Instant results",
-          "description": "Statistics update in real time as you type or paste text. No waiting for processing."
+          "title": "Άμεσα αποτελέσματα",
+          "description": "Τα στατιστικά ενημερώνονται σε πραγματικό χρόνο καθώς πληκτρολογείτε ή επικολλάτε κείμενο. Χωρίς αναμονή."
         },
         {
           "icon": "RiLockLine",
-          "title": "No registration or limits",
-          "description": "The tool is completely free. No registration, login or personal data required."
+          "title": "Χωρίς εγγραφή ή περιορισμούς",
+          "description": "Το εργαλείο είναι πλήρως δωρεάν. Δεν απαιτεί εγγραφή, σύνδεση ή προσωπικά δεδομένα."
         }
       ]
     },
@@ -400,6 +409,18 @@
         {
           "question": "Λειτουργεί για ελληνικό κείμενο;",
           "answer": "Ναι. Το εργαλείο μετρά σωστά λέξεις στα ελληνικά, συμπεριλαμβανομένων τονισμένων χαρακτήρων. Η μέτρηση συλλαβών χρησιμοποιεί ελληνικούς κανόνες (αναγνώριση διφθόγγων)."
+        },
+        {
+          "question": "Ποιο είναι το ιδανικό μήκος για ένα άρθρο SEO στα ελληνικά;",
+          "answer": "Για πληροφοριακά άρθρα: 1.200–2.000 λέξεις. Για σελίδες προϊόντων: 300–500 λέξεις. Η ποιότητα και η συνάφεια είναι πιο σημαντικές από τον αριθμό λέξεων."
+        },
+        {
+          "question": "Ποια βαθμολογία αναγνωσιμότητας πρέπει να στοχεύω για περιεχόμενο ιστού;",
+          "answer": "Για γενικό περιεχόμενο ιστού (blogs, σελίδες υπηρεσιών, περιγραφές προϊόντων) στοχεύστε 60 έως 70. Για εξειδικευμένο κοινό (γιατροί, δικηγόροι, μηχανικοί) το 40–50 είναι αποδεκτό. Για οδηγίες και υποστηρικτικό περιεχόμενο στοχεύστε 70+ για μέγιστη σαφήνεια."
+        },
+        {
+          "question": "Ποια είναι η διαφορά μεταξύ χρόνου ανάγνωσης και χρόνου ομιλίας;",
+          "answer": "Ο χρόνος ανάγνωσης υποθέτει 200 λέξεις/λεπτό — μέση ταχύτητα σιωπηλής ανάγνωσης. Ο χρόνος ομιλίας χρησιμοποιεί 130 λέξεις/λεπτό, τον φυσικό ρυθμό για παρουσιάσεις και podcasts, που περιλαμβάνει παύσεις και αναπνοή. Ένα κείμενο 1.000 λέξεων χρειάζεται περίπου 5 λεπτά για ανάγνωση αλλά 7,5 λεπτά για ομιλία."
         }
       ]
     },
