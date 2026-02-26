@@ -100,7 +100,7 @@
       "type": "sectionBasic",
       "title": "Γιατί να χρησιμοποιήσετε επαγγελματική υπογραφή email;",
       "html": "<p class=\"text-mid\">Η υπογραφή email είναι ένα μικρό τμήμα κειμένου στο τέλος κάθε μηνύματος που στέλνετε. Ονομάζεται επίσης υποσέλιδο email ή μπλοκ υπογραφής. Περιλαμβάνει το όνομά σας, τη θέση σας, την εταιρεία και τα στοιχεία επικοινωνίας. Πολλές υπογραφές περιέχουν επίσης σύνδεσμο προς τον ιστότοπο, ένα ημερολόγιο ραντεβού ή προφίλ κοινωνικών δικτύων.</p><p class=\"text-mid mt-3\">Κατά μέσο όρο, ένας εργαζόμενος γραφείου στέλνει 30 έως 40 email την ημέρα. Κάθε μήνυμα είναι μια ευκαιρία να μοιραστείτε τα στοιχεία επικοινωνίας σας, να ενισχύσετε τη φήμη σας και να διευκολύνετε τον παραλήπτη να επικοινωνήσει μαζί σας. Ένα καλά σχεδιασμένο υποσέλιδο εξοικονομεί χρόνο στον παραλήπτη — δεν χρειάζεται να ψάξει τον αριθμό τηλεφώνου σας σε παλαιότερα μηνύματα.</p><p class=\"text-mid mt-3\">Στην Ελλάδα και στην Κύπρο, ο νόμος απαιτεί τα εμπορικά email να περιέχουν ορισμένα στοιχεία της επιχείρησης. Ο ΑΦΜ, ο αριθμός ΓΕΜΗ και η έδρα είναι μεταξύ των σημαντικότερων. Η υπογραφή email είναι ο απλούστερος τρόπος να τα συμπεριλάβετε.</p>",
-      "imageSrc": "/assets/tools/free-html-email-signature-generator/dorean-dimiourgos-ypografis-email-el.webp",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/dorean-dimiourgia-ypografis-email-el.webp",
       "imageAlt": "Δημιουργός υπογραφής email – Arteon"
     },
     {
@@ -385,7 +385,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε ιδέα για νέα λειτουργία, βρήκατε σφάλμα ή θέλετε να προτείνετε άλλο εργαλείο; Γράψτε μας — απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/free-html-email-signature-generator/dorean-dimiourgos-ypografis-email-el.webp",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/dorean-dimiourgia-ypografis-email-el.webp",
       "imageAlt": "Δημιουργός υπογραφής email – Arteon",
       "defaultSubject": "Σχόλια: Δημιουργός υπογραφής email"
     },

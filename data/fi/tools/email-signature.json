@@ -96,7 +96,7 @@
       "type": "sectionBasic",
       "title": "Miksi käyttää ammattimaista sähköpostin allekirjoitusta?",
       "html": "<p class=\"text-mid\">Sähköpostin allekirjoitus on lyhyt tekstilohko jokaisen lähettämäsi viestin lopussa. Sitä kutsutaan myös sähköpostin alatunnisteeksi tai allekirjoituslohkoksi. Se sisältää nimesi, nimikkeesi, yrityksesi ja yhteystietosi. Monet allekirjoitukset sisältävät myös linkin verkkosivustolle, tapaamisten kalenteriin tai sosiaalisen median profiileihin.</p><p class=\"text-mid mt-3\">Keskimäärin toimistotyöntekijä lähettää 30–40 sähköpostia päivässä. Jokainen viesti on mahdollisuus jakaa yhteystietosi, vahvistaa brändiäsi ja helpottaa vastaanottajan yhteydenottoa. Hyvin suunniteltu alatunniste säästää vastaanottajan aikaa — hänen ei tarvitse etsiä puhelinnumeroasi vanhoista viesteistä.</p><p class=\"text-mid mt-3\">Suomessa laki edellyttää, että liiketoimintasähköpostit sisältävät tiettyjä yritystietoja. Y-tunnus on tärkeimpiä tietoja. Sähköpostin allekirjoitus on yksinkertaisin paikka sisällyttää ne.</p>",
-      "imageSrc": "/assets/tools/free-html-email-signature-generator/ilmainen-sahkopostin-allekirjoitus-generaattori-fi.webp",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/ilmainen-sahkopostiallekirjoitus-generaattori-fi.webp",
       "imageAlt": "Sähköpostin allekirjoitus generaattori – Arteon"
     },
     {
@@ -381,7 +381,7 @@
       "type": "contactForm",
       "title": "Auta meitä parantamaan työkalujamme",
       "description": "Onko sinulla idea uuteen ominaisuuteen, löysitkö virheen tai haluatko ehdottaa toista työkalua? Kirjoita meille — vastaamme 24 tunnin kuluessa.",
-      "imageSrc": "/assets/tools/free-html-email-signature-generator/ilmainen-sahkopostin-allekirjoitus-generaattori-fi.webp",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/ilmainen-sahkopostiallekirjoitus-generaattori-fi.webp",
       "imageAlt": "Sähköpostin allekirjoitus generaattori – Arteon",
       "defaultSubject": "Palaute: Sähköpostin allekirjoitus generaattori"
     },

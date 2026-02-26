@@ -100,7 +100,7 @@
       "type": "sectionBasic",
       "title": "Miért használjon professzionális e-mail aláírást?",
       "html": "<p class=\"text-mid\">Az e-mail aláírás egy rövid szövegblokk minden elküldött üzenet végén. Más néven e-mail lábléc vagy aláírásblokk. Tartalmazza a nevet, a beosztást, a cégnevet és az elérhetőségeket. Sok aláírás tartalmaz linket a weboldalra, találkozó-naptárra vagy közösségimédia-profilokra is.</p><p class=\"text-mid mt-3\">Egy irodai dolgozó átlagosan napi 30-40 e-mailt küld. Mindegyik üzenet lehetőség az elérhetőségek megosztására, a márka erősítésére és a kapcsolatfelvétel megkönnyítésére. Egy jól megtervezett lábléc időt takarít meg a címzettnek — nem kell régi üzenetekben keresgélnie a telefonszámot.</p><p class=\"text-mid mt-3\">Magyarországon az üzleti e-maileknek bizonyos céginformációkat kell tartalmazniuk. A cégjegyzékszám, az adószám és a székhely a legfontosabb adatok. Az e-mail aláírás a legegyszerűbb hely ezek feltüntetésére.</p>",
-      "imageSrc": "/assets/tools/free-html-email-signature-generator/ingyenes-e-mail-alairas-generator-hu.webp",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/ingyenes-email-alairas-generator-hu.webp",
       "imageAlt": "E-mail aláírás generátor – Arteon"
     },
     {
@@ -385,7 +385,7 @@
       "type": "contactForm",
       "title": "Segítsen fejleszteni eszközeinket",
       "description": "Van ötlete új funkcióra, talált hibát, vagy szeretne másik eszközt javasolni? Írjon nekünk — 24 órán belül válaszolunk.",
-      "imageSrc": "/assets/tools/free-html-email-signature-generator/ingyenes-e-mail-alairas-generator-hu.webp",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/ingyenes-email-alairas-generator-hu.webp",
       "imageAlt": "E-mail aláírás generátor – Arteon",
       "defaultSubject": "Visszajelzés: E-mail aláírás generátor"
     },

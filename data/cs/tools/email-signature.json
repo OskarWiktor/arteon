@@ -96,7 +96,7 @@
       "type": "sectionBasic",
       "title": "Proč používat profesionální e-mailový podpis?",
       "html": "<p class=\"text-mid\">E-mailový podpis je krátký textový blok na konci každé zprávy, kterou odešlete. Někdy se mu říká e-mailová patička nebo podpisový blok. Obsahuje vaše jméno, funkci, firmu a kontaktní údaje. Mnoho podpisů zahrnuje i odkaz na web, kalendář schůzek nebo profily na sociálních sítích.</p><p class=\"text-mid mt-3\">Průměrný kancelářský pracovník odešle denně 30 až 40 e-mailů. Každá zpráva je příležitostí sdílet kontaktní údaje, posílit značku a usnadnit příjemci komunikaci. Dobře navržená patička příjemci šetří čas — nemusí hledat telefonní číslo ve starších zprávách.</p><p class=\"text-mid mt-3\">V České republice a na Slovensku navíc zákon vyžaduje, aby obchodní e-maily obsahovaly určité údaje o firmě. IČO, DIČ a sídlo patří mezi nejdůležitější. E-mailový podpis je nejjednodušší místo, kam je uvést.</p>",
-      "imageSrc": "/assets/tools/free-html-email-signature-generator/generator-emailoveho-podpisu-zdarma-cs.webp",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/generator-podpisu-emailu-zdarma-cs.webp",
       "imageAlt": "Generátor e-mailového podpisu – Arteon"
     },
     {
@@ -381,7 +381,7 @@
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad na novou funkci, našli jste chybu nebo chcete navrhnout jiný nástroj? Napište nám — odpovídáme do 24 hodin.",
-      "imageSrc": "/assets/tools/free-html-email-signature-generator/generator-emailoveho-podpisu-zdarma-cs.webp",
+      "imageSrc": "/assets/tools/free-html-email-signature-generator/generator-podpisu-emailu-zdarma-cs.webp",
       "imageAlt": "Generátor e-mailového podpisu – Arteon",
       "defaultSubject": "Zpětná vazba: Generátor e-mailového podpisu"
     },
