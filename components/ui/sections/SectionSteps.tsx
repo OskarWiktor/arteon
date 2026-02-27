@@ -198,7 +198,7 @@ function ExpandableStepsList({ items, gridColsSm, gridColsMd, gridColsLg, showIn
                       alt={topImageAlt ?? ''}
                       fill
                       className="pointer-events-none object-cover select-none"
-                      sizes="(min-width:1024px) 50vw, (min-width:768px) 50vw, 100vw"
+                      sizes="(min-width:1024px) 33vw, (min-width:768px) 50vw, 100vw"
                       aria-hidden={topImageAlt ? undefined : true}
                     />
                   </div>

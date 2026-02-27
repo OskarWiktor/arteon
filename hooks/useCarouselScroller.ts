@@ -1,7 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState } from 'react';
-import type { KeyboardEvent, RefObject } from 'react';
+import { useCallback, useEffect, useRef, useState, type KeyboardEvent, type RefObject } from 'react';
 
 type Params = {
   itemCount: number;
@@ -17,6 +16,7 @@ export function useCarouselScroller({ itemCount, scrollRef, cardRef, autoPlay = 
   const [cardWidth, setCardWidth] = useState(0);
   const [isScrollable, setIsScrollable] = useState(false);
   const [autoPlayActive, setAutoPlayActive] = useState(autoPlay);
+  const [isVisible, setIsVisible] = useState(false);
 
   const currentSlideRef = useRef(0);
 
@@ -109,8 +109,19 @@ export function useCarouselScroller({ itemCount, scrollRef, cardRef, autoPlay = 
     cardWidthRef.current = cardWidth;
   }, [cardWidth]);
 
+  // Pause autoplay when carousel is not visible in viewport
   useEffect(() => {
-    if (!autoPlayActive || !isScrollable) return;
+    if (!autoPlay) return;
+    const el = scrollRef.current;
+    if (!el) return;
+
+    const io = new IntersectionObserver(([entry]) => setIsVisible(entry.isIntersecting), { threshold: 0 });
+    io.observe(el);
+    return () => io.disconnect();
+  }, [autoPlay, scrollRef]);
+
+  useEffect(() => {
+    if (!autoPlayActive || !isScrollable || !isVisible) return;
 
     const id = setInterval(() => {
       const container = scrollRef.current;
@@ -130,7 +141,7 @@ export function useCarouselScroller({ itemCount, scrollRef, cardRef, autoPlay = 
     }, autoPlayIntervalMs);
 
     return () => clearInterval(id);
-  }, [autoPlayActive, autoPlayIntervalMs, isScrollable, scrollRef]);
+  }, [autoPlayActive, autoPlayIntervalMs, isScrollable, isVisible, scrollRef]);
 
   const scrollByCards = (dir: 'left' | 'right') => {
     if (!scrollRef.current || !cardWidth) return;

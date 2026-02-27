@@ -18,11 +18,9 @@ const instrumentSans = Instrument_Sans({
   variable: '--font-sans',
 });
 
-// site scaffold only - no production behavior changes while flag disabled
 const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
 const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
 const METRICOOL_HASH = process.env.METRICOOL_HASH;
-/* AdSense client ID is defined in components/ui/AdSense.tsx */
 
 const ORG_LOGO = toAbsoluteUrl('/icon-512x512.png');
 const metadataBase = new URL(siteUrl);
@@ -100,13 +98,9 @@ const websiteJsonLd = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  /* AdSense script is loaded dynamically by the <AdSense> component itself,
-     so it works correctly with SPA (client-side) navigation. */
-
   return (
     <html lang="pl" className={instrumentSans.variable}>
       <head>
-        {/* Google Consent Mode v2 - inline script, nie blokuje hydracji */}
         <script
           id="google-consent-default"
           dangerouslySetInnerHTML={{
@@ -116,9 +110,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://tpc.googlesyndication.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://googleads.g.doubleclick.net" crossOrigin="anonymous" />
 
-        {/* AdSense — skrypt musi być w HTML źródłowym, wymagany przez Google do weryfikacji i serwowania reklam */}
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845947936813012" crossOrigin="anonymous" />
 
         {METRICOOL_HASH && (
@@ -144,7 +136,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <script id="schema-org-website" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
 
-        {/* dns-prefetch fallback for browsers that don't support preconnect */}
         <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
       </head>

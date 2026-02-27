@@ -60,6 +60,7 @@ export default function TechStack() {
 
   const [isPaused, setIsPaused] = useState(false);
   const [reduceMotion, setReduceMotion] = useState(false);
+  const [isInView, setIsInView] = useState(false);
 
   const { start: startFontMeasure, clear: clearFontMeasure } = useTimeout();
 
@@ -96,8 +97,19 @@ export default function TechStack() {
     };
   }, [measure, startFontMeasure, clearFontMeasure]);
 
+  // Only run rAF loop when section is visible in viewport
   useEffect(() => {
-    if (reduceMotion) return;
+    const el = containerRef.current;
+    if (!el) return;
+    const io = new IntersectionObserver(([entry]) => setIsInView(entry.isIntersecting), { threshold: 0 });
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (reduceMotion || !isInView) return;
+    // Reset timestamp so first frame after re-entering viewport doesn't cause a jump
+    prevTimeRef.current = 0;
 
     const animate = (time: number) => {
       if (prevTimeRef.current) {
@@ -119,7 +131,7 @@ export default function TechStack() {
 
     rafRef.current = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(rafRef.current);
-  }, [reduceMotion]);
+  }, [reduceMotion, isInView]);
 
   return (
     <section className="relative overflow-hidden" aria-labelledby="techstack-heading">

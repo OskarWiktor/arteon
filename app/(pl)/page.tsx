@@ -1,5 +1,5 @@
 import BenefitBelt from '@/components/sections/BenefitBelt';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import LazyArticlesCarousel from '@/components/sections/blog/LazyArticlesCarousel';
 import CTABanner from '@/components/sections/CTABanner';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import HeroBanner from '@/components/sections/HeroBanner';
@@ -7,7 +7,7 @@ import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import TechStack from '@/components/sections/TechStack';
-import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import LazyTestimonialsCarousel from '@/components/sections/LazyTestimonialsCarousel';
 import Button from '@/components/ui/buttons/Button';
 import Gap from '@/components/ui/Gap';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
@@ -18,7 +18,7 @@ import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiF
 import testimonialsPl from '@/data/pl/testimonials.json';
 import type { Testimonial } from '@/types/testimonial';
 import { getAllArticlePreviews } from '@/lib/blogDataService';
-import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
+import LazyToolsCarousel from '@/components/sections/tools/LazyToolsCarousel';
 
 export const metadata = {
   title: 'Strony, sklepy, treści i marketing | Arteon',
@@ -278,11 +278,11 @@ export default function HomePage() {
 
         <Gap variant="line" />
 
-        <ToolsCarousel />
+        <LazyToolsCarousel />
 
         <Gap variant="line" />
 
-        <TestimonialsCarousel />
+        <LazyTestimonialsCarousel />
 
         <Gap variant="line" />
 
@@ -298,7 +298,7 @@ export default function HomePage() {
 
         <Gap variant="line" />
 
-        <ArticlesCarousel title="Nasze artykuły i poradniki" articles={articlePreviews} />
+        <LazyArticlesCarousel title="Nasze artykuły i poradniki" articles={articlePreviews} />
 
         <Gap size="sm" />
       </Wrapper>
