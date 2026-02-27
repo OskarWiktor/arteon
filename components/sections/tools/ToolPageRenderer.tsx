@@ -29,7 +29,8 @@ import { getToolIcon } from '@/lib/tools/icon-registry';
 import { DESKTOP_ONLY_UI } from '@/lib/i18n/locales';
 import ToolContactForm from './ToolContactForm';
 
-const AD_SECTION_INTERVAL = 3;
+const AD_SECTION_INTERVAL = 4;
+const AD_SKIP_AFTER = new Set(['faq', 'toolsCarousel']);
 
 const DESKTOP_ONLY_TOOLS = new Set(['jpgToWebp', 'imageResize', 'favicon', 'emailSignature']);
 
@@ -232,7 +233,7 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
             data.contentBlocks.forEach((block, idx) => {
               if (block.type !== 'gap') {
                 contentCount++;
-                if (contentCount % AD_SECTION_INTERVAL === 0) {
+                if (contentCount % AD_SECTION_INTERVAL === 0 && !AD_SKIP_AFTER.has(block.type)) {
                   adPositions.add(idx);
                 }
               }
@@ -244,7 +245,8 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
                 return (
                   <Fragment key={`block-ad-${idx}`}>
                     {node}
-                    <div className="not-prose mt-8 flex justify-center">
+                    <Gap />
+                    <div className="not-prose flex justify-center">
                       <AdSense variant="responsive" />
                     </div>
                   </Fragment>
