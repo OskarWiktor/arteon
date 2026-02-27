@@ -115,7 +115,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
 
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+
+        {/* AdSense — skrypt musi być w HTML źródłowym, wymagany przez Google do weryfikacji i serwowania reklam */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845947936813012" crossOrigin="anonymous" />
 
         {METRICOOL_HASH && (
           <Script id="metricool-tracker" strategy="lazyOnload">

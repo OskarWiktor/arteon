@@ -91,7 +91,7 @@ export default function CTABanner({
   return (
     <section className={`relative flex h-auto min-h-[360px] overflow-hidden md:min-h-[440px] ${baseBg}`} data-section="final-cta">
       {hasBg && !isGradient && !isSolid && backgroundImage && (
-        <Image src={backgroundImage} alt={typeof title === 'string' ? title : 'CTA background'} fill sizes="100vw" className="object-cover object-center" />
+        <Image src={backgroundImage} alt={typeof title === 'string' ? title : 'CTA background'} fill sizes="100vw" className="object-cover object-center" unoptimized />
       )}
       {hasBg && !isGradient && !isSolid && overlay !== 'none' && <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
 

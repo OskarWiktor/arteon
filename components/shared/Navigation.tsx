@@ -49,7 +49,7 @@ export default function Navigation() {
   }, []);
 
   return (
-    <header id="navigation" className="sticky top-0 z-50 w-full bg-white/95 shadow-xl backdrop-blur-sm">
+    <header id="navigation" className="sticky top-0 z-50 w-full bg-white shadow-md">
       <SectionInfoBanner
         items={[
           {
