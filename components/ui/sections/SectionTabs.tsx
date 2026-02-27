@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, type ReactNode } from 'react';
+import { useId, useState, type ReactNode } from 'react';
 
 interface Tab {
   title: string;
@@ -15,11 +15,13 @@ interface SectionTabsProps {
 
 export default function SectionTabs({ title, tabs }: SectionTabsProps) {
   const [activeTab, setActiveTab] = useState(0);
+  const autoId = useId();
+  const headingId = `tabs-title-${autoId}`;
 
   return (
-    <section data-section="tabs" aria-labelledby={title ? 'tabs-title' : undefined}>
+    <section data-section="tabs" aria-labelledby={title ? headingId : undefined}>
       {title && (
-        <h2 id="tabs-title" className="h3 mb-4 md:mb-6 lg:mb-8">
+        <h2 id={headingId} className="h3 mb-4 md:mb-6 lg:mb-8">
           {title}
         </h2>
       )}
@@ -32,8 +34,8 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
               type="button"
               role="tab"
               aria-selected={activeTab === index}
-              aria-controls={`tabpanel-${index}`}
-              id={`tab-${index}`}
+              aria-controls={`tabpanel-${autoId}-${index}`}
+              id={`tab-${autoId}-${index}`}
               onClick={() => setActiveTab(index)}
               className={`flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-medium transition ${
                 activeTab === index ? 'text-primary bg-white shadow-sm' : 'text-primary-mid hover:text-primary'
@@ -45,7 +47,7 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
           ))}
         </div>
 
-        <div id={`tabpanel-${activeTab}`} role="tabpanel" aria-labelledby={`tab-${activeTab}`} className="rounded-2xl border border-black/10 bg-white p-6">
+        <div id={`tabpanel-${autoId}-${activeTab}`} role="tabpanel" aria-labelledby={`tab-${autoId}-${activeTab}`} className="rounded-2xl border border-black/10 bg-white p-6">
           <h3 className="h5 mb-3 flex items-center gap-2">
             {tabs[activeTab].icon}
             {tabs[activeTab].title}

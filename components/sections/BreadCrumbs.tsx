@@ -32,15 +32,17 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
   return (
     <Wrapper>
       <nav aria-label={t.ariaLabel} className={`${size === 'compact' ? 'flex items-center justify-center py-3' : 'py-6'} ${className}`}>
-        <nav className="flex flex-wrap items-center gap-2 text-sm">
-          <AppLink href="/" variant="default" display="inline" aria-label={t.home} className="shrink-0">
-            <RiHomeLine className="text-medium text-primary-mid h-4 w-4" />
-          </AppLink>
+        <ol className="flex flex-wrap items-center gap-2 text-sm">
+          <li>
+            <AppLink href="/" variant="default" display="inline" aria-label={t.home} className="shrink-0">
+              <RiHomeLine className="text-medium text-primary-mid h-4 w-4" />
+            </AppLink>
+          </li>
           {items.slice(1).map((it, idx) => {
             const isLast = idx === items.slice(1).length - 1;
             return (
-              <span key={`${it.href}-${idx}`} className="!text-medium text-primary-mid flex items-center gap-2">
-                /
+              <li key={`${it.href}-${idx}`} className="!text-medium text-primary-mid flex items-center gap-2">
+                <span aria-hidden="true">/</span>
                 {isLast ? (
                   <span className="text-medium text-primary" aria-current="page">
                     {it.label}
@@ -50,10 +52,10 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
                     {it.label}
                   </AppLink>
                 )}
-              </span>
+              </li>
             );
           })}
-        </nav>
+        </ol>
 
         {includeJsonLd && jsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />}
       </nav>

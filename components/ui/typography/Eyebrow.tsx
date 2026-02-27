@@ -21,8 +21,8 @@ export default function Eyebrow({ children, variant = 'default', className = '',
   const classes = variant === 'dynamic' ? className : `${variantClasses[variant]} ${className}`;
 
   return (
-    <span id={id} className={classes}>
+    <p id={id} className={classes}>
       {children}
-    </span>
+    </p>
   );
 }

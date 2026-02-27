@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { useId, type ReactNode } from 'react';
 import Image from 'next/image';
 import SectionHeader from '../typography/SectionHeader';
 import ButtonGroup from '../buttons/ButtonGroup';
@@ -21,8 +21,11 @@ interface SectionBasicProps {
 }
 
 export default function SectionBasic({ id, title, subtitle, description, imageSrc, imageAlt, variant = 'right', children, btnOne, btnOneLink, btnTwo, btnTwoLink }: SectionBasicProps) {
+  const autoId = useId();
+  const headingId = id || `section-basic-${autoId}`;
+
   return (
-    <section id={id} className="w-full">
+    <section id={id} aria-labelledby={headingId} className="w-full">
       <div className="flex flex-col md:gap-4 lg:flex-row lg:gap-8">
         <div className={`flex w-full lg:w-1/2 ${variant === 'left' ? 'lg:order-2' : ''}`}>
           <div className="relative h-full min-h-[420px] w-full">
@@ -32,7 +35,7 @@ export default function SectionBasic({ id, title, subtitle, description, imageSr
 
         <div className={`flex w-full lg:w-1/2 ${variant === 'left' ? 'lg:order-1' : ''}`}>
           <div className={`flex h-full flex-col justify-center py-6 md:py-8 lg:py-8 ${variant === 'right' ? 'lg:pl-6' : 'lg:pr-6'}`}>
-            <SectionHeader subtitle={subtitle} title={title} description={description} headingLevel="h2" headingClassName="" descriptionClassName="" />
+            <SectionHeader subtitle={subtitle} title={title} description={description} headingLevel="h2" headingClassName="" descriptionClassName="" titleId={headingId} />
 
             {children && <div className="text-balance">{children}</div>}
 

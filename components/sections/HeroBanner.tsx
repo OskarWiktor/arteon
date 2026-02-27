@@ -94,79 +94,77 @@ export default function HeroBanner({
   const computedBackgroundAlt = backgroundImageAlt || (typeof title === 'string' ? title : undefined) || (backgroundImage ? getFallbackAltFromImagePath(backgroundImage) : undefined) || '';
 
   return (
-    <div className={baseBg}>
-      <section
-        id="hero"
-        aria-labelledby="hero-title"
-        aria-describedby={description ? 'hero-description' : undefined}
-        className={
-          isTools
-            ? `relative ${baseBg} flex h-auto items-center overflow-hidden pt-4 pb-2 md:pt-7`
-            : `relative ${baseBg} flex h-auto min-h-[400px] items-center overflow-hidden py-10 md:min-h-[440px] md:py-0 lg:min-h-[460px]`
-        }
-      >
-        {hasBg && backgroundImage && (
-          <Image
-            src={backgroundImage}
-            alt={computedBackgroundAlt}
-            fill
-            priority
-            fetchPriority="high"
-            sizes="100vw"
-            className="object-cover object-center"
-            itemProp={emitImageMicrodata ? 'image' : undefined}
-            unoptimized
-          />
-        )}
-        {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
-        <Wrapper className="relative flex h-auto items-center">
-          <div
-            className={`max-w-[100vw] ${isTools ? 'text-center md:w-[100%]' : 'md:max-w-[65%]'} ${contentAnchor} ${textAlign} ${toneTextClass} ${isTools ? '' : 'rounded-2xl p-5 pt-4 md:p-7'} ${contentBgClass} hyphens-auto`}
-          >
-            {subtitle && (
-              <Eyebrow variant="hero" className={` ${toneMutedClass}`}>
-                {subtitle}
-              </Eyebrow>
-            )}
-            {topButtons.length > 0 && (
-              <nav aria-label="Szybkie linki" className="mt-4">
-                <ul className={`max-w-[92vw] ${justify} flex flex-wrap gap-2 md:gap-3`}>
-                  {topButtons.map(({ text, link }, i) => (
-                    <li key={i}>
-                      <Button size="small" link={link}>
-                        {text as ReactNode}
-                      </Button>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-            )}
-            {title && (
-              <h1 id="hero-title" className={`text-wrap:pretty text-wrap ${isTools ? 'h4 text-center' : ''}`}>
-                {title}
-              </h1>
-            )}
-            {description && (
-              <p id="hero-description" className={`text-wrap:pretty ${isTools ? 'mt-2 text-center md:mt-3' : 'mt-3 md:mt-5'} text-base leading-relaxed ${isDarkOverlay ? 'text-white' : 'text-mid'}`}>
-                {description}
-              </p>
-            )}
-            {(buttonAccent || buttonSecond) && (
-              <ButtonGroup
-                btnOne={buttonAccent}
-                btnOneLink={buttonAccentLink}
-                btnOneVariant="accent"
-                btnTwo={buttonSecond}
-                btnTwoLink={buttonSecondLink}
-                btnTwoVariant="accent"
-                spacing="loose"
-                align={variant === 'center' ? 'center' : variant === 'right' ? 'right' : 'left'}
-                className="mt-7 md:mt-8"
-              />
-            )}
-          </div>
-        </Wrapper>
-      </section>
-    </div>
+    <section
+      id="hero"
+      aria-labelledby="hero-title"
+      aria-describedby={description ? 'hero-description' : undefined}
+      className={
+        isTools
+          ? `relative ${baseBg} flex h-auto items-center overflow-hidden pt-4 pb-2 md:pt-7`
+          : `relative ${baseBg} flex h-auto min-h-[400px] items-center overflow-hidden py-10 md:min-h-[440px] md:py-0 lg:min-h-[460px]`
+      }
+    >
+      {hasBg && backgroundImage && (
+        <Image
+          src={backgroundImage}
+          alt={computedBackgroundAlt}
+          fill
+          priority
+          fetchPriority="high"
+          sizes="100vw"
+          className="object-cover object-center"
+          itemProp={emitImageMicrodata ? 'image' : undefined}
+          unoptimized
+        />
+      )}
+      {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
+      <Wrapper className="relative flex h-auto items-center">
+        <div
+          className={`max-w-[100vw] ${isTools ? 'text-center md:w-[100%]' : 'md:max-w-[65%]'} ${contentAnchor} ${textAlign} ${toneTextClass} ${isTools ? '' : 'rounded-2xl p-5 pt-4 md:p-7'} ${contentBgClass} hyphens-auto`}
+        >
+          {subtitle && (
+            <Eyebrow variant="hero" className={` ${toneMutedClass}`}>
+              {subtitle}
+            </Eyebrow>
+          )}
+          {topButtons.length > 0 && (
+            <nav aria-label="Szybkie linki" className="mt-4">
+              <ul className={`max-w-[92vw] ${justify} flex flex-wrap gap-2 md:gap-3`}>
+                {topButtons.map(({ text, link }, i) => (
+                  <li key={i}>
+                    <Button size="small" link={link}>
+                      {text as ReactNode}
+                    </Button>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
+          {title && (
+            <h1 id="hero-title" className={`text-wrap:pretty text-wrap ${isTools ? 'h4 text-center' : ''}`}>
+              {title}
+            </h1>
+          )}
+          {description && (
+            <p id="hero-description" className={`text-wrap:pretty ${isTools ? 'mt-2 text-center md:mt-3' : 'mt-3 md:mt-5'} text-base leading-relaxed ${isDarkOverlay ? 'text-white' : 'text-mid'}`}>
+              {description}
+            </p>
+          )}
+          {(buttonAccent || buttonSecond) && (
+            <ButtonGroup
+              btnOne={buttonAccent}
+              btnOneLink={buttonAccentLink}
+              btnOneVariant="accent"
+              btnTwo={buttonSecond}
+              btnTwoLink={buttonSecondLink}
+              btnTwoVariant="accent"
+              spacing="loose"
+              align={variant === 'center' ? 'center' : variant === 'right' ? 'right' : 'left'}
+              className="mt-7 md:mt-8"
+            />
+          )}
+        </div>
+      </Wrapper>
+    </section>
   );
 }

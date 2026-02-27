@@ -245,7 +245,7 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
                 return (
                   <Fragment key={`block-ad-${idx}`}>
                     {node}
-                    <Gap />
+                    <Gap variant="line" />
                     <div className="not-prose flex justify-center">
                       <AdSense variant="responsive" />
                     </div>

@@ -265,9 +265,13 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
 
         if (b.type === 'ad') {
           return (
-            <div key={`grp-ad-${i}`} className="not-prose my-8 flex justify-center">
-              <AdSense variant="responsive" />
-            </div>
+            <>
+              {' '}
+              <Gap size={GAP} variant="line" />{' '}
+              <div key={`grp-ad-${i}`} className="not-prose my-8 flex justify-center">
+                <AdSense variant="responsive" />
+              </div>
+            </>
           );
         }
 
@@ -352,8 +356,16 @@ export default function ArticlePage({ params }: { params: { category: string; sl
             </h1>
             <div className="text-light mt-5 flex flex-wrap items-center gap-2 text-sm md:gap-4">
               {article.author?.name ? <Badge text={article.author.name} /> : null}
-              {article.datePublished ? <Badge text={`Publikacja: ${article.datePublished}`} /> : null}
-              {article.dateModified && article.dateModified !== article.datePublished ? <Badge text={`Aktualizacja: ${article.dateModified}`} /> : null}
+              {article.datePublished ? (
+                <Badge>
+                  Publikacja: <time dateTime={article.datePublished}>{article.datePublished}</time>
+                </Badge>
+              ) : null}
+              {article.dateModified && article.dateModified !== article.datePublished ? (
+                <Badge>
+                  Aktualizacja: <time dateTime={article.dateModified}>{article.dateModified}</time>
+                </Badge>
+              ) : null}
               {article.readingTime ? <Badge text={`${article.readingTime} min czytania`} /> : null}
             </div>
           </header>

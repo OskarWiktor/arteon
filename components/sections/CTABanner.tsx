@@ -51,7 +51,7 @@ export default function CTABanner({
           <div className="grid gap-6 md:grid-cols-2">
             <div className="bg-primary flex flex-col justify-between rounded-2xl p-8 text-white">
               <div>
-                <h3 className="h3 mb-3">{leftColumn?.title}</h3>
+                <h2 className="h3 mb-3">{leftColumn?.title}</h2>
                 {leftColumn?.description && <p className="mb-6 text-white/80">{leftColumn.description}</p>}
               </div>
               {leftColumn?.btnLabel && leftColumn?.btnLink && (
@@ -63,7 +63,7 @@ export default function CTABanner({
             </div>
             <div className="flex flex-col justify-between rounded-2xl border border-black/10 bg-white p-8">
               <div>
-                <h3 className="h3 mb-3">{rightColumn?.title}</h3>
+                <h2 className="h3 mb-3">{rightColumn?.title}</h2>
                 {rightColumn?.description && <p className="text-light mb-6">{rightColumn.description}</p>}
               </div>
               {rightColumn?.btnLabel && rightColumn?.btnLink && (
@@ -103,7 +103,7 @@ export default function CTABanner({
             subtitle={subtitle}
             title={title}
             description={description}
-            headingLevel="h3"
+            headingLevel="h2"
             eyebrowVariant="dynamic"
             eyebrowClassName={`text-base tracking-wider uppercase ${overlay === 'black' ? 'text-white' : 'text-dark'}`}
             headingClassName=""

@@ -36,6 +36,7 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const btnRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const scriptId = useId();
+  const headingId = `faq-heading-${scriptId}`;
 
   useEffect(() => {
     if (openByDefault > 0 && items.length > 0) {
@@ -99,14 +100,14 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
   const containerClass = variant === 'halfWidth' ? 'mx-auto max-w-2xl' : '';
 
   return (
-    <section aria-labelledby="faq-heading">
-      <SectionHeader subtitle={subtitle} title={title} headingLevel="h2" headingClassName=" h4" titleId="faq-heading" />
+    <section aria-labelledby={headingId}>
+      <SectionHeader subtitle={subtitle} title={title} headingLevel="h2" headingClassName=" h4" titleId={headingId} />
 
       <div className={containerClass}>
         {items.map((item, index) => {
           const isOpen = activeIndex === index;
-          const buttonId = `faq-q-${index}`;
-          const panelId = `faq-a-${index}`;
+          const buttonId = `faq-q-${scriptId}-${index}`;
+          const panelId = `faq-a-${scriptId}-${index}`;
 
           return (
             <div

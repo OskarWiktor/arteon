@@ -183,9 +183,9 @@ export default function Footer() {
 
           <div className="text-light mt-8 border-t border-neutral-200 pt-4">
             <div className="flex flex-col items-center justify-between gap-2 md:flex-row md:items-start">
-              <span className="text-center text-sm md:text-left">
+              <small className="text-center text-sm md:text-left">
                 &copy; <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. {ft.copyright}
-              </span>
+              </small>
               <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="mr-3 cursor-pointer text-sm font-normal">
                 #MadeWithNext.js
               </a>
@@ -370,9 +370,9 @@ export default function Footer() {
 
           <div className="text-light mt-8 border-t border-neutral-200 pt-4">
             <div className="flex flex-col items-center justify-between gap-2 md:flex-row md:items-start">
-              <span className="text-center text-sm md:text-left">
+              <small className="text-center text-sm md:text-left">
                 &copy; <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. Wszelkie prawa zastrzeżone.
-              </span>
+              </small>
               <span className="text-sm">Realizujemy projekty dla polskich firm na całym świecie - z siedzibą w Małopolsce, w okolicach Krakowa.</span>
               <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="mr-3 cursor-pointer text-sm font-normal">
                 #MadeWithNext.js

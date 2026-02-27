@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, type ElementType, type JSX, type ReactNode } from 'react';
+import { useId, useState, type ElementType, type JSX, type ReactNode } from 'react';
 import Image from 'next/image';
 import { RiArrowDownSLine } from 'react-icons/ri';
 import Wrapper from '../Wrapper';
@@ -58,6 +58,8 @@ export default function SectionSteps({
   showIndex = false,
   variant = 'default',
 }: SectionStepsProps) {
+  const autoId = useId();
+  const titleId = `steps-title-${autoId}`;
   const hasBg = Boolean(backgroundImage);
   const isDark = overlay === 'black';
   const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/70' : '';
@@ -109,15 +111,15 @@ export default function SectionSteps({
       className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${bgPadY}`}
       style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined}
       data-section="steps"
-      aria-labelledby={title ? 'steps-title' : undefined}
+      aria-labelledby={title ? titleId : undefined}
     >
-      {hasBg && overlay !== 'none' && <div aria-hidden={true} className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
+      {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
 
       <Tag className="relative z-10">
         {subtitle && <span className={`mb-2 block text-base tracking-wider uppercase md:mb-4 ${hasBg ? 'text-white' : 'text-light'}`}>{subtitle}</span>}
 
         {title && (
-          <SectionHeadingTag id="steps-title" className={`${toneTextClass} h3 mb-4 md:mb-6 lg:mb-8`}>
+          <SectionHeadingTag id={titleId} className={`${toneTextClass} h3 mb-4 md:mb-6 lg:mb-8`}>
             {title}
           </SectionHeadingTag>
         )}

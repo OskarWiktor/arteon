@@ -51,7 +51,7 @@ const techStackItems: TechStackItem[] = [
 export default function TechStack() {
   const baseVelocity = 30;
   const containerRef = useRef<HTMLDivElement>(null);
-  const trackRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLUListElement>(null);
   const xRef = useRef(0);
   const loopWidthRef = useRef(0);
   const isPausedRef = useRef(false);
@@ -139,13 +139,15 @@ export default function TechStack() {
         onTouchStart={() => setIsPaused(true)}
         onTouchEnd={() => setIsPaused(false)}
       >
-        <div ref={trackRef} style={{ willChange: 'transform' }} className="flex gap-6 whitespace-nowrap md:gap-10 lg:gap-14">
+        <ul ref={trackRef} style={{ willChange: 'transform' }} className="flex gap-6 whitespace-nowrap md:gap-10 lg:gap-14">
           {[...techStackItems, ...techStackItems].map(({ label, icon: Icon }, index) => (
-            <IconText key={`${label}-${index}`} icon={<Icon className="text-primary h-auto w-6" aria-hidden="true" />} gap="2" className="shrink-0">
-              <span className="text-primary text-2xl">{label}</span>
-            </IconText>
+            <li key={`${label}-${index}`} className="shrink-0">
+              <IconText icon={<Icon className="text-primary h-auto w-6" aria-hidden="true" />} gap="2">
+                <span className="text-primary text-2xl">{label}</span>
+              </IconText>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );

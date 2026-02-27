@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { useId, type ReactNode } from 'react';
 import SectionHeader from '../typography/SectionHeader';
 import ButtonGroup from '../buttons/ButtonGroup';
 
@@ -20,9 +20,12 @@ interface SectionTimelineProps {
 }
 
 export default function SectionTimeline({ title, subtitle, description, items, btnOne, btnOneLink, btnTwo, btnTwoLink }: SectionTimelineProps) {
+  const autoId = useId();
+  const headingId = `timeline-title-${autoId}`;
+
   return (
-    <section data-section="timeline" aria-labelledby={title ? 'timeline-title' : undefined}>
-      <SectionHeader subtitle={subtitle} title={title} description={description} headingLevel="h2" titleId="timeline-title" headingClassName="" descriptionClassName="" />
+    <section data-section="timeline" aria-labelledby={title ? headingId : undefined}>
+      <SectionHeader subtitle={subtitle} title={title} description={description} headingLevel="h2" titleId={headingId} headingClassName="" descriptionClassName="" />
 
       <div className="relative">
         <div className="bg-primary-light absolute top-0 left-6 hidden h-full w-0.5 md:left-1/2 md:block md:-translate-x-1/2" aria-hidden="true" />

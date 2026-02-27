@@ -1,3 +1,4 @@
+import { useId } from 'react';
 import { RiCheckLine, RiCloseLine } from 'react-icons/ri';
 
 interface Plan {
@@ -18,21 +19,27 @@ interface SectionFeatureComparisonProps {
 }
 
 export default function SectionFeatureComparison({ title, plans, features }: SectionFeatureComparisonProps) {
+  const autoId = useId();
+  const headingId = `comparison-title-${autoId}`;
+
   return (
-    <section data-section="feature-comparison" aria-labelledby={title ? 'comparison-title' : undefined}>
+    <section data-section="feature-comparison" aria-labelledby={title ? headingId : undefined}>
       {title && (
-        <h2 id="comparison-title" className="h3 mb-4 text-center md:mb-6 lg:mb-8">
+        <h2 id={headingId} className="h3 mb-4 text-center md:mb-6 lg:mb-8">
           {title}
         </h2>
       )}
 
       <div className="hidden md:block">
         <table className="w-full border-collapse">
+          {title && <caption className="sr-only">{title}</caption>}
           <thead>
             <tr className="border-b border-black/10">
-              <th className="text-light w-1/4 p-4 text-left text-sm font-medium">Funkcja</th>
+              <th scope="col" className="text-light w-1/4 p-4 text-left text-sm font-medium">
+                Funkcja
+              </th>
               {plans.map((plan) => (
-                <th key={plan.id} className={`w-1/4 p-4 text-center text-sm font-medium ${plan.highlighted ? 'bg-primary-light rounded-t-2xl' : ''}`}>
+                <th scope="col" key={plan.id} className={`w-1/4 p-4 text-center text-sm font-medium ${plan.highlighted ? 'bg-primary-light rounded-t-2xl' : ''}`}>
                   {plan.name}
                 </th>
               ))}
@@ -41,7 +48,9 @@ export default function SectionFeatureComparison({ title, plans, features }: Sec
           <tbody>
             {features.map((feature, index) => (
               <tr key={index} className="border-b border-black/5">
-                <td className="p-4 text-sm">{feature.name}</td>
+                <th scope="row" className="p-4 text-left text-sm font-normal">
+                  {feature.name}
+                </th>
                 {plans.map((plan) => (
                   <td key={plan.id} className={`p-4 text-center ${plan.highlighted ? 'bg-neutral-50' : ''}`}>
                     {feature.values[plan.id] ? <RiCheckLine className="text-success-icon mx-auto h-5 w-5" /> : <RiCloseLine className="text-primary-light mx-auto h-5 w-5" />}
