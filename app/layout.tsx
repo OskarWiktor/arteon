@@ -5,16 +5,9 @@ import { Instrument_Sans } from 'next/font/google';
 import Script from 'next/script';
 import { Suspense } from 'react';
 
-import { headers } from 'next/headers';
-
-import LazyCookieConsent from '@/components/shared/LazyCookieConsent';
-import SkipToContent from '@/components/shared/SkipToContent';
 import FocusManager from '@/components/systems/FocusManager';
 import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
-import { getDictionary } from '@/lib/i18n/get-dictionary';
-import { SUPPORTED_LOCALES } from '@/lib/i18n/locale-config';
-import type { Locale } from '@/types/locale';
 
 import './globals.css';
 
@@ -106,17 +99,12 @@ const websiteJsonLd = {
   },
 };
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const headersList = await headers();
-  const pathname = headersList.get('x-pathname') ?? '';
-  const lang: Locale = SUPPORTED_LOCALES.find((l) => l !== 'pl' && pathname.startsWith(`/${l}`)) ?? 'pl';
-  const dict = await getDictionary(lang);
-
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   /* AdSense script is loaded dynamically by the <AdSense> component itself,
      so it works correctly with SPA (client-side) navigation. */
 
   return (
-    <html lang={lang} className={instrumentSans.variable}>
+    <html lang="pl" className={instrumentSans.variable}>
       <head>
         {/* Google Consent Mode v2 - inline script, nie blokuje hydracji */}
         <script
@@ -158,9 +146,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       </head>
 
       <body className="font-sans antialiased">
-        <LazyCookieConsent translations={dict.cookie} />
-        <SkipToContent label={dict.skipToContent} />
-
         <Suspense fallback={null}>
           <FocusManager />
           <RouteAnnouncer />
@@ -169,7 +154,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         {children}
 
         <Analytics />
-        <SpeedInsights />
+        <SpeedInsights sampleRate={0.1} />
       </body>
     </html>
   );

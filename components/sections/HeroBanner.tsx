@@ -106,7 +106,7 @@ export default function HeroBanner({
         }
       >
         {hasBg && backgroundImage && (
-          <Image src={backgroundImage} alt={computedBackgroundAlt} fill priority sizes="100vw" className="object-cover object-center" itemProp={emitImageMicrodata ? 'image' : undefined} />
+          <Image src={backgroundImage} alt={computedBackgroundAlt} fill priority sizes="100vw" className="object-cover object-center" itemProp={emitImageMicrodata ? 'image' : undefined} unoptimized />
         )}
         {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
         <Wrapper className="relative flex h-auto items-center">
