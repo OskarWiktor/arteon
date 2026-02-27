@@ -208,7 +208,12 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
       <Breadcrumbs second={data.breadcrumbs.second} third={data.breadcrumbs.third} includeJsonLd size="compact" locale={data.locale} />
 
       <ToolEditorLayout>
-        <AdSense variant="tool-banner" className="my-3" />
+        <div className="hidden lg:block">
+          <AdSense variant="tool-banner" className="my-3" />
+        </div>
+        <div className="block lg:hidden">
+          <AdSense variant="responsive" className="my-3" />
+        </div>
         {isDesktopOnly ? (
           <>
             <div className="hidden lg:block">{tool ?? <DynamicToolRenderer toolKey={data.toolKey} />}</div>
@@ -240,7 +245,7 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
                   <Fragment key={`block-ad-${idx}`}>
                     {node}
                     <div className="not-prose mt-8 flex justify-center">
-                      <AdSense variant="tool-banner" />
+                      <AdSense variant="responsive" />
                     </div>
                   </Fragment>
                 );

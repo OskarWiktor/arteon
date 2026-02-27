@@ -64,7 +64,7 @@ export type SectionPricesProps = {
 // AdSense
 // ---------------------------------------------------------------------------
 
-export type AdVariant = 'tool-banner' | 'in-article' | 'in-article-new' | 'autorelaxed' | 'vertical';
+export type AdVariant = 'tool-banner' | 'responsive' | 'in-article' | 'in-article-new' | 'autorelaxed' | 'vertical';
 
 export interface AdSenseProps {
   variant: AdVariant;

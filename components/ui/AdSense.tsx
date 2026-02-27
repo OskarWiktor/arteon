@@ -9,6 +9,7 @@ const AD_SCRIPT_SRC = `https://pagead2.googlesyndication.com/pagead/js/adsbygoog
 
 const PRESETS = {
   'tool-banner': { slot: '7551147298' },
+  responsive: { slot: '1433221613' },
   'in-article': { slot: '8632270964' },
   'in-article-new': { slot: '8632270964' },
   autorelaxed: { slot: '4600483034' },
@@ -97,7 +98,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
     const tryRender = () => {
       if (pushed.current) return true;
 
-      if (variant !== 'tool-banner' && container.getBoundingClientRect().width === 0) {
+      if (variant !== 'tool-banner' && variant !== 'responsive' && container.getBoundingClientRect().width === 0) {
         return false;
       }
 
@@ -110,6 +111,10 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
         ins.style.display = 'inline-block';
         ins.style.width = '728px';
         ins.style.height = '90px';
+      } else if (variant === 'responsive') {
+        ins.style.display = 'block';
+        ins.setAttribute('data-ad-format', 'auto');
+        ins.setAttribute('data-full-width-responsive', 'true');
       } else if (isInArticleVariant) {
         ins.style.display = 'block';
         ins.style.textAlign = 'center';
@@ -163,6 +168,10 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
 
   if (variant === 'tool-banner') {
     return <div ref={containerRef} className={`flex min-h-[90px] items-center justify-center ${className}`} />;
+  }
+
+  if (variant === 'responsive') {
+    return <div ref={containerRef} className={`min-h-[100px] w-full ${className}`} />;
   }
 
   if (variant === 'vertical') {
