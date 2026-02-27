@@ -27,5 +27,6 @@
   "removeEmptyLines": "Leerzeilen entfernen",
   "removeDuplicateLines": "Duplikate entfernen",
   "sortAsc": "Sortieren A→Z",
-  "sortDesc": "Sortieren Z→A"
+  "sortDesc": "Sortieren Z→A",
+  "readabilityHint": "Für Webinhalte auf Deutsch 50–70 anstreben."
 }

@@ -82,6 +82,7 @@ export default function WordCountTool() {
                 )
               }
             />
+            {t.readabilityHint && metrics.fleschScore !== null && <p className="text-xs text-neutral-400">{t.readabilityHint}</p>}
           </div>
 
           <div className="flex gap-2">

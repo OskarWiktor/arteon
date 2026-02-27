@@ -12,6 +12,7 @@
   "speakingTime": "Speaking time",
   "syllables": "Syllables",
   "readability": "Readability (Flesch)",
+  "readabilityHint": "For web content in English, aim for 60–70.",
   "copyText": "Copy text",
   "copied": "Copied",
   "clearText": "Clear",

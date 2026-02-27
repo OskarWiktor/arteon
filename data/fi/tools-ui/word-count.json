@@ -27,5 +27,6 @@
   "removeEmptyLines": "Poista tyhjät rivit",
   "removeDuplicateLines": "Poista kaksoiskappaleet",
   "sortAsc": "Lajittele A→Ö",
-  "sortDesc": "Lajittele Ö→A"
+  "sortDesc": "Lajittele Ö→A",
+  "readabilityHint": "Verkkosisällölle suomeksi tavoittele 50–70."
 }

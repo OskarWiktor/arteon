@@ -27,5 +27,6 @@
   "removeEmptyLines": "Üres sorok eltávolítása",
   "removeDuplicateLines": "Ismétlődő sorok eltávolítása",
   "sortAsc": "Rendezés A→Z",
-  "sortDesc": "Rendezés Z→A"
+  "sortDesc": "Rendezés Z→A",
+  "readabilityHint": "Webes tartalmakhoz magyarul célozz 50–70-re."
 }

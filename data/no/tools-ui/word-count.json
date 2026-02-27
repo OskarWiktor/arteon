@@ -27,5 +27,6 @@
   "removeEmptyLines": "Fjern tomme linjer",
   "removeDuplicateLines": "Fjern duplikater",
   "sortAsc": "Sorter A→Z",
-  "sortDesc": "Sorter Z→A"
+  "sortDesc": "Sorter Z→A",
+  "readabilityHint": "For nettinnhold på norsk, sikt mot 50–70."
 }

@@ -27,5 +27,6 @@
   "removeEmptyLines": "Supprimer les lignes vides",
   "removeDuplicateLines": "Supprimer les doublons",
   "sortAsc": "Trier A→Z",
-  "sortDesc": "Trier Z→A"
+  "sortDesc": "Trier Z→A",
+  "readabilityHint": "Pour du contenu web en français, visez 60–70."
 }

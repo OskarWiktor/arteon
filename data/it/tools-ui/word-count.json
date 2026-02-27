@@ -27,5 +27,6 @@
   "removeEmptyLines": "Rimuovi righe vuote",
   "removeDuplicateLines": "Rimuovi righe duplicate",
   "sortAsc": "Ordina A→Z",
-  "sortDesc": "Ordina Z→A"
+  "sortDesc": "Ordina Z→A",
+  "readabilityHint": "Per contenuti web in italiano, punta a 60–70."
 }

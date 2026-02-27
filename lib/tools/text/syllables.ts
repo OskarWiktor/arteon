@@ -33,7 +33,7 @@ export function countSyllablesInWord(word: string, locale: Locale = 'en'): numbe
     case 'da':
     case 'no':
     case 'fi':
-      return countSyllablesNordic(w);
+      return countSyllablesNordic(w, locale);
     case 'hu':
       return countSyllablesHU(w);
     case 'el':
@@ -170,8 +170,9 @@ function countSyllablesNL(word: string): number {
 function countSyllablesSlavic(word: string): number {
   if (word.length <= 1) return 1;
 
-  // In Polish/Czech, each vowel is typically one syllable
-  // Vowels: a, e, i, o, u, y (PL), á, é, í, ó, ú, ů, ý, ě (CS), ą, ę, ó (PL)
+  // In Polish/Czech, vowel groups like "ie", "ia", "io" typically form one syllable.
+  // The vowel-group approach (matching consecutive vowels) handles this correctly.
+  // Vowels: a, e, i, o, u, y, ą, ę, ó (PL) + á, é, í, ú, ů, ý, ě (CS)
   const vowels = word.match(/[aeiouyąęóáéíúůýě]+/gi);
   return Math.max(1, vowels ? vowels.length : 1);
 }
@@ -180,11 +181,20 @@ function countSyllablesSlavic(word: string): number {
 // Nordic languages (SV, DA, NO, FI) syllable counter
 // ---------------------------------------------------------------------------
 
-function countSyllablesNordic(word: string): number {
+function countSyllablesNordic(word: string, locale: Locale = 'sv'): number {
   if (word.length <= 2) return 1;
 
+  let w = word;
+
+  if (locale === 'fi') {
+    // Finnish diphthongs — these are single syllables, not two.
+    // Finnish has 18 diphthongs: ai, ei, oi, ui, yi, äi, öi, au, eu, ou, iu,
+    // ey, äy, öy, ie, uo, yö + iy
+    w = w.replace(/ai|ei|oi|ui|yi|äi|öi|au|eu|ou|iu|ey|äy|öy|ie|uo|yö|iy/gi, 'X');
+  }
+
   // Nordic vowels including å, ä, ö (SV), æ, ø, å (DA/NO), ä, ö, y (FI)
-  const vowelGroups = word.match(/[aeiouyåäöæø]+/gi);
+  const vowelGroups = w.match(/[aeiouyåäöæøX]+/gi);
   return Math.max(1, vowelGroups ? vowelGroups.length : 1);
 }
 

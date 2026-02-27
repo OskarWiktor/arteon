@@ -27,5 +27,6 @@
   "removeEmptyLines": "Ta bort tomma rader",
   "removeDuplicateLines": "Ta bort dubbletter",
   "sortAsc": "Sortera A→Ö",
-  "sortDesc": "Sortera Ö→A"
+  "sortDesc": "Sortera Ö→A",
+  "readabilityHint": "För webbinnehåll på svenska, sikta på 50–70."
 }

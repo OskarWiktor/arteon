@@ -12,6 +12,7 @@
   "speakingTime": "Czas mówienia",
   "syllables": "Sylaby",
   "readability": "Czytelność (Flesch)",
+  "readabilityHint": "Dla treści webowych po polsku celuj w 50–70.",
   "copyText": "Kopiuj tekst",
   "copied": "Skopiowano",
   "clearText": "Wyczyść",

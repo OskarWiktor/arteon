@@ -27,5 +27,6 @@
   "removeEmptyLines": "Remover linhas vazias",
   "removeDuplicateLines": "Remover linhas duplicadas",
   "sortAsc": "Ordenar A→Z",
-  "sortDesc": "Ordenar Z→A"
+  "sortDesc": "Ordenar Z→A",
+  "readabilityHint": "Para conteúdo web em português, mire em 60–70."
 }

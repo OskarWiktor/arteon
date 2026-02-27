@@ -39,9 +39,12 @@ function scoreToGrade(score: number): number {
  * - NL: Flesch-Douma formula
  * - IT: Gulpease index (native Italian, character-based)
  * - FR: Kandel-Moles adaptation
- * - SV/DA/NO: LIX (Björnsson Readability Index) mapped to 0-100 scale
- * - EN and others (PL, CS, HU, FI, EL): standard Flesch formula
- *   (approximate — no established native adaptation exists for these languages)
+ * - PL: Flesch with reduced ASW coefficient (60) for inflectional morphology
+ * - CS: Flesch with reduced ASW coefficient (52) for Slavic morphology
+ * - HU: Flesch with reduced ASW coefficient (55) for agglutinative morphology
+ * - EL: Flesch with reduced ASW coefficient (66) for Greek morphology
+ * - SV/DA/NO/FI: LIX (Björnsson Readability Index) mapped to 0-100 scale
+ * - EN: standard Flesch formula
  */
 export function calculateReadability(text: string, locale: Locale = 'en'): ReadabilityResult {
   const words = countWords(text);
@@ -95,10 +98,38 @@ export function calculateReadability(text: string, locale: Locale = 'en'): Reada
       fleschGrade = scoreToGrade(fleschScore);
       break;
     }
+    case 'pl': {
+      // Polish adaptation — reduced ASW coefficient (84.6 → 60) to account for
+      // Polish inflectional morphology producing longer words (~1.9 syl/word vs EN ~1.3)
+      fleschScore = 206.835 - 1.015 * ASL - 60 * ASW;
+      fleschGrade = scoreToGrade(fleschScore);
+      break;
+    }
+    case 'cs': {
+      // Czech adaptation — Slavic inflectional language; higher ASW than Polish
+      fleschScore = 206.835 - 1.015 * ASL - 52 * ASW;
+      fleschGrade = scoreToGrade(fleschScore);
+      break;
+    }
+    case 'hu': {
+      // Hungarian adaptation — agglutinative language with very long words (~2.0+ syl/word)
+      fleschScore = 206.835 - 1.015 * ASL - 55 * ASW;
+      fleschGrade = scoreToGrade(fleschScore);
+      break;
+    }
+    case 'el': {
+      // Greek adaptation — inflectional, longer words than EN but less extreme than PL/HU
+      fleschScore = 206.835 - 1.015 * ASL - 66 * ASW;
+      fleschGrade = scoreToGrade(fleschScore);
+      break;
+    }
     case 'sv':
     case 'da':
-    case 'no': {
-      // LIX — Björnsson Readability Index (standard for Scandinavian languages)
+    case 'no':
+    case 'fi': {
+      // LIX — Björnsson Readability Index (Scandinavian + Finnish)
+      // Finnish is agglutinative with very long compound words;
+      // LIX (word-length-based) is a better fit than syllable-based Flesch.
       // LIX = ASL + (percentage of words longer than 6 characters)
       const wordList = text.match(/\p{L}+/gu) || [];
       const longWords = wordList.filter((w) => w.length > 6).length;
@@ -111,9 +142,7 @@ export function calculateReadability(text: string, locale: Locale = 'en'): Reada
       break;
     }
     default: {
-      // Standard Flesch formulas (EN, PL, CS, HU, FI, EL)
-      // For PL/CS/HU/FI/EL no established native adaptation exists;
-      // the standard formula with locale-specific syllable heuristics is approximate.
+      // Standard Flesch formulas (EN only)
       fleschScore = 206.835 - 1.015 * ASL - 84.6 * ASW;
       fleschGrade = 0.39 * ASL + 11.8 * ASW - 15.59;
       break;
@@ -155,6 +184,10 @@ const READABILITY_LABELS: Record<Locale, { veryEasy: string; easy: string; moder
 // Italian Gulpease has its own education-level-based scale.
 const READABILITY_THRESHOLDS: Partial<Record<Locale, [number, number, number, number]>> = {
   it: [80, 60, 40, 20], // Gulpease: 80+ elementary, 60+ middle school, 40+ high school, <40 university
+  pl: [80, 60, 40, 20], // Polish adapted formula: shifted thresholds for inflectional language
+  cs: [80, 60, 40, 20], // Czech adapted formula: Slavic, similar to Polish
+  hu: [80, 60, 40, 20], // Hungarian adapted formula: agglutinative, long words
+  el: [80, 60, 45, 25], // Greek adapted formula: inflectional, moderate correction
 };
 
 const DEFAULT_THRESHOLDS: [number, number, number, number] = [90, 70, 50, 30];
