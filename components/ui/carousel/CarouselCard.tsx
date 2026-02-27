@@ -28,7 +28,6 @@ type CarouselCardProps =
       article: ArticlePreview;
       href: string;
       readingTimeLabel: string;
-      publicationDateLabel: string;
     }
   | {
       variant: 'testimonial';
@@ -81,7 +80,7 @@ export function CarouselCard(props: CarouselCardProps) {
     );
   }
 
-  const { article: a, href, readingTimeLabel, publicationDateLabel } = props;
+  const { article: a, href, readingTimeLabel } = props;
 
   return (
     <article className="surface-card h-full">
@@ -101,7 +100,7 @@ export function CarouselCard(props: CarouselCardProps) {
               </span>
             ) : null}
             {a.datePublished ? (
-              <span className="text-light text-sm" aria-label={publicationDateLabel}>
+              <span className="text-light text-sm">
                 <span className="mx-1">•</span>
                 {a.datePublished.split('-').reverse().join('.')}
               </span>

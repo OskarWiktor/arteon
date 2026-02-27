@@ -43,7 +43,7 @@ export default function FeatureGrid({ title, subtitle, description, items, colum
         descriptionClassName=""
       />
 
-      <ul className={`grid gap-4 ${gridClasses}`} role="list">
+      <ul className={`grid gap-4 ${gridClasses}`}>
         {items.map((item, idx) => (
           <li className="h-full" key={idx} {...{ itemProp: 'itemListElement', itemScope: true, itemType: 'https://schema.org/ListItem' }}>
             <meta itemProp="position" content={(idx + 1).toString()} />

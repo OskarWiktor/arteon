@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { ProjectPreview } from '@/types/project';
-import Button from './buttons/Button';
 
 type Props = { project: ProjectPreview; size?: 'small' | 'normal' };
 
@@ -24,9 +23,14 @@ export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
 
           <div className="mt-auto">
             <div className="mt-4 mb-2 h-px w-full bg-neutral-200" aria-hidden="true" />
-            <Button variant="normal" size="small" arrow className="border-0 shadow-none hover:translate-y-0 hover:shadow-none">
-              Szczegóły projektu
-            </Button>
+            <span className="focus-visible:ring-primary inline-flex w-fit cursor-pointer items-center rounded-xl border-0 text-sm font-medium shadow-none transition hover:translate-y-0 hover:shadow-none">
+              <span>Szczegóły projektu</span>
+              <span className="ml-1 flex h-5 w-5 items-center justify-center" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+                  <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z" />
+                </svg>
+              </span>
+            </span>
           </div>
         </div>
       </article>

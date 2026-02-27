@@ -104,9 +104,10 @@ export default function ArticlesCarousel({ articles, max = 10, title = 'Edukacja
                     : null
                 }
                 className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]"
+                role="group"
                 aria-label={`Artykuł ${i + 1} z ${finalArticles.length}`}
               >
-                <CarouselCard variant="article" article={a} href={href} readingTimeLabel="min czytania" publicationDateLabel="Data publikacji" />
+                <CarouselCard variant="article" article={a} href={href} readingTimeLabel="min czytania" />
               </div>
             );
           })}

@@ -145,6 +145,7 @@ export default function TestimonialsCarousel({ title = 'Opinie współprac i rea
                   : null
               }
               className="w-[320px] shrink-0 snap-start md:w-[420px] lg:w-[520px]"
+              role="group"
               aria-label={`Opinia ${i + 1} z ${items.length}`}
             >
               <CarouselCard variant="testimonial" item={item} />

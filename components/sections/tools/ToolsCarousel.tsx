@@ -76,6 +76,7 @@ export default function ToolsCarousel({ max = 10, title, subtitle }: Props) {
                   : null
               }
               className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]"
+              role="group"
               aria-label={`${t.tool} ${i + 1} ${t.of} ${items.length}`}
             >
               <CarouselCard variant="tool" title={tool.title} href={tool.href} description={tool.description} image={tool.image} buttonLabel={t.openTool} />

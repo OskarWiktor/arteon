@@ -94,6 +94,7 @@ export default function ProjectsCarouselClient({ projects, max = 10, title = 'Na
                   : null
               }
               className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]"
+              role="group"
               aria-label={`Projekt ${i + 1} z ${finalProjects.length}`}
             >
               <CarouselCard variant="project" project={project} />
