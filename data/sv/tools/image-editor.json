@@ -273,6 +273,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Visuell innehållsstrategi för sociala medier",
+      "html": "<p class=\"text-mid mb-4\">Visuell konsekvens i en profil på sociala medier påverkar varumärkesuppfattningen och engagemangsgraden. På Instagram skapar profilrutnätet (grid) det första intrycket — besökare bedömer helheten av miniatyrbilder innan de öppnar ett enskilt inlägg. Genomtänkt beskärning av bilder gör det möjligt att bygga en visuell berättelse: omväxlande bakgrundsfärger, konsekventa proportioner och återkommande varumärkeselement skapar ett harmoniskt helhetsintryck av profilen.</p><p class=\"text-mid mb-4\">Inlägg i stående format (1080×1350 px, förhållande 4:5) tar upp mer utrymme i flödet på Instagram och Facebook än kvadratiska inlägg. Större yta innebär längre exponeringstid vid scrollning, vilket ökar sannolikheten för interaktion. Karuseller med flera bilder bör ha identiska mått och en enhetlig visuell stil.</p><p class=\"text-mid mb-4\">I Sverige är Instagram och Facebook de dominerande visuella plattformarna för varumärken, butiker och frilansare. LinkedIn har en stark position för B2B-kommunikation på den svenska marknaden. Att förbereda grafik med fördefinierade mått och ett konsekvent exportformat sparar tid och eliminerar fel som uppstår vid manuell skalning.</p><p class=\"text-mid\">Varumärkets färgpalett bör synas i varje grafik: bakgrunder, textöverlägg, ramar och accentelement. Att beskära bilder till plattformens exakta mått före publicering förhindrar oönskad beskärning av algoritmen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Bildstorlekar för plattformar utöver Instagram och Facebook",
+      "html": "<p class=\"text-mid mb-4\">YouTube-miniatyrer bör mäta 1280×720 pixlar (förhållande 16:9) med en maximal filstorlek på 2 MB. Miniatyren är en av de starkaste faktorerna för klickfrekvensen på YouTube — en tydlig ansiktsbeskärning, läsbar text och kontrastrika färger presterar genomgående bättre än automatiskt genererade stillbilder från videon.</p><p class=\"text-mid mb-4\">Pinterest föredrar vertikala pins. Den optimala storleken är 1000×1500 pixlar (förhållande 2:3). Vertikala pins tar upp mer utrymme på Pinterest-tavlan och i sökresultaten, vilket ökar deras synlighet och sparfrekvens. Produktbilder, infografik och steg-för-steg-guider i detta format presterar särskilt bra på plattformen.</p><p class=\"text-mid mb-4\">TikTok-omslagsbilder bör vara 1080×1920 pixlar (förhållande 9:16). TikTok visar omslaget som miniatyrbild i profilrutnätet — viktiga element bör vara centrerade eftersom sidorna kan beskäras. Inlägg på X (tidigare Twitter) visas bäst i formatet 16:9 (1600×900 px) eller 2:1.</p><p class=\"text-mid\">Threads, Metas textbaserade plattform, stöder bilder upp till 1440 pixlar breda. Discord-serverikoner kräver en kvadratisk bild (minst 512×512 px). Twitch-kanalbanners använder formatet 1200×480 pixlar. Varje plattform tillämpar sina egna beskärnings- och komprimeringsalgoritmer — att förbereda grafik i de exakta rekommenderade måtten säkerställer att slutresultatet överensstämmer med den ursprungliga designen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Integritet och webbläsarbaserad bildbehandling",
+      "html": "<p class=\"text-mid mb-4\">Denna redigerare bearbetar bilder uteslutande i webbläsaren med hjälp av Canvas API — en inbyggd komponent i varje modern webbläsare. Filen laddas in i webbläsarens arbetsminne (RAM) och renderas på ett osynligt canvas-element. Alla beskärnings-, storleksändrings- och formatkonverteringsoperationer sker på denna lokala canvas. Den färdiga bilden genereras som en nedladdningsbar fil direkt från canvas-data. Vid ingen tidpunkt lämnar bilden enheten.</p><p class=\"text-mid mb-4\">Foton tagna med smartphones innehåller ofta EXIF-metadata — inbäddad information om datum, tid, kameramodell, exponeringsinställningar och ibland GPS-koordinater för platsen där fotot togs. Att publicera bilder med platsdata kan utgöra en integritetsrisk. De flesta sociala nätverk tar bort EXIF-data vid uppladdning, men webbplatser, bloggar och e-postbilagor kan bevara de ursprungliga metadata i filen.</p><p class=\"text-mid mb-4\">Jämfört med molnbaserade redigerare som Canva eller Adobe Express kräver webbläsarbaserad bearbetning ingen uppladdning av filer till en extern server. Bilder lagras inte på tredjepartsinfrastruktur och omfattas inte av externa leverantörers integritetspolicyer. För företag i Sverige som lyder under GDPR (General Data Protection Regulation) eliminerar lokal bearbetning en kategori av databehandlingsrisker — särskilt vid hantering av kundmaterial eller konfidentiella produktbilder.</p><p class=\"text-mid\">Redigeraren fungerar även offline efter att sidan har laddats. Så snart applikationskoden har cachats av webbläsaren krävs ingen aktiv internetanslutning för beskärning, storleksändring eller export.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanliga frågor om bildredigeraren",
       "openByDefault": 1,

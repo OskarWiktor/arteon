@@ -273,6 +273,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Visuaalinen sisältöstrategia sosiaalisessa mediassa",
+      "html": "<p class=\"text-mid mb-4\">Visuaalinen johdonmukaisuus sosiaalisen median profiilissa vaikuttaa brändin havaintoon ja sitoutumisasteeseen. Instagramissa profiiliruudukko (grid) luo ensivaikutelman — vierailijat arvioivat pikkukuvien kokonaisuuden ennen yksittäisen julkaisun avaamista. Harkittu kuvien rajaus mahdollistaa visuaalisen tarinan rakentamisen: vaihtelevat taustavärit, johdonmukaiset mittasuhteet ja toistuvat brändielementit luovat harmonisen kokonaiskuvan profiilista.</p><p class=\"text-mid mb-4\">Pystymuotoiset julkaisut (1080×1350 px, suhde 4:5) vievät enemmän tilaa Instagramin ja Facebookin syötteessä kuin neliöjulkaisut. Suurempi pinta-ala tarkoittaa pidempää näkyvyysaikaa vierityksen aikana, mikä lisää vuorovaikutuksen todennäköisyyttä. Karusellit, joissa on useita kuvia, tulisi tehdä identtisillä mitoilla ja yhtenäisellä visuaalisella tyylillä.</p><p class=\"text-mid mb-4\">Suomessa Instagram ja Facebook ovat hallitsevia visuaalisia alustoja brändeille, kaupoille ja freelancereille. LinkedIn on vahvassa asemassa B2B-viestinnässä Suomen markkinoilla. Grafiikan valmistelu ennalta määritetyillä mitoilla ja johdonmukaisella vientimuodolla säästää aikaa ja eliminoi manuaalisesta skaalauksesta aiheutuvat virheet.</p><p class=\"text-mid\">Brändin väripaletti tulisi näkyä jokaisessa grafiikassa: taustat, tekstikerrokset, kehykset ja korostuselementit. Kuvien rajaaminen alustan vaatimiin tarkoihin mittoihin ennen julkaisua estää algoritmin ei-toivotun rajauksen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kuvakoot alustoille Instagramin ja Facebookin ulkopuolella",
+      "html": "<p class=\"text-mid mb-4\">YouTube-pikkukuvien tulisi olla 1280×720 pikseliä (suhde 16:9) ja tiedostokoon enintään 2 MB. Pikkukuva on yksi vahvimmista tekijöistä, jotka vaikuttavat klikkausprosenttiin YouTubessa — selkeä kasvorajaus, luettava teksti ja kontrastiset värit suoriutuvat johdonmukaisesti paremmin kuin videosta automaattisesti luodut pysäytyskuvat.</p><p class=\"text-mid mb-4\">Pinterest suosii pystysuuntaisia pinnejä. Optimaalinen koko on 1000×1500 pikseliä (suhde 2:3). Pystysuuntaiset pinnit vievät enemmän tilaa Pinterest-taululla ja hakutuloksissa, mikä lisää niiden näkyvyyttä ja tallennusastetta. Tuotekuvat, infografiikat ja vaiheittaiset oppaat tässä muodossa menestyvät erityisen hyvin alustalla.</p><p class=\"text-mid mb-4\">TikTok-kansikuvien tulisi olla 1080×1920 pikseliä (suhde 9:16). TikTok näyttää kansikuvan pikkukuvana profiiliruudukossa — tärkeät elementit tulisi keskittää, koska sivut voivat rajautua pois. Julkaisut X:ssä (entinen Twitter) näkyvät parhaiten muodossa 16:9 (1600×900 px) tai 2:1.</p><p class=\"text-mid\">Threads, Metan tekstipohjainen alusta, tukee kuvia enintään 1440 pikseliä leveänä. Discord-palvelinkuvakkeet vaativat neliökuvan (vähintään 512×512 px). Twitch-kanavien bannerit käyttävät kokoa 1200×480 pikseliä. Jokainen alusta soveltaa omia rajaus- ja pakkausalgoritmeistaan — grafiikan valmistelu tarkoissa suositelluissa mitoissa varmistaa, että lopputulos vastaa alkuperäistä suunnitelmaa.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Yksityisyys ja selainpohjainen kuvankäsittely",
+      "html": "<p class=\"text-mid mb-4\">Tämä editori käsittelee kuvia yksinomaan selaimessa Canvas API:n avulla — jokaisen modernin selaimen sisäänrakennetun komponentin. Tiedosto ladataan selaimen työmuistiin (RAM) ja renderöidään näkymättömälle canvas-elementille. Kaikki rajaus-, koon muutos- ja muotokonversiotoiminnot tapahtuvat tällä paikallisella canvasilla. Valmis kuva luodaan ladattavaksi tiedostoksi suoraan canvas-tiedoista. Missään vaiheessa kuva ei poistu laitteelta.</p><p class=\"text-mid mb-4\">Älypuhelimella otetut valokuvat sisältävät usein EXIF-metatietoja — upotettua tietoa päivämäärästä, kellonajasta, kameramallista, valotusasetuksista ja joskus GPS-koordinaateista kuvauspaikasta. Kuvien julkaiseminen sijaintitietojen kanssa voi muodostaa yksityisyysriskin. Useimmat sosiaalisen median alustat poistavat EXIF-tiedot latauksen yhteydessä, mutta verkkosivustot, blogit ja sähköpostiliitteet voivat säilyttää alkuperäiset metatiedot tiedostossa.</p><p class=\"text-mid mb-4\">Verrattuna pilvipohjaisiin editoreihin kuten Canvaan tai Adobe Expressiin selainpohjainen käsittely ei vaadi tiedostojen lataamista ulkoiselle palvelimelle. Kuvia ei tallenneta kolmannen osapuolen infrastruktuuriin eikä niihin sovelleta ulkoisten palveluntarjoajien tietosuojakäytäntöjä. Suomessa toimiville yrityksille, jotka kuuluvat GDPR:n (yleinen tietosuoja-asetus) piiriin, paikallinen käsittely eliminoi yhden tietojenkäsittelyriskien kategorian — erityisesti asiakasmateriaalien tai luottamuksellisten tuotekuvien käsittelyssä.</p><p class=\"text-mid\">Editori toimii myös offline-tilassa sivun lataamisen jälkeen. Kun sovelluksen koodi on tallennettu selaimen välimuistiin, aktiivista internetyhteyttä ei tarvita rajaukseen, koon muutokseen tai vientiin.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset kuvaeditorista",
       "openByDefault": 1,

@@ -264,6 +264,25 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kuvien optimointi ja Core Web Vitals",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ovat joukko suorituskykymittareita, joita Google käyttää sijoitussignaaleina. Yksi niistä — LCP (Largest Contentful Paint) — mittaa aikaa, kunnes suurin näkyvä elementti renderöidään näytölle. Monilla sivuilla tämä elementti on kuva: hero-banneri, tuotekuva tai grafiikka sivun yläosassa. Pakkaamattomat JPG- ja PNG-tiedostot kooltaan 1–3 MB pidentävät LCP-aikaa ja laskevat PageSpeed Insights -pisteitä.</p><p class=\"text-mid mb-4\">Kuvien muuntaminen WebP-muotoon pienentää tiedostokokoa 25–35 % verrattavissa olevalla visuaalisella laadulla. Pienemmät kuvatiedostot lyhentävät resurssien latausaikaa, mikä parantaa suoraan LCP-mittaria. Lisätekniikat — kuten loading=\"lazy\"-attribuutti taitoksen alapuolella oleville kuville, <code>&lt;picture&gt;</code>-elementti srcset-attribuutilla sopivien kokojen tarjoamiseksi ja fetchpriority=\"high\" hero-kuvalle — nopeuttavat yhdessä sivun renderöintiä.</p><p class=\"text-mid mb-4\">Toinen mittari — CLS (Cumulative Layout Shift) — mittaa asettelun siirtymiä sivun latauksen aikana. Kuvat ilman ilmoitettuja mittoja (width- ja height-attribuutit) aiheuttavat sisältöhyppyjä kuvan latautumisen jälkeen. Mittojen ilmoittaminen HTML:ssä tai CSS:ssä poistaa tämän ongelman tiedostomuodosta riippumatta.</p><p class=\"text-mid\">Työkalut kuten PageSpeed Insights, Lighthouse ja WebPageTest näyttävät yksityiskohtaista tietoa kuvien vaikutuksesta suorituskykyyn. Lighthouse-raportti Performance-kategoriassa tunnistaa tietyt tiedostot, jotka kannattaa muuntaa seuraavan sukupolven muotoon.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Tuotekuvien optimointi suomalaisessa verkkokaupassa",
+      "html": "<p class=\"text-mid mb-4\">Tuotekuvat muodostavat suuren osan verkkosivujen painosta verkkokaupoissa. Kategoriasivulla, jossa on 40 pikkukuvaa, ja tuotesivulla, jossa on 5–8 kuvan galleria, voidaan ladata useita megatavuja kuvadataa jokaisella vierailulla. Näiden kuvien muuntaminen WebP-muotoon vähentää tiedonsiirtoa ja nopeuttaa latautumista — erityisesti mobiililaitteilla, jotka Suomessa tuottavat yli 65 % verkkokauppaliikenteestä.</p><p class=\"text-mid mb-4\">Hintavertailusivustot ja markkinapaikat Suomessa — Hintaopas, Vertaa.fi ja Verkkokauppa.com — näyttävät tuotekuvia jokaisen tarjouksen vieressä. Kuvanlaatu vaikuttaa myyjän luotettavuuden vaikutelmaan. WooCommerce-, Magento- ja Shopify-kaupat voivat tarjota WebP-muotoa JPG:n sijasta lisäosien tai palvelinkonfiguraation avulla.</p><p class=\"text-mid mb-4\">Kategoriasivu pikkukuvien tulisi olla kooltaan näyttöruudukon mukaisia — 200×200 px:n tiedosto, joka painaa 8–15 KB WebP-muodossa, latautuu nopeammin kuin pienennetty 1200×1200 px:n alkuperäiskuva. Zoomkuvat tuotetilanäkymässä voivat säilyttää korkeamman laadun (85–90 %), koska ne latautuvat vasta käyttäjän vuorovaikutuksen jälkeen.</p><p class=\"text-mid\">Tuotesivun latausnopeus vaikuttaa suoraan konversioasteeseen. Toimialatutkimukset osoittavat, että jokainen lisäsekunti latausajassa kasvattaa riskiä, että vierailija poistuu sivulta. Tuotekuvien optimointi on yksi yksinkertaisimmista toimista latausajan lyhentämiseksi ilman muutoksia verkkokaupan koodiin.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "WebP suomalaisissa CMS-järjestelmissä ja webhotelleissa",
+      "html": "<p class=\"text-mid mb-4\">WordPress tukee WebP-tiedostojen natiivista latausta versiosta 5.8 alkaen. Lisäosat kuten Imagify, ShortPixel ja EWWW Image Optimizer mahdollistavat kuvien automaattisen muuntamisen mediakirjastoon latauksen yhteydessä. Jokainen lisäosa luo WebP-version alkuperäisen rinnalle ja tarjoaa sen WebP-muotoa tukeville selaimille.</p><p class=\"text-mid mb-4\">MyCashflow ja Vilkas — suosittuja suomalaisia verkkokauppa-alustoja — tarjoavat integroitua kuvaoptimointia CDN:nsä kautta. Shopify muuntaa tuotekuvat automaattisesti WebP-muotoon tarjoillessaan niitä verkkonsa kautta. WooCommerce-kaupat hyötyvät samasta WordPress-lisäosaekosysteemistä automaattiseen WebP-muunnokseen.</p><p class=\"text-mid mb-4\">Suomalaiset webhotellit — Louhi, Nebula, Zoner ja Planeetta — tarjoavat Apache- ja Nginx-palvelimia, joissa automaattinen WebP-tarjoilu voidaan konfiguroida. .htaccess-tiedoston sääntö tarkistaa, tukeeko selain WebP-muotoa (Accept: image/webp -otsake) ja ohjaa pyynnön WebP-versioon, jos tiedosto on palvelimella.</p><p class=\"text-mid\">CDN-palvelut kuten Cloudflare (Polish-toiminto) ja BunnyCDN tarjoavat automaattisen kuvamuunnoksen WebP-muotoon edge-palvelintasolla. Kuvat muunnetaan reaaliajassa ilman muutoksia alkuperäpalvelimella. Tämä ratkaisu sopii sivustoille, joissa on suuri määrä kuvia ja manuaalinen muunnos olisi liian aikaa vievää.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset WebP-muuntimesta",
       "openByDefault": 1,

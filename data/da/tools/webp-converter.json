@@ -264,6 +264,25 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Billedoptimering og Core Web Vitals",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er et sæt ydelesmålinger, som Google bruger som rangeringssignaler. En af dem — LCP (Largest Contentful Paint) — måler tiden, indtil det største synlige element vises på skærmen. På mange sider er dette element et billede: et hero-banner, et produktfoto eller en grafik øverst på siden. Ukomprimerede JPG- og PNG-filer på 1–3 MB forlænger LCP-tiden og sænker scoren i PageSpeed Insights.</p><p class=\"text-mid mb-4\">Konvertering af billeder til WebP-format reducerer filstørrelsen med 25–35 % ved sammenlignelig visuel kvalitet. Mindre billedfiler forkorter downloadtiden for ressourcer, hvilket direkte forbedrer LCP-metrikken. Yderligere teknikker — som attributtet loading=\"lazy\" for billeder under folden, <code>&lt;picture&gt;</code>-elementet med srcset til at servere passende størrelser og fetchpriority=\"high\" for hero-billedet — fremskynder tilsammen sidens rendering.</p><p class=\"text-mid mb-4\">Den anden metrik — CLS (Cumulative Layout Shift) — måler layoutforskydninger under sideindlæsning. Billeder uden deklarerede dimensioner (attributterne width og height) forårsager indholdssprang efter billedindlæsning. At deklarere dimensioner i HTML eller CSS eliminerer dette problem uanset filformat.</p><p class=\"text-mid\">Værktøjer som PageSpeed Insights, Lighthouse og WebPageTest viser detaljerede data om billledernes indvirkning på ydeevnen. Lighthouse-rapporten i kategorien Performance identificerer specifikke filer, der bør konverteres til et næste generations format.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Optimering af produktbilleder i dansk e-handel",
+      "html": "<p class=\"text-mid mb-4\">Produktbilleder udgør en stor del af sidevægten i webshops. En kategoriside med 40 miniaturer og en produktside med et galleri på 5–8 fotos kan indlæse flere megabyte billeddata ved hvert besøg. Konvertering af disse billeder til WebP reducerer dataoverførslen og fremskynder indlæsningen — særligt på mobile enheder, som i Danmark genererer over 65 % af e-handelstrafikken.</p><p class=\"text-mid mb-4\">Prissammenligningssider og markedspladser i Danmark — PriceRunner, Pricespy og Coolshop — viser produktbilleder ved siden af hvert tilbud. Billedkvaliteten påvirker opfattelsen af sælgeren. Webshops på WooCommerce, Magento og Shopify kan servere WebP i stedet for JPG via plugins eller serverkonfiguration.</p><p class=\"text-mid mb-4\">Miniaturer på kategorisider bør dimensioneres efter visningsgitteret — en fil på 200×200 px, der vejer 8–15 KB i WebP, indlæses hurtigere end et nedskaleret original på 1200×1200 px. Zoombilleder på produktdetailsiden kan bevare højere kvalitet (85–90 %), da de først indlæses efter brugerinteraktion.</p><p class=\"text-mid\">Indlæsningstiden for en produktside påvirker direkte konverteringsraten. Brancheundersøgelser viser, at hvert ekstra sekunds indlæsningstid øger risikoen for, at den besøgende forlader siden. Optimering af produktbilleder er en af de enkleste tiltag for at forkorte indlæsningstiden uden ændringer i webshoppens kode.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "WebP i danske CMS-platforme og webhoteller",
+      "html": "<p class=\"text-mid mb-4\">WordPress understøtter nativ upload af WebP-filer siden version 5.8. Plugins som Imagify, ShortPixel og EWWW Image Optimizer muliggør automatisk konvertering af billeder ved upload til mediebiblioteket. Hvert plugin genererer en WebP-variant ved siden af originalen og serverer den til browsere, der understøtter formatet.</p><p class=\"text-mid mb-4\">DanDomain og Shoporama — populære danske e-handelsplatforme — tilbyder integreret billedoptimering via deres CDN. Shopify konverterer automatisk produktbilleder til WebP ved levering gennem sit netværk. WooCommerce-butikker drager fordel af det samme WordPress plugin-økosystem til automatisk WebP-konvertering.</p><p class=\"text-mid mb-4\">Danske webhoteller — Simply.com, one.com, Curanet og DanDomain Hosting — tilbyder servere med Apache og Nginx, hvor automatisk WebP-levering kan konfigureres. En regel i .htaccess-filen kontrollerer, om browseren understøtter WebP (header Accept: image/webp) og omdirigerer anmodningen til WebP-varianten, hvis filen findes på serveren.</p><p class=\"text-mid\">CDN-tjenester som Cloudflare (funktionen Polish) og BunnyCDN tilbyder automatisk konvertering af billeder til WebP på edge-serverniveau. Billederne konverteres i realtid uden ændringer på oprindelsesserveren. Denne løsning passer til websites med et stort antal billeder, hvor manuel konvertering ville være for tidskrævende.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om WebP-konverteren",
       "openByDefault": 1,

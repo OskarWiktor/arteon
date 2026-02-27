@@ -265,6 +265,25 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Optimalizace obrázků a Core Web Vitals",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals jsou souborem metrik výkonu, které Google používá jako signály pro řazení. Jedna z nich — LCP (Largest Contentful Paint) — měří čas, než se na obrazovce zobrazí největší viditelný prvek. Na mnoha stránkách je tímto prvkem obrázek: hero banner, produktová fotografie nebo grafika v horní části stránky. Nekomprimované soubory JPG a PNG o velikosti 1–3 MB prodlužují dobu LCP a snižují skóre v PageSpeed Insights.</p><p class=\"text-mid mb-4\">Převod obrázků do formátu WebP zmenšuje velikost souborů o 25–35 % při srovnatelné vizuální kvalitě. Menší obrazové soubory zkracují dobu stahování zdrojů, což přímo zlepšuje metriku LCP. Doplňkové techniky — jako atribut loading=\"lazy\" pro obrázky pod viditelnou oblastí, element <code>&lt;picture&gt;</code> s atributem srcset pro doručování vhodných velikostí a fetchpriority=\"high\" pro hero obrázek — společně urychlují vykreslování stránky.</p><p class=\"text-mid mb-4\">Druhá metrika — CLS (Cumulative Layout Shift) — sleduje posuny rozvržení během načítání. Obrázky bez deklarovaných rozměrů (atributy width a height) způsobují skoky obsahu po načtení obrázku. Deklarování rozměrů v HTML nebo CSS tento problém odstraňuje bez ohledu na formát souboru.</p><p class=\"text-mid\">Nástroje jako PageSpeed Insights, Lighthouse a WebPageTest zobrazují podrobná data o vlivu obrázků na výkon. Report Lighthouse v kategorii Performance identifikuje konkrétní soubory, které by měly být převedeny do formátu nové generace.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Optimalizace produktových fotografií v českém e-commerce",
+      "html": "<p class=\"text-mid mb-4\">Produktové fotografie tvoří významnou část hmotnosti stránek v internetových obchodech. Stránka kategorie se 40 miniaturami a stránka produktu s galerií 5–8 fotografií mohou při každé návštěvě načítat několik megabajtů obrazových dat. Převod těchto grafik do formátu WebP snižuje přenos dat a urychluje načítání — zejména na mobilních zařízeních, která v Česku generují přes 65 % e-commerce provozu.</p><p class=\"text-mid mb-4\">Srovnávače cen a tržiště v Česku — Heureka.cz, Zboží.cz a Google Nákupy — zobrazují produktové fotografie u každé nabídky. Kvalita snímků ovlivňuje vnímání obchodu. E-shopy na platformě Shoptet, WooCommerce a PrestaShop mohou doručovat WebP místo JPG prostřednictvím pluginů nebo konfigurace serveru.</p><p class=\"text-mid mb-4\">Miniatury na stránkách kategorií by měly být dimenzovány podle zobrazovací mřížky — soubor 200×200 px o velikosti 8–15 KB ve formátu WebP se načte rychleji než zmenšený originál 1200×1200 px. Zoom obrázky na detailu produktu mohou zachovat vyšší kvalitu (85–90 %), protože se načítají až po interakci uživatele.</p><p class=\"text-mid\">Rychlost načítání produktové stránky přímo ovlivňuje konverzní poměr. Oborové studie ukazují, že každá další sekunda načítání zvyšuje riziko opuštění stránky návštěvníkem. Optimalizace produktových fotografií je jedním z nejjednodušších opatření ke zkrácení doby načítání bez změn v kódu obchodu.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "WebP v českých CMS a hostingových službách",
+      "html": "<p class=\"text-mid mb-4\">WordPress podporuje nativní nahrávání souborů WebP od verze 5.8. Pluginy jako Imagify, ShortPixel a EWWW Image Optimizer umožňují automatický převod obrázků při nahrávání do knihovny médií. Každý z těchto pluginů vytváří variantu WebP vedle originálu a doručuje ji prohlížečům, které formát podporují.</p><p class=\"text-mid mb-4\">Shoptet — nejrozšířenější česká e-shopová platforma — nabízí integrovanou optimalizaci obrázků prostřednictvím vlastního CDN. Shopify automaticky převádí produktové fotografie do WebP při doručování přes svou síť. WooCommerce a PrestaShop obchody využívají stejný ekosystém WordPress pluginů pro automatický převod do WebP.</p><p class=\"text-mid mb-4\">Čeští poskytovatelé hostingu — Wedos, Forpsi, Active24 a Český hosting — nabízejí servery s Apache a Nginx, na kterých lze nakonfigurovat automatické doručování WebP. Pravidlo v souboru .htaccess kontroluje, zda prohlížeč podporuje WebP (hlavička Accept: image/webp) a přesměruje požadavek na variantu WebP, pokud soubor na serveru existuje.</p><p class=\"text-mid\">Služby CDN jako Cloudflare (funkce Polish) a BunnyCDN nabízejí automatický převod obrázků do WebP na úrovni edge serveru. Obrázky jsou převáděny v reálném čase bez změn na zdrojovém serveru. Toto řešení se hodí pro weby s velkým množstvím grafik, kde by ruční převod byl příliš časově náročný.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o konvertoru WebP",
       "openByDefault": 1,

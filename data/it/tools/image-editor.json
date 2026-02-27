@@ -278,6 +278,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Strategia visiva per i social media",
+      "html": "<p class=\"text-mid mb-4\">La coerenza visiva di un profilo sui social media influenza la percezione del brand e il tasso di coinvolgimento. Su Instagram, la griglia del profilo crea la prima impressione — i visitatori valutano l'insieme delle miniature prima di aprire una singola pubblicazione. Un ritaglio ponderato delle immagini consente di costruire una narrazione visiva: colori di sfondo alternati, proporzioni costanti ed elementi del brand ricorrenti creano un aspetto armonioso dell'intero profilo.</p><p class=\"text-mid mb-4\">I post in formato verticale (1080×1350 px, rapporto 4:5) occupano più spazio nel feed su Instagram e Facebook rispetto ai post quadrati. Una superficie maggiore significa un tempo di esposizione più lungo durante lo scorrimento, il che aumenta la probabilità di interazione. I caroselli con più slide devono avere dimensioni identiche e uno stile visivo uniforme.</p><p class=\"text-mid mb-4\">In Italia, Instagram e Facebook restano le piattaforme visive dominanti per brand, negozi e professionisti. LinkedIn è sempre più utilizzato per la comunicazione B2B. La preparazione di grafiche con dimensioni predefinite e un formato di esportazione coerente fa risparmiare tempo ed elimina gli errori di ridimensionamento manuale.</p><p class=\"text-mid\">La palette colori del brand dovrebbe essere visibile in ogni grafica: sfondi, sovrapposizioni di testo, bordi ed elementi di accento. Ritagliare le immagini alle dimensioni esatte richieste dalla piattaforma prima della pubblicazione impedisce il ritaglio indesiderato da parte dell'algoritmo.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Dimensioni immagini per piattaforme oltre Instagram e Facebook",
+      "html": "<p class=\"text-mid mb-4\">Le miniature di YouTube devono misurare 1280×720 pixel (rapporto 16:9) con una dimensione massima del file di 2 MB. La miniatura è uno dei fattori più determinanti per il tasso di clic su YouTube — un ritaglio chiaro del viso, testo leggibile e colori ad alto contrasto ottengono costantemente risultati migliori rispetto ai fotogrammi generati automaticamente dal video.</p><p class=\"text-mid mb-4\">Pinterest privilegia i pin verticali. La dimensione ottimale è 1000×1500 pixel (rapporto 2:3). I pin verticali occupano più spazio sulla bacheca Pinterest e nei risultati di ricerca, il che aumenta la loro visibilità e il tasso di salvataggio. Immagini di prodotti, infografiche e tutorial passo-passo in questo formato funzionano particolarmente bene sulla piattaforma.</p><p class=\"text-mid mb-4\">Le immagini di copertina TikTok devono misurare 1080×1920 pixel (rapporto 9:16). TikTok mostra la copertina come miniatura nella griglia del profilo — gli elementi importanti devono essere centrati perché i lati possono essere ritagliati. I post su X (ex Twitter) vengono visualizzati al meglio nel formato 16:9 (1600×900 px) o 2:1.</p><p class=\"text-mid\">Threads, la piattaforma testuale di Meta, supporta immagini fino a 1440 pixel di larghezza. Le icone dei server Discord richiedono un'immagine quadrata (minimo 512×512 px). I banner dei canali Twitch utilizzano il formato 1200×480 pixel. Ogni piattaforma applica i propri algoritmi di ritaglio e compressione — preparare le grafiche alle dimensioni esatte raccomandate garantisce che il risultato finale corrisponda al design originale.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Privacy ed elaborazione delle immagini nel browser",
+      "html": "<p class=\"text-mid mb-4\">Questo editor elabora le immagini esclusivamente nel browser utilizzando l'API Canvas — un componente integrato in ogni browser web moderno. Il file viene caricato nella memoria RAM del browser e renderizzato su un elemento canvas invisibile. Tutte le operazioni di ritaglio, ridimensionamento e conversione del formato avvengono su questo canvas locale. L'immagine finale viene generata come file scaricabile direttamente dai dati del canvas. In nessun momento l'immagine lascia il dispositivo.</p><p class=\"text-mid mb-4\">Le foto scattate con smartphone contengono spesso metadati EXIF — informazioni incorporate su data, ora, modello della fotocamera, impostazioni di esposizione e talvolta coordinate GPS del luogo di scatto. La pubblicazione di immagini contenenti dati di localizzazione può rappresentare un rischio per la privacy. La maggior parte dei social network rimuove i dati EXIF durante il caricamento, ma siti web, blog e allegati email possono conservare i metadati originali nel file.</p><p class=\"text-mid mb-4\">Rispetto agli editor basati su cloud come Canva o Adobe Express, l'elaborazione nel browser non richiede l'invio di file a un server esterno. Le immagini non vengono archiviate su infrastrutture di terze parti e non sono soggette alle politiche sulla privacy di fornitori esterni. Per le aziende in Italia soggette al GDPR (Regolamento Generale sulla Protezione dei Dati), l'elaborazione locale elimina una categoria di rischi legati al trattamento dei dati — in particolare per materiali dei clienti o immagini riservate di prodotti.</p><p class=\"text-mid\">L'editor funziona anche offline dopo il caricamento della pagina. Una volta che il codice dell'applicazione è memorizzato nella cache del browser, non è necessaria una connessione internet attiva per il ritaglio, il ridimensionamento o l'esportazione.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Domande frequenti sull'editor di immagini",
       "openByDefault": 1,

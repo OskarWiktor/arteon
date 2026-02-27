@@ -311,6 +311,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Visuele contentstrategie voor social media",
+      "html": "<p class=\"text-mid mb-4\">Visuele consistentie van een profiel op sociale media beïnvloedt de merkperceptie en de interactiegraad. Op Instagram vormt het profielraster (grid) de eerste indruk — bezoekers beoordelen het geheel van miniaturen voordat ze een individuele publicatie openen. Doordacht bijsnijden van afbeeldingen maakt het mogelijk een visueel verhaal op te bouwen: afwisselende achtergrondkleuren, consistente verhoudingen en terugkerende merkelementen creëren een harmonieus totaalbeeld van het profiel.</p><p class=\"text-mid mb-4\">Berichten in staand formaat (1080×1350 px, verhouding 4:5) nemen meer ruimte in beslag in de feed op Instagram en Facebook dan vierkante berichten. Meer oppervlakte betekent langere zichtbaarheid tijdens het scrollen, wat de kans op interactie vergroot. Carrousels met meerdere slides moeten identieke afmetingen en een uniforme visuele stijl hebben.</p><p class=\"text-mid mb-4\">In de Benelux zijn Instagram en Facebook de dominante visuele platforms voor merken, winkels en zelfstandigen. LinkedIn speelt een belangrijke rol voor B2B-communicatie in Nederland en België. Het vooraf voorbereiden van afbeeldingen met vastgestelde afmetingen en een consistent exportformaat bespaart tijd en voorkomt fouten door handmatig schalen.</p><p class=\"text-mid\">Het kleurenpalet van het merk moet zichtbaar zijn in elke afbeelding: achtergronden, tekstoverlays, randen en accentelementen. Het bijsnijden van afbeeldingen op de exacte afmetingen die het platform vereist vóór publicatie voorkomt ongewenst bijsnijden door het algoritme.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Afbeeldingsformaten voor platforms buiten Instagram en Facebook",
+      "html": "<p class=\"text-mid mb-4\">YouTube-thumbnails moeten 1280×720 pixels (verhouding 16:9) meten met een maximale bestandsgrootte van 2 MB. De thumbnail is een van de sterkste factoren voor de klikfrequentie op YouTube — een duidelijk bijgesneden gezicht, leesbare tekst en contrastrijke kleuren presteren consequent beter dan automatisch gegenereerde stilstaande beelden uit de video.</p><p class=\"text-mid mb-4\">Pinterest geeft de voorkeur aan verticale pins. De optimale afmeting is 1000×1500 pixels (verhouding 2:3). Verticale pins nemen meer ruimte in op het Pinterest-bord en in de zoekresultaten, wat hun zichtbaarheid en opslagpercentage verhoogt. Productafbeeldingen, infographics en stapsgewijze handleidingen in dit formaat presteren bijzonder goed op het platform.</p><p class=\"text-mid mb-4\">TikTok-omslagafbeeldingen moeten 1080×1920 pixels (verhouding 9:16) zijn. TikTok toont de omslag als miniatuur in het profielraster — belangrijke elementen moeten gecentreerd zijn omdat de zijkanten bijgesneden kunnen worden. Berichten op X (voorheen Twitter) worden het best weergegeven in formaat 16:9 (1600×900 px) of 2:1.</p><p class=\"text-mid\">Threads, het tekstgebaseerde platform van Meta, ondersteunt afbeeldingen tot 1440 pixels breed. Discord-servericonen vereisen een vierkante afbeelding (minimaal 512×512 px). Twitch-kanaalbanners gebruiken het formaat 1200×480 pixels. Elk platform past zijn eigen bijsnijd- en compressiealgoritmen toe — het voorbereiden van afbeeldingen op de exacte aanbevolen afmetingen zorgt ervoor dat het eindresultaat overeenkomt met het oorspronkelijke ontwerp.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Privacy en browsergebaseerde beeldverwerking",
+      "html": "<p class=\"text-mid mb-4\">Deze editor verwerkt afbeeldingen uitsluitend in de browser met behulp van de Canvas API — een ingebouwde component van elke moderne webbrowser. Het bestand wordt geladen in het werkgeheugen (RAM) van de browser en gerenderd op een onzichtbaar canvas-element. Alle bijsnijd-, formaat- en conversiebewerkingen vinden plaats op dit lokale canvas. De voltooide afbeelding wordt gegenereerd als downloadbaar bestand rechtstreeks vanuit de canvasgegevens. Op geen enkel moment verlaat de afbeelding het apparaat.</p><p class=\"text-mid mb-4\">Foto's gemaakt met smartphones bevatten vaak EXIF-metagegevens — ingebedde informatie over datum, tijd, cameramodel, belichtingsinstellingen en soms GPS-coördinaten van de opnamelocatie. Het publiceren van afbeeldingen met locatiegegevens kan een privacyrisico vormen. De meeste sociale netwerken verwijderen EXIF-gegevens tijdens het uploaden, maar websites, blogs en e-mailbijlagen kunnen de originele metagegevens in het bestand bewaren.</p><p class=\"text-mid mb-4\">Vergeleken met cloudgebaseerde editors zoals Canva of Adobe Express vereist browsergebaseerde verwerking geen upload van bestanden naar een externe server. Afbeeldingen worden niet opgeslagen op infrastructuur van derden en zijn niet onderworpen aan het privacybeleid van externe aanbieders. Voor bedrijven in Nederland en België die onder de AVG (Algemene Verordening Gegevensbescherming) vallen, elimineert lokale verwerking een categorie van gegevensverwerkingsrisico's — met name bij klantmateriaal of vertrouwelijke productafbeeldingen.</p><p class=\"text-mid\">De editor werkt ook offline nadat de pagina is geladen. Zodra de applicatiecode door de browser is gecachet, is er geen actieve internetverbinding nodig voor het bijsnijden, verkleinen of exporteren.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Veelgestelde vragen over de afbeeldingeneditor",
       "openByDefault": 1,

@@ -273,6 +273,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Visuell innholdsstrategi for sosiale medier",
+      "html": "<p class=\"text-mid mb-4\">Visuell konsistens i en profil på sosiale medier påvirker merkevareoppfatningen og engasjementsraten. På Instagram skaper profilrutenettet (grid) det første inntrykket — besøkende vurderer helheten av miniatyrbilder før de åpner et enkelt innlegg. Gjennomtenkt beskjæring av bilder gjør det mulig å bygge en visuell fortelling: vekslende bakgrunnsfarger, konsekvente proporsjoner og tilbakevendende merkevareelementer skaper et harmonisk helhetsinntrykk av profilen.</p><p class=\"text-mid mb-4\">Innlegg i stående format (1080×1350 px, forhold 4:5) tar opp mer plass i feeden på Instagram og Facebook enn kvadratiske innlegg. Større overflate betyr lengre eksponeringstid under scrolling, noe som øker sannsynligheten for interaksjon. Karuseller med flere bilder bør ha identiske mål og en enhetlig visuell stil.</p><p class=\"text-mid mb-4\">I Norge er Instagram og Facebook de dominerende visuelle plattformene for merkevarer, butikker og frilansere. LinkedIn har en sterk posisjon for B2B-kommunikasjon i det norske markedet. Å forberede grafikk med forhåndsdefinerte mål og et konsekvent eksportformat sparer tid og eliminerer feil fra manuell skalering.</p><p class=\"text-mid\">Merkevarens fargepalett bør være synlig i hver grafikk: bakgrunner, tekstoverlegg, rammer og aksentelementer. Å beskjære bilder til plattformens nøyaktige mål før publisering forhindrer uønsket beskjæring av algoritmen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Bildestørrelser for plattformer utover Instagram og Facebook",
+      "html": "<p class=\"text-mid mb-4\">YouTube-miniatyrbilder bør måle 1280×720 piksler (forhold 16:9) med en maksimal filstørrelse på 2 MB. Miniatyrbildet er en av de sterkeste faktorene for klikkfrekvensen på YouTube — et tydelig ansiktsutsnitt, lesbar tekst og kontrastrike farger presterer gjennomgående bedre enn automatisk genererte stillbilder fra videoen.</p><p class=\"text-mid mb-4\">Pinterest foretrekker vertikale pins. Den optimale størrelsen er 1000×1500 piksler (forhold 2:3). Vertikale pins tar opp mer plass på Pinterest-tavlen og i søkeresultatene, noe som øker synligheten og lagringsfrekvensen. Produktbilder, infografikk og trinn-for-trinn-guider i dette formatet presterer spesielt godt på plattformen.</p><p class=\"text-mid mb-4\">TikTok-forsidebilder bør være 1080×1920 piksler (forhold 9:16). TikTok viser forsiden som miniatyrbilde i profilrutenettet — viktige elementer bør sentreres fordi sidene kan bli beskåret. Innlegg på X (tidligere Twitter) vises best i formatet 16:9 (1600×900 px) eller 2:1.</p><p class=\"text-mid\">Threads, Metas tekstbaserte plattform, støtter bilder opptil 1440 piksler i bredden. Discord-serverikoner krever et kvadratisk bilde (minimum 512×512 px). Twitch-kanalbannere bruker formatet 1200×480 piksler. Hver plattform bruker sine egne beskjærings- og komprimeringsalgoritmer — å forberede grafikk i de nøyaktige anbefalte målene sikrer at sluttresultatet samsvarer med det opprinnelige designet.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Personvern og nettleserbasert bildebehandling",
+      "html": "<p class=\"text-mid mb-4\">Denne editoren behandler bilder utelukkende i nettleseren ved hjelp av Canvas API — en innebygd komponent i enhver moderne nettleser. Filen lastes inn i nettleserens arbeidsminne (RAM) og gjengis på et usynlig canvas-element. Alle beskjærings-, størrelsesendring- og formatkonverteringsoperasjoner skjer på dette lokale canvaset. Det ferdige bildet genereres som en nedlastbar fil direkte fra canvas-dataene. På intet tidspunkt forlater bildet enheten.</p><p class=\"text-mid mb-4\">Bilder tatt med smarttelefoner inneholder ofte EXIF-metadata — innebygd informasjon om dato, klokkeslett, kameramodell, eksponeringsinnstillinger og noen ganger GPS-koordinater for stedet der bildet ble tatt. Å publisere bilder med posisjonsdata kan utgjøre en personvernrisiko. De fleste sosiale nettverk fjerner EXIF-data ved opplasting, men nettsider, blogger og e-postvedlegg kan bevare de opprinnelige metadataene i filen.</p><p class=\"text-mid mb-4\">Sammenlignet med skybaserte redigeringsverktøy som Canva eller Adobe Express krever nettleserbasert behandling ingen opplasting av filer til en ekstern server. Bilder lagres ikke på tredjepartsinfrastruktur og er ikke underlagt eksterne leverandørers personvernpolicyer. For bedrifter i Norge som er underlagt GDPR (General Data Protection Regulation), eliminerer lokal behandling en kategori av databehandlingsrisikoer — spesielt ved håndtering av kundematerialer eller konfidensielle produktbilder.</p><p class=\"text-mid\">Editoren fungerer også offline etter at siden er lastet. Så snart applikasjonskoden er bufret av nettleseren, kreves det ingen aktiv internettforbindelse for beskjæring, størrelsesendring eller eksport.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stilte spørsmål om bilderedigereren",
       "openByDefault": 1,

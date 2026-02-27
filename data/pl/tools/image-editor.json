@@ -312,6 +312,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Strategia wizualna w mediach społecznościowych — jak dobierać formaty grafik",
+      "html": "<p class=\"text-mid mb-4\">Spójność wizualna profilu w mediach społecznościowych wpływa na rozpoznawalność marki i zaangażowanie odbiorców. Na Instagramie siatka profilu (grid) tworzy pierwsze wrażenie — zanim użytkownik przeczyta opis, widzi układ miniatur. Przemyślane kadrowanie zdjęć pozwala budować wizualną narrację: naprzemienne kolory tła, konsekwentne proporcje i powtarzalny styl grafik tworzą spójny wygląd całego profilu.</p><p class=\"text-mid mb-4\">Posty pionowe (1080×1350 px, proporcje 4:5) zajmują więcej miejsca w strumieniu wpisów na Instagramie i Facebooku niż posty kwadratowe. Większa powierzchnia oznacza dłuższy czas ekspozycji podczas przewijania, co przekłada się na wyższe prawdopodobieństwo interakcji. Karuzele z wieloma slajdami wykorzystują ten sam mechanizm — każdy slajd powinien mieć identyczne wymiary i spójną paletę kolorów.</p><p class=\"text-mid mb-4\">Na polskim rynku Facebook i Instagram pozostają wiodącymi platformami wizualnymi. Polskie marki e-commerce, agencje i freelancerzy publikują średnio 3–5 postów tygodniowo. Przygotowanie grafik z wyprzedzeniem — z ustalonymi wymiarami i formatem eksportu — oszczędza czas i eliminuje błędy wynikające z ręcznego skalowania.</p><p class=\"text-mid\">Paleta kolorów marki powinna być widoczna w każdej grafice: tła, ramki, elementy tekstowe i nakładki. Edytor pozwala wykadrować zdjęcie do dokładnych wymiarów wymaganych przez platformę, dzięki czemu grafika nie jest przycinana przez algorytm po publikacji.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wymiary grafik na platformy poza Instagramem i Facebookiem",
+      "html": "<p class=\"text-mid mb-4\">Oprócz Instagrama i Facebooka inne platformy mają własne wymagania dotyczące wymiarów grafik. Miniatura filmu na YouTube powinna mieć 1280×720 pikseli (proporcje 16:9) i rozmiar poniżej 2 MB. Miniatura jest jednym z głównych czynników wpływających na klikalność filmów — wyraźny kadr twarzy, czytelny tekst i kontrastowe kolory zwiększają liczbę wyświetleń.</p><p class=\"text-mid mb-4\">Pinterest preferuje piny w formacie pionowym — optymalny rozmiar to 1000×1500 pikseli (proporcje 2:3). Piny pionowe zajmują więcej miejsca na tablicy i w wynikach wyszukiwania Pinteresta, co zwiększa ich widoczność. Grafiki produktowe, infografiki i poradniki w tym formacie generują więcej zapisów i kliknięć.</p><p class=\"text-mid mb-4\">Grafika okładkowa na TikToku powinna mieć 1080×1920 pikseli (proporcje 9:16). Jest to ta sama proporcja co Instagram Stories i Reels, ale TikTok wyświetla okładkę jako miniaturę na profilu — ważne elementy powinny znajdować się w centralnej części kadru, ponieważ boki mogą być przycięte.</p><p class=\"text-mid\">Posty na X (dawniej Twitter) najlepiej wyglądają w proporcjach 16:9 (1600×900 px) lub 2:1. Threads, platforma Meta, obsługuje obrazy do 1440 pikseli szerokości. Na każdej z tych platform precyzyjne kadrowanie eliminuje niechciane przycięcia algorytmu i zapewnia, że grafika wygląda dokładnie tak, jak została zaprojektowana.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Prywatność i przetwarzanie zdjęć w przeglądarce",
+      "html": "<p class=\"text-mid mb-4\">Edytor przetwarza obrazy wyłącznie w przeglądarce, korzystając z interfejsu Canvas API wbudowanego w każdą nowoczesną przeglądarkę. Pliki nie są wysyłane na żaden serwer — cała operacja kadrowania, zmiany rozmiaru i konwersji formatu odbywa się lokalnie na urządzeniu użytkownika. Po zamknięciu karty przeglądarka usuwa dane obrazu z pamięci.</p><p class=\"text-mid mb-4\">Zdjęcia wykonane smartfonem często zawierają metadane EXIF — informacje o dacie, godzinie, modelu aparatu, ustawieniach ekspozycji, a niekiedy także współrzędnych GPS miejsca wykonania zdjęcia. Publikowanie zdjęć z danymi lokalizacyjnymi może stanowić ryzyko dla prywatności. Większość platform społecznościowych automatycznie usuwa EXIF przy przesyłaniu, ale strony internetowe i blogi mogą zachować te dane w oryginalnym pliku.</p><p class=\"text-mid mb-4\">W porównaniu z edytorami chmurowymi (np. Canva, Adobe Express) przetwarzanie lokalne nie wymaga przesyłania plików przez internet. Oznacza to, że zdjęcia nie trafiają na serwery zewnętrzne, nie są przechowywane w chmurze i nie podlegają politykom prywatności podmiotów trzecich. Jest to istotne z perspektywy RODO, szczególnie przy przetwarzaniu zdjęć klientów lub materiałów objętych umowami poufności.</p><p class=\"text-mid\">Edytor działa również w trybie offline — po załadowaniu strony połączenie z internetem nie jest wymagane do kadrowania i eksportu. To przydatne w sytuacjach z ograniczonym dostępem do sieci lub gdy priorytetem jest zachowanie pełnej kontroli nad plikami.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Najczęstsze pytania dotyczące edytora zdjęć",
       "openByDefault": 1,

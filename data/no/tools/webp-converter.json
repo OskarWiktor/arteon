@@ -264,6 +264,25 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Bildeoptimalisering og Core Web Vitals",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er et sett med ytelsesmålinger som Google bruker som rangeringssignaler. En av dem — LCP (Largest Contentful Paint) — måler tiden til det største synlige elementet vises på skjermen. På mange sider er dette elementet et bilde: et hero-banner, et produktfoto eller en grafikk øverst på siden. Ukomprimerte JPG- og PNG-filer på 1–3 MB forlenger LCP-tiden og senker poengsummen i PageSpeed Insights.</p><p class=\"text-mid mb-4\">Konvertering av bilder til WebP-format reduserer filstørrelsen med 25–35 % ved sammenlignbar visuell kvalitet. Mindre bildefiler forkorter nedlastningstiden for ressurser, noe som direkte forbedrer LCP-metrikken. Ytterligere teknikker — som attributtet loading=\"lazy\" for bilder under synlig flate, <code>&lt;picture&gt;</code>-elementet med srcset for å levere passende størrelser og fetchpriority=\"high\" for hero-bildet — fremskynder samlet sidegjengivelsen.</p><p class=\"text-mid mb-4\">Den andre metrikken — CLS (Cumulative Layout Shift) — måler layoutforskyvninger under sidelasting. Bilder uten deklarerte dimensjoner (attributtene width og height) forårsaker innholdssprang etter at bildet er lastet. Å deklarere dimensjoner i HTML eller CSS eliminerer dette problemet uavhengig av filformat.</p><p class=\"text-mid\">Verktøy som PageSpeed Insights, Lighthouse og WebPageTest viser detaljerte data om bildenes innvirkning på ytelsen. Lighthouse-rapporten i kategorien Performance identifiserer spesifikke filer som bør konverteres til et neste generasjons format.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Optimalisering av produktbilder i norsk netthandel",
+      "html": "<p class=\"text-mid mb-4\">Produktbilder utgjør en stor del av sidevekten i nettbutikker. En kategoriside med 40 miniatyrbilder og en produktside med et galleri på 5–8 bilder kan laste flere megabyte med bildedata ved hvert besøk. Konvertering av disse bildene til WebP reduserer dataoverføringen og fremskynder lastingen — særlig på mobile enheter, som i Norge genererer over 65 % av e-handelstrafikken.</p><p class=\"text-mid mb-4\">Prissammenligningssider og markedsplasser i Norge — Prisjakt.no, Prisguiden og Komplett — viser produktbilder ved siden av hvert tilbud. Bildekvaliteten påvirker oppfatningen av selgeren. Nettbutikker på WooCommerce, Magento og Shopify kan levere WebP i stedet for JPG via plugins eller serverkonfigurasjon.</p><p class=\"text-mid mb-4\">Miniatyrbilder på kategorisider bør dimensjoneres etter visningsrutenettet — en fil på 200×200 px som veier 8–15 KB i WebP laster raskere enn et nedskalert original på 1200×1200 px. Zoombilder på produktdetaljsiden kan beholde høyere kvalitet (85–90 %) fordi de først lastes etter brukerinteraksjon.</p><p class=\"text-mid\">Lastetiden for en produktside påvirker direkte konverteringsfrekvensen. Bransjeundersøkelser viser at hvert ekstra sekund med lastetid øker risikoen for at besøkende forlater siden. Optimalisering av produktbilder er et av de enkleste tiltakene for å korte ned lastetiden uten endringer i nettbutikkens kode.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "WebP i norske CMS-plattformer og webhotell",
+      "html": "<p class=\"text-mid mb-4\">WordPress støtter nativ opplasting av WebP-filer siden versjon 5.8. Plugins som Imagify, ShortPixel og EWWW Image Optimizer muliggjør automatisk konvertering av bilder ved opplasting til mediebiblioteket. Hvert plugin genererer en WebP-variant ved siden av originalen og leverer den til nettlesere som støtter formatet.</p><p class=\"text-mid mb-4\">Mystore — en populær norsk e-handelsplattform — tilbyr integrert bildeoptimalisering via sitt CDN. Shopify konverterer automatisk produktbilder til WebP ved levering gjennom sitt nettverk. WooCommerce-butikker drar nytte av det samme WordPress plugin-økosystemet for automatisk WebP-konvertering.</p><p class=\"text-mid mb-4\">Norske webhotell — PRO ISP, Domene.shop, Ventelo og one.com — tilbyr servere med Apache og Nginx der automatisk WebP-levering kan konfigureres. En regel i .htaccess-filen sjekker om nettleseren støtter WebP (header Accept: image/webp) og omdirigerer forespørselen til WebP-varianten hvis filen finnes på serveren.</p><p class=\"text-mid\">CDN-tjenester som Cloudflare (funksjonen Polish) og BunnyCDN tilbyr automatisk konvertering av bilder til WebP på edge-servernivå. Bildene konverteres i sanntid uten endringer på opprinnelsesserveren. Denne løsningen passer for nettsteder med et stort antall bilder, der manuell konvertering ville vært for tidkrevende.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stilte spørsmål om WebP-konvertereren",
       "openByDefault": 1,

@@ -303,6 +303,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Vizuális tartalomstratégia a közösségi médiában",
+      "html": "<p class=\"text-mid mb-4\">A közösségi média profil vizuális konzisztenciája befolyásolja a márkaérzékelést és az elköteleződési arányt. Az Instagramon a profilrács (grid) kelti az első benyomást — a látogatók a miniatűrök összességét értékelik, mielőtt megnyitnának egy egyedi bejegyzést. Az átgondolt képvágás lehetővé teszi vizuális történet felépítését: váltakozó háttérszínek, következetes arányok és visszatérő márkaelemek harmonikus összhatást keltenek a profilban.</p><p class=\"text-mid mb-4\">Az álló formátumú bejegyzések (1080×1350 px, arány 4:5) több helyet foglalnak el az Instagram és Facebook hírfolyamában, mint a négyzetes bejegyzések. Nagyobb felület hosszabb megjelenési időt jelent görgetés közben, ami növeli az interakció valószínűségét. A több képből álló karuszszelek azonos méretűek és egységes vizuális stílusúak legyenek.</p><p class=\"text-mid mb-4\">Magyarországon az Instagram és a Facebook a domináns vizuális platformok márkák, üzletek és szabadúszók számára. A LinkedIn egyre fontosabb szerepet tölt be a B2B kommunikációban a magyar piacon. A grafikák előre meghatározott méretekkel és következetes exportformátummal történő előkészítése időt takarít meg és kiküszöböli a kézi méretezésből eredő hibákat.</p><p class=\"text-mid\">A márka színpalettájának láthatónak kell lennie minden grafikában: hátterek, szövegfedések, keretek és hangsúlyos elemek. A képek platformkövetelmények szerinti pontos méretre vágása a közzététel előtt megakadályozza az algoritmus nem kívánt vágását.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Képméretek platformokhoz az Instagramon és Facebookon túl",
+      "html": "<p class=\"text-mid mb-4\">A YouTube miniatűröknek 1280×720 pixel méretűnek kell lenniük (arány 16:9), maximum 2 MB fájlmérettel. A miniatűr az egyik legerősebb tényező a YouTube-on elért kattintási arány szempontjából — a tiszta arcvágás, olvasható szöveg és kontrasztos színek következetesen jobb eredményeket érnek el, mint a videóból automatikusan generált állóképek.</p><p class=\"text-mid mb-4\">A Pinterest az álló formátumú pineket részesíti előnyben. Az optimális méret 1000×1500 pixel (arány 2:3). Az álló pinek több helyet foglalnak el a Pinterest-táblán és a keresési eredményekben, ami növeli láthatóságukat és mentési arányukat. Termékképek, infografikák és lépésről lépésre haladó útmutatók ebben a formátumban különösen jól teljesítenek a platformon.</p><p class=\"text-mid mb-4\">A TikTok borítóképeknek 1080×1920 pixel méretűnek kell lenniük (arány 9:16). A TikTok a borítót miniatűrként jeleníti meg a profilrácsban — a fontos elemeknek középen kell elhelyezkedniük, mert az oldalak levágódhatnak. Az X-en (korábban Twitter) közzétett bejegyzések a legjobban 16:9 (1600×900 px) vagy 2:1 formátumban jelennek meg.</p><p class=\"text-mid\">A Threads, a Meta szövegalapú platformja, legfeljebb 1440 pixel széles képeket támogat. A Discord szerverikononok négyzetes képet igényelnek (minimum 512×512 px). A Twitch csatornabanner mérete 1200×480 pixel. Minden platform saját vágási és tömörítési algoritmust alkalmaz — a grafikák pontos ajánlott méretben történő előkészítése biztosítja, hogy a végeredmény megegyezzen az eredeti tervvel.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Adatvédelem és böngészőalapú képfeldolgozás",
+      "html": "<p class=\"text-mid mb-4\">Ez a szerkesztő kizárólag a böngészőben dolgozza fel a képeket a Canvas API segítségével — minden modern webböngésző beépített komponensével. A fájl a böngésző munkamemóriájába (RAM) töltődik és egy láthatatlan canvas elemre renderelődik. Minden vágási, méretezési és formátumkonverziós művelet ezen a helyi canvason történik. A kész kép közvetlenül a canvas adataiból generálódik letölthető fájlként. A kép egyetlen pillanatban sem hagyja el az eszközt.</p><p class=\"text-mid mb-4\">Az okostelefonnal készített fényképek gyakran tartalmaznak EXIF metaadatokat — beágyazott információkat a dátumról, időpontról, kameramodellről, expozíciós beállításokról és néha a felvétel helyének GPS-koordinátáiról. A helyadatokat tartalmazó képek közzététele adatvédelmi kockázatot jelenthet. A legtöbb közösségi hálózat feltöltéskor automatikusan eltávolítja az EXIF adatokat, de weboldalak, blogok és e-mail mellékletek megőrizhetik az eredeti metaadatokat a fájlban.</p><p class=\"text-mid mb-4\">A felhőalapú szerkesztőkkel (pl. Canva, Adobe Express) összehasonlítva a böngészőalapú feldolgozás nem igényli fájlok feltöltését külső szerverre. A képek nem tárolódnak harmadik fél infrastruktúráján, és nem vonatkoznak rájuk külső szolgáltatók adatvédelmi irányelvei. A Magyarországon működő, GDPR (Általános Adatvédelmi Rendelet) hatálya alá tartozó vállalkozások számára a helyi feldolgozás kiküszöböli az adatkezelési kockázatok egy kategóriáját — különösen ügyfélanyagok vagy bizalmas termékképek kezelése esetén.</p><p class=\"text-mid\">A szerkesztő offline is működik az oldal betöltése után. Miután az alkalmazáskód a böngésző gyorsítótárába került, aktív internetkapcsolat nem szükséges a vágáshoz, méretezéshez vagy exportáláshoz.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Gyakran ismételt kérdések a képszerkesztőről",
       "openByDefault": 1,
