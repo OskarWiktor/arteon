@@ -7,7 +7,6 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import Wrapper from '@/components/ui/Wrapper';
 import Script from 'next/script';
 import {
-  RiImageEditLine,
   RiCropLine,
   RiAppsLine,
   RiFileTextLine,
@@ -21,17 +20,20 @@ import {
   RiInfinityFill,
   RiGlobalLine,
   RiLockLine,
+  RiLoopLeftLine,
 } from 'react-icons/ri';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
-  title: 'Strumenti online gratuiti | Immagini, SEO, colori, favicon',
-  description: '10 strumenti gratuiti: convertitore WebP, generatore di favicon, contatore di testo, estrattore di colori e codici QR. Per siti web e social media.',
+  title: 'Strumenti online gratuiti | Convertitori, SEO, colori, favicon',
+  description:
+    '22 strumenti gratuiti: 12 convertitori di immagini (JPG, PNG, WebP, SVG, BMP, GIF), generatore di favicon, editor di immagini, contatore di testo, palette di colori e codici QR. Senza registrazione.',
   alternates: getToolsIndexAlternates('it'),
   openGraph: {
-    title: 'Strumenti online gratuiti | Immagini, SEO, colori, favicon',
-    description: '10 strumenti gratuiti: convertitore WebP, generatore di favicon, contatore di testo, estrattore di colori e codici QR. Per siti web e social media.',
+    title: 'Strumenti online gratuiti | Convertitori, SEO, colori, favicon',
+    description:
+      '22 strumenti gratuiti: 12 convertitori di immagini (JPG, PNG, WebP, SVG, BMP, GIF), generatore di favicon, editor di immagini, contatore di testo, palette di colori e codici QR. Senza registrazione.',
     url: toAbsoluteUrl('/it/strumenti'),
     type: 'website',
     images: [
@@ -47,8 +49,9 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Strumenti online gratuiti',
-  description: '10 strumenti gratuiti: convertitore WebP, generatore di favicon, contatore di testo, estrattore di colori e codici QR. Per siti web e social media.',
+  name: 'Strumenti online gratuiti — convertitori di immagini, SEO, colori, favicon',
+  description:
+    '22 strumenti gratuiti: 12 convertitori di immagini (JPG, PNG, WebP, SVG, BMP, GIF), generatore di favicon, editor di immagini, contatore di testo, palette di colori e codici QR. Senza registrazione.',
   url: toAbsoluteUrl('/it/strumenti'),
   inLanguage: 'it',
   isPartOf: {
@@ -64,7 +67,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 10,
+    numberOfItems: 22,
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -159,6 +162,114 @@ const schema = {
         applicationCategory: 'UtilityApplication',
         operatingSystem: 'Any',
       },
+      {
+        '@type': 'WebApplication',
+        position: 11,
+        name: 'Convertitore JPG in WebP',
+        description: 'Converti foto JPG in WebP leggero. Riduci il peso delle immagini fino al 35%.',
+        url: toAbsoluteUrl('/it/strumenti/convertitore-jpg-in-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 12,
+        name: 'Convertitore PNG in JPG',
+        description: 'Converti file PNG in JPG nel browser. Senza limiti, senza registrazione.',
+        url: toAbsoluteUrl('/it/strumenti/convertitore-png-in-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 13,
+        name: 'Convertitore WebP in JPG',
+        description: 'Converti file WebP in JPG compatibile ovunque. Senza limiti, senza registrazione.',
+        url: toAbsoluteUrl('/it/strumenti/convertitore-webp-in-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 14,
+        name: 'Convertitore PNG in WebP',
+        description: 'Converti grafiche PNG in WebP. File più piccoli mantenendo la trasparenza.',
+        url: toAbsoluteUrl('/it/strumenti/convertitore-png-in-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 15,
+        name: 'Convertitore JPG in PNG',
+        description: 'Converti immagini JPG in PNG senza perdita. Conversione locale nel browser.',
+        url: toAbsoluteUrl('/it/strumenti/convertitore-jpg-in-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 16,
+        name: 'Convertitore WebP in PNG',
+        description: 'Converti immagini WebP in PNG senza perdita. Conversione locale, niente server.',
+        url: toAbsoluteUrl('/it/strumenti/convertitore-webp-in-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 17,
+        name: 'Convertitore SVG in PNG',
+        description: 'Converti grafiche vettoriali SVG in PNG. Ideale per documenti e social media.',
+        url: toAbsoluteUrl('/it/strumenti/convertitore-svg-in-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 18,
+        name: 'Convertitore SVG in JPG',
+        description: 'Converti grafiche SVG in JPG compatto. File più piccolo, compatibilità totale.',
+        url: toAbsoluteUrl('/it/strumenti/convertitore-svg-in-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 19,
+        name: 'Convertitore BMP in JPG',
+        description: 'Converti file BMP in JPG leggero. Riduzione drastica delle dimensioni.',
+        url: toAbsoluteUrl('/it/strumenti/convertitore-bmp-in-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 20,
+        name: 'Convertitore BMP in PNG',
+        description: 'Converti immagini BMP in PNG senza perdita. Qualità preservata, dimensioni ridotte.',
+        url: toAbsoluteUrl('/it/strumenti/convertitore-bmp-in-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 21,
+        name: 'Convertitore GIF in PNG',
+        description: 'Esporta il primo fotogramma di un GIF come PNG statico. Senza perdita di qualità.',
+        url: toAbsoluteUrl('/it/strumenti/convertitore-gif-in-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 22,
+        name: 'Convertitore GIF in JPG',
+        description: 'Esporta il primo fotogramma di un GIF come JPG compatto. File più piccolo.',
+        url: toAbsoluteUrl('/it/strumenti/convertitore-gif-in-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
     ],
   },
 };
@@ -196,7 +307,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Strumenti online gratuiti"
-        description="Convertitore di immagini, generatore di favicon, contatore di testo, strumenti colore e codici QR. Senza registrazione, senza limiti \u2013 tutto funziona nel tuo browser."
+        description="12 convertitori di formati immagine, editor di immagini, generatore di favicon, contatore di testo, strumenti colore e codici QR. Senza registrazione, senza limiti."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -210,31 +321,13 @@ export default function ToolsIndexPage() {
           grid="three"
           items={[
             {
-              icon: <RiImageEditLine className="h-8 w-8" />,
-              title: 'Convertitore JPG/PNG in WebP',
-              topImageAlt: 'Convertitore JPG/PNG in WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>
-                    Converti le tue immagini JPG o PNG in formato <strong>WebP</strong> e riduci il peso dei file. Tempi di caricamento pi\u00f9 rapidi per il tuo sito.
-                  </p>
-                  <div className="mt-4">
-                    <Button arrow link="/it/strumenti/convertitore-jpg-in-webp">
-                      Apri strumento
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
               icon: <RiCropLine className="h-8 w-8" />,
               title: 'Editor di immagini online',
               topImageAlt: 'Editor di immagini online Arteon',
               topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/editor-di-immagini-online-it.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Ritaglia le tue immagini nel formato ideale per i social media o il tuo sito. Scegli un formato predefinito o inserisci le tue dimensioni \u2013 esporta in PNG, JPG o WebP.</p>
+                  <p>Prepara il ritaglio perfetto per i social media o il tuo sito. Scegli un formato pronto o inserisci dimensioni personalizzate e scarica l\'immagine in PNG, JPG o WebP.</p>
                   <div className="mt-4">
                     <Button arrow link="/it/strumenti/editor-di-immagini-online">
                       Apri strumento
@@ -255,6 +348,208 @@ export default function ToolsIndexPage() {
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/it/strumenti/generatore-di-favicon-gratuito">
+                      Apri strumento
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Convertitori di formati immagine"
+          description="12 convertitori di immagini online — converti tra JPG, PNG, WebP, SVG, BMP e GIF. Conversione nel browser, senza invio di file."
+          grid="three"
+          items={[
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertitore JPG in WebP',
+              topImageAlt: 'Convertitore JPG in WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converti foto JPG in WebP leggero. Riduci il peso delle immagini fino al 35%.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/it/strumenti/convertitore-jpg-in-webp">
+                      Apri strumento
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertitore PNG in JPG',
+              topImageAlt: 'Convertitore PNG in JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converti file PNG in JPG nel browser. Senza limiti, senza registrazione.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/it/strumenti/convertitore-png-in-jpg">
+                      Apri strumento
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertitore WebP in JPG',
+              topImageAlt: 'Convertitore WebP in JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converti file WebP in JPG compatibile ovunque. Senza limiti, senza registrazione.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/it/strumenti/convertitore-webp-in-jpg">
+                      Apri strumento
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertitore PNG in WebP',
+              topImageAlt: 'Convertitore PNG in WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converti grafiche PNG in WebP. File più piccoli mantenendo la trasparenza.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/it/strumenti/convertitore-png-in-webp">
+                      Apri strumento
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertitore JPG in PNG',
+              topImageAlt: 'Convertitore JPG in PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converti immagini JPG in PNG senza perdita. Conversione locale nel browser.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/it/strumenti/convertitore-jpg-in-png">
+                      Apri strumento
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertitore WebP in PNG',
+              topImageAlt: 'Convertitore WebP in PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converti immagini WebP in PNG senza perdita. Conversione locale, niente server.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/it/strumenti/convertitore-webp-in-png">
+                      Apri strumento
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertitore SVG in PNG',
+              topImageAlt: 'Convertitore SVG in PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converti grafiche vettoriali SVG in PNG. Ideale per documenti e social media.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/it/strumenti/convertitore-svg-in-png">
+                      Apri strumento
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertitore SVG in JPG',
+              topImageAlt: 'Convertitore SVG in JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converti grafiche SVG in JPG compatto. File più piccolo, compatibilità totale.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/it/strumenti/convertitore-svg-in-jpg">
+                      Apri strumento
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertitore BMP in JPG',
+              topImageAlt: 'Convertitore BMP in JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converti file BMP in JPG leggero. Riduzione drastica delle dimensioni.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/it/strumenti/convertitore-bmp-in-jpg">
+                      Apri strumento
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertitore BMP in PNG',
+              topImageAlt: 'Convertitore BMP in PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converti immagini BMP in PNG senza perdita. Qualità preservata, dimensioni ridotte.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/it/strumenti/convertitore-bmp-in-png">
+                      Apri strumento
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertitore GIF in PNG',
+              topImageAlt: 'Convertitore GIF in PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Esporta il primo fotogramma di un GIF come PNG statico. Senza perdita di qualità.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/it/strumenti/convertitore-gif-in-png">
+                      Apri strumento
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertitore GIF in JPG',
+              topImageAlt: 'Convertitore GIF in JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Esporta il primo fotogramma di un GIF come JPG compatto. File più piccolo.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/it/strumenti/convertitore-gif-in-jpg">
                       Apri strumento
                     </Button>
                   </div>
@@ -429,7 +724,7 @@ export default function ToolsIndexPage() {
 
         <SectionInfo title="Cosa sono gli strumenti Arteon?">
           <p className="mb-4">
-            10 strumenti online gratuiti per creare e ottimizzare contenuti per siti web, social media e stampa \u2013 convertitore WebP, generatore di favicon, contatore di testo, estrattore di
+            22 strumenti online gratuiti per creare e ottimizzare contenuti per siti web, social media e stampa \u2013 convertitore WebP, generatore di favicon, contatore di testo, estrattore di
             colori, generatore di palette e codici QR.
           </p>
           <p>Tutti gli strumenti funzionano nel tuo browser \u2013 i file non vengono mai inviati a un server. Usali senza registrazione e senza limiti.</p>

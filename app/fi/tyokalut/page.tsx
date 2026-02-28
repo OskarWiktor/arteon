@@ -7,7 +7,6 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import Wrapper from '@/components/ui/Wrapper';
 import Script from 'next/script';
 import {
-  RiImageEditLine,
   RiCropLine,
   RiAppsLine,
   RiFileTextLine,
@@ -21,17 +20,18 @@ import {
   RiInfinityFill,
   RiGlobalLine,
   RiLockLine,
+  RiLoopLeftLine,
 } from 'react-icons/ri';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
-  title: 'Ilmaiset työkalut | Kuvat, SEO, värit, favicon',
-  description: '10 ilmaista työkalua: WebP-muunnin, favicon-generaattori, tekstilaskuri, värien poiminta ja QR-koodi. Verkkosivuille ja sosiaaliseen mediaan.',
+  title: 'Ilmaiset online-työkalut | Muuntimet, SEO, värit, favicon',
+  description: '22 ilmaista online-työkalua: 12 kuvamuunninta (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generaattori, kuvaeditori, tekstilaskuri, väripaletit ja QR-koodit. Ilman rekisteröitymistä.',
   alternates: getToolsIndexAlternates('fi'),
   openGraph: {
-    title: 'Ilmaiset työkalut | Kuvat, SEO, värit, favicon',
-    description: '10 ilmaista työkalua: WebP-muunnin, favicon-generaattori, tekstilaskuri, värien poiminta ja QR-koodi. Verkkosivuille ja sosiaaliseen mediaan.',
+    title: 'Ilmaiset online-työkalut | Muuntimet, SEO, värit, favicon',
+    description: '22 ilmaista online-työkalua: 12 kuvamuunninta (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generaattori, kuvaeditori, tekstilaskuri, väripaletit ja QR-koodit. Ilman rekisteröitymistä.',
     url: toAbsoluteUrl('/fi/tyokalut'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -41,8 +41,8 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Ilmaiset työkalut',
-  description: '10 ilmaista työkalua verkkosivuille, sosiaaliseen mediaan ja painotuotteisiin.',
+  name: 'Ilmaiset online-työkalut — kuvamuuntimet, SEO, värit, favicon',
+  description: '22 ilmaista online-työkalua: 12 kuvamuunninta (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generaattori, kuvaeditori, tekstilaskuri, väripaletit ja QR-koodit. Ilman rekisteröitymistä.',
   url: toAbsoluteUrl('/fi/tyokalut'),
   inLanguage: 'fi',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },
@@ -54,7 +54,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 10,
+    numberOfItems: 22,
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -129,6 +129,114 @@ const schema = {
         applicationCategory: 'UtilityApplication',
         operatingSystem: 'Any',
       },
+      {
+        '@type': 'WebApplication',
+        position: 11,
+        name: 'JPG WebP -muunnin',
+        description: 'Muunna JPG-valokuvat kevyeen WebP-muotoon. Pienennä tiedostokokoa jopa 35%.',
+        url: toAbsoluteUrl('/fi/tyokalut/jpg-webp-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 12,
+        name: 'PNG JPG -muunnin',
+        description: 'Muunna PNG-tiedostot JPG-muotoon selaimessa. Rajaton, ilman rekisteröitymistä.',
+        url: toAbsoluteUrl('/fi/tyokalut/png-jpg-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 13,
+        name: 'WebP JPG -muunnin',
+        description: 'Muunna WebP-tiedostot yleisesti yhteensopivaan JPG-muotoon.',
+        url: toAbsoluteUrl('/fi/tyokalut/webp-jpg-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 14,
+        name: 'PNG WebP -muunnin',
+        description: 'Muunna PNG-grafiikat WebP-muotoon. Pienemmät tiedostot läpinäkyvyys säilyttäen.',
+        url: toAbsoluteUrl('/fi/tyokalut/png-webp-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 15,
+        name: 'JPG PNG -muunnin',
+        description: 'Muunna JPG-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely selaimessa.',
+        url: toAbsoluteUrl('/fi/tyokalut/jpg-png-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 16,
+        name: 'WebP PNG -muunnin',
+        description: 'Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely.',
+        url: toAbsoluteUrl('/fi/tyokalut/webp-png-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 17,
+        name: 'SVG PNG -muunnin',
+        description: 'Muunna SVG-vektorigrafiikka PNG-muotoon. Ihanteellinen dokumentteihin ja sosiaaliseen mediaan.',
+        url: toAbsoluteUrl('/fi/tyokalut/svg-png-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 18,
+        name: 'SVG JPG -muunnin',
+        description: 'Muunna SVG-grafiikat kompaktiin JPG-muotoon. Pienempi tiedosto, täysi yhteensopivuus.',
+        url: toAbsoluteUrl('/fi/tyokalut/svg-jpg-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 19,
+        name: 'BMP JPG -muunnin',
+        description: 'Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen.',
+        url: toAbsoluteUrl('/fi/tyokalut/bmp-jpg-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 20,
+        name: 'BMP PNG -muunnin',
+        description: 'Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.',
+        url: toAbsoluteUrl('/fi/tyokalut/bmp-png-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 21,
+        name: 'GIF PNG -muunnin',
+        description: 'Vie GIF-kuvan ensimmäinen ruutu staattisena PNG-kuvana. Ilman laadun heikkenemistä.',
+        url: toAbsoluteUrl('/fi/tyokalut/gif-png-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 22,
+        name: 'GIF JPG -muunnin',
+        description: 'Vie GIF-kuvan ensimmäinen ruutu kompaktina JPG-kuvana. Pienempi tiedosto.',
+        url: toAbsoluteUrl('/fi/tyokalut/gif-jpg-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
     ],
   },
 };
@@ -154,7 +262,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Ilmaiset työkalut"
-        description="Kuvamuunnin, favicon-generaattori, tekstilaskuri, värivälineet ja QR-koodi. Ilman rekisteröitymistä, ilman rajoituksia – kaikki toimii selaimessa."
+        description="12 kuvaformaattimuunninta, kuvaeditori, favicon-generaattori, tekstilaskuri, värityökalut ja QR-koodit. Ilman rekisteröitymistä, ilman rajoituksia."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -166,31 +274,13 @@ export default function ToolsIndexPage() {
           grid="three"
           items={[
             {
-              icon: <RiImageEditLine className="h-8 w-8" />,
-              title: 'JPG/PNG–WebP-muunnin',
-              topImageAlt: 'JPG/PNG WebP-muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>
-                    Muunna JPG- tai PNG-kuvat <strong>WebP</strong>-muotoon ja pienennä tiedostokokoa. Nopeampi sivuston lataus.
-                  </p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/jpg-webp-muunnin">
-                      Avaa työkalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
               icon: <RiCropLine className="h-8 w-8" />,
-              title: 'Kuvaeditori',
-              topImageAlt: 'Kuvaeditori Arteon',
+              title: 'Kuvaeditori verkossa',
+              topImageAlt: 'Kuvaeditori verkossa Arteon',
               topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/kuvaeditori-fi.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Rajaa kuva täydellisesti sosiaalista mediaa tai verkkosivustoa varten. Valitse valmis muoto tai syötä omat pikselikoot – lataa PNG-, JPG- tai WebP-muodossa.</p>
+                  <p>Valmistele täydellinen rajaus sosiaaliseen mediaan tai verkkosivustollesi. Valitse valmis muoto tai syötä omat pikselimitat ja lataa kuva PNG-, JPG- tai WebP-muodossa.</p>
                   <div className="mt-4">
                     <Button arrow link="/fi/tyokalut/kuvaeditori">
                       Avaa työkalu
@@ -219,6 +309,208 @@ export default function ToolsIndexPage() {
             },
           ]}
         />
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Kuvaformaattimuuntimet"
+          description="12 online-kuvamuunninta — muunna JPG, PNG, WebP, SVG, BMP ja GIF välillä. Muunnos selaimessa, tiedostoja ei lähetetä."
+          grid="three"
+          items={[
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JPG WebP -muunnin',
+              topImageAlt: 'JPG WebP -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna JPG-valokuvat kevyeen WebP-muotoon. Pienennä tiedostokokoa jopa 35%.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/jpg-webp-muunnin">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'PNG JPG -muunnin',
+              topImageAlt: 'PNG JPG -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna PNG-tiedostot JPG-muotoon selaimessa. Rajaton, ilman rekisteröitymistä.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/png-jpg-muunnin">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'WebP JPG -muunnin',
+              topImageAlt: 'WebP JPG -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna WebP-tiedostot yleisesti yhteensopivaan JPG-muotoon.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/webp-jpg-muunnin">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'PNG WebP -muunnin',
+              topImageAlt: 'PNG WebP -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna PNG-grafiikat WebP-muotoon. Pienemmät tiedostot läpinäkyvyys säilyttäen.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/png-webp-muunnin">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JPG PNG -muunnin',
+              topImageAlt: 'JPG PNG -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna JPG-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely selaimessa.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/jpg-png-muunnin">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'WebP PNG -muunnin',
+              topImageAlt: 'WebP PNG -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/webp-png-muunnin">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'SVG PNG -muunnin',
+              topImageAlt: 'SVG PNG -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna SVG-vektorigrafiikka PNG-muotoon. Ihanteellinen dokumentteihin ja sosiaaliseen mediaan.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/svg-png-muunnin">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'SVG JPG -muunnin',
+              topImageAlt: 'SVG JPG -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna SVG-grafiikat kompaktiin JPG-muotoon. Pienempi tiedosto, täysi yhteensopivuus.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/svg-jpg-muunnin">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'BMP JPG -muunnin',
+              topImageAlt: 'BMP JPG -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/bmp-jpg-muunnin">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'BMP PNG -muunnin',
+              topImageAlt: 'BMP PNG -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/bmp-png-muunnin">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'GIF PNG -muunnin',
+              topImageAlt: 'GIF PNG -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Vie GIF-kuvan ensimmäinen ruutu staattisena PNG-kuvana. Ilman laadun heikkenemistä.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/gif-png-muunnin">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'GIF JPG -muunnin',
+              topImageAlt: 'GIF JPG -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Vie GIF-kuvan ensimmäinen ruutu kompaktina JPG-kuvana. Pienempi tiedosto.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/gif-jpg-muunnin">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
         <Gap size="sm" />
         <SectionSteps
           title="Teksti ja SEO"
@@ -369,7 +661,7 @@ export default function ToolsIndexPage() {
         <Gap variant="line" />
         <SectionInfo title="Mitä Arteonin työkalut ovat?">
           <p className="mb-4">
-            10 ilmaista työkalua materiaalien valmisteluun verkkosivuille, sosiaaliseen mediaan ja painotuotteisiin – WebP-muunnin, favicon-generaattori, tekstilaskuri, värien poiminta, palettien
+            22 ilmaista työkalua materiaalien valmisteluun verkkosivuille, sosiaaliseen mediaan ja painotuotteisiin – WebP-muunnin, favicon-generaattori, tekstilaskuri, värien poiminta, palettien
             generaattori ja QR-koodi.
           </p>
           <p>Kaikki työkalut toimivat selaimessa – tiedostoja ei koskaan lähetetä palvelimelle. Käytä ilman rekisteröitymistä ja ilman rajoituksia.</p>

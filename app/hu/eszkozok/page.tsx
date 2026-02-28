@@ -7,7 +7,6 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import Wrapper from '@/components/ui/Wrapper';
 import Script from 'next/script';
 import {
-  RiImageEditLine,
   RiCropLine,
   RiAppsLine,
   RiFileTextLine,
@@ -21,17 +20,18 @@ import {
   RiInfinityFill,
   RiGlobalLine,
   RiLockLine,
+  RiLoopLeftLine,
 } from 'react-icons/ri';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
-  title: 'Ingyenes online eszközök | Képek, SEO, színek, favicon',
-  description: '10 ingyenes eszköz: WebP konverter, favicon generátor, szövegszámláló, színkinyerő és QR-kódok. Weboldalakhoz és közösségi médiához. Regisztráció nélkül.',
+  title: 'Ingyenes online eszközök | Konverterek, SEO, színek, favicon',
+  description: '22 ingyenes online eszköz: 12 képkonverter (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
   alternates: getToolsIndexAlternates('hu'),
   openGraph: {
-    title: 'Ingyenes online eszközök | Képek, SEO, színek, favicon',
-    description: '10 ingyenes eszköz: WebP konverter, favicon generátor, szövegszámláló, színkinyerő és QR-kódok. Weboldalakhoz és közösségi médiához. Regisztráció nélkül.',
+    title: 'Ingyenes online eszközök | Konverterek, SEO, színek, favicon',
+    description: '22 ingyenes online eszköz: 12 képkonverter (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
     url: toAbsoluteUrl('/hu/eszkozok'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -41,8 +41,8 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Ingyenes online eszközök',
-  description: '10 ingyenes eszköz: WebP konverter, favicon generátor, szövegszámláló, színkinyerő és QR-kódok. Weboldalakhoz és közösségi médiához. Regisztráció nélkül.',
+  name: 'Ingyenes online eszközök — képkonverterek, SEO, színek, favicon',
+  description: '22 ingyenes online eszköz: 12 képkonverter (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
   url: toAbsoluteUrl('/hu/eszkozok'),
   inLanguage: 'hu',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },
@@ -54,7 +54,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 10,
+    numberOfItems: 22,
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -147,6 +147,114 @@ const schema = {
         applicationCategory: 'UtilityApplication',
         operatingSystem: 'Any',
       },
+      {
+        '@type': 'WebApplication',
+        position: 11,
+        name: 'JPG WebP konverter',
+        description: 'JPG fotók konvertálása könnyű WebP-re. Képméret csökkentése akár 35%-kal.',
+        url: toAbsoluteUrl('/hu/eszkozok/jpg-webp-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 12,
+        name: 'PNG JPG konverter',
+        description: 'PNG fájlok konvertálása JPG-re a böngészőben. Korlátlan, regisztráció nélkül.',
+        url: toAbsoluteUrl('/hu/eszkozok/prevodnik-png-na-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 13,
+        name: 'WebP JPG konverter',
+        description: 'WebP fájlok konvertálása univerzálisan kompatibilis JPG-re.',
+        url: toAbsoluteUrl('/hu/eszkozok/webp-jpg-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 14,
+        name: 'PNG WebP konverter',
+        description: 'PNG grafikák konvertálása WebP-re. Kisebb fájlok az átlátszóság megőrzésével.',
+        url: toAbsoluteUrl('/hu/eszkozok/png-webp-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 15,
+        name: 'JPG PNG konverter',
+        description: 'JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben.',
+        url: toAbsoluteUrl('/hu/eszkozok/jpg-png-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 16,
+        name: 'WebP PNG konverter',
+        description: 'WebP képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás.',
+        url: toAbsoluteUrl('/hu/eszkozok/webp-png-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 17,
+        name: 'SVG PNG konverter',
+        description: 'SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához.',
+        url: toAbsoluteUrl('/hu/eszkozok/svg-png-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 18,
+        name: 'SVG JPG konverter',
+        description: 'SVG grafikák konvertálása kompakt JPG-re. Kisebb fájl, teljes kompatibilitás.',
+        url: toAbsoluteUrl('/hu/eszkozok/svg-jpg-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 19,
+        name: 'BMP JPG konverter',
+        description: 'BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés.',
+        url: toAbsoluteUrl('/hu/eszkozok/bmp-jpg-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 20,
+        name: 'BMP PNG konverter',
+        description: 'BMP képek konvertálása veszteségmentes PNG-re. Minőség megőrzése, méret csökkentése.',
+        url: toAbsoluteUrl('/hu/eszkozok/bmp-png-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 21,
+        name: 'GIF PNG konverter',
+        description: 'Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül.',
+        url: toAbsoluteUrl('/hu/eszkozok/gif-png-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 22,
+        name: 'GIF JPG konverter',
+        description: 'Exportálja a GIF első képkockáját kompakt JPG-ként. Kisebb fájl.',
+        url: toAbsoluteUrl('/hu/eszkozok/gif-jpg-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
     ],
   },
 };
@@ -172,7 +280,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Ingyenes online eszközök"
-        description="Képkonverter, favicon generátor, szövegszámláló, színeszközök és QR-kódok. Regisztráció nélkül, korlátozás nélkül — minden a böngészőjében fut."
+        description="12 képformátum konverter, képszerkesztő, favicon-generátor, szövegszámláló, színeszközök és QR-kódok. Regisztráció nélkül, korlátok nélkül."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -186,37 +294,19 @@ export default function ToolsIndexPage() {
           grid="three"
           items={[
             {
-              icon: <RiImageEditLine className="h-8 w-8" />,
-              title: 'JPG/PNG WebP konverter',
-              topImageAlt: 'JPG/PNG WebP konverter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>
-                    Konvertálja JPG vagy PNG képeit <strong>WebP</strong> formátumba és csökkentse a fájlméretet. Gyorsabb betöltési idő a weboldalának.
-                  </p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/jpg-webp-konverter">
-                      Eszköz megnyitása
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
               icon: <RiCropLine className="h-8 w-8" />,
-              title: 'Képszerkesztő',
-              topImageAlt: 'Képszerkesztő Arteon',
-              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/kepszerkeszto-hu.webp',
+              title: 'Online képszerkesztő',
+              topImageAlt: 'Online képszerkesztő Arteon',
+              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/online-kepszerkeszto-hu.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Vágja ki képeit tökéletesen a közösségi médiához vagy weboldalához. Válasszon előre beállított formátumot vagy adjon meg egyéni pixelméreteket — letöltés PNG, JPG vagy WebP
+                    Készítse el a tökéletes vágást közösségi médiához vagy weboldalához. Válasszon kész formátumot vagy adjon meg egyéni pixelméreteket, és töltse le a képet PNG, JPG vagy WebP
                     formátumban.
                   </p>
                   <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/kepszerkeszto">
-                      Eszköz megnyitása
+                    <Button arrow link="/hu/eszkozok/online-kepszerkeszto">
+                      Megnyitás
                     </Button>
                   </div>
                 </div>
@@ -235,6 +325,208 @@ export default function ToolsIndexPage() {
                   <div className="mt-4">
                     <Button arrow link="/hu/eszkozok/ingyenes-favicon-generator">
                       Eszköz megnyitása
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Képformátum konverterek"
+          description="12 online képkonverter — váltson formátumot JPG, PNG, WebP, SVG, BMP és GIF között. Konverzió a böngészőben, fájlok feltöltése nélkül."
+          grid="three"
+          items={[
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JPG WebP konverter',
+              topImageAlt: 'JPG WebP konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>JPG fotók konvertálása könnyű WebP-re. Képméret csökkentése akár 35%-kal.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/jpg-webp-konverter">
+                      Megnyitás
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'PNG JPG konverter',
+              topImageAlt: 'PNG JPG konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>PNG fájlok konvertálása JPG-re a böngészőben. Korlátlan, regisztráció nélkül.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/prevodnik-png-na-jpg">
+                      Megnyitás
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'WebP JPG konverter',
+              topImageAlt: 'WebP JPG konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>WebP fájlok konvertálása univerzálisan kompatibilis JPG-re.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/webp-jpg-konverter">
+                      Megnyitás
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'PNG WebP konverter',
+              topImageAlt: 'PNG WebP konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>PNG grafikák konvertálása WebP-re. Kisebb fájlok az átlátszóság megőrzésével.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/png-webp-konverter">
+                      Megnyitás
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JPG PNG konverter',
+              topImageAlt: 'JPG PNG konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/jpg-png-konverter">
+                      Megnyitás
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'WebP PNG konverter',
+              topImageAlt: 'WebP PNG konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>WebP képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/webp-png-konverter">
+                      Megnyitás
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'SVG PNG konverter',
+              topImageAlt: 'SVG PNG konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/svg-png-konverter">
+                      Megnyitás
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'SVG JPG konverter',
+              topImageAlt: 'SVG JPG konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>SVG grafikák konvertálása kompakt JPG-re. Kisebb fájl, teljes kompatibilitás.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/svg-jpg-konverter">
+                      Megnyitás
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'BMP JPG konverter',
+              topImageAlt: 'BMP JPG konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/bmp-jpg-konverter">
+                      Megnyitás
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'BMP PNG konverter',
+              topImageAlt: 'BMP PNG konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>BMP képek konvertálása veszteségmentes PNG-re. Minőség megőrzése, méret csökkentése.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/bmp-png-konverter">
+                      Megnyitás
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'GIF PNG konverter',
+              topImageAlt: 'GIF PNG konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/gif-png-konverter">
+                      Megnyitás
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'GIF JPG konverter',
+              topImageAlt: 'GIF JPG konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Exportálja a GIF első képkockáját kompakt JPG-ként. Kisebb fájl.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/gif-jpg-konverter">
+                      Megnyitás
                     </Button>
                   </div>
                 </div>
@@ -405,7 +697,7 @@ export default function ToolsIndexPage() {
 
         <SectionInfo title="Mik azok az Arteon eszközök?">
           <p className="mb-4">
-            10 ingyenes online eszköz anyagok előkészítéséhez weboldalakhoz, közösségi médiához és nyomtatáshoz — WebP konverter, favicon generátor, szövegszámláló, színkinyerő, paletta generátor és
+            22 ingyenes online eszköz anyagok előkészítéséhez weboldalakhoz, közösségi médiához és nyomtatáshoz — WebP konverter, favicon generátor, szövegszámláló, színkinyerő, paletta generátor és
             QR-kódok.
           </p>
           <p>Minden eszköz a böngészőjében fut — a fájlok soha nem kerülnek szerverre küldésre. Használja regisztráció és korlátozás nélkül.</p>

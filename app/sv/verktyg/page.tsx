@@ -7,7 +7,6 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import Wrapper from '@/components/ui/Wrapper';
 import Script from 'next/script';
 import {
-  RiImageEditLine,
   RiCropLine,
   RiAppsLine,
   RiFileTextLine,
@@ -21,17 +20,18 @@ import {
   RiInfinityFill,
   RiGlobalLine,
   RiLockLine,
+  RiLoopLeftLine,
 } from 'react-icons/ri';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
-  title: 'Gratis verktyg | Bilder, SEO, farger, favicon',
-  description: '10 gratis verktyg: WebP-konverterare, favicon-generator, textraknare, fargextraktor och QR-kod. For webbplatser, sociala medier och tryck. Utan registrering.',
+  title: 'Gratis onlineverktyg | Konverterare, SEO, färger, favicon',
+  description: '22 gratis onlineverktyg: 12 bildkonverterare (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generator, bildredigerare, texträknare, färgpaletter och QR-koder. Utan registrering.',
   alternates: getToolsIndexAlternates('sv'),
   openGraph: {
-    title: 'Gratis verktyg | Bilder, SEO, farger, favicon',
-    description: '10 gratis verktyg: WebP-konverterare, favicon-generator, textraknare, fargextraktor och QR-kod. For webbplatser, sociala medier och tryck. Utan registrering.',
+    title: 'Gratis onlineverktyg | Konverterare, SEO, färger, favicon',
+    description: '22 gratis onlineverktyg: 12 bildkonverterare (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generator, bildredigerare, texträknare, färgpaletter och QR-koder. Utan registrering.',
     url: toAbsoluteUrl('/sv/verktyg'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -41,8 +41,8 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Gratis verktyg',
-  description: '10 gratis verktyg for webbplatser, sociala medier och tryck.',
+  name: 'Gratis onlineverktyg — bildkonverterare, SEO, färger, favicon',
+  description: '22 gratis onlineverktyg: 12 bildkonverterare (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generator, bildredigerare, texträknare, färgpaletter och QR-koder. Utan registrering.',
   url: toAbsoluteUrl('/sv/verktyg'),
   inLanguage: 'sv',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },
@@ -54,7 +54,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 10,
+    numberOfItems: 22,
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -122,6 +122,114 @@ const schema = {
         applicationCategory: 'UtilityApplication',
         operatingSystem: 'Any',
       },
+      {
+        '@type': 'WebApplication',
+        position: 11,
+        name: 'JPG till WebP-konverterare',
+        description: 'Konvertera JPG-foton till lättvikts-WebP. Spara upp till 35% filstorlek.',
+        url: toAbsoluteUrl('/sv/verktyg/jpg-till-webp-konverterare'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 12,
+        name: 'PNG till JPG-konverterare',
+        description: 'Konvertera PNG-filer till JPG i webbläsaren. Utan begränsning, utan registrering.',
+        url: toAbsoluteUrl('/sv/verktyg/png-till-jpg-konverterare'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 13,
+        name: 'WebP till JPG-konverterare',
+        description: 'Konvertera WebP-filer till universellt kompatibelt JPG.',
+        url: toAbsoluteUrl('/sv/verktyg/webp-till-jpg-konverterare'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 14,
+        name: 'PNG till WebP-konverterare',
+        description: 'Konvertera PNG-bilder till WebP. Mindre filer med bibehållen transparens.',
+        url: toAbsoluteUrl('/sv/verktyg/png-till-webp-konverterare'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 15,
+        name: 'JPG till PNG-konverterare',
+        description: 'Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren.',
+        url: toAbsoluteUrl('/sv/verktyg/jpg-till-png-konverterare'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 16,
+        name: 'WebP till PNG-konverterare',
+        description: 'Konvertera WebP-bilder till förlustfritt PNG. Lokal konvertering.',
+        url: toAbsoluteUrl('/sv/verktyg/webp-till-png-konverterare'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 17,
+        name: 'SVG till PNG-konverterare',
+        description: 'Konvertera SVG-vektorgrafik till PNG. Perfekt för dokument och sociala medier.',
+        url: toAbsoluteUrl('/sv/verktyg/svg-till-png-konverterare'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 18,
+        name: 'SVG till JPG-konverterare',
+        description: 'Konvertera SVG-filer till kompakt JPG. Mindre fil, full kompatibilitet.',
+        url: toAbsoluteUrl('/sv/verktyg/svg-till-jpg-konverterare'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 19,
+        name: 'BMP till JPG-konverterare',
+        description: 'Konvertera BMP-filer till lättvikts-JPG. Drastisk storleksminskning.',
+        url: toAbsoluteUrl('/sv/verktyg/bmp-till-jpg-konverterare'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 20,
+        name: 'BMP till PNG-konverterare',
+        description: 'Konvertera BMP-bilder till förlustfritt PNG. Kvalitet bevarad, storlek reducerad.',
+        url: toAbsoluteUrl('/sv/verktyg/bmp-till-png-konverterare'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 21,
+        name: 'GIF till PNG-konverterare',
+        description: 'Exportera den första bildrutan i en GIF som statisk PNG. Utan kvalitetsförlust.',
+        url: toAbsoluteUrl('/sv/verktyg/gif-till-png-konverterare'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 22,
+        name: 'GIF till JPG-konverterare',
+        description: 'Exportera den första bildrutan i en GIF som kompakt JPG. Mindre fil.',
+        url: toAbsoluteUrl('/sv/verktyg/gif-till-jpg-konverterare'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
     ],
   },
 };
@@ -144,7 +252,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Gratis verktyg"
-        description="Bildkonverterare, favicon-generator, textraknare, fargverktyg och QR-kod. Utan registrering, utan begransningar -- allt kor i webblasaren."
+        description="12 bildformatskonverterare, bildredigerare, favicon-generator, texträknare, färgverktyg och QR-koder. Utan registrering, utan begränsningar."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -156,34 +264,16 @@ export default function ToolsIndexPage() {
           grid="three"
           items={[
             {
-              icon: <RiImageEditLine className="h-8 w-8" />,
-              title: 'JPG/PNG till WebP-konverterare',
-              topImageAlt: 'JPG/PNG till WebP-konverterare Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>
-                    Konvertera JPG- eller PNG-bilder till <strong>WebP</strong>-format och minska filstorleken. Snabbare laddning for webbplatsen.
-                  </p>
-                  <div className="mt-4">
-                    <Button arrow link="/sv/verktyg/jpg-till-webp-konverterare">
-                      Oppna verktyget
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
               icon: <RiCropLine className="h-8 w-8" />,
-              title: 'Bildredigerare',
-              topImageAlt: 'Bildredigerare Arteon',
-              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/bildredigerare-sv.webp',
+              title: 'Bildredigerare online',
+              topImageAlt: 'Bildredigerare online Arteon',
+              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/bildredigerare-online-sv.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Beskara bilden perfekt for sociala medier eller webbplatsen. Valj ett fardigt format eller ange egna pixelstorlekar -- ladda ned som PNG, JPG eller WebP.</p>
+                  <p>Förbered den perfekta beskärningen för sociala medier eller din webbplats. Välj ett färdigt format eller ange egna pixelmått och ladda ner bilden som PNG, JPG eller WebP.</p>
                   <div className="mt-4">
-                    <Button arrow link="/sv/verktyg/bildredigerare">
-                      Oppna verktyget
+                    <Button arrow link="/sv/verktyg/bildredigerare-online">
+                      Öppna verktyg
                     </Button>
                   </div>
                 </div>
@@ -209,6 +299,208 @@ export default function ToolsIndexPage() {
             },
           ]}
         />
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Bildformatskonverterare"
+          description="12 bildkonverterare online — konvertera mellan JPG, PNG, WebP, SVG, BMP och GIF. Konvertering i webbläsaren, inga filer skickas."
+          grid="three"
+          items={[
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JPG till WebP-konverterare',
+              topImageAlt: 'JPG till WebP-konverterare Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konvertera JPG-foton till lättvikts-WebP. Spara upp till 35% filstorlek.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/sv/verktyg/jpg-till-webp-konverterare">
+                      Öppna verktyg
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'PNG till JPG-konverterare',
+              topImageAlt: 'PNG till JPG-konverterare Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konvertera PNG-filer till JPG i webbläsaren. Utan begränsning, utan registrering.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/sv/verktyg/png-till-jpg-konverterare">
+                      Öppna verktyg
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'WebP till JPG-konverterare',
+              topImageAlt: 'WebP till JPG-konverterare Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konvertera WebP-filer till universellt kompatibelt JPG.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/sv/verktyg/webp-till-jpg-konverterare">
+                      Öppna verktyg
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'PNG till WebP-konverterare',
+              topImageAlt: 'PNG till WebP-konverterare Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konvertera PNG-bilder till WebP. Mindre filer med bibehållen transparens.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/sv/verktyg/png-till-webp-konverterare">
+                      Öppna verktyg
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JPG till PNG-konverterare',
+              topImageAlt: 'JPG till PNG-konverterare Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/sv/verktyg/jpg-till-png-konverterare">
+                      Öppna verktyg
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'WebP till PNG-konverterare',
+              topImageAlt: 'WebP till PNG-konverterare Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konvertera WebP-bilder till förlustfritt PNG. Lokal konvertering.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/sv/verktyg/webp-till-png-konverterare">
+                      Öppna verktyg
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'SVG till PNG-konverterare',
+              topImageAlt: 'SVG till PNG-konverterare Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konvertera SVG-vektorgrafik till PNG. Perfekt för dokument och sociala medier.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/sv/verktyg/svg-till-png-konverterare">
+                      Öppna verktyg
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'SVG till JPG-konverterare',
+              topImageAlt: 'SVG till JPG-konverterare Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konvertera SVG-filer till kompakt JPG. Mindre fil, full kompatibilitet.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/sv/verktyg/svg-till-jpg-konverterare">
+                      Öppna verktyg
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'BMP till JPG-konverterare',
+              topImageAlt: 'BMP till JPG-konverterare Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konvertera BMP-filer till lättvikts-JPG. Drastisk storleksminskning.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/sv/verktyg/bmp-till-jpg-konverterare">
+                      Öppna verktyg
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'BMP till PNG-konverterare',
+              topImageAlt: 'BMP till PNG-konverterare Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konvertera BMP-bilder till förlustfritt PNG. Kvalitet bevarad, storlek reducerad.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/sv/verktyg/bmp-till-png-konverterare">
+                      Öppna verktyg
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'GIF till PNG-konverterare',
+              topImageAlt: 'GIF till PNG-konverterare Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Exportera den första bildrutan i en GIF som statisk PNG. Utan kvalitetsförlust.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/sv/verktyg/gif-till-png-konverterare">
+                      Öppna verktyg
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'GIF till JPG-konverterare',
+              topImageAlt: 'GIF till JPG-konverterare Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Exportera den första bildrutan i en GIF som kompakt JPG. Mindre fil.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/sv/verktyg/gif-till-jpg-konverterare">
+                      Öppna verktyg
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
         <Gap size="sm" />
         <SectionSteps
           title="Text och SEO"
@@ -359,7 +651,7 @@ export default function ToolsIndexPage() {
         <Gap variant="line" />
         <SectionInfo title="Vad ar Arteons verktyg?">
           <p className="mb-4">
-            10 gratis verktyg for att forbereda material for webbplatser, sociala medier och tryck -- WebP-konverterare, favicon-generator, textraknare, fargextraktor, palettgenerator och QR-kod.
+            22 gratis verktyg for att forbereda material for webbplatser, sociala medier och tryck -- WebP-konverterare, favicon-generator, textraknare, fargextraktor, palettgenerator och QR-kod.
           </p>
           <p>Alla verktyg kor i webblasaren -- filer skickas aldrig till en server. Anvand utan registrering och utan begransningar.</p>
         </SectionInfo>

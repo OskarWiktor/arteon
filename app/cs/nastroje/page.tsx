@@ -7,7 +7,6 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import Wrapper from '@/components/ui/Wrapper';
 import Script from 'next/script';
 import {
-  RiImageEditLine,
   RiCropLine,
   RiAppsLine,
   RiFileTextLine,
@@ -21,17 +20,18 @@ import {
   RiInfinityFill,
   RiGlobalLine,
   RiLockLine,
+  RiLoopLeftLine,
 } from 'react-icons/ri';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
-  title: 'Bezplatne nastroje | Obrazky, SEO, barvy, favicon',
-  description: '10 bezplatnych nastroju: konvertor WebP, generator favicon, pocitadlo textu, extraktor barev a QR kod. Pro web, socialni site a tisk. Bez registrace.',
+  title: 'Bezplatné online nástroje | Převodníky, SEO, barvy, favicon',
+  description: '22 bezplatných online nástrojů: 12 převodníků obrázků (JPG, PNG, WebP, SVG, BMP, GIF), generátor favicon, editor obrázků, počítadlo textu, barevné palety a QR kódy. Bez registrace.',
   alternates: getToolsIndexAlternates('cs'),
   openGraph: {
-    title: 'Bezplatne nastroje | Obrazky, SEO, barvy, favicon',
-    description: '10 bezplatnych nastroju: konvertor WebP, generator favicon, pocitadlo textu, extraktor barev a QR kod. Pro web, socialni site a tisk. Bez registrace.',
+    title: 'Bezplatné online nástroje | Převodníky, SEO, barvy, favicon',
+    description: '22 bezplatných online nástrojů: 12 převodníků obrázků (JPG, PNG, WebP, SVG, BMP, GIF), generátor favicon, editor obrázků, počítadlo textu, barevné palety a QR kódy. Bez registrace.',
     url: toAbsoluteUrl('/cs/nastroje'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -41,8 +41,8 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Bezplatne nastroje',
-  description: '10 bezplatnych nastroju: konvertor WebP, generator favicon, pocitadlo textu, extraktor barev a QR kod. Pro web, socialni site a tisk. Bez registrace.',
+  name: 'Bezplatné online nástroje — převodníky obrázků, SEO, barvy, favicon',
+  description: '22 bezplatných online nástrojů: 12 převodníků obrázků (JPG, PNG, WebP, SVG, BMP, GIF), generátor favicon, editor obrázků, počítadlo textu, barevné palety a QR kódy. Bez registrace.',
   url: toAbsoluteUrl('/cs/nastroje'),
   inLanguage: 'cs',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },
@@ -54,7 +54,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 10,
+    numberOfItems: 22,
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -146,6 +146,114 @@ const schema = {
         applicationCategory: 'UtilityApplication',
         operatingSystem: 'Any',
       },
+      {
+        '@type': 'WebApplication',
+        position: 11,
+        name: 'Převodník JPG na WebP',
+        description: 'Převeďte fotky JPG na lehké WebP. Snižte váhu obrázků až o 35%.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-jpg-na-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 12,
+        name: 'Převodník PNG na JPG',
+        description: 'Převeďte soubory PNG na JPG v prohlížeči. Bez limitu, bez registrace.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-png-na-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 13,
+        name: 'Převodník WebP na JPG',
+        description: 'Převeďte soubory WebP na univerzálně kompatibilní JPG.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-webp-na-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 14,
+        name: 'Převodník PNG na WebP',
+        description: 'Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-png-na-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 15,
+        name: 'Převodník JPG na PNG',
+        description: 'Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-jpg-na-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 16,
+        name: 'Převodník WebP na PNG',
+        description: 'Převeďte obrázky WebP na bezeztrátové PNG. Lokální zpracování.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-webp-na-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 17,
+        name: 'Převodník SVG na PNG',
+        description: 'Převeďte vektorovou grafiku SVG na rastrové PNG. Ideální pro dokumenty a sociální sítě.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-svg-na-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 18,
+        name: 'Převodník SVG na JPG',
+        description: 'Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-svg-na-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 19,
+        name: 'Převodník BMP na JPG',
+        description: 'Převeďte soubory BMP na lehké JPG. Drastické zmenšení velikosti.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-bmp-na-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 20,
+        name: 'Převodník BMP na PNG',
+        description: 'Převeďte obrázky BMP na bezeztrátové PNG. Kvalita zachována, velikost snížena.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-bmp-na-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 21,
+        name: 'Převodník GIF na PNG',
+        description: 'Exportujte první snímek GIFu jako statické PNG. Bez ztráty kvality.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-gif-na-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 22,
+        name: 'Převodník GIF na JPG',
+        description: 'Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-gif-na-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
     ],
   },
 };
@@ -167,7 +275,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Bezplatne nastroje"
-        description="Konvertor obrazku, generator favicon, pocitadlo textu, nastroje pro barvy a QR kod. Bez registrace, bez omezeni — vse bezi v prohlizeci."
+        description="12 převodníků obrazových formátů, editor obrázků, generátor favicon, počítadlo textu, barevné nástroje a QR kódy. Bez registrace, bez limitů."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -181,34 +289,16 @@ export default function ToolsIndexPage() {
           grid="three"
           items={[
             {
-              icon: <RiImageEditLine className="h-8 w-8" />,
-              title: 'Konvertor JPG/PNG na WebP',
-              topImageAlt: 'Konvertor JPG/PNG na WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>
-                    Prevedte JPG nebo PNG obrazky do formatu <strong>WebP</strong> a zmensete velikost souboru. Rychlejsi nacitani webu.
-                  </p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-jpg-na-webp">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
               icon: <RiCropLine className="h-8 w-8" />,
-              title: 'Editor obrazku',
-              topImageAlt: 'Editor obrazku Arteon',
+              title: 'Online editor obrázků',
+              topImageAlt: 'Online editor obrázků Arteon',
               topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/editor-obrazku-cs.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Oriznete obrazek presne pro socialni site nebo web. Vyberte prednastaveny format nebo zadejte vlastni rozmery v pixelech — stahnete v PNG, JPG nebo WebP.</p>
+                  <p>Připravte ideální ořez pro sociální sítě nebo web. Vyberte hotový formát nebo zadejte vlastní rozměry a stáhněte obrázek jako PNG, JPG nebo WebP.</p>
                   <div className="mt-4">
                     <Button arrow link="/cs/nastroje/editor-obrazku">
-                      Otevrit nastroj
+                      Otevřít nástroj
                     </Button>
                   </div>
                 </div>
@@ -227,6 +317,208 @@ export default function ToolsIndexPage() {
                   <div className="mt-4">
                     <Button arrow link="/cs/nastroje/generator-favicon-zdarma">
                       Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Převodníky obrazových formátů"
+          description="12 online převodníků obrázků — převádějte mezi JPG, PNG, WebP, SVG, BMP a GIF. Převod v prohlížeči, bez odesílání souborů."
+          grid="three"
+          items={[
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Převodník JPG na WebP',
+              topImageAlt: 'Převodník JPG na WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Převeďte fotky JPG na lehké WebP. Snižte váhu obrázků až o 35%.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-jpg-na-webp">
+                      Otevřít nástroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Převodník PNG na JPG',
+              topImageAlt: 'Převodník PNG na JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Převeďte soubory PNG na JPG v prohlížeči. Bez limitu, bez registrace.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-png-na-jpg">
+                      Otevřít nástroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Převodník WebP na JPG',
+              topImageAlt: 'Převodník WebP na JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Převeďte soubory WebP na univerzálně kompatibilní JPG.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-webp-na-jpg">
+                      Otevřít nástroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Převodník PNG na WebP',
+              topImageAlt: 'Převodník PNG na WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-png-na-webp">
+                      Otevřít nástroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Převodník JPG na PNG',
+              topImageAlt: 'Převodník JPG na PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-jpg-na-png">
+                      Otevřít nástroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Převodník WebP na PNG',
+              topImageAlt: 'Převodník WebP na PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Převeďte obrázky WebP na bezeztrátové PNG. Lokální zpracování.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-webp-na-png">
+                      Otevřít nástroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Převodník SVG na PNG',
+              topImageAlt: 'Převodník SVG na PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Převeďte vektorovou grafiku SVG na rastrové PNG. Ideální pro dokumenty a sociální sítě.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-svg-na-png">
+                      Otevřít nástroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Převodník SVG na JPG',
+              topImageAlt: 'Převodník SVG na JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-svg-na-jpg">
+                      Otevřít nástroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Převodník BMP na JPG',
+              topImageAlt: 'Převodník BMP na JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Převeďte soubory BMP na lehké JPG. Drastické zmenšení velikosti.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-bmp-na-jpg">
+                      Otevřít nástroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Převodník BMP na PNG',
+              topImageAlt: 'Převodník BMP na PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Převeďte obrázky BMP na bezeztrátové PNG. Kvalita zachována, velikost snížena.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-bmp-na-png">
+                      Otevřít nástroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Převodník GIF na PNG',
+              topImageAlt: 'Převodník GIF na PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Exportujte první snímek GIFu jako statické PNG. Bez ztráty kvality.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-gif-na-png">
+                      Otevřít nástroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Převodník GIF na JPG',
+              topImageAlt: 'Převodník GIF na JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-gif-na-jpg">
+                      Otevřít nástroj
                     </Button>
                   </div>
                 </div>
@@ -394,7 +686,7 @@ export default function ToolsIndexPage() {
 
         <SectionInfo title="Co jsou nastroje Arteon?">
           <p className="mb-4">
-            10 bezplatnych nastroju pro pripravu materialu pro web, socialni site a tisk — konvertor WebP, generator favicon, pocitadlo textu, extraktor barev, generator palet a QR kod.
+            22 bezplatnych nastroju pro pripravu materialu pro web, socialni site a tisk — konvertor WebP, generator favicon, pocitadlo textu, extraktor barev, generator palet a QR kod.
           </p>
           <p>Vsechny nastroje bezi v prohlizeci — soubory se nikdy neodesilaji na server. Pouzivejte bez registrace a bez omezeni.</p>
         </SectionInfo>

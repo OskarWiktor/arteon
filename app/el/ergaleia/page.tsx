@@ -7,7 +7,6 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import Wrapper from '@/components/ui/Wrapper';
 import Script from 'next/script';
 import {
-  RiImageEditLine,
   RiCropLine,
   RiAppsLine,
   RiFileTextLine,
@@ -21,17 +20,20 @@ import {
   RiInfinityFill,
   RiGlobalLine,
   RiLockLine,
+  RiLoopLeftLine,
 } from 'react-icons/ri';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
-  title: 'Δωρεάν εργαλεία | Εικόνες, SEO, χρώματα, favicon',
-  description: '10 δωρεάν εργαλεία: μετατροπέας WebP, δημιουργία favicon, μετρητής λέξεων, εξαγωγή χρωμάτων και κωδικοί QR. Για ιστοσελίδες και μέσα κοινωνικής δικτύωσης.',
+  title: 'Δωρεάν online εργαλεία | Μετατροπείς, SEO, χρώματα, favicon',
+  description:
+    '22 δωρεάν online εργαλεία: 12 μετατροπείς εικόνων (JPG, PNG, WebP, SVG, BMP, GIF), δημιουργία favicon, επεξεργασία εικόνας, μετρητής κειμένου, παλέτες χρωμάτων και κωδικοί QR. Χωρίς εγγραφή.',
   alternates: getToolsIndexAlternates('el'),
   openGraph: {
-    title: 'Δωρεάν εργαλεία | Εικόνες, SEO, χρώματα, favicon',
-    description: '10 δωρεάν εργαλεία: μετατροπέας WebP, δημιουργία favicon, μετρητής λέξεων, εξαγωγή χρωμάτων και κωδικοί QR. Για ιστοσελίδες και μέσα κοινωνικής δικτύωσης.',
+    title: 'Δωρεάν online εργαλεία | Μετατροπείς, SEO, χρώματα, favicon',
+    description:
+      '22 δωρεάν online εργαλεία: 12 μετατροπείς εικόνων (JPG, PNG, WebP, SVG, BMP, GIF), δημιουργία favicon, επεξεργασία εικόνας, μετρητής κειμένου, παλέτες χρωμάτων και κωδικοί QR. Χωρίς εγγραφή.',
     url: toAbsoluteUrl('/el/ergaleia'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -41,8 +43,9 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Δωρεάν εργαλεία',
-  description: '10 δωρεάν εργαλεία για ιστοσελίδες, μέσα κοινωνικής δικτύωσης και εκτύπωση.',
+  name: 'Δωρεάν online εργαλεία — μετατροπείς εικόνων, SEO, χρώματα, favicon',
+  description:
+    '22 δωρεάν online εργαλεία: 12 μετατροπείς εικόνων (JPG, PNG, WebP, SVG, BMP, GIF), δημιουργία favicon, επεξεργασία εικόνας, μετρητής κειμένου, παλέτες χρωμάτων και κωδικοί QR. Χωρίς εγγραφή.',
   url: toAbsoluteUrl('/el/ergaleia'),
   inLanguage: 'el',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },
@@ -54,7 +57,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 10,
+    numberOfItems: 22,
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -136,6 +139,114 @@ const schema = {
         applicationCategory: 'UtilityApplication',
         operatingSystem: 'Any',
       },
+      {
+        '@type': 'WebApplication',
+        position: 11,
+        name: 'Μετατροπέας JPG σε WebP',
+        description: 'Μετατρέψτε φωτογραφίες JPG σε ελαφρύ WebP. Μείωση βάρους έως 35%.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-jpg-se-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 12,
+        name: 'Μετατροπέας PNG σε JPG',
+        description: 'Μετατρέψτε αρχεία PNG σε JPG στο πρόγραμμα περιήγησης. Χωρίς όριο, χωρίς εγγραφή.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-png-se-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 13,
+        name: 'Μετατροπέας WebP σε JPG',
+        description: 'Μετατρέψτε αρχεία WebP σε καθολικά συμβατό JPG.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-webp-se-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 14,
+        name: 'Μετατροπέας PNG σε WebP',
+        description: 'Μετατρέψτε γραφικά PNG σε WebP. Μικρότερα αρχεία διατηρώντας τη διαφάνεια.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-png-se-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 15,
+        name: 'Μετατροπέας JPG σε PNG',
+        description: 'Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα περιήγησης.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-jpg-se-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 16,
+        name: 'Μετατροπέας WebP σε PNG',
+        description: 'Μετατρέψτε εικόνες WebP σε PNG χωρίς απώλειες. Τοπική μετατροπή.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-webp-se-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 17,
+        name: 'Μετατροπέας SVG σε PNG',
+        description: 'Μετατρέψτε διανυσματικά SVG σε PNG. Ιδανικό για έγγραφα και κοινωνικά δίκτυα.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-svg-se-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 18,
+        name: 'Μετατροπέας SVG σε JPG',
+        description: 'Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-svg-se-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 19,
+        name: 'Μετατροπέας BMP σε JPG',
+        description: 'Μετατρέψτε αρχεία BMP σε ελαφρύ JPG. Δραστική μείωση μεγέθους.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-bmp-se-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 20,
+        name: 'Μετατροπέας BMP σε PNG',
+        description: 'Μετατρέψτε εικόνες BMP σε PNG χωρίς απώλειες. Ποιότητα διατηρημένη, μέγεθος μειωμένο.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-bmp-se-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 21,
+        name: 'Μετατροπέας GIF σε PNG',
+        description: 'Εξαγωγή του πρώτου καρέ ενός GIF ως στατικό PNG. Χωρίς απώλεια ποιότητας.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-gif-se-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 22,
+        name: 'Μετατροπέας GIF σε JPG',
+        description: 'Εξαγωγή του πρώτου καρέ ενός GIF ως συμπαγές JPG. Μικρότερο αρχείο.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-gif-se-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
     ],
   },
 };
@@ -164,7 +275,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Δωρεάν εργαλεία"
-        description="Μετατροπέας εικόνων, δημιουργία favicon, μετρητής λέξεων, εργαλεία χρωμάτων και κωδικοί QR. Χωρίς εγγραφή, χωρίς περιορισμούς – όλα λειτουργούν στο πρόγραμμα περιήγησης."
+        description="12 μετατροπείς μορφών εικόνας, επεξεργασία εικόνας, δημιουργία favicon, μετρητής κειμένου, εργαλεία χρωμάτων και κωδικοί QR. Χωρίς εγγραφή, χωρίς όρια."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -176,31 +287,15 @@ export default function ToolsIndexPage() {
           grid="three"
           items={[
             {
-              icon: <RiImageEditLine className="h-8 w-8" />,
-              title: 'Μετατροπέας JPG/PNG σε WebP',
-              topImageAlt: 'Μετατροπέας JPG/PNG σε WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>
-                    Μετατρέψτε εικόνες JPG και PNG σε μορφή <strong>WebP</strong> και μειώστε το μέγεθος αρχείων. Ταχύτερη φόρτωση σελίδων.
-                  </p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-jpg-se-webp">
-                      Άνοιγμα εργαλείου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
               icon: <RiCropLine className="h-8 w-8" />,
-              title: 'Επεξεργασία εικόνας',
-              topImageAlt: 'Επεξεργασία εικόνας Arteon',
+              title: 'Επεξεργασία εικόνας online',
+              topImageAlt: 'Επεξεργασία εικόνας online Arteon',
               topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/epexergasia-eikonas-el.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Περικόψτε την εικόνα σας για μέσα κοινωνικής δικτύωσης ή ιστοσελίδα. Επιλέξτε προκαθορισμένη μορφή ή εισάγετε προσαρμοσμένες διαστάσεις – κατεβάστε σε PNG, JPG ή WebP.</p>
+                  <p>
+                    Προετοιμάστε την τέλεια περικοπή για κοινωνικά δίκτυα ή τον ιστότοπό σας. Επιλέξτε έτοιμη μορφή ή εισάγετε προσαρμοσμένες διαστάσεις και κατεβάστε την εικόνα σε PNG, JPG ή WebP.
+                  </p>
                   <div className="mt-4">
                     <Button arrow link="/el/ergaleia/epexergasia-eikonas">
                       Άνοιγμα εργαλείου
@@ -229,6 +324,208 @@ export default function ToolsIndexPage() {
             },
           ]}
         />
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Μετατροπείς μορφών εικόνας"
+          description="12 online μετατροπείς εικόνων — μετατρέψτε μεταξύ JPG, PNG, WebP, SVG, BMP και GIF. Μετατροπή στο πρόγραμμα περιήγησης, χωρίς αποστολή αρχείων."
+          grid="three"
+          items={[
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Μετατροπέας JPG σε WebP',
+              topImageAlt: 'Μετατροπέας JPG σε WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρέψτε φωτογραφίες JPG σε ελαφρύ WebP. Μείωση βάρους έως 35%.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-jpg-se-webp">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Μετατροπέας PNG σε JPG',
+              topImageAlt: 'Μετατροπέας PNG σε JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρέψτε αρχεία PNG σε JPG στο πρόγραμμα περιήγησης. Χωρίς όριο, χωρίς εγγραφή.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-png-se-jpg">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Μετατροπέας WebP σε JPG',
+              topImageAlt: 'Μετατροπέας WebP σε JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρέψτε αρχεία WebP σε καθολικά συμβατό JPG.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-webp-se-jpg">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Μετατροπέας PNG σε WebP',
+              topImageAlt: 'Μετατροπέας PNG σε WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρέψτε γραφικά PNG σε WebP. Μικρότερα αρχεία διατηρώντας τη διαφάνεια.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-png-se-webp">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Μετατροπέας JPG σε PNG',
+              topImageAlt: 'Μετατροπέας JPG σε PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα περιήγησης.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-jpg-se-png">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Μετατροπέας WebP σε PNG',
+              topImageAlt: 'Μετατροπέας WebP σε PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρέψτε εικόνες WebP σε PNG χωρίς απώλειες. Τοπική μετατροπή.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-webp-se-png">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Μετατροπέας SVG σε PNG',
+              topImageAlt: 'Μετατροπέας SVG σε PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρέψτε διανυσματικά SVG σε PNG. Ιδανικό για έγγραφα και κοινωνικά δίκτυα.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-svg-se-png">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Μετατροπέας SVG σε JPG',
+              topImageAlt: 'Μετατροπέας SVG σε JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-svg-se-jpg">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Μετατροπέας BMP σε JPG',
+              topImageAlt: 'Μετατροπέας BMP σε JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρέψτε αρχεία BMP σε ελαφρύ JPG. Δραστική μείωση μεγέθους.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-bmp-se-jpg">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Μετατροπέας BMP σε PNG',
+              topImageAlt: 'Μετατροπέας BMP σε PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρέψτε εικόνες BMP σε PNG χωρίς απώλειες. Ποιότητα διατηρημένη, μέγεθος μειωμένο.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-bmp-se-png">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Μετατροπέας GIF σε PNG',
+              topImageAlt: 'Μετατροπέας GIF σε PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Εξαγωγή του πρώτου καρέ ενός GIF ως στατικό PNG. Χωρίς απώλεια ποιότητας.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-gif-se-png">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Μετατροπέας GIF σε JPG',
+              topImageAlt: 'Μετατροπέας GIF σε JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Εξαγωγή του πρώτου καρέ ενός GIF ως συμπαγές JPG. Μικρότερο αρχείο.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-gif-se-jpg">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
         <Gap size="sm" />
         <SectionSteps
           title="Κείμενο και SEO"
@@ -381,7 +678,7 @@ export default function ToolsIndexPage() {
         <Gap variant="line" />
         <SectionInfo title="Τι είναι τα εργαλεία Arteon;">
           <p className="mb-4">
-            10 δωρεάν εργαλεία για την προετοιμασία υλικού για ιστοσελίδες, μέσα κοινωνικής δικτύωσης και εκτύπωση – μετατροπέας WebP, δημιουργία favicon, μετρητής λέξεων, εξαγωγή χρωμάτων, δημιουργία
+            22 δωρεάν εργαλεία για την προετοιμασία υλικού για ιστοσελίδες, μέσα κοινωνικής δικτύωσης και εκτύπωση – μετατροπέας WebP, δημιουργία favicon, μετρητής λέξεων, εξαγωγή χρωμάτων, δημιουργία
             παλετών και κωδικοί QR.
           </p>
           <p>Όλα τα εργαλεία λειτουργούν στο πρόγραμμα περιήγησης – τα αρχεία δεν αποστέλλονται ποτέ σε διακομιστή. Χρησιμοποιήστε τα χωρίς εγγραφή και χωρίς περιορισμούς.</p>

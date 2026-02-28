@@ -7,7 +7,6 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import Wrapper from '@/components/ui/Wrapper';
 import Script from 'next/script';
 import {
-  RiImageEditLine,
   RiCropLine,
   RiAppsLine,
   RiFileTextLine,
@@ -21,17 +20,20 @@ import {
   RiInfinityFill,
   RiGlobalLine,
   RiLockLine,
+  RiLoopLeftLine,
 } from 'react-icons/ri';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
-  title: 'Instrumente online gratuite | Imagini, SEO, culori, favicon',
-  description: '10 instrumente gratuite: convertor WebP, generator favicon, contor de text, extractor de culori și coduri QR. Pentru site-uri web și social media.',
+  title: 'Instrumente online gratuite | Convertoare, SEO, culori, favicon',
+  description:
+    '22 instrumente gratuite: 12 convertoare de imagini (JPG, PNG, WebP, SVG, BMP, GIF), generator de favicon, editor de imagini, contor de text, palete de culori și coduri QR. Fără înregistrare.',
   alternates: getToolsIndexAlternates('ro'),
   openGraph: {
-    title: 'Instrumente online gratuite | Imagini, SEO, culori, favicon',
-    description: '10 instrumente gratuite: convertor WebP, generator favicon, contor de text, extractor de culori și coduri QR. Pentru site-uri web și social media.',
+    title: 'Instrumente online gratuite | Convertoare, SEO, culori, favicon',
+    description:
+      '22 instrumente gratuite: 12 convertoare de imagini (JPG, PNG, WebP, SVG, BMP, GIF), generator de favicon, editor de imagini, contor de text, palete de culori și coduri QR. Fără înregistrare.',
     url: toAbsoluteUrl('/ro/instrumente'),
     type: 'website',
     images: [
@@ -47,8 +49,9 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Instrumente online gratuite',
-  description: '10 instrumente gratuite: convertor WebP, generator favicon, contor de text, extractor de culori și coduri QR. Pentru site-uri web și social media.',
+  name: 'Instrumente online gratuite — convertoare de imagini, SEO, culori, favicon',
+  description:
+    '22 instrumente gratuite: 12 convertoare de imagini (JPG, PNG, WebP, SVG, BMP, GIF), generator de favicon, editor de imagini, contor de text, palete de culori și coduri QR. Fără înregistrare.',
   url: toAbsoluteUrl('/ro/instrumente'),
   inLanguage: 'ro',
   isPartOf: {
@@ -64,7 +67,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 10,
+    numberOfItems: 22,
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -157,6 +160,114 @@ const schema = {
         applicationCategory: 'UtilityApplication',
         operatingSystem: 'Any',
       },
+      {
+        '@type': 'WebApplication',
+        position: 11,
+        name: 'Convertor JPG în WebP',
+        description: 'Convertește fotografii JPG în WebP ușor. Reducere de până la 35%.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-jpg-in-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 12,
+        name: 'Convertor PNG în JPG',
+        description: 'Convertește fișiere PNG în JPG în browser. Fără limită, fără înregistrare.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-png-in-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 13,
+        name: 'Convertor WebP în JPG',
+        description: 'Convertește fișiere WebP în JPG compatibil universal.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-webp-in-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 14,
+        name: 'Convertor PNG în WebP',
+        description: 'Convertește grafice PNG în WebP. Fișiere mai mici păstrând transparența.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-png-in-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 15,
+        name: 'Convertor JPG în PNG',
+        description: 'Convertește imagini JPG în PNG fără pierderi. Conversie locală în browser.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-jpg-in-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 16,
+        name: 'Convertor WebP în PNG',
+        description: 'Convertește imagini WebP în PNG fără pierderi. Conversie locală.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-webp-in-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 17,
+        name: 'Convertor SVG în PNG',
+        description: 'Convertește grafice vectoriale SVG în PNG. Ideal pentru documente și social media.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-svg-in-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 18,
+        name: 'Convertor SVG în JPG',
+        description: 'Convertește grafice SVG în JPG compact. Fișier mai mic, compatibilitate totală.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-svg-in-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 19,
+        name: 'Convertor BMP în JPG',
+        description: 'Convertește fișiere BMP în JPG ușor. Reducere drastică a dimensiunii.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-bmp-in-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 20,
+        name: 'Convertor BMP în PNG',
+        description: 'Convertește imagini BMP în PNG fără pierderi. Calitate păstrată, dimensiune redusă.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-bmp-in-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 21,
+        name: 'Convertor GIF în PNG',
+        description: 'Exportă primul cadru al unui GIF ca PNG static. Fără pierderi de calitate.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-gif-in-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 22,
+        name: 'Convertor GIF în JPG',
+        description: 'Exportă primul cadru al unui GIF ca JPG compact. Fișier mai mic.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-gif-in-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
     ],
   },
 };
@@ -194,7 +305,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Instrumente online gratuite"
-        description="Convertor de imagini, generator favicon, contor de text, instrumente pentru culori și coduri QR. Fără înregistrare, fără limite — totul rulează în browserul dvs."
+        description="12 convertoare de formate imagine, editor de imagini, generator de favicon, contor de text, instrumente de culoare și coduri QR. Fără înregistrare, fără limite."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -208,33 +319,18 @@ export default function ToolsIndexPage() {
           grid="three"
           items={[
             {
-              icon: <RiImageEditLine className="h-8 w-8" />,
-              title: 'Convertor JPG/PNG în WebP',
-              topImageAlt: 'Convertor JPG/PNG în WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              icon: <RiCropLine className="h-8 w-8" />,
+              title: 'Editor de imagini online',
+              topImageAlt: 'Editor de imagini online Arteon',
+              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagini-online-ro.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Convertiți imagini JPG sau PNG în format <strong>WebP</strong> și reduceți dimensiunea fișierelor. Timp de încărcare mai rapid pentru site-ul dvs.
+                    Pregătiți decupajul perfect pentru rețelele sociale sau site-ul dvs. Alegeți un format predefinit sau introduceți dimensiuni personalizate și descărcați imaginea în PNG, JPG sau
+                    WebP.
                   </p>
                   <div className="mt-4">
-                    <Button arrow link="/ro/instrumente/convertor-jpg-in-webp">
-                      Deschide instrumentul
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiCropLine className="h-8 w-8" />,
-              title: 'Editor de imagini',
-              topImageAlt: 'Editor de imagini Arteon',
-              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagini-ro.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Decupați imaginile perfect pentru social media sau site-ul dvs. Alegeți un format predefinit sau introduceți dimensiuni personalizate — descărcați în PNG, JPG sau WebP.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/ro/instrumente/editor-de-imagini">
+                    <Button arrow link="/ro/instrumente/editor-de-imagini-online">
                       Deschide instrumentul
                     </Button>
                   </div>
@@ -253,6 +349,208 @@ export default function ToolsIndexPage() {
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/ro/instrumente/generator-favicon-gratuit">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Convertoare de formate imagine"
+          description="12 convertoare de imagini online — convertiți între JPG, PNG, WebP, SVG, BMP și GIF. Conversie în browser, fără trimitere de fișiere."
+          grid="three"
+          items={[
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor JPG în WebP',
+              topImageAlt: 'Convertor JPG în WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convertește fotografii JPG în WebP ușor. Reducere de până la 35%.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-jpg-in-webp">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor PNG în JPG',
+              topImageAlt: 'Convertor PNG în JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convertește fișiere PNG în JPG în browser. Fără limită, fără înregistrare.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-png-in-jpg">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor WebP în JPG',
+              topImageAlt: 'Convertor WebP în JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convertește fișiere WebP în JPG compatibil universal.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-webp-in-jpg">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor PNG în WebP',
+              topImageAlt: 'Convertor PNG în WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convertește grafice PNG în WebP. Fișiere mai mici păstrând transparența.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-png-in-webp">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor JPG în PNG',
+              topImageAlt: 'Convertor JPG în PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convertește imagini JPG în PNG fără pierderi. Conversie locală în browser.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-jpg-in-png">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor WebP în PNG',
+              topImageAlt: 'Convertor WebP în PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convertește imagini WebP în PNG fără pierderi. Conversie locală.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-webp-in-png">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor SVG în PNG',
+              topImageAlt: 'Convertor SVG în PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convertește grafice vectoriale SVG în PNG. Ideal pentru documente și social media.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-svg-in-png">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor SVG în JPG',
+              topImageAlt: 'Convertor SVG în JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convertește grafice SVG în JPG compact. Fișier mai mic, compatibilitate totală.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-svg-in-jpg">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor BMP în JPG',
+              topImageAlt: 'Convertor BMP în JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convertește fișiere BMP în JPG ușor. Reducere drastică a dimensiunii.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-bmp-in-jpg">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor BMP în PNG',
+              topImageAlt: 'Convertor BMP în PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convertește imagini BMP în PNG fără pierderi. Calitate păstrată, dimensiune redusă.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-bmp-in-png">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor GIF în PNG',
+              topImageAlt: 'Convertor GIF în PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Exportă primul cadru al unui GIF ca PNG static. Fără pierderi de calitate.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-gif-in-png">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor GIF în JPG',
+              topImageAlt: 'Convertor GIF în JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Exportă primul cadru al unui GIF ca JPG compact. Fișier mai mic.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-gif-in-jpg">
                       Deschide instrumentul
                     </Button>
                   </div>
@@ -424,7 +722,7 @@ export default function ToolsIndexPage() {
 
         <SectionInfo title="Ce sunt instrumentele Arteon?">
           <p className="mb-4">
-            10 instrumente online gratuite pentru pregătirea materialelor pentru site-uri web, social media și tipărire — convertor WebP, generator favicon, contor de text, extractor de culori,
+            22 instrumente online gratuite pentru pregătirea materialelor pentru site-uri web, social media și tipărire — convertor WebP, generator favicon, contor de text, extractor de culori,
             generator de palete și coduri QR.
           </p>
           <p>Toate instrumentele rulează în browserul dvs. — fișierele nu sunt trimise niciodată pe un server. Utilizați-le fără înregistrare și fără limite.</p>
