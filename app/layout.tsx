@@ -81,9 +81,9 @@ const orgJsonLd = {
     },
   ],
   areaServed: 'Worldwide',
-  knowsLanguage: ['pl'],
+  knowsLanguage: ['en', 'de', 'fr', 'es', 'pt', 'it', 'nl', 'ro', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'],
   foundingDate: '2020',
-  description: 'Arteon - agencja tworząca strony internetowe, sklepy online, projekty graficzne oraz treści i kampanie marketingowe. Dla polskich firm na całym świecie.',
+  description: 'Arteon - agencja tworząca strony internetowe, sklepy online, projekty graficzne oraz treści i kampanie marketingowe udostępniająca darmowe narzędzia dla wszystkich.',
 };
 
 const websiteJsonLd = {
