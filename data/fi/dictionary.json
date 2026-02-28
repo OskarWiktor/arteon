@@ -151,6 +151,24 @@
     "errorGeneration": "{{format}}-tiedoston luominen epäonnistui.",
     "errorTooLarge": "Tiedosto on liian suuri (enint. 100 Mt).",
     "errorWrongFormat": "Lisää {{format}}-tiedostoja — muut muodot ohitetaan.",
-    "errorNoFiles": "Lisää vähintään yksi {{format}}-tiedosto."
+    "errorNoFiles": "Lisää vähintään yksi {{format}}-tiedosto.",
+    "errorAvifNotSupported": "Selaimesi ei tue AVIF-koodausta. Käytä Chromea, Edgeä tai Firefoxia."
+  },
+  "errorPages": {
+    "notFound": {
+      "title": "Sivua ei löytynyt",
+      "code": "404",
+      "description": "Etsimääsi sivua ei ole olemassa. Napsauta painiketta palataksesi etusivulle.",
+      "backHome": "Takaisin etusivulle"
+    },
+    "error": {
+      "title": "Jokin meni pieleen",
+      "description": "Tapahtui odottamaton virhe. Yritä päivittää sivu tai ota meihin yhteyttä, jos ongelma jatkuu.",
+      "tryAgain": "Yritä uudelleen",
+      "backHome": "Takaisin etusivulle",
+      "contact": "Ota yhteyttä",
+      "contactHref": "/fi/yhteystiedot",
+      "errorCode": "Virhekoodi"
+    }
   }
 }

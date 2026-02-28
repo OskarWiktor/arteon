@@ -151,6 +151,24 @@
     "errorGeneration": "Kan {{format}}-bestand niet genereren.",
     "errorTooLarge": "Bestand is te groot (max 100 MB).",
     "errorWrongFormat": "Voeg {{format}}-bestanden toe — andere formaten worden overgeslagen.",
-    "errorNoFiles": "Voeg ten minste één {{format}}-bestand toe."
+    "errorNoFiles": "Voeg ten minste één {{format}}-bestand toe.",
+    "errorAvifNotSupported": "Je browser ondersteunt geen AVIF-codering. Gebruik Chrome, Edge of Firefox."
+  },
+  "errorPages": {
+    "notFound": {
+      "title": "Pagina niet gevonden",
+      "code": "404",
+      "description": "De pagina die u zoekt bestaat niet. Klik op de knop om terug te gaan naar de startpagina.",
+      "backHome": "Terug naar home"
+    },
+    "error": {
+      "title": "Er ging iets mis",
+      "description": "Er is een onverwachte fout opgetreden. Probeer de pagina te vernieuwen of neem contact met ons op als het probleem aanhoudt.",
+      "tryAgain": "Opnieuw proberen",
+      "backHome": "Terug naar home",
+      "contact": "Neem contact op",
+      "contactHref": "/nl/contact",
+      "errorCode": "Foutcode"
+    }
   }
 }

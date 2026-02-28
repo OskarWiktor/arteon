@@ -1,0 +1,122 @@
+{
+  "toolKey": "jpgToGif",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor JPG para GIF — JPG GIF",
+    "description": "Converta fotos JPG para formato GIF. Perfeito para graficos simples e icones.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/pt/ferramentas/conversor-jpg-para-gif"
+  },
+  "hero": {
+    "title": "Conversor JPG para GIF",
+    "description": "Converta fotos JPG para formato GIF. Perfeito para graficos simples e icones.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-jpg-para-gif",
+      "label": "Conversor JPG para GIF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor JPG para GIF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converta fotos JPG para formato GIF. Perfeito para graficos simples e icones.",
+      "featureList": ["Conversao para GIF", "Ajuste de qualidade (60-95%)", "Conversao em lote", "Processamento local no navegador"]
+    },
+    "howTo": {
+      "name": "Como converter JPG para GIF",
+      "description": "Converta fotos JPG para formato GIF. Perfeito para graficos simples e icones.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Carregar ficheiros",
+          "text": "Arraste ficheiros para a pagina ou clique para selecionar."
+        },
+        {
+          "position": 2,
+          "name": "Definir qualidade",
+          "text": "Ajuste o controlo de qualidade GIF — valores mais baixos produzem ficheiros mais pequenos."
+        },
+        {
+          "position": 3,
+          "name": "Converter",
+          "text": "Clique em Converter — os ficheiros sao processados localmente no seu navegador."
+        },
+        {
+          "position": 4,
+          "name": "Descarregar",
+          "text": "Descarregue os ficheiros GIF — individualmente ou todos de uma vez."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Como funciona o conversor de JPG para GIF?",
+      "html": "<p>Converta fotos JPG para formato GIF. Perfeito para graficos simples e icones. A conversao e feita inteiramente no seu navegador — os ficheiros nunca sao enviados para um servidor. Sem registo, sem limite.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Como converter JPG para GIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Carregar ficheiros",
+          "description": "Arraste ficheiros para a pagina ou clique para selecionar."
+        },
+        {
+          "position": 2,
+          "title": "Definir qualidade",
+          "description": "Ajuste o controlo de qualidade GIF — valores mais baixos produzem ficheiros mais pequenos."
+        },
+        {
+          "position": 3,
+          "title": "Converter",
+          "description": "Clique em Converter — os ficheiros sao processados localmente no seu navegador."
+        },
+        {
+          "position": 4,
+          "title": "Descarregar",
+          "description": "Descarregue os ficheiros GIF — individualmente ou todos de uma vez."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes",
+      "items": [
+        {
+          "question": "O que e o formato GIF?",
+          "answer": "GIF e um formato de imagem amplamente suportado que suporta ate 256 cores. Ideal para graficos simples e icones."
+        },
+        {
+          "question": "Converter para GIF reduz a qualidade?",
+          "answer": "GIF usa uma paleta limitada de 256 cores. Fotografias podem perder detalhes."
+        },
+        {
+          "question": "Os meus ficheiros sao enviados para um servidor?",
+          "answer": "Nao. A conversao e feita inteiramente no seu navegador."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Precisa de mais?",
+      "description": "Contacte-nos — ajudamos a encontrar a solucao adequada.",
+      "href": "/pt/contacto",
+      "buttonText": "Escreva-nos"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Outras ferramentas"
+    }
+  ]
+}

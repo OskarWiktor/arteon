@@ -151,6 +151,24 @@
     "errorGeneration": "Impossible de générer le fichier {{format}}.",
     "errorTooLarge": "Le fichier est trop volumineux (max 100 Mo).",
     "errorWrongFormat": "Ajoutez des fichiers {{format}} — les autres formats sont ignorés.",
-    "errorNoFiles": "Ajoutez au moins un fichier {{format}}."
+    "errorNoFiles": "Ajoutez au moins un fichier {{format}}.",
+    "errorAvifNotSupported": "Votre navigateur ne prend pas en charge l'encodage AVIF. Utilisez Chrome, Edge ou Firefox."
+  },
+  "errorPages": {
+    "notFound": {
+      "title": "Page non trouvée",
+      "code": "404",
+      "description": "La page que vous recherchez n'existe pas. Cliquez sur le bouton pour revenir à la page d'accueil.",
+      "backHome": "Retour à l'accueil"
+    },
+    "error": {
+      "title": "Une erreur est survenue",
+      "description": "Une erreur inattendue s'est produite. Essayez de rafraîchir la page ou contactez-nous si le problème persiste.",
+      "tryAgain": "Réessayer",
+      "backHome": "Retour à l'accueil",
+      "contact": "Contactez-nous",
+      "contactHref": "/fr/contact",
+      "errorCode": "Code d'erreur"
+    }
   }
 }

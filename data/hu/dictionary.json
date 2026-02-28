@@ -151,6 +151,24 @@
     "errorGeneration": "A {{format}} fájl létrehozása sikertelen.",
     "errorTooLarge": "A fájl túl nagy (max 100 MB).",
     "errorWrongFormat": "Adjon hozzá {{format}} fájlokat — más formátumok kimaradnak.",
-    "errorNoFiles": "Adjon hozzá legalább egy {{format}} fájlt."
+    "errorNoFiles": "Adjon hozzá legalább egy {{format}} fájlt.",
+    "errorAvifNotSupported": "A böngésződ nem támogatja az AVIF kódolást. Használj Chrome-ot, Edge-et vagy Firefoxot."
+  },
+  "errorPages": {
+    "notFound": {
+      "title": "Az oldal nem található",
+      "code": "404",
+      "description": "A keresett oldal nem létezik. Kattintson a gombra a kezdőlapra való visszatéréshez.",
+      "backHome": "Vissza a kezdőlapra"
+    },
+    "error": {
+      "title": "Valami hiba történt",
+      "description": "Váratlan hiba történt. Próbálja meg frissíteni az oldalt, vagy lépjen kapcsolatba velünk, ha a probléma továbbra is fennáll.",
+      "tryAgain": "Próbálja újra",
+      "backHome": "Vissza a kezdőlapra",
+      "contact": "Kapcsolat",
+      "contactHref": "/hu/kapcsolat",
+      "errorCode": "Hibakód"
+    }
   }
 }

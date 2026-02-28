@@ -1,0 +1,122 @@
+{
+  "toolKey": "heicToAvif",
+  "locale": "da",
+  "metadata": {
+    "title": "HEIC til AVIF-konverter — HEIC AVIF",
+    "description": "Konverter iPhone HEIC-fotos til moderne AVIF-format.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/da/vaerktojer/heic-til-avif-konverter"
+  },
+  "hero": {
+    "title": "HEIC til AVIF-konverter",
+    "description": "Konverter iPhone HEIC-fotos til moderne AVIF-format.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/heic-til-avif-konverter",
+      "label": "HEIC til AVIF-konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "HEIC til AVIF-konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konverter iPhone HEIC-fotos til moderne AVIF-format.",
+      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"]
+    },
+    "howTo": {
+      "name": "Hvordan konverterer man HEIC til AVIF",
+      "description": "Konverter iPhone HEIC-fotos til moderne AVIF-format.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Upload filer",
+          "text": "Traek filer til siden eller klik for at vaelge fra disken."
+        },
+        {
+          "position": 2,
+          "name": "Indstil kvalitet",
+          "text": "Juster AVIF-kvalitetsskyderen — lavere vaerdier giver mindre filer."
+        },
+        {
+          "position": 3,
+          "name": "Konverter",
+          "text": "Klik pa Konverter — filerne behandles lokalt i browseren."
+        },
+        {
+          "position": 4,
+          "name": "Download",
+          "text": "Download AVIF-filerne — enkeltvis eller alle pa en gang."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Hvordan fungerer HEIC til AVIF-konverteren?",
+      "html": "<p>Konverter iPhone HEIC-fotos til moderne AVIF-format. Konverteringen foregaar helt i browseren — filer sendes aldrig til en server. Uden registrering, uden begraensning.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Hvordan konverterer man HEIC til AVIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Upload filer",
+          "description": "Traek filer til siden eller klik for at vaelge fra disken."
+        },
+        {
+          "position": 2,
+          "title": "Indstil kvalitet",
+          "description": "Juster AVIF-kvalitetsskyderen — lavere vaerdier giver mindre filer."
+        },
+        {
+          "position": 3,
+          "title": "Konverter",
+          "description": "Klik pa Konverter — filerne behandles lokalt i browseren."
+        },
+        {
+          "position": 4,
+          "title": "Download",
+          "description": "Download AVIF-filerne — enkeltvis eller alle pa en gang."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stillede sporgsmal",
+      "items": [
+        {
+          "question": "Hvad er AVIF-format?",
+          "answer": "AVIF er et moderne billedformat baseret pa AV1-codec. Det tilbyder fremragende komprimering — filer kan vaere op til 50% mindre end JPG."
+        },
+        {
+          "question": "Virker AVIF i alle browsere?",
+          "answer": "AVIF understøttes af Chrome, Edge og Firefox. Safari har begrænset AVIF-understøttelse."
+        },
+        {
+          "question": "Sendes mine filer til en server?",
+          "answer": "Nej. Konverteringen foregår helt i browseren. Filer forlader aldrig din computer."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Har du brug for mere?",
+      "description": "Kontakt os — vi hjaelper dig med at finde den rigtige losning.",
+      "href": "/da/kontakt",
+      "buttonText": "Skriv til os"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre vaerktojer"
+    }
+  ]
+}

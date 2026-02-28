@@ -15,6 +15,7 @@ export interface ConversionQueueOptions {
     canvasNotSupported?: string;
     generationError?: string;
     fileTooLarge?: string;
+    avifNotSupported?: string;
   };
 }
 

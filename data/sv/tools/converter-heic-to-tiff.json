@@ -1,0 +1,122 @@
+{
+  "toolKey": "heicToTiff",
+  "locale": "sv",
+  "metadata": {
+    "title": "HEIC till TIFF-konverterare — HEIC TIFF",
+    "description": "Konvertera iPhone HEIC-foton till professionellt TIFF-format.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/sv/verktyg/heic-till-tiff-konverterare"
+  },
+  "hero": {
+    "title": "HEIC till TIFF-konverterare",
+    "description": "Konvertera iPhone HEIC-foton till professionellt TIFF-format.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/heic-till-tiff-konverterare",
+      "label": "HEIC till TIFF-konverterare"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "HEIC till TIFF-konverterare",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konvertera iPhone HEIC-foton till professionellt TIFF-format.",
+      "featureList": ["Konvertering till TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webblasaren"]
+    },
+    "howTo": {
+      "name": "Hur konverterar man HEIC till TIFF",
+      "description": "Konvertera iPhone HEIC-foton till professionellt TIFF-format.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Ladda upp filer",
+          "text": "Dra filer till sidan eller klicka for att valja fran disk."
+        },
+        {
+          "position": 2,
+          "name": "Stall in kvalitet",
+          "text": "Justera TIFF-kvalitetsreglaget — lagre varden ger mindre filer."
+        },
+        {
+          "position": 3,
+          "name": "Konvertera",
+          "text": "Klicka pa Konvertera — filerna bearbetas lokalt i webblasaren."
+        },
+        {
+          "position": 4,
+          "name": "Ladda ner",
+          "text": "Ladda ner TIFF-filerna — enskilt eller alla pa en gang."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Hur fungerar HEIC till TIFF-konverteraren?",
+      "html": "<p>Konvertera iPhone HEIC-foton till professionellt TIFF-format. Konverteringen sker helt i webblasaren — filer skickas aldrig till en server. Utan registrering, utan begransning.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Hur konverterar man HEIC till TIFF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Ladda upp filer",
+          "description": "Dra filer till sidan eller klicka for att valja fran disk."
+        },
+        {
+          "position": 2,
+          "title": "Stall in kvalitet",
+          "description": "Justera TIFF-kvalitetsreglaget — lagre varden ger mindre filer."
+        },
+        {
+          "position": 3,
+          "title": "Konvertera",
+          "description": "Klicka pa Konvertera — filerna bearbetas lokalt i webblasaren."
+        },
+        {
+          "position": 4,
+          "title": "Ladda ner",
+          "description": "Ladda ner TIFF-filerna — enskilt eller alla pa en gang."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Vanliga fragor",
+      "items": [
+        {
+          "question": "Vad ar TIFF-format?",
+          "answer": "TIFF ar ett professionellt forlustfritt bildformat som anvands for utskrift, publicering och arkivering."
+        },
+        {
+          "question": "Ar TIFF-filer storre an JPG?",
+          "answer": "Ja. TIFF-filer ar vanligtvis mycket storre eftersom de anvander forlustfri komprimering."
+        },
+        {
+          "question": "Skickas mina filer till en server?",
+          "answer": "Nej. Konverteringen sker helt i webblasaren."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Behover du mer?",
+      "description": "Kontakta oss — vi hjalper dig hitta ratt losning.",
+      "href": "/sv/kontakt",
+      "buttonText": "Skriv till oss"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andra verktyg"
+    }
+  ]
+}

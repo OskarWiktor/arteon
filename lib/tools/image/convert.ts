@@ -12,6 +12,7 @@ export interface ConvertImageOptions {
     generationError?: string;
     fileTooLarge?: string;
     imageTooLarge?: string;
+    avifNotSupported?: string;
   };
 }
 
@@ -64,6 +65,65 @@ async function decodeTiff(file: File): Promise<ImageData> {
   const clamped = new Uint8ClampedArray(rgba.length);
   clamped.set(rgba);
   return new ImageData(clamped, ifds[0].width, ifds[0].height);
+}
+
+// ---- AVIF browser support detection (cached) ----
+let avifSupportCache: boolean | null = null;
+async function checkAvifSupport(): Promise<boolean> {
+  if (avifSupportCache !== null) return avifSupportCache;
+  try {
+    const c = document.createElement('canvas');
+    c.width = 1;
+    c.height = 1;
+    const blob = await new Promise<Blob | null>((resolve) => c.toBlob(resolve, 'image/avif', 0.5));
+    avifSupportCache = blob !== null && blob.type === 'image/avif';
+  } catch {
+    avifSupportCache = false;
+  }
+  return avifSupportCache;
+}
+
+// ---- GIF encoding via gifenc ----
+async function encodeGif(canvas: HTMLCanvasElement, errorMessage?: string): Promise<Blob> {
+  const { GIFEncoder, quantize, applyPalette } = await import('gifenc');
+  const ctx = canvas.getContext('2d');
+  if (!ctx) throw new Error(errorMessage ?? 'Failed to generate GIF.');
+  const { data, width, height } = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const palette = quantize(data, 256);
+  const index = applyPalette(data, palette);
+  const gif = GIFEncoder();
+  gif.writeFrame(index, width, height, { palette });
+  gif.finish();
+  const bytes = gif.bytes();
+  return new Blob([new Uint8Array(bytes)], { type: 'image/gif' });
+}
+
+// ---- TIFF encoding via utif2 ----
+async function encodeTiffFromCanvas(canvas: HTMLCanvasElement, errorMessage?: string): Promise<Blob> {
+  const UTIF = await import('utif2');
+  const ctx = canvas.getContext('2d');
+  if (!ctx) throw new Error(errorMessage ?? 'Failed to generate TIFF.');
+  const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const encoded = (UTIF as any).encodeImage(imgData.data, imgData.width, imgData.height) as ArrayBuffer;
+  return new Blob([encoded], { type: 'image/tiff' });
+}
+
+// ---- Unified output encoding ----
+async function encodeFromCanvas(canvas: HTMLCanvasElement, targetMime: string, quality: number | undefined, errorMessages?: ConvertImageOptions['errorMessages']): Promise<Blob> {
+  if (targetMime === 'image/gif') {
+    return encodeGif(canvas, errorMessages?.generationError);
+  }
+  if (targetMime === 'image/tiff') {
+    return encodeTiffFromCanvas(canvas, errorMessages?.generationError);
+  }
+  if (targetMime === 'image/avif') {
+    const supported = await checkAvifSupport();
+    if (!supported) {
+      throw new Error(errorMessages?.avifNotSupported ?? 'Your browser does not support AVIF encoding. Use Chrome, Edge, or Firefox.');
+    }
+  }
+  return canvasToBlob(canvas, targetMime, quality, errorMessages?.generationError);
 }
 
 export async function convertImage(file: File, options: ConvertImageOptions): Promise<Blob> {
@@ -131,9 +191,9 @@ export async function convertImage(file: File, options: ConvertImageOptions): Pr
         ctx.fillRect(0, 0, w, h);
       }
       ctx.drawImage(tmpCanvas, 0, 0, w, h);
-      return canvasToBlob(canvas, targetMime, quality, errorMessages?.generationError);
+      return encodeFromCanvas(canvas, targetMime, quality, errorMessages);
     } catch (err) {
-      if (err instanceof Error && err.message.includes('Canvas')) throw err;
+      if (err instanceof Error && (err.message.includes('Canvas') || err.message.includes('AVIF') || err.message.includes('GIF') || err.message.includes('TIFF'))) throw err;
       throw new Error(errorMessages?.imageLoad ?? 'TIFF decoding failed. Try a different file.');
     }
   }
@@ -191,5 +251,5 @@ export async function convertImage(file: File, options: ConvertImageOptions): Pr
 
   ctx.drawImage(img, 0, 0, w, h);
 
-  return canvasToBlob(canvas, targetMime, quality, errorMessages?.generationError);
+  return encodeFromCanvas(canvas, targetMime, quality, errorMessages);
 }

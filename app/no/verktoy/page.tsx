@@ -28,12 +28,12 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 export const metadata = {
   title: 'Gratis nettverktøy | Konverterere, SEO, farger, favicon',
   description:
-    '34 gratis nettverktøy: 24 bildekonverterere (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, bildeeditor, tekstteller, fargepaletter og QR-koder. Uten registrering.',
+    'Gratis nettverktøy: 24 bildekonverterere (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, bildeeditor, tekstteller, fargepaletter og QR-koder. Uten registrering.',
   alternates: getToolsIndexAlternates('no'),
   openGraph: {
     title: 'Gratis nettverktøy | Konverterere, SEO, farger, favicon',
     description:
-      '34 gratis nettverktøy: 24 bildekonverterere (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, bildeeditor, tekstteller, fargepaletter og QR-koder. Uten registrering.',
+      'Gratis nettverktøy: 24 bildekonverterere (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, bildeeditor, tekstteller, fargepaletter og QR-koder. Uten registrering.',
     url: toAbsoluteUrl('/no/verktoy'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -45,7 +45,7 @@ const schema = {
   '@type': 'CollectionPage',
   name: 'Gratis nettverktøy — bildekonverterere, SEO, farger, favicon',
   description:
-    '34 gratis nettverktøy: 24 bildekonverterere (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, bildeeditor, tekstteller, fargepaletter og QR-koder. Uten registrering.',
+    'Gratis nettverktøy: 24 bildekonverterere (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, bildeeditor, tekstteller, fargepaletter og QR-koder. Uten registrering.',
   url: toAbsoluteUrl('/no/verktoy'),
   inLanguage: 'no',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },
@@ -57,7 +57,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 34,
+
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -348,6 +348,177 @@ const schema = {
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
+      {
+        '@type': 'WebApplication',
+        position: 35,
+        name: 'JPG til AVIF-konverterer',
+        description: 'Konverter JPG-bilder til moderne AVIF. Opptil 50% bedre komprimering enn JPG.',
+        url: toAbsoluteUrl('/no/verktoy/jpg-til-avif-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 36,
+        name: 'PNG til AVIF-konverterer',
+        description: 'Konverter PNG-grafikk til AVIF med transparensstotte. Betydelig mindre filer.',
+        url: toAbsoluteUrl('/no/verktoy/png-til-avif-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 37,
+        name: 'WebP til AVIF-konverterer',
+        description: 'Konverter WebP-filer til AVIF. Enda bedre komprimering i et moderne format.',
+        url: toAbsoluteUrl('/no/verktoy/webp-til-avif-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 38,
+        name: 'SVG til AVIF-konverterer',
+        description: 'Konverter vektor-SVG-grafikk til kompakt AVIF-rasterformat.',
+        url: toAbsoluteUrl('/no/verktoy/svg-til-avif-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 39,
+        name: 'BMP til AVIF-konverterer',
+        description: 'Konverter ukomprimerte BMP-filer til ultrakompakt AVIF.',
+        url: toAbsoluteUrl('/no/verktoy/bmp-til-avif-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 40,
+        name: 'GIF til AVIF-konverterer',
+        description: 'Konverter forste GIF-bilde til statisk AVIF-bilde med utmerket komprimering.',
+        url: toAbsoluteUrl('/no/verktoy/gif-til-avif-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 41,
+        name: 'HEIC til AVIF-konverterer',
+        description: 'Konverter iPhone HEIC-bilder til moderne AVIF-format.',
+        url: toAbsoluteUrl('/no/verktoy/heic-til-avif-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 42,
+        name: 'TIFF til AVIF-konverterer',
+        description: 'Konverter TIFF-filer til moderne AVIF. Massiv filstorrelsesreduksjon.',
+        url: toAbsoluteUrl('/no/verktoy/tiff-til-avif-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 43,
+        name: 'JPG til GIF-konverterer',
+        description: 'Konverter JPG-bilder til GIF-format. Perfekt for enkel grafikk og ikoner.',
+        url: toAbsoluteUrl('/no/verktoy/jpg-til-gif-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 44,
+        name: 'PNG til GIF-konverterer',
+        description: 'Konverter PNG-grafikk til GIF. Ideell for enkle ikoner og grafikk.',
+        url: toAbsoluteUrl('/no/verktoy/png-til-gif-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 45,
+        name: 'WebP til GIF-konverterer',
+        description: 'Konverter WebP-bilder til GIF-format for maksimal kompatibilitet.',
+        url: toAbsoluteUrl('/no/verktoy/webp-til-gif-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 46,
+        name: 'SVG til GIF-konverterer',
+        description: 'Konverter vektor-SVG-grafikk til GIF-rasterformat.',
+        url: toAbsoluteUrl('/no/verktoy/svg-til-gif-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 47,
+        name: 'BMP til GIF-konverterer',
+        description: 'Konverter ukomprimerte BMP-filer til lettvekts GIF.',
+        url: toAbsoluteUrl('/no/verktoy/bmp-til-gif-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 48,
+        name: 'JPG til TIFF-konverterer',
+        description: 'Konverter JPG-bilder til tapsfritt TIFF. For utskrift og arkivering.',
+        url: toAbsoluteUrl('/no/verktoy/jpg-til-tiff-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 49,
+        name: 'PNG til TIFF-konverterer',
+        description: 'Konverter PNG-grafikk til profesjonelt TIFF-format.',
+        url: toAbsoluteUrl('/no/verktoy/png-til-tiff-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 50,
+        name: 'WebP til TIFF-konverterer',
+        description: 'Konverter WebP-bilder til profesjonelt TIFF for utskrift og arkivering.',
+        url: toAbsoluteUrl('/no/verktoy/webp-til-tiff-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 51,
+        name: 'SVG til TIFF-konverterer',
+        description: 'Konverter vektor-SVG-grafikk til hoykvalitets TIFF-raster.',
+        url: toAbsoluteUrl('/no/verktoy/svg-til-tiff-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 52,
+        name: 'BMP til TIFF-konverterer',
+        description: 'Konverter BMP-filer til profesjonelt TIFF-format for utskrift.',
+        url: toAbsoluteUrl('/no/verktoy/bmp-til-tiff-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 53,
+        name: 'HEIC til TIFF-konverterer',
+        description: 'Konverter iPhone HEIC-bilder til profesjonelt TIFF-format.',
+        url: toAbsoluteUrl('/no/verktoy/heic-til-tiff-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
     ],
   },
 };
@@ -409,6 +580,153 @@ export default function ToolsIndexPage() {
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/no/verktoy/gratis-favicon-generator">
+                      Aapne verktoyet
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <SectionSteps
+          title="Tekst og SEO"
+          description="Verktoy for kontroll av tekstlengde, meta-tagger og forhaandsvisning av siden i sokeresultater."
+          grid="three"
+          items={[
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Meta-tittel- og beskrivelsessjekker',
+              topImageAlt: 'Meta-tittel- og beskrivelsessjekker Arteon',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-tittel-og-beskrivelse-sjekker-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Sjekk antall tegn, antall ord og pikselbredde -- med Google-forhaandsvisning. Unngaa avkortede titler og beskrivelser i sokeresultatene.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/meta-tittel-og-beskrivelse-sjekker">
+                      Aapne verktoyet
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiArticleLine className="h-8 w-8" />,
+              title: 'Ord- og tegnteller',
+              topImageAlt: 'Ord- og tegnteller Arteon',
+              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegnteller-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Sjekk tekstlengden og vurder om den passer for en forside, tjenesteside, blogginnlegg eller produktbeskrivelse. Verktoyet teller ord, tegn, avsnitt og lesetid.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/ord-og-tegnteller">
+                      Aapne verktoyet
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+        <Gap size="sm" />
+        <SectionSteps
+          title="E-post og kommunikasjon"
+          description="Verktoy for profesjonell e-postkommunikasjon og konsekvent merkevarebilde."
+          grid="three"
+          items={[
+            {
+              icon: <RiMailLine className="h-8 w-8" />,
+              title: 'Gratis HTML e-postsignatur-generator',
+              topImageAlt: 'Gratis e-postsignatur-generator Arteon',
+              topImageSrc: '/assets/tools/free-html-email-signature-generator/gratis-e-postsignatur-generator-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Lag en profesjonell e-postsignatur paa faa minutter. Skriv inn informasjonen din, velg farger og kopier den ferdige HTML-koden til Gmail, Outlook eller en annen e-postklient.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/gratis-e-postsignatur-generator">
+                      Aapne verktoyet
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+        <Gap size="sm" />
+        <SectionSteps
+          title="QR-kode"
+          description="QR-kode-generator for nettsider, visittkort, menyer og trykkmateriell."
+          grid="three"
+          items={[
+            {
+              icon: <RiQrCodeLine className="h-8 w-8" />,
+              title: 'Gratis QR-kode-generator',
+              topImageAlt: 'Gratis QR-kode-generator Arteon',
+              topImageSrc: '/assets/tools/qr-code-generator/gratis-qr-kode-generator-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Lag en QR-kode for en nettside, vCard, restaurantmeny eller flygeblad. Eksporter til PNG og SVG -- uten innlogging, uten begrensninger.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/gratis-qr-kode-generator">
+                      Aapne verktoyet
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+        <Gap size="sm" />
+        <SectionSteps
+          title="Farger og tilgjengelighet"
+          description="Verktoy for aa jobbe med farger, kontrast og WCAG-tilgjengelighet."
+          grid="three"
+          items={[
+            {
+              icon: <RiContrast2Line className="h-8 w-8" />,
+              title: 'Fargekontrastsjekker',
+              topImageAlt: 'Fargekontrastsjekker Arteon',
+              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/fargekontrastsjekker-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>
+                    Sjekk om tekst- og bakgrunnsfargene er lesbare. Skriv inn fargekoder, se kontrastforholdet i henhold til <strong>WCAG</strong> og bruk <strong>Match</strong>-funksjonen for
+                    automatisk korrigering.
+                  </p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/fargekontrastsjekker">
+                      Aapne verktoyet
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiPantoneLine className="h-8 w-8" />,
+              title: 'Fargeuttrrekker fra bilde',
+              topImageAlt: 'Fargeuttrrekker fra bilde Arteon',
+              topImageSrc: '/assets/tools/image-color-extractor/fargeutrekker-fra-bilde-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Last opp et foto eller en logo -- verktoyet trekker ut de dominerende fargene. Kopier HEX-koder med ett klikk og bruk dem hvor som helst.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/fargeuttrrekker-fra-bilde">
+                      Aapne verktoyet
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiPaletteLine className="h-8 w-8" />,
+              title: 'Fargepalettgenerator',
+              topImageAlt: 'Fargepalettgenerator Arteon',
+              topImageSrc: '/assets/tools/color-palette-generator/fargepalettgenerator-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Velg en basisfarge og lag 9 fargepaletter: monokromatisk, komplementaer, triadisk, pastell, mork og flere. Kopier HEX-koder med ett klikk.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/fargepalettgenerator">
                       Aapne verktoyet
                     </Button>
                   </div>
@@ -568,396 +886,11 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'BMP til PNG-konverterer',
-              topImageAlt: 'BMP til PNG-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Konverter BMP-bilder til tapsfritt PNG. Kvalitet bevart, størrelse redusert.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/bmp-til-png-konverterer">
-                      Åpne verktøy
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'GIF til PNG-konverterer',
-              topImageAlt: 'GIF til PNG-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Eksporter det første bildet i en GIF som statisk PNG. Uten kvalitetstap.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/gif-til-png-konverterer">
-                      Åpne verktøy
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'GIF til JPG-konverterer',
-              topImageAlt: 'GIF til JPG-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Eksporter det første bildet i en GIF som kompakt JPG. Mindre fil.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/gif-til-jpg-konverterer">
-                      Åpne verktøy
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'SVG til WebP-konverterer',
-              topImageAlt: 'SVG til WebP-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Konverter SVG-grafikk til lett WebP. Ideell for nettsider.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/svg-til-webp-konverterer">
-                      Apne verktoy
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'GIF til WebP-konverterer',
-              topImageAlt: 'GIF til WebP-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Eksporter forste GIF-bilde som lett WebP. Mindre fil.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/gif-til-webp-konverterer">
-                      Apne verktoy
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'BMP til WebP-konverterer',
-              topImageAlt: 'BMP til WebP-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Konverter BMP-filer til lett WebP. Opptil 95% mindre.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/bmp-til-webp-konverterer">
-                      Apne verktoy
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'AVIF til JPG-konverterer',
-              topImageAlt: 'AVIF til JPG-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Konverter AVIF-filer til universell JPG. Kompatibel overalt.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/avif-til-jpg-konverterer">
-                      Apne verktoy
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'AVIF til PNG-konverterer',
-              topImageAlt: 'AVIF til PNG-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Konverter AVIF-filer til tapsfri PNG. Full kvalitet.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/avif-til-png-konverterer">
-                      Apne verktoy
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'AVIF til WebP-konverterer',
-              topImageAlt: 'AVIF til WebP-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Konverter AVIF-filer til WebP. Bred kompatibilitet.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/avif-til-webp-konverterer">
-                      Apne verktoy
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'HEIC til JPG-konverterer',
-              topImageAlt: 'HEIC til JPG-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Konverter iPhone HEIC-bilder til universell JPG. Ingen registrering.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/heic-til-jpg-konverterer">
-                      Apne verktoy
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'HEIC til PNG-konverterer',
-              topImageAlt: 'HEIC til PNG-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Konverter iPhone HEIC-bilder til tapsfri PNG.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/heic-til-png-konverterer">
-                      Apne verktoy
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'HEIC til WebP-konverterer',
-              topImageAlt: 'HEIC til WebP-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Konverter iPhone HEIC-bilder til lett WebP.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/heic-til-webp-konverterer">
-                      Apne verktoy
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'TIFF til JPG-konverterer',
-              topImageAlt: 'TIFF til JPG-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Konverter TIFF-filer til kompakt JPG. Ideell for skanninger.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/tiff-til-jpg-konverterer">
-                      Apne verktoy
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'TIFF til PNG-konverterer',
-              topImageAlt: 'TIFF til PNG-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Konverter TIFF-filer til tapsfri PNG.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/tiff-til-png-konverterer">
-                      Apne verktoy
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'TIFF til WebP-konverterer',
-              topImageAlt: 'TIFF til WebP-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Konverter TIFF-filer til lett WebP. Massiv reduksjon.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/tiff-til-webp-konverterer">
-                      Apne verktoy
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
           ]}
         />
 
         <Gap size="sm" />
-        <SectionSteps
-          title="Tekst og SEO"
-          description="Verktoy for kontroll av tekstlengde, meta-tagger og forhaandsvisning av siden i sokeresultater."
-          grid="three"
-          items={[
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Meta-tittel- og beskrivelsessjekker',
-              topImageAlt: 'Meta-tittel- og beskrivelsessjekker Arteon',
-              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-tittel-og-beskrivelse-sjekker-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Sjekk antall tegn, antall ord og pikselbredde -- med Google-forhaandsvisning. Unngaa avkortede titler og beskrivelser i sokeresultatene.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/meta-tittel-og-beskrivelse-sjekker">
-                      Aapne verktoyet
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiArticleLine className="h-8 w-8" />,
-              title: 'Ord- og tegnteller',
-              topImageAlt: 'Ord- og tegnteller Arteon',
-              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegnteller-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Sjekk tekstlengden og vurder om den passer for en forside, tjenesteside, blogginnlegg eller produktbeskrivelse. Verktoyet teller ord, tegn, avsnitt og lesetid.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/ord-og-tegnteller">
-                      Aapne verktoyet
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-        <Gap size="sm" />
-        <SectionSteps
-          title="E-post og kommunikasjon"
-          description="Verktoy for profesjonell e-postkommunikasjon og konsekvent merkevarebilde."
-          grid="three"
-          items={[
-            {
-              icon: <RiMailLine className="h-8 w-8" />,
-              title: 'Gratis HTML e-postsignatur-generator',
-              topImageAlt: 'Gratis e-postsignatur-generator Arteon',
-              topImageSrc: '/assets/tools/free-html-email-signature-generator/gratis-e-postsignatur-generator-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Lag en profesjonell e-postsignatur paa faa minutter. Skriv inn informasjonen din, velg farger og kopier den ferdige HTML-koden til Gmail, Outlook eller en annen e-postklient.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/gratis-e-postsignatur-generator">
-                      Aapne verktoyet
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-        <Gap size="sm" />
-        <SectionSteps
-          title="QR-kode"
-          description="QR-kode-generator for nettsider, visittkort, menyer og trykkmateriell."
-          grid="three"
-          items={[
-            {
-              icon: <RiQrCodeLine className="h-8 w-8" />,
-              title: 'Gratis QR-kode-generator',
-              topImageAlt: 'Gratis QR-kode-generator Arteon',
-              topImageSrc: '/assets/tools/qr-code-generator/gratis-qr-kode-generator-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Lag en QR-kode for en nettside, vCard, restaurantmeny eller flygeblad. Eksporter til PNG og SVG -- uten innlogging, uten begrensninger.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/gratis-qr-kode-generator">
-                      Aapne verktoyet
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-        <Gap size="sm" />
-        <SectionSteps
-          title="Farger og tilgjengelighet"
-          description="Verktoy for aa jobbe med farger, kontrast og WCAG-tilgjengelighet."
-          grid="three"
-          items={[
-            {
-              icon: <RiContrast2Line className="h-8 w-8" />,
-              title: 'Fargekontrastsjekker',
-              topImageAlt: 'Fargekontrastsjekker Arteon',
-              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/fargekontrastsjekker-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>
-                    Sjekk om tekst- og bakgrunnsfargene er lesbare. Skriv inn fargekoder, se kontrastforholdet i henhold til <strong>WCAG</strong> og bruk <strong>Match</strong>-funksjonen for
-                    automatisk korrigering.
-                  </p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/fargekontrastsjekker">
-                      Aapne verktoyet
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiPantoneLine className="h-8 w-8" />,
-              title: 'Fargeuttrrekker fra bilde',
-              topImageAlt: 'Fargeuttrrekker fra bilde Arteon',
-              topImageSrc: '/assets/tools/image-color-extractor/fargeutrekker-fra-bilde-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Last opp et foto eller en logo -- verktoyet trekker ut de dominerende fargene. Kopier HEX-koder med ett klikk og bruk dem hvor som helst.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/fargeuttrrekker-fra-bilde">
-                      Aapne verktoyet
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiPaletteLine className="h-8 w-8" />,
-              title: 'Fargepalettgenerator',
-              topImageAlt: 'Fargepalettgenerator Arteon',
-              topImageSrc: '/assets/tools/color-palette-generator/fargepalettgenerator-no.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Velg en basisfarge og lag 9 fargepaletter: monokromatisk, komplementaer, triadisk, pastell, mork og flere. Kopier HEX-koder med ett klikk.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/fargepalettgenerator">
-                      Aapne verktoyet
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
+
         <Gap variant="line" />
         <SectionInfo title="Hva er Arteons verktoy?">
           <p className="mb-4">

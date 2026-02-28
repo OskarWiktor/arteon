@@ -116,6 +116,28 @@ const InfoBannerSchema = z.object({
   linkText: z.string(),
 });
 
+const ErrorPagesNotFoundSchema = z.object({
+  title: z.string(),
+  code: z.string(),
+  description: z.string(),
+  backHome: z.string(),
+});
+
+const ErrorPagesErrorSchema = z.object({
+  title: z.string(),
+  description: z.string(),
+  tryAgain: z.string(),
+  backHome: z.string(),
+  contact: z.string(),
+  contactHref: z.string(),
+  errorCode: z.string(),
+});
+
+const ErrorPagesSchema = z.object({
+  notFound: ErrorPagesNotFoundSchema,
+  error: ErrorPagesErrorSchema,
+});
+
 const DictionarySchema = z.object({
   nav: NavSchema,
   footer: FooterSchema,
@@ -129,6 +151,7 @@ const DictionarySchema = z.object({
   languageSwitcher: LanguageSwitcherSchema,
   mobileNav: MobileNavSchema,
   infoBanner: InfoBannerSchema,
+  errorPages: ErrorPagesSchema,
 });
 
 export type Dictionary = z.infer<typeof DictionarySchema>;
@@ -143,6 +166,7 @@ export type ToolsCarouselDictionary = z.infer<typeof ToolsCarouselSchema>;
 export type LanguageSwitcherDictionary = z.infer<typeof LanguageSwitcherSchema>;
 export type MobileNavDictionary = z.infer<typeof MobileNavSchema>;
 export type InfoBannerDictionary = z.infer<typeof InfoBannerSchema>;
+export type ErrorPagesDictionary = z.infer<typeof ErrorPagesSchema>;
 
 const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
   pl: () => import('@/data/pl/dictionary.json').then((m) => DictionarySchema.parse(m.default)),

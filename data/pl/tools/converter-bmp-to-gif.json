@@ -1,0 +1,112 @@
+{
+  "toolKey": "bmpToGif",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter BMP na GIF — BMP GIF",
+    "description": "Zamień nieskompresowane pliki BMP na lekki GIF. Redukcja rozmiaru dla prostych grafik.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-bmp-na-gif"
+  },
+  "hero": {
+    "title": "Konwerter BMP na GIF",
+    "description": "Zamień nieskompresowane pliki BMP na lekki GIF. Redukcja rozmiaru dla prostych grafik.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzedzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-bmp-na-gif",
+      "label": "Konwerter BMP na GIF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter BMP na GIF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Zamień nieskompresowane pliki BMP na lekki GIF. Redukcja rozmiaru dla prostych grafik.",
+      "featureList": ["Konwersja do GIF", "Kwantyzacja do 256 kolorow", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"]
+    },
+    "howTo": {
+      "name": "BMP to GIF",
+      "description": "Zamień nieskompresowane pliki BMP na lekki GIF. Redukcja rozmiaru dla prostych grafik.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Wgraj pliki",
+          "text": "Przeciagnij pliki na strone lub kliknij, aby je wybrac z dysku."
+        },
+        {
+          "position": 2,
+          "name": "Konwertuj",
+          "text": "Kliknij Konwertuj — pliki zostana przetworzone lokalnie w przegladarce."
+        },
+        {
+          "position": 3,
+          "name": "Pobierz",
+          "text": "Pobierz gotowe pliki GIF — pojedynczo lub wszystkie naraz."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Jak dziala konwerter BMP na GIF?",
+      "html": "<p>Zamień nieskompresowane pliki BMP na lekki GIF. Redukcja rozmiaru dla prostych grafik. Konwersja odbywa sie w calosci w przegladarce — pliki nie sa wysylane na serwer. Bez rejestracji, bez limitu plikow.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Jak przekonwertowac BMP na GIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Wgraj pliki",
+          "description": "Przeciagnij pliki na strone lub kliknij, aby je wybrac z dysku."
+        },
+        {
+          "position": 2,
+          "title": "Konwertuj",
+          "description": "Kliknij Konwertuj — pliki zostana przetworzone lokalnie w przegladarce."
+        },
+        {
+          "position": 3,
+          "title": "Pobierz",
+          "description": "Pobierz gotowe pliki GIF — pojedynczo lub wszystkie naraz."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Najczesciej zadawane pytania",
+      "items": [
+        {
+          "question": "Czym jest format GIF?",
+          "answer": "GIF to format graficzny obslugujacy max 256 kolorow. Jest uniwersalnie obslugiwany przez wszystkie przegladarki i programy. Najlepiej nadaje sie do prostych grafik, ikon i logo."
+        },
+        {
+          "question": "Czy zdjecia beda dobrze wygladac w GIF?",
+          "answer": "Zdjecia fotograficzne moga stracic na jakosci po konwersji do GIF z powodu ograniczenia do 256 kolorow. GIF sprawdza sie najlepiej dla prostych grafik z ograniczona paleta kolorow."
+        },
+        {
+          "question": "Czy moje pliki sa wysylane na serwer?",
+          "answer": "Nie. Konwersja odbywa sie w calosci w przegladarce. Pliki nie opuszczaja komputera."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Potrzebujesz wiecej?",
+      "description": "Skontaktuj sie z nami — pomozemy dobrac odpowiednie rozwiazanie.",
+      "href": "/kontakt",
+      "buttonText": "Napisz do nas"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Inne narzedzia"
+    }
+  ]
+}

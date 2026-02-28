@@ -1,0 +1,122 @@
+{
+  "toolKey": "webpToGif",
+  "locale": "fi",
+  "metadata": {
+    "title": "WebP GIF -muunnin — WebP GIF",
+    "description": "Muunna WebP-kuvat GIF-muotoon maksimaalisen yhteensopivuuden saavuttamiseksi.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fi/tyokalut/webp-gif-muunnin"
+  },
+  "hero": {
+    "title": "WebP GIF -muunnin",
+    "description": "Muunna WebP-kuvat GIF-muotoon maksimaalisen yhteensopivuuden saavuttamiseksi.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/webp-gif-muunnin",
+      "label": "WebP GIF -muunnin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "WebP GIF -muunnin",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Muunna WebP-kuvat GIF-muotoon maksimaalisen yhteensopivuuden saavuttamiseksi.",
+      "featureList": ["Muunnos GIF-muotoon", "Laadun saato (60-95%)", "Eramuunnos", "Paikallinen kasittely selaimessa"]
+    },
+    "howTo": {
+      "name": "Kuinka muuntaa WebP GIF-muotoon",
+      "description": "Muunna WebP-kuvat GIF-muotoon maksimaalisen yhteensopivuuden saavuttamiseksi.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Lataa tiedostot",
+          "text": "Vedä tiedostot sivulle tai napsauta valitaksesi levylta."
+        },
+        {
+          "position": 2,
+          "name": "Aseta laatu",
+          "text": "Saada GIF-laatuliukusaadinta — alhaisemmat arvot tuottavat pienempia tiedostoja."
+        },
+        {
+          "position": 3,
+          "name": "Muunna",
+          "text": "Napsauta Muunna — tiedostot kasitellaan paikallisesti selaimessa."
+        },
+        {
+          "position": 4,
+          "name": "Lataa",
+          "text": "Lataa GIF-tiedostot — yksittain tai kaikki kerralla."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Miten WebP-GIF-muunnin toimii?",
+      "html": "<p>Muunna WebP-kuvat GIF-muotoon maksimaalisen yhteensopivuuden saavuttamiseksi. Muunnos tapahtuu kokonaan selaimessa — tiedostoja ei koskaan lahetetä palvelimelle. Ilman rekisteroitymista, ilman rajoituksia.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Kuinka muuntaa WebP GIF-muotoon?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Lataa tiedostot",
+          "description": "Vedä tiedostot sivulle tai napsauta valitaksesi levylta."
+        },
+        {
+          "position": 2,
+          "title": "Aseta laatu",
+          "description": "Saada GIF-laatuliukusaadinta — alhaisemmat arvot tuottavat pienempia tiedostoja."
+        },
+        {
+          "position": 3,
+          "title": "Muunna",
+          "description": "Napsauta Muunna — tiedostot kasitellaan paikallisesti selaimessa."
+        },
+        {
+          "position": 4,
+          "title": "Lataa",
+          "description": "Lataa GIF-tiedostot — yksittain tai kaikki kerralla."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "items": [
+        {
+          "question": "Mika on GIF-muoto?",
+          "answer": "GIF on laajasti tuettu kuvamuoto, joka tukee enintaan 256 varia. Ihanteellinen yksinkertaisille grafiikoille ja kuvakkeille."
+        },
+        {
+          "question": "Vahentaako GIF-muunnos laatua?",
+          "answer": "GIF kayttaa rajattua 256 varin palettia. Valokuvat voivat menettaa yksityiskohtia."
+        },
+        {
+          "question": "Lahetetaanko tiedostoni palvelimelle?",
+          "answer": "Ei. Muunnos tapahtuu kokonaan selaimessa."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Tarvitsetko lisaa?",
+      "description": "Ota yhteytta — autamme loytamaan oikean ratkaisun.",
+      "href": "/fi/yhteystiedot",
+      "buttonText": "Kirjoita meille"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut tyokalut"
+    }
+  ]
+}

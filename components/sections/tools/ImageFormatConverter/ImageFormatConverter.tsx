@@ -41,6 +41,7 @@ export default function ImageFormatConverter({ sourceFormat, targetFormat, accep
     canvasNotSupported: t.errorCanvas,
     generationError: tpl(t.errorGeneration, { format: targetLabel }),
     fileTooLarge: t.errorTooLarge,
+    avifNotSupported: t.errorAvifNotSupported,
   };
 
   const {

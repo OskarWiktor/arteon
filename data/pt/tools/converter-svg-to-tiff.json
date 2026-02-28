@@ -1,0 +1,122 @@
+{
+  "toolKey": "svgToTiff",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor SVG para TIFF — SVG TIFF",
+    "description": "Converta graficos vetoriais SVG para raster TIFF de alta qualidade.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/pt/ferramentas/conversor-svg-para-tiff"
+  },
+  "hero": {
+    "title": "Conversor SVG para TIFF",
+    "description": "Converta graficos vetoriais SVG para raster TIFF de alta qualidade.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-svg-para-tiff",
+      "label": "Conversor SVG para TIFF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor SVG para TIFF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converta graficos vetoriais SVG para raster TIFF de alta qualidade.",
+      "featureList": ["Conversao para TIFF", "Ajuste de qualidade (60-95%)", "Conversao em lote", "Processamento local no navegador"]
+    },
+    "howTo": {
+      "name": "Como converter SVG para TIFF",
+      "description": "Converta graficos vetoriais SVG para raster TIFF de alta qualidade.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Carregar ficheiros",
+          "text": "Arraste ficheiros para a pagina ou clique para selecionar."
+        },
+        {
+          "position": 2,
+          "name": "Definir qualidade",
+          "text": "Ajuste o controlo de qualidade TIFF — valores mais baixos produzem ficheiros mais pequenos."
+        },
+        {
+          "position": 3,
+          "name": "Converter",
+          "text": "Clique em Converter — os ficheiros sao processados localmente no seu navegador."
+        },
+        {
+          "position": 4,
+          "name": "Descarregar",
+          "text": "Descarregue os ficheiros TIFF — individualmente ou todos de uma vez."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Como funciona o conversor de SVG para TIFF?",
+      "html": "<p>Converta graficos vetoriais SVG para raster TIFF de alta qualidade. A conversao e feita inteiramente no seu navegador — os ficheiros nunca sao enviados para um servidor. Sem registo, sem limite.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Como converter SVG para TIFF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Carregar ficheiros",
+          "description": "Arraste ficheiros para a pagina ou clique para selecionar."
+        },
+        {
+          "position": 2,
+          "title": "Definir qualidade",
+          "description": "Ajuste o controlo de qualidade TIFF — valores mais baixos produzem ficheiros mais pequenos."
+        },
+        {
+          "position": 3,
+          "title": "Converter",
+          "description": "Clique em Converter — os ficheiros sao processados localmente no seu navegador."
+        },
+        {
+          "position": 4,
+          "title": "Descarregar",
+          "description": "Descarregue os ficheiros TIFF — individualmente ou todos de uma vez."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes",
+      "items": [
+        {
+          "question": "O que e o formato TIFF?",
+          "answer": "TIFF e um formato de imagem profissional sem perdas utilizado em impressao, publicacao e arquivamento."
+        },
+        {
+          "question": "Os ficheiros TIFF sao maiores que JPG?",
+          "answer": "Sim. Os ficheiros TIFF sao tipicamente muito maiores porque usam compressao sem perdas."
+        },
+        {
+          "question": "Os meus ficheiros sao enviados para um servidor?",
+          "answer": "Nao. A conversao e feita inteiramente no seu navegador."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Precisa de mais?",
+      "description": "Contacte-nos — ajudamos a encontrar a solucao adequada.",
+      "href": "/pt/contacto",
+      "buttonText": "Escreva-nos"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Outras ferramentas"
+    }
+  ]
+}

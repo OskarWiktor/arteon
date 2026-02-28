@@ -1,0 +1,122 @@
+{
+  "toolKey": "heicToAvif",
+  "locale": "hu",
+  "metadata": {
+    "title": "HEIC AVIF konverter — HEIC AVIF",
+    "description": "iPhone HEIC fotok konvertalasa modern AVIF formatumra.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/hu/eszkozok/heic-avif-konverter"
+  },
+  "hero": {
+    "title": "HEIC AVIF konverter",
+    "description": "iPhone HEIC fotok konvertalasa modern AVIF formatumra.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/heic-avif-konverter",
+      "label": "HEIC AVIF konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "HEIC AVIF konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "iPhone HEIC fotok konvertalasa modern AVIF formatumra.",
+      "featureList": ["Konvertalas AVIF-re", "Minoseg beallitasa (60-95%)", "Kotegelt konvertalas", "Helyi feldolgozas a bongeszoben"]
+    },
+    "howTo": {
+      "name": "HEIC konvertalasa AVIF-ra",
+      "description": "iPhone HEIC fotok konvertalasa modern AVIF formatumra.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Fajlok feltoltese",
+          "text": "Huzd a fajlokat az oldalra vagy kattints a kivalasztasukhoz."
+        },
+        {
+          "position": 2,
+          "name": "Minoseg beallitasa",
+          "text": "Allitsd be a AVIF minoseg csuszkajat — alacsonyabb ertekek kisebb fajlokat eredmenyeznek."
+        },
+        {
+          "position": 3,
+          "name": "Konvertalas",
+          "text": "Kattints a Konvertalas gombra — a fajlok helyben, a bongeszoben kerulnek feldolgozasra."
+        },
+        {
+          "position": 4,
+          "name": "Letoltes",
+          "text": "Toltsd le a AVIF fajlokat — egyenkent vagy mindet egyszerre."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Hogyan mukodik a HEIC AVIF konverter?",
+      "html": "<p>iPhone HEIC fotok konvertalasa modern AVIF formatumra. A konvertalas teljes egeszeben a bongeszoben tortenik — a fajlok soha nem kerulnek szerverre. Regisztracio nelkul, fajl limit nelkul.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Hogyan konvertalhato HEIC AVIF-ra?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Fajlok feltoltese",
+          "description": "Huzd a fajlokat az oldalra vagy kattints a kivalasztasukhoz."
+        },
+        {
+          "position": 2,
+          "title": "Minoseg beallitasa",
+          "description": "Allitsd be a AVIF minoseg csuszkajat — alacsonyabb ertekek kisebb fajlokat eredmenyeznek."
+        },
+        {
+          "position": 3,
+          "title": "Konvertalas",
+          "description": "Kattints a Konvertalas gombra — a fajlok helyben, a bongeszoben kerulnek feldolgozasra."
+        },
+        {
+          "position": 4,
+          "title": "Letoltes",
+          "description": "Toltsd le a AVIF fajlokat — egyenkent vagy mindet egyszerre."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismetelt kerdesek",
+      "items": [
+        {
+          "question": "Mi az AVIF formatum?",
+          "answer": "Az AVIF egy modern kepformatum az AV1 kodek alapjan. Kivaloan tomorit — a fajlok akar 50%-kal kisebbek lehetnek mint JPG."
+        },
+        {
+          "question": "Mukodik az AVIF minden bongeszoben?",
+          "answer": "Az AVIF-et a Chrome, Edge es Firefox tamogatja. A Safari korlatozott AVIF tamogatassal rendelkezik."
+        },
+        {
+          "question": "A fajljaim elkuldésre kerulnek egy szerverre?",
+          "answer": "Nem. A konvertalas teljes egeszeben a bongeszoben tortenik. A fajlok soha nem hagyjak el a szamitogepet."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Tobbre van szukseged?",
+      "description": "Lepj kapcsolatba velunk — segitunk megtalalni a megfelelo megoldast.",
+      "href": "/hu/kapcsolat",
+      "buttonText": "Irj nekunk"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Mas eszkozok"
+    }
+  ]
+}

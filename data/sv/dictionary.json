@@ -151,6 +151,24 @@
     "errorGeneration": "Kunde inte skapa {{format}}-fil.",
     "errorTooLarge": "Filen är för stor (max 100 MB).",
     "errorWrongFormat": "Lägg till {{format}}-filer — andra format hoppas över.",
-    "errorNoFiles": "Lägg till minst en {{format}}-fil."
+    "errorNoFiles": "Lägg till minst en {{format}}-fil.",
+    "errorAvifNotSupported": "Din webbläsare stöder inte AVIF-kodning. Använd Chrome, Edge eller Firefox."
+  },
+  "errorPages": {
+    "notFound": {
+      "title": "Sidan hittades inte",
+      "code": "404",
+      "description": "Sidan du letar efter finns inte. Klicka på knappen för att gå tillbaka till startsidan.",
+      "backHome": "Tillbaka till startsidan"
+    },
+    "error": {
+      "title": "Något gick fel",
+      "description": "Ett oväntat fel uppstod. Försök att uppdatera sidan eller kontakta oss om problemet kvarstår.",
+      "tryAgain": "Försök igen",
+      "backHome": "Tillbaka till startsidan",
+      "contact": "Kontakta oss",
+      "contactHref": "/sv/kontakt",
+      "errorCode": "Felkod"
+    }
   }
 }

@@ -1,7 +1,7 @@
 {
   "slug": "om-os",
   "metadata": {
-    "title": "Om Arteon – 10 gratis værktøjer til web, SEO og design",
+    "title": "Om Arteon – Gratis værktøjer til web, SEO og design",
     "description": "Arteon er et kreativt bureau, der bygger gratis browserbaserede værktøjer: WebP-konverter, favicon-generator, farvekontrastchecker, QR-kodegenerator og mere."
   },
   "hero": {
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Prøv vores værktøjer",
-    "description": "10 gratis værktøjer — uden tilmelding, uden begrænsninger, uden filupload til servere",
+    "description": "Gratis værktøjer — uden tilmelding, uden begrænsninger, uden filupload til servere",
     "btnOne": "Gå til værktøjerne",
     "btnTwo": "Kontakt"
   }

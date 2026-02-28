@@ -1,0 +1,122 @@
+{
+  "toolKey": "bmpToGif",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur BMP en GIF — BMP GIF",
+    "description": "Convertissez les fichiers BMP non compresses en GIF leger.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fr/outils/convertisseur-bmp-en-gif"
+  },
+  "hero": {
+    "title": "Convertisseur BMP en GIF",
+    "description": "Convertissez les fichiers BMP non compresses en GIF leger.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-bmp-en-gif",
+      "label": "Convertisseur BMP en GIF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur BMP en GIF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convertissez les fichiers BMP non compresses en GIF leger.",
+      "featureList": ["Conversion en GIF", "Reglage de la qualite (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment convertir BMP en GIF",
+      "description": "Convertissez les fichiers BMP non compresses en GIF leger.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Telecharger les fichiers",
+          "text": "Glissez les fichiers sur la page ou cliquez pour les selectionner."
+        },
+        {
+          "position": 2,
+          "name": "Regler la qualite",
+          "text": "Ajustez le curseur de qualite GIF — des valeurs plus basses donnent des fichiers plus petits."
+        },
+        {
+          "position": 3,
+          "name": "Convertir",
+          "text": "Cliquez sur Convertir — les fichiers sont traites localement dans votre navigateur."
+        },
+        {
+          "position": 4,
+          "name": "Telecharger",
+          "text": "Telechargez les fichiers GIF — individuellement ou tous a la fois."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Comment fonctionne le convertisseur BMP en GIF?",
+      "html": "<p>Convertissez les fichiers BMP non compresses en GIF leger. La conversion se fait entierement dans votre navigateur — les fichiers ne sont jamais envoyes a un serveur. Sans inscription, sans limite.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Comment convertir BMP en GIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Telecharger les fichiers",
+          "description": "Glissez les fichiers sur la page ou cliquez pour les selectionner."
+        },
+        {
+          "position": 2,
+          "title": "Regler la qualite",
+          "description": "Ajustez le curseur de qualite GIF — des valeurs plus basses donnent des fichiers plus petits."
+        },
+        {
+          "position": 3,
+          "title": "Convertir",
+          "description": "Cliquez sur Convertir — les fichiers sont traites localement dans votre navigateur."
+        },
+        {
+          "position": 4,
+          "title": "Telecharger",
+          "description": "Telechargez les fichiers GIF — individuellement ou tous a la fois."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Questions frequemment posees",
+      "items": [
+        {
+          "question": "Qu'est-ce que le format GIF?",
+          "answer": "GIF est un format d'image largement supporte qui prend en charge jusqu'a 256 couleurs. Ideal pour les graphiques simples et les icones."
+        },
+        {
+          "question": "La conversion en GIF reduit-elle la qualite?",
+          "answer": "GIF utilise une palette limitee de 256 couleurs. Les photographies peuvent perdre des details."
+        },
+        {
+          "question": "Mes fichiers sont-ils envoyes a un serveur?",
+          "answer": "Non. La conversion se fait entierement dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Besoin de plus?",
+      "description": "Contactez-nous — nous vous aiderons a trouver la bonne solution.",
+      "href": "/fr/contact",
+      "buttonText": "Ecrivez-nous"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres outils"
+    }
+  ]
+}

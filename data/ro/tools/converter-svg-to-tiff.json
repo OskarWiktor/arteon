@@ -1,0 +1,122 @@
+{
+  "toolKey": "svgToTiff",
+  "locale": "ro",
+  "metadata": {
+    "title": "Convertor SVG in TIFF — SVG TIFF",
+    "description": "Converteste grafice vectoriale SVG in raster TIFF de inalta calitate.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/ro/instrumente/convertor-svg-in-tiff"
+  },
+  "hero": {
+    "title": "Convertor SVG in TIFF",
+    "description": "Converteste grafice vectoriale SVG in raster TIFF de inalta calitate.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-svg-in-tiff",
+      "label": "Convertor SVG in TIFF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertor SVG in TIFF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converteste grafice vectoriale SVG in raster TIFF de inalta calitate.",
+      "featureList": ["Conversie in TIFF", "Ajustare calitate (60-95%)", "Conversie in lot", "Procesare locala in browser"]
+    },
+    "howTo": {
+      "name": "Cum sa convertesti SVG in TIFF",
+      "description": "Converteste grafice vectoriale SVG in raster TIFF de inalta calitate.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Incarca fisiere",
+          "text": "Trage fisierele pe pagina sau da clic pentru a le selecta."
+        },
+        {
+          "position": 2,
+          "name": "Seteaza calitatea",
+          "text": "Ajusteaza cursorul de calitate TIFF — valori mai mici produc fisiere mai mici."
+        },
+        {
+          "position": 3,
+          "name": "Converteste",
+          "text": "Da clic pe Converteste — fisierele sunt procesate local in browser."
+        },
+        {
+          "position": 4,
+          "name": "Descarca",
+          "text": "Descarca fisierele TIFF — individual sau toate deodata."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Cum functioneaza convertorul SVG in TIFF?",
+      "html": "<p>Converteste grafice vectoriale SVG in raster TIFF de inalta calitate. Conversia se face integral in browser — fisierele nu sunt trimise niciodata pe un server. Fara inregistrare, fara limita.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Cum sa convertesti SVG in TIFF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Incarca fisiere",
+          "description": "Trage fisierele pe pagina sau da clic pentru a le selecta."
+        },
+        {
+          "position": 2,
+          "title": "Seteaza calitatea",
+          "description": "Ajusteaza cursorul de calitate TIFF — valori mai mici produc fisiere mai mici."
+        },
+        {
+          "position": 3,
+          "title": "Converteste",
+          "description": "Da clic pe Converteste — fisierele sunt procesate local in browser."
+        },
+        {
+          "position": 4,
+          "title": "Descarca",
+          "description": "Descarca fisierele TIFF — individual sau toate deodata."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Intrebari frecvente",
+      "items": [
+        {
+          "question": "Ce este formatul TIFF?",
+          "answer": "TIFF este un format de imagine profesional fara pierderi folosit in tiparire, publicare si arhivare."
+        },
+        {
+          "question": "Sunt fisierele TIFF mai mari decat JPG?",
+          "answer": "Da. Fisierele TIFF sunt de obicei mult mai mari deoarece folosesc compresie fara pierderi."
+        },
+        {
+          "question": "Sunt fisierele mele trimise pe un server?",
+          "answer": "Nu. Conversia se face integral in browser."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Ai nevoie de mai mult?",
+      "description": "Contacteaza-ne — te vom ajuta sa gasesti solutia potrivita.",
+      "href": "/ro/contact",
+      "buttonText": "Scrie-ne"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente"
+    }
+  ]
+}

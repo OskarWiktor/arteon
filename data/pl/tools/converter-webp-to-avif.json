@@ -1,0 +1,122 @@
+{
+  "toolKey": "webpToAvif",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter WebP na AVIF — WebP AVIF",
+    "description": "Zamień pliki WebP na AVIF. Jeszcze lepsza kompresja w nowoczesnym formacie.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-webp-na-avif"
+  },
+  "hero": {
+    "title": "Konwerter WebP na AVIF",
+    "description": "Zamień pliki WebP na AVIF. Jeszcze lepsza kompresja w nowoczesnym formacie.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzedzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-webp-na-avif",
+      "label": "Konwerter WebP na AVIF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter WebP na AVIF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Zamień pliki WebP na AVIF. Jeszcze lepsza kompresja w nowoczesnym formacie.",
+      "featureList": ["Konwersja do AVIF", "Regulacja jakosci (60-95%)", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"]
+    },
+    "howTo": {
+      "name": "WebP to AVIF",
+      "description": "Zamień pliki WebP na AVIF. Jeszcze lepsza kompresja w nowoczesnym formacie.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Wgraj pliki",
+          "text": "Przeciagnij pliki na strone lub kliknij, aby je wybrac z dysku."
+        },
+        {
+          "position": 2,
+          "name": "Ustaw jakosc",
+          "text": "Dostosuj suwak jakosci AVIF — nizsze wartosci daja mniejsze pliki."
+        },
+        {
+          "position": 3,
+          "name": "Konwertuj",
+          "text": "Kliknij Konwertuj — pliki zostana przetworzone lokalnie w przegladarce."
+        },
+        {
+          "position": 4,
+          "name": "Pobierz",
+          "text": "Pobierz gotowe pliki AVIF — pojedynczo lub wszystkie naraz."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Jak dziala konwerter WebP na AVIF?",
+      "html": "<p>Zamień pliki WebP na AVIF. Jeszcze lepsza kompresja w nowoczesnym formacie. Konwersja odbywa sie w calosci w przegladarce — pliki nie sa wysylane na serwer. Bez rejestracji, bez limitu plikow.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Jak przekonwertowac WebP na AVIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Wgraj pliki",
+          "description": "Przeciagnij pliki na strone lub kliknij, aby je wybrac z dysku."
+        },
+        {
+          "position": 2,
+          "title": "Ustaw jakosc",
+          "description": "Dostosuj suwak jakosci AVIF — nizsze wartosci daja mniejsze pliki."
+        },
+        {
+          "position": 3,
+          "title": "Konwertuj",
+          "description": "Kliknij Konwertuj — pliki zostana przetworzone lokalnie w przegladarce."
+        },
+        {
+          "position": 4,
+          "title": "Pobierz",
+          "description": "Pobierz gotowe pliki AVIF — pojedynczo lub wszystkie naraz."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Najczesciej zadawane pytania",
+      "items": [
+        {
+          "question": "Czym jest format AVIF?",
+          "answer": "AVIF to nowoczesny format obrazow oparty na kodeku AV1. Oferuje doskonala kompresje — pliki sa nawet o 50% mniejsze niz JPG przy zachowaniu porównywalnej jakosci. Obsluguje przezroczystosc i szerokie gamamy kolorow."
+        },
+        {
+          "question": "Czy AVIF dziala we wszystkich przegladarkach?",
+          "answer": "AVIF jest obslugiwany przez Chrome, Edge i Firefox. Safari nie wspiera kodowania AVIF — w takim przypadku narzedzie wyswietli odpowiedni komunikat."
+        },
+        {
+          "question": "Czy moje pliki sa wysylane na serwer?",
+          "answer": "Nie. Konwersja odbywa sie w calosci w przegladarce. Pliki nie opuszczaja komputera."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Potrzebujesz wiecej?",
+      "description": "Skontaktuj sie z nami — pomozemy dobrac odpowiednie rozwiazanie.",
+      "href": "/kontakt",
+      "buttonText": "Napisz do nas"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Inne narzedzia"
+    }
+  ]
+}

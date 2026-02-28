@@ -1,0 +1,122 @@
+{
+  "toolKey": "svgToAvif",
+  "locale": "ro",
+  "metadata": {
+    "title": "Convertor SVG in AVIF — SVG AVIF",
+    "description": "Converteste grafice vectoriale SVG in format raster AVIF compact.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/ro/instrumente/convertor-svg-in-avif"
+  },
+  "hero": {
+    "title": "Convertor SVG in AVIF",
+    "description": "Converteste grafice vectoriale SVG in format raster AVIF compact.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-svg-in-avif",
+      "label": "Convertor SVG in AVIF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertor SVG in AVIF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converteste grafice vectoriale SVG in format raster AVIF compact.",
+      "featureList": ["Conversie in AVIF", "Ajustare calitate (60-95%)", "Conversie in lot", "Procesare locala in browser"]
+    },
+    "howTo": {
+      "name": "Cum sa convertesti SVG in AVIF",
+      "description": "Converteste grafice vectoriale SVG in format raster AVIF compact.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Incarca fisiere",
+          "text": "Trage fisierele pe pagina sau da clic pentru a le selecta."
+        },
+        {
+          "position": 2,
+          "name": "Seteaza calitatea",
+          "text": "Ajusteaza cursorul de calitate AVIF — valori mai mici produc fisiere mai mici."
+        },
+        {
+          "position": 3,
+          "name": "Converteste",
+          "text": "Da clic pe Converteste — fisierele sunt procesate local in browser."
+        },
+        {
+          "position": 4,
+          "name": "Descarca",
+          "text": "Descarca fisierele AVIF — individual sau toate deodata."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Cum functioneaza convertorul SVG in AVIF?",
+      "html": "<p>Converteste grafice vectoriale SVG in format raster AVIF compact. Conversia se face integral in browser — fisierele nu sunt trimise niciodata pe un server. Fara inregistrare, fara limita.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Cum sa convertesti SVG in AVIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Incarca fisiere",
+          "description": "Trage fisierele pe pagina sau da clic pentru a le selecta."
+        },
+        {
+          "position": 2,
+          "title": "Seteaza calitatea",
+          "description": "Ajusteaza cursorul de calitate AVIF — valori mai mici produc fisiere mai mici."
+        },
+        {
+          "position": 3,
+          "title": "Converteste",
+          "description": "Da clic pe Converteste — fisierele sunt procesate local in browser."
+        },
+        {
+          "position": 4,
+          "title": "Descarca",
+          "description": "Descarca fisierele AVIF — individual sau toate deodata."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Intrebari frecvente",
+      "items": [
+        {
+          "question": "Ce este formatul AVIF?",
+          "answer": "AVIF este un format modern de imagine bazat pe codecul AV1. Ofera compresie excelenta — fisierele pot fi cu pana la 50% mai mici decat JPG."
+        },
+        {
+          "question": "Functioneaza AVIF in toate browserele?",
+          "answer": "AVIF este suportat de Chrome, Edge si Firefox. Safari are suport limitat pentru AVIF."
+        },
+        {
+          "question": "Sunt fisierele mele trimise pe un server?",
+          "answer": "Nu. Conversia se face integral in browser. Fisierele nu parasesc niciodata computerul."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Ai nevoie de mai mult?",
+      "description": "Contacteaza-ne — te vom ajuta sa gasesti solutia potrivita.",
+      "href": "/ro/contact",
+      "buttonText": "Scrie-ne"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "toolKey": "pngToTiff",
+  "locale": "hu",
+  "metadata": {
+    "title": "PNG TIFF konverter — PNG TIFF",
+    "description": "PNG grafika konvertalasa professzionalis TIFF formatumra.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/hu/eszkozok/png-tiff-konverter"
+  },
+  "hero": {
+    "title": "PNG TIFF konverter",
+    "description": "PNG grafika konvertalasa professzionalis TIFF formatumra.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/png-tiff-konverter",
+      "label": "PNG TIFF konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "PNG TIFF konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "PNG grafika konvertalasa professzionalis TIFF formatumra.",
+      "featureList": ["Konvertalas TIFF-re", "Minoseg beallitasa (60-95%)", "Kotegelt konvertalas", "Helyi feldolgozas a bongeszoben"]
+    },
+    "howTo": {
+      "name": "PNG konvertalasa TIFF-ra",
+      "description": "PNG grafika konvertalasa professzionalis TIFF formatumra.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Fajlok feltoltese",
+          "text": "Huzd a fajlokat az oldalra vagy kattints a kivalasztasukhoz."
+        },
+        {
+          "position": 2,
+          "name": "Minoseg beallitasa",
+          "text": "Allitsd be a TIFF minoseg csuszkajat — alacsonyabb ertekek kisebb fajlokat eredmenyeznek."
+        },
+        {
+          "position": 3,
+          "name": "Konvertalas",
+          "text": "Kattints a Konvertalas gombra — a fajlok helyben, a bongeszoben kerulnek feldolgozasra."
+        },
+        {
+          "position": 4,
+          "name": "Letoltes",
+          "text": "Toltsd le a TIFF fajlokat — egyenkent vagy mindet egyszerre."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Hogyan mukodik a PNG TIFF konverter?",
+      "html": "<p>PNG grafika konvertalasa professzionalis TIFF formatumra. A konvertalas teljes egeszeben a bongeszoben tortenik — a fajlok soha nem kerulnek szerverre. Regisztracio nelkul, fajl limit nelkul.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Hogyan konvertalhato PNG TIFF-ra?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Fajlok feltoltese",
+          "description": "Huzd a fajlokat az oldalra vagy kattints a kivalasztasukhoz."
+        },
+        {
+          "position": 2,
+          "title": "Minoseg beallitasa",
+          "description": "Allitsd be a TIFF minoseg csuszkajat — alacsonyabb ertekek kisebb fajlokat eredmenyeznek."
+        },
+        {
+          "position": 3,
+          "title": "Konvertalas",
+          "description": "Kattints a Konvertalas gombra — a fajlok helyben, a bongeszoben kerulnek feldolgozasra."
+        },
+        {
+          "position": 4,
+          "title": "Letoltes",
+          "description": "Toltsd le a TIFF fajlokat — egyenkent vagy mindet egyszerre."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismetelt kerdesek",
+      "items": [
+        {
+          "question": "Mi a TIFF formatum?",
+          "answer": "A TIFF egy professzionalis veszteségmentes kepformatum, amelyet nyomtatasban, kiadas es archivalasban hasznalnak."
+        },
+        {
+          "question": "A TIFF fajlok nagyobbak mint a JPG?",
+          "answer": "Igen. A TIFF fajlok altalaban sokkal nagyobbak, mert veszteségmentes tomorittest hasznalnak."
+        },
+        {
+          "question": "A fajljaim elkuldésre kerulnek egy szerverre?",
+          "answer": "Nem. A konvertalas teljes egeszeben a bongeszoben tortenik."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Tobbre van szukseged?",
+      "description": "Lepj kapcsolatba velunk — segitunk megtalalni a megfelelo megoldast.",
+      "href": "/hu/kapcsolat",
+      "buttonText": "Irj nekunk"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Mas eszkozok"
+    }
+  ]
+}

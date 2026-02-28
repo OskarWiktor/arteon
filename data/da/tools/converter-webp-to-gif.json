@@ -1,0 +1,122 @@
+{
+  "toolKey": "webpToGif",
+  "locale": "da",
+  "metadata": {
+    "title": "WebP til GIF-konverter — WebP GIF",
+    "description": "Konverter WebP-billeder til GIF-format for maksimal kompatibilitet.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/da/vaerktojer/webp-til-gif-konverter"
+  },
+  "hero": {
+    "title": "WebP til GIF-konverter",
+    "description": "Konverter WebP-billeder til GIF-format for maksimal kompatibilitet.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/webp-til-gif-konverter",
+      "label": "WebP til GIF-konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "WebP til GIF-konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konverter WebP-billeder til GIF-format for maksimal kompatibilitet.",
+      "featureList": ["Konvertering til GIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"]
+    },
+    "howTo": {
+      "name": "Hvordan konverterer man WebP til GIF",
+      "description": "Konverter WebP-billeder til GIF-format for maksimal kompatibilitet.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Upload filer",
+          "text": "Traek filer til siden eller klik for at vaelge fra disken."
+        },
+        {
+          "position": 2,
+          "name": "Indstil kvalitet",
+          "text": "Juster GIF-kvalitetsskyderen — lavere vaerdier giver mindre filer."
+        },
+        {
+          "position": 3,
+          "name": "Konverter",
+          "text": "Klik pa Konverter — filerne behandles lokalt i browseren."
+        },
+        {
+          "position": 4,
+          "name": "Download",
+          "text": "Download GIF-filerne — enkeltvis eller alle pa en gang."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Hvordan fungerer WebP til GIF-konverteren?",
+      "html": "<p>Konverter WebP-billeder til GIF-format for maksimal kompatibilitet. Konverteringen foregaar helt i browseren — filer sendes aldrig til en server. Uden registrering, uden begraensning.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Hvordan konverterer man WebP til GIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Upload filer",
+          "description": "Traek filer til siden eller klik for at vaelge fra disken."
+        },
+        {
+          "position": 2,
+          "title": "Indstil kvalitet",
+          "description": "Juster GIF-kvalitetsskyderen — lavere vaerdier giver mindre filer."
+        },
+        {
+          "position": 3,
+          "title": "Konverter",
+          "description": "Klik pa Konverter — filerne behandles lokalt i browseren."
+        },
+        {
+          "position": 4,
+          "title": "Download",
+          "description": "Download GIF-filerne — enkeltvis eller alle pa en gang."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stillede sporgsmal",
+      "items": [
+        {
+          "question": "Hvad er GIF-format?",
+          "answer": "GIF er et bredt understoettet billedformat, der understoetter op til 256 farver. Ideelt til simpel grafik og ikoner."
+        },
+        {
+          "question": "Reducerer GIF-konvertering kvaliteten?",
+          "answer": "GIF bruger en begraenset 256-farve palette. Fotografier kan miste detaljer."
+        },
+        {
+          "question": "Sendes mine filer til en server?",
+          "answer": "Nej. Konverteringen foregaar helt i browseren."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Har du brug for mere?",
+      "description": "Kontakt os — vi hjaelper dig med at finde den rigtige losning.",
+      "href": "/da/kontakt",
+      "buttonText": "Skriv til os"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre vaerktojer"
+    }
+  ]
+}

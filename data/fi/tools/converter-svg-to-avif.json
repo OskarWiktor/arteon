@@ -1,0 +1,122 @@
+{
+  "toolKey": "svgToAvif",
+  "locale": "fi",
+  "metadata": {
+    "title": "SVG AVIF -muunnin — SVG AVIF",
+    "description": "Muunna vektori-SVG-grafiikat kompaktiin AVIF-rasterimuotoon.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fi/tyokalut/svg-avif-muunnin"
+  },
+  "hero": {
+    "title": "SVG AVIF -muunnin",
+    "description": "Muunna vektori-SVG-grafiikat kompaktiin AVIF-rasterimuotoon.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/svg-avif-muunnin",
+      "label": "SVG AVIF -muunnin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "SVG AVIF -muunnin",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Muunna vektori-SVG-grafiikat kompaktiin AVIF-rasterimuotoon.",
+      "featureList": ["Muunnos AVIF-muotoon", "Laadun saato (60-95%)", "Eramuunnos", "Paikallinen kasittely selaimessa"]
+    },
+    "howTo": {
+      "name": "Kuinka muuntaa SVG AVIF-muotoon",
+      "description": "Muunna vektori-SVG-grafiikat kompaktiin AVIF-rasterimuotoon.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Lataa tiedostot",
+          "text": "Vedä tiedostot sivulle tai napsauta valitaksesi levylta."
+        },
+        {
+          "position": 2,
+          "name": "Aseta laatu",
+          "text": "Saada AVIF-laatuliukusaadinta — alhaisemmat arvot tuottavat pienempia tiedostoja."
+        },
+        {
+          "position": 3,
+          "name": "Muunna",
+          "text": "Napsauta Muunna — tiedostot kasitellaan paikallisesti selaimessa."
+        },
+        {
+          "position": 4,
+          "name": "Lataa",
+          "text": "Lataa AVIF-tiedostot — yksittain tai kaikki kerralla."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Miten SVG-AVIF-muunnin toimii?",
+      "html": "<p>Muunna vektori-SVG-grafiikat kompaktiin AVIF-rasterimuotoon. Muunnos tapahtuu kokonaan selaimessa — tiedostoja ei koskaan lahetetä palvelimelle. Ilman rekisteroitymista, ilman rajoituksia.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Kuinka muuntaa SVG AVIF-muotoon?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Lataa tiedostot",
+          "description": "Vedä tiedostot sivulle tai napsauta valitaksesi levylta."
+        },
+        {
+          "position": 2,
+          "title": "Aseta laatu",
+          "description": "Saada AVIF-laatuliukusaadinta — alhaisemmat arvot tuottavat pienempia tiedostoja."
+        },
+        {
+          "position": 3,
+          "title": "Muunna",
+          "description": "Napsauta Muunna — tiedostot kasitellaan paikallisesti selaimessa."
+        },
+        {
+          "position": 4,
+          "title": "Lataa",
+          "description": "Lataa AVIF-tiedostot — yksittain tai kaikki kerralla."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "items": [
+        {
+          "question": "Mika on AVIF-muoto?",
+          "answer": "AVIF on moderni kuvamuoto, joka perustuu AV1-koodekkiin. Se tarjoaa erinomaisen pakkauksen — tiedostot voivat olla jopa 50% pienempia kuin JPG."
+        },
+        {
+          "question": "Toimiiko AVIF kaikissa selaimissa?",
+          "answer": "AVIF:ää tukevat Chrome, Edge ja Firefox. Safarilla on rajallinen AVIF-tuki."
+        },
+        {
+          "question": "Lahetetaanko tiedostoni palvelimelle?",
+          "answer": "Ei. Muunnos tapahtuu kokonaan selaimessa. Tiedostot eivat koskaan poistu tietokoneeltasi."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Tarvitsetko lisaa?",
+      "description": "Ota yhteytta — autamme loytamaan oikean ratkaisun.",
+      "href": "/fi/yhteystiedot",
+      "buttonText": "Kirjoita meille"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut tyokalut"
+    }
+  ]
+}

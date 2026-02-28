@@ -1,7 +1,7 @@
 {
   "slug": "om-oss",
   "metadata": {
-    "title": "Om Arteon – 10 gratis nettverktøy for web, SEO og design",
+    "title": "Om Arteon – Gratis nettverktøy for web, SEO og design",
     "description": "Arteon er et kreativt byrå som utvikler gratis nettleserbaserte verktøy: WebP-konverterer, favicon-generator, fargekontrastsjekker, QR-kode-generator og mer."
   },
   "hero": {
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Prøv verktøyene våre",
-    "description": "10 gratis nettverktøy — uten registrering, uten begrensninger, uten filopplasting til servere",
+    "description": "Gratis nettverktøy — uten registrering, uten begrensninger, uten filopplasting til servere",
     "btnOne": "Gå til verktøy",
     "btnTwo": "Kontakt"
   }

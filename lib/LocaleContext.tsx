@@ -90,6 +90,7 @@ export interface ClientDictionary {
     errorTooLarge: string;
     errorWrongFormat: string;
     errorNoFiles: string;
+    errorAvifNotSupported: string;
   };
 }
 

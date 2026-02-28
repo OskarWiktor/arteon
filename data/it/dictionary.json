@@ -151,6 +151,24 @@
     "errorGeneration": "Impossibile generare il file {{format}}.",
     "errorTooLarge": "Il file è troppo grande (max 100 MB).",
     "errorWrongFormat": "Aggiungi file {{format}} — gli altri formati vengono ignorati.",
-    "errorNoFiles": "Aggiungi almeno un file {{format}}."
+    "errorNoFiles": "Aggiungi almeno un file {{format}}.",
+    "errorAvifNotSupported": "Il tuo browser non supporta la codifica AVIF. Usa Chrome, Edge o Firefox."
+  },
+  "errorPages": {
+    "notFound": {
+      "title": "Pagina non trovata",
+      "code": "404",
+      "description": "La pagina che stai cercando non esiste. Clicca il pulsante per tornare alla pagina principale.",
+      "backHome": "Torna alla home"
+    },
+    "error": {
+      "title": "Qualcosa è andato storto",
+      "description": "Si è verificato un errore imprevisto. Prova ad aggiornare la pagina o contattaci se il problema persiste.",
+      "tryAgain": "Riprova",
+      "backHome": "Torna alla home",
+      "contact": "Contattaci",
+      "contactHref": "/it/contatto",
+      "errorCode": "Codice errore"
+    }
   }
 }

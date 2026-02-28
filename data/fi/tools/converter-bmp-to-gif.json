@@ -1,0 +1,122 @@
+{
+  "toolKey": "bmpToGif",
+  "locale": "fi",
+  "metadata": {
+    "title": "BMP GIF -muunnin — BMP GIF",
+    "description": "Muunna pakkaamattomat BMP-tiedostot kevyeen GIF-muotoon.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fi/tyokalut/bmp-gif-muunnin"
+  },
+  "hero": {
+    "title": "BMP GIF -muunnin",
+    "description": "Muunna pakkaamattomat BMP-tiedostot kevyeen GIF-muotoon.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/bmp-gif-muunnin",
+      "label": "BMP GIF -muunnin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP GIF -muunnin",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Muunna pakkaamattomat BMP-tiedostot kevyeen GIF-muotoon.",
+      "featureList": ["Muunnos GIF-muotoon", "Laadun saato (60-95%)", "Eramuunnos", "Paikallinen kasittely selaimessa"]
+    },
+    "howTo": {
+      "name": "Kuinka muuntaa BMP GIF-muotoon",
+      "description": "Muunna pakkaamattomat BMP-tiedostot kevyeen GIF-muotoon.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Lataa tiedostot",
+          "text": "Vedä tiedostot sivulle tai napsauta valitaksesi levylta."
+        },
+        {
+          "position": 2,
+          "name": "Aseta laatu",
+          "text": "Saada GIF-laatuliukusaadinta — alhaisemmat arvot tuottavat pienempia tiedostoja."
+        },
+        {
+          "position": 3,
+          "name": "Muunna",
+          "text": "Napsauta Muunna — tiedostot kasitellaan paikallisesti selaimessa."
+        },
+        {
+          "position": 4,
+          "name": "Lataa",
+          "text": "Lataa GIF-tiedostot — yksittain tai kaikki kerralla."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Miten BMP-GIF-muunnin toimii?",
+      "html": "<p>Muunna pakkaamattomat BMP-tiedostot kevyeen GIF-muotoon. Muunnos tapahtuu kokonaan selaimessa — tiedostoja ei koskaan lahetetä palvelimelle. Ilman rekisteroitymista, ilman rajoituksia.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Kuinka muuntaa BMP GIF-muotoon?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Lataa tiedostot",
+          "description": "Vedä tiedostot sivulle tai napsauta valitaksesi levylta."
+        },
+        {
+          "position": 2,
+          "title": "Aseta laatu",
+          "description": "Saada GIF-laatuliukusaadinta — alhaisemmat arvot tuottavat pienempia tiedostoja."
+        },
+        {
+          "position": 3,
+          "title": "Muunna",
+          "description": "Napsauta Muunna — tiedostot kasitellaan paikallisesti selaimessa."
+        },
+        {
+          "position": 4,
+          "title": "Lataa",
+          "description": "Lataa GIF-tiedostot — yksittain tai kaikki kerralla."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "items": [
+        {
+          "question": "Mika on GIF-muoto?",
+          "answer": "GIF on laajasti tuettu kuvamuoto, joka tukee enintaan 256 varia. Ihanteellinen yksinkertaisille grafiikoille ja kuvakkeille."
+        },
+        {
+          "question": "Vahentaako GIF-muunnos laatua?",
+          "answer": "GIF kayttaa rajattua 256 varin palettia. Valokuvat voivat menettaa yksityiskohtia."
+        },
+        {
+          "question": "Lahetetaanko tiedostoni palvelimelle?",
+          "answer": "Ei. Muunnos tapahtuu kokonaan selaimessa."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Tarvitsetko lisaa?",
+      "description": "Ota yhteytta — autamme loytamaan oikean ratkaisun.",
+      "href": "/fi/yhteystiedot",
+      "buttonText": "Kirjoita meille"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut tyokalut"
+    }
+  ]
+}

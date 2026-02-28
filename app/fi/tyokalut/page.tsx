@@ -57,7 +57,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 34,
+
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -348,6 +348,177 @@ const schema = {
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
+      {
+        '@type': 'WebApplication',
+        position: 35,
+        name: 'JPG AVIF -muunnin',
+        description: 'Muunna JPG-kuvat moderniin AVIF-muotoon. Jopa 50% parempi pakkaus kuin JPG.',
+        url: toAbsoluteUrl('/fi/tyokalut/jpg-avif-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 36,
+        name: 'PNG AVIF -muunnin',
+        description: 'Muunna PNG-grafiikat AVIF-muotoon lapinakvyystuella. Huomattavasti pienemmat tiedostot.',
+        url: toAbsoluteUrl('/fi/tyokalut/png-avif-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 37,
+        name: 'WebP AVIF -muunnin',
+        description: 'Muunna WebP-tiedostot AVIF-muotoon. Viela parempi pakkaus modernissa formaatissa.',
+        url: toAbsoluteUrl('/fi/tyokalut/webp-avif-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 38,
+        name: 'SVG AVIF -muunnin',
+        description: 'Muunna vektori-SVG-grafiikat kompaktiin AVIF-rasterimuotoon.',
+        url: toAbsoluteUrl('/fi/tyokalut/svg-avif-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 39,
+        name: 'BMP AVIF -muunnin',
+        description: 'Muunna pakkaamattomat BMP-tiedostot ultrakompaktiin AVIF-muotoon.',
+        url: toAbsoluteUrl('/fi/tyokalut/bmp-avif-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 40,
+        name: 'GIF AVIF -muunnin',
+        description: 'Muunna GIF:n ensimmainen ruutu staattiseksi AVIF-kuvaksi erinomaisella pakkauksella.',
+        url: toAbsoluteUrl('/fi/tyokalut/gif-avif-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 41,
+        name: 'HEIC AVIF -muunnin',
+        description: 'Muunna iPhonen HEIC-kuvat moderniin AVIF-muotoon.',
+        url: toAbsoluteUrl('/fi/tyokalut/heic-avif-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 42,
+        name: 'TIFF AVIF -muunnin',
+        description: 'Muunna TIFF-tiedostot moderniin AVIF-muotoon. Valtava tiedostokoon pienennys.',
+        url: toAbsoluteUrl('/fi/tyokalut/tiff-avif-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 43,
+        name: 'JPG GIF -muunnin',
+        description: 'Muunna JPG-kuvat GIF-muotoon. Taydellinen yksinkertaisille grafiikoille ja kuvakkeille.',
+        url: toAbsoluteUrl('/fi/tyokalut/jpg-gif-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 44,
+        name: 'PNG GIF -muunnin',
+        description: 'Muunna PNG-grafiikat GIF-muotoon. Ihanteellinen yksinkertaisille kuvakkeille ja grafiikoille.',
+        url: toAbsoluteUrl('/fi/tyokalut/png-gif-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 45,
+        name: 'WebP GIF -muunnin',
+        description: 'Muunna WebP-kuvat GIF-muotoon maksimaalisen yhteensopivuuden saavuttamiseksi.',
+        url: toAbsoluteUrl('/fi/tyokalut/webp-gif-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 46,
+        name: 'SVG GIF -muunnin',
+        description: 'Muunna vektori-SVG-grafiikat GIF-rasterimuotoon.',
+        url: toAbsoluteUrl('/fi/tyokalut/svg-gif-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 47,
+        name: 'BMP GIF -muunnin',
+        description: 'Muunna pakkaamattomat BMP-tiedostot kevyeen GIF-muotoon.',
+        url: toAbsoluteUrl('/fi/tyokalut/bmp-gif-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 48,
+        name: 'JPG TIFF -muunnin',
+        description: 'Muunna JPG-kuvat haviottomaan TIFF-muotoon. Tulostukseen ja arkistointiin.',
+        url: toAbsoluteUrl('/fi/tyokalut/jpg-tiff-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 49,
+        name: 'PNG TIFF -muunnin',
+        description: 'Muunna PNG-grafiikat ammattimaiseen TIFF-muotoon.',
+        url: toAbsoluteUrl('/fi/tyokalut/png-tiff-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 50,
+        name: 'WebP TIFF -muunnin',
+        description: 'Muunna WebP-kuvat ammattimaiseen TIFF-muotoon tulostukseen ja arkistointiin.',
+        url: toAbsoluteUrl('/fi/tyokalut/webp-tiff-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 51,
+        name: 'SVG TIFF -muunnin',
+        description: 'Muunna vektori-SVG-grafiikat korkealaatuiseen TIFF-rasterimuotoon.',
+        url: toAbsoluteUrl('/fi/tyokalut/svg-tiff-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 52,
+        name: 'BMP TIFF -muunnin',
+        description: 'Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten.',
+        url: toAbsoluteUrl('/fi/tyokalut/bmp-tiff-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 53,
+        name: 'HEIC TIFF -muunnin',
+        description: 'Muunna iPhonen HEIC-kuvat ammattimaiseen TIFF-muotoon.',
+        url: toAbsoluteUrl('/fi/tyokalut/heic-tiff-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
     ],
   },
 };
@@ -412,6 +583,153 @@ export default function ToolsIndexPage() {
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/fi/tyokalut/ilmainen-favicon-generaattori">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <SectionSteps
+          title="Teksti ja SEO"
+          description="Työkalut tekstin pituuden, metatunnisteiden tarkistamiseen ja sivun esikatseluun hakutuloksissa."
+          grid="three"
+          items={[
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Meta-otsikon ja -kuvauksen tarkistus',
+              topImageAlt: 'Meta-otsikon ja -kuvauksen tarkistus Arteon',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-otsikko-ja-kuvaus-tarkistus-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Tarkista merkkien ja sanojen määrä sekä pikselileveys – Google-esikatselulla. Vältä katkenneet otsikot ja kuvaukset hakutuloksissa.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/meta-otsikko-ja-kuvaus-tarkistus">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiArticleLine className="h-8 w-8" />,
+              title: 'Sana- ja merkkilaskuri',
+              topImageAlt: 'Sana- ja merkkilaskuri Arteon',
+              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/sana-ja-merkkilaskuri-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Tarkista tekstin pituus ja arvioi, sopiiko se etusivulle, palvelusivulle, blogikirjoitukseen tai tuotekuvaukseen. Työkalu laskee sanat, merkit, kappaleet ja lukuajan.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/sana-ja-merkkilaskuri">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+        <Gap size="sm" />
+        <SectionSteps
+          title="Sähköposti ja viestintä"
+          description="Työkalut ammattimaiseen sähköpostiviestintään ja yhtenäiseen brändi-ilmeeseen."
+          grid="three"
+          items={[
+            {
+              icon: <RiMailLine className="h-8 w-8" />,
+              title: 'Ilmainen HTML-sähköpostiallekirjoitusgeneraattori',
+              topImageAlt: 'Ilmainen sähköpostiallekirjoitusgeneraattori Arteon',
+              topImageSrc: '/assets/tools/free-html-email-signature-generator/ilmainen-sahkopostiallekirjoitus-generaattori-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Luo ammattimainen sähköpostiallekirjoitus muutamassa minuutissa. Syötä tietosi, valitse värit ja kopioi valmis HTML-koodi Gmailiin, Outlookiin tai muuhun sähköpostiohjelmaan.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/ilmainen-sahkopostiallekirjoitus-generaattori">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+        <Gap size="sm" />
+        <SectionSteps
+          title="QR-koodi"
+          description="QR-koodigeneraattori verkkosivuille, käyntikorteille, ruokalistoille ja painotuotteille."
+          grid="three"
+          items={[
+            {
+              icon: <RiQrCodeLine className="h-8 w-8" />,
+              title: 'Ilmainen QR-koodigeneraattori',
+              topImageAlt: 'Ilmainen QR-koodigeneraattori Arteon',
+              topImageSrc: '/assets/tools/qr-code-generator/ilmainen-qr-koodi-generaattori-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Luo QR-koodi verkkosivulle, vCard-käyntikortille, ravintolan ruokalistalle tai esitteelle. Vie PNG- ja SVG-muotoon – ilman kirjautumista, ilman rajoituksia.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/ilmainen-qr-koodi-generaattori">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+        <Gap size="sm" />
+        <SectionSteps
+          title="Värit ja saavutettavuus"
+          description="Työkalut värien, kontrastin ja WCAG-saavutettavuuden käsittelyyn."
+          grid="three"
+          items={[
+            {
+              icon: <RiContrast2Line className="h-8 w-8" />,
+              title: 'Värikontrastin tarkistus',
+              topImageAlt: 'Värikontrastin tarkistus Arteon',
+              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/varikontrasti-tarkistus-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>
+                    Tarkista, ovatko teksti- ja taustavärit luettavia. Syötä värikoodit, tarkista kontrastisuhde <strong>WCAG</strong>-standardin mukaan ja käytä <strong>Match</strong>-toimintoa
+                    automaattiseen korjaukseen.
+                  </p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/varikontrasti-tarkistus">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiPantoneLine className="h-8 w-8" />,
+              title: 'Värien poiminta kuvasta',
+              topImageAlt: 'Värien poiminta kuvasta Arteon',
+              topImageSrc: '/assets/tools/image-color-extractor/varien-poiminta-kuvasta-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Lataa valokuva tai logo – työkalu poimii hallitsevat värit. Kopioi HEX-koodit yhdellä napsautuksella ja käytä niitä missä tahansa.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/varien-poiminta-kuvasta">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiPaletteLine className="h-8 w-8" />,
+              title: 'Väripalettien generaattori',
+              topImageAlt: 'Väripalettien generaattori Arteon',
+              topImageSrc: '/assets/tools/color-palette-generator/varipaletti-generaattori-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Valitse perusväri ja luo 9 väripalettia: monokromaattinen, komplementaarinen, triadinen, pastelli, tumma ja muita. Kopioi HEX-koodit yhdellä napsautuksella.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/varipaletti-generaattori">
                       Avaa työkalu
                     </Button>
                   </div>
@@ -571,396 +889,11 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'BMP PNG -muunnin',
-              topImageAlt: 'BMP PNG -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/bmp-png-muunnin">
-                      Avaa työkalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'GIF PNG -muunnin',
-              topImageAlt: 'GIF PNG -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Vie GIF-kuvan ensimmäinen ruutu staattisena PNG-kuvana. Ilman laadun heikkenemistä.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/gif-png-muunnin">
-                      Avaa työkalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'GIF JPG -muunnin',
-              topImageAlt: 'GIF JPG -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Vie GIF-kuvan ensimmäinen ruutu kompaktina JPG-kuvana. Pienempi tiedosto.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/gif-jpg-muunnin">
-                      Avaa työkalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'SVG WebP -muunnin',
-              topImageAlt: 'SVG WebP -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Muunna SVG-grafiikat kevyeen WebP-muotoon. Ihanteellinen verkkosivuille.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/svg-webp-muunnin">
-                      Avaa tyokalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'GIF WebP -muunnin',
-              topImageAlt: 'GIF WebP -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Vie GIF-kuvan ensimmainen ruutu kevyena WebP-kuvana.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/gif-webp-muunnin">
-                      Avaa tyokalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'BMP WebP -muunnin',
-              topImageAlt: 'BMP WebP -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Muunna BMP-tiedostot kevyeen WebP-muotoon. Jopa 95% pienempi.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/bmp-webp-muunnin">
-                      Avaa tyokalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'AVIF JPG -muunnin',
-              topImageAlt: 'AVIF JPG -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Muunna AVIF-tiedostot yleiseen JPG-muotoon. Yhteensopiva kaikkialla.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/avif-jpg-muunnin">
-                      Avaa tyokalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'AVIF PNG -muunnin',
-              topImageAlt: 'AVIF PNG -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Muunna AVIF-tiedostot haviottomaan PNG-muotoon. Taysi laatu.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/avif-png-muunnin">
-                      Avaa tyokalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'AVIF WebP -muunnin',
-              topImageAlt: 'AVIF WebP -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Muunna AVIF-tiedostot WebP-muotoon. Laaja yhteensopivuus.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/avif-webp-muunnin">
-                      Avaa tyokalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'HEIC JPG -muunnin',
-              topImageAlt: 'HEIC JPG -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Muunna iPhone HEIC-valokuvat yleiseen JPG-muotoon. Ei rekisteroitymista.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/heic-jpg-muunnin">
-                      Avaa tyokalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'HEIC PNG -muunnin',
-              topImageAlt: 'HEIC PNG -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Muunna iPhone HEIC-valokuvat haviottomaan PNG-muotoon.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/heic-png-muunnin">
-                      Avaa tyokalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'HEIC WebP -muunnin',
-              topImageAlt: 'HEIC WebP -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Muunna iPhone HEIC-valokuvat kevyeen WebP-muotoon.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/heic-webp-muunnin">
-                      Avaa tyokalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'TIFF JPG -muunnin',
-              topImageAlt: 'TIFF JPG -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Muunna TIFF-tiedostot kompaktiin JPG-muotoon. Ihanteellinen skannauksille.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/tiff-jpg-muunnin">
-                      Avaa tyokalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'TIFF PNG -muunnin',
-              topImageAlt: 'TIFF PNG -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Muunna TIFF-tiedostot haviottomaan PNG-muotoon.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/tiff-png-muunnin">
-                      Avaa tyokalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'TIFF WebP -muunnin',
-              topImageAlt: 'TIFF WebP -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Muunna TIFF-tiedostot kevyeen WebP-muotoon. Valtava vahenema.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/tiff-webp-muunnin">
-                      Avaa tyokalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
           ]}
         />
 
         <Gap size="sm" />
-        <SectionSteps
-          title="Teksti ja SEO"
-          description="Työkalut tekstin pituuden, metatunnisteiden tarkistamiseen ja sivun esikatseluun hakutuloksissa."
-          grid="three"
-          items={[
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Meta-otsikon ja -kuvauksen tarkistus',
-              topImageAlt: 'Meta-otsikon ja -kuvauksen tarkistus Arteon',
-              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-otsikko-ja-kuvaus-tarkistus-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Tarkista merkkien ja sanojen määrä sekä pikselileveys – Google-esikatselulla. Vältä katkenneet otsikot ja kuvaukset hakutuloksissa.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/meta-otsikko-ja-kuvaus-tarkistus">
-                      Avaa työkalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiArticleLine className="h-8 w-8" />,
-              title: 'Sana- ja merkkilaskuri',
-              topImageAlt: 'Sana- ja merkkilaskuri Arteon',
-              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/sana-ja-merkkilaskuri-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Tarkista tekstin pituus ja arvioi, sopiiko se etusivulle, palvelusivulle, blogikirjoitukseen tai tuotekuvaukseen. Työkalu laskee sanat, merkit, kappaleet ja lukuajan.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/sana-ja-merkkilaskuri">
-                      Avaa työkalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-        <Gap size="sm" />
-        <SectionSteps
-          title="Sähköposti ja viestintä"
-          description="Työkalut ammattimaiseen sähköpostiviestintään ja yhtenäiseen brändi-ilmeeseen."
-          grid="three"
-          items={[
-            {
-              icon: <RiMailLine className="h-8 w-8" />,
-              title: 'Ilmainen HTML-sähköpostiallekirjoitusgeneraattori',
-              topImageAlt: 'Ilmainen sähköpostiallekirjoitusgeneraattori Arteon',
-              topImageSrc: '/assets/tools/free-html-email-signature-generator/ilmainen-sahkopostiallekirjoitus-generaattori-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Luo ammattimainen sähköpostiallekirjoitus muutamassa minuutissa. Syötä tietosi, valitse värit ja kopioi valmis HTML-koodi Gmailiin, Outlookiin tai muuhun sähköpostiohjelmaan.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/ilmainen-sahkopostiallekirjoitus-generaattori">
-                      Avaa työkalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-        <Gap size="sm" />
-        <SectionSteps
-          title="QR-koodi"
-          description="QR-koodigeneraattori verkkosivuille, käyntikorteille, ruokalistoille ja painotuotteille."
-          grid="three"
-          items={[
-            {
-              icon: <RiQrCodeLine className="h-8 w-8" />,
-              title: 'Ilmainen QR-koodigeneraattori',
-              topImageAlt: 'Ilmainen QR-koodigeneraattori Arteon',
-              topImageSrc: '/assets/tools/qr-code-generator/ilmainen-qr-koodi-generaattori-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Luo QR-koodi verkkosivulle, vCard-käyntikortille, ravintolan ruokalistalle tai esitteelle. Vie PNG- ja SVG-muotoon – ilman kirjautumista, ilman rajoituksia.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/ilmainen-qr-koodi-generaattori">
-                      Avaa työkalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-        <Gap size="sm" />
-        <SectionSteps
-          title="Värit ja saavutettavuus"
-          description="Työkalut värien, kontrastin ja WCAG-saavutettavuuden käsittelyyn."
-          grid="three"
-          items={[
-            {
-              icon: <RiContrast2Line className="h-8 w-8" />,
-              title: 'Värikontrastin tarkistus',
-              topImageAlt: 'Värikontrastin tarkistus Arteon',
-              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/varikontrasti-tarkistus-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>
-                    Tarkista, ovatko teksti- ja taustavärit luettavia. Syötä värikoodit, tarkista kontrastisuhde <strong>WCAG</strong>-standardin mukaan ja käytä <strong>Match</strong>-toimintoa
-                    automaattiseen korjaukseen.
-                  </p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/varikontrasti-tarkistus">
-                      Avaa työkalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiPantoneLine className="h-8 w-8" />,
-              title: 'Värien poiminta kuvasta',
-              topImageAlt: 'Värien poiminta kuvasta Arteon',
-              topImageSrc: '/assets/tools/image-color-extractor/varien-poiminta-kuvasta-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Lataa valokuva tai logo – työkalu poimii hallitsevat värit. Kopioi HEX-koodit yhdellä napsautuksella ja käytä niitä missä tahansa.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/varien-poiminta-kuvasta">
-                      Avaa työkalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiPaletteLine className="h-8 w-8" />,
-              title: 'Väripalettien generaattori',
-              topImageAlt: 'Väripalettien generaattori Arteon',
-              topImageSrc: '/assets/tools/color-palette-generator/varipaletti-generaattori-fi.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Valitse perusväri ja luo 9 väripalettia: monokromaattinen, komplementaarinen, triadinen, pastelli, tumma ja muita. Kopioi HEX-koodit yhdellä napsautuksella.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/varipaletti-generaattori">
-                      Avaa työkalu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
+
         <Gap variant="line" />
         <SectionInfo title="Mitä Arteonin työkalut ovat?">
           <p className="mb-4">

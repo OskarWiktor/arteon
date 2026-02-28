@@ -1,0 +1,122 @@
+{
+  "toolKey": "pngToTiff",
+  "locale": "de",
+  "metadata": {
+    "title": "PNG zu TIFF Konverter — PNG TIFF",
+    "description": "PNG-Grafiken in professionelles TIFF-Format umwandeln.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/de/werkzeuge/png-zu-tiff-konverter"
+  },
+  "hero": {
+    "title": "PNG zu TIFF Konverter",
+    "description": "PNG-Grafiken in professionelles TIFF-Format umwandeln.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/png-zu-tiff-konverter",
+      "label": "PNG zu TIFF Konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "PNG zu TIFF Konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "PNG-Grafiken in professionelles TIFF-Format umwandeln.",
+      "featureList": ["Konvertierung zu TIFF", "Qualitatsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"]
+    },
+    "howTo": {
+      "name": "PNG zu TIFF konvertieren",
+      "description": "PNG-Grafiken in professionelles TIFF-Format umwandeln.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Dateien hochladen",
+          "text": "Dateien auf die Seite ziehen oder klicken, um sie auszuwahlen."
+        },
+        {
+          "position": 2,
+          "name": "Qualitat einstellen",
+          "text": "Passen Sie den TIFF-Qualitatsregler an — niedrigere Werte ergeben kleinere Dateien."
+        },
+        {
+          "position": 3,
+          "name": "Konvertieren",
+          "text": "Klicken Sie auf Konvertieren — Dateien werden lokal im Browser verarbeitet."
+        },
+        {
+          "position": 4,
+          "name": "Herunterladen",
+          "text": "Laden Sie die TIFF-Dateien herunter — einzeln oder alle auf einmal."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Wie funktioniert der PNG zu TIFF Konverter?",
+      "html": "<p>PNG-Grafiken in professionelles TIFF-Format umwandeln. Die Konvertierung erfolgt vollstandig im Browser — Dateien werden nie an einen Server gesendet. Ohne Registrierung, ohne Dateilimit.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Wie konvertiert man PNG zu TIFF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Dateien hochladen",
+          "description": "Dateien auf die Seite ziehen oder klicken, um sie auszuwahlen."
+        },
+        {
+          "position": 2,
+          "title": "Qualitat einstellen",
+          "description": "Passen Sie den TIFF-Qualitatsregler an — niedrigere Werte ergeben kleinere Dateien."
+        },
+        {
+          "position": 3,
+          "title": "Konvertieren",
+          "description": "Klicken Sie auf Konvertieren — Dateien werden lokal im Browser verarbeitet."
+        },
+        {
+          "position": 4,
+          "title": "Herunterladen",
+          "description": "Laden Sie die TIFF-Dateien herunter — einzeln oder alle auf einmal."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Haufig gestellte Fragen",
+      "items": [
+        {
+          "question": "Was ist das TIFF-Format?",
+          "answer": "TIFF ist ein professionelles verlustfreies Bildformat fur Druck, Verlagswesen und Archivierung."
+        },
+        {
+          "question": "Sind TIFF-Dateien grosser als JPG?",
+          "answer": "Ja. TIFF-Dateien sind typischerweise viel grosser, da sie verlustfreie Kompression verwenden."
+        },
+        {
+          "question": "Werden meine Dateien an einen Server gesendet?",
+          "answer": "Nein. Die Konvertierung erfolgt vollstandig im Browser."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Brauchen Sie mehr?",
+      "description": "Kontaktieren Sie uns — wir helfen Ihnen, die richtige Losung zu finden.",
+      "href": "/de/kontakt",
+      "buttonText": "Schreiben Sie uns"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere Werkzeuge"
+    }
+  ]
+}

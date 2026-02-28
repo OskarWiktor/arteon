@@ -1,0 +1,122 @@
+{
+  "toolKey": "tiffToAvif",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník TIFF na AVIF — TIFF AVIF",
+    "description": "Prevedte soubory TIFF na moderni AVIF. Masivni snizeni velikosti souboru.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-tiff-na-avif"
+  },
+  "hero": {
+    "title": "Převodník TIFF na AVIF",
+    "description": "Prevedte soubory TIFF na moderni AVIF. Masivni snizeni velikosti souboru.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-tiff-na-avif",
+      "label": "Převodník TIFF na AVIF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník TIFF na AVIF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Prevedte soubory TIFF na moderni AVIF. Masivni snizeni velikosti souboru.",
+      "featureList": ["Konverze do AVIF", "Nastaveni kvality (60-95%)", "Davkova konverze", "Lokalni zpracovani v prohlizeci"]
+    },
+    "howTo": {
+      "name": "Jak prevest TIFF na AVIF",
+      "description": "Prevedte soubory TIFF na moderni AVIF. Masivni snizeni velikosti souboru.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Nahrajte soubory",
+          "text": "Pretahnete soubory na stranku nebo kliknete pro vyber z disku."
+        },
+        {
+          "position": 2,
+          "name": "Nastavte kvalitu",
+          "text": "Upravte posuvnik kvality AVIF — nizsi hodnoty vytvareji mensi soubory."
+        },
+        {
+          "position": 3,
+          "name": "Konvertujte",
+          "text": "Kliknete na Konvertovat — soubory se zpracuji lokalne v prohlizeci."
+        },
+        {
+          "position": 4,
+          "name": "Stahnete",
+          "text": "Stahnete hotove soubory AVIF — jednotlive nebo vsechny naraz."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Jak funguje prevodnik TIFF na AVIF?",
+      "html": "<p>Prevedte soubory TIFF na moderni AVIF. Masivni snizeni velikosti souboru. Konverze probiha cele v prohlizeci — soubory se nikdy neodesilaji na server. Bez registrace, bez limitu souboru.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Jak prevest TIFF na AVIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Nahrajte soubory",
+          "description": "Pretahnete soubory na stranku nebo kliknete pro vyber z disku."
+        },
+        {
+          "position": 2,
+          "title": "Nastavte kvalitu",
+          "description": "Upravte posuvnik kvality AVIF — nizsi hodnoty vytvareji mensi soubory."
+        },
+        {
+          "position": 3,
+          "title": "Konvertujte",
+          "description": "Kliknete na Konvertovat — soubory se zpracuji lokalne v prohlizeci."
+        },
+        {
+          "position": 4,
+          "title": "Stahnete",
+          "description": "Stahnete hotove soubory AVIF — jednotlive nebo vsechny naraz."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Nejcastejsi dotazy",
+      "items": [
+        {
+          "question": "Co je format AVIF?",
+          "answer": "AVIF je moderni obrazovy format zalozeny na kodeku AV1. Nabizi vynikajici kompresi — soubory mohou byt az o 50% mensi nez JPG."
+        },
+        {
+          "question": "Funguje AVIF ve vsech prohlizecich?",
+          "answer": "AVIF je podporovan Chrome, Edge a Firefoxem. Safari ma omezenou podporu AVIF."
+        },
+        {
+          "question": "Jsou moje soubory odeslany na server?",
+          "answer": "Ne. Konverze probiha cele v prohlizeci. Soubory nikdy neopusti pocitac."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Potrebujete vic?",
+      "description": "Kontaktujte nas — pomuzeme vam najit spravne reseni.",
+      "href": "/cs/kontakt",
+      "buttonText": "Napiste nam"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Dalsi nastroje"
+    }
+  ]
+}

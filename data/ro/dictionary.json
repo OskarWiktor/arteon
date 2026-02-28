@@ -151,6 +151,24 @@
     "errorGeneration": "Nu s-a putut genera fișierul {{format}}.",
     "errorTooLarge": "Fișierul este prea mare (max 100 MB).",
     "errorWrongFormat": "Adaugă fișiere {{format}} — alte formate sunt ignorate.",
-    "errorNoFiles": "Adaugă cel puțin un fișier {{format}}."
+    "errorNoFiles": "Adaugă cel puțin un fișier {{format}}.",
+    "errorAvifNotSupported": "Browserul tău nu suportă codificarea AVIF. Folosește Chrome, Edge sau Firefox."
+  },
+  "errorPages": {
+    "notFound": {
+      "title": "Pagina nu a fost găsită",
+      "code": "404",
+      "description": "Pagina pe care o căutați nu există. Faceți clic pe buton pentru a reveni la pagina principală.",
+      "backHome": "Înapoi la pagina principală"
+    },
+    "error": {
+      "title": "Ceva nu a funcționat",
+      "description": "A apărut o eroare neașteptată. Încercați să reîmprospătați pagina sau contactați-ne dacă problema persistă.",
+      "tryAgain": "Încearcă din nou",
+      "backHome": "Înapoi la pagina principală",
+      "contact": "Contactați-ne",
+      "contactHref": "/ro/contact",
+      "errorCode": "Cod eroare"
+    }
   }
 }

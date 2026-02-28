@@ -1,0 +1,122 @@
+{
+  "toolKey": "heicToTiff",
+  "locale": "no",
+  "metadata": {
+    "title": "HEIC til TIFF-konverterer — HEIC TIFF",
+    "description": "Konverter iPhone HEIC-bilder til profesjonelt TIFF-format.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/no/verktoy/heic-til-tiff-konverterer"
+  },
+  "hero": {
+    "title": "HEIC til TIFF-konverterer",
+    "description": "Konverter iPhone HEIC-bilder til profesjonelt TIFF-format.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/heic-til-tiff-konverterer",
+      "label": "HEIC til TIFF-konverterer"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "HEIC til TIFF-konverterer",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konverter iPhone HEIC-bilder til profesjonelt TIFF-format.",
+      "featureList": ["Konvertering til TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"]
+    },
+    "howTo": {
+      "name": "Hvordan konvertere HEIC til TIFF",
+      "description": "Konverter iPhone HEIC-bilder til profesjonelt TIFF-format.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Last opp filer",
+          "text": "Dra filer til siden eller klikk for a velge fra disk."
+        },
+        {
+          "position": 2,
+          "name": "Still inn kvalitet",
+          "text": "Juster TIFF-kvalitetsglideren — lavere verdier gir mindre filer."
+        },
+        {
+          "position": 3,
+          "name": "Konverter",
+          "text": "Klikk pa Konverter — filene behandles lokalt i nettleseren."
+        },
+        {
+          "position": 4,
+          "name": "Last ned",
+          "text": "Last ned TIFF-filene — enkeltvis eller alle pa en gang."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Hvordan fungerer HEIC til TIFF-konvertereren?",
+      "html": "<p>Konverter iPhone HEIC-bilder til profesjonelt TIFF-format. Konverteringen skjer helt i nettleseren — filer sendes aldri til en server. Uten registrering, uten begrensning.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Hvordan konvertere HEIC til TIFF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Last opp filer",
+          "description": "Dra filer til siden eller klikk for a velge fra disk."
+        },
+        {
+          "position": 2,
+          "title": "Still inn kvalitet",
+          "description": "Juster TIFF-kvalitetsglideren — lavere verdier gir mindre filer."
+        },
+        {
+          "position": 3,
+          "title": "Konverter",
+          "description": "Klikk pa Konverter — filene behandles lokalt i nettleseren."
+        },
+        {
+          "position": 4,
+          "title": "Last ned",
+          "description": "Last ned TIFF-filene — enkeltvis eller alle pa en gang."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte sporsmal",
+      "items": [
+        {
+          "question": "Hva er TIFF-format?",
+          "answer": "TIFF er et profesjonelt tapsfritt bildeformat som brukes til utskrift, publisering og arkivering."
+        },
+        {
+          "question": "Er TIFF-filer storre enn JPG?",
+          "answer": "Ja. TIFF-filer er vanligvis mye storre fordi de bruker tapsfri komprimering."
+        },
+        {
+          "question": "Sendes filene mine til en server?",
+          "answer": "Nei. Konverteringen skjer helt i nettleseren."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Trenger du mer?",
+      "description": "Kontakt oss — vi hjelper deg a finne den riktige losningen.",
+      "href": "/no/kontakt",
+      "buttonText": "Skriv til oss"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre verktoy"
+    }
+  ]
+}

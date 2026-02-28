@@ -5,7 +5,7 @@
     "title": "Contor gratuit al lungimii meta titlu și descriere în pixeli",
     "description": "Verificați dacă meta titlul și descrierea au lungimea corectă conform regulilor Google. Contor cu previzualizare live și sfaturi.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/verificator-meta-titlu-si-descriere-ro.webp",
-    "path": "/ro/instrumente/verificator-lungime-meta-title-si-description"
+    "path": "/ro/instrumente/verificator-meta-titlu-si-descriere"
   },
   "hero": {
     "title": "Verifică lungimea meta titlului și descrierii – previzualizare Google",
@@ -18,7 +18,7 @@
       "label": "Instrumente"
     },
     "third": {
-      "href": "/ro/instrumente/verificator-lungime-meta-title-si-description",
+      "href": "/ro/instrumente/verificator-meta-titlu-si-descriere",
       "label": "Verificator meta title și description"
     }
   },

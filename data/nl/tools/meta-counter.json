@@ -5,7 +5,7 @@
     "title": "Gratis metatitel- en beschrijvingslengte checker in pixels",
     "description": "Controleer of uw metatitel en beschrijving de juiste lengte hebben volgens de Google-richtlijnen. Checker met live preview en tips.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-beschrijving-checker-nl.webp",
-    "path": "/nl/tools/meta-title-description-lengte-checker"
+    "path": "/nl/tools/meta-titel-beschrijving-checker"
   },
   "hero": {
     "title": "Controleer de lengte van metatitel en beschrijving – Google-voorbeeld",
@@ -18,7 +18,7 @@
       "label": "Tools"
     },
     "third": {
-      "href": "/nl/tools/meta-title-description-lengte-checker",
+      "href": "/nl/tools/meta-titel-beschrijving-checker",
       "label": "Meta title & description checker"
     }
   },

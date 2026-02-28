@@ -1,7 +1,7 @@
 {
   "slug": "rolunk",
   "metadata": {
-    "title": "Az Arteonról – 10 ingyenes online eszköz webhez, SEO-hoz",
+    "title": "Az Arteonról – Ingyenes online eszköz webhez, SEO-hoz",
     "description": "Az Arteon egy kreatív ügynökség, amely ingyenes böngészőalapú eszközöket fejleszt: WebP konverter, favicon generátor, színkontraszt ellenőrző, QR-kód."
   },
   "hero": {
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Próbálja ki eszközeinket",
-    "description": "10 ingyenes online eszköz — regisztráció, korlátozás és szerverre feltöltés nélkül",
+    "description": "Ingyenes online eszköz — regisztráció, korlátozás és szerverre feltöltés nélkül",
     "btnOne": "Eszközök megtekintése",
     "btnTwo": "Kapcsolat"
   }

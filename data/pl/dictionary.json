@@ -113,12 +113,12 @@
     "clickToSelect": "lub kliknij, aby wybrać pliki z dysku",
     "supported": "Obsługiwane: {{format}}",
     "setQuality": "Ustaw jakość {{format}}",
-    "qualityHelper": "Niższa wartość = mniejsza waga plików, wyższa = lepsza jakość. 80\u201385% to dobry kompromis.",
+    "qualityHelper": "Niższa wartość = mniejsza waga plików, wyższa = lepsza jakość. 80–85% to dobry kompromis.",
     "convertAndDownload": "Konwertuj i pobierz",
     "inQueue": "W kolejce:",
     "files": "plików",
     "completed": "Zakończone",
-    "converting": "Konwertuję\u2026",
+    "converting": "Konwertuję…",
     "convert": "Konwertuj",
     "downloadAll": "Pobierz wszystkie",
     "clearAll": "Wyczyść wszystko",
@@ -134,7 +134,7 @@
     "pendingCount": "W trakcie",
     "emptyState": "Dodaj pliki {{source}} po lewej stronie, aby rozpocząć konwersję na {{target}}.",
     "statusPending": "Oczekuje",
-    "statusProcessing": "Przetwarzanie\u2026",
+    "statusProcessing": "Przetwarzanie…",
     "statusDone": "Gotowe",
     "statusError": "Błąd",
     "before": "Przed:",
@@ -149,6 +149,24 @@
     "errorGeneration": "Nie udało się wygenerować pliku {{format}}.",
     "errorTooLarge": "Plik jest za duży (maks. 100 MB).",
     "errorWrongFormat": "Dodaj pliki {{format}} — inne formaty są pomijane.",
-    "errorNoFiles": "Dodaj przynajmniej jeden plik {{format}}."
+    "errorNoFiles": "Dodaj przynajmniej jeden plik {{format}}.",
+    "errorAvifNotSupported": "Twoja przeglądarka nie obsługuje kodowania AVIF. Użyj Chrome, Edge lub Firefox."
+  },
+  "errorPages": {
+    "notFound": {
+      "title": "Nie znaleziono strony",
+      "code": "404",
+      "description": "Wygląda na to, że nie mamy strony o tym adresie. Kliknij przycisk aby wrócić na stronę główną.",
+      "backHome": "Wróć na stronę główną"
+    },
+    "error": {
+      "title": "Coś poszło nie tak",
+      "description": "Wystąpił nieoczekiwany błąd. Spróbuj odświeżyć stronę lub skontaktuj się z nami, jeśli problem się powtarza.",
+      "tryAgain": "Spróbuj ponownie",
+      "backHome": "Wróć na stronę główną",
+      "contact": "Skontaktuj się",
+      "contactHref": "/kontakt",
+      "errorCode": "Kod błędu"
+    }
   }
 }

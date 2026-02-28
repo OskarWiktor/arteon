@@ -1,0 +1,122 @@
+{
+  "toolKey": "tiffToAvif",
+  "locale": "en",
+  "metadata": {
+    "title": "TIFF to AVIF converter — TIFF AVIF",
+    "description": "Convert TIFF files to modern AVIF. Massive file size reduction.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/en/tools/tiff-to-avif-converter"
+  },
+  "hero": {
+    "title": "TIFF to AVIF converter",
+    "description": "Convert TIFF files to modern AVIF. Massive file size reduction.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/tiff-to-avif-converter",
+      "label": "TIFF to AVIF converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "TIFF to AVIF converter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convert TIFF files to modern AVIF. Massive file size reduction.",
+      "featureList": ["Conversion to AVIF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "How to convert TIFF to AVIF",
+      "description": "Convert TIFF files to modern AVIF. Massive file size reduction.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Upload files",
+          "text": "Drag files onto the page or click to select from disk."
+        },
+        {
+          "position": 2,
+          "name": "Set quality",
+          "text": "Adjust the AVIF quality slider — lower values produce smaller files."
+        },
+        {
+          "position": 3,
+          "name": "Convert",
+          "text": "Click Convert — files are processed locally in your browser."
+        },
+        {
+          "position": 4,
+          "name": "Download",
+          "text": "Download the AVIF files — individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "How does the TIFF to AVIF converter work?",
+      "html": "<p>Convert TIFF files to modern AVIF. Massive file size reduction. Conversion runs entirely in your browser — files are never sent to a server. No registration, no file limit.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "How to convert TIFF to AVIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Upload files",
+          "description": "Drag files onto the page or click to select from disk."
+        },
+        {
+          "position": 2,
+          "title": "Set quality",
+          "description": "Adjust the AVIF quality slider — lower values produce smaller files."
+        },
+        {
+          "position": 3,
+          "title": "Convert",
+          "description": "Click Convert — files are processed locally in your browser."
+        },
+        {
+          "position": 4,
+          "title": "Download",
+          "description": "Download the AVIF files — individually or all at once."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "question": "What is AVIF format?",
+          "answer": "AVIF is a modern image format based on the AV1 codec. It offers excellent compression — files can be up to 50% smaller than JPG while maintaining comparable quality. It supports transparency and wide color gamuts."
+        },
+        {
+          "question": "Does AVIF work in all browsers?",
+          "answer": "AVIF is supported by Chrome, Edge, and Firefox. Safari has limited AVIF support."
+        },
+        {
+          "question": "Are my files sent to a server?",
+          "answer": "No. Conversion runs entirely in your browser. Files never leave your computer."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Need more?",
+      "description": "Contact us — we will help you find the right solution.",
+      "href": "/en/contact",
+      "buttonText": "Write to us"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Other tools"
+    }
+  ]
+}

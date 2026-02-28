@@ -83,6 +83,10 @@ export const EDUCATION_REDIRECTS: Record<string, string> = {
   '/edukacja/zdjęcia': '/edukacja/strony',
   '/edukacja/dostępność': '/edukacja/strony',
   '/edukacja/bezpieczeństwo': '/edukacja/strony',
+  // ASCII variants (browsers send these instead of diacritics)
+  '/edukacja/zdjecia': '/edukacja/strony',
+  '/edukacja/dostepnosc': '/edukacja/strony',
+  '/edukacja/bezpieczenstwo': '/edukacja/strony',
   // Redirects for moved articles (2026-02-23)
   '/edukacja/bezpieczeństwo/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa': '/edukacja/strony/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa',
   '/edukacja/dostępność/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie': '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
@@ -91,6 +95,13 @@ export const EDUCATION_REDIRECTS: Record<string, string> = {
   '/edukacja/branding/jak-przygotowac-profesjonalna-stopke-mailowa': '/edukacja/marketing/jak-przygotowac-profesjonalna-stopke-mailowa',
   '/edukacja/zdjęcia/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie': '/edukacja/strony/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie',
   '/edukacja/zdjęcia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp':
+    '/edukacja/strony/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp',
+  // ASCII variants of moved article paths
+  '/edukacja/bezpieczenstwo/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa': '/edukacja/strony/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa',
+  '/edukacja/dostepnosc/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie': '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
+  '/edukacja/bezpieczenstwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje': '/edukacja/strony/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje',
+  '/edukacja/zdjecia/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie': '/edukacja/strony/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie',
+  '/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp':
     '/edukacja/strony/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp',
 };
 

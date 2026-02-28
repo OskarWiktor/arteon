@@ -1,5 +1,5 @@
 export type ImageFormat = 'jpg' | 'png' | 'webp' | 'gif' | 'bmp' | 'svg' | 'avif' | 'heic' | 'tiff';
-export type OutputFormat = 'jpg' | 'png' | 'webp';
+export type OutputFormat = 'jpg' | 'png' | 'webp' | 'avif' | 'gif' | 'tiff';
 
 export type ConversionFileStatus = 'pending' | 'processing' | 'done' | 'error';
 
@@ -37,14 +37,20 @@ export const FORMAT_MIME: Record<OutputFormat, string> = {
   jpg: 'image/jpeg',
   png: 'image/png',
   webp: 'image/webp',
+  avif: 'image/avif',
+  gif: 'image/gif',
+  tiff: 'image/tiff',
 };
 
 export const FORMAT_EXTENSION: Record<OutputFormat, string> = {
   jpg: '.jpg',
   png: '.png',
   webp: '.webp',
+  avif: '.avif',
+  gif: '.gif',
+  tiff: '.tiff',
 };
 
 export function hasQualitySlider(target: OutputFormat): boolean {
-  return target === 'jpg' || target === 'webp';
+  return target === 'jpg' || target === 'webp' || target === 'avif';
 }

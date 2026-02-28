@@ -1,0 +1,122 @@
+{
+  "toolKey": "heicToAvif",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor HEIC para AVIF — HEIC AVIF",
+    "description": "Converta fotos HEIC do iPhone para formato AVIF moderno.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/pt/ferramentas/conversor-heic-para-avif"
+  },
+  "hero": {
+    "title": "Conversor HEIC para AVIF",
+    "description": "Converta fotos HEIC do iPhone para formato AVIF moderno.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-heic-para-avif",
+      "label": "Conversor HEIC para AVIF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor HEIC para AVIF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converta fotos HEIC do iPhone para formato AVIF moderno.",
+      "featureList": ["Conversao para AVIF", "Ajuste de qualidade (60-95%)", "Conversao em lote", "Processamento local no navegador"]
+    },
+    "howTo": {
+      "name": "Como converter HEIC para AVIF",
+      "description": "Converta fotos HEIC do iPhone para formato AVIF moderno.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Carregar ficheiros",
+          "text": "Arraste ficheiros para a pagina ou clique para selecionar."
+        },
+        {
+          "position": 2,
+          "name": "Definir qualidade",
+          "text": "Ajuste o controlo de qualidade AVIF — valores mais baixos produzem ficheiros mais pequenos."
+        },
+        {
+          "position": 3,
+          "name": "Converter",
+          "text": "Clique em Converter — os ficheiros sao processados localmente no seu navegador."
+        },
+        {
+          "position": 4,
+          "name": "Descarregar",
+          "text": "Descarregue os ficheiros AVIF — individualmente ou todos de uma vez."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Como funciona o conversor de HEIC para AVIF?",
+      "html": "<p>Converta fotos HEIC do iPhone para formato AVIF moderno. A conversao e feita inteiramente no seu navegador — os ficheiros nunca sao enviados para um servidor. Sem registo, sem limite.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Como converter HEIC para AVIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Carregar ficheiros",
+          "description": "Arraste ficheiros para a pagina ou clique para selecionar."
+        },
+        {
+          "position": 2,
+          "title": "Definir qualidade",
+          "description": "Ajuste o controlo de qualidade AVIF — valores mais baixos produzem ficheiros mais pequenos."
+        },
+        {
+          "position": 3,
+          "title": "Converter",
+          "description": "Clique em Converter — os ficheiros sao processados localmente no seu navegador."
+        },
+        {
+          "position": 4,
+          "title": "Descarregar",
+          "description": "Descarregue os ficheiros AVIF — individualmente ou todos de uma vez."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes",
+      "items": [
+        {
+          "question": "O que e o formato AVIF?",
+          "answer": "AVIF e um formato de imagem moderno baseado no codec AV1. Oferece excelente compressao — os ficheiros podem ser ate 50% menores que JPG."
+        },
+        {
+          "question": "O AVIF funciona em todos os navegadores?",
+          "answer": "AVIF e suportado pelo Chrome, Edge e Firefox. O Safari tem suporte limitado para AVIF."
+        },
+        {
+          "question": "Os meus ficheiros sao enviados para um servidor?",
+          "answer": "Nao. A conversao e feita inteiramente no seu navegador. Os ficheiros nunca saem do seu computador."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Precisa de mais?",
+      "description": "Contacte-nos — ajudamos a encontrar a solucao adequada.",
+      "href": "/pt/contacto",
+      "buttonText": "Escreva-nos"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Outras ferramentas"
+    }
+  ]
+}

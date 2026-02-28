@@ -1,12 +1,12 @@
 {
   "slug": "chi-siamo",
   "metadata": {
-    "title": "Chi siamo – Arteon | 10 strumenti online gratuiti per web",
+    "title": "Chi siamo – Arteon | Strumenti online gratuiti per web",
     "description": "Arteon è un’agenzia creativa che sviluppa strumenti gratuiti nel browser: convertitore WebP, generatore di favicon, verificatore di contrasto, generatore di."
   },
   "hero": {
     "title": "Strumenti online gratuiti creati da un’agenzia creativa",
-    "description": "10 strumenti nel browser per immagini, SEO, colori, firme e-mail e codici QR — senza registrazione, senza upload, senza limiti"
+    "description": "Strumenti nel browser per immagini, SEO, colori, firme e-mail e codici QR — senza registrazione, senza upload, senza limiti"
   },
   "whoWeAre": {
     "title": "Chi siamo",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Prova i nostri strumenti",
-    "description": "10 strumenti online gratuiti — senza registrazione, senza limiti, senza upload di file su server",
+    "description": "Strumenti online gratuiti — senza registrazione, senza limiti, senza upload di file su server",
     "btnOne": "Vai agli strumenti",
     "btnTwo": "Contatto"
   }

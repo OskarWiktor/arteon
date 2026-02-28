@@ -1,0 +1,122 @@
+{
+  "toolKey": "webpToGif",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor WebP a GIF — WebP GIF",
+    "description": "Convierte imagenes WebP a formato GIF para maxima compatibilidad.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/es/herramientas/convertidor-webp-a-gif"
+  },
+  "hero": {
+    "title": "Convertidor WebP a GIF",
+    "description": "Convierte imagenes WebP a formato GIF para maxima compatibilidad.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-webp-a-gif",
+      "label": "Convertidor WebP a GIF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor WebP a GIF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convierte imagenes WebP a formato GIF para maxima compatibilidad.",
+      "featureList": ["Conversion a GIF", "Ajuste de calidad (60-95%)", "Conversion por lotes", "Procesamiento local en el navegador"]
+    },
+    "howTo": {
+      "name": "Como convertir WebP a GIF",
+      "description": "Convierte imagenes WebP a formato GIF para maxima compatibilidad.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Subir archivos",
+          "text": "Arrastra archivos a la pagina o haz clic para seleccionarlos."
+        },
+        {
+          "position": 2,
+          "name": "Ajustar calidad",
+          "text": "Ajusta el control de calidad GIF — valores mas bajos producen archivos mas pequenos."
+        },
+        {
+          "position": 3,
+          "name": "Convertir",
+          "text": "Haz clic en Convertir — los archivos se procesan localmente en tu navegador."
+        },
+        {
+          "position": 4,
+          "name": "Descargar",
+          "text": "Descarga los archivos GIF — individualmente o todos a la vez."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Como funciona el convertidor de WebP a GIF?",
+      "html": "<p>Convierte imagenes WebP a formato GIF para maxima compatibilidad. La conversion se realiza completamente en tu navegador — los archivos nunca se envian a un servidor. Sin registro, sin limite de archivos.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Como convertir WebP a GIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Subir archivos",
+          "description": "Arrastra archivos a la pagina o haz clic para seleccionarlos."
+        },
+        {
+          "position": 2,
+          "title": "Ajustar calidad",
+          "description": "Ajusta el control de calidad GIF — valores mas bajos producen archivos mas pequenos."
+        },
+        {
+          "position": 3,
+          "title": "Convertir",
+          "description": "Haz clic en Convertir — los archivos se procesan localmente en tu navegador."
+        },
+        {
+          "position": 4,
+          "title": "Descargar",
+          "description": "Descarga los archivos GIF — individualmente o todos a la vez."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "items": [
+        {
+          "question": "Que es el formato GIF?",
+          "answer": "GIF es un formato de imagen ampliamente compatible que soporta hasta 256 colores. Ideal para graficos simples e iconos."
+        },
+        {
+          "question": "Convertir a GIF reduce la calidad?",
+          "answer": "GIF usa una paleta limitada de 256 colores. Las fotografias pueden perder detalle. Funciona mejor para graficos con colores planos."
+        },
+        {
+          "question": "Se envian mis archivos a un servidor?",
+          "answer": "No. La conversion se realiza completamente en tu navegador."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Necesitas mas?",
+      "description": "Contactanos — te ayudaremos a encontrar la solucion adecuada.",
+      "href": "/es/contacto",
+      "buttonText": "Escribenos"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Otras herramientas"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
     "title": "Ingyenes meta cím és leírás hossz-ellenőrző pixelben",
     "description": "Ellenőrizze, hogy a meta cím és leírás megfelelő hosszúságú-e a Google irányelvei szerint. Ellenőrző élő előnézettel és tippekkel.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-cim-es-leiras-ellenorzo-hu.webp",
-    "path": "/hu/eszkozok/meta-title-description-hossz-ellenorzo"
+    "path": "/hu/eszkozok/meta-cim-es-leiras-ellenorzo"
   },
   "hero": {
     "title": "Ellenőrizze a meta cím és leírás hosszát – Google-előnézet",
@@ -18,7 +18,7 @@
       "label": "Eszközök"
     },
     "third": {
-      "href": "/hu/eszkozok/meta-title-description-hossz-ellenorzo",
+      "href": "/hu/eszkozok/meta-cim-es-leiras-ellenorzo",
       "label": "Meta title és description ellenőrző"
     }
   },

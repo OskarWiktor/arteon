@@ -5,7 +5,7 @@
     "title": "Darmowy konwerter JPG i PNG na WebP bez limitu plików",
     "description": "Zamień format JPG lub PNG na WebP i zmniejsz wagę zdjęć bez utraty jakości. Pełna prywatności bez limitu i rejestracji",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-    "path": "/narzedzia/jpg-png-na-webp-bez-limitu"
+    "path": "/narzedzia/konwerter-jpg-na-webp"
   },
   "hero": {
     "title": "Zamień JPG i PNG na WebP – zmniejsz wagę zdjęć bez utraty jakości",
@@ -18,7 +18,7 @@
       "label": "Narzędzia"
     },
     "third": {
-      "href": "/narzedzia/jpg-png-na-webp-bez-limitu",
+      "href": "/narzedzia/konwerter-jpg-na-webp",
       "label": "Konwerter JPG/PNG na WebP"
     }
   },

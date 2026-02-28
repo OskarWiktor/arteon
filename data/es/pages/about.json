@@ -1,12 +1,12 @@
 {
   "slug": "sobre-nosotros",
   "metadata": {
-    "title": "Sobre Arteon – 10 herramientas online gratuitas para web",
+    "title": "Sobre Arteon – Herramientas online gratuitas para web",
     "description": "Arteon es una agencia creativa que desarrolla herramientas gratuitas en el navegador: conversor WebP, generador de favicon, comprobador de contraste."
   },
   "hero": {
     "title": "Herramientas online gratuitas creadas por una agencia creativa",
-    "description": "10 herramientas en el navegador para imágenes, SEO, colores, firmas de correo y códigos QR — sin registro, sin subir archivos, sin límites"
+    "description": "Herramientas en el navegador para imágenes, SEO, colores, firmas de correo y códigos QR — sin registro, sin subir archivos, sin límites"
   },
   "whoWeAre": {
     "title": "Quiénes somos",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Pruebe nuestras herramientas",
-    "description": "10 herramientas en línea gratuitas — sin registro, sin límites, sin subir archivos a servidores",
+    "description": "Herramientas en línea gratuitas — sin registro, sin límites, sin subir archivos a servidores",
     "btnOne": "Ir a herramientas",
     "btnTwo": "Contacto"
   }

@@ -151,6 +151,24 @@
     "errorGeneration": "{{format}}-Datei konnte nicht erzeugt werden.",
     "errorTooLarge": "Datei ist zu groß (max. 100 MB).",
     "errorWrongFormat": "Fügen Sie {{format}}-Dateien hinzu — andere Formate werden übersprungen.",
-    "errorNoFiles": "Fügen Sie mindestens eine {{format}}-Datei hinzu."
+    "errorNoFiles": "Fügen Sie mindestens eine {{format}}-Datei hinzu.",
+    "errorAvifNotSupported": "Ihr Browser unterstützt keine AVIF-Kodierung. Verwenden Sie Chrome, Edge oder Firefox."
+  },
+  "errorPages": {
+    "notFound": {
+      "title": "Seite nicht gefunden",
+      "code": "404",
+      "description": "Die gesuchte Seite existiert leider nicht. Klicken Sie auf die Schaltfläche, um zur Startseite zurückzukehren.",
+      "backHome": "Zur Startseite"
+    },
+    "error": {
+      "title": "Etwas ist schiefgelaufen",
+      "description": "Ein unerwarteter Fehler ist aufgetreten. Versuchen Sie, die Seite zu aktualisieren, oder kontaktieren Sie uns, wenn das Problem weiterhin besteht.",
+      "tryAgain": "Erneut versuchen",
+      "backHome": "Zur Startseite",
+      "contact": "Kontakt",
+      "contactHref": "/de/kontakt",
+      "errorCode": "Fehlercode"
+    }
   }
 }

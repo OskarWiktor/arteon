@@ -40,7 +40,27 @@ export type ToolItemKey =
   | 'heicToWebp'
   | 'tiffToJpg'
   | 'tiffToPng'
-  | 'tiffToWebp';
+  | 'tiffToWebp'
+  | 'jpgToAvif'
+  | 'pngToAvif'
+  | 'webpToAvif'
+  | 'svgToAvif'
+  | 'bmpToAvif'
+  | 'gifToAvif'
+  | 'heicToAvif'
+  | 'tiffToAvif'
+  | 'jpgToGif'
+  | 'pngToGif'
+  | 'webpToGif'
+  | 'svgToGif'
+  | 'bmpToGif'
+  | 'jpgToTiff'
+  | 'pngToTiff'
+  | 'webpToTiff'
+  | 'svgToTiff'
+  | 'bmpToTiff'
+  | 'avifToTiff'
+  | 'heicToTiff';
 
 // ---------------------------------------------------------------------------
 // Tool section key - groups tools in navigation / index page

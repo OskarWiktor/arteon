@@ -1,0 +1,122 @@
+{
+  "toolKey": "pngToTiff",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur PNG en TIFF — PNG TIFF",
+    "description": "Convertissez les graphiques PNG en format TIFF professionnel.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fr/outils/convertisseur-png-en-tiff"
+  },
+  "hero": {
+    "title": "Convertisseur PNG en TIFF",
+    "description": "Convertissez les graphiques PNG en format TIFF professionnel.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-png-en-tiff",
+      "label": "Convertisseur PNG en TIFF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur PNG en TIFF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convertissez les graphiques PNG en format TIFF professionnel.",
+      "featureList": ["Conversion en TIFF", "Reglage de la qualite (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment convertir PNG en TIFF",
+      "description": "Convertissez les graphiques PNG en format TIFF professionnel.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Telecharger les fichiers",
+          "text": "Glissez les fichiers sur la page ou cliquez pour les selectionner."
+        },
+        {
+          "position": 2,
+          "name": "Regler la qualite",
+          "text": "Ajustez le curseur de qualite TIFF — des valeurs plus basses donnent des fichiers plus petits."
+        },
+        {
+          "position": 3,
+          "name": "Convertir",
+          "text": "Cliquez sur Convertir — les fichiers sont traites localement dans votre navigateur."
+        },
+        {
+          "position": 4,
+          "name": "Telecharger",
+          "text": "Telechargez les fichiers TIFF — individuellement ou tous a la fois."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Comment fonctionne le convertisseur PNG en TIFF?",
+      "html": "<p>Convertissez les graphiques PNG en format TIFF professionnel. La conversion se fait entierement dans votre navigateur — les fichiers ne sont jamais envoyes a un serveur. Sans inscription, sans limite.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Comment convertir PNG en TIFF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Telecharger les fichiers",
+          "description": "Glissez les fichiers sur la page ou cliquez pour les selectionner."
+        },
+        {
+          "position": 2,
+          "title": "Regler la qualite",
+          "description": "Ajustez le curseur de qualite TIFF — des valeurs plus basses donnent des fichiers plus petits."
+        },
+        {
+          "position": 3,
+          "title": "Convertir",
+          "description": "Cliquez sur Convertir — les fichiers sont traites localement dans votre navigateur."
+        },
+        {
+          "position": 4,
+          "title": "Telecharger",
+          "description": "Telechargez les fichiers TIFF — individuellement ou tous a la fois."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Questions frequemment posees",
+      "items": [
+        {
+          "question": "Qu'est-ce que le format TIFF?",
+          "answer": "TIFF est un format d'image professionnel sans perte utilise pour l'impression, l'edition et l'archivage."
+        },
+        {
+          "question": "Les fichiers TIFF sont-ils plus grands que JPG?",
+          "answer": "Oui. Les fichiers TIFF sont generalement beaucoup plus volumineux car ils utilisent une compression sans perte."
+        },
+        {
+          "question": "Mes fichiers sont-ils envoyes a un serveur?",
+          "answer": "Non. La conversion se fait entierement dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Besoin de plus?",
+      "description": "Contactez-nous — nous vous aiderons a trouver la bonne solution.",
+      "href": "/fr/contact",
+      "buttonText": "Ecrivez-nous"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres outils"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "toolKey": "jpgToGif",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník JPG na GIF — JPG GIF",
+    "description": "Prevedte fotky JPG na format GIF. Idealni pro jednoduchou grafiku a ikony.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-jpg-na-gif"
+  },
+  "hero": {
+    "title": "Převodník JPG na GIF",
+    "description": "Prevedte fotky JPG na format GIF. Idealni pro jednoduchou grafiku a ikony.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-jpg-na-gif",
+      "label": "Převodník JPG na GIF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník JPG na GIF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Prevedte fotky JPG na format GIF. Idealni pro jednoduchou grafiku a ikony.",
+      "featureList": ["Konverze do GIF", "Nastaveni kvality (60-95%)", "Davkova konverze", "Lokalni zpracovani v prohlizeci"]
+    },
+    "howTo": {
+      "name": "Jak prevest JPG na GIF",
+      "description": "Prevedte fotky JPG na format GIF. Idealni pro jednoduchou grafiku a ikony.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Nahrajte soubory",
+          "text": "Pretahnete soubory na stranku nebo kliknete pro vyber z disku."
+        },
+        {
+          "position": 2,
+          "name": "Nastavte kvalitu",
+          "text": "Upravte posuvnik kvality GIF — nizsi hodnoty vytvareji mensi soubory."
+        },
+        {
+          "position": 3,
+          "name": "Konvertujte",
+          "text": "Kliknete na Konvertovat — soubory se zpracuji lokalne v prohlizeci."
+        },
+        {
+          "position": 4,
+          "name": "Stahnete",
+          "text": "Stahnete hotove soubory GIF — jednotlive nebo vsechny naraz."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Jak funguje prevodnik JPG na GIF?",
+      "html": "<p>Prevedte fotky JPG na format GIF. Idealni pro jednoduchou grafiku a ikony. Konverze probiha cele v prohlizeci — soubory se nikdy neodesilaji na server. Bez registrace, bez limitu souboru.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Jak prevest JPG na GIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Nahrajte soubory",
+          "description": "Pretahnete soubory na stranku nebo kliknete pro vyber z disku."
+        },
+        {
+          "position": 2,
+          "title": "Nastavte kvalitu",
+          "description": "Upravte posuvnik kvality GIF — nizsi hodnoty vytvareji mensi soubory."
+        },
+        {
+          "position": 3,
+          "title": "Konvertujte",
+          "description": "Kliknete na Konvertovat — soubory se zpracuji lokalne v prohlizeci."
+        },
+        {
+          "position": 4,
+          "title": "Stahnete",
+          "description": "Stahnete hotove soubory GIF — jednotlive nebo vsechny naraz."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Nejcastejsi dotazy",
+      "items": [
+        {
+          "question": "Co je format GIF?",
+          "answer": "GIF je siroce podporovany obrazovy format, ktery podporuje az 256 barev. Idealni pro jednoduchou grafiku a ikony."
+        },
+        {
+          "question": "Snizuje konverze do GIF kvalitu?",
+          "answer": "GIF pouziva omezenou paletu 256 barev. Fotografie mohou ztratit detaily."
+        },
+        {
+          "question": "Jsou moje soubory odeslany na server?",
+          "answer": "Ne. Konverze probiha cele v prohlizeci."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Potrebujete vic?",
+      "description": "Kontaktujte nas — pomuzeme vam najit spravne reseni.",
+      "href": "/cs/kontakt",
+      "buttonText": "Napiste nam"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Dalsi nastroje"
+    }
+  ]
+}

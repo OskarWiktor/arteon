@@ -1,0 +1,122 @@
+{
+  "toolKey": "svgToGif",
+  "locale": "hu",
+  "metadata": {
+    "title": "SVG GIF konverter — SVG GIF",
+    "description": "Vektor SVG grafika konvertalasa GIF raszter formatumra.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/hu/eszkozok/svg-gif-konverter"
+  },
+  "hero": {
+    "title": "SVG GIF konverter",
+    "description": "Vektor SVG grafika konvertalasa GIF raszter formatumra.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/svg-gif-konverter",
+      "label": "SVG GIF konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "SVG GIF konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Vektor SVG grafika konvertalasa GIF raszter formatumra.",
+      "featureList": ["Konvertalas GIF-re", "Minoseg beallitasa (60-95%)", "Kotegelt konvertalas", "Helyi feldolgozas a bongeszoben"]
+    },
+    "howTo": {
+      "name": "SVG konvertalasa GIF-ra",
+      "description": "Vektor SVG grafika konvertalasa GIF raszter formatumra.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Fajlok feltoltese",
+          "text": "Huzd a fajlokat az oldalra vagy kattints a kivalasztasukhoz."
+        },
+        {
+          "position": 2,
+          "name": "Minoseg beallitasa",
+          "text": "Allitsd be a GIF minoseg csuszkajat — alacsonyabb ertekek kisebb fajlokat eredmenyeznek."
+        },
+        {
+          "position": 3,
+          "name": "Konvertalas",
+          "text": "Kattints a Konvertalas gombra — a fajlok helyben, a bongeszoben kerulnek feldolgozasra."
+        },
+        {
+          "position": 4,
+          "name": "Letoltes",
+          "text": "Toltsd le a GIF fajlokat — egyenkent vagy mindet egyszerre."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Hogyan mukodik a SVG GIF konverter?",
+      "html": "<p>Vektor SVG grafika konvertalasa GIF raszter formatumra. A konvertalas teljes egeszeben a bongeszoben tortenik — a fajlok soha nem kerulnek szerverre. Regisztracio nelkul, fajl limit nelkul.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Hogyan konvertalhato SVG GIF-ra?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Fajlok feltoltese",
+          "description": "Huzd a fajlokat az oldalra vagy kattints a kivalasztasukhoz."
+        },
+        {
+          "position": 2,
+          "title": "Minoseg beallitasa",
+          "description": "Allitsd be a GIF minoseg csuszkajat — alacsonyabb ertekek kisebb fajlokat eredmenyeznek."
+        },
+        {
+          "position": 3,
+          "title": "Konvertalas",
+          "description": "Kattints a Konvertalas gombra — a fajlok helyben, a bongeszoben kerulnek feldolgozasra."
+        },
+        {
+          "position": 4,
+          "title": "Letoltes",
+          "description": "Toltsd le a GIF fajlokat — egyenkent vagy mindet egyszerre."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismetelt kerdesek",
+      "items": [
+        {
+          "question": "Mi a GIF formatum?",
+          "answer": "A GIF egy szeles korben tamogatott kepformatum, amely legfeljebb 256 szint tamogat. Idealis egyszeru grafikakhoz es ikonokhoz."
+        },
+        {
+          "question": "A GIF konvertalas rontja a minosegét?",
+          "answer": "A GIF korlatozott 256 szinu palettat hasznal. A fenykepek elveszithetnek reszleteket."
+        },
+        {
+          "question": "A fajljaim elkuldésre kerulnek egy szerverre?",
+          "answer": "Nem. A konvertalas teljes egeszeben a bongeszoben tortenik."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Tobbre van szukseged?",
+      "description": "Lepj kapcsolatba velunk — segitunk megtalalni a megfelelo megoldast.",
+      "href": "/hu/kapcsolat",
+      "buttonText": "Irj nekunk"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Mas eszkozok"
+    }
+  ]
+}

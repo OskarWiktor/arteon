@@ -1,0 +1,122 @@
+{
+  "toolKey": "gifToAvif",
+  "locale": "no",
+  "metadata": {
+    "title": "GIF til AVIF-konverterer — GIF AVIF",
+    "description": "Konverter forste GIF-bilde til statisk AVIF-bilde med utmerket komprimering.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/no/verktoy/gif-til-avif-konverterer"
+  },
+  "hero": {
+    "title": "GIF til AVIF-konverterer",
+    "description": "Konverter forste GIF-bilde til statisk AVIF-bilde med utmerket komprimering.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/gif-til-avif-konverterer",
+      "label": "GIF til AVIF-konverterer"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "GIF til AVIF-konverterer",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konverter forste GIF-bilde til statisk AVIF-bilde med utmerket komprimering.",
+      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"]
+    },
+    "howTo": {
+      "name": "Hvordan konvertere GIF til AVIF",
+      "description": "Konverter forste GIF-bilde til statisk AVIF-bilde med utmerket komprimering.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Last opp filer",
+          "text": "Dra filer til siden eller klikk for a velge fra disk."
+        },
+        {
+          "position": 2,
+          "name": "Still inn kvalitet",
+          "text": "Juster AVIF-kvalitetsglideren — lavere verdier gir mindre filer."
+        },
+        {
+          "position": 3,
+          "name": "Konverter",
+          "text": "Klikk pa Konverter — filene behandles lokalt i nettleseren."
+        },
+        {
+          "position": 4,
+          "name": "Last ned",
+          "text": "Last ned AVIF-filene — enkeltvis eller alle pa en gang."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Hvordan fungerer GIF til AVIF-konvertereren?",
+      "html": "<p>Konverter forste GIF-bilde til statisk AVIF-bilde med utmerket komprimering. Konverteringen skjer helt i nettleseren — filer sendes aldri til en server. Uten registrering, uten begrensning.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Hvordan konvertere GIF til AVIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Last opp filer",
+          "description": "Dra filer til siden eller klikk for a velge fra disk."
+        },
+        {
+          "position": 2,
+          "title": "Still inn kvalitet",
+          "description": "Juster AVIF-kvalitetsglideren — lavere verdier gir mindre filer."
+        },
+        {
+          "position": 3,
+          "title": "Konverter",
+          "description": "Klikk pa Konverter — filene behandles lokalt i nettleseren."
+        },
+        {
+          "position": 4,
+          "title": "Last ned",
+          "description": "Last ned AVIF-filene — enkeltvis eller alle pa en gang."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte sporsmal",
+      "items": [
+        {
+          "question": "Hva er AVIF-format?",
+          "answer": "AVIF er et moderne bildeformat basert pa AV1-codec. Det tilbyr utmerket komprimering — filer kan vaere opptil 50% mindre enn JPG."
+        },
+        {
+          "question": "Fungerer AVIF i alle nettlesere?",
+          "answer": "AVIF stottes av Chrome, Edge og Firefox. Safari har begrenset AVIF-stotte."
+        },
+        {
+          "question": "Sendes filene mine til en server?",
+          "answer": "Nei. Konverteringen skjer helt i nettleseren. Filer forlater aldri datamaskinen din."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Trenger du mer?",
+      "description": "Kontakt oss — vi hjelper deg a finne den riktige losningen.",
+      "href": "/no/kontakt",
+      "buttonText": "Skriv til oss"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre verktoy"
+    }
+  ]
+}

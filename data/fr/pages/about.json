@@ -1,12 +1,12 @@
 {
   "slug": "a-propos",
   "metadata": {
-    "title": "À propos d’Arteon – 10 outils en ligne gratuits pour le",
+    "title": "À propos d’Arteon – Outils en ligne gratuits pour le",
     "description": "Arteon est une agence créative qui développe des outils gratuits dans le navigateur : convertisseur WebP, générateur de favicon, vérificateur de contraste."
   },
   "hero": {
     "title": "Outils en ligne gratuits conçus par une agence créative",
-    "description": "10 outils dans le navigateur pour les images, le SEO, les couleurs, les signatures e-mail et les codes QR — sans inscription, sans envoi de fichiers, sans limites"
+    "description": "Outils dans le navigateur pour les images, le SEO, les couleurs, les signatures e-mail et les codes QR — sans inscription, sans envoi de fichiers, sans limites"
   },
   "whoWeAre": {
     "title": "Qui sommes-nous",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Essayez nos outils",
-    "description": "10 outils en ligne gratuits — sans inscription, sans limites, sans envoi de fichiers sur des serveurs",
+    "description": "Outils en ligne gratuits — sans inscription, sans limites, sans envoi de fichiers sur des serveurs",
     "btnOne": "Voir les outils",
     "btnTwo": "Contact"
   }

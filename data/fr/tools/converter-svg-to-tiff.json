@@ -1,0 +1,122 @@
+{
+  "toolKey": "svgToTiff",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur SVG en TIFF — SVG TIFF",
+    "description": "Convertissez les graphiques vectoriels SVG en raster TIFF haute qualite.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fr/outils/convertisseur-svg-en-tiff"
+  },
+  "hero": {
+    "title": "Convertisseur SVG en TIFF",
+    "description": "Convertissez les graphiques vectoriels SVG en raster TIFF haute qualite.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-svg-en-tiff",
+      "label": "Convertisseur SVG en TIFF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur SVG en TIFF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convertissez les graphiques vectoriels SVG en raster TIFF haute qualite.",
+      "featureList": ["Conversion en TIFF", "Reglage de la qualite (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment convertir SVG en TIFF",
+      "description": "Convertissez les graphiques vectoriels SVG en raster TIFF haute qualite.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Telecharger les fichiers",
+          "text": "Glissez les fichiers sur la page ou cliquez pour les selectionner."
+        },
+        {
+          "position": 2,
+          "name": "Regler la qualite",
+          "text": "Ajustez le curseur de qualite TIFF — des valeurs plus basses donnent des fichiers plus petits."
+        },
+        {
+          "position": 3,
+          "name": "Convertir",
+          "text": "Cliquez sur Convertir — les fichiers sont traites localement dans votre navigateur."
+        },
+        {
+          "position": 4,
+          "name": "Telecharger",
+          "text": "Telechargez les fichiers TIFF — individuellement ou tous a la fois."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Comment fonctionne le convertisseur SVG en TIFF?",
+      "html": "<p>Convertissez les graphiques vectoriels SVG en raster TIFF haute qualite. La conversion se fait entierement dans votre navigateur — les fichiers ne sont jamais envoyes a un serveur. Sans inscription, sans limite.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Comment convertir SVG en TIFF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Telecharger les fichiers",
+          "description": "Glissez les fichiers sur la page ou cliquez pour les selectionner."
+        },
+        {
+          "position": 2,
+          "title": "Regler la qualite",
+          "description": "Ajustez le curseur de qualite TIFF — des valeurs plus basses donnent des fichiers plus petits."
+        },
+        {
+          "position": 3,
+          "title": "Convertir",
+          "description": "Cliquez sur Convertir — les fichiers sont traites localement dans votre navigateur."
+        },
+        {
+          "position": 4,
+          "title": "Telecharger",
+          "description": "Telechargez les fichiers TIFF — individuellement ou tous a la fois."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Questions frequemment posees",
+      "items": [
+        {
+          "question": "Qu'est-ce que le format TIFF?",
+          "answer": "TIFF est un format d'image professionnel sans perte utilise pour l'impression, l'edition et l'archivage."
+        },
+        {
+          "question": "Les fichiers TIFF sont-ils plus grands que JPG?",
+          "answer": "Oui. Les fichiers TIFF sont generalement beaucoup plus volumineux car ils utilisent une compression sans perte."
+        },
+        {
+          "question": "Mes fichiers sont-ils envoyes a un serveur?",
+          "answer": "Non. La conversion se fait entierement dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Besoin de plus?",
+      "description": "Contactez-nous — nous vous aiderons a trouver la bonne solution.",
+      "href": "/fr/contact",
+      "buttonText": "Ecrivez-nous"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres outils"
+    }
+  ]
+}

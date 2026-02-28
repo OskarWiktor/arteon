@@ -1,0 +1,122 @@
+{
+  "toolKey": "pngToAvif",
+  "locale": "de",
+  "metadata": {
+    "title": "PNG zu AVIF Konverter — PNG AVIF",
+    "description": "PNG-Grafiken in AVIF umwandeln mit Transparenzunterstutzung. Deutlich kleinere Dateien.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/de/werkzeuge/png-zu-avif-konverter"
+  },
+  "hero": {
+    "title": "PNG zu AVIF Konverter",
+    "description": "PNG-Grafiken in AVIF umwandeln mit Transparenzunterstutzung. Deutlich kleinere Dateien.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/png-zu-avif-konverter",
+      "label": "PNG zu AVIF Konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "PNG zu AVIF Konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "PNG-Grafiken in AVIF umwandeln mit Transparenzunterstutzung. Deutlich kleinere Dateien.",
+      "featureList": ["Konvertierung zu AVIF", "Qualitatsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"]
+    },
+    "howTo": {
+      "name": "PNG zu AVIF konvertieren",
+      "description": "PNG-Grafiken in AVIF umwandeln mit Transparenzunterstutzung. Deutlich kleinere Dateien.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Dateien hochladen",
+          "text": "Dateien auf die Seite ziehen oder klicken, um sie auszuwahlen."
+        },
+        {
+          "position": 2,
+          "name": "Qualitat einstellen",
+          "text": "Passen Sie den AVIF-Qualitatsregler an — niedrigere Werte ergeben kleinere Dateien."
+        },
+        {
+          "position": 3,
+          "name": "Konvertieren",
+          "text": "Klicken Sie auf Konvertieren — Dateien werden lokal im Browser verarbeitet."
+        },
+        {
+          "position": 4,
+          "name": "Herunterladen",
+          "text": "Laden Sie die AVIF-Dateien herunter — einzeln oder alle auf einmal."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Wie funktioniert der PNG zu AVIF Konverter?",
+      "html": "<p>PNG-Grafiken in AVIF umwandeln mit Transparenzunterstutzung. Deutlich kleinere Dateien. Die Konvertierung erfolgt vollstandig im Browser — Dateien werden nie an einen Server gesendet. Ohne Registrierung, ohne Dateilimit.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Wie konvertiert man PNG zu AVIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Dateien hochladen",
+          "description": "Dateien auf die Seite ziehen oder klicken, um sie auszuwahlen."
+        },
+        {
+          "position": 2,
+          "title": "Qualitat einstellen",
+          "description": "Passen Sie den AVIF-Qualitatsregler an — niedrigere Werte ergeben kleinere Dateien."
+        },
+        {
+          "position": 3,
+          "title": "Konvertieren",
+          "description": "Klicken Sie auf Konvertieren — Dateien werden lokal im Browser verarbeitet."
+        },
+        {
+          "position": 4,
+          "title": "Herunterladen",
+          "description": "Laden Sie die AVIF-Dateien herunter — einzeln oder alle auf einmal."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Haufig gestellte Fragen",
+      "items": [
+        {
+          "question": "Was ist das AVIF-Format?",
+          "answer": "AVIF ist ein modernes Bildformat basierend auf dem AV1-Codec. Es bietet hervorragende Kompression — Dateien konnen bis zu 50% kleiner als JPG sein bei vergleichbarer Qualitat."
+        },
+        {
+          "question": "Funktioniert AVIF in allen Browsern?",
+          "answer": "AVIF wird von Chrome, Edge und Firefox unterstutzt. Safari hat eingeschrankte AVIF-Unterstutzung."
+        },
+        {
+          "question": "Werden meine Dateien an einen Server gesendet?",
+          "answer": "Nein. Die Konvertierung erfolgt vollstandig im Browser. Dateien verlassen nie Ihren Computer."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Brauchen Sie mehr?",
+      "description": "Kontaktieren Sie uns — wir helfen Ihnen, die richtige Losung zu finden.",
+      "href": "/de/kontakt",
+      "buttonText": "Schreiben Sie uns"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere Werkzeuge"
+    }
+  ]
+}

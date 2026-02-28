@@ -28,12 +28,12 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 export const metadata = {
   title: 'Bezplatné online nástroje | Převodníky, SEO, barvy, favicon',
   description:
-    '34 bezplatných online nástrojů: 12 převodníků obrázků (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), generátor favicon, editor obrázků, počítadlo textu, barevné palety a QR kódy. Bez registrace.',
+    'Bezplatné online nástroje: 12 převodníků obrázků (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), generátor favicon, editor obrázků, počítadlo textu, barevné palety a QR kódy. Bez registrace.',
   alternates: getToolsIndexAlternates('cs'),
   openGraph: {
     title: 'Bezplatné online nástroje | Převodníky, SEO, barvy, favicon',
     description:
-      '34 bezplatných online nástrojů: 12 převodníků obrázků (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), generátor favicon, editor obrázků, počítadlo textu, barevné palety a QR kódy. Bez registrace.',
+      'Bezplatné online nástroje: 12 převodníků obrázků (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), generátor favicon, editor obrázků, počítadlo textu, barevné palety a QR kódy. Bez registrace.',
     url: toAbsoluteUrl('/cs/nastroje'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -45,7 +45,7 @@ const schema = {
   '@type': 'CollectionPage',
   name: 'Bezplatné online nástroje — převodníky obrázků, SEO, barvy, favicon',
   description:
-    '34 bezplatných online nástrojů: 12 převodníků obrázků (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), generátor favicon, editor obrázků, počítadlo textu, barevné palety a QR kódy. Bez registrace.',
+    'Bezplatné online nástroje: 12 převodníků obrázků (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), generátor favicon, editor obrázků, počítadlo textu, barevné palety a QR kódy. Bez registrace.',
   url: toAbsoluteUrl('/cs/nastroje'),
   inLanguage: 'cs',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },
@@ -57,7 +57,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 34,
+
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -365,6 +365,177 @@ const schema = {
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
+      {
+        '@type': 'WebApplication',
+        position: 35,
+        name: 'Převodník JPG na AVIF',
+        description: 'Prevedte fotky JPG na moderni AVIF. Az o 50% lepsi komprese nez JPG pri zachovani kvality.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-jpg-na-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 36,
+        name: 'Převodník PNG na AVIF',
+        description: 'Prevedte grafiku PNG na AVIF s podporou pruhlednosti. Vyrazne mensi soubory.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-png-na-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 37,
+        name: 'Převodník WebP na AVIF',
+        description: 'Prevedte soubory WebP na AVIF. Jeste lepsi komprese v modernim formatu.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-webp-na-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 38,
+        name: 'Převodník SVG na AVIF',
+        description: 'Prevedte vektorovou grafiku SVG na kompaktni rastrovy format AVIF.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-svg-na-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 39,
+        name: 'Převodník BMP na AVIF',
+        description: 'Prevedte nekomprimovane soubory BMP na ultrakompaktni AVIF.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-bmp-na-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 40,
+        name: 'Převodník GIF na AVIF',
+        description: 'Prevedte prvni snimek GIF na staticky obraz AVIF s vynikajici kompresi.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-gif-na-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 41,
+        name: 'Převodník HEIC na AVIF',
+        description: 'Prevedte fotky HEIC z iPhonu na moderni format AVIF.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-heic-na-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 42,
+        name: 'Převodník TIFF na AVIF',
+        description: 'Prevedte soubory TIFF na moderni AVIF. Masivni snizeni velikosti souboru.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-tiff-na-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 43,
+        name: 'Převodník JPG na GIF',
+        description: 'Prevedte fotky JPG na format GIF. Idealni pro jednoduchou grafiku a ikony.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-jpg-na-gif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 44,
+        name: 'Převodník PNG na GIF',
+        description: 'Prevedte grafiku PNG na GIF. Idealni pro jednoduche ikony a grafiku.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-png-na-gif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 45,
+        name: 'Převodník WebP na GIF',
+        description: 'Prevedte obrazky WebP na format GIF pro maximalni kompatibilitu.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-webp-na-gif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 46,
+        name: 'Převodník SVG na GIF',
+        description: 'Prevedte vektorovou grafiku SVG na rastrovy format GIF.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-svg-na-gif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 47,
+        name: 'Převodník BMP na GIF',
+        description: 'Prevedte nekomprimovane soubory BMP na lehky GIF.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-bmp-na-gif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 48,
+        name: 'Převodník JPG na TIFF',
+        description: 'Prevedte fotky JPG na bezztratovy TIFF. Pro tisk a archivaci.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-jpg-na-tiff'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 49,
+        name: 'Převodník PNG na TIFF',
+        description: 'Prevedte grafiku PNG na profesionalni format TIFF.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-png-na-tiff'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 50,
+        name: 'Převodník WebP na TIFF',
+        description: 'Prevedte obrazky WebP na profesionalni TIFF pro tisk a archivaci.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-webp-na-tiff'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 51,
+        name: 'Převodník SVG na TIFF',
+        description: 'Prevedte vektorovou grafiku SVG na kvalitni rastrovy TIFF.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-svg-na-tiff'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 52,
+        name: 'Převodník BMP na TIFF',
+        description: 'Prevedte soubory BMP na profesionalni format TIFF pro tisk.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-bmp-na-tiff'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 53,
+        name: 'Převodník HEIC na TIFF',
+        description: 'Prevedte fotky HEIC z iPhonu na profesionalni format TIFF.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-heic-na-tiff'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
     ],
   },
 };
@@ -427,6 +598,159 @@ export default function ToolsIndexPage() {
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/cs/nastroje/generator-favicon-zdarma">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <SectionSteps
+          title="Text a SEO"
+          description="Nastroje pro kontrolu delky textu, meta tagu a nahled stranky ve vysledcich vyhledavani."
+          grid="three"
+          items={[
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Kontrola meta titulku a popisu',
+              topImageAlt: 'Kontrola meta titulku a popisu Arteon',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/kontrola-meta-titulku-a-popisu-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Zkontrolujte pocet znaku, pocet slov a sirku v pixelech — s nahledem Google. Vyhnete se oriznutym titulkum a popisum ve vysledcich vyhledavani.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/kontrola-meta-titulku-a-popisu">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiArticleLine className="h-8 w-8" />,
+              title: 'Pocitadlo slov a znaku',
+              topImageAlt: 'Pocitadlo slov a znaku Arteon',
+              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/pocitadlo-slov-a-znaku-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Zkontrolujte delku textu a vyhodnotte, zda se hodi pro hlavni stranku, stranku sluzeb, clanek na blog nebo popis produktu. Nastroj pocita slova, znaky, odstavce a dobu cteni.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/pocitadlo-slov-a-znaku">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="E-mail a komunikace"
+          description="Nastroje pro profesionalni e-mailovou komunikaci a konzistentni image znacky."
+          grid="three"
+          items={[
+            {
+              icon: <RiMailLine className="h-8 w-8" />,
+              title: 'Generator podpisu e-mailu zdarma',
+              topImageAlt: 'Generator podpisu e-mailu zdarma Arteon',
+              topImageSrc: '/assets/tools/free-html-email-signature-generator/generator-podpisu-emailu-zdarma-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Vytvorte profesionalni podpis e-mailu za par minut. Zadejte sve udaje, vyberte barvy a zkopirujte hotovy HTML kod do Gmailu, Outlooku nebo jineho e-mailoveho klienta.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/generator-podpisu-emailu-zdarma">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="QR kod"
+          description="Generator QR kodu pro web, vizitky, menu a tiskoviny."
+          grid="three"
+          items={[
+            {
+              icon: <RiQrCodeLine className="h-8 w-8" />,
+              title: 'Generator QR kodu zdarma',
+              topImageAlt: 'Generator QR kodu zdarma Arteon',
+              topImageSrc: '/assets/tools/qr-code-generator/generator-qr-kodu-zdarma-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Vytvorte QR kod pro web, vCard, menu restaurace nebo letak. Export do PNG a SVG — bez prihlaseni, bez limitu.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/generator-qr-kodu-zdarma">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Barvy a pristupnost"
+          description="Nastroje pro praci s barvami, kontrastem a pristupnosti WCAG."
+          grid="three"
+          items={[
+            {
+              icon: <RiContrast2Line className="h-8 w-8" />,
+              title: 'Kontrola kontrastu barev',
+              topImageAlt: 'Kontrola kontrastu barev Arteon',
+              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/kontrola-kontrastu-barev-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>
+                    Zkontrolujte, zda jsou barvy textu a pozadi citelne. Zadejte kody barev, zobrazte pomer kontrastu podle <strong>WCAG</strong> a pouzijte funkci <strong>Match</strong> pro
+                    automatickou opravu.
+                  </p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/kontrola-kontrastu-barev">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiPantoneLine className="h-8 w-8" />,
+              title: 'Extraktor barev z obrazku',
+              topImageAlt: 'Extraktor barev z obrazku Arteon',
+              topImageSrc: '/assets/tools/image-color-extractor/extraktor-barev-z-obrazku-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Nahrajte fotografii nebo logo — nastroj extrahuje dominantni barvy. Zkopirujte HEX kody jednim kliknutim a pouzijte je kdekoliv.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/extraktor-barev-z-obrazku">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiPaletteLine className="h-8 w-8" />,
+              title: 'Generator barevnych palet',
+              topImageAlt: 'Generator barevnych palet Arteon',
+              topImageSrc: '/assets/tools/color-palette-generator/generator-barevnych-palet-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Vyberte jednu zakladni barvu a vytvorte 9 barevnych palet: monochromatickou, komplementarni, triadickou, pastelovou, tmavou a dalsi. Zkopirujte HEX kody jednim kliknutim.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/generator-barevnych-palet">
                       Otevrit nastroj
                     </Button>
                   </div>
@@ -587,403 +911,10 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Převodník BMP na PNG',
-              topImageAlt: 'Převodník BMP na PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Převeďte obrázky BMP na bezeztrátové PNG. Kvalita zachována, velikost snížena.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-bmp-na-png">
-                      Otevřít nástroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Převodník GIF na PNG',
-              topImageAlt: 'Převodník GIF na PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Exportujte první snímek GIFu jako statické PNG. Bez ztráty kvality.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-gif-na-png">
-                      Otevřít nástroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Převodník GIF na JPG',
-              topImageAlt: 'Převodník GIF na JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-gif-na-jpg">
-                      Otevřít nástroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Prevodnik SVG na WebP',
-              topImageAlt: 'Prevodnik SVG na WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Prevedte grafiku SVG na lehke WebP. Idealni pro weby.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-svg-na-webp">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Prevodnik GIF na WebP',
-              topImageAlt: 'Prevodnik GIF na WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Exportujte prvni snimek GIFu jako lehke WebP. Mensi soubor.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-gif-na-webp">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Prevodnik BMP na WebP',
-              topImageAlt: 'Prevodnik BMP na WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Prevedte soubory BMP na lehke WebP. Snizeni az o 95%.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-bmp-na-webp">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Prevodnik AVIF na JPG',
-              topImageAlt: 'Prevodnik AVIF na JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Prevedte soubory AVIF na univerzalni JPG. Kompatibilni vsude.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-avif-na-jpg">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Prevodnik AVIF na PNG',
-              topImageAlt: 'Prevodnik AVIF na PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Prevedte soubory AVIF na bezztratove PNG. Plna kvalita.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-avif-na-png">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Prevodnik AVIF na WebP',
-              topImageAlt: 'Prevodnik AVIF na WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Prevedte soubory AVIF na WebP. Siroka kompatibilita.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-avif-na-webp">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Prevodnik HEIC na JPG',
-              topImageAlt: 'Prevodnik HEIC na JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Prevedte fotky HEIC z iPhonu na univerzalni JPG. Bez registrace.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-heic-na-jpg">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Prevodnik HEIC na PNG',
-              topImageAlt: 'Prevodnik HEIC na PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Prevedte fotky HEIC z iPhonu na bezztratove PNG.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-heic-na-png">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Prevodnik HEIC na WebP',
-              topImageAlt: 'Prevodnik HEIC na WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Prevedte fotky HEIC z iPhonu na lehke WebP.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-heic-na-webp">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Prevodnik TIFF na JPG',
-              topImageAlt: 'Prevodnik TIFF na JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Prevedte soubory TIFF na kompaktni JPG. Idealni pro skeny.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-tiff-na-jpg">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Prevodnik TIFF na PNG',
-              topImageAlt: 'Prevodnik TIFF na PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Prevedte soubory TIFF na bezztratove PNG.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-tiff-na-png">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Prevodnik TIFF na WebP',
-              topImageAlt: 'Prevodnik TIFF na WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Prevedte soubory TIFF na lehke WebP. Masivni snizeni.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-tiff-na-webp">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
           ]}
         />
 
         <Gap size="sm" />
-
-        <SectionSteps
-          title="Text a SEO"
-          description="Nastroje pro kontrolu delky textu, meta tagu a nahled stranky ve vysledcich vyhledavani."
-          grid="three"
-          items={[
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Kontrola meta titulku a popisu',
-              topImageAlt: 'Kontrola meta titulku a popisu Arteon',
-              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/kontrola-meta-titulku-a-popisu-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Zkontrolujte pocet znaku, pocet slov a sirku v pixelech — s nahledem Google. Vyhnete se oriznutym titulkum a popisum ve vysledcich vyhledavani.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/kontrola-meta-titulku-a-popisu">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiArticleLine className="h-8 w-8" />,
-              title: 'Pocitadlo slov a znaku',
-              topImageAlt: 'Pocitadlo slov a znaku Arteon',
-              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/pocitadlo-slov-a-znaku-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Zkontrolujte delku textu a vyhodnotte, zda se hodi pro hlavni stranku, stranku sluzeb, clanek na blog nebo popis produktu. Nastroj pocita slova, znaky, odstavce a dobu cteni.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/pocitadlo-slov-a-znaku">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-
-        <Gap size="sm" />
-
-        <SectionSteps
-          title="E-mail a komunikace"
-          description="Nastroje pro profesionalni e-mailovou komunikaci a konzistentni image znacky."
-          grid="three"
-          items={[
-            {
-              icon: <RiMailLine className="h-8 w-8" />,
-              title: 'Generator podpisu e-mailu zdarma',
-              topImageAlt: 'Generator podpisu e-mailu zdarma Arteon',
-              topImageSrc: '/assets/tools/free-html-email-signature-generator/generator-podpisu-emailu-zdarma-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Vytvorte profesionalni podpis e-mailu za par minut. Zadejte sve udaje, vyberte barvy a zkopirujte hotovy HTML kod do Gmailu, Outlooku nebo jineho e-mailoveho klienta.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/generator-podpisu-emailu-zdarma">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-
-        <Gap size="sm" />
-
-        <SectionSteps
-          title="QR kod"
-          description="Generator QR kodu pro web, vizitky, menu a tiskoviny."
-          grid="three"
-          items={[
-            {
-              icon: <RiQrCodeLine className="h-8 w-8" />,
-              title: 'Generator QR kodu zdarma',
-              topImageAlt: 'Generator QR kodu zdarma Arteon',
-              topImageSrc: '/assets/tools/qr-code-generator/generator-qr-kodu-zdarma-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Vytvorte QR kod pro web, vCard, menu restaurace nebo letak. Export do PNG a SVG — bez prihlaseni, bez limitu.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/generator-qr-kodu-zdarma">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-
-        <Gap size="sm" />
-
-        <SectionSteps
-          title="Barvy a pristupnost"
-          description="Nastroje pro praci s barvami, kontrastem a pristupnosti WCAG."
-          grid="three"
-          items={[
-            {
-              icon: <RiContrast2Line className="h-8 w-8" />,
-              title: 'Kontrola kontrastu barev',
-              topImageAlt: 'Kontrola kontrastu barev Arteon',
-              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/kontrola-kontrastu-barev-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>
-                    Zkontrolujte, zda jsou barvy textu a pozadi citelne. Zadejte kody barev, zobrazte pomer kontrastu podle <strong>WCAG</strong> a pouzijte funkci <strong>Match</strong> pro
-                    automatickou opravu.
-                  </p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/kontrola-kontrastu-barev">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiPantoneLine className="h-8 w-8" />,
-              title: 'Extraktor barev z obrazku',
-              topImageAlt: 'Extraktor barev z obrazku Arteon',
-              topImageSrc: '/assets/tools/image-color-extractor/extraktor-barev-z-obrazku-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Nahrajte fotografii nebo logo — nastroj extrahuje dominantni barvy. Zkopirujte HEX kody jednim kliknutim a pouzijte je kdekoliv.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/extraktor-barev-z-obrazku">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiPaletteLine className="h-8 w-8" />,
-              title: 'Generator barevnych palet',
-              topImageAlt: 'Generator barevnych palet Arteon',
-              topImageSrc: '/assets/tools/color-palette-generator/generator-barevnych-palet-cs.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Vyberte jednu zakladni barvu a vytvorte 9 barevnych palet: monochromatickou, komplementarni, triadickou, pastelovou, tmavou a dalsi. Zkopirujte HEX kody jednim kliknutim.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/generator-barevnych-palet">
-                      Otevrit nastroj
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
 
         <Gap variant="line" />
 

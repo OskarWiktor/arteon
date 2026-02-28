@@ -1,0 +1,122 @@
+{
+  "toolKey": "svgToGif",
+  "locale": "sv",
+  "metadata": {
+    "title": "SVG till GIF-konverterare — SVG GIF",
+    "description": "Konvertera vektor-SVG-grafik till GIF-rasterformat.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/sv/verktyg/svg-till-gif-konverterare"
+  },
+  "hero": {
+    "title": "SVG till GIF-konverterare",
+    "description": "Konvertera vektor-SVG-grafik till GIF-rasterformat.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/svg-till-gif-konverterare",
+      "label": "SVG till GIF-konverterare"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "SVG till GIF-konverterare",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konvertera vektor-SVG-grafik till GIF-rasterformat.",
+      "featureList": ["Konvertering till GIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webblasaren"]
+    },
+    "howTo": {
+      "name": "Hur konverterar man SVG till GIF",
+      "description": "Konvertera vektor-SVG-grafik till GIF-rasterformat.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Ladda upp filer",
+          "text": "Dra filer till sidan eller klicka for att valja fran disk."
+        },
+        {
+          "position": 2,
+          "name": "Stall in kvalitet",
+          "text": "Justera GIF-kvalitetsreglaget — lagre varden ger mindre filer."
+        },
+        {
+          "position": 3,
+          "name": "Konvertera",
+          "text": "Klicka pa Konvertera — filerna bearbetas lokalt i webblasaren."
+        },
+        {
+          "position": 4,
+          "name": "Ladda ner",
+          "text": "Ladda ner GIF-filerna — enskilt eller alla pa en gang."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Hur fungerar SVG till GIF-konverteraren?",
+      "html": "<p>Konvertera vektor-SVG-grafik till GIF-rasterformat. Konverteringen sker helt i webblasaren — filer skickas aldrig till en server. Utan registrering, utan begransning.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Hur konverterar man SVG till GIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Ladda upp filer",
+          "description": "Dra filer till sidan eller klicka for att valja fran disk."
+        },
+        {
+          "position": 2,
+          "title": "Stall in kvalitet",
+          "description": "Justera GIF-kvalitetsreglaget — lagre varden ger mindre filer."
+        },
+        {
+          "position": 3,
+          "title": "Konvertera",
+          "description": "Klicka pa Konvertera — filerna bearbetas lokalt i webblasaren."
+        },
+        {
+          "position": 4,
+          "title": "Ladda ner",
+          "description": "Ladda ner GIF-filerna — enskilt eller alla pa en gang."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Vanliga fragor",
+      "items": [
+        {
+          "question": "Vad ar GIF-format?",
+          "answer": "GIF ar ett brett stott bildformat som stodjer upp till 256 farger. Idealiskt for enkel grafik och ikoner."
+        },
+        {
+          "question": "Minskar GIF-konvertering kvaliteten?",
+          "answer": "GIF anvander en begransad 256-fargspalett. Fotografier kan forlora detaljer."
+        },
+        {
+          "question": "Skickas mina filer till en server?",
+          "answer": "Nej. Konverteringen sker helt i webblasaren."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Behover du mer?",
+      "description": "Kontakta oss — vi hjalper dig hitta ratt losning.",
+      "href": "/sv/kontakt",
+      "buttonText": "Skriv till oss"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andra verktyg"
+    }
+  ]
+}

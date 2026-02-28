@@ -151,6 +151,24 @@
     "errorGeneration": "Kunne ikke generere {{format}}-fil.",
     "errorTooLarge": "Filen er for stor (maks 100 MB).",
     "errorWrongFormat": "Tilføj {{format}}-filer — andre formater springes over.",
-    "errorNoFiles": "Tilføj mindst én {{format}}-fil."
+    "errorNoFiles": "Tilføj mindst én {{format}}-fil.",
+    "errorAvifNotSupported": "Din browser understøtter ikke AVIF-kodning. Brug Chrome, Edge eller Firefox."
+  },
+  "errorPages": {
+    "notFound": {
+      "title": "Siden blev ikke fundet",
+      "code": "404",
+      "description": "Siden du leder efter findes ikke. Klik på knappen for at gå tilbage til forsiden.",
+      "backHome": "Tilbage til forsiden"
+    },
+    "error": {
+      "title": "Noget gik galt",
+      "description": "Der opstod en uventet fejl. Prøv at genindlæse siden eller kontakt os, hvis problemet fortsætter.",
+      "tryAgain": "Prøv igen",
+      "backHome": "Tilbage til forsiden",
+      "contact": "Kontakt os",
+      "contactHref": "/da/kontakt",
+      "errorCode": "Fejlkode"
+    }
   }
 }

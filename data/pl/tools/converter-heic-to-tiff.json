@@ -1,0 +1,112 @@
+{
+  "toolKey": "heicToTiff",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter HEIC na TIFF — HEIC TIFF",
+    "description": "Zamień zdjęcia HEIC z iPhone na profesjonalny TIFF. Do druku i archiwizacji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-heic-na-tiff"
+  },
+  "hero": {
+    "title": "Konwerter HEIC na TIFF",
+    "description": "Zamień zdjęcia HEIC z iPhone na profesjonalny TIFF. Do druku i archiwizacji.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzedzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-heic-na-tiff",
+      "label": "Konwerter HEIC na TIFF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter HEIC na TIFF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Zamień zdjęcia HEIC z iPhone na profesjonalny TIFF. Do druku i archiwizacji.",
+      "featureList": ["Konwersja do TIFF", "Format bezstratny", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"]
+    },
+    "howTo": {
+      "name": "HEIC to TIFF",
+      "description": "Zamień zdjęcia HEIC z iPhone na profesjonalny TIFF. Do druku i archiwizacji.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Wgraj pliki",
+          "text": "Przeciagnij pliki na strone lub kliknij, aby je wybrac z dysku."
+        },
+        {
+          "position": 2,
+          "name": "Konwertuj",
+          "text": "Kliknij Konwertuj — pliki zostana przetworzone lokalnie w przegladarce."
+        },
+        {
+          "position": 3,
+          "name": "Pobierz",
+          "text": "Pobierz gotowe pliki TIFF — pojedynczo lub wszystkie naraz."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Jak dziala konwerter HEIC na TIFF?",
+      "html": "<p>Zamień zdjęcia HEIC z iPhone na profesjonalny TIFF. Do druku i archiwizacji. Konwersja odbywa sie w calosci w przegladarce — pliki nie sa wysylane na serwer. Bez rejestracji, bez limitu plikow.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Jak przekonwertowac HEIC na TIFF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Wgraj pliki",
+          "description": "Przeciagnij pliki na strone lub kliknij, aby je wybrac z dysku."
+        },
+        {
+          "position": 2,
+          "title": "Konwertuj",
+          "description": "Kliknij Konwertuj — pliki zostana przetworzone lokalnie w przegladarce."
+        },
+        {
+          "position": 3,
+          "title": "Pobierz",
+          "description": "Pobierz gotowe pliki TIFF — pojedynczo lub wszystkie naraz."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Najczesciej zadawane pytania",
+      "items": [
+        {
+          "question": "Czym jest format TIFF?",
+          "answer": "TIFF to profesjonalny format bezstratny uzywany w druku, fotografii i archiwizacji. Zachowuje pelna jakosc obrazu bez kompresji stratnej."
+        },
+        {
+          "question": "Dlaczego pliki TIFF sa takie duze?",
+          "answer": "TIFF przechowuje dane obrazu bez kompresji stratnej, co gwarantuje pelna jakosc, ale skutkuje wiekszymi plikami. To pozadane w profesjonalnych zastosowaniach — druku, DTP i archiwizacji."
+        },
+        {
+          "question": "Czy moje pliki sa wysylane na serwer?",
+          "answer": "Nie. Konwersja odbywa sie w calosci w przegladarce. Pliki nie opuszczaja komputera."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Potrzebujesz wiecej?",
+      "description": "Skontaktuj sie z nami — pomozemy dobrac odpowiednie rozwiazanie.",
+      "href": "/kontakt",
+      "buttonText": "Napisz do nas"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Inne narzedzia"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "toolKey": "svgToGif",
+  "locale": "de",
+  "metadata": {
+    "title": "SVG zu GIF Konverter — SVG GIF",
+    "description": "Vektor-SVG-Grafiken in GIF-Rasterformat umwandeln.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/de/werkzeuge/svg-zu-gif-konverter"
+  },
+  "hero": {
+    "title": "SVG zu GIF Konverter",
+    "description": "Vektor-SVG-Grafiken in GIF-Rasterformat umwandeln.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/svg-zu-gif-konverter",
+      "label": "SVG zu GIF Konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "SVG zu GIF Konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Vektor-SVG-Grafiken in GIF-Rasterformat umwandeln.",
+      "featureList": ["Konvertierung zu GIF", "Qualitatsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"]
+    },
+    "howTo": {
+      "name": "SVG zu GIF konvertieren",
+      "description": "Vektor-SVG-Grafiken in GIF-Rasterformat umwandeln.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Dateien hochladen",
+          "text": "Dateien auf die Seite ziehen oder klicken, um sie auszuwahlen."
+        },
+        {
+          "position": 2,
+          "name": "Qualitat einstellen",
+          "text": "Passen Sie den GIF-Qualitatsregler an — niedrigere Werte ergeben kleinere Dateien."
+        },
+        {
+          "position": 3,
+          "name": "Konvertieren",
+          "text": "Klicken Sie auf Konvertieren — Dateien werden lokal im Browser verarbeitet."
+        },
+        {
+          "position": 4,
+          "name": "Herunterladen",
+          "text": "Laden Sie die GIF-Dateien herunter — einzeln oder alle auf einmal."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Wie funktioniert der SVG zu GIF Konverter?",
+      "html": "<p>Vektor-SVG-Grafiken in GIF-Rasterformat umwandeln. Die Konvertierung erfolgt vollstandig im Browser — Dateien werden nie an einen Server gesendet. Ohne Registrierung, ohne Dateilimit.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Wie konvertiert man SVG zu GIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Dateien hochladen",
+          "description": "Dateien auf die Seite ziehen oder klicken, um sie auszuwahlen."
+        },
+        {
+          "position": 2,
+          "title": "Qualitat einstellen",
+          "description": "Passen Sie den GIF-Qualitatsregler an — niedrigere Werte ergeben kleinere Dateien."
+        },
+        {
+          "position": 3,
+          "title": "Konvertieren",
+          "description": "Klicken Sie auf Konvertieren — Dateien werden lokal im Browser verarbeitet."
+        },
+        {
+          "position": 4,
+          "title": "Herunterladen",
+          "description": "Laden Sie die GIF-Dateien herunter — einzeln oder alle auf einmal."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Haufig gestellte Fragen",
+      "items": [
+        {
+          "question": "Was ist das GIF-Format?",
+          "answer": "GIF ist ein weit verbreitetes Bildformat mit bis zu 256 Farben. Ideal fur einfache Grafiken, Icons und Illustrationen."
+        },
+        {
+          "question": "Verringert die GIF-Konvertierung die Qualitat?",
+          "answer": "GIF verwendet eine begrenzte 256-Farben-Palette. Fotos konnen Details verlieren. Am besten fur Grafiken mit flachen Farben."
+        },
+        {
+          "question": "Werden meine Dateien an einen Server gesendet?",
+          "answer": "Nein. Die Konvertierung erfolgt vollstandig im Browser."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Brauchen Sie mehr?",
+      "description": "Kontaktieren Sie uns — wir helfen Ihnen, die richtige Losung zu finden.",
+      "href": "/de/kontakt",
+      "buttonText": "Schreiben Sie uns"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere Werkzeuge"
+    }
+  ]
+}

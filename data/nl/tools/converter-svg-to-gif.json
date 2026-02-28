@@ -1,0 +1,122 @@
+{
+  "toolKey": "svgToGif",
+  "locale": "nl",
+  "metadata": {
+    "title": "SVG naar GIF converter — SVG GIF",
+    "description": "Converteer vector SVG-afbeeldingen naar GIF-rasterformaat.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/nl/tools/svg-naar-gif-converter"
+  },
+  "hero": {
+    "title": "SVG naar GIF converter",
+    "description": "Converteer vector SVG-afbeeldingen naar GIF-rasterformaat.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/svg-naar-gif-converter",
+      "label": "SVG naar GIF converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "SVG naar GIF converter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converteer vector SVG-afbeeldingen naar GIF-rasterformaat.",
+      "featureList": ["Conversie naar GIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"]
+    },
+    "howTo": {
+      "name": "SVG naar GIF converteren",
+      "description": "Converteer vector SVG-afbeeldingen naar GIF-rasterformaat.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Bestanden uploaden",
+          "text": "Sleep bestanden naar de pagina of klik om ze te selecteren."
+        },
+        {
+          "position": 2,
+          "name": "Kwaliteit instellen",
+          "text": "Pas de GIF-kwaliteitsschuifregelaar aan — lagere waarden geven kleinere bestanden."
+        },
+        {
+          "position": 3,
+          "name": "Converteren",
+          "text": "Klik op Converteren — bestanden worden lokaal in de browser verwerkt."
+        },
+        {
+          "position": 4,
+          "name": "Downloaden",
+          "text": "Download de GIF-bestanden — individueel of allemaal tegelijk."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Hoe werkt de SVG naar GIF converter?",
+      "html": "<p>Converteer vector SVG-afbeeldingen naar GIF-rasterformaat. De conversie vindt volledig plaats in de browser — bestanden worden nooit naar een server gestuurd. Zonder registratie, zonder limiet.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Hoe converteer je SVG naar GIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Bestanden uploaden",
+          "description": "Sleep bestanden naar de pagina of klik om ze te selecteren."
+        },
+        {
+          "position": 2,
+          "title": "Kwaliteit instellen",
+          "description": "Pas de GIF-kwaliteitsschuifregelaar aan — lagere waarden geven kleinere bestanden."
+        },
+        {
+          "position": 3,
+          "title": "Converteren",
+          "description": "Klik op Converteren — bestanden worden lokaal in de browser verwerkt."
+        },
+        {
+          "position": 4,
+          "title": "Downloaden",
+          "description": "Download de GIF-bestanden — individueel of allemaal tegelijk."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen",
+      "items": [
+        {
+          "question": "Wat is het GIF-formaat?",
+          "answer": "GIF is een breed ondersteund afbeeldingsformaat dat tot 256 kleuren ondersteunt. Ideaal voor eenvoudige afbeeldingen en iconen."
+        },
+        {
+          "question": "Vermindert GIF-conversie de kwaliteit?",
+          "answer": "GIF gebruikt een beperkt palet van 256 kleuren. Foto's kunnen detail verliezen."
+        },
+        {
+          "question": "Worden mijn bestanden naar een server gestuurd?",
+          "answer": "Nee. De conversie vindt volledig plaats in de browser."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Meer nodig?",
+      "description": "Neem contact op — we helpen u de juiste oplossing te vinden.",
+      "href": "/nl/contact",
+      "buttonText": "Schrijf ons"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere tools"
+    }
+  ]
+}

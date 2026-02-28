@@ -57,7 +57,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 34,
+
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -355,6 +355,159 @@ const schema = {
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
+      {
+        '@type': 'WebApplication',
+        position: 35,
+        name: 'Μετατροπέας WebP σε AVIF',
+        description: 'Μετατρεψτε αρχεια WebP σε AVIF. Ακομη καλυτερη συμπιεση σε συγχρονη μορφη.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-webp-se-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 36,
+        name: 'Μετατροπέας SVG σε AVIF',
+        description: 'Μετατρεψτε διανυσματικα γραφικα SVG σε συμπαγη μορφη raster AVIF.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-svg-se-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 37,
+        name: 'Μετατροπέας BMP σε AVIF',
+        description: 'Μετατρεψτε ασυμπιεστα αρχεια BMP σε υπερσυμπαγες AVIF.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-bmp-se-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 38,
+        name: 'Μετατροπέας GIF σε AVIF',
+        description: 'Μετατρεψτε το πρωτο καρε GIF σε στατικη εικονα AVIF με εξαιρετικη συμπιεση.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-gif-se-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 39,
+        name: 'Μετατροπέας HEIC σε AVIF',
+        description: 'Μετατρεψτε φωτογραφιες HEIC του iPhone σε συγχρονη μορφη AVIF.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-heic-se-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 40,
+        name: 'Μετατροπέας TIFF σε AVIF',
+        description: 'Μετατρεψτε αρχεια TIFF σε συγχρονο AVIF. Τεραστια μειωση μεγεθους αρχειου.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-tiff-se-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 41,
+        name: 'Μετατροπέας JPG σε GIF',
+        description: 'Μετατρεψτε φωτογραφιες JPG σε μορφη GIF. Ιδανικο για απλα γραφικα και εικονιδια.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-jpg-se-gif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 42,
+        name: 'Μετατροπέας PNG σε GIF',
+        description: 'Μετατρεψτε γραφικα PNG σε GIF. Ιδανικο για απλα εικονιδια και γραφικα.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-png-se-gif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 43,
+        name: 'Μετατροπέας WebP σε GIF',
+        description: 'Μετατρεψτε εικονες WebP σε μορφη GIF για μεγιστη συμβατοτητα.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-webp-se-gif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 44,
+        name: 'Μετατροπέας SVG σε GIF',
+        description: 'Μετατρεψτε διανυσματικα γραφικα SVG σε μορφη raster GIF.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-svg-se-gif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 45,
+        name: 'Μετατροπέας BMP σε GIF',
+        description: 'Μετατρεψτε ασυμπιεστα αρχεια BMP σε ελαφρυ GIF.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-bmp-se-gif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 46,
+        name: 'Μετατροπέας JPG σε TIFF',
+        description: 'Μετατρεψτε φωτογραφιες JPG σε TIFF χωρις απωλειες. Για εκτυπωση και αρχειοθετηση.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-jpg-se-tiff'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 47,
+        name: 'Μετατροπέας PNG σε TIFF',
+        description: 'Μετατρεψτε γραφικα PNG σε επαγγελματικη μορφη TIFF.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-png-se-tiff'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 48,
+        name: 'Μετατροπέας WebP σε TIFF',
+        description: 'Μετατρεψτε εικονες WebP σε επαγγελματικο TIFF για εκτυπωση και αρχειοθετηση.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-webp-se-tiff'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 49,
+        name: 'Μετατροπέας SVG σε TIFF',
+        description: 'Μετατρεψτε διανυσματικα γραφικα SVG σε υψηλης ποιοτητας raster TIFF.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-svg-se-tiff'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 50,
+        name: 'Μετατροπέας BMP σε TIFF',
+        description: 'Μετατρεψτε αρχεια BMP σε επαγγελματικη μορφη TIFF για εκτυπωση.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-bmp-se-tiff'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 51,
+        name: 'Μετατροπέας HEIC σε TIFF',
+        description: 'Μετατρεψτε φωτογραφιες HEIC του iPhone σε επαγγελματικη μορφη TIFF.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-heic-se-tiff'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
     ],
   },
 };
@@ -424,6 +577,155 @@ export default function ToolsIndexPage() {
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/el/ergaleia/dorean-dimiourgia-favicon">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <SectionSteps
+          title="Κείμενο και SEO"
+          description="Εργαλεία ελέγχου μήκους κειμένου, meta ετικετών και προεπισκόπησης σελίδας στα αποτελέσματα αναζήτησης."
+          grid="three"
+          items={[
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Έλεγχος meta τίτλου και περιγραφής',
+              topImageAlt: 'Έλεγχος meta τίτλου και περιγραφής Arteon',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/elegkhos-meta-titlou-kai-perigrafis-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Ελέγξτε τον αριθμό χαρακτήρων και λέξεων καθώς και το πλάτος σε pixel – με προεπισκόπηση Google. Αποφύγετε κομμένους τίτλους και περιγραφές στα αποτελέσματα αναζήτησης.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/elegkhos-meta-titlou-kai-perigrafis">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiArticleLine className="h-8 w-8" />,
+              title: 'Μετρητής λέξεων και χαρακτήρων',
+              topImageAlt: 'Μετρητής λέξεων και χαρακτήρων Arteon',
+              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/metritis-lexeon-kai-charaktiron-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>
+                    Ελέγξτε το μήκος κειμένου και αξιολογήστε αν ταιριάζει σε αρχική σελίδα, σελίδα υπηρεσιών, άρθρο ή περιγραφή προϊόντος. Μετρά λέξεις, χαρακτήρες, παραγράφους και χρόνο ανάγνωσης.
+                  </p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metritis-lexeon-kai-charaktiron">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+        <Gap size="sm" />
+        <SectionSteps
+          title="Email και επικοινωνία"
+          description="Εργαλεία για επαγγελματική επικοινωνία μέσω email και ενιαία οπτική ταυτότητα."
+          grid="three"
+          items={[
+            {
+              icon: <RiMailLine className="h-8 w-8" />,
+              title: 'Δημιουργία υπογραφής email',
+              topImageAlt: 'Δημιουργία υπογραφής email Arteon',
+              topImageSrc: '/assets/tools/free-html-email-signature-generator/dorean-dimiourgia-ypografis-email-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Δημιουργήστε επαγγελματική υπογραφή email σε λίγα λεπτά. Εισάγετε τα στοιχεία σας, επιλέξτε χρώματα και αντιγράψτε τον έτοιμο κώδικα HTML στο Gmail, Outlook ή άλλη εφαρμογή.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/dorean-dimiourgia-ypografis-email">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+        <Gap size="sm" />
+        <SectionSteps
+          title="Κωδικοί QR"
+          description="Δημιουργία κωδικών QR για ιστοσελίδες, επαγγελματικές κάρτες, μενού και έντυπα."
+          grid="three"
+          items={[
+            {
+              icon: <RiQrCodeLine className="h-8 w-8" />,
+              title: 'Δωρεάν δημιουργία κωδικού QR',
+              topImageAlt: 'Δημιουργία κωδικού QR Arteon',
+              topImageSrc: '/assets/tools/qr-code-generator/dorean-dimiourgia-kodikou-qr-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Δημιουργήστε κωδικό QR για ιστοσελίδα, vCard, μενού εστιατορίου ή φυλλάδιο. Εξαγωγή σε PNG και SVG – χωρίς σύνδεση, χωρίς περιορισμούς.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/dorean-dimiourgia-kodikou-qr">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+        <Gap size="sm" />
+        <SectionSteps
+          title="Χρώματα και προσβασιμότητα"
+          description="Εργαλεία εργασίας με χρώματα, αντίθεση και προσβασιμότητα WCAG."
+          grid="three"
+          items={[
+            {
+              icon: <RiContrast2Line className="h-8 w-8" />,
+              title: 'Έλεγχος αντίθεσης χρωμάτων',
+              topImageAlt: 'Έλεγχος αντίθεσης χρωμάτων Arteon',
+              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/elegkhos-kontrast-chromaton-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>
+                    Ελέγξτε αν τα χρώματα κειμένου και φόντου είναι ευανάγνωστα. Εισάγετε κωδικούς χρωμάτων, ελέγξτε την αναλογία αντίθεσης σύμφωνα με το πρότυπο <strong>WCAG</strong> και
+                    χρησιμοποιήστε τη λειτουργία <strong>Match</strong> για αυτόματη διόρθωση.
+                  </p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/elegkhos-kontrast-chromaton">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiPantoneLine className="h-8 w-8" />,
+              title: 'Εξαγωγή χρωμάτων από εικόνα',
+              topImageAlt: 'Εξαγωγή χρωμάτων από εικόνα Arteon',
+              topImageSrc: '/assets/tools/image-color-extractor/exagogi-chromaton-apo-eikona-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Ανεβάστε μια φωτογραφία ή λογότυπο – το εργαλείο θα εξάγει τα κυρίαρχα χρώματα. Αντιγράψτε κωδικούς HEX με ένα κλικ και χρησιμοποιήστε τους οπουδήποτε.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/exagogi-chromaton-apo-eikona">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiPaletteLine className="h-8 w-8" />,
+              title: 'Δημιουργία παλέτας χρωμάτων',
+              topImageAlt: 'Δημιουργία παλέτας χρωμάτων Arteon',
+              topImageSrc: '/assets/tools/color-palette-generator/dimiourgia-paletas-chromaton-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Επιλέξτε ένα βασικό χρώμα και δημιουργήστε 9 παλέτες: μονοχρωματική, συμπληρωματική, τριαδική, παστέλ, σκούρα και άλλες. Αντιγράψτε κωδικούς HEX με ένα κλικ.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/dimiourgia-paletas-chromaton">
                       Άνοιγμα εργαλείου
                     </Button>
                   </div>
@@ -583,398 +885,11 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Μετατροπέας BMP σε PNG',
-              topImageAlt: 'Μετατροπέας BMP σε PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Μετατρέψτε εικόνες BMP σε PNG χωρίς απώλειες. Ποιότητα διατηρημένη, μέγεθος μειωμένο.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-bmp-se-png">
-                      Άνοιγμα εργαλείου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Μετατροπέας GIF σε PNG',
-              topImageAlt: 'Μετατροπέας GIF σε PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Εξαγωγή του πρώτου καρέ ενός GIF ως στατικό PNG. Χωρίς απώλεια ποιότητας.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-gif-se-png">
-                      Άνοιγμα εργαλείου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Μετατροπέας GIF σε JPG',
-              topImageAlt: 'Μετατροπέας GIF σε JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Εξαγωγή του πρώτου καρέ ενός GIF ως συμπαγές JPG. Μικρότερο αρχείο.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-gif-se-jpg">
-                      Άνοιγμα εργαλείου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Metatropeas SVG se WebP',
-              topImageAlt: 'Metatropeas SVG se WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Μετατρεψτε γραφικα SVG σε ελαφρυ WebP. Ιδανικο για ιστοσελιδες.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-svg-se-webp">
-                      Ανοιγμα εργαλειου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Metatropeas GIF se WebP',
-              topImageAlt: 'Metatropeas GIF se WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Εξαγωγη του πρωτου καρε GIF ως ελαφρυ WebP.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-gif-se-webp">
-                      Ανοιγμα εργαλειου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Metatropeas BMP se WebP',
-              topImageAlt: 'Metatropeas BMP se WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Μετατρεψτε αρχεια BMP σε ελαφρυ WebP. Μειωση εως 95%.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-bmp-se-webp">
-                      Ανοιγμα εργαλειου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Metatropeas AVIF se JPG',
-              topImageAlt: 'Metatropeas AVIF se JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Μετατρεψτε αρχεια AVIF σε καθολικο JPG. Συμβατο παντου.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-avif-se-jpg">
-                      Ανοιγμα εργαλειου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Metatropeas AVIF se PNG',
-              topImageAlt: 'Metatropeas AVIF se PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Μετατρεψτε αρχεια AVIF σε PNG χωρις απωλειες.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-avif-se-png">
-                      Ανοιγμα εργαλειου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Metatropeas AVIF se WebP',
-              topImageAlt: 'Metatropeas AVIF se WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Μετατρεψτε αρχεια AVIF σε WebP. Ευρεια συμβατοτητα.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-avif-se-webp">
-                      Ανοιγμα εργαλειου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Metatropeas HEIC se JPG',
-              topImageAlt: 'Metatropeas HEIC se JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Μετατρεψτε φωτογραφιες HEIC απο iPhone σε JPG. Χωρις εγγραφη.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-heic-se-jpg">
-                      Ανοιγμα εργαλειου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Metatropeas HEIC se PNG',
-              topImageAlt: 'Metatropeas HEIC se PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Μετατρεψτε φωτογραφιες HEIC απο iPhone σε PNG.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-heic-se-png">
-                      Ανοιγμα εργαλειου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Metatropeas HEIC se WebP',
-              topImageAlt: 'Metatropeas HEIC se WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Μετατρεψτε φωτογραφιες HEIC απο iPhone σε ελαφρυ WebP.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-heic-se-webp">
-                      Ανοιγμα εργαλειου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Metatropeas TIFF se JPG',
-              topImageAlt: 'Metatropeas TIFF se JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Μετατρεψτε αρχεια TIFF σε συμπαγες JPG. Ιδανικο για σαρωσεις.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-tiff-se-jpg">
-                      Ανοιγμα εργαλειου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Metatropeas TIFF se PNG',
-              topImageAlt: 'Metatropeas TIFF se PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Μετατρεψτε αρχεια TIFF σε PNG χωρις απωλειες.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-tiff-se-png">
-                      Ανοιγμα εργαλειου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Metatropeas TIFF se WebP',
-              topImageAlt: 'Metatropeas TIFF se WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Μετατρεψτε αρχεια TIFF σε ελαφρυ WebP. Τεραστια μειωση.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-tiff-se-webp">
-                      Ανοιγμα εργαλειου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
           ]}
         />
 
         <Gap size="sm" />
-        <SectionSteps
-          title="Κείμενο και SEO"
-          description="Εργαλεία ελέγχου μήκους κειμένου, meta ετικετών και προεπισκόπησης σελίδας στα αποτελέσματα αναζήτησης."
-          grid="three"
-          items={[
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Έλεγχος meta τίτλου και περιγραφής',
-              topImageAlt: 'Έλεγχος meta τίτλου και περιγραφής Arteon',
-              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/elegkhos-meta-titlou-kai-perigrafis-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Ελέγξτε τον αριθμό χαρακτήρων και λέξεων καθώς και το πλάτος σε pixel – με προεπισκόπηση Google. Αποφύγετε κομμένους τίτλους και περιγραφές στα αποτελέσματα αναζήτησης.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/elegkhos-meta-titlou-kai-perigrafis">
-                      Άνοιγμα εργαλείου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiArticleLine className="h-8 w-8" />,
-              title: 'Μετρητής λέξεων και χαρακτήρων',
-              topImageAlt: 'Μετρητής λέξεων και χαρακτήρων Arteon',
-              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/metritis-lexeon-kai-charaktiron-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>
-                    Ελέγξτε το μήκος κειμένου και αξιολογήστε αν ταιριάζει σε αρχική σελίδα, σελίδα υπηρεσιών, άρθρο ή περιγραφή προϊόντος. Μετρά λέξεις, χαρακτήρες, παραγράφους και χρόνο ανάγνωσης.
-                  </p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metritis-lexeon-kai-charaktiron">
-                      Άνοιγμα εργαλείου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-        <Gap size="sm" />
-        <SectionSteps
-          title="Email και επικοινωνία"
-          description="Εργαλεία για επαγγελματική επικοινωνία μέσω email και ενιαία οπτική ταυτότητα."
-          grid="three"
-          items={[
-            {
-              icon: <RiMailLine className="h-8 w-8" />,
-              title: 'Δημιουργία υπογραφής email',
-              topImageAlt: 'Δημιουργία υπογραφής email Arteon',
-              topImageSrc: '/assets/tools/free-html-email-signature-generator/dorean-dimiourgia-ypografis-email-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Δημιουργήστε επαγγελματική υπογραφή email σε λίγα λεπτά. Εισάγετε τα στοιχεία σας, επιλέξτε χρώματα και αντιγράψτε τον έτοιμο κώδικα HTML στο Gmail, Outlook ή άλλη εφαρμογή.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/dorean-dimiourgia-ypografis-email">
-                      Άνοιγμα εργαλείου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-        <Gap size="sm" />
-        <SectionSteps
-          title="Κωδικοί QR"
-          description="Δημιουργία κωδικών QR για ιστοσελίδες, επαγγελματικές κάρτες, μενού και έντυπα."
-          grid="three"
-          items={[
-            {
-              icon: <RiQrCodeLine className="h-8 w-8" />,
-              title: 'Δωρεάν δημιουργία κωδικού QR',
-              topImageAlt: 'Δημιουργία κωδικού QR Arteon',
-              topImageSrc: '/assets/tools/qr-code-generator/dorean-dimiourgia-kodikou-qr-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Δημιουργήστε κωδικό QR για ιστοσελίδα, vCard, μενού εστιατορίου ή φυλλάδιο. Εξαγωγή σε PNG και SVG – χωρίς σύνδεση, χωρίς περιορισμούς.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/dorean-dimiourgia-kodikou-qr">
-                      Άνοιγμα εργαλείου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-        <Gap size="sm" />
-        <SectionSteps
-          title="Χρώματα και προσβασιμότητα"
-          description="Εργαλεία εργασίας με χρώματα, αντίθεση και προσβασιμότητα WCAG."
-          grid="three"
-          items={[
-            {
-              icon: <RiContrast2Line className="h-8 w-8" />,
-              title: 'Έλεγχος αντίθεσης χρωμάτων',
-              topImageAlt: 'Έλεγχος αντίθεσης χρωμάτων Arteon',
-              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/elegkhos-kontrast-chromaton-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>
-                    Ελέγξτε αν τα χρώματα κειμένου και φόντου είναι ευανάγνωστα. Εισάγετε κωδικούς χρωμάτων, ελέγξτε την αναλογία αντίθεσης σύμφωνα με το πρότυπο <strong>WCAG</strong> και
-                    χρησιμοποιήστε τη λειτουργία <strong>Match</strong> για αυτόματη διόρθωση.
-                  </p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/elegkhos-kontrast-chromaton">
-                      Άνοιγμα εργαλείου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiPantoneLine className="h-8 w-8" />,
-              title: 'Εξαγωγή χρωμάτων από εικόνα',
-              topImageAlt: 'Εξαγωγή χρωμάτων από εικόνα Arteon',
-              topImageSrc: '/assets/tools/image-color-extractor/exagogi-chromaton-apo-eikona-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Ανεβάστε μια φωτογραφία ή λογότυπο – το εργαλείο θα εξάγει τα κυρίαρχα χρώματα. Αντιγράψτε κωδικούς HEX με ένα κλικ και χρησιμοποιήστε τους οπουδήποτε.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/exagogi-chromaton-apo-eikona">
-                      Άνοιγμα εργαλείου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiPaletteLine className="h-8 w-8" />,
-              title: 'Δημιουργία παλέτας χρωμάτων',
-              topImageAlt: 'Δημιουργία παλέτας χρωμάτων Arteon',
-              topImageSrc: '/assets/tools/color-palette-generator/dimiourgia-paletas-chromaton-el.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Επιλέξτε ένα βασικό χρώμα και δημιουργήστε 9 παλέτες: μονοχρωματική, συμπληρωματική, τριαδική, παστέλ, σκούρα και άλλες. Αντιγράψτε κωδικούς HEX με ένα κλικ.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/dimiourgia-paletas-chromaton">
-                      Άνοιγμα εργαλείου
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
+
         <Gap variant="line" />
         <SectionInfo title="Τι είναι τα εργαλεία Arteon;">
           <p className="mb-4">

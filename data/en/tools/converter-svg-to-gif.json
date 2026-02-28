@@ -1,0 +1,122 @@
+{
+  "toolKey": "svgToGif",
+  "locale": "en",
+  "metadata": {
+    "title": "SVG to GIF converter — SVG GIF",
+    "description": "Convert vector SVG graphics to GIF raster format.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/en/tools/svg-to-gif-converter"
+  },
+  "hero": {
+    "title": "SVG to GIF converter",
+    "description": "Convert vector SVG graphics to GIF raster format.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/svg-to-gif-converter",
+      "label": "SVG to GIF converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "SVG to GIF converter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convert vector SVG graphics to GIF raster format.",
+      "featureList": ["Conversion to GIF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "How to convert SVG to GIF",
+      "description": "Convert vector SVG graphics to GIF raster format.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Upload files",
+          "text": "Drag files onto the page or click to select from disk."
+        },
+        {
+          "position": 2,
+          "name": "Set quality",
+          "text": "Adjust the GIF quality slider — lower values produce smaller files."
+        },
+        {
+          "position": 3,
+          "name": "Convert",
+          "text": "Click Convert — files are processed locally in your browser."
+        },
+        {
+          "position": 4,
+          "name": "Download",
+          "text": "Download the GIF files — individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "How does the SVG to GIF converter work?",
+      "html": "<p>Convert vector SVG graphics to GIF raster format. Conversion runs entirely in your browser — files are never sent to a server. No registration, no file limit.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "How to convert SVG to GIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Upload files",
+          "description": "Drag files onto the page or click to select from disk."
+        },
+        {
+          "position": 2,
+          "title": "Set quality",
+          "description": "Adjust the GIF quality slider — lower values produce smaller files."
+        },
+        {
+          "position": 3,
+          "title": "Convert",
+          "description": "Click Convert — files are processed locally in your browser."
+        },
+        {
+          "position": 4,
+          "title": "Download",
+          "description": "Download the GIF files — individually or all at once."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "question": "What is GIF format?",
+          "answer": "GIF is a widely supported image format that supports up to 256 colors. It is ideal for simple graphics, icons, and illustrations."
+        },
+        {
+          "question": "Does converting to GIF reduce quality?",
+          "answer": "GIF uses a limited 256-color palette, so photographs may lose some detail. It works best for graphics with flat colors."
+        },
+        {
+          "question": "Are my files sent to a server?",
+          "answer": "No. Conversion runs entirely in your browser. Files never leave your computer."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Need more?",
+      "description": "Contact us — we will help you find the right solution.",
+      "href": "/en/contact",
+      "buttonText": "Write to us"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Other tools"
+    }
+  ]
+}

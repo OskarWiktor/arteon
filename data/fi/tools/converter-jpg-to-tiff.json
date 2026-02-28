@@ -1,0 +1,122 @@
+{
+  "toolKey": "jpgToTiff",
+  "locale": "fi",
+  "metadata": {
+    "title": "JPG TIFF -muunnin — JPG TIFF",
+    "description": "Muunna JPG-kuvat haviottomaan TIFF-muotoon. Tulostukseen ja arkistointiin.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fi/tyokalut/jpg-tiff-muunnin"
+  },
+  "hero": {
+    "title": "JPG TIFF -muunnin",
+    "description": "Muunna JPG-kuvat haviottomaan TIFF-muotoon. Tulostukseen ja arkistointiin.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/jpg-tiff-muunnin",
+      "label": "JPG TIFF -muunnin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "JPG TIFF -muunnin",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Muunna JPG-kuvat haviottomaan TIFF-muotoon. Tulostukseen ja arkistointiin.",
+      "featureList": ["Muunnos TIFF-muotoon", "Laadun saato (60-95%)", "Eramuunnos", "Paikallinen kasittely selaimessa"]
+    },
+    "howTo": {
+      "name": "Kuinka muuntaa JPG TIFF-muotoon",
+      "description": "Muunna JPG-kuvat haviottomaan TIFF-muotoon. Tulostukseen ja arkistointiin.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Lataa tiedostot",
+          "text": "Vedä tiedostot sivulle tai napsauta valitaksesi levylta."
+        },
+        {
+          "position": 2,
+          "name": "Aseta laatu",
+          "text": "Saada TIFF-laatuliukusaadinta — alhaisemmat arvot tuottavat pienempia tiedostoja."
+        },
+        {
+          "position": 3,
+          "name": "Muunna",
+          "text": "Napsauta Muunna — tiedostot kasitellaan paikallisesti selaimessa."
+        },
+        {
+          "position": 4,
+          "name": "Lataa",
+          "text": "Lataa TIFF-tiedostot — yksittain tai kaikki kerralla."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Miten JPG-TIFF-muunnin toimii?",
+      "html": "<p>Muunna JPG-kuvat haviottomaan TIFF-muotoon. Tulostukseen ja arkistointiin. Muunnos tapahtuu kokonaan selaimessa — tiedostoja ei koskaan lahetetä palvelimelle. Ilman rekisteroitymista, ilman rajoituksia.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Kuinka muuntaa JPG TIFF-muotoon?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Lataa tiedostot",
+          "description": "Vedä tiedostot sivulle tai napsauta valitaksesi levylta."
+        },
+        {
+          "position": 2,
+          "title": "Aseta laatu",
+          "description": "Saada TIFF-laatuliukusaadinta — alhaisemmat arvot tuottavat pienempia tiedostoja."
+        },
+        {
+          "position": 3,
+          "title": "Muunna",
+          "description": "Napsauta Muunna — tiedostot kasitellaan paikallisesti selaimessa."
+        },
+        {
+          "position": 4,
+          "title": "Lataa",
+          "description": "Lataa TIFF-tiedostot — yksittain tai kaikki kerralla."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "items": [
+        {
+          "question": "Mika on TIFF-muoto?",
+          "answer": "TIFF on ammattimainen haviöton kuvamuoto, jota kaytetaan tulostuksessa, julkaisussa ja arkistoinnissa."
+        },
+        {
+          "question": "Ovatko TIFF-tiedostot suurempia kuin JPG?",
+          "answer": "Kylla. TIFF-tiedostot ovat tyypillisesti paljon suurempia, koska ne kayttavat haviötöntä pakkausta."
+        },
+        {
+          "question": "Lahetetaanko tiedostoni palvelimelle?",
+          "answer": "Ei. Muunnos tapahtuu kokonaan selaimessa."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Tarvitsetko lisaa?",
+      "description": "Ota yhteytta — autamme loytamaan oikean ratkaisun.",
+      "href": "/fi/yhteystiedot",
+      "buttonText": "Kirjoita meille"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut tyokalut"
+    }
+  ]
+}

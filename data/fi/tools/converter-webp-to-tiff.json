@@ -1,0 +1,122 @@
+{
+  "toolKey": "webpToTiff",
+  "locale": "fi",
+  "metadata": {
+    "title": "WebP TIFF -muunnin — WebP TIFF",
+    "description": "Muunna WebP-kuvat ammattimaiseen TIFF-muotoon tulostukseen ja arkistointiin.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fi/tyokalut/webp-tiff-muunnin"
+  },
+  "hero": {
+    "title": "WebP TIFF -muunnin",
+    "description": "Muunna WebP-kuvat ammattimaiseen TIFF-muotoon tulostukseen ja arkistointiin.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/webp-tiff-muunnin",
+      "label": "WebP TIFF -muunnin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "WebP TIFF -muunnin",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Muunna WebP-kuvat ammattimaiseen TIFF-muotoon tulostukseen ja arkistointiin.",
+      "featureList": ["Muunnos TIFF-muotoon", "Laadun saato (60-95%)", "Eramuunnos", "Paikallinen kasittely selaimessa"]
+    },
+    "howTo": {
+      "name": "Kuinka muuntaa WebP TIFF-muotoon",
+      "description": "Muunna WebP-kuvat ammattimaiseen TIFF-muotoon tulostukseen ja arkistointiin.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Lataa tiedostot",
+          "text": "Vedä tiedostot sivulle tai napsauta valitaksesi levylta."
+        },
+        {
+          "position": 2,
+          "name": "Aseta laatu",
+          "text": "Saada TIFF-laatuliukusaadinta — alhaisemmat arvot tuottavat pienempia tiedostoja."
+        },
+        {
+          "position": 3,
+          "name": "Muunna",
+          "text": "Napsauta Muunna — tiedostot kasitellaan paikallisesti selaimessa."
+        },
+        {
+          "position": 4,
+          "name": "Lataa",
+          "text": "Lataa TIFF-tiedostot — yksittain tai kaikki kerralla."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Miten WebP-TIFF-muunnin toimii?",
+      "html": "<p>Muunna WebP-kuvat ammattimaiseen TIFF-muotoon tulostukseen ja arkistointiin. Muunnos tapahtuu kokonaan selaimessa — tiedostoja ei koskaan lahetetä palvelimelle. Ilman rekisteroitymista, ilman rajoituksia.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Kuinka muuntaa WebP TIFF-muotoon?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Lataa tiedostot",
+          "description": "Vedä tiedostot sivulle tai napsauta valitaksesi levylta."
+        },
+        {
+          "position": 2,
+          "title": "Aseta laatu",
+          "description": "Saada TIFF-laatuliukusaadinta — alhaisemmat arvot tuottavat pienempia tiedostoja."
+        },
+        {
+          "position": 3,
+          "title": "Muunna",
+          "description": "Napsauta Muunna — tiedostot kasitellaan paikallisesti selaimessa."
+        },
+        {
+          "position": 4,
+          "title": "Lataa",
+          "description": "Lataa TIFF-tiedostot — yksittain tai kaikki kerralla."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "items": [
+        {
+          "question": "Mika on TIFF-muoto?",
+          "answer": "TIFF on ammattimainen haviöton kuvamuoto, jota kaytetaan tulostuksessa, julkaisussa ja arkistoinnissa."
+        },
+        {
+          "question": "Ovatko TIFF-tiedostot suurempia kuin JPG?",
+          "answer": "Kylla. TIFF-tiedostot ovat tyypillisesti paljon suurempia, koska ne kayttavat haviötöntä pakkausta."
+        },
+        {
+          "question": "Lahetetaanko tiedostoni palvelimelle?",
+          "answer": "Ei. Muunnos tapahtuu kokonaan selaimessa."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Tarvitsetko lisaa?",
+      "description": "Ota yhteytta — autamme loytamaan oikean ratkaisun.",
+      "href": "/fi/yhteystiedot",
+      "buttonText": "Kirjoita meille"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut tyokalut"
+    }
+  ]
+}

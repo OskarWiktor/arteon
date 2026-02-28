@@ -1,0 +1,122 @@
+{
+  "toolKey": "jpgToTiff",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor JPG a TIFF — JPG TIFF",
+    "description": "Convierte fotos JPG a TIFF sin perdida. Para impresion y archivado.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/es/herramientas/convertidor-jpg-a-tiff"
+  },
+  "hero": {
+    "title": "Convertidor JPG a TIFF",
+    "description": "Convierte fotos JPG a TIFF sin perdida. Para impresion y archivado.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-jpg-a-tiff",
+      "label": "Convertidor JPG a TIFF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor JPG a TIFF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convierte fotos JPG a TIFF sin perdida. Para impresion y archivado.",
+      "featureList": ["Conversion a TIFF", "Ajuste de calidad (60-95%)", "Conversion por lotes", "Procesamiento local en el navegador"]
+    },
+    "howTo": {
+      "name": "Como convertir JPG a TIFF",
+      "description": "Convierte fotos JPG a TIFF sin perdida. Para impresion y archivado.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Subir archivos",
+          "text": "Arrastra archivos a la pagina o haz clic para seleccionarlos."
+        },
+        {
+          "position": 2,
+          "name": "Ajustar calidad",
+          "text": "Ajusta el control de calidad TIFF — valores mas bajos producen archivos mas pequenos."
+        },
+        {
+          "position": 3,
+          "name": "Convertir",
+          "text": "Haz clic en Convertir — los archivos se procesan localmente en tu navegador."
+        },
+        {
+          "position": 4,
+          "name": "Descargar",
+          "text": "Descarga los archivos TIFF — individualmente o todos a la vez."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Como funciona el convertidor de JPG a TIFF?",
+      "html": "<p>Convierte fotos JPG a TIFF sin perdida. Para impresion y archivado. La conversion se realiza completamente en tu navegador — los archivos nunca se envian a un servidor. Sin registro, sin limite de archivos.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Como convertir JPG a TIFF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Subir archivos",
+          "description": "Arrastra archivos a la pagina o haz clic para seleccionarlos."
+        },
+        {
+          "position": 2,
+          "title": "Ajustar calidad",
+          "description": "Ajusta el control de calidad TIFF — valores mas bajos producen archivos mas pequenos."
+        },
+        {
+          "position": 3,
+          "title": "Convertir",
+          "description": "Haz clic en Convertir — los archivos se procesan localmente en tu navegador."
+        },
+        {
+          "position": 4,
+          "title": "Descargar",
+          "description": "Descarga los archivos TIFF — individualmente o todos a la vez."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "items": [
+        {
+          "question": "Que es el formato TIFF?",
+          "answer": "TIFF es un formato de imagen profesional sin perdida utilizado en impresion, publicacion y archivado."
+        },
+        {
+          "question": "Son los archivos TIFF mas grandes que JPG?",
+          "answer": "Si. Los archivos TIFF son tipicamente mucho mas grandes porque usan compresion sin perdida."
+        },
+        {
+          "question": "Se envian mis archivos a un servidor?",
+          "answer": "No. La conversion se realiza completamente en tu navegador."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Necesitas mas?",
+      "description": "Contactanos — te ayudaremos a encontrar la solucion adecuada.",
+      "href": "/es/contacto",
+      "buttonText": "Escribenos"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Otras herramientas"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "toolKey": "webpToGif",
+  "locale": "hu",
+  "metadata": {
+    "title": "WebP GIF konverter — WebP GIF",
+    "description": "WebP kepek konvertalasa GIF formatumra maximalis kompatibilitassal.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/hu/eszkozok/webp-gif-konverter"
+  },
+  "hero": {
+    "title": "WebP GIF konverter",
+    "description": "WebP kepek konvertalasa GIF formatumra maximalis kompatibilitassal.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/webp-gif-konverter",
+      "label": "WebP GIF konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "WebP GIF konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "WebP kepek konvertalasa GIF formatumra maximalis kompatibilitassal.",
+      "featureList": ["Konvertalas GIF-re", "Minoseg beallitasa (60-95%)", "Kotegelt konvertalas", "Helyi feldolgozas a bongeszoben"]
+    },
+    "howTo": {
+      "name": "WebP konvertalasa GIF-ra",
+      "description": "WebP kepek konvertalasa GIF formatumra maximalis kompatibilitassal.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Fajlok feltoltese",
+          "text": "Huzd a fajlokat az oldalra vagy kattints a kivalasztasukhoz."
+        },
+        {
+          "position": 2,
+          "name": "Minoseg beallitasa",
+          "text": "Allitsd be a GIF minoseg csuszkajat — alacsonyabb ertekek kisebb fajlokat eredmenyeznek."
+        },
+        {
+          "position": 3,
+          "name": "Konvertalas",
+          "text": "Kattints a Konvertalas gombra — a fajlok helyben, a bongeszoben kerulnek feldolgozasra."
+        },
+        {
+          "position": 4,
+          "name": "Letoltes",
+          "text": "Toltsd le a GIF fajlokat — egyenkent vagy mindet egyszerre."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Hogyan mukodik a WebP GIF konverter?",
+      "html": "<p>WebP kepek konvertalasa GIF formatumra maximalis kompatibilitassal. A konvertalas teljes egeszeben a bongeszoben tortenik — a fajlok soha nem kerulnek szerverre. Regisztracio nelkul, fajl limit nelkul.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Hogyan konvertalhato WebP GIF-ra?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Fajlok feltoltese",
+          "description": "Huzd a fajlokat az oldalra vagy kattints a kivalasztasukhoz."
+        },
+        {
+          "position": 2,
+          "title": "Minoseg beallitasa",
+          "description": "Allitsd be a GIF minoseg csuszkajat — alacsonyabb ertekek kisebb fajlokat eredmenyeznek."
+        },
+        {
+          "position": 3,
+          "title": "Konvertalas",
+          "description": "Kattints a Konvertalas gombra — a fajlok helyben, a bongeszoben kerulnek feldolgozasra."
+        },
+        {
+          "position": 4,
+          "title": "Letoltes",
+          "description": "Toltsd le a GIF fajlokat — egyenkent vagy mindet egyszerre."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismetelt kerdesek",
+      "items": [
+        {
+          "question": "Mi a GIF formatum?",
+          "answer": "A GIF egy szeles korben tamogatott kepformatum, amely legfeljebb 256 szint tamogat. Idealis egyszeru grafikakhoz es ikonokhoz."
+        },
+        {
+          "question": "A GIF konvertalas rontja a minosegét?",
+          "answer": "A GIF korlatozott 256 szinu palettat hasznal. A fenykepek elveszithetnek reszleteket."
+        },
+        {
+          "question": "A fajljaim elkuldésre kerulnek egy szerverre?",
+          "answer": "Nem. A konvertalas teljes egeszeben a bongeszoben tortenik."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Tobbre van szukseged?",
+      "description": "Lepj kapcsolatba velunk — segitunk megtalalni a megfelelo megoldast.",
+      "href": "/hu/kapcsolat",
+      "buttonText": "Irj nekunk"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Mas eszkozok"
+    }
+  ]
+}

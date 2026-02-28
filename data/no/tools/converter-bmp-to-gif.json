@@ -1,0 +1,122 @@
+{
+  "toolKey": "bmpToGif",
+  "locale": "no",
+  "metadata": {
+    "title": "BMP til GIF-konverterer — BMP GIF",
+    "description": "Konverter ukomprimerte BMP-filer til lettvekts GIF.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/no/verktoy/bmp-til-gif-konverterer"
+  },
+  "hero": {
+    "title": "BMP til GIF-konverterer",
+    "description": "Konverter ukomprimerte BMP-filer til lettvekts GIF.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/bmp-til-gif-konverterer",
+      "label": "BMP til GIF-konverterer"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP til GIF-konverterer",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konverter ukomprimerte BMP-filer til lettvekts GIF.",
+      "featureList": ["Konvertering til GIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"]
+    },
+    "howTo": {
+      "name": "Hvordan konvertere BMP til GIF",
+      "description": "Konverter ukomprimerte BMP-filer til lettvekts GIF.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Last opp filer",
+          "text": "Dra filer til siden eller klikk for a velge fra disk."
+        },
+        {
+          "position": 2,
+          "name": "Still inn kvalitet",
+          "text": "Juster GIF-kvalitetsglideren — lavere verdier gir mindre filer."
+        },
+        {
+          "position": 3,
+          "name": "Konverter",
+          "text": "Klikk pa Konverter — filene behandles lokalt i nettleseren."
+        },
+        {
+          "position": 4,
+          "name": "Last ned",
+          "text": "Last ned GIF-filene — enkeltvis eller alle pa en gang."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Hvordan fungerer BMP til GIF-konvertereren?",
+      "html": "<p>Konverter ukomprimerte BMP-filer til lettvekts GIF. Konverteringen skjer helt i nettleseren — filer sendes aldri til en server. Uten registrering, uten begrensning.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Hvordan konvertere BMP til GIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Last opp filer",
+          "description": "Dra filer til siden eller klikk for a velge fra disk."
+        },
+        {
+          "position": 2,
+          "title": "Still inn kvalitet",
+          "description": "Juster GIF-kvalitetsglideren — lavere verdier gir mindre filer."
+        },
+        {
+          "position": 3,
+          "title": "Konverter",
+          "description": "Klikk pa Konverter — filene behandles lokalt i nettleseren."
+        },
+        {
+          "position": 4,
+          "title": "Last ned",
+          "description": "Last ned GIF-filene — enkeltvis eller alle pa en gang."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte sporsmal",
+      "items": [
+        {
+          "question": "Hva er GIF-format?",
+          "answer": "GIF er et bredt stottet bildeformat som stotter opptil 256 farger. Ideelt for enkel grafikk og ikoner."
+        },
+        {
+          "question": "Reduserer GIF-konvertering kvaliteten?",
+          "answer": "GIF bruker en begrenset 256-fargepalett. Fotografier kan miste detaljer."
+        },
+        {
+          "question": "Sendes filene mine til en server?",
+          "answer": "Nei. Konverteringen skjer helt i nettleseren."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Trenger du mer?",
+      "description": "Kontakt oss — vi hjelper deg a finne den riktige losningen.",
+      "href": "/no/kontakt",
+      "buttonText": "Skriv til oss"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre verktoy"
+    }
+  ]
+}

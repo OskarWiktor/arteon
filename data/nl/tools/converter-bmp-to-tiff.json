@@ -1,0 +1,122 @@
+{
+  "toolKey": "bmpToTiff",
+  "locale": "nl",
+  "metadata": {
+    "title": "BMP naar TIFF converter — BMP TIFF",
+    "description": "Converteer BMP-bestanden naar professioneel TIFF-formaat voor afdrukken.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/nl/tools/bmp-naar-tiff-converter"
+  },
+  "hero": {
+    "title": "BMP naar TIFF converter",
+    "description": "Converteer BMP-bestanden naar professioneel TIFF-formaat voor afdrukken.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/bmp-naar-tiff-converter",
+      "label": "BMP naar TIFF converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP naar TIFF converter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converteer BMP-bestanden naar professioneel TIFF-formaat voor afdrukken.",
+      "featureList": ["Conversie naar TIFF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"]
+    },
+    "howTo": {
+      "name": "BMP naar TIFF converteren",
+      "description": "Converteer BMP-bestanden naar professioneel TIFF-formaat voor afdrukken.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Bestanden uploaden",
+          "text": "Sleep bestanden naar de pagina of klik om ze te selecteren."
+        },
+        {
+          "position": 2,
+          "name": "Kwaliteit instellen",
+          "text": "Pas de TIFF-kwaliteitsschuifregelaar aan — lagere waarden geven kleinere bestanden."
+        },
+        {
+          "position": 3,
+          "name": "Converteren",
+          "text": "Klik op Converteren — bestanden worden lokaal in de browser verwerkt."
+        },
+        {
+          "position": 4,
+          "name": "Downloaden",
+          "text": "Download de TIFF-bestanden — individueel of allemaal tegelijk."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Hoe werkt de BMP naar TIFF converter?",
+      "html": "<p>Converteer BMP-bestanden naar professioneel TIFF-formaat voor afdrukken. De conversie vindt volledig plaats in de browser — bestanden worden nooit naar een server gestuurd. Zonder registratie, zonder limiet.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Hoe converteer je BMP naar TIFF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Bestanden uploaden",
+          "description": "Sleep bestanden naar de pagina of klik om ze te selecteren."
+        },
+        {
+          "position": 2,
+          "title": "Kwaliteit instellen",
+          "description": "Pas de TIFF-kwaliteitsschuifregelaar aan — lagere waarden geven kleinere bestanden."
+        },
+        {
+          "position": 3,
+          "title": "Converteren",
+          "description": "Klik op Converteren — bestanden worden lokaal in de browser verwerkt."
+        },
+        {
+          "position": 4,
+          "title": "Downloaden",
+          "description": "Download de TIFF-bestanden — individueel of allemaal tegelijk."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen",
+      "items": [
+        {
+          "question": "Wat is het TIFF-formaat?",
+          "answer": "TIFF is een professioneel lossless afbeeldingsformaat dat wordt gebruikt voor afdrukken, publiceren en archivering."
+        },
+        {
+          "question": "Zijn TIFF-bestanden groter dan JPG?",
+          "answer": "Ja. TIFF-bestanden zijn doorgaans veel groter omdat ze lossless compressie gebruiken."
+        },
+        {
+          "question": "Worden mijn bestanden naar een server gestuurd?",
+          "answer": "Nee. De conversie vindt volledig plaats in de browser."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Meer nodig?",
+      "description": "Neem contact op — we helpen u de juiste oplossing te vinden.",
+      "href": "/nl/contact",
+      "buttonText": "Schrijf ons"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere tools"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "toolKey": "svgToAvif",
+  "locale": "sv",
+  "metadata": {
+    "title": "SVG till AVIF-konverterare — SVG AVIF",
+    "description": "Konvertera vektor-SVG-grafik till kompakt AVIF-rasterformat.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/sv/verktyg/svg-till-avif-konverterare"
+  },
+  "hero": {
+    "title": "SVG till AVIF-konverterare",
+    "description": "Konvertera vektor-SVG-grafik till kompakt AVIF-rasterformat.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/svg-till-avif-konverterare",
+      "label": "SVG till AVIF-konverterare"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "SVG till AVIF-konverterare",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konvertera vektor-SVG-grafik till kompakt AVIF-rasterformat.",
+      "featureList": ["Konvertering till AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webblasaren"]
+    },
+    "howTo": {
+      "name": "Hur konverterar man SVG till AVIF",
+      "description": "Konvertera vektor-SVG-grafik till kompakt AVIF-rasterformat.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Ladda upp filer",
+          "text": "Dra filer till sidan eller klicka for att valja fran disk."
+        },
+        {
+          "position": 2,
+          "name": "Stall in kvalitet",
+          "text": "Justera AVIF-kvalitetsreglaget — lagre varden ger mindre filer."
+        },
+        {
+          "position": 3,
+          "name": "Konvertera",
+          "text": "Klicka pa Konvertera — filerna bearbetas lokalt i webblasaren."
+        },
+        {
+          "position": 4,
+          "name": "Ladda ner",
+          "text": "Ladda ner AVIF-filerna — enskilt eller alla pa en gang."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Hur fungerar SVG till AVIF-konverteraren?",
+      "html": "<p>Konvertera vektor-SVG-grafik till kompakt AVIF-rasterformat. Konverteringen sker helt i webblasaren — filer skickas aldrig till en server. Utan registrering, utan begransning.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Hur konverterar man SVG till AVIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Ladda upp filer",
+          "description": "Dra filer till sidan eller klicka for att valja fran disk."
+        },
+        {
+          "position": 2,
+          "title": "Stall in kvalitet",
+          "description": "Justera AVIF-kvalitetsreglaget — lagre varden ger mindre filer."
+        },
+        {
+          "position": 3,
+          "title": "Konvertera",
+          "description": "Klicka pa Konvertera — filerna bearbetas lokalt i webblasaren."
+        },
+        {
+          "position": 4,
+          "title": "Ladda ner",
+          "description": "Ladda ner AVIF-filerna — enskilt eller alla pa en gang."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Vanliga fragor",
+      "items": [
+        {
+          "question": "Vad ar AVIF-format?",
+          "answer": "AVIF ar ett modernt bildformat baserat pa AV1-codec. Det erbjuder utmarkt komprimering — filer kan vara upp till 50% mindre an JPG."
+        },
+        {
+          "question": "Fungerar AVIF i alla webblasare?",
+          "answer": "AVIF stods av Chrome, Edge och Firefox. Safari har begransat AVIF-stod."
+        },
+        {
+          "question": "Skickas mina filer till en server?",
+          "answer": "Nej. Konverteringen sker helt i webblasaren. Filer lamnar aldrig din dator."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Behover du mer?",
+      "description": "Kontakta oss — vi hjalper dig hitta ratt losning.",
+      "href": "/sv/kontakt",
+      "buttonText": "Skriv till oss"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andra verktyg"
+    }
+  ]
+}

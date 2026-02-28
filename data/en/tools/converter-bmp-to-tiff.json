@@ -1,0 +1,122 @@
+{
+  "toolKey": "bmpToTiff",
+  "locale": "en",
+  "metadata": {
+    "title": "BMP to TIFF converter — BMP TIFF",
+    "description": "Convert BMP files to professional TIFF format for printing.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/en/tools/bmp-to-tiff-converter"
+  },
+  "hero": {
+    "title": "BMP to TIFF converter",
+    "description": "Convert BMP files to professional TIFF format for printing.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/bmp-to-tiff-converter",
+      "label": "BMP to TIFF converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP to TIFF converter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convert BMP files to professional TIFF format for printing.",
+      "featureList": ["Conversion to TIFF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "How to convert BMP to TIFF",
+      "description": "Convert BMP files to professional TIFF format for printing.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Upload files",
+          "text": "Drag files onto the page or click to select from disk."
+        },
+        {
+          "position": 2,
+          "name": "Set quality",
+          "text": "Adjust the TIFF quality slider — lower values produce smaller files."
+        },
+        {
+          "position": 3,
+          "name": "Convert",
+          "text": "Click Convert — files are processed locally in your browser."
+        },
+        {
+          "position": 4,
+          "name": "Download",
+          "text": "Download the TIFF files — individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "How does the BMP to TIFF converter work?",
+      "html": "<p>Convert BMP files to professional TIFF format for printing. Conversion runs entirely in your browser — files are never sent to a server. No registration, no file limit.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "How to convert BMP to TIFF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Upload files",
+          "description": "Drag files onto the page or click to select from disk."
+        },
+        {
+          "position": 2,
+          "title": "Set quality",
+          "description": "Adjust the TIFF quality slider — lower values produce smaller files."
+        },
+        {
+          "position": 3,
+          "title": "Convert",
+          "description": "Click Convert — files are processed locally in your browser."
+        },
+        {
+          "position": 4,
+          "title": "Download",
+          "description": "Download the TIFF files — individually or all at once."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "question": "What is TIFF format?",
+          "answer": "TIFF is a professional lossless image format used in printing, publishing, and archiving. It supports high color depth and multiple layers."
+        },
+        {
+          "question": "Are TIFF files larger than JPG?",
+          "answer": "Yes. TIFF files are typically much larger because they use lossless compression or no compression at all."
+        },
+        {
+          "question": "Are my files sent to a server?",
+          "answer": "No. Conversion runs entirely in your browser. Files never leave your computer."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Need more?",
+      "description": "Contact us — we will help you find the right solution.",
+      "href": "/en/contact",
+      "buttonText": "Write to us"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Other tools"
+    }
+  ]
+}

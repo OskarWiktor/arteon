@@ -1,0 +1,122 @@
+{
+  "toolKey": "bmpToTiff",
+  "locale": "fi",
+  "metadata": {
+    "title": "BMP TIFF -muunnin — BMP TIFF",
+    "description": "Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fi/tyokalut/bmp-tiff-muunnin"
+  },
+  "hero": {
+    "title": "BMP TIFF -muunnin",
+    "description": "Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/bmp-tiff-muunnin",
+      "label": "BMP TIFF -muunnin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP TIFF -muunnin",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten.",
+      "featureList": ["Muunnos TIFF-muotoon", "Laadun saato (60-95%)", "Eramuunnos", "Paikallinen kasittely selaimessa"]
+    },
+    "howTo": {
+      "name": "Kuinka muuntaa BMP TIFF-muotoon",
+      "description": "Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Lataa tiedostot",
+          "text": "Vedä tiedostot sivulle tai napsauta valitaksesi levylta."
+        },
+        {
+          "position": 2,
+          "name": "Aseta laatu",
+          "text": "Saada TIFF-laatuliukusaadinta — alhaisemmat arvot tuottavat pienempia tiedostoja."
+        },
+        {
+          "position": 3,
+          "name": "Muunna",
+          "text": "Napsauta Muunna — tiedostot kasitellaan paikallisesti selaimessa."
+        },
+        {
+          "position": 4,
+          "name": "Lataa",
+          "text": "Lataa TIFF-tiedostot — yksittain tai kaikki kerralla."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Miten BMP-TIFF-muunnin toimii?",
+      "html": "<p>Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten. Muunnos tapahtuu kokonaan selaimessa — tiedostoja ei koskaan lahetetä palvelimelle. Ilman rekisteroitymista, ilman rajoituksia.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Kuinka muuntaa BMP TIFF-muotoon?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Lataa tiedostot",
+          "description": "Vedä tiedostot sivulle tai napsauta valitaksesi levylta."
+        },
+        {
+          "position": 2,
+          "title": "Aseta laatu",
+          "description": "Saada TIFF-laatuliukusaadinta — alhaisemmat arvot tuottavat pienempia tiedostoja."
+        },
+        {
+          "position": 3,
+          "title": "Muunna",
+          "description": "Napsauta Muunna — tiedostot kasitellaan paikallisesti selaimessa."
+        },
+        {
+          "position": 4,
+          "title": "Lataa",
+          "description": "Lataa TIFF-tiedostot — yksittain tai kaikki kerralla."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "items": [
+        {
+          "question": "Mika on TIFF-muoto?",
+          "answer": "TIFF on ammattimainen haviöton kuvamuoto, jota kaytetaan tulostuksessa, julkaisussa ja arkistoinnissa."
+        },
+        {
+          "question": "Ovatko TIFF-tiedostot suurempia kuin JPG?",
+          "answer": "Kylla. TIFF-tiedostot ovat tyypillisesti paljon suurempia, koska ne kayttavat haviötöntä pakkausta."
+        },
+        {
+          "question": "Lahetetaanko tiedostoni palvelimelle?",
+          "answer": "Ei. Muunnos tapahtuu kokonaan selaimessa."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Tarvitsetko lisaa?",
+      "description": "Ota yhteytta — autamme loytamaan oikean ratkaisun.",
+      "href": "/fi/yhteystiedot",
+      "buttonText": "Kirjoita meille"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut tyokalut"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "toolKey": "svgToAvif",
+  "locale": "el",
+  "metadata": {
+    "title": "Μετατροπέας SVG σε AVIF — SVG AVIF",
+    "description": "Μετατρεψτε διανυσματικα γραφικα SVG σε συμπαγη μορφη raster AVIF.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/el/ergaleia/metatropeas-svg-se-avif"
+  },
+  "hero": {
+    "title": "Μετατροπέας SVG σε AVIF",
+    "description": "Μετατρεψτε διανυσματικα γραφικα SVG σε συμπαγη μορφη raster AVIF.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-svg-se-avif",
+      "label": "Μετατροπέας SVG σε AVIF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Μετατροπέας SVG σε AVIF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Μετατρεψτε διανυσματικα γραφικα SVG σε συμπαγη μορφη raster AVIF.",
+      "featureList": ["Μετατροπή σε AVIF", "Ρύθμιση ποιότητας (60-95%)", "Ομαδική μετατροπή", "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"]
+    },
+    "howTo": {
+      "name": "Πώς να μετατρέψετε SVG σε AVIF",
+      "description": "Μετατρεψτε διανυσματικα γραφικα SVG σε συμπαγη μορφη raster AVIF.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Ανεβάστε αρχεία",
+          "text": "Σύρετε αρχεία στη σελίδα ή κάντε κλικ για να τα επιλέξετε."
+        },
+        {
+          "position": 2,
+          "name": "Ρυθμίστε την ποιότητα",
+          "text": "Ρυθμίστε τον δείκτη ποιότητας AVIF — χαμηλότερες τιμές δίνουν μικρότερα αρχεία."
+        },
+        {
+          "position": 3,
+          "name": "Μετατρέψτε",
+          "text": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στο πρόγραμμα περιήγησης."
+        },
+        {
+          "position": 4,
+          "name": "Κατεβάστε",
+          "text": "Κατεβάστε τα αρχεία AVIF — μεμονωμένα ή όλα μαζί."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Πώς λειτουργεί ο μετατροπέας SVG σε AVIF;",
+      "html": "<p>Μετατρεψτε διανυσματικα γραφικα SVG σε συμπαγη μορφη raster AVIF. Η μετατροπή γίνεται εξ ολοκλήρου στο πρόγραμμα περιήγησης — τα αρχεία δεν αποστέλλονται ποτέ σε διακομιστή. Χωρίς εγγραφή, χωρίς όριο.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Πώς να μετατρέψετε SVG σε AVIF;",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Ανεβάστε αρχεία",
+          "description": "Σύρετε αρχεία στη σελίδα ή κάντε κλικ για να τα επιλέξετε."
+        },
+        {
+          "position": 2,
+          "title": "Ρυθμίστε την ποιότητα",
+          "description": "Ρυθμίστε τον δείκτη ποιότητας AVIF — χαμηλότερες τιμές δίνουν μικρότερα αρχεία."
+        },
+        {
+          "position": 3,
+          "title": "Μετατρέψτε",
+          "description": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στο πρόγραμμα περιήγησης."
+        },
+        {
+          "position": 4,
+          "title": "Κατεβάστε",
+          "description": "Κατεβάστε τα αρχεία AVIF — μεμονωμένα ή όλα μαζί."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Συχνές ερωτήσεις",
+      "items": [
+        {
+          "question": "Τι είναι η μορφή AVIF;",
+          "answer": "Το AVIF είναι μια σύγχρονη μορφή εικόνας βασισμένη στον κωδικοποιητή AV1. Προσφέρει εξαιρετική συμπίεση — τα αρχεία μπορούν να είναι έως 50% μικρότερα από JPG."
+        },
+        {
+          "question": "Λειτουργεί το AVIF σε όλα τα προγράμματα περιήγησης;",
+          "answer": "Το AVIF υποστηρίζεται από Chrome, Edge και Firefox. Το Safari έχει περιορισμένη υποστήριξη AVIF."
+        },
+        {
+          "question": "Αποστέλλονται τα αρχεία μου σε διακομιστή;",
+          "answer": "Όχι. Η μετατροπή γίνεται εξ ολοκλήρου στο πρόγραμμα περιήγησης. Τα αρχεία δεν φεύγουν ποτέ από τον υπολογιστή σας."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Χρειάζεστε περισσότερα;",
+      "description": "Επικοινωνήστε μαζί μας — θα σας βοηθήσουμε να βρείτε τη σωστή λύση.",
+      "href": "/el/epikoinonia",
+      "buttonText": "Γράψτε μας"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Άλλα εργαλεία"
+    }
+  ]
+}

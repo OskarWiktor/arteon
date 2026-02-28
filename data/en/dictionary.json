@@ -115,12 +115,12 @@
     "clickToSelect": "or click to choose files from your device",
     "supported": "Supported: {{format}}",
     "setQuality": "Set {{format}} quality",
-    "qualityHelper": "Lower value = smaller files, higher = better quality. 80\u201385% is a good balance.",
+    "qualityHelper": "Lower value = smaller files, higher = better quality. 80–85% is a good balance.",
     "convertAndDownload": "Convert and download",
     "inQueue": "In queue:",
     "files": "files",
     "completed": "Completed",
-    "converting": "Converting\u2026",
+    "converting": "Converting…",
     "convert": "Convert",
     "downloadAll": "Download all",
     "clearAll": "Clear all",
@@ -136,7 +136,7 @@
     "pendingCount": "Pending",
     "emptyState": "Add {{source}} files on the left to start converting to {{target}}.",
     "statusPending": "Pending",
-    "statusProcessing": "Processing\u2026",
+    "statusProcessing": "Processing…",
     "statusDone": "Done",
     "statusError": "Error",
     "before": "Before:",
@@ -150,7 +150,25 @@
     "errorCanvas": "Canvas is not supported in this browser.",
     "errorGeneration": "Failed to generate {{format}} file.",
     "errorTooLarge": "File is too large (max 100 MB).",
-    "errorWrongFormat": "Add {{format}} files \u2014 other formats are skipped.",
-    "errorNoFiles": "Add at least one {{format}} file."
+    "errorWrongFormat": "Add {{format}} files — other formats are skipped.",
+    "errorNoFiles": "Add at least one {{format}} file.",
+    "errorAvifNotSupported": "Your browser does not support AVIF encoding. Use Chrome, Edge, or Firefox."
+  },
+  "errorPages": {
+    "notFound": {
+      "title": "Page not found",
+      "code": "404",
+      "description": "It looks like the page you are looking for does not exist. Click the button to go back to the homepage.",
+      "backHome": "Back to homepage"
+    },
+    "error": {
+      "title": "Something went wrong",
+      "description": "An unexpected error occurred. Try refreshing the page or contact us if the problem persists.",
+      "tryAgain": "Try again",
+      "backHome": "Back to homepage",
+      "contact": "Contact us",
+      "contactHref": "/en/contact",
+      "errorCode": "Error code"
+    }
   }
 }

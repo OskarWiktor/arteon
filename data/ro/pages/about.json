@@ -1,12 +1,12 @@
 {
   "slug": "despre-noi",
   "metadata": {
-    "title": "Despre Arteon – 10 instrumente gratuite pentru web, SEO și",
+    "title": "Despre Arteon – Instrumente gratuite pentru web, SEO și",
     "description": "Arteon este o agenție creativă care dezvoltă instrumente gratuite în browser: convertor WebP, generator de favicon, verificator de contrast, generator de."
   },
   "hero": {
     "title": "Instrumente gratuite create de o agenție creativă",
-    "description": "10 instrumente în browser pentru imagini, SEO, culori, semnături e-mail și coduri QR — fără înregistrare, fără încărcare de fișiere, fără limite"
+    "description": "Instrumente în browser pentru imagini, SEO, culori, semnături e-mail și coduri QR — fără înregistrare, fără încărcare de fișiere, fără limite"
   },
   "whoWeAre": {
     "title": "Cine suntem",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Încercați instrumentele noastre",
-    "description": "10 instrumente gratuite — fără înregistrare, fără limite, fără încărcare de fișiere pe servere",
+    "description": "Instrumente gratuite — fără înregistrare, fără limite, fără încărcare de fișiere pe servere",
     "btnOne": "Mergi la instrumente",
     "btnTwo": "Contact"
   }

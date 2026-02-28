@@ -28,12 +28,12 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 export const metadata = {
   title: 'Ferramentas online gratuitas | Conversores, SEO, cores, favicon',
   description:
-    '34 ferramentas gratuitas: 24 conversores de imagens (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), gerador de favicon, editor de imagens, contador de texto, paletas de cores e códigos QR. Sem registo.',
+    'Ferramentas gratuitas: Conversores de imagens (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), gerador de favicon, editor de imagens, contador de texto, paletas de cores e códigos QR. Sem registo.',
   alternates: getToolsIndexAlternates('pt'),
   openGraph: {
     title: 'Ferramentas online gratuitas | Conversores, SEO, cores, favicon',
     description:
-      '34 ferramentas gratuitas: 24 conversores de imagens (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), gerador de favicon, editor de imagens, contador de texto, paletas de cores e códigos QR. Sem registo.',
+      'Ferramentas gratuitas: Conversores de imagens (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), gerador de favicon, editor de imagens, contador de texto, paletas de cores e códigos QR. Sem registo.',
     url: toAbsoluteUrl('/pt/ferramentas'),
     type: 'website',
     images: [
@@ -41,6 +41,177 @@ export const metadata = {
         url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'),
         width: 1200,
         height: 630,
+      },
+      {
+        '@type': 'WebApplication',
+        position: 35,
+        name: 'Conversor JPG para AVIF',
+        description: 'Converta fotos JPG para AVIF moderno. Compressao ate 50% melhor que JPG mantendo a qualidade.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-jpg-para-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 36,
+        name: 'Conversor PNG para AVIF',
+        description: 'Converta graficos PNG para AVIF com suporte a transparencia. Ficheiros significativamente menores.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-png-para-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 37,
+        name: 'Conversor WebP para AVIF',
+        description: 'Converta ficheiros WebP para AVIF. Compressao ainda melhor num formato moderno.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-webp-para-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 38,
+        name: 'Conversor SVG para AVIF',
+        description: 'Converta graficos vetoriais SVG para formato raster AVIF compacto.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-svg-para-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 39,
+        name: 'Conversor BMP para AVIF',
+        description: 'Converta ficheiros BMP nao comprimidos para AVIF ultracompacto.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-bmp-para-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 40,
+        name: 'Conversor GIF para AVIF',
+        description: 'Converta o primeiro quadro GIF para imagem AVIF estatica com excelente compressao.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-gif-para-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 41,
+        name: 'Conversor HEIC para AVIF',
+        description: 'Converta fotos HEIC do iPhone para formato AVIF moderno.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-heic-para-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 42,
+        name: 'Conversor TIFF para AVIF',
+        description: 'Converta ficheiros TIFF para AVIF moderno. Reducao massiva do tamanho do ficheiro.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-tiff-para-avif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 43,
+        name: 'Conversor JPG para GIF',
+        description: 'Converta fotos JPG para formato GIF. Perfeito para graficos simples e icones.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-jpg-para-gif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 44,
+        name: 'Conversor PNG para GIF',
+        description: 'Converta graficos PNG para GIF. Ideal para icones simples e graficos.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-png-para-gif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 45,
+        name: 'Conversor WebP para GIF',
+        description: 'Converta imagens WebP para formato GIF para maxima compatibilidade.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-webp-para-gif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 46,
+        name: 'Conversor SVG para GIF',
+        description: 'Converta graficos vetoriais SVG para formato raster GIF.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-svg-para-gif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 47,
+        name: 'Conversor BMP para GIF',
+        description: 'Converta ficheiros BMP nao comprimidos para GIF leve.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-bmp-para-gif'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 48,
+        name: 'Conversor JPG para TIFF',
+        description: 'Converta fotos JPG para TIFF sem perdas. Para impressao e arquivamento.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-jpg-para-tiff'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 49,
+        name: 'Conversor PNG para TIFF',
+        description: 'Converta graficos PNG para formato TIFF profissional.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-png-para-tiff'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 50,
+        name: 'Conversor WebP para TIFF',
+        description: 'Converta imagens WebP para TIFF profissional para impressao e arquivo.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-webp-para-tiff'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 51,
+        name: 'Conversor SVG para TIFF',
+        description: 'Converta graficos vetoriais SVG para raster TIFF de alta qualidade.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-svg-para-tiff'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 52,
+        name: 'Conversor BMP para TIFF',
+        description: 'Converta ficheiros BMP para formato TIFF profissional para impressao.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-bmp-para-tiff'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 53,
+        name: 'Conversor HEIC para TIFF',
+        description: 'Converta fotos HEIC do iPhone para formato TIFF profissional.',
+        url: toAbsoluteUrl('/pt/ferramentas/conversor-heic-para-tiff'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
       },
     ],
   },
@@ -51,7 +222,7 @@ const schema = {
   '@type': 'CollectionPage',
   name: 'Ferramentas online gratuitas — conversores de imagens, SEO, cores, favicon',
   description:
-    '34 ferramentas gratuitas: 24 conversores de imagens (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), gerador de favicon, editor de imagens, contador de texto, paletas de cores e códigos QR. Sem registo.',
+    'Ferramentas gratuitas: Conversores de imagens (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), gerador de favicon, editor de imagens, contador de texto, paletas de cores e códigos QR. Sem registo.',
   url: toAbsoluteUrl('/pt/ferramentas'),
   inLanguage: 'pt',
   isPartOf: {
@@ -67,7 +238,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 34,
+
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -414,7 +585,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Ferramentas online gratuitas"
-        description="24 conversores de formatos de imagem, editor de imagens, gerador de favicon, contador de texto, ferramentas de cor e códigos QR. Sem registo, sem limites."
+        description="Conversores de formatos de imagem, editor de imagens, gerador de favicon, contador de texto, ferramentas de cor e códigos QR. Sem registo, sem limites."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -463,402 +634,6 @@ export default function ToolsIndexPage() {
             },
           ]}
         />
-
-        <Gap size="sm" />
-
-        <SectionSteps
-          title="Conversores de formatos de imagem"
-          description="24 conversores de imagens online — converta entre JPG, PNG, WebP, SVG, BMP e GIF. Conversão no navegador, sem envio de ficheiros."
-          grid="three"
-          items={[
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor JPG para WebP',
-              topImageAlt: 'Conversor JPG para WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta fotos JPG para WebP leve. Reduza o peso das imagens até 35%.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-jpg-para-webp">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor PNG para JPG',
-              topImageAlt: 'Conversor PNG para JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta ficheiros PNG para JPG no navegador. Sem limite de ficheiros, sem registo.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-png-para-jpg">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor WebP para JPG',
-              topImageAlt: 'Conversor WebP para JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta ficheiros WebP para JPG compatível com tudo. Sem limites, sem registo.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-webp-para-jpg">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor PNG para WebP',
-              topImageAlt: 'Conversor PNG para WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta gráficos PNG para WebP. Ficheiros menores mantendo a transparência.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-png-para-webp">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor JPG para PNG',
-              topImageAlt: 'Conversor JPG para PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta imagens JPG para PNG sem perdas. Conversão local no navegador.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-jpg-para-png">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor WebP para PNG',
-              topImageAlt: 'Conversor WebP para PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta imagens WebP para PNG sem perdas. Conversão local, nada enviado ao servidor.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-webp-para-png">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor SVG para PNG',
-              topImageAlt: 'Conversor SVG para PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta gráficos vetoriais SVG para PNG. Ideal para documentos e redes sociais.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-svg-para-png">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor SVG para JPG',
-              topImageAlt: 'Conversor SVG para JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta gráficos SVG para JPG compacto. Ficheiro menor, compatibilidade total.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-svg-para-jpg">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor BMP para JPG',
-              topImageAlt: 'Conversor BMP para JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta ficheiros BMP para JPG leve. Redução drástica do tamanho.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-bmp-para-jpg">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor BMP para PNG',
-              topImageAlt: 'Conversor BMP para PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta imagens BMP para PNG sem perdas. Qualidade preservada, tamanho reduzido.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-bmp-para-png">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor GIF para PNG',
-              topImageAlt: 'Conversor GIF para PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Exporte o primeiro fotograma de um GIF como PNG estático. Sem perdas de qualidade.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-gif-para-png">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor GIF para JPG',
-              topImageAlt: 'Conversor GIF para JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Exporte o primeiro fotograma de um GIF como JPG compacto. Ficheiro menor.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-gif-para-jpg">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor SVG para WebP',
-              topImageAlt: 'Conversor SVG para WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta graficos SVG para WebP leve. Ideal para sites.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-svg-para-webp">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor GIF para WebP',
-              topImageAlt: 'Conversor GIF para WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta o primeiro fotograma GIF para WebP leve. Ficheiro menor.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-gif-para-webp">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor BMP para WebP',
-              topImageAlt: 'Conversor BMP para WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta ficheiros BMP para WebP leve. Reducao de ate 95%.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-bmp-para-webp">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor AVIF para JPG',
-              topImageAlt: 'Conversor AVIF para JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta ficheiros AVIF para JPG universal. Compativel com tudo.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-avif-para-jpg">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor AVIF para PNG',
-              topImageAlt: 'Conversor AVIF para PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta ficheiros AVIF para PNG sem perdas. Qualidade preservada.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-avif-para-png">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor AVIF para WebP',
-              topImageAlt: 'Conversor AVIF para WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta ficheiros AVIF para WebP. Ampla compatibilidade.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-avif-para-webp">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor HEIC para JPG',
-              topImageAlt: 'Conversor HEIC para JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta fotos HEIC do iPhone para JPG universal. Sem registo.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-heic-para-jpg">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor HEIC para PNG',
-              topImageAlt: 'Conversor HEIC para PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta fotos HEIC do iPhone para PNG sem perdas.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-heic-para-png">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor HEIC para WebP',
-              topImageAlt: 'Conversor HEIC para WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta fotos HEIC do iPhone para WebP leve. Menor tamanho.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-heic-para-webp">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor TIFF para JPG',
-              topImageAlt: 'Conversor TIFF para JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta ficheiros TIFF para JPG compacto. Ideal para digitalizacoes.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-tiff-para-jpg">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor TIFF para PNG',
-              topImageAlt: 'Conversor TIFF para PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta ficheiros TIFF para PNG sem perdas.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-tiff-para-png">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Conversor TIFF para WebP',
-              topImageAlt: 'Conversor TIFF para WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta ficheiros TIFF para WebP leve. Enorme reducao.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-tiff-para-webp">
-                      Abrir ferramenta
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-
-        <Gap size="sm" />
 
         <SectionSteps
           title="Texto e SEO"
@@ -1017,6 +792,162 @@ export default function ToolsIndexPage() {
             },
           ]}
         />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Conversores de formatos de imagem"
+          description="Conversores de imagens online — converta entre JPG, PNG, WebP, SVG, BMP e GIF. Conversão no navegador, sem envio de ficheiros."
+          grid="three"
+          items={[
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Conversor JPG para WebP',
+              topImageAlt: 'Conversor JPG para WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converta fotos JPG para WebP leve. Reduza o peso das imagens até 35%.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/pt/ferramentas/conversor-jpg-para-webp">
+                      Abrir ferramenta
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Conversor PNG para JPG',
+              topImageAlt: 'Conversor PNG para JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converta ficheiros PNG para JPG no navegador. Sem limite de ficheiros, sem registo.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/pt/ferramentas/conversor-png-para-jpg">
+                      Abrir ferramenta
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Conversor WebP para JPG',
+              topImageAlt: 'Conversor WebP para JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converta ficheiros WebP para JPG compatível com tudo. Sem limites, sem registo.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/pt/ferramentas/conversor-webp-para-jpg">
+                      Abrir ferramenta
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Conversor PNG para WebP',
+              topImageAlt: 'Conversor PNG para WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converta gráficos PNG para WebP. Ficheiros menores mantendo a transparência.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/pt/ferramentas/conversor-png-para-webp">
+                      Abrir ferramenta
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Conversor JPG para PNG',
+              topImageAlt: 'Conversor JPG para PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converta imagens JPG para PNG sem perdas. Conversão local no navegador.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/pt/ferramentas/conversor-jpg-para-png">
+                      Abrir ferramenta
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Conversor WebP para PNG',
+              topImageAlt: 'Conversor WebP para PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converta imagens WebP para PNG sem perdas. Conversão local, nada enviado ao servidor.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/pt/ferramentas/conversor-webp-para-png">
+                      Abrir ferramenta
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Conversor SVG para PNG',
+              topImageAlt: 'Conversor SVG para PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converta gráficos vetoriais SVG para PNG. Ideal para documentos e redes sociais.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/pt/ferramentas/conversor-svg-para-png">
+                      Abrir ferramenta
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Conversor SVG para JPG',
+              topImageAlt: 'Conversor SVG para JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converta gráficos SVG para JPG compacto. Ficheiro menor, compatibilidade total.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/pt/ferramentas/conversor-svg-para-jpg">
+                      Abrir ferramenta
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Conversor BMP para JPG',
+              topImageAlt: 'Conversor BMP para JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converta ficheiros BMP para JPG leve. Redução drástica do tamanho.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/pt/ferramentas/conversor-bmp-para-jpg">
+                      Abrir ferramenta
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <Gap size="sm" />
 
         <Gap variant="line" />
 

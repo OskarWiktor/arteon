@@ -1,0 +1,122 @@
+{
+  "toolKey": "heicToTiff",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore HEIC in TIFF — HEIC TIFF",
+    "description": "Converti foto HEIC dell\\'iPhone in formato TIFF professionale.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/it/strumenti/convertitore-heic-in-tiff"
+  },
+  "hero": {
+    "title": "Convertitore HEIC in TIFF",
+    "description": "Converti foto HEIC dell\\'iPhone in formato TIFF professionale.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-heic-in-tiff",
+      "label": "Convertitore HEIC in TIFF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore HEIC in TIFF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converti foto HEIC dell\\'iPhone in formato TIFF professionale.",
+      "featureList": ["Conversione in TIFF", "Regolazione qualita (60-95%)", "Conversione in batch", "Elaborazione locale nel browser"]
+    },
+    "howTo": {
+      "name": "Come convertire HEIC in TIFF",
+      "description": "Converti foto HEIC dell\\'iPhone in formato TIFF professionale.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Carica file",
+          "text": "Trascina i file sulla pagina o clicca per selezionarli."
+        },
+        {
+          "position": 2,
+          "name": "Imposta qualita",
+          "text": "Regola il cursore qualita TIFF — valori piu bassi producono file piu piccoli."
+        },
+        {
+          "position": 3,
+          "name": "Converti",
+          "text": "Clicca Converti — i file vengono elaborati localmente nel browser."
+        },
+        {
+          "position": 4,
+          "name": "Scarica",
+          "text": "Scarica i file TIFF — singolarmente o tutti insieme."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Come funziona il convertitore HEIC in TIFF?",
+      "html": "<p>Converti foto HEIC dell\\'iPhone in formato TIFF professionale. La conversione avviene interamente nel browser — i file non vengono mai inviati a un server. Senza registrazione, senza limiti.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Come convertire HEIC in TIFF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Carica file",
+          "description": "Trascina i file sulla pagina o clicca per selezionarli."
+        },
+        {
+          "position": 2,
+          "title": "Imposta qualita",
+          "description": "Regola il cursore qualita TIFF — valori piu bassi producono file piu piccoli."
+        },
+        {
+          "position": 3,
+          "title": "Converti",
+          "description": "Clicca Converti — i file vengono elaborati localmente nel browser."
+        },
+        {
+          "position": 4,
+          "title": "Scarica",
+          "description": "Scarica i file TIFF — singolarmente o tutti insieme."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti",
+      "items": [
+        {
+          "question": "Cos'e il formato TIFF?",
+          "answer": "TIFF e un formato immagine professionale lossless utilizzato nella stampa, nell'editoria e nell'archiviazione."
+        },
+        {
+          "question": "I file TIFF sono piu grandi di JPG?",
+          "answer": "Si. I file TIFF sono tipicamente molto piu grandi perche utilizzano compressione lossless."
+        },
+        {
+          "question": "I miei file vengono inviati a un server?",
+          "answer": "No. La conversione avviene interamente nel browser."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Hai bisogno di altro?",
+      "description": "Contattaci — ti aiuteremo a trovare la soluzione giusta.",
+      "href": "/it/contatto",
+      "buttonText": "Scrivici"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri strumenti"
+    }
+  ]
+}

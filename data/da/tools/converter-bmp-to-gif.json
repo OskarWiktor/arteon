@@ -1,0 +1,122 @@
+{
+  "toolKey": "bmpToGif",
+  "locale": "da",
+  "metadata": {
+    "title": "BMP til GIF-konverter — BMP GIF",
+    "description": "Konverter ukomprimerede BMP-filer til let GIF.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/da/vaerktojer/bmp-til-gif-konverter"
+  },
+  "hero": {
+    "title": "BMP til GIF-konverter",
+    "description": "Konverter ukomprimerede BMP-filer til let GIF.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/bmp-til-gif-konverter",
+      "label": "BMP til GIF-konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP til GIF-konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konverter ukomprimerede BMP-filer til let GIF.",
+      "featureList": ["Konvertering til GIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"]
+    },
+    "howTo": {
+      "name": "Hvordan konverterer man BMP til GIF",
+      "description": "Konverter ukomprimerede BMP-filer til let GIF.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Upload filer",
+          "text": "Traek filer til siden eller klik for at vaelge fra disken."
+        },
+        {
+          "position": 2,
+          "name": "Indstil kvalitet",
+          "text": "Juster GIF-kvalitetsskyderen — lavere vaerdier giver mindre filer."
+        },
+        {
+          "position": 3,
+          "name": "Konverter",
+          "text": "Klik pa Konverter — filerne behandles lokalt i browseren."
+        },
+        {
+          "position": 4,
+          "name": "Download",
+          "text": "Download GIF-filerne — enkeltvis eller alle pa en gang."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Hvordan fungerer BMP til GIF-konverteren?",
+      "html": "<p>Konverter ukomprimerede BMP-filer til let GIF. Konverteringen foregaar helt i browseren — filer sendes aldrig til en server. Uden registrering, uden begraensning.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Hvordan konverterer man BMP til GIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Upload filer",
+          "description": "Traek filer til siden eller klik for at vaelge fra disken."
+        },
+        {
+          "position": 2,
+          "title": "Indstil kvalitet",
+          "description": "Juster GIF-kvalitetsskyderen — lavere vaerdier giver mindre filer."
+        },
+        {
+          "position": 3,
+          "title": "Konverter",
+          "description": "Klik pa Konverter — filerne behandles lokalt i browseren."
+        },
+        {
+          "position": 4,
+          "title": "Download",
+          "description": "Download GIF-filerne — enkeltvis eller alle pa en gang."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stillede sporgsmal",
+      "items": [
+        {
+          "question": "Hvad er GIF-format?",
+          "answer": "GIF er et bredt understoettet billedformat, der understoetter op til 256 farver. Ideelt til simpel grafik og ikoner."
+        },
+        {
+          "question": "Reducerer GIF-konvertering kvaliteten?",
+          "answer": "GIF bruger en begraenset 256-farve palette. Fotografier kan miste detaljer."
+        },
+        {
+          "question": "Sendes mine filer til en server?",
+          "answer": "Nej. Konverteringen foregaar helt i browseren."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Har du brug for mere?",
+      "description": "Kontakt os — vi hjaelper dig med at finde den rigtige losning.",
+      "href": "/da/kontakt",
+      "buttonText": "Skriv til os"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre vaerktojer"
+    }
+  ]
+}

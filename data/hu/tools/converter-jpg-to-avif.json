@@ -1,0 +1,122 @@
+{
+  "toolKey": "jpgToAvif",
+  "locale": "hu",
+  "metadata": {
+    "title": "JPG AVIF konverter — JPG AVIF",
+    "description": "JPG fotok konvertalasa modern AVIF formatumra. Akar 50%-kal jobb tomoritest mint JPG.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/hu/eszkozok/jpg-avif-konverter"
+  },
+  "hero": {
+    "title": "JPG AVIF konverter",
+    "description": "JPG fotok konvertalasa modern AVIF formatumra. Akar 50%-kal jobb tomoritest mint JPG.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/jpg-avif-konverter",
+      "label": "JPG AVIF konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "JPG AVIF konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "JPG fotok konvertalasa modern AVIF formatumra. Akar 50%-kal jobb tomoritest mint JPG.",
+      "featureList": ["Konvertalas AVIF-re", "Minoseg beallitasa (60-95%)", "Kotegelt konvertalas", "Helyi feldolgozas a bongeszoben"]
+    },
+    "howTo": {
+      "name": "JPG konvertalasa AVIF-ra",
+      "description": "JPG fotok konvertalasa modern AVIF formatumra. Akar 50%-kal jobb tomoritest mint JPG.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Fajlok feltoltese",
+          "text": "Huzd a fajlokat az oldalra vagy kattints a kivalasztasukhoz."
+        },
+        {
+          "position": 2,
+          "name": "Minoseg beallitasa",
+          "text": "Allitsd be a AVIF minoseg csuszkajat — alacsonyabb ertekek kisebb fajlokat eredmenyeznek."
+        },
+        {
+          "position": 3,
+          "name": "Konvertalas",
+          "text": "Kattints a Konvertalas gombra — a fajlok helyben, a bongeszoben kerulnek feldolgozasra."
+        },
+        {
+          "position": 4,
+          "name": "Letoltes",
+          "text": "Toltsd le a AVIF fajlokat — egyenkent vagy mindet egyszerre."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Hogyan mukodik a JPG AVIF konverter?",
+      "html": "<p>JPG fotok konvertalasa modern AVIF formatumra. Akar 50%-kal jobb tomoritest mint JPG. A konvertalas teljes egeszeben a bongeszoben tortenik — a fajlok soha nem kerulnek szerverre. Regisztracio nelkul, fajl limit nelkul.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Hogyan konvertalhato JPG AVIF-ra?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Fajlok feltoltese",
+          "description": "Huzd a fajlokat az oldalra vagy kattints a kivalasztasukhoz."
+        },
+        {
+          "position": 2,
+          "title": "Minoseg beallitasa",
+          "description": "Allitsd be a AVIF minoseg csuszkajat — alacsonyabb ertekek kisebb fajlokat eredmenyeznek."
+        },
+        {
+          "position": 3,
+          "title": "Konvertalas",
+          "description": "Kattints a Konvertalas gombra — a fajlok helyben, a bongeszoben kerulnek feldolgozasra."
+        },
+        {
+          "position": 4,
+          "title": "Letoltes",
+          "description": "Toltsd le a AVIF fajlokat — egyenkent vagy mindet egyszerre."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismetelt kerdesek",
+      "items": [
+        {
+          "question": "Mi az AVIF formatum?",
+          "answer": "Az AVIF egy modern kepformatum az AV1 kodek alapjan. Kivaloan tomorit — a fajlok akar 50%-kal kisebbek lehetnek mint JPG."
+        },
+        {
+          "question": "Mukodik az AVIF minden bongeszoben?",
+          "answer": "Az AVIF-et a Chrome, Edge es Firefox tamogatja. A Safari korlatozott AVIF tamogatassal rendelkezik."
+        },
+        {
+          "question": "A fajljaim elkuldésre kerulnek egy szerverre?",
+          "answer": "Nem. A konvertalas teljes egeszeben a bongeszoben tortenik. A fajlok soha nem hagyjak el a szamitogepet."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Tobbre van szukseged?",
+      "description": "Lepj kapcsolatba velunk — segitunk megtalalni a megfelelo megoldast.",
+      "href": "/hu/kapcsolat",
+      "buttonText": "Irj nekunk"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Mas eszkozok"
+    }
+  ]
+}

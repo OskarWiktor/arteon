@@ -28,12 +28,12 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 export const metadata = {
   title: 'Ingyenes online eszközök | Konverterek, SEO, színek, favicon',
   description:
-    '34 ingyenes online eszköz: 12 képkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
+    'Ingyenes online eszközök: 12 képkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
   alternates: getToolsIndexAlternates('hu'),
   openGraph: {
     title: 'Ingyenes online eszközök | Konverterek, SEO, színek, favicon',
     description:
-      '34 ingyenes online eszköz: 12 képkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
+      'Ingyenes online eszközök: 12 képkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
     url: toAbsoluteUrl('/hu/eszkozok'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -45,7 +45,7 @@ const schema = {
   '@type': 'CollectionPage',
   name: 'Ingyenes online eszközök — képkonverterek, SEO, színek, favicon',
   description:
-    '34 ingyenes online eszköz: 12 képkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
+    'Ingyenes online eszközök: 12 képkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
   url: toAbsoluteUrl('/hu/eszkozok'),
   inLanguage: 'hu',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },
@@ -57,7 +57,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 34,
+
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -366,6 +366,177 @@ const schema = {
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
+      {
+        '@type': 'WebApplication',
+        position: 35,
+        name: 'JPG AVIF konverter',
+        description: 'JPG fotok konvertalasa modern AVIF formatumra. Akar 50%-kal jobb tomoritest mint JPG.',
+        url: toAbsoluteUrl('/hu/eszkozok/jpg-avif-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 36,
+        name: 'PNG AVIF konverter',
+        description: 'PNG grafika konvertalasa AVIF-re atlatszosag megtartasaval. Jelentosen kisebb fajlok.',
+        url: toAbsoluteUrl('/hu/eszkozok/png-avif-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 37,
+        name: 'WebP AVIF konverter',
+        description: 'WebP fajlok konvertalasa AVIF-re. Meg jobb tomoritest modern formatumban.',
+        url: toAbsoluteUrl('/hu/eszkozok/webp-avif-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 38,
+        name: 'SVG AVIF konverter',
+        description: 'Vektor SVG grafika konvertalasa kompakt AVIF raszter formatumra.',
+        url: toAbsoluteUrl('/hu/eszkozok/svg-avif-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 39,
+        name: 'BMP AVIF konverter',
+        description: 'Tomoritetlen BMP fajlok konvertalasa ultrakompakt AVIF-re.',
+        url: toAbsoluteUrl('/hu/eszkozok/bmp-avif-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 40,
+        name: 'GIF AVIF konverter',
+        description: 'GIF elso kepkocka konvertalasa statikus AVIF keppe kivaloan tomoritest.',
+        url: toAbsoluteUrl('/hu/eszkozok/gif-avif-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 41,
+        name: 'HEIC AVIF konverter',
+        description: 'iPhone HEIC fotok konvertalasa modern AVIF formatumra.',
+        url: toAbsoluteUrl('/hu/eszkozok/heic-avif-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 42,
+        name: 'TIFF AVIF konverter',
+        description: 'TIFF fajlok konvertalasa modern AVIF-re. Hatalmas fajlmeret csokkenes.',
+        url: toAbsoluteUrl('/hu/eszkozok/tiff-avif-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 43,
+        name: 'JPG GIF konverter',
+        description: 'JPG fotok konvertalasa GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz.',
+        url: toAbsoluteUrl('/hu/eszkozok/jpg-gif-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 44,
+        name: 'PNG GIF konverter',
+        description: 'PNG grafika konvertalasa GIF-re. Idealis egyszeru ikonokhoz es grafikakhoz.',
+        url: toAbsoluteUrl('/hu/eszkozok/png-gif-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 45,
+        name: 'WebP GIF konverter',
+        description: 'WebP kepek konvertalasa GIF formatumra maximalis kompatibilitassal.',
+        url: toAbsoluteUrl('/hu/eszkozok/webp-gif-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 46,
+        name: 'SVG GIF konverter',
+        description: 'Vektor SVG grafika konvertalasa GIF raszter formatumra.',
+        url: toAbsoluteUrl('/hu/eszkozok/svg-gif-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 47,
+        name: 'BMP GIF konverter',
+        description: 'Tomoritetlen BMP fajlok konvertalasa konnyu GIF-re.',
+        url: toAbsoluteUrl('/hu/eszkozok/bmp-gif-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 48,
+        name: 'JPG TIFF konverter',
+        description: 'JPG fotok konvertalasa veszteségmentes TIFF-re. Nyomtatashoz es archivalashoz.',
+        url: toAbsoluteUrl('/hu/eszkozok/jpg-tiff-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 49,
+        name: 'PNG TIFF konverter',
+        description: 'PNG grafika konvertalasa professzionalis TIFF formatumra.',
+        url: toAbsoluteUrl('/hu/eszkozok/png-tiff-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 50,
+        name: 'WebP TIFF konverter',
+        description: 'WebP kepek konvertalasa professzionalis TIFF-re nyomtatashoz es archivalashoz.',
+        url: toAbsoluteUrl('/hu/eszkozok/webp-tiff-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 51,
+        name: 'SVG TIFF konverter',
+        description: 'Vektor SVG grafika konvertalasa kiváló minosegu TIFF raszterre.',
+        url: toAbsoluteUrl('/hu/eszkozok/svg-tiff-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 52,
+        name: 'BMP TIFF konverter',
+        description: 'BMP fajlok konvertalasa professzionalis TIFF formatumra nyomtatashoz.',
+        url: toAbsoluteUrl('/hu/eszkozok/bmp-tiff-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 53,
+        name: 'HEIC TIFF konverter',
+        description: 'iPhone HEIC fotok konvertalasa professzionalis TIFF formatumra.',
+        url: toAbsoluteUrl('/hu/eszkozok/heic-tiff-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
     ],
   },
 };
@@ -435,6 +606,162 @@ export default function ToolsIndexPage() {
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/hu/eszkozok/ingyenes-favicon-generator">
+                      Eszköz megnyitása
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <SectionSteps
+          title="Szöveg és SEO"
+          description="Eszközök a szöveghossz, a meta-címkék ellenőrzéséhez és az oldal keresési eredményekben való előnézetéhez."
+          grid="three"
+          items={[
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Meta cím és leírás ellenőrző',
+              topImageAlt: 'Meta cím és leírás ellenőrző Arteon',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-cim-es-leiras-ellenorzo-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Ellenőrizze a karakterszámot, szószámot és pixelszélességet — Google előnézettel. Kerülje el a csonkolt címeket és leírásokat a keresési eredményekben.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/meta-cim-es-leiras-ellenorzo">
+                      Eszköz megnyitása
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiArticleLine className="h-8 w-8" />,
+              title: 'Szó- és karakterszámláló',
+              topImageAlt: 'Szó- és karakterszámláló Arteon',
+              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/szo-es-karakterszamlalo-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>
+                    Ellenőrizze a szöveghosszt és értékelje, hogy megfelel-e egy kezdőlap, szolgáltatásoldal, blogbejegyzés vagy termékleírás számára. Az eszköz szavakat, karaktereket, bekezdéseket és
+                    olvasási időt számol.
+                  </p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/szo-es-karakterszamlalo">
+                      Eszköz megnyitása
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="E-mail és kommunikáció"
+          description="Eszközök a professzionális e-mail kommunikációhoz és az egységes márkaarculathoz."
+          grid="three"
+          items={[
+            {
+              icon: <RiMailLine className="h-8 w-8" />,
+              title: 'Ingyenes HTML e-mail aláírás generátor',
+              topImageAlt: 'Ingyenes HTML e-mail aláírás generátor Arteon',
+              topImageSrc: '/assets/tools/free-html-email-signature-generator/ingyenes-email-alairas-generator-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Készítsen professzionális e-mail aláírást percek alatt. Adja meg adatait, válasszon színeket, és másolja a kész HTML kódot a Gmailbe, Outlookba vagy más e-mail kliensbe.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/ingyenes-email-alairas-generator">
+                      Eszköz megnyitása
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="QR-kódok"
+          description="QR-kód generátor weboldalakhoz, névjegykártyákhoz, étlapokhoz és nyomtatott anyagokhoz."
+          grid="three"
+          items={[
+            {
+              icon: <RiQrCodeLine className="h-8 w-8" />,
+              title: 'Ingyenes QR-kód generátor',
+              topImageAlt: 'Ingyenes QR-kód generátor Arteon',
+              topImageSrc: '/assets/tools/qr-code-generator/ingyenes-qr-kod-generator-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Hozzon létre QR-kódot weboldalhoz, vCard-hoz, étterem étlapjához vagy szórólaphoz. Export PNG és SVG formátumban — regisztráció és korlátozás nélkül.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/ingyenes-qr-kod-generator">
+                      Eszköz megnyitása
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Színek és akadálymentesítés"
+          description="Eszközök a színekkel, kontraszttal és WCAG akadálymentesítéssel való munkához."
+          grid="three"
+          items={[
+            {
+              icon: <RiContrast2Line className="h-8 w-8" />,
+              title: 'Színkontraszt ellenőrző',
+              topImageAlt: 'Színkontraszt ellenőrző Arteon',
+              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/szinkontraszt-ellenorzo-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>
+                    Ellenőrizze, hogy a szöveg és a háttérszínek olvashatóak-e. Adja meg a színkódokat, tekintse meg a kontrasztarányt a <strong>WCAG</strong> szerint, és használja a{' '}
+                    <strong>Match</strong> funkciót az automatikus korrekcióhoz.
+                  </p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/szinkontraszt-ellenorzo">
+                      Eszköz megnyitása
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiPantoneLine className="h-8 w-8" />,
+              title: 'Színkinyerő képből',
+              topImageAlt: 'Színkinyerő képből Arteon',
+              topImageSrc: '/assets/tools/image-color-extractor/szinkinyero-kepbol-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Töltsön fel egy fényképet vagy logót — az eszköz kinyeri a domináns színeket. Másolja a HEX kódokat egyetlen kattintással és használja őket bárhol.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/szinkinyero-kepbol">
+                      Eszköz megnyitása
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiPaletteLine className="h-8 w-8" />,
+              title: 'Színpaletta generátor',
+              topImageAlt: 'Színpaletta generátor Arteon',
+              topImageSrc: '/assets/tools/color-palette-generator/szinpaletta-generator-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Válasszon egy alapszínt és generáljon 9 színpalettát: monokromatikus, komplementer, triádikus, pasztell, sötét és több. Másolja a HEX kódokat egyetlen kattintással.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/szinpaletta-generator">
                       Eszköz megnyitása
                     </Button>
                   </div>
@@ -595,412 +922,16 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'BMP PNG konverter',
-              topImageAlt: 'BMP PNG konverter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>BMP képek konvertálása veszteségmentes PNG-re. Minőség megőrzése, méret csökkentése.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/bmp-png-konverter">
-                      Megnyitás
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'GIF PNG konverter',
-              topImageAlt: 'GIF PNG konverter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/gif-png-konverter">
-                      Megnyitás
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'GIF JPG konverter',
-              topImageAlt: 'GIF JPG konverter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Exportálja a GIF első képkockáját kompakt JPG-ként. Kisebb fájl.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/gif-jpg-konverter">
-                      Megnyitás
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'SVG WebP konverter',
-              topImageAlt: 'SVG WebP konverter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>SVG grafika konvertalasa konnyu WebP-re. Idealis weboldalakhoz.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/svg-webp-konverter">
-                      Megnyitas
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'GIF WebP konverter',
-              topImageAlt: 'GIF WebP konverter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>GIF elso kepkockajanak exportalasa konnyu WebP-re. Kisebb fajl.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/gif-webp-konverter">
-                      Megnyitas
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'BMP WebP konverter',
-              topImageAlt: 'BMP WebP konverter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>BMP fajlok konvertalasa konnyu WebP-re. Akar 95%-os csokkentes.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/bmp-webp-konverter">
-                      Megnyitas
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'AVIF JPG konverter',
-              topImageAlt: 'AVIF JPG konverter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>AVIF fajlok konvertalasa univerzalis JPG-re. Kompatibilis mindenutt.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/avif-jpg-konverter">
-                      Megnyitas
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'AVIF PNG konverter',
-              topImageAlt: 'AVIF PNG konverter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>AVIF fajlok konvertalasa vesztesgmentes PNG-re. Teljes minoseg.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/avif-png-konverter">
-                      Megnyitas
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'AVIF WebP konverter',
-              topImageAlt: 'AVIF WebP konverter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>AVIF fajlok konvertalasa WebP-re. Szeles kompatibilitas.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/avif-webp-konverter">
-                      Megnyitas
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'HEIC JPG konverter',
-              topImageAlt: 'HEIC JPG konverter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>iPhone HEIC fotok konvertalasa univerzalis JPG-re. Regisztracio nelkul.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/heic-jpg-konverter">
-                      Megnyitas
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'HEIC PNG konverter',
-              topImageAlt: 'HEIC PNG konverter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>iPhone HEIC fotok konvertalasa vesztesgmentes PNG-re.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/heic-png-konverter">
-                      Megnyitas
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'HEIC WebP konverter',
-              topImageAlt: 'HEIC WebP konverter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>iPhone HEIC fotok konvertalasa konnyu WebP-re. Kisebb meret.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/heic-webp-konverter">
-                      Megnyitas
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'TIFF JPG konverter',
-              topImageAlt: 'TIFF JPG konverter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>TIFF fajlok konvertalasa kompakt JPG-re. Idealis szkenekhez.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/tiff-jpg-konverter">
-                      Megnyitas
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'TIFF PNG konverter',
-              topImageAlt: 'TIFF PNG konverter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>TIFF fajlok konvertalasa vesztesgmentes PNG-re.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/tiff-png-konverter">
-                      Megnyitas
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'TIFF WebP konverter',
-              topImageAlt: 'TIFF WebP konverter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>TIFF fajlok konvertalasa konnyu WebP-re. Hatalmas meretcsokkentes.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/tiff-webp-konverter">
-                      Megnyitas
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
           ]}
         />
 
         <Gap size="sm" />
-
-        <SectionSteps
-          title="Szöveg és SEO"
-          description="Eszközök a szöveghossz, a meta-címkék ellenőrzéséhez és az oldal keresési eredményekben való előnézetéhez."
-          grid="three"
-          items={[
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Meta cím és leírás ellenőrző',
-              topImageAlt: 'Meta cím és leírás ellenőrző Arteon',
-              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-cim-es-leiras-ellenorzo-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Ellenőrizze a karakterszámot, szószámot és pixelszélességet — Google előnézettel. Kerülje el a csonkolt címeket és leírásokat a keresési eredményekben.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/meta-cim-es-leiras-ellenorzo">
-                      Eszköz megnyitása
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiArticleLine className="h-8 w-8" />,
-              title: 'Szó- és karakterszámláló',
-              topImageAlt: 'Szó- és karakterszámláló Arteon',
-              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/szo-es-karakterszamlalo-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>
-                    Ellenőrizze a szöveghosszt és értékelje, hogy megfelel-e egy kezdőlap, szolgáltatásoldal, blogbejegyzés vagy termékleírás számára. Az eszköz szavakat, karaktereket, bekezdéseket és
-                    olvasási időt számol.
-                  </p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/szo-es-karakterszamlalo">
-                      Eszköz megnyitása
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-
-        <Gap size="sm" />
-
-        <SectionSteps
-          title="E-mail és kommunikáció"
-          description="Eszközök a professzionális e-mail kommunikációhoz és az egységes márkaarculathoz."
-          grid="three"
-          items={[
-            {
-              icon: <RiMailLine className="h-8 w-8" />,
-              title: 'Ingyenes HTML e-mail aláírás generátor',
-              topImageAlt: 'Ingyenes HTML e-mail aláírás generátor Arteon',
-              topImageSrc: '/assets/tools/free-html-email-signature-generator/ingyenes-email-alairas-generator-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Készítsen professzionális e-mail aláírást percek alatt. Adja meg adatait, válasszon színeket, és másolja a kész HTML kódot a Gmailbe, Outlookba vagy más e-mail kliensbe.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/ingyenes-email-alairas-generator">
-                      Eszköz megnyitása
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-
-        <Gap size="sm" />
-
-        <SectionSteps
-          title="QR-kódok"
-          description="QR-kód generátor weboldalakhoz, névjegykártyákhoz, étlapokhoz és nyomtatott anyagokhoz."
-          grid="three"
-          items={[
-            {
-              icon: <RiQrCodeLine className="h-8 w-8" />,
-              title: 'Ingyenes QR-kód generátor',
-              topImageAlt: 'Ingyenes QR-kód generátor Arteon',
-              topImageSrc: '/assets/tools/qr-code-generator/ingyenes-qr-kod-generator-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Hozzon létre QR-kódot weboldalhoz, vCard-hoz, étterem étlapjához vagy szórólaphoz. Export PNG és SVG formátumban — regisztráció és korlátozás nélkül.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/ingyenes-qr-kod-generator">
-                      Eszköz megnyitása
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-
-        <Gap size="sm" />
-
-        <SectionSteps
-          title="Színek és akadálymentesítés"
-          description="Eszközök a színekkel, kontraszttal és WCAG akadálymentesítéssel való munkához."
-          grid="three"
-          items={[
-            {
-              icon: <RiContrast2Line className="h-8 w-8" />,
-              title: 'Színkontraszt ellenőrző',
-              topImageAlt: 'Színkontraszt ellenőrző Arteon',
-              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/szinkontraszt-ellenorzo-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>
-                    Ellenőrizze, hogy a szöveg és a háttérszínek olvashatóak-e. Adja meg a színkódokat, tekintse meg a kontrasztarányt a <strong>WCAG</strong> szerint, és használja a{' '}
-                    <strong>Match</strong> funkciót az automatikus korrekcióhoz.
-                  </p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/szinkontraszt-ellenorzo">
-                      Eszköz megnyitása
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiPantoneLine className="h-8 w-8" />,
-              title: 'Színkinyerő képből',
-              topImageAlt: 'Színkinyerő képből Arteon',
-              topImageSrc: '/assets/tools/image-color-extractor/szinkinyero-kepbol-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Töltsön fel egy fényképet vagy logót — az eszköz kinyeri a domináns színeket. Másolja a HEX kódokat egyetlen kattintással és használja őket bárhol.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/szinkinyero-kepbol">
-                      Eszköz megnyitása
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiPaletteLine className="h-8 w-8" />,
-              title: 'Színpaletta generátor',
-              topImageAlt: 'Színpaletta generátor Arteon',
-              topImageSrc: '/assets/tools/color-palette-generator/szinpaletta-generator-hu.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Válasszon egy alapszínt és generáljon 9 színpalettát: monokromatikus, komplementer, triádikus, pasztell, sötét és több. Másolja a HEX kódokat egyetlen kattintással.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/szinpaletta-generator">
-                      Eszköz megnyitása
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
 
         <Gap variant="line" />
 
         <SectionInfo title="Mik azok az Arteon eszközök?">
           <p className="mb-4">
-            34 ingyenes online eszköz anyagok előkészítéséhez weboldalakhoz, közösségi médiához és nyomtatáshoz — WebP konverter, favicon generátor, szövegszámláló, színkinyerő, paletta generátor és
+            Ingyenes online eszközök anyagok előkészítéséhez weboldalakhoz, közösségi médiához és nyomtatáshoz — WebP konverter, favicon generátor, szövegszámláló, színkinyerő, paletta generátor és
             QR-kódok.
           </p>
           <p>Minden eszköz a böngészőjében fut — a fájlok soha nem kerülnek szerverre küldésre. Használja regisztráció és korlátozás nélkül.</p>

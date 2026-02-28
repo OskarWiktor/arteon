@@ -7,6 +7,8 @@ import { Suspense } from 'react';
 
 import FocusManager from '@/components/systems/FocusManager';
 import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
+import { detectLocaleFromPath } from '@/lib/i18n/detect-locale';
+import { LOCALE_CONFIG } from '@/lib/i18n/locale-config';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 import './globals.css';
@@ -97,9 +99,15 @@ const websiteJsonLd = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const { headers } = await import('next/headers');
+  const headersList = await headers();
+  const pathname = headersList.get('x-pathname') || '/';
+  const locale = detectLocaleFromPath(pathname);
+  const lang = LOCALE_CONFIG[locale].lang;
+
   return (
-    <html lang="pl" className={instrumentSans.variable}>
+    <html lang={lang} className={instrumentSans.variable}>
       <head>
         <script
           id="google-consent-default"

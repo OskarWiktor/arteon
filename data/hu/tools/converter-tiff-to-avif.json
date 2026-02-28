@@ -1,0 +1,122 @@
+{
+  "toolKey": "tiffToAvif",
+  "locale": "hu",
+  "metadata": {
+    "title": "TIFF AVIF konverter — TIFF AVIF",
+    "description": "TIFF fajlok konvertalasa modern AVIF-re. Hatalmas fajlmeret csokkenes.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/hu/eszkozok/tiff-avif-konverter"
+  },
+  "hero": {
+    "title": "TIFF AVIF konverter",
+    "description": "TIFF fajlok konvertalasa modern AVIF-re. Hatalmas fajlmeret csokkenes.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/tiff-avif-konverter",
+      "label": "TIFF AVIF konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "TIFF AVIF konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "TIFF fajlok konvertalasa modern AVIF-re. Hatalmas fajlmeret csokkenes.",
+      "featureList": ["Konvertalas AVIF-re", "Minoseg beallitasa (60-95%)", "Kotegelt konvertalas", "Helyi feldolgozas a bongeszoben"]
+    },
+    "howTo": {
+      "name": "TIFF konvertalasa AVIF-ra",
+      "description": "TIFF fajlok konvertalasa modern AVIF-re. Hatalmas fajlmeret csokkenes.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Fajlok feltoltese",
+          "text": "Huzd a fajlokat az oldalra vagy kattints a kivalasztasukhoz."
+        },
+        {
+          "position": 2,
+          "name": "Minoseg beallitasa",
+          "text": "Allitsd be a AVIF minoseg csuszkajat — alacsonyabb ertekek kisebb fajlokat eredmenyeznek."
+        },
+        {
+          "position": 3,
+          "name": "Konvertalas",
+          "text": "Kattints a Konvertalas gombra — a fajlok helyben, a bongeszoben kerulnek feldolgozasra."
+        },
+        {
+          "position": 4,
+          "name": "Letoltes",
+          "text": "Toltsd le a AVIF fajlokat — egyenkent vagy mindet egyszerre."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Hogyan mukodik a TIFF AVIF konverter?",
+      "html": "<p>TIFF fajlok konvertalasa modern AVIF-re. Hatalmas fajlmeret csokkenes. A konvertalas teljes egeszeben a bongeszoben tortenik — a fajlok soha nem kerulnek szerverre. Regisztracio nelkul, fajl limit nelkul.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Hogyan konvertalhato TIFF AVIF-ra?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Fajlok feltoltese",
+          "description": "Huzd a fajlokat az oldalra vagy kattints a kivalasztasukhoz."
+        },
+        {
+          "position": 2,
+          "title": "Minoseg beallitasa",
+          "description": "Allitsd be a AVIF minoseg csuszkajat — alacsonyabb ertekek kisebb fajlokat eredmenyeznek."
+        },
+        {
+          "position": 3,
+          "title": "Konvertalas",
+          "description": "Kattints a Konvertalas gombra — a fajlok helyben, a bongeszoben kerulnek feldolgozasra."
+        },
+        {
+          "position": 4,
+          "title": "Letoltes",
+          "description": "Toltsd le a AVIF fajlokat — egyenkent vagy mindet egyszerre."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismetelt kerdesek",
+      "items": [
+        {
+          "question": "Mi az AVIF formatum?",
+          "answer": "Az AVIF egy modern kepformatum az AV1 kodek alapjan. Kivaloan tomorit — a fajlok akar 50%-kal kisebbek lehetnek mint JPG."
+        },
+        {
+          "question": "Mukodik az AVIF minden bongeszoben?",
+          "answer": "Az AVIF-et a Chrome, Edge es Firefox tamogatja. A Safari korlatozott AVIF tamogatassal rendelkezik."
+        },
+        {
+          "question": "A fajljaim elkuldésre kerulnek egy szerverre?",
+          "answer": "Nem. A konvertalas teljes egeszeben a bongeszoben tortenik. A fajlok soha nem hagyjak el a szamitogepet."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Tobbre van szukseged?",
+      "description": "Lepj kapcsolatba velunk — segitunk megtalalni a megfelelo megoldast.",
+      "href": "/hu/kapcsolat",
+      "buttonText": "Irj nekunk"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Mas eszkozok"
+    }
+  ]
+}

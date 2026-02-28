@@ -1,0 +1,122 @@
+{
+  "toolKey": "bmpToAvif",
+  "locale": "de",
+  "metadata": {
+    "title": "BMP zu AVIF Konverter — BMP AVIF",
+    "description": "Unkomprimierte BMP-Dateien in ultrakompaktes AVIF umwandeln.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/de/werkzeuge/bmp-zu-avif-konverter"
+  },
+  "hero": {
+    "title": "BMP zu AVIF Konverter",
+    "description": "Unkomprimierte BMP-Dateien in ultrakompaktes AVIF umwandeln.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/bmp-zu-avif-konverter",
+      "label": "BMP zu AVIF Konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP zu AVIF Konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Unkomprimierte BMP-Dateien in ultrakompaktes AVIF umwandeln.",
+      "featureList": ["Konvertierung zu AVIF", "Qualitatsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"]
+    },
+    "howTo": {
+      "name": "BMP zu AVIF konvertieren",
+      "description": "Unkomprimierte BMP-Dateien in ultrakompaktes AVIF umwandeln.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Dateien hochladen",
+          "text": "Dateien auf die Seite ziehen oder klicken, um sie auszuwahlen."
+        },
+        {
+          "position": 2,
+          "name": "Qualitat einstellen",
+          "text": "Passen Sie den AVIF-Qualitatsregler an — niedrigere Werte ergeben kleinere Dateien."
+        },
+        {
+          "position": 3,
+          "name": "Konvertieren",
+          "text": "Klicken Sie auf Konvertieren — Dateien werden lokal im Browser verarbeitet."
+        },
+        {
+          "position": 4,
+          "name": "Herunterladen",
+          "text": "Laden Sie die AVIF-Dateien herunter — einzeln oder alle auf einmal."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Wie funktioniert der BMP zu AVIF Konverter?",
+      "html": "<p>Unkomprimierte BMP-Dateien in ultrakompaktes AVIF umwandeln. Die Konvertierung erfolgt vollstandig im Browser — Dateien werden nie an einen Server gesendet. Ohne Registrierung, ohne Dateilimit.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Wie konvertiert man BMP zu AVIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Dateien hochladen",
+          "description": "Dateien auf die Seite ziehen oder klicken, um sie auszuwahlen."
+        },
+        {
+          "position": 2,
+          "title": "Qualitat einstellen",
+          "description": "Passen Sie den AVIF-Qualitatsregler an — niedrigere Werte ergeben kleinere Dateien."
+        },
+        {
+          "position": 3,
+          "title": "Konvertieren",
+          "description": "Klicken Sie auf Konvertieren — Dateien werden lokal im Browser verarbeitet."
+        },
+        {
+          "position": 4,
+          "title": "Herunterladen",
+          "description": "Laden Sie die AVIF-Dateien herunter — einzeln oder alle auf einmal."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Haufig gestellte Fragen",
+      "items": [
+        {
+          "question": "Was ist das AVIF-Format?",
+          "answer": "AVIF ist ein modernes Bildformat basierend auf dem AV1-Codec. Es bietet hervorragende Kompression — Dateien konnen bis zu 50% kleiner als JPG sein bei vergleichbarer Qualitat."
+        },
+        {
+          "question": "Funktioniert AVIF in allen Browsern?",
+          "answer": "AVIF wird von Chrome, Edge und Firefox unterstutzt. Safari hat eingeschrankte AVIF-Unterstutzung."
+        },
+        {
+          "question": "Werden meine Dateien an einen Server gesendet?",
+          "answer": "Nein. Die Konvertierung erfolgt vollstandig im Browser. Dateien verlassen nie Ihren Computer."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Brauchen Sie mehr?",
+      "description": "Kontaktieren Sie uns — wir helfen Ihnen, die richtige Losung zu finden.",
+      "href": "/de/kontakt",
+      "buttonText": "Schreiben Sie uns"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere Werkzeuge"
+    }
+  ]
+}

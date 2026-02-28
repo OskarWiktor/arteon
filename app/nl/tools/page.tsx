@@ -28,12 +28,12 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 export const metadata = {
   title: 'Gratis online tools | Converters, SEO, kleuren, favicon',
   description:
-    '34 gratis online tools: 12 afbeeldingsconverters (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, afbeeldingseditor, tekst-teller, kleurpaletten en QR-codes. Zonder registratie.',
+    'Gratis online tools: 12 afbeeldingsconverters (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, afbeeldingseditor, tekst-teller, kleurpaletten en QR-codes. Zonder registratie.',
   alternates: getToolsIndexAlternates('nl'),
   openGraph: {
     title: 'Gratis online tools | Converters, SEO, kleuren, favicon',
     description:
-      '34 gratis online tools: 12 afbeeldingsconverters (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, afbeeldingseditor, tekst-teller, kleurpaletten en QR-codes. Zonder registratie.',
+      'Gratis online tools: 12 afbeeldingsconverters (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, afbeeldingseditor, tekst-teller, kleurpaletten en QR-codes. Zonder registratie.',
     url: toAbsoluteUrl('/nl/tools'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -45,7 +45,7 @@ const schema = {
   '@type': 'CollectionPage',
   name: 'Gratis online tools — afbeeldingsconverters, SEO, kleuren, favicon',
   description:
-    '34 gratis online tools: 12 afbeeldingsconverters (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, afbeeldingseditor, tekst-teller, kleurpaletten en QR-codes. Zonder registratie.',
+    'Gratis online tools: 12 afbeeldingsconverters (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, afbeeldingseditor, tekst-teller, kleurpaletten en QR-codes. Zonder registratie.',
   url: toAbsoluteUrl('/nl/tools'),
   inLanguage: 'nl',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },
@@ -57,7 +57,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 34,
+
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -365,6 +365,177 @@ const schema = {
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
+      {
+        '@type': 'WebApplication',
+        position: 35,
+        name: 'PNG naar AVIF converter',
+        description: 'Converteer PNG-afbeeldingen naar AVIF met transparantie-ondersteuning. Aanzienlijk kleinere bestanden.',
+        url: toAbsoluteUrl('/nl/tools/png-naar-avif-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 36,
+        name: 'WebP naar AVIF converter',
+        description: 'Converteer WebP-bestanden naar AVIF. Nog betere compressie in een modern formaat.',
+        url: toAbsoluteUrl('/nl/tools/webp-naar-avif-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 37,
+        name: 'SVG naar AVIF converter',
+        description: 'Converteer vector SVG-afbeeldingen naar compact AVIF-rasterformaat.',
+        url: toAbsoluteUrl('/nl/tools/svg-naar-avif-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 38,
+        name: 'BMP naar AVIF converter',
+        description: 'Converteer ongecomprimeerde BMP-bestanden naar ultracompact AVIF.',
+        url: toAbsoluteUrl('/nl/tools/bmp-naar-avif-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 39,
+        name: 'GIF naar AVIF converter',
+        description: 'Converteer het eerste GIF-frame naar statisch AVIF-beeld met uitstekende compressie.',
+        url: toAbsoluteUrl('/nl/tools/gif-naar-avif-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 40,
+        name: 'TIFF naar AVIF converter',
+        description: 'Converteer TIFF-bestanden naar modern AVIF. Enorme bestandsgrootte-reductie.',
+        url: toAbsoluteUrl('/nl/tools/tiff-naar-avif-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 41,
+        name: 'PNG naar GIF converter',
+        description: 'Converteer PNG-afbeeldingen naar GIF. Ideaal voor eenvoudige iconen en afbeeldingen.',
+        url: toAbsoluteUrl('/nl/tools/png-naar-gif-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 42,
+        name: 'WebP naar GIF converter',
+        description: 'Converteer WebP-afbeeldingen naar GIF-formaat voor maximale compatibiliteit.',
+        url: toAbsoluteUrl('/nl/tools/webp-naar-gif-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 43,
+        name: 'SVG naar GIF converter',
+        description: 'Converteer vector SVG-afbeeldingen naar GIF-rasterformaat.',
+        url: toAbsoluteUrl('/nl/tools/svg-naar-gif-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 44,
+        name: 'BMP naar GIF converter',
+        description: 'Converteer ongecomprimeerde BMP-bestanden naar lichtgewicht GIF.',
+        url: toAbsoluteUrl('/nl/tools/bmp-naar-gif-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 45,
+        name: 'PNG naar TIFF converter',
+        description: 'Converteer PNG-afbeeldingen naar professioneel TIFF-formaat.',
+        url: toAbsoluteUrl('/nl/tools/png-naar-tiff-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 46,
+        name: 'WebP naar TIFF converter',
+        description: 'Converteer WebP-afbeeldingen naar professioneel TIFF voor afdrukken en archivering.',
+        url: toAbsoluteUrl('/nl/tools/webp-naar-tiff-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 47,
+        name: 'SVG naar TIFF converter',
+        description: 'Converteer vector SVG-afbeeldingen naar hoogwaardig TIFF-raster.',
+        url: toAbsoluteUrl('/nl/tools/svg-naar-tiff-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 48,
+        name: 'BMP naar TIFF converter',
+        description: 'Converteer BMP-bestanden naar professioneel TIFF-formaat voor afdrukken.',
+        url: toAbsoluteUrl('/nl/tools/bmp-naar-tiff-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 49,
+        name: 'JPG naar AVIF converter',
+        description: "Converteer JPG-foto's naar modern AVIF. Tot 50% betere compressie dan JPG met behoud van kwaliteit.",
+        url: toAbsoluteUrl('/nl/tools/jpg-naar-avif-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 50,
+        name: 'HEIC naar AVIF converter',
+        description: "Converteer iPhone HEIC-foto's naar modern AVIF-formaat.",
+        url: toAbsoluteUrl('/nl/tools/heic-naar-avif-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 51,
+        name: 'JPG naar GIF converter',
+        description: "Converteer JPG-foto's naar GIF-formaat. Perfect voor eenvoudige afbeeldingen en iconen.",
+        url: toAbsoluteUrl('/nl/tools/jpg-naar-gif-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 52,
+        name: 'JPG naar TIFF converter',
+        description: "Converteer JPG-foto's naar lossless TIFF. Voor afdrukken en archivering.",
+        url: toAbsoluteUrl('/nl/tools/jpg-naar-tiff-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 53,
+        name: 'HEIC naar TIFF converter',
+        description: "Converteer iPhone HEIC-foto's naar professioneel TIFF-formaat.",
+        url: toAbsoluteUrl('/nl/tools/heic-naar-tiff-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
     ],
   },
 };
@@ -431,6 +602,164 @@ export default function ToolsIndexPage() {
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/nl/tools/gratis-favicon-generator">
+                      Tool openen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <SectionSteps
+          title="Tekst & SEO"
+          description="Tools voor het controleren van tekstlengte, meta-tags en het bekijken van een voorbeeld van uw pagina in zoekresultaten."
+          grid="three"
+          items={[
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Meta-titel & beschrijving checker',
+              topImageAlt: 'Meta-titel en beschrijving checker Arteon',
+              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-beschrijving-checker-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Controleer het aantal tekens, woorden en pixelbreedte — met Google-voorbeeld. Vermijd afgekapte titels en beschrijvingen in zoekresultaten.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/meta-titel-beschrijving-checker">
+                      Tool openen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiArticleLine className="h-8 w-8" />,
+              title: 'Woorden- & tekenteller',
+              topImageAlt: 'Woorden- en tekenteller Arteon',
+              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/woorden-en-tekenteller-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>
+                    Controleer de tekstlengte en beoordeel of deze geschikt is voor een homepage, servicepagina, blogartikel of productbeschrijving. De tool telt woorden, tekens, alinea&apos;s en
+                    leestijd.
+                  </p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/woorden-en-tekenteller">
+                      Tool openen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="E-mail & communicatie"
+          description="Tools voor professionele e-mailcommunicatie en een consistent merkimago."
+          grid="three"
+          items={[
+            {
+              icon: <RiMailLine className="h-8 w-8" />,
+              title: 'Gratis HTML-e-mailhandtekening generator',
+              topImageAlt: 'Gratis HTML-e-mailhandtekening generator Arteon',
+              topImageSrc: '/assets/tools/free-html-email-signature-generator/gratis-e-mailhandtekening-generator-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>
+                    Maak in enkele minuten een professionele e-mailhandtekening. Voer uw gegevens in, kies kleuren en kopieer de kant-en-klare HTML-code naar Gmail, Outlook of een andere e-mailclient.
+                  </p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/gratis-e-mailhandtekening-generator">
+                      Tool openen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="QR-codes"
+          description="QR-code generator voor websites, visitekaartjes, menu's en drukwerk."
+          grid="three"
+          items={[
+            {
+              icon: <RiQrCodeLine className="h-8 w-8" />,
+              title: 'Gratis QR-code generator',
+              topImageAlt: 'Gratis QR-code generator Arteon',
+              topImageSrc: '/assets/tools/qr-code-generator/gratis-qr-code-generator-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Maak een QR-code voor een website, vCard, restaurantmenu of flyer. Export naar PNG en SVG — zonder registratie, zonder limieten.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/gratis-qr-code-generator">
+                      Tool openen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Kleuren & toegankelijkheid"
+          description="Tools voor het werken met kleuren, contrast en WCAG-toegankelijkheid."
+          grid="three"
+          items={[
+            {
+              icon: <RiContrast2Line className="h-8 w-8" />,
+              title: 'Kleurcontrast checker',
+              topImageAlt: 'Kleurcontrast checker Arteon',
+              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/kleurcontrast-checker-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>
+                    Controleer of uw tekst- en achtergrondkleuren leesbaar zijn. Voer kleurcodes in, bekijk de contrastverhouding volgens <strong>WCAG</strong> en gebruik de <strong>Match</strong>
+                    -functie voor automatische correctie.
+                  </p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/kleurcontrast-checker">
+                      Tool openen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiPantoneLine className="h-8 w-8" />,
+              title: 'Kleurextractor uit afbeelding',
+              topImageAlt: 'Kleurextractor uit afbeelding Arteon',
+              topImageSrc: '/assets/tools/image-color-extractor/kleurextractor-uit-afbeelding-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Upload een foto of logo — de tool extraheert de dominante kleuren. Kopieer HEX-codes met één klik en gebruik ze overal.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/kleurextractor-uit-afbeelding">
+                      Tool openen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiPaletteLine className="h-8 w-8" />,
+              title: 'Kleurpalettengenerator',
+              topImageAlt: 'Kleurpalettengenerator Arteon',
+              topImageSrc: '/assets/tools/color-palette-generator/kleurpalettengenerator-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Kies een basiskleur en genereer 9 kleurpaletten: monochromatisch, complementair, triadisch, pastel, donker en meer. Kopieer HEX-codes met één klik.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/kleurpalettengenerator">
                       Tool openen
                     </Button>
                   </div>
@@ -591,414 +920,16 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'BMP naar PNG converter',
-              topImageAlt: 'BMP naar PNG converter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converteer BMP-afbeeldingen naar verliesvrij PNG. Kwaliteit behouden, kleiner bestand.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/bmp-naar-png-converter">
-                      Open tool
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'GIF naar PNG converter',
-              topImageAlt: 'GIF naar PNG converter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Exporteer het eerste frame van een GIF als statisch PNG. Zonder kwaliteitsverlies.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/gif-naar-png-converter">
-                      Open tool
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'GIF naar JPG converter',
-              topImageAlt: 'GIF naar JPG converter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Exporteer het eerste frame van een GIF als compact JPG. Kleiner bestand.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/gif-naar-jpg-converter">
-                      Open tool
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'SVG naar WebP converter',
-              topImageAlt: 'SVG naar WebP converter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converteer SVG-afbeeldingen naar lichtgewicht WebP. Ideaal voor websites.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/svg-naar-webp-converter">
-                      Open tool
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'GIF naar WebP converter',
-              topImageAlt: 'GIF naar WebP converter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Exporteer het eerste GIF-frame als lichtgewicht WebP. Kleiner bestand.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/gif-naar-webp-converter">
-                      Open tool
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'BMP naar WebP converter',
-              topImageAlt: 'BMP naar WebP converter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converteer BMP-bestanden naar lichtgewicht WebP. Tot 95% kleiner.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/bmp-naar-webp-converter">
-                      Open tool
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'AVIF naar JPG converter',
-              topImageAlt: 'AVIF naar JPG converter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converteer AVIF-bestanden naar universeel JPG. Compatibel overal.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/avif-naar-jpg-converter">
-                      Open tool
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'AVIF naar PNG converter',
-              topImageAlt: 'AVIF naar PNG converter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converteer AVIF-bestanden naar verliesvrij PNG. Volledige kwaliteit.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/avif-naar-png-converter">
-                      Open tool
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'AVIF naar WebP converter',
-              topImageAlt: 'AVIF naar WebP converter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converteer AVIF-bestanden naar WebP. Brede compatibiliteit.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/avif-naar-webp-converter">
-                      Open tool
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'HEIC naar JPG converter',
-              topImageAlt: 'HEIC naar JPG converter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converteer iPhone HEIC-fotos naar universeel JPG. Zonder registratie.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/heic-naar-jpg-converter">
-                      Open tool
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'HEIC naar PNG converter',
-              topImageAlt: 'HEIC naar PNG converter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converteer iPhone HEIC-fotos naar verliesvrij PNG.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/heic-naar-png-converter">
-                      Open tool
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'HEIC naar WebP converter',
-              topImageAlt: 'HEIC naar WebP converter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converteer iPhone HEIC-fotos naar lichtgewicht WebP.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/heic-naar-webp-converter">
-                      Open tool
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'TIFF naar JPG converter',
-              topImageAlt: 'TIFF naar JPG converter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converteer TIFF-bestanden naar compact JPG. Ideaal voor scans.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/tiff-naar-jpg-converter">
-                      Open tool
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'TIFF naar PNG converter',
-              topImageAlt: 'TIFF naar PNG converter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converteer TIFF-bestanden naar verliesvrij PNG.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/tiff-naar-png-converter">
-                      Open tool
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'TIFF naar WebP converter',
-              topImageAlt: 'TIFF naar WebP converter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Converteer TIFF-bestanden naar lichtgewicht WebP. Enorme reductie.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/tiff-naar-webp-converter">
-                      Open tool
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
           ]}
         />
 
         <Gap size="sm" />
-
-        <SectionSteps
-          title="Tekst & SEO"
-          description="Tools voor het controleren van tekstlengte, meta-tags en het bekijken van een voorbeeld van uw pagina in zoekresultaten."
-          grid="three"
-          items={[
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Meta-titel & beschrijving checker',
-              topImageAlt: 'Meta-titel en beschrijving checker Arteon',
-              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-beschrijving-checker-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Controleer het aantal tekens, woorden en pixelbreedte — met Google-voorbeeld. Vermijd afgekapte titels en beschrijvingen in zoekresultaten.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/meta-titel-beschrijving-checker">
-                      Tool openen
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiArticleLine className="h-8 w-8" />,
-              title: 'Woorden- & tekenteller',
-              topImageAlt: 'Woorden- en tekenteller Arteon',
-              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/woorden-en-tekenteller-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>
-                    Controleer de tekstlengte en beoordeel of deze geschikt is voor een homepage, servicepagina, blogartikel of productbeschrijving. De tool telt woorden, tekens, alinea&apos;s en
-                    leestijd.
-                  </p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/woorden-en-tekenteller">
-                      Tool openen
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-
-        <Gap size="sm" />
-
-        <SectionSteps
-          title="E-mail & communicatie"
-          description="Tools voor professionele e-mailcommunicatie en een consistent merkimago."
-          grid="three"
-          items={[
-            {
-              icon: <RiMailLine className="h-8 w-8" />,
-              title: 'Gratis HTML-e-mailhandtekening generator',
-              topImageAlt: 'Gratis HTML-e-mailhandtekening generator Arteon',
-              topImageSrc: '/assets/tools/free-html-email-signature-generator/gratis-e-mailhandtekening-generator-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>
-                    Maak in enkele minuten een professionele e-mailhandtekening. Voer uw gegevens in, kies kleuren en kopieer de kant-en-klare HTML-code naar Gmail, Outlook of een andere e-mailclient.
-                  </p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/gratis-e-mailhandtekening-generator">
-                      Tool openen
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-
-        <Gap size="sm" />
-
-        <SectionSteps
-          title="QR-codes"
-          description="QR-code generator voor websites, visitekaartjes, menu's en drukwerk."
-          grid="three"
-          items={[
-            {
-              icon: <RiQrCodeLine className="h-8 w-8" />,
-              title: 'Gratis QR-code generator',
-              topImageAlt: 'Gratis QR-code generator Arteon',
-              topImageSrc: '/assets/tools/qr-code-generator/gratis-qr-code-generator-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Maak een QR-code voor een website, vCard, restaurantmenu of flyer. Export naar PNG en SVG — zonder registratie, zonder limieten.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/gratis-qr-code-generator">
-                      Tool openen
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-
-        <Gap size="sm" />
-
-        <SectionSteps
-          title="Kleuren & toegankelijkheid"
-          description="Tools voor het werken met kleuren, contrast en WCAG-toegankelijkheid."
-          grid="three"
-          items={[
-            {
-              icon: <RiContrast2Line className="h-8 w-8" />,
-              title: 'Kleurcontrast checker',
-              topImageAlt: 'Kleurcontrast checker Arteon',
-              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/kleurcontrast-checker-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>
-                    Controleer of uw tekst- en achtergrondkleuren leesbaar zijn. Voer kleurcodes in, bekijk de contrastverhouding volgens <strong>WCAG</strong> en gebruik de <strong>Match</strong>
-                    -functie voor automatische correctie.
-                  </p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/kleurcontrast-checker">
-                      Tool openen
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiPantoneLine className="h-8 w-8" />,
-              title: 'Kleurextractor uit afbeelding',
-              topImageAlt: 'Kleurextractor uit afbeelding Arteon',
-              topImageSrc: '/assets/tools/image-color-extractor/kleurextractor-uit-afbeelding-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Upload een foto of logo — de tool extraheert de dominante kleuren. Kopieer HEX-codes met één klik en gebruik ze overal.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/kleurextractor-uit-afbeelding">
-                      Tool openen
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiPaletteLine className="h-8 w-8" />,
-              title: 'Kleurpalettengenerator',
-              topImageAlt: 'Kleurpalettengenerator Arteon',
-              topImageSrc: '/assets/tools/color-palette-generator/kleurpalettengenerator-nl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Kies een basiskleur en genereer 9 kleurpaletten: monochromatisch, complementair, triadisch, pastel, donker en meer. Kopieer HEX-codes met één klik.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/nl/tools/kleurpalettengenerator">
-                      Tool openen
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
 
         <Gap variant="line" />
 
         <SectionInfo title="Wat zijn Arteon-tools?">
           <p className="mb-4">
-            34 gratis online tools voor het voorbereiden van materialen voor websites, social media en drukwerk — WebP-converter, favicon-generator, tekstteller, kleurextractor, palettengenerator en
+            Gratis online tools voor het voorbereiden van materialen voor websites, social media en drukwerk — WebP-converter, favicon-generator, tekstteller, kleurextractor, palettengenerator en
             QR-codes.
           </p>
           <p>Alle tools draaien in uw browser — bestanden worden nooit naar een server gestuurd. Gebruik ze zonder registratie en zonder limieten.</p>

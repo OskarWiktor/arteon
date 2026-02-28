@@ -1,7 +1,7 @@
 {
   "slug": "tietoa-meista",
   "metadata": {
-    "title": "Tietoa Arteonista – 10 ilmaista verkkotyökalua webille",
+    "title": "Tietoa Arteonista – Ilmaista verkkotyökalua webille",
     "description": "Arteon on luova toimisto, joka kehittää ilmaisia selainpohjaisia työkaluja: WebP-muunnin, favicon-generaattori, värikontrastin tarkistus, QR-koodigeneraattori."
   },
   "hero": {
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Kokeile työkalujamme",
-    "description": "10 ilmaista verkkotyökalua – ilman rekisteröitymistä, ilman rajoituksia, ilman tiedostojen lähetystä palvelimille",
+    "description": "Ilmaista verkkotyökalua – ilman rekisteröitymistä, ilman rajoituksia, ilman tiedostojen lähetystä palvelimille",
     "btnOne": "Siirry työkaluihin",
     "btnTwo": "Ota yhteyttä"
   }

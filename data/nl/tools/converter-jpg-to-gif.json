@@ -1,0 +1,122 @@
+{
+  "toolKey": "jpgToGif",
+  "locale": "nl",
+  "metadata": {
+    "title": "JPG naar GIF converter — JPG GIF",
+    "description": "Converteer JPG-foto\\'s naar GIF-formaat. Perfect voor eenvoudige afbeeldingen en iconen.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/nl/tools/jpg-naar-gif-converter"
+  },
+  "hero": {
+    "title": "JPG naar GIF converter",
+    "description": "Converteer JPG-foto\\'s naar GIF-formaat. Perfect voor eenvoudige afbeeldingen en iconen.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/jpg-naar-gif-converter",
+      "label": "JPG naar GIF converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "JPG naar GIF converter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converteer JPG-foto\\'s naar GIF-formaat. Perfect voor eenvoudige afbeeldingen en iconen.",
+      "featureList": ["Conversie naar GIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"]
+    },
+    "howTo": {
+      "name": "JPG naar GIF converteren",
+      "description": "Converteer JPG-foto\\'s naar GIF-formaat. Perfect voor eenvoudige afbeeldingen en iconen.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Bestanden uploaden",
+          "text": "Sleep bestanden naar de pagina of klik om ze te selecteren."
+        },
+        {
+          "position": 2,
+          "name": "Kwaliteit instellen",
+          "text": "Pas de GIF-kwaliteitsschuifregelaar aan — lagere waarden geven kleinere bestanden."
+        },
+        {
+          "position": 3,
+          "name": "Converteren",
+          "text": "Klik op Converteren — bestanden worden lokaal in de browser verwerkt."
+        },
+        {
+          "position": 4,
+          "name": "Downloaden",
+          "text": "Download de GIF-bestanden — individueel of allemaal tegelijk."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Hoe werkt de JPG naar GIF converter?",
+      "html": "<p>Converteer JPG-foto\\'s naar GIF-formaat. Perfect voor eenvoudige afbeeldingen en iconen. De conversie vindt volledig plaats in de browser — bestanden worden nooit naar een server gestuurd. Zonder registratie, zonder limiet.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Hoe converteer je JPG naar GIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Bestanden uploaden",
+          "description": "Sleep bestanden naar de pagina of klik om ze te selecteren."
+        },
+        {
+          "position": 2,
+          "title": "Kwaliteit instellen",
+          "description": "Pas de GIF-kwaliteitsschuifregelaar aan — lagere waarden geven kleinere bestanden."
+        },
+        {
+          "position": 3,
+          "title": "Converteren",
+          "description": "Klik op Converteren — bestanden worden lokaal in de browser verwerkt."
+        },
+        {
+          "position": 4,
+          "title": "Downloaden",
+          "description": "Download de GIF-bestanden — individueel of allemaal tegelijk."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen",
+      "items": [
+        {
+          "question": "Wat is het GIF-formaat?",
+          "answer": "GIF is een breed ondersteund afbeeldingsformaat dat tot 256 kleuren ondersteunt. Ideaal voor eenvoudige afbeeldingen en iconen."
+        },
+        {
+          "question": "Vermindert GIF-conversie de kwaliteit?",
+          "answer": "GIF gebruikt een beperkt palet van 256 kleuren. Foto's kunnen detail verliezen."
+        },
+        {
+          "question": "Worden mijn bestanden naar een server gestuurd?",
+          "answer": "Nee. De conversie vindt volledig plaats in de browser."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Meer nodig?",
+      "description": "Neem contact op — we helpen u de juiste oplossing te vinden.",
+      "href": "/nl/contact",
+      "buttonText": "Schrijf ons"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere tools"
+    }
+  ]
+}

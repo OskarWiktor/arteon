@@ -1,0 +1,122 @@
+{
+  "toolKey": "jpgToTiff",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník JPG na TIFF — JPG TIFF",
+    "description": "Prevedte fotky JPG na bezztratovy TIFF. Pro tisk a archivaci.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-jpg-na-tiff"
+  },
+  "hero": {
+    "title": "Převodník JPG na TIFF",
+    "description": "Prevedte fotky JPG na bezztratovy TIFF. Pro tisk a archivaci.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-jpg-na-tiff",
+      "label": "Převodník JPG na TIFF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník JPG na TIFF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Prevedte fotky JPG na bezztratovy TIFF. Pro tisk a archivaci.",
+      "featureList": ["Konverze do TIFF", "Nastaveni kvality (60-95%)", "Davkova konverze", "Lokalni zpracovani v prohlizeci"]
+    },
+    "howTo": {
+      "name": "Jak prevest JPG na TIFF",
+      "description": "Prevedte fotky JPG na bezztratovy TIFF. Pro tisk a archivaci.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Nahrajte soubory",
+          "text": "Pretahnete soubory na stranku nebo kliknete pro vyber z disku."
+        },
+        {
+          "position": 2,
+          "name": "Nastavte kvalitu",
+          "text": "Upravte posuvnik kvality TIFF — nizsi hodnoty vytvareji mensi soubory."
+        },
+        {
+          "position": 3,
+          "name": "Konvertujte",
+          "text": "Kliknete na Konvertovat — soubory se zpracuji lokalne v prohlizeci."
+        },
+        {
+          "position": 4,
+          "name": "Stahnete",
+          "text": "Stahnete hotove soubory TIFF — jednotlive nebo vsechny naraz."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Jak funguje prevodnik JPG na TIFF?",
+      "html": "<p>Prevedte fotky JPG na bezztratovy TIFF. Pro tisk a archivaci. Konverze probiha cele v prohlizeci — soubory se nikdy neodesilaji na server. Bez registrace, bez limitu souboru.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Jak prevest JPG na TIFF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Nahrajte soubory",
+          "description": "Pretahnete soubory na stranku nebo kliknete pro vyber z disku."
+        },
+        {
+          "position": 2,
+          "title": "Nastavte kvalitu",
+          "description": "Upravte posuvnik kvality TIFF — nizsi hodnoty vytvareji mensi soubory."
+        },
+        {
+          "position": 3,
+          "title": "Konvertujte",
+          "description": "Kliknete na Konvertovat — soubory se zpracuji lokalne v prohlizeci."
+        },
+        {
+          "position": 4,
+          "title": "Stahnete",
+          "description": "Stahnete hotove soubory TIFF — jednotlive nebo vsechny naraz."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Nejcastejsi dotazy",
+      "items": [
+        {
+          "question": "Co je format TIFF?",
+          "answer": "TIFF je profesionalni bezztratovy obrazovy format pouzivany v tisku, vydavatelstvi a archivaci."
+        },
+        {
+          "question": "Jsou soubory TIFF vetsi nez JPG?",
+          "answer": "Ano. Soubory TIFF jsou obvykle mnohem vetsi, protoze pouzivaji bezztratovou kompresi."
+        },
+        {
+          "question": "Jsou moje soubory odeslany na server?",
+          "answer": "Ne. Konverze probiha cele v prohlizeci."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Potrebujete vic?",
+      "description": "Kontaktujte nas — pomuzeme vam najit spravne reseni.",
+      "href": "/cs/kontakt",
+      "buttonText": "Napiste nam"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Dalsi nastroje"
+    }
+  ]
+}

@@ -151,6 +151,24 @@
     "errorGeneration": "Nepodařilo se vygenerovat soubor {{format}}.",
     "errorTooLarge": "Soubor je příliš velký (max 100 MB).",
     "errorWrongFormat": "Přidejte soubory {{format}} — ostatní formáty jsou přeskočeny.",
-    "errorNoFiles": "Přidejte alespoň jeden soubor {{format}}."
+    "errorNoFiles": "Přidejte alespoň jeden soubor {{format}}.",
+    "errorAvifNotSupported": "Váš prohlížeč nepodporuje kódování AVIF. Použijte Chrome, Edge nebo Firefox."
+  },
+  "errorPages": {
+    "notFound": {
+      "title": "Stránka nenalezena",
+      "code": "404",
+      "description": "Stránka, kterou hledáte, neexistuje. Kliknutím na tlačítko se vrátíte na hlavní stránku.",
+      "backHome": "Zpět na hlavní stránku"
+    },
+    "error": {
+      "title": "Něco se pokazilo",
+      "description": "Došlo k neočekávané chybě. Zkuste stránku obnovit nebo nás kontaktujte, pokud problém přetrvává.",
+      "tryAgain": "Zkusit znovu",
+      "backHome": "Zpět na hlavní stránku",
+      "contact": "Kontaktujte nás",
+      "contactHref": "/cs/kontakt",
+      "errorCode": "Kód chyby"
+    }
   }
 }

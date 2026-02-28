@@ -1,0 +1,122 @@
+{
+  "toolKey": "webpToAvif",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore WebP in AVIF — WebP AVIF",
+    "description": "Converti file WebP in AVIF. Compressione ancora migliore in un formato moderno.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/it/strumenti/convertitore-webp-in-avif"
+  },
+  "hero": {
+    "title": "Convertitore WebP in AVIF",
+    "description": "Converti file WebP in AVIF. Compressione ancora migliore in un formato moderno.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-webp-in-avif",
+      "label": "Convertitore WebP in AVIF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore WebP in AVIF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converti file WebP in AVIF. Compressione ancora migliore in un formato moderno.",
+      "featureList": ["Conversione in AVIF", "Regolazione qualita (60-95%)", "Conversione in batch", "Elaborazione locale nel browser"]
+    },
+    "howTo": {
+      "name": "Come convertire WebP in AVIF",
+      "description": "Converti file WebP in AVIF. Compressione ancora migliore in un formato moderno.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Carica file",
+          "text": "Trascina i file sulla pagina o clicca per selezionarli."
+        },
+        {
+          "position": 2,
+          "name": "Imposta qualita",
+          "text": "Regola il cursore qualita AVIF — valori piu bassi producono file piu piccoli."
+        },
+        {
+          "position": 3,
+          "name": "Converti",
+          "text": "Clicca Converti — i file vengono elaborati localmente nel browser."
+        },
+        {
+          "position": 4,
+          "name": "Scarica",
+          "text": "Scarica i file AVIF — singolarmente o tutti insieme."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Come funziona il convertitore WebP in AVIF?",
+      "html": "<p>Converti file WebP in AVIF. Compressione ancora migliore in un formato moderno. La conversione avviene interamente nel browser — i file non vengono mai inviati a un server. Senza registrazione, senza limiti.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Come convertire WebP in AVIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Carica file",
+          "description": "Trascina i file sulla pagina o clicca per selezionarli."
+        },
+        {
+          "position": 2,
+          "title": "Imposta qualita",
+          "description": "Regola il cursore qualita AVIF — valori piu bassi producono file piu piccoli."
+        },
+        {
+          "position": 3,
+          "title": "Converti",
+          "description": "Clicca Converti — i file vengono elaborati localmente nel browser."
+        },
+        {
+          "position": 4,
+          "title": "Scarica",
+          "description": "Scarica i file AVIF — singolarmente o tutti insieme."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti",
+      "items": [
+        {
+          "question": "Cos'e il formato AVIF?",
+          "answer": "AVIF e un formato immagine moderno basato sul codec AV1. Offre un'eccellente compressione — i file possono essere fino al 50% piu piccoli di JPG."
+        },
+        {
+          "question": "AVIF funziona in tutti i browser?",
+          "answer": "AVIF e supportato da Chrome, Edge e Firefox. Safari ha un supporto limitato per AVIF."
+        },
+        {
+          "question": "I miei file vengono inviati a un server?",
+          "answer": "No. La conversione avviene interamente nel browser. I file non lasciano mai il tuo computer."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Hai bisogno di altro?",
+      "description": "Contattaci — ti aiuteremo a trovare la soluzione giusta.",
+      "href": "/it/contatto",
+      "buttonText": "Scrivici"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri strumenti"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "toolKey": "webpToAvif",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur WebP en AVIF — WebP AVIF",
+    "description": "Convertissez les fichiers WebP en AVIF. Compression encore meilleure dans un format moderne.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fr/outils/convertisseur-webp-en-avif"
+  },
+  "hero": {
+    "title": "Convertisseur WebP en AVIF",
+    "description": "Convertissez les fichiers WebP en AVIF. Compression encore meilleure dans un format moderne.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-webp-en-avif",
+      "label": "Convertisseur WebP en AVIF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur WebP en AVIF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convertissez les fichiers WebP en AVIF. Compression encore meilleure dans un format moderne.",
+      "featureList": ["Conversion en AVIF", "Reglage de la qualite (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment convertir WebP en AVIF",
+      "description": "Convertissez les fichiers WebP en AVIF. Compression encore meilleure dans un format moderne.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Telecharger les fichiers",
+          "text": "Glissez les fichiers sur la page ou cliquez pour les selectionner."
+        },
+        {
+          "position": 2,
+          "name": "Regler la qualite",
+          "text": "Ajustez le curseur de qualite AVIF — des valeurs plus basses donnent des fichiers plus petits."
+        },
+        {
+          "position": 3,
+          "name": "Convertir",
+          "text": "Cliquez sur Convertir — les fichiers sont traites localement dans votre navigateur."
+        },
+        {
+          "position": 4,
+          "name": "Telecharger",
+          "text": "Telechargez les fichiers AVIF — individuellement ou tous a la fois."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "section",
+      "title": "Comment fonctionne le convertisseur WebP en AVIF?",
+      "html": "<p>Convertissez les fichiers WebP en AVIF. Compression encore meilleure dans un format moderne. La conversion se fait entierement dans votre navigateur — les fichiers ne sont jamais envoyes a un serveur. Sans inscription, sans limite.</p>"
+    },
+    {
+      "type": "steps",
+      "title": "Comment convertir WebP en AVIF?",
+      "steps": [
+        {
+          "position": 1,
+          "title": "Telecharger les fichiers",
+          "description": "Glissez les fichiers sur la page ou cliquez pour les selectionner."
+        },
+        {
+          "position": 2,
+          "title": "Regler la qualite",
+          "description": "Ajustez le curseur de qualite AVIF — des valeurs plus basses donnent des fichiers plus petits."
+        },
+        {
+          "position": 3,
+          "title": "Convertir",
+          "description": "Cliquez sur Convertir — les fichiers sont traites localement dans votre navigateur."
+        },
+        {
+          "position": 4,
+          "title": "Telecharger",
+          "description": "Telechargez les fichiers AVIF — individuellement ou tous a la fois."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Questions frequemment posees",
+      "items": [
+        {
+          "question": "Qu'est-ce que le format AVIF?",
+          "answer": "AVIF est un format d'image moderne base sur le codec AV1. Il offre une excellente compression — les fichiers peuvent etre jusqu'a 50% plus petits que JPG."
+        },
+        {
+          "question": "AVIF fonctionne-t-il dans tous les navigateurs?",
+          "answer": "AVIF est pris en charge par Chrome, Edge et Firefox. Safari a un support limite pour AVIF."
+        },
+        {
+          "question": "Mes fichiers sont-ils envoyes a un serveur?",
+          "answer": "Non. La conversion se fait entierement dans votre navigateur. Les fichiers ne quittent jamais votre ordinateur."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Besoin de plus?",
+      "description": "Contactez-nous — nous vous aiderons a trouver la bonne solution.",
+      "href": "/fr/contact",
+      "buttonText": "Ecrivez-nous"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres outils"
+    }
+  ]
+}
