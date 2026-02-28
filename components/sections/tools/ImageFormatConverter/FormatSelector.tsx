@@ -1,12 +1,12 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { useCallback } from 'react';
+import { useCallback, useEffect } from 'react';
 
 import { useLocale, useDictionary } from '@/lib/LocaleContext';
 
 import { FORMAT_LABELS, type ImageFormat, type OutputFormat } from './types';
-import { getAvailableSources, getAvailableTargets, getConversionRoute, TARGET_FORMATS } from './conversionRoutes';
+import { getAvailableSources, getAvailableTargets, getConversionRoute, getConversionRoutes, TARGET_FORMATS } from './conversionRoutes';
 
 interface FormatSelectorProps {
   currentSource: ImageFormat;
@@ -22,7 +22,7 @@ export default function FormatSelector({ currentSource, currentTarget, hasFiles 
   const confirmNavigation = useCallback(
     (href: string) => {
       if (hasFiles && !window.confirm(t.formatChangeConfirm)) return;
-      router.push(href);
+      router.push(href, { scroll: false });
     },
     [hasFiles, router, t.formatChangeConfirm],
   );
@@ -47,6 +47,12 @@ export default function FormatSelector({ currentSource, currentTarget, hasFiles 
     },
     [currentSource, currentTarget, confirmNavigation, locale],
   );
+
+  // Prefetch all converter routes so format switching is instant (no loading skeleton)
+  useEffect(() => {
+    const routes = getConversionRoutes(locale);
+    routes.forEach((r) => router.prefetch(r.href));
+  }, [locale, router]);
 
   const availableTargets = getAvailableTargets(currentSource, locale);
   const availableSources = TARGET_FORMATS.flatMap((t) => getAvailableSources(t, locale));
